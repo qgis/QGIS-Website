@@ -1,0 +1,36 @@
+name: Show Errors
+description: For problems with an episode itself (links, sponsors, typos, etc)
+labels:
+  - bug
+  - show notes
+  - "piece of :cake:"
+  - good first issue
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Please check to see if someone else has already reported this bug.
+  - type: input
+    id: address
+    attributes:
+      label: URL
+      description: URL where this was found
+      placeholder: https://jupiterbroadcasting.com/
+  - type: dropdown
+    id: issues
+    attributes:
+      label: Type(s) of Problems
+      description: Which of these problems did you encounter?
+      multiple: true
+      options:
+        - Typo
+        - Broken Link
+        - Sponsor
+        - Other
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      placeholder: |
+        For dead links: If you find a working link please add it in! This can help us get the link updated faster.
+        For typos, feel free to include the correction and a screenshot.
