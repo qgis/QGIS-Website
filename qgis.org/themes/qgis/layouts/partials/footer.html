@@ -1,0 +1,43 @@
+<div class="footer">
+    <div class="pure-menu pure-menu-horizontal pure-menu-open">
+        <ul>
+            <li>Powered by <a class="hugo" href="https://gohugo.io/" target="_blank">hugo</a></li>
+            {{ if .Site.Params.twitterName }}
+            <li class="nav-item">
+                <a class="pure-button" href="https://twitter.com/{{ .Site.Params.twitterName }}">
+                    <i class="fa fa-twitter"></i>{{ if not .Site.Params.hideFooterIconText }} Twitter{{ end }}
+                </a>
+            </li>
+            {{ end }}
+            {{ if .Site.Params.githubName }}
+            <li class="nav-item">
+                <a class="pure-button" href="https://github.com/{{ .Site.Params.githubName }}">
+                    <i class="fa fa-github-alt"></i>{{ if not .Site.Params.hideFooterIconText }} Github{{ end }}
+                </a>
+            </li>
+            {{ end }}
+            {{ if .Site.Params.stackOverflowId }}
+            <li class="nav-item">
+                <a class="pure-button" href="https://stackoverflow.com/u/{{ .Site.Params.stackOverflowId }}">
+                    <i class="fa fa-stack-overflow"></i>{{ if not .Site.Params.hideFooterIconText }}Stack Overflow{{
+                    end }}
+                </a>
+            </li>
+            {{ end }}
+            {{ if .Site.Params.linkedinName }}
+            <li class="nav-item">
+                <a class="pure-button" href="https://www.linkedin.com/in/{{ .Site.Params.linkedinName }}">
+                    <i class="fa fa-linkedin"></i>{{ if not .Site.Params.hideFooterIconText }} LinkedIn{{ end }}
+                </a>
+            </li>
+            {{ end }}
+            <li class="nav-item">
+                <a class="pure-button" href='{{ "index.xml" | absURL }}'>
+                    <i class="fa fa-rss"></i>{{ if not .Site.Params.hideFooterIconText }} rss{{ end }}
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<script src='{{ "js/all.min.js" | absURL }}'></script>

@@ -1,0 +1,79 @@
+# After running you can find the site at http://localhost:8000
+# And the file manager (user admin, pass admin) at http://localhost:8001
+
+# This is a demonstration configuration only, not intended for production!
+
+volumes:
+  hugo_generated:
+  hugo_themes:
+  hugo_source:
+
+services:
+  python-http:
+    image: jdkelley/simple-http-server:latest
+    ports:
+      - 7001:8000
+    volumes:
+      - hugo_generated:/serve
+      - hugo_themes:/themes
+      - hugo_source:/src
+    logging:
+      driver: json-file
+      options:
+        max-size: 200m
+        max-file: '10'
+
+  hugo-watcher:
+    # This service watches for changes in the static content
+    # source files of the hugo site and rebuilds the site 
+    # whenever a source file is changed.
+    image: kartoza/hugo-watcher:latest
+    environment:
+      - DOMAIN=http://localhost:7001
+      # If you comment out theme it will default to hugo-clarity
+      - THEME=qgis
+    volumes:
+      # This is non user editable, generated static html
+      # will be placed here.
+      - hugo_generated:/public
+      # Mounted in file-browser and to Hugo for themes
+      # If empty will be initially populated by hugo-watcher
+      # adding the hugo-clarity theme by default
+      # Place hugo themes here
+      - hugo_themes:/themes
+      # Mounted in file-browser and to Hugo for content (markdown)
+      # If empty will be initially populated by hugo-watcher
+      # adding the hugo-clarity sample site by default
+      # Only raw markdown should be put in here, hugo will generate 
+      # the site from that.
+      - hugo_source:/src
+    logging:
+      driver: json-file
+      options:
+        max-size: 200m
+        max-file: '10'
+
+  file-browser:
+    image: filebrowser/filebrowser
+    volumes:
+      # Mounted in file-browser and to Hugo for themes
+      # If empty will be initially populated by hugo-watcher
+      # adding the hugo-clarity theme by default
+      # Place hugo themes here
+      - hugo_themes:/srv/themes
+      # Mounted in file-browser and to Hugo for content (markdown)
+      # If empty will be initially populated by hugo-watcher
+      # adding the hugo-clarity sample site by default
+      # Only raw markdown should be put in here, hugo will generate 
+      # the site from that.
+      - hugo_source:/srv/src
+    user: root # FIXME
+    ports:
+      - 8001:80
+    restart: unless-stopped
+    logging:
+      driver: json-file
+      options:
+        max-size: 200m
+        max-file: '10'
+
