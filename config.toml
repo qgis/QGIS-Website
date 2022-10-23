@@ -2,3 +2,40 @@ baseURL = 'https://qgis.org/'
 languageCode = 'en-us'
 title = 'QGIS Web Site'
 theme = 'qgis'
+
+
+[[main]]
+  name = "About"
+  url = ""
+  weight = -110
+
+[[main]]
+  name = "Community"
+  url = "/community/"
+  weight = -110 # Sets the menu order 
+
+[[main]]
+  name = "Resources"
+  url = "/resources/"
+  weight = -110 # Sets the menu order 
+
+[[main]]
+  name = "Downloads"
+  url = "/downloads/"
+  weight = -110 # Sets the menu order 
+
+[[main]]
+  name = "Support"
+  url = "/support/"
+  weight = -110 # Sets the menu order 
+
+
+# Submenus are done this way: parent -> identifier
+[[main]]
+  name = "Links"
+  identifier = "Links"
+  weight = -108
+[[main]]
+  parent = "Links"
+  name = "QGIS Plugins"
+  url = "https://plugins.qgis.org/"
