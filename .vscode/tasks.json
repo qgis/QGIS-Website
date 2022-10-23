@@ -1,8 +1,6 @@
 {
-    "version": "0.1.0",
+    "version": "2.0.0",
     "command": "bash",
-    "isShellCommand": true,
-    "showOutput": "always",
     "options": {
         "cwd": "${workspaceRoot}"
     },
@@ -11,49 +9,76 @@
     ],
     "tasks": [
         {
-            "taskName": "dev build",
-            "suppressTaskName": true,
-            "isBuildCommand": true,
+            "label": "dev build",
+            "type": "shell",
+            "command": "bash",
             "args": [
+                "-c",
                 "make dev-build"
-            ]
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
         },
         {
-            "taskName": "dev",
-            "suppressTaskName": true,
-            "isTestCommand": true,
+            "label": "dev",
+            "type": "shell",
+            "command": "bash",
             "args": [
+                "-c",
                 "make dev"
-            ]
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
         },
         {
-            "taskName": "dev-metrics",
-            "suppressTaskName": true,
+            "label": "dev-metrics",
+            "type": "shell",
+            "command": "bash",
             "args": [
+                "-c",
                 "make dev-metrics"
-            ]
+            ],
+            "problemMatcher": []
         },
         {
-            "taskName": "deploy-prod",
-            "suppressTaskName": true,
-            "isTestCommand": true,
+            "label": "deploy-prod",
+            "type": "shell",
+            "command": "bash",
             "args": [
+                "-c",
                 "make deploy-prod"
-            ]
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
         },
         {
-            "taskName": "tests",
-            "suppressTaskName": true,
+            "label": "tests",
+            "type": "shell",
+            "command": "bash",
             "args": [
+                "-c",
                 "make dev-metrics"
-            ]
+            ],
+            "problemMatcher": []
         },
         {
-            "taskName": "help",
-            "suppressTaskName": true,
+            "label": "help",
+            "type": "shell",
+            "command": "bash",
             "args": [
+                "-c",
                 "make help"
-            ]
+            ],
+            "problemMatcher": []
         }
     ]
 }

@@ -1,44 +1,57 @@
 {{ partial "header.html" . }}
 
-<div id="layout" class="pure-g">
 
-    <div class="content pure-u-1-24"></div>
-    <div class=" content pure-u-22-24 pure-u-md-1-1">
-        <div>
-            <!-- A wrapper for all the blog posts -->
-            <div class="posts">
-                {{ range .Paginator.Pages }}
-                <h1 class="content-subhead">{{ .Date.Format "02 Jan 2006, 15:04" }}</h1>
-                <section class="post">
-                    <header class="post-header">
-
-                        <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
-
-                        <p class="post-meta">
-                            {{ with .Params.author }}
-                            By <strong class="post-author">{{ . }}</strong>
-                            {{ end }}
-                            {{ if isset .Params "categories" }}
-                            under
-                            {{ range .Params.categories }}<a class="post-category post-category-{{ . }}"
-                                href='{{ ( printf "categories/%s" . ) | absURL }}'>{{ . }}</a>{{ end }}
-                            {{ end }}
-                        </p>
-                    </header>
-
-                    <div class="post-description">
-                        {{ .Content }}
-                    </div>
-                </section>
-                {{ end }}
-            </div>
-            {{ partial "pagination.html" . }}
-            {{ partial "footer.html" . }}
+<section class="hero is-info is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title">
+                Modal Cards
+            </p>
+            <p class="subtitle">
+                Subtitle
+            </p>
         </div>
     </div>
-    <div class="content pure-u-1-24"></div>
+</section>
+<div class="box cta">
+    <p class="has-text-centered">
+        <span class="tag is-primary">New</span> Here we have modal cards. When you click on them they will open
+        functional modal examples.
+    </p>
 </div>
+<section class="container">
+    {{ range .Paginator.Pages }}
+    <div class="columns">
+        <div class="column is-5 is-offset-1">
+            <div class="card is-shady">
+                <div class="card-image">
+                    <figure class="image is-4by3">
+                        <img src="https://source.unsplash.com/hLyd1LukQ7E" alt="butterfly image" class="modal-button"
+                            data-target="modal-image4">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="column is-5 is-shady">
+            <div class="card-content">
+                <div class="content">
+                    <h4><a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a></h4>
+                    <p>{{ .Date.Format "02 Jan 2006, 15:04" }}</p>
+                    {{ with .Params.author }}
+                    By <strong class="post-author">{{ . }}</strong>
+                    {{ end }}
+                    {{ if isset .Params "categories" }}
+                    under
+                    {{ range .Params.categories }}<a class="post-category post-category-{{ . }}"
+                        href='{{ ( printf "categories/%s" . ) | absURL }}'>{{ . }}</a>{{ end }}
+                    {{ end }}
+                    {{ .Content }}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</section>
+{{ partial "pagination.html" . }}
 
- </body>
-
-</html>
+{{ partial "footer.html" . }}

@@ -26,9 +26,9 @@
         type='text/css'>
     {{ $blogcss := resources.Get "css/blog.css" }}
     {{ $fontcss := resources.Get "css/fontawesome.css" }}
-    {{ $purecss := resources.Get "css/pure.css" }}
-    {{ $gridscss := resources.Get "css/grids-responsive.css" }}
-    {{ $css := slice $blogcss $fontcss $purecss $gridscss | resources.Concat "css/all.css" | minify }}
+    {{ $bulmacss := resources.Get "css/bulma.css" }}
+
+    {{ $css := slice $blogcss $fontcss $bulmacss | resources.Concat "css/all.css" }}
     <link href="{{ $css.RelPermalink }}" rel="stylesheet">
 
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />

@@ -1,0 +1,59 @@
+{
+    "version": "0.1.0",
+    "command": "bash",
+    "isShellCommand": true,
+    "showOutput": "always",
+    "options": {
+        "cwd": "${workspaceRoot}"
+    },
+    "args": [
+        "-c"
+    ],
+    "tasks": [
+        {
+            "taskName": "dev build",
+            "suppressTaskName": true,
+            "isBuildCommand": true,
+            "args": [
+                "make dev-build"
+            ]
+        },
+        {
+            "taskName": "dev",
+            "suppressTaskName": true,
+            "isTestCommand": true,
+            "args": [
+                "make dev"
+            ]
+        },
+        {
+            "taskName": "dev-metrics",
+            "suppressTaskName": true,
+            "args": [
+                "make dev-metrics"
+            ]
+        },
+        {
+            "taskName": "deploy-prod",
+            "suppressTaskName": true,
+            "isTestCommand": true,
+            "args": [
+                "make deploy-prod"
+            ]
+        },
+        {
+            "taskName": "tests",
+            "suppressTaskName": true,
+            "args": [
+                "make dev-metrics"
+            ]
+        },
+        {
+            "taskName": "help",
+            "suppressTaskName": true,
+            "args": [
+                "make help"
+            ]
+        }
+    ]
+}
