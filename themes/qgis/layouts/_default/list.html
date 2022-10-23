@@ -1,43 +1,22 @@
-{{ partial "header.html" . }}
+{{ partial "header.html" }}
+{{ partial "banner.html" . }}
+{{ range .Paginator.Pages }}
 
-<div id="layout" class="pure-g">
-    <div class="content pure-u-1 pure-u-md-3-4">
-        <div>
-            <!-- A wrapper for all the blog posts -->
-            <div class="posts">
-                {{ range .Paginator.Pages }}
-                <h1 class="content-subhead">{{ .Date.Format "02 Jan 2006, 15:04" }}</h1>
-                <section class="post">
-                    <header class="post-header">
 
-                        <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+{{ .Date.Format "02 Jan 2006, 15:04" }}
+<a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+{{ with .Params.author }}
+By <strong class="post-author">{{ . }}</strong>
+{{ end }}
+{{ if isset .Params "categories" }}
+under
+{{ range .Params.categories }}
+<a class="post-category-{{ . }}" href='{{ ( printf "categories/%s" . ) | absURL }}'>{{ . }}</a>
+{{ end }}
+{{ end }}
+{{ .Content }}
 
-                        <p class="post-meta">
-                            {{ with .Params.author }}
-                            By <strong class="post-author">{{ . }}</strong>
-                            {{ end }}
-                            {{ if isset .Params "categories" }}
-                            under
-                            {{ range .Params.categories }}
-                            <a class="post-category post-category-{{ . }}"
-                                href='{{ ( printf "categories/%s" . ) | absURL }}'>{{ . }}</a>
-                            {{ end }}
-                            {{ end }}
-                        </p>
-                    </header>
 
-                    <div class="post-description">
-                        {{ .Content }}
-                    </div>
-                </section>
-                {{ end }}
-            </div>
-            {{ partial "pagination.html" . }}
-            {{ partial "footer.html" . }}
-        </div>
-    </div>
-</div>
-
-</body>
-
-</html>
+{{ end }}
+{{ partial "pagination.html" }}
+{{ partial "footer.html" }}

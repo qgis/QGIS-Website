@@ -1,0 +1,19 @@
+<section class="hero is-info is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title">
+                {{ .Get 0 }}
+            </p>
+            <p class="subtitle">
+                {{ .Get 1 }}
+            </p>
+        </div>
+    </div>
+</section>
+{{ if (.Get 2) }}
+<div class="box cta">
+    <p class="has-text-centered">
+        <span class="tag is-primary">New</span>{{ .Get 2 }}
+    </p>
+</div>
+{{ end }}

@@ -24,11 +24,11 @@
 
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet'
         type='text/css'>
-    {{ $blogcss := resources.Get "css/blog.css" }}
     {{ $fontcss := resources.Get "css/fontawesome.css" }}
     {{ $bulmacss := resources.Get "css/bulma.css" }}
+    {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
 
-    {{ $css := slice $blogcss $fontcss $bulmacss | resources.Concat "css/all.css" }}
+    {{ $css := slice $fontcss $bulmacss $syntaxcss | resources.Concat "css/all.css" }}
     <link href="{{ $css.RelPermalink }}" rel="stylesheet">
 
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />

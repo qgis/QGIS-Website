@@ -1,0 +1,21 @@
+<section class="hero is-info is-small">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title">
+                QGIS
+            </p>
+            <p class="subtitle">
+                Open Source GIS
+            </p>
+        </div>
+    </div>
+</section>
+
+{{ range last 1 ((where site.RegularPages "Section" "news")) }}
+
+<div class="box cta">
+    <p class="has-text-centered">
+        <span class="tag is-primary">News</span> {{ .Title }}
+    </p>
+</div>
+{{ end }}
