@@ -1,0 +1,27 @@
+.circles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.circles.item {
+    flex-grow: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.box {
+    border-radius: 90px;
+}
+
+.has-bg-img {
+    background: url('/img/banners/banner1.png') center;
+    background-size: cover;
+}
