@@ -27,8 +27,8 @@
     {{ $fontcss := resources.Get "css/fontawesome.css" }}
     {{ $bulmacss := resources.Get "css/bulma.css" }}
     {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
-
-    {{ $css := slice $fontcss $bulmacss $syntaxcss | resources.Concat "css/all.css" }}
+    {{ $customcss := resources.Get "css/custom.css" }}
+    {{ $css := slice $fontcss $bulmacss $syntaxcss $customcss | resources.Concat "css/all.css" }}
     <link href="{{ $css.RelPermalink }}" rel="stylesheet">
 
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
