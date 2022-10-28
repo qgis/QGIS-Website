@@ -12,7 +12,14 @@
             "request": "attach"
         },
         {
-            "name": "Run Dev",
+            "name": "Run Dev Using Locally Installed Hugo",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev local", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Run Dev Under Docker",
             "type": "shell",
             // see tasks.json for definition
             "preLaunchTask": "dev", // The name of the task defined above

@@ -9,6 +9,20 @@
     ],
     "tasks": [
         {
+            "label": "dev local",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "hugo server -D"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },
+        {
             "label": "dev build",
             "type": "shell",
             "command": "bash",
