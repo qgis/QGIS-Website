@@ -1,24 +1,10 @@
-.circles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.circles.item {
-    flex-grow: 0;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 40px;
-}
-
-.box {
-    border-radius: 90px;
+.tile .box {
+    border-radius: 50%;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    text-decoration: none;
 }
 
 .has-bg-img {

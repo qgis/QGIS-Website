@@ -14,7 +14,7 @@
             "command": "bash",
             "args": [
                 "-c",
-                "hugo server -D"
+                "hugo server -D --disableFastRender"
             ],
             "problemMatcher": [],
             "group": {
