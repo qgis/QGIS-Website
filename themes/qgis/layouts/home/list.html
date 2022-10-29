@@ -2,9 +2,9 @@
 {{ partial "menu.html" . }}
 {{ partial "banner.html" . }}
 
-<h1>Singles Page Template for Home</h1>
+<h1>List Page Template for Home</h1>
 
-{{ range first 1 ((where site.RegularPages "Section" "page")) }}
+{{ range first 1 ((where site.RegularPages "Section" "home")) }}
 
 <div class="box cta">
     <p class="has-text-centered">
@@ -12,4 +12,10 @@
     </p>
 </div>
 {{ end }}
+
+{{ range where (where .Pages "Kind" "section") "Params.active" true }}
+{{ .Title }}
+{{ partial "block.html" . }}
+{{ end }}
+
 {{ partial "footer.html" . }}
