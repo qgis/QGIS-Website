@@ -1,4 +1,6 @@
-<h1>Single Page Template for Home</h1>
+{{ partial "header.html" . }} {{ partial "menu.html" . }} {{ partial "banner.html" . }}
+
+<h1>SSingle Page Template for Home</h1>
 
 {{ range first 1 ((where site.RegularPages "Section" "news")) }}
 
@@ -7,4 +9,4 @@
         <span class="tag is-primary">News</span> {{ .Title }}
     </p>
 </div>
-{{ end }}
+{{ end }} {{ partial "footer.html" . }}
