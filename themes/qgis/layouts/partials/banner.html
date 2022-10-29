@@ -11,7 +11,7 @@
     </div>
 </section>
 
-{{ range last 1 ((where site.RegularPages "Section" "news")) }}
+{{ range first 1 ((where site.RegularPages "Section" "news")) }}
 
 <div class="box cta">
     <p class="has-text-centered">

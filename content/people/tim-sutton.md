@@ -1,14 +1,14 @@
 ---
-type: person
-avatar: /images/people/timlinux.jpg
-avatar_small: /images/people/timliux_small.jpg
-bio: Demo person
-homepage: https://kartoza.com.com
+avatar: /images/people/tim-sutton.jpg
+avatar_small: /images/people/tim-sutton-small.jpg
+bio: Demo bio
+can be multiline.
+homepage: https://kartoza.com
 instagram: null
 linkedin: null
-title: Mr
+title: Tim Sutton
 twitter: https://twitter.com/timlinux
-type: PSC
+type: guest
 username: timlinux
 youtube: null
 ---
