@@ -1,12 +1,12 @@
 {{ partial "header.html" . }} {{ partial "menu.html" . }} {{ partial "banner.html" . }}
 
-<h1>SSingle Page Template for Home</h1>
+<h1>Singles Page Template for Home</h1>
 
-{{ range first 1 ((where site.RegularPages "Section" "news")) }}
+{{ range first 1 ((where site.RegularPages "Section" "page")) }}
 
 <div class="box cta">
     <p class="has-text-centered">
-        <span class="tag is-primary">News</span> {{ .Title }}
+        <span class="tag is-primary">Block</span> {{ .Title }}
     </p>
 </div>
 {{ end }} {{ partial "footer.html" . }}
