@@ -1,0 +1,20 @@
+<div class="columns">
+    <div class="column is-10 is-offset-1">
+        <div class="columns">
+            {{ range where .Site.RegularPages "Section" "flagship-users" }}
+            <div class="column is-fullwidth-mobile 
+            is-one-quarter-tablet is-one-quarter-desktop 
+            is-one-quarter-widescreen is-one-quarter-fullhd">
+                <div class=" card" style="background-color: {{ .Params.colour }}">
+                    <div class="card-image equal-height">
+                        <figure class="image is-4by3">
+                            <img src="/flagship-users/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="column is-1"></div>
+</div>

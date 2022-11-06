@@ -1,11 +1,11 @@
 <div class="columns">
     <div class="column is-10 is-offset-1">
-
-        <div class="columns is-gapless">
+        <div class="columns is-gapless is-multiline">
             {{ range where .Site.RegularPages "Section" "home" }}
-
-            <div class="column is-one-third">
-                <div class="card" style="background-color: {{ .Params.colour }}">
+            <div class="column is-fullwidth-mobile 
+            is-one-third-tablet is-one-third-desktop 
+            is-one-quarter-widescreen is-one-quarter-fullhd">
+                <div class=" card" style="background-color: {{ .Params.colour }}">
                     <div class="card-image equal-height">
                         <figure class="image is-4by3">
                             <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -13,7 +13,8 @@
                     </div>
                 </div>
             </div>
-            <div class="column is-two-thirds">
+            <div class="column is-fullwidth-mobile is-two-thirds-tablet 
+        is-two-thirds-desktop is-three-quarters-widescreen is-three-quarters-fullhd">
                 <div class="card equal-height" style="background-color: {{ .Params.colour }}">
                     <div class="card-content">
                         <p class="title">
@@ -36,6 +37,12 @@
                             </span>
                         </p>
                     </footer>
+                </div>
+            </div>
+            <div class="column is-12">
+                <div class="card">
+                    <div class="card-content">
+                    </div>
                 </div>
             </div>
             {{ end }}
