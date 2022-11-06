@@ -11,3 +11,20 @@
     background: url('/img/banners/banner1.png') center;
     background-size: cover;
 }
+
+.card {
+    background-color: aquamarine;
+    box-shadow: none;
+    border-radius: 0;
+    height: 100%;
+}
+
+.equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.equal-height .card-content {
+    flex: auto;
+}

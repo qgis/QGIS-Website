@@ -1,39 +1,5 @@
 {{ partial "header.html" . }}
 {{ partial "menu.html" . }}
 {{ partial "banner.html" . }}
-
-<div class="column is-10 is-offset-1">
-
-    {{ range first 1 ((where site.RegularPages "Section" "home"))  }}
-    <div class="column is-one-third">
-        <div class="card">
-            <div class="card-content">
-                <p class="title">
-                    {{ .Title }}
-                </p>
-                <div class="columns"></div>
-                <p class="subtitle">
-                    {{ .Params.Subtitle }}
-                </p>
-                <p>{{ .Content }}</p>
-            </div>
-            <footer class="card-footer">
-                <p class="card-footer-item">
-                    <span>
-                        View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
-                    </span>
-                </p>
-                <p class="card-footer-item">
-                    <span>
-                        Share on <a href="#">Facebook</a>
-                    </span>
-                </p>
-            </footer>
-        </div>
-    </div>
-    {{ end }}
-</div>
-<div class="column is-1"></div>
-
-
+{{ partial "home-blocks.html" . }}
 {{ partial "footer.html" . }}
