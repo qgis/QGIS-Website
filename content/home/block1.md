@@ -2,9 +2,11 @@
 type: "block"
 title: "Wooohoo block 1"
 subtitle: "Some subtitle"
-date: 2022-10-23T14:00:00+01:00
 draft: false
-colour: "#f3f3f3"
+text_color: "#f7f3f2"
+bg_color: "#f7f3f2"
+side_image: "block1-image.png"
+bg_image: "block1-bg.png"
 ---
 
 # Welcome
