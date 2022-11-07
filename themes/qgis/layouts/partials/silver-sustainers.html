@@ -1,0 +1,27 @@
+<div class="columns">
+    <div class="column is-1"></div>
+    <div class="column">
+        <div class="column is-12">
+            <div class="card">
+                <div class="card-content">
+                    <strong>Silver Level Sustaining Members</strong>
+                </div>
+            </div>
+        </div>
+        <div class="columns is-multiline">
+            {{ range where .Site.RegularPages "Section" "silver-sustainers" }}
+            <div class="column is-half-mobile 
+            is-2">
+                <div class=" card" style="background-color: {{ .Params.colour }}">
+                    <div class="card-image equal-height">
+                        <figure class="image is-1by1">
+                            <img src="/silver-sustainers/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+    <div class="column is-1"></div>
+</div>
