@@ -30,7 +30,6 @@
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $css := slice $fontcss $bulmacss $syntaxcss $customcss | resources.Concat "css/all.css" }}
     <link href="{{ $css.RelPermalink }}" rel="stylesheet">
-
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
 </head>
 

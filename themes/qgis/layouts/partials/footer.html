@@ -1,4 +1,3 @@
-</body>
 <footer>
     <div class="content has-text-centered">
         <div class="control level-item">
@@ -10,11 +9,16 @@
                     Site Powered by <a href="https://gohugo.io/" target="_blank">hugo</a>
                 </span>
                 <span class="tag is-info">
-                    Twitter <a href="https://twitter.com/qgis">
+                    Twitter <a href="https://twitter.com/qgis"></a>
                 </span>
             </div>
         </div>
     </div>
+    {{ $customjs := resources.Get "js/custom.js" }}
+    {{ $js := slice $customjs | resources.Concat "js/all.js" }}
+    <script src="{{ $js.RelPermalink }}"></script>
 </footer>
+</body>
 
-<script src='{{ "js/all.min.js" | absURL }}'></script>
+
+</html>

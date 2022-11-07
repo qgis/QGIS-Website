@@ -31,3 +31,11 @@
 .equal-height .card-content {
     flex: auto;
 }
+
+@font-face {
+    font-family: "fa-regular-400";
+    src: url("/fonts/fa-regular-400.eot");
+    src: url("/fonts/fa-regular-400.woff") format("woff"),
+        url("/fonts/fa-regular-400.otf") format("opentype"),
+        url("https://yoursite.com/css/fonts/fa-regular-400.svg#filename") format("svg");
+}

@@ -24,7 +24,13 @@
                             {{ .Params.Subtitle }}
                         </p>
                         <p>{{ .Content }}</p>
+                        <div class="pulldown-content is-hidden">
+                            <div class="content">
+                                Content goes here <small>Small text</small>
+                            </div>
+                        </div>
                     </div>
+
                     <footer class="card-footer">
                         <p class="card-footer-item">
                             <span>
@@ -33,10 +39,17 @@
                         </p>
                         <p class="card-footer-item">
                             <span>
-                                Share on <a href="#">Facebook</a>
+                                <a class="card-header-icon card-toggle">
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
                             </span>
                         </p>
                     </footer>
+                    <div class="card-content is-hidden">
+                        <div class="content">
+                            Content goes here <small>Small text</small>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="column is-12">
