@@ -1,5 +1,10 @@
 {{ partial "header.html" . }}
 {{ partial "menu.html" . }}
-{{ partial "banner.html" . }}
-{{ partial "circles.html" . }}
+<div class="columns">
+    <div class="column is-10 is-offset-1">
+        {{ .Content }}
+    </div>
+    <div class="column is-1"></div>
+</div>
+
 {{ partial "footer.html" . }}
