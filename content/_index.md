@@ -1,9 +1,13 @@
-# Welcome
+---
+type: "page"
+title: "QGIS"
+subtitle: "Welcome to the world’s most popular open source geospatial data management and analysis suite."
+draft: false
+heroImage: "/img/banners/banner2.png"
+---
 
-{{< hero-banner "hi" >}}
-Welcome to the world’s most popular open source geospatial data management and analysis suite
-{{< / hero-banner >}}
-
+{{< content >}}
 # Hello from Tim
 
 Lorem ipsum
+{{< / content >}}

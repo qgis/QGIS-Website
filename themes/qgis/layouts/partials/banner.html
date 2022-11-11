@@ -1,15 +1,16 @@
-<section class="hero is-info is-medium has-bg-img">
-
+<section class="hero is-info is-medium has-bg-img" {{ if ( .Params.HeroImage) }} style="{{ .Params.HeroImage }})"
+    {{ end }}>
+    {{ .Params.HeroImage }}
     <div class="hero-body">
         <div class="container has-text-centered">
             <p class="title is-size-1">
-                QGIS
+                {{ .Params.Title }}
             </p>
             <p class="subtitle is-size-2">
-                Welcome to the world’s most popular open source geospatial data management and analysis suite
+                {{ .Params.SubTitle }}
             </p>
         </div>
-    </div>
+    </div>QGIS
 </section>
 
 {{ range first 1 ((where site.RegularPages "Section" "news")) }}
