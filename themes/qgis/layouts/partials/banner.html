@@ -1,6 +1,9 @@
-<section class="hero is-info is-medium has-bg-img" {{ if ( .Params.HeroImage) }} style="{{ .Params.HeroImage }})"
-    {{ end }}>
-    {{ .Params.HeroImage }}
+<section class="hero is-info is-medium has-bg-img"
+{{ if ( .Params.HeroImage ) }} 
+style="background: url('{{ .Params.HeroImage | safeCSS }}');
+       background-position: center;
+       background-size: cover;"
+{{ end }}>
     <div class="hero-body">
         <div class="container has-text-centered">
             <p class="title is-size-1">
@@ -10,7 +13,7 @@
                 {{ .Params.SubTitle }}
             </p>
         </div>
-    </div>QGIS
+    </div>
 </section>
 
 {{ range first 1 ((where site.RegularPages "Section" "news")) }}

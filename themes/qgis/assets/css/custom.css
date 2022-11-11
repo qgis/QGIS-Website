@@ -1,41 +1,43 @@
 .tile .box {
-    border-radius: 50%;
-    color: white;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
 }
 
 .has-bg-img {
-    background: url('/img/banners/banner1.png') center;
-    background-size: cover;
+  background: url("/img/banners/banner1.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .card {
-    box-shadow: none;
-    border-radius: 0;
-    height: 100%;
+  box-shadow: none;
+  border-radius: 0;
+  height: 100%;
 }
 
 .box {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .equal-height {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .equal-height .card-content {
-    flex: auto;
+  flex: auto;
 }
 
 @font-face {
-    font-family: "fa-regular-400";
-    src: url("/fonts/fa-regular-400.eot");
-    src: url("/fonts/fa-regular-400.woff") format("woff"),
-        url("/fonts/fa-regular-400.otf") format("opentype"),
-        url("https://yoursite.com/css/fonts/fa-regular-400.svg#filename") format("svg");
+  font-family: "fa-regular-400";
+  src: url("/fonts/fa-regular-400.eot");
+  src: url("/fonts/fa-regular-400.woff") format("woff"),
+    url("/fonts/fa-regular-400.otf") format("opentype"),
+    url("https://yoursite.com/css/fonts/fa-regular-400.svg#filename")
+      format("svg");
 }

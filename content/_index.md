@@ -6,6 +6,18 @@ draft: false
 heroImage: "/img/banners/banner2.png"
 ---
 
+{{< blocks-start >}}
+{{< block-with-image-left 
+    title="Block Title" 
+    subtitle="This is the subtitle"
+    text_color="orange"
+    bg_color="#fcf3fc"
+    image="/img/banners/banner2.png"
+>}}
+This is **bold** text on our markdown
+{{< / block-with-image-left >}}
+{{< blocks-end >}}
+
 {{< content >}}
 # Hello from Tim
 
