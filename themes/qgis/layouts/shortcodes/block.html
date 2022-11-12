@@ -40,23 +40,7 @@
                 </span>
             </p>
             {{ end }}
-            {{ with .Inner }}
-            <p class="card-footer-item">
-                <span>
-                    <a class="card-header-icon card-toggle">
-                        <i class="fa fa-angle-down"></i>
-                    </a>
-                </span>
-            </p>
-            {{ end }}
         </footer>
-        {{ with .Inner }}
-        <div class="pulldown-content is-hidden">
-            <div class="content">
-                {{ . | markdownify }}
-            </div>
-        </div>
-        {{ end }}
     </div>
 </div>
 {{/* You should set either a left or right image, not both! */}}

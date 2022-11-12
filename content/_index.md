@@ -6,7 +6,6 @@ draft: false
 heroImage: "/img/banners/banner2.png"
 ---
 
-{{< blocks-start >}}
 
 {{< block 
     title="Simple Block" 
@@ -32,8 +31,7 @@ heroImage: "/img/banners/banner2.png"
     bg_color="#fcf3fc"
     right-image="/img/banners/banner2.png"
 >}}
-This is **bold** text on our markdown
-{{< / block  >}}
+
 
 
 
@@ -45,10 +43,7 @@ This is **bold** text on our markdown
     right-image="/img/banners/banner2.png"
 >}}
 
-{{< blocks-end >}}
 
-{{< content >}}
 # Hello from Tim
 
 Lorem ipsum
-{{< / content >}}
