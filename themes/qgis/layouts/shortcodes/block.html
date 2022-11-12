@@ -23,20 +23,26 @@
 {{ else }}
 <div class="column is-fullwidth">
 {{ end }}
-    <div class="card equal-height" style="background: {{ .Get "bg_color" }}">
+    <div class="card equal-height"{{ if isset .Params "bg-color" }} style="background: {{ .Get `bg-color` }}"{{ end }}>
         <div class="card-content">
-            <p class="title ml-4" style="color: {{ .Get "text_color" }}">
+            <p class="title ml-4"{{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}"{{ end }}>
                 {{ .Get "title" }}
             </p>
-            <p class="subtitle ml-4" style="color: {{ .Get "text_color" }}">
+            <p class="subtitle ml-4"{{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}"{{ end }}>
                 {{ .Get "subtitle" }}
             </p>
         </div>
         <footer class="card-footer">
             {{ if isset .Params "link" }}
+            {{ if isset .Params "left-image" }}
+            <p class="card-footer-item mr-2" style="justify-content: flex-end;">
+            {{ else if isset .Params "right-image" }}
+            <p class="card-footer-item ml-2" style="justify-content: flex-start;">
+            {{ else }}
             <p class="card-footer-item">
+            {{ end }}
                 <span>
-                    View on <a href="{{ .Get "link" }}">more info</a>
+                    <a href="{{ .Get "link" }}" {{ if isset .Params "link" }} style="color: {{ .Get `text-color` }}"{{ end }}>Find out more...</a>
                 </span>
             </p>
             {{ end }}
