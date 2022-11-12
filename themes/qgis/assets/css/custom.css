@@ -41,3 +41,23 @@
     url("https://yoursite.com/css/fonts/fa-regular-400.svg#filename")
       format("svg");
 }
+
+/* Styling for standard elements markdown would produce */
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  display: inline-block;
+}
+
+p {
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  position: relative;
+}

@@ -3,6 +3,12 @@ languageCode = 'en-us'
 title = 'QGIS Web Site'
 theme = 'qgis'
 
+# This will cause html in markdown files to be rendered directly
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 
 [[main]]
   name = "About"
