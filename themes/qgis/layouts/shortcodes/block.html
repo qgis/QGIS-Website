@@ -1,0 +1,82 @@
+{{/* You should set either a left or right image, not both! */}}
+{{ if isset .Params "left-image" }}
+<div class="column is-fullwidth-mobile 
+            is-one-third-tablet is-one-quarter-desktop 
+            is-one-quarter-widescreen is-one-quarter-fullhd">
+    <div class="card">
+        <div class="card-image equal-height">
+            <figure class="image is-4by3">
+                <img src="{{ .Get "left-image" }}" alt="">
+            </figure>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{/* Content part of the block. If neither left or right image are
+    set, it will consume the full width, otherwise a proportion of width
+    dependent on the display form factor.  */}}
+{{ if or (isset .Params "left-image") (isset .Params "right-image") }}
+
+<div class="column is-fullwidth-mobile is-two-thirds-tablet 
+            is-three-quarters-desktop is-three-quarters-widescreen 
+            is-three-quarters-fullhd">
+{{ else }}
+<div class="column is-fullwidth">
+{{ end }}
+    <div class="card equal-height" style="background: {{ .Get "bg_color" }}">
+        <div class="card-content">
+            <p class="title ml-4" style="color: {{ .Get "text_color" }}">
+                {{ .Get "title" }}
+            </p>
+            <p class="subtitle ml-4" style="color: {{ .Get "text_color" }}">
+                {{ .Get "subtitle" }}
+            </p>
+        </div>
+        <footer class="card-footer">
+            {{ if isset .Params "link" }}
+            <p class="card-footer-item">
+                <span>
+                    View on <a href="{{ .Get "link" }}">more info</a>
+                </span>
+            </p>
+            {{ end }}
+            {{ with .Inner }}
+            <p class="card-footer-item">
+                <span>
+                    <a class="card-header-icon card-toggle">
+                        <i class="fa fa-angle-down"></i>
+                    </a>
+                </span>
+            </p>
+            {{ end }}
+        </footer>
+        {{ with .Inner }}
+        <div class="pulldown-content is-hidden">
+            <div class="content">
+                {{ . | markdownify }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{/* You should set either a left or right image, not both! */}}
+{{ if isset .Params "right-image" }}
+<div class="column is-fullwidth-mobile 
+            is-one-third-tablet is-one-quarter-desktop 
+            is-one-quarter-widescreen is-one-quarter-fullhd">
+    <div class="card">
+        <div class="card-image equal-height">
+            <figure class="image is-4by3">
+                <img src="{{ .Get "right-image" }}" alt="">
+            </figure>
+        </div>
+    </div>
+</div>
+{{ end }}
+{{/* This is a spacer line in case we have two cards one after the next */}}
+<div class="column is-12">
+    <div class="card">
+        <div class="card-content">
+        </div>
+    </div>
+</div>
