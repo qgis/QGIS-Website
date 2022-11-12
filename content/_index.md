@@ -31,8 +31,6 @@ heroImage: "/img/banners/banner2.png"
     right-image="/img/banners/banner2.png"
 >}}
 
-
-
 {{< block 
     title="Link Block" 
     subtitle="This is a left image block with no extended content but with a link."
@@ -41,6 +39,11 @@ heroImage: "/img/banners/banner2.png"
     bg-color="#fcf3f1"
     left-image="/img/banners/banner2.png"
 >}}
+
+<div class="content">
+
 # Hello from Tim
 
 Lorem ipsum
+
+</div>
