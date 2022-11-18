@@ -3,7 +3,7 @@
 <div class="column is-fullwidth-mobile 
             is-one-third-tablet is-one-quarter-desktop 
             is-one-quarter-widescreen is-one-quarter-fullhd">
-    <div class="card">
+    <div class="card animated-hidden">
         <div class="card-image equal-height">
             <figure class="image is-4by3">
                 <img src="{{ .Get "left-image" }}" alt="">
@@ -13,60 +13,64 @@
 </div>
 {{ end }}
 {{/* Content part of the block. If neither left or right image are
-    set, it will consume the full width, otherwise a proportion of width
-    dependent on the display form factor.  */}}
+set, it will consume the full width, otherwise a proportion of width
+dependent on the display form factor. */}}
 {{ if or (isset .Params "left-image") (isset .Params "right-image") }}
 
 <div class="column is-fullwidth-mobile is-two-thirds-tablet 
             is-three-quarters-desktop is-three-quarters-widescreen 
             is-three-quarters-fullhd">
-{{ else }}
-<div class="column is-fullwidth">
-{{ end }}
-    <div class="card equal-height"{{ if isset .Params "bg-color" }} style="background: {{ .Get `bg-color` }}"{{ end }}>
-        <div class="card-content">
-            <p class="title ml-4"{{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}"{{ end }}>
-                {{ .Get "title" }}
-            </p>
-            <p class="subtitle ml-4"{{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}"{{ end }}>
-                {{ .Get "subtitle" }}
-            </p>
+    {{ else }}
+    <div class="column is-fullwidth">
+        {{ end }}
+        <div class="card equal-height animated-hidden" {{ if isset .Params "bg-color" }}
+            style="background: {{ .Get `bg-color` }}" {{ end }}>
+            <div class="card-content">
+                <p class="title ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{ end
+                    }}>
+                    {{ .Get "title" }}
+                </p>
+                <p class="subtitle ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{
+                    end }}>
+                    {{ .Get "subtitle" }}
+                </p>
+            </div>
+            <footer class="card-footer">
+                {{ if isset .Params "link" }}
+                {{ if isset .Params "left-image" }}
+                <p class="card-footer-item mr-2" style="justify-content: flex-end;">
+                    {{ else if isset .Params "right-image" }}
+                <p class="card-footer-item ml-2" style="justify-content: flex-start;">
+                    {{ else }}
+                <p class="card-footer-item">
+                    {{ end }}
+                    <span>
+                        <a href="{{ .Get "link" }}" {{ if isset .Params "link" }}
+                            style="color: {{ .Get `text-color` }}" {{ end }}>Find out more...</a>
+                    </span>
+                </p>
+                {{ end }}
+            </footer>
         </div>
-        <footer class="card-footer">
-            {{ if isset .Params "link" }}
-            {{ if isset .Params "left-image" }}
-            <p class="card-footer-item mr-2" style="justify-content: flex-end;">
-            {{ else if isset .Params "right-image" }}
-            <p class="card-footer-item ml-2" style="justify-content: flex-start;">
-            {{ else }}
-            <p class="card-footer-item">
-            {{ end }}
-                <span>
-                    <a href="{{ .Get "link" }}" {{ if isset .Params "link" }} style="color: {{ .Get `text-color` }}"{{ end }}>Find out more...</a>
-                </span>
-            </p>
-            {{ end }}
-        </footer>
     </div>
-</div>
-{{/* You should set either a left or right image, not both! */}}
-{{ if isset .Params "right-image" }}
-<div class="column is-fullwidth-mobile 
+    {{/* You should set either a left or right image, not both! */}}
+    {{ if isset .Params "right-image" }}
+    <div class="column is-fullwidth-mobile 
             is-one-third-tablet is-one-quarter-desktop 
             is-one-quarter-widescreen is-one-quarter-fullhd">
-    <div class="card">
-        <div class="card-image equal-height">
-            <figure class="image is-4by3">
-                <img src="{{ .Get "right-image" }}" alt="">
-            </figure>
+        <div class="card animated-hidden">
+            <div class="card-image equal-height">
+                <figure class="image is-4by3">
+                    <img src="{{ .Get "right-image" }}" alt="">
+                </figure>
+            </div>
         </div>
     </div>
-</div>
-{{ end }}
-{{/* This is a spacer line in case we have two cards one after the next */}}
-<div class="column is-12">
-    <div class="card">
-        <div class="card-content">
+    {{ end }}
+    {{/* This is a spacer line in case we have two cards one after the next */}}
+    <div class="column is-12">
+        <div class="card">
+            <div class="card-content">
+            </div>
         </div>
     </div>
-</div>
