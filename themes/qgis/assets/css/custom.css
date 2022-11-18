@@ -61,7 +61,9 @@ p {
   position: relative;
 }
 
-.card .animated-hidden {
+
+/* Card animations as we scroll - see https://www.youtube.com/watch?v=T33NN_pPeNI */
+.animation-hide {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
@@ -70,7 +72,7 @@ p {
 }
 
 @media(prefers-reduced-motion) {
-  .animated-show {
+  .animation-show {
     filter: blur(0px);
     transform: translateX(0);
     transition: none;
@@ -84,3 +86,5 @@ p {
 .card:nth-child(2) {
   transition-delay: 800ms;
 }
+
+/* Card animations as we scroll ends */

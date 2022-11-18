@@ -3,7 +3,7 @@
 <div class="column is-fullwidth-mobile 
             is-one-third-tablet is-one-quarter-desktop 
             is-one-quarter-widescreen is-one-quarter-fullhd">
-    <div class="card animated-hidden">
+    <div class="card animation-hide">
         <div class="card-image equal-height">
             <figure class="image is-4by3">
                 <img src="{{ .Get "left-image" }}" alt="">
@@ -23,7 +23,7 @@ dependent on the display form factor. */}}
     {{ else }}
     <div class="column is-fullwidth">
         {{ end }}
-        <div class="card equal-height animated-hidden" {{ if isset .Params "bg-color" }}
+        <div class="card equal-height animation-hide" {{ if isset .Params "bg-color" }}
             style="background: {{ .Get `bg-color` }}" {{ end }}>
             <div class="card-content">
                 <p class="title ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{ end
@@ -58,7 +58,7 @@ dependent on the display form factor. */}}
     <div class="column is-fullwidth-mobile 
             is-one-third-tablet is-one-quarter-desktop 
             is-one-quarter-widescreen is-one-quarter-fullhd">
-        <div class="card animated-hidden">
+        <div class="card animation-hide">
             <div class="card-image equal-height">
                 <figure class="image is-4by3">
                     <img src="{{ .Get "right-image" }}" alt="">
