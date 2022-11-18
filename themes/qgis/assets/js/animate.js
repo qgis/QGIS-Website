@@ -4,12 +4,21 @@ const qgis_observer = new IntersectionObserver((entries) => {
         console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('animation-show');
-            entry.target.classList.remove('animation-hide');
+            entry.target.classList.remove('animation-hide-left');
+            entry.target.classList.remove('animation-hide-right');
         } else {
-            entry.target.classList.add('animation-hide');
+            if (entry.target.classList.contains('animate-from-left'))
+            {
+                entry.target.classList.add('animation-hide-left');
+            };
+            if (entry.target.classList.contains('animate-from-right'))
+            {
+                entry.target.classList.add('animation-hide-right');
+            };            
             entry.target.classList.remove('animation-show');
+            
         }
     })
 });
-const animationElements = document.querySelectorAll('.animation-hide');
+const animationElements = document.querySelectorAll('.animation-element');
 animationElements.forEach((element) => qgis_observer.observe(element));
