@@ -1,42 +1,73 @@
 {{/* You should set either a left or right image, not both! */}}
-{{ if isset .Params "left-image" }}
+{{ if isset .Params "left-title" }}
 <div class="column is-fullwidth-mobile 
             is-one-third-tablet is-one-quarter-desktop 
             is-one-quarter-widescreen is-one-quarter-fullhd">
     <div class="card animation-element animate-from-left">
-        <div class="card-image equal-height">
-            <figure class="image is-4by3">
-                <img src="{{ .Get "left-image" }}" alt="">
-            </figure>
+        <div class="card-image equal-height"
+        style="                
+                {{ if isset .Params "background-color" }} 
+                background-color: {{ .Get `background-color` }};
+                {{ end }}                
+                "
+        >
+            <div class="card-content">
+                <p class="title ml-4" style="
+                {{ if isset .Params "text-color" }} 
+                color: {{ .Get `text-color` }};
+                {{ end }}
+                " >
+                    {{ .Get "left-title" }}
+                </p>
+            </div>
         </div>
     </div>
 </div>
 {{ end }}
-{{/* Content part of the block. If neither left or right image are
+ {{/* Content part of the block. If neither left or right image are
 set, it will consume the full width, otherwise a proportion of width
 dependent on the display form factor. */}}
-{{ if or (isset .Params "left-image") (isset .Params "right-image") }}
+{{ if or (isset .Params "left-title") (isset .Params "right-title") }}
 <div class="column is-fullwidth-mobile is-two-thirds-tablet 
         is-three-quarters-desktop is-three-quarters-widescreen 
         is-three-quarters-fullhd
-        ">
+        "
 {{ else }}
-<div class="column is-fullwidth">
-    {{ end }}
+<div class="column is-fullwidth"
+{{ end }}
+style="
+{{ if isset .Params "background-color" }}
+background: {{ .Get `background-color` }};
+{{ end }}
+{{ if (isset .Params "background-image") }} 
+background-image: url({{ .Get `background-image` }});
+{{ end }}
+">
     <div class="card equal-height animation-element
         {{ if isset .Params `left-image` }} animate-from-right {{ end }}
         {{ if isset .Params `right-image` }} animate-from-left {{ end }}
-        " {{ if isset .Params "bg-color" }}
-        style="background: {{ .Get `bg-color` }}" {{ end }}>
+        "
+        style="
+        {{ if isset .Params "background-color" }}
+        background: {{ .Get `background-color` }};
+        {{ end }}
+        {{ if (isset .Params "background-image") }} 
+        background-image: url({{ .Get `background-image` }});
+        {{ end }}
+        " >
         <div class="card-content">
+            {{ if isset .Params "title" }}
             <p class="title ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{ end
                 }}>
                 {{ .Get "title" }}
             </p>
+            {{ end }}
+            {{ if isset .Params "subtitle" }}
             <p class="subtitle ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{
                 end }}>
                 {{ .Get "subtitle" }}
             </p>
+            {{ end }}
         </div>
         <footer class="card-footer">
             {{ if isset .Params "link" }}
@@ -57,15 +88,27 @@ dependent on the display form factor. */}}
     </div>
 </div>
 {{/* You should set either a left or right image, not both! */}}
-{{ if isset .Params "right-image" }}
+{{ if isset .Params "right-title" }}
 <div class="column is-fullwidth-mobile 
-        is-one-third-tablet is-one-quarter-desktop 
-        is-one-quarter-widescreen is-one-quarter-fullhd">
-    <div class="card animation-element animate-from-right">
-        <div class="card-image equal-height">
-            <figure class="image is-4by3">
-                <img src="{{ .Get "right-image" }}" alt="">
-            </figure>
+            is-one-third-tablet is-one-quarter-desktop 
+            is-one-quarter-widescreen is-one-quarter-fullhd">
+    <div class="card animation-element animate-from-left">
+        <div class="card-image equal-height"
+        style="                
+                {{ if isset .Params "background-color" }} 
+                background-color: {{ .Get `background-color` }};
+                {{ end }}                
+                "
+        >
+            <div class="card-content">
+                <p class="title ml-4" style="
+                {{ if isset .Params "text-color" }} 
+                color: {{ .Get `text-color` }};
+                {{ end }}
+                " >
+                    {{ .Get "right-title" }}
+                </p>
+            </div>
         </div>
     </div>
 </div>

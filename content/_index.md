@@ -6,45 +6,44 @@ draft: false
 heroImage: "/img/banners/banner1.png"
 ---
 
-{{< block
-    title="Mapping"
+{{< block-text-and-image-background
+    left-title="Mapping"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
     text-color="white"
-    bg-color="teal"
-    left-image="/img/dall-e/DALL·E 2022-11-16 23.48.49 - a big complicated machine with a lot of moving parts and a little cat operating it.png"
+    background-color="teal"
 >}}
 
-{{< block
+{{< block-text-left-right
     title="Simple Block"
     subtitle="This is a right image block with no extended content and no link."
     text-color="white"
-    bg-color="teal"
+    background-color="teal"
     right-image="/img/banners/banner2.png"
 >}}
 
-{{< block
+{{< block-text-left-right
     title="Simple Block"
     subtitle="This is a left image block with no extended content or link."
     text-color="white"
-    bg-color="teal"
+    background-color="teal"
     left-image="/img/banners/banner2.png"
 >}}
 
-{{< block
+{{< block-text-left-right
     title="Link Block"
     subtitle="This is a right image block with no extended content but with a link."
     link="https://qgis.org"
     text-color="white"
-    bg-color="teal"
+    background-color="teal"
     right-image="/img/banners/banner2.png"
 >}}
 
-{{< block
+{{< block-text-left-right
     title="Link Block"
     subtitle="This is a left image block with no extended content but with a link."
     link="https://qgis.org"
     text-color="white"
-    bg-color="teal"
+    background-color="teal"
     left-image="/img/banners/banner2.png"
 >}}
 
