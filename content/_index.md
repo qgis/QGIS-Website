@@ -7,7 +7,7 @@ heroImage: "/img/banners/banner1.png"
 ---
 
 {{< block-image-left
-    title="Simple Block"
+    title="Great Block"
     subtitle="This is a left image block with no extended content and no link."
     text-color="white"
     background-color="teal"
