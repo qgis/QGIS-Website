@@ -35,7 +35,13 @@
             <p class="card-footer-item mr-2" style="justify-content: flex-end;">
                 <span>
                     <a href="{{ .Get "link" }}" {{ if isset .Params "link" }}
-                        style="color: {{ .Get `text-color` }}" {{ end }}>Find out more...</a>
+                          {{ end }}>
+                          {{ if isset .Params "link-text"}}
+                          {{ .Get "link-text" }}
+                          {{ else }}
+                          Find out more...
+                          {{ end }}
+                        </a>
                 </span>
             </p>
             {{ end }}
