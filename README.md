@@ -1,4 +1,4 @@
-QGIS Hugo Theme
+QGIS Hugo Website
 ===============
 
 By Tim Sutton and QGIS Contributors.
@@ -9,14 +9,30 @@ This theme uses the Bulma CSS framework,
 
 ### Installation
 
-Navigate to your Hugo site's theme folder
+Navigate to your development directory
 
 ```
-cd themes
 git clone https://github.com/qgis/qgis-hugo.git
 ```
+
 # Development
+
+First install hugo for your local machine:
+
+Linux:
+
+```sudo apt install hugo```
+
+Windows: [Follow these notes](https://gohugo.io/installation/windows/)
+
+MacOS: [Follow these notes](https://gohugo.io/installation/macos/)
 
 If you are using VSCode, I recommend the following extensions:
 
 * Hugo Language and Syntax Support
+
+Clone the repo:
+
+```
+git clone https://github.com/qgis/qgis-hugo.git
+```
