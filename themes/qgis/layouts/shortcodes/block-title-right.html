@@ -1,0 +1,54 @@
+<div class="column is-fullwidth-mobile is-two-thirds-tablet 
+        is-three-quarters-desktop is-three-quarters-widescreen 
+        is-three-quarters-fullhd
+        ">
+    <div class="card equal-height animation-element animate-from-right"
+        {{ if isset .Params "background-color" }}
+        style="
+        background: {{ .Get `background-color` }};
+        "
+        {{ end }}
+         >
+        <div class="card-content">
+            <p class="subtitle ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{
+                end }}>
+                {{ .Get "subtitle" }}
+            </p>
+        </div>
+        <footer class="card-footer">
+            {{ if isset .Params "link" }}
+            <p class="card-footer-item mr-2" style="justify-content: flex-end;">
+                <span>
+                    <a href="{{ .Get "link" }}" {{ if isset .Params "link" }}
+                        style="color: {{ .Get `text-color` }}" {{ end }}>Find out more...</a>
+                </span>
+            </p>
+            {{ end }}
+        </footer>
+    </div>
+</div>
+<div class="column is-fullwidth-mobile 
+            is-one-third-tablet is-one-quarter-desktop 
+            is-one-quarter-widescreen is-one-quarter-fullhd">
+    <div class="card animation-element animate-from-right"
+        {{ if isset .Params "background-color" }}
+        style="
+        background: {{ .Get `background-color` }};
+        "
+        {{ end }}
+        >    
+        <div class="card-image equal-height">
+            <p class="title ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{ end
+            }}>
+            {{ .Get "title" }}
+        </p>
+        </div>
+    </div>
+</div>
+{{/* This is a spacer line in case we have two cards one after the next */}}
+<div class="column is-12">
+    <div class="card">
+        <div class="card-content">
+        </div>
+    </div>
+</div>

@@ -14,9 +14,6 @@
             </div>
         </div>
     </div>
-    {{ $customjs := resources.Get "js/custom.js" }}
-    {{ $js := slice $customjs | resources.Concat "js/all.js" }}
-    <script src="{{ $js.RelPermalink }}"></script>
 </footer>
 </body>
 

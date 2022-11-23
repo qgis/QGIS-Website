@@ -6,45 +6,45 @@ draft: false
 heroImage: "/img/banners/banner1.png"
 ---
 
-{{< block-text-and-image-background
-    left-title="Mapping"
-    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
-    text-color="white"
-    background-color="teal"
->}}
-
-{{< block-text-left-right
+{{< block-image-left
     title="Simple Block"
-    subtitle="This is a right image block with no extended content and no link."
+    subtitle="This is a left image block with no extended content and no link."
     text-color="white"
     background-color="teal"
-    right-image="/img/banners/banner2.png"
+    image="/img/banners/banner2.png"
 >}}
 
-{{< block-text-left-right
+{{< block-image-right
     title="Simple Block"
     subtitle="This is a left image block with no extended content or link."
     text-color="white"
     background-color="teal"
-    left-image="/img/banners/banner2.png"
+    image="/img/banners/banner2.png"
 >}}
 
-{{< block-text-left-right
-    title="Link Block"
-    subtitle="This is a right image block with no extended content but with a link."
-    link="https://qgis.org"
+{{< block
+    title="Mapping"
+    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
     text-color="white"
     background-color="teal"
-    right-image="/img/banners/banner2.png"
+    link="https://qgis.org"
 >}}
 
-{{< block-text-left-right
-    title="Link Block"
-    subtitle="This is a left image block with no extended content but with a link."
-    link="https://qgis.org"
+{{< block-title-left
+    title="Block with more content"
+    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
     text-color="white"
     background-color="teal"
-    left-image="/img/banners/banner2.png"
+>}}
+More details
+{{< /block-title-left >}}
+
+{{< block-title-right
+    title="Mapping"
+    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
+    text-color="white"
+    background-color="teal"
+    link="https://qgis.org"
 >}}
 
 <div class="content">
