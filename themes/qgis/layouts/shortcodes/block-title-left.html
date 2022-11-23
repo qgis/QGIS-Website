@@ -33,18 +33,23 @@
                 {{ .Get "subtitle" }}
             </p>
         </div>
+        <div class="card-content is-hidden">
+            <div class="content" style="color: {{ .Get `text-color` }}">
+                {{ .Inner }}
+            </div>
+        </div>        
         <footer class="card-footer">
             {{ if isset .Params "link" }}
             <p class="card-footer-item mr-2" style="justify-content: flex-end;">
                 <span>
                     <a href="{{ .Get "link" }}" {{ if isset .Params "link" }}
-                        style="color: {{ .Get `text-color` }}" {{ end }}>Find out more...</a>
+                          {{ end }}>Find out more...</a>
                 </span>
             </p>
             {{ end }}
             {{ if len .Inner }}
             <p class="card-footer-item pulldown-content">
-                <span>
+                <span style="color: {{ .Get `text-color` }}">
                     v
                 </span>
             </p>

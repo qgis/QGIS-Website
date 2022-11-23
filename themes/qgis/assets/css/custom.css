@@ -64,14 +64,14 @@ p {
 
 /* Card animations as we scroll - see https://www.youtube.com/watch?v=T33NN_pPeNI */
 .animation-hide-left {
-  opacity: 0.5;
+  opacity: 0;
   filter: blur(5px);
   transform: translateX(-200px);
   transition: all 1s;
   transform-origin: left;
 }
 .animation-hide-right {
-  opacity: 0.5;
+  opacity: 0;
   filter: blur(5px);
   transform: translateX(200px);
   transition: all 1s;
@@ -86,13 +86,13 @@ p {
 }
 
 @keyframes bounce {
-    0%   { transform: scale(1,1)      translateX(0); }
-    10%  { transform: scale(1.1,.9)   translateX(0); }
-    30%  { transform: scale(.9,1.1)   translateX(-100px); }
-    50%  { transform: scale(1.05,.95) translateX(0); }
-    57%  { transform: scale(1,1)      translateX(-7px); }
-    64%  { transform: scale(1,1)      translateX(0); }
-    100% { transform: scale(1,1)      translateX(0); }
+  0%   { transform: scale(1,1)      translateX(0); }
+  10%  { transform: scale(1.01,.99)   translateX(0); }
+  30%  { transform: scale(.99,1.01)   translateX(-5px); }
+  50%  { transform: scale(1.01,.99) translateX(0); }
+  57%  { transform: scale(1,1)      translateX(-5px); }
+  64%  { transform: scale(1,1)      translateX(0); }
+  100% { transform: scale(1,1)      translateX(0); }
 }  
 
 

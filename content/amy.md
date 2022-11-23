@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: "QGIS"
+title: "AMEEEEEEE!"
 subtitle: "Welcome to the world’s most popular open source geospatial data management and analysis suite."
 draft: false
 heroImage: "/img/banners/banner1.png"
