@@ -32,9 +32,7 @@
                 end }}>
                 {{ .Get "subtitle" }}
             </p>
-        </div>
-        <div class="card-content is-hidden">
-            <div class="content" style="color: {{ .Get `text-color` }}">
+            <div class="content is-hidden" style="color: {{ .Get `text-color` }}">
                 {{ .Inner }}
             </div>
         </div>        
@@ -54,9 +52,9 @@
             </p>
             {{ end }}
             {{ if len .Inner }}
-            <p class="card-footer-item pulldown-content">
+            <p class="card-footer-item pulldown-content mr-2" style="justify-content: flex-end;">
                 <span style="color: {{ .Get `text-color` }}">
-                    v
+                    Read more...
                 </span>
             </p>
             {{ end }}             

@@ -16,8 +16,8 @@ heroImage: "/img/banners/banner1.png"
     image="/img/community-picture.png"
     link-text="Find a group near you"
     link="https://qgis.org"
->}}
-
+>}}Adsa
+{{< /block-image-left >}}
 {{< block-image-right
     title="Simple Block"
     subtitle="This is a left image block with no extended content or link."
@@ -39,9 +39,8 @@ heroImage: "/img/banners/banner1.png"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
     text-color="white"
     background-color="teal"
+    link-text="More details..."
 >}}
-More details khdkjhksj dhjfhs dkj hsfdjkh fsd
-{{< /block-title-left >}}
 
 {{< block-title-right
     title="Mapping"

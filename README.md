@@ -67,6 +67,10 @@ For example to add an about page, create ``content/about.md``
 
 The page will be accessible then at /about/
 
+## Modifying the menu
+
+The menu is implemented in ```themes/qgis/layouts/partials/menu.html```.
+
 ## Working with blocks
 
 The different types of blocks we use are defined in ```themes/qgis/layouts/shortcodes```. The main shortcodes you will use are the ones starting with ```block```. To use a block, simply add it to your markdown as per this example:
@@ -102,3 +106,11 @@ subtitle | Subtitled for the block
 text-color | Use a CSS colour e.g. white or #FFFFFF
 background-color | Use a CSS colour e.g. white or #FFFFFF
 image | Place your images into static/img and then references it like this "/img/some-image.png"
+
+## Customising CSS
+
+Put your customizations in ```themes/qgis/assets/css/custom.css```.
+
+We use a hugo minification and combining  workflow - see the header layout in ´´´themes/qgis/layouts/partials/header.html´´´.
+
+## Custom

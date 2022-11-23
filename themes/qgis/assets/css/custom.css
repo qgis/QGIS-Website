@@ -97,3 +97,20 @@ p {
 
 
 /* Card animations as we scroll ends */
+
+
+/* No rounded corners for block images */
+.card-image:last-child img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card-image:first-child img {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* Remove the highlight line between a card and its footer */
+
+.card-footer {
+  border-top: none;
+}
