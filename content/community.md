@@ -16,7 +16,34 @@ heroImage: "/img/banners/banner1.png"
     image="/img/community-picture.png"
     link-text="Find a group near you"
     link="https://qgis.org"
->}}Adsa
+    markdown-style="light"
+>}}
+
+# Heading 1
+
+## Heading 2
+
+## Heading 3 
+
+* list 1
+* list 2
+* list 3
+
+1. numbered list 1
+1. numbered list 1
+1. numbered list 1
+1. numbered list 1
+
+This is some markdown text
+
+And how about a table:
+
+Name | Description
+-----|--------------
+Tim | Cats
+Amy | Horses
+Abi | Dogs
+
 {{< /block-image-left >}}
 {{< block-image-right
     title="Simple Block"

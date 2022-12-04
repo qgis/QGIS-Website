@@ -4,6 +4,8 @@ By Tim Sutton and QGIS Contributors.
 
 Read [this article](https://cloudcannon.com/blog/the-ultimate-guide-to-hugo-sections/) on templates if you are looking to understand how templates work.
 
+Read [this article](https://www.regisphilibert.com/blog/2018/07/hugo-pipes-and-asset-processing-pipeline/) on hugo pipes, minifying content etc.
+
 This theme uses the Bulma CSS framework,
 
 ## Installation

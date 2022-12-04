@@ -31,8 +31,8 @@
             </p>
         </div>
         <div class="card-content is-hidden ml-2">
-            <div class="content" style="color: {{ .Get `text-color` }}">
-                {{ .Inner }}
+            <div class="content {{ .Get `markdown-style` }}">
+                {{ .Inner | markdownify }}
             </div>
         </div>          
         <footer class="card-footer">
