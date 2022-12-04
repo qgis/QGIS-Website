@@ -28,3 +28,8 @@ deploy-prod: ## Deploy everything to production
 tests: ## Run the test suite
 	docker build --rm -f Dockerfile.tests -t qgis_hugo_tests:latest .
 	docker run --rm --net=host --volume "$${PWD}":/app -w /app qgis_hugo_tests:latest
+
+build: ## Build the site then run using python http.server
+	hugo
+	python -m http.server 8000 -d public
+	#xdg-open http://localhost:8000
