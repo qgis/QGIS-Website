@@ -87,7 +87,7 @@ p {
 
 @keyframes bounce {
   0%   { transform: scale(1,1)      translateX(0); }
-  10%  { transform: scale(1.01,.99)   translateX(0); }
+  10%  { transform: scale(1.01,0.99)   translateX(0); }
   30%  { transform: scale(.99,1.01)   translateX(-5px); }
   50%  { transform: scale(1.01,.99) translateX(0); }
   57%  { transform: scale(1,1)      translateX(-5px); }
