@@ -6,7 +6,10 @@ Read [this article](https://cloudcannon.com/blog/the-ultimate-guide-to-hugo-sect
 
 Read [this article](https://www.regisphilibert.com/blog/2018/07/hugo-pipes-and-asset-processing-pipeline/) on hugo pipes, minifying content etc.
 
-This theme uses the Bulma CSS framework,
+This theme uses the [Bulma CSS framework](https://bulma.io/), which you should familiarise
+yourself with if you want to change the theme.
+
+![Overview diagram](img/hugo-overview.drawio.png)
 
 ## Installation
 
@@ -113,6 +116,6 @@ image | Place your images into static/img and then references it like this "/img
 
 Put your customizations in ```themes/qgis/assets/css/custom.css```.
 
-We use a hugo minification and combining  workflow - see the header layout in ´´´themes/qgis/layouts/partials/header.html´´´.
+We use a hugo minification and combining  workflow - see the header layout in ```themes/qgis/layouts/partials/header.html```.
 
 ## Custom

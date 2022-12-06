@@ -37,7 +37,7 @@
         </div>          
         <footer class="card-footer">
             {{ if isset .Params "link" }}
-            <p class="card-footer-item mr-2" style="justify-content: flex-end;">
+            <p class="card-footer-item mr-2 is-align-content-start">
                 <span>
                     <a style="color: {{ .Get `text-color` }}" href="{{ .Get "link" }}" {{ if isset .Params "link" }}
                           {{ end }}>
@@ -51,10 +51,8 @@
             </p>
             {{ end }}
             {{ if len .Inner }}
-            <p class="card-footer-item pulldown-content mr-2" style="justify-content: flex-end;">
-                <span style="color: {{ .Get `text-color` }}">
-                    Read more ...
-                </span>
+            <p class="card-footer-item pulldown-content mr-2 is-align-content-end">
+                <button class="button is-light">More...</button>
             </p>
             {{ end }}              
         </footer>

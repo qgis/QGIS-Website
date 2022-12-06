@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: ""
+title: "Our Community"
 subtitle: "Experience the world’s most vibrant community of geospatial experts and enthusiasts"
 draft: false
 heroImage: "/img/banners/banner1.png"
@@ -23,7 +23,7 @@ heroImage: "/img/banners/banner1.png"
 
 ## Heading 2
 
-## Heading 3 
+## Heading 3
 
 * list 1
 * list 2
@@ -45,20 +45,13 @@ Amy | Horses
 Abi | Dogs
 
 {{< /block-image-left >}}
-{{< block-image-right
-    title="Simple Block"
-    subtitle="This is a left image block with no extended content or link."
+
+{{< block
+    title="Chats"
+    subtitle="Choose your favourite way to communicate with your fellow QGIS users. We have a Facebook Group, Telegram Chat, Revolt, Matrix Rooms, IRC, email discussion lists and many other ways to share expertise and find solutions."
     text-color="white"
     background-color="teal"
     image="/img/banners/banner2.png"
->}}
-
-{{< block
-    title="Mapping"
-    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
-    text-color="white"
-    background-color="teal"
-    link="https://qgis.org"
 >}}
 
 {{< block-title-left
@@ -70,8 +63,8 @@ Abi | Dogs
 >}}
 
 {{< block-title-right
-    title="Mapping"
-    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
+    title="News and updates"
+    subtitle="Mailing lists are a cornerstone of our project communication, reaching a wide audience and providing a huge searchable archive of knowledge on all things QGIS related."
     text-color="white"
     background-color="teal"
     link="https://qgis.org"
