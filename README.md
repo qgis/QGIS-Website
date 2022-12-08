@@ -9,6 +9,8 @@ Read [this article](https://www.regisphilibert.com/blog/2018/07/hugo-pipes-and-a
 This theme uses the [Bulma CSS framework](https://bulma.io/), which you should familiarise
 yourself with if you want to change the theme.
 
+View the website design [QGIS website figma](https://www.figma.com/file/bHHUUVZ1fbQMtwSmtCSXYN/qgis-website?node-id=259%3A379)
+
 ![Overview diagram](img/hugo-overview.drawio.png)
 
 ## Installation
