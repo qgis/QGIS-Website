@@ -7,7 +7,6 @@ heroImage: "/img/banners/banner4.png"
 ---
 
 
-
 {{< block-image-left
     title="User groups"
     subtitle="Our user groups represent the global community of QGIS users and enthusiasts. With different local groups all over the world as well as virtual groups there is a community for you!"
@@ -20,6 +19,8 @@ heroImage: "/img/banners/banner4.png"
 >}}
 
 # Heading 1
+
+Hello to everyone.
 
 ## Heading 2
 
