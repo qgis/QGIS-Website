@@ -16,16 +16,16 @@ This is the all-in-one stable release installer for macOS High Sierra (10.13) an
 
 ---
 
-* Download and open the macOS DMG installer
-* Drag the QGIS Desktop app to your applications folder
-* On first launch, please right-click on the QGIS app icon, hold down the Option key, then choose Open
-* Thereafter double-click the application to launch QGIS
+- Download and open the macOS DMG installer
+- Drag the QGIS Desktop app to your applications folder
+- On first launch, please right-click on the QGIS app icon, hold down the Option key, then choose Open
+- Thereafter double-click the application to launch QGIS
 
 **Next steps**
 
 ---
 
-* If you are just starting out, read the Gentle Inroduction to GIS
-* Follow the self paced training manual
-* Get help using the user manual 
-* Get community support via live chat, forums or mailing lists
+- If you are just starting out, read the Gentle Inroduction to GIS
+- Follow the self paced training manual
+- Get help using the user manual 
+- Get community support via live chat, forums or mailing lists
