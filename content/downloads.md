@@ -7,3 +7,8 @@ heroImage: "/img/banners/banner4.png"
 ---
 
 QGIS is, and always will be, available free of charge. The project is a huge social contribution from many community members who volunteer their time and expertise. It is provided in this way with the goal of bettering society through informed spatial decision making. If you are able, we gently request that you support our work.
+
+![windows button](/static/img/windowsbutton.png)
+![mac button](/static/img/macbutton.png)
+![linux button](/static/img/linuxbutton.png)
+![ios button](/static/img/iosbutton.png)
