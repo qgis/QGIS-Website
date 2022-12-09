@@ -11,4 +11,3 @@ QGIS is, and always will be, available free of charge. The project is a huge soc
 ![windows button](/static/img/windowsbutton.png)
 ![mac button](/static/img/macbutton.png)
 ![linux button](/static/img/linuxbutton.png)
-![ios button](/static/img/iosbutton.png)
