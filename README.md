@@ -62,7 +62,7 @@ Page type | Path
 Landing Page | themes/qgis/layouts/index.html
 Top Level Pages | themes/qgis/layouts/_default/single.html
 
-## Editing the landing page
+## Editing the landing (home) page
 
 The ``content/_index.md`` is the content for the landing page. Just edit whatever you like there. The blocks shortcodes are described below.
 
@@ -73,6 +73,12 @@ Content pages are stored in the ``content`` folder. The top level documents ther
 For example to add an about page, create ``content/about.md``
 
 The page will be accessible then at /about/
+
+## Referencing Images and Media
+
+Place images and media in ```static/img```. Everything in ```static``` is referenced
+from the top level of the site e.g.  ```static/img/foo.png``` would be referenced in
+markdown as ```/img/foo.png```.
 
 ## Modifying the menu
 
