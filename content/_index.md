@@ -11,7 +11,7 @@ heroImage: "/img/banners/banner4.png"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
     text-color="black"
     background-color="white"
-    image="/img/banners/banner2.png"
+    image="/img/island1.png"
 >}}
 
 {{< block-image-right
