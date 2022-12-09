@@ -7,12 +7,13 @@ heroImage: "/img/banners/banner1.png"
 ---
 
 {{< block-image-left
-    title="Great Block"
-    subtitle="This is a left image block with no extended content and no link."
+    title="Create publication ready maps"
+    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
     text-color="white"
     background-color="teal"
     image="/img/banners/banner2.png"
 >}}
+
 
 {{< block-image-right
     title="Simple Block"
