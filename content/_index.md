@@ -15,8 +15,24 @@ heroImage: "/img/banners/banner4.png"
 >}}
 
 {{< block-image-right
-    title="Simple Block"
-    subtitle="This is a left image block with no extended content or link."
+    title="Manage and analyse geospatial data"
+    subtitle="Keep full control of your data and leverage state-of-the art analysis tools, all seamlessly integrated with our toolbox."
+    text-color="white"
+    background-color="teal"
+    image="/img/banners/banner2.png"
+>}}
+
+{{< block-image-left
+    title="Publish your work online"
+    subtitle="Reach a global audience online with your amazing maps and spatial information products."
+    text-color="white"
+    background-color="teal"
+    image="/img/banners/banner2.png"
+>}}
+
+{{< block-image-right
+    title="Work with spatial data in the field"
+    subtitle="Harness the power of your mobile device to collect and view your spatial information in the field and sync it back seamlessly. "
     text-color="white"
     background-color="teal"
     image="/img/banners/banner2.png"
