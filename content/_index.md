@@ -35,7 +35,7 @@ heroImage: "/img/banners/banner4.png"
     subtitle="Harness the power of your mobile device to collect and view your spatial information in the field and sync it back seamlessly. "
     text-color="white"
     background-color="teal"
-    image="/img/banners/banner2.png"
+    image="/img/qonphone.png"
 >}}
 
 {{< block
