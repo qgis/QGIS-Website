@@ -57,6 +57,13 @@ Once the site is running, you can open it at:
 
 The site will automatically refresh any page you have open if you edit it and save your work. Magical eh?
 
+## File naming conventions
+
+* Separate words in file names with hyphens e.g. windows-download.md
+* Avoid abbreviations in the words of your files
+* Write file names in lower case only
+* No spaces in file names
+
 ## Changing the templates
 
 Page type | Path
