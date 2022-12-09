@@ -1,14 +1,12 @@
 ---
 type: "page"
-title: "Your copy of QGIS Desktop is ready for download!"
-subtitle: ""
+title: "Download"
+subtitle: "QGIS Desktop for Windows"
 draft: false
 heroImage: "/img/banners/banner4.png"
 ---
 
-**QGIS Desktop for Windows**
-
-Download and Download and donate buttons
+Download and Download and Donate buttons
 
 This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.
 
