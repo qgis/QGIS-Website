@@ -1,67 +1,57 @@
-<div class="column is-fullwidth-mobile 
-            is-one-third-tablet is-one-quarter-desktop 
-            is-one-quarter-widescreen is-one-quarter-fullhd">
+{{ $backgroundColor := .Get "background-color" | default "#ff0000"}}
+{{ $innerMarkup := "" }}
+{{ if len .Inner }}
+    {{ $innerMarkup := .Inner | default "" | markdownify }}
+{{ end }}
+{{ $linkText := .Get "link-text" | default "Find out more..." }}
+{{ $link := .Get "link" | default "" }}
+{{ $textColor := .Get "text-color" | default "black" }}
+{{ $image := .Get "image" | default "" }}
+{{ $title := .Get "title" | default "" }}
+{{ $subtitle := .Get "subtitle" | default "" }}
+{{ $markdownStyle := .Get "markdown-style" | default "light" }}
+<div class="column is-fullwidth-mobile is-one-third-tablet is-one-quarter-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
     <div class="card animation-element animate-from-left">
         <div class="card-image equal-height">
             <figure class="image is-4by3">
-                <img src="{{ .Get "image" }}" alt="">
+                <img src="{{ $image }}" alt="">
             </figure>
         </div>
     </div>
 </div>
-<div class="column is-fullwidth-mobile is-two-thirds-tablet 
-        is-three-quarters-desktop is-three-quarters-widescreen 
-        is-three-quarters-fullhd
-        ">
-    <div class="card equal-height animation-element animate-from-right"
-        {{ if isset .Params "background-color" }}
-        style="
-        background: {{ .Get `background-color` }};
-        "
-        {{ end }}
-         >
+<div class="column is-fullwidth-mobile is-two-thirds-tablet is-three-quarters-desktop is-three-quarters-widescreen is-three-quarters-fullhd">
+    <div class="card equal-height animation-element animate-from-right" style="background: {{ $backgroundColor }};">
         <div class="card-content">
-            <p class="title ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{ end
-                }}>
-                {{ .Get "title" }}
+            <p class="title ml-4" style="color: {{ $textColor }}">
+                {{ $title }}
             </p>
-            <p class="subtitle ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{
-                end }}>
-                {{ .Get "subtitle" }}
+            <p class="subtitle ml-4" style="color: {{ $textColor }}">
+                {{ $subtitle }}
             </p>
         </div>
         <div class="card-content is-hidden ml-2">
-            <div class="content {{ .Get `markdown-style` }}">
-                {{ .Inner | markdownify }}
+            <div class="content {{ $markdownStyle }}">
+                {{ $innerMarkup }}
             </div>
-        </div>          
+        </div>
         <footer class="card-footer">
             {{ if isset .Params "link" }}
-            <p class="card-footer-item mr-2 is-align-content-start">
-                <span>
-                    <a style="color: {{ .Get `text-color` }}" href="{{ .Get "link" }}" {{ if isset .Params "link" }}
-                          {{ end }}>
-                          {{ if isset .Params "link-text"}}
-                          {{ .Get "link-text" }}
-                          {{ else }}
-                          Find out more...
-                          {{ end }}
+                <p class="card-footer-item mr-2 is-align-content-start">
+                    <span>
+                        <a style="color: {{ $textColor }}" href="{{ $link }}">
+                            {{ $linkText }}
                         </a>
-                </span>
-            </p>
+                    </span>
+                </p>
             {{ end }}
             {{ if len .Inner }}
-            <p class="card-footer-item pulldown-content mr-2 is-align-content-end">
-                <button class="button is-light">More...</button>
-            </p>
-            {{ end }}              
+                <p class="card-footer-item pulldown-content mr-2 is-align-content-end">
+                    <button class="button is-light">More...</button>
+                </p>
+            {{ end }}
         </footer>
     </div>
-</div>
-{{/* This is a spacer line in case we have two cards one after the next */}}
-<div class="column is-12">
-    <div class="card">
-        <div class="card-content">
-        </div>
-    </div>
-</div>
+</div>{{/* This is a spacer line in case we have two cards one after the next */}}<div class="column is-12">
+<div class="card">
+    <div class="card-content"></div>
+</div></div>

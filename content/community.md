@@ -6,8 +6,6 @@ draft: false
 heroImage: "/img/banners/banner4.png"
 ---
 
-## Get involved in the QGIS community
-
 
 {{< block-image-left
     title="User groups"
@@ -18,9 +16,9 @@ heroImage: "/img/banners/banner4.png"
     link-text="Find a group near you"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}hi this is tim{{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Events"
     subtitle="From virtual events to face-to-face meetings, we aim to bring people together. During these events users share their innovations and show how to solve real world problems using QGIS"
     text-color="white"
@@ -29,7 +27,7 @@ heroImage: "/img/banners/banner4.png"
     link-text="Join our events"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Chats"
@@ -40,9 +38,9 @@ heroImage: "/img/banners/banner4.png"
     link-text="Join the conversation"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="News and Updates"
     subtitle="Mailing lists are a cornerstone of our project communication, reaching a wide audience and providing a huge searchable archive of knowledge on all things QGIS related."
     text-color="white"
@@ -51,7 +49,7 @@ heroImage: "/img/banners/banner4.png"
     link-text="Sign up for our mailing lists"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Teams"
@@ -62,9 +60,9 @@ heroImage: "/img/banners/banner4.png"
     link-text="Meet our teams"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Service Providers"
     subtitle="If you use QGIS in a professional setting, there are over 60 companies worldwide offering professional support and development services."
     text-color="white"
@@ -73,5 +71,4 @@ heroImage: "/img/banners/banner4.png"
     link-text="Find a provider"
     link="https://qgis.org"
     markdown-style="light"
->}}
-
+>}}{{< /block-image-right >}}

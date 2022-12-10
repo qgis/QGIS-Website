@@ -114,3 +114,6 @@ p {
 .card-footer {
   border-top: none;
 }
+.card-footer-item:not(:last-child) {
+  border-right: none;
+}
