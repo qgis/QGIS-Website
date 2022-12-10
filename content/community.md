@@ -6,7 +6,6 @@ draft: false
 heroImage: "/img/banners/banner4.png"
 ---
 
-
 {{< block-image-left
     title="User groups"
     subtitle="Our user groups represent the global community of QGIS users and enthusiasts. With different local groups all over the world as well as virtual groups there is a community for you!"

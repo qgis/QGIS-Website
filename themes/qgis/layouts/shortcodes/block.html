@@ -1,39 +1,49 @@
+{{ $backgroundColor := .Get "background-color" | default "#ff0000"}}
+{{ $innerMarkup := "" }}
+{{ if len .Inner }}
+    {{ $innerMarkup := .Inner | default "" | markdownify }}
+{{ end }}
+{{ $linkText := .Get "link-text" | default "Find out more..." }}
+{{ $link := .Get "link" | default "" }}
+{{ $textColor := .Get "text-color" | default "black" }}
+{{ $image := .Get "image" | default "" }}
+{{ $title := .Get "title" | default "" }}
+{{ $subtitle := .Get "subtitle" | default "" }}
+{{ $markdownStyle := .Get "markdown-style" | default "light" }}
+
 <div class="column is-fullwidth">
-    <div class="card equal-height animation-element animate-from-right"
-        style="
-        {{ if isset .Params "background-color" }}
-        background: {{ .Get `background-color` }};
-        {{ end }}
-        {{ if (isset .Params "background-image") }} 
-        background-image: url({{ .Get `background-image` }});
-        {{ end }}
-        ">
+    <div class="card equal-height animation-element animate-from-left" style="background: {{ $backgroundColor }};">
         <div class="card-content">
-            <p class="title ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{ end
-                }}>
-                {{ .Get "title" }}
+            <p class="title ml-4" style="color: {{ $textColor }}">
+                {{ $title }}
             </p>
-            <p class="subtitle ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{
-                end }}>
-                {{ .Get "subtitle" }}
+            <p class="subtitle ml-4" style="color: {{ $textColor }}">
+                {{ $subtitle }}
             </p>
+        </div>
+        <div class="card-content is-hidden ml-2">
+            <div class="content {{ $markdownStyle }}">
+                {{ $innerMarkup }}
+            </div>
         </div>
         <footer class="card-footer">
             {{ if isset .Params "link" }}
-            <p class="card-footer-item mr-2" style="justify-content: flex-end;">
-                <span>
-                    <a href="{{ .Get "link" }}" {{ if isset .Params "link" }}
-                        style="color: {{ .Get `text-color` }}" {{ end }}>Find out more...</a>
-                </span>
-            </p>
+                <p class="card-footer-item mr-2 is-align-content-start">
+                    <span>
+                        <a style="color: {{ $textColor }}" href="{{ $link }}">
+                            {{ $linkText }}
+                        </a>
+                    </span>
+                </p>
+            {{ end }}
+            {{ if len .Inner }}
+                <p class="card-footer-item pulldown-content mr-2 is-align-content-end">
+                    <button class="button is-light">More...</button>
+                </p>
             {{ end }}
         </footer>
     </div>
-</div>
-{{/* This is a spacer line in case we have two cards one after the next */}}
-<div class="column is-12">
-    <div class="card">
-        <div class="card-content">
-        </div>
-    </div>
-</div>
+</div>{{/* This is a spacer line in case we have two cards one after the next */}}<div class="column is-12">
+<div class="card">
+    <div class="card-content"></div>
+</div></div>
