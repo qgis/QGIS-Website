@@ -9,33 +9,16 @@ theme = 'qgis'
     [markup.goldmark.renderer]
       unsafe = true
 
-
-[[main]]
-  name = "About"
-  url = ""
-  weight = -110
-
-[[main]]
-  name = "Community"
-  url = "/community/"
-  weight = -110 # Sets the menu order 
-
-[[main]]
-  name = "Resources"
-  url = "/resources/"
-  weight = -110 # Sets the menu order 
-
-[[main]]
-  name = "Downloads"
-  url = "/downloads/"
-  weight = -110 # Sets the menu order 
-
-[[main]]
-  name = "Support"
-  url = "/support/"
-  weight = -110 # Sets the menu order 
-
-
+[menu]
+[[menu.main]]
+  name = 'Home'
+  url = '/'
+  weight = 10
+[[menu.main]]
+  name = 'Community'
+  url = '/community/'
+  weight = 20
+ 
 # Submenus are done this way: parent -> identifier
 [[main]]
   name = "Links"
