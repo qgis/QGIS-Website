@@ -22,7 +22,7 @@ heroImage: "/img/banners/banner1.png"
 [Download QGIS →]()
 {{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Documentation"
     subtitle="We know that downloading software is just the start of the journey. You need the support of documentation to take you from novice to expert in the shortest time possible. Use our technical documentation and training materials to get started."
     text-color="black"
@@ -30,7 +30,7 @@ heroImage: "/img/banners/banner1.png"
     image="/img/documentation.png"
 >}}
 [Learn more →]()
-{{< /block-image-left >}}
+{{< /block-image-right >}}
 
 {{< block-image-left
     title="Plugins, styles, and more"
@@ -42,7 +42,7 @@ heroImage: "/img/banners/banner1.png"
 [Explore →]()
 {{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Stay up to date"
     subtitle="Whatever your preferred social media platform, we probably have a presence and would love to keep you current with the amazing innovations and advanced that take place in the QGIS project."
     text-color="black"
@@ -50,7 +50,7 @@ heroImage: "/img/banners/banner1.png"
     image="/img/stayuptodate.png"
 >}}
 [Follow us →]()
-{{< /block-image-left >}}
+{{< /block-image-right >}}
 
 {{< block-image-left
     title="Engage with users"
@@ -62,7 +62,7 @@ heroImage: "/img/banners/banner1.png"
 [Connect →]()
 {{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Get certified"
     subtitle="Obtain your professional certification as a QGIS practioner. We have a global network of certified educators who can cater to your training needs."
     text-color="black"
@@ -70,7 +70,7 @@ heroImage: "/img/banners/banner1.png"
     image="/img/getcertified.png"
 >}}
 [Learn more →]()
-{{< /block-image-left >}}
+{{< /block-image-right >}}
 
 {{< block-image-left
     title="QGIS Association"
