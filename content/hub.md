@@ -6,11 +6,11 @@ draft: false
 heroImage: "/img/banners/banner1.png"
 ---
 
-{{< block
+{{< block-text
     title="Get the software, documentation, and further resources"
     text-color="black"
     background-color="white"
->}}
+>}}{{< /block-text >}}
 
 {{< block-image-left
     title="Downloads"

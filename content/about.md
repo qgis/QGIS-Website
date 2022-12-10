@@ -9,11 +9,11 @@ heroImage: "/img/banners/banner3.png"
 
 20+ years of working | >xxx total downloads | 450k+ Daily active users| xxxxx
 
-{{< block
+{{< block-text
     title="Get to know the QGIS project"
     text-color="black"
     background-color="white"
->}}{{< /block >}}
+>}}{{< /block-text >}}
 
 {{< block-image-left
     title="QGIS.org charter"
@@ -92,10 +92,10 @@ heroImage: "/img/banners/banner3.png"
     markdown-style="light"
 >}}{{< /block-image-left >}}
 
-{{< block
+{{< block-text
    link-text="Learn more about the QGIS Value Proposition"
     link="https://qgis.org"
     text-color="white"
     background-color="#589632"
 
->}}{{< /block >}}
+>}}{{< /block-text >}}
