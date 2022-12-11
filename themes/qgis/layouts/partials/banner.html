@@ -1,6 +1,6 @@
 <section class="hero is-info is-medium has-bg-img"
 {{ if ( .Params.HeroImage ) }} 
-style="background: url('{{ .Params.HeroImage | safeCSS }}');
+style="background: url('{{ absURL .Params.HeroImage | safeCSS }}');
        background-position: center;
        background-size: cover;"
 {{ end }}>
