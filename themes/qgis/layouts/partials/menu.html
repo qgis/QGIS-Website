@@ -14,20 +14,20 @@
     <div id="menu" class="navbar-menu">
         <div class="navbar-end">
             
-            <a class="navbar-item" href="/">
+            <a class="navbar-item" href="{{ absURL "" }}">
                 Home
             </a>
 
-            <a class="navbar-item" href="/community/">
+            <a class="navbar-item" href="{{ absURL "/community/" }}">
                 Community
             </a>
-            <a class="navbar-item" href="/hub/">
+            <a class="navbar-item" href="{{ absURL "/hub/" }}">
                 Hub
             </a>
-            <a class="navbar-item" href="/about/">
+            <a class="navbar-item" href="{{ absURL "/about/" }}">
                 About
             </a>
-            <a class="navbar-item" href="/value-proposition/">
+            <a class="navbar-item" href="{{ absURL "/value-proposition/" }}">
                 Value
             </a>            
 
@@ -37,13 +37,13 @@
                 </a>
 
                 <div class="navbar-dropdown">
-                    <a class="navbar-item" href="/download-windows/">
+                    <a class="navbar-item" href="{{ absURL "/download-windows/" }}">
                         Windows
                     </a>
-                    <a class="navbar-item" href="/download-mac/">
+                    <a class="navbar-item" href="{{ absURL "/download-mac/" }}">
                         macOS
                     </a>
-                    <a class="navbar-item" href="/download-linux/">
+                    <a class="navbar-item" href="{{ absURL "/download-linux/" }}">
                         Linux
                     </a>
                     <hr class="navbar-divider">
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="buttons is-medium">
-                    <a class="button is-primary" href="/donate/">
+                    <a class="button is-primary" href="{{ absURL "/donate/" }}">
                         <strong>Donate!</strong>
                     </a>
                 </div>
