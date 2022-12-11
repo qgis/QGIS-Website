@@ -2,6 +2,8 @@
 
 By Tim Sutton and QGIS Contributors.
 
+[![E2E Tests](https://github.com/qgis/QGIS-Hugo/actions/workflows/e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Hugo/actions/workflows/e2e.yml)
+
 Read [this article](https://cloudcannon.com/blog/the-ultimate-guide-to-hugo-sections/) on templates if you are looking to understand how templates work.
 
 Read [this article](https://www.regisphilibert.com/blog/2018/07/hugo-pipes-and-asset-processing-pipeline/) on hugo pipes, minifying content etc.
@@ -55,6 +57,13 @@ Once the site is running, you can open it at:
 
 The site will automatically refresh any page you have open if you edit it and save your work. Magical eh?
 
+## File naming conventions
+
+* Separate words in file names with hyphens e.g. windows-download.md
+* Avoid abbreviations in the words of your files
+* Write file names in lower case only
+* No spaces in file names
+
 ## Changing the templates
 
 Page type | Path
@@ -62,7 +71,7 @@ Page type | Path
 Landing Page | themes/qgis/layouts/index.html
 Top Level Pages | themes/qgis/layouts/_default/single.html
 
-## Editing the landing page
+## Editing the landing (home) page
 
 The ``content/_index.md`` is the content for the landing page. Just edit whatever you like there. The blocks shortcodes are described below.
 
@@ -73,6 +82,12 @@ Content pages are stored in the ``content`` folder. The top level documents ther
 For example to add an about page, create ``content/about.md``
 
 The page will be accessible then at /about/
+
+## Referencing Images and Media
+
+Place images and media in ```static/img```. Everything in ```static``` is referenced
+from the top level of the site e.g.  ```static/img/foo.png``` would be referenced in
+markdown as ```/img/foo.png```.
 
 ## Modifying the menu
 
