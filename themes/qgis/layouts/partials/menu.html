@@ -13,35 +13,11 @@
 
     <div id="menu" class="navbar-menu">
         <div class="navbar-end">
-<<<<<<< HEAD
-            {{/*  <a class="navbar-item" href="/">
-=======
-            
-            <a class="navbar-item" href="/">
->>>>>>> main
-                Home
-            </a>  */}}
-
             {{ range .Site.Menus.main }}
             <a href="{{ .URL }}" title="{{ .Title }}" class="navbar-item {{ with .Params.class }}{{ . }}{{ end }}">
                 {{- .Name -}}
             </a>
             {{ end }}
-
-            {{/*  <a class="navbar-item" href="/community/">
-                Community
-            </a>
-
-            <a class="navbar-item" href="/about/">
-                About
-<<<<<<< HEAD
-            </a>  */}}
-=======
-            </a>
-            <a class="navbar-item" href="/value-proposition/">
-                Value
-            </a>            
->>>>>>> main
 
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
