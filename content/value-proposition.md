@@ -3,7 +3,7 @@ type: "page"
 title: "QGIS Value Proposition"
 subtitle: ""
 draft: false
-heroImage: "/img/banners/banner1.png"
+heroImage: "img/banners/banner1.png"
 ---
 
 {{< block-image-left

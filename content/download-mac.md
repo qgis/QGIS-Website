@@ -3,7 +3,7 @@ type: "page"
 title: "Download"
 subtitle: "QGIS Desktop for macOS"
 draft: false
-heroImage: "/img/banners/banner4.png"
+heroImage: "img/banners/banner4.png"
 ---
 
 Download and Download and Donate buttons
