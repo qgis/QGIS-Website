@@ -117,3 +117,9 @@ p {
 .card-footer-item:not(:last-child) {
   border-right: none;
 }
+
+/* displaying the left border of the follow section for the footer */
+.follow-qgis {
+  border-left-style: solid;
+  border-left-color: white;
+}
