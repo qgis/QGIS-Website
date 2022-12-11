@@ -37,12 +37,7 @@
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
     {{ $css := slice $fontcss $bulmacss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" rel="stylesheet">
-<<<<<<< HEAD
-    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
-    
-=======
     <link href="{{ $style.RelPermalink }}" rel="stylesheet">    
->>>>>>> main
 
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
     {{ $expandjs := resources.Get "js/card-expand.js" }}
