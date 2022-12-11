@@ -31,10 +31,15 @@
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $markdownlightcss := resources.Get "css/markdown-light.css" }}
     {{ $markdowndarkcss := resources.Get "css/markdown-dark.css" }}
+    {{/* We can compile SASS too... */}}
+    {{ $sass := resources.Get "css/style.scss" }}
+    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+    {{/* must have the leading slash in css path or gh pages deploy will break */}}
     {{ $css := slice $fontcss $bulmacss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" rel="stylesheet">
-    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
+    <link href="{{ $style.RelPermalink }}" rel="stylesheet">    
 
+    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
     {{ $expandjs := resources.Get "js/card-expand.js" }}
     {{ $animatejs := resources.Get "js/animate.js" }}
     {{ $js := slice $animatejs $expandjs | resources.Concat "js/all.js" | resources.Fingerprint }}
