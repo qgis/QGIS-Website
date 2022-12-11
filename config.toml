@@ -12,39 +12,49 @@ theme = 'qgis'
     [markup.goldmark.renderer]
       unsafe = true
 
-
-[[main]]
+# See https://gohugo.io/content-management/menus/
+[menu]
+[[menu.main]]
   name = "About"
-  url = ""
+  url = "/about/"
   weight = -110
 
-[[main]]
+[[menu.main]]
   name = "Community"
   url = "/community/"
   weight = -110 # Sets the menu order 
 
-[[main]]
+[[menu.main]]
   name = "Resources"
-  url = "/resources/"
+  url = "/hub/"
   weight = -110 # Sets the menu order 
 
-[[main]]
+[[menu.main]]
   name = "Downloads"
   url = "/downloads/"
   weight = -110 # Sets the menu order 
 
-[[main]]
+[[menu.main]]
   name = "Support"
   url = "/support/"
   weight = -110 # Sets the menu order 
 
 
 # Submenus are done this way: parent -> identifier
-[[main]]
-  name = "Links"
-  identifier = "Links"
+[[menu.main]]
+  parent = "Downloads"
+  name = "Windows"
+  url = "/download-windows/"
   weight = -108
-[[main]]
-  parent = "Links"
-  name = "QGIS Plugins"
-  url = "https://plugins.qgis.org/"
+
+[[menu.main]]
+  parent = "Downloads"
+  name = "macOS"
+  url = "/download-mac/"
+  weight = -108  
+
+[[menu.main]]
+  parent = "Downloads"
+  name = "Linux"
+  url = "/download-linux/"
+  weight = -108  

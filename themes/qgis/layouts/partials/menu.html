@@ -13,44 +13,29 @@
 
     <div id="menu" class="navbar-menu">
         <div class="navbar-end">
-            
-            <a class="navbar-item" href="{{ absURL "" }}">
-                Home
-            </a>
-
-            <a class="navbar-item" href="{{ absURL "/community/" }}">
-                Community
-            </a>
-            <a class="navbar-item" href="{{ absURL "/hub/" }}">
-                Hub
-            </a>
-            <a class="navbar-item" href="{{ absURL "/about/" }}">
-                About
-            </a>
-            <a class="navbar-item" href="{{ absURL "/value-proposition/" }}">
-                Value
-            </a>            
-
-            <div class="navbar-item has-dropdown is-hoverable">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+            <div class="navbar-item has-dropdown is-hoverable {{ if $currentPage.HasMenuCurrent "main" . }}is-active{{ end }}">
                 <a class="navbar-link">
-                    Downloads
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
                 </a>
-
                 <div class="navbar-dropdown">
-                    <a class="navbar-item" href="{{ absURL "/download-windows/" }}">
-                        Windows
+                    {{ range .Children }}
+                    <a class="navbar-item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL }}">
+                        {{ .Name }}
                     </a>
-                    <a class="navbar-item" href="{{ absURL "/download-mac/" }}">
-                        macOS
-                    </a>
-                    <a class="navbar-item" href="{{ absURL "/download-linux/" }}">
-                        Linux
-                    </a>
-                    <hr class="navbar-divider">
-                    <a class="navbar-item">
-                        Report an issue
-                    </a>
+                    {{ end }}    
                 </div>
+                {{ else }}
+                <a class="navbar-item" href="{{ .URL }}">
+                    {{ .Pre }}
+                    <span>{{ .Name }}</span>
+                </a>                
+                {{ end }}
+            {{ end }}
+    
             </div>
         </div>
 

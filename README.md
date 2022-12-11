@@ -102,28 +102,40 @@ The ``content/_index.md`` is the content for the landing page. Just edit whateve
 
 ## Adding a top level page
 
+### Create the content
+
 Content pages are stored in the ``content`` folder. The top level documents there will be rendered with the top level page theming.
 
 For example to add an about page, create ``content/about.md``
 
 The page will be accessible then at /about/
 
-## Referencing Images and Media
+### Referencing Images and Media
 
 Place images and media in ```static/img```. Everything in ```static``` is referenced
 from the top level of the site e.g.  ```static/img/foo.png``` would be referenced in
 markdown as ```/img/foo.png```.
+### Add it to the menu
 
-## Modifying the menu
+For pages to appear in the top menu, you need to add an entry to
+``config.toml`` for example the menu for the above about page will be:
 
-The menu is implemented in ```themes/qgis/layouts/partials/menu.html```.
+```
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = -110
+```
+## Modifying the menu template
+
+The menu template is implemented in ```themes/qgis/layouts/partials/menu.html```.
 
 ## Working with blocks
 
 The different types of blocks we use are defined in ```themes/qgis/layouts/shortcodes```. The main shortcodes you will use are the ones starting with ```block```. To use a block, simply add it to your markdown as per this example:
 
 ```
-{{< block-title-left
+{{< block-image-left
     title="Block with more content"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
     text-color="white"
@@ -134,14 +146,14 @@ The different types of blocks we use are defined in ```themes/qgis/layouts/short
 If you want to include markdown content inside the block you can do it as inner content like this:
 
 ```
-{{< block-title-left
+{{< block-image-left
     title="Block with more content"
     subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps for digital and print. "
     text-color="white"
     background-color="teal"
 >}}
 More details khdkjhksj dhjfhs dkj hsfdjkh fsd
-{{< /block-title-left >}}
+{{< /block-image-left >}}
 ```
 
 The options for a block are:
@@ -153,6 +165,8 @@ subtitle | Subtitled for the block
 text-color | Use a CSS colour e.g. white or #FFFFFF
 background-color | Use a CSS colour e.g. white or #FFFFFF
 image | Place your images into static/img and then references it like this "/img/some-image.png"
+link | A URL to more reading etc. Use relative links for pages on this site.
+link-text | Test to display for the hyperlink.
 
 ## Customising CSS
 
