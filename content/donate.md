@@ -5,11 +5,12 @@ subtitle: "We rely on sustaining memberships and donations for much of our fundi
 draft: false
 heroImage: "/img/banners/banner1.png"
 ---
-{{< block
+
+{{< block-text
     title="Contribute and keep QGIS sustainable"
     text-color="black"
     background-color="white"
->}}
+>}}{{< /block-text >}}
 
 {{< block-image-left
     title="Sustaining memberships"
@@ -22,7 +23,7 @@ heroImage: "/img/banners/banner1.png"
     markdown-style="light"
 >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Donating via bank transfer"
     subtitle="This option is especially useful for large donors or those who cannot make payments using PayPal or Stripe. Use the details below to make a donation via international money transfer. If needed, we can raise an invoice to you first to facilitate procurement."
     text-color="black"
@@ -42,7 +43,6 @@ heroImage: "/img/banners/banner1.png"
 |**Bank address:**|Mingerstrasse 20, 3030 Berne,Switzerland|
 |**VAT-number:**|CHE-489.853.176|
 
-{{< /block-image-left >}}
 
 {{< block-image-left
     title="Donating via Stripe"

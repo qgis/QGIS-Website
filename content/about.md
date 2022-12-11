@@ -9,11 +9,11 @@ heroImage: "/img/banners/banner3.png"
 
 20+ years of working | >xxx total downloads | 450k+ Daily active users| xxxxx
 
-{{< block
+{{< block-text
     title="Get to know the QGIS project"
     text-color="black"
     background-color="white"
->}}
+>}}{{< /block-text >}}
 
 {{< block-image-left
     title="QGIS.org charter"
@@ -24,9 +24,9 @@ heroImage: "/img/banners/banner3.png"
     link-text="View our charter"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Code of Conduct"
     subtitle="Our values guide us."
     text-color="white"
@@ -35,7 +35,7 @@ heroImage: "/img/banners/banner3.png"
     link-text="Read our code of conduct"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Diversity Statement"
@@ -46,9 +46,9 @@ heroImage: "/img/banners/banner3.png"
     link-text="Read our diversity statement"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Environmental policy"
     subtitle="We are committed to and encourage sustainable behaviour and decisions in all aspects, including infrastructure choices and event organization."
     text-color="white"
@@ -57,7 +57,7 @@ heroImage: "/img/banners/banner3.png"
     link-text="Explore our policies"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Annual general meetings"
@@ -68,9 +68,9 @@ heroImage: "/img/banners/banner3.png"
     link-text="View past AGMs"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-left >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Financial reports"
     subtitle="We transparently use the funds of the association to further the development of QGIS."
     text-color="white"
@@ -79,7 +79,7 @@ heroImage: "/img/banners/banner3.png"
     link-text="View our reports"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Citing QGIS in academic work"
@@ -90,12 +90,12 @@ heroImage: "/img/banners/banner3.png"
     link-text="Learn more"
     link="https://qgis.org"
     markdown-style="light"
->}}
+>}}{{< /block-image-left >}}
 
-{{< block
+{{< block-text
    link-text="Learn more about the QGIS Value Proposition"
     link="https://qgis.org"
     text-color="white"
     background-color="#589632"
 
->}}
+>}}{{< /block-text >}}
