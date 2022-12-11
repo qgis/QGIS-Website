@@ -18,27 +18,24 @@
                 {{ if .HasChildren }}
             <div class="navbar-item has-dropdown is-hoverable {{ if $currentPage.HasMenuCurrent "main" . }}is-active{{ end }}">
                 <a class="navbar-link">
-                    {{ .Pre }}
-                    <span>{{ .Name }}</span>
+                    {{ .Pre }}<span>{{ .Name }}</span>
                 </a>
                 <div class="navbar-dropdown">
                     {{ range .Children }}
                     <a class="navbar-item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL }}">
-                        {{ .Name }}
+                        {{ .Pre }}<span>{{ .Name }}</span>
                     </a>
                     {{ end }}    
                 </div>
                 {{ else }}
                 <a class="navbar-item" href="{{ .URL }}">
-                    {{ .Pre }}
-                    <span>{{ .Name }}</span>
+                    {{ .Pre }}<span>{{ .Name }}</span>
                 </a>                
                 {{ end }}
             {{ end }}
     
             </div>
         </div>
-
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="control has-icons-right mr-2">
@@ -47,7 +44,6 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </span>
                 </div>
-
                 <div class="buttons is-medium">
                     <a class="button is-primary" href="{{ absURL "/donate/" }}">
                         <strong>Donate!</strong>

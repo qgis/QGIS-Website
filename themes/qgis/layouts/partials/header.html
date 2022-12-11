@@ -42,7 +42,8 @@
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
     {{ $expandjs := resources.Get "js/card-expand.js" }}
     {{ $animatejs := resources.Get "js/animate.js" }}
-    {{ $js := slice $animatejs $expandjs | resources.Concat "js/all.js" | resources.Fingerprint }}
+    {{ $navbarjs := resources.Get "js/navbar.js" }}
+    {{ $js := slice $animatejs $expandjs $navbarjs | resources.Concat "js/all.js" | resources.Fingerprint }}
     {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
     <script defer src="{{ $js.RelPermalink }}"></script>
 </head>
