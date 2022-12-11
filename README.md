@@ -15,7 +15,7 @@ View the website design [QGIS website figma](https://www.figma.com/file/bHHUUVZ1
 
 ![Overview diagram](img/hugo-overview.drawio.png)
 
-## Installation
+## Checkout
 
 Navigate to your development directory
 
@@ -27,11 +27,36 @@ git clone https://github.com/qgis/qgis-hugo.git
 
 First install hugo for your local machine:
 
-Linux: ``sudo apt install hugo``
+**Note:** we need to install the 'extended' hugo version which includes a SASS compiler. If you don't install the extended version you will get errors like this when compiling:
 
-Windows: [Follow these notes](https://gohugo.io/installation/windows/)
+```
+ERROR 2022/12/11 07:33:37 Rebuild failed: TOCSS: failed to transform 
+"css/style.scss" (text/x-scss). Check your Hugo installation; you need 
+the extended version to build SCSS/SASS.: this feature is not available 
+in your current Hugo version, see https://goo.gl/YMrWcn for more information
+```
 
-MacOS: [Follow these notes](https://gohugo.io/installation/macos/)
+You can find the extended version in the [releases page](https://github.com/gohugoio/hugo/releases).
+
+![Download](./img/hugo-download.png)
+
+
+
+### Linux: 
+
+Download the deb above and then do 
+
+``sudo dpkg -i hugo_extended_0.107.0_linux-amd64.deb``
+
+### Windows: 
+
+[Follow these notes](https://gohugo.io/installation/windows/)
+
+### MacOS: 
+
+[Follow these notes](https://gohugo.io/installation/macos/)
+
+## Setting up vscode
 
 If you are using VSCode, I recommend the following extensions:
 
