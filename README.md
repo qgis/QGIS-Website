@@ -164,7 +164,7 @@ title | Title for the block
 subtitle | Subtitled for the block
 text-color | Use a CSS colour e.g. white or #FFFFFF
 background-color | Use a CSS colour e.g. white or #FFFFFF
-image | Place your images into static/img and then references it like this "/img/some-image.png"
+image | Place your images into static/img and then references it like this "img/some-image.png". **Note:** Do not include a leading slash in the image path!
 link | A URL to more reading etc. Use relative links for pages on this site.
 link-text | Test to display for the hyperlink.
 
