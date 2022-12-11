@@ -31,7 +31,7 @@
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $markdownlightcss := resources.Get "css/markdown-light.css" }}
     {{ $markdowndarkcss := resources.Get "css/markdown-dark.css" }}
-    {{ $css := slice $fontcss $bulmacss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "css/all.css" | resources.Fingerprint }}
+    {{ $css := slice $fontcss $bulmacss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" rel="stylesheet">
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
 
