@@ -10,7 +10,7 @@
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
 {{ $markdownStyle := .Get "markdown-style" | default "light" }}
-<div class="column is-fullwidth-mobile is-one-third-tablet is-one-quarter-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+<div class="column is-fullwidth-mobile is-one-third-tablet is-one-quarter-desktop is-one-quarter-widescreen is-one-quarter-fullhd slide-element">
     <div class="card animation-element animate-from-left">
         <div class="card-image equal-height">
             <figure class="image is-4by3">
@@ -19,7 +19,7 @@
         </div>
     </div>
 </div>
-<div class="column is-fullwidth-mobile is-two-thirds-tablet is-three-quarters-desktop is-three-quarters-widescreen is-three-quarters-fullhd">
+<div class="column is-fullwidth-mobile is-two-thirds-tablet is-three-quarters-desktop is-three-quarters-widescreen is-three-quarters-fullhd slide-element">
     <div class="card equal-height animation-element animate-from-right" style="background: {{ $backgroundColor }};">
         <div class="card-content">
             <p class="title ml-4" style="color: {{ $textColor }}">

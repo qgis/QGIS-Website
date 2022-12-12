@@ -22,3 +22,19 @@ const qgis_observer = new IntersectionObserver((entries) => {
 });
 const animationElements = document.querySelectorAll('.animation-element');
 animationElements.forEach((element) => qgis_observer.observe(element));
+
+
+// This is the function for sliding elements into view 
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+       console.log(entry)
+       if (entry.isIntersecting){
+           entry.target.classList.add('show');
+       } else {
+           entry.target.classList.remove('show')
+       }
+   
+    });
+   });  
+const hiddenElements = document.querySelectorAll('.slide-element');
+hiddenElements.forEach((el) => observer.observe(el));
