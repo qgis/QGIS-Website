@@ -8,6 +8,8 @@ Read [this article](https://cloudcannon.com/blog/the-ultimate-guide-to-hugo-sect
 
 Read [this article](https://www.regisphilibert.com/blog/2018/07/hugo-pipes-and-asset-processing-pipeline/) on hugo pipes, minifying content etc.
 
+Read [this article](https://blog.fullstackdigital.com/how-to-use-hugo-template-variables-in-scss-files-in-2018-b8a834accce) to see how you can use Hugo variables in your SCSS.
+
 This theme uses the [Bulma CSS framework](https://bulma.io/), which you should familiarise
 yourself with if you want to change the theme.
 

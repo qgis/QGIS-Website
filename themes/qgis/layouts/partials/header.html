@@ -22,22 +22,41 @@
     <meta property="og:description"
         content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
 
-    <!--
-    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oxygen:400,700' rel='stylesheet'
-    type='text/css'> -->
-    {{ $fontcss := resources.Get "css/fontawesome.css" }}
+
     {{ $bulmacss := resources.Get "css/bulma.css" }}
     {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $markdownlightcss := resources.Get "css/markdown-light.css" }}
     {{ $markdowndarkcss := resources.Get "css/markdown-dark.css" }}
+
+    {{/* must have the leading slash in css path or gh pages deploy will break */}}
+    {{ $css := slice $bulmacss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+    <link href="{{ $css.RelPermalink }}" integrity=”{{ $css.Data.Integrity }}”  rel="stylesheet">
+
     {{/* We can compile SASS too... */}}
     {{ $sass := resources.Get "css/style.scss" }}
     {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
-    {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $css := slice $fontcss $bulmacss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
-    <link href="{{ $css.RelPermalink }}" rel="stylesheet">
-    <link href="{{ $style.RelPermalink }}" rel="stylesheet">    
+    <link href="{{ $style.RelPermalink }}" integrity=”{{ $style.Data.Integrity }}” rel="stylesheet">    
+
+    {{/* 
+        Fontawesome related stuff here
+        We can compile template SCSS too... */}}
+    {{ $fontcss := resources.Get "css/fontawesome.scss" | 
+        resources.ExecuteAsTemplate "/css/fa.css" . | 
+        toCSS | 
+        minify | 
+        fingerprint }}
+    <link href="{{ $fontcss.RelPermalink }}" integrity=”{{ $fontcss.Data.Integrity }}” rel="stylesheet">    
+    {{/* Copy Font Awesome Resources into the public dir - this only gets 
+        done by hugo command but not hugo runserver */}}
+    {{ $fa1 := (resources.Get "fonts/fa-brands-400.ttf").Publish }}
+    {{ $fa2 := (resources.Get "fonts/fa-brands-400.woff2").Publish }}
+    {{ $fa3 := (resources.Get "fonts/fa-regular-400.ttf").Publish }}
+    {{ $fa4 := (resources.Get "fonts/fa-regular-400.woff2").Publish }}
+    {{ $fa5 := (resources.Get "fonts/fa-solid-900.ttf").Publish }}
+    {{ $fa6 := (resources.Get "fonts/fa-solid-900.woff2").Publish }}
+    {{ $fa7 := (resources.Get "fonts/fa-v4compatibility.ttf").Publish }}
+    {{ $fa8 := (resources.Get "fonts/fa-v4compatibility.woff2").Publish }}
 
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
     {{ $expandjs := resources.Get "js/card-expand.js" }}
@@ -45,7 +64,7 @@
     {{ $navbarjs := resources.Get "js/navbar.js" }}
     {{ $js := slice $animatejs $expandjs $navbarjs | resources.Concat "js/all.js" | resources.Fingerprint }}
     {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
-    <script defer src="{{ $js.RelPermalink }}"></script>
+    <script defer src="{{ $js.RelPermalink }}" integrity=”{{ $js.Data.Integrity }}”></script>
 </head>
 
 <body>
