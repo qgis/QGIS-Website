@@ -14,7 +14,7 @@ heroImage: "img/banners/banner1.png"
     link="/download/"
     link-text="Download"
     markdown-style="light"
->}}
+>}}{{< block-image-left >}}
 
 {{< block-image-right
     title="Who uses QGIS?"
@@ -23,7 +23,7 @@ heroImage: "img/banners/banner1.png"
     background-color="white"
     link="/license/"
     link-text="License"
->}}
+>}}{{< block-image-right >}}
 
 {{< block-image-left
     title="QGIS is free of cost, not cost free"
@@ -31,6 +31,7 @@ heroImage: "img/banners/banner1.png"
     text-color="white"
     background-color="#589632"
 >}}
+
 In parallel to these directed funding efforts, we developed programmes for supporting the project with funds that we can use at our own discretion via donations and sustaining memberships. These discretionary funds allow us to provide all of the supporting infrastructure around the project. In addition it enables us to fund:
 
 - quality improvements to the software
@@ -49,13 +50,13 @@ In parallel to these directed funding efforts, we developed programmes for suppo
 - [Fund our work →]()
 - [View our financial reports →]()
 
-{{< /block-image-left >}}
+{{< /block-image-right >}}
 
-{{< block-image-right
+{{< block-image-left
     title="Governance"
     subtitle="QGIS.org is registered as a Swiss Verrein (Association) that is operated in a non-profit manner. It is managed by an elected board and contributed to by hundreds of people from around the world. In the same way that the software we develop is open source, the project is operated with the same principle of openness, with all financial reports, board reports and community decisions carried out in an open and transparent way."
     text-color="white"
     background-color="#589632"
     link="/reports/"
     link-text="Annual Reports"
->}}
+>}}{{< block-image-left >}}
