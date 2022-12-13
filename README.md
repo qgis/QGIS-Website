@@ -11,7 +11,7 @@ By Tim Sutton and QGIS Contributors.
 
 ## 🏃‍♀️Before you start
 
-This web site is a static site built using Hugo.
+This web site is a static site built using [Hugo](https://gohugo.io/).
 
 ![Hugo Logo](./img/hugo-logo.png)
 
