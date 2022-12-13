@@ -37,7 +37,7 @@ The QGIS.org web site receives a **lot** of traffic so our website is designed t
 
 * 💨 Fast: all pages are statically generated, there is no database, no bulky javascript or CSS frameworks etc.
 * 🔒 Privacy respecting: as much as possible we avoid things that can be used to track you - no resources loaded from other web sites, no cookies, no trackers, no sessions etc.
-* 🖊️Open source: This repository is covered by two license:
+* 🖊️Open source: This repository is covered by two licenses:
   * The HUGO Project and QGIS theme provided here are published under a permissive 🔑 [MIT License](LICENSE). 
   * The actual content of the web site is © QGIS.ORG amd Contributors and is made available under Creative Commons 
   * The actual content of the web site is © QGIS.ORG amd Contributors and is made available under the [Creative Commons-NonCommercial-Share-Alike-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. We chose this license to provent third parties from hosting their own, possibly malisciously altered versions of the QGIS.org web site.
