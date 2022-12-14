@@ -40,23 +40,32 @@
 
     {{/* 
         Fontawesome related stuff here
+        This is an example of how you might render css or other media
+        as hugo templates so that you can use hugo vars in the media file ... 
+        {{ $democss := resources.Get "css/sometemplate.css" | 
+        resources.ExecuteAsTemplate "/css/rendered.css" . | 
+        toCSS | 
+        minify | 
+        fingerprint }}
+    */}}
+    {{/* 
+        Fontawesome related stuff here
         We can compile template SCSS too... */}}
-    {{ $fontcss := resources.Get "css/fontawesome.scss" | 
-        resources.ExecuteAsTemplate "/css/fa.css" . | 
+    {{ $fontcss := resources.Get "css/fontawesome.css" | 
         toCSS | 
         minify | 
         fingerprint }}
     <link href="{{ $fontcss.RelPermalink }}" integrity=”{{ $fontcss.Data.Integrity }}” rel="stylesheet">    
     {{/* Copy Font Awesome Resources into the public dir - this only gets 
         done by hugo command but not hugo runserver */}}
-    {{ $fa1 := (resources.Get "fonts/fa-brands-400.ttf").Publish }}
-    {{ $fa2 := (resources.Get "fonts/fa-brands-400.woff2").Publish }}
-    {{ $fa3 := (resources.Get "fonts/fa-regular-400.ttf").Publish }}
-    {{ $fa4 := (resources.Get "fonts/fa-regular-400.woff2").Publish }}
-    {{ $fa5 := (resources.Get "fonts/fa-solid-900.ttf").Publish }}
-    {{ $fa6 := (resources.Get "fonts/fa-solid-900.woff2").Publish }}
-    {{ $fa7 := (resources.Get "fonts/fa-v4compatibility.ttf").Publish }}
-    {{ $fa8 := (resources.Get "fonts/fa-v4compatibility.woff2").Publish }}
+    {{ $fa1 := (resources.Get "webfonts/fa-brands-400.ttf").Publish }}
+    {{ $fa2 := (resources.Get "webfonts/fa-brands-400.woff2").Publish }}
+    {{ $fa3 := (resources.Get "webfonts/fa-regular-400.ttf").Publish }}
+    {{ $fa4 := (resources.Get "webfonts/fa-regular-400.woff2").Publish }}
+    {{ $fa5 := (resources.Get "webfonts/fa-solid-900.ttf").Publish }}
+    {{ $fa6 := (resources.Get "webfonts/fa-solid-900.woff2").Publish }}
+    {{ $fa7 := (resources.Get "webfonts/fa-v4compatibility.ttf").Publish }}
+    {{ $fa8 := (resources.Get "webfonts/fa-v4compatibility.woff2").Publish }}
 
     <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
     {{ $expandjs := resources.Get "js/card-expand.js" }}
