@@ -50,15 +50,18 @@ theme = 'qgis'
   name = "Windows"
   url = "/download-windows/"
   weight = -108
+  pre = "<i class='fa-brands fa-windows mr-1'></i>"
 
 [[menu.main]]
   parent = "Downloads"
   name = "macOS"
   url = "/download-mac/"
   weight = -108  
+  pre = "<i class='fa-brands fa-apple mr-1'></i>"
 
 [[menu.main]]
   parent = "Downloads"
   name = "Linux"
   url = "/download-linux/"
   weight = -108  
+  pre = "<i class='fa-brands fa-linux mr-1'></i>"
