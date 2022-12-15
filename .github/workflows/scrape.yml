@@ -11,7 +11,7 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-    - name: 'Checkout jupiterbroadcasting.com'
+    - name: 'Checkout QGIS-hugo'
       uses: actions/checkout@v3
       with:
         ref: main
@@ -20,7 +20,7 @@ jobs:
     - name: 'Checkout show-scraper'
       uses: actions/checkout@v3
       with:
-        repository: JupiterBroadcasting/show-scraper
+        repository: QGIS-HUGO/show-scraper
         ref: main
         path: ./show-scraper
 
