@@ -123,3 +123,13 @@ p {
   border-left-style: solid;
   border-left-color: white;
 }
+
+/* this slide elements on scroll  */
+.slide-element {
+  opacity:0;
+  transition: all 2000ms;
+}
+
+.show {
+  opacity: 6;
+}
