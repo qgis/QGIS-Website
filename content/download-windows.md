@@ -6,6 +6,9 @@ draft: false
 heroImage: "img/banners/banner4.png"
 ---
 
+{{< qrcode "https://qgis.org/en/site/forusers/download.html#windows" >}}
+
+
 Download and Download and Donate buttons
 
 This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.

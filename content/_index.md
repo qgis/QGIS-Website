@@ -5,6 +5,7 @@ subtitle: "Welcome to the world’s most popular open source geospatial data man
 draft: false
 heroImage: "img/banners/banner4.png"
 ---
+{{< qrcode >}}
 
 {{< block-image-left
     title="Create publication ready maps"

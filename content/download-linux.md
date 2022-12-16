@@ -8,6 +8,8 @@ heroImage: "img/banners/banner4.png"
 Download and Download and Donate buttons
 ---
 
+{{< qrcode "https://qgis.org/en/site/forusers/download.html#linux" >}}
+
 curl https://qgis.org/install.sh | sh
 
 This is the stable release installer. For other Linux installer variants see here.

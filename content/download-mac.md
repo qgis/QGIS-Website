@@ -6,6 +6,8 @@ draft: false
 heroImage: "img/banners/banner4.png"
 ---
 
+{{< qrcode "https://qgis.org/en/site/forusers/download.html#mac" >}}
+
 Download and Download and Donate buttons
 ---
 
