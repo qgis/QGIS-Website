@@ -39,7 +39,6 @@ The QGIS.org web site receives a **lot** of traffic so our website is designed t
 * 🔒 Privacy respecting: as much as possible we avoid things that can be used to track you - no resources loaded from other web sites, no cookies, no trackers, no sessions etc.
 * 🖊️Open source: This repository is covered by two licenses:
   * The HUGO Project and QGIS theme provided here are published under a permissive 🔑 [MIT License](LICENSE). 
-  * The actual content of the web site is © QGIS.ORG amd Contributors and is made available under Creative Commons 
   * The actual content of the web site is © QGIS.ORG amd Contributors and is made available under the [Creative Commons-NonCommercial-Share-Alike-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. We chose this license to provent third parties from hosting their own, possibly malisciously altered versions of the QGIS.org web site.
 
 ![CC License](img/hugo-content-license.png)
@@ -156,6 +155,7 @@ For pages to appear in the top menu, you need to add an entry to
   name = "About"
   url = "/about/"
   weight = -110
+  pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 ```
 ## Modifying the menu template
 
@@ -168,7 +168,9 @@ The different types of blocks we use are defined in ```themes/qgis/layouts/short
 ```
 {{< block-image-left
     title="Block with more content"
-    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print. "
+    subtitle="Unleash your creativity and experience first 
+    class cartographic design capabiliities and design great
+    maps for digital and print. "
     text-color="white"
     background-color="teal"
 >}}
@@ -179,7 +181,9 @@ If you want to include markdown content inside the block you can do it as inner 
 ```
 {{< block-image-left
     title="Block with more content"
-    subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps for digital and print. "
+    subtitle="Unleash your creativity and experience first 
+    class cartographic design capabilities and design great 
+    maps for digital and print. "
     text-color="white"
     background-color="teal"
 >}}
@@ -201,10 +205,7 @@ link-text | Test to display for the hyperlink.
 
 ## 🪪 Working with Cards
 
-The content you write should use the card metaphor (based on Bulma CSS cards) to enclose
-your content in rectangular blocks so they layout in our grid nicely. Here is an example
-from the download page showing a QR code block and a content card side by side in the
-grid.
+The content you write should use the card metaphor (based on Bulma CSS cards) to enclose your content in rectangular blocks so they layout in our grid nicely. Here is an example from the download page showing a QR code block and a content card side by side in the grid.
 
 ![Cards](./img/hugo-cards.gif)
 
@@ -215,7 +216,10 @@ Before starting your markdown content, start a card using the ```card-start``` s
 ```
 {{< card-start header="Download QGIS for Windows">}}
 
-This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.
+This is the all-in-one stable release installer. The software 
+you receive with the free download link and the download and
+donate link is identical. For other Windows installer variants 
+see here.
 ```
 
 A ```card-start``` shortcode can take the following parameters:
@@ -257,6 +261,38 @@ The ```info-bar``` shortcode is a way to put a infographic style element onto yo
 To use info-bar, pass it a collection of key-value pairs separated by ``:`` colons as
 illustrated above.
 
+
+## Icon Bar
+
+The ```info-icons``` shortcode is a way to put a row of circular fontawesome icon elements onto your page:
+
+![Cards](./img/hugo-icon-bar.png)
+
+```
+{{< info-icons 
+    "Linux:fa-brands fa-linux"
+    "macOS:fa-brands fa-apple"
+    "Windows:fa-brands fa-windows" >}}
+```
+
+To use icon-bar, pass it a collection of key-value pairs separated by ``:`` colons as illustrated above. The second value should be a [fontawesome image name](https://fontawesome.com/search).
+
+
+## Image Bar
+
+The ```image-bar``` shortcode is a way to put a row of circular image elements onto your page:
+
+![Cards](./img/hugo-image-bar.png)
+
+```
+{{< image-bar 
+    "Cartography:/img/map1.png"
+    "Analysis:/img/map2.png"
+    "Print:/img/map3.png" >}}
+```
+
+To use image-bar, pass it a collection of key-value pairs separated by ``:`` colons as
+illustrated above. The secnd value should be a path to an image.
 
 ## 🩳 Customising CSS
 

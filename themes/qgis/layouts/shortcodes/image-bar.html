@@ -1,0 +1,20 @@
+<div class="column is-full">
+    <nav class="level is-fullwidth">
+        {{- range (seq 0 (sub (len .Params) 1) ) }}
+        <div class="level-item has-text-centered">
+            <div>
+                {{- $myArg := $.Get . }}
+                {{ $myArgs := split $myArg ":" }}
+                <figure class="image is-128x128">
+                    <img class="is-rounded" 
+                    src="{{ index $myArgs 1 }}">
+                </figure>                   
+                <p class="heading">
+                    {{ index $myArgs 0 }}
+                </p>
+             
+            </div>
+        </div>
+        {{ end }}        
+    </nav>
+</div>

@@ -5,7 +5,15 @@ subtitle: "Welcome to the world’s most popular open source geospatial data man
 draft: false
 heroImage: "img/banners/banner4.png"
 ---
-{{< qrcode >}}
+{{< info-icons 
+    "Linux:fa-brands fa-linux"
+    "macOS:fa-brands fa-apple"
+    "Windows:fa-brands fa-windows" >}}
+
+{{< info-bar 
+    "20+:years"
+    "100%:open source"
+    "450k+:Daily users" >}}
 
 {{< block-image-left
     title="Create publication ready maps"

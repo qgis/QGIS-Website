@@ -12,7 +12,6 @@ heroImage: "img/banners/banner3.png"
     "100%:open source"
     "450k+:Daily users" >}}
 
-
 {{< block-image-left
     title="QGIS.org charter"
     subtitle="QGIS.org is governed by a transparent charter that describes the structure of the association."
