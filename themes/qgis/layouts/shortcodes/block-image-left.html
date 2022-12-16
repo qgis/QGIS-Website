@@ -46,7 +46,11 @@
             {{ end }}
             {{ if len .Inner }}
                 <p class="card-footer-item pulldown-content mr-2 is-align-content-end">
-                    <button class="button is-light">More...</button>
+                    <button class="button is-light">More...
+                        <span class="icon">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                          </span>
+                    </button>
                 </p>
             {{ end }}
         </footer>

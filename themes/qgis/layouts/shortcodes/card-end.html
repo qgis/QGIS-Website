@@ -1,0 +1,9 @@
+{{ $text := .Get "text" | default ""}}        
+{{ $link := .Get "link" | default ""}}   
+                </div>     
+            </div>
+        <footer class="card-footer">
+            <a class="card-footer-item button" href="{{ $link }}">{{ $text }}</a>
+        </footer>      
+    </div>
+</div> 

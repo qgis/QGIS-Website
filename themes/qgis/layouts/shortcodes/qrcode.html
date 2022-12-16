@@ -1,5 +1,5 @@
 {{ $url := .Get 0 | default "https://"}}
-<div class="column card  is-half is-offset-one-quarter">
+<div class="card">
     <div class="has-text-centered ">
         <a href="{{ $url }}">
         <canvas class="qr-code" data-url="{{ $url }}" width="410" height="410"></canvas>

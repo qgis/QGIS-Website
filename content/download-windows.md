@@ -9,7 +9,7 @@ heroImage: "img/banners/banner4.png"
 {{< qrcode "https://qgis.org/en/site/forusers/download.html#windows" >}}
 
 
-Download and Download and Donate buttons
+{{< card-start header="Download QGIS for Windows">}}
 
 This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.
 
@@ -26,3 +26,6 @@ This is the all-in-one stable release installer. The software you receive with t
 - Follow the self paced training manual
 - Get help using the user manual 
 - Get support from the community via live chat, forums or mailing lists
+  
+
+{{< card-end >}}
