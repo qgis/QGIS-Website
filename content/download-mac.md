@@ -12,10 +12,9 @@ heroImage: "img/banners/banner4.png"
 
 This is the all-in-one stable release installer for macOS High Sierra (10.13) and newer. The software you receive with the free download link and the download and donate link is identical. This package works well on both Intel and ARM based Macs. For other macOS installer variants see here.
 
+{{< card-end >}}
 
-**Use QGIS Desktop on macOS**
-
----
+{{< card-start header="Use QGIS Desktop on macOS">}}
 
 - Download and open the macOS DMG installer
 - Drag the QGIS Desktop app to your applications folder
