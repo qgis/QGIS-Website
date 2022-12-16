@@ -1,0 +1,14 @@
+{{ $classes := .Get "classes" | default ""}}
+{{ $header := .Get "header" | default ""}}
+<div class="column">
+    <div class="card">
+        <header class="card-header">    
+            <p class="card-header-title">
+                {{ $header }}
+            </p>
+        </header>
+        <div class="card-content">
+            <div class="content {{ $classes }}">
+
+
+

@@ -199,6 +199,49 @@ image | Place your images into static/img and then references it like this "img/
 link | A URL to more reading etc. Use relative links for pages on this site.
 link-text | Test to display for the hyperlink.
 
+## 🪪 Working with Cards
+
+The content you write should use the card metaphor (based on Bulma CSS cards) to enclose
+your content in rectangular blocks so they layout in our grid nicely. Here is an example
+from the download page showing a QR code block and a content card side by side in the
+grid.
+
+![Cards](./img/hugo-cards.gif)
+
+### 🎬 Starting a card
+
+Before starting your markdown content, start a card using the ```card-start``` shortcode so it lays out nicely in our grid:
+
+```
+{{< card-start header="Download QGIS for Windows">}}
+
+This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.
+```
+
+A ```card-start``` shortcode can take the following parameters:
+
+Name | Description
+-----|-------------
+header | A short piece of text to display in the card header
+classes | (Optional) Any bulma classes you want to have applied to the internal content section of the card.
+
+
+### 🔚 Ending a card
+
+When you are done writing your content section, end a card using the ```card-end``` shortcode:
+
+```
+{{< card-end text="Learn more" link="https://qgis.org">}}
+```
+
+A ```card-end``` shortcode can take the following parameters:
+
+Name | Description
+-----|-------------
+text | A short piece of (optional) text to display in the card footer
+link | A URL that the user can access by clicking on the link
+
+
 ## 🩳 Customising CSS
 
 Put your customizations in ```themes/qgis/assets/css/custom.css```.
