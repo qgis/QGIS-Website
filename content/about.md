@@ -7,13 +7,11 @@ draft: false
 heroImage: "img/banners/banner3.png"
 ---
 
-20+ years of working | >xxx total downloads | 450k+ Daily active users| xxxxx
+{{< info-bar 
+    "20+:years"
+    "100%:open source"
+    "450k+:Daily users" >}}
 
-{{< block-text
-    title="Get to know the QGIS project"
-    text-color="black"
-    background-color="white"
->}}{{< /block-text >}}
 
 {{< block-image-left
     title="QGIS.org charter"

@@ -29,3 +29,10 @@ This is the all-in-one stable release installer. The software you receive with t
   
 
 {{< card-end >}}
+
+{{< card-start header="Support our work">}}
+While you are downloading this fantastic software, maybe it is a good time to read our
+[value proposition](value-proposition.md). We need organisations that use QGIS to support
+our work! By becoming a sustaining member your organisation can be part of the global
+impact that the QGIS project has.
+{{< card-end >}}

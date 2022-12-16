@@ -241,6 +241,22 @@ Name | Description
 text | A short piece of (optional) text to display in the card footer
 link | A URL that the user can access by clicking on the link
 
+## Info Bar
+
+The ```info-bar``` shortcode is a way to put a infographic style element onto your page:
+
+![Cards](./img/hugo-info-bar.png)
+
+```
+{{< info-bar 
+    "20+:years"
+    "100%:open source"
+    "450k+:Daily users" >}}
+```
+
+To use info-bar, pass it a collection of key-value pairs separated by ``:`` colons as
+illustrated above.
+
 
 ## 🩳 Customising CSS
 
