@@ -1,8 +1,6 @@
 name: 🧪 End To End (e2e) Tests Workflow
 
 on:
-  # keeping this till we figure out #371, so we can at least validate the
-  #   scrapper PRs aren't breaking things
   push:
     branches: [ main ]
 
