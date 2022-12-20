@@ -1,7 +1,7 @@
 # This workflow scrapes the latest show episodes and commits the new episode and data
 # files to the repo.
 
-name: Scrape and commit
+name: ⚒️ Scrape and commit
 on:
   schedule:
     - cron:  '0 0,12 * * *'  # At midnight & noon UTC
@@ -11,36 +11,36 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-    - name: 'Checkout jupiterbroadcasting.com'
+    - name: '🗞️ Fetch Feed Content'
       uses: actions/checkout@v3
       with:
         ref: main
-        path: ./jbsite
+        path: ./qgis-hugo
 
-    - name: 'Checkout show-scraper'
+    - name: '🛒 Checkout show-scraper'
       uses: actions/checkout@v3
       with:
         repository: JupiterBroadcasting/show-scraper
         ref: main
-        path: ./show-scraper
+        path: ./scraper
 
-    - name: 'Setup Python'
+    - name: '🐍 Setup Python'
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
         architecture: 'x64'
         cache: "pipenv"
     
-    - name: 'Install Python deps'
-      run: pip install pipenv && cd ./show-scraper && pipenv sync --bare
+    - name: '👪 Install Python deps'
+      run: pip install pipenv && cd ./scraper && pipenv sync --bare
 
-    - name: 'Scrape'
+    - name: '⚒️ Scrape'
       run: |
         cd ./show-scraper
-        DATA_DIR=../jbsite LATEST_ONLY=true pipenv run ./scraper.py
+        DATA_DIR=../qgis-hugo LATEST_ONLY=true pipenv run ./scraper.py
 
-    - name: 'Commit'
+    - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: 'Automatically scraped and committed via a GitHub Action.'
-        repository: ./jbsite
+        repository: ./qgis-hugo
