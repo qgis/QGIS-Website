@@ -299,3 +299,28 @@ illustrated above. The secnd value should be a path to an image.
 Put your customizations in ```themes/qgis/assets/css/custom.css```.
 
 We use a hugo minification and combining  workflow - see the header layout in ```themes/qgis/layouts/partials/header.html```.
+
+## Writing e2e test 
+
+The e2e test files are located in the test/e2e directory. This test is run on all activate pages of the Site 
+
+## Test coverage at the moment 
+- Screenshot of Page 
+- Page Title 
+- Banner TItle 
+- Subtitle 
+
+## Technologies used in writing test and running test
+- Playwright [title](https://playwright.dev/python/)
+- Pytest     [title](https://docs.pytest.org/en/7.2.x/)
+
+## Steps in running test locally 
+- open command prompt and run **make tests**
+
+## Note 
+make sure you add local user on your computer to docker group, after that logout from system and log back in.
+- sudo usermode -a -G docker account_name 
+- then log out and in again
+
+
+
