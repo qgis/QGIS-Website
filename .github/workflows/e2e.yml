@@ -3,9 +3,8 @@ name: 🧪 End To End (e2e) Tests Workflow
 on:
   push:
     branches: [ main ]
-
-  # https://frontside.com/blog/2020-05-26-github-actions-pull_request/
   pull_request:
+    branches: [ main, develop ]  
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
