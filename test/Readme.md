@@ -1,4 +1,4 @@
-# Jupiter Broadcasting Site End to End Tests
+# QGIS-HUGO End to End Tests
 
 ## Testing Methodology
 These tests are setup using the [Playwright](https://playwright.dev/python/docs/writing-tests) framework. They are intended to run on each commit to verify the site is working in expected order.
@@ -16,7 +16,7 @@ Playwright is a framework which easily allows you to spin up a headless browser 
 
 For example, you can check that the logo on the header nav exists or that a page contains a subtitle with a specific text of, for example, "Hello World"
 
-Each file in the `e2e` should contain a test related to a certain page. The file will test for elements on that specific page only (ie. the home page, or the Coder Radio show page)
+Each file in the `e2e` should contain a test related to a certain page. The file will test for elements on that specific page only (ie. the **Home** page, or the **About** page)
 
 Each method in the test file will load the page it is planning to test .
 ```
