@@ -11,18 +11,17 @@
         </a>
     </div>
 
-    <div id="menu" class="navbar-menu">
-        <div class="navbar-end">
+    <div id="menu" class="navbar-end">
             {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
                 {{ if .HasChildren }}
-            <div class="navbar-item has-dropdown is-hoverable {{ if $currentPage.HasMenuCurrent "main" . }}is-active{{ end }}">
+            <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>
                 <div class="navbar-dropdown">
                     {{ range .Children }}
-                    <a class="navbar-item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL }}">
+                    <a class="navbar-item" href="{{ .URL }}">
                         {{ .Pre }}<span>{{ .Name }}</span>
                     </a>
                     {{ end }}    
@@ -32,11 +31,8 @@
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>                
                 {{ end }}
-            {{ end }}
-    
             </div>
-        </div>
-        <div class="navbar-end">
+            {{ end }}
             <div class="navbar-item">
                 <div class="control has-icons-right mr-2">
                     <input class="input is-medium" type="search" placeholder="Search">
