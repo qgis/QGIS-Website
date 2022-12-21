@@ -112,6 +112,25 @@ Once the site is running, you can open it at:
 
 The site will automatically refresh any page you have open if you edit it and save your work. Magical eh?
 
+## Running End to End (e2e) Tests
+
+Test files are located in ```test/e2e```.
+
+These tests exist to make sure code changes to this repository do not break how the site currently functions.
+They are intended to run on each commit to verify the site is working in expected order.
+
+Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/test/Readme.md).
+
+## Creating and Running Tests
+
+1. Navigate to the e2e test folder which is located in ```test/e2e```.
+2. Create or edit a test file for the page or section you want to test and get coding, test files should start with the name test follow by the file name, example ```test_about_page.py```.
+3. Start the hugo server in a terminal window ```make dev```.
+4. Run test in terminal window ```make tests```
+
+> **Note:** To run the tests as described above, you need to have docker installed on your machine and the appropriate permissions to run docker commands.
+
+
 ## 📁 File naming conventions
 
 * Separate words in file names with hyphens e.g. windows-download.md
@@ -300,18 +319,3 @@ Put your customizations in ```themes/qgis/assets/css/custom.css```.
 
 We use a hugo minification and combining  workflow - see the header layout in ```themes/qgis/layouts/partials/header.html```.
 
-## Running E2E Tests
-
-Test files are located in ```test/e2e```.
-
-These tests exist to make sure code changes to this repository do not break how the site currently functions.
-They are intended to run on each commit to verify the site is working in expected order.
-
-Read more on testing [QGIS-HUGO END TO END TEST](https://github.com/qgis/QGIS-Hugo/blob/main/test/Readme.md)
-
-## Creating and Running Test
-
-1. Navigate to the e2e test folder which is located in ```test/e2e```
-2. Create test file for the page or section you want to test  and get coding, test files should start with the name test follow by the file name  , example ```test_about_page.py```
-3. Start the hugo server in a terminal window ```make dev```
-4. Run test in terminal window ```make tests```
