@@ -1,3 +1,5 @@
+{{ $currentPage := . }}
+{{ $pageUrl:= $currentPage.RelPermalink }}
 <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://qgis.org">
@@ -10,24 +12,23 @@
             <span aria-hidden="true"></span>
         </a>
     </div>
-
     <div id="menu" class="navbar-end">
-            {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
+                {{ $menuItemUrl := .URL }}
                 {{ if .HasChildren }}
-            <div class="navbar-item has-dropdown is-hoverable">
+            <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
                 <a class="navbar-link">
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>
                 <div class="navbar-dropdown">
                     {{ range .Children }}
-                    <a class="navbar-item" href="{{ .URL }}">
+                    <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                         {{ .Pre }}<span>{{ .Name }}</span>
                     </a>
                     {{ end }}    
                 </div>
                 {{ else }}
-                <a class="navbar-item" href="{{ .URL }}">
+                <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>                
                 {{ end }}

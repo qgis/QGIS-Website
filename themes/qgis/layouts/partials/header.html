@@ -22,15 +22,18 @@
     <meta property="og:description"
         content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
 
-
-    {{ $bulmacss := resources.Get "css/bulma.css" }}
+    {{/* must have the leading slash in css path or gh pages deploy will break */}}
+    {{ $bulmacss := resources.Get "css/bulma.css" | resources.Fingerprint }}
+    <link href="{{ $bulmacss.RelPermalink }}" integrity=”{{ $bulmacss.Data.Integrity }}”  rel="stylesheet">
+  
+    {{ $menucss := resources.Get "css/menu.css" }}
     {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $markdownlightcss := resources.Get "css/markdown-light.css" }}
     {{ $markdowndarkcss := resources.Get "css/markdown-dark.css" }}
 
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $css := slice $bulmacss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+    {{ $css := slice $menucss $syntaxcss $customcss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" integrity=”{{ $css.Data.Integrity }}”  rel="stylesheet">
 
     {{/* We can compile SASS too... */}}
