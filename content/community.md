@@ -15,7 +15,7 @@ heroImage: "img/banners/banner4.png"
     link-text="Find a group near you"
     link="https://qgis.org"
     markdown-style="light"
->}}hi this is tim{{< /block-image-left >}}
+>}}{{< /block-image-left >}}
 
 {{< block-image-right
     title="Events"
