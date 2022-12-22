@@ -1,54 +1,56 @@
-<div class="column is-fullwidth-mobile is-two-thirds-tablet 
-        is-three-quarters-desktop is-three-quarters-widescreen 
-        is-three-quarters-fullhd
-        ">
-    <div class="card equal-height animation-element animate-from-right"
-        {{ if isset .Params "background-color" }}
-        style="
-        background: {{ .Get `background-color` }};
-        "
-        {{ end }}
-         >
-        <div class="card-content">
-            <p class="subtitle ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{
-                end }}>
-                {{ .Get "subtitle" }}
-            </p>
-        </div>
-        <footer class="card-footer">
-            {{ if isset .Params "link" }}
-            <p class="card-footer-item mr-2" style="justify-content: flex-end;">
-                <span>
-                    <a href="{{ .Get "link" }}" {{ if isset .Params "link" }}
-                        style="color: {{ .Get `text-color` }}" {{ end }}>Find out more...</a>
-                </span>
-            </p>
-            {{ end }}
-        </footer>
-    </div>
-</div>
-<div class="column is-fullwidth-mobile 
-            is-one-third-tablet is-one-quarter-desktop 
-            is-one-quarter-widescreen is-one-quarter-fullhd">
-    <div class="card animation-element animate-from-right"
-        {{ if isset .Params "background-color" }}
-        style="
-        background: {{ .Get `background-color` }};
-        "
-        {{ end }}
-        >    
-        <div class="card-image equal-height">
-            <p class="title ml-4" {{ if isset .Params "text-color" }} style="color: {{ .Get `text-color` }}" {{ end
-            }}>
-            {{ .Get "title" }}
-        </p>
-        </div>
-    </div>
-</div>
-{{/* This is a spacer line in case we have two cards one after the next */}}
-<div class="column is-12">
-    <div class="card">
-        <div class="card-content">
+{{ $backgroundColor := .Get "background-color" | default "#ff0000"}}
+{{ $innerMarkup := .Inner | default "" | markdownify }}
+{{ $linkText := .Get "link-text" | default "Find out more..." }}
+{{ $link := .Get "link" | default "" }}
+{{ $textColor := .Get "text-color" | default "black" }}
+{{ $image := .Get "image" | default "" }}
+{{ $title := .Get "title" | default "" }}
+{{ $subtitle := .Get "subtitle" | default "" }}
+{{ $markdownStyle := .Get "markdown-style" | default "light" }}
+{{/*
+   container centers content horizontally 
+   pb-4 adds some padding below the container 
+*/}}
+<div class="container pb-4 animation-element animate-from-left">
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical">
+            <div class="tile is-parent is-horizontal">
+                <article class="tile is-child is-8 notification is-primary">
+                    <p class="subtitle" style="color: {{ $textColor }}">
+                      {{ $subtitle }}</p>
+                </article>
+                <article class="tile is-child is-4 notification is-primary">
+                    <p class="title has-text-centered"style="color: {{ $textColor }}">
+                        {{ $title }}</p>
+                </article>
+            </div>
+            <div class="tile is-vertical is-parent">
+                <div class="tile is-child">
+                    <div class="card is-full-width notification is-primary">
+                        <div class="card-content is-hidden">
+                            <article class="content {{ $markdownStyle }}">
+                                {{ $innerMarkup }}
+                            </article>
+                        </div>
+                        <footer class="card-footer">
+                            {{ if len .Inner }}
+                                <article class="card-footer-item pulldown-content">
+                                    <span class="icon">
+                                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                    </span>
+                                </article>
+                            {{ end }}
+                            {{ if isset .Params "link" }}
+                                <article class="card-footer-item">
+                                    <a style="color: {{ $textColor }}" href="{{ $link }}">
+                                        {{ $linkText }}
+                                    </a>
+                                </article>
+                            {{ end }}
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

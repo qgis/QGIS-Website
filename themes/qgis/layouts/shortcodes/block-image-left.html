@@ -7,20 +7,23 @@
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
 {{ $markdownStyle := .Get "markdown-style" | default "light" }}
-{{/* container centers content horizontally */}}
+{{/*
+   container centers content horizontally 
+   pb-4 adds some padding below the container 
+*/}}
 <div class="container pb-4 animation-element animate-from-left">
     <div class="tile is-ancestor">
         <div class="tile is-vertical">
             <div class="tile is-parent is-horizontal">
-                <article class="tile is-child">
+                <article class="tile is-child is-4">
                     <figure class="image is-1by1">
                         <img src="{{ absURL $image }}" alt="">
                     </figure>
                 </article>
                 <article class="tile is-child is-8 notification is-primary">
-                    <p class="title"style="color: {{ $textColor }}">
+                    <p class="title">
                         {{ $title }}</p>
-                    <p class="subtitle" style="color: {{ $textColor }}">
+                    <p class="subtitle">
                         {{ $subtitle }}</p>
                 </article>
             </div>
@@ -42,7 +45,7 @@
                             {{ end }}
                             {{ if isset .Params "link" }}
                                 <article class="card-footer-item">
-                                    <a style="color: {{ $textColor }}" href="{{ $link }}">
+                                    <a href="{{ $link }}">
                                         {{ $linkText }}
                                     </a>
                                 </article>
