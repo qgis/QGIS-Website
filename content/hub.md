@@ -18,9 +18,9 @@ heroImage: "/img/banners/banner1.png"
     text-color="white"
     background-color="#589632"
     image="img/downloads.png"
->}}
-[Download QGIS →]()
-{{< /block-image-left >}}
+    link-text="Download QGIS"
+    link="https://download.qgis.org"
+>}}{{< /block-image-left >}}
 
 {{< block-image-right
     title="Documentation"
@@ -28,9 +28,9 @@ heroImage: "/img/banners/banner1.png"
     text-color="black"
     background-color="white"
     image="img/documentation.png"
->}}
-[Learn more →]()
-{{< /block-image-right >}}
+    link-text="Learn More"
+    link="https://"
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Plugins, styles, and more"
@@ -38,9 +38,9 @@ heroImage: "/img/banners/banner1.png"
     text-color="white"
     background-color="#589632"
     image="img/pluginsstylesandmore.png"
->}}
-[Explore →]()
-{{< /block-image-left >}}
+    link-text="Explore"
+    link="https://"
+>}}{{< /block-image-left >}}
 
 {{< block-image-right
     title="Stay up to date"
@@ -48,9 +48,9 @@ heroImage: "/img/banners/banner1.png"
     text-color="black"
     background-color="white"
     image="img/stayuptodate.png"
->}}
-[Follow us →]()
-{{< /block-image-right >}}
+    link-text="Follow Us"
+    link="https://"
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Engage with users"
@@ -58,9 +58,9 @@ heroImage: "/img/banners/banner1.png"
     text-color="white"
     background-color="#589632"
     image="img/engagewithusers.png"
->}}
-[Connect →]()
-{{< /block-image-left >}}
+    link-text="Connect"
+    link="https://"
+>}}{{< /block-image-left >}}
 
 {{< block-image-right
     title="Get certified"
@@ -68,9 +68,9 @@ heroImage: "/img/banners/banner1.png"
     text-color="black"
     background-color="white"
     image="img/getcertified.png"
->}}
-[Learn more →]()
-{{< /block-image-right >}}
+    link-text="Learn More"
+    link="https://"
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="QGIS Association"
@@ -78,6 +78,6 @@ heroImage: "/img/banners/banner1.png"
     text-color="white"
     background-color="#589632"
     image="img/qgisassociation.png"
->}}
-[Learn more →]()
-{{< /block-image-left >}}
+    link-text="Learn More"
+    link="https://"
+>}}{{< /block-image-left >}}
