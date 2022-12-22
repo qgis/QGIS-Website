@@ -123,3 +123,14 @@ p {
   border-left-style: solid;
   border-left-color: white;
 }
+
+
+/* CSS for fading sections on scroll  */
+.fade {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show{
+  opacity: 1;
+}
