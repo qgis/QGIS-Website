@@ -1,12 +1,21 @@
 {{ $backgroundColor := .Get "background-color" | default "#ff0000"}}
 {{ $innerMarkup := .Inner | default "" | markdownify }}
-{{ $linkText := .Get "link-text" | default "Find out more..." }}
+{{ $linkText := .Get "link-text" | default "" }}
 {{ $link := .Get "link" | default "" }}
 {{ $textColor := .Get "text-color" | default "black" }}
 {{ $image := .Get "image" | default "" }}
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
 {{ $markdownStyle := .Get "markdown-style" | default "light" }}
+{{ $hasLink := or $link $linkText }}
+{{/* printf "hasLink: %s" $hasLink */}}
+{{ $hasLink := gt ( len $hasLink ) 0 }}
+{{/* printf "hasLink: %s" $hasLink */}}
+{{ $hasInner := ne $innerMarkup "" }}
+{{/* printf "hasInner: %s" $hasInner */}}
+{{ $showFooter := or $hasLink $hasInner }}
+{{/*  printf "Show footer: %s" $showFooter */}}
+
 {{/*
    container centers content horizontally 
    pb-4 adds some padding below the container 
@@ -22,6 +31,7 @@
                         {{ $subtitle }}</p>
                 </article>
             </div>
+            {{ if $showFooter }}
             <div class="tile is-vertical is-parent">
                 <div class="tile is-child">
                     <div class="card is-full-width notification is-primary">
@@ -49,6 +59,7 @@
                     </div>
                 </div>
             </div>
+            {{ end }}
         </div>
     </div>
 </div>

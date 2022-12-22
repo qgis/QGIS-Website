@@ -18,8 +18,6 @@ heroImage: "/img/banners/banner1.png"
     text-color="white"
     background-color="#589632"
     image="img/downloads.png"
-    link-text="Download QGIS"
-    link="https://download.qgis.org"
 >}}{{< /block-image-left >}}
 
 {{< block-image-right
