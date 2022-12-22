@@ -1,12 +1,14 @@
-.tile .box {
-  border-radius: 50%;
-  color: white;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  text-decoration: none;
+div.tile.is-parent.is-horizontal {
+  padding-bottom: 0;
+}
+div.tile.is-vertical.is-parent {
+  padding-top: 0;
 }
 
+
+.tile {
+  border-radius: 0;
+}
 .has-bg-img {
   background: url("/img/banners/banner1.png");
   background-position: center;

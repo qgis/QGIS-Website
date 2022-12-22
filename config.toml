@@ -18,30 +18,30 @@ theme = 'qgis'
   name = "About"
   url = "/about/"
   weight = -110
-  pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
   
 [[menu.main]]
   name = "Community"
   url = "/community/"
   weight = -110 # Sets the menu order 
-  pre = "<i class='fa-solid fa-people-group mr-1'></i>"
+  #pre = "<i class='fa-solid fa-people-group mr-1'></i>"
 
 [[menu.main]]
   name = "Resources"
   url = "/hub/"
   weight = -110 # Sets the menu order 
-  pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
+  #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
 
 [[menu.main]]
   name = "Downloads"
   url = "/downloads/"
-  pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
+  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = -110 # Sets the menu order 
 
 [[menu.main]]
   name = "Value"
   url = "/value-proposition/"
-  pre = "<i class='fa fa-heart mr-1'></i>"
+  #pre = "<i class='fa fa-heart mr-1'></i>"
   weight = -110 # Sets the menu order 
 
 
@@ -51,18 +51,18 @@ theme = 'qgis'
   name = "Windows"
   url = "/download-windows/"
   weight = -120
-  pre = "<i class='fa-brands fa-windows mr-1'></i>"
+  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
 
 [[menu.main]]
   parent = "Downloads"
   name = "macOS"
   url = "/download-mac/"
   weight = -120  
-  pre = "<i class='fa-brands fa-apple mr-1'></i>"
+  # pre = "<i class='fa-brands fa-apple mr-1'></i>"
 
 [[menu.main]]
   parent = "Downloads"
   name = "Linux"
   url = "/download-linux/"
   weight = -120  
-  pre = "<i class='fa-brands fa-linux mr-1'></i>"
+  # pre = "<i class='fa-brands fa-linux mr-1'></i>"
