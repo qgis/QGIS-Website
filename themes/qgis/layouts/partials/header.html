@@ -70,7 +70,7 @@
     {{ $fa7 := (resources.Get "webfonts/fa-v4compatibility.ttf").Publish }}
     {{ $fa8 := (resources.Get "webfonts/fa-v4compatibility.woff2").Publish }}
 
-    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}' />
+    <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href='{{ "index.xml" | absURL }}'>
     
     {{/* QR Encoding Logic */}}
     {{ $qrencodejs := resources.Get "js/qrcodegen-v1.8.0-es6.js" | resources.Fingerprint }}

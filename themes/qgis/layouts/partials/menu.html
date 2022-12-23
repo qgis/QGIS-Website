@@ -3,7 +3,7 @@
 <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://qgis.org">
-            <img src="{{ absURL "img/qgis-logo.png" }}" width="85" height="28">
+            <img alt="Logo" src="{{ absURL "img/qgis-logo.png" }}" width="85" height="28">
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
             <span aria-hidden="true"></span>
@@ -27,12 +27,12 @@
                     </a>
                     {{ end }}    
                 </div>
+            </div>
                 {{ else }}
                 <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>                
                 {{ end }}
-            </div>
             {{ end }}
             <div class="navbar-item">
                 <div class="control has-icons-right mr-2">
