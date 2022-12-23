@@ -2,14 +2,14 @@
 .animation-hide-left {
     opacity: 50;
     filter: blur(15px);
-    transform: translateX(-500px);
+    transform: translateX(-50px);
     transition: all 1s;
     transform-origin: left;
   }
   .animation-hide-right {
     opacity: 50;
     filter: blur(15px);
-    transform: translateX(500px);
+    transform: translateX(50px);
     transition: all 1s;
     transform-origin: right;
   }
@@ -22,13 +22,13 @@
   }
   
   @keyframes bounce {
-    0%   { transform: scale(2,2)      translateX(500px); }
-    30%  { transform: scale(1.5,1.5)   translateX(250px); }
-    50%  { transform: scale(1.25,1.25)   translateX(100px); }
-    750%  { transform: scale(1.10,1.10) translateX(50px); }
-    85%  { transform: scale(1,1)      translateX(25px); }
-    90%  { transform: scale(1,1)      translateX(10px); }
-    100% { transform: scale(1,1)      translateX(5px); }
+    0%   { transform: scale(2,2)      translateX(50px); }
+    30%  { transform: scale(1.5,1.5)   translateX(25px); }
+    50%  { transform: scale(1.25,1.25)   translateX(10px); }
+    750%  { transform: scale(1.10,1.10) translateX(5px); }
+    85%  { transform: scale(1,1)      translateX(2px); }
+    90%  { transform: scale(1,1)      translateX(1px); }
+    100% { transform: scale(1,1)      translateX(0.5px); }
   }  
   
   
