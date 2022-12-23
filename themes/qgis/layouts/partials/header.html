@@ -85,6 +85,7 @@
     {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs | resources.Concat "js/all.js" | resources.Fingerprint }}
     {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
     <script defer src="{{ $js.RelPermalink }}" integrity=”{{ $js.Data.Integrity }}”></script>
+   
 
 </head>
 

@@ -1,6 +1,7 @@
 div.tile.is-parent.is-horizontal {
   padding-bottom: 0;
 }
+
 div.tile.is-vertical.is-parent {
   padding-top: 0;
 }
@@ -9,6 +10,7 @@ div.tile.is-vertical.is-parent {
 .tile {
   border-radius: 0;
 }
+
 .has-bg-img {
   background: url("/img/banners/banner1.png");
   background-position: center;
@@ -69,6 +71,7 @@ p {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 .card-image:first-child img {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -79,6 +82,7 @@ p {
 .card-footer {
   border-top: none;
 }
+
 .card-footer-item:not(:last-child) {
   border-right: none;
 }
@@ -87,4 +91,14 @@ p {
 .follow-qgis {
   border-left-style: solid;
   border-left-color: white;
+}
+
+/* styling for search box */
+.search-input {
+  padding: .5em;
+  border: solid 2px #d6d3d3;
+}
+
+.search-input:focus {
+  outline: 1px solid;
 }
