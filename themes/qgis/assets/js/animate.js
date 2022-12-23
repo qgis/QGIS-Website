@@ -14,8 +14,10 @@ const qgis_observer = new IntersectionObserver((entries) => {
             if (entry.target.classList.contains('animate-from-right'))
             {
                 entry.target.classList.add('animation-hide-right');
-            };            
-            entry.target.classList.remove('animation-show');
+            };       
+            // Disable next line to have animations run on first time scrolling
+            // the page only     
+            //entry.target.classList.remove('animation-show');
             
         }
     })
