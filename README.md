@@ -138,6 +138,11 @@ Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/test/Rea
 * Write file names in lower case only
 * No spaces in file names
 
+## 🤝 Contributing to this project
+
+We welcome your contributions! All contributors are expected to sign a contributor license agreement (CLA) which you can see [here](https://gist.github.com/timlinux/cc20c0b8860648da977a261d46b170d4). This process is automatically enabled when you create your first pull request.
+
+
 ## 💮 Changing the templates
 
 Page type | Path
