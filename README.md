@@ -34,6 +34,8 @@ If you want to understand Hugo and the other technologies we used to build this 
 
 * Read [this article](https://blog.fullstackdigital.com/how-to-use-hugo-template-variables-in-scss-files-in-2018-b8a834accce) to see how you can use Hugo variables in your SCSS.
 
+* Read [this article](https://versions.bulma.io/0.7.0/documentation/overview/customize/) to see the general process of customizing bulma with SASS. Note that in addition to this workflow, we also generate our SASS primary file (bulma.sass) from a Hugo template.
+
 * This theme uses the [Bulma CSS framework](https://bulma.io/), which you should familiarise
 yourself with if you want to change the theme.
 
@@ -118,6 +120,7 @@ Download the deb above and then do
 If you are using VSCode, I recommend the following extensions:
 
 * Hugo Language and Syntax Support
+* Color Highlight
 
 Clone the repo:
 
