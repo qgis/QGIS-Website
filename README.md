@@ -142,6 +142,7 @@ Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/test/Rea
 
 We welcome your contributions! All contributors are expected to sign a contributor license agreement (CLA) which you can see [here](https://gist.github.com/timlinux/cc20c0b8860648da977a261d46b170d4). This process is automatically enabled when you create your first pull request via https://cla-assistant.io/.
 
+[![CLA assistant](https://cla-assistant.io/readme/badge/qgis/QGIS-Hugo)](https://cla-assistant.io/qgis/QGIS-Hugo)
 
 ## 💮 Changing the templates
 
