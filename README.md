@@ -319,3 +319,7 @@ Put your customizations in ```themes/qgis/assets/css/custom.css```.
 
 We use a hugo minification and combining  workflow - see the header layout in ```themes/qgis/layouts/partials/header.html```.
 
+## Search Functionality 
+The search functionality uses both [FuseJs](https://fusejs.io/) and [MarkJs](https://markjs.io/).
+
+The  functionality code is based on this [Blog Post](https://makewithhugo.com/add-search-to-a-hugo-site/) and [GitHub Gist](https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae) by [Eddie Webb](https://twitter.com/eddturtle).
