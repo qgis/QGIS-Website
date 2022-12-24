@@ -1,20 +1,27 @@
-<div class="column is-full">
-    <nav class="level is-fullwidth">
-        {{- range (seq 0 (sub (len .Params) 1) ) }}
-        <div class="level-item has-text-centered">
-            <div>
-                {{- $myArg := $.Get . }}
-                {{ $myArgs := split $myArg ":" }}
-                <figure class="image is-128x128">
-                    <img class="is-rounded" 
-                    src="{{ index $myArgs 1 }}">
-                </figure>                   
-                <p class="heading">
-                    {{ index $myArgs 0 }}
-                </p>
-             
+<section class="container is-fluid animation-element animate-from-left notification is-info">    
+    <div class="tile is-ancestor">
+        <div class="tile is-parent is-horizontal">
+            <div class="tile is-child">
+                <nav class="level is-fullwidth">
+                    {{- range (seq 0 (sub (len .Params) 1) ) }}
+                    <div class="level-item has-text-centered">
+                        <div>
+                            {{- $myArg := $.Get . }}
+                            {{ $myArgs := split $myArg ":" }}
+                            <figure class="image is-128x128">
+                                <img class="is-rounded" 
+                                src="{{ index $myArgs 1 }}">
+                            </figure>                   
+                            <p class="heading">
+                                {{ index $myArgs 0 }}
+                            </p>
+                        
+                        </div>
+                    </div>
+                    {{ end }}        
+                </nav>
             </div>
         </div>
-        {{ end }}        
-    </nav>
-</div>
+    </div>
+</section>
+

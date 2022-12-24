@@ -1,0 +1,78 @@
+@charset "utf-8";
+
+//
+//
+// Hugo QGIS Theme SASS template
+// 
+// This is a template that is first processed by Hugo
+// to interpolate variables from config.toml into this
+// file, and then compile the rendered template as a 
+// sass document.
+// 
+// Be careful when changing things in this file that you 
+// do not break the above paradigm. Avoid hard coding
+// colour values here. Rather add the value to your 
+// config.toml and then reference the variable here, 
+// which hugo will then replace with the value during 
+// process and compile.
+// 
+// Tim Sutton, 2022
+// 
+
+
+// Import Google Fonts
+// TODO make a local resource
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sevillana&family=Work+Sans&display=swap');
+
+// Set your brand colors
+$primary1: #589632;
+$primary2: #f0e64a;
+$primary3: #ee7913;
+$primary4: #93b023;
+$primary5: #589632;
+$complementary1: #55828b;
+$complementary2: #395c6b;
+$complementary3: #395c6b;
+$complementary4: #285238;
+$complementary5: #a7cecb;
+$light1: #fbfbfb;
+$light2: #eeeeee;
+$dark1: #999999;
+$dark2: #444444;
+
+// Brand fonts
+$heading-font: 'Montserrat', sans-serif;
+$text-font: 'Work Sans', sans-serif;
+$fancy-font: 'Sevillana', cursive;
+
+// Update Bulma's global variables
+$family-sans-serif: text-font;
+$family-primary: $text-font;
+$title-family: $heading-font;
+
+$grey-dark: $dark2;
+$grey-light: $light2
+$primary: $primary1;
+$danger: $primary3;
+$info: $complementary2;
+$success: $primary5;
+$warning: $primary4;
+$link: $complementary2;
+$widescreen-enabled: false;
+//$fullhd-enabled: false;
+
+// Update some of Bulma's component variables
+$body-background-color: $light1;
+$control-border-width: 1px;
+$input-border-color: light1;
+$input-shadow: none;
+
+/*! bulma.io | MIT License | github.com/jgthms/bulma */
+@import "bulma/utilities/_all"
+@import "bulma/base/_all"
+@import "bulma/elements/_all"
+@import "bulma/components/_all"
+@import "bulma/grid/_all"
+@import "bulma/layout/_all"
+@import "bulma/helpers/_all"
+@import "bulma/grid/_all"
