@@ -8,6 +8,17 @@ By Tim Sutton and QGIS Contributors.
 
 [![E2E Tests](https://github.com/qgis/QGIS-Hugo/actions/workflows/e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Hugo/actions/workflows/e2e.yml)
 [![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Hugo/actions/workflows/hugo.yml/badge.svg)](https://github.com/qgis/QGIS-Hugo/actions/workflows/hugo.yml)
+![Website Status](https://img.shields.io/website-up-down-green-red/http/qgis.github.io/QGIS-Hugo.svg)
+![License](https://img.shields.io/github/license/qgis/QGIS-Hugo.svg)
+
+![](https://img.shields.io/github/issues/qgis/QGIS-Hugo.svg)
+![](https://img.shields.io/github/issues-closed/qgis/QGIS-Hugo.svg)
+![](https://img.shields.io/github/issues-pr/qgis/QGIS-Hugo.svg)
+![](https://img.shields.io/github/issues-pr-closed/qgis/QGIS-Hugo.svg)
+
+
+Project stars:
+![Stars](https://starchart.cc/qgis/QGIS-Hugo.svg)
 
 ## 🏃‍♀️Before you start
 
@@ -30,6 +41,22 @@ yourself with if you want to change the theme.
 
 * The relationship between some of the key concepts in Hugo is shown below:
 ![Overview diagram](img/hugo-overview.drawio.png)
+
+The following key skills are needed for theme developers (DEV) and content creators (CC):
+
+Technology | Notes | Who?
+-----------|--------|-------
+![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white) | Essential skill for content creators. | DEV / CC
+![VSCode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) | Streamlines your workflow. You can work directly in the GitHub website too. | DEV / CC
+-----------|--------|-------
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) | Needed for creating templates (shortcodes & partials). | DEV
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) | Note that we also use Bulma. | DEV
+![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) | We are trying to use as little javascript as possible. | DEV
+![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white) | A few utility scripts only. Mostly not needed. | DEV
+![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white) | Customising Bulma mainly. | DEV
+![GO](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) | Mainly Go templating via HUGO. | DEV
+![Bash](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white) | A few utility scripts only. | DEV
+
 
 ## 🏺 Background & Design Philosopy
 
