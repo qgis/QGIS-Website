@@ -5,6 +5,12 @@ subtitle: "Welcome to the world’s most popular open source geospatial data man
 draft: false
 heroImage: "img/banners/banner4.png"
 ---
+
+{{< image-bar 
+    "Cartography:/img/map1.png"
+    "Analysis:/img/map2.png"
+    "Print:/img/map3.png" >}}
+    
 {{< info-icons 
     "Linux:fa-brands fa-linux"
     "macOS:fa-brands fa-apple"

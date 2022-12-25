@@ -1,6 +1,6 @@
 <section class="container is-fluid animation-element animate-from-left notification is-info">    
     <div class="tile is-ancestor">
-        <div class="tile is-parent is-horizontal">
+        <div class="tile is-parent">
             <div class="tile is-child">
                 <nav class="level is-fullwidth">
                     {{- range (seq 0 (sub (len .Params) 1) ) }}
@@ -9,7 +9,7 @@
                             {{- $myArg := $.Get . }}
                             {{ $myArgs := split $myArg ":" }}
                             <figure class="image is-128x128">
-                                <img class="is-rounded" 
+                                <img class="is-rounded"
                                 src="{{ index $myArgs 1 }}">
                             </figure>                   
                             <p class="heading">
