@@ -21,7 +21,7 @@ heroImage: "img/banners/banner4.png"
     text-color="black"
     background-color="white"
     image="img/island1.png"
->}}{{< block-image-left >}}
+>}}{{< /block-image-left >}}
 
 {{< block-image-right
     title="Manage and analyse geospatial data"
@@ -29,7 +29,7 @@ heroImage: "img/banners/banner4.png"
     text-color="white"
     background-color="green"
     image="img/banners/banner2.png"
->}}{{< block-image-right >}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Publish your work online"
@@ -37,7 +37,7 @@ heroImage: "img/banners/banner4.png"
     text-color="black"
     background-color="white"
     image="img/banners/banner2.png"
->}}{{< block-image-left >}}
+>}}{{< /block-image-left >}}
 
 {{< block-image-right
     title="Work with spatial data in the field"
@@ -45,7 +45,7 @@ heroImage: "img/banners/banner4.png"
     text-color="white"
     background-color="green"
     image="img/qonphone.png"
->}}{{< block-image-right >}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-left
     title="Supported by a top technical team"
@@ -53,10 +53,5 @@ heroImage: "img/banners/banner4.png"
     text-color="white"
     background-color="green"
     image="img/qonphone.png"
->}}{{< block-image-left >}}
+>}}{{< /block-image-left >}}
 
-**Used By**
-![google logo](img/google.png)
-![microsoft logo](img/microsoft.png)
-![unicef logo](img/unicef.png)
-![worldbank](img/worldbank.png)
