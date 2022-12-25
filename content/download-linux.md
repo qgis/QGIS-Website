@@ -7,9 +7,11 @@ heroImage: "img/banners/banner4.png"
 ---
 
 
-{{< qrcode "https://qgis.org/en/site/forusers/download.html#linux" >}}
+
 
 {{< card-start header="Download QGIS for Linux">}}
+
+{{< qrcode "https://qgis.org/en/site/forusers/download.html#linux" >}}
 
 ```curl https://qgis.org/install.sh | sh```
 

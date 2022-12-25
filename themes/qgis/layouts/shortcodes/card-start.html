@@ -1,14 +1,16 @@
 {{ $classes := .Get "classes" | default ""}}
 {{ $header := .Get "header" | default ""}}
-<div class="column">
-    <div class="card">
-        <header class="card-header">    
-            <p class="card-header-title">
-                {{ $header }}
-            </p>
-        </header>
-        <div class="card-content">
-            <div class="content {{ $classes }}">
+<section class="section container pb-4 pl-0 pr-0 animation-element animate-from-left">
+    <div class="tile is-ancestor">
+        <div class="tile is-vertical">
+            <div class="tile is-parent">
+                <article class="tile is-child notification is-primary">
+                    <p class="title has-text-centered">
+                        {{ $header }}</p>
+                </article>
+                <article class="tile is-child notification is-primary">
+
+
 
 
 
