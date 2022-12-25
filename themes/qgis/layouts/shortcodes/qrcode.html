@@ -1,12 +1,19 @@
 {{ $url := .Get 0 | default "https://"}}
-<div class="card">
-    <div class="has-text-centered ">
-        <a href="{{ $url }}">
-        <canvas class="qr-code" data-url="{{ $url }}" width="410" height="410"></canvas>
-        </a>
+<div class="tile is-ancestor">
+    <div class="tile is-vertical  notification is-outlined is-info">
+        <div class="tile is-parent">
+            <article class="tile is-child has-text-centered">
+                <a href="{{ $url }}">
+                    <canvas class="qr-code" data-url="{{ $url }}" width="410" height="410"></canvas>
+                </a>
+            </article>
+            <article class="tile is-child has-text-centered">
+                <a href="{{ $url }}">
+                    <a class="card-footer-item button is-primary" href="{{ $url }}">Download</a>
+                </a>
+            </article>                      
+        </div>
     </div>
-    <footer class="card-footer">
-        <a class="card-footer-item button is-primary" href="{{ $url }}">Download</a>
-    </footer>      
-</div>
+</div>      
+
 

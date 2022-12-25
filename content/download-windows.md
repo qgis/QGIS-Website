@@ -6,10 +6,10 @@ draft: false
 heroImage: "img/banners/banner4.png"
 ---
 
+{{< card-start header="Download QGIS for Windows">}}
+
 {{< qrcode "https://qgis.org/en/site/forusers/download.html#windows" >}}
 
-
-{{< card-start header="Download QGIS for Windows">}}
 
 This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.
 
