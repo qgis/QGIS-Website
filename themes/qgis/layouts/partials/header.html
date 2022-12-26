@@ -88,7 +88,10 @@
     {{ $animatejs := resources.Get "js/animate.js" }}
     {{ $navbarjs := resources.Get "js/navbar.js" }}
     {{ $qrcreatejs := resources.Get "js/qrcreate.js" }}
-    {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs | resources.Concat "js/all.js" | resources.Fingerprint }}
+    {{ $searchjs := resources.Get "js/search.js" }}
+    {{ $fusejs := resources.Get "js/fuse.js" }}
+    {{ $markjs := resources.Get "js/mark.min.js" }}
+    {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $searchjs $fusejs $markjs | resources.Concat "js/all.js" | resources.Fingerprint }}
     {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
     <script defer src="{{ $js.RelPermalink }}" integrity=”{{ $js.Data.Integrity }}”></script>
 
