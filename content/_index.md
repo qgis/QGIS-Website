@@ -6,17 +6,17 @@ draft: false
 heroImage: "img/banners/banner4.png"
 ---
 
-{{< image-bar 
+{{< image-bar
     "Cartography:/img/map1.png"
-    "Analysis:/img/map2.png"
-    "Print:/img/map3.png" >}}
-    
-{{< info-icons 
+    "Analysis:/img/map1.png"
+    "Print:/img/map1.png" >}}
+
+{{< info-icons
     "Linux:fa-brands fa-linux"
     "macOS:fa-brands fa-apple"
     "Windows:fa-brands fa-windows" >}}
 
-{{< info-bar 
+{{< info-bar
     "20+:years"
     "100%:open source"
     "450k+:Daily users" >}}
