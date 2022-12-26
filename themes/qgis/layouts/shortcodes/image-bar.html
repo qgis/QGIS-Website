@@ -1,26 +1,21 @@
 <section class="section container is-fluid animation-element animate-from-left notification is-info">    
     <div class="tile is-ancestor">
         <div class="tile is-parent">
+            {{- range (seq 0 (sub (len .Params) 1) ) }}
+            <div class="tile is-child"></div>
             <div class="tile is-child">
-                <nav class="level is-fullwidth">
-                    {{- range (seq 0 (sub (len .Params) 1) ) }}
-                    <div class="level-item has-text-centered">
-                        <div>
-                            {{- $myArg := $.Get . }}
-                            {{ $myArgs := split $myArg ":" }}
-                            <figure class="image is-128x128">
-                                <img class="is-rounded"
-                                src="{{ index $myArgs 1 }}">
-                            </figure>                   
-                            <p class="heading">
-                                {{ index $myArgs 0 }}
-                            </p>
-                        
-                        </div>
-                    </div>
-                    {{ end }}        
-                </nav>
+                {{- $myArg := $.Get . }}
+                {{ $myArgs := split $myArg ":" }}
+                <figure class="image is-1by1">
+                    <img width="64" height="64" class="has-ratio is-rounded"
+                    src="{{ index $myArgs 1 }}">
+                </figure>                   
+                <article class="article subtitle pt-2 has-text-centered">
+                    {{ index $myArgs 0 }}
+                </article>
             </div>
+            <div class="tile is-child"></div>
+            {{ end }}        
         </div>
     </div>
 </section>
