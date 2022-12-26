@@ -1,0 +1,23 @@
+{{ partial "header.html" . }}
+{{ partial "menu.html" . }}
+{{ partial "banner.html" . }}
+{{ partial "blocks-start.html" . }}
+<main>
+    <div id="search-results"></div>
+    <div class="search-loading">Loading...</div>
+
+    <script id="search-result-template" type="text/x-js-template">
+    <div id="summary-${key}">
+        <h3><a href="${link}">${title}</a></h3>
+        <p>${snippet}</p>
+        <p>
+            <small>
+                ${ isset tags }Tags: ${tags}<br>${ end }
+            </small>
+        </p>
+    </div>
+    </script>
+</main>
+
+{{ partial "blocks-end.html" . }}
+{{ partial "footer.html" . }}

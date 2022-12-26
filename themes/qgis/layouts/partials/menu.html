@@ -36,10 +36,12 @@
             {{ end }}
             <div class="navbar-item">
                 <div class="control has-icons-right mr-2">
-                    <input class="input is-medium" type="search" placeholder="Search">
-                    <span class="icon is-right">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </span>
+                    <form action="/search" method="GET">
+                        <input class="input is-medium" type="search" id="search-query" name="q" placeholder="Search">
+                        <span class="icon is-right">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                    </form>
                 </div>
                 <div class="buttons is-medium">
                     <a class="button is-primary" href="{{ absURL "/donate/" }}">
