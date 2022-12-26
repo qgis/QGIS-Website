@@ -160,6 +160,14 @@ Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/test/Rea
 
 > **Note:** To run the tests as described above, you need to have docker installed on your machine and the appropriate permissions to run docker commands.
 
+## Search Functionality 
+The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](https://markjs.io/).
+
+The search functionality code is based on this [Blog Post](https://makewithhugo.com/add-search-to-a-hugo-site/) and [GitHub Gist](https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae) by [Eddie Webb](https://twitter.com/eddturtle).
+
+Content folders need to be excluded from search, by making them [headless bundles](https://gohugo.io/content-management/page-bundles/#headless-bundle) - which we have done for the sustaining member and flagship user folders in content/. To make other content folders which are not rendererd and included in search results, add an ```index.md``` file with the following content: ```headless = true```.
+
+
 
 ## 📁 File naming conventions
 
@@ -365,10 +373,3 @@ Next, set a value for that variable in ``themes/qgis/assets/sass/bulma.sass```:
 Put your customizations in ```themes/qgis/assets/css/custom.css```.
 
 We use a hugo minification and combining  workflow - see the header layout in ```themes/qgis/layouts/partials/header.html```.
-
-
-## Search Functionality 
-The search functionality uses both [FuseJs](https://fusejs.io/) and [MarkJs](https://markjs.io/).
-
-The  functionality code is based on this [Blog Post](https://makewithhugo.com/add-search-to-a-hugo-site/) and [GitHub Gist](https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae) by [Eddie Webb](https://twitter.com/eddturtle).
-
