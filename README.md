@@ -226,8 +226,6 @@ The different types of blocks we use are defined in ```themes/qgis/layouts/short
     subtitle="Unleash your creativity and experience first 
     class cartographic design capabiliities and design great
     maps for digital and print. "
-    text-color="white"
-    background-color="teal"
 >}}
 ```
 
@@ -239,8 +237,6 @@ If you want to include markdown content inside the block you can do it as inner 
     subtitle="Unleash your creativity and experience first 
     class cartographic design capabilities and design great 
     maps for digital and print. "
-    text-color="white"
-    background-color="teal"
 >}}
 More details khdkjhksj dhjfhs dkj hsfdjkh fsd
 {{< /block-image-left >}}
@@ -255,8 +251,6 @@ subtitle | Subtitled for the block
 text-color | Use a CSS colour e.g. white or #FFFFFF
 background-color | Use a CSS colour e.g. white or #FFFFFF
 image | Place your images into static/img and then references it like this "img/some-image.png". **Note:** Do not include a leading slash in the image path!
-link | A URL to more reading etc. Use relative links for pages on this site.
-link-text | Test to display for the hyperlink.
 
 ## 🪪 Working with Cards
 
@@ -350,6 +344,23 @@ To use image-bar, pass it a collection of key-value pairs separated by ``:`` col
 illustrated above. The secnd value should be a path to an image.
 
 ## 🩳 Customising CSS
+
+### Brand Identity
+
+Brand colours are established in ```config.toml```.
+
+![Band Colours](./img/brand-config.png)
+
+These are compiled into the SASS theme when Hugo builds the site. You can further
+modify the branding by overriding bulma variables. To do this, edit ```themes/qgis/assets/sass/bulma.sass``` and add your variables. Each bulma page includes a list of variables at the bottom of the page which can be used to override the default bulma styling for the various elements they provide. For example, we can to the [variable list](https://bulma.io/documentation/elements/button/#variables) for bulma buttons and choose a property to modify:
+
+![Bulma Variable](./img/brand-config-variable.png)
+
+Next, set a value for that variable in ``themes/qgis/assets/sass/bulma.sass```:
+
+![Band SASS](./img/brand-config-sass.png)
+
+
 
 Put your customizations in ```themes/qgis/assets/css/custom.css```.
 

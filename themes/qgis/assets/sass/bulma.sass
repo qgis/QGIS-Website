@@ -25,27 +25,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sevillana&family=Work+Sans&display=swap');
 
 // Set your brand colors
-$primary1: #589632;
-$primary2: #f0e64a;
-$primary3: #ee7913;
-$primary4: #93b023;
-$primary5: #589632;
-$complementary1: #55828b;
-$complementary2: #395c6b;
-$complementary3: #395c6b;
-$complementary4: #285238;
-$complementary5: #a7cecb;
-$light1: #fbfbfb;
-$light2: #eeeeee;
-$dark1: #999999;
-$dark2: #444444;
+$primary1: {{ .Param "primary1" }};
+$primary2: {{ .Param "primary2" }};
+$primary3: {{ .Param "primary3" }};
+$primary4: {{ .Param "primary4" }};
+$primary5: {{ .Param "primary5" }};
+$complementary1: {{ .Param "complementary1" }};
+$complementary2: {{ .Param "complementary2" }};
+$complementary3: {{ .Param "complementary3" }};
+$complementary4: {{ .Param "complementary4" }};
+$complementary5: {{ .Param "complementary5" }};
+$light1: {{ .Param "light1" }};
+$light2: {{ .Param "light2" }};
+$dark1: {{ .Param "dark1" }};
+$dark2: {{ .Param "dark2" }};
 
 // Brand fonts
-$heading-font: 'Montserrat', sans-serif;
-$text-font: 'Work Sans', sans-serif;
+$heading-font: {{ .Param "heading-font" }};
+$text-font: {{ .Param "text-font" }};
 $fancy-font: 'Sevillana', cursive;
 
 // Update Bulma's global variables
+
 $family-sans-serif: text-font;
 $family-primary: $text-font;
 $title-family: $heading-font;
@@ -66,6 +67,10 @@ $body-background-color: $light1;
 $control-border-width: 1px;
 $input-border-color: light1;
 $input-shadow: none;
+
+
+$button-border-color: #000000;
+$button-border-width: 5px;
 
 /*! bulma.io | MIT License | github.com/jgthms/bulma */
 @import "bulma/utilities/_all"

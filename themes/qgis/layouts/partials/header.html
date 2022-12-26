@@ -23,7 +23,13 @@
         content="{{ if .IsNode }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ else }}{{ with .Description }}{{ . }}{{ end }}{{ end }}">
 
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $bulmacss := resources.Get "sass/bulma.sass" | resources.ToCSS | resources.Fingerprint }}
+    {{/* We render bulma to css for sass compilation but via a template so that we can include
+        params from config.toml. Put all your brand colours in the latter file. 
+        See https://gohugo.io/hugo-pipes/resource-from-template/.
+        and
+        https://blog.fullstackdigital.com/how-to-use-hugo-template-variables-in-scss-files-in-2018-b8a834accce
+    */}}
+    {{ $bulmacss := resources.Get "sass/bulma.sass" | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
     <link href="{{ $bulmacss.RelPermalink }}" integrity=”{{ $bulmacss.Data.Integrity }}”  rel="stylesheet">
 
     {{ $menucss := resources.Get "css/menu.css" }}
