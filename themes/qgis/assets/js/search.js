@@ -1,3 +1,7 @@
+{{/* Note: This file needs to be rendered as a template in HUGO
+     in order to ensure urls referenced are correct. See header.html in layouts
+     for template rendering implementation. TS */}}
+
 var summaryInclude = 180;
 var fuseOptions = {
     shouldSort: true,
@@ -27,7 +31,7 @@ if (inputBox !== null) {
         executeSearch(searchQuery, false);
     } else {
         document.getElementById('search-results').innerHTML = 
-        '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="/tags/">all tags</a>.</p>';
+        '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="{{ "tags/" | absURL }}">all tags</a>.</p>';
     }
 }
 
@@ -79,7 +83,7 @@ function populateResults(results) {
         var tags = ""
         if (value.item.tags) {
             value.item.tags.forEach(function (element) {
-                tags = tags + "<a href='/tags/" + element + "'>" + "#" + element + "</a> "
+                tags = tags + "<a href='{{ "tags/" | absURL }}" + element + "'>" + "#" + element + "</a> "
             });
         }
 
