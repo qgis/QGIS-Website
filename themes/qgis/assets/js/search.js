@@ -26,7 +26,8 @@ if (inputBox !== null) {
         inputBox.value = searchQuery || "";
         executeSearch(searchQuery, false);
     } else {
-        document.getElementById('search-results').innerHTML = '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="/tags/">all tags</a>.</p>';
+        document.getElementById('search-results').innerHTML = 
+        '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="/tags/">all tags</a>.</p>';
     }
 }
 
@@ -46,7 +47,8 @@ function executeSearch(searchQuery) {
             if (result.length > 0) {
                 populateResults(result);
             } else {
-                document.getElementById('search-results').innerHTML = '<p class=\"search-results-empty\">No matches found</p>';
+                document.getElementById('search-results').innerHTML = 
+                '<p class=\"search-results-empty\">No matches found</p>';
             }
             hide(document.querySelector('.search-loading'));
         })
