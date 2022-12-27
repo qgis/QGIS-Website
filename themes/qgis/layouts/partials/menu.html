@@ -36,7 +36,7 @@
             {{ end }}
             <div class="navbar-item">
                 <div class="control has-icons-right mr-2">
-                    <form action="/search" method="GET">
+                    <form action="{{ "search/" | absURL }}" method="GET">
                         <input class="input is-medium" type="search" id="search-query" name="q" placeholder="Search">
                         <span class="icon is-right">
                             <i class="fa-solid fa-magnifying-glass"></i>
@@ -44,7 +44,7 @@
                     </form>
                 </div>
                 <div class="buttons is-medium">
-                    <a class="button is-primary" href="{{ absURL "/donate/" }}">
+                    <a class="button is-primary" href="{{ "donate/" | absURL }}">
                         <strong>Donate!</strong>
                     </a>
                 </div>
