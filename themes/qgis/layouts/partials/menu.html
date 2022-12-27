@@ -1,8 +1,8 @@
 {{ $currentPage := . }}
 {{ $pageUrl:= $currentPage.RelPermalink }}
-<nav class="navbar is-transparent navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-        <a class="navbar-item" href="https://qgis.org">
+        <a class="navbar-item" href="{{ absURL "/" }}">
             <img alt="Logo" src="{{ absURL "img/qgis-logo.png" }}" width="85" height="28">
         </a>
         <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
