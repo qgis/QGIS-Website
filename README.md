@@ -167,8 +167,15 @@ The search functionality code is based on this [Blog Post](https://makewithhugo.
 
 Content folders need to be excluded from search, by making them [headless bundles](https://gohugo.io/content-management/page-bundles/#headless-bundle) - which we have done for the sustaining member and flagship user folders in content/. To make other content folders which are not rendererd and included in search results, add an ```index.md``` file with the following content: ```headless = true```.
 
+## Referencing URLs in templates
 
+The site needs to work in production, where the links of the site are all below the root URL, and in staging, where the site is deployed to GitHub pages in a subpath. To ensure both deployment strategies work, please use the following method of constructing URLs in templates.
 
+```html
+<a class="button is-primary" href="{{ "donate/" | absURL }}">
+```
+
+**Note:** We do not use a leading slash, only an ending slash.
 ## 📁 File naming conventions
 
 * Separate words in file names with hyphens e.g. windows-download.md
