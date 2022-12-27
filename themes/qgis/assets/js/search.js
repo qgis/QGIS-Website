@@ -39,7 +39,7 @@ function executeSearch(searchQuery) {
 
     show(document.querySelector('.search-loading'));
 
-    fetch('/index.json').then(function (response) {
+    fetch('{{ "index.json" | absURL }}').then(function (response) {
         if (response.status !== 200) {
             console.log('Looks like there was a problem. Status Code: ' + response.status);
             return;
