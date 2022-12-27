@@ -325,7 +325,6 @@ The ```info-bar``` shortcode is a way to put a infographic style element onto yo
 To use info-bar, pass it a collection of key-value pairs separated by ``:`` colons as
 illustrated above.
 
-
 ## Icon Bar
 
 The ```info-icons``` shortcode is a way to put a row of circular fontawesome icon elements onto your page:
@@ -371,11 +370,17 @@ modify the branding by overriding bulma variables. To do this, edit ```themes/qg
 
 ![Bulma Variable](./img/brand-config-variable.png)
 
-Next, set a value for that variable in ``themes/qgis/assets/sass/bulma.sass```:
+Next, set a value for that variable in ```themes/qgis/assets/sass/bulma.sass```:
 
 ![Band SASS](./img/brand-config-sass.png)
 
+Finally, to rather use the parameter defined in ```config.toml```, you can use this syntax:
 
+
+```$navbar-background-color: {{ .Param "light2" }};```
+
+
+## Other CSS Customizations
 
 Put your customizations in ```themes/qgis/assets/css/custom.css```.
 
