@@ -1,5 +1,6 @@
 {{ $currentPage := . }}
 {{ $pageUrl:= $currentPage.RelPermalink }}
+<section>
 <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="{{ absURL "/" }}">
@@ -52,3 +53,33 @@
         </div>
     </div>
 </nav>
+</section>
+<section>
+    <nav class="navbar is-transparent" role="navigation" aria-label="sub navigation">
+        <div id="sub-menu" class="navbar-menu">
+            <div class="navbar-end">
+                {{ range .Site.Menus.main }}
+                    {{ $menuItemUrl := .URL }}
+                    {{ if .HasChildren }}
+                <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
+                    <a class="navbar-link">
+                        {{ .Pre }}<span>{{ .Name }}</span>
+                    </a>
+                    <div class="navbar-dropdown">
+                        {{ range .Children }}
+                        <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                            {{ .Pre }}<span>{{ .Name }}</span>
+                        </a>
+                        {{ end }}    
+                    </div>
+                </div>
+                    {{ else }}
+                    <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                        {{ .Pre }}<span>{{ .Name }}</span>
+                    </a>                
+                    {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </nav>
+</section>
