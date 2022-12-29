@@ -46,11 +46,15 @@ $text-font: {{ .Param "text-font" }};
 $fancy-font: 'Sevillana', cursive;
 
 // Update Bulma's global variables
-
 $family-sans-serif: text-font;
 $family-primary: $text-font;
 $title-family: $heading-font;
 
+// The primary navbar needs to be over the secondary
+// so the dropdowns don't get obscured. TS.
+$navbar-fixed-z: 1000 !default
+
+// Colors
 $grey-dark: $dark2;
 $grey-light: $light2
 $primary: $primary1;
@@ -79,3 +83,4 @@ $navbar-background-color: {{ .Param "light2" }};
 @import "bulma/layout/_all"
 @import "bulma/helpers/_all"
 @import "bulma/grid/_all"
+
