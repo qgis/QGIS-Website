@@ -6,7 +6,11 @@ languageCode = 'en-us'
 title = 'QGIS Web Site'
 theme = 'qgis'
 
-
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'
+  submenu = 'submenus'
 
 [params]
 # Brand colours:
@@ -66,8 +70,14 @@ text-font = "'Work Sans', sans-serif"
   #pre = "<i class='fa fa-heart mr-1'></i>"
   weight = -110 # Sets the menu order 
 
-
 # Submenus are done this way: parent -> identifier
+[[menu.main]]
+  parent = "Resources"
+  name = "Documentation"
+  url = "/documentation/documentation-overview/"
+  weight = -120
+  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
+
 [[menu.main]]
   parent = "Downloads"
   name = "Windows"
@@ -91,10 +101,11 @@ text-font = "'Work Sans', sans-serif"
 
 [[menu.learning]]
   name = "Documentation"
-  url = "/learning/documentation/"
+  url = "/documentation/documentation-overview/"
   weight = -110
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-
+  [menu.learning.params]
+    submenu = "documentation"
 
 
 [outputs]
