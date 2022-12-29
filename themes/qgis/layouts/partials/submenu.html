@@ -1,0 +1,40 @@
+{{ $currentPage := . }}
+{{ $pageUrl:= $currentPage.RelPermalink }}
+{{ $menus := index .Site.Menus "learning" }}
+{{/* printf "%s" $menus */}}
+{{ $currentSubmenu := .Params.submenus }}
+{{/* printf "%s" $currentSubmenu */}}
+{{ if $currentSubmenu }}
+<section>
+    <nav class="navbar is-transparent is-info navigation" aria-label="sub navigation">
+        <div id="sub-menu" class="navbar-menu">
+            <div class="navbar-end">
+                {{ range $menus }}
+                {{ if eq .Params.submenu $currentSubmenu }}
+                    {{/* printf "Current Submenu matched: %s" $currentSubmenu */}}
+                    {{ $menuItemUrl := .URL }}
+                    {{ if .HasChildren }}
+                <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
+                    <a class="navbar-link">
+                        {{ .Pre }}<span>{{ .Name }}</span>
+                    </a>
+                    <div class="navbar-dropdown">
+                        {{ range .Children }}
+                        <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                            {{ .Pre }}<span>{{ .Name }}</span>
+                        </a>
+                        {{ end }}    
+                    </div>
+                </div>
+                    {{ else }}
+                    <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                        {{ .Pre }}<span>{{ .Name }}</span>
+                    </a>                
+                    {{ end }}
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+    </nav>
+</section>
+{{ end }} 
