@@ -6,10 +6,15 @@ languageCode = 'en-us'
 title = 'QGIS Web Site'
 theme = 'qgis'
 
+# Folders in these folders get published automatically
+staticDir = ['static']
+
+
 [taxonomies]
   category = 'categories'
   series = 'series'
   tag = 'tags'
+  # See readme for submenu notes
   submenu = 'submenus'
 
 [params]

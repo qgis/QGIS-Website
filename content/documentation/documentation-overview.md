@@ -14,3 +14,5 @@ Our documentation is divided into different topic areas:
 * General GIS
 * QGIS Usage Documentation
 * QGIS Developer Documentation
+
+![Logo](/img/favicon/apple-touch-icon.png)
