@@ -215,7 +215,13 @@ The page will be accessible then at /about/
 Place images and media in ```static/img```. Everything in ```static``` is referenced
 from the top level of the site e.g.  ```static/img/foo.png``` would be referenced in
 markdown as ```/img/foo.png```.
-### 🌶️ Add it to the menu
+## 🌶️ Working with menus
+
+There are two menus, the primary (1) menu which appears at the top of the page, and the secondary menu (2) which may appear beneath it depending on context.
+
+![Menus](./img/hugo-menus.png)
+
+### Primary Menu Pages
 
 For pages to appear in the top menu, you need to add an entry to
 ``config.toml`` for example the menu for the above about page will be:
@@ -225,11 +231,59 @@ For pages to appear in the top menu, you need to add an entry to
   name = "About"
   url = "/about/"
   weight = -110
-  pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  # pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 ```
-## Modifying the menu template
 
-The menu template is implemented in ```themes/qgis/layouts/partials/menu.html```.
+**Note:** The ```pre``` item is commented out. If you uncomment it, it will place a font awesome icon before the text of the menu item.
+
+
+### Secondary Menu Pages
+
+For pages to appear in the secondary menu, you need to add an entry to
+``config.toml`` for example the menu for the documentation page will be:
+
+```
+[[menu.learning]]
+  name = "Documentation"
+  url = "/documentation/documentation-overview/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.learning.params]
+    submenu = "documentation"
+```
+
+Use the ```submenu``` parameter to define which submenu the menu entry shouldn be shown in. You can create as many submenu terms as you like, and then associate pages to these submenus in the front matter of your markdown documents.
+
+### Displaying a secondary menu
+
+In order for a secondary menu to be displayed, your content page needs to specify the submenu name in the front matter e.g.:
+
+![Menus](./img/hugo-submenus.png)
+
+Example front matter listing:
+
+```
+---
+type: "page"
+title: "Documentation Overview"
+subtitle: "QGIS Documentation Resources"
+draft: false
+heroImage: "img/banners/banner2.png"
+submenus: documentation
+---
+```
+
+**Note:** Despite the pluralised name, you should only specify one submenu name.
+
+All of the menu entries specified in config.toml with a matching submenus term will be shown in the secondary menu when you add this to the front matter. If you specify no submenus= entry in the front matter, the secondary menu will not be rendered.
+
+### Modifying the menu templates
+
+The primary menu template is implemented in ```themes/qgis/layouts/partials/menu.html```.
+
+The secondary menu template is implemented in ```themes/qgis/layouts/partials/submenu.html```.
+
+**Note:** You typically will not need to edit the above files unless you are a developer.
 
 ## 🚧 Working with blocks
 
