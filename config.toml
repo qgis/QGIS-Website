@@ -9,7 +9,6 @@ theme = 'qgis'
 # Folders in these folders get published automatically
 staticDir = ['static']
 
-
 [taxonomies]
   category = 'categories'
   series = 'series'
@@ -37,6 +36,14 @@ dark2 = "#444444"
 heading-font = "'Montserrat', sans-serif"
 text-font = "'Work Sans', sans-serif"
 fancy-font = "'Sevillana', cursive"
+
+## Gh repo for site footer (include trailing slash)
+githubUrl = "https://github.com/qgis/qgis-hugo/"
+## GH Repo for filing a new issue
+githubIssueUrl = "https://github.com/qgis/QGIS-Hugo/issues/new/choose"
+### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
+githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
+
 
 # This will cause html in markdown files to be rendered directly
 [markup]
