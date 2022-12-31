@@ -20,9 +20,21 @@
 // 
 
 
-// Import Google Fonts
-// TODO make a local resource
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Sevillana&family=Work+Sans&display=swap');
+// Import Google Fonts (local copies to avoid fetching remote resources)
+// The woff2 font isnt part of the normal download
+// Instead I fetched them by going to https://fonts.google.com
+// Viewing the page source, search for the woff2 file url and then
+// opening that url in the browser
+
+{{ $montserrat := resources.Get "webfonts/monserrat.woff2" }}
+@import url('{{ $montserrat.RelPermalink }}');
+
+{{ $worksans := resources.Get "webfonts/worksans.woff2"  }}
+@import url('{{ $worksans.RelPermalink }}');
+
+//Mainly just for testing if font choice changes work...
+{{ $sevillana := resources.Get "webfonts/sevillana.woff2"  }}
+@import url('{{ $sevillana.RelPermalink }}');
 
 // Set your brand colors
 $primary1: {{ .Param "primary1" }};
@@ -43,7 +55,8 @@ $dark2: {{ .Param "dark2" }};
 // Brand fonts
 $heading-font: {{ .Param "heading-font" }};
 $text-font: {{ .Param "text-font" }};
-$fancy-font: 'Sevillana', cursive;
+//not a brand font, just for testing...
+$fancy-font: {{ .Param "fancy-font" }};
 
 // Update Bulma's global variables
 $family-sans-serif: text-font;
