@@ -4,8 +4,26 @@
 {{ $link := .Get "link" | default "" }}
 {{ $textColor := .Get "text-color" | default "black" }}
 {{ $image := .Get "image" | default "" }}
+{{ printf "Image: %s" $image }}
+
+
+
+{{ $image2 := resources.Get "img/charter.png" }}
+{{ printf "Image2: %s" $image2 }}
+
+{{ with resources.Get "img/charter222.png" }}
+  {{ with .Err }}
+    {{ printf "Error: %s" . }}
+  {{ else }}
+    {{ printf "Dimensions: %s %dw %dw" .RelPermalink .Width .Height }}
+  {{ end }}
+{{ end }}
+
+
+
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
+{{ $animate := .Get "animate" | default "false" }}
 {{ $markdownStyle := .Get "markdown-style" | default "light" }}
 {{ $hasLink := or $link $linkText }}
 {{/* printf "hasLink: %s" $hasLink */}}
@@ -15,16 +33,22 @@
 {{/* printf "hasInner: %s" $hasInner */}}
 {{ $showFooter := or $hasLink $hasInner }}
 {{/*  printf "Show footer: %s" $showFooter */}}
+{{ $animationClasses := "" }}
+{{ if $animate := eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+
 {{/*
    container centers content horizontally 
    pb-4 adds some padding below the container 
 */}}
-<section class="container pb-6 pl-0 pr-0 is-fluid animation-element animate-from-left">
+<section class="container pb-6 pl-0 pr-0 is-fluid {{ $animationClasses }}">
     <div class="tile is-ancestor">
         <div class="tile is-vertical">
             <div class="tile is-parent is-horizontal">
                 <article class="tile is-child">
                     <figure class="image is-1by1">
+                        
                         <img class="has-ratio" width="120" height="120" src="{{ absURL $image }}" alt="">
                     </figure>
                 </article>
