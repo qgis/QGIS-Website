@@ -21,13 +21,13 @@ heroImage: "img/banners/banner4.png"
     "100%:open source"
     "450k+:Daily users" >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Create publication ready maps"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print."
     text-color="black"
     background-color="white"
     image="island1.png"
->}}{{< /block-image-left >}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-right
     title="Manage and analyse geospatial data"
@@ -37,13 +37,13 @@ heroImage: "img/banners/banner4.png"
     image="island1.png"
 >}}{{< /block-image-right >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Publish your work online"
     subtitle="Reach a global audience online with your amazing maps and spatial information products."
     text-color="black"
     background-color="white"
     image="island1.png"
->}}{{< /block-image-left >}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-right
     title="Work with spatial data in the field"
@@ -53,11 +53,11 @@ heroImage: "img/banners/banner4.png"
     image="qonphone.png"
 >}}{{< /block-image-right >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Supported by a top technical team"
     subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals."
     text-color="white"
     background-color="green"
     image="qonphone.png"
->}}{{< /block-image-left >}}
+>}}{{< /block-image-right >}}
 
