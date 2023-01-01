@@ -7,9 +7,9 @@ heroImage: "img/banners/banner4.png"
 ---
 
 {{< image-bar
-    "Cartography:/img/map1.png"
-    "Analysis:/img/map1.png"
-    "Print:/img/map1.png" >}}
+    "Cartography:map1.png"
+    "Analysis:map1.png"
+    "Print:map1.png" >}}
 
 {{< info-icons
     "Linux:fa-brands fa-linux"
@@ -26,7 +26,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print."
     text-color="black"
     background-color="white"
-    image="img/island1.png"
+    image="island1.png"
 >}}{{< /block-image-left >}}
 
 {{< block-image-right
@@ -34,7 +34,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Keep full control of your data and leverage state-of-the art analysis tools, all seamlessly integrated with our toolbox."
     text-color="white"
     background-color="green"
-    image="img/banners/banner2.png"
+    image="island1.png"
 >}}{{< /block-image-right >}}
 
 {{< block-image-left
@@ -42,7 +42,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Reach a global audience online with your amazing maps and spatial information products."
     text-color="black"
     background-color="white"
-    image="img/banners/banner2.png"
+    image="island1.png"
 >}}{{< /block-image-left >}}
 
 {{< block-image-right
@@ -50,7 +50,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Harness the power of your mobile device to collect and view your spatial information in the field and sync it back seamlessly."
     text-color="white"
     background-color="green"
-    image="img/qonphone.png"
+    image="qonphone.png"
 >}}{{< /block-image-right >}}
 
 {{< block-image-left
@@ -58,6 +58,6 @@ heroImage: "img/banners/banner4.png"
     subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals."
     text-color="white"
     background-color="green"
-    image="img/qonphone.png"
+    image="qonphone.png"
 >}}{{< /block-image-left >}}
 

@@ -5,21 +5,9 @@
 {{ $textColor := .Get "text-color" | default "black" }}
 {{ $image := .Get "image" | default "" }}
 {{ printf "Image: %s" $image }}
-
-
-
-{{ $image2 := resources.Get "img/charter.png" }}
-{{ printf "Image2: %s" $image2 }}
-
-{{ with resources.Get "img/charter222.png" }}
-  {{ with .Err }}
-    {{ printf "Error: %s" . }}
-  {{ else }}
-    {{ printf "Dimensions: %s %dw %dw" .RelPermalink .Width .Height }}
-  {{ end }}
-{{ end }}
-
-
+{{ $imageResource := resources.Get $image }}
+{{ $imageResized := $imageResource.Resize "120x120" |  
+   resources.Copy "resized-%s" $imageResource.Name }}
 
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
@@ -48,8 +36,8 @@
             <div class="tile is-parent is-horizontal">
                 <article class="tile is-child">
                     <figure class="image is-1by1">
-                        
-                        <img class="has-ratio" width="120" height="120" src="{{ absURL $image }}" alt="">
+                        <img class="has-ratio" width="120" height="120" 
+                             src="{{ $imageResized.RelPermalink }}" alt="">
                     </figure>
                 </article>
                 <article class="tile is-child is-8 notification is-primary">

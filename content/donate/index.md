@@ -21,7 +21,7 @@ heroImage: "img/banners/banner1.png"
     subtitle="This option is especially useful for large donors or those who cannot make payments using PayPal or Stripe. Use the details below to make a donation via international money transfer. If needed, we can raise an invoice to you first to facilitate procurement."
     text-color="black"
     background-color="white"
-    image="img/map3.png"
+    image="map3.png"
     markdown-style="light"
 >}}
 Name | Value
@@ -42,7 +42,7 @@ Name | Value
     subtitle="We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed."
     text-color="white"
     background-color="#589632"
-    image="img/stripe.png"
+    image="stripe.png"
     markdown-style="light"
 >}}{{< /block-image-left >}}
 
@@ -51,6 +51,6 @@ Name | Value
     subtitle="You can use Paypal to donate if it is not possible to use Stripe. The payment is processed by PayPal but you don't need to have a PayPal account or sign-up for one if you are paying by credit card. You can also use your own Paypal account to donate."
     text-color="black"
     background-color="white"
-    image="img/paypal.png"
+    image="paypal.png"
     markdown-style="light"
 >}}{{< /block-image-left >}}
