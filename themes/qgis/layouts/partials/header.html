@@ -36,7 +36,7 @@
         https://blog.fullstackdigital.com/how-to-use-hugo-template-variables-in-scss-files-in-2018-b8a834accce
 
         NOTE: I separated bulmasass and css into two lines below because I was getting wierd errors
-        when piping them in a single line. TS.
+        when piping them in a single line.
     */}}
     {{ $bulmasass := resources.Get "sass/bulma.sass" }}
     {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
@@ -46,11 +46,9 @@
     {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $animatecss := resources.Get "css/animate.css" }}
-    {{ $markdownlightcss := resources.Get "css/markdown-light.css" }}
-    {{ $markdowndarkcss := resources.Get "css/markdown-dark.css" }}
 
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $markdownlightcss $markdowndarkcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+    {{ $css := slice $menucss $syntaxcss $customcss $animatecss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" integrity=”{{ $css.Data.Integrity }}”  rel="stylesheet">
 
     {{/* We can compile SASS too... */}}

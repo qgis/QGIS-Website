@@ -9,34 +9,25 @@ heroImage: "img/banners/banner4.png"
 {{< block-image-left
     title="User groups"
     subtitle="Our user groups represent the global community of QGIS users and enthusiasts. With different local groups all over the world as well as virtual groups there is a community for you!"
-    text-color="white"
-    background-color="#589632"
     image="community-picture.png"
     link-text="Find a group near you"
     link="https://qgis.org"
-    markdown-style="light"
 >}}{{< /block-image-left >}}
 
 {{< block-image-right
     title="Events"
     subtitle="From virtual events to face-to-face meetings, we aim to bring people together. During these events users share their innovations and show how to solve real world problems using QGIS"
-    text-color="white"
-    background-color="teal"
-    image="img/community-meeting.png"
+    image="community-meeting.png"
     link-text="Join our events"
     link="https://qgis.org"
-    markdown-style="light"
 >}}{{< /block-image-right >}}
 
 {{< block-image-right
     title="Chats"
     subtitle="Choose your favourite way to communicate with your fellow QGIS users. We have a Facebook Group, Telegram Chat, Revolt, Matrix Rooms, IRC, email discussion lists and many other ways to share expertise and find solutions."
-    text-color="white"
-    background-color="teal"
     image="map1.png"
     link-text="Join the conversation"
     link="https://qgis.org"
-    markdown-style="light"
 >}}{{< /block-image-right >}}
 
 {{< block-image-right

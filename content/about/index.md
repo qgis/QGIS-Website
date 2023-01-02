@@ -20,7 +20,15 @@ heroImage: "img/banners/banner3.png"
     link="https://qgis.org"
     class="is-primary"
 >}}
-This is markdown content.
+# This is markdown content.
+
+## Next heading
+
+Table in **below**
+
+Name | Description
+-----|-------------
+name | Foo
 
 {{< /block-image-left >}}
 
