@@ -28,7 +28,7 @@ heroImage: "img/banners/banner4.png"
     markdown-style="light"
 >}}{{< /block-image-right >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Chats"
     subtitle="Choose your favourite way to communicate with your fellow QGIS users. We have a Facebook Group, Telegram Chat, Revolt, Matrix Rooms, IRC, email discussion lists and many other ways to share expertise and find solutions."
     text-color="white"
@@ -37,7 +37,7 @@ heroImage: "img/banners/banner4.png"
     link-text="Join the conversation"
     link="https://qgis.org"
     markdown-style="light"
->}}{{< /block-image-left >}}
+>}}{{< /block-image-right >}}
 
 {{< block-image-right
     title="News and Updates"
@@ -50,7 +50,7 @@ heroImage: "img/banners/banner4.png"
     markdown-style="light"
 >}}{{< /block-image-right >}}
 
-{{< block-image-left
+{{< block-image-right
     title="Teams"
     subtitle="Our teams of volunteers and professionals work on a variety of topics, from writing code, to authoring documentation, to creating new design resources and answering user questions."
     text-color="white"
@@ -59,9 +59,9 @@ heroImage: "img/banners/banner4.png"
     link-text="Meet our teams"
     link="https://qgis.org"
     markdown-style="light"
->}}{{< /block-image-left >}}
+>}}{{< /block-image-right >}}
 
-{{< block-image-right
+{{< block-image-left
     title="Service Providers"
     subtitle="If you use QGIS in a professional setting, there are over 60 companies worldwide offering professional support and development services."
     text-color="white"
@@ -70,4 +70,4 @@ heroImage: "img/banners/banner4.png"
     link-text="Find a provider"
     link="https://qgis.org"
     markdown-style="light"
->}}{{< /block-image-right >}}
+>}}{{< /block-image-left >}}
