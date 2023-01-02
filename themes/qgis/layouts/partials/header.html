@@ -34,8 +34,12 @@
         See https://gohugo.io/hugo-pipes/resource-from-template/.
         and
         https://blog.fullstackdigital.com/how-to-use-hugo-template-variables-in-scss-files-in-2018-b8a834accce
+
+        NOTE: I separated bulmasass and css into two lines below because I was getting wierd errors
+        when piping them in a single line. TS.
     */}}
-    {{ $bulmacss := resources.Get "sass/bulma.sass" | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
+    {{ $bulmasass := resources.Get "sass/bulma.sass" }}
+    {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
     <link href="{{ $bulmacss.RelPermalink }}" integrity=”{{ $bulmacss.Data.Integrity }}”  rel="stylesheet">
 
     {{ $menucss := resources.Get "css/menu.css" }}
