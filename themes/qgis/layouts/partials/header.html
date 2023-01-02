@@ -46,9 +46,10 @@
     {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $animatecss := resources.Get "css/animate.css" }}
+    {{ $blockcss := resources.Get "css/block.css" }}
 
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $css := slice $menucss $syntaxcss $customcss $animatecss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" integrity=”{{ $css.Data.Integrity }}”  rel="stylesheet">
 
     {{/* We can compile SASS too... */}}
