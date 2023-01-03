@@ -14,7 +14,7 @@
     {{/* printf "Image Resource : %s" $imageResource.Name */}}
     {{ $imageResized = $imageResource.Resize "240x240" | resources.Copy (printf "resized-%s" $imageResource.Name) }}
     {{/* printf "Resized Image Resource : %s" $imageResized */}}
-    {{ $imagePath = $imageResized.RelPermalink }}
+    {{ $imagePath = $imageResource.RelPermalink }}
 {{ end }}
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
@@ -41,22 +41,26 @@
 {{ $imageRight := false }}
 {{ $imageCover := false }}
 {{ $imageCoverCss := "" }}
+{{ $textAlign := ""}}
 {{/* Take care below := for instantiate then = for assignment
       see https://discourse.gohugo.io/t/how-to-use-variables/9100/6 */}}
 {{ if eq $imageSide "left" }}
     {{ $imageLeft = true }}
+    {{ $textAlign = "has-text-left"}}
 {{ end }}
 {{ if eq $imageSide "right" }}
     {{ $imageRight = true }}
+    {{ $textAlign = "has-text-right"}}
 {{ end }}
 {{ if eq $imageSide "cover" }}
     {{ $imageCover = true }}
     {{ $imageCoverCss = "is-image-block" }}
+    {{ $textAlign = "has-text-centered"}}
 {{ end }}
 
 {{/*
    container centers content horizontally 
-   is-min-height is-max-height in assets/css/block.css
+   is-min-height in assets/css/block.css
 */}}
 <section class="container py-0 px-0 is-fluid {{ $animationClasses }} notification {{ $class }} {{ $imageCoverCss }} is-min-height"
     {{ if eq $imageCover true }}style="{{ $imageStyle | safeCSS }}"{{ end }}> 
@@ -69,9 +73,9 @@
         {{ end }}
         <div class="tile is-parent is-vertical py-3 px-3 ">
             <div class="tile is-child">
-                <p class="title is-spaced">
+                <p class="title is-spaced {{ $textAlign }}">
                     {{ $title }}</p>
-                <p class="subtitle">
+                <p class="subtitle {{ $textAlign }}">
                     {{ $subtitle }}</p>
                 </div>
             {{ if $showFooter }}
@@ -107,7 +111,7 @@
         </div>
         {{ if eq $imageRight true }}
         {{/* see assets/css/block.css */}}
-        <div class="tile is-2 is-image-block" 
+        <div class="tile is-2 is-image-block is-min-height" 
              style="{{ $imageStyle | safeCSS }}"> 
         </div>
         {{ end }}

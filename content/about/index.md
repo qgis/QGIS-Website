@@ -28,8 +28,8 @@ heroImage: "img/banners/banner3.png"
     image="code-of-conduct.png"
     link-text="Read our code of conduct"
     link="https://qgis.org"
-    image-side="left"
-    class="is-primary"
+    image-side="right"
+    class="is-danger"
 >}}{{< /block >}}
 
 {{< block
@@ -39,7 +39,7 @@ heroImage: "img/banners/banner3.png"
     link-text="Read our diversity statement"
     link="https://qgis.org"
     image-side="left"
-    class="is-primary"
+    class="is-info"
 >}}{{< /block >}}
 
 {{< block
@@ -48,8 +48,8 @@ heroImage: "img/banners/banner3.png"
     image="environmental-policy.png"
     link-text="Explore our policies"
     link="https://qgis.org"
-    image-side="left"
-    class="is-primary"
+    image-side="right"
+    class="is-warning"
 >}}{{< /block >}}
 
 {{< block
@@ -68,8 +68,8 @@ heroImage: "img/banners/banner3.png"
     image="map2.png"
     link-text="View our reports"
     link="https://qgis.org"
-    image-side="left"
-    class="is-primary"
+    image-side="right"
+    class="is-warning"
 >}}{{< /block >}}
 
 {{< block
@@ -79,13 +79,12 @@ heroImage: "img/banners/banner3.png"
     link-text="Learn more"
     link="https://qgis.org"
     image-side="left"
-    class="is-primary"    
+    class="is-success"    
 >}}{{< /block >}}
 
 {{< block
    link-text="Learn more about the QGIS Value Proposition"
    link="https://qgis.org"
-   image-side="left"
-   class="is-primary"   
-
+   image-side="right"
+   class="is-danger"   
 >}}{{< /block >}}
