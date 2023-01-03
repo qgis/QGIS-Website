@@ -6,9 +6,9 @@ draft: false
 heroImage: "img/banners/banner1.png"
 ---
 
-{{< block-text
+{{< block
     title="Contribute and keep QGIS sustainable"
->}}{{< /block-text >}}
+>}}{{< /block >}}
 
 {{< block-title-left
     title="Sustaining memberships"
@@ -16,7 +16,7 @@ heroImage: "img/banners/banner1.png"
 >}}{{< /block-title-left >}}
 
 
-{{< block-image-left
+{{< block
     title="Donating via bank transfer"
     subtitle="This option is especially useful for large donors or those who cannot make payments using PayPal or Stripe. Use the details below to make a donation via international money transfer. If needed, we can raise an invoice to you first to facilitate procurement."
     text-color="black"
@@ -35,22 +35,22 @@ Name | Value
 **Bank name:**   |PostFinance AG
 **Bank address:**|Mingerstrasse 20, 3030 Berne,Switzerland
 **VAT-number:**|CHE-489.853.176
-{{< /block-image-left >}}
+{{< /block >}}
 
-{{< block-image-left
+{{< block
     title="Donating via Stripe"
     subtitle="We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed."
     text-color="white"
     background-color="#589632"
     image="stripe.png"
     markdown-style="light"
->}}{{< /block-image-left >}}
+>}}{{< /block >}}
 
-{{< block-image-left
+{{< block
     title="Donating via Paypal"
     subtitle="You can use Paypal to donate if it is not possible to use Stripe. The payment is processed by PayPal but you don't need to have a PayPal account or sign-up for one if you are paying by credit card. You can also use your own Paypal account to donate."
     text-color="black"
     background-color="white"
     image="paypal.png"
     markdown-style="light"
->}}{{< /block-image-left >}}
+>}}{{< /block >}}

@@ -3,12 +3,19 @@
 {{ $link := .Get "link" | default "" }}
 {{ $class := .Get "class" | default "is-primary" }}
 {{ $image := .Get "image" | default "" }}
-{{/* printf "Image: %s" $image */}}
-{{ $imageResource := .Page.Resources.GetMatch $image }}
-{{/* printf "Image Resource : %s" $imageResource.Name */}}
-{{ $imageResized := $imageResource.Resize "240x240" | resources.Copy (printf "resized-%s" $imageResource.Name) }}
-{{/* printf "Resized Image Resource : %s" $imageResized */}}
-
+{{/* Take care below := for instantiate then = for assignment
+      see https://discourse.gohugo.io/t/how-to-use-variables/9100/6 */}}
+{{ $imageResource := "" }}
+{{ $imageResized := "" }}
+{{ $imagePath := "" }}
+{{ if ne $image "" }}
+    {{/* printf "Image: %s" $image */}}
+    {{ $imageResource = .Page.Resources.GetMatch $image }}
+    {{/* printf "Image Resource : %s" $imageResource.Name */}}
+    {{ $imageResized = $imageResource.Resize "240x240" | resources.Copy (printf "resized-%s" $imageResource.Name) }}
+    {{/* printf "Resized Image Resource : %s" $imageResized */}}
+    {{ $imagePath = $imageResized.RelPermalink }}
+{{ end }}
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
 {{ $animate := .Get "animate" | default "false" }}
@@ -28,7 +35,7 @@
 
 {{/* Calculate image placement (left, right or cover)
     Cover fills the whole background of the block. */}}
-{{ $imageStyle := printf "background-image: url(%s);" $imageResized.RelPermalink }}
+{{ $imageStyle := printf "background-image: url(%s);" $imagePath }}
 {{ $imageSide := .Get "image-side" | default "" }}
 {{ $imageLeft := false }}
 {{ $imageRight := false }}

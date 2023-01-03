@@ -290,7 +290,7 @@ The secondary menu template is implemented in ```themes/qgis/layouts/partials/su
 The different types of blocks we use are defined in ```themes/qgis/layouts/shortcodes```. The main shortcodes you will use are the ones starting with ```block```. To use a block, simply add it to your markdown as per this example:
 
 ```
-{{< block-image-left
+{{< block
     title="Block with more content"
     subtitle="Unleash your creativity and experience first 
     class cartographic design capabiliities and design great
@@ -301,14 +301,14 @@ The different types of blocks we use are defined in ```themes/qgis/layouts/short
 If you want to include markdown content inside the block you can do it as inner content like this:
 
 ```
-{{< block-image-left
+{{< block
     title="Block with more content"
     subtitle="Unleash your creativity and experience first 
     class cartographic design capabilities and design great 
     maps for digital and print. "
 >}}
 More details khdkjhksj dhjfhs dkj hsfdjkh fsd
-{{< /block-image-left >}}
+{{< /block >}}
 ```
 
 The options for a block are:
