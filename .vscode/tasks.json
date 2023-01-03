@@ -9,12 +9,40 @@
     ],
     "tasks": [
         {
+            "label": "build local",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "hugo"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "dev local fastrender",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "hugo server"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },        
+        {
             "label": "dev local",
             "type": "shell",
             "command": "bash",
             "args": [
                 "-c",
-                "hugo server -D --disableFastRender"
+                "hugo server -D --disableFastRender --debug --gc --ignoreCache --printPathWarnings --log --verbose --verboseLog"
             ],
             "problemMatcher": [],
             "group": {

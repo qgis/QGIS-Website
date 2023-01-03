@@ -1,9 +1,14 @@
 {{ $classes := .Get "classes" | default ""}}
 {{ $header := .Get "header" | default ""}}
-<section class="section container pb-6 pl-0 pr-0 animation-element animate-from-left">
-    <div class="tile is-ancestor">
-        <div class="tile is-vertical">
-            <div class="tile is-parent">
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<section class="section container is-fluid pb-6 pl-0 pr-0 {{ $animationClasses }}">
+    <div class="tile is-ancestor is-gapless">
+        <div class="tile">
+            <div class="tile is-parent is-vertical">
                 <article class="tile is-child notification is-primary">
                     <p class="title has-text-centered">
                         {{ $header }}</p>

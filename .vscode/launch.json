@@ -5,17 +5,31 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Hugo Live Fast",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev local fastrender", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Build Using Locally Installed Hugo",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "build local", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Hugo Live Debug",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev local", // The name of the task defined above
+            "request": "attach"
+        },                
+        {
             "name": "Dev Build",
             "type": "shell",
             // see tasks.json for definition
             "preLaunchTask": "dev build", // The name of the task defined above
-            "request": "attach"
-        },
-        {
-            "name": "Run Dev Using Locally Installed Hugo",
-            "type": "shell",
-            // see tasks.json for definition
-            "preLaunchTask": "dev local", // The name of the task defined above
             "request": "attach"
         },
         {

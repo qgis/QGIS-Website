@@ -1,40 +1,3 @@
-div.tile.is-parent.is-horizontal {
-  padding-bottom: 0;
-}
-div.tile.is-vertical.is-parent {
-  padding-top: 0;
-}
-
-
-.tile {
-  border-radius: 0;
-}
-.has-bg-img {
-  background: url("/img/banners/banner1.png");
-  background-position: center;
-  background-size: cover;
-}
-
-.card {
-  box-shadow: none;
-  border-radius: 0;
-  height: 100%;
-}
-
-.box {
-  box-shadow: none;
-}
-
-.equal-height {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.equal-height .card-content {
-  flex: auto;
-}
-
 @font-face {
   font-family: "fa-regular-400";
   src: url("/fonts/fa-regular-400.eot");
@@ -43,45 +6,6 @@ div.tile.is-vertical.is-parent {
     url("/fonts/fa-regular-400.svg#filename") format("svg");
 }
 
-/* Styling for standard elements markdown would produce */
-
-h1 {
-  font-size: 28px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.5em;
-  padding-bottom: 15px;
-  display: inline-block;
-}
-
-p {
-  font-size: 1em;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 1.5em;
-  padding-bottom: 15px;
-  position: relative;
-}
-
-
-/* No rounded corners for block images */
-.card-image:last-child img {
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.card-image:first-child img {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-/* Remove the highlight line between a card and its footer */
-
-.card-footer {
-  border-top: none;
-}
-.card-footer-item:not(:last-child) {
-  border-right: none;
-}
 
 /* displaying the left border of the follow section for the footer */
 .follow-qgis {

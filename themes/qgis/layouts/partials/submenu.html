@@ -15,19 +15,19 @@
                     {{ $menuItemUrl := .URL }}
                     {{ if .HasChildren }}
                 <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
-                    <a class="navbar-link">
+                    <a class="navbar-link is-size-7">
                         {{ .Pre }}<span>{{ .Name }}</span>
                     </a>
                     <div class="navbar-dropdown">
                         {{ range .Children }}
-                        <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                        <a class="navbar-item is-size-7{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                             {{ .Pre }}<span>{{ .Name }}</span>
                         </a>
                         {{ end }}    
                     </div>
                 </div>
                     {{ else }}
-                    <a class="navbar-item{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                    <a class="navbar-item is-size-7{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                         {{ .Pre }}<span>{{ .Name }}</span>
                     </a>                
                     {{ end }}
