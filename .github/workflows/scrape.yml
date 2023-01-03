@@ -27,7 +27,7 @@ jobs:
     - name: '🗞️ Fetch Feed Content'
       run: |
         cd ./qgis-hugo
-        run ./fetch_funders.py
+        ./fetch_funders.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
