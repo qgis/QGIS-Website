@@ -25,6 +25,7 @@ for item in items:
     image_ext = os.path.splitext(path)[1]
     name = os.path.basename(os.path.normpath(link))
     image_name = "%s.%s" % (name, image_ext)
+    image_name = image_name.replace("..",".")
 
     content = f"""
 ---
