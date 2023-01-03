@@ -9,7 +9,6 @@ def test_homepage_screenshot(page: Page, screenshot_dir: Path):
     page.pause()
     page.screenshot(path=f"{screenshot_dir}/download-mac.png", full_page=True)
 
-
 def test_download_mac_page_title(page: Page):
     page.goto("/downloads/macos/")
     assert page.title() == "Download · QGIS Web Site"
