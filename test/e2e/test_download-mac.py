@@ -11,16 +11,16 @@ def test_homepage_screenshot(page: Page, screenshot_dir: Path):
 
 
 def test_download_mac_page_title(page: Page):
-    page.goto("/downloads/mac/")
+    page.goto("/downloads/macos/")
     assert page.title() == "Download · QGIS Web Site"
 
 def test_download_mac_banner_title(page: Page):
-    page.goto("/downloads/mac/")
+    page.goto("/downloads/macos/")
     hero_title = page.locator(".hero-title")
     expect(hero_title).to_contain_text("Download")
 
 def test_download_mac_banner_subtitle(page: Page):
-    page.goto("/downloads/mac/")
+    page.goto("/downloads/macos/")
     hero_subtitle = page.locator(".hero-subtitle")
     expect(hero_subtitle).to_contain_text("QGIS Desktop for macOS")
 
