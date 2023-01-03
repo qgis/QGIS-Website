@@ -30,9 +30,9 @@ def expected_rss_feeds() -> List[
 @fixture
 def expected_dropdown_items(base_url) -> List[Dict[str, str]]:
     return [
-        {"href": "/download-linux/", "title": "Linux"},
-        {"href": "/download-mac/", "title": "macOS"},
-        {"href": "/download-windows", "title": "Windows"},
+        {"href": "/downloads/linux/", "title": "Linux"},
+        {"href": "/downloads/macos/", "title": "macOS"},
+        {"href": "/downloads/windows", "title": "Windows"},
     ]
 
 

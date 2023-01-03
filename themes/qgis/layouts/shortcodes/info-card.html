@@ -1,4 +1,9 @@
-<section class="section container is-fluid animation-element animate-from-right notification is-info">    
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<section class="section container is-fluid {{ $animationClasses }} notification is-info">    
     <div class="columns">
         <div class="column is-5 is-offset-1">
             <div class="card is-shady">

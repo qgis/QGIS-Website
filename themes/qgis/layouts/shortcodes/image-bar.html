@@ -1,4 +1,9 @@
-<section class="section container is-fluid animation-element animate-from-left notification is-info">    
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<section class="section container is-fluid {{ $animationClasses }} notification is-info">    
     <div class="tile is-ancestor">
         <div class="tile is-parent">
             {{- range (seq 0 (sub (len .Params) 1) ) }}

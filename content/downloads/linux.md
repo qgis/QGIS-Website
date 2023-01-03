@@ -11,8 +11,6 @@ heroImage: "img/banners/banner4.png"
 
 {{< card-start header="Download QGIS for Linux">}}
 
-{{< qrcode "https://qgis.org/en/site/forusers/download.html#linux" >}}
-
 ```curl https://qgis.org/install.sh | sh```
 
 This is the stable release installer. For other Linux installer variants see here.
@@ -32,6 +30,8 @@ This is the stable release installer. For other Linux installer variants see her
 - Get community support via live chat, forums or mailing lists
 
 {{< card-end >}}
+
+{{< qrcode "https://qgis.org/en/site/forusers/download.html#linux" >}}
 
 {{< card-start header="Use QGIS Desktop on Ubuntu Linux">}}
 

@@ -10,11 +10,12 @@ heroImage: "img/banners/banner4.png"
 
 {{< card-start header="Download QGIS for macOS">}}
 
-{{< qrcode "https://qgis.org/en/site/forusers/download.html#mac" >}}
 
 This is the all-in-one stable release installer for macOS High Sierra (10.13) and newer. The software you receive with the free download link and the download and donate link is identical. This package works well on both Intel and ARM based Macs. For other macOS installer variants see here.
 
 {{< card-end >}}
+
+{{< qrcode "https://qgis.org/en/site/forusers/download.html#mac" >}}
 
 {{< card-start header="Use QGIS Desktop on macOS">}}
 
