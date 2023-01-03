@@ -23,9 +23,6 @@ jobs:
         python-version: '3.10'
         architecture: 'x64'
         cache: "pipenv"
-    
-    - name: '👪 Install Python deps'
-      run: pip install pipenv && cd ./scraper && pipenv sync --bare
 
     - name: '🗞️ Fetch Feed Content'
       run: |
