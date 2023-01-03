@@ -11,18 +11,11 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-    - name: '🗞️ Fetch Feed Content'
+    - name: '🛒 Checkout QGIS Hugo'
       uses: actions/checkout@v3
       with:
         ref: main
         path: ./qgis-hugo
-
-    - name: '🛒 Checkout show-scraper'
-      uses: actions/checkout@v3
-      with:
-        repository: JupiterBroadcasting/show-scraper
-        ref: main
-        path: ./scraper
 
     - name: '🐍 Setup Python'
       uses: actions/setup-python@v3
@@ -34,13 +27,13 @@ jobs:
     - name: '👪 Install Python deps'
       run: pip install pipenv && cd ./scraper && pipenv sync --bare
 
-    - name: '⚒️ Scrape'
+    - name: '🗞️ Fetch Feed Content'
       run: |
-        cd ./show-scraper
-        DATA_DIR=../qgis-hugo LATEST_ONLY=true pipenv run ./scraper.py
+        cd ./qgis-hugo
+        run ./fetch_funders.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: 'Automatically scraped and committed via a GitHub Action.'
+        commit_message: 'Funders scraped and committed via a GitHub Action.'
         repository: ./qgis-hugo
