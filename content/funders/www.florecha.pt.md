@@ -1,10 +1,10 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Florecha, Forest Solutions, SA."
 logo: "www.florecha.pt.png"
-start_date: "01 January 2021"
-end_date: "31 January 2023"
+startDate: "2021-01-01"
+endDate: "2023-01-31"
 link: "http://www.florecha.pt/"
 country: "Portugal"
 ---

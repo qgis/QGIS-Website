@@ -1,10 +1,10 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Level2"
 logo: "level2.si.png"
-start_date: "01 January 2022"
-end_date: "28 February 2023"
+startDate: "2022-01-01"
+endDate: "2023-02-28"
 link: "https://level2.si/"
 country: "Slovenia"
 ---

@@ -1,10 +1,10 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "GoldSpot Discoveries"
 logo: "www.goldspot.ca.svg"
-start_date: "22 November 2021"
-end_date: "28 February 2023"
+startDate: "2021-11-22"
+endDate: "2023-02-28"
 link: "http://www.goldspot.ca/"
 country: "Canada"
 ---

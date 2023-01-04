@@ -1,10 +1,10 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "CADaGEO"
 logo: "www.cadageo.com.png"
-start_date: "03 January 2023"
-end_date: "29 February 2024"
+startDate: "2023-01-03"
+endDate: "2024-02-29"
 link: "http://www.cadageo.com/"
 country: "France"
 ---

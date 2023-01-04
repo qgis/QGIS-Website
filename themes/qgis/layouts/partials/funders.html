@@ -1,0 +1,79 @@
+<section class="section">
+    <div class="container is-fluid">
+        <h1 class="title">
+            Our Sustaining Members
+        </h1>
+        <h1 class="subtitle">
+            Large
+        </h1>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-flex flex-wrap is-flex-wrap-wrap is-justify-content-space-around">
+                {{ $headlessbundle := .Site.GetPage "/funders" }}
+                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                {{ if eq .Params.level "Large" }}
+                    {{ $startDate := time .Params.startDate }}
+                    {{ $endDate := time .Params.endDate }}
+                    {{ if ge $endDate now }}
+                <a class="tile is-child is-4 box" href="{{ .Params.link }}">
+                    <h3 class="title is-3">{{ .Params.title }}</h3>
+                    <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
+                    <figure class="image">
+                        <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                    </figure>
+                </a>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+        <h1 class="subtitle">
+            Medium
+        </h1>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-flex flex-wrap is-flex-wrap-wrap">
+                {{ $headlessbundle := .Site.GetPage "/funders" }}
+                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                {{ if eq .Params.level "Medium" }}
+                    {{ $startDate := time .Params.startDate }}
+                    {{ $endDate := time .Params.endDate }}
+                    {{ if ge $endDate now }}
+                <a class="tile is-child is-2 box notification primary" href="{{ .Params.link }}">
+                    <h3 class="title is-5">{{ .Params.title }}</h3>
+                    <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
+                    <figure class="image">
+                        <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                    </figure>
+                </a>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+
+        <h1 class="subtitle">
+            Small
+        </h1>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-flex flex-wrap is-flex-wrap-wrap">
+                {{ $headlessbundle := .Site.GetPage "/funders" }}
+                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                {{ if eq .Params.level "Small" }}
+                    {{ $startDate := time .Params.startDate }}
+                    {{ $endDate := time .Params.endDate }}
+                    {{ if ge $endDate now }}
+                <div class="tile is-child is-1 box">
+                    <a class="" href="{{ .Params.link }}">
+                        <figure class="image">
+                            <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }} ({{ .Params.startDate }} - {{ .Params.endDate }})">
+                        </figure>
+                    </a>
+                </div>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+        
+        
+    </div>
+</section>

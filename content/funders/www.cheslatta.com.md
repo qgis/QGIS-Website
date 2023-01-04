@@ -1,10 +1,10 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Cheslatta Carrier nation"
 logo: "www.cheslatta.com.png"
-start_date: "19 November 2021"
-end_date: "31 January 2023"
+startDate: "2021-11-19"
+endDate: "2023-01-31"
 link: "https://www.cheslatta.com/"
 country: "Canada"
 ---

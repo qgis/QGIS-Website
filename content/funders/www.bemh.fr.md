@@ -1,10 +1,10 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "BEMH"
 logo: "www.bemh.fr.png"
-start_date: "01 January 2021"
-end_date: "28 February 2024"
+startDate: "2021-01-01"
+endDate: "2024-02-28"
 link: "https://www.bemh.fr/"
 country: "France"
 ---
