@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "CADaGEO"
 logo: "www.cadageo.com.png"
 start_date: "03 January 2023"

@@ -1,6 +1,6 @@
 
 ---
-type: "Large"
+level: "Large"
 title: "Land Vorarlberg"
 logo: "www.vorarlberg.at.jpg"
 start_date: "01 February 2022"

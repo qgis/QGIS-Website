@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "SC Micro Mapper SRL"
 logo: "www.micromapper.ro.png"
 start_date: "01 February 2022"

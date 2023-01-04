@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Golden Planet Mining Corporation"
 logo: "goldenplanet.ca.svg"
 start_date: "22 November 2021"

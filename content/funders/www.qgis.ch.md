@@ -1,6 +1,6 @@
 
 ---
-type: "Large"
+level: "Large"
 title: "QGIS user group Switzerland"
 logo: "www.qgis.ch.png"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "QTibia Engineering"
 logo: "qtibia.ro.png"
 start_date: "01 February 2022"

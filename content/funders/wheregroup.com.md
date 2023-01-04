@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "WhereGroup GmbH"
 logo: "wheregroup.com.jpg"
 start_date: "01 February 2022"

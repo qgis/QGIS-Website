@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Level2"
 logo: "level2.si.png"
 start_date: "01 January 2022"

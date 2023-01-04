@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "WAGNER-IT"
 logo: "www.wagner-it.de.png"
 start_date: "01 February 2022"

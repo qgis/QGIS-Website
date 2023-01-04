@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "BGEO Open GIS, SL"
 logo: "www.bgeo.es.png"
 start_date: "01 February 2022"

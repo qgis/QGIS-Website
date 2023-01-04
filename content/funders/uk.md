@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "OSGeo:UK"
 logo: "uk.png"
 start_date: "01 January 2022"

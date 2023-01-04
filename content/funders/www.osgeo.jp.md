@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "OSGeo.JP"
 logo: "www.osgeo.jp.png"
 start_date: "01 February 2022"

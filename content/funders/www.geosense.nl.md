@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Geosense"
 logo: "www.geosense.nl.png"
 start_date: "01 January 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "TerreLogiche"
 logo: "www.terrelogiche.com.jpg"
 start_date: "01 February 2022"

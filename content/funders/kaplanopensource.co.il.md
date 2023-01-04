@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Kaplan Open Source Consulting Ltd"
 logo: "kaplanopensource.co.il.png"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Locate Press"
 logo: "locatepress.com.jpg"
 start_date: "01 January 2022"

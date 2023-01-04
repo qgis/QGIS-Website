@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Regenerative DesignGroup"
 logo: "www.regenerativedesigngroup.com.png"
 start_date: "01 January 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Mierune LLC"
 logo: "www.mierune.co.jp.png"
 start_date: "01 February 2022"

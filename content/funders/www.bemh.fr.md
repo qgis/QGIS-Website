@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "BEMH"
 logo: "www.bemh.fr.png"
 start_date: "01 January 2021"

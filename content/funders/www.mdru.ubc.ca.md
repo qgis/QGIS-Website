@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "MDRU (Mineral Deposit Research Unit), University of British Columbia"
 logo: "www.mdru.ubc.ca.png"
 start_date: "01 January 2022"

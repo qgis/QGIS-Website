@@ -1,6 +1,6 @@
 
 ---
-type: "Large"
+level: "Large"
 title: "QGIS user group Denmark"
 logo: "www.qgis.dk.png"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Ozifin Mining Ltd"
 logo: "www.ozifin.com.png"
 start_date: "01 February 2022"

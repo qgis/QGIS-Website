@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "GKG Kassel, (Dr.-Ing. Claas Leiner)"
 logo: "www.gkg-kassel.de.png"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "North River Geographic Systems, Inc"
 logo: "www.northrivergeographic.com.png"
 start_date: "01 January 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Asociación Geoinnova"
 logo: "geoinnova.org.jpg"
 start_date: "01 February 2022"

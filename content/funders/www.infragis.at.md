@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "InfraGIS GmbH"
 logo: "www.infragis.at.png"
 start_date: "01 January 2022"

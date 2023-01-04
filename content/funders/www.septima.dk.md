@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Septima"
 logo: "www.septima.dk.png"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Atholl Estates"
 logo: "atholl-estates.co.uk.png"
 start_date: "01 February 2022"

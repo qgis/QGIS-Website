@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "SOLTIG (Soluciones en Tecnologías de Información Geográfica)"
 logo: "www.soltig.net.png"
 start_date: "01 February 2022"

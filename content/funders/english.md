@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "AERO ASAHI Corporation"
 logo: "english.png"
 start_date: "01 February 2022"

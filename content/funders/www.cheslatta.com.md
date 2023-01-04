@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Cheslatta Carrier nation"
 logo: "www.cheslatta.com.png"
 start_date: "19 November 2021"

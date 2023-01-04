@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "ms.GIS informationssysteme gmbh"
 logo: "www.msgis.com.jpg"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Large"
+level: "Large"
 title: "OPENGIS.ch GmbH"
 logo: "www.opengis.ch.png"
 start_date: "01 February 2022"

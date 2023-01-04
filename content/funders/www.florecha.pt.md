@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Florecha, Forest Solutions, SA."
 logo: "www.florecha.pt.png"
 start_date: "01 January 2021"

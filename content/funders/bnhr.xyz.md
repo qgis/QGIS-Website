@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "BNHR"
 logo: "bnhr.xyz.png"
 start_date: "01 February 2022"

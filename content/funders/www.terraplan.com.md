@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Terraplan"
 logo: "www.terraplan.com.png"
 start_date: "01 February 2022"

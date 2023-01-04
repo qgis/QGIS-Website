@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Lutra Consulting Limited"
 logo: "www.lutraconsulting.co.uk.png"
 start_date: "01 February 2022"

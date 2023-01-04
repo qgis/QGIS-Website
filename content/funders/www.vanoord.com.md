@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Van Oord Dredging and Marine Contractors bv"
 logo: "www.vanoord.com.png"
 start_date: "01 December 2022"

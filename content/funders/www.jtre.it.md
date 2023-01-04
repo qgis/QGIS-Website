@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "jitre"
 logo: "www.jtre.it.jpg"
 start_date: "01 January 2022"

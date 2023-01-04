@@ -3,16 +3,53 @@
         <h1 class="title">
             Our Sustaining Members
         </h1>
+        <h1 class="subtitle">
+            Large
+        </h1>
         <div class="tile is-ancestor">
             <div class="tile is-parent is-flex flex-wrap" style="flex-wrap: wrap;">
             {{ range where .Site.RegularPages "Section" "funders" }}
+                {{ if eq .Params.level "Large"}}
+                <a class="tile is-child is-4 box" href="{{ .Params.link }}">
+                    <figure class="image">
+                        <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                    </figure>
+                </a>
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+        <h1 class="subtitle">
+            Medium
+        </h1>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-flex flex-wrap" style="flex-wrap: wrap;">
+            {{ range where .Site.RegularPages "Section" "funders" }}
+                {{ if eq .Params.level "Medium"}}
                 <a class="tile is-child is-3 box" href="{{ .Params.link }}">
                     <figure class="image">
                         <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
                     </figure>
                 </a>
+                {{ end }}
             {{ end }}
             </div>
-        </div>
+        </div>  
+        <h1 class="subtitle">
+            Small
+        </h1>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-flex flex-wrap" style="flex-wrap: wrap;">
+            {{ range where .Site.RegularPages "Section" "funders" }}
+                {{ if eq .Params.level "Small"}}
+                <a class="tile is-child is-2 box" href="{{ .Params.link }}">
+                    <figure class="image">
+                        <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                    </figure>
+                </a>
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>                
     </div>
 </section>

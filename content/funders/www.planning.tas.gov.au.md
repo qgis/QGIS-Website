@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Tasmanian Planning Commission"
 logo: "www.planning.tas.gov.au.png"
 start_date: "01 February 2022"

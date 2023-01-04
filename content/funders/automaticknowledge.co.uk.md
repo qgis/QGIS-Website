@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Automatic Knowledge"
 logo: "automaticknowledge.co.uk.png"
 start_date: "01 February 2022"

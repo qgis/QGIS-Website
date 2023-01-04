@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "MGGP S.A."
 logo: "mggp.com.pl.png"
 start_date: "01 February 2022"

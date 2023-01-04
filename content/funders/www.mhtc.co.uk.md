@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "MHTC Ltd"
 logo: "www.mhtc.co.uk.png"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Pacific Geomatics Limited"
 logo: "pacgeo.com.png"
 start_date: "01 January 2023"

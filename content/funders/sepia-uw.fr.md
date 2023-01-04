@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "SEPIA Conseils"
 logo: "sepia-uw.fr.jpg"
 start_date: "01 January 2022"

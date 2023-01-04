@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Syddjurs Kommune"
 logo: "www.syddjurs.dk.png"
 start_date: "01 February 2022"

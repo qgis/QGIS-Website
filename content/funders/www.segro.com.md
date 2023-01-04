@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "SEGRO"
 logo: "www.segro.com.png"
 start_date: "01 January 2021"

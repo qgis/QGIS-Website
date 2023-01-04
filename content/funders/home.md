@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Gispo Oy"
 logo: "home.png"
 start_date: "01 February 2022"

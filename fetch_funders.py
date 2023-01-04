@@ -32,7 +32,7 @@ for item in items:
 
     content = f"""
 ---
-type: "{level}"
+level: "{level}"
 title: "{title}"
 logo: "{image_name}"
 start_date: "{start_date}"

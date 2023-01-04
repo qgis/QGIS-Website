@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "CHARTWELL Resource Group Ltd."
 logo: "crgl.ca.png"
 start_date: "01 February 2022"

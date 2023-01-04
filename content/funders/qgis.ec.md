@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "QGIS user group Ecuador"
 logo: "qgis.ec.png"
 start_date: "01 January 2022"

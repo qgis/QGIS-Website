@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "SIGMOÉ"
 logo: "sigmoe.fr.png"
 start_date: "01 February 2022"

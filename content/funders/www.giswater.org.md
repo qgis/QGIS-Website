@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Giswater Association"
 logo: "www.giswater.org.png"
 start_date: "01 February 2022"

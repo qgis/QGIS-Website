@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "HermeSys, Inc."
 logo: "hermesys.co.kr.png"
 start_date: "01 February 2022"

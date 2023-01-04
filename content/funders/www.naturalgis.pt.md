@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Natural GIS LDA"
 logo: "www.naturalgis.pt.png"
 start_date: "01 February 2022"

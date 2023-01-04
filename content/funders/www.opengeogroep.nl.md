@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Open Geo Groep"
 logo: "www.opengeogroep.nl.png"
 start_date: "01 February 2022"

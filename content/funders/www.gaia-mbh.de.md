@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "GAIA mbH"
 logo: "www.gaia-mbh.de.png"
 start_date: "01 February 2022"

@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "Nelen & Schuurmans"
 logo: "nelen-schuurmans.nl.png"
 start_date: "01 February 2022"

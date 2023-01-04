@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "City of Canning"
 logo: "www.canning.wa.gov.au.png"
 start_date: "01 February 2022"

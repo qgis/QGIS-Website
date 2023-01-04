@@ -1,6 +1,6 @@
 
 ---
-type: "Medium"
+level: "Medium"
 title: "E-TIB Ingenieurgesellschaft mbH"
 logo: "www.etib-ing.com.png"
 start_date: "01 February 2022"

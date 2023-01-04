@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Mbus ltda"
 logo: "mbusltda.com.br.jpeg"
 start_date: "01 September 2022"

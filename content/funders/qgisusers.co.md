@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "QGIS user group Colombia"
 logo: "qgisusers.co.png"
 start_date: "01 February 2022"

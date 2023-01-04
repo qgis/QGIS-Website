@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "MappingGIS"
 logo: "www.mappinggis.com.png"
 start_date: "01 February 2022"

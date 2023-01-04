@@ -1,6 +1,6 @@
 
 ---
-type: "Small"
+level: "Small"
 title: "Baumsicht"
 logo: "baumsicht.de.png"
 start_date: "01 January 2022"
