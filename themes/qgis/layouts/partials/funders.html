@@ -18,7 +18,7 @@
                     <h3 class="title is-3">{{ .Params.title }}</h3>
                     <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
                     <figure class="image">
-                        <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
                     </figure>
                 </a>
                     {{ end }}
@@ -41,7 +41,7 @@
                     <h3 class="title is-5">{{ .Params.title }}</h3>
                     <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
                     <figure class="image">
-                        <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
                     </figure>
                 </a>
                     {{ end }}
@@ -64,7 +64,7 @@
                 <div class="tile is-child is-1 box">
                     <a class="" href="{{ .Params.link }}">
                         <figure class="image">
-                            <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }} ({{ .Params.startDate }} - {{ .Params.endDate }})">
+                            <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
                         </figure>
                     </a>
                 </div>
