@@ -1,5 +1,8 @@
 #!/bin/python
 
+# Simple script to get sustaining members and update our web site with them
+# (c) Tim Sutton, 2023
+
 import requests
 import json
 import shutil
@@ -38,10 +41,14 @@ link: "{link}"
 country: "{country}"
 ---
 """
-    with open(f"content/funders/{name}.md" , "w", encoding="utf=8") as f:
+    markdown_filename = f"content/funders/{name}.md"
+    with open(markdown_filename , "w", encoding="utf=8") as f:
         f.write(content)
+        print(f"Writing: {markdown_filename}")
 
     response = requests.get(image_url, stream=True)
-    with open(f"content/funders/{image_name}", 'wb') as out_file:
+    image_filename = f"content/funders/{image_name}"
+    with open(image_filename, 'wb') as out_file:
         shutil.copyfileobj(response.raw, out_file)
+        print(f"Writing: {image_filename}")
     del response
