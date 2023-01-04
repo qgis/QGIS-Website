@@ -22,7 +22,7 @@ jobs:
       with:
         python-version: '3.10'
         architecture: 'x64'
-        cache: "pipenv"
+        #cache: "pipenv"
 
     - name: '🗞️ Fetch Feed Content'
       run: |
