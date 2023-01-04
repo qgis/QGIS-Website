@@ -22,7 +22,7 @@ jobs:
       with:
         python-version: '3.10'
         architecture: 'x64'
-        cache: "pipenv"
+        #cache: "pipenv"
 
     - name: '🗞️ Fetch Feed Content'
       run: |
@@ -34,4 +34,4 @@ jobs:
       with:
         commit_message: 'Funders scraped and committed via a GitHub Action.'
         repository: ./qgis-hugo
-        push_options: --force
+        # push_options: --force
