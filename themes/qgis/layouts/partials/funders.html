@@ -1,0 +1,18 @@
+<section class="section">
+    <div class="container is-fluid">
+        <h1 class="title">
+            Our Sustaining Members
+        </h1>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent is-flex flex-wrap" style="flex-wrap: wrap;">
+            {{ range where .Site.RegularPages "Section" "funders" }}
+                <a class="tile is-child is-3 box" href="{{ .Params.link }}">
+                    <figure class="image">
+                        <img src="/funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                    </figure>
+                </a>
+            {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
