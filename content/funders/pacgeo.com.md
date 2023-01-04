@@ -3,8 +3,8 @@
 level: "Small"
 title: "Pacific Geomatics Limited"
 logo: "pacgeo.com.png"
-start_date: "01 January 2023"
-end_date: "29 February 2024"
+startDate: "2023-01-01"
+endDate: "2024-02-29"
 link: "https://pacgeo.com/"
 country: "Canada"
 ---

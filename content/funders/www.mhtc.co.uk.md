@@ -3,8 +3,8 @@
 level: "Small"
 title: "MHTC Ltd"
 logo: "www.mhtc.co.uk.png"
-start_date: "01 February 2022"
-end_date: "31 January 2023"
+startDate: "2022-02-01"
+endDate: "2023-01-31"
 link: "http://www.mhtc.co.uk/"
 country: "United Kingdom"
 ---
