@@ -86,6 +86,13 @@ githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
   parent = "Resources"
+  name = "Showcase"
+  url = "/gallery/"
+  weight = -120
+  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
+
+[[menu.main]]
+  parent = "Resources"
   name = "Documentation"
   url = "/documentation/documentation-overview/"
   weight = -120
@@ -120,6 +127,13 @@ githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
   [menu.learning.params]
     submenu = "documentation"
 
+[[menu.showcase]]
+  name = "Maps"
+  url = "/gallery/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]

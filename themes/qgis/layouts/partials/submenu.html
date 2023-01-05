@@ -1,10 +1,10 @@
 {{ $currentPage := . }}
 {{ $pageUrl:= $currentPage.RelPermalink }}
-{{ $menus := index .Site.Menus "learning" }}
-{{/* printf "%s" $menus */}}
 {{ $currentSubmenu := .Params.submenus }}
 {{/* printf "%s" $currentSubmenu */}}
 {{ if $currentSubmenu }}
+{{ $menus := index .Site.Menus $currentSubmenu }}
+{{/* printf "%s" $menus */}}
 <section>
     <nav class="navbar is-transparent is-info navigation" aria-label="sub navigation">
         <div id="sub-menu" class="navbar-menu">
