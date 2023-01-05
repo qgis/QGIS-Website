@@ -1,5 +1,5 @@
 <section class="section">
-    <div class="container notification is-light">
+    <div class="container is-fluid">
         <h1 class="title">
             Our Sustaining Members
         </h1>
@@ -25,7 +25,7 @@
                             {{ end }}
                         {{ end }}
                 <div class="tile is-parent"> 
-                    <article class="tile is-child box notification is-light">
+                    <article class="tile is-child box notification is-info">
                         <span title="Badge top right" class="badge is-primary">{{ $count }}</span>
                         <a href="{{ .Params.link }}">
                             <h3 class="title is-5">{{ .Params.title }}</h3>
@@ -63,7 +63,7 @@
                             {{ end }}
                         {{ end }}
                 <div class="tile is-parent"> 
-                    <article class="tile is-child box notification is-light">
+                    <article class="tile is-child box notification is-warning">
                     <span title="Badge top right" class="badge is-danger">{{ $count }}</span>
                         <a href="{{ .Params.link }}">
                             <h3 class="title is-5">{{ .Params.title }}</h3>
@@ -101,8 +101,8 @@
                             {{ end }}
                         {{ end }}
                 <div class="tile is-parent"> 
-                    <article class="tile is-child box notification is-light">
-                        <span title="Badge top right" class="badge is-danger">{{ $count }}</span>
+                    <article class="tile is-child box notification is-danger">
+                        <span title="Badge top right" class="badge is-warning">{{ $count }}</span>
                         <a href="{{ .Params.link }}">
                             <h3 class="title is-5">{{ .Params.title }}</h3>
                             <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
