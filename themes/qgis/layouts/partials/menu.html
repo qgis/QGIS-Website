@@ -14,7 +14,7 @@
     </div>
     <div id="menu" class="navbar-menu">
         <div class="navbar-end">
-            {{ range .Site.Menus.main }}
+            {{ range sort .Site.Menus.main "Weight"}}
                 {{ $menuItemUrl := .URL }}
                 {{ if .HasChildren }}
             <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
@@ -22,7 +22,7 @@
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>
                 <div class="navbar-dropdown">
-                    {{ range .Children }}
+                    {{ range sort .Children "Weight"}}
                     <a class="navbar-item is-size-7{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                         {{ .Pre }}<span>{{ .Name }}</span>
                     </a>
