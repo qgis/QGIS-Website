@@ -10,13 +10,14 @@ heroImage: "img/banners/banner3.png"
 {{< info-bar 
     "20+:years"
     "100%:open source"
-    "450k+:Daily users" >}}
+    "450k+:Daily users"
+    "400:Tim" >}}
 
 {{< block
     title="QGIS.org charter"
     subtitle="QGIS.org is governed by a transparent charter that describes the structure of the association."
     image="charter.png"
-    image-side="left"
+    image-side="cover"
     link-text="View our charter"
     link="https://qgis.org"
     class="is-warning"
