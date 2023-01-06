@@ -150,6 +150,22 @@ githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
   [menu.showcase.params]
     submenu = "showcase"
 
+[[menu.showcase]]
+  name = "Blogs"
+  url = "/showcase/community-blogs/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
+[[menu.showcase]]
+  name = "Roadmap"
+  url = "/showcase/roadmap/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 

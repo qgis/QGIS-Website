@@ -42,14 +42,20 @@
     {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
     <link href="{{ $bulmacss.RelPermalink }}" integrity=”{{ $bulmacss.Data.Integrity }}”  rel="stylesheet">
 
+    {{/* Bulma extensions - see https://bulma.io/extensions/ */}}
+    {{ $badgecss := resources.Get "css/bulma-badge.css" }}
+    {{ $stepscss := resources.Get "css/bulma-steps.css" }}
+    {{/* must have the leading slash in css path or gh pages deploy will break */}}
+    {{ $extensioncss := slice $stepscss $badgecss | resources.Concat "/css/bulma-extra.css" | resources.Fingerprint }}
+    <link href="{{ $extensioncss.RelPermalink }}" integrity=”{{ $extensioncss.Data.Integrity }}”  rel="stylesheet">
+
     {{ $menucss := resources.Get "css/menu.css" }}
     {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $animatecss := resources.Get "css/animate.css" }}
     {{ $blockcss := resources.Get "css/block.css" }}
-    {{ $badgecss := resources.Get "css/bulma-badge.css" }}
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $badgecss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" integrity=”{{ $css.Data.Integrity }}”  rel="stylesheet">
 
     {{/* We can compile SASS too... */}}
