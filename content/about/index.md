@@ -10,8 +10,7 @@ heroImage: "img/banners/banner3.png"
 {{< info-bar 
     "20+:years"
     "100%:open source"
-    "450k+:Daily users"
-    "400:Tim" >}}
+    "450k+:Daily users" >}}
 
 {{< block
     title="QGIS.org charter"
