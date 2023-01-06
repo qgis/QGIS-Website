@@ -3,8 +3,8 @@
         {{ $.Scratch.Set "counter" 0 }}
         {{ $headlessbundle := .Site.GetPage "/community-blogs" }}
         {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                {{ $count := add ($.Scratch.Get "counter") 1 }}
-                {{ $.Scratch.Set "counter" $count }}
+            {{ $count := add ($.Scratch.Get "counter") 1 }}
+            {{ $.Scratch.Set "counter" $count }}
         <div class="tile is-ancestor is-vertical">
             <div class="tile">
                 <div class="tile is-parent"> 
@@ -18,7 +18,7 @@
                             </figure>
                         </a>
                         <div class="content">
-                            
+                            {{ .Page.RawContent | safeHTML }}
                         </div>
                     </article>
                 </div>
