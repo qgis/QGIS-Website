@@ -16,4 +16,7 @@
     }
   }
 
-
+/* Dont underline links in blocks */
+.notification a:not(.button):not(.dropdown-item) {
+  text-decoration: none;
+}
