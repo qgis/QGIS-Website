@@ -64,9 +64,8 @@ def fetch_funders():
         del response
 
 ### Flickr screenshots
-def fetch_flickr_screenshots():
+def fetch_flickr_screenshots(showcase_type, rss_url):
 
-    rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
     response = requests.get(rss_url)
     feed = atoma.parse_atom_bytes(response.content)
     #print(feed.description)
@@ -97,22 +96,23 @@ image: "{image_name}"
 date: "{entry_date}"
 link: "{image_url}"
 draft: "true"
+showcase: "{showcase_type}"
 ---
 """
-        markdown_filename = f"content/gallery/{name}.md"
+        markdown_filename = f"content/flickr-images/{name}.md"
         with open(markdown_filename , "w", encoding="utf=8") as f:
             f.write(content)
             print(f"Writing: {markdown_filename}")
 
         response = requests.get(image_url, stream=True)
-        image_filename = f"content/gallery/{image_name}"
+        image_filename = f"content/flickr-images/{image_name}"
         with open(image_filename, 'wb') as out_file:
             shutil.copyfileobj(response.raw, out_file)
             print(f"Writing: {image_filename}")
         del response    
 
-def fetch_rss_screenshots():
-    rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
+def fetch_rss_screenshots(rss_url):
+
     xml = get(rss_url)
 
     # Limit feed output to 5 items
@@ -129,4 +129,11 @@ def fetch_rss_screenshots():
         print(item.title)
         print(item.description)
 
-fetch_flickr_screenshots()
+fetch_flickr_screenshots(
+    showcase_type="map",
+    rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
+)
+fetch_flickr_screenshots(
+    showcase_type="screenshot",
+    rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
+)
