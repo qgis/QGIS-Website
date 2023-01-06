@@ -9,7 +9,7 @@
     <nav class="navbar is-transparent is-info navigation" aria-label="sub navigation">
         <div id="sub-menu" class="navbar-menu">
             <div class="navbar-end">
-                {{ range $menus }}
+                {{ range sort $menus "Weight"}}
                 {{/* printf "Current Submenu: %s" .Params.submenu */}}
                 {{ if eq .Params.submenu $currentSubmenu }}
                     {{/* printf "Current Submenu matched: %s" $currentSubmenu */}}
