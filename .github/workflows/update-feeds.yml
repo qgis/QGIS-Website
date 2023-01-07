@@ -25,7 +25,9 @@ jobs:
         cache: "pipenv"
 
     - name: '🚸Install Python deps'
-      run: pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
+      run: |
+        cd ./qgis-hugo
+        pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
 
     - name: '🗞️ Fetch Feed Content'
       run: |
