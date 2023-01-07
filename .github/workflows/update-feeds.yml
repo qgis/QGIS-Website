@@ -28,10 +28,12 @@ jobs:
       run: |
         cd ./qgis-hugo
         pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
+        pipenv run pip freeze
 
     - name: '🗞️ Fetch Feed Content'
       run: |
         cd ./qgis-hugo
+        pipenv run pip freeze
         pipenv run ./fetch_feeds.py
 
     - name: '✉️ Commit'
