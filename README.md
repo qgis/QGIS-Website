@@ -417,7 +417,7 @@ illustrated above. The secnd value should be a path to an image.
 
 Brand colours are established in ```config.toml```.
 
-![Band Colours](./img/brand-config.png)
+![Brand Colours](./img/brand-config.png)
 
 These are compiled into the SASS theme when Hugo builds the site. You can further
 modify the branding by overriding bulma variables. To do this, edit ```themes/qgis/assets/sass/bulma.sass``` and add your variables. Each bulma page includes a list of variables at the bottom of the page which can be used to override the default bulma styling for the various elements they provide. For example, we can to the [variable list](https://bulma.io/documentation/elements/button/#variables) for bulma buttons and choose a property to modify:
@@ -433,6 +433,20 @@ Finally, to rather use the parameter defined in ```config.toml```, you can use t
 
 ```$navbar-background-color: {{ .Param "light2" }};```
 
+
+## Bulma Extensions
+
+We use various bulma css framework extension. If you need to add more, place them with the others in ```themes/qgis/assets/sass``` and then reference the addition in ```themes/qgis/assets/sass/bulma.sass``` (as shown in the example below). Always use the SASS version so that the them branding is properly applied. More bulma extensions can be found in 
+
+```sass
+/* Extensions */
+/* Steps - see https://github.com/aramvisser/bulma-steps */
+@import "bulma-steps.sass"
+/* Pricing table - see https://github.com/Wikiki/bulma-pricingtable */
+@import "bulma-pricing-table.sass"
+/* Badge - see https://github.com/CreativeBulma/bulma-badge/ */
+@import "bulma-pricing-table.sass"
+```
 
 ## Other CSS Customizations
 
