@@ -1,4 +1,3 @@
-
 ---
 level: "Large"
 title: "QGIS user group Switzerland"

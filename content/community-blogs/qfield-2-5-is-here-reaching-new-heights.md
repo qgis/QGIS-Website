@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "OPENGIS.ch blog: QField 2.5 is here, reaching new heights"
 image: "qfield-2-5-is-here-reaching-new-heights."
 date: "2022-11-14"
 link: "https://www.opengis.ch/2022/11/14/qfield-2-5-is-here-reaching-new-heights/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p>Our ninjas have been so busy that less than a month after we released QField 2.4, we find ourselves with so many new features we simply can&#8217;t wait any longer to present to you the latest version of QField: 2.5 &#8220;Fancy Flamingo <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f9a9.png" alt="🦩" class="wp-smiley" style="height: 1em; max-height: 1em;" />”.</p>

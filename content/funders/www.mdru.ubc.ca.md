@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "MDRU (Mineral Deposit Research Unit), University of British Columbia"

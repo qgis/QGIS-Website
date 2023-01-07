@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "GKG Kassel, (Dr.-Ing. Claas Leiner)"

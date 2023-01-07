@@ -1,4 +1,3 @@
-
 ---
 level: "Medium"
 title: "Kaplan Open Source Consulting Ltd"

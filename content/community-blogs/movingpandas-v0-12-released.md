@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "anitagraser.com: MovingPandas v0.12 released!"
 image: "movingpandas-v0-12-released."
 date: "2022-11-16"
 link: "https://anitagraser.com/2022/11/16/movingpandas-v0-12-released/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <div class="wp-block-image">

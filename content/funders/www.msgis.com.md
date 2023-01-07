@@ -1,4 +1,3 @@
-
 ---
 level: "Medium"
 title: "ms.GIS informationssysteme gmbh"

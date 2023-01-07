@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "QGIS user group Ecuador"

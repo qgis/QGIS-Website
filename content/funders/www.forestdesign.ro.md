@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "Forest Design SRL"

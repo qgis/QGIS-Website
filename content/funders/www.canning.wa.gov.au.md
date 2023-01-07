@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "City of Canning"

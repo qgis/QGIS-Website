@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "SC Micro Mapper SRL"

@@ -1,4 +1,3 @@
-
 ---
 level: "Medium"
 title: "QGIS España Association (QGIS user group Spain)"

@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "OPENGIS.ch blog: How to contribute to QField"
 image: "how-to-contribute-to-qfield."
 date: "2022-12-04"
 link: "https://www.opengis.ch/2022/12/06/how-to-contribute-to-qfield/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p>QField is a community-driven open-source project. It is free to share, use and modify and it will stay like that. The very essence of a community is to help and support each other. And that&#8217;s where YOU come into play. To make it work we need your support!</p>

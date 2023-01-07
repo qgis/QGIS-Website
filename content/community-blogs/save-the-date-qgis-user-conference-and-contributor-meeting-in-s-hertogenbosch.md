@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "QGIS Project blog: Save the date: QGIS user conference and contributor meeting in ‘s-Hertogenbosch"
 image: "save-the-date-qgis-user-conference-and-contributor-meeting-in-s-hertogenbosch."
 date: "2022-12-31"
 link: "https://blog.qgis.org/2023/01/02/save-the-date-qgis-user-conference-and-contributor-meeting-in-s-hertogenbosch/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p>We are happy to announce that our 25th Contributor Meeting will be held in &#8216;s-Hertogenbosch, The Netherlands from 20 to 23 April 2023. </p>

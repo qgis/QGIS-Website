@@ -22,12 +22,15 @@ jobs:
       with:
         python-version: '3.10'
         architecture: 'x64'
-        #cache: "pipenv"
+        cache: "pipenv"
+
+    - name: '🚸Install Python deps'
+      run: pip install pipenv && pipenv install rss-parser atoma && pipenv sync --bare
 
     - name: '🗞️ Fetch Feed Content'
       run: |
         cd ./qgis-hugo
-        ./fetch_funders.py
+        ./fetch_feeds.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4

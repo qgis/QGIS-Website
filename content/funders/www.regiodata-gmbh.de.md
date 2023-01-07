@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "regioDATA Gesellschaft für raumbezogene Informationssysteme mbH"

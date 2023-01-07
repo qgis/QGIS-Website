@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "Lutra Consulting: QGIS and point clouds in MapScaping podcast"
 image: "mapscaping-pointcloud."
 date: "2022-12-06"
 link: "https://lutraconsulting.co.uk/blog/2022/12/06/mapscaping-pointcloud/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p>Listen to the latest developments in point clouds and QGIS from Martin Dobias: <a href="https://mapscaping.com/podcast/cloud-optimized-point-clouds/">MapScaping</a> podcast.</p>

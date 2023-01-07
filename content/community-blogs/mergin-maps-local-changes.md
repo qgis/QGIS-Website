@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "Lutra Consulting: View and track changes in QGIS"
 image: "mergin-maps-local-changes."
 date: "2022-11-09"
 link: "https://lutraconsulting.co.uk/blog/2022/11/08/mergin-maps-local-changes/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p>With the recent changes to the <a href="https://merginmaps.com">Mergin Maps</a> plugin for QGIS, you can visualise the local changes before synchronising your data.</p>
