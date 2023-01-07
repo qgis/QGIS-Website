@@ -1,6 +1,5 @@
-#!/bin/python
 
-# Simple script to get sustaining members and update our web site with them
+# Simple script to get sustaining members and other feeds and update our web site with them
 # (c) Tim Sutton, 2023
 
 import requests
