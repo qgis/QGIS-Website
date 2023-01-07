@@ -7,10 +7,10 @@ import requests
 import json
 import shutil
 import os
-from dateutil.parser import parse as date_parse
 from rss_parser import Parser
 from requests import get
 import atoma
+from dateutil.parser import parse as date_parse
 try:
     import urlparse
 except ImportError:
