@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "QGIS Project blog: Plugin Update December 2022"
 image: "plugin-update-december-2022."
 date: "2022-12-29"
 link: "https://blog.qgis.org/2022/12/29/plugin-update-december-2022/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p>The <a href="https://plugins.qgis.org/plugins/">QGIS plugin repository</a> currently lists 1752 plugins and the list keeps on growing. This month has been busy with 14 new plugins. It can be challenging to stay up to date. </p>

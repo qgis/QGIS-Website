@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "SOLTIG (Soluciones en Tecnologías de Información Geográfica)"

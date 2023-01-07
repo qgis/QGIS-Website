@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "Florecha, Forest Solutions, SA."

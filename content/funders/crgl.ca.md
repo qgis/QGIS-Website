@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "CHARTWELL Resource Group Ltd."

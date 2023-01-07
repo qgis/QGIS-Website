@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "OSGeo.JP"

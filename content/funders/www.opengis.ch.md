@@ -1,4 +1,3 @@
-
 ---
 level: "Large"
 title: "OPENGIS.ch GmbH"

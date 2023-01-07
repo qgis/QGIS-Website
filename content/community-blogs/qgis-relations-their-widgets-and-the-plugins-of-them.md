@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "OPENGIS.ch blog: QGIS Relations, their Widgets and the Plugins of them"
 image: "qgis-relations-their-widgets-and-the-plugins-of-them."
 date: "2022-11-28"
 link: "https://www.opengis.ch/2022/11/29/qgis-relations-their-widgets-and-the-plugins-of-them/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p><em><strong>This blog post is about QGIS relations and how they are edited in the attribute form with widgets in general, as well as some plugins that override the relations editor widget to improve usability and solve specific use cases. The start is quite basic. If you are already a relation hero, then <a href="#plugins" data-type="internal" data-id="#plugins">jump directly to the plugins</a>.</strong></em></p>

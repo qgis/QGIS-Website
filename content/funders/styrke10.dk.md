@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "Styrke 10 ApS"

@@ -1,4 +1,3 @@
-
 ---
 level: "Small"
 title: "North River Geographic Systems, Inc"

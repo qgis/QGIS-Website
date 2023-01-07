@@ -42,15 +42,15 @@ def fetch_funders():
         image_name = image_name.replace("..",".")
 
         content = f"""---
-    level: "{level}"
-    title: "{title}"
-    logo: "{image_name}"
-    startDate: "{start_date}"
-    endDate: "{end_date}"
-    link: "{link}"
-    country: "{country}"
-    ---
-    """
+level: "{level}"
+title: "{title}"
+logo: "{image_name}"
+startDate: "{start_date}"
+endDate: "{end_date}"
+link: "{link}"
+country: "{country}"
+---
+"""
         markdown_filename = f"content/funders/{name}.md"
         with open(markdown_filename , "w", encoding="utf=8") as f:
             f.write(content)
@@ -111,8 +111,8 @@ showcase: "{showcase_type}"
             print(f"Writing: {image_filename}")
         del response    
 
-def fetch_planet_feed(rss_url):
-
+# Blogs with atom feeds
+def fetch_blog_feed(showcase_type, rss_url):
     response = requests.get(rss_url)
     feed = atoma.parse_atom_bytes(response.content)
     #print(feed.description)
@@ -133,18 +133,24 @@ def fetch_planet_feed(rss_url):
         image_name = "%s.%s" % (name, image_ext)
         image_name = image_name.replace("..",".")
 
-        entry_date = entry.published.strftime("%Y-%m-%d")
-        print(entry_date)
-        summary = entry.summary.value
+        try:
+            entry_date = entry.published.strftime("%Y-%m-%d")
+        except:
+            entry_date = ""
+
+        try:
+            summary = entry.summary.value
+        except:
+            summary = ""
 
         content = f"""---
-source: "planet"
+source: "blog"
 title: "{entry.title.value}"
 image: "{image_name}"
 date: "{entry_date}"
 link: "{image_url}"
 draft: "true"
-showcase: "blog"
+showcase: "{showcase_type}"
 ---
 
 {summary}
@@ -161,23 +167,7 @@ showcase: "blog"
             print(f"Writing: {image_filename}")
         del response   
 
-def fetch_rss_screenshots(rss_url):
-
-    xml = get(rss_url)
-
-    # Limit feed output to 5 items
-    # To disable limit simply do not provide the argument or use None
-    parser = Parser(xml=xml.content, limit=5)
-    feed = parser.parse()
-
-    # Print out feed meta data
-    print(feed.language)
-    print(feed.version)
-
-    # Iteratively print feed items
-    for item in feed.feed:
-        print(item.title)
-        print(item.description)
+fetch_funders()
 
 fetch_flickr_screenshots(
     showcase_type="map",
@@ -188,8 +178,13 @@ fetch_flickr_screenshots(
     rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
 )
 
-fetch_planet_feed(
+# Planet blog aggregator
+fetch_blog_feed(
+    showcase_type="planet",
     rss_url="https://plugins.qgis.org/planet/feed/atom/"
 )
-# QGIS USer groups atom feed
-# https://raw.githubusercontent.com/qgis/QGIS-Website/master/source/feeds/qugsnews.atom
+# QGIS User group feed
+fetch_blog_feed(
+    showcase_type="qug",
+    rss_url="https://raw.githubusercontent.com/qgis/QGIS-Website/master/source/feeds/qugsnews.atom"
+)

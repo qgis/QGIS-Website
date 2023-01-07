@@ -1,11 +1,11 @@
 ---
-source: "planet"
+source: "blog"
 title: "anitagraser.com: Visualizing trajectories with QGIS & MobilityDB"
 image: "visualizing-trajectories-with-qgis-mobilitydb."
 date: "2022-11-19"
 link: "https://anitagraser.com/2022/11/19/visualizing-trajectories-with-qgis-mobilitydb/"
 draft: "true"
-showcase: "blog"
+showcase: "planet"
 ---
 
 <p>In <a href="https://anitagraser.com/2022/10/01/visualizing-iot-time-series-with-qgis-mobilitydb/">the previous post</a>, we — creatively ;-) — used <a href="https://mobilitydb.com">MobilityDB</a> to visualize stationary IOT sensor measurements. </p>

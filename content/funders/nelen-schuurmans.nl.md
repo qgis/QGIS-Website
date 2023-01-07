@@ -1,4 +1,3 @@
-
 ---
 level: "Medium"
 title: "Nelen & Schuurmans"
