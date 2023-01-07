@@ -30,7 +30,7 @@ jobs:
     - name: '🗞️ Fetch Feed Content'
       run: |
         cd ./qgis-hugo
-        ./fetch_feeds.py
+        pipenv run ./fetch_feeds.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
