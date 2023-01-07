@@ -25,7 +25,7 @@ jobs:
         cache: "pipenv"
 
     - name: '🚸Install Python deps'
-      run: pip install pipenv && pipenv install rss-parser atoma dateutil && pipenv sync --bare
+      run: pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
 
     - name: '🗞️ Fetch Feed Content'
       run: |
