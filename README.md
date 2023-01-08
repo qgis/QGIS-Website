@@ -146,6 +146,12 @@ The site will automatically refresh any page you have open if you edit it and sa
 
 Test files are located in ```test/e2e```.
 
+You need to have these extras installed:
+
+```
+pip install pytest pytest-base-url playwright
+```
+
 These tests exist to make sure code changes to this repository do not break how the site currently functions.
 They are intended to run on each commit to verify the site is working in expected order.
 
@@ -155,10 +161,43 @@ Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/test/Rea
 
 1. Navigate to the e2e test folder which is located in ```test/e2e```.
 2. Create or edit a test file for the page or section you want to test and get coding, test files should start with the name test follow by the file name, example ```test_about_page.py```.
+
+### Running tests in VSCode
+
+We can enable built in pytest support in VSCode. 
+
+These should be set up by default when you open this project under VSCode, but if needed you can configure the VSCode settings to set the base-url (search for @id:python.testing.pytestArgs Testing in the settings filter):
+
+![Testing options](img/hugo-tests.png)
+
+Start the live debug server:
+
+![Debug Server](img/hugo-debug.png)
+
+Now open the test explorer and run your tests:
+
+![Testing Run](img/hugo-tests-run.png)
+
+Any failed tests will be marked in red as shown above.
+
+### Running from the command line:
+
+```
+pytest --base-url=http://localhost:1313
+```
+
+### Running tests in docker
+
 3. Start the hugo server in a terminal window ```make dev```.
 4. Run test in terminal window ```make tests```
 
 > **Note:** To run the tests as described above, you need to have docker installed on your machine and the appropriate permissions to run docker commands.
+
+### Running as github action
+
+There is a github action that will run the tests automatically on PR submission, merge.
+
+See ```.github/workflows/e2e.yml```
 
 ## Search Functionality 
 The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](https://markjs.io/).
