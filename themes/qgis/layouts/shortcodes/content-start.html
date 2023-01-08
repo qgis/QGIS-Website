@@ -1,0 +1,17 @@
+{{ $classes := .Get "classes" | default ""}}
+{{ $header := .Get "header" | default ""}}
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<section class="section container is-fluid {{ $animationClasses }}">
+    <div class="content {{ $classes }}">
+
+
+           
+
+
+
+
+
