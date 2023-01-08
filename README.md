@@ -402,6 +402,24 @@ Name | Description
 text | A short piece of (optional) text to display in the card footer
 link | A URL that the user can access by clicking on the link
 
+## Content
+
+If you are writing plain markdown, you can also wrap it in content shortcodes (instead of the card shortcode described above) like this:
+
+```
+{{< content-start classes="notification is-light" >}}
+
+# Markdown header
+
+Markdown content
+
+{{< content-end >}}
+```
+
+Name | Description
+-----|-------------
+classes | (Optional) Any bulma classes you want to have applied to the internal content section of the card.
+
 ## Info Bar
 
 The ```info-bar``` shortcode is a way to put a infographic style element onto your page:
