@@ -11,7 +11,6 @@
             {{ if eq .Params.source "flickr" }}
                 {{/* printf "Showcase %s" .Params.showcase */}}
                 {{ if eq .Params.showcase $showcaseType }}
-
                     {{ $count := add ($.Scratch.Get "counter") 1 }}
                     {{ $.Scratch.Set "counter" $count }}
                         {{ if eq ( mod $count 3 ) 1 }}

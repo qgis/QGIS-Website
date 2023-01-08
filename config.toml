@@ -71,8 +71,8 @@ githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
 
 [[menu.main]]
-  name = "Downloads"
-  url = "/downloads/"
+  name = "Download"
+  url = "/download/download/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = -110 # Sets the menu order 
 
@@ -103,27 +103,6 @@ githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
   url = "/roadmap/roadmap/"
   weight = -110
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-
-[[menu.main]]
-  parent = "Downloads"
-  name = "Windows"
-  url = "/downloads/windows/"
-  weight = -120
-  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
-
-[[menu.main]]
-  parent = "Downloads"
-  name = "macOS"
-  url = "/downloads/macos/"
-  weight = -120  
-  # pre = "<i class='fa-brands fa-apple mr-1'></i>"
-
-[[menu.main]]
-  parent = "Downloads"
-  name = "Linux"
-  url = "/downloads/linux/"
-  weight = -120  
-  # pre = "<i class='fa-brands fa-linux mr-1'></i>"
 
 [[menu.documentation]]
   name = "Documentation"

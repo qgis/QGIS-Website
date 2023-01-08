@@ -26,20 +26,22 @@ def expected_rss_feeds() -> List[
         },
     ]
 
-
 @fixture
 def expected_dropdown_items(base_url) -> List[Dict[str, str]]:
     return [
-        {"href": "/downloads/linux/", "title": "Linux"},
-        {"href": "/downloads/macos/", "title": "macOS"},
-        {"href": "/downloads/windows", "title": "Windows"},
+        # Note: Order is significant
+        #{"href": "/download/linux/", "title": "Linux"},
+        #{"href": "/download/macos/", "title": "macOS"},
+        #{"href": "/download/windows/", "title": "Windows"},
+        {"href": "/documentation/overview/", "title": "Documentation"},
+        {"href": "/showcase/overview/", "title": "Showcase"},
+        {"href": "/roadmap/roadmap/", "title": "Roadmap"},
+        
     ]
-
 
 @fixture
 def expected_dropdowns() -> List[Dict[str, str]]:
-    return [{"title": "Downloads", "href": ""}]
-
+    return [{"title": "Resources", "href": ""}]
 
 @fixture
 def expect_nav_items() -> List[Dict[str, str]]:
@@ -50,7 +52,7 @@ def expect_nav_items() -> List[Dict[str, str]]:
     page.goto("/")
     nav = page.locator(".navbar")
     expect(nav).to_be_visible()
-    dropdown_nav_items = page.locator(".navbar-start > * > a")
+    dropdown_nav_items = page.locator(".navbar-start > * > a") 
     count = dropdown_nav_items.count()
     for i in range(count):
         expect(dropdown_nav_items.nth(i)).to_contain_text(
