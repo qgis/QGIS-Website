@@ -35,8 +35,7 @@ def expected_dropdown_items(base_url) -> List[Dict[str, str]]:
         #{"href": "/download/windows/", "title": "Windows"},
         {"href": "/documentation/overview/", "title": "Documentation"},
         {"href": "/showcase/overview/", "title": "Showcase"},
-        {"href": "/roadmap/roadmap/", "title": "Roadmap"},
-        
+        {"href": "/roadmap/roadmap/", "title": "Roadmap"},   
     ]
 
 @fixture
