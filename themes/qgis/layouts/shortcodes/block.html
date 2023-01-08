@@ -67,16 +67,15 @@
     <div class="tile mx-0 mt-0 is-gapless is-ancestor">
         {{ if eq $imageLeft true }}
         {{/* see assets/css/block.css */}}
-        <div class="tile is-2 is-image-block is-min-height" 
+        <div class="tile is-4 is-image-block is-min-height" 
              style="{{ $imageStyle | safeCSS }}"> 
+             <h1 class="title">{{ $title }}</h1>
         </div>
         {{ end }}
         <div class="tile is-parent is-vertical py-3 px-3 ">
             <div class="tile is-child">
-                <p class="title is-spaced {{ $textAlign }}">
-                    {{ $title }}</p>
-                <p class="subtitle {{ $textAlign }}">
-                    {{ $subtitle }}</p>
+                <h2 class="subtitle {{ $textAlign }}">
+                    {{ $subtitle }}</h2>
                 </div>
             {{ if $showFooter }}
             <div class="tile content">

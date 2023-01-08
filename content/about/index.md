@@ -15,7 +15,7 @@ heroImage: "img/banners/banner3.png"
 {{< block
     title="QGIS.org charter"
     subtitle="QGIS.org is governed by a transparent charter that describes the structure of the association."
-    image="charter.png"
+    image="block-wide-1.png"
     image-side="cover"
     link-text="View our charter"
     link="https://qgis.org"
