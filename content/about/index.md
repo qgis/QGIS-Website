@@ -20,7 +20,7 @@ heroImage: "img/banners/banner3.png"
     link-text="View our charter"
     link="https://qgis.org"
     class="is-warning"
->}}{{< /block >}}
+>}}Testing read more....{{< /block >}}
 
 {{< block
     title="Code of Conduct"
@@ -30,7 +30,9 @@ heroImage: "img/banners/banner3.png"
     link="https://qgis.org"
     image-side="right"
     class="is-danger"
->}}{{< /block >}}
+>}}
+Testing read more....
+{{< /block >}}
 
 {{< block
     title="Diversity Statement"
@@ -40,7 +42,7 @@ heroImage: "img/banners/banner3.png"
     link="https://qgis.org"
     image-side="left"
     class="is-info"
->}}{{< /block >}}
+>}}Testing read more....{{< /block >}}
 
 {{< block
     title="Environmental policy"

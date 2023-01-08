@@ -7,5 +7,15 @@
 }
 
 .is-min-height {
-    min-height: 200px;
+    min-height: 300px;
 }
+
+.is-vcentered {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center; /* used this for multiple child */
+    align-items: center; /* if an only child */
+}
+
+.hidden { visibility: hidden; }
+
