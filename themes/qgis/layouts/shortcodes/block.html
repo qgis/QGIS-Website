@@ -58,7 +58,7 @@
    Some css below   from in assets/css/block.css
 */}}
 <section class="section">
-    <div class="container has-ribbon-bottom is-min-height {{ $animationClasses }} {{ $imageCoverCss }}"
+    <div class="container has-ribbon-bottom has-second-ribbon-bottom has-second-ribbon-left is-min-height {{ $animationClasses }} {{ $imageCoverCss }}"
         {{ if eq $blockSide "cover" }}style="{{ $imageStyle | safeCSS }}"{{ end }}> 
         <div class="columns is-multiline">
             {{/*  ----------------   Left Block (optional)  ---------  */}}   
@@ -98,22 +98,22 @@
             {{ end }}
 
             {{/*  ----------------  Lastly show any ribbons (optional)   ---------  */}}
-            {{ if isset .Params "link" }}
-            <div class="ribbon is-medium notification is-info">
-                <a href="{{ $link }}">
-                    {{ $linkText }}
-                </a>
-            </div>            
-            {{ end }} 
-
             {{ if len .Inner }}
-            <div data-content-block-id="{{ $uniqueId }}" class="ribbon is-medium notification {{ $class }} pulldown-toggle">
+            <div data-content-block-id="{{ $uniqueId }}" class="ribbon is-medium notification {{ $class }} pulldown-toggle is-clickable">
                 Read more ...
                 <span class="icon">
                     <i class="fas fa-angle-down" aria-hidden="true"></i>
                 </span>
             </div>
             {{ end }}
+
+            {{ if isset .Params "link" }}
+            <div class="second-ribbon is-medium notification is-info is-clickable">
+                <a href="{{ $link }}">
+                    {{ $linkText }}
+                </a>
+            </div>            
+            {{ end }} 
         </div>
     </div>
 </section>
