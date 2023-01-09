@@ -12,53 +12,50 @@ heroImage: "img/banners/banner4.png"
     image="community-picture.png"
     link-text="Find a group near you"
     link="https://qgis.org"
+    sub-block-side="right"
 >}}{{< /block >}}
 
 {{< block
     title="Events"
     subtitle="From virtual events to face-to-face meetings, we aim to bring people together. During these events users share their innovations and show how to solve real world problems using QGIS"
-    image="community-meeting.png"
+    image=""
     link-text="Join our events"
     link="https://qgis.org"
+    sub-block-side="left"
 >}}{{< /block >}}
 
 {{< block
     title="Chats"
     subtitle="Choose your favourite way to communicate with your fellow QGIS users. We have a Facebook Group, Telegram Chat, Revolt, Matrix Rooms, IRC, email discussion lists and many other ways to share expertise and find solutions."
-    image="map1.png"
+    image=""
     link-text="Join the conversation"
     link="https://qgis.org"
+    sub-block-side="right"
 >}}{{< /block >}}
 
 {{< block
     title="News and Updates"
     subtitle="Mailing lists are a cornerstone of our project communication, reaching a wide audience and providing a huge searchable archive of knowledge on all things QGIS related."
-    text-color="white"
-    background-color="teal"
-    image="map2.png"
+    image=""
     link-text="Sign up for our mailing lists"
     link="https://qgis.org"
-    markdown-style="light"
+    sub-block-side="left"
 >}}{{< /block >}}
 
 {{< block
     title="Teams"
     subtitle="Our teams of volunteers and professionals work on a variety of topics, from writing code, to authoring documentation, to creating new design resources and answering user questions."
-    text-color="white"
-    background-color="teal"
-    image="teams.png"
+    image=""
     link-text="Meet our teams"
     link="https://qgis.org"
-    markdown-style="light"
+    sub-block-side="right"
 >}}{{< /block >}}
 
 {{< block
     title="Service Providers"
     subtitle="If you use QGIS in a professional setting, there are over 60 companies worldwide offering professional support and development services."
-    text-color="white"
-    background-color="teal"
-    image="tim-presenting.png"
+    image=""
     link-text="Find a provider"
     link="https://qgis.org"
-    markdown-style="light"
+    sub-block-side="left"
 >}}{{< /block >}}
