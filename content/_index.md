@@ -24,40 +24,40 @@ heroImage: "img/banners/banner4.png"
 {{< block
     title="Create publication ready maps"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print."
-    text-color="black"
-    background-color="white"
     image="island1.png"
+    sub-block-side="right"
+    class="is-info"    
 >}}{{< /block >}}
 
 {{< block
     title="Manage and analyse geospatial data"
     subtitle="Keep full control of your data and leverage state-of-the art analysis tools, all seamlessly integrated with our toolbox."
-    text-color="white"
-    background-color="green"
-    image="island1.png"
+    image=""
+    sub-block-side="right"
+    class="is-success"    
 >}}{{< /block >}}
 
 {{< block
     title="Publish your work online"
     subtitle="Reach a global audience online with your amazing maps and spatial information products."
-    text-color="black"
-    background-color="white"
-    image="island1.png"
+    image=""
+    sub-block-side="right"
+    class="is-danger"    
 >}}{{< /block >}}
 
 {{< block
     title="Work with spatial data in the field"
     subtitle="Harness the power of your mobile device to collect and view your spatial information in the field and sync it back seamlessly."
-    text-color="white"
-    background-color="green"
-    image="qonphone.png"
+    image=""
+    sub-block-side="right"
+    class="is-info"    
 >}}{{< /block >}}
 
 {{< block
     title="Supported by a top technical team"
     subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals."
-    text-color="white"
-    background-color="green"
-    image="qonphone.png"
+    image=""
+    sub-block-side="right"
+    class="is-primary"    
 >}}{{< /block >}}
 
