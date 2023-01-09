@@ -25,7 +25,7 @@ heroImage: "img/banners/banner3.png"
 {{< block
     title="Code of Conduct"
     subtitle="Our values guide us."
-    image="code-of-conduct.png"
+    image=""
     link-text="Read our code of conduct"
     link="https://qgis.org"
     sub-block-side="right"
@@ -37,7 +37,7 @@ Testing read more....
 {{< block
     title="Diversity Statement"
     subtitle="To build the best GIS for everyone, we foster a team that is as diverse as our global user base."
-    image="community-picture.png"
+    image=""
     link-text="Read our diversity statement"
     link="https://qgis.org"
     sub-block-side="left"
@@ -57,7 +57,7 @@ Testing read more....
 {{< block
     title="Annual general meetings"
     subtitle="Our annual meetings (AGMs) were established in 2016 and essential to running the association."
-    image="annual-general-meetings.png"
+    image=""
     link-text="View past AGMs"
     link="https://qgis.org"
     sub-block-side="left"
@@ -67,7 +67,7 @@ Testing read more....
 {{< block
     title="Financial reports"
     subtitle="We transparently use the funds of the association to further the development of QGIS."
-    image="map2.png"
+    image=""
     link-text="View our reports"
     link="https://qgis.org"
     sub-block-side="right"
@@ -77,7 +77,7 @@ Testing read more....
 {{< block
     title="Citing QGIS in academic work"
     subtitle="Everyone is free to use QGIS in every way they want. If you use QGIS for data analysis or map design in academic work, we encourage you to cite the QGIS project."
-    image="map3.png"
+    image=""
     link-text="Learn more"
     link="https://qgis.org"
     sub-block-side="left"

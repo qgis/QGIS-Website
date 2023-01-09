@@ -97,7 +97,7 @@
 
     {{/*  ----------------  Lastly show any ribbons (optional)   ---------  */}}
     {{ if isset .Params "link" }}
-    <div class="ribbon is-medium is-info">
+    <div class="ribbon is-medium notification is-info">
         <a href="{{ $link }}">
             {{ $linkText }}
         </a>
@@ -105,7 +105,7 @@
     {{ end }} 
 
     {{ if len .Inner }}
-    <div data-content-block-id="{{ $uniqueId }}" class="notification {{ $class }} pulldown-toggle">
+    <div data-content-block-id="{{ $uniqueId }}" class="ribbon is-medium notification {{ $class }} pulldown-toggle">
         Read more ...
         <span class="icon">
             <i class="fas fa-angle-down" aria-hidden="true"></i>
