@@ -3,9 +3,10 @@
 {{ if eq $animate "true" }}
 {{ $animationClasses := "animation-element animate-from-left" }}
 {{ end}}
-<section class="section container is-fluid {{ $animationClasses }} notification is-info">    
+{{ $uniqueId := substr (md5 (printf "%s" .Params)) 0 16 }}
+<section id="{{ $uniqueId }}" class="section is-fluid {{ $animationClasses }} notification is-info">    
     <div class="tile is-ancestor">
-        <div class="tile is-parent is-horizontal">
+        <div class="tile is-parent">
             <div class="tile is-child">
                 <nav class="level is-fullwidth">
                     {{- range (seq 0 (sub (len .Params) 1) ) }}

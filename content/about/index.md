@@ -16,7 +16,7 @@ heroImage: "img/banners/banner3.png"
     title="QGIS.org charter"
     subtitle="QGIS.org is governed by a transparent charter that describes the structure of the association."
     image="block-wide-1.png"
-    image-side="cover"
+    sub-block-side="cover"
     link-text="View our charter"
     link="https://qgis.org"
     class="is-warning"
@@ -28,7 +28,7 @@ heroImage: "img/banners/banner3.png"
     image="code-of-conduct.png"
     link-text="Read our code of conduct"
     link="https://qgis.org"
-    image-side="right"
+    sub-block-side="right"
     class="is-danger"
 >}}
 Testing read more....
@@ -40,7 +40,7 @@ Testing read more....
     image="community-picture.png"
     link-text="Read our diversity statement"
     link="https://qgis.org"
-    image-side="left"
+    sub-block-side="left"
     class="is-info"
 >}}Testing read more....{{< /block >}}
 
@@ -50,7 +50,7 @@ Testing read more....
     image="environmental-policy.png"
     link-text="Explore our policies"
     link="https://qgis.org"
-    image-side="right"
+    sub-block-side="right"
     class="is-warning"
 >}}{{< /block >}}
 
@@ -60,7 +60,7 @@ Testing read more....
     image="annual-general-meetings.png"
     link-text="View past AGMs"
     link="https://qgis.org"
-    image-side="left"
+    sub-block-side="left"
     class="is-primary"
 >}}{{< /block >}}
 
@@ -70,8 +70,8 @@ Testing read more....
     image="map2.png"
     link-text="View our reports"
     link="https://qgis.org"
-    image-side="right"
-    class="is-warning"
+    sub-block-side="right"
+    class="is-danger"
 >}}{{< /block >}}
 
 {{< block
@@ -80,13 +80,13 @@ Testing read more....
     image="map3.png"
     link-text="Learn more"
     link="https://qgis.org"
-    image-side="left"
+    sub-block-side="left"
     class="is-success"    
 >}}{{< /block >}}
 
 {{< block
    link-text="Learn more about the QGIS Value Proposition"
    link="https://qgis.org"
-   image-side="right"
+   sub-block-side="right"
    class="is-danger"   
 >}}{{< /block >}}

@@ -2,13 +2,13 @@
 {{ $linkText := .Get "link-text" | default "" }}
 {{ $link := .Get "link" | default "" }}
 {{ $class := .Get "class" | default "is-primary" }}
-{{ $image := .Get "image" | default "" }}
+{{ $image := .Get "image" | default false }}
 {{/* Take care below := for instantiate then = for assignment
       see https://discourse.gohugo.io/t/how-to-use-variables/9100/6 */}}
 {{ $imageResource := "" }}
 {{ $imageResized := "" }}
 {{ $imagePath := "" }}
-{{ if ne $image "" }}
+{{ if ne $image false }}
     {{/* printf "Image: %s" $image */}}
     {{ $imageResource = .Page.Resources.GetMatch $image }}
     {{/* printf "Image Resource : %s" $imageResource.Name */}}
@@ -33,113 +33,85 @@
 {{ $animationClasses := "animation-element animate-from-left" }}
 {{ end}}
 
-{{/* Calculate image placement (left, right or cover)
-    Cover fills the whole background of the block. */}}
+{{/* Calculate subblock placement (left, right or none)
+    none fills the whole background of the block. */}}
 {{ $imageStyle := printf "background-image: url(%s);" $imagePath }}
-{{ $imageSide := .Get "image-side" | default "" }}
-{{ $imageLeft := false }}
-{{ $imageRight := false }}
-{{ $imageCover := false }}
+{{ $blockSide := .Get "sub-block-side" | default "none" }}
+
 {{ $imageCoverCss := "" }}
 {{ $textAlign := ""}}
 {{/* Take care below := for instantiate then = for assignment
       see https://discourse.gohugo.io/t/how-to-use-variables/9100/6 */}}
-{{ if eq $imageSide "left" }}
-    {{ $imageLeft = true }}
+{{ if eq $blockSide "left" }}
     {{ $textAlign = "has-text-left"}}
 {{ end }}
-{{ if eq $imageSide "right" }}
-    {{ $imageRight = true }}
+{{ if eq $blockSide "right" }}
     {{ $textAlign = "has-text-right"}}
 {{ end }}
-{{ if eq $imageSide "cover" }}
-    {{ $imageCover = true }}
+{{ if eq $blockSide "cover" }}
     {{ $imageCoverCss = "is-image-block" }}
     {{ $textAlign = "has-text-centered"}}
 {{ end }}
-
+{{/* for toggling more content area */}}
+{{ $uniqueId := substr (md5 (printf "%s" .Inner)) 0 16 }}
 {{/*
-   container centers content horizontally 
-   is-min-height in assets/css/block.css
+   Some css below   from in assets/css/block.css
 */}}
-<section class="container px-0 py-0 is-fluid {{ $animationClasses }} notification {{ $class }} {{ $imageCoverCss }} is-min-height"
-    {{ if eq $imageCover true }}style="{{ $imageStyle | safeCSS }}"{{ end }}> 
-    <div class="tile mx-0 mt-0 is-gapless is-ancestor">
-        {{/*  ----------------   Left Image Block (optional) ---------  */}}
-        {{/*  ----------------   Left Image Block (optional) ---------  */}}
-        {{/*  ----------------   Left Image Block (optional) ---------  */}}
-        {{ if eq $imageLeft true }}
-        {{/* see assets/css/block.css */}}
-        <div class="tile is-4 is-vcentered is-image-block is-min-height has-ribbon-left has-ribbon-bottom" 
-             style="{{ $imageStyle | safeCSS }}"> 
-             <h1 class="title">{{ $title }}</h1>
-             {{ if isset .Params "link" }}
-             <div class="ribbon is-primary is-medium">
-                 <a href="{{ $link }}">
-                     {{ $linkText }}
-                 </a>
-             </div>            
-             {{ end }}{{/* link set */}}                 
-        </div>   
-        {{ end }}{{/* imageLeft */}}
-        {{/*  ----------------   Central Block   ---------  */}}
-        {{/*  ----------------   Central Block   ---------  */}}
-        {{/*  ----------------   Central Block   ---------  */}}
-        <div class="tile is-parent is-vertical py-3 px-3 {{ if or (eq $imageLeft true) (eq $imageRight true) }}has-ribbon-left{{ end }} has-ribbon-bottom">
-            <div class="tile is-vcentered container is-child  {{ $textAlign }}">
-                {{ if eq $imageCover true }}
-                <h1 class="title is-1">{{ $title }}</h1>
-                {{ end }}
-                <h2 class="subtitle is-3">{{ $subtitle }}</h2>                 
-            </div>
-            {{ if eq $imageRight false }}{{/* if right image is NOT enabled we can show the read more link bottom right of this tile if needed */}}
-            {{ if len .Inner }}
-            <div class="ribbon is-medium is-info pulldown-content">
-                Read more ...
-                <span class="icon">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-            </div>
-            {{ end }}{{/* has inner */}}
-            {{ end }}{{/* imageLeft */}}    
-
-            {{ if eq $imageLeft false }}{{/* if left image is NOT enabled we can show the link bottom left of this tile if needed */}}
-            {{ if isset .Params "link" }}
-            <div class="ribbon is-medium is-primary">
-                <a href="{{ $link }}">
-                    {{ $linkText }}
-                </a>
-            </div>            
-            {{ end }}{{/* link set */}}               
-            {{ end }}{{/* imageLeft */}}
-        </div>
-        {{/*  ----------------   Right Image Block (optional)   ---------  */}}
-        {{/*  ----------------   Right Image Block (optional)   ---------  */}}
-        {{/*  ----------------   Right Image Block (optional)   ---------  */}}        
-        {{ if eq $imageRight true }}
-        {{/* see assets/css/block.css */}}
-        <div class="tile is-4 is-vcentered is-image-block is-min-height has-ribbon-bottom {{ if eq $imageLeft false }}has-ribbon-left{{ end }}" 
-             style="{{ $imageStyle | safeCSS }}"> 
-             <h1 class="title">{{ $title }}</h1>
-             {{ if len .Inner }}
-             <div class="ribbon is-medium is-primary pulldown-content">
-                 Read more ...
-                 <span class="icon">
-                     <i class="fas fa-angle-down" aria-hidden="true"></i>
-                 </span>
-             </div>
-             {{ end }}{{/* has inner */}}
-        </div>
-        {{ end }}{{/* imageRight */}}
+<section class="columns is-multiline py-6 {{ $animationClasses }} {{ $imageCoverCss }} has-ribbon-bottom is-min-height"
+    {{ if eq $blockSide "cover" }}style="{{ $imageStyle | safeCSS }}"{{ end }}> 
+    {{/*  ----------------   Left Block (optional)  ---------  */}}   
+    {{ if eq $blockSide "left" }} 
+    <div class="column is-4 is-vcentered notification {{ $class }} {{ $imageCoverCss}} is-min-height"
+        {{ if eq $blockSide "left" }}
+        style="{{ $imageStyle | safeCSS }}"
+        {{ end }}>
+        <h1 class="title">{{ $title }}</h1>            
     </div>
-    {{/*  ----------------   Footer Block (optional)   ---------  */}}
-    {{/*  ----------------   Footer Block (optional)   ---------  */}}
-    {{/*  ----------------   Footer Block (optional)   ---------  */}}       
+    {{ end }}
+    {{/*  ----------------   Central Block (mandatory)  ---------  */}}
+    <div class="column is-vcentered notification {{ $class }} {{ if eq $blockSide "cover" }}is-12 {{ if ne $image false }}is-transparent {{ end }}{{ else }}is-8{{ end }} is-min-height">
+        <div class="container ">
+            {{ if eq $blockSide "cover" }}
+            <h1 class="title is-1">{{ $title }}</h1>
+            {{ end }}
+            <h2 class="subtitle is-3">{{ $subtitle }}</h2>                 
+        </div>
+    </div>
+    {{/*  ----------------   Right Image Block (optional)  ---------  */}}       
+    {{ if eq $blockSide "right" }}    
+    <div class="column is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-min-height"
+        {{ if eq $blockSide "right" }}
+        style="{{ $imageStyle | safeCSS }}"
+        {{ end }}>
+             <h1 class="title">{{ $title }}</h1>
+        </div>
+    {{ end }}
+    </div>
+    {{/*  ----------------   Footer Block (optional)   ---------  */}}      
     {{ if $showFooter }}
-    <div class="tile content footer hidden">
+    <div id="{{ $uniqueId}}" class="column is-12 content footer is-hidden">
         <div class="content py-2">
             {{ $innerMarkup }}
         </div>
     </div>
-    {{ end }}{{/* showFooter */}}    
+    {{ end }}
+    {{/*  ----------------  Lastly show any ribbons (optional)   ---------  */}}
+           
+    {{ if isset .Params "link" }}
+    <div class="ribbon is-medium is-info">
+        <a href="{{ $link }}">
+            {{ $linkText }}
+        </a>
+    </div>            
+    {{ end }} 
+
+    {{ if len .Inner }}
+    <div data-content-block-id="{{ $uniqueId }}" class="ribbon is-medium is-info pulldown-toggle">
+        Read more ...
+        <span class="icon">
+            <i class="fas fa-angle-down" aria-hidden="true"></i>
+        </span>
+    </div>
+    {{ end }}{{/* has inner */}}
+
 </section>
