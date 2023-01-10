@@ -8,6 +8,9 @@
 {{ $imageResource := "" }}
 {{ $imageResized := "" }}
 {{ $imagePath := "" }}
+{{ if eq $image "" }}
+{{ $image = false }}
+{{ end }}
 {{ if ne $image false }}
     {{/* printf "Image: %s" $image */}}
     {{ $imageResource = .Page.Resources.GetMatch $image }}
@@ -58,62 +61,66 @@
    Some css below   from in assets/css/block.css
 */}}
 <section class="section">
-    <div class="container has-ribbon-bottom has-second-ribbon-bottom has-second-ribbon-left is-min-height {{ $animationClasses }} {{ $imageCoverCss }}"
+    <div class="container notification py-0 px-0 {{ $class }} {{ $animationClasses }} {{ $imageCoverCss }}"
         {{ if eq $blockSide "cover" }}style="{{ $imageStyle | safeCSS }}"{{ end }}> 
-        <div class="columns is-multiline">
-            {{/*  ----------------   Left Block (optional)  ---------  */}}   
-            {{ if eq $blockSide "left" }}    
-            <div class="column has-text-right is-justify-content-flex-end is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-min-height"
-                {{ if ne $image "" }}
-                style="{{ $imageStyle | safeCSS }}"
-                {{ end }}>
-                <h1 class="title">{{ $title }}</h1>
-            </div>
-            {{ end }}
-            {{/*  ----------------   Central Block (mandatory)  ---------  */}}
-            <div class="column is-vcentered notification {{ $class }} {{ if eq $blockSide "cover" }}is-12 {{ if ne $image false }}is-transparent {{ end }}{{ else }}is-8{{ end }} is-min-height">
-                <div class="container {{ $textAlign }}">
-                    {{ if eq $blockSide "cover" }}
-                    <h1 class="title is-1">{{ $title }}</h1>
+        <div class="columns is-multiline is-gapless">
+            <div class="column is-12">
+                <div class="columns">
+                    {{/*  ----------------   Left Block (optional)  ---------  */}}   
+                    {{ if eq $blockSide "left" }}    
+                    <div class="column has-text-right is-justify-content-flex-end is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex"{{/* is flex ensures cols have the same height */}}
+                        {{ if ne $image false }}
+                        style="{{ $imageStyle | safeCSS }}"
+                        {{ end }}>
+                        <h1 class="title">{{ $title }}</h1>
+                    </div>
                     {{ end }}
-                    <h2 class="subtitle is-3">{{ $subtitle }}</h2>                 
+                    {{/*  ----------------   Central Block (mandatory)  ---------  */}}
+                    <div class="column is-vcentered is-min-height {{ if eq $blockSide "cover" }}is-12 {{ if ne $image false }}is-transparent {{ end }}{{ else }}is-8{{ end }} is-flex">{{/* is flex ensures cols have the same height */}}
+                        <div class="container {{ $textAlign }}">
+                            {{ if eq $blockSide "cover" }}
+                            <h1 class="title is-1">{{ $title }}</h1>
+                            {{ end }}
+                            <h2 class="subtitle is-3">{{ $subtitle }}</h2>                 
+                        </div>
+                    </div>
+                    {{/*  ----------------   Right Image Block (optional)  ---------  */}}       
+                    {{ if eq $blockSide "right" }}    
+                    <div class="column has-text-left is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex" {{/* is flex ensures cols have the same height */}}
+                        {{ if ne $image false }}
+                        style="{{ $imageStyle | safeCSS }}"
+                        {{ end }}>
+                        <h1 class="title">{{ $title }}</h1>
+                    </div>
+                    {{ end }}
                 </div>
             </div>
-            {{/*  ----------------   Right Image Block (optional)  ---------  */}}       
-            {{ if eq $blockSide "right" }}    
-            <div class="column has-text-left is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-min-height"
-                {{ if ne $image "" }}
-                style="{{ $imageStyle | safeCSS }}"
-                {{ end }}>
-                <h1 class="title">{{ $title }}</h1>
-            </div>
-            {{ end }}
-            {{/*  ----------------   Footer Block (optional)   ---------  */}}      
-            {{ if $showFooter }}
-            <div id="{{ $uniqueId}}" class="column is-12 content footer is-hidden">
-                <div class="content py-2">
+        </div>
+        {{/*  ----------------   Footer Block   ---------  */}}      
+        {{ if $showFooter }}
+        <div class="column is-12">
+            <div class="container box is-transparent has-ribbon has-second-ribbon has-second-ribbon-left">
+                    {{/*  ----------------  Link more ribbon (optional)   ---------  */}}
+                {{ if isset .Params "link" }}
+                <div class="second-ribbon is-medium is-info is-clickable">
+                    <a href="{{ $link }}" target="_blank">
+                        {{ $linkText }}
+                    </a>
+                </div>            
+                {{ end }}           
+                {{/*  ----------------  Read more ribbon (optional)   ---------  */}}
+                {{ if len .Inner }}
+                <div data-contentid="{{ $uniqueId }}" class="ribbon is-medium {{ $class }} pulldown-toggle is-clickable">
+                    <span class="icon">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                </div>
+                {{ end }}
+                <div id="{{ $uniqueId}}" class="box is-transparent content py-2 pt-6 notification is-hidden {{ $class }}">
                     {{ $innerMarkup }}
-                </div>
+                </div>                    
             </div>
-            {{ end }}
-
-            {{/*  ----------------  Lastly show any ribbons (optional)   ---------  */}}
-            {{ if len .Inner }}
-            <div data-content-block-id="{{ $uniqueId }}" class="ribbon is-medium notification {{ $class }} pulldown-toggle is-clickable">
-                Read more ...
-                <span class="icon">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                </span>
-            </div>
-            {{ end }}
-
-            {{ if isset .Params "link" }}
-            <div class="second-ribbon is-medium notification is-info is-clickable">
-                <a href="{{ $link }}">
-                    {{ $linkText }}
-                </a>
-            </div>            
-            {{ end }} 
         </div>
     </div>
+    {{ end }}
 </section>

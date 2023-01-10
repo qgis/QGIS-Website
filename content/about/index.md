@@ -13,7 +13,7 @@ heroImage: "img/banners/banner3.png"
     "450k+:Daily users" >}}
 
 {{< block
-    title="QGIS.org charter"
+    title="QGIS.org charter."
     subtitle="QGIS.org is governed by a transparent charter that describes the structure of the association."
     image="block-wide-1.png"
     sub-block-side="cover"
@@ -23,7 +23,7 @@ heroImage: "img/banners/banner3.png"
 >}}Testing read more....{{< /block >}}
 
 {{< block
-    title="Code of Conduct"
+    title="Code of Conduct."
     subtitle="Our values guide us."
     image=""
     link-text="Read our code of conduct"
@@ -35,17 +35,21 @@ Testing read more....
 {{< /block >}}
 
 {{< block
-    title="Diversity Statement"
+    title="Diversity Statement."
     subtitle="To build the best GIS for everyone, we foster a team that is as diverse as our global user base."
     image=""
     link-text="Read our diversity statement"
     link="https://qgis.org"
     sub-block-side="left"
     class="is-info"
->}}Testing read more....{{< /block >}}
+>}}
+
+No matter how you identify yourself or how others perceive you: we welcome you. We welcome contributions from everyone as long as they interact constructively with our community.
+
+{{< /block >}}
 
 {{< block
-    title="Environmental policy"
+    title="Environmental policy."
     subtitle="We are committed to and encourage sustainable behaviour and decisions in all aspects, including infrastructure choices and event organization."
     image="environmental-policy.png"
     link-text="Explore our policies"
@@ -55,7 +59,7 @@ Testing read more....
 >}}{{< /block >}}
 
 {{< block
-    title="Annual general meetings"
+    title="Annual general meetings."
     subtitle="Our annual meetings (AGMs) were established in 2016 and essential to running the association."
     image=""
     link-text="View past AGMs"
@@ -65,7 +69,7 @@ Testing read more....
 >}}{{< /block >}}
 
 {{< block
-    title="Financial reports"
+    title="Financial reports."
     subtitle="We transparently use the funds of the association to further the development of QGIS."
     image=""
     link-text="View our reports"
@@ -75,7 +79,7 @@ Testing read more....
 >}}{{< /block >}}
 
 {{< block
-    title="Citing QGIS in academic work"
+    title="Citing QGIS in academic work."
     subtitle="Everyone is free to use QGIS in every way they want. If you use QGIS for data analysis or map design in academic work, we encourage you to cite the QGIS project."
     image=""
     link-text="Learn more"
@@ -85,7 +89,9 @@ Testing read more....
 >}}{{< /block >}}
 
 {{< block
-   link-text="Learn more about the QGIS Value Proposition"
+   title="Value proposition."
+   subtitle="QGIS depends on the support of its users. In return we deliver value to you, helping you deploy a feature-rich GIS platform to your users."
+   link-text="Learn more"
    link="https://qgis.org"
    sub-block-side="right"
    class="is-danger"   
