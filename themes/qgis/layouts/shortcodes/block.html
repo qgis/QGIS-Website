@@ -63,7 +63,7 @@
         <div class="columns is-multiline">
             {{/*  ----------------   Left Block (optional)  ---------  */}}   
             {{ if eq $blockSide "left" }}    
-            <div class="column has-text-right is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-min-height"
+            <div class="column has-text-right is-justify-content-flex-end is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-min-height"
                 {{ if ne $image "" }}
                 style="{{ $imageStyle | safeCSS }}"
                 {{ end }}>
