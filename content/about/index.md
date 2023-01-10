@@ -18,7 +18,7 @@ heroImage: "img/banners/banner3.png"
     image="block-wide-1.png"
     sub-block-side="cover"
     link-text="View our charter"
-    link="https://qgis.org"
+    link="/charter/"
     class="is-warning"
 >}}Testing read more....{{< /block >}}
 
