@@ -1,14 +1,14 @@
 {{ $text := .Get "text" | default ""}}        
 {{ $link := .Get "link" | default ""}}   
 
-            </article>
-            <article>
+            </div>
+            <div>
                 {{ if not (eq $link "") }}
                 <footer class="card-footer">
                     <a class="card-footer-item button" href="{{ $link }}">{{ $text }}</a>
                 </footer>      
                 {{ end }}
-            </article>
+            </div>
         </div>
     </div>
 </section>

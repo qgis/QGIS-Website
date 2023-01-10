@@ -45,5 +45,8 @@
         "test"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "playwright.env": {
+        "baseURL": "http://localhost:1313"
+    }
 }

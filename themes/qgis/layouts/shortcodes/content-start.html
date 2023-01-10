@@ -5,14 +5,11 @@
 {{ if eq $animate "true" }}
 {{ $animationClasses := "animation-element animate-from-left" }}
 {{ end}}
+
 <section class="section {{ $animationClasses }}">
-    <div class="container is-min-height">
-        <div class="column is-12">
-            <div class="notification is-primary">
-                <p class="title has-text-centered">
-                    {{ $header }}</p>
-            </div>
-            <div class="notification is-primary">
+    <div class="container is-min-height {{ $classes }}">
+
+           
 
 
 
