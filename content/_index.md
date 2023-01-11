@@ -16,30 +16,16 @@ heroSize: "is-large"
 >}}{{< /block >}}
 
 {{< block
-    title="Edit."
-    subtitle="Simple and sophisticated tools for efficiently capturing geospatial data."
+    title="Share."
+    subtitle="Generate high quality, print ready paper, digital and web maps and reports. "
     sub-block-side="left"
     class="is-danger"    
 >}}{{< /block >}}
 
-{{< block
-    title="Process & Analyze."
-    subtitle="Powerful tools for geospatial computational analysis at your fingertips."
-    sub-block-side="left"
-    class="is-success"    
->}}{{< /block >}}
 
 {{< block
-    title="Sharing."
-    subtitle="Reach a global audience online with your amazing maps and spatial information products. Powered by QGIS."
+    title="Participate."
+    subtitle="With a level playing field, everyone from individuals to multinational organisations can use and participate in the evolution of QGIS."
     sub-block-side="left"
     class="is-warning"    
 >}}{{< /block >}}
-
-{{< block
-    title="Behind the scenes."
-    subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals."
-    sub-block-side="left"
-    class="is-primary"    
->}}{{< /block >}}
-

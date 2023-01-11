@@ -104,6 +104,13 @@ githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
   weight = -110
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
+[[menu.main]]
+  parent = "Resources"
+  name = "License"
+  url = "/license/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
 [[menu.documentation]]
   name = "Documentation"
   url = "/documentation/overview/"
