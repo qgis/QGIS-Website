@@ -514,6 +514,24 @@ illustrated above.
 
 You can add as many steps as you like to the bar, and they will be distributed evenly accross the page.
 
+## Example using them together
+
+```
+{{< image-bar
+    "Cartography:map1.png"
+    "Analysis:map1.png"
+    "Print:map1.png" >}}
+
+{{< info-icons
+    "Linux:fa-brands fa-linux"
+    "macOS:fa-brands fa-apple"
+    "Windows:fa-brands fa-windows" >}}
+
+{{< info-bar
+    "20+:years"
+    "100%:open source"
+    "450k+:Daily users" >}}
+```
 
 ## 🩳 Customising CSS
 
