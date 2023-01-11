@@ -1,4 +1,6 @@
-<section class="hero is-info is-medium has-bg-img"
+{{/* see https://bulma.io/documentation/layout/hero/ for size options */}}
+{{ $size := .Params.HeroSize | default "is-medium" }}
+<section class="hero is-info {{ $size }} has-bg-img"
 {{ if ( .Params.HeroImage ) }} 
 style="background: url('{{ absURL .Params.HeroImage | safeCSS }}');
        background-position: center;

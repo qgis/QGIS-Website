@@ -7,55 +7,37 @@ heroImage: "img/banners/banner4.png"
 ---
 
 {{< block
-    title="User groups"
+    title="The QGIS Charter."
+    subtitle="The QGIS Charter guides our project's open governance and community."
+    image=""
+    link="charter/"
+    link-text="View Charter"
+    sub-block-side="left"
+>}}{{< /block >}}
+
+{{< block
+    title="QGIS Users."
     subtitle="Our user groups represent the global community of QGIS users and enthusiasts. With different local groups all over the world as well as virtual groups there is a community for you!"
-    image="community-picture.png"
-    link-text="Find a group near you"
-    link="https://qgis.org"
-    sub-block-side="right"
->}}{{< /block >}}
-
-{{< block
-    title="Events"
-    subtitle="From virtual events to face-to-face meetings, we aim to bring people together. During these events users share their innovations and show how to solve real world problems using QGIS"
-    image=""
-    link-text="Join our events"
-    link="https://qgis.org"
     sub-block-side="left"
 >}}{{< /block >}}
 
 {{< block
-    title="Chats"
-    subtitle="Choose your favourite way to communicate with your fellow QGIS users. We have a Facebook Group, Telegram Chat, Revolt, Matrix Rooms, IRC, email discussion lists and many other ways to share expertise and find solutions."
+    title="Our Contributors."
+    subtitle="QGIS is an open project and anyone may contribute if they abide by our community guidelines. By doing this we are democratizing access to the technology underlying QGIS."
     image=""
-    link-text="Join the conversation"
-    link="https://qgis.org"
-    sub-block-side="right"
->}}{{< /block >}}
-
-{{< block
-    title="News and Updates"
-    subtitle="Mailing lists are a cornerstone of our project communication, reaching a wide audience and providing a huge searchable archive of knowledge on all things QGIS related."
-    image=""
-    link-text="Sign up for our mailing lists"
-    link="https://qgis.org"
     sub-block-side="left"
 >}}{{< /block >}}
 
 {{< block
-    title="Teams"
-    subtitle="Our teams of volunteers and professionals work on a variety of topics, from writing code, to authoring documentation, to creating new design resources and answering user questions."
+    title="QGIS Supporters."
+    subtitle="Developing a free-to-use world-notch GIS platform costs money, time and effort. Our supporters make it possible to amplify the efforts of our community."
     image=""
-    link-text="Meet our teams"
-    link="https://qgis.org"
-    sub-block-side="right"
+    sub-block-side="left"
 >}}{{< /block >}}
+
 
 {{< block
     title="Service Providers"
     subtitle="If you use QGIS in a professional setting, there are over 60 companies worldwide offering professional support and development services."
-    image=""
-    link-text="Find a provider"
-    link="https://qgis.org"
     sub-block-side="left"
 >}}{{< /block >}}
