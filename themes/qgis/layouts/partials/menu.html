@@ -18,19 +18,19 @@
                 {{ $menuItemUrl := .URL }}
                 {{ if .HasChildren }}
             <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
-                <a class="navbar-link is-size-7">
+                <a class="navbar-link is-size-5">
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>
                 <div class="navbar-dropdown">
                     {{ range sort .Children "Weight"}}
-                    <a class="navbar-item is-size-7{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                    <a class="navbar-item is-size-5{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                         {{ .Pre }}<span>{{ .Name }}</span>
                     </a>
                     {{ end }}    
                 </div>
             </div>
                 {{ else }}
-                <a class="navbar-item is-size-7{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                <a class="navbar-item is-size-5{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
                     {{ .Pre }}<span>{{ .Name }}</span>
                 </a>                
                 {{ end }}
@@ -45,7 +45,7 @@
                     </form>
                 </div>
                 <div class="buttons is-medium">
-                    <a class="button is-primary is-size-7" href="{{ "donate/" | absURL }}">
+                    <a class="button is-primary is-size-5" href="{{ "donate/" | absURL }}">
                         <strong>Donate!</strong>
                     </a>
                 </div>
