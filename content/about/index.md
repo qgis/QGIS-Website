@@ -1,7 +1,7 @@
 ---
 type: "page"
-title: "QGIS"
-subtitle: "About QGIS."
+title: "About QGIS"
+subtitle: ""
 draft: false
 heroImage: "img/banners/banner4.png"
 ---
