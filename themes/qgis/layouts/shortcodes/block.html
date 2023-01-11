@@ -48,18 +48,18 @@
 {{ $blockSide := .Get "sub-block-side" | default "none" }}
 
 {{ $imageCoverCss := "" }}
-{{ $textAlign := ""}}
+{{ $textAlign := "is-justify-content-space-evenly has-text-centered"}}
 {{/* Take care below := for instantiate then = for assignment
       see https://discourse.gohugo.io/t/how-to-use-variables/9100/6 */}}
 {{ if eq $blockSide "left" }}
-    {{ $textAlign = "has-text-left"}}
+    {{ $textAlign = "is-justify-content-space-evenly has-text-centered"}}
 {{ end }}
 {{ if eq $blockSide "right" }}
-    {{ $textAlign = "has-text-right"}}
+    {{ $textAlign = "is-justify-content-space-evenly has-text-centered"}}
 {{ end }}
 {{ if eq $blockSide "cover" }}
     {{ $imageCoverCss = "is-image-block" }}
-    {{ $textAlign = "has-text-centered"}}
+    {{ $textAlign = "is-justify-content-space-evenly has-text-centered"}}
 {{ end }}
 {{/* for toggling more content area */}}
 {{ $uniqueId := substr (md5 (printf "%s" .Inner)) 0 16 }}
@@ -74,7 +74,7 @@
                 <div class="columns">
                     {{/*  ----------------   Left Block (optional)  ---------  */}}   
                     {{ if eq $blockSide "left" }}    
-                    <div class="column has-text-right is-justify-content-flex-end is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex"{{/* is flex ensures cols have the same height */}}
+                    <div class="column {{ $textAlign }} is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex"{{/* is flex ensures cols have the same height */}}
                         {{ if ne $image false }}
                         style="{{ $imageStyle | safeCSS }}"
                         {{ end }}>
@@ -92,7 +92,7 @@
                     </div>
                     {{/*  ----------------   Right Image Block (optional)  ---------  */}}       
                     {{ if eq $blockSide "right" }}    
-                    <div class="column has-text-left is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex" {{/* is flex ensures cols have the same height */}}
+                    <div class="column {{ $textAlign }} is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex" {{/* is flex ensures cols have the same height */}}
                         {{ if ne $image false }}
                         style="{{ $imageStyle | safeCSS }}"
                         {{ end }}>

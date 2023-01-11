@@ -40,8 +40,10 @@ In parallel to these directed funding efforts, we developed programmes for suppo
 
 Many of our users migrate to QGIS from proprietary alternatives which are financially unsustainable to use within their organisations. We celebrate the fact that we are able to open doors for those needing spatial tools such as QGIS which would have otherwise been closed. However, we also ask you to share some of the value gains that you realise from moving to QGIS with us. The funds you provide to us are used to the direct benefit of all users, who get to enjoy a more feature rich, stable and well documented set of QGIS tools. This ‘value for value’ model helps to ensure the long term sustainability and prosperity of the QGIS project. With nearly half a million daily active users, your contributions can make a huge impact to the lives of many people. The project has received in-kind and financial contributions from many well known international organisations around the world, whom we thank deeply. We invite you to join the ever growing number of organisations who see value in the work we do and share value back to us in the form of financial contributions to support our work.
 
-- [Fund our work →]()
-- [View our financial reports →]()
+{{< button-bar 
+    "fa-solid fa-file-pdf:View our License:/license/"
+    "fa-solid fa-money-bill:Annual Financial Reports:/reports/"
+>}}
 
 # Governance
 

@@ -18,7 +18,7 @@ staticDir = ['static']
 [params]
 # Brand colours:
 primary1 = "#55828b"
-primary2 = "#395c6b"
+primary2 = "#a7cecb"
 primary3 = "#395c6b"
 primary4 = "#285238"
 primary5 = "#589632"
@@ -101,6 +101,13 @@ githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
   parent = "Resources"
   name = "Roadmap"
   url = "/roadmap/roadmap/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
+[[menu.main]]
+  parent = "Resources"
+  name = "License"
+  url = "/license/"
   weight = -110
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 

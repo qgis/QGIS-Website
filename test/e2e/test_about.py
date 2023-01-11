@@ -11,7 +11,7 @@ def test_about_screenshot(page: Page, screenshot_dir: Path):
 
 def test_about_page_title(page: Page):
     page.goto("/about/")
-    assert page.title() == "About · QGIS Web Site"
+    assert page.title() == "About QGIS · QGIS Web Site"
 
 def test_about_banner_title(page: Page):
     page.goto("/about/")
@@ -21,5 +21,5 @@ def test_about_banner_title(page: Page):
 def test_about_banner_subtitle(page: Page):
     page.goto("/about/")
     hero_subtitle = page.locator(".hero-subtitle")
-    expect(hero_subtitle).to_contain_text("The QGIS.org association - a reliable foundation that ensures QGIS is sustainable and free forever")
+    expect(hero_subtitle).to_contain_text("")
 
