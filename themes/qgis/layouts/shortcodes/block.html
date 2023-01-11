@@ -1,6 +1,12 @@
 {{ $innerMarkup := .Inner | default "" | markdownify }}
 {{ $linkText := .Get "link-text" | default "" }}
 {{ $link := .Get "link" | default "" }}
+{{ $linkIsLocal := true }}
+{{ if ne $link "" }}
+    {{ if hasPrefix $link "http" }}
+        {{ $linkIsLocal = false }}
+    {{ end }}
+{{ end }}
 {{ $class := .Get "class" | default "is-primary" }}
 {{ $image := .Get "image" | default false }}
 {{/* Take care below := for instantiate then = for assignment
@@ -103,8 +109,12 @@
                     {{/*  ----------------  Link more ribbon (optional)   ---------  */}}
                 {{ if isset .Params "link" }}
                 <div class="second-ribbon is-medium is-info is-clickable">
+                    {{ if eq $linkIsLocal false }}
                     <a href="{{ $link }}" target="_blank">
-                        {{ $linkText }}
+                    {{ else }}
+                    <a href="{{ .Site.BaseURL }}{{ $link }}">
+                    {{ end }}
+                    {{ $linkText }}
                     </a>
                 </div>            
                 {{ end }}           
