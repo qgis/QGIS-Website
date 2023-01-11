@@ -78,16 +78,16 @@
                         {{ if ne $image false }}
                         style="{{ $imageStyle | safeCSS }}"
                         {{ end }}>
-                        <h1 class="title">{{ $title }}</h1>
+                        <h1 class="title is-2 is-uppercase">{{ $title }}</h1>
                     </div>
                     {{ end }}
                     {{/*  ----------------   Central Block (mandatory)  ---------  */}}
                     <div class="column is-vcentered is-min-height {{ if eq $blockSide "cover" }}is-12 {{ if ne $image false }}is-transparent {{ end }}{{ else }}is-8{{ end }} is-flex">{{/* is flex ensures cols have the same height */}}
                         <div class="container {{ $textAlign }}">
                             {{ if eq $blockSide "cover" }}
-                            <h1 class="title is-1">{{ $title }}</h1>
+                            <h1 class="title is-2">{{ $title }}</h1>
                             {{ end }}
-                            <h2 class="subtitle is-3">{{ $subtitle }}</h2>                 
+                            <h2 class="subtitle is-4">{{ $subtitle }}</h2>                 
                         </div>
                     </div>
                     {{/*  ----------------   Right Image Block (optional)  ---------  */}}       
@@ -96,7 +96,7 @@
                         {{ if ne $image false }}
                         style="{{ $imageStyle | safeCSS }}"
                         {{ end }}>
-                        <h1 class="title">{{ $title }}</h1>
+                        <h1 class="title is-2 is-uppercase">{{ $title }}</h1>
                     </div>
                     {{ end }}
                 </div>
