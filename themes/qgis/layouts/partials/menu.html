@@ -1,56 +1,57 @@
+{{ $fontSize := .Site.Params.menuFontClass }}
 {{ $currentPage := . }}
 {{ $pageUrl:= $currentPage.RelPermalink }}
 <section>
-<nav class="is-highest navbar is-fixed-top is-semi-transparent" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="{{ absURL "/" }}">
-            <img alt="Logo" src="{{ absURL "img/qgis-logo.png" }}" width="85" height="28">
-        </a>
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-        </a>
-    </div>
-    <div id="menu" class="navbar-menu">
-        <div class="navbar-end">
-            {{ range sort .Site.Menus.main "Weight"}}
-                {{ $menuItemUrl := .URL }}
-                {{ if .HasChildren }}
-            <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
-                <a class="navbar-link is-size-5">
-                    {{ .Pre }}<span>{{ .Name }}</span>
-                </a>
-                <div class="navbar-dropdown">
-                    {{ range sort .Children "Weight"}}
-                    <a class="navbar-item is-size-5{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+    <nav class="is-highest navbar is-fixed-top is-semi-transparent" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ absURL "/" }}">
+                <img alt="Logo" src="{{ absURL "img/qgis-logo.png" }}" width="85" height="28">
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="menu" class="navbar-menu">
+            <div class="navbar-end">
+                {{ range sort .Site.Menus.main "Weight"}}
+                    {{ $menuItemUrl := .URL }}
+                    {{ if .HasChildren }}
+                <div class="navbar-item has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
+                    <a class="navbar-link {{ $fontSize }}">
                         {{ .Pre }}<span>{{ .Name }}</span>
                     </a>
-                    {{ end }}    
+                    <div class="navbar-dropdown">
+                        {{ range sort .Children "Weight"}}
+                        <a class="navbar-item {{ $fontSize }}{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                            {{ .Pre }}<span>{{ .Name }}</span>
+                        </a>
+                        {{ end }}    
+                    </div>
                 </div>
-            </div>
-                {{ else }}
-                <a class="navbar-item is-size-5{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
-                    {{ .Pre }}<span>{{ .Name }}</span>
-                </a>                
+                    {{ else }}
+                    <a class="navbar-item {{ $fontSize }}{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                        {{ .Pre }}<span>{{ .Name }}</span>
+                    </a>                
+                    {{ end }}
                 {{ end }}
-            {{ end }}
-            <div class="navbar-item">
-                <div class="control has-icons-right mr-2">
-                    <form action="{{ "search/" | absURL }}" method="GET">
-                        <input class="input is-medium" type="search" id="search-query" name="q" placeholder="Search">
-                        <span class="icon is-right">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </span>
-                    </form>
-                </div>
-                <div class="buttons is-medium">
-                    <a class="button is-primary is-size-5" href="{{ "donate/" | absURL }}">
-                        <strong>Donate!</strong>
-                    </a>
+                <div class="navbar-item">
+                    <div class="control has-icons-right mr-2">
+                        <form action="{{ "search/" | absURL }}" method="GET">
+                            <input class="input is-medium" type="search" id="search-query" name="q" placeholder="Search">
+                            <span class="icon is-right">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                        </form>
+                    </div>
+                    <div class="buttons is-medium">
+                        <a class="button is-primary {{ $fontSize }}" href="{{ "donate/" | absURL }}">
+                            <strong>Donate!</strong>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</nav>
+    </nav>
 </section>
