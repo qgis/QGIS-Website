@@ -36,15 +36,19 @@
                     </a>                
                     {{ end }}
                 {{ end }}
+
                 <div class="navbar-item">
-                    <div class="control has-icons-right mr-2">
+                    <div id="search-control" class="control has-icons-right is-hidden search-control">
                         <form action="{{ "search/" | absURL }}" method="GET">
-                            <input class="input is-medium" type="search" id="search-query" name="q" placeholder="Search">
+                            <input class="input is-small" type="search" id="search-query" name="q" placeholder="Search">
                             <span class="icon is-right">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </span>
                         </form>
                     </div>
+                    <i class="fa-solid fa-magnifying-glass search-icon is-clickable"></i>
+                </div>
+                <div class="navbar-item">
                     <div class="buttons is-medium">
                         <a class="button is-primary {{ $fontSize }}" href="{{ "donate/" | absURL }}">
                             <strong>Donate!</strong>
