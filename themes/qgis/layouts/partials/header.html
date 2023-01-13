@@ -74,6 +74,7 @@
         minify | 
         fingerprint }}
     <link href="{{ $fontcss.RelPermalink }}" integrity=”{{ $fontcss.Data.Integrity }}” rel="stylesheet">    
+    
     {{/* Copy Font Awesome Resources into the public dir - this only gets 
         done by hugo command but not hugo runserver */}}
     {{ $fa1 := (resources.Get "webfonts/fa-brands-400.ttf").Publish }}

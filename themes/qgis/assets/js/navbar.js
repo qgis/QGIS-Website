@@ -1,3 +1,21 @@
+// first handler for hide / show of search box when magnifying glass is clicked
+document.addEventListener('DOMContentLoaded', () => {
+  const $toggles = Array.prototype.slice.call(
+      document.querySelectorAll('.search-icon'), 0);
+
+    $toggles.forEach( el => {
+        el.addEventListener('click', () => {
+            console.log("Search icon clicked");
+          // Get the target from the "data-target" attribute
+          const $target = document.getElementById("search-control");
+          // Toggle the search control
+          el.classList.toggle('is-hidden');
+          $target.classList.toggle('is-hidden');
+    })
+  })
+});
+
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // Get all "navbar-burger" elements
