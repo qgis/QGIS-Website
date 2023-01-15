@@ -1,22 +1,46 @@
 {{ partial "header.html" }}
 {{ partial "banner.html" . }}
-{{ range .Paginator.Pages }}
 
+<section>
+    <div class="container notification is-light">
+        {{/* Get the title in the _index.md frontmatter in the parent folder */}}
+        <h1 class="title">{{ .Title }}</h1>
+        <div class="list">
+        {{ range .Paginator.Pages }}
+            <div class="list-item">
+                <div class="list-item-image">
+                    <figure class="image is-64x64">
+                    {{ $thumbnail := .Resources.GetMatch .Params.thumbnail }}
+                    {{ if ne $thumbnail nil }}
+                    {{ $thumbnail = $thumbnail.RelPermalink }}
+                    {{ else }}
+                    {{ $thumbnail = "" }}
+                    {{ end }}
+                        <img class="is-rounded" src="{{ $thumbail }}">
+                    </figure>
+                </div>
+            
+                <div class="list-item-content">
+                    <div class="list-item-title">{{ .Title }}{{ with .Params.author }} 
+                        By <strong class="post-author">{{ . }}</strong>
+                        {{ end }} 
+                    </div>
 
-{{ .Date.Format "02 Jan 2006, 15:04" }}
-<a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
-{{ with .Params.author }}
-By <strong class="post-author">{{ . }}</strong>
-{{ end }}
-{{ if isset .Params "categories" }}
-under
-{{ range .Params.categories }}
-<a class="post-category-{{ . }}" href='{{ ( printf "categories/%s" . ) | absURL }}'>{{ . }}</a>
-{{ end }}
-{{ end }}
-{{ .Content }}
+                    <div class="list-item-description">{{ .Date.Format "02 Jan 2006, 15:04" }}
+                        <a href="{{ .Permalink }}" class="post-title">{{ .Title }}</a>
+                        {{ if isset .Params "categories" }}
+                            under
+                            {{ range .Params.categories }}
+                            <a class="post-category-{{ . }}" href='{{ ( printf "categories/%s" . ) | absURL }}'>{{ . }}</a>
+                            {{ end }}
+                        {{ end }}               
+                    </div>
+                </div>
+            </div>
+        {{ end }}
+        </div>  
+    </div>
+</section>
 
-
-{{ end }}
 {{ partial "pagination.html" }}
 {{ partial "footer.html" }}

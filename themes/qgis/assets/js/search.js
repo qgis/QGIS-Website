@@ -83,7 +83,7 @@ function populateResults(results) {
         var tags = ""
         if (value.item.tags) {
             value.item.tags.forEach(function (element) {
-                tags = tags + "<a href='{{ "tags/" | absURL }}" + element + "'>" + "#" + element + "</a> "
+                tags = tags + "<a class='tag is-primary' href='{{ "tags/" | absURL }}" + element + "'>" + "#" + element + "</a> "
             });
         }
 
