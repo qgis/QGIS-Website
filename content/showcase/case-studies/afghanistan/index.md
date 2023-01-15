@@ -1,9 +1,18 @@
 ---
 type: "showcase/case-studies"
+date: "2015-04-01"
 title: "Danish Demining Group using QGIS in Afghanistan"
+description: "The Danish Demining Group (DDG), the specialised mine action unit of the
+Danish Refugee Council, has been working in Afghanistan since 1999,
+undertaking humanitarian mineclearance, unexploded ordnance (UXO)
+disposal and mine risk education."
 draft: false
-heroImage: "img/banners/banner1.png"
 author: "Edward Crowther"
+categories: ['Case studies']
+# Generic words only, no upper case, no spaces (use hyphens to separate words rather)
+tags: ['humanitarian', 'afghanistan', 'case-study', 'showcase']
+# Broken urls below will mean the article is not listed in list templates
+heroImage: ""
 thumbnail: "afghanistan3.jpg"
 ---
 
