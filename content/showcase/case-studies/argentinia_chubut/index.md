@@ -1,4 +1,22 @@
-# QGIS at high school \-\-- the urban green spaces in Rada Tilly coastal town, Chubut province, Argentina
+---
+type: "showcase/case-studies"
+date: "2011-09-01"
+title: "QGIS at high school: the urban green spaces in Rada Tilly coastal town, Chubut province, Argentina"
+description: "In our region, Argentinean Patagonia, we have very few references about
+the application of GIS in High School for the construction of geographical knowledge 
+as a mean to face territorial and environmental issues. "
+draft: false
+author: "Prof. Alberto Vázquez & Mauro Novara "
+categories: ['Case studies']
+# Generic words only, no upper case, no spaces (use hyphens to separate words rather)
+tags: ['education', 'argentina', 'case-study', 'showcase']
+# Broken urls below will mean the article is not listed in list templates
+heroImage: ""
+thumbnail: "argentinia_thumbnail.png"
+---
+
+{{< content-start classes="notification is-light" >}}
+
 
 ## Introduction
 
@@ -54,7 +72,7 @@ To generate the project we continue the following methodology:
 -   Results presentation through thematic cartography.
 
 ![Attribute table of "blocks" vector
-layer](./images/argentinia_chubut1.png){.align-right}
+layer](argentinia_chubut1.png)
 
 ## Conclusion
 
@@ -94,18 +112,18 @@ Proprietary software that we have being using.
 This article was contributed in September 2011 by Mauro Novara and
 Alberto Vázquez from Argentina.
 
-![Mauro Novara](./images/argentinia_chubutaut1.png){.align-left
-height="200px"}
+![Mauro Novara](argentinia_chubutaut1.png)
 
 Mauro Novara is Professor of Territorial Information Systems course.
 Lecturer and researcher of National University of Patagonia San Juan
 Bosco, Faculty of Humanities and Social Sciences. Geography Department.
 Comodoro Rivadavia, Chubut Province, Argentina.
 
-![Alberto Vázquez](./images/argentinia_chubutaut2.png){.align-left
-height="200px"}
+![Alberto Vázquez](argentinia_chubutaut2.png)
 
 Prof. Alberto Vázquez is a graduate teaching assistant of Territorial
 Information Systems course. National University of Patagonia San Juan
 Bosco, Faculty of Humanities and Social Sciences. Geography Department.
 Comodoro Rivadavia, Chubut Province, Argentina.
+
+{{< content-end >}}
