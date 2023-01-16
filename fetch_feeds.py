@@ -5,6 +5,7 @@
 # (c) Tim Sutton, 2023
 
 import requests
+import argparse
 import json
 import shutil
 import os
@@ -168,16 +169,28 @@ showcase: "{showcase_type}"
             print(f"Writing: {image_filename}")
         del response   
 
+
+parser = argparse.ArgumentParser(description='Import items from various feeds.')
+parser.add_argument(
+    "--flickr", 
+    help="Import flickr items (defaults to no)",
+    default="no",
+    type=bool, 
+    required=False)
+parser.parse_args()
+args = parser.parse_args()
+
 fetch_funders()
 
-fetch_flickr_screenshots(
-    showcase_type="map",
-    rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
-)
-fetch_flickr_screenshots(
-    showcase_type="screenshot",
-    rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
-)
+if args.flickr:
+    fetch_flickr_screenshots(
+        showcase_type="map",
+        rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
+    )
+    fetch_flickr_screenshots(
+        showcase_type="screenshot",
+        rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
+    )
 
 # Planet blog aggregator
 fetch_blog_feed(

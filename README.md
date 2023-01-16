@@ -221,6 +221,18 @@ There is a github action that will run the tests automatically on PR submission,
 
 See ```.github/workflows/e2e.yml```
 
+## Content Harvesting
+
+You can harvest data from various feeds using the fetch_feeds.py script. By default
+flickr harvesting is disabled in this script so run it manually and review the content
+to see if it is suitable for publication on our site.
+
+```bash
+./fetch_feeds.py --flickr=yes
+```
+
+This script is run nightly as a github action (see .github/workflows/update-feeds.yml).
+
 ## Search Functionality 
 The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](https://markjs.io/).
 
