@@ -43,6 +43,6 @@ heroImage: "img/banners/banner4.png"
     subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals."
     image=""
     sub-block-side="left"
-    class="is-primary"    
+    class="is-primary"   
 >}}{{< /block >}}
 
