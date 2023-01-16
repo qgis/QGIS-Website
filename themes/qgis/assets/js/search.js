@@ -83,20 +83,28 @@ function populateResults(results) {
         var tags = ""
         if (value.item.tags) {
             value.item.tags.forEach(function (element) {
-                tags = tags + "<a class='tag is-primary' href='{{ "tags/" | absURL }}" + element + "'>" + "#" + element + "</a> "
+                tags = tags + "<span class='tag is-warning'><a href='{{ "tags/" | absURL }}" + element + "'>" + element + "</a></span>"
             });
         }
+        var categories = ""
+        if (value.item.categories) {
+            value.item.categories.forEach(function (element) {
+                categories = categories + "<span class='tag is-danger'><a href='{{ "categories/" | absURL }}" + element + "'>" + element + "</a></span>"
+            });
+        }        
 
         var output = render(templateDefinition, {
             key: key,
             title: value.item.title,
             link: value.item.permalink,
             tags: tags,
-            categories: value.item.categories,
+            categories: categories,
             snippet: snippet
         });
-        searchResults.innerHTML += output;
-
+        if (output.includes(searchQuery))
+        {
+            searchResults.innerHTML += output;
+        }
         snippetHighlights.forEach(function (snipvalue, snipkey) {
             var instance = new Mark(document.getElementById('summary-' + key));
             instance.mark(snipvalue);

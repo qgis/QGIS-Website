@@ -47,13 +47,15 @@
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $animatecss := resources.Get "css/animate.css" }}
     {{ $blockcss := resources.Get "css/block.css" }}
+    {{ $overridescss := resources.Get "css/bulma-overrides.css" }}
+    
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $overridescss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" integrity=”{{ $css.Data.Integrity }}”  rel="stylesheet">
 
     {{/* We can compile SASS too... */}}
-    {{ $sass := resources.Get "sass/style.scss" }}
-    {{ $style := $sass | resources.ToCSS | resources.Fingerprint }}
+    {{ $sass := resources.Get "sass/style.sass" }}
+    {{ $style := $sass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
     <link href="{{ $style.RelPermalink }}" integrity=”{{ $style.Data.Integrity }}” rel="stylesheet">    
 
     {{/* 
