@@ -1,4 +1,21 @@
-# Quantarctica: An Antarctic GIS package
+---
+type: "showcase/case-studies"
+date: "2015-04-01"
+title: "Quantarctica: An Antarctic GIS package"
+description: "Quantarctica is a collection of Antarctic geographical datasets, such as
+base maps, satellite imagery, glaciology and geophysics data from data
+centres around the world, prepared for viewing in QGIS."
+draft: false
+author: "Anders Skoglund and Kenichi Matsuoka"
+categories: ['Case studies']
+# Generic words only, no upper case, no spaces (use hyphens to separate words rather)
+tags: ['data', 'antarctic', 'case-study', 'showcase']
+# Broken urls below will mean the article is not listed in list templates
+heroImage: ""
+thumbnail: "quantarctica3.jpg"
+---
+
+{{< content-start classes="notification is-light" >}}
 
 Quantarctica is a collection of Antarctic geographical datasets, such as
 base maps, satellite imagery, glaciology and geophysics data from data
@@ -10,12 +27,12 @@ freely available for non-commercial purposes.
 ## About the project
 
 ![Screenshot from Quantarctica, showing one of the subglacial lakes
-datasets.](./images/quantarctica.jpg){.align-right}
+datasets.](quantarctica.jpg)
 
 Quantarctica (QGIS + Antarctica) was first developed for in-house use at
 the Norwegian Polar Institute, as a tool for our glaciologists. There
 was a need for a low or no cost complete GIS with essential datasets
---\-- ready-to-use, easy-to-use, functionality rich and with offline
+ready-to-use, easy-to-use, functionality rich and with offline
 capabilities. QGIS seemed to be a perfect choice of GIS for the
 collected datasets.
 
@@ -29,7 +46,7 @@ their daily work.
 
 ![Quantarctica is also useful when navigating on the Antarctic ice
 shelves thanks to the GPS tracking capabilities within
-QGIS.](./images/quantarctica2.jpg){.align-left width="100.0%"}
+QGIS.](quantarctica2.jpg)
 
 Since Quantarctica first came in use by our glaciologists three years
 ago, there has been many requests in the research community outside the
@@ -41,7 +58,7 @@ field testing, and adding new relevant datasets, Quantarctica version
 Quantarctica is to be all about community effort. With contributions we
 aim to expand with data from other disciplines, such as oceanography,
 atmospheric sciences, geology and biology, and hope and believe that
-this tool can be useful for the Antarctic community --\-- as a complete
+this tool can be useful for the Antarctic community as a complete
 Antarctic GIS package.
 
 ## Links
@@ -57,3 +74,5 @@ Matsuoka](./images/quantarctica3.jpg){.align-left height="220px"}
 This article was contributed in August 2013 by Anders Skoglund (left),
 GIS specialist, and Kenichi Matsuoka (right), glaciologist, both at the
 Norwegian Polar Institute.
+
+{{< content-end >}}

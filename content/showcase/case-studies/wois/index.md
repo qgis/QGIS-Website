@@ -1,4 +1,19 @@
-# Water Observation and Information System: Enabling the Use of Earth Observation Data for Integrated Water Resource Management in Africa
+---
+type: "showcase/case-studies"
+date: "2015-04-01"
+title: "Water Observation and Information System"
+description: "Enabling the Use of Earth Observation Data for Integrated Water Resource Management in Africa"
+draft: false
+author: "Radoslaw Guzinski"
+categories: ['Case studies']
+# Generic words only, no upper case, no spaces (use hyphens to separate words rather)
+tags: ['water', 'case-study', 'showcase']
+# Broken urls below will mean the article is not listed in list templates
+heroImage: ""
+thumbnail: "wois.png"
+---
+
+{{< content-start classes="notification is-light" >}}
 
 The Water Observation and Information System (WOIS) is an open source
 software tool for monitoring, assessing and inventorying water resources
@@ -50,7 +65,7 @@ water resource management.
 
 ![The WOIS graphical user interface, including the embedded workflow
 library (center) and wizard-based processing workflow
-(right)](./images/africa_tiger1.jpg){.align-center}
+(right)](africa_tiger1.jpg)
 
 The operational and practical use of the WOIS to support integrated
 water resource management in Africa has been demonstrated via a series
@@ -66,7 +81,7 @@ time periods as requested by the users. In the final step, the workflows
 product outcomes are being evaluated in close dialogue with the users.
 
 ![Sentinel-1 flood monitoring of Caprivi flood plain,
-Namibia.](./images/africa_tiger2.jpg){.align-center}
+Namibia.](africa_tiger2.jpg)
 
 ## Conclusion
 

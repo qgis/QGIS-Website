@@ -1,9 +1,19 @@
 ---
-type: "page"
-title: "QGIS Case Studies"
-subtitle: "Danish Demining Group using QGIS in Afghanistan"
+type: "showcase/case-studies"
+date: "2015-04-01"
+title: "Danish Demining Group using QGIS in Afghanistan"
+description: "The Danish Demining Group (DDG), the specialised mine action unit of the
+Danish Refugee Council, has been working in Afghanistan since 1999,
+undertaking humanitarian mineclearance, unexploded ordnance (UXO)
+disposal and mine risk education."
 draft: false
-heroImage: "img/banners/banner1.png"
+author: "Edward Crowther"
+categories: ['Case studies']
+# Generic words only, no upper case, no spaces (use hyphens to separate words rather)
+tags: ['humanitarian', 'afghanistan', 'case-study', 'showcase']
+# Broken urls below will mean the article is not listed in list templates
+heroImage: ""
+thumbnail: "afghanistan3.jpg"
 ---
 
 {{< content-start classes="notification is-light" >}}
@@ -37,13 +47,13 @@ replace the expensive commercial softwares it has used in the past.
 The use of geospatial data is most useful in the planning and survey
 phases. In Afghanistan, security problems and rugged terrain mean that
 physical re-survey of known sites is not always easy. Instead, the use
-of a mixture of data \---- satellite or aerial photography underlays,
+of a mixture of data satellite or aerial photography underlays,
 digitized Soviet-era topographic maps, hazard shapefiles and digital
-elevation models --\-- allow DDG to get an idea of the location of a
+elevation models allow DDG to get an idea of the location of a
 minefield in relation to the terrain and surrounding natural and
 physical features before sending in a survey team. QGIS plugins add
 useful capabilities, like the ability to visualise terrain in 3D. The
-attached screenshot above --\-- made using the plugin Qgis2threejs \-\--
+attached screenshot above made using the plugin Qgis2threejs 
 shows an area just south of the Darulaman Palace in Kabul, with active
 minefields (along the ridgelines on the left) shown in red over a Soviet
 topographic raster layer combined with SRTM data. Minefields already
@@ -53,7 +63,7 @@ cleared show as light green.
 show as light green.](afghanistan2.jpg)
 
 Kabul University's campus is still contaminated with suspected hazardous
-areas \---- thought to comprise of air-dropped bombs or similar
+areas thought to comprise of air-dropped bombs or similar
 ordnance. While not posing any immediate threat to students or staff,
 these hazards will require eventual clearance to allow future
 construction within an educational institution vital to Afghanistan's
@@ -61,8 +71,8 @@ future development. The hazards are also notable as among the last
 significant remaining hazardous areas in the Kabul metropolitan area. By
 using QGIS to combine the hazard polygons from earlier surveys with
 highly accurate aerial photography provided by the USGS, discrepancies
-can be noted --\-- e.g. where the polygons do not match the shape of the
-buildings, as evident in the northwest part of the campus \-\-- which
+can be noted e.g. where the polygons do not match the shape of the
+buildings, as evident in the northwest part of the campus which
 can direct survey teams to places to first conduct a more accurate
 re-survey.
 
@@ -87,7 +97,7 @@ towards ridding Afghanistan of landmines and UXO.
 
 ## Author
 
-![Edward Crowther](./images/afghanistan3.jpg)
+![Edward Crowther](afghanistan3.jpg)
 
 Edward Crowther is Deputy Country Director at Danish Demining Group
 Afghanistan. Prior to joining DDG in Afghanistan, Edward worked with the

@@ -8,12 +8,14 @@
 
     <script id="search-result-template" type="text/x-js-template">
     <div id="summary-${key}">
-        <h3><a href="${link}">${title}</a></h3>
-        <p>${snippet}</p>
-        <p>
-            <small>
-                ${ isset tags }Tags: ${tags}<br>${ end }
-            </small>
+        <h3 class="is-success"><a href="${link}">${title}</a></h3>
+        <p class="box notification is-light"><a href="${link}">${snippet}</a></p>
+        <p class="has-text-right">
+            <a href="${link}">
+                <small class="tag">
+                    ${ isset tags }Tags: ${tags}<br>${ end }
+                </small>
+            </a>
         </p>
     </div>
     </script>

@@ -59,6 +59,13 @@ Technology | Notes | Who?
 ![GO](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) | Mainly Go templating via HUGO. | DEV
 ![Bash](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white) | A few utility scripts only. | DEV
 
+### Hugo Terminology Glossary
+
+Term | Description
+-----|---------------
+content | Top level folder for your user created web site content
+section | Any subfolder of content containing an ```_index.md``` file. e.g. the section ```content/about/``` would have within it a file called ```content/about/_index.md``` making it a section and resolvable at the URL ```https://your domain/about/```.
+nested section | As above, creating a subsection, for example ```content/about/staff/_index.md```. Note that if the subsection contains only a single page, it will will be navigable as a page at e.g. ```https://your domain/about/staff/```
 
 ## 🏺 Background & Design Philosopy
 
@@ -165,6 +172,21 @@ Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/test/Rea
 ### Running tests in VSCode
 
 We can enable built in pytest support in VSCode. 
+
+**Note:** Before running the tests, you need to install the dependencies listed in REQUIREMENTS.txt:
+
+```
+pip install -r REQUIREMENTS.txt
+```
+
+And playwright:
+
+```
+pip install playwright
+```
+
+
+
 
 These should be set up by default when you open this project under VSCode, but if needed you can configure the VSCode settings to set the base-url (search for @id:python.testing.pytestArgs Testing in the settings filter):
 
