@@ -8,7 +8,7 @@
         {{/* Get the title in the _index.md frontmatter in the parent folder */}}
         <h1 class="title">{{ .Title }}</h1>
         <div class="list">
-        {{ range .Paginator.Pages }}
+        {{ range (.Paginator 500 ).Pages }}
             <div class="list-item">
                 <div class="list-item-image">
                     <figure class="image is-64x64">
