@@ -6,9 +6,6 @@ draft: false
 heroImage: "img/banners/banner4.png"
 ---
 
-
-
-
 {{< card-start header="Download QGIS for Linux">}}
 
 ```curl https://qgis.org/install.sh | sh```
