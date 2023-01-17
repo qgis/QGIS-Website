@@ -30,8 +30,11 @@ if (inputBox !== null) {
         inputBox.value = searchQuery || "";
         executeSearch(searchQuery, false);
     } else {
-        document.getElementById('search-results').innerHTML = 
-        '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="{{ "tags/" | absURL }}">all tags</a>.</p>';
+        var results = document.getElementById('search-results')
+        if (results != null) {
+            results.innerHTML = 
+            '<p class="search-results-empty">Please enter a word or phrase above, or see <a href="{{ "tags/" | absURL }}">all tags</a>.</p>';
+        }
     }
 }
 
