@@ -510,11 +510,13 @@ The ```button-bar``` shortcode is a way to put a row of button link elements ont
 
 ```
 {{< button-bar 
-    "fa-brands fa-windows mr-1:Windows:/downloads/windows/"
-    "fa-brands fa-apple mr-1:macOS:/downloads/macos/"
-    "fa-brands fa-linux mr-1:Linux:/downloads/linux/"
+    "fa-brands fa-windows mr-1:Windows:downloads/windows/"
+    "fa-brands fa-apple mr-1:macOS:downloads/macos/"
+    "fa-brands fa-linux mr-1:Linux:downloads/linux/"
  >}}
 ```
+
+**Note:** We do not use a leading slash, only an ending slash.
 
 To use button-bar, pass it a collection of key-value triplets separated by ``:`` colons as
 illustrated above. 
