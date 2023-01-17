@@ -27,14 +27,20 @@
 // opening that url in the browser
 
 {{ $montserrat := resources.Get "webfonts/monserrat.woff2" }}
-@import url('{{ $montserrat.RelPermalink }}')
+@font-face
+    font-family: "'Montserrat', sans-serif"
+    src: url('{{ $montserrat.RelPermalink }}') format('opentype')
 
-{{ $worksans := resources.Get "webfonts/worksans.woff2"  }}
-@import url('{{ $worksans.RelPermalink }}')
+{{ $worksans := resources.Get "webfonts/worksans.woff2" }}
+@font-face
+    font-family: "'Work Sans', sans-serif"
+    src: url('{{ $worksans.RelPermalink }}') format('opentype')
 
 //Mainly just for testing if font choice changes work...
 {{ $sevillana := resources.Get "webfonts/sevillana.woff2"  }}
-@import url('{{ $sevillana.RelPermalink }}')
+@font-face
+    font-family: "'Sevillana', cursive"
+    src: url('{{ $sevillana.RelPermalink }}') format('opentype')
 
 // Set your brand colors
 $primary1: {{ .Param "primary1" }}
