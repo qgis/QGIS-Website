@@ -1,13 +1,13 @@
-{{ $classes := .Get "classes" | default ""}}
-{{ $header := .Get "header" | default ""}}
+{{ $classes := .Get "classes" | default "content" }}
+{{ $header := .Get "header" | default "" }}
 {{ $animationClasses := "" }}
 {{ $animate := .Get "animate" | default "false" }}
 {{ if eq $animate "true" }}
 {{ $animationClasses := "animation-element animate-from-left" }}
-{{ end}}
+{{ end }}
 
 <section class="section {{ $animationClasses }}">
-    <div class="container content is-min-height {{ $classes }}">
+    <div class="container {{ $classes }}">
 
            
 
