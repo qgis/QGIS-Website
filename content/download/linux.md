@@ -6,6 +6,12 @@ draft: false
 heroImage: "img/banners/banner4.png"
 ---
 
+{{< steps-bar 
+    "fa-solid fa-hand-holding-heart:Choose if you want to support the project:false"
+    "fa-brands fa-linux:Choose your operating system:false"
+    "fa-solid fa-download:Download:true"
+ >}}
+ 
 {{< columns-start >}}
 {{< column-start class="is-one-third">}}
 {{< box-start >}}
