@@ -10,7 +10,7 @@ heroImage: "img/banners/banner3.png"
 
 {{< steps-bar 
     "fa-solid fa-hand-holding-heart:Choose if you want to support the project:false"
-    "fa-sharp fa-solid fa-solar-system:Choose your operating system:true"
+    "fa-sharp fa-solid fa-question:Choose your operating system:true"
     "fa-solid fa-download:Download and install:false"
  >}}
 
