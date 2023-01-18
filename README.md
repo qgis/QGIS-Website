@@ -360,7 +360,11 @@ The secondary menu template is implemented in ```themes/qgis/layouts/partials/su
 
 ## 🚧 Working with blocks
 
-The different types of blocks we use are defined in ```themes/qgis/layouts/shortcodes```. The main shortcodes you will use are the ones starting with ```block```. To use a block, simply add it to your markdown as per this example:
+Blocks span the page from left to right and contain sub elements for title, description, link etc.
+
+![Block](./img/hugo-block.png)
+
+Blocks are defined in ```themes/qgis/layouts/shortcodes/block```. To use a block, simply add it to your markdown as per this example:
 
 ```
 {{< block
@@ -390,22 +394,120 @@ Name | Description
 -----|-------------
 title | Title for the block
 subtitle | Subtitled for the block
-text-color | Use a CSS colour e.g. white or #FFFFFF
-background-color | Use a CSS colour e.g. white or #FFFFFF
-image | Place your images into static/img and then references it like this "img/some-image.png". **Note:** Do not include a leading slash in the image path!
+link | Optional: URL to have a link to at the bottom left of the block
+link-text | Mandatory if link  provided: Text to show with the hyperlink.
+class | defaults to is-primary. Use this to set the bulma class for the block.
+animate | defaults to false. Experimental support for animating blocks into place as they enter the viewport.
+sub-block-side | defaults to 'cover'. Choose which side (left, right) or cover. Use cover to span the content across the whole block. If an image is set, the image will cover the block or be placed left or right as indicated here.
+image | optional. Place your images into the same folder as the markdown file (so that they are 'bundle resources in hugo terminology') and then reference by the file name only e.g. "some-image.png". 
 
-## 🪪 Working with Cards
 
-The content you write should use the card metaphor (based on Bulma CSS cards) to enclose your content in rectangular blocks so they layout in our grid nicely. Here is an example from the download page showing a QR code block and a content card side by side in the grid.
+**Note:** Do not include a leading slash in the image path!
+
+## 🪪 Working with Boxes and Columns
+
+We carry over the idea of [boxes](https://bulma.io/documentation/elements/box/) and [columns](https://bulma.io/documentation/columns/) from bulma. They can be used to arrange content in a side by side fashion or a grid of content boxes.
+
+First a simple example:
+
+```
+{{< columns-start >}}
+{{< column-start >}}
+{{< box-start >}}
+# Box 1
+
+Normal markdown text....
+
+
+{{< box-end >}}
+{{< box-start >}}
+# Box 2
+
+Normal markdown text....
+
+
+{{< box-end >}}
+{{< column-end >}}
+{{< columns-end >}}
+```
+
+Will render like this:
+
+![Columns1](./img/hugo-columns1.png)
+
+To render the blocks side by side, we can make a small tweak like this:
+
+
+```
+
+{{< columns-start >}}
+{{< column-start>}}
+{{< box-start >}}
+# Box 1
+
+Normal markdown text....
+
+
+{{< box-end >}}
+{{< column-end >}}
+{{< column-start>}}
+{{< box-start >}}
+# Box 2
+
+Normal markdown text....
+
+
+{{< box-end >}}
+{{< column-end >}}
+{{< columns-end >}}
+
+```
+
+Above you can see we close each column before setting the nextWill render like this:
+
+![Columns2](./img/hugo-columns2.png)
+
+One last column arrangement example shows how we can use the [bulma column sizes](https://bulma.io/documentation/columns/sizes/) to define specific column sizes:
+
+```
+
+{{< columns-start >}}
+{{< column-start class="is-one-third">}}
+{{< box-start >}}
+# Box 1
+
+Normal markdown text....
+
+
+{{< box-end >}}
+{{< column-end >}}
+{{< column-start class="is-two-thirds">}}
+{{< box-start >}}
+# Box 2
+
+Normal markdown text....
+
+
+{{< box-end >}}
+{{< column-end >}}
+{{< columns-end >}}
+
+```
+
+Above you can see we use the is-one-third / is-two-thirds classes on each column so they render like this:
+
+![Columns3](./img/hugo-columns3.png)
+
+The content you write within boxes can be normal markdown and can use any of the shortcode components described in this readme.  Here is an example from the download page showing a QR code block and a content card side by side in the grid.
 
 ![Cards](./img/hugo-cards.gif)
 
-### 🎬 Starting a card
+### 🎬 Starting a box
 
-Before starting your markdown content, start a card using the ```card-start``` shortcode so it lays out nicely in our grid:
+Before starting your markdown content, start a card using the ```box-start``` shortcode so it lays out nicely in our grid:
 
 ```
-{{< card-start header="Download QGIS for Windows">}}
+{{< box-start >}}
 
 This is the all-in-one stable release installer. The software 
 you receive with the free download link and the download and
@@ -413,7 +515,7 @@ donate link is identical. For other Windows installer variants
 see here.
 ```
 
-A ```card-start``` shortcode can take the following parameters:
+A ```box-start``` shortcode can take the following parameters:
 
 Name | Description
 -----|-------------
@@ -421,20 +523,15 @@ header | A short piece of text to display in the card header
 classes | (Optional) Any bulma classes you want to have applied to the internal content section of the card.
 
 
-### 🔚 Ending a card
+### 🔚 Ending a box
 
-When you are done writing your content section, end a card using the ```card-end``` shortcode:
+When you are done writing your content, end a box using the ```box-end``` shortcode:
 
 ```
-{{< card-end text="Learn more" link="https://qgis.org">}}
+{{< box-end >}}
 ```
 
-A ```card-end``` shortcode can take the following parameters:
-
-Name | Description
------|-------------
-text | A short piece of (optional) text to display in the card footer
-link | A URL that the user can access by clicking on the link
+A ```box-end``` shortcode takes no parameters:
 
 ## Content
 
