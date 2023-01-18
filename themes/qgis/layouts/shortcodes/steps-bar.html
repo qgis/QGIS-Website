@@ -5,7 +5,7 @@
 {{ end}}
 <section class="section">
     <div class="container {{ $animationClasses }}">  
-        <ul class="steps is-balanced">   
+        <ul class="steps has-content-centered">   
             {{ $.Scratch.Set "counter" 0 }} 
             {{- range (seq 0 (sub (len .Params) 1) ) }}
             {{ $count := add ($.Scratch.Get "counter") 1 }}

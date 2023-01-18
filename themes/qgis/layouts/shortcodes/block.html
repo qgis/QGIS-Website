@@ -28,7 +28,6 @@
 {{ $title := .Get "title" | default "" }}
 {{ $subtitle := .Get "subtitle" | default "" }}
 {{ $animate := .Get "animate" | default "false" }}
-{{ $markdownStyle := .Get "markdown-style" | default "light" }}
 {{ $hasLink := or $link $linkText }}
 {{/* printf "hasLink: %s" $hasLink */}}
 {{ $hasLink := gt ( len $hasLink ) 0 }}

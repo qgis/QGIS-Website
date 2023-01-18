@@ -39,8 +39,6 @@ heading-font = "'Montserrat', sans-serif"
 text-font = "'Work Sans', sans-serif"
 fancy-font = "'Sevillana', cursive"
 menuFontClass = "is-size-7"
-
-
 ## Gh repo for site footer (include trailing slash)
 githubUrl = "https://github.com/qgis/qgis-hugo/"
 ## GH Repo for filing a new issue
@@ -48,12 +46,25 @@ githubIssueUrl = "https://github.com/qgis/QGIS-Hugo/issues/new/choose"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
 githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
 
-
 # This will cause html in markdown files to be rendered directly
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Syntax highlighter for code blocks
+# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+[markup.highlight]
+      codeFences = true
+      guessSyntax = true
+      hl_Lines = ""
+      lineNoStart = 1
+      lineNos = false
+      lineNumbersInTable = false
+      tabWidth = 4
+      noClasses = false
+      style = "monokai"
+
 
 # See https://gohugo.io/content-management/menus/
 [menu]

@@ -12,8 +12,9 @@ heroImage: "img/banners/banner4.png"
     "fa-solid fa-download:Download:true"
  >}}
 
-{{< card-start header="Download QGIS for Windows">}}
+{{< content-start >}}
 
+# Download QGIS for Windows
 
 This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.
 
@@ -31,13 +32,16 @@ This is the all-in-one stable release installer. The software you receive with t
 - Get help using the user manual 
 - Get support from the community via live chat, forums or mailing lists
 
-{{< card-end >}}
+{{< content-end >}}
 
 {{< qrcode "https://qgis.org/en/site/forusers/download.html#windows" >}}  
 
-{{< card-start header="Support our work">}}
+{{< content-start >}}
+
+# Support our work
+
 While you are downloading this fantastic software, maybe it is a good time to read our
 [value proposition](value-proposition.md). We need organisations that use QGIS to support
 our work! By becoming a sustaining member your organisation can be part of the global
 impact that the QGIS project has.
-{{< card-end >}}
+{{< content-end >}}
