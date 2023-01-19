@@ -13,6 +13,9 @@ heroImage: ""
 thumbnail: ""
 ---
 
+{{< content-start >}}
+QGIS is a community project, and although we make the software available for free, it is not free to develop. Creating an excellent software application like QGIS requires time and skills for many contributors around the world, and the maintainance of expensive infrastructure like download servers and backend systems. We encourage you to read more about the [value proposition](../value-proposition/) for QGIS and then support us financially in any way that you can, using the options below.
+{{< content-end >}}
 
 {{< columns-start >}}
 {{< column-start class="is-half">}}
