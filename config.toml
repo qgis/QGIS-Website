@@ -8,6 +8,11 @@ theme = 'qgis'
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
 paginate = 50
 
+# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+
 # Folders in these folders get published automatically
 staticDir = ['static']
 

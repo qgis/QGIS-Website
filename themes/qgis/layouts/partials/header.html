@@ -47,10 +47,12 @@
     {{ $customcss := resources.Get "css/custom.css" }}
     {{ $animatecss := resources.Get "css/animate.css" }}
     {{ $blockcss := resources.Get "css/block.css" }}
+    {{/* Highlight: See last part of article at https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/ */}}
+    {{ $highlightcss := resources.Get "css/highlight.css" }}
     {{ $overridescss := resources.Get "css/bulma-overrides.css" }}
     
     {{/* must have the leading slash in css path or gh pages deploy will break */}}
-    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $overridescss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+    {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss | resources.Concat "/css/all.css" | resources.Fingerprint }}
     <link href="{{ $css.RelPermalink }}" integrity=”{{ $css.Data.Integrity }}”  rel="stylesheet">
 
     {{/* We can compile SASS too... */}}
