@@ -49,18 +49,25 @@
 {{ $imageCoverCss := "" }}
 {{ $titleTextAlign := "is-justify-content-space-evenly has-text-centered"}}
 {{ $subtitleTextAlign := ""}}
-
+{{ $centerBlockSize := "is-8"}}
+{{ $otherBlockSize := "is-4"}}
 {{/* Take care below := for instantiate then = for assignment
       see https://discourse.gohugo.io/t/how-to-use-variables/9100/6 */}}
 {{ if eq $blockSide "left" }}
-    {{ $subtitleTextAlign = "is-justify-content-space-end has-text-left"}}
+    {{ $subtitleTextAlign = "is-justify-content-space-end has-text-left" }}
 {{ end }}
 {{ if eq $blockSide "right" }}
-    {{ $subtitleTextAlign = "is-justify-content-space-evenly has-text-right"}}
+    {{ $subtitleTextAlign = "is-justify-content-space-evenly has-text-right" }}
 {{ end }}
 {{ if eq $blockSide "cover" }}
     {{ $imageCoverCss = "is-image-block" }}
-    {{ $subtitleTextAlign = "is-justify-content-space-evenly has-text-centered"}}
+    {{ $subtitleTextAlign = "is-justify-content-space-evenly has-text-centered" }}
+{{ end }}
+{{ if eq $blockSide "bottom" }}
+    {{ $titleTextAlign = "has-text-left"}}
+    {{ $subtitleTextAlign = "has-text-left" }}
+    {{ $centerBlockSize = "is-12" }}
+    {{ $otherBlockSize = "is-12" }}
 {{ end }}
 
 {{/* for toggling more content area */}}
@@ -73,10 +80,10 @@
         {{ if eq $blockSide "cover" }}style="{{ $imageStyle | safeCSS }}"{{ end }}> 
         <div class="columns is-multiline is-gapless">
             <div class="column is-12">
-                <div class="columns">
+                <div class="columns is-multiline">
                     {{/*  ----------------   Left Block (optional)  ---------  */}}   
-                    {{ if eq $blockSide "left" }}    
-                    <div class="column {{ $titleTextAlign }} is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex"{{/* is flex ensures cols have the same height */}}
+                    {{ if or (eq $blockSide "left") (eq $blockSide "bottom") }}   
+                    <div class="column {{ $titleTextAlign }} {{ $otherBlockSize }} is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex"{{/* is flex ensures cols have the same height */}}
                         {{ if ne $image false }}
                         style="{{ $imageStyle | safeCSS }}"
                         {{ end }}>
@@ -84,7 +91,7 @@
                     </div>
                     {{ end }}
                     {{/*  ----------------   Central Block (mandatory)  ---------  */}}
-                    <div class="column is-vcentered is-min-height {{ if eq $blockSide "cover" }}is-12 {{ if ne $image false }}is-transparent {{ end }}{{ else }}is-8{{ end }} is-flex">{{/* is flex ensures cols have the same height */}}
+                    <div class="column is-vcentered is-min-height {{ if eq $blockSide "cover" }}{{ $centerBlockSize }} {{ if ne $image false }}is-transparent {{ end }}{{ else }}is-8{{ end }} is-flex">{{/* is flex ensures cols have the same height */}}
                         <div class="container {{ $subtitleTextAlign }}">
                             {{ if eq $blockSide "cover" }}
                             <h1 class="title is-2">{{ $title }}</h1>
@@ -94,7 +101,7 @@
                     </div>
                     {{/*  ----------------   Right Image Block (optional)  ---------  */}}       
                     {{ if eq $blockSide "right" }}    
-                    <div class="column {{ $titleTextAlign }} is-4 is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex" {{/* is flex ensures cols have the same height */}}
+                    <div class="column {{ $titleTextAlign }} {{ $otherBlockSize }} is-vcentered notification {{ $class }} {{ if eq $blockSide "right" }}is-image-block{{ end }} is-flex" {{/* is flex ensures cols have the same height */}}
                         {{ if ne $image false }}
                         style="{{ $imageStyle | safeCSS }}"
                         {{ end }}>
