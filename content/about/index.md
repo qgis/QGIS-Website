@@ -8,7 +8,7 @@ heroImage: "img/banners/banner4.png"
 
 {{< block
     title="Mapping."
-    subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print."
+    subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps for digital and print."
     image=""
     sub-block-side="left"
     class="is-info"    
@@ -23,7 +23,7 @@ heroImage: "img/banners/banner4.png"
 >}}{{< /block >}}
 
 {{< block
-    title="Process & Analize."
+    title="Process & Analyze."
     subtitle="Powerful tools for geospatial computational analysis at your fingertips."
     image=""
     sub-block-side="left"
