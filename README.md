@@ -66,6 +66,7 @@ Term | Description
 content | Top level folder for your user created web site content
 section | Any subfolder of content containing an ```_index.md``` file. e.g. the section ```content/about/``` would have within it a file called ```content/about/_index.md``` making it a section and resolvable at the URL ```https://your domain/about/```.
 nested section | As above, creating a subsection, for example ```content/about/staff/_index.md```. Note that if the subsection contains only a single page, it will will be navigable as a page at e.g. ```https://your domain/about/staff/```
+section template | By default a section with nested subfolders of content will render as a list. If you want to customize the section (i.e. not render as a list) you can make a section template in layouts/-section name-/section.html
 
 ## 🏺 Background & Design Philosopy
 
@@ -521,6 +522,22 @@ Name | Description
 -----|-------------
 header | A short piece of text to display in the card header
 classes | (Optional) Any bulma classes you want to have applied to the internal content section of the card.
+ribbon | A word or two to display at the top left of the box.
+ribbon-classes | A bulma class such as ``is-primary`` to set the style of the ribbon. See also the [Bulma Ribbon](https://github.com/Wikiki/bulma-ribbon) page for other modifier classes that can be used.
+
+Here is an example of a box with ribbon set:
+
+```
+{{< box-start  ribbon="Note!" ribbon-class="is-success">}}
+
+Acceptance of sustaining members shall be subject to the discretion and approval of The Board,
+who reserve the right to accept or reject applications for sustaining membership and
+ongoing support memberships as deemed appropriate.
+
+{{< box-end >}}
+```
+
+![Box](./img/hugo-box.png)
 
 
 ### 🔚 Ending a box

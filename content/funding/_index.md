@@ -1,4 +1,5 @@
 ---
+# Note: Template for this page in 
 type: "funding"
 date: "2023-01-18"
 title: "QGIS Funding"
