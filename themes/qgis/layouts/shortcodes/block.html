@@ -6,6 +6,9 @@
     {{ if hasPrefix $link "http" }}
         {{ $linkIsLocal = false }}
     {{ end }}
+    {{ if hasPrefix $link "mailto" }}
+        {{ $linkIsLocal = false }}
+    {{ end }}    
 {{ end }}
 {{ $class := .Get "class" | default "is-primary" }}
 {{ $image := .Get "image" | default false }}
