@@ -17,39 +17,55 @@ thumbnail: ""
 {{< columns-start >}}
 {{< column-start class="is-half">}}
 {{< block
-    title="Donate"
+    title="Donate."
     subtitle="Make a one-off donation to support our work."
     image=""
     sub-block-side="bottom"
-    class="is-info"     
+    class="is-primary"     
+    title-size="is-4"
+    subtitle-size="is-6"
+    link="donate/"
+    link-text="Donate!"    
 >}}{{< /block >}}
 {{< column-end >}}
 {{< column-start class="is-half" >}}
 {{< block
-    title="Sustaining Members"
+    title="Sustaining Members."
     subtitle="Create a recurring sustaining membership."
     image=""
     sub-block-side="bottom"
-    class="is-info" 
+    class="is-danger" 
+    title-size="is-4"
+    subtitle-size="is-6"    
+    link="funding/sustaining-members/"
+    link-text="Subscribe!"
 >}}{{< /block >}}
 {{< column-end >}}
 
 {{< column-start class="is-half">}}
 {{< block
-    title="Shop"
+    title="Shop."
     subtitle="Support our work and enjoy some QGIS branded products."
     image=""
     sub-block-side="bottom"
-    class="is-info"     
+    class="is-warning"     
+    title-size="is-4"
+    subtitle-size="is-6"    
+    link="https://shop.spreadshirt.net/qgis/"
+    link-text="Shop"
 >}}{{< /block >}}
 {{< column-end >}}
 {{< column-start class="is-half">}}
 {{< block
-    title="Direct Engagement"
+    title="Direct Engagement."
     subtitle="Hire community members directly to engage their services for the benefit of the QGIS project."
     image=""
     sub-block-side="bottom"
-    class="is-info"     
+    class="is-success"     
+    title-size="is-4"
+    subtitle-size="is-6"  
+    link="contributors/"
+    link-text="Contributors"  
 >}}{{< /block >}}
 {{< column-end >}}
 {{< columns-end >}}

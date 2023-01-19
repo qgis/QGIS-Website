@@ -22,6 +22,8 @@ expensive for volunteer developers.
     image=""
     sub-block-side="left"
     class="is-info"    
+    title-size="is-4"
+    subtitle-size="is-6"
 >}}
 
 Meanwhile, many organizations have made an investment in using QGIS as part of
