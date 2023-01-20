@@ -630,7 +630,7 @@ The ```button-bar``` shortcode is a way to put a row of button link elements ont
  >}}
 ```
 
-**Note:** We do not use a leading slash, only an ending slash.
+**Note:** We do not use a leading slash for internal links, only an ending slash. If you want the link to open in a new tab, start the link with https: or mailto:
 
 To use button-bar, pass it a collection of key-value triplets separated by ``:`` colons as
 illustrated above. 

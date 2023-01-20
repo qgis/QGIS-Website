@@ -115,9 +115,10 @@ ongoing support memberships as deemed appropriate.
 Sustaining members have no voting rights (unless they
 are simultaneously voting members in which case their voting rights are unaffected).
 At or above the following levels a sustaining member will be designated as being one
-of the following category, based on their size and assigned through self declaration:
+of the following category, based on their size and assigned through self declaration.
 
 {{< box-end >}}
+
 
 ## Donation
 
