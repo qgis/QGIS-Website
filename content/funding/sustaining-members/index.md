@@ -105,7 +105,7 @@ Because QGIS.ORG is a world-wide project and different companies, NGOs or govern
 organizations have different financial prospects, we do not enforce any membership
 levels - the organizations pick their own membership level based on self-assessment.
 
-{{< box-start  ribbon="Note!" ribbon-class="is-success">}}
+{{< box-start  ribbon="Note!" ribbon-class="is-warning">}}
 
 Acceptance of sustaining members shall be subject to the discretion and approval of The Board,
 who reserve the right to accept or reject applications for sustaining membership and
@@ -119,8 +119,8 @@ of the following category, based on their size and assigned through self declara
 
 {{< box-end >}}
 
-Donation
---------
+## Donation
+
 
 Donations can be of any amount, via direct transfers to our bank account (SEPA payment),
 credit card payment (through stripe.com) or Paypal
@@ -137,8 +137,8 @@ Donations to QGIS are tax-deductible in some countries (e.g. in Germany through 
 `German QGIS user group <https://www.qgis.de/#spendenkonto>`_).
 Please refer to your local tax office for details.
 
-What is your benefit supporting the QGIS Development?
-=====================================================
+# How will you benefit supporting the QGIS Development?
+
 
 Supporting the QGIS project as a sustaining member provides the following benefits:
 
