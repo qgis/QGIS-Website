@@ -8,6 +8,11 @@ theme = 'qgis'
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
 paginate = 50
 
+# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+
 # Folders in these folders get published automatically
 staticDir = ['static']
 
@@ -25,6 +30,12 @@ primary2 = "#395c6b"
 primary3 = "#285238"
 primary4 = "#589632"
 primary5 = "#A7CECB"
+primary1-invert = "#eeeeee"
+primary2-invert = "#eeeeee"
+primary3-invert = "#eeeeee"
+primary4-invert = "#eeeeee"
+primary5-invert = "#444444"
+# TODO update these to gradient colours like above
 complementary1 = "#589632"
 complementary2 = "#ee7913"
 complementary3 = "#f0e64a"
@@ -34,13 +45,20 @@ light1 = "#fbfbfb"
 light2 = "#eeeeee"
 dark1 = "#999999"
 dark2 = "#444444"
-# Brand fonts
+# Bulma specific colours based on our branding
+grey-dark = "#444444"
+grey-light = "#eeeeee"
+primary = "#a7cecb"
+danger = "#ee7913"
+info = "#93b023"
+success = "#589632"
+warning = "#f0e64a"
+link = "#ee7913"
+# Brand fonts to override bulma font families
 heading-font = "'Montserrat', sans-serif"
 text-font = "'Work Sans', sans-serif"
 fancy-font = "'Sevillana', cursive"
 menuFontClass = "is-size-7"
-
-
 ## Gh repo for site footer (include trailing slash)
 githubUrl = "https://github.com/qgis/qgis-hugo/"
 ## GH Repo for filing a new issue
@@ -48,12 +66,25 @@ githubIssueUrl = "https://github.com/qgis/QGIS-Hugo/issues/new/choose"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
 githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
 
-
 # This will cause html in markdown files to be rendered directly
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Syntax highlighter for code blocks
+# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+[markup.highlight]
+      codeFences = true
+      guessSyntax = true
+      hl_Lines = ""
+      lineNoStart = 1
+      lineNos = false
+      lineNumbersInTable = false
+      tabWidth = 4
+      noClasses = false
+      style = "monokai"
+
 
 # See https://gohugo.io/content-management/menus/
 [menu]

@@ -11,7 +11,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Unleash your creativity and experience first class cartographic design capabiliities and design great maps for digital and print."
     image=""
     sub-block-side="left"
-    class="is-info"    
+    class="is-primary1"    
 >}}{{< /block >}}
 
 {{< block
@@ -19,7 +19,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Simple and sophisticated tools for efficiently capturing geospatial data."
     image=""
     sub-block-side="left"
-    class="is-success"    
+    class="is-primary2"    
 >}}{{< /block >}}
 
 {{< block
@@ -27,7 +27,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Powerful tools for geospatial computational analysis at your fingertips."
     image=""
     sub-block-side="left"
-    class="is-danger"    
+    class="is-primary3"    
 >}}{{< /block >}}
 
 {{< block
@@ -35,7 +35,7 @@ heroImage: "img/banners/banner4.png"
     subtitle="Reach a global audience online with your amazing maps and spatial information products. Powered by QGIS."
     image=""
     sub-block-side="left"
-    class="is-info"    
+    class="is-primary4"    
 >}}{{< /block >}}
 
 {{< block
@@ -43,6 +43,6 @@ heroImage: "img/banners/banner4.png"
     subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals."
     image=""
     sub-block-side="left"
-    class="is-primary"   
+    class="is-primary5"   
 >}}{{< /block >}}
 

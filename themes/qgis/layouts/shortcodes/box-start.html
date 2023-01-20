@@ -1,0 +1,14 @@
+{{ $classes := .Get "classes" | default "container content notification is-light" }}
+{{ $ribbon := .Get "ribbon" | default "" }}
+{{ $ribbonClass := .Get "ribbon-class" | default "is-info is-small" }}
+            <div {{ if ne $ribbon "" }}class="has-ribbon-left pt-1"{{ end}}>
+                {{ if ne $ribbon "" }}
+                <div class="ribbon {{ $ribbonClass }}">
+                    {{ $ribbon }}
+                </div>
+                {{ end}}
+                <div class="box {{ $classes }} mt-4">{{/* Padding in case ribbon is there */}}
+        
+
+
+

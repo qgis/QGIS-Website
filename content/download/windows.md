@@ -8,12 +8,15 @@ heroImage: "img/banners/banner4.png"
 
 {{< steps-bar 
     "fa-solid fa-hand-holding-heart:Choose if you want to support the project:false"
-    "fa-sharp fa-solid fa-solar-system:Choose your operating system:false"
+    "fa-brands fa-windows:Choose your operating system:false"
     "fa-solid fa-download:Download:true"
  >}}
 
-{{< card-start header="Download QGIS for Windows">}}
+{{< columns-start >}}
+{{< column-start class="is-two-thirds">}}
+{{< box-start >}}
 
+# Download QGIS for Windows
 
 This is the all-in-one stable release installer. The software you receive with the free download link and the download and donate link is identical. For other Windows installer variants see here.
 
@@ -31,13 +34,19 @@ This is the all-in-one stable release installer. The software you receive with t
 - Get help using the user manual 
 - Get support from the community via live chat, forums or mailing lists
 
-{{< card-end >}}
+{{< box-end >}}
+{{< column-end >}}
+{{< column-start class="is-one-third">}}
+{{< box-start >}}
 
-{{< qrcode "https://qgis.org/en/site/forusers/download.html#windows" >}}  
+# Support our work
 
-{{< card-start header="Support our work">}}
 While you are downloading this fantastic software, maybe it is a good time to read our
 [value proposition](value-proposition.md). We need organisations that use QGIS to support
 our work! By becoming a sustaining member your organisation can be part of the global
 impact that the QGIS project has.
-{{< card-end >}}
+
+{{< box-end >}}
+{{< column-end >}}
+{{< columns-end >}}
+
