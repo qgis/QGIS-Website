@@ -567,6 +567,23 @@ Markdown content
 Name | Description
 -----|-------------
 classes | (Optional) Any bulma classes you want to have applied to the internal content section of the card.
+## Button 
+
+The ```button``` shortcode is a way to put a single button link element onto your page:
+
+![Cards](./img/hugo-button-bar.png)
+
+```
+{{< button
+fullwidth = "true"
+icon = "fa-solid fa-calendar"
+class = "is-success"
+link = "showcase/user-group-events"
+text = "User Group News" >}}
+```
+
+**Note:** We do not use a leading slash for internal links, only an ending slash. If you want the link to open in a new tab, start the link with https: or mailto:
+
 
 ## Info Bar
 
