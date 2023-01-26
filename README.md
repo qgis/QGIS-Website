@@ -68,7 +68,7 @@ section | Any subfolder of content containing an ```_index.md``` file. e.g. the 
 nested section | As above, creating a subsection, for example ```content/about/staff/_index.md```. Note that if the subsection contains only a single page, it will will be navigable as a page at e.g. ```https://your domain/about/staff/```
 section template | By default a section with nested subfolders of content will render as a list. If you want to customize the section (i.e. not render as a list) you can make a section template in layouts/-section name-/section.html
 
-## 🏺 Background & Design Philosopy
+## 🏺 Background & Design Philosophy
 
 The QGIS.org web site receives a **lot** of traffic so our website is designed to be fast, privacy respecting and open source, like the rest of QGIS.
 
@@ -76,7 +76,7 @@ The QGIS.org web site receives a **lot** of traffic so our website is designed t
 * 🔒 Privacy respecting: as much as possible we avoid things that can be used to track you - no resources loaded from other web sites, no cookies, no trackers, no sessions etc.
 * 🖊️Open source: This repository is covered by two licenses:
   * The HUGO Project and QGIS theme provided here are published under a permissive 🔑 [MIT License](LICENSE). 
-  * The actual content of the web site is © QGIS.ORG amd Contributors and is made available under the [Creative Commons-NonCommercial-Share-Alike-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. We chose this license to provent third parties from hosting their own, possibly malisciously altered versions of the QGIS.org web site.
+  * The actual content of the web site is © QGIS.ORG amd Contributors and is made available under the [Creative Commons-NonCommercial-Share-Alike-4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license. We chose this license to prevent third parties from hosting their own, possibly maliciously altered versions of the QGIS.org web site.
 
 ![CC License](img/hugo-content-license.png)
 
@@ -239,7 +239,7 @@ The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](htt
 
 The search functionality code is based on this [Blog Post](https://makewithhugo.com/add-search-to-a-hugo-site/) and [GitHub Gist](https://gist.github.com/eddiewebb/735feb48f50f0ddd65ae5606a1cb41ae) by [Eddie Webb](https://twitter.com/eddturtle).
 
-Content folders need to be excluded from search, by making them [headless bundles](https://gohugo.io/content-management/page-bundles/#headless-bundle) - which we have done for the sustaining member and flagship user folders in content/. To make other content folders which are not rendererd and included in search results, add an ```index.md``` file with the following content: ```headless = true```.
+Content folders need to be excluded from search, by making them [headless bundles](https://gohugo.io/content-management/page-bundles/#headless-bundle) - which we have done for the sustaining member and flagship user folders in content/. To make other content folders which are not rendered and included in search results, add an ```index.md``` file with the following content: ```headless = true```.
 
 ## Referencing URLs in templates
 
@@ -326,7 +326,7 @@ For pages to appear in the secondary menu, you need to add an entry to
     submenu = "documentation"
 ```
 
-Use the ```submenu``` parameter to define which submenu the menu entry shouldn be shown in. You can create as many submenu terms as you like, and then associate pages to these submenus in the front matter of your markdown documents.
+Use the ```submenu``` parameter to define which submenu the menu entry should be shown in. You can create as many submenu terms as you like, and then associate pages to these submenus in the front matter of your markdown documents.
 
 ### Displaying a secondary menu
 
@@ -371,7 +371,7 @@ Blocks are defined in ```themes/qgis/layouts/shortcodes/block```. To use a block
 {{< block
     title="Block with more content"
     subtitle="Unleash your creativity and experience first 
-    class cartographic design capabiliities and design great
+    class cartographic design capabilities and design great
     maps for digital and print. "
 >}}
 ```
@@ -631,7 +631,7 @@ The ```image-bar``` shortcode is a way to put a row of circular image elements o
 ```
 
 To use image-bar, pass it a collection of key-value pairs separated by ``:`` colons as
-illustrated above. The secnd value should be a path to an image.
+illustrated above. The second value should be a path to an image.
 
 ## Button Bar
 
@@ -656,7 +656,7 @@ illustrated above.
 2. The second value should be the label for the button.
 3. The third value should be the link that clicking the button will lead to.
 
-You can add as many buttons as you like to the bar, and they will be distributed evenly accross the page.
+You can add as many buttons as you like to the bar, and they will be distributed evenly across the page.
 
 ## Steps Bar
 
@@ -679,7 +679,7 @@ illustrated above.
 2. The second value should be the label for the step.
 3. The third value should be true or false indicating which step is active.
 
-You can add as many steps as you like to the bar, and they will be distributed evenly accross the page.
+You can add as many steps as you like to the bar, and they will be distributed evenly across the page.
 
 ## Example using them together
 
