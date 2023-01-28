@@ -1,0 +1,63 @@
+{{ $linkText := .Get "link-text" | default "" }}
+{{ $linkClass := .Get "link-class" | default "is-primary" }}
+{{ $link := .Get "link" | default "" }}
+{{ $linkIsLocal := true }}
+{{ if ne $link "" }}
+    {{ if hasPrefix $link "http" }}
+        {{ $linkIsLocal = false }}
+    {{ end }}
+    {{ if hasPrefix $link "mailto" }}
+        {{ $linkIsLocal = false }}
+    {{ end }}    
+{{ end }}
+{{ $image := .Get "image" | default false }}
+{{ $gif := .Get "gif" | default false }}
+{{ $gifClass := "" }}
+{{ if eq $gif true }}
+{{ $gifClass = "is-gif-hover" }}
+{{ end }}
+{{/* Take care below := for instantiate then = for assignment
+      see https://discourse.gohugo.io/t/how-to-use-variables/9100/6 */}}
+{{ $imageResource := "" }}
+{{ $imageResized := "" }}
+{{ $imagePath := "" }}
+{{ if eq $image "" }}
+{{ $image = false }}
+{{ end }}
+{{ if ne $image false }}
+    {{/* printf "Image: %s" $image */}}
+    {{ $imageResource = .Page.Resources.GetMatch $image }}
+    {{/* printf "Image Resource : %s" $imageResource.Name */}}
+    {{ $imageResized = $imageResource.Resize "240x240" | resources.Copy (printf "resized-%s" $imageResource.Name) }}
+    {{/* printf "Resized Image Resource : %s" $imageResized */}}
+    {{ $imagePath = $imageResource.RelPermalink }}
+{{ end }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ $hasLink := or $link $linkText }}
+{{/* printf "hasLink: %s" $hasLink */}}
+{{ $hasLink := gt ( len $hasLink ) 0 }}
+{{ $animationClasses := "" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+
+{{ $imageStyle := printf "background-image: url(%s);" $imagePath }}
+
+{{ $imageCoverCss := "" }}
+{{ $imageCoverCss = "is-image-block" }}
+<section class="section">
+    <div class="container notification is-min-height {{ $gifClass }} {{ $animationClasses }} {{ $imageCoverCss }}"
+        style="background-image: url({{ $imagePath }});"> 
+        {{ if isset .Params "link" }}
+        <div class="second-ribbon is-medium {{ $linkClass }} is-clickable">
+            {{ if eq $linkIsLocal false }}
+            <a href="{{ $link }}" target="_blank">
+            {{ else }}
+            <a href="{{ .Site.BaseURL }}{{ $link }}">
+            {{ end }}
+            {{ $linkText }}
+            </a>
+        </div>            
+        {{ end }}           
+    </div>
+</section>

@@ -15,6 +15,10 @@ heroSize: "is-large"
 
 >}}{{< /block >}}
 
+{{< image
+    image="soufriere.gif"
+>}}
+
 {{< block
     title="Share."
     subtitle="Generate high quality, print ready paper, digital and web maps and reports. "
@@ -22,6 +26,10 @@ heroSize: "is-large"
     class="is-danger"    
 >}}{{< /block >}}
 
+{{< image
+    image="soufriere.png"
+    gif=true
+>}}
 
 {{< block
     title="Participate."
@@ -29,3 +37,8 @@ heroSize: "is-large"
     sub-block-side="left"
     class="is-warning"    
 >}}{{< /block >}}
+
+{{< image
+    image="github.png"
+    gif=true
+>}}

@@ -19,6 +19,7 @@ submenus: documentation
     image=""
     link="https://docs.qgis.org/3.22/en/docs/user_manual/index.html"
     link-text="Desktop User Guide"
+    link-class="is-success"
     sub-block-side="left"
     class="is-primary"
 >}}{{< /block >}}
@@ -54,7 +55,7 @@ submenus: documentation
 >}}{{< /block >}}
 
 {{< block
-    title="data protection docs."
+    title="Data protection docs."
     subtitle="In line with GDPR and related data protection regulations, we provide the following documentation:"
     image=""
     link="https://docs.qgis.org/3.22/en/docs/user_manual/appendices/qgis_desktop_network_connections.html"
@@ -64,21 +65,23 @@ submenus: documentation
 >}}{{< /block >}}
 
 {{< block
-    title="for documentation writers."
+    title="For documentation writers."
     subtitle="Our Documentation Guidelines describe how to write and improve the QGIS documentation. "
     image=""
     link="https://docs.qgis.org/3.22/en/docs/documentation_guidelines/index.html"
     link-text="Documentation Guidelines"
+    link-class="is-success"
     sub-block-side="left"
     class="is-primary"
 >}}{{< /block >}}
 
 {{< block
-    title="for developers."
-    subtitle="Our developer resources include:"
+    title="For python developers."
+    subtitle="Explore the QGIS cookbook and learn to create plugins and scripts."
     image=""
     link="https://docs.qgis.org/3.22/en/docs/pyqgis_developer_cookbook/index.html"
-    link-text="PyQGIS cookbook (for plugins and scripting)"
+    link-text="PyQGIS Cookbook"
+    link-class="is-success"
     sub-block-side="left"
     class="is-info"
 >}}{{< /block >}}
