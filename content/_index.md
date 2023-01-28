@@ -16,7 +16,8 @@ heroSize: "is-large"
 >}}{{< /block >}}
 
 {{< image
-    image="soufriere.gif"
+    image="soufriere.png"
+    gif=true
 >}}
 
 {{< block
@@ -27,7 +28,7 @@ heroSize: "is-large"
 >}}{{< /block >}}
 
 {{< image
-    image="soufriere.png"
+    image="gonubie.png"
     gif=true
 >}}
 
