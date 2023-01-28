@@ -582,6 +582,8 @@ To include the mouse over version, add an image element referencing the PNG, and
 >}}
 ```
 
+**Note:** The image names must have the same base name and you must use PNG and GIF images.
+
 ![Hover Image](./img/gif-hover.gif)
 
 
