@@ -397,6 +397,7 @@ title | Title for the block
 subtitle | Subtitled for the block
 link | Optional: URL to have a link to at the bottom left of the block
 link-text | Mandatory if link  provided: Text to show with the hyperlink.
+link-class | Optional and only used if link  provided: Bulma class (e.g. is-primary) for the link button.
 class | defaults to is-primary. Use this to set the bulma class for the block.
 animate | defaults to false. Experimental support for animating blocks into place as they enter the viewport.
 sub-block-side | defaults to 'cover'. Choose which side (left, right) or cover. Use cover to span the content across the whole block. If an image is set, the image will cover the block or be placed left or right as indicated here.
@@ -549,6 +550,41 @@ When you are done writing your content, end a box using the ```box-end``` shortc
 ```
 
 A ```box-end``` shortcode takes no parameters:
+
+## Image
+
+The image shortcode can be used to place an image on the page occupying the same amount of space as a block:
+
+![Image](./img/hugo-image.png)
+
+Sample useage:
+
+```
+{{< image
+    image="soufriere.png"
+>}}
+```
+
+If you prefer, you can supply a GIF and it will display animated. The image will be anchored to the left top of the block and then cropped according to the block dimensions.
+
+There is a special option whereby you can combine both a static image preview and an animated GIF that will be visible when you mouse over the image. To do this you need to have two images, a PNG image and an GIF image. Typically you might record the GIF using an application like [Peek](https://github.com/phw/peek). Once you have a GIF, you can extract the first frame like this (using ImageMagick):
+
+```
+convert 'image.gif[0]' image.png
+```
+
+To include the mouse over version, add an image element referencing the PNG, and then add gif=true as a parameter:
+
+```
+{{< image
+    image="soufriere.png"
+    gif=true
+>}}
+```
+
+![Hover Image](./img/gif-hover.gif)
+
+
 
 ## Content
 

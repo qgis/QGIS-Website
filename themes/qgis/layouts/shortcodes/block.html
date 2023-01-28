@@ -1,5 +1,6 @@
 {{ $innerMarkup := .Inner | default "" | markdownify }}
 {{ $linkText := .Get "link-text" | default "" }}
+{{ $linkClass := .Get "link-class" | default "is-primary" }}
 {{ $link := .Get "link" | default "" }}
 {{ $linkIsLocal := true }}
 {{ if ne $link "" }}
@@ -123,7 +124,7 @@
             <div class="container box is-transparent has-ribbon has-second-ribbon has-second-ribbon-left">
                     {{/*  ----------------  Link more ribbon (optional)   ---------  */}}
                 {{ if isset .Params "link" }}
-                <div class="second-ribbon is-medium is-info is-clickable">
+                <div class="second-ribbon is-medium {{ $linkClass }} is-clickable">
                     {{ if eq $linkIsLocal false }}
                     <a href="{{ $link }}" target="_blank">
                     {{ else }}
