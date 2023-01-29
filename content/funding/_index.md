@@ -25,10 +25,10 @@ QGIS is a community project, and although we make the software available for fre
     subtitle="Make a one-off donation to support our work."
     image=""
     sub-block-side="bottom"
-    class="is-primary"     
+    class="is-success"     
     title-size="is-4"
     subtitle-size="is-6"
-    link="donate/"
+    link="funding/donate/"
     link-text="Donate!"    
 >}}{{< /block >}}
 {{< column-end >}}

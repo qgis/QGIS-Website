@@ -1,6 +1,7 @@
 {{ $innerMarkup := .Inner | default "" | markdownify }}
 {{ $linkText := .Get "link-text" | default "" }}
 {{ $linkClass := .Get "link-class" | default "is-primary" }}
+{{ $detailsClass := .Get "details-class" | default "is-primary" }}
 {{ $link := .Get "link" | default "" }}
 {{ $linkIsLocal := true }}
 {{ if ne $link "" }}
@@ -69,6 +70,7 @@
 {{ if eq $blockSide "cover" }}
     {{ $imageCoverCss = "is-image-block" }}
     {{ $subtitleTextAlign = "is-justify-content-space-evenly has-text-centered" }}
+    {{ $centerBlockSize = "is-12" }}
 {{ end }}
 {{ if eq $blockSide "bottom" }}
     {{ $titleTextAlign = "has-text-left"}}
@@ -136,7 +138,8 @@
                 {{ end }}           
                 {{/*  ----------------  Read more ribbon (optional)   ---------  */}}
                 {{ if len .Inner }}
-                <div data-contentid="{{ $uniqueId }}" class="ribbon is-medium {{ $class }} pulldown-toggle is-clickable">
+                <div data-contentid="{{ $uniqueId }}" class="ribbon is-medium {{ $detailsClass }} pulldown-toggle is-clickable">
+                    Show Details
                     <span class="icon">
                         <i class="fas fa-angle-down" aria-hidden="true"></i>
                     </span>

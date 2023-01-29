@@ -398,6 +398,7 @@ subtitle | Subtitled for the block
 link | Optional: URL to have a link to at the bottom left of the block
 link-text | Mandatory if link  provided: Text to show with the hyperlink.
 link-class | Optional and only used if link  provided: Bulma class (e.g. is-primary) for the link button.
+details-class | Optional and only used if inner content is provided: Bulma class (e.g. is-primary) for the "Show Details" button.
 class | defaults to is-primary. Use this to set the bulma class for the block.
 animate | defaults to false. Experimental support for animating blocks into place as they enter the viewport.
 sub-block-side | defaults to 'cover'. Choose which side (left, right) or cover. Use cover to span the content across the whole block. If an image is set, the image will cover the block or be placed left or right as indicated here.

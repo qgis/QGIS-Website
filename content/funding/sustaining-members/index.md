@@ -120,23 +120,7 @@ of the following category, based on their size and assigned through self declara
 {{< box-end >}}
 
 
-## Donation
 
-
-Donations can be of any amount, via direct transfers to our bank account (SEPA payment),
-credit card payment (through stripe.com) or Paypal
-(information available at `Donations <https://donate.qgis.org>`__ page).
-Even a small donation can make a difference and help to reach important project goals!
-
-If you wish to send us a larger donation, you are strongly encouraged to use the
-direct transfer (SEPA payment) to our bank account. If you wish to use credit card
-payments, payments through stripe.com are preferred as payment fees are lower than
-with PayPal. PayPal payments also imply an unnecessary currency conversion (€ to CHF and
-back to €) for reasons only PayPal understands.
-
-Donations to QGIS are tax-deductible in some countries (e.g. in Germany through the 
-`German QGIS user group <https://www.qgis.de/#spendenkonto>`_).
-Please refer to your local tax office for details.
 
 # How will you benefit supporting the QGIS Development?
 
@@ -157,11 +141,6 @@ Supporting the QGIS project as a sustaining member provides the following benefi
   web site and promotional materials, which shows they are supporting the
   QGIS project
 * No advertising will be placed within the QGIS application itself.
-
-Donors will be listed on the :ref:`QGIS-sustaining_members` page,
-but do not receive the additional benefits listed above for sustaining members, except for
-the first two items.
-
 Decisions on spending of funds will be made by the QGIS Project Steering Committee,
 proposed in a budget that will be approved or declined by the QGIS.ORG general assembly.
 

@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 child.classList.remove("fa-angle-down");
                 child.classList.add("fa-angle-up");
+                el.firstChild.textContent = "Hide Details";
             }
             else
             {
                 child.classList.remove("fa-angle-up");
                 child.classList.add("fa-angle-down");
+                el.firstChild.textContent = "Show Details";
             }            
         })
     })
