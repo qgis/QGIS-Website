@@ -12,6 +12,10 @@ showcase: "planet"
 
 
 
+<p> <a href="https://uc2023.qgis.nl/">uc2023.qgis.nl</a></p>
+
+
+
 <p>Leading up to the contributor meeting, we will also have a two-day International QGIS User Conference, on 18 &amp; 19 April.</p>
 
 

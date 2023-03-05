@@ -16,7 +16,7 @@ showcase: "planet"
 
 
 
-<p>This year (2023), we, therefore, plan to focus on addressing long-standing infrastructure debt (particularly docs and web infrastructure). To make this infrastructure more sustainable, we had to make the difficult decision to move funds from our annual grant programme to rather support these infrastructure tasks. To address upcoming challenges (including but not limited to Qt6 support and next-generation installers) and to the grant programme back to full strength, we need additional funds. The best way to achieve this goal is to enlarge our sustaining member base.&nbsp;</p>
+<p>This year (2023), we, therefore, plan to focus on addressing long-standing infrastructure debt (particularly docs and web infrastructure). To make this infrastructure more sustainable, we had to make the difficult decision to move funds from our annual grant program to rather support these infrastructure tasks. To enable us to bring the grant program back to full strength and to address upcoming challenges (including but not limited to Qt6 support and next-generation installers), we need additional funds. The best way to achieve this goal is to enlarge our sustaining member base.&nbsp;</p>
 
 
 
@@ -24,7 +24,7 @@ showcase: "planet"
 
 
 
-<p>The campaign to raise funds for our activities runs from 16th January 2023 until 16th February 2023.</p>
+<p>The campaign to raise funds for our activities runs from 16th January 2023 until 16th February 2023. (Update: now extended to end of March 2023)</p>
 
 
 
