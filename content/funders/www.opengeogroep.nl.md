@@ -1,9 +1,9 @@
 ---
-level: "Medium"
+level: "Small"
 title: "Open Geo Groep"
 logo: "www.opengeogroep.nl.png"
-startDate: "2022-02-01"
-endDate: "2023-02-28"
+startDate: "2023-03-01"
+endDate: "2024-02-29"
 link: "http://www.opengeogroep.nl/"
 country: "Netherlands"
 ---
