@@ -12,10 +12,6 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://qgisblog.files.wordpress.com/2023/03/splash330.png"><img data-attachment-id="2602" data-permalink="https://blog.qgis.org/2023/03/07/qgis-3-30-s-hertogenbosch-is-released/splash330/" data-orig-file="https://qgisblog.files.wordpress.com/2023/03/splash330.png" data-orig-size="1977,946" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="splash330" data-image-description="" data-image-caption="" data-medium-file="https://qgisblog.files.wordpress.com/2023/03/splash330.png?w=300" data-large-file="https://qgisblog.files.wordpress.com/2023/03/splash330.png?w=780" src="https://qgisblog.files.wordpress.com/2023/03/splash330.png?w=1024" alt="" class="wp-image-2602" srcset="https://qgisblog.files.wordpress.com/2023/03/splash330.png?w=1024 1024w, https://qgisblog.files.wordpress.com/2023/03/splash330.png?w=150 150w, https://qgisblog.files.wordpress.com/2023/03/splash330.png?w=300 300w, https://qgisblog.files.wordpress.com/2023/03/splash330.png?w=768 768w, https://qgisblog.files.wordpress.com/2023/03/splash330.png 1977w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure>
-
-
-
 <p><a href="https://qgis.org/en/site/forusers/download.html">Installers for all supported operating systems </a>are already out. QGIS 3.30 comes with tons of new features, as you can see in <a href="https://qgis.org/en/site/forusers/visualchangelog330/">our visual changelog</a>. QGIS 3.30 &#8216;s-Hertogenbosch is named after this year&#8217;s QGIS user conference and contributor meeting host city.</p>
 
 
