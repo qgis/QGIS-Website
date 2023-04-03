@@ -8,7 +8,7 @@ draft: "true"
 showcase: "planet"
 ---
 
-<p>So February came and went without me sharing our monthly plugin update. That means, this post lists a whopping 32 new plugins that have been published in the <a href="https://plugins.qgis.org/plugins/">QGIS plugin repository</a> in February and March. </p>
+<p>So February came and went without us sharing our monthly plugin update. That means, this post lists a whopping 32 new plugins that have been published in the <a href="https://plugins.qgis.org/plugins/">QGIS plugin repository</a> in February and March. </p>
 
 
 
