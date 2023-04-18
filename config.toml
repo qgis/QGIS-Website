@@ -3,7 +3,7 @@
 baseURL = 'https://qgis.org/'
 languageCode = 'en-us'
 title = 'QGIS Web Site'
-theme = 'qgis'
+theme = 'hugo-bulma-blocks-theme'
 # Default pagination.
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
 paginate = 50
@@ -65,6 +65,9 @@ githubUrl = "https://github.com/qgis/qgis-hugo/"
 githubIssueUrl = "https://github.com/qgis/QGIS-Hugo/issues/new/choose"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
 githubEditUrl = "https://github.com/qgis/qgis-hugo/edit/main"
+### How much to round block corners by
+corner-radius = "15px"
+
 
 # This will cause html in markdown files to be rendered directly
 [markup]
