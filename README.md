@@ -35,6 +35,12 @@ cd QGIS-Hugo
 git submodule add git@github.com:kartoza/hugo-bulma-blocks-theme.git themes/hugo-bulma-blocks-theme
 git submodule update --init --recursive
 ```
+From time to time you may wish to update the theme submodule by doing:
+
+```
+git submodule update --remote
+```
+
 
 ## 🧑💻 Development
 
