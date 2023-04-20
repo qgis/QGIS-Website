@@ -28,8 +28,7 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 
 ## 🛒 Getting the Code
 
-Navigate to your development directory
-
+development
 ```
 git clone https://github.com/qgis/QGIS-Hugo.git
 cd QGIS-Hugo
