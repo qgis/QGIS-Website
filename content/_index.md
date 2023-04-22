@@ -1,10 +1,11 @@
 ---
 type: "page"
-title: "QGIS"
-subtitle: "Unlock the power of where."
+title: "Spatial without compromise."
+subtitle: ""
 draft: false
 heroImage: "img/banners/banner4.png"
-heroSize: "is-large"
+heroSize: "is-medium"
+heroLogo: "img/large-logo.png"
 ---
 {{< box-start classes="container content notification is-light title is-centered" >}}
 Empowering geospatial analysis and visualization.
