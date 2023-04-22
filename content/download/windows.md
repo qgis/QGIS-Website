@@ -29,7 +29,7 @@ This is the all-in-one stable release installer. The software you receive with t
 
 **Next steps**
 
-- If you are just starting out, read the Gentle Inroduction to GIS
+- If you are just starting out, read the Gentle Introduction to GIS
 - Follow the self paced training manual
 - Get help using the user manual 
 - Get support from the community via live chat, forums or mailing lists
@@ -49,4 +49,3 @@ impact that the QGIS project has.
 {{< box-end >}}
 {{< column-end >}}
 {{< columns-end >}}
-
