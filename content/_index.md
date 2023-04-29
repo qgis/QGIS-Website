@@ -26,7 +26,7 @@ Trusted by users world wide.
 
 {{< block
     title="Mapping."
-    subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps. For desktop, mobile, cloud, and print."
+    subtitle="Discover first-class cartography design capabilities which will unleash your creativity by letting you design and share beautiful maps on your desktop, mobile as well as on the cloud with printing options."
     class="is-info"    
     sub-block-side="left"
 
