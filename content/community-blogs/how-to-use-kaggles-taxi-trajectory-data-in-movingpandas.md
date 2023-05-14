@@ -67,8 +67,14 @@ def compute_datetime(row):
     offset = row&#91;'running_number'] * datetime.timedelta(seconds=15)
     return unixtime_to_datetime(unix_time) + offset
 
+def create_point(xy):
+    try: 
+        return Point(xy)
+    except TypeError:  # when there are nan values in the input data
+        return None
+ 
 new_df = df.explode('POLYLINE')
-new_df&#91;'geometry'] = new_df&#91;'POLYLINE'].apply(Point)
+new_df&#91;'geometry'] = new_df&#91;'POLYLINE'].apply(create_point)
 new_df&#91;'running_number'] = new_df.groupby('TRIP_ID').cumcount()
 new_df&#91;'datetime'] = new_df.apply(compute_datetime, axis=1)
 new_df.drop(columns=&#91;'POLYLINE', 'TIMESTAMP', 'running_number'], inplace=True)
