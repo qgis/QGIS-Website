@@ -52,13 +52,11 @@ def compute_datetime(row):
     # some educated guessing going on here: the paper states that the video covers 2021-06-09 07:00-08:00
     d = datetime(2021,6,9,7,0,0) + (row&#91;'frame_in'] + row&#91;'running_number']) * timedelta(seconds=2)
     return d
-
 def create_point(xy):
     try: 
         return Point(xy)
     except TypeError:  # when there are nan values in the input data
         return None
-
 new_df = df.head().explode('coordinates')
 new_df&#91;'geometry'] = new_df&#91;'coordinates'].apply(create_point)
 new_df&#91;'running_number'] = new_df.groupby('id').cumcount()
@@ -153,11 +151,11 @@ bg_img = hv.RGB.load_image('img/intersection2.png', bounds=(0,0,640,360))
 
 
 
-<p>Not bad for a quick-and-dirty hack. It won&#8217;t be perfect but should improve speed estimates.</p>
+<p>Not bad for a quick-and-dirty hack. Some points on the borders of the image could not be georeferenced since I wasn&#8217;t always able to identify suitable control points at the camera image borders. So it won&#8217;t be perfect but should improve speed estimates.</p>
 
 
 
-<p>Additionally, some points on the borders of the image could not be georeferenced since I wasn&#8217;t always able to identify suitable control points at the camera image borders. </p>
+<p></p>
 
 
 
