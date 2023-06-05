@@ -155,7 +155,11 @@ bg_img = hv.RGB.load_image('img/intersection2.png', bounds=(0,0,640,360))
 
 
 
-<p></p>
+<hr class="wp-block-separator has-alpha-channel-opacity" />
+
+
+
+<p>This post is part of a series. Read more about&nbsp;<a href="https://anitagraser.com/movement-data-in-gis/">movement data in GIS.</a></p>
 
 
 

@@ -106,3 +106,11 @@ trajs.hvplot(title='Kaggle Taxi Trajectory Data', tiles='CartoLight')
 
 
 <p>By the way, the plot above illustrates a new feature in the recent <a href="https://github.com/movingpandas/movingpandas/releases/tag/v0.16">MovingPandas 0.16 release</a> which, among other features, introduced plots with arrow markers that show the movement direction. Other new features include a completely new custom distance, speed, and acceleration unit support. This means that, for example, instead of always getting speed in meters per second, you can now specify your desired output units, including km/h, mph, or nm/h (knots). </p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity" />
+
+
+
+<p>This post is part of a series. Read more about <a href="https://anitagraser.com/movement-data-in-gis/">movement data in GIS.</a></p>
