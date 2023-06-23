@@ -1,6 +1,6 @@
 ---
 level: "Small"
-title: "GGRS: Geoscience, GIS, & Remote Sensin"
+title: "GGRS: Geoscience, GIS & Remote Sensing"
 logo: "foss4g.tistory.com.png"
 startDate: "2023-01-01"
 endDate: "2024-02-29"
