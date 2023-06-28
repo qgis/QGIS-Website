@@ -25,8 +25,8 @@ showcase: "planet"
 
 <p>This work was made possible by the generous donations to our <a href="https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/">crowdfunding</a>.</p>
 
-<p><a href="https://youtube.com/live/BJSaU5BT7aE?feature=share"><img src="/img/posts/youtube.png" /></a>
-<a href="https://youtube.com/live/BJSaU5BT7aE?feature=share">Live on Monday, June 26, 2023 at 14:00 GMT</a></p>
+<p><a href="https://youtube.com/live/5tJyC9OdshI?feature=share"><img src="/img/posts/youtube.png" /></a>
+<a href="https://youtube.com/live/5tJyC9OdshI?feature=share">Live on Monday, June 26, 2023 at 14:00 GMT</a></p>
 
 <p><a href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=Mms1cmRqa2o4a29rNmczNXFranQycjl2OG4gamFuLnBhdWxvdmljQG0&amp;tmsrc=jan.paulovic%40gmail.com"><img src="/img/posts/calendar.png" /></a>
 <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=Mms1cmRqa2o4a29rNmczNXFranQycjl2OG4gamFuLnBhdWxvdmljQG0&amp;tmsrc=jan.paulovic%40gmail.com">Add it to your calendar!</a></p>
