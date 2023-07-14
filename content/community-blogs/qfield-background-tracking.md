@@ -55,11 +55,11 @@ showcase: "planet"
 
 
 
-<p>Running out of battery is the nightmare of most field surveyors. By moving location tracking to a background service, users will be able to <strong>considerably improve their battery life</strong> and keep focusing on their tasks.</p>
+<p>Running out of battery is the nightmare of most field surveyors. By moving location tracking to a background service, users will be able to improve their battery life considerably and keep focusing on their tasks even if it involves switching to a different app.</p>
 
 
 
-<p>Furthermore, while OPENGIS.ch ninjas remain busy squashing reported QField crashes all year long, there will always be unexpected scenarios leading to abrupt app shut down such as third party apps, system running out of battery, etc. To address this, the background service framework will also <strong>act as a safeguard to avoid location data loss</strong> when QField unexpectedly shuts down and offer users means to recover that data upon re-opening QField.</p>
+<p>Furthermore, while OPENGIS.ch ninjas remain busy squashing reported QField crashes all year long, there will always be unexpected scenarios leading to abrupt app shutdowns, such as third-party apps, systems running out of battery, etc. To address this, the background service framework will also <strong>act as a safeguard to avoid location data loss</strong> when QField unexpectedly shuts down and offer users means to recover that data upon re-opening QField.</p>
 
 
 
