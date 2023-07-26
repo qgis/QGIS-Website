@@ -1,6 +1,6 @@
 ---
 level: "Medium"
-title: "Mierune LLC"
+title: "MIERUNE INC."
 logo: "www.mierune.co.jp.png"
 startDate: "2023-03-01"
 endDate: "2024-02-29"
