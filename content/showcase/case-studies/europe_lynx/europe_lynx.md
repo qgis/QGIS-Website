@@ -57,7 +57,7 @@ sets*
     Population Density Index \[V\] was integrated into the final habitat
     suitability model (Figure 3) by using the #Raster calculator
 
-```{=html}
+```
 <!-- -->
 ```
     Cover Suitability Model * Population Density Index * Elevation Suitability Index
@@ -73,7 +73,7 @@ conceptually related to habitat of deer as the main prey*
     #Proximity function and index values assigned using #Reclassify grid
     values
 
-```{=html}
+```
 <!-- -->
 ```
     .
@@ -84,7 +84,7 @@ conceptually related to habitat of deer as the main prey*
 -   Conservation Value Model \[Step XII\]: Is the result of the #Raster
     calculator function: (Figure 4)
 
-```{=html}
+```
 <!-- -->
 ```
     (Habitat Suitability Model * Hunter Accessibility Model)
