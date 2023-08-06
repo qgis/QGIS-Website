@@ -102,3 +102,42 @@ backgroundImage="img/Rectangle 106.png"
 "Professional map production.:Use the intuitive layout designer to produce high quality, large format print maps.:/img/image 44.png:complementary6"
 "Powerful reporting tools.:Create atlasses and reports with maps and tabular content.:/img/image 45.png:complementary6"
 >}}
+
+
+{{< block-grid
+    classes="pb-5" 
+    sectionClasses="pb-7"
+    subtitle="LEARN MORE">}}
+
+## **START USING QGIS**
+
+Our learning materials ensure that users will quickly get up to speed with using QGIS.
+
+- **Dive into our quick-start tutorials**
+- **Discover exciting live demos on our Youtube channel**
+- **Browse our comprehensive user and dev docs**
+
+----
+
+{{< youtube q7O819lFKc4 >}}
+
+----
+
+{{< block-grid
+classes="p-6 mt-2"
+isSection=false
+backgroundColor="complementary8"
+subtitleColor="complementary2"
+backgroundImage="img/Rectangle 317.png"
+showBottomBar=true
+subtitle="FREEDOM">}}
+
+## **FREE AND OPEN SOURCE**
+
+QGIS is a public project hosted on QGIS.org, licensed as GNU GPLv2, owned by its contributors.
+
+For that reason QGIS is Free and Open Source software, forever. Learn more
+
+{{< /block-grid >}} 
+        
+{{< /block-grid >}}
