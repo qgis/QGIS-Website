@@ -16,10 +16,10 @@ To do: Remove the HTML element and improve the block.
 {{< box-start classes="columns content notification is-light is-centered" backgroundImage="img/Rectangle 298.png" >}}
 {{< column-start class="column is-5">}}
 {{< img-grid-1
-":/img/image 67.png"
-":/img/image 65.png"
-":/img/image 66.png"
-":/img/image 64.png"
+":img/image 67.png"
+":img/image 65.png"
+":img/image 66.png"
+":img/image 64.png"
 >}}
 {{< column-end >}}
 {{< column-start class="column is-6 is-offset-1" >}}
@@ -53,10 +53,10 @@ text = "Download Now" >}}
 Trusted By
 {{< /content >}}
 {{< image-content-bar
-":/img/Group 9.png"
-":/img/Group 9.png"
-":/img/Group 9.png"
-":/img/Group 9.png"
+":img/Group 9.png"
+":img/Group 9.png"
+":img/Group 9.png"
+":img/Group 9.png"
 >}}
 {{< box-end no-footer="true">}}
 
@@ -69,9 +69,9 @@ backgroundImage="img/Rectangle 105.png"
 >}}{{< /block-section >}}
 
 {{< image-block-section-bar
-    "Class leading cartography.:Experience QGIS' extensive set of  design options to bring your cartographic ideas to life.:/img/image 43.png:primary3"
-    "Professional map production.:Use the intuitive layout designer to produce high quality, large format print maps.:/img/image 44.png:primary3"
-    "Powerful reporting tools.:Create atlasses and reports with maps and tabular content.:/img/image 45.png:primary3"
+    "Class leading cartography.:Experience QGIS' extensive set of  design options to bring your cartographic ideas to life.:img/image 43.png:primary3"
+    "Professional map production.:Use the intuitive layout designer to produce high quality, large format print maps.:img/image 44.png:primary3"
+    "Powerful reporting tools.:Create atlasses and reports with maps and tabular content.:img/image 45.png:primary3"
 >}}
 
 {{< block-section
@@ -84,9 +84,9 @@ backgroundImage="img/Rectangle 105.png"
 
 
 {{< image-block-section-bar
-"Class leading cartography.:Experience QGIS' extensive set of  design options to bring your cartographic ideas to life.:/img/image 43.png:primary2"
-"Professional map production.:Use the intuitive layout designer to produce high quality, large format print maps.:/img/image 44.png:primary2"
-"Powerful reporting tools.:Create atlasses and reports with maps and tabular content.:/img/image 45.png:primary2"
+"Class leading cartography.:Experience QGIS' extensive set of  design options to bring your cartographic ideas to life.:img/image 43.png:primary2"
+"Professional map production.:Use the intuitive layout designer to produce high quality, large format print maps.:img/image 44.png:primary2"
+"Powerful reporting tools.:Create atlasses and reports with maps and tabular content.:img/image 45.png:primary2"
 >}}
 
 {{< block-section
@@ -98,9 +98,9 @@ backgroundImage="img/Rectangle 106.png"
 >}}{{< /block-section >}}
 
 {{< image-block-section-bar
-"Class leading cartography.:Experience QGIS' extensive set of  design options to bring your cartographic ideas to life.:/img/image 43.png:complementary6"
-"Professional map production.:Use the intuitive layout designer to produce high quality, large format print maps.:/img/image 44.png:complementary6"
-"Powerful reporting tools.:Create atlasses and reports with maps and tabular content.:/img/image 45.png:complementary6"
+"Class leading cartography.:Experience QGIS' extensive set of  design options to bring your cartographic ideas to life.:img/image 43.png:complementary6"
+"Professional map production.:Use the intuitive layout designer to produce high quality, large format print maps.:img/image 44.png:complementary6"
+"Powerful reporting tools.:Create atlasses and reports with maps and tabular content.:img/image 45.png:complementary6"
 >}}
 
 
