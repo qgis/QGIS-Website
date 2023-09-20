@@ -12,7 +12,7 @@ showcase: "planet"
 
 
 
-<p>The 26th QGIS Contributor Meeting will be held from Monday, November 6th to Thursday, 11th.</p>
+<p>The 26th QGIS Contributor Meeting will be held from Monday, November 6th to Thursday, 9th.</p>
 
 
 
@@ -21,12 +21,12 @@ showcase: "planet"
 
 
 
-<li>When:  Mon 2023-⁠⁠11-06 09:00 -⁠⁠ Thu 2023-11-09 12:00</li>
+<li>When:&nbsp; Mon 2023-⁠⁠11-06 09:00 -⁠⁠ Thu 2023-11-09 12:00</li>
 </ul>
 
 
 
-<p>For more details and to sign up, please visit the corresponding <a href="https://www.osgeo.org/events/join-osgeo-community-sprint-2023-at-bids-23-vienna-austria/">OSGeo announcement page</a>.</p>
+<p>For more details and to sign up, please visit the corresponding&nbsp;<a href="https://www.osgeo.org/events/join-osgeo-community-sprint-2023-at-bids-23-vienna-austria/">OSGeo announcement page</a>.</p>
 
 
 
