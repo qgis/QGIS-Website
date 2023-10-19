@@ -28,7 +28,7 @@ showcase: "planet"
 </li>
 <li>macOS
 <ul>
-<li><a class="ext" title="Official Application Bundle" href="https://cmbarton.github.io/grass-mac/_pages/download-grass/" target="_blank" rel="noopener">Official Application Bundle</a></li>
+<li><a class="ext broken_link" title="Official Application Bundle" href="https://cmbarton.github.io/grass-mac/_pages/download-grass/" target="_blank" rel="noopener">Official Application Bundle</a></li>
 </ul>
 </li>
 <li>Linux
