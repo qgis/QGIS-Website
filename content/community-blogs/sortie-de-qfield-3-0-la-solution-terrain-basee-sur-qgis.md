@@ -11,7 +11,7 @@ showcase: "planet"
 <p>We are very happy and enthusiasts at Oslandia to forward the <a href="https://www.opengis.ch/fr/2023/10/24/qfield-3-0-amazonia-is-here/">QField 3.0 release announcement</a>, the new major update of this mobile GIS application based on QGIS.</p>
 <p>Oslandia is a <a href="https://oslandia.com/2023/09/14/oslandia-signe-un-partenariat-avec-opengis-ch-sur-qfield/">strategic partner of OPENGIS.ch</a>, the company at the heart of QField development, as well as the QFieldCloud associated SaaS offering. We join <a href="https://www.opengis.ch">OPENGIS.ch</a> to announce all the new features of QField 3.0.</p>
 <p style="text-align: center;"><a href="https://qfield.app/">Get QField 3.0 now !</a></p>
-<p style="text-align: center;"><a href="https://qfield.app/"><img class="aligncenter " src="https://lh5.googleusercontent.com/tN3P-TFu7O2_hcEwShJYmQeneSN9oddAMQ64xkdoSr5Yn9MVZ-v9iBCkRo-3Sb7Ya1AGZSKID-_mG1PbR3sFma6ST66Zi0bqmm9-xqMnIZx_C5vNWz-3wp7TwoQADLWhtpT0KF5ghZz33hP23xKcap4" alt="QField 3.0 screenshots" width="611" height="383" /></a></p>
+<p style="text-align: center;"><a href="https://qfield.app/"><img class="aligncenter " src="https://lh5.googleusercontent.com/tN3P-TFu7O2_hcEwShJYmQeneSN9oddAMQ64xkdoSr5Yn9MVZ-v9iBCkRo-3Sb7Ya1AGZSKID-_mG1PbR3sFma6ST66Zi0bqmm9-xqMnIZx_C5vNWz-3wp7TwoQADLWhtpT0KF5ghZz33hP23xKcap4" alt="QField 3.0 screenshots" width="367" height="230" /></a></p>
 <hr />
 <p>&nbsp;</p>
 <p>Shipped with <strong>many new features</strong> and built with the <strong>latest generation of Qt’s cross-platform framework</strong>, this new chapter marks an important milestone for the most powerful open-source field GIS solution.</p>
