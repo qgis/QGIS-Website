@@ -38,7 +38,7 @@ showcase: "planet"
 </ul>
 </li>
 </ul>
-<p>Further binary packages for other platforms and distributions will follow shortly, please check at <a class="int" href="https://grass.osgeo.org/download/software/">software downloads</a>.</p>
+<p>Further binary packages for other platforms and distributions will follow shortly, please check at <a class="int" href="https://grass.osgeo.org/download/">software downloads</a>.</p>
 <h4 id="Source_code_download" >2) Source code download</h4>
 <ul>
 <li><a class="int" href="https://grass.osgeo.org/grass83/source/">https://grass.osgeo.org/grass83/source/</a></li>
