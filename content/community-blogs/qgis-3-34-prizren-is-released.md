@@ -12,7 +12,7 @@ showcase: "planet"
 
 
 
-<p><a href="https://qgis.org/en/site/forusers/download.html">Installers for all supported operating systems</a> are already out. QGIS 3.34 comes with tons of new features, as you can see in <a href="https://qgis.org/en/site/forusers/visualchangelog334/">our visual changelog</a>. QGIS 3.34 Prizren is named after this year&#8217;s FOSS4G host city.</p>
+<p><a href="https://qgis.org/en/site/forusers/download.html">Installers for</a> Windows and Linux are already out. QGIS 3.34 comes with tons of new features, as you can see in <a href="https://qgis.org/en/site/forusers/visualchangelog334/">our visual changelog</a>. QGIS 3.34 Prizren is named after this year&#8217;s FOSS4G host city.</p>
 
 
 
