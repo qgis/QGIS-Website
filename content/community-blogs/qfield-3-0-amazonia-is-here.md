@@ -42,6 +42,11 @@ showcase: "planet"
 
 
 
+		<figure class="wp-block-jetpack-videopress jetpack-videopress-player" style="" >
+			<div class="jetpack-videopress-player__wrapper"> <iframe title="VideoPress Video Player" aria-label='VideoPress Video Player' width='750' height='357' src='https://videopress.com/embed/W2nwrWjt?cover=1&amp;autoPlay=1&amp;controls=1&amp;loop=0&amp;muted=0&amp;persistVolume=1&amp;playsinline=0&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=1' frameborder='0' allowfullscreen data-resize-to-parent="true" allow='clipboard-write'></iframe><script src='https://v0.wordpress.com/js/next/videopress-iframe.js?m=1674852142'></script></div>
+			<figcaption></figcaption>
+		</figure>
+		
 
 
 <p>On the feature form front, QField has gained <strong>support for feature form text widgets, </strong>a new read-only type introduced in QGIS 3.30<strong>,</strong> which allows users to create expression-based text labels within complex feature form configurations. In addition, <strong>relationship-related form widgets now allow for zooming to children/parent</strong> features within the form itself.</p>
@@ -52,6 +57,11 @@ showcase: "planet"
 
 
 
+		<figure class="wp-block-jetpack-videopress jetpack-videopress-player ticss-ff7acece" style="" >
+			<div class="jetpack-videopress-player__wrapper"> <iframe title="VideoPress Video Player" aria-label='VideoPress Video Player' width='750' height='357' src='https://videopress.com/embed/2LMsUg9l?cover=1&amp;autoPlay=1&amp;controls=1&amp;loop=0&amp;muted=0&amp;persistVolume=1&amp;playsinline=0&amp;preloadContent=metadata&amp;useAverageColor=1&amp;hd=1' frameborder='0' allowfullscreen data-resize-to-parent="true" allow='clipboard-write'></iframe><script src='https://v0.wordpress.com/js/next/videopress-iframe.js?m=1674852142'></script></div>
+			<figcaption>QField 3.0 snapping capabilities</figcaption>
+		</figure>
+		
 
 
 <p>In addition, digitising lines and polygons by using the volume up/down hardware keys on devices such as smartphones is now possible. This can come in handy when digitizing data in harsh conditions where gloves can make it harder to use a touch screen.&nbsp;</p>
