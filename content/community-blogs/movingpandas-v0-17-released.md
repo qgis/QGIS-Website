@@ -61,7 +61,7 @@ showcase: "planet"
 
 
 
-<li>New get_segments_between() for TrajectoryCollection <a href="https://github.com/movingpandas/movingpandas/issues/287">#287</a> </li>
+<li>New get_segments_between() for TrajectoryCollection <a href="https://github.com/movingpandas/movingpandas/issues/287">#287</a>&nbsp;</li>
 </ul>
 
 
@@ -84,7 +84,7 @@ showcase: "planet"
 
 
 <div class="wp-block-image">
-<figure class="aligncenter"><a href="https://mybinder.org/v2/gh/movingpandas/movingpandas-examples/main"><img loading="lazy" width="545" height="100" data-attachment-id="7159" data-permalink="https://anitagraser.com/2020/03/21/movingpandas-v0-3-released/binder/" data-orig-file="https://underdark.files.wordpress.com/2020/03/binder.png" data-orig-size="109,20" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="binder" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2020/03/binder.png?w=109" data-large-file="https://underdark.files.wordpress.com/2020/03/binder.png?w=109" src="https://underdark.files.wordpress.com/2020/03/binder.png?w=545" alt="" class="wp-image-7159" /></a></figure></div>
+<figure class="aligncenter size-thumbnail"><a href="https://mybinder.org/v2/gh/movingpandas/movingpandas-examples/main"><img loading="lazy" width="109" height="20" data-attachment-id="7159" data-permalink="https://anitagraser.com/2020/03/21/movingpandas-v0-3-released/binder/" data-orig-file="https://underdark.files.wordpress.com/2020/03/binder.png" data-orig-size="109,20" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="binder" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2020/03/binder.png?w=109" data-large-file="https://underdark.files.wordpress.com/2020/03/binder.png?w=109" src="https://underdark.files.wordpress.com/2020/03/binder.png?w=109" alt="" class="wp-image-7159" /></a></figure></div>
 
 
 <p>If you have questions about using MovingPandas or just want to discuss new ideas, you&#8217;re welcome to join our <a href="https://github.com/movingpandas/movingpandas/discussions"><strong>discussion forum</strong></a>.</p>
