@@ -8,7 +8,7 @@ draft: "true"
 showcase: "planet"
 ---
 
-<p>This autumn, from September to November, 84 new plugins that have been published in the <a href="https://plugins.qgis.org/plugins/">QGIS plugin repository</a>. </p>
+<p>This autumn, from September to November, 84 new plugins have been published in the <a href="https://plugins.qgis.org/plugins/">QGIS plugin repository</a>. </p>
 
 
 
