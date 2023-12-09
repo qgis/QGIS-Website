@@ -1,6 +1,6 @@
 ---
 source: "blog"
-title: "anitagraser.com: Adding basemaps to PyQGIS maps"
+title: "anitagraser.com: Adding basemaps to PyQGIS maps in Jupyter notebooks"
 image: "adding-basemaps-to-pyqgis-maps."
 date: "2023-11-15"
 link: "https://anitagraser.com/2023/11/17/adding-basemaps-to-pyqgis-maps/"
@@ -26,7 +26,6 @@ from PyQt5.QtWidgets import QApplication
 from qgis.core import QgsApplication, QgsVectorLayer, QgsProject, QgsRasterLayer, \
     QgsCoordinateReferenceSystem, QgsProviderRegistry, QgsSimpleMarkerSymbolLayerBase
 from qgis.gui import QgsMapCanvas
-
 app = QApplication(&#91;])
 qgs = QgsApplication(&#91;], False)
 qgs.setPrefixPath(r"C:\temp", True)  # setting a prefix path should enable the WMS provider
@@ -35,7 +34,6 @@ canvas = QgsMapCanvas()
 project = QgsProject.instance()
 map_crs = QgsCoordinateReferenceSystem('EPSG:3857')
 canvas.setDestinationCrs(map_crs)
-
 print("providers: ", QgsProviderRegistry.instance().providerList())
 </pre></div>
 
