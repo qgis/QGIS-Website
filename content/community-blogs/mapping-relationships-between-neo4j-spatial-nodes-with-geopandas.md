@@ -121,4 +121,30 @@ gdf.explore(m=m)
 
 
 
-<p>And here&#8217;s the notebook: <a href="https://github.com/anitagraser/QGIS-resources/blob/master/qgis3/notebooks/neo4j.ipynb">https://github.com/anitagraser/QGIS-resources/blob/master/qgis3/notebooks/neo4j.ipynb</a> </p>
+<p>Finally, we can also use Cypher to calculate the travel time between two stops: </p>
+
+
+<div class="wp-block-syntaxhighlighter-code "><pre class="brush: sql; title: ; notranslate">
+MATCH (t:Trip {id: &quot;17&quot;})
+   &lt;-&#91;:BELONGS_TO]-
+   (st1:StopTime)
+   -&#91;:NEXT_STOP]-&gt;
+   (st2:StopTime)
+MATCH (st1)-&#91;:STOPS_AT]-&gt;(s1:Stop)
+MATCH (st2)-&#91;:STOPS_AT]-&gt;(s2:Stop)
+RETURN st1.departureTime AS time1, 
+   st2.arrivalTime AS time2, 
+   s1.location AS geom1, 
+   s2.location AS geom2, 
+   duration.inSeconds(
+      time(st1.departureTime), 
+      time(st2.arrivalTime)
+   ).seconds AS traveltime
+</pre></div>
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="538" height="322" data-attachment-id="8709" data-permalink="https://anitagraser.com/2023/12/09/mapping-relationships-between-neo4j-spatial-nodes-with-geopandas/image-14-4/" data-orig-file="https://underdark.files.wordpress.com/2023/12/image-14.png" data-orig-size="538,322" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-14" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2023/12/image-14.png?w=300" data-large-file="https://underdark.files.wordpress.com/2023/12/image-14.png?w=538" src="https://underdark.files.wordpress.com/2023/12/image-14.png?w=538" alt="" class="wp-image-8709" srcset="https://underdark.files.wordpress.com/2023/12/image-14.png 538w, https://underdark.files.wordpress.com/2023/12/image-14.png?w=150 150w, https://underdark.files.wordpress.com/2023/12/image-14.png?w=300 300w" sizes="(max-width: 538px) 100vw, 538px" /></figure>
+
+
+
+<p>As always, here&#8217;s the notebook: <a href="https://github.com/anitagraser/QGIS-resources/blob/master/qgis3/notebooks/neo4j.ipynb">https://github.com/anitagraser/QGIS-resources/blob/master/qgis3/notebooks/neo4j.ipynb</a> </p>

@@ -34,7 +34,7 @@ AS row
 CREATE (:Stop {
    stop_id: row&#91;"stop_id"],
    name: row&#91;"stop_name"], 
-   geom: point({
+   location: point({
     longitude: toFloat(row&#91;"stop_lon"]),
     latitude: toFloat(row&#91;"stop_lat"])
     })
@@ -196,7 +196,7 @@ merge (curr)-&#91;:NEXT_STOP]-&gt;(next)', {batchmode: &quot;BATCH&quot;, parall
 </pre></div>
 
 
-<p>This fails with: <code>There is no procedure with the name apoc.periodic.iterate registered for this database instance. Please ensure you've spelled the procedure name correctly and that the procedure is properly deployed.</code></p>
+<p>This fails with: <code>There is no procedure with the name&nbsp;apoc.periodic.iterate&nbsp;registered for this database instance. Please ensure you've spelled the procedure name correctly and that the procedure is properly deployed.</code></p>
 
 
 

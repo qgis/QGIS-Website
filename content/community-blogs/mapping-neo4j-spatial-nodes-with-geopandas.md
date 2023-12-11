@@ -42,7 +42,7 @@ with GraphDatabase.driver(URI, auth=AUTH) as driver:
 
 
 <div class="wp-block-syntaxhighlighter-code "><pre class="brush: python; title: ; notranslate">
-QUERY = "MATCH (p:Stop) RETURN p.name AS name, p.geom AS geom"
+QUERY = "MATCH (p:Stop) RETURN p.name AS name, p.location AS geom"
 
 records, summary, keys = driver.execute_query(
     QUERY, database_="neo4j",
@@ -53,7 +53,7 @@ for rec in records:
 </pre></div>
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="537" height="387" data-attachment-id="8669" data-permalink="https://anitagraser.com/2023/12/03/mapping-neo4j-spatial-nodes-with-geopandas/image-1-11/" data-orig-file="https://underdark.files.wordpress.com/2023/12/image-1.png" data-orig-size="537,387" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-1" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2023/12/image-1.png?w=300" data-large-file="https://underdark.files.wordpress.com/2023/12/image-1.png?w=537" src="https://underdark.files.wordpress.com/2023/12/image-1.png?w=537" alt="" class="wp-image-8669" srcset="https://underdark.files.wordpress.com/2023/12/image-1.png 537w, https://underdark.files.wordpress.com/2023/12/image-1.png?w=150 150w, https://underdark.files.wordpress.com/2023/12/image-1.png?w=300 300w" sizes="(max-width: 537px) 100vw, 537px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" width="541" height="383" data-attachment-id="8706" data-permalink="https://anitagraser.com/2023/12/03/mapping-neo4j-spatial-nodes-with-geopandas/image-13-4/" data-orig-file="https://underdark.files.wordpress.com/2023/12/image-13.png" data-orig-size="541,383" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-13" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2023/12/image-13.png?w=300" data-large-file="https://underdark.files.wordpress.com/2023/12/image-13.png?w=541" src="https://underdark.files.wordpress.com/2023/12/image-13.png?w=541" alt="" class="wp-image-8706" srcset="https://underdark.files.wordpress.com/2023/12/image-13.png 541w, https://underdark.files.wordpress.com/2023/12/image-13.png?w=150 150w, https://underdark.files.wordpress.com/2023/12/image-13.png?w=300 300w" sizes="(max-width: 541px) 100vw, 541px" /></figure>
 
 
 
