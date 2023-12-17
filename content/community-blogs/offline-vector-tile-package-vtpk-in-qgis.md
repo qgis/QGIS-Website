@@ -51,3 +51,11 @@ showcase: "planet"
 
 
 <p>Kudos to <a href="https://wien.rocks/@DieterKomendera/111568809248327077">https://wien.rocks/@DieterKomendera/111568809248327077</a> for bringing this new feature to my attention. </p>
+
+
+
+<p>PS: And interesting tidbit from the developer of this feature, Nyall Dawson: </p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://mastodon.social/@nyalld/111587016064879754"><img loading="lazy" width="310" height="174" data-attachment-id="8730" data-permalink="https://anitagraser.com/2023/12/15/offline-vector-tile-package-vtpk-in-qgis/image-19-3/" data-orig-file="https://underdark.files.wordpress.com/2023/12/image-19.png" data-orig-size="310,174" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-19" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2023/12/image-19.png?w=300" data-large-file="https://underdark.files.wordpress.com/2023/12/image-19.png?w=310" src="https://underdark.files.wordpress.com/2023/12/image-19.png?w=310" alt="" class="wp-image-8730" srcset="https://underdark.files.wordpress.com/2023/12/image-19.png 310w, https://underdark.files.wordpress.com/2023/12/image-19.png?w=150 150w, https://underdark.files.wordpress.com/2023/12/image-19.png?w=300 300w" sizes="(max-width: 310px) 100vw, 310px" /></a></figure>
