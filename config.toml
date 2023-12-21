@@ -25,12 +25,12 @@ staticDir = ['static']
 
 [params]
 # Brand colours:
-primary1 = "#a7cecb"
+primary1 = "#589632"
 primary2 = "#55828b"
 primary3 = "#395c6b"
 primary4 = "#285238"
 primary5 = "#589632"
-primary1-invert = "#444444"
+primary1-invert = "#fff"
 primary2-invert = "#eeeeee"
 primary3-invert = "#eeeeee"
 primary4-invert = "#eeeeee"
@@ -48,8 +48,10 @@ light1 = "#fbfbfb"
 light2 = "#eeeeee"
 light3 = "#E7E7E7"
 dark1 = "#999999"
-dark2 = "#444444"
+dark2 = "#000"
 # Bulma specific colours based on our branding
+black = "#000"
+white = "#ffffff"
 grey-dark = "#444444"
 grey-darker = "#363636"
 grey-light = "#d4d4d4"
@@ -60,10 +62,11 @@ success = "#589632"
 warning = "#f0e64a"
 link = "#ee7913"
 # Brand fonts to override bulma font families
-heading-font = "'Montserrat', sans-serif"
-text-font = "'Montserrat', sans-serif"
+heading-font = "'Trueno', sans-serif"
+text-font = "'Trueno', sans-serif"
 fancy-font = "'Sevillana', cursive"
-menuFontClass = "is-size-7"
+
+menuFontClass = "is-size-6"
 ## Gh repo for site footer (include trailing slash)
 githubUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/"
 ## GH Repo for filing a new issue
