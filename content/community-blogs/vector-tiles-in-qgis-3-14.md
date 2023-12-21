@@ -1,9 +1,9 @@
 ---
 source: "blog"
 title: "maptiler.com: Vector tiles in QGIS 3.14"
-image: "www.maptiler.com."
-date: "2023-11-22"
-link: "https://www.maptiler.com/"
+image: "vector-tiles-in-qgis-3-14."
+date: "2023-12-21"
+link: "https://www.maptiler.com/news/2020/06/vector-tiles-in-qgis-3-14"
 draft: "true"
 showcase: "planet"
 ---
