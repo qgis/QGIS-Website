@@ -1,11 +1,11 @@
 ---
 source: "blog"
-title: "QGIS NL Community: (Nederlands) Gebruikersbijeenkomst: QGIS in Organisaties"
+title: "QGIS NL Community: New version of PDOKServiceplugin"
 image: "?lang=en."
-date: "2023-11-09"
-link: "https://qgis.nl/2023/11/09/gebruikersbijeenkomst-qgis-in-organisaties/?lang=en"
+date: "2023-12-22"
+link: "https://qgis.nl/2023/12/22/pdokserviceplugin-met-openbasiskaart-en-vectortiles/?lang=en"
 draft: "true"
 showcase: "planet"
 ---
 
-Sorry, this entry is only available in Dutch.
+Sorry, mostly interested for dutch readers
