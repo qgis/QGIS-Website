@@ -12,7 +12,7 @@ showcase: "planet"
 
 
 
-<p>We recently held our 2023 QGIS Annual General Meeting. The minutes of this meeting are <a href="https://drive.google.com/file/d/16Wmfclov4SkZzoo8VGE20jBc_2Ch0tSD/view?usp=sharing">available for all to view</a>.</p>
+<p>We recently held our 2023 QGIS Annual General Meeting. The minutes of this meeting are <a href="https://www.qgis.org/en/_downloads/0896829f274fa9df076b391c72e1edc4/QGIS-AGM2023-Minutes.pdf">available for all to view</a>.</p>
 
 
 
