@@ -4,8 +4,9 @@ title: "Our Community"
 subtitle: "Experience the world’s most vibrant community of geospatial experts and enthusiasts"
 draft: false
 heroImage: "img/banners/banner4.png"
+sidebar: "true"
 ---
-
+{{< content-start  >}}
 {{< block
     title="The QGIS Charter."
     subtitle="The QGIS Charter guides our project's open governance and community."
@@ -46,3 +47,5 @@ heroImage: "img/banners/banner4.png"
     sub-block-side="left"
     class="is-primary5"
 >}}{{< /block >}}
+
+{{< content-end >}}

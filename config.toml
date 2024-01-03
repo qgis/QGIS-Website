@@ -25,20 +25,20 @@ staticDir = ['static']
 
 [params]
 # Brand colours:
-primary1 = "#589632"
+primary1 = "#93B023"
 primary2 = "#55828b"
 primary3 = "#395c6b"
-primary4 = "#285238"
+primary4 = "#EEE766"
 primary5 = "#589632"
 primary1-invert = "#fff"
 primary2-invert = "#eeeeee"
 primary3-invert = "#eeeeee"
-primary4-invert = "#eeeeee"
+primary4-invert = "#363636"
 primary5-invert = "#eeeeee"
 # TODO update these to gradient colours like above
-complementary1 = "#589632"
+complementary1 = "#93B023"
 complementary2 = "#ee7913"
-complementary3 = "#f0e64a"
+complementary3 = "#EEE766"
 complementary4 = "#93b023"
 complementary5 = "#a7cecb"
 complementary6 = "#589732"
@@ -47,7 +47,7 @@ complementary8 = "#385C6B"
 light1 = "#fbfbfb"
 light2 = "#eeeeee"
 light3 = "#E7E7E7"
-dark1 = "#999999"
+dark1 = "#808080"
 dark2 = "#000"
 # Bulma specific colours based on our branding
 black = "#000"
@@ -59,7 +59,7 @@ primary = "#a7cecb"
 danger = "#ee7913"
 info = "#93b023"
 success = "#589632"
-warning = "#f0e64a"
+warning = "#EEE766"
 link = "#ee7913"
 # Brand fonts to override bulma font families
 heading-font = "'Trueno', sans-serif"
@@ -94,67 +94,74 @@ corner-radius = "0px"
       tabWidth = 4
       noClasses = false
       style = "monokai"
+    
+[markup.tableOfContents]
+      endLevel = 3
+      ordered = false
+      startLevel = 2
 
 
+sectionPagesMenu = 'main'
 # See https://gohugo.io/content-management/menus/
 [menu]
 [[menu.main]]
   name = "About"
   url = "/about/"
-  weight = -110
+  weight = 10
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
 [[menu.main]]
   name = "Community"
   url = "/community/"
-  weight = -110 # Sets the menu order
+  weight = 20 # Sets the menu order
   #pre = "<i class='fa-solid fa-people-group mr-1'></i>"
 
 [[menu.main]]
   name = "Resources"
   url = "/hub/"
-  weight = -110 # Sets the menu order 
+  weight = 40 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
 
 [[menu.main]]
   name = "Download"
   url = "/download/download/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = -110 # Sets the menu order 
+  weight = 30 # Sets the menu order 
 
 [[menu.main]]
+  parent = "Community"
   name = "Value"
   url = "/value-proposition/"
   #pre = "<i class='fa fa-heart mr-1'></i>"
-  weight = -110 # Sets the menu order 
+  weight = 50 # Sets the menu order 
 
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
   parent = "Resources"
   name = "Showcase"
   url = "/showcase/overview/"
-  weight = -120
+  weight = 10
   #pre = "<i class='fa-brands fa-windows mr-1'></i>"
 
 [[menu.main]]
   parent = "Resources"
   name = "Documentation"
   url = "/documentation/overview/"
-  weight = -120
+  weight = 20
   #pre = "<i class='fa-brands fa-windows mr-1'></i>"
 
 [[menu.main]]
   parent = "Resources"
   name = "Roadmap"
   url = "/roadmap/roadmap/"
-  weight = -110
+  weight = 30
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
 [[menu.main]]
   parent = "Resources"
   name = "License"
   url = "/license/"
-  weight = -10
+  weight = 40
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
 [[menu.documentation]]
