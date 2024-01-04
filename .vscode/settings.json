@@ -1,14 +1,10 @@
 {
     "editor.fontSize": 18,
-    "editor.rulers": [
-        88,
-        120
-    ],
+    "editor.rulers": [88, 120],
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "python.formatting.provider": "black",
-    "python.formatting.blackArgs": [
-        "--line-length",
-        "88"
-    ],
+    "python.formatting.blackArgs": ["--line-length", "88"],
     "python.linting.enabled": true,
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#3399ff",
@@ -40,13 +36,13 @@
         "commandCenter.border": "#e7e7e799"
     },
     "peacock.color": "#007fff",
-    "python.testing.pytestArgs": [
-        "--base-url=http://localhost:1313",
-        "test"
-    ],
+    "python.testing.pytestArgs": ["--base-url=http://localhost:1313", "test"],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
     "playwright.env": {
         "baseURL": "http://localhost:1313"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }

@@ -1,0 +1,20 @@
+{
+    "proseWrap": "preserve",
+    "plugins": ["prettier-plugin-go-template"],
+    "overrides": [
+        {
+            "files": ["*.html"],
+            "options": {
+                "parser": "go-template"
+            }
+        },
+        {
+            "files": ["*.html", "*.css", "*.scss", "*.sass", "*.less"],
+            "options": {
+                "singleQuote": false
+            }
+        }
+    ],
+    "singleQuote": false,
+    "tabWidth": 4
+}

@@ -4,18 +4,13 @@
     "options": {
         "cwd": "${workspaceRoot}"
     },
-    "args": [
-        "-c"
-    ],
+    "args": ["-c"],
     "tasks": [
         {
             "label": "build local",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "hugo"
-            ],
+            "args": ["-c", "hugo"],
             "problemMatcher": [],
             "group": {
                 "_id": "test",
@@ -26,16 +21,13 @@
             "label": "dev local fastrender",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "hugo server"
-            ],
+            "args": ["-c", "hugo server"],
             "problemMatcher": [],
             "group": {
                 "_id": "test",
                 "isDefault": false
             }
-        },        
+        },
         {
             "label": "dev local",
             "type": "shell",
@@ -54,10 +46,7 @@
             "label": "dev build",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "make dev-build"
-            ],
+            "args": ["-c", "make dev-build"],
             "problemMatcher": [],
             "group": {
                 "_id": "build",
@@ -68,10 +57,7 @@
             "label": "dev",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "make dev"
-            ],
+            "args": ["-c", "make dev"],
             "problemMatcher": [],
             "group": {
                 "_id": "test",
@@ -82,20 +68,14 @@
             "label": "dev-metrics",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "make dev-metrics"
-            ],
+            "args": ["-c", "make dev-metrics"],
             "problemMatcher": []
         },
         {
             "label": "deploy-prod",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "make deploy-prod"
-            ],
+            "args": ["-c", "make deploy-prod"],
             "problemMatcher": [],
             "group": {
                 "_id": "test",
@@ -106,20 +86,14 @@
             "label": "tests",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "make dev-metrics"
-            ],
+            "args": ["-c", "make dev-metrics"],
             "problemMatcher": []
         },
         {
             "label": "help",
             "type": "shell",
             "command": "bash",
-            "args": [
-                "-c",
-                "make help"
-            ],
+            "args": ["-c", "make help"],
             "problemMatcher": []
         }
     ]
