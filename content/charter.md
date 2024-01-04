@@ -1,13 +1,12 @@
 ---
 type: "page"
 title: "QGIS.org Charter"
-subtitle: ""
 draft: false
-heroImage: "img/banners/banner1.png"
+layout: "single"
+sidebar: true
 ---
 
 {{< content-start >}}
-
 # Charter of the QGIS.ORG Association
 
 ## Legal status of QGIS.ORG

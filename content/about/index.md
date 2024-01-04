@@ -4,7 +4,10 @@ title: "About QGIS"
 subtitle: ""
 draft: false
 heroImage: "img/banners/banner4.png"
+sidebar: true
+
 ---
+{{< content-start >}}
 
 {{< block
     title="Mapping."
@@ -45,4 +48,4 @@ heroImage: "img/banners/banner4.png"
     sub-block-side="left"
     class="is-primary5"   
 >}}{{< /block >}}
-
+{{< content-end >}}

@@ -1,18 +1,42 @@
 ---
 type: "page"
-title: "Spatial without compromise."
-subtitle: ""
+title: "Spatial without compromise"
+subtitle: "Giving the power of spatial visualization and decision making tools to everyone"
+
 draft: false
 heroSize: "is-medium"
-heroLogo: "img/large-logo.png"
+heroLogo: "img/logosign.svg"
+HeroImage: "img/hegobg.png"
+HasBanner: "yes"
+ButtonText: "Download" 
+ButtonLink: "/download/"
+LastVersion: "Version: 3.30.1"
+LabelText: "Free and open source"
 ---
 
 
 <!--
+Remove string HasBanner to delete banner from page
+
 Hero Banner currently has HTML elements.
 To do: Remove the HTML element and improve the block.
 -->
+{{< box-start classes="has-background-white has-text-centered">}}
+{{< image-content-bar
+":img/logoexample.png"
+":img/logoexample.png"
+":img/logoexample.png"
+":img/logoexample.png"
+":img/logoexample.png"
+":img/logoexample.png"
+":img/logoexample.png"
+":img/logoexample.png"
+>}}
+{{< box-end no-footer="true">}}
 
+{{< feature >}}
+
+<!-- 
 {{< box-start classes="columns content notification is-light is-centered" backgroundImage="img/Rectangle 298.png" >}}
 {{< column-start class="column is-5">}}
 {{< img-grid-1
@@ -48,16 +72,7 @@ text = "Download Now" >}}
 {{< box-end >}}
 
 
-{{< box-start classes="has-background-grey-darker has-text-centered pt-6 pb-6">}}
-{{< content classes="has-text-white has-text-weight-bold is-size-5" >}}
-Trusted By
-{{< /content >}}
-{{< image-content-bar
-":img/Group 9.png"
-":img/Group 9.png"
-":img/Group 9.png"
-":img/Group 9.png"
->}}
+
 {{< box-end no-footer="true">}}
 
 {{< block-section
@@ -140,4 +155,4 @@ For that reason QGIS is Free and Open Source software, forever. Learn more
 
 {{< /block-grid >}} 
         
-{{< /block-grid >}}
+{{< /block-grid >}} -->
