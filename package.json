@@ -1,0 +1,17 @@
+{
+    "name": "prettier-hugo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "format:check": "prettier --check .",
+        "format:debug-check": "prettier --debug-check .",
+        "format:write": "prettier --write ."
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^3.1.1",
+        "prettier-plugin-go-template": "^0.0.15"
+    }
+}
