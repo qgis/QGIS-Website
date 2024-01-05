@@ -1,0 +1,126 @@
+{
+    "version": "2.0.0",
+    "command": "bash",
+    "options": {
+        "cwd": "${workspaceRoot}"
+    },
+    "args": [
+        "-c"
+    ],
+    "tasks": [
+        {
+            "label": "build local",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "hugo"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "dev local fastrender",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "hugo server"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },        
+        {
+            "label": "dev local",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "hugo server -D --disableFastRender --debug --gc --ignoreCache --printPathWarnings --log --verbose --verboseLog"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "dev build",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "make dev-build"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "dev",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "make dev"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "dev-metrics",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "make dev-metrics"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "deploy-prod",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "make deploy-prod"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "_id": "test",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "tests",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "make dev-metrics"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "help",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-c",
+                "make help"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

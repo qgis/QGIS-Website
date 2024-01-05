@@ -1,0 +1,21 @@
+name: Feature Request
+description: Suggest an idea to better this Website!
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: "### Please check to see if someone else has already asked for this feature."
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Describe the feature you would like to see implemented.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Reference to Feature
+      description: Have you seen this feature somewhere else?
+      placeholder: Please include links to references if you have them.

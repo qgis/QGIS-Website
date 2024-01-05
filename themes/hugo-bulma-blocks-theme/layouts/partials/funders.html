@@ -1,0 +1,121 @@
+<section class="section">
+    <div class="container is-fluid">
+        <h1 class="title">
+            Our Sustaining Members
+        </h1>
+        <h2 class="subtitle">
+            Large
+        </h2>
+
+        <div class="tile is-ancestor is-vertical">
+            <div class="tile">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ $headlessbundle := .Site.GetPage "/funders" }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+            {{ if eq .Params.level "Large" }}
+                {{ $startDate := time .Params.startDate }}
+                {{ $endDate := time .Params.endDate }}
+                {{ if ge $endDate now }}
+                    {{ $count := add ($.Scratch.Get "counter") 1 }}
+                    {{ $.Scratch.Set "counter" $count }}
+                        {{ if eq ( mod $count 3 ) 1 }}
+                            {{ if gt $count 1 }}
+            </div>
+            <div class="tile">
+                            {{ end }}
+                        {{ end }}
+                <div class="tile is-parent"> 
+                    <article class="tile is-child box notification is-light">
+                        <span title="Badge top right" class="badge is-primary">{{ $count }}</span>
+                        <a href="{{ .Params.link }}">
+                            <h3 class="title is-5">{{ .Params.title }}</h3>
+                            <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
+                            <figure>
+                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+        <h2 class="subtitle">
+            Medium
+        </h2>
+
+        <div class="tile is-ancestor is-vertical">
+            <div class="tile">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ $headlessbundle := .Site.GetPage "/funders" }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+            {{ if eq .Params.level "Medium" }}
+                {{ $startDate := time .Params.startDate }}
+                {{ $endDate := time .Params.endDate }}
+                {{ if ge $endDate now }}
+                    {{ $count := add ($.Scratch.Get "counter") 1 }}
+                    {{ $.Scratch.Set "counter" $count }}
+                        {{ if eq ( mod $count 4 ) 1 }}
+                            {{ if gt $count 1 }}
+            </div>
+            <div class="tile">
+                            {{ end }}
+                        {{ end }}
+                <div class="tile is-parent"> 
+                    <article class="tile is-child box notification is-warning">
+                    <span title="Badge top right" class="badge is-danger">{{ $count }}</span>
+                        <a href="{{ .Params.link }}">
+                            <h3 class="title is-5">{{ .Params.title }}</h3>
+                            <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
+                            <figure>
+                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>        
+        <h2 class="subtitle">
+            Small
+        </h2>
+
+        <div class="tile is-ancestor is-vertical">
+            <div class="tile">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ $headlessbundle := .Site.GetPage "/funders" }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+            {{ if eq .Params.level "Small" }}
+                {{ $startDate := time .Params.startDate }}
+                {{ $endDate := time .Params.endDate }}
+                {{ if ge $endDate now }}
+                    {{ $count := add ($.Scratch.Get "counter") 1 }}
+                    {{ $.Scratch.Set "counter" $count }}
+                        {{ if eq ( mod $count 5 ) 1 }}
+                            {{ if gt $count 1 }}
+            </div>
+            <div class="tile">
+                            {{ end }}
+                        {{ end }}
+                <div class="tile is-parent"> 
+                    <article class="tile is-child box notification is-danger">
+                        <span title="Badge top right" class="badge is-warning">{{ $count }}</span>
+                        <a href="{{ .Params.link }}">
+                            <h3 class="title is-5">{{ .Params.title }}</h3>
+                            <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
+                            <figure >
+                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                            </figure>
+                        </a>
+                    </article>
+                </div>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

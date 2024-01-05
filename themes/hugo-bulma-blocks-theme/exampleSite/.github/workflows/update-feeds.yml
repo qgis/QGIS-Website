@@ -1,0 +1,44 @@
+# This workflow scrapes the latest show episodes and commits the new episode and data
+# files to the repo.
+
+name: ⚒️ Scrape and commit
+on:
+  schedule:
+    - cron:  '0 0,12 * * *'  # At midnight & noon UTC
+  workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+    - name: '🛒 Checkout Hugo Project'
+      uses: actions/checkout@v3
+      with:
+        ref: main
+        path: ./CHANGE-TO-YOUR-REPO-NAME
+
+    - name: '🐍 Setup Python'
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+        architecture: 'x64'
+        cache: "pipenv"
+
+    - name: '🚸Install Python deps'
+      run: |
+        cd ./CHANGE-TO-YOUR-REPO-NAME
+        pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
+        pipenv run pip freeze
+
+    - name: '🗞️ Fetch Feed Content'
+      run: |
+        cd ./CHANGE-TO-YOUR-REPO-NAME
+        pipenv run pip freeze
+        pipenv run ./fetch_feeds.py
+
+    - name: '✉️ Commit'
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'Funders scraped and committed via a GitHub Action.'
+        repository: ./CHANGE-TO-YOUR-REPO-NAME
+        # push_options: --force

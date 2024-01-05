@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Hugo Live Fast",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev local fastrender", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Build Using Locally Installed Hugo",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "build local", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Hugo Live Debug",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev local", // The name of the task defined above
+            "request": "attach"
+        },                
+        {
+            "name": "Dev Build",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev build", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Run Dev Under Docker",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Run Dev with Metrics",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "dev-metrics", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Deploy Production",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "deploy-prod", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Run Tests",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "tests", // The name of the task defined above
+            "request": "attach"
+        },
+        {
+            "name": "Run Help",
+            "type": "shell",
+            // see tasks.json for definition
+            "preLaunchTask": "help", // The name of the task defined above
+            "request": "attach"
+        },
+    ]
+}

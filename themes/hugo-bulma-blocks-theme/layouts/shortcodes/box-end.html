@@ -1,0 +1,9 @@
+
+{{ $noFooter := .Get "no-footer" | default "" }}
+                    </div>
+
+                </div>
+                {{ if eq $noFooter "" }}
+                    <div class="box-section-footer">
+                    </div>
+                {{ end }}

@@ -1,0 +1,121 @@
+/* SASS Stuff here .... */
+
+
+/* Customize mark tag used by search results */
+mark
+  background: linear-gradient(-100deg, {{ .Param "complementary4" }}, {{ .Param "complementary3" }} 95%);
+  border-radius: 0.25em;
+  padding: .05rem 0.25em;
+
+.gradient-row
+  background: #1D2027
+  height: 3em
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.context-container
+  @extend .gradient-row
+  position: fixed
+  width: 100%
+  top: 66px
+  z-index: 100
+  transition: top 0.3s;
+  
+  input
+    background: #ffffff00
+    border: 1px solid #999999
+    color: #999999
+    
+    &::placeholder
+      color: #999999
+    
+    &:focus 
+      background: #fff
+
+
+.news-text
+  padding-right: 3em
+  font-size: 14px
+  padding-top: 0.3em
+  padding-bottom: 0.3em
+  letter-spacing: 1px
+  font-weight: 500
+
+.img-grid-1-columns-0
+  .img-grid-1-column-0
+    display: flex
+    justify-content: flex-end
+    align-items: end
+    padding-right: 0
+    img
+      height: 80%
+  .img-grid-1-column-1
+    align-items: end
+    display: flex
+
+.img-grid-1-columns-1
+  margin-top: -1.5em
+  padding-right: 50px
+  .img-grid-1-column-2
+    display: flex
+    justify-content: flex-end
+    padding-right: 0
+    img
+      height: 60%
+
+.box-section-footer
+  @extend .gradient-row
+  margin-top: -1em
+
+.hero-title
+  font-size: 5.7em
+  font-weight: 800
+  line-height: 5.7rem;
+
+.mkdown
+  strong, h1, h2, h3
+    color: inherit
+  li
+    margin: 20px 0
+
+.bottom-bar
+  border-bottom: 1.5em solid  {{ .Param "complementary2" }}
+
+.pb-7
+  padding-bottom: 4rem !important
+
+.hero-body 
+  .container 
+    margin: auto
+    .image 
+      margin: auto
+
+.feature
+  padding: 7rem 0
+  .deco-arrow 
+    &:before
+      position: absolute
+      width: 34px
+      content: url("/img/gis-arrow.svg")
+      margin-top: -30px
+      margin-left: -40px
+
+  .deco-block-1
+    img 
+      position: relative;
+      z-index: 2;
+    &:after
+      position: absolute
+      width: 270px
+      content: url("/img/darkrectangle.svg")
+      margin-top: -30px
+      margin-left: -240px
+      z-index: 1;
+      
+  .add-text 
+    color: #6a6a6a    
+    margin-top: 5rem 
+    .column
+      margin-right: 2rem
+

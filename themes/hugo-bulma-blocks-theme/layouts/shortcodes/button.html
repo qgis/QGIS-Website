@@ -1,0 +1,18 @@
+{{ $class := .Get "class" | default "is-primary" }}
+{{ $icon := .Get "icon" | default "" }}
+{{ $text := .Get "text" | default "" }}
+{{ $link := .Get "link" | default "" }}
+{{ $fullwidth := .Get "fullwidth" | default "false" }}
+{{ $width := "" }}
+{{ if eq $fullwidth "true" }}
+{{ $width = "is-fullwidth" }}
+{{ end }}
+
+<a class="button {{ $class }} {{ $width }}" href="{{ absURL $link }}">
+    {{- if ne $icon "" }}
+    <span class="icon is-small">
+    <i class="{{ $icon }}"></i>
+    </span>
+    {{- end }}
+    <span>{{ $text }}</span>
+</a>

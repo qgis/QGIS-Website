@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+
+{{ partial "banner.html" . }}
+
+{{ define "main" }}
+
+
+{{ range ((where site.RegularPages "Section" "people").GroupBy "Type") }}
+
+<section class="{{ .Key | pluralize }}-list">
+    <div class="container">
+        <h2 class="title is-3 my-3">{{ .Key | pluralize | title }}</h2>
+        <div class="columns is-multiline">
+            {{ range .Pages }}
+            <div class="column is-6 is-4-fullhd is-4-desktop is-12-mobile" style="display: flex;">
+                {{ partial "people/small.html" . }}
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ partial "footer.html"}}

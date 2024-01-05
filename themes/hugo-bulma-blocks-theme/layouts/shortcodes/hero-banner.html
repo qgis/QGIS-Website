@@ -1,0 +1,20 @@
+<section class="hero is-info is-medium has-bg-img">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <p class="title is-size-1">
+                {{ index .Params 0 }}
+            </p>
+            <p class="subtitle is-size-2">
+                {{ .Inner }}
+            </p>
+        </div>
+    </div>
+</section>
+
+{{ range first 1 ((where site.RegularPages "Section" "news")) }}
+<div class="box cta">
+    <p class="has-text-centered">
+        <span class="tag">News</span> {{ .Title }}
+    </p>
+</div>
+{{ end }}

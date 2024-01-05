@@ -1,0 +1,38 @@
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ $backgroundColor := .Get "backgroundColor" | default "#FFF"}}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<section class="section has-background-grey-darker {{ $animationClasses }} pl-6 pr-6" style="margin-top: -75px">
+    <div class="container is-fluid">
+        <div class="tile is-ancestor">
+            <div class="tile is-parent" >
+                {{- range (seq 0 (sub (len .Params) 1) ) }}
+
+                <div class="tile is-child pl-3 pr-3">
+                    {{- $myArg := $.Get . }}
+                    {{/* printf "\n Args: %s" $myArg */}}
+                    {{ $myArgs := split $myArg ":" }}
+                    {{/* printf "\n Args: %s" $myArgs */}}
+                    <figure class="image">
+                        <img width="128" height="128" class="has-ratio"
+                             src="{{ index $myArgs 2 | absURL | safeURL }}">
+                    </figure>
+                    <div class="has-text-white p-5 has-background-{{ index $myArgs 3 }}" style="height: 15em">
+                        <article class="has-text-white article title is-5 pt-5 pl-3">
+                            {{ index $myArgs 0 }}
+                        </article>
+                        <article class="has-text-white article subtitle is-6 pt-6 pl-3 pr-3">
+                            {{ index $myArgs 1 }}
+                        </article>
+                    </div>
+
+                    <div class="has-background-complementary2" style="min-height: 1.5em;"></div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+

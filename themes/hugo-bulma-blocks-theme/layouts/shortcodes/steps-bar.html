@@ -1,0 +1,27 @@
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<section class="section">
+    <div class="container {{ $animationClasses }}">  
+        <ul class="steps has-content-centered">   
+            {{ $.Scratch.Set "counter" 0 }} 
+            {{- range (seq 0 (sub (len .Params) 1) ) }}
+            {{ $count := add ($.Scratch.Get "counter") 1 }}
+            {{ $.Scratch.Set "counter" $count }}                    
+            {{- $myArg := $.Get . }}
+            {{ $myArgs := split $myArg ":" }}
+            <li class="steps-segment {{ if eq (index $myArgs 2) "true" }}is-active{{ end }}">
+                <span class="steps-marker">
+                    <i class="{{ index $myArgs 0 }}"></i>
+                </span>
+                <div class="steps-content">
+                    <p class="is-size-4">Step {{ $count }}</p>
+                    <p>{{ index $myArgs 1 }}</p>
+                </div>
+            </li>                    
+            {{ end }}  
+        </ul>
+    </div>
+</section>

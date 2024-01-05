@@ -1,0 +1,71 @@
+@import "../utilities/derived-variables"
+
+$footer-tablet-breakpoint: 1450px !default
+$footer-background-color: hsla(222, 15%, 13%, 1) !default
+$footer-padding: 4rem 10rem 1rem 11.25rem !default
+$footer-padding-mobile: 4rem 2rem 4rem !default
+
+.footer
+  background-color: $footer-background-color
+
+  text-align: center
+  padding: $footer-padding-mobile
+
+  .copyright // I can't achieve this with the bulma classes
+    display: none
+    +from($desktop)
+      display: unset
+
+  +from($desktop)
+    padding: $footer-padding
+    text-align: unset
+
+  +between($desktop, $footer-tablet-breakpoint)
+    padding: 4rem 2rem 1rem 2rem
+
+
+  figure.image
+    height: auto
+    margin: 0 auto
+    margin-bottom: 4rem
+    +from($desktop)
+      margin: unset
+
+  button.button
+    padding: 40px 87.5px
+    font-size: 24px
+    font-weight: 600
+    +from($desktop)
+      padding: 1rem 2rem
+      font-size: 20px
+      font-weight: 400
+
+
+  a > i
+    font-size: 26px
+    +from($desktop)
+        font-size: 32px
+
+  .social-icons-links
+    display: grid
+    grid-template-columns: repeat(3, 26px)
+    gap: 32px
+    justify-content: center
+    margin-top: 4rem !important
+    +from($desktop)
+      display: grid
+      grid-template-columns: repeat(auto-fit, 32px)
+      gap: 34px
+      justify-content: unset
+      margin-top: unset !important
+
+
+  .privacy-links
+    margin-top: 4rem
+    +from($desktop)
+      margin-top: unset
+
+  
+    
+  
+  

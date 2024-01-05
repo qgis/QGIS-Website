@@ -1,0 +1,30 @@
+{{ $showcaseType := .Get "showcase" | default "" }}
+<section class="section">
+    <div class="container is-min-height">
+        <div class="columns is-multiline">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ $headlessbundle := .Site.GetPage "/community-blogs" }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+            {{ if eq .Params.showcase $showcaseType }}
+                {{ $count := add ($.Scratch.Get "counter") 1 }}
+                {{ $.Scratch.Set "counter" $count }}
+                <div class="column is-12">
+                    <div class="notification">
+                        <span title="Badge top right" class="badge is-primary">{{ $count }}</span>
+                        <a href="{{ .Params.link }}">
+                            <h3 class="title is-5">{{ .Params.title }}</h3>
+                            <article class="subtitle is-7">{{ .Params.date }}</article>
+                            <figure>
+                                <img src="{{ .Site.BaseURL }}community-blogs/{{ .Params.image }}" alt="{{ .Params.title }}">
+                            </figure>
+                        </a>
+                        <div class="content">
+                            {{ .Page.RawContent | safeHTML }}
+                        </div>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+        </div>
+    </div>
+</section>

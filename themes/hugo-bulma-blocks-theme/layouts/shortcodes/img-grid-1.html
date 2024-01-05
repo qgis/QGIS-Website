@@ -1,0 +1,28 @@
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<div class="container-fluid pt-6 pb-6">
+    <div class="columns img-grid-1-columns-0">
+        {{- range $index, $element := .Params }}
+            {{ if lt $index 2 }}
+            <div class="column img-grid-1-column-{{ $index }}">
+                {{- $myArgs := split $element ":" }}
+                <img src="{{ index $myArgs 1 | absURL | safeURL }}">
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+    <div class="columns img-grid-1-columns-1">
+        {{- range $index, $element := .Params }}
+            {{ if gt $index 1 }}
+            <div class="column img-grid-1-column-{{ $index }}">
+                {{- $myArgs := split $element ":" }}
+                <img src="{{ index $myArgs 1 | absURL | safeURL  }}">
+            </div>
+            {{ end }}
+        {{ end }}
+    </div>
+</div>
+

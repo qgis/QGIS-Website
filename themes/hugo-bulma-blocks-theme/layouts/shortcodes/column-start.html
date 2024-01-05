@@ -1,0 +1,11 @@
+{{ $class := .Get "class" | default ""}}
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}{{/* is-flex to ensure equal heights */}}
+        <div class="column is-flex {{ $animationClasses }} {{ $class }}">
+        
+
+
+

@@ -1,0 +1,24 @@
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+
+<section class="section {{ $animationClasses }}">
+    <div class="container">
+        <nav class="level is-fullwidth">
+            {{- range (seq 0 (sub (len .Params) 1) ) }}
+            <div class="level-item has-text-centered">
+                {{- $myArg := $.Get . }}
+                {{ $myArgs := split $myArg ":" }}
+                <a class="button is-primary" href="{{ absURL (index $myArgs 2) }}">
+                    <span class="icon is-small">
+                    <i class="{{ index $myArgs 0 }}"></i>
+                    </span>
+                    <span>{{ index $myArgs 1 }}</span>
+                </a>
+            </div>
+            {{ end }}        
+        </nav>
+    </div>
+</section>

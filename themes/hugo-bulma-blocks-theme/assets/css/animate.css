@@ -1,0 +1,35 @@
+/* Card animations as we scroll - see https://www.youtube.com/watch?v=T33NN_pPeNI */
+.animation-hide-left {
+    opacity: 50;
+    filter: blur(15px);
+    transform: translateX(-50px);
+    transition: all 1s;
+    transform-origin: left;
+  }
+  .animation-hide-right {
+    opacity: 50;
+    filter: blur(15px);
+    transform: translateX(50px);
+    transition: all 1s;
+    transform-origin: right;
+  }
+  
+  .animation-show {
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;      
+    animation-name: bounce;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  }
+  
+  @keyframes bounce {
+    0%   { transform: scale(2,2)      translateX(50px); }
+    30%  { transform: scale(1.5,1.5)   translateX(25px); }
+    50%  { transform: scale(1.25,1.25)   translateX(10px); }
+    750%  { transform: scale(1.10,1.10) translateX(5px); }
+    85%  { transform: scale(1,1)      translateX(2px); }
+    90%  { transform: scale(1,1)      translateX(1px); }
+    100% { transform: scale(1,1)      translateX(0.5px); }
+  }  
+  
+  
+  /* Card animations as we scroll ends */

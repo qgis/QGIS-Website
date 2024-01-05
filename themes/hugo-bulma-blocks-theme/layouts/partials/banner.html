@@ -1,0 +1,56 @@
+{{/* see https://bulma.io/documentation/layout/hero/ for size options */}}
+{{ if .Params.HasBanner }}
+    {{ $size := .Params.HeroSize | default "is-small" }}
+    <section class="hero is-dark {{ $size }} has-bg-img"
+    {{ if ( .Params.HeroImage ) }}
+    style="background: url('{{ absURL .Params.HeroImage | safeCSS }}');
+        background-position: center;
+        background-size: cover;"
+    {{ end }}>
+
+        <div class="hero-body">
+            <div class="columns container">
+                <div class="column is-1">
+                </div>
+                <div class="column  is-flex hero-text has-text-left">
+                    <div class="hero-container">
+                        {{ if .Params.LabelText }}
+                            <div class="label">
+                                {{ .Params.LabelText }}
+                            </div>
+                        {{ end }}
+                        <h1 class="title hero-title pr-3">
+                            {{ .Params.Title }}
+                        </h1>
+                        {{ if .Params.SubTitle }}
+                            <p class="subtitle is-size-4 hero-subtitle">
+                                {{ .Params.SubTitle }}
+                            </p>
+                        {{ end }}    
+                    </div>
+                    <div class="is-vcentered">
+                        {{ if .Params.ButtonText }}
+                            <a class="button is-primary1 is-size-5" href="{{ .Params.ButtonLink | absURL }}">
+                                {{ .Params.ButtonText }}
+                            </a>
+                        {{ end }}
+                        {{ if .Params.LastVersion }}
+                            <p class="subtitle is-size-5 hero-subtitle">
+                                {{ .Params.LastVersion }}
+                            </p>
+                        {{ end }}
+                </div>
+
+                </div>
+                {{ if ( .Params.HeroLogo ) }}
+                <div class="column is-4 is-justify-content-center" style="display: flex">
+                    <figure class="image">
+                        <img src='{{ absURL .Params.HeroLogo | safeCSS }}'>
+                    </figure>
+                </div>
+                <div class="column is-1">
+                </div>
+                {{ end }}
+        </div>
+    </section>
+{{ end }}

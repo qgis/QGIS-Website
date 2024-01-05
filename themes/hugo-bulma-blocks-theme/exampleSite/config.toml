@@ -1,0 +1,216 @@
+# May be overwritten in .github/actions/hugo.yml 
+# when deploying to gh pages
+baseURL = 'https://YOURDOMAIN/'
+languageCode = 'en-us'
+title = 'My Web Site'
+theme = 'hugo-bulma-blocks-theme'
+# Default pagination.
+# Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
+paginate = 50
+
+# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+pygmentsUseClasses = true
+pygmentsCodefences = true
+
+
+# Folders in these folders get published automatically
+staticDir = ['static']
+
+[taxonomies]
+  category = 'categories'
+  series = 'series'
+  tag = 'tags'
+  # See readme for submenu notes
+  submenu = 'submenus'
+
+[params]
+# Brand colours:
+primary1 = "#589632"
+primary2 = "#55828b"
+primary3 = "#395c6b"
+primary4 = "#285238"
+primary5 = "#589632"
+primary1-invert = "#fff"
+primary2-invert = "#eeeeee"
+primary3-invert = "#eeeeee"
+primary4-invert = "#eeeeee"
+primary5-invert = "#eeeeee"
+# TODO update these to gradient colours like above
+complementary1 = "#589632"
+complementary2 = "#ee7913"
+complementary3 = "#EEE766"
+complementary4 = "#93b023"
+complementary5 = "#a7cecb"
+complementary6 = "#589732"
+complementary7 = "#93B022"
+complementary8 = "#385C6B"
+light1 = "#fbfbfb"
+light2 = "#eeeeee"
+dark1 = "#999999"
+dark2 = "#000"
+# Bulma specific colours based on our branding
+black = "#000"
+white = "#fff"
+grey-dark = "#444444"
+grey-light = "#eeeeee"
+primary = "#a7cecb"
+danger = "#ee7913"
+info = "#93b023"
+success = "#589632"
+warning = "#EEE766"
+link = "#ee7913"
+# Brand fonts to override bulma font families
+heading-font = "'Montserrat', sans-serif"
+text-font = "'Work Sans', sans-serif"
+fancy-font = "'Sevillana', cursive"
+menuFontClass = "is-size-7"
+## Gh repo for site footer (include trailing slash)
+githubUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/"
+## GH Repo for filing a new issue
+githubIssueUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/issues/new/choose"
+### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
+githubEditUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/edit/main"
+### Radius for boxes
+corner-radius = "0px"
+
+# This will cause html in markdown files to be rendered directly
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Syntax highlighter for code blocks
+# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+[markup.highlight]
+      codeFences = true
+      guessSyntax = true
+      hl_Lines = ""
+      lineNoStart = 1
+      lineNos = false
+      lineNumbersInTable = false
+      tabWidth = 4
+      noClasses = false
+      style = "monokai"
+
+
+# See https://gohugo.io/content-management/menus/
+[menu]
+[[menu.main]]
+  name = "About"
+  url = "/about1"
+  weight = 10
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
+[[menu.main]]
+  name = "Community"
+  url = "/community"
+  weight = 20 # Sets the menu order
+  #pre = "<i class='fa-solid fa-people-group mr-1'></i>"
+
+[[menu.main]]
+  name = "Resources"
+  url = "/hub/"
+  weight = -110 # Sets the menu order
+  #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
+
+[[menu.main]]
+  name = "Download"
+  url = "/download/download"
+  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
+  weight = -110 # Sets the menu order
+
+[[menu.main]]
+  name = "Value"
+  url = "/value-proposition"
+  #pre = "<i class='fa fa-heart mr-1'></i>"
+  weight = -110 # Sets the menu order
+
+# Submenus are done this way: parent -> identifier
+[[menu.main]]
+  parent = "Resources"
+  name = "Showcase"
+  url = "/showcase/overview/"
+  weight = -120
+  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
+
+[[menu.main]]
+  parent = "Resources"
+  name = "Documentation"
+  url = "/documentation/overview/"
+  weight = -120
+  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
+
+[[menu.main]]
+  parent = "Resources"
+  name = "Roadmap"
+  url = "/roadmap/roadmap/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
+[[menu.main]]
+  parent = "Resources"
+  name = "License"
+  url = "/license/"
+  weight = -10
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
+[[menu.documentation]]
+  name = "Documentation"
+  url = "/documentation/overview/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.documentation.params]
+    submenu = "documentation"
+
+[[menu.showcase]]
+  name = "Overview"
+  url = "/showcase/overview/"
+  weight = -150
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
+[[menu.showcase]]
+  name = "Maps"
+  url = "/showcase/maps/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
+[[menu.showcase]]
+  name = "Screenshots"
+  url = "/showcase/screenshots/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
+[[menu.showcase]]
+  name = "Case Studies"
+  url = "/showcase/case-studies/"
+  weight = -110
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
+[[menu.showcase]]
+  name = "Blogs"
+  url = "/showcase/community-blogs/"
+  weight = -140
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
+[[menu.showcase]]
+  name = "User Group News"
+  url = "/showcase/user-group-events/"
+  weight = -150
+  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.showcase.params]
+    submenu = "showcase"
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+

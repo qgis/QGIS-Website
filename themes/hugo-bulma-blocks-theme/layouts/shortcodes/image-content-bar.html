@@ -1,0 +1,25 @@
+{{ $animationClasses := "" }}
+{{ $animate := .Get "animate" | default "false" }}
+{{ if eq $animate "true" }}
+{{ $animationClasses := "animation-element animate-from-left" }}
+{{ end}}
+<div class="container">
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            {{- range (seq 0 (sub (len .Params) 1) ) }}
+            <div class="tile is-child pl-5 pr-5">
+                {{- $myArg := $.Get . }}
+                {{ $myArgs := split $myArg ":" }}
+                <figure class="image">
+                    <img width="64" height="64" class="has-ratio"
+                         src="{{ index $myArgs 1 | absURL | safeURL  }}">
+                </figure>
+                <article class="article subtitle pt-2 has-text-centered">
+                    {{ index $myArgs 0 }}
+                </article>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
