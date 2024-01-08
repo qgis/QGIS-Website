@@ -1,7 +1,6 @@
 {{ $classes := .Get "classes" | default "" }}
 <div class="columns content">
-    <div class="column is-10 is-offset-1 {{$classes}}">
+    <div class="column is-12 {{ $classes }}">
         {{ .Inner | markdownify }}
     </div>
-    <div class="column is-1"></div>
 </div>

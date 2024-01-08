@@ -5,13 +5,16 @@
 {{ if eq $animate "true" }}
 {{ $animationClasses := "animation-element animate-from-left" }}
 {{ end }}
+{{ $sidebar := .Get "sidebar" | default false }}
+
 
 <section class="section {{ $animationClasses }}">
     <div class="container {{ $classes }}">
-
-           
-
-
-
-
+        {{ if eq .Page.Params.sidebar true}}
+        <div class="columns is-multiline is-centered">
+        {{ partial "sidebar"}}
+        <div class="content column is-9"> 
+        {{ end }}
+        
+        
 

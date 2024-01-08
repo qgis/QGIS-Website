@@ -7,7 +7,7 @@ draft: false
 heroSize: "is-medium"
 heroLogo: "img/logosign.svg"
 HeroImage: "img/hegobg.png"
-HasBanner: "yes"
+HasBanner: true
 ButtonText: "Download" 
 ButtonLink: "/download/"
 LastVersion: "Version: 3.30.1"

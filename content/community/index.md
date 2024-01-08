@@ -4,7 +4,7 @@ title: "Our Community"
 subtitle: "Experience the world’s most vibrant community of geospatial experts and enthusiasts"
 draft: false
 heroImage: "img/banners/banner4.png"
-sidebar: "true"
+sidebar: true
 ---
 {{< content-start  >}}
 {{< block

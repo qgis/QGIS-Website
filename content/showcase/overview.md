@@ -4,7 +4,9 @@ title: "Gallery"
 subtitle: "Amazing work from our community"
 draft: false
 heroImage: "img/banners/banner3.png"
+HasBanner: "yes"
 # Which second level menu to show
+sidebar: true
 submenus: showcase
 ---
 

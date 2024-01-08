@@ -12,7 +12,7 @@ $navbar-fixed-z: 30 !default
 $navbar-item-color: $black !default
 $navbar-item-hover-color: $link !default
 $navbar-item-hover-background-color: $scheme-main-bis !default
-$navbar-item-active-color: $scheme-invert !default
+$navbar-item-active-color: $black !default
 $navbar-item-active-background-color: transparent !default
 $navbar-item-img-max-height: 1.75rem !default
 
@@ -77,7 +77,7 @@ $navbar-colors: $colors !default
           &:hover,
           &.is-active
             background-color: bulmaDarken($color, 5%)
-            color: $color-invert
+            color: $black
         .navbar-link
           &::after
             border-color: $color-invert
@@ -95,7 +95,7 @@ $navbar-colors: $colors !default
             &:hover,
             &.is-active
               background-color: bulmaDarken($color, 5%)
-              color: $color-invert
+              color: $black
           .navbar-link
             &::after
               border-color: $color-invert
@@ -103,13 +103,13 @@ $navbar-colors: $colors !default
         .navbar-item.has-dropdown:hover .navbar-link,
         .navbar-item.has-dropdown.is-active .navbar-link
           background-color: bulmaDarken($color, 5%)
-          color: $color-invert
+          color: $black
         .navbar-dropdown
           a.navbar-item
             font-weight: 400 !important
             &.is-active
               background-color: $color
-              color: $color-invert
+              color: $black
   & > .container
     align-items: stretch
     display: flex
@@ -342,7 +342,6 @@ a.navbar-item,
         bottom: 100%
         box-shadow: 0 -8px 8px bulmaRgba($scheme-invert, 0.1)
         top: auto
-    &.is-active,
     &.is-hoverable:focus,
     &.is-hoverable:focus-within,
     &.is-hoverable:hover
