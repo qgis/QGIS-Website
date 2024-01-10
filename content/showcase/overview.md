@@ -4,7 +4,7 @@ title: "Gallery"
 subtitle: "Amazing work from our community"
 draft: false
 heroImage: "img/banners/banner3.png"
-HasBanner: "yes"
+HasBanner: true
 # Which second level menu to show
 sidebar: true
 submenus: showcase
@@ -16,8 +16,8 @@ submenus: showcase
 
 QGIS is an incredibly powerful toolset, capable of a range of diverse functionality. In this showcase you can discover some the capabilities of QGIS and the work and stories of users from around the world who have applied QGIS to help achieve their goals.
 
-Name | Description
-------|-------------
+| Name | Description |
+| ---- | ----------- |
 {{< button
 fullwidth = "true"
 icon = "fa-solid fa-calendar"

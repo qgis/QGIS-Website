@@ -28,12 +28,11 @@
     background: rgb(225, 225, 225);
 }
 
-.sidebar ul,
-.sidebar ul ul,
-.sidebar ul ul ul {
+.sidebar ul {
     list-style: none;
     margin-left: 0rem;
     padding-left: 1rem;
+    list-style-type: none !important;
 }
 
 /**
