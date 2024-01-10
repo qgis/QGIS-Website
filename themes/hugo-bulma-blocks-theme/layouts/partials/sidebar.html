@@ -1,70 +1,113 @@
-<div class="column is-3">
+{{ $currentPage := . }}
+{{ $pageUrl:= $currentPage.RelPermalink }}
 
-  <nav class="sidebar">
-    <ul class="content-wrapper">
-          <li>
-            <a class="" href="/about/">About</a>
-          </li>
-          <li>
-            <a class="" href="/community/">Community</a>
+<div class="column is-3">
+    <nav class="sidebar">
+        <ul class="content-wrapper">
+            <li>
+                <div class="has-child">
+                    <a href="/about/">About</a>
+                    <a href="#" class="drop-arrow collapsed"
+                        ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
+                    /></a>
+                </div>
+            </li>
+            <li>
+                <div class="has-child">
+                    <a href="/community/">Community</a>
+                    <a href="#" class="drop-arrow collapsed"
+                        ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
+                    /></a>
+                </div>
+            </li>
+            <li>
+                <a href="/download/download/">Download</a>
+            </li>
+            <li class="has-active">
+                <div class="has-child">
+                    <a href="/hub/">Resources</a>
+                    <a href="#" class="drop-arrow"
+                        ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
+                    /></a>
+                </div>
                 <ul>
                     <li>
-                    <a href="/value-proposition/">Value</a>
+                        <a href="/showcase/overview/">Showcase</a>
                     </li>
                     <li>
-                      <a href="/charter/">Charter</a>
-                      </li>
-                </ul>
-          </li>
-          <li>
-            <a href="/download/download/">Download</a>
-          </li>
-          <li class="has-active">
-            <a href="/hub/">Resources</a>
-                <ul>
-                    <li>
-                      <a href="/showcase/overview/">Showcase</a>
-                    </li>
-                    <li class="is-active">
-                      <a href="/documentation/overview/">Documentation</a>
+                        <a href="/documentation/overview/">Documentation</a>
                     </li>
                     <li>
-                      <a href="#">Roadmap</a>
+                        <a href="#">Roadmap</a>
                     </li>
                     <li>
-                      <a href="#">License</a>
+                        <a href="#">Releases</a>
                     </li>
                     <li>
-                      <a href="#">Roadmap</a>
+                        <a href="#">Case studies</a>
                     </li>
                     <li>
-                      <a href="#">Showcase</a>
+                        <a href="#">Books</a>
                     </li>
                     <li>
-                      <a href="#">Roadmap</a>
+                        <a href="#">Daily reports</a>
                     </li>
                     <li class="external-link">
-                      <a href="#">Plugins</a>
+                        <a href="#">Plugins</a>
+                    </li>
+                    <li class="has-active">
+                        <div class="has-child">
+                            <a href="#">Showcase</a>
+                            <a href="#" class="drop-arrow"
+                                ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
+                            /></a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="/value-proposition/">Value</a>
+                            </li>
+                            <li class="is-active">
+                                <a href="/charter/">Charter</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                      <a href="#">Showcase</a>
-                      <ul>
-                        <li>
-                        <a href="/value-proposition/">Value</a>
-                        </li>
-                        <li>
-                          <a href="/charter/">Charter</a>
-                          </li>
-                    </ul>
-                    </li>
-                    <li>
-                      <a href="#">License</a>
+                        <a href="#">License</a>
                     </li>
                 </ul>
-          </li>
+            </li>
+        </ul>
+    </nav>
+</div>
+{{/*  
+<div class="column is-3">
+  <nav class="sidebar">
+    <ul class="content-wrapper">
+      {{ print $pageUrl}}
+    {{- range site.Menus.main }}
+        {{ $menuItemUrl := .URL }}
+        {{ if .HasChildren }}
+        {{ print $menuItemUrl}}
+            <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+              <div class="has-child">
+                <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                <a href="#" class="drop-arrow"></a>
+              </div>
+              <ul> 
+                {{ range sort .Children "Weight" }}
+                <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+                  <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                </li>
+                {{ end }}
+              </ul> 
+            {{ else }}
+            <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+              <a href="{{ .URL }}">
+                {{ .Pre }}<span>{{ .Name }}</span>
+            </a>
+            </li>
+        {{ end }}
+    {{- end }}
     </ul>
   </nav>
-
-</div>
-
-
+</div>  */}}

@@ -1,12 +1,9 @@
-a.is-active > span {
-    border-bottom: solid gray 1px;
+.is-active > a > span,
+.is-active > span {
+    border-bottom: solid #589632 3px;
+    margin-bottom: -3px;
 }
 
 .is-semi-transparent {
-    opacity:0.9;
-}
-
-#menu > div > a > span:hover {
-    border-bottom: solid 1px;
-    color: black;
+    opacity: 0.9;
 }

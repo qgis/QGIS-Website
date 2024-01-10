@@ -1,14 +1,24 @@
 {{ $fontSize := .Site.Params.menuFontClass }}
 {{ $currentPage := . }}
 {{ $pageUrl:= $currentPage.RelPermalink }}
-<section >
-    <nav class="is-highest navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
-        <div class="container"> 
+<section>
+    <nav
+        class="is-highest navbar is-fixed-top has-shadow"
+        role="navigation"
+        aria-label="main navigation"
+    >
+        <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="{{ absURL "/" }}">
-                    <img alt="Logo" src="{{ absURL "img/logo.png" }}">
+                    <img alt="Logo" src="{{ absURL "img/logo.png" }}" />
                 </a>
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menu">
+                <a
+                    role="button"
+                    class="navbar-burger"
+                    aria-label="menu"
+                    aria-expanded="false"
+                    data-target="menu"
+                >
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -16,37 +26,58 @@
             </div>
             <div id="menu" class="navbar-menu">
                 <div class="navbar-end">
-                    {{ range sort .Site.Menus.main "Weight"}}
+                    {{ range sort .Site.Menus.main "Weight" }}
                         {{ $menuItemUrl := .URL }}
                         {{ if .HasChildren }}
-                    <div class="navbar-item has-text-weight-bold has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}">
-                        <a class="navbar-link {{ $fontSize }}" href="{{ .URL }}">
-                            {{ .Pre }}<span>{{ .Name }}</span>
-                        </a>
-                        <div class="navbar-dropdown">
-                            {{ range sort .Children "Weight"}}
-                            <a class="navbar-item  has-text-weight-bold {{ $fontSize }}{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
+                            <div
+                                class="navbar-item has-text-weight-bold has-dropdown is-hoverable{{ if eq $menuItemUrl $pageUrl }}
+                                    is-active
+                                {{ end }}"
+                            >
+                                <a
+                                    class="navbar-link {{ $fontSize }}"
+                                    href="{{ .URL }}"
+                                >
+                                    {{ .Pre }}<span>{{ .Name }}</span>
+                                </a>
+                                <div class="navbar-dropdown">
+                                    {{ range sort .Children "Weight" }}
+                                        <a
+                                            class="navbar-item  has-text-weight-bold {{ $fontSize }}{{ if eq $menuItemUrl $pageUrl }}
+                                                is-active
+                                            {{ end }}"
+                                            href="{{ .URL }}"
+                                        >
+                                            {{ .Pre }}<span>{{ .Name }}</span>
+                                        </a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        {{ else }}
+                            <a
+                                class="navbar-item has-text-weight-bold {{ $fontSize }}{{ if eq $menuItemUrl $pageUrl }}
+                                    is-active
+                                {{ end }}"
+                                href="{{ .URL }}"
+                            >
                                 {{ .Pre }}<span>{{ .Name }}</span>
                             </a>
-                            {{ end }}
-                        </div>
-                    </div>
-                        {{ else }}
-                        <a class="navbar-item has-text-weight-bold {{ $fontSize }}{{ if eq $menuItemUrl $pageUrl }} is-active{{ end }}" href="{{ .URL }}">
-                            {{ .Pre }}<span>{{ .Name }}</span>
-                        </a>
                         {{ end }}
                     {{ end }}
 
+
                     <div class="navbar-item">
                         <div class="buttons is-medium">
-                            <a class="button is-primary1 {{ $fontSize }}" href="{{ "funding/" | absURL }}">
+                            <a
+                                class="button is-primary1 {{ $fontSize }}"
+                                href="{{ "funding/" | absURL }}"
+                            >
                                 <strong>Fund Us!</strong>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>    
+        </div>
     </nav>
 </section>
