@@ -1,5 +1,5 @@
 {
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.rulers": [88, 120],
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -43,6 +43,9 @@
         "baseURL": "http://localhost:1313"
     },
     "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     }
 }
