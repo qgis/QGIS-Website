@@ -1,9 +1,10 @@
-.is-active > a > span,
-.is-active > span {
-    border-bottom: solid #589632 3px;
-    margin-bottom: -3px;
+@media screen and (min-width: 1024px) {
+    :root {
+        --qg-nav-max-width: 960px;
+    }
 }
-
-.is-semi-transparent {
-    opacity: 0.9;
+@media screen and (min-width: 1408px) {
+    :root {
+        --qg-nav-max-width: 1344px;
+    }
 }
