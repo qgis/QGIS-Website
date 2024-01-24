@@ -135,3 +135,44 @@ mark
     z-index: 1;
     background-image: url("/img/blue_green_bg.svg")
     background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i);
+
+.explore
+  &.container
+    background-image: url("/img/community.svg")
+    background-color: {{ .Param "primary4" }}
+    padding: 7rem
+    display: flex;
+    flex-direction: column;
+  .columns
+    margin-top: -530px
+    background-color: #fff
+    border-radius: 20px
+  .column
+    padding: 0
+  .white-corner
+    margin-left: -130px
+    margin-top: -130px
+    width: 830px
+    height: 630px
+    background-color: #fff
+  img
+    object-fit: cover
+    height: 100%
+  li
+    margin-top: 24px;
+    margin-bottom: 24px;
+  .text
+    padding: 7rem
+  .button
+    background-color: #F1903B
+    color: #fff
+
+.arrow-ul
+  list-style-position: outside
+  list-style-image: url("/img/gis-arrow.svg")
+
+.light-blue
+  background-image: url("/img/light_blue_bg.svg")
+  background-color: #ECF1F4
+  padding: 7rem
+  text-align: center

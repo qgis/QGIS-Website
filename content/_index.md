@@ -85,6 +85,7 @@ img = "/img/main-share.png"
 order = 4
 >}}
 
+{{< explore >}}
 <!-- 
 {{< box-start classes="columns content notification is-light is-centered" backgroundImage="img/Rectangle 298.png" >}}
 {{< column-start class="column is-5">}}
