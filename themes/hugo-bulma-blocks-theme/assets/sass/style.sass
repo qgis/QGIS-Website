@@ -87,12 +87,14 @@ mark
 
 .hero-body 
   .container 
+    flex: 1
     margin: auto
     .image 
       margin: auto
 
 .feature
   padding: 7rem 0
+  margin-left: 140px
   .deco-arrow 
     &:before
       position: absolute
@@ -101,21 +103,35 @@ mark
       margin-top: -30px
       margin-left: -40px
 
-  .deco-block-1
-    img 
-      position: relative;
-      z-index: 2;
-    &:after
-      position: absolute
-      width: 270px
-      content: url("/img/darkrectangle.svg")
-      margin-top: -30px
-      margin-left: -240px
-      z-index: 1;
-      
   .add-text 
     color: #6a6a6a    
     margin-top: 5rem 
     .column
       margin-right: 2rem
 
+@for $i from 1 through 4
+  .left-deco-#{$i}:before
+    position: absolute
+    margin-right: -130px
+    width: 70px
+    height:  if($i % 2 == 0, 50%, 20%)
+    content: ""
+    background-image: url("/img/blue_green_bg.svg")
+    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i);
+
+  .deco-block-#{$i}
+    img 
+      position: relative;
+      z-index: 2;
+      border-radius: 20px
+      
+  .deco-block-#{$i}:after
+    position: absolute
+    width: 330px
+    margin-top: -30px
+    margin-left: -240px
+    height: if($i % 2 == 0, 50%, 200%)
+    content: ""
+    z-index: 1;
+    background-image: url("/img/blue_green_bg.svg")
+    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i);

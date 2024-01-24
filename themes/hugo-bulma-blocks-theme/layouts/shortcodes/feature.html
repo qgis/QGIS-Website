@@ -1,19 +1,17 @@
-<div class="feature">
+<div class="feature left-deco-{{ .Get "order" }}">
     <div class="container is-flex">
         <div class="columns is-vcentered">
             <div class="column is-5">
                 <h2 class="title has-text-weight-bold deco-arrow">
-                    Create map
+                    {{ .Get "title" }}
                 </h2>
                 <p class="is-size-4 has-text-weight-light">
-                    Unleash your creativity and experience first class
-                    cartographic design capabilities and design great maps. For
-                    desktop, mobile, cloud, and print.
+                    {{ .Get "text" }}
                 </p>
             </div>
             <div class="column is-7 ">
-                <figure>
-                    <img src="/img/main-create.png" class="deco-block-1" />
+                <figure class="deco-block-{{ .Get "order" }}">
+                    <img src={{ .Get "img" }} />
                 </figure>
             </div>
         </div>
@@ -22,28 +20,30 @@
         <div class="columns">
             <div class="column">
                 <p class="is-size-5 has-text-weight-bold">
-                    Class-leading cartography
+                    {{ .Get "col-title-1" }}
                 </p>
                 <p class="is-size-5 has-text-weight-light">
-                    Experience QGIS' extensive set of design options to bring
-                    your cartographic ideas to life.
+                    {{ .Get "col-text-1" }}
                 </p>
             </div>
             <div class="column">
                 <p class="is-size-5 has-text-weight-bold">
-                    Professional map production
+                    {{ .Get "col-title-2" }}
                 </p>
                 <p class="is-size-5 has-text-weight-light">
-                    Use the intuitive layout designer to produce high-quality,
-                    large-format print maps.
+                    {{ .Get "col-text-2" }}
                 </p>
             </div>
             <div class="column">
                 <p class="is-size-5 has-text-weight-bold">
-                    Powerful reporting tools
+                    {{ .Get "col-title-3" }}
                 </p>
                 <p class="is-size-5 has-text-weight-light">
-                    Create atlasses and reports with maps and tabular content.
+                    {{ .Get "col-text-3" }}
+                </p>
+            </div>
+            <div class="column">
+                <p>
                 </p>
             </div>
         </div>
