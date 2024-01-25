@@ -1,11 +1,11 @@
-<section class="section has-background-light3">
+<section class="section">
     <h1 class="title pt-4 pl-4">
-        SUSTAINED BY
+        QGIS supporters 
     </h1>
 
-    <div class="container is-max-desktop">
-        <div class="tile is-ancestor is-vertical">
+    <div class="container">
             <div class="tile">
+        <div class="tile is-vertical is-5">
                 {{ $.Scratch.Set "counter" 0 }}
                 {{ $headlessbundle := .Site.GetPage "/funders" }}
                 {{ range ( $headlessbundle.Resources.ByType "page" ) }}
@@ -15,13 +15,7 @@
                 {{ if ge $endDate now }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
-                {{ if eq ( mod $count 3 ) 1 }}
-                {{ if gt $count 1 }}
-            </div>
-            <div class="tile">
-                {{ end }}
-                {{ end }}
-                <div class="tile is-parent">
+                <div class="large-supporter tile is-parent">
                     <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
                         <a href="{{ .Params.link }}">
                             <figure>
@@ -29,57 +23,27 @@
                             </figure>
                         </a>
                     </article>
+                        <!--p>
+                            Silver partner
+                        </p-->
                 </div>
                 {{ end }}
                 {{ end }}
                 {{ end }}
-            </div>
         </div>
 
-        <div class="tile is-ancestor is-vertical">
+        <div class="tile is-vertical">
             <div class="tile">
                 {{ $.Scratch.Set "counter" 0 }}
                 {{ $headlessbundle := .Site.GetPage "/funders" }}
                 {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                {{ if eq .Params.level "Medium" }}
+                {{ if or (eq .Params.level "Small") (eq .Params.level "Medium") }}
                 {{ $startDate := time .Params.startDate }}
                 {{ $endDate := time .Params.endDate }}
                 {{ if ge $endDate now }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
-                {{ if eq ( mod $count 4 ) 1 }}
-                {{ if gt $count 1 }}
-            </div>
-            <div class="tile">
-                {{ end }}
-                {{ end }}
-                <div class="tile is-parent">
-                    <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0">
-                        <a href="{{ .Params.link }}">
-                            <figure>
-                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="200vw">
-                            </figure>
-                        </a>
-                    </article>
-                </div>
-                {{ end }}
-                {{ end }}
-                {{ end }}
-            </div>
-        </div>
-
-        <div class="tile is-ancestor is-vertical">
-            <div class="tile">
-                {{ $.Scratch.Set "counter" 0 }}
-                {{ $headlessbundle := .Site.GetPage "/funders" }}
-                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                {{ if eq .Params.level "Small" }}
-                {{ $startDate := time .Params.startDate }}
-                {{ $endDate := time .Params.endDate }}
-                {{ if ge $endDate now }}
-                {{ $count := add ($.Scratch.Get "counter") 1 }}
-                {{ $.Scratch.Set "counter" $count }}
-                {{ if eq ( mod $count 5 ) 1 }}
+                {{ if eq ( mod $count 6 ) 1 }}
                 {{ if gt $count 1 }}
             </div>
             <div class="tile">
@@ -89,7 +53,7 @@
                     <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0">
                         <a href="{{ .Params.link }}">
                             <figure >
-                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="120vw">
+                                <img class="grayscale" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="120vw">
                             </figure>
                         </a>
                     </article>
@@ -98,6 +62,7 @@
                 {{ end }}
                 {{ end }}
             </div>
+        </div>
         </div>
     </div>
 </section>
