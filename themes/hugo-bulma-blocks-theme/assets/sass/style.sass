@@ -92,15 +92,17 @@ mark
       margin: auto
 
 .feature
-  padding: 7rem 0
-  margin-left: 140px
+  position: relative
+  padding: 4rem
+  margin-top: 4rem
+  margin-bottom: 4rem
   .deco-arrow 
     &:before
       position: absolute
       width: 34px
       content: url("/img/gis-arrow.svg")
       margin-top: -30px
-      margin-left: -40px
+      margin-left: -30px
 
   .add-text 
     color: #6a6a6a    
@@ -111,8 +113,11 @@ mark
 @for $i from 1 through 4
   .left-deco-#{$i}:before
     position: absolute
-    width:  if($i % 2 == 0, 100px, 70px)
-    height:  if($i % 2 == 0, 50%, 20%)
+    top: 0
+    left: 0
+    margin-left:  if($i % 2 == 0, -210px, -110px)
+    width:  if($i % 2 == 0, 170px, 70px)
+    height:  if($i % 2 == 0, 100%, 40%)
     content: ""
     background-image: url("/img/blue_green_bg.svg")
     background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
@@ -123,16 +128,17 @@ mark
       z-index: 2
       border-radius: 20px
       
-  .deco-block-#{$i}:after
-    position: absolute
-    width: 330px
-    margin-top: -30px
-    margin-left: -240px
-    height: if($i % 2 == 0, 50%, 200%)
-    content: ""
-    z-index: 1
-    background-image: url("/img/blue_green_bg.svg")
-    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
+    &:after
+      position: absolute
+      width: 330px
+      margin-top: -30px
+      margin-left: -240px
+      top:  if($i % 2 == 0, 40%, 0)
+      height: if($i % 2 == 0, 30%, 110%)
+      content: ""
+      z-index: 1
+      background-image: url("/img/blue_green_bg.svg")
+      background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
 .explore
   &.container
@@ -145,6 +151,7 @@ mark
     margin-top: -530px
     background-color: #fff
     border-radius: 20px
+    overflow: hidden
   .column
     padding: 0
   .white-corner
@@ -155,6 +162,9 @@ mark
     background-color: #fff
   img
     object-fit: cover
+    object-position: left
+    height: 100%
+  figure
     height: 100%
   li
     margin-top: 24px
