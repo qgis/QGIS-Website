@@ -6,7 +6,7 @@ subtitle: "Giving the power of spatial visualization and decision making tools t
 draft: false
 heroSize: "is-medium"
 heroLogo: "img/logosign.svg"
-HeroImage: "img/hegobg.png"
+HeroImage: "img/hegobg1.png"
 HasBanner: true
 ButtonText: "Download" 
 ButtonLink: "/download/"
@@ -85,7 +85,6 @@ img = "/img/main-share.png"
 order = 4
 >}}
 
-{{< explore >}}
 <!-- 
 {{< box-start classes="columns content notification is-light is-centered" backgroundImage="img/Rectangle 298.png" >}}
 {{< column-start class="column is-5">}}
