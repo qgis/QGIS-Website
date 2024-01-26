@@ -112,8 +112,7 @@ mark
 @for $i from 1 through 4
   .left-deco-#{$i}:before
     position: absolute
-    margin-right: -130px
-    width: 70px
+    width:  if($i % 2 == 0, 100px, 70px)
     height:  if($i % 2 == 0, 50%, 20%)
     content: ""
     background-image: url("/img/blue_green_bg.svg")
