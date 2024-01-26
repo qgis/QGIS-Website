@@ -41,18 +41,19 @@
                 {{ end }}
             </div>
 
+            {{ $cols := 6 }}
             <div class="tile is-vertical">
                 <div class="tile">
                     {{ $.Scratch.Set "counter" 0 }}
                     {{ $headlessbundle := .Site.GetPage "/funders" }}
                     {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                    {{ if (eq .Params.level "Medium") }}
+                    {{ if or (eq .Params.level "Small") (eq .Params.level "Medium") }}
                     {{ $startDate := time .Params.startDate }}
                     {{ $endDate := time .Params.endDate }}
                     {{ if ge $endDate now }}
                     {{ $count := add ($.Scratch.Get "counter") 1 }}
                     {{ $.Scratch.Set "counter" $count }}
-                    {{ if eq ( mod $count 5 ) 1 }}
+                    {{ if eq ( mod $count $cols ) 1 }}
                     {{ if gt $count 1 }}
                 </div>
                 <div class="tile">
@@ -67,41 +68,17 @@
                             </a>
                         </article>
                     </div>
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
+                    {{ if eq $count (mul $cols 16) }}
+                        {{ $cols = 9 }}
                 </div>
             </div>
         </div>
         <div class="tile is-vertical">
             <div class="tile">
-                {{ $.Scratch.Set "counter" 0 }}
-                {{ $headlessbundle := .Site.GetPage "/funders" }}
-                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                {{ if (eq .Params.level "Small") }}
-                {{ $startDate := time .Params.startDate }}
-                {{ $endDate := time .Params.endDate }}
-                {{ if ge $endDate now }}
-                {{ $count := add ($.Scratch.Get "counter") 1 }}
-                {{ $.Scratch.Set "counter" $count }}
-                {{ if eq ( mod $count 9 ) 1 }}
-                {{ if gt $count 1 }}
-            </div>
-            <div class="tile">
-                {{ end }}
-                {{ end }}
-                <div class="tile is-parent">
-                    <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0">
-                        <a href="{{ .Params.link }}">
-                            <figure >
-                                <img class="grayscale" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="120vw">
-                            </figure>
-                        </a>
-                    </article>
-                </div>
-                {{ end }}
-                {{ end }}
-                {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
+                    {{ end }}
             </div>
         </div>
     </div>
