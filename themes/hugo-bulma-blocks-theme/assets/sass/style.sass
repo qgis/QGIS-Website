@@ -3,9 +3,9 @@
 
 /* Customize mark tag used by search results */
 mark
-  background: linear-gradient(-100deg, {{ .Param "complementary4" }}, {{ .Param "complementary3" }} 95%);
-  border-radius: 0.25em;
-  padding: .05rem 0.25em;
+  background: linear-gradient(-100deg, {{ .Param "complementary4" }}, {{ .Param "complementary3" }} 95%)
+  border-radius: 0.25em
+  padding: .05rem 0.25em
 
 .gradient-row
   background: #1D2027
@@ -20,7 +20,7 @@ mark
   width: 100%
   top: 4rem
   z-index: 100
-  transition: top 0.3s;
+  transition: top 0.3s
   
   input
     background: #ffffff00
@@ -71,7 +71,7 @@ mark
 .hero-title
   font-size: 5.7em
   font-weight: 800
-  line-height: 5.7rem;
+  line-height: 5.7rem
 
 .mkdown
   strong, h1, h2, h3
@@ -116,12 +116,12 @@ mark
     height:  if($i % 2 == 0, 50%, 20%)
     content: ""
     background-image: url("/img/blue_green_bg.svg")
-    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i);
+    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
   .deco-block-#{$i}
     img 
-      position: relative;
-      z-index: 2;
+      position: relative
+      z-index: 2
       border-radius: 20px
       
   .deco-block-#{$i}:after
@@ -131,17 +131,17 @@ mark
     margin-left: -240px
     height: if($i % 2 == 0, 50%, 200%)
     content: ""
-    z-index: 1;
+    z-index: 1
     background-image: url("/img/blue_green_bg.svg")
-    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i);
+    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
 .explore
   &.container
     background-image: url("/img/community.svg")
     background-color: {{ .Param "primary4" }}
     padding: 7rem
-    display: flex;
-    flex-direction: column;
+    display: flex
+    flex-direction: column
   .columns
     margin-top: -530px
     background-color: #fff
@@ -158,8 +158,8 @@ mark
     object-fit: cover
     height: 100%
   li
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 24px
+    margin-bottom: 24px
   .text
     padding: 7rem
   .button
