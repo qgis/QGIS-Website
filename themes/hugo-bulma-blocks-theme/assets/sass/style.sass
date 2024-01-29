@@ -141,6 +141,16 @@ mark
       background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
 .explore
+  position: relative
+  &:after
+    z-index: 1
+    position: absolute
+    width: 50%
+    height: 50%
+    top: 0
+    left: 0
+    content: ""
+    background: #fff
   &.container
     background-image: url("/img/community.svg")
     background-color: {{ .Param "primary4" }}
@@ -148,18 +158,12 @@ mark
     display: flex
     flex-direction: column
   .columns
-    margin-top: -530px
+    z-index: 2
     background-color: #fff
     border-radius: 20px
     overflow: hidden
   .column
     padding: 0
-  .white-corner
-    margin-left: -130px
-    margin-top: -130px
-    width: 830px
-    height: 630px
-    background-color: #fff
   img
     object-fit: cover
     object-position: left
