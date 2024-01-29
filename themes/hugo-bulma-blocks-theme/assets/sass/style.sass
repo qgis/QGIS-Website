@@ -7,6 +7,16 @@ mark
   border-radius: 0.25em
   padding: .05rem 0.25em
 
+body
+  color: {{ .Param "text-primary1" }}
+
+h2
+  font-size: 3rem
+  font-weight: 700
+
+.alpha70
+  opacity: 70%
+
 .gradient-row
   background: #1D2027
   height: 3em
@@ -96,10 +106,6 @@ mark
   padding: 4rem
   margin-top: 5rem
   margin-bottom: 5rem
-  color: #002033
-
-  h2
-    font-size: 3rem
 
   .deco-arrow 
     &:before
@@ -111,7 +117,6 @@ mark
 
   .add-text 
     padding-top: 3rem
-    opacity: 70%
     font-size: 1.125rem
 
 @for $i from 1 through 4
@@ -200,14 +205,13 @@ mark
 #start-using-qgis
   background-color: #fff
   border-radius: 30px
-  padding: 5% 10%
   margin-top: -150px
+  padding: 6rem
 
   iframe
     border-radius: 20px
 
   ul
-    margin-top: 1rem
     list-style-position: inside
 
 .large-supporter
