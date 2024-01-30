@@ -257,20 +257,41 @@ h2
   background-image: url({{ absURL "img/light_blue_bg.svg" }})
   background-color: #ECF1F4
   padding-top: 7rem
-  padding-bottom: 14rem
-  text-align: center
+  padding-bottom: 20%
+  @media screen and (max-width: 650px)
+    padding: 5%
+    margin: 0
+
+  .content
+    @media screen and (max-width: 1400px)
+      max-width: 800px
+      padding: 5%
 
 .grayscale
   filter: grayscale(100%)
 
+.mobile-bg
+    @media screen and (max-width: 650px)
+      background: #fff !important
+      border-radius: 10px !important
+      padding: 5%
+
 #start-using-qgis
-  background-color: #fff
-  border-radius: 30px
-  margin-top: -150px
-  padding: 6rem
-  @media screen and (max-width: 1400px)
-    flex-direction: column
-    background: none
+  padding: 2rem
+  @media screen and (max-width: 650px)
+    background-image: url({{ absURL "img/light_blue_bg.svg" }})
+    background-color: #ECF1F4
+
+  .container
+    background-color: #fff
+    border-radius: 30px
+    margin-top: -150px
+    @media screen and (max-width: 1400px)
+      flex-direction: column
+      background: none
+    @media screen and (max-width: 650px)
+      margin-top: 0
+
 
   iframe
     border-radius: 20px
