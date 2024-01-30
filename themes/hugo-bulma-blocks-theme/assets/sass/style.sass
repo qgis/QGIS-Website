@@ -3,9 +3,19 @@
 
 /* Customize mark tag used by search results */
 mark
-  background: linear-gradient(-100deg, {{ .Param "complementary4" }}, {{ .Param "complementary3" }} 95%);
-  border-radius: 0.25em;
-  padding: .05rem 0.25em;
+  background: linear-gradient(-100deg, {{ .Param "complementary4" }}, {{ .Param "complementary3" }} 95%)
+  border-radius: 0.25em
+  padding: .05rem 0.25em
+
+body
+  color: {{ .Param "text-primary1" }}
+
+h2
+  font-size: 3rem
+  font-weight: 700
+
+.alpha70
+  opacity: 70%
 
 .gradient-row
   background: #1D2027
@@ -20,7 +30,7 @@ mark
   width: 100%
   top: 4rem
   z-index: 100
-  transition: top 0.3s;
+  transition: top 0.3s
   
   input
     background: #ffffff00
@@ -71,7 +81,7 @@ mark
 .hero-title
   font-size: 5.7em
   font-weight: 800
-  line-height: 5.7rem;
+  line-height: 5.7rem
 
 .mkdown
   strong, h1, h2, h3
@@ -92,30 +102,123 @@ mark
       margin: auto
 
 .feature
-  padding: 7rem 0
+  position: relative
+  padding: 4rem
+  margin-top: 5rem
+  margin-bottom: 5rem
+
   .deco-arrow 
     &:before
       position: absolute
       width: 34px
       content: url("/img/gis-arrow.svg")
       margin-top: -30px
-      margin-left: -40px
+      margin-left: -30px
 
-  .deco-block-1
+  .add-text 
+    padding-top: 3rem
+    font-size: 1.125rem
+
+@for $i from 1 through 4
+  .left-deco-#{$i}:before
+    position: absolute
+    top: 0
+    left: 0
+    margin-left:  if($i % 2 == 0, -210px, -110px)
+    margin-top: if($i % 2 == 0, 0, 4rem)
+    width:  if($i % 2 == 0, 170px, 70px)
+    height:  if($i % 2 == 0, 100%, 40%)
+    content: ""
+    background-image: url("/img/blue_green_bg.svg")
+    background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
+
+  .deco-block-#{$i}
     img 
-      position: relative;
-      z-index: 2;
+      position: relative
+      z-index: 2
+      border-radius: 20px
+      
     &:after
       position: absolute
-      width: 270px
-      content: url("/img/darkrectangle.svg")
-      margin-top: -30px
+      width: 330px
       margin-left: -240px
-      z-index: 1;
-      
-  .add-text 
-    color: #6a6a6a    
-    margin-top: 5rem 
-    .column
-      margin-right: 2rem
+      top:  if($i % 2 == 0, 30%, 0)
+      height: if($i % 2 == 0, 40%, 100%)
+      content: ""
+      z-index: 1
+      background-image: url("/img/blue_green_bg.svg")
+      background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
+.explore
+  position: relative
+  &:after
+    z-index: 1
+    position: absolute
+    width: 50%
+    height: 50%
+    top: 0
+    left: 0
+    content: ""
+    background: #fff
+  &.container
+    background-image: url("/img/community.svg")
+    background-color: {{ .Param "primary4" }}
+    padding: 4rem
+    display: flex
+    flex-direction: column
+  .columns
+    z-index: 2
+    background-color: #fff
+    border-radius: 20px
+    overflow: hidden
+  .column
+    padding: 0
+  img
+    object-fit: cover
+    object-position: left
+    height: 100%
+  figure
+    height: 100%
+  li
+    margin-top: 24px
+    margin-bottom: 24px
+  .text
+    padding: 7rem
+  .button
+    background-color: #F1903B
+    color: #fff
+
+.arrow-ul
+  list-style-position: outside
+  list-style-image: url("/img/gis-arrow.svg")
+
+#light-blue-block
+  margin-top: 7rem
+  background-image: url("/img/light_blue_bg.svg")
+  background-color: #ECF1F4
+  padding-top: 7rem
+  padding-bottom: 14rem
+  text-align: center
+
+.grayscale
+  filter: grayscale(100%)
+
+#start-using-qgis
+  background-color: #fff
+  border-radius: 30px
+  margin-top: -150px
+  padding: 6rem
+
+  iframe
+    border-radius: 20px
+
+  ul
+    list-style-position: inside
+
+.large-supporter
+  background-color: #f5f5f5
+  border-radius: 10px
+  margin: 10px
+
+.explore-button
+  margin-bottom: 12rem
