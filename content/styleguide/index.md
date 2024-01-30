@@ -23,17 +23,17 @@ This first version of the Graphic Style Guide outlines the core elements of the 
 
 ### Original
 
-![Main logo](/static/visual/main_logo.png) ![Main logo monochrome](/static/visual/main_logo_monochrome.png)
+![Main logo](/img/visual/main_logo.png) ![Main logo monochrome](/img/visual/main_logo_monochrome.png)
 
 **Download logo file**
 
-[`SVG logo`](/static/visual/qgis-logo.svg)
+[`SVG logo`](/img/visual/qgis-logo.svg)
 
-[`PNG logo`](/static/visual/qgis-logo.png)
+[`PNG logo`](/img/visual/qgis-logo.png)
 
-[`SVG monochrome logo`](/static/visual/qgis-logo-monochrome.svg)
+[`SVG monochrome logo`](/img/visual/qgis-logo-monochrome.svg)
 
-[`PNG monochrome logo`](/static/visual/qgis-logo-monochrome.png)
+[`PNG monochrome logo`](/img/visual/qgis-logo-monochrome.png)
 
 The new QGIS logo is presented here. Keeping the core elements of the original QGIS logo (Q letter with an arrow through it), this new version intends to be sharp and scalable, introducing simpler and bolder shapes.
 
@@ -51,37 +51,37 @@ The proposed changes are listed below.
 
 ### Minimal
 
-![Minimal](/static/visual/minimal.png)
+![Minimal](/img/visual/minimal.png)
 
 **Download minimal logo**
 
-[`SVG 128px`](/static/visual/qgis-icon64.svg) [`SVG 32px`](/static/visual/qgis-icon32.svg)
+[`SVG 128px`](/img/visual/qgis-icon64.svg) [`SVG 32px`](/img/visual/qgis-icon32.svg)
 
-[`PNG 128px`](/static/visual/qgis-icon128.png) [`PNG 64px`](/static/visual/qgis-icon64.png) [`PNG 32px`](/static/visual/qgis-icon32.png)
+[`PNG 128px`](/img/visual/qgis-icon128.png) [`PNG 64px`](/img/visual/qgis-icon64.png) [`PNG 32px`](/img/visual/qgis-icon32.png)
 
-![Minimal black](/static/visual/minimal_black.png)
+![Minimal black](/img/visual/minimal_black.png)
 
 **Download minimal black**
 
-[`SVG black 128px`](/static/visual/qgis-icon-black128.svg) [`SVG black 64px`](/static/visual/qgis-icon-black64.svg) [`SVG black 32px`](/static/visual/qgis-icon-black32.svg)
+[`SVG black 128px`](/img/visual/qgis-icon-black128.svg) [`SVG black 64px`](/img/visual/qgis-icon-black64.svg) [`SVG black 32px`](/img/visual/qgis-icon-black32.svg)
 
-[`PNG black 128px`](/static/visual/qgis-icon-black128.png) [`PNG black 64px`](/static/visual/qgis-icon-black64.png) [`PNG black 32px`](/static/visual/qgis-icon-black32.png)
+[`PNG black 128px`](/img/visual/qgis-icon-black128.png) [`PNG black 64px`](/img/visual/qgis-icon-black64.png) [`PNG black 32px`](/img/visual/qgis-icon-black32.png)
 
-![Minimal green](/static/visual/minimal_green.png)
+![Minimal green](/img/visual/minimal_green.png)
 
 **Download minimal green**
 
-[`SVG green 128px`](/static/visual/qgis-icon-green128.svg) [`SVG green 64px`](/static/visual/qgis-icon-green64.svg) [`SVG green 32px`](/static/visual/qgis-icon-green32.svg)
+[`SVG green 128px`](/img/visual/qgis-icon-green128.svg) [`SVG green 64px`](/img/visual/qgis-icon-green64.svg) [`SVG green 32px`](/img/visual/qgis-icon-green32.svg)
 
-[`PNG green 128px`](/static/visual/qgis-icon-green128.png) [`PNG green 64px`](/static/visual/qgis-icon-green64.png) [`PNG green 32px`](/static/visual/qgis-icon-green32.png)
+[`PNG green 128px`](/img/visual/qgis-icon-green128.png) [`PNG green 64px`](/img/visual/qgis-icon-green64.png) [`PNG green 32px`](/img/visual/qgis-icon-green32.png)
 
-![Minimal white](/static/visual/minimal_white.png)
+![Minimal white](/img/visual/minimal_white.png)
 
 **Download minimal white**
 
-[`SVG white 128px`](/static/visual/qgis-icon-white128.svg) [`SVG white 64px`](/static/visual/qgis-icon-white64.svg) [`SVG white 32px`](/static/visual/qgis-icon-white32.svg)
+[`SVG white 128px`](/img/visual/qgis-icon-white128.svg) [`SVG white 64px`](/img/visual/qgis-icon-white64.svg) [`SVG white 32px`](/img/visual/qgis-icon-white32.svg)
 
-[`PNG white 128px`](/static/visual/qgis-icon-white128.png) [`PNG white 64px`](/static/visual/qgis-icon-white64.png) [`PNG white 32px`](/static/visual/qgis-icon-white32.png)
+[`PNG white 128px`](/img/visual/qgis-icon-white128.png) [`PNG white 64px`](/img/visual/qgis-icon-white64.png) [`PNG white 32px`](/img/visual/qgis-icon-white32.png)
 
 ## Typography
 
@@ -103,7 +103,7 @@ Trueno is a free Font Library serif font. In order to embed it, please use `<li
 **Dark Green**
 {{< columns-start >}}
 {{< column-start class="is-one-third">}}
-![Dark green](/static/visual/dark_green.png)
+![Dark green](/img/visual/dark_green.png)
 {{< column-end >}}
 {{< column-start class="is-two-thirds">}}
 HEX: #589632  
@@ -117,7 +117,7 @@ The QGIS Dark Green color to be used for every logo element in the monochrome ve
 **Light Green**
 {{< columns-start >}}
 {{< column-start class="is-one-third">}}
-![Light green](/static/visual/light_green.png)
+![Light green](/img/visual/light_green.png)
 {{< column-end >}}
 {{< column-start class="is-two-thirds">}}
 HEX: #93b023  
@@ -130,13 +130,13 @@ The QGIS Light Green color to be used for content of lesser importance. It can b
 
 **The gradient**
 
-![Gradient](/static/visual/gradient.png)
+![Gradient](/img/visual/gradient.png)
 
 The two primary colors are used as a vertical linear gradient in the logo, and this gradient can be used for website and printed materials background
 
 **Color Palette**
 
-![Dark green palette](/static/visual/dark_green_palette.png) ![Light green palette](/static/visual/light_green_palette.png)
+![Dark green palette](/img/visual/dark_green_palette.png) ![Light green palette](/img/visual/light_green_palette.png)
 
 ### Secondary colors
 
@@ -144,7 +144,7 @@ The two primary colors are used as a vertical linear gradient in the logo, and t
 
 {{< columns-start >}}
 {{< column-start class="is-one-third">}}
-![Lemon](/static/visual/lemon.png)
+![Lemon](/img/visual/lemon.png)
 {{< column-end >}}
 {{< column-start class="is-two-thirds">}}
 HEX: #f0e64a  
@@ -157,7 +157,7 @@ CMYK: 11, 0, 79, 0
 
 {{< columns-start >}}
 {{< column-start class="is-one-third">}}
-![Orange](/static/visual/orange.png)
+![Orange](/img/visual/orange.png)
 {{< column-end >}}
 {{< column-start class="is-two-thirds">}}
 HEX: #ee7913  
@@ -173,7 +173,7 @@ The QGIS Lemon and Orange colors to be used for the accents and call-to-actions
 
 **Color Palette**
 
-![Lemon palette](/static/visual/lemon_palette.png) ![Orange palette](/static/visual/orange_palette.png)
+![Lemon palette](/img/visual/lemon_palette.png) ![Orange palette](/img/visual/orange_palette.png)
 
 
 
