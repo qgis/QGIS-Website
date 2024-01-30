@@ -114,11 +114,15 @@
         </div>
     </div>
     <div class="columns is-desktop privacy-links">
-        <a href="#" class="has-text-grey column is-narrow is-offset-3-desktop"
+        <a
+            href="{{ absURL "/diversity" }}"
+            class="has-text-grey column is-narrow is-offset-3-desktop"
             >Diversity statement</a
         >
         <a href="#" class="has-text-grey column is-narrow">Privacy policy</a>
-        <a href="#" class="has-text-grey column is-narrow">Code of conduct</a>
+        <a href="{{ absURL "/conduct" }}" class="has-text-grey column is-narrow"
+            >Code of conduct</a
+        >
         <a href="#" class="has-text-grey column is-narrow">Cookie setting</a>
     </div>
 </footer>
