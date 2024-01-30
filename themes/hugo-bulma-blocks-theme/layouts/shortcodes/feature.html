@@ -1,7 +1,7 @@
 <div class="container">
     <div class="feature left-deco-{{ .Get "order" }}">
-        <div class="columns is-vcentered">
-            <div class="column is-5">
+        <div class="columns is-vcentered main-cols">
+            <div class="column is-5 main-text">
                 <h2 class="deco-arrow">
                     {{ .Get "title" }}
                 </h2>
@@ -9,7 +9,7 @@
                     {{ .Get "text" }}
                 </p>
             </div>
-            <div class="column is-7 ">
+            <div class="column is-7 main-image">
                 <figure class="deco-block-{{ .Get "order" }}">
                     <img src={{ .Get "img" | absURL }} />
                 </figure>
@@ -20,7 +20,7 @@
                 <p class="has-text-weight-bold">
                     {{ .Get "col-title-1" }}
                 </p>
-                <p class="has-text-weight-light">
+                <p class="has-text-weight-light col-text">
                     {{ .Get "col-text-1" }}
                 </p>
             </div>
@@ -28,7 +28,7 @@
                 <p class="has-text-weight-bold">
                     {{ .Get "col-title-2" }}
                 </p>
-                <p class="has-text-weight-light">
+                <p class="has-text-weight-light col-text">
                     {{ .Get "col-text-2" }}
                 </p>
             </div>
@@ -36,11 +36,11 @@
                 <p class="has-text-weight-bold">
                     {{ .Get "col-title-3" }}
                 </p>
-                <p class="has-text-weight-light">
+                <p class="has-text-weight-light col-text">
                     {{ .Get "col-text-3" }}
                 </p>
             </div>
-            <div class="column">
+            <div class="column empty">
                 <p>
                 </p>
             </div>

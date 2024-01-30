@@ -124,6 +124,10 @@ position: absolute;
 
 .button {
     border-radius: 10px;
+
+    @media screen and (max-width: 650px) {
+        width: 100%;
+    }
 }
 .narrow {
     max-width: 768px !important;
