@@ -111,7 +111,7 @@ h2
     &:before
       position: absolute
       width: 34px
-      content: url("/img/gis-arrow.svg")
+      content: url({{ absURL "/img/gis-arrow.svg" }})
       margin-top: -30px
       margin-left: -30px
 
@@ -129,7 +129,7 @@ h2
     width:  if($i % 2 == 0, 170px, 70px)
     height:  if($i % 2 == 0, 100%, 40%)
     content: ""
-    background-image: url("/img/blue_green_bg.svg")
+    background-image: url({{ absURL "/img/blue_green_bg.svg" }})
     background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
   .deco-block-#{$i}
@@ -146,7 +146,7 @@ h2
       height: if($i % 2 == 0, 40%, 100%)
       content: ""
       z-index: 1
-      background-image: url("/img/blue_green_bg.svg")
+      background-image: url({{ absURL "/img/blue_green_bg.svg" }})
       background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
 .explore
@@ -161,7 +161,7 @@ h2
     content: ""
     background: #fff
   &.container
-    background-image: url("/img/community.svg")
+    background-image: url({{ absURL "/img/community.svg" }})
     background-color: {{ .Param "primary4" }}
     padding: 4rem
     display: flex
@@ -190,11 +190,11 @@ h2
 
 .arrow-ul
   list-style-position: outside
-  list-style-image: url("/img/gis-arrow.svg")
+  list-style-image: url({{ absURL "/img/gis-arrow.svg" }})
 
 #light-blue-block
   margin-top: 7rem
-  background-image: url("/img/light_blue_bg.svg")
+  background-image: url({{ absURL "/img/light_blue_bg.svg" }})
   background-color: #ECF1F4
   padding-top: 7rem
   padding-bottom: 14rem
