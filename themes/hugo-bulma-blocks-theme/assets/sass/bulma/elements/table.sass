@@ -30,7 +30,6 @@ $table-colors: $colors !default
 
 .table
   @extend %block
-  background-color: $table-background-color
   color: $table-color
   td,
   th
@@ -38,6 +37,7 @@ $table-colors: $colors !default
     border-width: $table-cell-border-width
     padding: $table-cell-padding
     vertical-align: top
+    text-align: $table-cell-text-align
     // Colors
     @each $name, $pair in $table-colors
       $color: nth($pair, 1)

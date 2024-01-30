@@ -3,10 +3,9 @@ type: "page"
 title: "QGIS License"
 subtitle: ""
 draft: false
-heroImage: "img/banners/banner1.png"
 ---
 
-{{< content-start classes="notification is-light" >}}
+{{< content-start classes="content narrow">}}
 
 # GNU GENERAL PUBLIC LICENSE
 
