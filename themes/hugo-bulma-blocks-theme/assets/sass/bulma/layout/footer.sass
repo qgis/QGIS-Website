@@ -1,15 +1,18 @@
 @import "../utilities/derived-variables"
 
 $footer-tablet-breakpoint: 1450px !default
-$footer-background-color: hsla(222, 15%, 13%, 1) !default
+$footer-background-color: #002033 !default
 $footer-padding: 4rem 10rem 1rem 11.25rem !default
 $footer-padding-mobile: 4rem 2rem 4rem !default
 
 .footer
   background-color: $footer-background-color
 
-  text-align: center
   padding: $footer-padding-mobile
+
+  .container
+    +until($desktop)
+      flex-direction: column
 
   .copyright // I can't achieve this with the bulma classes
     display: none
@@ -18,11 +21,21 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
 
   +from($desktop)
     padding: $footer-padding
-    text-align: unset
 
   +between($desktop, $footer-tablet-breakpoint)
     padding: 4rem 2rem 1rem 2rem
 
+  .support
+    +until($desktop)
+      order: 1
+      flex-direction: row
+      margin-left: auto
+
+  .nav
+    +until($desktop)
+      order: 2
+      border-top: 2px solid #4c6270
+      margin-top: 4rem
 
   figure.image
     height: auto
@@ -35,6 +48,8 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
     padding: 40px 87.5px
     font-size: 24px
     font-weight: 600
+    background: #589632
+    width: 70%
     +from($desktop)
       padding: 1rem 2rem
       font-size: 20px
@@ -52,7 +67,7 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
     gap: 32px
     justify-content: center
     margin-top: 4rem !important
-    +from($desktop)
+    +from($tablet)
       display: grid
       grid-template-columns: repeat(auto-fit, 32px)
       gap: 34px
@@ -65,6 +80,8 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
     +from($desktop)
       margin-top: unset
 
+    +until($tablet)
+      flex-direction: column
   
     
   
