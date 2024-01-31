@@ -1,7 +1,7 @@
 @import "../utilities/derived-variables"
 
 $footer-tablet-breakpoint: 1450px !default
-$footer-background-color: #002033 !default
+$footer-background-color: $base !default
 $footer-padding: 4rem 10rem 1rem 11.25rem !default
 $footer-padding-mobile: 4rem 2rem 4rem !default
 
@@ -11,7 +11,7 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
   padding: $footer-padding-mobile
 
   .container
-    +until($desktop)
+    +until($fullhd)
       flex-direction: column
 
   .copyright // I can't achieve this with the bulma classes
@@ -19,20 +19,40 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
     +from($desktop)
       display: unset
 
-  +from($desktop)
-    padding: $footer-padding
+  .logo
+    display: flex
+    +until($fullhd)
+      display: none
+    +until($tablet)
+      display: flex
+      justify-content: center
 
   +between($desktop, $footer-tablet-breakpoint)
     padding: 4rem 2rem 1rem 2rem
 
   .support
-    +until($desktop)
+    +until($fullhd)
+      align-items: center
       order: 1
       flex-direction: row
-      margin-left: auto
+      img
+        margin-right: 7rem
+      a
+        margin-left: auto
+      +until($tablet)
+        a
+          margin-left: unset
+    +until($tablet)
+      order: 3
+      flex-direction: column
+      img
+        display: none
+    +from($fullhd)
+      img
+        display: none
 
   .nav
-    +until($desktop)
+    +until($fullhd)
       order: 2
       border-top: 2px solid #4c6270
       margin-top: 4rem
@@ -41,19 +61,27 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
     height: auto
     margin: 0 auto
     margin-bottom: 4rem
+    +until($tablet)
+      margin: unset
+      width: 50%
     +from($desktop)
       margin: unset
 
-  button.button
+  .button
     padding: 40px 87.5px
     font-size: 24px
     font-weight: 600
     background: #589632
-    width: 70%
-    +from($desktop)
+    width: 200px
+    margin-top: 2rem
+    +until($fullhd)
+      margin-top: 0
       padding: 1rem 2rem
       font-size: 20px
       font-weight: 400
+    +until($tablet)
+      margin-top: 2rem
+      width: 100%
 
 
   a > i

@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="container is-flex is-desktop">
-        <div class="tile is-3-desktop">
+        <div class="tile logo is-3-desktop">
             <figure class="image is-128x128">
                 <img alt="Logo" src="{{ absURL "img/logo.png" }}" />
             </figure>
@@ -78,12 +78,13 @@
                 </li>
             </ul>
         </div>
-        <div class="support tile is-vertical is-3-desktop">
-            <div class="is-size-4 mb-5 has-text-white text-nowrap">
+        <div class="support is-flex tile is-vertical is-3-desktop">
+            <img width=200 alt="Logo" src="{{ absURL "img/logo.png" }}" />
+            <div class="is-size-4 has-text-white text-nowrap">
                 Support our community!
             </div>
-            <a href="/funding">
-                <button class="button is-info ml-4 has-text-white">Donate</button>
+            <a href="/funding" class="button is-info has-text-white">
+                Donate
             </a>
         </div>
     </div>
