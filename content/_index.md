@@ -10,7 +10,7 @@ HeroImage: "img/hegobg1.png"
 HasBanner: true
 ButtonText: "Download" 
 ButtonLink: "download/"
-LastVersion: "Version: 3.30.1"
+SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and open source"
 ---
 

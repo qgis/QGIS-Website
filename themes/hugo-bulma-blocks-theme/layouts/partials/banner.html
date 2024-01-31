@@ -11,7 +11,7 @@
         <div class="hero-body">
             <div class="columns container">
                 
-                <div class="column  is-flex hero-text has-text-left">
+                <div class="column is-8 is-flex hero-text has-text-left">
                     <div class="hero-container">
                         {{ if .Params.LabelText }}
                             <div class="label">
@@ -36,17 +36,16 @@
                                 {{ .Params.ButtonText }}
                             </a>
                         {{ end }}
-                        {{ if .Params.LastVersion }}
+                        {{ if .Params.SupportedOS }}
                             <p class="subtitle is-size-5 hero-subtitle">
-                                {{ .Params.LastVersion }}
+                                {{ .Params.SupportedOS }}
                             </p>
                         {{ end }}
                 </div>
             </div>
             {{ if ( .Params.HeroLogo ) }}
                 <div
-                    class="column is-4 is-justify-content-center"
-                    style="display: flex"
+                    class="logo column is-justify-content-center"
                 >
                     <figure class="image">
                         <img src="{{ absURL .Params.HeroLogo | safeCSS }}" />
