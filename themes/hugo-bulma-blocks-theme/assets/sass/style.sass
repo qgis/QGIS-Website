@@ -13,6 +13,7 @@ body
 h2
   font-size: 3rem
   font-weight: 700
+  line-height: 1
 
 .alpha70
   opacity: 70%
@@ -121,7 +122,7 @@ h2
       margin-top: -30px
       margin-left: -30px
 
-      @media screen and (max-width: 769px)
+      @media screen and (max-width: 768px)
         display: none
 
   .add-text 
@@ -135,7 +136,7 @@ h2
       .col-text
         display: none
 
-    @media screen and (max-width: 769px)
+    @media screen and (max-width: 768px)
       flex-direction: column
       padding-top: 0
 
@@ -197,7 +198,7 @@ h2
         @else
           right:  0
 
-      @media screen and (max-width: 769px)
+      @media screen and (max-width: 768px)
         width: 60%
         height: 20%
 
@@ -234,7 +235,7 @@ h2
     padding: 4rem
     display: flex
     flex-direction: column
-    @media screen and (max-width: 769px)
+    @media screen and (max-width: 768px)
       padding: 2rem
   .columns
     z-index: 2
@@ -272,7 +273,7 @@ h2
   background-color: #ECF1F4
   padding-top: 7rem
   padding-bottom: 6%
-  @media screen and (max-width: 769px)
+  @media screen and (max-width: 768px)
     padding: 5%
     margin: 0
 
@@ -285,14 +286,14 @@ h2
   filter: grayscale(100%)
 
 .mobile-bg
-    @media screen and (max-width: 769px)
+    @media screen and (max-width: 768px)
       background: #fff !important
       border-radius: 10px !important
       padding: 5%
 
 #start-using-qgis
   padding: 5%
-  @media screen and (max-width: 769px)
+  @media screen and (max-width: 768px)
     background-image: url({{ absURL "img/light_blue_bg.svg" }})
     background-color: #ECF1F4
 
@@ -304,7 +305,7 @@ h2
     @media screen and (max-width: 1408px)
       flex-direction: column
       background: none
-    @media screen and (max-width: 769px)
+    @media screen and (max-width: 768px)
       margin-top: 0
 
 
@@ -322,10 +323,23 @@ h2
     @media screen and (max-width: 1408px)
       order: 1
 
+.large-grid
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr))
+
+.small-grid
+  grid-template-columns: repeat(auto-fill, minmax(150px, 2fr))
+  @media screen and (max-width: 768px)
+    grid-template-columns: repeat(auto-fill, minmax(50px, 2fr))
+
+.supporters-grid
+  display: grid
+  grid-gap: 16px
+
 .large-supporter
   background-color: #f5f5f5
   border-radius: 10px
   margin: 10px
+  flex-direction: column
 
 .explore-button
   margin-bottom: 10%

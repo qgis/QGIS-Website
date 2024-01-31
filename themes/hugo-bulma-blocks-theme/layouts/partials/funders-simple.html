@@ -4,82 +4,66 @@
             QGIS supporters
         </h2>
 
-        <div class="tile">
-            <div class="tile is-vertical is-4">
-                {{ $.Scratch.Set "counter" 0 }}
-                {{ $headlessbundle := .Site.GetPage "/funders" }}
-                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+        <div class="supporters-grid large-grid">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ $headlessbundle := .Site.GetPage "/funders" }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
                 {{ if or (eq .Params.level "Large") (eq .Params.level "Flagship") }}
-                {{ $startDate := time .Params.startDate }}
-                {{ $endDate := time .Params.endDate }}
-                {{ if ge $endDate now }}
-                {{ $count := add ($.Scratch.Get "counter") 1 }}
-                {{ $.Scratch.Set "counter" $count }}
-                <div class="large-supporter tile is-vertical">
-                    <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
-                        <a href="{{ .Params.link }}">
-                            <figure>
-                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="300vw">
-                            </figure>
-                        </a>
-                    </article>
-                    <center>
-                        {{ if eq .Params.level "Flagship" }}
-                            <p class="is-size-6 has-text-weight-bold" style="color: #F1903B">
-                                Golden partner
-                            </p>
-                        {{ else }}
-                            <p class="is-size-6 has-text-weight-bold" style="color: #8e8e8e">
-                                Silver partner
-                            </p>
-                        {{ end }}
-                        <br>
-                    </center>
-                </div>
-                {{ end }}
-                {{ end }}
-                {{ end }}
-            </div>
-
-            {{ $cols := 6 }}
-            <div class="tile is-vertical">
-                <div class="tile">
-                    {{ $.Scratch.Set "counter" 0 }}
-                    {{ $headlessbundle := .Site.GetPage "/funders" }}
-                    {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                    {{ if or (eq .Params.level "Small") (eq .Params.level "Medium") }}
                     {{ $startDate := time .Params.startDate }}
                     {{ $endDate := time .Params.endDate }}
                     {{ if ge $endDate now }}
-                    {{ $count := add ($.Scratch.Get "counter") 1 }}
-                    {{ $.Scratch.Set "counter" $count }}
-                    {{ if eq ( mod $count $cols ) 1 }}
-                    {{ if gt $count 1 }}
-                </div>
-                <div class="tile">
+                        {{ $count := add ($.Scratch.Get "counter") 1 }}
+                        {{ $.Scratch.Set "counter" $count }}
+                        <div class="large-supporter is-vertical is-flex">
+                            <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
+                                <a href="{{ .Params.link }}">
+                                    <figure>
+                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="300vw">
+                                    </figure>
+                                </a>
+                            </article>
+                            <center>
+                                {{ if eq .Params.level "Flagship" }}
+                                    <p class="is-size-6 has-text-weight-bold" style="color: #F1903B">
+                                        Golden partner
+                                    </p>
+                                {{ else }}
+                                    <p class="is-size-6 has-text-weight-bold" style="color: #8e8e8e">
+                                        Silver partner
+                                    </p>
+                                {{ end }}
+                                <br>
+                            </center>
+                        </div>
                     {{ end }}
+                {{ end }}
+            {{ end }}
+        </div>
+
+        <div class="supporters-grid small-grid">
+                {{ $.Scratch.Set "counter" 0 }}
+                {{ $headlessbundle := .Site.GetPage "/funders" }}
+                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                    {{ if or (eq .Params.level "Small") (eq .Params.level "Medium") }}
+                        {{ $startDate := time .Params.startDate }}
+                        {{ $endDate := time .Params.endDate }}
+                        {{ if ge $endDate now }}
+                            {{ $count := add ($.Scratch.Get "counter") 1 }}
+                            {{ $.Scratch.Set "counter" $count }}
+                            <div class="tile">
+                                <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0">
+                                    <a href="{{ .Params.link }}">
+                                        <figure >
+                                            <img class="grayscale" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="150vw">
+                                        </figure>
+                                    </a>
+                                </article>
+                            </div>
+                        {{ end }}
                     {{ end }}
-                    <div class="tile is-parent">
-                        <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0">
-                            <a href="{{ .Params.link }}">
-                                <figure >
-                                    <img class="grayscale" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="150vw">
-                                </figure>
-                            </a>
-                        </article>
-                    </div>
-                    {{ if eq $count (mul $cols 16) }}
-                        {{ $cols = 9 }}
-                </div>
+                {{ end }}
             </div>
         </div>
-        <div class="tile is-vertical">
-            <div class="tile">
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-                    {{ end }}
-            </div>
-        </div>
+
     </div>
 </section>
