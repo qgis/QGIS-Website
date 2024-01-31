@@ -20,7 +20,7 @@ Remove string HasBanner to delete banner from page
 
 Hero Banner currently has HTML elements.
 To do: Remove the HTML element and improve the block.
--->
+TODO 2: make adaptive and animated
 {{< box-start classes="has-background-white has-text-centered">}}
 {{< image-content-bar
 ":img/logoexample.png"
@@ -33,6 +33,7 @@ To do: Remove the HTML element and improve the block.
 ":img/logoexample.png"
 >}}
 {{< box-end no-footer="true">}}
+-->
 
 {{< feature
 title = "Create maps"

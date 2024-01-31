@@ -115,21 +115,21 @@ h2
       margin-top: -30px
       margin-left: -30px
 
-      @media screen and (max-width: 650px)
+      @media screen and (max-width: 769px)
         display: none
 
   .add-text 
     padding-top: 3rem
     font-size: 1.125rem
     .empty
-      @media screen and (max-width: 1400px)
+      @media screen and (max-width: 1408px)
         display: none
 
     @media screen and (max-width: 1024px)
       .col-text
         display: none
 
-    @media screen and (max-width: 650px)
+    @media screen and (max-width: 769px)
       flex-direction: column
       padding-top: 0
 
@@ -146,7 +146,7 @@ h2
     background-image: url({{ absURL "img/blue_green_bg.svg" }})
     background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
-    @media screen and (max-width: 1400px)
+    @media screen and (max-width: 1408px)
       display: none
 
   @media screen and (max-width: 1024px)
@@ -179,7 +179,7 @@ h2
       background-image: url({{ absURL "img/blue_green_bg.svg" }})
       background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
-      @media screen and (max-width: 1400px)
+      @media screen and (max-width: 1408px)
         margin-left: 0
         top:  0
         right:  0
@@ -191,11 +191,14 @@ h2
         @else
           right:  0
 
-      @media screen and (max-width: 650px)
+      @media screen and (max-width: 769px)
         width: 60%
         height: 20%
 
 .explore
+  @media screen and (max-width: 1408px)
+    max-width: none
+  align-items: center
   position: relative
   .photo
     padding: 0
@@ -210,7 +213,7 @@ h2
     left: 0
     content: ""
     background: #fff
-    @media screen and (max-width: 1400px)
+    @media screen and (max-width: 1408px)
       display: none
     @media screen and (max-width: 1024px)
       display: block
@@ -225,11 +228,16 @@ h2
     padding: 4rem
     display: flex
     flex-direction: column
+    @media screen and (max-width: 769px)
+      padding: 2rem
   .columns
     z-index: 2
     background-color: #fff
     border-radius: 20px
     overflow: hidden
+    @media screen and (max-width: 1408px)
+      border-radius: 10px
+      max-width: 960px
     @media screen and (max-width: 1024px)
       margin-top: 30%
   img
@@ -242,7 +250,7 @@ h2
     margin-top: 24px
     margin-bottom: 24px
   .text
-    padding: 10%
+    padding: 5%
   .button
     background-color: #F1903B
     color: #fff
@@ -258,53 +266,53 @@ h2
   background-color: #ECF1F4
   padding-top: 7rem
   padding-bottom: 20%
-  @media screen and (max-width: 650px)
+  @media screen and (max-width: 769px)
     padding: 5%
     margin: 0
 
   .content
-    @media screen and (max-width: 1400px)
-      max-width: 800px
+    @media screen and (max-width: 1408px)
+      max-width: 960px
       padding: 5%
 
 .grayscale
   filter: grayscale(100%)
 
 .mobile-bg
-    @media screen and (max-width: 650px)
+    @media screen and (max-width: 769px)
       background: #fff !important
       border-radius: 10px !important
       padding: 5%
 
 #start-using-qgis
-  padding: 2rem
-  @media screen and (max-width: 650px)
+  @media screen and (max-width: 769px)
     background-image: url({{ absURL "img/light_blue_bg.svg" }})
     background-color: #ECF1F4
 
   .container
+    padding: 2rem
     background-color: #fff
     border-radius: 30px
     margin-top: -150px
-    @media screen and (max-width: 1400px)
+    @media screen and (max-width: 1408px)
       flex-direction: column
       background: none
-    @media screen and (max-width: 650px)
+    @media screen and (max-width: 769px)
       margin-top: 0
 
 
   iframe
     border-radius: 20px
 
-    @media screen and (max-width: 1400px)
+    @media screen and (max-width: 1408px)
       width: 100%
 
   .is-vertical
-    @media screen and (max-width: 1400px)
+    @media screen and (max-width: 1408px)
       order: 2
       align-items: center
   .video
-    @media screen and (max-width: 1400px)
+    @media screen and (max-width: 1408px)
       order: 1
 
 .large-supporter
@@ -313,4 +321,6 @@ h2
   margin: 10px
 
 .explore-button
-  margin-bottom: 12rem
+  margin-bottom: 10%
+  margin-left: 5%
+  margin-right: 5%
