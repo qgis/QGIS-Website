@@ -27,6 +27,11 @@
 // opening that url in the browser
 
 {{ $montserrat := resources.Get "webfonts/Montserrat.ttf" }}
+{{ $truenoLt := resources.Get "webfonts/TruenoLt.otf" }}
+{{ $truenoRg := resources.Get "webfonts/TruenoRg.otf" }}
+{{ $truenoSBd := resources.Get "webfonts/TruenoSBd.otf" }}
+{{ $truenoBd := resources.Get "webfonts/TruenoBd.otf" }}
+{{ $truenoUltBlk := resources.Get "webfonts/TruenoUltBlk.otf" }}
  
 @font-face
     font-family: 'Montserrat'
@@ -34,27 +39,27 @@
 
 @font-face 
   font-family: "Trueno"
-  src: url("/webfonts/TruenoLt.otf") format("opentype")
+  src: url("{{ $truenoLt.RelPermalink }}") format("opentype")
   font-weight: 300
 
 @font-face 
   font-family: "Trueno"
-  src: url("/webfonts/TruenoRg.otf") format("opentype")
+  src: url("{{ $truenoRg.RelPermalink }}") format("opentype")
   font-weight: 400
 
 @font-face 
   font-family: "Trueno"
-  src: url("/webfonts/TruenoSBd.otf") format("opentype")
+  src: url("{{ $truenoSBd.RelPermalink }}") format("opentype")
   font-weight: 500
 
 @font-face 
   font-family: "Trueno"
-  src: url("/webfonts/TruenoBd.otf") format("opentype")
+  src: url("{{ $truenoBd.RelPermalink }}") format("opentype")
   font-weight: 600 
              
 @font-face 
   font-family: "Trueno"
-  src: url("/webfonts/TruenoUltBlk.otf") format("opentype")
+  src: url("{{ $truenoUltBlk.RelPermalink }}") format("opentype")
   font-weight: 700
   
 
