@@ -119,10 +119,16 @@
             class="has-text-grey column is-narrow is-offset-3-desktop"
             >Diversity statement</a
         >
-        <a href="#" class="has-text-grey column is-narrow">Privacy policy</a>
+        <a href="{{ absURL "/privacy" }}" class="has-text-grey column is-narrow"
+            >Privacy policy</a
+        >
         <a href="{{ absURL "/conduct" }}" class="has-text-grey column is-narrow"
             >Code of conduct</a
         >
-        <a href="#" class="has-text-grey column is-narrow">Cookie setting</a>
+        <a href="{{ absURL "/cookies" }}" class="has-text-grey column is-narrow"
+            >Cookie setting</a
+        >
     </div>
 </footer>
+
+{{ partial "cookie-notice.html" }}
