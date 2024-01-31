@@ -147,12 +147,38 @@ $hero-colors: $colors !default
   flex-grow: 0
   flex-shrink: 0
 
+.hero-title
+  font-size: 4.3em
+  font-weight: 800
+  line-height: 1
+  @media screen and (max-width: 768px)
+    font-size: 3.75rem
+
 .hero-body
   flex-grow: 1
   flex-shrink: 0
   padding: $hero-body-padding
-  +tablet
-    padding: $hero-body-padding-tablet
+  +mobile
+    padding: $hero-body-padding-large
+    height: 100vh
+
+  .container 
+    margin: auto
+    .image 
+      margin: auto
+  .column
+    @media screen and (max-width: 1024px)
+      width: 100%
+  .logo
+    @media screen and (max-width: 1024px)
+      display: none
+  .scroll-down
+    margin-top: 9rem
+    @media screen and (min-width: 769px)
+      display: none
+    img
+      width: 100px
+
 
 .hero-text 
   display: flex
