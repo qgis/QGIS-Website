@@ -4,7 +4,8 @@ $hero-body-padding: 3rem 1.5rem !default
 $hero-body-padding-tablet: 3rem 3rem !default
 $hero-body-padding-small: 1.5rem !default
 $hero-body-padding-medium: 9rem 4.5rem !default
-$hero-body-padding-large: 18rem 6rem !default
+$hero-body-padding-large: 14rem 6rem !default
+$hero-body-padding-v-large: 7rem 2rem !default
 
 $hero-colors: $colors !default
 
@@ -147,12 +148,44 @@ $hero-colors: $colors !default
   flex-grow: 0
   flex-shrink: 0
 
+.hero-title
+  font-size: 4.3em
+  font-weight: 800
+  line-height: 1
+  +mobile
+    font-size: 2.7rem
+
+.hero-subtitle
+  font-size: 1.5rem
+  +mobile
+    margin-top: 1rem
+    font-size: 1.25rem
+
 .hero-body
   flex-grow: 1
   flex-shrink: 0
   padding: $hero-body-padding
-  +tablet
-    padding: $hero-body-padding-tablet
+  +mobile
+    padding: $hero-body-padding-v-large
+    height: 100vh
+
+  .container 
+    margin: auto
+    .image 
+      margin: auto
+  .column
+    @media screen and (max-width: 1024px)
+      width: 100%
+  .logo
+    @media screen and (max-width: 1024px)
+      display: none
+  .scroll-down
+    margin-top: 9rem
+    @media screen and (min-width: 769px)
+      display: none !important
+    img
+      width: 100px
+
 
 .hero-text 
   display: flex

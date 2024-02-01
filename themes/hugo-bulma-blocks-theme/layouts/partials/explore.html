@@ -8,7 +8,7 @@
 
 <div class="explore container is-flex">
     <div class="columns">
-        <div class="column">
+        <div class="column photo">
             <figure>
                 <img src="{{ absURL "img/explore.jpg" }}" />
             </figure>
@@ -38,35 +38,40 @@
 </div>
 
 <div id="light-blue-block">
-    <h2>Free and open source</h2>
-    <p class="is-size-5 has-text-weight-light alpha70">
-        QGIS is a public project hosted on QGIS.org, licensed as GNU GPLv2,
-        owned by its contributors.
-    </p>
-    <p class="is-size-5 has-text-weight-bold">
-        For that reason QGIS is Free and Open Source software, forever.
-    </p>
+    <div class="container content has-text-centered mobile-bg">
+        <h2>Free and open source</h2>
+        <p class="is-size-5 has-text-weight-light alpha70">
+            QGIS is a public project hosted on QGIS.org, licensed as GNU GPLv2,
+            owned by its contributors.
+        </p>
+        <p class="is-size-5 has-text-weight-bold">
+            For that reason QGIS is Free and Open Source software, forever.
+        </p>
 
-    <a class="button is-primary1 is-size-5 mt-5" href="{{ absURL "download/" }}">FREE DOWNLOAD</a>
+        <a class="button is-primary1 is-size-5 mt-5" href="{{ absURL "download/" }}">FREE DOWNLOAD</a>
+    </div>
 </div>
 
-<div class="container is-flex" id="start-using-qgis">
-    <div class="tile is-vertical">
-        <h2>Start using QGIS 🚀</h2>
-        <ul class="arrow-ul mt-4 is-size-5 has-text-weight-bold">
-            <li>Quick-start tutorials</li>
-            <li>Live demos</li>
-            <li>Up-to-date documentation</li>
-        </ul>
+<div id="start-using-qgis">
+<div class="container is-flex mobile-bg">
+    <div class="tile is-vertical p-5">
+        <div>
+            <h2>Start using QGIS 🚀</h2>
+            <ul class="arrow-ul mt-4 is-size-5 has-text-weight-bold">
+                <li>Quick-start tutorials</li>
+                <li>Live demos</li>
+                <li>Up-to-date documentation</li>
+            </ul>
 
-        <a
-            class="mt-4 is-size-5"
-            href="https://docs.qgis.org/3.28/en/docs/user_manual/"
-        >
-            Go to materials
-        </a>
+            <a
+                class="mt-4 is-size-5"
+                href="https://docs.qgis.org/3.28/en/docs/user_manual/"
+            >
+                Go to materials
+            </a>
+        </div>
     </div>
-    <div class="tile">
+    <div class="tile video">
         <iframe
             width="560"
             height="315"
@@ -77,4 +82,5 @@
             allowfullscreen
         ></iframe>
     </div>
+</div>
 </div>

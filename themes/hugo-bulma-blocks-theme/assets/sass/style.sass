@@ -12,7 +12,11 @@ body
 
 h2
   font-size: 3rem
-  font-weight: 700
+  font-weight: 600
+  line-height: 1
+  margin-bottom: 2rem
+  @media screen and (max-width: 768px)
+    font-size: 2.25rem
 
 .alpha70
   opacity: 70%
@@ -78,11 +82,6 @@ h2
   @extend .gradient-row
   margin-top: -1em
 
-.hero-title
-  font-size: 5.7em
-  font-weight: 800
-  line-height: 5.7rem
-
 .mkdown
   strong, h1, h2, h3
     color: inherit
@@ -95,15 +94,9 @@ h2
 .pb-7
   padding-bottom: 4rem !important
 
-.hero-body 
-  .container 
-    margin: auto
-    .image 
-      margin: auto
-
 .feature
   position: relative
-  padding: 4rem
+  padding: 5%
   margin-top: 5rem
   margin-bottom: 5rem
 
@@ -115,9 +108,23 @@ h2
       margin-top: -30px
       margin-left: -30px
 
+      @media screen and (max-width: 768px)
+        display: none
+
   .add-text 
     padding-top: 3rem
     font-size: 1.125rem
+    .empty
+      @media screen and (max-width: 1408px)
+        display: none
+
+    @media screen and (max-width: 1024px)
+      .col-text
+        display: none
+
+    @media screen and (max-width: 768px)
+      flex-direction: column
+      padding-top: 0
 
 @for $i from 1 through 4
   .left-deco-#{$i}:before
@@ -132,11 +139,27 @@ h2
     background-image: url({{ absURL "img/blue_green_bg.svg" }})
     background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
+    @media screen and (max-width: 1408px)
+      display: none
+
+  @media screen and (max-width: 1024px)
+    .main-cols
+      flex-direction: column
+      .main-image
+        order: 1
+        width: 100%
+      .main-text
+        order: 2
+        width: 100%
+
   .deco-block-#{$i}
     img 
       position: relative
       z-index: 2
       border-radius: 20px
+
+      @media screen and (max-width: 1024px)
+        width: 100%
       
     &:after
       position: absolute
@@ -149,8 +172,31 @@ h2
       background-image: url({{ absURL "img/blue_green_bg.svg" }})
       background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
+      @media screen and (max-width: 1408px)
+        margin-left: 0
+        top:  0
+        right:  0
+        height: 40%
+
+      @media screen and (max-width: 1024px)
+        @if $i % 2 == 1
+          left:  0
+        @else
+          right:  0
+
+      @media screen and (max-width: 768px)
+        width: 60%
+        height: 20%
+
 .explore
+  @media screen and (max-width: 1408px)
+    max-width: none
+  align-items: center
   position: relative
+  .photo
+    padding: 0
+    @media screen and (max-width: 1024px)
+      display: none
   &:after
     z-index: 1
     position: absolute
@@ -160,19 +206,33 @@ h2
     left: 0
     content: ""
     background: #fff
+    @media screen and (max-width: 1408px)
+      display: none
+    @media screen and (max-width: 1024px)
+      display: unset
+      width: 100%
+      height: 40%
+      background-image: url({{ absURL "img/community-wide.png" }})
+      background-size: cover
+      background-position: center
   &.container
     background-image: url({{ absURL "img/community.svg" }})
     background-color: {{ .Param "primary4" }}
     padding: 4rem
     display: flex
     flex-direction: column
+    @media screen and (max-width: 768px)
+      padding: 2rem
   .columns
     z-index: 2
     background-color: #fff
     border-radius: 20px
     overflow: hidden
-  .column
-    padding: 0
+    @media screen and (max-width: 1408px)
+      border-radius: 10px
+      max-width: 960px
+    @media screen and (max-width: 1024px)
+      margin-top: 30%
   img
     object-fit: cover
     object-position: left
@@ -183,12 +243,13 @@ h2
     margin-top: 24px
     margin-bottom: 24px
   .text
-    padding: 7rem
+    padding: 5%
   .button
     background-color: #F1903B
     color: #fff
 
 .arrow-ul
+  margin-left: 44px
   list-style-position: outside
   list-style-image: url({{ absURL "img/gis-arrow.svg" }})
 
@@ -197,28 +258,80 @@ h2
   background-image: url({{ absURL "img/light_blue_bg.svg" }})
   background-color: #ECF1F4
   padding-top: 7rem
-  padding-bottom: 14rem
-  text-align: center
+  padding-bottom: 6%
+  @media screen and (max-width: 1408px)
+    margin: 0
+
+  @media screen and (max-width: 768px)
+    padding: 5%
+
+  .content
+    @media screen and (max-width: 1408px)
+      max-width: 960px
+      padding: 5%
 
 .grayscale
   filter: grayscale(100%)
 
+.mobile-bg
+    @media screen and (max-width: 768px)
+      background: #fff !important
+      border-radius: 10px !important
+      padding: 5%
+
 #start-using-qgis
-  background-color: #fff
-  border-radius: 30px
-  margin-top: -150px
-  padding: 6rem
+  padding: 5%
+  @media screen and (max-width: 768px)
+    background-image: url({{ absURL "img/light_blue_bg.svg" }})
+    background-color: #ECF1F4
+
+  .container
+    padding: 2rem
+    background-color: #fff
+    border-radius: 30px
+    margin-top: -150px
+    @media screen and (max-width: 1408px)
+      flex-direction: column
+      background: none
+    @media screen and (max-width: 768px)
+      margin-top: 0
+
 
   iframe
     border-radius: 20px
 
-  ul
-    list-style-position: inside
+    @media screen and (max-width: 1408px)
+      height: 400px
+      width: 100%
+
+  .is-vertical
+    @media screen and (max-width: 1408px)
+      order: 2
+      align-items: center
+  .video
+    @media screen and (max-width: 1408px)
+      order: 1
+
+.large-grid
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+
+.small-grid
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+  @media screen and (max-width: 768px)
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr))
+
+.supporters-grid
+  display: grid
+  grid-gap: 24px
 
 .large-supporter
   background-color: #f5f5f5
   border-radius: 10px
   margin: 10px
+  padding: 1rem 5rem
+  flex-direction: column
 
 .explore-button
-  margin-bottom: 12rem
+  margin-bottom: 10%
+  margin-left: 5%
+  margin-right: 5%
