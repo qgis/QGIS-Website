@@ -1,5 +1,5 @@
 ---
-level: "Large"
+level: "hidden-Large"
 title: "QGIS user group Ecuador"
 logo: "qgis.ec.png"
 startDate: "2023-02-01"
