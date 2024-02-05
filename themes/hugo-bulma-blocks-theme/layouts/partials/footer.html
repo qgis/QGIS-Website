@@ -130,5 +130,6 @@
         >
     </div>
 </footer>
-
-{{ partial "cookie-notice.html" }}
+{{ if ( .Site.Params.cookiesstate ) }}
+    {{ partial "cookie-notice.html" }}
+{{ end }}
