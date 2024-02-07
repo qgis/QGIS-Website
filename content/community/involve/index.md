@@ -70,6 +70,11 @@ Creating documentation offers an ideal starting point for your first contributio
 ![](/img/mappp.png)
 {{< rich-box-end >}}
 
+{{< rich-box-start layout="tips" icon="💁" theme="coloring-1" >}}
+##### Tips for first launch
+After installing QGIS, the first launch attempt may fail due to security protections. To enable QGIS, control-click on its icon in your Applications folder and select Open in the context menu. A confirmation dialog will display where you need to click the Open button again. This only has to be done once.
+{{< rich-box-end >}}
+
 {{< rich-box-start layout="has-right" theme="coloring-1" >}}
 ### Translate QGIS
 

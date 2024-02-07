@@ -345,6 +345,7 @@ h2
 		flex-direction: column 
 		align-items: flex-start 
     
+    
 .cont 
 	padding: 50px 70px 
 	border-radius: 10px 
@@ -435,7 +436,15 @@ h2
   h1, h2, h3, h4, h5, h6
     color: #fff
 
-
+.tips 
+  align-items: baseline;
+  .cont 
+    padding:  40px 40px 40px 20px
+  .icon
+    z-index: 1
+    width: auto
+    font-size: 35px
+    padding-left: 40px
 
 @media screen and (max-width: 1407px) 
   .cont 
@@ -460,6 +469,16 @@ h2
 @media screen and (max-width: 768px) 
   .rich
     flex-direction: column-reverse
+    .cont
+      padding: 2rem 1rem 2rem 1rem
+  .tips
+    flex-direction: column  
+    padding: 0px
+    .cont
+      padding-top: 0rem
+    .icon
+      padding: 1rem 1rem 0rem 1rem
+      height: auto
   .has-right 
     .rich-right
       width: 100%
@@ -470,7 +489,8 @@ h2
       img 
         width: 100%
     .cont
-      padding: 1rem 1rem 2rem 1rem;
+      padding: 1rem 1rem 2rem 1rem
       width: 100%
       &::after
         width: 100%  
+        
