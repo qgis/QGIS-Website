@@ -152,3 +152,15 @@ label.button {
   color: #000 !important;
 }
 
+a.heading-anchor {
+  visibility: hidden;
+}
+
+h1:hover > a.heading-anchor,
+h2:hover > a.heading-anchor,
+h3:hover > a.heading-anchor,
+h4:hover > a.heading-anchor,
+h5:hover > a.heading-anchor,
+h6:hover > a.heading-anchor {
+  visibility: visible;
+}
