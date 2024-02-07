@@ -121,10 +121,177 @@ sectionPagesMenu = 'main'
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
 [[menu.main]]
-  name = "Community"
-  url = "/community/"
-  weight = 20 # Sets the menu order
-  #pre = "<i class='fa-solid fa-people-group mr-1'></i>"
+  name = "Сommunity"
+  url = "/community"
+  weight = 20
+
+[[menu.main]]
+  parent = "Сommunity"
+  name = "Get involved"
+  url = "/community/involve"
+  weight = 10
+
+[[menu.main]]
+  parent = "Сommunity"
+  name = "Become a certified member"
+  url = "/community/certification"
+  weight = 20
+
+[[menu.main]]
+  parent = "Сommunity"
+  name = "QGIS Foundation"
+  url = "/community/foundation"
+  weight = 30
+
+[[menu.main]]
+  parent = "QGIS Foundation"
+  name = "Charter"
+  url = "/community/foundation/charter"
+  weight = 40
+
+[[menu.main]]
+  parent = "QGIS Foundation"
+  name = "Annual General Meetings"
+  url = "/community/foundation/annual_general_meetings"
+  weight = 50
+
+[[menu.main]]
+  parent = "QGIS Foundation"
+  name = "Annual Reports"
+  url = "/community/foundation/annual_reports"
+  weight = 60
+
+[[menu.main]]
+  parent = "QGIS Foundation"
+  name = "Finance"
+  url = "/community/foundation/finance"
+  weight = 70
+
+[[menu.main]]
+  parent = "Сommunity"
+  name = "Project Organisation"
+  url = "/community/organisation"
+  weight = 80
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Who's Who"
+  url = "/community/organisation/"
+  weight = 90
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Infrastructure"
+  url = "/community/organisation/infrastructure"
+  weight = 100
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "User Groups"
+  url = "/community/organisation/groups"
+  weight = 110
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Grant Program"
+  url = "/community/organisation/grants"
+  weight = 120
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Brand Guidelines"
+  url = "/community/organisation/guidelines"
+  weight = 130
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Contributor Credits"
+  url = "/community/organisation/credits"
+  weight = 140
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Committee Resolutions"
+  url = "/community/organisation/committee"
+  weight = 150
+
+[[menu.main]]
+  parent = "Committee Resolutions"
+  name = "Committee Resolution 2019"
+  url = "/community/organisation/committee/2019_resolutions"
+  weight = 160
+
+[[menu.main]]
+  parent = "Committee Resolutions"
+  name = "Committee Resolution 2020"
+  url = "/community/organisation/committee/2020_resolutions"
+  weight = 170
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Meetings"
+  url = "/community/organisation/meetings"
+  weight = 180
+
+[[menu.main]]
+  parent = "Meetings"
+  name = "QGIS Developer Meetings"
+  url = "/community/organisation/meetings/dev_meetings"
+  weight = 190
+
+[[menu.main]]
+  parent = "Meetings"
+  name = "Reimbursements for Developer Meetings"
+  url = "/community/organisation/meetings/reimbursements"
+  weight = 200
+
+[[menu.main]]
+  parent = "Meetings"
+  name = "QGIS User Meetings"
+  url = "/community/organisation/meetings/user_meetings"
+  weight = 210
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Mailing Lists"
+  url = "/community/organisation/mailinglists"
+  weight = 220
+
+[[menu.main]]
+  parent = "Сommunity"
+  name = "Members and Donors"
+  url = "/community/members"
+  weight = 230
+
+[[menu.main]]
+  parent = "Members and Donors"
+  name = "Become a Sustaining Member (benefits, process)"
+  url = "/community/members/sustaining_member"
+  weight = 240
+
+[[menu.main]]
+  parent = "Members and Donors"
+  name = "Sustaining Membership program"
+  url = "/community/members/sustaining_members_program"
+  weight = 250
+
+[[menu.main]]
+  parent = "Members and Donors"
+  name = "Past sustaining members"
+  url = "/community/members/past_members"
+  weight = 260
+
+[[menu.main]]
+  parent = "Members and Donors"
+  name = "Donors"
+  url = "/community/members/donors"
+  weight = 270
+  
+[[menu.main]]
+  parent = "Сommunity"
+  name = "Members Blogs"
+  url = ""
+  weight = 280
+
 
 [[menu.main]]
   name = "Resources"
@@ -138,12 +305,6 @@ sectionPagesMenu = 'main'
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = 30 # Sets the menu order 
 
-[[menu.main]]
-  parent = "Community"
-  name = "Value"
-  url = "/value-proposition/"
-  #pre = "<i class='fa fa-heart mr-1'></i>"
-  weight = 50 # Sets the menu order 
 
 [[menu.main]]
   parent = "About"
