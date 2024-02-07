@@ -1,8 +1,0 @@
-{{ $icon := .Get "icon" | default ""}}
-<div class="container rich {{ .Get "layoutClass" }}">
-    {{if $icon}}
-        <div class="icon">
-            {{$icon}}
-        </div>
-    {{ end}}
-    <div class="cont {{ .Get "themeClass" }}">
