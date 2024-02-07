@@ -22,7 +22,7 @@ Our very best regards!
 We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.
 {{< /rich-content >}}
 {{< rich-html-right >}}
-{{< stripe-widget >}}
+{{< stripe-widget otherMethods="true" >}}
 {{< /rich-html-right >}}
 {{< /rich-html-box >}}
 

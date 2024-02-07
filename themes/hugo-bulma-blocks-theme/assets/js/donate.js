@@ -113,10 +113,10 @@ function updateCurrency() {
   let toShow = document.getElementById('currency').value;
   let toHide = toShow == 'usd' ? 'eur' : 'usd';
   document.getElementById('donate-stripe')
-    .querySelectorAll(`[value^="${toHide}:"],[for^="${toHide}:"]`)
+    .querySelectorAll(`[for^="${toHide}:"]`)
     .forEach(option => option.style.display = "none");
   document.getElementById('donate-stripe')
-    .querySelectorAll(`[value^="${toShow}:"],[for^="${toShow}:"]`)
+    .querySelectorAll(`[for^="${toShow}:"]`)
     .forEach(option => option.style.display = "inline-block");
 }
 

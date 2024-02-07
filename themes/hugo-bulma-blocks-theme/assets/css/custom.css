@@ -122,7 +122,7 @@ position: absolute;
     position: absolute;
 }
 
-.button {
+button.button {
     border-radius: 10px;
 
     @media screen and (max-width: 768px) {
@@ -135,16 +135,19 @@ position: absolute;
 
 input[type="radio"] {
   visibility: hidden;
+  display: none;
   height: 0;
   width: 0;
 }
 
 input[type="radio"]:checked + label {
-  background-color: #93b023 !important;
+  background-color: #589632 !important;
   color: #fff !important;
 }
 
 label.button {
+  border-radius: 10px;
+  margin: 5px;
   padding-bottom: 0rem;
   padding-top: calc(0.5em - 1px);
   color: #000 !important;
@@ -152,6 +155,11 @@ label.button {
 
 a.heading-anchor {
   visibility: hidden;
+}
+
+select {
+  background-color: #fff;
+  border: none;
 }
 
 h1:hover > a.heading-anchor,
