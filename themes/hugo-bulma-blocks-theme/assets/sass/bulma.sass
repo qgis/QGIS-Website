@@ -91,6 +91,8 @@ $primary4: {{ .Param "primary4" }}
 $primary4-invert: {{ .Param "primary4-invert" }}
 $primary5: {{ .Param "primary5" }}
 $primary5-invert: {{ .Param "primary5-invert" }}
+$primary6: {{ .Param "primary6" }}
+$primary6-invert: {{ .Param "primary6-invert" }}
 $complementary1: {{ .Param "complementary1" }}
 $complementary1-invert: findColorInvert($complementary1)
 $complementary2: {{ .Param "complementary2" }}
@@ -116,7 +118,10 @@ $dark1: {{ .Param "dark1" }}
 $dark1-invert: findColorInvert($dark1)
 $dark2: {{ .Param "dark2" }}
 $dark2-invert: findColorInvert($dark2)
+$links: {{ .Param "links" }}
+$links-invert: findColorInvert($links)
 $base: {{ .Param "text-primary1" }}
+
 
 // The custom colours are set up so that in 
 // addition to using bulma's is-primary, is-info
@@ -128,6 +133,7 @@ $custom-colors: ("primary1": ($primary1, $primary1-invert),
 "primary3": ($primary3, $primary3-invert),
 "primary4": ($primary4, $primary4-invert),
 "primary5": ($primary5, $primary5-invert),
+"primary6": ($primary6, $primary6-invert),
 "complementary1" : ($complementary1, $complementary1-invert),
 "complementary2" : ($complementary2, $complementary2-invert),
 "complementary3" : ($complementary3, $complementary3-invert),
@@ -140,7 +146,8 @@ $custom-colors: ("primary1": ($primary1, $primary1-invert),
 "light2": ($light2, $light2-invert),
 "light3": ($light3, $light3-invert),
 "dark1": ($dark1, $dark1-invert),
-"dark2": ($dark2, $dark2-invert));
+"dark2": ($dark2, $dark2-invert),
+"links": ($links, $links-invert));
 
 // Brand fonts
 $heading-font: {{ .Param "heading-font" }}
