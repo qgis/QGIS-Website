@@ -1,3 +1,6 @@
 <div class="container rich {{ .Get "layoutClass" }}">
+    {{ with .Get "icon" }}
+        <div class="icon">{{ . }}</div>
+    {{ end }}
     {{ .Inner | markdownify }}
 </div>

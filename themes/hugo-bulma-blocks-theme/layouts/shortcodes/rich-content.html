@@ -1,6 +1,3 @@
-{{ with .Get "icon" }}
-<div class="icon">{{ . }}</div>
-{{ end }}
 <div class="cont {{ .Get "themeClass" }}">
-{{ .Inner | markdownify }}
+    {{ .Inner | markdownify }}
 </div>

@@ -80,8 +80,8 @@ Creating documentation offers an ideal starting point for your first contributio
 {{< /rich-right >}}
 {{< /rich-box >}}
 
-{{< rich-box layoutClass="tips">}}
-{{< rich-content  icon="💁" themeClass="coloring-1" >}}
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
 ##### Tips for first launch
 After installing QGIS, the first launch attempt may fail due to security protections. To enable QGIS, control-click on its icon in your Applications folder and select Open in the context menu. A confirmation dialog will display where you need to click the Open button again. This only has to be done once.
 {{< /rich-content >}}
