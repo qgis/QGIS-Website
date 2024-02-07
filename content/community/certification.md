@@ -34,9 +34,9 @@ The QGIS Certificate Program is designed to promote both community involvement i
 *   Authoring QGIS books
     
 
-To contact the certification team, please write to [certification@qgis.org](/cdn-cgi/l/email-protection#b6d5d3c4c2dfd0dfd5d7c2dfd9d8909585818d909583848d9095828e8dc7d1dfc5909582808dd9c4d1).
+To contact the certification team, please write to [certification@qgis.org](mailto:certification@qgis.org).
 
-Certification Process[¶](#certification-process "Link to this heading")
+Certification Process
 -----------------------------------------------------------------------
 
 ### Application
@@ -53,7 +53,6 @@ You can apply through [this form](https://changelog.qgis.org/en/qgis/create-cert
 
 ### Course Certification Workflow
 
-![Workflow Certification](../../_images/certificationworkflow.png)
+![Workflow Certification](/img/certificationworkflow.png "Workflow Certification")
 
-Workflow Certification[¶](#id2 "Link to this image")
 {{< content-end >}}

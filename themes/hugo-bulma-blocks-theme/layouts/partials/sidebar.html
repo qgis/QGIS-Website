@@ -106,9 +106,26 @@
                         </div>
                         <ul> 
                             {{ range sort .Children "Weight" }}
-                            <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
-                            <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
-                            </li>
+                                {{ if .HasChildren }}
+                                    <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+                                    <div class="has-child">
+                                        <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                                        <a href="#" class="drop-arrow"><img src="/img/arrow.svg"/></a>
+                                    </div>
+                                    <ul> 
+                                        {{ range sort .Children "Weight" }}
+                                        <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+                                        <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                                        </li>
+                                        {{ end }}
+                                    </ul> 
+                                    {{ else }}
+                                    <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+                                    <a href="{{ .URL }}">
+                                        {{ .Pre }}<span>{{ .Name }}</span>
+                                    </a>
+                                    </li>
+                                {{ end }}
                             {{ end }}
                         </ul> 
                         {{ else }}

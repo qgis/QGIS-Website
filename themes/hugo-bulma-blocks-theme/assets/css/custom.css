@@ -21,17 +21,25 @@
     padding-bottom: 30px;
 }
 
-/* ::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
     width: 5px;
 }
-::-webkit-scrollbar-thumb {
-    background: rgb(225, 225, 225);
-} */
+.sidebar::-webkit-scrollbar-thumb {
+    background:#ECF1F4;
+} 
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D7E1E7;
+  }
+
+.sidebar::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
 
 .sidebar ul {
     list-style: none;
     margin-left: 0rem;
-    padding-left: 1rem;
+    padding-left: 0.6rem;
     list-style-type: none !important;
 }
 
@@ -47,19 +55,27 @@
 * Styling top level items
 */
 .sidebar > ul {
-    padding-right: 2rem;
+    padding-right: 3rem;
+    padding-left: 0rem;
 }
 
 .sidebar li a,
 .sidebar label {
     display: inline-block;
-    padding: 0.5rem 0.4rem;
+    padding: 0.5rem 1rem;
     font-size: 14px;
     text-decoration: none;
-    color: #4b4b4b;
+    color: #4D6370;
     transition: all 0.025s ease-in;
     border-radius: 5px;
     width: 100%;
+}
+.sidebar li + li{
+    margin: 0px;
+}
+
+.sidebar ul ul {
+    margin: 0px;
 }
 
 .sidebar li::marker {
@@ -76,6 +92,7 @@
 .sidebar li .has-child .drop-arrow {
     max-width: 26px;
     padding: 0.5rem;
+    margin-right: -26px;
 }
 
 .sidebar li:has(.is-active) a {
@@ -92,7 +109,7 @@
     font-weight: bold;
 }
 .sidebar li a:hover {
-    background: #ededed;
+    background: #ECF1F4;
     color: black;
 }
 .sidebar li .is-active > a:hover {
