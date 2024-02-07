@@ -6,3 +6,6 @@
         </div>
     {{ end}}
     <div class="cont {{ .Get "themeClass" }}">
+        {{ .Inner | markdownify }}
+    </div>
+</div>
