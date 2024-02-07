@@ -1,16 +1,3 @@
-<div id="donate-prompt">
-    <h1>Before download starts</h1>
-    <div class="yellow-bg">
-        <h2>Support us</h2>
-        <p>QGIS is free of charge, and will always be free of charge if downloaded from QGIS.org.</p>
-        <p>If you can afford to support the project and people making this software, please consider making a small donation to support our efforts. Whether you choose to donate or not, we hope that you enjoy using our labour of love and encourage you to share and spread your downloaded copy far and wide so that others may enjoy it too.</p>
-        <p>Our very best regards!</p>
-    </div>
-    {{ partial "donate-stripe.html" . }}
-
-    <button class="button is-info is-inverted" onclick="hidePrompt()">I don’t want participate</button>
-</div>
-
 <div id="download-section" style="display: none">
     <h1>Download QGIS for your platform</h1>
     <div id="primary-os"></div>
@@ -118,8 +105,8 @@
 
 <script>
 function hidePrompt() {
-    var element = document.getElementById('donate-prompt');
-    element.remove();
+    document.getElementById('donate-prompt').remove();
+    document.getElementById('hide-donate-prompt').remove();
     localStorage.setItem('donatePromptClosed', true);
     document.getElementById('download-section').style.display = 'block';
 }
@@ -139,7 +126,8 @@ function detectOS() {
 
 if (localStorage.getItem('donatePromptClosed') === 'true') {
     document.getElementById('download-section').style.display = 'block';
-    document.getElementById('donate-prompt').style.display = 'none';
+    document.getElementById('donate-prompt').remove();
+    document.getElementById('hide-donate-prompt').remove();
 }
 
 const userOS = detectOS();
