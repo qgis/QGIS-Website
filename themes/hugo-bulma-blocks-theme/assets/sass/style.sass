@@ -336,3 +336,14 @@ h2
   margin-left: 5%
   margin-right: 5%
 
+.external 
+  padding-right: 20px
+  &:after
+    position: absolute
+    width: 16px
+    content: ""
+    margin-top: 5px
+    margin-left: 3px
+    height: 16px
+    z-index: 1
+    background-image: url({{ absURL "img/external.svg" }})
