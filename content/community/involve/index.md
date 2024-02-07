@@ -11,17 +11,17 @@ sidebar: true
 ## Ways of Contributing
 
 {{< columns-start >}}
-{{< column-start class="">}}
+{{< column-start>}}
 
-{{< rich-box-start layout="" theme="coloring-6" >}}
+{{< rich-box-start themeClass="coloring-6" >}}
 ### QGIS Server
 
-Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layouts and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
+Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layoutClasss and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
 {{< rich-box-end >}}
 {{< column-end >}}
-{{< column-start class="">}}
+{{< column-start>}}
 
-{{< rich-box-start layout="" theme="coloring-6" >}}
+{{< rich-box-start themeClass="coloring-6" >}}
 ### QGIS Desktop
 
 Create, edit, visualise, analyse and publish geospatial information.
@@ -32,11 +32,11 @@ Create, edit, visualise, analyse and publish geospatial information.
 {{< column-end >}}
 {{< columns-end >}}
 
-{{< rich-box-start layout="has-right" theme="coloring-1" >}}
+{{< rich-box-start layoutClass="has-right" themeClass="coloring-1" >}}
 ### Participate in Support Channels
-{{< button class = "is-primary1 is-small is-rounded" link = "#" text = "QGIS mailing lists" >}} 
-{{< button class = "is-primary1 is-small is-rounded" link = "#" text = "Chats rooms" >}} 
-{{< button class = "is-primary1 is-small is-rounded" link = "#" text = "User groups" >}} 
+{{< button class="is-primary1 is-small is-rounded" link="#" text="QGIS mailing lists" >}} 
+{{< button class="is-primary1 is-small is-rounded" link="#" text="Chats rooms" >}} 
+{{< button class="is-primary1 is-small is-rounded" link="#" text="User groups" >}} 
 
 Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
 
@@ -50,7 +50,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 
 {{< rich-box-end >}}
 
-{{< rich-box-start layout="has-right" theme="coloring-1" >}}
+{{< rich-box-start layoutClass="has-right" themeClass="coloring-1" >}}
 ### Report Bugs
 
 If you encounter any issues while working with QGIS, let the QGIS developers know about them.
@@ -60,7 +60,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 ![](/img/mappp.png)
 {{< rich-box-end >}}
 
-{{< rich-box-start layout="has-right" theme="coloring-1" >}}
+{{< rich-box-start layoutClass="has-right" themeClass="coloring-1" >}}
 ### QGIS Documentation
 
 Creating documentation offers an ideal starting point for your first contribution to the project. If you're interested in joining the documentation effort, you can find a gentle introduction and guidelines here:
@@ -70,12 +70,12 @@ Creating documentation offers an ideal starting point for your first contributio
 ![](/img/mappp.png)
 {{< rich-box-end >}}
 
-{{< rich-box-start layout="tips" icon="💁" theme="coloring-1" >}}
+{{< rich-box-start layoutClass="tips" icon="💁" themeClass="coloring-1" >}}
 ##### Tips for first launch
 After installing QGIS, the first launch attempt may fail due to security protections. To enable QGIS, control-click on its icon in your Applications folder and select Open in the context menu. A confirmation dialog will display where you need to click the Open button again. This only has to be done once.
 {{< rich-box-end >}}
 
-{{< rich-box-start layout="has-right" theme="coloring-1" >}}
+{{< rich-box-start layoutClass="has-right" themeClass="coloring-1" >}}
 ### Translate QGIS
 
 If you're interested in contributing to the documentation effort, such as translating the English manual into another language, find out how to get started here:
@@ -85,7 +85,7 @@ If you're interested in contributing to the documentation effort, such as transl
 ![](/img/mappp.png)
 {{< rich-box-end >}}
 
-{{< rich-box-start layout="has-right" theme="coloring-6" >}}
+{{< rich-box-start layoutClass="has-right" themeClass="coloring-6" >}}
 ### Develop a Plugin
 
 Interested in crafting your own? Learn how to get started!
@@ -95,7 +95,7 @@ Interested in crafting your own? Learn how to get started!
 ![](/img/mappp.png)
 {{< rich-box-end >}}
 
-{{< rich-box-start layout="has-right" theme="coloring-6" >}}
+{{< rich-box-start layoutClass="has-right" themeClass="coloring-6" >}}
 ### Develop QGIS Core
 
 QGIS Core comprises libraries for building custom applications through a robust API. It also includes desktop and server applications that showcase the library capabilities, providing a user-friendly interface
@@ -107,7 +107,7 @@ QGIS Core comprises libraries for building custom applications through a robust 
 ![](/img/mappp.png)
 {{< rich-box-end >}}
 
-{{< rich-box-start layout="has-right" theme="coloring-2" >}}
+{{< rich-box-start layoutClass="has-right" themeClass="coloring-2" >}}
 ### Sustain & Donate
 
 We welcome two types of financial contributions:
