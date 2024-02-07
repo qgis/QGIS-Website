@@ -87,7 +87,11 @@ The proposed changes are listed below.
 
 ### Trueno fonts
 
-Trueno is a free Font Library serif font. In order to embed it, please use `<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>` in the site header
+Trueno is a free Font Library serif font. In order to embed it, please use 
+```
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
+```
+in the site header
 {{< table  >}}
 | Name | Font-family
 |:-------:|:----------------------:|------------|
