@@ -16,25 +16,25 @@ We rely on sponsorships and donations for much of our funding. If you would like
 
 Donations to QGIS are tax-deductible in several countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the German QGIS user group. They can issue a payment confirmation as a tax-exempt german association.
 
-{{< rich-html-box layoutClass="has-right" >}}
+{{< rich-box layoutClass="has-right" mode="html" >}}
 {{< rich-content themeClass="coloring-1" >}}
 ## Stripe
 
 We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.
 {{< /rich-content >}}
-{{< rich-html-right >}}  
+{{< rich-right >}}  
 {{< stripe-widget >}}
-{{< /rich-html-right >}}
-{{< /rich-html-box >}}
+{{< /rich-right >}}
+{{< /rich-box >}}
 
 
-{{< rich-html-box layoutClass="has-right" >}}
+{{< rich-box layoutClass="has-right" mode="html" >}}
 {{< rich-content themeClass="coloring-1" >}}
 ## Bank transfer
 
 Use the details below to make a donation via international money transfer:
 {{< /rich-content >}}
-{{< rich-html-right >}}  
+{{< rich-right >}}  
 <pre>
 Account name: QGIS.ORG
 Address:      Boeschacherstrasse 10a
@@ -49,8 +49,8 @@ Bank address: Mingerstrasse 20
               Switzerland
 VAT-number:   CHE-489.853.176
 </pre>
-{{< /rich-html-right >}}
-{{< /rich-html-box >}}
+{{< /rich-right >}}
+{{< /rich-box >}}
 
 
 {{< rich-box layoutClass="has-right" >}}
