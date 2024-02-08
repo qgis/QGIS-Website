@@ -1,10 +1,11 @@
 <div class="spoiler" id="{{ .Get "id" }}">
 	<h4 class="spoiler-label">{{ .Get "title" }}</h4>
 	<div class="content">
-		{{ if .Get "notMarkdownify" }}
-			{{ .Inner }}
-		{{ else }}
-			{{ .Inner | markdownify }}
-		{{ end }}
+        {{ $mode := .Get "mode" }}
+        {{ if eq $mode "html" }}
+            {{ .Inner }}
+        {{ else }}
+            {{ .Inner | markdownify }}
+        {{ end }}
 	</div>
 </div>

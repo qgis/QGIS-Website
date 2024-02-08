@@ -55,7 +55,7 @@ For many flavors of GNU/Linux binary packages (rpm and deb) or software reposito
 [Linux Installation Instructions](/resources/installation-guide#linux)
 {{< /spoiler >}}
 
-{{< spoiler id="download-mac" title="Download for MacOS" notMarkdownify=true >}}
+{{< spoiler id="download-mac" title="Download for MacOS" mode="html" >}}
 {{< rich-box icon="💁" layoutClass="tips">}}
 {{< rich-content themeClass="coloring-1" >}}
 ##### Tips for first launch
@@ -70,7 +70,7 @@ After installing QGIS, the first launch attempt may fail due to security protect
 [BSD Installation Instructions](/resources/installation-guide#freebsd)
 {{< /spoiler >}}
 
-{{< spoiler id="download-mobile" title="Apps for mobile and tablet" notMarkdownify=true >}}
+{{< spoiler id="download-mobile" title="Apps for mobile and tablet" mode="html" >}}
 {{< mobile-downloads >}}
 {{< /spoiler >}}
 
