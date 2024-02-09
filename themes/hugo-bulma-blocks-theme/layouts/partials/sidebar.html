@@ -1,107 +1,45 @@
-{{ $currentPage := . }}
-{{ $pageUrl:= $currentPage.RelPermalink }}
+{{ with .Page }}
+{{ $pageUrl:= .RelPermalink }}
 
-<div class="column is-3" >
-    <nav class="sidebar">
-        <ul class="content-wrapper">
-            <li>
-                <div class="has-child">
-                    <a href="/about/">About</a>
-                    <a href="#" class="drop-arrow collapsed"
-                        ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
-                    /></a>
-                </div>
-            </li>
-            <li>
-                <div class="has-child">
-                    <a href="/community/">Community</a>
-                    <a href="#" class="drop-arrow collapsed"
-                        ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
-                    /></a>
-                </div>
-            </li>
-            <li>
-                <a href="/download/download/">Download</a>
-            </li>
-            <li class="has-active">
-                <div class="has-child">
-                    <a href="/hub/">Resources</a>
-                    <a href="#" class="drop-arrow"
-                        ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
-                    /></a>
-                </div>
-                <ul>
-                    <li>
-                        <a href="/showcase/overview/">Showcase</a>
-                    </li>
-                    <li>
-                        <a href="/documentation/overview/">Documentation</a>
-                    </li>
-                    <li>
-                        <a href="#">Roadmap</a>
-                    </li>
-                    <li>
-                        <a href="#">Releases</a>
-                    </li>
-                    <li>
-                        <a href="#">Case studies</a>
-                    </li>
-                    <li>
-                        <a href="#">Books</a>
-                    </li>
-                    <li>
-                        <a href="#">Daily reports</a>
-                    </li>
-                    <li class="external-link">
-                        <a href="#">Plugins</a>
-                    </li>
-                    <li class="has-active">
-                        <div class="has-child">
-                            <a href="#">Showcase</a>
-                            <a href="#" class="drop-arrow"
-                                ><img src="{{ .Site.BaseURL }}/img/arrow.svg"
-                            /></a>
-                        </div>
-                        <ul>
-                            <li>
-                                <a href="/value-proposition/">Value</a>
-                            </li>
-                            <li class="is-active">
-                                <a href="/charter/">Charter</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">License</a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-</div>
-{{/*  
+<div id="hamburger-btn" onclick="toggleMenu()">Product / Overview X</div>
 <div class="column is-3">
-  <nav class="sidebar">
+  <nav id="sidebar" class="sidebar">
     <ul class="content-wrapper">
-      {{ print $pageUrl}}
     {{- range site.Menus.main }}
         {{ $menuItemUrl := .URL }}
+        {{ $menuItemID := add "ul-" (replace .URL "/" "") }}
         {{ if .HasChildren }}
-        {{ print $menuItemUrl}}
-            <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+            <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
               <div class="has-child">
                 <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
-                <a href="#" class="drop-arrow"></a>
+                <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="/img/arrow.svg"/></span>
               </div>
-              <ul> 
+              <ul id="{{ $menuItemID }}" class="collapsed">
                 {{ range sort .Children "Weight" }}
-                <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
-                  <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
-                </li>
+                    {{ if .HasChildren }}
+                        <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
+                        <div class="has-child">
+                            <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                            <span class="drop-arrow"><img src="/img/arrow.svg"/></span>
+                        </div>
+                        <ul>
+                            {{ range sort .Children "Weight" }}
+                            <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
+                            <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                        {{ else }}
+                        <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
+                        <a href="{{ .URL }}">
+                            {{ .Pre }}<span>{{ .Name }}</span>
+                        </a>
+                        </li>
+                    {{ end }}
                 {{ end }}
-              </ul> 
+              </ul>
             {{ else }}
-            <li {{ if eq $menuItemUrl $pageUrl }} class="is-active"{{ end }}>
+            <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
               <a href="{{ .URL }}">
                 {{ .Pre }}<span>{{ .Name }}</span>
             </a>
@@ -110,4 +48,15 @@
     {{- end }}
     </ul>
   </nav>
-</div>  */}}
+</div>
+{{ end }}
+
+<script>
+function toggleSubMenu(listId) {
+    document.getElementById(listId).classList.toggle("unfolded");
+}
+
+function toggleMenu() {
+    document.getElementById("sidebar").classList.toggle("mobile-visible");
+}
+</script>

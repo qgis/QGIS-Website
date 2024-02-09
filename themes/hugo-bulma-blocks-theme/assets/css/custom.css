@@ -13,14 +13,6 @@
     border-left-color: white;
 }
 
-.sidebar {
-    position: sticky;
-    overflow-y: scroll;
-    top: 100px;
-    max-height: calc(100vh - 175px);
-    padding-bottom: 30px;
-}
-
 /* ::-webkit-scrollbar {
     width: 5px;
 }
@@ -28,98 +20,12 @@
     background: rgb(225, 225, 225);
 } */
 
-.sidebar ul {
-    list-style: none;
-    margin-left: 0rem;
-    padding-left: 1rem;
-    list-style-type: none !important;
-}
-
 /**
 * Hidden fallback
 */
 [hidden] {
     display: none;
     visibility: hidden;
-}
-
-/**
-* Styling top level items
-*/
-.sidebar > ul {
-    padding-right: 2rem;
-}
-
-.sidebar li a,
-.sidebar label {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: #000000;
-    transition: all 0.025s ease-in;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.sidebar li::marker {
-    margin-left: 2rem;
-    margin-right: 0rem;
-}
-
-.sidebar li .has-child {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.sidebar li .has-child .drop-arrow {
-    max-width: 26px;
-    padding: 0.5rem;
-}
-
-.sidebar li:has(.is-active) a {
-    color: black;
-}
-.sidebar .has-active > .has-child a,
-.sidebar .is-active > a {
-    /* background: #d5e39b3d; */
-    font-weight: bold;
-}
-.sidebar li .is-active > a {
-    background: linear-gradient(to right, #589732, #93b022);
-    color: #fff;
-    font-weight: bold;
-}
-.sidebar li a:hover {
-    background: #ededed;
-    color: black;
-}
-.sidebar li .is-active > a:hover {
-    background: linear-gradient(to right, #589732, #93b022);
-    color: #fff;
-    font-weight: bold;
-    opacity: 0.9;
-}
-
-.sidebar label {
-    cursor: pointer;
-}
-
-.sidebar li:has(> ul) {
-}
-
-/* .sidebar li:has(>ul)>a::after {
-content: url(../img/arrow.svg);
-border-color: none;
-transform: rotate(0deg);
-right: 2.75rem;
-position: absolute;
-} */
-.sidebar .external-link a::after {
-    content: url(../img/eva_external-link-fill.svg);
-    margin-left: 0.5rem;
-    margin-top: 0.25rem;
-    position: absolute;
 }
 
 .button {

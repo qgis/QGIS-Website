@@ -1,0 +1,107 @@
+.sidebar
+    position: sticky
+    overflow-y: scroll  // TODO: unnecessary scroll on mobile and FF windows
+    top: 100px
+    max-height: calc(100vh - 175px)
+    padding-bottom: 30px
+    &::-webkit-scrollbar
+        width: 5px
+    &::-webkit-scrollbar-thumb
+        background: #ECF1F4
+    &::-webkit-scrollbar-thumb:hover
+        background: #D7E1E7
+    &::-webkit-scrollbar-track
+        background: #fff
+
+    ul
+        list-style: none
+        margin-left: 0rem
+        padding-left: 0.6rem
+        list-style-type: none !important
+        &.collapsed
+            overflow: hidden
+            height: 0
+        &.unfolded
+            height: auto
+        ul
+            margin: 0px
+
+    > ul
+        padding-right: 3rem
+        padding-left: 0rem
+
+    .has-active > .has-child a,
+    .is-active > .has-child > a,
+    .is-active > a
+        color: black
+        background: #e0e0e0
+        font-weight: bold
+
+    li
+        a
+            display: inline-block
+            padding: 0.5rem 1rem
+            text-decoration: none
+            color: #4d4d4d
+            transition: all 0.025s ease-in
+            border-radius: 5px
+            width: 100%
+            &:hover, + span:hover
+                background: #ECF1F4
+                color: black
+
+        .has-child
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+        .has-child .drop-arrow
+            max-width: 26px
+            padding: 0.5rem
+            cursor: pointer
+            margin-right: -26px
+
+        & + li
+            margin: 0px
+        &::marker
+            margin-left: 2rem
+            margin-right: 0rem
+
+        &:has(.is-active) > ul
+          height: auto
+
+        &:has(.is-active) > div > a
+            color: black
+            font-weight: bold
+
+    .external-link a::after
+        content: url(../img/eva_external-link-fill.svg)
+        margin-left: 0.5rem
+        margin-top: 0.25rem
+        position: absolute
+
+#hamburger-btn
+  display: none
+
+@media screen and (max-width: 768px)
+  .sidebar
+    background: #fff
+    border-radius: 10px
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+    z-index: 2
+    display: none
+    position: absolute
+    top: 60px
+    left: 0
+    width: 100%
+ 
+    &.mobile-visible
+      display: block
+
+  #hamburger-btn
+    display: block
+    cursor: pointer
+    padding: 10px
+    background-color: #eee
+    position: relative
+    z-index: 3

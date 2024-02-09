@@ -125,13 +125,19 @@ sectionPagesMenu = 'main'
 
 [[menu.main]]
   name = "Resources"
-  url = "/hub/"
+  url = "/resources/"
   weight = 40 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
 
 [[menu.main]]
   name = "Download"
-  url = "/download/download/"
+  url = "/download/"
+  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
+  weight = 30 # Sets the menu order 
+
+[[menu.main]]
+  name = "Donate"
+  url = "/donate/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = 30 # Sets the menu order 
 
@@ -150,6 +156,18 @@ sectionPagesMenu = 'main'
   weight = 50 # Sets the menu order 
 
 # Submenus are done this way: parent -> identifier
+[[menu.main]]
+  parent = "Resources"
+  name = "Installation guide"
+  url = "/resources/installation-guide/"
+  weight = 10
+
+[[menu.main]]
+  parent = "Resources"
+  name = "Books"
+  url = "/resources/books/"
+  weight = 11
+
 [[menu.main]]
   parent = "Resources"
   name = "Showcase"
