@@ -1,5 +1,5 @@
 ---
-level: "Large"
+level: "hidden-Large"
 title: "QGIS Gebruikersgroep Nederland"
 logo: "qgis.nl.png"
 startDate: "2024-01-01"

@@ -9,8 +9,8 @@ heroLogo: "img/logosign.svg"
 HeroImage: "img/hegobg1.png"
 HasBanner: true
 ButtonText: "Download" 
-ButtonLink: "/download/"
-LastVersion: "Version: 3.30.1"
+ButtonLink: "download/"
+SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and open source"
 ---
 
@@ -20,7 +20,7 @@ Remove string HasBanner to delete banner from page
 
 Hero Banner currently has HTML elements.
 To do: Remove the HTML element and improve the block.
--->
+TODO 2: make adaptive and animated
 {{< box-start classes="has-background-white has-text-centered">}}
 {{< image-content-bar
 ":img/logoexample.png"
@@ -33,6 +33,7 @@ To do: Remove the HTML element and improve the block.
 ":img/logoexample.png"
 >}}
 {{< box-end no-footer="true">}}
+-->
 
 {{< feature
 title = "Create maps"
@@ -43,8 +44,7 @@ col-title-2 = "Professional map production"
 col-text-2 = "Use the intuitive layout designer to produce high-quality, large-format print maps."
 col-title-3 = "Powerful reporting tools"
 col-text-3 = "Create atlasses and reports with maps and tabular content."
-img = "/img/main-create.png"
-background = "#589632"
+img = "img/main-create.png"
 order = 1
 >}}
 {{< feature
@@ -56,8 +56,7 @@ col-title-2 = "Advanced construction tools"
 col-text-2 = "Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations"
 col-title-3 = "Highly customizable forms"
 col-text-3 = "Create user-friendly forms using our form designer"
-img = "/img/main-edit.png"
-background = "#a80632"
+img = "img/main-edit.png"
 order = 2
 >}}
 {{< feature
@@ -69,7 +68,7 @@ col-title-2 = "Automated analysis workflows"
 col-text-2 = "Visually combine analysis tools to create reproducible workflows easily"
 col-title-3 = "Extensible analysis environment"
 col-text-3 = "Explore a diverse ecosystem of third-party analysis tools for expanded capabilities"
-img = "/img/main-analyze.png"
+img = "img/main-analyze.png"
 order = 3
 >}}
 {{< feature
@@ -81,6 +80,6 @@ col-title-2 = "Standards and interoperability"
 col-text-2 = "Amplify your impact by exploring, utilizing, and creating web services based on industry standards"
 col-title-3 = "Publish your work"
 col-text-3 = "Extend QGIS to the cloud and mobile devices for wider accessibility"
-img = "/img/main-share.png"
+img = "img/main-share.png"
 order = 4
 >}}
