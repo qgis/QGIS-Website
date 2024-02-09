@@ -1,4 +1,7 @@
-<a href="{{ .Get "listLink" }}" {{ .Get "linkAttr" }} class="rich-list {{ .Get "layoutClass" }} mr-2 mb-2">
+{{ $listlink := .Get "listLink"  }}
+{{ if ($listlink ) }} <a href="{{ .Get "listLink" }}" {{ .Get "linkAttr" }} {{else}} <div {{ end }}
+ class="rich-list {{ .Get "layoutClass" }} mr-2 mb-2">
+
     <div class="cont">{{ .Get "listTitle" }}</div>
     <div class="subtext is-size-7">{{ .Get "listSubtitle" }}</div>
-</a>/
+{{ if ($listlink ) }} </a> {{else}} </div> {{ end }}

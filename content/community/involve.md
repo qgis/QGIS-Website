@@ -10,34 +10,11 @@ sidebar: true
 {{< content-start  >}}
 ## Ways of Contributing
 
-{{< columns-start >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6">}}
-### QGIS Server
-
-Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layoutClasss and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
-{{< /rich-content >}}
-{{< /rich-box >}}
-{{< column-end >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6" >}}
-### QGIS Desktop
-
-Create, edit, visualise, analyse and publish geospatial information.
-
-[Download](#)
-{{< /rich-content >}}
-{{< /rich-box >}}
-{{< column-end >}}
-{{< columns-end >}}
 
 {{< rich-box layoutClass="has-right" >}}
 {{< rich-content themeClass="coloring-1" >}}
 ### Participate in Support Channels
+
 {{< button class="is-primary1 is-small is-rounded" link="#" text="QGIS mailing lists" >}} 
 {{< button class="is-primary1 is-small is-rounded" link="#" text="Chats rooms" >}} 
 {{< button class="is-primary1 is-small is-rounded" link="#" text="User groups" >}} 
@@ -78,13 +55,6 @@ Creating documentation offers an ideal starting point for your first contributio
 {{< rich-right >}}  
 ![](/img/mappp.png)
 {{< /rich-right >}}
-{{< /rich-box >}}
-
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
-##### Tips for first launch
-After installing QGIS, the first launch attempt may fail due to security protections. To enable QGIS, control-click on its icon in your Applications folder and select Open in the context menu. A confirmation dialog will display where you need to click the Open button again. This only has to be done once.
-{{< /rich-content >}}
 {{< /rich-box >}}
 
 {{< rich-box layoutClass="has-right" >}}

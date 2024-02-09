@@ -1,0 +1,29 @@
+.rich-list  
+  padding: 1rem
+  border: 1px solid #CCD2D6
+  border-radius: 5px
+  display: block
+  &.half
+    width: calc(50% - 1rem)
+    display: inline-block
+    vertical-align: top
+  &.third
+    width: calc(33% - 1rem)
+    display: inline-block  
+    vertical-align: top
+  .cont 
+    font-weight: 300
+    color: #002033
+  .subtext
+    font-weight: 300
+    color: #4D6370
+      
+a.rich-list:hover
+  background: #ECF1F4
+
+
+@media screen and (max-width: 768px) 
+   .rich-list 
+    &.half, &.third
+        width: 100%
+
