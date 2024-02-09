@@ -348,6 +348,21 @@ h2
     z-index: 1
     background-image: url({{ absURL "img/external.svg" }})
 
-.content 
-  p
-    max-width: 800px   
+.rich-list  
+  padding: 1rem
+  border: 1px solid #CCD2D6
+  border-radius: 5px
+  display: block
+  &.half
+    width: calc(50% - 1rem)
+  .cont 
+    font-weight: 300
+    color: #002033
+  .subtext
+    font-weight: 300
+    color: #4D6370
+      
+a.rich-list:hover
+  background: #ECF1F4
+
+    
