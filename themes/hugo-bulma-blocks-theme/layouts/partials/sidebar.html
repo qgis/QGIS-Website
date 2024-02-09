@@ -11,7 +11,7 @@
         {{ if .HasChildren }}
             <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
               <div class="has-child">
-                <a href="{{ .URL }}">{{ .Name }}</a>
+                <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
                 <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="/img/arrow.svg"/></span>
               </div>
               <ul id="{{ $menuItemID }}" class="collapsed">
@@ -19,19 +19,19 @@
                     {{ if .HasChildren }}
                         <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
                         <div class="has-child">
-                            <a href="{{ .URL }}">{{ .Name }}</a>
+                            <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
                             <span class="drop-arrow"><img src="/img/arrow.svg"/></span>
                         </div>
                         <ul>
                             {{ range sort .Children "Weight" }}
                             <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-                            <a href="{{ .URL }}">{{ .Name }}</a>
+                            <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
                             </li>
                             {{ end }}
                         </ul>
                         {{ else }}
                         <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-                        <a href="{{ .URL }}">
+                        <a href="{{ trim .URL "/" | absURL }}">
                             <span>{{ .Name }}</span>
                         </a>
                         </li>
@@ -40,7 +40,7 @@
               </ul>
             {{ else }}
             <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-              <a href="{{ .URL }}">
+              <a href="{{ trim .URL "/" | absURL }}">
                 <span>{{ .Name }}</span>
             </a>
             </li>
