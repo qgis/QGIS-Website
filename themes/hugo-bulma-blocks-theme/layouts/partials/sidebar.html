@@ -1,7 +1,7 @@
 {{ with .Page }}
 {{ $pageUrl:= .RelPermalink }}
 
-<div id="hamburger-btn" onclick="toggleMenu()">Product / Overview X</div>
+<div id="hamburger-btn" onclick="toggleMenu()"><span id="ham-title"></span></div>
 <div class="column is-3">
   <nav id="sidebar" class="sidebar">
     <ul class="content-wrapper">
@@ -11,7 +11,7 @@
         {{ if .HasChildren }}
             <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
               <div class="has-child">
-                <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                <a href="{{ .URL }}">{{ .Name }}</a>
                 <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="/img/arrow.svg"/></span>
               </div>
               <ul id="{{ $menuItemID }}" class="collapsed">
@@ -19,20 +19,20 @@
                     {{ if .HasChildren }}
                         <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
                         <div class="has-child">
-                            <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
                             <span class="drop-arrow"><img src="/img/arrow.svg"/></span>
                         </div>
                         <ul>
                             {{ range sort .Children "Weight" }}
                             <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-                            <a href="{{ .URL }}">{{ .Pre }}{{ .Name }}</a>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
                             </li>
                             {{ end }}
                         </ul>
                         {{ else }}
                         <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
                         <a href="{{ .URL }}">
-                            {{ .Pre }}<span>{{ .Name }}</span>
+                            <span>{{ .Name }}</span>
                         </a>
                         </li>
                     {{ end }}
@@ -41,7 +41,7 @@
             {{ else }}
             <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
               <a href="{{ .URL }}">
-                {{ .Pre }}<span>{{ .Name }}</span>
+                <span>{{ .Name }}</span>
             </a>
             </li>
         {{ end }}
@@ -53,10 +53,21 @@
 
 <script>
 function toggleSubMenu(listId) {
-    document.getElementById(listId).classList.toggle("unfolded");
+    document.getElementById(listId).classList.toggle('unfolded');
 }
 
 function toggleMenu() {
-    document.getElementById("sidebar").classList.toggle("mobile-visible");
+    document.getElementById('sidebar').classList.toggle('visible');
+    document.getElementById('hamburger-btn').classList.toggle('open');
 }
+
+// compose title for menu button: contatenate parent section titles
+let e = document.getElementsByClassName('is-active')[0];
+let ham = document.getElementById('ham-title');
+let hamTitle = e.querySelector('a').textContent;
+if (e.parentElement.previousElementSibling != null) {
+    hamTitle = e.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
+    // TODO: add 3rd level
+}
+ham.textContent = hamTitle;
 </script>

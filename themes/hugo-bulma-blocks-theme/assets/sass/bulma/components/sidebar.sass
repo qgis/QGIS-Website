@@ -1,3 +1,5 @@
+@import "../utilities/mixins"
+
 .sidebar
     position: sticky
     overflow-y: scroll  // TODO: unnecessary scroll on mobile and FF windows
@@ -81,27 +83,41 @@
         position: absolute
 
 #hamburger-btn
-  display: none
-
-@media screen and (max-width: 768px)
-  .sidebar
-    background: #fff
-    border-radius: 10px
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
-    z-index: 2
     display: none
-    position: absolute
-    top: 60px
-    left: 0
-    width: 100%
- 
-    &.mobile-visible
-      display: block
 
-  #hamburger-btn
-    display: block
-    cursor: pointer
-    padding: 10px
-    background-color: #eee
-    position: relative
-    z-index: 3
+@media screen and (max-width: 1408px)
+    .sidebar
+        background: #fff
+        border-radius: 10px
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+        z-index: 2
+        display: none
+        position: absolute
+        top: 60px
+        left: 0
+        &.visible
+            display: block
+
+    #hamburger-btn
+        font-size: 14px
+        font-weight: 600
+        display: inline-block
+        cursor: pointer
+        padding: 10px
+        background-color: #ECF1F4
+        position: relative
+        z-index: 3
+        border-radius: 5px
+        max-width: fit-content
+
+        &.open
+            background-color: #ccd2d6
+
+        span::after
+            content: url("img/ham.svg")
+            margin-left: 20px
+            vertical-align: middle
+
+        &.open span::after
+            // TODO: need svg of the same size as img/ham.svg
+            content: url("img/close.png")
