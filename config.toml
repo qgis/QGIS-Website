@@ -83,6 +83,9 @@ corner-radius = "0px"
 ## Url to navigation web component
 uniNavHeaderUrl = 'https://konturio.github.io/qgis-uni-navigation/assets/index-I1cvcjQR.js'
 
+## This will turn on Coockie popup. True to show popup
+cookiesstate = false
+
 # This will cause html in markdown files to be rendered directly
 [markup]
   [markup.goldmark]
@@ -178,6 +181,7 @@ sectionPagesMenu = 'main'
   weight = 40
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
+
 [[menu.documentation]]
   name = "Documentation"
   url = "/documentation/overview/"
@@ -217,6 +221,7 @@ sectionPagesMenu = 'main'
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
   [menu.showcase.params]
     submenu = "showcase"
+
 
 [[menu.showcase]]
   name = "Blogs"

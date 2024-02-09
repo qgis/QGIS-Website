@@ -95,9 +95,9 @@
         {{/* Highlight: See last part of article at https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/ */}}
         {{ $highlightcss := resources.Get "css/highlight.css" }}
         {{ $overridescss := resources.Get "css/bulma-overrides.css" }}
-
+        {{ $cookiecss := resources.Get "css/cookie.css" }}
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
-        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss | resources.Concat "/css/all.css" | resources.Fingerprint }}
         <link
             href="{{ $css.RelPermalink }}"
             integrity="{{ $css.Data.Integrity }}"
@@ -172,7 +172,8 @@
         {{ $qrcreatejs := resources.Get "js/qrcreate.js" }}
         {{ $fusejs := resources.Get "js/fuse.js" }}
         {{ $markjs := resources.Get "js/mark.min.js" }}
-        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs | resources.Concat "js/all.js" | resources.Fingerprint }}
+        {{ $cookiejs := resources.Get "js/cookie.js" }}
+        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $cookiejs | resources.Concat "js/all.js" | resources.Fingerprint }}
         {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
         <script
             defer
