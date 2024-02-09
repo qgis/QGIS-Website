@@ -46,6 +46,15 @@
 	padding: 50px 0 
 	z-index: 1 
 	align-self: normal 
+	&:has(.stripe-widget)
+		width: 500px 
+.stripe-widget
+    background: #fff
+    border-radius: 20px
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+    padding: 20px
+    width: 100%
+
 .coloring-1 
 	&::after 
 		background-image: url(/img/light_blue_bg.svg) 
@@ -155,4 +164,5 @@
       width: 100%
       &::after
         width: 100%  
-        
+  .stripe-widget
+    border-radius: 10px
