@@ -1,6 +1,11 @@
-<div class="container rich {{ .Get "layoutClass" }}">
+<div class="container rich {{ .Get "layoutClass" }}" {{ with .Get "id" }} id="{{ . }}" {{ end }}>
     {{ with .Get "icon" }}
         <div class="icon">{{ . }}</div>
     {{ end }}
-    {{ .Inner | markdownify }}
+    {{ $mode := .Get "mode" }}
+    {{ if eq $mode "html" }}
+        {{ .Inner }}
+    {{ else }}
+        {{ .Inner | markdownify }}
+    {{ end }}
 </div>
