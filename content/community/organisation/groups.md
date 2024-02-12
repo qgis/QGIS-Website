@@ -14,7 +14,7 @@ sidebar: true
 
 ### Registered 2016 or earlier
 
-{{< rich-list listLink="/qgisbrasil/" icon="🇧🇷  " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Arthur Nanni" >}}
+{{< rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷  " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Arthur Nanni" >}}
 
 {{< rich-list listLink="https://qgis.dk/" icon="🇩🇰  " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Jacob Arpe" >}}
 

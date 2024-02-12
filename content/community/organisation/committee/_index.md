@@ -8,7 +8,5 @@ sidebar: true
 
 {{< content-start >}}
 
-# Committee Resolutions
-sdsdsd
 
 {{< content-end >}}

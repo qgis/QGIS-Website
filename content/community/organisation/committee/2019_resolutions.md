@@ -4,6 +4,8 @@ title: "Committee Resolution 2019"
 draft: false
 HasBanner: false
 sidebar: true
+Description: In 2019, the Project Steering Committee resolved to efficiently utilize a budget surplus, improve infrastructure and project transparency, enhance decision-making processes, and support technological updates for testing and mobile applications.
+
 ---
 
 {{< content-start >}}

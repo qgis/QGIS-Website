@@ -5,6 +5,7 @@ draft: false
 HasBanner: false
 heroImage: "img/involve.jpg"
 sidebar: true
+description: Please check the following reports, and see how your donations and sponsorships are important for the progress of the project.
 ---
 
 {{< content-start >}}

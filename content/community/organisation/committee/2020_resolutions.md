@@ -4,6 +4,7 @@ title: "Committee Resolution 2020"
 draft: false
 HasBanner: false
 sidebar: true
+description: In 2020, the Project Steering Committee focused on enhancing documentation, streamlining the use of software, refining grant processes, and updating the presentation of mobile applications, with key resolutions including mandating documentation for new features, revising the PyQGIS Cookbook, prioritizing free software usage, and refining grant voting mechanisms.
 ---
 
 {{< content-start >}}
