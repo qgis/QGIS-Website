@@ -87,7 +87,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 {{< column-end >}}
 {{< column-start class="is-two-thirds">}}
 {{< box-start  classes="notification is-white">}}
-{{< rich-list listLink="http://documentation.qgis.org"  layoutClass="ext half" listTitle="Main server" listSubtitle="http://documentation.qgis.org" >}}
+{{< rich-list listLink="http://documentation.qgis.org"  layoutClass="half" listTitle="Main server" listSubtitle="http://documentation.qgis.org" >}}
 
 Access: **Alessandro P**, **Werner M**, **Richard D**, **Frank W**, **Martin**, **Otto D**, **Gary S**, **Jurgen F**, **Tim S**, **Pirmin K**
 
@@ -99,13 +99,6 @@ Sudo: **Richard D**
 {{< columns-end >}}
 
 
-{{< rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷  " layoutClass="ext half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Arthur Nanni" >}}
-
-{{< rich-list listLink="https://qgis.dk/" icon="🇩🇰  " layoutClass="ext half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Jacob Arpe" >}}
-
-{{< rich-list listLink="/download/QGISAnnualReport2017.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2017" listSubtitle="Download PDF" >}}
-
-{{< rich-list listLink="/download/QGISAnnualReport2016.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2016" listSubtitle="Download PDF" >}}
 
 {{< rich-box layoutClass="has-right" >}}
 {{< rich-content themeClass="coloring-1" >}}

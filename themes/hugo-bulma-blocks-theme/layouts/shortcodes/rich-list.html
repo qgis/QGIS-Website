@@ -1,10 +1,36 @@
-{{ $listlink := .Get "listLink"  }}
+{{ $icon := .Get "icon" }}
 {{ $layoutClass := .Get "layoutClass" }}
-{{ $icon := .Get "icon"  }}
-{{ if ($listlink ) }} <a {{ if (findRE "ext" $layoutClass) }} target="_blank" {{ end }} href="{{ $listlink }}" {{ .Get "linkAttr" }} {{else}} <div {{ end }}
- class="rich-list {{ .Get "layoutClass" }} {{ if ($icon ) }} has-icon {{ end }} mr-2 mb-2" >
- {{ $listlink := .Get "listLink"  }}
-{{ if ($icon ) }}  <div class="icon">{{ .Get "icon" }} </div> {{ end }}
-    <div class="cont">{{ .Get "listTitle" }}</div>
-    <div class="subtext is-size-7">{{ .Get "listSubtitle" }}</div>
-{{ if ($listlink ) }} </a> {{else}} </div> {{ end }}
+{{ $iconClass := cond (ne $icon "") "has-icon" "" }}
+
+{{ $url := .Get "listLink" }}
+{{ $isExternal := or (strings.HasPrefix $url "http://") (strings.HasPrefix $url "https://") }}
+{{ $rel := cond $isExternal "noopener noreferrer" "" }}
+{{ $target := cond $isExternal "_blank" "" }}
+{{ $externalClass := cond $isExternal "ext" "" }}
+
+{{ $listTitle := .Get "listTitle" }}
+{{ $listSubtitle := .Get "listSubtitle" }}
+
+{{ if $url }}
+    <a
+        class="rich-list {{ $layoutClass }} {{ $iconClass }} {{ $externalClass }} mr-2 mb-2"
+        href="{{ $url }}"
+        target="{{ $target }}"
+        rel="{{ $rel }}"
+        {{ .Get "linkAttr" }}
+    >
+        {{ with .Get "icon" }}
+            <div class="icon">{{ . }}</div>
+        {{ end }}
+        <div class="cont">{{ $listTitle }}</div>
+        <div class="subtext is-size-7">{{ $listSubtitle }}</div>
+    </a>
+{{ else }}
+    <div class="rich-list {{ $layoutClass }} {{ $iconClass }} mr-2 mb-2">
+        {{ with .Get "icon" }}
+            <div class="icon">{{ . }}</div>
+        {{ end }}
+        <div class="cont">{{ $listTitle }}</div>
+        <div class="subtext is-size-7">{{ $listSubtitle }}</div>
+    </div>
+{{ end }}
