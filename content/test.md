@@ -67,6 +67,46 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 {{< /rich-right >}}
 {{< /rich-box >}}
 
+
+{{< columns-start >}}
+{{< column-start class="is-one-third">}}
+## Domains
+{{< column-end >}}
+{{< column-start class="is-two-thirds">}}
+{{< box-start  classes="notification is-white">}}
+**Gary**
+{{< box-end >}}
+{{< column-end >}}
+{{< columns-end >}}
+
+
+
+{{< columns-start >}}
+{{< column-start class="is-one-third">}}
+## Main server
+{{< column-end >}}
+{{< column-start class="is-two-thirds">}}
+{{< box-start  classes="notification is-white">}}
+{{< rich-list listLink="http://documentation.qgis.org"  layoutClass="ext half" listTitle="Main server" listSubtitle="http://documentation.qgis.org" >}}
+
+Access: **Alessandro P**, **Werner M**, **Richard D**, **Frank W**, **Martin**, **Otto D**, **Gary S**, **Jurgen F**, **Tim S**, **Pirmin K**
+
+Root: **Jurgen F**
+
+Sudo: **Richard D**
+{{< box-end >}}
+{{< column-end >}}
+{{< columns-end >}}
+
+
+{{< rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷  " layoutClass="ext half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Arthur Nanni" >}}
+
+{{< rich-list listLink="https://qgis.dk/" icon="🇩🇰  " layoutClass="ext half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Jacob Arpe" >}}
+
+{{< rich-list listLink="/download/QGISAnnualReport2017.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2017" listSubtitle="Download PDF" >}}
+
+{{< rich-list listLink="/download/QGISAnnualReport2016.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2016" listSubtitle="Download PDF" >}}
+
 {{< rich-box layoutClass="has-right" >}}
 {{< rich-content themeClass="coloring-1" >}}
 ### QGIS Documentation
@@ -79,6 +119,8 @@ Creating documentation offers an ideal starting point for your first contributio
 ![](/img/mappp.png)
 {{< /rich-right >}}
 {{< /rich-box >}}
+
+[Link to inner page]({{< ref "/community/foundation/charter.md" >}}) 
 
 {{< rich-box icon="💁" layoutClass="tips">}}
 {{< rich-content themeClass="coloring-1" >}}

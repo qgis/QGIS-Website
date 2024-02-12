@@ -9,6 +9,7 @@ sidebar: true
 {{< content-start >}}
 
 # Past sustaining members
-sdsdsd
+
+{{< fund status="inactive" >}}
 
 {{< content-end >}}

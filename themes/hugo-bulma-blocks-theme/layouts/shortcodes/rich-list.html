@@ -1,7 +1,10 @@
 {{ $listlink := .Get "listLink"  }}
-{{ if ($listlink ) }} <a href="{{ .Get "listLink" }}" {{ .Get "linkAttr" }} {{else}} <div {{ end }}
- class="rich-list {{ .Get "layoutClass" }} mr-2 mb-2">
-
+{{ $layoutClass := .Get "layoutClass" }}
+{{ $icon := .Get "icon"  }}
+{{ if ($listlink ) }} <a {{ if (findRE "ext" $layoutClass) }} target="_blank" {{ end }} href="{{ $listlink }}" {{ .Get "linkAttr" }} {{else}} <div {{ end }}
+ class="rich-list {{ .Get "layoutClass" }} {{ if ($icon ) }} has-icon {{ end }} mr-2 mb-2" >
+ {{ $listlink := .Get "listLink"  }}
+{{ if ($icon ) }}  <div class="icon">{{ .Get "icon" }} </div> {{ end }}
     <div class="cont">{{ .Get "listTitle" }}</div>
     <div class="subtext is-size-7">{{ .Get "listSubtitle" }}</div>
 {{ if ($listlink ) }} </a> {{else}} </div> {{ end }}

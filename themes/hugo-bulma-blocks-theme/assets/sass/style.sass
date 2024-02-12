@@ -348,4 +348,66 @@ h2
     z-index: 1
     background-image: url({{ absURL "img/external.svg" }})
 
+.ext 
+  .cont
+    padding-right: 20px
+    &:after
+      position: absolute
+      width: 16px
+      content: ""
+      margin-top: 5px
+      margin-left: 3px
+      height: 16px
+      z-index: 1
+      background-image: url({{ absURL "/img/external.svg" }})
+
+
+.funders 
+  img
+    max-height: 150px
+  figure
+    height: 150px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-left: 1.5em
+    margin-right: 1.5em
+    margin-bottom: 0em
+  .title
+    font-size: 1rem  
+    font-weight: 400
+    color: #002033
+  a
+    text-align: center  
+  .subtitle
+    color: #4D6370
+  .notification
+    border-radius: 10px
+    background-color: white  
+    transition: 0.2s
+    padding: 1.25rem 
+    &:hover
+      box-shadow: 0rem 0rem 1rem #ccd2d687
+      border-color: #ffffff
+  .fund-flagship
+    border: 2px solid #F1903B
+  .fund-large
+    border: 2px solid #EEE766
+  .fund-medium
+    border: 2px solid #CCD2D6  
+    figure
+      height: 120px
+    img
+      max-height: 120px  
+  .fund-small
+    figure
+      height: 100px
+    img
+      max-height: 100px    
+  .past
+    img
+      filter: grayscale(1)
+
+
+    
     
