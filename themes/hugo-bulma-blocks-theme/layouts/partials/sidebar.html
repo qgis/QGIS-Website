@@ -4,47 +4,42 @@
 <div id="hamburger-btn" onclick="toggleMenu()"><span id="ham-title"></span></div>
 <div class="column is-3">
   <nav id="sidebar" class="sidebar">
+    {{/* print $pageUrl */}}
     <ul class="content-wrapper">
     {{- range site.Menus.main }}
-        {{ $menuItemUrl := .URL }}
         {{ $menuItemID := add "ul-" (replace .URL "/" "") }}
+        <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
         {{ if .HasChildren }}
-            <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-              <div class="has-child">
+            <div class="has-child">
                 <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
                 <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="/img/arrow.svg"/></span>
-              </div>
-              <ul id="{{ $menuItemID }}" class="collapsed">
+            </div>
+            <ul id="{{ $menuItemID }}" class="collapsed">
                 {{ range sort .Children "Weight" }}
+                    {{ $innerMenuItemID := add "ul-" (replace .URL "/" "") }}
+                    <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
                     {{ if .HasChildren }}
-                        <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
                         <div class="has-child">
                             <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
-                            <span class="drop-arrow"><img src="/img/arrow.svg"/></span>
+                            <span onclick="toggleSubMenu('{{ $innerMenuItemID }}')" class="drop-arrow"><img src="/img/arrow.svg"/></span>
                         </div>
-                        <ul>
+                        <ul id="{{ $innerMenuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
-                            <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-                            <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
-                            </li>
+                                <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
+                                    <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
+                                </li>
                             {{ end }}
                         </ul>
-                        {{ else }}
-                        <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-                        <a href="{{ trim .URL "/" | absURL }}">
-                            <span>{{ .Name }}</span>
-                        </a>
-                        </li>
+                    {{ else }}
+                        <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
                     {{ end }}
+                    </li>
                 {{ end }}
-              </ul>
-            {{ else }}
-            <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
-              <a href="{{ trim .URL "/" | absURL }}">
-                <span>{{ .Name }}</span>
-            </a>
-            </li>
+            </ul>
+        {{ else }}
+            <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
         {{ end }}
+        </li>
     {{- end }}
     </ul>
   </nav>
@@ -62,12 +57,15 @@ function toggleMenu() {
 }
 
 // compose title for menu button: contatenate parent section titles
-let e = document.getElementsByClassName('is-active')[0];
+let actileListItem = document.getElementsByClassName('is-active')[0];
 let ham = document.getElementById('ham-title');
-let hamTitle = e.querySelector('a').textContent;
-if (e.parentElement.previousElementSibling != null) {
-    hamTitle = e.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
-    // TODO: add 3rd level
+let hamTitle = actileListItem.querySelector('a').textContent;
+if (actileListItem.parentElement.previousElementSibling != null) {
+    hamTitle = actileListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
 }
 ham.textContent = hamTitle;
+
+// expand active section
+if ((e = actileListItem.querySelector('ul')) != null )
+    e.classList.toggle('unfolded');
 </script>
