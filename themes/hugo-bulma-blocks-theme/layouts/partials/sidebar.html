@@ -69,8 +69,10 @@ ham.textContent = hamTitle;
 if ((e = actileListItem.querySelector('ul')) != null) {
     e.classList.toggle('unfolded');
     // expand 3rd level
-    if ((e = e.querySelector('li.is-active')) != null)
-        if ((e = e.querySelector('ul')) != null)
+    if ((e = e.querySelector('li.is-active')) != null) {
+        if ((e = e.querySelector('ul')) != null) {
             e.classList.toggle('unfolded');
+        }
+    }
 }
 </script>
