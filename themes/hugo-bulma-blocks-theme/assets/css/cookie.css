@@ -1,21 +1,3 @@
-* {
-    margin: 0;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
-p {
-    margin: 16px 0 8px;
-    line-height: 1.4;
-    font-weight: 400;
-}
-
-.wrapper {
-    padding: 24px;
-}
-
 .cookie-container {
     position: fixed;
     bottom: -100%;
@@ -30,6 +12,16 @@ p {
     padding: 0 32px;
     box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.15);
     transition: 400ms;
+}
+
+.cookie-container p {
+    margin: 16px 0 8px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.cookie-container .wrapper {
+    padding: 24px;
 }
 .cookhead {
     font-weight: 600;

@@ -4,6 +4,7 @@ title: "QGIS.org Charter"
 draft: false
 layout: "single"
 sidebar: true
+description: QGIS.ORG is the worldwide association of QGIS users and developers. QGIS.ORG is constituted as a Swiss association (Verein im Sinne des Schweizerischen Zivilgesetzbuches (Art. 60-79 ZGB)).
 ---
 
 {{< content-start >}}

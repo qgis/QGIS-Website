@@ -8,7 +8,7 @@ mark
   padding: .05rem 0.25em
 
 body
-  color: {{ .Param "text-primary1" }}
+  color: {{ .Param "text-primary2" }}
 
 h2
   font-size: 3rem
@@ -336,3 +336,23 @@ h2
   margin-left: 5%
   margin-right: 5%
 
+.external-link
+  padding-right: 20px
+  &:after
+    position: absolute
+    width: 16px
+    content: ""
+    margin-top: 5px
+    margin-left: 3px
+    height: 16px
+    z-index: 1
+    background-image: url("img/external.svg")
+
+.scroll-on-page
+  text-decoration: underline dashed 
+
+
+
+
+    
+    

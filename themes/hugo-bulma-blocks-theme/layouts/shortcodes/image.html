@@ -1,5 +1,5 @@
 {{ $animationClasses := "" }}
-{{ $animate := .Get "animate" | default "false" }}
+{{ $animate := .Get "animate" | default "true" }}
 {{ $image := .Get "image" | default "false" }}
 {{ if eq $animate "true" }}
 {{ $animationClasses := "animation-element animate-from-left" }}
