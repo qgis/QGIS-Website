@@ -1,0 +1,55 @@
+.cookie-container {
+    position: fixed;
+    bottom: -100%;
+    left: 10px;
+    font-size: 14px;
+    width: 300px;
+    line-height: 19px;
+    z-index: 10000;
+    background: #ffffff;
+    color: #888888;
+    border-radius: 10px;
+    padding: 0 32px;
+    box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.15);
+    transition: 400ms;
+}
+
+.cookie-container p {
+    margin: 16px 0 8px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.cookie-container .wrapper {
+    padding: 24px;
+}
+.cookhead {
+    font-weight: 600;
+    color: black;
+    line-height: 1;
+    margin-top: 24px;
+    font-size: 18px;
+}
+.cookie-container.active {
+    bottom: 10px;
+}
+
+.cookie-container a {
+    color: #3a9800;
+    font-weight: 400;
+}
+
+.cookie-btn {
+    background: #f1903b;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.cookie-btn:hover {
+    background: #f1813b;
+}
