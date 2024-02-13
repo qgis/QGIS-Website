@@ -16,9 +16,9 @@ QGIS is available on Windows, macOS, Linux, Android and iOS.
 
 We recommend installing the packages of the released software.
 
-To evaluate the upcoming release and to allow non-developers to support development we also provide testing packages (note the [warning](https://qgis.org/en/site/forusers/alldownloads.html#warning)).
+To evaluate the upcoming release and to allow non-developers to support development we also provide testing packages (note the [warning](#warning)).
 
-In the feature frozen phase preceding a release (see [Release schedule](https://qgis.org/en/site/getinvolved/development/roadmap.html#qgis-release-schedule)) these packages are effectively **pre-releases, which we strongly urge users to test**.
+In the feature frozen phase preceding a release (see [Release schedule](../roadmap.html#qgis-release-schedule)) these packages are effectively **pre-releases, which we strongly urge users to test**.
 
 # Windows
 
@@ -56,12 +56,12 @@ Alternatively to _Express_ you also use the _Advanced Install_, navigate to the 
 |Release|Version|Package|Description|
 |---|---|---|---|
 |Latest Release|3.34.3 Prizren ​|qgis|Release|
-|qgis-rel-dev [[1]](https://qgis.org/en/site/forusers/alldownloads.html#id5)|Nightly build of the upcoming point release|
+|qgis-rel-dev [[1]](#id5)|Nightly build of the upcoming point release|
 |Long Term Release|3.28.15 Firenze LTR|qgis-ltr|Release|
-|qgis-ltr-dev [[1]](https://qgis.org/en/site/forusers/alldownloads.html#id5)|Nightly build of the upcoming long term point release|
-|Development|3.35 master|qgis-dev [[1]](https://qgis.org/en/site/forusers/alldownloads.html#id5)|Nightly build of the development version|
+|qgis-ltr-dev [[1]](#id5)|Nightly build of the upcoming long term point release|
+|Development|3.35 master|qgis-dev [[1]](#id5)|Nightly build of the development version|
 
-[1] ([1](https://qgis.org/en/site/forusers/alldownloads.html#id2),[2](https://qgis.org/en/site/forusers/alldownloads.html#id3),[3](https://qgis.org/en/site/forusers/alldownloads.html#id4))
+[1] ([1](#id2),[2](#id3),[3](#id4))
 
 Nightlies are debug builds (including debugging output)
 
@@ -69,27 +69,33 @@ The packages listed in the table only install the necessary packages to run QGIS
 
 The Express installs reference the corresponding `-full` variant and the standalone installers are also made from these OSGeo4W package sets.
 
-Before installing any of the nightly builds note the [warning](https://qgis.org/en/site/forusers/alldownloads.html#warning).
+Before installing any of the nightly builds note the [warning](#warning).
 
 # Linux
 
 Most linux distributions split QGIS into several packages; you’ll probably need qgis and qgis-python (to run plugins). Packages like qgis-grass (or qgis-plugin-grass), qgis-server can be skipped initially, or installed only when you need them.
 
-Below you find instructions to install per distribution. For most distro’s there are instructions to install QGIS stable and instructions to install a cutting edge QGIS testing build (note the [warning](https://qgis.org/en/site/forusers/alldownloads.html#warning)).
+Below you find instructions to install per distribution. For most distro’s there are instructions to install QGIS stable and instructions to install a cutting edge QGIS testing build (note the [warning](#warning)).
 
 ## Debian/Ubuntu
 
 ### Quickstart
 
-Note
-
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
+##### Note
 In the section following this one, you will find ALL possible options to install different versions of QGIS in different versions of Debian/Ubuntu. If you have problems, verify there whether your distribution is still supported as the repositories also contain older **unsupported** distributions with the last QGIS version that was supported. Beware that those might have meanwhile ceased to work.
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 Here you will simply install the latest stable QGIS (3.34.x Prizren) in your Debian or Ubuntu without having to edit config files.
 
-Note
-
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
+##### Note
 Although you see ‘Debian’ in some places, this also works for ‘Ubuntu’, as one is actually a symlink to the other on our server.
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 First install some tools you will need for this instructions:
 
@@ -115,13 +121,16 @@ Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 ```
 
-Note
-
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
+##### Note
 `Suites` in above lines depends on your distribution. `lsb_release -cs` will show your distribution name.
 
 In some distributions (like Linux Mint), `. /etc/os-release; echo "$UBUNTU_CODENAME"` will show the correct distibution name.
 
-See [Available codenames](https://qgis.org/en/site/forusers/alldownloads.html#available-codenames).
+See [Available codenames](#available-codenames).
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 Update your repository information to reflect also the just added QGIS one:
 
@@ -135,9 +144,12 @@ Now, install QGIS:
 sudo apt install qgis qgis-plugin-grass
 ```
 
-Note
-
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
+##### Note
 Add `qgis-server` to this line if you also want to install QGIS Server
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 ### Repositories
 
@@ -149,8 +161,9 @@ Our main repository contains multiple lines of packages for several versions of 
 
 For Ubuntu we also used to have extra packages in a separate repository that are based on [ubuntugis](https://launchpad.net/~ubuntugis), which held more uptodate versions of other GIS packages than Ubuntu itself for LTS versions. If you want those you also need to include ubuntugis-unstable ppa in your /etc/apt/sources.list.d/qgis.list file (see [ubuntugis documentation](https://trac.osgeo.org/ubuntugis/wiki/UbuntuGISRepository)).
 
-Note
-
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
+##### Note
 The release packages are only produced once shortly after a new version has been released. As unstable, not yet released debian versions (testing) and ubuntugis-unstable can have library changes the packages might sooner or later be broken for these targets, when the development in debian, ubuntu or ubuntugis-unstable moves on and their packages used as dependencies in qgis change. In that event you can either
 
 - move to a stable debian version and use the released packages for it,
@@ -160,6 +173,8 @@ The release packages are only produced once shortly after a new version has been
 - switch to a nightly repository (available for the **two** release branches and master) whose packages are rebuild on regular basis and will also pickup the updated dependencies automatically or
     
 - build your own set of packages (see [build-debian-packages](https://github.com/qgis/QGIS/blob/master/INSTALL.md#310-building-debian-packages)).
+{{< /rich-content >}}
+{{< /rich-box >}}
     
 
 Lines of packages:
@@ -168,38 +183,38 @@ Lines of packages:
 | ---- | ---- | ---- | ---- |
 | Latest Release | 3.34.x Prizren ​ | Release for **Debian and Ubuntu** | [https://qgis.org/debian](https://qgis.org/debian) [https://qgis.org/ubuntu](https://qgis.org/ubuntu) |
 | Release with ubuntugis-unstable dependencies | [https://qgis.org/ubuntugis](https://qgis.org/ubuntugis) |  |  |
-| Nightly build of upcoming point release for Debian and Ubuntu [[5]](https://qgis.org/en/site/forusers/alldownloads.html#id12) | [https://qgis.org/debian-nightly-release](https://qgis.org/debian-nightly-release) [https://qgis.org/ubuntu-nightly-release](https://qgis.org/ubuntu-nightly-release) |  |  |
-| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](https://qgis.org/en/site/forusers/alldownloads.html#id12) | [https://qgis.org/ubuntugis-nightly-release](https://qgis.org/ubuntugis-nightly-release) |  |  |
+| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | [https://qgis.org/debian-nightly-release](https://qgis.org/debian-nightly-release) [https://qgis.org/ubuntu-nightly-release](https://qgis.org/ubuntu-nightly-release) |  |  |
+| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | [https://qgis.org/ubuntugis-nightly-release](https://qgis.org/ubuntugis-nightly-release) |  |  |
 | Long Term Release Repository | 3.28.x Firenze LTR | Release for **Debian and Ubuntu** | [https://qgis.org/debian-ltr](https://qgis.org/debian-ltr) [https://qgis.org/ubuntu-ltr](https://qgis.org/ubuntu-ltr) |
 | Release with ubuntugis-unstable dependencies | [https://qgis.org/ubuntugis-ltr](https://qgis.org/ubuntugis-ltr) |  |  |
-| Nightly build of upcoming point release for Debian and Ubuntu [[5]](https://qgis.org/en/site/forusers/alldownloads.html#id12) | [https://qgis.org/debian-nightly-ltr](https://qgis.org/debian-nightly-ltr) [https://qgis.org/ubuntu-nightly-ltr](https://qgis.org/ubuntu-nightly-ltr) |  |  |
-| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](https://qgis.org/en/site/forusers/alldownloads.html#id12) | [https://qgis.org/ubuntugis-nightly-ltr](https://qgis.org/ubuntugis-nightly-ltr) |  |  |
-| Development Version | 3.35 master | Nightly build for **Debian and Ubuntu** [[5]](https://qgis.org/en/site/forusers/alldownloads.html#id12) | [https://qgis.org/debian-nightly](https://qgis.org/debian-nightly) [https://qgis.org/ubuntu-nightly](https://qgis.org/ubuntu-nightly) |
-| Nightly build with ubuntugis-unstable dependencies [[5]](https://qgis.org/en/site/forusers/alldownloads.html#id12) | [https://qgis.org/ubuntugis-nightly](https://qgis.org/ubuntugis-nightly) |  |  |
+| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | [https://qgis.org/debian-nightly-ltr](https://qgis.org/debian-nightly-ltr) [https://qgis.org/ubuntu-nightly-ltr](https://qgis.org/ubuntu-nightly-ltr) |  |  |
+| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | [https://qgis.org/ubuntugis-nightly-ltr](https://qgis.org/ubuntugis-nightly-ltr) |  |  |
+| Development Version | 3.35 master | Nightly build for **Debian and Ubuntu** [[5]](#id12) | [https://qgis.org/debian-nightly](https://qgis.org/debian-nightly) [https://qgis.org/ubuntu-nightly](https://qgis.org/ubuntu-nightly) |
+| Nightly build with ubuntugis-unstable dependencies [[5]](#id12) | [https://qgis.org/ubuntugis-nightly](https://qgis.org/ubuntugis-nightly) |  |  |
 
-[5] ([1](https://qgis.org/en/site/forusers/alldownloads.html#id6),[2](https://qgis.org/en/site/forusers/alldownloads.html#id7),[3](https://qgis.org/en/site/forusers/alldownloads.html#id8),[4](https://qgis.org/en/site/forusers/alldownloads.html#id9),[5](https://qgis.org/en/site/forusers/alldownloads.html#id10),[6](https://qgis.org/en/site/forusers/alldownloads.html#id11))
+[5] ([1](#id6),[2](#id7),[3](#id8),[4](#id9),[5](#id10),[6](#id11)) nightlies are debug builds (including debug output)
 
-nightlies are debug builds (including debug output)
-
+<small>
 Next point release: 2024-02-23 12:00:00 UTC
 
 Next release: 2024-02-23 12:00:00 UTC
 
-(more dates see Release Schedule on [Road Map](https://qgis.org/en/site/getinvolved/development/roadmap.html))
+(more dates see Release Schedule on [Road Map](../roadmap))
+</small>
 
-Supported distribution versions:
+#### Supported distribution versions: {#available-codenames}
 
 |Distribution|Version|Codename|Also available based on ubuntugis-unstable dependencies?|
 |---|---|---|---|
 |Debian|12.x (stable)|bookworm||
 |11.x (oldstable)|bullseye||
 |unstable|sid||
-|Ubuntu|24.04 (LTS) [[6]](https://qgis.org/en/site/forusers/alldownloads.html#id14)|noble||
+|Ubuntu|24.04 (LTS) [[6]](#id14)|noble||
 |23.10|mantic||
 |23.04|lunar||
 |22.04 (LTS)|jammy|yes|
 
-[[6](https://qgis.org/en/site/forusers/alldownloads.html#id13)]
+[[6](#id13)]
 
 future ubuntu release planned for 2024-04-25
 
@@ -272,9 +287,12 @@ sudo apt install qgis-server --no-install-recommends --no-install-suggests
 apt install python3-qgis
 ```
 
-Note
-
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
+##### Note
 Please remove all the QGIS and GRASS packages you may have installed from other repositories before doing the update.
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 ## Fedora
 
@@ -477,7 +495,7 @@ Spack related issues should be reported at: [https://github.com/spack/spack/issu
 
 # Mac OS X / macOS
 
-Official All-in-one, signed installers for macOS High Sierra (10.13) and newer can be downloaded from the [QGIS download page](https://qgis.org/en/site/forusers/download.html).
+Official All-in-one, signed installers for macOS High Sierra (10.13) and newer can be downloaded from the [QGIS download page](../../download).
 
 ## QGIS nightly release
 
@@ -508,9 +526,13 @@ sudo port selfupdate
 sudo port upgrade outdated
 ```
 
-Note
+{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-1" >}}
+##### Note
 
 Concurrent installation of Homebrew and MacPorts is not compatible and will almost certainly lead to conflicts. If you choose to install one of the package systems you need to uninstall the other.
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 ## Old releases
 
@@ -568,15 +590,23 @@ An old and deprecated not touch optimised release of QGIS for Android can be fou
 
 [https://play.google.com/store/apps/details?id=org.qgis.qgis](https://play.google.com/store/apps/details?id=org.qgis.qgis)
 
-Warning
+{{< rich-box icon="⚠️" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-6" >}}
+##### Warning
 
 There is currently no support for Android 5. Best support is given for Android 4.3 and 4.4.x. This is a direct port of the QGIS desktop application. It is only slightly optimized for touch devices and therefore needs to be carefully evaluated for its suitability in day-to-day use. There are other apps available which are designed and optimized specifically for touch devices.
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 # QGIS Testing warning
 
-Warning
+{{< rich-box icon="⚠️" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-6" >}}
+##### Warning
 
 QGIS testing packages are provided for some platforms in addition to the QGIS stable version. QGIS testing contains unreleased software that is currently being worked on. They are only provided for testing purposes to early adopters to check if bugs have been resolved and that no new bugs have been introduced. Although we carefully try to avoid breakages, it may at any given time not work, or may do bad things to your data. Take care. You have been warned!
+{{< /rich-content >}}
+{{< /rich-box >}}
 
 # Installing from Source
 

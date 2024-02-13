@@ -12,7 +12,7 @@
     <div class="container {{ $classes }}">
         {{ if eq .Page.Params.sidebar true}}
         <div class="columns is-multiline is-centered">
-        {{ partial "sidebar"}}
+        {{ partial "sidebar" . }}
         <div class="content column is-9"> 
         {{ end }}
         

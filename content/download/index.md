@@ -43,16 +43,16 @@ Since QGIS 3.20 we only ship 64-bit Windows executables.
 {{< spoiler id="download-linux" title="Download for Linux" >}}
 For many flavors of GNU/Linux binary packages (rpm and deb) or software repositories (to add to your installation manager) are available. Please select your choice of distro below:
 
-- [Debian/Ubuntu](/resources/installation-guide#debian-ubuntu)
-- [Fedora](/resources/installation-guide#fedora)
-- [openSUSE](/resources/installation-guide#suse-opensuse)
-- [Mandriva](/resources/installation-guide#mandriva)
-- [Slackware](/resources/installation-guide#slackware)
-- [Arch Linux](/resources/installation-guide#arch-linux)
-- [Flatpak](/resources/installation-guide#flatpak)
-- [Spack](/resources/installation-guide#spack)
+- [Debian/Ubuntu](../resources/installation-guide#debian-ubuntu)
+- [Fedora](../resources/installation-guide#fedora)
+- [openSUSE](../resources/installation-guide#suse-opensuse)
+- [Mandriva](../resources/installation-guide#mandriva)
+- [Slackware](../resources/installation-guide#slackware)
+- [Arch Linux](../resources/installation-guide#arch-linux)
+- [Flatpak](../resources/installation-guide#flatpak)
+- [Spack](../resources/installation-guide#spack)
 
-[Linux Installation Instructions](/resources/installation-guide#linux)
+[Linux Installation Instructions](../resources/installation-guide#linux)
 {{< /spoiler >}}
 
 {{< spoiler id="download-mac" title="Download for MacOS" mode="html" >}}
@@ -67,7 +67,7 @@ After installing QGIS, the first launch attempt may fail due to security protect
 {{< /spoiler >}}
 
 {{< spoiler id="download-bsd" title="Download for BSD" >}}
-[BSD Installation Instructions](/resources/installation-guide#freebsd)
+[BSD Installation Instructions](../resources/installation-guide#freebsd)
 {{< /spoiler >}}
 
 {{< spoiler id="download-mobile" title="Apps for mobile and tablet" mode="html" >}}
