@@ -57,16 +57,16 @@ function toggleMenu() {
 }
 
 // compose title for menu button: contatenate parent section titles
-let actileListItem = document.getElementsByClassName('is-active')[0];
+let activeListItem = document.getElementsByClassName('is-active')[0];
 let ham = document.getElementById('ham-title');
-let hamTitle = actileListItem.querySelector('a').textContent;
-if (actileListItem.parentElement.previousElementSibling != null) {
-    hamTitle = actileListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
+let hamTitle = activeListItem.querySelector('a').textContent;
+if (activeListItem.parentElement.previousElementSibling != null) {
+    hamTitle = activeListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
 }
 ham.textContent = hamTitle;
 
 // expand active section
-if ((e = actileListItem.querySelector('ul')) != null) {
+if ((e = activeListItem.querySelector('ul')) != null) {
     e.classList.toggle('unfolded');
     // expand 3rd level
     if ((e = e.querySelector('li.is-active')) != null) {
