@@ -44,7 +44,7 @@
                 {{ $.Scratch.Set "counter" 0 }}
                 {{ $headlessbundle := .Site.GetPage "/funders" }}
                 {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                    {{ if or (eq .Params.level "Small") (eq .Params.level "Medium") }}
+                    {{ if (eq .Params.level "Medium") }}
                         {{ $startDate := time .Params.startDate }}
                         {{ $endDate := time .Params.endDate }}
                         {{ if ge $endDate now }}

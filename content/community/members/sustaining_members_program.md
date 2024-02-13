@@ -16,13 +16,8 @@ As a result, you have free access to the source code and binaries that we provid
 
 We would like to extend our activities and improve the quality of QGIS. Your financial contribution will support the maintenance, improvement, and promotion of QGIS. Becoming a sustaining member is a way of ensuring the longevity and overall health of the project.
 
-## With your financial contributions we are able to:
-
-
-
-
 {{< columns-start >}}
-{{< column-start class="is-one-third">}}
+{{< column-start class="is-flex-direction-column is-one-third left-title">}}
 ## Enhanced Infrastructure & Development Support
 {{< column-end >}}
 
@@ -49,11 +44,13 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 {{< columns-end >}}
 
 {{< columns-start >}}
-{{< column-start class="is-one-third">}}
-## Community Growth & Engagement
+{{< column-start class="is-flex-direction-column is-one-third left-title">}}
+## Community Growth & Engagement  
+ 
+   
 {{< column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}}
+{{< column-start class="is-flex-direction-column is-two-thirds ">}}
 {{< rich-box >}}
 {{< rich-content themeClass="coloring-1" >}} 
 #### Empowering Our Volunteers
@@ -73,106 +70,10 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 {{< column-end >}}
 {{< columns-end >}}
 
-
-### Enhanced Infrastructure & Development Support
-
-{{< columns-start >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}} 
-#### Maintaining Core Infrastructure
-*   The official QGIS.org website, a central hub for all things QGIS.
-*   Our issue tracking system for efficient bug and feature reporting.
-*   The continuous integration system, ensuring code quality and stability through automated tests.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
-#### Software Development & QA
-*   Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
-*   Address bugs and other issues promptly, enhancing the user experience.
-*   Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< columns-end >}}
-
-### Community Growth & Engagement
-
-{{< columns-start >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
-#### Empowering Our Volunteers
-*   Mentoring new contributors, fostering a welcoming and productive community.
-*   Translating QGIS into multiple languages, making the software truly global.
-*   Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own.
-
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
-#### Fostering Collaboration & Knowledge Sharing
-*   Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< columns-end >}}
+QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance](/community/foundation/finance) section.
 
 
-
-With your financial contributions we are able to:
-
-*   keep the QGIS.ORG IT infrastructure up and running. This includes aspects, such as
-    
-    *   the QGIS.ORG website
-        
-    *   our issue (bug and feature reporting) system
-        
-    *   the continuous integration system that tests each change or pull request against a series of automated unit tests
-        
-    *   our documentation and API documentation system
-        
-*   packaging QGIS for the various operating systems
-    
-*   fixing bugs and other issues
-    
-*   managing pull requests and do code reviewing
-    
-*   mentoring new contributors
-    
-*   translating QGIS
-    
-*   running our QGIS grant system that allows contributors to work on behind the scenes improvements to the QGIS code base, our infrastructure, documentation or other aspects of our community. Work that otherwise would be hard to do by volunteers only or hard to sell to customers of QGIS development companies
-    
-*   organize and support our contributor meetings and QGIS conferences
-    
-
-QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance](../finance/index.html#qgis-finances) section.
-
-How can you support the QGIS Development
--------------------------------------------------------------------------------------------------------------
-
-There are two kinds of financial contributions, we accept:
-
-*   sustaining memberships: a sustaining membership is an annual commitment of funds to the project.
-    
-*   donations: a donation is a once off financial contribution to the QGIS project.
-    
-
-### Sustaining membership
+## Sustaining membership
 
 Sustaining members can support QGIS for any amount of money of at least 500 €. Sustaining memberships last one year, after which they may be continued with a new payment, or allowed to lapse. Sustaining members have no voting rights (unless they are simultaneously voting members in which case their voting rights are unaffected). At or above the following levels a sustaining member will be designated as being one of the following category, based on their size and assigned through self declaration:
 {{< columns-start >}}
