@@ -66,6 +66,11 @@ if (actileListItem.parentElement.previousElementSibling != null) {
 ham.textContent = hamTitle;
 
 // expand active section
-if ((e = actileListItem.querySelector('ul')) != null )
+if ((e = actileListItem.querySelector('ul')) != null) {
     e.classList.toggle('unfolded');
+    // expand 3rd level
+    if ((e = e.querySelector('li.is-active')) != null)
+        if ((e = e.querySelector('ul')) != null)
+            e.classList.toggle('unfolded');
+}
 </script>
