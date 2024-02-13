@@ -12,7 +12,7 @@
         {{ if .HasChildren }}
             <div class="has-child">
                 <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
-                <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="/img/arrow.svg"/></span>
+                <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
             </div>
             <ul id="{{ $menuItemID }}" class="collapsed">
                 {{ range sort .Children "Weight" }}
@@ -21,7 +21,7 @@
                     {{ if .HasChildren }}
                         <div class="has-child">
                             <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
-                            <span onclick="toggleSubMenu('{{ $innerMenuItemID }}')" class="drop-arrow"><img src="/img/arrow.svg"/></span>
+                            <span onclick="toggleSubMenu('{{ $innerMenuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
                         </div>
                         <ul id="{{ $innerMenuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
