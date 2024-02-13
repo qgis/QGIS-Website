@@ -10,126 +10,20 @@ sidebar: true
 
 # Sustaining Membership program
 
-QGIS is an entirely Open Source project. QGIS development is carried out largely by a group of volunteers, that in time have built up a large, valuable and useful code base, free to use and improve for everybody. 
+Organizations or individuals interested in supporting the QGIS project should contact the QGIS treasurer, Andreas Neumann ([finance@qgis.org](/cdn-cgi/l/email-protection#d2b4bbbcb3bcb1b7f4f1e1e5e9f4f1e7e0e9f4f1e6eae9a3b5bba1f4f1e6e4e9bda0b5)), with questions, requests for becoming a sustaining member, invoices or to make arrangements.
 
-As a result, you have free access to the source code and binaries that we provide on our web site. As a result of this volunteer approach, a number of tasks, less interesting or important for the developers, are sometimes left behind. In addition, promoting QGIS requires our participation at congresses and conferences and the production of information material, sometimes very expensive for volunteer developers.
+QGIS is an entirely Open Source project. QGIS development is carried out largely by a group of volunteers, that in time have built up a large, valuable and useful code base, free to use and improve for everybody. As a result, you have free access to the source code and binaries that we provide on our web site. As a result of this volunteer approach, a number of tasks, less interesting or important for the developers, are sometimes left behind. In addition, promoting QGIS requires our participation at congresses and conferences and the production of information material, sometimes very expensive for volunteer developers.
+
+Meanwhile, many organizations have made an investment in using QGIS as part of their operations, but have not had a way to directly contribute to the success and long-term health of the project.
 
 We would like to extend our activities and improve the quality of QGIS. Your financial contribution will support the maintenance, improvement, and promotion of QGIS. Becoming a sustaining member is a way of ensuring the longevity and overall health of the project.
 
-## With your financial contributions we are able to:
-
-
-
-
-{{< columns-start >}}
-{{< column-start class="is-one-third">}}
-## Enhanced Infrastructure & Development Support
-{{< column-end >}}
-
-{{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}} 
-#### Maintaining Core Infrastructure
-*   The official QGIS.org website, a central hub for all things QGIS.
-*   Our issue tracking system for efficient bug and feature reporting.
-*   The continuous integration system, ensuring code quality and stability through automated tests.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< rich-box >}}
+{{< rich-box icon="💁" layoutClass="tips">}}
 {{< rich-content themeClass="coloring-1" >}}
-#### Software Development & QA
-*   Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
-*   Address bugs and other issues promptly, enhancing the user experience.
-*   Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development.
+##### Program transition on 2019
+Note that prior to March 17, 2019, we had a sponsorship program that is now being transitioned to a sustaining membership program in order to make it easier for public authorities to support the QGIS.ORG project by becoming a sustaining member as previously it was difficult or impossible for them to support the project through sponsorships or donations. Financial contributions prior to March 17 are technically regarded as sponsorships, after that date as sustaining memberships.
 {{< /rich-content >}}
 {{< /rich-box >}}
-
-{{< column-end >}}
-{{< columns-end >}}
-
-{{< columns-start >}}
-{{< column-start class="is-one-third">}}
-## Community Growth & Engagement
-{{< column-end >}}
-
-{{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}} 
-#### Empowering Our Volunteers
-*   Mentoring new contributors, fostering a welcoming and productive community.
-*   Translating QGIS into multiple languages, making the software truly global.
-*   Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
-#### Fostering Collaboration & Knowledge Sharing
-*   Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< columns-end >}}
-
-
-### Enhanced Infrastructure & Development Support
-
-{{< columns-start >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}} 
-#### Maintaining Core Infrastructure
-*   The official QGIS.org website, a central hub for all things QGIS.
-*   Our issue tracking system for efficient bug and feature reporting.
-*   The continuous integration system, ensuring code quality and stability through automated tests.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
-#### Software Development & QA
-*   Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
-*   Address bugs and other issues promptly, enhancing the user experience.
-*   Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< columns-end >}}
-
-### Community Growth & Engagement
-
-{{< columns-start >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
-#### Empowering Our Volunteers
-*   Mentoring new contributors, fostering a welcoming and productive community.
-*   Translating QGIS into multiple languages, making the software truly global.
-*   Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own.
-
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< column-start>}}
-
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
-#### Fostering Collaboration & Knowledge Sharing
-*   Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project.
-{{< /rich-content >}}
-{{< /rich-box >}}
-
-{{< column-end >}}
-{{< columns-end >}}
 
 
 

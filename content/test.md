@@ -9,6 +9,7 @@ sidebar: true
 ---
 {{< content-start  >}}
 ## Ways of Contributing
+💭💬🤔🧑‍🎓🤓🖖✌️🦄🦸⭐🌀🔮🪄🛟💡🕶️
 
 {{< columns-start >}}
 {{< column-start>}}
