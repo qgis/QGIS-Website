@@ -1,6 +1,6 @@
 <section class="section">
     <div class="container">
-        <h2 class="pb-6">
+        <h2 class="pb-2">
             QGIS supporters
         </h2>
 
@@ -9,31 +9,32 @@
             {{ $headlessbundle := .Site.GetPage "/funders" }}
             {{ range ( $headlessbundle.Resources.ByType "page" ) }}
                 {{ if or (eq .Params.level "Large") (eq .Params.level "Flagship") }}
+                {{ $level := .Params.level }}
                     {{ $startDate := time .Params.startDate }}
                     {{ $endDate := time .Params.endDate }}
                     {{ if ge $endDate now }}
                         {{ $count := add ($.Scratch.Get "counter") 1 }}
                         {{ $.Scratch.Set "counter" $count }}
-                        <div class="large-supporter is-vertical is-flex">
+                        <div class="large-supporter is-vertical is-flex fund-{{ $level }}">
                             <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
                                 <a href="{{ .Params.link }}">
                                     <figure>
-                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="300vw">
+                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
                                     </figure>
                                 </a>
                             </article>
-                            <center>
+                            
                                 {{ if eq .Params.level "Flagship" }}
-                                    <p class="is-size-6 has-text-weight-bold" style="color: #F1903B">
+                                    <p class=" partner-title">
                                         Golden partner
                                     </p>
                                 {{ else }}
-                                    <p class="is-size-6 has-text-weight-bold" style="color: #8e8e8e">
+                                    <p class="partner-title">
                                         Silver partner
                                     </p>
                                 {{ end }}
                                 <br>
-                            </center>
+                            
                         </div>
                     {{ end }}
                 {{ end }}
@@ -51,10 +52,10 @@
                             {{ $count := add ($.Scratch.Get "counter") 1 }}
                             {{ $.Scratch.Set "counter" $count }}
                             <div class="tile">
-                                <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0">
+                                <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0 fund-Medium">
                                     <a href="{{ .Params.link }}">
                                         <figure >
-                                            <img class="grayscale" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}" width="150vw">
+                                            <img class="grayscale" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
                                         </figure>
                                     </a>
                                 </article>
