@@ -47,8 +47,14 @@
 {{ end }}
 
 <script>
+function rotateArrow(e) {
+    e.previousElementSibling.querySelector('img').classList.toggle('rotated');
+}
+
 function toggleSubMenu(listId) {
-    document.getElementById(listId).classList.toggle('unfolded');
+    let e = document.getElementById(listId);
+    e.classList.toggle('unfolded');
+    rotateArrow(e);
 }
 
 function toggleMenu() {
@@ -67,10 +73,12 @@ ham.textContent = hamTitle;
 
 // expand active section
 if ((e = activeListItem.querySelector('ul')) != null) {
+    rotateArrow(e);
     e.classList.toggle('unfolded');
     // expand 3rd level
     if ((e = e.querySelector('li.is-active')) != null) {
         if ((e = e.querySelector('ul')) != null) {
+            rotateArrow(e);
             e.classList.toggle('unfolded');
         }
     }
