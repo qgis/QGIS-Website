@@ -8,7 +8,7 @@
     <ul class="content-wrapper">
     {{- range site.Menus.main }}
         {{ $menuItemID := add "ul-" (replace .URL "/" "") }}
-        <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
+        <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
         {{ if .HasChildren }}
             <div class="has-child">
                 <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
@@ -17,7 +17,7 @@
             <ul id="{{ $menuItemID }}" class="collapsed">
                 {{ range sort .Children "Weight" }}
                     {{ $innerMenuItemID := add "ul-" (replace .URL "/" "") }}
-                    <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
+                    <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
                     {{ if .HasChildren }}
                         <div class="has-child">
                             <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
@@ -25,7 +25,7 @@
                         </div>
                         <ul id="{{ $innerMenuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
-                                <li {{ if eq .URL $pageUrl }} class="is-active"{{ end }}>
+                                <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
                                     <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
                                 </li>
                             {{ end }}
