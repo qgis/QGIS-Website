@@ -11,7 +11,7 @@
         <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
         {{ if .HasChildren }}
             <div class="has-child">
-                <a href="{{ .URL }}">{{ .Name }}</a>
+                {{ partial "link" . }}
                 <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
             </div>
             <ul id="{{ $menuItemID }}" class="collapsed">
@@ -20,24 +20,24 @@
                     <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
                     {{ if .HasChildren }}
                         <div class="has-child">
-                            <a href="{{ .URL }}">{{ .Name }}</a>
+                            {{ partial "link" . }}
                             <span onclick="toggleSubMenu('{{ $innerMenuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
                         </div>
                         <ul id="{{ $innerMenuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
                                 <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
-                                    <a href="{{ .URL }}">{{ .Name }}</a>
+                                    {{ partial "link" . }}
                                 </li>
                             {{ end }}
                         </ul>
                     {{ else }}
-                        <a href="{{ .URL }}">{{ .Name }}</a>
+                        {{ partial "link" . }}
                     {{ end }}
                     </li>
                 {{ end }}
             </ul>
         {{ else }}
-            <a href="{{ .URL }}">{{ .Name }}</a>
+            {{ partial "link" . }}
         {{ end }}
         </li>
     {{- end }}

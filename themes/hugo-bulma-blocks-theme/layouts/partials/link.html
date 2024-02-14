@@ -1,0 +1,14 @@
+{{ $url := .URL }}
+{{ $isExternal := or (strings.HasPrefix $url "http://") (strings.HasPrefix $url "https://") }}
+{{ $rel := cond $isExternal "noopener noreferrer" "" }}
+{{ $target := cond $isExternal "_blank" "" }}
+{{ $externalClass := cond $isExternal "external-link" "" }}
+
+<a
+    class="{{ $externalClass }}"
+    href="{{ $url }}"
+    target="{{ $target }}"
+    rel="{{ $rel }}"
+>
+{{ .Name }}
+</a>
