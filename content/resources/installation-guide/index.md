@@ -34,7 +34,7 @@ For beginners the easiest way is using the standalone installers:
 |Long Term Release|3.28.15 Firenze LTR|[Installer](https://qgis.org/downloads/QGIS-OSGeo4W-3.28.15-1.msi) [Checksum](https://qgis.org/downloads/QGIS-OSGeo4W-3.28.15-1.sha256sum)|
 |Development|3.35 master|[Weekly snapshots](https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D)|
 
-See also [The main installers page](https://qgis.org/en/site/forusers/download.html).
+See also [The main installers page](../../download).
 
 The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase that also acts as **release candidate**.
 
