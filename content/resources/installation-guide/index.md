@@ -90,7 +90,7 @@ In the section following this one, you will find ALL possible options to install
 
 Here you will simply install the latest stable QGIS (3.34.x Prizren) in your Debian or Ubuntu without having to edit config files.
 
-{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-box icon="🌀" layoutClass="tips">}}
 {{< rich-content themeClass="coloring-1" >}}
 ##### Note
 Although you see ‘Debian’ in some places, this also works for ‘Ubuntu’, as one is actually a symlink to the other on our server.
@@ -121,7 +121,7 @@ Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 ```
 
-{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-box icon="💬" layoutClass="tips">}}
 {{< rich-content themeClass="coloring-1" >}}
 ##### Note
 `Suites` in above lines depends on your distribution. `lsb_release -cs` will show your distribution name.
@@ -144,7 +144,7 @@ Now, install QGIS:
 sudo apt install qgis qgis-plugin-grass
 ```
 
-{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-box icon="✍️" layoutClass="tips">}}
 {{< rich-content themeClass="coloring-1" >}}
 ##### Note
 Add `qgis-server` to this line if you also want to install QGIS Server
@@ -526,7 +526,7 @@ sudo port selfupdate
 sudo port upgrade outdated
 ```
 
-{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-box icon="👩‍💻" layoutClass="tips">}}
 {{< rich-content themeClass="coloring-1" >}}
 ##### Note
 
