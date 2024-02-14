@@ -1,5 +1,8 @@
 @import "../utilities/mixins"
 
+.rotated
+    transform: rotate(180deg)
+
 .sidebar
     position: sticky
     overflow-y: scroll  // TODO: unnecessary scroll on mobile and FF windows
@@ -64,9 +67,6 @@
 
         & + li
             margin: 0px
-
-        &:has(.is-active) > ul
-            height: auto
 
         &:has(.is-active) > div > a
             color: black
