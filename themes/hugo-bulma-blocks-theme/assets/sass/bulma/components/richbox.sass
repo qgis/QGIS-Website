@@ -91,8 +91,8 @@
 		background-image: url(img/blue_green_bg.svg) 
 		background-color: #395c6b 
 
-.coloring-3, .coloring-4, .coloring-5, .coloring-6
-  color: #fff
+.coloring-3 p, .coloring-4 p, .coloring-5 p, .coloring-6 p
+  color: #fff !important
 
 .coloring-3 a, .coloring-4 a, .coloring-5 a, .coloring-6 a
   color: #eee766
@@ -139,22 +139,22 @@
   .has-right 
     .cont
       width: 85%
-  .content
-    & > .columns 
-      flex-direction: column
-      flex-direction: column
-      justify-content: center
-      & > .column 
-        width: 100%
-        display: block
-        flex-basis: 0
-        flex-grow: 1
-        flex-shrink: 1
-        padding: 0.75rem 
-  .is-multiline
-    > .is-flex
-      > .rich
-        margin: 0px      
+    .content
+      & > .columns 
+        flex-direction: column
+        flex-direction: column
+        justify-content: center
+        & > .column 
+          width: 100%
+          display: block
+          flex-basis: 0
+          flex-grow: 1
+          flex-shrink: 1
+          padding: 0.75rem 
+    .is-multiline
+      > .is-flex
+        > .rich
+          margin: 0px      
 
 @media screen and (max-width: 768px) 
   .rich

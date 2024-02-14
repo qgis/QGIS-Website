@@ -140,6 +140,7 @@ h2
     width:  if($i % 2 == 0, 170px, 70px)
     height:  if($i % 2 == 0, 100%, 40%)
     content: ""
+    background: repeat-y fixed
     background-image: url({{ absURL "img/blue_green_bg.svg" }})
     background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
@@ -173,6 +174,7 @@ h2
       height: if($i % 2 == 0, 40%, 100%)
       content: ""
       z-index: 1
+      background: repeat fixed
       background-image: url({{ absURL "img/blue_green_bg.svg" }})
       background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
@@ -216,10 +218,11 @@ h2
       display: unset
       width: 100%
       height: 40%
+      background: repeat fixed
       background-image: url({{ absURL "img/community-wide.png" }})
-      background-size: cover
       background-position: center
   &.container
+    background: repeat fixed
     background-image: url({{ absURL "img/community.svg" }})
     background-color: {{ .Param "primary4" }}
     padding: 4rem
@@ -393,6 +396,8 @@ h2
 
 .left-title
   padding-right: 4rem
+  h2, h3
+    margin-top: 0px !important
   h2:after, h3:after
     position: absolute
     left: 0
@@ -401,6 +406,12 @@ h2
     content: ""
     border-bottom: 5px solid #F1903B
 
+p:empty:first-child 
+  display: none
+
+.vertical-colums 
+  .columns
+    flex-direction: column;
 
 
     
