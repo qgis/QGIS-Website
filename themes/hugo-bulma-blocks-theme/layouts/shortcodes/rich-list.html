@@ -1,6 +1,7 @@
 {{ $icon := .Get "icon" }}
 {{ $layoutClass := .Get "layoutClass" }}
 {{ $iconClass := cond (ne $icon "") "has-icon" "" }}
+{{ $image := .Get "image" }}
 
 {{ $url := .Get "listLink" }}
 {{ $isExternal := or (strings.HasPrefix $url "http://") (strings.HasPrefix $url "https://") }}
@@ -21,6 +22,9 @@
     >
         {{ with .Get "icon" }}
             <div class="icon">{{ . }}</div>
+        {{ end }}
+        {{ with .Get "image" }}
+            <div class="image">{{ . }}</div>
         {{ end }}
         <div class="cont {{ $externalClass }}">{{ $listTitle }}</div>
         <div class="subtext is-size-7">{{ $listSubtitle }}</div>

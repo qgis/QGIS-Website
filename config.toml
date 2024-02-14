@@ -116,10 +116,35 @@ sectionPagesMenu = 'main'
 # See https://gohugo.io/content-management/menus/
 [menu]
 [[menu.main]]
-  name = "About"
-  url = "/about/"
+  name = "Product"
+  url = "/product/overview"
   weight = 10
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
+[[menu.main]]
+  parent = "Product"
+  name = "Overview"
+  url = "/product/overview"
+  weight = 10
+
+[[menu.main]]
+  parent = "Product"
+  name = "Case studies"
+  url = "/product/case-studies"
+  weight = 20
+
+[[menu.main]]
+  parent = "Product"
+  name = "Plugins"
+  url = "https://plugins.qgis.org"
+  weight = 30
+
+[[menu.main]]
+  parent = "Product"
+  name = "Visual Changelogs"
+  url = "/product/visual-changelogs"
+  weight = 40
+
 
 [[menu.main]]
   name = "Community"
@@ -303,13 +328,6 @@ sectionPagesMenu = 'main'
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = 30 # Sets the menu order 
 
-
-[[menu.main]]
-  parent = "About"
-  name = "Applications"
-  url = "/apps/"
-  #pre = "<i class='fa fa-heart mr-1'></i>"
-  weight = 50 # Sets the menu order 
 
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
