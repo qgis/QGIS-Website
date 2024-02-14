@@ -1,7 +1,8 @@
 {{ $icon := .Get "icon" }}
+{{ $image := .Get "image" }}
 {{ $layoutClass := .Get "layoutClass" }}
 {{ $iconClass := cond (ne $icon "") "has-icon" "" }}
-{{ $image := .Get "image" }}
+{{ $imageClass := cond (ne $image "") "has-image" "" }}
 
 {{ $url := .Get "listLink" }}
 {{ $isExternal := or (strings.HasPrefix $url "http://") (strings.HasPrefix $url "https://") }}
@@ -14,7 +15,7 @@
 
 {{ if $url }}
     <a
-        class="rich-list {{ $layoutClass }} {{ $iconClass }} mr-2 mb-2"
+        class="rich-list {{ $layoutClass }} {{ $iconClass }} {{ $imageClass }} mr-2 mb-2"
         href="{{ $url }}"
         target="{{ $target }}"
         rel="{{ $rel }}"
@@ -24,17 +25,20 @@
             <div class="icon">{{ . }}</div>
         {{ end }}
         {{ with .Get "image" }}
-            <div class="image">{{ . }}</div>
+            <div class="image"><img src="{{ . }}"></div>
         {{ end }}
-        <div class="cont {{ $externalClass }}">{{ $listTitle }}</div>
+        <div class="listcont {{ $externalClass }}">{{ $listTitle }}</div>
         <div class="subtext is-size-7">{{ $listSubtitle }}</div>
     </a>
 {{ else }}
-    <div class="rich-list {{ $layoutClass }} {{ $iconClass }} mr-2 mb-2">
+    <div class="rich-list {{ $layoutClass }} {{ $iconClass }} {{ $imageClass }} mr-2 mb-2">
         {{ with .Get "icon" }}
             <div class="icon">{{ . }}</div>
         {{ end }}
-        <div class="cont">{{ $listTitle }}</div>
+        {{ with .Get "image" }}
+            <div class="image"><img src="{{ . }}"></div>
+        {{ end }}
+        <div class="listcont">{{ $listTitle }}</div>
         <div class="subtext is-size-7">{{ $listSubtitle }}</div>
     </div>
 {{ end }}

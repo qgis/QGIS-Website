@@ -55,7 +55,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 
 {{< /rich-box >}}
 
-{{< rich-box layoutClass="has-right" >}}
+{{< rich-box layoutClass="has-right" mode="html">}}
 {{< rich-content themeClass="coloring-1" >}}
 ### Report Bugs
 
@@ -64,7 +64,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 [Report an issue](#)
 {{< /rich-content>}}
 {{< rich-right >}}  
-![](/img/mappp.png)
+{{< rich-list listLink="../case-studies"  image="/img/map2.png" listTitle="Ukrainian open initiative of creating tools for spatial planning in the QGIS environment" listSubtitle="2023/01" >}}
 {{< /rich-right >}}
 {{< /rich-box >}}
 

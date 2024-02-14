@@ -1,0 +1,5 @@
+111
+{{ $headlessbundle := .Site.GetPage "/product" }}
+{{ range ( $headlessbundle.Resources) | first 2 }}
+222 {{ .Title }}
+{{ end }}

@@ -144,10 +144,12 @@ We gather inspiring stories from actual users that showcase the versatility and 
 [Find out more](../case-studies)
 {{< /rich-content >}}
 {{< rich-right >}}  
-{{< rich-list listLink="../case-studies"  image="/img/map2.png" listTitle="Ukrainian open initiative of creating tools for spatial planning in the QGIS environment" listSubtitle="2023/01" >}}
-
+{{< usecase >}}
 {{< /rich-right >}}
 
 {{< /rich-box >}}
+
+
+{{< usecase >}}
 
 {{< content-end >}}
