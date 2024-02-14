@@ -1,5 +1,5 @@
 ---
-level: "hidden-Large"
+level: "Large"
 title: "QGIS user group Denmark"
 logo: "www.qgis.dk.png"
 startDate: "2023-03-01"

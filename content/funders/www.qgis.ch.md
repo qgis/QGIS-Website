@@ -1,5 +1,5 @@
 ---
-level: "hidden-Large"
+level: "Large"
 title: "QGIS user group Switzerland"
 logo: "www.qgis.ch.png"
 startDate: "2023-03-01"

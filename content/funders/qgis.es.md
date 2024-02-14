@@ -1,5 +1,5 @@
 ---
-level: "hidden-Large"
+level: "Medium"
 title: "QGIS España Association (QGIS user group Spain)"
 logo: "qgis.es.svg"
 startDate: "2023-03-01"

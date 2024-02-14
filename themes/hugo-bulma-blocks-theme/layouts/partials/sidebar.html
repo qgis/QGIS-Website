@@ -11,7 +11,7 @@
         <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
         {{ if .HasChildren }}
             <div class="has-child">
-                <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
+                <a href="{{ .URL }}">{{ .Name }}</a>
                 <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
             </div>
             <ul id="{{ $menuItemID }}" class="collapsed">
@@ -20,24 +20,24 @@
                     <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
                     {{ if .HasChildren }}
                         <div class="has-child">
-                            <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
                             <span onclick="toggleSubMenu('{{ $innerMenuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
                         </div>
                         <ul id="{{ $innerMenuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
                                 <li {{ if findRE .URL $pageUrl }} class="is-active"{{ end }}>
-                                    <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
+                                    <a href="{{ .URL }}">{{ .Name }}</a>
                                 </li>
                             {{ end }}
                         </ul>
                     {{ else }}
-                        <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
+                        <a href="{{ .URL }}">{{ .Name }}</a>
                     {{ end }}
                     </li>
                 {{ end }}
             </ul>
         {{ else }}
-            <a href="{{ trim .URL "/" | absURL }}">{{ .Name }}</a>
+            <a href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
         </li>
     {{- end }}
@@ -47,8 +47,14 @@
 {{ end }}
 
 <script>
+function rotateArrow(e) {
+    e.previousElementSibling.querySelector('img').classList.toggle('rotated');
+}
+
 function toggleSubMenu(listId) {
-    document.getElementById(listId).classList.toggle('unfolded');
+    let e = document.getElementById(listId);
+    e.classList.toggle('unfolded');
+    rotateArrow(e);
 }
 
 function toggleMenu() {
@@ -57,15 +63,24 @@ function toggleMenu() {
 }
 
 // compose title for menu button: contatenate parent section titles
-let actileListItem = document.getElementsByClassName('is-active')[0];
+let activeListItem = document.getElementsByClassName('is-active')[0];
 let ham = document.getElementById('ham-title');
-let hamTitle = actileListItem.querySelector('a').textContent;
-if (actileListItem.parentElement.previousElementSibling != null) {
-    hamTitle = actileListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
+let hamTitle = activeListItem.querySelector('a').textContent;
+if (activeListItem.parentElement.previousElementSibling != null) {
+    hamTitle = activeListItem.parentElement.previousElementSibling.querySelector('a').textContent + ' / ' + hamTitle;
 }
 ham.textContent = hamTitle;
 
 // expand active section
-if ((e = actileListItem.querySelector('ul')) != null )
+if ((e = activeListItem.querySelector('ul')) != null) {
+    rotateArrow(e);
     e.classList.toggle('unfolded');
+    // expand 3rd level
+    if ((e = e.querySelector('li.is-active')) != null) {
+        if ((e = e.querySelector('ul')) != null) {
+            rotateArrow(e);
+            e.classList.toggle('unfolded');
+        }
+    }
+}
 </script>
