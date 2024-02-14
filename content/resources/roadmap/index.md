@@ -59,6 +59,9 @@ In the first four months after its release, a new LTR is also the current LR. In
 This schedule is also available as [“iCalendar”](https://qgis.org/schedule.ics).
 
 Schedule
+
+TODO: should be generated from CSV
+
 |Event|Latest|Long-Term Repo|Freeze|Date|Week #|Weeks|
 |---|---|---|---|---|---|---|
 |LTR/PR|3.28.0|3.22.12||2022-10-21|43|4|
