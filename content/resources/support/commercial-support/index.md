@@ -24,8 +24,16 @@ we take responsibility for the accuracy, reliability or completeness of the prov
 
 In lexical order:
 
-{{< columns-start >}}
 {{< commercial-support dataFile="core_contributors" >}}
-{{< column-end >}}
+
+## Contributors
+
+In lexical order:
+
+{{< commercial-support dataFile="contributors" >}}
+
+## Others
+
+{{< commercial-support dataFile="others" >}}
 
 {{< content-end >}}
