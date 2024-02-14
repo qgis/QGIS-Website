@@ -39,20 +39,25 @@
     .is-active > .has-child > a,
     .is-active > a
         color: black
-        background: #e0e0e0
-        font-weight: bold
+        font-weight: 500
+ 
+    .is-active:last-child > .has-child > a,
+    .is-active > a    
+        background: #ECF1F4    
 
     li
         a
             display: inline-block
             padding: 0.5rem 1rem
             text-decoration: none
-            color: #4d4d4d
+            font-size: 14px
+            font-weight: 300
+            color: #4D6370
             transition: all 0.025s ease-in
-            border-radius: 5px
+            border-radius: 10px
             width: 100%
             &:hover, + span:hover
-                background: #ECF1F4
+                background: #ecf1f492
                 color: black
 
         .has-child
@@ -64,6 +69,7 @@
             max-width: 26px
             padding: 0.5rem
             cursor: pointer
+            border-radius: 10px
 
         & + li
             margin: 0px
@@ -81,11 +87,16 @@
 #hamburger-btn
     display: none
 
-@media screen and (max-width: 1408px)
+@media screen and (max-width: 1440px)
+    .sidebar > ul
+        padding-right: 0rem 
+        margin: 0
+
+@media screen and (max-width: 1023px)
     .sidebar
         background: #fff
         border-radius: 10px
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+        box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2)
         z-index: 2
         display: none
         position: absolute
@@ -103,17 +114,25 @@
         background-color: #ECF1F4
         position: relative
         z-index: 3
-        border-radius: 5px
+        border-radius: 10px
         max-width: fit-content
 
         &.open
-            background-color: #ccd2d6
+            background-color: #ecf1f498
 
         span::after
             content: url("img/ham.svg")
-            margin-left: 20px
+            margin-left: 10px
             vertical-align: middle
 
         &.open span::after
             // TODO: need svg of the same size as img/ham.svg
-            content: url("img/close.png")
+            content: url("img/close.svg")
+
+    .sidebar > ul
+        padding: 1rem 
+        margin: 0
+    .sidebar.visible 
+        padding: 0
+
+                

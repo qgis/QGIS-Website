@@ -8,7 +8,10 @@ mark
   padding: .05rem 0.25em
 
 body
-  color: {{ .Param "text-primary2" }}
+  color: {{ .Param "text-primary1" }}
+
+.content p
+  color: {{ .Param "text-primary2" }}  
 
 h2
   font-size: 3rem
@@ -119,6 +122,7 @@ h2
         display: none
 
     @media screen and (max-width: 1024px)
+      padding-top: 0rem
       .col-text
         display: none
 
@@ -136,6 +140,7 @@ h2
     width:  if($i % 2 == 0, 170px, 70px)
     height:  if($i % 2 == 0, 100%, 40%)
     content: ""
+    background: repeat-y fixed
     background-image: url({{ absURL "img/blue_green_bg.svg" }})
     background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
@@ -169,6 +174,7 @@ h2
       height: if($i % 2 == 0, 40%, 100%)
       content: ""
       z-index: 1
+      background: repeat fixed
       background-image: url({{ absURL "img/blue_green_bg.svg" }})
       background-color: nth({{ .Param "primary3" }} {{ .Param "primary2" }} {{ .Param "primary5" }} {{ .Param "primary1" }}, $i)
 
@@ -212,10 +218,11 @@ h2
       display: unset
       width: 100%
       height: 40%
+      background: repeat fixed
       background-image: url({{ absURL "img/community-wide.png" }})
-      background-size: cover
       background-position: center
   &.container
+    background: repeat fixed
     background-image: url({{ absURL "img/community.svg" }})
     background-color: {{ .Param "primary4" }}
     padding: 4rem
@@ -243,7 +250,8 @@ h2
     margin-top: 24px
     margin-bottom: 24px
   .text
-    padding: 5%
+    padding: 4rem
+    margin: auto 0
   .button
     background-color: #F1903B
     color: #fff
@@ -258,17 +266,17 @@ h2
   background-image: url({{ absURL "img/light_blue_bg.svg" }})
   background-color: #ECF1F4
   padding-top: 7rem
-  padding-bottom: 6%
+  padding-bottom: 13rem
   @media screen and (max-width: 1408px)
     margin: 0
 
   @media screen and (max-width: 768px)
-    padding: 5%
+    padding: 1rem
 
   .content
     @media screen and (max-width: 1408px)
       max-width: 960px
-      padding: 5%
+      padding: 16px
 
 .grayscale
   filter: grayscale(100%)
@@ -280,21 +288,24 @@ h2
       padding: 5%
 
 #start-using-qgis
-  padding: 5%
+  padding: 5rem
   @media screen and (max-width: 768px)
     background-image: url({{ absURL "img/light_blue_bg.svg" }})
     background-color: #ECF1F4
+    padding: 1rem
 
   .container
-    padding: 2rem
+    padding: 4rem
     background-color: #fff
     border-radius: 30px
-    margin-top: -150px
+    margin-top: -12rem
     @media screen and (max-width: 1408px)
       flex-direction: column
       background: none
+      margin-top: -17rem
     @media screen and (max-width: 768px)
       margin-top: 0
+      padding: 0rem
 
 
   iframe
@@ -311,25 +322,57 @@ h2
   .video
     @media screen and (max-width: 1408px)
       order: 1
+  li 
+    padding-top: 0.4rem      
 
 .large-grid
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr))
+  grid-auto-rows: 170px
+
+  @media screen and (max-width: 768px)
+   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+  grid-auto-rows: 150px 
 
 .small-grid
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
+  grid-auto-rows: 100px
+  margin-top: 24px
+  img 
+    max-width: 100px
+    max-height: 75px
+    width: 100%
+
   @media screen and (max-width: 768px)
-    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr))
+    grid-auto-rows: 75px
+  img 
+    max-width: 75px
+    max-height: 50px
 
 .supporters-grid
   display: grid
-  grid-gap: 24px
+  grid-gap: 16px
 
 .large-supporter
   background-color: #f5f5f5
   border-radius: 10px
-  margin: 10px
-  padding: 1rem 5rem
   flex-direction: column
+  position: relative
+  img 
+    max-width: 165px
+    max-height: 65px
+  .partner-title  
+    position: absolute
+    width: 100%
+    bottom: 8px  
+    left: 0
+    text-align: center
+  .tile 
+    padding: 0  
+  @media screen and (max-width: 768px)
+    img 
+      max-width: 130px
+      max-height: 55px
 
 .explore-button
   margin-bottom: 10%
@@ -351,7 +394,24 @@ h2
 .scroll-on-page
   text-decoration: underline dashed 
 
+.left-title
+  padding-right: 4rem
+  h2, h3
+    margin-top: 0px !important
+  h2:after, h3:after
+    position: absolute
+    left: 0
+    margin-top: 70px
+    width: 100px
+    content: ""
+    border-bottom: 5px solid #F1903B
 
+p:empty:first-child 
+  display: none
+
+.vertical-colums 
+  .columns
+    flex-direction: column;
 
 
     
