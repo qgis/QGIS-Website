@@ -11,7 +11,7 @@ sidebar: true
 # Who's Who
 QGIS as a Project is currently organised as an association legally based in Switzerland with the following structure:
 
-![QGIS Organizational Structure](/img/QGIS-ORG_Organizational_structure.png)
+![QGIS Organizational Structure](./QGIS-ORG_Organizational_structure.png)
 
 QGIS Organizational Structure
 

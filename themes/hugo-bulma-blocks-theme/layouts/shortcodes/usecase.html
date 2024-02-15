@@ -1,8 +1,10 @@
 {{ $headlessbundle := .Site.GetPage "/product/case-studies/" }}
-{{ range ( $headlessbundle.Pages ) | first 1 }}
+{{ range ( $headlessbundle.Resources.ByType "page" ) }}
 <a class="rich-list has-image mr-2 mb-2" href="{{ .Params.link }}" >
     <div class="image"><img src="{{ .Params.thumbnail }}"></div>
 <div class="listcont ">{{.Title}}</div>
 <div class="subtext is-size-7">{{ .Params.description }}</div>
 </a>
 {{ end }}
+
+

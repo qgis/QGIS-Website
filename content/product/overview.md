@@ -33,13 +33,67 @@ Create atlases and reports with maps, media and tabular content
 {{< column-end >}}
 {{< columns-end >}}
 
+{{< columns-start >}}
+{{< column-start class="is-flex-direction-column is-two-thirds" >}}
+![Create map](/img/placeholder.jpg "Create map")
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
+###### Exceptional digitizing proficiency
+Craft and edit points, lines, polygons, and meshes with precision
+
+###### Advanced construction tools
+Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations
+
+###### Highly customizable forms
+Create user-friendly forms using our form designer
+
+{{< column-end >}}
+{{< columns-end >}}
+
+{{< columns-start >}}
+{{< column-start class="is-flex-direction-column is-two-thirds" >}}
+![Create map](/img/placeholder.jpg "Create map")
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
+###### Comprehensive analysis toolset
+Uncover insights from your data with our comprehensive array of XXX analysis tools
+
+###### Automated analysis workflows
+Visually combine analysis tools to create reproducible workflows easily
+
+###### Extensible analysis environment
+Explore a diverse ecosystem of third-party analysis tools for expanded capabilities
+
+{{< column-end >}}
+{{< columns-end >}}
+
+{{< columns-start >}}
+{{< column-start class="is-flex-direction-column is-two-thirds" >}}
+![Create map](/img/placeholder.jpg "Create map")
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
+###### Industry-leading format support
+Conquer data integration challenges with support for various data sources and formats
+
+###### Standards and interoperability
+Amplify your impact by exploring, utilizing, and creating web services based on industry standards
+
+###### Publish your work
+Extend QGIS to the cloud and mobile devices for wider accessibility
+
+{{< column-end >}}
+{{< columns-end >}}
+
 
 
 ## Level up with community resources
 
 {{< columns-start >}}
-{{< column-start class="is-flex-direction-column" >}}
-![Create map](/img/plugins2.jpg "Create map")
+{{< column-start class="is-flex-direction-column rounded" >}}
+![Create map](/img/plugs.jpg "Create map")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### 2000+ plugins developed by community
@@ -50,8 +104,8 @@ Enhance the functionality of QGIS application with free additional features.
 {{< columns-end >}}
 
 {{< columns-start >}}
-{{< column-start class="is-flex-direction-column" >}}
-![International conference](/img/about-community.jpg "International conference")
+{{< column-start class="is-flex-direction-column rounded" >}}
+![International conference](/img/meetings.jpg "International conference")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### Annual international conference to explore the future of QGIS
@@ -62,8 +116,8 @@ Connect with professionals, enthusiasts, and QGIS users for networking and knowl
 {{< columns-end >}}
 
 {{< columns-start >}}
-{{< column-start class="is-flex-direction-column" >}}
-![Local user groups](/img/groups.jpg "Local user groups")
+{{< column-start class="is-flex-direction-column rounded" >}}
+![Local user groups](/img/groupss.jpg "Local user groups")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### Local user groups and support providers

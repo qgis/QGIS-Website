@@ -53,6 +53,6 @@ You can apply through [this form](https://changelog.qgis.org/en/qgis/create-cert
 
 ### Course Certification Workflow
 
-![Workflow Certification](/img/certificationworkflow.png "Workflow Certification")
+![Workflow Certification](../certificationworkflow.png "Workflow Certification")
 
 {{< content-end >}}
