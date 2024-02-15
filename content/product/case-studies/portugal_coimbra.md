@@ -4,6 +4,7 @@ title: "Using open source tools for characterization of a landscape. The LecosS 
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/portugal_coimbra1.png"
 
 ---
 

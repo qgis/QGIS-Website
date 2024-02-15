@@ -4,6 +4,7 @@ title: "Trainings & Research activities using QGIS at NIRD&PR-NERC, Guwahati, In
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/india_guwahati1.png"
 
 ---
 

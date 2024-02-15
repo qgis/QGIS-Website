@@ -4,6 +4,7 @@ title: "Water Observation and Information System: Enabling the Use of Earth Obse
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/africa_tiger1.jpg"
 
 ---
 

@@ -4,6 +4,7 @@ title: "QGIS for distance learning and teaching GIS at Universities"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/australia_distance_learning1.png"
 
 ---
 

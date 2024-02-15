@@ -4,6 +4,7 @@ title: "The Burgundy Historical Landscapes Working Group"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/france_burgundy.jpg"
 
 ---
 

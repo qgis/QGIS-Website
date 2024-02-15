@@ -4,6 +4,7 @@ title: "Using QGIS for urban planning in the municipality of Montecchio Maggiore
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/italy_vicenza1.png"
 
 ---
 

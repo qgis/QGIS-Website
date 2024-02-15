@@ -4,6 +4,7 @@ title: "Ukrainian open initiative of creating tools for spatial planning in the 
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/ukraine_spt1.png"
 
 ---
 

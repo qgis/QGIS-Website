@@ -4,6 +4,7 @@ title: "Danish Demining Group using QGIS in Afghanistan"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/afghanistan1.png"
 
 ---
 

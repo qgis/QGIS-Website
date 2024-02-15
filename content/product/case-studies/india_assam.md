@@ -4,6 +4,7 @@ title: "QGIS for monitoring tigers (using camera traps in Nameri Tiger Reserve, 
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/india_assam1.png"
 
 ---
 

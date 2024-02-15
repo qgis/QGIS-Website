@@ -4,6 +4,7 @@ title: "QGIS —— an interesting instrument for forestry planning concepts at 
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/suisse_basel1.jpg"
 
 ---
 

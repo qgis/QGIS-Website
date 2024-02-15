@@ -4,6 +4,7 @@ title: "Producing an arcHYDRO like output with QGIS"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/china_hydro1.jpg"
 
 ---
 

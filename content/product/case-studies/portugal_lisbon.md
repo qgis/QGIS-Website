@@ -4,6 +4,7 @@ title: "Using QGIS to Map Hotspot Areas for Biodiversity and Ecosystem Services 
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/portugal_lisbon1.jpg"
 
 ---
 

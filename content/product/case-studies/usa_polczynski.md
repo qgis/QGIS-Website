@@ -4,6 +4,7 @@ title: "Historical Gazetteer of the Crimea"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/usa_polczynski_table1.png"
 
 ---
 

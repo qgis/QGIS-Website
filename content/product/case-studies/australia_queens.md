@@ -4,6 +4,7 @@ title: "QGIS and GRASS in Local Government Bushfire Hazard Mapping"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/australia_queens1.jpg"
 
 ---
 

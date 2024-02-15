@@ -4,6 +4,7 @@ title: "QGIS at the Federal Department of Town and Country Planning, Peninsular 
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/malaysia_kuala1.png"
 
 ---
 

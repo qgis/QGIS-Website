@@ -4,6 +4,7 @@ title: "QGIS and GRASS applied to paleontological survey in Western Portugal"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/portugal_torres1.jpg"
 
 ---
 

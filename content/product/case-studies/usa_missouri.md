@@ -4,6 +4,7 @@ title: "QGIS Maps Historic Herpetofaunal Records (in Missouri, USA)"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/usa_missouri1.png"
 
 ---
 

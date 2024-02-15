@@ -4,6 +4,7 @@ title: "QGIS at high school —— the urban green spaces in Rada Tilly coastal 
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/argentinia_chubut1.png"
 
 ---
 

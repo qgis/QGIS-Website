@@ -4,6 +4,7 @@ title: "The Research Institute for Geo-hydrological Protection of Turin —— A
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/italy_turin1.jpg"
 
 ---
 

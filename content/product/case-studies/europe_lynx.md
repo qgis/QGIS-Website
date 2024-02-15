@@ -4,6 +4,7 @@ title: "Lynx habitat analysis in the Southern Carpathians"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/europe_lynx1.png"
 
 ---
 

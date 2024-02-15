@@ -1,0 +1,13 @@
+<div style="display: grid; grid-gap: 16px; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); grid-auto-rows: 320px">
+{{ range (where .Site.Pages "Section" "product") }}
+    {{ range .Pages }}
+        <div class="tile">
+            <a class="rich-list has-image mr-2 mb-2" href="{{ .RelPermalink }}" >
+            <div class="image"><img src="{{ .Params.thumbnail }}"></div>
+            <div class="listcont ">{{.Title}}</div>
+            <!--div class="subtext is-size-7">{{ .Params.date }}</div-->
+            </a>
+        </div>
+    {{ end }}
+{{ end }}
+</div>

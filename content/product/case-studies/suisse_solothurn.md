@@ -4,6 +4,7 @@ title: "QGIS in the governmental FOSSGIS stack of the Canton of Solothurn in Swi
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/suisse_solothurn1.png"
 
 ---
 

@@ -4,6 +4,7 @@ title: "Use of QGIS at the Financial Times Graphics Team"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/ft_europe_migration_balkan-route.png"
 
 ---
 

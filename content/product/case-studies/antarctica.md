@@ -4,6 +4,7 @@ title: "Quantarctica: An Antarctic GIS package"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/quantarctica.jpg"
 
 ---
 

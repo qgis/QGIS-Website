@@ -4,6 +4,7 @@ title: "Amurum forest reserve habitat and avifauna mapping with QGIS in Nigeria"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/nigeria_jos1.jpg"
 
 ---
 

@@ -4,6 +4,7 @@ title: "Creating the Fundy Footpath Trail Map with QGIS"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/canada_brunswick1.jpg"
 
 ---
 

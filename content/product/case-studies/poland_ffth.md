@@ -4,6 +4,7 @@ title: "Using QGIS for FTTH/GPON network planning due to the implementation Euro
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/poland_ffth/toolbox.png"
 
 ---
 

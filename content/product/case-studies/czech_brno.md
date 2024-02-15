@@ -4,6 +4,7 @@ title: "QGIS as major GIS software in the Laboratory on Experimental and Applied
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/czech_brno1.jpg"
 
 ---
 

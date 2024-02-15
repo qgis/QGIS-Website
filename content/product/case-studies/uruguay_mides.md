@@ -4,6 +4,7 @@ title: "Use of QGIS at the Ministry of Social Development of Uruguay (MIDES)"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/uruguay_mides1.png"
 
 ---
 

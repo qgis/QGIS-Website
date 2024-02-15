@@ -4,6 +4,7 @@ title: "The use of QGIS in the Geodata Infrastructure of the City of Uster"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/suisse_uster1.png"
 
 ---
 

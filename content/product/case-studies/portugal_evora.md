@@ -4,6 +4,7 @@ title: "QGIS and GRASS in Biogeographical Research in the Iberian Peninsula"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/portugal_evora1.png"
 
 ---
 

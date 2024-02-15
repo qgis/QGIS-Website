@@ -4,6 +4,7 @@ title: "Use of python console to prepare offline map from WMS (tile downloader)"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/india_pune1.png"
 
 ---
 

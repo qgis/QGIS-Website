@@ -4,6 +4,7 @@ title: "Using the processing toolbox to automate snow classification"
 draft: false
 HasBanner: false
 sidebar: true
+thumbnail: "images/australia_snowyhydro1.jpg"
 
 ---
 
