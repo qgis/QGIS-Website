@@ -44,11 +44,11 @@ In order to achieve our goal, we needed few functional components apart from the
 
 The entire solution was based on the concept of so called wizards which realize the process of preparing the FTTx network technical concept step by step. Using \'geoprocessing\' modeller, we created models requiring only the necessary input data from operator. Algorithmic complexity was encapsulated within models in the form of designed flow, which use existing QGIS algorithms and calls dedicated scripts.
 
-![](../images/poland_ffth/toolbox.png){.align-left}
+![](../images/poland_ffth/toolbox.png)
 
 To prevent the results of subsequent analyses from getting mixed up, we provided a plugin called WorkContextTracer which groups our work in so called work contexts.
 
-![](../images/poland_ffth/workorder.png){.align-left}
+![](../images/poland_ffth/workorder.png)
 
 Network algorithms based on the graph functions available in GRASS were enriched by adding the telecommunication scripts. We introduced a concept of demand clustering which enables to use both K-means and hierarchical methods to aggregate demand points.
 
@@ -60,25 +60,25 @@ Operators also needed an association between created network nodes and address p
 
 The user started work by opening a new work context and specifying an input layer of address points to be analysed. Using the standard QGIS interface, the user could establish a set of demands on address points and finally provide the parameters necessary for further steps of the algorithm.
 
-![](../images/poland_ffth/step1_inputlayer.png){.align-left}
+![](../images/poland_ffth/step1_inputlayer.png)
 
 Without having information about the existing civil infrastructure, a properly filtered OpenStreet road network were used as a routing layer. Scipy algorithms fed with input parameters, clustered the address points into demand aggregates marking them with separate colour indicating its assignment to particular cluster.
 
-![](../images/poland_ffth/step1.png){.align-left}
+![](../images/poland_ffth/step1.png)
 
 Having all address points clustered, user initiated the steps of high level network planning providing layers prepared in the previous steps and a layer with GPON network starting point.
 
-![](../images/poland_ffth/step1-2_result.png){.align-left}
+![](../images/poland_ffth/step1-2_result.png)
 
 Upon the completion of the algorithm, in QGIS there are geometry objects representing planned cables and splice closure locations. Basing on demand data and network topology, an additional information is stored in database such as the length of the cable, its profile, node's serving areas.
 
-![](../images/poland_ffth/step4_results.png){.align-left}
+![](../images/poland_ffth/step4_results.png)
 
 At this stage, the user already had all pieces of the information to develop a high level FTTx network technical concept. The final part was generation of the data report spreadsheet showing all calculated data from several different perspectives.
 
-![](../images/poland_ffth/report_generated.png){.align-left}
+![](../images/poland_ffth/report_generated.png)
 
-![](../images/poland_ffth/report_generated_and_tranformed.png){.align-left}
+![](../images/poland_ffth/report_generated_and_tranformed.png)
 
 ## Conclusion
 

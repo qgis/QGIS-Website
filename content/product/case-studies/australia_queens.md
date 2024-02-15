@@ -18,7 +18,7 @@ The Southern Downs Regional Council (SDRC) is a small-to-medium sized local gove
 
 This project will allow the council and the people of the region to be more aware of the risk and to allow for better decision making in the future.
 
-![](../images/australia_queens1.jpg){.align-right}
+![](../images/australia_queens1.jpg)
 
 ## The Project
 
@@ -35,7 +35,7 @@ The GIS side of the project project was broken down into 6 main steps
 
 ## The use of QGIS and GRASS
 
-![](../images/australia_queens2.jpg){.align-right}
+![](../images/australia_queens2.jpg)
 
 QGIS, using the GRASS plugin, was selected as it provided the tools needed to complete the job and the interaction between QGIS and GRASS made it easy to process the raster maps and present them in a meaningful way to users. SDRC uses MapInfo for its main GIS system, however MapInfo's addons were not as powerful as GRASS GIS for raster processing.
 

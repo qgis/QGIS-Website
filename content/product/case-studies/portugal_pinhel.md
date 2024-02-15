@@ -20,7 +20,7 @@ It was proposed to use the following set of software: QGIS, GRASS GIS, gvSIG and
 
 After an extensive suite of tests to the methodology, and three years of real application in the preparation of the Operational Plan for the municipality of Pinhel, it can be said that the proposed alternatives allow to replace, with many advantages, Proprietary Software that is usually used to carry out this task. The validation of the results shows that, despite the relative simplicity of the conceptual model, its predictive ability is quite good, and that the model implementation in Open Source Software does not interfere negatively with the results, quite the opposite.
 
-> ![](../images/portugal_pinhel1.jpg){.align-right}
+> ![](../images/portugal_pinhel1.jpg)
 
 <figure>
 <img src="../images/portugal_pinhel2.jpg" class="align-right" alt="./images/portugal_pinhel2.jpg" />

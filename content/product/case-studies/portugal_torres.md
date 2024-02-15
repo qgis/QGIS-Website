@@ -16,7 +16,7 @@ The Associação Leonel Trindade -- Sociedade de História Natural (ALT-SHN) is 
 
 ## The Project
 
-![](../images/portugal_torres1.jpg){.align-right}
+![](../images/portugal_torres1.jpg)
 
 Back in 2008, we came up with the idea of exploring GIS technologies to support the investigation and get a more holistic perspective on the heritage we were dealing. This idea boosted SIGAP Project (GIS applied to paleontology) \[2\]. The project, supported by public and private entities -- mainly the Municipalty, Digiterra.hu and the Army\'s Geographic Institute (IGeoE), aimed three goals:
 

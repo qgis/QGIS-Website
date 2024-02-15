@@ -14,7 +14,7 @@ thumbnail: "images/india_assam1.png"
 
 Nameri Tiger Reserve (NTR) is one of the 3 tiger reserves of Assam and it is situated in the northern part of Sonitpur District of Assam along the foothills of Eastern Himalayas. Spread over an area of 344 sq km, NTR boasts rich diversity of flora and fauna. The core area of the reserve which constitutes the "Nameri National Park" is bound by River Jia-Bhoreli on the west and River Bor-Dikorai in the east. To the north of the Nameri lies the Pakke Tiger Reserve of Arunachal Pradesh.
 
-![](../images/india_assam1.png){.align-right}
+![](../images/india_assam1.png)
 
 Within this landscape, the principal species of conservation importance are the Royal Bengal Tiger, Asian Elephant, Indian bison, Common leopard, clouded leopard, Wild dog, Sambar deer, barking deer, hog deer, wild boar and several other species. The bird diversity of NTR is also quite impressive and more than 370 bird species have been identified so far. The reserve is managed by the Assam Forest Department, Government of Assam.
 

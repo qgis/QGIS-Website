@@ -12,7 +12,7 @@ thumbnail: "images/suisse_solothurn1.png"
 
 # QGIS in the governmental FOSSGIS stack of the Canton of Solothurn in Switzerland
 
-![](../images/suisse_solothurn1.png){.align-left}
+![](../images/suisse_solothurn1.png)
 
 The Canton of Solothurn provides services and infrastructure to 250,000 Solothurn citizens. In the year 2001 the State Parliament decided to migrate from Windows to Linux. The motivations were to be independent from one particular vendor, to encourage free enterprise and reduce license costs. As a result SO!GIS department of the Canton of Solothurn started to deliver the GIS-requirements of more than 3500 employees with a FOSSGIS strategy.
 

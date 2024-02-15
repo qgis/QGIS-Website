@@ -14,7 +14,7 @@ thumbnail: "images/france_burgundy.jpg"
 
 An interdisciplinary group of researchers based at the University of North Carolina have been working in the Burgundy region of France for over 30 years. We are trying to understand the changing patterns of human settlement and land use over a period of 2,000 years from the Iron Age, Gallo-Roman, Medieval periods into the present. Our project has included a wide variety of disciplinary researchers, and part of our project includes how to conduct such long-duration interdisciplinary research activities. GIS, GPS and remote sensing have been integral to our work, and our GIS database was first created in 1986, one of the first such archaeological applications. We have done archaeological, historical, geological, ecological, and ethnographic research in the area surrounding the commune of Uxeau, in Southern Burgundy, which is a rich and resilient landscape that has maintained productivity and stability for an extended period.
 
-![](../images/france_burgundy.jpg){.align-left .Our .research .area .in .Southern .Burgundy, .France. .This .research .was .done .in .and .around .the .commune .of .Uxeau, .shown .at .center .right.}
+![](../images/france_burgundy.jpg)
 
 ## Our Project and how QGIS is used
 

@@ -24,7 +24,7 @@ The newly formed team will allow for a lot more cross-over of skills between the
 
 Alan has introduced a single digital workflow for our team, including using d3 to help create a larger graphic vocabulary and cutting down the time it takes to create the visuals.
 
-![](../images/ft_europe_migration_balkan-route.png){.align-left width="100.0%"}
+![](../images/ft_europe_migration_balkan-route.png)
 
 *Example: Migrant flows. Western Balkans route.*
 
@@ -36,13 +36,13 @@ Alan has introduced a single digital workflow for our team, including using d3 t
 
 **Steven**: We are a multi-disciplinary department so I don't have a specific role as such. My role includes producing responsive designs for interactive graphics as well as doing the front-end development on the less complicated interactives (e.g. [Inside Isis Inc: The journey of a barrel of oil](http://ig.ft.com/sites/2015/isis-oil/)). I also produce the standard news related charts and maps on a daily basis. Over the past two years I have been concentrating on developing our cartographic offerings at the FT. QGIS has been instrumental in changing how we produce maps, and in conjunction with other tools such Blender have helped me to be more creative with how we approach maps.
 
-![](../images/ft_nigeria-migration_animation.gif){.align-left width="100.0%"}
+![](../images/ft_nigeria-migration_animation.gif)
 
 *Example: Animation of Dora\'s journey from Nigeria to Sicily - one of thousands by trafficked women each year.*
 
 **QGIS**: Can you tell us a bit about yourself? What\'s your educational background? What did you do before joining the data visualization team at FT?
 
-![](../images/ft_gotthard-tunnel.png){.align-left width="60.0%"}
+![](../images/ft_gotthard-tunnel.png)
 
 *Example: Gotthard rail and road tunnel in the Swiss Alps.*
 
@@ -58,7 +58,7 @@ We used it to georeference maps that were created by a professor at Columbia Uni
 
 **Steven**: QGIS is now an integral part of our mapping workflow. I don't use any other GIS tool to create our maps. Although a few members of our team also use Map Publisher as they feel more comfortable staying within Adobe Illustrator. I would say 80% of our maps are now produced in QGIS.
 
-![](../images/ft_blm-federal-land-map.png){.align-left width="100.0%"}
+![](../images/ft_blm-federal-land-map.png)
 
 *Example: Public Lands in the US.*
 
@@ -82,7 +82,7 @@ The final tool I use is Adobe After Effects as I have recently got into animatin
 
 **Steven**: QGIS all the way for me, but as mentioned above some of my colleagues use Map Publisher as well.
 
-![](../images/ft_isis-air-strikes_febupdate.png){.align-left width="100.0%"}
+![](../images/ft_isis-air-strikes_febupdate.png)
 
 *Example: Strikes on Syria in February 2016.*
 
@@ -100,7 +100,7 @@ So all I have to do is download the csv, import it into QGIS, apply a style and 
 
 To be perfectly honest I can't think of any weaknesses, there are a couple of things that I would like to see or be able to do but, I don't see that as a weakness, just a missing feature.
 
-![](../images/ft_chinaMigration.png){.align-left width="100.0%"}
+![](../images/ft_chinaMigration.png)
 
 *Example: Urban Attraction and Migration within China.*
 
@@ -108,7 +108,7 @@ To be perfectly honest I can't think of any weaknesses, there are a couple of th
 
 **Steven**: There are numerous features that I would class as life savers! But primarily Quick OSM and Georeferencer have saved me so much time, this is absolutely essential when deadlines are tight. Which, when working for a news organisation, is usually 90% of the time.
 
-![](../images/ft_china_henanGuangdong.png){.align-left width="100.0%"}
+![](../images/ft_china_henanGuangdong.png)
 
 *Example: Urban Attraction and Migration within China. Detail views.*
 
@@ -124,7 +124,7 @@ Being able to save as image at larger file sizes. Currently this is the only way
 
 **Steven**: I certainly don't have the necessary skills to do the coding myself, I'm fairly proficient in Javascript but would struggle with Python. I would love to hire a developer to get features implemented but unfortunately I'm not in control of any budgets, so I use other tools to get around this.
 
-![](../images/ft_us_broadband_internet_subscription.png){.align-left width="100.0%"}
+![](../images/ft_us_broadband_internet_subscription.png)
 
 *Example: Percentage of households with a broadband internet subscription in the US.*
 
@@ -134,7 +134,7 @@ Being able to save as image at larger file sizes. Currently this is the only way
 
 **QGIS**: Thank you for your time and the work you do for promoting and documenting workflows in QGIS!
 
-![](../images/ft_potrait_steve_bernard.jpg){.align-left width="50.0%"}
+![](../images/ft_potrait_steve_bernard.jpg)
 
 *Portrait of Steve Bernard. Interactive Design Editor at Financial Times.*
 

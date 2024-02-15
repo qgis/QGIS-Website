@@ -12,7 +12,7 @@ thumbnail: "images/canada_brunswick1.jpg"
 
 # Creating the Fundy Footpath Trail Map with QGIS
 
-![](../images/canada_brunswick1.jpg){.align-left}
+![](../images/canada_brunswick1.jpg)
 
 The Fundy Footpath is a wilderness hiking trail located along the Fundy coast of New Brunswick, Canada. It is a charter member of the [UNESCO Fundy Biosphere Reserve](http://fundy-biosphere.ca/en/about-us/the-reserve) and affiliated with the [NB Trails Council Inc.](http://www.sentiernbtrail.com/) and the Trans Canada Trail. The Footpath takes hikers through the coastal Acadian Forest, home to the world's highest tides, old growth forests, and several rare and unique types of flora and fauna.
 
