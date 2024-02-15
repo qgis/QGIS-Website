@@ -1,0 +1,33 @@
+{{ $showcaseType := .Get "showcase" | default "" }}
+{{ $quantity := .Get "quantity" | default "100" }}
+{{/* printf "Showcase type %s" $showcaseType */}}
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ $headlessbundle := .Site.GetPage "/flickr-images" }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) | first $quantity }}
+            {{/* printf "Source %s" .Params.source */}}
+            {{ if eq .Params.source "flickr" }}
+                {{/* printf "Showcase %s" .Params.showcase */}}
+                {{ if eq .Params.showcase $showcaseType }}
+                {{ $count := add ($.Scratch.Get "counter") 1 }}
+                {{ $.Scratch.Set "counter" $count }}
+            <div class="column is-4 is-flex">{{/* is flex ensures cols have the same height */}}
+                <div class="notification">
+                    <span title="Badge top right" class="badge is-primary">{{ $count }}</span>
+                    <a href="{{ .Params.link }}">
+                        <h3 class="title is-5">{{ .Params.title }}</h3>
+                        <article class="subtitle is-7">{{ .Params.date }}</article>
+                        <figure>
+                            <img src="{{ .Site.BaseURL }}flickr-images/{{ .Params.image }}" alt="{{ .Params.title }}">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            {{ end }}
+            {{ end }}
+            {{ end }}
+        </div>
+    </div>
+</section>

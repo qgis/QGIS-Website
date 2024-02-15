@@ -39,7 +39,7 @@ Create atlases and reports with maps, media and tabular content
 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column" >}}
-![Create map](/img/placeholder.jpg "Create map")
+![Create map](/img/plugins2.jpg "Create map")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### 2000+ plugins developed by community
@@ -51,7 +51,7 @@ Enhance the functionality of QGIS application with free additional features.
 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column" >}}
-![Create map](/img/placeholder.jpg "Create map")
+![International conference](/img/about-community.jpg "International conference")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### Annual international conference to explore the future of QGIS
@@ -63,7 +63,7 @@ Connect with professionals, enthusiasts, and QGIS users for networking and knowl
 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column" >}}
-![Create map](/img/placeholder.jpg "Create map")
+![Local user groups](/img/groups.jpg "Local user groups")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### Local user groups and support providers
@@ -96,7 +96,7 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 
 Create, edit, visualise, analyse and publish geospatial information.
 
-[Download](#) for Windows, Mac, Linux, BSD and Android.
+[Download](/download/) for Windows, Mac, Linux, BSD and Android.
 {{< /rich-content >}}
 {{< /rich-box >}}
 {{< column-end >}}
@@ -149,7 +149,13 @@ We gather inspiring stories from actual users that showcase the versatility and 
 
 {{< /rich-box >}}
 
+## Maps showcase 
+QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
+{{< flickr-images showcase="map" quantity="5" >}}
 
-{{< usecase >}}
+## Application creenshots 
+QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
+{{< flickr-images showcase="screenshot" quantity="5" >}}
+
 
 {{< content-end >}}
