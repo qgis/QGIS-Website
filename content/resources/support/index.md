@@ -10,6 +10,10 @@ sidebar: true
 
 # Support
 
+## FAQ
+
+TODO https://qgis.org/en/site/getinvolved/faq/index.html#how-to-ask-a-qgis-question
+
 ## Mailing Lists
 
 QGIS has a bunch of mailing lists. See [Mailing lists](https://qgis.org/en/site/getinvolved/mailinglists.html#qgis-mailinglists) for the different available lists.
@@ -46,20 +50,12 @@ For Facebook users, an english-speaking global community group for QGIS users ca
 
 Local QGIS user groups are a great place to meet other users.
 
-See [User Groups](https://qgis.org/en/site/forusers/usergroups.html#qgis-usergroups) to read about it.
+See [User Groups](../../community/organisation/groups/) to read about it.
 
 ## Website
 
 The website should be used to publish any material in relation to the information and management of the user group. Examples include the user meetings, case study, shared material, discussion boards, etc. Public material should be available without login requirements (e.g. do not require interested people to be a member of a social media network like Facebook or Google+). Usage of social media is recommended but should not be the only channel of information. RSS feeds should be made available at the Website of the QGIS user group.
 
 Good luck with the organization of your local user group. Please inform the international QGIS team by registering at the QGIS community list and reporting about your progress. Please do not hesitate to ask questions regarding the establishment and maintenance of your local user group.
-
-## Issue Tracker
-
-If you want to file bugs or issues, see [Bugs, Features and Issues](https://qgis.org/en/site/getinvolved/development/bugreporting.html#qgis-bugreporting).
-
-## Commercial Support
-
-You can also get support from companies near you, please visit this page: [Commercial support](https://qgis.org/en/site/forusers/commercial_support.html#qgis-commercial-support).
 
 {{< content-end >}}
