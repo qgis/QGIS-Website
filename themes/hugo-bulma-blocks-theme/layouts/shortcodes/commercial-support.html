@@ -1,0 +1,19 @@
+{{ $dataFile := (.Get "dataFile") }}
+{{ $data := index $.Site.Data.commercial_support $dataFile | default dict }}
+<div class="container mt-6 mb-6">
+{{ with sort $data }}
+  {{ range . }}
+        <div class="columns is-multiline is-centered">
+            <div class="column is-flex is-flex-direction-column is-2">
+                <img src="{{ .image | absURL }}"/>
+            </div>
+            <div class="column">
+                <a style="font-size: 24px" href="{{ .url }}" class="external-link" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+                <br>
+                {{ .description }}
+            </div>
+        </div>
+    <hr>
+  {{ end }}
+{{ end }}
+</div>

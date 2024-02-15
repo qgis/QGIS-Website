@@ -340,121 +340,97 @@ sectionPagesMenu = 'main'
   parent = "Resources"
   name = "Documentation"
   url = "https://docs.qgis.org/3.28/en/docs/index.html"
+  weight = 20
 
 [[menu.main]]
   parent = "Resources"
   name = "Releases"
   url = "/resources/releases/"
+  weight = 30
 
 [[menu.main]]
   parent = "Resources"
   name = "Roadmap"
   url = "/resources/roadmap/"
+  weight = 40
 
 [[menu.main]]
   parent = "Resources"
   name = "Reports"
   url = "/resources/reports/"
+  weight = 50
 
 [[menu.main]]
   parent = "Reports"
   name = "OGC Certification"
   url = "/resources/ogc-certification/"
+  weight = 60
 
 [[menu.main]]
   parent = "Reports"
   name = "Performance"
   url = "/resources/reports/#performance"
+  weight = 70
 
 [[menu.main]]
   parent = "Reports"
   name = "Security"
   url = "/resources/reports/#security"
+  weight = 80
 
 [[menu.main]]
   parent = "Resources"
   name = "Books"
   url = "/resources/books/"
+  weight = 90
 
 [[menu.main]]
   parent = "Resources"
   name = "Support"
   url = "/resources/support/"
+  weight = 100
 
 [[menu.main]]
   parent = "Support"
   name = "FAQ"
   url = "/resources/support/#faq"
+  weight = 110
 
 [[menu.main]]
   parent = "Support"
   name = "Bug Reporting"
-  url = "/resources/support/#bug-reporting"
+  url = "/resources/support/bug-reporting"
+  weight = 120
 
 [[menu.main]]
   parent = "Support"
   name = "Communication channels"
   url = "/resources/support/#communication-channels"
+  weight = 130
 
 [[menu.main]]
   parent = "Support"
   name = "Commercial support"
-  url = "/resources/support/#commercial-support"
-
-[[menu.main]]
-  parent = "Support"
-  name = "Issue Tracker"
-  url = "/resources/support/#issue-tracker"
+  url = "/resources/support/commercial-support"
+  weight = 140
 
 [[menu.main]]
   parent = "Support"
   name = "StackExchange"
   url = "/resources/support/#stackexchange"
+  weight = 160
 
 [[menu.main]]
   parent = "Support"
   name = "Website Creation"
-  url = "/resources/support/#website-creation"
+  url = "/resources/support/#website"
+  weight = 170
 
 [[menu.main]]
   parent = "Resources"
   name = "Blog"
   url = "https://blog.qgis.org/"
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Books"
-  url = "/resources/books/"
-  weight = 11
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Showcase"
-  url = "/showcase/overview/"
-  weight = 10
-  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Documentation"
-  url = "/documentation/overview/"
-  weight = 20
-  #pre = "<i class='fa-brands fa-windows mr-1'></i>"
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Roadmap"
-  url = "/roadmap/roadmap/"
-  weight = 30
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-
-[[menu.main]]
-  parent = "Resources"
-  name = "License"
-  url = "/license/"
-  weight = 40
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-
+  weight = 180
 
 [[menu.documentation]]
   name = "Documentation"
