@@ -55,7 +55,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 
 {{< /rich-box >}}
 
-{{< rich-box layoutClass="has-right" >}}
+{{< rich-box layoutClass="has-right" mode="html">}}
 {{< rich-content themeClass="coloring-1" >}}
 ### Report Bugs
 
@@ -64,7 +64,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 [Report an issue](#)
 {{< /rich-content>}}
 {{< rich-right >}}  
-![](/img/mappp.png)
+{{< rich-list listLink="../case-studies"  image="/img/map2.png" listTitle="Ukrainian open initiative of creating tools for spatial planning in the QGIS environment" listSubtitle="2023/01" >}}
 {{< /rich-right >}}
 {{< /rich-box >}}
 
@@ -179,6 +179,29 @@ Sustaining memberships - annual commitments of funds to the project
 ![](/img/mappp.png)
 {{< /rich-right >}}
 {{< /rich-box >}}
+
+
+# Road Map 
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+## Development phase
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+### Feature freeze
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+## Release
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+### Release schedule
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+### Release legend
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+#### Location of prereleases / nightly builds
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
 
 
 {{< content-end >}}

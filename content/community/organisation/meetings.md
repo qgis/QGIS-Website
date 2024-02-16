@@ -17,7 +17,7 @@ Since 2009 the QGIS community organizes developer and user meetings around the w
 {{< rich-box >}}
 {{< rich-content themeClass="coloring-6">}}
 ### Developer Meetings
-[Go to meetings](/community/organisation/meetings/dev_meetings/)
+[Go to meetings](dev_meetings)
 
 {{< /rich-content >}}
 {{< /rich-box >}}
@@ -28,7 +28,7 @@ Since 2009 the QGIS community organizes developer and user meetings around the w
 {{< rich-content themeClass="coloring-6" >}}
 ### Users Meetings
 
-[Go to meetings](/community/organisation/meetings/user_meetings/)
+[Go to meetings](user_meetings)
 {{< /rich-content >}}
 {{< /rich-box >}}
 {{< column-end >}}

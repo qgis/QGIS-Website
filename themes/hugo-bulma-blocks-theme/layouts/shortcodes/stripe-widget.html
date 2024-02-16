@@ -1,38 +1,37 @@
 <div class="stripe-widget">
-    <p>Monthly</p>
+    <p>One-Time Payment</p>
     <hr>
     <form id="donate-stripe">
         <!-- NOTE: amount value is in CENTS !!!-->
         <input value="eur:1000" id="eur:1000" type="radio" name="amount">
-        <label for="eur:1000" class="button is-primary1 is-outlined">€ 10.00</label>
+        <label for="eur:1000" class="button is-primary1 is-outlined picker">€ 10.00</label>
         <input value="eur:2500" id="eur:2500" type="radio" name="amount">
-        <label for="eur:2500" class="button is-primary1 is-outlined">€ 25.00</label>
+        <label for="eur:2500" class="button is-primary1 is-outlined picker">€ 25.00</label>
         <input value="eur:5000" id="eur:5000" type="radio" name="amount">
-        <label for="eur:5000" class="button is-primary1 is-outlined">€ 50.00</label>
+        <label for="eur:5000" class="button is-primary1 is-outlined picker">€ 50.00</label>
         <input value="eur:10000" id="eur:10000" type="radio" name="amount">
-        <label for="eur:10000" class="button is-primary1 is-outlined">€ 100.00</label>
+        <label for="eur:10000" class="button is-primary1 is-outlined picker">€ 100.00</label>
         <input value="eur:25000" id="eur:25000" type="radio" name="amount">
-        <label for="eur:25000" class="button is-primary1 is-outlined">€ 250.00</label>
+        <label for="eur:25000" class="button is-primary1 is-outlined picker">€ 250.00</label>
         <input value="usd:1000" id="usd:1000" type="radio" name="amount" checked>
-        <label for="usd:1000" class="button is-primary1 is-outlined">$ 10.00</label>
+        <label for="usd:1000" class="button is-primary1 is-outlined picker">$ 10.00</label>
         <input value="usd:2500" id="usd:2500" type="radio" name="amount">
-        <label for="usd:2500" class="button is-primary1 is-outlined">$ 25.00</label>
+        <label for="usd:2500" class="button is-primary1 is-outlined picker">$ 25.00</label>
         <input value="usd:5000" id="usd:5000" type="radio" name="amount">
-        <label for="usd:5000" class="button is-primary1 is-outlined">$ 50.00</label>
+        <label for="usd:5000" class="button is-primary1 is-outlined picker">$ 50.00</label>
         <input value="usd:10000" id="usd:10000" type="radio" name="amount">
-        <label for="usd:10000" class="button is-primary1 is-outlined">$ 100.00</label>
+        <label for="usd:10000" class="button is-primary1 is-outlined picker">$ 100.00</label>
         <input value="usd:25000" id="usd:25000" type="radio" name="amount">
-        <label for="usd:25000" class="button is-primary1 is-outlined">$ 250.00</label>
+        <label for="usd:25000" class="button is-primary1 is-outlined picker">$ 250.00</label>
         <br>
-        <br>
-        <button id='submit-button' class="button is-primary1" style="width: 100%">Donate</button>
+        <button id='submit-button' class="button is-primary1 submit-button" style="width: 100%">Donate</button>
     </form>
 
     <div class="is-flex is-justify-content-space-between">
       {{ if .Get "otherMethods" }}
           <a class="alpha70" href="{{ absURL "donate/" }}">Other methods, more info</a>
       {{ end }}
-      <select id="currency" style="display: inline-block; margin-left: auto" onchange="updateCurrency()">
+      <select id="currency" class="currency" style="display: inline-block; margin-left: auto" onchange="updateCurrency()">
         <option value="usd">USD</option>
         <option value="eur">EUR</option>
       </select>

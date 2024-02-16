@@ -218,7 +218,6 @@ h2
       display: unset
       width: 100%
       height: 40%
-      background: repeat fixed
       background-image: url({{ absURL "img/community-wide.png" }})
       background-position: center
   &.container
@@ -263,6 +262,7 @@ h2
 
 #light-blue-block
   margin-top: 7rem
+  background-attachment: fixed
   background-image: url({{ absURL "img/light_blue_bg.svg" }})
   background-color: #ECF1F4
   padding-top: 7rem
@@ -392,7 +392,7 @@ h2
     background-image: url("img/external.svg")
 
 .scroll-on-page
-  text-decoration: underline dashed 
+  font-size: 14px
 
 .left-title
   padding-right: 4rem
@@ -411,8 +411,42 @@ p:empty:first-child
 
 .vertical-colums 
   .columns
-    flex-direction: column;
+    flex-direction: column
 
+.gallery
+  .column
+    max-height: 250px
+    overflow: hidden
+    border-radius: 10px
 
+  figure
+    margin: auto
+    border-radius: 10px
+    overflow: hidden
+    height: 100%
+    background: #efefef
+  img
+    width: auto
+    height: 100%
+    border-radius: 10px
+  .imagetile
+    width: 100%
+    height: 100%  
     
-    
+.tabs ul 
+  margin: 0
+
+.rounded img
+  border-radius: 10px  
+
+th 
+  font-weight: 500
+
+.content h3 
+  font-weight: 400
+
+.grid 
+  display: grid
+  grid-gap: 16px
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr))
+  grid-auto-rows: 320px  

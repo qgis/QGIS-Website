@@ -64,7 +64,7 @@ You can also use your own Paypal account to donate.
 {{< paypal-button >}} 
 {{< /rich-content >}}
 {{< rich-right >}}  
-![](/img/paypal.png)
+![](paypal.png)
 {{< /rich-right >}}
 {{< /rich-box >}}
 

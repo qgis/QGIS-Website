@@ -116,10 +116,49 @@ sectionPagesMenu = 'main'
 # See https://gohugo.io/content-management/menus/
 [menu]
 [[menu.main]]
-  name = "About"
-  url = "/about/"
+  name = "Product"
+  url = "/product/overview"
   weight = 10
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+
+[[menu.main]]
+  parent = "Product"
+  name = "Overview"
+  url = "/product/overview/"
+  weight = 10
+
+
+
+[[menu.main]]
+  parent = "Product"
+  name = "Case studies"
+  url = "/product/case-studies/"
+  weight = 20
+
+[[menu.main]]
+  parent = "Overview"
+  name = "Maps"
+  url = "/product/overview/maps/"
+  weight = 30
+
+[[menu.main]]
+  parent = "Overview"
+  name = "Screenshots"
+  url = "/product/overview/screenshots/"
+  weight = 30  
+
+[[menu.main]]
+  parent = "Product"
+  name = "Plugins"
+  url = "https://plugins.qgis.org"
+  weight = 30
+
+[[menu.main]]
+  parent = "Product"
+  name = "Visual Changelogs"
+  url = "/product/visual-changelogs"
+  weight = 40
+
 
 [[menu.main]]
   name = "Community"
@@ -304,13 +343,6 @@ sectionPagesMenu = 'main'
   weight = 30 # Sets the menu order 
 
 
-[[menu.main]]
-  parent = "About"
-  name = "Applications"
-  url = "/apps/"
-  #pre = "<i class='fa fa-heart mr-1'></i>"
-  weight = 50 # Sets the menu order 
-
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
   parent = "Resources"
@@ -413,63 +445,6 @@ sectionPagesMenu = 'main'
   name = "Blog"
   url = "https://blog.qgis.org/"
   weight = 180
-
-[[menu.documentation]]
-  name = "Documentation"
-  url = "/documentation/overview/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.documentation.params]
-    submenu = "documentation"
-
-[[menu.showcase]]
-  name = "Overview"
-  url = "/showcase/overview/"
-  weight = -150
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "Maps"
-  url = "/showcase/maps/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "Screenshots"
-  url = "/showcase/screenshots/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "Case Studies"
-  url = "/showcase/case-studies/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-
-[[menu.showcase]]
-  name = "Blogs"
-  url = "/showcase/community-blogs/"
-  weight = -140
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "User Group News"
-  url = "/showcase/user-group-events/"
-  weight = -150
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
 
 
 [outputs]
