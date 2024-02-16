@@ -10,7 +10,7 @@
     {{ $i := 0 }}
     {{- range site.Menus.main }}
         {{ $i = add $i 1 }}
-        {{ $menuItemID := printf "ul-%d-%s" $i (replace .URL "/" "") }}
+        {{ $menuItemID := printf "ul-%d" $i }}
         <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
         {{ if .HasChildren }}
             <div class="has-child">
@@ -20,7 +20,7 @@
             <ul id="{{ $menuItemID }}" class="collapsed">
                 {{ range sort .Children "Weight" }}
                     {{ $i = add $i 1 }}
-                    {{ $innerMenuItemID := printf "ul-%s-%s" $i (replace .URL "/" "") }}
+                    {{ $innerMenuItemID := printf "ul-%d" $i }}
                     <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
                     {{ if .HasChildren }}
                         <div class="has-child">
