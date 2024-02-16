@@ -234,13 +234,5 @@ Below are some screenshots from QGIS itself and a selection of Maps which are cr
 {{< columns-end >}}
 
 
-## Maps showcase 
-QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
-
-
-## Application creenshots 
-QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
-{{< flickr-images showcase="screenshot" quantity="5" >}}
-
 
 {{< content-end >}}
