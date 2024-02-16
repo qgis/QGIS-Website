@@ -181,4 +181,27 @@ Sustaining memberships - annual commitments of funds to the project
 {{< /rich-box >}}
 
 
+# Road Map 
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+## Development phase
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+### Feature freeze
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+## Release
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+### Release schedule
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+### Release legend
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+#### Location of prereleases / nightly builds
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+
+
 {{< content-end >}}

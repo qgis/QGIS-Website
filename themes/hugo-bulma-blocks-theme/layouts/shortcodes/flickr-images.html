@@ -12,11 +12,13 @@
                 {{ $size :=cond (ne $count 1 2 6 7) "4" "6" }}
                 {{ if le $count $quantity }}
                 <div class="column is-{{$size}} is-flex">{{/* is flex ensures cols have the same height */}}
-                    <figure>
-                        <a href="{{ .Params.link }}">
-                                <img src="{{ .Site.BaseURL }}flickr-images/{{ .Params.image }}" alt="{{ .Params.title }}">
-                        </a>
-                    </figure>
+                    <div class="imagetile">
+                        <figure>
+                            <a href="{{ .Params.link }}">
+                                    <img src="{{ .Site.BaseURL }}flickr-images/{{ .Params.image }}" alt="{{ .Params.title }}">
+                            </a>
+                        </figure>
+                    </div>
                 </div>
                 {{ end }}
             {{ end }}

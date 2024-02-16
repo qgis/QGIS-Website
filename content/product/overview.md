@@ -33,60 +33,6 @@ Create atlases and reports with maps, media and tabular content
 {{< column-end >}}
 {{< columns-end >}}
 
-{{< columns-start >}}
-{{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](/img/placeholder.jpg "Create map")
-{{< column-end >}}
-
-{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
-###### Exceptional digitizing proficiency
-Craft and edit points, lines, polygons, and meshes with precision
-
-###### Advanced construction tools
-Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations
-
-###### Highly customizable forms
-Create user-friendly forms using our form designer
-
-{{< column-end >}}
-{{< columns-end >}}
-
-{{< columns-start >}}
-{{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](/img/placeholder.jpg "Create map")
-{{< column-end >}}
-
-{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
-###### Comprehensive analysis toolset
-Uncover insights from your data with our comprehensive array of XXX analysis tools
-
-###### Automated analysis workflows
-Visually combine analysis tools to create reproducible workflows easily
-
-###### Extensible analysis environment
-Explore a diverse ecosystem of third-party analysis tools for expanded capabilities
-
-{{< column-end >}}
-{{< columns-end >}}
-
-{{< columns-start >}}
-{{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](/img/placeholder.jpg "Create map")
-{{< column-end >}}
-
-{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
-###### Industry-leading format support
-Conquer data integration challenges with support for various data sources and formats
-
-###### Standards and interoperability
-Amplify your impact by exploring, utilizing, and creating web services based on industry standards
-
-###### Publish your work
-Extend QGIS to the cloud and mobile devices for wider accessibility
-
-{{< column-end >}}
-{{< columns-end >}}
-
 
 
 ## Level up with community resources
@@ -203,9 +149,41 @@ We gather inspiring stories from actual users that showcase the versatility and 
 
 {{< /rich-box >}}
 
+
+
+{{< columns-start >}}
+{{< column-start class="is-flex-direction-column is-one-third">}}
+## Maps showcase
+QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
+
+[Go to maps showcase]()
+
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column is-two-thirds">}}
+{{< flickr-images showcase="map" quantity="5" >}}
+
+{{< column-end >}}
+{{< columns-end >}}
+
+{{< columns-start >}}
+{{< column-start class="is-flex-direction-column is-one-third">}}
+## Application screenshots
+Below are some screenshots from QGIS itself and a selection of Maps which are created with QGIS.
+
+[Go to screenshots]()
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column is-two-thirds">}}
+{{< flickr-images showcase="screenshot" quantity="5" >}}
+
+{{< column-end >}}
+{{< columns-end >}}
+
+
 ## Maps showcase 
 QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
-{{< flickr-images showcase="map" quantity="5" >}}
+
 
 ## Application creenshots 
 QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.

@@ -17,7 +17,7 @@ sidebar: true
 ### Participate in Support Channels
 
 {{< button class="is-primary1 is-small is-rounded" link="/community/organisation/mailinglists" text="QGIS mailing lists" >}} 
-{{< button class="is-primary1 is-small is-rounded" link="/resources/support/communication-channels" text="Chats rooms" >}} 
+{{< button class="is-primary1 is-small is-rounded" link="/resources/support/#communication-channels" text="Chats rooms" >}} 
 {{< button class="is-primary1 is-small is-rounded" link="/community/organisation/groups" text="User groups" >}} 
 
 Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
@@ -46,7 +46,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 {{< /rich-box >}}
 
 {{< rich-box layoutClass="has-right rounded" >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-content themeClass="coloring-3" >}}
 ### QGIS Documentation
 
 Creating documentation offers an ideal starting point for your first contribution to the project. If you're interested in joining the documentation effort, you can find a gentle introduction and guidelines here:
@@ -59,7 +59,7 @@ Creating documentation offers an ideal starting point for your first contributio
 {{< /rich-box >}}
 
 {{< rich-box layoutClass="has-right rounded" >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-content themeClass="coloring-3" >}}
 ### Translate QGIS
 
 If you're interested in contributing to the documentation effort, such as translating the English manual into another language, find out how to get started here:
@@ -105,8 +105,8 @@ QGIS Core comprises libraries for building custom applications through a robust 
 
 We welcome two types of financial contributions:
 
-{{< button class = "is-primary1" link = "/donate/" text = "Become sustaining memberships" >}} 
-{{< button class = "is-primary6" link = "/community/members/sustaining_member/" text = "One-time donation" >}} 
+{{< button class = "is-primary1" link = "/community/members/sustaining_member/" text = "Become a Sustaining Member" >}} 
+{{< button class = "is-primary6" link = "/donate/" text = "One-Time Donation" >}} 
 
 {{< /rich-content >}}
 {{< rich-right >}}  
