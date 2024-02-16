@@ -55,10 +55,9 @@ $tabs-toggle-link-active-color: $link-invert !default
       color: $tabs-link-hover-color
   li
     display: block
-    &.is-active
-      a
-        border-bottom-color: $tabs-link-active-border-bottom-color
-        color: $tabs-link-active-color
+    a.is-active
+      border-bottom-color: $tabs-link-active-border-bottom-color
+      color: $tabs-link-active-color
   ul
     align-items: center
     border-bottom-color: $tabs-border-bottom-color
@@ -102,11 +101,10 @@ $tabs-toggle-link-active-color: $link-invert !default
         background-color: $tabs-boxed-link-hover-background-color
         border-bottom-color: $tabs-boxed-link-hover-border-bottom-color
     li
-      &.is-active
-        a
-          background-color: $tabs-boxed-link-active-background-color
-          border-color: $tabs-boxed-link-active-border-color
-          border-bottom-color: $tabs-boxed-link-active-border-bottom-color !important
+      a.is-active
+        background-color: $tabs-boxed-link-active-background-color
+        border-color: $tabs-boxed-link-active-border-color
+        border-bottom-color: $tabs-boxed-link-active-border-bottom-color !important
   &.is-fullwidth
     li
       flex-grow: 1

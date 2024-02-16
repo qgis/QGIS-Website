@@ -1,8 +1,41 @@
 <div class="tabs">
   <ul>
-    <li class="is-active" id="tab-1"><a>Create maps</a></li>
-    <li  id="tab-2"><a>Edit layers</a></li>
-    <li  id="tab-3"><a>Process and analyze</a></li>
-    <li  id="tab-4"><a>Share maps</a></li>
+    <li><a class="is-active" id="tab-1">Create maps</a></li>
+    <li><a id="tab-2">Edit layers</a></li>
+    <li><a id="tab-3">Process and analyze</a></li>
+    <li><a id="tab-4">Share maps</a></li>
   </ul>
 </div>   
+
+<script>
+    function openTab(event) {
+        var tabId = event.target.id;
+
+        // Hide all tab contents
+        document.querySelectorAll('[id^="content-tab-"]').forEach(e => {
+            e.style.display = 'none';
+        });
+
+        // Remove 'is-active' class from all tabs
+        document.querySelectorAll('[id^="tab-"]').forEach(e => {
+            e.classList.remove('is-active');
+        });
+
+        // Show the selected tab content
+        document.getElementById('content-' + tabId).style.display = 'block';
+
+        // Add 'is-active' class to the clicked tab
+        document.getElementById(tabId).classList.add('is-active');
+    }
+
+    document.querySelectorAll('[id^="tab-"]').forEach(e => {
+        e.addEventListener('click', openTab);
+    });
+
+    // hide all content except the 1st
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('[id^="content-tab-"]:not(#content-tab-1)').forEach(e => {
+            e.style.display = 'none';
+        });
+    });
+</script>

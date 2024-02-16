@@ -16,7 +16,7 @@ LabelText: "Free and open source"
 
 {{< tabs >}}
 
-{{< columns-start >}}
+{{< columns-start id="content-tab-1" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds" >}}
 ![Create map](/img/placeholder.jpg "Create map")
 {{< column-end >}}
@@ -33,6 +33,59 @@ Create atlases and reports with maps, media and tabular content
 {{< column-end >}}
 {{< columns-end >}}
 
+{{< columns-start id="content-tab-2" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds" >}}
+![Create map](/img/placeholder.jpg "Create map")
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
+###### Exceptional digitizing proficiency
+Craft and edit points, lines, polygons, and meshes with precision
+
+###### Advanced construction tools
+Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations
+
+###### Highly customizable forms
+Create user-friendly forms using our form designer
+
+{{< column-end >}}
+{{< columns-end >}}
+
+{{< columns-start id="content-tab-3" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds" >}}
+![Create map](/img/placeholder.jpg "Create map")
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
+###### Comprehensive analysis toolset
+Uncover insights from your data with our comprehensive array of XXX analysis tools
+
+###### Automated analysis workflows
+Visually combine analysis tools to create reproducible workflows easily
+
+###### Extensible analysis environment
+Explore a diverse ecosystem of third-party analysis tools for expanded capabilities
+
+{{< column-end >}}
+{{< columns-end >}}
+
+{{< columns-start id="content-tab-4" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds" >}}
+![Create map](/img/placeholder.jpg "Create map")
+{{< column-end >}}
+
+{{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
+###### Industry-leading format support
+Conquer data integration challenges with support for various data sources and formats
+
+###### Standards and interoperability
+Amplify your impact by exploring, utilizing, and creating web services based on industry standards
+
+###### Publish your work
+Extend QGIS to the cloud and mobile devices for wider accessibility
+
+{{< column-end >}}
+{{< columns-end >}}
 
 
 ## Level up with community resources
