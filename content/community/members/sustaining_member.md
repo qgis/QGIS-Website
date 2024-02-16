@@ -74,7 +74,7 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 {{< column-end >}}
 {{< columns-end >}}
 
-QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance](/community/foundation/finance) section.
+QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance](../../foundation/finance) section.
 
 
 ## Sustaining membership

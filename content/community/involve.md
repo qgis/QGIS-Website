@@ -16,15 +16,15 @@ sidebar: true
 {{< rich-content themeClass="coloring-1" >}}
 ### Participate in Support Channels
 
-{{< button class="is-primary1 is-small is-rounded" link="/community/organisation/mailinglists" text="QGIS mailing lists" >}} 
-{{< button class="is-primary1 is-small is-rounded" link="/resources/support/#communication-channels" text="Chats rooms" >}} 
-{{< button class="is-primary1 is-small is-rounded" link="/community/organisation/groups" text="User groups" >}} 
+{{< button class="is-primary1 is-small is-rounded" link="community/organisation/mailinglists" text="QGIS mailing lists" >}} 
+{{< button class="is-primary1 is-small is-rounded" link="resources/support/#communication-channels" text="Chats rooms" >}} 
+{{< button class="is-primary1 is-small is-rounded" link="community/organisation/groups" text="User groups" >}} 
 
 Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
 
 Feel free to subscribe to any of the lists, and remember to contribute by answering questions and sharing your experiences.
 
-[Community support channels page](/resources/support)
+[Community support channels page](../../resources/support)
 {{< /rich-content >}}
 {{< rich-right >}}  
 ![](../img/Channels.jpg)
@@ -38,7 +38,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 
 If you encounter any issues while working with QGIS, let the QGIS developers know about them.
 
-[Report an issue](/resources/support/report-a-bug)
+[Report an issue](../../resources/support/bug-reporting)
 {{< /rich-content>}}
 {{< rich-right >}}  
 ![](../img/Bugs.jpg)
@@ -92,7 +92,7 @@ QGIS Core comprises libraries for building custom applications through a robust 
 
 [Get set up for QGIS Core development](https://docs.qgis.org/3.28/en/docs/developers_guide/index.html )
 
-[QGIS roadmap](/resources/roadmap)
+[QGIS roadmap](../../resources/roadmap)
 {{< /rich-content >}}
 {{< rich-right >}}  
 ![](../img/Core.jpg)
@@ -105,8 +105,8 @@ QGIS Core comprises libraries for building custom applications through a robust 
 
 We welcome two types of financial contributions:
 
-{{< button class = "is-primary1" link = "/community/members/sustaining_member/" text = "Become a Sustaining Member" >}} 
-{{< button class = "is-primary6" link = "/donate/" text = "One-Time Donation" >}} 
+{{< button class = "is-primary1" link = "community/members/sustaining_member/" text = "Become a Sustaining Member" >}} 
+{{< button class = "is-primary6" link = "donate/" text = "One-Time Donation" >}} 
 
 {{< /rich-content >}}
 {{< rich-right >}}  

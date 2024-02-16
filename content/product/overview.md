@@ -18,7 +18,7 @@ LabelText: "Free and open source"
 
 {{< columns-start id="content-tab-1" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](/img/placeholder.jpg "Create map")
+![Create map](../img/placeholder.jpg "Create map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
@@ -35,7 +35,7 @@ Create atlases and reports with maps, media and tabular content
 
 {{< columns-start id="content-tab-2" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](/img/placeholder.jpg "Create map")
+![Create map](../img/placeholder.jpg "Create map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
@@ -53,7 +53,7 @@ Create user-friendly forms using our form designer
 
 {{< columns-start id="content-tab-3" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](/img/placeholder.jpg "Create map")
+![Create map](../img/placeholder.jpg "Create map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
@@ -71,7 +71,7 @@ Explore a diverse ecosystem of third-party analysis tools for expanded capabilit
 
 {{< columns-start id="content-tab-4" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](/img/placeholder.jpg "Create map")
+![Create map](../img/placeholder.jpg "Create map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
@@ -92,7 +92,7 @@ Extend QGIS to the cloud and mobile devices for wider accessibility
 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column rounded" >}}
-![Create map](/img/plugs.jpg "Create map")
+![Create map](../img/plugs.jpg "Create map")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### 2000+ plugins developed by community
@@ -104,29 +104,29 @@ Enhance the functionality of QGIS application with free additional features.
 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column rounded" >}}
-![International conference](/img/meetings.jpg "International conference")
+![International conference](../img/meetings.jpg "International conference")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### Annual international conference to explore the future of QGIS
 Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing.
 
-[Community meetings](/community/organisation/meetings/user_meetings/)
+[Community meetings](../../community/organisation/meetings/user_meetings/)
 {{< column-end >}}
 {{< columns-end >}}
 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column rounded" >}}
-![Local user groups](/img/groupss.jpg "Local user groups")
+![Local user groups](../img/groupss.jpg "Local user groups")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### Local user groups and support providers
 Join a community of like-minded individuals in your region.
 
-[Local groups list](/community/organisation/groups/)
+[Local groups list](../../community/organisation/groups/)
 {{< column-end >}}
 {{< columns-end >}}
 
-[Join the community](/community/involve/)
+[Join the community](../../community/involve/)
 
 ## Cross platform
 
@@ -149,7 +149,7 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 
 Create, edit, visualise, analyse and publish geospatial information.
 
-[Download](/download/) for Windows, Mac, Linux, BSD and Android.
+[Download](../../download/) for Windows, Mac, Linux, BSD and Android.
 {{< /rich-content >}}
 {{< /rich-box >}}
 {{< column-end >}}
