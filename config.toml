@@ -127,11 +127,25 @@ sectionPagesMenu = 'main'
   url = "/product/overview/"
   weight = 10
 
+
+
 [[menu.main]]
   parent = "Product"
   name = "Case studies"
   url = "/product/case-studies/"
   weight = 20
+
+[[menu.main]]
+  parent = "Overview"
+  name = "Maps"
+  url = "/product/overview/maps/"
+  weight = 30
+
+[[menu.main]]
+  parent = "Overview"
+  name = "Screenshots"
+  url = "/product/overview/screenshots/"
+  weight = 30  
 
 [[menu.main]]
   parent = "Product"
@@ -431,63 +445,6 @@ sectionPagesMenu = 'main'
   name = "Blog"
   url = "https://blog.qgis.org/"
   weight = 180
-
-[[menu.documentation]]
-  name = "Documentation"
-  url = "/documentation/overview/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.documentation.params]
-    submenu = "documentation"
-
-[[menu.showcase]]
-  name = "Overview"
-  url = "/showcase/overview/"
-  weight = -150
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "Maps"
-  url = "/showcase/maps/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "Screenshots"
-  url = "/showcase/screenshots/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "Case Studies"
-  url = "/showcase/case-studies/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-
-[[menu.showcase]]
-  name = "Blogs"
-  url = "/showcase/community-blogs/"
-  weight = -140
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
-
-[[menu.showcase]]
-  name = "User Group News"
-  url = "/showcase/user-group-events/"
-  weight = -150
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.showcase.params]
-    submenu = "showcase"
 
 
 [outputs]

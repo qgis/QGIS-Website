@@ -149,7 +149,7 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 
 Create, edit, visualise, analyse and publish geospatial information.
 
-[Download](../../download/) for Windows, Mac, Linux, BSD and Android.
+[Download](/download/) for Windows, Mac, Linux, BSD and Android.
 {{< /rich-content >}}
 {{< /rich-box >}}
 {{< column-end >}}
@@ -166,7 +166,7 @@ Publish your QGIS projects on the web with ease.
 
 Benefit from the powerful symbology, labeling and blending features to impress with your maps.
 
-[QGIS Web Client 2](#)
+[QGIS Web Client 2](https://github.com/qgis/qwc2)
 
 {{< /rich-content >}}
 {{< /rich-box >}}
@@ -179,9 +179,9 @@ Benefit from the powerful symbology, labeling and blending features to impress w
 
 The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS into the field
 
-*   [QField](#)
-*   [Mergin Maps Input app](#)
-*   [IntraMaps Roam](#)
+*   [QField](/download/)
+*   [Mergin Maps Input app](/download/)
+*   [IntraMaps Roam](/download/)
 {{< /rich-content >}}
 {{< /rich-box >}}
 {{< column-end >}}
@@ -209,12 +209,12 @@ We gather inspiring stories from actual users that showcase the versatility and 
 ## Maps showcase
 QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
 
-[Go to maps showcase]()
+[Go to maps showcase](maps/)
 
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< flickr-images showcase="map" quantity="5" >}}
+{{< flickr-images showcase="map" quantity="5" columns="gallery" >}}
 
 {{< column-end >}}
 {{< columns-end >}}
@@ -224,11 +224,11 @@ QGIS users demonstrate their creativity, showcasing the app's powerful map creat
 ## Application screenshots
 Below are some screenshots from QGIS itself and a selection of Maps which are created with QGIS.
 
-[Go to screenshots]()
+[Go to screenshots](screenshots/)
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< flickr-images showcase="screenshot" quantity="5" >}}
+{{< flickr-images showcase="screenshot" quantity="5" columns="gallery" >}}
 
 {{< column-end >}}
 {{< columns-end >}}

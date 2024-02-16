@@ -10,7 +10,7 @@ sidebar: true
 {{< content-start  >}}
 ## Ways of Contributing
 
-[Participate in Support Channels](#participate-in-support-channels "scroll-on-page"), [Report Bugs](report-bugs "scroll-on-page"), [QGIS Documentation](#qgis-documentation "scroll-on-page"), [Translate QGIS](#translate-qgis "scroll-on-page"), [Develop a Plugin](#develop-a-plugin "scroll-on-page"), [Develop QGIS Core](#develop-qgis-core "scroll-on-page"), [Sustain & Donate](#sustain--donate "scroll-on-page") 
+[Participate in Support Channels](#participate-in-support-channels "scroll-on-page"), [Report Bugs](#report-bugs "scroll-on-page"), [QGIS Documentation](#qgis-documentation "scroll-on-page"), [Translate QGIS](#translate-qgis "scroll-on-page"), [Develop a Plugin](#develop-a-plugin "scroll-on-page"), [Develop QGIS Core](#develop-qgis-core "scroll-on-page"), [Sustain & Donate](#sustain--donate "scroll-on-page") 
 
 {{< rich-box layoutClass="has-right rounded" >}}
 {{< rich-content themeClass="coloring-1" >}}
@@ -46,7 +46,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 {{< /rich-box >}}
 
 {{< rich-box layoutClass="has-right rounded" >}}
-{{< rich-content themeClass="coloring-3" >}}
+{{< rich-content themeClass="coloring-4" >}}
 ### QGIS Documentation
 
 Creating documentation offers an ideal starting point for your first contribution to the project. If you're interested in joining the documentation effort, you can find a gentle introduction and guidelines here:
@@ -59,7 +59,7 @@ Creating documentation offers an ideal starting point for your first contributio
 {{< /rich-box >}}
 
 {{< rich-box layoutClass="has-right rounded" >}}
-{{< rich-content themeClass="coloring-3" >}}
+{{< rich-content themeClass="coloring-4" >}}
 ### Translate QGIS
 
 If you're interested in contributing to the documentation effort, such as translating the English manual into another language, find out how to get started here:

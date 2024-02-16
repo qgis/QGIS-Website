@@ -1,5 +1,6 @@
 {{ $showcaseType := .Get "showcase" | default "" }}
 {{ $quantity := .Get "quantity" | default "100" }}
+{{ $columns := .Get "columns" | default "2" }}
 
         <div class="columns is-multiline gallery">
             {{ $.Scratch.Set "counter" 0 }}
@@ -9,7 +10,10 @@
                 {{ if eq .Params.showcase $showcaseType }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
-                {{ $size :=cond (ne $count 1 2 6 7) "4" "6" }}
+                {{ $size := $columns }}  
+                {{ if eq $columns "gallery" }}
+                    {{ $size = cond (ne $count 1 2 6 7) "4" "6" }}        
+                {{ end }}
                 {{ if le $count $quantity }}
                 <div class="column is-{{$size}} is-flex">{{/* is flex ensures cols have the same height */}}
                     <div class="imagetile">
