@@ -6,8 +6,11 @@
   <nav id="sidebar" class="sidebar">
     {{/* print $pageUrl */}}
     <ul class="content-wrapper">
+    {{/* urls are not unique, but we need to keep all items ids distinct. hence using increment var */}}
+    {{ $i := 0 }}
     {{- range site.Menus.main }}
-        {{ $menuItemID := add "ul-" (replace .URL "/" "") }}
+        {{ $i = add $i 1 }}
+        {{ $menuItemID := printf "ul-%d-%s" $i (replace .URL "/" "") }}
         <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
         {{ if .HasChildren }}
             <div class="has-child">
@@ -16,7 +19,8 @@
             </div>
             <ul id="{{ $menuItemID }}" class="collapsed">
                 {{ range sort .Children "Weight" }}
-                    {{ $innerMenuItemID := add "ul-" (replace .URL "/" "") }}
+                    {{ $i = add $i 1 }}
+                    {{ $innerMenuItemID := printf "ul-%s-%s" $i (replace .URL "/" "") }}
                     <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
                     {{ if .HasChildren }}
                         <div class="has-child">
@@ -25,6 +29,7 @@
                         </div>
                         <ul id="{{ $innerMenuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
+                            {{ $i = add $i 1 }}
                                 <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
                                     {{ partial "link" . }}
                                 </li>
