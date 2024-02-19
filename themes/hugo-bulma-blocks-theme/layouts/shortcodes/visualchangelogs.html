@@ -1,11 +1,9 @@
 {{ range (where .Site.Pages "Section" "product") }}
     {{ range sort (where .Pages "SectionsPath" "product/visual-changelogs") "Params.releasedate" "desc" }}
-    <a
-        class="rich-list mr-2 mb-2"
-        href="{{ .RelPermalink }}"
-    >
-        <div class="listcont">{{ .Title }}</div>
-        <div class="subtext is-size-7">{{ .Params.releasedate }}</div>
-    </a>
+    <p>
+        <a href="{{ .RelPermalink }}">
+            {{ .Title }} <span style="color: #888; font-weight:300">{{ .Params.releasedate }} </span>
+        </a>
+    </p>
     {{ end }}
 {{ end }}
