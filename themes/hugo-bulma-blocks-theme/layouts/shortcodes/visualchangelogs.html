@@ -1,0 +1,11 @@
+{{ range (where .Site.Pages "Section" "product") }}
+    {{ range (where .Pages "SectionsPath" "product/visual-changelogs") }}
+    <a
+        class="rich-list mr-2 mb-2"
+        href="{{ .RelPermalink }}"
+    >
+        <div class="listcont">{{ .Title }}</div>
+        <div class="subtext is-size-7">release date</div>
+    </a>
+    {{ end }}
+{{ end }}

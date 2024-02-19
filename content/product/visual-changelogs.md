@@ -8,5 +8,6 @@ sidebar: true
 
 {{< content-start >}}
 
+{{< visualchangelogs >}}
 
 {{< content-end >}}
