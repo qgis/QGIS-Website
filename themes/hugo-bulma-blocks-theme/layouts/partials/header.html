@@ -81,11 +81,7 @@
         */}}
         {{ $bulmasass := resources.Get "sass/bulma.sass" }}
         {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
-        <link
-            href="{{ $bulmacss.RelPermalink }}"
-            integrity="{{ $bulmacss.Data.Integrity }}"
-            rel="stylesheet"
-        />
+        <link href="{{ $bulmacss.RelPermalink }}" rel="stylesheet" />
 
         {{ $menucss := resources.Get "css/menu.css" }}
         {{ $syntaxcss := resources.Get "css/syntax-highlighter.css" }}
@@ -98,20 +94,12 @@
         {{ $cookiecss := resources.Get "css/cookie.css" }}
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
         {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss | resources.Concat "/css/all.css" | resources.Fingerprint }}
-        <link
-            href="{{ $css.RelPermalink }}"
-            integrity="{{ $css.Data.Integrity }}"
-            rel="stylesheet"
-        />
+        <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
         {{/* We can compile SASS too... */}}
         {{ $sass := resources.Get "sass/style.sass" }}
         {{ $style := $sass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
-        <link
-            href="{{ $style.RelPermalink }}"
-            integrity="{{ $style.Data.Integrity }}"
-            rel="stylesheet"
-        />
+        <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
         {{/* Fontawesome related stuff here
             This is an example of how you might render css or other media
@@ -131,11 +119,7 @@
             minify |
             fingerprint
         }}
-        <link
-            href="{{ $fontcss.RelPermalink }}"
-            integrity="{{ $fontcss.Data.Integrity }}"
-            rel="stylesheet"
-        />
+        <link href="{{ $fontcss.RelPermalink }}" rel="stylesheet" />
 
         {{/* Copy Font Awesome Resources into the public dir - this only gets
             done by hugo command but not hugo runserver
@@ -159,11 +143,7 @@
 
         {{/* QR Encoding Logic */}}
         {{ $qrencodejs := resources.Get "js/qrcodegen-v1.8.0-es6.js" | resources.Fingerprint }}
-        <script
-            defer
-            src="{{ $qrencodejs.RelPermalink }}"
-            integrity="{{ $qrencodejs.Data.Integrity }}"
-        ></script>
+        <script defer src="{{ $qrencodejs.RelPermalink }}"></script>
 
         {{/* Homegrown JS functions */}}
         {{ $expandjs := resources.Get "js/card-expand.js" }}
@@ -175,19 +155,11 @@
         {{ $cookiejs := resources.Get "js/cookie.js" }}
         {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $cookiejs | resources.Concat "js/all.js" | resources.Fingerprint }}
         {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
-        <script
-            defer
-            src="{{ $js.RelPermalink }}"
-            integrity="{{ $js.Data.Integrity }}"
-        ></script>
+        <script defer src="{{ $js.RelPermalink }}"></script>
 
         {{/* Search needs to be rendered as a template to ensure urls are correct */}}
         {{ $searchjs := resources.Get "js/search.js" | resources.ExecuteAsTemplate "search.js" . | resources.Fingerprint }}
-        <script
-            defer
-            src="{{ $searchjs.RelPermalink }}"
-            integrity="{{ $searchjs.Data.Integrity }}"
-        ></script>
+        <script defer src="{{ $searchjs.RelPermalink }}"></script>
         <script
             crossorigin=""
             type="application/javascript"
