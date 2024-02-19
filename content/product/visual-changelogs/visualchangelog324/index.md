@@ -21,11 +21,11 @@ We would also like to extend a big thank you to the developers, documenters, tes
 
 For a whirlwind tour of all the new functionalities introduced, you can view the highlight reel video on youtube at <https://youtu.be/gVgR4Oxqtkk>
 
-`<div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/gVgR4Oxqtkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>`{.interpreted-text role="raw-html"}
+<div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/gVgR4Oxqtkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
 
-`<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>`{.interpreted-text role="raw-html"}
+<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>
 
 QGIS is Free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision-making tools will result in a better society for all of humanity.
 

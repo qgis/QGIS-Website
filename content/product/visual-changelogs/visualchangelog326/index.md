@@ -19,7 +19,7 @@ The feature-packed release of QGIS 3.26 Buenos Aires includes a vast number of e
 
 For a whirlwind tour of all the new functionalities introduced, you can view the highlight reel video on YouTube at <https://youtu.be/pZmrw_zR7sA>
 
-`<div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/pZmrw_zR7sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>`{.interpreted-text role="raw-html"}
+<div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/pZmrw_zR7sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
 The QGIS Community has also been active in various crowd-funding campaigns, [Open Day events](https://github.com/qgis/QGIS/wiki#qgis-open-day), and the growth of the [STAC Ecosystem](https://medium.com/radiant-earth-insights/stac-updates-february-2022-e02a194861e) has led to inter-agency collaboration initiatives which include outcomes such as the [STAC Browser QGIS Plugin](https://stac-utils.github.io/qgis-stac-plugin/), which make it nearly trivial to produce [Raster Mosaics](https://www.youtube.com/watch?v=se2Xd7CKhHg) from Earth Observation data using Open Source and Open Data. There is also a new [online analytics dashboard](https://blog.qgis.org/2022/06/16/qgis-userbase-analytics/) which collects information from the QGIS Feed in an attempt to show how and where QGIS is being used, providing valuable insight to developers and the QGIS community.
 
@@ -27,7 +27,7 @@ We would also like to extend a big thank you to the developers, documenters, tes
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our sustaining member page for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
 
-`<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>`{.interpreted-text role="raw-html"}
+<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>
 
 QGIS is free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of what their financial or social status is - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
 

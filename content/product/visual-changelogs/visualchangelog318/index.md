@@ -21,13 +21,13 @@ As QGIS Desktop 3.18 bids farewell to the DB2 database provider, it introduces s
 
 The QGIS ecosystem has also seen some exciting changes in the form of the [QGIS HUB](https://plugins.qgis.org/) which is an extension of the plugin site which now supports the distribution of community developed [styles](https://plugins.qgis.org/styles/), [projects](https://plugins.qgis.org/geopackages/), and even [processing models](https://plugins.qgis.org/models/).
 
-`<div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/Yeo6sXVpXvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>`{.interpreted-text role="raw-html"}
+<div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/Yeo6sXVpXvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
 We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](qgis.org) and lend a hand!
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
 
-`<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>`{.interpreted-text role="raw-html"}
+<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>
 
 QGIS is Free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision-making tools will result in a better society for all of humanity.
 
