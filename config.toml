@@ -326,9 +326,16 @@ sectionPagesMenu = 'main'
 
 [[menu.main]]
   name = "Resources"
-  url = "/resources/"
+  url = "/resources/hub"
   weight = 40 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
+
+[[menu.main]]
+  parent = "Resources"
+  name = "QGIS resources"
+  url = "/resources/hub"
+  weight = 5 # Sets the menu order 
+  #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"  
 
 [[menu.main]]
   name = "Download"

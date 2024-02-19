@@ -1,16 +1,18 @@
 @import "../utilities/derived-variables"
 
 $footer-tablet-breakpoint: 1450px !default
-$footer-background-color: hsla(222, 15%, 13%, 1) !default
-$footer-padding: 4rem 10rem 1rem 11.25rem !default
+$footer-background-color: #002033 !default
+$footer-padding: 4rem 0rem 1rem 0rem !default
 $footer-padding-mobile: 4rem 2rem 4rem !default
 
 .footer
   font-weight: 400
   background-color: $footer-background-color
-
   text-align: center
   padding: $footer-padding-mobile
+
+  .footertitle 
+    color: #637179
 
   .copyright // I can't achieve this with the bulma classes
     display: none
@@ -34,7 +36,6 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
 
   button.button
     padding: 40px 87.5px
-    font-size: 24px
     font-weight: 600
     +from($desktop)
       padding: 1rem 2rem
@@ -63,8 +64,16 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
 
   .privacy-links
     margin-top: 4rem
+    a 
+      color: #637179
     +from($desktop)
       margin-top: unset
+  .fa-foss 
+    background: url('/img/mastodon.svg') center center no-repeat
+    width: 32px
+    height: 34px
+
+
 
   
     
