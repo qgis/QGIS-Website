@@ -13,8 +13,7 @@ sidebar: true
 
 Release date: 2013-09-09
 
-::: {.contents local=""}
-:::
+{{< table-of-contents >}}
 
 ## Analysis tools
 

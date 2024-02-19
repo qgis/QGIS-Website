@@ -39,8 +39,7 @@ QGIS is supported by donors and sponsors. A current list of donors who have made
 
 QGIS is Free software and you are under no obligation to pay anything to use it -in fact we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision making tools will result in a better society for all of humanity. If you are able to support QGIS, you can [![donate here](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://qgis.org/en/site/getinvolved/donations.html).
 
-::: {.contents local=""}
-:::
+{{< table-of-contents >}}
 
 ## Sponsors for QGIS version 2.16.0
 

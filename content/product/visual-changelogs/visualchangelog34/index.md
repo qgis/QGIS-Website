@@ -29,8 +29,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 ![image1](images/projects/750d7d9b7e9dbd498202c4b1288a0cbceb1cd65b.png)
 
-::: {.contents local=""}
-:::
+{{< table-of-contents >}}
 
 ## General
 

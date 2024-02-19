@@ -65,8 +65,7 @@ A current list of donors who have made financial contributions large and small t
 
 QGIS is Free software and you are under no obligation to pay anything to use it - in fact we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision making tools will result in a better society for all of humanity.
 
-::: {.contents local=""}
-:::
+{{< table-of-contents >}}
 
 ## General
 

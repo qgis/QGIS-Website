@@ -35,8 +35,7 @@ A current list of donors who have made financial contributions large and small t
 
 If you would like to make a donation or sponsor our project, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. QGIS is Free software and you are under no obligation to do so. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
 
-::: {.contents local=""}
-:::
+{{< table-of-contents >}}
 
 ## General
 

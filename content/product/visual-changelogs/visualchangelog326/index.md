@@ -31,8 +31,7 @@ QGIS is supported by donors and sustaining members. A current list of donors who
 
 QGIS is free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of what their financial or social status is - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
 
-::: {.contents local=""}
-:::
+{{< table-of-contents >}}
 
 ## Breaking Changes
 
