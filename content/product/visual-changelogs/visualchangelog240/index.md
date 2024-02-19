@@ -4,6 +4,7 @@ title: "Changelog for QGIS 2.4"
 draft: false
 HasBanner: false
 sidebar: true
+releaseDate: "2014-06-27"
 
 ---
 

@@ -4,6 +4,7 @@ title: "Changelog for QGIS 3.28"
 draft: false
 HasBanner: false
 sidebar: true
+releaseDate: "2022-10-21"
 
 ---
 

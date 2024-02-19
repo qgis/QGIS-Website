@@ -4,6 +4,7 @@ title: "Changelog for QGIS 3.0"
 draft: false
 HasBanner: false
 sidebar: true
+releaseDate: "2018-02-23"
 
 ---
 

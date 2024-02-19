@@ -4,6 +4,7 @@ title: "Changelog for QGIS 2.16"
 draft: false
 HasBanner: false
 sidebar: true
+releaseDate: "2016-07-08"
 
 ---
 
