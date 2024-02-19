@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.16 {#changelog316}
 
-![image1](images/projects/dbc0cef663f2f652e0961ac2ed168eb45ed2e182.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/dbc0cef663f2f652e0961ac2ed168eb45ed2e182.png)
 
 Release date: 2020-10-23
 
@@ -36,7 +36,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 Type the words \"user groups\" into the current coordinates window and watch the magic happen.
 
-![image2](images/entries/079434bceb5004b0ee2c4ad5d62edd1290c28575.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image2](images/entries/079434bceb5004b0ee2c4ad5d62edd1290c28575.png)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
@@ -68,7 +68,7 @@ The logic of the XY string is as follows:
 -   If the canvas CRS is WGS84:
     -   If the coordinate fits within the WGS84 bounds, add a WGS84 result.
 
-![image3](images/entries/acb9e856ac744d0e40d8de33c025deb075385856.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/acb9e856ac744d0e40d8de33c025deb075385856.gif)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -78,7 +78,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 
 The map canvas now has a right-click context menu. By default, it creates the \"Copy Coordinate\" menu that was introduced with QGIS 3.14, however, it is expected that this functionality will be extended to allow many more functionalities to be accessed with spatial context in the future.
 
-![image4](images/entries/f6e3ce9dca04583c9fa791204fe7e1a3c49c61d0.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/f6e3ce9dca04583c9fa791204fe7e1a3c49c61d0.png)
 
 This feature was developed by [jakimowb](https://api.github.com/users/jakimowb)
 
@@ -101,7 +101,7 @@ When setting up a vector tile source connection, there\'s a new option to enter 
 
 This also works also with ArcGIS Vector Tile Service connections which will the default style configuration specified in the server configuration.
 
-![image5](images/entries/f93d5dca726eb94be82cc47479424b8fe42f5920.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/f93d5dca726eb94be82cc47479424b8fe42f5920.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -144,7 +144,7 @@ After:
 
 ![image7](images/entries/87635368-44131a80-c782-11ea-95d9-07fb7d00ffcf.png)
 
-![image8](images/entries/e1a4d82c248cdd0f04f236443897178c12574885.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/e1a4d82c248cdd0f04f236443897178c12574885.gif)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -158,7 +158,7 @@ Unfortunately, there are no thumbnails generated for 3D symbols in the library, 
 
 This feature addresses the issue raised in [31479](https://github.com/qgis/QGIS/issues/31479).
 
-![image9](images/entries/7e4ee802abba7dfd7ec61cdd8b3db333b7a30fae.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/7e4ee802abba7dfd7ec61cdd8b3db333b7a30fae.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -168,7 +168,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 A new \"Label Anchoring\" section in the line placement settings for labels allows users to specify whether labels should be placed at the center, start or end of lines. In addition, it allows offsets of these positions (based on the percentage of the feature length), which may be defined statically or by using a data-defined definition.
 
-![image10](images/entries/f5cc643fc4eafe75053c134b245e91d2e72e33d0.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/f5cc643fc4eafe75053c134b245e91d2e72e33d0.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -179,7 +179,7 @@ A new option is exposed which allows users to control whether the anchor point f
 -   Strict: Labels are placed exactly on the label anchor only, and no other fallback placements are permitted.
 -   Hint: The label anchor is treated as a hint for the preferred label placement, but other placements close to the anchor point are permitted.
 
-![image11](images/entries/a6c67225ee3b55a021a395ffbf58bd05352ef6fb.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/a6c67225ee3b55a021a395ffbf58bd05352ef6fb.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -193,7 +193,7 @@ Negative values are not handled properly by stacked bar diagrams with or without
 
 Addresses [Issue 34915](https://github.com/qgis/QGIS/issues/34915)
 
-![image12](images/entries/09739c5bed021a99baec41c98b87f5335a4bf8ec.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/09739c5bed021a99baec41c98b87f5335a4bf8ec.png)
 
 This feature was developed by [Dan Minor](https://api.github.com/users/dminor)
 
@@ -209,7 +209,7 @@ This feature also introduces the ability to remove or save these memory dataset 
 
 ![image13](images/entries/85622744-4d9edc00-b635-11ea-91db-a02fa28e6bea.gif)
 
-![image14](images/entries/b27519025102be3b07fc8241f0ff8f8f2f9b31c6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/b27519025102be3b07fc8241f0ff8f8f2f9b31c6.png)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -227,7 +227,7 @@ The identify tool has been adapted when used on mesh layers and now displays the
 
 When the map canvas does not have temporal navigation enabled, the identify results contain only information about the active dataset groups which have static datasets defined in the mesh properties dialog.
 
-![image15](images/entries/c4974747f5bc0dcba02f30a97e68bb5edacc5f48.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/c4974747f5bc0dcba02f30a97e68bb5edacc5f48.png)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -249,7 +249,7 @@ Virtual: purple
 
 ![image16](images/entries/86540129-a8a3bf00-bed0-11ea-94b8-bf29b5818cb8.gif)
 
-![image17](images/entries/803983acbaec38e8df0fb4fd12d28beef7399520.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/803983acbaec38e8df0fb4fd12d28beef7399520.png)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -269,7 +269,7 @@ This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcl
 
 TIN mesh layers can be created from vector layer data (vertices and/ or break lines). The resulting mesh is constructed with a constrained Delaunay triangulation. This mesh layer can be created using the python API or through an algorithm in the processing tool box.
 
-![image18](images/entries/fc8a9633b87b29bba052dacd166c0735b4449c90.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/fc8a9633b87b29bba052dacd166c0735b4449c90.png)
 
 This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcloarec)
 
@@ -283,7 +283,7 @@ Addresses [Issue 13512](https://github.com/qgis/QGIS/issues/34915)
 
 Also adds a rendering test for brightness and contrast filter which has no test at all and fixes some deprecation warnings in the Python test for `QgsRasterLayer`.
 
-![image19](images/entries/bf6076062db63bc4c789bc18d3b029c14b2ddc8e.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/bf6076062db63bc4c789bc18d3b029c14b2ddc8e.gif)
 
 This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
 
@@ -299,7 +299,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 Shadows can now be rendered in 3D views.
 
-![image20](images/entries/ef724bf261c7740d3cc92238d71d5ecb32a190c3.jpeg){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/ef724bf261c7740d3cc92238d71d5ecb32a190c3.jpeg)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -307,7 +307,7 @@ This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NE
 
 3D Scenes can now be exported for use in other 3D software, such as Blender. This export feature supports multiple additional functions including output model simplification by specifying the output resolution, optional model smoothing, and the exporting of 3D vector layers.
 
-![image21](images/entries/91c112ba42358124faec9c3427542524d6b593f9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/91c112ba42358124faec9c3427542524d6b593f9.png)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -321,7 +321,7 @@ Added directional lights to QGIS 3D
 -   This is just a duplication of the already existing point lights implementation with some changes.
 -   Later it may be useful to add a way to visualize the light direction by displaying a mesh that is positioned at camera\'s view point like an arrow that displays how the sun lights the scene for example.
 
-![image22](images/entries/4dcd7d7f4bcfb71d765656bfe734ec32ddcaca9c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/4dcd7d7f4bcfb71d765656bfe734ec32ddcaca9c.png)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -334,7 +334,7 @@ Texturing support has been added for QGIS 3D with the following new functionalit
 
 Some visual issues may appear when using textures. These issues relate to the normals of surfaces that you may be able to fix by checking \"add back faces\" and playing around with the invert normals and culling mode in the symbol properties.
 
-![image23](images/entries/1c4fc6ffc1b7a28aeff9c625fb6238998dd30b67.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/1c4fc6ffc1b7a28aeff9c625fb6238998dd30b67.png)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -342,7 +342,7 @@ This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NE
 
 Users can now utilise and embed remote 3D models for 3D point symbols.
 
-![image24](images/entries/d4deaabbeddcf5f4784f602f19dabfac22b2d100.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/d4deaabbeddcf5f4784f602f19dabfac22b2d100.png)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -365,7 +365,7 @@ Further improvements for material handling were introduced, and a Gooch shading 
 -   The technique handling in the gooch material widget was improved to avoid showing settings that have no effect in a particular context (e.g. hiding all but the ambient color choice for simple 2D line symbols).
 -   A new material, \"Gooch\", was added. This material gives a CAD style 3D render, where the shading is not dependent on appropriate lighting setup in a scene and where the 3D details are always visible, regardless of the lighting choice.
 
-![image25](images/entries/b6df518d57147bfdfd207d4499363c9d4653721b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/b6df518d57147bfdfd207d4499363c9d4653721b.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -393,7 +393,7 @@ Allows for grid annotations which use buffers, shadows, background shapes, etc.
 
 ![image26](images/entries/86863750-26550e00-c10f-11ea-8dd4-1b740017949e.gif)
 
-![image27](images/entries/349efbc988ccbf3499e18ec4453b637abf893c38.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/349efbc988ccbf3499e18ec4453b637abf893c38.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -421,7 +421,7 @@ Options exist for:
 
 ![image28](images/entries/86433831-191ad680-bd3f-11ea-9289-cc6d2b3e2e11.gif)
 
-![image29](images/entries/1f1343d09c75b0e1d131c25a79b905d7aaadbc35.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/1f1343d09c75b0e1d131c25a79b905d7aaadbc35.png)
 
 This feature was funded by City of Canning
 
@@ -468,7 +468,7 @@ New functionality was introduced which allows users to clip a map item to a shap
 
 ![image30](images/entries/88761088-c1428480-d1b1-11ea-90c0-a391d00b084d.gif)
 
-![image31](images/entries/7179282b09e8d196251f543a9c5f059f89c701e2.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/7179282b09e8d196251f543a9c5f059f89c701e2.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -486,7 +486,7 @@ The following options have been added:
     -   Parallel to Tick (Next To/ Horizontal / Vertical Ascending / Vertical Descending)
     -   Draw low angled (if checked, skipped ticks above will still get an annotation)
 
-![image32](images/entries/0da542215cefcd2e3ca120dd0381b47611734dce.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/0da542215cefcd2e3ca120dd0381b47611734dce.gif)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -518,7 +518,7 @@ Returns the angle of the oriented minimum bounding box which covers the geometry
 
 Useful for data defined overrides in the symbology of label expressions, e.g. to rotate labels to match the overall angle of a polygon, and similar for line pattern fill. ![image33](images/entries/87367553-aae7d680-c5be-11ea-923a-e81200f2b90c.gif)
 
-![image34](images/entries/03463ac0a8303444d94806fb2ff66d6a73c56ccb.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/03463ac0a8303444d94806fb2ff66d6a73c56ccb.png)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -545,7 +545,7 @@ In all instances, the spatial operator is evaluated against the other layer. If 
 
 The `overlay_nearest` function has an additional max_distance filter.
 
-![image36](images/entries/d4bb059729eecfc689e001f731d59fff25225615.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image36](images/entries/d4bb059729eecfc689e001f731d59fff25225615.png)
 
 This feature was developed by [Olivier Dalang, OPENGIS.ch](https://www.opengis.ch)
 
@@ -571,7 +571,7 @@ A toolbar button was added to enable switching between linear/circular: ![image3
 
 ![image39](images/entries/86938444-7089bf80-c10e-11ea-8fd0-0f419f71b52e.gif)
 
-![image40](images/entries/8145ccfa4e659f7d8315830cecfe2b2f391b9aa4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image40](images/entries/8145ccfa4e659f7d8315830cecfe2b2f391b9aa4.png)
 
 This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcloarec)
 
@@ -581,7 +581,7 @@ This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcl
 
 Adds a rescale raster algorithm to change raster value range, whilst preserving the shape of the raster\'s histogram. Useful for when rasters from different sources should be compared or processed together and their pixel values should be in the same range. By default, the algorithm preserves the NODATA value of the input raster but there is an option to override it.
 
-The following image displays a histogram of a DEM (value range is 85-243) ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.png) And the next image displays a histogram of same DEM rescaled to the range 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+The following image displays a histogram of a DEM (value range is 85-243) ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.png) And the next image displays a histogram of same DEM rescaled to the range 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.png)
 
 Addresses [Issue 26099](https://github.com/qgis/QGIS/issues/26099).
 
@@ -597,7 +597,7 @@ This feature changes the behavior of relation widgets created in the drag and dr
 
 On reading a project configured with older QGIS versions, the config is taken over and written into the new widget configuration. Autogenerated forms no longer allow the configuration of relation editor widgets anymore, but if it has been configured in an older QGIS, the attribute form will still read this configuration.
 
-![image44](images/entries/d3a51f9b7ea6ffa3c8c8c457e3d6278d57bcf125.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image44](images/entries/d3a51f9b7ea6ffa3c8c8c457e3d6278d57bcf125.gif)
 
 This feature was developed by [signedav](https://api.github.com/users/signedav)
 
@@ -607,7 +607,7 @@ Users will now be able to see related (child) features in the results window whe
 
 This feature addresses issue [18634](https://github.com/qgis/QGIS/issues/18634).
 
-![image45](images/entries/863b80851b995421b6f2ea455faf6b1c41211cd5.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image45](images/entries/863b80851b995421b6f2ea455faf6b1c41211cd5.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -615,7 +615,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 An option has been added for static filter expression to be used in the relation reference widget.
 
-![image46](images/entries/8048bb8df64e31bb733eea239c527f8be631ce6f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image46](images/entries/8048bb8df64e31bb733eea239c527f8be631ce6f.gif)
 
 This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
 
@@ -633,7 +633,7 @@ In its current form, only the overall load time of each individual layer is disp
 
 ![image47](images/entries/85852208-7bca1a80-b7f3-11ea-8882-b3253622b1b6.png)
 
-![image48](images/entries/943a79db68aee3458cb88cacd7a69b66fda3caea.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image48](images/entries/943a79db68aee3458cb88cacd7a69b66fda3caea.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -645,7 +645,7 @@ Help strings can now be specified at the parameter level.
 
 This will be visible in the tooltip, in the CLI and Python Processing API.
 
-![image55](images/entries/2196bcb0123ced5e180ffb2b9469a65a38dcc41b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image55](images/entries/2196bcb0123ced5e180ffb2b9469a65a38dcc41b.png)
 
 This feature was developed by [Étienne Trimaille](https://api.github.com/users/Gustry)
 
@@ -687,7 +687,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 There is now a native processing algorithm to save vector features to a file dataset within a model. It comes with a pair of advanced features to pass dataset and layer options on to GDAL.
 
-![image56](images/entries/b238631365830b019300700cf59c3a8dd3d05a4f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image56](images/entries/b238631365830b019300700cf59c3a8dd3d05a4f.png)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -713,7 +713,7 @@ A new native processing algorithm was added to export layout atlases as images.
 
 This is useful in models where remote datasets are processed with the goal of being used as atlas coverage layers.
 
-![image57](images/entries/e4f315e60743577c9f45ad44643fd5ba9778c040.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image57](images/entries/e4f315e60743577c9f45ad44643fd5ba9778c040.png)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -735,7 +735,7 @@ We added a **Cell statistics** raster analysis algorithm. It performs cell-wise 
 -   Range (max - min)
 -   Variety (count of unique values)
 
-![image49](images/entries/fca13f48b118ed13ebe84191a226ca0e20c37bfa.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image49](images/entries/fca13f48b118ed13ebe84191a226ca0e20c37bfa.png)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -743,7 +743,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 
 We have added some new raster algorithms that operate on a local cell-by-cell basis in a raster stack. The Equal to frequency algorithm evaluates on a cell-by-cell basis the frequency (number of times) the values of an input stack of rasters are equal to the value of a value raster.
 
-![image50](images/entries/e368e10cfa5e19992176930121e0cb846c3d1ca8.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image50](images/entries/e368e10cfa5e19992176930121e0cb846c3d1ca8.png)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -751,7 +751,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 
 We have added some new raster algorithms that operate on a local cell-by-cell basis in a raster stack. The Greater than frequency algorithm evaluates on a cell-by-cell basis the frequency (number of times) the values of an input stack of rasters are greater than the value of a value raster.
 
-![image51](images/entries/97228db861367c2875dab0533ab616bb2ac2432c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image51](images/entries/97228db861367c2875dab0533ab616bb2ac2432c.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -759,7 +759,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We have added some new raster algorithms that operate on a local cell-by-cell basis in a raster stack. The Less than frequency algorithm evaluates on a cell-by-cell basis the frequency (number of times) the values of an input stack of rasters are less than the value of a value raster.
 
-![image52](images/entries/114853cd3d7c245b56edea0024704c853997275c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image52](images/entries/114853cd3d7c245b56edea0024704c853997275c.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -767,7 +767,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We added some raster value position analysis tools with this new QGIS version: The *Lowest position in raster stack* algorithm evaluates on a cell-by-cell basis the position of the raster with the lowest value in a stack of rasters. Position counts start with 1 and range to the total number input rasters. The order of the input rasters is relevant for the algorithm.
 
-![image53](images/entries/f3383f5583c9096b1b8d1873679e1a495fac0485.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image53](images/entries/f3383f5583c9096b1b8d1873679e1a495fac0485.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -775,13 +775,13 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We added some raster value position analysis tools with this new QGIS version: The *Highest position in raster stack* algorithm evaluates on a cell-by-cell basis the position of the raster with the highest value in a stack of rasters. Position counts start with 1 and range to the total number input rasters. The order of the input rasters is relevant for the algorithm.
 
-![image54](images/entries/a730b8c1566c99bdebff09c783ae320b0c138d76.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image54](images/entries/a730b8c1566c99bdebff09c783ae320b0c138d76.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 ### Load processing results to layer group
 
-Users can now optionally set a group name which ensures that the resulting output layers added to the project when using the *Open output file after running algorithm* option are grouped together. This allows all outputs from several processing algorithms to be grouped so that they may be easily located in the layer tree and be removed, exported, or have their visibility toggled easily. ![image58](images/entries/414c68839518d5b658d6e6f1565f6c27e1f4336f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+Users can now optionally set a group name which ensures that the resulting output layers added to the project when using the *Open output file after running algorithm* option are grouped together. This allows all outputs from several processing algorithms to be grouped so that they may be easily located in the layer tree and be removed, exported, or have their visibility toggled easily. ![image58](images/entries/414c68839518d5b658d6e6f1565f6c27e1f4336f.gif)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
@@ -824,7 +824,7 @@ A *Vector Drivers* tab is now available within the QGIS GDAL Settings window, wh
 
 This functionality directly addresses the limitations outlined in [Issue 18738](https://github.com/qgis/QGIS/issues/18738).
 
-![image59](images/entries/5cc48d8ea8bc276446f8eae4a1c838e0d1f91a40.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image59](images/entries/5cc48d8ea8bc276446f8eae4a1c838e0d1f91a40.png)
 
 This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
 
@@ -834,7 +834,7 @@ MacOS previously had a platform-specific custom parameter setting Grass7Utils.GR
 
 This resolves [Issue 38595](https://github.com/qgis/QGIS/issues/38595).
 
-![image60](images/entries/e59bb83513293830df8ec4dcf825247b14dacc98.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image60](images/entries/e59bb83513293830df8ec4dcf825247b14dacc98.png)
 
 This feature was developed by [Lutra Consulting (Peter Petrik)](https://api.github.com/users/PeterPetrik)
 
@@ -858,7 +858,7 @@ The following operations are supported on fields:
 
 ![image61](images/entries/87223743-a4b7e700-c37f-11ea-88a3-4b371bfadf89.gif)
 
-![image62](images/entries/d4e761ad977a712aa1fc1fbc65d61c886e6e79fb.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image62](images/entries/d4e761ad977a712aa1fc1fbc65d61c886e6e79fb.png)
 
 This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
 
@@ -872,7 +872,7 @@ This change adds explicit UI options for adding and configuring connections to E
 
 After a user adds a layer from a VectorTileService, the server\'s default styling and labeling for the layer is automatically loaded.
 
-![image63](images/entries/e31c882fa9552ed6bd247f0092305ae8c153948a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image63](images/entries/e31c882fa9552ed6bd247f0092305ae8c153948a.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -904,7 +904,7 @@ New functionality has been introduced which allows advanced parameters to be spe
 
 ![image64](images/entries/e1c7474d19828b39f5872b289a1e8ba994556a10-1.png)
 
-![image65](images/entries/4a2d99c6ef6ec12e5f63a29ad00d9ebc3cd534e2.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image65](images/entries/4a2d99c6ef6ec12e5f63a29ad00d9ebc3cd534e2.png)
 
 This feature was developed by [Even Rouault](https://api.github.com/users/rouault)
 
@@ -920,7 +920,7 @@ This feature was developed by [Alessandro Pasotti](https://api.github.com/users/
 
 A Landing Page Plugin for QGIS Server was created, which is a C++ port of <https://github.com/elpaso/qgis-server-landing-page-plugin>
 
-![image66](images/entries/a2254bbef892835317a9f608afd8bd3722ee4b38.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image66](images/entries/a2254bbef892835317a9f608afd8bd3722ee4b38.gif)
 
 This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
 

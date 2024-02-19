@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.30 {#changelog330}
 
-![image1](images/projects/af9e5405a8329d7de8959238a3d499da780c1598.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/af9e5405a8329d7de8959238a3d499da780c1598.png)
 
 Release date: 2023-03-04
 
@@ -59,7 +59,7 @@ Raster layers now support MapTips, and new expression utility functions have bee
 -   `raster_attributes`: creates a map with the fields names as keys and the raster attribute table values as values from the attribute table entry that matches the given raster value
 -   a new \"Map Layer Position\" expression scope that defines a variable `@layer_cursor_point` with the layer coordinates (in the layer\'s CRS) under the mouse position
 
-![image3](images/entries/7cc33f0191d7461c103eef9eb792495d4b298dd6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/7cc33f0191d7461c103eef9eb792495d4b298dd6.png)
 
 This feature was funded by NOAA OCS Hydrography
 
@@ -73,7 +73,7 @@ This option behaves almost identically to the default identify option, with the 
 
 The default trigger is a 300-millisecond timer which will execute the identify action, which is implemented to avoid performance issues when moving the mouse.
 
-![image4](images/entries/36bfbae2b85c46b304ea84c05ce819fd69a66d38.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/36bfbae2b85c46b304ea84c05ce819fd69a66d38.gif)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -85,7 +85,7 @@ New constraint-based conditional styling and failing constraints feature filters
 
 This functionality provides filtering options to view or hide features that have failing (hard or soft) constraints, and introduces a new conditional styling type that works alongside the pre-existing row and field types to highlight features which fail to meet the layer constraints.
 
-![image5](images/entries/4ad89600c1e78bca863927f30581319b86afe6f1.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/4ad89600c1e78bca863927f30581319b86afe6f1.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -114,7 +114,7 @@ GPS functionality has now been split up into distinct parts:
 
 The GPS information widget class is now responsible ONLY for showing the GPS information in the panel, and new dedicated classes have been created for handling digitizing from GPS, the new GPS toolbar, and GPS settings accordingly.
 
-![image6](images/entries/206ae34a728a37cae967f60887b5a7f2bbd94c0f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/206ae34a728a37cae967f60887b5a7f2bbd94c0f.png)
 
 This feature was funded by NIWA
 
@@ -128,7 +128,7 @@ A new extension of the Styled Layer Descriptor (SLD) export API has been develop
 
 This development includes the export of complex polygon layer styles as external graphic symbols which are stored alongside the exported SLD.
 
-![image7](images/entries/cce332a4adc8cc7a24ead53acd8924431f1085f2.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/cce332a4adc8cc7a24ead53acd8924431f1085f2.png)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -154,7 +154,7 @@ Elevation shading settings are exposed to the user interface in the following co
 -   In project properties, in the same tab of the project elevation settings
 -   In the layer styling panel, a new tab has been created for defining global terrain shading settings
 
-![image8](images/entries/e75c69fb42f1916ceaf4b30f589154dc47881c6f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/e75c69fb42f1916ceaf4b30f589154dc47881c6f.png)
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
@@ -169,7 +169,7 @@ This allows for:
 -   `<sup>superscript</sup>` / `<sub>subscript</sub>` components in text, where the text will be vertically super or subscript aligned and automatically sized to 2/3rd of the parent font size. Users can also set a fixed font size for the super/subscript by including the relevant CSS rules in their HTML, e.g. `<sup style="font-size:33pt">super</sup>`
 -   `vertical-align: super` or `vertical-align: sub` CSS formatting rules in any other HTML element
 
-![image9](images/entries/24e510e32b919b373d09e5fe8536cfc0dfd0d66e.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/24e510e32b919b373d09e5fe8536cfc0dfd0d66e.png)
 
 This feature was funded by OSGEO UK
 
@@ -189,7 +189,7 @@ The manner in which rendered features are limited is dependent on the source dat
 
 Extent-based feature filtering on mesh layers is still currently in development.
 
-![image10](images/entries/a8135c9cfcaa91fdc540512f36cf276a2cdb4f02.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/a8135c9cfcaa91fdc540512f36cf276a2cdb4f02.png)
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
@@ -216,7 +216,7 @@ The shortcut manager, accessible from the settings menu of the primary QGIS inte
 
 A similar keyboard manager configuration dialog has now been added to the Print Layout interface for enhanced productivity.
 
-![image11](images/entries/ce065abd5dfe0a678e461a12e0efef92c5acaae3.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/ce065abd5dfe0a678e461a12e0efef92c5acaae3.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -238,7 +238,7 @@ A new `feature_id($feature)` expression function now allows for retrieving the f
 
 The function accepts one argument which must be a feature object. Accordingly, this function can be used with the results of any other function which returns feature objects, such as \"get_feature\", \"overlay\_\*\", etc.
 
-![image12](images/entries/6536913b10d68dded9a54bc58ba003b821b100f6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/6536913b10d68dded9a54bc58ba003b821b100f6.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -246,7 +246,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 New `is_feature_valid()` and `is_attribute_valid()` functions are provided in QGIS expressions. Both functions validate a feature or attribute, based on the constraints attached to fields for a given vector layer. This enables users to leverage the select-by-expression utility to locate features that have unmet constraints. In addition, users can now use the rule-based renderer to provide visual feedback through symbology indicating the constraint validity state of rendered features.
 
-![image13](images/entries/f6a73012edcc84033d40e91bc6216365fd4f5ae6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/f6a73012edcc84033d40e91bc6216365fd4f5ae6.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -312,7 +312,7 @@ Much of the functionality from the [Python RAT Plugin](https://github.com/noaa-o
 
 A gallery of these functionalities in action is [available on GitHub](https://github.com/qgis/QGIS/pull/50687)
 
-![image14](images/entries/4406611cee132d2bfae92d9ba01681464f333928.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/4406611cee132d2bfae92d9ba01681464f333928.gif)
 
 This feature was funded by NOAA OCS Hydrography
 
@@ -343,7 +343,7 @@ This change includes additional configuration options for external resources, wi
 
 This functionality includes the development of the `QgsMediaWidget` object into the QGIS API for extended multimedia support.
 
-![image15](images/entries/75fcba5750d9ce4bb1b7ad41089dd39fd11ae827.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/75fcba5750d9ce4bb1b7ad41089dd39fd11ae827.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -351,7 +351,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 The \"Editable\" checkbox status can now be controlled through an expression, the expression supports the \"form\" context, meaning that it can use `current_value( '<field_name>' )` to dynamically change the editable status according to changes to other fields in the form.
 
-![image16](images/entries/ce2bc7938c4c5f28d3f0d872e9045c856ef79ef1.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/ce2bc7938c4c5f28d3f0d872e9045c856ef79ef1.gif)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -365,7 +365,7 @@ The widget renders as a blank space in the form, which creates a manual separati
 
 When the \"Draw line\" option is set in the configuration it will fill the vacant space with a line in a manner similar to the horizontal rule, or `<hr>` tag in html.
 
-![image17](images/entries/72c262227fb339abd30833edc712ead25d943044.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/72c262227fb339abd30833edc712ead25d943044.png)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -377,7 +377,7 @@ Text widgets now support dynamic configuration based on the values of fields pre
 
 Using the `current_value(  '<field_name>' )` expression will evaluate and update the form when the form field value changes.
 
-![image18](images/entries/6de3cc5d5a6d002fd014717e57f251ec9b0147d9.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/6de3cc5d5a6d002fd014717e57f251ec9b0147d9.gif)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -389,7 +389,7 @@ HTML widgets now support dynamic configuration based on the values of fields pre
 
 Using the `current_value(  '<field_name>' )` expression will evaluate and update the form when the form field value changes.
 
-![image19](images/entries/f04157ac77cf00862595f8b75707c8126e121ce4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/f04157ac77cf00862595f8b75707c8126e121ce4.gif)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -399,7 +399,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 The Value Relation widget previously ignored \"Use completer\" option when \"Allow multiple selections\" was enabled. Now these two options work together and there is a search box present at the top of the table, allowing filtering of values. When \"Use completer\" option is not enabled, the search box is not shown as before.
 
-![image20](images/entries/3ec355e558ca705d17be8f21c79c613d1022630a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/3ec355e558ca705d17be8f21c79c613d1022630a.gif)
 
 This feature was funded by [QGIS Norway](http://www.qgis.no/)
 
@@ -422,7 +422,7 @@ The optimal index will attempt to intelligently order layers by type (e.g. point
 
 In addition, drag and drop added layers will be added to the layer index tree at the location of the cursor when released to ensure the layer is rendered in a predictable and intuitive manner.
 
-![image21](images/entries/a2f44bdf5df6e8b33dc71c975cbb9c01cfa4845c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/a2f44bdf5df6e8b33dc71c975cbb9c01cfa4845c.png)
 
 This feature was funded by [Funded by the QGIS user group Switzerland](https://www.qgis.ch/)
 
@@ -438,7 +438,7 @@ Three new optional advanced parameters have been exposed for the XYZ Tile genera
 -   Leaflet HTML output attribution
 -   Include OpenStreetMap basemap in Leaflet HTML output
 
-![image22](images/entries/a96f4972c9664c8887220b0a218103c053050e71.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/a96f4972c9664c8887220b0a218103c053050e71.png)
 
 This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
 
@@ -510,7 +510,7 @@ Additional enhancements include:
 -   The GPS toolbar actions now more intelligently follow the state of the project, GPS, and current GPS track, so that actions are only enabled when they make sense
 -   UI improvements and better tooltips
 
-![image23](images/entries/9563911d7eeb4412cd32f237969579aa1ed6aa90.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/9563911d7eeb4412cd32f237969579aa1ed6aa90.gif)
 
 This feature was funded by NIWA
 
@@ -522,7 +522,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new elevation profile canvas item is available for [QGIS Quick](https://api.qgis.org/api/qgsquick.html), allowing the elevation profile tools to be used in other cross platform and mobile QGIS applications.
 
-![image24](images/entries/f870a9112a3577742c6f8c6a98b142b23145d525.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/f870a9112a3577742c6f8c6a98b142b23145d525.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -538,7 +538,7 @@ The elevation profile has wide configuration options - you can specify:
 -   chart area borders and colors
 -   distance and elevation axes properties - intervals of labels, grid lines appearance, fonts and more
 
-![image25](images/entries/ca6f01c1c76d7cff23ff8d27492734c74b8c3973.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/ca6f01c1c76d7cff23ff8d27492734c74b8c3973.png)
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
@@ -552,7 +552,7 @@ This functionality allows for the creation of new embedded relationship definiti
 
 Deleting and modification of existing relationships is also supported, however the available functionality may depend on the constraints of the actual database format.
 
-![image26](images/entries/2e902df01faff7f71bdfe3854c5b1a38e013e8d8.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image26](images/entries/2e902df01faff7f71bdfe3854c5b1a38e013e8d8.gif)
 
 This feature was funded by Provincie Zuid-Holland
 
@@ -574,7 +574,7 @@ Users may now directly add an XYZ tile layer in the data source manager, without
 
 This permits users to easily add ad-hoc XYZ layers to their map without polluting their lists of saved connections.
 
-![image27](images/entries/1e5a07f058db3b16265d94f6e535ac7c79664bcd.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/1e5a07f058db3b16265d94f6e535ac7c79664bcd.gif)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -604,7 +604,7 @@ A new combo box has been added in the new WMS and WMTS server dialog for configu
 
 Note that enabling smooth pixmap transform is recommended when automatic upscaling is active
 
-![image28](images/entries/a921de87af46b4774b94bd632e704527f840ea55.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/a921de87af46b4774b94bd632e704527f840ea55.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -624,7 +624,7 @@ When such a layer is added to the project, a \"Select Items to Add\" dialog box 
 
 This enables the user to select one or several layers among ones of `NoGeometry`, `MultiPoint`, `MultiCurve`, `MultiSurface`, `GeometryCollection` types.
 
-![image32](images/entries/2068734219e240ca90b22435ca1381f3c8e4b9ef.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/2068734219e240ca90b22435ca1381f3c8e4b9ef.png)
 
 This feature was funded by [QGIS-DE user group](https://qgis.de)
 
@@ -664,7 +664,7 @@ The topology checker rules dialog now features check boxes which are attached to
 
 The topology checker panel also has a a new combo box below its toolbar to allow for quick filtering of errors to allow users to focus on a specific error type, although it will continue to display all error types by default.
 
-![image29](images/entries/52e54d9f31a12f024d3c452ecbc77fb3278c18e4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/52e54d9f31a12f024d3c452ecbc77fb3278c18e4.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -697,7 +697,7 @@ With the exception of the backtick and asterisk characters, the autoCloseBracket
 
 The autocompletion configuration is enabled by default for new releases, but a new settings interface is provided for granular control by users.
 
-![image30](images/entries/2ed531d2789b12d258d1503c8fb74e396f06e63d.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/2ed531d2789b12d258d1503c8fb74e396f06e63d.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -711,7 +711,7 @@ The default shortcut for this action is set to `Ctrl+:`
 
 The toggle comment action is also available in **Project Macro** and **Expression Editors**, however this is only available using the `Ctrl+:` shortcut and does not include the action button on the UI.
 
-![image31](images/entries/fb255d60095471377459f1c6907df83e6f54bea4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/fb255d60095471377459f1c6907df83e6f54bea4.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 

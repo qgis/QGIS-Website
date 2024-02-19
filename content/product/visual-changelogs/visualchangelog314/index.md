@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.14 {#changelog314}
 
-![image1](images/splash.jpeg){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/splash.jpeg)
 
 Release date: 2020-06-19
 
@@ -36,7 +36,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 Annotations for the map canvas\' grid decoration are now fully customizable including font color, buffer, etc.
 
-![image8](images/entries/14b7cf800ef293ac3ea3f00d12a30022876e713c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/14b7cf800ef293ac3ea3f00d12a30022876e713c.png)
 
 This feature was funded by iMHere Asia
 
@@ -50,7 +50,7 @@ Adds a setting in the temporal controller to set the animation temporal range to
 
 This is useful is you wish to accumulate data in your temporal visualisation instead of showing a \'moving time window\' across your data.
 
-![image2](images/entries/90da13821bfde46aa6d9d951fb9a31bf27d85656.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image2](images/entries/90da13821bfde46aa6d9d951fb9a31bf27d85656.gif)
 
 This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
 
@@ -89,7 +89,7 @@ Added temporal capabilities integration for Postgres rasters.
 
 ![image3](images/entries/78421839-37e3d100-765b-11ea-83e5-e7e3e519155e.png)
 
-![image4](images/entries/a8347da9570ae597bc17e23236e4eb4d57efb1d1.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/a8347da9570ae597bc17e23236e4eb4d57efb1d1.gif)
 
 This feature was funded by ARPA Piemonte
 
@@ -121,7 +121,7 @@ Below is an example of the workflow. ![image6](images/entries/74638436-ee0f5c00-
 
 **Note:** *For instant point in time requests, specifying a range with equal begin and end DateTime will result into using the specified DateTime instant and not a range.*
 
-![image7](images/entries/b86eea9111e33e6aea345b0e0759de48eaceade9.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/b86eea9111e33e6aea345b0e0759de48eaceade9.gif)
 
 This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
 
@@ -221,7 +221,7 @@ This feature was developed by [beketata](https://api.github.com/users/beketata)
 
 Data-defined properties were added for the font markers\' font family and the brand new font style properties. This can come in handy for a number of scenarios, including multilingual context where a data-defined property can avoid duplicating datasets.
 
-![image19](images/entries/1ded1a8bbec9eeebafad96b7616e963847961e14.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/1ded1a8bbec9eeebafad96b7616e963847961e14.png)
 
 This feature was funded by iMHere Asia
 
@@ -231,7 +231,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 
 With this brand new font style setting, users can pick non-default style of font families previously not available.
 
-![image20](images/entries/e387c3745d49a36116908dffc1126befae7d1b1f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/e387c3745d49a36116908dffc1126befae7d1b1f.png)
 
 This feature was funded by iMHere Asia
 
@@ -368,7 +368,7 @@ The method returns the position of the snapped point on the closest mesh element
 
 The returned position is in map coordinates.
 
-![image32](images/entries/f11b278c71fecee8445ff29077bfddef543b564d.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/f11b278c71fecee8445ff29077bfddef543b564d.gif)
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
@@ -558,7 +558,7 @@ This feature adds a collapsible section to the layout map item widget that allow
 
 The start and end datetime value can be data-defined, which comes in handy when used alongside atlas features.
 
-![image50](images/entries/265d07738c1cec8a398ce5503330a520f98d4526.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image50](images/entries/265d07738c1cec8a398ce5503330a520f98d4526.gif)
 
 This feature was funded by iMHere Asia
 
@@ -699,7 +699,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 A new import content from clipboard feature has been added to QGIS\' table editor to enable quicker layout fixed table item editing and creation.
 
-![image60](images/entries/e7f2b64e48b0726bc03e2d4fa9424feabde1808d.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image60](images/entries/e7f2b64e48b0726bc03e2d4fa9424feabde1808d.gif)
 
 This feature was funded by iMHere Asia
 
@@ -851,7 +851,7 @@ Avoid intersections/overlaps on user-defined layers list.
 
 The third mode\'s layers list is setup by the user via the advanced snapping configuration widgets.
 
-![image66](images/entries/caa646295d6f1cf6297864810637e9f8ceddc102.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image66](images/entries/caa646295d6f1cf6297864810637e9f8ceddc102.png)
 
 This feature was funded by [OpenGIS.ch](http://www.opengis.ch/)
 
@@ -1063,7 +1063,7 @@ With this feature we added a large collection of random number raster generation
 6.  Create random raster layer (poisson distribution)
 7.  Create random raster layer (uniform distribution)
 
-![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.png)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1137,7 +1137,7 @@ With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Cre
 -   Float32
 -   Float64
 
-![image93](images/entries/b7b0b73f7d48104cb49f33ed2d453a70d188cbd6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image93](images/entries/b7b0b73f7d48104cb49f33ed2d453a70d188cbd6.png)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1149,7 +1149,7 @@ The main functionality of the algorithm is either standard up/nearest/down-round
 
 The example shows an output raster rounded to multiples of 10
 
-![image94](images/entries/650983141141fc954abc96f79e5255e4634c5051.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image94](images/entries/650983141141fc954abc96f79e5255e4634c5051.png)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1372,7 +1372,7 @@ In the new QGIS version we introduce a new processing algorithm for filling NoDa
 
 The algorithm scans an input raster dataset for NoData cells and fills them with the user defined fill value. Doing so, the algorithm respects the data type of the input raster so that e.g. floating point numbers will be dealt with appropriately for an integer raster. The resulting dataset will not contain any NoData cells.
 
-![image105](images/entries/6cbf249116a09b4d342729da1e09060b9f0ec52f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image105](images/entries/6cbf249116a09b4d342729da1e09060b9f0ec52f.png)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1404,7 +1404,7 @@ We added a new algorithm to convert segmentized geometries to curved geometries.
 
 The algorithm considers successive points to represent a curve if they are evenly spaced and within a tolerance.
 
-![image107](images/entries/c747d86081f3862d9d4bbb2ab067103daceab724.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image107](images/entries/c747d86081f3862d9d4bbb2ab067103daceab724.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 

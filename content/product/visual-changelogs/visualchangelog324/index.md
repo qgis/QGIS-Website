@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.24 {#changelog324}
 
-![image1](images/projects/dce49bc182a307d8b4d60cfa0ba8caede109cf69.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/dce49bc182a307d8b4d60cfa0ba8caede109cf69.png)
 
 Release date: 2022-02-18
 
@@ -38,7 +38,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 This is a handy time-saver! The extent widget in QGIS now allows you to directly retrieve and match the extent of maps from bookmarks and layouts in your project.
 
-![image3](images/entries/2dc42086879501e4645c8f6b7bbaba0f90fa4164.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/2dc42086879501e4645c8f6b7bbaba0f90fa4164.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -48,7 +48,7 @@ We\'ve added a new option when selecting a Coordinate Reference System (CRS) whi
 
 It\'s much friendlier when you just want to define a custom projection for a single-purpose use, e.g. an overview map with a projection designed for a particular latitude and longitude location.
 
-![image4](images/entries/c0053c5fd55a77bc13f8e92bbf9d27ecd57535e4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/c0053c5fd55a77bc13f8e92bbf9d27ecd57535e4.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -62,7 +62,7 @@ Additionally, when the *offset along line* setting for a marker or hash line sym
 
 Lastly, we also made it possible to specify a negative *offset along line* for a closed ring. Negative offsets are calculated backwards along the ring.
 
-![image5](images/entries/78402d91402744c434c0501a4fa078b686f31251.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/78402d91402744c434c0501a4fa078b686f31251.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -72,7 +72,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 This new symbology option for the Marker and Hash line symbol types allows you to control whether the First and Last Vertex placement options should apply to every part of a multi-part line (or polygon) individually, or only the very first and last vertex in the whole multi-part geometry.
 
-![image6](images/entries/49ea4f5c6e67426b41fefcdcb38cb3625e03bd34.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/49ea4f5c6e67426b41fefcdcb38cb3625e03bd34.gif)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -86,7 +86,7 @@ Previously, the old \"Vertex\" mode put symbols on the first and last vertex as 
 
 (This change is paired nicely with the switch to using checkboxes for the placement options \-- to get a marker to show on all vertices, just make sure the first, last and inner vertices options are checked).
 
-![image7](images/entries/4eaf67cc6d084f5f22f2dea6bdac9b62ab0ae25a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/4eaf67cc6d084f5f22f2dea6bdac9b62ab0ae25a.png)
 
 This feature was funded by North Road, thanks to SLYR
 
@@ -116,7 +116,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 We\'ve added a new slider to control the size of thumbnails shown in the style manager dialog, because sometimes these thumbnail sizes are just too small to get a good representation of a symbol!
 
-![image8](images/entries/48ee80e3b2307562c724664ce3d59fa8ac7cf477.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/48ee80e3b2307562c724664ce3d59fa8ac7cf477.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -126,7 +126,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 We\'ve added a brand new \"Lineburst\" symbol layer type, which renders a gradient along the **width** of a line (as opposed to the Interpolated Line renderer, which renders a gradient along the **length** of a line). It\'s just like the Shapeburst fill symbol type, but for lines!
 
-![image9](images/entries/e205aa8113a089b9911726a45b0c198e79af0b6b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/e205aa8113a089b9911726a45b0c198e79af0b6b.png)
 
 This feature was funded by [North Road, thanks to SLYR!](https://north-road.com)
 
@@ -143,7 +143,7 @@ Options are available to control:
 -   opacity
 -   line join and cap styles
 
-![image10](images/entries/fa66229ff4db5e654b673579cde7d58dff4cc85d.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/fa66229ff4db5e654b673579cde7d58dff4cc85d.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -157,7 +157,7 @@ You can now control how lines in a line pattern fill symbol are clipped to polyg
 -   **Clip Lines Before Render**: lines are clipped to the *exact shape* of the polygon prior to rendering. The line extremities (including cap styles, start/end marker line symbols, etc) will be visible, and may sometimes extend outside of the polygon (depending on the line symbol settings).
 -   **No Clipping**: no clipping at all is done - the lines will cover the whole bounding box of the feature
 
-![image11](images/entries/d6195c4a0b58fd7a1f076e7d74dc82d85f453fcc.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/d6195c4a0b58fd7a1f076e7d74dc82d85f453fcc.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -180,7 +180,7 @@ And even more excitingly, it opens the door for a range of new symbol styles, fo
 -   line patterns with marker line symbols on center point/etc
 -   geometry generator effects per line, e.g. wavy line patterns, hand drawn line styles, etc
 
-![image12](images/entries/ddab2e2d054c9535c86e7a94c2045e9ffa2b0b48.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/ddab2e2d054c9535c86e7a94c2045e9ffa2b0b48.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -190,7 +190,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Now you can specify an optional rotation angle for point pattern fills, which causes the entire point pattern to be angled. This can be extremely useful when overlaying multiple point pattern fills!
 
-![image13](images/entries/f43cb7d8a69d6765a0873888cbe6cc7f17bb8c51.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/f43cb7d8a69d6765a0873888cbe6cc7f17bb8c51.gif)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -204,7 +204,7 @@ You can set an optional random number seed to avoid the symbol patterns \"jumpin
 
 The main difference between this new setting and the existing *random marker fill* symbol type is that the random offset with a point pattern allows for quasi-\"regular\" placement of markers \-- because the points in the pattern are effectively constrained to a grid, this allows creation of semi-random fills which don\'t have empty areas or overlapping markers. (As opposed to the random marker fill, which will always place points completely randomly\... sometimes resulting in visual clusters of points or unwanted empty areas).
 
-![image14](images/entries/1ccd4651fd333335c687c1195322df4b49f59b6f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/1ccd4651fd333335c687c1195322df4b49f59b6f.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -216,7 +216,7 @@ Line pattern and point pattern fill symbol layers have a new coordinate referenc
 
 ![relief](https://changelog.qgis.orgimages/entries/e36d0e51676a76cf1655adc1453fd2a2e8a449b6.gif)
 
-![image16](images/entries/afd8b9d9b32f494472a3787323764d9266f6f6ff.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/afd8b9d9b32f494472a3787323764d9266f6f6ff.gif)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -229,7 +229,7 @@ This new option gives you control over how markers are clipped in a point patter
 -   **Marker Completely Within Shape**: markers will only be drawn if they fit completely within the shape
 -   **No clipping**: whole marker symbols will be drawn if **any** part of the marker falls within the shape
 
-![image17](images/entries/4fcff106088f49e8828b8dfcbaa0867c7735aa71.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/4fcff106088f49e8828b8dfcbaa0867c7735aa71.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -247,7 +247,7 @@ In addition, expressions functions have also been added for creating waves in a 
 
 When used with geometry generators, these expressions can be used for some very advanced cartographic effects!
 
-![image18](images/entries/fc0f7dd38a16926620e0d1d62cce022b9d2618e5.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/fc0f7dd38a16926620e0d1d62cce022b9d2618e5.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -259,7 +259,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 We now allow the sizes for text buffer, shadow offset and shadow blur radius to be set as a percentage of the font size. This is desirable as it allows the creation of text formats where the components nicely scale as the text size is changed, instead of having fixed buffer/shadow sizes that need to be independently adjusted when the text size changes.
 
-![image19](images/entries/4e05a38133304694f05b0c70e73750436581f3ef.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/4e05a38133304694f05b0c70e73750436581f3ef.gif)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -271,7 +271,7 @@ You can now set the data defined placement of labels to be bound to a point geom
 
 This change also allow you to use the *Move Label* tool to change the position of a label which is bound to a point geometry field, causing the new label position to be stored as a point geometry in that attribute.
 
-![image20](images/entries/0d4347d53e5b2383aab0b5207dcc9dd6317faf3f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/0d4347d53e5b2383aab0b5207dcc9dd6317faf3f.png)
 
 This feature was funded by Swiss QGIS user group
 
@@ -299,7 +299,7 @@ This option is available within the layer styling dock whenever a group layer is
 
 Additionally, when a layer is contained in a group which has the new *Render as Group* option activated, new blending modes will be available which perform \"clipping\" style operations during the render. These allow you to achieve some very powerful results, such as clipping the render of one layer\'s content by the content in a second \"mask\" layer!
 
-![image21](images/entries/aa14990a802d70d0302c5441ea955248bc1dd40d.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/aa14990a802d70d0302c5441ea955248bc1dd40d.png)
 
 This feature was funded by Andrew Fletcher.
 
@@ -309,7 +309,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Making use of the brand new raster line symbol layer, QGIS 3.24 now properly renders Mapbox GL line pattern styling for newly-added vector tile layers.
 
-![image22](images/entries/8a1550b27e8d8252b4b79267b0cef1c72ff10659.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/8a1550b27e8d8252b4b79267b0cef1c72ff10659.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -317,7 +317,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 We now correctly render any predefined background styling present in Mapbox GL-styled vector tile layers. This dramatically improves the appearance of vector tile layers with dark styles!
 
-![image23](images/entries/38d362b08812fcb3d9129f2f8881d3bf02e77703.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/38d362b08812fcb3d9129f2f8881d3bf02e77703.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -327,7 +327,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 We\'ve added an option to render point clouds according to their Z-order in 2D map views. With the new *bottom-to-top* ordering option enabled, points with larger Z values will cover lower points \-- resulting in the appearance of a true orthographic photo. There\'s also an option for reverse sorting (*top-to-bottom*), where the scene appears as if viewed from below.
 
-![image24](images/entries/7edd9bfb77f56b17d2c74c43a8ca1a8ab7456298.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/7edd9bfb77f56b17d2c74c43a8ca1a8ab7456298.png)
 
 This feature was funded by [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
 
@@ -337,7 +337,7 @@ This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.l
 
 We\'ve been aware that using dock widgets for 3D maps can be inconvenient, and in many situations these are frustrating to resize and move as they are prone to re-dock as you adjust their sizes! With QGIS 3.24 we added the ability to switch 3D maps from a dockable widget to a top-level window (and back to a dock widget), so that these map views can now be managed, resized and moved just like a standard application window.
 
-![image25](images/entries/0ee88178c41fb6f57e0cc9ebe92256c58cfd9f55.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/0ee88178c41fb6f57e0cc9ebe92256c58cfd9f55.gif)
 
 This feature was funded by [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
 
@@ -349,7 +349,7 @@ Previously, if you closed a 3D map view and then saved your project, the 3D map 
 
 We\'ve also added a new \"*3D Map Views*\" menu, which contains all your created 3D map views for easy access!
 
-![image26](images/entries/4a38d45cc87a5068e3729f2d0091067178975164.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image26](images/entries/4a38d45cc87a5068e3729f2d0091067178975164.png)
 
 This feature was funded by [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
 
@@ -371,7 +371,7 @@ This feature was developed by [Nedjima Belgacem (Lutra Consulting)](https://www.
 
 In older QGIS releases you had to revert to hacky tricks like using HTML and CSS to add effects like drop shadows to text in your map layouts. Hack no more! In 3.24 we now allow you to use the familiar properties from the labeling text options for text on layouts too! This means you can now add shadows, text buffers, backgrounds, letter and word spacing, etc. all on the text items in your layouts.
 
-![image27](images/entries/42e4f30b9e1adc647a7b7ef774186d8b90374a9f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/42e4f30b9e1adc647a7b7ef774186d8b90374a9f.gif)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -383,7 +383,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 The new `geometry_type` function returns the high-level type of a geometry (i.e. \'Point\', \'Line\' or \'Polygon\').
 
-![image28](images/entries/503ad2cbcbf9b3ac0b46a624fe4d501dbf2db89d.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/503ad2cbcbf9b3ac0b46a624fe4d501dbf2db89d.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -396,7 +396,7 @@ We have added further enhancements to the `overlay_intersects` function. The cha
 -   **return_details**: only valid when used with an expression, set this to true to return a list of maps containing (key names in quotes) the feature \'id\', the expression \'result\' and the \'overlap\' value, the \'radius\' of the maximum inscribed circle is also returned when the target layer is a polygon.
 -   **sort_by_intersection_size**: only valid when used with an expression, set this to true to return the results ordered by the overlap value in descending order.
 
-![image29](images/entries/74ef8569e9142ace7235302fd562a6729821ee7e.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/74ef8569e9142ace7235302fd562a6729821ee7e.png)
 
 This feature was funded by [Kanton Solothurn, Amt für Geoinformation](https://geo.so.ch/)
 
@@ -406,7 +406,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 As a handy time-saver, we now make a list of all field names from all layers in your project available directly in the expression builder. If you double-click any of these field names, they\'ll be added to your expression as string values (`'field_name'`).
 
-![image30](images/entries/e08ee30c934aa44f05b3037531e9502fd0d1feee.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/e08ee30c934aa44f05b3037531e9502fd0d1feee.png)
 
 This feature was funded by ARPA Piemonte
 
@@ -422,7 +422,7 @@ The function can be used with zero, one, or more arguments:
 -   If called with a \'feature\' parameter only, the function will return the representation of the attributes of the specified feature from the current layer.
 -   If called with a \'layer\' and a \'feature\' parameter, the function will return the representation of the attributes of the specified feature from the specified layer.
 
-![image31](images/entries/2d81dc010346379fa47fb7f2e301f41d0b7f42fb.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/2d81dc010346379fa47fb7f2e301f41d0b7f42fb.png)
 
 This feature was funded by Kanton Solothurn
 
@@ -435,7 +435,7 @@ We have added two optional arguments to the `overlay_intersection()` expression 
 -   `min_overlap`: for polygons an optional minimum area in current feature squared units for the intersection (if the intersection results in multiple polygons the intersection will be returned if at least one of the polygons has an area greater or equal to the value), for lines an optional minimum length in current feature units (if the intersection results in multiple lines the intersection will be returned if at least one of the lines has a length greater or equal to the value)
 -   `min_inscribed_circle_radius`: for polygons only an optional minimum radius in current feature units for the maximum inscribed circle of the intersection (if the intersection results in multiple polygons the intersection will be returned if at least one of the polygons has a radius for the maximum inscribed circle greater or equal to the value). Read more on the underlying GEOS predicate, as described in PostGIS ST_MaximumInscribedCircle function.
 
-![image32](images/entries/c94c8c8c3879b90c6c0a602d8d932c505a9a6868.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/c94c8c8c3879b90c6c0a602d8d932c505a9a6868.png)
 
 This feature was funded by Kanton Solothurn
 
@@ -449,7 +449,7 @@ Example: `map_prefix_keys(map('1','one','2','two'), 'prefix-')`
 
 returns: `{ 'prefix-1': 'one', 'prefix-2': 'two' }`
 
-![image33](images/entries/f8f2becdcaaa40fb07b3bb875928b3edcbdedcfc.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image33](images/entries/f8f2becdcaaa40fb07b3bb875928b3edcbdedcfc.png)
 
 This feature was funded by Kanton Solothurn
 
@@ -467,7 +467,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 The new \"per_part\" option for the \"rotate\" expression function allows you to rotate each part of a multi-part geometry around the center of each part (instead of the center of the geometry as a whole). This enhancement is designed to help out symbology when the rotate function is used as a cartographic tool as part of a geometry generator symbol layer.
 
-![image34](images/entries/c70899168f010b55fedad4b28e90aab687158a80.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/c70899168f010b55fedad4b28e90aab687158a80.gif)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -481,7 +481,7 @@ Rules can be set to control how the dash pattern is adjusted at line endings. If
 
 You can also set an optional pattern offset to specify how far along the pattern the result should start at.
 
-![image35](images/entries/ba54e83091593860e9e61425565b085ad082f5ff.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image35](images/entries/ba54e83091593860e9e61425565b085ad082f5ff.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -491,7 +491,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 This new expression function allows you to scale (resize) a geometry. Just like the \'rotate\' function, the function accepts an optional point position to apply the scaling from. If no anchor point is not specified then scaling is done from the center of the geometry\'s bounding box.
 
-![image36](images/entries/6dd5dd5783c501d294a289cfbdabf9ce58b4c481.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image36](images/entries/6dd5dd5783c501d294a289cfbdabf9ce58b4c481.png)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -509,7 +509,7 @@ This feature was developed by [Alex](https://github.com/roya0045)
 
 We\'ve added a new multi edit mode for the relation editor, which allows the rapid addition of child features to multiple parent features. This improves efficiency for data management operations, such as the ability to select multiple trees and adding a maintenance item to all of them in one click.
 
-![image37](images/entries/c610c679ea1906d12ca9d4893e60796fd8a3ecab.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image37](images/entries/c610c679ea1906d12ca9d4893e60796fd8a3ecab.gif)
 
 This feature was funded by [QGIS Model Baker](https://opengisch.github.io/QgisModelBaker)
 
@@ -525,7 +525,7 @@ The OGC API - Records standard is currently in development and the current timel
 
 Adding this feature to QGIS is a huge win for easier search and will help both users and providers for the long term.
 
-![image38](images/entries/5422b5fd0f6fce0bff486b0268a425f7498b1efc.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image38](images/entries/5422b5fd0f6fce0bff486b0268a425f7498b1efc.png)
 
 This feature was developed by [Tom Kralidis](https://github.com/tomkralidis)
 
@@ -546,7 +546,7 @@ A new function `url_encode(<map>)` is provided to convert a dictionary (a map) t
 
 The response from the submitted URL is opened by delegating to the operating system `QDesktopServices::openUrl()` after the payload has been stored in a temporary file.
 
-![image39](images/entries/7d4d7ec8aa1eb9c16be7e2e8dad3af8c6fc900a1.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image39](images/entries/7d4d7ec8aa1eb9c16be7e2e8dad3af8c6fc900a1.png)
 
 This feature was funded by Kanton Solothurn
 
@@ -556,7 +556,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 We\'ve added a new button to the attribute form (when in search mode) which enables you to open an attribute table filtered to only show the matching features.
 
-![image40](images/entries/1dfb86fa1bec6a73056c703ae49504cc2b61fb7a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image40](images/entries/1dfb86fa1bec6a73056c703ae49504cc2b61fb7a.gif)
 
 This feature was funded by ARPA Piemonte
 
@@ -570,7 +570,7 @@ We added a \"roundness\" method to `QgsCurvePolygon`, allowing the calculation o
 
 This includes the addition of a new expression and a processing tool for calculating roundness. The processing tool creates a new layer with the roundness of each feature in a new field.
 
-![image41](images/entries/0ebc31c2437a3f5595257edd778d3f2fcbca9486.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image41](images/entries/0ebc31c2437a3f5595257edd778d3f2fcbca9486.png)
 
 This feature was developed by [Antoine Facchini](https://github.com/Koyaani)
 
@@ -586,7 +586,7 @@ The algorithm also generates a default symbol-less & labelled style for the outp
 
 If a map theme is specified when extracting labels, the exported labels will match the visibility and symbology of that theme. If left blank, the project\'s current visible layers will be used.
 
-![image42](images/entries/b2149ac307c233bac0cfcb25166a573c8d55d200.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image42](images/entries/b2149ac307c233bac0cfcb25166a573c8d55d200.png)
 
 This feature was funded by [TEKSI](https://www.teksi.ch/)
 
@@ -596,7 +596,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 When running against GDAL 3.3 or newer, QGIS processing toolbox\'s GDAL Raster Calculator algorithm now allows you to specify an optional \"output extent\" parameter. This can be quite useful when working with large datasets, often avoiding the need to create an intermediary clipped raster prior to running the calculator algorithm.
 
-![image43](images/entries/7ebbfa145decc6a81678410d53e4d96709d6b2c7.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image43](images/entries/7ebbfa145decc6a81678410d53e4d96709d6b2c7.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -604,7 +604,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 We added an optional extent parameter to the GDAL \"clip raster by mask\" algorithm, which can come in handy when working with large raster datasets.
 
-![image44](images/entries/08731bc9d93110cb048f5ac8c9256c9b7556694d.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image44](images/entries/08731bc9d93110cb048f5ac8c9256c9b7556694d.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -621,7 +621,7 @@ We\'ll be using this framework in future to further extend the Processing histor
 -   Right clicking an entry in the log has a new option to copy the execution parameters as a \"qgis_process\" command line equivalent, giving you a super-easy way to generate qgis_process commands for execution in a CLI.
 -   Right clicking an entry also shows a new \"Copy as JSON\" option, which copies a JSON string of the input parameters and algorithm settings
 
-![image45](images/entries/d20797cd802b8ecea77a8e1e1d96bf5fcc075f86.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image45](images/entries/d20797cd802b8ecea77a8e1e1d96bf5fcc075f86.png)
 
 This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
@@ -636,7 +636,7 @@ We have added new actions on the processing dialog including **copy as qgis_proc
 -   Provide a way for you to copy the settings defined in the dialog in a text format, so that you can store these easily and then restore them later by pasting the values.
 -   Provides an easy way for you to copy the settings into the JSON format consumed by qgis_process, so that it is easy to see the expected format even for complex parameters (like TIN interpolation parameters).
 
-![image46](images/entries/d372e3463624cffbf522dd16d72d17570a7c511b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image46](images/entries/d372e3463624cffbf522dd16d72d17570a7c511b.png)
 
 This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
@@ -646,7 +646,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 You can now export an atlas layout to a single (collated) PDF file using the \"Export atlas layout as PDF\" processing algorithm.
 
-![image47](images/entries/ced24ad63c3ff2bf6d47b975a965e6a0b9b28466.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image47](images/entries/ced24ad63c3ff2bf6d47b975a965e6a0b9b28466.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -654,7 +654,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 We added a new submenu to the \"Project\" menu, which will list any Processing models stored within the current project. This gives you a quick way to launch these project-specific models, in either a single or batch mode!
 
-![image48](images/entries/46c8c42ecd96ab046c3e8fcf944607621f43b2f8.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image48](images/entries/46c8c42ecd96ab046c3e8fcf944607621f43b2f8.png)
 
 This feature was funded by Kanton Solothurn
 
@@ -706,7 +706,7 @@ The use case for this is that sometimes users have automation or other post-star
 
 This feature was suggested by Giuseppe Baiamonte during, and live coded on, the QGIS Open Day, 17 Dec 2021.
 
-![image49](images/entries/3b60790eb1b2f970940e9280d3eccee6a6f2b8f9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image49](images/entries/3b60790eb1b2f970940e9280d3eccee6a6f2b8f9.png)
 
 This feature was developed by [Tim Sutton](https://github.com/timlinux)
 
@@ -760,7 +760,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Server errors which occur during XYZ, vector tile or WMS network requests are now shown directly in the QGIS window via the message bar. We\'ve made these error messages much more descriptive and helpful, by including the original response error text wherever possible!
 
-![image50](images/entries/006a532d89422cfe5ddb6638ae635384e4f8b8f2.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image50](images/entries/006a532d89422cfe5ddb6638ae635384e4f8b8f2.gif)
 
 This feature was funded by [MapTiler](https://www.maptiler.com/)
 
@@ -770,7 +770,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lu
 
 QGIS now sports built-in support for the Terrarium DEM format for WMS/XYZ layers. In addition, we now have out-of-the-box ability to add Mapzen Global Terrain Tiles hosted on AWS. You can find the new MapZen option in the XYZ section of the browser panel. Users now have an immediately accessible global DEM source for their projects!! See also <https://registry.opendata.aws/terrain-tiles/>
 
-![image51](images/entries/68cfde8b146eb42d4e75fd089adb2fbe8e7e5012.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image51](images/entries/68cfde8b146eb42d4e75fd089adb2fbe8e7e5012.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -778,7 +778,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 We\'ve added a new authentication method specific for MapTiler which allows you to use a token encrypted with HMAC-SHA256.
 
-![image52](images/entries/3f4f8ef8eef605c25bf84e0e86420c6493e02729.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image52](images/entries/3f4f8ef8eef605c25bf84e0e86420c6493e02729.png)
 
 This feature was funded by [MapTiler](https://www.maptiler.com/)
 
@@ -808,7 +808,7 @@ You can activate this option and choose an encoding scheme (for now, \"MapTiler 
 
 The selected converter will translate the RGB source values to float values for each pixel. After loading, the layer will be presented as a single band floating point raster layer, ready for styling using a pseudocolor or hill shade renderer!
 
-![image53](images/entries/6010ce9b5ad8a9d4bc3130b537c74a567be6df23.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image53](images/entries/6010ce9b5ad8a9d4bc3130b537c74a567be6df23.png)
 
 This feature was funded by [MapTiler](https://www.maptiler.com/)
 
@@ -818,7 +818,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lu
 
 You can now add array field types directly to newly created scratch layers. (While array field types have previously been supported by scratch layers, there was no way for users to add them when creating a new scratch layer.)
 
-![image54](images/entries/57bd4059d12ad5ef94acb42989824a746de92582.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image54](images/entries/57bd4059d12ad5ef94acb42989824a746de92582.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -826,7 +826,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 We\'ve added support for creating JSON fields directly to newly created GeoPackage layers. (While JSON field types have previously been supported by GeoPackage layers, there was no way for users to add them when creating a new layer.)
 
-![image55](images/entries/a96a3edb24bb7e7132fdb353b77ea1a1c98ed9ef.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image55](images/entries/a96a3edb24bb7e7132fdb353b77ea1a1c98ed9ef.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -857,7 +857,7 @@ Column types are automatically determined (by an initial limited scan of the fil
 
 CoordX, CoordY, Point(X/Y), WKT are now recognized as specified in <https://giswiki.hsr.ch/GeoCSV>
 
-![image56](images/entries/998275eaa241752a63c889c4c428948f6702d7ed.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image56](images/entries/998275eaa241752a63c889c4c428948f6702d7ed.png)
 
 This feature was funded by Stadt Freiburg im Breisgau
 
@@ -869,7 +869,7 @@ A new authentication method is available for network requests which that support
 
 This is useful in various scenarios, such as when a WMS requires an API key that is to be used in a HTTP header with the header key being `X-API-KEY`, which can now be included in requests from QGIS to authenticate against the WMS endpoint.
 
-![image57](images/entries/72f6e13c97be1a5e3e4d3aafdee9eef6d77a5bfe.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image57](images/entries/72f6e13c97be1a5e3e4d3aafdee9eef6d77a5bfe.png)
 
 This feature was developed by [Tom C](https://github.com/Cumminsc9)
 
@@ -889,15 +889,15 @@ So e.g. now in expressions if you have secondary geometry column you can do:
 
 and it will work.
 
-::: warning
-::: title
-Warning
-:::
+{{< rich-box icon="⚠️" layoutClass="tips">}}
+{{< rich-content themeClass="coloring-6" >}}
+##### Warning
 
 This changes the behavior of existing projects.
-:::
+{{< /rich-content >}}
+{{< /rich-box >}}
 
-![image58](images/entries/2f2169f6a9927916d3841b63333982a5417a3a0c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image58](images/entries/2f2169f6a9927916d3841b63333982a5417a3a0c.png)
 
 This feature was funded by [OPENGIS.ch](https://www.opengis.ch)
 

@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.34 {#changelog334}
 
-![image0](images/entries/334splash.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image0](images/entries/334splash.png)
 
 Release date: 2023-10-29
 
@@ -45,7 +45,7 @@ A new `Always use decimal point` checkbox option has been added to the Measure T
 
 This enables the ability to copy comma-separated (csv) data even in instances where the user locale uses a comma as the decimal separator.
 
-![image1](images/entries/ec6084247b2b698045a783e2b007b0e0dde90ddd.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image1](images/entries/ec6084247b2b698045a783e2b007b0e0dde90ddd.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -55,7 +55,7 @@ QGIS now displays the geometry of the identified feature result for raster pixel
 
 This is useful when a identifying a raster which has sections of similar colored pixels and it\'s difficult to visually determine the exact extent of a pixel.
 
-![image2](images/entries/dc219caa150c9bbcb15aece90744f63e54ec25a1.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image2](images/entries/dc219caa150c9bbcb15aece90744f63e54ec25a1.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -63,7 +63,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 When using the identify tool on raster layers, the derived results will now include row and column number of the identified pixel.
 
-![image3](images/entries/0889d275dfefea4c7c7d13ebc5dc6fd237573076.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/0889d275dfefea4c7c7d13ebc5dc6fd237573076.png)
 
 This feature was developed by [Hannes & Nyall Dawson](https://github.com/kannes)
 
@@ -81,7 +81,7 @@ This is useful in various scenarios, including instances where:
 -   A line layer uses a thin symbol, and coloring selected lines does not make them visible enough
 -   Layers with complex symbology (such as raster/ gradient fills/ lines/ shapeburst with a color ramp) would not have a default selection color applied. In these scenarios, the user can now specify a simpler symbol to use for selected features within the layer.
 
-![image4](images/entries/c648e5905c6c69e7a1e7c1dc91e3a15de1c8d523.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/c648e5905c6c69e7a1e7c1dc91e3a15de1c8d523.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -93,7 +93,7 @@ Users can now toggle labels for vector tile layers using the vector tile layer s
 
 This functionality is enabled by the addition of new functions to the `QgsVectorTileLayer` API by replicating the existing functionality on `QgsVectorLayer`.
 
-![image5](images/entries/9e04c9c98886edf1d34eeb9750dc8f5c94946b51.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/9e04c9c98886edf1d34eeb9750dc8f5c94946b51.gif)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -103,7 +103,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 Dynamic map decorations are now rendered to a transparent overlay, preventing re-rendering of decoration objects (such as title or scale bar) during navigation. The `QgsMapDecoration` now also includes `hasFixedMapPosition` to fix a decoration to a geographic location.
 
-![image6](images/entries/00e6bc11fa3025317740f955962ef50cc1b95336.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/00e6bc11fa3025317740f955962ef50cc1b95336.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -113,7 +113,7 @@ The debugging/ development profiling tools have been extended with a new \"map r
 
 Through this tool, users are able to identify pain points in their map rendering and track down exactly which layers are causing long map redraws.
 
-![image7](images/entries/50fd809522d42944942ca7a059807f59fdcec5d2.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/50fd809522d42944942ca7a059807f59fdcec5d2.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -126,7 +126,7 @@ A new widget is provided which allows users to select the layer refresh options 
 -   \"Reload Data\": The layer will be completely refreshed. Any cached data will be discarded and re-fetched from the provider. This mode may result in slower map refreshes.
 -   \"Redraw Layer Only\": This mode is useful for animations or when the layer style should be updated at regular intervals. Canvas updates are deferred in order to avoid refreshing multiple times if more than one layer has an automatic update interval set.
 
-![image8](images/entries/e0b0d4561cf7963d9a16bef9f77ea8214fe15f7b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/e0b0d4561cf7963d9a16bef9f77ea8214fe15f7b.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -140,7 +140,7 @@ A warning is also displayed when a limit is hit, which should assist in troubles
 
 This functionality is useful for users utilizing large 3D scenes which exhaust the available GPU memory resources.
 
-![image9](images/entries/161c61a6ec3ca078e4483279c54f25319bed2c20.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/161c61a6ec3ca078e4483279c54f25319bed2c20.png)
 
 This feature was developed by [Martin Dobias](https://github.com/wonder-sk)
 
@@ -158,7 +158,7 @@ New functionality is provided for handling the selection of multiple items simul
 
 This also improves the user experience of multi-select existing functionality which is available with visual selections by keeping the item selection synchronized with the items list.
 
-![image10](images/entries/85d915ba102341669b4ccccab308a987b0927d68.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/85d915ba102341669b4ccccab308a987b0927d68.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -166,7 +166,7 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 
 When a layout has more than one page, the current page number will be displayed in the item properties header section using the format `page_number`/`pagecount`.
 
-![image11](images/entries/367986f087f878b47fe1296fcd8143ef677b3430.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/367986f087f878b47fe1296fcd8143ef677b3430.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -176,7 +176,7 @@ A new \"Open file after exporting\" checkbox option has been added to the export
 
 The application used to open the file will use the configured default application on the system based on type (using `QDesktopServices::openUrl`). This feature will leverage the user settings API to remember the selection for the active user profile.
 
-![image12](images/entries/502d122401e26d6dca10146dbdb9ccd1b01e8bd3.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/502d122401e26d6dca10146dbdb9ccd1b01e8bd3.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -188,7 +188,7 @@ A new `bearing` function has been added which computes the bearing angle (in rad
 
 The bearing is determined in the given CRS and measured clockwise on the given ellipsoid.
 
-![image13](images/entries/a1d3176b8434f43bb248926df46c406f4b5f2625.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/a1d3176b8434f43bb248926df46c406f4b5f2625.png)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -196,7 +196,7 @@ This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudice
 
 QGIS expressions now include a `layer_crs_ellipsoid` layer variable, as well as the `crs_ellipsoid` property available from the `layer_property` function. The value returned will be the ellipsoid acronym of the layer CRS.
 
-![image14](images/entries/25fa0e9a64d6d1ea6b22e0e9b29ced356bbc96c8.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/25fa0e9a64d6d1ea6b22e0e9b29ced356bbc96c8.png)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -210,7 +210,7 @@ An example use case would be the digitizing of a multipart polygon on a singlepa
 
 This prevents the digitizing of \"sliver\" polygons and frustrations with improper feature types.
 
-![image15](images/entries/e86392da95484a83eb7edbfd554526865d4195ff.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/e86392da95484a83eb7edbfd554526865d4195ff.gif)
 
 This feature was developed by [Matthias Kuhn](https://github.com/m-kuhn)
 
@@ -222,7 +222,7 @@ When using the save vector features to file algorithm, QGIS will inform users of
 
 This greatly improves the ability for users to manage data using flat file data storage formats such as geopackage, whilst minimizing the risk of data loss or unwanted side effects.
 
-![image16](images/entries/2eaef470fbd823689e50cfd9fde3a747b888bc83.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/2eaef470fbd823689e50cfd9fde3a747b888bc83.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -240,7 +240,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 QGIS will now show band descriptions in the symbology tab for raster layers, in addition to the band number.
 
-![image17](images/entries/5a45eb1db489ef62f677a745efcca6c07935c4e8.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/5a45eb1db489ef62f677a745efcca6c07935c4e8.png)
 
 This feature was funded by Summer is getting warmer and warmer.
 
@@ -254,7 +254,7 @@ A new \"Enable antialiasing\" parameter has been added to the \"Generate XYZ Til
 
 This option will be enabled by default (replicating the current behavior) but allow users to disable the antialiasing of map content.
 
-![image18](images/entries/9c9b07222673e23caf2dcc73ff1db8a8f9257106.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/9c9b07222673e23caf2dcc73ff1db8a8f9257106.png)
 
 This feature was developed by [ASAI Hitoshi](https://github.com/hito-asa)
 
@@ -264,7 +264,7 @@ Fields for the `row_index` and `col_index` have been added to the output of the 
 
 Field values are integers for which the count begins at 0 and increments from left to right (column index) and top to bottom (row index).
 
-![image19](images/entries/54157595e9bf9c58b4b906ea28b3c335a737696b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/54157595e9bf9c58b4b906ea28b3c335a737696b.png)
 
 This feature was developed by [Valentin Buira](https://github.com/Poulpator)
 
@@ -274,7 +274,7 @@ The new \"Calculate expression\" algorithm will calculate the results of a QGIS 
 
 It avoids the need to use the same expression multiple times throughout a model if the same result needs to be used more than once and provides additional use cases (such as generating a static timestamp value for use throughout a model).
 
-![image20](images/entries/90b9d8da0ec1f13c638525cedd360a5c65d89c1a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/90b9d8da0ec1f13c638525cedd360a5c65d89c1a.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -282,7 +282,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 QGIS now allows the conversion of 3D tile content in GLTF and GLB formats into editable vector feature formats.
 
-![image21](images/entries/6c95d6382b9e6abe72607df57dfefb8a4d9e8442.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/6c95d6382b9e6abe72607df57dfefb8a4d9e8442.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -290,7 +290,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 The SAGA [DTM Filter tool](https://saga-gis.sourceforge.io/saga_tool_doc/8.1.0/grid_filter_7.html) has been ported to a native QGIS algorithm.
 
-![image22](images/entries/740fdd036b19e5e0d2c13493d66e785fca89b46a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/740fdd036b19e5e0d2c13493d66e785fca89b46a.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -304,7 +304,7 @@ An additional context menu is also available to enable the ability to remove ind
 
 The state will be synchronized between the recent projects menu and the QGIS Welcome Page.
 
-![image23](images/entries/4ff4dd8614e4857810fc1b636d8700b143ec98b6.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/4ff4dd8614e4857810fc1b636d8700b143ec98b6.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -339,7 +339,7 @@ This can make the chart more readable for certain datasets, e.g. point clouds wi
 
 This is an opt-in setting, and by default the elevation profiles will continue to display using the standard system background color.
 
-![image24](images/entries/e3bae5cc601894eca9775d5603cc3af6bd03c747.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/e3bae5cc601894eca9775d5603cc3af6bd03c747.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -349,7 +349,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 QGIS now supports the automated discovery of relations for the Oracle data provider.
 
-![image25](images/entries/951d7ccce5b34532595a21373d721f581938c65b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/951d7ccce5b34532595a21373d721f581938c65b.png)
 
 This feature was funded by Métropole de Lille
 

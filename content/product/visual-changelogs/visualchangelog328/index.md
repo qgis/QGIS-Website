@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.28 {#changelog328}
 
-![image1](images/projects/19a3cf4af4fcad7ecec62560b72067b903097054.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/19a3cf4af4fcad7ecec62560b72067b903097054.png)
 
 Release date: 2022-10-21
 
@@ -52,7 +52,7 @@ Just like a WMS(T) layer, when a time-dimension enabled WMTS layer is added to t
 
 This should unify the user experience so that the usage of WMTS time-enabled layers is essentially identical to the usage of WMS(T) layers.
 
-![image3](images/entries/8f0a6c8e4850886732633ab76d5873dffd7746c4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/8f0a6c8e4850886732633ab76d5873dffd7746c4.gif)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -83,7 +83,7 @@ The data source manager dialog is now ALWAYS non modal, and options to set it as
 
 The data source manager will instead be treated as its own window, which is raised to the foreground whenever the Data Source Manager button is pressed.
 
-![image4](images/entries/9bbc312e9b1362ae660a9719c910ab209d3e8a55.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/9bbc312e9b1362ae660a9719c910ab209d3e8a55.gif)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -91,7 +91,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new \"Show in Attribute Table\" action has been added to the right-click context menu of legend class symbols in the table of contents. This allows users to open the attribute table with a filter applied to match only the features relevant to a particular symbol group. This provides a significant performance improvement for certain datasets, such as large vector layers loaded from a remote source.
 
-![image5](images/entries/8b43481bcab479b040b0a5ac5400ddc89c77dd0a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/8b43481bcab479b040b0a5ac5400ddc89c77dd0a.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -99,7 +99,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 The \"Identify Features\" utility now provides the capability to hide NULL values from the returned results
 
-![image6](images/entries/f0c7217db5f0104999a3d87c2229010dcc62cb50.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/f0c7217db5f0104999a3d87c2229010dcc62cb50.gif)
 
 This feature was funded by [Camptocamp](https://www.camptocamp.com/)
 
@@ -111,7 +111,7 @@ This feature was developed by [Ismail Sunni](https://github.com/ismailsunni)
 
 A new general GPS options page has been introduced which includes new settings for controlling the marker symbol used for the current GPS location, and whether this symbol should be rotated to match the GPS direction.
 
-![image7](images/entries/411b2d3b0f1b180857eda6d4e0c73144f1aeee57.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/411b2d3b0f1b180857eda6d4e0c73144f1aeee57.gif)
 
 This feature was funded by Tiwi Resources, Bush Heritage, Australian Wildlife Conservancy
 
@@ -128,7 +128,7 @@ The symbol styles for the ellipse marker type now include additional shape types
 -   Quarter Circle
 -   Star
 
-![image8](images/entries/3e749b405f10a24f95665cd0ad3e1ea0f199811b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/3e749b405f10a24f95665cd0ad3e1ea0f199811b.png)
 
 This feature was funded by North Road
 
@@ -147,7 +147,7 @@ Supported tags specifically include:
 -   bold
 -   italic
 
-![image9](images/entries/b49f780e98b4276b76cf3022b34da26dd4ed9d1f.jpg){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/b49f780e98b4276b76cf3022b34da26dd4ed9d1f.jpg)
 
 This feature was funded by the Swiss QGIS user group
 
@@ -157,7 +157,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Previously, the line height was always set in multiples of the text line spacing, however, it is now possible to use absolute units for line height (useful in contexts where mixed text sizes are used within a single document).
 
-![image10](images/entries/b413c593933bc197886a97919ae015880e119aa7.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/b413c593933bc197886a97919ae015880e119aa7.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -169,7 +169,7 @@ An \"Always take reference time from data source\" option has been added for mes
 
 In previous releases, when a mesh layer file had a reference time and time extent that changed, the time layer properties would not be updated when the projector layer are reloaded, and the user would be required to manually navigate to the \"Reload from provider\" feature in the temporal tab of the layer properties.
 
-![image11](images/entries/8bf480abed6701e5535110f8069ba1f63ecf2de4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/8bf480abed6701e5535110f8069ba1f63ecf2de4.gif)
 
 This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
 
@@ -185,7 +185,7 @@ There is a new item for controlling the state of Ambient Occlusion in the config
 -   Intensity: The strength of the effect should be (higher values make things darker)
 -   Occlusion threshold: Number of neighboring points that need to be occluded for the effect to appear (values lower than 50% will make the output darker, but possibly provide a greater range of occlusion)
 
-![image12](images/entries/996b020346252bc10d87279d9e0cac766802c1d4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/996b020346252bc10d87279d9e0cac766802c1d4.png)
 
 This feature was developed by [Martin Dobias & Belgacem Nedjima](https://github.com/wonder-sk)
 
@@ -213,7 +213,7 @@ Export operations support filtering by:
 
 In addition, output CRS definition and re-projection are also supported.
 
-![image13](images/entries/9b7102f1bbd9286c16285a43158904395e56c4bc.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/9b7102f1bbd9286c16285a43158904395e56c4bc.png)
 
 This feature was funded by State of Vorarlberg and Swiss QGIS user group
 
@@ -223,7 +223,7 @@ This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 
 The eye dome lighting effect is now available for point clouds in 2D renderers
 
-![image14](images/entries/99c16bf2efe3bdcf020a41ad088e29ec7437573e.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/99c16bf2efe3bdcf020a41ad088e29ec7437573e.png)
 
 This feature was developed by [Nedjima Belgacem](https://github.com/NEDJIMAbelgacem)
 
@@ -235,7 +235,7 @@ The `FORCE_RASTER` and `IMAGE_COMPRESSION` parameters have been added to the var
 
 `FORCE_RASTER` is mutually exclusive with and takes precedence over the `FORCE_VECTOR` parameter.
 
-![image15](images/entries/06cc045f6a69f9caaacde8f8b3ead9e89f02af22.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/06cc045f6a69f9caaacde8f8b3ead9e89f02af22.png)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -255,7 +255,7 @@ This is a step towards eventually deprecating the older `$` style functions, and
 
 Older functions and variable references will continue to work (and will likely continue working indefinitely for the sake of compatibility with older projects). They will also continue (for the time being) to be exposed in the UI to avoid user confusion.
 
-![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -263,7 +263,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new `shared_paths` function has been added which returns a collection containing paths shared by the two input geometries. Those going in the same direction are in the first element of the collection, and those going in the opposite direction are in the second element. The paths themselves are given in the direction of the first geometry.
 
-![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -274,7 +274,7 @@ Additional functions have been added for:
 -   `make_valid`: Repair broken input geometries and returns the corrected geometries
 -   `geometries_to_array`: This converts a geometry collection into an array for easier handling and iteration
 
-![image18](images/entries/bc2bbd8d26e2ebb4fd7dc02f0ce7ec6460f3a3bc.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/bc2bbd8d26e2ebb4fd7dc02f0ce7ec6460f3a3bc.png)
 
 This feature was developed by [Alex](https://github.com/roya0045)
 
@@ -282,7 +282,7 @@ This feature was developed by [Alex](https://github.com/roya0045)
 
 A new `concave_hull` function is now available in QGIS expressions (GEOS 3.11+)
 
-![image19](images/entries/e434b7356dc93f9c43fa3142c7f8f914a4aa5615.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/e434b7356dc93f9c43fa3142c7f8f914a4aa5615.png)
 
 This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
@@ -290,7 +290,7 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
 A new confirmation dialog is now safeguarding users against accidentally discarding their unapplied changes in expression editor dialogs. This safeguard is used in the Expression String Builder, the Expression Dialog (Epsilon icon, e. g. for Geometry Generators or for Pre-calculated Values in the model builder) and the Expression Based Filter (Attribute Table -\> Advanced filter expression).
 
-![image36](images/entries/cebe844ae2c28045a8b6e2e89cb2b40cdbbd38c6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image36](images/entries/cebe844ae2c28045a8b6e2e89cb2b40cdbbd38c6.png)
 
 This feature was funded by [WhereGroup GmbH](https://wheregroup.com/)
 
@@ -304,7 +304,7 @@ A new confirmation dialog appears by default when users perform an action that w
 
 In previous releases, similar confirmation prompts would only be displayed when some features fell out of the extent of the map canvas, or the deletion triggered the removal of child relation features. The new behavior is for the prompt to be enabled by default and disabled by using the \"Don\'t show this message again\" checkbox.
 
-![image20](images/entries/677952561ec24d417a74cf46842a6c52aec49587.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/677952561ec24d417a74cf46842a6c52aec49587.png)
 
 This feature was funded by [QGIS user group Switzerland](https://www.qgis.ch/)
 
@@ -324,7 +324,7 @@ The following data providers/formats are supported for storing and managing laye
 
 In addition, a new layer metadata search tab is available from the data source manager, and an interactive layer metadata search is available using the QGIS locator.
 
-![image21](images/entries/17fc26636b3c1fe423ec8f715e69365495519add.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/17fc26636b3c1fe423ec8f715e69365495519add.png)
 
 This feature was funded by ARPA Piemonte
 
@@ -342,7 +342,7 @@ A new advanced parameter is available for some processing tools which allows the
 -   Symmetrical Difference
 -   Union
 
-![image22](images/entries/b2ef315dc1013852d3316023c62af5ff06626e93.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/b2ef315dc1013852d3316023c62af5ff06626e93.png)
 
 This feature was funded by Orange Telecom FR
 
@@ -352,7 +352,7 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
 QGIS can now use the newer refined GEOS 3.10+ methods for validating and repairing geometry features.
 
-![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -360,7 +360,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new `Show feature count for output vector layers` setting is available (but disabled by default for performance reasons), which will automatically enable the \"show feature count\" option on output layers loaded from QGIS processing. This is able to give users a first glimpse of what to expect as an output from a Processing algorithm.
 
-![image24](images/entries/e804b2accbcf155f4db2ea4024bd89ed5883097f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/e804b2accbcf155f4db2ea4024bd89ed5883097f.png)
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
 
@@ -368,7 +368,7 @@ This feature was developed by [Germap](https://github.com/gacarrillor)
 
 The \"Package Layers\" processing tool now supports optionally following project relations and exporting related tables following the hierarchy both upstream and downstream, whilst also taking selected features into account.
 
-![image25](images/entries/26076b13de92a8ac2a1fea1511e03776c1aeae13.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/26076b13de92a8ac2a1fea1511e03776c1aeae13.png)
 
 This feature was funded by ARPA Piemonte
 
@@ -378,7 +378,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 Adds the \"Offset\" parameter to the \"Drape (set Z value from raster)\" and \"Set M value from raster\" algorithms. The \"Offset\" value is algebraically added to the band values after applying the \"Scale factor\".
 
-![image26](images/entries/78e9cb5b82c872604fc3616c2c7b3772e7d26bef.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image26](images/entries/78e9cb5b82c872604fc3616c2c7b3772e7d26bef.png)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -398,7 +398,7 @@ The updated Map Geographic (degrees) option, which supersedes the legacy approac
 
 The Custom Projection Units type is a new addition that defaults to WGS84 and allows users to set any CRS they desire as display coordinates.
 
-![image27](images/entries/7af6704f72373fec3c1e9c212366fd3d8cfa0218.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/7af6704f72373fec3c1e9c212366fd3d8cfa0218.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -411,7 +411,7 @@ A new \"Fonts\" panel has been added to the settings dialog, which provides supp
 -   An API is provided for other tools, such as plugins and other clients, to specify additional user font folders which should be scanned during QGIS startup
 -   Automatic downloading of missing fonts is now supported in certain circumstances. If a user opens a project or style, or they try to load a vector tile layer that references fonts that aren\'t currently available, then a hard-coded list of freely licensed fonts to download via URL is consulted to determine whether it\'s possible to automatically download the font to the user font directory (and notify the user of the font license). A setting to opt out of this behavior is provided in the Fonts panel if so desired.
 
-![image28](images/entries/77e17395ccb70e466ad4c5a80675ad0ff8ec070e.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/77e17395ccb70e466ad4c5a80675ad0ff8ec070e.gif)
 
 This feature was funded by Toitū Te Whenua Land Information New Zealand
 
@@ -425,7 +425,7 @@ The Project Properties → Relations → Discover Relations feature is now able 
 
 The QGIS Browser Panel now includes the ability to show detailed relationship information for these data sources.
 
-![image29](images/entries/11c3f493eff806b4eccbf9af27c96894ea3223a3.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/11c3f493eff806b4eccbf9af27c96894ea3223a3.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -437,7 +437,7 @@ Additionally, creating a new Geopackage from the same menu will now immediately 
 
 <https://user-images.githubusercontent.com/1829991/178902332-0e112e73-0140-45b9-84bf-fc7875cb7b98.gif>
 
-![image30](images/entries/7a0e8f73e24aa061244e30d6bf1b8154e5eebce4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/7a0e8f73e24aa061244e30d6bf1b8154e5eebce4.gif)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -445,7 +445,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 QGIS now allows drag and drop of vector layers between OGR database datasets that are not stored in GPKG format, for instance, the dragging of a layer onto a GDB to import that dataset into the geodatabase
 
-![image31](images/entries/c1c17d31db79a4beaab864daf13257e6e7ed0ba0.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/c1c17d31db79a4beaab864daf13257e6e7ed0ba0.gif)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -453,7 +453,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 The QGIS browser now supports more advanced functionalities for OGR databases that are not in GPKG format, including Field domain management capabilities (creation and listing domains) and table creation. This means that users can manage field domains and create new tables in an existing ESRI FileGeodatabase database from the QGIS Browser interface.
 
-![image32](images/entries/cc1f815593c28352dffaad020061004db91f8ded.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/cc1f815593c28352dffaad020061004db91f8ded.png)
 
 This feature was funded by Provincie Gelderland
 
@@ -544,7 +544,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 In previous releases, the selection of layers from WMS Servers would be loaded into QGIS as a single project layer. This new functionality provides an optional checkbox to load each of the selected WMS layers into QGIS as distinct project layers.
 
-![image34](images/entries/2685710315d58fc03e1557e3381a41fdd8eb5a02.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/2685710315d58fc03e1557e3381a41fdd8eb5a02.gif)
 
 This feature was funded by [Camptocamp](https://www.camptocamp.com/)
 
@@ -554,7 +554,7 @@ This feature was developed by [Ismail Sunni](https://github.com/ismailsunni)
 
 QGIS now supports saving projects to Oracle databases.
 
-![image35](images/entries/6a575714dfc905211f3518a4f5f3803c32e8afa9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image35](images/entries/6a575714dfc905211f3518a4f5f3803c32e8afa9.png)
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 

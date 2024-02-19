@@ -69,7 +69,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 When editing attributes in the **attribute table or forms**, you can now enter expressions directly into spin boxes, e.g. `5 * 2.5` and they will be automatically evaluated.
 
-![](images/entries/e094287244ee1fe161c8ca95951c2d11ca1e6cdd.png){.align-center}
+![](images/entries/e094287244ee1fe161c8ca95951c2d11ca1e6cdd.png)
 
 ### Feature: Bookmarks can be imported/exported
 
@@ -77,7 +77,7 @@ It is now possible to save / load your bookmarks to a file. This makes it easy t
 
 **This feature was developed by:** Salvatore Larosa
 
-![](images/entries/e3d35c32da659821bc0c657b8e7ba40587a1bfb2.jpg){.align-center}
+![](images/entries/e3d35c32da659821bc0c657b8e7ba40587a1bfb2.jpg)
 
 ### Feature: Improvements to expressions
 
@@ -88,7 +88,7 @@ It is now possible to save / load your bookmarks to a file. This makes it easy t
 -   `geometry` - returns the feature\'s geometry
 -   `transform` - returns the transformed geometry
 
-![](images/entries/ec56f9b8331e619ad1a44970fde655b68125f9d8.png){.align-center}
+![](images/entries/ec56f9b8331e619ad1a44970fde655b68125f9d8.png)
 
 ### Feature: Continuous testing framework and QA improvements
 
@@ -96,7 +96,7 @@ In our ongoing quest to improve the stability and quality of QGIS, every commit 
 
 We are also now regularly performing Coverity scans of QGIS codebase. As a result of this, we have identified and fixed over 1000 flagged issues, including memory leaks and potential crashes. QGIS has a defect density of 0.01 wheras the average for programs of similar size is about 1.0.
 
-![](images/entries/4ec86080ff150743f1bdc88d3ac7881a6cd405de.png){.align-center}
+![](images/entries/4ec86080ff150743f1bdc88d3ac7881a6cd405de.png)
 
 ## Analysis tools
 
@@ -104,7 +104,7 @@ We are also now regularly performing Coverity scans of QGIS codebase. As a resul
 
 The measure tool has been improved so that you can now select which units should be used in the measure dialog. There is also a new info section in the dialog that shows which settings are being used during measurement calculations.
 
-![](images/entries/67a001d3d800feec8805de698ed364e91d00daab.png){.align-center}
+![](images/entries/67a001d3d800feec8805de698ed364e91d00daab.png)
 
 ## Browser
 
@@ -114,7 +114,7 @@ In the QGIS Browser items are now expanded in their own threads, speeding up the
 
 **This feature was developed by:** Radim Blazek
 
-![](images/entries/c8df646572084b8f12027fd54c1210f14c80c8e1.gif){.align-center}
+![](images/entries/c8df646572084b8f12027fd54c1210f14c80c8e1.gif)
 
 ## Data Providers
 
@@ -126,7 +126,7 @@ If your WMS server supports contextual legends, you can make use of them in QGIS
 
 **This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
 
-![](images/entries/e516a25492b547113c487d00475cfe07bc7b131e.png){.align-center}
+![](images/entries/e516a25492b547113c487d00475cfe07bc7b131e.png)
 
 ## Data management
 
@@ -134,19 +134,19 @@ If your WMS server supports contextual legends, you can make use of them in QGIS
 
 You can now define a custom prefix in the joins manager in the layer properties dialog. When using a prefix, the attribute table in will show joined attribute names with your preferred prefix.
 
-![](images/entries/372e6561a4db3ed3ca3d418c946f81bce0d0d134.png){.align-center}
+![](images/entries/372e6561a4db3ed3ca3d418c946f81bce0d0d134.png)
 
 ### Feature: Support for creation of temporary memory layers
 
 This release add support for creating new temporary scratch layers within QGIS core. Scratch layers can be created in the `Layer --> Create layer --> New Temporary Scratch Layer` menu option.
 
-![](images/entries/bddbbd6cb55e9a19441ea564275dd480661e61de.png){.align-center}
+![](images/entries/bddbbd6cb55e9a19441ea564275dd480661e61de.png)
 
 ### Feature: Support for calculations on selected rows
 
 In the attribute table you can now do calculations on selected rows only thanks to the new button added to the field calculator bar.
 
-![](images/entries/1b7ead001901ed4242d26556abac055834e367b2.png){.align-center}
+![](images/entries/1b7ead001901ed4242d26556abac055834e367b2.png)
 
 ## Digitising
 
@@ -154,7 +154,7 @@ In the attribute table you can now do calculations on selected rows only thanks 
 
 If you ever wished you could digitise lines exactly parallel or at right angles, lock lines to specific angles and so on in QGIS, now you can! The advanced digitizing tools is a port of the CADinput plugin and adds a new panel to QGIS. The panel becomes active when capturing new geometries or geometry parts
 
-![](images/entries/50f726e5899eb72dcec76e4bed1936bcf957e75f.jpg){.align-center}
+![](images/entries/50f726e5899eb72dcec76e4bed1936bcf957e75f.jpg)
 
 ### Feature: Improved simplify tool
 
@@ -172,7 +172,7 @@ The simplify tool has been overhauled, adding:
 
 **This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 
-![](images/entries/20b7f96ffc7d37b8c2ae09189d7957a929a716e5.png){.align-center}
+![](images/entries/20b7f96ffc7d37b8c2ae09189d7957a929a716e5.png)
 
 ### Feature: Snapping improvements
 
@@ -182,7 +182,7 @@ There is a new snapping mode : **snap to all layers** which makes it quick to en
 
 **This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
-![](images/entries/8454af2743154585eb82325ab2694e50e7d9efcd.jpg){.align-center}
+![](images/entries/8454af2743154585eb82325ab2694e50e7d9efcd.jpg)
 
 ## Layer Legend
 
@@ -194,7 +194,7 @@ Advanced users who leverage QGIS\'s rule based renderer system will be pleased t
 
 **This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 
-![](images/entries/0d39448aa0893d7a71c5241aa2181750535e62c3.png){.align-center}
+![](images/entries/0d39448aa0893d7a71c5241aa2181750535e62c3.png)
 
 ## Map Composer
 
@@ -204,7 +204,7 @@ Advanced users who leverage QGIS\'s rule based renderer system will be pleased t
 -   **Full screen mode for composer**
 -   Option to **toggle display of panels** in composer, available by both the `view menu`, using the shortcut `F10` and by pressing `Tab` when the composer canvas is selected. It\'s useful for maximising the space when planning a map layout.
 
-![](images/entries/10677c6e1612a4392e8bca0a9cbe31126426becf.png){.align-center}
+![](images/entries/10677c6e1612a4392e8bca0a9cbe31126426becf.png)
 
 ### Feature: Grid improvements
 
@@ -212,14 +212,14 @@ In the composer you now have finer control of frame and annotation display. Prev
 
 New vertical descending direction for annotations. This change adds a new descending vertical direction mode for map grid annotations. Previously only ascending text was supported for vertical annotations.
 
-![](images/entries/288d533cbed1f6beeef17004897060c8639bbbb4.png){.align-center}
+![](images/entries/288d533cbed1f6beeef17004897060c8639bbbb4.png)
 
 ### Feature: Label item margins
 
 -   You can now control both horizontal and vertical **margins for label** items. Previously only a single margin setting would apply to both horizontal and vertical margins. This change allows users to specify different horizontal and vertical margins.
 -   You can now specify negative margins for label items, **allowing text to be drawn slightly outside of a label item\'s bounds**. This is desirable for aligning label items with other items while allowing for optical margin alignment for the label type.
 
-![](images/entries/7f4905d74ca140ed369bea8866357b9d952ee212.png){.align-center}
+![](images/entries/7f4905d74ca140ed369bea8866357b9d952ee212.png)
 
 ## Plugins
 
@@ -227,7 +227,7 @@ New vertical descending direction for annotations. This change adds a new descen
 
 You can now drag and drop python scripts into QGIS window and they will be executed automatically. We also added a toolbar icon to the plugins toolbar and a shortcut ( `Ctrl-Alt-P` ) for quick access to the python console.
 
-![](images/entries/03be8f30ce341816bd3bcd1a58f3b913ddcea07c.png){.align-center}
+![](images/entries/03be8f30ce341816bd3bcd1a58f3b913ddcea07c.png)
 
 ## Processing
 
@@ -239,7 +239,7 @@ With this new parameter type, used in **Select by location, Extract by location*
 
 **This feature was developed by:** [Camptocamp](http//www.camptocamp.com)
 
-![](images/entries/cd198b98cf28e611f5c2e3be93bc5ec90dd0a5b4.png){.align-center}
+![](images/entries/cd198b98cf28e611f5c2e3be93bc5ec90dd0a5b4.png)
 
 ### Feature: New algorithms
 
@@ -253,7 +253,7 @@ A number of new algorithms have been added to the processing framework:
 -   **Split lines with lines**
 -   **Refactor fields** attributes manipulation algorithm
 
-![](images/entries/b2403fae20cd24cfb1883d24e97de6fc51e40c88.png){.align-center}
+![](images/entries/b2403fae20cd24cfb1883d24e97de6fc51e40c88.png)
 
 ## Programmability
 
@@ -261,19 +261,19 @@ A number of new algorithms have been added to the processing framework:
 
 Comments can now be added to expressions using an SQL style `--` prefix.
 
-![](images/entries/e1579eec6d8ab74330fb2f784c68ed16c83bb79d.jpg){.align-center}
+![](images/entries/e1579eec6d8ab74330fb2f784c68ed16c83bb79d.jpg)
 
 ### Feature: Custom expression function editor
 
 You can now define custom expression functions in the expression widget. See [this blog post](http://nathanw.net/2015/01/19/function-editor-for-qgis-expressions/) for more details.
 
-![](images/entries/503dd9dadec4fb85ee5ab6335e4f03979a8e7d77.jpg){.align-center}
+![](images/entries/503dd9dadec4fb85ee5ab6335e4f03979a8e7d77.jpg)
 
 ### Feature: Qt5 support
 
 QGIS can now be built using Qt5 libraries. Note that currently most binaries will still with Qt4 by default.
 
-![](images/entries/c702d89260cbab35323c052a15ab5c5728fc7115.png){.align-center}
+![](images/entries/c702d89260cbab35323c052a15ab5c5728fc7115.png)
 
 ### Feature: Bulk loading spatial index
 
@@ -289,13 +289,13 @@ inserting features \~ 600 ms
 
 The index tree should be also in theory be better constructed and may result in faster lookups.
 
-![](images/entries/80cea18c68b7885cb71c1682ca3777caa048ff9e.png){.align-center}
+![](images/entries/80cea18c68b7885cb71c1682ca3777caa048ff9e.png)
 
 ### Feature: Run only the selected part of a SQL query
 
 In the DB Manager SQL editor, it is now possible to highlight a portion of the SQL and only that portion will be executed when you press `F5` or click the `run` button
 
-![](images/entries/0d1343e84aa0946becab1e37880a58ceeffbd491.jpg){.align-center}
+![](images/entries/0d1343e84aa0946becab1e37880a58ceeffbd491.jpg)
 
 ## QGIS Server
 
@@ -330,7 +330,7 @@ This new symbol layer type allows for filling polygons with a (tiled) raster ima
 
 Options include (data defined) file name, opacity, image size (in pixels, mm or map units), coordinate mode (feature or view), and rotation.
 
-![](images/entries/3c372b247f1f5583768532c2be96f169dcff1e8f.png){.align-center}
+![](images/entries/3c372b247f1f5583768532c2be96f169dcff1e8f.png)
 
 ### Feature: Live heatmap renderer
 
@@ -338,7 +338,7 @@ The new heatmap vector layer renderer allows for live, dynamic heatmaps for poin
 
 Options include specifying heatmap radius in pixels, mm or map units, choice of color ramp,weighting points by field, and a slider for selecting a tradeoff between render speed and quality.
 
-![](images/entries/a13862e4cf8707ec70ddb37a8e3e824db6af883d.png){.align-center}
+![](images/entries/a13862e4cf8707ec70ddb37a8e3e824db6af883d.png)
 
 ### Feature: Multiple styles per layer
 
@@ -348,13 +348,13 @@ It is now possible to set multiple styles for a layer and then easily toggle bet
 
 **This feature was developed by:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
-![](images/entries/e6d0058bbae51c52fb9fffc79d4cc459fbaf853b.png){.align-center}
+![](images/entries/e6d0058bbae51c52fb9fffc79d4cc459fbaf853b.png)
 
 ### Feature: More data-defined symbology settings
 
 The user interface for data defined symbology settings has been improved - moving the data defined option next to each data definable property (in keeping with other parts of QGIS such as the labeling properties). Also many new properties have been made data definable for symbology. This user interface improvement also provides a way to immediately see if a data defined override is defined as well as easier access to the data-defined settings.
 
-![](images/entries/1af9b133ea80a4469e9be81107449b0e22df442b.png){.align-center}
+![](images/entries/1af9b133ea80a4469e9be81107449b0e22df442b.png)
 
 ### Feature: DXF export: improve marker symbol export
 
@@ -368,7 +368,7 @@ This release includes preliminary support for rotation in the map canvas. You ca
 
 **This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
 
-![](images/entries/b655549a3336c2fb16eef87f6f30fe50f5abe9f9.png){.align-center}
+![](images/entries/b655549a3336c2fb16eef87f6f30fe50f5abe9f9.png)
 
 ## User Interface
 
@@ -376,7 +376,7 @@ This release includes preliminary support for rotation in the map canvas. You ca
 
 All dialogs now use a consistent projection selection widget, which allows for quickly selecting from recently used and standard project/QGIS projections.
 
-![](images/entries/7a9b103d6b537f8fd6d2c53b81dc4f9a2e3f736c.png){.align-center}
+![](images/entries/7a9b103d6b537f8fd6d2c53b81dc4f9a2e3f736c.png)
 
 .
 

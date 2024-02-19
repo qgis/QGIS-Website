@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.8 {#changelog38}
 
-![image1](images/projects/403e44c7e958cff5d07a1eaf12af76ade88c564d.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/403e44c7e958cff5d07a1eaf12af76ade88c564d.png)
 
 Release date: 2019-06-21
 
@@ -36,7 +36,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 In 3.8, we added an option to the measurement tool which forces Cartesian measurements for distance or area measurements. Previously, the measurement tools always used ellipsoidal/geodesic area and distance calculations, but there\'s occasions when this is not desirable and users require pure Cartesian calculations instead.
 
-![image2](images/entries/e912304d18194a43111a2f054b7f1dba931985d4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image2](images/entries/e912304d18194a43111a2f054b7f1dba931985d4.png)
 
 This feature was funded by [Oslandia](https://oslandia.com)
 
@@ -48,7 +48,7 @@ This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com
 
 While QGIS has offered support for Project Templates for many years, we enhanced this in 3.8 and made it much simpler for users to create new templates. Now, users can create a new template from their current project by selecting \"Save To -\> Templates\" from the \"Project\" menu.
 
-![image3](images/entries/8a99e041656f5d3d1fa504636aa36b0046efe532.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/8a99e041656f5d3d1fa504636aa36b0046efe532.png)
 
 This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
 
@@ -56,7 +56,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch
 
 We\'ve improved the \"Zoom to Native\" action, so it now works correctly with tiled (e.g. WMTS/XYZ/ArcGIS MapServer) layers, by zooming to the closest native tile resolution. Additionally, we tweaked tile rendering so that pixel-perfect rendering occurs when the map is viewed at a native tile resolution. The result: super-crisp map renders when using tiled layer sources!
 
-![image4](images/entries/61f13b52d685dcd67c7c9cc8dbb6daa269ed096a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/61f13b52d685dcd67c7c9cc8dbb6daa269ed096a.png)
 
 ### Feature: Drag and Drop Layers to Map Layer widgets
 
@@ -72,7 +72,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 While QGIS has long offered support for rendering points using font-based character markers, we\'ve enhanced this functionality in 3.8 and now offer the ability to render multi-character strings! And since we\'re always aiming to make the QGIS application interface as user-friendly and pleasant to use as possible, we also took the opportunity to tweak the UI for font markers and squash a number of frustrating GUI issues which previous versions suffered from.
 
-![image5](images/entries/a0f55caed98366ae6eaa0e413d425259aa613b9b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/a0f55caed98366ae6eaa0e413d425259aa613b9b.png)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -80,7 +80,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 Another addition to the new symbology features added in 3.8 is a brand new label distance factor control for Point Displacement markers. This option allows displaced marker labels to be placed at a distance based on the actual marker diagonal size instead of a fixed distance.
 
-![image6](images/entries/7be374a464bde6d79745c1fedfc6075886f09b31.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/7be374a464bde6d79745c1fedfc6075886f09b31.png)
 
 This feature was developed by henrik
 
@@ -90,7 +90,7 @@ QGIS loves cartography, and we know you love making pretty maps! So we\'ve added
 
 All options available for the existing Marker Line symbol layer are also available for hash lines, - e.g. first/last vertex, mid points, regular intervals, data-defined intervals, etc. The hash line length and angle can also have data defined overrides, which are evaluated per-line segment, allowing for the hash line to change size and angle over the length of a single rendered feature.
 
-![image7](images/entries/d540197d4a5088df43cac495dc1a88b931131cfe.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/d540197d4a5088df43cac495dc1a88b931131cfe.png)
 
 This feature was funded by anonymous
 
@@ -106,7 +106,7 @@ Like all symbol settings, the average angle smoothing distance can be set using 
 
 This option is available for both the marker line symbol and the new hash line symbol types.
 
-![image8](images/entries/4101a09e0fa63aada9acce23092bb29e16db1114.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/4101a09e0fa63aada9acce23092bb29e16db1114.png)
 
 This feature was funded by anonymous
 
@@ -116,7 +116,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 To round out the new symbology options we\'ve added in 3.8, the Point Pattern Fill symbol type has a new setting allowing for offsetting the markers in the pattern by a preset (or data-defined!) amount. This opens the door for many styling possibilities which were not possible in earlier versions, and further increases our compatibility with converted ArcGIS symbol and layer styles.
 
-![image9](images/entries/0cda10ddf2bac42e77b7cfc9ada813e4a26353a5.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/0cda10ddf2bac42e77b7cfc9ada813e4a26353a5.gif)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -134,7 +134,7 @@ This is a huge one! During the developer\'s meeting in A Coruña, Matthias Kuhn 
 
 Just like Geometry Generators for symbols, we now allow label paths and positions to be calculated using dynamically-evaluated geometry expressions. You can take advantage of the rich support for geometry processing which QGIS\' expression engine exposes, and use this to do ALL sorts of pre-processing to your feature geometries before they are labelled. Want to place labels around the start or end point of linestring geometries? What about dynamically smoothing and simplifying the path used for labeling river features, based on the current map scale? How about buffering polygon objects inward by a percentage of their area, and then labeling around the perimeter of this shrunken area? Now, it\'s ALL possible, thanks to the power of labeling geometry generators!
 
-![image10](images/entries/abc08ecfe2a879424b3f8e96c26b0391e342090e.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/abc08ecfe2a879424b3f8e96c26b0391e342090e.png)
 
 This feature was funded by [QGIS user group switzerland](https://www.qgis.ch)
 
@@ -153,7 +153,7 @@ Like all recent QGIS releases, in version 3.8 we\'ve significantly boosted QGIS\
 -   Configurable line width (in screen units) for \"simple\" 3D lines (in previous versions they were always 1px wide)
 -   Optional highlighting of edges of 3D polygons
 
-![image11](images/entries/6e77320c7766d11f25893f9c2de2e7de57eab488.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/6e77320c7766d11f25893f9c2de2e7de57eab488.png)
 
 This feature was funded by Andreas Neumann
 
@@ -163,7 +163,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 Another exciting change we\'ve introduced in QGIS 3.8 is the ability to export your 3D animations! These are exported as a series of png/jpg/\... images, which can be easily merged into .avi or other standard video files (using external tools).
 
-![image12](images/entries/f0d7bb5632bfaa9c9feafb12e7b258c312ba66a6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/f0d7bb5632bfaa9c9feafb12e7b258c312ba66a6.png)
 
 This feature was funded by [Northumberland National Park Authority](https://www.northumberlandnationalpark.org.uk/)
 
@@ -181,7 +181,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 In QGIS 3.8, the field of view of the camera through which 3D scenes are rendered has gained a new configurable field of view settings.
 
-![image13](images/entries/13a7660953586fea69df8afea7f75dd5d457fce8.jpg){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/13a7660953586fea69df8afea7f75dd5d457fce8.jpg)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -199,7 +199,7 @@ We\'ve listened to user feedback which indicated that the previous approach for 
 
 Even experienced users will likely appreciate the improved workflow, including automatically linking the picture rotation to a sensible default map choice (if a map is selected, it\'s used. If not, the topmost map item under the newly drawn north arrow is used. If there\'s none, the layout\'s \'reference map\' (or biggest map) is used as a fallback).
 
-![image14](images/entries/7a0dd68c9a38f6e4b4f0177ae53978710df89ad5.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/7a0dd68c9a38f6e4b4f0177ae53978710df89ad5.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -213,7 +213,7 @@ Since certain aggregate and concatenation expressions require results in a certa
 
 E.g. `concatenate("Station",concatenator:=',', order_by:="Station")` will give a comma-separated list of station names in alphabetical order, rather than layer feature order.
 
-![image15](images/entries/024918bb03f4620a2b5d32926322d0644c782bb8.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/024918bb03f4620a2b5d32926322d0644c782bb8.png)
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/)
 
@@ -235,7 +235,7 @@ Improved behavior:
 
 It\'s just a faster shorthand version!
 
-![image16](images/entries/13f09f754dea12a13b9d9aeb8606e86582e87e3f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/13f09f754dea12a13b9d9aeb8606e86582e87e3f.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -245,7 +245,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We added negative index support to the point_n(), angle_at_vertex(), and distance_to_vertex() functions, allowing for retrieval of vertices counting backward from the end of a geometry.
 
-![image17](images/entries/6eac3dcc7d9053f16733306878fb0cebf993737a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/6eac3dcc7d9053f16733306878fb0cebf993737a.png)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -269,13 +269,13 @@ New expressions functions developed by Mathieu Pellerin of iMHere Asia:
 -   **array_all:** Returns true if an array contains the all values of a given array.
 -   **concatenate_unique:** Returns all unique strings from a field or expression joined by a delimiter.
 
-![image18](images/entries/e83795c8c525c092fa9b68172ecdf9f713e5f15a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/e83795c8c525c092fa9b68172ecdf9f713e5f15a.png)
 
 ### Feature: New aggregation method: concatenate_unique
 
 We added a new function `concatenate_unique()` to the expression engine (and Processing\'s \"aggregate\" algorithm) to support concatenating only unique values from a list or set of features.
 
-![image19](images/entries/77c53d02f719feaf03e7e3d9cea8468645aa81e3.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/77c53d02f719feaf03e7e3d9cea8468645aa81e3.png)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -285,7 +285,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 To make the existing Advanced Digitizing tools easier to use, we added an option to show the current distance/angle/x/y values as a floating display next to the mouse cursor.
 
-![image20](images/entries/c0703ea4a49115bfb398d174aa727c7e0fc67240.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/c0703ea4a49115bfb398d174aa727c7e0fc67240.gif)
 
 This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
@@ -295,7 +295,7 @@ This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengi
 
 In QGIS 3.0, we added the ability to extend an existing line feature by clicking a \"+\" indicator at the start or end of line features when using the node tool. Version 3.8 extends this functionality by allowing addition of more than one vertex using the \"+\" button.
 
-![image21](images/entries/a58caabea738a7e34529b9aeb2bb1d4cd307cf50.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/a58caabea738a7e34529b9aeb2bb1d4cd307cf50.gif)
 
 This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
@@ -305,7 +305,7 @@ This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengi
 
 For this release we improved the vertex editor so it will now properly link the *selected vertices on the canvas* with the *vertices for manual coordinate editing in the table*.
 
-![image22](images/entries/e518f5fc5b2decdbaba6272249cdfb3b6c2ad2fe.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/e518f5fc5b2decdbaba6272249cdfb3b6c2ad2fe.gif)
 
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
@@ -322,7 +322,7 @@ This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch
 
 Thanks to the generous sponsorship by A.R.P.A Piemonte (one of the italian regional environmental agencies) we developed a new form widget with HTML body and access to feature values and expressions.
 
-![image23](images/entries/3932162893e8bb8d20d284d7a99ead2de9dac601.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/3932162893e8bb8d20d284d7a99ead2de9dac601.gif)
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
@@ -332,7 +332,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
 
 Thanks to the generous sponsorship by A.R.P.A Piemonte (one of the italian regional environmental agencies) we finally freed you from the boredom of gray backgrounds.
 
-![image24](images/entries/8627ae1acd4ed30ae116e3b79679ecb5cad3241a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/8627ae1acd4ed30ae116e3b79679ecb5cad3241a.gif)
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
@@ -350,7 +350,7 @@ You can also pan and zoom to the geometry of the feature or highlight the curren
 
 (This replaces the previous ItemBrowser plugin with equivalent inbuilt functionality.)
 
-![image25](images/entries/f034aaf2a173be885b5f8fca36e3b577795ad1de.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/f034aaf2a173be885b5f8fca36e3b577795ad1de.png)
 
 This feature was funded by [regioDATA](https://www.regiodata-gmbh.de/)
 
@@ -362,7 +362,7 @@ This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch
 
 QGIS loves GeoPackage, so it\'s likely no surprise that every new QGIS version brings improvements to GeoPackage handling! In 3.8, we enhanced the \"Package Layers\" Processing algorithm so that it now allows embedding the current layer styles directly into the packaged layers!
 
-![image26](images/entries/ebabefc4ccc4b71dcffda0508834b709fddec635.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image26](images/entries/ebabefc4ccc4b71dcffda0508834b709fddec635.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -374,7 +374,7 @@ This new Processing algorithm calculates the area and percentage cover by which 
 
 This is quite a common GIS task request, yet is full of traps for inexperienced users, and the amount of manual data work usually done by users to calculate these figures can often lead to mistakes and inaccurate results. We want to make spatial analysis as easy and foolproof as possible, so we\'ve added Overlap Analysis as an inbuilt tool which allows this task to be done in a single step without risk of human error.
 
-![image27](images/entries/d265fa2b9bab9184d25244f0cd8aececb5136e66.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/d265fa2b9bab9184d25244f0cd8aececb5136e66.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -384,7 +384,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We\'ve added a parameter to the Processing algorithm \'Extract Layer Extent\' to round the extent bounding box coordinates to a certain interval. While rounding, the bounding box will only ever be enlarged, to ensure it will always cover the input data set. (I.e. the x and y minimum coordinates are rounded down, and x and y maximum coordinates are rounded up).
 
-![image28](images/entries/6b783ea6f8bb83c8f45844681ed7221126be4782.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/6b783ea6f8bb83c8f45844681ed7221126be4782.png)
 
 This feature was developed by Raymond Nijssen
 
@@ -396,7 +396,7 @@ In QGIS 3.8 we moved the existing \"double click column header\" to fill values 
 -   An option to add calculated values from a QGIS expression, allowing complex range-based values to be added to the dialog (e.g. values from 100-1000, increasing by 50)
 -   A \"Calculate by Expression\" option allows for updating existing batch table cells using the results of a QGIS expression. These expressions can freely utilise other parameter values from the input batch rows, making it easy to craft the exact output file name you desire based on the other columns values in a batch row.
 
-![image29](images/entries/e20e687223b884d70737f09130f0e9792974eed6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/e20e687223b884d70737f09130f0e9792974eed6.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -406,7 +406,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We\'ve added a brand-new algorithm to generate raster \"XYZ\" tiles using the current QGIS project. Tile images can be saved as individual images in directory structure, or as a single file in the \"MBTiles\" format.
 
-![image30](images/entries/b9af6c101c6c22836c4dec3b78a6ce3d6b7e1bcd.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/b9af6c101c6c22836c4dec3b78a6ce3d6b7e1bcd.png)
 
 This feature was funded by Hansestadt Herford, SWK mbH, Datenbankgesellschaft mbH
 
@@ -418,7 +418,7 @@ QGIS 3.8 brings back the OTB Processing provider, which was removed in the QGIS 
 
 (*Note that OTB is a third party dependency which must be manually installed by users. Instructions on installing OTB are available \`here \<https://gitlab.orfeo-toolbox.org/orfeotoolbox/qgis-otb-plugin#open-processing-settings\>\`\_\_*)
 
-![image31](images/entries/77dfad7d869283213cfc54a96e5ced2ad69d259a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/77dfad7d869283213cfc54a96e5ced2ad69d259a.png)
 
 This feature was developed by Rashad Kanavath
 
@@ -430,7 +430,7 @@ The prime use case here is for models which use a constant value throughout mult
 
 Model variables are stored within an individual Processing model itself, and are not exposed outside of the model designer dialog.
 
-![image32](images/entries/dfd820ccdc499878a5d7c818f03cd2d586311945.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/dfd820ccdc499878a5d7c818f03cd2d586311945.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -503,7 +503,7 @@ Taking advantage of the new facilities for accessing Print Layouts in Processing
 
 If you\'ve ever wanted to create an advanced overview indicator, and the inbuilt layout tools haven\'t sufficed --- this new algorithm is for you!
 
-![image33](images/entries/a10b7ebe75528742860a666be9de2d1365de3b73.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image33](images/entries/a10b7ebe75528742860a666be9de2d1365de3b73.png)
 
 This feature was funded by SMEC/SJ
 
@@ -513,7 +513,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This new algorithm is a handy shortcut for adding X and Y (or latitude/longitude) fields to a point layer. You can even calculate the X/Y values using a different coordinate reference system from the layer (e.g. creating latitude/longitude fields for a layer in a projected CRS).
 
-![image34](images/entries/5633452beec85bb6486092463af4553c02aa6165.PNG){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/5633452beec85bb6486092463af4553c02aa6165.PNG)
 
 This feature was funded by SMEC/SJ
 
@@ -527,7 +527,7 @@ QGIS 3.8 brings a new algorithm which takes an input vector layer and creates a 
 
 By default only the single nearest feature is joined, but optionally the join can use the n-nearest neighboring features instead. If a maximum distance is specified, then only features which are closer than this distance will be matched.
 
-![image35](images/entries/f78e2f7a712f8a5cc1d5e9e20b4bb378598c1180.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image35](images/entries/f78e2f7a712f8a5cc1d5e9e20b4bb378598c1180.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -537,13 +537,13 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The upstream GRASS team has been hard at work creating a new GRASS module for terrain analysis --- \"r.geomorphon\". In 3.8 we expose their efforts via a new Processing tool, which calculates geomorphons (terrain forms) and associated geometry using a machine learning approach.
 
-![image36](images/entries/a0026a05eea40004dfd250cf1a2ff492fdeb1b58.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image36](images/entries/a0026a05eea40004dfd250cf1a2ff492fdeb1b58.png)
 
 ### Feature: GDAL pansharpening algorithm
 
 Another third party tool which we\'ve added to the Processing toolbox in QGIS 3.8 is the GDAL pansharpening tool. Now it\'s easy to take advantage of this fast, powerful tool in your Processing analysis scripts and models.
 
-![image37](images/entries/35c02288524968f8ea021f9a64fcd64b9ec328f9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image37](images/entries/35c02288524968f8ea021f9a64fcd64b9ec328f9.png)
 
 This feature was developed by Alexander Bruy
 
@@ -566,7 +566,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 QGIS 3.8 brings even more power to the browser panel, and now displays all sheets from spreadsheet files (e.g. Microsoft Excel and LibreOffice calc files) in the browser file tree.
 
-![image38](images/entries/f311137d05c73b9ba673d6b68669b7117589dacd.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image38](images/entries/f311137d05c73b9ba673d6b68669b7117589dacd.png)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -578,7 +578,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 Did we already say that QGIS loves GeoPackage? Need any more proof of this? Well, in QGIS 3.8, we\'ve added to ability to store QGIS projects directly inside GeoPackage files! Now you can create a totally self-contained GeoPackage which embeds a QGIS Project AND all the data used by the project. (Let\'s see Shapefiles match that one!)
 
-![image39](images/entries/8750f1c2e3c3919926fd2cb97488da071f7efc85.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image39](images/entries/8750f1c2e3c3919926fd2cb97488da071f7efc85.png)
 
 This feature was funded by [QCooperative](https://www.qcooperative.net)
 
@@ -654,7 +654,7 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 
 You can now export curved geometry layers to DXF format without segmentizing the features --- no more loss of curves!
 
-![image41](images/entries/d0543abc36459754e4e3630e3703f0f1169ba7b3.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image41](images/entries/d0543abc36459754e4e3630e3703f0f1169ba7b3.png)
 
 This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
@@ -690,7 +690,7 @@ When a plugin is installed, the metadata is parsed and a user will be prompted w
 -   Upgrade/downgrade
 -   Do nothing
 
-![image40](images/entries/28da67ad96ccda7a8a64b261db17bf33be4b3f69.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image40](images/entries/28da67ad96ccda7a8a64b261db17bf33be4b3f69.gif)
 
 This feature was funded by [GISCE TI](https://gisce.net/)
 

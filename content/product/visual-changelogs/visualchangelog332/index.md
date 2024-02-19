@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.32 {#changelog332}
 
-![image1](images/projects/0316fbcb7ba30bcf1caee80daf0662a1a15d99b0.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/0316fbcb7ba30bcf1caee80daf0662a1a15d99b0.png)
 
 Release date: 2023-06-26
 
@@ -44,7 +44,7 @@ QGIS is free software and you are under no obligation to pay anything to use it 
 
 A map tip preview window has been added to the Raster and Vector layer properties dialog to enrich the experience of designing map tips.
 
-![image3](images/entries/9e24454517900953b1b667e670c553ac29f10d58.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/9e24454517900953b1b667e670c553ac29f10d58.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -60,7 +60,7 @@ The measurement dialog has been extended with the following functions:
 
 Additional settings for managing the \"Copy All\" button behavior are provided to configure aspects such as separator, or including header information.
 
-![image4](images/entries/4eb0ded16e3b6be3c0696230eb63a7a88fab4197.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/4eb0ded16e3b6be3c0696230eb63a7a88fab4197.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -70,7 +70,7 @@ A new feature in the layer properties allows for disabling mapTips on a specific
 
 On the QGIS API, a `mapTipsEnabled` Q_PROPERTY was added to the `QgsMapLayer` class to enable this functionality.
 
-![image5](images/entries/73c9d66fac45f948e63ead3f94be4ccddb3172b4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/73c9d66fac45f948e63ead3f94be4ccddb3172b4.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -82,7 +82,7 @@ A description tooltip is now available when hovering the cursor over the value i
 
 The description tooltip matches that of the currently selected item\'s description as defined in the \'description column\' on the value relation configuration panel.
 
-![image6](images/entries/369ecca5320fe09a8f2657463df647c5526a496c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/369ecca5320fe09a8f2657463df647c5526a496c.png)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -90,7 +90,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 The action to dock and undock 2d map canvas views has been added to match the behaviour of 3d canvas views.
 
-![image7](images/entries/d6aaec94112b3787b59d1d820b0335b9ab9b2385.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/d6aaec94112b3787b59d1d820b0335b9ab9b2385.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -103,7 +103,7 @@ The ability to remove \"recently used\" CRS information has been implemented in 
 -   A clear selected context menu action
 -   A clear all recent CRS context menu action that will prompt the user for confirmation
 
-![image8](images/entries/564478bebbaeda3394d77001b46cb051a795c73f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/564478bebbaeda3394d77001b46cb051a795c73f.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -120,7 +120,7 @@ This setting will affects wheel zooms in multiple contexts, including:
 -   in the Elevation profile canvas (`QgsElevationProfileCanvas`)
 -   In the model editor graphic view (`QgsModelGraphicsView`)
 
-![image9](images/entries/b242e0115f29586846d88d6d0cfb1d5f6f9760f0.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/b242e0115f29586846d88d6d0cfb1d5f6f9760f0.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -128,7 +128,7 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 
 Map rotation can now be stored and applied in Spatial bookmarks, which includes a new context menu in the Spatial Bookmark Manager Panel.
 
-![image10](images/entries/ea7e07b0c6a753ab205dd31d20454a4006c17bba.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/ea7e07b0c6a753ab205dd31d20454a4006c17bba.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -143,7 +143,7 @@ A number of improvements have been made to the behavior of annotation tools incl
 -   Drop the undocumented `toggleTextItemVisibilities` (toggled Text annotations visibility with Ctrl+T)
 -   Improve the selection and resizing behavior, including improvements for handling overlapping annotations
 
-![image11](images/entries/fe30ec582f3b10338c05db078429751c06c890af.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/fe30ec582f3b10338c05db078429751c06c890af.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -151,7 +151,7 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 
 A \"live update\" checkbox in the annotation editors allows for on the fly review of rendered annotation content.
 
-![image12](images/entries/a969c1ce6990854c84031bc4b7085b799c03f32f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/a969c1ce6990854c84031bc4b7085b799c03f32f.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -171,7 +171,7 @@ The following improvements have been implemented to the measuring tool in 3d sce
 
 The object selection logic has also been refactored for more control, and the 3d identify tool was also enhanced to prevent interference with camera navigation as well as a bug fix for where the wrong FIDs were returned on specific cases.
 
-![image13](images/entries/65d6c0b4ab0c187c6a4b1e9f2f6c6483708cfce4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/65d6c0b4ab0c187c6a4b1e9f2f6c6483708cfce4.png)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -202,7 +202,7 @@ Under the hood provider utilizes the [pdal_wrench](https://github.com/PDAL/wrenc
 
 As pdal_wrench requires PDAL \>= 2.5.0, the new processing provider will be available only where the PDAL version requirement is satisfied.
 
-![image14](images/entries/e6c8922d1f55cc29aeceb514da8253f9b5b36edf.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/e6c8922d1f55cc29aeceb514da8253f9b5b36edf.png)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -218,7 +218,7 @@ The `QgsPointCloudExpression` class was also extended with a new method to conve
 
 Existing PDAL algorithms using expression filters have been updated to use expression parameters instead of strings.
 
-![image15](images/entries/f69a04fbddde3eee72333fab2c1af0c58582aaae.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/f69a04fbddde3eee72333fab2c1af0c58582aaae.png)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -258,7 +258,7 @@ This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
 Virtual point clouds can be rendered within 3d views. For performance management, a sub index threshold is specified so that the view will render the chunked entity of the point cloud only when appropriate and will instead render the bounding region of a particular sub index when the threshold criteria is not met.
 
-![image16](images/entries/ec9947c41a6b8caedcf2a72bf7b61ff4f2b8b04e.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/ec9947c41a6b8caedcf2a72bf7b61ff4f2b8b04e.gif)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -272,7 +272,7 @@ The VPC file is handled as a single layer in QGIS and may contain a large number
 
 A Virtual Point Cloud is a JSON container file with a `.vpc` extension, referring to other files/URLs that contain the actual point cloud data. This is a concept similar to virtual rasters (VRTs) in GDAL. The JSON content is actually a STAC API ItemCollection. See [VPC specification](https://github.com/PDAL/wrench/blob/main/vpc-spec.md) for more details.
 
-![image17](images/entries/ec51218d00c661a9fd68dbda499f13ab56974c6a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/ec51218d00c661a9fd68dbda499f13ab56974c6a.gif)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -294,7 +294,7 @@ Instead of limiting layout legend filtering to a single linked map, this change 
 
 The UX has been designed to avoid changing the current user workflows, in that legends will still be linked to a single main map item. This map is used when determining the scale (and other map dependent properties) at which to render the legend\'s symbols. Checking the \"Only show items inside linked maps\" option will still automatically filter the legend by the content of the main linked maps. However, there\'s a new \"\...\" options button next to the \"Only show items inside linked maps\" checkbox which allows users to select also other maps from their layout to consider when determining visible items:
 
-![image18](images/entries/3246252a68bf9e6ecbd8d54d20b477305ec8f79a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/3246252a68bf9e6ecbd8d54d20b477305ec8f79a.png)
 
 This feature was funded by City of Canning
 
@@ -314,7 +314,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 When merging features, users may now select from a list of available values from the selected features, rather than manually capturing a manual value for a field.
 
-![image19](images/entries/01bce8523b3c79ad48ae040c8a5d446c4aa338ae.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/01bce8523b3c79ad48ae040c8a5d446c4aa338ae.png)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 
@@ -326,7 +326,7 @@ The advanced digitizing options for common angles have been extended with the fo
 -   A new option has been added to show current common angle in the floater context widget
 -   New \'N\' \'SHIFT+N\' keyboard shortcuts are available to cycle through the common angle options
 
-![image20](images/entries/7e402e89c5fb13d41c7e1e99d9fa13b51499c571.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/7e402e89c5fb13d41c7e1e99d9fa13b51499c571.png)
 
 This feature was funded by ChartWorld International
 
@@ -336,7 +336,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 A new configuration setting for the advanced digitizing tool allows users to toggle the display of the \"floater\" contextual menu which follows the cursor during digitizing. Additional options are included for adding information to the floater panel, such as the display of bearing and azimuth information.
 
-![image21](images/entries/1378170e362cd2b7f8ac14cbd5556b87ee593918.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/1378170e362cd2b7f8ac14cbd5556b87ee593918.gif)
 
 This feature was funded by ChartWorld International
 
@@ -385,7 +385,7 @@ The following policies have been provided:
 -   use default value
 -   use ratio of geometries
 
-![image22](images/entries/f53e5c49ba0c25415b7a5bd163cb94a1ab72ebcd.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/f53e5c49ba0c25415b7a5bd163cb94a1ab72ebcd.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -449,7 +449,7 @@ A new \"Reorder Output Layers\" action to the model designer menu has been added
 
 The model creator can also set an optional \"Group name\" for the outputs for automatically grouping outputs within the layer tree using a new group name or by adding them to an existing group.
 
-![image23](images/entries/a898507ce882d4e757064429471307a3cdd0e0e9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/a898507ce882d4e757064429471307a3cdd0e0e9.png)
 
 This feature was funded by [QGIS User Group Germany](https://qgis.de/)
 
@@ -469,7 +469,7 @@ A new button has been added to the field management interface of the refactor fi
 
 This feature was added during the [QGIS Contributor Meeting 2023, s-hertogenbosch](https://github.com/qgis/QGIS/wiki/25th-Contributor-Meeting-in-'s-Hertogenbosch)
 
-![image24](images/entries/ab43192e1204465860a221e323f478d9a1e8d2f6.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/ab43192e1204465860a221e323f478d9a1e8d2f6.gif)
 
 This feature was funded by [camptocamp](https://camptocamp.com)
 
@@ -503,7 +503,7 @@ A handy new environment configuration setting has been created for the configura
 
 This functionality has been applied to the PDAL and TileXYZ algorithms.
 
-![image25](images/entries/d5a70cd3ed4a01b2e51381907b92b05256e13cc2.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/d5a70cd3ed4a01b2e51381907b92b05256e13cc2.png)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
@@ -511,7 +511,7 @@ This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
 Individual processing algorithms may now include an environment setting to specify a custom temporary folder which overwrites the configured temporary file path. This is useful in situations where a particular tool may use a lot of temporary disk space and a dedicated location or scratch disk is required, or when a particular operation requires performance enhancements offered by a particular disk or path.
 
-![image26](images/entries/e36dd209990541e93fdf7a3170596fe0f81ec920.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image26](images/entries/e36dd209990541e93fdf7a3170596fe0f81ec920.png)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -524,7 +524,7 @@ Includes settings for:
 -   invalid geometry handling (Unlike the existing per-parameter setting override for this, setting the handling method here will apply to ALL inputs for the algorithm)
 -   distance unit and area units to use for distance/area measurements
 
-![image27](images/entries/2039528616fa5e39d98dd01dc43899db654d3a45.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/2039528616fa5e39d98dd01dc43899db654d3a45.gif)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -548,7 +548,7 @@ This change adds a new \"feature filter\" option alongside the existing feature 
 
 It allows users to enter an expression to subset the layer dynamically when running the tool, avoiding the need for separate steps to set layer filters or create layer subsets.
 
-![image28](images/entries/032c4a9555a7debad18a2fd8fb4b84a09e94eb3b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/032c4a9555a7debad18a2fd8fb4b84a09e94eb3b.png)
 
 This feature was funded by City of Canning
 
@@ -585,7 +585,7 @@ New API classes introduced include:
 -   Classes for settings editors: QgsSettingsStringEditorWidgetWrapper, etc.
 -   QgsSettingsEditorWidgetRegistry: a registry of the setting editor wrappers
 
-![image29](images/entries/36a2db1e6a9448a1bdd4699bbeaa79057e912535.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/36a2db1e6a9448a1bdd4699bbeaa79057e912535.png)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 
@@ -605,7 +605,7 @@ Regardless of the selected policy, if only one profile exists it will be used, a
 
 User profile icons are also provided to allow users to visually differentiate between their active profiles.
 
-![image30](images/entries/ac274c8186837f23d80df6142030a416efcdcb1e.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/ac274c8186837f23d80df6142030a416efcdcb1e.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -682,7 +682,7 @@ A sensor manager is attached to project instances that allows users to register 
 
 A new `sensor_data()` function is added to the project scope which is available using expressions, that returns the latest captured sensor data values for a specific sensor name. An optional expiration (in milliseconds) parameter allows for expressions that will reject a specific sensor value is older that the provided expiration value.
 
-![image31](images/entries/79f13eef3f01b425e4523a9dd9b0922a97712d4f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/79f13eef3f01b425e4523a9dd9b0922a97712d4f.gif)
 
 This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
 
@@ -694,7 +694,7 @@ Configuration widgets are provided for the TCP, UDP, and serial port sensor type
 
 The implementation includes a sensor GUI registry to easily allow for additional python sensors to be created and shipped as plugins.
 
-![image32](images/entries/59e82c99ec67a2bd1778543c7fa649a02e5fcf70.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/59e82c99ec67a2bd1778543c7fa649a02e5fcf70.png)
 
 This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
 
@@ -704,7 +704,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 A sensor table widget is provided that displays registered sensors within a project, along with with actions to connect and disconnect from sensors. The table is accessible via a new sensors panel in the project properties dialog.
 
-![image33](images/entries/e797ad206e4fbb63387d98411d8e08c6a6fe0f47.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image33](images/entries/e797ad206e4fbb63387d98411d8e08c6a6fe0f47.png)
 
 This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
 
@@ -738,7 +738,7 @@ To load a layer on a parallel worker thread, the layer data provider must suppor
 
 A new advanced setting is available to deactivate this behavior when necessary.
 
-![image34](images/entries/809438ef5d3fd9f3574891be96131f9d113562d9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/809438ef5d3fd9f3574891be96131f9d113562d9.png)
 
 This feature was funded by [KoBold Metals](https://www.koboldmetals.com/)
 
@@ -776,7 +776,7 @@ This feature was developed by [Even Rouault](https://github.com/rouault)
 
 The Vector Tile tab now includes choices for selecting from a \"Service\" (the existing, connection based approach for adding vector tiles from online sources) or \"File\" (a new option which allows directly adding a data source using VTPK or MBTiles vector tile files).
 
-![image35](images/entries/d882e2a88732692f8701f27c17fa60c6f376a29e.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image35](images/entries/d882e2a88732692f8701f27c17fa60c6f376a29e.gif)
 
 This feature was funded by Landesamt für Vermessung und Geoinformation, Feldkirch, Austria
 
@@ -832,7 +832,7 @@ To make browsing the features more user friendly and provide more information, t
 -   number of returned items
 -   pagesize/pagination controls also at the bottom of the page
 
-![image36](images/entries/2fc23a3a7f310ae6cc53ae4ff676c5a96eb8c34a.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image36](images/entries/2fc23a3a7f310ae6cc53ae4ff676c5a96eb8c34a.png)
 
 This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
 
@@ -844,7 +844,7 @@ A special `?` command has been added to the python console which displays a usef
 
 The `_pyqgis` and `_api` helper functions will take a parameter (an instance or class), and will display the matching object page from the QGIS or Qt documentation.
 
-![image37](images/entries/5eae659a4df942e04095e38fa5256e7c1436ae39.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image37](images/entries/5eae659a4df942e04095e38fa5256e7c1436ae39.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -858,7 +858,7 @@ The QGIS Python ConsoleMimics IPython behavior to run system commands.
 -   When the Console is in STDIN mode, pressing Ctrl+C will kill the subprocess.
 -   Affect the result of a command to a variable with the syntax `var = !cmd`
 
-![image38](images/entries/6f4da5dd9d63b6c8e0914c4ad4e7e79ccdfea109.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image38](images/entries/6f4da5dd9d63b6c8e0914c4ad4e7e79ccdfea109.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -885,7 +885,7 @@ Sorting operations are provided using isort, which will allow for sorting import
 
 These operations will facilitate consistent development in line with industry best practices and improve code quality, consistency, readability, and operational efficiency (especially when coupled with version control systems).
 
-![image39](images/entries/4d955fb378b92e625bbfbd84e720d680fecbd063.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image39](images/entries/4d955fb378b92e625bbfbd84e720d680fecbd063.gif)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 

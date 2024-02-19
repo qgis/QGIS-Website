@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.18 {#changelog318}
 
-![image1](images/projects/606afcefcc3f5fd4ff00db9b4cb04b22485044db.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/606afcefcc3f5fd4ff00db9b4cb04b22485044db.png)
 
 Release date: 2021-02-19
 
@@ -42,7 +42,7 @@ Previously, the QGIS Desktop *Identify* utility would expose a large number of d
 
 ![image2](images/entries/96178054-1aa78d80-0f2f-11eb-8d75-299bfd6aa73e.png)
 
-![image3](images/entries/c9eea14d2c01670795967bd1e42fcb8777330718.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/c9eea14d2c01670795967bd1e42fcb8777330718.png)
 
 This feature was developed by [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde)
 
@@ -50,7 +50,7 @@ This feature was developed by [Richard Duivenvoorde](https://api.github.com/user
 
 The QgsMessageLogViewer now includes an **\"Empty tab and close others\"** to the log viewer panel context menu, supporting a quicker action to a clean interface when debugging.
 
-![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.png)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
 
@@ -65,7 +65,7 @@ Two implementations have been added for this:
 
 ![image5](images/entries/24c8af6d1314e7a22f8f70a7628f3aeae9b3ce1a-1.png)
 
-![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -73,7 +73,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 QGIS now supports dynamic standard vector graphic elements, as outlined in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). This allows QGIS to dynamically replace attributes or node values in the XML of the SVG and apply data-driven values to SVG elements. QGIS Desktop has additionally added a GUI editor to ensure that users are able to properly leverage this new functionality.
 
-![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.png)
 
 This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
 
@@ -89,7 +89,7 @@ This feature was developed by [Patrice Pineault](https://api.github.com/users/Tu
 
 The \"Zoom to Selection\" and \"Pan Map to Selection\" functions available from the context menu, the View menu or the Map Navigation toolbox now offer the ability to navigate to the extent of the selection from the selected layers in the layer tree.
 
-![image9](images/entries/a76fca5cfc367779584da0655cd18474e4518329-1.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/a76fca5cfc367779584da0655cd18474e4518329-1.gif)
 
 This feature was developed by [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
 
@@ -97,7 +97,7 @@ This feature was developed by [Patrice Pineault](https://api.github.com/users/Tu
 
 Users can now zoom in and out from the Map Overview panel using the mouse scroll.
 
-![image10](images/entries/77b55b4c85c9c4f5076b1a735f7971819cc2a2ee.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/77b55b4c85c9c4f5076b1a735f7971819cc2a2ee.gif)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -113,7 +113,7 @@ This feature was developed by [Will Cohen](https://api.github.com/users/willcohe
 
 The georeferencer canvas can now be rotated in order to facilitate the placement of reference points. This is especially useful for scanned images which may not have uniform orientations.
 
-![image11](images/entries/aba35ba4bb5ff0f2a8c1afcb55673e496efea18a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/aba35ba4bb5ff0f2a8c1afcb55673e496efea18a.gif)
 
 This feature was developed by [uclaros](https://api.github.com/users/uclaros)
 
@@ -129,7 +129,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 The Style Manager interface now includes a button to open the [styles gallery](https://plugins.qgis.org/styles/) from the QGIS HUB.
 
-![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -143,7 +143,7 @@ New export options have been added for mesh layers. These allow the following op
 -   Export edges (1D mesh)
 -   Export as grid
 
-![image13](images/entries/4738ffe8180f8fc320cf464121ec10fc27bd4c33.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/4738ffe8180f8fc320cf464121ec10fc27bd4c33.png)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -153,7 +153,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 Previous versions of QGIS required the utilization of the crayfish plugin, however, this functionality has now been incorporated into QGIS core and allows users to export mesh layers to vectors and add the dataset value as an attribute.
 
-![image14](images/entries/41bdfc3d3c6afabc0e3e23986e42dbc22eb794df.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/41bdfc3d3c6afabc0e3e23986e42dbc22eb794df.gif)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -163,7 +163,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 Mesh data can now be simplified by defining a level of detail for 3D rendering. This helps performance for complex datasets and ensures a smoother experience when 3D navigation is required.
 
-![image15](images/entries/6461d329ef7d4936ddbc932b0bf96edcb071b398.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/6461d329ef7d4936ddbc932b0bf96edcb071b398.gif)
 
 This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcloarec)
 
@@ -176,7 +176,7 @@ A number of new processing algorithms have been ported from the crayfish plugin,
 -   Export cross section to text file (csv)
 -   Export time series to text file (csv)
 
-![image16](images/entries/3acf2cfe05dc7550f16e183026350914d028a6da.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/3acf2cfe05dc7550f16e183026350914d028a6da.png)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -188,7 +188,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 A new rendering option allows area and line features to be \"dissolved\" into a single object prior to rendering to ensure that complex symbols or overlapping features are represented by a uniform and contiguous cartographic symbol.
 
-![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -198,7 +198,7 @@ Previously, map redraws would attempt to redraw all elements in the frame. The m
 
 The following display outlines the redraw behavior before enhancement:
 
-![image18](images/entries/7d0a503ab9ae05427e42e2987335ef569c761a3e-1.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/7d0a503ab9ae05427e42e2987335ef569c761a3e-1.gif)
 
 This feature was funded by [QGIS grant 2020](https://qgis.org/)
 
@@ -214,7 +214,7 @@ An EDL configuration element has been added to the advanced settings tab of the 
 
 The eye dome lighting is, by principle, an image-based rendering solution similar to SSAO (screen space ambient occlusion), and therefore works on the whole scene and doesn\'t differ between point clouds or regular 3D objects.
 
-![image19](images/entries/4e7b365e9e991bf06f15a3ad15ff50a0ac9692e2.jpg){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/4e7b365e9e991bf06f15a3ad15ff50a0ac9692e2.jpg)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -233,7 +233,7 @@ Textured materials are unsupported at this time.
 
 ![image20](images/entries/97449982-9da1ee00-1908-11eb-9276-32c863c3f6e1.jpeg)
 
-![image21](images/entries/504010202dcff6a9b78450fedfa493b6e726b5c0.jpeg){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/504010202dcff6a9b78450fedfa493b6e726b5c0.jpeg)
 
 This feature was funded by [Kristianstad](https://www.kristianstad.se)
 
@@ -243,7 +243,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 QGIS now offers orthographic projection support for 3D scenes, a feature often desired in the context of architecture, archeology, and more.
 
-![image22](images/entries/7e43323cea578f6f50e83de6307c22bdef948f8d.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/7e43323cea578f6f50e83de6307c22bdef948f8d.gif)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -255,7 +255,7 @@ Following the successful [crowdfunding campaign](https://www.lutraconsulting.co.
 
 This includes the ability to add point cloud layers to QGIS projects, with support for the EPT format, and render them in 2D and 3D contexts.
 
-![image23](images/entries/3d87d5647d363b53b1a19ffd67de7406632df572.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/3d87d5647d363b53b1a19ffd67de7406632df572.png)
 
 This feature was funded by [Point Cloud data support in QGIS](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
@@ -265,7 +265,7 @@ This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutr
 
 The QGIS Browser and data source management interface now support the basic structure of PDAL supported point cloud layers.
 
-![image24](images/entries/96aca5c2d2f428f0aa7fee0d11b5c8600c5c523c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/96aca5c2d2f428f0aa7fee0d11b5c8600c5c523c.png)
 
 This feature was funded by [Point Cloud data support in QGIS crowd funding campaign](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
@@ -299,7 +299,7 @@ And naturally, the items will work nicely with multi-column legends:
 
 ![image27](images/entries/145e2d7f00d3a2b33f383e3cbd808a6b21a792c4-1.gif)
 
-![image28](images/entries/0dad8d8307a3c3fe1f5b28aa56790b307c090f33-1.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/0dad8d8307a3c3fe1f5b28aa56790b307c090f33-1.gif)
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
@@ -319,7 +319,7 @@ Users can also choose to refine these settings for a particular layout legend it
 
 ![image29](images/entries/9a48f9d2970e50c7d4f70358b6cfd870033427a5-1.gif)
 
-![image30](images/entries/fb52826e81fd08763c269aaab50ea0c25b7af9b8-1.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/fb52826e81fd08763c269aaab50ea0c25b7af9b8-1.gif)
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
@@ -331,7 +331,7 @@ The new *Add Item -\> Dynamic Text* menu contains preset dynamic text expression
 
 For example, using the dynamic text element **Layout Name** will insert a label containing the expression \[% \@layout_name %\]. This improves the feature awareness, discoverability, and provides an easy method for users to access dynamic attributes.
 
-![image31](images/entries/c41a7d2a5ec018bfba237429aa5d125d11ad9310.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/c41a7d2a5ec018bfba237429aa5d125d11ad9310.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -345,7 +345,7 @@ There is now a string format parameter available for the `uuid()` function in QG
 -   `uuid('WithoutBraces')`: **0bd2f60f-f157-4a6d-96af-d4ba4cb366a1**
 -   `uuid('Id128')`: **0bd2f60ff1574a6d96afd4ba4cb366a1**
 
-![image32](images/entries/3f0471353b72cffc4b69defb87cea2d7a1c44017.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/3f0471353b72cffc4b69defb87cea2d7a1c44017.png)
 
 This feature was developed by [signedav](https://api.github.com/users/signedav)
 
@@ -402,7 +402,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 It is now possible to select features using a context menu on the map canvas. Right-clicking on the map will intelligently identify the features below the mouse cursor and allow the available features to be added or removed from the current selection. Where multiple features are available, a short delay may persist whilst the system attempts to search for available features that will become available in a nested menu item for selection, or users may simply use the *select all* function to select all available features at the given position.
 
-![image33](images/entries/edec99086412445b929c0926f69600279e56d4fb.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image33](images/entries/edec99086412445b929c0926f69600279e56d4fb.gif)
 
 This feature was funded by [Kristianstad](https://www.kristianstad.se)
 
@@ -412,7 +412,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 Existing curve tracing settings [were introduced previously](https://github.com/qgis/QGIS/pull/37826) and have now been exposed in the user interface to enable users to incrementally modify settings to optimize their results when capturing curve data.
 
-![image34](images/entries/29b75d5574181d5b7570090b9801ede92bec2fcd.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/29b75d5574181d5b7570090b9801ede92bec2fcd.png)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
 
@@ -420,7 +420,7 @@ This feature was developed by [Olivier Dalang](https://api.github.com/users/oliv
 
 A new digitizing tool allows for selected features to be scaled when in editing mode. This implementation was based on the work of [\@roya0045](https://github.com/roya0045) with [#40650](https://github.com/qgis/QGIS/pull/40650).
 
-![image35](images/entries/16ac8bca1e78da740dc8ea8b6b46a916f8f0b83d.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image35](images/entries/16ac8bca1e78da740dc8ea8b6b46a916f8f0b83d.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -436,7 +436,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 The georeferencer now reprojects data points in a desired output projection, rather than using the map canvas CRS for determining data point positions. This allows users more flexibility and control when capturing control points.
 
-![image36](images/entries/50d4d1d6353ebfa251c53ea29c28821bf4c5ac18.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image36](images/entries/50d4d1d6353ebfa251c53ea29c28821bf4c5ac18.gif)
 
 This feature was developed by [Alex](https://api.github.com/users/roya0045)
 
@@ -452,7 +452,7 @@ Once saved, the list of relations appear as a tree widget, where the generated r
 
 Polymorphic relations are stored within a project and currently cannot be exported.
 
-![image37](images/entries/6628cd483a00a52f51cd963febd883d2756eb299.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image37](images/entries/6628cd483a00a52f51cd963febd883d2756eb299.png)
 
 This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
 
@@ -492,7 +492,7 @@ This feature was developed by [rldhont](https://api.github.com/users/rldhont)
 
 Allows users to select a list of fields to keep, and all other fields will be dropped from the layer. Helps with making flexible models where input datasets may have a range of different fields and only a certain subset of them need to be retained. This work was inspired by [#39114](https://github.com/qgis/QGIS/pull/39114)
 
-![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -538,7 +538,7 @@ All algorithms provide different methods for calculating percentiles and percent
 
 **Percentrank:** - Inclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTRANK.INC* function) - Exclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTRANK.EXC* function)
 
-![image39](images/entries/febde74bab33bb165971509e90fb112c4b643001.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image39](images/entries/febde74bab33bb165971509e90fb112c4b643001.png)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -560,7 +560,7 @@ QGIS Projects now support the inclusion of hidden layers, which are capable of b
 
 The layer property is configurable from the **Data Sources** tab of the project properties and includes API support for text filtering.
 
-![image40](images/entries/95af3e621abc52bc04d94eca629279df2b987961.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image40](images/entries/95af3e621abc52bc04d94eca629279df2b987961.gif)
 
 This feature was funded by **ARPA Piemonte**
 
@@ -570,7 +570,7 @@ This feature was developed by [Alessandro Pasotti](https://api.github.com/users/
 
 A new \"View Settings\" tab has been added to the project properties, with the option to manually defined the full extent of a project. The extent defined here will be the extent used when zooming to the full map extent, instead of the calculated or maximum extent of all layers. This is useful for defining a particular area of interest for a project and does not limit user\'s ability to \"zoom out\" further than the defined extent.
 
-![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -580,7 +580,7 @@ A checkbox in the network logger panel now allows users to temporarily disable t
 
 This is a transient setting by design and is forgotten as soon as QGIS is closed.
 
-![image42](images/entries/0115a38666f35166fa9e6fd53791a7bc8f73b6dc.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image42](images/entries/0115a38666f35166fa9e6fd53791a7bc8f73b6dc.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -610,7 +610,7 @@ Allows exporting individual or multiple layers into a single DXF file. For each 
 
 Implements a native DXF export algorithm using `QgsDxfExport` functionality, which is also used by `Project -> Import/Export -> Export Project to DXF`.
 
-![image43](images/entries/7800af6d2597ad04650532f201c8d4ee005c8e53.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image43](images/entries/7800af6d2597ad04650532f201c8d4ee005c8e53.gif)
 
 This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
 
@@ -618,7 +618,7 @@ This feature was developed by [Alexander Bruy](https://api.github.com/users/alex
 
 Some available geometry types from the GDAL ogr2ogr operation used for exporting data to PostGIS databases have been added to the tool interface. This functionality also includes the option to specify vector dimensions for exported data and resolves issue [39003](https://github.com/qgis/QGIS/issues/39003).
 
-![image44](images/entries/48415fefe669fa93d5c7e13959c4a35e6dab60e2.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image44](images/entries/48415fefe669fa93d5c7e13959c4a35e6dab60e2.gif)
 
 This feature was developed by [mazano](https://api.github.com/users/NyakudyaA)
 
@@ -648,7 +648,7 @@ In the database connection configuration widget, there are now two extra checkbo
 -   Use layer extent from the extra columns
 -   Use the primary key from the extra column
 
-![image45](images/entries/3d77459436d542190afa88f6d927be7f8245dbf0.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image45](images/entries/3d77459436d542190afa88f6d927be7f8245dbf0.gif)
 
 This feature was funded by [ms.GIS](http://msgis.com/)
 
@@ -658,7 +658,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 Users may now filter the available schemas for MS SQL connections. The database connection widget now contains options for filtering available schemas, so that only the expected schemas are available from the QGIS browser.
 
-![image46](images/entries/1e2fe1a94747c9aa2fbbaab3053bfc6631cfbb22.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image46](images/entries/1e2fe1a94747c9aa2fbbaab3053bfc6631cfbb22.gif)
 
 This feature was funded by [ms.GIS](http://msgis.com/)
 
@@ -690,7 +690,7 @@ This feature was developed by [Julien Cabieces](https://api.github.com/users/tro
 
 New functionality has been introduced which allows advanced parameters to be specified when importing layers using the GDAL data provider, opening a vast range of new possibilities, especially when working around expected dataset issues and shortcomings.
 
-![image47](images/entries/5d7ccf71a162d927706fd6e6517a67452ec653e1.jpg){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image47](images/entries/5d7ccf71a162d927706fd6e6517a67452ec653e1.jpg)
 
 This feature was developed by Mathieu Pellerin
 
@@ -714,7 +714,7 @@ This feature was developed by [mhugent](https://api.github.com/users/mhugent)
 
 The QGIS Python Console now supports the execution of multiple selected commands from the history dialog by adding a new **Paste** button.
 
-![image48](images/entries/1de42c7dc35c2b73dce1605a3c36b97166d81850.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image48](images/entries/1de42c7dc35c2b73dce1605a3c36b97166d81850.png)
 
 This feature was developed by [Salvatore Larosa](https://api.github.com/users/slarosa)
 

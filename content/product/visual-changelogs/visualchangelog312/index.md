@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.12 {#changelog312}
 
-![image1](images/projects/dbf38cfe3b603e7e0b840336d39b399a1a46e52d.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/dbf38cfe3b603e7e0b840336d39b399a1a46e52d.png)
 
 Release date: 2020-02-21
 
@@ -78,7 +78,7 @@ This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
 
 We added the total pan distance and bearing in the status bar during canvas pan operations. Allows users to know exactly how far (and in what direction) they\'ve dragged the map.
 
-![image5](images/entries/48c75d20d3805af3dad8c7faae3c3786a8f6fed0.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/48c75d20d3805af3dad8c7faae3c3786a8f6fed0.gif)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
@@ -130,7 +130,7 @@ This feature was developed by Alessandro Pasotti
 
 Mesh vector renderer now can visualize streamlines and particles on top of existing \"arrow\" mode.
 
-![image11](images/entries/5b772e74d433e766b50023cd107aad9cb1d68de6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/5b772e74d433e766b50023cd107aad9cb1d68de6.png)
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
@@ -216,7 +216,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 We added a new possibility option to delete custom label position by pressing DEL key when moving the label.
 
-![image18](images/entries/e8064c56705b7a74befa85e8a34e7b7311626f0a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/e8064c56705b7a74befa85e8a34e7b7311626f0a.gif)
 
 This feature was developed by [Denis Rouzaud](https://www.opengis.ch)
 
@@ -226,7 +226,7 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch)
 
 this new feature allows for diagrams to use paint effects, including drop shadows, outer glows, etc\...
 
-![image19](images/entries/37d0a22707eca463e5aba7c0a349b2d8029fb823.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/37d0a22707eca463e5aba7c0a349b2d8029fb823.gif)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -236,7 +236,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 With this new feature users will have possibility to create stacks bars of varying colors for each attribute on top of each other vertically or horizontally. Designed to match the \"Stacked\" chart renderer option available in ArcGIS.
 
-![image20](images/entries/933c25cf0cd8997e177eee809b4fa26462b6d8c2.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/933c25cf0cd8997e177eee809b4fa26462b6d8c2.png)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -246,7 +246,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Allows for user-controlled spacing between each bar in the chart.
 
-![image21](images/entries/7906ea6467d1d5ea19550ce1711fcc277df709a0.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/7906ea6467d1d5ea19550ce1711fcc277df709a0.png)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -256,7 +256,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature allows to control whether the sections are rendered in a clockwise or counter-clockwise direction.
 
-![image22](images/entries/c2484d36648c335d16d1e3a45ac1a132ca2baafe.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/c2484d36648c335d16d1e3a45ac1a132ca2baafe.png)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -268,7 +268,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 It is possible to switch the timeframes of mesh layer\'s datasets by play/stop button. The playback setting could be adjusted in the time setting dialog.
 
-![image23](images/entries/4799685965addef6ca2c788d82eea77e67e2f1f3.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/4799685965addef6ca2c788d82eea77e67e2f1f3.png)
 
 This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk)
 
@@ -280,7 +280,7 @@ For datasets defined on faces, one can choose to interpolate data to vertices wi
 
 Use mesh contours styling panel to switch between the data interpolation methods.
 
-![image24](images/entries/c9c38ee8c59693b2971ab6269db22681a61002a1.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/c9c38ee8c59693b2971ab6269db22681a61002a1.png)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
@@ -330,7 +330,7 @@ For now, the mesh can be rendered as a TIN but rendering dataset is not supporte
 
 ![mesh3dsettings](https://user-images.githubusercontent.com/7416892/72482783-41d10300-37d5-11ea-9a21-8f906abcb14a.gif)
 
-![image27](images/entries/f19c25acbd1eb462cdc0365d3af3f706c1b4d2fe.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/f19c25acbd1eb462cdc0365d3af3f706c1b4d2fe.gif)
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
@@ -361,7 +361,7 @@ This feature was developed by [Martin Dobias](https://api.github.com/users/wonde
 
 This new feature allows user e.g. drag an svg from a file explorer onto the layout to create a new picture item containing that svg image.
 
-![image28](images/entries/21b9f2fba7bf1576f794410fd238ef7553154d53.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/21b9f2fba7bf1576f794410fd238ef7553154d53.gif)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
@@ -369,7 +369,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This new item type allows for the creation of tables with contents manually entered by users (i.e. spreadsheet-style) so that users can create completely custom tables. Supports control custom cell contents, foreground and background colors (and soon, preset row and column heights). A brand new table designer dialog has been added which allows for customization of these tables.
 
-![image29](images/entries/95cfa9a8c44fb0141474d80e4b3a5e7f98352e70.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/95cfa9a8c44fb0141474d80e4b3a5e7f98352e70.png)
 
 This feature was funded by City of Canning
 
@@ -381,7 +381,7 @@ You now have the option for controlling the numeric format used by a layout scal
 
 You can manage all the formatting properties for the numbers in scale bars, including whether they want a thousand separator, decimal places, scientific notation, etc. Very useful in the case of making maps for audiences outside of the current QGIS locale, or when you\'d just prefer to vary the style from the locale defaults (e.g. adding thousands separators when the locale default is to hide them).
 
-![image30](images/entries/99c97baaee3e5930bca0cb63db1391b6fd49b34f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/99c97baaee3e5930bca0cb63db1391b6fd49b34f.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -389,7 +389,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 When the new \"Apply layer conditional styling colors\" option is enabled in the layout attribute table settings, any conditional styling rules present in the layer will be applied inside the layout attribute table (foreground and background colors only, for now!).
 
-![image31](images/entries/baded0d05539439d58e6df5a8f24157293cf8022.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/baded0d05539439d58e6df5a8f24157293cf8022.gif)
 
 This feature was funded by City of Canning
 
@@ -399,7 +399,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 Allows filtering the list of layouts in a project by name, handy when a project has many layouts..!
 
-![image32](images/entries/fb510c6c079d55dab2dd22f02c7c5355b317ac47.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/fb510c6c079d55dab2dd22f02c7c5355b317ac47.png)
 
 This feature was developed by Nyall Dawson
 
@@ -409,7 +409,7 @@ This feature was developed by Nyall Dawson
 
 Tags on static expression functions to make them more retrievable. Functions like array_to_string are listed when the user enters \"split\" or \"convert\" or - like before - a part of the function name.
 
-![image33](images/entries/689a669fe84721d7574aba7e595e019a9936f0b9.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image33](images/entries/689a669fe84721d7574aba7e595e019a9936f0b9.gif)
 
 This feature was funded by [SwissTierras-Colombia](https://www.proadmintierra.info)
 
@@ -419,7 +419,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 When a field is a RelationReference, ValueRelation and ValueMap, there is the possibility not only to show the values of the current layer but also the possible values in the referenced layer / configured possibilities.
 
-![image34](images/entries/394c762c41e71764d9be397b718252eddb2dbd3e.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/394c762c41e71764d9be397b718252eddb2dbd3e.gif)
 
 This feature was funded by [SwissTierras-Colombia](https://www.proadmintierra.info)
 
@@ -441,7 +441,7 @@ While this result could also be achieved with the Refactor Fields algorithm, Ref
 
 In contrast, this simple Rename Field algorithm adapts nicely for model use, because it operates on a single field only and leaves all the other fields untouched.
 
-![image35](images/entries/c01edc8ee51dff2b4df8f825e0dcaf27940e4aba.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image35](images/entries/c01edc8ee51dff2b4df8f825e0dcaf27940e4aba.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -531,7 +531,7 @@ This feature was developed by Mathieu Pellerin
 
 On copy-paste features from one layer to another, in case there are constraints (e.g. not null) on the destination layer, that cannot bee fulfilled automatically by default values, a dialog pops up to fix the invalid attributes or disregard the constraints on purpose.
 
-![image38](images/entries/5bd43dd39955e37ace130038b968550c6fa260c5.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image38](images/entries/5bd43dd39955e37ace130038b968550c6fa260c5.gif)
 
 This feature was funded by [Amt für Wald und Wild Zug](https://www.zg.ch/behoerden/direktion-des-innern/wald-und-wild)
 
@@ -541,7 +541,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 In previous version of QGIS, the snapping index cache was built sequentially and you had to wait for all your layers to be indexed before starting edition. Thanks to the QGIS.org grant program, QGIS now builds the snapping index cache in parallel for each layer, so it speeds up the whole process. Snapping has also been relaxed, meaning that you don\'t have to wait for the cache to be complete, you can start editing and snapping information will appear as soon as they are ready.
 
-![image39](images/entries/d77958db7175267448d9b94950532dee8b90145c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image39](images/entries/d77958db7175267448d9b94950532dee8b90145c.png)
 
 This feature was funded by [QGIS.org](https://qgis.org)
 
@@ -569,7 +569,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 We added the ability to add a new feature and digitize its geometry directly from within the relation editor widget. It\'s now easier to add a geometric feature related to your currently displayed parent feature.
 
-![image40](images/entries/fe03aefab87464e54b70569e6d05ad09a1b8fae5.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image40](images/entries/fe03aefab87464e54b70569e6d05ad09a1b8fae5.gif)
 
 This feature was funded by [QWAT user group](http://qwat.org/about/)
 
@@ -579,7 +579,7 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 
 From the relation editor widget, you can link your currently displayed feature with existing features. The feature selection dialog allows you to choose these features. Thanks to the QWAT user group, feature selection is now shared with the canvas\' one so it is easy to find out and pick the feature you want to link. We have also added the ability to filter displayed features (selected ones, visible on map, matching an expression\...) reusing the same widgets already existing in attribute form.
 
-![image41](images/entries/a65364e6a48857a8720643c41a3cb17461d9e16a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image41](images/entries/a65364e6a48857a8720643c41a3cb17461d9e16a.gif)
 
 This feature was funded by [QWAT user group](http://qwat.org/about/)
 
@@ -592,7 +592,7 @@ The drag\'n\'drop form designer has received some nice UX improvements
 -   The two lists (available fields and layout tree) are now synchronized: whenever you select an entry in a list, the matching item is selected in the other one.
 -   Hidden config dialogs (under double-click) have been brought to the right panel
 
-![image42](images/entries/5f47cb6311a9bffef94128a703719d709deb995a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image42](images/entries/5f47cb6311a9bffef94128a703719d709deb995a.gif)
 
 This feature was funded by QGIS.org bugfixing
 
@@ -618,7 +618,7 @@ This feature was developed by [Sandro Mani](https://api.github.com/users/manisan
 
 A new algorithm in QGIS's analysis library API to export directly contour lines and polygons is added. The method is not based on GDAL algorithms, but directly uses mesh layer triangular mesh interpolation methods. It is both fast and with smooth shapes, matching rendered images from QGIS. You can try the new processing algorithm in Crayfish processing toolbox.
 
-![image44](images/entries/044ad55bfb4287026b4e002c46c8687093488d22.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image44](images/entries/044ad55bfb4287026b4e002c46c8687093488d22.png)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
@@ -628,7 +628,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 You can use mesh calculator for all dataset types, both defined on faces and vertices. Additionally, it allows users to store the result of mesh calculator under different name or format. This allows for example to work with FLO-2D or HEC-RAS data in the QGIS mesh calculator
 
-![image45](images/entries/044d52fe937887854583ecfdc551e73eafb94a41.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image45](images/entries/044d52fe937887854583ecfdc551e73eafb94a41.png)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
@@ -640,7 +640,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 We improved the existing *package layers* processing algorithm to be able to add new layers to existing GeoPackages. All you need to do to make use of this is disable the OVERWRITE parameter and specify an existing GeoPackage.
 
-![image46](images/entries/35d87f4826aad132de4a0b99ac7c775f6aa9b029.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image46](images/entries/35d87f4826aad132de4a0b99ac7c775f6aa9b029.png)
 
 This feature was funded by [BikePlan](https://www.bikeplan.ch/)
 
@@ -650,7 +650,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 The Fuzzify raster (linear membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a linear fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a linear membership function.
 
-![image47](images/entries/bfb37d710293c252dae11b67b25bdc1431f13815.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image47](images/entries/bfb37d710293c252dae11b67b25bdc1431f13815.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -658,7 +658,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (power membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a power fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a power membership function.
 
-![image48](images/entries/7a81ecd4414ee39b37e575863687615c88e9a856.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image48](images/entries/7a81ecd4414ee39b37e575863687615c88e9a856.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -666,7 +666,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (small membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'small\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'small\' membership function. The \'small\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
 
-![image49](images/entries/2bef948a7b02bd26208ca98e9ddb243d46d104a6.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image49](images/entries/2bef948a7b02bd26208ca98e9ddb243d46d104a6.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -674,7 +674,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (large membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'large\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'large\' membership function.The \'large\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
 
-![image50](images/entries/10963d11812664a76d4fc3fac72777c34a08c767.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image50](images/entries/10963d11812664a76d4fc3fac72777c34a08c767.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -682,7 +682,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (gaussian membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'gaussian\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'gaussian\' membership function. The gaussian function is constructed using two user-defined input values which set the midpoint of the gaussian function (midpoint, results to 1) and a predefined function spread which controls the function spread.
 
-![image51](images/entries/58068dc6518a0df20a39df69ea4175f7b196b049.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image51](images/entries/58068dc6518a0df20a39df69ea4175f7b196b049.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -690,7 +690,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (near membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'near\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'near\' membership function. The near function is constructed using two user-defined input values which set the midpoint of the near function (midpoint, results to 1) and a predefined function spread which controls the function spread.
 
-![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -698,7 +698,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We ported the Densify by count algorithm to C++ in order to enhance it\'s speed when compared to the previous Python implementation. The new algorithm also exposes the count parameter as dynamic parameter so that it can be controlled by expressions or field values.
 
-![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -706,7 +706,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We ported the Random points in extent algorithm to C++. This boosts it\'s speed when comparing it to the previous Python implementation. The new algorithm also exposes an advanced parameter of maximum numbers of retrys for the algorithm when searching for randomly placed points that respect a certain distance between all points.
 
-![image54](images/entries/c452431d9a2cd9f9f76869cf98e09e18bf2a81a4.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image54](images/entries/c452431d9a2cd9f9f76869cf98e09e18bf2a81a4.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -714,7 +714,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 In this version we added a native algorithm to calculate the raster based density of lines. This algorithm calculates the line density based on a search radius and weights of the lines inside the search radius. The algorithm was ported to provide more functionality form the ArcGIS Spatial Analyst extension in QGIS.
 
-![image55](images/entries/b28bbe3d5129ccc5dd61585dc1a9e31383a59c6f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image55](images/entries/b28bbe3d5129ccc5dd61585dc1a9e31383a59c6f.png)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -722,7 +722,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We added a new algorithm which uses GDAL to repair shapefiles which have a broken or missing .SHX file.
 
-![image56](images/entries/c3a6a174187284126ea0af289614505ab8c0c593.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image56](images/entries/c3a6a174187284126ea0af289614505ab8c0c593.png)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
@@ -738,7 +738,7 @@ If any features in the original or revised layers do not have an associated geom
 
 The algorithm outputs three layers, one containing all features which are considered to be unchanged between the revisions, one containing features deleted from the original layer which are not present in the revised layer, and one containing features add to the revised layer which are not present in the original layer.
 
-![image57](images/entries/e38dcea12e1198341eb9f0bd45a33ebf7eda390b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image57](images/entries/e38dcea12e1198341eb9f0bd45a33ebf7eda390b.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -746,7 +746,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 This allows for easy polygon-\>polygon joins, where you expect there to be only a single matching feature and don\'t want to include features which are just touching or have just tiny sliver polygon overlaps.
 
-![image58](images/entries/27b8e5e11deca93ffade31b86edc712ce918d179.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image58](images/entries/27b8e5e11deca93ffade31b86edc712ce918d179.png)
 
 This feature was funded by SMEC/SJ
 
@@ -762,7 +762,7 @@ Offers the following benefits over the GRASS/SAGA versions:
 -   Allows transformation and scaling of both Z and M values (if present)
 -   Supports in-place edit mode
 
-![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.png)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -778,7 +778,7 @@ This feature was developed by Alexander Bruy
 
 Add customization of the items shown in browser to the Interface Customization dialog. User can hide some of the root items in the browser panel (e.g. Favourites, PostGIS provider, MSSQL, Oracle, Volumes, \...)
 
-![image60](images/entries/5e8e9037420b83cd44d4e1994d4119e4ae92c8aa.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image60](images/entries/5e8e9037420b83cd44d4e1994d4119e4ae92c8aa.png)
 
 This feature was funded by [Limerick City and County Council](https://www.limerick.ie/council)
 
@@ -788,7 +788,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 This feature allows .htm(l) files to be shown and opened from the browser panel. These are often used to document data files or mapping projects.
 
-![image61](images/entries/0db8930d20ca6f2fbf5b29593afdcf59e1af8d1e.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image61](images/entries/0db8930d20ca6f2fbf5b29593afdcf59e1af8d1e.png)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
@@ -800,7 +800,7 @@ E.g. PDFs will open with the default external PDF viewer.
 
 Works with PDF, ODS, XLS(X), CSV, TXT, PNG, JPEG, TIFF, SVG (other types will likely need more work, since they aren\'t currently shown in the browser).
 
-![image62](images/entries/447f201d2342a64912bbef1e1d0aa3ebb8963ae4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image62](images/entries/447f201d2342a64912bbef1e1d0aa3ebb8963ae4.gif)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
@@ -840,7 +840,7 @@ This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
 
 ### Feature: Fetch and show dimensions metadata for a WMS layer metadata
 
-![image65](images/entries/d058ac6b89a8d06169b06580843967ad26e1ef54.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image65](images/entries/d058ac6b89a8d06169b06580843967ad26e1ef54.png)
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
@@ -848,7 +848,7 @@ This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
 
 ### Feature: Added refresh action to OGC services entries
 
-![image66](images/entries/7ce331ee78be7f8b0693c653ecc58916d70a1a92.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image66](images/entries/7ce331ee78be7f8b0693c653ecc58916d70a1a92.gif)
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
@@ -858,7 +858,7 @@ This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
 
 MDAL and QGIS now supports 3D Stacked Meshes, particularly for TUFLOW-FV format. For this release, you need to choose appropriate averaging method in the QGIS interface and you are able to browse the data similarly to any other 2D dataset.
 
-![image67](images/entries/dc3d85153d9bcecdf7ebbc6433c7cb40319e00dd.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image67](images/entries/dc3d85153d9bcecdf7ebbc6433c7cb40319e00dd.png)
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
@@ -950,7 +950,7 @@ This feature was developed by [Peter Petrik](https://api.github.com/users/PeterP
 
 This new provider is a client-side implementation of the recently adopted [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) specification, previously known as WFS3. It is integrated within the graphical user interface of the WFS provider, and leverages its core mechanisms to offer background downloading of features, using paging, and a local cache of already downloaded features for a smoother interactive use of datasets.
 
-![image70](images/entries/d74a13f520336e0c2e44469ee4e527188e2466de.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image70](images/entries/d74a13f520336e0c2e44469ee4e527188e2466de.png)
 
 This feature was funded by [Planet](https://planet.com)
 

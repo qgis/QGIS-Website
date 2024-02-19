@@ -11,7 +11,7 @@ sidebar: true
 
 # Changelog for QGIS 3.26 {#changelog326}
 
-![image1](images/projects/916ce336f8f5939eb158506ea38290af6f1ce0f0.png){.img-responsive .img-rounded .center-block .img-responsive .img-rounded .center-block}
+![image1](images/projects/916ce336f8f5939eb158506ea38290af6f1ce0f0.png)
 
 Release date: 2022-06-17
 
@@ -46,7 +46,7 @@ The DB2 provider has been marked deprecated and hidden from the QGIS UI for a nu
 
 The identify results tools now provides an option available from the context menu of an attribute field value which allows for the quick selection of all features in that layer with matching values to be selected.
 
-![image3](images/entries/d2f2d4bf5b05b7e21aa6ff0957ad8be8ccda082f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image3](images/entries/d2f2d4bf5b05b7e21aa6ff0957ad8be8ccda082f.gif)
 
 This feature was funded by [Camptocamp](https://www.camptocamp.com)
 
@@ -60,7 +60,7 @@ QGIS will now use the correct coordinate ordering for the project CRS when displ
 
 Specifically, this means that projects in geographic CRS like EPSG:4326 will now show coordinates in latitude/longitude order instead of longitude/latitude (unless the specific CRS has different native ordering).
 
-![image4](images/entries/7dada94231069c7f647d9a4a239d57506ad14bfd.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image4](images/entries/7dada94231069c7f647d9a4a239d57506ad14bfd.gif)
 
 This feature was funded by SevenCs GmbH
 
@@ -70,7 +70,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 A \"Select Features\" action has been added to the right click context menu on legend class symbols. This allows you to rapidly select all features within a layer that match the associated symbol class in categorized, graduated, and rule based renderers.
 
-![image5](images/entries/965a5e626ced053fd00fc33288c17330b7f920a0.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image5](images/entries/965a5e626ced053fd00fc33288c17330b7f920a0.gif)
 
 This feature was funded by City of Canning
 
@@ -80,7 +80,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 A new button has been added to the expression builder interface which allows the copying of the value in the expression preview field to the clipboard.
 
-![image6](images/entries/0ecfdc2b0f6dae82ab5650f4d1d97d37df33aee4.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image6](images/entries/0ecfdc2b0f6dae82ab5650f4d1d97d37df33aee4.gif)
 
 This feature was funded by [Camptocamp](https://www.camptocamp.com/)
 
@@ -92,7 +92,7 @@ A \"Keep synchronized with TOC\" checkbox has been added to the statistics panel
 
 The most recently defined expression used for defining the statistics calculation on a layer will be retained for each layer independently.
 
-![image7](images/entries/0075fa6cc3b8410072eeec8bb43ac4cef4c38e61.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image7](images/entries/0075fa6cc3b8410072eeec8bb43ac4cef4c38e61.png)
 
 This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
 
@@ -105,7 +105,7 @@ Triggering a mouse wheel action while hovering a symbol layers will now automati
 
 In addition, when triggering a mouse wheel action while hovering a color symbol, the color opacity will increase / decrease.
 
-![image8](images/entries/ab668355973259b389bd2623c4b1ba01b5e8f237.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image8](images/entries/ab668355973259b389bd2623c4b1ba01b5e8f237.gif)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -117,7 +117,7 @@ Attribute tables can now be scrolled horizontally using the key combination of S
 
 This matches the behavior exposed by LibreOffice, and provides a convenient way to quickly horizontally scroll tables when a mouse doesn\'t have a dedicated horizontal scroll wheel.
 
-![image9](images/entries/7bf2a8d0d0500149ed7b1cb5edb22b8cd6258c86.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image9](images/entries/7bf2a8d0d0500149ed7b1cb5edb22b8cd6258c86.gif)
 
 This feature was funded by the City of Canning
 
@@ -134,7 +134,7 @@ There are two ways in which animated symbols are handled.
 -   If the map is NOT considered an animation (i.e. a regular QGIS project), then the frame to render will be based on the current timestamp alone.
 -   If the map itself is considered an animation, then the frame rendered for the animated marker is based on the map animation frame and frame rate. This is the case when the temporal controller is set to the Animation mode. In this case, the animated markers will follow the temporal controller animation, e.g. pausing when the animation is paused, advancing frames with the animation, etc. This mode also applies when exporting an animation from the temporal controller and is used when a plugin specifically sets the frame rate and current frame properties.
 
-![image10](images/entries/e5330839c8c13220ccbbb2ea1c5fc556548a21be.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image10](images/entries/e5330839c8c13220ccbbb2ea1c5fc556548a21be.gif)
 
 This feature was funded by [North Road Consulting](https://north-road.com)
 
@@ -150,7 +150,7 @@ For instance, setting the symbol\'s rotation to the following data defined expre
 
     @symbol_frame % 360
 
-![image11](images/entries/c5c8938147137d9264d57a56c00548cc535cdaa2.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image11](images/entries/c5c8938147137d9264d57a56c00548cc535cdaa2.gif)
 
 This feature was funded by [North Road Consulting](https://north-road.com)
 
@@ -160,7 +160,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 Allows users to create graduated breaks using a specific interval width for classes (instead of the total number of classes).
 
-![image13](images/entries/5f4efe2866e8ba166c3948fb22946ec1ed3fa02b.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image13](images/entries/5f4efe2866e8ba166c3948fb22946ec1ed3fa02b.gif)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -170,7 +170,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 The custom dash pattern panel now displays the total dash pattern length, enhancing the ability for users to match the overall pattern length with sizes from other parts of a symbol.
 
-![image14](images/entries/201cc3be8689d55102c675c4af0ffdf4204c2a2b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image14](images/entries/201cc3be8689d55102c675c4af0ffdf4204c2a2b.png)
 
 This feature was funded by [North Road Consulting](https://north-road.com)
 
@@ -182,7 +182,7 @@ QGIS supports the storing of layer styles in the source database, or in the loca
 
 In prior releases of QGIS, this process stored all available style categories in the database, however new functionality allows users to select which specific style categories should be stored, providing a similar level of flexibility for storing styles in database sources as was previously available only for the QML and SLD style formats.
 
-![image15](images/entries/0bd238b2326485fe91d8dd6f2aa8956e5534a5e3.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image15](images/entries/0bd238b2326485fe91d8dd6f2aa8956e5534a5e3.png)
 
 This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
 
@@ -216,7 +216,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 Placement of curved label text can now be manipulated by using the interactive \"Move Labels\" tool.
 
-![image16](images/entries/31ad531d280be178c752850a8860a95f2b8c3bf2.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image16](images/entries/31ad531d280be178c752850a8860a95f2b8c3bf2.gif)
 
 This feature was funded by City of Freiburg im Breisgau
 
@@ -228,7 +228,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 Following the ability of QGIS 3.24 to convert WMS raster tiles to elevation data, QGIS has further been enhanced to include various resampling methods to reduce rendering artifacts in WMS DEM sources, such as pixelation encountered with hillshade rendering.
 
-![image17](images/entries/60b9ae3354e9c6e2086986aee3b0828dc738187f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image17](images/entries/60b9ae3354e9c6e2086986aee3b0828dc738187f.gif)
 
 This feature was funded by [Maptiler](https://www.maptiler.com/)
 
@@ -242,7 +242,7 @@ This long awaited feature implements selective masking in a way that vectorizes 
 
 This is implemented in line with [QEP 186](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/186).
 
-![image18](images/entries/c717fac5bdd68a9f803738c77a5637fc070823e0.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image18](images/entries/c717fac5bdd68a9f803738c77a5637fc070823e0.png)
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
@@ -252,7 +252,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 Provides support for rendering semi transparent objects in 3D. An opacity slider is provided for the phong material widget, which defaults to 100% (fully opaque).
 
-![image19](images/entries/38a2c9b60971a3056d2749373b2153e59eb0b3e1.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image19](images/entries/38a2c9b60971a3056d2749373b2153e59eb0b3e1.png)
 
 This feature was funded by [Swedish QGIS user group.](https://www.qgis.se/)
 
@@ -276,7 +276,7 @@ A new \"Navigation sync\" setting for 3D map frames provides the ability to auto
 
 Actions are also available for quickly turning these options on and off.
 
-![image20](images/entries/9438a5861c6891d7123bdba4918fd4cd9da82343.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image20](images/entries/9438a5861c6891d7123bdba4918fd4cd9da82343.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -291,7 +291,7 @@ This various additional includes controls and options for:
 -   Displaying axis for X/Y/Z or using North/East/South/West based on the frame coordinate reference system (CRS)
 -   Displaying a face-labeled cube instead of typical axis arrows
 
-![image21](images/entries/bc7d732eed29aa4c9cd5a3888d2b80262960f41a.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image21](images/entries/bc7d732eed29aa4c9cd5a3888d2b80262960f41a.gif)
 
 This feature was developed by [benoitdm-oslandia](https://github.com/benoitdm-oslandia)
 
@@ -305,7 +305,7 @@ Triangulation is configured using a checkbox in the 3D styling options, and conf
 
 This triangulation is available for all the 3D point cloud renderer styles, including unique color, ramp color, classification, and RGB.
 
-![image22](images/entries/4b103066398ae065f4e3eb1e898356fceda8ef1d.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image22](images/entries/4b103066398ae065f4e3eb1e898356fceda8ef1d.png)
 
 This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
 
@@ -323,7 +323,7 @@ This feature was developed by [Lutra Consulting (Nedjima Belgacem)](https://www.
 
 Filtering support has been added for point cloud layers, including a graphical query tool. Using filter expressions, point cloud points on both 2d and 3d canvases may be conditionally displayed based on xyz and/or LAS attributes.
 
-![image23](images/entries/a86ac2e8e5f5f1dbdc9630e2b71d4e62686362d9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image23](images/entries/a86ac2e8e5f5f1dbdc9630e2b71d4e62686362d9.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -333,7 +333,7 @@ This feature was developed by [Lutra Consulting (Stefanos Natsis)](http://www.lu
 
 A new \"Follow 2d renderer\" style for 3D point cloud symbology allows for a point cloud layer\'s 3D symbol to be kept in sync with its 2D counterpart. Any changes to the 2D symbology will be automatically applied to the 3D symbology.
 
-![image12](images/entries/9fde94a418b67018b72ad7d0e71c01cf9bc19afa.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image12](images/entries/9fde94a418b67018b72ad7d0e71c01cf9bc19afa.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -347,7 +347,7 @@ Classified renderer for point clouds has been improved to:
 -   Show percentage of points for each class
 -   Work also for other attributes (return number, number of returns, point source and few other classes)
 
-![image55](images/entries/74d4c97f9c4d402e928893c88f331e9.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image55](images/entries/74d4c97f9c4d402e928893c88f331e9.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -359,7 +359,7 @@ This feature was developed by [Lutra Consulting (Stefanos Natsis)](http://www.lu
 
 Previously, only the font color and background color settings from the conditional styling rules were applied to attribute tables in layouts. Additional styling settings such as font family, bold, italic, strikeout, and underline are now applied from conditional rules.
 
-![image24](images/entries/a15e95f80ef5f86dd2de37e4e1642984db89f8a9.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image24](images/entries/a15e95f80ef5f86dd2de37e4e1642984db89f8a9.gif)
 
 This feature was funded by City of Canning
 
@@ -369,7 +369,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 Adds data defined overrides to the Scalebar layout item. This feature is useful when generating an atlas with the atlas feature containing the scale as a field. The map can be driven by this value, but the scalebar cannot. This implements #48084, which allows the scalebar properties to be data driven by the atlas feature.
 
-![image56](images/entries/d3e680f3e4facc9078e4755045152d57f7dc680f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image56](images/entries/d3e680f3e4facc9078e4755045152d57f7dc680f.png)
 
 This feature was developed by [Ethan Snyder](https://github.com/esnyder-rve)
 
@@ -379,7 +379,7 @@ This feature was developed by [Ethan Snyder](https://github.com/esnyder-rve)
 
 QGIS now includes support for SQL-like `BETWEEN` and `NOT BETWEEN` operators in expression clauses.
 
-![image25](images/entries/01fbc5c6454d48b126daa9597332ca8e94811608.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image25](images/entries/01fbc5c6454d48b126daa9597332ca8e94811608.gif)
 
 This feature was funded by Kanton Solothurn
 
@@ -412,7 +412,7 @@ This is desirable in situations when:
 
 If a user has opted out of the auto-open table behavior, then the dock can be closed and won\'t show immediately when switching to the vertex tool. The dock can then be re-opened either through the standard Views - Panels menu (or by right clicking a toolbar), OR through a new \"Show Vertex Editor\" action which has been added to the dropdown menu for the vertex editor toolbar button.
 
-![image26](images/entries/b8569c513e1dffa0fabb253e8074588d44cce5eb.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image26](images/entries/b8569c513e1dffa0fabb253e8074588d44cce5eb.gif)
 
 This feature was funded by SevenCs GmbH
 
@@ -433,7 +433,7 @@ This results in the ability to use the add part, add ring, or any other digitizi
 
 This required significant refactoring and the porting of code from `QgsMapToolDigitizeFeature` to `QgsMapToolCapture`.
 
-![image27](images/entries/c0a8faef50107305ea8a04e92f68f9d7518507ff.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image27](images/entries/c0a8faef50107305ea8a04e92f68f9d7518507ff.gif)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 
@@ -444,7 +444,7 @@ The advanced digitizing panel now includes two additional soft constraints (snap
 -   **Line extension**: QGIS will provide a constraint that traces the extension of a line, based on the segment orientation defined by the selected vertex
 -   **Xy vertex**: QGIS will provide a constraint that runs perpendicular to an existing vertex in vertical or horizontal orientation.
 
-![image28](images/entries/4a68cb3c6e9a4f55c5f95ca4b827405ce0aed526.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image28](images/entries/4a68cb3c6e9a4f55c5f95ca4b827405ce0aed526.gif)
 
 This feature was funded by Métropole Européenne de Lille \@Jean-Roc
 
@@ -456,7 +456,7 @@ This feature was developed by [Antoine Facchini](https://github.com/Koyaani)
 
 Users may now filter the visible rules by a portion of their label, layer or filter strings. This can greatly help with finding rules in complex vector tile styles.
 
-![image29](images/entries/1cb1d1557bac8d4552a3ef617a27e0fcf9c082ff.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image29](images/entries/1cb1d1557bac8d4552a3ef617a27e0fcf9c082ff.gif)
 
 This feature was funded by [North Road Consulting](https://north-road.com)
 
@@ -472,7 +472,7 @@ The export dialog fields interface includes the following changes:
 -   A convenience checkbox is provided to automatically generate aliases, or revert to original field names
 -   When field names are modified by the user, the checkbox will display a \"PartiallyChecked\" state indicator
 
-![image30](images/entries/77669a9cc8355f9fae0e331a28de7ace46e730d6.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image30](images/entries/77669a9cc8355f9fae0e331a28de7ace46e730d6.gif)
 
 This feature was funded by the Swiss QGIS User Group
 
@@ -484,7 +484,7 @@ QGIS now supports georeferencing vector layers in the georeferencer tool. This a
 
 Based on [#41386](https://github.com/qgis/QGIS/pull/41386)
 
-![image31](images/entries/b6e89fcd31aec118497af05f94586d2bbf6f4491.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image31](images/entries/b6e89fcd31aec118497af05f94586d2bbf6f4491.gif)
 
 This feature was funded by the Danish QGIS Usergroup
 
@@ -498,7 +498,7 @@ This functionality is currently exposed only for GeoPackages, but support for ot
 
 Included in this functionality is the ability to create new field domains, as well as set the field domain for GeoPackage table fields.
 
-![image32](images/entries/e5f0feb4e3c4d925c98336d8938170ac9bb9fc1c.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image32](images/entries/e5f0feb4e3c4d925c98336d8938170ac9bb9fc1c.gif)
 
 This feature was funded by Provincie Gelderland
 
@@ -510,7 +510,7 @@ With this edit mode, all editable layers are toggled synchronously and all edits
 
 This new edit mode attempts to provide a hybrid alternative for managing the data editing approaches used in the current editing modes, local edit buffers and transactional editing, and is implemented in line with [QEP 203](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/203)
 
-![image33](images/entries/c7c3eea32a0cf34a07a9325fd87fdefcf8afb280.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image33](images/entries/c7c3eea32a0cf34a07a9325fd87fdefcf8afb280.png)
 
 This feature was funded by Kanton Glarus
 
@@ -526,7 +526,7 @@ This means that QGIS users can now reference the current form and produce action
 
 This implementation has been done in line with [QEP 251](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/251)
 
-![image34](images/entries/8f71244038218dae15182ee507699de0050b405d.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image34](images/entries/8f71244038218dae15182ee507699de0050b405d.gif)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -534,7 +534,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 The font and color of form labels and group or tabs titles can now be customized in the Drag & Drop from designer interface.
 
-![image35](images/entries/df03bff457eac65712cad54d0acee177526a3f13.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image35](images/entries/df03bff457eac65712cad54d0acee177526a3f13.png)
 
 This feature was funded by ARPA Piemonte
 
@@ -544,7 +544,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 New configuration options are now available for Drag & Drop form group boxes which allow specifying an expression to define whether a form group should be collapsed.
 
-![image36](images/entries/d601af9dff97189a63c0c9d7125ad9d50de3ff66.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image36](images/entries/d601af9dff97189a63c0c9d7125ad9d50de3ff66.png)
 
 This feature was funded by ARPA Piemonte
 
@@ -556,7 +556,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 A \"Keep disjoint features separate\" option has been added for the dissolve algorithm which will cause features and parts that do not overlap or touch to be exported as separate features instead of parts of a single multipart feature. This makes it much simpler to perform simple aggregation based dissolves on a single class.
 
-![image37](images/entries/350b223b3d7b647643338f57158c2b139df11f87.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image37](images/entries/350b223b3d7b647643338f57158c2b139df11f87.png)
 
 This feature was funded by City of Canning
 
@@ -568,7 +568,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 A raise message algorithm has been added to the model tools which allows users to output additional information in models logs. This prevents the abuse of the raise error/warning algorithms and provides more granular control of model logging levels.
 
-![image38](images/entries/e2433bb4fe23b076129ea4accd516e3b7939d64f.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image38](images/entries/e2433bb4fe23b076129ea4accd516e3b7939d64f.gif)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -594,7 +594,7 @@ A new \'Examples\' section has been added to the graphical model help editor dia
 
 More instructive help is now shown for models in the qgis_process tool, including outputting any example help which has been set.
 
-![image39](images/entries/64e788f716481fbb085a0ba70e8cc4f2333ad744.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image39](images/entries/64e788f716481fbb085a0ba70e8cc4f2333ad744.gif)
 
 This feature was funded by NRCan Contract#3000739399
 
@@ -606,7 +606,7 @@ Adds new Intersect, Union and Difference tools which support multiple \"overlay\
 
 This is a useful abstraction which can be utilized in various scenarios, such as processing models where iterative processes or loops may be limited.
 
-![image40](images/entries/419403e295be2748e89100cb31117685b151e409.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image40](images/entries/419403e295be2748e89100cb31117685b151e409.png)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
@@ -622,7 +622,7 @@ This framework provides configuration options for:
 -   **DEM (Raster Layer)** with settings for defining the source raster layer, vertical scale and offset
 -   **Mesh** with settings for defining the source mesh layer, vertical scale and offset
 
-![image41](images/entries/c58fa193b00b77b743b17b9ef50336f1b13d1b9f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image41](images/entries/c58fa193b00b77b743b17b9ef50336f1b13d1b9f.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -634,7 +634,7 @@ An opt-in setting for projects has been added for \"Remember attribute table win
 
 This has been designed to improve workflows when a user has constructed a project with a particular set of attribute table configurations for their requirements, and re-setting up these attribute tables is a hassle.
 
-![image42](images/entries/a9b8aad7c60417bb1d7a811da40af7a1b763efbe.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image42](images/entries/a9b8aad7c60417bb1d7a811da40af7a1b763efbe.gif)
 
 This feature was funded by City of Canning
 
@@ -644,7 +644,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 An opt-in setting has been added to project properties for \"Remember editable layer status between sessions\". If checked, then any layers which are editable will be remembered when saving that project and immediately made editable whenever the project is restored to make it simpler for users who are making complex, data-editing focused projects to store their configurations on a project by project basis.
 
-![image43](images/entries/04bf91d7cd37549d0949e2d3c67be6e7a809a3a5.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image43](images/entries/04bf91d7cd37549d0949e2d3c67be6e7a809a3a5.png)
 
 This feature was funded by City of Canning
 
@@ -658,7 +658,7 @@ The style paths can point to style .db databases or .xml exports. When a project
 
 **This functionality requires a QGIS build based on Qt 5.13 or later, and is hidden on older builds (e.g. on Ubuntu 20.04)**
 
-![image44](images/entries/6172a0a8196db373e0eac8edbcbf790ae9532ba8.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image44](images/entries/6172a0a8196db373e0eac8edbcbf790ae9532ba8.png)
 
 This feature was funded by the QGIS Swiss user group.
 
@@ -668,7 +668,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 If enabled, this option will cause the feature count to be enabled for any newly added/created map layers. This setting will remain disabled by default.
 
-![image45](images/entries/3706248ef1ca50af9877d04df93d6f3455bce9ca.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image45](images/entries/3706248ef1ca50af9877d04df93d6f3455bce9ca.png)
 
 This feature was funded by SevenCs GmbH
 
@@ -682,7 +682,7 @@ This functionality included options for \"Overwrite\", \"If Undefined\", \"Unset
 
 A new \"Skip\" option is now provided which allows users to ignore values from an existing field, without losing the stored values or having to remove them from the settings to disable them.
 
-![image46](images/entries/31251db3a673149dcd900737dd9aada0fafb93ff.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image46](images/entries/31251db3a673149dcd900737dd9aada0fafb93ff.gif)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -694,7 +694,7 @@ This new version of QGIS has revamped the way default projects symbols are handl
 -   A new project-level default text format setting has been added to allow user defined configuration of the default project font for newly-added vector layers
 -   The user interface has been upgraded to make use of QGIS\' symbol and color ramp buttons
 
-![image47](images/entries/5fca0da47e4af53c46a12dcd5b68a1982afff16b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image47](images/entries/5fca0da47e4af53c46a12dcd5b68a1982afff16b.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -730,7 +730,7 @@ Keyboard shortcuts for nudging are:
 
 For more information on this awesome feature and framework, be sure to watch the [QGIS Elevation Profiles Deep Dive](https://www.youtube.com/watch?v=AknJjNPystU) presentation on YouTube.
 
-![image48](images/entries/6c530f4bfd565313f515ae9f6a79662d1682bfc7.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image48](images/entries/6c530f4bfd565313f515ae9f6a79662d1682bfc7.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -746,7 +746,7 @@ There\'s also options to change the interpretation of the elevation profile for 
 
 Additional rendering capabilities are provided for the \"continuous surface\" interpretation option, such as a \"fill below\" symbol style. This can be easier to interpret in some cases, and helps match expected symbology conventions in certain disciplines.
 
-![image49](images/entries/50ff18ed7962a0fbc09ca17f3b0688db6ed33bd3.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image49](images/entries/50ff18ed7962a0fbc09ca17f3b0688db6ed33bd3.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -762,7 +762,7 @@ Point cloud layers in profile charts include the following symbology features:
 -   Automatic refinement based on plot visible area and scale, with a user controllable max screen error
 -   Control over appearance of points (color, size and shape)
 
-![image50](images/entries/c8cf49088468d798190f56a32c0e6c6d1cefe72f.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image50](images/entries/c8cf49088468d798190f56a32c0e6c6d1cefe72f.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -772,7 +772,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 The elevation profile tool provides support for vector feature extrusion and offset heights for incorporation of 2D vector in profile charts. These propertied can be data defined, and will also be used as the default offset/extrusion settings for any new 3D polygon symbols created for that layer.
 
-![image51](images/entries/3bfe2bcf8051167fd7729ef3c5a2a4f5249f823b.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image51](images/entries/3bfe2bcf8051167fd7729ef3c5a2a4f5249f823b.png)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -784,7 +784,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 Creating new spatial bookmarks from the browser will now default to the \"project bookmark\" category, and a new context menu option has been added for renaming of bookmark groups. The existing behavior of renaming bookmark groups using the F2 key remains unchanged.
 
-![image52](images/entries/79d5021866775b2eb429eb60c96f697ac0c6af49.gif){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image52](images/entries/79d5021866775b2eb429eb60c96f697ac0c6af49.gif)
 
 This feature was funded by [Camptocamp](https://www.camptocamp.com)
 
@@ -810,7 +810,7 @@ Note that this is specifically designed to be used as a debugging and developmen
 
 This has been implemented in line with [QEP 242](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/242).
 
-![image53](images/entries/62594ee3295e3276fe9510f42e2ba54d05153ebd.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image53](images/entries/62594ee3295e3276fe9510f42e2ba54d05153ebd.png)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -877,7 +877,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 A set to null / clear current symbol action has been added to clear the current symbol attached to a symbol button widget.
 
-![image54](images/entries/e7c6ed595485dd51c3bccb87f2a31f9691ad4aae.png){.img-responsive .img-rounded .img-responsive .img-rounded}
+![image54](images/entries/e7c6ed595485dd51c3bccb87f2a31f9691ad4aae.png)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
