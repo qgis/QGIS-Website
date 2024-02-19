@@ -202,9 +202,9 @@ This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
 
 QGIS 2.16 brings improvements to the way you can zoom in and out of the map canvas.
 
--   Holding down `Ctrl`{.interpreted-text role="kbd"} while using the mouse wheel to zoom in or out now results in a finer zoom. This behavior brings canvas into line with composer.
--   Pressing `Ctrl++`{.interpreted-text role="kbd"} or `Ctrl+-`{.interpreted-text role="kbd"} performs an immediate zoom in/out on the map canvas
--   When certain map tools are active, you can perform a web-map style zoom by holding down `Shift`{.interpreted-text role="kbd"} and dragging a rectangle on the map to zoom to that area. This is enabled for the map tools which are not selection tools (since they use shift for adding to selection), and edit tools.
+-   Holding down `Ctrl` while using the mouse wheel to zoom in or out now results in a finer zoom. This behavior brings canvas into line with composer.
+-   Pressing `Ctrl++` or `Ctrl+-` performs an immediate zoom in/out on the map canvas
+-   When certain map tools are active, you can perform a web-map style zoom by holding down `Shift` and dragging a rectangle on the map to zoom to that area. This is enabled for the map tools which are not selection tools (since they use shift for adding to selection), and edit tools.
 
 ![image42](images/entries/5817785cf3d18db78669c2eb2c2be0cf606c3783.gif)
 
@@ -270,14 +270,14 @@ The behavior of the map based selection tools has been refined, with the followi
 
 For click-and-drag selections:
 
--   holding `Shift`{.interpreted-text role="kbd"} = add to selection
--   holding `Ctrl`{.interpreted-text role="kbd"} = subtract from selection
--   holding `Ctrl+Shift`{.interpreted-text role="kbd"} = intersect with current selection
--   holding `Alt`{.interpreted-text role="kbd"} (can be used with `Shift`{.interpreted-text role="kbd"}/`Ctrl`{.interpreted-text role="kbd"} too) = change from \"intersects\" to \"fully contains\" selection mode
+-   holding `Shift` = add to selection
+-   holding `Ctrl` = subtract from selection
+-   holding `Ctrl+Shift` = intersect with current selection
+-   holding `Alt` (can be used with `Shift`/`Ctrl` too) = change from \"intersects\" to \"fully contains\" selection mode
 
 For single-click selections:
 
--   holding `Shift`{.interpreted-text role="kbd"} or `Ctrl`{.interpreted-text role="kbd"} = toggle whether feature is selected (i.e. either add to current selection or remove from current selection)
+-   holding `Shift` or `Ctrl` = toggle whether feature is selected (i.e. either add to current selection or remove from current selection)
 
 This change brings the canvas behavior into line with other design apps and also with the composer behavior.
 
@@ -598,7 +598,7 @@ This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
 
 ### Feature: Form based select and filter
 
-In QGIS 2.16 a new mode was added to the attribute table dialog for searching and filtering features. When activated (using a button on the toolbar or by pressing `CTRL+F`{.interpreted-text role="kbd"}), the dialog will switch to form view and all widgets are replaced with their search widget wrapper variant.
+In QGIS 2.16 a new mode was added to the attribute table dialog for searching and filtering features. When activated (using a button on the toolbar or by pressing `CTRL+F`), the dialog will switch to form view and all widgets are replaced with their search widget wrapper variant.
 
 Alongside each widget is a tool button with options for controlling the search/filter behaviour for that field, eg \"equal to\", \"not equal to\", \"is null\", \"greater than\", etc.., with the options presented matching themselves to the corresponding field and widget type.
 
