@@ -1,9 +1,11 @@
 <section class="section">
     <div class="container">
-        <h2 class="pb-2">
+        <div class="pb-2 columns is-multiline is-gapless">
+        <h2 class="column is-8">
             QGIS supporters
         </h2>
-
+        <a href="#" class="column is-4 align-right">Want to add your logo here?</a>
+        </div>
         <div class="supporters-grid large-grid">
             {{ $.Scratch.Set "counter" 0 }}
             {{ $headlessbundle := .Site.GetPage "/funders" }}

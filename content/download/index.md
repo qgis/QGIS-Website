@@ -11,7 +11,7 @@ url: '/download'
 
 {{< rich-box mode="html" layoutClass="has-right" id="donate-prompt">}}
 {{< rich-content themeClass="coloring-2" >}}
-## Support us
+## Before download starts
 
 QGIS is free of charge, and will always be free of charge if downloaded from QGIS.org.
 
