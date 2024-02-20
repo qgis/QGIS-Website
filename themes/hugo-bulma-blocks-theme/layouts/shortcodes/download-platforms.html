@@ -11,7 +11,8 @@
 function hidePrompt() {
     document.getElementById('donate-prompt').remove();
     document.getElementById('hide-donate-prompt').remove();
-    localStorage.setItem('donatePromptClosed', true);
+    // uncomment next line to show donate-prompt only for the first time
+    // localStorage.setItem('donatePromptClosed', true);
     document.getElementById('download-section').style.display = 'block';
 }
 
@@ -28,23 +29,16 @@ function detectOS() {
     return 'download-win';
 }
 
-if (localStorage.getItem('donatePromptClosed') === 'true') {
-    document.getElementById('download-section').style.display = 'block';
-    document.getElementById('donate-prompt').remove();
-    document.getElementById('hide-donate-prompt').remove();
-}
+// uncomment next lines to show donate-prompt only for the first time
+// if (localStorage.getItem('donatePromptClosed') === 'true') {
+//     document.getElementById('download-section').style.display = 'block';
+//     document.getElementById('donate-prompt').remove();
+//     document.getElementById('hide-donate-prompt').remove();
+// }
 
 const userOS = detectOS();
 document.getElementById('primary-os').appendChild(
     document.getElementById(userOS).querySelector('.content'));
 document.getElementById(userOS).remove();
-
-var spoilerLabels = document.querySelectorAll('.spoiler-label');
-spoilerLabels.forEach(function(label) {
-    label.addEventListener('click', function() {
-        var content = this.parentElement.querySelector('.content');
-        content.classList.toggle('active');
-    });
-});
 
 </script>
