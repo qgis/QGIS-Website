@@ -10,7 +10,11 @@ sidebar: true
 
 # List of Releases
 
-TODO
+Previous releases of QGIS are still available [here](https://qgis.org/downloads) - including older releases for OS X [here](https://qgis.org/downloads/macOS/).
+
+More older releases are available [here](https://download.osgeo.org/qgis/) and for OS X [here](https://www.kyngchaos.com/software/archive/).
+
+Plugins for QGIS are also available [here](https://plugins.qgis.org/plugins/).
 
 # Tests
 
