@@ -161,7 +161,7 @@ Our main repository contains multiple lines of packages for several versions of 
 
 For Ubuntu we also used to have extra packages in a separate repository that are based on [ubuntugis](https://launchpad.net/~ubuntugis), which held more uptodate versions of other GIS packages than Ubuntu itself for LTS versions. If you want those you also need to include ubuntugis-unstable ppa in your /etc/apt/sources.list.d/qgis.list file (see [ubuntugis documentation](https://trac.osgeo.org/ubuntugis/wiki/UbuntuGISRepository)).
 
-{{< rich-box icon="💁" layoutClass="tips">}}
+{{< rich-box icon="💁" layoutClass="tips" mode="html" >}}
 {{< rich-content themeClass="coloring-1" >}}
 ##### Note
 The release packages are only produced once shortly after a new version has been released. As unstable, not yet released debian versions (testing) and ubuntugis-unstable can have library changes the packages might sooner or later be broken for these targets, when the development in debian, ubuntu or ubuntugis-unstable moves on and their packages used as dependencies in qgis change. In that event you can either

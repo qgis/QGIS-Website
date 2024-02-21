@@ -14,17 +14,17 @@ sidebar: true
 
 QGIS has a bunch of mailing lists. See [Mailing lists]({{< ref "community/organisation/mailinglists" >}}) for the different available lists.
 
-If you are going to ask questions please read this: [How to ask a QGIS question?](https://qgis.org/en/site/getinvolved/faq/index.html#how-to-ask-a-qgis-question).
+If you are going to ask questions please read this: [How to ask a QGIS question?](faq/#how-to-ask-a-qgis-question).
 
 ## StackExchange
 
-On [http://gis.stackexchange.com](http://gis.stackexchange.com) you can ask QGIS questions also. If you use the tag `qgis` you’ll see all QGIS related questions and answers: [http://gis.stackexchange.com/?tags=qgis](http://gis.stackexchange.com/?tags=qgis)
+On http://gis.stackexchange.com you can ask QGIS questions also. If you use the tag `qgis` you’ll see all QGIS related questions and answers: http://gis.stackexchange.com/?tags=qgis
 
 ## Communication channels
 
 ### Telegram
 
-There is a lot of user and community related chat (english spoken) on the Telegram channel you can join here: [https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ](https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ)
+There is a lot of user and community related chat (english spoken) on the Telegram channel you can join here: https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ
 
 To join: install Telegram on your phone, register and join via link above.
 
@@ -34,13 +34,13 @@ There is also a web version (https://web.telegram.org) which you can join in the
 
 Matrix (https://matrix.org) is a project for decentralised chat. QGIS has a room accessible by the **#qgis:osgeo.org** alias (among others) which bridges to the libera.chat **#qgis** IRC channel.
 
-To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Elements is easiest, but see [https://matrix.org/docs/projects/try-matrix-now/#clients](https://matrix.org/docs/projects/try-matrix-now/#clients) for more), OR point your browser to [https://matrix.to/#/#qgis:osgeo.org](https://matrix.to/#/#qgis:osgeo.org)
+To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Elements is easiest, but see https://matrix.org/docs/projects/try-matrix-now/#clients for more), OR point your browser to https://matrix.to/#/#qgis:osgeo.org
 
-To use IRC: install an IRC client and connect to [irc://irc.libera.chat/#qgis](irc://irc.libera.chat/#qgis) or point your browser to [https://web.libera.chat/?channels=#qgis](https://web.libera.chat/?channels=#qgis)
+To use IRC: install an IRC client and connect to irc://irc.libera.chat/#qgis or point your browser to https://web.libera.chat/?channels=#qgis
 
 ### Facebook
 
-For Facebook users, an english-speaking global community group for QGIS users can be found at [https://www.facebook.com/groups/qgiscommunityofficialvirtualgroup](https://www.facebook.com/groups/qgiscommunityofficialvirtualgroup)
+For Facebook users, an english-speaking global community group for QGIS users can be found at https://www.facebook.com/groups/qgiscommunityofficialvirtualgroup
 
 ## User Groups
 

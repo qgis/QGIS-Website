@@ -28,7 +28,7 @@ In the development phase, developers work on adding new features for the next re
 
 In the feature freeze phase, new features are not allowed in anymore and the focus of everyone moves from enhancing QGIS to stabilizing it. This also turns the nightly builds effectively into [prereleases](#qgis-prereleases).
 
-**Users** should start extensive testing of these prereleases in their environment to verify that there are no issues, they wouldn’t want to see in the upcoming release. All such issues should be reported (see [Bugs, Features and Issues](https://qgis.org/en/site/getinvolved/development/bugreporting.html#qgis-bugreporting)). Everything that goes unnoticed, will also end up in the next release. Only in case of serious problems backports to a latest release will occur. Therefore testing of the prereleases and reporting issues is very important.
+**Users** should start extensive testing of these prereleases in their environment to verify that there are no issues, they wouldn’t want to see in the upcoming release. All such issues should be reported (see [Bugs, Features and Issues]({{< ref "resources/support/bug-reporting" >}})). Everything that goes unnoticed, will also end up in the next release. Only in case of serious problems backports to a latest release will occur. Therefore testing of the prereleases and reporting issues is very important.
 
 In the feature freeze, **developers** monitor the bugtracker and start working on fixing the reported issues and update the **visual changelog** with the features they added.
 
@@ -121,8 +121,8 @@ Event legend
 
 |Platform|Location|
 |---|---|
-|Windows|[OSGeo4W](../installation-guide/#qgis-windows-testing)|
-|Linux|[Debian/Ubuntu](../installation-guide/#qgis-debian-testing)|
-|MacOS|[Mac OS](../installation-guide/#qgis-macos-testing)|
+|Windows|[OSGeo4W]({{< ref "resources/installation-guide#osgeo4w-installer" >}})|
+|Linux|[Debian/Ubuntu]({{< ref "resources/installation-guide#repositories" >}})|
+|MacOS|[Mac OS]({{< ref "resources/installation-guide#qgis-nightly-release" >}})|
 
 {{< content-end >}}

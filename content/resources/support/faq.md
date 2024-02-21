@@ -37,6 +37,7 @@ QGIS first and find out if the software is useful for the tasks you want to solv
 substantially helps with your business, tasks or processes, you should think about donating towards QGIS or
 supporting it as a sustaining member.
 
+### How to ask a QGIS question?
 If you are going to ask QGIS related question via the [mailing lists]({{< ref "community/organisation/mailinglists" >}}),
 please provide enough information to help others easily understand what your problem is.
 Without a clear and precise question, it is very hard to answer for anybody or

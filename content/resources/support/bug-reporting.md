@@ -18,14 +18,14 @@ Each part of the QGIS Project has a dedicated place where issues (feature reques
 
 |Place you found the bug or request a feature for|Place to report the issue|
 |---|---|
-|Applications (QGIS Desktop, QGIS Server)|[https://github.com/qgis/QGIS/issues](https://github.com/qgis/QGIS/issues)|
-|QGIS Website ([https://qgis.org](https://qgis.org))|[https://github.com/qgis/QGIS-Website/issues](https://github.com/qgis/QGIS-Website/issues)|
-|QGIS Documentation ([https://docs.qgis.org](https://docs.qgis.org))|[https://github.com/qgis/QGIS-Documentation/issues](https://github.com/qgis/QGIS-Documentation/issues)|
-|C++ API ([https://qgis.org/api](https://qgis.org/api))|[https://github.com/qgis/QGIS/issues](https://github.com/qgis/QGIS/issues)|
-|PyQGIS API ([https://qgis.org/pyqgis](https://qgis.org/pyqgis))|[https://github.com/qgis/QGIS/issues](https://github.com/qgis/QGIS/issues) (for contents) and [https://github.com/qgis/pyqgis/issues](https://github.com/qgis/pyqgis/issues) (for formatting)|
+|Applications (QGIS Desktop, QGIS Server)|https://github.com/qgis/QGIS/issues|
+|QGIS Website (https://qgis.org)|https://github.com/qgis/QGIS-Website/issues|
+|QGIS Documentation (https://docs.qgis.org)|https://github.com/qgis/QGIS-Documentation/issues|
+|C++ API (https://qgis.org/api)|https://github.com/qgis/QGIS/issues|
+|PyQGIS API (https://qgis.org/pyqgis)|https://github.com/qgis/QGIS/issues (for contents) and https://github.com/qgis/pyqgis/issues (for formatting)|
 |External plugins|The author repository set in the plugin description|
 
-For help and questions, please contact the [Mailing lists](https://qgis.org/en/site/getinvolved/mailinglists.html#qgis-mailinglists).
+For help and questions, please contact the [Mailing lists]({{< ref "community/organisation/mailinglists" >}}).
 
 ## Reporting issues on QGIS applications
 
@@ -33,7 +33,7 @@ QGIS applications (QGIS Desktop and QGIS Server) issues are available in [Github
 
 ### Before reporting an issue
 
-Before filing an issue, verify that you are running the currently supported versions 3.28.15 or 3.34.3 or the development version 3.35 (see also [Release schedule](https://qgis.org/en/site/getinvolved/development/roadmap.html#qgis-release-schedule)) and review the currently open issues to make sure that you aren’t creating a duplicate. If you have additional information on an issue, you can add it to the existing ticket. Third party plugins might also cause problems. If you have installed any, you should also verify that the problem is still reproducible without them. Please don’t report multiple unrelated bugs in a single bug report.
+Before filing an issue, verify that you are running the currently supported versions 3.28.15 or 3.34.3 or the development version 3.35 (see also [Release schedule]({{< ref "resources/roadmap#release-schedule" >}})) and review the currently open issues to make sure that you aren’t creating a duplicate. If you have additional information on an issue, you can add it to the existing ticket. Third party plugins might also cause problems. If you have installed any, you should also verify that the problem is still reproducible without them. Please don’t report multiple unrelated bugs in a single bug report.
 
 When you’re are logged in, a `New Issue` button is available. Select it and follow the instructions there.
 
@@ -78,9 +78,9 @@ To get started, first [Create a GitHub account](https://github.com/join).
 
 Then, choose the appropriate repository:
 
-- [https://github.com/qgis/QGIS-Documentation/issues](https://github.com/qgis/QGIS-Documentation/issues) for QGIS documentation
+- https://github.com/qgis/QGIS-Documentation/issues for QGIS documentation
     
-- [https://github.com/qgis/QGIS-Website/issues](https://github.com/qgis/QGIS-Website/issues) for the web site
+- https://github.com/qgis/QGIS-Website/issues for the web site
     
 
 Check if the issue you’d like to report is not already entered.
@@ -110,11 +110,11 @@ Most of the plugins in QGIS are published in the official [QGIS Plugins reposito
 
 In addition to issue report, you can help to fix issues. Fixing issues is done in GitHub through pull requests. You need to [fork the repository](https://help.github.com/articles/working-with-forks/) you want to contribute to and submit pull requests at:
 
-- [https://github.com/qgis/QGIS](https://github.com/qgis/QGIS) for QGIS Desktop or QGIS Server applications
+- https://github.com/qgis/QGIS for QGIS Desktop or QGIS Server applications
     
-- [https://github.com/qgis/QGIS-Website](https://github.com/qgis/QGIS-Website) for the web site at [https://qgis.org](https://qgis.org)
+- https://github.com/qgis/QGIS-Website for the web site at https://qgis.org
     
-- [https://github.com/qgis/QGIS-Documentation](https://github.com/qgis/QGIS-Documentation) for the documentation available at [https://docs.qgis.org](https://docs.qgis.org)
+- https://github.com/qgis/QGIS-Documentation for the documentation available at https://docs.qgis.org
     
 
 You can find a few guidelines that will help you to easily get your patches and pull requests into QGIS projects at [Submitting Pull Requests](https://docs.qgis.org/testing/en/docs/developers_guide/git.html#submitting-pull-requests). And more widely, You may need to read the [Development Process](https://docs.qgis.org/testing/en/docs/developers_guide/git.html) chapter.
