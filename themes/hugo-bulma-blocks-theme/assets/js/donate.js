@@ -2,7 +2,7 @@ function updatePaymentLink() {
   // set href to "Donate" button depending on selected value
   let paymentLink = document.getElementById('donate-stripe').querySelector('input[name="amount"]:checked').value;
   let donateBtn = document.getElementById('submit-button');
-  donateBtn.href = "https://donate.stripe.com/" + paymentLink;
+  donateBtn.href = paymentLink;
 };
 
 function updateCurrency() {
