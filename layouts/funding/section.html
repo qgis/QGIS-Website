@@ -4,3 +4,6 @@
 {{ partial "banner.html" . }}
 {{ .Content }}
 {{ partial "footer.html" . }}
+{{ if ( .Site.Params.cookiesstate ) }}
+    {{ partial "cookie-notice.html" }}
+{{ end }}

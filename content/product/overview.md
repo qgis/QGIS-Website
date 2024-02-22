@@ -14,7 +14,7 @@ LabelText: "Free and open source"
 {{< content-start  >}}
 ## Key features 
 
-{{< tabs >}}
+{{< tabs tab1="Create map" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
 
 {{< columns-start id="content-tab-1" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds" >}}
