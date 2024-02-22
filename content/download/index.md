@@ -88,4 +88,6 @@ For testing and learning purposes, [a sample dataset is available](https://docs.
 
 {{< /download-platforms >}}
 
+{{< script src="js/spoiler.js" >}}
+
 {{< content-end >}}

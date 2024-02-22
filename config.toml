@@ -370,6 +370,18 @@ sectionPagesMenu = 'main'
   weight = 30
 
 [[menu.main]]
+  parent = "Releases"
+  name = "List of releases"
+  url = "/resources/releases/"
+  weight = 30
+
+[[menu.main]]
+  parent = "Releases"
+  name = "Tests"
+  url = "/resources/releases/#tests"
+  weight = 30
+
+[[menu.main]]
   parent = "Resources"
   name = "Roadmap"
   url = "/resources/roadmap/"
@@ -384,7 +396,7 @@ sectionPagesMenu = 'main'
 [[menu.main]]
   parent = "Reports"
   name = "OGC Certification"
-  url = "/resources/ogc-certification/"
+  url = "/resources/reports/#ogc-certification"
   weight = 60
 
 [[menu.main]]
@@ -414,7 +426,7 @@ sectionPagesMenu = 'main'
 [[menu.main]]
   parent = "Support"
   name = "FAQ"
-  url = "/resources/support/#faq"
+  url = "/resources/support/faq"
   weight = 110
 
 [[menu.main]]
