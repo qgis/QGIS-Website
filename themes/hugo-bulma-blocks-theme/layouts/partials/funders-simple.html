@@ -1,10 +1,23 @@
 <section class="section">
     <div class="container">
-        <h2 class="pb-2">
-            QGIS supporters
-        </h2>
-
+        <div class="pb-2">
+            <h2>
+                QGIS supporters
+            </h2>
+        </div>
         <div class="supporters-grid large-grid">
+            <div class="large-supporter is-vertical is-flex fund-Flagship add-supporter">
+                <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
+                    <a href="/community/members/sustaining_member/">
+                        <figure>
+                            <img src="{{ .Site.BaseURL }}/img/addsupporter.svg" alt="add supporter">
+                        </figure>
+                      </a>
+                </article>
+                <a class="partner-title" href="/community/members/sustaining_member/">
+                    Add your logo here?
+                </a>
+            </div>
             {{ $.Scratch.Set "counter" 0 }}
             {{ $headlessbundle := .Site.GetPage "/funders" }}
             {{ range ( $headlessbundle.Resources.ByType "page" ) }}

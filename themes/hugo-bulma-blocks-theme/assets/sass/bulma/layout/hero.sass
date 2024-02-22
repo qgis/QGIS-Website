@@ -171,11 +171,15 @@ $hero-colors: $colors !default
   flex-shrink: 0
   padding: $hero-body-padding
   +mobile
-    padding: $hero-body-padding-v-large
     height: 100vh
+    min-height: 840px
+    display: flex
 
   .container 
     margin: auto
+    @media screen and (max-width: 769px)
+      display: flex
+      flex-direction: column-reverse
     .image 
       margin: auto
   .column
@@ -183,7 +187,7 @@ $hero-colors: $colors !default
       width: 100%
   .logo
     @media screen and (max-width: 1024px)
-      display: none
+      padding: 0rem
   .scroll-down
     margin-top: 9rem
     @media screen and (min-width: 769px)
@@ -199,8 +203,10 @@ $hero-colors: $colors !default
   padding: 3rem 0;
   
 .hero 
-  image 
+  img 
     max-height: 380px  
+    @media screen and (max-width: 769px)
+      max-height: 220px  
   .title:not(.is-spaced) + .subtitle
     margin-top: 0px
   .button  
@@ -208,9 +214,10 @@ $hero-colors: $colors !default
   .hero-container
     margin-bottom: 60px
   .label 
-    background: $warning;
-    display: inline-block;
-    padding: 5px 15px;
-    font-weight: 400;
-    border-radius: 100px;
+    border: 2px solid #ee7914
+    color: white
+    display: inline-block
+    padding: 5px 15px
+    font-weight: 400
+    border-radius: 100px
   

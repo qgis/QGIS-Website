@@ -10,7 +10,7 @@ sidebar: true
 {{< content-start  >}}
 ## Ways of Contributing
 
-[Participate in Support Channels](#participate-in-support-channels "scroll-on-page"), [Report Bugs](#report-bugs "scroll-on-page"), [QGIS Documentation](#qgis-documentation "scroll-on-page"), [Translate QGIS](#translate-qgis "scroll-on-page"), [Develop a Plugin](#develop-a-plugin "scroll-on-page"), [Develop QGIS Core](#develop-qgis-core "scroll-on-page"), [Sustain & Donate](#sustain--donate "scroll-on-page") 
+[Participate in Support Channels](#participate-in-support-channels "scroll-on-page") [Report Bugs](#report-bugs "scroll-on-page") [QGIS Documentation](#qgis-documentation "scroll-on-page") [Translate QGIS](#translate-qgis "scroll-on-page") [Develop a Plugin](#develop-a-plugin "scroll-on-page") [Develop QGIS Core](#develop-qgis-core "scroll-on-page") [Sustain & Donate](#sustain--donate "scroll-on-page") 
 
 {{< rich-box layoutClass="has-right rounded" >}}
 {{< rich-content themeClass="coloring-1" >}}
