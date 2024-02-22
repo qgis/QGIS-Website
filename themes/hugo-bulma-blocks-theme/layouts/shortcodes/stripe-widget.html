@@ -2,30 +2,20 @@
     <p>One-Time Payment</p>
     <hr>
     <form id="donate-stripe">
-        <!-- NOTE: amount value is in CENTS !!!-->
-        <input value="eur:1000" id="eur:1000" type="radio" name="amount">
-        <label for="eur:1000" class="button is-primary1 is-outlined picker">€ 10.00</label>
-        <input value="eur:2500" id="eur:2500" type="radio" name="amount">
-        <label for="eur:2500" class="button is-primary1 is-outlined picker">€ 25.00</label>
-        <input value="eur:5000" id="eur:5000" type="radio" name="amount">
-        <label for="eur:5000" class="button is-primary1 is-outlined picker">€ 50.00</label>
-        <input value="eur:10000" id="eur:10000" type="radio" name="amount">
-        <label for="eur:10000" class="button is-primary1 is-outlined picker">€ 100.00</label>
-        <input value="eur:25000" id="eur:25000" type="radio" name="amount">
-        <label for="eur:25000" class="button is-primary1 is-outlined picker">€ 250.00</label>
-        <input value="usd:1000" id="usd:1000" type="radio" name="amount" checked>
-        <label for="usd:1000" class="button is-primary1 is-outlined picker">$ 10.00</label>
-        <input value="usd:2500" id="usd:2500" type="radio" name="amount">
-        <label for="usd:2500" class="button is-primary1 is-outlined picker">$ 25.00</label>
-        <input value="usd:5000" id="usd:5000" type="radio" name="amount">
-        <label for="usd:5000" class="button is-primary1 is-outlined picker">$ 50.00</label>
-        <input value="usd:10000" id="usd:10000" type="radio" name="amount">
-        <label for="usd:10000" class="button is-primary1 is-outlined picker">$ 100.00</label>
-        <input value="usd:25000" id="usd:25000" type="radio" name="amount">
-        <label for="usd:25000" class="button is-primary1 is-outlined picker">$ 250.00</label>
-        <br>
-        <button id='submit-button' class="button is-primary1 submit-button" style="width: 100%">Donate</button>
+    {{ range sort $.Site.Data.stripe_products }}
+        <input value="{{ .payment_link }}" id="{{ .id }}" type="radio" name="amount">
+        <label for="{{ .id }}" class="button is-primary1 is-outlined picker">{{ .label }}</label>
+    {{ end }}
     </form>
+        <br>
+        <a
+            id="submit-button" 
+            class="button is-primary1"
+            style="width: 100%; border-radius: 10px"
+            rel="noopener noreferrer"
+            target="_blank"
+        >Donate
+        </a>
 
     <div class="is-flex is-justify-content-space-between">
       {{ if .Get "otherMethods" }}
@@ -38,9 +28,7 @@
     </div>
 </div>
 
-<script src="https://js.stripe.com/v3/"></script>
-{{ $donatejs := resources.Get "js/donate.js" | resources.ExecuteAsTemplate "donate.js" . | resources.Fingerprint }}
+{{ $donatejs := resources.Get "js/donate.js" }}
 <script
     src="{{ $donatejs.RelPermalink }}"
-    integrity="{{ $donatejs.Data.Integrity }}"
 ></script>
