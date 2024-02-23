@@ -238,17 +238,17 @@ with open("data/conf.json", "w") as f:
         "nextpointreleasedate": pr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
         "infeaturefreeze": f_date < now,
 
-		# additional params:
-		"yeartag": "%%Y",
-		"devcite": f"https://docs.qgis.org/{ltrversion}/en/docs/developers_guide/index.html",
-		"userguidecite": f"https://docs.qgis.org/{ltrversion}/en/docs/user_manual/index.html",
-		"servercite": f"https://docs.qgis.org/{ltrversion}/en/docs/server_manual/index.html",
-		"apicite": f"https://qgis.org/pyqgis/{ltrversion}/index.html",
-		"lr_msi": f"https://qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi",
-		"lr_sha": f"https://qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
-		"ltr_msi": f"https://qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
-		"ltr_sha": f"https://qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
-		"weekly_msi": "https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D",
+        # additional params:
+        "yeartag": "%%Y",
+        "devcite": f"https://docs.qgis.org/{ltrversion}/en/docs/developers_guide/index.html",
+        "userguidecite": f"https://docs.qgis.org/{ltrversion}/en/docs/user_manual/index.html",
+        "servercite": f"https://docs.qgis.org/{ltrversion}/en/docs/server_manual/index.html",
+        "apicite": f"https://qgis.org/pyqgis/{ltrversion}/index.html",
+        "lr_msi": f"https://qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi",
+        "lr_sha": f"https://qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
+        "ltr_msi": f"https://qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
+        "ltr_sha": f"https://qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
+        "weekly_msi": "https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D",
     }, f, indent=4)
 
 o = open("scripts/schedule.ics", "wb")
