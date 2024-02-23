@@ -133,33 +133,33 @@ Join a community of like-minded individuals in your region.
 {{< columns-start >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6">}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Server
 
 Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layoutClasss and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ### QGIS Desktop
 
 Create, edit, visualise, analyse and publish geospatial information.
 
 [Download](/download/) for Windows, Mac, Linux, BSD and Android.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< columns-end >}}
 
 {{< columns-start >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6">}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Web Client
 
 Publish your QGIS projects on the web with ease. 
@@ -168,13 +168,13 @@ Benefit from the powerful symbology, labeling and blending features to impress w
 
 [QGIS Web Client 2](https://github.com/qgis/qwc2)
 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ### QGIS on mobiles and tablets
 
 The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS into the field
@@ -182,25 +182,25 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 *   [QField](/download/)
 *   [Mergin Maps Input app](/download/)
 *   [IntraMaps Roam](/download/)
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< columns-end >}}
 
 
-{{< rich-box layoutClass="has-right" mode="html" >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start layoutClass="has-right" mode="html" >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ### Case Studies
 
 We gather inspiring stories from actual users that showcase the versatility and power of the QGIS solution
 
 [Find out more](../case-studies)
-{{< /rich-content >}}
-{{< rich-right >}}  
+{{< rich-content-end >}}
+{{< rich-right-start >}}  
 {{< usecase >}}
-{{< /rich-right >}}
+{{< rich-right-end >}}
 
-{{< /rich-box >}}
+{{< rich-box-end >}}
 
 
 

@@ -14,34 +14,34 @@ Since 2009 the QGIS community organizes developer and user meetings around the w
 {{< columns-start >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6">}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6">}}
 ### Developer Meetings
 [Go to meetings](dev_meetings)
 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ### Users Meetings
 
 [Go to meetings](user_meetings)
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< columns-end >}}
 
 
 
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Do you want to organize a new meeting?
 The organization of events happens on the [QGIS wiki](https://github.com/qgis/QGIS/wiki#qgis-hackfests).
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 
 {{< content-end >}}
