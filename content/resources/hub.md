@@ -10,15 +10,15 @@ sidebar: true
 
 # Resources 
 
-{{< rich-box icon="🖖" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="🖖" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 #### Troubles with installation?
 If you are looking for information on installing QGIS on all available platforms, we have prepared a comprehensive guide for you:
 
 [Installation guide]({{< ref "/resources/installation-guide/index.md" >}}) 
 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ## Documentation
 
@@ -124,16 +124,16 @@ We are still updating (not translating yet) the documentation for releases newer
 {{< tab-content-end >}}
 
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6">}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6">}}
 ## Support 
 
 The QGIS community offers a wealth of excellent websites with support forums.
 
 {{< button class = "is-primary6" link = "/resources/support" text = "View support options" >}} 
 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 
 

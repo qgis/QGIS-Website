@@ -12,23 +12,23 @@ sidebar: true
 # Members and Donors
 We thank our sustaining members and donors who support the QGIS project, often regularly, and enable us to pay for our infrastructure and important development work, as well as finance developer meetings and promotion of QGIS in workshops and conferences.
 
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-2" >}}
+{{< rich-box-start icon="💁" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-2" >}}
 ##### How become a sustaining member?
 For information on becoming a sustaining member, please visit [Sustaining Membership Program Overview](sustaining_member).
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 
 {{< fund status="active" >}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ### List of donors
 
 [Show list of donors](donors)
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 
 {{< content-end >}}

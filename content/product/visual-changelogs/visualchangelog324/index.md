@@ -889,13 +889,13 @@ So e.g. now in expressions if you have secondary geometry column you can do:
 
 and it will work.
 
-{{< rich-box icon="⚠️" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start icon="⚠️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ##### Warning
 
 This changes the behavior of existing projects.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ![image58](images/entries/2f2169f6a9927916d3841b63333982a5417a3a0c.png)
 

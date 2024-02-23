@@ -58,12 +58,12 @@ You may provide information such as:
 Keep in mind that the more precise is your question, the quicker and more
 accurate can be the answer.
 
-{{< rich-box icon="💁" layoutClass="tips" mode="html">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips" mode="html">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 In case of a broken function, you may give a look at [QGIS issue tracker](https://github.com/qgis/QGIS/issues) before mailing to the list. More information at [bug-reporting]({{< ref "resources/support/bug-reporting" >}}).
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ### How are QGIS release names selected?
 After a successful developer meeting in Zurich (Switzerland), we decided that
@@ -137,13 +137,13 @@ There is no requirement to mention QGIS for maps produced with it.
 It is of course really welcome if would like to add a note saying that the map was produced with QGIS.
 "Made with QGIS" or "Map created using the Free and Open Source QGIS" are good examples of such a note.
 
-{{< rich-box icon="✋" layoutClass="tips" >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="✋" layoutClass="tips" >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 
 Do not say ©QGIS as QGIS does not hold copyrights on your work.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ### Can I open ECW files with QGIS?
 Yes you can... BUT depending on your Operating System, it is more or less difficult.

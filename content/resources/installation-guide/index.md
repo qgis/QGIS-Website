@@ -81,21 +81,21 @@ Below you find instructions to install per distribution. For most distro’s the
 
 ### Quickstart
 
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 In the section following this one, you will find ALL possible options to install different versions of QGIS in different versions of Debian/Ubuntu. If you have problems, verify there whether your distribution is still supported as the repositories also contain older **unsupported** distributions with the last QGIS version that was supported. Beware that those might have meanwhile ceased to work.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 Here you will simply install the latest stable QGIS (3.34.x Prizren) in your Debian or Ubuntu without having to edit config files.
 
-{{< rich-box icon="🌀" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="🌀" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 Although you see ‘Debian’ in some places, this also works for ‘Ubuntu’, as one is actually a symlink to the other on our server.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 First install some tools you will need for this instructions:
 
@@ -121,16 +121,16 @@ Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 ```
 
-{{< rich-box icon="💬" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💬" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 `Suites` in above lines depends on your distribution. `lsb_release -cs` will show your distribution name.
 
 In some distributions (like Linux Mint), `. /etc/os-release; echo "$UBUNTU_CODENAME"` will show the correct distibution name.
 
 See [Available codenames](#available-codenames).
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 Update your repository information to reflect also the just added QGIS one:
 
@@ -144,12 +144,12 @@ Now, install QGIS:
 sudo apt install qgis qgis-plugin-grass
 ```
 
-{{< rich-box icon="✍️" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="✍️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 Add `qgis-server` to this line if you also want to install QGIS Server
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ### Repositories
 
@@ -161,8 +161,8 @@ Our main repository contains multiple lines of packages for several versions of 
 
 For Ubuntu we also used to have extra packages in a separate repository that are based on [ubuntugis](https://launchpad.net/~ubuntugis), which held more uptodate versions of other GIS packages than Ubuntu itself for LTS versions. If you want those you also need to include ubuntugis-unstable ppa in your /etc/apt/sources.list.d/qgis.list file (see [ubuntugis documentation](https://trac.osgeo.org/ubuntugis/wiki/UbuntuGISRepository)).
 
-{{< rich-box icon="💁" layoutClass="tips" mode="html" >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips" mode="html" >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 The release packages are only produced once shortly after a new version has been released. As unstable, not yet released debian versions (testing) and ubuntugis-unstable can have library changes the packages might sooner or later be broken for these targets, when the development in debian, ubuntu or ubuntugis-unstable moves on and their packages used as dependencies in qgis change. In that event you can either
 
@@ -173,8 +173,8 @@ The release packages are only produced once shortly after a new version has been
 - switch to a nightly repository (available for the **two** release branches and master) whose packages are rebuild on regular basis and will also pickup the updated dependencies automatically or
     
 - build your own set of packages (see [build-debian-packages](https://github.com/qgis/QGIS/blob/master/INSTALL.md#310-building-debian-packages)).
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
     
 
 Lines of packages:
@@ -287,12 +287,12 @@ sudo apt install qgis-server --no-install-recommends --no-install-suggests
 apt install python3-qgis
 ```
 
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 Please remove all the QGIS and GRASS packages you may have installed from other repositories before doing the update.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ## Fedora
 
@@ -526,13 +526,13 @@ sudo port selfupdate
 sudo port upgrade outdated
 ```
 
-{{< rich-box icon="👩‍💻" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="👩‍💻" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 
 Concurrent installation of Homebrew and MacPorts is not compatible and will almost certainly lead to conflicts. If you choose to install one of the package systems you need to uninstall the other.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ## Old releases
 
@@ -590,23 +590,23 @@ An old and deprecated not touch optimised release of QGIS for Android can be fou
 
 [https://play.google.com/store/apps/details?id=org.qgis.qgis](https://play.google.com/store/apps/details?id=org.qgis.qgis)
 
-{{< rich-box icon="⚠️" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start icon="⚠️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ##### Warning
 
 There is currently no support for Android 5. Best support is given for Android 4.3 and 4.4.x. This is a direct port of the QGIS desktop application. It is only slightly optimized for touch devices and therefore needs to be carefully evaluated for its suitability in day-to-day use. There are other apps available which are designed and optimized specifically for touch devices.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 # QGIS Testing warning
 
-{{< rich-box icon="⚠️" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start icon="⚠️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ##### Warning
 
 QGIS testing packages are provided for some platforms in addition to the QGIS stable version. QGIS testing contains unreleased software that is currently being worked on. They are only provided for testing purposes to early adopters to check if bugs have been resolved and that no new bugs have been introduced. Although we carefully try to avoid breakages, it may at any given time not work, or may do bad things to your data. Take care. You have been warned!
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 # Installing from Source
 

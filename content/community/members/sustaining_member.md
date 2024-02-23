@@ -26,23 +26,23 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}} 
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-1" >}} 
 #### Maintaining Core Infrastructure
 *   The official QGIS.org website, a central hub for all things QGIS.
 *   Our issue tracking system for efficient bug and feature reporting.
 *   The continuous integration system, ensuring code quality and stability through automated tests.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 #### Software Development & QA
 *   Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
 *   Address bugs and other issues promptly, enhancing the user experience.
 *   Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< column-end >}}
 {{< columns-end >}}
@@ -55,21 +55,21 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds ">}}
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}} 
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-1" >}} 
 #### Empowering Our Volunteers
 *   Mentoring new contributors, fostering a welcoming and productive community.
 *   Translating QGIS into multiple languages, making the software truly global.
 *   Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 #### Fostering Collaboration & Knowledge Sharing
 *   Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< column-end >}}
 {{< columns-end >}}
@@ -83,42 +83,42 @@ At or above the following levels a sustaining member will be designated as being
 {{< columns-start >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-2" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-2" >}}
 ### € 27,000+
 Flagship Member (e.g. for companies larger than 100 employees, federal governmental organizations)
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ### € 9,000+ 
 Large Member (e.g. for larger cities, provinces or companies up to 100 employees)
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ### € 3,000+ 
 Medium Member (e.g. for universities, medium size cities or companies up to 50 employees)
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ### € 500+
 Small Member (e.g. for smaller cities or companies up to 10 employees) 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< column-end >}}
 {{< columns-end >}}
@@ -139,37 +139,37 @@ Supporting the QGIS project as a sustaining member provides the following benefi
 {{< columns-start >}}
 {{< column-start class="is-one-third">}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-4"  >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-4"  >}}
 #### Public Acknowledgment
 All sustaining members and donors will be listed on the project [Members page](../../../about/sustaining_members.html#qgis-sustaining-members), ordered by membership category with a link back to the sustaining members organization or company website and the logo in a size reflecting their membership category.
     
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 
 {{< column-start class="is-two-thirds vertical-colums" >}}
 {{< columns-start >}}
 {{< column-start >}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-4">}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-4">}}
 #### Enhanced Software Quality
 
 Your contribution aids in resolving bugs and issues promptly, resulting in a smoother user experience.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-4" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-4" >}}
 #### Enhanced Brand Exposure
 
 Flagship, large and medium sustaining members will have their logo on the QGIS homepage footer banner with a logo size and order reflecting their membership category
 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< columns-end >}}
 {{< column-end >}}
@@ -178,35 +178,35 @@ Flagship, large and medium sustaining members will have their logo on the QGIS h
 {{< columns-start >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-4">}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-4">}}
 #### Featured in Software Updates
 
 Your support is highlighted in the visual changelogs of QGIS software releases, showcasing your ongoing commitment.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-4" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-4" >}}
 #### Public Acknowledgment
 Use a special version of the QGIS logo on your website and materials, signaling your support for the project.
 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 
 {{< column-start>}}
 
-{{< rich-box >}}
-{{< rich-content themeClass="coloring-4" >}}
+{{< rich-box-start >}}
+{{< rich-content-start themeClass="coloring-4" >}}
 #### Enhanced Brand Exposure
 
 Enjoy an ad-free experience in QGIS, focusing on your work without interruptions.
 
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< column-end >}}
 {{< columns-end >}}
 
@@ -295,27 +295,27 @@ Past sustaining members are listed separately for a period of two years to ackno
 {{< column-end >}}
 {{< columns-end >}}
 
-{{< rich-box icon="💡" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💡" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### You can also make one-time payement
 Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations](https://donate.qgis.org) page). Even a small donation can make a difference and help to reach important project goals!
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### About ‘earmarked’ funding
 We regret that we cannot accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating to our bug fixing initiative.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 
-{{< rich-box icon="⚠️" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-6" >}}
+{{< rich-box-start icon="⚠️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ##### Warning
 Acceptance of sustaining membership applications is at the discretion of the QGIS PSC. We reserve the right to decline offers of sustaining members if the membership organisation or party seems to be at odds with the ethos of our project. For example offers from marketing companies that have nothing to do with GIS / spatial services, or offers where we have reason to believe the presence of the sustaining member logo and marketing materials on our site and other materials will degrade the experience of our users will be declined.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< content-end >}}
