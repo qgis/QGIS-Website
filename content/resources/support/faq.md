@@ -78,40 +78,40 @@ To cite QGIS in your piece of work, or for an assignment, please use citation ty
 **Cite the QGIS project in general**
 
 
-QGIS.org, |yeartag|. QGIS Geographic Information System. QGIS Association. http://www.qgis.org
+QGIS.org, {{< param "yeartag" >}}. QGIS Geographic Information System. QGIS Association. http://www.qgis.org
 
 
 **Cite the QGIS Developers Manual**
 
 
-QGIS.org, |yeartag|. QGIS |ltrversion|. Geographic Information System Developers Manual. QGIS Association. 
-Electronic document: |devcite|
+QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System Developers Manual. QGIS Association. 
+Electronic document: {{< param-link "devcite" >}}
 
 
 **Cite the QGIS Installation Guide**
 
 
-QGIS.org, |yeartag|. QGIS |ltrversion|. Geographic Information System Installation Guide. QGIS Association. 
+QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System Installation Guide. QGIS Association. 
 Electronic document: https://github.com/qgis/QGIS/blob/master/INSTALL.md
 
 
 **Cite the QGIS User Guide**
 
 
-QGIS.org, |yeartag|. QGIS |ltrversion|. Geographic Information System User Guide. QGIS Association. 
-Electronic document: |userguidecite|
+QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System User Guide. QGIS Association. 
+Electronic document: {{< param-link "userguidecite" >}}
 
 **Cite the QGIS Server Documentation**
 
-QGIS.org, |yeartag|. QGIS |ltrversion|. Geographic Information System API Documentation. QGIS Association. 
-Electronic document: |servercite|
+QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System API Documentation. QGIS Association. 
+Electronic document: {{< param-link "servercite" >}}
 
 
 **Cite the QGIS API Documentation**
 
 
-QGIS.org, |yeartag|. QGIS |ltrversion|. Geographic Information System API Documentation. QGIS Association. 
-Electronic document: |apicite|
+QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System API Documentation. QGIS Association. 
+Electronic document: {{< param-link "apicite" >}}
 
 
 
@@ -127,7 +127,7 @@ Example BibTeX entry:
         title = {QGIS Geographic Information System},
         author = {{QGIS Development Team}},
         organization = {QGIS Association},
-        year = {|yeartag|},
+        year = {{{< param "yeartag" >}}},
         url = {https://www.qgis.org},
       }
 ```

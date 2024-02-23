@@ -30,9 +30,9 @@ For beginners the easiest way is using the standalone installers:
 
 |Release|Version|Package|
 |---|---|---|
-|Latest Release|3.34.3 Prizren ​|[Installer](https://qgis.org/downloads/QGIS-OSGeo4W-3.34.3-1.msi) [Checksum](https://qgis.org/downloads/QGIS-OSGeo4W-3.34.3-1.sha256sum)|
-|Long Term Release|3.28.15 Firenze LTR|[Installer](https://qgis.org/downloads/QGIS-OSGeo4W-3.28.15-1.msi) [Checksum](https://qgis.org/downloads/QGIS-OSGeo4W-3.28.15-1.sha256sum)|
-|Development|3.35 master|[Weekly snapshots](https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D)|
+|Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|[Installer]({{< param "lr_msi" >}}) [Checksum]({{< param "lr_sha" >}})|
+|Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|
+|Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|
 
 See also [The main installers page](../../download).
 
@@ -55,11 +55,11 @@ Alternatively to _Express_ you also use the _Advanced Install_, navigate to the 
 
 |Release|Version|Package|Description|
 |---|---|---|---|
-|Latest Release|3.34.3 Prizren ​|qgis|Release|
-|qgis-rel-dev [[1]](#id5)|Nightly build of the upcoming point release|
-|Long Term Release|3.28.15 Firenze LTR|qgis-ltr|Release|
-|qgis-ltr-dev [[1]](#id5)|Nightly build of the upcoming long term point release|
-|Development|3.35 master|qgis-dev [[1]](#id5)|Nightly build of the development version|
+|Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|qgis|Release|
+|||qgis-rel-dev [[1]](#id5)|Nightly build of the upcoming point release|
+|Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|qgis-ltr|Release|
+|||qgis-ltr-dev [[1]](#id5)|Nightly build of the upcoming long term point release|
+|Development|{{< param "devversion" >}} master|qgis-dev [[1]](#id5)|Nightly build of the development version|
 
 [1] ([1](#id2),[2](#id3),[3](#id4))
 
@@ -88,7 +88,7 @@ In the section following this one, you will find ALL possible options to install
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-Here you will simply install the latest stable QGIS (3.34.x Prizren) in your Debian or Ubuntu without having to edit config files.
+Here you will simply install the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) in your Debian or Ubuntu without having to edit config files.
 
 {{< rich-box-start icon="🌀" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
@@ -110,7 +110,7 @@ sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like
 sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 ```
 
-Add the QGIS repo for the latest stable QGIS (3.34.x Prizren) to `/etc/apt/sources.list.d/qgis.sources`:
+Add the QGIS repo for the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) to `/etc/apt/sources.list.d/qgis.sources`:
 
 ```
 Types: deb deb-src
@@ -168,7 +168,7 @@ The release packages are only produced once shortly after a new version has been
 
 - move to a stable debian version and use the released packages for it,
     
-- wait for the next point release (due 2024-02-23 12:00:00 UTC), which happens every month and will include the updated dependencies,
+- wait for the next point release (due {{< param "nextpointreleasedate" >}}), which happens every month and will include the updated dependencies,
     
 - switch to a nightly repository (available for the **two** release branches and master) whose packages are rebuild on regular basis and will also pickup the updated dependencies automatically or
     
@@ -181,23 +181,23 @@ Lines of packages:
 
 | Release | Version | Description | Repository |
 | ---- | ---- | ---- | ---- |
-| Latest Release | 3.34.x Prizren ​ | Release for **Debian and Ubuntu** | [https://qgis.org/debian](https://qgis.org/debian) [https://qgis.org/ubuntu](https://qgis.org/ubuntu) |
-| Release with ubuntugis-unstable dependencies | [https://qgis.org/ubuntugis](https://qgis.org/ubuntugis) |  |  |
-| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | [https://qgis.org/debian-nightly-release](https://qgis.org/debian-nightly-release) [https://qgis.org/ubuntu-nightly-release](https://qgis.org/ubuntu-nightly-release) |  |  |
-| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | [https://qgis.org/ubuntugis-nightly-release](https://qgis.org/ubuntugis-nightly-release) |  |  |
-| Long Term Release Repository | 3.28.x Firenze LTR | Release for **Debian and Ubuntu** | [https://qgis.org/debian-ltr](https://qgis.org/debian-ltr) [https://qgis.org/ubuntu-ltr](https://qgis.org/ubuntu-ltr) |
-| Release with ubuntugis-unstable dependencies | [https://qgis.org/ubuntugis-ltr](https://qgis.org/ubuntugis-ltr) |  |  |
-| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | [https://qgis.org/debian-nightly-ltr](https://qgis.org/debian-nightly-ltr) [https://qgis.org/ubuntu-nightly-ltr](https://qgis.org/ubuntu-nightly-ltr) |  |  |
-| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | [https://qgis.org/ubuntugis-nightly-ltr](https://qgis.org/ubuntugis-nightly-ltr) |  |  |
-| Development Version | 3.35 master | Nightly build for **Debian and Ubuntu** [[5]](#id12) | [https://qgis.org/debian-nightly](https://qgis.org/debian-nightly) [https://qgis.org/ubuntu-nightly](https://qgis.org/ubuntu-nightly) |
-| Nightly build with ubuntugis-unstable dependencies [[5]](#id12) | [https://qgis.org/ubuntugis-nightly](https://qgis.org/ubuntugis-nightly) |  |  |
+| Latest Release | {{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}} | Release for **Debian and Ubuntu** | https://qgis.org/debian <br> https://qgis.org/ubuntu |
+||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | https://qgis.org/ubuntugis-nightly-release |  |  |
+| Long Term Release Repository | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | Release for **Debian and Ubuntu** | https://qgis.org/debian-ltr https://qgis.org/ubuntu-ltr |
+||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
+| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[5]](#id12) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+||| Nightly build with ubuntugis-unstable dependencies [[5]](#id12) | https://qgis.org/ubuntugis-nightly |  |  |
 
 [5] ([1](#id6),[2](#id7),[3](#id8),[4](#id9),[5](#id10),[6](#id11)) nightlies are debug builds (including debug output)
 
 <small>
-Next point release: 2024-02-23 12:00:00 UTC
+Next point release: {{< param "nextpointreleasedate" >}}
 
-Next release: 2024-02-23 12:00:00 UTC
+Next release: {{< param "nextreleasedate" >}}
 
 (more dates see Release Schedule on [Road Map](../roadmap))
 </small>
@@ -207,12 +207,12 @@ Next release: 2024-02-23 12:00:00 UTC
 |Distribution|Version|Codename|Also available based on ubuntugis-unstable dependencies?|
 |---|---|---|---|
 |Debian|12.x (stable)|bookworm||
-|11.x (oldstable)|bullseye||
-|unstable|sid||
+||11.x (oldstable)|bullseye||
+||unstable|sid||
 |Ubuntu|24.04 (LTS) [[6]](#id14)|noble||
-|23.10|mantic||
-|23.04|lunar||
-|22.04 (LTS)|jammy|yes|
+||23.10|mantic||
+||23.04|lunar||
+||22.04 (LTS)|jammy|yes|
 
 [[6](#id13)]
 
@@ -331,7 +331,7 @@ sudo dnf install qgis-server python3-qgis
 |Fedora|36|3.28|8.0|
 |37|3.28|8.2|
 
-More information are available at [https://copr.fedorainfracloud.org/coprs/dani/qgis/](https://copr.fedorainfracloud.org/coprs/dani/qgis/)
+More information are available at https://copr.fedorainfracloud.org/coprs/dani/qgis/
 
 ### QGIS LTR (Long Term Release)
 
@@ -358,7 +358,7 @@ sudo dnf install qgis-server python3-qgis
 |Fedora|36|3.22|8.0|
 |37|3.22|8.2|
 
-More information are available at [https://copr.fedorainfracloud.org/coprs/dani/qgis-ltr/](https://copr.fedorainfracloud.org/coprs/dani/qgis-ltr/)
+More information are available at https://copr.fedorainfracloud.org/coprs/dani/qgis-ltr/
 
 ## SUSE / openSUSE
 
@@ -366,17 +366,17 @@ Latest stable and LTR packages called qgis and qgis-ltr are available in the fol
 
 |Distribution|Repository|
 |---|---|
-|Tumbleweed|[https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Tumbleweed/](https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Tumbleweed/)|
-|Leap 15.2|[https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Leap_15.2/](https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Leap_15.2/)|
-|Leap 15.1|[https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Leap_15.1/](https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Leap_15.1/)|
-|Factory ARM|[https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Factory_ARM/](https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Factory_ARM/)|
-|Factory PowerPC|[https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Factory_PowerPC/](https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Factory_PowerPC/)|
-|SLE 15 SP1 Backports|[https://download.opensuse.org/repositories/Application:/Geo/SLE_15_SP1_Backports/](https://download.opensuse.org/repositories/Application:/Geo/SLE_15_SP1_Backports/)|
-|SLE 15 SP1 Backports debug|[https://download.opensuse.org/repositories/Application:/Geo/SLE_15_SP1_Backports_debug/](https://download.opensuse.org/repositories/Application:/Geo/SLE_15_SP1_Backports_debug/)|
+|Tumbleweed|https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Tumbleweed/|
+|Leap 15.2|https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Leap_15.2/|
+|Leap 15.1|https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Leap_15.1/|
+|Factory ARM|https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Factory_ARM/|
+|Factory PowerPC|https://download.opensuse.org/repositories/Application:/Geo/openSUSE_Factory_PowerPC/|
+|SLE 15 SP1 Backports|https://download.opensuse.org/repositories/Application:/Geo/SLE_15_SP1_Backports/|
+|SLE 15 SP1 Backports debug|https://download.opensuse.org/repositories/Application:/Geo/SLE_15_SP1_Backports_debug/|
 
 All packages include GRASS and Python support.
 
-All openSUSE Geo repositories can be found here: [https://download.opensuse.org/repositories/Application:/Geo/](https://download.opensuse.org/repositories/Application:/Geo/)
+All openSUSE Geo repositories can be found here: https://download.opensuse.org/repositories/Application:/Geo/
 
 ## Mandriva
 
@@ -392,13 +392,13 @@ urpmi qgis-python qgis-grass
 
 ### QGIS stable
 
-Packages on [https://slackbuilds.org/result/?search=qgis](https://slackbuilds.org/result/?search=qgis)
+Packages on https://slackbuilds.org/result/?search=qgis
 
 ## Arch Linux
 
 ### QGIS stable
 
-Arch Linux is available in official repository : [https://archlinux.org/packages/extra/x86_64/qgis/](https://archlinux.org/packages/extra/x86_64/qgis/)
+Arch Linux is available in official repository : https://archlinux.org/packages/extra/x86_64/qgis/
 
 Install with:
 
@@ -416,7 +416,7 @@ Install with yaourt or other package manager which support AUR:
 yaourt -S qgis-ltr
 ```
 
-For bugs and other behaviour, read comments here : [https://aur.archlinux.org/packages/qgis-ltr/](https://aur.archlinux.org/packages/qgis-ltr/)
+For bugs and other behaviour, read comments here : https://aur.archlinux.org/packages/qgis-ltr/
 
 ### QGIS testing
 
@@ -426,15 +426,15 @@ Install with yaourt or other package manager which support AUR:
 
 yaourt -S qgis-git
 
-For bugs and other behaviour, read comments here : [https://aur.archlinux.org/packages/qgis-git](https://aur.archlinux.org/packages/qgis-git)
+For bugs and other behaviour, read comments here : https://aur.archlinux.org/packages/qgis-git
 
 ## Flatpak
 
 There is an QGIS flatpak for QGIS Stable available, maintained by the flathub community.
 
-For general Linux Flatpak install notes, see [https://flatpak.org/setup/](https://flatpak.org/setup/)
+For general Linux Flatpak install notes, see https://flatpak.org/setup/
 
-QGIS on Flathub: [https://flathub.org/apps/details/org.qgis.qgis](https://flathub.org/apps/details/org.qgis.qgis)
+QGIS on Flathub: https://flathub.org/apps/details/org.qgis.qgis
 
 To install:
 
@@ -456,7 +456,7 @@ flatpak update
 
 On certain distributions, you may also need to install xdg-desktop-portal or xdg-desktop-portal-gtk packages in order for file dialogs to appear.
 
-Flathub files: [https://github.com/flathub/org.qgis.qgis](https://github.com/flathub/org.qgis.qgis) and report issues here: [https://github.com/flathub/org.qgis.qgis/issues](https://github.com/flathub/org.qgis.qgis/issues)
+Flathub files: https://github.com/flathub/org.qgis.qgis and report issues here: https://github.com/flathub/org.qgis.qgis/issues
 
 Note: if you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the scipy module):
 
@@ -466,9 +466,9 @@ flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
 
 Spack is a distro agnostic package manager for Linux, which is developed in the context of high-performance computing.
 
-General info on installing Spack: [https://github.com/spack/spack](https://github.com/spack/spack)
+General info on installing Spack: https://github.com/spack/spack
 
-QGIS package file on Spack: [https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/qgis/package.py](https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/qgis/package.py)
+QGIS package file on Spack: https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/qgis/package.py
 
 To install:
 
@@ -491,7 +491,7 @@ spack add qgis py-lz4
 spack install
 ```
 
-Spack related issues should be reported at: [https://github.com/spack/spack/issues](https://github.com/spack/spack/issues)
+Spack related issues should be reported at: https://github.com/spack/spack/issues
 
 # Mac OS X / macOS
 
@@ -536,9 +536,9 @@ Concurrent installation of Homebrew and MacPorts is not compatible and will almo
 
 ## Old releases
 
-Previous releases of the official installer can be downloaded from [https://qgis.org/downloads/macos/](https://qgis.org/downloads/macos/).
+Previous releases of the official installer can be downloaded from https://qgis.org/downloads/macos/.
 
-Previous releases of the kyngchaos installer can be downloaded from [https://www.kyngchaos.com/software/archive/qgis/](https://www.kyngchaos.com/software/archive/qgis/). The oldest installers support macOS 10.4 Tiger.
+Previous releases of the kyngchaos installer can be downloaded from https://www.kyngchaos.com/software/archive/qgis/. The oldest installers support macOS 10.4 Tiger.
 
 # FreeBSD
 
@@ -582,13 +582,13 @@ To install QGIS from third-party package
 pkg_add qgis
 ```
 
-See: - [https://openbsd.app/?search=qgis](https://openbsd.app/?search=qgis) # for -stable OpenBSD - [https://openbsd.app/?search=qgis&current=on](https://openbsd.app/?search=qgis&current=on) # for -current OpenBSD
+See: - https://openbsd.app/?search=qgis # for -stable OpenBSD - https://openbsd.app/?search=qgis&current=on # for -current OpenBSD
 
 # Android
 
 An old and deprecated not touch optimised release of QGIS for Android can be found on the google play store.
 
-[https://play.google.com/store/apps/details?id=org.qgis.qgis](https://play.google.com/store/apps/details?id=org.qgis.qgis)
+https://play.google.com/store/apps/details?id=org.qgis.qgis
 
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-6" >}}
