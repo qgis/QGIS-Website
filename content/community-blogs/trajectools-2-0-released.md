@@ -32,7 +32,7 @@ showcase: "planet"
 
 
 
-<p><strong>&#8220;Clip trajectories by extent&#8221;</strong> still exists but, besides clipping by extent, we can now also <strong>&#8220;Clip trajectories by polygon layer&#8221;</strong></p>
+<p><strong>&#8220;Clip trajectories by extent&#8221;</strong> still exists but, additionally, we can now also <strong>&#8220;Clip trajectories by polygon layer&#8221;</strong></p>
 
 
 
