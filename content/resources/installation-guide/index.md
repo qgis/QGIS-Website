@@ -18,7 +18,7 @@ We recommend installing the packages of the released software.
 
 To evaluate the upcoming release and to allow non-developers to support development we also provide testing packages (note the [warning](#warning)).
 
-In the feature frozen phase preceding a release (see [Release schedule](../roadmap.html#qgis-release-schedule)) these packages are effectively **pre-releases, which we strongly urge users to test**.
+In the feature frozen phase preceding a release (see [Release schedule](../roadmap#release-schedule)) these packages are effectively **pre-releases, which we strongly urge users to test**.
 
 # Windows
 
