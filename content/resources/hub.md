@@ -28,7 +28,7 @@ You will find documentation for every QGIS long term release on the respective d
 
 [Get involved](/community/involve/) and help us write a better documentation.
 
-{{< tabs tab1="QGIS 3.28" tab2="QGIS 3.34" tab3="QGIS testing" tab4="Archived reliases">}}
+{{< tabs tab1="QGIS 3.28" tab2="QGIS 3.34" tab3="QGIS testing" tab4="Archived releases">}}
 
 
 {{< tab-content-start tab="1" >}}
