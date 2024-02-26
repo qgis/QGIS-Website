@@ -70,7 +70,7 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 "FF","Feature freeze, end of development phase"
 "PR","Point release of latest release and LTR branch"
 "EPR","Extra Point release"
-":rm-current:current",":rm-current:currently supported releases: |ltrrelease| and |release|"
+":rm-current:current",":rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}}"
 ":rm-next:next",":rm-next:next releases"
 {{< /csv-table >}}
 

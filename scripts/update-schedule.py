@@ -3,6 +3,7 @@
 
 from urllib.request import urlopen
 import csv
+import json
 import os
 import re
 import codecs
@@ -207,63 +208,48 @@ for v, n in {ltr_version: ltr_name, lr_version: lr_name}.items():
 assert lr_version.split(".") > ltr_version.split("."), f"LR {lr_version} not higher than {ltr_version}"
 assert devversion.split(".") > lr_version.split("."), f"DEV {devversion} not higher than {lr_version}"
 
-o = open("scripts/schedule.py", "w")
-
 shortver = "".join(lr_version.split(".")[:2])
 for f in [
         # f"themes/qgis-theme/static/images/qgisorg_banner{shortver}.png", # TODO
-        f"content/product/visual-changelogs/visualchangelog{shortver}/index.md"
+        # f"content/product/visual-changelogs/visualchangelog{shortver}/index.md"
 ]:
     assert os.path.exists(f), f"{f} not found"
 
-o.write("""\
-from datetime import date
+ltrversion = ".".join(ltr_version.split(".")[:2])
 
-# latest release
-version = '%(version)s'
-release = '%(release)s'
-codename = u'%(lr_name)s'
-binary = '%(lr_binary)s'
-releasedate = date(%(releasedate)s)
-releasenote = u'%(lr_note)s'
-shortver = u'%(shortver)s'
+with open("data/conf.json", "w") as f:
+    json.dump({
+        "version": ".".join(lr_version.split(".")[:2]),
+        "release": lr_version,
+        "releasedate": lr_date.strftime("%d.%m.%Y"),
+        "binary": lr_binary,
+        "codename": lr_name,
+        "releasenote": lr_note if lr_note != '' else ('RC' if lr_version.split('.')[2] == '0' else '\\u200B'),
+        "ltrversion": ltrversion,
+        "ltrrelease": ltr_version,
+        "ltrcodename": ltr_name,
+        "ltrbinary": ltr_binary,
+        "ltrnote": ltr_note if ltr_note != '' else 'LTR',
+        "shortver": shortver,
+        "devversion": devversion,
+        "nextversion": nextversion,
+        "nextfreezedate": f_date.strftime('%Y-%m-%d %H:%M:%S UTC') if f_date is not None else None,
+        "nextreleasedate": nr_date.strftime('%Y-%m-%d %H:%M:%S UTC') if nr_date is not None else None,
+        "nextpointreleasedate": pr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
+        "infeaturefreeze": f_date < now,
 
-# long term release repository
-ltrversion = '%(ltrversion)s'
-ltrrelease = '%(ltrrelease)s'
-ltrcodename = u'%(ltr_name)s'
-ltrbinary = '%(ltr_binary)s'
-ltrnote = u'%(ltr_note)s'
-
-devversion = '%(devversion)s'
-nextversion = '%(nextversion)s'
-nextfreezedate = '%(nextfreezedate)s'
-nextreleasedate = '%(nextreleasedate)s'
-nextpointreleasedate = '%(nextpointreleasedate)s'
-
-infeaturefreeze = %(infeaturefreeze)s
-""" % {
-    "version": ".".join(lr_version.split(".")[:2]),
-    "release": lr_version,
-    "releasedate": "{0}, {1}, {2}".format(lr_date.year, lr_date.month, lr_date.day),
-    "lr_binary": lr_binary,
-    "lr_name": lr_name.replace("'", "\\'"),
-    "lr_note": lr_note.replace("'", "\\'") if lr_note != '' else ('RC' if lr_version.split('.')[2] == '0' else '\\u200B'),
-    "ltrversion": ".".join(ltr_version.split(".")[:2]),
-    "ltrrelease": ltr_version,
-    "ltr_name": ltr_name.replace("'", "\\'"),
-    "ltr_binary": ltr_binary,
-    "ltr_note": ltr_note.replace("'", "\\'") if ltr_note != '' else 'LTR',
-    "shortver": shortver,
-    "devversion": devversion,
-    "nextversion": nextversion,
-    "nextfreezedate": f_date.strftime('%Y-%m-%d %H:%M:%S UTC') if f_date is not None else None,
-    "nextreleasedate": nr_date.strftime('%Y-%m-%d %H:%M:%S UTC') if nr_date is not None else None,
-    "nextpointreleasedate": pr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
-    "infeaturefreeze": "True" if f_date < now else "False"
-})
-
-o.close()
+        # additional params:
+        "yeartag": "%%Y",
+        "devcite": f"https://docs.qgis.org/{ltrversion}/en/docs/developers_guide/index.html",
+        "userguidecite": f"https://docs.qgis.org/{ltrversion}/en/docs/user_manual/index.html",
+        "servercite": f"https://docs.qgis.org/{ltrversion}/en/docs/server_manual/index.html",
+        "apicite": f"https://qgis.org/pyqgis/{ltrversion}/index.html",
+        "lr_msi": f"https://qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi",
+        "lr_sha": f"https://qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
+        "ltr_msi": f"https://qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
+        "ltr_sha": f"https://qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
+        "weekly_msi": "https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D",
+    }, f, indent=4)
 
 o = open("scripts/schedule.ics", "wb")
 o.write(cal.to_ical())
