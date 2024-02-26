@@ -221,9 +221,9 @@ sectionPagesMenu = 'main'
   weight = 100
 
 [[menu.main]]
-  parent = "Project Organisation"
-  name = "User Groups"
-  url = "/community/organisation/groups"
+  parent = "Community"
+  name = "Local User Groups"
+  url = "/community/groups"
   weight = 110
 
 [[menu.main]]
@@ -291,31 +291,6 @@ sectionPagesMenu = 'main'
   name = "Mailing Lists"
   url = "/community/organisation/mailinglists"
   weight = 220
-
-[[menu.main]]
-  parent = "Community"
-  name = "Members and Donors"
-  url = "/community/members"
-  weight = 230
-
-[[menu.main]]
-  parent = "Members and Donors"
-  name = "Become a Sustaining Member"
-  url = "/community/members/sustaining_member"
-  weight = 240
-
-
-[[menu.main]]
-  parent = "Members and Donors"
-  name = "Past sustaining members"
-  url = "/community/members/past_members"
-  weight = 260
-
-[[menu.main]]
-  parent = "Members and Donors"
-  name = "Donors"
-  url = "/community/members/donors"
-  weight = 270
   
 [[menu.main]]
   parent = "Community"
@@ -341,14 +316,45 @@ sectionPagesMenu = 'main'
   name = "Download"
   url = "/download/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 30 # Sets the menu order 
+  weight = 60 # Sets the menu order 
 
 [[menu.main]]
+  name = "Funding"
+  url = "/funding/donate"
+  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
+  weight = 50 # Sets the menu order 
+
+[[menu.main]]
+  parent = "Funding"
   name = "Donate"
-  url = "/donate/"
+  url = "/funding/donate"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = 30 # Sets the menu order 
 
+[[menu.main]]
+  parent = "Funding"
+  name = "Membership"
+  url = "/funding/membership"
+  weight = 230
+
+[[menu.main]]
+  parent = "Funding"
+  name = "Members"
+  url = "/funding/members"
+  weight = 240
+
+
+[[menu.main]]
+  parent = "Funding"
+  name = "Past Members"
+  url = "/funding/past_members"
+  weight = 260
+
+[[menu.main]]
+  parent = "Funding"
+  name = "Donors"
+  url = "/funding/donors"
+  weight = 270
 
 # Submenus are done this way: parent -> identifier
 [[menu.main]]

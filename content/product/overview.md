@@ -17,8 +17,8 @@ LabelText: "Free and open source"
 {{< tabs tab1="Create map" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
 
 {{< columns-start id="content-tab-1" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](../img/placeholder.jpg "Create map")
+{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+![Create map](../img/create.gif "Create map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
@@ -34,8 +34,8 @@ Create atlases and reports with maps, media and tabular content
 {{< columns-end >}}
 
 {{< columns-start id="content-tab-2" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](../img/placeholder.jpg "Create map")
+{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+![Edit map](../img/edit.gif "Edit map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
@@ -52,8 +52,8 @@ Create user-friendly forms using our form designer
 {{< columns-end >}}
 
 {{< columns-start id="content-tab-3" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](../img/placeholder.jpg "Create map")
+{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+![visuzlize map](../img/visuzlize.gif "visuzlize map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
@@ -70,8 +70,8 @@ Explore a diverse ecosystem of third-party analysis tools for expanded capabilit
 {{< columns-end >}}
 
 {{< columns-start id="content-tab-4" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds" >}}
-![Create map](../img/placeholder.jpg "Create map")
+{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+![share map](../img/share.gif "share map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}

@@ -11,7 +11,7 @@ sidebar: true
 # Reimbursements for Developer Meetings
 The QGIS project holds twice-yearly developer meetings, typically somewhere in Europe. The purpose of the meetings is to provide face-to-face time for developers. It is a forum for presenting new ideas, planning, putting heads together to solve problems and so on. 
 
-We use funding from our [Sustaining Membership Program Overview]({{< ref "/community/members/sustaining_member.md" >}})  to facilitate the event, with co-funding from the host who usually supplies the venue and the infrastructure for hosting the meeting. Individual developers also co-fund the event by donating their time and in many cases financially supporting their visit to the meeting directly.
+We use funding from our [Sustaining Membership Program Overview]({{< ref "/funding/membership.md" >}})  to facilitate the event, with co-funding from the host who usually supplies the venue and the infrastructure for hosting the meeting. Individual developers also co-fund the event by donating their time and in many cases financially supporting their visit to the meeting directly.
 
 Need a refund for QGIS HF expenses?
 --------------------------------------------------------------------------------------------------
