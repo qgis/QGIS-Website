@@ -17,7 +17,7 @@ Quantarctica is a collection of Antarctic geographical datasets, such as base ma
 ## About the project
 
 <figure>
-<img src="../images/quantarctica.jpg" class="align-right" alt="./images/quantarctica.jpg" />
+<img src="../images/quantarctica.jpg" class="align-right" alt="quantarctica.jpg" />
 <figcaption>Screenshot from Quantarctica, showing one of the subglacial lakes datasets.</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Quantarctica (QGIS + Antarctica) was first developed for in-house use at the Nor
 Quantarctica has been used to examine geographical data from continental to local scales, for viewing scientific project data on top of base maps or with other scientific datasets, and to prepare maps for publications and proposals. Quantarctica has so far proven to be a great tool, and a very good alternative and supplement to other software used by the researchers. It has provided new opportunities for our researchers in their daily work.
 
 <figure>
-<img src="../images/quantarctica2.jpg" class="align-left" style="width:100.0%" alt="./images/quantarctica2.jpg" />
+<img src="../images/quantarctica2.jpg" class="align-left" style="width:100.0%" alt="quantarctica2.jpg" />
 <figcaption>Quantarctica is also useful when navigating on the Antarctic ice shelves thanks to the GPS tracking capabilities within QGIS.</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Quantarctica is to be all about community effort. With contributions we aim to e
 ## Authors
 
 <figure>
-<img src="../images/quantarctica3.jpg" class="align-left" height="220" alt="./images/quantarctica3.jpg" />
+<img src="../images/quantarctica3.jpg" class="align-left" height="220" alt="quantarctica3.jpg" />
 <figcaption>Anders Skoglund and Kenichi Matsuoka</figcaption>
 </figure>
 

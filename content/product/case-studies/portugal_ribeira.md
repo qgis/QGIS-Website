@@ -15,7 +15,7 @@ thumbnail: "images/portugal_ribeira1.png"
 The Iberian wolf is a sub-species of the gray wolf that exists only in north of Portugal and Spain, with small isolated groups in the south of Douro river. During the last century, it suffered a high regression, being a "vulnerable" species in Spain and "endangered" in Portugal. Nowadays, there are only around 300 wolves in Portugal, due to the high persecution, destruction and fragmentation of the habitat.
 
 <figure>
-<img src="../images/portugal_ribeira1.png" class="align-right" alt="./images/portugal_ribeira1.png" />
+<img src="../images/portugal_ribeira1.png" class="align-right" alt="portugal_ribeira1.png" />
 <figcaption>Study area in Portugal</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ To model the ecological corridors, we used the QGIS along with the GRASS plugin.
 With this work we obtained a map with the potential ecological corridors for wolf in Ribeira de Pena municipality. These are areas to be considered by the city council technicians when planning conservation measures for the species. These corridors are of extreme importance because they can connect the fragile wolf packs in Vila Real in the south with those in the north, which are continuous with those from Peneda-Gerês and Spain far more stable. It is from particular importance those corridors that cross human settlements, like small villages, cities and roads. These areas must be considered critical for wolf conservation, and applied measures to reduce human impact in this species.
 
 <figure>
-<img src="../images/portugal_ribeira2.png" class="align-right" style="width:100.0%" alt="./images/portugal_ribeira2.png" />
+<img src="../images/portugal_ribeira2.png" class="align-right" style="width:100.0%" alt="portugal_ribeira2.png" />
 <figcaption>Ecological corridors and critical conservation areas for wolves in northern Portugal.</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ Changing to Linux and then to QGIS and GRASS was one of my best calls, and altho
 ## Author
 
 <figure>
-<img src="../images/portugal_ribeiraaut.png" class="align-left" height="200" alt="./images/portugal_ribeiraaut.png" />
+<img src="../images/portugal_ribeiraaut.png" class="align-left" height="200" alt="portugal_ribeiraaut.png" />
 <figcaption>Monica Almeida</figcaption>
 </figure>
 

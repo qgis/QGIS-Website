@@ -17,7 +17,7 @@ thumbnail: "images/czech_brno1.jpg"
 Laboratory on Experimental and Applied Geography (LEAG) is part of College of Hotel and Business Management, Ltd. In Brno, Czech Republic (Vysoká škola obchodní a hotelová, s.r.o.) which offers higher education at tourism, business and hotel management. LEAG is focused on modeling socio-economic spatial processes, analyzing spatial patterns, describing and monitoring the reality of localities and regions.
 
 <figure>
-<img src="../images/czech_brno1.jpg" class="align-right" alt="./images/czech_brno1.jpg" />
+<img src="../images/czech_brno1.jpg" class="align-right" alt="czech_brno1.jpg" />
 <figcaption>QGIS while modeling 3D objects (interpolation), terrain analysis</figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ QGIS is used with synergy to other open source products. For example the final l
 QGIS is also great educational tool. College of Business and Hotel Management offers students subjects like "Geographical Information Systems I. and II." or "Selected chapters from geoinformatic literacy" where QGIS is used as main platform for teaching students how to use GIS and how to produce high-quality maps. Recently, the QGIS was used as main product during GIS Day held at our school on November 2010.
 
 <figure>
-<img src="../images/czech_brno2.jpg" class="align-right" alt="./images/czech_brno2.jpg" />
+<img src="../images/czech_brno2.jpg" class="align-right" alt="czech_brno2.jpg" />
 <figcaption>Using diagrams comparing population between two censuses</figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ With no cost and high efficiency the Laboratory on Experimental and Applied Geog
 ## Author
 
 <figure>
-<img src="../images/czech_brnoaut.jpg" class="align-left" height="200" alt="./images/czech_brnoaut.jpg" />
+<img src="../images/czech_brnoaut.jpg" class="align-left" height="200" alt="czech_brnoaut.jpg" />
 <figcaption>Jakub Trojan</figcaption>
 </figure>
 

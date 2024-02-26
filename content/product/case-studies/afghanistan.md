@@ -17,14 +17,14 @@ The Danish Demining Group (DDG), the specialised mine action unit of the Danish 
 In Afghanistan, mineclearance activities are coordinated through the Mine Action Coordination Centre for Afghanistan (MACCA), who collect and disseminate geospatial information on known hazards (minefields, battlefields, 'spot' UXO tasks), and update this information as clearance progresses. New shapefiles of these 'hazard polygons' are issued by the MACCA on a regular basis, and mineclearance organisations can use these to assess the situation of mineclearance in their areas of operation. DDG is trialling the use of QGIS within the organization to replace the expensive commercial softwares it has used in the past.
 
 <figure>
-<img src="../images/afghanistan1.png" class="align-right" alt="./images/afghanistan1.png" />
+<img src="../images/afghanistan1.png" class="align-right" alt="afghanistan1.png" />
 <figcaption>Digital elevation models allow DDG to get an idea of the location of a minefield</figcaption>
 </figure>
 
 The use of geospatial data is most useful in the planning and survey phases. In Afghanistan, security problems and rugged terrain mean that physical re-survey of known sites is not always easy. Instead, the use of a mixture of data — satellite or aerial photography underlays, digitized Soviet-era topographic maps, hazard shapefiles and digital elevation models — allow DDG to get an idea of the location of a minefield in relation to the terrain and surrounding natural and physical features before sending in a survey team. QGIS plugins add useful capabilities, like the ability to visualise terrain in 3D. The attached screenshot above — made using the plugin Qgis2threejs —— shows an area just south of the Darulaman Palace in Kabul, with active minefields (along the ridgelines on the left) shown in red over a Soviet topographic raster layer combined with SRTM data. Minefields already cleared show as light green.
 
 <figure>
-<img src="../images/afghanistan2.jpg" class="align-right" alt="./images/afghanistan2.jpg" />
+<img src="../images/afghanistan2.jpg" class="align-right" alt="afghanistan2.jpg" />
 <figcaption>Active hazardous areas shown in red. Hazardous areas already cleared show as light green.</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ The use of QGIS, along with a renewed interest in data analysis, has spurred new
 ## Author
 
 <figure>
-<img src="../images/afghanistan3.jpg" class="align-left" height="220" alt="./images/afghanistan3.jpg" />
+<img src="../images/afghanistan3.jpg" class="align-left" height="220" alt="afghanistan3.jpg" />
 <figcaption>Edward Crowther</figcaption>
 </figure>
 

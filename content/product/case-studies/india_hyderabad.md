@@ -19,7 +19,7 @@ The National Institute of Rural Development (NIRD) is an Apex institute of Minis
 ## QGIS is used for all GIS training courses
 
 <figure>
-<img src="../images/india_hyderabad2.jpg" class="align-right" alt="./images/india_hyderabad2.jpg" />
+<img src="../images/india_hyderabad2.jpg" class="align-right" alt="india_hyderabad2.jpg" />
 <figcaption>QGIS training course at NIRD Jaipur Centre</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ There is a question why QGIS only when other software like uDig, MapWindow, gvSI
 The applications of software during training are generally concentrated on Watershed and Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS) as these two are land based flagships of Government of India. Local Open Source Raster and Vector data are used in exercises. Participants are encouraged to come with their own or departmental data if available to work. Training is provided in lab equipped with 15 computers of i5, 8GB RAM and Windows7 OS. Per training number of trainees remains between 20-30.
 
 <figure>
-<img src="../images/india_hyderabad3.png" class="align-right" alt="./images/india_hyderabad3.png" />
+<img src="../images/india_hyderabad3.png" class="align-right" alt="india_hyderabad3.png" />
 <figcaption>Conducted QGIS training courses and participants</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ Every month training is conducted with 20-30 participants so this number is incr
 ## Author
 
 <figure>
-<img src="../images/india_hyderabadaut.png" class="align-left" alt="./images/india_hyderabadaut.png" />
+<img src="../images/india_hyderabadaut.png" class="align-left" alt="india_hyderabadaut.png" />
 <figcaption>H K Solanki</figcaption>
 </figure>
 

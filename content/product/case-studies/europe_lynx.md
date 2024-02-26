@@ -23,7 +23,7 @@ Challenged with the task of GIS based modeling for the first time, a working gro
 All collected data was processed with QGIS 2.6 and 2.8, projected into ETRS89 / ETRS-LAEA and stored according to the INSPIRE directive to meet EU standards. An overall **discrete index of weights** was defined and applied to all input data.
 
 <figure>
-<img src="../images/europe_lynx1.png" alt="./images/europe_lynx1.png" />
+<img src="../images/europe_lynx1.png" alt="europe_lynx1.png" />
 <figcaption>Figure 1: Workflow - Lynx habitat expert model</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ All collected data was processed with QGIS 2.6 and 2.8, projected into ETRS89 / 
 *Note: The Hunter Accessibility Model shall indicate the decreasing likelihood of hunters accessing the area by further distance to roads and increasing slope*
 
 <figure>
-<img src="../images/europe_lynx2.png" alt="./images/europe_lynx2.png" />
+<img src="../images/europe_lynx2.png" alt="europe_lynx2.png" />
 <figcaption>Figure 2, 3 and 4</figcaption>
 </figure>
 

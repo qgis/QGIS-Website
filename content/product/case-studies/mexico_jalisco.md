@@ -15,14 +15,14 @@ thumbnail: "images/mexico_jalisco1.jpg"
 The Instituto de Información Territorial del Estado de Jalisco is a government organization which was founded in 1998 to share geographical information between the government agencies of Jalisco in México.
 
 <figure>
-<img src="../images/mexico_jalisco1.jpg" class="align-right" alt="./images/mexico_jalisco1.jpg" />
+<img src="../images/mexico_jalisco1.jpg" class="align-right" alt="mexico_jalisco1.jpg" />
 <figcaption>Exploring the data with its online viewer</figcaption>
 </figure>
 
 Within the years, the institution has gathered loads of information in several formats such as SHP, DWG, DXF, GeoTIFF and ECW, among others. So, what we wanted was to have all this information available, organized and in a common format with the purpose of being able to provide and display it over the Internet.
 
 <figure>
-<img src="../images/mexico_jalisco2.jpg" class="align-right" alt="./images/mexico_jalisco2.jpg" />
+<img src="../images/mexico_jalisco2.jpg" class="align-right" alt="mexico_jalisco2.jpg" />
 <figcaption>Connecting to the Spatial Data Infrastructure with WMS</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ I decided to use Mapserver and PostgreSQL with PostGIS extension to be able to d
 Internally, we use QGIS to check the raster and vector data of the agencies before publishing it, and after its integration, we used it again to test the Web services that we've created. Also, we have done many spatial analysis with QGIS pulling the data directly from our PostgreSQL spatial database, then, we export the results as shape files.
 
 <figure>
-<img src="../images/mexico_jalisco3.jpg" class="align-right" alt="./images/mexico_jalisco3.jpg" />
+<img src="../images/mexico_jalisco3.jpg" class="align-right" alt="mexico_jalisco3.jpg" />
 <figcaption>Connecting to the Spatial Data Infrastructure with WFS</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ This project understood as the technological component of a Spatial Data Infrast
 ## Author
 
 <figure>
-<img src="../images/mexico_jaliscoaut.jpg" class="align-left" height="200" alt="./images/mexico_jaliscoaut.jpg" />
+<img src="../images/mexico_jaliscoaut.jpg" class="align-left" height="200" alt="mexico_jaliscoaut.jpg" />
 <figcaption>Carlos Ruiz</figcaption>
 </figure>
 

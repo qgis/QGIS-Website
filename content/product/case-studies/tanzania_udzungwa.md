@@ -21,7 +21,7 @@ Working in southern Tanzania, the Udzungwa Elephant Project (UEP) is using QGIS 
 Trainees used their own laptops and were provided with the installer for QGIS 1.7.3 along with key data layers covering the National Park: protected area boundaries, scanned topographic maps, a DEM, roads, ranger posts, and habitat types.
 
 <figure>
-<img src="../images/tanzania_udzungwa1.jpg" class="align-right" alt="./images/tanzania_udzungwa1.jpg" />
+<img src="../images/tanzania_udzungwa1.jpg" class="align-right" alt="tanzania_udzungwa1.jpg" />
 <figcaption>QGIS Udzungwa</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ QGIS offered us several attractions: not only is it completely free, but its ope
 The Udzungwa Elephant Project is based next to Tanzania\'s Udzungwa Mountains National Park, a range of evergreen forested mountains reaching over 2,500 metres. It studies the ecology of elephants in and around the mountains, with the aim of understanding how elephants move between different Tanzanian parks and reserves, and how such corridors might be maintained while reducing crop damage caused by elephants. More widely, elephants are a \"flagship species\" for the conservation of the incredible wildlife and landscapes of southern Tanzania.
 
 <figure>
-<img src="../images/tanzania_udzungwa2.jpg" class="align-right" alt="./images/tanzania_udzungwa2.jpg" />
+<img src="../images/tanzania_udzungwa2.jpg" class="align-right" alt="tanzania_udzungwa2.jpg" />
 <figcaption>QGIS Udzungwa 2</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ Special thanks to the US Fish and Wildlife Service African Elephant Fund for sup
 ## Author
 
 <figure>
-<img src="../images/tanzania_udzungwaaut.jpg" class="align-left" height="200" alt="./images/tanzania_udzungwaaut.jpg" />
+<img src="../images/tanzania_udzungwaaut.jpg" class="align-left" height="200" alt="tanzania_udzungwaaut.jpg" />
 <figcaption>Nick McWilliam</figcaption>
 </figure>
 

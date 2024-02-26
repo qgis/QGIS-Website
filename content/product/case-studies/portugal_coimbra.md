@@ -15,7 +15,7 @@ thumbnail: "images/portugal_coimbra1.png"
 This case study results from the final draft of the Graduate Geographic Information Systems taught by GeoPoint. We proposed to study a landscape using Landscape Ecology plugin (LecoS) in QGIS 2.01 Dufour. The study was conduted in a region of central Portugal, Municipality of Coimbra, with an total area of 31940ha and it has geographic coordinates 40°12\'11.84\" North, 8°24\'37.15\" West. Because the new administrative reorganization this municipality are divided into 18 parishes, which are mostly urban areas (Figure 1).
 
 <figure>
-<img src="../images/portugal_coimbra1.png" class="align-left" alt="./images/portugal_coimbra1.png" />
+<img src="../images/portugal_coimbra1.png" class="align-left" alt="portugal_coimbra1.png" />
 <figcaption>Geographic location of the municipality of Coimbra.</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ The characterization of a landscape is conducted using quantitative indices desi
 Landscape metrics was calculated using the Corine Land Cover (CLC) of the years 1990 and 2006. For this purpose it was necessary to transform the coverages in raster format with cell size 50x50 meters. We use r.to.raster tool the Grass Gis module that were present in processing toolbox and the CLC classification level used it´s the first. After transform coverages we calculate the metrics in Landscape Ecology plugin (LecoS) using the graphical modeler (Figure 2).
 
 <figure>
-<img src="../images/portugal_coimbra3.png" class="align-left" alt="./images/portugal_coimbra3.png" />
+<img src="../images/portugal_coimbra3.png" class="align-left" alt="portugal_coimbra3.png" />
 <figcaption>Landscape metrics calculated for diferent years (1990 and 2006).</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ We calculate land cover area, Landscape Proportion, edge density, Number of patc
 From analysis of the landscape metrics calculated it was found that there was an increase in the degree of human disturbance and therefore a greater fragmentation of uses between 1990 and 2006. The number of patches of "Forest Semi Natural areas" and "Agricultural areas" decreased between 1990 and 2006 (Table 1). This metric can give us some indication of ecological processes increasing or decreasing relationships between populations and habitats (Viana and Aranha, 2008). Also of note is the average distance between spots, one measure that allows us to understand the degree of landscape fragmentation, the decline of "Forest and Semi Natural areas" 1990 to 2006 at the expense of increased "Artificial areas" (Table 1).
 
 <figure>
-<img src="../images/portugal_coimbra2.png" class="align-left" alt="./images/portugal_coimbra2.png" />
+<img src="../images/portugal_coimbra2.png" class="align-left" alt="portugal_coimbra2.png" />
 <figcaption>Model to calculate landscape metrics in 1990.</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ It was possible to determine the landscape metrics using the LecoS plugin noting
 ## Authors
 
 <figure>
-<img src="../images/portugal_coimbra4.png" class="align-left" alt="./images/portugal_coimbra4.png" />
+<img src="../images/portugal_coimbra4.png" class="align-left" alt="portugal_coimbra4.png" />
 <figcaption>André Duarte</figcaption>
 </figure>
 
