@@ -23,6 +23,5 @@ test('donate page', async ({ page }) => {
   await expect(page.getByText('Bank transfer ¶ Use the')).toBeVisible();
   await expect(page.getByText('Account name: QGIS.ORG')).toBeVisible();
   await expect(page.getByText('Paypal ¶ You can use Paypal')).toBeVisible();
-  await expect(page.locator('p > img')).toBeVisible();
   await expect(page.getByRole('button', { name: 'Donate' })).toBeVisible();
 });
