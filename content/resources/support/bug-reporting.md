@@ -33,7 +33,7 @@ QGIS applications (QGIS Desktop and QGIS Server) issues are available in [Github
 
 ### Before reporting an issue
 
-Before filing an issue, verify that you are running the currently supported versions 3.28.15 or 3.34.3 or the development version 3.35 (see also [Release schedule]({{< ref "resources/roadmap#release-schedule" >}})) and review the currently open issues to make sure that you aren’t creating a duplicate. If you have additional information on an issue, you can add it to the existing ticket. Third party plugins might also cause problems. If you have installed any, you should also verify that the problem is still reproducible without them. Please don’t report multiple unrelated bugs in a single bug report.
+Before filing an issue, verify that you are running the currently supported versions {{< param "ltrrelease" >}} or {{< param "release" >}} or the development version {{< param "devversion" >}} (see also [Release schedule]({{< ref "resources/roadmap#release-schedule" >}})) and review the currently open issues to make sure that you aren’t creating a duplicate. If you have additional information on an issue, you can add it to the existing ticket. Third party plugins might also cause problems. If you have installed any, you should also verify that the problem is still reproducible without them. Please don’t report multiple unrelated bugs in a single bug report.
 
 When you’re are logged in, a `New Issue` button is available. Select it and follow the instructions there.
 

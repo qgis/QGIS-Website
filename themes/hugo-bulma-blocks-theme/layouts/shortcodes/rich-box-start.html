@@ -1,0 +1,4 @@
+<div class="container rich {{ .Get "layoutClass" }}" {{ with .Get "id" }} id="{{ . }}" {{ end }}>
+    {{ with .Get "icon" }}
+        <div class="icon">{{ . }}</div>
+    {{ end }}

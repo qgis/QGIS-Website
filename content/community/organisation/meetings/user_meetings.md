@@ -10,12 +10,12 @@ sidebar: true
 
 # QGIS User Meetings
 
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Do you want to organize a new meeting?
 The organization of events happens on the [QGIS wiki](https://github.com/qgis/QGIS/wiki#qgis-hackfests).
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 **7th german-speaking QGIS User Meeting in Kassel 2013**
 
