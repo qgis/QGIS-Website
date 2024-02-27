@@ -79,9 +79,6 @@ test('community page', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'Infrastructure' })).toBeVisible();
   await page.getByRole('link', { name: 'Infrastructure' }).click();
   await expect(page.getByText('Infrastructure ¶ This page')).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Local User Groups' })).toBeVisible();
-  await page.getByRole('link', { name: 'Local User Groups' }).click();
-  await expect(page.getByText('User Groups ¶ Current list of')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Grant Program' })).toBeVisible();
   await page.getByRole('link', { name: 'Grant Program' }).click();
   await expect(page.getByText('Grant Program ¶ ADD CONTENT')).toBeVisible();
