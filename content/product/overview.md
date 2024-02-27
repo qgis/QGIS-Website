@@ -110,7 +110,7 @@ Enhance the functionality of QGIS application with free additional features.
 ### Annual international conference to explore the future of QGIS
 Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing.
 
-[Community meetings](../../community/organisation/meetings/user_meetings/)
+[Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}})
 {{< column-end >}}
 {{< columns-end >}}
 
@@ -122,11 +122,11 @@ Connect with professionals, enthusiasts, and QGIS users for networking and knowl
 ### Local user groups and support providers
 Join a community of like-minded individuals in your region.
 
-[Local groups list](../../community/organisation/groups/)
+[Local groups list]({{< ref "community/groups.md" >}})
 {{< column-end >}}
 {{< columns-end >}}
 
-[Join the community](../../community/involve/)
+[Join the community]({{< ref "community/involve.md" >}})
 
 ## Cross platform
 
@@ -149,7 +149,7 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 
 Create, edit, visualise, analyse and publish geospatial information.
 
-[Download](/download/) for Windows, Mac, Linux, BSD and Android.
+[Download]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
@@ -179,9 +179,9 @@ Benefit from the powerful symbology, labeling and blending features to impress w
 
 The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS into the field
 
-*   [QField](/download/)
-*   [Mergin Maps Input app](/download/)
-*   [IntraMaps Roam](/download/)
+*   [QField]({{< ref "download.md" >}})
+*   [Mergin Maps Input app]({{< ref "download.md" >}})
+*   [IntraMaps Roam]({{< ref "download.md" >}})
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
@@ -194,7 +194,7 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 
 We gather inspiring stories from actual users that showcase the versatility and power of the QGIS solution
 
-[Find out more](../case-studies)
+[Find out more]({{< ref "product/case-studies.md" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 {{< usecase >}}
@@ -209,7 +209,7 @@ We gather inspiring stories from actual users that showcase the versatility and 
 ## Maps showcase
 QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
 
-[Go to maps showcase](maps/)
+[Go to maps showcase]({{< ref "product/overview/maps.md" >}})
 
 {{< column-end >}}
 
@@ -224,7 +224,7 @@ QGIS users demonstrate their creativity, showcasing the app's powerful map creat
 ## Application screenshots
 Below are some screenshots from QGIS itself and a selection of Maps which are created with QGIS.
 
-[Go to screenshots](screenshots/)
+[Go to screenshots]({{< ref "product/overview/screenshots.md" >}})
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}

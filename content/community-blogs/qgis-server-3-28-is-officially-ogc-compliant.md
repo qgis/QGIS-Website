@@ -24,7 +24,7 @@ showcase: "planet"
 
 
 
-<p>All this has been possible thanks to the QGIS&#8217;s <a href="https://qgis.org/en/site/about/sustaining_members.html">sustaining members</a> and contributors.</p>
+<p>All this has been possible thanks to the QGIS&#8217;s <a href="{{< ref "/funding/membership.md" >}}">sustaining members</a> and contributors.</p>
 
 
 

@@ -84,7 +84,7 @@ Supporting the QGIS project as a sustaining member provides the following benefi
 {{< rich-box-start >}}
 {{< rich-content-start themeClass="coloring-4"  >}}
 #### Public Acknowledgment
-All sustaining members and donors will be listed on the project [Members page](../../../about/sustaining_members.html#qgis-sustaining-members), ordered by membership category with a link back to the sustaining members organization or company website and the logo in a size reflecting their membership category.
+All sustaining members and donors will be listed on the project [Members page]({{< ref "/funding/membership.md" >}}), ordered by membership category with a link back to the sustaining members organization or company website and the logo in a size reflecting their membership category.
     
 {{< rich-content-end >}}
 {{< rich-box-end >}}
@@ -240,7 +240,7 @@ Past sustaining members are listed separately for a period of two years to ackno
 {{< rich-box-start icon="💡" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### You can also make one-time payement
-Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations](https://donate.qgis.org) page). Even a small donation can make a difference and help to reach important project goals!
+Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help to reach important project goals!
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
