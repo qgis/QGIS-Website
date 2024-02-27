@@ -113,7 +113,7 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 {{< column-end >}}
 {{< columns-end >}}
 
-{{< columns-start >}}
+{{< columns-start class="mb-6">}}
 {{< column-start class="is-flex-direction-column is-one-third left-title">}}
 ## Community Growth & Engagement  
  
