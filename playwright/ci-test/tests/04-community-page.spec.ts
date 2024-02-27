@@ -115,7 +115,6 @@ test('community page', async ({ page }) => {
   await page.locator('#sidebar').getByRole('link', { name: 'Funding' }).click();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Membership' })).toBeVisible();
   await page.locator('#sidebar').getByRole('link', { name: 'Membership' }).click();
-  await expect(page.getByText('Sustaining Membership program')).toBeVisible();
   await expect(page.getByText('How become a sustaining member')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Become a Sustaining Member' })).toBeVisible();
   await expect(page.locator('div').filter({ hasText: 'Sustaining Membership program Join our mission to enhance and promote QGIS as' }).nth(1)).toBeVisible();
