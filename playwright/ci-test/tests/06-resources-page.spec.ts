@@ -16,7 +16,7 @@ test('resources pages', async ({ page }) => {
   await expect(page.getByText('Get involved and help us')).toBeVisible();
   await expect(page.locator('p').filter({ hasText: 'Get involved and help us' }).getByRole('link')).toBeVisible();
   await expect(page.locator('#tab-3')).toBeVisible();
-  await expect(page.getByText('Archived reliases')).toBeVisible();
+  await expect(page.getByText('Archived releases')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Desktop User Guide/Manual' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Server Guide/Manual' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'QGIS Training manual' })).toBeVisible();
