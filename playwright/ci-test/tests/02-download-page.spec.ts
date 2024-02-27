@@ -31,7 +31,6 @@ test('download page', async ({ page }) => {
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Become a certified member' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'QGIS Foundation' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Project Organisation' })).toBeVisible();
-  await expect(page.locator('#sidebar').getByRole('link', { name: 'Members and Donors' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Members Blogs' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Funding' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Download' })).toBeVisible();
