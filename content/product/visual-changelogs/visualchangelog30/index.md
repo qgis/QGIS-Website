@@ -1503,26 +1503,16 @@ References [https://github.com/qgis/qgis3.0\\\_api/issues/11](https://github.com
 This finally brings back a consistent state in naming within the geometry API
 
 ### Renames
-
-  ---------------------------------------------
-  QGIS 2                 QGIS 3
-  ---------------------- ----------------------
-  QgsPolygon             QgsPolygonXY
-
-  QgsMultiPoint          QgsMultiPointXY
-
-  QgsMultiPolyline       QgsMultiPolylineXY
-
-  QgsMultiPolygon        QgsMultiPolygonXY
-
-  QgsPolygonV2           QgsPolygon
-
-  QgsMultiPointV2        QgsMultiPoint
-
-  QgsMultiPolylineV2     QgsMultiPolyline
-
-  QgsMultiPolygonV2      QgsMultiPolygon
-  ---------------------------------------------
+| QGIS 2               | QGIS 3 |
+|----|----|
+| QgsPolygon           | QgsPolygonXY | |
+| QgsMultiPoint        | QgsMultiPointXY |
+| QgsMultiPolyline     | QgsMultiPolylineXY |
+| QgsMultiPolygon      | QgsMultiPolygonXY |
+| QgsPolygonV2         | QgsPolygon |
+| QgsMultiPointV2      | QgsMultiPoint |
+| QgsMultiPolylineV2   | QgsMultiPolyline |
+| QgsMultiPolygonV2    | QgsMultiPolygon |
 
 See also <https://github.com/qgis/QGIS/pull/5491>
 
