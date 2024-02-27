@@ -10,7 +10,7 @@
                 <div class="columns is-desktop">
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 ">
-                            <a href="/product/overview/" class="footertitle text-nowrap">
+                            <a href="{{ absURL "product/overview" }}" class="footertitle text-nowrap">
                                 Product
                             </a>
                         </li>
@@ -30,7 +30,7 @@
 
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5">
-                            <a href="/community/involve/" class="footertitle text-nowrap">
+                            <a href="{{ absURL "community/involve" }}" class="footertitle text-nowrap">
                                 Community
                             </a>
                         </li>
@@ -49,7 +49,7 @@
 
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 footertitle">
-                            <a href="/resources/hub/" class="footertitle text-nowrap">
+                            <a href="{{ absURL "resources/hub" }}" class="footertitle text-nowrap">
                                 Resources
                             </a>
                         </li>
@@ -65,10 +65,29 @@
                             {{ end }}
                         {{ end }}
                     </ul>
+
+                    <ul class="column mb-5">
+                        <li class="is-size-5 mb-5 ">
+                            <a href="{{ absURL "product/overview" }}" class="footertitle text-nowrap">
+                                Funding
+                            </a>
+                        </li>
+                        {{- range site.Menus.main }}
+                            {{ range sort .Children "Weight" }}
+                                {{- if eq .Parent "Funding" -}}
+                                    <li class="mb-4">
+                                        <a class="has-text-white text-nowrap" href="{{ .URL }}">
+                                            {{ .Name }}
+                                        </a>
+                                    </li>
+                                {{ end }}
+                            {{ end }}
+                        {{ end }}
+                    </ul>
                 </div>
             </div>
             <div class="column is-2-desktop">
-                <a href="/download/">
+                <a href="{{ absURL "download" }}">
                     <button class="button is-primary1 is-size-5">Download</button>
                 </a>
             </div>
@@ -91,18 +110,18 @@
                 <a class="has-text-white" href="https://github.com/qgis/">
                     <i class="fa-brands fa-square-github"></i>
                 </a>
-                <a class="has-text-white" href="{{ absURL "/community/organisation/mailinglists" }}">
+                <a class="has-text-white" href="{{ absURL "community/organisation/mailinglists" }}">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
         </div>
         <div class="columns is-desktop privacy-links">
-            <a href="{{ absURL "/diversity" }}" class="column is-narrow is-offset-2-desktop">Diversity statement</a>
-            <a href="{{ absURL "/conduct" }}" class="column is-narrow">Code of conduct</a>
-            <a href="{{ absURL "/environmental-policy" }}" class="column is-narrow">Environmental policy</a>
-            <a href="{{ absURL "/license" }}" class="column is-narrow">License</a>
-            <a href="{{ absURL "/styleguide" }}" class="column is-narrow">Visual Style Guide</a>   
-            <a href="{{ absURL "/goodies" }}" class="column is-narrow">Goodies</a>   
+            <a href="{{ absURL "diversity" }}" class="column is-narrow is-offset-2-desktop">Diversity statement</a>
+            <a href="{{ absURL "conduct" }}" class="column is-narrow">Code of conduct</a>
+            <a href="{{ absURL "environmental-policy" }}" class="column is-narrow">Environmental policy</a>
+            <a href="{{ absURL "license" }}" class="column is-narrow">License</a>
+            <a href="{{ absURL "styleguide" }}" class="column is-narrow">Visual Style Guide</a>   
+            <a href="{{ absURL "goodies" }}" class="column is-narrow">Goodies</a>   
 
         </div>
     </div>

@@ -16,9 +16,10 @@ sidebar: true
 {{< rich-content-start themeClass="coloring-1" >}}
 ### Participate in Support Channels
 
+{{< button class="is-primary1 is-small is-rounded" link="community/groups" text="User groups 🇩🇪 🇫🇷 🇪🇸" >}} 
 {{< button class="is-primary1 is-small is-rounded" link="community/organisation/mailinglists" text="QGIS mailing lists" >}} 
 {{< button class="is-primary1 is-small is-rounded" link="resources/support/#communication-channels" text="Chats rooms" >}} 
-{{< button class="is-primary1 is-small is-rounded" link="community/organisation/groups" text="User groups" >}} 
+
 
 Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
 
@@ -105,8 +106,8 @@ QGIS Core comprises libraries for building custom applications through a robust 
 
 We welcome two types of financial contributions:
 
-{{< button class = "is-primary1" link = "community/members/sustaining_member/" text = "Become a Sustaining Member" >}} 
-{{< button class = "is-primary6" link = "donate/" text = "One-Time Donation" >}} 
+{{< button class = "is-primary1" link = "funding/membership" text = "Become a Sustaining Member" >}} 
+{{< button class = "is-primary6" link = "funding/donate" text = "One-Time Donation" >}} 
 
 {{< rich-content-end >}}
 {{< rich-right-start >}}  

@@ -162,7 +162,7 @@ showcase: "planet"
 
 
 
-<p><strong>Become a <a href="https://qgis.org/en/site/getinvolved/governance/sustaining_members/management.html">sustaining member</a> or <a href="https://donate.qgis.org">donor</a>. Every contribution counts.</strong></p>
+<p><strong>Become a <a href="{{< ref "/funding/membership.md" >}}">sustaining member</a> or <a href="{{< ref "/funding/donate.md" >}}">donor</a>. Every contribution counts.</strong></p>
 
 
 
