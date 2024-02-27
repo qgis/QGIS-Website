@@ -1,7 +1,7 @@
 {{ $funders := 0 }}
 {{ $logoPath := 0 }}
 
-{{  $type := .Get "type"  }}
+{{ $type := .Get "type"  }}
 
 {{ if eq $type "changelog" }}
 	{{ $funders = .Page.Resources.Match "funders/*md" }}
@@ -10,6 +10,10 @@
 	{{ $headlessbundle := .Site.GetPage "/funders" }}
 	{{ $funders = ( $headlessbundle.Resources.ByType "page" ) }}
     {{ $logoPath = absURL "funders/" }}
+{{ end }}
+
+{{ with .Get "relativeImgPath" }}
+    {{ $logoPath = "" }}
 {{ end }}
 
 {{ if or (eq $type "active") (eq $type "changelog") }}
