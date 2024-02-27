@@ -10,6 +10,6 @@ sidebar: true
 
 # Past sustaining members
 
-{{< fund status="inactive" >}}
+{{< fund type="inactive" >}}
 
 {{< content-end >}}
