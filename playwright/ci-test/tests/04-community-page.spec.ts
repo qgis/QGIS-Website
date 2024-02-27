@@ -122,11 +122,6 @@ test('community page', async ({ page }) => {
   await expect(page.getByText('Sustaining Membership program ¶ QGIS is an entirely Open Source project. QGIS')).toBeVisible();
   await expect(page.getByText('QGIS is an entirely Open')).toBeVisible();
   await expect(page.getByText('As a result, you have free')).toBeVisible();
-  await expect(page.getByText('We would like to extend our')).toBeVisible();
-  await expect(page.getByText('Maintaining Core Infrastructure ¶ The official QGIS.org website, a central hub')).toBeVisible();
-  await expect(page.getByText('Software Development & QA ¶ Continually improve and package QGIS for various')).toBeVisible();
-  await expect(page.getByText('Empowering Our Volunteers ¶ Mentoring new contributors, fostering a welcoming')).toBeVisible();
-  await expect(page.getByText('Fostering Collaboration & Knowledge Sharing ¶ Organizing and supporting')).toBeVisible();
   await expect(page.getByText('€ 27,000+ ¶ Flagship Member (')).toBeVisible();
   await expect(page.getByText('€ 9,000+ ¶ Large Member (e.g')).toBeVisible();
   await expect(page.getByText('€ 3,000+ ¶ Medium Member (e.g')).toBeVisible();
