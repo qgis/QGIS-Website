@@ -18,7 +18,7 @@ test('community page', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'Develop a Plugin' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Develop QGIS Core' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Sustain & Donate' })).toBeVisible();
-  await expect(page.getByText('Participate in Support Channels ¶ QGIS mailing lists Chats rooms User groups')).toBeVisible();
+  await expect(page.getByText('Participate in Support Channels ¶ User groups 🇩🇪 🇫🇷 🇪🇸')).toBeVisible();
   await expect(page.getByText('Report Bugs ¶ If you')).toBeVisible();
   await expect(page.getByText('QGIS Documentation ¶ Creating')).toBeVisible();
   await expect(page.getByText('Translate QGIS ¶ If you’re')).toBeVisible();
