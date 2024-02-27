@@ -25,7 +25,7 @@ test('community page', async ({ page }) => {
   await expect(page.getByText('Develop a Plugin ¶ Interested')).toBeVisible();
   await expect(page.getByText('Develop QGIS Core ¶ QGIS Core')).toBeVisible();
   await expect(page.getByText('Sustain & Donate ¶ We welcome')).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Become a Sustaining Member' }).nth(1)).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Become a Sustaining Member' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'One-Time Donation' })).toBeVisible();
   await expect(page.getByText('One-Time Payment € 10.00 € 20')).toBeVisible();
   await expect(page.getByText('$ 10.00')).toBeVisible();
