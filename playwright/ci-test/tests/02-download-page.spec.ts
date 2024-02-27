@@ -33,7 +33,7 @@ test('download page', async ({ page }) => {
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Project Organisation' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Members and Donors' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Members Blogs' })).toBeVisible();
-  await expect(page.locator('#sidebar').getByRole('link', { name: 'Donate' })).toBeVisible();
+  await expect(page.locator('#sidebar').getByRole('link', { name: 'Funding' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Download' })).toBeVisible();
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Resources', exact: true })).toBeVisible();
   await expect(page.locator('#sidebar div').filter({ hasText: 'Resources' }).locator('span')).toBeVisible();

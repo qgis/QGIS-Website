@@ -5,8 +5,8 @@ let url = '/';
 test('donate page', async ({ page }) => {
   await page.goto(url);
   await page.locator('section').filter({ hasText: 'Free and open source Spatial' }).getByRole('link').click();
-  await expect(page.locator('#sidebar').getByRole('link', { name: 'Donate' })).toBeVisible();
-  await page.locator('#sidebar').getByRole('link', { name: 'Donate' }).click();
+  await expect(page.locator('#sidebar').getByRole('link', { name: 'Funding' })).toBeVisible();
+  await page.locator('#sidebar').getByRole('link', { name: 'Funding' }).click();
   await expect(page.getByText('Support us ¶ QGIS is')).toBeVisible();
   await expect(page.getByText('QGIS is developed by a team')).toBeVisible();
   await expect(page.getByText('We rely on sponsorships and')).toBeVisible();
