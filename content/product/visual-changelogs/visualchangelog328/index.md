@@ -620,49 +620,28 @@ This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
 
 ### Feature: Bug fixes by Alessandro Pasotti
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                 URL issues.qgis.org (if reported)                      URL Commit (Github)                                    3.22 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------ ------------------------------------------------------
-  GetPrint request of Atlas Template doesn\'t respect Project scales                                        [#49900](https://github.com/qgis/QGIS/issues/49900)    [PR #50199](https://github.com/qgis/QGIS/pull/50199)   [PR #50214](https://github.com/qgis/QGIS/pull/50214)
-
-  Attribute Table Integer entries not showing due to window size                                            [#50181](https://github.com/qgis/QGIS/issues/50181)    [PR #50201](https://github.com/qgis/QGIS/pull/50201)   Not recommended
-
-  WFS3 collections field name/displayName mix in request/response                                           [#49399](https://github.com/qgis/QGIS/issues/49399)    [PR #50203](https://github.com/qgis/QGIS/pull/50203)   Not recommended
-
-  QGIS Server WMS GetFeatureInfo does not evaluate represent_value expression in maptip                     [#30719](https://github.com/qgis/QGIS/issues/30719)    [PR #50216](https://github.com/qgis/QGIS/pull/50216)   [PR #50223](https://github.com/qgis/QGIS/pull/50223)
-
-  \"evaluate default value on providers side\" block insert on table in the schema with autoincrement       [#50168](https://github.com/qgis/QGIS/issues/50168)    [PR #50230](https://github.com/qgis/QGIS/pull/50230)   [PR #50333](https://github.com/qgis/QGIS/pull/50333)
-
-  QGIS not responding when entering page size using custom width or height fields                           [#50104](https://github.com/qgis/QGIS/issues/50104)    Cannot reproduce                                       
-
-  \"Add Directory\...\" inputs files from previous selected directory at first instance, then the corret.   [#50055](https://github.com/qgis/QGIS/issues/50055)    [PR #50232](https://github.com/qgis/QGIS/pull/50232)   [PR #50241](https://github.com/qgis/QGIS/pull/50241)
-
-  Layer style panel and Layer panel do not show same visibility settings for layer style                    [#49998](https://github.com/qgis/QGIS/issues/49998)    Cannot reproduce                                       
-
-  Crash while opening Options dialog after switching locale                                                 [#50239](https://github.com/qgis/QGIS/issues/50239)9   [PR #50263](https://github.com/qgis/QGIS/pull/50263)   Not needed
-
-  unreported MSSQL connections API error                                                                    Unreported                                             [PR #50194](https://github.com/qgis/QGIS/pull/50194)   [PR #50454](https://github.com/qgis/QGIS/pull/50454)
-
-  Identify and select tools don\'t work with geometry-based query layers                                    [#50242](https://github.com/qgis/QGIS/issues/50242)    Cannot reproduce                                       
-
-  Problem with Reloading SLD file in QGIS                                                                   [#50152](https://github.com/qgis/QGIS/issues/50152)    [PR #50266](https://github.com/qgis/QGIS/pull/50266)   queued
-
-  Unreported endless alg splitwithlines                                                                     Unreported                                             [PR #50279](https://github.com/qgis/QGIS/pull/50279)   Not recommended
-
-  Processing algorithm \"Split with lines\" does not split polygon                                          [#50227](https://github.com/qgis/QGIS/issues/50227)    Not a bug                                              
-
-  Expression do not split string in multiple lines                                                          [#49666](https://github.com/qgis/QGIS/issues/49666)    [PR #50295](https://github.com/qgis/QGIS/pull/50295)   [PR #50455](https://github.com/qgis/QGIS/pull/50455)
-
-  Problem with exportation of complex SLD                                                                   [#42348](https://github.com/qgis/QGIS/issues/42348)    [PR #50342](https://github.com/qgis/QGIS/pull/50342)   [PR #50354](https://github.com/qgis/QGIS/pull/50354)
-
-  Wrong interpretation of SLD color opacity                                                                 [#44657](https://github.com/qgis/QGIS/issues/44657)    Not a bug                                              
-
-  Wrong label size for SLD export/import                                                                    [#35561](https://github.com/qgis/QGIS/issues/35561)    [PR #50347](https://github.com/qgis/QGIS/pull/50347)   Not needed
-
-  Exporting SLD doesnt include fill-opacity                                                                 [#33376](https://github.com/qgis/QGIS/issues/33376)    [PR #50349](https://github.com/qgis/QGIS/pull/50349)   [PR #50436](https://github.com/qgis/QGIS/pull/50436)
-
-  SpatiaLite - Added feature vanishes, attribute dialog does not show required fields                       [#50523](https://github.com/qgis/QGIS/issues/50523)    [PR #50573](https://github.com/qgis/QGIS/pull/50573)   queued
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                               | URL issues.qgis.org (if reported)                    | URL Commit (Github)                                  | 3.22 backport commit (GitHub)
+|----|----|----|----|
+| GetPrint request of Atlas Template doesn\'t respect Project scales                                      | [#49900](https://github.com/qgis/QGIS/issues/49900)  | [PR #50199](https://github.com/qgis/QGIS/pull/50199) | [PR #50214](https://github.com/qgis/QGIS/pull/50214)
+| Attribute Table Integer entries not showing due to window size                                          | [#50181](https://github.com/qgis/QGIS/issues/50181)  | [PR #50201](https://github.com/qgis/QGIS/pull/50201) | Not recommended
+| WFS3 collections field name/displayName mix in request/response                                         | [#49399](https://github.com/qgis/QGIS/issues/49399)  | [PR #50203](https://github.com/qgis/QGIS/pull/50203) | Not recommended
+| QGIS Server WMS GetFeatureInfo does not evaluate represent_value expression in maptip                   | [#30719](https://github.com/qgis/QGIS/issues/30719)  | [PR #50216](https://github.com/qgis/QGIS/pull/50216) | [PR #50223](https://github.com/qgis/QGIS/pull/50223)
+| \"evaluate default value on providers side\" block insert on table in the schema with autoincrement     | [#50168](https://github.com/qgis/QGIS/issues/50168)  | [PR #50230](https://github.com/qgis/QGIS/pull/50230) | [PR #50333](https://github.com/qgis/QGIS/pull/50333)
+| QGIS not responding when entering page size using custom width or height fields                         | [#50104](https://github.com/qgis/QGIS/issues/50104)  | Cannot reproduce                                       
+| \"Add Directory\...\" inputs files from previous selected directory at first instance, then the corret. | [#50055](https://github.com/qgis/QGIS/issues/50055)  | [PR #50232](https://github.com/qgis/QGIS/pull/50232) | [PR #50241](https://github.com/qgis/QGIS/pull/50241)
+| Layer style panel and Layer panel do not show same visibility settings for layer style                  | [#49998](https://github.com/qgis/QGIS/issues/49998)  | Cannot reproduce                                       
+| Crash while opening Options dialog after switching locale                                               | [#50239](https://github.com/qgis/QGIS/issues/50239)9 | [PR #50263](https://github.com/qgis/QGIS/pull/50263) | Not needed
+| unreported MSSQL connections API error                                                                  | Unreported                                           | [PR #50194](https://github.com/qgis/QGIS/pull/50194) | [PR #50454](https://github.com/qgis/QGIS/pull/50454)
+| Identify and select tools don\'t work with geometry-based query layers                                  | [#50242](https://github.com/qgis/QGIS/issues/50242)  | Cannot reproduce                                       
+| Problem with Reloading SLD file in QGIS                                                                 | [#50152](https://github.com/qgis/QGIS/issues/50152)  | [PR #50266](https://github.com/qgis/QGIS/pull/50266) | queued
+| Unreported endless alg splitwithlines                                                                   | Unreported                                           | [PR #50279](https://github.com/qgis/QGIS/pull/50279) | Not recommended
+| Processing algorithm \"Split with lines\" does not split polygon                                        | [#50227](https://github.com/qgis/QGIS/issues/50227)  | Not a bug                                              
+| Expression do not split string in multiple lines                                                        | [#49666](https://github.com/qgis/QGIS/issues/49666)  | [PR #50295](https://github.com/qgis/QGIS/pull/50295) | [PR #50455](https://github.com/qgis/QGIS/pull/50455)
+| Problem with exportation of complex SLD                                                                 | [#42348](https://github.com/qgis/QGIS/issues/42348)  | [PR #50342](https://github.com/qgis/QGIS/pull/50342) | [PR #50354](https://github.com/qgis/QGIS/pull/50354)
+| Wrong interpretation of SLD color opacity                                                               | [#44657](https://github.com/qgis/QGIS/issues/44657)  | Not a bug                                              
+| Wrong label size for SLD export/import                                                                  | [#35561](https://github.com/qgis/QGIS/issues/35561)  | [PR #50347](https://github.com/qgis/QGIS/pull/50347) | Not needed
+| Exporting SLD doesnt include fill-opacity                                                               | [#33376](https://github.com/qgis/QGIS/issues/33376)  | [PR #50349](https://github.com/qgis/QGIS/pull/50349) | [PR #50436](https://github.com/qgis/QGIS/pull/50436)
+| SpatiaLite - Added feature vanishes, attribute dialog does not show required fields                     | [#50523](https://github.com/qgis/QGIS/issues/50523)  | [PR #50573](https://github.com/qgis/QGIS/pull/50573) | queued
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -670,55 +649,31 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 
 ### Feature: Bug fixes by Even Rouault
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                                                 URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.22 backport commit (GitHub)
-  ----------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ---------------------------------------------------------------
-  GML import is missing one feature without geometry                                                                                        [#50215](https://github.com/qgis/QGIS/issues/50215)   [PR #50231](https://github.com/qgis/QGIS/pull/50231)   Not appropriate
-
-  WFS/QgsOapifProvider does not take the pageSize from the dialog into account                                                              [#49404](https://github.com/qgis/QGIS/issues/49404)   [PR #50236](https://github.com/qgis/QGIS/pull/50236)   Not needed
-
-  \[WFS\] Layer is added incorrectly as mixed geometry collection                                                                           [#49335](https://github.com/qgis/QGIS/issues/49335)   [PR #50237](https://github.com/qgis/QGIS/pull/50237)   [PR #50353](https://github.com/qgis/QGIS/pull/50353)
-
-  WFS: missing namespace prefix on geometry and attribute elements in FILTER for WFS GetFeature reques                                      [#49121](https://github.com/qgis/QGIS/issues/49121)   [PR #50249](https://github.com/qgis/QGIS/pull/50249)   [PR #50351](https://github.com/qgis/QGIS/pull/50351)
-
-  \[Processing\] Fix typo in smoothing parameter name of gdal_grid algorithms                                                               Unreported                                            [PR #50261](https://github.com/qgis/QGIS/pull/50261)   [PR #50331](https://github.com/qgis/QGIS/pull/50331)
-
-  WFS client shows wrong CRS                                                                                                                [#42627](https://github.com/qgis/QGIS/issues/42627)   [PR #50272](https://github.com/qgis/QGIS/pull/50272)   [PR #50328](https://github.com/qgis/QGIS/pull/50328)
-
-  QGIS doesn\'t work properly with WFS 2.0.0 combined with OGC HTTP URI srsName style (e.g. <http://www.opengis.net/def/crs/EPSG/0/xxxx>)   [#29391](https://github.com/qgis/QGIS/issues/29391)   [PR #50281](https://github.com/qgis/QGIS/pull/50281)   [PR #50386](https://github.com/qgis/QGIS/pull/50386)
-
-  QGIS ignores field inherited from parent feature type in WFS 2.0 services                                                                 [#42660](https://github.com/qgis/QGIS/issues/42660)   [PR #50300](https://github.com/qgis/QGIS/pull/50300)   Not appropriate
-
-  Loading and displaying CADRG/NITF data is slower than it used to be                                                                       [#49439](https://github.com/qgis/QGIS/issues/49439)   [PR #50302](https://github.com/qgis/QGIS/pull/50302)   [PR #50352](https://github.com/qgis/QGIS/pull/50352)
-
-  world_map.gpkg: little fix to avoid warning with recent GDAL versions                                                                     Unreported                                            [PR #50304](https://github.com/qgis/QGIS/pull/50304)   Not needed
-
-  QGIS 3.24.1 (Windows) destroys my VRT raster mosaic                                                                                       [#48052](https://github.com/qgis/QGIS/issues/48052)   <https://github.com/OSGeo/gdal/pull/6426>              [PR #50328](https://github.com/qgis/QGIS/pull/50328)Bug Title
-
-  \--                                                                                                                                       \--                                                   \--                                                    \--
-
-  GML import is missing one feature without geometry                                                                                        [#50215](https://github.com/qgis/QGIS/issues/50215)   [PR #50231](https://github.com/qgis/QGIS/pull/50231)   Not appropriate
-
-  WFS/QgsOapifProvider does not take the pageSize from the dialog into account                                                              [#49404](https://github.com/qgis/QGIS/issues/49404)   [PR #50236](https://github.com/qgis/QGIS/pull/50236)   Not needed
-
-  \[WFS\] Layer is added incorrectly as mixed geometry collection                                                                           [#49335](https://github.com/qgis/QGIS/issues/49335)   [PR #50237](https://github.com/qgis/QGIS/pull/50237)   [PR #50353](https://github.com/qgis/QGIS/pull/50353)
-
-  WFS: missing namespace prefix on geometry and attribute elements in FILTER for WFS GetFeature reques                                      [#49121](https://github.com/qgis/QGIS/issues/49121)   [PR #50249](https://github.com/qgis/QGIS/pull/50249)   [PR #50351](https://github.com/qgis/QGIS/pull/50351)
-
-  \[Processing\] Fix typo in smoothing parameter name of gdal_grid algorithms                                                               Unreported                                            [PR #50261](https://github.com/qgis/QGIS/pull/50261)   [PR #50331](https://github.com/qgis/QGIS/pull/50331)
-
-  WFS client shows wrong CRS                                                                                                                [#42627](https://github.com/qgis/QGIS/issues/42627)   [PR #50272](https://github.com/qgis/QGIS/pull/50272)   [PR #50328](https://github.com/qgis/QGIS/pull/50328)
-
-  QGIS doesn\'t work properly with WFS 2.0.0 combined with OGC HTTP URI srsName style (e.g. <http://www.opengis.net/def/crs/EPSG/0/xxxx>)   [#29391](https://github.com/qgis/QGIS/issues/29391)   [PR #50281](https://github.com/qgis/QGIS/pull/50281)   [PR #50386](https://github.com/qgis/QGIS/pull/50386)
-
-  QGIS ignores field inherited from parent feature type in WFS 2.0 services                                                                 [#42660](https://github.com/qgis/QGIS/issues/42660)   [PR #50300](https://github.com/qgis/QGIS/pull/50300)   Not appropriate
-
-  Loading and displaying CADRG/NITF data is slower than it used to be                                                                       [#49439](https://github.com/qgis/QGIS/issues/49439)   [PR #50302](https://github.com/qgis/QGIS/pull/50302)   [PR #50352](https://github.com/qgis/QGIS/pull/50352)
-
-  world_map.gpkg: little fix to avoid warning with recent GDAL versions                                                                     Unreported                                            [PR #50304](https://github.com/qgis/QGIS/pull/50304)   Not needed
-
-  QGIS 3.24.1 (Windows) destroys my VRT raster mosaic                                                                                       [#48052](https://github.com/qgis/QGIS/issues/48052)   <https://github.com/OSGeo/gdal/pull/6426>              [PR #50328](https://github.com/qgis/QGIS/pull/50328)
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                                               | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.22 backport commit (GitHub)
+|----|----|----|----|
+| GML import is missing one feature without geometry                                                                                      | [#50215](https://github.com/qgis/QGIS/issues/50215) | [PR #50231](https://github.com/qgis/QGIS/pull/50231) | Not appropriate
+| WFS/QgsOapifProvider does not take the pageSize from the dialog into account                                                            | [#49404](https://github.com/qgis/QGIS/issues/49404) | [PR #50236](https://github.com/qgis/QGIS/pull/50236) | Not needed
+| \[WFS\] Layer is added incorrectly as mixed geometry collection                                                                         | [#49335](https://github.com/qgis/QGIS/issues/49335) | [PR #50237](https://github.com/qgis/QGIS/pull/50237) | [PR #50353](https://github.com/qgis/QGIS/pull/50353)
+| WFS: missing namespace prefix on geometry and attribute elements in FILTER for WFS GetFeature reques                                    | [#49121](https://github.com/qgis/QGIS/issues/49121) | [PR #50249](https://github.com/qgis/QGIS/pull/50249) | [PR #50351](https://github.com/qgis/QGIS/pull/50351)
+| \[Processing\] Fix typo in smoothing parameter name of gdal_grid algorithms                                                             | Unreported                                          | [PR #50261](https://github.com/qgis/QGIS/pull/50261) | [PR #50331](https://github.com/qgis/QGIS/pull/50331)
+| WFS client shows wrong CRS                                                                                                              | [#42627](https://github.com/qgis/QGIS/issues/42627) | [PR #50272](https://github.com/qgis/QGIS/pull/50272) | [PR #50328](https://github.com/qgis/QGIS/pull/50328)
+| QGIS doesn\'t work properly with WFS 2.0.0 combined with OGC HTTP URI srsName style (e.g. <http://www.opengis.net/def/crs/EPSG/0/xxxx>) | [#29391](https://github.com/qgis/QGIS/issues/29391) | [PR #50281](https://github.com/qgis/QGIS/pull/50281) | [PR #50386](https://github.com/qgis/QGIS/pull/50386)
+| QGIS ignores field inherited from parent feature type in WFS 2.0 services                                                               | [#42660](https://github.com/qgis/QGIS/issues/42660) | [PR #50300](https://github.com/qgis/QGIS/pull/50300) | Not appropriate
+| Loading and displaying CADRG/NITF data is slower than it used to be                                                                     | [#49439](https://github.com/qgis/QGIS/issues/49439) | [PR #50302](https://github.com/qgis/QGIS/pull/50302) | [PR #50352](https://github.com/qgis/QGIS/pull/50352)
+| world_map.gpkg: little fix to avoid warning with recent GDAL versions                                                                   | Unreported                                          | [PR #50304](https://github.com/qgis/QGIS/pull/50304) | Not needed
+| QGIS 3.24.1 (Windows) destroys my VRT raster mosaic                                                                                     | [#48052](https://github.com/qgis/QGIS/issues/48052) | <https://github.com/OSGeo/gdal/pull/6426>            | [PR #50328](https://github.com/qgis/QGIS/pull/50328)Bug Title
+| \--                                                                                                                                     | \--                                                 | \--                                                  | \--
+| GML import is missing one feature without geometry                                                                                      | [#50215](https://github.com/qgis/QGIS/issues/50215) | [PR #50231](https://github.com/qgis/QGIS/pull/50231) | Not appropriate
+| WFS/QgsOapifProvider does not take the pageSize from the dialog into account                                                            | [#49404](https://github.com/qgis/QGIS/issues/49404) | [PR #50236](https://github.com/qgis/QGIS/pull/50236) | Not needed
+| \[WFS\] Layer is added incorrectly as mixed geometry collection                                                                         | [#49335](https://github.com/qgis/QGIS/issues/49335) | [PR #50237](https://github.com/qgis/QGIS/pull/50237) | [PR #50353](https://github.com/qgis/QGIS/pull/50353)
+| WFS: missing namespace prefix on geometry and attribute elements in FILTER for WFS GetFeature reques                                    | [#49121](https://github.com/qgis/QGIS/issues/49121) | [PR #50249](https://github.com/qgis/QGIS/pull/50249) | [PR #50351](https://github.com/qgis/QGIS/pull/50351)
+| \[Processing\] Fix typo in smoothing parameter name of gdal_grid algorithms                                                             | Unreported                                          | [PR #50261](https://github.com/qgis/QGIS/pull/50261) | [PR #50331](https://github.com/qgis/QGIS/pull/50331)
+| WFS client shows wrong CRS                                                                                                              | [#42627](https://github.com/qgis/QGIS/issues/42627) | [PR #50272](https://github.com/qgis/QGIS/pull/50272) | [PR #50328](https://github.com/qgis/QGIS/pull/50328)
+| QGIS doesn\'t work properly with WFS 2.0.0 combined with OGC HTTP URI srsName style (e.g. <http://www.opengis.net/def/crs/EPSG/0/xxxx>) | [#29391](https://github.com/qgis/QGIS/issues/29391) | [PR #50281](https://github.com/qgis/QGIS/pull/50281) | [PR #50386](https://github.com/qgis/QGIS/pull/50386)
+| QGIS ignores field inherited from parent feature type in WFS 2.0 services                                                               | [#42660](https://github.com/qgis/QGIS/issues/42660) | [PR #50300](https://github.com/qgis/QGIS/pull/50300) | Not appropriate
+| Loading and displaying CADRG/NITF data is slower than it used to be                                                                     | [#49439](https://github.com/qgis/QGIS/issues/49439) | [PR #50302](https://github.com/qgis/QGIS/pull/50302) | [PR #50352](https://github.com/qgis/QGIS/pull/50352)
+| world_map.gpkg: little fix to avoid warning with recent GDAL versions                                                                   | Unreported                                          | [PR #50304](https://github.com/qgis/QGIS/pull/50304) | Not needed
+| QGIS 3.24.1 (Windows) destroys my VRT raster mosaic                                                                                     | [#48052](https://github.com/qgis/QGIS/issues/48052) | <https://github.com/OSGeo/gdal/pull/6426>            | [PR #50328](https://github.com/qgis/QGIS/pull/50328)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -726,43 +681,25 @@ This feature was developed by [Even Rouault](https://www.spatialys.com/)
 
 ### Feature: Bug fixes by Julien Cabieces
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                        URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.22 backport commit (GitHub)
-  ---------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------
-  QGIS not retrieving sequence from postgis in 3.26                                                                [#49463](https://github.com/qgis/QGIS/issues/49463)   [PR #50247](https://github.com/qgis/QGIS/pull/50247)   no need to bp
-
-  SVG is not rendered for SVG Marker symbol                                                                        [#50208](https://github.com/qgis/QGIS/issues/50208)   Cannot fix, Qt issue                                   
-
-  If \"estimated metadata\" option is checked, feature count for tables/postgis do not work                        [#46790](https://github.com/qgis/QGIS/issues/46790)   [PR #50256](https://github.com/qgis/QGIS/pull/50256)   [PR #50425](https://github.com/qgis/QGIS/pull/50425)
-
-  Variable raster image source in composer not working                                                             [#47981](https://github.com/qgis/QGIS/issues/47981)   [PR #50277](https://github.com/qgis/QGIS/pull/50277)   [PR #50332](https://github.com/qgis/QGIS/pull/50332)
-
-  Print Layout Picture Box reverting to SVG                                                                        [#38031](https://github.com/qgis/QGIS/issues/38031)   [PR #50277](https://github.com/qgis/QGIS/pull/50277)   [PR #50332](https://github.com/qgis/QGIS/pull/50332)
-
-  Layout picture can not change SVG image to Raster image                                                          [#37804](https://github.com/qgis/QGIS/issues/37804)   [PR #50277](https://github.com/qgis/QGIS/pull/50277)   [PR #50332](https://github.com/qgis/QGIS/pull/50332)
-
-  QgsOptionsPageWidget - helpKey and helpSearchPath are not working                                                [#49421](https://github.com/qgis/QGIS/issues/49421)   [PR #50282](https://github.com/qgis/QGIS/pull/50282)   [PR #50330](https://github.com/qgis/QGIS/pull/50330)
-
-  Freeze when opening WFS attribute table from HTTPS server with SSL exception                                     [#42615](https://github.com/qgis/QGIS/issues/42615)   [PR #50443](https://github.com/qgis/QGIS/pull/50443)   no bp
-
-  News feed not loading when using MSI installer                                                                   [#49097](https://github.com/qgis/QGIS/issues/49097)   [PR #50443](https://github.com/qgis/QGIS/pull/50443)   no bp
-
-  .ci/run_tests.sh: test_core_networkaccessmanager (Timeout)                                                       [#50234](https://github.com/qgis/QGIS/issues/50234)   [PR #50443](https://github.com/qgis/QGIS/pull/50443)   
-
-  SVG Symbol on newer version of QGIS (3.22.7/8/10 tested) make the software lag a lot (and not on 3.4 version).   [#49818](https://github.com/qgis/QGIS/issues/49818)   Feedback, not sure it's a bug                          
-
-  Empty Options drop-down menu in Query Logger tab                                                                 [#50403](https://github.com/qgis/QGIS/issues/50403)   [PR #50527](https://github.com/qgis/QGIS/pull/50527)   no bp
-
-  Build fails with WITH_POSTGRESQL=OFF                                                                             [#50075](https://github.com/qgis/QGIS/issues/50075)   Feedback                                               
-
-  Build fails with WITH_GSL=OFF                                                                                    [#50076](https://github.com/qgis/QGIS/issues/50076)   [PR #50555](https://github.com/qgis/QGIS/pull/50555)   
-
-  QGIS master exports out of bounds in layout                                                                      [#48624](https://github.com/qgis/QGIS/issues/48624)   Cannot fix, Qt issue                                   
-
-  Layout bleeding to edge outside map window                                                                       [#49638](https://github.com/qgis/QGIS/issues/49638)   Cannot fix, Qt issue                                   
-
-  Freeze with virtual field on \$area used as parameter in sum                                                     [#49589](https://github.com/qgis/QGIS/issues/49589)   [PR #50533](https://github.com/qgis/QGIS/pull/50533)   [PR #50565](https://github.com/qgis/QGIS/pull/50565)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                      | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.22 backport commit (GitHub)
+|----|----|----|----|
+| QGIS not retrieving sequence from postgis in 3.26                                                              | [#49463](https://github.com/qgis/QGIS/issues/49463) | [PR #50247](https://github.com/qgis/QGIS/pull/50247) | no need to bp
+| SVG is not rendered for SVG Marker symbol                                                                      | [#50208](https://github.com/qgis/QGIS/issues/50208) | Cannot fix, Qt issue                                   
+| If \"estimated metadata\" option is checked, feature count for tables/postgis do not work                      | [#46790](https://github.com/qgis/QGIS/issues/46790) | [PR #50256](https://github.com/qgis/QGIS/pull/50256) | [PR #50425](https://github.com/qgis/QGIS/pull/50425)
+| Variable raster image source in composer not working                                                           | [#47981](https://github.com/qgis/QGIS/issues/47981) | [PR #50277](https://github.com/qgis/QGIS/pull/50277) | [PR #50332](https://github.com/qgis/QGIS/pull/50332)
+| Print Layout Picture Box reverting to SVG                                                                      | [#38031](https://github.com/qgis/QGIS/issues/38031) | [PR #50277](https://github.com/qgis/QGIS/pull/50277) | [PR #50332](https://github.com/qgis/QGIS/pull/50332)
+| Layout picture can not change SVG image to Raster image                                                        | [#37804](https://github.com/qgis/QGIS/issues/37804) | [PR #50277](https://github.com/qgis/QGIS/pull/50277) | [PR #50332](https://github.com/qgis/QGIS/pull/50332)
+| QgsOptionsPageWidget - helpKey and helpSearchPath are not working                                              | [#49421](https://github.com/qgis/QGIS/issues/49421) | [PR #50282](https://github.com/qgis/QGIS/pull/50282) | [PR #50330](https://github.com/qgis/QGIS/pull/50330)
+| Freeze when opening WFS attribute table from HTTPS server with SSL exception                                   | [#42615](https://github.com/qgis/QGIS/issues/42615) | [PR #50443](https://github.com/qgis/QGIS/pull/50443) | no bp
+| News feed not loading when using MSI installer                                                                 | [#49097](https://github.com/qgis/QGIS/issues/49097) | [PR #50443](https://github.com/qgis/QGIS/pull/50443) | no bp
+| .ci/run_tests.sh: test_core_networkaccessmanager (Timeout)                                                     | [#50234](https://github.com/qgis/QGIS/issues/50234) | [PR #50443](https://github.com/qgis/QGIS/pull/50443)   
+| SVG Symbol on newer version of QGIS (3.22.7/8/10 tested) make the software lag a lot (and not on 3.4 version). | [#49818](https://github.com/qgis/QGIS/issues/49818) | Feedback, not sure it's a bug                          
+| Empty Options drop-down menu in Query Logger tab                                                               | [#50403](https://github.com/qgis/QGIS/issues/50403) | [PR #50527](https://github.com/qgis/QGIS/pull/50527) | no bp
+| Build fails with WITH_POSTGRESQL=OFF                                                                           | [#50075](https://github.com/qgis/QGIS/issues/50075) | Feedback                                               
+| Build fails with WITH_GSL=OFF                                                                                  | [#50076](https://github.com/qgis/QGIS/issues/50076) | [PR #50555](https://github.com/qgis/QGIS/pull/50555)   
+| QGIS master exports out of bounds in layout                                                                    | [#48624](https://github.com/qgis/QGIS/issues/48624) | Cannot fix, Qt issue                                   
+| Layout bleeding to edge outside map window                                                                     | [#49638](https://github.com/qgis/QGIS/issues/49638) | Cannot fix, Qt issue                                   
+| Freeze with virtual field on \$area used as parameter in sum                                                   | [#49589](https://github.com/qgis/QGIS/issues/49589) | [PR #50533](https://github.com/qgis/QGIS/pull/50533) | [PR #50565](https://github.com/qgis/QGIS/pull/50565)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -770,25 +707,16 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/)
 
 ### Feature: Bug fixes by Paul Blottiere
 
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                             URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.22 backport commit (GitHub)
-  ----------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------
-  QGIS Server WFS 1.1.0 GetFeature response - properties with xsi:nil=\"true\"                          [#45243](https://github.com/qgis/QGIS/issues/45243)   [PR #50495](https://github.com/qgis/QGIS/pull/50495)   
-
-  Cannot move labels                                                                                    [#47542](https://github.com/qgis/QGIS/issues/47542)   Cannot reproduce                                       
-
-  Auxiliary storage and removed layers                                                                  [#44667](https://github.com/qgis/QGIS/issues/44667)   [PR #50479](https://github.com/qgis/QGIS/pull/50479)   Not recommended
-
-  OPACITIES parameter not handled with Vector Tile layer in GetMap/GetPrint                             [#50364](https://github.com/qgis/QGIS/issues/50364)   [PR #50374](https://github.com/qgis/QGIS/pull/50374)   [PR #50539](https://github.com/qgis/QGIS/pull/50539)
-
-  Fixes log messages when a job error is not related to a specific layer                                Unreported                                            [PR #50372](https://github.com/qgis/QGIS/pull/50372)   Not needed
-
-  Labels: Data defined override of \"Show Label\" always wants the auxiliary storage option             [#47993](https://github.com/qgis/QGIS/issues/47993)   [PR #50496](https://github.com/qgis/QGIS/pull/50496)   [PR #50538](https://github.com/qgis/QGIS/pull/50538)
-
-  Auxiliary storage rotation or offset fields for symbols are visible by default while labels are not   [#28548](https://github.com/qgis/QGIS/issues/28548)   [PR #50498](https://github.com/qgis/QGIS/pull/50498)   
-
-  Improve selection of PostGIS raster overviews                                                         Unreported                                            [PR #50554](https://github.com/qgis/QGIS/pull/50554)   [PR #50575](https://github.com/qgis/QGIS/pull/50575)
-  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                           | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.22 backport commit (GitHub)
+|----|----|----|----|
+| QGIS Server WFS 1.1.0 GetFeature response - properties with xsi:nil=\"true\"                        | [#45243](https://github.com/qgis/QGIS/issues/45243) | [PR #50495](https://github.com/qgis/QGIS/pull/50495)   
+| Cannot move labels                                                                                  | [#47542](https://github.com/qgis/QGIS/issues/47542) | Cannot reproduce                                       
+| Auxiliary storage and removed layers                                                                | [#44667](https://github.com/qgis/QGIS/issues/44667) | [PR #50479](https://github.com/qgis/QGIS/pull/50479) | Not recommended
+| OPACITIES parameter not handled with Vector Tile layer in GetMap/GetPrint                           | [#50364](https://github.com/qgis/QGIS/issues/50364) | [PR #50374](https://github.com/qgis/QGIS/pull/50374) | [PR #50539](https://github.com/qgis/QGIS/pull/50539)
+| Fixes log messages when a job error is not related to a specific layer                              | Unreported                                          | [PR #50372](https://github.com/qgis/QGIS/pull/50372) | Not needed
+| Labels: Data defined override of \"Show Label\" always wants the auxiliary storage option           | [#47993](https://github.com/qgis/QGIS/issues/47993) | [PR #50496](https://github.com/qgis/QGIS/pull/50496) | [PR #50538](https://github.com/qgis/QGIS/pull/50538)
+| Auxiliary storage rotation or offset fields for symbols are visible by default while labels are not | [#28548](https://github.com/qgis/QGIS/issues/28548) | [PR #50498](https://github.com/qgis/QGIS/pull/50498)   
+| Improve selection of PostGIS raster overviews                                                       | Unreported                                          | [PR #50554](https://github.com/qgis/QGIS/pull/50554) | [PR #50575](https://github.com/qgis/QGIS/pull/50575)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -796,15 +724,11 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 
 ### Feature: Bug fixes by Sandro Santilli
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                       URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.22 backport commit (GitHub)
-  ----------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ -------------------------------
-  Crash with offline-editing-core-plugin converting to offline project layer with empty polygon   [#50466](https://github.com/qgis/QGIS/issues/50466)   [PR #50577](https://github.com/qgis/QGIS/pull/50577)   
-
-  Cleanup temporary python test config path when requested                                        [#48884](https://github.com/qgis/QGIS/issues/48884)   [PR #50608](https://github.com/qgis/QGIS/pull/50608)   
-
-  Include type name in message about unsupported qfield validations                               Unreported                                            [PR #50589](https://github.com/qgis/QGIS/pull/50589)   
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                     | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.22 backport commit (GitHub)
+|----|----|----|----|
+| Crash with offline-editing-core-plugin converting to offline project layer with empty polygon | [#50466](https://github.com/qgis/QGIS/issues/50466) | [PR #50577](https://github.com/qgis/QGIS/pull/50577)   
+| Cleanup temporary python test config path when requested                                      | [#48884](https://github.com/qgis/QGIS/issues/48884) | [PR #50608](https://github.com/qgis/QGIS/pull/50608)   
+| Include type name in message about unsupported qfield validations                             | Unreported                                          | [PR #50589](https://github.com/qgis/QGIS/pull/50589)   
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -812,63 +736,35 @@ This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 
 ### Feature: Bug fixes by Nyall Dawson
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                                                                             URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.22 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------
-  Fix regression in column break calculations in legends                                                                                                                [#42672](https://github.com/qgis/QGIS/issues/42672)   [PR #50597](https://github.com/qgis/QGIS/pull/50597)   Not suitable \-- too risky
-
-  Fix tracing fails when layer crs differs from map crs                                                                                                                 [#49247](https://github.com/qgis/QGIS/issues/49247)   [PR #50612](https://github.com/qgis/QGIS/pull/50612)   Not required
-
-  Show only available CRS in WMS layer selection widget                                                                                                                 [#45918](https://github.com/qgis/QGIS/issues/45918)   [PR #50572](https://github.com/qgis/QGIS/pull/50572)   Not required
-
-  Fix some overlay algorithms output multipoint geometries but output layer is single point, causing insertion errors                                                   [#49456](https://github.com/qgis/QGIS/issues/49456)   [PR #50567](https://github.com/qgis/QGIS/pull/50567)   [PR #50641](https://github.com/qgis/QGIS/pull/50641)
-
-  Fix missing information in crash reports on Windows                                                                                                                   [#50472](https://github.com/qgis/QGIS/issues/50472)   [PR #50595](https://github.com/qgis/QGIS/pull/50595)   Not required
-
-  Fix regression where attribute table dialogs do not open as proper top level windows with their own taskbar entries                                                   [#49286](https://github.com/qgis/QGIS/issues/49286)   [PR #50594](https://github.com/qgis/QGIS/pull/50594)   Not required
-
-  \[georeferencer\] Fix options ignored when \"create world file only\" is active                                                                                       [#49331](https://github.com/qgis/QGIS/issues/49331)   [PR #50566](https://github.com/qgis/QGIS/pull/50566)   Not required
-
-  Ensure identify tool uses correct labels for x/y values when coordinate axis order for project is y/x                                                                 [#50540](https://github.com/qgis/QGIS/issues/50540)   [PR #50548](https://github.com/qgis/QGIS/pull/50548)   Not required
-
-  Ensure coordinate display in status bar updates immediately when related settings change, and update the tooltip to match the actual values displayed in the widget   [#50540](https://github.com/qgis/QGIS/issues/50540)   [PR #50548](https://github.com/qgis/QGIS/pull/50548)   Not required
-
-  Fix rendering of linestrings with nan z values                                                                                                                        [#50510](https://github.com/qgis/QGIS/issues/50510)   [PR #50549](https://github.com/qgis/QGIS/pull/50549)   Not required
-
-  Fix broken logic in clearing python console history                                                                                                                   Not reported                                          [PR #50504](https://github.com/qgis/QGIS/pull/50504)   [PR #50515](https://github.com/qgis/QGIS/pull/50515)
-
-  Fix QgsFileWidget does not reactivate widget\'s window after selecting a file/folder via the browse button on mac                                                     Not reported                                          [PR #50501](https://github.com/qgis/QGIS/pull/50501)   [PR #50502](https://github.com/qgis/QGIS/pull/50502)
-
-  Fix code folding not shown for non-python code editor classes                                                                                                         Not reported                                          [PR #50492](https://github.com/qgis/QGIS/pull/50492)   
-
-  Fix leak in GEOS geometry library use                                                                                                                                 Not reported                                          [PR #50379](https://github.com/qgis/QGIS/pull/50379)   
-
-  Fix raster contour renderer ignores opacity setting                                                                                                                   [#41663](https://github.com/qgis/QGIS/issues/41663)   [PR #50382](https://github.com/qgis/QGIS/pull/50382)   Not suitable \-- too risky
-
-  Fix truncation of recent project list removes too many items, raises a warning                                                                                        Not reported                                          [PR #50394](https://github.com/qgis/QGIS/pull/50394)   [PR #50397](https://github.com/qgis/QGIS/pull/50397)
-
-  Fix dizzy easter egg                                                                                                                                                  [#50345](https://github.com/qgis/QGIS/issues/50345)   [PR #50380](https://github.com/qgis/QGIS/pull/50380)   Not required
-
-  Fix point pattern fill sometimes ignores symbol opacity setting                                                                                                       [#48031](https://github.com/qgis/QGIS/issues/48031)   [PR #50384](https://github.com/qgis/QGIS/pull/50384)   Not suitable \-- too risky
-
-  Fix broken path in svg raises Qt warnings while rendering                                                                                                             Not reported                                          [PR #50383](https://github.com/qgis/QGIS/pull/50383)   
-
-  Ensure correct expression context is used when generating symbol preview icons                                                                                        [#49106](https://github.com/qgis/QGIS/issues/49106)   [PR #50393](https://github.com/qgis/QGIS/pull/50393)   Not suitable \-- too risky
-
-  \[spatialite\] Fix corrupted default attribute values when fields are loaded using gaiaVectorLayer                                                                    Privately reported                                    [PR #50360](https://github.com/qgis/QGIS/pull/50360)   [PR #50361](https://github.com/qgis/QGIS/pull/50361)
-
-  Fix handling of vector tiles when zoom level 0 is not available                                                                                                       [#47934](https://github.com/qgis/QGIS/issues/47934)   [PR #50337](https://github.com/qgis/QGIS/pull/50337)   Not required
-
-  Fix drag and drop of files to georeferencer window                                                                                                                    [#49175](https://github.com/qgis/QGIS/issues/49175)   [PR #50338](https://github.com/qgis/QGIS/pull/50338)   Not required
-
-  Never try to handle base parameter type values as map layers in QgsProcessingParameterDefinition::valueAs\* methods                                                   [#48598](https://github.com/qgis/QGIS/issues/48598)   [PR #50327](https://github.com/qgis/QGIS/pull/50327)   Not required
-
-  Avoid a redundant calculation of visible layer extent in overview canvas                                                                                              Not reported                                          [PR #50329](https://github.com/qgis/QGIS/pull/50329)   [PR #50336](https://github.com/qgis/QGIS/pull/50336)
-
-  Show standard Rendering tab in point cloud layer properties, add missing scale range widget to mesh layer properties                                                  [#50268](https://github.com/qgis/QGIS/issues/50268)   [PR #50326](https://github.com/qgis/QGIS/pull/50326)   Not suitable
-
-  Show standard Rendering tab in point cloud layer properties, add missing scale range widget to mesh layer properties                                                  [#50268](https://github.com/qgis/QGIS/issues/50268)   [PR #50326](https://github.com/qgis/QGIS/pull/50326)   Not suitable
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                                                                           | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.22 backport commit (GitHub)
+|----|----|----|----|
+| Fix regression in column break calculations in legends                                                                                                              | [#42672](https://github.com/qgis/QGIS/issues/42672) | [PR #50597](https://github.com/qgis/QGIS/pull/50597) | Not suitable \-- too risky
+| Fix tracing fails when layer crs differs from map crs                                                                                                               | [#49247](https://github.com/qgis/QGIS/issues/49247) | [PR #50612](https://github.com/qgis/QGIS/pull/50612) | Not required
+| Show only available CRS in WMS layer selection widget                                                                                                               | [#45918](https://github.com/qgis/QGIS/issues/45918) | [PR #50572](https://github.com/qgis/QGIS/pull/50572) | Not required
+| Fix some overlay algorithms output multipoint geometries but output layer is single point, causing insertion errors                                                 | [#49456](https://github.com/qgis/QGIS/issues/49456) | [PR #50567](https://github.com/qgis/QGIS/pull/50567) | [PR #50641](https://github.com/qgis/QGIS/pull/50641)
+| Fix missing information in crash reports on Windows                                                                                                                 | [#50472](https://github.com/qgis/QGIS/issues/50472) | [PR #50595](https://github.com/qgis/QGIS/pull/50595) | Not required
+| Fix regression where attribute table dialogs do not open as proper top level windows with their own taskbar entries                                                 | [#49286](https://github.com/qgis/QGIS/issues/49286) | [PR #50594](https://github.com/qgis/QGIS/pull/50594) | Not required
+| \[georeferencer\] Fix options ignored when \"create world file only\" is active                                                                                     | [#49331](https://github.com/qgis/QGIS/issues/49331) | [PR #50566](https://github.com/qgis/QGIS/pull/50566) | Not required
+| Ensure identify tool uses correct labels for x/y values when coordinate axis order for project is y/x                                                               | [#50540](https://github.com/qgis/QGIS/issues/50540) | [PR #50548](https://github.com/qgis/QGIS/pull/50548) | Not required
+| Ensure coordinate display in status bar updates immediately when related settings change, and update the tooltip to match the actual values displayed in the widget | [#50540](https://github.com/qgis/QGIS/issues/50540) | [PR #50548](https://github.com/qgis/QGIS/pull/50548) | Not required
+| Fix rendering of linestrings with nan z values                                                                                                                      | [#50510](https://github.com/qgis/QGIS/issues/50510) | [PR #50549](https://github.com/qgis/QGIS/pull/50549) | Not required
+| Fix broken logic in clearing python console history                                                                                                                 | Not reported                                        | [PR #50504](https://github.com/qgis/QGIS/pull/50504) | [PR #50515](https://github.com/qgis/QGIS/pull/50515)
+| Fix QgsFileWidget does not reactivate widget\'s window after selecting a file/folder via the browse button on mac                                                   | Not reported                                        | [PR #50501](https://github.com/qgis/QGIS/pull/50501) | [PR #50502](https://github.com/qgis/QGIS/pull/50502)
+| Fix code folding not shown for non-python code editor classes                                                                                                       | Not reported                                        | [PR #50492](https://github.com/qgis/QGIS/pull/50492)   
+| Fix leak in GEOS geometry library use                                                                                                                               | Not reported                                        | [PR #50379](https://github.com/qgis/QGIS/pull/50379)   
+| Fix raster contour renderer ignores opacity setting                                                                                                                 | [#41663](https://github.com/qgis/QGIS/issues/41663) | [PR #50382](https://github.com/qgis/QGIS/pull/50382) | Not suitable \-- too risky
+| Fix truncation of recent project list removes too many items, raises a warning                                                                                      | Not reported                                        | [PR #50394](https://github.com/qgis/QGIS/pull/50394) | [PR #50397](https://github.com/qgis/QGIS/pull/50397)
+| Fix dizzy easter egg                                                                                                                                                | [#50345](https://github.com/qgis/QGIS/issues/50345) | [PR #50380](https://github.com/qgis/QGIS/pull/50380) | Not required
+| Fix point pattern fill sometimes ignores symbol opacity setting                                                                                                     | [#48031](https://github.com/qgis/QGIS/issues/48031) | [PR #50384](https://github.com/qgis/QGIS/pull/50384) | Not suitable \-- too risky
+| Fix broken path in svg raises Qt warnings while rendering                                                                                                           | Not reported                                        | [PR #50383](https://github.com/qgis/QGIS/pull/50383)   
+| Ensure correct expression context is used when generating symbol preview icons                                                                                      | [#49106](https://github.com/qgis/QGIS/issues/49106) | [PR #50393](https://github.com/qgis/QGIS/pull/50393) | Not suitable \-- too risky
+| \[spatialite\] Fix corrupted default attribute values when fields are loaded using gaiaVectorLayer                                                                  | Privately reported                                  | [PR #50360](https://github.com/qgis/QGIS/pull/50360) | [PR #50361](https://github.com/qgis/QGIS/pull/50361)
+| Fix handling of vector tiles when zoom level 0 is not available                                                                                                     | [#47934](https://github.com/qgis/QGIS/issues/47934) | [PR #50337](https://github.com/qgis/QGIS/pull/50337) | Not required
+| Fix drag and drop of files to georeferencer window                                                                                                                  | [#49175](https://github.com/qgis/QGIS/issues/49175) | [PR #50338](https://github.com/qgis/QGIS/pull/50338) | Not required
+| Never try to handle base parameter type values as map layers in QgsProcessingParameterDefinition::valueAs\* methods                                                 | [#48598](https://github.com/qgis/QGIS/issues/48598) | [PR #50327](https://github.com/qgis/QGIS/pull/50327) | Not required
+| Avoid a redundant calculation of visible layer extent in overview canvas                                                                                            | Not reported                                        | [PR #50329](https://github.com/qgis/QGIS/pull/50329) | [PR #50336](https://github.com/qgis/QGIS/pull/50336)
+| Show standard Rendering tab in point cloud layer properties, add missing scale range widget to mesh layer properties                                                | [#50268](https://github.com/qgis/QGIS/issues/50268) | [PR #50326](https://github.com/qgis/QGIS/pull/50326) | Not suitable
+| Show standard Rendering tab in point cloud layer properties, add missing scale range widget to mesh layer properties                                                | [#50268](https://github.com/qgis/QGIS/issues/50268) | [PR #50326](https://github.com/qgis/QGIS/pull/50326) | Not suitable
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -876,13 +772,10 @@ This feature was developed by [Nyall Dawson](https://north-road.com/)
 
 ### Feature: Bug fixes by Loïc Bartoletti
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                              URL issues.qgis.org (if reported)                     URL Commit (Github)                                 3.22 backport commit (GitHub)
-  ---------------------------------------------------------------------- ----------------------------------------------------- --------------------------------------------------- ---------------------------------------------------
-  Fix \"Add Ring\" tool doesn\'t consider all the overlapping features   [#23113](https://github.com/qgis/QGIS/issues/23113)   [#50447](https://github.com/qgis/QGIS/pull/50447)   Not suitable - add new methods
-
-  Fix wkbType cast from OGR 25D Type                                     [#50218](https://github.com/qgis/QGIS/issues/50218)   [#50233](https://github.com/qgis/QGIS/pull/50233)   [#50251](https://github.com/qgis/QGIS/pull/50251)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                            | URL issues.qgis.org (if reported)                   | URL Commit (Github)                               | 3.22 backport commit (GitHub)
+|----|----|----|----|
+| Fix \"Add Ring\" tool doesn\'t consider all the overlapping features | [#23113](https://github.com/qgis/QGIS/issues/23113) | [#50447](https://github.com/qgis/QGIS/pull/50447) | Not suitable - add new methods
+| Fix wkbType cast from OGR 25D Type                                   | [#50218](https://github.com/qgis/QGIS/issues/50218) | [#50233](https://github.com/qgis/QGIS/pull/50233) | [#50251](https://github.com/qgis/QGIS/pull/50251)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 

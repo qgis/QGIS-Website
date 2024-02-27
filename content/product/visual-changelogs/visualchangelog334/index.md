@@ -380,45 +380,26 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 ### Feature: Bug fixes by Alessandro Pasotti (itOpen / qcooperative)
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                      URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.28 backport commit (GitHub)
-  ---------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------
-  QGIS cannot connect to MySQL if user\'s password contains commas.                              [#54493](https://github.com/qgis/QGIS/issues/54493)   [PR #54573](https://github.com/qgis/QGIS/pull/54573)   No
-
-  QGIS WFS server will look for .qgz file in wrong place if \"map\" is in path                   [#54533](https://github.com/qgis/QGIS/issues/54533)   [PR #54639](https://github.com/qgis/QGIS/pull/54639)   [PR #54855](https://github.com/qgis/QGIS/pull/54855)
-
-  Raster layer transparency/opacity not stored in saved style                                    [#54496](https://github.com/qgis/QGIS/issues/54496)   [PR #54644](https://github.com/qgis/QGIS/pull/54644)   [PR #54854](https://github.com/qgis/QGIS/pull/54854)
-
-  WMS GetPrint with ATLAS_PK has incorrect layers visibility in versions \>= 3.22                [#54475](https://github.com/qgis/QGIS/issues/54475)   [PR #54651](https://github.com/qgis/QGIS/pull/54651)   [PR #54663](https://github.com/qgis/QGIS/pull/54663)
-
-  Error saving edit on PostGIS geometry when table also contains geography                       [#54572](https://github.com/qgis/QGIS/issues/54572)   [PR #54664](https://github.com/qgis/QGIS/pull/54664)   [PR #54714](https://github.com/qgis/QGIS/pull/54714)
-
-  Cant subtract or add angles since the degrees symbol has been added                            [#54501](https://github.com/qgis/QGIS/issues/54501)   [PR #54687](https://github.com/qgis/QGIS/pull/54687)   N/A
-
-  WCS Keep Unavailable Layers                                                                    [#54702](https://github.com/qgis/QGIS/issues/54702)   [PR #54707](https://github.com/qgis/QGIS/pull/54707)   N/A
-
-  taxon legend from map whis atlas                                                               [#54654](https://github.com/qgis/QGIS/issues/54654)   [PR #54692](https://github.com/qgis/QGIS/pull/54692)   N/A
-
-  Spinbox for colum space in legends does not allow to set values above 99.99 units              [#54682](https://github.com/qgis/QGIS/issues/54682)   [PR #54709](https://github.com/qgis/QGIS/pull/54709)   N/A
-
-  Geometry Error SpatiaLite Database                                                             [#54662](https://github.com/qgis/QGIS/issues/54662)   [PR #54734](https://github.com/qgis/QGIS/pull/54734)   N/A
-
-  Splitting MultiLineStrings gives awkward results                                               [#54155](https://github.com/qgis/QGIS/issues/54155)   [PR #54744](https://github.com/qgis/QGIS/pull/54744)   [PR #54851](https://github.com/qgis/QGIS/pull/54851)
-
-  Open project, then layer properties, close, close project: qgis thinks something has changed   [#54741](https://github.com/qgis/QGIS/issues/54741)   [PR #54757](https://github.com/qgis/QGIS/pull/54757)   N/A
-
-  Width field of attribute tables in print layouts only uses locale when being edited            [#54204](https://github.com/qgis/QGIS/issues/54204)   [PR #54769](https://github.com/qgis/QGIS/pull/54769)   [PR #54781](https://github.com/qgis/QGIS/pull/54781)
-
-  Data Source Manger - Browser: Close and Help buttons are missing                               [#54171](https://github.com/qgis/QGIS/issues/54171)   [PR #54770](https://github.com/qgis/QGIS/pull/54770)   N/A
-
-  0 port in OAuth2 callback URI                                                                  [#54562](https://github.com/qgis/QGIS/issues/54562)   Cannot reproduce                                       N/A
-
-  QGIS Crashes when editing multiple features simultaneously that have a Value Relation field    [#54164](https://github.com/qgis/QGIS/issues/54164)   [PR #54889](https://github.com/qgis/QGIS/pull/54889)   TODO
-
-  Crash when playing with duplicated legends in layout                                           [#52268](https://github.com/qgis/QGIS/issues/52268)   [PR #54947](https://github.com/qgis/QGIS/pull/54947)   
-
-  QGIS fails to request more than one WMS-Layer                                                  [#55042](https://github.com/qgis/QGIS/issues/55042)   [PR #55064](https://github.com/qgis/QGIS/pull/55064)   N/A
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                    | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| QGIS cannot connect to MySQL if user\'s password contains commas.                            | [#54493](https://github.com/qgis/QGIS/issues/54493) | [PR #54573](https://github.com/qgis/QGIS/pull/54573) | No
+| QGIS WFS server will look for .qgz file in wrong place if \"map\" is in path                 | [#54533](https://github.com/qgis/QGIS/issues/54533) | [PR #54639](https://github.com/qgis/QGIS/pull/54639) | [PR #54855](https://github.com/qgis/QGIS/pull/54855)
+| Raster layer transparency/opacity not stored in saved style                                  | [#54496](https://github.com/qgis/QGIS/issues/54496) | [PR #54644](https://github.com/qgis/QGIS/pull/54644) | [PR #54854](https://github.com/qgis/QGIS/pull/54854)
+| WMS GetPrint with ATLAS_PK has incorrect layers visibility in versions \>= 3.22              | [#54475](https://github.com/qgis/QGIS/issues/54475) | [PR #54651](https://github.com/qgis/QGIS/pull/54651) | [PR #54663](https://github.com/qgis/QGIS/pull/54663)
+| Error saving edit on PostGIS geometry when table also contains geography                     | [#54572](https://github.com/qgis/QGIS/issues/54572) | [PR #54664](https://github.com/qgis/QGIS/pull/54664) | [PR #54714](https://github.com/qgis/QGIS/pull/54714)
+| Cant subtract or add angles since the degrees symbol has been added                          | [#54501](https://github.com/qgis/QGIS/issues/54501) | [PR #54687](https://github.com/qgis/QGIS/pull/54687) | N/A
+| WCS Keep Unavailable Layers                                                                  | [#54702](https://github.com/qgis/QGIS/issues/54702) | [PR #54707](https://github.com/qgis/QGIS/pull/54707) | N/A
+| taxon legend from map whis atlas                                                             | [#54654](https://github.com/qgis/QGIS/issues/54654) | [PR #54692](https://github.com/qgis/QGIS/pull/54692) | N/A
+| Spinbox for colum space in legends does not allow to set values above 99.99 units            | [#54682](https://github.com/qgis/QGIS/issues/54682) | [PR #54709](https://github.com/qgis/QGIS/pull/54709) | N/A
+| Geometry Error SpatiaLite Database                                                           | [#54662](https://github.com/qgis/QGIS/issues/54662) | [PR #54734](https://github.com/qgis/QGIS/pull/54734) | N/A
+| Splitting MultiLineStrings gives awkward results                                             | [#54155](https://github.com/qgis/QGIS/issues/54155) | [PR #54744](https://github.com/qgis/QGIS/pull/54744) | [PR #54851](https://github.com/qgis/QGIS/pull/54851)
+| Open project, then layer properties, close, close project: qgis thinks something has changed | [#54741](https://github.com/qgis/QGIS/issues/54741) | [PR #54757](https://github.com/qgis/QGIS/pull/54757) | N/A
+| Width field of attribute tables in print layouts only uses locale when being edited          | [#54204](https://github.com/qgis/QGIS/issues/54204) | [PR #54769](https://github.com/qgis/QGIS/pull/54769) | [PR #54781](https://github.com/qgis/QGIS/pull/54781)
+| Data Source Manger - Browser: Close and Help buttons are missing                             | [#54171](https://github.com/qgis/QGIS/issues/54171) | [PR #54770](https://github.com/qgis/QGIS/pull/54770) | N/A
+| 0 port in OAuth2 callback URI                                                                | [#54562](https://github.com/qgis/QGIS/issues/54562) | Cannot reproduce                                     | N/A
+| QGIS Crashes when editing multiple features simultaneously that have a Value Relation field  | [#54164](https://github.com/qgis/QGIS/issues/54164) | [PR #54889](https://github.com/qgis/QGIS/pull/54889) | TODO
+| Crash when playing with duplicated legends in layout                                         | [#52268](https://github.com/qgis/QGIS/issues/52268) | [PR #54947](https://github.com/qgis/QGIS/pull/54947)   
+| QGIS fails to request more than one WMS-Layer                                                | [#55042](https://github.com/qgis/QGIS/issues/55042) | [PR #55064](https://github.com/qgis/QGIS/pull/55064) | N/A
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -426,41 +407,24 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                   URL issues.qgis.org (if reported)                                                                  URL Commit (Github)                                       3.28 backport commit (GitHub)
-  ----------------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------- --------------------------------------------------------- -----------------------------------------------------------
-  qgsgeos.cpp: fix a -Wunused-variable warning                                                                unreported                                                                                         [PR #54612](https://github.com/qgis/QGIS/pull/54612)      N/A
-
-  qgsvirtualpointcloudprovider.cpp: add a missing variable initialization                                     unreported                                                                                         [PR #54613](https://github.com/qgis/QGIS/pull/54613)      N/A
-
-  OAPIF does not honour the view extent                                                                       [QGIS user mailing list](https://lists.osgeo.org/pipermail/qgis-user/2023-September/053400.html)   [PR #54617](https://github.com/qgis/QGIS/pull/54617)      [PR #54792](https://github.com/qgis/QGIS/pull/54792)
-
-  Does QGIS require units \"m\" for the projection coordinate variables in a netCDF/CF file?                  [QGIS user mailing list](https://lists.osgeo.org/pipermail/qgis-user/2023-September/053413.html)   [GDAL PR 8407](https://github.com/OSGeo/gdal/pull/8407)   N/A
-
-  Syntactical error with the use of == instead of = for comparison in the WHERE clause                        [#54608](https://github.com/qgis/QGIS/issues/54608)                                                Already fixed                                             Unable to write any additional layers to an existing FGDB
-
-  Add minimal CRS information to sqlite exports                                                               [#54560](https://github.com/qgis/QGIS/issues/54560)                                                [PR #54630](https://github.com/qgis/QGIS/pull/54630)      [PR #54715](https://github.com/qgis/QGIS/pull/54715)
-
-  Complex Attributes in OGC API Feature-Items have empty content                                              [#54275](https://github.com/qgis/QGIS/issues/54275)                                                [PR #54631](https://github.com/qgis/QGIS/pull/54631)      [PR #54679](https://github.com/qgis/QGIS/pull/54679)
-
-  GPX Provider: missing element when importing gpx file                                                       [#54119](https://github.com/qgis/QGIS/issues/54119)                                                [PR #54632](https://github.com/qgis/QGIS/pull/54632)      N/A
-
-  Saving edits on larger vector layers is slow                                                                [#53043](https://github.com/qgis/QGIS/issues/53043)                                                [PR #54633](https://github.com/qgis/QGIS/pull/54633)      N/A
-
-  QgsVectorLayerSaveAsDialog: uncheck \'Add saved filed to map\' when selecting PGDump driver (refs #54548)   [PR #54647](https://github.com/qgis/QGIS/pull/54647)                                               [PR #54647](https://github.com/qgis/QGIS/pull/54647)      Not worth it
-
-  Spatial filtering of multipart polygons within a shapefile dataset broken                                   [GDAL issue 8481](https://github.com/OSGeo/gdal/issues/8481)                                       Not a bug                                                 
-
-  qgis cannot find/identify a polygon feature by clicking a newly created (multi)polygon part                 [#54537](https://github.com/qgis/QGIS/issues/54537)                                                [PR #54761](https://github.com/qgis/QGIS/pull/54761)      [PR #54782](https://github.com/qgis/QGIS/pull/54782)
-
-  qgis cannot find/identify a polygon feature by clicking a newly created (multi)polygon part                 [#54537](https://github.com/qgis/QGIS/issues/54537)                                                [GDAL PR 8483](https://github.com/OSGeo/gdal/pull/8483)   [GDAL PR 8503](https://github.com/OSGeo/gdal/pull/8503)
-
-  Export to spreadsheet creates an xlsx file with errors when exporting empty tables/layers                   [#42945](https://github.com/qgis/QGIS/issues/42945)                                                [GDAL PR 8484](https://github.com/OSGeo/gdal/pull/8484)   [GDAL PR 8515](https://github.com/OSGeo/gdal/pull/8515)
-
-  export bbox wrong when feature crosses anti-prime-meridion (180 deg)                                        [#42827](https://github.com/qgis/QGIS/issues/42827)                                                [GDAL PR 8485](https://github.com/OSGeo/gdal/pull/8485)   Not worth it
-
-  QgsVectorDataProvider.changeAttributeValues() returns True even when it fails                               [#54816](https://github.com/qgis/QGIS/issues/54816)                                                [PR #54905](https://github.com/qgis/QGIS/pull/54905)      [PR #54909](https://github.com/qgis/QGIS/pull/54909)
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                 | URL issues.qgis.org (if reported)                                                                | URL Commit (Github)                                     | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| qgsgeos.cpp: fix a -Wunused-variable warning                                                              | unreported                                                                                       | [PR #54612](https://github.com/qgis/QGIS/pull/54612)    | N/A
+| qgsvirtualpointcloudprovider.cpp: add a missing variable initialization                                   | unreported                                                                                       | [PR #54613](https://github.com/qgis/QGIS/pull/54613)    | N/A
+| OAPIF does not honour the view extent                                                                     | [QGIS user mailing list](https://lists.osgeo.org/pipermail/qgis-user/2023-September/053400.html) | [PR #54617](https://github.com/qgis/QGIS/pull/54617)    | [PR #54792](https://github.com/qgis/QGIS/pull/54792)
+| Does QGIS require units \"m\" for the projection coordinate variables in a netCDF/CF file?                | [QGIS user mailing list](https://lists.osgeo.org/pipermail/qgis-user/2023-September/053413.html) | [GDAL PR 8407](https://github.com/OSGeo/gdal/pull/8407) | N/A
+| Syntactical error with the use of == instead of = for comparison in the WHERE clause                      | [#54608](https://github.com/qgis/QGIS/issues/54608)                                              | Already fixed                                           | Unable to write any additional layers to an existing FGDB
+| Add minimal CRS information to sqlite exports                                                             | [#54560](https://github.com/qgis/QGIS/issues/54560)                                              | [PR #54630](https://github.com/qgis/QGIS/pull/54630)    | [PR #54715](https://github.com/qgis/QGIS/pull/54715)
+| Complex Attributes in OGC API Feature-Items have empty content                                            | [#54275](https://github.com/qgis/QGIS/issues/54275)                                              | [PR #54631](https://github.com/qgis/QGIS/pull/54631)    | [PR #54679](https://github.com/qgis/QGIS/pull/54679)
+| GPX Provider: missing element when importing gpx file                                                     | [#54119](https://github.com/qgis/QGIS/issues/54119)                                              | [PR #54632](https://github.com/qgis/QGIS/pull/54632)    | N/A
+| Saving edits on larger vector layers is slow                                                              | [#53043](https://github.com/qgis/QGIS/issues/53043)                                              | [PR #54633](https://github.com/qgis/QGIS/pull/54633)    | N/A
+| QgsVectorLayerSaveAsDialog: uncheck \'Add saved filed to map\' when selecting PGDump driver (refs #54548) | [PR #54647](https://github.com/qgis/QGIS/pull/54647)                                             | [PR #54647](https://github.com/qgis/QGIS/pull/54647)    | Not worth it
+| Spatial filtering of multipart polygons within a shapefile dataset broken                                 | [GDAL issue 8481](https://github.com/OSGeo/gdal/issues/8481)                                     | Not a bug                                                 
+| qgis cannot find/identify a polygon feature by clicking a newly created (multi)polygon part               | [#54537](https://github.com/qgis/QGIS/issues/54537)                                              | [PR #54761](https://github.com/qgis/QGIS/pull/54761)    | [PR #54782](https://github.com/qgis/QGIS/pull/54782)
+| qgis cannot find/identify a polygon feature by clicking a newly created (multi)polygon part               | [#54537](https://github.com/qgis/QGIS/issues/54537)                                              | [GDAL PR 8483](https://github.com/OSGeo/gdal/pull/8483) | [GDAL PR 8503](https://github.com/OSGeo/gdal/pull/8503)
+| Export to spreadsheet creates an xlsx file with errors when exporting empty tables/layers                 | [#42945](https://github.com/qgis/QGIS/issues/42945)                                              | [GDAL PR 8484](https://github.com/OSGeo/gdal/pull/8484) | [GDAL PR 8515](https://github.com/OSGeo/gdal/pull/8515)
+| export bbox wrong when feature crosses anti-prime-meridion (180 deg)                                      | [#42827](https://github.com/qgis/QGIS/issues/42827)                                              | [GDAL PR 8485](https://github.com/OSGeo/gdal/pull/8485) | Not worth it
+| QgsVectorDataProvider.changeAttributeValues() returns True even when it fails                             | [#54816](https://github.com/qgis/QGIS/issues/54816)                                              | [PR #54905](https://github.com/qgis/QGIS/pull/54905)    | [PR #54909](https://github.com/qgis/QGIS/pull/54909)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -468,29 +432,18 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 
 ### Feature: Bug fixes by Paul Blottiere (Hytech-imaging)
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                     URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.28 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------
-  Fix segfault in coordinate transform                                                          unreported                                            [PR #54609](https://github.com/qgis/QGIS/pull/54609)   N/A
-
-  Wrong rendering for HIGHLIGHT_LABEL_ROTATION above 89°                                        [#54598](https://github.com/qgis/QGIS/issues/54598)   [PR #54667](https://github.com/qgis/QGIS/pull/54667)   N/A
-
-  Database string connection visible in the message bar/QGIS logs                               [#54437](https://github.com/qgis/QGIS/issues/54437)   [PR #54650](https://github.com/qgis/QGIS/pull/54650)   N/A
-
-  PostGIS Connection\'s \"Session ROLE\" is not kept                                            [#54638](https://github.com/qgis/QGIS/issues/54638)   [PR #54681](https://github.com/qgis/QGIS/pull/54681)   N/A
-
-  Example files are installed by the server build, and additionally they are in a wrong place   [#54423](https://github.com/qgis/QGIS/issues/54423)   [PR #54708](https://github.com/qgis/QGIS/pull/54708)   N/A
-
-  Point to Path tool causes QGIS to crash                                                       [#54686](https://github.com/qgis/QGIS/issues/54686)   [PR #54710](https://github.com/qgis/QGIS/pull/54710)   [PR #54784](https://github.com/qgis/QGIS/pull/54784)
-
-  qgs/qgz project does not save mesh symbology correctly                                        [#54384](https://github.com/qgis/QGIS/issues/54384)   [PR #54711](https://github.com/qgis/QGIS/pull/54711)   N/A
-
-  Endless loop if profile is drawn outside layer extent                                         [#54349](https://github.com/qgis/QGIS/issues/54349)   [PR #54745](https://github.com/qgis/QGIS/pull/54745)   N/A
-
-  Server: Can\'t enable WFS3 API update endpoint (PUT/PATCH) on layers without geometry         [#46119](https://github.com/qgis/QGIS/issues/46119)   [PR #54789](https://github.com/qgis/QGIS/pull/54789)   N/A
-
-  Add safe guard around -of in gdal command for batch processing                                [#54122](https://github.com/qgis/QGIS/issues/54122)   [PR #54800](https://github.com/qgis/QGIS/pull/54800)   N/A
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                   | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Fix segfault in coordinate transform                                                        | unreported                                          | [PR #54609](https://github.com/qgis/QGIS/pull/54609) | N/A
+| Wrong rendering for HIGHLIGHT_LABEL_ROTATION above 89°                                      | [#54598](https://github.com/qgis/QGIS/issues/54598) | [PR #54667](https://github.com/qgis/QGIS/pull/54667) | N/A
+| Database string connection visible in the message bar/QGIS logs                             | [#54437](https://github.com/qgis/QGIS/issues/54437) | [PR #54650](https://github.com/qgis/QGIS/pull/54650) | N/A
+| PostGIS Connection\'s \"Session ROLE\" is not kept                                          | [#54638](https://github.com/qgis/QGIS/issues/54638) | [PR #54681](https://github.com/qgis/QGIS/pull/54681) | N/A
+| Example files are installed by the server build, and additionally they are in a wrong place | [#54423](https://github.com/qgis/QGIS/issues/54423) | [PR #54708](https://github.com/qgis/QGIS/pull/54708) | N/A
+| Point to Path tool causes QGIS to crash                                                     | [#54686](https://github.com/qgis/QGIS/issues/54686) | [PR #54710](https://github.com/qgis/QGIS/pull/54710) | [PR #54784](https://github.com/qgis/QGIS/pull/54784)
+| qgs/qgz project does not save mesh symbology correctly                                      | [#54384](https://github.com/qgis/QGIS/issues/54384) | [PR #54711](https://github.com/qgis/QGIS/pull/54711) | N/A
+| Endless loop if profile is drawn outside layer extent                                       | [#54349](https://github.com/qgis/QGIS/issues/54349) | [PR #54745](https://github.com/qgis/QGIS/pull/54745) | N/A
+| Server: Can\'t enable WFS3 API update endpoint (PUT/PATCH) on layers without geometry       | [#46119](https://github.com/qgis/QGIS/issues/46119) | [PR #54789](https://github.com/qgis/QGIS/pull/54789) | N/A
+| Add safe guard around -of in gdal command for batch processing                              | [#54122](https://github.com/qgis/QGIS/issues/54122) | [PR #54800](https://github.com/qgis/QGIS/pull/54800) | N/A
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -498,55 +451,31 @@ This feature was developed by [Paul Blottiere (Hytech-imaging)](https://hytech-i
 
 ### Feature: Bug fixes by Sandro Santilli (strk)
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                     URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.28 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ -------------------------------
-  Have QgsRectangle null rectangle printed as EMPTY in wkt                                      unreported                                            [PR #54831](https://github.com/qgis/QGIS/pull/54831)   N/A
-
-  Fix aspect ratio computation in QgsLayoutItemMap::zoomToExtent                                unreported                                            [PR #54827](https://github.com/qgis/QGIS/pull/54827)   N/A
-
-  Do not include a BoundingBox tag in GetFeatureInfo responses, when it is null                 unreported                                            [PR #54858](https://github.com/qgis/QGIS/pull/54858)   N/A
-
-  Always run the spell and shell checkers if possible, print warning when not possible          unreported                                            [PR #54847](https://github.com/qgis/QGIS/pull/54847)   N/A
-
-  Tweak Null rectangle handling                                                                 unreported                                            [PR #54872](https://github.com/qgis/QGIS/pull/54872)   N/A
-
-  Run spellcheck only on changed files in prepare_commit.sh                                     unreported                                            [PR #54893](https://github.com/qgis/QGIS/pull/54893)   N/A
-
-  Fix prepare_commit.sh                                                                         unreported                                            [PR #54918](https://github.com/qgis/QGIS/pull/54918)   N/A
-
-  Fix extent computation in QgsSpatiaLiteProvider                                               unreported                                            [PR #54917](https://github.com/qgis/QGIS/pull/54917)   N/A
-
-  Do not force verbose build in mingw build                                                     [#54932](https://github.com/qgis/QGIS/issues/54932)   [PR #54924](https://github.com/qgis/QGIS/pull/54924)   N/A
-
-  Make QgsBookmark string output more explicit about it being EMPTY                             unreported                                            [PR #54923](https://github.com/qgis/QGIS/pull/54923)   N/A
-
-  Fix extent computation in QgsAFSProvider                                                      unreported                                            [PR #54944](https://github.com/qgis/QGIS/pull/54944)   N/A
-
-  Add `tags` make target                                                                        unreported                                            [PR #54948](https://github.com/qgis/QGIS/pull/54948)   N/A
-
-  Handle null rectangles in QgsExtentWidget::outputExtent                                       unreported                                            [PR #54953](https://github.com/qgis/QGIS/pull/54953)   N/A
-
-  Handle null in QgsRectangle grow() and include() methods                                      unreported                                            [PR #54955](https://github.com/qgis/QGIS/pull/54955)   N/A
-
-  Add QgsRectangle::setNull(), deprecating setMinimal()                                         unreported                                            [PR #54934](https://github.com/qgis/QGIS/pull/54934)   N/A
-
-  Handle Null rectangle in QgsRectangle::buffered                                               unreported                                            [PR #54967](https://github.com/qgis/QGIS/pull/54967)   N/A
-
-  Fix extent computation in QgsVirtualLayerProvider                                             unreported                                            [PR #54976](https://github.com/qgis/QGIS/pull/54976)   N/A
-
-  Add a QgsRectangle::createNull() temporary static method                                      unreported                                            [PR #55008](https://github.com/qgis/QGIS/pull/55008)   N/A
-
-  Fix testRegisterFeatureUnprojectible - Use valid extent in testRegisterFeatureUnprojectible   unreported                                            [PR #55011](https://github.com/qgis/QGIS/pull/55011)   N/A
-
-  Have QgsGeometry::boundingBox return null rect for null geom                                  unreported                                            [PR #55012](https://github.com/qgis/QGIS/pull/55012)   N/A
-
-  Have QgsGeometry::fromRect(NULL RECT) return null geometry                                    unreported                                            [PR #54954](https://github.com/qgis/QGIS/pull/54954)   N/A
-
-  Stop considering Rectangle(0,0,0,0) null - while Rectangle(1,1,1,1) is not null               [#45563](https://github.com/qgis/QGIS/issues/45563)   [PR #54646](https://github.com/qgis/QGIS/pull/54646)   N/A
-
-  Run doxygen layout checker in prepare-commit script, when possible                            unreported                                            [PR #54936](https://github.com/qgis/QGIS/pull/54936)   N/A
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                   | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Have QgsRectangle null rectangle printed as EMPTY in wkt                                    | unreported                                          | [PR #54831](https://github.com/qgis/QGIS/pull/54831) | N/A
+| Fix aspect ratio computation in QgsLayoutItemMap::zoomToExtent                              | unreported                                          | [PR #54827](https://github.com/qgis/QGIS/pull/54827) | N/A
+| Do not include a BoundingBox tag in GetFeatureInfo responses, when it is null               | unreported                                          | [PR #54858](https://github.com/qgis/QGIS/pull/54858) | N/A
+| Always run the spell and shell checkers if possible, print warning when not possible        | unreported                                          | [PR #54847](https://github.com/qgis/QGIS/pull/54847) | N/A
+| Tweak Null rectangle handling                                                               | unreported                                          | [PR #54872](https://github.com/qgis/QGIS/pull/54872) | N/A
+| Run spellcheck only on changed files in prepare_commit.sh                                   | unreported                                          | [PR #54893](https://github.com/qgis/QGIS/pull/54893) | N/A
+| Fix prepare_commit.sh                                                                       | unreported                                          | [PR #54918](https://github.com/qgis/QGIS/pull/54918) | N/A
+| Fix extent computation in QgsSpatiaLiteProvider                                             | unreported                                          | [PR #54917](https://github.com/qgis/QGIS/pull/54917) | N/A
+| Do not force verbose build in mingw build                                                   | [#54932](https://github.com/qgis/QGIS/issues/54932) | [PR #54924](https://github.com/qgis/QGIS/pull/54924) | N/A
+| Make QgsBookmark string output more explicit about it being EMPTY                           | unreported                                          | [PR #54923](https://github.com/qgis/QGIS/pull/54923) | N/A
+| Fix extent computation in QgsAFSProvider                                                    | unreported                                          | [PR #54944](https://github.com/qgis/QGIS/pull/54944) | N/A
+| Add `tags` make target                                                                      | unreported                                          | [PR #54948](https://github.com/qgis/QGIS/pull/54948) | N/A
+| Handle null rectangles in QgsExtentWidget::outputExtent                                     | unreported                                          | [PR #54953](https://github.com/qgis/QGIS/pull/54953) | N/A
+| Handle null in QgsRectangle grow() and include() methods                                    | unreported                                          | [PR #54955](https://github.com/qgis/QGIS/pull/54955) | N/A
+| Add QgsRectangle::setNull(), deprecating setMinimal()                                       | unreported                                          | [PR #54934](https://github.com/qgis/QGIS/pull/54934) | N/A
+| Handle Null rectangle in QgsRectangle::buffered                                             | unreported                                          | [PR #54967](https://github.com/qgis/QGIS/pull/54967) | N/A
+| Fix extent computation in QgsVirtualLayerProvider                                           | unreported                                          | [PR #54976](https://github.com/qgis/QGIS/pull/54976) | N/A
+| Add a QgsRectangle::createNull() temporary static method                                    | unreported                                          | [PR #55008](https://github.com/qgis/QGIS/pull/55008) | N/A
+| Fix testRegisterFeatureUnprojectible - Use valid extent in testRegisterFeatureUnprojectible | unreported                                          | [PR #55011](https://github.com/qgis/QGIS/pull/55011) | N/A
+| Have QgsGeometry::boundingBox return null rect for null geom                                | unreported                                          | [PR #55012](https://github.com/qgis/QGIS/pull/55012) | N/A
+| Have QgsGeometry::fromRect(NULL RECT) return null geometry                                  | unreported                                          | [PR #54954](https://github.com/qgis/QGIS/pull/54954) | N/A
+| Stop considering Rectangle(0,0,0,0) null - while Rectangle(1,1,1,1) is not null             | [#45563](https://github.com/qgis/QGIS/issues/45563) | [PR #54646](https://github.com/qgis/QGIS/pull/54646) | N/A
+| Run doxygen layout checker in prepare-commit script, when possible                          | unreported                                          | [PR #54936](https://github.com/qgis/QGIS/pull/54936) | N/A
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -554,12 +483,9 @@ This feature was developed by [Sandro Santilli (strk)](http://strk.kbt.io/)
 
 ### Feature: Bug fixes by Jean Felder (Oslandia)
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                             URL issues.qgis.org (if reported)   URL Commit (Github)                                    3.28 backport commit (GitHub)
-  --------------------------------------------------------------------- ----------------------------------- ------------------------------------------------------ -------------------------------
-  qgs3daxissettings: Correctly read viewport ratio on a saved project   unreported                          [PR #54870](https://github.com/qgis/QGIS/pull/54870)   
-
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                           | URL issues.qgis.org (if reported) | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| qgs3daxissettings: Correctly read viewport ratio on a saved project | unreported                        | [PR #54870](https://github.com/qgis/QGIS/pull/54870)   
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -567,45 +493,26 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 
 ### Feature: Bug fixes by Nyall Dawson (North Road)
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                               URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.28 backport commit (GitHub)
-  ------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------
-  Don\'t show help for algorithms which can\'t be run in qgis_process                                     [#54914](https://github.com/qgis/QGIS/issues/54914)   [PR #54920](https://github.com/qgis/QGIS/pull/54920)   pending
-
-  Fix crashes in layout designer                                                                          [#52079](https://github.com/qgis/QGIS/issues/52079)   [PR #54907](https://github.com/qgis/QGIS/pull/54907)   Too intrusive
-
-  Fix layout label adjust size to text logic                                                              unreported                                            [PR #54896](https://github.com/qgis/QGIS/pull/54896)   pending
-
-  Fix toggling visibility of group layers resets child layer mask blend modes                             [#53088](https://github.com/qgis/QGIS/issues/53088)   [PR #54897](https://github.com/qgis/QGIS/pull/54897)   N/A
-
-  Ensure identify highlight works for very transparent symbols                                            [#54830](https://github.com/qgis/QGIS/issues/54830)   [PR #54864](https://github.com/qgis/QGIS/pull/54864)   [PR #54883](https://github.com/qgis/QGIS/pull/54883)
-
-  Fix layout maps force rasterisation of whole layout when map item has transparency set                  unreported                                            [PR #54882](https://github.com/qgis/QGIS/pull/54882)   Too intrusive
-
-  Fix crash in merge features dialog when a field has a unique constraint set                             [#54856](https://github.com/qgis/QGIS/issues/54856)   [PR #54862](https://github.com/qgis/QGIS/pull/54862)   [PR #54878](https://github.com/qgis/QGIS/pull/54878)
-
-  Fix initial zoom level when opening layout designer windows                                             [#44421](https://github.com/qgis/QGIS/issues/44421)   [PR #54849](https://github.com/qgis/QGIS/pull/54849)   [PR #54880](https://github.com/qgis/QGIS/pull/54880)
-
-  Fix hang when exporting 3d maps                                                                         [#50067](https://github.com/qgis/QGIS/issues/50067)   [PR #54845](https://github.com/qgis/QGIS/pull/54845)   Too risky
-
-  Fix layout labels don\'t immediately react to changes when semi-transparent                             unreported                                            [PR #54839](https://github.com/qgis/QGIS/pull/54839)   [PR #54863](https://github.com/qgis/QGIS/pull/54863)
-
-  Fix crash when opening layer properties for raster layer with broken data source                        [#49176](https://github.com/qgis/QGIS/issues/49176)   [PR #54812](https://github.com/qgis/QGIS/pull/54812)   [PR #54838](https://github.com/qgis/QGIS/pull/54838)
-
-  Fix Execute SQL exeception                                                                              [#54833](https://github.com/qgis/QGIS/issues/54833)   [PR #54837](https://github.com/qgis/QGIS/pull/54837)   [PR #54842](https://github.com/qgis/QGIS/pull/54842)
-
-  Cleanup all browser layer properties dialog before exiting                                              [#39094](https://github.com/qgis/QGIS/issues/39094)   [PR #54808](https://github.com/qgis/QGIS/pull/54808)   [PR #54822](https://github.com/qgis/QGIS/pull/54822)
-
-  Avoid loss of attributes when calculating fields                                                        [#47385](https://github.com/qgis/QGIS/issues/47385)   [PR #54815](https://github.com/qgis/QGIS/pull/54815)   [PR #54879](https://github.com/qgis/QGIS/pull/54879)
-
-  Fix crash when changing layers between editable/non-editable layers                                     [#54802](https://github.com/qgis/QGIS/issues/54802)   [PR #54813](https://github.com/qgis/QGIS/pull/54813)   N/A
-
-  Fix QgsField::ConfigurationFlag::None causes syntax error when starting PyQGIS                          unreported                                            [PR #54809](https://github.com/qgis/QGIS/pull/54809)   N/A
-
-  Handle sql=\'\' or sql=\"\" as empty sql strings instead of \'\' / \"\" literals                        [#53736](https://github.com/qgis/QGIS/issues/53736)   [PR #54806](https://github.com/qgis/QGIS/pull/54806)   [PR #54826](https://github.com/qgis/QGIS/pull/54826)
-
-  Fix crash when certain symbol pages are open in style dock and QGIS is closed or a new project opened   unreported                                            [PR #54749](https://github.com/qgis/QGIS/pull/54749)   Too intrusive
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                             | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Don\'t show help for algorithms which can\'t be run in qgis_process                                   | [#54914](https://github.com/qgis/QGIS/issues/54914) | [PR #54920](https://github.com/qgis/QGIS/pull/54920) | pending
+| Fix crashes in layout designer                                                                        | [#52079](https://github.com/qgis/QGIS/issues/52079) | [PR #54907](https://github.com/qgis/QGIS/pull/54907) | Too intrusive
+| Fix layout label adjust size to text logic                                                            | unreported                                          | [PR #54896](https://github.com/qgis/QGIS/pull/54896) | pending
+| Fix toggling visibility of group layers resets child layer mask blend modes                           | [#53088](https://github.com/qgis/QGIS/issues/53088) | [PR #54897](https://github.com/qgis/QGIS/pull/54897) | N/A
+| Ensure identify highlight works for very transparent symbols                                          | [#54830](https://github.com/qgis/QGIS/issues/54830) | [PR #54864](https://github.com/qgis/QGIS/pull/54864) | [PR #54883](https://github.com/qgis/QGIS/pull/54883)
+| Fix layout maps force rasterisation of whole layout when map item has transparency set                | unreported                                          | [PR #54882](https://github.com/qgis/QGIS/pull/54882) | Too intrusive
+| Fix crash in merge features dialog when a field has a unique constraint set                           | [#54856](https://github.com/qgis/QGIS/issues/54856) | [PR #54862](https://github.com/qgis/QGIS/pull/54862) | [PR #54878](https://github.com/qgis/QGIS/pull/54878)
+| Fix initial zoom level when opening layout designer windows                                           | [#44421](https://github.com/qgis/QGIS/issues/44421) | [PR #54849](https://github.com/qgis/QGIS/pull/54849) | [PR #54880](https://github.com/qgis/QGIS/pull/54880)
+| Fix hang when exporting 3d maps                                                                       | [#50067](https://github.com/qgis/QGIS/issues/50067) | [PR #54845](https://github.com/qgis/QGIS/pull/54845) | Too risky
+| Fix layout labels don\'t immediately react to changes when semi-transparent                           | unreported                                          | [PR #54839](https://github.com/qgis/QGIS/pull/54839) | [PR #54863](https://github.com/qgis/QGIS/pull/54863)
+| Fix crash when opening layer properties for raster layer with broken data source                      | [#49176](https://github.com/qgis/QGIS/issues/49176) | [PR #54812](https://github.com/qgis/QGIS/pull/54812) | [PR #54838](https://github.com/qgis/QGIS/pull/54838)
+| Fix Execute SQL exeception                                                                            | [#54833](https://github.com/qgis/QGIS/issues/54833) | [PR #54837](https://github.com/qgis/QGIS/pull/54837) | [PR #54842](https://github.com/qgis/QGIS/pull/54842)
+| Cleanup all browser layer properties dialog before exiting                                            | [#39094](https://github.com/qgis/QGIS/issues/39094) | [PR #54808](https://github.com/qgis/QGIS/pull/54808) | [PR #54822](https://github.com/qgis/QGIS/pull/54822)
+| Avoid loss of attributes when calculating fields                                                      | [#47385](https://github.com/qgis/QGIS/issues/47385) | [PR #54815](https://github.com/qgis/QGIS/pull/54815) | [PR #54879](https://github.com/qgis/QGIS/pull/54879)
+| Fix crash when changing layers between editable/non-editable layers                                   | [#54802](https://github.com/qgis/QGIS/issues/54802) | [PR #54813](https://github.com/qgis/QGIS/pull/54813) | N/A
+| Fix QgsField::ConfigurationFlag::None causes syntax error when starting PyQGIS                        | unreported                                          | [PR #54809](https://github.com/qgis/QGIS/pull/54809) | N/A
+| Handle sql=\'\' or sql=\"\" as empty sql strings instead of \'\' / \"\" literals                      | [#53736](https://github.com/qgis/QGIS/issues/53736) | [PR #54806](https://github.com/qgis/QGIS/pull/54806) | [PR #54826](https://github.com/qgis/QGIS/pull/54826)
+| Fix crash when certain symbol pages are open in style dock and QGIS is closed or a new project opened | unreported                                          | [PR #54749](https://github.com/qgis/QGIS/pull/54749) | Too intrusive
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -613,21 +520,14 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ### Feature: Bug fixes by Julien Cabieces (Oslandia)
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                                    URL issues.qgis.org (if reported)                     URL Commit (Github)                                             3.28 backport commit (GitHub)
-  ---------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- --------------------------------------------------------------- ------------------------------------------------------
-  Masking with SVG symbol doesn\'t work                                                                                        [#54926](https://github.com/qgis/QGIS/issues/54926)   [PR #54927](https://github.com/qgis/QGIS/pull/54927)            
-
-  Bug on graduated symbology on French QGis 3.28.10                                                                            [#54549](https://github.com/qgis/QGIS/issues/54549)   [PR #54943](https://github.com/qgis/QGIS/pull/54943)            [PR #54963](https://github.com/qgis/QGIS/pull/54963)
-
-  QGIS crashes when undoing moving of elements in map layout                                                                   [#52740](https://github.com/qgis/QGIS/issues/52740)   [PR #54959](https://github.com/qgis/QGIS/pull/54959)            [PR #54969](https://github.com/qgis/QGIS/pull/54969)
-
-  QGIS Crashes Upon Exporting Layout to PDF when Using Random Point Fill Symbology                                             [#54065](https://github.com/qgis/QGIS/issues/54065)   poly2tri issue <https://github.com/jhasse/poly2tri/issues/55>   
-
-  Label expression with more than 32767 chars becomes invalid when switching from expression dialog back to layer properties   [#54141](https://github.com/qgis/QGIS/issues/54141)   [PR #55051](https://github.com/qgis/QGIS/pull/55051)            [PR #55052](https://github.com/qgis/QGIS/pull/55052)
-
-  Activating notify/listen feature crash QGIS                                                                                  [#54260](https://github.com/qgis/QGIS/issues/54260)   [PR #55062](https://github.com/qgis/QGIS/pull/55062)            
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                                  | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                           | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Masking with SVG symbol doesn\'t work                                                                                      | [#54926](https://github.com/qgis/QGIS/issues/54926) | [PR #54927](https://github.com/qgis/QGIS/pull/54927)            
+| Bug on graduated symbology on French QGis 3.28.10                                                                          | [#54549](https://github.com/qgis/QGIS/issues/54549) | [PR #54943](https://github.com/qgis/QGIS/pull/54943)          | [PR #54963](https://github.com/qgis/QGIS/pull/54963)
+| QGIS crashes when undoing moving of elements in map layout                                                                 | [#52740](https://github.com/qgis/QGIS/issues/52740) | [PR #54959](https://github.com/qgis/QGIS/pull/54959)          | [PR #54969](https://github.com/qgis/QGIS/pull/54969)
+| QGIS Crashes Upon Exporting Layout to PDF when Using Random Point Fill Symbology                                           | [#54065](https://github.com/qgis/QGIS/issues/54065) | poly2tri issue <https://github.com/jhasse/poly2tri/issues/55>   
+| Label expression with more than 32767 chars becomes invalid when switching from expression dialog back to layer properties | [#54141](https://github.com/qgis/QGIS/issues/54141) | [PR #55051](https://github.com/qgis/QGIS/pull/55051)          | [PR #55052](https://github.com/qgis/QGIS/pull/55052)
+| Activating notify/listen feature crash QGIS                                                                                | [#54260](https://github.com/qgis/QGIS/issues/54260) | [PR #55062](https://github.com/qgis/QGIS/pull/55062)            
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 

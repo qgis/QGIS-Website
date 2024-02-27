@@ -716,75 +716,41 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 ### Feature: Bug fixes by Alessandro Pasotti
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                             URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.4 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------
-  Raster Calculator wrong results                                                                                       [#21405](https://issues.qgis.org/issues/21405)        fixed in master                                        
-
-  QGIS server ignores custom rendering order when loading parent group                                                  [#21917](https://issues.qgis.org/issues/21917)        [PR #9878](https://github.com/qgis/QGIS/pull/9878)     Done
-
-  WMS Client: GetFeatureInfo in JSON format doesn\'t display numeric attribute values                                   [#21735](https://issues.qgis.org/issues/21735)        [PR #9879](https://github.com/qgis/QGIS/pull/9879)     Done
-
-  Crash when adding New Field to ShapeLayer                                                                             [#22100](https://issues.qgis.org/issues/22100)                                                               
-
-  Priority in labelling not greyed out when data defined settings are enabled                                           [#22077](https://issues.qgis.org/issues/22077)        Invalid                                                
-
-  \$length return bad value                                                                                             [#22105](https://issues.qgis.org/issues/22105)        works for me (and for everybody)                       
-
-  Relation reference widget wrong feature when \"on map identification\"                                                [#22071](https://issues.qgis.org/issues/22071)                                                               
-
-  Map composer: \"href\" HTML attribute issue in PDF output                                                             [#22075](https://issues.qgis.org/issues/22075)        won\'t fix                                             
-
-  Issue exporting raster layer to Geopackage                                                                            [#20848](https://issues.qgis.org/issues/20848)        [PR #10036](https://github.com/qgis/QGIS/pull/10036)   Done
-
-  Create vector New shapefile POLYGON                                                                                   [#22107](https://issues.qgis.org/issues/22107)        invalid                                                
-
-  \"Export to PostgreSQL\" python error if rather schema has an uppercase letter in its name                            [#22035](https://issues.qgis.org/issues/22035)        [PR #10063](https://github.com/qgis/QGIS/pull/10063)   
-
-  Relation reference widget wrong feature when \"on map identification\"                                                [#22071](https://issues.qgis.org/issues/22071)        [PR #10047](https://github.com/qgis/QGIS/pull/10047)   Done
-
-  DB Manger imports the wrong data                                                                                      [#22033](https://issues.qgis.org/issues/22033)        [PR #10077](https://github.com/qgis/QGIS/pull/10077)   Done
-
-  qgis crash when filtering a layer with an attachment field                                                            [#21775](https://issues.qgis.org/issues/21775)        Fixed by Nyall                                         
-
-  Raster calculator, abs() not working                                                                                  [#29824](https://github.com/qgis/QGIS/issues/29824)   [PR #29965](https://github.com/qgis/QGIS/pull/29965)   Done
-
-  Valid file URL link fails in Identify window                                                                          [#29879](https://github.com/qgis/QGIS/issues/29879)   [PR #29967](https://github.com/qgis/QGIS/pull/29967)   Done
-
-  QgsProject.instance().clear() crashes QGIS when LayoutDesigner Window is open                                         [#29821](https://github.com/qgis/QGIS/issues/29821)   [PR #29968](https://github.com/qgis/QGIS/pull/29968)   Done
-
-  QGIS Server WFS DescribeFeatureType advertises double precision virtual fields as integer                             [#29767](https://github.com/qgis/QGIS/issues/29767)   [PR #29970](https://github.com/qgis/QGIS/pull/29970)   Done
-
-  QGIS crahses when exporting a template                                                                                [#29798](https://github.com/qgis/QGIS/issues/29798)   [PR #29981](https://github.com/qgis/QGIS/pull/29981)   Done
-
-  Export atlas as image fail when expression filename contain dot                                                       [#29980](https://github.com/qgis/QGIS/issues/29980)   [PR #29983](https://github.com/qgis/QGIS/pull/29983)   Done
-
-  Buttons to adjust marker size in the digitizing tab of the general settings dialog not work                           [#29987](https://github.com/qgis/QGIS/issues/29987)   [PR #29991](https://github.com/qgis/QGIS/pull/29991)   
-
-  Map Composer crashes QGIS when copying mixture of elements in page layout                                             [#29747](https://github.com/qgis/QGIS/issues/29747)   [PR #30017](https://github.com/qgis/QGIS/pull/30017)   TODO
-
-  QGIS crashes with PostgreSQL views                                                                                    [#29673](https://github.com/qgis/QGIS/issues/29673)   cannot reproduce and cannot ask for feedback           
-
-  Browser - \"Project home\" folder shortcut does not appear when a new project is saved                                [#29919](https://github.com/qgis/QGIS/issues/29919)   [PR #30025](https://github.com/qgis/QGIS/pull/30025)   TODO
-
-  Crash when calling QgsRasterHistogram.histogramVector                                                                 [#29700](https://github.com/qgis/QGIS/issues/29700)   [PR #30033](https://github.com/qgis/QGIS/pull/30033)   Done
-
-  Do not offer to \"Import settings from Qgis2?\" if no such settings exist                                             [#30082](https://github.com/qgis/QGIS/issues/30082)   [PR #30092](https://github.com/qgis/QGIS/pull/30092)   Done
-
-  In gpkg, query builder prevents autogenerate of pasted feature with same fid as hidden feature                        [#30062](https://github.com/qgis/QGIS/issues/30062)   [PR #30096](https://github.com/qgis/QGIS/pull/30096)   TODO
-
-  Drag and drop geopackage from filesystem into map misses vector layers, loses names for raster layers                 [#30050](https://github.com/qgis/QGIS/issues/30050)   [PR #30098](https://github.com/qgis/QGIS/pull/30098)   Done
-
-  Qgis crashes when try to identify a layer with duplicated fields                                                      [#29937](https://github.com/qgis/QGIS/issues/29937)   [PR #30100](https://github.com/qgis/QGIS/pull/30100)   TODO
-
-  label properties will not saved to project files (buffer and background)                                              [#29882](https://github.com/qgis/QGIS/issues/29882)   works for me on release-3_4 and master                 
-
-  Saving edits to a layer with JSON field throws an error                                                               [#30131](https://github.com/qgis/QGIS/issues/30131)   [PR #30137](https://github.com/qgis/QGIS/pull/30137)   Risky?
-
-  Value relation widget settings lost on import of layer definition file                                                [#30115](https://github.com/qgis/QGIS/issues/30115)   [PR #30151](https://github.com/qgis/QGIS/pull/30151)   Risky?
-
-  Unable to add new features in QGIS for PostGIS table using sequence for gid. Data type serial: \'integer overflow\'   [#30041](https://github.com/qgis/QGIS/issues/30041)   [PR #30184](https://github.com/qgis/QGIS/pull/30184)   Done
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                           | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.4 backport commit (GitHub)
+|----|----|----|----|
+| Raster Calculator wrong results                                                                                     | [#21405](https://issues.qgis.org/issues/21405)      | fixed in master                                        
+| QGIS server ignores custom rendering order when loading parent group                                                | [#21917](https://issues.qgis.org/issues/21917)      | [PR #9878](https://github.com/qgis/QGIS/pull/9878)   | Done
+| WMS Client: GetFeatureInfo in JSON format doesn\'t display numeric attribute values                                 | [#21735](https://issues.qgis.org/issues/21735)      | [PR #9879](https://github.com/qgis/QGIS/pull/9879)   | Done
+| Crash when adding New Field to ShapeLayer                                                                           | [#22100](https://issues.qgis.org/issues/22100)                                                               
+| Priority in labelling not greyed out when data defined settings are enabled                                         | [#22077](https://issues.qgis.org/issues/22077)      | Invalid                                                
+| \$length return bad value                                                                                           | [#22105](https://issues.qgis.org/issues/22105)      | works for me (and for everybody)                       
+| Relation reference widget wrong feature when \"on map identification\"                                              | [#22071](https://issues.qgis.org/issues/22071)                                                               
+| Map composer: \"href\" HTML attribute issue in PDF output                                                           | [#22075](https://issues.qgis.org/issues/22075)      | won\'t fix                                             
+| Issue exporting raster layer to Geopackage                                                                          | [#20848](https://issues.qgis.org/issues/20848)      | [PR #10036](https://github.com/qgis/QGIS/pull/10036) | Done
+| Create vector New shapefile POLYGON                                                                                 | [#22107](https://issues.qgis.org/issues/22107)      | invalid                                                
+| \"Export to PostgreSQL\" python error if rather schema has an uppercase letter in its name                          | [#22035](https://issues.qgis.org/issues/22035)      | [PR #10063](https://github.com/qgis/QGIS/pull/10063)   
+| Relation reference widget wrong feature when \"on map identification\"                                              | [#22071](https://issues.qgis.org/issues/22071)      | [PR #10047](https://github.com/qgis/QGIS/pull/10047) | Done
+| DB Manger imports the wrong data                                                                                    | [#22033](https://issues.qgis.org/issues/22033)      | [PR #10077](https://github.com/qgis/QGIS/pull/10077) | Done
+| qgis crash when filtering a layer with an attachment field                                                          | [#21775](https://issues.qgis.org/issues/21775)      | Fixed by Nyall                                         
+| Raster calculator, abs() not working                                                                                | [#29824](https://github.com/qgis/QGIS/issues/29824) | [PR #29965](https://github.com/qgis/QGIS/pull/29965) | Done
+| Valid file URL link fails in Identify window                                                                        | [#29879](https://github.com/qgis/QGIS/issues/29879) | [PR #29967](https://github.com/qgis/QGIS/pull/29967) | Done
+| QgsProject.instance().clear() crashes QGIS when LayoutDesigner Window is open                                       | [#29821](https://github.com/qgis/QGIS/issues/29821) | [PR #29968](https://github.com/qgis/QGIS/pull/29968) | Done
+| QGIS Server WFS DescribeFeatureType advertises double precision virtual fields as integer                           | [#29767](https://github.com/qgis/QGIS/issues/29767) | [PR #29970](https://github.com/qgis/QGIS/pull/29970) | Done
+| QGIS crahses when exporting a template                                                                              | [#29798](https://github.com/qgis/QGIS/issues/29798) | [PR #29981](https://github.com/qgis/QGIS/pull/29981) | Done
+| Export atlas as image fail when expression filename contain dot                                                     | [#29980](https://github.com/qgis/QGIS/issues/29980) | [PR #29983](https://github.com/qgis/QGIS/pull/29983) | Done
+| Buttons to adjust marker size in the digitizing tab of the general settings dialog not work                         | [#29987](https://github.com/qgis/QGIS/issues/29987) | [PR #29991](https://github.com/qgis/QGIS/pull/29991)   
+| Map Composer crashes QGIS when copying mixture of elements in page layout                                           | [#29747](https://github.com/qgis/QGIS/issues/29747) | [PR #30017](https://github.com/qgis/QGIS/pull/30017) | TODO
+| QGIS crashes with PostgreSQL views                                                                                  | [#29673](https://github.com/qgis/QGIS/issues/29673) | cannot reproduce and cannot ask for feedback           
+| Browser - \"Project home\" folder shortcut does not appear when a new project is saved                              | [#29919](https://github.com/qgis/QGIS/issues/29919) | [PR #30025](https://github.com/qgis/QGIS/pull/30025) | TODO
+| Crash when calling QgsRasterHistogram.histogramVector                                                               | [#29700](https://github.com/qgis/QGIS/issues/29700) | [PR #30033](https://github.com/qgis/QGIS/pull/30033) | Done
+| Do not offer to \"Import settings from Qgis2?\" if no such settings exist                                           | [#30082](https://github.com/qgis/QGIS/issues/30082) | [PR #30092](https://github.com/qgis/QGIS/pull/30092) | Done
+| In gpkg, query builder prevents autogenerate of pasted feature with same fid as hidden feature                      | [#30062](https://github.com/qgis/QGIS/issues/30062) | [PR #30096](https://github.com/qgis/QGIS/pull/30096) | TODO
+| Drag and drop geopackage from filesystem into map misses vector layers, loses names for raster layers               | [#30050](https://github.com/qgis/QGIS/issues/30050) | [PR #30098](https://github.com/qgis/QGIS/pull/30098) | Done
+| Qgis crashes when try to identify a layer with duplicated fields                                                    | [#29937](https://github.com/qgis/QGIS/issues/29937) | [PR #30100](https://github.com/qgis/QGIS/pull/30100) | TODO
+| label properties will not saved to project files (buffer and background)                                            | [#29882](https://github.com/qgis/QGIS/issues/29882) | works for me on release-3_4 and master                 
+| Saving edits to a layer with JSON field throws an error                                                             | [#30131](https://github.com/qgis/QGIS/issues/30131) | [PR #30137](https://github.com/qgis/QGIS/pull/30137) | Risky?
+| Value relation widget settings lost on import of layer definition file                                              | [#30115](https://github.com/qgis/QGIS/issues/30115) | [PR #30151](https://github.com/qgis/QGIS/pull/30151) | Risky?
+| Unable to add new features in QGIS for PostGIS table using sequence for gid. Data type serial: \'integer overflow\' | [#30041](https://github.com/qgis/QGIS/issues/30041) | [PR #30184](https://github.com/qgis/QGIS/pull/30184) | Done
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
@@ -792,39 +758,23 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 
 ### Feature: Bug fixes by Alexander Bruy
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                         URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.4 backport commit (GitHub)
-  --------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------
-  v.net.distance - node cost column                                                 [#22013](https://issues.qgis.org/issues/22013)        [PR #10060](https://github.com/qgis/QGIS/pull/10060)   Done
-
-  shapefile to raster conversion does not work                                      [#21922](https://issues.qgis.org/issues/21922)                                                               
-
-  GRASS r.in.lidar.info, can only choose *.txt not the intended* .las               [#21910](https://issues.qgis.org/issues/21910)        [PR #10061](https://github.com/qgis/QGIS/pull/10061)   Done
-
-  SAGA OpenCV Image Analysis                                                        [#21746](https://issues.qgis.org/issues/21746)                                                               
-
-  SAGA \"saga split rgb bands\" tool is not inside any (SAGA) group of tools        [#21849](https://issues.qgis.org/issues/21849)        [PR #10062](https://github.com/qgis/QGIS/pull/10062)   Done
-
-  r.sun cannot be executed because it calls on two incompatible options             [#21637](https://issues.qgis.org/issues/21637)        [PR #10074](https://github.com/qgis/QGIS/pull/10074)   Done
-
-  i.segment (GRASS 7.4.2) only produces a Goodness Raster but no Segmented Raster   [#20646](https://issues.qgis.org/issues/20646)        works fine in master and 3.4                           
-
-  Majority filter (SAGA) returns erroneous results if input is .tif                 [#22118](https://issues.qgis.org/issues/22118)        invalid                                                
-
-  Processing batch process interface: no way to go back                             [#16893](https://issues.qgis.org/issues/16893)        [PR #10080](https://github.com/qgis/QGIS/pull/10080)   Done
-
-  DB Manager rename PostGIS column error                                            [#21425](https://issues.qgis.org/issues/21425)        [PR #10082](https://github.com/qgis/QGIS/pull/10082)   not needed
-
-  Word wrapping not working in maptips                                              [#21388](https://issues.qgis.org/issues/21388)        [PR #10081](https://github.com/qgis/QGIS/pull/10081)   Done
-
-  Styles stored in QML files with same name as layer no longer auto loaded          [#21691](https://issues.qgis.org/issues/21691)        [PR #14660](https://github.com/qgis/QGIS/pull/14660)   Done
-
-  QGIS 3.4.6 crashed when I tried classifying a layer                               [#21693](https://issues.qgis.org/issues/21693)        [PR #29951](https://github.com/qgis/QGIS/pull/29951)   Done
-
-  Fixed table not working under User defined filter (SAGA)                          [#29999](https://github.com/qgis/QGIS/issues/29999)   [PR #30001](https://github.com/qgis/QGIS/pull/30001)   Done
-
-  DB Manager Versioning: \_current view lacks primary key                           [#25888](https://github.com/qgis/QGIS/issues/25888)   [PR #30045](https://github.com/qgis/QGIS/pull/30045)   
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                       | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.4 backport commit (GitHub)
+|----|----|----|----|
+| v.net.distance - node cost column                                               | [#22013](https://issues.qgis.org/issues/22013)      | [PR #10060](https://github.com/qgis/QGIS/pull/10060) | Done
+| shapefile to raster conversion does not work                                    | [#21922](https://issues.qgis.org/issues/21922)                                                               
+| GRASS r.in.lidar.info, can only choose *.txt not the intended* .las             | [#21910](https://issues.qgis.org/issues/21910)      | [PR #10061](https://github.com/qgis/QGIS/pull/10061) | Done
+| SAGA OpenCV Image Analysis                                                      | [#21746](https://issues.qgis.org/issues/21746)                                                               
+| SAGA \"saga split rgb bands\" tool is not inside any (SAGA) group of tools      | [#21849](https://issues.qgis.org/issues/21849)      | [PR #10062](https://github.com/qgis/QGIS/pull/10062) | Done
+| r.sun cannot be executed because it calls on two incompatible options           | [#21637](https://issues.qgis.org/issues/21637)      | [PR #10074](https://github.com/qgis/QGIS/pull/10074) | Done
+| i.segment (GRASS 7.4.2) only produces a Goodness Raster but no Segmented Raster | [#20646](https://issues.qgis.org/issues/20646)      | works fine in master and 3.4                           
+| Majority filter (SAGA) returns erroneous results if input is .tif               | [#22118](https://issues.qgis.org/issues/22118)      | invalid                                                
+| Processing batch process interface: no way to go back                           | [#16893](https://issues.qgis.org/issues/16893)      | [PR #10080](https://github.com/qgis/QGIS/pull/10080) | Done
+| DB Manager rename PostGIS column error                                          | [#21425](https://issues.qgis.org/issues/21425)      | [PR #10082](https://github.com/qgis/QGIS/pull/10082) | not needed
+| Word wrapping not working in maptips                                            | [#21388](https://issues.qgis.org/issues/21388)      | [PR #10081](https://github.com/qgis/QGIS/pull/10081) | Done
+| Styles stored in QML files with same name as layer no longer auto loaded        | [#21691](https://issues.qgis.org/issues/21691)      | [PR #14660](https://github.com/qgis/QGIS/pull/14660) | Done
+| QGIS 3.4.6 crashed when I tried classifying a layer                             | [#21693](https://issues.qgis.org/issues/21693)      | [PR #29951](https://github.com/qgis/QGIS/pull/29951) | Done
+| Fixed table not working under User defined filter (SAGA)                        | [#29999](https://github.com/qgis/QGIS/issues/29999) | [PR #30001](https://github.com/qgis/QGIS/pull/30001) | Done
+| DB Manager Versioning: \_current view lacks primary key                         | [#25888](https://github.com/qgis/QGIS/issues/25888) | [PR #30045](https://github.com/qgis/QGIS/pull/30045)   
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
@@ -832,29 +782,18 @@ This feature was developed by [Alexander Bruy](https://bruy.me/)
 
 ### Feature: Bug fixes by Victor Olaya
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                                                                             URL issues.qgis.org (if reported)                     URL Commit (Github)                                                                      3.4 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ---------------------------------------------------------------------------------------- ------------------------------
-  Processing \"iterate\" does not work anymore                                                                                                                          [#21524](https://issues.qgis.org/issues/21524)        [PR #10078](https://github.com/qgis/QGIS/pull/10078)                                     
-
-  parameter type error in SAGA Gaussian Filter                                                                                                                          [#21797](https://issues.qgis.org/issues/21797)        [Commit](https://github.com/qgis/QGIS/commit/83e6dd3efe302de4749d68be23217d8dd4e667d2)   
-
-  Distance matrix does not maintain data type and precision for Input Point Layer in Linear (N\*k x 3)                                                                  [#21501](https://issues.qgis.org/issues/21501)                                                                                                 
-
-  Processing \"Build virtual vector\" now fails in certain cases                                                                                                        [#21519](https://issues.qgis.org/issues/21519)        [PR #10083](https://github.com/qgis/QGIS/pull/10083)                                     
-
-  SAGA raster calculator loads more grids than selected when a sdat is supplied in XGRIDS                                                                               [#22131](https://issues.qgis.org/issues/22131)        [PR #10085](https://github.com/qgis/QGIS/pull/10085)                                     
-
-  Export selected Objects generated line layer not selectable in graphical modeller                                                                                     [#21705](https://issues.qgis.org/issues/21705)        [PR #10093](https://github.com/qgis/QGIS/pull/10093)                                     
-
-  Batch processing error in r.mapcalc.simple                                                                                                                            [#29822](https://github.com/qgis/QGIS/issues/29822)                                                                                            
-
-  Help for algorithms not visible in modeller                                                                                                                           [#21536](https://issues.qgis.org/issues/21536)                                                                                                 
-
-  Bug fixes related the batch interface, not linked to any bug report. They are regressions introduced in recent changes, that i found while working on another issue                                                         [PR #29948](https://github.com/qgis/QGIS/pull/29948)                                     
-
-                                                                                                                                                                                                                              [PR #29950](https://github.com/qgis/QGIS/pull/29950)                                     
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                                                                           | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                                                    | 3.4 backport commit (GitHub)
+|----|----|----|----|
+| Processing \"iterate\" does not work anymore                                                                                                                        | [#21524](https://issues.qgis.org/issues/21524)      | [PR #10078](https://github.com/qgis/QGIS/pull/10078)                                     
+| parameter type error in SAGA Gaussian Filter                                                                                                                        | [#21797](https://issues.qgis.org/issues/21797)      | [Commit](https://github.com/qgis/QGIS/commit/83e6dd3efe302de4749d68be23217d8dd4e667d2)   
+| Distance matrix does not maintain data type and precision for Input Point Layer in Linear (N\*k x 3)                                                                | [#21501](https://issues.qgis.org/issues/21501)                                                                                                 
+| Processing \"Build virtual vector\" now fails in certain cases                                                                                                      | [#21519](https://issues.qgis.org/issues/21519)      | [PR #10083](https://github.com/qgis/QGIS/pull/10083)                                     
+| SAGA raster calculator loads more grids than selected when a sdat is supplied in XGRIDS                                                                             | [#22131](https://issues.qgis.org/issues/22131)      | [PR #10085](https://github.com/qgis/QGIS/pull/10085)                                     
+| Export selected Objects generated line layer not selectable in graphical modeller                                                                                   | [#21705](https://issues.qgis.org/issues/21705)      | [PR #10093](https://github.com/qgis/QGIS/pull/10093)                                     
+| Batch processing error in r.mapcalc.simple                                                                                                                          | [#29822](https://github.com/qgis/QGIS/issues/29822)                                                                                            
+| Help for algorithms not visible in modeller                                                                                                                         | [#21536](https://issues.qgis.org/issues/21536)                                                                                                 
+| Bug fixes related the batch interface, not linked to any bug report. They are regressions introduced in recent changes, that i found while working on another issue                                                       | [PR #29948](https://github.com/qgis/QGIS/pull/29948)                                     
+|                                                                                                                                                                                                                           | [PR #29950](https://github.com/qgis/QGIS/pull/29950)                                     
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
@@ -862,27 +801,17 @@ This feature was developed by Victor Olaya
 
 ### Feature: Bug fixes by Even Rouault
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                    URL issues.qgis.org (if reported)                      URL Commit (Github)                                                                         3.4 backport commit (GitHub)
-  ---------------------------------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------------------------------------------- ------------------------------
-  ENVI driver ignores \"geo point\" (GCP) metadata on reading                  [#1528](https://github.com/OSGeo/gdal/issues/1528)     [Commit](https://github.com/rouault/gdal/commit/f2f29cd3a7708a4a9553f127b2d19b3cd72f9180)   
-
-  WFS GetFeature fails on TypeNames parameter                                  [#21768](https://issues.qgis.org/issues/21768)         [PR #29946](https://github.com/qgis/QGIS/pull/29946)                                        Done
-
-  Cannot load GPX file automatically after creating it QGIS 3.4.7 QGIS 3.6.2   [#22005](https://issues.qgis.org/issues/22005)         [PR #29947](https://github.com/qgis/QGIS/pull/29947)                                        Done
-
-  Cannot create temporary SpatiaLite cache                                     [#29819](https://github.com/qgis/QGIS/issues/29819)    [PR #29949](https://github.com/qgis/QGIS/pull/29949)                                        Done
-
-  PostGIS closed circle in Curved Polygon is not displayed                     [#29895](https://github.com/qgis/QGIS/issues/29895)    [PR #30010](https://github.com/qgis/QGIS/pull/30010)                                        Done
-
-  Fix GeoJSON output of MultiPolygon/MultiSurface                              [PR #30012](https://github.com/qgis/QGIS/pull/30012)   [PR #30012](https://github.com/qgis/QGIS/pull/30012)                                        Not needed
-
-  Multipatch features are not shown anymore                                    [#29376](https://github.com/qgis/QGIS/issues/29376)    [PR #30024](https://github.com/qgis/QGIS/pull/30024)                                        Done
-
-  Multiple issues and deadlocks with WFS                                       [#29258](https://github.com/qgis/QGIS/issues/29258)    [PR #30026](https://github.com/qgis/QGIS/pull/30026)                                        Done
-
-  WFS provider: Avoid dangling download progress dialog                        [PR #30039](https://github.com/qgis/QGIS/pull/30039)   [PR #30039](https://github.com/qgis/QGIS/pull/30039)                                        Done
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                  | URL issues.qgis.org (if reported)                    | URL Commit (Github)                                                                       | 3.4 backport commit (GitHub)
+|----|----|----|----|
+| ENVI driver ignores \"geo point\" (GCP) metadata on reading                | [#1528](https://github.com/OSGeo/gdal/issues/1528)   | [Commit](https://github.com/rouault/gdal/commit/f2f29cd3a7708a4a9553f127b2d19b3cd72f9180)   
+| WFS GetFeature fails on TypeNames parameter                                | [#21768](https://issues.qgis.org/issues/21768)       | [PR #29946](https://github.com/qgis/QGIS/pull/29946)                                      | Done
+| Cannot load GPX file automatically after creating it QGIS 3.4.7 QGIS 3.6.2 | [#22005](https://issues.qgis.org/issues/22005)       | [PR #29947](https://github.com/qgis/QGIS/pull/29947)                                      | Done
+| Cannot create temporary SpatiaLite cache                                   | [#29819](https://github.com/qgis/QGIS/issues/29819)  | [PR #29949](https://github.com/qgis/QGIS/pull/29949)                                      | Done
+| PostGIS closed circle in Curved Polygon is not displayed                   | [#29895](https://github.com/qgis/QGIS/issues/29895)  | [PR #30010](https://github.com/qgis/QGIS/pull/30010)                                      | Done
+| Fix GeoJSON output of MultiPolygon/MultiSurface                            | [PR #30012](https://github.com/qgis/QGIS/pull/30012) | [PR #30012](https://github.com/qgis/QGIS/pull/30012)                                      | Not needed
+| Multipatch features are not shown anymore                                  | [#29376](https://github.com/qgis/QGIS/issues/29376)  | [PR #30024](https://github.com/qgis/QGIS/pull/30024)                                      | Done
+| Multiple issues and deadlocks with WFS                                     | [#29258](https://github.com/qgis/QGIS/issues/29258)  | [PR #30026](https://github.com/qgis/QGIS/pull/30026)                                      | Done
+| WFS provider: Avoid dangling download progress dialog                      | [PR #30039](https://github.com/qgis/QGIS/pull/30039) | [PR #30039](https://github.com/qgis/QGIS/pull/30039)                                      | Done
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
@@ -890,12 +819,9 @@ This feature was developed by [Even Rouault](https://www.spatialys.com/)
 
 ### Feature: Bug fixes by Denis Rouzaud
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                   URL issues.qgis.org (if reported)                     URL Commit (Github)                                                                                           3.4 backport commit (GitHub)
-  --------------------------- ----------------------------------------------------- ------------------------------------------------------------------------------------------------------------- ------------------------------
-  issues in embedded layers   [#29678](https://github.com/qgis/QGIS/issues/29678)   [PR #9993](https://github.com/qgis/QGIS/pull/9993) and [PR #10004](https://github.com/qgis/QGIS/pull/10004)   
-
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                 | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                                                                         | 3.4 backport commit (GitHub)
+|----|----|----|----|
+| issues in embedded layers | [#29678](https://github.com/qgis/QGIS/issues/29678) | [PR #9993](https://github.com/qgis/QGIS/pull/9993) and [PR #10004](https://github.com/qgis/QGIS/pull/10004)   
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
@@ -903,23 +829,15 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 
 ### Feature: Bug fixes by Peter Petrik
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                    URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.4 backport commit (GitHub)
-  ---------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------
-  Editing a GeoPackage feature with spaces in the field names can crash QGIS   [#29630](https://github.com/qgis/QGIS/issues/29630)   [PR #29997](https://github.com/qgis/QGIS/pull/29997)   TODO
-
-  Crash on update pg layer                                                     [#29814](https://github.com/qgis/QGIS/issues/29814)   duplicate                                              N/A
-
-  XMDF file type missing from Madiera 3.4.5                                    [#29381](https://github.com/qgis/QGIS/issues/29381)   invalid                                                N/A
-
-  Mesh calculator: crash when \'All Selected Dataset Times\' button clicked    [#30003](https://github.com/qgis/QGIS/issues/30003)   [PR #30005](https://github.com/qgis/QGIS/pull/30005)   N/A
-
-  Crash when editing fields                                                    [#29200](https://github.com/qgis/QGIS/issues/29200)   unable to replicate                                    N/A
-
-  Closing Vertex Edititor crashes the app                                      [#30028](https://github.com/qgis/QGIS/issues/30028)   [PR #30030](https://github.com/qgis/QGIS/pull/30030)   TODO
-
-  Detached 3D view crash \[macOS\]                                             [#29169](https://github.com/qgis/QGIS/issues/29169)   unable to replicate                                    
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                  | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.4 backport commit (GitHub)
+|----|----|----|----|
+| Editing a GeoPackage feature with spaces in the field names can crash QGIS | [#29630](https://github.com/qgis/QGIS/issues/29630) | [PR #29997](https://github.com/qgis/QGIS/pull/29997) | TODO
+| Crash on update pg layer                                                   | [#29814](https://github.com/qgis/QGIS/issues/29814) | duplicate                                            | N/A
+| XMDF file type missing from Madiera 3.4.5                                  | [#29381](https://github.com/qgis/QGIS/issues/29381) | invalid                                              | N/A
+| Mesh calculator: crash when \'All Selected Dataset Times\' button clicked  | [#30003](https://github.com/qgis/QGIS/issues/30003) | [PR #30005](https://github.com/qgis/QGIS/pull/30005) | N/A
+| Crash when editing fields                                                  | [#29200](https://github.com/qgis/QGIS/issues/29200) | unable to replicate                                  | N/A
+| Closing Vertex Edititor crashes the app                                    | [#30028](https://github.com/qgis/QGIS/issues/30028) | [PR #30030](https://github.com/qgis/QGIS/pull/30030) | TODO
+| Detached 3D view crash \[macOS\]                                           | [#29169](https://github.com/qgis/QGIS/issues/29169) | unable to replicate                                    
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
@@ -927,17 +845,12 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 
 ### Feature: Bug fixes by Loïc Bartoletti
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                           URL issues.qgis.org (if reported)                     URL Commit (Github)                                    3.4 backport commit (GitHub)
-  ------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------
-  No snap when selecting point of rotation                            [#29706](https://github.com/qgis/QGIS/issues/29706)   duplicate / not a bug                                  
-
-  Crashs when working with auxiliary storage label and data defined   [#30078](https://github.com/qgis/QGIS/issues/30078)   unable to replicate                                    
-
-  Improve the advanced digitizing by angle                            [#30133](https://github.com/qgis/QGIS/issues/30133)   not a bug                                              
-
-  Fix reshape for snapped point with Z                                                                                      [PR #30108](https://github.com/qgis/QGIS/pull/30108)   
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                         | URL issues.qgis.org (if reported)                   | URL Commit (Github)                                  | 3.4 backport commit (GitHub)
+|----|----|----|----|
+| No snap when selecting point of rotation                          | [#29706](https://github.com/qgis/QGIS/issues/29706) | duplicate / not a bug                                  
+| Crashs when working with auxiliary storage label and data defined | [#30078](https://github.com/qgis/QGIS/issues/30078) | unable to replicate                                    
+| Improve the advanced digitizing by angle                          | [#30133](https://github.com/qgis/QGIS/issues/30133) | not a bug                                              
+| Fix reshape for snapped point with Z                                                                                    | [PR #30108](https://github.com/qgis/QGIS/pull/30108)   
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
