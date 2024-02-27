@@ -46,7 +46,7 @@ For Facebook users, an english-speaking global community group for QGIS users ca
 
 Local QGIS user groups are a great place to meet other users.
 
-See [User Groups]({{< ref "community/organisation/groups" >}}) to read about it.
+See [User Groups]({{< ref "community/groups" >}}) to read about it.
 
 ## Website
 

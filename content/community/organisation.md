@@ -84,7 +84,7 @@ QGIS.ORG Böschacherstrasse 10a CH-8624 Grüt (Gossau ZH)
 
 ### Country Voting Members
 
-According to our statutes, for each country user group that is formed, that group will select a QGIS Country User Group Voting Member to represent their interests. These voting members are listed [here]({{< ref "/community/organisation/groups.md" >}}) . Please email [trademark@qgis.org](mailto:trademark@qgis.org) if you have registered a new country user group, or have changed your user group representative.
+According to our statutes, for each country user group that is formed, that group will select a QGIS Country User Group Voting Member to represent their interests. These voting members are listed [here]({{< ref "/community/groups.md" >}}) . Please email [trademark@qgis.org](mailto:trademark@qgis.org) if you have registered a new country user group, or have changed your user group representative.
 
 ### Community Voting Members
 
