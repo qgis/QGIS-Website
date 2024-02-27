@@ -29,13 +29,13 @@ jobs:
             echo "Curl command failed"
             exit 1
           fi
-      - name: Install playwright dependencies
+      - name: 👨‍👩‍👧 Install playwright dependencies
         working-directory: playwright/ci-test
         run: |
           npm install
           npm ci
           npx playwright install --with-deps
-      - name: Run Playwright tests
+      - name: ⚡️ Run Playwright tests
         working-directory: playwright/ci-test
         run: npx playwright test
       - uses: actions/upload-artifact@v3
