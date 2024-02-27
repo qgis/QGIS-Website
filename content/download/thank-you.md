@@ -13,7 +13,7 @@ sidebar: true
 ## Your freshly baked copy of QGIS is downloading. 
 
 {{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content-start themeClass="coloring-1" >}}
+{{< rich-content themeClass="coloring-1" >}}
 ##### Tips for first launch
 If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time.
 <a href="resources/installation-guide">

@@ -9,8 +9,8 @@ url: '/download'
 
 {{< content-start  >}}
 
-{{< rich-box mode="html" layoutClass="has-right" id="donate-prompt">}}
-{{< rich-content themeClass="coloring-2" >}}
+{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}}
+{{< rich-content-start themeClass="coloring-2" >}}
 ## Before download starts
 
 QGIS is free of charge, and will always be free of charge if downloaded from QGIS.org.
@@ -20,11 +20,11 @@ If you can afford to support the project and people making this software, please
 Our very best regards!
 
 We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.
-{{< /rich-content >}}
-{{< rich-right mode="html" >}}
+{{< rich-content-end >}}
+{{< rich-right-start mode="html" >}}
 {{< stripe-widget otherMethods="true" >}}
-{{< /rich-right >}}
-{{< /rich-box >}}
+{{< rich-right-end >}}
+{{< rich-box-end >}}
 
 {{< hide-donate-prompt >}}
 
@@ -56,12 +56,12 @@ For many flavors of GNU/Linux binary packages (rpm and deb) or software reposito
 
 Alternatively, for native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components (e.g. GDAL, PDAL, GRASS GIS) see [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
 
-{{< rich-box icon="💁" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💁" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Tips for first launch
 After installing QGIS, the first launch attempt may fail due to security protections. To enable QGIS, control-click on its icon in your Applications folder and select Open in the context menu. A confirmation dialog will display where you need to click the Open button again. This only has to be done once.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< spoiler-end >}}
 
