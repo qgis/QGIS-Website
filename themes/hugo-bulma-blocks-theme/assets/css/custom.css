@@ -54,6 +54,8 @@ label.button {
 
 a.heading-anchor {
   visibility: hidden;
+  position: absolute;
+  margin-left: 10px;
 }
 
 select {
@@ -68,4 +70,5 @@ h4:hover > a.heading-anchor,
 h5:hover > a.heading-anchor,
 h6:hover > a.heading-anchor {
   visibility: visible;
+
 }

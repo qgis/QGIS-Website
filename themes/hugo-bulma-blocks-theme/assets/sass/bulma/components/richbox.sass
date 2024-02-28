@@ -6,12 +6,16 @@
 		display: flex 
 		flex-direction: column 
 		align-items: flex-start 
-
-  h4
+  h3:nth-child(2n), h3:first-child, h2:nth-child(2n), h2:first-child, 
+    margin-top: 0.25em
+  h4:nth-child(2n), h4:first-child
+    margin-top: 0.5em
     margin-bottom: 0.2em
     font-weight: 500
   ul
     margin-top: 0.2em  
+  p:empty
+    display: none  
     
     
 .rich .cont 
@@ -89,9 +93,13 @@
 
 .coloring-3 p, .coloring-4 p, .coloring-5 p, .coloring-6 p
   color: #fff !important
+  &:after
+    background-color: #fff
 
 .coloring-3 a, .coloring-4 a, .coloring-5 a, .coloring-6 a
   color: #eee766
+  &:after
+    background-color: #fff
 
 .coloring-3
   h1, h2, h3, h4, h5, h6

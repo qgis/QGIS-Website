@@ -18,7 +18,7 @@ og_image: "img/product.jpg"
 {{< tabs tab1="Create map" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
 
 {{< columns-start id="content-tab-1" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 ![Create map](../img/create.gif "Create map")
 {{< column-end >}}
 
@@ -35,7 +35,7 @@ Create atlases and reports with maps, media and tabular content
 {{< columns-end >}}
 
 {{< columns-start id="content-tab-2" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 ![Edit map](../img/edit.gif "Edit map")
 {{< column-end >}}
 
@@ -53,7 +53,7 @@ Create user-friendly forms using our form designer
 {{< columns-end >}}
 
 {{< columns-start id="content-tab-3" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 ![visuzlize map](../img/visuzlize.gif "visuzlize map")
 {{< column-end >}}
 
@@ -71,7 +71,7 @@ Explore a diverse ecosystem of third-party analysis tools for expanded capabilit
 {{< columns-end >}}
 
 {{< columns-start id="content-tab-4" >}}
-{{< column-start class="is-flex-direction-column is-two-thirds rounded" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 ![share map](../img/share.gif "share map")
 {{< column-end >}}
 
@@ -116,7 +116,7 @@ Connect with professionals, enthusiasts, and QGIS users for networking and knowl
 {{< columns-end >}}
 
 {{< columns-start >}}
-{{< column-start class="is-flex-direction-column rounded" >}}
+{{< column-start class="is-flex-direction-column rounded  mb-4" >}}
 ![Local user groups](../img/groupss.jpg "Local user groups")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
@@ -127,7 +127,7 @@ Join a community of like-minded individuals in your region.
 {{< column-end >}}
 {{< columns-end >}}
 
-[Join the community]({{< ref "community/involve.md" >}})
+[Join the community]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
 
 ## Cross platform
 
@@ -189,7 +189,7 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 {{< columns-end >}}
 
 
-{{< rich-box-start layoutClass="has-right" mode="html" >}}
+{{< rich-box-start layoutClass="has-right mt-6 mb-6" mode="html" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ### Case Studies
 
@@ -206,7 +206,7 @@ We gather inspiring stories from actual users that showcase the versatility and 
 
 
 {{< columns-start >}}
-{{< column-start class="is-flex-direction-column is-one-third">}}
+{{< column-start class="is-flex-direction-column is-one-third mb-6">}}
 ## Maps showcase
 QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
 

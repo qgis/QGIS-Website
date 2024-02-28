@@ -14,27 +14,6 @@ SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and open source"
 ---
 
-
-<!--
-Remove string HasBanner to delete banner from page
-
-Hero Banner currently has HTML elements.
-To do: Remove the HTML element and improve the block.
-TODO 2: make adaptive and animated
-{{< box-start classes="has-background-white has-text-centered">}}
-{{< image-content-bar
-":img/logoexample.png"
-":img/logoexample.png"
-":img/logoexample.png"
-":img/logoexample.png"
-":img/logoexample.png"
-":img/logoexample.png"
-":img/logoexample.png"
-":img/logoexample.png"
->}}
-{{< box-end no-footer="true">}}
--->
-
 {{< feature
 title = "Create maps"
 text = "Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print media"
