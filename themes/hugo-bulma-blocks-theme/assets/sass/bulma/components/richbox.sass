@@ -53,6 +53,9 @@
 	z-index: 1 
 	align-self: normal 
 
+.rich-right br
+  display: none
+
 .coloring-1 
 	&::after 
 		background-image: url(img/light_blue_bg.svg) 
@@ -126,7 +129,7 @@
       margin: 0px   
 
 
-@media screen and (max-width: 1407px) 
++until-fullhd
   .rich .cont 
     padding: 40px
   .has-right 
@@ -149,7 +152,7 @@
         > .rich
           margin: 0px      
 
-@media screen and (max-width: 768px) 
++until-tablet
   .rich
     flex-direction: column-reverse
     margin: 0 

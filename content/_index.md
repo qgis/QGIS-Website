@@ -6,7 +6,7 @@ subtitle: "Giving the power of spatial visualization and decision making tools t
 draft: false
 heroSize: "is-medium"
 heroLogo: "img/logosign.svg"
-HeroImage: "img/hegobg1.png"
+HeroImage: "img/hegobg1.jpg"
 HasBanner: true
 ButtonText: "Download" 
 ButtonLink: "download/"

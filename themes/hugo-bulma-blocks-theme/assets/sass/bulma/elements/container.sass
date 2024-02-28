@@ -15,6 +15,8 @@ $container-max-width: $fullhd !default
     width: 100%
   +tablet  
     max-width: $tablet - $container-offset
+  +until-tablet
+    max-width: min($tablet, $container-max-width) - $container-offset
   +desktop
     max-width: $desktop - $container-offset
   +until-widescreen

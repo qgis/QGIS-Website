@@ -10,6 +10,7 @@ ButtonText: "Download"
 ButtonLink: "download/"
 SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and open source"
+og_image: "img/product.jpg"
 ---
 {{< content-start  >}}
 ## Key features 
