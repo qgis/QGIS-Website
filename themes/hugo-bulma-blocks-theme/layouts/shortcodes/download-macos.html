@@ -2,10 +2,14 @@
 <a
     class="button is-primary1 mb-3"
     href="https://qgis.org/downloads/macos/qgis-macos-ltr.dmg"
+    onclick="thanks(this)"
+    download
 >Long Term Version for Mac OS ({{ .ltrversion }} {{ .ltrnote }})</a>
 
 <a
     class="button is-primary1 is-outlined mb-3"
     href="https://qgis.org/downloads/macos/qgis-macos-pr.dmg"
+    onclick="thanks(this)"
+    download
 >Latest Version for Mac OS ({{ .version }})</a>
 {{ end }}

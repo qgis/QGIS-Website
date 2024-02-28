@@ -34,4 +34,12 @@ document.getElementById('primary-os').appendChild(
     document.getElementById(userOS).querySelector('.content'));
 document.getElementById(userOS).remove();
 
+function thanks(element) {
+    event.preventDefault();
+    window.open(element.href);
+    // Redirect to thank you page after a short delay
+    setTimeout(function() {
+        window.location.href += 'thank-you';
+    }, 500);
+}
 </script>
