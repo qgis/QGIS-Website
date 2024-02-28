@@ -10,7 +10,7 @@
                 {{ $data = .Content | transform.Unmarshal }}
                 {{ with $data.channel.item }}
                     {{ range . | first 1 }}
-                    <a href="/{{ .link | safeURL }}" target="_blank" rel="noopener" class="external-link">
+                    <a href="{{ .link | safeURL }}" target="_blank" rel="noopener" class="external-link">
                         {{ .title }}
                     </a>    
                     {{ end }}
