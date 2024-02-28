@@ -442,6 +442,4 @@ If you are a user of vector layer actions (small tasks that can run when you cli
 
 ![image54](images/Screen_Shot_2013-09-14_at_2.27.03_PM.png)
 
-{{< funders-simple >}}
-
 {{< content-end >}}
