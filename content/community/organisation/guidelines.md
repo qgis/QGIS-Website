@@ -136,12 +136,12 @@ QGIS does not permit using any of our Marks in the following manner: as part of 
 If in doubt, find out!
 -----------------------------------------------------------------------
 
-Many questions are answered in the FAQ below. If you are unable to locate an answer to your question, please contact our Financial and Marketing Advisor ([trademark@qgis.org](/cdn-cgi/l/email-protection#1e6a6c7f7a7b737f6c75383d2d2925383d2b2c25383d2a26256f79776d383d2a2825716c79)).
+Many questions are answered in the FAQ below. If you are unable to locate an answer to your question, please contact our Financial and Marketing Advisor (trademark@qgis.org).
 
 Report abuse
 -----------------------------------------------------
 
-If you know of people, organizations or companies using the QGIS name or logo as part of a trademark without a permission, or if you see references to QGIS without the proper attributions, please feel free to let them know about our trademark. We would appreciate if you could notify us through a mail to our Financial and Marketing Advisor ([trademark@qgis.org](/cdn-cgi/l/email-protection#1b6f697a7f7e767a69703d38282c203d382e29203d382f23206a7c72683d382f2d2074697c)).
+If you know of people, organizations or companies using the QGIS name or logo as part of a trademark without a permission, or if you see references to QGIS without the proper attributions, please feel free to let them know about our trademark. We would appreciate if you could notify us through a mail to our Financial and Marketing Advisor (trademark@qgis.org).
 
 Frequently Asked Questions
 ---------------------------------------------------------------------------------

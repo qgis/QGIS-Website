@@ -349,7 +349,7 @@ The ability to use the QGIS Authentication Manager introduced in 2.12 has been e
 
 ![image36](images/entries/thumbnails/6e8f65042bd5981e585812ce2d957d0c6055ba3f.jpg.400x300_q85_crop.jpg)
 
-This feature was funded by [Boundless Spatial](boundlessgeo.com)
+This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
 
 This feature was developed by Luigi Pirelli
 
@@ -672,7 +672,7 @@ To guarantee the long-term stability of the processing module, a new testing fra
 
 Processing geo-algorithms are executed after every change which hits the QGIS source code and the result is compared to a control dataset to guarantee correct behavior. This gives an immediate feedback about possible regressions.
 
-It is possible - and desired - that more tests are added. You can read more about [how to participate](www.opengis.ch/2016/02/04/increasing-the-stability-of-processing-algorithms/).
+It is possible - and desired - that more tests are added. You can read more about [how to participate](https://www.opengis.ch/2016/02/04/increasing-the-stability-of-processing-algorithms/).
 
 ![image63](images/entries/thumbnails/4121e58bd51cfe5c8b2c0cd14d1420eaeb1f4473.png.400x300_q85_crop.png)
 

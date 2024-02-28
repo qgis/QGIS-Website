@@ -166,7 +166,7 @@ If you try to open many sublayers, you can now open them all within a same group
 
 ![image72](images/entries/thumbnails/a64155774fee81370dfb5a786cf7386bffb7a089.png.400x300_q85_crop.png)
 
-This feature was funded by [Kartoza](www.kartoza.com)
+This feature was funded by [Kartoza](http://www.kartoza.com)
 
 This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
@@ -626,7 +626,7 @@ Grid renderer for points displacement
 
 ![image85](images/entries/thumbnails/0247dfa555b6a80139f399b69071a2cc9bd278b3.png.400x300_q85_crop.jpg)
 
-This feature was developed by [Muhammad Yarjuna Rohmat (Kartoza)](www.kartoza.com)
+This feature was developed by [Muhammad Yarjuna Rohmat (Kartoza)](http://www.kartoza.com)
 
 ## Digitising
 

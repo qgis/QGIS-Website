@@ -1138,7 +1138,7 @@ This feature was developed by Alexander Bruy
 
 | Embedded layers are duplicated after opening                                    | Unreported                                                                                                         | [PR #34311](https://github.com/qgis/QGIS/pull/34311) | [PR #34706](https://github.com/qgis/QGIS/pull/34706) |
 
-| Raise log level of server exception                                             | [Discussed on qgis-developers list](%5Dhttps://lists.osgeo.org/pipermail/qgis-developer/2020-February/060108.html) | [PR #34256](https://github.com/qgis/QGIS/pull/34256) | [PR #34539](https://github.com/qgis/QGIS/pull/34539) |
+| Raise log level of server exception                                             | [Discussed on qgis-developers list](https://lists.osgeo.org/pipermail/qgis-developer/2020-February/060108.html) | [PR #34256](https://github.com/qgis/QGIS/pull/34256) | [PR #34539](https://github.com/qgis/QGIS/pull/34539) |
 
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
