@@ -18,14 +18,21 @@
 
 {{ if or (eq $type "active") (eq $type "changelog") }}
 
-    <h2 class="subtitle">
-        Flagship
-    </h2>
-    <div class="tile is-ancestor is-vertical funders">
-        <div class="tile">
-        {{ $.Scratch.Set "counter" 0 }}
-        {{ range where $funders "Params.level" "Flagship" }}
-            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+    {{ $funders := slice }}
+    {{ range where $funders "Params.level" "Flagship" }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+            {{ $funders = $funders | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ with $funders }}
+        <h3 class="subtitle">
+            Flagship
+        </h3>
+        <div class="tile is-ancestor is-vertical funders">
+            <div class="tile">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ range . }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 3 ) 1 }}
@@ -46,18 +53,25 @@
                 </article>
             </div>
             {{ end }}
-        {{ end }}
+            </div>
         </div>
-    </div>
+    {{ end }}
 
-    <h2 class="subtitle">
-        Large
-    </h2>
-    <div class="tile is-ancestor is-vertical funders">
-        <div class="tile">
-        {{ $.Scratch.Set "counter" 0 }}
-        {{ range where $funders "Params.level" "Large" }}
-            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+    {{ $funders := slice }}
+    {{ range where $funders "Params.level" "Large" }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+            {{ $funders = $funders | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ with $funders }}
+        <h3 class="subtitle">
+            Large
+        </h3>
+        <div class="tile is-ancestor is-vertical funders">
+            <div class="tile">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ range . }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 3 ) 1 }}
@@ -79,18 +93,26 @@
                 </article>
             </div>
             {{ end }}
-        {{ end }}
+            </div>
         </div>
-    </div>
-    <h2 class="subtitle">
-        Medium
-    </h2>
+    {{ end }}
 
-    <div class="tile is-ancestor is-vertical funders">
-        <div class="tile">
-        {{ $.Scratch.Set "counter" 0 }}
-        {{ range where $funders "Params.level" "Medium" }}
-            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+    {{ $funders := slice }}
+    {{ range where $funders "Params.level" "Medium" }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+            {{ $funders = $funders | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ with $funders }}
+        <h3 class="subtitle">
+            Medium
+        </h3>
+
+        <div class="tile is-ancestor is-vertical funders">
+            <div class="tile">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ range . }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 4 ) 1 }}
@@ -112,18 +134,26 @@
                 </article>
             </div>
             {{ end }}
-        {{ end }}
-        </div>
-    </div>        
-    <h2 class="subtitle">
-        Small
-    </h2>
+            </div>
+        </div>        
+    {{ end }}
 
-    <div class="tile is-ancestor is-vertical funders">
-        <div class="tile">
-        {{ $.Scratch.Set "counter" 0 }}
-        {{ range where $funders "Params.level" "Small" }}
-            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+    {{ $funders := slice }}
+    {{ range where $funders "Params.level" "Small" }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+            {{ $funders = $funders | append . }}
+        {{ end }}
+    {{ end }}
+
+    {{ with $funders }}
+        <h3 class="subtitle">
+            Small
+        </h3>
+
+        <div class="tile is-ancestor is-vertical funders">
+            <div class="tile">
+            {{ $.Scratch.Set "counter" 0 }}
+            {{ range . }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 5 ) 1 }}
@@ -145,9 +175,9 @@
                 </article>
             </div>
             {{ end }}
-        {{ end }}
+            </div>
         </div>
-    </div>
+    {{ end }}
 
 {{ else }}
 
