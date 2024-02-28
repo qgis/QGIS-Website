@@ -57,6 +57,12 @@ function executeSearch(searchQuery) {
                 document.getElementById('search-results').innerHTML = 
                 '<p class=\"search-results-empty\">No matches found</p>';
             }
+
+            // result var may contain invalid items, and inner html remains empty. show "Not found" then
+            if (document.getElementById('search-results').innerHTML == '')
+                document.getElementById('search-results').innerHTML = 
+                    '<p class=\"search-results-empty\">No matches found</p>';
+
             hide(document.querySelector('.search-loading'));
         })
         .catch(function (err) {
