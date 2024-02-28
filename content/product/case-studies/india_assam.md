@@ -23,21 +23,21 @@ Within this landscape, the principal species of conservation importance are the 
 Starting with the year 2011, the National Tiger Conservation Authority (NTCA) of India has made it mandatory for the all the tiger reserves of the country to monitor tigers by using camera traps. Under this new protocol, 25 pairs of cameras will be installed for 100 sq km of tiger reserve and the sampling period is 40-60 days. This new tiger monitoring protocol relies heavily on the GIS.
 
 <figure>
-<img src="../images/india_assam2.png" class="align-right" alt="./images/india_assam2.png" />
+<img src="../images/india_assam2.png" class="align-right" alt="india_assam2.png" />
 <figcaption>Picture of a male tiger that was captured in one of the camera traps</figcaption>
 </figure>
 
 During 2012-13, we implemented this new tiger monitoring protocol in NTR by using QGIS. To begin with, we digitized the NTR boundary in QGIS and saved it as polygon. This boundary polygon was exported to GPS for navigation purpose during the field surveys. We conducted an extensive sign survey in NTR for evidences of tiger presence such pugmarks, scratch marks and scats. GPS coordinates of tiger signs as well as suitable locations for camera traps were recorded. After completion of the survey, the data was transferred to QGIS using GPS tools for further processing and for finalizing camera trap locations. A shape file containing the tiger signs and probable camera trap locations was prepared.
 
 <figure>
-<img src="../images/india_assam3.png" alt="./images/india_assam3.png" />
+<img src="../images/india_assam3.png" alt="india_assam3.png" />
 <figcaption>Block wise distribution of camera trap locations and assigning camera traps to different forest camps by using voronoi polygons &amp; hub distance.</figcaption>
 </figure>
 
 Next we prepared 4 sq km grid layer using mmqgis plugin. The shape file containing results of sign survey was overlaid on the 4 sq grid to visualise the distribution of camera traps in NTR. Distance matrix option under vector analysis tools was quite handy for determining the inter camera distance. Camera locations having less than 1.8 km inter distance were removed to comply with the monitoring protocol. Due to lack of sufficient cameras to monitor the entire reserve area in one go, we decided to divide the reserve area into 2 blocks of 100 sq km each. Boundaries of these blocks were digitised and saved as separate shape files for both the blocks. Using RGB composition plugin, a false color composite of the reserve was created and the sign survey shape file overlaid to assess the habitat types used by the tiger. During the study period, the camera traps have to be monitored intensively by the field staff. To ensure smooth functioning of monitoring process, we used Voronoi polygon feature of Geometry tools and hub distance of mmqgis plugin for planning logistic requirements. The geographic coordinates of camera traps are required for estimating the tiger density and occupancy modelling of other species. These coordinate details were easily generated from camera trap shape files by using the "Export/ add geometry columns" feature of vector Geometry tools.
 
 <figure>
-<img src="../images/india_assam4.png" class="align-right" alt="./images/india_assam4.png" />
+<img src="../images/india_assam4.png" class="align-right" alt="india_assam4.png" />
 <figcaption>Survey grids with tiger presence</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ For the first time in the history of this small tiger reserve of North East Indi
 ## Author
 
 <figure>
-<img src="../images/india_assamaut.png" class="align-left" height="200" alt="./images/india_assamaut.png" />
+<img src="../images/india_assamaut.png" class="align-left" height="200" alt="india_assamaut.png" />
 <figcaption>Rajendra Garawad</figcaption>
 </figure>
 

@@ -25,7 +25,7 @@ There is a question why QGIS only when other software like uDig, MapWindow, gvSI
 The applications of software during training are generally concentrated on Resource Mapping, Rural infrastructure facility mapping, Watershed and Mahatma Gandhi National Rural Employment Guarantee Scheme (MGNREGS). Watershed and MGNREGS are land based flagships of Government of India. Local Open Source Raster and Vector data are used in exercises. Participants are encouraged to come with their own or departmental data if available to work. Training is provided in lab equipped with 22 computers of i7, 4GB RAM and Windows8 OS. Per training programme number of trainees remains between 20-30.
 
 <figure>
-<img src="../images/india_guwahati1.png" class="align-left" alt="./images/india_guwahati1.png" />
+<img src="../images/india_guwahati1.png" class="align-left" alt="india_guwahati1.png" />
 <figcaption>Training course at NIRD&amp;PR-NERC, Guwahati</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ Every month training is conducted with 20-30 participants, so this number is inc
 ## Authors
 
 <figure>
-<img src="../images/india_guwahati2.png" class="align-left" alt="./images/india_guwahati2.png" />
+<img src="../images/india_guwahati2.png" class="align-left" alt="india_guwahati2.png" />
 <figcaption>Alajangi Simhachalam</figcaption>
 </figure>
 

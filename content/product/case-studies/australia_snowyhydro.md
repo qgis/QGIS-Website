@@ -19,7 +19,7 @@ The Snowy Mountains Hydro Electric Scheme, is made possible by seasonal snow fal
 Classifying snow cover over the winter months allows SHL to monitor the life cycle of the snow covered area, archive coverage areas for historical records, and provide coverage statistics to the hydrographic services team for water yield and storage forecasts.
 
 <figure>
-<img src="images/australia_snowyhydro1.jpg" class="align-center" height="43400" alt="images/australia_snowyhydro1.jpg" />
+<img src="../images/australia_snowyhydro1.jpg" class="align-center" height="43400" alt="images/australia_snowyhydro1.jpg" />
 <figcaption>Map 1.1 Snowy Water Catchment Map</figcaption>
 </figure>
 
@@ -36,24 +36,24 @@ The aim of this project is to automate the NDSI workflow as a model in the QGIS 
 The NDSI algorithm itself is quite simple (show below in Formula 1.1 - Normalised Difference Snow Index (NDSI)) and the subsequent steps required to extract snow cover in a vector format also lends itself nicely to a processing toolbox model.
 
 <figure>
-<img src="../images/australia_snowyhydro8.png" alt="./images/australia_snowyhydro8.png" />
+<img src="../images/australia_snowyhydro8.png" alt="australia_snowyhydro8.png" />
 <figcaption>Formula 1.1 - Normalised Difference Snow Index (NDSI)</figcaption>
 </figure>
 
 This NDSI algorithm will return results between -1 and 1, with the threshold for snow typically being values greater than 0.4. An example of the NDSI output is shown below (Map 1.3 - NDSI output), alongside a natural colour image (Map 1.2 - MODIS true colour) for the 13th July 2014. As seen from these images the NDSI output is very good at discriminating snow covered areas from other land cover types and clouds. It can however misclassify portions of large water bodies as snow, caused by water having absorption characteristics in the Near Infrared part of the spectrum. This characteristic of the NDSI indicates the need to incorporate a water mask at some stage in the model.
 
 <figure>
-<img src="../images/australia_snowyhydro2.jpg" class="align-left" width="300" alt="./images/australia_snowyhydro2.jpg" />
+<img src="../images/australia_snowyhydro2.jpg" class="align-left" width="300" alt="australia_snowyhydro2.jpg" />
 <figcaption>Map 1.2 - MODIS true colour</figcaption>
 </figure>
 
 <figure>
-<img src="../images/australia_snowyhydro3.jpg" class="align-center" width="300" alt="./images/australia_snowyhydro3.jpg" />
+<img src="../images/australia_snowyhydro3.jpg" class="align-center" width="300" alt="australia_snowyhydro3.jpg" />
 <figcaption>Map 1.3 - NDSI output</figcaption>
 </figure>
 
 <figure>
-<img src="../images/australia_snowyhydro4.jpg" class="align-left" width="300" alt="./images/australia_snowyhydro4.jpg" />
+<img src="../images/australia_snowyhydro4.jpg" class="align-left" width="300" alt="australia_snowyhydro4.jpg" />
 <figcaption>Map 1.4 - Recoded "Snow" vs "Non snow"</figcaption>
 </figure>
 
@@ -62,24 +62,24 @@ The NDSI output is created with some very simple band map by using the GRASS mod
 The recoded grid was then converted to a vector polygon dataset and the snow covered areas were extracted (shown below, Map 1.5 - Extracted snow). The snow covered areas were then clipped to the Snowy Water Catchment (shown below, Map - 1.6 Snow inside the SWC), then the large water bodies are masked out (shown below, Map 1.7 - Final snow covered area), and finally the area statistics for the snow covered area is generated.
 
 <figure>
-<img src="../images/australia_snowyhydro5.jpg" class="align-left" width="300" alt="./images/australia_snowyhydro5.jpg" />
+<img src="../images/australia_snowyhydro5.jpg" class="align-left" width="300" alt="australia_snowyhydro5.jpg" />
 <figcaption>Map 1.5 - Extracted Snow</figcaption>
 </figure>
 
 <figure>
-<img src="../images/australia_snowyhydro6.jpg" class="align-center" width="300" alt="./images/australia_snowyhydro6.jpg" />
+<img src="../images/australia_snowyhydro6.jpg" class="align-center" width="300" alt="australia_snowyhydro6.jpg" />
 <figcaption>Map 1.6 - Snow inside the SWC</figcaption>
 </figure>
 
 <figure>
-<img src="../images/australia_snowyhydro7.jpg" class="align-left" width="300" alt="./images/australia_snowyhydro7.jpg" />
+<img src="../images/australia_snowyhydro7.jpg" class="align-left" width="300" alt="australia_snowyhydro7.jpg" />
 <figcaption>Map 1.7 - Final snow covered area</figcaption>
 </figure>
 
 The output from the model is a vector polygon showing the snow covered area within the Snowy Water Catchment. The attributes of the polygon include the area covered by the snow and the percentage of the catchment that is covered. The model in its entirety can be seen below in \"Image 1.1 - Normalised Difference Snow Index (NDSI) QGIS processing toolbox model\".
 
 <figure>
-<img src="../images/australia_snowyhydro.png" class="align-center" width="600" alt="./images/australia_snowyhydro.png" />
+<img src="../images/australia_snowyhydro.png" class="align-center" width="600" alt="australia_snowyhydro.png" />
 <figcaption>Image 1.1 - Normalised Difference Snow Index (NDSI) QGIS processing toolbox model</figcaption>
 </figure>
 

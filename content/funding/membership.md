@@ -7,7 +7,7 @@ HasBanner: true
 sidebar: true
 HeroImage: "img/involve.jpg"
 ButtonText: "Become a Sustaining Member" 
-ButtonLink: "/funding/membership#how-become-a-sustaining-member"
+ButtonLink: "funding/membership#how-become-a-sustaining-member"
 ---
 
 {{< content-start >}}

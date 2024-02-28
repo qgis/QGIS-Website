@@ -21,7 +21,7 @@ Accessing raster/vector maps through Web Mapping Service (WMS) service is very c
 QGIS provides a tool to connect/access any WMS service. WMS connection is based on simple URL and once connection is established map can be seen on QGIS mapview. If we save the map of visible extent from QGIS mapview as jpg (File \> Save as Image) it creates world file which has the geographic coordinate information of particular region E.g. sample.jpg is the map and sample.jpgw have the coordinates. That means the downloaded image is georeferenced. We can download tiles in grid format manually and use later offline. Manual downloading is possible if the area is very small or low resolution images are fine.
 
 <figure>
-<img src="../images/india_pune1.png" class="align-left" alt="./images/india_pune1.png" />
+<img src="../images/india_pune1.png" class="align-left" alt="india_pune1.png" />
 <figcaption>QGIS with WMS tiles</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ A short script was written in "Python Console" with help available on QGIS offic
 The script works in two simple for loops first which defines the extent of map in QGIS map view and run row/columns. Once the map extent is set then map is loaded in QGIS. The delay of 3 seconds (depends on internet connection) was introduced before saving map as jpg in user defined directory. Once the script is executed all the tiles created in directory can be directly loaded in QGIS or single mosaic is prepared from Raster \> Miscellaneous \> Merge or Build Virtual Raster (Catalog). Both tools generates mosaic but basic difference in Merge creates an image independent of tiles whereas Virtual raster generates a link in all individual tiles (tiles are required).
 
 <figure>
-<img src="../images/india_pune2.png" class="align-left" alt="./images/india_pune2.png" />
+<img src="../images/india_pune2.png" class="align-left" alt="india_pune2.png" />
 <figcaption>Python script and directory where tiles are stored</figcaption>
 </figure>
 

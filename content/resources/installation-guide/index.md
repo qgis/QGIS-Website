@@ -18,7 +18,7 @@ We recommend installing the packages of the released software.
 
 To evaluate the upcoming release and to allow non-developers to support development we also provide testing packages (note the [warning](#warning)).
 
-In the feature frozen phase preceding a release (see [Release schedule](../roadmap.html#qgis-release-schedule)) these packages are effectively **pre-releases, which we strongly urge users to test**.
+In the feature frozen phase preceding a release (see [Release schedule](../roadmap#release-schedule)) these packages are effectively **pre-releases, which we strongly urge users to test**.
 
 # Windows
 
@@ -56,14 +56,12 @@ Alternatively to _Express_ you also use the _Advanced Install_, navigate to the 
 |Release|Version|Package|Description|
 |---|---|---|---|
 |Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|qgis|Release|
-|||qgis-rel-dev [[1]](#id5)|Nightly build of the upcoming point release|
+|||qgis-rel-dev [[1]](#id1)|Nightly build of the upcoming point release|
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|qgis-ltr|Release|
-|||qgis-ltr-dev [[1]](#id5)|Nightly build of the upcoming long term point release|
-|Development|{{< param "devversion" >}} master|qgis-dev [[1]](#id5)|Nightly build of the development version|
+|||qgis-ltr-dev [[1]](#id1)|Nightly build of the upcoming long term point release|
+|Development|{{< param "devversion" >}} master|qgis-dev [[1]](#id1)|Nightly build of the development version|
 
-[1] ([1](#id2),[2](#id3),[3](#id4))
-
-Nightlies are debug builds (including debugging output)
+{{< footnote "1" >}} Nightlies are debug builds (including debugging output)
 
 The packages listed in the table only install the necessary packages to run QGIS. Corresponding to those packages there are also meta packages with the postfix `-full-free` and `-full`. The former contains additional optional dependencies that some popular - not included - plugins use and the latter include the former and also add proprietary extensions like Oracle, ECW and MrSID.
 
@@ -183,16 +181,16 @@ Lines of packages:
 | ---- | ---- | ---- | ---- |
 | Latest Release | {{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}} | Release for **Debian and Ubuntu** | https://qgis.org/debian <br> https://qgis.org/ubuntu |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | https://qgis.org/ubuntugis-nightly-release |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id5) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly-release |  |  |
 | Long Term Release Repository | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | Release for **Debian and Ubuntu** | https://qgis.org/debian-ltr https://qgis.org/ubuntu-ltr |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id12) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id12) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
-| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[5]](#id12) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
-||| Nightly build with ubuntugis-unstable dependencies [[5]](#id12) | https://qgis.org/ubuntugis-nightly |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id5) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
+| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[5]](#id5) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+||| Nightly build with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly |  |  |
 
-[5] ([1](#id6),[2](#id7),[3](#id8),[4](#id9),[5](#id10),[6](#id11)) nightlies are debug builds (including debug output)
+{{< footnote "5" >}} Nightlies are debug builds (including debugging output)
 
 <small>
 Next point release: {{< param "nextpointreleasedate" >}}
@@ -209,14 +207,12 @@ Next release: {{< param "nextreleasedate" >}}
 |Debian|12.x (stable)|bookworm||
 ||11.x (oldstable)|bullseye||
 ||unstable|sid||
-|Ubuntu|24.04 (LTS) [[6]](#id14)|noble||
+|Ubuntu|24.04 (LTS) [[6]](#id6)|noble||
 ||23.10|mantic||
 ||23.04|lunar||
 ||22.04 (LTS)|jammy|yes|
 
-[[6](#id13)]
-
-future ubuntu release planned for 2024-04-25
+{{< footnote "6" >}} future ubuntu release planned for 2024-04-25
 
 To use the qgis archive you have to first add the archive’s repository public key:
 
@@ -329,7 +325,7 @@ sudo dnf install qgis-server python3-qgis
 |Distribution|Version|QGIS version|GRASS GIS version|
 |---|---|---|---|
 |Fedora|36|3.28|8.0|
-|37|3.28|8.2|
+||37|3.28|8.2|
 
 More information are available at https://copr.fedorainfracloud.org/coprs/dani/qgis/
 
@@ -356,7 +352,7 @@ sudo dnf install qgis-server python3-qgis
 |Distribution|Version|QGIS version|GRASS GIS version|
 |---|---|---|---|
 |Fedora|36|3.22|8.0|
-|37|3.22|8.2|
+||37|3.22|8.2|
 
 More information are available at https://copr.fedorainfracloud.org/coprs/dani/qgis-ltr/
 

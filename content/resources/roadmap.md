@@ -8,6 +8,7 @@ sidebar: true
 {{< content-start  >}}
 
 # Road Map
+{{< roadmap >}}
 
 Releases and development of QGIS follow a timebased schedule (roadmap).
 

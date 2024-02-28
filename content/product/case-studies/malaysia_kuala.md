@@ -21,7 +21,7 @@ The Federal Department of Town and Country Planning, Peninsular Malaysia (JPBD) 
 QGIS was first introduced to the Malaysian Open Source community as a viable alternative to proprietary GIS for public agencies by JPBD at the Malaysian Government Open Source Conference (MyGOSSCON) in 2009 and to the Malaysian GIS community at the 4th National GIS Conference and Exhibition (NGIS) in 2010. JPBD has traditionally been a user of proprietary GIS thus the introduction of QGIS was a real eye opener not only from the point-of-view of Open Source Software (OSS), what more, OSS GIS. Open source philosophy was different thus QGIS felt alien, unsure and unsafe, not surprisingly the idea to use QGIS did not receive much support internally, in fact, it faced resistance in 2010 from the top managment all the way down to the support group.
 
 <figure>
-<img src="../images/malaysia_kuala1.png" class="align-right" alt="./images/malaysia_kuala1.png" />
+<img src="../images/malaysia_kuala1.png" class="align-right" alt="malaysia_kuala1.png" />
 <figcaption>MyGOSSCON, 2009</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ The study highlighted pros and cons of customizing a module and the high level o
 The department eventually promoted the QGIS-GRASS package instead of merely QGIS as it was found to be most powerful and helpful for town planning purposes such as cleaning topology error and overcoming limitations of the default standard inputs. That was merely the beginning.
 
 <figure>
-<img src="../images/malaysia_kuala2.png" class="align-right" alt="./images/malaysia_kuala2.png" />
+<img src="../images/malaysia_kuala2.png" class="align-right" alt="malaysia_kuala2.png" />
 <figcaption>Northern Project Office get QGIS training</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ That is not all. States town planning departments have also requested QGIS train
 ## Author
 
 <figure>
-<img src="../images/malaysia_kualaaut.jpg" class="align-left" height="200" alt="./images/malaysia_kualaaut.jpg" />
+<img src="../images/malaysia_kualaaut.jpg" class="align-left" height="200" alt="malaysia_kualaaut.jpg" />
 <figcaption>Abbas Abdul Wahab</figcaption>
 </figure>
 

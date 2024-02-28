@@ -29,14 +29,14 @@ Back in 2008, we came up with the idea of exploring GIS technologies to support 
 QGIS was the mainframe of all the project. Data was dumped directly to QGIS, and then edited and manipulated in order to achieve the desired outputs. The GRASS interface provided by QGIS allowed us to conduct complex spatial analyis on rasters in order to obtain the risk model we needed to plan our field work and future prospection. Furthermore it allowed us to import PostGIS layers and visualize them on QGIS.
 
 <figure>
-<img src="../images/portugal_torres2.jpg" class="align-right" alt="./images/portugal_torres2.jpg" />
+<img src="../images/portugal_torres2.jpg" class="align-right" alt="portugal_torres2.jpg" />
 <figcaption>Vector point data editing and visualization</figcaption>
 </figure>
 
 The choice for QGIS was also encouraged by the multi platform support. The institution has three distinct facilities, and each of those facilities has different systems — we have Mac, Windows PC and Linux PC, therefore it\'s of extreme importance that we have the freedom to install the software on any machine we want so we don\'t get stuck to a particular computer.
 
 <figure>
-<img src="../images/portugal_torres3.jpg" class="align-right" alt="./images/portugal_torres3.jpg" />
+<img src="../images/portugal_torres3.jpg" class="align-right" alt="portugal_torres3.jpg" />
 <figcaption>Paleontological Risk Map</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ The overall experience with QGIS can only be rated has being very good and recom
 ## Author
 
 <figure>
-<img src="../images/portugal_torresaut.png" class="align-left" height="200" alt="./images/portugal_torresaut.png" />
+<img src="../images/portugal_torresaut.png" class="align-left" height="200" alt="portugal_torresaut.png" />
 <figcaption>André Mano</figcaption>
 </figure>
 

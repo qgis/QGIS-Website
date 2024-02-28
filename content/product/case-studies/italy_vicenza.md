@@ -17,7 +17,7 @@ Montecchio Maggiore is a small town in the middle west of Vicenza (about 24.000 
 ## The task
 
 <figure>
-<img src="../images/italy_vicenza1.png" class="align-right" alt="./images/italy_vicenza1.png" />
+<img src="../images/italy_vicenza1.png" class="align-right" alt="italy_vicenza1.png" />
 <figcaption>Workflow Schema</figcaption>
 </figure>
 
@@ -40,14 +40,14 @@ For every graphic thematic maps were produced using the attribute and data retri
 Thus a photo was linked to every building facilitating the design and analisys in the gis project (using the "action" feature). The SQL tools (pgquery, postgis manager, dbmanager et al.) allowed to obtain very sophisticated query immediately viewable in the map canvas such as: volume calculation split by building intended use, standards area calculation in percentage of the total planning area and other minor queries. All useful items for the design and planning study otherwise not possible without a very strength tool like gis (and QGIS in particular).
 
 <figure>
-<img src="../images/italy_vicenza2.png" class="align-right" alt="./images/italy_vicenza2.png" />
+<img src="../images/italy_vicenza2.png" class="align-right" alt="italy_vicenza2.png" />
 <figcaption>QGIS project with building data viewing</figcaption>
 </figure>
 
 Finally a synthesis report for every building were produced using libreoffice suite. The report consists in a schedule summarise with photo, cartography extract which localize the building in the contest and data of the present state.
 
 <figure>
-<img src="../images/italy_vicenza3.png" class="align-right" alt="./images/italy_vicenza3.png" />
+<img src="../images/italy_vicenza3.png" class="align-right" alt="italy_vicenza3.png" />
 <figcaption>QGIS print composer for final graphic layout</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ And last but not least: we worked on different platform (Windows 7 64 bit, Windo
 ## Author
 
 <figure>
-<img src="../images/italy_vicenzaaut.png" class="align-left" height="200" alt="./images/italy_vicenzaaut.png" />
+<img src="../images/italy_vicenzaaut.png" class="align-left" height="200" alt="italy_vicenzaaut.png" />
 <figcaption>Flavio Rigolon</figcaption>
 </figure>
 
