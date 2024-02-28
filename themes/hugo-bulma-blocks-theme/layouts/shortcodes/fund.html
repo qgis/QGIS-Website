@@ -18,14 +18,14 @@
 
 {{ if or (eq $type "active") (eq $type "changelog") }}
 
-    {{ $funderss := slice }}
+    {{ $funders := slice }}
     {{ range where $funders "Params.level" "Flagship" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
-            {{ $funderss = $funderss | append . }}
+            {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
 
-    {{ with $funderss }}
+    {{ with $funders }}
         <h3 class="subtitle">
             Flagship
         </h3>
@@ -57,14 +57,14 @@
         </div>
     {{ end }}
 
-    {{ $funderss := slice }}
+    {{ $funders := slice }}
     {{ range where $funders "Params.level" "Large" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
-            {{ $funderss = $funderss | append . }}
+            {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
 
-    {{ with $funderss }}
+    {{ with $funders }}
         <h3 class="subtitle">
             Large
         </h3>
@@ -97,14 +97,14 @@
         </div>
     {{ end }}
 
-    {{ $funderss := slice }}
+    {{ $funders := slice }}
     {{ range where $funders "Params.level" "Medium" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
-            {{ $funderss = $funderss | append . }}
+            {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
 
-    {{ with $funderss }}
+    {{ with $funders }}
         <h3 class="subtitle">
             Medium
         </h3>
@@ -138,14 +138,14 @@
         </div>        
     {{ end }}
 
-    {{ $funderss := slice }}
+    {{ $funders := slice }}
     {{ range where $funders "Params.level" "Small" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
-            {{ $funderss = $funderss | append . }}
+            {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
 
-    {{ with $funderss }}
+    {{ with $funders }}
         <h3 class="subtitle">
             Small
         </h3>
