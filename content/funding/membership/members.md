@@ -20,7 +20,7 @@ For information on becoming a sustaining member, please visit [Sustaining Member
 {{< rich-box-end >}}
 
 
-{{< fund status="active" >}}
+{{< fund type="active" >}}
 
 
 

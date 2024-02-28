@@ -1,7 +1,22 @@
+{{ $funders := 0 }}
+{{ $logoPath := 0 }}
 
-{{  $status := .Get "status"  }}
+{{ $type := .Get "type"  }}
 
-{{ if eq $status "active" }}
+{{ if eq $type "changelog" }}
+	{{ $funders = .Page.Resources.Match "funders/*md" }}
+    {{ $logoPath = absURL "img/contributors/" }}
+{{ else }}
+	{{ $headlessbundle := .Site.GetPage "/funders" }}
+	{{ $funders = ( $headlessbundle.Resources.ByType "page" ) }}
+    {{ $logoPath = absURL "funders/" }}
+{{ end }}
+
+{{ with .Get "relativeImgPath" }}
+    {{ $logoPath = "" }}
+{{ end }}
+
+{{ if or (eq $type "active") (eq $type "changelog") }}
 
     <h2 class="subtitle">
         Flagship
@@ -9,17 +24,12 @@
     <div class="tile is-ancestor is-vertical funders">
         <div class="tile">
         {{ $.Scratch.Set "counter" 0 }}
-        {{ $headlessbundle := .Site.GetPage "/funders" }}
-        {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-        {{ if eq .Params.level "Flagship" }}
-            {{ $startDate := time .Params.startDate }}
-            {{ $endDate := time .Params.endDate }}
-            {{ if ge $endDate now }}
+        {{ range where $funders "Params.level" "Flagship" }}
+            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 3 ) 1 }}
                         {{ if gt $count 1 }}
-        </div>
         <div class="tile">
                         {{ end }}
                     {{ end }}
@@ -28,14 +38,13 @@
                     
                     <a href="{{ .Params.link }}">
                         <figure>
-                            <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                            <img src="{{ $logoPath }}{{ .Params.logo }}" alt="{{ .Params.title }}">
                         </figure>
                         <h3 class="title is-5">{{ .Params.title }}</h3>
                         <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
                     </a>
                 </article>
             </div>
-                {{ end }}
             {{ end }}
         {{ end }}
         </div>
@@ -47,12 +56,8 @@
     <div class="tile is-ancestor is-vertical funders">
         <div class="tile">
         {{ $.Scratch.Set "counter" 0 }}
-        {{ $headlessbundle := .Site.GetPage "/funders" }}
-        {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-        {{ if eq .Params.level "Large" }}
-            {{ $startDate := time .Params.startDate }}
-            {{ $endDate := time .Params.endDate }}
-            {{ if ge $endDate now }}
+        {{ range where $funders "Params.level" "Large" }}
+            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 3 ) 1 }}
@@ -66,14 +71,13 @@
                     
                     <a href="{{ .Params.link }}">
                         <figure>
-                            <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                            <img src="{{ $logoPath }}{{ .Params.logo }}" alt="{{ .Params.title }}">
                         </figure>
                         <h3 class="title is-5">{{ .Params.title }}</h3>
                         <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
                     </a>
                 </article>
             </div>
-                {{ end }}
             {{ end }}
         {{ end }}
         </div>
@@ -85,12 +89,8 @@
     <div class="tile is-ancestor is-vertical funders">
         <div class="tile">
         {{ $.Scratch.Set "counter" 0 }}
-        {{ $headlessbundle := .Site.GetPage "/funders" }}
-        {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-        {{ if eq .Params.level "Medium" }}
-            {{ $startDate := time .Params.startDate }}
-            {{ $endDate := time .Params.endDate }}
-            {{ if ge $endDate now }}
+        {{ range where $funders "Params.level" "Medium" }}
+            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 4 ) 1 }}
@@ -103,7 +103,7 @@
                 <article class="tile is-child box notification fund-medium">
                     <a href="{{ .Params.link }}">
                         <figure>
-                            <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                            <img src="{{ $logoPath }}{{ .Params.logo }}" alt="{{ .Params.title }}">
                         </figure>
                         <h3 class="title is-5">{{ .Params.title }}</h3>
                         <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
@@ -111,7 +111,6 @@
                     </a>
                 </article>
             </div>
-                {{ end }}
             {{ end }}
         {{ end }}
         </div>
@@ -123,12 +122,8 @@
     <div class="tile is-ancestor is-vertical funders">
         <div class="tile">
         {{ $.Scratch.Set "counter" 0 }}
-        {{ $headlessbundle := .Site.GetPage "/funders" }}
-        {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-        {{ if eq .Params.level "Small" }}
-            {{ $startDate := time .Params.startDate }}
-            {{ $endDate := time .Params.endDate }}
-            {{ if ge $endDate now }}
+        {{ range where $funders "Params.level" "Small" }}
+            {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                     {{ if eq ( mod $count 5 ) 1 }}
@@ -141,7 +136,7 @@
                 <article class="tile is-child box notification fund-small">
                     <a href="{{ .Params.link }}">
                         <figure >
-                            <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                            <img src="{{ $logoPath }}{{ .Params.logo }}" alt="{{ .Params.title }}">
                         </figure>
                         <h3 class="title is-5">{{ .Params.title }}</h3>
                         <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
@@ -149,22 +144,17 @@
                     </a>
                 </article>
             </div>
-                {{ end }}
             {{ end }}
         {{ end }}
         </div>
     </div>
 
-{{ end }}
-
-{{ if eq $status "inactive" }}
+{{ else }}
 
 <div class="tile is-ancestor is-vertical funders">
     <div class="tile">
     {{ $.Scratch.Set "counter" 0 }}
-    {{ $headlessbundle := .Site.GetPage "/funders" }}
-    {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-        {{ $startDate := time .Params.startDate }}
+    {{ range $funders }}
         {{ $endDate := time .Params.endDate }}
         {{ if le $endDate now }}
             {{ $count := add ($.Scratch.Get "counter") 1 }}
@@ -179,7 +169,7 @@
             <article class="tile is-child box notification fund-small past">
                 <a href="{{ .Params.link }}">
                     <figure >
-                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                        <img src="{{ $logoPath }}{{ .Params.logo }}" alt="{{ .Params.title }}">
                     </figure>
                     <h3 class="title is-5">{{ .Params.title }}</h3>
                     <article class="subtitle is-7">{{ .Params.startDate }} - {{ .Params.endDate }}</article>
