@@ -1,3 +1,7 @@
+---
+draft: true
+---
+
 When was the application last updated?
 QGIS release cycle is publicly available at https://qgis.org/en/site/getinvolved/development/roadmap.html#release.
 We do security releases each month for Long Term Version and Release version (with some variations during the release candidate phase). That means, you can act on QGIS's project and benefit from fixed versions. However, we have quarantine rules to ensure bugfixes are not triggering regressions.

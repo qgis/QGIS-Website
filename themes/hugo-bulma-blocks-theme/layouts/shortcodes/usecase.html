@@ -1,7 +1,7 @@
 {{ range (where .Site.Pages "Section" "product") }}
 {{ range (where .Pages "SectionsPath" "product/case-studies") | first 1 }}
 <a class="rich-list has-image mr-2 mb-2" href="{{ .RelPermalink }}" >
-    <div class="image"><img src="../case-studies/{{ .Params.thumbnail }}"></div>
+    <div class="image"><img src="{{ absURL "/product/case-studies/" }}{{ .Params.thumbnail }}"></div>
 <div class="listcont ">{{.Title}}</div>
 <div class="subtext is-size-7">{{ .Params.description }}</div>
 </a>

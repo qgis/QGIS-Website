@@ -23,19 +23,19 @@ As of February 2013, the MOHAP database contained 31,495 entries representing th
 The process of creating maps with QGIS starts with data stored in several PostgreSQL tables, spatially-enabled with PostGIS. Because maps are static and ultimately destined for either the web or a printed atlas, they are generated automatically for each species using a custom QGIS Python plugin (Figures 1,2).
 
 <figure>
-<img src="../images/usa_missouri1.png" class="align-right" alt="./images/usa_missouri1.png" />
+<img src="../images/usa_missouri1.png" class="align-right" alt="usa_missouri1.png" />
 <figcaption>Custom map generation and export user interface, maps are generated and exported in a batch process.</figcaption>
 </figure>
 
 The final species maps have a clean and professional appearance (Figure 3). To better understand species\' distributions, a series of base maps are also created and labelled (Figure 4). Because of the way styles are managed within each data layer, the base map layers can also be incorporated into a set of species maps with little extra effort.
 
 <figure>
-<img src="../images/usa_missouri2.png" class="align-right" alt="./images/usa_missouri2.png" />
+<img src="../images/usa_missouri2.png" class="align-right" alt="usa_missouri2.png" />
 <figcaption>Maps are displayed as static images.</figcaption>
 </figure>
 
 <figure>
-<img src="../images/usa_missouri3.png" class="align-right" alt="./images/usa_missouri3.png" />
+<img src="../images/usa_missouri3.png" class="align-right" alt="usa_missouri3.png" />
 <figcaption>Labelled Level III Ecoregion map for Missouri and surrounding states.</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ Although we use QGIS in a small and specific way, its capabilities and extensibi
 ## Author
 
 <figure>
-<img src="../images/usa_missouriaut.jpg" class="align-left" height="200" alt="./images/usa_missouriaut.jpg" />
+<img src="../images/usa_missouriaut.jpg" class="align-left" height="200" alt="usa_missouriaut.jpg" />
 <figcaption>Brian Edmond</figcaption>
 </figure>
 

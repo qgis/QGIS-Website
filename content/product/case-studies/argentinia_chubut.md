@@ -39,7 +39,7 @@ To generate the project we continue the following methodology:
 -   Results presentation through thematic cartography.
 
 <figure>
-<img src="../images/argentinia_chubut1.png" class="align-right" alt="./images/argentinia_chubut1.png" />
+<img src="../images/argentinia_chubut1.png" class="align-right" alt="argentinia_chubut1.png" />
 <figcaption>Attribute table of “blocks” vector layer</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ Based in the projection of an average value of 4 inhabitants by cadastral plot, 
 The total inventoried green areas grow up to 150.736 m^2^ (15 hectares). Reason why we can consider that the green area by inhabitant in the study area is 15.7 m^2^ (the WHO suggested value is 9 m^2^ of green area by inhabitant). This value proves a very favorable situation, as far as the environmental benefits, that trees offer to the inhabitants in this marine coastal town.
 
 <figure>
-<img src="../images/argentinia_chubut2.png" class="align-right" alt="./images/argentinia_chubut2.png" />
+<img src="../images/argentinia_chubut2.png" class="align-right" alt="argentinia_chubut2.png" />
 <figcaption>Distribution of urban green spaces (green) and population density by blocks (white to brown) at Rada Tilly coastal town, Chubut Provinc, Argentina.</figcaption>
 </figure>
 
@@ -63,14 +63,14 @@ After the project experience we can assure that the FOSS QGIS is an extremely re
 This article was contributed in September 2011 by Mauro Novara and Alberto Vázquez from Argentina.
 
 <figure>
-<img src="../images/argentinia_chubutaut1.png" class="align-left" height="200" alt="./images/argentinia_chubutaut1.png" />
+<img src="../images/argentinia_chubutaut1.png" class="align-left" height="200" alt="argentinia_chubutaut1.png" />
 <figcaption>Mauro Novara</figcaption>
 </figure>
 
 Mauro Novara is Professor of Territorial Information Systems course. Lecturer and researcher of National University of Patagonia San Juan Bosco, Faculty of Humanities and Social Sciences. Geography Department. Comodoro Rivadavia, Chubut Province, Argentina.
 
 <figure>
-<img src="../images/argentinia_chubutaut2.png" class="align-left" height="200" alt="./images/argentinia_chubutaut2.png" />
+<img src="../images/argentinia_chubutaut2.png" class="align-left" height="200" alt="argentinia_chubutaut2.png" />
 <figcaption>Alberto Vázquez</figcaption>
 </figure>
 

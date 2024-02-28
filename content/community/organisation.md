@@ -219,7 +219,7 @@ Find the list of documentation and website translators at: [https://github.com/q
 
 Current Translation Team Lead: Werner Macho
 
-The QGIS Translation is managed by the Community Assistant (Translation Team Lead) and supported by additional language specific teams. Information about the current documentation status and the translation process are provided at the [Translators Corner](../translate.html#translate-qgis).
+The QGIS Translation is managed by the Community Assistant (Translation Team Lead) and supported by additional language specific teams. Information about the current documentation status and the translation process are provided at the [Translators Corner](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html).
 
 Contact : [qgis-community-team](http://lists.osgeo.org/mailman/listinfo/qgis-community-team) list or [QGIS Translation Mailing list](http://lists.osgeo.org/mailman/listinfo/qgis-tr)
 

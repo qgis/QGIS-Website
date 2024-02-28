@@ -39,7 +39,7 @@ In general, our experience with QGIS has been very positive, the software runs s
 ## Author
 
 <figure>
-<img src="../images/portugal_lisbonaut.jpg" class="align-left" height="200" alt="./images/portugal_lisbonaut.jpg" />
+<img src="../images/portugal_lisbonaut.jpg" class="align-left" height="200" alt="portugal_lisbonaut.jpg" />
 <figcaption>Filipe Dias</figcaption>
 </figure>
 

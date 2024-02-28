@@ -49,7 +49,7 @@ Bugs are often fixed within hours or days after reporting and new developments a
 ## Author
 
 <figure>
-<img src="../images/suisse_usteraut.jpg" class="align-left" height="200" alt="./images/suisse_usteraut.jpg" />
+<img src="../images/suisse_usteraut.jpg" class="align-left" height="200" alt="suisse_usteraut.jpg" />
 <figcaption>Andreas Neumann</figcaption>
 </figure>
 

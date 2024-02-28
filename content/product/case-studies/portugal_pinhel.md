@@ -23,21 +23,21 @@ After an extensive suite of tests to the methodology, and three years of real ap
 > ![](../images/portugal_pinhel1.jpg)
 
 <figure>
-<img src="../images/portugal_pinhel2.jpg" class="align-right" alt="./images/portugal_pinhel2.jpg" />
+<img src="../images/portugal_pinhel2.jpg" class="align-right" alt="portugal_pinhel2.jpg" />
 <figcaption>Forest Fire Hazard and Risk Maps of Pinhel, implemented with Open Source Software.</figcaption>
 </figure>
 
 In a second phase, it was tried to speed up this process, using models to establish a workflow that perform a wide set of tasks, almost without human intervention. This second stage consisted essentially in the automation of the entire procedure described in practical guide which resulted from the first phase. Such automation could mean a reduction of several hours of intense work on the part of the technician who intends to produce annually Forest Defense Plans, for just a few minutes, in which the human intervention boils down to the selection of input data and the indication of the place where we intend to keep the output data.
 
 <figure>
-<img src="../images/portugal_pinhel3.png" class="align-right" alt="./images/portugal_pinhel3.png" />
+<img src="../images/portugal_pinhel3.png" class="align-right" alt="portugal_pinhel3.png" />
 <figcaption>Interface of the Sextante Model to calculate the Probability of the Forest Fire Hazard.</figcaption>
 </figure>
 
 In furtherance of this second phase, we used the Python version of Sextante software, that works integrated into QGIS and adds a broad set of independent applications (GRASS GIS, SAGA GIS, OTB, R, GDAL/OGR, Pymorph, LASTools, Python scrips, etc..) in a single interface, providing a huge geoprocessing toolbox to QGIS users. Besides the integration of these applications in QGIS, Sextante has a tool for creating models, taking advantage of the modules offered by any of those softwares which aggregates. So, we\'ve created a model to automate the process of producing Forest Fire Hazard and Risk maps, using GRASS, SAGA, fTools and MMQGIS tools.
 
 <figure>
-<img src="../images/portugal_pinhel4.png" class="align-right" alt="./images/portugal_pinhel4.png" />
+<img src="../images/portugal_pinhel4.png" class="align-right" alt="portugal_pinhel4.png" />
 <figcaption>Part of the model developed for automation of the production of cartography for Forest Fire Hazard and Risk.</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ The fact that Open Source Software is based on standards and support most of the
 ## Author
 
 <figure>
-<img src="../images/portugal_pinhelaut.png" class="align-left" height="200" alt="./images/portugal_pinhelaut.png" />
+<img src="../images/portugal_pinhelaut.png" class="align-left" height="200" alt="portugal_pinhelaut.png" />
 <figcaption>Pedro Venâncio</figcaption>
 </figure>
 

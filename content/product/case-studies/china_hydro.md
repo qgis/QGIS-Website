@@ -43,7 +43,7 @@ I began using QGIS out of desperation for lack of arcMAP but now I never want to
 ## Author
 
 <figure>
-<img src="../images/china_hydro6.jpg" class="align-left" height="220" alt="./images/china_hydro6.jpg" />
+<img src="../images/china_hydro6.jpg" class="align-left" height="220" alt="china_hydro6.jpg" />
 <figcaption>Robert Ward</figcaption>
 </figure>
 

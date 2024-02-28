@@ -120,7 +120,7 @@ Goals of a user group
     
 *   Initialization/coordination of application modules, e.g. surveying, urban planning, server/web client, etc.
     
-*   Electing a representative to act as a [QGIS Country Voting Member](../getinvolved/governance/governance.html#country-voting-members)
+*   Electing a representative to act as a [QGIS Country Voting Member]({{< ref "/community/organisation#voting-members" >}})
     
 
 General assumptions/recommendations

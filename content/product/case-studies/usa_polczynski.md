@@ -21,28 +21,28 @@ Jankowski's map also shows boundaries for six provinces and 43 districts. HGC lo
 Terrain elevation data (Shuttle Radar Topography Mission (SRTM) data, available at <https://lta.cr.usgs.gov/SRTM1Arc>) was incorporated into a base map of the region covered by Jankowski's map. District and province boundaries were approximated using Jankowski's map plus terrain features such as rivers, ridge lines, and valleys where boundaries on Jankowski' map were difficult to trace. Gazetteer locations for rivers are river mouth latitude and longitude taken from the GeoNames database. Per Table 1, the HGC includes three separate sets of databases which can be accessed at <http://epublications.marquette.edu/ottoman_crimea/>. This website also provides access to a project named HGC-QGIS-Project.qgs. Opening the project in QGIS yields the result shown in Figure 1. For the KML and shape file rivers databases, rivers were traced in QGIS using the Google Maps physical map.
 
 <figure>
-<img src="../images/usa_polczynski_table1.png" class="align-right" alt="./images/usa_polczynski_table1.png" />
+<img src="../images/usa_polczynski_table1.png" class="align-right" alt="usa_polczynski_table1.png" />
 <figcaption>Table 1: Gazetteer databases</figcaption>
 </figure>
 
 Opening the project in QGIS yields the result shown in Figure 1. For the KML and shape file rivers databases, rivers were traced in QGIS using the Google Maps physical map.
 
 <figure>
-<img src="../images/usa_polczynski_figure1.png" class="align-right" alt="./images/usa_polczynski_figure1.png" />
+<img src="../images/usa_polczynski_figure1.png" class="align-right" alt="usa_polczynski_figure1.png" />
 <figcaption>Figure 1: HGC-QGIS-Project.qgs opened in QGIS.</figcaption>
 </figure>
 
 Table 2 shows the HGC database fields. Note the manner in which a unique ID is assigned to each place in the database. Since each Jankowski place is associated with a place in the GeoNames database, and since each place in the GeoNames database has a unique ID given as a URL, the GeoNames URL for the place serves as a unique identifier for the HGC place.
 
 <figure>
-<img src="../images/usa_polczynski_table2.png" class="align-right" alt="./images/usa_polczynski_table2.png" />
+<img src="../images/usa_polczynski_table2.png" class="align-right" alt="usa_polczynski_table2.png" />
 <figcaption>Table 2: HGC database fields.</figcaption>
 </figure>
 
 Note that the ID can be opened in a web browser, thereby automatically displaying a GeoNames map with the populated place at its center, as shown in Figure 2.
 
 <figure>
-<img src="../images/usa_polczynski_figure2.png" class="align-right" alt="./images/usa_polczynski_figure2.png" />
+<img src="../images/usa_polczynski_figure2.png" class="align-right" alt="usa_polczynski_figure2.png" />
 <figcaption>Figure 2: Opening the URL ID for Qarağy in a web browser.</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ While providing a useful gazetteer, a primary purpose of the HGC was to serve as
 Figure 3: Michael and Mark Polczynski
 
 <figure>
-<img src="../images/usa_polczynski_authors.jpg" class="align-left" alt="./images/usa_polczynski_authors.jpg" />
+<img src="../images/usa_polczynski_authors.jpg" class="align-left" alt="usa_polczynski_authors.jpg" />
 <figcaption>Michael and Mark Polczynski</figcaption>
 </figure>
 
