@@ -26,7 +26,7 @@ QGIS has a lot of documentation. All documentation is in English but some docume
 
 You will find documentation for every QGIS long term release on the respective documentation website.
 
-[Get involved](/community/involve/) and help us write a better documentation.
+[Get involved]({{< ref "/community/involve" >}}) and help us write a better documentation.
 
 {{< tabs tab1="QGIS 3.28" tab2="QGIS 3.34" tab3="QGIS testing" tab4="Archived releases">}}
 
@@ -130,7 +130,7 @@ We are still updating (not translating yet) the documentation for releases newer
 
 The QGIS community offers a wealth of excellent websites with support forums.
 
-{{< button class = "is-primary6" link = "/resources/support" text = "View support options" >}} 
+{{< button class = "is-primary6" link = "resources/support" text = "View support options" >}} 
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
