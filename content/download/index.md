@@ -38,16 +38,16 @@ We use the stripe.com service to receive credit card donations. Note that the pa
 {{< spoiler-start id="download-linux" title="Download for Linux" >}}
 For many flavors of GNU/Linux binary packages (rpm and deb) or software repositories (to add to your installation manager) are available. Please select your choice of distro below:
 
-- [Debian/Ubuntu](../resources/installation-guide#debian-ubuntu)
-- [Fedora](../resources/installation-guide#fedora)
-- [openSUSE](../resources/installation-guide#suse-opensuse)
-- [Mandriva](../resources/installation-guide#mandriva)
-- [Slackware](../resources/installation-guide#slackware)
-- [Arch Linux](../resources/installation-guide#arch-linux)
-- [Flatpak](../resources/installation-guide#flatpak)
-- [Spack](../resources/installation-guide#spack)
+- [Debian/Ubuntu]({{< ref "resources/installation-guide#debian-ubuntu" >}})
+- [Fedora]({{< ref "resources/installation-guide#fedora" >}})
+- [openSUSE]({{< ref "resources/installation-guide#suse-opensuse" >}})
+- [Mandriva]({{< ref "resources/installation-guide#mandriva" >}})
+- [Slackware]({{< ref "resources/installation-guide#slackware" >}})
+- [Arch Linux]({{< ref "resources/installation-guide#arch-linux" >}})
+- [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
+- [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux Installation Instructions](../resources/installation-guide#linux)
+[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
 {{< spoiler-end >}}
 
 
@@ -67,7 +67,7 @@ After installing QGIS, the first launch attempt may fail due to security protect
 
 
 {{< spoiler-start id="download-bsd" title="Download for BSD" >}}
-[BSD Installation Instructions](../resources/installation-guide#freebsd)
+[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
 {{< spoiler-end >}}
 
 
