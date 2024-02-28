@@ -623,7 +623,7 @@ In layout profiles, there is an additional option which controls where the dista
 -   display for the last value
 -   display for both the first and last values.
 
-Note that it is currently not possible to expose unit selection for the vertical axis, as this is currently dimensionless and will require the development of vertical CRS handling in QGIS as outlined in [QEP 267](See%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267).
+Note that it is currently not possible to expose unit selection for the vertical axis, as this is currently dimensionless and will require the development of vertical CRS handling in QGIS as outlined in [QEP 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267).
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -908,8 +908,8 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 | Bug Title                                                                 | URL issues (Github, if reported)                    | URL Commit (Github)                                                     | 3.28 backport commit (GitHub)
 |----|----|----|----|
 | GeoJSON IDs are barely supported (only reading string IDs is supported)   | [#53214](https://github.com/qgis/QGIS/issues/53214) | Just analysis - fix out of scope                                        | unreported - \[cleanup\] QgsOgrFeatureIterator(): remove (hopefully!) useless code in subset string case
-| \"Order by\" memory leak                                                  | [#53198](https://github.com/qgis/QGIS/issues/53198) | [PR #53266](%5BPR%20#53266%5D(https://github.com/qgis/QGIS/pull/53266)) | N/A
-| Browser very slow when opening directory containing several GDB           | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53267](%5BPR%20#53267%5D(https://github.com/qgis/QGIS/pull/53267)) | Doesn\'t build with armv7 on openSUSE Tumbleweed
+| \"Order by\" memory leak                                                  | [#53198](https://github.com/qgis/QGIS/issues/53198) | [PR #53266](https://github.com/qgis/QGIS/pull/53266) | N/A
+| Browser very slow when opening directory containing several GDB           | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53267](https://github.com/qgis/QGIS/pull/53267) | Doesn\'t build with armv7 on openSUSE Tumbleweed
 | Add .pgwx as potential world file types for georeferenced png             | [#53125](https://github.com/qgis/QGIS/issues/53125) | [GDAL PR 7864](https://github.com/OSGeo/gdal/pull/7864)                 | N/A - GDAL fix
 | Assertion failed when filtering a GeoParquet layer                        | [#53301](https://github.com/qgis/QGIS/issues/53301) | [GDAL PR 7882](https://github.com/OSGeo/gdal/pull/7882)                 | N/A - GDAL fix
 | Given URL parameters do not persist for WFS OGC API - Features connection | [#49154](https://github.com/qgis/QGIS/issues/49154) | tried to reproduce - too complicated                                    | Field domain created incorrectly

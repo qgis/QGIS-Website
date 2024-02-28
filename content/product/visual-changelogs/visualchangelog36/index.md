@@ -562,7 +562,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 You can now right click on a file or folder within the browser, and select \"File Properties\" or \"Directory Properties\" to open the native file/folder properties dialog for that entry. This allows rapid access to operating system file or folder properties, such as file permissions and sharing options.
 
-This feature was funded by [North Road](s://north-road.com)
+This feature was funded by [North Road](https://north-road.com)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 

@@ -237,7 +237,7 @@ With this new parameter type, used in **Select by location, Extract by location*
 
 **This feature was funded by:** [French Ministry of Ecology, Sustainable Development and Energy](http://www.developpement-durable.gouv.fr/)
 
-**This feature was developed by:** [Camptocamp](http//www.camptocamp.com)
+**This feature was developed by:** [Camptocamp](http://www.camptocamp.com)
 
 ![](images/entries/cd198b98cf28e611f5c2e3be93bc5ec90dd0a5b4.png)
 
