@@ -32,13 +32,6 @@ development
 ```
 git clone https://github.com/qgis/QGIS-Hugo.git
 cd QGIS-Hugo
-git submodule add git@github.com:kartoza/hugo-bulma-blocks-theme.git themes/hugo-bulma-blocks-theme
-git submodule update --init --recursive
-```
-From time to time you may wish to update the theme submodule by doing:
-
-```
-git submodule update --remote
 ```
 
 
@@ -115,61 +108,13 @@ pip install pytest pytest-base-url playwright
 These tests exist to make sure code changes to this repository do not break how the site currently functions.
 They are intended to run on each commit to verify the site is working in expected order.
 
-Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/test/Readme.md).
-
-## Creating and Running Tests
-
-1. Navigate to the e2e test folder which is located in ```test/e2e```.
-2. Create or edit a test file for the page or section you want to test and get coding, test files should start with the name test follow by the file name, example ```test_about_page.py```.
-
-### Running tests in VSCode
-
-We can enable built in pytest support in VSCode. 
-
-**Note:** Before running the tests, you need to install the dependencies listed in REQUIREMENTS.txt:
-
-```
-pip install -r REQUIREMENTS.txt
-```
-
-And playwright:
-
-```
-pip install playwright
-```
-
-These should be set up by default when you open this project under VSCode, but if needed you can configure the VSCode settings to set the base-url (search for @id:python.testing.pytestArgs Testing in the settings filter):
-
-![Testing options](img/hugo-tests.png)
-
-Start the live debug server:
-
-![Debug Server](img/hugo-debug.png)
-
-Now open the test explorer and run your tests:
-
-![Testing Run](img/hugo-tests-run.png)
-
-Any failed tests will be marked in red as shown above.
-
-### Running from the command line:
-
-```
-pytest --base-url=http://localhost:1313
-```
-
-### Running tests in docker
-
-3. Start the hugo server in a terminal window ```make dev```.
-4. Run test in terminal window ```make tests```
-
-> **Note:** To run the tests as described above, you need to have docker installed on your machine and the appropriate permissions to run docker commands.
+Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/playwright/ci-test/README.md).
 
 ### Running as github action
 
 There is a github action that will run the tests automatically on PR submission, merge.
 
-See ```.github/workflows/e2e.yml```
+See ```.github/workflows/playwright-e2e.yml```
 
 ## Content Harvesting
 
@@ -199,6 +144,7 @@ The site needs to work in production, where the links of the site are all below 
 ```
 
 **Note:** We do not use a leading slash, only an ending slash.
+
 ## 📁 File naming conventions
 
 * Separate words in file names with hyphens e.g. windows-download.md
@@ -214,10 +160,10 @@ We welcome your contributions! All contributors are expected to sign a contribut
 
 ## 💮 Changing the templates
 
-Page type | Path
-----------|---------------
-Landing Page | themes/qgis/layouts/index.html
-Top Level Pages | themes/qgis/layouts/_default/single.html
+| Page type       | Path                                     |
+| --------------- | ---------------------------------------- |
+| Landing Page    | themes/qgis/layouts/index.html           |
+| Top Level Pages | themes/qgis/layouts/_default/single.html |
 
 ## 🏠 Editing the landing (home) page
 
@@ -238,73 +184,16 @@ The page will be accessible then at /about/
 Place images and media in ```static/img```. Everything in ```static``` is referenced
 from the top level of the site e.g.  ```static/img/foo.png``` would be referenced in
 markdown as ```/img/foo.png```.
-## 🌶️ Working with menus
 
-There are two menus, the primary (1) menu which appears at the top of the page, and the secondary menu (2) which may appear beneath it depending on context.
+## 📦 Blocks Shortcodes
 
-![Menus](./img/hugo-menus.png)
+The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/layouts/shortcodes``` folder.
 
-### Primary Menu Pages
+<!-- 3rd level header with icon with title Reusable header web component -->
+### Reusable header web component
 
-For pages to appear in the top menu, you need to add an entry to
-``config.toml`` for example the menu for the above about page will be:
+TODO
 
-```
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = -110
-  # pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-```
+### Sidebar
 
-**Note:** The ```pre``` item is commented out. If you uncomment it, it will place a font awesome icon before the text of the menu item.
-
-
-### Secondary Menu Pages
-
-For pages to appear in the secondary menu, you need to add an entry to
-``config.toml`` for example the menu for the documentation page will be:
-
-```
-[[menu.learning]]
-  name = "Documentation"
-  url = "/documentation/documentation-overview/"
-  weight = -110
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
-  [menu.learning.params]
-    submenu = "documentation"
-```
-
-Use the ```submenu``` parameter to define which submenu the menu entry should be shown in. You can create as many submenu terms as you like, and then associate pages to these submenus in the front matter of your markdown documents.
-
-### Displaying a secondary menu
-
-In order for a secondary menu to be displayed, your content page needs to specify the submenu name in the front matter e.g.:
-
-![Menus](./img/hugo-submenus.png)
-
-Example front matter listing:
-
-```
----
-type: "page"
-title: "Documentation Overview"
-subtitle: "QGIS Documentation Resources"
-draft: false
-heroImage: "img/banners/banner2.png"
-submenus: documentation
----
-```
-
-**Note:** Despite the pluralised name, you should only specify one submenu name.
-
-All of the menu entries specified in config.toml with a matching submenus term will be shown in the secondary menu when you add this to the front matter. If you specify no submenus= entry in the front matter, the secondary menu will not be rendered.
-
-### Modifying the menu templates
-
-The primary menu template is implemented in ```themes/qgis/layouts/partials/menu.html```.
-
-The secondary menu template is implemented in ```themes/qgis/layouts/partials/submenu.html```.
-
-**Note:** You typically will not need to edit the above files unless you are a developer.
-
+TODO
