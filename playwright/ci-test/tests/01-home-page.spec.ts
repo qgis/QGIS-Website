@@ -18,7 +18,6 @@ test('home page', async ({ page }) => {
   await expect(page.getByLabel('main navigation').getByRole('link', { name: 'Become a Certified Member' })).toBeVisible();
   await expect(page.getByLabel('main navigation').getByRole('link', { name: 'QGIS Foundation' })).toBeVisible();
   await expect(page.getByLabel('main navigation').getByRole('link', { name: 'Project Organisation' })).toBeVisible();
-  await expect(page.getByLabel('main navigation').getByRole('link', { name: 'Members and Donors' })).toBeVisible();
   await expect(page.getByLabel('main navigation').getByRole('link', { name: 'Members Blog' })).toBeVisible();
   await expect(page.getByLabel('main navigation').getByRole('link', { name: 'Download' })).toBeVisible();
   await expect(page.getByLabel('main navigation').getByText('Resources', { exact: true })).toBeVisible();
