@@ -152,11 +152,13 @@
         {{ $qrcreatejs := resources.Get "js/qrcreate.js" }}
         {{ $fusejs := resources.Get "js/fuse.js" }}
         {{ $markjs := resources.Get "js/mark.min.js" }}
-        {{ $cookiejs := resources.Get "js/cookie.js" }}
-        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $cookiejs | resources.Concat "js/all.js" | resources.Fingerprint }}
         {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
-        <script defer src="{{ $js.RelPermalink }}"></script>
-
+        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs | resources.Concat "js/all.js" | resources.Fingerprint }}
+        {{ if (eq .Site.Params.cookiesstate true) }}
+            {{ $cookiejs := resources.Get "js/cookie.js" }}
+            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $cookiejs | resources.Concat "js/all.js" | resources.Fingerprint }}
+        {{ end }}   
+        <script defer src="{{ $js.RelPermalink }}"></script> 
         {{/* Search needs to be rendered as a template to ensure urls are correct */}}
         {{ $searchjs := resources.Get "js/search.js" | resources.ExecuteAsTemplate "search.js" . | resources.Fingerprint }}
         <script defer src="{{ $searchjs.RelPermalink }}"></script>

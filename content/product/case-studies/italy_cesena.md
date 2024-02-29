@@ -21,7 +21,7 @@ The historical cartographic documents describe its evolution and its destruction
 QGIS has been a fundamental tool to elaborate, analyze, compare these georeferenced maps through the vectorial layers or shapefiles, in which I memorized all the elements ofthe maps, such as roads, buildings, parks and gardens, City Wall, the ancient fortified towers and the ancient City Gates. I used puntual, linear and polygonal layers. I compared these layers through the analysis, research, geoprocessing, geometry and data management tools (Fig. 1).
 
 <figure>
-<img src="../images/italy_cesena1.png" style="width:100.0%" alt="./images/italy_cesena1.png" />
+<img src="../images/italy_cesena1.png" style="width:100.0%" alt="italy_cesena1.png" />
 <figcaption>Fig. 1 Concept Map of the QGIS project</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ Using this tools, I got informations about:
 -   The Cesena\'s Urban Progress from the 16th Century to the Present;
 
 <figure>
-<img src="../images/italy_cesena2.png" style="width:100.0%" alt="./images/italy_cesena2.png" />
+<img src="../images/italy_cesena2.png" style="width:100.0%" alt="italy_cesena2.png" />
 <figcaption>Fig. 2: Openlayer Google Satellite overlapped by the informations recorded in different layers: the present City Wall in black, the Leonardo Da Vinci's topographic survey of the City Wall in orange, the Leonardo Da Vinci's points of survey in yellow and the present ancient City Gates in red.</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ There are lots of QGIS tools, and I used some of these to create:
 -   A 3D Model of Cesena with qgis2threejs plugin (Fig. 3);
 
 <figure>
-<img src="../images/italy_cesena3.png" style="width:100.0%" alt="./images/italy_cesena3.png" />
+<img src="../images/italy_cesena3.png" style="width:100.0%" alt="italy_cesena3.png" />
 <figcaption>Fig. 3: The 3D model of the present City Wall and Cesena's buildings inside and outside the Wall. The ancient fortified towers and the ancient City Gates are indicated.</figcaption>
 </figure>
 

@@ -23,14 +23,14 @@ Moreover, the integrated Processing Toolbox, formerly known as SEXTANTE, brings 
 A key advantage of the Processing Toolbox is the ability to seamlessly use functionalities from different algorithm providers for data processing and analysis. This can be used to create automatic processing models and, through a QGIS plugin developed during the TIGER-NET project, to sequentially combine algorithms from the different providers into wizard-based processing chains. This functionality was used to create a library of standardized workflows (with instructions) for performing common but complex tasks related to EO data analysis within water resource management.
 
 <figure>
-<img src="../images/africa_tiger1.jpg" class="align-center" style="width:100.0%" alt="./images/africa_tiger1.jpg" />
+<img src="../images/africa_tiger1.jpg" class="align-center" style="width:100.0%" alt="africa_tiger1.jpg" />
 <figcaption>The WOIS graphical user interface, including the embedded workflow library (center) and wizard-based processing workflow (right)</figcaption>
 </figure>
 
 The operational and practical use of the WOIS to support integrated water resource management in Africa has been demonstrated via a series of user specific demonstration cases covering a wide range of themes and information products. These include: lake water quality; flood monitoring; land degradation and land cover characterization; water bodies mapping and hydrological modelling. The demonstration cases have several stages. First, customized end-to-end processing workflows are developed for the requested products and applications. Those workflows are subsequently used for product derivation over significant areas and time periods as requested by the users. In the final step, the workflows (i.e. their stability/performance and ease of use) as well as the product outcomes are being evaluated in close dialogue with the users.
 
 <figure>
-<img src="../images/africa_tiger2.jpg" class="align-center" style="width:100.0%" alt="./images/africa_tiger2.jpg" />
+<img src="../images/africa_tiger2.jpg" class="align-center" style="width:100.0%" alt="africa_tiger2.jpg" />
 <figcaption>Sentinel-1 flood monitoring of Caprivi flood plain, Namibia.</figcaption>
 </figure>
 

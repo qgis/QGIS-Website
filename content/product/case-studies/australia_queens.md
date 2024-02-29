@@ -59,7 +59,7 @@ The project won an encouragement award at the Queensland Planning Institute of A
 ## Author
 
 <figure>
-<img src="../images/australia_queensaut.jpg" class="align-left" height="200" alt="./images/australia_queensaut.jpg" />
+<img src="../images/australia_queensaut.jpg" class="align-left" height="200" alt="australia_queensaut.jpg" />
 <figcaption>Nathan Woodrow</figcaption>
 </figure>
 

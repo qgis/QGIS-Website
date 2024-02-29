@@ -10,12 +10,12 @@ sidebar: true
 # Infrastructure
 This page should show you all the infrastructure and services that QGIS uses, and current contacts or owners.
 
-{{< rich-box icon="💭" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="💭" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### I think 
 It is not wise to put accountnames here, but let me know if that is better. We can also use nicks.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 Please add (yourself) and or change
 

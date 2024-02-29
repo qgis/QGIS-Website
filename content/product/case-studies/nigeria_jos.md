@@ -15,7 +15,7 @@ thumbnail: "images/nigeria_jos1.jpg"
 Amurum forest reserve is located near the city of Jos, Plateau state, Nigeria. It was established in conjunction with the initiation of the A.P. Leventis Ornithological Research Institute (APLORI) for the purpose of natural conservation, education and research. APLORI is hosted by the Department of Zoology at the University of Jos. Yearly a group of approximately eight highly motivated students from all over Nigeria obtain training in conservation biology, statistics (with R) and as of 2011 GIS as well. During two weeks in December 2011 we studied basic GIS concepts and applied those with QGIS for various conservation purposes. In this article we describe the way in which we used QGIS to map the habitats and its determinants of Amurum reserve and how the basic habitat maps were used to obtain strata for the purpose of efficiently determining the spatial distribution of the avifauna including the biodiversity.
 
 <figure>
-<img src="../images/nigeria_jos1.jpg" class="align-right" alt="./images/nigeria_jos1.jpg" />
+<img src="../images/nigeria_jos1.jpg" class="align-right" alt="nigeria_jos1.jpg" />
 <figcaption>Training Group</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Amurum forest reserve is located near the city of Jos, Plateau state, Nigeria. I
 3)  Overall, the elevations of the SRTM data set corresponded well to the gps-collected elevations. Terrain models in GdalTools were used to calculate hills hades and slopes for the area. These variables are important from an ecological point of view because they are strongly associated with the type of habitat.
 
 <figure>
-<img src="../images/nigeria_jos2.jpg" class="align-right" alt="./images/nigeria_jos2.jpg" />
+<img src="../images/nigeria_jos2.jpg" class="align-right" alt="nigeria_jos2.jpg" />
 <figcaption>QGIS screenshot</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Amurum forest reserve is located near the city of Jos, Plateau state, Nigeria. I
 The habitat maps were used to generate random locations. The area of the various types of habitat were used to generate a number of locations proportional to the surface of each habitat type (stratification).
 
 <figure>
-<img src="../images/nigeria_jos3.jpg" class="align-right" alt="./images/nigeria_jos3.jpg" />
+<img src="../images/nigeria_jos3.jpg" class="align-right" alt="nigeria_jos3.jpg" />
 <figcaption>Training Group</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ The random points in fTools were used for this purpose. All the locations were v
 Overall, the course was a great success. We - a group of students with no previous GIS experience —— enjoyed working with QGIS a lot. Within just two weeks time we were able to develop an extremely useful map of the reserve. Amongst others, the extents of the various habitats were determined which allows for stratification and thus for better estimates of abundances of various kinds of organisms. Basically we are now able to do better ecological research using QGIS as an open source platform.
 
 <figure>
-<img src="../images/nigeria_jos4.png" class="align-right" alt="./images/nigeria_jos4.png" />
+<img src="../images/nigeria_jos4.png" class="align-right" alt="nigeria_jos4.png" />
 <figcaption>QGIS map: Diversity of Amurum Forest Reserve</figcaption>
 </figure>
 

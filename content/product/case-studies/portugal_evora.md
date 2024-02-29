@@ -15,7 +15,7 @@ thumbnail: "images/portugal_evora1.png"
 I started applying GIS to my work in biogeography about 10 years ago. Through my graduate internship, PhD work and two other research jobs, I used the proprietary software packages that were available and used at my workplaces — mainly CartaLinx, Idrisi, ArcView and ArcGIS. But I found it rather annoying that we were constantly dealing with license renewal issues, and that I could not use the software away from the workplace unless I acquired my own license.
 
 <figure>
-<img src="../images/portugal_evora1.png" alt="./images/portugal_evora1.png" />
+<img src="../images/portugal_evora1.png" alt="portugal_evora1.png" />
 <figcaption>Distribution of Spanish algyroides (Algyroides marchi) at three spatial scales and from two different data sources.</figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ It crossed my mind on several occasions that switching to free software would sp
 I started using both programs immediately after the course. Not only did I begin all my new GIS work with QGIS/GRASS \[e.g. 1, 2\], but I also did follow-up analyses on previous works that I had done with commercial software. For example, I had built models of otter \[3\] and desman \[4\] distribution in the Iberian Peninsula. After switching to QGIS-GRASS, I analysed how those models behaved when downscaled to a finer resolution \[5\]. Another previous work on biogeographic relationships between Iberian lynx and rabbit \[6\] had a follow-up after I switched to QGIS-GRASS \[7\]. Not only did I not have any problems with the migration of the data and previous results: I also found it much easier to do the things I wanted to do with the new software, and was able to do extra analyses which I could not have done with the programs I used before.
 
 <figure>
-<img src="../images/portugal_evora2.png" alt="./images/portugal_evora2.png" />
+<img src="../images/portugal_evora2.png" alt="portugal_evora2.png" />
 <figcaption>Environmental suitability for the Pyrenean desman (Galemys pyrenaicus) together with presence, absence, and random points in north Catalonia (Spain).</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ All in all, switching to QGIS/GRASS brought me nothing but advantages. I can now
 ## Author
 
 <figure>
-<img src="../images/portugal_evoraaut.png" class="align-left" height="200" alt="./images/portugal_evoraaut.png" />
+<img src="../images/portugal_evoraaut.png" class="align-left" height="200" alt="portugal_evoraaut.png" />
 <figcaption>A Márcia Barbosa</figcaption>
 </figure>
 

@@ -27,7 +27,7 @@ Our field surveys included assessing, videoing and photographing these sites, ve
 The data and types of analyses we are currently using to study this complex landscape include a series of maps ranging in date from 1759 to 2012, which are integrated within our larger GIS database, historical records such as cadastral tax records, agricultural reports, and population data from censuses and parish/civil registers, environmental data from ponds (pollen, sediment geochemistry, grain size, stable isotopes), and oral history/ethnographic interviews with local rural inhabitants.
 
 <figure>
-<img src="../images/france_burgundy2.jpg" class="align-left" alt="./images/france_burgundy2.jpg" />
+<img src="../images/france_burgundy2.jpg" class="align-left" alt="france_burgundy2.jpg" />
 <figcaption>A view of our project QGIS database. At right is the eVis GPS ground photo and data of a recently drained pond dating back at least to 1834. In the GIS image at center top you can see the location of the pond as a yellow dot. Red dots show other eVis ground photos of mills and other historical or archaeological sites.</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Our project started using GRASS in 1986, and has continued to use this, as well 
 Our research will continue to explore the long-term history of the inhabitants' relationship with this landscape and we will expand our work beyond our current focus on mills and ponds to include changing patterns of forests, pastures and meadows, croplands and former vineyards in the area.
 
 <figure>
-<img src="../images/france_burgundy3.jpg" class="align-left" alt="./images/france_burgundy3.jpg" />
+<img src="../images/france_burgundy3.jpg" class="align-left" alt="france_burgundy3.jpg" />
 <figcaption>From top left going clockwise: Some of the local Charolais cattle, doing ethnographic interviews with local farmers, a GIS map showing forest change from 1759 to 1983, and a book of Uxeau 1791 cadastral tax records. In the center is a color 1759 Cassini map of the area.</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ Our research will continue to explore the long-term history of the inhabitants' 
 ## Authors
 
 <figure>
-<img src="../images/france_burgundy4.png" class="align-left" height="220" alt="./images/france_burgundy4.png" />
+<img src="../images/france_burgundy4.png" class="align-left" height="220" alt="france_burgundy4.png" />
 <figcaption>Jones, Tickner and Madry doing field work</figcaption>
 </figure>
 

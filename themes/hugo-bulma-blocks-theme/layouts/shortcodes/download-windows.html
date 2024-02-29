@@ -1,0 +1,29 @@
+{{ with index .Site.Data.conf }}
+<a
+	class="button is-primary1 mb-3"
+	href="{{ .ltr_msi }}"
+    onclick="thanks(this)"
+    download
+>Long Term Version for Windows ({{ .ltrversion }} {{ .ltrnote }})</a>
+
+<a
+	class="button is-primary1 is-outlined mb-3"
+	href="{{ .lr_msi }}"
+    onclick="thanks(this)"
+    download
+>Latest Version for Windows ({{ .version }})</a>
+
+<br>
+The OSGeo4W installer is recommended for regular users or organization deployments. It allows to have several QGIS versions in one place, and to keep each component up-to-date individually without having to download the whole package.
+
+<br>
+<a
+	class="button is-primary1 is-outlined mb-3"
+	href="{{ absURL "resources/installation-guide#osgeo4w-installer" }}"
+    onclick="thanks(this)"
+    download
+>OSGeo4W Network Installer</a>
+<br>
+
+Since QGIS 3.20 we only ship 64-bit Windows executables.
+{{ end }}

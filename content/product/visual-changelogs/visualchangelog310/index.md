@@ -22,9 +22,9 @@ QGIS 3.10 brings an extensive list of new changes and a lot of polishing of exis
 
 We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to qgis.org and lend a hand!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](../../../community/members/donors). If you would like to become an official sustaining member, please visit [our sustaining members page](../../../community/members/sustaining_member) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sustaining members is provided below - our very great thank you to all of our supporters!
+QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sustaining members is provided below - our very great thank you to all of our supporters!
 
-<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>
+{{< fund type="active" >}}
 
 QGIS is Free software and you are under no obligation to pay anything to use it - in fact we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision making tools will result in a better society for all of humanity.
 
@@ -804,89 +804,48 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
 
 ### Feature: Bug fixes by Alessandro Pasotti
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                URL issues (if reported)                              URL PR or commit                                      3.4 backport PR or commit
-  -------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ----------------------------------------------------- -----------------------------------------------------
-  Crash when deleting print layout items                                                                   [#31549](https://github.com/qgis/QGIS/issues/31549)                                                         
-
-  DB manager python error                                                                                  [#31457](https://github.com/qgis/QGIS/issues/31457)                                                         
-
-  QGIS 3.4.11: Clicking a PDF URL in GetFeatureInfo response generates error                               [#31542](https://github.com/qgis/QGIS/issues/31542)   Already fixed (by me) on 3.8 and Master               
-
-  Watch file not adding new columns                                                                        [#31452](https://github.com/qgis/QGIS/issues/31452)                                                         
-
-  Loss of labels background from older project/style                                                       [#31427](https://github.com/qgis/QGIS/issues/31427)   [PR #3164](https://github.com/qgis/QGIS/pull/31647)   
-
-  \"Text formats\" dialog shows modifiable buffer properties while the \"draw text buffer\" is unchecked   [#31428](https://github.com/qgis/QGIS/issues/31428)   [PR #3173](https://github.com/qgis/QGIS/pull/31734)   
-
-  Symbology tab widget does not horizontally expand in the layer properties dialog extent                  [#31449](https://github.com/qgis/QGIS/issues/31449)   [PR #3166](https://github.com/qgis/QGIS/pull/31665)   
-
-  Watch file not adding new columns                                                                        [#31452](https://github.com/qgis/QGIS/issues/31452)                                                         
-
-  Unreported but related to #31452                                                                         [PR #3168](https://github.com/qgis/QGIS/pull/31688)                                                         
-
-  Unable to add WMS service in QGIS, same URL works in other clients                                       [#31661](https://github.com/qgis/QGIS/issues/31661)                                                         
-
-  QGIS Server - Download of capabilities failed: SSL handshake failed                                      [#31675](https://github.com/qgis/QGIS/issues/31675)                                                         
-
-  apparent regression in raster calculator multiplying conditionals                                        [#31193](https://github.com/qgis/QGIS/issues/31193)   [PR #3169](https://github.com/qgis/QGIS/pull/31690)   
-
-  Broken GPKG browser actions                                                                              [#31730](https://github.com/qgis/QGIS/issues/31730)   [PR #3173](https://github.com/qgis/QGIS/pull/31731)   
-
-  Resizing the data source manager dialog fails to resize unfocused panels                                 [#31732](https://github.com/qgis/QGIS/issues/31732)   [PR #3174](https://github.com/qgis/QGIS/pull/31741)   
-
-  In place processing multipart to singleparts does not handle unique constraints                          [#31634](https://github.com/qgis/QGIS/issues/31634)   [PR #3175](https://github.com/qgis/QGIS/pull/31750)   [PR #3181](https://github.com/qgis/QGIS/pull/31810)
-
-  crash when adding legend via python                                                                      [#31713](https://github.com/qgis/QGIS/issues/31713)                                                         
-
-  UI: Legend does not refresh after classifincation bounds updated                                         [#31643](https://github.com/qgis/QGIS/issues/31643)   Not affected                                          [PR #3183](https://github.com/qgis/QGIS/pull/31834)
-
-  UI: PostGIS layer error message not helpful, disappears and shouldn\'t happen                            [#31799](https://github.com/qgis/QGIS/issues/31799)   [PR #3184](https://github.com/qgis/QGIS/pull/31841)   
-
-  Server GetLegendGraphics contextual (BBOX) fails if no WIDTH and HEIGHT are supplied                     [#31846](https://github.com/qgis/QGIS/issues/31846)   [PR #3186](https://github.com/qgis/QGIS/pull/31865)   [PR #3188](https://github.com/qgis/QGIS/pull/31882)
-
-  extend/trim crash                                                                                        [#31864](https://github.com/qgis/QGIS/issues/31864)                                                         
-
-  UI: any click on number of classes updown triggers twice                                                 [#31635](https://github.com/qgis/QGIS/issues/31635)   [PR #3187](https://github.com/qgis/QGIS/pull/31871)   
-
-  GPKG project is not marked dirty after it is deleted from the storage                                    [#30550](https://github.com/qgis/QGIS/issues/30550)   [PR #3187](https://github.com/qgis/QGIS/pull/31876)   
-
-  Fix unreported issue with QVariantList to JSON conversion in QgsJsonUtils                                unreported                                            [PR #3192](https://github.com/qgis/QGIS/pull/31920)   
-
-  Crash on adding WMS                                                                                      [#31927](https://github.com/qgis/QGIS/issues/31927)   [#31927](https://github.com/qgis/QGIS/issues/31927)   [PR #3197](https://github.com/qgis/QGIS/pull/31979)
-
-  Raster calculator change sign does not work when OpenCL is on                                            [#32023](https://github.com/qgis/QGIS/issues/32023)   [PR #3202](https://github.com/qgis/QGIS/pull/32026)   
-
-  Snapping map units always show \"meters even when the project is in different units                      [#31961](https://github.com/qgis/QGIS/issues/31961)   [PR #3201](https://github.com/qgis/QGIS/pull/32018)   
-
-  QGIS Raster Calculator outputs nodata only rasters                                                       [#32025](https://github.com/qgis/QGIS/issues/32025)   [PR #3202](https://github.com/qgis/QGIS/pull/32026)   
-
-  Opening projects from PostgreSQL issue                                                                   [#32050](https://github.com/qgis/QGIS/issues/32050)   [PR #3206](https://github.com/qgis/QGIS/pull/32062)   
-
-  GetLegendGraphic shows all identical symbols for content based legend                                    [#32020](https://github.com/qgis/QGIS/issues/32020)                                                         
-
-  WFS doesn\'t recognize advertised GeoJSON outputFormat string                                            [#32065](https://github.com/qgis/QGIS/issues/32065)   [PR #3210](https://github.com/qgis/QGIS/pull/32106)   
-
-  creating indexes on geopackage failes (QGIS 3.8.3)                                                       [#32094](https://github.com/qgis/QGIS/issues/32094)                                                         
-
-  DB manager import option \"Create single-part geometries instead of multi-part\" is broken               [#32089](https://github.com/qgis/QGIS/issues/32089)   [PR #3210](https://github.com/qgis/QGIS/pull/32108)   
-
-  GetLegendGraphic shows all identical symbols for content based legend                                    [#32020](https://github.com/qgis/QGIS/issues/32020)   [PR #3212](https://github.com/qgis/QGIS/pull/32120)   
-
-  WFS contextual legend issue when canvas CRS is different than layer\'s CRS                               unreported                                            [PR #3212](https://github.com/qgis/QGIS/pull/32120)   
-
-  PostGIS/geojson: Cannot input negative numbers in int fields                                             [#32149](https://github.com/qgis/QGIS/issues/32149)   [PR #3216](https://github.com/qgis/QGIS/pull/32161)   
-
-  Information tab in WMS layer properties is unresponsive if a WMS service contains many layers            [#32213](https://github.com/qgis/QGIS/issues/32213)   [PR #3226](https://github.com/qgis/QGIS/pull/32269)   
-
-  Data Source UI - PostgreSQL table multi-line comments make the grid table hard to read                   [#32257](https://github.com/qgis/QGIS/issues/32257)   [PR #3233](https://github.com/qgis/QGIS/pull/32336)   
-
-  More null pointer dereferences when plugins are off                                                      [#32347](https://github.com/qgis/QGIS/issues/32347)   [PR #3235](https://github.com/qgis/QGIS/pull/32351)   
-
-  null pointer dereferences when plugins are off                                                           [#32338](https://github.com/qgis/QGIS/issues/32338)   [PR #3234](https://github.com/qgis/QGIS/pull/32345)   
-
-  \"Merge features\" and \"merge feature attributes\" have broken numerical functions                      [PR #3236](https://github.com/qgis/QGIS/pull/32360)   [PR #3236](https://github.com/qgis/QGIS/pull/32360)   
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                              | URL issues (if reported)                            | URL PR or commit                                    | 3.4 backport PR or commit
+|----|----|----|----|
+| Crash when deleting print layout items                                                                 | [#31549](https://github.com/qgis/QGIS/issues/31549)                                                         
+| DB manager python error                                                                                | [#31457](https://github.com/qgis/QGIS/issues/31457)                                                         
+| QGIS 3.4.11: Clicking a PDF URL in GetFeatureInfo response generates error                             | [#31542](https://github.com/qgis/QGIS/issues/31542) | Already fixed (by me) on 3.8 and Master               
+| Watch file not adding new columns                                                                      | [#31452](https://github.com/qgis/QGIS/issues/31452)                                                         
+| Loss of labels background from older project/style                                                     | [#31427](https://github.com/qgis/QGIS/issues/31427) | [PR #3164](https://github.com/qgis/QGIS/pull/31647)   
+| \"Text formats\" dialog shows modifiable buffer properties while the \"draw text buffer\" is unchecked | [#31428](https://github.com/qgis/QGIS/issues/31428) | [PR #3173](https://github.com/qgis/QGIS/pull/31734)   
+| Symbology tab widget does not horizontally expand in the layer properties dialog extent                | [#31449](https://github.com/qgis/QGIS/issues/31449) | [PR #3166](https://github.com/qgis/QGIS/pull/31665)   
+| Watch file not adding new columns                                                                      | [#31452](https://github.com/qgis/QGIS/issues/31452)                                                         
+| Unreported but related to #31452                                                                       | [PR #3168](https://github.com/qgis/QGIS/pull/31688)                                                         
+| Unable to add WMS service in QGIS, same URL works in other clients                                     | [#31661](https://github.com/qgis/QGIS/issues/31661)                                                         
+| QGIS Server - Download of capabilities failed: SSL handshake failed                                    | [#31675](https://github.com/qgis/QGIS/issues/31675)                                                         
+| apparent regression in raster calculator multiplying conditionals                                      | [#31193](https://github.com/qgis/QGIS/issues/31193) | [PR #3169](https://github.com/qgis/QGIS/pull/31690)   
+| Broken GPKG browser actions                                                                            | [#31730](https://github.com/qgis/QGIS/issues/31730) | [PR #3173](https://github.com/qgis/QGIS/pull/31731)   
+| Resizing the data source manager dialog fails to resize unfocused panels                               | [#31732](https://github.com/qgis/QGIS/issues/31732) | [PR #3174](https://github.com/qgis/QGIS/pull/31741)   
+| In place processing multipart to singleparts does not handle unique constraints                        | [#31634](https://github.com/qgis/QGIS/issues/31634) | [PR #3175](https://github.com/qgis/QGIS/pull/31750) | [PR #3181](https://github.com/qgis/QGIS/pull/31810)
+| crash when adding legend via python                                                                    | [#31713](https://github.com/qgis/QGIS/issues/31713)                                                         
+| UI: Legend does not refresh after classifincation bounds updated                                       | [#31643](https://github.com/qgis/QGIS/issues/31643) | Not affected                                        | [PR #3183](https://github.com/qgis/QGIS/pull/31834)
+| UI: PostGIS layer error message not helpful, disappears and shouldn\'t happen                          | [#31799](https://github.com/qgis/QGIS/issues/31799) | [PR #3184](https://github.com/qgis/QGIS/pull/31841)   
+| Server GetLegendGraphics contextual (BBOX) fails if no WIDTH and HEIGHT are supplied                   | [#31846](https://github.com/qgis/QGIS/issues/31846) | [PR #3186](https://github.com/qgis/QGIS/pull/31865) | [PR #3188](https://github.com/qgis/QGIS/pull/31882)
+| extend/trim crash                                                                                      | [#31864](https://github.com/qgis/QGIS/issues/31864)                                                         
+| UI: any click on number of classes updown triggers twice                                               | [#31635](https://github.com/qgis/QGIS/issues/31635) | [PR #3187](https://github.com/qgis/QGIS/pull/31871)   
+| GPKG project is not marked dirty after it is deleted from the storage                                  | [#30550](https://github.com/qgis/QGIS/issues/30550) | [PR #3187](https://github.com/qgis/QGIS/pull/31876)   
+| Fix unreported issue with QVariantList to JSON conversion in QgsJsonUtils                              | unreported                                          | [PR #3192](https://github.com/qgis/QGIS/pull/31920)   
+| Crash on adding WMS                                                                                    | [#31927](https://github.com/qgis/QGIS/issues/31927) | [#31927](https://github.com/qgis/QGIS/issues/31927) | [PR #3197](https://github.com/qgis/QGIS/pull/31979)
+| Raster calculator change sign does not work when OpenCL is on                                          | [#32023](https://github.com/qgis/QGIS/issues/32023) | [PR #3202](https://github.com/qgis/QGIS/pull/32026)   
+| Snapping map units always show \"meters even when the project is in different units                    | [#31961](https://github.com/qgis/QGIS/issues/31961) | [PR #3201](https://github.com/qgis/QGIS/pull/32018)   
+| QGIS Raster Calculator outputs nodata only rasters                                                     | [#32025](https://github.com/qgis/QGIS/issues/32025) | [PR #3202](https://github.com/qgis/QGIS/pull/32026)   
+| Opening projects from PostgreSQL issue                                                                 | [#32050](https://github.com/qgis/QGIS/issues/32050) | [PR #3206](https://github.com/qgis/QGIS/pull/32062)   
+| GetLegendGraphic shows all identical symbols for content based legend                                  | [#32020](https://github.com/qgis/QGIS/issues/32020)                                                         
+| WFS doesn\'t recognize advertised GeoJSON outputFormat string                                          | [#32065](https://github.com/qgis/QGIS/issues/32065) | [PR #3210](https://github.com/qgis/QGIS/pull/32106)   
+| creating indexes on geopackage failes (QGIS 3.8.3)                                                     | [#32094](https://github.com/qgis/QGIS/issues/32094)                                                         
+| DB manager import option \"Create single-part geometries instead of multi-part\" is broken             | [#32089](https://github.com/qgis/QGIS/issues/32089) | [PR #3210](https://github.com/qgis/QGIS/pull/32108)   
+| GetLegendGraphic shows all identical symbols for content based legend                                  | [#32020](https://github.com/qgis/QGIS/issues/32020) | [PR #3212](https://github.com/qgis/QGIS/pull/32120)   
+| WFS contextual legend issue when canvas CRS is different than layer\'s CRS                             | unreported                                          | [PR #3212](https://github.com/qgis/QGIS/pull/32120)   
+| PostGIS/geojson: Cannot input negative numbers in int fields                                           | [#32149](https://github.com/qgis/QGIS/issues/32149) | [PR #3216](https://github.com/qgis/QGIS/pull/32161)   
+| Information tab in WMS layer properties is unresponsive if a WMS service contains many layers          | [#32213](https://github.com/qgis/QGIS/issues/32213) | [PR #3226](https://github.com/qgis/QGIS/pull/32269)   
+| Data Source UI - PostgreSQL table multi-line comments make the grid table hard to read                 | [#32257](https://github.com/qgis/QGIS/issues/32257) | [PR #3233](https://github.com/qgis/QGIS/pull/32336)   
+| More null pointer dereferences when plugins are off                                                    | [#32347](https://github.com/qgis/QGIS/issues/32347) | [PR #3235](https://github.com/qgis/QGIS/pull/32351)   
+| null pointer dereferences when plugins are off                                                         | [#32338](https://github.com/qgis/QGIS/issues/32338) | [PR #3234](https://github.com/qgis/QGIS/pull/32345)   
+| \"Merge features\" and \"merge feature attributes\" have broken numerical functions                    | [PR #3236](https://github.com/qgis/QGIS/pull/32360) | [PR #3236](https://github.com/qgis/QGIS/pull/32360)   
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
@@ -894,47 +853,27 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 
 ### Feature: Bug fixes by Alexander Bruy
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                URL issues (if reported)                              URL PR or commit                                      3.4 backport PR or commit
-  -------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ----------------------------------------------------- -----------------------------------------------------
-  GDAL scripts in Processing need quoting on attribute names                                               [#30878](https://github.com/qgis/QGIS/issues/30878)   [PR #3171](https://github.com/qgis/QGIS/pull/31712)   [PR #3171](https://github.com/qgis/QGIS/pull/31717)
-
-  Processing GDAL algorithms does not handle correctly WFS input layers                                    [#29663](https://github.com/qgis/QGIS/issues/29663)   [PR #3173](https://github.com/qgis/QGIS/pull/31735)   
-
-  shp files in zip files files cannot be used in Processing with 3rd party providers (SAGA, GRASS\...)     [#29001](https://github.com/qgis/QGIS/issues/29001)   [PR #3174](https://github.com/qgis/QGIS/pull/31744)   [PR #3178](https://github.com/qgis/QGIS/pull/31787)
-
-  Not possible to toggle use selected features in the Processing layer combobox                            [#30636](https://github.com/qgis/QGIS/issues/30636)   [PR #3173](https://github.com/qgis/QGIS/pull/31739)   
-
-  Connect to postgis database fails in \"Layer - Add Postgis layer\" on databases with weird table names   [#27040](https://github.com/qgis/QGIS/issues/27040)   [PR #3176](https://github.com/qgis/QGIS/pull/31763)   
-
-  GRASS v.build.polylines dosn\'t work in Qgis 3.4.10                                                      [#31037](https://github.com/qgis/QGIS/issues/31037)                                                         
-
-  Processing Algorithms written with the \@alg decorator don\'t get the gear icon                          [#31252](https://github.com/qgis/QGIS/issues/31252)   [PR #3188](https://github.com/qgis/QGIS/pull/31887)   
-
-  v.drape - no 25D export with SpatiaLite format                                                           [#30066](https://github.com/qgis/QGIS/issues/30066)                                                         
-
-  Service url cannot include custom query parameters                                                       [#26761](https://github.com/qgis/QGIS/issues/26761)                                                         
-
-  Processing: python error on startup                                                                      [#29535](https://github.com/qgis/QGIS/issues/29535)                                                         
-
-  Saving Processing\'s Package Layers algorithm\'s output to default temporary output leaves no result     [#30535](https://github.com/qgis/QGIS/issues/30535)                                                         
-
-  \[Georeferencer\] GDAL script does not set target SR                                                     [#31353](https://github.com/qgis/QGIS/issues/31353)   [PR #3189](https://github.com/qgis/QGIS/pull/31898)   
-
-  Processing \"Build virtual vector\" now fails in certain cases                                           [#29336](https://github.com/qgis/QGIS/issues/29336)   [PR #3190](https://github.com/qgis/QGIS/pull/31901)   
-
-  Unreported issue with missed import in the Processing algorithms dialog                                  unreported                                            [PR #3190](https://github.com/qgis/QGIS/pull/31902)   
-
-  db manager: python error when clicking \"edit table\" if the table is a postgis raster                   [#30214](https://github.com/qgis/QGIS/issues/30214)   [PR #3190](https://github.com/qgis/QGIS/pull/31904)   
-
-  DB Manager: Renaming a PostGIS geometry column causes it to lose its geometry type and SRS               [#27613](https://github.com/qgis/QGIS/issues/27613)   [PR #3192](https://github.com/qgis/QGIS/pull/31929)   
-
-  Georeferencer incorrectly shows last image when reopened                                                 [#26700](https://github.com/qgis/QGIS/issues/26700)   [PR #3193](https://github.com/qgis/QGIS/pull/31932)   
-
-  DB Manager: Create Layer dialog should be closed or cleared once the new layer is generated              [#25535](https://github.com/qgis/QGIS/issues/25535)   [PR #3195](https://github.com/qgis/QGIS/pull/31956)   
-
-  \[Vector Save As\...\] Extension is not replaced in filename when switching format                       [#26054](https://github.com/qgis/QGIS/issues/26054)   [PR #3196](https://github.com/qgis/QGIS/pull/31960)   
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                              | URL issues (if reported)                            | URL PR or commit                                    | 3.4 backport PR or commit
+|----|----|----|----|
+| GDAL scripts in Processing need quoting on attribute names                                             | [#30878](https://github.com/qgis/QGIS/issues/30878) | [PR #3171](https://github.com/qgis/QGIS/pull/31712) | [PR #3171](https://github.com/qgis/QGIS/pull/31717)
+| Processing GDAL algorithms does not handle correctly WFS input layers                                  | [#29663](https://github.com/qgis/QGIS/issues/29663) | [PR #3173](https://github.com/qgis/QGIS/pull/31735)   
+| shp files in zip files files cannot be used in Processing with 3rd party providers (SAGA, GRASS\...)   | [#29001](https://github.com/qgis/QGIS/issues/29001) | [PR #3174](https://github.com/qgis/QGIS/pull/31744) | [PR #3178](https://github.com/qgis/QGIS/pull/31787)
+| Not possible to toggle use selected features in the Processing layer combobox                          | [#30636](https://github.com/qgis/QGIS/issues/30636) | [PR #3173](https://github.com/qgis/QGIS/pull/31739)   
+| Connect to postgis database fails in \"Layer - Add Postgis layer\" on databases with weird table names | [#27040](https://github.com/qgis/QGIS/issues/27040) | [PR #3176](https://github.com/qgis/QGIS/pull/31763)   
+| GRASS v.build.polylines dosn\'t work in Qgis 3.4.10                                                    | [#31037](https://github.com/qgis/QGIS/issues/31037)                                                         
+| Processing Algorithms written with the \@alg decorator don\'t get the gear icon                        | [#31252](https://github.com/qgis/QGIS/issues/31252) | [PR #3188](https://github.com/qgis/QGIS/pull/31887)   
+| v.drape - no 25D export with SpatiaLite format                                                         | [#30066](https://github.com/qgis/QGIS/issues/30066)                                                         
+| Service url cannot include custom query parameters                                                     | [#26761](https://github.com/qgis/QGIS/issues/26761)                                                         
+| Processing: python error on startup                                                                    | [#29535](https://github.com/qgis/QGIS/issues/29535)                                                         
+| Saving Processing\'s Package Layers algorithm\'s output to default temporary output leaves no result   | [#30535](https://github.com/qgis/QGIS/issues/30535)                                                         
+| \[Georeferencer\] GDAL script does not set target SR                                                   | [#31353](https://github.com/qgis/QGIS/issues/31353) | [PR #3189](https://github.com/qgis/QGIS/pull/31898)   
+| Processing \"Build virtual vector\" now fails in certain cases                                         | [#29336](https://github.com/qgis/QGIS/issues/29336) | [PR #3190](https://github.com/qgis/QGIS/pull/31901)   
+| Unreported issue with missed import in the Processing algorithms dialog                                | unreported                                          | [PR #3190](https://github.com/qgis/QGIS/pull/31902)   
+| db manager: python error when clicking \"edit table\" if the table is a postgis raster                 | [#30214](https://github.com/qgis/QGIS/issues/30214) | [PR #3190](https://github.com/qgis/QGIS/pull/31904)   
+| DB Manager: Renaming a PostGIS geometry column causes it to lose its geometry type and SRS             | [#27613](https://github.com/qgis/QGIS/issues/27613) | [PR #3192](https://github.com/qgis/QGIS/pull/31929)   
+| Georeferencer incorrectly shows last image when reopened                                               | [#26700](https://github.com/qgis/QGIS/issues/26700) | [PR #3193](https://github.com/qgis/QGIS/pull/31932)   
+| DB Manager: Create Layer dialog should be closed or cleared once the new layer is generated            | [#25535](https://github.com/qgis/QGIS/issues/25535) | [PR #3195](https://github.com/qgis/QGIS/pull/31956)   
+| \[Vector Save As\...\] Extension is not replaced in filename when switching format                     | [#26054](https://github.com/qgis/QGIS/issues/26054) | [PR #3196](https://github.com/qgis/QGIS/pull/31960)   
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
@@ -942,25 +881,16 @@ This feature was developed by Alexander Bruy
 
 ### Feature: Bug fixes by Peter Petrik
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                          URL issues (if reported)                              URL PR or commit                                      3.4 backport PR or commit
-  ---------------------------------------------------------------------------------- ----------------------------------------------------- ----------------------------------------------------- -----------------------------------------------------
-  Reproducible Crash: retrieving QgsHighlight instance stored as a widget property   [#30766](https://github.com/qgis/QGIS/issues/30766)   [PR #3173](https://github.com/qgis/QGIS/pull/31733)   [PR #3197](https://github.com/qgis/QGIS/pull/31977)
-
-  Layer styling Mesh layer does not respond to change of Color ramp (first time)     [#29188](https://github.com/qgis/QGIS/issues/29188)   [PR #3198](https://github.com/qgis/QGIS/pull/31981)   
-
-  qgis crashed on close in QSortFilterProxyModel                                     [#31721](https://github.com/qgis/QGIS/issues/31721)                                                         
-
-  QGIS freezes                                                                       [#29742](https://github.com/qgis/QGIS/issues/29742)                                                         
-
-  Crash when trying to save a project                                                [#29896](https://github.com/qgis/QGIS/issues/29896)                                                         
-
-  Crash on exit with advanced digitizing active                                      [#29143](https://github.com/qgis/QGIS/issues/29143)                                                         
-
-  Renaming macOS app causes authentication error                                     [#32163](https://github.com/qgis/QGIS/issues/32163)                                                         
-
-  QGIS cannot be opened after updating to Mac OS Catalina                            [#32167](https://github.com/qgis/QGIS/issues/32167)                                                         
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                        | URL issues (if reported)                            | URL PR or commit                                    | 3.4 backport PR or commit
+|----|----|----|----|
+| Reproducible Crash: retrieving QgsHighlight instance stored as a widget property | [#30766](https://github.com/qgis/QGIS/issues/30766) | [PR #3173](https://github.com/qgis/QGIS/pull/31733) | [PR #3197](https://github.com/qgis/QGIS/pull/31977)
+| Layer styling Mesh layer does not respond to change of Color ramp (first time)   | [#29188](https://github.com/qgis/QGIS/issues/29188) | [PR #3198](https://github.com/qgis/QGIS/pull/31981)   
+| qgis crashed on close in QSortFilterProxyModel                                   | [#31721](https://github.com/qgis/QGIS/issues/31721)                                                         
+| QGIS freezes                                                                     | [#29742](https://github.com/qgis/QGIS/issues/29742)                                                         
+| Crash when trying to save a project                                              | [#29896](https://github.com/qgis/QGIS/issues/29896)                                                         
+| Crash on exit with advanced digitizing active                                    | [#29143](https://github.com/qgis/QGIS/issues/29143)                                                         
+| Renaming macOS app causes authentication error                                   | [#32163](https://github.com/qgis/QGIS/issues/32163)                                                         
+| QGIS cannot be opened after updating to Mac OS Catalina                          | [#32167](https://github.com/qgis/QGIS/issues/32167)                                                         
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
@@ -968,35 +898,21 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 
 ### Feature: Bug fixes by Even Rouault
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                   URL issues (if reported)                              URL PR or commit                                       3.4 backport PR or commit
-  ------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------------------------------------------------
-  QGIS master crash upon exit @ QgsCoordinateTransformPrivate::freeProj on Windows platform   [#31762](https://github.com/qgis/QGIS/issues/31762)   [PR #3176](https://github.com/qgis/QGIS/pull/31764)    [Commit 08bb3fe](https://github.com/qgis/QGIS/commit/08bb3fea3fc3f574755ecc0a7dc8381a9822e4cd)
-
-  QGIS master crash upon exit @ QgsCoordinateTransformPrivate::freeProj on Windows platform   [#31762](https://github.com/qgis/QGIS/issues/31762)   [PR #3184](https://github.com/qgis/QGIS/pull/31848)    [PR #3185](https://github.com/qgis/QGIS/pull/31850)
-
-  QGIS WFS stripping of viewparam KVP from WFS Feature Requests                               [#31026](https://github.com/qgis/QGIS/issues/31026)   [PR #3176](https://github.com/qgis/QGIS/pull/31765)    [PR #3188](https://github.com/qgis/QGIS/pull/31883)
-
-  Crash: right click on image -\>export -\>save as-\>\"save raster layer as\"                 [#30937](https://github.com/qgis/QGIS/issues/30937)   [PR #3176](https://github.com/qgis/QGIS/pull/31766)    [PR #3178](https://github.com/qgis/QGIS/pull/31780)
-
-  crash in discover relations for postgresql layers                                           [#31213](https://github.com/qgis/QGIS/issues/31213)   [PR #3176](https://github.com/qgis/QGIS/pull/31768)    [PR #3177](https://github.com/qgis/QGIS/pull/31779)
-
-  Exporting raster as raw data to GeoPackage fails silently                                   [#30644](https://github.com/qgis/QGIS/issues/30644)   [PR #3177](https://github.com/qgis/QGIS/pull/31771)    [PR #3178](https://github.com/qgis/QGIS/pull/31781)
-
-  QGIS crashes after deactivating a GDAL driver in use in the project                         [#29212](https://github.com/qgis/QGIS/issues/29212)   [PR #3177](https://github.com/qgis/QGIS/pull/31772)    [PR #3180](https://github.com/qgis/QGIS/pull/31802)
-
-  Crash exporting to GS7BG format                                                             [#31775](https://github.com/qgis/QGIS/issues/31775)   [PR #3178](https://github.com/qgis/QGIS/pull/31785)    [PR #3183](https://github.com/qgis/QGIS/pull/31836)
-
-  pgdump is no longer a recognized format for the GDAL/OGR convert format algorithm           [#31421](https://github.com/qgis/QGIS/issues/31421)   [PR #3181](https://github.com/qgis/QGIS/pull/31811)    not worth
-
-  PBF files not loading correctly                                                             [#31062](https://github.com/qgis/QGIS/issues/31062)   [PR #3181](https://github.com/qgis/QGIS/pull/31812)    [PR #31835](https://github.com/qgis/QGIS/pull/31835)
-
-  Error importing cover from Geoserver WFS service                                            [#29844](https://github.com/qgis/QGIS/issues/29844)   [PR #31813](https://github.com/qgis/QGIS/pull/31813)   [PR #31867](https://github.com/qgis/QGIS/pull/31867)
-
-  Feature count from online Geojson not updated upon refresh                                  [#30518](https://github.com/qgis/QGIS/issues/30518)   [PR #31860](https://github.com/qgis/QGIS/pull/31860)   not worth
-
-  Edits in GeoJson datasources are not saved anymore                                          [#28580](https://github.com/qgis/QGIS/issues/28580)   GDAL <https://github.com/OSGeo/gdal/pull/1846>         Backported to GDAL 3.0 and 2.4 maintenance branches
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                 | URL issues (if reported)                            | URL PR or commit                                     | 3.4 backport PR or commit
+|----|----|----|----|
+| QGIS master crash upon exit @ QgsCoordinateTransformPrivate::freeProj on Windows platform | [#31762](https://github.com/qgis/QGIS/issues/31762) | [PR #3176](https://github.com/qgis/QGIS/pull/31764)  | [Commit 08bb3fe](https://github.com/qgis/QGIS/commit/08bb3fea3fc3f574755ecc0a7dc8381a9822e4cd)
+| QGIS master crash upon exit @ QgsCoordinateTransformPrivate::freeProj on Windows platform | [#31762](https://github.com/qgis/QGIS/issues/31762) | [PR #3184](https://github.com/qgis/QGIS/pull/31848)  | [PR #3185](https://github.com/qgis/QGIS/pull/31850)
+| QGIS WFS stripping of viewparam KVP from WFS Feature Requests                             | [#31026](https://github.com/qgis/QGIS/issues/31026) | [PR #3176](https://github.com/qgis/QGIS/pull/31765)  | [PR #3188](https://github.com/qgis/QGIS/pull/31883)
+| Crash: right click on image -\>export -\>save as-\>\"save raster layer as\"               | [#30937](https://github.com/qgis/QGIS/issues/30937) | [PR #3176](https://github.com/qgis/QGIS/pull/31766)  | [PR #3178](https://github.com/qgis/QGIS/pull/31780)
+| crash in discover relations for postgresql layers                                         | [#31213](https://github.com/qgis/QGIS/issues/31213) | [PR #3176](https://github.com/qgis/QGIS/pull/31768)  | [PR #3177](https://github.com/qgis/QGIS/pull/31779)
+| Exporting raster as raw data to GeoPackage fails silently                                 | [#30644](https://github.com/qgis/QGIS/issues/30644) | [PR #3177](https://github.com/qgis/QGIS/pull/31771)  | [PR #3178](https://github.com/qgis/QGIS/pull/31781)
+| QGIS crashes after deactivating a GDAL driver in use in the project                       | [#29212](https://github.com/qgis/QGIS/issues/29212) | [PR #3177](https://github.com/qgis/QGIS/pull/31772)  | [PR #3180](https://github.com/qgis/QGIS/pull/31802)
+| Crash exporting to GS7BG format                                                           | [#31775](https://github.com/qgis/QGIS/issues/31775) | [PR #3178](https://github.com/qgis/QGIS/pull/31785)  | [PR #3183](https://github.com/qgis/QGIS/pull/31836)
+| pgdump is no longer a recognized format for the GDAL/OGR convert format algorithm         | [#31421](https://github.com/qgis/QGIS/issues/31421) | [PR #3181](https://github.com/qgis/QGIS/pull/31811)  | not worth
+| PBF files not loading correctly                                                           | [#31062](https://github.com/qgis/QGIS/issues/31062) | [PR #3181](https://github.com/qgis/QGIS/pull/31812)  | [PR #31835](https://github.com/qgis/QGIS/pull/31835)
+| Error importing cover from Geoserver WFS service                                          | [#29844](https://github.com/qgis/QGIS/issues/29844) | [PR #31813](https://github.com/qgis/QGIS/pull/31813) | [PR #31867](https://github.com/qgis/QGIS/pull/31867)
+| Feature count from online Geojson not updated upon refresh                                | [#30518](https://github.com/qgis/QGIS/issues/30518) | [PR #31860](https://github.com/qgis/QGIS/pull/31860) | not worth
+| Edits in GeoJson datasources are not saved anymore                                        | [#28580](https://github.com/qgis/QGIS/issues/28580) | GDAL <https://github.com/OSGeo/gdal/pull/1846>       | Backported to GDAL 3.0 and 2.4 maintenance branches
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
@@ -1004,27 +920,17 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 
 ### Feature: Bug fixes by Sandro Santilli
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                         URL issues (if reported)                              URL PR or commit                                                                                  3.4 backport PR or commit
-  ----------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------
-  Adding Postgis rasters from DB Manager ask for password for each add                                              [#31162](https://github.com/qgis/QGIS/issues/31162)                                                                                                     
-
-  \[processing\] segmentizebymaxdistance puts qgis in endless CPU loop                                              [#31832](https://github.com/qgis/QGIS/issues/31832)   [Commit 6942b4b9](https://github.com/qgis/QGIS/commit/6942b4b93d252bc3a031db08a34f378d8d3c726d)   [Commit 3225f491](https://github.com/qgis/QGIS/commit/3225f4911a1199fc217aeca9fa63d9bf3d1b82c0)
-
-  file INSTALL cannot find doc/api/html                                                                             [#31842](https://github.com/qgis/QGIS/issues/31842)   [Commit 3225f491](https://github.com/qgis/QGIS/commit/3225f4911a1199fc217aeca9fa63d9bf3d1b82c0)   n/a
-
-  QGIS died on signal 11 \# at start up                                                                             [#31350](https://github.com/qgis/QGIS/issues/31350)                                                                                                     
-
-  repository files modified by `make check`                                                                         [#25830](https://github.com/qgis/QGIS/issues/25830)   [PR #31980](https://github.com/qgis/QGIS/pull/31980)                                              
-
-  CMake Error at cmake/FindGEOS.cmake:162                                                                           [#32170](https://github.com/qgis/QGIS/issues/32170)   [Commit bc9bb888](https://github.com/qgis/QGIS/commit/bc9bb8880a3db5a05c697f5d56708757a2ce999d)   [Commit 27f13936](https://github.com/qgis/QGIS/commit/27f13936afd970d766f398584a1ea509dc15b907)
-
-  False success from ogr provider\'s committChanges                                                                 [#32144](https://github.com/qgis/QGIS/issues/32144)   [Commit f421dc4f](https://github.com/qgis/QGIS/commit/f421dc4f92cfc019eec9823556d3c8f3e9589d95)   [Commit 136cec24](https://github.com/qgis/QGIS/commit/136cec244111748627c59db151002fddfc5f1708)
-
-  TestSagaAlgorithms: line 139, in check_algorithm: \'NoneType\' object has no attribute \'checkParameterValues\'   [#32143](https://github.com/qgis/QGIS/issues/32143)   [Commit 76b39de1](https://github.com/qgis/QGIS/commit/76b39de1b85375f48d7a5d35ebe39a52224d1809)   n/a
-
-  PostGIS Data Loads Extemely Slow                                                                                  [#26186](https://github.com/qgis/QGIS/issues/26186)   [PR #31858](https://github.com/qgis/QGIS/pull/31858)                                              
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                       | URL issues (if reported)                            | URL PR or commit                                                                                | 3.4 backport PR or commit
+|----|----|----|----|
+| Adding Postgis rasters from DB Manager ask for password for each add                                            | [#31162](https://github.com/qgis/QGIS/issues/31162)                                                                                                     
+| \[processing\] segmentizebymaxdistance puts qgis in endless CPU loop                                            | [#31832](https://github.com/qgis/QGIS/issues/31832) | [Commit 6942b4b9](https://github.com/qgis/QGIS/commit/6942b4b93d252bc3a031db08a34f378d8d3c726d) | [Commit 3225f491](https://github.com/qgis/QGIS/commit/3225f4911a1199fc217aeca9fa63d9bf3d1b82c0)
+| file INSTALL cannot find doc/api/html                                                                           | [#31842](https://github.com/qgis/QGIS/issues/31842) | [Commit 3225f491](https://github.com/qgis/QGIS/commit/3225f4911a1199fc217aeca9fa63d9bf3d1b82c0) | n/a
+| QGIS died on signal 11 \# at start up                                                                           | [#31350](https://github.com/qgis/QGIS/issues/31350)                                                                                                     
+| repository files modified by `make check`                                                                       | [#25830](https://github.com/qgis/QGIS/issues/25830) | [PR #31980](https://github.com/qgis/QGIS/pull/31980)                                              
+| CMake Error at cmake/FindGEOS.cmake:162                                                                         | [#32170](https://github.com/qgis/QGIS/issues/32170) | [Commit bc9bb888](https://github.com/qgis/QGIS/commit/bc9bb8880a3db5a05c697f5d56708757a2ce999d) | [Commit 27f13936](https://github.com/qgis/QGIS/commit/27f13936afd970d766f398584a1ea509dc15b907)
+| False success from ogr provider\'s committChanges                                                               | [#32144](https://github.com/qgis/QGIS/issues/32144) | [Commit f421dc4f](https://github.com/qgis/QGIS/commit/f421dc4f92cfc019eec9823556d3c8f3e9589d95) | [Commit 136cec24](https://github.com/qgis/QGIS/commit/136cec244111748627c59db151002fddfc5f1708)
+| TestSagaAlgorithms: line 139, in check_algorithm: \'NoneType\' object has no attribute \'checkParameterValues\' | [#32143](https://github.com/qgis/QGIS/issues/32143) | [Commit 76b39de1](https://github.com/qgis/QGIS/commit/76b39de1b85375f48d7a5d35ebe39a52224d1809) | n/a
+| PostGIS Data Loads Extemely Slow                                                                                | [#26186](https://github.com/qgis/QGIS/issues/26186) | [PR #31858](https://github.com/qgis/QGIS/pull/31858)                                              
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
@@ -1032,17 +938,12 @@ This feature was developed by [Sandro Santilli](http://strk.kbt.io/)
 
 ### Feature: Bug fixes by Matthias Kuhn
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                           URL issues (if reported)                              URL PR or commit                                       3.4 backport PR or commit
-  --------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ---------------------------
-  Crash when opening symbology tab of invalid layer   [#32041](https://github.com/qgis/QGIS/issues/32041)   [#32041](https://github.com/qgis/QGIS/issues/32041)    n/a
-
-  PR reviews                                          Many :D                                                                                                      
-
-  qgz are marked as temporary on windows              [#32118](https://github.com/qgis/QGIS/issues/32118)                                                          
-
-  Allow selecting geometry type in context            [#32121](https://github.com/qgis/QGIS/issues/32121)   [PR #32125](https://github.com/qgis/QGIS/pull/32125)   n/a
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                         | URL issues (if reported)                            | URL PR or commit                                     | 3.4 backport PR or commit
+|----|----|----|----|
+| Crash when opening symbology tab of invalid layer | [#32041](https://github.com/qgis/QGIS/issues/32041) | [#32041](https://github.com/qgis/QGIS/issues/32041)  | n/a
+| PR reviews                                        | Many :D                                                                                                      
+| qgz are marked as temporary on windows            | [#32118](https://github.com/qgis/QGIS/issues/32118)                                                          
+| Allow selecting geometry type in context          | [#32121](https://github.com/qgis/QGIS/issues/32121) | [PR #32125](https://github.com/qgis/QGIS/pull/32125) | n/a
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
@@ -1050,19 +951,13 @@ This feature was developed by [Matthias Kuhn](https://www.opengis.ch/)
 
 ### Feature: Bug fixes by Paul Blottiere
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                      URL issues (if reported)                              URL PR or commit                                             3.4 backport PR or commit
-  ------------------------------------------------------------------------------ ----------------------------------------------------- ------------------------------------------------------------ ---------------------------
-  Fixes invalid schemaLocation in GetCapabilities doc                            [#32085](https://github.com/qgis/QGIS/issues/32085)   [PR #32352](https://github.com/qgis/QGIS/pull/32352)         
-
-  Invalid WMS GetFeatureInfo response with json info_format                      [#32326](https://github.com/qgis/QGIS/issues/32326)   [PR #32386](https://github.com/qgis/QGIS/pull/32386)/files   
-
-  QGIS Server SELECTION doesn\'t work with Postgres ids of type bigint or text   [#29779](https://github.com/qgis/QGIS/issues/29779)                                                                
-
-  Regression with opacities for the WMS GetPrint request                         [#29317](https://github.com/qgis/QGIS/issues/29317)                                                                
-
-  Unreported regression: Invalid renderer type after loading a QML style file    unreported regression                                 [PR #32388](https://github.com/qgis/QGIS/pull/32388)         
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                    | URL issues (if reported)                            | URL PR or commit                                           | 3.4 backport PR or commit
+|----|----|----|----|
+| Fixes invalid schemaLocation in GetCapabilities doc                          | [#32085](https://github.com/qgis/QGIS/issues/32085) | [PR #32352](https://github.com/qgis/QGIS/pull/32352)         
+| Invalid WMS GetFeatureInfo response with json info_format                    | [#32326](https://github.com/qgis/QGIS/issues/32326) | [PR #32386](https://github.com/qgis/QGIS/pull/32386)/files   
+| QGIS Server SELECTION doesn\'t work with Postgres ids of type bigint or text | [#29779](https://github.com/qgis/QGIS/issues/29779)                                                                
+| Regression with opacities for the WMS GetPrint request                       | [#29317](https://github.com/qgis/QGIS/issues/29317)                                                                
+| Unreported regression: Invalid renderer type after loading a QML style file  | unreported regression                               | [PR #32388](https://github.com/qgis/QGIS/pull/32388)         
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
@@ -1070,157 +965,82 @@ This feature was developed by Paul Blottiere
 
 ### Feature: Bug fixes by Nyall Dawson
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                                                                URL issues (if reported)                                                                          URL PR or commit                                                                                  3.4 backport PR or commit
-  -------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------
-  Fix crash when deleting layouts from designer window                                                                                                     [#32465](https://github.com/qgis/QGIS/issues/32465)                                               [Commit e643e7f6](https://github.com/qgis/QGIS/commit/e643e7f6abe63aff123e07a0137afdda3987d4e6)   n/a
-
-  Fix model to python when model has no input parameters                                                                                                   [Commit 6f1c42e7](https://github.com/qgis/QGIS/commit/6f1c42e7bc9fa6ddfae3bbc1304ebeb53fe6a014)   n/a                                                                                               
-
-  Fix string escaping when converting models to python code                                                                                                [#32451](https://github.com/qgis/QGIS/issues/32451)                                               [Commit e3eb4f54](https://github.com/qgis/QGIS/commit/e3eb4f54abdd8c6d4f4de443e3517775e9e565e1)   n/a
-
-  Fix memory leak                                                                                                                                          [Commit 5be31915](https://github.com/qgis/QGIS/commit/5be319157f112a2fdbab7f03d0010d69f1e79157)   n/a                                                                                               
-
-  Fix potential overflow in raster renderer                                                                                                                [Commit 1ba8db41](https://github.com/qgis/QGIS/commit/1ba8db41b67c7c481affd5271864cc2318ce06e4)   n/a                                                                                               
-
-  Restore project variables early in the project read cycle                                                                                                [#32382](https://github.com/qgis/QGIS/issues/32382)                                               [Commit d76835fe](https://github.com/qgis/QGIS/commit/d76835fec5a9217a5ea1996374d142f7319f8d08)   n/a
-
-  Improve docs for Join by Nearest, raise warning in log                                                                                                   [#32317](https://github.com/qgis/QGIS/issues/32317)                                               [Commit 670c81f9](https://github.com/qgis/QGIS/commit/670c81f9212ada60f56c1c70ee9d37280052622c)   n/a
-
-  Catch some reprojection exceptions during raster rendering                                                                                               [#32301](https://github.com/qgis/QGIS/issues/32301)                                               [Commit 1dfc0c1e](https://github.com/qgis/QGIS/commit/1dfc0c1e4eb8be26bb7214e3978aa6d80974c221)   n/a
-
-  \[labeling\] Fix broken numeric formatting settings, add tests                                                                                           [#32393](https://github.com/qgis/QGIS/issues/32393)                                               [Commit b58dd674](https://github.com/qgis/QGIS/commit/b58dd6745fabf8bccd6dbeb684b37393d5953cb7)   n/a
-
-  Fix uncaught transform exception when determining AFS layer bounds                                                                                       unreported                                                                                        [Commit 857697dd](https://github.com/qgis/QGIS/commit/857697dd9919e80fc03e0c2059e56ce7311e9b49)   n/a
-
-  Fix qt warning thrown when converting a 2.18 project                                                                                                     unreported                                                                                        [Commit 12ad9fca](https://github.com/qgis/QGIS/commit/12ad9fca1ed5027129161ee5b5c764b8374d0b51)   n/a
-
-  Add option to take no action (\"Leave as an unknown CRS\") when a layer is loaded which has no CRS                                                       #19762, #27634, #24815 (and probably others)                                                      [Commit ffe66bff](https://github.com/qgis/QGIS/commit/ffe66bff82be16dd90cd95f13331e5be7ca2c628)   n/a
-
-  Don\'t force fallback to WGS84 for unknown layer CRSes                                                                                                   unreported                                                                                        [Commit 93741566](https://github.com/qgis/QGIS/commit/937415663f609fa7e41056aeb1176a0a145accc1)   n/a
-
-  Fix memory layers cannot use non-EPSG CRS codes                                                                                                          unreported, but likely a cause of many bugs                                                       [Commit 2dad68f7](https://github.com/qgis/QGIS/commit/2dad68f76396a419b25fa8dad2b7b16552086740)   n/a
-
-  Fix crash after deleting report sections                                                                                                                 [#31302](https://github.com/qgis/QGIS/issues/31302)                                               [Commit 3356460c](https://github.com/qgis/QGIS/commit/3356460ce70af15105880d135271595dccfc397c)   [Commit d3230ac0](https://github.com/qgis/QGIS/commit/d3230ac0c545604a97fa3028ca3e846bff65004c)
-
-  Ensure polygon rings generated for rendering are always closed                                                                                           unreported                                                                                        [Commit a69e38d9](https://github.com/qgis/QGIS/commit/a69e38d9c358faea5ae4a8628add1e6721cc23e8)   n/a
-
-  Don\'t crash QgsTessellator when an empty polygon is added                                                                                               unreported                                                                                        [Commit 761b2e77](https://github.com/qgis/QGIS/commit/761b2e778594f4051a72d02b898354f501e336fe)   n/a
-
-  Fix crash in topology checker plugin after a check is canceled                                                                                           unreported                                                                                        [Commit 606bcd35](https://github.com/qgis/QGIS/commit/606bcd35143d09cca5b1ec45bdb5b13236e4376b)   n/a
-
-  Fix topology checker multipart check                                                                                                                     [#28361](https://github.com/qgis/QGIS/issues/28361)                                               [Commit 5101386b](https://github.com/qgis/QGIS/commit/5101386b37fb4d180d32d31663404e3bcc647cec)   n/a
-
-  Fix crash on exit when topology checker dock is open with visible results                                                                                unreported                                                                                        [Commit 64375ad4](https://github.com/qgis/QGIS/commit/64375ad4d28597eb97808f64e1481915df7a676c)   n/a
-
-  Don\'t load print layouts when opening project browser items                                                                                             via email                                                                                         [Commit 9f1ce084](https://github.com/qgis/QGIS/commit/9f1ce08418db9545ed18d6711c472833f9889e1d)   n/a
-
-  Add QgsProject flag to avoid loading print layouts when reading a project file, avoids crashes when project is loaded in background thread               via email                                                                                         [Commit d0ed3746](https://github.com/qgis/QGIS/commit/d0ed3746629ae9c9349fe2e9c75550679120026d)   n/a
-
-  Don\'t try to load HTML content when a layout is created in a background thread                                                                          via email                                                                                         [Commit 53252496](https://github.com/qgis/QGIS/commit/532524961c0880b33e1d7ed4a3ce0805d7f0bc71)   [Commit 5fcab0e7](https://github.com/qgis/QGIS/commit/5fcab0e713a1e9ffde8b049f620d4a5cd6a81ff3)
-
-  Huge speed up to QgsTessellator                                                                                                                          [Commit 577e1e96](https://github.com/qgis/QGIS/commit/577e1e962d4004f9cd11a169860e0b099216c963)   n/a                                                                                               
-
-  \[processing\] Ensure all objects used by the model are correctly imported                                                                               [#32004](https://github.com/qgis/QGIS/issues/32004)                                               [Commit e5e3fe47](https://github.com/qgis/QGIS/commit/e5e3fe473e8e6764f528b4a40095a7a047e9c357)   n/a
-
-  \[processing\] Avoid confusing use of expression parameter type in Random Points in Polygon algorithm                                                    [#27640](https://github.com/qgis/QGIS/issues/27640)                                               [Commit 196e15a0](https://github.com/qgis/QGIS/commit/196e15a0ff974622bfa1e7dfdeb9fe8567a7f3b7)   n/a
-
-  \[layouts\] Update map settings variables in UI when map extent/rotation changes                                                                         [#24136](https://github.com/qgis/QGIS/issues/24136)                                               [Commit 86c83537](https://github.com/qgis/QGIS/commit/86c83537f9b03816ba5b8f90c8cf8a2820077441)   n/a
-
-  \[layouts\] Fix layout variables set programmatically do not show in GUI                                                                                 [#28837](https://github.com/qgis/QGIS/issues/28837)                                               [Commit 1afdd935](https://github.com/qgis/QGIS/commit/1afdd935cf84cbd702093935a676672d1e349da1)   n/a
-
-  \[layouts\] Ensure variable panels are updated when layout or atlas properties change                                                                    [#26402](https://github.com/qgis/QGIS/issues/26402)                                               [Commit 2b31e03a](https://github.com/qgis/QGIS/commit/2b31e03ad0659500a733d71c10c54e17e6817c10)   n/a
-
-  \[layouts\] Move page background setting to a per-page option                                                                                            [#25695](https://github.com/qgis/QGIS/issues/25695)                                               [Commit 45e847ef](https://github.com/qgis/QGIS/commit/45e847ef69b56b4c12774363e20a7a05f49e8618)   n/a
-
-  Optimize QgsContrastEnhancementFunction                                                                                                                  [Commit f5c21a0f](https://github.com/qgis/QGIS/commit/f5c21a0fbd72fe840900e0ad35c4af285fbd8a79)   n/a                                                                                               
-
-  \[layouts\] Prevent removal of the last remaining page in a layout                                                                                       via email                                                                                         [Commit e6ecfdd3](https://github.com/qgis/QGIS/commit/e6ecfdd39bc2ae842c437700508899a9e1aa9dcd)   [Commit b65f23f8](https://github.com/qgis/QGIS/commit/b65f23f86b4630b4b5157400a713c36081bd56b9)
-
-  \[layouts\] Fix crash when exporting layout with no pages                                                                                                via email                                                                                         [Commit b784d698](https://github.com/qgis/QGIS/commit/b784d6982826039bd9fa35b7ecd1a362e29c0b04)   [Commit f8355cbb](https://github.com/qgis/QGIS/commit/f8355cbbbe4bdbbae9c3f1b135ed59bbc51226a2)
-
-  Fix conditional formatting panel high dpi issues                                                                                                         [Commit 1f033fe8](https://github.com/qgis/QGIS/commit/1f033fe83d63a2edb6ddc2b6d90169e3b814764e)   n/a                                                                                               
-
-  Fix loss of font setting when editing conditional format                                                                                                 [Commit 72efc1ed](https://github.com/qgis/QGIS/commit/72efc1edde693800b6604e8ec3afcc892ea5239e)   n/a                                                                                               
-
-  Avoid overflow in QgsImageOperation                                                                                                                      [Commit aefbf662](https://github.com/qgis/QGIS/commit/aefbf6627256637cf455b2df409b3a4bf8171b33)   [Commit 9f4d3a87](https://github.com/qgis/QGIS/commit/9f4d3a8745b2d89faeb6a9272369eaa772e3638c)   
-
-  \[processing\] Extend api for retrieving a layer in a compatible format                                                                                  via 3rd party plugin bug tracker                                                                  [Commit 651c5071](https://github.com/qgis/QGIS/commit/651c5071806d6f4f4dafc800e6b0d67f043a9ef0)   n/a
-
-  Fix conditional styles in feature list view do not update when the layer\'s conditional styles are changed                                               [Commit bccd5a46](https://github.com/qgis/QGIS/commit/bccd5a46106d7c5a63b3bd8c64ad1491a60205af)   n/a                                                                                               
-
-  Fix broken display of conditional styles in feature list view                                                                                            [Commit 5f7264d4](https://github.com/qgis/QGIS/commit/5f7264d4d18d6894c4d33017439dc517a932fd75)   n/a                                                                                               
-
-  Fix incorrect conditional styling applied to rows in some cases                                                                                          [Commit c15c7271](https://github.com/qgis/QGIS/commit/c15c72718909f4bce2d172b819c74ec7d8d4d9b3)   n/a                                                                                               
-
-  Use invalid colors, not transparent colors, to indict not set colors in conditional formats, fixes incorrect colors used for conditionally styled rows   [Commit bc82cffd](https://github.com/qgis/QGIS/commit/bc82cffd85342d92435600547c220eb1eaf90257)   n/a                                                                                               
-
-  \"\[labeling\] When an extreme number of features are being labeled from a single layer, place additional limits on the maximum number of                                                                                                                                                                                                                    
-
-  labeling candidates to generate for features in this layer\"                                                                                             [Commit 61bfced6](https://github.com/qgis/QGIS/commit/61bfced6a7ae109bc97a0924eae108c0e51916d5)   n/a                                                                                               
-
-  \[layouts\] Fix incorrect alignment of items when the align or distribute tools are used with items with a non-top-left reference point                  [#31900](https://github.com/qgis/QGIS/issues/31900)                                               [Commit b4550dc4](https://github.com/qgis/QGIS/commit/b4550dc4c06eec23ace4cbc5c6f1f8b23c8ee14f)   n/a
-
-  \[processing\] Respect user set default vector output format in vector split algorithm                                                                   [Commit 90bac82f](https://github.com/qgis/QGIS/commit/90bac82f124ccb53e43bb99f5d483105bea1c967)   n/a                                                                                               
-
-  Fix GUI is not updated when layout atlas is set to use the default filename expression                                                                   [#20786](https://github.com/qgis/QGIS/issues/20786)                                               [Commit a4da849e](https://github.com/qgis/QGIS/commit/a4da849e9d190ece1b748303cc8f68333f1e0e78)   n/a
-
-  \[reports\] Remove useless extra set of export actions                                                                                                   [#26384](https://github.com/qgis/QGIS/issues/26384)                                               [Commit d6b41813](https://github.com/qgis/QGIS/commit/d6b4181349a274e8d34196a340f4b806403af06b)   n/a
-
-  \[reports\] Fix crash when print button clicked before a report section is opened                                                                        unreported                                                                                        [Commit c93fd0a4](https://github.com/qgis/QGIS/commit/c93fd0a4350ea14db9728ad17ada06e70eb9ffd6)   n/a
-
-  \[reports\] Reduce minimum width of report organiser dock                                                                                                [#25916](https://github.com/qgis/QGIS/issues/25916)                                               [Commit 7c490848](https://github.com/qgis/QGIS/commit/7c4908481269f38e1b96c730542d5299903963fb)   n/a
-
-  \[layouts\] Add a page number selection combo box at the top of the guide manager dock                                                                   [#25700](https://github.com/qgis/QGIS/issues/25700)                                               [Commit 2f22aeaf](https://github.com/qgis/QGIS/commit/2f22aeaf276785867ed850f54c691a0a5b7c0aeb)   n/a
-
-  Show color button style \"Pick color\" and \"Chooe Color\" and symbol button menu                                                                        [#25696](https://github.com/qgis/QGIS/issues/25696)                                               [Commit 39cfd0f9](https://github.com/qgis/QGIS/commit/39cfd0f935bb8c6669237bc7abe6ca89c6a82a32)   n/a
-
-  Fix out of sync layout bounds after page removal                                                                                                         [#26665](https://github.com/qgis/QGIS/issues/26665)                                               [Commit d498eed0](https://github.com/qgis/QGIS/commit/d498eed0a5caf01b914a2c25f0c1d255d955b4a9)   n/a
-
-  \[layouts\] Fix odd selection behavior when keyboard modifiers are pressed when rectangular selection ends                                               [Commit 37b5af54](https://github.com/qgis/QGIS/commit/37b5af54d9423563d17422f5b90d6a7dbdfe0299)   n/a                                                                                               
-
-  Fix interaction with group members in items panel                                                                                                        [#26674](https://github.com/qgis/QGIS/issues/26674)                                               [Commit 5154240f](https://github.com/qgis/QGIS/commit/5154240fa94401952329138300dd2035e5519d5e)   n/a
-
-  \[layout\] Fix invalid svg exports when including metadata                                                                                               [#28130](https://github.com/qgis/QGIS/issues/28130)                                               [Commit cc94aebc](https://github.com/qgis/QGIS/commit/cc94aebc6fa2e53adc99902b7f7ac4f87e0361db)   n/a
-
-  \[legends\] Fix missing symbols for inverted polygon layers when using filter by map content                                                             [#22718](https://github.com/qgis/QGIS/issues/22718)                                               [Commit abc9f47c](https://github.com/qgis/QGIS/commit/abc9f47ca471540c9b0f9dd6159d3ac7f9791a3c)   n/a
-
-  Use a slightly larger font size in CRS details on Windows                                                                                                [#31297](https://github.com/qgis/QGIS/issues/31297)                                               [Commit 757017c2](https://github.com/qgis/QGIS/commit/757017c2c29a0ea4b72527e4cd98e700c720022c)   n/a
-
-  \[processing\] Add warning when packaging a geopackage with no layers                                                                                    [#31888](https://github.com/qgis/QGIS/issues/31888)                                               [Commit f11e6603](https://github.com/qgis/QGIS/commit/f11e6603957f69a34ad7aa9893aa144cc5020ca4)   n/a
-
-  \[layouts\] Fix crash when opening layout with dynamic image in html label                                                                               [#28996](https://github.com/qgis/QGIS/issues/28996)                                               [Commit 5db6165f](https://github.com/qgis/QGIS/commit/5db6165fb597c2db278e678953578992789fa38b)   [Commit e29865cd](https://github.com/qgis/QGIS/commit/e29865cd485c3576db27aab4cad86614f3eff2f3)
-
-  Expose report feature settings when an attribute table is used in an atlas                                                                               [#28441](https://github.com/qgis/QGIS/issues/28441)                                               [Commit 9fd17c8f](https://github.com/qgis/QGIS/commit/9fd17c8f3cce8fb5864db137da71c3cb61b44510)   n/a
-
-  \[layouts\] Fix attribute table ignores cell margin for top/bottom aligned text                                                                          [#31259](https://github.com/qgis/QGIS/issues/31259)                                               [Commit 7b356fe4](https://github.com/qgis/QGIS/commit/7b356fe4cde1b030ddfb589a22cb59229311074e)   n/a
-
-  Fix truncated legend symbol borders when layer has opacity set                                                                                           [Commit 30e14938](https://github.com/qgis/QGIS/commit/30e149387bcccbd14f057a16cb27729c57c9a210)   n/a                                                                                               
-
-  Fix adding/moving legend is very slow with large projects                                                                                                [#29058](https://github.com/qgis/QGIS/issues/29058)                                               [Commit 758ac909](https://github.com/qgis/QGIS/commit/758ac9092f9fac3f7533766f329f17832b2dcd35)   n/a
-
-  \[reports\] Fix predefined scale mode is incompatible with report outputs                                                                                [#29196](https://github.com/qgis/QGIS/issues/29196)                                               [Commit fcd21e48](https://github.com/qgis/QGIS/commit/fcd21e485068d8082bdef0a5a7393b57fe5bf3c1)   n/a
-
-  Ensure atlas expression evaluation has access to coverage layer scope                                                                                    [#31807](https://github.com/qgis/QGIS/issues/31807)                                               [Commit 3de05939](https://github.com/qgis/QGIS/commit/3de059395706a225ca137b3d4a7a34b27d3cc9ae)   n/a
-
-  Resizing pages to content should not create empty page size if no items are present                                                                      [#29034](https://github.com/qgis/QGIS/issues/29034)                                               [Commit 421e68cf](https://github.com/qgis/QGIS/commit/421e68cf5ae5637001765842e257caf6becdb876)   n/a
-
-  Fix map rotation does not immediately restore in reports                                                                                                 [#31217](https://github.com/qgis/QGIS/issues/31217)                                               [Commit f5afebe5](https://github.com/qgis/QGIS/commit/f5afebe5dd0228ceb612a9823a80c77ccd51a1e6)   n/a
-
-  Do not return nan values when an assistant is used with min val == max val                                                                               [#31242](https://github.com/qgis/QGIS/issues/31242)                                               [Commit 97923751](https://github.com/qgis/QGIS/commit/979237515ce2921b9552a99eda071e9e9a14297a)   n/a
-
-  \[layouts\] Fix label items don\'t update when their opacity \< 100                                                                                      [#29079](https://github.com/qgis/QGIS/issues/29079)                                               [Commit f9a47738](https://github.com/qgis/QGIS/commit/f9a47738aaaec7504f912b2442195662a216b9e3)   n/a
-
-  Fix project load status indicator can get \"stuck\" after project load                                                                                   unreported                                                                                        [Commit 40d95b69](https://github.com/qgis/QGIS/commit/40d95b69d91ade71473f5ea0182040d8398cc668)   n/a
-
-  Fix corrupted expressions in filter indicator tooltips                                                                                                   [Commit 393e623b](https://github.com/qgis/QGIS/commit/393e623ba7d278eabc4f09aeaabb92f56fa269c9)   [Commit 8e0e368f](https://github.com/qgis/QGIS/commit/8e0e368f255ba10c530afd445ecd1ab53bf266bb)   
-
-  Fix cannot use GPS panel to draw features in multi polygon/line                                                                                          [#29144](https://github.com/qgis/QGIS/issues/29144)                                               [Commit dc2b209d](https://github.com/qgis/QGIS/commit/dc2b209da3609a47b1457c0cb12417afbcb36344)   n/a
-
-  Fix loss of label background settings when restoring projects.                                                                                           [#31427](https://github.com/qgis/QGIS/issues/31427)                                               [Commit aa4a8da3](https://github.com/qgis/QGIS/commit/aa4a8da3a713b6961fccce019c5e9b5778f68b23)   n/a
-
-  Fix crash in point displacement renderer                                                                                                                 [Commit 7043933f](https://github.com/qgis/QGIS/commit/7043933ff2bed42df5ae3439867330e39fe60f53)   n/a                                                                                               
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                                                              | URL issues (if reported)                                                                        | URL PR or commit                                                                                | 3.4 backport PR or commit
+|----|----|----|----|
+| Fix crash when deleting layouts from designer window                                                                                                   | [#32465](https://github.com/qgis/QGIS/issues/32465)                                             | [Commit e643e7f6](https://github.com/qgis/QGIS/commit/e643e7f6abe63aff123e07a0137afdda3987d4e6) | n/a
+| Fix model to python when model has no input parameters                                                                                                 | [Commit 6f1c42e7](https://github.com/qgis/QGIS/commit/6f1c42e7bc9fa6ddfae3bbc1304ebeb53fe6a014) | n/a                                                                                               
+| Fix string escaping when converting models to python code                                                                                              | [#32451](https://github.com/qgis/QGIS/issues/32451)                                             | [Commit e3eb4f54](https://github.com/qgis/QGIS/commit/e3eb4f54abdd8c6d4f4de443e3517775e9e565e1) | n/a
+| Fix memory leak                                                                                                                                        | [Commit 5be31915](https://github.com/qgis/QGIS/commit/5be319157f112a2fdbab7f03d0010d69f1e79157) | n/a                                                                                               
+| Fix potential overflow in raster renderer                                                                                                              | [Commit 1ba8db41](https://github.com/qgis/QGIS/commit/1ba8db41b67c7c481affd5271864cc2318ce06e4) | n/a                                                                                               
+| Restore project variables early in the project read cycle                                                                                              | [#32382](https://github.com/qgis/QGIS/issues/32382)                                             | [Commit d76835fe](https://github.com/qgis/QGIS/commit/d76835fec5a9217a5ea1996374d142f7319f8d08) | n/a
+| Improve docs for Join by Nearest, raise warning in log                                                                                                 | [#32317](https://github.com/qgis/QGIS/issues/32317)                                             | [Commit 670c81f9](https://github.com/qgis/QGIS/commit/670c81f9212ada60f56c1c70ee9d37280052622c) | n/a
+| Catch some reprojection exceptions during raster rendering                                                                                             | [#32301](https://github.com/qgis/QGIS/issues/32301)                                             | [Commit 1dfc0c1e](https://github.com/qgis/QGIS/commit/1dfc0c1e4eb8be26bb7214e3978aa6d80974c221) | n/a
+| \[labeling\] Fix broken numeric formatting settings, add tests                                                                                         | [#32393](https://github.com/qgis/QGIS/issues/32393)                                             | [Commit b58dd674](https://github.com/qgis/QGIS/commit/b58dd6745fabf8bccd6dbeb684b37393d5953cb7) | n/a
+| Fix uncaught transform exception when determining AFS layer bounds                                                                                     | unreported                                                                                      | [Commit 857697dd](https://github.com/qgis/QGIS/commit/857697dd9919e80fc03e0c2059e56ce7311e9b49) | n/a
+| Fix qt warning thrown when converting a 2.18 project                                                                                                   | unreported                                                                                      | [Commit 12ad9fca](https://github.com/qgis/QGIS/commit/12ad9fca1ed5027129161ee5b5c764b8374d0b51) | n/a
+| Add option to take no action (\"Leave as an unknown CRS\") when a layer is loaded which has no CRS                                                     | #19762, #27634, #24815 (and probably others)                                                    | [Commit ffe66bff](https://github.com/qgis/QGIS/commit/ffe66bff82be16dd90cd95f13331e5be7ca2c628) | n/a
+| Don\'t force fallback to WGS84 for unknown layer CRSes                                                                                                 | unreported                                                                                      | [Commit 93741566](https://github.com/qgis/QGIS/commit/937415663f609fa7e41056aeb1176a0a145accc1) | n/a
+| Fix memory layers cannot use non-EPSG CRS codes                                                                                                        | unreported, but likely a cause of many bugs                                                     | [Commit 2dad68f7](https://github.com/qgis/QGIS/commit/2dad68f76396a419b25fa8dad2b7b16552086740) | n/a
+| Fix crash after deleting report sections                                                                                                               | [#31302](https://github.com/qgis/QGIS/issues/31302)                                             | [Commit 3356460c](https://github.com/qgis/QGIS/commit/3356460ce70af15105880d135271595dccfc397c) | [Commit d3230ac0](https://github.com/qgis/QGIS/commit/d3230ac0c545604a97fa3028ca3e846bff65004c)
+| Ensure polygon rings generated for rendering are always closed                                                                                         | unreported                                                                                      | [Commit a69e38d9](https://github.com/qgis/QGIS/commit/a69e38d9c358faea5ae4a8628add1e6721cc23e8) | n/a
+| Don\'t crash QgsTessellator when an empty polygon is added                                                                                             | unreported                                                                                      | [Commit 761b2e77](https://github.com/qgis/QGIS/commit/761b2e778594f4051a72d02b898354f501e336fe) | n/a
+| Fix crash in topology checker plugin after a check is canceled                                                                                         | unreported                                                                                      | [Commit 606bcd35](https://github.com/qgis/QGIS/commit/606bcd35143d09cca5b1ec45bdb5b13236e4376b) | n/a
+| Fix topology checker multipart check                                                                                                                   | [#28361](https://github.com/qgis/QGIS/issues/28361)                                             | [Commit 5101386b](https://github.com/qgis/QGIS/commit/5101386b37fb4d180d32d31663404e3bcc647cec) | n/a
+| Fix crash on exit when topology checker dock is open with visible results                                                                              | unreported                                                                                      | [Commit 64375ad4](https://github.com/qgis/QGIS/commit/64375ad4d28597eb97808f64e1481915df7a676c) | n/a
+| Don\'t load print layouts when opening project browser items                                                                                           | via email                                                                                       | [Commit 9f1ce084](https://github.com/qgis/QGIS/commit/9f1ce08418db9545ed18d6711c472833f9889e1d) | n/a
+| Add QgsProject flag to avoid loading print layouts when reading a project file, avoids crashes when project is loaded in background thread             | via email                                                                                       | [Commit d0ed3746](https://github.com/qgis/QGIS/commit/d0ed3746629ae9c9349fe2e9c75550679120026d) | n/a
+| Don\'t try to load HTML content when a layout is created in a background thread                                                                        | via email                                                                                       | [Commit 53252496](https://github.com/qgis/QGIS/commit/532524961c0880b33e1d7ed4a3ce0805d7f0bc71) | [Commit 5fcab0e7](https://github.com/qgis/QGIS/commit/5fcab0e713a1e9ffde8b049f620d4a5cd6a81ff3)
+| Huge speed up to QgsTessellator                                                                                                                        | [Commit 577e1e96](https://github.com/qgis/QGIS/commit/577e1e962d4004f9cd11a169860e0b099216c963) | n/a                                                                                               
+| \[processing\] Ensure all objects used by the model are correctly imported                                                                             | [#32004](https://github.com/qgis/QGIS/issues/32004)                                             | [Commit e5e3fe47](https://github.com/qgis/QGIS/commit/e5e3fe473e8e6764f528b4a40095a7a047e9c357) | n/a
+| \[processing\] Avoid confusing use of expression parameter type in Random Points in Polygon algorithm                                                  | [#27640](https://github.com/qgis/QGIS/issues/27640)                                             | [Commit 196e15a0](https://github.com/qgis/QGIS/commit/196e15a0ff974622bfa1e7dfdeb9fe8567a7f3b7) | n/a
+| \[layouts\] Update map settings variables in UI when map extent/rotation changes                                                                       | [#24136](https://github.com/qgis/QGIS/issues/24136)                                             | [Commit 86c83537](https://github.com/qgis/QGIS/commit/86c83537f9b03816ba5b8f90c8cf8a2820077441) | n/a
+| \[layouts\] Fix layout variables set programmatically do not show in GUI                                                                               | [#28837](https://github.com/qgis/QGIS/issues/28837)                                             | [Commit 1afdd935](https://github.com/qgis/QGIS/commit/1afdd935cf84cbd702093935a676672d1e349da1) | n/a
+| \[layouts\] Ensure variable panels are updated when layout or atlas properties change                                                                  | [#26402](https://github.com/qgis/QGIS/issues/26402)                                             | [Commit 2b31e03a](https://github.com/qgis/QGIS/commit/2b31e03ad0659500a733d71c10c54e17e6817c10) | n/a
+| \[layouts\] Move page background setting to a per-page option                                                                                          | [#25695](https://github.com/qgis/QGIS/issues/25695)                                             | [Commit 45e847ef](https://github.com/qgis/QGIS/commit/45e847ef69b56b4c12774363e20a7a05f49e8618) | n/a
+| Optimize QgsContrastEnhancementFunction                                                                                                                | [Commit f5c21a0f](https://github.com/qgis/QGIS/commit/f5c21a0fbd72fe840900e0ad35c4af285fbd8a79) | n/a                                                                                               
+| \[layouts\] Prevent removal of the last remaining page in a layout                                                                                     | via email                                                                                       | [Commit e6ecfdd3](https://github.com/qgis/QGIS/commit/e6ecfdd39bc2ae842c437700508899a9e1aa9dcd) | [Commit b65f23f8](https://github.com/qgis/QGIS/commit/b65f23f86b4630b4b5157400a713c36081bd56b9)
+| \[layouts\] Fix crash when exporting layout with no pages                                                                                              | via email                                                                                       | [Commit b784d698](https://github.com/qgis/QGIS/commit/b784d6982826039bd9fa35b7ecd1a362e29c0b04) | [Commit f8355cbb](https://github.com/qgis/QGIS/commit/f8355cbbbe4bdbbae9c3f1b135ed59bbc51226a2)
+| Fix conditional formatting panel high dpi issues                                                                                                       | [Commit 1f033fe8](https://github.com/qgis/QGIS/commit/1f033fe83d63a2edb6ddc2b6d90169e3b814764e) | n/a                                                                                               
+| Fix loss of font setting when editing conditional format                                                                                               | [Commit 72efc1ed](https://github.com/qgis/QGIS/commit/72efc1edde693800b6604e8ec3afcc892ea5239e) | n/a                                                                                               
+| Avoid overflow in QgsImageOperation                                                                                                                    | [Commit aefbf662](https://github.com/qgis/QGIS/commit/aefbf6627256637cf455b2df409b3a4bf8171b33) | [Commit 9f4d3a87](https://github.com/qgis/QGIS/commit/9f4d3a8745b2d89faeb6a9272369eaa772e3638c)   
+| \[processing\] Extend api for retrieving a layer in a compatible format                                                                                | via 3rd party plugin bug tracker                                                                | [Commit 651c5071](https://github.com/qgis/QGIS/commit/651c5071806d6f4f4dafc800e6b0d67f043a9ef0) | n/a
+| Fix conditional styles in feature list view do not update when the layer\'s conditional styles are changed                                             | [Commit bccd5a46](https://github.com/qgis/QGIS/commit/bccd5a46106d7c5a63b3bd8c64ad1491a60205af) | n/a                                                                                               
+| Fix broken display of conditional styles in feature list view                                                                                          | [Commit 5f7264d4](https://github.com/qgis/QGIS/commit/5f7264d4d18d6894c4d33017439dc517a932fd75) | n/a                                                                                               
+| Fix incorrect conditional styling applied to rows in some cases                                                                                        | [Commit c15c7271](https://github.com/qgis/QGIS/commit/c15c72718909f4bce2d172b819c74ec7d8d4d9b3) | n/a                                                                                               
+| Use invalid colors, not transparent colors, to indict not set colors in conditional formats, fixes incorrect colors used for conditionally styled rows | [Commit bc82cffd](https://github.com/qgis/QGIS/commit/bc82cffd85342d92435600547c220eb1eaf90257) | n/a                                                                                               
+| \"\[labeling\] When an extreme number of features are being labeled from a single layer, place additional limits on the maximum number of                                                                                                                                                                                                                    
+| labeling candidates to generate for features in this layer\"                                                                                           | [Commit 61bfced6](https://github.com/qgis/QGIS/commit/61bfced6a7ae109bc97a0924eae108c0e51916d5) | n/a                                                                                               
+| \[layouts\] Fix incorrect alignment of items when the align or distribute tools are used with items with a non-top-left reference point                | [#31900](https://github.com/qgis/QGIS/issues/31900)                                             | [Commit b4550dc4](https://github.com/qgis/QGIS/commit/b4550dc4c06eec23ace4cbc5c6f1f8b23c8ee14f) | n/a
+| \[processing\] Respect user set default vector output format in vector split algorithm                                                                 | [Commit 90bac82f](https://github.com/qgis/QGIS/commit/90bac82f124ccb53e43bb99f5d483105bea1c967) | n/a                                                                                               
+| Fix GUI is not updated when layout atlas is set to use the default filename expression                                                                 | [#20786](https://github.com/qgis/QGIS/issues/20786)                                             | [Commit a4da849e](https://github.com/qgis/QGIS/commit/a4da849e9d190ece1b748303cc8f68333f1e0e78) | n/a
+| \[reports\] Remove useless extra set of export actions                                                                                                 | [#26384](https://github.com/qgis/QGIS/issues/26384)                                             | [Commit d6b41813](https://github.com/qgis/QGIS/commit/d6b4181349a274e8d34196a340f4b806403af06b) | n/a
+| \[reports\] Fix crash when print button clicked before a report section is opened                                                                      | unreported                                                                                      | [Commit c93fd0a4](https://github.com/qgis/QGIS/commit/c93fd0a4350ea14db9728ad17ada06e70eb9ffd6) | n/a
+| \[reports\] Reduce minimum width of report organiser dock                                                                                              | [#25916](https://github.com/qgis/QGIS/issues/25916)                                             | [Commit 7c490848](https://github.com/qgis/QGIS/commit/7c4908481269f38e1b96c730542d5299903963fb) | n/a
+| \[layouts\] Add a page number selection combo box at the top of the guide manager dock                                                                 | [#25700](https://github.com/qgis/QGIS/issues/25700)                                             | [Commit 2f22aeaf](https://github.com/qgis/QGIS/commit/2f22aeaf276785867ed850f54c691a0a5b7c0aeb) | n/a
+| Show color button style \"Pick color\" and \"Chooe Color\" and symbol button menu                                                                      | [#25696](https://github.com/qgis/QGIS/issues/25696)                                             | [Commit 39cfd0f9](https://github.com/qgis/QGIS/commit/39cfd0f935bb8c6669237bc7abe6ca89c6a82a32) | n/a
+| Fix out of sync layout bounds after page removal                                                                                                       | [#26665](https://github.com/qgis/QGIS/issues/26665)                                             | [Commit d498eed0](https://github.com/qgis/QGIS/commit/d498eed0a5caf01b914a2c25f0c1d255d955b4a9) | n/a
+| \[layouts\] Fix odd selection behavior when keyboard modifiers are pressed when rectangular selection ends                                             | [Commit 37b5af54](https://github.com/qgis/QGIS/commit/37b5af54d9423563d17422f5b90d6a7dbdfe0299) | n/a                                                                                               
+| Fix interaction with group members in items panel                                                                                                      | [#26674](https://github.com/qgis/QGIS/issues/26674)                                             | [Commit 5154240f](https://github.com/qgis/QGIS/commit/5154240fa94401952329138300dd2035e5519d5e) | n/a
+| \[layout\] Fix invalid svg exports when including metadata                                                                                             | [#28130](https://github.com/qgis/QGIS/issues/28130)                                             | [Commit cc94aebc](https://github.com/qgis/QGIS/commit/cc94aebc6fa2e53adc99902b7f7ac4f87e0361db) | n/a
+| \[legends\] Fix missing symbols for inverted polygon layers when using filter by map content                                                           | [#22718](https://github.com/qgis/QGIS/issues/22718)                                             | [Commit abc9f47c](https://github.com/qgis/QGIS/commit/abc9f47ca471540c9b0f9dd6159d3ac7f9791a3c) | n/a
+| Use a slightly larger font size in CRS details on Windows                                                                                              | [#31297](https://github.com/qgis/QGIS/issues/31297)                                             | [Commit 757017c2](https://github.com/qgis/QGIS/commit/757017c2c29a0ea4b72527e4cd98e700c720022c) | n/a
+| \[processing\] Add warning when packaging a geopackage with no layers                                                                                  | [#31888](https://github.com/qgis/QGIS/issues/31888)                                             | [Commit f11e6603](https://github.com/qgis/QGIS/commit/f11e6603957f69a34ad7aa9893aa144cc5020ca4) | n/a
+| \[layouts\] Fix crash when opening layout with dynamic image in html label                                                                             | [#28996](https://github.com/qgis/QGIS/issues/28996)                                             | [Commit 5db6165f](https://github.com/qgis/QGIS/commit/5db6165fb597c2db278e678953578992789fa38b) | [Commit e29865cd](https://github.com/qgis/QGIS/commit/e29865cd485c3576db27aab4cad86614f3eff2f3)
+| Expose report feature settings when an attribute table is used in an atlas                                                                             | [#28441](https://github.com/qgis/QGIS/issues/28441)                                             | [Commit 9fd17c8f](https://github.com/qgis/QGIS/commit/9fd17c8f3cce8fb5864db137da71c3cb61b44510) | n/a
+| \[layouts\] Fix attribute table ignores cell margin for top/bottom aligned text                                                                        | [#31259](https://github.com/qgis/QGIS/issues/31259)                                             | [Commit 7b356fe4](https://github.com/qgis/QGIS/commit/7b356fe4cde1b030ddfb589a22cb59229311074e) | n/a
+| Fix truncated legend symbol borders when layer has opacity set                                                                                         | [Commit 30e14938](https://github.com/qgis/QGIS/commit/30e149387bcccbd14f057a16cb27729c57c9a210) | n/a                                                                                               
+| Fix adding/moving legend is very slow with large projects                                                                                              | [#29058](https://github.com/qgis/QGIS/issues/29058)                                             | [Commit 758ac909](https://github.com/qgis/QGIS/commit/758ac9092f9fac3f7533766f329f17832b2dcd35) | n/a
+| \[reports\] Fix predefined scale mode is incompatible with report outputs                                                                              | [#29196](https://github.com/qgis/QGIS/issues/29196)                                             | [Commit fcd21e48](https://github.com/qgis/QGIS/commit/fcd21e485068d8082bdef0a5a7393b57fe5bf3c1) | n/a
+| Ensure atlas expression evaluation has access to coverage layer scope                                                                                  | [#31807](https://github.com/qgis/QGIS/issues/31807)                                             | [Commit 3de05939](https://github.com/qgis/QGIS/commit/3de059395706a225ca137b3d4a7a34b27d3cc9ae) | n/a
+| Resizing pages to content should not create empty page size if no items are present                                                                    | [#29034](https://github.com/qgis/QGIS/issues/29034)                                             | [Commit 421e68cf](https://github.com/qgis/QGIS/commit/421e68cf5ae5637001765842e257caf6becdb876) | n/a
+| Fix map rotation does not immediately restore in reports                                                                                               | [#31217](https://github.com/qgis/QGIS/issues/31217)                                             | [Commit f5afebe5](https://github.com/qgis/QGIS/commit/f5afebe5dd0228ceb612a9823a80c77ccd51a1e6) | n/a
+| Do not return nan values when an assistant is used with min val == max val                                                                             | [#31242](https://github.com/qgis/QGIS/issues/31242)                                             | [Commit 97923751](https://github.com/qgis/QGIS/commit/979237515ce2921b9552a99eda071e9e9a14297a) | n/a
+| \[layouts\] Fix label items don\'t update when their opacity \< 100                                                                                    | [#29079](https://github.com/qgis/QGIS/issues/29079)                                             | [Commit f9a47738](https://github.com/qgis/QGIS/commit/f9a47738aaaec7504f912b2442195662a216b9e3) | n/a
+| Fix project load status indicator can get \"stuck\" after project load                                                                                 | unreported                                                                                      | [Commit 40d95b69](https://github.com/qgis/QGIS/commit/40d95b69d91ade71473f5ea0182040d8398cc668) | n/a
+| Fix corrupted expressions in filter indicator tooltips                                                                                                 | [Commit 393e623b](https://github.com/qgis/QGIS/commit/393e623ba7d278eabc4f09aeaabb92f56fa269c9) | [Commit 8e0e368f](https://github.com/qgis/QGIS/commit/8e0e368f255ba10c530afd445ecd1ab53bf266bb)   
+| Fix cannot use GPS panel to draw features in multi polygon/line                                                                                        | [#29144](https://github.com/qgis/QGIS/issues/29144)                                             | [Commit dc2b209d](https://github.com/qgis/QGIS/commit/dc2b209da3609a47b1457c0cb12417afbcb36344) | n/a
+| Fix loss of label background settings when restoring projects.                                                                                         | [#31427](https://github.com/qgis/QGIS/issues/31427)                                             | [Commit aa4a8da3](https://github.com/qgis/QGIS/commit/aa4a8da3a713b6961fccce019c5e9b5778f68b23) | n/a
+| Fix crash in point displacement renderer                                                                                                               | [Commit 7043933f](https://github.com/qgis/QGIS/commit/7043933ff2bed42df5ae3439867330e39fe60f53) | n/a                                                                                               
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 

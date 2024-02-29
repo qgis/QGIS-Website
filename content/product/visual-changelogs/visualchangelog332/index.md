@@ -32,7 +32,7 @@ QGIS is a community effort, and we would like to extend a big thank you to the d
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
 
-<div id="qgissustainingmembersatom"> <!-- to be filled via javascript loading of atom feed --> </div>
+{{< fund type="active" >}}
 
 QGIS is free software and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of their financial or social status - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
 
@@ -623,7 +623,7 @@ In layout profiles, there is an additional option which controls where the dista
 -   display for the last value
 -   display for both the first and last values.
 
-Note that it is currently not possible to expose unit selection for the vertical axis, as this is currently dimensionless and will require the development of vertical CRS handling in QGIS as outlined in [QEP 267](See%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267).
+Note that it is currently not possible to expose unit selection for the vertical axis, as this is currently dimensionless and will require the development of vertical CRS handling in QGIS as outlined in [QEP 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267).
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -905,25 +905,16 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                   URL issues (Github, if reported)                      URL Commit (Github)                                                       3.28 backport commit (GitHub)
-  --------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------
-  GeoJSON IDs are barely supported (only reading string IDs is supported)     [#53214](https://github.com/qgis/QGIS/issues/53214)   Just analysis - fix out of scope                                          unreported - \[cleanup\] QgsOgrFeatureIterator(): remove (hopefully!) useless code in subset string case
-
-  \"Order by\" memory leak                                                    [#53198](https://github.com/qgis/QGIS/issues/53198)   [PR #53266](%5BPR%20#53266%5D(https://github.com/qgis/QGIS/pull/53266))   N/A
-
-  Browser very slow when opening directory containing several GDB             [#53265](https://github.com/qgis/QGIS/issues/53265)   [PR #53267](%5BPR%20#53267%5D(https://github.com/qgis/QGIS/pull/53267))   Doesn\'t build with armv7 on openSUSE Tumbleweed
-
-  Add .pgwx as potential world file types for georeferenced png               [#53125](https://github.com/qgis/QGIS/issues/53125)   [GDAL PR 7864](https://github.com/OSGeo/gdal/pull/7864)                   N/A - GDAL fix
-
-  Assertion failed when filtering a GeoParquet layer                          [#53301](https://github.com/qgis/QGIS/issues/53301)   [GDAL PR 7882](https://github.com/OSGeo/gdal/pull/7882)                   N/A - GDAL fix
-
-  Given URL parameters do not persist for WFS OGC API - Features connection   [#49154](https://github.com/qgis/QGIS/issues/49154)   tried to reproduce - too complicated                                      Field domain created incorrectly
-
-  Field domain created incorrectly                                            [#52318](https://github.com/qgis/QGIS/issues/52318)   [PR #53314](https://github.com/qgis/QGIS/pull/53314)                      [PR #53349](https://github.com/qgis/QGIS/pull/53349)
-
-  Longer opening time of GPKG file in newer versions                          [#53525](https://github.com/qgis/QGIS/issues/53525)   [PR #53566](https://github.com/qgis/QGIS/pull/53566)                      TODO
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                 | URL issues (Github, if reported)                    | URL Commit (Github)                                                     | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| GeoJSON IDs are barely supported (only reading string IDs is supported)   | [#53214](https://github.com/qgis/QGIS/issues/53214) | Just analysis - fix out of scope                                        | unreported - \[cleanup\] QgsOgrFeatureIterator(): remove (hopefully!) useless code in subset string case
+| \"Order by\" memory leak                                                  | [#53198](https://github.com/qgis/QGIS/issues/53198) | [PR #53266](https://github.com/qgis/QGIS/pull/53266) | N/A
+| Browser very slow when opening directory containing several GDB           | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53267](https://github.com/qgis/QGIS/pull/53267) | Doesn\'t build with armv7 on openSUSE Tumbleweed
+| Add .pgwx as potential world file types for georeferenced png             | [#53125](https://github.com/qgis/QGIS/issues/53125) | [GDAL PR 7864](https://github.com/OSGeo/gdal/pull/7864)                 | N/A - GDAL fix
+| Assertion failed when filtering a GeoParquet layer                        | [#53301](https://github.com/qgis/QGIS/issues/53301) | [GDAL PR 7882](https://github.com/OSGeo/gdal/pull/7882)                 | N/A - GDAL fix
+| Given URL parameters do not persist for WFS OGC API - Features connection | [#49154](https://github.com/qgis/QGIS/issues/49154) | tried to reproduce - too complicated                                    | Field domain created incorrectly
+| Field domain created incorrectly                                          | [#52318](https://github.com/qgis/QGIS/issues/52318) | [PR #53314](https://github.com/qgis/QGIS/pull/53314)                    | [PR #53349](https://github.com/qgis/QGIS/pull/53349)
+| Longer opening time of GPKG file in newer versions                        | [#53525](https://github.com/qgis/QGIS/issues/53525) | [PR #53566](https://github.com/qgis/QGIS/pull/53566)                    | TODO
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -931,13 +922,10 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 
 ### Feature: Bug fixes by Sandro Santilli (strk)
 
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                            URL issues (Github, if reported)                      URL Commit (Github)                                       3.28 backport commit (GitHub)
-  ---------------------------------------------------- ----------------------------------------------------- --------------------------------------------------------- ------------------------------------------------------
-  QGIS offset line shows perpendicular tags issue      [#53165](https://github.com/qgis/QGIS/issues/53165)   [PR #53234](https://github.com/qgis/QGIS/pull/53234)      [PR #53308](https://github.com/qgis/QGIS/pull/53308)
-
-  strange behaviour of single sided buffer algorithm   [#52795](https://github.com/qgis/QGIS/issues/52795)   [geos PR 912](https://github.com/libgeos/geos/pull/912)   N/A - GEOS fix
-  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                          | URL issues (Github, if reported)                    | URL Commit (Github)                                     | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| QGIS offset line shows perpendicular tags issue    | [#53165](https://github.com/qgis/QGIS/issues/53165) | [PR #53234](https://github.com/qgis/QGIS/pull/53234)    | [PR #53308](https://github.com/qgis/QGIS/pull/53308)
+| strange behaviour of single sided buffer algorithm | [#52795](https://github.com/qgis/QGIS/issues/52795) | [geos PR 912](https://github.com/libgeos/geos/pull/912) | N/A - GEOS fix
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -945,29 +933,18 @@ This feature was developed by [Sandro Santilli (strk)](http://strk.kbt.io/)
 
 ### Feature: Bug fixes by Alessandro Pasotti (itOpen / qcooperative)
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                                        URL issues (Github, if reported)                      URL Commit (Github)                                    3.28 backport commit (GitHub)
-  ---------------------------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ----------------------------------------------------------------------------------------------------------------
-  Legend filter expression has an incomplete context                                                               [#53229](https://github.com/qgis/QGIS/issues/53229)   [PR #53296](https://github.com/qgis/QGIS/pull/53296)   queued
-
-  LineString showing offset in CRS 3857 when using Vertex Tool and \"Clip Features to Canvas Extent\" is enabled   [#45200](https://github.com/qgis/QGIS/issues/45200)   [PR #53384](https://github.com/qgis/QGIS/pull/53384)   queued
-
-  Qgis Server WMTS returns wrong WGS84BoundingBox for the layer                                                    [#53213](https://github.com/qgis/QGIS/issues/53213)   cannot reproduce                                       Form not showing (randomly) values except when triggering \"Editing Mode\"
-
-  OGC API Features ignores \"X-Qgis-Service-Url\" header                                                           [#53367](https://github.com/qgis/QGIS/issues/53367)   won\'t fix                                             Fixed legend size is not respected when exporting a layout
-
-  Snap to random vertices after splitting features                                                                 [#53040](https://github.com/qgis/QGIS/issues/53040)   cannot reproduce                                       Cartographic label placement with \"Distance Offset: From Symbol Bounds\" shows offset for MultiPoint features
-
-  Layers rendered as a group seem to bypass the \"Lock Layers\" option in my print composer.                       [#53379](https://github.com/qgis/QGIS/issues/53379)   [PR #53428](https://github.com/qgis/QGIS/pull/53428)   queued but PR is still unreviewed
-
-  Map Layout composer - Legend item expression not displaying correctly                                            [#53244](https://github.com/qgis/QGIS/issues/53244)   [PR #53434](https://github.com/qgis/QGIS/pull/53434)   not worth it, not critical
-
-  opacities parameter doesn\'t apply to labels in GetMap requests                                                  [#48020](https://github.com/qgis/QGIS/issues/48020)   [PR #53438](https://github.com/qgis/QGIS/pull/53438)   queued but PR is still unreviewed
-
-  The list in \"Link to existing child features\" does not help in selecting the right child features              [#53410](https://github.com/qgis/QGIS/issues/53410)   won\'t fix                                             Object Snap on Lines does not work for arc-elements
-
-  Attribute form widgets are not disabled when \"Editable\" state is data-defined and layer is not in edit mode    [#53031](https://github.com/qgis/QGIS/issues/53031)   [PR #53506](https://github.com/qgis/QGIS/pull/53506)   N/A
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                                      | URL issues (Github, if reported)                    | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Legend filter expression has an incomplete context                                                             | [#53229](https://github.com/qgis/QGIS/issues/53229) | [PR #53296](https://github.com/qgis/QGIS/pull/53296) | queued
+| LineString showing offset in CRS 3857 when using Vertex Tool and \"Clip Features to Canvas Extent\" is enabled | [#45200](https://github.com/qgis/QGIS/issues/45200) | [PR #53384](https://github.com/qgis/QGIS/pull/53384) | queued
+| Qgis Server WMTS returns wrong WGS84BoundingBox for the layer                                                  | [#53213](https://github.com/qgis/QGIS/issues/53213) | cannot reproduce                                     | Form not showing (randomly) values except when triggering \"Editing Mode\"
+| OGC API Features ignores \"X-Qgis-Service-Url\" header                                                         | [#53367](https://github.com/qgis/QGIS/issues/53367) | won\'t fix                                           | Fixed legend size is not respected when exporting a layout
+| Snap to random vertices after splitting features                                                               | [#53040](https://github.com/qgis/QGIS/issues/53040) | cannot reproduce                                     | Cartographic label placement with \"Distance Offset: From Symbol Bounds\" shows offset for MultiPoint features
+| Layers rendered as a group seem to bypass the \"Lock Layers\" option in my print composer.                     | [#53379](https://github.com/qgis/QGIS/issues/53379) | [PR #53428](https://github.com/qgis/QGIS/pull/53428) | queued but PR is still unreviewed
+| Map Layout composer - Legend item expression not displaying correctly                                          | [#53244](https://github.com/qgis/QGIS/issues/53244) | [PR #53434](https://github.com/qgis/QGIS/pull/53434) | not worth it, not critical
+| opacities parameter doesn\'t apply to labels in GetMap requests                                                | [#48020](https://github.com/qgis/QGIS/issues/48020) | [PR #53438](https://github.com/qgis/QGIS/pull/53438) | queued but PR is still unreviewed
+| The list in \"Link to existing child features\" does not help in selecting the right child features            | [#53410](https://github.com/qgis/QGIS/issues/53410) | won\'t fix                                           | Object Snap on Lines does not work for arc-elements
+| Attribute form widgets are not disabled when \"Editable\" state is data-defined and layer is not in edit mode  | [#53031](https://github.com/qgis/QGIS/issues/53031) | [PR #53506](https://github.com/qgis/QGIS/pull/53506) | N/A
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -975,23 +952,15 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 
 ### Feature: Bug fixes by Alex Bruy (LutraConsulting)
 
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                           URL issues (Github, if reported)                      URL Commit (Github)                                                         3.28 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------------- ----------------------------------------------------- --------------------------------------------------------------------------- ----------------------------------------------------------------------------------------------------------------------------
-  \[Expressions\]: missing \"//\" operator help                                                       [#52094](https://github.com/qgis/QGIS/issues/52094)   [PR #53355](https://github.com/qgis/QGIS/pull/53355)                        [PR #53396](https://github.com/qgis/QGIS/pull/53396)
-
-  Resample or rescale of a raster image cannot be found in a menu item or in the processing toolbox   [#49208](https://github.com/qgis/QGIS/issues/49208)   [PR #53356](https://github.com/qgis/QGIS/pull/53356)                        Error produced by closing algorithm dialogs: RuntimeError: wrapped C/C++ object of type QgsMapToolCapture has been deleted
-
-  Model designer export as/run as python didn\'t catch newline in algorithm comments                  [#50715](https://github.com/qgis/QGIS/issues/50715)   [PR #53358](https://github.com/qgis/QGIS/pull/53358)                        [PR #53397](https://github.com/qgis/QGIS/pull/53397)
-
-  Add\' button for adding XYZ layer through Data Source Manager remains disabled                      [#52622](https://github.com/qgis/QGIS/issues/52622)   [PR #53359](https://github.com/qgis/QGIS/pull/53359)                        [PR #53404](https://github.com/qgis/QGIS/pull/53404)
-
-  Output of Algorithm jumps top left when moving                                                      [#51757](https://github.com/qgis/QGIS/issues/51757)   [PR #53363](https://github.com/qgis/QGIS/pull/53363)                        [PR #53402](https://github.com/qgis/QGIS/pull/53402)
-
-  Name column always shows alias instead of field name in refactor fields algorithm                   [#53028](https://github.com/qgis/QGIS/issues/53028)   [PR #53365](https://github.com/qgis/QGIS/pull/53365)                        [PR #53407](https://github.com/qgis/QGIS/pull/53407)
-
-  Sentinel 1 data set not working properly                                                            [#52694](https://github.com/qgis/QGIS/issues/52694)   Not a bug, wrong selection of data format for huge and complex geometries   Generate XYZ tiles (MBTiles) - error when run
-  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                         | URL issues (Github, if reported)                    | URL Commit (Github)                                                       | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| \[Expressions\]: missing \"//\" operator help                                                     | [#52094](https://github.com/qgis/QGIS/issues/52094) | [PR #53355](https://github.com/qgis/QGIS/pull/53355)                      | [PR #53396](https://github.com/qgis/QGIS/pull/53396)
+| Resample or rescale of a raster image cannot be found in a menu item or in the processing toolbox | [#49208](https://github.com/qgis/QGIS/issues/49208) | [PR #53356](https://github.com/qgis/QGIS/pull/53356)                      | Error produced by closing algorithm dialogs: RuntimeError: wrapped C/C++ object of type QgsMapToolCapture has been deleted
+| Model designer export as/run as python didn\'t catch newline in algorithm comments                | [#50715](https://github.com/qgis/QGIS/issues/50715) | [PR #53358](https://github.com/qgis/QGIS/pull/53358)                      | [PR #53397](https://github.com/qgis/QGIS/pull/53397)
+| Add\' button for adding XYZ layer through Data Source Manager remains disabled                    | [#52622](https://github.com/qgis/QGIS/issues/52622) | [PR #53359](https://github.com/qgis/QGIS/pull/53359)                      | [PR #53404](https://github.com/qgis/QGIS/pull/53404)
+| Output of Algorithm jumps top left when moving                                                    | [#51757](https://github.com/qgis/QGIS/issues/51757) | [PR #53363](https://github.com/qgis/QGIS/pull/53363)                      | [PR #53402](https://github.com/qgis/QGIS/pull/53402)
+| Name column always shows alias instead of field name in refactor fields algorithm                 | [#53028](https://github.com/qgis/QGIS/issues/53028) | [PR #53365](https://github.com/qgis/QGIS/pull/53365)                      | [PR #53407](https://github.com/qgis/QGIS/pull/53407)
+| Sentinel 1 data set not working properly                                                          | [#52694](https://github.com/qgis/QGIS/issues/52694) | Not a bug, wrong selection of data format for huge and complex geometries | Generate XYZ tiles (MBTiles) - error when run
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -999,25 +968,16 @@ This feature was developed by [Alex Bruy (LutraConsulting)](https://www.lutracon
 
 ### Feature: Bug fixes by Julien Cabieces
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                     URL issues (Github, if reported)                      URL Commit (Github)                                    3.28 backport commit (GitHub)
-  --------------------------------------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ ------------------------------------------------------
-  QgsRasterIterator.readNextRasterPart() has a memory leak                                      [#53412](https://github.com/qgis/QGIS/issues/53412)   [PR #53444](https://github.com/qgis/QGIS/pull/53444)   [PR #53445](https://github.com/qgis/QGIS/pull/53445)
-
-  Options for some values in Processing are not saved after close window                        [#53204](https://github.com/qgis/QGIS/issues/53204)   [PR #53458](https://github.com/qgis/QGIS/pull/53458)   no
-
-  Unable to import layer from Postgis view or materialized view , if it has no no primary key   [#52943](https://github.com/qgis/QGIS/issues/52943)   Not a bug                                              
-
-  Unwanted vertices when tracing                                                                [#52935](https://github.com/qgis/QGIS/issues/52935)                                                          
-
-  Topology checker does not highlight all overlap errors in the canvas                          [#52903](https://github.com/qgis/QGIS/issues/52903)   [PR #53470](https://github.com/qgis/QGIS/pull/53470)   
-
-  Unable to enter interval size for fixed Interval in Graduated Renderer                        [#52356](https://github.com/qgis/QGIS/issues/52356)   [PR #53479](https://github.com/qgis/QGIS/pull/53479)   [PR #53508](https://github.com/qgis/QGIS/pull/53508)
-
-  Vector Tile Layers do not clip to layout map frame when mask enabled                          [#52347](https://github.com/qgis/QGIS/issues/52347)   Qt upstream issue                                      
-
-  Splitfeatures function                                                                        [#52145](https://github.com/qgis/QGIS/issues/52145)   [PR #53526](https://github.com/qgis/QGIS/pull/53526)   
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                   | URL issues (Github, if reported)                    | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| QgsRasterIterator.readNextRasterPart() has a memory leak                                    | [#53412](https://github.com/qgis/QGIS/issues/53412) | [PR #53444](https://github.com/qgis/QGIS/pull/53444) | [PR #53445](https://github.com/qgis/QGIS/pull/53445)
+| Options for some values in Processing are not saved after close window                      | [#53204](https://github.com/qgis/QGIS/issues/53204) | [PR #53458](https://github.com/qgis/QGIS/pull/53458) | no
+| Unable to import layer from Postgis view or materialized view , if it has no no primary key | [#52943](https://github.com/qgis/QGIS/issues/52943) | Not a bug                                              
+| Unwanted vertices when tracing                                                              | [#52935](https://github.com/qgis/QGIS/issues/52935)                                                          
+| Topology checker does not highlight all overlap errors in the canvas                        | [#52903](https://github.com/qgis/QGIS/issues/52903) | [PR #53470](https://github.com/qgis/QGIS/pull/53470)   
+| Unable to enter interval size for fixed Interval in Graduated Renderer                      | [#52356](https://github.com/qgis/QGIS/issues/52356) | [PR #53479](https://github.com/qgis/QGIS/pull/53479) | [PR #53508](https://github.com/qgis/QGIS/pull/53508)
+| Vector Tile Layers do not clip to layout map frame when mask enabled                        | [#52347](https://github.com/qgis/QGIS/issues/52347) | Qt upstream issue                                      
+| Splitfeatures function                                                                      | [#52145](https://github.com/qgis/QGIS/issues/52145) | [PR #53526](https://github.com/qgis/QGIS/pull/53526)   
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -1025,12 +985,9 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 
 ### Feature: Bug fixes by Jean Felder (Oslandia)
 
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                     URL issues (Github, if reported)                      URL Commit (Github)                                    3.28 backport commit (GitHub)
-  ------------------------------------------------------------- ----------------------------------------------------- ------------------------------------------------------ -------------------------------
-  Erased profile plot is redrawn after a layer toggles on/off   [#48117](https://github.com/qgis/QGIS/issues/48117)   [PR #53468](https://github.com/qgis/QGIS/pull/53468)   
-
-  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                   | URL issues (Github, if reported)                    | URL Commit (Github)                                  | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Erased profile plot is redrawn after a layer toggles on/off | [#48117](https://github.com/qgis/QGIS/issues/48117) | [PR #53468](https://github.com/qgis/QGIS/pull/53468)   
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -1038,12 +995,9 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 
 ### Feature: Bug fixes by Jacky Volpes (Oslandia)
 
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                             URL issues (Github, if reported)                      URL Commit (Github)   3.28 backport commit (GitHub)
-  ----------------------------------------------------- ----------------------------------------------------- --------------------- -------------------------------
-  Legend not updating dynamically when using an atlas   [#53442](https://github.com/qgis/QGIS/issues/53442)   Still WIP             
-
-  -----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                           | URL issues (Github, if reported)                    | URL Commit (Github) | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Legend not updating dynamically when using an atlas | [#53442](https://github.com/qgis/QGIS/issues/53442) | Still WIP             
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
@@ -1051,51 +1005,29 @@ This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
 
 ### Feature: Bug fixes by Nyall Dawson (North Road)
 
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Bug Title                                                                                       URL issues (Github, if reported)                      URL Commit (Github)                                                                                                                                                  3.28 backport commit (GitHub)
-  ----------------------------------------------------------------------------------------------- ----------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------------------------------------------------------------------
-  Many fixes for regressions on hidpi displays following improved approach implemented for 3.32   Multiple                                              [PR #53556](https://github.com/qgis/QGIS/pull/53556) , [PR #53533](https://github.com/qgis/QGIS/pull/53533) , [PR #53531](https://github.com/qgis/QGIS/pull/53531)   [PR #53517](https://github.com/qgis/QGIS/pull/53517)
-
-  Implement proper support for new vsi archive formats added in GDAL 3.7                                                                                [PR #53515](https://github.com/qgis/QGIS/pull/53515)                                                                                                                 NA
-
-  Store updated postgres credentials in layer source                                              [#37632](https://github.com/qgis/QGIS/issues/37632)   [PR #53465](https://github.com/qgis/QGIS/pull/53465)                                                                                                                 NA
-
-  Cleanup iface signal connections when unloading processing plugin                               [#53455](https://github.com/qgis/QGIS/issues/53455)   [PR #53461](https://github.com/qgis/QGIS/pull/53461)                                                                                                                 Too risky / low reward
-
-  Avoid UI lock when closing Execute SQL window                                                   Unreported                                            [PR #53448](https://github.com/qgis/QGIS/pull/53448)                                                                                                                 Too risky
-
-  Gracefully cleanup empty python faulthandler log files                                          [#50609](https://github.com/qgis/QGIS/issues/50609)   [PR #53417](https://github.com/qgis/QGIS/pull/53417)                                                                                                                 Too risky
-
-  Fix a crash on QGIS close                                                                       Unreported                                            [PR #53414](https://github.com/qgis/QGIS/pull/53414)                                                                                                                 [PR #53418](https://github.com/qgis/QGIS/pull/53418)
-
-  Correctly cleanup project archive files before attempting to clear/replace archive              [#53034](https://github.com/qgis/QGIS/issues/53034)   [PR #53400](https://github.com/qgis/QGIS/pull/53400)                                                                                                                 Too risky
-
-  Don\'t open datasets when populating browser directories to determine layer drop support        [#53265](https://github.com/qgis/QGIS/issues/53265)   [PR #53398](https://github.com/qgis/QGIS/pull/53398)                                                                                                                 Deferred
-
-  Fix crash when writing processing history entry                                                 Unreported                                            [PR #53394](https://github.com/qgis/QGIS/pull/53394)                                                                                                                 NA
-
-  Fix issue causing CRS selection to be ignored                                                   [#53309](https://github.com/qgis/QGIS/issues/53309)   [PR #53393](https://github.com/qgis/QGIS/pull/53393)                                                                                                                 Fix blurry style icons in project properties dialog on hidpi displays
-
-  Fix grass provider points to out of date help documents                                         [#53105](https://github.com/qgis/QGIS/issues/53105)   [PR #53372](https://github.com/qgis/QGIS/pull/53372)                                                                                                                 [PR #53375](https://github.com/qgis/QGIS/pull/53375)
-
-  Fix point text annotation rotation, alignment issues                                            Unreported                                            [PR #53337](https://github.com/qgis/QGIS/pull/53337)                                                                                                                 NA
-
-  Expand range of z index spin for annotations                                                    Unreported                                            [PR #53319](https://github.com/qgis/QGIS/pull/53319)                                                                                                                 [PR #53326](https://github.com/qgis/QGIS/pull/53326)
-
-  Fix incorrect scaling of text background markers in annotations                                 Unreported                                            [PR #53318](https://github.com/qgis/QGIS/pull/53318)                                                                                                                 Fix crash on invalid grass layer paths
-
-  Flag OneDrive remote folders as remote, slow to open paths on Windows                           [#51710](https://github.com/qgis/QGIS/issues/51710)   [PR #53315](https://github.com/qgis/QGIS/pull/53315)                                                                                                                 Too risky
-
-  Fix crash when creating new grass mapsets when \"set\" is pressed and no region is selected     Unreported                                            [PR #53293](https://github.com/qgis/QGIS/pull/53293)                                                                                                                 [PR #53311](https://github.com/qgis/QGIS/pull/53311)
-
-  Fix custom coordinate transform test results                                                    [#52184](https://github.com/qgis/QGIS/issues/52184)   [PR #53292](https://github.com/qgis/QGIS/pull/53292)                                                                                                                 [PR #53353](https://github.com/qgis/QGIS/pull/53353)
-
-  Don\'t create alpha bands for non-rotated, south up rasters                                     [#50879](https://github.com/qgis/QGIS/issues/50879)   [PR #53290](https://github.com/qgis/QGIS/pull/53290)                                                                                                                 [PR #53310](https://github.com/qgis/QGIS/pull/53310)
-
-  Greatly speed up browser when a large number of files are visible                               [#53265](https://github.com/qgis/QGIS/issues/53265)   [PR #53268](https://github.com/qgis/QGIS/pull/53268)                                                                                                                 [PR #53299](https://github.com/qgis/QGIS/pull/53299)
-
-  Pass renderer usage from download vector tile algorithm                                         [#53183](https://github.com/qgis/QGIS/issues/53183)   [PR #53258](https://github.com/qgis/QGIS/pull/53258)                                                                                                                 NA
-  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Bug Title                                                                                     | URL issues (Github, if reported)                    | URL Commit (Github)                                                                                                                                                | 3.28 backport commit (GitHub)
+|----|----|----|----|
+| Many fixes for regressions on hidpi displays following improved approach implemented for 3.32 | Multiple                                            | [PR #53556](https://github.com/qgis/QGIS/pull/53556) , [PR #53533](https://github.com/qgis/QGIS/pull/53533) , [PR #53531](https://github.com/qgis/QGIS/pull/53531) | [PR #53517](https://github.com/qgis/QGIS/pull/53517)
+| Implement proper support for new vsi archive formats added in GDAL 3.7                                                                              | [PR #53515](https://github.com/qgis/QGIS/pull/53515)                                                                                                               | NA
+| Store updated postgres credentials in layer source                                            | [#37632](https://github.com/qgis/QGIS/issues/37632) | [PR #53465](https://github.com/qgis/QGIS/pull/53465)                                                                                                               | NA
+| Cleanup iface signal connections when unloading processing plugin                             | [#53455](https://github.com/qgis/QGIS/issues/53455) | [PR #53461](https://github.com/qgis/QGIS/pull/53461)                                                                                                               | Too risky / low reward
+| Avoid UI lock when closing Execute SQL window                                                 | Unreported                                          | [PR #53448](https://github.com/qgis/QGIS/pull/53448)                                                                                                               | Too risky
+| Gracefully cleanup empty python faulthandler log files                                        | [#50609](https://github.com/qgis/QGIS/issues/50609) | [PR #53417](https://github.com/qgis/QGIS/pull/53417)                                                                                                               | Too risky
+| Fix a crash on QGIS close                                                                     | Unreported                                          | [PR #53414](https://github.com/qgis/QGIS/pull/53414)                                                                                                               | [PR #53418](https://github.com/qgis/QGIS/pull/53418)
+| Correctly cleanup project archive files before attempting to clear/replace archive            | [#53034](https://github.com/qgis/QGIS/issues/53034) | [PR #53400](https://github.com/qgis/QGIS/pull/53400)                                                                                                               | Too risky
+| Don\'t open datasets when populating browser directories to determine layer drop support      | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53398](https://github.com/qgis/QGIS/pull/53398)                                                                                                               | Deferred
+| Fix crash when writing processing history entry                                               | Unreported                                          | [PR #53394](https://github.com/qgis/QGIS/pull/53394)                                                                                                               | NA
+| Fix issue causing CRS selection to be ignored                                                 | [#53309](https://github.com/qgis/QGIS/issues/53309) | [PR #53393](https://github.com/qgis/QGIS/pull/53393)                                                                                                               | Fix blurry style icons in project properties dialog on hidpi displays
+| Fix grass provider points to out of date help documents                                       | [#53105](https://github.com/qgis/QGIS/issues/53105) | [PR #53372](https://github.com/qgis/QGIS/pull/53372)                                                                                                               | [PR #53375](https://github.com/qgis/QGIS/pull/53375)
+| Fix point text annotation rotation, alignment issues                                          | Unreported                                          | [PR #53337](https://github.com/qgis/QGIS/pull/53337)                                                                                                               | NA
+| Expand range of z index spin for annotations                                                  | Unreported                                          | [PR #53319](https://github.com/qgis/QGIS/pull/53319)                                                                                                               | [PR #53326](https://github.com/qgis/QGIS/pull/53326)
+| Fix incorrect scaling of text background markers in annotations                               | Unreported                                          | [PR #53318](https://github.com/qgis/QGIS/pull/53318)                                                                                                               | Fix crash on invalid grass layer paths
+| Flag OneDrive remote folders as remote, slow to open paths on Windows                         | [#51710](https://github.com/qgis/QGIS/issues/51710) | [PR #53315](https://github.com/qgis/QGIS/pull/53315)                                                                                                               | Too risky
+| Fix crash when creating new grass mapsets when \"set\" is pressed and no region is selected   | Unreported                                          | [PR #53293](https://github.com/qgis/QGIS/pull/53293)                                                                                                               | [PR #53311](https://github.com/qgis/QGIS/pull/53311)
+| Fix custom coordinate transform test results                                                  | [#52184](https://github.com/qgis/QGIS/issues/52184) | [PR #53292](https://github.com/qgis/QGIS/pull/53292)                                                                                                               | [PR #53353](https://github.com/qgis/QGIS/pull/53353)
+| Don\'t create alpha bands for non-rotated, south up rasters                                   | [#50879](https://github.com/qgis/QGIS/issues/50879) | [PR #53290](https://github.com/qgis/QGIS/pull/53290)                                                                                                               | [PR #53310](https://github.com/qgis/QGIS/pull/53310)
+| Greatly speed up browser when a large number of files are visible                             | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53268](https://github.com/qgis/QGIS/pull/53268)                                                                                                               | [PR #53299](https://github.com/qgis/QGIS/pull/53299)
+| Pass renderer usage from download vector tile algorithm                                       | [#53183](https://github.com/qgis/QGIS/issues/53183) | [PR #53258](https://github.com/qgis/QGIS/pull/53258)                                                                                                               | NA
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 

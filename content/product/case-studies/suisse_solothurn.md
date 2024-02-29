@@ -42,14 +42,14 @@ One of the most important Desktop GIS issues is the question: \"How do I get the
 SO!DATA contains a human readable inventory of the data models and the non-GIS-Expert user is able to use this database to discover the information they need.
 
 <figure>
-<img src="../images/suisse_solothurn2.png" class="align-right" alt="./images/suisse_solothurn2.png" />
+<img src="../images/suisse_solothurn2.png" class="align-right" alt="suisse_solothurn2.png" />
 <figcaption>"SO!GIS Layer" plugin developed at the Canton of Solothurn</figcaption>
 </figure>
 
 To remove the need for end users to interact directly with PostGIS connections and table selection dialogs, a plugin has been developed in python. The plugin is called \"SO!GIS Layer\" (see Figure 1). The plugin connects to the SO!GIS PostGIS repository, gets the information of all published geospatial data layers from SO!DATA and offers the user a GUI to find the data layers they need. With this infrastructure in place, our users are happy —— they can prepare for geoprocessing, editing and map composing in an individual way.
 
 <figure>
-<img src="../images/suisse_solothurn3.png" class="align-right" alt="./images/suisse_solothurn3.png" />
+<img src="../images/suisse_solothurn3.png" class="align-right" alt="suisse_solothurn3.png" />
 <figcaption>"SO!GIS Suche" plugin developed at the Canton of Solothurn</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ Today we can say that using QGIS was the right decision for us. QGIS offers most
 ## Author
 
 <figure>
-<img src="../images/suisse_solothurnaut.jpg" class="align-left" height="200" alt="./images/suisse_solothurnaut.jpg" />
+<img src="../images/suisse_solothurnaut.jpg" class="align-left" height="200" alt="suisse_solothurnaut.jpg" />
 <figcaption>Horst Düster</figcaption>
 </figure>
 

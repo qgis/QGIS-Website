@@ -19,7 +19,7 @@ The University of Southern Queensland (USQ) is a regional university located in 
 Providing education in both an On-campus and Off-campus mode has many technological challenges. Teaching a GIS course requires overcoming these challenges. On average, 300-350 students enrol in the basic GIS course every year. About 80% of them study in the off-campus mode.
 
 <figure>
-<img src="../images/australia_distance_learning1.png" class="align-center" alt="./images/australia_distance_learning1.png" />
+<img src="../images/australia_distance_learning1.png" class="align-center" alt="australia_distance_learning1.png" />
 <figcaption>USQ Main Campus Map created using QGIS</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ The traditional 'cook-book' tutorial method of teaching was replaced with contem
 On average, 93% of the students in the course used QGIS software and the instructional resources. Voluntary feedback was received from 51% of the QGIS users. The results (Figure 2) show the majority (82%) of the students rated QGIS software and the hands-on learning resources as, 'helpful' to 'very helpful' in learning GIS. Most others rated it as 'reasonable'.
 
 <figure>
-<img src="../images/australia_distance_learning2.png" class="align-center" alt="./images/australia_distance_learning2.png" />
+<img src="../images/australia_distance_learning2.png" class="align-center" alt="australia_distance_learning2.png" />
 <figcaption>Students response graph</figcaption>
 </figure>
 

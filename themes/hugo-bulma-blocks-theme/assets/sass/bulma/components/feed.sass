@@ -1,0 +1,23 @@
+.rss-feed 
+  max-width: 60%
+  position: relative
+  overflow: hidden
+  height: 26px
+  +mobile
+    max-width: calc( 100% - 150px )
+  a 
+    color: #93b022
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: 1
+    -webkit-box-orient: vertical
+    display: box
+    line-clamp: 1
+    box-orient: vertical
+    font-size: 14px
+    &:hover
+      color: #3A9800  
+    &:before 
+      content: "News: "
+      color: white 

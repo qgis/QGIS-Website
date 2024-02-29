@@ -27,14 +27,14 @@ Ever since the consolidation of the Department of Geography in 2012, we have tri
 Logistics to viabilize such fieldwork involved using statistical packages to manage the database generated, together with an intensive use of GIS to organize field trips and georeference relieved data.
 
 <figure>
-<img src="../images/uruguay_mides1.png" class="align-center" alt="./images/uruguay_mides1.png" />
+<img src="../images/uruguay_mides1.png" class="align-center" alt="uruguay_mides1.png" />
 <figcaption>QGIS at work: identifying houses on informal settlements to implement fieldwork</figcaption>
 </figure>
 
 Although proprietary software was implemented when the working process started, the development of the tasks themselves gradually demanded it to be converted to open source software. As the process as a whole became more computerized -incorporating a workflow engine and a PostGIS geospatial database-, license requirements and benefits offered by free and open source software (FOSS) options encouraged us to make the change. In that way, as the QGIS project was refined (fewer bugs and more functionalities), we were able to satisfy our needs using QGIS. PostGIS associated tools allowed the workgroup to rapidly coordinate the tasks needed to viabilize daily field trips, together with subsequent analysis tasks on the same data fieldwork generated, shortly after it was relieved and digitized.
 
 <figure>
-<img src="../images/uruguay_mides2.png" class="align-center" alt="./images/uruguay_mides2.png" />
+<img src="../images/uruguay_mides2.png" class="align-center" alt="uruguay_mides2.png" />
 <figcaption>QGIS at work: Montevideo, Uruguay’s capital and most populated city, overlayed with PostGIS layer showing to-do visits (mostly composed of socially vulnerable households, in the outskirts of the city)</figcaption>
 </figure>
 

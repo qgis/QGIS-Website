@@ -19,7 +19,7 @@ In order to carry out exhaustive researches and studies, in addition to field su
 The institute, for the explained purposes, keeps in its archive about 170000, recent and historical, photograms —— the oldest one dating back to 1920s (Figure 1) —— covering, in different years, the Po basin or part of it. Some photograms cover other basins in northern Italy. In addition the archives keeps flight plans of the described photograms (Figure 1).
 
 <figure>
-<img src="../images/italy_turin1.jpg" class="align-left" alt="./images/italy_turin1.jpg" />
+<img src="../images/italy_turin1.jpg" class="align-left" alt="italy_turin1.jpg" />
 <figcaption>1929 photogram (left) and 1954 flight plan (right).</figcaption>
 </figure>
 
@@ -30,21 +30,21 @@ In order to cope with such amount of data a GIS approach was adopted. First each
 Each footprint in digitized flight plan was provided, in its attributes, with the previous codes in order to link shapefile to scanned photograms, by the use of eVis plugin (Horning et al, 2009), and to allow a user friendly interface to search and refer to (Figure 2). Data concerning photogram code were stored in attribute table fields than, by field calculator, a "Link" field was created storing photograms' file paths.
 
 <figure>
-<img src="../images/italy_turin2.jpg" class="align-left" alt="./images/italy_turin2.jpg" />
+<img src="../images/italy_turin2.jpg" class="align-left" alt="italy_turin2.jpg" />
 <figcaption>Photogram display (eVis Plugin)</figcaption>
 </figure>
 
 Moreover, due to the amount of searchable data a geographical search interface was developed. Thanks to the graphical modeler (in Processing, formerly SEXTANTE, plugin) capabilities, the developed tool, by different selection masks and input boxes, allows the user to select among three layers (administrative boundaries, map sheets and rivers), find a feature by querying its table and employ it to spatially query a digitized flight plan with the purpose of selecting photograms' footprints intersecting the selected feature (Figure 3). With this procedure, is then possible to point out selected photogram and simply display them with the previously described tool or extract, by their filenames and path, photograms' files for further processing.
 
 <figure>
-<img src="../images/italy_turin3.jpg" class="align-left" alt="./images/italy_turin3.jpg" />
+<img src="../images/italy_turin3.jpg" class="align-left" alt="italy_turin3.jpg" />
 <figcaption>Graphic modeler scheme used in the selection tool (in background: purple polygons-map sheets; labeled orange polygons-photogram footprints; brown polygons-municipalities administrative borders)</figcaption>
 </figure>
 
 The photogram collection is of great interest both in research (e.g. Godone et al, 2014) and professional environments (Figure 4). Now thanks to the described procedures and tools the collection is fully accessible and since 2009 the photograms were employed in several projects both internal and external to the Institute. QGIS features and plugins allowed developing tools and procedures to optimize photogram archive both in the implementation of its management and in its exploitation.
 
 <figure>
-<img src="../images/italy_turin4.jpg" class="align-left" alt="./images/italy_turin4.jpg" />
+<img src="../images/italy_turin4.jpg" class="align-left" alt="italy_turin4.jpg" />
 <figcaption>Pie chart showing different area of interest employing photograms in year 2013</figcaption>
 </figure>
 
@@ -60,14 +60,14 @@ The photogram collection is of great interest both in research (e.g. Godone et a
 ## Authors
 
 <figure>
-<img src="../images/italy_turinaut1.jpg" class="align-left" height="120" alt="./images/italy_turinaut1.jpg" />
+<img src="../images/italy_turinaut1.jpg" class="align-left" height="120" alt="italy_turinaut1.jpg" />
 <figcaption>Danilo Godone</figcaption>
 </figure>
 
 Danilo Godone is a Postdoc grant holder, at Turin University, studying geomatic contribution in landslide, glacier and, more generally, natural disasters monitoring. He is a member of NATRISK —— Research Centre on Natural Risks in Mountain and Hilly Environments, in the same University. He acts as a freelance consultant in the same topics, too.
 
 <figure>
-<img src="../images/italy_turinaut2.jpg" class="align-left" width="120" alt="./images/italy_turinaut2.jpg" />
+<img src="../images/italy_turinaut2.jpg" class="align-left" width="120" alt="italy_turinaut2.jpg" />
 <figcaption>Franco Godone</figcaption>
 </figure>
 

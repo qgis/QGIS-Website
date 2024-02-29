@@ -19,14 +19,14 @@ There will be democratic teaching in our schools or education communities when w
 Expectation was the most dominating feeling in the firth lessons! The group of students had only a theoretical and somewhat vague knowledge about the issue of GIS. It was, therefore, necessary to link practical activities to that theoretical knowledge - at first, through the gathering of geographical information by using a support map, within the school\'s perimeter, and later, by using a GPS, concerning the area surrounding the school. In figures 1 and 2 it is possible to view some of the activities developed in class.
 
 <figure>
-<img src="../images/portugal_funchal1.jpg" class="align-right" alt="./images/portugal_funchal1.jpg" />
+<img src="../images/portugal_funchal1.jpg" class="align-right" alt="portugal_funchal1.jpg" />
 <figcaption>Distribution of dustbins (green) and garden benches (yellow) at Jaime Moniz Secondary School</figcaption>
 </figure>
 
 At present, some students are still using the QGIS to make different work plans during their training period. In figure 3, a student\'s work stands out: it is related to the distribution regarding the number of the inhabitants of Santo António, including a placement proposal for recycle containers, in a parish of Funchal.
 
 <figure>
-<img src="../images/portugal_funchal2.jpg" class="align-right" alt="./images/portugal_funchal2.jpg" />
+<img src="../images/portugal_funchal2.jpg" class="align-right" alt="portugal_funchal2.jpg" />
 <figcaption>Functional map of an area in the old part of the town of Funchal, surrounding Jaime Moniz Secondary School</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Generally speaking, QGIS allured the students: "to accomplish basic functions of
 The idea of creating a website: <http://www.sig-na-jaime-moniz.webnode.pt> implied two main purposes: "spreading the word about project works done by the students" and, simultaneously, "show the importance of Open Source QGIS for the accomplishment of these school works". At present, the website is a motivation source for the follow up of the whole teaching process.
 
 <figure>
-<img src="../images/portugal_funchal3.jpg" class="align-right" alt="./images/portugal_funchal3.jpg" />
+<img src="../images/portugal_funchal3.jpg" class="align-right" alt="portugal_funchal3.jpg" />
 <figcaption>Placement proposal for recycle containers in the parish of Santo António</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ In a flashback analysis of the whole process, I feel that the idea of using QGIS
 ## Author
 
 <figure>
-<img src="../images/portugal_funchalaut.png" class="align-left" height="200" alt="./images/portugal_funchalaut.png" />
+<img src="../images/portugal_funchalaut.png" class="align-left" height="200" alt="portugal_funchalaut.png" />
 <figcaption>Fátima Vale</figcaption>
 </figure>
 

@@ -24,7 +24,7 @@ Within the whole planning process QGIS was used for the following four tasks:
 -   Print and export. The print composer supported the map layout creation. The map was exported as PDF and image files.
 
 <figure>
-<img src="../images/suisse_basel1.jpg" class="align-right" alt="./images/suisse_basel1.jpg" />
+<img src="../images/suisse_basel1.jpg" class="align-right" alt="suisse_basel1.jpg" />
 <figcaption>Extract of the forestry measurements map</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ The core tasks of a forestry planning concept can be worked out with the mention
 ## Author
 
 <figure>
-<img src="../images/suisse_baselaut.jpg" class="align-left" height="200" alt="./images/suisse_baselaut.jpg" />
+<img src="../images/suisse_baselaut.jpg" class="align-left" height="200" alt="suisse_baselaut.jpg" />
 <figcaption>Raphael Häner</figcaption>
 </figure>
 

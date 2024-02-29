@@ -12,12 +12,12 @@ sidebar: true
 
 Do you plan to use QGIS in your company or organization, but worry about whether there is commercial support available? Are you looking for a developer to add features you need or fix bugs you encounter? Here is an alphabetical list, divided in categories, of support contractors.
 
-{{< rich-box icon="🦸" layoutClass="tips">}}
-{{< rich-content themeClass="coloring-1" >}}
+{{< rich-box-start icon="🦸" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 we take responsibility for the accuracy, reliability or completeness of the provided information for **Core contributors** only.
-{{< /rich-content >}}
-{{< /rich-box >}}
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 
 ## Core contributors

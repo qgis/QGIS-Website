@@ -84,7 +84,7 @@ QGIS.ORG Böschacherstrasse 10a CH-8624 Grüt (Gossau ZH)
 
 ### Country Voting Members
 
-According to our statutes, for each country user group that is formed, that group will select a QGIS Country User Group Voting Member to represent their interests. These voting members are listed [here]({{< ref "/community/organisation/groups.md" >}}) . Please email [trademark@qgis.org](mailto:trademark@qgis.org) if you have registered a new country user group, or have changed your user group representative.
+According to our statutes, for each country user group that is formed, that group will select a QGIS Country User Group Voting Member to represent their interests. These voting members are listed [here]({{< ref "/community/groups.md" >}}) . Please email [trademark@qgis.org](mailto:trademark@qgis.org) if you have registered a new country user group, or have changed your user group representative.
 
 ### Community Voting Members
 
@@ -219,7 +219,7 @@ Find the list of documentation and website translators at: [https://github.com/q
 
 Current Translation Team Lead: Werner Macho
 
-The QGIS Translation is managed by the Community Assistant (Translation Team Lead) and supported by additional language specific teams. Information about the current documentation status and the translation process are provided at the [Translators Corner](../translate.html#translate-qgis).
+The QGIS Translation is managed by the Community Assistant (Translation Team Lead) and supported by additional language specific teams. Information about the current documentation status and the translation process are provided at the [Translators Corner](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html).
 
 Contact : [qgis-community-team](http://lists.osgeo.org/mailman/listinfo/qgis-community-team) list or [QGIS Translation Mailing list](http://lists.osgeo.org/mailman/listinfo/qgis-tr)
 

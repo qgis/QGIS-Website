@@ -11,7 +11,7 @@
     {{- range site.Menus.main }}
         {{ $i = add $i 1 }}
         {{ $menuItemID := printf "ul-%d" $i }}
-        <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
+        <li {{ if findRE (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
         {{ if .HasChildren }}
             <div class="has-child">
                 {{ partial "link" . }}
@@ -21,7 +21,7 @@
                 {{ range sort .Children "Weight" }}
                     {{ $i = add $i 1 }}
                     {{ $innerMenuItemID := printf "ul-%d" $i }}
-                    <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
+                    <li {{ if findRE (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
                     {{ if .HasChildren }}
                         <div class="has-child">
                             {{ partial "link" . }}
@@ -30,7 +30,7 @@
                         <ul id="{{ $innerMenuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
                             {{ $i = add $i 1 }}
-                                <li {{ if eq $pageUrl (replaceRE "/$" "" .URL) }} class="is-active"{{ end }}>
+                                <li {{ if findRE (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
                                     {{ partial "link" . }}
                                 </li>
                             {{ end }}

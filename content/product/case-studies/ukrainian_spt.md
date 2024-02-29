@@ -35,7 +35,7 @@ The initiative group was coordinated by its organizers, with regular meetings wh
 The working group successfully implemented the database in PostgreSQL and GeoPackage formats and created forms for the classes (layers), including the rules for data integrity approved by requirements for the geospatial database, which were set up in QGIS. The symbol library with the rule-based symbology for each class (layers) was set up in the .qgs project file. Layer style settings for each layer were tested and saved into the geospatial database of the SPT.
 
 <figure>
-<img src="../images/ukraine_spt1.png" class="align-left" alt="./images/ukraine_spt1.png" />
+<img src="../images/ukraine_spt1.png" class="align-left" alt="ukraine_spt1.png" />
 <figcaption><em>An example of the symbol library</em></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Current developments of the initiative group were presented on October 19, 2022,
 During webinar project members shared their experience not only about participating in the project but also their own experience of using QGIS and their first achievements of urban planning documentation development with the help of created tools.
 
 <figure>
-<img src="../images/ukraine_spt2.png" class="align-left" alt="./images/ukraine_spt2.png" />
+<img src="../images/ukraine_spt2.png" class="align-left" alt="ukraine_spt2.png" />
 <figcaption><em>An example of urban plan created with SPT</em></figcaption>
 </figure>
 

@@ -41,7 +41,7 @@ We are a community project, and although we make the software available for free
     class="is-danger" 
     title-size="is-4"
     subtitle-size="is-6"    
-    link="funding/sustaining-members/"
+    link="funding/membership/"
     link-text="Subscribe!"
 >}}{{< /block >}}
 {{< column-end >}}

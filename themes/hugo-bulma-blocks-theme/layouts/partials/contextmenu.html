@@ -1,5 +1,25 @@
 <div class="box mb-0 context-container" id="context">
-    <div class="container is-flex is-justify-content-flex-end">
+    <div class="container is-flex is-justify-content-space-between">
+        <div class="rss-feed">
+            {{ $data := "" }}
+            {{ $url := "https://blog.qgis.org/feed/" }}
+            {{ with resources.GetRemote $url }}
+            {{ with .Err }}
+                {{ errorf "%s" . }}
+            {{ else }}
+                {{ $data = .Content | transform.Unmarshal }}
+                {{ with $data.channel.item }}
+                    {{ range . | first 1 }}
+                    <a href="{{ .link | safeURL }}" target="_blank" rel="noopener" class="external-link">
+                        {{ .title }}
+                    </a>    
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+            {{ else }}
+            {{ errorf "Unable to get remote resource %q" $url }}
+            {{ end }}
+        </div>    
         <div id="search-control" class="control has-icons-right search-control">
             <form action="{{ "search/" | absURL }}" method="GET">
                 <input class="input is-small" type="search" id="search-query" name="q" placeholder="Search">
