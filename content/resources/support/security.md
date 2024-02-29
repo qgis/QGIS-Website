@@ -30,11 +30,12 @@ Security issues fall in the following cases :
 If you run a code scanner, most of the vulnerabilities are not concerning QGIS, but its dependencies. 
 The version of the dependencies shipped with your QGIS depends on the OS and packaging system you use. 
 
-**On Windows**, we use OSGEO4W project to distribute a complete environnement, and we fully maintain it.
+**On Windows**, QGIS.org use OSGEO4W project to distribute a complete environnement, and we fully maintain it.
+Other packages are maintained by the community, such as Conda, FlatPak, etc.. Any issue should be raised to the dedicated maintainers.  
 
 This installer is updated every month with various fixes and upgrades. If the latest version doesn't include a version fixing the vulnerability, please raise an issue on the dedicated [OSGEO4W bug tracker](https://trac.osgeo.org/osgeo4w/).
 
-On **Ubuntu / Debian**, we provide QGIS binaries and work closely with packagers of OSGEO libraries (GDAL / Proj / GRASS).
+On **[Ubuntu / Debian](/resources/installation-guide/#debianubuntu)**, we provide QGIS binaries and work closely with packagers of OSGEO libraries (GDAL / Proj / GRASS).
 But python and Qt libraries rely on your OS and you have to use your update manager here. 
 
 #### False positives
