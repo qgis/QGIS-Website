@@ -68,6 +68,7 @@
             {{ end }}
             "
         />
+        <meta property="og:image" content="{{ if .Params.og_image }}{{ absURL .Params.og_image }} {{ else }}{{ absURL "/img/QGIScover.png"}}{{ end }}"/>
 
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
         {{/* We render bulma to css for sass compilation but via a template so that we can include
