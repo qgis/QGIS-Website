@@ -241,8 +241,8 @@ to use params inside shortcode or partial, use wrapper:
 <a
 	class="button is-primary1 mb-3"
 	href="{{ .ltr_msi }}"
-    onclick="thanks(this)"
-    download
+	onclick="thanks(this)"
+	download
 >Long Term Version for Windows ({{ .ltrversion }} {{ .ltrnote }})</a>
 
 {{ end }}
