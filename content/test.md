@@ -8,6 +8,25 @@ heroImage: "img/involve.jpg"
 sidebar: true
 ---
 {{< content-start  >}}
+
+
+
+{{< rich-list listLink="../case-studies"  layoutClass="half" image="/img/map2.png" listTitle="Rich-list with image" listSubtitle="layoutClass=half" >}}
+
+{{< rich-list listLink="../case-studies"  layoutClass="half " image="/img/map2.png" listTitle="Rich-list with image" listSubtitle="layoutClass=half" >}}
+
+
+{{< rich-list listLink="http://documentation.qgis.org"  icon="⭐" layoutClass="third" listTitle="Rich-list with icon" listSubtitle="layoutClass=third" >}}
+
+{{< rich-list listLink="http://documentation.qgis.org"  icon="🌀" layoutClass="third" listTitle="Rich-list with icon" listSubtitle="layoutClass=third" >}}
+
+{{< rich-list listLink="http://documentation.qgis.org"  icon="🔮" layoutClass="third" listTitle="Rich-list with icon" listSubtitle="layoutClass=third" >}}
+
+
+
+
+
+
 ## Ways of Contributing
 💭💬🤔🧑‍🎓🤓🖖✌️🦄🦸⭐🌀🔮🪄🛟💡🕶️
 
