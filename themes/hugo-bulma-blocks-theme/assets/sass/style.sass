@@ -1,6 +1,21 @@
+/* Customize mark tag used by search results */
+.search-cantainer
+  min-height: 70vh 
+  .search-item
+    padding: 1rem
+    display: block
+    &:hover
+      box-shadow: 0rem 0rem 1rem #ccd2d687
+      .list-item-title 
+        color: #3A9800
+  .list-item-title 
+    font-size: 20px
+  .list-item-description
+    font-weight: 300
+    color: #385668
+      
 mark
-  background: linear-gradient(-100deg, {{ .Param "complementary4" }}, {{ .Param "complementary3" }} 95%)
-  border-radius: 0.25em
+  background: #fbe1ad
   padding: .05rem 0.25em
 
 body

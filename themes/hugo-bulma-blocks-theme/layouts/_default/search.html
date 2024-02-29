@@ -3,8 +3,8 @@
 {{ partial "banner.html" . }}
 {{ partial "contextmenu.html" . }}
 
-<section>
-    <div class="container notification is-light">
+<section class="section">
+    <div class="container content narrow search-cantainer" >
     <h1 class="title">Search Results</h1>
         <div class="search-loading">Loading...</div>
         <div class="list">
@@ -17,19 +17,21 @@
          div above with id of search-results. See search.js for
          logic of how this template is called. */}}
     <script id="search-result-template" type="text/x-js-template">
-        <div class="list-item">
-            <div id="summary-${key}" class="list-item-content">
-                <div class="list-item-title"><a href="${link}">${title}</a>
+        <a href="${link}" class="search-item">
+                <div class="list-item">
+                <div id="summary-${key}" class="list-item-content">
+                    <div class="list-item-title">${title}
+                    </div>
+                    <div class="list-item-description">
+                        ${snippet}
+                    </div>
+                    <div class="tags is-pulled-right">  
+                        ${ isset categories }${categories}${ end } 
+                        ${ isset tags }${tags}${ end }
+                    </div>        
                 </div>
-                <div class="list-item-description">
-                    <a href="${link}">${snippet}</a>
-                </div>
-                <div class="tags is-pulled-right">  
-                    ${ isset categories }${categories}${ end } 
-                    ${ isset tags }${tags}${ end }
-                </div>        
             </div>
-        </div>
+        </a>    
     </script>
 
 
