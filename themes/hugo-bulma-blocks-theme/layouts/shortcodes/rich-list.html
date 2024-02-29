@@ -7,7 +7,17 @@
 {{ $url := .Get "listLink" }}
 
 {{ with index .Site.Data.conf }}
-	{{ $url = replace $url "|ltrversion|" .ltrversion }}
+	{{ $ltrversion := .ltrversion }}
+	{{ $version := .version }}
+
+	{{/* github links have underscore notation (3_34 instead of 3.34) */}}
+	{{ if findRE "github.com/qgis/QGIS/blob/release" $url }}
+		{{ $ltrversion = replace $ltrversion "." "_" }}
+		{{ $version = replace $version "." "_" }}
+	{{ end }}
+
+	{{ $url = replace $url "|ltrversion|" $ltrversion }}
+	{{ $url = replace $url "|version|" $version }}
 {{ end }}
 
 {{ $isExternal := or (strings.HasPrefix $url "http://") (strings.HasPrefix $url "https://") }}
