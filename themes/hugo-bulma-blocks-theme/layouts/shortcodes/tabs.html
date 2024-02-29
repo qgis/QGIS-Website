@@ -3,6 +3,10 @@
 {{ $tab3 := .Get "tab3" }}
 {{ $tab4 := .Get "tab4" }}
 
+{{ with index .Site.Data.conf }}
+	{{ $tab1 = replace $tab1 "|ltrversion|" .ltrversion }}
+	{{ $tab2 = replace $tab2 "|version|" .version }}
+{{ end }}
 
 <div class="tabs">
     <ul>

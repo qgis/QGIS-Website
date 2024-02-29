@@ -248,6 +248,14 @@ to use params inside shortcode or partial, use wrapper:
 {{ end }}
 ```
 
+Example usage as shortcode param:
+
+tricky part: shortcodes can't be used as other shortcodes' params. So you need to make replacement in the outer shortcode: "tabs.html" make a replacement of `|ltrversion|` and `|version|` to the values from config.
+
+```
+{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing" tab4="Archived releases">}}
+```
+
 ## URL mapping from old site structure
 
 This table represents required redirects from old URL structure to the new one:
