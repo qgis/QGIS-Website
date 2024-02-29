@@ -9,7 +9,7 @@ The richlist shortcode is designed to create a customizable rich list item, idea
 - **icon:** The icon to display alongside the list item. Often uses for output emoji in short version.
 - **image:** The URL of the image to display alongside the list item. Image place to the top of the item and convert it to card
 - **layoutClass:** (Optional) Additional CSS classes to customize the layout of the rich list item. Supports various layout classes (`half`, `third`, `inline-block`) for flexible positioning within your content.
-- **listLink:** (Optional) The URL the rich list item should link to.
+- **listLink:** (Optional) The URL the rich list item should link to. If link starts with http - there will arrear external-link indicator and link will open in new window.
 - **linkAttr:** (Optional) Additional attributes to be added to the anchor tag.
 - **listTitle:** The main title or headline of the rich list item.
 - **listSubtitle:** A brief subtitle or description associated with the rich list item.
