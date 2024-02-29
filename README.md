@@ -187,7 +187,7 @@ markdown as ```/img/foo.png```.
 
 ## 📦 Blocks Shortcodes
 
-The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/layouts/shortcodes``` folder.
+The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/hugo-bulma-blocks-theme/layouts/shortcodes/``` folder.
 
 <!-- 3rd level header with icon with title Reusable header web component -->
 ### Reusable header web component
@@ -196,4 +196,75 @@ TODO
 
 ### Sidebar
 
-TODO
+Sidebar is implemented in themes/hugo-bulma-blocks-theme/layouts/partials/sidebar.html
+
+Items are retrieved from config.toml under `[menu]` section. `weight` parameter defines the order of the item.
+
+To enable sidebar on the content page, use the following template:
+
+```
+---
+type: "page"
+...
+sidebar: true
+---
+{{< content-start  >}}
+
+... add content here ...
+
+{{< content-end  >}}
+```
+
+### LT/LTR release variables
+
+Script for parsing release schedule from the google spreadsheet is scripts/update-schedule.py. It creates data/conf.json with variables that can be used later in md/html.
+
+Example usage in md:
+
+```
+Here you will simply install the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) 
+```
+
+To include param as link, use `param-link` shortcode: it correctly renders as md link, and not as plain text
+
+```
+Electronic document: {{< param-link "userguidecite" >}}
+```
+
+Example usage in HTML:
+
+to use params inside shortcode or partial, use wrapper:
+
+```
+{{ with index .Site.Data.conf }}
+...
+<a
+	class="button is-primary1 mb-3"
+	href="{{ .ltr_msi }}"
+    onclick="thanks(this)"
+    download
+>Long Term Version for Windows ({{ .ltrversion }} {{ .ltrnote }})</a>
+
+{{ end }}
+```
+
+## URL mapping from old site structure
+
+This table represents required redirects from old URL structure to the new one:
+https://docs.google.com/spreadsheets/d/12Oo761Zwgj4iLeJxdrg8I31rGzsB95z5M1PpW9pYma8/edit?usp=sharing
+
+## Stripe donations
+
+main donation page: [https://qgis.github.io/QGIS-Hugo/funding/donate/](https://qgis.github.io/QGIS-Hugo/funding/donate/)
+
+Stripe widget can be included to any page with the shortcode `{{<stripe-widget>}}`
+
+Payment options are implemented with [Payment Links](https://docs.stripe.com/no-code/payment-links). Values and links can be updated in data/stripe_products.yml
+
+## Auto-checking for broken links
+
+```
+docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Hugo > broken_links.csv
+```
+
+Crawls the site and reports all 404
