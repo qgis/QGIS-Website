@@ -93,7 +93,7 @@ QGIS Core comprises libraries for building custom applications through a robust 
 
 [Get set up for QGIS Core development](https://docs.qgis.org/3.28/en/docs/developers_guide/index.html )
 
-[QGIS roadmap]({{< ref "resources/roadmap" >}}" >}})
+[QGIS roadmap]({{< ref "resources/roadmap" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 ![](../img/Core.jpg)
