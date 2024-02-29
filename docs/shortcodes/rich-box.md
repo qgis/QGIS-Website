@@ -2,7 +2,7 @@
 
 ![rich-box](img/rich-box.png)
 
-The rich box shortcode allows you to create structured layouts for displaying rich content, with customizable sections to suit your needs.
+The rich box shortcodes allows you to create structured layouts for displaying rich content, with customizable sections to suit your needs.
 
 **3 types of rich-boxes** 
 - Block with content only
@@ -25,6 +25,7 @@ The rich box shortcode allows you to create structured layouts for displaying ri
 ### Block with content only
 ![rich-box](img/rich-box-simple.png)
 
+#### Shortcodes structure
 ```
 |rich-box-start 
 ||rich-content-start 
@@ -57,6 +58,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 ### Tips
 ![rich-box](img/rich-box-tips.png)
 
+#### Shortcodes structure
 ```
 |rich-box-start 
 ||rich-content-start 
@@ -83,6 +85,7 @@ After installing QGIS, the first launch attempt may fail due to security protect
 ### Block with right part
 ![rich-box-right](img/rich-box-right.png)
 
+#### Shortcodes structure
 ```
 |rich-box-start 
 ||rich-content-start 
