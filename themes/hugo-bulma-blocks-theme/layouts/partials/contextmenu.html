@@ -2,15 +2,15 @@
     <div class="container is-flex is-justify-content-space-between">
         <div class="rss-feed">
             {{ $data := "" }}
-            {{ $url := "https://blog.qgis.org/feed/" }}
+            {{ $url := .Site.Params.newsfeed }}
             {{ with resources.GetRemote $url }}
             {{ with .Err }}
                 {{ errorf "%s" . }}
             {{ else }}
                 {{ $data = .Content | transform.Unmarshal }}
-                {{ with $data.channel.item }}
+                {{ with $data }}
                     {{ range . | first 1 }}
-                    <a href="{{ .link | safeURL }}" target="_blank" rel="noopener" class="external-link">
+                    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener" class="external-link">
                         {{ .title }}
                     </a>    
                     {{ end }}
