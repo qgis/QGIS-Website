@@ -10,6 +10,14 @@
     border-radius: 10px
     .listcont 
       padding: 1rem 1rem 0rem 1rem  
+      overflow: hidden
+      text-overflow: ellipsis
+      display: -webkit-box
+      -webkit-line-clamp: 3
+      -webkit-box-orient: vertical
+      display: box
+      line-clamp: 1
+      box-orient: vertical
     .subtext
       padding: 0rem 1rem 0rem 1rem   
   &.half
@@ -48,15 +56,10 @@
       height: auto
       width: auto
 
-
-      
 a.rich-list:hover
   background: #ECF1F4
 
-
-
-
-@media screen and (max-width: 768px) 
++until-tablet
    .rich-list 
     &.half, &.third
         width: 100%

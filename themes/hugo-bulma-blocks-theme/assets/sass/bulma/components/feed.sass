@@ -3,10 +3,13 @@
   position: relative
   overflow: hidden
   height: 26px
+  display: flex
+  height: 26px
+  align-items: center
   +mobile
     max-width: calc( 100% - 150px )
   a 
-    color: #93b022
+    color: $primary5
     overflow: hidden
     text-overflow: ellipsis
     display: -webkit-box
@@ -17,7 +20,7 @@
     box-orient: vertical
     font-size: 14px
     &:hover
-      color: #3A9800  
+      color: $links  
     &:before 
       content: "News: "
-      color: white 
+      color: $white 
