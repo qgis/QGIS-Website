@@ -1,4 +1,4 @@
-## ## Rich Box Shortcode
+## Rich Box Shortcode
 
 ![rich-box](img/rich-box.png)
 
