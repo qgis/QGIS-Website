@@ -9,10 +9,6 @@ sidebar: true
 
 {{< content-start  >}}
 
-
-
- 
-
 ## Security information
 
 The QGIS community takes security as a serious matter. We are aware that QGIS is deployed in sensitive environnements. 
@@ -23,7 +19,7 @@ For these reasons, this is how QGIS project acts to respond to vulnerabilities a
 ### What is a vulnerability in QGIS ? 
 
 QGIS is a broad project with several different components, relying on a large base of external dependencies (GDAL, Proj, python libraries, Qt, etc..). 
-Security issues fall in the following cases : 
+Security issues in QGIS can arise in various scenarios, including, but not limited to, vulnerabilities in its dependencies (e.g., GDAL, Proj, Qt), issues within QGIS code itself, or through the misuse of its Python bindings. Here are the main categories:
 
 #### Vulnerabilies of underlying libraries 
 
@@ -31,36 +27,38 @@ If you run a code scanner, most of the vulnerabilities are not concerning QGIS, 
 The version of the dependencies shipped with your QGIS depends on the OS and packaging system you use. 
 
 **On Windows**, QGIS.org use OSGEO4W project to distribute a complete environnement, and we fully maintain it.
-Other packages are maintained by the community, such as Conda, FlatPak, etc.. Any issue should be raised to the dedicated maintainers.  
 
-This installer is updated every month with various fixes and upgrades. If the latest version doesn't include a version fixing the vulnerability, please raise an issue on the dedicated [OSGEO4W bug tracker](https://trac.osgeo.org/osgeo4w/).
+OSGEO4W provides update scripts that can run silently, allowing you to upgrade only the necessary libraries without the need to redownload the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGEO4W documentation](https://trac.osgeo.org/osgeo4w/).
+
 
 On **[Ubuntu / Debian](/resources/installation-guide/#debianubuntu)**, we provide QGIS binaries and work closely with packagers of OSGEO libraries (GDAL / Proj / GRASS).
-But python and Qt libraries rely on your OS and you have to use your update manager here. 
+For Python and Qt libraries, which rely on your operating system, please ensure they are updated regularly using your system's update manager. For Ubuntu/Debian, this typically involves using commands like `sudo apt-get update` and `sudo apt-get upgrade`.
+Other packages are maintained by the community, such as Conda, FlatPak, etc.. Any issue should be raised to the dedicated maintainers.  
 
 #### False positives
 
-We collect a lot of demands due to false positive detection by code scanners.
+Receiving red flags from code scanner alerts can be alarming, but many of the current alerts are false positive, so keep calm and don't panic. 
 
-For instance, PostgreSQL client library (psql, libpq) embedded in QGIS, trigger vulnerabilities of the **server part**, which is **not shipped with QGIS installer**.  
+For example, a common false positive might involve the PostgreSQL client library (libpq) being flagged for server-side vulnerabilities, which do not apply to QGIS's use case.
 
-Before blindly pushing your code scanner alerts, keep calm and don't panic. 
 Read the CVE report, go to the upstream project CVE description and please verify this really concerns. 
-Please also raise this to your code scanner vendor so that they update their catalog accordingly.
-We can't do anything from our side if an upstream CVE has been badly classified, but we end up in being flooded by those reports. This way you preserve the available bandwidth of the contributors for the real issues. 
 
-#### Vulnerabilities of QGIS itself
+Please also communicate these findings to your code scanner vendor for catalog updates, to let a chance this stops in the future. 
+
+There is not much QGIS contributors can do when the classification of dependencies is not accurate in the CVE database.
+
+### Vulnerabilities of QGIS itself
 
 Those are extremely rare but can occur as in any software.
 
 QGIS server is a more critical part than QGIS desktop, since it is exposed to the web on public servers. It has been assessed against SQL injections and various known leaks by big corporations since years now. 
 
-If you found an issue: 
- - check you are using the latest version of QGIS, and have a glance at the nighlty version for potential ongoing changes
- - check if your issue concerns QGIS desktop or QGIS server part
- - please check our [Bug tracker](https://github.com/qgis/QGIS/issues) for an already existing and potential fix
+If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please refer to the [security page]({{< ref "resources/support/security" >}}) for detailed information on how to report it responsibly. Before this, please do the following
+ - Check you are using the latest version of QGIS, and have a glance at the nighlty version for potential ongoing changes (fixes or regressions)
+ - Check if your issue concerns QGIS desktop or QGIS server part
+ - Please check our [Bug tracker](https://github.com/qgis/QGIS/issues) for an already existing and potential fix
  - then only, raise a private disclosure to the security teams [our GitHub security page](https://github.com/qgis/QGIS/security).
-
+ - then only, raise a private disclosure to the security teams via [our GitHub security page](https://github.com/qgis/QGIS/security). Please avoid publicly disclosing the vulnerability until it has been resolved to prevent potential exploitation.
 
 #### Running python QGIS 
 
@@ -90,8 +88,9 @@ Disclosures are discussed in a private dedicated repository.
 
 Fixes are shipped as soon as possible - regarding the criticity of the issue - in point releases. 
 
-If you want to secure your QGIS enterprise deployment, please ensure to be able to quickly deploy fixes on your machines. OSGEO4W has update scripts that can run silently and upgrade only the libraries you need without redownloading the full package.
+If you want to secure your QGIS enterprise deployment, please ensure to be able to quickly deploy fixes on your machines. 
 
+OSGEO4W provides update scripts that can run silently, allowing you to upgrade only the necessary libraries without the need to redownload the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGEO4W documentation](https://trac.osgeo.org/osgeo4w/).
 
 
 

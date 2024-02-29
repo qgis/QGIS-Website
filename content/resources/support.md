@@ -56,8 +56,7 @@ Good luck with the organization of your local user group. Please inform the inte
 
 ## Security Vulnerability Reporting
 
-If you believe you have found a security issue, please refer to the [security page]({{< ref "resources/support/security" >}}) for information on how to report it.
-
+If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please refer to the [security page]({{< ref "resources/support/security" >}}) for detailed information on how to report it responsibly.
 
 {{< content-end >}}
 
