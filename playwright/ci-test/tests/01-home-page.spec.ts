@@ -98,7 +98,7 @@ test('home page', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'Go to materials' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'QGIS supporters' })).toBeVisible();
   await expect(page.locator('div').filter({ hasText: 'Add your logo here?' }).nth(2)).toBeVisible();
-  await expect(page.locator('div').filter({ hasText: 'Golden partner' }).nth(2)).toBeVisible();
+  await expect(page.locator('div').filter({ hasText: 'Silver partner' }).nth(2)).toBeVisible();
   await expect(page.locator('.supporters-grid > div:nth-child(3)').first()).toBeVisible();
   await expect(page.locator('.tile > .tile').first()).toBeVisible();
   await expect(page.getByRole('contentinfo')).toBeVisible();

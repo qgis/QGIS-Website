@@ -1,14 +1,14 @@
-{{ $funders := 0 }}
+{{ $allFunders := slice }}
 {{ $logoPath := 0 }}
 
 {{ $type := .Get "type"  }}
 
 {{ if eq $type "changelog" }}
-	{{ $funders = .Page.Resources.Match "funders/*md" }}
+	{{ $allFunders = .Page.Resources.Match "funders/*md" }}
     {{ $logoPath = absURL "img/contributors/" }}
 {{ else }}
 	{{ $headlessbundle := .Site.GetPage "/funders" }}
-	{{ $funders = ( $headlessbundle.Resources.ByType "page" ) }}
+	{{ $allFunders = ( $headlessbundle.Resources.ByType "page" ) }}
     {{ $logoPath = absURL "funders/" }}
 {{ end }}
 
@@ -19,7 +19,7 @@
 {{ if or (eq $type "active") (eq $type "changelog") }}
 
     {{ $funders := slice }}
-    {{ range where $funders "Params.level" "Flagship" }}
+    {{ range where $allFunders "Params.level" "Flagship" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
             {{ $funders = $funders | append . }}
         {{ end }}
@@ -58,7 +58,7 @@
     {{ end }}
 
     {{ $funders := slice }}
-    {{ range where $funders "Params.level" "Large" }}
+    {{ range where $allFunders "Params.level" "Large" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
             {{ $funders = $funders | append . }}
         {{ end }}
@@ -98,7 +98,7 @@
     {{ end }}
 
     {{ $funders := slice }}
-    {{ range where $funders "Params.level" "Medium" }}
+    {{ range where $allFunders "Params.level" "Medium" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
             {{ $funders = $funders | append . }}
         {{ end }}
@@ -139,7 +139,7 @@
     {{ end }}
 
     {{ $funders := slice }}
-    {{ range where $funders "Params.level" "Small" }}
+    {{ range where $allFunders "Params.level" "Small" }}
         {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
             {{ $funders = $funders | append . }}
         {{ end }}
@@ -184,7 +184,7 @@
 <div class="tile is-ancestor is-vertical funders">
     <div class="tile">
     {{ $.Scratch.Set "counter" 0 }}
-    {{ range $funders }}
+    {{ range $allFunders }}
         {{ $endDate := time .Params.endDate }}
         {{ if le $endDate now }}
             {{ $count := add ($.Scratch.Get "counter") 1 }}

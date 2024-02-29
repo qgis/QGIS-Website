@@ -25,7 +25,7 @@ Utilize channels to seek assistance from fellow users and developers or stay upd
 
 Feel free to subscribe to any of the lists, and remember to contribute by answering questions and sharing your experiences.
 
-[Community support channels page](../../resources/support)
+[Community support channels page]({{< ref "resources/support" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 ![](../img/Channels.jpg)
@@ -39,7 +39,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 
 If you encounter any issues while working with QGIS, let the QGIS developers know about them.
 
-[Report an issue](../../resources/support/bug-reporting)
+[Report an issue]({{< ref "resources/support/bug-reporting" >}})
 {{< rich-content-end>}}
 {{< rich-right-start >}}  
 ![](../img/Bugs.jpg)
@@ -93,7 +93,7 @@ QGIS Core comprises libraries for building custom applications through a robust 
 
 [Get set up for QGIS Core development](https://docs.qgis.org/3.28/en/docs/developers_guide/index.html )
 
-[QGIS roadmap](../../resources/roadmap)
+[QGIS roadmap]({{< ref "resources/roadmap" >}}" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 ![](../img/Core.jpg)

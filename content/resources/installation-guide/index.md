@@ -18,7 +18,7 @@ We recommend installing the packages of the released software.
 
 To evaluate the upcoming release and to allow non-developers to support development we also provide testing packages (note the [warning](#warning)).
 
-In the feature frozen phase preceding a release (see [Release schedule](../roadmap#release-schedule)) these packages are effectively **pre-releases, which we strongly urge users to test**.
+In the feature frozen phase preceding a release (see [Release schedule]({{< ref "roadmap#release-schedule" >}})) these packages are effectively **pre-releases, which we strongly urge users to test**.
 
 # Windows
 
@@ -34,7 +34,7 @@ For beginners the easiest way is using the standalone installers:
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|
 |Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|
 
-See also [The main installers page](../../download).
+See also [The main installers page]({{< ref "download" >}}).
 
 The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase that also acts as **release candidate**.
 
@@ -197,7 +197,7 @@ Next point release: {{< param "nextpointreleasedate" >}}
 
 Next release: {{< param "nextreleasedate" >}}
 
-(more dates see Release Schedule on [Road Map](../roadmap))
+(more dates see Release Schedule on [Road Map]({{< ref "resources/roadmap" >}}))
 </small>
 
 #### Supported distribution versions: {#available-codenames}
@@ -491,7 +491,7 @@ Spack related issues should be reported at: https://github.com/spack/spack/issue
 
 # Mac OS X / macOS
 
-Official All-in-one, signed installers for macOS High Sierra (10.13) and newer can be downloaded from the [QGIS download page](../../download).
+Official All-in-one, signed installers for macOS High Sierra (10.13) and newer can be downloaded from the [QGIS download page]({{< ref "download" >}}).
 
 ## QGIS nightly release
 
