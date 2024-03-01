@@ -8,6 +8,25 @@ heroImage: "img/involve.jpg"
 sidebar: true
 ---
 {{< content-start  >}}
+
+
+
+{{< rich-list listLink="../case-studies"  layoutClass="half" image="/img/map2.png" listTitle="Rich-list with image" listSubtitle="layoutClass=half" >}}
+
+{{< rich-list listLink="../case-studies"  layoutClass="half " image="/img/map2.png" listTitle="Rich-list with image" listSubtitle="layoutClass=half" >}}
+
+
+{{< rich-list listLink="http://documentation.qgis.org"  icon="⭐" layoutClass="third" listTitle="Rich-list with icon" listSubtitle="layoutClass=third" >}}
+
+{{< rich-list listLink="http://documentation.qgis.org"  icon="🌀" layoutClass="third" listTitle="Rich-list with icon" listSubtitle="layoutClass=third" >}}
+
+{{< rich-list listLink="http://documentation.qgis.org"  icon="🔮" layoutClass="third" listTitle="Rich-list with icon" listSubtitle="layoutClass=third" >}}
+
+
+
+
+
+
 ## Ways of Contributing
 💭💬🤔🧑‍🎓🤓🖖✌️🦄🦸⭐🌀🔮🪄🛟💡🕶️
 
@@ -35,6 +54,54 @@ Create, edit, visualise, analyse and publish geospatial information.
 {{< rich-box-end >}}
 {{< column-end >}}
 {{< columns-end >}}
+
+
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+
+{{< rich-box-start>}}
+{{< rich-content-start themeClass="coloring-1" >}}
+### Participate in Support Channels
+
+Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
+
+Feel free to subscribe to any of the lists, and remember to contribute by answering questions and sharing your experiences.
+
+[Community support channels page](#)
+
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+{{< rich-box-start>}}
+{{< rich-content-start themeClass="coloring-2" >}}
+### Participate in Support Channels
+
+Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
+
+Feel free to subscribe to any of the lists, and remember to contribute by answering questions and sharing your experiences.
+
+[Community support channels page](#)
+
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+{{< rich-box-start>}}
+{{< rich-content-start themeClass="coloring-6" >}}
+### Participate in Support Channels
+
+Utilize channels to seek assistance from fellow users and developers or stay updated on current project events.
+
+Feel free to subscribe to any of the lists, and remember to contribute by answering questions and sharing your experiences.
+
+[Community support channels page](#)
+
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created. On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+
+
+
 
 {{< rich-box-start layoutClass="has-right" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
@@ -118,6 +185,13 @@ Creating documentation offers an ideal starting point for your first contributio
 
 {{< rich-box-start icon="💁" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
+##### Tips for first launch
+After installing QGIS, the first launch attempt may fail due to security protections. To enable QGIS, control-click on its icon in your Applications folder and select Open in the context menu. A confirmation dialog will display where you need to click the Open button again. This only has to be done once.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+{{< rich-box-start icon="💁" layoutClass="tips ">}}
+{{< rich-content-start themeClass="coloring-6" >}}
 ##### Tips for first launch
 After installing QGIS, the first launch attempt may fail due to security protections. To enable QGIS, control-click on its icon in your Applications folder and select Open in the context menu. A confirmation dialog will display where you need to click the Open button again. This only has to be done once.
 {{< rich-content-end >}}
