@@ -2,8 +2,8 @@
 level: "Small"
 title: "BNHR"
 logo: "bnhr.xyz.png"
-startDate: "2023-03-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://bnhr.xyz/"
 country: "Philippines"
 ---

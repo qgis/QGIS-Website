@@ -2,8 +2,8 @@
 level: "Small"
 title: "The Spatial Distillery Company Pty Ltd"
 logo: "spatialdistillery.com.jpg"
-startDate: "2023-01-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://spatialdistillery.com/"
 country: "Australia"
 ---
