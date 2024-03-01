@@ -5,7 +5,7 @@ title: "QGIS at high school: the urban green spaces in Rada Tilly coastal town, 
 description: "In our region, Argentinean Patagonia, we have very few references about
 the application of GIS in High School for the construction of geographical knowledge 
 as a mean to face territorial and environmental issues. "
-draft: false
+draft: "true"
 author: "Prof. Alberto Vázquez & Mauro Novara "
 categories: ['Case studies']
 # Generic words only, no upper case, no spaces (use hyphens to separate words rather)

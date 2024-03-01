@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Historical Gazetteer of the Crimea
 
 Every day, Ottomanists around the world generate valuable materials as

@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Trainings & Research activities using QGIS at NIRD&PR-NERC, Guwahati, India
 
 The National Institute of Rural Development & Panchayati Raj (NIRD&PR)

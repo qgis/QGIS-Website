@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS \-\-- an interesting instrument for forestry planning concepts at local and regional level
 
 Almost 35% of Switzerland\'s surface is covered by forests. Changing

@@ -1,7 +1,7 @@
 ---
 type: "page"
-title: "Get involved"
-subtitle: "QGIS is developed by a team of dedicated volunteers and organizations. We aim to foster a welcoming community for people of all races, creeds, genders, and walks of life"
+title: "Test page"
+subtitle: "Here you can test any shortcodes or layout"
 draft: false
 HasBanner: true
 heroImage: "img/involve.jpg"

@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Using QGIS to Map Hotspot Areas for Biodiversity and Ecosystem Services (HABEaS)
 
 HABEaS \-\-- Hotspot Areas for Biodiversity and Ecosystem Services is an

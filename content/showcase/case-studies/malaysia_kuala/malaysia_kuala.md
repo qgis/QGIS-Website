@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS at the Federal Department of Town and Country Planning, Peninsular Malaysia
 
 ## Introduction

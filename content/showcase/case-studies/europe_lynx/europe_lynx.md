@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Lynx habitat analysis in the Southern Carpathians
 
 A case study to promote basic understanding of wildlife habitat modeling

@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS in the governmental FOSSGIS stack of the Canton of Solothurn in Switzerland
 
 ![](./images/suisse_solothurn1.png){.align-left}

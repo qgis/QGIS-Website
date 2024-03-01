@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS to describe the Cesena\'s Wall
 
 The ECAMPUS UNIVERSITY was created as an online University and

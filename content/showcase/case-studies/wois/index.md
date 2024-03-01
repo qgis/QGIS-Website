@@ -3,7 +3,7 @@ type: "showcase/case-studies"
 date: "2015-04-01"
 title: "Water Observation and Information System"
 description: "Enabling the Use of Earth Observation Data for Integrated Water Resource Management in Africa"
-draft: false
+draft: "true"
 author: "Radoslaw Guzinski"
 categories: ['Case studies']
 # Generic words only, no upper case, no spaces (use hyphens to separate words rather)
