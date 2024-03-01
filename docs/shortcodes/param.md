@@ -1,6 +1,6 @@
 ## `param` Shortcode
 
-The `param` shortcode is used to retrieve and display a specific configuration parameter from the site's data files.
+The `param` shortcode is used to retrieve and display a specific parameter from data/conf.json. This file is in sync with QGIS release schedule and contains variables related to roadmap.
 
 ### Parameters
 
@@ -8,15 +8,16 @@ The `param` shortcode is used to retrieve and display a specific configuration p
 
 ### Example Usage
 
-To use the `param` shortcode, you need to pass the name of the configuration parameter as an argument. For example, if you want to retrieve the `email` parameter from the site's configuration:
-
-```html
-{{< param "email" >}}
+```
+the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) 
 ```
 
-This will output the value of the email parameter from the site's configuration data.
+^ will be rendered as `the latest stable QGIS (3.36.x Maidenhead)`
 
 ### Additional Notes
-The configuration parameters are typically stored in the data directory of your Hugo site, in a file named conf.toml, conf.yaml, or conf.json.
-Make sure that the parameter you are trying to access exists in the site's configuration data files.
+Make sure that the parameter you are trying to access exists in the data/conf.json.
 This shortcode is useful for displaying dynamic content that is defined in the site's configuration and needs to be consistent across multiple pages.
+
+The shortcode is rendered as plain text. To automatically generate a clickeble link, use `param-link`
+
+Also see notes about automation of LT/LTR variables in the root README
