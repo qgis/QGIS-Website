@@ -2,8 +2,8 @@
 level: "Medium"
 title: "CHARTWELL Resource Group Ltd."
 logo: "crgl.ca.png"
-startDate: "2023-03-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://crgl.ca/"
 country: "Canada"
 ---

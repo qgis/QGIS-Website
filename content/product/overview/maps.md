@@ -10,5 +10,5 @@ sidebar: true
 
 Amazing maps created using QGIS
 
-{{< flickr-images showcase="map" quantity="100" columns="6" >}}
+{{< flickr-images showcase="map" columns="gallery" >}}
 {{< content-end  >}}

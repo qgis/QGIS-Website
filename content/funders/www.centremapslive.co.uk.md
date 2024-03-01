@@ -2,8 +2,8 @@
 level: "Small"
 title: "Centremaps"
 logo: "www.centremapslive.co.uk.png"
-startDate: "2023-01-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://www.centremapslive.co.uk/"
 country: "United Kingdom"
 ---

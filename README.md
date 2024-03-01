@@ -261,6 +261,25 @@ tricky part: shortcodes can't be used as other shortcodes' params. So you need t
 This table represents required redirects from old URL structure to the new one:
 https://docs.google.com/spreadsheets/d/12Oo761Zwgj4iLeJxdrg8I31rGzsB95z5M1PpW9pYma8/edit?usp=sharing
 
+Notes:
+
+- it will be more convenient to store all redirects in same file (nginx conf or else)
+- hugo aliases not recommended: they work, but don't support regex. also hard to maintain: redirects are spread across content files
+- use regexps to redirect from all langs
+- use regexps to map between similar stuff (case studies, visual changelog) - example rewrite rules below
+
+Bulk redirects can be done like
+
+```
+location ~ ^/[A-Za-z-]+/site/about/case_studies/(.*).html {
+  rewrite ^/[A-Za-z-]+/site/about/case_studies/(.*).html /product/case-studies/$1/ permanent;
+}
+
+location ~ ^/[A-Za-z-]+/site/forusers/visualchangelog(.*)/index.html {
+  rewrite ^/[A-Za-z-]+/site/forusers/visualchangelog(.*)/index.html /product/visual-changelogs/visualchangelog$1/ permanent;
+}
+```
+
 ## Stripe donations
 
 main donation page: [https://qgis.github.io/QGIS-Hugo/funding/donate/](https://qgis.github.io/QGIS-Hugo/funding/donate/)
@@ -275,4 +294,4 @@ Payment options are implemented with [Payment Links](https://docs.stripe.com/no-
 docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Hugo > broken_links.csv
 ```
 
-Crawls the site and reports all 404
+Crawls the site and reports all 404. Full run takes apout 10 mins

@@ -1,9 +1,0 @@
-{{ partial "header.html" . }}
-{{ partial "menu.html" . }}
-{{ partial "submenu.html" . }}
-{{ partial "banner.html" . }}
-{{ .Content }}
-{{ partial "footer.html" . }}
-{{ if ( .Site.Params.cookiesstate ) }}
-    {{ partial "cookie-notice.html" }}
-{{ end }}
