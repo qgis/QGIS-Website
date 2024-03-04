@@ -126,6 +126,8 @@ to see if it is suitable for publication on our site.
 ./fetch_feeds.py --flickr=yes
 ```
 
+Flickr parsing creates new files and md pages with param `draft: true`. It can be changed to `false` after manual verification. The script will not overwrite the changes. Pictures with `draft: false` will appear on /product/overview/maps/ and /product/overview/screenshots/.
+
 This script is run nightly as a github action (see .github/workflows/update-feeds.yml).
 
 ## Search Functionality 
