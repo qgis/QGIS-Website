@@ -235,9 +235,9 @@ test('resources pages', async ({ page }) => {
   await expect(page.getByRole('cell', { name: 'Debian/Ubuntu' })).toBeVisible();
   await expect(page.getByRole('cell', { name: 'MacOS' })).toBeVisible();
   await expect(page.getByRole('cell', { name: 'Mac OS' })).toBeVisible();
-  await expect(page.locator('#sidebar').getByRole('link', { name: 'Reports' })).toBeVisible();
+  await expect(page.locator('#sidebar').getByRole('link', { name: 'Reports', exact: true })).toBeVisible();
   await expect(page.locator('#sidebar div').filter({ hasText: 'Reports' }).locator('span')).toBeVisible();
-  await page.locator('#sidebar').getByRole('link', { name: 'Reports' }).click();
+  await page.locator('#sidebar').getByRole('link', { name: 'Reports', exact: true }).click();
   await expect(page.locator('#daily-reports')).toContainText('Daily Reports');
   await expect(page.locator('#ogc-certification')).toContainText('OGC Certification');
   await expect(page.getByText('QGIS Server').first()).toBeVisible();
