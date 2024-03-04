@@ -4,7 +4,7 @@ type: "funding"
 date: "2023-01-18"
 title: "QGIS Funding"
 description: "Funding avenues that support our work."
-draft: false
+draft: "true"
 author: ""
 categories: ['Funding']
 # Generic words only, no upper case, no spaces (use hyphens to separate words rather)

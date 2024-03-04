@@ -2,13 +2,12 @@
 type: "page"
 title: "QGIS - The Leading Open Source Desktop GIS"
 subtitle: "QGIS is a professional GIS application that is built on top of and proud to be itself Free and Open Source Software (FOSS)."
-draft: false
+draft: "true"
 heroImage: "img/banners/banner4.png"
 sidebar: true
 
 ---
 {{< content-start >}}
-
 {{< block
     title="Mapping."
     subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps for digital and print."

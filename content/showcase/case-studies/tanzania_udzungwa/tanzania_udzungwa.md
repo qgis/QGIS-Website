@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Using QGIS for wildlife training in Tanzania
 
 ## Introduction

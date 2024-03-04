@@ -3,7 +3,7 @@ type: "showcase"
 date: "2015-04-01"
 title: "QGIS Case Studies"
 description: "Stories from our users around the world."
-draft: false
+draft: "true"
 author: ""
 categories: ['Case studies']
 # Generic words only, no upper case, no spaces (use hyphens to separate words rather)

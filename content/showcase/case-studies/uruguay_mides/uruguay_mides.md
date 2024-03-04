@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Use of QGIS at the Ministry of Social Development of Uruguay (MIDES)
 
 ## Introduction

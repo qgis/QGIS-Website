@@ -5,4 +5,6 @@ draft: false
 heroImage: "img/banners/banner1.png"
 author: ""
 thumbnail: ""
+draft: "true"
+
 ---

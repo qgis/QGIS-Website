@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # The use of QGIS in the Geodata Infrastructure of the City of Uster
 
 The City of Uster has been using QGIS since 2007. Encouraged by the

@@ -2,7 +2,7 @@
 type: "page"
 title: "Documentation Overview"
 subtitle: "QGIS Documentation Resources"
-draft: true
+draft: "true"
 heroImage: "img/banners/banner2.png"
 # Which second level menu to show
 submenus: documentation

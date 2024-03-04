@@ -6,7 +6,7 @@ description: "The Danish Demining Group (DDG), the specialised mine action unit 
 Danish Refugee Council, has been working in Afghanistan since 1999,
 undertaking humanitarian mineclearance, unexploded ordnance (UXO)
 disposal and mine risk education."
-draft: false
+draft: "true"
 author: "Edward Crowther"
 categories: ['Case studies']
 # Generic words only, no upper case, no spaces (use hyphens to separate words rather)

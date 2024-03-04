@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Creating the Fundy Footpath Trail Map with QGIS
 
 ![](./images/canada_brunswick1.jpg){.align-left}
