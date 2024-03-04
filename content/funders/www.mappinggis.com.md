@@ -1,9 +1,9 @@
 ---
 level: "Small"
-title: "MappingGIS"
+title: "MappingGIS S.L.U."
 logo: "www.mappinggis.com.png"
-startDate: "2023-03-01"
-endDate: "2024-02-29"
-link: "http://www.mappinggis.com/"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
+link: "https://www.mappinggis.com/"
 country: "Spain"
 ---

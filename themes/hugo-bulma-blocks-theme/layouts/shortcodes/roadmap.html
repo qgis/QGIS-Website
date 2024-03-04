@@ -216,8 +216,13 @@
         var timeinterval = setInterval(updateClock, 1000);
       }
       
-      var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-      initializeClock('point-release', deadline);
-      initializeClock('freeze', deadline);
-      initializeClock('package', deadline);
+      {{ with index .Site.Data.conf }}
+        const nextFreezeDate = new Date({{ .nextfreezedate }});
+        const nextReleaseDate = new Date({{ .nextreleasedate }});
+        const nextPointReleaseDate = new Date({{ .nextpointreleasedate }});
+      {{ end }}
+
+      initializeClock('point-release', nextPointReleaseDate);
+      initializeClock('freeze', nextFreezeDate);
+      initializeClock('package', nextReleaseDate);
     </script>

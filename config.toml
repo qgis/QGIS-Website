@@ -85,6 +85,11 @@ corner-radius = "0px"
 uniNavHeaderUrl = 'https://konturio.github.io/qgis-uni-navigation/index.js'
 uniNavHeaderLocationPrefix = "/QGIS-Hugo"
 
+## Url to news feed. After URL change you have to check 
+## themes/hugo-bulma-blocks-theme/layouts/partials/contextmenu.html 
+## file to ensure that it adresses the correct keys 
+newsfeed ='https://feed.qgis.org/?lang=en&json=1'
+
 ## This will turn on Coockie popup. True to show popup
 cookiesstate = false
 
