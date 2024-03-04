@@ -126,6 +126,8 @@ to see if it is suitable for publication on our site.
 ./fetch_feeds.py --flickr=yes
 ```
 
+Flickr parsing creates new files and md pages with param `draft: true`. It can be changed to `false` after manual verification. The script will not overwrite the changes. Pictures with `draft: false` will appear on /product/overview/maps/ and /product/overview/screenshots/.
+
 This script is run nightly as a github action (see .github/workflows/update-feeds.yml).
 
 ## Search Functionality 
@@ -144,6 +146,14 @@ The site needs to work in production, where the links of the site are all below 
 ```
 
 **Note:** We do not use a leading slash, only an ending slash.
+
+## Styles (SASS/CSS)
+
+SASS for most components is stored in themes/hugo-bulma-blocks-theme/assets/sass/bulma/components/
+
+Some common styles are places in themes/hugo-bulma-blocks-theme/assets/sass/style.sass - this file is compiled as hugo template, hence has access to config.toml variables and hugo macroses
+
+Also some bulma theme overrides are placed in themes/hugo-bulma-blocks-theme/assets/css/custom.css
 
 ## 📁 File naming conventions
 
@@ -167,7 +177,10 @@ We welcome your contributions! All contributors are expected to sign a contribut
 
 ## 🏠 Editing the landing (home) page
 
-The ``content/_index.md`` is the content for the landing page. Just edit whatever you like there. The blocks shortcodes are described below.
+The layout of the landing page is themes/hugo-bulma-blocks-theme/layouts/index.html: the main page has many diverse blocks, that are not used anywhere else, hence its content is mostly in the partials.
+
+The ``content/_index.md`` contains the front matter of the page and the contents for the `feature` shortcodes. Just edit whatever you like there. The blocks shortcodes are described [here](https://github.com/qgis/QGIS-Hugo/blob/main/docs/shortcodes.md)
+
 
 ## 📃 Adding a top level page
 
@@ -188,6 +201,8 @@ markdown as ```/img/foo.png```.
 ## 📦 Blocks Shortcodes
 
 The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/hugo-bulma-blocks-theme/layouts/shortcodes/``` folder.
+
+The shortcodes with screenshots are described [here](https://github.com/qgis/QGIS-Hugo/blob/main/docs/shortcodes.md)
 
 <!-- 3rd level header with icon with title Reusable header web component -->
 ### Reusable header web component
@@ -271,14 +286,16 @@ Notes:
 Bulk redirects can be done like
 
 ```
-location ~ ^/[A-Za-z-]+/site/about/case_studies/(.*).html {
-  rewrite ^/[A-Za-z-]+/site/about/case_studies/(.*).html /product/case-studies/$1/ permanent;
-}
-
-location ~ ^/[A-Za-z-]+/site/forusers/visualchangelog(.*)/index.html {
-  rewrite ^/[A-Za-z-]+/site/forusers/visualchangelog(.*)/index.html /product/visual-changelogs/visualchangelog$1/ permanent;
+map $url $new_url {
+	...
+    ^/[A-Za-z-]+/site/about/case_studies/(.*).html /product/case-studies/$1/;
+    ^/[A-Za-z-]+/site/forusers/visualchangelog(.*)/index.html /product/visual-changelogs/visualchangelog$1/;
+	^/[A-Za-z-]+/site/forusers/usergroups.html /community/organisation/groups/;
+	...
 }
 ```
+
+See [nginx map tutorial](https://gauravswaroop.medium.com/nginx-bulk-url-redirect-with-map-47c2cd6ad50a) and [examples with regex capture](https://dzone.com/articles/about-using-regexp-in-nginx-map)
 
 ## Stripe donations
 
@@ -287,6 +304,10 @@ main donation page: [https://qgis.github.io/QGIS-Hugo/funding/donate/](https://q
 Stripe widget can be included to any page with the shortcode `{{<stripe-widget>}}`
 
 Payment options are implemented with [Payment Links](https://docs.stripe.com/no-code/payment-links). Values and links can be updated in data/stripe_products.yml
+
+### Donors scraping
+
+Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://github.com/qgis/QGIS-Website/blob/master/scripts/adddonor.pl) and related scripts & webhooks should be adapted to the new format
 
 ## Auto-checking for broken links
 

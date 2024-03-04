@@ -37,7 +37,7 @@ test('download page', async ({ page }) => {
   await expect(page.locator('#sidebar').getByRole('link', { name: 'Resources', exact: true })).toBeVisible();
   await expect(page.locator('#sidebar div').filter({ hasText: 'Resources' }).locator('span')).toBeVisible();
   await page.locator('#sidebar div').filter({ hasText: 'Resources' }).locator('span').click();
-  await expect(page.locator('#ul-26').getByRole('link', { name: 'QGIS resources' })).toBeVisible();
+  await expect(page.locator('#sidebar').getByRole('link', { name: 'QGIS resources' })).toBeVisible();
   await page.getByRole('button', { name: 'Skip it and go to download' }).click();
   await expect(page.getByRole('heading', { name: 'Download QGIS for your' })).toBeVisible();
   await page.getByRole('heading', { name: 'Other platforms' }).click();

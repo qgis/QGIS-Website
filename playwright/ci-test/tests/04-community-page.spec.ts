@@ -79,9 +79,6 @@ test('community page', async ({ page }) => {
   await expect(page.getByRole('link', { name: 'Infrastructure' })).toBeVisible();
   await page.getByRole('link', { name: 'Infrastructure' }).click();
   await expect(page.getByText('Infrastructure ¶ This page')).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Grant Program' })).toBeVisible();
-  await page.getByRole('link', { name: 'Grant Program' }).click();
-  await expect(page.getByText('Grant Program ¶ ADD CONTENT')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Brand Guidelines' })).toBeVisible();
   await page.getByRole('link', { name: 'Brand Guidelines' }).click();
   await expect(page.getByText('QGIS Trademark and brand guidelines ¶ We’re thrilled that you want to refer to')).toBeVisible();
