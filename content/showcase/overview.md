@@ -2,7 +2,7 @@
 type: "page"
 title: "Gallery"
 subtitle: "Amazing work from our community"
-draft: false
+draft: "true"
 heroImage: "img/banners/banner3.png"
 HasBanner: true
 # Which second level menu to show

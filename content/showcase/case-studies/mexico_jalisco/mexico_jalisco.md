@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Working with QGIS in a spatial data infrastructure of Jalisco in Mexico
 
 The Instituto de Información Territorial del Estado de Jalisco is a

@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS for distance learning and teaching GIS at Universities
 
 ## Introduction

@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Use of python console to prepare offline map from WMS (tile downloader)
 
 This study explains how to prepare offline maps from WMS/WFS or any map

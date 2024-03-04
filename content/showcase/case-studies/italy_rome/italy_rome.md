@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS geoprocessing model to simplify first level seismic microzonation analysis
 
 The Institute of Environmental Geology and Geoengineering (IGAG) of the

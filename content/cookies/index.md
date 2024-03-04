@@ -2,7 +2,8 @@
 type: "page"
 title: "Cookies Policy"
 subtitle: ""
-draft: false
+draft: "true"
+
 ---
 
 {{< content-start classes="content narrow">}}

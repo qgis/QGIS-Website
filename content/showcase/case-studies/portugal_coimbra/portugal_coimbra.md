@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Using open source tools for characterization of a landscape. The LecosS plugin
 
 This case study results from the final draft of the Graduate Geographic

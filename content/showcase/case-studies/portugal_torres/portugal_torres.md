@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS and GRASS applied to paleontological survey in Western Portugal
 
 The Associação Leonel Trindade -- Sociedade de História Natural

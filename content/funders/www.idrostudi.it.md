@@ -2,8 +2,8 @@
 level: "Medium"
 title: "Idrostudi srl"
 logo: "www.idrostudi.it.svg"
-startDate: "2023-01-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://www.idrostudi.it/"
 country: "Italy"
 ---

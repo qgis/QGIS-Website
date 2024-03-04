@@ -5,7 +5,7 @@ title: "Quantarctica: An Antarctic GIS package"
 description: "Quantarctica is a collection of Antarctic geographical datasets, such as
 base maps, satellite imagery, glaciology and geophysics data from data
 centres around the world, prepared for viewing in QGIS."
-draft: false
+draft: "true"
 author: "Anders Skoglund and Kenichi Matsuoka"
 categories: ['Case studies']
 # Generic words only, no upper case, no spaces (use hyphens to separate words rather)

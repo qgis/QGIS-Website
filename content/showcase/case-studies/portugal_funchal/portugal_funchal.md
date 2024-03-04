@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Using a free GIS at Jaime Moniz Secondary School: QGIS
 
 There will be democratic teaching in our schools or education

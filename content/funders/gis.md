@@ -2,8 +2,8 @@
 level: "Small"
 title: "Kendall County, GIS Department"
 logo: "gis.png"
-startDate: "2023-09-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://www.kendallcountyil.gov/gis"
 country: "United States of America"
 ---

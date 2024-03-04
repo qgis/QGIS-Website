@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+{{ partial "menu.html" . }}
+{{ partial "submenu.html" . }}
+{{ partial "contextmenu.html" . }}
+{{ partial "banner.html" . }}
+
+<section class="section ">
+    <div class="container content">
+        <div class="columns is-multiline is-centered">
+            {{ partial "sidebar" . }}
+            <div class="content column is-9"> 
+                <img src="{{ absURL "img/404.png" }}">
+                <h1 class="title">Whoops! Page not found</h1>
+                <h3 class="title">Go to QGIS <a href="{{ "" | relURL }}">Homepage</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}
+

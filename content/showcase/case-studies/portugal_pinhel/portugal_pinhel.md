@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS and Forest Fire Risk Mapping in Portugal
 
 Portugal has been affected by large wildfires causing huge losses, not
