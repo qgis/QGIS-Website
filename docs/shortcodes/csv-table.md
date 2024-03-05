@@ -1,3 +1,8 @@
+---
+title: "Csv-table"
+thumbnail: "img/csv-table.png"
+---
+
 ## csv-table
 
 Can render a html table from CSV file or inner content
