@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS as major GIS software in the Laboratory on Experimental and Applied Geography
 
 ## Introduction

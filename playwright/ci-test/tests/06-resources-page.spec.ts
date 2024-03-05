@@ -40,8 +40,8 @@ test.describe('resources pages', () => {
   });
 
   test('Installation guide', async ({ page }) => {
-    await expect(page.locator('#ul-25').getByRole('link', { name: 'Installation guide' })).toBeVisible();
-    await page.locator('#ul-25').getByRole('link', { name: 'Installation guide' }).click();
+    await expect(page.locator('#sidebar').getByRole('link', { name: 'Installation guide' })).toBeVisible();
+    await page.locator('#sidebar').getByRole('link', { name: 'Installation guide' }).click();
     await expect(page.getByText('QGIS Installers ¶ How to')).toBeVisible();
     await expect(page.locator('#qgis-installers')).toContainText('QGIS Installers');
     await expect(page.getByText('How to obtain QGIS?')).toBeVisible();
@@ -193,13 +193,13 @@ test.describe('resources pages', () => {
     await expect(page.getByText('Warning ¶ QGIS testing')).toBeVisible();
     await expect(page.locator('#installing-from-source')).toContainText('Installing from Source');
     await expect(page.getByText('Refer to INSTALL on how to')).toBeVisible();
-    await expect(page.locator('#ul-25').getByRole('link', { name: 'Documentation' })).toBeVisible();
+    await expect(page.locator('#sidebar').getByRole('link', { name: 'Documentation' })).toBeVisible();
   });
 
   test('Releases', async ({ page }) => {
-    await expect(page.locator('#ul-25').getByRole('link', { name: 'Releases', exact: true })).toBeVisible();
-    await expect(page.locator('#ul-25 div').filter({ hasText: 'Releases' }).locator('span')).toBeVisible();
-    await page.locator('#ul-25').getByRole('link', { name: 'Releases', exact: true }).click();
+    await expect(page.locator('#sidebar').getByRole('link', { name: 'Releases', exact: true })).toBeVisible();
+    await expect(page.locator('#sidebar div').filter({ hasText: 'Releases' }).locator('span')).toBeVisible();
+    await page.locator('#sidebar').getByRole('link', { name: 'Releases', exact: true }).click();
     await expect(page.locator('#list-of-releases')).toContainText('List of Releases');
     await expect(page.getByText('Previous releases of QGIS are')).toBeVisible();
     await expect(page.getByText('More older releases are')).toBeVisible();
@@ -216,8 +216,8 @@ test.describe('resources pages', () => {
   });
 
   test('Roadmap', async ({ page }) => {
-    await expect(page.locator('#ul-25').getByRole('link', { name: 'Roadmap' })).toBeVisible();
-    await page.locator('#ul-25').getByRole('link', { name: 'Roadmap' }).click();
+    await expect(page.locator('#sidebar').getByRole('link', { name: 'Roadmap' })).toBeVisible();
+    await page.locator('#sidebar').getByRole('link', { name: 'Roadmap' }).click();
     await expect(page.locator('#road-map')).toContainText('Road Map');
     await expect(page.locator('#development-phase')).toContainText('Development phase');
     await expect(page.locator('#feature-freeze')).toContainText('Feature freeze');
@@ -251,9 +251,9 @@ test.describe('resources pages', () => {
   });
 
   test('Reports', async ({ page }) => {
-    await expect(page.locator('#ul-25').getByRole('link', { name: 'Reports' })).toBeVisible();
-    await expect(page.locator('#ul-25 div').filter({ hasText: 'Reports' }).locator('span')).toBeVisible();
-    await page.locator('#ul-25').getByRole('link', { name: 'Reports' }).click();
+    await expect(page.locator('#sidebar').getByRole('link', { name: 'Reports' })).toBeVisible();
+    await expect(page.locator('#sidebar div').filter({ hasText: 'Reports' }).locator('span')).toBeVisible();
+    await page.locator('#sidebar').getByRole('link', { name: 'Reports' }).click();
     await expect(page.locator('#daily-reports')).toContainText('Daily Reports');
     await expect(page.locator('#ogc-certification')).toContainText('OGC Certification');
     await expect(page.getByText('QGIS Server').first()).toBeVisible();
@@ -273,8 +273,8 @@ test.describe('resources pages', () => {
   });
 
   test('Books', async ({ page }) => {
-    await expect(page.locator('#ul-25').getByRole('link', { name: 'Books' })).toBeVisible();
-    await page.locator('#ul-25').getByRole('link', { name: 'Books' }).click();
+    await expect(page.locator('#sidebar').getByRole('link', { name: 'Books' })).toBeVisible();
+    await page.locator('#sidebar').getByRole('link', { name: 'Books' }).click();
     await expect(page.getByText('Books ¶ This page lists books')).toBeVisible();
     await expect(page.locator('#books')).toContainText('Books');
     await expect(page.getByText('This page lists books')).toBeVisible();

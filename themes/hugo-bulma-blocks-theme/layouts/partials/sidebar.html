@@ -12,36 +12,62 @@
         {{ $i = add $i 1 }}
         {{ $menuItemID := printf "ul-%d" $i }}
         <li {{ if findRE (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
+
         {{ if .HasChildren }}
             <div class="has-child">
+                {{/* LEVEL 1 */}}
                 {{ partial "link" . }}
                 <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
             </div>
             <ul id="{{ $menuItemID }}" class="collapsed">
                 {{ range sort .Children "Weight" }}
                     {{ $i = add $i 1 }}
-                    {{ $innerMenuItemID := printf "ul-%d" $i }}
+                    {{ $menuItemID := printf "ul-%d" $i }}
                     <li {{ if findRE (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
+
                     {{ if .HasChildren }}
                         <div class="has-child">
+                            {{/* LEVEL 2 */}}
                             {{ partial "link" . }}
-                            <span onclick="toggleSubMenu('{{ $innerMenuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
+                            <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
                         </div>
-                        <ul id="{{ $innerMenuItemID }}" class="collapsed">
+                        <ul id="{{ $menuItemID }}" class="collapsed">
                             {{ range sort .Children "Weight" }}
-                            {{ $i = add $i 1 }}
+                                {{ $i = add $i 1 }}
+                                {{ $menuItemID := printf "ul-%d" $i }}
                                 <li {{ if findRE (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
+
+                                {{ if .HasChildren }}
+                                    <div class="has-child">
+                                        {{/* LEVEL 3 */}}
+                                        {{ partial "link" . }}
+                                        <span onclick="toggleSubMenu('{{ $menuItemID }}')" class="drop-arrow"><img src="{{ "img/arrow.svg" | absURL }}"/></span>
+                                    </div>
+                                    <ul id="{{ $menuItemID }}" class="collapsed">
+                                        {{ range sort .Children "Weight" }}
+                                        {{ $i = add $i 1 }}
+                                            <li {{ if findRE (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
+                                                {{/* LEVEL 4 */}}
+                                                {{ partial "link" . }}
+                                            </li>
+                                        {{ end }}
+                                    </ul>
+                                {{ else }}
+                                    {{/* LEVEL 3 */}}
                                     {{ partial "link" . }}
+                                {{ end }}
                                 </li>
                             {{ end }}
                         </ul>
                     {{ else }}
+                        {{/* LEVEL 2 */}}
                         {{ partial "link" . }}
                     {{ end }}
                     </li>
                 {{ end }}
             </ul>
         {{ else }}
+            {{/* LEVEL 1 */}}
             {{ partial "link" . }}
         {{ end }}
         </li>

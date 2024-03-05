@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Using QGIS for urban planning in the municipality of Montecchio Maggiore, Vicenza, Italy
 
 Montecchio Maggiore is a small town in the middle west of Vicenza (about

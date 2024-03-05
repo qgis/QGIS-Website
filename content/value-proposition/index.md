@@ -2,7 +2,7 @@
 type: "page"
 title: "QGIS Value Proposition"
 subtitle: ""
-draft: false
+draft: "true"
 heroImage: "img/banners/banner1.png"
 sidebar: true
 ---

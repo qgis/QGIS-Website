@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # The Research Institute for Geo-hydrological Protection of Turin \-\-- Aerial photo archive management
 
 The Research Institute for Geo-hydrological Protection of Turin (IRPI),

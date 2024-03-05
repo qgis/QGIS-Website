@@ -2,7 +2,7 @@
 type: "page"
 title: "QGIS Sustaining Memberships"
 subtitle: "Sustaining Membership Program Overview"
-draft: false
+draft: "true"
 heroImage: "img/banners/banner1.png"
 ---
 

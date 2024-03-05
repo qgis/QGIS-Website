@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Use of QGIS at the Financial Times Graphics Team
 
 ## Interview with Steven Bernard (Interactive Design Editor)

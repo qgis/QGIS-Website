@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Amurum forest reserve habitat and avifauna mapping with QGIS in Nigeria
 
 Amurum forest reserve is located near the city of Jos, Plateau state,

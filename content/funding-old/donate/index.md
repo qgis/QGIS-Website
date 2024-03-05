@@ -2,7 +2,7 @@
 type: "page"
 title: "Donate"
 subtitle: "We rely on sustaining memberships and donations for much of our funding"
-draft: false
+draft: "true"
 heroImage: "img/banners/banner1.png"
 ---
 

@@ -67,6 +67,10 @@ country: "{country}"
 
 ### Flickr screenshots
 def fetch_flickr_screenshots(showcase_type, rss_url):
+    '''
+    Creates .md files for each image with param draft: true. This value can be
+    changed manually then, as the script won't overwrite the file if it exists
+    '''
 
     response = requests.get(rss_url)
     feed = atoma.parse_atom_bytes(response.content)
@@ -102,6 +106,10 @@ showcase: "{showcase_type}"
 ---
 """
         markdown_filename = f"content/flickr-images/{name}.md"
+        if os.path.isfile(markdown_filename):
+            print(f"file exists, skip {name}")
+            continue
+
         with open(markdown_filename , "w", encoding="utf=8") as f:
             f.write(content)
             print(f"Writing: {markdown_filename}")

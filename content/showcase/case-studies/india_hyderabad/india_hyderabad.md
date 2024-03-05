@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS Trainings at NIRD Jaipur Centre, India
 
 ![](./images/india_hyderabad1.png){.align-left}

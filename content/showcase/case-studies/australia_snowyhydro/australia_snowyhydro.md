@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # Using the processing toolbox to automate snow classification
 
 Snowy Hydro Limited (SHL) is a peak electricity generator based in the

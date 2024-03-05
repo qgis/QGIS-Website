@@ -1,3 +1,7 @@
+---
+draft: "true"
+---
+
 # QGIS for monitoring tigers (using camera traps in Nameri Tiger Reserve, Assam, India Sonitpur District)
 
 Nameri Tiger Reserve (NTR) is one of the 3 tiger reserves of Assam and
