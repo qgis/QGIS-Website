@@ -1,9 +1,9 @@
 ---
 level: "Medium"
-title: "regioDATA Gesellschaft für raumbezogene Informationssysteme mbH"
+title: "regioDATA GmbH"
 logo: "www.regiodata-gmbh.de.png"
-startDate: "2023-02-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://www.regiodata-gmbh.de/"
 country: "Germany"
 ---
