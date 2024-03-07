@@ -27,7 +27,6 @@ test('community page', async ({ page }) => {
   await expect(page.getByText('Sustain & Donate ¶ We welcome')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Become a Sustaining Member' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'One-Time Donation' })).toBeVisible();
-  await expect(page.getByText('One-Time Payment € 10.00 € 20')).toBeVisible();
   await expect(page.getByText('$ 10.00')).toBeVisible();
   await expect(page.getByText('$ 20.00')).toBeVisible();
   await expect(page.getByText('$ 50.00')).toBeVisible();

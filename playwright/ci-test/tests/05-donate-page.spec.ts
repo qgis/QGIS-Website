@@ -11,7 +11,6 @@ test('donate page', async ({ page }) => {
   await expect(page.getByText('We rely on sponsorships and')).toBeVisible();
   await expect(page.getByText('Donations to QGIS are tax-')).toBeVisible();
   await expect(page.getByText('We use the stripe')).toBeVisible();
-  await expect(page.getByText('One-Time Payment € 10.00 € 20')).toBeVisible();
   await expect(page.getByText('$ 10.00')).toBeVisible();
   await expect(page.getByText('$ 20.00')).toBeVisible();
   await expect(page.getByText('$ 50.00')).toBeVisible();

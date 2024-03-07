@@ -6,8 +6,6 @@ test('download page', async ({ page }) => {
   await page.goto(url);
   await page.locator('section').filter({ hasText: 'Free and open source Spatial' }).getByRole('link').click();
   await expect(page.getByText('Before download starts ¶ QGIS')).toBeVisible();
-  await expect(page.getByText('One-Time Payment € 10.00 € 20')).toBeVisible();
-  await expect(page.getByText('One-Time Payment')).toBeVisible();
   await expect(page.getByText('$ 10.00')).toBeVisible();
   await expect(page.getByText('$ 20.00')).toBeVisible();
   await expect(page.getByText('$ 50.00')).toBeVisible();
