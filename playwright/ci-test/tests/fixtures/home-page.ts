@@ -4,6 +4,7 @@ export class HomePage {
     private readonly url: string = "/";
     public readonly pageBody: Locator;
     public readonly freeOpenSourceSpatialDiv: Locator;
+    public readonly downloadLink: Locator;
     public readonly spatialWithoutCompromiseHeading: Locator;
     public readonly createMapsHeading: Locator;
     public readonly editLayersHeading: Locator;
@@ -78,6 +79,10 @@ export class HomePage {
             .locator("div")
             .filter({ hasText: "Free and open source Spatial" })
             .first();
+        this.downloadLink = this.page
+            .locator("section")
+            .filter({ hasText: "Free and open source Spatial" })
+            .getByRole("link");
         this.spatialWithoutCompromiseHeading = this.page.getByRole("heading", {
             name: "Spatial without compromise",
         });
