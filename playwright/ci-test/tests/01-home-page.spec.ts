@@ -1,10 +1,12 @@
 import { test as base, expect } from "@playwright/test";
 import { Header } from "./fixtures/header";
 import { HomePage } from "./fixtures/home-page";
+import { Footer } from "./fixtures/footer";
 
 type HomePageFixtures = {
     header: Header;
     homePage: HomePage;
+    footer: Footer;
 };
 
 const test = base.extend<HomePageFixtures>({
@@ -16,6 +18,10 @@ const test = base.extend<HomePageFixtures>({
         const homePage = new HomePage(page);
         await use(homePage);
     },
+    footer: async ({ page }, use) => {
+        const footer = new Footer(page);
+        await use(footer);
+    }
 });
 
 test.describe("Home page", () => {
@@ -81,23 +87,53 @@ test.describe("Home page", () => {
         await expect(homePage.shareMapsImg).toBeVisible();
         await expect(homePage.communityImg).toBeVisible();
         await expect(homePage.changeLogVideo).toBeVisible();
+        await expect(homePage.otherSupporters).toBeVisible();
 
-        homePage.textList.forEach(async (text) => {
+        for (const text of homePage.textList) {
             await expect(homePage.pageBody).toContainText(text);
-        });
+        }
+    });
+
+    test("Footer", async ({ footer }) => {
+        await expect(footer.banner).toBeVisible();
+        await expect(footer.productList).toBeVisible();
+        await expect(footer.communityList).toBeVisible();
+        await expect(footer.resourcesList.first()).toBeVisible();
+        await expect(footer.fundingList).toBeVisible();
+        await expect(footer.downloadLink).toBeVisible();
+        await expect(footer.overviewLink).toBeVisible();
+        await expect(footer.caseStudiesLink).toBeVisible();
+        await expect(footer.pluginsLink).toBeVisible();
+        await expect(footer.visualChangelogsLink).toBeVisible();
+        await expect(footer.getInvolvedLink).toBeVisible();
+        await expect(footer.becomeCertifiedMemberLink).toBeVisible();
+        await expect(footer.qgisFoundationLink).toBeVisible();
+        await expect(footer.projectOrganisationLink).toBeVisible();
+        await expect(footer.localUserGroupsLink).toBeVisible();
+        await expect(footer.membersBlogsList).toBeVisible();
+        await expect(footer.qgisResourcesLink).toBeVisible();
+        await expect(footer.installationGuideLink).toBeVisible();
+        await expect(footer.documentationLink).toBeVisible();
+        await expect(footer.releasesLink).toBeVisible();
+        await expect(footer.roadmapLink).toBeVisible();
+        await expect(footer.reportsLink).toBeVisible();
+        await expect(footer.booksLink).toBeVisible();
+        await expect(footer.supportLink).toBeVisible();
+        await expect(footer.blogLink).toBeVisible();
+        await expect(footer.donateLink).toBeVisible();
+        await expect(footer.membershipList).toBeVisible();
+        await expect(footer.diversityStatementLink).toBeVisible();
+        await expect(footer.codeOfConductLink).toBeVisible();
+        await expect(footer.environmentalPolicyLink).toBeVisible();
+        await expect(footer.licenseLink).toBeVisible();
+        await expect(footer.visualStyleGuideLink).toBeVisible();
+        await expect(footer.goodiesLink).toBeVisible();
+        await expect(footer.logoImage).toBeVisible();
+        await expect(footer.facebookLink).toBeVisible();
+        await expect(footer.twitterLink).toBeVisible();
+        await expect(footer.youtubeLink).toBeVisible();
+        await expect(footer.mapstodonLink).toBeVisible();
+        await expect(footer.ghLink).toBeVisible();
+        await expect(footer.mailLink).toBeVisible();
     });
 });
-
-// Footer Locators
-
-// test('Footer', async ({ page }) => {
-// await expect(page.locator('.tile > .tile').first()).toBeVisible();
-// await expect(page.getByRole('contentinfo')).toBeVisible();
-//   await expect(page.getByRole('img', { name: 'Logo' })).toBeVisible();
-//   await expect(page.getByRole('link', { name: '' })).toBeVisible();
-//   await expect(page.getByRole('link', { name: '' })).toBeVisible();
-//   await expect(page.getByRole('link', { name: '' })).toBeVisible();
-//   await expect(page.locator('div:nth-child(2) > div:nth-child(2) > a:nth-child(4)').first()).toBeVisible();
-//   await expect(page.getByRole('link', { name: '' })).toBeVisible();
-//   await expect(page.getByRole('link', { name: '' })).toBeVisible();
-// });
