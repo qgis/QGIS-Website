@@ -17,6 +17,7 @@ export class Sidebar {
     public readonly downloadLink: Locator;
     public readonly resourcesLink: Locator;
     public readonly qgisResourcesLink: Locator;
+    public readonly membershipLink: Locator;
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
@@ -66,5 +67,9 @@ export class Sidebar {
         this.qgisResourcesLink = this.sidebar.getByRole("link", {
             name: "QGIS resources",
         });
+
+        this.membershipLink = this.sidebar
+            .locator("#sidebar")
+            .getByRole("link", { name: "Membership" });
     }
 }
