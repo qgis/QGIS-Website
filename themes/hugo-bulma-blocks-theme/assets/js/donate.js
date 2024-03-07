@@ -5,15 +5,19 @@ function updatePaymentLink() {
   donateBtn.href = paymentLink;
 };
 
-function updateCurrency() {
+function updateOptions(freq) {
   // function to toggle set of donate options depending on selected currency
-  let toShow = document.getElementById('currency').value;
-  let toHide = toShow == 'usd' ? 'eur' : 'usd';
+  if (freq != null) {
+    document.querySelector('#donate-frequency-options a.is-active').classList.remove("is-active");
+    document.querySelector('#donate-frequency-options #' + freq).classList.add("is-active");
+  }
+  let currency = document.getElementById('currency').value;
+  freq = document.querySelector('#donate-frequency-options a.is-active').id;
   document.getElementById('donate-stripe')
-    .querySelectorAll(`[for^="${toHide}:"]`)
+    .querySelectorAll('label')
     .forEach(option => option.style.display = "none");
   let visible = document.getElementById('donate-stripe')
-    .querySelectorAll(`[for^="${toShow}:"]`);
+    .querySelectorAll(`[for^="${currency}:${freq}:"]`);
   visible.forEach(option => option.style.display = "inline-block");
   // check first visible element
   document.getElementById(visible[0].getAttribute('for')).checked = true;
@@ -24,5 +28,5 @@ radioButtons.forEach(function(radio) {
   radio.addEventListener('change', updatePaymentLink);
 });
 
-updateCurrency();
+updateOptions();
 updatePaymentLink();
