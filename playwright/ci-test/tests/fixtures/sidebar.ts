@@ -2,69 +2,68 @@ import type { Page, Locator } from "@playwright/test";
 
 export class Sidebar {
     public readonly sidebar: Locator;
-    public readonly productLinkInSidebar: Locator;
-    public readonly overviewLinkInSidebar: Locator;
-    public readonly caseStudiesLinkInSidebar: Locator;
-    public readonly pluginsLinkInSidebar: Locator;
-    public readonly visualChangelogsLinkInSidebar: Locator;
-    public readonly communityLinkInSidebar: Locator;
-    public readonly getInvolvedLinkInSidebar: Locator;
-    public readonly becomeCertifiedMemberLinkInSidebar: Locator;
-    public readonly qgisFoundationLinkInSidebar: Locator;
-    public readonly projectOrganisationLinkInSidebar: Locator;
-    public readonly membersBlogsLinkInSidebar: Locator;
-    public readonly fundingLinkInSidebar: Locator;
-    public readonly downloadLinkInSidebar: Locator;
-    public readonly resourcesLinkInSidebar: Locator;
-    public readonly qgisResourcesLinkInSidebar: Locator;
+    public readonly productLink: Locator;
+    public readonly overviewLink: Locator;
+    public readonly caseStudiesLink: Locator;
+    public readonly pluginsLink: Locator;
+    public readonly visualChangelogsLink: Locator;
+    public readonly communityLink: Locator;
+    public readonly getInvolvedLink: Locator;
+    public readonly becomeCertifiedMemberLink: Locator;
+    public readonly qgisFoundationLink: Locator;
+    public readonly projectOrganisationLink: Locator;
+    public readonly membersBlogsLink: Locator;
+    public readonly fundingLink: Locator;
+    public readonly downloadLink: Locator;
+    public readonly resourcesLink: Locator;
+    public readonly qgisResourcesLink: Locator;
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
-        this.productLinkInSidebar = this.sidebar.getByRole("link", {
+        this.productLink = this.sidebar.getByRole("link", {
             name: "Product",
         });
-        this.overviewLinkInSidebar = this.sidebar.getByRole("link", {
+        this.overviewLink = this.sidebar.getByRole("link", {
             name: "Overview",
         });
-        this.caseStudiesLinkInSidebar = this.sidebar.getByRole("link", {
+        this.caseStudiesLink = this.sidebar.getByRole("link", {
             name: "Case studies",
         });
-        this.pluginsLinkInSidebar = this.sidebar.getByRole("link", {
+        this.pluginsLink = this.sidebar.getByRole("link", {
             name: "Plugins",
         });
-        this.visualChangelogsLinkInSidebar = this.sidebar.getByRole("link", {
+        this.visualChangelogsLink = this.sidebar.getByRole("link", {
             name: "Visual Changelogs",
         });
-        this.communityLinkInSidebar = this.sidebar.getByRole("link", {
+        this.communityLink = this.sidebar.getByRole("link", {
             name: "Community",
         });
-        this.getInvolvedLinkInSidebar = this.sidebar.getByRole("link", {
+        this.getInvolvedLink = this.sidebar.getByRole("link", {
             name: "Get involved",
         });
-        this.becomeCertifiedMemberLinkInSidebar = this.sidebar.getByRole(
-            "link",
-            { name: "Become a certified member" },
-        );
-        this.qgisFoundationLinkInSidebar = this.sidebar.getByRole("link", {
+        this.becomeCertifiedMemberLink = this.sidebar.getByRole("link", {
+            name: "Become a certified member",
+        });
+        this.qgisFoundationLink = this.sidebar.getByRole("link", {
             name: "QGIS Foundation",
         });
-        this.projectOrganisationLinkInSidebar = this.sidebar.getByRole("link", {
+        this.projectOrganisationLink = this.sidebar.getByRole("link", {
             name: "Project Organisation",
         });
-        this.membersBlogsLinkInSidebar = this.sidebar.getByRole("link", {
+        this.membersBlogsLink = this.sidebar.getByRole("link", {
             name: "Members Blogs",
         });
-        this.fundingLinkInSidebar = this.sidebar.getByRole("link", {
+        this.fundingLink = this.sidebar.getByRole("link", {
             name: "Funding",
         });
-        this.downloadLinkInSidebar = this.sidebar.getByRole("link", {
+        this.downloadLink = this.sidebar.getByRole("link", {
             name: "Download",
         });
-        this.resourcesLinkInSidebar = this.sidebar.getByRole("link", {
+        this.resourcesLink = this.sidebar.getByRole("link", {
             name: "Resources",
             exact: true,
         });
-        this.qgisResourcesLinkInSidebar = this.sidebar.getByRole("link", {
+        this.qgisResourcesLink = this.sidebar.getByRole("link", {
             name: "QGIS resources",
         });
     }
