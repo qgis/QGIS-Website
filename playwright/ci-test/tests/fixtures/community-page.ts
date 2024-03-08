@@ -2,6 +2,7 @@ import type { Page, Locator } from "@playwright/test";
 import { TextList } from "./interfaces";
 
 export class CommunityPage {
+    private readonly url: string = "/community/involve/";
     public readonly pageBody: Locator;
     public readonly participateSupportLink: Locator;
     public readonly reportBugsLink: Locator;
@@ -219,5 +220,8 @@ export class CommunityPage {
         this.qgisWebClientLink = this.page.getByRole("link", {
             name: "QGIS Web Client 2 http://",
         });
+    }
+    async goto() {
+        await this.page.goto(this.url);
     }
 }
