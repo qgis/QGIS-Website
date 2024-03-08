@@ -11,12 +11,12 @@ test('donate page', async ({ page }) => {
   await expect(page.getByText('We rely on sponsorships and')).toBeVisible();
   await expect(page.getByText('Donations to QGIS are tax-')).toBeVisible();
   await expect(page.getByText('We use the stripe')).toBeVisible();
-  await expect(page.getByText('One-Time Payment € 10.00 € 20')).toBeVisible();
-  await expect(page.getByText('$ 10.00')).toBeVisible();
-  await expect(page.getByText('$ 20.00')).toBeVisible();
-  await expect(page.getByText('$ 50.00')).toBeVisible();
-  await expect(page.getByText('$ 100.00')).toBeVisible();
-  await expect(page.getByText('$ 250.00')).toBeVisible();
+  // the following options are one-time payments and are hidden by default
+  await expect(page.getByText('$ 10.00').first()).toBeHidden();
+  await expect(page.getByText('$ 20.00').first()).toBeHidden();
+  await expect(page.getByText('$ 50.00').first()).toBeHidden();
+  await expect(page.getByText('$ 100.00').first()).toBeHidden();
+  await expect(page.getByText('$ 250.00').first()).toBeHidden();
   await expect(page.locator('#submit-button')).toBeVisible();
   await expect(page.locator('#currency')).toBeVisible();
   await expect(page.getByText('Bank transfer ¶ Use the')).toBeVisible();
