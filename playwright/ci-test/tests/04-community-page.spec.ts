@@ -3,7 +3,7 @@ import { CommunityPage } from "./fixtures/community-page";
 import { HomePage } from "./fixtures/home-page";
 import { Sidebar } from "./fixtures/sidebar";
 
-type CommiunityPageFixtures = {
+type CommunityPageFixtures = {
     homePage: HomePage;
     sidebar: Sidebar;
     communityPage: CommunityPage;
