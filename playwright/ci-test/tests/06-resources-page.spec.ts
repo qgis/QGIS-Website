@@ -5,21 +5,18 @@ import { QgisResourcesPage } from "./fixtures/qgis-resources-page";
 import { InstallationGuidePage } from "./fixtures/installation-guide-page";
 import { ReleasesPage } from "./fixtures/releases-page";
 import { RoadmapPage } from "./fixtures/roadmap-page";
+import { ReportsPage } from "./fixtures/report-page";
 
 type ProductPageFixtures = {
-  homePage: HomePage;
   sidebar: Sidebar;
   qgisResourcesPage: QgisResourcesPage;
   installationGuidePage: InstallationGuidePage;
   releasesPage: ReleasesPage;
   roadmapPage: RoadmapPage;
+  reportsPage: ReportsPage;
 };
 
 const test = base.extend<ProductPageFixtures>({
-  homePage: async ({ page }, use) => {
-      const homePage = new HomePage(page);
-      await use(homePage);
-  },
   sidebar: async ({ page }, use) => {
       const sidebar = new Sidebar(page);
       await use(sidebar);
@@ -39,6 +36,10 @@ const test = base.extend<ProductPageFixtures>({
   roadmapPage: async ({ page }, use) => {
       const roadmapPage = new RoadmapPage(page);
       await use(roadmapPage);
+  },
+  reportsPage: async ({ page }, use) => {
+      const reportsPage = new ReportsPage(page);
+      await use(reportsPage);
   },
 
 });
@@ -196,26 +197,17 @@ test.describe('Resources pages', () => {
     }
   });
 
-  test('Reports', async ({ page }) => {
-    await expect(page.locator('#sidebar').getByRole('link', { name: 'Reports' })).toBeVisible();
-    await expect(page.locator('#sidebar div').filter({ hasText: 'Reports' }).locator('span')).toBeVisible();
-    await page.locator('#sidebar').getByRole('link', { name: 'Reports' }).click();
-    await expect(page.locator('#daily-reports')).toContainText('Daily Reports');
-    await expect(page.locator('#ogc-certification')).toContainText('OGC Certification');
-    await expect(page.getByText('QGIS Server').first()).toBeVisible();
-    await expect(page.locator('p:nth-child(5) > img')).toBeVisible();
-    await expect(page.getByText('In order to keep an eye on')).toBeVisible();
-    await expect(page.getByText('WMS').first()).toBeVisible();
-    await expect(page.getByText('OGC API Features (aka WFS')).toBeVisible();
-    await expect(page.getByText('WFS').first()).toBeVisible();
-    await expect(page.getByText('Latest reports')).toBeVisible();
-    await expect(page.locator('#performance')).toContainText('Performance');
-    await expect(page.getByText('At the moment, two tools are')).toBeVisible();
-    await expect(page.getByText('The first one is MS-Perfs')).toBeVisible();
-    await expect(page.getByText('The second one is Graffiti,')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'OGC Certification' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Performance' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Security' })).toBeVisible();
+  test('Reports', async ({ page, sidebar, reportsPage }) => {
+    await expect(sidebar.reportsLink).toBeVisible();
+    await sidebar.reportsLink.click();
+    await expect(reportsPage.certificationImage).toBeVisible();
+    await expect(reportsPage.ogcCertificationLink).toBeVisible();
+    await expect(reportsPage.performanceLink).toBeVisible();
+    await expect(reportsPage.securityLink).toBeVisible();
+
+    for (const text of reportsPage.textList) {
+        await expect(reportsPage.pageBody).toContainText(text);
+    }
   });
 
   test('Books', async ({ page }) => {
