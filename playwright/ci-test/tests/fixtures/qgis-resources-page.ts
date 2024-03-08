@@ -1,5 +1,4 @@
 import type { Page, Locator } from "@playwright/test";
-import { TextList } from "./interfaces";
 
 export class QgisResourcesPage {
     private readonly url: string = "/resources/hub/";
