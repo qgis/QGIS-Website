@@ -25,6 +25,8 @@ export class Sidebar {
     public readonly reportsLink: Locator;
     public readonly booksLink: Locator;
     public readonly supportLink: Locator;
+    public readonly membersLink: Locator;
+    public readonly pastMembersLink: Locator;
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
@@ -109,6 +111,16 @@ export class Sidebar {
 
         this.supportLink = this.sidebar.getByRole("link", {
             name: "Support",
+            exact: true,
+        });
+
+        this.membersLink = this.sidebar.getByRole("link", {
+            name: "Members",
+            exact: true,
+        });
+
+        this.pastMembersLink = this.sidebar.getByRole("link", {
+            name: "Past Members",
             exact: true,
         });
     }

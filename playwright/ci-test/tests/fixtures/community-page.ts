@@ -10,7 +10,6 @@ export class CommunityPage {
     public readonly developPluginLink: Locator;
     public readonly developQGISCoreLink: Locator;
     public readonly sustainDonateLink: Locator;
-    public readonly becomeSustainingMemberLink: Locator;
     public readonly oneTimeDonationLink: Locator;
     public readonly submitButton: Locator;
     public readonly otherMethodsInfoLink: Locator;
@@ -34,10 +33,6 @@ export class CommunityPage {
     public readonly qgisTranslationsLink: Locator;
     public readonly qgisProjectSteeringLink: Locator;
     public readonly qgisWebClientLink: Locator;
-    public readonly sustainingMembershipDiv: Locator;
-    public readonly sustainingMembershipSection: Locator;
-    public readonly writeTrearurerLink: Locator;
-    public readonly openSustainingMembersLink: Locator;
 
     public readonly textList: TextList[] = [
         {
@@ -135,36 +130,6 @@ export class CommunityPage {
             ],
         },
         { page: "Mailing Lists", texts: ["Mailing Lists ¶ We"] },
-        {
-            page: "Membership",
-            texts: [
-                "How become a sustaining member",
-                "Sustaining Membership program ¶ QGIS is an entirely Open Source project. QGIS",
-                "QGIS is an entirely Open",
-                "As a result, you have free",
-                "€ 27,000+ ¶ Flagship Member (",
-                "€ 9,000+ ¶ Large Member (e.g",
-                "€ 3,000+ ¶ Medium Member (e.g",
-                "€ 500+ ¶ Small Member (e.g.",
-                "Public Acknowledgment ¶ All",
-                "Enhanced Software Quality ¶ Your contribution aids in resolving bugs and issues",
-                "Enhanced Brand Exposure ¶ Flagship, large and medium sustaining members will",
-                "Featured in Software Updates ¶ Your support is highlighted in the visual",
-                "Public Acknowledgment ¶ Use a",
-                "Enhanced Brand Exposure ¶ Enjoy an ad-free experience in QGIS, focusing on your",
-                "Reach out to the treasurer at",
-                "The treasurer will gather",
-                "The treasurer verifies the",
-                "Membership details are",
-                "Recognition: Sustaining",
-                "Visibility: Members are",
-                "Promotion: When appropriate,",
-                "Past sustaining members are",
-                "You can also make one-time payement ¶ Donations can be of any amount, via",
-                "About ‘earmarked’ funding ¶ We regret that we cannot accept ‘earmarked’ funding",
-                "Warning ¶ Acceptance of",
-            ],
-        },
     ];
 
     constructor(public readonly page: Page) {
@@ -191,9 +156,6 @@ export class CommunityPage {
         });
         this.sustainDonateLink = this.page.getByRole("link", {
             name: "Sustain & Donate",
-        });
-        this.becomeSustainingMemberLink = this.page.getByRole("link", {
-            name: "Become a Sustaining Member",
         });
         this.oneTimeDonationLink = this.page.getByRole("link", {
             name: "One-Time Donation",
@@ -256,26 +218,6 @@ export class CommunityPage {
         });
         this.qgisWebClientLink = this.page.getByRole("link", {
             name: "QGIS Web Client 2 http://",
-        });
-        this.sustainingMembershipDiv = this.page
-            .locator("div")
-            .filter({
-                hasText:
-                    "Sustaining Membership program Join our mission to enhance and promote QGIS as",
-            })
-            .nth(1);
-        this.sustainingMembershipSection = this.page
-            .locator("section")
-            .filter({
-                hasText:
-                    "Sustaining Membership program Join our mission to enhance and promote QGIS as",
-            })
-            .getByRole("link");
-        this.writeTrearurerLink = this.page.getByRole("link", {
-            name: "Write to trearurer",
-        });
-        this.openSustainingMembersLink = this.page.getByRole("link", {
-            name: "Open Sustaining Members",
         });
     }
 }

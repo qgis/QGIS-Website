@@ -4,7 +4,7 @@ import { OtherSupportPage, SupportPage } from "./fixtures/support-page";
 import { FaqPage } from "./fixtures/faq-page";
 import { BugReportingPage } from "./fixtures/bug-reporting-page";
 
-type ProductPageFixtures = {
+type SupportPageFixtures = {
     sidebar: Sidebar;
     supportPage: SupportPage;
     faqPage: FaqPage;
@@ -12,7 +12,7 @@ type ProductPageFixtures = {
     otherSupportPage: OtherSupportPage;
 };
 
-const test = base.extend<ProductPageFixtures>({
+const test = base.extend<SupportPageFixtures>({
     sidebar: async ({ page }, use) => {
         const sidebar = new Sidebar(page);
         await use(sidebar);

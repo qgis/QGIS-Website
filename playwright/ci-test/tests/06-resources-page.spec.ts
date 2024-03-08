@@ -7,7 +7,7 @@ import { RoadmapPage } from "./fixtures/roadmap-page";
 import { ReportsPage } from "./fixtures/report-page";
 import { BooksPage } from "./fixtures/books-page";
 
-type ProductPageFixtures = {
+type ResourcesPageFixtures = {
     sidebar: Sidebar;
     qgisResourcesPage: QgisResourcesPage;
     installationGuidePage: InstallationGuidePage;
@@ -17,7 +17,7 @@ type ProductPageFixtures = {
     booksPage: BooksPage;
 };
 
-const test = base.extend<ProductPageFixtures>({
+const test = base.extend<ResourcesPageFixtures>({
     sidebar: async ({ page }, use) => {
         const sidebar = new Sidebar(page);
         await use(sidebar);

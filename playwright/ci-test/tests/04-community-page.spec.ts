@@ -3,13 +3,13 @@ import { CommunityPage } from "./fixtures/community-page";
 import { HomePage } from "./fixtures/home-page";
 import { Sidebar } from "./fixtures/sidebar";
 
-type ProductPageFixtures = {
+type CommiunityPageFixtures = {
     homePage: HomePage;
     sidebar: Sidebar;
     communityPage: CommunityPage;
 };
 
-const test = base.extend<ProductPageFixtures>({
+const test = base.extend<CommiunityPageFixtures>({
     homePage: async ({ page }, use) => {
         const homePage = new HomePage(page);
         await use(homePage);
@@ -48,7 +48,6 @@ test("Community page", async ({ homePage, sidebar, communityPage }) => {
     await expect(communityPage.developPluginLink).toBeVisible();
     await expect(communityPage.developQGISCoreLink).toBeVisible();
     await expect(communityPage.sustainDonateLink).toBeVisible();
-    await expect(communityPage.becomeSustainingMemberLink).toBeVisible();
     await expect(communityPage.oneTimeDonationLink).toBeVisible();
     await expect(communityPage.submitButton).toBeVisible();
     await expect(communityPage.otherMethodsInfoLink).toBeVisible();
@@ -229,36 +228,7 @@ test("Community page", async ({ homePage, sidebar, communityPage }) => {
     await expect(communityPage.qgisTranslationsLink).toBeVisible();
     await expect(communityPage.qgisProjectSteeringLink).toBeVisible();
     await expect(communityPage.qgisWebClientLink).toBeVisible();
-
-    // Funding has been moved
-    // await expect(sidebar.fundingLink).toBeVisible();
-    // await sidebar.fundingLink.click();
-    // await expect(sidebar.membershipLink).toBeVisible();
-    // await sidebar.membershipLink.click();
-
-    // let membershipText = communityPage.textList.find(
-    //     (item) => item.page == "Membership",
-    // )?.texts;
-
-    // if (membershipText) {
-    //     for (const item of membershipText) {
-    //         await expect(communityPage.pageBody).toContainText(item);
-    //     }
-    // }
-
-    // await expect(communityPage.becomeSustainingMemberLink).toBeVisible();
-    // await expect(communityPage.sustainingMembershipDiv).toBeVisible();
-    // await expect(communityPage.sustainingMembershipSection).toBeVisible();
-    // await expect(communityPage.writeTrearurerLink).toBeVisible();
-    // await expect(communityPage.openSustainingMembersLink).toBeVisible();
-    // TODO: why Members are not visible?
-    // await expect(page.locator('#sidebar').getByRole('link', { name: 'Members' })).toBeVisible();
-    // await page.locator('#sidebar').getByRole('link', { name: 'Members' }).click();
-    // await expect(page.getByRole('heading', { name: 'Flagship' })).toBeVisible();
-    // await expect(page.locator('article').filter({ hasText: 'Felt 2023-01-01 - 2024-02-' })).toBeVisible();
-    // await expect(page.getByRole('heading', { name: 'Large' })).toBeVisible();
-    // await expect(page.locator('article').filter({ hasText: 'Land Vorarlberg 2023-03-01 -' })).toBeVisible();
-    // await expect(page.locator('#sidebar').getByRole('link', { name: 'Past Members' })).toBeVisible();
-    // await page.locator('#sidebar').getByRole('link', { name: 'Past Members' }).click();
-    // await expect(page.getByText('Past sustaining members ¶ Cheslatta Carrier nation 2021-11-19 - 2023-01-31')).toBeVisible();
 });
+
+// TODO: why Members are not visible?
+// Members has been moved to Funding > Membership
