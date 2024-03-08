@@ -3,7 +3,6 @@ import { TextList } from "./interfaces";
 
 export class CommunityPage {
     public readonly pageBody: Locator;
-
     public readonly participateSupportLink: Locator;
     public readonly reportBugsLink: Locator;
     public readonly qgisDocumentationLink: Locator;

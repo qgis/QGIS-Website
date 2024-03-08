@@ -230,26 +230,27 @@ test("Community page", async ({ homePage, sidebar, communityPage }) => {
     await expect(communityPage.qgisProjectSteeringLink).toBeVisible();
     await expect(communityPage.qgisWebClientLink).toBeVisible();
 
-    await expect(sidebar.fundingLink).toBeVisible();
-    await sidebar.fundingLink.click();
-    await expect(sidebar.membershipLink).toBeVisible();
-    await sidebar.membershipLink.click();
+    // Funding has been moved
+    // await expect(sidebar.fundingLink).toBeVisible();
+    // await sidebar.fundingLink.click();
+    // await expect(sidebar.membershipLink).toBeVisible();
+    // await sidebar.membershipLink.click();
 
-    let membershipText = communityPage.textList.find(
-        (item) => item.page == "Membership",
-    )?.texts;
+    // let membershipText = communityPage.textList.find(
+    //     (item) => item.page == "Membership",
+    // )?.texts;
 
-    if (membershipText) {
-        for (const item of membershipText) {
-            await expect(communityPage.pageBody).toContainText(item);
-        }
-    }
+    // if (membershipText) {
+    //     for (const item of membershipText) {
+    //         await expect(communityPage.pageBody).toContainText(item);
+    //     }
+    // }
 
-    await expect(communityPage.becomeSustainingMemberLink).toBeVisible();
-    await expect(communityPage.sustainingMembershipDiv).toBeVisible();
-    await expect(communityPage.sustainingMembershipSection).toBeVisible();
-    await expect(communityPage.writeTrearurerLink).toBeVisible();
-    await expect(communityPage.openSustainingMembersLink).toBeVisible();
+    // await expect(communityPage.becomeSustainingMemberLink).toBeVisible();
+    // await expect(communityPage.sustainingMembershipDiv).toBeVisible();
+    // await expect(communityPage.sustainingMembershipSection).toBeVisible();
+    // await expect(communityPage.writeTrearurerLink).toBeVisible();
+    // await expect(communityPage.openSustainingMembersLink).toBeVisible();
     // TODO: why Members are not visible?
     // await expect(page.locator('#sidebar').getByRole('link', { name: 'Members' })).toBeVisible();
     // await page.locator('#sidebar').getByRole('link', { name: 'Members' }).click();
