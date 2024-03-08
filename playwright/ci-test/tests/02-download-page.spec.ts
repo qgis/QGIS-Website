@@ -6,11 +6,12 @@ test('download page', async ({ page }) => {
   await page.goto(url);
   await page.locator('section').filter({ hasText: 'Free and open source Spatial' }).getByRole('link').click();
   await expect(page.getByText('Before download starts ¶ QGIS')).toBeVisible();
-  await expect(page.getByText('$ 10.00').first()).toBeVisible();
-  await expect(page.getByText('$ 20.00').first()).toBeVisible();
-  await expect(page.getByText('$ 50.00').first()).toBeVisible();
-  await expect(page.getByText('$ 100.00').first()).toBeVisible();
-  await expect(page.getByText('$ 250.00').first()).toBeVisible();
+  // the following options are one-time payments and are hidden by default
+  await expect(page.getByText('$ 10.00').first()).toBeHidden();
+  await expect(page.getByText('$ 20.00').first()).toBeHidden();
+  await expect(page.getByText('$ 50.00').first()).toBeHidden();
+  await expect(page.getByText('$ 100.00').first()).toBeHidden();
+  await expect(page.getByText('$ 250.00').first()).toBeHidden();
   await expect(page.locator('#submit-button')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Other methods, more info' })).toBeVisible();
   await expect(page.locator('#currency')).toBeVisible();
