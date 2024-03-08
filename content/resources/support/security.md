@@ -85,7 +85,7 @@ Currently, QGIS project is **not** a CVE Numbering Authority (CNA), so we don't 
 
 Disclosures are discussed in a private dedicated repository.
 
-Fixes are shipped as soon as possible - regarding the criticity of the issue - in point releases. 
+Fixes are shipped as soon as possible - regarding the criticality of the issue - in point releases. 
 
 If you want to secure your QGIS enterprise deployment, please ensure to be able to quickly deploy fixes on your machines. 
 
