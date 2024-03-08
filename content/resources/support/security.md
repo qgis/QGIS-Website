@@ -11,7 +11,7 @@ sidebar: true
 
 ## Security information
 
-The QGIS community takes security as a serious matter. We are aware that QGIS is deployed in sensitive environnements. 
+The QGIS community takes security as a serious matter. We are aware that QGIS is deployed in sensitive environments. 
 
 For these reasons, this is how QGIS project acts to respond to vulnerabilities and security matters. 
 
@@ -26,7 +26,7 @@ Security issues in QGIS can arise in various scenarios, including, but not limit
 If you run a code scanner, most of the vulnerabilities are not concerning QGIS, but its dependencies. 
 The version of the dependencies shipped with your QGIS depends on the OS and packaging system you use. 
 
-**On Windows**, QGIS.org use OSGEO4W project to distribute a complete environnement, and we fully maintain it.
+**On Windows**, QGIS.org use OSGEO4W project to distribute a complete environment, and we fully maintain it.
 
 OSGEO4W provides update scripts that can run silently, allowing you to upgrade only the necessary libraries without the need to redownload the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGEO4W documentation](https://trac.osgeo.org/osgeo4w/).
 
@@ -57,7 +57,6 @@ If you believe you have found a security issue, such as vulnerabilities in QGIS 
  - Check you are using the latest version of QGIS, and have a glance at the nighlty version for potential ongoing changes (fixes or regressions)
  - Check if your issue concerns QGIS desktop or QGIS server part
  - Please check our [Bug tracker](https://github.com/qgis/QGIS/issues) for an already existing and potential fix
- - then only, raise a private disclosure to the security teams [our GitHub security page](https://github.com/qgis/QGIS/security).
  - then only, raise a private disclosure to the security teams via [our GitHub security page](https://github.com/qgis/QGIS/security). Please avoid publicly disclosing the vulnerability until it has been resolved to prevent potential exploitation.
 
 #### Running python QGIS 
@@ -73,7 +72,7 @@ If your are working in a sensitive environment, we advise you to :
 
 - Audit carefully the plugins you allow to your users, in a sandboxed environment
 - Deploy your own plugin repository in which you control which plugin are available
-- Take benefit of the advanced customization possibilities of QGIS to constraint settings around connexions, authentication etc..
+- Take benefit of the advanced customization possibilities of QGIS to constraint settings around connections, authentication etc..
 - Don't focus only on code breaches, but also on user behavior regarding credentials and the risk of leak in project files if users insist on using basic authentication.  
  
 
