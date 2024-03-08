@@ -4,13 +4,15 @@ import { Sidebar } from "./fixtures/sidebar";
 import { QgisResourcesPage } from "./fixtures/qgis-resources-page";
 import { InstallationGuidePage } from "./fixtures/installation-guide-page";
 import { ReleasesPage } from "./fixtures/releases-page";
+import { RoadmapPage } from "./fixtures/roadmap-page";
 
 type ProductPageFixtures = {
   homePage: HomePage;
   sidebar: Sidebar;
   qgisResourcesPage: QgisResourcesPage;
   installationGuidePage: InstallationGuidePage;
-  releasesPage: ReleasesPage
+  releasesPage: ReleasesPage;
+  roadmapPage: RoadmapPage;
 };
 
 const test = base.extend<ProductPageFixtures>({
@@ -33,6 +35,10 @@ const test = base.extend<ProductPageFixtures>({
   releasesPage: async ({ page }, use) => {
       const releasesPage = new ReleasesPage(page);
       await use(releasesPage);
+  },
+  roadmapPage: async ({ page }, use) => {
+      const roadmapPage = new RoadmapPage(page);
+      await use(roadmapPage);
   },
 
 });
@@ -160,39 +166,34 @@ test.describe('Resources pages', () => {
     
   });
 
-  test('Roadmap', async ({ page }) => {
-    await expect(page.locator('#sidebar').getByRole('link', { name: 'Roadmap' })).toBeVisible();
-    await page.locator('#sidebar').getByRole('link', { name: 'Roadmap' }).click();
-    await expect(page.locator('#road-map')).toContainText('Road Map');
-    await expect(page.locator('#development-phase')).toContainText('Development phase');
-    await expect(page.locator('#feature-freeze')).toContainText('Feature freeze');
-    await expect(page.locator('#release')).toContainText('Release');
-    await expect(page.locator('#release-schedule')).toContainText('Release schedule');
-    await expect(page.locator('#schedule')).toContainText('Schedule');
-    await expect(page.getByRole('cell', { name: 'Event' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Latest', exact: true })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Long-Term Repo' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Freeze', exact: true })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Date' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Week #' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Weeks' })).toBeVisible();
-    await expect(page.locator('#event-legend')).toContainText('Event legend');
-    await expect(page.getByRole('cell', { name: 'Long term release, begin of' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Regular release, begin of new' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Feature freeze, end of' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Point release of latest' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Extra Point release' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'currently supported releases' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'next releases' })).toBeVisible();
-    await expect(page.locator('#qgis-prereleases')).toContainText('Location of prereleases / nightly builds');
-    await expect(page.getByRole('cell', { name: 'Platform' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Location' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Windows' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'OSGeo4W' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Linux' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Debian/Ubuntu' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'MacOS' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Mac OS' })).toBeVisible();
+  test('Roadmap', async ({ sidebar, roadmapPage }) => {
+    await expect(sidebar.roadmapLink).toBeVisible();
+    await sidebar.roadmapLink.click();
+    await expect(roadmapPage.event).toBeVisible();
+    await expect(roadmapPage.latest).toBeVisible();
+    await expect(roadmapPage.longTermRepo).toBeVisible();
+    await expect(roadmapPage.freeze).toBeVisible();
+    await expect(roadmapPage.date).toBeVisible();
+    await expect(roadmapPage.weekNumber).toBeVisible();
+    await expect(roadmapPage.weeks).toBeVisible();
+    await expect(roadmapPage.longTermReleaseBegin).toBeVisible();
+    await expect(roadmapPage.regularReleaseBegin).toBeVisible();
+    await expect(roadmapPage.featureFreezeEnd).toBeVisible();
+    await expect(roadmapPage.pointReleaseLatest).toBeVisible();
+    await expect(roadmapPage.extraPointRelease).toBeVisible();
+    await expect(roadmapPage.currentlySupportedReleases).toBeVisible();
+    await expect(roadmapPage.nextReleases).toBeVisible();
+    await expect(roadmapPage.platform).toBeVisible();
+    await expect(roadmapPage.location).toBeVisible();
+    await expect(roadmapPage.windows).toBeVisible();
+    await expect(roadmapPage.osgeo4w).toBeVisible();
+    await expect(roadmapPage.linux).toBeVisible();
+    await expect(roadmapPage.debianUbuntu).toBeVisible();
+    await expect(roadmapPage.macOS).toBeVisible();
+
+    for (const text of roadmapPage.textList) {
+        await expect(roadmapPage.pageBody).toContainText(text);
+    }
   });
 
   test('Reports', async ({ page }) => {
