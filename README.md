@@ -303,7 +303,9 @@ main donation page: [https://qgis.github.io/QGIS-Hugo/funding/donate/](https://q
 
 Stripe widget can be included to any page with the shortcode `{{<stripe-widget>}}`
 
-Payment options are implemented with [Payment Links](https://docs.stripe.com/no-code/payment-links). Values and links can be updated in data/stripe_products.yml
+Payment options are implemented with [Payment Links](https://docs.stripe.com/no-code/payment-links). Values and links can be updated in [data/stripe_products.yml](https://github.com/qgis/QGIS-Hugo/blob/main/data/stripe_products.yml)
+
+**Note**: payment links also support recurring donations (subscriptions) - products with recurrent payments should be created for that matter
 
 ### Donors scraping
 
