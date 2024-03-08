@@ -61,7 +61,7 @@ If you believe you have found a security issue, such as vulnerabilities in QGIS 
 
 #### Running python QGIS 
 
-QGIS offers python bindings so that you can extend it by writing plugins, geoprocessing models, actions, project macros, or even rewrite a full application based on pyQGIS. 
+QGIS offers Python bindings so that you can extend it by writing plugins, geoprocessing models, actions, project macros, or even rewrite a full application based on PyQGIS. 
 
 In a desktop environment, any scripting language has full access to the user land resources. If you execute blindly external code, it can do a lot of harm. 
 
