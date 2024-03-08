@@ -24,6 +24,7 @@ export class Sidebar {
     public readonly roadmapLink: Locator;
     public readonly reportsLink: Locator;
     public readonly booksLink: Locator;
+    public readonly supportLink: Locator;
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
@@ -103,6 +104,11 @@ export class Sidebar {
 
         this.booksLink = this.sidebar.getByRole("link", {
             name: "Books",
+            exact: true,
+        });
+
+        this.supportLink = this.sidebar.getByRole("link", {
+            name: "Support",
             exact: true,
         });
     }

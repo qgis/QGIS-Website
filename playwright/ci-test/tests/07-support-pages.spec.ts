@@ -1,170 +1,108 @@
-import { test, expect } from '@playwright/test';
+import { test as base, expect } from "@playwright/test";
+import { Sidebar } from "./fixtures/sidebar";
+import { OtherSupportPage, SupportPage } from "./fixtures/support-page";
+import { FaqPage } from "./fixtures/faq-page";
+import { BugReportingPage } from "./fixtures/bug-reporting-page";
 
-let url = '/resources/support/';
+type ProductPageFixtures = {
+    sidebar: Sidebar;
+    supportPage: SupportPage;
+    faqPage: FaqPage;
+    bugReporting: BugReportingPage;
+    otherSupportPage: OtherSupportPage;
+};
 
-test.describe('resources pages', () => {
-    test.beforeEach(async ({ page }) => {
-      // Go to the resources url before each test.
-      await page.goto(url);
+const test = base.extend<ProductPageFixtures>({
+    sidebar: async ({ page }, use) => {
+        const sidebar = new Sidebar(page);
+        await use(sidebar);
+    },
+    supportPage: async ({ page }, use) => {
+        const supportPage = new SupportPage(page);
+        await use(supportPage);
+    },
+    faqPage: async ({ page }, use) => {
+        const faqPage = new FaqPage(page);
+        await use(faqPage);
+    },
+    bugReporting: async ({ page }, use) => {
+        const bugReporting = new BugReportingPage(page);
+        await use(bugReporting);
+    },
+    otherSupportPage: async ({ page }, use) => {
+        const otherSupportPage = new OtherSupportPage(page);
+        await use(otherSupportPage);
+    },
+});
+
+test.describe("Resources Pages", () => {
+    test.beforeEach(async ({ supportPage }) => {
+        // Go to the resources url before each test.
+        await supportPage.goto();
     });
 
-  test('Support', async ({ page }) => {
-    await expect(page.locator('#ul-25').getByRole('link', { name: 'Support', exact: true })).toBeVisible();
-    await expect(page.locator('#ul-25 div').filter({ hasText: 'Support' }).locator('span')).toBeVisible();
-    await page.locator('#ul-25').getByRole('link', { name: 'Support', exact: true }).click();
-    await expect(page.locator('#support')).toContainText('Support');
-    await expect(page.locator('#mailing-lists')).toContainText('Mailing Lists');
-    await expect(page.getByText('QGIS has a bunch of mailing')).toBeVisible();
-    await expect(page.getByText('If you are going to ask')).toBeVisible();
-    await expect(page.locator('#stackexchange')).toContainText('StackExchange');
-    await expect(page.getByText('On http://gis.stackexchange.')).toBeVisible();
-    await expect(page.locator('#communication-channels')).toContainText('Communication channels');
-    await expect(page.locator('#telegram')).toContainText('Telegram');
-    await expect(page.getByText('There is a lot of user and')).toBeVisible();
-    await expect(page.getByText('To join: install Telegram on')).toBeVisible();
-    await expect(page.getByText('There is also a web version (')).toBeVisible();
-    await expect(page.locator('#matrix--irc')).toContainText('Matrix / IRC');
-    await expect(page.getByText('Matrix (https://matrix.org)')).toBeVisible();
-    await expect(page.getByText('To use Matrix: create an')).toBeVisible();
-    await expect(page.getByText('To use IRC: install an IRC')).toBeVisible();
-    await expect(page.locator('#facebook')).toContainText('Facebook');
-    await expect(page.getByText('For Facebook users, an')).toBeVisible();
-    await expect(page.locator('#user-groups')).toContainText('User Groups');
-    await expect(page.getByText('Local QGIS user groups are a')).toBeVisible();
-    await expect(page.getByText('See User Groups to read about')).toBeVisible();
-    await expect(page.locator('#website')).toContainText('Website');
-    await expect(page.getByText('The website should be used to')).toBeVisible();
-    await expect(page.getByText('Good luck with the')).toBeVisible();
-    
-  });
+    test("Support", async ({ sidebar, supportPage }) => {
+        await expect(sidebar.supportLink).toBeVisible();
+        await sidebar.supportLink.click();
+        for (const text of supportPage.textList) {
+            await expect(supportPage.pageBody).toContainText(text);
+        }
+    });
 
-  test('FAQ', async ({ page }) => {
-    await expect(page.getByRole('link', { name: 'FAQ' })).toBeVisible();
-    await page.getByRole('link', { name: 'FAQ' }).click();
-    await expect(page.locator('#faq')).toContainText('FAQ');
-    await expect(page.getByText('Here we collect answers to')).toBeVisible();
-    await expect(page.getByText('We will start of with this')).toBeVisible();
-    await expect(page.locator('#user')).toContainText('User');
-    await expect(page.locator('#downloading-issues')).toContainText('Downloading issues');
-    await expect(page.getByText('If you are trying to download')).toBeVisible();
-    await expect(page.locator('#i-have-to-donate-in-order-to-download-qgis')).toContainText('I have to donate in order to download QGIS');
-    await expect(page.getByText('This is a misconception that')).toBeVisible();
-    await expect(page.locator('#how-to-ask-a-qgis-question')).toContainText('How to ask a QGIS question?');
-    await expect(page.getByText('If you are going to ask QGIS')).toBeVisible();
-    await expect(page.getByText('Keep in mind that the more')).toBeVisible();
-    await expect(page.getByText('Note ¶ In case of a broken')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'QGIS issue tracker' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'bug-reporting' })).toBeVisible();
-    await expect(page.locator('#how-are-qgis-release-names-selected')).toContainText('How are QGIS release names selected?');
-    await expect(page.getByText('After a successful developer')).toBeVisible();
-    await expect(page.locator('#how-to-cite-qgis')).toContainText('How to cite QGIS?');
-    await expect(page.getByText('To cite QGIS in your piece of')).toBeVisible();
-    await expect(page.locator('section')).toContainText('Cite the QGIS project in general');
-    await expect(page.getByText('QGIS.org, %%Y. QGIS Geographic Information System. QGIS Association.')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'http://www.qgis.org' })).toBeVisible();
-    await expect(page.getByText('Cite the QGIS Developers')).toBeVisible();
-    await expect(page.getByText('Geographic Information System Developers Manual. QGIS Association.').first()).toBeVisible();
-    await expect(page.getByText('Cite the QGIS Installation')).toBeVisible();
-    await expect(page.getByText('Geographic Information System Installation Guide. QGIS Association.').first()).toBeVisible();
-    await expect(page.getByRole('link', { name: 'https://github.com/qgis/QGIS/' })).toBeVisible();
-    await expect(page.locator('p').filter({ hasText: 'Cite the QGIS User Guide' })).toBeVisible();
-    await expect(page.getByText('Geographic Information System User Guide. QGIS Association.')).toBeVisible();
-    await expect(page.getByText('Cite the QGIS Server')).toBeVisible();
-    await expect(page.getByText('Geographic Information System API Documentation. QGIS Association.').first()).toBeVisible();
-    await expect(page.getByText('Cite the QGIS API')).toBeVisible();
-    await expect(page.getByText('Geographic Information System API Documentation. QGIS Association.').first()).toBeVisible();
-    await expect(page.getByText('Preferred format: BibTeX')).toBeVisible();
-    await expect(page.locator('pre')).toBeVisible();
-    await expect(page.locator('#i-created-a-map-with-qgis-do-i-have-to-mention-qgis')).toContainText('I created a map with QGIS, do I have to mention QGIS?');
-    await expect(page.getByText('There is no requirement to')).toBeVisible();
-    await expect(page.getByText('Note ¶ Do not say ©QGIS as')).toBeVisible();
-    await expect(page.locator('#can-i-open-ecw-files-with-qgis')).toContainText('Can I open ECW files with QGIS?');
-    await expect(page.getByText('Yes you can… BUT depending on')).toBeVisible();
-    await expect(page.getByText('If you are under Windows and')).toBeVisible();
-    await expect(page.getByText('If you are using macOS, you')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'https://www.kyngchaos.com/' })).toBeVisible();
-    await expect(page.getByText('For other instructions, eg')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'https://www.faunalia.eu/en/' })).toBeVisible();
-    await expect(page.locator('#development')).toContainText('Development');
-    await expect(page.locator('#can-i-compile-qgis-myself')).toContainText('Can I compile QGIS myself?');
-    await expect(page.getByText('Yes, compiling QGIS from')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Building QGIS from source' })).toBeVisible();
-  });
+    test("FAQ", async ({ page, faqPage }) => {
+        await expect(faqPage.faqLink).toBeVisible();
+        await faqPage.faqLink.click();
+        await expect(faqPage.qgisIssueTrackerLink).toBeVisible();
+        await expect(faqPage.bugReportingLink).toBeVisible();
+        await expect(faqPage.qgisWebsiteLink).toBeVisible();
+        await expect(faqPage.qgisGitHubLink).toBeVisible();
+        await expect(faqPage.citeQGISUserGuide).toBeVisible();
+        await expect(faqPage.preElements).toBeVisible();
+        await expect(faqPage.kyngchaosLink).toBeVisible();
+        await expect(faqPage.faunaliaLink).toBeVisible();
+        await expect(faqPage.buildingQGISFromSourceLink).toBeVisible();
 
-  test('Bug Reporting', async ({ page }) => {
-    await expect(page.getByRole('link', { name: 'Bug Reporting' })).toBeVisible();
-    await page.getByRole('link', { name: 'Bug Reporting' }).click();
-    await expect(page.getByText('Bugs, Features and Issues ¶ QGIS is a largely volunteer driven project, and is')).toBeVisible();
-    await expect(page.locator('#bugs-features-and-issues')).toContainText('Bugs, Features and Issues');
-    await expect(page.getByText('QGIS is a largely volunteer')).toBeVisible();
-    await expect(page.locator('#where-to-report')).toContainText('Where to report?');
-    await expect(page.getByText('Each part of the QGIS Project')).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Place you found the bug or' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Place to report the issue' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'Applications (QGIS Desktop,' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'https://github.com/qgis/QGIS/' }).first()).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'QGIS Website (https://qgis.' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'https://github.com/qgis/QGIS-Website/issues' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'QGIS Documentation (https://' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'https://github.com/qgis/QGIS-Documentation/issues' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'C++ API (https://qgis.org/api' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'https://github.com/qgis/QGIS/' }).nth(1)).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'PyQGIS API (https://qgis.org/' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'https://github.com/qgis/QGIS/issues (for contents) and https://github.com/qgis/' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'External plugins' })).toBeVisible();
-    await expect(page.getByRole('cell', { name: 'The author repository set in' })).toBeVisible();
-    await expect(page.getByText('For help and questions,')).toBeVisible();
-    await expect(page.locator('#reporting-issues-on-qgis-applications')).toContainText('Reporting issues on QGIS applications');
-    await expect(page.getByText('QGIS applications (QGIS')).toBeVisible();
-    await expect(page.locator('#before-reporting-an-issue')).toContainText('Before reporting an issue');
-    await expect(page.getByText('Before filing an issue,')).toBeVisible();
-    await expect(page.getByText('When you’re are logged in, a')).toBeVisible();
-    await expect(page.getByText('Before sending the report,')).toBeVisible();
-    await expect(page.locator('#creating-a-backtrace')).toContainText('Creating a backtrace');
-    await expect(page.getByText('If you have a crash it might')).toBeVisible();
-    await expect(page.getByText('On Linux QGIS automatically')).toBeVisible();
-    await expect(page.getByText('QGIS died on signal 11Could')).toBeVisible();
-    await expect(page.getByText('In that case you should')).toBeVisible();
-    await expect(page.getByText('If you cannot reproduce the')).toBeVisible();
-    await expect(page.getByText('On some distributions the')).toBeVisible();
-    await expect(page.getByText('To produce a backtrace from')).toBeVisible();
-    await expect(page.locator('#log-output-on-windows')).toContainText('Log output on Windows');
-    await expect(page.getByText('The nightly build in OSGeo4W')).toBeVisible();
-    await expect(page.locator('#reporting-issues-on-qgis-web-site-or-documentation')).toContainText('Reporting issues on QGIS web site or documentation');
-    await expect(page.getByText('QGIS project provides an')).toBeVisible();
-    await expect(page.getByText('The main sources of these')).toBeVisible();
-    await expect(page.getByText('To get started, first Create')).toBeVisible();
-    await expect(page.getByText('Then, choose the appropriate')).toBeVisible();
-    await expect(page.getByText('https://github.com/qgis/QGIS-Documentation/issues for QGIS documentation')).toBeVisible();
-    await expect(page.getByText('https://github.com/qgis/QGIS-Website/issues for the web site')).toBeVisible();
-    await expect(page.getByText('Check if the issue you’d like')).toBeVisible();
-    await expect(page.locator('#reporting-plugin-issues')).toContainText('Reporting plugin issues');
-    await expect(page.getByText('Most of the plugins in QGIS')).toBeVisible();
-    await expect(page.getByText('For any plugin available in')).toBeVisible();
-    await expect(page.getByText('If no information is')).toBeVisible();
-    await expect(page.getByText('For other plugins, we have no')).toBeVisible();
-    await expect(page.locator('#submitting-a-patch-to-qgis-projects')).toContainText('Submitting a Patch to QGIS projects');
-    await expect(page.getByText('In addition to issue report,')).toBeVisible();
-    await expect(page.getByText('https://github.com/qgis/QGIS for QGIS Desktop or QGIS Server applications')).toBeVisible();
-    await expect(page.getByText('https://github.com/qgis/QGIS-Website for the web site at https://qgis.org')).toBeVisible();
-    await expect(page.getByText('https://github.com/qgis/QGIS-Documentation for the documentation available at')).toBeVisible();
-    await expect(page.getByText('You can find a few guidelines')).toBeVisible();
-  });
+        for (const text of faqPage.textList) {
+            await expect(faqPage.pageBody).toContainText(text);
+        }
+    });
 
-  test('Other support links', async ({ page }) => {
-    await expect(page.getByRole('link', { name: 'Communication channels' })).toBeVisible();
-    await page.getByRole('link', { name: 'Communication channels' }).click();
-    await expect(page.getByRole('link', { name: 'Commercial support' })).toBeVisible();
-    await page.getByRole('link', { name: 'Commercial support' }).click();
-    await expect(page.getByText('Commercial support ¶ Do you')).toBeVisible();
-    await expect(page.locator('#commercial-support')).toContainText('Commercial support');
-    await expect(page.getByText('Do you plan to use QGIS in')).toBeVisible();
-    await expect(page.getByText('Note ¶ we take responsibility')).toBeVisible();
-    await expect(page.locator('#core-contributors')).toContainText('Core contributors');
-    await expect(page.getByText('3liz (based in France) offers')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'StackExchange' })).toBeVisible();
-    await page.getByRole('link', { name: 'StackExchange' }).click();
-    await expect(page.getByRole('link', { name: 'Website Creation' })).toBeVisible();
-    await page.getByRole('link', { name: 'Website Creation' }).click();
-  })
-})  
+    test("Bug Reporting", async ({ page, bugReporting }) => {
+        await expect(bugReporting.bugReportingLink).toBeVisible();
+        await bugReporting.bugReportingLink.click();
+        await expect(bugReporting.bugPlaceFoundCell).toBeVisible();
+        await expect(bugReporting.bugReportIssueCell).toBeVisible();
+        await expect(bugReporting.qgisDesktopCell).toBeVisible();
+        await expect(bugReporting.qgisGitHubLink).toBeVisible();
+        await expect(bugReporting.qgisWebsiteCell).toBeVisible();
+        await expect(bugReporting.qgisWebsiteGitHubLink).toBeVisible();
+        await expect(bugReporting.qgisDocumentationCell).toBeVisible();
+        await expect(bugReporting.qgisDocumentationGitHubLink).toBeVisible();
+        await expect(bugReporting.cppAPICell).toBeVisible();
+        await expect(bugReporting.cppAPIGitHubLink).toBeVisible();
+        await expect(bugReporting.pyQGISAPICell).toBeVisible();
+        await expect(bugReporting.pyQGISAPIGitHubLink).toBeVisible();
+        await expect(bugReporting.externalPluginsCell).toBeVisible();
+        await expect(bugReporting.authorRepositoryCell).toBeVisible();
+
+        for (const text of bugReporting.textList) {
+            await expect(bugReporting.pageBody).toContainText(text);
+        }
+    });
+
+    test("Other support links", async ({ page, otherSupportPage }) => {
+        await expect(otherSupportPage.communicationChannelsLink).toBeVisible();
+        await otherSupportPage.navigateToCommunicationChannels();
+        await expect(otherSupportPage.commercialSupportLink).toBeVisible();
+        await otherSupportPage.navigateToCommercialSupport();
+
+        for (const text of otherSupportPage.textList) {
+            await expect(otherSupportPage.pageBody).toContainText(text);
+        }
+
+        await expect(otherSupportPage.stackExchangeLink).toBeVisible();
+        await otherSupportPage.navigateToStackExchange();
+        await expect(otherSupportPage.websiteCreationLink).toBeVisible();
+        await otherSupportPage.navigateToWebsiteCreation();
+    });
+});
