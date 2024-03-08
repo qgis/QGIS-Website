@@ -68,8 +68,8 @@ export class Sidebar {
             name: "QGIS resources",
         });
 
-        this.membershipLink = this.sidebar
-            .locator("#sidebar")
-            .getByRole("link", { name: "Membership" });
+        this.membershipLink = this.sidebar.getByRole("link", {
+            name: "Membership",
+        });
     }
 }

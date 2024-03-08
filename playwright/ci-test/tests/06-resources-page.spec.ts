@@ -1,42 +1,59 @@
-import { test, expect } from '@playwright/test';
+import { test as base, expect } from "@playwright/test";
+import { HomePage } from "./fixtures/home-page";
+import { Sidebar } from "./fixtures/sidebar";
+import { QgisResourcesPage } from "./fixtures/qgis-resources-page";
 
-let url = '/resources/hub/';
+type ProductPageFixtures = {
+  homePage: HomePage;
+  sidebar: Sidebar;
+  qgisResourcesPage: QgisResourcesPage;
+};
 
-test.describe('resources pages', () => {
-  test.beforeEach(async ({ page }) => {
+const test = base.extend<ProductPageFixtures>({
+  homePage: async ({ page }, use) => {
+      const homePage = new HomePage(page);
+      await use(homePage);
+  },
+  sidebar: async ({ page }, use) => {
+      const sidebar = new Sidebar(page);
+      await use(sidebar);
+  },
+  qgisResourcesPage: async ({ page }, use) => {
+      const qgisResourcesPage = new QgisResourcesPage(page);
+      await use(qgisResourcesPage);
+  },
+});
+
+
+test.describe('Resources pages', () => {
+  test.beforeEach(async ({ qgisResourcesPage }) => {
     // Go to the resources url before each test.
-    await page.goto(url);
+    await qgisResourcesPage.goto();
   });
 
-  test('QGIS resources', async ({ page }) => {
-    await expect(page.locator('#sidebar').getByRole('link', { name: 'Resources', exact: true })).toBeVisible();
-    await expect(page.locator('#sidebar div').filter({ hasText: 'Resources' }).getByRole('img')).toBeVisible();
-    await page.locator('#sidebar').getByRole('link', { name: 'Resources', exact: true }).click();
-    await expect(page.getByText('Resources ¶ 🖖 Troubles with')).toBeVisible();
-    await expect(page.getByText('Troubles with installation? ¶ If you are looking for information on installing')).toBeVisible();
-    await expect(page.locator('a').filter({ hasText: /^Installation guide$/ })).toBeVisible();
-    await expect(page.getByText('QGIS has a lot of')).toBeVisible();
-    await expect(page.getByText('You will find documentation')).toBeVisible();
-    await expect(page.getByText('Get involved and help us')).toBeVisible();
-    await expect(page.locator('p').filter({ hasText: 'Get involved and help us' }).getByRole('link')).toBeVisible();
-    await expect(page.locator('#tab-3')).toBeVisible();
-    await expect(page.getByText('Archived releases')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Desktop User Guide/Manual' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Server Guide/Manual' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'QGIS Training manual' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Introduction in GIS' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Documentation Guidelines' })).toBeVisible();
-    await expect(page.getByText('For documentation writers').first()).toBeVisible();
-    await expect(page.getByText('For developers').first()).toBeVisible();
-    await expect(page.getByRole('link', { name: 'PyQGIS cookbook (for plugins' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'C++ API documentation' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'PyQGIS - QGIS Python Api' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Building QGIS from Source' })).toBeVisible();
-    await expect(page.locator('p').filter({ hasText: 'For download' }).first()).toBeVisible();
-    await expect(page.getByRole('link', { name: 'PDF of the manuals' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'HTML zip of the manuals' })).toBeVisible();
-    await expect(page.getByText('Support ¶ The QGIS community')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'View support options' })).toBeVisible();
+  test('QGIS resources', async ({ sidebar, qgisResourcesPage  }) => {
+    await expect(sidebar.resourcesLink).toBeVisible();
+    await sidebar.resourcesLink.click();
+    await expect(qgisResourcesPage.installationGuideLink).toBeVisible();
+    await expect(qgisResourcesPage.getInvolvedLink).toBeVisible();
+    await expect(qgisResourcesPage.tab3Element).toBeVisible();
+    await expect(qgisResourcesPage.desktopUserGuideLink).toBeVisible();
+    await expect(qgisResourcesPage.serverGuideLink).toBeVisible();
+    await expect(qgisResourcesPage.qgisTrainingManualLink).toBeVisible();
+    await expect(qgisResourcesPage.introductionInGISLink).toBeVisible();
+    await expect(qgisResourcesPage.documentationGuidelinesLink).toBeVisible();
+    await expect(qgisResourcesPage.pyQGISCookbookLink).toBeVisible();
+    await expect(qgisResourcesPage.cPlusPlusAPIDocumentationLink).toBeVisible();
+    await expect(qgisResourcesPage.pyQGISApiLink).toBeVisible();
+    await expect(qgisResourcesPage.buildingQGISFromSourceLink).toBeVisible();
+    await expect(qgisResourcesPage.forDownloadParagraph).toBeVisible();
+    await expect(qgisResourcesPage.pdfManualsLink).toBeVisible();
+    await expect(qgisResourcesPage.htmlZipManualsLink).toBeVisible();
+    await expect(qgisResourcesPage.viewSupportOptionsLink).toBeVisible();
+
+    for (const text of qgisResourcesPage.textList) {
+      await expect(qgisResourcesPage.pageBody).toContainText(text);
+  }
   });
 
   test('Installation guide', async ({ page }) => {
