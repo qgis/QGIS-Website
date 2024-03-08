@@ -3,12 +3,14 @@ import { HomePage } from "./fixtures/home-page";
 import { Sidebar } from "./fixtures/sidebar";
 import { QgisResourcesPage } from "./fixtures/qgis-resources-page";
 import { InstallationGuidePage } from "./fixtures/installation-guide-page";
+import { ReleasesPage } from "./fixtures/releases-page";
 
 type ProductPageFixtures = {
   homePage: HomePage;
   sidebar: Sidebar;
   qgisResourcesPage: QgisResourcesPage;
   installationGuidePage: InstallationGuidePage;
+  releasesPage: ReleasesPage
 };
 
 const test = base.extend<ProductPageFixtures>({
@@ -27,6 +29,10 @@ const test = base.extend<ProductPageFixtures>({
   installationGuidePage: async ({ page }, use) => {
       const installationGuidePage = new InstallationGuidePage(page);
       await use(installationGuidePage);
+  },
+  releasesPage: async ({ page }, use) => {
+      const releasesPage = new ReleasesPage(page);
+      await use(releasesPage);
   },
 
 });
@@ -63,7 +69,7 @@ test.describe('Resources pages', () => {
     }
   });
 
-  test('Installation guide', async ({ page, sidebar, installationGuidePage }) => {
+  test('Installation guide', async ({ sidebar, installationGuidePage }) => {
     await expect(sidebar.installationGuideLink).toBeVisible();
     await sidebar.installationGuideLink.click();
     await expect(installationGuidePage.upcomingEvaluationLink).toBeVisible();
@@ -141,23 +147,17 @@ test.describe('Resources pages', () => {
     }
   });
 
-  test('Releases', async ({ page }) => {
-    await expect(page.locator('#sidebar').getByRole('link', { name: 'Releases', exact: true })).toBeVisible();
-    await expect(page.locator('#sidebar div').filter({ hasText: 'Releases' }).locator('span')).toBeVisible();
-    await page.locator('#sidebar').getByRole('link', { name: 'Releases', exact: true }).click();
-    await expect(page.locator('#list-of-releases')).toContainText('List of Releases');
-    await expect(page.getByText('Previous releases of QGIS are')).toBeVisible();
-    await expect(page.getByText('More older releases are')).toBeVisible();
-    await expect(page.getByText('Plugins for QGIS are also')).toBeVisible();
-    await expect(page.locator('#tests')).toContainText('Tests');
-    await expect(page.getByText('Both QGIS and QGIS server are')).toBeVisible();
-    await expect(page.getByText('From build tests (github')).toBeVisible();
-    await expect(page.getByText('See Unit testing')).toBeVisible();
-    await expect(page.getByText('See OGC conformance testing')).toBeVisible();
-    await expect(page.getByText('Recent tests output can be')).toBeVisible();
-    await expect(page.getByRole('link', { name: 'List of releases' })).toBeVisible();
-    await expect(page.getByRole('link', { name: 'Tests' })).toBeVisible();
-    await page.getByRole('link', { name: 'Tests' }).click();
+  test('Releases', async ({ page, sidebar, releasesPage }) => {
+    await expect(sidebar.releasesLink).toBeVisible();
+    await sidebar.releasesLink.click();
+
+    for (const text of releasesPage.textList) {
+        await expect(releasesPage.pageBody).toContainText(text);
+    }
+    await expect(releasesPage.listOfReleasesLink).toBeVisible();
+    await expect(releasesPage.testsLink).toBeVisible();
+    await releasesPage.testsLink.click();
+    
   });
 
   test('Roadmap', async ({ page }) => {

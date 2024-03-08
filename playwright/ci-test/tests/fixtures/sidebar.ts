@@ -20,6 +20,7 @@ export class Sidebar {
     public readonly membershipLink: Locator;
     public readonly installationGuideLink: Locator;
     public readonly documentationLink: Locator;
+    public readonly releasesLink: Locator;
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
@@ -80,6 +81,11 @@ export class Sidebar {
 
         this.documentationLink = this.sidebar.getByRole("link", {
             name: "Documentation",
+        });
+
+        this.releasesLink = this.sidebar.getByRole("link", {
+            name: "Releases",
+            exact: true
         });
     }
 }
