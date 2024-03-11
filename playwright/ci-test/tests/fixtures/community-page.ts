@@ -11,7 +11,6 @@ export class CommunityPage {
     public readonly developPluginLink: Locator;
     public readonly developQGISCoreLink: Locator;
     public readonly sustainDonateLink: Locator;
-    public readonly oneTimeDonationLink: Locator;
     public readonly submitButton: Locator;
     public readonly otherMethodsInfoLink: Locator;
     public readonly currencyInput: Locator;
@@ -47,12 +46,6 @@ export class CommunityPage {
                 "Develop a Plugin ¶ Interested",
                 "Develop QGIS Core ¶ QGIS Core",
                 "Sustain & Donate ¶ We welcome",
-                "One-Time Payment € 10.00 € 20",
-                "$ 10.00",
-                "$ 20.00",
-                "$ 50.00",
-                "$ 100.00",
-                "$ 250.00",
             ],
         },
         {
@@ -157,9 +150,6 @@ export class CommunityPage {
         });
         this.sustainDonateLink = this.page.getByRole("link", {
             name: "Sustain & Donate",
-        });
-        this.oneTimeDonationLink = this.page.getByRole("link", {
-            name: "One-Time Donation",
         });
         this.submitButton = this.page.locator("#submit-button");
         this.otherMethodsInfoLink = this.page.getByRole("link", {

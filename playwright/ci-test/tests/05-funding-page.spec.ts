@@ -59,6 +59,8 @@ test.describe("Resources Pages", () => {
                 await expect(fundingPage.pageBody).toContainText(text);
             }
         }
+
+        // TODO: Add tests for monthly and one-time tabs
     });
 
     test("Membership page", async ({ sidebar, fundingPage }) => {

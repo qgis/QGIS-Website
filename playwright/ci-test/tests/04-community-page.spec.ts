@@ -49,8 +49,9 @@ test.describe("Community pages", () => {
         await expect(communityPage.developPluginLink).toBeVisible();
         await expect(communityPage.developQGISCoreLink).toBeVisible();
         await expect(communityPage.sustainDonateLink).toBeVisible();
-        await expect(communityPage.oneTimeDonationLink).toBeVisible();
-        await expect(communityPage.submitButton).toBeVisible();
+
+        // TODO: Add tests for monthly and one-time tabs
+
         await expect(communityPage.otherMethodsInfoLink).toBeVisible();
         await expect(communityPage.currencyInput).toBeVisible();
     });

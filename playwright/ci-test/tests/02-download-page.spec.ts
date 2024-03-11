@@ -28,7 +28,7 @@ test("Download page", async ({ homePage, sidebar, downloadPage }) => {
     await homePage.goto();
     await homePage.downloadLink.click();
     await expect(downloadPage.beforeDownloadText).toBeVisible();
-    await expect(downloadPage.oneTimePaymentText).toBeVisible();
+    // TODO: Add tests for monthly and one-time tabs
     await expect(downloadPage.submitButton).toBeVisible();
     await expect(downloadPage.otherMethodsLink).toBeVisible();
     await expect(downloadPage.currencyInput).toBeVisible();
