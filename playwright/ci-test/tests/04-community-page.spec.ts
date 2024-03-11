@@ -9,7 +9,7 @@ type CommunityPageFixtures = {
     communityPage: CommunityPage;
 };
 
-const test = base.extend<CommiunityPageFixtures>({
+const test = base.extend<CommunityPageFixtures>({
     homePage: async ({ page }, use) => {
         const homePage = new HomePage(page);
         await use(homePage);
