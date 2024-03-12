@@ -1,6 +1,6 @@
 # Shortcodes
 
-Each shortcode described in corresponding `shorcodes/<name>.md` file.
+Each shortcode described in corresponding `shortcodes/<name>.md` file.
 
 <div class="tile">
     <h2>CSV Tables Shortcode</h2>
