@@ -2,8 +2,8 @@
 level: "Small"
 title: "Styrke 10 ApS"
 logo: "styrke10.dk.png"
-startDate: "2023-03-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://styrke10.dk/"
 country: "Denmark"
 ---
