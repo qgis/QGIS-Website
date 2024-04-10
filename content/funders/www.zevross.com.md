@@ -2,8 +2,8 @@
 level: "Small"
 title: "ZevRoss Spatial Analysis"
 logo: "www.zevross.com.png"
-startDate: "2023-01-01"
-endDate: "2024-02-29"
+startDate: "2024-03-01"
+endDate: "2025-02-28"
 link: "https://www.zevross.com/"
 country: "United States of America"
 ---
