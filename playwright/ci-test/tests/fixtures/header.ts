@@ -33,7 +33,9 @@ export class Header {
         this.banner = this.page.getByRole("banner");
         this.mainNavigation = this.page.getByLabel("main navigation");
         this.logoLink = this.mainNavigation.getByRole("link").first();
-        this.projectLink = this.mainNavigation.getByText("Project");
+        this.projectLink = this.mainNavigation.getByText("Project", {
+            exact: true,
+        });
         this.overviewLink = this.mainNavigation.getByRole("link", {
             name: "Overview",
         });
