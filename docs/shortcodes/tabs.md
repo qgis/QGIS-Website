@@ -1,5 +1,7 @@
 ## `tabs` Shortcode
 
+![](img/tabs.png)
+
 The `tabs` shortcode is used to create a tabbed interface where content can be organized into separate tabs that can be toggled without reloading the page.
 
 ### Parameters

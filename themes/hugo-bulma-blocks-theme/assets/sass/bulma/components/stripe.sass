@@ -31,8 +31,27 @@
   select
     display: inline-block
     margin-left: auto
+    background-color: #fff
+    border: none
+  input[type="radio"]
+    visibility: hidden
+    display: none
+    height: 0
+    width: 0
+  input[type="radio"]:checked + label
+    background-color: #589632 !important
+    color: #fff !important
+  label.button
+    border-radius: 10px
+    margin: 5px
+    padding-bottom: 0rem
+    padding-top: calc(0.5em - 1px)
+    color: #000 !important
+  a
+    color: #000
+    &.is-active
+      color: #589632
 
-      
 
 +until-tablet
   .stripe-widget

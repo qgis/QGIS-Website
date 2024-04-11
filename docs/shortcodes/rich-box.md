@@ -2,7 +2,7 @@
 
 ![rich-box](img/rich-box.png)
 
-The rich box shortcodes allows you to create structured layouts for displaying rich content, with customizable sections to suit your needs.
+The rich box shortcodes allows you to create structured layouts for displaying content, with customizable sections and backgrounds.
 
 **3 types of rich-boxes** 
 - Block with content only

@@ -1,5 +1,8 @@
 <div class="stripe-widget donatbox">
-    <p>One-Time Payment</p>
+    <p id="donate-frequency-options">
+        <a id="monthly" class="mr-4 is-active" onclick="updateOptions('monthly')">Monthly</a>
+        <a id="once" onclick="updateOptions('once')">One-Time</a>
+    </p>
     <hr>
     <form id="donate-stripe">
     {{ range sort $.Site.Data.stripe_products }}
@@ -21,7 +24,7 @@
       {{ if .Get "otherMethods" }}
           <a href="{{ absURL "funding/donate/" }}">Other methods, more info</a>
       {{ end }}
-      <select id="currency" class="currency" onchange="updateCurrency()">
+      <select id="currency" class="currency" onchange="updateOptions()">
         <option value="usd">USD</option>
         <option value="eur">EUR</option>
       </select>

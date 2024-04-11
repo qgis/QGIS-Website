@@ -1,5 +1,7 @@
 ## `roadmap` Shortcode
 
+![](img/roadmap.png)
+
 The `roadmap` shortcode is used to create a visual representation of a project's roadmap, including various phases such as initial release, point releases, packaging, and availability of installers. It also includes a JavaScript countdown functionality for each phase.
 
 ### Parameters
