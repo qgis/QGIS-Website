@@ -33,7 +33,7 @@ test("Download page", async ({ homePage, sidebar, downloadPage }) => {
     await expect(downloadPage.otherMethodsLink).toBeVisible();
     await expect(downloadPage.currencyInput).toBeVisible();
     await expect(downloadPage.skipDownloadButton).toBeVisible();
-    await expect(sidebar.productLink).toBeVisible();
+    await expect(sidebar.projectLink).toBeVisible();
     await expect(sidebar.overviewLink).toBeVisible();
     await expect(sidebar.caseStudiesLink).toBeVisible();
     await expect(sidebar.pluginsLink).toBeVisible();

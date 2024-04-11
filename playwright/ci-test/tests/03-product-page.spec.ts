@@ -27,7 +27,7 @@ const test = base.extend<ProductPageFixtures>({
 test("Product page", async ({ homePage, sidebar, productPage }) => {
     await homePage.goto();
     await homePage.downloadLink.click();
-    await sidebar.productLink.click();
+    await sidebar.projectLink.click();
     await expect(productPage.fosQGISLink).toBeVisible();
     await expect(productPage.qgisOverview).toBeVisible();
     await expect(productPage.contentTab1Img).toBeVisible();

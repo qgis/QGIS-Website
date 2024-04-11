@@ -21,7 +21,7 @@ const test = base.extend<HomePageFixtures>({
     footer: async ({ page }, use) => {
         const footer = new Footer(page);
         await use(footer);
-    }
+    },
 });
 
 test.describe("Home page", () => {
@@ -32,8 +32,8 @@ test.describe("Home page", () => {
 
     test("Header", async ({ header }) => {
         await expect(header.logoLink).toBeVisible();
-        await expect(header.productLink).toBeVisible();
-        await header.productLink.hover();
+        await expect(header.projectLink).toBeVisible();
+        await header.projectLink.hover();
         await expect(header.overviewLink).toBeVisible();
         await expect(header.caseStudiesLink).toBeVisible();
         await expect(header.pluginsLink).toBeVisible();
