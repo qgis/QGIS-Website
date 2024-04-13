@@ -63,7 +63,7 @@ If you believe you have found a security issue, such as vulnerabilities in QGIS 
 
 QGIS offers Python bindings so that you can extend it by writing plugins, geoprocessing models, actions, project macros, or even rewrite a full application based on PyQGIS. 
 
-In a desktop environment, any scripting language has full access to the user land resources. If you execute blindly external code, it can do a lot of harm. 
+In a desktop environment, any scripting language has full access to the user resources and execute arbitrary code with the permissions of the user. If you execute blindly external code, it can do a lot of harm. 
 
 QGIS main plugins repository is permissively open, but approval of plugins is still reviewed manually. We do not take advance QA assessment of plugin code. However we forbid to ship compiled code, so you know what you get and are free to audit the code. 
 
