@@ -37,7 +37,7 @@ Other packages are maintained by the community, such as Conda, FlatPak, etc. Any
 
 #### False positives
 
-Receiving red flags from code scanner alerts can be alarming, but many of the current alerts are false positive, so keep calm and don't panic. 
+Receiving red flags from code scanner alerts can be alarming, but many of the current alerts are false positive, so keep calm and don't panic.
 
 For example, a common false positive might involve the PostgreSQL client library (libpq) being flagged for server-side vulnerabilities, which do not apply to QGIS's use case.
 
