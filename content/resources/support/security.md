@@ -26,7 +26,7 @@ Security issues in QGIS can arise in various scenarios, including, but not limit
 If you run a code scanner, most of the vulnerabilities are not concerning QGIS, but its dependencies. 
 The version of the dependencies shipped with your QGIS depends on the OS and packaging system you use. 
 
-**On Windows**, QGIS.org use OSGEO4W project to distribute a complete environment, and we fully maintain it.
+**On Windows**, QGIS.org uses the OSGEO4W project to distribute a complete environment, and we fully maintain it.
 
 OSGEO4W provides update scripts that can run silently, allowing you to upgrade only the necessary libraries without the need to redownload the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGEO4W documentation](https://trac.osgeo.org/osgeo4w/).
 
