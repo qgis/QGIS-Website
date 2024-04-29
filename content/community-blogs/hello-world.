@@ -124,34 +124,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 					margin-right: auto;
 				}
 </style>
-<style id='wp-block-avatar-inline-css'>
-.wp-block-avatar{line-height:0}.wp-block-avatar,.wp-block-avatar img{box-sizing:border-box}.wp-block-avatar.aligncenter{text-align:center}
-.wp-block-avatar img{border-radius: 90px;}
-</style>
-<style id='wp-block-comment-author-name-inline-css'>
-.wp-block-comment-author-name{color: var(--wp--preset--color--contrast);font-size: var(--wp--preset--font-size--small);font-style: normal;font-weight: 600;}
-.wp-block-comment-author-name a:where(:not(.wp-element-button)){color: var(--wp--preset--color--contrast);text-decoration: none;}
-.wp-block-comment-author-name a:where(:not(.wp-element-button)):hover{text-decoration: underline;}
-</style>
-<style id='wp-block-comment-date-inline-css'>
-.wp-block-comment-date{color: var(--wp--preset--color--contrast-2);font-size: var(--wp--preset--font-size--small);margin-top: 0px;margin-bottom: 0px;}
-.wp-block-comment-date a:where(:not(.wp-element-button)){color: var(--wp--preset--color--contrast-2);text-decoration: none;}
-.wp-block-comment-date a:where(:not(.wp-element-button)):hover{text-decoration: underline;}
-</style>
-<style id='wp-block-comment-content-inline-css'>
-.comment-awaiting-moderation{display:block;font-size:.875em;line-height:1.5}
-.wp-block-comment-content{font-size: var(--wp--preset--font-size--small);margin-top: var(--wp--preset--spacing--20);margin-bottom: var(--wp--preset--spacing--20);}
-</style>
-<style id='wp-block-comment-edit-link-inline-css'>
-.wp-block-comment-edit-link{font-size: var(--wp--preset--font-size--small);}
-.wp-block-comment-edit-link a:where(:not(.wp-element-button)){color: var(--wp--preset--color--contrast-2);text-decoration: none;}
-.wp-block-comment-edit-link a:where(:not(.wp-element-button)):hover{text-decoration: underline;}
-</style>
-<style id='wp-block-comment-reply-link-inline-css'>
-.wp-block-comment-reply-link{font-size: var(--wp--preset--font-size--small);}
-.wp-block-comment-reply-link a:where(:not(.wp-element-button)){color: var(--wp--preset--color--contrast-2);text-decoration: none;}
-.wp-block-comment-reply-link a:where(:not(.wp-element-button)):hover{text-decoration: underline;}
-</style>
 <style id='wp-block-comment-template-inline-css'>
 .wp-block-comment-template{box-sizing:border-box;list-style:none;margin-bottom:0;max-width:100%;padding:0}.wp-block-comment-template li{clear:both}.wp-block-comment-template ol{list-style:none;margin-bottom:0;max-width:100%;padding-left:2rem}.wp-block-comment-template.alignleft{float:left}.wp-block-comment-template.aligncenter{margin-left:auto;margin-right:auto;width:-moz-fit-content;width:fit-content}.wp-block-comment-template.alignright{float:right}
 </style>
@@ -205,7 +177,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-site-blocks *:focus){outline-width:2px;outline-style:solid}.wp-block-calendar.wp-block-calendar table:where(:not(.has-text-color)) th{background-color:var(--wp--preset--color--contrast-2);color:var(--wp--preset--color--base);border-color:var(--wp--preset--color--contrast-2)}.wp-block-calendar table:where(:not(.has-text-color)) td{border-color:var(--wp--preset--color--contrast-2)}.wp-block-categories{}.wp-block-categories{list-style-type:none;}.wp-block-categories li{margin-bottom: 0.5rem;}.wp-block-post-comments-form{}.wp-block-post-comments-form textarea, .wp-block-post-comments-form input{border-radius:.33rem}.wp-block-loginout{}.wp-block-loginout input{border-radius:.33rem;padding:calc(0.667em + 2px);border:1px solid #949494;}.wp-block-post-terms{}.wp-block-post-terms .wp-block-post-terms__prefix{color: var(--wp--preset--color--contrast-2);}.wp-block-query-title{}.wp-block-query-title span{font-style: italic;}.wp-block-quote{}.wp-block-quote :where(p){margin-block-start:0;margin-block-end:calc(var(--wp--preset--spacing--10) + 0.5rem);}.wp-block-quote :where(:last-child){margin-block-end:0;}.wp-block-quote.has-text-align-right.is-style-plain, .rtl .is-style-plain.wp-block-quote:not(.has-text-align-center):not(.has-text-align-left){border-width: 0 2px 0 0;padding-left:calc(var(--wp--preset--spacing--20) + 0.5rem);padding-right:calc(var(--wp--preset--spacing--20) + 0.5rem);}.wp-block-quote.has-text-align-left.is-style-plain, body:not(.rtl) .is-style-plain.wp-block-quote:not(.has-text-align-center):not(.has-text-align-right){border-width: 0 0 0 2px;padding-left:calc(var(--wp--preset--spacing--20) + 0.5rem);padding-right:calc(var(--wp--preset--spacing--20) + 0.5rem)}.wp-block-search{}.wp-block-search .wp-block-search__input{border-radius:.33rem}.wp-block-separator{}.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull){width: var(--wp--preset--spacing--60)}
 </style>
 <style id='core-block-supports-inline-css'>
-.wp-container-core-group-layout-1.wp-container-core-group-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-layout-1.wp-container-core-group-layout-1.wp-container-core-group-layout-1.wp-container-core-group-layout-1 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-layout-2.wp-container-core-group-layout-2{gap:var(--wp--preset--spacing--20);}.wp-container-core-navigation-layout-1.wp-container-core-navigation-layout-1{gap:var(--wp--preset--spacing--20);justify-content:flex-end;}.wp-container-core-group-layout-3.wp-container-core-group-layout-3{justify-content:space-between;}.wp-container-core-group-layout-5.wp-container-core-group-layout-5{gap:0.3em;justify-content:flex-start;}.wp-container-core-group-layout-7.wp-container-core-group-layout-7{gap:var(--wp--preset--spacing--10);flex-direction:column;align-items:stretch;}.wp-container-core-group-layout-10.wp-container-core-group-layout-10{flex-wrap:nowrap;gap:0.5em;}.wp-container-core-group-layout-11.wp-container-core-group-layout-11{flex-wrap:nowrap;}.wp-container-core-group-layout-14.wp-container-core-group-layout-14{flex-wrap:nowrap;gap:0.5em;}.wp-container-core-group-layout-15.wp-container-core-group-layout-15{flex-wrap:nowrap;}.wp-container-core-group-layout-18.wp-container-core-group-layout-18{flex-wrap:nowrap;gap:0.5em;}.wp-container-core-group-layout-19.wp-container-core-group-layout-19{flex-wrap:nowrap;}.wp-container-core-group-layout-21.wp-container-core-group-layout-21{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-layout-25.wp-container-core-group-layout-25{flex-direction:column;align-items:flex-start;}.wp-container-core-group-layout-26.wp-container-core-group-layout-26{gap:var(--wp--preset--spacing--10);flex-direction:column;align-items:flex-start;}.wp-container-core-group-layout-27.wp-container-core-group-layout-27{flex-direction:column;align-items:stretch;}.wp-container-core-group-layout-28.wp-container-core-group-layout-28{justify-content:flex-end;align-items:flex-start;}.wp-container-core-columns-layout-1.wp-container-core-columns-layout-1{flex-wrap:nowrap;}.wp-elements-5980a53e766a9b1467d07a3858051a10 a{color:var(--wp--preset--color--contrast);}
+.wp-container-core-group-layout-1.wp-container-core-group-layout-1 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-layout-1.wp-container-core-group-layout-1.wp-container-core-group-layout-1.wp-container-core-group-layout-1 > * + *{margin-block-start:0px;margin-block-end:0;}.wp-container-core-group-layout-2.wp-container-core-group-layout-2{gap:var(--wp--preset--spacing--20);}.wp-container-core-navigation-layout-1.wp-container-core-navigation-layout-1{gap:var(--wp--preset--spacing--20);justify-content:flex-end;}.wp-container-core-group-layout-3.wp-container-core-group-layout-3{justify-content:space-between;}.wp-container-core-group-layout-5.wp-container-core-group-layout-5{gap:0.3em;justify-content:flex-start;}.wp-container-core-group-layout-7.wp-container-core-group-layout-7{gap:var(--wp--preset--spacing--10);flex-direction:column;align-items:stretch;}.wp-container-core-group-layout-9.wp-container-core-group-layout-9{flex-wrap:nowrap;justify-content:space-between;}.wp-container-core-group-layout-13.wp-container-core-group-layout-13{flex-direction:column;align-items:flex-start;}.wp-container-core-group-layout-14.wp-container-core-group-layout-14{gap:var(--wp--preset--spacing--10);flex-direction:column;align-items:flex-start;}.wp-container-core-group-layout-15.wp-container-core-group-layout-15{flex-direction:column;align-items:stretch;}.wp-container-core-group-layout-16.wp-container-core-group-layout-16{justify-content:flex-end;align-items:flex-start;}.wp-container-core-columns-layout-1.wp-container-core-columns-layout-1{flex-wrap:nowrap;}.wp-elements-5980a53e766a9b1467d07a3858051a10 a{color:var(--wp--preset--color--contrast);}
 </style>
 <style id='wp-block-template-skip-link-inline-css'>
 
@@ -376,82 +348,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	
 	<h2 class="wp-block-heading">Reacties</h2>
 	
-	<h3 id="comments" class="wp-block-comments-title">3 reacties op &#8220;Hello world!&#8221;</h3>
-	<ol class="wp-block-comment-template"><li id="comment-1" class="comment even thread-even depth-1">
 	
-	<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">
-		
-		<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-layout-10 wp-block-group-is-layout-flex">
-			<div class="wp-block-avatar"><img alt='A WordPress Commenter avatar' src='https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=40&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=80&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-40 photo wp-block-avatar__image' height='40' width='40' decoding='async'/></div>
-			
-			<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-				<div class="wp-block-comment-author-name"><a rel="external nofollow ugc" href="https://wordpress.org/" target="_self" >A WordPress Commenter</a></div>
-				<div class="wp-block-comment-date"><time datetime="2024-02-08T10:32:24+01:00"><a href="https://qgis.nl/uncategorized/hello-world/#comment-1">08-02-2024</a></time></div>
-			</div>
-			
-		</div>
-		
-		<div class="wp-block-comment-content"><p>Hi, this is a comment.<br />
-To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.<br />
-Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
-</div>
-		
-		<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-layout-11 wp-block-group-is-layout-flex">
-			
-			<div class="wp-block-comment-reply-link"><a rel='nofollow' class='comment-reply-link' href='https://qgis.nl/uncategorized/hello-world/?replytocom=1#respond' data-commentid="1" data-postid="1" data-belowelement="comment-1" data-respondelement="respond" data-replyto="Antwoord op A WordPress Commenter" aria-label='Antwoord op A WordPress Commenter'>Beantwoorden</a></div>
-		</div>
-		
-	</div>
 	
-	</li><li id="comment-2" class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1">
-	
-	<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">
-		
-		<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-layout-14 wp-block-group-is-layout-flex">
-			<div class="wp-block-avatar"><img alt='admin avatar' src='https://secure.gravatar.com/avatar/15b8fe6778b3c8a7df238d7b2b2a6398?s=40&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/15b8fe6778b3c8a7df238d7b2b2a6398?s=80&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-40 photo wp-block-avatar__image' height='40' width='40' decoding='async'/></div>
-			
-			<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-				<div class="wp-block-comment-author-name"><a rel="external nofollow ugc" href="https://qgis.nl" target="_self" >admin</a></div>
-				<div class="wp-block-comment-date"><time datetime="2024-02-08T11:49:46+01:00"><a href="https://qgis.nl/uncategorized/hello-world/#comment-2">08-02-2024</a></time></div>
-			</div>
-			
-		</div>
-		
-		<div class="wp-block-comment-content"><p>Bla bla</p>
-</div>
-		
-		<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-layout-15 wp-block-group-is-layout-flex">
-			
-			<div class="wp-block-comment-reply-link"><a rel='nofollow' class='comment-reply-link' href='https://qgis.nl/uncategorized/hello-world/?replytocom=2#respond' data-commentid="2" data-postid="1" data-belowelement="comment-2" data-respondelement="respond" data-replyto="Antwoord op admin" aria-label='Antwoord op admin'>Beantwoorden</a></div>
-		</div>
-		
-	</div>
-	
-	</li><li id="comment-3" class="comment even thread-even depth-1">
-	
-	<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--30)">
-		
-		<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-layout-18 wp-block-group-is-layout-flex">
-			<div class="wp-block-avatar"><img alt='Richard avatar' src='https://secure.gravatar.com/avatar/1e7ee2a4d3b2c65bbf6dd839921ef5c5?s=40&#038;d=monsterid&#038;r=g' srcset='https://secure.gravatar.com/avatar/1e7ee2a4d3b2c65bbf6dd839921ef5c5?s=80&#038;d=monsterid&#038;r=g 2x' class='avatar avatar-40 photo wp-block-avatar__image' height='40' width='40' decoding='async'/></div>
-			
-			<div class="wp-block-group is-layout-flow wp-block-group-is-layout-flow">
-				<div class="wp-block-comment-author-name">Richard</div>
-				<div class="wp-block-comment-date"><time datetime="2024-02-08T11:50:00+01:00"><a href="https://qgis.nl/uncategorized/hello-world/#comment-3">08-02-2024</a></time></div>
-			</div>
-			
-		</div>
-		
-		<div class="wp-block-comment-content"><p>Hoi Raymond, coole site</p>
-</div>
-		
-		<div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-layout-19 wp-block-group-is-layout-flex">
-			
-			<div class="wp-block-comment-reply-link"><a rel='nofollow' class='comment-reply-link' href='https://qgis.nl/uncategorized/hello-world/?replytocom=3#respond' data-commentid="3" data-postid="1" data-belowelement="comment-3" data-respondelement="respond" data-replyto="Antwoord op Richard" aria-label='Antwoord op Richard'>Beantwoorden</a></div>
-		</div>
-		
-	</div>
-	
-	</li></ol>
 
 	
 
@@ -462,7 +360,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
 <p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Bewaar mijn naam, e-mailadres en site in deze browser voor de volgende keer wanneer ik een reactie plaats.</label></p>
 <p class="form-submit wp-block-button"><input name="submit" type="submit" id="submit" class="wp-block-button__link wp-element-button" value="Reactie plaatsen" /> <input type='hidden' name='comment_post_ID' value='1' id='comment_post_ID' />
 <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-</p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="62"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+</p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="123"/><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
 	
 </div>
 
@@ -470,7 +368,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
 
 			
 
-<nav class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-layout-21 wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)" aria-label="Berichten">
+<nav class="wp-block-group is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-layout-9 wp-block-group-is-layout-flex" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)" aria-label="Berichten">
 	<div class="post-navigation-link-previous wp-block-post-navigation-link"></div>
 	<div class="post-navigation-link-next wp-block-post-navigation-link"></div>
 </nav>
@@ -488,19 +386,19 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
 <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="padding-top:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--50)">
 <div class="wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex">
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:30%">
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-layout-25 wp-block-group-is-layout-flex"><div class="wp-block-site-logo is-layout-flow wp-block-site-logo-is-layout-flow"><a href="https://qgis.nl/" class="custom-logo-link" rel="home"><img loading="lazy" width="189" height="94" src="https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag.png" class="custom-logo" alt="Logo QGIS Gebruikersgroep Nederland" decoding="async" srcset="https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag.png 800w, https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag-300x150.png 300w, https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag-768x384.png 768w" sizes="(max-width: 189px) 100vw, 189px" /></a></div></div>
+<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-layout-13 wp-block-group-is-layout-flex"><div class="wp-block-site-logo is-layout-flow wp-block-site-logo-is-layout-flow"><a href="https://qgis.nl/" class="custom-logo-link" rel="home"><img loading="lazy" width="189" height="94" src="https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag.png" class="custom-logo" alt="Logo QGIS Gebruikersgroep Nederland" decoding="async" srcset="https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag.png 800w, https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag-300x150.png 300w, https://qgis.nl/wp-content/uploads/2024/02/qgis_gebruikersdag-768x384.png 768w" sizes="(max-width: 189px) 100vw, 189px" /></a></div></div>
 </div>
 
 
 
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:50%">
-<div class="wp-block-group is-content-justification-right is-layout-flex wp-container-core-group-layout-28 wp-block-group-is-layout-flex">
-<div class="wp-block-group is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-layout-27 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-content-justification-right is-layout-flex wp-container-core-group-layout-16 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-vertical is-content-justification-stretch is-layout-flex wp-container-core-group-layout-15 wp-block-group-is-layout-flex">
 <h2 class="wp-block-heading has-medium-font-size has-body-font-family" style="font-style:normal;font-weight:600">Sociaal</h2>
 
 
 
-<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-layout-26 wp-block-group-is-layout-flex">
+<div class="wp-block-group is-vertical is-layout-flex wp-container-core-group-layout-14 wp-block-group-is-layout-flex">
 <p>Matrix</p>
 
 
@@ -532,7 +430,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
 				<div class="gs_logo_single">
 
 					<!-- Logo Img -->
-					<a href="https://www.has.nl/" target="_blank" rel="noopener"><img width="300" height="214" src="https://qgis.nl/wp-content/uploads/2024/03/haslogo-300x214.png" class="default  gs-logo--img wp-post-image" alt="HAS Green Academy" title="HAS Green Academy" decoding="async" loading="lazy" srcset="https://qgis.nl/wp-content/uploads/2024/03/haslogo-300x214.png 300w, https://qgis.nl/wp-content/uploads/2024/03/haslogo-1024x732.png 1024w, https://qgis.nl/wp-content/uploads/2024/03/haslogo-768x549.png 768w, https://qgis.nl/wp-content/uploads/2024/03/haslogo-1536x1098.png 1536w, https://qgis.nl/wp-content/uploads/2024/03/haslogo.png 1942w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					<a href="https://www.has.nl/" target="_blank" rel="noopener"><img width="300" height="214" src="https://qgis.nl/wp-content/uploads/2024/03/haslogo-300x214.png" class="default  gs-logo--img wp-post-image" alt="HAS Green Academy" title="HAS Green Academy" decoding="async" fetchpriority="high" srcset="https://qgis.nl/wp-content/uploads/2024/03/haslogo-300x214.png 300w, https://qgis.nl/wp-content/uploads/2024/03/haslogo-1024x732.png 1024w, https://qgis.nl/wp-content/uploads/2024/03/haslogo-768x549.png 768w, https://qgis.nl/wp-content/uploads/2024/03/haslogo-1536x1098.png 1536w, https://qgis.nl/wp-content/uploads/2024/03/haslogo.png 1942w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 					<!-- Logo Title -->
 										
 					<!-- Logo Category -->
@@ -545,7 +443,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
 				<div class="gs_logo_single">
 
 					<!-- Logo Img -->
-					<a href="http://www.anteagroup.nl/" target="_blank" rel="noopener"><img width="300" height="161" src="https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-300x161.png" class="default  gs-logo--img wp-post-image" alt="logo antea" title="Antea Group" decoding="async" loading="lazy" srcset="https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-300x161.png 300w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-1024x550.png 1024w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-768x413.png 768w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-1536x825.png 1536w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-2048x1100.png 2048w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					<a href="http://www.anteagroup.nl/" target="_blank" rel="noopener"><img loading="lazy" width="300" height="161" src="https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-300x161.png" class="default  gs-logo--img wp-post-image" alt="logo antea" title="Antea Group" decoding="async" srcset="https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-300x161.png 300w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-1024x550.png 1024w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-768x413.png 768w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-1536x825.png 1536w, https://qgis.nl/wp-content/uploads/2024/03/logo_antea_r_group-2048x1100.png 2048w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 					<!-- Logo Title -->
 										
 					<!-- Logo Category -->
@@ -558,7 +456,7 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
 				<div class="gs_logo_single">
 
 					<!-- Logo Img -->
-					<a href="https://www.geon.nl/" target="_blank" rel="noopener"><img width="300" height="96" src="https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-300x96.png" class="default  gs-logo--img wp-post-image" alt="logo geon" title="Geon" decoding="async" loading="lazy" srcset="https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-300x96.png 300w, https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-1024x328.png 1024w, https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-768x246.png 768w, https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant.png 1316w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					<a href="https://www.geon.nl/" target="_blank" rel="noopener"><img loading="lazy" width="300" height="96" src="https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-300x96.png" class="default  gs-logo--img wp-post-image" alt="logo geon" title="Geon" decoding="async" srcset="https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-300x96.png 300w, https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-1024x328.png 1024w, https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant-768x246.png 768w, https://qgis.nl/wp-content/uploads/2024/03/logo_geon_transparant.png 1316w" sizes="(max-width: 300px) 100vw, 300px" /></a>
 					<!-- Logo Title -->
 										
 					<!-- Logo Category -->
