@@ -46,7 +46,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://qgisblog.files.wordpress.com/2024/05/image.png"><img width="847" height="250" data-attachment-id="2840" data-permalink="https://blog.qgis.org/2024/05/01/qgis-grant-programme-2024-results/image-8/" data-orig-file="https://qgisblog.files.wordpress.com/2024/05/image.png" data-orig-size="847,250" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-medium-file="https://qgisblog.files.wordpress.com/2024/05/image.png?w=300" data-large-file="https://qgisblog.files.wordpress.com/2024/05/image.png?w=780" src="https://qgisblog.files.wordpress.com/2024/05/image.png?w=847" alt="" class="wp-image-2840" srcset="https://qgisblog.files.wordpress.com/2024/05/image.png 847w, https://qgisblog.files.wordpress.com/2024/05/image.png?w=150 150w, https://qgisblog.files.wordpress.com/2024/05/image.png?w=300 300w, https://qgisblog.files.wordpress.com/2024/05/image.png?w=768 768w" sizes="(max-width: 847px) 100vw, 847px" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://qgisblog.files.wordpress.com/2024/05/image.png"><img alt="" class="wp-image-2840" height="250" src="https://qgisblog.files.wordpress.com/2024/05/image.png?w=847" width="847" /></a></figure>
 
 
 

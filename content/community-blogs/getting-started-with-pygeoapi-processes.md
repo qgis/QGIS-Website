@@ -20,7 +20,7 @@ showcase: "planet"
 
 
 
-<pre class="wp-block-code"><code>conda create -n pygeoapi python=3.10<br>conda activate pygeoapi<br>mamba install -c conda-forge pygeoapi</code></pre>
+<pre class="wp-block-code"><code>conda create -n pygeoapi python=3.10<br />conda activate pygeoapi<br />mamba install -c conda-forge pygeoapi</code></pre>
 
 
 
@@ -28,7 +28,7 @@ showcase: "planet"
 
 
 
-<pre class="wp-block-code"><code>cd C:\Users\anita\Documents\GitHub\<br>git clone https://github.com/geopython/pygeoapi.git<br>cd pygeoapi\</code></pre>
+<pre class="wp-block-code"><code>cd C:\Users\anita\Documents\GitHub\<br />git clone https://github.com/geopython/pygeoapi.git<br />cd pygeoapi\</code></pre>
 
 
 
@@ -36,7 +36,7 @@ showcase: "planet"
 
 
 
-<pre class="wp-block-code"><code>cp pygeoapi-config.yml example-config.yml  <br># There is a known issue in pygeoapi 0.16.1: https://github.com/geopython/pygeoapi/issues/1597<br># To fix it, edit the example-config.yml: uncomment the TinyDB option in the server settings (lines 51-54)<br><br>$Env:PYGEOAPI_CONFIG = "F:/Documents/GitHub/pygeoapi/example-config.yml"<br>$Env:PYGEOAPI_OPENAPI = "F:/Documents/GitHub/pygeoapi/example-openapi.yml"<br>pygeoapi openapi generate $Env:PYGEOAPI_CONFIG --output-file $Env:PYGEOAPI_OPENAPI</code></pre>
+<pre class="wp-block-code"><code>cp pygeoapi-config.yml example-config.yml  <br /># There is a known issue in pygeoapi 0.16.1: https://github.com/geopython/pygeoapi/issues/1597<br /># To fix it, edit the example-config.yml: uncomment the TinyDB option in the server settings (lines 51-54)<br /><br />$Env:PYGEOAPI_CONFIG = "F:/Documents/GitHub/pygeoapi/example-config.yml"<br />$Env:PYGEOAPI_OPENAPI = "F:/Documents/GitHub/pygeoapi/example-openapi.yml"<br />pygeoapi openapi generate $Env:PYGEOAPI_CONFIG --output-file $Env:PYGEOAPI_OPENAPI</code></pre>
 
 
 
@@ -68,11 +68,11 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="584" height="455" data-attachment-id="8840" data-permalink="https://anitagraser.com/2024/03/18/getting-started-with-pygeoapi-processes/image-45/" data-orig-file="https://underdark.files.wordpress.com/2024/03/image.png" data-orig-size="584,455" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2024/03/image.png?w=300" data-large-file="https://underdark.files.wordpress.com/2024/03/image.png?w=545" src="https://underdark.files.wordpress.com/2024/03/image.png?w=584" alt="" class="wp-image-8840" srcset="https://underdark.files.wordpress.com/2024/03/image.png 584w, https://underdark.files.wordpress.com/2024/03/image.png?w=150 150w, https://underdark.files.wordpress.com/2024/03/image.png?w=300 300w" sizes="(max-width: 584px) 100vw, 584px" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8840" height="455" src="https://underdark.files.wordpress.com/2024/03/image.png?w=584" width="584" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="584" height="634" data-attachment-id="8841" data-permalink="https://anitagraser.com/2024/03/18/getting-started-with-pygeoapi-processes/image-1-14/" data-orig-file="https://underdark.files.wordpress.com/2024/03/image-1.png" data-orig-size="584,634" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-1" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2024/03/image-1.png?w=276" data-large-file="https://underdark.files.wordpress.com/2024/03/image-1.png?w=545" src="https://underdark.files.wordpress.com/2024/03/image-1.png?w=584" alt="" class="wp-image-8841" srcset="https://underdark.files.wordpress.com/2024/03/image-1.png 584w, https://underdark.files.wordpress.com/2024/03/image-1.png?w=138 138w, https://underdark.files.wordpress.com/2024/03/image-1.png?w=276 276w" sizes="(max-width: 584px) 100vw, 584px" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8841" height="634" src="https://underdark.files.wordpress.com/2024/03/image-1.png?w=584" width="584" /></figure>
 
 
 
@@ -84,7 +84,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" width="311" height="325" data-attachment-id="8847" data-permalink="https://anitagraser.com/2024/03/18/getting-started-with-pygeoapi-processes/image-3-12/" data-orig-file="https://underdark.files.wordpress.com/2024/03/image-3.png" data-orig-size="311,325" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="image-3" data-image-description="" data-image-caption="" data-medium-file="https://underdark.files.wordpress.com/2024/03/image-3.png?w=287" data-large-file="https://underdark.files.wordpress.com/2024/03/image-3.png?w=311" src="https://underdark.files.wordpress.com/2024/03/image-3.png?w=311" alt="" class="wp-image-8847" srcset="https://underdark.files.wordpress.com/2024/03/image-3.png 311w, https://underdark.files.wordpress.com/2024/03/image-3.png?w=144 144w, https://underdark.files.wordpress.com/2024/03/image-3.png?w=287 287w" sizes="(max-width: 311px) 100vw, 311px" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8847" height="325" src="https://underdark.files.wordpress.com/2024/03/image-3.png?w=311" width="311" /></figure>
 
 
 
