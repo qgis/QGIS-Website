@@ -1,6 +1,6 @@
 <div class="grid">
-{{ range (where .Site.Pages "Section" "product") }}
-    {{ range (where .Pages "SectionsPath" "product/case-studies") }}
+{{ range (where .Site.Pages "Section" "project") }}
+    {{ range (where .Pages "SectionsPath" "project/case-studies") }}
         {{ partial "usecase.html" . }}
     {{ end }}
 {{ end }}

@@ -33,7 +33,7 @@ You can also look at the cases - there are many inspiring stories there.
 
 We gather inspiring stories from actual users that showcase the versatility and power of the QGIS solution
 
-[Find out more]({{< ref "product/case-studies.md" >}})
+[Find out more]({{< ref "project/case-studies.md" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 {{< usecase >}}
@@ -49,7 +49,7 @@ Join a community of like-minded individuals in your region.
 [Local groups list]({{< ref "community/groups.md" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
-![Local user groups](../../product/img/groupss.jpg "Local user groups")
+![Local user groups](../../project/img/groupss.jpg "Local user groups")
 {{< rich-right-end >}}
 {{< rich-box-end >}}
 

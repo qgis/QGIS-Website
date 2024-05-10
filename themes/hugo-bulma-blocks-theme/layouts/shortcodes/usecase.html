@@ -1,5 +1,5 @@
-{{ range (where .Site.Pages "Section" "product") }}
-    {{ range (where .Pages "SectionsPath" "product/case-studies") | first 1 }}
+{{ range (where .Site.Pages "Section" "project") }}
+    {{ range (where .Pages "SectionsPath" "project/case-studies") | first 1 }}
         {{ partial "usecase.html" . }}
     {{ end }}
 {{ end }}

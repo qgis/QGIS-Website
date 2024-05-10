@@ -1,6 +1,6 @@
 import type { Page, Locator } from "@playwright/test";
 
-export class ProductPage {
+export class ProjectPage {
     public readonly pageBody: Locator;
     public readonly qgisOverview: Locator;
     public readonly fosQGISLink: Locator;
@@ -17,7 +17,7 @@ export class ProductPage {
     public readonly mapsLink: Locator;
     public readonly screenshotsLink: Locator;
     public readonly caseStudiesAmurumLink: Locator;
-    public readonly productTextList: string[] = [
+    public readonly projectTextList: string[] = [
         "Free and open source",
         "Giving the power of spatial",
         "Available on Windows, Mac,",

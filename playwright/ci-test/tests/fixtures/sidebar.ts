@@ -31,7 +31,8 @@ export class Sidebar {
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
         this.projectLink = this.sidebar.getByRole("link", {
-            name: "Product",
+            name: "Project",
+            exact: true,
         });
         this.overviewLink = this.sidebar.getByRole("link", {
             name: "Overview",
