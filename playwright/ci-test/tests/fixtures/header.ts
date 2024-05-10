@@ -4,7 +4,7 @@ export class Header {
     public readonly banner: Locator;
     public readonly mainNavigation: Locator;
     public readonly logoLink: Locator;
-    public readonly projectLink: Locator;
+    public readonly producttLink: Locator;
     public readonly overviewLink: Locator;
     public readonly caseStudiesLink: Locator;
     public readonly pluginsLink: Locator;
@@ -33,7 +33,7 @@ export class Header {
         this.banner = this.page.getByRole("banner");
         this.mainNavigation = this.page.getByLabel("main navigation");
         this.logoLink = this.mainNavigation.getByRole("link").first();
-        this.projectLink = this.mainNavigation.getByText("Project", {
+        this.producttLink = this.mainNavigation.getByText("Product", {
             exact: true,
         });
         this.overviewLink = this.mainNavigation.getByRole("link", {

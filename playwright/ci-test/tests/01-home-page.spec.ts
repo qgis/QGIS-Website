@@ -32,8 +32,8 @@ test.describe("Home page", () => {
 
     test("Header", async ({ header }) => {
         await expect(header.logoLink).toBeVisible();
-        await expect(header.projectLink).toBeVisible();
-        await header.projectLink.hover();
+        await expect(header.producttLink).toBeVisible();
+        await header.producttLink.hover();
         await expect(header.overviewLink).toBeVisible();
         await expect(header.caseStudiesLink).toBeVisible();
         await expect(header.pluginsLink).toBeVisible();
