@@ -16,6 +16,8 @@ QGIS is available on Windows, macOS, Linux, Android and iOS.
 
 We recommend installing the packages of the released software.
 
+See also [The main installers page]({{< ref "download" >}}).
+
 To evaluate the upcoming release and to allow non-developers to support development we also provide testing packages (note the [warning](#warning)).
 
 In the feature frozen phase preceding a release (see [Release schedule]({{< ref "roadmap#release-schedule" >}})) these packages are effectively **pre-releases, which we strongly urge users to test**.
@@ -33,8 +35,6 @@ For beginners the easiest way is using the standalone installers:
 |Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|[Installer]({{< param "lr_msi" >}}) [Checksum]({{< param "lr_sha" >}})|
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|
 |Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|
-
-See also [The main installers page]({{< ref "download" >}}).
 
 The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase that also acts as **release candidate**.
 
