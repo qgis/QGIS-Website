@@ -31,12 +31,12 @@ showcase: "planet"
 
 
 <ul>
-<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/248">QEP#248 Authentication System: allow Database storage for authentication DB</a> </li>
+<li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/248">QEP#248 Authentication System: allow Database storage for authentication DB</a></li>
 </ul>
 
 
 
-<p>with € 4,500 missing to be be funded to make QGIS Server Kubernetes-ready, with potential QGIS Desktop improvements down the road.</p>
+<p>with € 4,500 missing to be be funded to make it possible to store encrypted credentials in a PostgreSQL database. This improvement targets QGIS Server, particularly multi-instance setups using kubernetes, with potential QGIS Desktop improvements down the road.</p>
 
 
 
