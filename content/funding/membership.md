@@ -82,7 +82,7 @@ Supporting the QGIS project as a sustaining member provides the following benefi
 {{< column-start class="is-one-third">}}
 
 {{< rich-box-start >}}
-{{< rich-content-start themeClass="coloring-4"  >}}
+{{< rich-content-start themeClass="coloring-4 rich-content-text"  >}}
 #### Public Acknowledgment
 All sustaining members and donors will be listed on the project [Members page]({{< ref "/funding/membership.md" >}}), ordered by membership category with a link back to the sustaining members organization or company website and the logo in a size reflecting their membership category.
     
@@ -95,7 +95,7 @@ All sustaining members and donors will be listed on the project [Members page]({
 {{< column-start >}}
 
 {{< rich-box-start >}}
-{{< rich-content-start themeClass="coloring-4">}}
+{{< rich-content-start themeClass="coloring-4 rich-content-text">}}
 #### Enhanced Software Quality
 
 Your contribution aids in resolving bugs and issues promptly, resulting in a smoother user experience.
@@ -105,7 +105,7 @@ Your contribution aids in resolving bugs and issues promptly, resulting in a smo
 {{< column-start>}}
 
 {{< rich-box-start >}}
-{{< rich-content-start themeClass="coloring-4" >}}
+{{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Enhanced Brand Exposure
 
 Flagship, large and medium sustaining members will have their logo on the QGIS homepage footer banner with a logo size and order reflecting their membership category
