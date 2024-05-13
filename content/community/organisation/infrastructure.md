@@ -67,10 +67,10 @@ Flickr Groups
 **Groupstarters:** Nathan W, Anita G, Matieu
 
 
-Twitter
+Mastodon
 -------------------------------------------
 
-{{< rich-list listLink="https://twitter.com/qgis"  layoutClass="half" listTitle="Twitter" listSubtitle="https://twitter.com/qgis" >}}
+{{< rich-list listLink="https://fosstodon.org/@qgis"  layoutClass="half" listTitle="Mastodon" listSubtitle="https://fosstodon.org/@qgis" >}}
 
 **Responsible:** Nathan W, Anita G
     
