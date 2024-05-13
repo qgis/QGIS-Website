@@ -37,7 +37,6 @@ export class Footer {
     public readonly goodiesLink: Locator;
     public readonly logoImage: Locator;
     public readonly facebookLink: Locator;
-    public readonly twitterLink: Locator;
     public readonly youtubeLink: Locator;
     public readonly mapstodonLink: Locator;
     public readonly ghLink: Locator;
@@ -118,7 +117,6 @@ export class Footer {
         this.goodiesLink = this.page.getByRole("link", { name: "Goodies" });
         this.logoImage = this.page.getByRole("img", { name: "Logo" });
         this.facebookLink = this.page.getByRole("link", { name: "" });
-        this.twitterLink = this.page.getByRole("link", { name: "" });
         this.youtubeLink = this.page.getByRole("link", { name: "" });
         this.mapstodonLink = this.page
             .locator("div:nth-child(2) > div:nth-child(2) > a:nth-child(4)")

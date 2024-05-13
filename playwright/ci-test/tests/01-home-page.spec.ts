@@ -130,7 +130,6 @@ test.describe("Home page", () => {
         await expect(footer.goodiesLink).toBeVisible();
         await expect(footer.logoImage).toBeVisible();
         await expect(footer.facebookLink).toBeVisible();
-        await expect(footer.twitterLink).toBeVisible();
         await expect(footer.youtubeLink).toBeVisible();
         await expect(footer.mapstodonLink).toBeVisible();
         await expect(footer.ghLink).toBeVisible();
