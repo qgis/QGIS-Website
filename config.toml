@@ -121,47 +121,47 @@ sectionPagesMenu = 'main'
 # See https://gohugo.io/content-management/menus/
 [menu]
 [[menu.main]]
-  name = "Product"
-  url = "/product/overview"
+  name = "Project"
+  url = "/project/overview"
   weight = 10
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
 [[menu.main]]
-  parent = "Product"
+  parent = "Project"
   name = "Overview"
-  url = "/product/overview/"
+  url = "/project/overview/"
   weight = 10
 
 
 
 [[menu.main]]
-  parent = "Product"
+  parent = "Project"
   name = "Case studies"
-  url = "/product/case-studies/"
+  url = "/project/case-studies/"
   weight = 20
 
 [[menu.main]]
   parent = "Overview"
   name = "Maps"
-  url = "/product/overview/maps/"
+  url = "/project/overview/maps/"
   weight = 30
 
 [[menu.main]]
   parent = "Overview"
   name = "Screenshots"
-  url = "/product/overview/screenshots/"
+  url = "/project/overview/screenshots/"
   weight = 30  
 
 [[menu.main]]
-  parent = "Product"
+  parent = "Project"
   name = "Plugins"
   url = "https://plugins.qgis.org"
   weight = 30
 
 [[menu.main]]
-  parent = "Product"
+  parent = "Project"
   name = "Visual Changelogs"
-  url = "/product/visual-changelogs"
+  url = "/project/visual-changelogs"
   weight = 40
 
 

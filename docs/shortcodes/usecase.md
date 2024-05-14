@@ -2,7 +2,7 @@
 {{< usecase >}}
 ```
 
-Creates a card with the first case study from content/product/case-studies. Currently used within `rich-right` block
+Creates a card with the first case study from content/project/case-studies. Currently used within `rich-right` block
 
 ```
 {{< rich-right-start >}}  

@@ -220,7 +220,7 @@ shortver = "".join(lr_version.split(".")[:2])
 for f in [
     # NOTE: there's no dir for versioned banners for the current website
     # f"themes/qgis-theme/static/images/qgisorg_banner{shortver}.png",
-    # f"content/product/visual-changelogs/visualchangelog{shortver}/index.md"
+    # f"content/project/visual-changelogs/visualchangelog{shortver}/index.md"
 ]:
     assert os.path.exists(f), f"{f} not found"
 

@@ -3,7 +3,7 @@ import type { Page, Locator } from "@playwright/test";
 export class Footer {
     public readonly banner: Locator;
     private readonly liElement: Locator;
-    public readonly productList: Locator;
+    public readonly projectList: Locator;
     public readonly communityList: Locator;
     public readonly resourcesList: Locator;
     public readonly fundingList: Locator;
@@ -46,7 +46,7 @@ export class Footer {
     constructor(public readonly page: Page) {
         this.banner = this.page.getByRole("contentinfo");
         this.liElement = this.page.locator("li");
-        this.productList = this.liElement.filter({ hasText: "Product" });
+        this.projectList = this.liElement.filter({ hasText: "Project"}).first();
         this.communityList = this.liElement.filter({ hasText: "Community" });
         this.resourcesList = this.liElement.filter({ hasText: "Resources" });
         this.fundingList = this.liElement.filter({ hasText: "Funding" });

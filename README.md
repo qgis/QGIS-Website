@@ -126,7 +126,7 @@ to see if it is suitable for publication on our site.
 ./fetch_feeds.py --flickr=yes
 ```
 
-Flickr parsing creates new files and md pages with param `draft: true`. It can be changed to `false` after manual verification. The script will not overwrite the changes. Pictures with `draft: false` will appear on /product/overview/maps/ and /product/overview/screenshots/.
+Flickr parsing creates new files and md pages with param `draft: true`. It can be changed to `false` after manual verification. The script will not overwrite the changes. Pictures with `draft: false` will appear on /project/overview/maps/ and /project/overview/screenshots/.
 
 This script is run nightly as a github action (see .github/workflows/update-feeds.yml).
 
@@ -288,8 +288,8 @@ Bulk redirects can be done like
 ```
 map $url $new_url {
 	...
-    ^/[A-Za-z-]+/site/about/case_studies/(.*).html /product/case-studies/$1/;
-    ^/[A-Za-z-]+/site/forusers/visualchangelog(.*)/index.html /product/visual-changelogs/visualchangelog$1/;
+    ^/[A-Za-z-]+/site/about/case_studies/(.*).html /project/case-studies/$1/;
+    ^/[A-Za-z-]+/site/forusers/visualchangelog(.*)/index.html /project/visual-changelogs/visualchangelog$1/;
 	^/[A-Za-z-]+/site/forusers/usergroups.html /community/organisation/groups/;
 	...
 }

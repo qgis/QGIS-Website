@@ -108,7 +108,7 @@ Each shortcode described in corresponding `shortcodes/<name>.md` file.
 </div>
 <div class="tile">
     <h2>Usecases List Shortcode</h2>
-    <p>Creates a grid with images and links to all case studies from content/product/case-studies</p>
+    <p>Creates a grid with images and links to all case studies from content/project/case-studies</p>
     <a href="shortcodes/usecases.md">
         <div><img src="shortcodes/img/usecases.png"></div>
         <p>usecases </p>
@@ -116,7 +116,7 @@ Each shortcode described in corresponding `shortcodes/<name>.md` file.
 </div>
 <div class="tile">
     <h2>Usecase Card Shortcode</h2>
-    <p>Creates a card with the first case study from content/product/case-studies. </p>
+    <p>Creates a card with the first case study from content/project/case-studies. </p>
     <a href="shortcodes/usecase.md">
         <div><img src="shortcodes/img/usecase.png"></div>
         <p>usecase</p>
@@ -124,7 +124,7 @@ Each shortcode described in corresponding `shortcodes/<name>.md` file.
 </div>
 <div class="tile">
     <h2>List of Visual Changelogs Shortcode</h2>
-    <p>Creates a list of Visual Changelogs from content/product/visual-changelogs ordered by release date.</p>
+    <p>Creates a list of Visual Changelogs from content/project/visual-changelogs ordered by release date.</p>
     <a href="shortcodes/visualchangelogs.md">
         <div><img src="shortcodes/img/visualchangelog.png"></div>
         <p>rich-list</p>

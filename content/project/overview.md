@@ -4,13 +4,13 @@ title: "QGIS overview"
 subtitle: "Giving the power of spatial visualization and decision making tools to everyone"
 draft: false
 HasBanner: true
-heroImage: "img/product.jpg"
+heroImage: "img/project.jpg"
 sidebar: true
 ButtonText: "Download" 
 ButtonLink: "download/"
 SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and open source"
-og_image: "img/product.jpg"
+og_image: "img/project.jpg"
 ---
 {{< content-start  >}}
 ## Key features 
@@ -195,7 +195,7 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 
 We gather inspiring stories from actual users that showcase the versatility and power of the QGIS solution
 
-[Find out more]({{< ref "product/case-studies.md" >}})
+[Find out more]({{< ref "project/case-studies.md" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 {{< usecase >}}
@@ -210,7 +210,7 @@ We gather inspiring stories from actual users that showcase the versatility and 
 ## Maps showcase
 QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
 
-[Go to maps showcase]({{< ref "product/overview/maps.md" >}})
+[Go to maps showcase]({{< ref "project/overview/maps.md" >}})
 
 {{< column-end >}}
 
@@ -225,7 +225,7 @@ QGIS users demonstrate their creativity, showcasing the app's powerful map creat
 ## Application screenshots
 Below are some screenshots from QGIS itself and a selection of Maps which are created with QGIS.
 
-[Go to screenshots]({{< ref "product/overview/screenshots.md" >}})
+[Go to screenshots]({{< ref "project/overview/screenshots.md" >}})
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}

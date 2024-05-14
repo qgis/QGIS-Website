@@ -10,13 +10,13 @@
                 <div class="columns is-desktop">
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 ">
-                            <a href="{{ absURL "product/overview" }}" class="footertitle text-nowrap">
-                                Product
+                            <a href="{{ absURL "project/overview" }}" class="footertitle text-nowrap">
+                                Project
                             </a>
                         </li>
                         {{- range site.Menus.main }}
                             {{ range sort .Children "Weight" }}
-                                {{- if eq .Parent "Product" -}}
+                                {{- if eq .Parent "Project" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
                                             {{ .Name }}
@@ -68,7 +68,7 @@
 
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 ">
-                            <a href="{{ absURL "product/overview" }}" class="footertitle text-nowrap">
+                            <a href="{{ absURL "project/overview" }}" class="footertitle text-nowrap">
                                 Funding
                             </a>
                         </li>
