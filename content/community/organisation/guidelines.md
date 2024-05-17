@@ -34,6 +34,7 @@ Examples of use that do not require permission
 In cases of fair use, you may use or refer to QGIS trademark without explicit permission from QGIS.ORG. The following are examples of such permitted usages:
 
 *   **Books, articles, tutorials**: If you write articles, books, blog articles, tutorials, study materials for university, and similar, you do not need a permission to cite QGIS name and use the logo in it.
+
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
@@ -43,6 +44,7 @@ We require you to **give attribution** to the QGIS project and reference the pro
 
 
 *   **Courses, training**: If you present a course on QGIS, in either an academic, free, or commercial context, you can use the logo and the name ‘QGIS’ in course material.
+
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
@@ -60,7 +62,7 @@ Please routinely explain in your course materials that QGIS is free and open sou
 Examples of use requiring a permission
 ---------------------------------------------------------------------------------------------------------
 
-Some uses of our trademark require the user to obtain a permission. If you need a permission, please fill out our form ([https://goo.gl/forms/b57Rg6IyFy0FC47p2](https://goo.gl/forms/b57Rg6IyFy0FC47p2)).
+Some uses of our trademark require the user to obtain a permission. If you need a permission, please fill out [our form](https://goo.gl/forms/b57Rg6IyFy0FC47p2).
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
@@ -90,6 +92,7 @@ A permission is not a formal endorsement of your QGIS related project and doesn�
         *   YourCompany GIS
             
         *   QGIS special edition
+
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Referring to QGIS
@@ -109,6 +112,7 @@ When referring to QGIS please do not undermine the validity of the main QGIS pro
         *   QGIS.ORG Country voting members should use ccTLD (QGIS.ch, QGIS.dk, …)
             
         *   Non-commercial projects can use qgis.xxxxx (qgis.tutorials would fall into this category if the tutorials are free) but should ask for permission before registering the domain. QGIS.ORG may register the domain and point it to the name servers provided by the requestor or instruct the requestor to do so.
+
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Referring to QGIS
@@ -189,9 +193,5 @@ Frequently Asked Questions
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
-
-
-
-
 
 {{< content-end >}}
