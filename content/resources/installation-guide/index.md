@@ -16,7 +16,7 @@ QGIS is available on Windows, macOS, Linux, Android and iOS.
 
 We recommend installing the packages of the released software.
 
-See also [The main installers page]({{< ref "download" >}}).
+See also [the main installers page]({{< ref "download" >}}).
 
 To evaluate the upcoming release and to allow non-developers to support development we also provide testing packages (note the [warning](#warning)).
 
