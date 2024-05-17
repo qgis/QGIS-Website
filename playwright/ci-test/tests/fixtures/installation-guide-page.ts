@@ -170,7 +170,7 @@ export class InstallationGuidePage {
             .getByRole("cell", { name: "Package" })
             .first();
         this.mainInstallersPageLink = this.page.getByRole("link", {
-            name: "The main installers page",
+            name: "the main installers page",
         });
         this.osgeo4WInstallerLink = this.page.getByRole("link", {
             name: "OSGeo4W Installer",
