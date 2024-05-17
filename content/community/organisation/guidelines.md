@@ -62,7 +62,7 @@ Please routinely explain in your course materials that QGIS is free and open sou
 Examples of use requiring a permission
 ---------------------------------------------------------------------------------------------------------
 
-Some uses of our trademark require the user to obtain a permission. If you need a permission, please fill out our form ([https://goo.gl/forms/b57Rg6IyFy0FC47p2](https://goo.gl/forms/b57Rg6IyFy0FC47p2)).
+Some uses of our trademark require the user to obtain a permission. If you need a permission, please fill out [our form](https://goo.gl/forms/b57Rg6IyFy0FC47p2).
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
