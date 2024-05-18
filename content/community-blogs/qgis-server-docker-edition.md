@@ -48,7 +48,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8858" height="375" src="https://underdark.files.wordpress.com/2024/04/image-1.png?w=395" width="395" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8858" height="375" src="https://anitagraser.com/wp-content/uploads/2024/04/image-1.png?w=395" width="395" /></figure>
 
 
 
@@ -70,7 +70,7 @@ cp QGIS-Training-Data-release_3.22/exercise_data/qgis-server-tutorial-data/natur
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8860" height="119" src="https://underdark.files.wordpress.com/2024/04/image-2.png?w=538" width="538" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8860" height="119" src="https://anitagraser.com/wp-content/uploads/2024/04/image-2.png?w=538" width="538" /></figure>
 
 
 
@@ -86,7 +86,7 @@ cp QGIS-Training-Data-release_3.22/exercise_data/qgis-server-tutorial-data/natur
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8861" height="200" src="https://underdark.files.wordpress.com/2024/04/image-3.png?w=400" width="400" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8861" height="200" src="https://anitagraser.com/wp-content/uploads/2024/04/image-3.png?w=400" width="400" /></figure>
 
 
 
@@ -98,4 +98,4 @@ cp QGIS-Training-Data-release_3.22/exercise_data/qgis-server-tutorial-data/natur
 
 
 
-<figure class="wp-block-image size-large"><a href="https://underdark.files.wordpress.com/2024/04/image-4.png"><img alt="" class="wp-image-8863" height="600" src="https://underdark.files.wordpress.com/2024/04/image-4.png?w=1024" width="1024" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/04/image-4.png"><img alt="" class="wp-image-8863" height="600" src="https://anitagraser.com/wp-content/uploads/2024/04/image-4.png?w=1024" width="1024" /></a></figure>

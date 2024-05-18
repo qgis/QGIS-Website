@@ -8,7 +8,7 @@ draft: "true"
 showcase: "planet"
 ---
 
-<p>Trajectools continues growing. Lately, we have started expanding towards public transport analysis. The algorithms available through the current <a href="https://github.com/movingpandas/qgis-processing-trajectory/tree/emeralds">Trajectools development version</a> are courtesy of the <a href="https://github.com/Bondify/gtfs_functions">gtfs_functions</a> library.</p>
+<p><a href="https://anitagraser.com/trajectools/">Trajectools</a> continues growing. Lately, we have started expanding towards public transport analysis. The algorithms available through the current <a href="https://github.com/movingpandas/qgis-processing-trajectory/tree/emeralds">Trajectools development version</a> are courtesy of the <a href="https://github.com/Bondify/gtfs_functions">gtfs_functions</a> library.</p>
 
 
 
@@ -20,7 +20,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8874" height="415" src="https://underdark.files.wordpress.com/2024/05/image.png?w=326" width="326" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8874" height="415" src="https://anitagraser.com/wp-content/uploads/2024/05/image.png?w=326" width="326" /></figure>
 
 
 
@@ -28,11 +28,11 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8882" height="366" src="https://underdark.files.wordpress.com/2024/05/image-4.png?w=495" width="495" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8882" height="366" src="https://anitagraser.com/wp-content/uploads/2024/05/image-4.png?w=495" width="495" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><a href="https://underdark.files.wordpress.com/2024/05/image-2.png"><img alt="" class="wp-image-8879" height="735" src="https://underdark.files.wordpress.com/2024/05/image-2.png?w=887" width="887" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-2.png"><img alt="" class="wp-image-8879" height="735" src="https://anitagraser.com/wp-content/uploads/2024/05/image-2.png?w=887" width="887" /></a></figure>
 
 
 
@@ -40,7 +40,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8884" height="366" src="https://underdark.files.wordpress.com/2024/05/image-5.png?w=495" width="495" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8884" height="366" src="https://anitagraser.com/wp-content/uploads/2024/05/image-5.png?w=495" width="495" /></figure>
 
 
 
@@ -48,7 +48,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://underdark.files.wordpress.com/2024/05/image-1.png"><img alt="" class="wp-image-8876" height="734" src="https://underdark.files.wordpress.com/2024/05/image-1.png?w=897" width="897" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-1.png"><img alt="" class="wp-image-8876" height="734" src="https://anitagraser.com/wp-content/uploads/2024/05/image-1.png?w=897" width="897" /></a></figure>
 
 
 
@@ -60,7 +60,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://underdark.files.wordpress.com/2024/05/image-6.png"><img alt="" class="wp-image-8886" height="584" src="https://underdark.files.wordpress.com/2024/05/image-6.png?w=937" width="937" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-6.png"><img alt="" class="wp-image-8886" height="584" src="https://anitagraser.com/wp-content/uploads/2024/05/image-6.png?w=937" width="937" /></a></figure>
 
 
 
@@ -68,7 +68,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://underdark.files.wordpress.com/2024/05/image-7.png"><img alt="" class="wp-image-8888" height="632" src="https://underdark.files.wordpress.com/2024/05/image-7.png?w=1024" width="1024" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-7.png"><img alt="" class="wp-image-8888" height="632" src="https://anitagraser.com/wp-content/uploads/2024/05/image-7.png?w=1024" width="1024" /></a></figure>
 
 
 

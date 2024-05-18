@@ -68,11 +68,11 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8840" height="455" src="https://underdark.files.wordpress.com/2024/03/image.png?w=584" width="584" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8840" height="455" src="https://anitagraser.com/wp-content/uploads/2024/03/image.png?w=584" width="584" /></figure>
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8841" height="634" src="https://underdark.files.wordpress.com/2024/03/image-1.png?w=584" width="584" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8841" height="634" src="https://anitagraser.com/wp-content/uploads/2024/03/image-1.png?w=584" width="584" /></figure>
 
 
 
@@ -84,7 +84,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8847" height="325" src="https://underdark.files.wordpress.com/2024/03/image-3.png?w=311" width="311" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-8847" height="325" src="https://anitagraser.com/wp-content/uploads/2024/03/image-3.png?w=311" width="311" /></figure>
 
 
 
