@@ -38,9 +38,9 @@ jobs:
 
     - name: '📅 Update roadmap'
       run: |
-        cd ./qgis-hugo
+        cd ./qgis-hugo/scripts
         pipenv run pip freeze
-        pipenv run ./scripts/update-schedule.py
+        pipenv run ./update-schedule.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
