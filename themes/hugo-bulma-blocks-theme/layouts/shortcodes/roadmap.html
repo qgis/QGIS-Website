@@ -204,6 +204,7 @@
       
           if (t.total <= 0) {
             clearInterval(timeinterval);
+            // Hide the counter when the date is reached
             clock.innerHTML = ''
           } else {
             daysSpan.innerHTML = t.days;
@@ -218,10 +219,14 @@
       }
       
       {{ with index .Site.Data.conf }}
-        const nextFreezeDate = new Date({{ .nextfreezedate }});
-        const nextReleaseDate = new Date({{ .nextreleasedate }});
-        const nextPointReleaseDate = new Date({{ .nextpointreleasedate }});
+        let nextFreezeDateStr = {{ .nextfreezedate }};
+        let nextReleaseDateStr = {{ .nextreleasedate }};
+        let nextPointReleaseDateStr = {{ .nextpointreleasedate }};
       {{ end }}
+      //   We need to correct the date string format for Safari otherwise it will return NaN
+      const nextFreezeDate = new Date(nextFreezeDateStr.replace(" ", "T").replace(" UTC", "Z"))
+      const nextReleaseDate = new Date(nextReleaseDateStr.replace(" ", "T").replace(" UTC", "Z"))
+      const nextPointReleaseDate = new Date(nextPointReleaseDateStr.replace(" ", "T").replace(" UTC", "Z"))
 
       initializeClock('point-release', nextPointReleaseDate);
       initializeClock('freeze', nextFreezeDate);
