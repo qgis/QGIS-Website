@@ -45,13 +45,13 @@ mamba install movingpandas=0.18</code></pre>
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Trajectory overlay &#8212; Intersect trajectories with polygon layer</li>
 
 
 
 <li>Privacy &#8212; Home work attack (requires scikit-mobility)
-<ul>
+<ul class="wp-block-list">
 <li>This algorithm determines how easy it is to identify an individual in a dataset. In a home and work attack the adversary knows the coordinates of the two locations most frequently visited by an individual. </li>
 </ul>
 </li>
@@ -63,7 +63,7 @@ mamba install movingpandas=0.18</code></pre>
 
 
 <li>GTFS &#8212; Extract shapes (requires gtfs_functions)
-<ul>
+<ul class="wp-block-list">
 <li>These algorithms extract <a href="https://anitagraser.com/2024/05/04/gtfs-algorithms-about-to-land-in-trajectools/">public transport routes (GTFS shapes) and route segments </a>between stops (GTFS segments) from GTFS ZIP files using gtfs_functions.Feed.shapes and .segments, respectively. </li>
 </ul>
 </li>
@@ -102,7 +102,7 @@ pip install gtfs_functions</code></pre>
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Method chaining support for add_speed(), add_direction(), and other functions</li>
 
 
