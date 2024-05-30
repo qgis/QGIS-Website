@@ -12,7 +12,7 @@ showcase: "planet"
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269">QEP#269 Update older annotation items to new framework</a></li>
 </ul>
 
@@ -22,7 +22,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://qgis.org/en/site/about/sustaining_members.html"><img alt="" class="wp-image-2855" height="497" src="https://qgisblog.files.wordpress.com/2024/05/image-1.png?w=560" width="560" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://qgis.org/en/site/about/sustaining_members.html"><img alt="" class="wp-image-2855" height="497" src="https://blog.qgis.org/wp-content/uploads/2024/05/image-1.png?w=560" width="560" /></a></figure>
 
 
 
@@ -30,7 +30,7 @@ showcase: "planet"
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/248">QEP#248 Authentication System: allow Database storage for authentication DB</a></li>
 </ul>
 
@@ -48,7 +48,7 @@ showcase: "planet"
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/294">QEP#294 Fix access to remote data sources in WebAssembly builds</a></li>
 
 

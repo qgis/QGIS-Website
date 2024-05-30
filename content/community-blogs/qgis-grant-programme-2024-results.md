@@ -12,7 +12,7 @@ showcase: "planet"
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/issues/289">QEP#289 Authentication system revision (v1.1)</a></li>
 
 
@@ -46,7 +46,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://qgisblog.files.wordpress.com/2024/05/image.png"><img alt="" class="wp-image-2840" height="250" src="https://qgisblog.files.wordpress.com/2024/05/image.png?w=847" width="847" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/05/image.png"><img alt="" class="wp-image-2840" height="250" src="https://blog.qgis.org/wp-content/uploads/2024/05/image.png?w=847" width="847" /></a></figure>
 
 
 
@@ -54,7 +54,7 @@ showcase: "planet"
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Voting was carried out based on the technical merits of the proposals and the competency of the applicants to execute on these proposals.</li>
 
 
