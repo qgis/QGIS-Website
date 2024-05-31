@@ -20,7 +20,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8989" height="716" src="https://anitagraser.com/wp-content/uploads/2024/05/image-19.png?w=817" width="817" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-28.png"><img alt="" class="wp-image-9010" height="653" src="https://anitagraser.com/wp-content/uploads/2024/05/image-28.png?w=663" width="663" /></a></figure>
 
 
 
@@ -28,7 +28,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8987" height="726" src="https://anitagraser.com/wp-content/uploads/2024/05/image-18.png?w=808" width="808" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-29.png"><img alt="" class="wp-image-9011" height="657" src="https://anitagraser.com/wp-content/uploads/2024/05/image-29.png?w=663" width="663" /></a></figure>
 
 
 
@@ -40,7 +40,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8986" height="770" src="https://anitagraser.com/wp-content/uploads/2024/05/image-17.png?w=814" width="814" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-30.png"><img alt="" class="wp-image-9012" height="736" src="https://anitagraser.com/wp-content/uploads/2024/05/image-30.png?w=664" width="664" /></a></figure>
 
 
 
@@ -48,7 +48,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8984" height="840" src="https://anitagraser.com/wp-content/uploads/2024/05/image-16.png?w=812" width="812" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-31.png"><img alt="" class="wp-image-9013" height="688" src="https://anitagraser.com/wp-content/uploads/2024/05/image-31.png?w=550" width="550" /></a></figure>
 
 
 
@@ -60,7 +60,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8995" height="272" src="https://anitagraser.com/wp-content/uploads/2024/05/image-23.png?w=915" width="915" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-23.png"><img alt="" class="wp-image-8995" height="272" src="https://anitagraser.com/wp-content/uploads/2024/05/image-23.png?w=915" width="915" /></a></figure>
 
 
 
@@ -72,7 +72,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8990" height="538" src="https://anitagraser.com/wp-content/uploads/2024/05/image-20.png?w=806" width="806" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-32.png"><img alt="" class="wp-image-9014" height="500" src="https://anitagraser.com/wp-content/uploads/2024/05/image-32.png?w=665" width="665" /></a></figure>
 
 
 
@@ -80,7 +80,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8999" height="516" src="https://anitagraser.com/wp-content/uploads/2024/05/image-25.png?w=809" width="809" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-33.png"><img alt="" class="wp-image-9015" height="512" src="https://anitagraser.com/wp-content/uploads/2024/05/image-33.png?w=666" width="666" /></a></figure>
 
 
 
@@ -96,7 +96,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-8993" height="710" src="https://anitagraser.com/wp-content/uploads/2024/05/image-22.png?w=821" width="821" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-34.png"><img alt="" class="wp-image-9016" height="707" src="https://anitagraser.com/wp-content/uploads/2024/05/image-34.png?w=666" width="666" /></a></figure>
 
 
 
@@ -104,7 +104,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-9001" height="542" src="https://anitagraser.com/wp-content/uploads/2024/05/image-26.png?w=819" width="819" /></figure>
+<figure class="wp-block-image size-large"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-35.png"><img alt="" class="wp-image-9017" height="536" src="https://anitagraser.com/wp-content/uploads/2024/05/image-35.png?w=667" width="667" /></a></figure>
 
 
 
@@ -116,7 +116,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large is-resized"><img alt="" class="wp-image-9002" height="664" src="https://anitagraser.com/wp-content/uploads/2024/05/image-27.png?w=780" style="width: 775px; height: auto;" width="780" /></figure>
+<figure class="wp-block-image size-large is-resized"><a href="https://anitagraser.com/wp-content/uploads/2024/05/image-27.png"><img alt="" class="wp-image-9002" height="664" src="https://anitagraser.com/wp-content/uploads/2024/05/image-27.png?w=780" style="width: 775px; height: auto;" width="780" /></a></figure>
 
 
 
