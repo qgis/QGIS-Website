@@ -53,7 +53,7 @@ export class Header {
             name: "Get involved",
         });
         this.certifiedMemberLink = this.mainNavigation.getByRole("link", {
-            name: "Become a Certified Member",
+            name: "Become a Certified Trainer",
         });
         this.qgisFoundationLink = this.mainNavigation.getByRole("link", {
             name: "QGIS Foundation",
