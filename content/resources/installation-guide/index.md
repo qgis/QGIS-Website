@@ -4,17 +4,19 @@ title: "Installation Guide"
 subtitle: ""
 draft: false
 sidebar: true
+Reviewed: 4 June 2024
+Reviewer: Tim Sutton
 ---
 
 {{< content-start  >}}
 
 # QGIS Installers
 
-How to obtain QGIS?
+QGIS is available on Windows, macOS, Linux, FreeBSD, OpenBSD, Android and iOS.
 
-QGIS is available on Windows, macOS, Linux, Android and iOS.
+![Icons of Operating Systems](img/icons.png)
 
-We recommend installing the packages of the released software.
+We recommend installing the Long Term Release (LTR) packages since our LTR versions undergo more rigorous testing before release and receive at least one year of bug fix updates.
 
 See also [the main installers page]({{< ref "download" >}}).
 
@@ -24,11 +26,11 @@ In the feature frozen phase preceding a release (see [Release schedule]({{< ref 
 
 # Windows
 
-There are two options for installations on Windows:
+There are two options for installing on Windows:
 
 ## Standalone installers
 
-For beginners the easiest way is using the standalone installers:
+Standalone installers include everything QGIS needs in a single download. Once you have the installer, no internet is required to complete the installation. When a new release is available, you need to download the complete installer again in order to upgrade. For beginners, the standlone installer is probably the easiest way to install QGIS:
 
 |Release|Version|Package|
 |---|---|---|
@@ -36,22 +38,22 @@ For beginners the easiest way is using the standalone installers:
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|
 |Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|
 
-The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase that also acts as **release candidate**.
+The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase, theset also act as **release candidate** installers.
 
 ## OSGeo4W installer
 
-More advanced QGIS users should use OSGeo4W packages, which for one make it possible to install several versions in parallel and also to do much more efficient updates as only changed components are downloaded and installed.
+More advanced QGIS users should use OSGeo4W packages. This installer makes it possible to install several versions of QGIS in parallel and also to do much more efficient updates as only changed components are downloaded and installed with each new release.
 
 The OSGeo4W repository contains a lot of software from OSGeo projects. QGIS and all dependencies are included, along with Python, GRASS, GDAL, etc. The installer is able to install from internet or just download all needed packages beforehand. The downloaded files are kept in a local directory for future installations and could also be used to install offline.
 
-Steps are:
+Installation steps are:
 
-- Download [OSGeo4W Installer](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe) and start it
+- Download [OSGeo4W Installer](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe) and run it.
     
 - Choose _Express Install_ and select _QGIS_ to install the _latest release_ and/or _QGIS LTR_ to install the _long term release_.
     
 
-Alternatively to _Express_ you also use the _Advanced Install_, navigate to the _Desktop_ section and pick one or more of the following packages:
+Alternatively, instead of doing the _Express_ install, you can use the _Advanced Install_, navigate to the _Desktop_ section and pick one or more of the following packages:
 
 |Release|Version|Package|Description|
 |---|---|---|---|
@@ -61,19 +63,19 @@ Alternatively to _Express_ you also use the _Advanced Install_, navigate to the 
 |||qgis-ltr-dev [[1]](#id1)|Nightly build of the upcoming long term point release|
 |Development|{{< param "devversion" >}} master|qgis-dev [[1]](#id1)|Nightly build of the development version|
 
-{{< footnote "1" >}} Nightlies are debug builds (including debugging output)
+{{< footnote "1" >}} Nightlies are debug builds (including debugging output that can be used by developers to better understand issues with the build).
 
-The packages listed in the table only install the necessary packages to run QGIS. Corresponding to those packages there are also meta packages with the postfix `-full-free` and `-full`. The former contains additional optional dependencies that some popular - not included - plugins use and the latter include the former and also add proprietary extensions like Oracle, ECW and MrSID.
+The packages listed in the above table only install the necessary dependencies needed to run QGIS. Corresponding to those packages there are also meta packages with the suffix `-full-free` and `-full`. The `-full-free` contains additional optional dependencies that some popular (not included in the default QGIS install) plugins use.  The `-full` includes everything from `-full-free` and also adds proprietary extensions like Oracle drivers, ECW and MrSID.
 
 The Express installs reference the corresponding `-full` variant and the standalone installers are also made from these OSGeo4W package sets.
 
-Before installing any of the nightly builds note the [warning](#warning).
+Before installing any of the nightly builds note the [warnings](#warning) below.
 
 # Linux
 
-Most linux distributions split QGIS into several packages; you’ll probably need qgis and qgis-python (to run plugins). Packages like qgis-grass (or qgis-plugin-grass), qgis-server can be skipped initially, or installed only when you need them.
+Most linux distributions split QGIS into several packages; you’ll probably need `qgis` and `qgis-python` (to run plugins). Packages like `qgis-grass` (or `qgis-plugin-grass`), `qgis-server` can be skipped initially, or installed only when you need them.
 
-Below you find instructions to install per distribution. For most distro’s there are instructions to install QGIS stable and instructions to install a cutting edge QGIS testing build (note the [warning](#warning)).
+Below you will find specific instructions per distribution. For most distro’s there are instructions to install QGIS stable and instructions to install a cutting edge QGIS testing build (note the [warning](#warning)).
 
 ## Debian/Ubuntu
 
@@ -82,11 +84,11 @@ Below you find instructions to install per distribution. For most distro’s the
 {{< rich-box-start icon="💁" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
-In the section following this one, you will find ALL possible options to install different versions of QGIS in different versions of Debian/Ubuntu. If you have problems, verify there whether your distribution is still supported as the repositories also contain older **unsupported** distributions with the last QGIS version that was supported. Beware that those might have meanwhile ceased to work.
+In the section following this one, you will find ALL possible options to install different versions of QGIS in different versions of Debian/Ubuntu. If you have problems, verify whether your distribution is still supported as the repositories also contain older **unsupported** distributions with the last QGIS version that was supported. Be aware that those might have meanwhile ceased to work.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-Here you will simply install the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) in your Debian or Ubuntu without having to edit config files.
+Simply install the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) in your Debian or Ubuntu without having to edit config files.
 
 {{< rich-box-start icon="🌀" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
@@ -95,7 +97,7 @@ Although you see ‘Debian’ in some places, this also works for ‘Ubuntu’, 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-First install some tools you will need for this instructions:
+First install some tools you will need for these instructions:
 
 ```
 sudo apt install gnupg software-properties-common
@@ -130,7 +132,7 @@ See [Available codenames](#available-codenames).
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-Update your repository information to reflect also the just added QGIS one:
+Update your repository information to also reflect the newly added QGIS one:
 
 ```
 sudo apt update
@@ -145,24 +147,24 @@ sudo apt install qgis qgis-plugin-grass
 {{< rich-box-start icon="✍️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
-Add `qgis-server` to this line if you also want to install QGIS Server
+Add `qgis-server` to the above line if you also want to install QGIS Server
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
 ### Repositories
 
-Default Debian and Ubuntu software repositories often hold older versions of QGIS.
+Default Debian and Ubuntu software repositories often contain older versions of QGIS.
 
 To have newer versions, you have to add alternative software repositories, by adding one of the deb-lines below to your `/etc/apt/sources.list.d/qgis.sources` file.
 
 Our main repository contains multiple lines of packages for several versions of **Debian and Ubuntu** based on the dependencies the individual distributions provide.
 
-For Ubuntu we also used to have extra packages in a separate repository that are based on [ubuntugis](https://launchpad.net/~ubuntugis), which held more uptodate versions of other GIS packages than Ubuntu itself for LTS versions. If you want those you also need to include ubuntugis-unstable ppa in your /etc/apt/sources.list.d/qgis.list file (see [ubuntugis documentation](https://trac.osgeo.org/ubuntugis/wiki/UbuntuGISRepository)).
+For Ubuntu we also used to have extra packages in a separate repository that are based on [ubuntugis](https://launchpad.net/~ubuntugis), which held more up-to-date versions of other GIS packages than Ubuntu itself for LTS versions. If you want those you also need to include ubuntugis-unstable ppa in your /etc/apt/sources.list.d/qgis.list file (see [ubuntugis documentation](https://trac.osgeo.org/ubuntugis/wiki/UbuntuGISRepository)).
 
 {{< rich-box-start icon="💁" layoutClass="tips" mode="html" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
-The release packages are only produced once shortly after a new version has been released. As unstable, not yet released debian versions (testing) and ubuntugis-unstable can have library changes the packages might sooner or later be broken for these targets, when the development in debian, ubuntu or ubuntugis-unstable moves on and their packages used as dependencies in qgis change. In that event you can either
+The release packages are only produced once, shortly after a new version has been released. As unstable, not yet released debian versions (testing) and ubuntugis-unstable can have library changes the packages might sooner or later be broken for these targets, when the development in debian, ubuntu or ubuntugis-unstable moves on and their packages used as dependencies in QGIS change. In that event you can either:
 
 - move to a stable debian version and use the released packages for it,
     
@@ -197,7 +199,7 @@ Next point release: {{< param "nextpointreleasedate" >}}
 
 Next release: {{< param "nextreleasedate" >}}
 
-(more dates see Release Schedule on [Road Map]({{< ref "resources/roadmap" >}}))
+(For more dates see Release Schedule on [Road Map]({{< ref "resources/roadmap" >}}))
 </small>
 
 #### Supported distribution versions: {#available-codenames}
@@ -214,7 +216,7 @@ Next release: {{< param "nextreleasedate" >}}
 
 {{< footnote "6" >}} future ubuntu release planned for 2024-04-25
 
-To use the qgis archive you have to first add the archive’s repository public key:
+To use the QGIS archive you have to first add the archive’s repository public key:
 
 ```
 wget https://download.qgis.org/downloads/qgis-archive-keyring.gpg
@@ -292,7 +294,7 @@ Please remove all the QGIS and GRASS packages you may have installed from other 
 
 ## Fedora
 
-Get packages for any Fedora by typing:
+Get packages for any Fedora version by typing:
 
 ```
 sudo dnf install qgis python3-qgis qgis-grass qgis-server
@@ -356,9 +358,73 @@ sudo dnf install qgis-server python3-qgis
 
 More information are available at https://copr.fedorainfracloud.org/coprs/dani/qgis-ltr/
 
+## NixOS
+
+Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=24.05&show=qgis&from=0&size=50&sort=relevance&type=packages&query=qgis). 
+
+### Basic Install
+
+**Ephemeral use:**
+
+```
+nix-shell -p qgis --command qgis
+``` 
+or 
+
+```
+nix-shell -p qgis-ltr  --command qgis
+```
+
+**Or added to your NixOS configuration.nix so that it becomes part of your system install:**
+
+For the LTR:
+
+```  
+  environment.systemPackages = [
+    pkgs.qgis-ltr
+  ];
+```
+
+For latest stable:
+```
+environment.systemPackages = [
+    pkgs.qgis
+  ];
+```
+
+### Running with extra python packages:
+
+Because of the atomic nature of NixOS packages, you need to override the package if you want extra python packages to be available to QGIS. For example to run QGIS with numpy, geopandas and rasterio python libraries you can do:
+
+**Ephemeral use:**
+
+```
+nix-shell -p \
+      'qgis.override { extraPythonPackages = (ps: [ ps.numpy ps.future ps.geopandas ps.rasterio ps.debugpy ]);}' \
+      --command "qgis"
+```
+
+**Or added to your NixOS configuration.nix so that it becomes part of your system install:**
+
+```
+{ config, pkgs, ... }:
+
+{
+  environment.systemPackages = with pkgs; [
+    (qgis.overrideAttrs (old: {
+      buildInputs = old.buildInputs ++ [ 
+            pkgs.python3Packages.numpy 
+            pkgs.python3Packages.geopandas
+            pkgs.python3Packages.rasterio
+      ];
+    }))
+  ];
+}
+```
+
 ## SUSE / openSUSE
 
-Latest stable and LTR packages called qgis and qgis-ltr are available in the following repositories:
+Latest stable and LTR packages called `qgis` and `qgis-ltr` are available in the following repositories:
 
 |Distribution|Repository|
 |---|---|
@@ -420,7 +486,9 @@ QGIS testing is available in AUR (Arch User Repository).
 
 Install with yaourt or other package manager which support AUR:
 
+```
 yaourt -S qgis-git
+```
 
 For bugs and other behaviour, read comments here : https://aur.archlinux.org/packages/qgis-git
 
@@ -580,9 +648,9 @@ pkg_add qgis
 
 See: - https://openbsd.app/?search=qgis # for -stable OpenBSD - https://openbsd.app/?search=qgis&current=on # for -current OpenBSD
 
-# Android
+# Legacy Android
 
-An old and deprecated not touch optimised release of QGIS for Android can be found on the google play store.
+An old and deprecated, non-touch-optimised release of QGIS for Android can be found on the google play store.
 
 https://play.google.com/store/apps/details?id=org.qgis.qgis
 
@@ -606,6 +674,6 @@ QGIS testing packages are provided for some platforms in addition to the QGIS st
 
 # Installing from Source
 
-Refer to [INSTALL](https://github.com/qgis/QGIS/blob/master/INSTALL.md) on how to build and install QGIS from source for the different platforms.
+Please refer to [the developer installation notes](https://github.com/qgis/QGIS/blob/master/INSTALL.md) for notes on how to build and install QGIS from source for the different platforms we support.
 
 {{< content-end >}}
