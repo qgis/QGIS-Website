@@ -108,14 +108,6 @@ export class CommunityPage {
             ],
         },
         {
-            page: "Committee Resolutions",
-            texts: [
-                "Committee Resolutions Committee Resolution 2019 In 2019, the Project Steering",
-                "Committee Resolution 2019 In",
-                "Committee Resolution 2020 In",
-            ],
-        },
-        {
             page: "Meetings",
             texts: [
                 "Meetings ¶ Since 2009 the",
@@ -175,9 +167,6 @@ export class CommunityPage {
         });
         this.contributorCreditsLink = this.page.getByRole("link", {
             name: "Contributor Credits",
-        });
-        this.committeeResolutionsLink = this.page.getByRole("link", {
-            name: "Committee Resolutions",
         });
         this.meetingsLink = this.page.getByRole("link", {
             name: "Meetings",

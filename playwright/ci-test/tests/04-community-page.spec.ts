@@ -186,19 +186,6 @@ test.describe("Community pages", () => {
             }
         }
 
-        await expect(communityPage.committeeResolutionsLink).toBeVisible();
-        await communityPage.committeeResolutionsLink.click();
-
-        let committeeResolutionsText = communityPage.textList.find(
-            (item) => item.page == "Committee Resolutions",
-        )?.texts;
-
-        if (committeeResolutionsText) {
-            for (const item of committeeResolutionsText) {
-                await expect(communityPage.pageBody).toContainText(item);
-            }
-        }
-
         await expect(communityPage.meetingsLink).toBeVisible();
         await communityPage.meetingsLink.click();
 
