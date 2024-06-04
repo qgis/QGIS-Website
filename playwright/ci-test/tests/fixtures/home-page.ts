@@ -42,7 +42,7 @@ export class HomePage {
         "Powerful reporting tools",
         "Create atlases and reports including maps and tabular content.",
         "Harness the unmatched",
-        "Exceptional Digitizing Proficiency",
+        "Exceptional digitizing proficiency",
         "Craft and edit points, lines",
         "Advanced construction tools",
         "Build geometries with curves",
