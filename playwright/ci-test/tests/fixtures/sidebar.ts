@@ -16,10 +16,9 @@ export class Sidebar {
     public readonly fundingLink: Locator;
     public readonly downloadLink: Locator;
     public readonly resourcesLink: Locator;
-    public readonly qgisResourcesLink: Locator;
+    public readonly documentationLink: Locator;
     public readonly membershipLink: Locator;
     public readonly installationGuideLink: Locator;
-    public readonly documentationLink: Locator;
     public readonly releasesLink: Locator;
     public readonly roadmapLink: Locator;
     public readonly reportsLink: Locator;
@@ -74,8 +73,8 @@ export class Sidebar {
             name: "Resources",
             exact: true,
         });
-        this.qgisResourcesLink = this.sidebar.getByRole("link", {
-            name: "QGIS resources",
+        this.documentationLink = this.sidebar.getByRole("link", {
+            name: "Documentation",
         });
 
         this.membershipLink = this.sidebar.getByRole("link", {
@@ -84,10 +83,6 @@ export class Sidebar {
 
         this.installationGuideLink = this.sidebar.getByRole("link", {
             name: "Installation guide",
-        });
-
-        this.documentationLink = this.sidebar.getByRole("link", {
-            name: "Documentation",
         });
 
         this.releasesLink = this.sidebar.getByRole("link", {

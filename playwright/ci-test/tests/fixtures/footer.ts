@@ -18,9 +18,8 @@ export class Footer {
     public readonly projectOrganisationLink: Locator;
     public readonly localUserGroupsLink: Locator;
     public readonly membersBlogsList: Locator;
-    public readonly qgisResourcesLink: Locator;
-    public readonly installationGuideLink: Locator;
     public readonly documentationLink: Locator;
+    public readonly installationGuideLink: Locator;
     public readonly releasesLink: Locator;
     public readonly roadmapLink: Locator;
     public readonly reportsLink: Locator;
@@ -80,15 +79,12 @@ export class Footer {
         this.membersBlogsList = this.liElement.filter({
             hasText: "Members Blogs",
         });
-        this.qgisResourcesLink = this.page.getByRole("link", {
-            name: "QGIS resources",
+        this.documentationLink = this.page.getByRole("link", {
+            name: "Documentation",
             exact: true,
-        });
+        }).first();
         this.installationGuideLink = this.liElement.filter({
             hasText: "Installation guide",
-        });
-        this.documentationLink = this.banner.getByRole("link", {
-            name: "Documentation",
         });
         this.releasesLink = this.banner.getByRole("link", { name: "Releases" });
         this.roadmapLink = this.banner.getByRole("link", { name: "Roadmap" });

@@ -48,9 +48,8 @@ test.describe("Home page", () => {
         await expect(header.downloadLink).toBeVisible();
         await expect(header.resourcesLink).toBeVisible();
         await header.resourcesLink.hover();
-        await expect(header.qgisResourcesLink).toBeVisible();
-        await expect(header.installationGuideLink).toBeVisible();
         await expect(header.documentationLink).toBeVisible();
+        await expect(header.installationGuideLink).toBeVisible();
         await expect(header.releasesLink).toBeVisible();
         await expect(header.roadmapLink).toBeVisible();
         await expect(header.reportsLink).toBeVisible();
@@ -111,9 +110,8 @@ test.describe("Home page", () => {
         await expect(footer.projectOrganisationLink).toBeVisible();
         await expect(footer.localUserGroupsLink).toBeVisible();
         await expect(footer.membersBlogsList).toBeVisible();
-        await expect(footer.qgisResourcesLink).toBeVisible();
-        await expect(footer.installationGuideLink).toBeVisible();
         await expect(footer.documentationLink).toBeVisible();
+        await expect(footer.installationGuideLink).toBeVisible();
         await expect(footer.releasesLink).toBeVisible();
         await expect(footer.roadmapLink).toBeVisible();
         await expect(footer.reportsLink).toBeVisible();

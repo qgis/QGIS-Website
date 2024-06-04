@@ -17,9 +17,8 @@ export class Header {
     public readonly membersBlogLink: Locator;
     public readonly downloadLink: Locator;
     public readonly resourcesLink: Locator;
-    public readonly qgisResourcesLink: Locator;
-    public readonly installationGuideLink: Locator;
     public readonly documentationLink: Locator;
+    public readonly installationGuideLink: Locator;
     public readonly releasesLink: Locator;
     public readonly roadmapLink: Locator;
     public readonly reportsLink: Locator;
@@ -70,14 +69,11 @@ export class Header {
         this.resourcesLink = this.mainNavigation.getByText("Resources", {
             exact: true,
         });
-        this.qgisResourcesLink = this.mainNavigation.getByRole("link", {
-            name: "QGIS Resources",
+        this.documentationLink = this.mainNavigation.getByRole("link", {
+            name: "Documentation",
         });
         this.installationGuideLink = this.mainNavigation.getByRole("link", {
             name: "Installation Guide",
-        });
-        this.documentationLink = this.mainNavigation.getByRole("link", {
-            name: "Documentation",
         });
         this.releasesLink = this.mainNavigation.getByRole("link", {
             name: "Releases",

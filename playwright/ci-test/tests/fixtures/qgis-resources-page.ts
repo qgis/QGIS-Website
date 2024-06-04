@@ -20,9 +20,8 @@ export class QgisResourcesPage {
     public readonly htmlZipManualsLink: Locator;
     public readonly viewSupportOptionsLink: Locator;
     public readonly textList: string[] = [
-        "Resources ¶ 🖖 Troubles with",
-        "Troubles with installation? ¶ If you are looking for information on installing",
-        "QGIS has a lot of",
+        "Resources",
+        "🖖 Installation troubles?",
         "You will find documentation",
         "Get involved and help us",
         "Archived releases",
@@ -42,16 +41,16 @@ export class QgisResourcesPage {
             .getByRole("link");
         this.tab3Element = this.page.locator("#tab-3");
         this.desktopUserGuideLink = this.page.getByRole("link", {
-            name: "Desktop User Guide/Manual",
+            name: "Desktop User Guide",
         });
         this.serverGuideLink = this.page.getByRole("link", {
-            name: "Server Guide/Manual",
+            name: "Server Guide",
         });
         this.qgisTrainingManualLink = this.page.getByRole("link", {
             name: "QGIS Training manual",
         });
         this.introductionInGISLink = this.page.getByRole("link", {
-            name: "Introduction in GIS",
+            name: "Gentle Intro to GIS",
         });
         this.documentationGuidelinesLink = this.page.getByRole("link", {
             name: "Documentation Guidelines",
