@@ -4,6 +4,8 @@ title: "QGIS User Meetings"
 draft: false
 HasBanner: false
 sidebar: true
+Reviewed: 4 June 2024
+Reviewer: Tim Sutton
 ---
 
 {{< content-start >}}
@@ -13,32 +15,13 @@ sidebar: true
 {{< rich-box-start icon="💁" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Do you want to organize a new meeting?
-The organization of events happens on the [QGIS wiki](https://github.com/qgis/QGIS/wiki#qgis-hackfests).
+We organize events on the [QGIS wiki](https://github.com/qgis/QGIS/wiki#qgis-hackfests).
+
+**Annual User Conference:** We hold an annual user conference with talks and presentations covering a broad range of topics that are presented by users, showcasing how they use QGIS to solve their day to day analysis needs.
+
+**QGIS Open Day:** On the last Friday of every month we hold an informal virtual meeting to engage with the awesome QGIS community. The agenda is dependent on the community and encourages a culture of collaboration and self-organisation - you can add topics that interest you on the event page, or get in touch with the event organisers if you are interested in facilitating a session.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-**7th german-speaking QGIS User Meeting in Kassel 2013**
-
-On 20th September 2013 the 7th german-speaking QGIS user meeting took place in Kassel. The event was organized by Otto Dassau (QGIS project) and Dr. Claas Leiner (Serviceportal GIS und Geodaten am FB 06 der Uni Kassel) and supported by the german FOSSGIS Association. This time, 80 users, developers and other interested participants joint the meeting to discuss about QGIS. Besides practical reports and individual experiences, workshops were at the center of the event.
-
-**2nd Australian QGIS User Meeting in Melbourne 2013**
-
-**Zurich 2013**
-
-**1st Australian QGIS User Meeting in Perth 2013**
-
-**Lisboa 2012**
-
-**5th german-speaking QGIS User Meeting in Kassel 2012**
-
-**4th german-speaking QGIS User Meeting in Bern 2012**
-
-**3rd german-speaking QGIS User Meeting in Kassel 2011**
-
-**2nd german-speaking QGIS User Meeting in Rapperswil 2011**
-
-**1st german-speaking QGIS User Meeting in Bern 2010**
-
-**1st QGIS Bughunting in Moscow 2009**
 
 {{< content-end >}}
