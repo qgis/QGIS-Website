@@ -4,12 +4,14 @@ title: "Meetings"
 draft: false
 HasBanner: false
 sidebar: true
+Reviewed: 4 June 2024
+Reviewer: Tim Sutton
 ---
 
 {{< content-start >}}
 
 # Meetings
-Since 2009 the QGIS community organizes developer and user meetings around the world.
+Since 2009 the QGIS community has been organizing developer and user meetings around the world.
 
 {{< columns-start >}}
 {{< column-start>}}
