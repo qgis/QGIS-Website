@@ -56,11 +56,11 @@ test.describe("Community pages", () => {
         await expect(communityPage.currencyInput).toBeVisible();
     });
 
-    test("Become a certified member", async ({ sidebar, communityPage }) => {
+    test("Become a certified trainer", async ({ sidebar, communityPage }) => {
         await expect(sidebar.becomeCertifiedMemberLink).toBeVisible();
         await sidebar.becomeCertifiedMemberLink.click();
         let becomeCertifiedTexts = communityPage.textList.find(
-            (item) => item.page == "Become a certified member",
+            (item) => item.page == "Become a certified trainer",
         )?.texts;
 
         if (becomeCertifiedTexts) {

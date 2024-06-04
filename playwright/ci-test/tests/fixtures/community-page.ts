@@ -49,17 +49,17 @@ export class CommunityPage {
             ],
         },
         {
-            page: "Become a certified member",
+            page: "Become a certified trainer",
             texts: [
-                "Become a certified member ¶ The QGIS Certificate Program is designed to promote",
+                "Become a certified trainer ¶ The QGIS Certificate Program is designed to promote",
                 "The QGIS Certificate Program",
                 "Development/commits to QGIS Contributions to the QGIS documentation and",
                 "To contact the certification",
                 "You are required to provide",
                 "Following an initial review,",
                 "The PSC will make the final",
-                "If approved you are required",
-                "You can apply through this",
+                "If approved, you are required",
+                "You can apply using this",
             ],
         },
         {
