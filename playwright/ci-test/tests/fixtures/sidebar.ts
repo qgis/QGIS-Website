@@ -53,7 +53,7 @@ export class Sidebar {
             name: "Get involved",
         });
         this.becomeCertifiedMemberLink = this.sidebar.getByRole("link", {
-            name: "Become a certified trainer",
+            name: "Certification Programme",
         });
         this.qgisFoundationLink = this.sidebar.getByRole("link", {
             name: "QGIS Foundation",

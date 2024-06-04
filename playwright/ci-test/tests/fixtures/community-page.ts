@@ -58,8 +58,8 @@ export class CommunityPage {
                 "You are required to provide",
                 "Following an initial review,",
                 "The PSC will make the final",
-                "If approved you are required",
-                "You can apply through this",
+                "If approved, you are required",
+                "You can apply using this",
             ],
         },
         {

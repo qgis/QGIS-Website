@@ -65,9 +65,9 @@ export class Footer {
             name: "Get involved",
         });
         this.becomeCertifiedMemberLink = this.page.getByRole("link", {
-            name: "Become a certified trainer",
+            name: "Certification Programme",
             exact: true,
-        });
+        }).first();
         this.qgisFoundationLink = this.banner.getByRole("link", {
             name: "QGIS Foundation",
         });
