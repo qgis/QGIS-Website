@@ -4,13 +4,15 @@ title: "Reports"
 subtitle: ""
 draft: false
 sidebar: true
+Reviewed: 5 June 2024
+Reviewer: Tim Sutton
 ---
 
 {{< content-start  >}}
 
 # Daily Reports
 
-Some reports are generated on a daily basis to monitor the status of QGIS Server.
+We generate reports on a daily basis to monitor the status of QGIS Server.
 
 ## OGC Certification
 
@@ -18,7 +20,7 @@ QGIS Server 3.28 is currently certified for WMS 1.3.0 (see [OGC Reference Implem
 
 ![](qgis_server_wms_ogc_badge.png)
 
-In order to keep an eye on regressions, OGC tests are run on a daily basis on the **master** branch. Corresponding reports are generated for several OGC testsuites:
+In order to detect regressions, OGC tests are run daily basis **master** branch. Reports are generated for several OGC testsuites:
 
 - WMS 1.3.0 : http://test.qgis.org/ogc_cite/wms_130/
 
@@ -31,19 +33,19 @@ Latest reports are [WMS 1.3.0](http://test.qgis.org/ogc_cite/wms_130/latest/repo
 
 ## Performance
 
-At the moment, two tools are living together to test and generate performance reports.
+At the moment, two tools are available to test and generate performance reports.
 
-The first one is [MS-Perfs](https://github.com/camptocamp/ms_perfs) which allows to compare QGIS Server with other map servers (like GeoServer or MapServer). Reports are generated weekly and available [here](http://test.qgis.org/perf_test/ms_perf/).
+The first one is [MS-Perfs](https://github.com/camptocamp/ms_perfs) which supports comparison of QGIS Server with other map servers (like GeoServer or MapServer). Reports are generated weekly and available [here](http://test.qgis.org/perf_test/ms_perf/).
 
-The second one is [Graffiti](https://github.com/pblottiere/graffiti), allowing to generate a performance report between several versions of QGIS Server and/or specific project options (parallel rendering effect, trust option, and so on). Reports are also generated daily and available [in](http://test.qgis.org/perf_test/graffiti/). Note that [QGIS-Server-PerfSuite](https://github.com/Oslandia/QGIS-Server-PerfSuite) project is the deployment infrastructure to run Graffiti in continuous integration.
+The second one is [Graffiti](https://github.com/pblottiere/graffiti), which supports comparing versions of QGIS Server and/or specific project options (parallel rendering, trust option, and so on). Reports are also generated daily, and are available [at](http://test.qgis.org/perf_test/graffiti/). Note that [QGIS-Server-PerfSuite](https://github.com/Oslandia/QGIS-Server-PerfSuite) provides the deployment infrastructure to run Graffiti in continuous integration.
 
 ## Security
 
-A global overview of our security can be found using [OpenSSF Scorecard report tool](https://securityscorecards.dev/viewer/?uri=github.com/qgis/QGIS).  
+A global overview of our security can be found using the [OpenSSF Scorecard report tool](https://securityscorecards.dev/viewer/?uri=github.com/qgis/QGIS).  
 
-This gives a rought overview of the best practices used in QGIS project. Some practices are however not applicable to a desktop GUI, like Fuzz testing, or Pinned Dependencies.
+This gives a quick overview of the best practices used in QGIS project. Some practices are however not applicable to a desktop GUI, like Fuzz testing, or Pinned Dependencies.
 
-Security is a permanent process, see more on this topic on [our dedicated page](/resources/support/security/).
+Security is a permanent process, more details about our security approach are available on [our dedicated page](/resources/support/security/).
 
 
 {{< content-end >}}
