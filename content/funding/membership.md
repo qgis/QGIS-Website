@@ -1,27 +1,42 @@
 ---
 type: "page"
-title: "Sustaining Membership program"
-subtitle: "Join our mission to enhance and promote QGIS as an essential tool for the global GIS community"
+title: "Sustaining membership program"
+subtitle: "Support the development of QGIS, an essential tool for the global GIS community."
 draft: false
 HasBanner: true
 sidebar: true
 HeroImage: "img/involve.jpg"
-ButtonText: "Become a Sustaining Member" 
+ButtonText: "Become a sustaining member" 
 ButtonLink: "funding/membership#how-become-a-sustaining-member"
+Reviewed: 1 June 2024
+Reviewer: Tim Sutton
 ---
 
 {{< content-start >}}
 
-# Sustaining Membership program
+# Sustaining membership program
 
-QGIS is an entirely Open Source project. QGIS development is carried out largely by a group of volunteers, that in time have built up a large, valuable and useful code base, free to use and improve for everybody. 
+QGIS is an Open Source project. QGIS development, its documentation, web sites and infrastructure are largely carried out by volunteers. Since the project's inception in 2002, we have built up a large, valuable and useful code base, free for everybody to use and improve. 
 
-As a result, you have free access to the source code and binaries that we provide on our web site. As a result of this volunteer approach, a number of tasks, less interesting or important for the developers, are sometimes left behind. In addition, promoting QGIS requires our participation at congresses and conferences and the production of information material, sometimes very expensive for volunteer developers.
+We provide free access to the QGIS source code and binaries on our web site. Despite the huge achievements made via this volunteer approach, further funding is needed to support our work.
+
+## How funds are used
+
+Here are some of the things we use the funds we receive for:
+
+* paying developers to fix bugs
+* our annual grant programme that pays for substantial improvements to the QGIS project
+* hosting fees for our server infrastructure
+* improvements to upstream libraries that QGIS depends on, 
+* a full time web infrastructure maintainer
+* a full time documentation writer
+
+In the future we hope to expand these activities as funding allows.
 
 
-## Sustaining membership
+## Membership levels
 
-At or above the following levels a sustaining member will be designated as being one of the following category, based on their size and assigned through self declaration:
+
 {{< columns-start >}}
 {{< column-start>}}
 
@@ -65,16 +80,17 @@ Small Member (e.g. for smaller cities or companies up to 10 employees)
 {{< column-end >}}
 {{< columns-end >}}
 
-Sustaining memberships last one year, after which they may be continued with a new payment, or allowed to lapse. Sustaining members have no voting rights (unless they are simultaneously voting members in which case their voting rights are unaffected).
+Sustaining memberships last one year, after which they may be continued with a new payment, or allowed to lapse. Sustaining memberships do not include voting rights. Existing voting voting rights remain unaffected.
 
-Membership fees are approved or changed by the QGIS general assembly. They are defined as minimum fees per category, but may be increased if the sustaining member chooses to do so.
+Membership fees are approved or changed by the QGIS general assembly. They are defined as minimum fees per category, but the sustaining member may pay more than the lower limit if they wish to.
 
-Because QGIS.ORG is a world-wide project and different companies, NGOs or governmental organizations have different financial prospects, we do not enforce any membership levels - the organizations pick their own membership level based on self-assessment.
+Because QGIS.ORG is a global project and different companies, NGOs or governmental organizations have different financial means, we do not mandate membership levels. Sustaining members self select whichever level they are able to afford.
 
 Acceptance of sustaining members shall be subject to the discretion and approval of The Board, who reserve the right to accept or reject applications for sustaining membership and ongoing support memberships as deemed appropriate.
 
 
-## Your benefits
+## Sustaining membership benefits
+
 Supporting the QGIS project as a sustaining member provides the following benefits:
 
 
@@ -84,7 +100,7 @@ Supporting the QGIS project as a sustaining member provides the following benefi
 {{< rich-box-start >}}
 {{< rich-content-start themeClass="coloring-4 rich-content-text"  >}}
 #### Public Acknowledgment
-All sustaining members and donors will be listed on the project [Members page]({{< ref "/funding/membership.md" >}}), ordered by membership category with a link back to the sustaining members organization or company website and the logo in a size reflecting their membership category.
+All sustaining members and donors will be listed on the project [Members page]({{< ref "/funding/membership.md" >}}), ordered by membership category with a link back to the sustaining member's organization or company website and their logo sized according to their membership category.
     
 {{< rich-content-end >}}
 {{< rich-box-end >}}
@@ -98,7 +114,7 @@ All sustaining members and donors will be listed on the project [Members page]({
 {{< rich-content-start themeClass="coloring-4 rich-content-text">}}
 #### Enhanced Software Quality
 
-Your contribution aids in resolving bugs and issues promptly, resulting in a smoother user experience.
+Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
@@ -124,7 +140,7 @@ Flagship, large and medium sustaining members will have their logo on the QGIS h
 {{< rich-content-start themeClass="coloring-4">}}
 #### Featured in Software Updates
 
-Your support is highlighted in the visual changelogs of QGIS software releases, showcasing your ongoing commitment.
+Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
@@ -133,7 +149,7 @@ Your support is highlighted in the visual changelogs of QGIS software releases, 
 {{< rich-box-start >}}
 {{< rich-content-start themeClass="coloring-4" >}}
 #### Public Acknowledgment
-Use a special version of the QGIS logo on your website and materials, signaling your support for the project.
+You may use a special version of the QGIS logo on your website and materials, signaling your support for the project.
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
@@ -143,9 +159,9 @@ Use a special version of the QGIS logo on your website and materials, signaling 
 
 {{< rich-box-start >}}
 {{< rich-content-start themeClass="coloring-4" >}}
-#### Enhanced Brand Exposure
+#### Keep QGIS Ad Free
 
-Enjoy an ad-free experience in QGIS, focusing on your work without interruptions.
+Sustaining memberships help to ensure we do not need to employ 'user hostile' tactics, such as advertising, to fund the project.
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
@@ -153,10 +169,10 @@ Enjoy an ad-free experience in QGIS, focusing on your work without interruptions
 {{< columns-end >}}
 
 
-Decisions on spending of funds will be made by the QGIS Project Steering Committee, proposed in a budget that will be approved or declined by the QGIS.ORG general assembly.
+The decision on how funds are spent will be made by the QGIS Project Steering Committee, proposed in a budget that will be approved or declined by the QGIS.ORG general assembly.
 
 
-## How become a Sustaining Member
+## How become a sustaining member
   
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column is-one-quarter">}}
@@ -165,9 +181,10 @@ Decisions on spending of funds will be made by the QGIS Project Steering Committ
 
 {{< column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters ">}}
 
-Reach out to the treasurer at finance@qgis.org or another designated person within the Project Steering Committee (PSC) to express interest in becoming a sustaining member.
+You can self-enroll, or reach out to the treasurer at finance@qgis.org or any other Project Steering Committee (PSC) member to express your interest in becoming a sustaining member.
 
-{{< button class = "is-primary6" link = "mailto:finance@qgis.org" text = "Write to trearurer" >}} 
+{{< button class = "is-primary6" link = "mailto:finance@qgis.org" text = "Write to treasurer" >}} 
+{{< button class = "is-primary6" link = "https://changelog.qgis.org/en/accounts/login/?next=/en/qgis/sustaining-member/add/" text = "Self Enroll" >}} 
 {{< column-end >}}
 {{< columns-end >}}
 
@@ -202,7 +219,7 @@ The treasurer verifies the receipt of the payment to officially recognize the or
 
 {{< column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters ">}}
 
-Membership details are managed and displayed on the Projecta website, where sustaining members are categorized by level and sorted by the date of introduction or renewal.
+We provide a website where sustaining members are listed, categorized by level and sorted by the date of introduction or renewal etc.
 
 [Open Sustaining Members changelog](https://changelog.qgis.org/en/qgis/members/list/)
 
@@ -239,8 +256,8 @@ Past sustaining members are listed separately for a period of two years to ackno
 
 {{< rich-box-start icon="💡" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
-##### You can also make one-time payement
-Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help to reach important project goals!
+##### One-time payments
+Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals!
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
@@ -248,7 +265,7 @@ Donations can be of any amount, via direct transfers to our bank account (SEPA p
 {{< rich-box-start icon="💁" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### About ‘earmarked’ funding
-We regret that we cannot accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating to our bug fixing initiative.
+We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
