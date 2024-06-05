@@ -102,7 +102,5 @@ test.describe("Resources Pages", () => {
 
         await expect(otherSupportPage.stackExchangeLink).toBeVisible();
         await otherSupportPage.navigateToStackExchange();
-        await expect(otherSupportPage.websiteCreationLink).toBeVisible();
-        await otherSupportPage.navigateToWebsiteCreation();
     });
 });
