@@ -49,17 +49,17 @@ export class CommunityPage {
             ],
         },
         {
-            page: "Become a certified member",
+            page: "Become a certified trainer",
             texts: [
-                "Become a certified member ¶ The QGIS Certificate Program is designed to promote",
+                "Become a certified trainer ¶ The QGIS Certificate Program is designed to promote",
                 "The QGIS Certificate Program",
                 "Development/commits to QGIS Contributions to the QGIS documentation and",
                 "To contact the certification",
                 "You are required to provide",
                 "Following an initial review,",
                 "The PSC will make the final",
-                "If approved you are required",
-                "You can apply through this",
+                "If approved, you are required",
+                "You can apply using this",
             ],
         },
         {
@@ -105,14 +105,6 @@ export class CommunityPage {
             page: "Contributor Credits",
             texts: [
                 "Contributor Credits ¶ Individuals, institutions and firms who contributed code",
-            ],
-        },
-        {
-            page: "Committee Resolutions",
-            texts: [
-                "Committee Resolutions Committee Resolution 2019 In 2019, the Project Steering",
-                "Committee Resolution 2019 In",
-                "Committee Resolution 2020 In",
             ],
         },
         {
@@ -175,9 +167,6 @@ export class CommunityPage {
         });
         this.contributorCreditsLink = this.page.getByRole("link", {
             name: "Contributor Credits",
-        });
-        this.committeeResolutionsLink = this.page.getByRole("link", {
-            name: "Committee Resolutions",
         });
         this.meetingsLink = this.page.getByRole("link", {
             name: "Meetings",
