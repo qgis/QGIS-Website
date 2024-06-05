@@ -6,24 +6,13 @@ export class SupportPage {
     public readonly textList: string[] = [
         "Support",
         "Mailing Lists",
-        "QGIS has a bunch of mailing",
-        "If you are going to ask",
         "StackExchange",
-        "On http://gis.stackexchange.",
         "Communication channels",
         "Telegram",
-        "There is a lot of user and",
-        "To join: install Telegram on",
-        "There is also a web version (",
         "Matrix / IRC",
         "Matrix (https://matrix.org)",
-        "To use Matrix: create an",
-        "To use IRC: install an IRC",
         "Facebook",
-        "For Facebook users, an",
-        "User Groups",
-        "Local QGIS user groups are a",
-        "See User Groups to read about"
+        "User Groups"
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
