@@ -39,6 +39,11 @@ The second one is [Graffiti](https://github.com/pblottiere/graffiti), allowing t
 
 ## Security
 
-// text will appear soon
+A global overview of our security can be found using [OpenSSF Scorecard report tool](https://securityscorecards.dev/viewer/?uri=github.com/qgis/QGIS).  
+
+This gives a rought overview of the best practices used in QGIS project. Some practices are however not applicable to a desktop GUI, like Fuzz testing, or Pinned Dependencies.
+
+Security is a permanent process, see more on this topic on [our dedicated page](/resources/support/security/).
+
 
 {{< content-end >}}
