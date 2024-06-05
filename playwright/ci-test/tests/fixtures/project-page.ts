@@ -22,39 +22,36 @@ export class ProjectPage {
         "Giving the power of spatial",
         "Available on Windows, Mac,",
         "Key features ¶ Create map",
-        "Create map",
+        "Create maps",
         "Edit layers",
         "Process and analyze",
         "Share maps",
-        "Class-leading cartography ¶ Experience QGIS’ extensive set of design options to",
-        "Enhance the functionality of",
-        "Connect with professionals,",
-        "Join a community of like-",
-        "QGIS Server ¶ Publish your",
-        "QGIS Desktop ¶ Create, edit,",
-        "QGIS Web Client ¶ Publish",
-        "QGIS on mobiles and tablets ¶ The QGIS experience does not stop on the desktop",
-        "Case Studies ¶ We gather",
-        "Maps showcase ¶ QGIS users",
-        "Application screenshots ¶ Below are some screenshots from QGIS itself and a",
+        "Class-leading cartography",
+        "QGIS Server",
+        "QGIS Desktop",
+        "QGIS Web Client",
+        "QGIS on mobiles and tablets",
+        "Case Studies",
+        "Maps showcase",
+        "Application screenshots",
     ];
 
     public readonly mapsTextList: string[] = [
-        "QGIS Maps ¶ Amazing maps",
+        "QGIS Maps",
         "Amazing maps created using",
     ];
 
     public readonly screenshotsTextList: string[] = [
-        "QGIS Screenshots ¶ Screenshots of QGIS in action",
+        "QGIS Screenshots",
         "Screenshots of QGIS in action",
     ];
 
     public readonly caseStudiesTextList: string[] = [
-        "Case Studies ¶ Amurum forest",
+        "Case Studies",
     ];
 
     public readonly visualChangelogsTextList: string[] = [
-        "Visual Changelogs ¶ Below you",
+        "Visual Changelogs",
     ];
 
     constructor(public readonly page: Page) {

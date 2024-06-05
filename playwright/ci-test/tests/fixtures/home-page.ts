@@ -42,7 +42,7 @@ export class HomePage {
         "Powerful reporting tools",
         "Create atlases and reports including maps and tabular content.",
         "Harness the unmatched",
-        "Exceptional Digitizing Proficiency",
+        "Exceptional digitizing proficiency",
         "Craft and edit points, lines",
         "Advanced construction tools",
         "Build geometries with curves",
@@ -59,15 +59,10 @@ export class HomePage {
         "Industry-leading format",
         "Conquer data integration",
         "Standards and interoperability",
-        "Amplify your impact by",
         "Publish your work",
-        "Extend QGIS to the cloud and",
         "Our community development",
         "Join our annual international",
-        "Find local user groups and",
-        "Learn how people around the",
         "QGIS is a public project",
-        "For that reason QGIS is Free",
         "Quick-start tutorials",
         "Live demos",
         "Up-to-date documentation",
@@ -102,7 +97,7 @@ export class HomePage {
             name: "Explore QGIS",
         });
         this.powerOfOpenSourceHeading = this.page.getByRole("heading", {
-            name: "👋 The power of open source",
+            name: "👋 The power of an open source community",
         });
         this.getInvolvedLink = this.page
             .getByRole("link", { name: "Get involved" })
@@ -120,7 +115,7 @@ export class HomePage {
             name: "Start using QGIS 🚀",
         });
         this.goToMaterialsLink = this.page.getByRole("link", {
-            name: "Go to materials",
+            name: "View documentation",
         });
         this.qgisSupportersHeading = this.page.getByRole("heading", {
             name: "QGIS supporters",

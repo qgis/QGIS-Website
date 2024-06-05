@@ -11,26 +11,28 @@ ButtonLink: "download/"
 SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and open source"
 og_image: "img/project.jpg"
+Reviewed: 1 June 2024
+Reviewer: Tim Sutton
 ---
 {{< content-start  >}}
 ## Key features 
 
-{{< tabs tab1="Create map" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
+{{< tabs tab1="Create maps" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
 
 {{< columns-start id="content-tab-1" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
-![Create map](../img/create.gif "Create map")
+![Create map](../img/create.gif "Create maps")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
 ###### Class-leading cartography
-Experience QGIS' extensive set of design options to bring your cartographic ideas to life
+Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
 
 ###### Professional map production
-Use the intuitive layout design to produce high-quality, large-format print maps
+Use the intuitive layout design tool to produce high-quality, large-format print maps.
 
 ###### Powerful reporting tools
-Create atlases and reports with maps, media and tabular content
+Create atlases and reports with maps, media and tabular content.
 {{< column-end >}}
 {{< columns-end >}}
 
@@ -41,31 +43,31 @@ Create atlases and reports with maps, media and tabular content
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
 ###### Exceptional digitizing proficiency
-Craft and edit points, lines, polygons, and meshes with precision
+Create and edit points, lines, polygons, and meshes with precision.
 
 ###### Advanced construction tools
-Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations
+Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations.
 
 ###### Highly customizable forms
-Create user-friendly forms using our form designer
+Create user-friendly forms using our form designer.
 
 {{< column-end >}}
 {{< columns-end >}}
 
 {{< columns-start id="content-tab-3" >}}
 {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
-![visuzlize map](../img/visuzlize.gif "visuzlize map")
+![visualize map](../img/visualize.gif "visualize map")
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
 ###### Comprehensive analysis toolset
-Uncover insights from your data with our comprehensive array of XXX analysis tools
+Uncover insights from your data with our comprehensive array of hundreds of analysis tools.
 
 ###### Automated analysis workflows
-Visually combine analysis tools to create reproducible workflows easily
+Visually combine analysis tools to create reproducible workflows easily.
 
 ###### Extensible analysis environment
-Explore a diverse ecosystem of third-party analysis tools for expanded capabilities
+Explore our diverse plugin ecosystem of third-party analysis tools for expanded capabilities.
 
 {{< column-end >}}
 {{< columns-end >}}
@@ -77,13 +79,13 @@ Explore a diverse ecosystem of third-party analysis tools for expanded capabilit
 
 {{< column-start class="is-flex-direction-column  is-justify-content-center is-one-third">}}
 ###### Industry-leading format support
-Conquer data integration challenges with support for various data sources and formats
+Conquer data integration challenges with support for a multitude of data sources and formats.
 
 ###### Standards and interoperability
-Amplify your impact by exploring, utilizing, and creating web services based on industry standards
+Amplify your impact by exploring, utilizing, and creating web services based on industry standards.
 
 ###### Publish your work
-Extend QGIS to the cloud and mobile devices for wider accessibility
+Extend QGIS to the cloud and mobile devices for wider accessibility.
 
 {{< column-end >}}
 {{< columns-end >}}
@@ -97,7 +99,7 @@ Extend QGIS to the cloud and mobile devices for wider accessibility
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### 2000+ plugins developed by community
-Enhance the functionality of QGIS application with free additional features.
+Enhance the functionality of QGIS application with thousands of free additional features.
 
 [Go to plugins](https://plugins.qgis.org/)
 {{< column-end >}}
@@ -108,8 +110,8 @@ Enhance the functionality of QGIS application with free additional features.
 ![International conference](../img/meetings.jpg "International conference")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
-### Annual international conference to explore the future of QGIS
-Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing.
+### Annual international conference
+Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing at our annual international user conference.
 
 [Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}})
 {{< column-end >}}
@@ -117,7 +119,7 @@ Connect with professionals, enthusiasts, and QGIS users for networking and knowl
 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column rounded  mb-4" >}}
-![Local user groups](../img/groupss.jpg "Local user groups")
+![Local user groups](../img/groups.jpg "Local user groups")
 {{< column-end >}}
 {{< column-start class="is-flex-direction-column  is-justify-content-center ">}}
 ### Local user groups and support providers
@@ -138,7 +140,7 @@ Join a community of like-minded individuals in your region.
 {{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Server
 
-Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layoutClasss and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
+Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layouts and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
@@ -165,7 +167,7 @@ Create, edit, visualise, analyse and publish geospatial information.
 
 Publish your QGIS projects on the web with ease. 
 
-Benefit from the powerful symbology, labeling and blending features to impress with your maps.
+Benefit from the powerful symbology, labeling and blending features to impress the world with your maps.
 
 [QGIS Web Client 2](https://github.com/qgis/qwc2)
 
@@ -178,11 +180,12 @@ Benefit from the powerful symbology, labeling and blending features to impress w
 {{< rich-content-start themeClass="coloring-6" >}}
 ### QGIS on mobiles and tablets
 
-The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS into the field
+The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS out of the office.
 
-*   [QField]({{< ref "download.md" >}})
-*   [Mergin Maps Input app]({{< ref "download.md" >}})
-*   [IntraMaps Roam]({{< ref "download.md" >}})
+* [QField]({{< ref "download.md" >}})
+* [Mergin Maps Input app]({{< ref "download.md" >}})
+* [IntraMaps Roam]({{< ref "download.md" >}})
+
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
@@ -193,7 +196,7 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 {{< rich-content-start themeClass="coloring-1" >}}
 ### Case Studies
 
-We gather inspiring stories from actual users that showcase the versatility and power of the QGIS solution
+We gather inspiring stories from our users that showcase the versatility and power of the QGIS project.
 
 [Find out more]({{< ref "project/case-studies.md" >}})
 {{< rich-content-end >}}
@@ -208,7 +211,7 @@ We gather inspiring stories from actual users that showcase the versatility and 
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column is-one-third mb-6">}}
 ## Maps showcase
-QGIS users demonstrate their creativity, showcasing the app's powerful map creation capabilities.
+Demonstrations of our user's creativity, showcasing the powerful map creation capabilities of QGIS.
 
 [Go to maps showcase]({{< ref "project/overview/maps.md" >}})
 
@@ -223,7 +226,7 @@ QGIS users demonstrate their creativity, showcasing the app's powerful map creat
 {{< columns-start >}}
 {{< column-start class="is-flex-direction-column is-one-third">}}
 ## Application screenshots
-Below are some screenshots from QGIS itself and a selection of Maps which are created with QGIS.
+Below are some screenshots from QGIS itself and a selection of maps which were created with QGIS.
 
 [Go to screenshots]({{< ref "project/overview/screenshots.md" >}})
 {{< column-end >}}
