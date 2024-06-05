@@ -48,11 +48,6 @@ Local QGIS user groups are a great place to meet other users.
 
 See [User Groups]({{< ref "community/groups" >}}) to read about it.
 
-## Website
-
-The website should be used to publish any material in relation to the information and management of the user group. Examples include the user meetings, case study, shared material, discussion boards, etc. Public material should be available without login requirements (e.g. do not require interested people to be a member of a social media network like Facebook or Google+). Usage of social media is recommended but should not be the only channel of information. RSS feeds should be made available at the Website of the QGIS user group.
-
-Good luck with the organization of your local user group. Please inform the international QGIS team by registering at the QGIS community list and reporting about your progress. Please do not hesitate to ask questions regarding the establishment and maintenance of your local user group.
 
 ## Security Vulnerability Reporting
 
