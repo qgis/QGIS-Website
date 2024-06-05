@@ -54,9 +54,6 @@ export class OtherSupportPage {
         this.stackExchangeLink = this.page.getByRole("link", {
             name: "StackExchange",
         });
-        this.websiteCreationLink = this.page.getByRole("link", {
-            name: "Website Creation",
-        });
     }
 
     async navigateToCommunicationChannels() {

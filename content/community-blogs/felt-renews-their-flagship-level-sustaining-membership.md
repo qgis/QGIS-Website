@@ -20,13 +20,9 @@ showcase: "planet"
 
 
 
-<p>Felt is the first user-friendly, collaboration tool for making and sharing the maps that drive your business. Felt makes it easy to visualize your data and communicate across teams quickly. Learn more at <a href="https://felt.com/">felt.com</a>.</p>
-
-
-
 <figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
 <div class="jetpack-video-wrapper"></div>
-</div></figure>
+</div><figcaption class="wp-element-caption"><em>Felt is the first user-friendly, collaboration tool for making and sharing the maps that drive your business. Felt makes it easy to visualize your data and communicate across teams quickly. Learn more at <a href="https://felt.com/">felt.com</a>.</em></figcaption></figure>
 
 
 

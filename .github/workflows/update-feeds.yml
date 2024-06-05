@@ -36,6 +36,12 @@ jobs:
         pipenv run pip freeze
         pipenv run ./fetch_feeds.py
 
+    - name: '📅 Update roadmap'
+      run: |
+        cd ./qgis-hugo
+        pipenv run pip freeze
+        pipenv run python ./scripts/update-schedule.py
+
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
       with:

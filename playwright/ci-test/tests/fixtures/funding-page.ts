@@ -28,30 +28,22 @@ export class FundingPage {
         {
             page: "Membership",
             texts: [
-                "Sustaining Membership program ¶ QGIS is an entirely Open Source project. QGIS",
-                "QGIS is an entirely Open",
-                "As a result, you have free",
-                "€ 27,000+ ¶ Flagship Member (",
-                "€ 9,000+ ¶ Large Member (e.g",
-                "€ 3,000+ ¶ Medium Member (e.g",
-                "€ 500+ ¶ Small Member (e.g.",
-                "Public Acknowledgment ¶ All",
-                "Enhanced Software Quality ¶ Your contribution aids in resolving bugs and issues",
-                "Enhanced Brand Exposure ¶ Flagship, large and medium sustaining members will",
-                "Featured in Software Updates ¶ Your support is highlighted in the visual",
-                "Public Acknowledgment ¶ Use a",
-                "Enhanced Brand Exposure ¶ Enjoy an ad-free experience in QGIS, focusing on your",
-                "Reach out to the treasurer at",
-                "The treasurer will gather",
-                "The treasurer verifies the",
-                "Membership details are",
-                "Recognition: Sustaining",
-                "Visibility: Members are",
-                "Promotion: When appropriate,",
-                "Past sustaining members are",
-                "You can also make one-time payement ¶ Donations can be of any amount, via",
-                "About ‘earmarked’ funding ¶ We regret that we cannot accept ‘earmarked’ funding",
-                "Warning ¶ Acceptance of",
+                "Sustaining membership program",
+                "€ 27,000+ ¶ Flagship Member",
+                "€ 9,000+ ¶ Large Member",
+                "€ 3,000+ ¶ Medium Member",
+                "€ 500+ ¶ Small Member",
+                "Public Acknowledgment ",
+                "Enhanced Software Quality",
+                "Keep QGIS Ad Free",
+                "Featured in Software Updates",
+                "Public Acknowledgment",
+                "Recognition:",
+                "Visibility:",
+                "Promotion:",
+                "One-time payments",
+                "About ‘earmarked’ funding",
+                "Warning",
             ],
         },
     ];
@@ -67,18 +59,18 @@ export class FundingPage {
             .locator("div")
             .filter({
                 hasText:
-                    "Sustaining Membership program Join our mission to enhance and promote QGIS as",
+                    "Sustaining membership program Support the development of QGIS, an essential tool for the global GIS community.",
             })
             .nth(1);
         this.sustainingMembershipSection = this.page
             .locator("section")
             .filter({
                 hasText:
-                    "Sustaining Membership program Join our mission to enhance and promote QGIS as",
+                    "Sustaining membership program Support the development of QGIS, an essential tool for the global GIS community.",
             })
             .getByRole("link");
         this.writeTrearurerLink = this.page.getByRole("link", {
-            name: "Write to trearurer",
+            name: "Write to treasurer",
         });
         this.openSustainingMembersLink = this.page.getByRole("link", {
             name: "Open Sustaining Members",
