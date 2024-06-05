@@ -208,9 +208,11 @@ test.describe("Resources pages", () => {
         for (const text of releasesPage.textList) {
             await expect(releasesPage.pageBody).toContainText(text);
         }
-        await expect(releasesPage.listOfReleasesLink).toBeVisible();
-        await expect(releasesPage.testsLink).toBeVisible();
-        await releasesPage.testsLink.click();
+        await expect(releasesPage.releaseHeading).toBeVisible();
+        await expect(releasesPage.downloadLink).toBeVisible();
+        await expect(releasesPage.macOsReleaseLink).toBeVisible();
+        await expect(releasesPage.osgeoDownloadLink).toBeVisible();
+        await expect(releasesPage.pluginsLink).toBeVisible();
     });
 
     test("Roadmap", async ({ sidebar, roadmapPage }) => {

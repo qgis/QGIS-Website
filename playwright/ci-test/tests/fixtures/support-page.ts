@@ -23,10 +23,7 @@ export class SupportPage {
         "For Facebook users, an",
         "User Groups",
         "Local QGIS user groups are a",
-        "See User Groups to read about",
-        "Website",
-        "The website should be used to",
-        "Good luck with the",
+        "See User Groups to read about"
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
@@ -66,9 +63,6 @@ export class OtherSupportPage {
         this.coreContributorsSection = this.page.locator("#core-contributors");
         this.stackExchangeLink = this.page.getByRole("link", {
             name: "StackExchange",
-        });
-        this.websiteCreationLink = this.page.getByRole("link", {
-            name: "Website Creation",
         });
     }
 

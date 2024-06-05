@@ -29,7 +29,7 @@ order = 1
 {{< feature
 title = "Edit layers"
 text = "Harness the unmatched capabilities of powerful digitizing and construction tools."
-col-title-1 = "Exceptional Digitizing Proficiency"
+col-title-1 = "Exceptional digitizing proficiency"
 col-text-1 = "Craft and edit points, lines, polygons, and meshes with precision."
 col-title-2 = "Advanced construction tools"
 col-text-2 = "Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations."

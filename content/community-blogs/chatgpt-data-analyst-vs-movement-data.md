@@ -44,7 +44,7 @@ showcase: "planet"
 
 
 
-<p>It will also show the code use to get to the results: </p>
+<p>It will also show the code used to get to the results:</p>
 
 
 
