@@ -12,8 +12,7 @@ export class SupportPage {
         "Matrix / IRC",
         "Matrix (https://matrix.org)",
         "Facebook",
-        "User Groups",
-        "Website"
+        "User Groups"
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
