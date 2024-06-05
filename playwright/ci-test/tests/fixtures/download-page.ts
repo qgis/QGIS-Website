@@ -12,7 +12,7 @@ export class DownloadPage {
 
     constructor(public readonly page: Page) {
         this.beforeDownloadText = this.page.getByText(
-            "Before download starts ¶ QGIS",
+            "Before download starts",
         );
         this.submitButton = this.page.locator("#submit-button");
         this.otherMethodsLink = this.page.getByRole("link", {
@@ -23,7 +23,7 @@ export class DownloadPage {
             name: "Skip it and go to download",
         });
         this.beforeDownloadHeading = this.page.getByRole("heading", {
-            name: "Download QGIS for your",
+            name: "Download QGIS",
         });
         this.otherPlatformsHeading = this.page.getByRole("heading", {
             name: "Other platforms",
