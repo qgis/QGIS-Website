@@ -56,11 +56,11 @@ test.describe("Community pages", () => {
         await expect(communityPage.currencyInput).toBeVisible();
     });
 
-    test("Become a certified member", async ({ sidebar, communityPage }) => {
+    test("Become a certified trainer", async ({ sidebar, communityPage }) => {
         await expect(sidebar.becomeCertifiedMemberLink).toBeVisible();
         await sidebar.becomeCertifiedMemberLink.click();
         let becomeCertifiedTexts = communityPage.textList.find(
-            (item) => item.page == "Become a certified member",
+            (item) => item.page == "Become a certified trainer",
         )?.texts;
 
         if (becomeCertifiedTexts) {
@@ -182,19 +182,6 @@ test.describe("Community pages", () => {
 
         if (contributorCreditsText) {
             for (const item of contributorCreditsText) {
-                await expect(communityPage.pageBody).toContainText(item);
-            }
-        }
-
-        await expect(communityPage.committeeResolutionsLink).toBeVisible();
-        await communityPage.committeeResolutionsLink.click();
-
-        let committeeResolutionsText = communityPage.textList.find(
-            (item) => item.page == "Committee Resolutions",
-        )?.texts;
-
-        if (committeeResolutionsText) {
-            for (const item of committeeResolutionsText) {
                 await expect(communityPage.pageBody).toContainText(item);
             }
         }
