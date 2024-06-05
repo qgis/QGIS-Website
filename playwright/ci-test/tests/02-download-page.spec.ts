@@ -47,7 +47,7 @@ test("Download page", async ({ homePage, sidebar, downloadPage }) => {
     await expect(sidebar.fundingLink).toBeVisible();
     await expect(sidebar.downloadLink).toBeVisible();
     await expect(sidebar.resourcesLink).toBeVisible();
-    await expect(sidebar.qgisResourcesLink).toBeVisible();
+    await expect(sidebar.documentationLink).toBeVisible();
     await downloadPage.skipDownloadButton.click();
     await expect(downloadPage.beforeDownloadHeading).toBeVisible();
     await downloadPage.otherPlatformsHeading.click();

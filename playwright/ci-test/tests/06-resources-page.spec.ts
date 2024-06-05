@@ -54,7 +54,7 @@ test.describe("Resources pages", () => {
         await qgisResourcesPage.goto();
     });
 
-    test("QGIS resources", async ({ sidebar, qgisResourcesPage }) => {
+    test("Documentation", async ({ sidebar, qgisResourcesPage }) => {
         await expect(sidebar.resourcesLink).toBeVisible();
         await sidebar.resourcesLink.click();
         await expect(qgisResourcesPage.installationGuideLink).toBeVisible();
@@ -194,7 +194,6 @@ test.describe("Resources pages", () => {
         await expect(installationGuidePage.makeInstallQgisLtrPre).toBeVisible();
         await expect(installationGuidePage.pkgAddQgisPre).toBeVisible();
         await expect(installationGuidePage.googlePlayLink).toBeVisible();
-        await expect(sidebar.documentationLink).toBeVisible();
 
         for (const text of installationGuidePage.textList) {
             await expect(installationGuidePage.pageBody).toContainText(text);
