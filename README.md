@@ -95,18 +95,65 @@ Once the site is running, you can open it at:
 
 The site will automatically refresh any page you have open if you edit it and save your work. Magical eh?
 
-## Running End to End (e2e) Tests
+## Running Playwright End to End (e2e) Tests
 
-Test files are located in ```test/e2e```.
-
-You need to have these extras installed:
-
-```
-pip install pytest pytest-base-url playwright
-```
+Test files are located in ```playwright/ci-test/tests```.
 
 These tests exist to make sure code changes to this repository do not break how the site currently functions.
-They are intended to run on each commit to verify the site is working in expected order.
+They are intended to run on each commit to verify the site is working in the expected order.
+
+### Run tests with VSCode
+
+**Requirements:** NodeJS v18+
+
+1. **Install playwright:** If you haven't already installed Playwright, you can do so by running the following commands in `playwright/ci-test` directory.
+
+```bash
+cd playwright/ci-test
+npm install
+```
+
+2. **Install playwright browsers:**
+
+```bash
+npx playwright install --with-deps chromium
+```
+
+3. **Install the extension [Playwright Test for VSCode](https://marketplace.visualstudio.com/items?itemName=ms-playwright.playwright)**: This extension provides a seamless integration of Playwright testing into VSCode.
+
+![Screenshot](./img/vs_code_playwright_extension.png)
+
+4. **Open the Testing Tab:** In VSCode, click on the Testing icon in the Activity Bar on the side of the window. This will open the Testing tab.
+
+5. **Run Playwright Tests from the Testing Tab:**
+- In the Testing tab, you should see your Playwright tests listed. If not, ensure the browser is checked under Playwright > Project menu.
+- Click on the refresh button in the Testing tab to reload the tests.
+- You can run individual tests by clicking the play button next to the test name.
+- You can also run all tests by clicking the play button at the top of the Testing tab.
+
+![Screenshot](./img/vs_code_testing_tab.png)
+
+6. **Debugging Tests:**
+
+- You can debug individual tests by clicking the debug icon (a small bug with a play button) next to the test name.
+- Make sure to set breakpoints in your test files before running the debugger.
+
+### Run tests with CLI
+
+By default, this will run in `headless` mode just as it is in CI.
+
+```bash
+./run-tests.sh
+```
+
+**NOTE:** To run it in `UI` mode, add the `--ui` tag to the script.
+
+```bash
+$PLAYWRIGHT \
+    test \
+    --ui \
+    --project chromium
+```
 
 Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/playwright/ci-test/README.md).
 

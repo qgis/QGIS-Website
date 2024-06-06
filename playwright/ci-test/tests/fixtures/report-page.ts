@@ -11,13 +11,11 @@ export class ReportsPage {
         "OGC Certification",
         "Performance",
         "QGIS Server",
-        "In order to keep an eye on",
+        "Security",
         "WMS",
-        "OGC API Features (aka WFS",
+        "OGC API Features",
         "WFS",
         "Latest reports",
-        "At the moment, two tools are",
-        "The first one is MS-Perfs",
         "The second one is Graffiti,",
     ];
     constructor(public readonly page: Page) {
