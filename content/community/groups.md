@@ -55,9 +55,9 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis.or.ke" icon="🇰🇪" layoutClass="half" listTitle="QGIS Kenya" listSubtitle="Contact: Benard Mitto" >}}
 
-{{< rich-list listLink="https://www.qgis-au.org" icon="🇦🇺" layoutClass="half" listTitle="QGIS Australia - contact: Andrew Jeffrey" listSubtitle="Contact: Andrew Jeffrey](https://www.qgis-au.org)" >}}
+{{< rich-list listLink="https://qgis-australia.org/" icon="🇦🇺" layoutClass="half" listTitle="QGIS Australia" listSubtitle="Contact: Emma Hain" >}}
 
-{{< rich-list listLink="http://qgis.us)" icon="🇺🇸" layoutClass="half" listTitle="QGIS USA - contact: Kurt Menke" listSubtitle="Contact: Kurt Menke](http://qgis.us)" >}}
+{{< rich-list listLink="http://qgis.us" icon="🇺🇸" layoutClass="half" listTitle="QGIS USA" listSubtitle="Contact: Kurt Menke" >}}
 
 {{< rich-list listLink="https://qgis.mx" icon="🇲🇽" layoutClass="half" listTitle="QGIS Mexico" listSubtitle="Contact: Hennessy Amor Becerra Ayala" >}}
 
@@ -84,7 +84,7 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis.nl/" icon="🇳🇱" layoutClass="half" listTitle="QGIS gebruikersgroep (Netherlands)" listSubtitle="Contact: Raymond Nijssen" >}}
 
-{{< rich-list listLink="https://qgis.mx/" icon="🇲🇽" layoutClass="half" listTitle="Asociación QGIS México" listSubtitle="Contact: Hennessy Amor Becerra Ayala" >}}
+{{< rich-list listLink="https://qgis.org.mx/" icon="🇲🇽" layoutClass="half" listTitle="Asociación QGIS México" listSubtitle="Contact: Hennessy Amor Becerra Ayala" >}}
 
 {{< rich-list listLink="https://qgis-id.github.io/" icon="🇮🇩" layoutClass="half" listTitle="Komunitas Pengguna QGIS Indonesia" listSubtitle="Contact: Ismail Sunni" >}}
 
