@@ -648,20 +648,6 @@ pkg_add qgis
 
 See: - https://openbsd.app/?search=qgis # for -stable OpenBSD - https://openbsd.app/?search=qgis&current=on # for -current OpenBSD
 
-# Legacy Android
-
-An old and deprecated, non-touch-optimised release of QGIS for Android can be found on the google play store.
-
-https://play.google.com/store/apps/details?id=org.qgis.qgis
-
-{{< rich-box-start icon="⚠️" layoutClass="tips">}}
-{{< rich-content-start themeClass="coloring-6" >}}
-##### Warning
-
-There is currently no support for Android 5. Best support is given for Android 4.3 and 4.4.x. This is a direct port of the QGIS desktop application. It is only slightly optimized for touch devices and therefore needs to be carefully evaluated for its suitability in day-to-day use. There are other apps available which are designed and optimized specifically for touch devices.
-{{< rich-content-end >}}
-{{< rich-box-end >}}
-
 # QGIS Testing warning
 
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
