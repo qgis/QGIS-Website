@@ -24,7 +24,7 @@ showcase: "planet"
 
 
 
-<p>Also landing in this version is support for <strong>copying and pasting vector features into and from the clipboard</strong>. This comes in handy in multiple ways, from providing a quick and easy way to transfer attributes from one feature to another through matching field names to pasting the details of a captured feature in the field into a third-party messenger, word editing, or email application. Copying and pasting features can be done through the feature form’s menu as well as long pressed over the map canvas. If copy pasting ain’t your style, a new feature-to-feature attributes transfer shortcut has also been added to the feature form’s menu.</p>
+<p>Also landing in this version is support for <strong>copying and pasting vector features into and from the clipboard</strong>. This comes in handy in multiple ways, from providing a quick and easy way to transfer attributes from one feature to another through matching field names to pasting the details of a captured feature in the field into a third-party messenger, word editing, or email application. Copying and pasting features can be done through the feature form’s menu as well as long pressed over the map canvas. If copy pasting ain’t your style, a new feature-to-feature attributes transfer shortcut has also been added to the feature form’s menu. Appreciation to <a href="https://uwe.lu.ch/" rel="noreferrer noopener" target="_blank">Switzerland, Canton of Lucerne, Environment and Energy</a> for providing the funds for this feature.</p>
 
 
 
@@ -34,7 +34,7 @@ showcase: "planet"
 
 
 
-<p>The feature form continues to gain more functionalities; in this version, the feature form’s value map editor widget has gained a <strong>new toggle button interface</strong> that can help fasten data entry. The interface replaces the traditional combo box with a series of toggle buttons, lowering the number of taps required to pick a value. If you enjoy this as much as we do, send a virtual thanks to Deutsches Archäologisches Institut, which sponsored this feature.</p>
+<p>The feature form continues to gain more functionalities; in this version, the feature form’s value map editor widget has gained a <strong>new toggle button interface</strong> that can help fasten data entry. The interface replaces the traditional combo box with a series of toggle buttons, lowering the number of taps required to pick a value. If you enjoy this as much as we do, send a virtual thanks to <a href="https://www.kulturgutretter.org/en/home-2/">German Archaeological Institut &#8211; KulturGutRetter</a>, which sponsored this feature.</p>
 
 
 
@@ -60,7 +60,7 @@ showcase: "planet"
 
 
 
-<p>The dashboard’s legend has also received some attention. You can now <strong>toggle the visibility of any layer via a quick tap on a new eye icon sitting in the legend tree</strong> itself. Similarly, legend groups can be expanded and collapsed directly for the tree. This also permits you to show or hide layers while digitizing a feature, something which was not possible until now. The development of these improvements was supported by <a href="https://www.gispo.fi/">Gispo</a> and sponsored by the <a href="https://www.maanmittauslaitos.fi/en">National Land Survey of Finland</a>.</p>
+<p>The dashboard’s legend has also received some attention. You can now <strong>toggle the visibility of any layer via a quick tap on a new eye icon sitting in the legend tree</strong> itself. Similarly, legend groups can be expanded and collapsed directly for the tree. This also permits you to show or hide layers while digitizing a feature, something which was not possible until now. The development of these improvements was supported by <a href="https://www.gispo.fi/en">Gispo</a> and sponsored by the <a href="https://www.maanmittauslaitos.fi/en">National Land Survey of Finland</a>.</p>
 
 
 
@@ -68,15 +68,15 @@ showcase: "planet"
 
 
 
-<p>Last but far away from least, QField 3.3 introduces a brand new plugin framework using Qt’s powerful QML and JavaScript engine. With a few lines of code, plugins can be written to tweak QField’s behaviour and add breathtaking capabilities. Two types of plugins are possible: app-wide plugins as well as project-scoped plugins. To ensure maximum ease of deployment, we have enabled project plugin distribution through <a href="https://qfield.cloud" rel="noreferrer noopener" target="_blank">QFieldCloud</a>!</p>
+<p>Last but far away from least, QField 3.3 introduces a brand new plugin framework using Qt’s powerful QML and JavaScript engine. With a few lines of code, plugins can be written to tweak QField’s behaviour and add breathtaking capabilities. Two types of plugins are possible: app-wide plugins as well as project-scoped plugins. To ensure maximum ease of deployment, we have enabled project plugin distribution through <a href="https://qfield.cloud" rel="noreferrer noopener" target="_blank">QFieldCloud</a>! We extend our heartfelt thanks to <a href="https://www.amsa.it/en/cittadini" rel="noreferrer noopener" target="_blank">Amsa</a> for the financial contribution that brought this incredible project to life.</p>
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-14445" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/plugin_manager.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-14443" height="350" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-10-at-14.52.50.jpeg?resize=750%2C350&#038;ssl=1" width="750" /></figure>
 
 
 
-<p>We will write a dedicated post later this week explaining all the details of how QField plugins can radically change your field (and business) workflows by allowing you to be even more efficient in the field.</p>
+<p>Stay tuned for an upcoming webinar and a dedicated post that will dive into how QField plugins can revolutionize your field (and business) workflows by allowing you to be even more efficient in the field.</p>
 
 
 
