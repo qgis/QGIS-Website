@@ -118,7 +118,7 @@ export class HomePage {
             name: "View documentation",
         });
         this.qgisSupportersHeading = this.page.getByRole("heading", {
-            name: "QGIS supporters",
+            name: "QGIS sustaining members",
         });
         this.addYourLogoHereText = this.page
             .locator("div")
@@ -126,7 +126,7 @@ export class HomePage {
             .nth(2);
         this.silverPartnerText = this.page
             .locator("div")
-            .filter({ hasText: "Silver partner" })
+            .filter({ hasText: "Large membership" })
             .nth(2);
         this.supportersGridDiv = this.page
             .locator(".supporters-grid > div:nth-child(3)")
