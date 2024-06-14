@@ -13,7 +13,7 @@ Reviewer: Tim Sutton
 
 # Become a certified trainer
 
-The QGIS Certificate Program is designed to promote both community involvement in the QGIS project and quality education for QGIS software. The application process requires applicants to both detail their contributions to the QGIS project, and make their training materials available for review. Contributions to the QGIS project include activities such as:
+The QGIS Certificate Program is designed to promote both community involvement in the QGIS project and quality education for QGIS software. The application process requires applicants to detail their contributions to the QGIS project and make their training materials available for review. Contributions to the QGIS project include activities such as:
 
 *   Development/commits to QGIS
 *   Contributions to the QGIS documentation and training materials
@@ -35,7 +35,7 @@ To contact the certification team, please write to [certification@qgis.org](mail
 
 You are required to provide the training material for each of your courses. This includes exercises, lectures and data. This material will be reviewed for currentness, accurate representation of the QGIS project and overall quality. If the material is not of adequate quality, this can be cause for refusal.
 
-Following an initial review, the application will be sent to local QGIS groups for their opinion. This portion of the review should take place in less than one month. If there is not a local QGIS user group, the QGIS Project Steering Committee (PSC) will make a determination based on material provided and your reputation in the community. In this latter case you are encouraged to establish a local QGIS User Group. If you are not deemed to be a member of the QGIS community in good standing this can be cause for refusal.
+Following an initial review, the application will be sent to local QGIS groups for their opinion. This part of the review should be completed within a month. If there is not a local QGIS user group, the QGIS Project Steering Committee (PSC) will make a determination based on material provided and your reputation in the community. In this latter case you are encouraged to establish a local QGIS User Group. If you are not considered a member in good standing of the QGIS community, this could be a reason for refusal.
 
 The PSC will make the final determination. If accepted as a QGIS Certified Organization, your contributions to the project will be published for transparency.
 
