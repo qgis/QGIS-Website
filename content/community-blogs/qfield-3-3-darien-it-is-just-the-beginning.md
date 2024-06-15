@@ -28,9 +28,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-1 is-layout-flex wp-block-gallery-is-layout-flex">
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-14433" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/transfer_attributes.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
-</figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14468" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/transfer_attributes-1.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
 
 
 
@@ -42,9 +40,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-gallery has-nested-images columns-default is-cropped wp-block-gallery-2 is-layout-flex wp-block-gallery-is-layout-flex">
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-14434" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/value_map_buttons.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
-</figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14467" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/value_map_buttons-1.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
 
 
 
@@ -72,7 +68,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-14443" height="350" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/WhatsApp-Image-2024-06-10-at-14.52.50.jpeg?resize=750%2C350&#038;ssl=1" width="750" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14465" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/plugin_manager-1.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
 
 
 
