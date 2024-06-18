@@ -80,11 +80,11 @@ Small Member (e.g. for smaller cities or companies up to 10 employees)
 {{< column-end >}}
 {{< columns-end >}}
 
-Sustaining memberships last one year, after which they may be continued with a new payment, or allowed to lapse. Sustaining memberships do not include voting rights. Existing voting voting rights remain unaffected.
+Sustaining memberships last one year, after which they may be continued with a new payment, or allowed to lapse. Sustaining memberships do not include voting rights. Existing voting rights remain unaffected.
 
-Membership fees are approved or changed by the QGIS general assembly. They are defined as minimum fees per category, but the sustaining member may pay more than the lower limit if they wish to.
+Membership fees are approved or changed by the QGIS general assembly. They are defined as minimum fees per category, but the sustaining member may choose to pay more than the minimum if they wish.
 
-Because QGIS.ORG is a global project and different companies, NGOs or governmental organizations have different financial means, we do not mandate membership levels. Sustaining members self select whichever level they are able to afford.
+Because QGIS.ORG is a global project and different companies, NGOs or governmental organizations have different financial means, we do not mandate membership levels. Sustaining members self-select whichever level they are able to afford.
 
 Acceptance of sustaining members shall be subject to the discretion and approval of The Board, who reserve the right to accept or reject applications for sustaining membership and ongoing support memberships as deemed appropriate.
 
