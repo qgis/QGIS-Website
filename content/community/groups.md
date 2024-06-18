@@ -164,7 +164,7 @@ You can use these statutes and membership application forms as a reference and c
 ## Local Country domain qgis.xx
 
 
-It is recommended to register your local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by someone other organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotations.
+It is recommended to register your local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by other organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
 
 ## Website
 
