@@ -169,7 +169,7 @@ Sustaining members are members who support QGIS.ORG financially with an annual m
 The following categories are offered for sustaining members, based on their size and assigned through self declaration:
 
 * Small (e.g. for smaller cities or companies up to 10 employees)
-* Medium (e.g. for universities, medium size cities or companies up to 50 employees
+* Medium (e.g. for universities, medium size cities or companies up to 50 employees)
 * Large (e.g. for larger cities, provinces or companies up to 100 employees)
 * Flagship (e.g. for companies larger than 100 employees, federal governmental organizations)
 
@@ -266,7 +266,7 @@ any individual a lifetime honorary seat on the PSC.
 ## Administration of QGIS.ORG
 
 
-The annual general meeting (AGM) will be held via a virtual forum The online location and
+The annual general meeting (AGM) will be held via a virtual forum. The online location and
 date is to be determined and communicated by the board in advance of the meeting. The
 board shall publish a meeting agenda prior to the meeting. The protocol of the past general
 meeting shall be provided by the board and sent to the voting members at least 15 days
@@ -319,8 +319,8 @@ funding and other diverse sources.
 The general meeting shall elect two financial auditors each year.
 
 Limited Liability: the QGIS Association can only be held liable up to the amount of the
-current assets of the association. Personal liability of members of the board or individual
-other members are excluded.
+current assets of the association. Personal liability of board members or other
+individual members is excluded.
 
 
 This charter was approved by the general assembly via Loomio vote on March 17, 2019.
