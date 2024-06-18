@@ -88,7 +88,7 @@ According to our statutes, for each country user group that is formed, that grou
 
 ### Community Voting Members
 
-According to our statutes, one member from the broader community can be elected for each country voting member. The following list are the current community voting members:
+According to our statutes, one member from the broader community can be elected for each country voting member. The following list includes the current community voting members:
 
 *   Martin Dobias, Slovakia
     
@@ -171,7 +171,7 @@ QGIS Releases are managed by the Release Team (Release Manager and Release Assis
 
 ### Packaging Team
 
-QGIS is being packaged for different type of operating systems. The people responsible for that packages are as following:
+QGIS is being packaged for different types of operating systems. The people responsible for these packages are as follows:
 
 *   Windows Team: Jürgen E. Fischer
     
@@ -219,7 +219,7 @@ Find the list of documentation and website translators at: [https://github.com/q
 
 Current Translation Team Lead: Werner Macho
 
-The QGIS Translation is managed by the Community Assistant (Translation Team Lead) and supported by additional language specific teams. Information about the current documentation status and the translation process are provided at the [Translators Corner](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html).
+The QGIS Translation is managed by the Community Assistant (Translation Team Lead) and supported by additional language specific teams. Information about the current documentation status and the translation process is provided at the [Translators Corner](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html).
 
 Contact : [qgis-community-team](http://lists.osgeo.org/mailman/listinfo/qgis-community-team) list or [QGIS Translation Mailing list](http://lists.osgeo.org/mailman/listinfo/qgis-tr)
 
@@ -227,7 +227,7 @@ Contact : [qgis-community-team](http://lists.osgeo.org/mailman/listinfo/qgis-com
 
 Current Press Material Team Lead: Anita Graser
 
-QGIS Press Material and its translations are managed by the Community Assistant (Press Material Team Lead) and supported by additional language specific teams. Information about current activities and the translation process are provided at the Press Centre.
+QGIS Press Material and its translations are managed by the Community Assistant (Press Material Team Lead) and supported by additional language specific teams. Information about current activities and the translation process is provided at the Press Centre.
 
 TEAM
 -------------------------------------
