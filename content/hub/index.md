@@ -14,7 +14,7 @@ heroImage: "/img/banners/banner1.png"
 
 {{< block
     title="Downloads"
-    subtitle="We provide downloads for all popular desktop and mobile operating systems. With a few clicks you can be using our best-in-class software on your own devices!"
+    subtitle="We provide downloads for all popular desktop and mobile operating systems. In just a few clicks you can start using our best-in-class software on your own devices!"
     text-color="white"
     background-color="#589632"
     image="downloads.png"
@@ -22,7 +22,7 @@ heroImage: "/img/banners/banner1.png"
 
 {{< block
     title="Documentation"
-    subtitle="We know that downloading software is just the start of the journey. You need the support of documentation to take you from novice to expert in the shortest time possible. Use our technical documentation and training materials to get started."
+    subtitle="We understand that downloading software is just the beginning of your journey. To transition from a novice to an expert in the shortest time possible, you'll need comprehensive documentation and training materials. Use our technical documentation and training resources to get started."
     text-color="black"
     background-color="white"
     image="documentation.png"
@@ -32,7 +32,7 @@ heroImage: "/img/banners/banner1.png"
 
 {{< block
     title="Plugins, styles, and more"
-    subtitle="Maximise the capabilities of QGIS with the many useful resources developed by the community. A rich ecosystem of plugins provides a way for community members to add functionality to QGIS.  Other resources provide ready-to-use cartography styles, access to online data and much more! "
+    subtitle="Maximise the capabilities of QGIS with the numerous resources developed by our community. A rich ecosystem of plugins allows community members to enhance QGIS functionality. Other resources offer ready-to-use cartography styles, access to online data, and much more!"
     text-color="white"
     background-color="#589632"
     image="pluginsstylesandmore.png"
@@ -42,7 +42,7 @@ heroImage: "/img/banners/banner1.png"
 
 {{< block
     title="Stay up to date"
-    subtitle="Whatever your preferred social media platform, we probably have a presence and would love to keep you current with the amazing innovations and advanced that take place in the QGIS project."
+    subtitle="No matter which social media platform you prefer, you can likely find us there. We'd love to keep you updated with the amazing innovations and advances happening within the QGIS project."
     text-color="black"
     background-color="white"
     image="stayuptodate.png"
@@ -52,7 +52,7 @@ heroImage: "/img/banners/banner1.png"
 
 {{< block
     title="Engage with users"
-    subtitle="No matter which medium you prefer, we have community members to engage with. There are special interest teams to collaborate with, a range of news sources that will allow you to keep up to date, chat rooms and contact details of service providers ready to collaborate with you on your QGIS journey."
+    subtitle="No matter which medium you prefer, we have community members ready to engage. There are special interest teams for collaboration, a variety of news sources to keep you updated, chat rooms for instant communication, and service providers who are eager to collaborate with you on your QGIS journey."
     text-color="white"
     background-color="#589632"
     image="engagewithusers.png"
@@ -62,7 +62,7 @@ heroImage: "/img/banners/banner1.png"
 
 {{< block
     title="Get certified"
-    subtitle="Obtain your professional certification as a QGIS practioner. We have a global network of certified educators who can cater to your training needs."
+    subtitle="Obtain your professional certification as a QGIS practitioner. We have a global network of certified educators who can cater to your training needs."
     text-color="black"
     background-color="white"
     image="getcertified.png"
@@ -72,7 +72,7 @@ heroImage: "/img/banners/banner1.png"
 
 {{< block
     title="QGIS Association"
-    subtitle="The QGIS Project was initiated in 2002. We pride ourselves in our open governance, community-friendly project management model. Our approach gives all community members a voice and sense of agency over the decisions and directions of the project."
+    subtitle="The QGIS Project was initiated in 2002. We take pride in our open governance and community-friendly project management model. This approach empowers all community members, giving them a voice and a sense of agency in the decisions and directions of the project."
     text-color="white"
     background-color="#589632"
     image="qgisassociation.png"
