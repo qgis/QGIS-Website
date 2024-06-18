@@ -12,7 +12,7 @@ sidebar: true
 Goodies
 ===========================================
 
-If you are a fan of QGIS, you might want to visit our store so you can buy some momentos to show off your favourite desktop GIS. We have a number of great t-shirts, mugs, hoodies, caps and so on so pay a visit to one of our stores below!
+If you are a fan of QGIS, you might want to visit our store so you can buy some mementos to show off your favourite desktop GIS. We have a number of great t-shirts, mugs, hoodies, caps and more, so do pay a visit to one of our stores below!
 
 Buying QGIS apparel not only lets you show off the fact that you use QGIS, for every t-shirt sold a commission is given to the QGIS project.
 
