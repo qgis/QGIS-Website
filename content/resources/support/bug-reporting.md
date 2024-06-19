@@ -35,7 +35,7 @@ QGIS applications (QGIS Desktop and QGIS Server) issues are available in [Github
 
 Before filing an issue, verify that you are running the currently supported versions {{< param "ltrrelease" >}} or {{< param "release" >}} or the development version {{< param "devversion" >}} (see also [Release schedule]({{< ref "resources/roadmap#release-schedule" >}})) and review the currently open issues to make sure that you aren’t creating a duplicate. If you have additional information on an issue, you can add it to the existing ticket. Third party plugins might also cause problems. If you have installed any, you should also verify that the problem is still reproducible without them. Please don’t report multiple unrelated bugs in a single bug report.
 
-When you’re are logged in, a `New Issue` button is available. Select it and follow the instructions there.
+When you’re logged in, a `New Issue` button is available. Select it and follow the instructions there.
 
 Before sending the report, please check the formatting of your report by clicking on “Preview”. Please avoid editing existing reports, if not for typos. Better add further comments in any other case.
 
@@ -58,7 +58,7 @@ Aborted (core dumped)
 
 In that case you should reenable that option by setting `kernel.yama.ptrace_scope` to 0 in `/etc/sysctl.d/10-ptrace.conf` (or `/etc/sysctl.conf` or some other file in `/etc/sysctl.d/`) and run `sysctl -p` as root. When you reproduce the crash after that, a backtrace will be printed instead.
 
-If you cannot reproduce the crash, there should still be a core dump in the current directory, that can be analysed after the process has already terminated. It’s called `core` (on some systems a dot and the process id is append to the filename).
+If you cannot reproduce the crash, there should still be a core dump in the current directory, that can be analysed after the process has already terminated. It’s called `core` (on some systems, a dot and the process id is append to the filename).
 
 On some distributions the creation of core dumps is also disabled. In the event that you just get `Aborted` instead of `Aborted (core dumped)` when the crash occurs. Then you need to run `ulimit -c unlimited` before starting QGIS. You can also include that in your `.profile`, so that it’s always enabled when you login.
 
@@ -66,11 +66,11 @@ To produce a backtrace from the core file, start `gdb /path/to/the/qgis/binary c
 
 #### Log output on Windows
 
-The nightly build in [OSGeo4W](https://trac.osgeo.org/osgeo4w) (package qgis-dev) is built with debugging output, that you can view with [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview). If the problem is not easy to reproduce the output might shed some light about where QGIS crashes.
+The nightly build in [OSGeo4W](https://trac.osgeo.org/osgeo4w) (package qgis-dev) is built with debugging output, that you can view with [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview). If the problem is not easy to reproduce, the output might shed some light about where QGIS crashes.
 
 ## Reporting issues on QGIS web site or documentation
 
-QGIS project provides an active [web site](https://qgis.org) and a rich [documentation](https://qgis.org/en/docs/index.html). Despite our efforts, if you find an out of date information, a wrong or unclear statement or miss a valuable information, please feel free to report it.
+QGIS project provides an active [web site](https://qgis.org) and a rich [documentation](https://qgis.org/en/docs/index.html). Despite our efforts, if you find an out of date information, a wrong or unclear statement or miss valuable information, please feel free to report it.
 
 The main sources of these documents are hosted and managed in GitHub repositories so in order to report bugs or submit patches, you need a GitHub account and login.
 
@@ -103,7 +103,7 @@ Most of the plugins in QGIS are published in the official [QGIS Plugins reposito
     
     If no information is available, please report it to the [Developer mailing-list](https://lists.osgeo.org/mailman/listinfo/qgis-developer).
     
-- For other plugins, we have no means to ensure such information are provided.
+- For other plugins, we have no means to ensure such information is provided.
     
 
 ## Submitting a Patch to QGIS projects
@@ -117,6 +117,6 @@ In addition to issue report, you can help to fix issues. Fixing issues is done i
 - https://github.com/qgis/QGIS-Documentation for the documentation available at https://docs.qgis.org
     
 
-You can find a few guidelines that will help you to easily get your patches and pull requests into QGIS projects at [Submitting Pull Requests](https://docs.qgis.org/testing/en/docs/developers_guide/git.html#submitting-pull-requests). And more widely, You may need to read the [Development Process](https://docs.qgis.org/testing/en/docs/developers_guide/git.html) chapter.
+You can find a few guidelines that will help you to easily get your patches and pull requests into QGIS projects at [Submitting Pull Requests](https://docs.qgis.org/testing/en/docs/developers_guide/git.html#submitting-pull-requests). And more widely, you may need to read the [Development Process](https://docs.qgis.org/testing/en/docs/developers_guide/git.html) chapter.
 
 {{< content-end >}}
