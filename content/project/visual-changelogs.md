@@ -10,7 +10,7 @@ sidebar: true
 
 # Visual Changelogs
 
-Below you find the Visual Changelogs since version 2.0
+Below, you will find the Visual Changelogs since version 2.0.
 
 {{< visualchangelogs >}}
 
