@@ -10,11 +10,11 @@ sidebar: true
 
 # Books
 
-This page lists books available from others publishers. QGIS does not manage any of them and they are given only to help.
+This page lists books available from other publishers. QGIS does not manage any of them, and they are listed here only for your convenience.
 
-Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your book added here. Or you edit this page in github and do a pull request.
+Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your book added here. Alternatively, you can edit this page on GitHub and submit a pull request.
 
-Note: Books order is newest first. Note2: After the english books there are french, greek and polish items
+Note: The books are listed in order of newest first. After the English books, there are items in French, Greek, Polish and other languages.
 
 ## English
 
