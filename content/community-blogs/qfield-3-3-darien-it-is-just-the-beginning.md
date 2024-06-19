@@ -76,4 +76,4 @@ showcase: "planet"
 
 
 
-<p>Users interested in authoring plugins or better understanding the framework, can already visit the <a href="https://docs.qfield.org/how-to/plugins/" rel="noreferrer noopener" target="_blank">dedicated documentation page</a> and a <a href="https://github.com/opengisch/qfield-weather-forecast">sample plugin implementation</a> sporting a weather forecast integration.</p>
+<p>Users interested in authoring plugins or better understanding the framework can already visit the <a href="https://docs.qfield.org/how-to/plugins/" rel="noreferrer noopener" target="_blank">dedicated documentation page</a>, a <a href="https://github.com/opengisch/qfield-weather-forecast">sample plugin implementation</a> sporting a weather forecast integration and our latest <a href="https://www.opengis.ch/2024/06/18/supercharge-your-fieldwork-with-qfields-project-and-app-wide-plugins/">blog article</a>.</p>
