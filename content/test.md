@@ -37,7 +37,7 @@ sidebar: true
 {{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Server
 
-Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layoutClasss and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
+Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layoutClasses and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
@@ -98,7 +98,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created. On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
 
 
 
