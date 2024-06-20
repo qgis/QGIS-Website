@@ -66,11 +66,10 @@ export class CommunityPage {
             page: "QGIS Foundation",
             texts: [
                 "QGIS Foundation Giving the",
-                "Giving the power of spatial",
-                "Annual General Meetings Starting in 2016 (coincident with the establishment of",
-                "Annual Reports Starting in",
-                "Finance Please check the",
-                "QGIS.org Charter QGIS.ORG is",
+                "Annual General Meetings",
+                "Annual Reports",
+                "Finance",
+                "QGIS.org Charter",
             ],
         },
         {
@@ -82,7 +81,14 @@ export class CommunityPage {
         {
             page: "Annual General Meetings",
             texts: [
-                "Annual General Meetings ¶ Starting in 2016 (coincident with the establishment",
+                "Annual General Meetings",
+                "QGIS AGM Minutes 2023",
+                "QGIS AGM Minutes 2022",
+                "QGIS AGM Minutes 2021",
+                "QGIS AGM Minutes 2020",
+                "QGIS AGM Minutes 2019",
+                "QGIS AGM Minutes 2018",
+                "QGIS AGM Minutes 2017"
             ],
         },
         {

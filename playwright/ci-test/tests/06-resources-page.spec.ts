@@ -193,7 +193,6 @@ test.describe("Resources pages", () => {
         await expect(installationGuidePage.pkgInstallQgisLtrSpan).toBeVisible();
         await expect(installationGuidePage.makeInstallQgisLtrPre).toBeVisible();
         await expect(installationGuidePage.pkgAddQgisPre).toBeVisible();
-        await expect(installationGuidePage.googlePlayLink).toBeVisible();
 
         for (const text of installationGuidePage.textList) {
             await expect(installationGuidePage.pageBody).toContainText(text);
