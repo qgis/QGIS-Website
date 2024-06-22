@@ -69,7 +69,6 @@ export class InstallationGuidePage {
     public readonly pkgInstallQgisLtrSpan: Locator;
     public readonly makeInstallQgisLtrPre: Locator;
     public readonly pkgAddQgisPre: Locator;
-    public readonly googlePlayLink: Locator;
     public readonly textList: string[] = [
         "QGIS Installers",
         "Windows",
@@ -100,7 +99,6 @@ export class InstallationGuidePage {
         "QGIS LTR",
         "NixOS",
         "OpenBSD",
-        "Android",
         "QGIS Testing warning",
         "Installing from Source",
     ];
@@ -332,8 +330,5 @@ export class InstallationGuidePage {
         this.pkgAddQgisPre = this.page
             .locator("pre")
             .filter({ hasText: "pkg_add qgis" });
-        this.googlePlayLink = this.page.getByRole("link", {
-            name: "https://play.google.com/store",
-        });
     }
 }
