@@ -10,7 +10,7 @@ sidebar: true
 
 # FAQ
 
-Here we collect answers to question which come up very often.
+Here we collect answers to question that come up very often.
 
 We will start of with this one page, maybe restructure it into sections, or
 even more pages if needed
@@ -23,8 +23,8 @@ If you are trying to download QGIS and nothing seems to happen, please consult t
 It can usually be found as an icon (based on arrow, stop-watch or pie-chart) at the top-right corner of your browser window.
 Click on the icon to see the download progress or cancel the download. The normal procedure with downloads in the
 browser is such, that it first asks you where to save the file (with a file browser dialogue) and then you have to wait
-until the download is finished. Because QGIS install packages, depending on the operating system, can be rather large
-you have to be patient. The download size can be anywhere between several hundred megabytes to sometimes more than
+until the download is finished. Because QGIS install packages can be rather large, depending on the operating system, you have to be patient.
+The download size can be anywhere between several hundred megabytes to sometimes more than
 one gigabyte (in case of MS Windows MSI packages). Depending on your download speed and the QGIS server load, downloads
 can take from several minutes up to several hours.
 
@@ -38,10 +38,10 @@ substantially helps with your business, tasks or processes, you should think abo
 supporting it as a sustaining member.
 
 ### How to ask a QGIS question?
-If you are going to ask QGIS related question via the [mailing lists]({{< ref "community/organisation/mailinglists" >}}),
+If you are going to ask a QGIS related question via the [mailing lists]({{< ref "community/organisation/mailinglists" >}}),
 please provide enough information to help others easily understand what your problem is.
-Without a clear and precise question, it is very hard to answer for anybody or
-takes just too much time because the answer will be a question to you etc etc.
+Without a clear and precise question, it is very hard for anybody to answer, or it
+just takes too much time because the answer will be a question to you etc etc.
 You may provide information such as:
 
 - preferably a descriptive title for your email
@@ -55,8 +55,8 @@ You may provide information such as:
   - how you installed it (osgeo4w? standalone-installer? own build?)
   - at what time did it break (reinstall, new install, system update, project changes)
 
-Keep in mind that the more precise is your question, the quicker and more
-accurate can be the answer.
+Keep in mind that the more precise your question is, the quicker and more
+accurate the answer can be.
 
 {{< rich-box-start icon="💁" layoutClass="tips" mode="html">}}
 {{< rich-content-start themeClass="coloring-1" >}}
@@ -72,7 +72,7 @@ after locations of our developer meetings.
 
 ### How to cite QGIS?
 
-To cite QGIS in your piece of work, or for an assignment, please use citation type that can be more helpful:
+If you need to cite QGIS in your work or for an assignment, please use the citation style that would be most helpful:
 
 
 **Cite the QGIS project in general**
@@ -134,7 +134,7 @@ Example BibTeX entry:
 
 ### I created a map with QGIS, do I have to mention QGIS?
 There is no requirement to mention QGIS for maps produced with it.
-It is of course really welcome if would like to add a note saying that the map was produced with QGIS.
+It is of course really welcome if you would like to add a note saying that the map was produced with QGIS.
 "Made with QGIS" or "Map created using the Free and Open Source QGIS" are good examples of such a note.
 
 {{< rich-box-start icon="✋" layoutClass="tips" >}}
