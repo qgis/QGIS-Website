@@ -12,7 +12,7 @@ showcase: "planet"
 
 
 
-<p>OPENGIS.ch has been invested in QGIS since its inception in 2014, actually even before; our CEO Marco started working with QGIS 0.6 in 2004 and our CTO Matthias with version 1.7 in 2012. We definitely can say that OPENGIS.ch has been one of the main driving forces behind the large adoption of QGIS in Switzerland and worldwide.&nbsp;</p>
+<p>OPENGIS.ch has been invested in QGIS since its inception in 2014, actually even before; our CEO Marco started working with QGIS 0.6 in 2004 and our CTO Matthias with version 1.7 in 2012. Since 2019, we have also been the company with the most core committers. We can definitely say that OPENGIS.ch has been one of the main driving forces behind the large adoption of QGIS in Switzerland and worldwide. </p>
 
 
 
