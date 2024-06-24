@@ -20,7 +20,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/06/image-1.png"><img alt="" class="wp-image-2879" height="351" src="https://blog.qgis.org/wp-content/uploads/2024/06/image-1.png?w=705" width="705" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/06/image-1.png"><img alt="" class="wp-image-2879" height="351" src="https://blog.qgis.org/wp-content/uploads/2024/06/image-1.png?w=705" tabindex="0" width="705" /></a></figure>
 
 
 
