@@ -19,14 +19,22 @@ export class ProjectPage {
     public readonly caseStudiesAmurumLink: Locator;
     public readonly projectTextList: string[] = [
         "Free and open source",
-        "Giving the power of spatial",
-        "Available on Windows, Mac,",
-        "Key features ¶ Create map",
+        "QGIS overview",
+        "Giving the power of spatial visualization and decision making tools to everyone",
+        "Available on Windows, Mac, Linux",
+        "Key features",
         "Create maps",
         "Edit layers",
         "Process and analyze",
         "Share maps",
         "Class-leading cartography",
+        "Professional map production",
+        "Powerful reporting tools",
+        "Level up with community resources",
+        "2000+ plugins developed by community",
+        "Annual international conference",
+        "Local user groups and support providers",
+        "Cross platform",
         "QGIS Server",
         "QGIS Desktop",
         "QGIS Web Client",
@@ -38,12 +46,10 @@ export class ProjectPage {
 
     public readonly mapsTextList: string[] = [
         "QGIS Maps",
-        "Amazing maps created using",
     ];
 
     public readonly screenshotsTextList: string[] = [
         "QGIS Screenshots",
-        "Screenshots of QGIS in action",
     ];
 
     public readonly caseStudiesTextList: string[] = [

@@ -22,12 +22,12 @@ export class QgisResourcesPage {
     public readonly textList: string[] = [
         "Resources",
         "🖖 Installation troubles?",
-        "You will find documentation",
-        "Get involved and help us",
-        "Archived releases",
+        "Documentation",
+        "For users",
         "For documentation writers",
         "For developers",
-        "Support ¶ The QGIS community",
+        "For download",
+        "Support",
     ];
 
     constructor(public readonly page: Page) {
