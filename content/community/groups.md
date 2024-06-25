@@ -20,7 +20,7 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis.dk/" icon="🇩🇰  " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Jacob Arpe" >}}
 
-{{< rich-list listLink="https://qgis.uk/" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿  " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contact: Simon Miles" >}}
+{{< rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿  " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contact: Simon Miles" >}}
 
 {{< rich-list listLink="https://qgis.de/" icon="🇩🇪  " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Germany) " listSubtitle="Contact: Thomas Schüttenberg" >}}
 
@@ -34,11 +34,11 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis.pt/" icon="🇵🇹  " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: João Gaspar" >}}
 
-{{< rich-list listLink="https://qgis.uk/" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿  " layoutClass="half" listTitle="QGIS UK (Scotland) " listSubtitle="Contact: Ross McDonald" >}}
+{{< rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿  " layoutClass="half" listTitle="QGIS UK (Scotland) " listSubtitle="Contact: Ross McDonald" >}}
 
 {{< rich-list listLink="https://qgis.ch/" icon="🇨🇭  " layoutClass="half" listTitle="QGIS user group Switzerland " listSubtitle="Contact: Isabel Kiefer" >}}
 
-{{< rich-list listLink="http://qgis.uk/" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿  " layoutClass="half" listTitle="QGIS UK (Wales/Cymru) " listSubtitle="Contact: Kevin Williams" >}}
+{{< rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿  " layoutClass="half" listTitle="QGIS UK (Wales/Cymru) " listSubtitle="Contact: Kevin Williams" >}}
 
 {{< rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿  " layoutClass="half" listTitle="NIWA QGIS user group (New Zealand) " listSubtitle="Contact: Brent Wood –> REMOVED in 2018" >}}
 
