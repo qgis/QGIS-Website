@@ -54,7 +54,7 @@ showcase: "planet"
 
 
 
-<p>There are a couple of different vector tile sets available</p>
+<p>There are a couple of different vector tile sets available:</p>
 
 
 
@@ -82,11 +82,19 @@ showcase: "planet"
 
 
 
-<p>This layer is similar to the Imagery base map layer, but it uses a more recent version of the data source and adjusted styles.</p>
-
-
-
 <figure class="wp-block-image size-large"><img alt="" class="wp-image-14628" height="466" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/vt_leichte_basiskarte_imagery.png?resize=750%2C466&#038;ssl=1" width="750" /></figure>
+
+
+
+<h4 class="wp-block-heading">Imagery base map (with WMTS sublayer)</h4>
+
+
+
+<p>This layer is similar to the <em>leichte-basiskarte-imagery</em> layer, but it uses an older version of the data source and adjusted styles.</p>
+
+
+
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-14626" height="466" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/vt_imagery_basemap.png?resize=750%2C466&#038;ssl=1" width="750" /></figure>
 
 
 
@@ -95,14 +103,6 @@ showcase: "planet"
 
 
 <figure class="wp-block-image size-large"><img alt="" class="wp-image-14624" height="466" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/vt_basemap.png?resize=750%2C466&#038;ssl=1" width="750" /></figure>
-
-
-
-<h4 class="wp-block-heading">Imagery base map (with WMTS sublayer)</h4>
-
-
-
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-14626" height="466" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/vt_imagery_basemap.png?resize=750%2C466&#038;ssl=1" width="750" /></figure>
 
 
 
