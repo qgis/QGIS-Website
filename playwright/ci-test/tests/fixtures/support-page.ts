@@ -5,14 +5,15 @@ export class SupportPage {
     public readonly pageBody: Locator;
     public readonly textList: string[] = [
         "Support",
+        "Discourse",
         "Mailing Lists",
         "StackExchange",
         "Communication channels",
         "Telegram",
         "Matrix / IRC",
-        "Matrix (https://matrix.org)",
         "Facebook",
-        "User Groups"
+        "User Groups",
+        "Security Vulnerability Reporting"
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
@@ -33,10 +34,9 @@ export class OtherSupportPage {
     public readonly websiteCreationLink: Locator;
     public readonly textList: string[] = [
         "Commercial support",
-        "Do you plan to use QGIS in",
-        "Note ¶ we take responsibility",
+        "Note",
         "Core contributors",
-        "3liz (based in France) offers",
+        "Contributors",
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");

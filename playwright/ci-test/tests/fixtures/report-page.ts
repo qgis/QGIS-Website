@@ -10,13 +10,7 @@ export class ReportsPage {
         "Daily Reports",
         "OGC Certification",
         "Performance",
-        "QGIS Server",
-        "Security",
-        "WMS",
-        "OGC API Features",
-        "WFS",
-        "Latest reports",
-        "The second one is Graffiti,",
+        "Security"
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");

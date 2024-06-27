@@ -25,6 +25,8 @@ export class RoadmapPage {
     public readonly macOS: Locator;
     public readonly textList: string[] = [
         "Road Map",
+        "Stable Release",
+        "Development Version",
         "Development phase",
         "Feature freeze",
         "Release",
