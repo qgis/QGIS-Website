@@ -38,6 +38,10 @@ showcase: "planet"
 
 
 
+<p>Thanks to the <a href="https://qgis.ch/" rel="noreferrer noopener" target="_blank">QGIS user group Switzerland</a> for funding this feature! <img alt="👏" class="wp-smiley" src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f44f.png" style="height: 1em;" /></p>
+
+
+
 <h2 class="wp-block-heading">Swiss vector tiles base maps</h2>
 
 
