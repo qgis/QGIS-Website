@@ -12,6 +12,27 @@ Reviewer: Tim Sutton
 
 # Support
 
+## Before you start
+
+Before you head off to join up with your chose support group, we would like to mention a few 
+guidelines for participating in our community:
+
+### Stay on topic
+
+This forum is for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. It is not for discussions about GIS in general or unrelated software (GIS or otherwise).
+
+### Language
+As we are a global group, all posts must be in English (unless the group you join is language specific). If you have a post in another language, please provide a translated description.
+
+### Spam
+Posts about platforms, products, and services not pertaining to QGIS or not incorporating QGIS as part of a broader offering are not allowed.
+
+### Self-Promotion
+Companies or individuals posting products and services about QGIS are welcome (this does not mean endorsement) as long as they contribute meaningfully to the discourse, such as by answering questions. Excessive self-promotion will be considered spam.
+
+### Clarity
+Be clear and objective. Try to include screenshots. Show effort by consulting the official QGIS documentation. For example, show that you have already reviewed the documentation, searched Google, asked ChatGPT etc. Mark issues as solved once they are resolved so that people do not spend effort on your problem unnecessarily.
+
 ## Discourse
 
 We have recently started a discourse forum for QGIS related support. Over time we expect to move more if our community support activities to this area. The discourse forums are available [on the OSGEO hosted discourse page](https://discourse.osgeo.org/tag/qgis).
@@ -34,7 +55,7 @@ There is a vibrant user and community related chat group (english spoken) on the
 
 To join: install Telegram on your phone, register and join via the link above.
 
-There is also a web version (https://web.telegram.org) which you can join in the browser (after you have joined telegram via your phone(number)).
+There is also a web version (https://web.telegram.org) which you can join in the browser (after you have joined telegram via your phone number).
 
 ### Matrix / IRC
 
