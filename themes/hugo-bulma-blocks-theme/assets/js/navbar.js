@@ -44,7 +44,7 @@ window.onscroll = function () {
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("context").style.top = "4rem";
     } else {
-        document.getElementById("context").style.top = "0px";
+        document.getElementById("context").style.top = "-2em";
     }
     prevScrollpos = currentScrollPos;
 };
