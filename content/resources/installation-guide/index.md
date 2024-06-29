@@ -407,19 +407,24 @@ nix-shell -p \
 **Or added to your NixOS configuration.nix so that it becomes part of your system install:**
 
 ```
-{ config, pkgs, ... }:
-
 {
+  config,
+  pkgs,
+  ...
+}: {
   environment.systemPackages = with pkgs; [
-    (qgis.overrideAttrs (old: {
-      buildInputs = old.buildInputs ++ [ 
-            pkgs.python3Packages.numpy 
-            pkgs.python3Packages.geopandas
-            pkgs.python3Packages.rasterio
-      ];
-    }))
+    (qgis.override {
+      extraPythonPackages = ps:
+        with ps; [
+          numpy
+          geopandas
+          rasterio
+        ];
+    })
+    # other packages
   ];
 }
+
 ```
 
 ## SUSE / openSUSE
