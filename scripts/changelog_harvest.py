@@ -28,8 +28,7 @@ def download_and_extract_zip(version, release_date):
     version_formatted = re.sub(r'\D', '', version)
 
     # URL of the zip file
-    # url = f'https://changelog.qgis.org/en/qgis/version/{version}/md/'
-    url = f'http://localhost:61202/en/qgis/version/{version}/md/'
+    url = f'https://changelog.qgis.org/en/qgis/version/{version}/md/'
 
     # Define file paths
     zip_filename = f'qgis_changelog_{version_formatted}.zip'
