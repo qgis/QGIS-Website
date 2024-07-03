@@ -5,6 +5,7 @@
                 QGIS sustaining members
             </h2>
         </div>
+        
         <div class="supporters-grid large-grid">
             <div class="large-supporter is-vertical is-flex fund-Flagship add-supporter">
                 <a href="{{ absURL "funding/membership" }}">
@@ -16,17 +17,19 @@
                     <span class="partner-title">Add your logo here?</span>
                 </a>
             </div>
+        
             {{ $.Scratch.Set "counter" 0 }}
             {{ $headlessbundle := .Site.GetPage "/funders" }}
+        
+            <!-- List Flagship supporters first -->
             {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                {{ if or (eq .Params.level "Large") (eq .Params.level "Flagship") }}
-                {{ $level := .Params.level }}
+                {{ if eq .Params.level "Flagship" }}
                     {{ $startDate := time .Params.startDate }}
                     {{ $endDate := time .Params.endDate }}
                     {{ if ge $endDate now }}
                         {{ $count := add ($.Scratch.Get "counter") 1 }}
                         {{ $.Scratch.Set "counter" $count }}
-                        <div class="large-supporter is-vertical is-flex fund-{{ $level }}">
+                        <div class="large-supporter is-vertical is-flex fund-{{ .Params.level }}">
                             <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
                                 <a href="{{ .Params.link }}">
                                     <figure>
@@ -34,23 +37,37 @@
                                     </figure>
                                 </a>
                             </article>
-                            
-                                {{ if eq .Params.level "Flagship" }}
-                                    <p class=" partner-title">
-                                        Flagship membership
-                                    </p>
-                                {{ else }}
-                                    <p class="partner-title">
-                                        Large membership
-                                    </p>
-                                {{ end }}
-                                <br>
-                            
+                            <p class="partner-title">Flagship membership</p>
+                            <br>
+                        </div>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        
+            <!-- Then list Large supporters -->
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                {{ if eq .Params.level "Large" }}
+                    {{ $startDate := time .Params.startDate }}
+                    {{ $endDate := time .Params.endDate }}
+                    {{ if ge $endDate now }}
+                        {{ $count := add ($.Scratch.Get "counter") 1 }}
+                        {{ $.Scratch.Set "counter" $count }}
+                        <div class="large-supporter is-vertical is-flex fund-{{ .Params.level }}">
+                            <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
+                                <a href="{{ .Params.link }}">
+                                    <figure>
+                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                                    </figure>
+                                </a>
+                            </article>
+                            <p class="partner-title">Large membership</p>
+                            <br>
                         </div>
                     {{ end }}
                 {{ end }}
             {{ end }}
         </div>
+        
 
         <div class="supporters-grid small-grid">
                 {{ $.Scratch.Set "counter" 0 }}
