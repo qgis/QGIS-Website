@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Changelog for QGIS 3.26"
 draft: false
 HasBanner: false
 sidebar: true
 releaseDate: "2022-06-17"
-
+section: "project"
+type: "visual-changelog"
 ---
-
 {{< content-start >}}
 
 # Changelog for QGIS 3.26 {#changelog326}
