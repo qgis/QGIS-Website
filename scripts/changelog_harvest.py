@@ -66,12 +66,13 @@ def modify_index_file(index_file_path, version, version_formatted, release_date)
 
     # Add front matter
     front_matter = f"""---
-type: "page"
 title: "Changelog for QGIS {version}"
 draft: false
 HasBanner: false
 sidebar: true
 releaseDate: "{release_date}"
+section: "project"
+type: "visual-changelog"
 
 ---
 
