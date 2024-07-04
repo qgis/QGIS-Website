@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Trainings & Research activities using QGIS at NIRD&PR-NERC, Guwahati, India"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/india_guwahati1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Trainings & Research activities using QGIS at NIRD&PR-NERC, Guwahati, India

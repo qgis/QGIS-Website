@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Lynx habitat analysis in the Southern Carpathians"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/europe_lynx1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Lynx habitat analysis in the Southern Carpathians

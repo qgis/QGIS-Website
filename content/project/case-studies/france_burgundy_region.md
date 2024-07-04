@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "The Burgundy Historical Landscapes Working Group"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/france_burgundy.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # The Burgundy Historical Landscapes Working Group

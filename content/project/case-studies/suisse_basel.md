@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS —— an interesting instrument for forestry planning concepts at local and regional level"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/suisse_basel1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS —— an interesting instrument for forestry planning concepts at local and regional level

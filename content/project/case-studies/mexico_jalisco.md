@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Working with QGIS in a spatial data infrastructure of Jalisco in Mexico"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/mexico_jalisco1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Working with QGIS in a spatial data infrastructure of Jalisco in Mexico

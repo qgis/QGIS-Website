@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Using a free GIS at Jaime Moniz Secondary School: QGIS"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/portugal_funchal1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Using a free GIS at Jaime Moniz Secondary School: QGIS

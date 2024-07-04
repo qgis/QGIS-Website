@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS at high school —— the urban green spaces in Rada Tilly coastal town, Chubut province, Argentina"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/argentinia_chubut1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS at high school —— the urban green spaces in Rada Tilly coastal town, Chubut province, Argentina

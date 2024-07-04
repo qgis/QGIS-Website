@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS and GRASS for modelling ecological corridors for wolves in North Portugal"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/portugal_ribeira1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS and GRASS for modelling ecological corridors for wolves in North Portugal

@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS at the Federal Department of Town and Country Planning, Peninsular Malaysia"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/malaysia_kuala1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS at the Federal Department of Town and Country Planning, Peninsular Malaysia

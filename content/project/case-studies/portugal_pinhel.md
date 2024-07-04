@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS and Forest Fire Risk Mapping in Portugal"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/portugal_pinhel1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS and Forest Fire Risk Mapping in Portugal

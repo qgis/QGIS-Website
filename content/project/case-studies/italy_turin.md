@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "The Research Institute for Geo-hydrological Protection of Turin —— Aerial photo archive management"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/italy_turin1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # The Research Institute for Geo-hydrological Protection of Turin —— Aerial photo archive management

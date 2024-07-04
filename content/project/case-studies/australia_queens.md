@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS and GRASS in Local Government Bushfire Hazard Mapping"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/australia_queens1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS and GRASS in Local Government Bushfire Hazard Mapping

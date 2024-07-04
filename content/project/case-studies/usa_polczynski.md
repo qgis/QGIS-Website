@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Historical Gazetteer of the Crimea"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/usa_polczynski_table1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Historical Gazetteer of the Crimea

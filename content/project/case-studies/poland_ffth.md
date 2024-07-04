@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Using QGIS for FTTH/GPON network planning due to the implementation European Digital Agenda"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/poland_ffth/toolbox.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Using QGIS for FTTH/GPON network planning due to the implementation European Digital Agenda

@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS and GRASS applied to paleontological survey in Western Portugal"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/portugal_torres1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS and GRASS applied to paleontological survey in Western Portugal
