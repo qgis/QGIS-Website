@@ -7,6 +7,8 @@ mkShell {
   buildInputs = [
     hugo
     vscode
+    python312Packages.icalendar
+    python312Packages.requests
   ];
   # DIRENV_LOG_FORMAT to reduce direnv verbosity
   # See https://github.com/direnv/direnv/issues/68#issuecomment-162639262
