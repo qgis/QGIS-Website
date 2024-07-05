@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Use of QGIS at the Financial Times Graphics Team"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/ft_europe_migration_balkan-route.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Use of QGIS at the Financial Times Graphics Team

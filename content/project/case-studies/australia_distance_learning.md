@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS for distance learning and teaching GIS at Universities"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/australia_distance_learning1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS for distance learning and teaching GIS at Universities

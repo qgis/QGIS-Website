@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Using open source tools for characterization of a landscape. The LecosS plugin"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/portugal_coimbra1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Using open source tools for characterization of a landscape. The LecosS plugin

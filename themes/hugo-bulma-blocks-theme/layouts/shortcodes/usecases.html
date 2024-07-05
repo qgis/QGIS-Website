@@ -1,7 +1,8 @@
 <div class="grid">
-{{ range (where .Site.Pages "Section" "project") }}
-    {{ range (where .Pages "SectionsPath" "project/case-studies") }}
-        {{ partial "usecase.html" . }}
+  {{ range where .Site.Pages "Section" "project" }}
+    {{ if eq (index .Params "type") "case-study" }}
+      {{ partial "usecase.html" . }}
     {{ end }}
-{{ end }}
+  {{ end }}
 </div>
+  

@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS for monitoring tigers (using camera traps in Nameri Tiger Reserve, Assam, India Sonitpur District)"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/india_assam1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS for monitoring tigers (using camera traps in Nameri Tiger Reserve, Assam, India Sonitpur District)

@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Water Observation and Information System: Enabling the Use of Earth Observation Data for Integrated Water Resource Management in Africa"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/africa_tiger1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Water Observation and Information System: Enabling the Use of Earth Observation Data for Integrated Water Resource Management in Africa

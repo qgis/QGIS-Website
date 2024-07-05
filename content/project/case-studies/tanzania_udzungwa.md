@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Using QGIS for wildlife training in Tanzania"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/tanzania_udzungwa1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Using QGIS for wildlife training in Tanzania

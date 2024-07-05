@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS in the governmental FOSSGIS stack of the Canton of Solothurn in Switzerland"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/suisse_solothurn1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS in the governmental FOSSGIS stack of the Canton of Solothurn in Switzerland

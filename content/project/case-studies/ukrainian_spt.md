@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Ukrainian open initiative of creating tools for spatial planning in the QGIS environment"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/ukraine_spt1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Ukrainian open initiative of creating tools for spatial planning in the QGIS environment

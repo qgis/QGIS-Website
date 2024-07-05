@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Use of QGIS at the Ministry of Social Development of Uruguay (MIDES)"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/uruguay_mides1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Use of QGIS at the Ministry of Social Development of Uruguay (MIDES)

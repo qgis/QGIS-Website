@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Use of python console to prepare offline map from WMS (tile downloader)"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/india_pune1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Use of python console to prepare offline map from WMS (tile downloader)

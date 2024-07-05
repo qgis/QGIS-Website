@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "QGIS and GRASS in Biogeographical Research in the Iberian Peninsula"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/portugal_evora1.png"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # QGIS and GRASS in Biogeographical Research in the Iberian Peninsula

@@ -1,13 +1,12 @@
 ---
-type: "page"
 title: "Using QGIS to Map Hotspot Areas for Biodiversity and Ecosystem Services (HABEaS)"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/portugal_lisbon1.jpg"
-
+section: "project"
+type: "case-study"
 ---
-
 {{< content-start >}}
 
 # Using QGIS to Map Hotspot Areas for Biodiversity and Ecosystem Services (HABEaS)
