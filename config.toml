@@ -1,4 +1,4 @@
-# May be overwritten in .github/workflows/github-pages.yml
+# May be overwritten in .github/workflows/github-pages.yml or other config files
 baseURL = 'https://qgis.org/'
 languageCode = 'en-us'
 title = 'QGIS Web Site'
@@ -82,7 +82,6 @@ corner-radius = "0px"
 
 ## Url to navigation web component
 uniNavHeaderUrl = 'https://qgis.github.io/qgis-uni-navigation/index.js'
-#uniNavHeaderLocationPrefix = "/QGIS-Hugo"
 uniNavHeaderLocationPrefix = ""
 
 ## Url to news feed. After URL change you have to check 
