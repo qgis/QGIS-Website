@@ -443,6 +443,12 @@ sectionPagesMenu = 'main'
   url = "/resources/support/security"
   weight = 190
 
+[outputFormats.Redirects]
+mediaType = "text/plain"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "Redirects"]
 
