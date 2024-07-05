@@ -64,7 +64,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-14535" height="522" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/123-2.png?resize=750%2C522&#038;ssl=1" width="750" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14535" height="522" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/123-2.png?resize=750%2C522&#038;ssl=1" tabindex="0" width="750" /></figure>
 
 
 
@@ -179,7 +179,7 @@ property var overlayFeatureFormDrawer: iface.findItemByObjectName('overlayFeatur
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-14480" height="755" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/projects.png?resize=703%2C755&#038;ssl=1" width="703" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14480" height="755" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/projects.png?resize=703%2C755&#038;ssl=1" tabindex="0" width="703" /></figure>
 
 
 
@@ -187,7 +187,7 @@ property var overlayFeatureFormDrawer: iface.findItemByObjectName('overlayFeatur
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-14479" height="755" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/settings.png?resize=703%2C755&#038;ssl=1" width="703" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14479" height="755" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/settings.png?resize=703%2C755&#038;ssl=1" tabindex="0" width="703" /></figure>
 
 
 
@@ -195,7 +195,7 @@ property var overlayFeatureFormDrawer: iface.findItemByObjectName('overlayFeatur
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-14478" height="755" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/uploads.png?resize=703%2C755&#038;ssl=1" width="703" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14478" height="755" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/uploads.png?resize=703%2C755&#038;ssl=1" tabindex="0" width="703" /></figure>
 
 
 
@@ -215,7 +215,7 @@ property var overlayFeatureFormDrawer: iface.findItemByObjectName('overlayFeatur
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-14477" height="697" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/file_structure.png?resize=750%2C697&#038;ssl=1" width="750" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14477" height="697" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/file_structure.png?resize=750%2C697&#038;ssl=1" tabindex="0" width="750" /></figure>
 
 
 
@@ -257,7 +257,7 @@ homepage=https://www.opengis.ch/</code></pre>
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-14481" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/application-plugins.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-14481" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/application-plugins.png?resize=750%2C386&#038;ssl=1" tabindex="0" width="750" /></figure>
 
 
 

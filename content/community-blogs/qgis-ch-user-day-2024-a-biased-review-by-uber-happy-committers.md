@@ -16,7 +16,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large is-resized is-style-default"><img alt="" class="wp-image-14568" height="422" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/contrib.png?resize=750%2C422&#038;ssl=1" style="width: 840px; height: auto;" width="750" /><figcaption class="wp-element-caption">Contributions to the QGIS core measured in commit numbers</figcaption></figure>
+<figure class="wp-block-image size-large is-resized is-style-default"><img alt="" class="wp-image-14568" height="422" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/contrib.png?resize=750%2C422&#038;ssl=1" style="width: 840px; height: auto;" tabindex="0" width="750" /><figcaption class="wp-element-caption">Contributions to the QGIS core measured in commit numbers</figcaption></figure>
 
 
 
@@ -32,7 +32,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-14562" height="563" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/IMG_20240611_085925.jpg?resize=750%2C563&#038;ssl=1" width="750" /><figcaption class="wp-element-caption">Our CTO Matthias answering QGIS questions</figcaption></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-14562" height="563" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/IMG_20240611_085925.jpg?resize=750%2C563&#038;ssl=1" tabindex="0" width="750" /><figcaption class="wp-element-caption">Our CTO Matthias answering QGIS questions</figcaption></figure>
 
 
 
@@ -96,7 +96,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-14559" height="563" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/1000050805.jpg?resize=750%2C563&#038;ssl=1" width="750" /><figcaption class="wp-element-caption">First ModelBaker user meeting</figcaption></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-14559" height="563" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/06/1000050805.jpg?resize=750%2C563&#038;ssl=1" tabindex="0" width="750" /><figcaption class="wp-element-caption">First ModelBaker user meeting</figcaption></figure>
 
 
 
