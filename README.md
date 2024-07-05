@@ -281,6 +281,16 @@ sidebar: true
 
 Script for parsing release schedule from the google spreadsheet is scripts/update-schedule.py. It creates data/conf.json with variables that can be used later in md/html.
 
+Script for harvesting the visualchangelog from changelog.qgis.org is scripts/changelog_harvest.py. It will create/update a visual-changelogs at content/project/visual-changelogs based on the data at data/conf.json.
+
+Usage:
+```
+$ python scripts/changelog_harvest.py
+
+# For a specific version
+$ python3 scripts/changelog_harvest.py --version 3.34 --release 21.06.2024
+```
+
 Example usage in md:
 
 ```
