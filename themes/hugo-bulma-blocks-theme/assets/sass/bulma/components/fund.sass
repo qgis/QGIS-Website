@@ -10,10 +10,6 @@
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr))
   grid-auto-rows: 100px
   margin-top: 24px
-  img 
-    max-width: 100px
-    max-height: 75px
-    width: 100%
 
   +until-tablet
     grid-template-columns: repeat(auto-fill, minmax(75px, 1fr))
@@ -21,6 +17,10 @@
   img 
     max-width: 75px
     max-height: 50px
+  .tile
+    a
+      width: 100%
+      text-align: center  
 
 .supporters-grid
   display: grid
