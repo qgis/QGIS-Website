@@ -568,7 +568,7 @@ Official All-in-one, signed installers for macOS High Sierra (10.13) and newer c
 
 ## QGIS nightly release
 
-A nightly updated standalone installer from QGIS master can be downloaded from [here](https://qgis.org/downloads/macos/qgis-macos-nightly.dmg).
+A nightly updated standalone installer from QGIS master can be downloaded from [here](/downloads/macos/qgis-macos-nightly.dmg).
 
 ## MacPorts
 
