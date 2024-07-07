@@ -670,12 +670,11 @@ To do so, plugins should subclass `QgsAbstractPluginSource` and pass it to the r
 
 Like other QGIS registries, the profile source registry is available from the `QgsApplication` object: `QgsApplication.profileSourceRegistry()`.
 
-![](images/entries/custom_profile_source.png)
+![Custom profile source example](images/entries/custom_profile_source.png)
 
 This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
-
 ## Notable Fixes 
 
 ### Feature: Bug fixes by Even Rouault (Spatialys)
