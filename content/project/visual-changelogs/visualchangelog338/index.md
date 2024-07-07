@@ -660,6 +660,22 @@ In addition, the processing script editor has been ported to leverage the `QgsCo
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
+### Feature: Register custom elevation profile sources
+
+We've added a new `QgsProfileSourceRegistry` class to allow both core and plugin developers to register profile sources other than map layers (e.g., based on profile web services). 
+
+These custom profile sources can generate elevation profiles that are displayed in the main Elevation Profile dock widget and as layout items.
+
+To do so, plugins should subclass `QgsAbstractPluginSource` and pass it to the registry via `registerProfileSource()`. Likewise, plugins should unregister (most likely on their `unload()` method) their registered sources via `unregisterProfileSource()`.
+
+Like other QGIS registries, the profile source registry is available from the `QgsApplication` object: `QgsApplication.profileSourceRegistry()`.
+
+![](images/entries/custom_profile_source.png)
+
+This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
+
+This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+
 ## Notable Fixes 
 
 ### Feature: Bug fixes by Even Rouault (Spatialys)
