@@ -37,6 +37,9 @@ lr_version = None
 lr_is_ltr = False
 lr_date = None
 
+next_ltr_version = None
+next_lr_version = None
+
 now = datetime.now(timezone.utc)
 
 ocal = Calendar.from_ical(open("scripts/schedule.ics").read())
@@ -135,6 +138,8 @@ for row in reader:
     if dt > now:
         if "PR" in event and pr_date is None:
             pr_date = dt
+            next_lr_version = lr
+            next_ltr_version = ltr
 
         if ("LR" in event or "LTR" in event) and nr_date is None:
             nr_date = dt
@@ -247,6 +252,8 @@ with open("data/conf.json", "w") as f:
         "nextreleasedate": nr_date.strftime('%Y-%m-%d %H:%M:%S UTC') if nr_date is not None else None,
         "nextpointreleasedate": pr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
         "infeaturefreeze": f_date < now,
+        "next_ltr_version": next_ltr_version,
+        "next_lr_version": next_lr_version,
 
         # additional params:
         "yeartag": "%%Y",

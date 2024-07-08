@@ -10,6 +10,15 @@
                     <span > Our stable releases are created by periodically taking a development version and 'hardening' it by focussing only on bugfixes. </span>
                  </span>
             </div>
+            {{ with index .Site.Data.conf }}
+                <div>
+                    Current releases:
+                    <ul class="rm-current">
+                        <li>{{ .ltrrelease }}</li>
+                        <li>{{ .release }}</li>
+                    </ul>
+                </div>
+            {{ end }}
             
         </li>
         <li class="steps-segment is-active">
@@ -68,8 +77,17 @@
                         <span > The exact period between packaging and the availablility of installers varies by platform as maintainers prepare their packages. See the download pages for updates on availability.</span>
                     </span>
                 </div>
+                {{ with index .Site.Data.conf }}
+                    <div>
+                        Next releases: 
+                        <ul class="rm-next">
+                            <li>{{ .next_ltr_version }}</li>
+                            <li>{{ .next_lr_version }}</li>
+                        </ul>
+                    </div>
+                {{ end }}
             </div>
-            </li>
+        </li>
     </ul>
     </div>
 
@@ -83,7 +101,14 @@
                 <span class="help-tip">
                     <span > This is the open stage for accepting new features.</span>
                 </span>
+
             </div>
+            {{ with index .Site.Data.conf }}
+                <div>
+                    Current version: 
+                    <ul class="rm-current"><li>{{ .devversion }}</li></ul> 
+                </div>
+            {{ end }}
             </div>
         </li>
         <li class="steps-segment">
