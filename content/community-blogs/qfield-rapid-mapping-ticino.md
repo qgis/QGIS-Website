@@ -42,6 +42,14 @@ showcase: "planet"
 
 
 
+<h3 class="wp-block-heading">What is needed?</h3>
+
+
+
+<p>Photographing <strong>damaged houses and infrastructure</strong> is the most critical aspect of this mapping initiative. These images provide crucial information for assessing the extent of the damage, planning rescue and reconstruction operations, and ensuring that resources are allocated effectively. It&#8217;s also important to document any <strong>submerged or damaged vehicles</strong>, as they offer additional insights into the disaster&#8217;s impact. During these activities, it&#8217;s essential to be careful and respect the privacy and property of others, <strong>avoiding capturing license plate numbers or entering destroyed buildings</strong> without permission. Using QField Rapid Mapper can contribute to a faster and more coordinated emergency response while ensuring respect for those affected.</p>
+
+
+
 <p>The QFieldCloud infrastructure enables efficient, real-time data collection and sharing, ensuring that accurate and up-to-date information is available to all stakeholders involved in the flood response. This effort underscores our commitment to leveraging technology for <a href="https://qfield.org/sdgs">social good and environmental resilience.</a></p>
 
 
@@ -61,10 +69,6 @@ showcase: "planet"
 
 
 <p>By participating, you will have access to powerful tools for field data collection and can contribute valuable information to the ongoing efforts in Ticino. All the data collected will be released under the Creative Commons CC0 1.0 public domain license.</p>
-
-
-
-<ol></ol>
 
 
 
