@@ -77,7 +77,7 @@ showcase: "planet"
 
 
 		<figure class="wp-block-jetpack-videopress jetpack-videopress-player">
-			
+			<div class="jetpack-videopress-player__wrapper"> </div>
 			
 			
 		</figure>
