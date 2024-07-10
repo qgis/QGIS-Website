@@ -8,9 +8,11 @@ var fuseOptions = {
     includeMatches: true,
     includeScore: true,
     tokenize: true,
+    matchAllTokens: true,
     location: 0,
-    distance: 100,
-    minMatchCharLength: 1,
+    distance: 5000, // Increase this for deeper search based on content character length
+    threshold: 0.55,
+    minMatchCharLength: 2,
     keys: [
         {name: "title", weight: 0.45},
         {name: "contents", weight: 0.4},
@@ -91,7 +93,7 @@ function populateResults(results) {
 
         // Build the snippet and highlight tokens
         snippetHighlights.push(...searchTokens);
-        snippet = contents.substring(0, summaryInclude * 2) + '&hellip;';
+        snippet = createSnippet(contents, searchTokens);
 
         // Replace values for tags
         var tags = "";
@@ -133,6 +135,27 @@ function populateResults(results) {
             });
         }
     });
+}
+
+function createSnippet(contents, tokens) {
+    const snippetLength = 200;
+    let start = 0;
+    let end = snippetLength;
+    tokens.forEach(token => {
+        let tokenPosition = contents.toLowerCase().indexOf(token.toLowerCase());
+        if (tokenPosition > -1) {
+            start = Math.max(0, tokenPosition - 50);
+            end = Math.min(contents.length, tokenPosition + snippetLength - 50);
+        }
+    });
+    let snippet = contents.substring(start, end);
+    if (start > 0) {
+        snippet = '&hellip;' + snippet;
+    }
+    if (end < contents.length) {
+        snippet += '&hellip;';
+    }
+    return snippet;
 }
 
 function render(templateString, data) {
