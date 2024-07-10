@@ -72,36 +72,44 @@ function executeSearch(searchQuery) {
 }
 
 function populateResults(results) {
-
     var searchQuery = document.getElementById("search-query").value;
     var searchResults = document.getElementById("search-results");
+    
+    // Clear previous results
+    searchResults.innerHTML = "";
 
-    // pull template from hugo template definition
+    // Tokenize the search query to handle multiple words
+    var searchTokens = searchQuery.split(/\s+/).filter(token => token.length > 0);
+    
+    // Pull template from Hugo template definition
     var templateDefinition = document.getElementById("search-result-template").innerHTML;
 
     results.forEach(function (value, key) {
-
         var contents = value.item.contents;
         var snippet = "";
         var snippetHighlights = [];
 
-        snippetHighlights.push(searchQuery);
+        // Build the snippet and highlight tokens
+        snippetHighlights.push(...searchTokens);
         snippet = contents.substring(0, summaryInclude * 2) + '&hellip;';
 
-        //replace values
-        var tags = ""
+        // Replace values for tags
+        var tags = "";
         if (value.item.tags) {
             value.item.tags.forEach(function (element) {
-                tags = tags + "<span class='tag is-warning'><a href='{{ "tags/" | absURL }}" + element + "'>" + element + "</a></span>"
+                tags += "<span class='tag is-warning'><a href='/tags/" + element + "'>" + element + "</a></span> ";
             });
         }
-        var categories = ""
+        
+        // Replace values for categories
+        var categories = "";
         if (value.item.categories) {
             value.item.categories.forEach(function (element) {
-                categories = categories + "<span class='tag is-danger'><a href='{{ "categories/" | absURL }}" + element + "'>" + element + "</a></span>"
+                categories += "<span class='tag is-danger'><a href='/categories/" + element + "'>" + element + "</a></span> ";
             });
-        }        
+        }
 
+        // Render the output using the template
         var output = render(templateDefinition, {
             key: key,
             title: value.item.title,
@@ -110,15 +118,20 @@ function populateResults(results) {
             categories: categories,
             snippet: snippet
         });
-        if (output.includes(searchQuery))
-        {
-            searchResults.innerHTML += output;
-        }
-        snippetHighlights.forEach(function (snipvalue, snipkey) {
-            var instance = new Mark(document.getElementById('summary-' + key));
-            instance.mark(snipvalue);
-        });
 
+        // Check if output matches any of the search tokens
+        var matchFound = searchTokens.some(token => output.toLowerCase().includes(token.toLowerCase()));
+
+        // Append the output to the search results if there is a match
+        if (matchFound) {
+            searchResults.innerHTML += output;
+
+            // Highlight each token in the snippet
+            snippetHighlights.forEach(function (snipvalue) {
+                var instance = new Mark(document.getElementById('summary-' + key));
+                instance.mark(snipvalue);
+            });
+        }
     });
 }
 
