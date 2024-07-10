@@ -85,7 +85,7 @@ After installing QGIS, the first launch attempt may fail due to Apple's security
 {{< spoiler-start title="📃 Source Code" >}}
 QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
-QGIS Source Code is available <a href="https://qgis.org/downloads/qgis-latest.tar.bz2">here (latest release)</a> and <a href="https://qgis.org/downloads/qgis-latest-ltr.tar.bz2">here (long term release)</a>
+QGIS Source Code is available <a href="/downloads/qgis-latest.tar.bz2">here (latest release)</a> and <a href="/downloads/qgis-latest-ltr.tar.bz2">here (long term release)</a>
 
 Refer to the installation guide on how to compile QGIS from source for the different platforms: [here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
