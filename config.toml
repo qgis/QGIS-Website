@@ -294,11 +294,18 @@ sectionPagesMenu = 'main'
   weight = 5 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"  
 
+
+[[menu.main]]
+  # parent = "Funding"
+  name = "Goodies"
+  url = "/goodies"
+  weight = 60
+
 [[menu.main]]
   name = "Download"
   url = "/download/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 60 # Sets the menu order 
+  weight = 80 # Sets the menu order 
 
 [[menu.main]]
   name = "Funding"
