@@ -1,31 +1,34 @@
 <div class="container">
     <div class="roadmap  mb-2">
+        {{ with index .Site.Data.conf }}
+            <div class="right-ribbon"><span class="stable">Current: {{ .ltrversion }}</span></div>
+        {{ end }}
     <h3 class="title">Stable Release</h3>
     <ul class="steps is-balanced">
         <li class="steps-segment">
             <span class="steps-marker"></span>
             <div class="steps-content">
-            <div class=" has-text-weight-normal">Initial Release 
+            <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                <span>
+                    Initial Release 
+                </span>
                 <span class="help-tip">
                     <span > Our stable releases are created by periodically taking a development version and 'hardening' it by focussing only on bugfixes. </span>
                  </span>
             </div>
-            {{ with index .Site.Data.conf }}
-                <div>
-                    Current releases:
-                    <ul class="rm-current">
-                        <li>{{ .ltrrelease }}</li>
-                        <li>{{ .release }}</li>
-                    </ul>
-                </div>
-            {{ end }}
             
         </li>
         <li class="steps-segment is-active">
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div>
-                    <div class=" has-text-weight-normal">Point Release
+                    <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                        <span>
+                            Point Release:
+                            {{ with index .Site.Data.conf }}
+                                <span class="rm-current">{{ .next_ltr_version }}</span>
+                            {{ end }}
+                        </span>
                         <span class="help-tip">
                             <span > Each month we create a new point release for our stable version. These releases contain no new features, only bug fixes. </span>
                         </span>
@@ -62,7 +65,8 @@
         <li class="steps-segment is-active">
             <span class="steps-marker"></span>
             <div class="steps-content">
-                <div class=" has-text-weight-normal">Packaging
+                <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                    <span>Packaging</span>
                     <span class="help-tip">
                         <span > Here we tag the release and make it available for packaging on different platforms. </span>
                     </span>
@@ -72,50 +76,41 @@
         <li class="steps-segment is-active">
             <span class="steps-marker"></span>
             <div class="steps-content">
-                <div class=" has-text-weight-normal">Installers available
+                <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                    <span>Installers available</span>
                     <span class="help-tip">
                         <span > The exact period between packaging and the availablility of installers varies by platform as maintainers prepare their packages. See the download pages for updates on availability.</span>
                     </span>
                 </div>
-                {{ with index .Site.Data.conf }}
-                    <div>
-                        Next releases: 
-                        <ul class="rm-next">
-                            <li>{{ .next_ltr_version }}</li>
-                            <li>{{ .next_lr_version }}</li>
-                        </ul>
-                    </div>
-                {{ end }}
             </div>
         </li>
     </ul>
     </div>
 
     <div class="roadmap  mb-6">
+    {{ with index .Site.Data.conf }}
+        <div class="right-ribbon"><span class="development">Current: {{ .version }}</span></div>
+    {{ end }}
     <h3 class="title">Development Version</h3>
     <ul class="steps is-balanced">
         <li class="steps-segment">
             <span class="steps-marker"></span>
             <div class="steps-content">
-            <div class=" has-text-weight-normal">Active development
+            <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                <span>Active development</span>
                 <span class="help-tip">
                     <span > This is the open stage for accepting new features.</span>
                 </span>
 
             </div>
-            {{ with index .Site.Data.conf }}
-                <div>
-                    Current version: 
-                    <ul class="rm-current"><li>{{ .devversion }}</li></ul> 
-                </div>
-            {{ end }}
             </div>
         </li>
         <li class="steps-segment">
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div>
-                    <div class=" has-text-weight-normal">Feature freeze
+                    <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                        <span>Feature freeze</span>
                         <span class="help-tip">
                             <span > During feature freeze, no new features are accepted, only bug fixes and code clean ups.</span>
                         </span>
@@ -152,7 +147,8 @@
         <li class="steps-segment is-active">
             <span class="steps-marker"></span>
             <div class="steps-content">
-                <div class=" has-text-weight-normal">Packaging
+                <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                    <span>Packaging</span>
                     <span class="help-tip">
                         <span > Here we tag the release and make it available for packaging on different platforms.</span>
                     </span>
@@ -190,7 +186,8 @@
         <li class="steps-segment is-active">
             <span class="steps-marker"></span>
             <div class="steps-content">
-                <div class=" has-text-weight-normal">Installers available
+                <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                    <span>Installers available</span>
                     <span class="help-tip">
                         <span > The exact period between packaging and the availablility of installers varies by platform as maintainers prepare their packages. See the download pages for updates on availability.</span>
                     </span>
