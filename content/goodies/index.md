@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: "Diversity statement"
+title: "Goodies"
 subtitle: ""
 draft: false
 sidebar: true
