@@ -17,7 +17,7 @@ url: "/download/thank-you"
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Tips for first launch
 If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time.
-<a href="resources/installation-guide">Installation guide  </a>
+<a href="/resources/installation-guide">Installation guide  </a>
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
