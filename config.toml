@@ -15,6 +15,12 @@ pygmentsCodefences = true
 # Folders in these folders get published automatically
 staticDir = ['static']
 
+# See https://gohugo.io/templates/robots/
+# Set it to false to create a robots.txt file without using a template.
+# The file robot.txt will be copied into the root folder when building
+# the static file
+enableRobotsTXT = false
+
 [taxonomies]
   category = 'categories'
   series = 'series'

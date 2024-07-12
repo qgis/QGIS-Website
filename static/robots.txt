@@ -1,0 +1,88 @@
+# robots.txt for qgis.org
+# Protecting against malicious bots, unwanted crawling, and AI bots
+
+User-agent: *
+# Disallow crawling of sensitive sections
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /wp-admin/
+Disallow: /xmlrpc.php
+Disallow: /wp-login.php
+
+# Disallow specific file types
+Disallow: /*.php$
+Disallow: /*.cgi$
+Disallow: /*.asp$
+Disallow: /*.aspx$
+Disallow: /*.jsp$
+
+# Allow crawling of the main sections
+Allow: /$
+Allow: /docs/
+Allow: /about/
+Allow: /download/
+Allow: /support/
+
+# Specify the location of the sitemap
+Sitemap: https://qgis.org/sitemap.xml
+
+# Block known bad bots and AI bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+# Block AI bots and data scrapers
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OpenAI-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# Block specific user agents (examples)
+User-agent: BadBot
+Disallow: /
+
+User-agent: EvilBot
+Disallow: /
+
+User-agent: NastyBot
+Disallow: /
+
+# Allow specific user agents (examples)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
