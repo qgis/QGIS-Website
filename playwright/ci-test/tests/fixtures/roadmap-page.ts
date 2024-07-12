@@ -26,7 +26,7 @@ export class RoadmapPage {
     public readonly textList: string[] = [
         "Road Map",
         "Stable Release",
-        "Development Version",
+        "Latest Release",
         "Development phase",
         "Feature freeze",
         "Release",
