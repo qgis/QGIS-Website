@@ -91,7 +91,7 @@
     {{ with index .Site.Data.conf }}
         <div class="right-ribbon"><span class="development">Current: {{ .version }}</span></div>
     {{ end }}
-    <h3 class="title">Development Version</h3>
+    <h3 class="title">Latest Release</h3>
     <ul class="steps is-balanced">
         <li class="steps-segment">
             <span class="steps-marker"></span>
@@ -110,7 +110,56 @@
             <div class="steps-content">
                 <div>
                     <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
-                        <span>Feature freeze</span>
+                        <span>
+                            Point Release:
+                            {{ with index .Site.Data.conf }}
+                                <span class="rm-next">{{ .next_lr_version }}</span>
+                            {{ end }}
+                        </span>
+                        <span class="help-tip">
+                            <span > Each month we create a new point release for our latest version. These releases contain no new features, only bug fixes. </span>
+                        </span>
+                    </div>
+                    <nav id="latest-point-release" class="level">
+                        <div class="level-item is-narrow has-text-centered">
+                            <div>
+                                <p class="days heading is-size-7 tag "></p>
+                                <p class="is-size-7"> Days  </p>
+                            </div>
+                        </div>
+                        <div class="level-item is-narrow has-text-centered">
+                            <div>
+                            <p class="hours heading is-size-7 tag "></p>
+                            <p class="is-size-7"> Hours </p>
+                            </div>
+                        </div>
+                        <div class="level-item is-narrow has-text-centered">
+                            <div>
+                                <p class="minutes heading is-size-7 tag "></p>
+                                <p class="is-size-7">Min.</p>
+                            </div>
+                        </div>
+                        <div class="level-item is-narrow has-text-centered">
+                            <div>
+                                <p class="seconds heading is-size-7 tag "></p>
+                                <p class="is-size-7">Sec.</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </li>
+        <li class="steps-segment">
+            <span class="steps-marker"></span>
+            <div class="steps-content">
+                <div>
+                    <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                        <span>
+                            Feature freeze:
+                            {{ with index .Site.Data.conf }}
+                                <span class="rm-next">{{ .devversion }}</span>
+                            {{ end }}
+                        </span>
                         <span class="help-tip">
                             <span > During feature freeze, no new features are accepted, only bug fixes and code clean ups.</span>
                         </span>
@@ -148,7 +197,12 @@
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
-                    <span>Packaging</span>
+                    <span>
+                        Packaging:
+                        {{ with index .Site.Data.conf }}
+                            <span class="rm-next">{{ .nextversion }}</span>
+                        {{ end }}
+                    </span>
                     <span class="help-tip">
                         <span > Here we tag the release and make it available for packaging on different platforms.</span>
                     </span>
@@ -251,6 +305,7 @@
       const nextPointReleaseDate = new Date(nextPointReleaseDateStr.replace(" ", "T").replace(" UTC", "Z"))
 
       initializeClock('point-release', nextPointReleaseDate);
+      initializeClock('latest-point-release', nextPointReleaseDate);
       initializeClock('freeze', nextFreezeDate);
       initializeClock('package', nextReleaseDate);
     </script>
