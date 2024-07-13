@@ -8,11 +8,15 @@ draft: "true"
 showcase: "planet"
 ---
 
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-9114" height="131" src="https://anitagraser.com/wp-content/uploads/2024/07/movingpandas-1.png?w=545" tabindex="0" width="545" /></figure>
+
+
+
 <p>Last week, I had the pleasure to meet some of the people behind the OGC Moving Features Standard Working group at the IEEE Mobile Data Management Conference (MDM2024). While chatting about the Moving Features (MF) support in <a href="https://movingpandas.org">MovingPandas</a>, I realized that, after the <a href="https://anitagraser.com/2022/04/23/mf-json-update-tutorial-with-official-sample/">MF-JSON update &amp; tutorial with official sample</a> post, we never published a complete tutorial on working with <a href="https://docs.ogc.org/is/19-045r3/19-045r3.html">MF-JSON</a> encoded data in <a href="https://movingpandas.org">MovingPandas</a>. </p>
 
 
 
-<figure class="wp-block-image size-large"><a href="https://github.com/opengeospatial/mf-swg"><img alt="" class="wp-image-9082" src="https://anitagraser.com/wp-content/uploads/2024/07/image-8-1.png?w=186" /></a></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-9084" height="88" src="https://anitagraser.com/wp-content/uploads/2024/07/image-9-1.png?w=186" tabindex="0" width="186" /></figure>
 
 
 

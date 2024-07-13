@@ -8,6 +8,10 @@ draft: "true"
 showcase: "planet"
 ---
 
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-9114" height="131" src="https://anitagraser.com/wp-content/uploads/2024/07/movingpandas-1.png?w=545" tabindex="0" width="545" /></figure>
+
+
+
 <p>With the release of GeoPandas 1.0 this month, we&#8217;ve been finally able to close a long-standing issue in MovingPandas by <strong><a href="https://github.com/movingpandas/movingpandas/commit/bd13a62aec2ea8eb6f9bde144dcb2ed2818905ef">adding support for the explore function</a></strong> which provides interactive maps using Folium and Leaflet. </p>
 
 
