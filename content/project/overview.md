@@ -183,7 +183,7 @@ Benefit from the powerful symbology, labeling and blending features to impress t
 The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS out of the office.
 
 * [QField]({{< ref "download.md" >}})
-* [Mergin Maps Input app]({{< ref "download.md" >}})
+* [Mergin Maps mobile app]({{< ref "download.md" >}})
 * [IntraMaps Roam]({{< ref "download.md" >}})
 
 {{< rich-content-end >}}
