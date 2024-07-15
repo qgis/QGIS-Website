@@ -4,6 +4,7 @@
     &:hover
       color: black
   .rm-future
+    font-weight: 600
     color: #4D6370
   .rm-current
     font-weight: 600
@@ -20,15 +21,20 @@ div
   &.roadmap
     background: #f4f7f9
     padding: 2rem
-    border-radius: 10px  
+    border-radius: 10px
+    position: relative  
 
 .content .steps
   margin-left: 0rem 
   .steps-content
     margin-top: 0.5rem
-    max-width: 140px
+    max-width: 200px
+    font-size: 11pt
     +mobile
       max-width: 100%
+    div
+      +mobile
+        display: block !important
 
   .tag
     margin-top: 0.25rem
@@ -59,22 +65,20 @@ div
   .steps:not(.is-hollow) .steps-segment.is-active ~ .steps-segment .steps-marker:not(.is-hollow), .steps-segment.is-active ~ .steps-segment:after, .steps-segment.is-active:after
     background-color: #dbe5eb
   .steps:not(.is-vertical) .steps-content
-    margin-left: 0.75rem
-
+    margin-left: 0
+    +mobile
+      margin-left: 0.75rem
 
 .help-tip
-  position: absolute
   text-align: center
   background-color: #dbe5eb
   border-radius: 50%
   width: 24px
   height: 24px
   font-size: 14px
-  line-height: 26px
   cursor: default
-  margin: 3px 0px 0px 5px
+  margin: 3px 5px 0px 0px
   +mobile
-        display: block
         width: 100%
         height: auto
         position: relative
@@ -141,11 +145,77 @@ div
       +mobile
         display: none !important
 
+.right-ribbon
+  position: absolute
+  right: -5px
+  top: -5px
+  z-index: 1
+  overflow: hidden
+  width: 150px
+  height: 150px
+  text-align: right
+
+.right-ribbon span
+  color: #fff
+  text-align: center
+  font-size: 14pt
+  font-weight: 500
+  line-height: 40px
+  transform: rotate(45deg)
+  width: 200px
+  display: block
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1)
+  position: absolute
+  top: 39px
+  right: -41px
+
+.right-ribbon
+  .stable
+    background: #3a9800
+  .latest
+    background: #ee7913
+  .development
+    background: #4D6370
 
 
+.right-ribbon span::before
+  content: ''
+  position: absolute
+  left: 0px
+  top: 100%
+  z-index: -1
+  border-right: 3px solid transparent
+  border-bottom: 3px solid transparent
 
+.right-ribbon .stable::before
+  border-left: 3px solid #3a9800
+  border-top: 3px solid #3a9800
 
+.right-ribbon .latest::before
+  border-left: 3px solid #ee7913
+  border-top: 3px solid #ee7913
 
+.right-ribbon .development::before
+  border-left: 3px solid #4D6370
+  border-top: 3px solid #4D6370
 
+.right-ribbon span::after
+  content: ''
+  position: absolute
+  right: 0%
+  top: 100%
+  z-index: -1
+  border-left: 3px solid transparent
+  border-bottom: 3px solid transparent
 
-    
+.right-ribbon .stable::after
+  border-right: 3px solid #3a9800
+  border-top: 3px solid #3a9800
+
+.right-ribbon .latest::after
+  border-right: 3px solid #ee7913
+  border-top: 3px solid #ee7913
+
+.right-ribbon .development::after
+  border-right: 3px solid #4D6370
+  border-top: 3px solid #4D6370
