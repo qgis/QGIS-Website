@@ -548,6 +548,8 @@ An option to limit the number of child features returned when expanding is provi
 
 ![](images/entries/457f84d686c8c91d0fc894920ab462511226c0d2)
 
+This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 ### Feature: Add support for SensorThings Multidatastreams
@@ -555,6 +557,8 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 This adds support for the Multidatastream entity type, as implemented in the SensorThings version 1.1 "MultiDatastream extension".
 
 While the specification mandates that MultiDatastreams have an optional polygon geometry, many servers expose different geometry types for this entity or return errors when attempting to read the geometries from MultiDatastreams. Accordingly, QGIS now exposes an option to load MultiDatastreams as geometryless layers alongside the default option to load them as polygon layers, allowing users to handle a wider range of connections.
+
+This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -580,6 +584,8 @@ This allows setting custom filters on the layer, using the SensorThings filter s
 
 A custom layer filter GUI is provided for SensorThings layer filters, making it easier for users to craft valid filters using the SensorThings filter language.
 
+This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 ## Profile Plots 
@@ -603,6 +609,8 @@ This feature was developed by [Benoit D.-M. - oslandia](https://github.com/benoi
 Allows users to set an extent limit for the layer so that features are only ever loaded within this extent.
 
 The extent can be set using the data source manager before initially adding the layer, or modified within the source tab if the layer properties.
+
+This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
