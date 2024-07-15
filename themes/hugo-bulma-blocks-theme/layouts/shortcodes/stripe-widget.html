@@ -31,7 +31,7 @@
     </div>
 </div>
 
-{{ $donatejs := resources.Get "js/donate.js" }}
+{{ $donatejs := resources.Get "js/donate.js" | resources.Minify }}
 <script
     src="{{ $donatejs.RelPermalink }}"
 ></script>

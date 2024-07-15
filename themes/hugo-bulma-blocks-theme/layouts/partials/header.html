@@ -81,7 +81,7 @@
             when piping them in a single line.
         */}}
         {{ $bulmasass := resources.Get "sass/bulma.sass" }}
-        {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
+        {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
         <link href="{{ $bulmacss.RelPermalink }}" rel="stylesheet" />
 
         {{ $menucss := resources.Get "css/menu.css" }}
@@ -94,12 +94,12 @@
         {{ $overridescss := resources.Get "css/bulma-overrides.css" }}
         {{ $cookiecss := resources.Get "css/cookie.css" }}
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
-        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss | resources.Concat "/css/all.css" | resources.Fingerprint }}
+        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
         <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
         {{/* We can compile SASS too... */}}
         {{ $sass := resources.Get "sass/style.sass" }}
-        {{ $style := $sass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Fingerprint }}
+        {{ $style := $sass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
         <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
         {{/* Fontawesome related stuff here
@@ -143,7 +143,7 @@
         />
 
         {{/* QR Encoding Logic */}}
-        {{ $qrencodejs := resources.Get "js/qrcodegen-v1.8.0-es6.js" | resources.Fingerprint }}
+        {{ $qrencodejs := resources.Get "js/qrcodegen-v1.8.0-es6.js"| resources.Minify | resources.Fingerprint }}
         <script defer src="{{ $qrencodejs.RelPermalink }}"></script>
 
         {{/* Homegrown JS functions */}}
@@ -154,14 +154,14 @@
         {{ $fusejs := resources.Get "js/fuse.js" }}
         {{ $markjs := resources.Get "js/mark.min.js" }}
         {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
-        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs | resources.Concat "js/all.js" | resources.Fingerprint }}
+        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ if (eq .Site.Params.cookiesstate true) }}
             {{ $cookiejs := resources.Get "js/cookie.js" }}
-            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $cookiejs | resources.Concat "js/all.js" | resources.Fingerprint }}
+            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ end }}   
         <script defer src="{{ $js.RelPermalink }}"></script> 
         {{/* Search needs to be rendered as a template to ensure urls are correct */}}
-        {{ $searchjs := resources.Get "js/search.js" | resources.ExecuteAsTemplate "search.js" . | resources.Fingerprint }}
+        {{ $searchjs := resources.Get "js/search.js" | resources.ExecuteAsTemplate "search.js" . | resources.Minify | resources.Fingerprint }}
         <script defer src="{{ $searchjs.RelPermalink }}"></script>
         <script
             crossorigin=""
