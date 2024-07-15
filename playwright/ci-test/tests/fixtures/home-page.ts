@@ -109,8 +109,7 @@ export class HomePage {
             name: "Free download",
         });
         this.youTubeVideoThumbnailOverlayImage = this.page
-            .frameLocator('iframe[title="YouTube video player"]')
-            .locator(".ytp-cued-thumbnail-overlay-image");
+            .locator('.youtube');
         this.startUsingQGISHeading = this.page.getByRole("heading", {
             name: "Start using QGIS 🚀",
         });
@@ -139,8 +138,7 @@ export class HomePage {
             ".explore > .columns > div > figure > img",
         );
         this.changeLogVideo = this.page
-            .frameLocator('iframe[title="YouTube video player"]')
-            .locator(".ytp-cued-thumbnail-overlay-image");
+            .locator('.youtube');
         this.otherSupporters = this.page
             .locator(".container > div:nth-child(3)")
             .first();

@@ -69,15 +69,49 @@
         </div>
     </div>
     <div class="tile video">
-        <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/oktjj7xBZ54"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-        ></iframe>
+        <div class="youtube" data-video-id="oktjj7xBZ54">
+            <div class="play-button"></div>
+        </div>
+
     </div>
 </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var youtubeElements = document.querySelectorAll('.youtube');
+    
+    youtubeElements.forEach(function(element) {
+        var videoId = element.getAttribute('data-video-id');
+        var maxResThumbnailUrl = 'https://img.youtube.com/vi/' + videoId + '/maxresdefault.jpg';
+        var fallbackThumbnailUrl = 'https://img.youtube.com/vi/' + videoId + '/hqdefault.jpg';
+
+        // Check if the max resolution thumbnail is available
+        var img = new Image();
+        img.onload = function() {
+            if (img.width > 120) {
+                element.style.backgroundImage = 'url(' + maxResThumbnailUrl + ')';
+            } else {
+                element.style.backgroundImage = 'url(' + fallbackThumbnailUrl + ')';
+            }
+        };
+        img.onerror = function() {
+            element.style.backgroundImage = 'url(' + fallbackThumbnailUrl + ')';
+        };
+        img.src = maxResThumbnailUrl;
+
+        element.addEventListener('click', function() {
+            var iframe = document.createElement('iframe');
+            iframe.setAttribute('width', '560');
+            iframe.setAttribute('height', '315');
+            iframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1');
+            iframe.setAttribute('frameborder', '0');
+            iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+            iframe.setAttribute('allowfullscreen', 'true');
+            this.innerHTML = '';
+            this.appendChild(iframe);
+        });
+    });
+});
+
+</script>
