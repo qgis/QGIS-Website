@@ -1,9 +1,9 @@
 <div class="container">
-    <div class="roadmap  mb-2">
+    <div class="roadmap  mb-4">
         {{ with index .Site.Data.conf }}
             <div class="right-ribbon"><span class="stable">Current: {{ .ltrversion }}</span></div>
         {{ end }}
-    <h3 class="title">Stable Release</h3>
+    <h3 class="title">Long Term Release (LTR)</h3>
     <ul class="steps is-balanced">
         <li class="steps-segment">
             <span class="steps-marker"></span>
@@ -87,25 +87,26 @@
     </ul>
     </div>
 
-    <div class="roadmap  mb-6">
+    <div class="roadmap  mb-4">
     {{ with index .Site.Data.conf }}
-        <div class="right-ribbon"><span class="development">Current: {{ .version }}</span></div>
+        <div class="right-ribbon"><span class="latest">Current: {{ .version }}</span></div>
     {{ end }}
     <h3 class="title">Latest Release</h3>
     <ul class="steps is-balanced">
         <li class="steps-segment">
             <span class="steps-marker"></span>
             <div class="steps-content">
-            <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
-                <span>Active development</span>
-                <span class="help-tip">
-                    <span > This is the open stage for accepting new features.</span>
+            <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                <span>
+                    Initial Release 
                 </span>
-
+                <span class="help-tip">
+                    <span > Our stable releases are created by periodically taking a development version and 'hardening' it by focussing only on bugfixes. </span>
+                 </span>
             </div>
-            </div>
+            
         </li>
-        <li class="steps-segment">
+        <li class="steps-segment is-active">
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div>
@@ -149,91 +150,14 @@
                 </div>
             </div>
         </li>
-        <li class="steps-segment">
-            <span class="steps-marker"></span>
-            <div class="steps-content">
-                <div>
-                    <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
-                        <span>
-                            Feature freeze:
-                            {{ with index .Site.Data.conf }}
-                                <span class="rm-next">{{ .devversion }}</span>
-                            {{ end }}
-                        </span>
-                        <span class="help-tip">
-                            <span > During feature freeze, no new features are accepted, only bug fixes and code clean ups.</span>
-                        </span>
-                    </div>
-                    <nav id="freeze" class="level">
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                                <p class="days heading is-size-7 tag "></p>
-                                <p class="is-size-7">Days</p>
-                            </div>
-                        </div>
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                            <p class="hours heading is-size-7 tag "></p>
-                            <p class="is-size-7">Hours</p>
-                            </div>
-                        </div>
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                                <p class="minutes heading is-size-7 tag "></p>
-                                <p class="is-size-7">Min.</p>
-                            </div>
-                        </div>
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                                <p class="seconds heading is-size-7 tag "></p>
-                                <p class="is-size-7">Sec.</p>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </li>
         <li class="steps-segment is-active">
             <span class="steps-marker"></span>
             <div class="steps-content">
-                <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
-                    <span>
-                        Packaging:
-                        {{ with index .Site.Data.conf }}
-                            <span class="rm-next">{{ .nextversion }}</span>
-                        {{ end }}
-                    </span>
+                <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                    <span>Packaging</span>
                     <span class="help-tip">
-                        <span > Here we tag the release and make it available for packaging on different platforms.</span>
+                        <span > Here we tag the release and make it available for packaging on different platforms. </span>
                     </span>
-                </div>
-                <div>
-                    <nav id="package" class="level">
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                                <p class="days heading is-size-7 tag "></p>
-                                <p class="is-size-7">Days</p>
-                            </div>
-                        </div>
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                            <p class="hours heading is-size-7 tag "></p>
-                            <p class="is-size-7">Hours</p>
-                            </div>
-                        </div>
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                                <p class="minutes heading is-size-7 tag "></p>
-                                <p class="is-size-7">Min.</p>
-                            </div>
-                        </div>
-                        <div class="level-item is-narrow has-text-centered">
-                            <div>
-                                <p class="seconds heading is-size-7 tag "></p>
-                                <p class="is-size-7">Sec.</p>
-                            </div>
-                        </div>
-                    </nav>
                 </div>
             </div>
         </li>
@@ -250,6 +174,123 @@
             </li>
     </ul>
     </div>
+
+    <div class="roadmap  mb-6">
+        {{ with index .Site.Data.conf }}
+            <div class="right-ribbon"><span class="development">Future: {{ .nextversion }}</span></div>
+        {{ end }}
+        <h3 class="title">Development Version</h3>
+        <ul class="steps is-balanced">
+            <li class="steps-segment">
+                <span class="steps-marker"></span>
+                <div class="steps-content">
+                <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                    <span>Active development</span>
+                    <span class="help-tip">
+                        <span > This is the open stage for accepting new features.</span>
+                    </span>
+    
+                </div>
+                </div>
+            </li>
+            <li class="steps-segment">
+                <span class="steps-marker"></span>
+                <div class="steps-content">
+                    <div>
+                        <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                            <span>
+                                Feature freeze:
+                                {{ with index .Site.Data.conf }}
+                                    <span class="rm-future">{{ .devversion }}</span>
+                                {{ end }}
+                            </span>
+                            <span class="help-tip">
+                                <span > During feature freeze, no new features are accepted, only bug fixes and code clean ups.</span>
+                            </span>
+                        </div>
+                        <nav id="freeze" class="level">
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                    <p class="days heading is-size-7 tag "></p>
+                                    <p class="is-size-7">Days</p>
+                                </div>
+                            </div>
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                <p class="hours heading is-size-7 tag "></p>
+                                <p class="is-size-7">Hours</p>
+                                </div>
+                            </div>
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                    <p class="minutes heading is-size-7 tag "></p>
+                                    <p class="is-size-7">Min.</p>
+                                </div>
+                            </div>
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                    <p class="seconds heading is-size-7 tag "></p>
+                                    <p class="is-size-7">Sec.</p>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </li>
+            <li class="steps-segment is-active">
+                <span class="steps-marker"></span>
+                <div class="steps-content">
+                    <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                        <span>
+                            Packaging
+                        </span>
+                        <span class="help-tip">
+                            <span > Here we tag the release and make it available for packaging on different platforms.</span>
+                        </span>
+                    </div>
+                    <div>
+                        <nav id="package" class="level">
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                    <p class="days heading is-size-7 tag "></p>
+                                    <p class="is-size-7">Days</p>
+                                </div>
+                            </div>
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                <p class="hours heading is-size-7 tag "></p>
+                                <p class="is-size-7">Hours</p>
+                                </div>
+                            </div>
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                    <p class="minutes heading is-size-7 tag "></p>
+                                    <p class="is-size-7">Min.</p>
+                                </div>
+                            </div>
+                            <div class="level-item is-narrow has-text-centered">
+                                <div>
+                                    <p class="seconds heading is-size-7 tag "></p>
+                                    <p class="is-size-7">Sec.</p>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </li>
+            <li class="steps-segment is-active">
+                <span class="steps-marker"></span>
+                <div class="steps-content">
+                    <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left">
+                        <span>Installers available</span>
+                        <span class="help-tip">
+                            <span > The exact period between packaging and the availablility of installers varies by platform as maintainers prepare their packages. See the download pages for updates on availability.</span>
+                        </span>
+                    </div>
+                </div>
+                </li>
+        </ul>
+        </div>
 </div>
 <script>
     /** Script graciously provided at https://codepen.io/SitePoint/pen/MwNPVq */

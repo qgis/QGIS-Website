@@ -4,6 +4,7 @@
     &:hover
       color: black
   .rm-future
+    font-weight: 600
     color: #4D6370
   .rm-current
     font-weight: 600
@@ -171,8 +172,10 @@ div
 .right-ribbon
   .stable
     background: #3a9800
-  .development
+  .latest
     background: #ee7913
+  .development
+    background: #4D6370
 
 
 .right-ribbon span::before
@@ -188,9 +191,13 @@ div
   border-left: 3px solid #3a9800
   border-top: 3px solid #3a9800
 
-.right-ribbon .development::before
+.right-ribbon .latest::before
   border-left: 3px solid #ee7913
   border-top: 3px solid #ee7913
+
+.right-ribbon .development::before
+  border-left: 3px solid #4D6370
+  border-top: 3px solid #4D6370
 
 .right-ribbon span::after
   content: ''
@@ -205,6 +212,10 @@ div
   border-right: 3px solid #3a9800
   border-top: 3px solid #3a9800
 
-.right-ribbon .development::after
+.right-ribbon .latest::after
   border-right: 3px solid #ee7913
   border-top: 3px solid #ee7913
+
+.right-ribbon .development::after
+  border-right: 3px solid #4D6370
+  border-top: 3px solid #4D6370
