@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: "Releases"
+title: "Archive"
 subtitle: ""
 draft: false
 sidebar: true
@@ -10,7 +10,7 @@ Reviewer: Tim Sutton
 
 {{< content-start  >}}
 
-# Release Archive
+# Archive
 
 Previous releases of QGIS are available at the following locations:
 
