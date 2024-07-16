@@ -49,7 +49,7 @@ Join a community of like-minded individuals in your region.
 [Local groups list]({{< ref "community/groups.md" >}})
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
-![Local user groups](../../project/img/groupss.jpg "Local user groups")
+![Local user groups](../../project/img/groups.jpg "Local user groups")
 {{< rich-right-end >}}
 {{< rich-box-end >}}
 
