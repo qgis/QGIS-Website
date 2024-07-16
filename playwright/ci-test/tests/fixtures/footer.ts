@@ -20,7 +20,7 @@ export class Footer {
     public readonly membersBlogsList: Locator;
     public readonly documentationLink: Locator;
     public readonly installationGuideLink: Locator;
-    public readonly releasesLink: Locator;
+    public readonly archiveLink: Locator;
     public readonly roadmapLink: Locator;
     public readonly reportsLink: Locator;
     public readonly booksLink: Locator;
@@ -86,7 +86,6 @@ export class Footer {
         this.installationGuideLink = this.liElement.filter({
             hasText: "Installation guide",
         });
-        this.releasesLink = this.banner.getByRole("link", { name: "Releases" });
         this.roadmapLink = this.banner.getByRole("link", { name: "Roadmap" });
         this.reportsLink = this.banner.getByRole("link", { name: "Reports" });
         this.booksLink = this.banner.getByRole("link", { name: "Books" });
@@ -111,6 +110,7 @@ export class Footer {
             name: "Visual Style Guide",
         });
         this.goodiesLink = this.page.getByRole("link", { name: "Goodies" });
+        this.archiveLink = this.page.getByRole("link", { name: "Archive" });
         this.logoImage = this.page.getByRole("img", { name: "Logo" });
         this.facebookLink = this.page.getByRole("link", { name: "" });
         this.youtubeLink = this.page.getByRole("link", { name: "" });

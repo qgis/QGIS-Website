@@ -19,7 +19,7 @@ export class Sidebar {
     public readonly documentationLink: Locator;
     public readonly membershipLink: Locator;
     public readonly installationGuideLink: Locator;
-    public readonly releasesLink: Locator;
+    public readonly archiveLink: Locator;
     public readonly roadmapLink: Locator;
     public readonly reportsLink: Locator;
     public readonly booksLink: Locator;
@@ -85,8 +85,8 @@ export class Sidebar {
             name: "Installation guide",
         });
 
-        this.releasesLink = this.sidebar.getByRole("link", {
-            name: "Releases",
+        this.archiveLink = this.sidebar.getByRole("link", {
+            name: "Archive",
             exact: true,
         });
 
