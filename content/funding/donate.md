@@ -50,8 +50,8 @@ Use the details below to make a donation via international money transfer:
 {{< rich-right-start >}}  
 <pre class="donatbox">
 Account name: QGIS.ORG
-Address:      Boeschacherstrasse 10a
-              CH-8624 Gruet
+Address:      Via Geinas 2
+              CH-7031 Laax
 BIC/SWIFT:    POFICHBEXXX
 IBAN:         CH09 0900 0000 9146 3839 8
 Reference:    Donation QGIS
