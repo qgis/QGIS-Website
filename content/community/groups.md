@@ -57,7 +57,7 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis-australia.org/" icon="🇦🇺" layoutClass="half" listTitle="QGIS Australia" listSubtitle="Contact: Emma Hain" >}}
 
-{{< rich-list listLink="http://qgis.us" icon="🇺🇸" layoutClass="half" listTitle="QGIS USA" listSubtitle="Contact: Kurt Menke" >}}
+{{< rich-list listLink="http://qgis-us.org" icon="🇺🇸" layoutClass="half" listTitle="QGIS USA" listSubtitle="Contact: Randal Hale" >}}
 
 {{< rich-list listLink="https://qgis.mx" icon="🇲🇽" layoutClass="half" listTitle="QGIS Mexico" listSubtitle="Contact: Hennessy Amor Becerra Ayala" >}}
 
