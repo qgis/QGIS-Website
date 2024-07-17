@@ -39,11 +39,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 var prevScrollpos = window.scrollY;
+var isTyping = false;
+
+// Get the input element
+var searchInput = document.getElementById("search-query");
+
+// Add focus and blur event listeners to the input
+searchInput.addEventListener("focus", function() {
+    isTyping = true;
+});
+
+searchInput.addEventListener("blur", function() {
+    isTyping = false;
+});
+
 window.onscroll = function () {
     var currentScrollPos = window.scrollY;
-    if (prevScrollpos > currentScrollPos) {
+
+    if (prevScrollpos > currentScrollPos || isTyping) {
+        // Show the news&search bar
         document.getElementById("context").style.top = "4rem";
     } else {
+        // Hide the news&search bar
         document.getElementById("context").style.top = "-2em";
     }
     prevScrollpos = currentScrollPos;
