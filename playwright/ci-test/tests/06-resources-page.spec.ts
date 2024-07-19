@@ -2,7 +2,6 @@ import { test as base, expect } from "@playwright/test";
 import { Sidebar } from "./fixtures/sidebar";
 import { QgisResourcesPage } from "./fixtures/qgis-resources-page";
 import { InstallationGuidePage } from "./fixtures/installation-guide-page";
-import { ReleasesPage } from "./fixtures/releases-page";
 import { RoadmapPage } from "./fixtures/roadmap-page";
 import { ReportsPage } from "./fixtures/report-page";
 import { BooksPage } from "./fixtures/books-page";
@@ -11,7 +10,6 @@ type ResourcesPageFixtures = {
     sidebar: Sidebar;
     qgisResourcesPage: QgisResourcesPage;
     installationGuidePage: InstallationGuidePage;
-    releasesPage: ReleasesPage;
     roadmapPage: RoadmapPage;
     reportsPage: ReportsPage;
     booksPage: BooksPage;
@@ -29,10 +27,6 @@ const test = base.extend<ResourcesPageFixtures>({
     installationGuidePage: async ({ page }, use) => {
         const installationGuidePage = new InstallationGuidePage(page);
         await use(installationGuidePage);
-    },
-    releasesPage: async ({ page }, use) => {
-        const releasesPage = new ReleasesPage(page);
-        await use(releasesPage);
     },
     roadmapPage: async ({ page }, use) => {
         const roadmapPage = new RoadmapPage(page);
@@ -197,20 +191,6 @@ test.describe("Resources pages", () => {
         for (const text of installationGuidePage.textList) {
             await expect(installationGuidePage.pageBody).toContainText(text);
         }
-    });
-
-    test("Releases", async ({ page, sidebar, releasesPage }) => {
-        await expect(sidebar.releasesLink).toBeVisible();
-        await sidebar.releasesLink.click();
-
-        for (const text of releasesPage.textList) {
-            await expect(releasesPage.pageBody).toContainText(text);
-        }
-        await expect(releasesPage.releaseHeading).toBeVisible();
-        await expect(releasesPage.downloadLink).toBeVisible();
-        await expect(releasesPage.macOsReleaseLink).toBeVisible();
-        await expect(releasesPage.osgeoDownloadLink).toBeVisible();
-        await expect(releasesPage.pluginsLink).toBeVisible();
     });
 
     test("Roadmap", async ({ sidebar, roadmapPage }) => {

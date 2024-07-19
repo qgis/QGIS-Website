@@ -50,7 +50,6 @@ test.describe("Home page", () => {
         await header.resourcesLink.hover();
         await expect(header.documentationLink).toBeVisible();
         await expect(header.installationGuideLink).toBeVisible();
-        await expect(header.releasesLink).toBeVisible();
         await expect(header.roadmapLink).toBeVisible();
         await expect(header.reportsLink).toBeVisible();
         await expect(header.booksLink).toBeVisible();
@@ -112,7 +111,7 @@ test.describe("Home page", () => {
         await expect(footer.membersBlogsList).toBeVisible();
         await expect(footer.documentationLink).toBeVisible();
         await expect(footer.installationGuideLink).toBeVisible();
-        await expect(footer.releasesLink).toBeVisible();
+        await expect(footer.archiveLink).toBeVisible();
         await expect(footer.roadmapLink).toBeVisible();
         await expect(footer.reportsLink).toBeVisible();
         await expect(footer.booksLink).toBeVisible();

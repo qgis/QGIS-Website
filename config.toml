@@ -314,6 +314,12 @@ sectionPagesMenu = 'main'
   weight = 80 # Sets the menu order 
 
 [[menu.main]]
+  name = "Archive"
+  url = "/archive/"
+  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
+  weight = 90 # Sets the menu order 
+
+[[menu.main]]
   name = "Funding"
   url = "/funding/donate"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
@@ -358,12 +364,6 @@ sectionPagesMenu = 'main'
   url = "/resources/installation-guide/"
   weight = 10
 
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Releases"
-  url = "/resources/releases/"
-  weight = 30
 
 [[menu.main]]
   parent = "Resources"
