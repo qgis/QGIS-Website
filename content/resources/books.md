@@ -335,6 +335,17 @@ This book covers essential workflows in GIS from data creation to its cartograph
 - Date: March 2015
     
 
+## Italian
+
+### Esercizi svolti in QGIS. Guida pratica all'analisi vettoriale
+
+- [https://www.darioflaccovio.it/libri-universitari-ingegneria-architettura-geologia/1370-esercizi-svolti-in-qgis.html](https://www.darioflaccovio.it/libri-universitari-ingegneria-architettura-geologia/1370-esercizi-svolti-in-qgis.html)
+    
+- Authors: Mauro Fabrizio, Ludovico Frate
+    
+- Date: September 2019
+ 
+
 ## Japanese
 
 ### Pythonではじめるマップアプリケーションプラグイン
