@@ -6,7 +6,7 @@ this script should be run from the root repo directory (../)
 
 $ python scripts/update-schedule.py
 
-will update data/conf.json and scripts/schedule.ics
+will update data/conf.json and content/schedule.ics
 '''
 
 from urllib.request import urlopen
@@ -42,7 +42,7 @@ next_lr_version = None
 
 now = datetime.now(timezone.utc)
 
-ocal = Calendar.from_ical(open("scripts/schedule.ics").read())
+ocal = Calendar.from_ical(open("content/schedule.ics").read())
 
 oevents = {}
 for e in ocal.walk('VEVENT'):
@@ -268,6 +268,6 @@ with open("data/conf.json", "w") as f:
         "weekly_msi": "https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D",
     }, f, indent=4)
 
-o = open("scripts/schedule.ics", "wb")
+o = open("content/schedule.ics", "wb")
 o.write(cal.to_ical())
 o.close()
