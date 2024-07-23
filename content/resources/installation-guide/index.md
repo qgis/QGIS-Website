@@ -209,12 +209,12 @@ Next release: {{< param "nextreleasedate" >}}
 |Debian|12.x (stable)|bookworm||
 ||11.x (oldstable)|bullseye||
 ||unstable|sid||
-|Ubuntu|24.04 (LTS) [[6]](#id6)|noble||
+|Ubuntu|24.04 (LTS)|noble|yes [[6]](#id6)|
 ||23.10|mantic||
 ||23.04|lunar||
 ||22.04 (LTS)|jammy|yes|
 
-{{< footnote "6" >}} future ubuntu release planned for 2024-04-25
+{{< footnote "6" >}} starting with nightlies of 3.34.9/3.38.2
 
 To use the QGIS archive you have to first add the archive’s repository public key:
 
