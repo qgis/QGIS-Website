@@ -239,7 +239,7 @@ with open("data/conf.json", "w") as f:
         "releasedate": lr_date.strftime("%d.%m.%Y"),
         "binary": lr_binary,
         "codename": lr_name,
-        "releasenote": lr_note if lr_note != '' else ('RC' if lr_version.split('.')[2] == '0' else '\\u200B'),
+        "releasenote": lr_note if lr_note != '' else ('RC' if lr_version.split('.')[2] == '0' else ''),
         "ltrversion": ltrversion,
         "ltrrelease": ltr_version,
         "ltrcodename": ltr_name,
