@@ -58,7 +58,7 @@ deploy: ## Deploy the site for nocache.qgis.org, www.qgis.org and qgis.org
 revert-deploy: ## Revert the site for nocache.qgis.org, www.qgis.org and qgis.org
 	@echo
 	@echo "------------------------------------------------------------------"
-	@echo "Deploy site in production"
+	@echo "Revert to the previous state in production"
 	@echo "------------------------------------------------------------------"
 	rm -rf public_www public_prod public_nocache; cp -r archive/public_www archive/public_prod archive/public_nocache ./
 
