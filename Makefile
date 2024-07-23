@@ -48,6 +48,20 @@ build: ## Build the site for nocache.qgis.org, www.qgis.org and qgis.org
 	hugo --config config.toml,config/config.www.toml
 
 
+deploy: ## Deploy the site for nocache.qgis.org, www.qgis.org and qgis.org
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Deploy site in production"
+	@echo "------------------------------------------------------------------"
+	git pull && rm -rf archive; mkdir archive; mv public_www public_prod public_nocache archive; make build
+
+revert-deploy: ## Revert the site for nocache.qgis.org, www.qgis.org and qgis.org
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Deploy site in production"
+	@echo "------------------------------------------------------------------"
+	rm -rf public_www public_prod public_nocache; cp -r archive/public_www archive/public_prod archive/public_nocache ./
+
 # ----------------------------------------------------------------------------
 #    D E V E L O P M E N T     C O M M A N D S
 # ----------------------------------------------------------------------------
