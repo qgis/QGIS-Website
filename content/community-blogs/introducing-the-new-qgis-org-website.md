@@ -28,11 +28,18 @@ showcase: "planet"
 
 
 
-<p>About two years ago, we started experimenting with building a new QGIS.org website based on <a href="https://gohugo.io/">Hugo</a>. Actually, Hugo as a technology choice was less important. More important was our intent  to develop a more modern site that addressed our strategic goals.</p>
+<p>About two years ago, we started experimenting with building a new QGIS.org website based on <a href="https://gohugo.io/">Hugo</a>. Hugo, as a technology choice, was less important than our intent to develop a more modern site that addressed our strategic goals.</p>
 
 
 
 <p>After some &#8216;in-house&#8217; (i.e. volunteer-based) work to develop an initial version of the site, we received the <a href="https://qgis.org/community/foundation/annual-budgets/QGISBudget2024.pdf">go-ahead</a> to use QGIS funds for this and <a href="https://blog.qgis.org/2023/10/03/call-for-proposals-qgis-website-overhaul-2023-2024/">put out a call </a>in October 2023 for a company to support our work. This was ultimately won by<a href="https://kontur.io"> Kontur.io</a>, who, together with our volunteers, brought the work into high gear.</p>
+
+
+<div class="wp-block-image">
+<figure class="alignleft size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/07/screenshot-from-2024-07-23-11-53-37.png"><img alt="Questions to be quickly answered by qgis.org" class="wp-image-3040" height="577" src="https://blog.qgis.org/wp-content/uploads/2024/07/screenshot-from-2024-07-23-11-53-37.png?w=1024" tabindex="0" title="Questions to be quickly answered by qgis.org" width="1024" /></a><figcaption class="wp-element-caption"><em>Initial analysis of the questions and actions to be quickly answered by qgis.org</em></figcaption></figure></div>
+
+
+<p></p>
 
 
 
@@ -44,11 +51,19 @@ showcase: "planet"
 
 
 
-<p>The old website was very focused on the developer and contributor community. Obviously, those aspects are fundamental since, without our fantastic community, our project would not exist. The messaging around open source is also important. Yet these ideas are secondary to the idea that QGIS is one of the best (if not the best) desktop GIS applications out there on the market &#8211; open-source or otherwise. We need to present it in this sort of professional perspective.</p>
+<p>The old website was very focused on the developer and contributor community. Obviously, those aspects are fundamental since, without our fantastic community, our project would not exist. The messaging around open source is also important. Yet these ideas are secondary to the idea that QGIS is one of the best (if not&nbsp;the&nbsp;best) desktop GIS applications out there on the market &#8211; open-source or otherwise. We need to present it in this sort of professional perspective.</p>
 
 
 
 <p>So, the first goal was to change the messaging to focus on QGIS&#8217;s value proposition and take a very professional approach to presenting ourselves on the website.</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/07/screenshot-from-2024-07-23-11-55-44.png"><img alt="User group analysis" class="wp-image-3042" height="577" src="https://blog.qgis.org/wp-content/uploads/2024/07/screenshot-from-2024-07-23-11-55-44.png?w=1024" tabindex="0" title="User group analysis" width="1024" /></a><figcaption class="wp-element-caption"><em>User group and requirements analysis for the potential qgis.org visitors</em></figcaption></figure>
+
+
+
+<p></p>
 
 
 
@@ -84,7 +99,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/07/image-2.png"><img alt="" class="wp-image-3022" height="144" src="https://blog.qgis.org/wp-content/uploads/2024/07/image-2.png?w=1024" tabindex="0" width="1024" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/07/image-2.png"><img alt="" class="wp-image-3022" height="144" src="https://blog.qgis.org/wp-content/uploads/2024/07/image-2.png?w=1024" tabindex="0" width="1024" /></a><figcaption class="wp-element-caption"><em>The universal menu bar </em></figcaption></figure>
 
 
 
@@ -138,7 +153,7 @@ showcase: "planet"
 
 
 
-<p><strong>What about translations?</strong></p>
+<h2 class="wp-block-heading"><strong>What about translations?</strong></h2>
 
 
 
