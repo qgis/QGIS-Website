@@ -6,7 +6,8 @@
     "scripts": {
         "format:check": "prettier --check .",
         "format:debug-check": "prettier --debug-check .",
-        "format:write": "prettier --write ."
+        "format:write": "prettier --write .",
+        "prebuild": "scripts/get_commit_hash.sh"
     },
     "author": "",
     "license": "ISC",

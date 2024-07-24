@@ -102,6 +102,9 @@ cookiesstate = false
 matomoURL = "//matomo.qgis.org/"
 matomoSiteId = '6'
 
+# commit hash file
+commitFile = "config/commit.toml"
+
 # This will cause html in markdown files to be rendered directly
 [markup]
   [markup.goldmark]
