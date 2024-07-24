@@ -24,11 +24,11 @@ showcase: "planet"
 
 
 
-<p>In this blog post, we would like to provide an overview of the goals that we&#8217;ve followed for building the new QGIS.org website and the bigger picture of how this website update fits into our broader strategy for our website plans for QGIS.</p>
+<p>In this blog post, we would like to provide an overview of the goals that we had for building the new QGIS.org website and the bigger picture of how this website update fits into the broader strategy for our website plans for QGIS.</p>
 
 
 
-<p>About two years ago, we started experimenting with building a new QGIS.org website based on <a href="https://gohugo.io/">Hugo</a>. Hugo, as a technology choice, was less important than our intent to develop a more modern site that addressed our strategic goals.</p>
+<p>About two years ago, we started experimenting with building a new QGIS.org website based on <a href="https://gohugo.io/">Hugo</a>. Hugo, as a technology choice, was less important than was our intent to develop a more modern site that addressed our strategic goals.</p>
 
 
 
@@ -47,11 +47,11 @@ showcase: "planet"
 
 
 
-<p>Our primary goal was to speak to a new audience. We are confident that QGIS can compete with all of the commercial vendors providing GIS software. We didn&#8217;t present that well on our old website. We feel that QGIS was too apologetic in how it presented itself. We wanted a website which inspires confidence while addressing the needs of a corporate or organisational decision-maker who is coming to look at the QGIS project during their GIS software selection process.</p>
+<p>Our primary goal was to speak to a new audience. We are confident that QGIS can compete with all of the commercial vendors providing GIS software. We didn&#8217;t convey that well on our old website. We feel that QGIS was too apologetic in how it presented itself. We wanted a website which inspires confidence while addressing the needs of a corporate or organisational decision-maker who is looking at the QGIS project during their GIS software selection process.</p>
 
 
 
-<p>The old website was very focused on the developer and contributor community. Obviously, those aspects are fundamental since, without our fantastic community, our project would not exist. The messaging around open source is also important. Yet these ideas are secondary to the idea that QGIS is one of the best (if not&nbsp;the&nbsp;best) desktop GIS applications out there on the market &#8211; open-source or otherwise. We need to present it in this sort of professional perspective.</p>
+<p>The old website was very focused on the developer and contributor community. Obviously, those aspects are important since, without our fantastic community, the QGIS project would not exist. The messaging around open source is also important. Yet these ideas are secondary to the idea that QGIS is one of the best (if not the best) desktop GIS applications out there on the market &#8211; open-source or otherwise. We need to present it in this professional perspective.</p>
 
 
 
@@ -71,11 +71,11 @@ showcase: "planet"
 
 
 
-<p>The second goal was to start the process of harmonising all of our website properties. QGIS.org, over the years, has built many different web properties. For example, there&#8217;s the plugins website, the <a href="https://feed.qgis.org/">feed</a>, the <a href="https://changelog.qgis.org">changelog</a>, the sustaining members website, the lessons website and the certification website; some of those are combined in one application, the new <a href="https://plugins.qgis.org/styles/?order_by=-upload_date&amp;&amp;is_gallery=true">resources hub website</a>. Then there&#8217;s the API documentation, the user documentation, the <a href="https://docs.qgis.org/3.34/en/docs/user_manual/">user manual</a>, the <a href="https://docs.qgis.org/3.34/en/docs/training_manual/">training manual</a>, various other documentation efforts, and more. <span style="margin: 0px; padding: 0px;">There are also some less well-known things, like our <a href="https://analytics.qgis.org" target="_blank">analytics.qgis.org</a>&nbsp;and another one for&nbsp;<a href="https://plugins.qgis.org/metabase/public/dashboard/bbfe76e8-2512-470a-861e-f11c8e247edb" target="_blank">plugin analytics</a>.</span> In short, we&#8217;ve a lot of resources!</p>
+<p>The second goal was to start the process of harmonising all of our website properties. QGIS.org, over the years, has built many different web properties. For example, there&#8217;s the plugins website, the <a href="https://feed.qgis.org/">feed</a>, the <a href="https://changelog.qgis.org">changelog</a>, the sustaining members website, the <a href="https://changelog.qgis.org/en/qgis/lessons/">lessons website</a> and the <a href="https://changelog.qgis.org/en/qgis/about/">certification website</a>, the new <a href="https://plugins.qgis.org/styles/?order_by=-upload_date&amp;&amp;is_gallery=true">resources hub website</a>, the API documentation, the user documentation, the <a href="https://docs.qgis.org/3.34/en/docs/user_manual/">user manual</a>, the <a href="https://docs.qgis.org/3.34/en/docs/training_manual/">training manual</a>, various other documentation efforts, and more. Some of those are combined in one application, <span style="margin: 0px; padding: 0px;">There are also some less well-known resources, like our <a href="https://analytics.qgis.org" target="_blank">analytics.qgis.org</a> and another one for <a href="https://plugins.qgis.org/metabase/public/dashboard/bbfe76e8-2512-470a-861e-f11c8e247edb" target="_blank">plugin analytics</a>.</span> In short, we&#8217;ve a lot of resources!</p>
 
 
 
-<p><span style="margin: 0px; padding: 0px;">With so many different web properties, over time, they&#8217;ve&nbsp;<strong>devolved</strong>: each has its own look and feel, navigation approach and how</span> you interact with it. Some of them were translated, and some of them were not. We want to harmonise all of these sites so that the user does not notice any change in user experience when they move from one QGIS-related site to another.</p>
+<p><span style="margin: 0px; padding: 0px;">With so many different web properties, they&#8217;ve <strong>devolved</strong> over time: each has its own look and feel, navigation approach and how</span> you interact with it. Some of them were translated, and some of them were not. We want to harmonise all of these sites so that the user does not notice any change in user experience when they move from one QGIS-related site to another.</p>
 
 
 
@@ -91,7 +91,7 @@ showcase: "planet"
 
 
 
-<p>The objective of the new site design is to allow quick movement between the QGIS auxiliary sites. The QGIS.org site will form a hub that effortlessly takes visitors to whichever QGIS-related site they need to complete the task they are busy with. If you&#8217;re moving between these sites, the experience should be seamless. You should not really even be aware that you&#8217;re moving between different websites; other than looking at the URL bar, the user presentation and experience should be harmonious between all of them.</p>
+<p>The objective of the new site design is to allow quick movement between the QGIS auxiliary sites. The QGIS.org site will form a hub that effortlessly takes visitors to whichever QGIS-related site they need to complete the task they are busy with. If you&#8217;re moving between these sites, the experience should be seamless. You should not really even be aware that you&#8217;re moving between different websites. Other than looking at the URL bar, the user presentation and experience should be harmonious between all of them.</p>
 
 
 
@@ -119,11 +119,11 @@ showcase: "planet"
 
 
 
-<p>We plan to break some auxiliary websites apart into separate pieces. So, for example, the changelog management, certification management, sustaining members management, and lessons management are all in one Django app. We will break them apart into small single-purpose applications using some common UX metaphors so that each is a standalone application that makes it easy for a potential contributor to understand everything the application does. This will also simplify management as we can upgrade each auxiliary site on separate development cycles. We will also finally have semantic URLs, e.g. certification.qgis.org, to take you to the different areas of interest on the site.</p>
+<p>We plan to break some auxiliary websites apart into separate pieces. So, for example, the changelog management, certification management, sustaining members management, and lessons management are all in one Django app. We will split them into small single-purpose applications using some common UX metaphors so that each is a standalone application that makes it easy for a potential contributor to understand everything the application does. This will also simplify management as we can upgrade each auxiliary site on separate development cycles. We will also finally have semantic URLs, e.g. certification.qgis.org, to take you to the different areas of interest on the site.</p>
 
 
 
-<p>The plugins.qgis.org is also going to break apart. So, the plugins will just do plugins and not the resource sharing we&#8217;ve added in the last few years. The resource sharing will go into its own subdomain. Similarly, the Planet website will get split into its own website (the planet is a blog aggregator or RSS aggregator) that will be in its own managed instance. Some other components (like the analytics) are difficult to split out like this because they&#8217;re linked to the same database. We will try to make sure that those are more discoverable and theme them as much as possible to match the rest of the website experience.</p>
+<p>The plugins.qgis.org is also going to be refactored so that it just has plugins and not the resource sharing we&#8217;ve added in the last few years. The resource sharing will go into its own subdomain. Similarly, the Planet website will get split into its own website (the planet is a blog aggregator or RSS aggregator) that will be in its own managed instance. Some other components (like the analytics) are difficult to split out like this because they&#8217;re linked to the same database. We will try to make sure that those are more discoverable and theme them as much as possible to match the rest of the website experience.</p>
 
 
 
@@ -169,7 +169,7 @@ showcase: "planet"
 
 
 
-<p>1. <strong>Lingua franca</strong>: If you are an IT manager in a non-English-speaking country and you want to evaluate some software, you&#8217;re going to run into a product page that presents itself in English—it is the norm for IT procurement to work in English for reviewing software products and so on.</p>
+<p>1. <strong>Lingua franca</strong>: If you are an IT manager in a non-English-speaking country and you want to evaluate some software, you&#8217;re going to run into a product page that presents itself in English &#8211; it is the norm for IT procurement to work in English for reviewing software products and so on.</p>
 
 
 
@@ -185,7 +185,7 @@ showcase: "planet"
 
 
 
-<p>So we must either translate everything into all the same languages or work in English. Translating everything is a mammoth task for the translators and for us to retrospectively add translation support to each platform. Thus, we prefer the approach of harmonising everything to one language and then focusing our translation efforts on three areas:</p>
+<p>So we must either translate everything into all of the same languages, or work in English. Translating everything is a mammoth task for the translators and for us to retrospectively add translation support to each platform. Thus, we prefer the approach of harmonising everything to one language and then focusing our translation efforts on three areas:</p>
 
 
 
