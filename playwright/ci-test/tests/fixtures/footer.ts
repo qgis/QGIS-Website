@@ -110,7 +110,7 @@ export class Footer {
             name: "Visual Style Guide",
         });
         this.goodiesLink = this.page.getByRole("link", { name: "Goodies" });
-        this.archiveLink = this.page.getByRole("link", { name: "Archive" });
+        this.archiveLink = this.page.getByRole("link", { name: "Archive" }).last();
         this.logoImage = this.page.getByRole("img", { name: "Logo" });
         this.facebookLink = this.page.getByRole("link", { name: "" });
         this.youtubeLink = this.page.getByRole("link", { name: "" });

@@ -98,6 +98,9 @@ newsfeed ='https://feed.qgis.org/?lang=en&json=1'
 ## This will turn on Coockie popup. True to show popup
 cookiesstate = false
 
+# commit hash file
+commitFile = "config/commit.toml"
+
 # This will cause html in markdown files to be rendered directly
 [markup]
   [markup.goldmark]

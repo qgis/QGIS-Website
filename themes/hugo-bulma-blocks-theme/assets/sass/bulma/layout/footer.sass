@@ -2,8 +2,8 @@
 
 $footer-tablet-breakpoint: 1450px !default
 $footer-background-color: #002033 !default
-$footer-padding: 4rem 0rem 1rem 0rem !default
-$footer-padding-mobile: 4rem 2rem 4rem !default
+$footer-padding: 4rem 0rem 28px 0rem !default
+$footer-padding-mobile: 4rem 2rem 28px !default
 
 .footer
   font-weight: 400
@@ -24,7 +24,7 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
     text-align: unset
 
   +between($desktop, $footer-tablet-breakpoint)
-    padding: 4rem 2rem 1rem 2rem
+    padding: 4rem 2rem 28px 2rem
 
 
   figure.image
@@ -71,6 +71,7 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
   
   .issue-report-link
     margin-top: 4rem
+    margin-bottom: 2rem
     a 
       color: #c6c6c6
       text-decoration: underline
@@ -80,6 +81,14 @@ $footer-padding-mobile: 4rem 2rem 4rem !default
     background: url('img/mastodon.svg') center center no-repeat
     width: 32px
     height: 34px
+
+  .commit-link
+    position: absolute
+    right: 0
+    p
+      padding: 5px
+      background-color: #ffffff
+      border-radius: 10px 0 0 0
 
 
 

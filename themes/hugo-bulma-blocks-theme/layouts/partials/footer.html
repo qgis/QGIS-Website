@@ -123,8 +123,15 @@
 
         </div>
         <div class="columns is-desktop issue-report-link is-justify-content-center">
-            <a href="https://github.com/qgis/QGIS-Hugo/issues" class="column is-narrow p-0 is-size-6">Problems with this website? Report an issue here 🐙</a>   
+            <a href="https://github.com/qgis/QGIS-Hugo/issues" class="column is-narrow p-0 is-size-6" target="_blank">Problems with this website? Report an issue here 🐙</a> 
+              
         </div>
+    </div>
+    <div class="commit-link is-size-7">
+        {{ $commit := readFile (print .Site.Params.commitFile)}}
+        <p>
+            Commit revision: <a href="https://github.com/qgis/QGIS-Hugo/commit/{{ $commit }}" target="_blank">{{ $commit }}</a>
+        </p>
     </div>
 </footer>
 
