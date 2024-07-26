@@ -145,6 +145,10 @@
         {{/* QR Encoding Logic */}}
         {{ $qrencodejs := resources.Get "js/qrcodegen-v1.8.0-es6.js"| resources.Minify | resources.Fingerprint }}
         <script defer src="{{ $qrencodejs.RelPermalink }}"></script>
+        <script>
+            var matomoURL = {{ .Site.Params.matomoURL }}
+            var matomoSiteId = {{ .Site.Params.matomoSiteId }}
+        </script>
 
         {{/* Homegrown JS functions */}}
         {{ $expandjs := resources.Get "js/card-expand.js" }}
@@ -153,11 +157,12 @@
         {{ $qrcreatejs := resources.Get "js/qrcreate.js" }}
         {{ $fusejs := resources.Get "js/fuse.js" }}
         {{ $markjs := resources.Get "js/mark.min.js" }}
+        {{ $matomojs := resources.Get "js/matomo.js" }}
         {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
-        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
+        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ if (eq .Site.Params.cookiesstate true) }}
             {{ $cookiejs := resources.Get "js/cookie.js" }}
-            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
+            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ end }}   
         <script defer src="{{ $js.RelPermalink }}"></script> 
         {{/* Search needs to be rendered as a template to ensure urls are correct */}}
