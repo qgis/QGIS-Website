@@ -236,7 +236,7 @@ with open("data/conf.json", "w") as f:
         "WARNING": "produced from googlesheet via scripts/update-schedule.py - EDITS WILL BE LOST",
         "version": ".".join(lr_version.split(".")[:2]),
         "release": lr_version,
-        "releasedate": lr_date.strftime("%d.%m.%Y"),
+        "releasedate": lr_date.strftime("%Y-%m-%d"),
         "binary": lr_binary,
         "codename": lr_name,
         "releasenote": lr_note if lr_note != '' else ('RC' if lr_version.split('.')[2] == '0' else ''),

@@ -14,7 +14,7 @@ help:
 # ----------------------------------------------------------------------------
 #    D O C K E R     C O M M A N D S
 # ----------------------------------------------------------------------------
- 
+
 dev-build: ## Generate the development docker container
 	docker build --rm -f Dockerfile.dev -t qgis_hugo_dev:latest .
 
@@ -66,14 +66,13 @@ revert-deploy: ## Revert the site for nocache.qgis.org, www.qgis.org and qgis.or
 #    D E V E L O P M E N T     C O M M A N D S
 # ----------------------------------------------------------------------------
 
-hugo-dev-build: ## Build the site localy and run a python server at localhost:8000 with hugo
+hugo-dev-build: ## Build the site locally and run a python server at localhost:8000 with hugo
 	@echo
 	@echo "------------------------------------------------------------------"
 	@echo "Building site in development"
 	@echo "------------------------------------------------------------------"
 	hugo --config config.toml,config/config.dev.toml
 	python3 -m http.server 8000 -d public_dev
-
 
 hugo-run-dev: ## Run the server at localhost:1313 with hugo
 	@echo

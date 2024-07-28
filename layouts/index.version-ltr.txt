@@ -1,0 +1,11 @@
+{{ with index .Site.Data.conf -}}
+{{ $release := apply (split .ltrrelease ".") "cast.ToInt" "." -}}
+#QGIS Version {{ (printf "%d%02d%02d" (index $release 0) (index $release 1) (index $release 2)) }}|Visit https://download.qgis.org to get your copy of version {{ .ltrrelease }}|<html><body>
+<ul>
+<li>The current available LTR version of QGIS is {{ .ltrrelease }}.
+<li>The latest available version of QGIS is {{ .release }}.
+<li>We are working on {{ .devversion }}-Master. It will go into feature freeze on {{ .nextfreezedate }} and be released as {{ .nextversion }} on {{ .nextreleasedate }}.
+<li>Details on changes can be found on github at <a href="https://github.com/qgis/QGIS/commits/master">https://github.com/qgis/QGIS/commits/master</a>.
+</body>
+</html>
+{{- end -}}
