@@ -1,0 +1,39 @@
+{{ with index .Site.Data.conf -}}
+{{ $release := apply (split .release ".") "cast.ToInt" "." -}}
+{{ $ltrrelease := apply (split .ltrrelease ".") "cast.ToInt" "." -}}
+{{ $devversion := apply (split .devversion ".") "cast.ToInt" "." -}}
+{
+    "latest": {
+        "versionint": {{ printf "%d%02d%02d" (index $release 0) (index $release 1) (index $release 2) }},
+	"version": "{{ .version }}",
+        "name": "{{ .codename }}",
+        "note": "{{ .releasenote }}",
+        "binary": "{{ .binary }}",
+        "date": "{{ .releasedate }}",
+        "major": {{ index $release 0 }},
+        "minor": {{ index $release 1 }},
+        "patch": {{ index $release 2 }}
+    },
+    "ltr": {
+        "versionint": {{ printf "%d%02d%02d" (index $ltrrelease 0) (index $ltrrelease 1) (index $ltrrelease 2) }},
+	"version": "{{ .Params.ltrversion }}",
+        "name": "{{ .ltrcodename }}",
+        "note": "{{ .ltrreleasenote }}",
+        "binary": "{{ .ltrbinary }}",
+        "date": "{{ .ltrreleasedate }}",
+        "major": {{ index $ltrrelease 0 }},
+        "minor": {{ index $ltrrelease 1 }},
+        "patch": {{ index $ltrrelease 2 }}
+    },
+    "dev": {
+        "version": "{{ .devversion }}",
+        "versionint": {{ printf "%d%02d%02d" (index $devversion 0) (index $devversion 1) 0 }},
+	"major": {{ index $devversion 0 }},
+        "minor": {{ index $devversion 1 }},
+        "patch": 0
+    },
+    "freezedate": "{{ .nextfreezedate }}",
+    "nextreleasedate": "{{ .nextreleasedate }}",
+    "nextversion": "{{ .nextversion }}"
+}
+{{- end -}}

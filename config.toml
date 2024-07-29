@@ -145,8 +145,6 @@ sectionPagesMenu = 'main'
   url = "/project/overview/"
   weight = 10
 
-
-
 [[menu.main]]
   parent = "Project"
   name = "Case studies"
@@ -450,7 +448,6 @@ sectionPagesMenu = 'main'
   url = "/resources/support/#stackexchange"
   weight = 160
 
-
 [[menu.main]]
   parent = "Resources"
   name = "Blog"
@@ -464,5 +461,20 @@ sectionPagesMenu = 'main'
   weight = 190
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "version", "version-ltr", "version-json"]
 
+[outputFormats]
+[outputFormats.version]
+  baseName = "version"
+  isPlainText = true
+  mediaType = "text/plain"
+
+[outputFormats.version-ltr]
+  baseName = "version-ltr"
+  isPlainText = true
+  mediaType = "text/plain"
+
+[outputFormats.version-json]
+  baseName = "version"
+  isPlainText = true
+  mediaType = "application/json"
