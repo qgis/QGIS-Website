@@ -25,6 +25,8 @@ export class Footer {
     public readonly reportsLink: Locator;
     public readonly booksLink: Locator;
     public readonly supportLink: Locator;
+    public readonly qgisDashboardLink: Locator;
+    public readonly pluginsDashboardLink: Locator;
     public readonly blogLink: Locator;
     public readonly donateLink: Locator;
     public readonly membershipList: Locator;
@@ -90,6 +92,14 @@ export class Footer {
         this.reportsLink = this.banner.getByRole("link", { name: "Reports" });
         this.booksLink = this.banner.getByRole("link", { name: "Books" });
         this.supportLink = this.banner.getByRole("link", { name: "Support" });
+        this.blogLink = this.banner.getByRole("link", {
+            name: "QGIS Dashboard",
+            exact: true,
+        });
+        this.blogLink = this.banner.getByRole("link", {
+            name: "Plugins Dashboard",
+            exact: true,
+        });
         this.blogLink = this.banner.getByRole("link", {
             name: "Blog",
             exact: true,
