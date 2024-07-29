@@ -58,7 +58,7 @@ export class Footer {
         this.caseStudiesLink = this.banner.getByRole("link", {
             name: "Case studies",
         });
-        this.pluginsLink = this.banner.getByRole("link", { name: "Plugins" });
+        this.pluginsLink = this.banner.getByRole("link", { name: "Plugins", exact: true });
         this.visualChangelogsLink = this.banner.getByRole("link", {
             name: "Visual Changelogs",
         });
@@ -92,11 +92,11 @@ export class Footer {
         this.reportsLink = this.banner.getByRole("link", { name: "Reports" });
         this.booksLink = this.banner.getByRole("link", { name: "Books" });
         this.supportLink = this.banner.getByRole("link", { name: "Support" });
-        this.blogLink = this.banner.getByRole("link", {
+        this.qgisDashboardLink = this.banner.getByRole("link", {
             name: "QGIS Dashboard",
             exact: true,
         });
-        this.blogLink = this.banner.getByRole("link", {
+        this.pluginsDashboardLink = this.banner.getByRole("link", {
             name: "Plugins Dashboard",
             exact: true,
         });
