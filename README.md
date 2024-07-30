@@ -1,13 +1,13 @@
 # QGIS Website
 
-![Screenshot](./img/hugo-preview.png)
+![Screenshot](./img/qgis-website.webp)
 
 By Tim Sutton and QGIS Contributors.
 
 ## Project Status
 
-[![E2E Tests](https://github.com/qgis/QGIS-Website/actions/workflows/e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/e2e.yml)
-[![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Website/actions/workflows/hugo.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/hugo.yml)
+[![E2E Tests](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml)
+[![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml)
 ![Website Status](https://img.shields.io/website-up-down-green-red/http/qgis.github.io/QGIS-Website.svg)
 ![License](https://img.shields.io/github/license/qgis/QGIS-Website.svg)
 
