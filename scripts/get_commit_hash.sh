@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
+# This script should be run from the root folder
 
 # Get the latest commit hash
 COMMIT_HASH=$(git rev-parse --short HEAD)
 
 # Write the commit hash to a file
-echo $COMMIT_HASH > ../config/commit.toml
+echo $COMMIT_HASH > config/commit.toml
