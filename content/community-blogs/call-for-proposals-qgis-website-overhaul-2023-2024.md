@@ -45,7 +45,7 @@ showcase: "planet"
 
 
 
-<li>Design for new web site landing page: <a href="https://qgis.github.io/QGIS-Hugo/" target="_blank" rel="noreferrer noopener">https://qgis.github.io/QGIS-Hugo/</a></li>
+<li>Design for new web site landing page: <a href="https://qgis.github.io/QGIS-Website/" target="_blank" rel="noreferrer noopener">https://qgis.github.io/QGIS-Website/</a></li>
 
 
 
@@ -53,7 +53,7 @@ showcase: "planet"
 
 
 
-<li>Code for new web site (what we have built so far): <a href="https://github.com/qgis/QGIS-Hugo" target="_blank" rel="noreferrer noopener">https://github.com/qgis/QGIS-Hugo</a></li>
+<li>Code for new web site (what we have built so far): <a href="https://github.com/qgis/QGIS-Website" target="_blank" rel="noreferrer noopener">https://github.com/qgis/QGIS-Website</a></li>
 
 
 

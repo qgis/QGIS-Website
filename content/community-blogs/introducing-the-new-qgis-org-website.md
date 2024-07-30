@@ -149,7 +149,7 @@ showcase: "planet"
 
 
 
-<p>Our approach also facilitated the creation of a very performant <span style="margin: 0px; padding: 0px;">website, as you can see&nbsp;<a href="https://github.com/qgis/QGIS-Hugo/pull/342" target="_blank">here</a>. We will try to adhere to these principles for the auxiliary site updates we do in the future,</span> too.</p>
+<p>Our approach also facilitated the creation of a very performant <span style="margin: 0px; padding: 0px;">website, as you can see&nbsp;<a href="https://github.com/qgis/QGIS-Website/pull/342" target="_blank">here</a>. We will try to adhere to these principles for the auxiliary site updates we do in the future,</span> too.</p>
 
 
 
@@ -231,7 +231,7 @@ showcase: "planet"
 
 
 
-<p>We hope our goals and process make sense for everybody and that we were able to lay out a clear, logical argument about why we don&#8217;t want to translate the new website quite yet. We want to focus on these overarching goals and then return to them later if they are still a priority for people. Everything we have built is Open Source and available at <a href="https://github.com/qgis/QGIS-Hugo/">this repo</a>, where you can also find an issue tracker to report issues and share ideas relating to the new website.</p>
+<p>We hope our goals and process make sense for everybody and that we were able to lay out a clear, logical argument about why we don&#8217;t want to translate the new website quite yet. We want to focus on these overarching goals and then return to them later if they are still a priority for people. Everything we have built is Open Source and available at <a href="https://github.com/qgis/QGIS-Website/">this repo</a>, where you can also find an issue tracker to report issues and share ideas relating to the new website.</p>
 
 
 

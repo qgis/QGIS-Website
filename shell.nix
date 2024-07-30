@@ -16,7 +16,7 @@ mkShell {
      export DIRENV_LOG_FORMAT=
      echo "-----------------------"
      echo "🌈 Your Hugo Dev Environment is ready."
-     echo "It provides hugo and vscode for use with the QGIS Hugo Project"
+     echo "It provides hugo and vscode for use with the QGIS Website Project"
      echo ""
      echo "🪛 VSCode:"
      echo "--------------------------------"
