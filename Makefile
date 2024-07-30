@@ -1,12 +1,12 @@
 help:
-	@echo "QGIS Hugo"
+	@echo "QGIS Website"
 	@echo
 	@echo "Brought to you by Kartoza (Pty) Ltd."
 	@echo
 	@echo "Help for using this Makefile"
 	@echo
 	@echo "For detailed help please visit:"
-	@echo "https://github.com/QGIS/QGIS-Hugo"
+	@echo "https://github.com/QGIS/QGIS-Website"
 	@echo
 	@echo "------------------------------------------------------------------"
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort  | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m - %s\n", $$1, $$2}'

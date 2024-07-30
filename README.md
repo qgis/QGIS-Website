@@ -1,24 +1,24 @@
-# QGIS Hugo Website
+# QGIS Website
 
-![Screenshot](./img/hugo-preview.png)
+![Screenshot](./img/qgis-website.webp)
 
 By Tim Sutton and QGIS Contributors.
 
 ## Project Status
 
-[![E2E Tests](https://github.com/qgis/QGIS-Hugo/actions/workflows/e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Hugo/actions/workflows/e2e.yml)
-[![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Hugo/actions/workflows/hugo.yml/badge.svg)](https://github.com/qgis/QGIS-Hugo/actions/workflows/hugo.yml)
-![Website Status](https://img.shields.io/website-up-down-green-red/http/qgis.github.io/QGIS-Hugo.svg)
-![License](https://img.shields.io/github/license/qgis/QGIS-Hugo.svg)
+[![E2E Tests](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml)
+[![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml)
+![Website Status](https://img.shields.io/website-up-down-green-red/http/qgis.github.io/QGIS-Website.svg)
+![License](https://img.shields.io/github/license/qgis/QGIS-Website.svg)
 
-![](https://img.shields.io/github/issues/qgis/QGIS-Hugo.svg)
-![](https://img.shields.io/github/issues-closed/qgis/QGIS-Hugo.svg)
-![](https://img.shields.io/github/issues-pr/qgis/QGIS-Hugo.svg)
-![](https://img.shields.io/github/issues-pr-closed/qgis/QGIS-Hugo.svg)
+![](https://img.shields.io/github/issues/qgis/QGIS-Website.svg)
+![](https://img.shields.io/github/issues-closed/qgis/QGIS-Website.svg)
+![](https://img.shields.io/github/issues-pr/qgis/QGIS-Website.svg)
+![](https://img.shields.io/github/issues-pr-closed/qgis/QGIS-Website.svg)
 
 
 Project stars:
-![Stars](https://starchart.cc/qgis/QGIS-Hugo.svg)
+![Stars](https://starchart.cc/qgis/QGIS-Website.svg)
 
 ## 🏃Before you start
 
@@ -30,8 +30,8 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 
 development
 ```
-git clone https://github.com/qgis/QGIS-Hugo.git
-cd QGIS-Hugo
+git clone https://github.com/qgis/QGIS-Website.git
+cd QGIS-Website
 ```
 
 
@@ -78,7 +78,7 @@ If you are using VSCode, I recommend the following extensions:
 Clone the repo:
 
 ```
-git clone https://github.com/qgis/qgis-hugo.git
+git clone https://github.com/qgis/QGIS-Website.git
 ```
 
 Run the site:
@@ -155,7 +155,7 @@ $PLAYWRIGHT \
     --project chromium
 ```
 
-Read more on testing [here](https://github.com/qgis/QGIS-Hugo/blob/main/playwright/ci-test/README.md).
+Read more on testing [here](https://github.com/qgis/QGIS-Website/blob/main/playwright/ci-test/README.md).
 
 ### Running as github action
 
@@ -213,7 +213,7 @@ Also some bulma theme overrides are placed in themes/hugo-bulma-blocks-theme/ass
 
 We welcome your contributions! All contributors are expected to sign a contributor license agreement (CLA) which you can see [here](https://gist.github.com/timlinux/cc20c0b8860648da977a261d46b170d4). This process is automatically enabled when you create your first pull request via https://cla-assistant.io/.
 
-[![CLA assistant](https://cla-assistant.io/readme/badge/qgis/QGIS-Hugo)](https://cla-assistant.io/qgis/QGIS-Hugo)
+[![CLA assistant](https://cla-assistant.io/readme/badge/qgis/QGIS-Website)](https://cla-assistant.io/qgis/QGIS-Website)
 
 ## 💮 Changing the templates
 
@@ -226,7 +226,7 @@ We welcome your contributions! All contributors are expected to sign a contribut
 
 The layout of the landing page is themes/hugo-bulma-blocks-theme/layouts/index.html: the main page has many diverse blocks, that are not used anywhere else, hence its content is mostly in the partials.
 
-The ``content/_index.md`` contains the front matter of the page and the contents for the `feature` shortcodes. Just edit whatever you like there. The blocks shortcodes are described [here](https://github.com/qgis/QGIS-Hugo/blob/main/docs/shortcodes.md)
+The ``content/_index.md`` contains the front matter of the page and the contents for the `feature` shortcodes. Just edit whatever you like there. The blocks shortcodes are described [here](https://github.com/qgis/QGIS-Website/blob/main/docs/shortcodes.md)
 
 
 ## 📃 Adding a top level page
@@ -249,7 +249,7 @@ markdown as ```/img/foo.png```.
 
 The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/hugo-bulma-blocks-theme/layouts/shortcodes/``` folder.
 
-The shortcodes with screenshots are described [here](https://github.com/qgis/QGIS-Hugo/blob/main/docs/shortcodes.md)
+The shortcodes with screenshots are described [here](https://github.com/qgis/QGIS-Website/blob/main/docs/shortcodes.md)
 
 <!-- 3rd level header with icon with title Reusable header web component -->
 ### Reusable header web component
@@ -356,11 +356,11 @@ See [nginx map tutorial](https://gauravswaroop.medium.com/nginx-bulk-url-redirec
 
 ## Stripe donations
 
-main donation page: [https://qgis.github.io/QGIS-Hugo/funding/donate/](https://qgis.github.io/QGIS-Hugo/funding/donate/)
+main donation page: [https://qgis.github.io/QGIS-Website/funding/donate/](https://qgis.github.io/QGIS-Website/funding/donate/)
 
 Stripe widget can be included to any page with the shortcode `{{<stripe-widget>}}`
 
-Payment options are implemented with [Payment Links](https://docs.stripe.com/no-code/payment-links). Values and links can be updated in [data/stripe_products.yml](https://github.com/qgis/QGIS-Hugo/blob/main/data/stripe_products.yml)
+Payment options are implemented with [Payment Links](https://docs.stripe.com/no-code/payment-links). Values and links can be updated in [data/stripe_products.yml](https://github.com/qgis/QGIS-Website/blob/main/data/stripe_products.yml)
 
 **Note**: payment links also support recurring donations (subscriptions) - products with recurrent payments should be created for that matter
 
@@ -371,7 +371,7 @@ Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://
 ## Auto-checking for broken links
 
 ```
-docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Hugo > broken_links.csv
+docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Website > broken_links.csv
 ```
 
 Crawls the site and reports all 404. Full run takes apout 10 mins
