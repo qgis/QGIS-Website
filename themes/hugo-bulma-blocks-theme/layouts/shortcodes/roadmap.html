@@ -1,7 +1,7 @@
 <div class="container">
     <div class="roadmap  mb-4">
         {{ with index .Site.Data.conf }}
-            <div class="right-ribbon"><span class="stable">Current: {{ .ltrversion }}</span></div>
+            <div class="right-ribbon"><span class="stable">Current: {{ .ltrrelease }}</span></div>
         {{ end }}
     <h3 class="title">Long Term Release (LTR)</h3>
     <ul class="steps is-balanced">
@@ -89,7 +89,7 @@
 
     <div class="roadmap  mb-4">
     {{ with index .Site.Data.conf }}
-        <div class="right-ribbon"><span class="latest">Current: {{ .version }}</span></div>
+        <div class="right-ribbon"><span class="latest">Current: {{ .release }}</span></div>
     {{ end }}
     <h3 class="title">Latest Release</h3>
     <ul class="steps is-balanced">
