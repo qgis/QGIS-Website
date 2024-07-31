@@ -11,11 +11,11 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-    - name: '🛒 Checkout QGIS Hugo'
+    - name: '🛒 Checkout QGIS Website'
       uses: actions/checkout@v3
       with:
         ref: main
-        path: ./qgis-hugo
+        path: ./qgis-website
 
     - name: '🐍 Setup Python'
       uses: actions/setup-python@v3
@@ -26,13 +26,13 @@ jobs:
 
     - name: '🚸Install Python deps'
       run: |
-        cd ./qgis-hugo
+        cd ./qgis-website
         pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
         pipenv run pip freeze
 
     - name: '🗞️ Fetch Feed Content'
       run: |
-        cd ./qgis-hugo
+        cd ./qgis-website
         pipenv run pip freeze
         pipenv run ./fetch_feeds.py
 
@@ -40,5 +40,5 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
         commit_message: 'Funders scraped and committed via a GitHub Action.'
-        repository: ./qgis-hugo
+        repository: ./qgis-website
         # push_options: --force
