@@ -93,11 +93,11 @@ export class Footer {
         this.booksLink = this.banner.getByRole("link", { name: "Books" });
         this.supportLink = this.banner.getByRole("link", { name: "Support" });
         this.qgisDashboardLink = this.banner.getByRole("link", {
-            name: "QGIS Dashboard",
+            name: "QGIS Metrics",
             exact: true,
         });
         this.pluginsDashboardLink = this.banner.getByRole("link", {
-            name: "Plugins Dashboard",
+            name: "Plugins Metrics",
             exact: true,
         });
         this.blogLink = this.banner.getByRole("link", {
