@@ -41,6 +41,7 @@ export class Sidebar {
         });
         this.pluginsLink = this.sidebar.getByRole("link", {
             name: "Plugins",
+            exact: true
         });
         this.visualChangelogsLink = this.sidebar.getByRole("link", {
             name: "Visual Changelogs",
