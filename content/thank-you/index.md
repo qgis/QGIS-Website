@@ -13,6 +13,13 @@ url: "/download/thank-you"
 
 ## Your freshly baked copy of QGIS is downloading. 
 
+{{< rich-box-start layoutClass="qgis_first_conference mt-6">}}
+{{< rich-content-start >}}
+![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting")
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+
 {{< rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Tips for first launch
