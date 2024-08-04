@@ -11,7 +11,7 @@
                 <a href="{{ absURL "funding/membership" }}">
                     <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
                         <figure>
-                            <img src="{{ absURL "img/addsupporter.svg" }}" alt="add supporter">
+                            <img src="{{ absURL "img/addsupporter.svg" }}" loading="lazy" alt="add supporter">
                         </figure>
                     </article>
                     <span class="partner-title">Add your logo here?</span>
@@ -33,7 +33,7 @@
                             <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
                                 <a href="{{ .Params.link }}">
                                     <figure>
-                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" loading="lazy" alt="{{ .Params.title }}">
                                     </figure>
                                 </a>
                             </article>
@@ -56,7 +56,7 @@
                             <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
                                 <a href="{{ .Params.link }}">
                                     <figure>
-                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" loading="lazy" alt="{{ .Params.title }}">
                                     </figure>
                                 </a>
                             </article>
@@ -83,7 +83,7 @@
                                 <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0 fund-Medium">
                                     <a href="{{ .Params.link }}">
                                         <figure >
-                                            <img class="grayscale" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
+                                            <img class="grayscale" loading="lazy" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
                                         </figure>
                                     </a>
                                 </article>
