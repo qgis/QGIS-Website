@@ -529,7 +529,12 @@ Flathub files: https://github.com/flathub/org.qgis.qgis and report issues here: 
 
 Note: if you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the scipy module):
 
+```
 flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
+
+# NOTE: it is possible you get an error like: "error: runtime/org.kde.Sdk/x86_64/5.15-23.08 not installed" then also do:
+flatpak install runtime/org.kde.Sdk/x86_64/5.15-23.08
+```
 
 ## Spack
 
