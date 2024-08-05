@@ -6,6 +6,7 @@ draft: false
 sidebar: true
 Reviewed: 4 June 2024
 Reviewer: Tim Sutton
+selected_language: "en"
 ---
 
 {{< content-start  >}}
@@ -30,29 +31,32 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 [Get involved]({{< ref "/community/involve" >}}) and help us write a better documentation.
 
+{{< language-select >}}
+<span id="selected-language-display">Select a language</span>
+
 {{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing" tab4="Archived releases">}}
 
 
 {{< tab-content-start tab="1" >}}
 **For users (QGIS {{< param "ltrversion" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/en/docs/user_manual"  layoutClass="inline-block" listTitle="Desktop User Guide" >}}
+{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
  
-{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/en/docs/training_manual"  layoutClass="inline-block" listTitle="QGIS Training manual">}}
+{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>">}}
 
-{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/en/docs/gentle_gis_introduction"  layoutClass="inline-block" listTitle="Gentle Intro to GIS" >}}
+{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
 
-{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/en/docs/server_manual"  layoutClass="inline-block" listTitle="Server Guide" >}}
+{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
 
 
 **For documentation writers (QGIS {{< param "ltrversion" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/en/docs/documentation_guidelinesion"  layoutClass="inline-block" listTitle="Documentation Guidelines">}}
+{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/documentation_guidelinesion"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
 
 
 **For developers (QGIS {{< param "ltrversion" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/en/docs/pyqgis_developer_cookbook"  layoutClass="inline-block" listTitle="PyQGIS cookbook (for plugins and scripting)">}}
+{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>">}}
 
 {{< rich-list listLink="https://qgis.org/pyqgis/|ltrversion|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
 
@@ -74,22 +78,22 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 {{< tab-content-start tab="2" >}}
 **For users (QGIS {{< param "version" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|version|/en/docs/user_manual"  layoutClass="inline-block" listTitle="Desktop User Guide" >}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
   
-{{< rich-list listLink="https://docs.qgis.org/|version|/en/docs/training_manual"  layoutClass="inline-block" listTitle="QGIS Training Manual">}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Training Manual — <lang>">}}
 
-{{< rich-list listLink="https://docs.qgis.org/|version|/en/docs/gentle_gis_introduction"  layoutClass="inline-block" listTitle="Gentle Intro to GIS" >}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
 
-{{< rich-list listLink="https://docs.qgis.org/|version|/en/docs/server_manual"  layoutClass="inline-block" listTitle="Server Guide/Manual" >}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Server Guide/Manual — <lang>" >}}
 
 **For documentation writers (QGIS {{< param "version" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|version|/en/docs/documentation_guidelinesion"  layoutClass="inline-block" listTitle="Documentation Guidelines">}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelinesion"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
 
 
 **For developers (QGIS {{< param "version" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|version|/en/docs/pyqgis_developer_cookbook"  layoutClass="inline-block" listTitle="PyQGIS cookbook (for plugins and scripting)">}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>">}}
 
 {{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API documentation" listSubtitle="">}}
 
@@ -115,15 +119,15 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{< tab-content-start tab="4" >}}
 
-{{< rich-list listLink="https://docs.qgis.org/3.22/en"  layoutClass="inline-block" listTitle="QGIS 3.22 Documentation" >}}
+{{< rich-list listLink="https://docs.qgis.org/3.22/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 Documentation — <lang>" >}}
 
-{{< rich-list listLink="https://docs.qgis.org/3.16/en"  layoutClass="inline-block" listTitle="QGIS 3.16 Documentation" >}}
+{{< rich-list listLink="https://docs.qgis.org/3.16/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.16 Documentation — <lang>" >}}
 
-{{< rich-list listLink="https://docs.qgis.org/3.10/en"  layoutClass="inline-block" listTitle="QGIS 3.10 Documentation" >}}
+{{< rich-list listLink="https://docs.qgis.org/3.10/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.10 Documentation — <lang>" >}}
 
-{{< rich-list listLink="https://docs.qgis.org/3.4/en"  layoutClass="inline-block" listTitle="QGIS 3.4 Documentation" >}}
+{{< rich-list listLink="https://docs.qgis.org/3.4/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.4 Documentation — <lang>" >}}
 
-{{< rich-list listLink="https://docs.qgis.org/2.18/en"  layoutClass="inline-block" listTitle="QGIS 2.18 Documentation" >}}
+{{< rich-list listLink="https://docs.qgis.org/2.18/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 2.18 Documentation — <lang>" >}}
 
 {{< tab-content-end >}}
 

@@ -472,6 +472,87 @@ sectionPagesMenu = 'main'
   url = "/resources/support/security"
   weight = 190
 
+# Languages for translated docs
+[[menu.lang]]
+  name = "🇬🇧 English"
+  url = "en"
+  weight = 1
+
+[[menu.lang]]
+  name = "🇨🇿 Czech"
+  url = "cs"
+  weight = 2
+
+[[menu.lang]]
+  name = "🇩🇪 German"
+  url = "de"
+  weight = 3
+
+[[menu.lang]]
+  name = "🇪🇸 Spanish"
+  url = "es"
+  weight = 4
+
+[[menu.lang]]
+  name = "🇫🇷 French"
+  url = "fr"
+  weight = 5
+
+[[menu.lang]]
+  name = "🇭🇺 Hungarian"
+  url = "hu"
+  weight = 6
+
+[[menu.lang]]
+  name = "🇮🇹 Italian"
+  url = "it"
+  weight = 7
+
+[[menu.lang]]
+  name = "🇯🇵 Japanese"
+  url = "ja"
+  weight = 8
+
+[[menu.lang]]
+  name = "🇰🇷 Korean"
+  url = "ko"
+  weight = 9
+
+[[menu.lang]]
+  name = "🇱🇹 Lithuanian"
+  url = "lt"
+  weight = 10
+
+[[menu.lang]]
+  name = "🇳🇱 Dutch"
+  url = "nl"
+  weight = 11
+
+[[menu.lang]]
+  name = "🇧🇷 Portuguese - Brazil"
+  url = "pt_BR"
+  weight = 12
+
+[[menu.lang]]
+  name = "🇵🇹 Portuguese - Portugal"
+  url = "pt_PT"
+  weight = 13
+
+[[menu.lang]]
+  name = "🇷🇴 Romanian"
+  url = "ro"
+  weight = 14
+
+[[menu.lang]]
+  name = "🇷🇺 Russian"
+  url = "ru"
+  weight = 15
+
+[[menu.lang]]
+  name = "🇨🇳 Chinese - Simplified"
+  url = "zh-Hans"
+  weight = 16
+
 [outputs]
   home = ["HTML", "RSS", "JSON", "version", "version-ltr", "version-json"]
 
@@ -490,3 +571,5 @@ sectionPagesMenu = 'main'
   baseName = "version"
   isPlainText = true
   mediaType = "application/json"
+
+

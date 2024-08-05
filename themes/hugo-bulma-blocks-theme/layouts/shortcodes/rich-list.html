@@ -32,6 +32,7 @@
     <a
         class="rich-list {{ $layoutClass }} {{ $iconClass }} {{ $imageClass }} mr-2 mb-2"
         href="{{ $url }}"
+        data-url="{{ $url }}"
         target="{{ $target }}"
         rel="{{ $rel }}"
         {{ .Get "linkAttr" }}
@@ -42,7 +43,7 @@
         {{ with .Get "image" }}
             <div class="image"><img src="{{ . }}"></div>
         {{ end }}
-        <div class="listcont {{ $externalClass }}">{{ $listTitle }}</div>
+        <div class="listcont {{ $externalClass }}" title-content="{{ $listTitle }}">{{ $listTitle }}</div>
         <div class="subtext is-size-7">{{ $listSubtitle }}</div>
     </a>
 {{ else }}
