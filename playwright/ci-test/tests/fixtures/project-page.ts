@@ -26,7 +26,6 @@ export class ProjectPage {
         "Create maps",
         "Edit layers",
         "Process and analyze",
-        "Share maps",
         "Class-leading cartography",
         "Professional map production",
         "Powerful reporting tools",
