@@ -1,7 +1,6 @@
 {{ $tab1 := .Get "tab1" }}
 {{ $tab2 := .Get "tab2" }}
 {{ $tab3 := .Get "tab3" }}
-{{ $tab4 := .Get "tab4" }}
 
 {{ with index .Site.Data.conf }}
 	{{ $tab1 = replace $tab1 "|ltrversion|" .ltrversion }}
@@ -18,9 +17,6 @@
         {{ end }}
         {{ if $tab3 }}
             <li><a id="tab-3">{{ $tab3 }}</a></li>
-        {{ end }}
-        {{ if $tab4 }}
-            <li><a id="tab-4">{{ $tab4 }}</a></li>
         {{ end }}
     </ul>
 </div>
