@@ -4,24 +4,26 @@
 {{ else }}
     {{ $data = .Inner | unmarshal }}
 {{ end }}
-<table class="roadmap">
-    <thead>
-        <tr>
-            {{ range index $data 0 }}
-                <th>{{ . }}</th>
-            {{ end }}
-        </tr>
-    </thead>
-    <tbody>
-        {{ range after 1 $data }}
+<div class="schedule-container">
+    <table class="roadmap">
+        <thead>
             <tr>
-            {{ range . }}
-                {{ $class := index (findRE ":rm-\\w+:" .) 0 }}
-                <td class="{{ trim $class ":" }}">
-                    {{ . | replaceRE ":rm-\\w+:" "" }}
-                </td>
-            {{ end }}
+                {{ range index $data 0 }}
+                    <th>{{ . }}</th>
+                {{ end }}
             </tr>
-        {{ end }}
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            {{ range after 1 $data }}
+                <tr>
+                {{ range . }}
+                    {{ $class := index (findRE ":rm-\\w+:" .) 0 }}
+                    <td class="{{ trim $class ":" }}">
+                        {{ . | replaceRE ":rm-\\w+:" "" }}
+                    </td>
+                {{ end }}
+                </tr>
+            {{ end }}
+        </tbody>
+    </table>
+</div>
