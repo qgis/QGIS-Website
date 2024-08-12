@@ -32,7 +32,6 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 [Get involved]({{< ref "/community/involve" >}}) and help us write a better documentation.
 
 {{< language-select >}}
-<span id="selected-language-display">Select a language</span>
 
 {{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing" tab4="Archived releases">}}
 
