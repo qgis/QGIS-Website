@@ -34,7 +34,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 {{< language-select >}}
 <span id="selected-language-display">Select a language</span>
 
-{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS testing" tab3="Archived releases">}}
+{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases">}}
 
 
 {{< tab-content-start tab="1" >}}
