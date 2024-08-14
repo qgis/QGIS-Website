@@ -25,6 +25,22 @@ body:
         - Tablet
         - Desktop
   - type: dropdown
+    id: operating_systems
+    attributes:
+      label: On which operating system(s) are you seeing the problem?
+      multiple: true
+      options:
+        - Android
+        - iOS
+        - Linux distribution
+        - MacOs
+        - Windows
+  - type: input
+    id: other_os
+    attributes:
+      label: Other OS
+      description: If your operating system is not in the list, enter it here.
+  - type: dropdown
     id: browsers
     attributes:
       label: On which browser(s) are you seeing the problem?
