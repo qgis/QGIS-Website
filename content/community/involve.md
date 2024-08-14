@@ -52,7 +52,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 
 Creating documentation offers an ideal starting point for your first contribution to the project. If you're interested in joining the documentation effort, you can find a gentle introduction and guidelines here:
 
-[How to write documentation](https://docs.qgis.org/3.28/en/docs/documentation_guidelines/)
+[How to write documentation](https://docs.qgis.org/latest/en/docs/documentation_guidelines/)
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 ![](../img/Documentation.jpg)
@@ -65,7 +65,7 @@ Creating documentation offers an ideal starting point for your first contributio
 
 If you're interested in contributing to the documentation effort, such as translating the English manual into another language, find out how to get started here:
 
-[How to translate QGIS](https://docs.qgis.org/3.28/en/docs/documentation_guidelines/do_translations.html )
+[How to translate QGIS](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html )
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 ![](../img/Translate.jpg)
@@ -78,7 +78,7 @@ If you're interested in contributing to the documentation effort, such as transl
 
 Interested in crafting your own? Learn how to get started!
 
-[Develop Python plugins](https://docs.qgis.org/3.28/en/docs/pyqgis_developer_cookbook/index.html)
+[Develop Python plugins](https://docs.qgis.org/latest/en/docs/pyqgis_developer_cookbook/index.html)
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
 ![](../img/Plugin.jpg)
@@ -91,7 +91,7 @@ Interested in crafting your own? Learn how to get started!
 
 QGIS Core comprises libraries for building custom applications through a robust API. It also includes desktop and server applications that showcase the library capabilities, providing a user-friendly interface
 
-[Get set up for QGIS Core development](https://docs.qgis.org/3.28/en/docs/developers_guide/index.html )
+[Get set up for QGIS Core development](https://docs.qgis.org/latest/en/docs/developers_guide/index.html )
 
 [QGIS roadmap]({{< ref "resources/roadmap" >}})
 {{< rich-content-end >}}
