@@ -30,7 +30,7 @@ If you have any questions while starting QGIS, welcome to our complete guide to 
 
 ## What's next?
 
-For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/3.28/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats.
+For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats.
 
 You can also look at the cases - there are many inspiring stories there.
 
