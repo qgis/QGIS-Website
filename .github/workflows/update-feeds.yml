@@ -10,6 +10,7 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    if: github.repository_owner == 'qgis'
     steps:
     - name: '🛒 Checkout QGIS Website'
       uses: actions/checkout@v3
