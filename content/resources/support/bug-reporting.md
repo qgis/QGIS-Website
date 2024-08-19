@@ -23,6 +23,9 @@ Each part of the QGIS Project has a dedicated place where issues (feature reques
 |QGIS Documentation (https://docs.qgis.org)|https://github.com/qgis/QGIS-Documentation/issues|
 |C++ API (https://qgis.org/api)|https://github.com/qgis/QGIS/issues|
 |PyQGIS API (https://qgis.org/pyqgis)|https://github.com/qgis/QGIS/issues (for contents) and https://github.com/qgis/pyqgis/issues (for formatting)|
+|QGIS Plugins Website (https://plugins.qgis.org)|https://github.com/qgis/QGIS-Django/issues|
+|QGIS Changelog Website (https://changelog.qgis.org)|https://github.com/kartoza/prj.app/issues|
+|QGIS Feed Website (https://feed.qgis.org)|https://github.com/qgis/qgis-feed/issues|
 |External plugins|The author repository set in the plugin description|
 
 For help and questions, please contact the [Mailing lists]({{< ref "community/organisation/mailinglists" >}}).
