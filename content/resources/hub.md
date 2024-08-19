@@ -50,7 +50,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 **For documentation writers (QGIS {{< param "ltrversion" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/documentation_guidelinesion"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
+{{< rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/documentation_guidelines"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
 
 
 **For developers (QGIS {{< param "ltrversion" >}}):**
