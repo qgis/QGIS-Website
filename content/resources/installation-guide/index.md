@@ -465,7 +465,7 @@ Packages on https://slackbuilds.org/result/?search=qgis
 
 ### QGIS stable
 
-Arch Linux is available in official repository : https://archlinux.org/packages/extra/x86_64/qgis/
+QGIS stable is available in Arch Linux official repository : https://archlinux.org/packages/extra/x86_64/qgis/
 
 Install with:
 
@@ -477,7 +477,7 @@ pacman -S qgis
 
 QGIS Long Term Release is available in AUR (Arch User Repository).
 
-Install with yaourt or other package manager which support AUR:
+Install with yaourt or other package manager which supports AUR:
 
 ```
 yaourt -S qgis-ltr
@@ -489,7 +489,7 @@ For bugs and other behaviour, read comments here : https://aur.archlinux.org/pac
 
 QGIS testing is available in AUR (Arch User Repository).
 
-Install with yaourt or other package manager which support AUR:
+Install with yaourt or other package manager which supports AUR:
 
 ```
 yaourt -S qgis-git
@@ -656,7 +656,10 @@ To install QGIS from third-party package
 pkg_add qgis
 ```
 
-See: - https://openbsd.app/?search=qgis # for -stable OpenBSD - https://openbsd.app/?search=qgis&current=on # for -current OpenBSD
+See:
+
+- https://openbsd.app/?search=qgis for -stable OpenBSD
+- https://openbsd.app/?search=qgis&current=on for -current OpenBSD
 
 # QGIS Testing warning
 
