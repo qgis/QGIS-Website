@@ -18,6 +18,17 @@ Note: The books are listed in order of newest first. After the English books, th
 
 ## English
 
+### Collecting Field Data with QGIS and Mergin Maps
+
+Learn to master the Mergin Maps platform to collect, share and manage your field data.
+
+- [https://locatepress.com/book/mergin-maps](https://locatepress.com/book/mergin-maps)
+    
+- Authors: Kurt Menke and Alexandra Bucha Rasova
+    
+- Date: September 2024
+  
+
 ### Discover QGIS 3.x - Second Edition
 
 A workbook for Classroom or Independent Study Updated to QGIS 3.24+
