@@ -49,13 +49,13 @@ export class CommunityPage {
             ],
         },
         {
-            page: "Become a certified trainer",
+            page: "Become a QGIS certified training organisation",
             texts: [
-                "Become a certified trainer",
+                "Become a QGIS certified training organisation",
                 "certification@qgis.org",
                 "Certification Process",
-                "Application",
-                "Course Certification Workflow"
+                "Requirements",
+                "Application"
             ],
         },
         {

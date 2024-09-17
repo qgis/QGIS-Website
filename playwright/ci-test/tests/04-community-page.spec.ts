@@ -56,11 +56,11 @@ test.describe("Community pages", () => {
         await expect(communityPage.currencyInput).toBeVisible();
     });
 
-    test("Become a certified trainer", async ({ sidebar, communityPage }) => {
+    test("Become a QGIS certified training organisation", async ({ sidebar, communityPage }) => {
         await expect(sidebar.becomeCertifiedMemberLink).toBeVisible();
         await sidebar.becomeCertifiedMemberLink.click();
         let becomeCertifiedTexts = communityPage.textList.find(
-            (item) => item.page == "Become a certified trainer",
+            (item) => item.page == "Become a QGIS certified training organisation",
         )?.texts;
 
         if (becomeCertifiedTexts) {
@@ -68,8 +68,6 @@ test.describe("Community pages", () => {
                 await expect(communityPage.pageBody).toContainText(item);
             }
         }
-
-        await expect(communityPage.workflowCertificationImg).toBeVisible();
     });
     test("QGIS Foundation", async ({ sidebar, communityPage }) => {
         await expect(sidebar.qgisFoundationLink).toBeVisible();
