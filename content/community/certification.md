@@ -12,9 +12,9 @@ Reviewer: Tim Sutton
 {{< content-start >}}
 
 # Become a QGIS certified training organisation
-Is your organisation an active member of the QGIS community and offering high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and trainings. Each certificate contributes €20 to QGIS.
+Is your organisation an active member of the QGIS community and offering high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
 
-If you're looking for organisations that offer trainings with the official QGIS certificate, check the [current list of members](https://changelog.qgis.org/en/qgis/certifyingorganisation/list/) of the QGIS Certification Programme.
+If you're looking for organisations that offer training with the official QGIS certificate, check the [current list of members](https://changelog.qgis.org/en/qgis/certifyingorganisation/list/) of the QGIS Certification Programme.
 
 ## Certification Process
 ### Requirements
