@@ -91,7 +91,7 @@ export class InstallationGuidePage {
         "Flatpak",
         "Spack",
         "Mac OS X / macOS",
-        "QGIS nightly release",
+        // "QGIS nightly release",
         "MacPorts",
         "Old releases",
         "FreeBSD",
