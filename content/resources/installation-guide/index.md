@@ -571,9 +571,11 @@ Spack related issues should be reported at: https://github.com/spack/spack/issue
 
 Official All-in-one, signed installers for macOS High Sierra (10.13) and newer can be downloaded from the [QGIS download page]({{< ref "download" >}}).
 
+<!--
 ## QGIS nightly release
 
 A nightly updated standalone installer from QGIS master can be downloaded from [here](/downloads/macos/qgis-macos-nightly.dmg).
+-->
 
 ## MacPorts
 
