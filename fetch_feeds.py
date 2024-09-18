@@ -229,7 +229,7 @@ try:
     # QGIS User group feed
     fetch_blog_feed(
         showcase_type="qug",
-        rss_url="https://raw.githubusercontent.com/qgis/QGIS-Website/main/source/feeds/qgisnews.atom"
+        rss_url="https://raw.githubusercontent.com/qgis/QGIS-Website/main/source/feeds/qugsnews.atom"
     )
 except Exception as e:
     print(f"Error fetching QUG blog feed: {e}")
