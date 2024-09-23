@@ -38,4 +38,8 @@ git push origin main >> "$LOG_FILE" 2>&1
 # Cleanup
 rm running
 log "Script completed successfully"
+
+# Deploy the changes
+# make deploy
+
 exit 0
