@@ -145,11 +145,8 @@ try:
         content_length = int(os.environ.get('CONTENT_LENGTH', 0))
         log(str(content_length) + ' content_length')
         if content_length > 0:
-
             # input_stream = io.TextIOWrapper(sys.stdin.buffer, encoding='utf-8')
-            # log(str(input_stream) + ' input_stream')
             # # Limit the size of the data read to the content_length
-            # rawdata = input_stream.read(content_length)
             rawdata = sys.stdin.buffer.read(content_length)
             rawdata = rawdata.decode('utf-8')
         else:
