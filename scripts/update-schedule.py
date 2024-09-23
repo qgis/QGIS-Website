@@ -215,7 +215,7 @@ for v, n in {ltr_version: ltr_name, lr_version: lr_name}.items():
     print(f"{v}:{n}")
     url = "https://raw.githubusercontent.com/qgis/QGIS/release-{0}/CMakeLists.txt".format("_".join(v.split('.')[:2]))
     cm = urlopen(url).read().decode('utf-8')
-    rn = re.search("^set\\(RELEASE_NAME \"(.*)\"\\)$", cm, re.MULTILINE).group(1)
+    rn = re.search("^set\(RELEASE_NAME \"(.*)\"\)$", cm, re.MULTILINE).group(1)
     assert n==rn, f"Expected {n}, found {rn}"
 
 assert lr_version.split(".") > ltr_version.split("."), f"LR {lr_version} not higher than {ltr_version}"
