@@ -70,7 +70,6 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: python add_donor.py \"John Doe\"")
         sys.exit(1)
-
     new_donor_name = sys.argv[1]  # Name passed as argument
     log(f"Adding new donor: {new_donor_name}")
     donors_json_file = 'data/donors.json'  # Path to the donors.json file

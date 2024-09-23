@@ -175,8 +175,7 @@ try:
         # have to sent bytes utf-8 encoded to command??
         #command = ['scripts/commit_donor.sh', donorname]
         command = ['scripts/commit_donor.sh', donorname]
-        log('command: {}'.format(command))
-        cwd = '/var/www/QGIS-Website'
+        cwd = os.getcwd()
         result = Popen(command, cwd=cwd, stdout=PIPE, stderr=PIPE)
         (status, error) = result.communicate()
         if result.poll() == 0:
