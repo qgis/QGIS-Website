@@ -1,9 +1,9 @@
 ---
 source: "blog"
-title: "QGIS Oslandia: (Fr) En direct des Journées Utilisateurs QGIS-fr !"
-image: "en-direct-des-journees-utilisateurs-qgis-fr."
-date: "2024-08-02"
-link: "https://oslandia.com/en/2024/03/28/en-direct-des-journees-utilisateurs-qgis-fr/"
+title: "QGIS Oslandia: (Fr) Variabilisez vos profils QGIS avec QDT"
+image: "variabilisez-vos-profils-qgis-avec-qdt."
+date: "2024-09-03"
+link: "https://oslandia.com/en/2024/09/03/variabilisez-vos-profils-qgis-avec-qdt/"
 draft: "true"
 showcase: "planet"
 ---

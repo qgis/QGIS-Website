@@ -1,9 +1,9 @@
 ---
 source: "blog"
-title: "QGIS Oslandia: (Fr) En direct des Journées Utilisateurs QGIS-fr !"
-image: "en-direct-des-journees-utilisateurs-qgis-fr."
-date: "2024-08-02"
-link: "https://oslandia.com/en/2024/03/28/en-direct-des-journees-utilisateurs-qgis-fr/"
+title: "QGIS Oslandia: (Fr) [Story] Oslandia x QWC : épisode 1 / 8"
+image: "story-oslandia-x-qwc-episode-1-8."
+date: "2024-08-28"
+link: "https://oslandia.com/en/2024/09/04/story-oslandia-x-qwc-episode-1-8/"
 draft: "true"
 showcase: "planet"
 ---

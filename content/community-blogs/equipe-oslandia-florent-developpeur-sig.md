@@ -1,9 +1,9 @@
 ---
 source: "blog"
-title: "QGIS Oslandia: (Fr) En direct des Journées Utilisateurs QGIS-fr !"
-image: "en-direct-des-journees-utilisateurs-qgis-fr."
-date: "2024-08-02"
-link: "https://oslandia.com/en/2024/03/28/en-direct-des-journees-utilisateurs-qgis-fr/"
+title: "QGIS Oslandia: (Fr) [Équipe Oslandia] Florent, développeur SIG"
+image: "equipe-oslandia-florent-developpeur-sig."
+date: "2024-08-22"
+link: "https://oslandia.com/en/2024/09/19/equipe-oslandia-florent-developpeur-sig/"
 draft: "true"
 showcase: "planet"
 ---
