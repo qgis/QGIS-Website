@@ -9,17 +9,20 @@ import argparse
 import json
 import shutil
 import os
-from rss_parser import Parser
-from requests import get
 import atoma
 from dateutil.parser import parse as date_parse
 try:
     import urlparse
 except ImportError:
     from urllib.parse import urlparse
+from scripts.resize_image import resize_image
 
 ### Funders
 def fetch_funders():
+    """
+    Fetch the sustaining members from the QGIS changelog 
+    and create markdown files
+    """
     response = requests.get("https://changelog.qgis.org/en/qgis/members/json/")
     data = json.loads(response.text)
     items = data["rss"]["channel"]["item"]
@@ -64,6 +67,13 @@ country: "{country}"
             shutil.copyfileobj(response.raw, out_file)
             print(f"Writing: {image_filename}")
         del response
+        try:
+            if level.lower() in ["flagship", "large"]:
+                resize_image(image_filename, max_height=150)
+            else:
+                resize_image(image_filename)
+        except Exception as e:
+            print(f"Error resizing image: {e}")
 
 ### Flickr screenshots
 def fetch_flickr_screenshots(showcase_type, rss_url):
@@ -188,25 +198,38 @@ parser.add_argument(
 parser.parse_args()
 args = parser.parse_args()
 
-fetch_funders()
+try:
+    fetch_funders()
+except Exception as e:
+    print(f"Error fetching funders: {e}")
 
-if args.flickr:
-    fetch_flickr_screenshots(
-        showcase_type="map",
-        rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
-    )
-    fetch_flickr_screenshots(
-        showcase_type="screenshot",
-        rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
-    )
+try:
+    if args.flickr:
+        fetch_flickr_screenshots(
+            showcase_type="map",
+            rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
+        )
+        fetch_flickr_screenshots(
+            showcase_type="screenshot",
+            rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
+        )
+except Exception as e:
+    print(f"Error fetching flickr screenshots: {e}")
 
-# Planet blog aggregator
-fetch_blog_feed(
-    showcase_type="planet",
-    rss_url="https://plugins.qgis.org/planet/feed/atom/"
-)
-# QGIS User group feed
-fetch_blog_feed(
-    showcase_type="qug",
-    rss_url="https://raw.githubusercontent.com/qgis/QGIS-Website/master/source/feeds/qugsnews.atom"
-)
+try:
+    # Planet blog aggregator
+    fetch_blog_feed(
+        showcase_type="planet",
+        rss_url="https://plugins.qgis.org/planet/feed/atom/"
+    )
+except Exception as e:
+    print(f"Error fetching planet blog feed: {e}")
+
+try:
+    # QGIS User group feed
+    fetch_blog_feed(
+        showcase_type="qug",
+        rss_url="https://raw.githubusercontent.com/qgis/QGIS-Website/main/source/feeds/qugsnews.atom"
+    )
+except Exception as e:
+    print(f"Error fetching QUG blog feed: {e}")
