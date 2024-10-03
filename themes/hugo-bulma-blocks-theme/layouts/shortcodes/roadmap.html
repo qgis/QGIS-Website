@@ -242,10 +242,13 @@
                 <div class="steps-content">
                     <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
                         <span>
-                            Packaging
+                            Point Release:
+                            {{ with index .Site.Data.conf }}
+                                <span class="rm-future">{{ .nextversion }}</span>
+                            {{ end }}
                         </span>
                         <span class="help-tip">
-                            <span > Here we tag the release and make it available for packaging on different platforms.</span>
+                            <span>Every October, we release a new Long Term Release (LTR) and start a new development cycle.</span>
                         </span>
                     </div>
                     <div>
@@ -275,6 +278,18 @@
                                 </div>
                             </div>
                         </nav>
+                    </div>
+                </div>
+            </li>
+
+            <li class="steps-segment is-active">
+                <span class="steps-marker"></span>
+                <div class="steps-content">
+                    <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
+                        <span>Packaging</span>
+                        <span class="help-tip">
+                            <span > Here we tag the release and make it available for packaging on different platforms. </span>
+                        </span>
                     </div>
                 </div>
             </li>
