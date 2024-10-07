@@ -28,7 +28,7 @@ col-title-2 = "Professional map production"
 col-text-2 = "Use the intuitive layout designer to produce high-quality, large-format print maps."
 col-title-3 = "Powerful reporting tools"
 col-text-3 = "Create atlasses and reports with maps and tabular content."
-img = "img/main-create.png"
+img = "img/main-create.webp"
 order = 1
 >}}
 ```
