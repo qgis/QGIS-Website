@@ -187,6 +187,25 @@ showcase: "{showcase_type}"
             print(f"Writing: {image_filename}")
         del response   
 
+def fetch_first_feed_entry():
+    """
+    Fetch the first entry from the QGIS feed and save it to data/feed.json
+    """
+    feed_url = "https://feed.qgis.org/?lang=en&json=1"
+    feed_file_path = "data/feed.json"
+    response = requests.get(feed_url)
+    response.raise_for_status()
+    feed_data = response.json()
+
+    if feed_data and len(feed_data) > 0:
+        first_entry = feed_data[0]
+        os.makedirs(os.path.dirname(feed_file_path), exist_ok=True)
+        with open(feed_file_path, "w", encoding="utf-8") as f:
+            json.dump(first_entry, f, ensure_ascii=False, indent=4)
+        print(f"First feed entry saved to {feed_file_path}")
+    else:
+        print("No items found in the feed.")
+
 
 parser = argparse.ArgumentParser(description='Import items from various feeds.')
 parser.add_argument(
@@ -233,3 +252,9 @@ try:
     )
 except Exception as e:
     print(f"Error fetching QUG blog feed: {e}")
+
+try:
+    # QGIS feed
+    fetch_first_feed_entry()
+except Exception as e:
+    print(f"Error fetching feed: {e}. Keeping the previous feed.json if it exists.")
