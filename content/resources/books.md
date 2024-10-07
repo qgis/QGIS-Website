@@ -415,4 +415,16 @@ The book consists of 2 main parts; In the first part, Geographical Information S
     
 - Date: January 2016
 
+
+## Ukrainian
+
+### РОБОЧИЙ ЗОШИТ «АНАЛІЗ КОСМІЧНИХ ЗНІМКІВ У ГЕОІНФОРМАЦІЙНИХ СИСТЕМАХ» Частина 2: 
+
+- [https://api.man.gov.ua/api/assets/man/a0746113-31c9-44d7-b6a1-d819e2e535dd/](https://api.man.gov.ua/api/assets/man/a0746113-31c9-44d7-b6a1-d819e2e535dd/)
+
+- Authors: С. М. Бабійчук, Т. Л. Кучма, Л. Я. Юрків, О. В. Томченко
+
+- Date: 2021
+
+
 {{< content-end >}}
