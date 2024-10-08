@@ -81,7 +81,7 @@ If you are under Windows and are using the OSGeo4w installer, it is included.
 If you are using macOS, you can find the ECW plugin and install instructions at
 https://www.kyngchaos.com/software/frameworks
 
-For other instructions, eg look here: https://www.faunalia.eu/en/blog/2019-05-21_ecw_support
+For other instructions, e.g. look here: https://www.faunalia.eu/en/blog/2019-05-21_ecw_support
 
 ### How can I get a VPAT / HECVAT / other US compliance form or information? 
 
@@ -94,7 +94,7 @@ More info and contact details: https://www.qgis-us.org
 
 ### Can I compile QGIS myself?
 
-Yes, compiling QGIS from source is possible whatever OS you use (Windows, OS X,
+Yes, compiling QGIS from source is possible whatever OS you use (Windows, macOS,
 Linux). Please read [Building QGIS from source](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
 
