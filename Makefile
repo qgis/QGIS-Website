@@ -54,11 +54,7 @@ deploy: ## Deploy the site for nocache.qgis.org, www.qgis.org and qgis.org
 	@echo "------------------------------------------------------------------"
 	@echo "Deploy site in production"
 	@echo "------------------------------------------------------------------"
-	git pull
-	rm -rf archive
-	mkdir archive
-	mv public_www public_prod public_nocache archive
-	make build
+	git pull && rm -rf archive; mkdir archive; mv public_www public_prod public_nocache archive; make build
 
 revert-deploy: ## Revert the site for nocache.qgis.org, www.qgis.org and qgis.org
 	@echo
