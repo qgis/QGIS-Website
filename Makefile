@@ -43,7 +43,7 @@ build: ## Build the site for nocache.qgis.org, www.qgis.org and qgis.org
 	@echo "------------------------------------------------------------------"
 	@echo "Building site in production"
 	@echo "------------------------------------------------------------------"
-	./scripts/get_commit_hash.sh
+	sh ./scripts/get_commit_hash.sh
 	hugo --config config.toml,config/config.nocache.toml
 	hugo --config config.toml,config/config.prod.toml
 	hugo --config config.toml,config/config.www.toml
@@ -54,7 +54,11 @@ deploy: ## Deploy the site for nocache.qgis.org, www.qgis.org and qgis.org
 	@echo "------------------------------------------------------------------"
 	@echo "Deploy site in production"
 	@echo "------------------------------------------------------------------"
-	git pull && rm -rf archive; mkdir archive; mv public_www public_prod public_nocache archive; make build
+	git pull
+	rm -rf archive
+	mkdir archive
+	mv public_www public_prod public_nocache archive
+	make build
 
 revert-deploy: ## Revert the site for nocache.qgis.org, www.qgis.org and qgis.org
 	@echo
