@@ -18,6 +18,17 @@ Note: The books are listed in order of newest first. After the English books, th
 
 ## English
 
+### QGIS for Ecologists
+
+An Introduction to Mapping for Ecological Surveys
+
+- [https://pelagicpublishing.com/products/qgis-for-ecologists](https://pelagicpublishing.com/products/qgis-for-ecologists)
+
+- Author: Stephanie Kim Miles
+  
+- Date: October 2024
+
+
 ### Collecting Field Data with QGIS and Mergin Maps
 
 Learn to master the Mergin Maps platform to collect, share and manage your field data.
