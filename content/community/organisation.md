@@ -161,8 +161,18 @@ Added 2020
 *   Peter Petrik, Czech Republic
     
 *   Richard Duivenvoorde, Netherlands
-    
 
+
+Added 2021
+
+*   Andrea Giudiceandrea, Italy
+
+
+Added 2022
+
+*   Adelcides Varela
+  
+  
 ## Release Management
 
 Current Release Manager: Jürgen E. Fischer
