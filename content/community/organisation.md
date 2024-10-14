@@ -98,7 +98,7 @@ According to our statutes, one member from the broader community can be elected 
     
 *   Larry Shaffer, United States
     
-*   Nyall Dawson, Australia
+*   ~~Nyall Dawson, Australia~~ (moved to Honorable Voting Member status in 2020)
     
 *   Giovanni Manghi, Portugal
     
@@ -170,7 +170,12 @@ Added 2021
 
 Added 2022
 
-*   Adelcides Varela
+*  Adelcides Varela, Cabo Verde
+
+
+### OSGEO Voting Member
+  
+*  Michael Smith [since 2015/16]
   
   
 ## Release Management
