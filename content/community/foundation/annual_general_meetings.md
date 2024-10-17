@@ -27,7 +27,7 @@ Starting in 2016 coinciding with the establishment of a formal legal entity (Swi
 
 {{< rich-list listLink="../agm-minutes/QGIS-AGM2017-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2017" listSubtitle="Download PDF">}}
 
-{{< rich-list listLink="../agm-minutes/QGIS-AGM2016-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 201" listSubtitle="Download PDF">}}
+{{< rich-list listLink="../agm-minutes/QGIS-AGM2016-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2016" listSubtitle="Download PDF">}}
 
 
 {{< content-end >}}
