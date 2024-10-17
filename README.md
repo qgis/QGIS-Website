@@ -364,6 +364,14 @@ Payment options are implemented with [Payment Links](https://docs.stripe.com/no-
 
 **Note**: payment links also support recurring donations (subscriptions) - products with recurrent payments should be created for that matter
 
+### Donors update from a static file
+The Donors list stored in data/donors.json can be updated from one or multiple
+static txt file using the script `script/update_donors_from_file.py`:
+
+```sh
+python scripts/update_donors_from_file.py <path_to_donors.txt> <path_to_donors2.txt> ...
+```
+
 ### Donors scraping
 
 Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://github.com/qgis/QGIS-Website/blob/master/scripts/adddonor.pl) and related scripts & webhooks should be adapted to the new format
