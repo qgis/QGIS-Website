@@ -43,7 +43,7 @@ build: ## Build the site for nocache.qgis.org, www.qgis.org and qgis.org
 	@echo "------------------------------------------------------------------"
 	@echo "Building site in production"
 	@echo "------------------------------------------------------------------"
-	./scripts/get_commit_hash.sh
+	sh ./scripts/get_commit_hash.sh
 	hugo --config config.toml,config/config.nocache.toml
 	hugo --config config.toml,config/config.prod.toml
 	hugo --config config.toml,config/config.www.toml
