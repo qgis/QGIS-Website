@@ -32,7 +32,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://github.com/MahdiFarnaghi/intelli_geo/blob/main/.github/IMAGES/Screenshot%20from%202024-09-19%2014-29-26.png"><img alt="" class="wp-image-9242" height="586" src="https://anitagraser.com/wp-content/uploads/2024/10/image-1.png?w=1024" tabindex="0" width="1024" /></a><figcaption class="wp-element-caption">Image source: <a href="https://github.com/MahdiFarnaghi/intelli_geo/blob/main/.github/IMAGES/Screenshot%20from%202024-09-19%2014-29-26.png">https://github.com/MahdiFarnaghi/intelli_geo</a></figcaption></figure>
+<figure class="wp-block-image size-large"><a href="https://github.com/MahdiFarnaghi/intelli_geo/blob/main/.github/IMAGES/Screenshot%20from%202024-09-19%2014-29-26.png"><img alt="" class="wp-image-9242" height="586" src="https://anitagraser.com/wp-content/uploads/2024/10/image-1.png?w=1024" width="1024" /></a><figcaption class="wp-element-caption">Image source: <a href="https://github.com/MahdiFarnaghi/intelli_geo/blob/main/.github/IMAGES/Screenshot%20from%202024-09-19%2014-29-26.png">https://github.com/MahdiFarnaghi/intelli_geo</a></figcaption></figure>
 
 
 
@@ -52,7 +52,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://www.mdpi.com/2220-9964/13/10/348"><img alt="" class="wp-image-9240" height="587" src="https://anitagraser.com/wp-content/uploads/2024/10/image.png?w=1024" tabindex="0" width="1024" /></a><figcaption class="wp-element-caption">Image source: <a href="https://www.mdpi.com/2220-9964/13/10/348">https://www.mdpi.com/2220-9964/13/10/348</a></figcaption></figure>
+<figure class="wp-block-image size-large"><a href="https://www.mdpi.com/2220-9964/13/10/348"><img alt="" class="wp-image-9240" height="587" src="https://anitagraser.com/wp-content/uploads/2024/10/image.png?w=1024" width="1024" /></a><figcaption class="wp-element-caption">Image source: <a href="https://www.mdpi.com/2220-9964/13/10/348">https://www.mdpi.com/2220-9964/13/10/348</a></figcaption></figure>
 
 
 
