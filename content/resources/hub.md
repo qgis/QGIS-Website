@@ -97,11 +97,11 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{< rich-list listLink="https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting)">}}
 
-{{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API documentation" listSubtitle="">}}
+{{< rich-list listLink="https://qgis.org/api/"  layoutClass="inline-block" listTitle="C++ API documentation" listSubtitle="">}}
 
-{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
+{{< rich-list listLink="https://qgis.org/pyqgis/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
 
-{{< rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md"  layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
+{{< rich-list listLink="https://github.com/qgis/QGIS/blob/master/INSTALL.md"  layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
 
 **For download (QGIS testing):**
 
