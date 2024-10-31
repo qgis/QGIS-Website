@@ -147,7 +147,7 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{< tab-content-end >}}
 
-{{< tab-content-start tab="3" >}}
+{{< tab-content-start tab="4" >}}
 
 
 {{< rich-list listLink="https://docs.qgis.org/3.22/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 Documentation — <lang>" >}}
