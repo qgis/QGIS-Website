@@ -33,7 +33,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{< language-select >}}
 
-{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases">}}
+{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases">}}
 
 
 {{< tab-content-start tab="1" >}}
@@ -73,10 +73,46 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 {{< tab-content-end >}}
 
 
-
 {{< tab-content-start tab="2" >}}
+**For users (QGIS {{< param "version" >}}):**
 
-We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "ltrversion" >}}. We call this version 'QGIS Testing' and the documentation can be found here: 
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
+ 
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>">}}
+
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
+
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
+
+
+**For documentation writers (QGIS {{< param "version" >}}):**
+
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
+
+
+**For developers (QGIS {{< param "version" >}}):**
+
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>">}}
+
+{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
+
+
+{{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API documentation" listSubtitle="">}}
+
+{{< rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md"  layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
+
+**For download (QGIS {{< param "version" >}}):**
+
+{{< rich-list listLink="https://docs.qgis.org/|version|/pdf"  layoutClass="inline-block" listTitle="PDF of the manuals" >}}
+
+{{< rich-list listLink="https://docs.qgis.org/|version|/zip"  layoutClass="inline-block" listTitle="HTML zip of the manuals" >}}
+
+{{< tab-content-end >}}
+
+
+{{< tab-content-start tab="3" >}}
+
+We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "version" >}}. We call this version 'QGIS Testing' and the documentation can be found here: 
 
 **For users (QGIS testing):**
 
