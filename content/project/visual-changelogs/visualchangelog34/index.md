@@ -1,5 +1,5 @@
 ---
-title: "Changelog for QGIS 3.4 LTR"
+title: "Changelog for QGIS 3.4"
 draft: false
 HasBanner: false
 sidebar: true
@@ -9,7 +9,7 @@ type: "visual-changelog"
 ---
 {{< content-start >}}
 
-# Changelog for QGIS 3.4 LTR {#changelog34}
+# Changelog for QGIS 3.4 {#changelog34}
 
 ![image0](images/entries/splash34vs.png)
 
