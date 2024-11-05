@@ -183,16 +183,16 @@ Lines of packages:
 | ---- | ---- | ---- | ---- |
 | Latest Release | {{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}} | Release for **Debian and Ubuntu** | https://qgis.org/debian <br> https://qgis.org/ubuntu |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id5) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly-release |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-release |  |  |
 | Long Term Release Repository | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | Release for **Debian and Ubuntu** | https://qgis.org/debian-ltr https://qgis.org/ubuntu-ltr |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id5) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
-| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[5]](#id5) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
-||| Nightly build with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
+| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+||| Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |  |  |
 
-{{< footnote "5" >}} Nightlies are debug builds (including debugging output)
+{{< footnote "2" >}} Nightlies are debug builds (including debugging output)
 
 <small>
 Next point release: {{< param "nextpointreleasedate" >}}
@@ -204,17 +204,21 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version|Codename|Also available based on ubuntugis-unstable dependencies?|
-|---|---|---|---|
-|Debian|12.x (stable)|bookworm||
-||11.x (oldstable)|bullseye||
-||unstable|sid||
-|Ubuntu|24.04 (LTS)|noble|yes [[6]](#id6)|
-||23.10|mantic||
-||23.04|lunar||
-||22.04 (LTS)|jammy|yes|
+|Distribution|Version         |Codename|Also available based on ubuntugis-unstable dependencies?|
+|------------|----------------|--------|--------------------------------------------------------|
+|Debian      |12.x (stable)   |bookworm|                                                        |
+|            |11.x (oldstable)|bullseye [[3]](#id3) |                                           |
+|            |unstable        |sid     |                                                        |
+|Ubuntu      |24.10           |oracular [[4]](#id4) |                                           |
+|            |24.04 (LTS)     |noble   |yes                                                     |
+|            |23.10           |mantic  |                                                        |
+|            |23.04           |lunar   |                                                        |
+|            |22.04 (LTS)     |jammy   |yes                                                     |
 
-{{< footnote "6" >}} starting with nightlies of 3.34.9/3.38.2
+{{< footnote "3" >}} only up to 3.38 (bullseye's GRASS too old)
+
+{{< footnote "4" >}} starting with nightlies after 3.34.12/3.40.0
+
 
 To use the QGIS archive you have to first add the archive’s repository public key:
 
