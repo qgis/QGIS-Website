@@ -80,11 +80,11 @@ showcase: "planet"
 
 
 
-<p>While answers from knowledge graphs are intrinsically explainable, many other (Geo)AI approaches are built on AI approaches that result in black box models. </p>
+<p>While answers from knowledge graphs are intrinsically explainable, many other (Geo)AI solutions are built on AI approaches that result in black box models.</p>
 
 
 
-<p>Graph neural networks (GNNs) have become very popular in GeoAI (including in urban analytics and mobility <a href="https://arxiv.org/abs/2307.08461">[Jalali et al. 2023] </a><a href="https://journals.sagepub.com/doi/10.1177/23998083231204689">[Liu et al. 2024]</a>) but their black box nature limits their practical usefulness in domains where transparency and trustworthiness are crucial. To offered insights into how model predictions are made, <a href="https://journals.sagepub.com/doi/10.1177/23998083231204689">[Liu et al. 2024]</a> propose a spatially explicit GeoAI-based method that combines a graph convolutional network and a graph-based XAI method, called GNNExplainer to explore the correlation between urban objects.</p>
+<p>Graph neural networks (GNNs) have become very popular in GeoAI (including in urban analytics and mobility <a href="https://arxiv.org/abs/2307.08461">[Jalali et al. 2023] </a><a href="https://journals.sagepub.com/doi/10.1177/23998083231204689">[Liu et al. 2024]</a>) but their black box nature limits their practical usefulness in domains where transparency and trustworthiness are crucial. To offer insights into how model predictions are made, <a href="https://journals.sagepub.com/doi/10.1177/23998083231204689">[Liu et al. 2024]</a> propose a spatially explicit GeoAI-based method that combines a graph convolutional network and a graph-based XAI method, called GNNExplainer to explore the correlation between urban objects.</p>
 
 
 
@@ -113,7 +113,7 @@ showcase: "planet"
 
 
 
-<li><a href="https://arxiv.org/abs/2310.18660">Jakubik, J., Roy, S., Phillips, C., Fraccaro, P., Godwin, D., Zadrozny, B., &#8230; &amp; Edwards, B. Foundation models for generalist geospatial artificial intelligence. arXiv 2023. <em>arXiv preprint arXiv:2310.18660</em>.</a></li>
+<li><a href="https://arxiv.org/abs/2310.18660">Jakubik, J., Roy, S., Phillips, C., Fraccaro, P., Godwin, D., Zadrozny, B., &#8230; &amp; Edwards, B. (2023) Foundation models for generalist geospatial artificial intelligence. <em>arXiv preprint arXiv:2310.18660</em>.</a></li>
 
 
 
