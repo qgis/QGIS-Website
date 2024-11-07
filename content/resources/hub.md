@@ -114,6 +114,8 @@ We are still updating (not translating yet) the documentation for releases newer
 {{< tab-content-start tab="3" >}}
 
 
+{{< rich-list listLink="https://docs.qgis.org/3.28/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.28 Documentation — <lang>" >}}
+
 {{< rich-list listLink="https://docs.qgis.org/3.22/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 Documentation — <lang>" >}}
 
 {{< rich-list listLink="https://docs.qgis.org/3.16/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.16 Documentation — <lang>" >}}
