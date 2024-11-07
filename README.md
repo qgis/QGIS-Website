@@ -285,10 +285,10 @@ Script for harvesting the visualchangelog from changelog.qgis.org is scripts/cha
 
 Usage:
 ```
-$ python scripts/changelog_harvest.py
+$ ./scripts/changelog_harvest.py
 
 # For a specific version
-$ python3 scripts/changelog_harvest.py --version 3.34 --release 21.06.2024
+$ ./scripts/changelog_harvest.py --version 3.34 --release 21.06.2024
 ```
 
 Example usage in md:
