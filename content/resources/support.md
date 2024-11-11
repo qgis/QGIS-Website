@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: "Support"
+title: "Contact and Support"
 subtitle: ""
 draft: false
 sidebar: true
