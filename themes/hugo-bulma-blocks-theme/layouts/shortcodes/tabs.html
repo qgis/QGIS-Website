@@ -5,6 +5,7 @@
 
 {{ with index .Site.Data.conf }}
 	{{ $tab1 = replace $tab1 "|ltrversion|" .ltrversion }}
+	{{ $tab2 = replace $tab2 "|ltrversion|" .ltrversion }}
 	{{ $tab2 = replace $tab2 "|version|" .version }}
 	{{ $tab3 = replace $tab3 "|version|" .version }}
 {{ end }}
