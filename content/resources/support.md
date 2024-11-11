@@ -10,7 +10,7 @@ Reviewer: Tim Sutton
 
 {{< content-start  >}}
 
-# Support
+# Contact and Support
 
 ## Before you start
 
