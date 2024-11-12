@@ -34,7 +34,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/09/img_8700.webp"><img alt="" class="wp-image-3116" height="450" src="https://blog.qgis.org/wp-content/uploads/2024/09/img_8700.webp?w=600" tabindex="0" width="600" /></a></figure>
+<figure class="wp-block-image size-large"><a href="https://blog.qgis.org/wp-content/uploads/2024/09/img_8700.webp"><img alt="" class="wp-image-3116" height="450" src="https://blog.qgis.org/wp-content/uploads/2024/09/img_8700.webp?w=600" width="600" /></a></figure>
 
 
 
