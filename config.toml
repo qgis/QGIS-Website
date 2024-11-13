@@ -368,7 +368,131 @@ sectionPagesMenu = 'main'
   name = "Installation guide"
   url = "/resources/installation-guide/"
   weight = 10
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Windows"
+    url = "/resources/installation-guide/#windows"
+    weight = 20
 
+  [[menu.main]]
+    parent = "Windows"
+    name = "Standalone installers"
+    url = "/resources/installation-guide/#standalone-installers"
+    weight = 30
+
+  [[menu.main]]
+    parent = "Windows"
+    name = "OSGeo4W installer"
+    url = "/resources/installation-guide/#osgeo4w-installer"
+    weight = 40
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Linux"
+    url = "/resources/installation-guide/#linux"
+    weight = 50
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Debian / Ubuntu"
+    url = "/resources/installation-guide/#debian--ubuntu"
+    weight = 60
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Fedora"
+    url = "/resources/installation-guide/#fedora"
+    weight = 90
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "NixOS"
+    url = "/resources/installation-guide/#nixos"
+    weight = 100
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "SUSE / openSUSE"
+    url = "/resources/installation-guide/#suse--opensuse"
+    weight = 110
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Mandriva"
+    url = "/resources/installation-guide/#mandriva"
+    weight = 120
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Slackware"
+    url = "/resources/installation-guide/#slackware"
+    weight = 130
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Arch Linux"
+    url = "/resources/installation-guide/#arch-linux"
+    weight = 140
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Flatpak"
+    url = "/resources/installation-guide/#flatpak"
+    weight = 150
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Spack"
+    url = "/resources/installation-guide/#spack"
+    weight = 160
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Mac OS X / macOS"
+    url = "/resources/installation-guide/#mac-os-x--macos"
+    weight = 170
+
+  [[menu.main]]
+    parent = "Mac OS X / macOS"
+    name = "Binary packages (installers)"
+    url = "/resources/installation-guide/#binary-packages-installers"
+    weight = 180
+
+  [[menu.main]]
+    parent = "Mac OS X / macOS"
+    name = "MacPorts"
+    url = "/resources/installation-guide/#macports"
+    weight = 190
+
+  [[menu.main]]
+    parent = "Mac OS X / macOS"
+    name = "Old releases"
+    url = "/resources/installation-guide/#old-releases"
+    weight = 200
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "FreeBSD"
+    url = "/resources/installation-guide/#freebsd"
+    weight = 210
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "OpenBSD"
+    url = "/resources/installation-guide/#openbsd"
+    weight = 220
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "QGIS Testing warning"
+    url = "/resources/installation-guide/#qgis-testing-warning"
+    weight = 230
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Installing from Source"
+    url = "/resources/installation-guide/#installing-from-source"
+    weight = 240
 
 [[menu.main]]
   parent = "Resources"
