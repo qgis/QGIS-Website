@@ -82,6 +82,13 @@ test.describe("Resources pages", () => {
     test("Installation guide", async ({ sidebar, installationGuidePage }) => {
         await expect(sidebar.installationGuideLink).toBeVisible();
         await sidebar.installationGuideLink.click();
+        await expect(sidebar.windowsLink).toBeVisible();
+        await expect(sidebar.linuxLink).toBeVisible();
+        await expect(sidebar.macOSLink).toBeVisible();
+        await expect(sidebar.freeBSDLink).toBeVisible();
+        await expect(sidebar.openBSDLink).toBeVisible();
+        await expect(sidebar.qgisTestingWarningLink).toBeVisible();
+        await expect(sidebar.installingFromSourceLink).toBeVisible();
         await expect(
             installationGuidePage.upcomingEvaluationLink,
         ).toBeVisible();

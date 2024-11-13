@@ -127,6 +127,7 @@ export class InstallationGuidePage {
         });
         this.osgeo4WInstallerLink = this.page.getByRole("link", {
             name: "OSGeo4W Installer",
+            exact: true,
         });
         this.aptInstallGnupgPre = this.page
             .locator("pre")
