@@ -77,7 +77,7 @@ Most linux distributions split QGIS into several packages; you’ll probably nee
 
 Below you will find specific instructions per distribution. For most distro’s there are instructions to install QGIS stable and instructions to install a cutting edge QGIS testing build (note the [warning](#warning)).
 
-## Debian/Ubuntu
+## Debian / Ubuntu
 
 ### Quickstart
 
