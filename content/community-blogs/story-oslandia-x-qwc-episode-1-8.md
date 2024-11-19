@@ -2,7 +2,7 @@
 source: "blog"
 title: "QGIS Oslandia: (Fr) [Story] Oslandia x QWC : épisode 1 / 8"
 image: "story-oslandia-x-qwc-episode-1-8."
-date: "2024-08-28"
+date: "2024-11-19"
 link: "https://oslandia.com/en/2024/09/04/story-oslandia-x-qwc-episode-1-8/"
 draft: "true"
 showcase: "planet"
