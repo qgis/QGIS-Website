@@ -2,7 +2,7 @@
 {{ if .Params.HasBanner }}
     {{ $size := .Params.HeroSize | default "is-small" }}
     <section
-        class="hero is-dark {{ $size }} has-bg-img"
+        class="hero is-primary1 {{ $size }} has-bg-img {{ if .Params.HeroIsUserConference }}user-conference{{ end }}"
         {{ if ( .Params.HeroImage ) }}
             style="background: url('{{ absURL .Params.HeroImage | safeCSS }}');
             background-position: center; background-size: cover;"
@@ -52,6 +52,26 @@
                     </figure>
                 </div>
             {{ end }}
+            </div>
         </div>
+
+        {{ if .Params.HeroMenu }}
+            {{ $menuID := default "main" .Params.HeroMenu }}
+            {{ $menu := index site.Menus $menuID }}
+            {{ $pageUrl := replaceRE "/$" "" .RelPermalink }}
+            <div class="hero-foot">
+                <nav class="tabs is-boxed is-right">
+                    <div class="container">
+                        <ul>
+                            {{- range $menu }}
+                            <li {{ if eq (replaceRE "/$" "" .URL) $pageUrl }} class="is-active"{{ end }}>
+                                {{ partial "link" . }}
+                            </li>
+                            {{- end }}
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        {{ end }}
     </section>
 {{ end }}
