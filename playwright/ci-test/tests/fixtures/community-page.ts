@@ -241,6 +241,7 @@ export class CommunityPage {
         });
         this.qgisDocumentationLink = this.page.getByRole("link", {
             name: "QGIS Documentation",
+            exact: true,
         });
         this.translateQGISLink = this.page.getByRole("link", {
             name: "Translate QGIS",
