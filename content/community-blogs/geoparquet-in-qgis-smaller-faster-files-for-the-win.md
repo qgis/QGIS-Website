@@ -120,7 +120,15 @@ showcase: "planet"
 
 
 
-<p>If you want to see an even larger example, have a look at Matt Travis&#8217; presentation using Overture data: </p>
+<h2 class="wp-block-heading">More reading </h2>
+
+
+
+<p>If you&#8217;re into GeoJSON and/or PyGeoAPI, check out Joana Simoes&#8217; post: <a href="https://doublebyteblog.wordpress.com/2024/08/02/navigating-geoparquet-lessons-learned-from-the-emotional-cities-project/" rel="nofollow">https://doublebyteblog.wordpress.com/2024/08/02/navigating-geoparquet-lessons-learned-from-the-emotional-cities-project/</a></p>
+
+
+
+<p>And if you want to see a global dataset example, have a look at Matt Travis&#8217; presentation using Overture data:</p>
 
 
 
