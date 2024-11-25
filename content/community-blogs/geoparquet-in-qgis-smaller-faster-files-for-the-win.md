@@ -124,7 +124,7 @@ showcase: "planet"
 
 
 
-<p>If you&#8217;re into GeoJSON and/or PyGeoAPI, check out Joana Simoes&#8217; post: <a href="https://doublebyteblog.wordpress.com/2024/08/02/navigating-geoparquet-lessons-learned-from-the-emotional-cities-project/" rel="nofollow">https://doublebyteblog.wordpress.com/2024/08/02/navigating-geoparquet-lessons-learned-from-the-emotional-cities-project/</a></p>
+<p>If you&#8217;re into GeoJSON and/or PyGeoAPI, check out Joana Simoes&#8217; post: <a href="https://doublebyteblog.wordpress.com/2024/08/02/navigating-geoparquet-lessons-learned-from-the-emotional-cities-project/">&#8220;Navigating GeoParquet: Lessons Learned from the eMOTIONAL Cities Project&#8221;</a></p>
 
 
 
