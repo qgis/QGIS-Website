@@ -95,6 +95,16 @@ Once the site is running, you can open it at:
 
 The site will automatically refresh any page you have open if you edit it and save your work. Magical eh?
 
+## Run in other IDEs
+
+Use an appropriate Hugo plugin for your IDE, or run Hugo från the command line:
+
+```shell
+hugo server
+```
+
+You can then visit the hot-reloaded site in your browser at `http://localhost:1313/`
+
 ## Running Playwright End to End (e2e) Tests
 
 Test files are located in ```playwright/ci-test/tests```.
