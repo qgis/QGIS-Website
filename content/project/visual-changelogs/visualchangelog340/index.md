@@ -43,7 +43,9 @@ When a vector layer and the project have vertical datums present, and they diffe
 
 ![](images/entries/2249cc72d87c0b0542213451037df8bbefbad6ba)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was funded by [North Road](https://north-road.com)
+
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Present referencing relations in info tool
 
@@ -120,9 +122,9 @@ Notes:
 
 ![](images/entries/ac3d8027aaa1dce55a600831bbe0a51d890f9206)
 
-This feature was funded by the Swiss QGIS User Group
+This feature was funded by the [Swiss QGIS User Group](https://www.qgis.ch/de/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Implement color ramp interpolation for CMYK
 
@@ -154,7 +156,9 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 Allows rendering a marker symbol below the endpoint of the balloon callout. Designed to allow balloon callouts to reproduce the same visual appearance as the older annotation framework items.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was funded by [North Road](https://north-road.com)
+
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Buffers for marker symbols
 
@@ -166,9 +170,9 @@ This change is designed to plug on of the (very few!) remaining large symbology 
 
 ![](images/entries/391b7def075a5dcdc026d0e625bb3f6483bc580a.png)
 
-This feature was funded by North Road, thanks to SLYR
+This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Support tolerances for QgsRasterTransparency pixel values
 
@@ -178,19 +182,26 @@ Useful for photographs or compressed rasters where a range of color values must 
 
 ![](images/entries/73a7b62e6c22c27056a35c9d827f8ac3955f7b57.png)
 
-This feature was funded by Middle Third Geological
+This feature was funded by [Middle Third Geological](https://www.linkedin.com/in/deryk-forster-44a415104/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ## Annotations 
 
 ### Feature: Auto upgrade SVG and text annotations to annotation layer items on project load
 
-In line with [QEP\#269](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269), any of the old SVG and text annotations will automatically be converted to the newer picture and rectangular text annotation item types when loading an old project.
+We improved the workflow for those projects with older annotation items. In previous QGIS versions, older annotation items (text, html, svg and form) had not been ported over to the new framework therefore impacting workflows. In 3.40, we have targeted the higher priority items, text and svg, so now the framework has been updated and the missing functionality has been added. 
+Now, when loading old projects, any of the old SVG and text annotations will automatically be converted (silently) to the newer picture and rectangular text annotation item types.
+- Various bugs were fixed along the way and these additional functions were added:
+- Callouts for annotations including text at point, rectangular text and picture annotations.
+- Marker symbol to be drawn as part of the “balloon” callout style
+- Associated “visibility layer” for annotations
+- Rich text editor widget to allow for interactive creation of html contant for text at point and rectangular text
+- UI clean-up
 
-Actions for creating new SVG and text annotations using the old annotation framework will be removed, requiring users to use the corresponding annotation items instead.
+This feature was funded by [QGIS Grant Programme 2024](https://github.com/qgis/PSC/issues/60)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Add support for callouts to point text, rect text and picture items
 
@@ -200,19 +211,17 @@ Callout styles can be modified through the layer styling panel.
 
 ![](images/entries/87e3c18cbb4eb5bdb2ee4a2a690ffbb1f6ae2bde.png)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was funded by [North Road](https://north-road.com)
+
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Add linked layer option for annotation layers
 
 In line with [QEP\#269](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269), a new "Linked layer" setting has been added to the render page for annotation layers. This allows users to optionally set a linked visibility layer for the annotation layer. If set, then the annotations will only be drawn when the linked layer is visible on the map.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was funded by [North Road](https://north-road.com)
 
-### Feature: Text inside rectangle annotation item
-
-In line with [QEP\#269](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269), a "text inside rectangle" annotation item type has been added
-
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Add picture annotation item type
 
@@ -226,7 +235,9 @@ Can render SVG or raster images as items in an annotation layer. Options are pre
 
 ![](images/entries/14d168314617843058d4cfe38b8c15abb96114b4)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was funded by [North Road](https://north-road.com)
+
+This feature was developed by [Nyall Dawson (North Road)] (https://north-road.com)
 
 ## Labelling 
 
@@ -247,7 +258,7 @@ Horizontal alignment can be used in all contexts where HTML text is rendered, EX
 
 This feature was funded by City of Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: HTML header formatting in HTML labels
 
@@ -255,7 +266,7 @@ Support for header tags (h1/h2/.../h6) and associated formatting in HTML labels 
 
 This feature was funded by City of Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Add support for word-spacing CSS in html labels
 
@@ -263,7 +274,7 @@ Support for word-spacing CSS in html labels and other places HTML text formattin
 
 This feature was funded by City of Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Implementation of labeling engine rules
 
@@ -282,7 +293,7 @@ Also implemented is a registry for storing available rule classes, and serializa
 
 This feature was funded by Rubicon Concierge Real Estate
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ### Feature: Support img tags in HTML label text
 
@@ -298,7 +309,7 @@ Allows use of img tags in HTML label content. The following logic is applied:
 
 This feature was funded by City of Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
 ## Diagrams 
 
