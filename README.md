@@ -48,25 +48,38 @@ the extended version to build SCSS/SASS.: this feature is not available
 in your current Hugo version, see https://goo.gl/YMrWcn for more information
 ```
 
-You can find the extended version in the [releases page](https://github.com/gohugoio/hugo/releases).
+Currently, the website requires Hugo with a minimum version of `0.126.1` and a maximum version of `0.128.2`. Ensure you have a compatible version installed to avoid any build issues.
+
+You can find the extended version `v0.126.1` [here](https://github.com/gohugoio/hugo/releases/tag/v0.126.1).
 
 ![Download](./img/hugo-download.png)
-
-
 
 ### 🐧 Linux: 
 
 Download the deb above and then do 
 
-``sudo dpkg -i hugo_extended_0.107.0_linux-amd64.deb``
+``sudo dpkg -i hugo_extended_0.126.1_linux-amd64.deb``
 
 ### 🪟 Windows: 
 
-[Follow these notes](https://gohugo.io/installation/windows/)
+[Follow these notes](https://gohugo.io/installation/windows/#prebuilt-binaries)
 
 ### 🍏 macOS: 
 
-[Follow these notes](https://gohugo.io/installation/macos/)
+[Follow these notes](https://gohugo.io/installation/macos/#prebuilt-binaries)
+
+
+## Hugo Version Requirements
+
+The website requires Hugo with a minimum version of `0.126.1` and a maximum version of `0.128.2`. Ensure you have a compatible version installed to avoid any build issues.
+
+You can verify your Hugo version by running:
+
+```bash
+hugo version
+```
+
+If you need to install or update Hugo, you can find the appropriate version on the [releases page](https://github.com/gohugoio/hugo/releases).
 
 ## ⚙️ Setting up VSCode
 
