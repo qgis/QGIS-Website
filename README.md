@@ -60,7 +60,17 @@ Download the deb above and then do
 
 ``sudo dpkg -i hugo_extended_0.126.1_linux-amd64.deb``
 
-### 🪟 Windows: 
+**📝 Note:** if your system has another version of Hugo, no need to mess up with docker, snap, nix. Just extract the binaries somewhere with `dpkg -x` .
+Example, assuming that you use a dedicated directory for your local binaries :
+
+```sh
+mkdir -p ~/apps/hugo_128/
+wget https://github.com/gohugoio/hugo/releases/download/v0.128.0/hugo_extended_0.128.0_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.128.0_linux-amd64.deb 
+dpkg -x hugo_extended_0.128.0_linux-amd64.deb
+~/apps/hugo_128/usr/local/bin/hugo server  
+```
+
+### 🪟 Windows
 
 [Follow these notes](https://gohugo.io/installation/windows/#prebuilt-binaries)
 
