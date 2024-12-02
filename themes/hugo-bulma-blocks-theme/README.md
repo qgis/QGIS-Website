@@ -249,7 +249,7 @@ You can find the extended version in the [releases page](https://github.com/gohu
 
 Download the deb above and then do 
 
-``sudo dpkg -i hugo_extended_0.107.0_linux-amd64.deb``
+``sudo dpkg -i hugo_extended_0.139.3_linux-amd64.deb``
 
 ### 🪟 Windows: 
 
