@@ -1,9 +1,15 @@
 {{ $data := 0 }}
 {{ with .Get "file" }}
-    {{ $data = getCSV "," . }}
+    {{ $resource := resources.Get . }}
+    {{ if $resource }}
+        {{ $data = $resource.Content | transform.Unmarshal }}
+    {{ else }}
+        <p>Error: Could not load resource {{ . }}</p>
+    {{ end }}
 {{ else }}
     {{ $data = .Inner | unmarshal }}
 {{ end }}
+{{ if $data }}
 <div class="schedule-container">
     <table class="roadmap">
         <thead>
@@ -27,3 +33,6 @@
         </tbody>
     </table>
 </div>
+{{ else }}
+    <p>Error: No data available</p>
+{{ end }}
