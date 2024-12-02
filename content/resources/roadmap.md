@@ -10,6 +10,9 @@ sidebar: true
 # Road Map
 {{< roadmap >}}
 
+{{< button class="is-primary1 is-rounded" link="https://qgis.org/schedule.ics" text="Subscribe to the roadmap iCalendar" >}} 
+
+
 Releases and development of QGIS follow a timebased schedule (roadmap).
 
 - Even version numbers (2.18, 3.2 etc) are release versions.
