@@ -1,14 +1,19 @@
 {{ $data := 0 }}
-{{ with .Get "file" }}
-    {{ $resource := resources.Get . }}
-    {{ if $resource }}
-        {{ $data = $resource.Content | transform.Unmarshal }}
+{{ $path := .Get "file" }}
+{{ with resources.Get $path }}
+    {{ if . }}
+        {{ with . | transform.Unmarshal }}
+            {{ $data = . }}
+        {{ else }}
+            {{ printf "Error unmarshalling data from: %s" $path }}
+        {{ end }}
     {{ else }}
-        <p>Error: Could not load resource {{ . }}</p>
+        {{ printf "Error: Resource not found at %s" $path }}
     {{ end }}
 {{ else }}
     {{ $data = .Inner | unmarshal }}
 {{ end }}
+
 {{ if $data }}
 <div class="schedule-container">
     <table class="roadmap">
