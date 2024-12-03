@@ -30,6 +30,8 @@ enableRobotsTXT = false
   submenu = 'submenus'
 
 [params]
+# Min hugo version
+minHugoVersion = "0.139.0"
 # Brand colours:
 primary1 = "#589632"
 primary2 = "#55828b"
@@ -703,5 +705,4 @@ sectionPagesMenu = 'main'
   baseName = "version"
   isPlainText = true
   mediaType = "application/json"
-
 
