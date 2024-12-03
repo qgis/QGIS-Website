@@ -284,7 +284,7 @@ export class CommunityPage {
         this.meetingsLink = this.page.getByRole("link", {
             name: "Meetings",
             exact: true,
-        });
+        }).first();
         (this.goToMeetingsFirstLink = this.page
             .getByRole("link", { name: "Go to meetings" })
             .first()),
