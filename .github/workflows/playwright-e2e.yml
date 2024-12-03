@@ -15,10 +15,16 @@ jobs:
     steps:
       - name: 🛒 Checkout
         uses: actions/checkout@v2
-      - name: 🧱 Hugo build
-        uses: jakejarvis/hugo-build-action@master 
+      
+      - name: 🛠️ Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          args: --gc --config ./config.toml -b http://127.0.0.1:1313
+          hugo-version: 'latest' # We will be alerted if our code has deprecated functions
+          extended: true
+
+      - name: 🧱 Hugo build
+        run: hugo --minify --gc --config ./config.toml -b http://127.0.0.1:1313
+
       - name: 🕸️ Run server
         run: |
           cd public && python -m http.server 1313 &
