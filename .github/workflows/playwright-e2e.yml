@@ -23,7 +23,7 @@ jobs:
           extended: true
 
       - name: 🧱 Hugo build
-        run: hugo --minify --gc --config ./config.toml -b http://127.0.0.1:1313
+        run: hugo --gc --config ./config.toml -b http://127.0.0.1:1313
 
       - name: 🕸️ Run server
         run: |
