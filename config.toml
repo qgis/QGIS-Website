@@ -5,7 +5,8 @@ title = 'QGIS Web Site'
 theme = 'hugo-bulma-blocks-theme'
 # Default pagination.
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
-paginate = 50
+[pagination]
+  paginate = 50
 
 # See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
 pygmentsUseClasses = true
@@ -29,6 +30,8 @@ enableRobotsTXT = false
   submenu = 'submenus'
 
 [params]
+# Min hugo version
+minHugoVersion = "0.139.0"
 # Brand colours:
 primary1 = "#589632"
 primary2 = "#55828b"
@@ -702,5 +705,4 @@ sectionPagesMenu = 'main'
   baseName = "version"
   isPlainText = true
   mediaType = "application/json"
-
 

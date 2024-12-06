@@ -152,7 +152,7 @@ for row in reader:
 
     rows.append([event, lr, ltr, dev, date, weekno, weeks])
 
-o = open("csv/schedule.csv", "w")
+o = open("assets/csv/schedule.csv", "w")
 
 o.write('"Event","Latest","Long-Term Repo","Freeze","Date","Week #","Weeks"\n')
 
