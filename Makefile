@@ -15,30 +15,29 @@ help:
 #    P R O D U C T I O N     C O M M A N D S
 # ----------------------------------------------------------------------------
 
-build: ## Build the site for nocache.qgis.org, www.qgis.org and qgis.org
+build: ## Build the site for www.qgis.org and qgis.org
 	@echo
 	@echo "------------------------------------------------------------------"
 	@echo "Building site in production"
 	@echo "------------------------------------------------------------------"
 	sh ./scripts/get_commit_hash.sh
-	hugo --config config.toml,config/config.nocache.toml
 	hugo --config config.toml,config/config.prod.toml
 	hugo --config config.toml,config/config.www.toml
 
 
-deploy: ## Deploy the site for nocache.qgis.org, www.qgis.org and qgis.org
+deploy: ## Deploy the site for www.qgis.org and qgis.org
 	@echo
 	@echo "------------------------------------------------------------------"
 	@echo "Deploy site in production"
 	@echo "------------------------------------------------------------------"
-	git pull && rm -rf archive; mkdir archive; mv public_www public_prod public_nocache archive; make build
+	git pull && rm -rf archive; mkdir archive; mv public_www public_prod archive; make build
 
-revert-deploy: ## Revert the site for nocache.qgis.org, www.qgis.org and qgis.org
+revert-deploy: ## Revert the site for www.qgis.org and qgis.org
 	@echo
 	@echo "------------------------------------------------------------------"
 	@echo "Revert to the previous state in production"
 	@echo "------------------------------------------------------------------"
-	rm -rf public_www public_prod public_nocache; cp -r archive/public_www archive/public_prod archive/public_nocache ./
+	rm -rf public_www public_prod; cp -r archive/public_www archive/public_prod ./
 
 # ----------------------------------------------------------------------------
 #    D E V E L O P M E N T     C O M M A N D S
