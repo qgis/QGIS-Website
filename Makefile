@@ -63,13 +63,13 @@ hugo-run-dev: ## Run the server at localhost:1313 with hugo
 #    U T I L S     C O M M A N D S
 # ----------------------------------------------------------------------------
 
-csv/schedule.csv scripts/schedule.ics data/conf.json:
+assets/csv/schedule.csv scripts/schedule.ics data/conf.json:
 	python scripts/update-schedule.py
 
 clearschedule:
-	$(RM) csv/schedule.csv data/conf.json
+	$(RM) assets/csv/schedule.csv data/conf.json
 
-schedule: clearschedule csv/schedule.csv scripts/schedule.ics data/conf.json	## Update schedule after release
+schedule: clearschedule assets/csv/schedule.csv scripts/schedule.ics data/conf.json	## Update schedule after release
 	git pull --autostash --rebase
 	git commit -a -m "Update for $(shell jq -r '.release' data/conf.json)/$(shell jq -r '.ltrrelease' data/conf.json) point releases"
 
