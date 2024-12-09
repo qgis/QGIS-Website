@@ -79,18 +79,6 @@ dpkg -x hugo_extended_0.139.3_linux-amd64.deb
 [Follow these notes](https://gohugo.io/installation/macos/#prebuilt-binaries)
 
 
-## Hugo Version Requirements
-
-The website requires Hugo with a minimum version of `0.126.1` and a maximum version of `0.128.2`. Ensure you have a compatible version installed to avoid any build issues.
-
-You can verify your Hugo version by running:
-
-```bash
-hugo version
-```
-
-If you need to install or update Hugo, you can find the appropriate version on the [releases page](https://github.com/gohugoio/hugo/releases).
-
 ## ⚙️ Setting up VSCode
 
 If you are using VSCode, I recommend the following extensions:
