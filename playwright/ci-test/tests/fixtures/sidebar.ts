@@ -142,7 +142,7 @@ export class Sidebar {
         });
 
         this.supportLink = this.sidebar.getByRole("link", {
-            name: "Support",
+            name: "Contact and Support",
             exact: true,
         });
 

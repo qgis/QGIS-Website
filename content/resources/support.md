@@ -1,6 +1,6 @@
 ---
 type: "page"
-title: "Support"
+title: "Contact and Support"
 subtitle: ""
 draft: false
 sidebar: true
@@ -10,11 +10,11 @@ Reviewer: Tim Sutton
 
 {{< content-start  >}}
 
-# Support
+# Contact and Support
 
 ## Before you start
 
-Before you head off to join up with your chose support group, we would like to mention a few 
+Before you head off to join up with your chosen support group, we would like to mention a few 
 guidelines for participating in our community:
 
 ### Stay on topic
