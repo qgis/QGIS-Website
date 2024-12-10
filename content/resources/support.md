@@ -14,7 +14,7 @@ Reviewer: Tim Sutton
 
 ## Before you start
 
-Before you head off to join up with your chose support group, we would like to mention a few 
+Before you head off to join up with your chosen support group, we would like to mention a few 
 guidelines for participating in our community:
 
 ### Stay on topic
