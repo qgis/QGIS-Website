@@ -48,25 +48,36 @@ the extended version to build SCSS/SASS.: this feature is not available
 in your current Hugo version, see https://goo.gl/YMrWcn for more information
 ```
 
-You can find the extended version in the [releases page](https://github.com/gohugoio/hugo/releases).
+Currently, the website requires Hugo with a minimum version of `v0.139.0`. Ensure you have a compatible version installed to avoid any build issues.
+
+You can find the extended version `v0.139.0` [here](https://github.com/gohugoio/hugo/releases/tag/v0.139.0).
 
 ![Download](./img/hugo-download.png)
 
-
-
 ### 🐧 Linux: 
 
-Download the deb above and then do 
+Download the latest version and then do 
 
-``sudo dpkg -i hugo_extended_0.107.0_linux-amd64.deb``
+``sudo dpkg -i hugo_extended_<latest>_linux-amd64.deb``
 
-### 🪟 Windows: 
+**📝 Note:** if your system has another version of Hugo, no need to mess up with docker, snap, nix. Just extract the binaries somewhere with `dpkg -x` .
+Example, assuming that you use a dedicated directory for your local binaries :
 
-[Follow these notes](https://gohugo.io/installation/windows/)
+```sh
+mkdir -p ~/apps/hugo_139/
+wget https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.3_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.139.3_linux-amd64.deb 
+dpkg -x hugo_extended_0.139.3_linux-amd64.deb
+~/apps/hugo_128/usr/local/bin/hugo server  
+```
+
+### 🪟 Windows
+
+[Follow these notes](https://gohugo.io/installation/windows/#prebuilt-binaries)
 
 ### 🍏 macOS: 
 
-[Follow these notes](https://gohugo.io/installation/macos/)
+[Follow these notes](https://gohugo.io/installation/macos/#prebuilt-binaries)
+
 
 ## ⚙️ Setting up VSCode
 
@@ -94,6 +105,16 @@ Once the site is running, you can open it at:
 <http://localhost:1313>
 
 The site will automatically refresh any page you have open if you edit it and save your work. Magical eh?
+
+## Run in other IDEs
+
+Use an appropriate Hugo plugin for your IDE, or run Hugo från the command line:
+
+```shell
+hugo server
+```
+
+You can then visit the hot-reloaded site in your browser at `http://localhost:1313/`
 
 ## Running Playwright End to End (e2e) Tests
 

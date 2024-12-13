@@ -26,6 +26,13 @@ export class Sidebar {
     public readonly supportLink: Locator;
     public readonly membersLink: Locator;
     public readonly pastMembersLink: Locator;
+    public readonly windowsLink: Locator;
+    public readonly linuxLink: Locator;
+    public readonly macOSLink: Locator;
+    public readonly freeBSDLink: Locator;
+    public readonly openBSDLink: Locator;
+    public readonly qgisTestingWarningLink: Locator;
+    public readonly installingFromSourceLink: Locator;
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
@@ -81,11 +88,39 @@ export class Sidebar {
         this.membershipLink = this.sidebar.getByRole("link", {
             name: "Membership",
         });
-
         this.installationGuideLink = this.sidebar.getByRole("link", {
             name: "Installation guide",
         });
 
+        this.windowsLink = this.sidebar.getByRole("link", {
+            name: "Windows",
+        });
+
+        this.linuxLink = this.sidebar.getByRole("link", {
+            name: "Linux",
+            exact: true,
+        });
+
+        this.macOSLink = this.sidebar.getByRole("link", {
+            name: "Mac OS X / macOS",
+        });
+
+        this.freeBSDLink = this.sidebar.getByRole("link", {
+            name: "FreeBSD",
+        });
+
+        this.openBSDLink = this.sidebar.getByRole("link", {
+            name: "OpenBSD",
+        });
+
+        this.qgisTestingWarningLink = this.sidebar.getByRole("link", {
+            name: "QGIS Testing Warning",
+        });
+
+        this.installingFromSourceLink = this.sidebar.getByRole("link", {
+            name: "Installing from Source",
+        });
+        
         this.archiveLink = this.sidebar.getByRole("link", {
             name: "Archive",
             exact: true,

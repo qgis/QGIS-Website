@@ -94,7 +94,8 @@ function toggleMenu() {
 }
 
 // compose title for menu button: contatenate parent section titles
-let activeListItem = document.getElementsByClassName('is-active')[0];
+let items = document.getElementById('sidebar').getElementsByClassName('is-active');
+let activeListItem = items[items.length - 1];
 let ham = document.getElementById('ham-title');
 let hamTitle = activeListItem.querySelector('a').textContent;
 if (activeListItem.parentElement.previousElementSibling != null) {

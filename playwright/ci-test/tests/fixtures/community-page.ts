@@ -241,6 +241,7 @@ export class CommunityPage {
         });
         this.qgisDocumentationLink = this.page.getByRole("link", {
             name: "QGIS Documentation",
+            exact: true,
         });
         this.translateQGISLink = this.page.getByRole("link", {
             name: "Translate QGIS",
@@ -283,7 +284,7 @@ export class CommunityPage {
         this.meetingsLink = this.page.getByRole("link", {
             name: "Meetings",
             exact: true,
-        });
+        }).first();
         (this.goToMeetingsFirstLink = this.page
             .getByRole("link", { name: "Go to meetings" })
             .first()),

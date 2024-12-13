@@ -16,7 +16,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-large"><img alt="" class="wp-image-15064" height="458" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/10/34.png?resize=750%2C458&#038;ssl=1" tabindex="0" width="750" /></figure>
+<figure class="wp-block-image size-large"><img alt="" class="wp-image-15064" height="458" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/10/34.png?resize=750%2C458&#038;ssl=1" width="750" /></figure>
 
 
 
@@ -42,7 +42,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-15065" height="497" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/10/geofencing_settings.png?resize=750%2C497&#038;ssl=1" tabindex="0" width="750" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-15065" height="497" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/10/geofencing_settings.png?resize=750%2C497&#038;ssl=1" width="750" /></figure>
 
 
 
@@ -60,7 +60,7 @@ showcase: "planet"
 
 
 
-<figure class="wp-block-image size-full"><img alt="" class="wp-image-15066" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/10/ortho_alg.png?resize=750%2C386&#038;ssl=1" tabindex="0" width="750" /></figure>
+<figure class="wp-block-image size-full"><img alt="" class="wp-image-15066" height="386" src="https://i0.wp.com/www.opengis.ch/wp-content/uploads/2024/10/ortho_alg.png?resize=750%2C386&#038;ssl=1" width="750" /></figure>
 
 
 

@@ -199,6 +199,7 @@ def fetch_first_feed_entry():
 
     if feed_data and len(feed_data) > 0:
         first_entry = feed_data[0]
+        first_entry['url'] = f"https://feed.qgis.org/{first_entry['pk']}"
         os.makedirs(os.path.dirname(feed_file_path), exist_ok=True)
         with open(feed_file_path, "w", encoding="utf-8") as f:
             json.dump(first_entry, f, ensure_ascii=False, indent=4)

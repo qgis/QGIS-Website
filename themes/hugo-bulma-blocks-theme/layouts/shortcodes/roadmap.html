@@ -58,6 +58,12 @@
                                 <p class="is-size-7">Sec.</p>
                             </div>
                         </div>
+
+                        <button id="addPrToCalendar" class="button is-small is-light" title="Add to Calendar">
+                            <span class="icon is-small">
+                                <i class="fas fa-calendar"></i>
+                            </span>
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -146,6 +152,11 @@
                                 <p class="is-size-7">Sec.</p>
                             </div>
                         </div>
+                        <button id="addLatestPrToCalendar" class="button is-small is-light" title="Add to Calendar">
+                            <span class="icon is-small">
+                                <i class="fas fa-calendar"></i>
+                            </span>
+                        </button>
                     </nav>
                 </div>
             </div>
@@ -233,6 +244,11 @@
                                     <p class="is-size-7">Sec.</p>
                                 </div>
                             </div>
+                            <button id="addFreezeToCalendar" class="button is-small is-light" title="Add to Calendar">
+                                <span class="icon is-small">
+                                    <i class="fas fa-calendar"></i>
+                                </span>
+                            </button>
                         </nav>
                     </div>
                 </div>
@@ -277,6 +293,11 @@
                                     <p class="is-size-7">Sec.</p>
                                 </div>
                             </div>
+                            <button id="addPackageToCalendar" class="button is-small is-light" title="Add to Calendar">
+                                <span class="icon is-small">
+                                    <i class="fas fa-calendar"></i>
+                                </span>
+                            </button>
                         </nav>
                     </div>
                 </div>
@@ -354,6 +375,11 @@
         let nextFreezeDateStr = {{ .nextfreezedate }};
         let nextReleaseDateStr = {{ .nextreleasedate }};
         let nextPointReleaseDateStr = {{ .nextpointreleasedate }};
+        let nextLtrVersion = {{ .next_ltr_version }};
+        let nextLrVersion = {{ .next_lr_version }};
+        let devVersion = {{ .devversion }};
+        let nextVersion = {{ .nextversion }};
+
       {{ end }}
       //   We need to correct the date string format for Safari otherwise it will return NaN
       const nextFreezeDate = new Date(nextFreezeDateStr.replace(" ", "T").replace(" UTC", "Z"))
@@ -364,4 +390,45 @@
       initializeClock('latest-point-release', nextPointReleaseDate);
       initializeClock('freeze', nextFreezeDate);
       initializeClock('package', nextReleaseDate);
+
+      function createiCalendar(event) {
+        // Format the date/time in the iCalendar format (UTC)
+        const formatDate = (date) =>
+          date.toISOString().replace(/-|:|\.\d+/g, "");
+        // Create the iCalendar file content
+        const icsContent = `
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:${event.title}
+DTSTART:${formatDate(event.start)}
+DTEND:${formatDate(event.end)}
+END:VEVENT
+END:VCALENDAR
+        `.trim();
+
+        // Create a blob and a download link
+        const blob = new Blob([icsContent], { type: "text/calendar" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "event.ics";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }
+    function addEventToCalendar(buttonId, eventTitle, eventDate) {
+      document.getElementById(buttonId).addEventListener("click", () => {
+        const event = {
+            title: eventTitle,
+            start: eventDate,
+            end: eventDate,
+        };
+        createiCalendar(event);
+      });
+    }
+
+    addEventToCalendar("addPrToCalendar", `QGIS Point Release ${nextLtrVersion}`, nextPointReleaseDate);
+    addEventToCalendar("addLatestPrToCalendar", `QGIS Point Release ${nextLrVersion}`, nextPointReleaseDate);
+    addEventToCalendar("addFreezeToCalendar", `QGIS Feature Freeze ${devVersion}`, nextFreezeDate);
+    addEventToCalendar("addPackageToCalendar", `QGIS Release ${nextVersion}`, nextReleaseDate);
     </script>
