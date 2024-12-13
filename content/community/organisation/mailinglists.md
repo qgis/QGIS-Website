@@ -20,7 +20,7 @@ The main list for user questions: used for discussion of QGIS in general, as wel
 
 {{< rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-user"  layoutClass="half"listTitle="QGIS Users list" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-user" >}}
 
-You can subscribe to the list or send a message to all members by emailing [qgis-user@lists.osgeo.org](mailto:qgis-user@lists.osgeo.org).
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-user@lists.osgeo.org](mailto:qgis-user@lists.osgeo.org).
 
 QGIS Developers list
 ---------------------------------------------------------------------
@@ -30,7 +30,7 @@ The main list for questions about the development of QGIS core or plugins. You c
 {{< rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-developer"  layoutClass="half"listTitle="QGIS Developers list" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-developer" >}}
 
 
-You can subscribe to the list or send a message to all members by emailing [qgis-developer@lists.osgeo.org](mailto:qgis-developer@lists.osgeo.org).
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-developer@lists.osgeo.org](mailto:qgis-developer@lists.osgeo.org).
 
 QGIS Community team
 -------------------------------------------------------------------
@@ -39,7 +39,7 @@ This list deals with topics like documentation, user guide, web sites, blog, mai
 
 {{< rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-community-team"  layoutClass="half"listTitle="QGIS Community team" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-community-team" >}}
 
-You can subscribe to the list or send a message to all members by emailing [qgis-community-team@lists.osgeo.org](mailto:qgis-community-team@lists.osgeo.org).
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-community-team@lists.osgeo.org](mailto:qgis-community-team@lists.osgeo.org).
 
 QGIS Translations
 ---------------------------------------------------------------
@@ -48,7 +48,7 @@ This list deals with the translation efforts. If you want to work on the transla
 
 {{< rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-tr"  layoutClass="half"listTitle="QGIS Translations" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-tr" >}}
 
-You can subscribe to the list or send a message to all members by emailing [qgis-tr@lists.osgeo.org](mailto:qgis-tr@lists.osgeo.org).
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-tr@lists.osgeo.org](mailto:qgis-tr@lists.osgeo.org).
 
 QGIS Project Steering Committee (PSC) list
 ---------------------------------------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ This list is used to discuss Steering Committee issues related to overall manage
 
 {{< rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-psc"  layoutClass="half"listTitle="QGIS Project Steering Committee (PSC) list" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 
-You can subscribe to the list or send a message to all members by emailing [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
 
 QGIS Web Client 2
 ---------------------------------------------------------------
@@ -66,6 +66,6 @@ This list is used to get help for setting up [QGIS Web Client 2 (QWC2)](https://
 
 {{< rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-qwc2"  layoutClass="half"listTitle="QGIS Web Client 2" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-qwc2" >}}
 
-You can subscribe to the list or send a message to all members by emailing [qgis-qwc2@lists.osgeo.org](mailto:qgis-qwc2@lists.osgeo.org).
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-qwc2@lists.osgeo.org](mailto:qgis-qwc2@lists.osgeo.org).
 
 {{< content-end >}}
