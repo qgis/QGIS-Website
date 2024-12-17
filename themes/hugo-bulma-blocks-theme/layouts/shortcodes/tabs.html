@@ -2,6 +2,7 @@
 {{ $tab2 := .Get "tab2" }}
 {{ $tab3 := .Get "tab3" }}
 {{ $tab4 := .Get "tab4" }}
+{{ $tab5 := .Get "tab5" }}
 
 {{ with index .Site.Data.conf }}
 	{{ $tab1 = replace $tab1 "|ltrversion|" .ltrversion }}
@@ -23,6 +24,9 @@
         {{ end }}
         {{ if $tab4 }}
             <li><a id="tab-4">{{ $tab4 }}</a></li>
+        {{ end }}
+        {{ if $tab4 }}
+            <li><a id="tab-5">{{ $tab5 }}</a></li>
         {{ end }}
     </ul>
 </div>

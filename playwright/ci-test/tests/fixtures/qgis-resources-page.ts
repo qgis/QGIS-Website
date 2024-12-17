@@ -19,6 +19,8 @@ export class QgisResourcesPage {
     public readonly pdfManualsLink: Locator;
     public readonly htmlZipManualsLink: Locator;
     public readonly viewSupportOptionsLink: Locator;
+    public readonly dataProtectionLink: Locator;
+    public readonly appNetworkConnectionsLink: Locator;
     public readonly textList: string[] = [
         "Resources",
         "🖖 Installation troubles?",
@@ -28,6 +30,7 @@ export class QgisResourcesPage {
         "For developers",
         "For download",
         "Support",
+        "Data protection",
     ];
 
     constructor(public readonly page: Page) {
@@ -76,6 +79,14 @@ export class QgisResourcesPage {
         });
         this.htmlZipManualsLink = this.page.getByRole("link", {
             name: "HTML zip of the manuals",
+        });
+
+        this.dataProtectionLink = this.page.getByText(
+            'Data protection', 
+            { exact: true }
+        );
+        this.appNetworkConnectionsLink = this.page.getByRole("link", {
+            name: "QGIS Application Network Connections",
         });
         this.viewSupportOptionsLink = this.page.getByRole("link", {
             name: "View support options",

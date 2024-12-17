@@ -33,7 +33,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{< language-select >}}
 
-{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases">}}
+{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}}
 
 
 {{< tab-content-start tab="1" >}}
@@ -164,6 +164,13 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{< tab-content-end >}}
 
+{{< tab-content-start tab="5" >}}
+
+In line with GDPR and related data protection regulations, we provide the following documentation:
+
+{{< rich-list listLink="https://docs.qgis.org/latest/en/docs/user_manual/appendices/qgis_desktop_network_connections.html"  layoutClass="inline-block" listTitle="QGIS Application Network Connections" >}}
+
+{{< tab-content-end >}}
 
 {{< rich-box-start >}}
 {{< rich-content-start themeClass="coloring-6">}}
