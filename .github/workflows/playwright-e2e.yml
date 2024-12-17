@@ -19,7 +19,10 @@ jobs:
       - name: 🛠️ Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest' # We will be alerted if our code has deprecated functions
+          # Using the latest value doesn't work for now. 
+          # See https://github.com/peaceiris/actions-hugo/issues/652#issuecomment-2543985304
+          # and https://github.com/peaceiris/actions-hugo/issues/662
+          hugo-version: '0.139.4'
           extended: true
 
       - name: 🧱 Hugo build
