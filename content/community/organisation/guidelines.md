@@ -22,7 +22,7 @@ This page aims to provide you with all the information and resources you need to
 * not present the QGIS project as their own work
 * participate actively in the project and help us to improve QGIS
 
-**Trademark Protection:** The QGIS name and logo are protected under European law from unauthorized and confusing uses of the trademark. You can find our trademark information at [OAMI](https://oami.europa.eu/eSearch/#details/trademarks/012702643) and [EUIPO](https://euipo.europa.eu/eSearch/#details/trademarks/017228222). 
+**Trademark Protection:** The QGIS name and logo are protected under European law from unauthorized and confusing uses of the trademark. You can find our trademark information at [EUIPO](https://euipo.europa.eu/eSearch/#details/trademarks/017228222). 
 
 QGIS trademarks, service marks, logos and designs, as well as other works of authorship that are eligible for copyright protection (collectively termed “Marks”) are valuable assets that QGIS.ORG needs to protect. QGIS.ORG does not permit all uses of QGIS Marks. QGIS.ORG provides these Trademark Usage Guidelines (“Guidelines”) to assist you in properly using our Marks in the specific cases that we do permit. The strength of our Marks depends, in part, upon consistent and appropriate use. We ask that you properly use and credit our Marks in accordance with these Guidelines. We reserve the right to change these Guidelines at any time solely at our discretion.
 
