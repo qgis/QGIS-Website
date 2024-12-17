@@ -13,10 +13,13 @@ jobs:
     if: github.repository_owner == 'qgis'
     steps:
     - name: '🛒 Checkout QGIS Website'
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         ref: main
         path: ./qgis-website
+          # This will allow us to trigger other workflows (cachix-build, etc.)
+          # when we commit changes using the git-auto-commit-action
+        token: ${{ secrets.PAT }}
 
     - name: '🐍 Setup Python'
       uses: actions/setup-python@v3
