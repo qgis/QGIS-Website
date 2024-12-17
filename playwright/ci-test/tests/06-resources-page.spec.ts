@@ -77,6 +77,9 @@ test.describe("Resources pages", () => {
         for (const text of qgisResourcesPage.textList) {
             await expect(qgisResourcesPage.pageBody).toContainText(text);
         }
+
+        await qgisResourcesPage.dataProtectionLink.click();
+        await expect(qgisResourcesPage.appNetworkConnectionsLink).toBeVisible();
     });
 
     test("Installation guide", async ({ sidebar, installationGuidePage }) => {
