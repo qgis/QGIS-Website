@@ -74,6 +74,7 @@ export class InstallationGuidePage {
         "Windows",
         "Standalone installers",
         "OSGeo4W installer",
+        "Portable version",
         "Linux",
         "Debian/Ubuntu",
         "Quickstart",

@@ -71,6 +71,10 @@ The Express installs reference the corresponding `-full` variant and the standal
 
 Before installing any of the nightly builds note the [warnings](#warning) below.
 
+## Portable version
+
+Currently, there is no official portable version of QGIS. However, you can refer to an example of a portable QGIS setup available [here](https://github.com/pigreco/QGIS_portable_3x). Please note that the instructions are provided in Italian.
+
 # Linux
 
 Most linux distributions split QGIS into several packages; you’ll probably need `qgis` and `qgis-python` (to run plugins). Packages like `qgis-grass` (or `qgis-plugin-grass`), `qgis-server` can be skipped initially, or installed only when you need them.
