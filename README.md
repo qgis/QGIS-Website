@@ -54,6 +54,23 @@ You can find the extended version `v0.139.0` [here](https://github.com/gohugoio/
 
 ![Download](./img/hugo-download.png)
 
+### Nix/NixOs:
+The development environment is using Nix flakes. Please visit https://nixos.wiki/wiki/Flakes for more details.
+
+Start the Nix development environment by running:
+
+```sh
+nix develop # Add  --experimental-features 'nix-command flakes' if you haven't enable Nix flakes
+hugo server
+# If you want to run VSCode:
+./vscode
+```
+
+To build the website:
+```sh
+nix build .#qgis-website # Add | cachix push qgis-org to push it to cachix
+```
+
 ### 🐧 Linux: 
 
 Download the latest version and then do 
