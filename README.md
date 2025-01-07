@@ -37,6 +37,8 @@ cd QGIS-Website
 
 ## 🧑💻 Development
 
+For Nix based development environment, please skip directly to the [Nix](#nix) section.
+
 First install hugo for your local machine:
 
 **📝 Note:** we need to install the 'extended' hugo version which includes a SASS compiler. If you don't install the extended version you will get errors like this when compiling:
@@ -78,6 +80,14 @@ dpkg -x hugo_extended_0.139.3_linux-amd64.deb
 
 [Follow these notes](https://gohugo.io/installation/macos/#prebuilt-binaries)
 
+### Nix
+
+Run the following command on this project root folder:
+
+```sh
+nix-shell # It will install all the dependecies
+hugo server # To run the local server
+```
 
 ## ⚙️ Setting up VSCode
 
