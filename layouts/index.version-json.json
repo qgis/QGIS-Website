@@ -16,11 +16,11 @@
     },
     "ltr": {
         "versionint": {{ printf "%d%02d%02d" (index $ltrrelease 0) (index $ltrrelease 1) (index $ltrrelease 2) }},
-	"version": "{{ .Params.ltrversion }}",
+	"version": "{{ .ltrversion }}",
         "name": "{{ .ltrcodename }}",
-        "note": "{{ .ltrreleasenote }}",
+        "note": "{{ .ltrnote }}",
         "binary": "{{ .ltrbinary }}",
-        "date": "{{ .ltrreleasedate }}",
+        "date": "{{ .releasedate }}",
         "major": {{ index $ltrrelease 0 }},
         "minor": {{ index $ltrrelease 1 }},
         "patch": {{ index $ltrrelease 2 }}
