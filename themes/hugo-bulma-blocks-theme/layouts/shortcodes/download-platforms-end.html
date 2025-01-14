@@ -2,8 +2,8 @@
 
 <script>
 function hidePrompt() {
-    document.getElementById('donate-prompt').remove();
-    document.getElementById('hide-donate-prompt').remove();
+    document.getElementById('donate-prompt').style.display = 'none';
+    // document.getElementById('hide-donate-prompt').remove();
     // uncomment next line to show donate-prompt only for the first time
     // localStorage.setItem('donatePromptClosed', true);
     document.getElementById('download-section').style.display = 'block';

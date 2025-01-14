@@ -16,6 +16,7 @@
             class="button is-primary1"
             rel="noopener noreferrer"
             target="_blank"
+            onclick="hidePrompt()"
             {{/* href to be set by js depending on selected donation */}}
         >Donate
         </a>
@@ -29,6 +30,15 @@
         <option value="usd">USD</option>
       </select>
     </div>
+    {{ if .Get "skipToDownload" }}
+        <hr>
+        <button 
+            class="button is-primary6 is-fullwidth is-outlined" 
+            id="hide-donate-prompt" 
+            onclick="hidePrompt()">
+            Skip it and go to download
+        </button>
+    {{ end }}
 </div>
 
 {{ $donatejs := resources.Get "js/donate.js" | resources.Minify }}
