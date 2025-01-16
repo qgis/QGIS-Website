@@ -84,7 +84,7 @@ ECW is a proprietary file format. It is not included on all platforms out of the
 
 ***Linux***: By default, most Linux distributions do not include ECW support for QGIS. However, you can find discussions and solutions for adding this support on various resources for guidance. 
 
-For Ubuntu for example, you can check out the following thread:
+For Ubuntu for example, you can check out the following resources:
 - [Github - GDAL: How open ECW Maps in QGIS 3.22](https://github.com/OSGeo/gdal/issues/8239)
 - [Reddit - QGIS: Problem loading ECW file in Ubuntu (Linux)](https://www.reddit.com/r/QGIS/comments/icw98f/problem_loading_ecw_file_in_ubuntu_linux/?rdt=54968)
 - [GIS Stack Exchange: Installing QGIS with ECW support on ubuntu 20.04](https://gis.stackexchange.com/questions/429214/installing-qgis-with-ecw-support-on-ubuntu-20-04/434980#434980).
