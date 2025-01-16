@@ -74,7 +74,7 @@ after locations of our developer meetings.
 
 ### Can I open ECW files with QGIS?
 
-Yes you can... BUT depending on your Operating System, it is more or less difficult.
+ECW is a proprietary file format. It is not included on all platforms out of the box.
 
 **Windows**: If you are under Windows and are using the OSGeo4w installer, it is included.
 
