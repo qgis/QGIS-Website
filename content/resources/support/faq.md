@@ -76,7 +76,7 @@ after locations of our developer meetings.
 
 ECW is a proprietary file format. It is not included on all platforms out of the box.
 
-**Platforms specific notes:**
+**Platform specific notes:**
 
 ***Windows***: If you are under Windows and are using the OSGeo4w installer, it is included.
 
