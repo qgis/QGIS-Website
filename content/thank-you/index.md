@@ -13,6 +13,17 @@ url: "/download/thank-you"
 
 ## Your freshly baked copy of QGIS is downloading. 
 
+{{< progress-bar autoHideAfter="60000">}}
+
+{{< rich-box-start icon="⬇️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Monitor Your Download
+Downloads may take a while. Please **monitor the progress** using your **download manager**.
+
+If your download didn't start, you can manually download QGIS from the [QGIS.org hosted downloads](https://download.qgis.org/downloads/).
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
 {{< rich-box-start layoutClass="qgis_first_conference mt-6">}}
 {{< rich-content-start >}}
 ![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting")
