@@ -76,12 +76,16 @@ after locations of our developer meetings.
 
 Yes you can... BUT depending on your Operating System, it is more or less difficult.
 
-If you are under Windows and are using the OSGeo4w installer, it is included.
+**Windows**: If you are under Windows and are using the OSGeo4w installer, it is included.
 
-If you are using macOS, you can find the ECW plugin and install instructions at
-https://www.kyngchaos.com/software/frameworks
+**MacOs**: If you are using macOS, you can download the DMG file from [QGIS Downloads](https://qgis.org/download/). This file is built using the [QGIS-Mac-Packager](https://github.com/qgis/QGIS-Mac-Packager) repository, which includes the necessary ECW driver.
 
-For other instructions, e.g. look here: https://www.faunalia.eu/en/blog/2019-05-21_ecw_support
+**Linux**: By default, most Linux distributions do not include ECW support for QGIS. However, you can find discussions and solutions for adding this support on various resources for guidance. 
+
+For Ubuntu for example, you can check out the following thread:
+- [Github - GDAL: How open ECW Maps in QGIS 3.22](https://github.com/OSGeo/gdal/issues/8239)
+- [Reddit - QGIS: Problem loading ECW file in Ubuntu (Linux)](https://www.reddit.com/r/QGIS/comments/icw98f/problem_loading_ecw_file_in_ubuntu_linux/?rdt=54968)
+- [GIS Stack Exchange: Installing QGIS with ECW support on ubuntu 20.04](https://gis.stackexchange.com/questions/429214/installing-qgis-with-ecw-support-on-ubuntu-20-04/434980#434980).
 
 ### How can I get a VPAT / HECVAT / other US compliance form or information? 
 
