@@ -76,11 +76,13 @@ after locations of our developer meetings.
 
 ECW is a proprietary file format. It is not included on all platforms out of the box.
 
-**Windows**: If you are under Windows and are using the OSGeo4w installer, it is included.
+**Platforms specific notes:**
 
-**MacOs**: If you are using macOS, you can download the DMG file from [QGIS Downloads](https://qgis.org/download/). This file is built using the [QGIS-Mac-Packager](https://github.com/qgis/QGIS-Mac-Packager) repository, which includes the necessary ECW driver.
+***Windows***: If you are under Windows and are using the OSGeo4w installer, it is included.
 
-**Linux**: By default, most Linux distributions do not include ECW support for QGIS. However, you can find discussions and solutions for adding this support on various resources for guidance. 
+***MacOs***: If you are using macOS, you can download the DMG file from [QGIS Downloads](https://qgis.org/download/). This file is built using the [QGIS-Mac-Packager](https://github.com/qgis/QGIS-Mac-Packager) repository, which includes the necessary ECW driver.
+
+***Linux***: By default, most Linux distributions do not include ECW support for QGIS. However, you can find discussions and solutions for adding this support on various resources for guidance. 
 
 For Ubuntu for example, you can check out the following thread:
 - [Github - GDAL: How open ECW Maps in QGIS 3.22](https://github.com/OSGeo/gdal/issues/8239)
