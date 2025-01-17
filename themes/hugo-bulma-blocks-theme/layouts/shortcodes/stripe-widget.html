@@ -37,9 +37,29 @@
             Skip it and go to download
         </button>
     {{ end }}
+    {{ if .Get "alreadyDonated" }}
+        <hr>
+        <button 
+            class="button is-primary6 is-fullwidth is-outlined" 
+            id="hide-donate-prompt" 
+            onclick="hidePrompt()">
+            Already donated? Hide this prompt
+        </button>
+    {{ end }}
 </div>
 
 {{ $donatejs := resources.Get "js/donate.js" | resources.Minify }}
-<script
-    src="{{ $donatejs.RelPermalink }}"
-></script>
+<script src="{{ $donatejs.RelPermalink }}"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let pathname = window.location.pathname;
+        if (localStorage.getItem('donatePromptClosed') === 'true' && pathname.includes('/download/thank-you')) {
+            hidePrompt();
+        }
+    });
+    function hidePrompt() {
+        document.getElementById('donate-prompt').style.display = 'none';
+        localStorage.setItem('donatePromptClosed', 'true');
+        window.scrollTo(0, 0);
+    }
+</script>
