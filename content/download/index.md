@@ -25,11 +25,10 @@ Our very best regards!
 
 {{< rich-content-end >}}
 {{< rich-right-start mode="html" >}}
-{{< stripe-widget otherMethods="true" >}}
+{{< stripe-widget otherMethods="true" skipToDownload="true" >}}
 {{< rich-right-end >}}
 {{< rich-box-end >}}
 
-{{< hide-donate-prompt >}}
 
 {{< download-platforms-start >}}
 
