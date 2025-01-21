@@ -304,7 +304,7 @@ It’s not a common practice to install both client and server applications on t
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-Get packages for Fedora varians using `dnf` by typing:
+Get packages for Fedora variants using `dnf` by typing:
 
 ```
 sudo dnf install qgis python3-qgis qgis-grass qgis-server
@@ -312,7 +312,10 @@ sudo dnf install qgis python3-qgis qgis-grass qgis-server
 
 If you are on **Fedora Atomic Desktops**, you have 2 options:
 
-1. Install QGis to the system
+1. Install the Flatpak
+
+Flatpak is the recommended way to install packages on Fedora Atomic Desktops, (skip to the instructions)[#flatpak].
+2. Install QGis to the system
 
 This is the easiest method, saves data and disk space, but will slow down system updates a bit
 
@@ -508,9 +511,9 @@ To update your flatpak QGIS:
 flatpak update
 ```
 
-On certain distributions, you may also need to install xdg-desktop-portal or xdg-desktop-portal-gtk packages in order for file dialogs to appear.
+On certain distributions, you may also need to install the packages `xdg-desktop-portal`, together with `xdg-desktop-portal-gtk`, `xdg-desktop-portal-kde` or `xdg-desktop-portal-cosmic` in order for file dialogs to appear.
 
-Flathub files: https://github.com/flathub/org.qgis.qgis and report issues here: https://github.com/flathub/org.qgis.qgis/issues
+See the [Flathub files here](https://github.com/flathub/org.qgis.qgis) and [report issues here](https://github.com/flathub/org.qgis.qgis/issues).
 
 ### Extension Support
 If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
