@@ -74,14 +74,22 @@ after locations of our developer meetings.
 
 ### Can I open ECW files with QGIS?
 
-Yes you can... BUT depending on your Operating System, it is more or less difficult.
+ECW is a proprietary file format - please consult their [Licensing Page](https://supportsi.hexagon.com/s/article/License-for-reading-or-writing-ECW-in-third-party-software) to understand how you may use it. Also, please consult the [GDAL documentation](https://gdal.org/en/stable/drivers/raster/ecw.html#creation-options-1) for notes on how to enable licensed features if you have a paid version of ECW.  ECW support is not included in all QGIS binary versions and for all platforms by default.
 
-If you are under Windows and are using the OSGeo4w installer, it is included.
+**Platform specific notes:**
 
-If you are using macOS, you can find the ECW plugin and install instructions at
-https://www.kyngchaos.com/software/frameworks
+***Windows***: If you are using Windows and have downloaded the **offline installers** (provided by the download buttons labelled **Long Term Version for Windows ({{< param "ltrversion" >}} {{< param "ltrnote" >}})** and **Latest Version for Windows ({{< param "version" >}})**), ECW read support is included by default.
 
-For other instructions, e.g. look here: https://www.faunalia.eu/en/blog/2019-05-21_ecw_support
+If you are using the **OSGeo4W Network Installer**, ECW support is installed by default if you use the express install workflow. If manually selecting components, you need to explicitly enable the `gdal-ecw` package in order to ensure that ECW support is included in your installation.
+
+***macOS***: If you are using macOS, you can download the DMG file from [QGIS Downloads](https://qgis.org/download/). This includes ECW support by default.
+
+***Linux***: By default, the QGIS binaries for most Linux distributions *do not* include default ECW support. However, you can find discussions and solutions for adding this support in various resources for guidance. 
+
+For Ubuntu, for example, you can check out the following resources:
+- [Github - GDAL: How to open ECW Maps in QGIS 3.22](https://github.com/OSGeo/gdal/issues/8239)
+- [Reddit - QGIS: Problem loading ECW file in Ubuntu (Linux)](https://www.reddit.com/r/QGIS/comments/icw98f/problem_loading_ecw_file_in_ubuntu_linux/?rdt=54968)
+- [GIS Stack Exchange: Installing QGIS with ECW support on ubuntu 20.04](https://gis.stackexchange.com/questions/429214/installing-qgis-with-ecw-support-on-ubuntu-20-04/434980#434980).
 
 ### How can I get a VPAT / HECVAT / other US compliance form or information? 
 
