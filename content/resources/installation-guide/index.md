@@ -336,7 +336,7 @@ Fedora switches between the current QGIS release and the LTR releases. The unsta
 
 Always up-to-date version infos:
 - [QGIS](https://packages.fedoraproject.org/pkgs/qgis/qgis)
-- [QGIS-Grass](https://packages.fedoraproject.org/pkgs/qgis/qgis-grass)
+- [QGIS-GRASS](https://packages.fedoraproject.org/pkgs/qgis/qgis-grass)
 
 ## NixOS
 
