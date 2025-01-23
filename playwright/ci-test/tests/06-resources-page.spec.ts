@@ -159,25 +159,11 @@ test.describe("Resources pages", () => {
             installationGuidePage.aptUpdateInstallQgisServerPre,
         ).toBeVisible();
         await expect(installationGuidePage.dnfInstallQgisPre).toBeVisible();
-        await expect(installationGuidePage.dnfCoprEnableQgisPre1).toBeVisible();
-        await expect(
-            installationGuidePage.dnfInstallQgisPythonPre,
-        ).toBeVisible();
-        await expect(
-            installationGuidePage.dnfInstallQgisServerPre,
-        ).toBeVisible();
         await expect(installationGuidePage.distributionCell2).toBeVisible();
         await expect(installationGuidePage.distGrassFedora).toBeVisible();
         await expect(installationGuidePage.qgisVersionCell).toBeVisible();
         await expect(installationGuidePage.grassGisVersionCell).toBeVisible();
-        await expect(installationGuidePage.dnfCoprEnableQgisPre2).toBeVisible();
-        await expect(
-            installationGuidePage.dnfInstallQgisPythonPre2,
-        ).toBeVisible();
-        await expect(
-            installationGuidePage.dnfInstallQgisServerPre2,
-        ).toBeVisible();
-        await expect(installationGuidePage.fedoraCoprLink).toBeVisible();
+        await expect(installationGuidePage.rpmInstallQgis).toBeVisible();
         await expect(installationGuidePage.distributionCell3).toBeVisible();
         await expect(installationGuidePage.repositoryCell2).toBeVisible();
         await expect(installationGuidePage.urpmiQgisPre).toBeVisible();
@@ -196,6 +182,9 @@ test.describe("Resources pages", () => {
         await expect(installationGuidePage.makeInstallQgisPre).toBeVisible();
         await expect(installationGuidePage.pkgInstallQgisLtrSpan).toBeVisible();
         await expect(installationGuidePage.makeInstallQgisLtrPre).toBeVisible();
+        await expect(
+            installationGuidePage.zypperInstallQgisLtrPre,
+        ).toBeVisible();
         await expect(installationGuidePage.pkgAddQgisPre).toBeVisible();
 
         for (const text of installationGuidePage.textList) {
