@@ -315,7 +315,7 @@ If you are on **Fedora Atomic Desktops**, you have 2 options:
 1. Install the Flatpak
 
 Flatpak is the recommended way to install packages on Fedora Atomic Desktops, (skip to the instructions)[#flatpak].
-2. Install QGis to the system
+2. Install QGIS to the system
 
 This is the easiest method, saves data and disk space, but will slow down system updates a bit
 
@@ -327,7 +327,7 @@ rpm-ostree install qgis python3-qgis qgis-grass qgis-server
 
 Follow the (`toolbx` and `distrobox` instructions)[#distrobox].
 
-Fedora switches between the current QGis release and the LTR releases. The unstable "Rawhide" branch will ship newer but possibly buggy QGis versions.
+Fedora switches between the current QGIS release and the LTR releases. The unstable "Rawhide" branch will ship newer but possibly buggy QGIS versions.
 
 |Distribution|Version|QGIS version|GRASS GIS version|
 |---|---|---|---|
@@ -335,8 +335,8 @@ Fedora switches between the current QGis release and the LTR releases. The unsta
 ||41|3.40.2|3.40.2|
 
 Always up-to-date version infos:
-- [QGis](https://packages.fedoraproject.org/pkgs/qgis/qgis)
-- [QGis-Grass](https://packages.fedoraproject.org/pkgs/qgis/qgis-grass)
+- [QGIS](https://packages.fedoraproject.org/pkgs/qgis/qgis)
+- [QGIS-Grass](https://packages.fedoraproject.org/pkgs/qgis/qgis-grass)
 
 ## NixOS
 
@@ -487,7 +487,7 @@ For bugs and other behaviour, read comments here : https://aur.archlinux.org/pac
 
 ## Flatpak
 
-There is an QGIS flatpak for QGIS Stable available, maintained by the flathub community.
+There is for QGIS Stable and LTS available, maintained by the Flathub community.
 
 For general Linux Flatpak install notes, see [the Flathub website](https://flatpak.org/setup).
 
@@ -557,7 +557,7 @@ spack install
 Spack related issues should be reported at: https://github.com/spack/spack/issues
 
 ## Distrobox & Toolbx
-To install QGis on any Linux system, you can also use `distrobox` or `toolbox`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGis.
+To install QGis on any Linux system, you can also use `distrobox` or `toolbox`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGIS.
 
 {{< rich-box-start icon="🙋‍♀️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
@@ -576,7 +576,7 @@ sudo zypper in qgis
 distrobox-export --app qgis qgis-plugin-grass
 ```
 
-Update QGis in a distrobox:
+Update QGIS in a distrobox:
 
 ```
 distrobox upgrade --all
@@ -591,7 +591,7 @@ toolbox enter box
 sudo dnf install qgis qgis-grass python3-qgis
 ```
 
-Update QGis in a toolbx:
+Update QGIS in a toolbx:
 
 ```
 toolbx run -c box sudo dnf update
