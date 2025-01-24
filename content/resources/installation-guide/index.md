@@ -310,7 +310,7 @@ Get packages for Fedora variants using `dnf` by typing:
 sudo dnf install qgis python3-qgis qgis-grass qgis-server
 ```
 
-If you are on **Fedora Atomic Desktops**, you have 2 options:
+If you are on **Fedora Atomic Desktops**, you have 3 options:
 
 1. Install the Flatpak
 
