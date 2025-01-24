@@ -432,7 +432,7 @@ Install QGis with this command:
 sudo zypper in qgis qgis-plugin-grass 
 ```
 
-On OpenSUSE microOS, Kalpa, Aeon and other immutable variants, refer to the (`distrobox` instructions)[#distrobox]. Installing on the base system is possible but not recommended.
+On OpenSUSE microOS, Kalpa, Aeon and other immutable variants, refer to the `distrobox` [instructions](#distrobox--toolbx). Installing on the base system is possible but not recommended.
 
 ## Mandriva
 
