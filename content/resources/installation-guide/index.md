@@ -326,7 +326,7 @@ rpm-ostree install qgis python3-qgis qgis-grass qgis-server
 
 3. Install in a toolbox or distrobox
 
-Follow the (`toolbx` and `distrobox` instructions)[#distrobox].
+Follow the `toolbx` and `distrobox` [instructions](#distrobox--toolbx).
 
 Fedora switches between the current QGIS release and the LTR releases. The unstable "Rawhide" branch will ship newer but possibly buggy QGIS versions.
 
