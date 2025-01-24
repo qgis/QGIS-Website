@@ -324,7 +324,7 @@ This is the easiest method, saves data and disk space, but will slow down system
 rpm-ostree install qgis python3-qgis qgis-grass qgis-server
 ```
 
-2. Install in a toolbox or distrobox
+3. Install in a toolbox or distrobox
 
 Follow the (`toolbx` and `distrobox` instructions)[#distrobox].
 
