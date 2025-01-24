@@ -314,7 +314,7 @@ If you are on **Fedora Atomic Desktops**, you have 2 options:
 
 1. Install the Flatpak
 
-Flatpak is the recommended way to install packages on Fedora Atomic Desktops, (skip to the instructions)[#flatpak].
+Flatpak is the recommended way to install packages on Fedora Atomic Desktops, [skip to the instructions](#flatpak).
 2. Install QGIS to the system
 
 This is the easiest method, saves data and disk space, but will slow down system updates a bit
