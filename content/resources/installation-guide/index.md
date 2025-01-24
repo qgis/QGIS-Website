@@ -558,7 +558,7 @@ spack install
 Spack related issues should be reported at: https://github.com/spack/spack/issues
 
 ## Distrobox & Toolbx
-To install QGis on any Linux system, you can also use `distrobox` or `toolbox`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGIS.
+To install QGis on any Linux system, you can also use `distrobox` or `toolbx`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGIS.
 
 {{< rich-box-start icon="🙋‍♀️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
