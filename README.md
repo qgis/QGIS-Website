@@ -37,6 +37,8 @@ cd QGIS-Website
 
 ## 🧑💻 Development
 
+For Nix based development environment, please skip directly to the [Nix](#nix) section.
+
 First install hugo for your local machine:
 
 **📝 Note:** we need to install the 'extended' hugo version which includes a SASS compiler. If you don't install the extended version you will get errors like this when compiling:
@@ -48,25 +50,44 @@ the extended version to build SCSS/SASS.: this feature is not available
 in your current Hugo version, see https://goo.gl/YMrWcn for more information
 ```
 
-You can find the extended version in the [releases page](https://github.com/gohugoio/hugo/releases).
+Currently, the website requires Hugo with a minimum version of `v0.139.0`. Ensure you have a compatible version installed to avoid any build issues.
+
+You can find the extended version `v0.139.0` [here](https://github.com/gohugoio/hugo/releases/tag/v0.139.0).
 
 ![Download](./img/hugo-download.png)
 
-
-
 ### 🐧 Linux: 
 
-Download the deb above and then do 
+Download the latest version and then do 
 
-``sudo dpkg -i hugo_extended_0.107.0_linux-amd64.deb``
+``sudo dpkg -i hugo_extended_<latest>_linux-amd64.deb``
 
-### 🪟 Windows: 
+**📝 Note:** if your system has another version of Hugo, no need to mess up with docker, snap, nix. Just extract the binaries somewhere with `dpkg -x` .
+Example, assuming that you use a dedicated directory for your local binaries :
 
-[Follow these notes](https://gohugo.io/installation/windows/)
+```sh
+mkdir -p ~/apps/hugo_139/
+wget https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.3_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.139.3_linux-amd64.deb 
+dpkg -x hugo_extended_0.139.3_linux-amd64.deb
+~/apps/hugo_128/usr/local/bin/hugo server  
+```
+
+### 🪟 Windows
+
+[Follow these notes](https://gohugo.io/installation/windows/#prebuilt-binaries)
 
 ### 🍏 macOS: 
 
-[Follow these notes](https://gohugo.io/installation/macos/)
+[Follow these notes](https://gohugo.io/installation/macos/#prebuilt-binaries)
+
+### Nix
+
+Run the following command on this project root folder:
+
+```sh
+nix-shell # It will install all the dependecies
+hugo server # To run the local server
+```
 
 ## ⚙️ Setting up VSCode
 
@@ -94,6 +115,16 @@ Once the site is running, you can open it at:
 <http://localhost:1313>
 
 The site will automatically refresh any page you have open if you edit it and save your work. Magical eh?
+
+## Run in other IDEs
+
+Use an appropriate Hugo plugin for your IDE, or run Hugo från the command line:
+
+```shell
+hugo server
+```
+
+You can then visit the hot-reloaded site in your browser at `http://localhost:1313/`
 
 ## Running Playwright End to End (e2e) Tests
 
@@ -285,10 +316,10 @@ Script for harvesting the visualchangelog from changelog.qgis.org is scripts/cha
 
 Usage:
 ```
-$ python scripts/changelog_harvest.py
+$ ./scripts/changelog_harvest.py
 
 # For a specific version
-$ python3 scripts/changelog_harvest.py --version 3.34 --release 21.06.2024
+$ ./scripts/changelog_harvest.py --version 3.34 --release 21.06.2024
 ```
 
 Example usage in md:

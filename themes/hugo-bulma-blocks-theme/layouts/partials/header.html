@@ -81,7 +81,7 @@
             when piping them in a single line.
         */}}
         {{ $bulmasass := resources.Get "sass/bulma.sass" }}
-        {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+        {{ $bulmacss := $bulmasass | resources.ExecuteAsTemplate "bulma.scss" . | css.Sass | resources.Minify | resources.Fingerprint }}
         <link href="{{ $bulmacss.RelPermalink }}" rel="stylesheet" />
 
         {{ $menucss := resources.Get "css/menu.css" }}
@@ -99,7 +99,7 @@
 
         {{/* We can compile SASS too... */}}
         {{ $sass := resources.Get "sass/style.sass" }}
-        {{ $style := $sass | resources.ExecuteAsTemplate "bulma.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+        {{ $style := $sass | resources.ExecuteAsTemplate "bulma.scss" . | css.Sass | resources.Minify | resources.Fingerprint }}
         <link href="{{ $style.RelPermalink }}" rel="stylesheet" />
 
         {{/* Fontawesome related stuff here
@@ -173,14 +173,6 @@
             type="application/javascript"
             src="{{ .Site.Params.uniNavHeaderUrl }}"
         ></script>
-
-        <!-- Countries Flag for windows -->
-        <!-- Added by Lova -->
-        <!-- See https://github.com/talkjs/country-flag-emoji-polyfill -->
-        <script type="module" defer>
-            import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
-            polyfillCountryFlagEmojis();
-        </script>
     </head>
 
     <body></body>

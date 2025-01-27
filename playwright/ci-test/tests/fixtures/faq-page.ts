@@ -34,8 +34,6 @@ export class FaqPage {
     public readonly qgisGitHubLink: Locator;
     public readonly citeQGISUserGuide: Locator;
     public readonly preElements: Locator;
-    public readonly kyngchaosLink: Locator;
-    public readonly faunaliaLink: Locator;
     public readonly buildingQGISFromSourceLink: Locator;
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
@@ -56,12 +54,6 @@ export class FaqPage {
             .locator("p")
             .filter({ hasText: "Cite the QGIS User Guide" });
         this.preElements = this.page.locator("pre");
-        this.kyngchaosLink = this.page.getByRole("link", {
-            name: "https://www.kyngchaos.com/",
-        });
-        this.faunaliaLink = this.page.getByRole("link", {
-            name: "https://www.faunalia.eu/en/",
-        });
         this.buildingQGISFromSourceLink = this.page.getByRole("link", {
             name: "Building QGIS from source",
         });

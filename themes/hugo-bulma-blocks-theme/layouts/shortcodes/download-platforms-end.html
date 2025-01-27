@@ -1,9 +1,16 @@
 </div>
 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('skip_donate') === 'true') {
+        hidePrompt();
+    }
+});
+
 function hidePrompt() {
-    document.getElementById('donate-prompt').remove();
-    document.getElementById('hide-donate-prompt').remove();
+    document.getElementById('donate-prompt').style.display = 'none';
+    // document.getElementById('hide-donate-prompt').remove();
     // uncomment next line to show donate-prompt only for the first time
     // localStorage.setItem('donatePromptClosed', true);
     document.getElementById('download-section').style.display = 'block';
@@ -40,7 +47,7 @@ function thanks(element) {
     window.open(element.href);
     // Redirect to thank you page after a short delay
     setTimeout(function() {
-        window.location.href += 'thank-you';
+        window.location.href = '/download/thank-you';
     }, 500);
 }
 </script>

@@ -39,17 +39,11 @@ export class InstallationGuidePage {
     public readonly aptUpdateInstallQgisPre: Locator;
     public readonly aptUpdateInstallQgisServerPre: Locator;
     public readonly dnfInstallQgisPre: Locator;
-    public readonly dnfCoprEnableQgisPre1: Locator;
-    public readonly dnfInstallQgisPythonPre: Locator;
-    public readonly dnfInstallQgisServerPre: Locator;
     public readonly distributionCell2: Locator;
     public readonly distGrassFedora: Locator;
     public readonly qgisVersionCell: Locator;
     public readonly grassGisVersionCell: Locator;
-    public readonly dnfCoprEnableQgisPre2: Locator;
-    public readonly dnfInstallQgisPythonPre2: Locator;
-    public readonly dnfInstallQgisServerPre2: Locator;
-    public readonly fedoraCoprLink: Locator;
+    public readonly rpmInstallQgis: Locator;
     public readonly distributionCell3: Locator;
     public readonly repositoryCell2: Locator;
     public readonly urpmiQgisPre: Locator;
@@ -68,6 +62,7 @@ export class InstallationGuidePage {
     public readonly makeInstallQgisPre: Locator;
     public readonly pkgInstallQgisLtrSpan: Locator;
     public readonly makeInstallQgisLtrPre: Locator;
+    public readonly zypperInstallQgisLtrPre: Locator;
     public readonly pkgAddQgisPre: Locator;
     public readonly textList: string[] = [
         "QGIS Installers",
@@ -81,14 +76,15 @@ export class InstallationGuidePage {
         "Supported distribution versions:",
         "Fedora",
         "QGIS stable",
-        "QGIS LTR (Long Term Release)",
-        "SUSE / openSUSE",
+        "SUSE / OpenSUSE",
         "Mandriva",
         "Slackware",
         "Arch Linux",
         "QGIS LTR",
         "QGIS testing",
         "Flatpak",
+        "Install the Flatpak",
+        "Install in a toolbox or distrobox",
         "Spack",
         "Mac OS X / macOS",
         // "QGIS nightly release",
@@ -127,6 +123,7 @@ export class InstallationGuidePage {
         });
         this.osgeo4WInstallerLink = this.page.getByRole("link", {
             name: "OSGeo4W Installer",
+            exact: true,
         });
         this.aptInstallGnupgPre = this.page
             .locator("pre")
@@ -228,18 +225,9 @@ export class InstallationGuidePage {
             hasText:
                 "sudo dnf install qgis python3-qgis qgis-grass qgis-server",
         });
-        this.dnfCoprEnableQgisPre1 = this.page
-            .locator("pre")
-            .filter({ hasText: "sudo dnf copr enable dani/qgis" })
-            .first();
-        this.dnfInstallQgisPythonPre = this.page
-            .locator("pre")
-            .filter({ hasText: "sudo dnf install qgis python3" })
-            .nth(1);
-        this.dnfInstallQgisServerPre = this.page
-            .locator("pre")
-            .filter({ hasText: "sudo dnf install qgis-server" })
-            .first();
+        this.zypperInstallQgisLtrPre = this.page.locator("pre").filter({
+            hasText: "sudo zypper in qgis qgis-plugin-grass",
+        });
         this.distributionCell2 = this.page
             .getByRole("cell", { name: "Distribution" })
             .nth(1);
@@ -257,19 +245,9 @@ export class InstallationGuidePage {
         this.grassGisVersionCell = this.page
             .getByRole("cell", { name: "GRASS GIS version" })
             .first();
-        this.dnfCoprEnableQgisPre2 = this.page
-            .locator("pre")
-            .filter({ hasText: "sudo dnf copr enable dani/qgis-ltr" });
-        this.dnfInstallQgisPythonPre2 = this.page
-            .locator("pre")
-            .filter({ hasText: "sudo dnf install qgis python3" })
-            .nth(2);
-        this.dnfInstallQgisServerPre2 = this.page
-            .locator("pre")
-            .filter({ hasText: "sudo dnf install qgis-server" })
-            .nth(1);
-        this.fedoraCoprLink = this.page.getByRole("link", {
-            name: "https://copr.fedorainfracloud.org/coprs/dani/qgis-ltr/",
+        this.rpmInstallQgis = this.page.locator("pre").filter({
+            hasText:
+                "rpm-ostree install qgis python3-qgis qgis-grass qgis-server",
         });
         this.distributionCell3 = this.page
             .getByRole("cell", { name: "Distribution" })
@@ -288,7 +266,7 @@ export class InstallationGuidePage {
             .filter({ hasText: "yaourt -S qgis-ltr" });
         this.flatpakInstallPre = this.page
             .locator("pre")
-            .filter({ hasText: "flatpak install --from https" });
+            .filter({ hasText: "flatpak install flathub org.qgis.qgis" });
         this.flatpakRunPre = this.page
             .locator("pre")
             .filter({ hasText: "flatpak run org.qgis.qgis" });

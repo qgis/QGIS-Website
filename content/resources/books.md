@@ -18,6 +18,17 @@ Note: The books are listed in order of newest first. After the English books, th
 
 ## English
 
+### QGIS for Ecologists
+
+An Introduction to Mapping for Ecological Surveys
+
+- [https://pelagicpublishing.com/products/qgis-for-ecologists](https://pelagicpublishing.com/products/qgis-for-ecologists)
+
+- Author: Stephanie Kim Miles
+  
+- Date: October 2024
+
+
 ### Collecting Field Data with QGIS and Mergin Maps
 
 Learn to master the Mergin Maps platform to collect, share and manage your field data.
@@ -414,5 +425,17 @@ The book consists of 2 main parts; In the first part, Geographical Information S
 - Authors: Can Ayday, Levent Sabah, Nefise Yaman, Kübra Keser
     
 - Date: January 2016
+
+
+## Ukrainian
+
+### РОБОЧИЙ ЗОШИТ «АНАЛІЗ КОСМІЧНИХ ЗНІМКІВ У ГЕОІНФОРМАЦІЙНИХ СИСТЕМАХ» Частина 2: 
+
+- [https://api.man.gov.ua/api/assets/man/a0746113-31c9-44d7-b6a1-d819e2e535dd/](https://api.man.gov.ua/api/assets/man/a0746113-31c9-44d7-b6a1-d819e2e535dd/)
+
+- Authors: С. М. Бабійчук, Т. Л. Кучма, Л. Я. Юрків, О. В. Томченко
+
+- Date: 2021
+
 
 {{< content-end >}}

@@ -36,7 +36,7 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿  " layoutClass="half" listTitle="QGIS UK (Scotland) " listSubtitle="Contact: Ross McDonald" >}}
 
-{{< rich-list listLink="https://qgis.ch/" icon="🇨🇭  " layoutClass="half" listTitle="QGIS user group Switzerland " listSubtitle="Contact: Isabel Kiefer" >}}
+{{< rich-list listLink="https://qgis.ch/" icon="🇨🇭  " layoutClass="half" listTitle="QGIS user group Switzerland " listSubtitle="Contact: François Voisard" >}}
 
 {{< rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿  " layoutClass="half" listTitle="QGIS UK (Wales/Cymru) " listSubtitle="Contact: Kevin Williams" >}}
 

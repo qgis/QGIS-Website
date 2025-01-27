@@ -73,11 +73,11 @@ Before installing any of the nightly builds note the [warnings](#warning) below.
 
 # Linux
 
-Most linux distributions split QGIS into several packages; you’ll probably need `qgis` and `qgis-python` (to run plugins). Packages like `qgis-grass` (or `qgis-plugin-grass`), `qgis-server` can be skipped initially, or installed only when you need them.
+Most linux distributions split QGIS into several packages; you’ll probably need `qgis` and `qgis-python` (to run plugins). Packages like `qgis-grass` (or `qgis-plugin-grass`), `qgis-server` can be installed when you need them.
 
 Below you will find specific instructions per distribution. For most distro’s there are instructions to install QGIS stable and instructions to install a cutting edge QGIS testing build (note the [warning](#warning)).
 
-## Debian/Ubuntu
+## Debian / Ubuntu
 
 ### Quickstart
 
@@ -183,16 +183,16 @@ Lines of packages:
 | ---- | ---- | ---- | ---- |
 | Latest Release | {{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}} | Release for **Debian and Ubuntu** | https://qgis.org/debian <br> https://qgis.org/ubuntu |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id5) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly-release |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-release |  |  |
 | Long Term Release Repository | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | Release for **Debian and Ubuntu** | https://qgis.org/debian-ltr https://qgis.org/ubuntu-ltr |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[5]](#id5) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
-| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[5]](#id5) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
-||| Nightly build with ubuntugis-unstable dependencies [[5]](#id5) | https://qgis.org/ubuntugis-nightly |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
+| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+||| Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |  |  |
 
-{{< footnote "5" >}} Nightlies are debug builds (including debugging output)
+{{< footnote "2" >}} Nightlies are debug builds (including debugging output)
 
 <small>
 Next point release: {{< param "nextpointreleasedate" >}}
@@ -204,17 +204,20 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version|Codename|Also available based on ubuntugis-unstable dependencies?|
-|---|---|---|---|
-|Debian|12.x (stable)|bookworm||
-||11.x (oldstable)|bullseye||
-||unstable|sid||
-|Ubuntu|24.04 (LTS)|noble|yes [[6]](#id6)|
-||23.10|mantic||
-||23.04|lunar||
-||22.04 (LTS)|jammy|yes|
+|Distribution|Version         |Codename|Also available based on ubuntugis-unstable dependencies?|
+|------------|----------------|--------|--------------------------------------------------------|
+|Debian      |12.x (stable)   |bookworm|                                                        |
+|            |11.x (oldstable)|bullseye [[3]](#id3) |                                           |
+|            |unstable        |sid     |                                                        |
+|Ubuntu      |24.10           |oracular [[4]](#id4) |                                           |
+|            |24.04 (LTS)     |noble   |yes                                                     |
+|            |23.10           |mantic  |                                                        |
+|            |22.04 (LTS)     |jammy   |yes                                                     |
 
-{{< footnote "6" >}} starting with nightlies of 3.34.9/3.38.2
+{{< footnote "3" >}} only up to 3.38 (bullseye's GRASS too old)
+
+{{< footnote "4" >}} starting with nightlies after 3.34.12/3.40.0
+
 
 To use the QGIS archive you have to first add the archive’s repository public key:
 
@@ -294,69 +297,47 @@ Please remove all the QGIS and GRASS packages you may have installed from other 
 
 ## Fedora
 
-Get packages for any Fedora version by typing:
+{{< rich-box-start icon="🙋‍♂️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+It’s not a common practice to install both client and server applications on the same machine.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+Get packages for Fedora variants using `dnf` by typing:
 
 ```
 sudo dnf install qgis python3-qgis qgis-grass qgis-server
 ```
 
-Default Fedora software repositories often hold older versions of QGIS.
+If you are on **Fedora Atomic Desktops**, you have 3 options:
 
-To have newer versions or the latest LTR, you have to add alternative software repositories based on the version you want to install (stable, LTR or testing).
+1. Install the Flatpak
 
-### QGIS stable
+Flatpak is the recommended way to install packages on Fedora Atomic Desktops, [skip to the instructions](#flatpak).
 
-Enable the repository:
+2. Install QGIS to the system
 
-```
-sudo dnf copr enable dani/qgis
-```
-
-After that type the commands below to install QGIS:
+This is the easiest method, saves data and disk space, but will slow down system updates a bit
 
 ```
-sudo dnf install qgis python3-qgis qgis-grass
+rpm-ostree install qgis python3-qgis qgis-grass qgis-server
 ```
 
-In case you would like to install QGIS Server (note that it’s not a common practice to install both client and server applications on the same machine), type:
+3. Install in a toolbox or distrobox
 
-```
-sudo dnf install qgis-server python3-qgis
-```
+Follow the `toolbx` and `distrobox` [instructions](#distrobox--toolbx).
+
+Fedora switches between the current QGIS release and the LTR releases. The unstable "Rawhide" branch will ship newer but possibly buggy QGIS versions.
 
 |Distribution|Version|QGIS version|GRASS GIS version|
 |---|---|---|---|
-|Fedora|36|3.28|8.0|
-||37|3.28|8.2|
+|Fedora|40|3.34.14|3.34.14|
+||41|3.40.2|3.40.2|
 
-More information are available at https://copr.fedorainfracloud.org/coprs/dani/qgis/
-
-### QGIS LTR (Long Term Release)
-
-Enable the repository:
-
-```
-sudo dnf copr enable dani/qgis-ltr
-```
-
-After that type the commands below to install QGIS:
-
-```
-sudo dnf install qgis python3-qgis qgis-grass
-```
-
-In case you would like to install QGIS Server (note that it’s not a common practice to install both client and server applications on the same machine), type:
-
-```
-sudo dnf install qgis-server python3-qgis
-```
-
-|Distribution|Version|QGIS version|GRASS GIS version|
-|---|---|---|---|
-|Fedora|36|3.22|8.0|
-||37|3.22|8.2|
-
-More information are available at https://copr.fedorainfracloud.org/coprs/dani/qgis-ltr/
+Always up-to-date version infos:
+- [QGIS](https://packages.fedoraproject.org/pkgs/qgis/qgis)
+- [QGIS-GRASS](https://packages.fedoraproject.org/pkgs/qgis/qgis-grass)
 
 ## NixOS
 
@@ -427,7 +408,7 @@ nix-shell -p \
 
 ```
 
-## SUSE / openSUSE
+## SUSE / OpenSUSE
 
 Latest stable and LTR packages called `qgis` and `qgis-ltr` are available in the following repositories:
 
@@ -444,6 +425,14 @@ Latest stable and LTR packages called `qgis` and `qgis-ltr` are available in the
 All packages include GRASS and Python support.
 
 All openSUSE Geo repositories can be found here: https://download.opensuse.org/repositories/Application:/Geo/
+
+Install QGis with this command:
+
+```
+sudo zypper in qgis qgis-plugin-grass 
+```
+
+On OpenSUSE microOS, Kalpa, Aeon and other immutable variants, refer to the `distrobox` [instructions](#distrobox--toolbx). Installing on the base system is possible but not recommended.
 
 ## Mandriva
 
@@ -499,19 +488,19 @@ For bugs and other behaviour, read comments here : https://aur.archlinux.org/pac
 
 ## Flatpak
 
-There is an QGIS flatpak for QGIS Stable available, maintained by the flathub community.
+There is for QGIS Stable and LTS available, maintained by the Flathub community.
 
-For general Linux Flatpak install notes, see https://flatpak.org/setup/
+For general Linux Flatpak install notes, see [the Flathub website](https://flatpak.org/setup).
 
-QGIS on Flathub: https://flathub.org/apps/details/org.qgis.qgis
+[Here you can find QGIS on Flathub](https://flathub.org/apps/details/org.qgis.qgis).
 
 To install:
 
 ```
-flatpak install --from https://dl.flathub.org/repo/appstream/org.qgis.qgis.flatpakref
+flatpak install flathub org.qgis.qgis
 ```
 
-Then to run:
+The app should appear in your app launcher, alternatively use this command:
 
 ```
 flatpak run org.qgis.qgis
@@ -523,11 +512,12 @@ To update your flatpak QGIS:
 flatpak update
 ```
 
-On certain distributions, you may also need to install xdg-desktop-portal or xdg-desktop-portal-gtk packages in order for file dialogs to appear.
+On certain distributions, you may also need to install the packages `xdg-desktop-portal`, together with `xdg-desktop-portal-gtk`, `xdg-desktop-portal-kde` or `xdg-desktop-portal-cosmic` in order for file dialogs to appear.
 
-Flathub files: https://github.com/flathub/org.qgis.qgis and report issues here: https://github.com/flathub/org.qgis.qgis/issues
+See the [Flathub files here](https://github.com/flathub/org.qgis.qgis) and [report issues here](https://github.com/flathub/org.qgis.qgis/issues).
 
-Note: if you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the scipy module):
+### Extension Support
+If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
 
 ```
 flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
@@ -567,15 +557,66 @@ spack install
 
 Spack related issues should be reported at: https://github.com/spack/spack/issues
 
+## Distrobox & Toolbx
+To install QGis on any Linux system, you can also use `distrobox` or `toolbx`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGIS.
+
+{{< rich-box-start icon="🙋‍♀️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+OpenSUSE and uBlue's Fedora-based Systems preinstall `distrobox`, Fedora preinstalls `toolbx` on their "Atomic Desktops". `distrobox` allows easy graphical integration, for `toolbx` you need to add a desktop entry yourself. You can use all available system images with `distrobox` and `toolbx`, even though `distrobox` displays more available options.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+To setup a distrobox, here for example using OpenSUSE Tumbleweed:
+
+```
+distrobox-create box -i registry.opensuse.org/opensuse/toolbox:latest
+
+distrobox-enter box
+sudo zypper in qgis
+distrobox-export --app qgis qgis-plugin-grass
+```
+
+Update QGIS in a distrobox:
+
+```
+distrobox upgrade --all
+```
+
+To create a toolbx:
+
+```
+toolbox create box -i registry.fedoraproject.org/fedora-toolbox:rawhide
+
+toolbox enter box
+sudo dnf install qgis qgis-grass python3-qgis
+```
+
+Update QGIS in a toolbx:
+
+```
+toolbx run -c box sudo dnf update
+```
+
 # Mac OS X / macOS
 
-Official All-in-one, signed installers for macOS High Sierra (10.13) and newer can be downloaded from the [QGIS download page]({{< ref "download" >}}).
 
 <!--
 ## QGIS nightly release
 
 A nightly updated standalone installer from QGIS master can be downloaded from [here](/downloads/macos/qgis-macos-nightly.dmg).
 -->
+
+
+## Binary packages (installers)
+
+Official All-in-one, signed installers for macOS High Sierra (10.13) and newer can be downloaded from the [QGIS download page]({{< ref "download" >}}).
+
+After downloading QGIS, open the DMG file. Drag and drop the QGIS application into the Applications folder. The first launch attempt may fail due to Apple's security framework. 
+
+**For macOS Sonoma and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
+
+**For macOS Sequoia and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
 
 ## MacPorts
 

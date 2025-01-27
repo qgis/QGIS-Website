@@ -15,10 +15,19 @@ jobs:
     steps:
       - name: 🛒 Checkout
         uses: actions/checkout@v2
-      - name: 🧱 Hugo build
-        uses: jakejarvis/hugo-build-action@master 
+      
+      - name: 🛠️ Setup Hugo
+        uses: peaceiris/actions-hugo@v3
         with:
-          args: --gc --config ./config.toml -b http://127.0.0.1:1313
+          # Using the latest value doesn't work for now. 
+          # See https://github.com/peaceiris/actions-hugo/issues/652#issuecomment-2543985304
+          # and https://github.com/peaceiris/actions-hugo/issues/662
+          hugo-version: '0.139.4'
+          extended: true
+
+      - name: 🧱 Hugo build
+        run: hugo --gc --config ./config.toml -b http://127.0.0.1:1313
+
       - name: 🕸️ Run server
         run: |
           cd public && python -m http.server 1313 &

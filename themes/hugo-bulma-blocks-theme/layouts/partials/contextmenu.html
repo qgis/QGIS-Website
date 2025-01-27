@@ -1,23 +1,13 @@
 <div class="box mb-0 context-container" id="context">
     <div class="container is-flex is-justify-content-space-between">
         <div class="rss-feed">
-            {{ $data := "" }}
-            {{ $url := .Site.Params.newsfeed }}
-            {{ with resources.GetRemote $url }}
-            {{ with .Err }}
-                {{ errorf "%s" . }}
+            {{ $data := .Site.Data.feed }}
+            {{ with $data }}
+            <a href="{{ .url | safeURL }}" target="_blank" rel="noopener" class="external-link">
+            {{ .title }}
+            </a>    
             {{ else }}
-                {{ $data = .Content | transform.Unmarshal }}
-                {{ with $data }}
-                    {{ range . | first 1 }}
-                    <a href="{{ .url | safeURL }}" target="_blank" rel="noopener" class="external-link">
-                        {{ .title }}
-                    </a>    
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-            {{ else }}
-            {{ errorf "Unable to get remote resource %q" $url }}
+            {{ errorf "Unable to get data from Site.data.feed" }}
             {{ end }}
         </div>    
         <div id="search-control" class="control has-icons-right search-control">

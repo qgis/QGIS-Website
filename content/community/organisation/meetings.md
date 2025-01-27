@@ -13,6 +13,21 @@ Reviewer: Tim Sutton
 # Meetings
 Since 2009 the QGIS community has been organizing developer and user meetings around the world.
 
+{{< rich-box-start layoutClass="has-right rounded" >}}
+{{< rich-content-start themeClass="coloring-2" >}}
+### QGIS User Conference 2025
+
+When: 2-3 June 2025  
+Where: Norrköping, Sweden
+
+{{< button class = "is-primary1" link = "community/organisation/meetings/uc-2025" text = "Learn more" >}} 
+
+{{< rich-content-end >}}
+{{< rich-right-start >}}
+![](uc-2025/visualization_center.webp)
+{{< rich-right-end >}}
+{{< rich-box-end >}}
+
 {{< columns-start >}}
 {{< column-start>}}
 

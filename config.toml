@@ -5,7 +5,8 @@ title = 'QGIS Web Site'
 theme = 'hugo-bulma-blocks-theme'
 # Default pagination.
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
-paginate = 50
+[pagination]
+  paginate = 50
 
 # See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
 pygmentsUseClasses = true
@@ -29,6 +30,8 @@ enableRobotsTXT = false
   submenu = 'submenus'
 
 [params]
+# Min hugo version
+minHugoVersion = "0.139.0"
 # Brand colours:
 primary1 = "#589632"
 primary2 = "#55828b"
@@ -264,20 +267,27 @@ sectionPagesMenu = 'main'
 
 [[menu.main]]
   parent = "Meetings"
-  name = "QGIS Developer Meetings"
-  url = "/community/organisation/meetings/dev_meetings"
-  weight = 190
-
-[[menu.main]]
-  parent = "Meetings"
-  name = "Reimbursements for Developer Meetings"
-  url = "/community/organisation/meetings/reimbursements"
-  weight = 200
+  name = "QGIS UC 2025"
+  url = "/community/organisation/meetings/uc-2025"
+  weight = 185
 
 [[menu.main]]
   parent = "Meetings"
   name = "QGIS User Meetings"
   url = "/community/organisation/meetings/user_meetings"
+  weight = 190
+
+
+[[menu.main]]
+  parent = "Meetings"
+  name = "QGIS Developer Meetings"
+  url = "/community/organisation/meetings/dev_meetings"
+  weight = 200
+
+[[menu.main]]
+  parent = "Meetings"
+  name = "Reimbursements for Developer Meetings"
+  url = "/community/organisation/meetings/reimbursements"
   weight = 210
 
 [[menu.main]]
@@ -368,7 +378,131 @@ sectionPagesMenu = 'main'
   name = "Installation guide"
   url = "/resources/installation-guide/"
   weight = 10
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Windows"
+    url = "/resources/installation-guide/#windows"
+    weight = 20
 
+  [[menu.main]]
+    parent = "Windows"
+    name = "Standalone installers"
+    url = "/resources/installation-guide/#standalone-installers"
+    weight = 30
+
+  [[menu.main]]
+    parent = "Windows"
+    name = "OSGeo4W installer"
+    url = "/resources/installation-guide/#osgeo4w-installer"
+    weight = 40
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Linux"
+    url = "/resources/installation-guide/#linux"
+    weight = 50
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Debian / Ubuntu"
+    url = "/resources/installation-guide/#debian--ubuntu"
+    weight = 60
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Fedora"
+    url = "/resources/installation-guide/#fedora"
+    weight = 90
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "NixOS"
+    url = "/resources/installation-guide/#nixos"
+    weight = 100
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "SUSE / openSUSE"
+    url = "/resources/installation-guide/#suse--opensuse"
+    weight = 110
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Mandriva"
+    url = "/resources/installation-guide/#mandriva"
+    weight = 120
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Slackware"
+    url = "/resources/installation-guide/#slackware"
+    weight = 130
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Arch Linux"
+    url = "/resources/installation-guide/#arch-linux"
+    weight = 140
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Flatpak"
+    url = "/resources/installation-guide/#flatpak"
+    weight = 150
+
+  [[menu.main]]
+    parent = "Linux"
+    name = "Spack"
+    url = "/resources/installation-guide/#spack"
+    weight = 160
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Mac OS X / macOS"
+    url = "/resources/installation-guide/#mac-os-x--macos"
+    weight = 170
+
+  [[menu.main]]
+    parent = "Mac OS X / macOS"
+    name = "Binary packages (installers)"
+    url = "/resources/installation-guide/#binary-packages-installers"
+    weight = 180
+
+  [[menu.main]]
+    parent = "Mac OS X / macOS"
+    name = "MacPorts"
+    url = "/resources/installation-guide/#macports"
+    weight = 190
+
+  [[menu.main]]
+    parent = "Mac OS X / macOS"
+    name = "Old releases"
+    url = "/resources/installation-guide/#old-releases"
+    weight = 200
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "FreeBSD"
+    url = "/resources/installation-guide/#freebsd"
+    weight = 210
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "OpenBSD"
+    url = "/resources/installation-guide/#openbsd"
+    weight = 220
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "QGIS Testing warning"
+    url = "/resources/installation-guide/#qgis-testing-warning"
+    weight = 230
+
+  [[menu.main]]
+    parent = "Installation guide"
+    name = "Installing from Source"
+    url = "/resources/installation-guide/#installing-from-source"
+    weight = 240
 
 [[menu.main]]
   parent = "Resources"
@@ -414,36 +548,36 @@ sectionPagesMenu = 'main'
 
 [[menu.main]]
   parent = "Resources"
-  name = "Support"
+  name = "Contact and Support"
   url = "/resources/support/"
   weight = 100
 
 [[menu.main]]
-  parent = "Support"
+  parent = "Contact and Support"
   name = "FAQ"
   url = "/resources/support/faq"
   weight = 110
 
 [[menu.main]]
-  parent = "Support"
+  parent = "Contact and Support"
   name = "Bug Reporting"
   url = "/resources/support/bug-reporting"
   weight = 120
 
 [[menu.main]]
-  parent = "Support"
+  parent = "Contact and Support"
   name = "Communication channels"
   url = "/resources/support/#communication-channels"
   weight = 130
 
 [[menu.main]]
-  parent = "Support"
+  parent = "Contact and Support"
   name = "Commercial support"
   url = "/resources/support/commercial-support"
   weight = 140
 
 [[menu.main]]
-  parent = "Support"
+  parent = "Contact and Support"
   name = "StackExchange"
   url = "/resources/support/#stackexchange"
   weight = 160
@@ -467,7 +601,7 @@ sectionPagesMenu = 'main'
   weight = 200
 
 [[menu.main]]
-  parent = "Support"
+  parent = "Contact and Support"
   name = "Security"
   url = "/resources/support/security"
   weight = 190
@@ -571,5 +705,4 @@ sectionPagesMenu = 'main'
   baseName = "version"
   isPlainText = true
   mediaType = "application/json"
-
 
