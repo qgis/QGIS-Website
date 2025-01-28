@@ -67,8 +67,8 @@ export class InstallationGuidePage {
     public readonly textList: string[] = [
         "QGIS Installers",
         "Windows",
-        "Standalone installers",
-        "OSGeo4W installer",
+        "Offline (Standalone) installers",
+        "Online (OSGeo4W) installer",
         "Linux",
         "Debian/Ubuntu",
         "Quickstart",
