@@ -25,9 +25,9 @@ Security issues in QGIS can arise in various scenarios, including, but not limit
 
 If you run a code scanner, most of the vulnerabilities listed are not related to QGIS, but to its dependencies. The specific version of the dependencies shipped with QGIS depends on the OS and packaging system being used. 
 
-**On Windows**, QGIS.org uses the OSGEO4W project to distribute a complete environment. The OSGEO4W build is fully maintained by the QGIS project.
+**On Windows**, QGIS.org uses the OSGeo4W project to distribute a complete environment. The OSGeo4W build is fully maintained by the QGIS project.
 
-OSGEO4W provides update scripts, allowing you to upgrade only the necessary libraries without the need to redownload the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGEO4W documentation](https://trac.osgeo.org/osgeo4w/).
+OSGeo4W provides update scripts, allowing you to upgrade only the necessary libraries without the need to redownload the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGeo4W documentation](https://trac.osgeo.org/osgeo4w/).
 
 
 On **[Ubuntu / Debian](/resources/installation-guide/#debian--ubuntu)**, we provide QGIS binaries and work closely with packagers of OSGEO libraries (GDAL / PROJ / GRASS).
@@ -92,7 +92,7 @@ Fixes are shipped as soon as possible in point releases - depending on the criti
 
 If you want to secure your QGIS enterprise deployment, please ensure you are  able to quickly deploy fixes to the machines you manage. 
 
-OSGEO4W provides update scripts that can run unattended. These scripts also  allow you to upgrade only the necessary libraries without the need to re-download the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGEO4W documentation](https://trac.osgeo.org/osgeo4w/).
+OSGeo4W provides update scripts that can run unattended. These scripts also  allow you to upgrade only the necessary libraries without the need to re-download the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGeo4W documentation](https://trac.osgeo.org/osgeo4w/).
 
 
 
