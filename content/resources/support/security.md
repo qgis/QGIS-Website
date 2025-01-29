@@ -55,7 +55,7 @@ QGIS server and QGIS Desktop have been written to limit the possibility of SQL i
 
 ## What to do if you think you have found a security issue
 
-If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please refer to the [security page]({{< ref "resources/support/security" >}}) for detailed information on how to report it responsibly. Before this, please do the following:
+If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please do the following:
 
  - Check you are using the latest version of QGIS, and have a glance at the nightly version for potential ongoing changes (fixes or regressions).
  - Check if your issue concerns QGIS desktop or QGIS server.
