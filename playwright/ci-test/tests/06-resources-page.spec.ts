@@ -160,9 +160,8 @@ test.describe("Resources pages", () => {
         ).toBeVisible();
         await expect(installationGuidePage.dnfInstallQgisPre).toBeVisible();
         await expect(installationGuidePage.distributionCell2).toBeVisible();
-        await expect(installationGuidePage.distGrassFedora).toBeVisible();
+        await expect(installationGuidePage.distQGISFedora).toBeVisible();
         await expect(installationGuidePage.qgisVersionCell).toBeVisible();
-        await expect(installationGuidePage.grassGisVersionCell).toBeVisible();
         await expect(installationGuidePage.rpmInstallQgis).toBeVisible();
         await expect(installationGuidePage.distributionCell3).toBeVisible();
         await expect(installationGuidePage.repositoryCell2).toBeVisible();

@@ -40,9 +40,8 @@ export class InstallationGuidePage {
     public readonly aptUpdateInstallQgisServerPre: Locator;
     public readonly dnfInstallQgisPre: Locator;
     public readonly distributionCell2: Locator;
-    public readonly distGrassFedora: Locator;
+    public readonly distQGISFedora: Locator;
     public readonly qgisVersionCell: Locator;
-    public readonly grassGisVersionCell: Locator;
     public readonly rpmInstallQgis: Locator;
     public readonly distributionCell3: Locator;
     public readonly repositoryCell2: Locator;
@@ -231,19 +230,15 @@ export class InstallationGuidePage {
         this.distributionCell2 = this.page
             .getByRole("cell", { name: "Distribution" })
             .nth(1);
-        this.distGrassFedora = this.page
+        this.distQGISFedora = this.page
             .locator("table")
             .filter({
-                hasText:
-                    "Distribution Version QGIS version GRASS GIS version Fedora",
+                hasText: "Distribution Version QGIS version Fedora",
             })
             .locator("th")
             .nth(1);
         this.qgisVersionCell = this.page
             .getByRole("cell", { name: "QGIS version" })
-            .first();
-        this.grassGisVersionCell = this.page
-            .getByRole("cell", { name: "GRASS GIS version" })
             .first();
         this.rpmInstallQgis = this.page.locator("pre").filter({
             hasText:

@@ -330,10 +330,10 @@ Follow the `toolbx` and `distrobox` [instructions](#distrobox--toolbx).
 
 Fedora switches between the current QGIS release and the LTR releases. The unstable "Rawhide" branch will ship newer but possibly buggy QGIS versions.
 
-|Distribution|Version|QGIS version|GRASS GIS version|
+|Distribution|Version|QGIS version|
 |---|---|---|---|
-|Fedora|40|3.34.14|3.34.14|
-||41|3.40.2|3.40.2|
+|Fedora|40|{{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|
+||41|{{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}}|
 
 Always up-to-date version infos:
 - [QGIS](https://packages.fedoraproject.org/pkgs/qgis/qgis)
