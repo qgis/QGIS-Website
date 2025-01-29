@@ -41,10 +41,10 @@ Our very best regards!
 GNU/Linux is a Free operating system built on the same principles that QGIS is built on.
 We provide installers for many flavors of GNU/Linux binary packages (including rpm and deb packages). Please select your choice of distro below:
 
-- [Debian/Ubuntu]({{< ref "resources/installation-guide#debianubuntu" >}})
+- [Debian/Ubuntu]({{< ref "resources/installation-guide#debian--ubuntu" >}})
 - [Fedora]({{< ref "resources/installation-guide#fedora" >}})
 - [NixOS]({{< ref "resources/installation-guide#nixos" >}})
-- [openSUSE]({{< ref "resources/installation-guide#suse-opensuse" >}})
+- [openSUSE]({{< ref "resources/installation-guide#suse--opensuse" >}})
 - [Mandriva]({{< ref "resources/installation-guide#mandriva" >}})
 - [Slackware]({{< ref "resources/installation-guide#slackware" >}})
 - [Arch Linux]({{< ref "resources/installation-guide#arch-linux" >}})

@@ -1,55 +1,59 @@
 {{ with index .Site.Data.conf }}
+    <h2 class="title is-size-5">Online (OSGeo4W) installer:</h2>
 
-<h2 class="title is-size-5">Online (OSGeo4W) installer:</h2>
+    <a
+        class="button is-primary1 mb-3"
+        href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
+        onclick="thanks(this)"
+        download
+        >OSGeo4W Network Installer</a
+    >
+    <br />
+    <p>
+        This installer is the best way to keep QGIS up to date, run multiple
+        versions on your system and keep the load on our download servers to a
+        minimum.
+        <a
+            href="{{ absURL "resources/installation-guide#online-osgeo4w-installer" }}"
+        >
+            Learn more.
+        </a>
+    </p>
 
-<a
-	class="button is-primary1 mb-3"
-	href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
-    onclick="thanks(this)"
-    download
->OSGeo4W Network Installer</a>
-<br>
-<p>
-    This installer is the best way to keep QGIS up to date, 
-    run multiple versions on your system and keep the load 
-    on our download servers to a minimum. 
-    <a href="{{ absURL "resources/installation-guide#osgeo4w-installer" }}">
-        Learn more.
-    </a>
-</p>
+    <h2 class="title is-size-5">Offline (Standalone) installers:</h2>
+    <a
+        class="button is-primary1 mb-3"
+        href="{{ .ltr_msi }}"
+        onclick="thanks(this)"
+        download
+        >Long Term Version for Windows ({{ .ltrversion }} {{ .ltrnote }})</a
+    >
 
-<h2 class="title is-size-5">Offline (Standalone) installers:</h2>
-<a
-	class="button is-primary1 mb-3"
-	href="{{ .ltr_msi }}"
-    onclick="thanks(this)"
-    download
->Long Term Version for Windows ({{ .ltrversion }} {{ .ltrnote }})</a>
+    <a
+        class="button is-primary1 is-outlined mb-3"
+        href="{{ .lr_msi }}"
+        onclick="thanks(this)"
+        download
+        >Latest Version for Windows ({{ .version }})</a
+    >
 
-<a
-	class="button is-primary1 is-outlined mb-3"
-	href="{{ .lr_msi }}"
-    onclick="thanks(this)"
-    download
->Latest Version for Windows ({{ .version }})</a>
+    <a
+        class="button is-primary1 is-outlined mb-3"
+        href="{{ .lr_qt6_msi }}"
+        onclick="thanks(this)"
+        download
+        >Latest Version for Windows ({{ .version }}) with Qt6 (experimental)</a
+    >
 
-<a
-	class="button is-primary1 is-outlined mb-3"
-	href="{{ .lr_qt6_msi }}"
-    onclick="thanks(this)"
-    download
->Latest Version for Windows ({{ .version }}) with Qt6 (experimental)</a>
+    <p>
+        These installers are for users who wish to easily share the download
+        e.g. putting it on a USB key or network share.
+        <a
+            href="{{ absURL "resources/installation-guide#offline-standalone-installers" }}"
+        >
+            Learn more.
+        </a>
+    </p>
 
-<p>
-    These installers are for users who wish 
-    to easily share the download e.g. putting 
-    it on a USB key or network share.
-    <a href="{{ absURL "resources/installation-guide#standalone-installers" }}">
-        Learn more.
-    </a>
-</p>
-
-<p>
-    ⚠️ Since QGIS 3.20 we only ship 64-bit Windows executables.
-</p>
+    <p>⚠️ Since QGIS 3.20 we only ship 64-bit Windows executables.</p>
 {{ end }}
