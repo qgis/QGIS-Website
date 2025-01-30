@@ -1,0 +1,46 @@
+# This workflow scrapes the latest show episodes and commits the new episode and data
+# files to the repo.
+
+name: ⚒️ Update donors and commit
+on:
+  schedule:
+    - cron:  '0 0,12 * * *'  # At midnight & noon UTC
+  workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'qgis'
+    steps:
+    - name: '🛒 Checkout QGIS Website'
+      uses: actions/checkout@v3
+      with:
+        ref: main
+        path: ./qgis-website
+
+    - name: '🐍 Setup Python'
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+        architecture: 'x64'
+        cache: "pipenv"
+
+    - name: '🚸Install Python deps'
+      run: |
+        cd ./qgis-website
+        pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
+        pipenv run pip freeze
+    
+    - name: '⚙️ Update donors'
+      env:
+        STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+      run: |
+        cd ./qgis-website
+        pipenv run ./scripts/update_donors.py
+
+    - name: '✉️ Commit'
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'Donors updated and committed via a GitHub Action.'
+        repository: ./qgis-website
+        # push_options: --force
