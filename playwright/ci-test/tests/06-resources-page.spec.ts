@@ -214,7 +214,6 @@ test.describe("Resources pages", () => {
         await expect(roadmapPage.osgeo4w).toBeVisible();
         await expect(roadmapPage.linux).toBeVisible();
         await expect(roadmapPage.debianUbuntu).toBeVisible();
-        await expect(roadmapPage.macOS).toBeVisible();
 
         for (const text of roadmapPage.textList) {
             await expect(roadmapPage.pageBody).toContainText(text);

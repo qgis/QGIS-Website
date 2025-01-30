@@ -297,9 +297,20 @@ Please remove all the QGIS and GRASS packages you may have installed from other 
 
 ## Flatpak
 
-There is for QGIS Stable and LTS available, maintained by the Flathub community.
+{{< rich-box-start icon="💡" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+Flatpak is a universal package format for all Linux distributions. Packages are isolated from the system, which can have security and stability benefits. For example, you can use the latest QGIS version on a stable distribution.
 
-For general Linux Flatpak install notes, see [the Flathub website](https://flatpak.org/setup).
+Flatpaks are installed for all users by default, but can also be installed for a single user only with the `--user` argument.
+
+Only users with `sudo` permission can change systemwide Flatpak apps and repositories, but all users can update them. This can be useful on managed machines.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+There is a Flatpak for QGIS Stable and LTR available, maintained by the Flathub community.
+
+For general install notes, see [the Flathub website](https://flatpak.org/setup).
 
 [Here you can find QGIS on Flathub](https://flathub.org/apps/details/org.qgis.qgis).
 
@@ -309,13 +320,15 @@ To install:
 flatpak install flathub org.qgis.qgis
 ```
 
+You will be prompted for the version of QGIS you want to use.
+
 The app should appear in your app launcher, alternatively use this command:
 
 ```
 flatpak run org.qgis.qgis
 ```
 
-To update your flatpak QGIS:
+To update your Flatpak apps, including QGIS:
 
 ```
 flatpak update
@@ -331,9 +344,10 @@ If you need to install additional Python modules, because they are needed by a p
 ```
 flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
 
-# NOTE: it is possible you get an error like: "error: runtime/org.kde.Sdk/x86_64/5.15-23.08 not installed" then also do:
-flatpak install runtime/org.kde.Sdk/x86_64/5.15-23.08
+# NOTE: it is possible you get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
+flatpak install runtime/org.kde.Sdk/x86_64/VERSION
 ```
+
 
 ## Fedora
 
