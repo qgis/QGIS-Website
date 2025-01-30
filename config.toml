@@ -410,6 +410,12 @@ sectionPagesMenu = 'main'
 
   [[menu.main]]
     parent = "Linux"
+    name = "Flatpak"
+    url = "/resources/installation-guide/#flatpak"
+    weight = 70
+
+  [[menu.main]]
+    parent = "Linux"
     name = "Fedora"
     url = "/resources/installation-guide/#fedora"
     weight = 90
@@ -443,12 +449,6 @@ sectionPagesMenu = 'main'
     name = "Arch Linux"
     url = "/resources/installation-guide/#arch-linux"
     weight = 140
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Flatpak"
-    url = "/resources/installation-guide/#flatpak"
-    weight = 150
 
   [[menu.main]]
     parent = "Linux"

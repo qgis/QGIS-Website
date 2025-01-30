@@ -295,6 +295,60 @@ Please remove all the QGIS and GRASS packages you may have installed from other 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
+## Flatpak
+
+{{< rich-box-start icon="💡" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+Flatpak is a universal package format for all Linux distributions. Packages are isolated from the system, which can have security and stability benefits. For example, you can use the latest QGIS version on a stable distribution.
+
+Flatpaks are installed for all users by default, but can also be installed for a single user only with the `--user` argument.
+
+Only users with `sudo` permission can change systemwide Flatpak apps and repositories, but all users can update them. This can be useful on managed machines.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+There is a Flatpak for QGIS Stable and LTR available, maintained by the Flathub community.
+
+For general install notes, see [the Flathub website](https://flatpak.org/setup).
+
+[Here you can find QGIS on Flathub](https://flathub.org/apps/details/org.qgis.qgis).
+
+To install:
+
+```
+flatpak install flathub org.qgis.qgis
+```
+
+You will be prompted for the version of QGIS you want to use.
+
+The app should appear in your app launcher, alternatively use this command:
+
+```
+flatpak run org.qgis.qgis
+```
+
+To update your Flatpak apps, including QGIS:
+
+```
+flatpak update
+```
+
+On certain distributions, you may also need to install the packages `xdg-desktop-portal`, together with `xdg-desktop-portal-gtk`, `xdg-desktop-portal-kde` or `xdg-desktop-portal-cosmic` in order for file dialogs to appear.
+
+See the [Flathub files here](https://github.com/flathub/org.qgis.qgis) and [report issues here](https://github.com/flathub/org.qgis.qgis/issues).
+
+### Extension Support
+If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
+
+```
+flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
+
+# NOTE: it is possible you get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
+flatpak install runtime/org.kde.Sdk/x86_64/VERSION
+```
+
+
 ## Fedora
 
 {{< rich-box-start icon="🙋‍♂️" layoutClass="tips">}}
@@ -485,59 +539,6 @@ yaourt -S qgis-git
 ```
 
 For bugs and other behaviour, read comments here : https://aur.archlinux.org/packages/qgis-git
-
-## Flatpak
-
-{{< rich-box-start icon="💡" layoutClass="tips">}}
-{{< rich-content-start themeClass="coloring-1" >}}
-##### Note
-Flatpak is a universal package format for all Linux distributions. Packages are isolated from the system, which can have security and stability benefits. For example, you can use the latest QGIS version on a stable distribution.
-
-Flatpaks are installed for all users by default, but can also be installed for a single user only with the `--user` argument.
-
-Only users with `sudo` permission can change systemwide Flatpak apps and repositories, but all users can update them. This can be useful on managed machines.
-{{< rich-content-end >}}
-{{< rich-box-end >}}
-
-There is a Flatpak for QGIS Stable and LTR available, maintained by the Flathub community.
-
-For general install notes, see [the Flathub website](https://flatpak.org/setup).
-
-[Here you can find QGIS on Flathub](https://flathub.org/apps/details/org.qgis.qgis).
-
-To install:
-
-```
-flatpak install flathub org.qgis.qgis
-```
-
-You will be prompted for the version of QGIS you want to use.
-
-The app should appear in your app launcher, alternatively use this command:
-
-```
-flatpak run org.qgis.qgis
-```
-
-To update your Flatpak apps, including QGIS:
-
-```
-flatpak update
-```
-
-On certain distributions, you may also need to install the packages `xdg-desktop-portal`, together with `xdg-desktop-portal-gtk`, `xdg-desktop-portal-kde` or `xdg-desktop-portal-cosmic` in order for file dialogs to appear.
-
-See the [Flathub files here](https://github.com/flathub/org.qgis.qgis) and [report issues here](https://github.com/flathub/org.qgis.qgis/issues).
-
-### Extension Support
-If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
-
-```
-flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
-
-# NOTE: it is possible you get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
-flatpak install runtime/org.kde.Sdk/x86_64/VERSION
-```
 
 ## Spack
 
