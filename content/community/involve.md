@@ -91,6 +91,8 @@ Interested in crafting your own? Learn how to get started!
 
 QGIS Core comprises libraries for building custom applications through a robust API. It also includes desktop and server applications that showcase the library capabilities, providing a user-friendly interface
 
+[Contributor Requirements]({{< ref "resources/support/contributors-requirements" >}})
+
 [Get set up for QGIS Core development](https://docs.qgis.org/latest/en/docs/developers_guide/index.html )
 
 [QGIS roadmap]({{< ref "resources/roadmap" >}})
