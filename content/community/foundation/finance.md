@@ -14,7 +14,7 @@ description: Please check the following reports, and see how your donations and 
 Please check the following reports, and see how your donations and sponsorships are important for the progress of the project.
 
 ## 2025
-{{< rich-list listLink="../annual-budgets/QGISBudget2025.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2024" listSubtitle="Download PDF" >}}
+{{< rich-list listLink="../annual-budgets/QGISBudget2025.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2025" listSubtitle="Download PDF" >}}
 
 ## 2024
 {{< rich-list listLink="../annual-budgets/QGISBudget2024.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2024" listSubtitle="Download PDF" >}}
