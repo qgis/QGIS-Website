@@ -34,6 +34,7 @@ jobs:
     - name: '⚙️ Update donors'
       env:
         STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+        LIST_AS_DONOR_LABEL: ${{ secrets.LIST_AS_DONOR_LABEL }}
       run: |
         cd ./qgis-website
         pipenv run ./scripts/update_donors.py
