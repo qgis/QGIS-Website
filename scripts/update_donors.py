@@ -150,6 +150,9 @@ def get_donors(donors_json_file, custom_field_label):
                         list_me_as_donor = field.get('dropdown', {}).get('value', '').strip().lower() == 'yes'                    
             new_donor_name = donor['name']
 
+            if new_donor_name is None:
+                continue
+
             if list_me_as_donor:
                 # Update the donors list with the new name
                 update_donors(new_donor_name, donors_json_file)
