@@ -18,6 +18,17 @@ Note: The books are listed in order of newest first. After the English books, th
 
 ## English
 
+### Spatial Analysis of Gender Based Work Force in India Using QGIS
+
+A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
+
+- [https://www.gyanbooks.com/](https://www.gyanbooks.com/index.php?p=sr&format=fullpage&Field=bookcode&String=1111036579312&Book=SPATIAL%20ANALYSIS%20OF%20GENDER%20BASED%20WORK%20FORCE%20IN%20INDIA%20USING%20QGIS%20A%20comparative%20study%20of%20vil..)
+
+- Author: Dr. Pulak Das & Dr. Pinki Purkayastha
+  
+- Date: December 2024
+
+
 ### QGIS for Ecologists
 
 An Introduction to Mapping for Ecological Surveys
