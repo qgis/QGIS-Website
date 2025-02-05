@@ -20,7 +20,7 @@ Since 2009 the QGIS community has been organizing developer and user meetings ar
 When: 2-3 June 2025  
 Where: Norrköping, Sweden
 
-{{< button class = "is-primary1" link = "community/organisation/meetings/uc-2025" text = "Learn more" >}} 
+{{< button class = "is-primary1" link = "https://uc2025.qgis.org/" text = "Learn more" >}} 
 
 {{< rich-content-end >}}
 {{< rich-right-start >}}
