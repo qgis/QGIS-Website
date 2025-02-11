@@ -236,14 +236,14 @@ try:
 except Exception as e:
     print(f"Error fetching flickr screenshots: {e}")
 
-try:
-    # Planet blog aggregator
-    fetch_blog_feed(
-        showcase_type="planet",
-        rss_url="https://plugins.qgis.org/planet/feed/atom/"
-    )
-except Exception as e:
-    print(f"Error fetching planet blog feed: {e}")
+# try:
+#     # Planet blog aggregator
+#     fetch_blog_feed(
+#         showcase_type="planet",
+#         rss_url="https://plugins.qgis.org/planet/feed/atom/"
+#     )
+# except Exception as e:
+#     print(f"Error fetching planet blog feed: {e}")
 
 try:
     # QGIS User group feed

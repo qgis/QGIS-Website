@@ -193,10 +193,10 @@ if args.flickr:
     )
 
 # Planet blog aggregator
-fetch_blog_feed(
-    showcase_type="planet",
-    rss_url="https://plugins.qgis.org/planet/feed/atom/"
-)
+# fetch_blog_feed(
+#     showcase_type="planet",
+#     rss_url="https://plugins.qgis.org/planet/feed/atom/"
+# )
 # QGIS User group feed
 fetch_blog_feed(
     showcase_type="qug",
