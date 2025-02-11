@@ -78,7 +78,7 @@ either verbatim or with modifications and/or translated into another
 language.  (Hereinafter, translation is included without limitation in
 the term "modification".)  Each licensee is addressed as "you".
 
-Activities other than copying, distribution and modification are not
+   Activities other than copying, distribution and modification are not
 covered by this License; they are outside its scope.  The act of
 running the Program is not restricted, and the output from the Program
 is covered only if its contents constitute a work based on the
@@ -93,7 +93,7 @@ notices that refer to this License and to the absence of any warranty;
 and give any other recipients of the Program a copy of this License
 along with the Program.
 
-You may charge a fee for the physical act of transferring a copy, and
+   You may charge a fee for the physical act of transferring a copy, and
 you may at your option offer warranty protection in exchange for a fee.
 
 2. You may modify your copy or copies of the Program or any portion
@@ -101,15 +101,15 @@ of it, thus forming a work based on the Program, and copy and
 distribute such modifications or work under the terms of Section 1
 above, provided that you also meet all of these conditions:
 
-  a) You must cause the modified files to carry prominent notices
+   a) You must cause the modified files to carry prominent notices
     stating that you changed the files and the date of any change.
 
-  b) You must cause any work that you distribute or publish, that in
+   b) You must cause any work that you distribute or publish, that in
     whole or in part contains or is derived from the Program or any
     part thereof, to be licensed as a whole at no charge to all third
     parties under the terms of this License.
 
-  c) If the modified program normally reads commands interactively
+   c) If the modified program normally reads commands interactively
     when run, you must cause it, when started running for such
     interactive use in the most ordinary way, to print or display an
     announcement including an appropriate copyright notice and a
@@ -120,7 +120,7 @@ above, provided that you also meet all of these conditions:
     does not normally print such an announcement, your work based on
     the Program is not required to print an announcement.)
 
-These requirements apply to the modified work as a whole.  If
+   These requirements apply to the modified work as a whole.  If
 identifiable sections of that work are not derived from the Program,
 and can be reasonably considered independent and separate works in
 themselves, then this License, and its terms, do not apply to those
@@ -130,12 +130,12 @@ on the Program, the distribution of the whole must be on the terms of
 this License, whose permissions for other licensees extend to the
 entire whole, and thus to each and every part regardless of who wrote it.
 
-Thus, it is not the intent of this section to claim rights or contest
+   Thus, it is not the intent of this section to claim rights or contest
 your rights to work written entirely by you; rather, the intent is to
 exercise the right to control the distribution of derivative or
 collective works based on the Program.
 
-In addition, mere aggregation of another work not based on the Program
+   In addition, mere aggregation of another work not based on the Program
 with the Program (or with a work based on the Program) on a volume of
 a storage or distribution medium does not bring the other work under
 the scope of this License.
@@ -144,24 +144,24 @@ the scope of this License.
 under Section 2) in object code or executable form under the terms of
 Sections 1 and 2 above provided that you also do one of the following:
 
-  a) Accompany it with the complete corresponding machine-readable
+   a) Accompany it with the complete corresponding machine-readable
     source code, which must be distributed under the terms of Sections
     1 and 2 above on a medium customarily used for software interchange; or,
 
-  b) Accompany it with a written offer, valid for at least three
+   b) Accompany it with a written offer, valid for at least three
     years, to give any third party, for a charge no more than your
     cost of physically performing source distribution, a complete
     machine-readable copy of the corresponding source code, to be
     distributed under the terms of Sections 1 and 2 above on a medium
     customarily used for software interchange; or,
 
-  c) Accompany it with the information you received as to the offer
+   c) Accompany it with the information you received as to the offer
     to distribute corresponding source code.  (This alternative is
     allowed only for noncommercial distribution and only if you
     received the program in object code or executable form with such
     an offer, in accord with Subsection b above.)
 
-The source code for a work means the preferred form of the work for
+   The source code for a work means the preferred form of the work for
 making modifications to it.  For an executable work, complete source
 code means all the source code for all modules it contains, plus any
 associated interface definition files, plus the scripts used to
@@ -172,7 +172,7 @@ form) with the major components (compiler, kernel, and so on) of the
 operating system on which the executable runs, unless that component
 itself accompanies the executable.
 
-If distribution of executable or object code is made by offering
+   If distribution of executable or object code is made by offering
 access to copy from a designated place, then offering equivalent
 access to copy the source code from the same place counts as
 distribution of the source code, even though third parties are not
@@ -216,12 +216,12 @@ all those who receive copies directly or indirectly through you, then
 the only way you could satisfy both it and this License would be to
 refrain entirely from distribution of the Program.
 
-If any portion of this section is held invalid or unenforceable under
+   If any portion of this section is held invalid or unenforceable under
 any particular circumstance, the balance of the section is intended to
 apply and the section as a whole is intended to apply in other
 circumstances.
 
-It is not the purpose of this section to induce you to infringe any
+   It is not the purpose of this section to induce you to infringe any
 patents or other property right claims or to contest validity of any
 such claims; this section has the sole purpose of protecting the
 integrity of the free software distribution system, which is
@@ -232,7 +232,7 @@ system; it is up to the author/donor to decide if he or she is willing
 to distribute software through any other system and a licensee cannot
 impose that choice.
 
-This section is intended to make thoroughly clear what is believed to
+   This section is intended to make thoroughly clear what is believed to
 be a consequence of the rest of this License.
 
 8. If the distribution and/or use of the Program is restricted in
@@ -248,7 +248,7 @@ of the General Public License from time to time.  Such new versions will
 be similar in spirit to the present version, but may differ in detail to
 address new problems or concerns.
 
-Each version is given a distinguishing version number.  If the Program
+   Each version is given a distinguishing version number.  If the Program
 specifies a version number of this License which applies to it and "any
 later version", you have the option of following the terms and conditions
 either of that version or of any later version published by the Free
@@ -337,24 +337,24 @@ If the program is interactive, make it output a short notice like this
 when it starts in an interactive mode:
 
     Gnomovision version 69, Copyright (C) year name of author
-    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type 'show w'.
     This is free software, and you are welcome to redistribute it
-    under certain conditions; type `show c' for details.
+    under certain conditions; type 'show c' for details.
 
-The hypothetical commands `show w' and `show c' should show the appropriate
+The hypothetical commands `show w` and `show c` should show the appropriate
 parts of the General Public License.  Of course, the commands you use may
-be called something other than `show w' and `show c'; they could even be
+be called something other than `show w` and `show c`; they could even be
 mouse-clicks or menu items--whatever suits your program.
 
 You should also get your employer (if you work as a programmer) or your
 school, if any, to sign a "copyright disclaimer" for the program, if
 necessary.  Here is a sample; alter the names:
 
-  Yoyodyne, Inc., hereby disclaims all copyright interest in the program
-  `Gnomovision' (which makes passes at compilers) written by James Hacker.
+    Yoyodyne, Inc., hereby disclaims all copyright interest in the program
+    'Gnomovision' (which makes passes at compilers) written by James Hacker.
 
-  <signature of Ty Coon>, 1 April 1989
-  Ty Coon, President of Vice
+    <signature of Ty Coon>, 1 April 1989
+    Ty Coon, President of Vice
 
 This General Public License does not permit incorporating your program into
 proprietary programs.  If your program is a subroutine library, you may
