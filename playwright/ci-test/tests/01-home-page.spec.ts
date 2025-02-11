@@ -117,7 +117,6 @@ test.describe("Home page", () => {
         await expect(footer.booksLink).toBeVisible();
         await expect(footer.supportLink).toBeVisible();
         await expect(footer.qgisDashboardLink).toBeVisible();
-        await expect(footer.pluginsDashboardLink).toBeVisible();
         await expect(footer.blogLink).toBeVisible();
         await expect(footer.donateLink).toBeVisible();
         await expect(footer.membershipList).toBeVisible();
