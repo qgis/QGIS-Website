@@ -18,7 +18,7 @@ We welcome new contributors to our community - we want you to use QGIS as a plat
 
 - Be familiar with the development process and the reference material available in the [Developers Guide for QGIS](https://docs.qgis.org/testing/en/docs/developers_guide/index.html), and the [CODING document](https://github.com/qgis/QGIS/blob/master/CONTRIBUTING.md) in the root of the QGIS Sources.
 
-- Ensure that all code committed to the repository is unencumbered and compatible with the [QGIS license](https://github.com/qgis/QGIS/blob/master/COPYING), GNU Public License (GPL) Version 2 or any later version.
+- Ensure that all code committed to the repository is unencumbered and compatible with the [QGIS license]({{< relref "license" >}}), GNU Public License (GPL) Version 2 or any later version.
 
 - Not use or include any code that will cause a trademark or patent infringement. If you are unsure, ask on the [developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) or contact a [Project Steering Committee]({{< relref "community/organisation/#project-steering-committee" >}}) member.
 
