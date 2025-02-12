@@ -20,7 +20,7 @@ We welcome new contributors to our community - we want you to use QGIS as a plat
 
 - Ensure that all code committed to the repository is unencumbered and compatible with the [QGIS license](https://github.com/qgis/QGIS/blob/master/COPYING), GNU Public License (GPL) Version 2 or any later version.
 
-- Not use or include any code that will cause a trademark or patent infringement. If you are unsure, ask on the [developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) or contact a [Project Steering Committee]({{< relref "community/organisation/mailinglists/#qgis-project-steering-committee-psc-list" >}}) member.
+- Not use or include any code that will cause a trademark or patent infringement. If you are unsure, ask on the [developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) or contact a [Project Steering Committee]({{< relref "community/organisation/#project-steering-committee" >}}) member.
 
 - Join the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) and contribute to discussions
 
