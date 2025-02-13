@@ -16,13 +16,13 @@ We welcome new contributors to our community - we want you to use QGIS as a plat
 
 - Abide by the [Social Contract](#social-contract).
 
-- Be familiar with the development process and the reference material available in the [Developers Guide for QGIS](https://docs.qgis.org/testing/en/docs/developers_guide/index.html), and the CODING document in the root of the QGIS Sources.
+- Be familiar with the development process and the reference material available in the [Developers Guide for QGIS](https://docs.qgis.org/testing/en/docs/developers_guide/index.html), and the [CODING document](https://github.com/qgis/QGIS/blob/master/CONTRIBUTING.md) in the root of the QGIS Sources.
 
-- Ensure that all code committed to the repository is unencumbered and compatible with the QGIS license, GNU Public License (GPL) Version 2 or any later version.
+- Ensure that all code committed to the repository is unencumbered and compatible with the [QGIS license]({{< relref "license" >}}), GNU Public License (GPL) Version 2 or any later version.
 
-- Not use or include any code that will cause a trademark or patent infringement. If you are unsure, ask on the developer mailing list or contact a Project Steering Committee member.
+- Not use or include any code that will cause a trademark or patent infringement. If you are unsure, ask on the [developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) or contact a [Project Steering Committee]({{< relref "community/organisation/#project-steering-committee" >}}) member.
 
-- Join the qgis-developer mailing list and contribute to discussions
+- Join the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) and contribute to discussions
 
 - These requirements apply to both developers desiring commit privileges and those that submit patches.
 
@@ -32,7 +32,7 @@ We welcome new contributors to our community - we want you to use QGIS as a plat
 
 - Read and agree to the [Diversity statement]({{< relref "diversity" >}}).
 
-- Agree to these requirements by sending an email to the qgis-developer mailing list stating agreement.
+- Agree to these requirements by sending an email to the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) stating agreement.
 
 ## Social Contract
 
