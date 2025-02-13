@@ -1,9 +1,9 @@
 ---
-level: "Medium"
+level: "Small"
 title: "Natural GIS LDA"
 logo: "www.naturalgis.pt.png"
-startDate: "2024-01-01"
-endDate: "2025-02-28"
+startDate: "2025-03-01"
+endDate: "2026-02-28"
 link: "http://www.naturalgis.pt"
 country: "Portugal"
 ---
