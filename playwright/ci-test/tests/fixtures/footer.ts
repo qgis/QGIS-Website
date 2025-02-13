@@ -26,7 +26,7 @@ export class Footer {
     public readonly booksLink: Locator;
     public readonly supportLink: Locator;
     public readonly qgisDashboardLink: Locator;
-    public readonly pluginsDashboardLink: Locator;
+    public readonly resourcesHubLink: Locator;
     public readonly blogLink: Locator;
     public readonly donateLink: Locator;
     public readonly membershipList: Locator;
@@ -46,7 +46,9 @@ export class Footer {
     constructor(public readonly page: Page) {
         this.banner = this.page.getByRole("contentinfo");
         this.liElement = this.page.locator("li");
-        this.projectList = this.liElement.filter({ hasText: "Project"}).first();
+        this.projectList = this.liElement
+            .filter({ hasText: "Project" })
+            .first();
         this.communityList = this.liElement.filter({ hasText: "Community" });
         this.resourcesList = this.liElement.filter({ hasText: "Resources" });
         this.fundingList = this.liElement.filter({ hasText: "Funding" });
@@ -58,17 +60,22 @@ export class Footer {
         this.caseStudiesLink = this.banner.getByRole("link", {
             name: "Case studies",
         });
-        this.pluginsLink = this.banner.getByRole("link", { name: "Plugins", exact: true });
+        this.pluginsLink = this.banner.getByRole("link", {
+            name: "Plugins",
+            exact: true,
+        });
         this.visualChangelogsLink = this.banner.getByRole("link", {
             name: "Visual Changelogs",
         });
         this.getInvolvedLink = this.banner.getByRole("link", {
             name: "Get involved",
         });
-        this.becomeCertifiedMemberLink = this.page.getByRole("link", {
-            name: "Certification Programme",
-            exact: true,
-        }).first();
+        this.becomeCertifiedMemberLink = this.page
+            .getByRole("link", {
+                name: "Certification Programme",
+                exact: true,
+            })
+            .first();
         this.qgisFoundationLink = this.banner.getByRole("link", {
             name: "QGIS Foundation",
         });
@@ -81,10 +88,12 @@ export class Footer {
         this.membersBlogsList = this.liElement.filter({
             hasText: "Members Blogs",
         });
-        this.documentationLink = this.page.getByRole("link", {
-            name: "Documentation",
-            exact: true,
-        }).first();
+        this.documentationLink = this.page
+            .getByRole("link", {
+                name: "Documentation",
+                exact: true,
+            })
+            .first();
         this.installationGuideLink = this.liElement.filter({
             hasText: "Installation guide",
         });
@@ -96,8 +105,8 @@ export class Footer {
             name: "QGIS Metrics",
             exact: true,
         });
-        this.pluginsDashboardLink = this.banner.getByRole("link", {
-            name: "Plugins Metrics",
+        this.resourcesHubLink = this.banner.getByRole("link", {
+            name: "Resources Hub",
             exact: true,
         });
         this.blogLink = this.banner.getByRole("link", {
@@ -119,8 +128,13 @@ export class Footer {
         this.visualStyleGuideLink = this.page.getByRole("link", {
             name: "Visual Style Guide",
         });
-        this.goodiesLink = this.page.getByRole("link", { name: "Goodies", exact: true });
-        this.archiveLink = this.page.getByRole("link", { name: "Archive" }).last();
+        this.goodiesLink = this.page.getByRole("link", {
+            name: "Goodies",
+            exact: true,
+        });
+        this.archiveLink = this.page
+            .getByRole("link", { name: "Archive" })
+            .last();
         this.logoImage = this.page.getByRole("img", { name: "Logo" });
         this.facebookLink = this.page.getByRole("link", { name: "" });
         this.youtubeLink = this.page.getByRole("link", { name: "" });
