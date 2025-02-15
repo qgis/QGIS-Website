@@ -338,16 +338,29 @@ On certain distributions, you may also need to install the packages `xdg-desktop
 
 See the [Flathub files here](https://github.com/flathub/org.qgis.qgis) and [report issues here](https://github.com/flathub/org.qgis.qgis/issues).
 
+### Show runtime version
+If you need the following additions, you want to know which runtime QGIS is using:
+
+```
+flatpak info org.qgis.qgis --show-runtime
+```
+
 ### Extension Support
 If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
 
 ```
 flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
 
-# NOTE: it is possible you get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
+# NOTE: you will likely get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
 flatpak install runtime/org.kde.Sdk/x86_64/VERSION
 ```
 
+### HTML rendering
+If you want to use HTML, for example in map layouts, `QtWebkit` is needed. You can install it from the flatpak command line interface
+
+```
+flatpak install app/io.qt.qtwebkit.BaseApp/x86_64/VERSION
+```
 
 ## Fedora
 
