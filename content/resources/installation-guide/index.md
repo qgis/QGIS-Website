@@ -345,7 +345,7 @@ If you need the following additions, you want to know which runtime QGIS is usin
 flatpak info org.qgis.qgis --show-runtime
 ```
 
-### Extension Support
+### Extension support
 If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
 
 ```
