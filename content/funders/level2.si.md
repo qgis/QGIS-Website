@@ -1,6 +1,6 @@
 ---
 level: "Small"
-title: "Level2"
+title: "Level2, Uroš Preložnik s.p."
 logo: "level2.si.png"
 startDate: "2024-03-01"
 endDate: "2025-02-28"
