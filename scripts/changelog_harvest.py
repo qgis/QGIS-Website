@@ -12,6 +12,10 @@ on the data at data/conf.json.
 To fetch changelogs for a specific version:
 
 $ python3 scripts/changelog_harvest.py --version 3.34 --release 21.06.2024
+
+# To trigger the images resize/transform process only for existing changelog
+$ ./scripts/changelog_harvest.py --version 3.34 --release 21.06.2024 --use_existing
+
 '''
 
 import os
@@ -26,6 +30,15 @@ from resize_image import resize_image, convert_to_webp, is_valid_image
 
 class ChangelogHarvester:
     def __init__(self, version=None, release_date=None):
+        """
+        Initialize the ChangelogHarvester object.
+        :param version: The QGIS version (e.g., '3.34')
+        :param release_date: The release date in 'dd.mm.yyyy' format
+        
+        If version and release_date are provided, they will be used.
+        Otherwise, the values from the config file will be used.
+        
+        """
         self.version = version
         self.release_date = release_date
         self.version_formatted = re.sub(r'\D', '', self.version)
