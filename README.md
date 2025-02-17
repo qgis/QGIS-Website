@@ -320,6 +320,9 @@ $ ./scripts/changelog_harvest.py
 
 # For a specific version
 $ ./scripts/changelog_harvest.py --version 3.34 --release 21.06.2024
+
+# Resizing the images for existing changelog
+$ ./scripts/changelog_harvest.py --version 3.34 --release 21.06.2024 --use_existing
 ```
 
 Example usage in md:
