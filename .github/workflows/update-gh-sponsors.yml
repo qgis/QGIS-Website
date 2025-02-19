@@ -1,5 +1,5 @@
 # This workflow updates the GitHub Sponsors list in the content/funding/donate/github-sponsors.md file.
-name: ❤️ Update the GitHub Sponsors page
+name: 💖 Update the GitHub Sponsors page and commit
 on:
   workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
   schedule:
@@ -11,10 +11,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: '🛎️ Checkout'
         uses: actions/checkout@v3
 
-      - name: Generate Sponsors 💖
+      - name: '💖 Generate Sponsors'
         uses: JamesIves/github-sponsors-readme-action@v1
         with:
           token: ${{ secrets.PAT }}
