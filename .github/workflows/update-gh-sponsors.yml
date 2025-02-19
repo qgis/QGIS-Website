@@ -1,0 +1,28 @@
+# This workflow updates the GitHub Sponsors list in the content/funding/donate/github-sponsors.md file.
+name: ❤️ Update the GitHub Sponsors page
+on:
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+  schedule:
+    - cron: '0 0,12 * * *'  # At midnight & noon UTC
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Generate Sponsors 💖
+        uses: JamesIves/github-sponsors-readme-action@v1
+        with:
+          token: ${{ secrets.PAT }}
+          file: 'content/funding/donate/github-sponsors.md'
+          organization: true
+    
+      - name: '✉️ Commit'
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'GitHub Sponsors updated and committed via a GitHub Action.'
+          repository: ./qgis-website
