@@ -77,7 +77,7 @@ export class HomePage {
         this.downloadLink = this.page
             .locator("section")
             .filter({ hasText: "Free and open source Spatial" })
-            .getByRole("link");
+            .getByRole("link").last();
         this.spatialWithoutCompromiseHeading = this.page.getByRole("heading", {
             name: "Spatial without compromise",
         });

@@ -13,11 +13,19 @@
                 
                 <div class="column is-8 is-flex hero-text has-text-left">
                     <div class="hero-container">
-                        {{ if .Params.LabelText }}
-                            <div class="label">
-                                {{ .Params.LabelText }}
-                            </div>
-                        {{ end }}
+                        <div class="is-flex" style="gap: 1rem;">
+                            {{ if .Params.LabelText }}
+                                <div class="label">
+                                    {{ .Params.LabelText }}
+                                </div>
+                            {{ end }}
+
+                            {{ if and .Params.Badge .Params.BadgeLink }}
+                                <a class="badge-image" href="{{ .Params.BadgeLink | absURL }}" target="_blank">
+                                    <img src="{{ .Params.Badge | absURL }}" />
+                                </a>
+                            {{ end }}
+                        </div>
                         <h1 class="title hero-title pr-3">
                             {{ .Params.Title }}
                         </h1>

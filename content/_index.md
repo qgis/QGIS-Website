@@ -12,6 +12,8 @@ ButtonText: "Download"
 ButtonLink: "download/"
 SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and Open Source"
+Badge: "img/badges/dpg-badge.png"
+BadgeLink: "https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/"
 ---
 
 {{< feature
