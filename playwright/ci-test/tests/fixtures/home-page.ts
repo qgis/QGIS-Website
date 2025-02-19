@@ -105,11 +105,12 @@ export class HomePage {
         this.freeAndOpenSourceHeading = this.page.getByRole("heading", {
             name: "Free and open source",
         });
-        this.freeDownloadLink = this.page.getByRole("link", {
-            name: "Free download",
-        });
-        this.youTubeVideoThumbnailOverlayImage = this.page
-            .locator('.youtube');
+        this.freeDownloadLink = this.page
+            .getByRole("link", {
+                name: "Free download",
+            })
+            .last();
+        this.youTubeVideoThumbnailOverlayImage = this.page.locator(".youtube");
         this.startUsingQGISHeading = this.page.getByRole("heading", {
             name: "Start using QGIS 🚀",
         });
@@ -137,8 +138,7 @@ export class HomePage {
         this.communityImg = this.page.locator(
             ".explore > .columns > div > figure > img",
         );
-        this.changeLogVideo = this.page
-            .locator('.youtube');
+        this.changeLogVideo = this.page.locator(".youtube");
         this.otherSupporters = this.page
             .locator(".container > div:nth-child(3)")
             .first();
