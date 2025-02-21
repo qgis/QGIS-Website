@@ -3,21 +3,6 @@
 {{ $columns := .Get "columns" | default "2" }}
 
         <div class="columns is-multiline gallery">
-
-            {{ if and (eq $showcaseType "map") (eq $quantity "100") }}
-                        <div class="column is-6 is-flex">
-                            <div class="add-map">
-                                <a href="https://github.com/qgis/QGIS-Website/issues/559" target="_blank">
-                                    <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center pb-0">
-                                        <figure>
-                                            <img src="{{ absURL "img/addsupporter.svg" }}" loading="lazy" alt="add supporter">
-                                        </figure>
-                                    </article>
-                                    <span class="add-map-title mb-3">Add your map here?</span>
-                                </a>
-                            </div>
-                        </div>
-            {{ end }}
             {{ $.Scratch.Set "counter" 0 }}
             {{ $headlessbundle := .Site.GetPage "/flickr-images" }}
             {{ range where ( $headlessbundle.Resources.ByType "page" ) "Params.source" "flickr" }}
@@ -25,10 +10,8 @@
                 {{ $count := add ($.Scratch.Get "counter") 1 }}
                 {{ $.Scratch.Set "counter" $count }}
                 {{ $size := $columns }}  
-                {{ if and (eq $showcaseType "map") (eq $quantity "100") }}
-                    {{ $size = cond (ne $count 1 2 3) "4" "6" }}
-                {{ else }}
-                    {{ $size = cond (ne $count 1 2 6 7) "4" "6" }}
+                {{ if eq $columns "gallery" }}
+                     {{ $size = cond (ne $count 1 2 6 7) "4" "6" }} 
                 {{ end }}
                 {{ if le $count $quantity }}
                 <div class="column is-{{$size}} is-flex">{{/* is flex ensures cols have the same height */}}
