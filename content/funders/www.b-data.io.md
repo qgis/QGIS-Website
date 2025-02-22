@@ -1,6 +1,6 @@
 ---
 level: "Small"
-title: "b‑data GmbH"
+title: "b-data GmbH"
 logo: "www.b-data.io.svg"
 startDate: "2024-03-01"
 endDate: "2025-02-28"
