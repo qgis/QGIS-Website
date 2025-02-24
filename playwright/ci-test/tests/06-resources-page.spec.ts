@@ -90,6 +90,7 @@ test.describe("Resources pages", () => {
         await expect(sidebar.macOSLink).toBeVisible();
         await expect(sidebar.freeBSDLink).toBeVisible();
         await expect(sidebar.openBSDLink).toBeVisible();
+        await expect(sidebar.containerImagesLink).toBeVisible();
         await expect(sidebar.qgisTestingWarningLink).toBeVisible();
         await expect(sidebar.installingFromSourceLink).toBeVisible();
         await expect(

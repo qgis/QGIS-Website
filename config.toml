@@ -505,15 +505,21 @@ sectionPagesMenu = 'main'
 
   [[menu.main]]
     parent = "Installation guide"
+    name = "Container images"
+    url = "/resources/installation-guide/#container-images"
+    weight = 230
+
+  [[menu.main]]
+    parent = "Installation guide"
     name = "QGIS Testing warning"
     url = "/resources/installation-guide/#qgis-testing-warning"
-    weight = 230
+    weight = 240
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Installing from Source"
     url = "/resources/installation-guide/#installing-from-source"
-    weight = 240
+    weight = 250
 
 [[menu.main]]
   parent = "Resources"

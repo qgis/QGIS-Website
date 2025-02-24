@@ -80,6 +80,10 @@ After installing QGIS, the first launch attempt may fail due to Apple's security
 [BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
 {{< spoiler-end >}}
 
+{{< spoiler-start id="download-container-images" title="🐳 Container Images" >}}
+[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+{{< spoiler-end >}}
+
 
 {{< spoiler-start id="download-mobile" title="📱Mobile and tablet" >}}
 {{< mobile-downloads >}}

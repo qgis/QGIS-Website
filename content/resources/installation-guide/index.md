@@ -718,6 +718,118 @@ See:
 - https://openbsd.app/?search=qgis for -stable OpenBSD
 - https://openbsd.app/?search=qgis&current=on for -current OpenBSD
 
+# Container images
+
+(GPU accelerated) Multi-arch JupyterLab QGIS container images.
+
+- Current `os/arch`s: `linux/amd64`, `linux/arm64/v8`
+  - Run on Apple M series using
+    [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+  - or using [Podman Desktop](https://podman-desktop.io) (rootless mode).
+- Base images: [Debian](https://hub.docker.com/_/debian) and
+   [Ubuntu](https://hub.docker.com/_/ubuntu)
+  - GPU accelerated images are
+    [CUDA](https://hub.docker.com/r/nvidia/cuda)-based (Ubuntu).
+- [TurboVNC](https://turbovnc.org): High-speed VNC version
+  - CUDA-based images run [VirtualGL](https://virtualgl.org) to accelerate
+    OpenGL applications.
+- Just Python – no [Conda](https://github.com/conda/conda) /
+   [Mamba](https://github.com/mamba-org/mamba)
+
+{{< rich-box-start icon="🧑‍💻" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+
+`linux/arm64/v8` QGIS container images are known to crash randomly on Apple M
+series.
+
+GPU acceleration requires an NVIDIA GPU, the NVIDIA Linux driver and the NVIDIA
+Container Toolkit.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+For further information, see
+<https://github.com/b-data/jupyterlab-qgis-docker-stack>.
+
+## QGIS stable
+
+To run the container with the latest QGIS stable version, command
+
+```shell
+docker run -it --rm \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  glcr.b-data.ch/jupyterlab/qgis/base
+```
+
+To run the GPU accelerated container with the latest QGIS stable version, command
+
+```shell
+docker run -it --rm \
+  --gpus 'device=all' \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  glcr.b-data.ch/jupyterlab/cuda/qgis/base
+```
+
+## QGIS LTR
+
+To run the container with the latest QGIS LTR version, command
+
+```shell
+docker run -it --rm \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  glcr.b-data.ch/jupyterlab/qgis/base:ltr
+```
+
+To run the GPU accelerated container with the latest QGIS LTR version, command
+
+```shell
+docker run -it --rm \
+  --gpus 'device=all' \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  glcr.b-data.ch/jupyterlab/cuda/qgis/base:ltr
+```
+
+## QGIS version
+
+To run a container with a specific QGIS version, command
+
+```shell
+docker run -it --rm \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]
+```
+
+{{< rich-box-start icon="🐳" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+
+Container images are available for QGIS versions ≥ 3.28.4.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+To run a GPU accelerated container with a specific QGIS version, command
+
+```shell
+docker run -it --rm \
+  --gpus 'device=all' \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]
+```
+
+{{< rich-box-start icon="🔥" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+
+GPU accelerated container images are available for QGIS versions ≥ 3.34.0.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
 # QGIS Testing warning
 
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
