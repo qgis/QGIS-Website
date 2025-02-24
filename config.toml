@@ -383,6 +383,12 @@ sectionPagesMenu = 'main'
   url = "/funding/donate/donors"
   weight = 270
 
+[[menu.main]]
+  parent = "Donate"
+  name = "GitHub Sponsors"
+  url = "/funding/donate/github-sponsors"
+  weight = 280
+
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
   parent = "Resources"
