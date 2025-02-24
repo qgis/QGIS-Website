@@ -31,6 +31,7 @@ export class Sidebar {
     public readonly macOSLink: Locator;
     public readonly freeBSDLink: Locator;
     public readonly openBSDLink: Locator;
+    public readonly containerImagesLink: Locator;
     public readonly qgisTestingWarningLink: Locator;
     public readonly installingFromSourceLink: Locator;
 
@@ -111,6 +112,10 @@ export class Sidebar {
 
         this.openBSDLink = this.sidebar.getByRole("link", {
             name: "OpenBSD",
+        });
+
+        this.containerImagesLink = this.sidebar.getByRole("link", {
+            name: "Container images",
         });
 
         this.qgisTestingWarningLink = this.sidebar.getByRole("link", {

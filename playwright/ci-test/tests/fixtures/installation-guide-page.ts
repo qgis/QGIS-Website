@@ -94,6 +94,7 @@ export class InstallationGuidePage {
         "QGIS LTR",
         "NixOS",
         "OpenBSD",
+        "Container images",
         "QGIS Testing warning",
         "Installing from Source",
     ];
