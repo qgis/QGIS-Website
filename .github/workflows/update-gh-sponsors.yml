@@ -8,7 +8,7 @@ permissions:
   contents: write
 
 jobs:
-  deploy:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - name: '🛎️ Checkout'
