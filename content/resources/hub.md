@@ -33,8 +33,9 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{< language-select >}}
 
-{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}}
+<!-- {{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
 
+{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases" tab4="Data protection">}}
 
 {{< tab-content-start tab="1" >}}
 **For users (QGIS {{< param "ltrversion" >}}):**
@@ -72,7 +73,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{< tab-content-end >}}
 
-
+<!--
 {{< tab-content-start tab="2" >}}
 **For users (QGIS {{< param "version" >}}):**
 
@@ -108,11 +109,11 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 {{< rich-list listLink="https://docs.qgis.org/|version|/zip"  layoutClass="inline-block" listTitle="HTML zip of the manuals" >}}
 
 {{< tab-content-end >}}
+-->
 
+{{< tab-content-start tab="2" >}}
 
-{{< tab-content-start tab="3" >}}
-
-We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "version" >}}. We call this version 'QGIS Testing' and the documentation can be found here: 
+We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "ltrversion" >}}. We call this version 'QGIS Testing' and the documentation can be found here: 
 
 **For users (QGIS testing):**
 
@@ -147,8 +148,10 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{< tab-content-end >}}
 
-{{< tab-content-start tab="4" >}}
+{{< tab-content-start tab="3" >}}
 
+
+{{< rich-list listLink="https://docs.qgis.org/3.34/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 Documentation — <lang>" >}}
 
 {{< rich-list listLink="https://docs.qgis.org/3.28/<lang>"  layoutClass="inline-block link-with-language" listTitle="QGIS 3.28 Documentation — <lang>" >}}
 
@@ -164,7 +167,7 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{< tab-content-end >}}
 
-{{< tab-content-start tab="5" >}}
+{{< tab-content-start tab="4" >}}
 
 In line with GDPR and related data protection regulations, we provide the following documentation:
 
