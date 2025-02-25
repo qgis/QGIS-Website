@@ -720,7 +720,7 @@ See:
 
 # Container images
 
-(GPU accelerated) Multi-arch JupyterLab QGIS container images.
+Experimental (GPU accelerated) multi-arch JupyterLab QGIS container images.
 
 - Current `os/arch`s: `linux/amd64`, `linux/arm64/v8`
   - Run on Apple M series using
@@ -740,8 +740,8 @@ See:
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 
-`linux/arm64/v8` QGIS container images are known to crash randomly on Apple M
-series.
+The `linux/arm64/v8` JupyterLab QGIS container images are known to crash
+randomly on Apple M series.
 
 GPU acceleration requires an NVIDIA GPU, the NVIDIA Linux driver and the NVIDIA
 Container Toolkit.
@@ -762,7 +762,8 @@ docker run -it --rm \
   glcr.b-data.ch/jupyterlab/qgis/base
 ```
 
-To run the GPU accelerated container with the latest QGIS stable version, command
+To run the GPU accelerated container with the latest QGIS stable version,
+command
 
 ```shell
 docker run -it --rm \
