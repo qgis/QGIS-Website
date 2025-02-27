@@ -1,9 +1,9 @@
 ---
-level: "Flagship"
+level: "Large"
 title: "QGIS user group Denmark"
 logo: "www.qgis.dk.png"
-startDate: "2024-03-01"
-endDate: "2025-02-28"
+startDate: "2025-03-01"
+endDate: "2026-02-28"
 link: "http://www.qgis.dk/"
 country: "Denmark"
 ---
