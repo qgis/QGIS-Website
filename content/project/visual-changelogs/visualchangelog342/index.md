@@ -283,6 +283,16 @@ This feature was funded by Consorzio della Bonifica Renana
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
+### Feature: Copy and paste widget configuration when designing forms
+
+A context menu has been added to the `Available Widgets` panel in the vector layer properties dialog, allowing users to copy & paste widget configurations between fields of the same layer, between fields from different layers in the QGIS project, or between fields from layers in different QGIS instances.
+
+![Copy and paste context menu](images/entries/copy_paste_widget_configuration.png)
+
+This feature was funded by Ville de Pully (Switzerland)
+
+This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+
 ## Processing 
 
 ### Feature: Processing metadata tools
