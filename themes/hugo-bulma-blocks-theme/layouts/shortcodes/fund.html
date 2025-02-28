@@ -20,7 +20,8 @@
 
     {{ $funders := slice }}
     {{ range where $allFunders "Params.level" "Flagship" }}
-        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+        {{ $yesterday := now.AddDate 0 0 -1 }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) $yesterday) }}
             {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
@@ -59,7 +60,8 @@
 
     {{ $funders := slice }}
     {{ range where $allFunders "Params.level" "Large" }}
-        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+        {{ $yesterday := now.AddDate 0 0 -1 }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) $yesterday) }}
             {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
@@ -99,7 +101,8 @@
 
     {{ $funders := slice }}
     {{ range where $allFunders "Params.level" "Medium" }}
-        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+        {{ $yesterday := now.AddDate 0 0 -1 }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) $yesterday) }}
             {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
@@ -140,7 +143,8 @@
 
     {{ $funders := slice }}
     {{ range where $allFunders "Params.level" "Small" }}
-        {{ if or (eq $type "changelog") (ge (time .Params.endDate) now) }}
+        {{ $yesterday := now.AddDate 0 0 -1 }}
+        {{ if or (eq $type "changelog") (ge (time .Params.endDate) $yesterday) }}
             {{ $funders = $funders | append . }}
         {{ end }}
     {{ end }}
