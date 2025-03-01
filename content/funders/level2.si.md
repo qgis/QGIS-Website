@@ -2,8 +2,8 @@
 level: "Small"
 title: "Level2, Uroš Preložnik s.p."
 logo: "level2.si.png"
-startDate: "2024-03-01"
-endDate: "2025-02-28"
+startDate: "2025-03-01"
+endDate: "2026-02-28"
 link: "https://level2.si/"
 country: "Slovenia"
 ---
