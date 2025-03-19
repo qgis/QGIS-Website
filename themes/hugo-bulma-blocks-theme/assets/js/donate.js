@@ -21,6 +21,7 @@ function updateOptions(freq) {
   visible.forEach(option => option.style.display = "inline-block");
   // check first visible element
   document.getElementById(visible[0].getAttribute('for')).checked = true;
+  updatePaymentLink();
 }
 
 let radioButtons = document.getElementById('donate-stripe').querySelectorAll('input[name="amount"]');
