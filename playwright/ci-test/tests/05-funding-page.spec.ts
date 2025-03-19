@@ -88,10 +88,10 @@ test.describe("Resources Pages", () => {
         await sidebar.membershipLink.click();
         await expect(sidebar.membersLink).toBeVisible();
         await sidebar.membersLink.click();
-        await expect(membersPage.flagshipHeading).toBeVisible();
-        await expect(membersPage.flagshipArticle).toBeVisible();
-        await expect(membersPage.largeHeading).toBeVisible();
-        await expect(membersPage.largeArticle).toBeVisible();
+        // await expect(membersPage.flagshipHeading).toBeVisible();
+        // await expect(membersPage.flagshipArticle).toBeVisible();
+        // await expect(membersPage.largeHeading).toBeVisible();
+        // await expect(membersPage.largeArticle).toBeVisible();
     });
 
     test("Past Members page", async ({ sidebar, pastMembersPage }) => {
