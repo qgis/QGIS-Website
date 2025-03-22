@@ -99,7 +99,9 @@ In addition, these styles are supported in the import and export functionalities
 
 ![](images/entries/0a6aeadd40690988d3560966b673045e568f86a7)
 
-This feature was developed by [signedav](https://github.com/signedav)
+This feature was funded by the [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+
+This feature was developed by [Dave Signer (OPENGIS.ch)](https://opengis.ch)
 
 ### Feature: Add "Linear Referencing" symbol layer type
 
@@ -566,7 +568,9 @@ Useful in combination with the Download File Algorithm to open the resulting fil
 
 ![](images/entries/2ab9a02e47e9d3dc7a0c4e1dc5f65d195244869b)
 
-This feature was developed by [signedav](https://github.com/signedav)
+This feature was funded by the [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+
+This feature was developed by [Dave Signer (OPENGIS.ch)](https://opengis.ch)
 
 ### Feature: Add processing parameter types for Area and Volume
 
