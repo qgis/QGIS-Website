@@ -406,6 +406,18 @@ Users can define a custom tolerance by adding a `custom tolerance` property to t
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 
+## Browser 
+
+### Feature: Postgreprovider hide raster overviews
+
+Ads option to PostGIS Connection to not list raster overview tables from Browser. The list of raster overviews tables is obtained from PostGIS view raster_overviews.
+
+![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd.webp)
+
+This feature was funded by  Ocean Winds.
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
+
 ## Data Providers 
 
 ### Feature: Execute SQL from layer context menu
@@ -415,6 +427,28 @@ Users can now execute SQL directly across supported layers from within the proje
 ![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2.webp)
 
 This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
+
+### Feature: Postgresql save raster style db
+
+This PR allows saving raster styles in PostGIS database.
+
+This feature was funded by  Ocean Winds.
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
+
+## Plugins
+
+### Db manager table comment multiline
+
+Makes table comments in DB Manager multiline (turning original QLineEdit to QTextEdit)). Also fixes one minor error, where the comment was not properly updated on second open of the "Table properties" window.
+
+![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae.webp)
+
+![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a.webp)
+
+This feature was funded by  Ocean Winds.
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
 ## Programmability 
 
