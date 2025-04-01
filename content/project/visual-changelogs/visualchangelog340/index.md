@@ -862,7 +862,7 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 | Fix unsafe use of QgsProject::instance from vector layer classes | Unreported | [PR #59118](https://github.com/qgis/QGIS/pull/59118) | Too risky |
 | When excluding tests, only exclude exact matches | Unreported | [PR #59116](https://github.com/qgis/QGIS/pull/59116) | N/A |
 | When layout scalebar settings are invalid, show warning message | Unreported | [PR #59088](https://github.com/qgis/QGIS/pull/59088) | N/A |
-| Mark all bool operators as explicit, associated fixes | [PR #59086](https://github.com/qgis/QGIS/pull/59086) | N/A | |
+| Many cppcheck fixes to get CI green again | Mark all bool operators as explicit, associated fixes | [PR #59086](https://github.com/qgis/QGIS/pull/59086) | N/A |
 | Fix random crashes | [#36125](https://github.com/qgis/QGIS/issues/36125) | [PR #59080](https://github.com/qgis/QGIS/pull/59080) | [PR #59087](https://github.com/qgis/QGIS/pull/59087) |
 | Optimise grid decoration rendering | Reported privately | [PR #59044](https://github.com/qgis/QGIS/pull/59044) | N/A |
 | Optimise text rendering for a common scenario | Reported privately | [PR #59037](https://github.com/qgis/QGIS/pull/59037) | N/A |
@@ -945,6 +945,7 @@ This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
 | Bad styling of scrollbars in the plugin manager dialog | Unreported | [PR #58713](https://github.com/qgis/QGIS/pull/58713) | [PR #58721](https://github.com/qgis/QGIS/pull/58721) |
 | "Refresh layer at interval" settings are not saved to QML | [#58656](https://github.com/qgis/QGIS/issues/58656) | [PR #58686](https://github.com/qgis/QGIS/pull/58686) | [PR #58714](https://github.com/qgis/QGIS/pull/58714) |
 | Unresponsive "Add record" button in non-geometry layer editing | [#55092](https://github.com/qgis/QGIS/issues/55092) | [PR #58680](https://github.com/qgis/QGIS/pull/58680) | [PR #58710](https://github.com/qgis/QGIS/pull/58710) |
+|  -- | [PR \#58747](https://github.com/qgis/QGIS/pull/58747) | -- | -- |
 | Algorithms having an output directory parameter fail to execute if output directory is set to "Save to temporary folder" | [#58345](https://github.com/qgis/QGIS/issues/58345) | [PR #58619](https://github.com/qgis/QGIS/pull/58619) | [PR #58626](https://github.com/qgis/QGIS/pull/58626) |
 | Text in message box 'Font Install Failed' is poorly legible in Night Mapping theme | [#57290](https://github.com/qgis/QGIS/issues/57290) | [PR #58618](https://github.com/qgis/QGIS/pull/58618) | [PR #58628](https://github.com/qgis/QGIS/pull/58628) |
 | Bad plugin manager's look on dark themes | Unreported | [PR #58606](https://github.com/qgis/QGIS/pull/58606) | |
