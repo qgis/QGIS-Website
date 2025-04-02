@@ -416,7 +416,7 @@ Users can now execute SQL directly across supported layers from within the proje
 
 This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
 
-### Feature: Postgresql save raster style db
+### Feature: Postgres raster provider - save raster style db
 
 This PR allows saving raster styles in PostGIS database.
 
@@ -424,7 +424,7 @@ This feature was funded by  Ocean Winds.
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
-### Feature: Postgreprovider hide raster overviews
+### Feature: PostgreSQL/PostGIS data provider - hide raster overviews
 
 Ads option to PostGIS Connection to not list raster overview tables from Browser. The list of raster overviews tables is obtained from PostGIS view raster_overviews.
 
