@@ -1,0 +1,34 @@
+{{ $showcaseType := .Get "showcase" | default "" }}
+{{ $quantity := .Get "quantity" | default "100" }}
+{{ $columns := .Get "columns" | default "2" }}
+
+
+<div class="columns is-multiline gallery">
+    {{ $.Scratch.Set "counter" 0 }}
+    {{ $headlessbundle := .Site.GetPage "/hub-maps" }}
+    {{ range where ( $headlessbundle.Resources.ByType "page" ) "Params.source" "hub" }}
+        {{ if and (eq .Params.showcase $showcaseType) (eq .Params.draft false) }}
+            {{ $count := add ($.Scratch.Get "counter") 1 }}
+            {{ $.Scratch.Set "counter" $count }}
+            {{ $size := $columns }}
+            {{ if eq $columns "gallery" }}
+                {{ $size = cond (ne $count 1 2 6 7) "4" "6" }}
+            {{ end }}
+            {{ if le $count $quantity }}
+                <div class="column is-{{ $size }} is-flex">
+                    {{/* is flex ensures cols have the same height */}}
+                    <div class="imagetile">
+                        <figure>
+                            <a href="{{ .Params.link }}">
+                                <img
+                                    src="{{ .Site.BaseURL }}hub-maps/{{ .Params.image }}"
+                                    alt="{{ .Params.title }}"
+                                />
+                            </a>
+                        </figure>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
