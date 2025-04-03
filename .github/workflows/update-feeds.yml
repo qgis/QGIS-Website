@@ -37,6 +37,11 @@ jobs:
         pipenv run pip freeze
         pipenv run ./fetch_feeds.py
 
+    - name: '⚙️ Update Hub Maps'
+      run: |
+        cd ./qgis-website
+        pipenv run ./scripts/hub_maps_harvest.py
+
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
