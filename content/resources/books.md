@@ -421,7 +421,22 @@ The book is prepared like the series “for Dummies”.
 - Author(s): Bartłomiej Iwańczak
     
 - Date: October 2016
+
+
+## Spanish
+
+### QGIS Exercise Guide – Basic, Intermediate, and Advanced Levels
+
+Three practical exercise guides in QGIS —beginner, intermediate, and advanced— designed for the management and analysis of geospatial data from the Colombian Geological Survey using free and open-source software solutions.
+
+- [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)
     
+- Author(s): Samuel Mesa, Jaime Garzón, Luis Salas 
+
+- Organization: Servicio Geológico Colombiano
+    
+- Date: December 2024
+
 
 ## Turkish
 
