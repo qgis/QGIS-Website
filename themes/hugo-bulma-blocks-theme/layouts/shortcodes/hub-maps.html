@@ -6,8 +6,9 @@
 <div class="columns is-multiline gallery">
     {{ $.Scratch.Set "counter" 0 }}
     {{ $headlessbundle := .Site.GetPage "/hub-maps" }}
-    {{ range where ( $headlessbundle.Resources.ByType "page" ) "Params.source" "hub" }}
-        {{ if and (eq .Params.showcase $showcaseType) (eq .Params.draft false) }}
+    {{ $pages := where ( $headlessbundle.Resources.ByType "page" ) "Params.source" "hub" }}
+    {{ range sort (where $pages "Params.showcase" $showcaseType) ".Params.date" "asc" }}
+        {{ if eq .Params.draft false }}
             {{ $count := add ($.Scratch.Get "counter") 1 }}
             {{ $.Scratch.Set "counter" $count }}
             {{ $size := $columns }}
