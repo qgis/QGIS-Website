@@ -26,13 +26,17 @@ class MapHarvester:
         print(f"Failed to delete {file_path}. Reason: {e}")
 
   def fetch_maps(self):
-    response = requests.get(self.api_url)
-    response.raise_for_status()
-    data = response.json()
+    next_page = self.api_url
+    while next_page:
+      response = requests.get(next_page)
+      response.raise_for_status()
+      data = response.json()
 
-    for map_item in data.get("results", []):
-      if map_item.get("is_publishable"):
-        self.process_map(map_item)
+      for map_item in data.get("results", []):
+        if map_item.get("is_publishable"):
+          self.process_map(map_item)
+
+      next_page = data.get("next")
 
   def process_map(self, map_item):
     name = map_item["name"]
