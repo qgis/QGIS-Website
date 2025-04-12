@@ -711,8 +711,8 @@ This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com
 
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 |-----------|----------------------------------|---------------------|------------------------------|
-| Drag and drop of symbology classes is buggy <br> Cannot move legend items when classifying <br> Drag and drop in Point cloud classification is confusing | [#50823](https://github.com/qgis/QGIS/issues/50823) <br> [#55267](https://github.com/qgis/QGIS/issues/55267) <br> [#60559](https://github.com/qgis/QGIS/issues/60559) | [PR #60546](https://github.com/qgis/QGIS/pull/60546) | TODO |
-| (Still) Unable to reorder subdiagrams in stacked diagrams dialog | [#60596](https://github.com/qgis/QGIS/issues/60596) | [PR #60600](https://github.com/qgis/QGIS/pull/60600) | TODO |
+| Drag and drop of symbology classes is buggy <br> Cannot move legend items when classifying <br> Drag and drop in Point cloud classification is confusing | [#50823](https://github.com/qgis/QGIS/issues/50823) <br> [#55267](https://github.com/qgis/QGIS/issues/55267) <br> [#60559](https://github.com/qgis/QGIS/issues/60559) | [PR #60546](https://github.com/qgis/QGIS/pull/60546) | [PR #60750](https://github.com/qgis/QGIS/pull/60750) |
+| (Still) Unable to reorder subdiagrams in stacked diagrams dialog | [#60596](https://github.com/qgis/QGIS/issues/60596) | [PR #60600](https://github.com/qgis/QGIS/pull/60600) | [PR #61126](https://github.com/qgis/QGIS/pull/61126) |
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
