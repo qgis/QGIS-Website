@@ -969,5 +969,14 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 
+### Feature: Bug fixes by Germán Carrillo (OPENGIS)
+
+| Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
+|----------|----------------------------------|--------------------|-------------------------------|
+| Scale dependent visibility inconsistencies on scale interval edges (symbology, labeling, diagrams) | [#58150](https://github.com/qgis/QGIS/issues/58150) <br> [#42443](https://github.com/qgis/QGIS/issues/42443) | [PR #58968](https://github.com/qgis/QGIS/pull/58968) <br> [PR #59022](https://github.com/qgis/QGIS/pull/59022) | N/A |
+
+This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+
+This feature was developed by [Germán Carrillo (OPENGIS)](https://opengis.ch/)
 
 {{< content-end >}}
