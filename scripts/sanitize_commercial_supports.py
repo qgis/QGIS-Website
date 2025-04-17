@@ -56,8 +56,7 @@ def check_url_redirects(url):
         )
         
         if response.status_code != 200:
-            print(f"Unexpected status code {response.status_code} for URL: {url}")
-            # return True
+            return True
         redirect_url = response.url
         
         # Handle relative redirects
