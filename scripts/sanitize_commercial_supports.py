@@ -66,12 +66,11 @@ def check_url_redirects(url):
         return not is_same_domain(url, redirect_url)
 
     except requests.exceptions.SSLError:
-        print(f"SSL error encountered for URL: {url}")
         return False
-    except RequestException:
-        return False
+    except RequestException as e:
+        print(f"Error checking URL {url}: {str(e)}")
+        return True
     except Exception as e:
-        print(f"Unexpected error for URL {url}: {str(e)}")
         return False
 
 def process_file(file_path):
@@ -113,7 +112,7 @@ def main():
         return
     
     for filename in sorted(os.listdir(directory)):
-        if filename.lower().endswith('.yml'):
+        if filename.lower().endswith('others.yml'):
             file_path = os.path.join(directory, filename)
             processed_files += 1
             if process_file(file_path):
