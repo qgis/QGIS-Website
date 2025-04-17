@@ -19,12 +19,58 @@
                 <div class="column is-{{ $size }} is-flex">
                     {{/* is flex ensures cols have the same height */}}
                     <div class="imagetile">
-                        <figure>
-                            <a href="{{ .Params.link }}">
+                        <figure class="map-image-container">
+                            <a
+                                href="{{ .Params.link }}"
+                                target="_blank"
+                                class="is-flex is-flex-direction-column"
+                            >
                                 <img
                                     src="{{ .Site.BaseURL }}hub-maps/{{ .Params.image }}"
                                     alt="{{ .Params.title }}"
                                 />
+
+                                <div class="tooltip">
+                                    <p
+                                        class="has-text-white has-text-weight-semibold"
+                                    >
+                                        {{ .Params.title | truncate 30 }}
+                                    </p>
+                                    <p class="has-text-white">
+                                        {{ .Params.description | truncate 100 }}
+                                    </p>
+                                    <p class="has-text-white is-size-7">
+                                        Uploaded by:
+                                        {{ .Params.creator | default "Unknown" }}
+                                        on
+                                        {{ .Params.date.Format "02-01-2006" }}
+                                    </p>
+                                    <p class="buttons mt-3">
+                                        <a
+                                            class="button is-danger"
+                                            href="{{ .Params.hub_link }}"
+                                        >
+                                            <span class="icon">
+                                                <i
+                                                    class="fas fa-info-circle"
+                                                ></i>
+                                            </span>
+                                            <span>Details</span>
+                                        </a>
+                                        <a
+                                            class="button is-success"
+                                            target="_blank"
+                                            href="{{ .Params.link }}"
+                                        >
+                                            <span class="icon">
+                                                <i
+                                                    class="fas fa-magnifying-glass-plus"
+                                                ></i>
+                                            </span>
+                                            <span>View</span>
+                                        </a>
+                                    </p>
+                                </div>
                             </a>
                         </figure>
                     </div>
