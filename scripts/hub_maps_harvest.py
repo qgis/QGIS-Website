@@ -5,6 +5,7 @@ import os
 import requests
 import shutil
 from urllib.parse import urlparse
+import json
 
 class MapHarvester:
   def __init__(self, api_url, output_dir):
@@ -40,7 +41,9 @@ class MapHarvester:
 
   def process_map(self, map_item):
     name = map_item["name"]
+    description = map_item["description"]
     creator = map_item["creator"]
+    map_id = map_item["id"]
     upload_date = map_item["upload_date"]
     link = map_item["file"]
     thumbnail_url = map_item["thumbnail"]
@@ -59,10 +62,12 @@ class MapHarvester:
     content = f"""---
 source: "hub"
 title: "{name}"
+description: {json.dumps(description.strip())}
 creator: "{creator.strip()}"
 image: "{image_name}"
 date: "{upload_date}"
 link: "{link}"
+hub_link: "https://hub.qgis.org/map-gallery/{map_id}"
 draft: "false"
 showcase: "map"
 ---
