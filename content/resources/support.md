@@ -12,6 +12,16 @@ Reviewer: Tim Sutton
 
 # Contact and Support
 
+## Project Steering Committee (PSC) 
+
+If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list and email address:
+
+{{< rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc"  layoutClass="half"listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+
+{{< rich-list listLink="mailto:qgis-psc@lists.osgeo.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="qgis-psc@lists.osgeo.org" >}}
+
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
+
 ## Before you start
 
 Before you head off to join up with your chosen support group, we would like to mention a few 
