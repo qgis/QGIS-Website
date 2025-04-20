@@ -759,7 +759,7 @@ To run the container with the latest QGIS stable version, command
 docker run -it --rm \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/qgis/base
+  quay.io/bedata/jupyterlab/qgis/base
 ```
 
 To run the GPU accelerated container with the latest QGIS stable version,
@@ -770,7 +770,7 @@ docker run -it --rm \
   --gpus 'device=all' \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/cuda/qgis/base
+  quay.io/bedata/jupyterlab/cuda/qgis/base
 ```
 
 ## QGIS LTR
@@ -781,7 +781,7 @@ To run the container with the latest QGIS LTR version, command
 docker run -it --rm \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/qgis/base:ltr
+  quay.io/bedata/jupyterlab/qgis/base:ltr
 ```
 
 To run the GPU accelerated container with the latest QGIS LTR version, command
@@ -791,7 +791,7 @@ docker run -it --rm \
   --gpus 'device=all' \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/cuda/qgis/base:ltr
+  quay.io/bedata/jupyterlab/cuda/qgis/base:ltr
 ```
 
 ## QGIS version
@@ -802,7 +802,7 @@ To run a container with a specific QGIS version, command
 docker run -it --rm \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]
+  quay.io/bedata/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]
 ```
 
 {{< rich-box-start icon="🐳" layoutClass="tips">}}
@@ -820,7 +820,7 @@ docker run -it --rm \
   --gpus 'device=all' \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]
+  quay.io/bedata/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]
 ```
 
 {{< rich-box-start icon="🔥" layoutClass="tips">}}
