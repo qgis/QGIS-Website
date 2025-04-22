@@ -29,8 +29,7 @@ col-text-2 = "Use the intuitive layout designer to produce high-quality, large-f
 col-title-3 = "Powerful reporting tools"
 col-text-3 = "Create atlasses and reports with maps and tabular content."
 img = "img/main-create.webp"
-order = 1
->}}
+order = 1>}}
 ```
 
 This will generate a feature section with the specified title, description, additional columns of information, and an accompanying image.
