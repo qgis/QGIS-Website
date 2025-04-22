@@ -21,8 +21,7 @@ submenus: documentation
     link-text="Desktop User Guide"
     link-class="is-success"
     sub-block-side="left"
-    class="is-primary"
->}}{{< /block >}}
+    class="is-primary">}}{{< /block >}}
 
 {{< block
     title="server guide."
@@ -31,8 +30,7 @@ submenus: documentation
     link="https://docs.qgis.org/3.22/en/docs/server_manual/index.html"
     link-text="Server Guide"
     sub-block-side="left"
-    class="is-info"
->}}{{< /block >}}
+    class="is-info">}}{{< /block >}}
 
 {{< block
     title="qgis training manual."
@@ -41,8 +39,7 @@ submenus: documentation
     link="https://docs.qgis.org/3.22/en/docs/training_manual/index.html"
     link-text="Training Manual"
     sub-block-side="left"
-    class="is-success"
->}}{{< /block >}}
+    class="is-success">}}{{< /block >}}
 
 {{< block
     title="a gentle introduction to gis."
@@ -51,8 +48,7 @@ submenus: documentation
     link="https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/index.html"
     link-text="A Gentle Introduction in GIS"
     sub-block-side="left"
-    class="is-warning"
->}}{{< /block >}}
+    class="is-warning">}}{{< /block >}}
 
 {{< block
     title="Data protection docs."
@@ -61,8 +57,7 @@ submenus: documentation
     link="https://docs.qgis.org/3.22/en/docs/user_manual/appendices/qgis_desktop_network_connections.html"
     link-text="QGIS Application Network Connections"
     sub-block-side="left"
-    class="is-danger"
->}}{{< /block >}}
+    class="is-danger">}}{{< /block >}}
 
 {{< block
     title="For documentation writers."
@@ -72,8 +67,7 @@ submenus: documentation
     link-text="Documentation Guidelines"
     link-class="is-success"
     sub-block-side="left"
-    class="is-primary"
->}}{{< /block >}}
+    class="is-primary">}}{{< /block >}}
 
 {{< block
     title="For python developers."
@@ -83,5 +77,4 @@ submenus: documentation
     link-text="PyQGIS Cookbook"
     link-class="is-success"
     sub-block-side="left"
-    class="is-info"
->}}{{< /block >}}
+    class="is-info">}}{{< /block >}}
