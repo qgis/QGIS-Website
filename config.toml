@@ -729,3 +729,30 @@ sectionPagesMenu = 'main'
   isPlainText = true
   mediaType = "application/json"
 
+[i18n]
+  package = "qgis-hugo-docs-1"
+  genToOtherDir = true
+  srcDir = "content"
+  genDir = "content-trans"
+  excludedKeys = "heroSize heroImage HeroImage heroLogo Badge BadgeLink ButtonLink sidebar submenus draft showcase source Reviewer reviewer Reviewed reviewed"
+  [languages]
+    [languages.en]
+      languageCode = "en"
+      contentDir = "content"
+      title = "QGIS"
+      weight = 2
+    [languages.ru]
+      languageCode = "ru"
+      contentDir = "content-trans/ru"
+      title = "QGIS"
+      weight = 2
+  [i18n.shortcodes]
+    [i18n.shortcodes.params]
+      feature = ["title", "text"]
+      block = ["title", "subtitle"]
+
+  [i18n.content]
+    [i18n.content.default]
+      globs = ["content/community/organisation/guidelines.md"]
+
+

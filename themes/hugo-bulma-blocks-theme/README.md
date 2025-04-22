@@ -508,8 +508,7 @@ Blocks are defined in ```layouts/shortcodes/block```. To use a block, simply add
     title="Block with more content"
     subtitle="Unleash your creativity and experience first 
     class cartographic design capabiliities and design great
-    maps for digital and print. "
->}}
+    maps for digital and print. ">}}
 ```
 
 If you want to include markdown content inside the block you can do it as inner content like this:
@@ -519,8 +518,7 @@ If you want to include markdown content inside the block you can do it as inner 
     title="Block with more content"
     subtitle="Unleash your creativity and experience first 
     class cartographic design capabilities and design great 
-    maps for digital and print. "
->}}
+    maps for digital and print. ">}}
 More details khdkjhksj dhjfhs dkj hsfdjkh fsd
 {{< /block >}}
 ```

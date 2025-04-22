@@ -2,7 +2,6 @@
 type: "page"
 title: "Spatial without Compromise"
 subtitle: "Spatial visualization and decision-making tools for everyone"
-
 draft: false
 heroSize: "is-medium"
 heroLogo: "img/logosign.svg"
@@ -26,8 +25,8 @@ col-text-2 = "Use the intuitive layout designer to produce high-quality, large-f
 col-title-3 = "Powerful reporting tools"
 col-text-3 = "Create atlases and reports including maps and tabular content."
 img = "img/main-create.webp"
-order = 1
->}}
+order = 1 >}}
+
 {{< feature
 title = "Edit layers"
 text = "Harness the unmatched capabilities of powerful digitizing and construction tools."
@@ -38,8 +37,8 @@ col-text-2 = "Build geometries with curves, CAD-like tools, and an extensive ran
 col-title-3 = "Highly customizable forms"
 col-text-3 = "Create user-friendly forms using our form designer."
 img = "img/main-edit.webp"
-order = 2
->}}
+order = 2 >}}
+
 {{< feature
 title = "Process and analyze"
 text = "Benefit from state-of-the-art analysis tools seamlessly integrated into our toolbox."
@@ -50,8 +49,8 @@ col-text-2 = "Visually combine analysis tools to create easily reproducible work
 col-title-3 = "Extensible analysis environment"
 col-text-3 = "Explore a diverse ecosystem of third-party analysis tools for expanded capabilities."
 img = "img/main-analyze.webp"
-order = 3
->}}
+order = 3 >}}
+
 {{< feature
 title = "Share maps"
 text = "QGIS provides an equal-access platform for everyone to share their results."
@@ -62,5 +61,4 @@ col-text-2 = "Amplify your impact by exploring, utilizing, and creating web serv
 col-title-3 = "Publish your work"
 col-text-3 = "Extend QGIS to the cloud and mobile devices for wider accessibility."
 img = "img/main-share.webp"
-order = 4
->}}
+order = 4 >}}

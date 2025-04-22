@@ -20,7 +20,6 @@ Our software is available on all popular operating systems. Select your operatin
 {{< button-bar 
     "fa-brands fa-windows mr-1:Windows:download/windows/"
     "fa-brands fa-apple mr-1:macOS:download/macos/"
-    "fa-brands fa-linux mr-1:Linux:download/linux/"
->}}
+    "fa-brands fa-linux mr-1:Linux:download/linux/">}}
 
 {{< content-end >}}
