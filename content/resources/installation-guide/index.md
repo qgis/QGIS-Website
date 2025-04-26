@@ -809,7 +809,10 @@ docker run -it --rm \
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 
-Container images are available for QGIS versions ≥ 3.28.4.
+Container images on Quay are available for QGIS versions ≥ 3.40.4.
+
+For QGIS versions 3.28.4 to 3.40.3 use
+`glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]`.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
@@ -827,7 +830,10 @@ docker run -it --rm \
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 
-GPU accelerated container images are available for QGIS versions ≥ 3.34.0.
+GPU accelerated container images on Quay are available for QGIS versions ≥ 3.40.4.
+
+For QGIS versions 3.34.0 to 3.40.3 use
+`glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]`.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
