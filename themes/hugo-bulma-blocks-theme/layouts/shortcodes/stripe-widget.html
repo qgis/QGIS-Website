@@ -4,9 +4,9 @@
             id="s_once"
             class="mr-4 is-active"
             onclick="updateStripeOptions('s_once')"
-            >One-Time</a
+            >{{ i18n "oneTime" }}</a
         >
-        <a id="s_monthly" onclick="updateStripeOptions('s_monthly')">Monthly</a>
+        <a id="s_monthly" onclick="updateStripeOptions('s_monthly')">{{ i18n "monthly" }}</a>
     </p>
     <hr />
     <form id="donate-stripe">
@@ -28,42 +28,34 @@
         class="button is-primary1"
         rel="noopener noreferrer"
         {{/* href to be set by js depending on selected donation */}}
-        >Donate
+        >{{ i18n "donate" }}
     </a>
 
     <div class="is-flex is-justify-content-space-between stripe-widget-footer">
-        {{ if .Get "otherMethods" }}
-            <a href="{{ absURL "funding/donate/" }}"
-                >Other methods, more info</a
-            >
-        {{ end }}
-        <select
-            id="stripe-currency"
-            class="currency"
-            onchange="updateStripeOptions()"
-        >
-            <option value="eur">EUR</option>
-            <option value="usd">USD</option>
-        </select>
+      {{ if .Get "otherMethods" }}
+          <a href="{{ absURL "funding/donate/" }}">{{ i18n "otherMethodsMoreInfo" }}</a>
+      {{ end }}
+      <select id="stripe-currency" class="currency" onchange="updateStripeOptions()">
+        <option value="eur">EUR</option>
+        <option value="usd">USD</option>
+      </select>
     </div>
     {{ if .Get "skipToDownload" }}
-        <hr />
-        <button
-            class="button is-primary6 is-fullwidth is-outlined"
-            id="hide-donate-prompt"
-            onclick="hidePrompt()"
-        >
-            Skip it and go to download
+        <hr>
+        <button 
+            class="button is-primary6 is-fullwidth is-outlined" 
+            id="hide-donate-prompt" 
+            onclick="hidePrompt()">
+            {{ i18n "skipToDownload" }}
         </button>
     {{ end }}
     {{ if .Get "alreadyDonated" }}
-        <hr />
-        <button
-            class="button is-primary6 is-fullwidth is-outlined"
-            id="hide-donate-prompt"
-            onclick="hidePrompt()"
-        >
-            Already donated? Hide this prompt
+        <hr>
+        <button 
+            class="button is-primary6 is-fullwidth is-outlined" 
+            id="hide-donate-prompt" 
+            onclick="hidePrompt()">
+            {{ i18n "alreadyDonated" }}
         </button>
     {{ end }}
 </div>

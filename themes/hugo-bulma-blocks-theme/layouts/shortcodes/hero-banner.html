@@ -14,7 +14,7 @@
 {{ range first 1 ((where site.RegularPages "Section" "news")) }}
 <div class="box cta">
     <p class="has-text-centered">
-        <span class="tag">News</span> {{ .Title }}
+        <span class="tag">{{ i18n "news" }}</span> {{ .Title }}
     </p>
 </div>
 {{ end }}

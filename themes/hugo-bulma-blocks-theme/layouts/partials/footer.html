@@ -88,7 +88,7 @@
             </div>
             <div class="column is-2-desktop">
                 <a href="{{ absURL "download" }}">
-                    <button class="button is-primary1 is-size-5">Download</button>
+                    <button class="button is-primary1 is-size-5">{{ i18n "download" }}</button>
                 </a>
             </div>
         </div>
@@ -113,24 +113,24 @@
             </div>
         </div>
         <div class="columns is-desktop privacy-links">
-            <a href="{{ absURL "diversity" }}" class="column is-narrow is-offset-2-desktop">Diversity statement</a>
-            <a href="{{ absURL "conduct" }}" class="column is-narrow">Code of conduct</a>
-            <a href="{{ absURL "environmental-policy" }}" class="column is-narrow">Environmental policy</a>
-            <a href="{{ absURL "license" }}" class="column is-narrow">License</a>
-            <a href="{{ absURL "styleguide" }}" class="column is-narrow">Visual Style Guide</a>   
-            <a href="{{ absURL "goodies" }}" class="column is-narrow">Goodies</a>   
-            <a href="{{ absURL "archive" }}" class="column is-narrow">Archive</a>   
+            <a href="{{ absURL "diversity" }}" class="column is-narrow is-offset-2-desktop">{{ i18n "diversityStatement" }}</a>
+            <a href="{{ absURL "conduct" }}" class="column is-narrow">{{ i18n "codeOfConduct" }}</a>
+            <a href="{{ absURL "environmental-policy" }}" class="column is-narrow">{{ i18n "environmentalPolicy" }}</a>
+            <a href="{{ absURL "license" }}" class="column is-narrow">{{ i18n "license" }}</a>
+            <a href="{{ absURL "styleguide" }}" class="column is-narrow">{{ i18n "visualStyleGuide" }}</a>   
+            <a href="{{ absURL "goodies" }}" class="column is-narrow">{{ i18n "goodies" }}</a>   
+            <a href="{{ absURL "archive" }}" class="column is-narrow">{{ i18n "archive" }}</a>   
 
         </div>
         <div class="columns is-desktop issue-report-link is-justify-content-center">
-            <a href="https://github.com/qgis/QGIS-Website/issues" class="column is-narrow p-0 is-size-6" target="_blank">Problems with this website? Report an issue here 🐙</a> 
+            <a href="https://github.com/qgis/QGIS-Website/issues" class="column is-narrow p-0 is-size-6" target="_blank">{{ i18n "reportIssue" }}</a> 
               
         </div>
     </div>
     <div class="commit-link is-size-7">
         {{ $commit := readFile (print .Site.Params.commitFile)}}
         <p>
-            Commit revision: <a href="https://github.com/qgis/QGIS-Website/commit/{{ $commit }}" target="_blank">{{ $commit }}</a>
+            {{ i18n "commitRevision" }}: <a href="https://github.com/qgis/QGIS-Website/commit/{{ $commit }}" target="_blank">{{ $commit }}</a>
         </p>
     </div>
 </footer>
