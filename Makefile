@@ -73,4 +73,32 @@ schedule: clearschedule assets/csv/schedule.csv scripts/schedule.ics data/conf.j
 	git pull --autostash --rebase
 	git commit -a -m "Update for $(shell jq -r '.release' data/conf.json)/$(shell jq -r '.ltrrelease' data/conf.json) point releases"
 
-.PHONY: schedule
+.PHONY: schedule txpush txpull mktxtemp venv messages-extract messages-compile messages-generate
+
+TEMP:=tx-temp
+
+venv:
+	if [ ! -d ".venv" ]; then \
+		python3 -m venv .venv; \
+	fi
+
+mktxtemp:
+	mkdir -p $(TEMP)
+
+txpush: mktxtemp
+	rm -rf $(TEMP)
+	python3 scripts/tx_convert_push.py i18n/en.yml $(TEMP)/en.yml --lang en
+	./tx push -s
+
+txpull: mktxtemp
+	./tx pull -a
+	python3 scripts/tx_convert_pull.py $(TEMP) i18n
+
+messages-extract:
+	hugo-gettext extract translations/en/
+
+messages-compile:
+	hugo-gettext compile translations/
+
+messages-generate:
+	hugo-gettext generate

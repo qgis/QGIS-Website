@@ -734,29 +734,352 @@ sectionPagesMenu = 'main'
   mediaType = "application/json"
 
 [i18n]
-  package = "qgis-hugo-docs-1"
+  package = "messages"
   genToOtherDir = true
   srcDir = "content"
-  genDir = "content-trans"
+  genDir = "content-translated"
   excludedKeys = "heroSize heroImage HeroImage heroLogo Badge BadgeLink ButtonLink sidebar submenus draft showcase source Reviewer reviewer Reviewed reviewed"
-  [languages]
-    [languages.en]
-      languageCode = "en"
-      contentDir = "content"
-      title = "QGIS"
-      weight = 2
-    [languages.ru]
-      languageCode = "ru"
-      contentDir = "content-trans/ru"
-      title = "QGIS"
-      weight = 2
   [i18n.shortcodes]
     [i18n.shortcodes.params]
-      feature = ["title", "text"]
+      feature = ["title", "text", "col-title-1", "col-text-1", "col-title-2", "col-text-2", "col-title-3", "col-text-3"]
       block = ["title", "subtitle"]
 
   [i18n.content]
     [i18n.content.default]
-      globs = ["content/community/organisation/guidelines.md"]
+      globs = ["content/_index.md"]
+  [languages]
+    [languages.en]
+    languageCode = "en"
+    contentDir = "content"
+    title = "QGIS"
+    weight = 1
+
+    [languages.sk]
+    languageCode = "sk"
+    weight = 2
+    contentDir = "content-translated/sk"
+
+    [languages.zh-Hans]
+    languageCode = "zh-Hans"
+    weight = 2
+    contentDir = "content-translated/zh-Hans"
+
+    [languages.zh-Hant]
+    languageCode = "zh-Hant"
+    weight = 2
+    contentDir = "content-translated/zh-Hant"
+
+    [languages.pl]
+    languageCode = "pl"
+    weight = 2
+    contentDir = "content-translated/pl"
+
+    [languages.sq]
+    languageCode = "sq"
+    weight = 2
+    contentDir = "content-translated/sq"
+
+    [languages.sv]
+    languageCode = "sv"
+    weight = 2
+    contentDir = "content-translated/sv"
+
+    [languages.mr]
+    languageCode = "mr"
+    weight = 2
+    contentDir = "content-translated/mr"
+
+    [languages.pt_BR]
+    languageCode = "pt_BR"
+    weight = 2
+    contentDir = "content-translated/pt_BR"
+
+    [languages.ja]
+    languageCode = "ja"
+    weight = 2
+    contentDir = "content-translated/ja"
+
+    [languages.el]
+    languageCode = "el"
+    weight = 2
+    contentDir = "content-translated/el"
+
+    [languages.lv]
+    languageCode = "lv"
+    weight = 2
+    contentDir = "content-translated/lv"
+
+    [languages.it]
+    languageCode = "it"
+    weight = 2
+    contentDir = "content-translated/it"
+
+    [languages.ca]
+    languageCode = "ca"
+    weight = 2
+    contentDir = "content-translated/ca"
+
+    [languages.cs]
+    languageCode = "cs"
+    weight = 2
+    contentDir = "content-translated/cs"
+
+    [languages.pt_PT]
+    languageCode = "pt_PT"
+    weight = 2
+    contentDir = "content-translated/pt_PT"
+
+    [languages.ro]
+    languageCode = "ro"
+    weight = 2
+    contentDir = "content-translated/ro"
+
+    [languages.ru]
+    languageCode = "ru"
+    contentDir = "content-translated/ru"
+    weight = 2
+
+    [languages.nqo]
+    languageCode = "nqo"
+    weight = 2
+    contentDir = "content-translated/nqo"
+
+    [languages.km_KH]
+    languageCode = "km_KH"
+    weight = 2
+    contentDir = "content-translated/km_KH"
+
+    [languages.uk]
+    languageCode = "uk"
+    weight = 2
+    contentDir = "content-translated/uk"
+
+    [languages.ar]
+    languageCode = "ar"
+    weight = 2
+    contentDir = "content-translated/ar"
+
+    [languages.gl]
+    languageCode = "gl"
+    weight = 2
+    contentDir = "content-translated/gl"
+
+    [languages.hu]
+    languageCode = "hu"
+    weight = 2
+    contentDir = "content-translated/hu"
+
+    [languages.nl]
+    languageCode = "nl"
+    weight = 2
+    contentDir = "content-translated/nl"
+
+    [languages.bg]
+    languageCode = "bg"
+    weight = 2
+    contentDir = "content-translated/bg"
+
+    [languages.bn]
+    languageCode = "bn"
+    weight = 2
+    contentDir = "content-translated/bn"
+
+    [languages.af]
+    languageCode = "af"
+    weight = 2
+    contentDir = "content-translated/af"
+
+    [languages.nb]
+    languageCode = "nb"
+    weight = 2
+    contentDir = "content-translated/nb"
+
+    [languages.de]
+    languageCode = "de"
+    weight = 2
+    contentDir = "content-translated/de"
+
+    [languages.az]
+    languageCode = "az"
+    weight = 2
+    contentDir = "content-translated/az"
+
+    [languages.ko]
+    languageCode = "ko"
+    weight = 2
+    contentDir = "content-translated/ko"
+
+    [languages.fi]
+    languageCode = "fi"
+    weight = 2
+    contentDir = "content-translated/fi"
+
+    [languages.id]
+    languageCode = "id"
+    weight = 2
+    contentDir = "content-translated/id"
+
+    [languages.fr]
+    languageCode = "fr"
+    weight = 2
+    contentDir = "content-translated/fr"
+
+    [languages.es]
+    languageCode = "es"
+    weight = 2
+    contentDir = "content-translated/es"
+
+    [languages.et]
+    languageCode = "et"
+    weight = 2
+    contentDir = "content-translated/et"
+
+    [languages.fa]
+    languageCode = "fa"
+    weight = 2
+    contentDir = "content-translated/fa"
+
+    [languages.lt]
+    languageCode = "lt"
+    weight = 2
+    contentDir = "content-translated/lt"
+
+    [languages.eu]
+    languageCode = "eu"
+    weight = 2
+    contentDir = "content-translated/eu"
+
+    [languages.tr]
+    languageCode = "tr"
+    weight = 2
+    contentDir = "content-translated/tr"
+
+    [languages.ur]
+    languageCode = "ur"
+    weight = 2
+    contentDir = "content-translated/ur"
+
+    [languages.ug]
+    languageCode = "ug"
+    weight = 2
+    contentDir = "content-translated/ug"
+
+    [languages.ta]
+    languageCode = "ta"
+    weight = 2
+    contentDir = "content-translated/ta"
+
+    [languages.tl]
+    languageCode = "tl"
+    weight = 2
+    contentDir = "content-translated/tl"
+
+    [languages.te]
+    languageCode = "te"
+    weight = 2
+    contentDir = "content-translated/te"
+
+    [languages.sw]
+    languageCode = "sw"
+    weight = 2
+    contentDir = "content-translated/sw"
+
+    [languages.sr]
+    languageCode = "sr"
+    weight = 2
+    contentDir = "content-translated/sr"
+
+    [languages.si]
+    languageCode = "si"
+    weight = 2
+    contentDir = "content-translated/si"
+
+    [languages.pa]
+    languageCode = "pa"
+    weight = 2
+    contentDir = "content-translated/pa"
+
+    [languages.ne]
+    languageCode = "ne"
+    weight = 2
+    contentDir = "content-translated/ne"
+
+    [languages.my]
+    languageCode = "my"
+    weight = 2
+    contentDir = "content-translated/my"
+
+    [languages.ms]
+    languageCode = "ms"
+    weight = 2
+    contentDir = "content-translated/ms"
+
+    [languages.mn]
+    languageCode = "mn"
+    weight = 2
+    contentDir = "content-translated/mn"
+
+    [languages.mk]
+    languageCode = "mk"
+    weight = 2
+    contentDir = "content-translated/mk"
+
+    [languages.ku]
+    languageCode = "ku"
+    weight = 2
+    contentDir = "content-translated/ku"
+
+    [languages.kab]
+    languageCode = "kab"
+    weight = 2
+    contentDir = "content-translated/kab"
+
+    [languages.ka]
+    languageCode = "ka"
+    weight = 2
+    contentDir = "content-translated/ka"
+
+    [languages.jv]
+    languageCode = "jv"
+    weight = 2
+    contentDir = "content-translated/jv"
+
+    [languages.hr]
+    languageCode = "hr"
+    weight = 2
+    contentDir = "content-translated/hr"
+
+    [languages.hi]
+    languageCode = "hi"
+    weight = 2
+    contentDir = "content-translated/hi"
+
+    [languages.he]
+    languageCode = "he"
+    weight = 2
+    contentDir = "content-translated/he"
+
+    [languages.gu]
+    languageCode = "gu"
+    weight = 2
+    contentDir = "content-translated/gu"
+
+    [languages.fil]
+    languageCode = "fil"
+    weight = 2
+    contentDir = "content-translated/fil"
+
+    [languages.da]
+    languageCode = "da"
+    weight = 2
+    contentDir = "content-translated/da"
+
+    [languages.ba]
+    languageCode = "ba"
+    weight = 2
+    contentDir = "content-translated/ba"
+
+
+
 
 
