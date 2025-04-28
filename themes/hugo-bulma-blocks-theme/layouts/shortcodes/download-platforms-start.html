@@ -1,29 +1,19 @@
 <div id="download-section" style="display: none">
     {{ with index .Site.Data.conf }}
-        <h1>Download QGIS for your platform</h1>
+        <h1>{{ i18n "downloadQGISForYourPlatform" }}</h1>
         <p>
-            The current version is QGIS {{ .release }} '{{ .codename }}' and was
-            released on {{ .releasedate }}.
+            {{ printf (i18n "currentVersion") .release .codename .releasedate }}
         </p>
         <p>
-            The long-term builds currently provide
-            {{ .ltrrelease }}
-            '{{ .ltrcodename }}'. Long Term Release (LTR) builds are intended
-            for those who value stability over having the latest features. If
-            you are unsure which version is best for you, download the LTR.
+            {{ printf (i18n "longTermBuilds") .ltrrelease .ltrcodename }}
         </p>
-        <p>QGIS is available on Windows, macOS, Linux, Android and iOS.</p>
+        <p>{{ i18n "availablePlatforms" }}</p>
         {{ if eq .infeaturefreeze true }}
             <p>
-                We are currently in feature freeze preceeding the release of
-                QGIS {{ .nextversion }}.
-                <strong>Please consider testing the prereleases</strong>. See
-                <a href="{{ absURL "resources/roadmap#qgis-prereleases" }}"
-                    >road map</a
-                >.
+                {{ printf (i18n "featureFreeze") .nextversion }}
             </p>
         {{ end }}
     {{ end }}
     <div id="primary-os"></div>
 
-    <h2>Other platforms</h2>
+    <h2>{{ i18n "otherPlatforms" }}</h2>
