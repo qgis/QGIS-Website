@@ -10,8 +10,8 @@
             {{ partial "sidebar" . }}
             <div class="content column is-9"> 
                 <img src="{{ absURL "img/404.png" }}">
-                <h1 class="title">Whoops! Page not found</h1>
-                <h3 class="title">Go to QGIS <a href="{{ "" | relURL }}">Homepage</a></h3>
+                <h1 class="title">{{ i18n "pageNotFound" }}</h1>
+                <h3 class="title">{{ i18n "goToQgis" }} <a href="{{ "" | relURL }}">{{ i18n "homepage" }}</a></h3>
             </div>
         </div>
     </div>

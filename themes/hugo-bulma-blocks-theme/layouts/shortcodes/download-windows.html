@@ -1,62 +1,58 @@
 {{ with index .Site.Data.conf }}
 
-<h2 class="title is-size-5">Online (OSGeo4W) installer:</h2>
+<h2 class="title is-size-5">{{ i18n "onlineInstaller" }}:</h2>
 
 <a
 	class="button is-primary1 mb-3"
 	href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
     onclick="thanks(this)"
     download
->OSGeo4W Network Installer</a>
+>{{ i18n "osgeo4wNetworkInstaller" }}</a>
 <br>
 <p>
-    This installer is the best way to keep QGIS up to date, 
-    run multiple versions on your system and keep the load 
-    on our download servers to a minimum. 
+    {{ i18n "onlineInstallerDescription" }}
     <a href="{{ absURL "resources/installation-guide#online-osgeo4w-installer" }}">
-        Learn more.
+        {{ i18n "learnMore" }}
     </a>
 </p>
 
-<h2 class="title is-size-5">Offline (Standalone) installers:</h2>
+<h2 class="title is-size-5">{{ i18n "offlineInstallers" }}:</h2>
 <a
 	class="button is-primary1 mb-3"
 	href="{{ .ltr_msi }}"
     onclick="thanks(this)"
     download
->Long Term Version for Windows ({{ .ltrversion }} {{ .ltrnote }})</a>
+>{{ printf (i18n "longTermVersionForWindows") .ltrversion .ltrnote }}</a>
 
 <a
 	class="button is-primary1 is-outlined mb-3"
 	href="{{ .lr_msi }}"
     onclick="thanks(this)"
     download
->Latest Version for Windows ({{ .version }})</a>
+>{{ printf (i18n "latestVersionForWindows") .version }}</a>
 
 <a
 	class="button is-primary1 is-outlined mb-3"
 	href="{{ .lr_qt6_msi }}"
     onclick="thanks(this)"
     download
->Latest Version for Windows ({{ .version }}) with Qt6 (experimental)</a>
+>{{ printf (i18n "latestVersionForWindowsQt6") .version }}</a>
 
 <a
 	class="button is-primary1 is-outlined mb-3"
 	href="{{ .ltr_qt6_msi }}"
     onclick="thanks(this)"
     download
->Long Term Version for Windows ({{ .ltrversion }}) with Qt6 (experimental)</a>
+>{{ printf (i18n "longTermVersionForWindowsQt6") .ltrversion }}</a>
 
 <p>
-    These installers are for users who wish 
-    to easily share the download e.g. putting 
-    it on a USB key or network share.
+    {{ i18n "offlineInstallersDescription" }}
     <a href="{{ absURL "resources/installation-guide#offline-standalone-installers" }}">
-        Learn more.
+        {{ i18n "learnMore" }}
     </a>
 </p>
 
 <p>
-    ⚠️ Since QGIS 3.20 we only ship 64-bit Windows executables.
+    {{ i18n "windows64BitOnly" }}
 </p>
 {{ end }}
