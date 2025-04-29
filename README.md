@@ -209,6 +209,187 @@ Flickr parsing creates new files and md pages with param `draft: true`. It can b
 
 This script is run nightly as a github action (see .github/workflows/update-feeds.yml).
 
+## 🌐 Internationalization (i18n) and Translation Workflow
+
+The QGIS Website project is fully internationalized using [hugo-gettext](https://github.com/PhuNH/hugo-gettext) and [Transifex](https://www.transifex.com/). The translation workflow is fully integrated and automated via CI/CD.
+
+### Folder Structure
+
+- **Original content:**
+  - `content/` — English (source language) content.
+- **Translated content:**
+  - `content-translated/de/`, `content-translated/es/`, etc. — Translated content for each language, mirroring the structure of `content/`.
+- **Translation files:**
+  - `translations/en/messages.pot` — Extracted source strings (template).
+  - `translations/de/messages.po`, `translations/es/messages.po`, etc. — Translations for each language.
+- **YAML translations:**
+  - `i18n/en.yml` — Source strings for HTML templates.
+  - `i18n/de.yml`, `i18n/es.yml`, etc. — Translations for HTML templates.
+  - `tx-temp/` — Temporary directory for Transifex YAML files.
+
+### Hugo and hugo-gettext Configuration
+
+The configuration for hugo-gettext is set in `config.toml`:
+
+```toml
+[i18n]
+package = "messages"
+srcDir = "content"
+genDir = "content-translated"
+excludedKeys = "heroSize heroImage ..."
+[i18n.content]
+  [i18n.content.default]
+    globs = ["content/**/*.md"]
+[languages]
+  [languages.en]
+    contentDir = "content"
+  [languages.de]
+    contentDir = "content-translated/de"
+  [languages.es]
+    contentDir = "content-translated/es"
+```
+
+### Translation Workflow
+
+The translation process is fully automated and consists of the following steps:
+
+1. **String extraction:**
+   - On each update, `hugo-gettext extract translations/en/` is run to extract all translatable strings from the source content. The output is saved to `translations/en/messages.pot`.
+2. **Transifex integration:**
+   - The extracted `.pot` file is automatically pushed to Transifex using the Transifex CLI (`tx push -s`).
+   - Translators work on translations in Transifex.
+   - Translated `.po` files are regularly pulled from Transifex (`tx pull -a`).
+3. **Compilation and generation:**
+   - All `.po` files are compiled to `.mo` files with `hugo-gettext compile translations`.
+   - Translated content is generated for each language using `hugo-gettext generate`, producing the localized content in `content-translated/<lang>/`.
+4. **CI/CD:**
+   - All these steps are run automatically in the CI/CD pipeline (see `.github/workflows/`).
+
+### Transifex Configuration
+
+The project includes a preconfigured `.tx/config` with two resources:
+
+```ini
+[main]
+host = https://app.transifex.com
+
+[o:qgis:p:qgis-website:r:qgis-hugo-docs-md]
+file_filter = translations/<lang>/messages.po
+source_file = translations/en/messages.pot
+source_lang = en
+type = PO
+resource_name = do-not-translate-hugo-docs
+
+[o:qgis:p:qgis-website:r:qgis-hugo-docs-yml]
+file_filter = tx-temp/<lang>.yml
+source_file = tx-temp/en.yml
+source_lang = en
+type = YML
+resource_name = do-not-translate-hugo-docs-yml
+```
+
+The configuration defines two resources:
+1. `qgis-hugo-docs-md` - for markdown content translations (PO files)
+2. `qgis-hugo-docs-yml` - for YAML translations used in HTML templates
+
+The Transifex API token is stored in the CI/CD environment and in `~/.transifexrc` for local development.
+
+### Translating Shortcode Parameters
+
+When using shortcodes in your content, you need to specify which parameters should be translated. This is done by adding the parameters to the `i18n.shortcodes.params` section in `config.toml`.
+
+For example, if you have a shortcode `my-shortcode` with parameters `title` and `description` that need to be translated, you would add them to the config like this:
+
+```toml
+[i18n.shortcodes.params]
+  my-shortcode = ["title", "description"]
+```
+
+When you add a new shortcode or modify an existing one, make sure to add any translatable parameters to this configuration. This ensures that the parameters will be included in the translation files when you run `hugo i18n --gen`.
+
+### YAML Translations for HTML Templates
+
+For translations used in HTML templates (not in markdown files), we use a different approach:
+
+1. **Translation Keys in HTML:**
+   - Use the `{{ i18n "key" }}` function in HTML templates to reference translatable strings
+   - Example: `{{ i18n "exploreQgis" }}` in `themes/hugo-bulma-blocks-theme/layouts/partials/explore.html`
+
+2. **YAML Translation Files:**
+   - Translations are stored in YAML files in the `i18n/` directory
+   - Each language has its own file (e.g., `i18n/en.yml`, `i18n/ru.yml`)
+   - Format: `key: "translated text"`
+
+3. **Transifex Integration:**
+   - Due to different YAML formats between Hugo and Transifex, we use conversion scripts:
+     - `scripts/tx_convert_push.py`: Converts Hugo YAML to Transifex format
+     - `scripts/tx_convert_pull.py`: Converts Transifex YAML back to Hugo format
+
+### Example CI/CD Steps
+
+The following steps are executed automatically:
+
+```yaml
+- name: Extract strings
+  run: hugo-gettext extract
+- name: Push to Transifex
+  run: tx push -s
+- name: Pull translations
+  run: tx pull -a
+- name: Compile .po to .mo
+  run: hugo-gettext compile translations/
+- name: Generate translated content
+  run: hugo-gettext generate
+```
+
+### Makefile Commands for Translations
+
+The following Makefile commands are available for translation management:
+
+```bash
+# Extract translatable strings from content and create/update messages.pot
+# This command scans all content files and extracts strings marked for translation
+make messages-extract
+
+# Compile .po files to .mo files
+# This step is necessary for Hugo to use the translations
+make messages-compile
+
+# Generate translated content from .mo files
+# Creates translated versions of content in content-translated/<lang>/
+make messages-generate
+
+# Push source strings to Transifex
+# Converts and uploads English strings to Transifex for translation
+make txpush
+
+# Pull translations from Transifex
+# Downloads translations from Transifex and converts them to Hugo format
+make txpull
+
+# Create Python virtual environment
+# Sets up Python environment needed for translation scripts
+make venv
+```
+
+These commands are typically used in sequence during the translation workflow:
+
+1. `make venv` - Set up the Python environment
+2. `pip install -r requirements.txt` - Install required packages
+3. `make messages-extract` - Extract strings for translation
+4. `make txpush` - Upload strings to Transifex
+5. `make txpull` - Download translations from Transifex
+6. `make messages-compile` - Compile translations
+7. `make messages-generate` - Generate translated content
+
+The commands are used in the CI/CD pipeline and can also be run locally for development. Each command has its own target in the Makefile and can be run independently.
+
+### Summary
+- The i18n process is fully integrated and automated.
+- Source content is in `content/`, translations are in `content-translated/<lang>/`.
+- All translation files are managed in `translations/` and synchronized with Transifex.
+- No manual steps are required for regular translation updates — everything is handled by the pipeline.
+
 ## Search Functionality 
 The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](https://markjs.io/).
 
@@ -418,171 +599,3 @@ docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Website
 ```
 
 Crawls the site and reports all 404. Full run takes apout 10 mins
-
-## 🌐 Internationalization (i18n) and Translation Workflow
-
-The QGIS Website project is fully internationalized using [hugo-gettext](https://github.com/PhuNH/hugo-gettext) and [Transifex](https://www.transifex.com/). The translation workflow is fully integrated and automated via CI/CD.
-
-### Folder Structure
-
-- **Original content:**
-  - `content/` — English (source language) content.
-- **Translated content:**
-  - `content-translated/de/`, `content-translated/es/`, etc. — Translated content for each language, mirroring the structure of `content/`.
-- **Translation files:**
-  - `translations/en/messages.pot` — Extracted source strings (template).
-  - `translations/de/messages.po`, `translations/es/messages.po`, etc. — Translations for each language.
-- **YAML translations:**
-  - `i18n/en.yml` — Source strings for HTML templates.
-  - `i18n/de.yml`, `i18n/es.yml`, etc. — Translations for HTML templates.
-  - `tx-temp/` — Temporary directory for Transifex YAML files.
-
-### Hugo and hugo-gettext Configuration
-
-The configuration for hugo-gettext is set in `config.toml`:
-
-```toml
-[i18n]
-package = "messages"
-srcDir = "content"
-genDir = "content-translated"
-excludedKeys = "heroSize heroImage ..."
-[i18n.content]
-  [i18n.content.default]
-    globs = ["content/**/*.md"]
-[languages]
-  [languages.en]
-    contentDir = "content"
-  [languages.de]
-    contentDir = "content-translated/de"
-  [languages.es]
-    contentDir = "content-translated/es"
-```
-
-### Translation Workflow
-
-The translation process is fully automated and consists of the following steps:
-
-1. **String extraction:**
-   - On each update, `hugo-gettext extract translations/en/` is run to extract all translatable strings from the source content. The output is saved to `translations/en/messages.pot`.
-2. **Transifex integration:**
-   - The extracted `.pot` file is automatically pushed to Transifex using the Transifex CLI (`tx push -s`).
-   - Translators work on translations in Transifex.
-   - Translated `.po` files are regularly pulled from Transifex (`tx pull -a`).
-3. **Compilation and generation:**
-   - All `.po` files are compiled to `.mo` files with `hugo-gettext compile translations`.
-   - Translated content is generated for each language using `hugo-gettext generate`, producing the localized content in `content-translated/<lang>/`.
-4. **CI/CD:**
-   - All these steps are run automatically in the CI/CD pipeline (see `.github/workflows/`).
-
-### Transifex Configuration
-
-The project includes a preconfigured `.tx/config` with two resources:
-
-```ini
-[main]
-host = https://app.transifex.com
-
-[o:qgis:p:qgis-website:r:qgis-hugo-docs-md]
-file_filter = translations/<lang>/messages.po
-source_file = translations/en/messages.pot
-source_lang = en
-type = PO
-resource_name = do-not-translate-hugo-docs
-
-[o:qgis:p:qgis-website:r:qgis-hugo-docs-yml]
-file_filter = tx-temp/<lang>.yml
-source_file = tx-temp/en.yml
-source_lang = en
-type = YML
-resource_name = do-not-translate-hugo-docs-yml
-```
-
-The configuration defines two resources:
-1. `qgis-hugo-docs-md` - for markdown content translations (PO files)
-2. `qgis-hugo-docs-yml` - for YAML translations used in HTML templates
-
-The Transifex API token is stored in the CI/CD environment and in `~/.transifexrc` for local development.
-
-### Example CI/CD Steps
-
-The following steps are executed automatically:
-
-```yaml
-- name: Extract strings
-  run: hugo-gettext extract
-- name: Push to Transifex
-  run: tx push -s
-- name: Pull translations
-  run: tx pull -a
-- name: Compile .po to .mo
-  run: hugo-gettext compile translations/
-- name: Generate translated content
-  run: hugo-gettext generate
-```
-
-### Summary
-- The i18n process is fully integrated and automated.
-- Source content is in `content/`, translations are in `content-translated/<lang>/`.
-- All translation files are managed in `translations/` and synchronized with Transifex.
-- No manual steps are required for regular translation updates — everything is handled by the pipeline.
-
-### YAML Translations for HTML Templates
-
-For translations used in HTML templates (not in markdown files), we use a different approach:
-
-1. **Translation Keys in HTML:**
-   - Use the `{{ i18n "key" }}` function in HTML templates to reference translatable strings
-   - Example: `{{ i18n "exploreQgis" }}` in `themes/hugo-bulma-blocks-theme/layouts/partials/explore.html`
-
-2. **YAML Translation Files:**
-   - Translations are stored in YAML files in the `i18n/` directory
-   - Each language has its own file (e.g., `i18n/en.yml`, `i18n/ru.yml`)
-   - Format: `key: "translated text"`
-
-3. **Transifex Integration:**
-   - Due to different YAML formats between Hugo and Transifex, we use conversion scripts:
-     - `scripts/tx_convert_push.py`: Converts Hugo YAML to Transifex format
-     - `scripts/tx_convert_pull.py`: Converts Transifex YAML back to Hugo format
-
-### Makefile Commands for Translations
-
-The following Makefile commands are available for translation management:
-
-```bash
-# Extract translatable strings from content and create/update messages.pot
-# This command scans all content files and extracts strings marked for translation
-make messages-extract
-
-# Compile .po files to .mo files
-# This step is necessary for Hugo to use the translations
-make messages-compile
-
-# Generate translated content from .mo files
-# Creates translated versions of content in content-translated/<lang>/
-make messages-generate
-
-# Push source strings to Transifex
-# Converts and uploads English strings to Transifex for translation
-make txpush
-
-# Pull translations from Transifex
-# Downloads translations from Transifex and converts them to Hugo format
-make txpull
-
-# Create Python virtual environment
-# Sets up Python environment needed for translation scripts
-make venv
-```
-
-These commands are typically used in sequence during the translation workflow:
-
-1. `make venv` - Set up the Python environment
-2. `pip install -r requirements.txt` - Install required packages
-3. `make messages-extract` - Extract strings for translation
-4. `make txpush` - Upload strings to Transifex
-5. `make txpull` - Download translations from Transifex
-6. `make messages-compile` - Compile translations
-7. `make messages-generate` - Generate translated content
-
-The commands are used in the CI/CD pipeline and can also be run locally for development. Each command has its own target in the Makefile and can be run independently.
