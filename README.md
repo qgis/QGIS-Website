@@ -263,7 +263,7 @@ The translation process is fully automated and consists of the following steps:
    - All `.po` files are compiled to `.mo` files with `hugo-gettext compile translations`.
    - Translated content is generated for each language using `hugo-gettext generate`, producing the localized content in `content-translated/<lang>/`.
 4. **CI/CD:**
-   - All these steps are run automatically in the CI/CD pipeline (see `.github/workflows/`).
+   - All these steps are run automatically in the CI/CD pipeline (see `.github/workflows/i18n.yml`).
 
 ### Transifex Configuration
 
@@ -278,14 +278,14 @@ file_filter = translations/<lang>/messages.po
 source_file = translations/en/messages.pot
 source_lang = en
 type = PO
-resource_name = do-not-translate-hugo-docs
+resource_name = qgis-hugo-docs-md
 
 [o:qgis:p:qgis-website:r:qgis-hugo-docs-yml]
 file_filter = tx-temp/<lang>.yml
 source_file = tx-temp/en.yml
 source_lang = en
 type = YML
-resource_name = do-not-translate-hugo-docs-yml
+resource_name = qgis-hugo-docs-yml
 ```
 
 The configuration defines two resources:
