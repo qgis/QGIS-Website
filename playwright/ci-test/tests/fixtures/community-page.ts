@@ -258,7 +258,7 @@ export class CommunityPage {
         this.sustainDonateLink = this.page.getByRole("link", {
             name: "Sustain & Donate",
         });
-        this.submitButton = this.page.locator("#submit-button");
+        this.submitButton = this.page.locator("#payrexx-submit-button");
         this.otherMethodsInfoLink = this.page.getByRole("link", {
             name: "Other methods, more info",
         });

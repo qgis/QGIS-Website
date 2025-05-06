@@ -12,7 +12,7 @@ export class DownloadPage {
 
     constructor(public readonly page: Page) {
         this.beforeDownloadText = this.page.getByText("Before download starts");
-        this.submitButton = this.page.locator("#submit-button");
+        this.submitButton = this.page.locator("#payrexx-submit-button");
         this.otherMethodsLink = this.page.getByRole("link", {
             name: "Other methods, more info",
         });
