@@ -58,8 +58,8 @@ export class FundingPage {
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
-        this.submitButton = this.page.locator("#submit-button");
-        this.currencyInput = this.page.locator("#currency");
+        this.submitButton = this.page.locator("#payrexx-submit-button");
+        this.currencyInput = this.page.locator("#payrexx-currency");
         this.donateButton = this.page.getByRole("button", { name: "Donate" });
         this.becomeSustainingMemberLink = this.page.getByRole("link", {
             name: "Become a Sustaining Member",
