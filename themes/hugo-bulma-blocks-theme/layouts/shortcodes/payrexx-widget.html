@@ -1,4 +1,4 @@
-<div class="stripe-widget donatbox">
+<div class="payrexx-widget donatbox">
     <p id="donate-frequency-options">
         <a id="once" class="mr-4 is-active" onclick="updateOptions('once')"
             >One-Time</a
@@ -6,8 +6,8 @@
         <a id="monthly" onclick="updateOptions('monthly')">Monthly</a>
     </p>
     <hr />
-    <form id="donate-stripe">
-        {{ range sort $.Site.Data.stripe_products }}
+    <form id="donate-payrexx">
+        {{ range sort $.Site.Data.payrexx_products }}
             <input
                 value="{{ .payment_link }}"
                 id="{{ .id }}"
@@ -28,7 +28,7 @@
         >Donate
     </a>
 
-    <div class="is-flex is-justify-content-space-between stripe-widget-footer">
+    <div class="is-flex is-justify-content-space-between payrexx-widget-footer">
         {{ if .Get "otherMethods" }}
             <a href="{{ absURL "funding/donate/" }}"
                 >Other methods, more info</a
@@ -61,7 +61,7 @@
     {{ end }}
 </div>
 
-{{ $donatejs := resources.Get "js/donate-stripe.js" | resources.Minify }}
+{{ $donatejs := resources.Get "js/donate-payrexx.js" | resources.Minify }}
 <script src="{{ $donatejs.RelPermalink }}"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
