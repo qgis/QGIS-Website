@@ -1,5 +1,5 @@
 <div class="payrexx-widget donatbox">
-    <p id="donate-frequency-options">
+    <p id="payrexx-donate-frequency-options">
         <a id="once" class="mr-4 is-active" onclick="updateOptions('once')"
             >One-Time</a
         >
@@ -21,7 +21,7 @@
     </form>
     <br />
     <a
-        id="submit-button"
+        id="payrexx-submit-button"
         class="button is-primary1"
         rel="noopener noreferrer"
         {{/* href to be set by js depending on selected donation */}}
@@ -34,7 +34,11 @@
                 >Other methods, more info</a
             >
         {{ end }}
-        <select id="currency" class="currency" onchange="updateOptions()">
+        <select
+            id="payrexx-currency"
+            class="currency"
+            onchange="updateOptions()"
+        >
             <option value="eur">EUR</option>
             <option value="usd">USD</option>
         </select>

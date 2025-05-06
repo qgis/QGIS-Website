@@ -1,9 +1,12 @@
 <div class="stripe-widget donatbox">
-    <p id="donate-frequency-options">
-        <a id="once" class="mr-4 is-active" onclick="updateOptions('once')"
+    <p id="stripe-donate-frequency-options">
+        <a
+            id="s_once"
+            class="mr-4 is-active"
+            onclick="updateStripeOptions('s_once')"
             >One-Time</a
         >
-        <a id="monthly" onclick="updateOptions('monthly')">Monthly</a>
+        <a id="s_monthly" onclick="updateStripeOptions('s_monthly')">Monthly</a>
     </p>
     <hr />
     <form id="donate-stripe">
@@ -21,7 +24,7 @@
     </form>
     <br />
     <a
-        id="submit-button"
+        id="stripe-submit-button"
         class="button is-primary1"
         rel="noopener noreferrer"
         {{/* href to be set by js depending on selected donation */}}
@@ -34,7 +37,11 @@
                 >Other methods, more info</a
             >
         {{ end }}
-        <select id="currency" class="currency" onchange="updateOptions()">
+        <select
+            id="stripe-currency"
+            class="currency"
+            onchange="updateStripeOptions()"
+        >
             <option value="eur">EUR</option>
             <option value="usd">USD</option>
         </select>

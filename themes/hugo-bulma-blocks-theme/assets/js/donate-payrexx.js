@@ -3,7 +3,7 @@ function updatePaymentLink() {
     let paymentLink = document
         .getElementById("donate-payrexx")
         .querySelector('input[name="amount"]:checked').value;
-    let donateBtn = document.getElementById("submit-button");
+    let donateBtn = document.getElementById("payrexx-submit-button");
     donateBtn.href = paymentLink;
 }
 
@@ -11,31 +11,33 @@ function updateOptions(freq) {
     // function to toggle set of donate options depending on selected currency
     if (freq != null) {
         document
-            .querySelector("#donate-frequency-options a.is-active")
+            .querySelector("#payrexx-donate-frequency-options a.is-active")
             .classList.remove("is-active");
         document
-            .querySelector("#donate-frequency-options #" + freq)
+            .querySelector("#payrexx-donate-frequency-options #" + freq)
             .classList.add("is-active");
     }
-    let currency = document.getElementById("currency").value;
-    freq = document.querySelector("#donate-frequency-options a.is-active").id;
+    let currency = document.getElementById("payrexx-currency").value;
+    freq = document.querySelector(
+        "#payrexx-donate-frequency-options a.is-active",
+    ).id;
     document
         .getElementById("donate-payrexx")
         .querySelectorAll("label")
         .forEach((option) => (option.style.display = "none"));
     let visible = document
         .getElementById("donate-payrexx")
-        .querySelectorAll(`[for^="${currency}:${freq}:"]`);
+        .querySelectorAll(`[for^="payrexx_${currency}:${freq}:"]`);
     visible.forEach((option) => (option.style.display = "inline-block"));
     // check first visible element
     document.getElementById(visible[0].getAttribute("for")).checked = true;
     updatePaymentLink();
 }
 
-let radioButtons = document
+let payrexxRadioButtons = document
     .getElementById("donate-payrexx")
     .querySelectorAll('input[name="amount"]');
-radioButtons.forEach(function (radio) {
+payrexxRadioButtons.forEach(function (radio) {
     radio.addEventListener("change", updatePaymentLink);
 });
 

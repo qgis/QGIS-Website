@@ -17,7 +17,7 @@ export class FundingPage {
             page: "Donate",
             texts: [
                 "Sustaining Membership",
-                "Stripe Donation",
+                "Payrexx Donation",
                 "Bank transfer",
                 "Paypal Donation",
                 "Your support is vital to keep QGIS improving",
@@ -26,7 +26,7 @@ export class FundingPage {
                 "Software Development & QA",
                 "Community Growth & Engagement",
                 "Empowering Our Volunteers",
-                "Fostering Collaboration & Knowledge Sharing"
+                "Fostering Collaboration & Knowledge Sharing",
             ],
         },
         {

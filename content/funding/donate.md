@@ -41,6 +41,18 @@ We use the [payrexx.com](https://payrexx.com) service to receive credit card don
 {{< rich-box-end >}}
 
 
+<!-- {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}}
+{{< rich-content-start themeClass="coloring-1" >}}
+## Stripe Donation
+
+We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.
+{{< rich-content-end >}}
+{{< rich-right-start >}}  
+{{< stripe-widget >}}
+{{< rich-right-end >}}
+{{< rich-box-end >}}
+ -->
+
 {{< rich-box-start layoutClass="has-right" mode="html" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ## Bank transfer
