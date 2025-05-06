@@ -1,16 +1,13 @@
-<div class="stripe-widget donatbox">
-    <p id="stripe-donate-frequency-options">
-        <a
-            id="s_once"
-            class="mr-4 is-active"
-            onclick="updateStripeOptions('s_once')"
+<div class="payrexx-widget donatbox">
+    <p id="payrexx-donate-frequency-options">
+        <a id="once" class="mr-4 is-active" onclick="updateOptions('once')"
             >One-Time</a
         >
-        <a id="s_monthly" onclick="updateStripeOptions('s_monthly')">Monthly</a>
+        <a id="monthly" onclick="updateOptions('monthly')">Monthly</a>
     </p>
     <hr />
-    <form id="donate-stripe">
-        {{ range sort $.Site.Data.stripe_products }}
+    <form id="donate-payrexx">
+        {{ range sort $.Site.Data.payrexx_products }}
             <input
                 value="{{ .payment_link }}"
                 id="{{ .id }}"
@@ -24,23 +21,23 @@
     </form>
     <br />
     <a
-        id="stripe-submit-button"
+        id="payrexx-submit-button"
         class="button is-primary1"
         rel="noopener noreferrer"
         {{/* href to be set by js depending on selected donation */}}
         >Donate
     </a>
 
-    <div class="is-flex is-justify-content-space-between stripe-widget-footer">
+    <div class="is-flex is-justify-content-space-between payrexx-widget-footer">
         {{ if .Get "otherMethods" }}
             <a href="{{ absURL "funding/donate/" }}"
                 >Other methods, more info</a
             >
         {{ end }}
         <select
-            id="stripe-currency"
+            id="payrexx-currency"
             class="currency"
-            onchange="updateStripeOptions()"
+            onchange="updateOptions()"
         >
             <option value="eur">EUR</option>
             <option value="usd">USD</option>
@@ -68,7 +65,7 @@
     {{ end }}
 </div>
 
-{{ $donatejs := resources.Get "js/donate-stripe.js" | resources.Minify }}
+{{ $donatejs := resources.Get "js/donate-payrexx.js" | resources.Minify }}
 <script src="{{ $donatejs.RelPermalink }}"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {

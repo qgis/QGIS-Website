@@ -55,7 +55,7 @@ export class CommunityPage {
                 "certification@qgis.org",
                 "Certification Process",
                 "Requirements",
-                "Application"
+                "Application",
             ],
         },
         {
@@ -95,7 +95,7 @@ export class CommunityPage {
                 "Terms of members of the PSC",
                 "Honorary PSC members",
                 "Administration of QGIS.ORG",
-                "10 Financial arrangements"
+                "10 Financial arrangements",
             ],
         },
         {
@@ -108,7 +108,7 @@ export class CommunityPage {
                 "QGIS AGM Minutes 2020",
                 "QGIS AGM Minutes 2019",
                 "QGIS AGM Minutes 2018",
-                "QGIS AGM Minutes 2017"
+                "QGIS AGM Minutes 2017",
             ],
         },
         {
@@ -124,36 +124,39 @@ export class CommunityPage {
                 "QGIS Annual Report 2016",
             ],
         },
-        { page: "Finance", texts: [
-            "Finance",
-            "Budget 2023",
-            "Financial report 2022",
-            "Financial auditing report 2022",
-            "Budget 2022",
-            "Financial report 2021",
-            "Financial auditing report 2021",
-            "Budget 2021",
-            "Financial report 2020",
-            "Financial auditing report 2020",
-            "Budget 2020",
-            "Financial report 2019",
-            "Financial auditing report 2019",
-            "Budget 2019",
-            "Financial report 2018",
-            "Financial auditing report 2018",
-            "Budget 2018",
-            "Financial report 2018",
-            "Financial auditing report 2018",
-            "Budget 2018",
-            "Financial report 2017",
-            "Financial auditing report 2017",
-            "Budget 2017",
-            "Financial report 2016",
-            "Budget 2016",
-            "Financial report 2015",
-            "Budget 2015",
-            "Financial report 2014",
-        ] },
+        {
+            page: "Finance",
+            texts: [
+                "Finance",
+                "Budget 2023",
+                "Financial report 2022",
+                "Financial auditing report 2022",
+                "Budget 2022",
+                "Financial report 2021",
+                "Financial auditing report 2021",
+                "Budget 2021",
+                "Financial report 2020",
+                "Financial auditing report 2020",
+                "Budget 2020",
+                "Financial report 2019",
+                "Financial auditing report 2019",
+                "Budget 2019",
+                "Financial report 2018",
+                "Financial auditing report 2018",
+                "Budget 2018",
+                "Financial report 2018",
+                "Financial auditing report 2018",
+                "Budget 2018",
+                "Financial report 2017",
+                "Financial auditing report 2017",
+                "Budget 2017",
+                "Financial report 2016",
+                "Budget 2016",
+                "Financial report 2015",
+                "Budget 2015",
+                "Financial report 2014",
+            ],
+        },
         {
             page: "Project Organisation",
             texts: [
@@ -173,23 +176,26 @@ export class CommunityPage {
                 "Community Resources",
                 "Translation",
                 "Press Material + Translation",
-                "TEAM"
+                "TEAM",
             ],
         },
-        { page: "Infrastructure", texts: [
-            "Infrastructure",
-            "Domains",
-            "Main server",
-            "Documentation and website",
-            "Github management",
-            "Flickr Groups",
-            "Mastodon",
-            "Facebook",
-            "Finance",
-            "IRC",
-            "Planet feeds",
-            "OLD Wiki and Redmine"
-        ] },
+        {
+            page: "Infrastructure",
+            texts: [
+                "Infrastructure",
+                "Domains",
+                "Main server",
+                "Documentation and website",
+                "Github management",
+                "Flickr Groups",
+                "Mastodon",
+                "Facebook",
+                "Finance",
+                "IRC",
+                "Planet feeds",
+                "OLD Wiki and Redmine",
+            ],
+        },
         {
             page: "Brand Guidelines",
             texts: [
@@ -201,33 +207,29 @@ export class CommunityPage {
                 "Examples of unacceptable uses",
                 "If in doubt, find out!",
                 "Report abuse",
-                "Frequently Asked Questions"
+                "Frequently Asked Questions",
             ],
         },
         {
             page: "Contributor Credits",
-            texts: [
-                "Contributor Credits",
-                "psc@qgis.org"
-            ],
+            texts: ["Contributor Credits", "psc@qgis.org"],
         },
         {
             page: "Meetings",
+            texts: ["Meetings", "Developer Meetings", "Users Meetings"],
+        },
+        {
+            page: "Mailing Lists",
             texts: [
-                "Meetings",
-                "Developer Meetings",
-                "Users Meetings",
+                "Mailing Lists",
+                "QGIS Users list",
+                "QGIS Developers list",
+                "QGIS Community team",
+                "QGIS Translations",
+                "QGIS Project Steering Committee (PSC) list",
+                "QGIS Web Client 2",
             ],
         },
-        { page: "Mailing Lists", texts: [
-            "Mailing Lists",
-            "QGIS Users list",
-            "QGIS Developers list",
-            "QGIS Community team",
-            "QGIS Translations",
-            "QGIS Project Steering Committee (PSC) list",
-            "QGIS Web Client 2"
-        ] },
     ];
 
     constructor(public readonly page: Page) {
@@ -256,11 +258,11 @@ export class CommunityPage {
         this.sustainDonateLink = this.page.getByRole("link", {
             name: "Sustain & Donate",
         });
-        this.submitButton = this.page.locator("#submit-button");
+        this.submitButton = this.page.locator("#payrexx-submit-button");
         this.otherMethodsInfoLink = this.page.getByRole("link", {
             name: "Other methods, more info",
         });
-        this.currencyInput = this.page.locator("#currency");
+        this.currencyInput = this.page.locator("#payrexx-currency");
         this.workflowCertificationImg = this.page.getByRole("img", {
             name: "Workflow Certification",
         });
@@ -281,10 +283,12 @@ export class CommunityPage {
         this.contributorCreditsLink = this.page.getByRole("link", {
             name: "Contributor Credits",
         });
-        this.meetingsLink = this.page.getByRole("link", {
-            name: "Meetings",
-            exact: true,
-        }).first();
+        this.meetingsLink = this.page
+            .getByRole("link", {
+                name: "Meetings",
+                exact: true,
+            })
+            .first();
         (this.goToMeetingsFirstLink = this.page
             .getByRole("link", { name: "Go to meetings" })
             .first()),
