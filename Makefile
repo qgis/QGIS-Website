@@ -97,8 +97,12 @@ txpull: mktxtemp
 messages-extract:
 	hugo-gettext extract translations/en/
 
-messages-compile:
+messages-compile: fix-newlines
 	hugo-gettext compile translations/
+
+fix-newlines:
+	@echo "Fixing newlines in translation files..."
+	@python3 scripts/fix_newlines.py
 
 messages-generate:
 	hugo-gettext generate
