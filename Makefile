@@ -91,7 +91,7 @@ txpush: mktxtemp
 	./tx push -s
 
 txpull: mktxtemp
-	./tx pull -a
+	./tx pull -a -f
 	python3 scripts/tx_convert_pull.py $(TEMP) i18n
 
 messages-extract:
