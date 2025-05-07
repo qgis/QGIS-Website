@@ -33,6 +33,7 @@ jobs:
 
       - name: Install Transifex CLI
         run: |
+          rm -rf ./tx
           curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
 
       - name: Configure Git
