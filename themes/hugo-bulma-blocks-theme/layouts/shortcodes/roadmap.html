@@ -1,19 +1,19 @@
 <div class="container">
     <div class="roadmap  mb-4">
         {{ with index .Site.Data.conf }}
-            <div class="right-ribbon"><span class="stable">Current: {{ .ltrrelease }}</span></div>
+            <div class="right-ribbon"><span class="stable">{{ i18n "current" }}: {{ .ltrrelease }}</span></div>
         {{ end }}
-    <h3 class="title">Long Term Release (LTR)</h3>
+    <h3 class="title">{{ i18n "longTermRelease" }}</h3>
     <ul class="steps is-balanced">
         <li class="steps-segment">
             <span class="steps-marker"></span>
             <div class="steps-content">
             <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
                 <span>
-                    Initial Release 
+                    {{ i18n "initialRelease" }}
                 </span>
                 <span class="help-tip">
-                    <span > Our stable releases are created by periodically taking a development version and 'hardening' it by focussing only on bugfixes. </span>
+                    <span>{{ i18n "initialReleaseTip" }}</span>
                  </span>
             </div>
             
@@ -24,42 +24,42 @@
                 <div>
                     <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
                         <span>
-                            Point Release:
+                            {{ i18n "pointRelease" }}:
                             {{ with index .Site.Data.conf }}
                                 <span class="rm-current">{{ .next_ltr_version }}</span>
                             {{ end }}
                         </span>
                         <span class="help-tip">
-                            <span > Each month we create a new point release for our stable version. These releases contain no new features, only bug fixes. </span>
+                            <span>{{ i18n "pointReleaseTip" }}</span>
                         </span>
                     </div>
                     <nav id="point-release" class="level">
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                                 <p class="days heading is-size-7 tag "></p>
-                                <p class="is-size-7"> Days  </p>
+                                <p class="is-size-7">{{ i18n "days" }}</p>
                             </div>
                         </div>
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                             <p class="hours heading is-size-7 tag "></p>
-                            <p class="is-size-7"> Hours </p>
+                            <p class="is-size-7">{{ i18n "hours" }}</p>
                             </div>
                         </div>
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                                 <p class="minutes heading is-size-7 tag "></p>
-                                <p class="is-size-7">Min.</p>
+                                <p class="is-size-7">{{ i18n "minutes" }}</p>
                             </div>
                         </div>
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                                 <p class="seconds heading is-size-7 tag "></p>
-                                <p class="is-size-7">Sec.</p>
+                                <p class="is-size-7">{{ i18n "seconds" }}</p>
                             </div>
                         </div>
 
-                        <button id="addPrToCalendar" class="button is-small is-light" title="Add to Calendar">
+                        <button id="addPrToCalendar" class="button is-small is-light" title="{{ i18n "addToCalendar" }}">
                             <span class="icon is-small">
                                 <i class="fas fa-calendar"></i>
                             </span>
@@ -72,9 +72,9 @@
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
-                    <span>Packaging</span>
+                    <span>{{ i18n "packaging" }}</span>
                     <span class="help-tip">
-                        <span > Here we tag the release and make it available for packaging on different platforms. </span>
+                        <span>{{ i18n "packagingTip" }}</span>
                     </span>
                 </div>
             </div>
@@ -83,9 +83,9 @@
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
-                    <span>Installers available</span>
+                    <span>{{ i18n "installersAvailable" }}</span>
                     <span class="help-tip">
-                        <span > The exact period between packaging and the availablility of installers varies by platform as maintainers prepare their packages. See the download pages for updates on availability.</span>
+                        <span>{{ i18n "installersAvailableTip" }}</span>
                     </span>
                 </div>
             </div>
@@ -95,19 +95,19 @@
 
     <div class="roadmap  mb-4">
     {{ with index .Site.Data.conf }}
-        <div class="right-ribbon"><span class="latest">Current: {{ .release }}</span></div>
+        <div class="right-ribbon"><span class="latest">{{ i18n "current" }}: {{ .release }}</span></div>
     {{ end }}
-    <h3 class="title">Latest Release</h3>
+    <h3 class="title">{{ i18n "latestRelease" }}</h3>
     <ul class="steps is-balanced">
         <li class="steps-segment">
             <span class="steps-marker"></span>
             <div class="steps-content">
             <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
                 <span>
-                    Initial Release 
+                    {{ i18n "initialRelease" }}
                 </span>
                 <span class="help-tip">
-                    <span > Our stable releases are created by periodically taking a development version and 'hardening' it by focussing only on bugfixes. </span>
+                    <span>{{ i18n "initialReleaseTip" }}</span>
                  </span>
             </div>
             
@@ -118,41 +118,41 @@
                 <div>
                     <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
                         <span>
-                            Point Release:
+                            {{ i18n "pointRelease" }}:
                             {{ with index .Site.Data.conf }}
                                 <span class="rm-next">{{ .next_lr_version }}</span>
                             {{ end }}
                         </span>
                         <span class="help-tip">
-                            <span > Each month we create a new point release for our latest version. These releases contain no new features, only bug fixes. </span>
+                            <span>{{ i18n "latestPointReleaseTip" }}</span>
                         </span>
                     </div>
                     <nav id="latest-point-release" class="level">
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                                 <p class="days heading is-size-7 tag "></p>
-                                <p class="is-size-7"> Days  </p>
+                                <p class="is-size-7">{{ i18n "days" }}</p>
                             </div>
                         </div>
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                             <p class="hours heading is-size-7 tag "></p>
-                            <p class="is-size-7"> Hours </p>
+                            <p class="is-size-7">{{ i18n "hours" }}</p>
                             </div>
                         </div>
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                                 <p class="minutes heading is-size-7 tag "></p>
-                                <p class="is-size-7">Min.</p>
+                                <p class="is-size-7">{{ i18n "minutes" }}</p>
                             </div>
                         </div>
                         <div class="level-item is-narrow has-text-centered">
                             <div>
                                 <p class="seconds heading is-size-7 tag "></p>
-                                <p class="is-size-7">Sec.</p>
+                                <p class="is-size-7">{{ i18n "seconds" }}</p>
                             </div>
                         </div>
-                        <button id="addLatestPrToCalendar" class="button is-small is-light" title="Add to Calendar">
+                        <button id="addLatestPrToCalendar" class="button is-small is-light" title="{{ i18n "addToCalendar" }}">
                             <span class="icon is-small">
                                 <i class="fas fa-calendar"></i>
                             </span>
@@ -165,9 +165,9 @@
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
-                    <span>Packaging</span>
+                    <span>{{ i18n "packaging" }}</span>
                     <span class="help-tip">
-                        <span > Here we tag the release and make it available for packaging on different platforms. </span>
+                        <span>{{ i18n "packagingTip" }}</span>
                     </span>
                 </div>
             </div>
@@ -176,9 +176,9 @@
             <span class="steps-marker"></span>
             <div class="steps-content">
                 <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
-                    <span>Installers available</span>
+                    <span>{{ i18n "installersAvailable" }}</span>
                     <span class="help-tip">
-                        <span > The exact period between packaging and the availablility of installers varies by platform as maintainers prepare their packages. See the download pages for updates on availability.</span>
+                        <span>{{ i18n "installersAvailableTip" }}</span>
                     </span>
                 </div>
             </div>
@@ -188,17 +188,17 @@
 
     <div class="roadmap  mb-6">
         {{ with index .Site.Data.conf }}
-            <div class="right-ribbon"><span class="development">Future: {{ .nextversion }}</span></div>
+            <div class="right-ribbon"><span class="development">{{ i18n "future" }}: {{ .nextversion }}</span></div>
         {{ end }}
-        <h3 class="title">Development Version</h3>
+        <h3 class="title">{{ i18n "developmentVersion" }}</h3>
         <ul class="steps is-balanced">
             <li class="steps-segment">
                 <span class="steps-marker"></span>
                 <div class="steps-content">
                 <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
-                    <span>Active development</span>
+                    <span>{{ i18n "activeDevelopment" }}</span>
                     <span class="help-tip">
-                        <span > This is the open stage for accepting new features.</span>
+                        <span>{{ i18n "activeDevelopmentTip" }}</span>
                     </span>
     
                 </div>
@@ -210,41 +210,41 @@
                     <div>
                         <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
                             <span>
-                                Feature freeze:
+                                {{ i18n "featureFreeze" }}:
                                 {{ with index .Site.Data.conf }}
                                     <span class="rm-future">{{ .devversion }}</span>
                                 {{ end }}
                             </span>
                             <span class="help-tip">
-                                <span > During feature freeze, no new features are accepted, only bug fixes and code clean ups.</span>
+                                <span>{{ i18n "featureFreezeTip" }}</span>
                             </span>
                         </div>
                         <nav id="freeze" class="level">
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                     <p class="days heading is-size-7 tag "></p>
-                                    <p class="is-size-7">Days</p>
+                                    <p class="is-size-7">{{ i18n "days" }}</p>
                                 </div>
                             </div>
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                 <p class="hours heading is-size-7 tag "></p>
-                                <p class="is-size-7">Hours</p>
+                                <p class="is-size-7">{{ i18n "hours" }}</p>
                                 </div>
                             </div>
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                     <p class="minutes heading is-size-7 tag "></p>
-                                    <p class="is-size-7">Min.</p>
+                                    <p class="is-size-7">{{ i18n "minutes" }}</p>
                                 </div>
                             </div>
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                     <p class="seconds heading is-size-7 tag "></p>
-                                    <p class="is-size-7">Sec.</p>
+                                    <p class="is-size-7">{{ i18n "seconds" }}</p>
                                 </div>
                             </div>
-                            <button id="addFreezeToCalendar" class="button is-small is-light" title="Add to Calendar">
+                            <button id="addFreezeToCalendar" class="button is-small is-light" title="{{ i18n "addToCalendar" }}">
                                 <span class="icon is-small">
                                     <i class="fas fa-calendar"></i>
                                 </span>
@@ -258,13 +258,13 @@
                 <div class="steps-content">
                     <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
                         <span>
-                            Point Release:
+                            {{ i18n "pointRelease" }}:
                             {{ with index .Site.Data.conf }}
                                 <span class="rm-future">{{ .nextversion }}</span>
                             {{ end }}
                         </span>
                         <span class="help-tip">
-                            <span>Every October, we release a new Long Term Release (LTR) and start a new development cycle.</span>
+                            <span>{{ i18n "pointReleaseTip" }}</span>
                         </span>
                     </div>
                     <div>
@@ -272,28 +272,28 @@
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                     <p class="days heading is-size-7 tag "></p>
-                                    <p class="is-size-7">Days</p>
+                                    <p class="is-size-7">{{ i18n "days" }}</p>
                                 </div>
                             </div>
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                 <p class="hours heading is-size-7 tag "></p>
-                                <p class="is-size-7">Hours</p>
+                                <p class="is-size-7">{{ i18n "hours" }}</p>
                                 </div>
                             </div>
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                     <p class="minutes heading is-size-7 tag "></p>
-                                    <p class="is-size-7">Min.</p>
+                                    <p class="is-size-7">{{ i18n "minutes" }}</p>
                                 </div>
                             </div>
                             <div class="level-item is-narrow has-text-centered">
                                 <div>
                                     <p class="seconds heading is-size-7 tag "></p>
-                                    <p class="is-size-7">Sec.</p>
+                                    <p class="is-size-7">{{ i18n "seconds" }}</p>
                                 </div>
                             </div>
-                            <button id="addPackageToCalendar" class="button is-small is-light" title="Add to Calendar">
+                            <button id="addPackageToCalendar" class="button is-small is-light" title="{{ i18n "addToCalendar" }}">
                                 <span class="icon is-small">
                                     <i class="fas fa-calendar"></i>
                                 </span>
@@ -307,9 +307,9 @@
                 <span class="steps-marker"></span>
                 <div class="steps-content">
                     <div class="has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
-                        <span>Packaging</span>
+                        <span>{{ i18n "packaging" }}</span>
                         <span class="help-tip">
-                            <span > Here we tag the release and make it available for packaging on different platforms. </span>
+                            <span>{{ i18n "packagingTip" }}</span>
                         </span>
                     </div>
                 </div>
@@ -318,9 +318,9 @@
                 <span class="steps-marker"></span>
                 <div class="steps-content">
                     <div class=" has-text-weight-normal is-flex is-flex-direction-row-reverse is-justify-content-left is-align-items-center">
-                        <span>Installers available</span>
+                        <span>{{ i18n "installersAvailable" }}</span>
                         <span class="help-tip">
-                            <span > The exact period between packaging and the availablility of installers varies by platform as maintainers prepare their packages. See the download pages for updates on availability.</span>
+                            <span>{{ i18n "installersAvailableTip" }}</span>
                         </span>
                     </div>
                 </div>
