@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-28 18:59-0700\n"
+"POT-Creation-Date: 2025-05-07 22:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <>\n"
@@ -27029,9 +27029,17 @@ msgid ""
 msgstr ""
 
 #: content/community/involve.md:114
+msgid "{{< rich-content-end >}} {{< rich-right-start >}}"
+msgstr ""
+
+#: content/community/involve.md:116
+msgid "<!-- {{< stripe-widget otherMethods=\"true\">}} -->\n"
+msgstr ""
+
+#: content/community/involve.md:117
 msgid ""
-"{{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget "
-"otherMethods=\"true\">}} {{< rich-right-end >}} {{< rich-box-end >}}"
+"{{< payrexx-widget otherMethods=\"true\">}} {{< rich-right-end >}} {{< rich-"
+"box-end >}}"
 msgstr ""
 
 #: content/community/organisation.md:0
@@ -27875,20 +27883,27 @@ msgstr ""
 msgid "Our very best regards!"
 msgstr ""
 
-#: content/download/index.md:26
-msgid ""
-"{{< rich-content-end >}} {{< rich-right-start mode=\"html\" >}} {{< stripe-"
-"widget otherMethods=\"true\" skipToDownload=\"true\" >}} {{< rich-right-end "
-">}} {{< rich-box-end >}}"
+#: content/download/index.md:26 content/thank-you/index.md:40
+msgid "{{< rich-content-end >}} {{< rich-right-start mode=\"html\" >}}"
 msgstr ""
 
-#: content/download/index.md:35
+#: content/download/index.md:28
+msgid "<!-- {{< stripe-widget otherMethods=\"true\" skipToDownload=\"true\" >}} -->\n"
+msgstr ""
+
+#: content/download/index.md:29
+msgid ""
+"{{< payrexx-widget otherMethods=\"true\" skipToDownload=\"true\" >}} {{< "
+"rich-right-end >}} {{< rich-box-end >}}"
+msgstr ""
+
+#: content/download/index.md:36
 msgid ""
 "{{< spoiler-start id=\"download-win\" title=\"Download for Windows\">}} {{< "
 "download-windows >}} {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:40
+#: content/download/index.md:41
 msgid ""
 "{{< spoiler-start id=\"download-linux\" title=\"🐧 Linux\" >}} GNU/Linux is a"
 " Free operating system built on the same principles that QGIS is built on. "
@@ -27896,56 +27911,56 @@ msgid ""
 "(including rpm and deb packages). Please select your choice of distro below:"
 msgstr ""
 
-#: content/download/index.md:44
+#: content/download/index.md:45
 msgid ""
 "[Debian/Ubuntu]({{< ref \"resources/installation-guide#debian--ubuntu\" >}})"
 msgstr ""
 
-#: content/download/index.md:45
+#: content/download/index.md:46
 msgid "[Fedora]({{< ref \"resources/installation-guide#fedora\" >}})"
 msgstr ""
 
-#: content/download/index.md:46
+#: content/download/index.md:47
 msgid "[NixOS]({{< ref \"resources/installation-guide#nixos\" >}})"
 msgstr ""
 
-#: content/download/index.md:47
+#: content/download/index.md:48
 msgid "[openSUSE]({{< ref \"resources/installation-guide#suse--opensuse\" >}})"
 msgstr ""
 
-#: content/download/index.md:48
+#: content/download/index.md:49
 msgid "[Mandriva]({{< ref \"resources/installation-guide#mandriva\" >}})"
 msgstr ""
 
-#: content/download/index.md:49
+#: content/download/index.md:50
 msgid "[Slackware]({{< ref \"resources/installation-guide#slackware\" >}})"
 msgstr ""
 
-#: content/download/index.md:50
+#: content/download/index.md:51
 msgid "[Arch Linux]({{< ref \"resources/installation-guide#arch-linux\" >}})"
 msgstr ""
 
-#: content/download/index.md:51
+#: content/download/index.md:52
 msgid "[Flatpak]({{< ref \"resources/installation-guide#flatpak\" >}})"
 msgstr ""
 
-#: content/download/index.md:52
+#: content/download/index.md:53
 msgid "[Spack]({{< ref \"resources/installation-guide#spack\" >}})"
 msgstr ""
 
-#: content/download/index.md:54
+#: content/download/index.md:55
 msgid ""
 "[Linux Installation Instructions]({{< ref \"resources/installation-"
 "guide#linux\" >}}) {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:58
+#: content/download/index.md:59
 msgid ""
 "{{< spoiler-start id=\"download-mac\" title=\"🍏 macOS\" >}} {{< download-"
 "macos >}}"
 msgstr ""
 
-#: content/download/index.md:61
+#: content/download/index.md:62
 msgid ""
 "Alternatively, for native support of both Intel x86 and Apple ARM "
 "architectures, together with the latest versions of key components (e.g. "
@@ -27953,23 +27968,23 @@ msgid ""
 "\"resources/installation-guide/#macports\" >}})"
 msgstr ""
 
-#: content/download/index.md:63 content/funding/membership.md:265
+#: content/download/index.md:64 content/funding/membership.md:265
 msgid ""
 "{{< rich-box-start icon=\"💁\" layoutClass=\"tips\">}} {{< rich-content-start"
 " themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/download/index.md:66 content/thank-you/index.md:55
+#: content/download/index.md:67 content/thank-you/index.md:56
 msgid "Tips for first launch"
 msgstr ""
 
-#: content/download/index.md:67
+#: content/download/index.md:68
 msgid ""
 "After installing QGIS, the first launch attempt may fail due to Apple's "
 "security framework."
 msgstr ""
 
-#: content/download/index.md:69
+#: content/download/index.md:70
 msgid ""
 "**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its "
 "icon in your Applications folder and select ***Open*** in the context menu. "
@@ -27977,7 +27992,7 @@ msgid ""
 "button again. This only has to be done once."
 msgstr ""
 
-#: content/download/index.md:71
+#: content/download/index.md:72
 msgid ""
 "**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon"
 " in your Applications folder and select ***Open*** from the context menu. A "
@@ -27988,32 +28003,32 @@ msgid ""
 "appear; click ***Open Anyway*** again. This only has to be done once."
 msgstr ""
 
-#: content/download/index.md:73 content/funding/donate.md:28
+#: content/download/index.md:74 content/funding/donate.md:28
 #: content/resources/hub.md:23 content/resources/hub.md:186
 msgid "{{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/download/index.md:79
+#: content/download/index.md:80
 msgid ""
 "{{< spoiler-start id=\"download-bsd\" title=\"👿 BSD\" >}} [BSD Installation "
 "Instructions]({{< ref \"resources/installation-guide#freebsd\" >}}) {{< "
 "spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:83
+#: content/download/index.md:84
 msgid ""
 "{{< spoiler-start id=\"download-container-images\" title=\"🐳 Container "
 "Images\" >}} [Container Images Installation Instructions]({{< ref "
 "\"resources/installation-guide#container-images\" >}}) {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:88
+#: content/download/index.md:89
 msgid ""
 "{{< spoiler-start id=\"download-mobile\" title=\"📱Mobile and tablet\" >}} "
 "{{< mobile-downloads >}} {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:93
+#: content/download/index.md:94
 msgid ""
 "{{< spoiler-start title=\"📃 Source Code\" >}} QGIS is open source software "
 "available under the terms of the <b>GNU General Public License</b> meaning "
@@ -28021,28 +28036,28 @@ msgid ""
 "repository."
 msgstr ""
 
-#: content/download/index.md:96
+#: content/download/index.md:97
 msgid ""
 "QGIS Source Code is available <a href=\"/downloads/qgis-"
 "latest.tar.bz2\">here (latest release)</a> and <a href=\"/downloads/qgis-"
 "latest-ltr.tar.bz2\">here (long term release)</a>"
 msgstr ""
 
-#: content/download/index.md:98
+#: content/download/index.md:99
 msgid ""
 "Refer to the installation guide on how to compile QGIS from source for the "
 "different platforms: "
 "[here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)"
 msgstr ""
 
-#: content/download/index.md:100
+#: content/download/index.md:101
 msgid ""
 "You can also obtain the source code by cloning or forking our <a "
 "href=\"https://github.com/qgis/QGIS\">GitHub repository</a>. {{< spoiler-end"
 " >}}"
 msgstr ""
 
-#: content/download/index.md:104
+#: content/download/index.md:105
 msgid ""
 "{{< spoiler-start title=\"🗾 Example Datasets\" >}} For testing and learning "
 "purposes, [a sample dataset is "
@@ -31600,6 +31615,7 @@ msgstr ""
 #: content/funders/www.centremapslive.co.uk.md:0
 #: content/funders/www.cheslatta.com.md:0
 #: content/funders/www.datarock.com.au.md:0
+#: content/funders/www.datenbankgesellschaft.de.md:0
 #: content/funders/www.debeerendevos.be.md:0
 #: content/funders/www.ecophylla.ca.md:0 content/funders/www.eprime.cl.md:0
 #: content/funders/www.ewp.ch.md:0 content/funders/www.florecha.pt.md:0
@@ -31646,8 +31662,9 @@ msgstr ""
 #: content/funders/www.te38.fr.md:0 content/funders/www.teasistemi.com.md:0
 #: content/funders/www.terrelogiche.com.md:0
 #: content/funders/www.territoires.bio.md:0
-#: content/funders/www.theworks.la.md:0 content/funders/www.urbsol.com.au.md:0
-#: content/funders/www.vgregion.se.md:0 content/funders/www.wagner-it.de.md:0
+#: content/funders/www.theworks.la.md:0 content/funders/www.uih.de.md:0
+#: content/funders/www.urbsol.com.au.md:0 content/funders/www.vgregion.se.md:0
+#: content/funders/www.wagner-it.de.md:0
 #: content/funders/www.wakelinassociates.com.au.md:0
 #: content/funders/www.zevross.com.md:0
 msgid "Small"
@@ -31674,7 +31691,6 @@ msgstr ""
 #: content/funders/www.gfi-gis.de.md:0 content/funders/www.h13.dk.md:0
 #: content/funders/www.landplan-os.de.md:0
 #: content/funders/www.lugs-kassel.de.md:0
-#: content/funders/www.map-site.de.md:0
 #: content/funders/www.menz-umweltplanung.de.md:0
 #: content/funders/www.midvatten.se.md:0 content/funders/www.mobia.io.md:0
 #: content/funders/www.opengeogroep.nl.md:0
@@ -31699,7 +31715,6 @@ msgstr ""
 #: content/funders/www.gfi-gis.de.md:0 content/funders/www.h13.dk.md:0
 #: content/funders/www.landplan-os.de.md:0
 #: content/funders/www.lugs-kassel.de.md:0
-#: content/funders/www.map-site.de.md:0
 #: content/funders/www.menz-umweltplanung.de.md:0
 #: content/funders/www.midvatten.se.md:0 content/funders/www.mobia.io.md:0
 #: content/funders/www.msgis.com.md:0
@@ -31741,12 +31756,11 @@ msgstr ""
 #: content/funders/agresta.org.md:0
 #: content/funders/automaticknowledge.co.uk.md:0
 #: content/funders/digital-ecology.co.uk.md:0 content/funders/en.html.md:0
-#: content/funders/felt.com.md:0 content/funders/foss4g.tistory.com.md:0
-#: content/funders/gispro.com.au.md:0 content/funders/home.md:0
-#: content/funders/nelen-schuurmans.nl.md:0
-#: content/funders/osgeo-oceania.org.md:0 content/funders/qgis-fr.md:0
-#: content/funders/reflexnow.com.md:0 content/funders/regrid.com.md:0
-#: content/funders/sepia-uw.fr.md:0 content/funders/trilobite.solutions.md:0
+#: content/funders/foss4g.tistory.com.md:0 content/funders/gispro.com.au.md:0
+#: content/funders/home.md:0 content/funders/nelen-schuurmans.nl.md:0
+#: content/funders/qgis-fr.md:0 content/funders/reflexnow.com.md:0
+#: content/funders/regrid.com.md:0 content/funders/sepia-uw.fr.md:0
+#: content/funders/trilobite.solutions.md:0
 #: content/funders/www.cadageo.com.md:0
 #: content/funders/www.debeerendevos.be.md:0
 #: content/funders/www.gaia3d.com.md:0 content/funders/www.gis3w.it.md:0
@@ -31765,12 +31779,10 @@ msgstr ""
 
 #: content/funders/agresta.org.md:0
 #: content/funders/automaticknowledge.co.uk.md:0
-#: content/funders/chillservices.com.md:0
 #: content/funders/digital-ecology.co.uk.md:0 content/funders/en.html.md:0
-#: content/funders/felt.com.md:0 content/funders/foss4g.tistory.com.md:0
-#: content/funders/gispro.com.au.md:0 content/funders/home.md:0
-#: content/funders/ib-sendl.de.md:0 content/funders/iternet.org.md:0
-#: content/funders/locatepress.com.md:0
+#: content/funders/foss4g.tistory.com.md:0 content/funders/gispro.com.au.md:0
+#: content/funders/home.md:0 content/funders/ib-sendl.de.md:0
+#: content/funders/iternet.org.md:0 content/funders/locatepress.com.md:0
 #: content/funders/nelen-schuurmans.nl.md:0 content/funders/qgis-fr.md:0
 #: content/funders/rapidlasso.de.md:0 content/funders/reflexnow.com.md:0
 #: content/funders/regrid.com.md:0 content/funders/route4me.com.md:0
@@ -31785,8 +31797,7 @@ msgstr ""
 #: content/funders/www.kalajavesitutkimus.fi.md:0
 #: content/funders/www.klm-projektentwicklung.com.md:0
 #: content/funders/www.limnowak.com.md:0
-#: content/funders/www.mappinggis.com.md:0
-#: content/funders/www.maptransfer.de.md:0 content/funders/www.mhtc.co.uk.md:0
+#: content/funders/www.mappinggis.com.md:0 content/funders/www.mhtc.co.uk.md:0
 #: content/funders/www.opw.ie.md:0 content/funders/www.pgnu.de.md:0
 #: content/funders/www.qgis.pt.md:0 content/funders/www.rockwater.com.au.md:0
 #: content/funders/www.syddjurs.dk.md:0 content/funders/www.urbsol.com.au.md:0
@@ -31833,20 +31844,22 @@ msgstr ""
 
 #: content/funders/atholl-estates.co.uk.md:0 content/funders/baumsicht.de.md:0
 #: content/funders/bhinc.com.md:0 content/funders/bnhr.xyz.md:0
-#: content/funders/chartistechnology.com.md:0 content/funders/crgl.ca.md:0
+#: content/funders/chartistechnology.com.md:0
+#: content/funders/chillservices.com.md:0 content/funders/crgl.ca.md:0
 #: content/funders/csgis.de.md:0 content/funders/english.md:0
-#: content/funders/geoinnova.org.md:0 content/funders/gis.md:0
-#: content/funders/gofundgeo.html.md:0 content/funders/hermesys.co.kr.md:0
-#: content/funders/in-english.md:0 content/funders/infraconsult.ch.md:0
-#: content/funders/juliesdata.com.md:0
+#: content/funders/felt.com.md:0 content/funders/geoinnova.org.md:0
+#: content/funders/gis.md:0 content/funders/gofundgeo.html.md:0
+#: content/funders/hermesys.co.kr.md:0 content/funders/in-english.md:0
+#: content/funders/infraconsult.ch.md:0 content/funders/juliesdata.com.md:0
 #: content/funders/kaplanopensource.co.il.md:0
 #: content/funders/landscape-geoinformatics.ut.ee.md:0
 #: content/funders/level2.si.md:0 content/funders/mammothgeospatial.com.md:0
 #: content/funders/mbsenvironmental.com.au.md:0
-#: content/funders/mggp.com.pl.md:0 content/funders/qgis.es.md:0
-#: content/funders/qgis.nl.md:0 content/funders/qgis.no.md:0
-#: content/funders/qtibia.ro.md:0 content/funders/regionalentwicklung.at.md:0
-#: content/funders/sigmoe.fr.md:0 content/funders/spatialdistillery.com.md:0
+#: content/funders/mggp.com.pl.md:0 content/funders/osgeo-oceania.org.md:0
+#: content/funders/qgis.es.md:0 content/funders/qgis.nl.md:0
+#: content/funders/qgis.no.md:0 content/funders/qtibia.ro.md:0
+#: content/funders/regionalentwicklung.at.md:0 content/funders/sigmoe.fr.md:0
+#: content/funders/spatialdistillery.com.md:0
 #: content/funders/spatialthoughts.com.md:0 content/funders/styrke10.dk.md:0
 #: content/funders/tesuku.co.jp.md:0 content/funders/tycgis.com.md:0
 #: content/funders/uk.md:0 content/funders/wheregroup.com.md:0
@@ -31859,6 +31872,7 @@ msgstr ""
 #: content/funders/www.cartoexpert.com.md:0
 #: content/funders/www.ceicol.com.md:0
 #: content/funders/www.centremapslive.co.uk.md:0
+#: content/funders/www.datenbankgesellschaft.de.md:0
 #: content/funders/www.ecophylla.ca.md:0 content/funders/www.eprime.cl.md:0
 #: content/funders/www.etib-ing.com.md:0 content/funders/www.gaia-mbh.de.md:0
 #: content/funders/www.geocat.net.md:0 content/funders/www.giswater.org.md:0
@@ -31868,6 +31882,8 @@ msgstr ""
 #: content/funders/www.infragis.at.md:0 content/funders/www.loekplan.de.md:0
 #: content/funders/www.lpk.ch.md:0
 #: content/funders/www.lutraconsulting.co.uk.md:0
+#: content/funders/www.map-site.de.md:0
+#: content/funders/www.maptransfer.de.md:0
 #: content/funders/www.micromapper.ro.md:0
 #: content/funders/www.naturalgis.pt.md:0 content/funders/www.opengis.ch.md:0
 #: content/funders/www.osgeo.jp.md:0 content/funders/www.pbsgeo.com.md:0
@@ -31893,22 +31909,23 @@ msgstr ""
 
 #: content/funders/atholl-estates.co.uk.md:0 content/funders/baumsicht.de.md:0
 #: content/funders/bhinc.com.md:0 content/funders/bnhr.xyz.md:0
-#: content/funders/chartistechnology.com.md:0 content/funders/crgl.ca.md:0
+#: content/funders/chartistechnology.com.md:0
+#: content/funders/chillservices.com.md:0 content/funders/crgl.ca.md:0
 #: content/funders/csgis.de.md:0 content/funders/english.md:0
-#: content/funders/geoinnova.org.md:0 content/funders/gis.md:0
-#: content/funders/gofundgeo.html.md:0 content/funders/hermesys.co.kr.md:0
-#: content/funders/in-english.md:0 content/funders/infraconsult.ch.md:0
-#: content/funders/juliesdata.com.md:0
+#: content/funders/felt.com.md:0 content/funders/geoinnova.org.md:0
+#: content/funders/gis.md:0 content/funders/gofundgeo.html.md:0
+#: content/funders/hermesys.co.kr.md:0 content/funders/in-english.md:0
+#: content/funders/infraconsult.ch.md:0 content/funders/juliesdata.com.md:0
 #: content/funders/kaplanopensource.co.il.md:0
 #: content/funders/landscape-geoinformatics.ut.ee.md:0
 #: content/funders/level2.si.md:0 content/funders/mammothgeospatial.com.md:0
 #: content/funders/mbsenvironmental.com.au.md:0
 #: content/funders/mggp.com.pl.md:0 content/funders/neratech.it.md:0
-#: content/funders/pozi.com.md:0 content/funders/qgis.es.md:0
-#: content/funders/qgis.nl.md:0 content/funders/qgis.no.md:0
-#: content/funders/qgis.sk.md:0 content/funders/qtibia.ro.md:0
-#: content/funders/regionalentwicklung.at.md:0 content/funders/sigmoe.fr.md:0
-#: content/funders/spatialdistillery.com.md:0
+#: content/funders/osgeo-oceania.org.md:0 content/funders/pozi.com.md:0
+#: content/funders/qgis.es.md:0 content/funders/qgis.nl.md:0
+#: content/funders/qgis.no.md:0 content/funders/qgis.sk.md:0
+#: content/funders/qtibia.ro.md:0 content/funders/regionalentwicklung.at.md:0
+#: content/funders/sigmoe.fr.md:0 content/funders/spatialdistillery.com.md:0
 #: content/funders/spatialthoughts.com.md:0 content/funders/tesuku.co.jp.md:0
 #: content/funders/tycgis.com.md:0 content/funders/uk.md:0
 #: content/funders/wheregroup.com.md:0 content/funders/www.alta.is.md:0
@@ -31920,6 +31937,7 @@ msgstr ""
 #: content/funders/www.cartoexpert.com.md:0
 #: content/funders/www.ceicol.com.md:0
 #: content/funders/www.centremapslive.co.uk.md:0
+#: content/funders/www.datenbankgesellschaft.de.md:0
 #: content/funders/www.ecophylla.ca.md:0 content/funders/www.eprime.cl.md:0
 #: content/funders/www.etib-ing.com.md:0 content/funders/www.gaia-mbh.de.md:0
 #: content/funders/www.geocat.net.md:0 content/funders/www.giswater.org.md:0
@@ -31929,6 +31947,8 @@ msgstr ""
 #: content/funders/www.infragis.at.md:0 content/funders/www.loekplan.de.md:0
 #: content/funders/www.lpk.ch.md:0
 #: content/funders/www.lutraconsulting.co.uk.md:0
+#: content/funders/www.map-site.de.md:0
+#: content/funders/www.maptransfer.de.md:0
 #: content/funders/www.micromapper.ro.md:0
 #: content/funders/www.mierune.co.jp.md:0
 #: content/funders/www.naturalgis.pt.md:0 content/funders/www.opengis.ch.md:0
@@ -31948,8 +31968,8 @@ msgstr ""
 #: content/funders/www.terraplan.com.md:0
 #: content/funders/www.terrelogiche.com.md:0
 #: content/funders/www.territoires.bio.md:0
-#: content/funders/www.theworks.la.md:0 content/funders/www.vgregion.se.md:0
-#: content/funders/www.wagner-it.de.md:0
+#: content/funders/www.theworks.la.md:0 content/funders/www.uih.de.md:0
+#: content/funders/www.vgregion.se.md:0 content/funders/www.wagner-it.de.md:0
 #: content/funders/www.wakelinassociates.com.au.md:0
 #: content/funders/www.zevross.com.md:0
 msgid "2026-02-28"
@@ -31989,6 +32009,7 @@ msgstr ""
 #: content/funders/www.argusim.de.md:0
 #: content/funders/www.bgu-geoservice.de.md:0
 #: content/funders/www.bk-teleconsult.de.md:0
+#: content/funders/www.datenbankgesellschaft.de.md:0
 #: content/funders/www.etib-ing.com.md:0 content/funders/www.gaia-mbh.de.md:0
 #: content/funders/www.geoneers.de.md:0 content/funders/www.gfi-gis.de.md:0
 #: content/funders/www.gkg-kassel.de.md:0
@@ -32005,7 +32026,7 @@ msgstr ""
 #: content/funders/www.qgis.de.md:0 content/funders/www.r-gf.de.md:0
 #: content/funders/www.r-nc.de.md:0 content/funders/www.regiodata-gmbh.de.md:0
 #: content/funders/www.scheu-netzplanung.de.md:0
-#: content/funders/www.terraplan.com.md:0
+#: content/funders/www.terraplan.com.md:0 content/funders/www.uih.de.md:0
 #: content/funders/www.wagner-it.de.md:0
 msgid "Germany"
 msgstr ""
@@ -32124,18 +32145,6 @@ msgstr ""
 
 #: content/funders/chillservices.com.md:0
 msgid "chillservices.com.png"
-msgstr ""
-
-#: content/funders/chillservices.com.md:0 content/funders/ib-sendl.de.md:0
-#: content/funders/iternet.org.md:0 content/funders/locatepress.com.md:0
-#: content/funders/rapidlasso.de.md:0 content/funders/route4me.com.md:0
-#: content/funders/www.argusim.de.md:0 content/funders/www.arxit.com.md:0
-#: content/funders/www.fh.dk.md:0 content/funders/www.geocorsi.it.md:0
-#: content/funders/www.geoneers.de.md:0
-#: content/funders/www.kalajavesitutkimus.fi.md:0
-#: content/funders/www.maptransfer.de.md:0 content/funders/www.pgnu.de.md:0
-#: content/funders/www.qgis.pt.md:0
-msgid "2024-01-01"
 msgstr ""
 
 #: content/funders/chillservices.com.md:0
@@ -32405,6 +32414,16 @@ msgstr ""
 msgid "ib-sendl.de.svg"
 msgstr ""
 
+#: content/funders/ib-sendl.de.md:0 content/funders/iternet.org.md:0
+#: content/funders/locatepress.com.md:0 content/funders/rapidlasso.de.md:0
+#: content/funders/route4me.com.md:0 content/funders/www.argusim.de.md:0
+#: content/funders/www.arxit.com.md:0 content/funders/www.fh.dk.md:0
+#: content/funders/www.geocorsi.it.md:0 content/funders/www.geoneers.de.md:0
+#: content/funders/www.kalajavesitutkimus.fi.md:0
+#: content/funders/www.pgnu.de.md:0 content/funders/www.qgis.pt.md:0
+msgid "2024-01-01"
+msgstr ""
+
 #: content/funders/ib-sendl.de.md:0
 msgid "https://ib-sendl.de/"
 msgstr ""
@@ -32640,7 +32659,7 @@ msgstr ""
 
 #: content/funders/neratech.it.md:0 content/funders/pozi.com.md:0
 #: content/funders/qgis.sk.md:0 content/funders/www.mierune.co.jp.md:0
-#: content/funders/www.sjgeophysics.com.md:0
+#: content/funders/www.sjgeophysics.com.md:0 content/funders/www.uih.de.md:0
 msgid "2025-01-01"
 msgstr ""
 
@@ -32674,10 +32693,6 @@ msgstr ""
 
 #: content/funders/osgeo-oceania.org.md:0
 msgid "osgeo-oceania.org.svg"
-msgstr ""
-
-#: content/funders/osgeo-oceania.org.md:0
-msgid "2025-02-25"
 msgstr ""
 
 #: content/funders/osgeo-oceania.org.md:0
@@ -33350,6 +33365,18 @@ msgstr ""
 msgid "https://www.datarock.com.au/"
 msgstr ""
 
+#: content/funders/www.datenbankgesellschaft.de.md:0
+msgid "d.b.g. Datenbankgesellschaft mbH"
+msgstr ""
+
+#: content/funders/www.datenbankgesellschaft.de.md:0
+msgid "www.datenbankgesellschaft.de.jpg"
+msgstr ""
+
+#: content/funders/www.datenbankgesellschaft.de.md:0
+msgid "http://www.datenbankgesellschaft.de/"
+msgstr ""
+
 #: content/funders/www.debeerendevos.be.md:0
 msgid "DeBeer & DeVos BV"
 msgstr ""
@@ -33832,11 +33859,11 @@ msgid "http://www.lutraconsulting.co.uk/"
 msgstr ""
 
 #: content/funders/www.map-site.de.md:0
-msgid "map-site"
+msgid "map-site.de Geoinformatik"
 msgstr ""
 
 #: content/funders/www.map-site.de.md:0
-msgid "www.map-site.de.png"
+msgid "www.map-site.de.svg"
 msgstr ""
 
 #: content/funders/www.map-site.de.md:0
@@ -34217,7 +34244,7 @@ msgid "Reuther Glasfaser GmbH"
 msgstr ""
 
 #: content/funders/www.r-gf.de.md:0
-msgid "www.r-gf.de.svg"
+msgid "www.r-gf.de.png"
 msgstr ""
 
 #: content/funders/www.r-gf.de.md:0
@@ -34468,6 +34495,21 @@ msgstr ""
 msgid "https://www.theworks.la/"
 msgstr ""
 
+#: content/funders/www.uih.de.md:0
+msgid ""
+"UIH "
+"Planungsbüro "
+"- Landschaftsarchitekten Figura - Schackers PartGmbB"
+msgstr ""
+
+#: content/funders/www.uih.de.md:0
+msgid "www.uih.de.png"
+msgstr ""
+
+#: content/funders/www.uih.de.md:0
+msgid "https://www.uih.de/"
+msgstr ""
+
 #: content/funders/www.urbsol.com.au.md:0
 msgid "Urbsol"
 msgstr ""
@@ -34690,35 +34732,50 @@ msgid ""
 msgstr ""
 
 #: content/funding/donate.md:34
-msgid "Stripe Donation"
+msgid "Payrexx Donation"
 msgstr ""
 
 #: content/funding/donate.md:36
 msgid ""
-"We use the stripe.com service to receive credit card donations. Note that "
-"the payment fees at Stripe are substantially lower than at Paypal - so we "
-"would appreciate it, if you could use Stripe instead of PayPal. No signup "
-"needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-"
-"widget >}} {{< rich-right-end >}} {{< rich-box-end >}}"
+"We use the [payrexx.com](https://payrexx.com) service to receive credit card"
+" donations. Note that the payment fees at Payrexx are substantially lower "
+"than at Paypal - so we would appreciate it, if you could use Payrexx instead"
+" of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start "
+">}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:44 content/thank-you/index.md:67
+#: content/funding/donate.md:44
+msgid ""
+"<!-- {{< rich-box-start layoutClass=\"has-right mt-6\" mode=\"html\" >}}\n"
+"{{< rich-content-start themeClass=\"coloring-1\" >}}\n"
+"## Stripe Donation\n"
+"\n"
+"We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.\n"
+"{{< rich-content-end >}}\n"
+"{{< rich-right-start >}}  \n"
+"{{< stripe-widget >}}\n"
+"{{< rich-right-end >}}\n"
+"{{< rich-box-end >}}\n"
+" -->\n"
+msgstr ""
+
+#: content/funding/donate.md:56 content/thank-you/index.md:68
 msgid ""
 "{{< rich-box-start layoutClass=\"has-right\" mode=\"html\" >}} {{< rich-"
 "content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:46
+#: content/funding/donate.md:58
 msgid "Bank transfer"
 msgstr ""
 
-#: content/funding/donate.md:48
+#: content/funding/donate.md:60
 msgid ""
 "Use the details below to make a donation via international money transfer: "
 "{{< rich-content-end >}} {{< rich-right-start >}}"
 msgstr ""
 
-#: content/funding/donate.md:51
+#: content/funding/donate.md:63
 msgid ""
 "<pre class=\"donatbox\">\n"
 "Account name: QGIS.ORG\n"
@@ -34736,21 +34793,21 @@ msgid ""
 "</pre>\n"
 msgstr ""
 
-#: content/funding/donate.md:65
+#: content/funding/donate.md:77
 msgid "{{< rich-right-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:69
+#: content/funding/donate.md:81
 msgid ""
 "{{< rich-box-start layoutClass=\"has-right paypal mb-6\" >}} {{< rich-"
 "content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:71
+#: content/funding/donate.md:83
 msgid "Paypal Donation"
 msgstr ""
 
-#: content/funding/donate.md:73
+#: content/funding/donate.md:85
 msgid ""
 "You can use Paypal to donate using your own credit card (but we prefer to "
 "use Stripe for that). The payment is processed by PayPal but you don't need "
@@ -34758,21 +34815,21 @@ msgid ""
 "card."
 msgstr ""
 
-#: content/funding/donate.md:75
+#: content/funding/donate.md:87
 msgid "You can also use your own Paypal account to donate."
 msgstr ""
 
-#: content/funding/donate.md:77
+#: content/funding/donate.md:89
 msgid ""
 "{{< paypal-button >}} {{< rich-content-end >}} {{< rich-right-start >}}<br "
 "/>![](../paypal.png) {{< rich-right-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:85 content/thank-you/index.md:30
+#: content/funding/donate.md:97 content/thank-you/index.md:30
 msgid "Your support is vital to keep QGIS improving"
 msgstr ""
 
-#: content/funding/donate.md:87
+#: content/funding/donate.md:99
 msgid ""
 "We would like to extend our activities and improve the quality of QGIS. Your"
 " financial contribution will support the maintenance, improvement, and "
@@ -34780,121 +34837,121 @@ msgid ""
 "longevity and overall health of the project."
 msgstr ""
 
-#: content/funding/donate.md:89
+#: content/funding/donate.md:101
 msgid ""
 "{{< columns-start >}} {{< column-start class=\"is-flex-direction-column is-"
 "one-third left-title\">}}"
 msgstr ""
 
-#: content/funding/donate.md:91
+#: content/funding/donate.md:103
 msgid "Enhanced Infrastructure & Development Support"
 msgstr ""
 
-#: content/funding/donate.md:94
+#: content/funding/donate.md:106
 msgid ""
 "{{< column-start class=\"is-flex-direction-column is-two-thirds\">}} {{< "
 "rich-box-start >}} {{< rich-content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:97
+#: content/funding/donate.md:109
 msgid "Maintaining Core Infrastructure"
 msgstr ""
 
-#: content/funding/donate.md:98
+#: content/funding/donate.md:110
 msgid "The official QGIS.org website, a central hub for all things QGIS."
 msgstr ""
 
-#: content/funding/donate.md:99
+#: content/funding/donate.md:111
 msgid "Our issue tracking system for efficient bug and feature reporting."
 msgstr ""
 
-#: content/funding/donate.md:100
+#: content/funding/donate.md:112
 msgid ""
 "The continuous integration system, ensuring code quality and stability "
 "through automated tests. {{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:104 content/funding/donate.md:133
+#: content/funding/donate.md:116 content/funding/donate.md:145
 #: content/funding/membership.md:53 content/funding/membership.md:63
 #: content/funding/membership.md:73
 msgid ""
 "{{< rich-box-start >}} {{< rich-content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:106
+#: content/funding/donate.md:118
 msgid "Software Development & QA"
 msgstr ""
 
-#: content/funding/donate.md:107
+#: content/funding/donate.md:119
 msgid ""
 "Continually improve and package QGIS for various operating systems, making "
 "it accessible to more users worldwide."
 msgstr ""
 
-#: content/funding/donate.md:108
+#: content/funding/donate.md:120
 msgid "Address bugs and other issues promptly, enhancing the user experience."
 msgstr ""
 
-#: content/funding/donate.md:109
+#: content/funding/donate.md:121
 msgid ""
 "Manage pull requests and conduct thorough code reviews, ensuring the highest"
 " standards of software development. {{< rich-content-end >}} {{< rich-box-"
 "end >}}"
 msgstr ""
 
-#: content/funding/donate.md:113 content/funding/donate.md:140
-#: content/funding/membership.md:80 content/funding/membership.md:200
-#: content/funding/membership.md:212 content/funding/membership.md:226
-#: content/funding/membership.md:242 content/funding/membership.md:254
-#: content/goodies/index.md:51 content/goodies/index.md:88
-#: content/project/overview.md:54 content/project/overview.md:72
-#: content/project/overview.md:90 content/project/overview.md:223
-#: content/project/overview.md:237
+#: content/funding/donate.md:125 content/funding/donate.md:152
+#: content/funding/membership.md:80 content/funding/membership.md:188
+#: content/funding/membership.md:200 content/funding/membership.md:212
+#: content/funding/membership.md:226 content/funding/membership.md:242
+#: content/funding/membership.md:254 content/goodies/index.md:51
+#: content/goodies/index.md:88 content/project/overview.md:54
+#: content/project/overview.md:72 content/project/overview.md:90
+#: content/project/overview.md:223 content/project/overview.md:237
 msgid "{{< column-end >}} {{< columns-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:116
+#: content/funding/donate.md:128
 msgid ""
 "{{< columns-start class=\"mb-6\">}} {{< column-start class=\"is-flex-"
 "direction-column is-one-third left-title\">}}"
 msgstr ""
 
-#: content/funding/donate.md:118
+#: content/funding/donate.md:130
 msgid "Community Growth & Engagement"
 msgstr ""
 
-#: content/funding/donate.md:123
+#: content/funding/donate.md:135
 msgid ""
 "{{< column-start class=\"is-flex-direction-column is-two-thirds \">}} {{< "
 "rich-box-start >}} {{< rich-content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:126
+#: content/funding/donate.md:138
 msgid "Empowering Our Volunteers"
 msgstr ""
 
-#: content/funding/donate.md:127
+#: content/funding/donate.md:139
 msgid ""
 "Mentoring new contributors, fostering a welcoming and productive community."
 msgstr ""
 
-#: content/funding/donate.md:128
+#: content/funding/donate.md:140
 msgid ""
 "Translating QGIS into multiple languages, making the software truly global."
 msgstr ""
 
-#: content/funding/donate.md:129
+#: content/funding/donate.md:141
 msgid ""
 "Running the QGIS grant system, enabling focused work on significant "
 "improvements and innovations that are often challenging for volunteers to "
 "undertake on their own. {{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:135
+#: content/funding/donate.md:147
 msgid "Fostering Collaboration & Knowledge Sharing"
 msgstr ""
 
-#: content/funding/donate.md:136
+#: content/funding/donate.md:148
 msgid ""
 "Organizing and supporting contributor meetings and QGIS conferences, "
 "essential for knowledge exchange, collaboration, and the collective "
@@ -34902,7 +34959,7 @@ msgid ""
 ">}}"
 msgstr ""
 
-#: content/funding/donate.md:143
+#: content/funding/donate.md:155
 msgid ""
 "QGIS.ORG wants to be transparent with the funds we receive and how we spend "
 "them. Please have a look at the financial reports and budgets in our "
@@ -35209,18 +35266,13 @@ msgstr ""
 
 #: content/funding/membership.md:184
 msgid ""
-"You can self-enroll, or reach out to the treasurer at finance@qgis.org or "
-"any other Project Steering Committee (PSC) member to express your interest "
-"in becoming a sustaining member."
+"You can reach out to the treasurer at finance@qgis.org or any other Project "
+"Steering Committee (PSC) member to express your interest in becoming a "
+"sustaining member."
 msgstr ""
 
 #: content/funding/membership.md:186
-msgid ""
-"{{< button class = \"is-primary6\" link = \"mailto:finance@qgis.org\" text ="
-" \"Write to treasurer\" >}} {{< button class = \"is-primary6\" link = "
-"\"https://changelog.qgis.org/en/accounts/login/?next=/en/qgis/sustaining-"
-"member/add/\" text = \"Self Enroll\" >}} {{< column-end >}} {{< columns-end "
-">}}"
+msgid "Write to treasurer"
 msgstr ""
 
 #: content/funding/membership.md:193
@@ -35255,9 +35307,7 @@ msgid ""
 msgstr ""
 
 #: content/funding/membership.md:224
-msgid ""
-"[Open Sustaining Members "
-"changelog](https://changelog.qgis.org/en/qgis/members/list/)"
+msgid "[Open Sustaining Members](https://members.qgis.org/)"
 msgstr ""
 
 #: content/funding/membership.md:231
@@ -35433,8 +35483,77 @@ msgid ""
 "column-end>}} {{< columns-end >}}"
 msgstr ""
 
+#: content/hub-maps/09706721-a04b-4920-a869-328b73dac0e8.md:0
+msgid "Aquatic invasive species portrait"
+msgstr ""
+
+#: content/hub-maps/09706721-a04b-4920-a869-328b73dac0e8.md:0
+msgid ""
+"This 6 x 3 feet (this is a low resolution version) map was created (100%) in"
+" QGIS. It is a portrait of the aquatic invasive species in southern Quebec, "
+"Canada. It represents the different species present and the infected lakes. "
+"The map was made using open data from Government of Quebec and invasive "
+"species observations comming from different organizations. It was designed "
+"to be printed full scale and displayed in enviromental education events."
+msgstr ""
+
+#: content/hub-maps/09706721-a04b-4920-a869-328b73dac0e8.md:0
+msgid "Theriault"
+msgstr ""
+
+#: content/hub-maps/09706721-a04b-4920-a869-328b73dac0e8.md:0
+msgid "09706721-a04b-4920-a869-328b73dac0e8.webp"
+msgstr ""
+
+#: content/hub-maps/09706721-a04b-4920-a869-328b73dac0e8.md:0
+msgid "https://hub.qgis.org/media/maps/2025/EEEA_200dpi.jpeg"
+msgstr ""
+
+#: content/hub-maps/09706721-a04b-4920-a869-328b73dac0e8.md:0
+msgid "https://hub.qgis.org/map-gallery/30"
+msgstr ""
+
+#: content/hub-maps/384537d0-d003-4c64-ba9e-da65d7229ff8.md:0
+msgid "Wood-carved map of Rotterdam"
+msgstr ""
+
+#: content/hub-maps/384537d0-d003-4c64-ba9e-da65d7229ff8.md:0
+msgid ""
+"First, I've created a polygon for the extent and filled it with a wood "
+"texture using Raster Image Fill. Then I've downloaded data from Overture "
+"Maps using the QGIS GeoParquet Downloader plugin and styled it with a white "
+"stroke and an inner shadow."
+msgstr ""
+
+#: content/hub-maps/384537d0-d003-4c64-ba9e-da65d7229ff8.md:0
+#: content/hub-maps/d7212278-ae2e-4522-a40c-de4e7641bba3.md:0
+msgid "Hans Kwast"
+msgstr ""
+
+#: content/hub-maps/384537d0-d003-4c64-ba9e-da65d7229ff8.md:0
+msgid "384537d0-d003-4c64-ba9e-da65d7229ff8.webp"
+msgstr ""
+
+#: content/hub-maps/384537d0-d003-4c64-ba9e-da65d7229ff8.md:0
+msgid "https://hub.qgis.org/media/maps/2025/Rotterdam_from_wood.png"
+msgstr ""
+
+#: content/hub-maps/384537d0-d003-4c64-ba9e-da65d7229ff8.md:0
+msgid "https://hub.qgis.org/map-gallery/20"
+msgstr ""
+
 #: content/hub-maps/81b4af5c-74ff-4dff-8d95-d894149d9e82.md:0
 msgid "Saint Lucia 1:25000 South"
+msgstr ""
+
+#: content/hub-maps/81b4af5c-74ff-4dff-8d95-d894149d9e82.md:0
+msgid ""
+"A topographical map of Saint Lucia. Uses data from the Government of Saint "
+"Lucia, Open Street Map. Hill shade and elevation datasets were generated "
+"from the contours by Kartoza. Map design and cartography by Kartoza. Shared "
+"with permission from Marcathian Alexander. This map has been edited for "
+"publishing in the QGIS gallery and does not represent an official "
+"cartographic product of the Government of Saint Lucia."
 msgstr ""
 
 #: content/hub-maps/81b4af5c-74ff-4dff-8d95-d894149d9e82.md:0
@@ -35452,8 +35571,48 @@ msgstr ""
 msgid "https://hub.qgis.org/media/maps/2025/SaintLucioaSouth.png"
 msgstr ""
 
+#: content/hub-maps/81b4af5c-74ff-4dff-8d95-d894149d9e82.md:0
+msgid "https://hub.qgis.org/map-gallery/4"
+msgstr ""
+
+#: content/hub-maps/8da5e29d-38b6-4be6-a508-3d3e39c8e906.md:0
+msgid "An REM of the Willamette River, OR"
+msgstr ""
+
+#: content/hub-maps/8da5e29d-38b6-4be6-a508-3d3e39c8e906.md:0
+msgid ""
+"This map was done for the 2024 #30DayMapChallenge\r\n"
+"It shows the Willamette River between Corvallis and Salem Oregon. A Relative Elevation Model (REM) is also known as a height above river raster. The DEM is detrended to the baseline elevation of the river. I used the IDW method detailed by Dan Coe Carto: https://dancoecarto.com/creating-rems-in-qgis-the-idw-method"
+msgstr ""
+
+#: content/hub-maps/8da5e29d-38b6-4be6-a508-3d3e39c8e906.md:0
+msgid "Kurt Menke"
+msgstr ""
+
+#: content/hub-maps/8da5e29d-38b6-4be6-a508-3d3e39c8e906.md:0
+msgid "8da5e29d-38b6-4be6-a508-3d3e39c8e906.webp"
+msgstr ""
+
+#: content/hub-maps/8da5e29d-38b6-4be6-a508-3d3e39c8e906.md:0
+msgid "https://hub.qgis.org/media/maps/2025/Willamette_River_REM.jpg"
+msgstr ""
+
+#: content/hub-maps/8da5e29d-38b6-4be6-a508-3d3e39c8e906.md:0
+msgid "https://hub.qgis.org/map-gallery/24"
+msgstr ""
+
 #: content/hub-maps/91dae3dc-44d7-48aa-88c0-5157cc4971e1.md:0
 msgid "Waterberg Biosphere Reserve, South Africa"
+msgstr ""
+
+#: content/hub-maps/91dae3dc-44d7-48aa-88c0-5157cc4971e1.md:0
+msgid ""
+"This map was created by Amy Burness (Kartoza), Colin Bleach and Richard "
+"Wadley (authors of Waterberg Echoes). Amy created the map completely in "
+"QGIS. The original is printed on A0 suitable for use at a roadside "
+"information display. The map depicts key focal points in the Waterberg "
+"Biosphere Reserve, South Africa. Credits to Kartoza (https://kartoza.com) "
+"and Waterberg Tourism.."
 msgstr ""
 
 #: content/hub-maps/91dae3dc-44d7-48aa-88c0-5157cc4971e1.md:0
@@ -35464,8 +35623,16 @@ msgstr ""
 msgid "https://hub.qgis.org/media/maps/2025/waterber-map-small.png"
 msgstr ""
 
+#: content/hub-maps/91dae3dc-44d7-48aa-88c0-5157cc4971e1.md:0
+msgid "https://hub.qgis.org/map-gallery/1"
+msgstr ""
+
 #: content/hub-maps/ad0f968f-e468-4db1-bcbe-209e3522c827.md:0
 msgid "Mount Teide"
+msgstr ""
+
+#: content/hub-maps/ad0f968f-e468-4db1-bcbe-209e3522c827.md:0
+msgid "This map was created by converting terrain model to polygon contours."
 msgstr ""
 
 #: content/hub-maps/ad0f968f-e468-4db1-bcbe-209e3522c827.md:0
@@ -35480,8 +35647,70 @@ msgstr ""
 msgid "https://hub.qgis.org/media/maps/2025/output3.png"
 msgstr ""
 
+#: content/hub-maps/ad0f968f-e468-4db1-bcbe-209e3522c827.md:0
+msgid "https://hub.qgis.org/map-gallery/11"
+msgstr ""
+
+#: content/hub-maps/c54cae07-a1ee-48e0-9be1-66cb341266e8.md:0
+msgid "Hydrology of Africa"
+msgstr ""
+
+#: content/hub-maps/c54cae07-a1ee-48e0-9be1-66cb341266e8.md:0
+msgid ""
+"The dataset was modified by override using an expression to divide the "
+"ORD_STRA column by 10, and classified according to number of inflow rivers. "
+"Colour ramp was inverted (if necessary) to have brighter blue colours for "
+"larger rivers and vice versa."
+msgstr ""
+
+#: content/hub-maps/c54cae07-a1ee-48e0-9be1-66cb341266e8.md:0
+msgid "Akanazu"
+msgstr ""
+
+#: content/hub-maps/c54cae07-a1ee-48e0-9be1-66cb341266e8.md:0
+msgid "c54cae07-a1ee-48e0-9be1-66cb341266e8.webp"
+msgstr ""
+
+#: content/hub-maps/c54cae07-a1ee-48e0-9be1-66cb341266e8.md:0
+msgid "https://hub.qgis.org/media/maps/2025/Africa_hydro.png"
+msgstr ""
+
+#: content/hub-maps/c54cae07-a1ee-48e0-9be1-66cb341266e8.md:0
+msgid "https://hub.qgis.org/map-gallery/27"
+msgstr ""
+
+#: content/hub-maps/d7212278-ae2e-4522-a40c-de4e7641bba3.md:0
+msgid "Vintage map of Rotterdam"
+msgstr ""
+
+#: content/hub-maps/d7212278-ae2e-4522-a40c-de4e7641bba3.md:0
+msgid ""
+"To create the map, I've used the TopoTijdReis plugin in QGIS to explore some beautiful historic maps. I then sampled fill and line colours and patterns from a topographic map of 1948. Using the OpenStreetMap vector tile from MapTiler via the MapTiler plugin, I adjusted the colours of features with the samples using Symbol layer types Raster Image Fill, Raster Line and Raster Image Marker. Because a vector tile layer was used, I can create this map style for any place on earth with enough OpenStreetMap data!\r\n"
+"The TopoTijdReis plugin is an amazing tool that lets you travel through time with historic topographic maps of the Netherlands in QGIS!"
+msgstr ""
+
+#: content/hub-maps/d7212278-ae2e-4522-a40c-de4e7641bba3.md:0
+msgid "d7212278-ae2e-4522-a40c-de4e7641bba3.webp"
+msgstr ""
+
+#: content/hub-maps/d7212278-ae2e-4522-a40c-de4e7641bba3.md:0
+msgid "https://hub.qgis.org/media/maps/2025/Rotterdam_Vintage_Map.png"
+msgstr ""
+
+#: content/hub-maps/d7212278-ae2e-4522-a40c-de4e7641bba3.md:0
+msgid "https://hub.qgis.org/map-gallery/19"
+msgstr ""
+
 #: content/hub-maps/e1c74225-5d7c-4b53-9930-b94d805e631b.md:0
 msgid "Saint Lucia Monochrome Map"
+msgstr ""
+
+#: content/hub-maps/e1c74225-5d7c-4b53-9930-b94d805e631b.md:0
+msgid ""
+"A monochrome map of the area around Castries, Saint Lucia. The map was made "
+"in QGIS and includes data from diverse sources including OpenStreetmap and "
+"contributors, the Government of Saint Lucia and data generated for the "
+"purposes of creating the map."
 msgstr ""
 
 #: content/hub-maps/e1c74225-5d7c-4b53-9930-b94d805e631b.md:0
@@ -35492,8 +35721,41 @@ msgstr ""
 msgid "https://hub.qgis.org/media/maps/2025/StLucia_Monochrome_Map_Small.png"
 msgstr ""
 
+#: content/hub-maps/e1c74225-5d7c-4b53-9930-b94d805e631b.md:0
+msgid "https://hub.qgis.org/map-gallery/2"
+msgstr ""
+
 #: content/hub-maps/f47f070b-5aff-42b6-99a3-801e37bb82d8.md:0
 msgid "Great Meteor Sea Mountain"
+msgstr ""
+
+#: content/hub-maps/f47f070b-5aff-42b6-99a3-801e37bb82d8.md:0
+msgid ""
+"Map of the Great Meteor, a Sea Mountain with ~4000m high, nearby the Azores Island.\r\n"
+"The Layout template is from the Layout Loader Plugin\r\n"
+"\r\n"
+"The major exercise of this map was the ability to put bathymetic contours labels following a line from an helper layer called labels, instead of randomly place along the contours.\r\n"
+"\r\n"
+"This was the expression used on the labels placement geometry generator.\r\n"
+"\r\n"
+"    coalesce(\r\n"
+"\taggregate(\r\n"
+"\t\t'labels', -- layer\r\n"
+"\t\t'collect', -- aggregate type\r\n"
+"\t\tintersection(\r\n"
+"\t\t\tbuffer($geometry,3000),\r\n"
+"\t\t\tgeometry(@parent)\r\n"
+"\t\t), -- Expression\r\n"
+"\t\tintersects(\r\n"
+"\t\t\t$geometry,\r\n"
+"\t\t\tgeometry(@parent)\r\n"
+"\t\t) -- Filter\r\n"
+"\t),\r\n"
+"\t$geometry\r\n"
+"    )\r\n"
+"\r\n"
+"\r\n"
+"Data: GEBCO (https://www.gebco.net/data_and_products/gridded_bathymetry_data/)"
 msgstr ""
 
 #: content/hub-maps/f47f070b-5aff-42b6-99a3-801e37bb82d8.md:0
@@ -35506,6 +35768,10 @@ msgstr ""
 
 #: content/hub-maps/f47f070b-5aff-42b6-99a3-801e37bb82d8.md:0
 msgid "https://hub.qgis.org/media/maps/2025/great_meteor_seamounts_layout.png"
+msgstr ""
+
+#: content/hub-maps/f47f070b-5aff-42b6-99a3-801e37bb82d8.md:0
+msgid "https://hub.qgis.org/map-gallery/9"
 msgstr ""
 
 #: content/hub/index.md:0
@@ -36114,7 +36380,7 @@ msgid "Our Privacy Policy"
 msgstr ""
 
 #: content/project/case-studies.md:0 content/project/case-studies.md:13
-#: content/project/overview.md:197 content/thank-you/index.md:69
+#: content/project/overview.md:197 content/thank-you/index.md:70
 msgid "Case Studies"
 msgstr ""
 
@@ -36370,7 +36636,7 @@ msgstr ""
 msgid "Local user groups and support providers"
 msgstr ""
 
-#: content/project/overview.md:126 content/thank-you/index.md:84
+#: content/project/overview.md:126 content/thank-you/index.md:85
 msgid "Join a community of like-minded individuals in your region."
 msgstr ""
 
@@ -38774,14 +39040,17 @@ msgid ""
 "content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/thank-you/index.md:40
-msgid ""
-"{{< rich-content-end >}} {{< rich-right-start mode=\"html\" >}} {{< stripe-"
-"widget otherMethods=\"true\" alreadyDonated=\"true\">}} {{< rich-right-end "
-">}} {{< rich-box-end >}}"
+#: content/thank-you/index.md:42
+msgid "<!-- {{< stripe-widget otherMethods=\"true\" alreadyDonated=\"true\">}} -->\n"
 msgstr ""
 
-#: content/thank-you/index.md:46
+#: content/thank-you/index.md:43
+msgid ""
+"{{< payrexx-widget otherMethods=\"true\" alreadyDonated=\"true\">}} {{< "
+"rich-right-end >}} {{< rich-box-end >}}"
+msgstr ""
+
+#: content/thank-you/index.md:47
 msgid ""
 "{{< rich-box-start layoutClass=\"qgis_first_conference mt-6\">}} {{< rich-"
 "content-start >}} ![QGIS Developers 1st meeting](qgis_1st_conference.png "
@@ -38789,13 +39058,13 @@ msgid ""
 ">}}"
 msgstr ""
 
-#: content/thank-you/index.md:53
+#: content/thank-you/index.md:54
 msgid ""
 "{{< rich-box-start icon=\"🛟\" layoutClass=\"tips mt-6 mb-6\">}} {{< rich-"
 "content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/thank-you/index.md:56
+#: content/thank-you/index.md:57
 msgid ""
 "If you have any questions while starting QGIS, welcome to our complete guide"
 " to installing for the first time. <a href=\"/resources/installation-"
@@ -38803,11 +39072,11 @@ msgid ""
 ">}}"
 msgstr ""
 
-#: content/thank-you/index.md:61
+#: content/thank-you/index.md:62
 msgid "What's next?"
 msgstr ""
 
-#: content/thank-you/index.md:63
+#: content/thank-you/index.md:64
 msgid ""
 "For testing and learning purposes, [a sample dataset is "
 "available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-"
@@ -38815,35 +39084,35 @@ msgid ""
 "in different formats."
 msgstr ""
 
-#: content/thank-you/index.md:65
+#: content/thank-you/index.md:66
 msgid ""
 "You can also look at the cases - there are many inspiring stories there."
 msgstr ""
 
-#: content/thank-you/index.md:71
+#: content/thank-you/index.md:72
 msgid ""
 "We gather inspiring stories from actual users that showcase the versatility "
 "and power of the QGIS solution"
 msgstr ""
 
-#: content/thank-you/index.md:73
+#: content/thank-you/index.md:74
 msgid ""
 "[Find out more]({{< ref \"project/case-studies.md\" >}}) {{< rich-content-"
 "end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}}"
 " {{< rich-box-end >}}"
 msgstr ""
 
-#: content/thank-you/index.md:80
+#: content/thank-you/index.md:81
 msgid ""
 "{{< rich-box-start layoutClass=\"has-right rounded\" mode=\"html\" >}} {{< "
 "rich-content-start themeClass=\"coloring-2\" >}}"
 msgstr ""
 
-#: content/thank-you/index.md:82
+#: content/thank-you/index.md:83
 msgid "Local user groups"
 msgstr ""
 
-#: content/thank-you/index.md:86
+#: content/thank-you/index.md:87
 msgid ""
 "[Local groups list]({{< ref \"community/groups.md\" >}}) {{< rich-content-"
 "end >}} {{< rich-right-start >}}<br />![Local user "
