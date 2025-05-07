@@ -467,6 +467,51 @@ The commands are used in the CI/CD pipeline and can also be run locally for deve
 - All translation files are managed in `translations/` and synchronized with Transifex.
 - No manual steps are required for regular translation updates — everything is handled by the pipeline.
 
+### Preventing Hugo-Gettext Errors
+
+To ensure smooth operation of hugo-gettext, follow these important formatting requirements:
+
+1. **Shortcode Formatting**  
+   When using shortcodes, the closing tag `>}}` must not be placed on a new line. While the shortcode itself can span multiple lines, the closing tag must be on the same line as the last content.
+
+   **Correct:**
+   ```
+   {{< figure src="/images/example.jpg"
+              title="Example image"
+              alt="Description of the image" >}}
+   ```
+
+   **Incorrect:**
+   ```
+   {{< figure src="/images/example.jpg"
+              title="Example image"
+              alt="Description of the image"
+   >}}
+   ```
+
+2. **Empty Markdown Files**  
+   Do not create completely empty markdown files (without any content or front matter) in the `content` directory as they can cause hugo-gettext to break with errors.
+
+3. **Newlines in Translation Strings**  
+   Avoid extra newlines (`\n`) at the end of `msgstr` entries if the corresponding `msgid` doesn't have them. This mismatch can cause compilation errors.
+
+   **Example:**
+   ```
+   msgid "Language"
+   msgstr "Език\n"  # Problematic - has \n while msgid doesn't
+   ```
+
+   Should be:
+   ```
+   msgid "Language"
+   msgstr "Език"  # Correct
+   ```
+
+   A fix-newlines script is available to automatically correct these issues:
+   ```
+   make fix-newlines
+   ```
+
 ## Search Functionality 
 The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](https://markjs.io/).
 
