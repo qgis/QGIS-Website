@@ -10,7 +10,7 @@ heroSize: "is-large"
 {{< block
     title="Map."
     subtitle="Create, manage, analyze and share data on desktop, mobile and cloud."
-    class="is-info"    
+    class="is-info"
     sub-block-side="left"
 >}}{{< /block >}}
 

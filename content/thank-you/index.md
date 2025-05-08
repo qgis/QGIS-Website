@@ -39,7 +39,6 @@ Our very best regards!
 
 {{< rich-content-end >}}
 {{< rich-right-start mode="html" >}}
-<!-- {{< stripe-widget otherMethods="true" alreadyDonated="true">}} -->
 {{< payrexx-widget otherMethods="true" alreadyDonated="true">}}
 {{< rich-right-end >}}
 {{< rich-box-end >}}

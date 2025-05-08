@@ -88,10 +88,10 @@ mktxtemp:
 txpush: mktxtemp
 	rm -rf $(TEMP)
 	python3 scripts/tx_convert_push.py i18n/en.yml $(TEMP)/en.yml --lang en
-	./tx push -s
+	tx push -s
 
 txpull: mktxtemp
-	./tx pull -a -f
+	tx pull -a -f
 	python3 scripts/tx_convert_pull.py $(TEMP) i18n
 
 messages-extract:

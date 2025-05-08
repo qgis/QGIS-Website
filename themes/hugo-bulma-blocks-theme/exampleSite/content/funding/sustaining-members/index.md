@@ -25,7 +25,7 @@ expensive for volunteer developers.
     subtitle="Organizations or individuals interested in supporting our project should contact the treasurer, Joe Bloggs(finances@example.com), with questions, requests for becoming a sustaining member, invoices or to make arrangements."
     image=""
     sub-block-side="left"
-    class="is-primary"    
+    class="is-primary"
     title-size="is-4"
     subtitle-size="is-6"
     link="mailto:finance@example.com"

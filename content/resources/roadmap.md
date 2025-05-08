@@ -84,6 +84,5 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 |---|---|
 |Windows|[OSGeo4W]({{< ref "resources/installation-guide#online-osgeo4w-installer" >}})|
 |Linux|[Debian/Ubuntu]({{< ref "resources/installation-guide#repositories" >}})|
-<!-- |MacOS|[Mac OS]({{< ref "resources/installation-guide#qgis-nightly-release" >}})| -->
 
 {{< content-end >}}
