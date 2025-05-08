@@ -7,7 +7,7 @@ heroSize: "is-medium"
 heroLogo: "img/logosign.svg"
 HeroImage: "img/hegobg1.webp"
 HasBanner: true
-ButtonText: "Download" 
+ButtonText: "Download"
 ButtonLink: "download/"
 SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and Open Source"

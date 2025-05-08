@@ -29,7 +29,7 @@ showcase: "planet"
 
 <div class="wp-block-syntaxhighlighter-code "><pre class="brush: sql; title: ; notranslate">
 LOAD CSV with headers 
-FROM "file:///stops.txt" 
+FROM "file:///stops.txt"
 AS row 
 CREATE (:Stop {
    stop_id: row&#91;"stop_id"],

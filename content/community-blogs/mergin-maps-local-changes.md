@@ -10,7 +10,6 @@ showcase: "planet"
 
 <p>With the recent changes to the <a href="https://merginmaps.com">Mergin Maps</a> plugin for QGIS, you can visualise the local changes before synchronising your data.</p>
 
-<!-- more -->
 
 <p>Have you ever been in the situation when, after making a lot of changes in your Mergin Maps project, you hesitate to press Sync button because you are not sure that all required changes are made or afraid that some unwanted edits were introduced? Or maybe you need to review the work done and see what actually have changed between two versions? If the answer to any of these questions is “yes” then you will like the changes visualisation functionality we introduced in the 2022.4 version of the <a href="https://merginmaps.com">Mergin Maps</a> plugin for QGIS.</p>
 

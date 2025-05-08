@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: messages 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-07 22:02+0000\n"
+"POT-Creation-Date: 2025-05-07 17:30-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <>\n"
@@ -9073,12 +9073,7 @@ msgid ""
 "clouds/\">MapScaping</a> podcast.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mapscaping-pointcloud.md:13
-#: content/community-blogs/mergin-maps-local-changes.md:13
-msgid "<!-- more -->\n"
-msgstr ""
-
-#: content/community-blogs/mapscaping-pointcloud.md:15
+#: content/community-blogs/mapscaping-pointcloud.md:14
 msgid ""
 "<p>Martin Dobias, our CTO and the lead developer of 3D and point clouds "
 "integration in QGIS sat down with Daniel O’Donohue from Mapscaping to talk "
@@ -9086,7 +9081,7 @@ msgid ""
 "clouds/\">point clouds and QGIS</a>.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mapscaping-pointcloud.md:17
+#: content/community-blogs/mapscaping-pointcloud.md:16
 msgid ""
 "<p>Martin discusses his early involvment with QGIS back in 2005 and how he "
 "started his journey to become a QGIS developer.</p>\n"
@@ -9161,7 +9156,7 @@ msgid ""
 "synchronising your data.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:15
+#: content/community-blogs/mergin-maps-local-changes.md:14
 msgid ""
 "<p>Have you ever been in the situation when, after making a lot of changes "
 "in your Mergin Maps project, you hesitate to press Sync button because you "
@@ -9173,7 +9168,7 @@ msgid ""
 "href=\"https://merginmaps.com\">Mergin Maps</a> plugin for QGIS.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:17
+#: content/community-blogs/mergin-maps-local-changes.md:16
 msgid ""
 "<p>Changes visualisation functionality comes handy in two use-cases: "
 "revising local changes made in the Mergin Maps project before syncing them "
@@ -9181,13 +9176,13 @@ msgid ""
 "project. Let’s take a closer look at this feature.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:19
+#: content/community-blogs/mergin-maps-local-changes.md:18
 msgid ""
 "<h2 id=\"local-changes-visualisation\">Local changes visualisation</h2>\n"
 "<p>While working with Mergin Maps project, the user can at any time revise their current changes made locally. First, make sure that all your layer’s edits are saved (committed) as currently viewing of the unsaved changes is not supported. Then right-click on any vector layer and select “Show Local Changes” entry in the context menu.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:22
+#: content/community-blogs/mergin-maps-local-changes.md:21
 msgid ""
 "<center>\n"
 "<img width=\"400\" src=\"https://lutraconsulting.co.uk/img/posts/local_changes_context_menu.png\" alt=\"Accessing local changes from context menu\" />\n"
@@ -9195,13 +9190,13 @@ msgid ""
 "</center>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:27
+#: content/community-blogs/mergin-maps-local-changes.md:26
 msgid ""
 "<p>This will open the Changes Viewer dialog. Each vector layer with local changes has its own tab in the Changes Viewer dialog, the name of the tab matches the layer name and also contains information about the number of changes in this specific layer.\n"
 "Local changes are shown on the map and in the tabular form, to distinguish different types of edits a following color codes are used: inserts (new features) are green, edits orange and deletions red. It is possible to enlarge or reduce the size of the map and table by dragging the splitter between them, splitter position is applied to all tabs and will be saved and reused on the further dialog calls.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:30
+#: content/community-blogs/mergin-maps-local-changes.md:29
 msgid ""
 "<center>\n"
 "<img width=\"400\" src=\"https://lutraconsulting.co.uk/img/posts/local_changes_window.png\" alt=\"Features added, deleted and modified in map and tabular views\" />\n"
@@ -9209,7 +9204,7 @@ msgid ""
 "</center>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:35
+#: content/community-blogs/mergin-maps-local-changes.md:34
 msgid ""
 "<p>Map canvas in the Changes Viewer dialog supports basic operations like "
 "panning as well as zooming in and out. By default, all project layers are "
@@ -9219,18 +9214,18 @@ msgid ""
 "current vector layer are shown.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:37
+#: content/community-blogs/mergin-maps-local-changes.md:36
 msgid ""
 "<p>If, after some panning/zooming, you need to return to the extent where all changes are visible — press “Zoom Full” button. Also, it is possible to select a specific feature(s) in the table below map and zoom to them by clicking the “Zoom To Selection” button.\n"
 "Finally, changes can be added as a new memory layer to the current project. To do so, click “Add to project” button and choose one of the options: add changes from the current layer or add all changes from all layers. For each changed layer, a new memory layer will be added to the current project. These changes layers will preserve the same color coding for features and attribute table as used in the Changes Viewer dialog. Please note, that these layers should be manually removed from the project before the sync, unless it is your intention to make them a part of your Mergin Maps project.\n"
 "Another way to revise local changes is to open Changes Viewer from the Project Status dialog by clicking “View Changes” button.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:41
+#: content/community-blogs/mergin-maps-local-changes.md:40
 msgid "<h2 id=\"mergin-maps-processing-tools\">Mergin Maps Processing tools</h2>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:43
+#: content/community-blogs/mergin-maps-local-changes.md:42
 msgid ""
 "<p>Sometimes one may want to export local changes as a vector layer and save"
 " that file for further usage. Of course, this can be done with the help of "
@@ -9241,7 +9236,7 @@ msgid ""
 " found under the “Mergin Maps” group in the Processing Toolbox.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:45
+#: content/community-blogs/mergin-maps-local-changes.md:44
 msgid ""
 "<center>\n"
 "<img width=\"400\" src=\"https://lutraconsulting.co.uk/img/posts/local_changes_toolbox.png\" alt=\"Mergin Maps Processing tools to create changeset\" />\n"
@@ -9249,7 +9244,7 @@ msgid ""
 "</center>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:50
+#: content/community-blogs/mergin-maps-local-changes.md:49
 msgid ""
 "<p>In the tool dialog you need to specify a directory with your Mergin Maps "
 "project, select a layer of interest either choosing from available layer or "
@@ -9257,7 +9252,7 @@ msgid ""
 "file.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:52
+#: content/community-blogs/mergin-maps-local-changes.md:51
 msgid ""
 "<center>\n"
 "<img width=\"400\" src=\"https://lutraconsulting.co.uk/img/posts/local_changes_processing_tool.png\" alt=\"Processing tool to extract local changes\" />\n"
@@ -9265,7 +9260,7 @@ msgid ""
 "</center>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:57
+#: content/community-blogs/mergin-maps-local-changes.md:56
 msgid ""
 "<p>An output layer containing local changes will be created as a temporary "
 "or regular layer and added to the current project. This layer will have the "
@@ -9273,7 +9268,7 @@ msgid ""
 "by Changes Viewer dialog.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:59
+#: content/community-blogs/mergin-maps-local-changes.md:58
 msgid ""
 "<center>\n"
 "<img width=\"400\" src=\"https://lutraconsulting.co.uk/img/posts/local_changes_results.png\" alt=\"Result of the local change processing tool\" />\n"
@@ -9281,7 +9276,7 @@ msgid ""
 "</center>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:64
+#: content/community-blogs/mergin-maps-local-changes.md:63
 msgid ""
 "<p>The “Create diff” tool comes handy when you need to revise the changes "
 "between two versions of the layer in the Mergin Maps project. This tool is "
@@ -9290,7 +9285,7 @@ msgid ""
 "Maps” group in the Processing Toolbox.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:66
+#: content/community-blogs/mergin-maps-local-changes.md:65
 msgid ""
 "<p>The tool dialog is quite similar to the “Extract local changes” tool "
 "dialog. Fill in input values: directory of your Mergin Maps project, layer "
@@ -9304,7 +9299,7 @@ msgid ""
 "file.</p>\n"
 msgstr ""
 
-#: content/community-blogs/mergin-maps-local-changes.md:68
+#: content/community-blogs/mergin-maps-local-changes.md:67
 msgid ""
 "<p>This feature is an another step in our ongoing efforts to create an easy-"
 "to-use tool for collaborative data collection and data management. If you "
@@ -16802,7 +16797,7 @@ msgstr ""
 #: content/community-blogs/qgis-add-to-felt-plugin-phase-2.md:11
 msgid ""
 "<p>We have been continuing our work with the <a href=\"https://www.qgis.org/en/site/about/sustaining_members.html\">Flagship sponsor of QGIS</a> &#8211; <a href=\"https://felt.com/product\">Felt</a> to develop their QGIS Plugin &#8211; <a href=\"https://plugins.qgis.org/planet/tag/felt/\">Add to Felt  </a>that makes it even easier to share your maps and data on the web.</p>\n"
-"<div style=\"width: 1170px;\" class=\"wp-video\"><!--[if lt IE 9]><script>document.createElement('video');</script><![endif]-->\n"
+"<div style=\"width: 1170px;\" class=\"wp-video\">\n"
 "<video class=\"wp-video-shortcode\" id=\"video-212615-1\" width=\"1170\" height=\"658\" preload=\"metadata\" controls=\"controls\"><source type=\"video/mp4\" src=\"https://north-road.com/wp-content/uploads/2023/10/Lassen-QGIS-Share.mp4?_=1\" /><a href=\"https://north-road.com/wp-content/uploads/2023/10/Lassen-QGIS-Share.mp4\">https://north-road.com/wp-content/uploads/2023/10/Lassen-QGIS-Share.mp4</a></video></div>\n"
 "<p><strong>What is the &#8216;Add to Felt&#8217; QGIS Plugin?</strong></p>\n"
 "<p>The &#8216;Add to Felt&#8217; QGIS Plugin is a powerful tool that empowers users to export their QGIS projects and layers directly to a Felt web map. This update introduces two fantastic features:</p>\n"
@@ -16830,7 +16825,7 @@ msgid ""
 "<li>Sign into Felt and begin sharing your maps to the web.</li>\n"
 "</ul>\n"
 "<p>If you want more features in this plugin, let us know or you’re interested in exploring how a QGIS plugin can make your service easily accessible to the millions of daily QGIS users, <a href=\"https://north-road.com/contact/\">contact us</a> to discuss how we can help!</p>\n"
-"<p><!-- notionvc: 3356c640-8e21-4540-b999-8634c16737df --></p>\n"
+"<p></p>\n"
 "<div data-animation=\"no-animation\" data-icons-animation=\"no-animation\" data-overlay=\"\" data-change-size=\"\" data-button-size=\"0.7\" style=\"font-size:0.7em!important;display:none;\" class=\"supsystic-social-sharing supsystic-social-sharing-package-flat supsystic-social-sharing-hide-on-homepage supsystic-social-sharing-spacing supsystic-social-sharing-content supsystic-social-sharing-content-align-left\" data-text=\"\"><a data-networks=\"[]\" class=\"social-sharing-button sharer-flat sharer-flat-1 counter-standard without-counter twitter\" target=\"_blank\" title=\"Twitter\" href=\"https://twitter.com/share?url=https%3A%2F%2Fnorth-road.com%2F2023%2F10%2F11%2Fqgis-add-to-felt-plugin-phase-2%2F&text=QGIS+Add+to+Felt+Plugin+%26%238211%3B+Phase+2\" data-main-href=\"https://twitter.com/share?url={url}&text={title}\" data-nid=\"2\" data-name=\"\" data-pid=\"1\" data-post-id=\"212615\" data-url=\"https://north-road.com/wp-admin/admin-ajax.php\" rel=\"nofollow\" data-mailto=\"\"><i class=\"fa-ssbs fa-ssbs-fw fa-ssbs-twitter\"></i><div class=\"counter-wrap standard\"><span class=\"counter\">0</span></div></a><a data-networks=\"[]\" class=\"social-sharing-button sharer-flat sharer-flat-1 counter-standard without-counter linkedin\" target=\"_blank\" title=\"Linkedin\" href=\"https://www.linkedin.com/shareArticle?mini=true&title=QGIS+Add+to+Felt+Plugin+%26%238211%3B+Phase+2&url=https%3A%2F%2Fnorth-road.com%2F2023%2F10%2F11%2Fqgis-add-to-felt-plugin-phase-2%2F\" data-main-href=\"https://www.linkedin.com/shareArticle?mini=true&title={title}&url={url}\" data-nid=\"13\" data-name=\"\" data-pid=\"1\" data-post-id=\"212615\" data-url=\"https://north-road.com/wp-admin/admin-ajax.php\" rel=\"nofollow\" data-mailto=\"\"><i class=\"fa-ssbs fa-ssbs-fw fa-ssbs-linkedin\"></i><div class=\"counter-wrap standard\"><span class=\"counter\">0</span></div></a><a data-networks=\"[]\" class=\"social-sharing-button sharer-flat sharer-flat-1 counter-standard without-counter facebook\" target=\"_blank\" title=\"Facebook\" href=\"http://www.facebook.com/sharer.php?u=https%3A%2F%2Fnorth-road.com%2F2023%2F10%2F11%2Fqgis-add-to-felt-plugin-phase-2%2F\" data-main-href=\"http://www.facebook.com/sharer.php?u={url}\" data-nid=\"1\" data-name=\"\" data-pid=\"1\" data-post-id=\"212615\" data-url=\"https://north-road.com/wp-admin/admin-ajax.php\" rel=\"nofollow\" data-mailto=\"\"><i class=\"fa-ssbs fa-ssbs-fw fa-ssbs-facebook\"></i><div class=\"counter-wrap standard\"><span class=\"counter\">0</span></div></a></div>\n"
 msgstr ""
 
@@ -20223,7 +20218,7 @@ msgstr ""
 msgid ""
 "<div class=\"wp-block-syntaxhighlighter-code \"><pre class=\"brush: sql; title: ; notranslate\">\n"
 "LOAD CSV with headers \n"
-"FROM \"file:///stops.txt\" \n"
+"FROM \"file:///stops.txt\"\n"
 "AS row \n"
 "CREATE (:Stop {\n"
 "   stop_id: row&#91;\"stop_id\"],\n"
@@ -27029,17 +27024,9 @@ msgid ""
 msgstr ""
 
 #: content/community/involve.md:114
-msgid "{{< rich-content-end >}} {{< rich-right-start >}}"
-msgstr ""
-
-#: content/community/involve.md:116
-msgid "<!-- {{< stripe-widget otherMethods=\"true\">}} -->\n"
-msgstr ""
-
-#: content/community/involve.md:117
 msgid ""
-"{{< payrexx-widget otherMethods=\"true\">}} {{< rich-right-end >}} {{< rich-"
-"box-end >}}"
+"{{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget "
+"otherMethods=\"true\">}} {{< rich-right-end >}} {{< rich-box-end >}}"
 msgstr ""
 
 #: content/community/organisation.md:0
@@ -27883,27 +27870,20 @@ msgstr ""
 msgid "Our very best regards!"
 msgstr ""
 
-#: content/download/index.md:26 content/thank-you/index.md:40
-msgid "{{< rich-content-end >}} {{< rich-right-start mode=\"html\" >}}"
-msgstr ""
-
-#: content/download/index.md:28
-msgid "<!-- {{< stripe-widget otherMethods=\"true\" skipToDownload=\"true\" >}} -->\n"
-msgstr ""
-
-#: content/download/index.md:29
+#: content/download/index.md:26
 msgid ""
-"{{< payrexx-widget otherMethods=\"true\" skipToDownload=\"true\" >}} {{< "
-"rich-right-end >}} {{< rich-box-end >}}"
+"{{< rich-content-end >}} {{< rich-right-start mode=\"html\" >}} {{< payrexx-"
+"widget otherMethods=\"true\" skipToDownload=\"true\" >}} {{< rich-right-end "
+">}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/download/index.md:36
+#: content/download/index.md:35
 msgid ""
 "{{< spoiler-start id=\"download-win\" title=\"Download for Windows\">}} {{< "
 "download-windows >}} {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:41
+#: content/download/index.md:40
 msgid ""
 "{{< spoiler-start id=\"download-linux\" title=\"🐧 Linux\" >}} GNU/Linux is a"
 " Free operating system built on the same principles that QGIS is built on. "
@@ -27911,56 +27891,56 @@ msgid ""
 "(including rpm and deb packages). Please select your choice of distro below:"
 msgstr ""
 
-#: content/download/index.md:45
+#: content/download/index.md:44
 msgid ""
 "[Debian/Ubuntu]({{< ref \"resources/installation-guide#debian--ubuntu\" >}})"
 msgstr ""
 
-#: content/download/index.md:46
+#: content/download/index.md:45
 msgid "[Fedora]({{< ref \"resources/installation-guide#fedora\" >}})"
 msgstr ""
 
-#: content/download/index.md:47
+#: content/download/index.md:46
 msgid "[NixOS]({{< ref \"resources/installation-guide#nixos\" >}})"
 msgstr ""
 
-#: content/download/index.md:48
+#: content/download/index.md:47
 msgid "[openSUSE]({{< ref \"resources/installation-guide#suse--opensuse\" >}})"
 msgstr ""
 
-#: content/download/index.md:49
+#: content/download/index.md:48
 msgid "[Mandriva]({{< ref \"resources/installation-guide#mandriva\" >}})"
 msgstr ""
 
-#: content/download/index.md:50
+#: content/download/index.md:49
 msgid "[Slackware]({{< ref \"resources/installation-guide#slackware\" >}})"
 msgstr ""
 
-#: content/download/index.md:51
+#: content/download/index.md:50
 msgid "[Arch Linux]({{< ref \"resources/installation-guide#arch-linux\" >}})"
 msgstr ""
 
-#: content/download/index.md:52
+#: content/download/index.md:51
 msgid "[Flatpak]({{< ref \"resources/installation-guide#flatpak\" >}})"
 msgstr ""
 
-#: content/download/index.md:53
+#: content/download/index.md:52
 msgid "[Spack]({{< ref \"resources/installation-guide#spack\" >}})"
 msgstr ""
 
-#: content/download/index.md:55
+#: content/download/index.md:54
 msgid ""
 "[Linux Installation Instructions]({{< ref \"resources/installation-"
 "guide#linux\" >}}) {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:59
+#: content/download/index.md:58
 msgid ""
 "{{< spoiler-start id=\"download-mac\" title=\"🍏 macOS\" >}} {{< download-"
 "macos >}}"
 msgstr ""
 
-#: content/download/index.md:62
+#: content/download/index.md:61
 msgid ""
 "Alternatively, for native support of both Intel x86 and Apple ARM "
 "architectures, together with the latest versions of key components (e.g. "
@@ -27968,23 +27948,23 @@ msgid ""
 "\"resources/installation-guide/#macports\" >}})"
 msgstr ""
 
-#: content/download/index.md:64 content/funding/membership.md:265
+#: content/download/index.md:63 content/funding/membership.md:264
 msgid ""
 "{{< rich-box-start icon=\"💁\" layoutClass=\"tips\">}} {{< rich-content-start"
 " themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/download/index.md:67 content/thank-you/index.md:56
+#: content/download/index.md:66 content/thank-you/index.md:55
 msgid "Tips for first launch"
 msgstr ""
 
-#: content/download/index.md:68
+#: content/download/index.md:67
 msgid ""
 "After installing QGIS, the first launch attempt may fail due to Apple's "
 "security framework."
 msgstr ""
 
-#: content/download/index.md:70
+#: content/download/index.md:69
 msgid ""
 "**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its "
 "icon in your Applications folder and select ***Open*** in the context menu. "
@@ -27992,7 +27972,7 @@ msgid ""
 "button again. This only has to be done once."
 msgstr ""
 
-#: content/download/index.md:72
+#: content/download/index.md:71
 msgid ""
 "**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon"
 " in your Applications folder and select ***Open*** from the context menu. A "
@@ -28003,32 +27983,32 @@ msgid ""
 "appear; click ***Open Anyway*** again. This only has to be done once."
 msgstr ""
 
-#: content/download/index.md:74 content/funding/donate.md:28
-#: content/resources/hub.md:23 content/resources/hub.md:186
+#: content/download/index.md:73 content/funding/donate.md:28
+#: content/resources/hub.md:23 content/resources/hub.md:147
 msgid "{{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/download/index.md:80
+#: content/download/index.md:79
 msgid ""
 "{{< spoiler-start id=\"download-bsd\" title=\"👿 BSD\" >}} [BSD Installation "
 "Instructions]({{< ref \"resources/installation-guide#freebsd\" >}}) {{< "
 "spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:84
+#: content/download/index.md:83
 msgid ""
 "{{< spoiler-start id=\"download-container-images\" title=\"🐳 Container "
 "Images\" >}} [Container Images Installation Instructions]({{< ref "
 "\"resources/installation-guide#container-images\" >}}) {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:89
+#: content/download/index.md:88
 msgid ""
 "{{< spoiler-start id=\"download-mobile\" title=\"📱Mobile and tablet\" >}} "
 "{{< mobile-downloads >}} {{< spoiler-end >}}"
 msgstr ""
 
-#: content/download/index.md:94
+#: content/download/index.md:93
 msgid ""
 "{{< spoiler-start title=\"📃 Source Code\" >}} QGIS is open source software "
 "available under the terms of the <b>GNU General Public License</b> meaning "
@@ -28036,28 +28016,28 @@ msgid ""
 "repository."
 msgstr ""
 
-#: content/download/index.md:97
+#: content/download/index.md:96
 msgid ""
 "QGIS Source Code is available <a href=\"/downloads/qgis-"
 "latest.tar.bz2\">here (latest release)</a> and <a href=\"/downloads/qgis-"
 "latest-ltr.tar.bz2\">here (long term release)</a>"
 msgstr ""
 
-#: content/download/index.md:99
+#: content/download/index.md:98
 msgid ""
 "Refer to the installation guide on how to compile QGIS from source for the "
 "different platforms: "
 "[here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)"
 msgstr ""
 
-#: content/download/index.md:101
+#: content/download/index.md:100
 msgid ""
 "You can also obtain the source code by cloning or forking our <a "
 "href=\"https://github.com/qgis/QGIS\">GitHub repository</a>. {{< spoiler-end"
 " >}}"
 msgstr ""
 
-#: content/download/index.md:105
+#: content/download/index.md:104
 msgid ""
 "{{< spoiler-start title=\"🗾 Example Datasets\" >}} For testing and learning "
 "purposes, [a sample dataset is "
@@ -34650,30 +34630,29 @@ msgstr ""
 msgid ""
 "{{< columns-start >}} {{< column-start class=\"is-half\">}} {{< block "
 "title=\"Donate.\" subtitle=\"Make a one-off donation to support our work.\" "
-"image=\"\" sub-block-side=\"bottom\" class=\"is-primary\"<br />title-"
+"image=\"\" sub-block-side=\"bottom\" class=\"is-primary\" title-"
 "size=\"is-4\" subtitle-size=\"is-6\" link=\"donate/\" link-text=\"Donate!\" "
 ">}}{{< /block >}} {{< column-end >}} {{< column-start class=\"is-half\" >}} "
 "{{< block title=\"Sustaining Members.\" subtitle=\"Create a recurring "
 "sustaining membership.\" image=\"\" sub-block-side=\"bottom\" class=\"is-"
-"danger\" title-size=\"is-4\" subtitle-size=\"is-6\"<br "
-"/>link=\"funding/sustaining-members/\" link-text=\"Subscribe!\">}}{{< /block"
-" >}} {{< column-end >}}"
+"danger\" title-size=\"is-4\" subtitle-size=\"is-6\" "
+"link=\"funding/sustaining-members/\" link-text=\"Subscribe!\">}}{{< /block "
+">}} {{< column-end >}}"
 msgstr ""
 
 #: content/funding-old/_index.md:47
 msgid ""
 "{{< column-start class=\"is-half\">}} {{< block title=\"Shop.\" "
 "subtitle=\"Support our work and enjoy some QGIS branded products.\" "
-"image=\"\" sub-block-side=\"bottom\" class=\"is-warning\"<br />title-"
-"size=\"is-4\" subtitle-size=\"is-6\"<br "
-"/>link=\"https://shop.spreadshirt.net/qgis/\" link-text=\"Shop\">}}{{< "
-"/block >}} {{< column-end >}} {{< column-start class=\"is-half\">}} {{< "
-"block title=\"Direct Engagement.\" subtitle=\"Hire community members "
-"directly to engage their services for the benefit of the QGIS project.\" "
-"image=\"\" sub-block-side=\"bottom\" class=\"is-success\"<br />title-"
-"size=\"is-4\" subtitle-size=\"is-6\"<br />link=\"contributors/\" link-"
-"text=\"Contributors\" >}}{{< /block >}} {{< column-end >}} {{< columns-end "
-">}}"
+"image=\"\" sub-block-side=\"bottom\" class=\"is-warning\" title-"
+"size=\"is-4\" subtitle-size=\"is-6\" "
+"link=\"https://shop.spreadshirt.net/qgis/\" link-text=\"Shop\">}}{{< /block "
+">}} {{< column-end >}} {{< column-start class=\"is-half\">}} {{< block "
+"title=\"Direct Engagement.\" subtitle=\"Hire community members directly to "
+"engage their services for the benefit of the QGIS project.\" image=\"\" sub-"
+"block-side=\"bottom\" class=\"is-success\" title-size=\"is-4\" subtitle-"
+"size=\"is-6\" link=\"contributors/\" link-text=\"Contributors\" >}}{{< "
+"/block >}} {{< column-end >}} {{< columns-end >}}"
 msgstr ""
 
 #: content/funding/donate.md:0
@@ -34744,38 +34723,23 @@ msgid ""
 ">}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:44
-msgid ""
-"<!-- {{< rich-box-start layoutClass=\"has-right mt-6\" mode=\"html\" >}}\n"
-"{{< rich-content-start themeClass=\"coloring-1\" >}}\n"
-"## Stripe Donation\n"
-"\n"
-"We use the stripe.com service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.\n"
-"{{< rich-content-end >}}\n"
-"{{< rich-right-start >}}  \n"
-"{{< stripe-widget >}}\n"
-"{{< rich-right-end >}}\n"
-"{{< rich-box-end >}}\n"
-" -->\n"
-msgstr ""
-
-#: content/funding/donate.md:56 content/thank-you/index.md:68
+#: content/funding/donate.md:45 content/thank-you/index.md:67
 msgid ""
 "{{< rich-box-start layoutClass=\"has-right\" mode=\"html\" >}} {{< rich-"
 "content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:58
+#: content/funding/donate.md:47
 msgid "Bank transfer"
 msgstr ""
 
-#: content/funding/donate.md:60
+#: content/funding/donate.md:49
 msgid ""
 "Use the details below to make a donation via international money transfer: "
 "{{< rich-content-end >}} {{< rich-right-start >}}"
 msgstr ""
 
-#: content/funding/donate.md:63
+#: content/funding/donate.md:52
 msgid ""
 "<pre class=\"donatbox\">\n"
 "Account name: QGIS.ORG\n"
@@ -34793,21 +34757,21 @@ msgid ""
 "</pre>\n"
 msgstr ""
 
-#: content/funding/donate.md:77
+#: content/funding/donate.md:66
 msgid "{{< rich-right-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:81
+#: content/funding/donate.md:70
 msgid ""
 "{{< rich-box-start layoutClass=\"has-right paypal mb-6\" >}} {{< rich-"
 "content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:83
+#: content/funding/donate.md:72
 msgid "Paypal Donation"
 msgstr ""
 
-#: content/funding/donate.md:85
+#: content/funding/donate.md:74
 msgid ""
 "You can use Paypal to donate using your own credit card (but we prefer to "
 "use Stripe for that). The payment is processed by PayPal but you don't need "
@@ -34815,21 +34779,21 @@ msgid ""
 "card."
 msgstr ""
 
-#: content/funding/donate.md:87
+#: content/funding/donate.md:76
 msgid "You can also use your own Paypal account to donate."
 msgstr ""
 
-#: content/funding/donate.md:89
+#: content/funding/donate.md:78
 msgid ""
 "{{< paypal-button >}} {{< rich-content-end >}} {{< rich-right-start >}}<br "
 "/>![](../paypal.png) {{< rich-right-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:97 content/thank-you/index.md:30
+#: content/funding/donate.md:86 content/thank-you/index.md:30
 msgid "Your support is vital to keep QGIS improving"
 msgstr ""
 
-#: content/funding/donate.md:99
+#: content/funding/donate.md:88
 msgid ""
 "We would like to extend our activities and improve the quality of QGIS. Your"
 " financial contribution will support the maintenance, improvement, and "
@@ -34837,121 +34801,121 @@ msgid ""
 "longevity and overall health of the project."
 msgstr ""
 
-#: content/funding/donate.md:101
+#: content/funding/donate.md:90
 msgid ""
 "{{< columns-start >}} {{< column-start class=\"is-flex-direction-column is-"
 "one-third left-title\">}}"
 msgstr ""
 
-#: content/funding/donate.md:103
+#: content/funding/donate.md:92
 msgid "Enhanced Infrastructure & Development Support"
 msgstr ""
 
-#: content/funding/donate.md:106
+#: content/funding/donate.md:95
 msgid ""
 "{{< column-start class=\"is-flex-direction-column is-two-thirds\">}} {{< "
 "rich-box-start >}} {{< rich-content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:109
+#: content/funding/donate.md:98
 msgid "Maintaining Core Infrastructure"
 msgstr ""
 
-#: content/funding/donate.md:110
+#: content/funding/donate.md:99
 msgid "The official QGIS.org website, a central hub for all things QGIS."
 msgstr ""
 
-#: content/funding/donate.md:111
+#: content/funding/donate.md:100
 msgid "Our issue tracking system for efficient bug and feature reporting."
 msgstr ""
 
-#: content/funding/donate.md:112
+#: content/funding/donate.md:101
 msgid ""
 "The continuous integration system, ensuring code quality and stability "
 "through automated tests. {{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:116 content/funding/donate.md:145
+#: content/funding/donate.md:105 content/funding/donate.md:134
 #: content/funding/membership.md:53 content/funding/membership.md:63
 #: content/funding/membership.md:73
 msgid ""
 "{{< rich-box-start >}} {{< rich-content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:118
+#: content/funding/donate.md:107
 msgid "Software Development & QA"
 msgstr ""
 
-#: content/funding/donate.md:119
+#: content/funding/donate.md:108
 msgid ""
 "Continually improve and package QGIS for various operating systems, making "
 "it accessible to more users worldwide."
 msgstr ""
 
-#: content/funding/donate.md:120
+#: content/funding/donate.md:109
 msgid "Address bugs and other issues promptly, enhancing the user experience."
 msgstr ""
 
-#: content/funding/donate.md:121
+#: content/funding/donate.md:110
 msgid ""
 "Manage pull requests and conduct thorough code reviews, ensuring the highest"
 " standards of software development. {{< rich-content-end >}} {{< rich-box-"
 "end >}}"
 msgstr ""
 
-#: content/funding/donate.md:125 content/funding/donate.md:152
-#: content/funding/membership.md:80 content/funding/membership.md:188
-#: content/funding/membership.md:200 content/funding/membership.md:212
-#: content/funding/membership.md:226 content/funding/membership.md:242
-#: content/funding/membership.md:254 content/goodies/index.md:51
+#: content/funding/donate.md:114 content/funding/donate.md:141
+#: content/funding/membership.md:80 content/funding/membership.md:187
+#: content/funding/membership.md:199 content/funding/membership.md:211
+#: content/funding/membership.md:225 content/funding/membership.md:241
+#: content/funding/membership.md:253 content/goodies/index.md:51
 #: content/goodies/index.md:88 content/project/overview.md:54
 #: content/project/overview.md:72 content/project/overview.md:90
 #: content/project/overview.md:223 content/project/overview.md:237
 msgid "{{< column-end >}} {{< columns-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:128
+#: content/funding/donate.md:117
 msgid ""
 "{{< columns-start class=\"mb-6\">}} {{< column-start class=\"is-flex-"
 "direction-column is-one-third left-title\">}}"
 msgstr ""
 
-#: content/funding/donate.md:130
+#: content/funding/donate.md:119
 msgid "Community Growth & Engagement"
 msgstr ""
 
-#: content/funding/donate.md:135
+#: content/funding/donate.md:124
 msgid ""
 "{{< column-start class=\"is-flex-direction-column is-two-thirds \">}} {{< "
 "rich-box-start >}} {{< rich-content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/donate.md:138
+#: content/funding/donate.md:127
 msgid "Empowering Our Volunteers"
 msgstr ""
 
-#: content/funding/donate.md:139
+#: content/funding/donate.md:128
 msgid ""
 "Mentoring new contributors, fostering a welcoming and productive community."
 msgstr ""
 
-#: content/funding/donate.md:140
+#: content/funding/donate.md:129
 msgid ""
 "Translating QGIS into multiple languages, making the software truly global."
 msgstr ""
 
-#: content/funding/donate.md:141
+#: content/funding/donate.md:130
 msgid ""
 "Running the QGIS grant system, enabling focused work on significant "
 "improvements and innovations that are often challenging for volunteers to "
 "undertake on their own. {{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/donate.md:147
+#: content/funding/donate.md:136
 msgid "Fostering Collaboration & Knowledge Sharing"
 msgstr ""
 
-#: content/funding/donate.md:148
+#: content/funding/donate.md:137
 msgid ""
 "Organizing and supporting contributor meetings and QGIS conferences, "
 "essential for knowledge exchange, collaboration, and the collective "
@@ -34959,7 +34923,7 @@ msgid ""
 ">}}"
 msgstr ""
 
-#: content/funding/donate.md:155
+#: content/funding/donate.md:144
 msgid ""
 "QGIS.ORG wants to be transparent with the funds we receive and how we spend "
 "them. Please have a look at the financial reports and budgets in our "
@@ -35154,7 +35118,7 @@ msgid ""
 " website and their logo sized according to their membership category."
 msgstr ""
 
-#: content/funding/membership.md:105 content/funding/membership.md:154
+#: content/funding/membership.md:105
 msgid "{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}}"
 msgstr ""
 
@@ -35214,7 +35178,7 @@ msgid ""
 "start>}}"
 msgstr ""
 
-#: content/funding/membership.md:149 content/funding/membership.md:160
+#: content/funding/membership.md:149 content/funding/membership.md:159
 msgid ""
 "{{< rich-box-start >}} {{< rich-content-start themeClass=\"coloring-4\" >}}"
 msgstr ""
@@ -35225,134 +35189,140 @@ msgid ""
 "materials, signaling your support for the project."
 msgstr ""
 
-#: content/funding/membership.md:162
+#: content/funding/membership.md:154 content/project/overview.md:174
+msgid ""
+"{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-"
+"start>}}"
+msgstr ""
+
+#: content/funding/membership.md:161
 msgid "Keep QGIS Ad Free"
 msgstr ""
 
-#: content/funding/membership.md:164
+#: content/funding/membership.md:163
 msgid ""
 "Sustaining memberships help to ensure we do not need to employ 'user "
 "hostile' tactics, such as advertising, to fund the project."
 msgstr ""
 
-#: content/funding/membership.md:166 content/project/overview.md:189
+#: content/funding/membership.md:165 content/project/overview.md:189
 msgid ""
 "{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< "
 "columns-end >}}"
 msgstr ""
 
-#: content/funding/membership.md:172
+#: content/funding/membership.md:171
 msgid ""
 "The decision on how funds are spent will be made by the QGIS Project "
 "Steering Committee, proposed in a budget that will be approved or declined "
 "by the QGIS.ORG general assembly."
 msgstr ""
 
-#: content/funding/membership.md:175
+#: content/funding/membership.md:174
 msgid "How become a sustaining member"
 msgstr ""
 
-#: content/funding/membership.md:177 content/funding/membership.md:191
-#: content/funding/membership.md:203 content/funding/membership.md:215
-#: content/funding/membership.md:229 content/funding/membership.md:245
+#: content/funding/membership.md:176 content/funding/membership.md:190
+#: content/funding/membership.md:202 content/funding/membership.md:214
+#: content/funding/membership.md:228 content/funding/membership.md:244
 msgid ""
 "{{< columns-start >}} {{< column-start class=\"is-flex-direction-column is-"
 "one-quarter\">}}"
 msgstr ""
 
-#: content/funding/membership.md:179
+#: content/funding/membership.md:178
 msgid "Initial Contact"
 msgstr ""
 
-#: content/funding/membership.md:184
+#: content/funding/membership.md:183
 msgid ""
 "You can reach out to the treasurer at finance@qgis.org or any other Project "
 "Steering Committee (PSC) member to express your interest in becoming a "
 "sustaining member."
 msgstr ""
 
-#: content/funding/membership.md:186
+#: content/funding/membership.md:185
 msgid "Write to treasurer"
 msgstr ""
 
-#: content/funding/membership.md:193
+#: content/funding/membership.md:192
 msgid "Clarification and Invoice Issuance"
 msgstr ""
 
-#: content/funding/membership.md:198
+#: content/funding/membership.md:197
 msgid ""
 "The treasurer will gather necessary details (such as contact information, "
 "address, and permission to use the organization's logo on the QGIS "
 "sustaining membership page) and issue an invoice for the membership fee."
 msgstr ""
 
-#: content/funding/membership.md:205
+#: content/funding/membership.md:204
 msgid "Payment Verification"
 msgstr ""
 
-#: content/funding/membership.md:210
+#: content/funding/membership.md:209
 msgid ""
 "The treasurer verifies the receipt of the payment to officially recognize "
 "the organization as a sustaining member."
 msgstr ""
 
-#: content/funding/membership.md:217
+#: content/funding/membership.md:216
 msgid "Membership Management"
 msgstr ""
 
-#: content/funding/membership.md:222
+#: content/funding/membership.md:221
 msgid ""
 "We provide a website where sustaining members are listed, categorized by "
 "level and sorted by the date of introduction or renewal etc."
 msgstr ""
 
-#: content/funding/membership.md:224
+#: content/funding/membership.md:223
 msgid "[Open Sustaining Members](https://members.qgis.org/)"
 msgstr ""
 
-#: content/funding/membership.md:231
+#: content/funding/membership.md:230
 msgid "Recognition and Promotion"
 msgstr ""
 
-#: content/funding/membership.md:236
+#: content/funding/membership.md:235
 msgid ""
 "**Recognition**: Sustaining members are acknowledged on the QGIS website, "
 "with logos of flagship, large, and medium members featured in the footer "
 "banner."
 msgstr ""
 
-#: content/funding/membership.md:238
+#: content/funding/membership.md:237
 msgid ""
 "**Visibility**: Members are listed in the visual changelog of QGIS releases."
 msgstr ""
 
-#: content/funding/membership.md:240
+#: content/funding/membership.md:239
 msgid ""
 "**Promotion**: When appropriate, QGIS will conduct social media promotion to"
 " highlight the support from sustaining members."
 msgstr ""
 
-#: content/funding/membership.md:247
+#: content/funding/membership.md:246
 msgid "Ongoing Engagement"
 msgstr ""
 
-#: content/funding/membership.md:252
+#: content/funding/membership.md:251
 msgid ""
 "Past sustaining members are listed separately for a period of two years to "
 "acknowledge their previous contributions."
 msgstr ""
 
-#: content/funding/membership.md:257
+#: content/funding/membership.md:256
 msgid ""
 "{{< rich-box-start icon=\"💡\" layoutClass=\"tips\">}} {{< rich-content-start"
 " themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/funding/membership.md:259
+#: content/funding/membership.md:258
 msgid "One-time payments"
 msgstr ""
 
-#: content/funding/membership.md:260
+#: content/funding/membership.md:259
 msgid ""
 "Donations can be of any amount, via direct transfers to our bank account "
 "(SEPA payment), credit card payment (through stripe.com) or Paypal "
@@ -35361,11 +35331,11 @@ msgid ""
 "important project goals! {{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/membership.md:267
+#: content/funding/membership.md:266
 msgid "About ‘earmarked’ funding"
 msgstr ""
 
-#: content/funding/membership.md:268
+#: content/funding/membership.md:267
 msgid ""
 "We regret that we do not accept ‘earmarked’ funding as it creates many "
 "administrative issues. If you are interested in funding specific aspects of "
@@ -35374,17 +35344,17 @@ msgid ""
 "initiative. {{< rich-content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/funding/membership.md:273
+#: content/funding/membership.md:272
 msgid ""
 "{{< rich-box-start icon=\"⚠️\" layoutClass=\"tips\">}} {{< rich-content-"
 "start themeClass=\"coloring-6\" >}}"
 msgstr ""
 
-#: content/funding/membership.md:275
+#: content/funding/membership.md:274
 msgid "Warning"
 msgstr ""
 
-#: content/funding/membership.md:276
+#: content/funding/membership.md:275
 msgid ""
 "Acceptance of sustaining membership applications is at the discretion of the"
 " QGIS PSC. We reserve the right to decline offers of sustaining members if "
@@ -36380,7 +36350,7 @@ msgid "Our Privacy Policy"
 msgstr ""
 
 #: content/project/case-studies.md:0 content/project/case-studies.md:13
-#: content/project/overview.md:197 content/thank-you/index.md:70
+#: content/project/overview.md:197 content/thank-you/index.md:69
 msgid "Case Studies"
 msgstr ""
 
@@ -36636,7 +36606,7 @@ msgstr ""
 msgid "Local user groups and support providers"
 msgstr ""
 
-#: content/project/overview.md:126 content/thank-you/index.md:85
+#: content/project/overview.md:126 content/thank-you/index.md:84
 msgid "Join a community of like-minded individuals in your region."
 msgstr ""
 
@@ -36655,7 +36625,7 @@ msgid "Cross platform"
 msgstr ""
 
 #: content/project/overview.md:139 content/project/overview.md:164
-#: content/resources/hub.md:178
+#: content/resources/hub.md:139
 msgid "{{< rich-box-start >}} {{< rich-content-start themeClass=\"coloring-6\">}}"
 msgstr ""
 
@@ -36708,12 +36678,6 @@ msgstr ""
 
 #: content/project/overview.md:172
 msgid "[QGIS Web Client 2](https://github.com/qgis/qwc2)"
-msgstr ""
-
-#: content/project/overview.md:174
-msgid ""
-"{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-"
-"start>}}"
 msgstr ""
 
 #: content/project/overview.md:181
@@ -37832,228 +37796,180 @@ msgid ""
 "better documentation."
 msgstr ""
 
-#: content/resources/hub.md:36
-msgid ""
-"<!-- {{< tabs tab1=\"QGIS |ltrversion|\" tab2=\"QGIS |version|\" tab3=\"QGIS"
-" testing (>|version|)\" tab4=\"Archived releases\" tab5=\"Data "
-"protection\">}} -->\n"
-msgstr ""
-
-#: content/resources/hub.md:38
+#: content/resources/hub.md:37
 msgid "QGIS |ltrversion|"
 msgstr ""
 
-#: content/resources/hub.md:38
+#: content/resources/hub.md:37
 msgid "QGIS testing (>|ltrversion|)"
 msgstr ""
 
-#: content/resources/hub.md:38
+#: content/resources/hub.md:37
 msgid "Archived releases"
 msgstr ""
 
-#: content/resources/hub.md:38
+#: content/resources/hub.md:37
 msgid "Data protection"
 msgstr ""
 
-#: content/resources/hub.md:40
+#: content/resources/hub.md:39
 msgid ""
 "{{< tab-content-start tab=\"1\" >}} **For users (QGIS {{< param "
 "\"ltrversion\" >}}):**"
 msgstr ""
 
-#: content/resources/hub.md:43
+#: content/resources/hub.md:42
 msgid "Desktop User Guide — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:45
+#: content/resources/hub.md:44
 msgid "QGIS Training manual — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:47
+#: content/resources/hub.md:46
 msgid "Gentle Intro to GIS — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:49
+#: content/resources/hub.md:48
 msgid "Server Guide — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:52
+#: content/resources/hub.md:51
 msgid "**For documentation writers (QGIS {{< param \"ltrversion\" >}}):**"
 msgstr ""
 
-#: content/resources/hub.md:54
+#: content/resources/hub.md:53
 msgid "Documentation Guidelines — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:57
+#: content/resources/hub.md:56
 msgid "**For developers (QGIS {{< param \"ltrversion\" >}}):**"
 msgstr ""
 
-#: content/resources/hub.md:59
+#: content/resources/hub.md:58
 msgid "PyQGIS cookbook (for plugins and scripting) — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:61 content/resources/hub.md:139
+#: content/resources/hub.md:60 content/resources/hub.md:100
 msgid "PyQGIS - QGIS Python Api documentation"
 msgstr ""
 
-#: content/resources/hub.md:64 content/resources/hub.md:137
+#: content/resources/hub.md:63 content/resources/hub.md:98
 msgid "C++ API documentation"
 msgstr ""
 
-#: content/resources/hub.md:66 content/resources/hub.md:141
+#: content/resources/hub.md:65 content/resources/hub.md:102
 msgid "Building QGIS from Source"
 msgstr ""
 
-#: content/resources/hub.md:68
+#: content/resources/hub.md:67
 msgid "**For download (QGIS {{< param \"ltrversion\" >}}):**"
 msgstr ""
 
-#: content/resources/hub.md:70 content/resources/hub.md:145
+#: content/resources/hub.md:69 content/resources/hub.md:106
 msgid "PDF of the manuals"
 msgstr ""
 
-#: content/resources/hub.md:72 content/resources/hub.md:147
+#: content/resources/hub.md:71 content/resources/hub.md:108
 msgid "HTML zip of the manuals"
 msgstr ""
 
-#: content/resources/hub.md:76
-msgid ""
-"<!--\n"
-"{{< tab-content-start tab=\"2\" >}}\n"
-"**For users (QGIS {{< param \"version\" >}}):**\n"
-"\n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/<lang>/docs/user_manual\"  layoutClass=\"inline-block link-with-language\" listTitle=\"Desktop User Guide — <lang>\" >}}\n"
-" \n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/<lang>/docs/training_manual\"  layoutClass=\"inline-block link-with-language\" listTitle=\"QGIS Training manual — <lang>\">}}\n"
-"\n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction\"  layoutClass=\"inline-block link-with-language\" listTitle=\"Gentle Intro to GIS — <lang>\" >}}\n"
-"\n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/<lang>/docs/server_manual\"  layoutClass=\"inline-block link-with-language\" listTitle=\"Server Guide — <lang>\" >}}\n"
-"\n"
-"\n"
-"**For documentation writers (QGIS {{< param \"version\" >}}):**\n"
-"\n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines\"  layoutClass=\"inline-block link-with-language\" listTitle=\"Documentation Guidelines — <lang>\">}}\n"
-"\n"
-"\n"
-"**For developers (QGIS {{< param \"version\" >}}):**\n"
-"\n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook\"  layoutClass=\"inline-block link-with-language\" listTitle=\"PyQGIS cookbook (for plugins and scripting) — <lang>\">}}\n"
-"\n"
-"{{< rich-list listLink=\"https://qgis.org/pyqgis/|version|/\"  layoutClass=\"inline-block\" listTitle=\"PyQGIS - QGIS Python Api documentation\" >}}\n"
-"\n"
-"\n"
-"{{< rich-list listLink=\"https://qgis.org/api/|version|/\"  layoutClass=\"inline-block\" listTitle=\"C++ API documentation\" listSubtitle=\"\">}}\n"
-"\n"
-"{{< rich-list listLink=\"https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md\"  layoutClass=\"inline-block\" listTitle=\"Building QGIS from Source\" >}}\n"
-"\n"
-"**For download (QGIS {{< param \"version\" >}}):**\n"
-"\n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/pdf\"  layoutClass=\"inline-block\" listTitle=\"PDF of the manuals\" >}}\n"
-"\n"
-"{{< rich-list listLink=\"https://docs.qgis.org/|version|/zip\"  layoutClass=\"inline-block\" listTitle=\"HTML zip of the manuals\" >}}\n"
-"\n"
-"{{< tab-content-end >}}\n"
-"-->\n"
-msgstr ""
-
-#: content/resources/hub.md:116
+#: content/resources/hub.md:77
 msgid ""
 "We are still updating (not translating yet) the documentation for releases "
 "newer than QGIS {{< param \"ltrversion\" >}}. We call this version 'QGIS "
 "Testing' and the documentation can be found here:"
 msgstr ""
 
-#: content/resources/hub.md:118
+#: content/resources/hub.md:79
 msgid "**For users (QGIS testing):**"
 msgstr ""
 
-#: content/resources/hub.md:120
+#: content/resources/hub.md:81
 msgid "Desktop User Guide"
 msgstr ""
 
-#: content/resources/hub.md:122
+#: content/resources/hub.md:83
 msgid "QGIS Training Manual"
 msgstr ""
 
-#: content/resources/hub.md:124
+#: content/resources/hub.md:85
 msgid "Gentle Intro to GIS"
 msgstr ""
 
-#: content/resources/hub.md:126
+#: content/resources/hub.md:87
 msgid "Server Guide/Manual"
 msgstr ""
 
-#: content/resources/hub.md:128
+#: content/resources/hub.md:89
 msgid "**For documentation writers (QGIS testing):**"
 msgstr ""
 
-#: content/resources/hub.md:130
+#: content/resources/hub.md:91
 msgid "Documentation Guidelines"
 msgstr ""
 
-#: content/resources/hub.md:133
+#: content/resources/hub.md:94
 msgid "**For developers (QGIS testing):**"
 msgstr ""
 
-#: content/resources/hub.md:135
+#: content/resources/hub.md:96
 msgid "PyQGIS cookbook (for plugins and scripting)"
 msgstr ""
 
-#: content/resources/hub.md:143
+#: content/resources/hub.md:104
 msgid "**For download (QGIS testing):**"
 msgstr ""
 
-#: content/resources/hub.md:154
+#: content/resources/hub.md:115
 msgid "QGIS 3.34 Documentation — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:156
+#: content/resources/hub.md:117
 msgid "QGIS 3.28 Documentation — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:158
+#: content/resources/hub.md:119
 msgid "QGIS 3.22 Documentation — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:160
+#: content/resources/hub.md:121
 msgid "QGIS 3.16 Documentation — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:162
+#: content/resources/hub.md:123
 msgid "QGIS 3.10 Documentation — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:164
+#: content/resources/hub.md:125
 msgid "QGIS 3.4 Documentation — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:166
+#: content/resources/hub.md:127
 msgid "QGIS 2.18 Documentation — <lang>"
 msgstr ""
 
-#: content/resources/hub.md:172
+#: content/resources/hub.md:133
 msgid ""
 "In line with GDPR and related data protection regulations, we provide the "
 "following documentation:"
 msgstr ""
 
-#: content/resources/hub.md:174
+#: content/resources/hub.md:135
 msgid "QGIS Application Network Connections"
 msgstr ""
 
-#: content/resources/hub.md:180
+#: content/resources/hub.md:141
 msgid "Support"
 msgstr ""
 
-#: content/resources/hub.md:182
+#: content/resources/hub.md:143
 msgid ""
 "The QGIS community offers a wealth of excellent websites with support "
 "forums."
 msgstr ""
 
-#: content/resources/hub.md:184
+#: content/resources/hub.md:145
 msgid "View support options"
 msgstr ""
 
@@ -38264,12 +38180,6 @@ msgstr ""
 
 #: content/resources/roadmap.md:86
 msgid "[Debian/Ubuntu]({{< ref \"resources/installation-guide#repositories\" >}})"
-msgstr ""
-
-#: content/resources/roadmap.md:87
-msgid ""
-"<!-- |MacOS|[Mac OS]({{< ref \"resources/installation-guide#qgis-nightly-"
-"release\" >}})| -->\n"
 msgstr ""
 
 #: content/resources/support.md:0 content/resources/support.md:13
@@ -39040,17 +38950,14 @@ msgid ""
 "content-end >}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/thank-you/index.md:42
-msgid "<!-- {{< stripe-widget otherMethods=\"true\" alreadyDonated=\"true\">}} -->\n"
-msgstr ""
-
-#: content/thank-you/index.md:43
+#: content/thank-you/index.md:40
 msgid ""
-"{{< payrexx-widget otherMethods=\"true\" alreadyDonated=\"true\">}} {{< "
-"rich-right-end >}} {{< rich-box-end >}}"
+"{{< rich-content-end >}} {{< rich-right-start mode=\"html\" >}} {{< payrexx-"
+"widget otherMethods=\"true\" alreadyDonated=\"true\">}} {{< rich-right-end "
+">}} {{< rich-box-end >}}"
 msgstr ""
 
-#: content/thank-you/index.md:47
+#: content/thank-you/index.md:46
 msgid ""
 "{{< rich-box-start layoutClass=\"qgis_first_conference mt-6\">}} {{< rich-"
 "content-start >}} ![QGIS Developers 1st meeting](qgis_1st_conference.png "
@@ -39058,13 +38965,13 @@ msgid ""
 ">}}"
 msgstr ""
 
-#: content/thank-you/index.md:54
+#: content/thank-you/index.md:53
 msgid ""
 "{{< rich-box-start icon=\"🛟\" layoutClass=\"tips mt-6 mb-6\">}} {{< rich-"
 "content-start themeClass=\"coloring-1\" >}}"
 msgstr ""
 
-#: content/thank-you/index.md:57
+#: content/thank-you/index.md:56
 msgid ""
 "If you have any questions while starting QGIS, welcome to our complete guide"
 " to installing for the first time. <a href=\"/resources/installation-"
@@ -39072,11 +38979,11 @@ msgid ""
 ">}}"
 msgstr ""
 
-#: content/thank-you/index.md:62
+#: content/thank-you/index.md:61
 msgid "What's next?"
 msgstr ""
 
-#: content/thank-you/index.md:64
+#: content/thank-you/index.md:63
 msgid ""
 "For testing and learning purposes, [a sample dataset is "
 "available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-"
@@ -39084,35 +38991,35 @@ msgid ""
 "in different formats."
 msgstr ""
 
-#: content/thank-you/index.md:66
+#: content/thank-you/index.md:65
 msgid ""
 "You can also look at the cases - there are many inspiring stories there."
 msgstr ""
 
-#: content/thank-you/index.md:72
+#: content/thank-you/index.md:71
 msgid ""
 "We gather inspiring stories from actual users that showcase the versatility "
 "and power of the QGIS solution"
 msgstr ""
 
-#: content/thank-you/index.md:74
+#: content/thank-you/index.md:73
 msgid ""
 "[Find out more]({{< ref \"project/case-studies.md\" >}}) {{< rich-content-"
 "end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}}"
 " {{< rich-box-end >}}"
 msgstr ""
 
-#: content/thank-you/index.md:81
+#: content/thank-you/index.md:80
 msgid ""
 "{{< rich-box-start layoutClass=\"has-right rounded\" mode=\"html\" >}} {{< "
 "rich-content-start themeClass=\"coloring-2\" >}}"
 msgstr ""
 
-#: content/thank-you/index.md:83
+#: content/thank-you/index.md:82
 msgid "Local user groups"
 msgstr ""
 
-#: content/thank-you/index.md:87
+#: content/thank-you/index.md:86
 msgid ""
 "[Local groups list]({{< ref \"community/groups.md\" >}}) {{< rich-content-"
 "end >}} {{< rich-right-start >}}<br />![Local user "

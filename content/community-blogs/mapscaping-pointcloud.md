@@ -10,7 +10,6 @@ showcase: "planet"
 
 <p>Listen to the latest developments in point clouds and QGIS from Martin Dobias: <a href="https://mapscaping.com/podcast/cloud-optimized-point-clouds/">MapScaping</a> podcast.</p>
 
-<!-- more -->
 
 <p>Martin Dobias, our CTO and the lead developer of 3D and point clouds integration in QGIS sat down with Daniel O’Donohue from Mapscaping to talk about <a href="https://mapscaping.com/podcast/cloud-optimized-point-clouds/">point clouds and QGIS</a>.</p>
 

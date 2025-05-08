@@ -16,7 +16,7 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
     <div class="listcont external-link">Want to see your name here?</div>
     <div class="subtext is-size-7">Become a sponsor to QGIS on GitHub</div>
 </a>
-<!-- sponsors --><a class="rich-list third mr-2 mb-2" href="https://github.com/pozi" target="_blank">
+<a class="rich-list third mr-2 mb-2" href="https://github.com/pozi" target="_blank">
   <div class="listcont external-link">Pozi - pozi</div>
   <div class="subtext is-size-7">https://github.com/pozi</div>
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/cedricr" target="_blank">
@@ -118,6 +118,6 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/Ryocat" target="_blank">
   <div class="listcont external-link">Ryotai - Ryocat</div>
   <div class="subtext is-size-7">https://github.com/Ryocat</div>
-</a><!-- sponsors -->
+</a>
 
 {{< content-end >}}

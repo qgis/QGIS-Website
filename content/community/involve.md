@@ -113,7 +113,6 @@ We welcome two types of financial contributions:
 
 {{< rich-content-end >}}
 {{< rich-right-start >}}  
-<!-- {{< stripe-widget otherMethods="true">}} -->
 {{< payrexx-widget otherMethods="true">}}
 {{< rich-right-end >}}
 {{< rich-box-end >}}
