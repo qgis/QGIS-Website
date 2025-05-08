@@ -489,10 +489,30 @@ To ensure smooth operation of hugo-gettext, follow these important formatting re
    >}}
    ```
 
-2. **Empty Markdown Files**  
+2. **Avoid Hard Line Breaks in Multi-line Shortcodes**  
+   In multi-line shortcodes, do not use Markdown hard line breaks (two or more spaces at the end of a line or a backslash \ at the end of a line that create a `<br>` in HTML). These breaks can interfere with hugo-gettext processing.
+
+   **Example of problematic hard line breaks:**
+   ```
+   {{< block
+       title="Sustaining Members."··
+       subtitle="Create a recurring sustaining membership."···
+       image=""
+       sub-block-side="bottom"
+       class="is-danger"
+       title-size="is-4"
+       subtitle-size="is-6"
+       link="funding/sustaining-members/"
+       link-text="Subscribe!">}}{{< /block >}}
+   ```
+   *(Note: The `··` represents two spaces at line end. Similarly, avoid using `\` at the end of lines)*
+
+   Instead, ensure no trailing spaces or backslashes exist at line ends within shortcodes.
+
+3. **Empty Markdown Files**  
    Do not create completely empty markdown files (without any content or front matter) in the `content` directory as they can cause hugo-gettext to break with errors.
 
-3. **Newlines in Translation Strings**  
+4. **Newlines in Translation Strings**  
    Avoid extra newlines (`\n`) at the end of `msgstr` entries if the corresponding `msgid` doesn't have them. This mismatch can cause compilation errors.
 
    **Example:**
@@ -511,6 +531,20 @@ To ensure smooth operation of hugo-gettext, follow these important formatting re
    ```
    make fix-newlines
    ```
+
+5. **Avoid HTML Comments with Shortcodes**  
+   Do not use HTML comments (`<!-- -->`) to comment out shortcodes or markdown content in `.md` files. This can cause issues with hugo-gettext parsing and lead to errors during translation processing.
+
+   **Problematic example:**
+   ```html
+   <!--
+   {{< tab-content-start tab="2" >}}
+   Content here...
+   {{< tab-content-end >}}
+   -->
+   ```
+
+   Instead, use Hugo's built-in commenting mechanism or remove the commented code entirely.
 
 ## Search Functionality 
 The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](https://markjs.io/).
