@@ -52,7 +52,6 @@ export class CommunityPage {
             page: "Become a QGIS certified training organisation",
             texts: [
                 "Become a QGIS certified training organisation",
-                "certification@qgis.org",
                 "Certification Process",
                 "Requirements",
                 "Application",
