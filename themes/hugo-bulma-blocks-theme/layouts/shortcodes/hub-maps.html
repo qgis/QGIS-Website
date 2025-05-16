@@ -16,66 +16,61 @@
                 {{ $size = cond (ne $count 1 2 6 7) "4" "6" }}
             {{ end }}
             {{ if le $count $quantity }}
-                <div class="column is-{{ $size }} is-flex">
+                <div
+                    class="column is-{{ $size }} is-flex"
+                    style="max-height: unset;"
+                >
                     {{/* is flex ensures cols have the same height */}}
-                    <div class="imagetile">
-                        <figure class="map-image-container">
-                            <a
-                                href="{{ .Params.link }}"
-                                target="_blank"
-                                class="is-flex is-flex-direction-column"
-                            >
+                    <div class="tile">
+                        <a
+                            class="rich-list has-image mr-2 mb-2"
+                            href="{{ .Params.hub_link }}"
+                        >
+                            <div class="image">
                                 <img
                                     src="{{ .Site.BaseURL }}hub-maps/{{ .Params.image }}"
-                                    alt="{{ .Params.title }}"
                                 />
-
-                                <div class="tooltip">
-                                    <p
-                                        class="has-text-white has-text-weight-semibold"
-                                    >
-                                        {{ .Params.title | truncate 30 }}
-                                    </p>
-                                    <p class="has-text-white">
-                                        {{ .Params.description | truncate 100 }}
-                                    </p>
-                                    <p class="has-text-white is-size-7">
-                                        Uploaded by:
-                                        {{ .Params.creator | default "Unknown" }}
-                                        on
-                                        {{ .Params.date.Format "02-01-2006" }}
-                                    </p>
-                                    <p class="buttons mt-3">
-                                        <a
-                                            class="button is-danger"
-                                            href="{{ .Params.hub_link }}"
+                                <div
+                                    class="map-info is-flex is-flex-direction-column is-justify-content-space-between is-align-items-flex-end"
+                                >
+                                    <div>
+                                        <button
+                                            class="button is-light"
+                                            onclick="event.preventDefault(); window.open('{{ .Params.link }}', '_blank');"
                                         >
-                                            <span class="icon">
-                                                <i
-                                                    class="fas fa-info-circle"
-                                                ></i>
-                                            </span>
-                                            <span>Details</span>
-                                        </a>
-                                        <a
-                                            class="button is-success"
-                                            target="_blank"
-                                            href="{{ .Params.link }}"
-                                        >
-                                            <span class="icon">
+                                            <span class="icon is-size-4">
                                                 <i
                                                     class="fas fa-magnifying-glass-plus"
                                                 ></i>
                                             </span>
-                                            <span>View</span>
-                                        </a>
-                                    </p>
+                                        </button>
+                                    </div>
+                                    <span class="tag is-light is-success">
+                                        Uploaded by
+                                        {{ .Params.creator | default "Unknown" }}
+                                    </span>
                                 </div>
-                            </a>
-                        </figure>
+                            </div>
+                            <div class="listcont ">
+                                <p class="has-text-weight-semibold">
+                                    {{ .Params.title | truncate 30 }}
+                                </p>
+                                <p>
+                                    {{ .Params.description | truncate 100 }}
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             {{ end }}
         {{ end }}
     {{ end }}
+</div>
+<div class="has-text-centered mt-4">
+    <a class="button is-success" href="https://maps.qgis.org">
+        <span class="icon">
+            <i class="fas fa-arrow-right"></i>
+        </span>
+        <span>See more</span>
+    </a>
 </div>
