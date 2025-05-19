@@ -210,7 +210,6 @@ Next release: {{< param "nextreleasedate" >}}
 |            |unstable        |sid     |                                                        |
 |Ubuntu      |24.10           |oracular|                                                        |
 |            |24.04 (LTS)     |noble   |yes                                                     |
-|            |23.10           |mantic  |                                                        |
 |            |22.04 (LTS)     |jammy [[3]](#id3) |yes                                           |
 
 {{< footnote "3" >}} only up to QGIS LTR 3.40
