@@ -204,19 +204,15 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename|Also available based on ubuntugis-unstable dependencies?|
-|------------|----------------|--------|--------------------------------------------------------|
-|Debian      |12.x (stable)   |bookworm|                                                        |
-|            |11.x (oldstable)|bullseye [[3]](#id3) |                                           |
-|            |unstable        |sid     |                                                        |
-|Ubuntu      |24.10           |oracular [[4]](#id4) |                                           |
-|            |24.04 (LTS)     |noble   |yes                                                     |
-|            |23.10           |mantic  |                                                        |
-|            |22.04 (LTS)     |jammy   |yes                                                     |
+|Distribution|Version         |Codename          |Also available based on ubuntugis-unstable dependencies?|
+|------------|----------------|------------------|--------------------------------------------------------|
+|Debian      |12.x (stable)   |bookworm          |                                                        |
+|            |unstable        |sid               |                                                        |
+|Ubuntu      |24.10           |oracular          |                                                        |
+|            |24.04 (LTS)     |noble             |yes                                                     |
+|            |22.04 (LTS)     |jammy [[3]](#id3) |yes                                        |
 
-{{< footnote "3" >}} only up to 3.38 (bullseye's GRASS too old)
-
-{{< footnote "4" >}} starting with nightlies after 3.34.12/3.40.0
+{{< footnote "3" >}} only up to 3.40 (cmake too old for 3.42)
 
 
 To use the QGIS archive you have to first add the archive’s repository public key:
