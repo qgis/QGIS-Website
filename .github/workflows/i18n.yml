@@ -34,8 +34,8 @@ jobs:
       - name: Install Transifex CLI
         run: |
           curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
-          # add .tx to PATH
-          export PATH="$PATH:$HOME/.tx"
+          # add .tx to PATH for all subsequent steps
+          echo "$HOME/.tx" >> $GITHUB_PATH
 
       - name: Configure Git
         run: |
