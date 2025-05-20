@@ -33,9 +33,12 @@ jobs:
 
       - name: Install Transifex CLI
         run: |
+          mkdir -p $HOME/bin
           curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
-          # add .tx to PATH for all subsequent steps
-          echo "$HOME/.tx" >> $GITHUB_PATH
+          # Move tx binary to a persistent location and add to PATH
+          mv tx $HOME/bin/
+          chmod +x $HOME/bin/tx
+          echo "$HOME/bin" >> $GITHUB_PATH
 
       - name: Configure Git
         run: |
