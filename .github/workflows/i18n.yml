@@ -40,11 +40,6 @@ jobs:
           chmod +x $HOME/bin/tx
           echo "$HOME/bin" >> $GITHUB_PATH
 
-      - name: Configure Git
-        run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
-
       - name: Extract messages
         run: make messages-extract
 
@@ -66,9 +61,25 @@ jobs:
         run: make messages-compile
 
       - name: Generate translated content
-        run: make messages-generate
+        run: make messages-generate-with-fallback
 
-      - name: Commit and push changes
+      - name: Archive and upload translations as artifact
         run: |
-          git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update translations [skip ci]" && git push) 
+          tar -czf translations.tar.gz content-translated/
+        
+      - name: Upload translations artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: translated-content
+          path: translated-content.tar.gz
+          retention-days: 7
+
+      # - name: Configure Git
+      #   run: |
+      #     git config --global user.name 'GitHub Actions'
+      #     git config --global user.email 'github-actions@github.com'
+
+      # - name: Commit and push changes
+      #   run: |
+      #     git add .
+      #     git diff --quiet && git diff --staged --quiet || (git commit -m "Update translations [skip ci]" && git push) 
