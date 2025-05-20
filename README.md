@@ -415,8 +415,8 @@ The following steps are executed automatically:
   run: tx pull -a
 - name: Compile .po to .mo
   run: hugo-gettext compile translations/
-- name: Generate translated content
-  run: hugo-gettext generate
+- name: Generate translated content with fallback
+  run: make generate-translations-with-fallback
 ```
 
 ### Makefile Commands for Translations
@@ -435,6 +435,19 @@ make messages-compile
 # Generate translated content from .mo files
 # Creates translated versions of content in content-translated/<lang>/
 make messages-generate
+
+# Clean translated content directory
+# Removes all content from content-translated/
+make clean-translations
+
+# Copy original content as fallback for all languages
+# This ensures untranslated pages still appear in other languages
+make copy-content
+
+# Generate translations with fallback content
+# Combines clean-translations, copy-content, and messages-generate
+# This ensures all pages exist in all languages, falling back to English when no translation exists
+make generate-translations-with-fallback
 
 # Push source strings to Transifex
 # Converts and uploads English strings to Transifex for translation
@@ -457,11 +470,16 @@ These commands are typically used in sequence during the translation workflow:
 4. `make txpush` - Upload strings to Transifex
 5. `make txpull` - Download translations from Transifex
 6. `make messages-compile` - Compile translations
-7. `make messages-generate` - Generate translated content
+7. `make generate-translations-with-fallback` - Generate translated content with English fallback
 
 The commands are used in the CI/CD pipeline and can also be run locally for development. Each command has its own target in the Makefile and can be run independently.
 
+### Translation Fallback Mechanism
+
+The `generate-translations-with-fallback` command ensures translated content is properly managed by: 1) cleaning the translations directory, 2) copying English content as fallback, and 3) applying available translations on top. This approach maintains consistent content across all languages while utilizing translations where available.
+
 ### Summary
+
 - The i18n process is fully integrated and automated.
 - Source content is in `content/`, translations are in `content-translated/<lang>/`.
 - All translation files are managed in `translations/` and synchronized with Transifex.
@@ -545,6 +563,70 @@ To ensure smooth operation of hugo-gettext, follow these important formatting re
    ```
 
    Instead, use Hugo's built-in commenting mechanism or remove the commented code entirely.
+
+6. **Avoid Empty Parameters in Shortcodes**  
+   Do not include empty parameters in shortcodes (especially empty string parameters like `param=""`). These can cause issues with hugo-gettext processing.
+
+   **Problematic example:**
+   ```
+   {{< rich-list listLink="https://qgis.org/api/|ltrversion|/"  layoutClass="inline-block" listTitle="C++ API documentation" listSubtitle="">}}
+   ```
+
+   Instead, either completely remove the parameter if it's optional, or provide a meaningful value.
+
+7. **Use Correct Front Matter Delimiters and Syntax**  
+   Use only YAML front matter with triple dash delimiters (`---`) for all markdown files. Do not use the triple plus (`+++`) format which is for TOML front matter. Also ensure that the syntax inside follows YAML format (using colons `:` for assignments), not TOML format (which uses equals `=`).
+
+   **Correct YAML format:**
+   ```yaml
+   ---
+   title: "Page Title"
+   date: 2023-04-15
+   aliases: ["/old-url"]
+   tags: ["tag1", "tag2"]
+   ---
+   ```
+
+   **Incorrect (TOML format with YAML delimiters):**
+   ```
+   ---
+   title = "Page Title"
+   date = 2023-04-15
+   aliases = ["/old-url"]
+   tags = ["tag1", "tag2"]
+   ---
+   ```
+
+   **Incorrect (TOML format):**
+   ```toml
+   +++
+   title = "Page Title"
+   date = 2023-04-15
+   +++
+   ```
+
+   Using the incorrect front matter format or mixing syntaxes can cause issues with hugo-gettext parsing and lead to translation errors.
+
+8. **Use Single-line Shortcodes in Markdown Tables**  
+   When using shortcodes inside Markdown tables, ensure that the shortcodes are written in a single line. Multi-line shortcodes within tables can break hugo-gettext processing.
+
+   **Correct (single-line shortcode in table):**
+   ```markdown
+   | Column 1 | Column 2 |
+   |----------|----------|
+   | Content  | {{< my-shortcode param1="value1" param2="value2" >}} |
+   ```
+
+   **Incorrect (multi-line shortcode in table):**
+   ```markdown
+   | Column 1 | Column 2 |
+   |----------|----------|
+   | Content  | {{< my-shortcode 
+                  param1="value1" 
+                  param2="value2" >}} |
+   ```
+
+   Always consolidate shortcodes to a single line when they are used inside tables.
 
 ## Search Functionality 
 The search functionality uses both [FuseJS](https://fusejs.io/) and [MarkJS](https://markjs.io/).

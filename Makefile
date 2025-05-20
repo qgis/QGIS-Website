@@ -104,5 +104,21 @@ fix-newlines:
 	@echo "Fixing newlines in translation files..."
 	@python3 scripts/fix_newlines.py
 
-messages-generate:
+generate-translations:
 	hugo-gettext generate
+
+clean-translations:
+	@echo "Cleaning translated content..."
+	@rm -rf content-translated/
+
+copy-content:
+	@echo "Preparing fallback content..."
+	@for lang in $$(ls translations/ | grep -v 'en'); do \
+		mkdir -p content-translated/$$lang; \
+		cp -r content/* content-translated/$$lang/; \
+	done
+
+generate-translations-with-fallback: clean-translations copy-content
+	@echo "Generating translations"
+	@hugo-gettext generate
+	@echo "Successfully generated translations"

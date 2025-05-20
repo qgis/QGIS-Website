@@ -64,19 +64,18 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 
 ### Schedule
 
-{{< csv-table file="csv/schedule.csv" />}}
+{{< csv-table file="csv/schedule.csv" >}}
 
 ### Event legend
-
-{{< csv-table >}}
-"LTR","Long term release, begin of new development phase"
-"LR","Regular release, begin of new development phase"
-"FF","Feature freeze, end of development phase"
-"PR","Point release of latest release and LTR branch"
-"EPR","Extra Point release"
-":rm-current:current",":rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}}"
-":rm-next:next",":rm-next:next releases"
-{{< /csv-table >}}
+| Abbreviation | Description |
+|-------------|-------------|
+| LTR | Long term release, begin of new development phase |
+| LR | Regular release, begin of new development phase |
+| FF | Feature freeze, end of development phase |
+| PR | Point release of latest release and LTR branch |
+| EPR | Extra Point release |
+| :rm-current:current | :rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} |
+| :rm-next:next | :rm-next:next releases |
 
 ## Location of prereleases / nightly builds {#qgis-prereleases}
 

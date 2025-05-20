@@ -10,8 +10,6 @@
     {{ else }}
         {{ printf "Error: Resource not found at %s" $path }}
     {{ end }}
-{{ else }}
-    {{ $data = .Inner | unmarshal }}
 {{ end }}
 
 {{ if $data }}
