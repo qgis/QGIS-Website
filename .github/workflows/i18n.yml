@@ -61,7 +61,7 @@ jobs:
         run: make messages-compile
 
       - name: Generate translated content
-        run: make messages-generate-with-fallback
+        run: make generate-translations-with-fallback
 
       - name: Archive and upload translations as artifact
         run: |
@@ -73,6 +73,7 @@ jobs:
           name: translated-content
           path: translated-content.tar.gz
           retention-days: 7
+          overwrite: true
 
       # - name: Configure Git
       #   run: |
