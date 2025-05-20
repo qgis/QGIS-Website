@@ -738,7 +738,7 @@ sectionPagesMenu = 'main'
   genToOtherDir = true
   srcDir = "content"
   genDir = "content-translated"
-  excludedKeys = "heroSize heroImage HeroImage heroLogo Badge BadgeLink ButtonLink sidebar submenus draft showcase source Reviewer reviewer Reviewed reviewed"
+  excludedKeys = "heroSize heroImage HeroImage heroLogo Badge BadgeLink ButtonLink sidebar submenus draft showcase source Reviewer reviewer Reviewed reviewed startDate endDate"
   [i18n.shortcodes]
     [i18n.shortcodes.params]
       feature = ["title", "text", "col-title-1", "col-text-1", "col-title-2", "col-text-2", "col-title-3", "col-text-3"]
@@ -760,6 +760,7 @@ sectionPagesMenu = 'main'
   [i18n.content]
     [i18n.content.default]
       globs = ["content/**/*.md"]
+      excludedGlobs = ["content/community-blogs/**", "content/funders/**", "content/flickr-images/**"]
   [languages]
     [languages.en]
     languageCode = "en"
