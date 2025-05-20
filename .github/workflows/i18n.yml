@@ -65,10 +65,10 @@ jobs:
 
       - name: Archive and upload translations as artifact
         run: |
-          tar -czf translations.tar.gz content-translated/
+          tar -czf translated-content.tar.gz content-translated/
         
       - name: Upload translations artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: translated-content
           path: translated-content.tar.gz
