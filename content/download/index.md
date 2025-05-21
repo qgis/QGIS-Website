@@ -59,7 +59,7 @@ We provide installers for many flavors of GNU/Linux binary packages (including r
 {{< spoiler-start id="download-mac" title="🍏 macOS" >}}
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-2" >}}
-#### QGIS macOS version notice
+#### QGIS for macOS version notice
 The QGIS installers for macOS are currently **outdated** and may not reflect the latest version shown in QGIS notifications. We are actively working to update the macOS packages. If you need the newest features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}). Thank you for your patience and understanding.
 
 {{< rich-content-end >}}
