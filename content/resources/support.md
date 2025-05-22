@@ -45,7 +45,7 @@ If you are going to ask questions please read this: [How to ask a QGIS question?
 
 ## StackExchange
 
-You can ask quesstions on [GIS StackExchange](http://gis.stackexchange.com). If you use the tag `qgis` you’ll see all QGIS related questions and answers: http://gis.stackexchange.com/?tags=qgis
+You can ask questions on [GIS StackExchange](http://gis.stackexchange.com). If you use the tag `qgis` you’ll see all QGIS related questions and answers: http://gis.stackexchange.com/?tags=qgis
 
 ## Communication channels
 
@@ -61,7 +61,7 @@ There is also a web version (https://web.telegram.org) which you can join in the
 
 Matrix (https://matrix.org) is a project for decentralised chat. QGIS has a room which is accessible at the **#qgis:osgeo.org** alias (among others) which bridges to the libera.chat **#qgis** IRC channel.
 
-To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/docs/projects/try-matrix-now/#clients for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org
+To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/docs/projects/try-matrix-now/#clients for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org.
 
 To use IRC: install an IRC client and connect to irc://irc.libera.chat/#qgis or point your browser to https://web.libera.chat/?channels=#qgis
 
