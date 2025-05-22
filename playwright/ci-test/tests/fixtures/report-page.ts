@@ -10,11 +10,11 @@ export class ReportsPage {
         "Daily Reports",
         "OGC Certification",
         "Performance",
-        "Security"
+        "Security",
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
-        this.certificationImage = this.page.locator("p:nth-child(5) > img");
+        this.certificationImage = this.page.locator("p:nth-child(6) > img");
         this.ogcCertificationLink = this.page.getByRole("link", {
             name: "OGC Certification",
         });
