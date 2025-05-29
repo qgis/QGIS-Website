@@ -23,7 +23,7 @@ jobs:
           active-only: false
           template: |
             <a class="rich-list third mr-2 mb-2" href="https://github.com/{{{ login }}}" target="_blank">
-              <div class="listcont external-link has-text-weight-medium">
+              <div class="listcont external-link">
                 {{{ name }}} - {{{ login }}}
               </div>
             </a>
