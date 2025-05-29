@@ -16,7 +16,7 @@ Reviewer: Tim Sutton
 ## QGIS Certificate
 
 
-If you're looking for organisations that offer training with the official QGIS certificate, check the [current list of members](https://changelog.qgis.org/en/qgis/certifyingorganisation/list/) of the QGIS Certification Programme.
+If you're looking for organisations that offer training with the official QGIS certificate, check the [current list of members](https://certification.qgis.org/en/certifyingorganisation/list/) of the QGIS Certification Programme.
 
 ![Students with certificate](../students_with_certificate.webp "Students with certificate")
 
