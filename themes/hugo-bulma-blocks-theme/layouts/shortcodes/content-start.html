@@ -8,6 +8,22 @@
 {{ $sidebar := .Get "sidebar" | default false }}
 
 
+{{ if .Page.File }}
+<div class="is-desktop-only edit-on-github">
+    <a
+        class="button is-light is-small is-rounded"
+        href="{{ $.Site.Params.githubRepo }}/edit/{{ $.Site.Params.githubBranch }}/{{ $.Site.Params.githubSubdir }}/{{ .Page.File.Path }}"
+        target="_blank"
+        rel="noopener"
+    >
+        <span class="icon">
+            <i class="fab fa-github"></i>
+        </span>
+        <span>Edit on GitHub</span>
+    </a>
+</div>
+{{ end }}
+
 <section class="section {{ $animationClasses }} pt-3">
     <div class="container {{ $classes }}">
         {{ if eq .Page.Params.sidebar true}}
@@ -15,25 +31,5 @@
         {{ partial "sidebar" . }}
         <div class="content column is-9"> 
         {{ end }}
-
-        <div class="is-flex is-align-items-center is-justify-content-space-between mt-3 mb-3">
-            <div>
-                
-            </div>
-            {{ if .Page.File }}
-                <a
-                    class="button is-primary3 is-outlined"
-                    href="{{ $.Site.Params.githubRepo }}/edit/{{ $.Site.Params.githubBranch }}/{{ $.Site.Params.githubSubdir }}/{{ .Page.File.Path }}"
-                    target="_blank"
-                    rel="noopener"
-                >
-                    <span class="icon">
-                        <i class="fab fa-github"></i>
-                    </span>
-                    <span>Edit on GitHub</span>
-                </a>
-            {{ end }}
-        </div>
-        
         
 
