@@ -204,19 +204,15 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename|Also available based on ubuntugis-unstable dependencies?|
-|------------|----------------|--------|--------------------------------------------------------|
-|Debian      |12.x (stable)   |bookworm|                                                        |
-|            |11.x (oldstable)|bullseye [[3]](#id3) |                                           |
-|            |unstable        |sid     |                                                        |
-|Ubuntu      |24.10           |oracular [[4]](#id4) |                                           |
-|            |24.04 (LTS)     |noble   |yes                                                     |
-|            |23.10           |mantic  |                                                        |
-|            |22.04 (LTS)     |jammy   |yes                                                     |
+|Distribution|Version         |Codename          |Also available based on ubuntugis-unstable dependencies?|
+|------------|----------------|------------------|--------------------------------------------------------|
+|Debian      |12.x (stable)   |bookworm          |                                                        |
+|            |unstable        |sid               |                                                        |
+|Ubuntu      |24.10           |oracular          |                                                        |
+|            |24.04 (LTS)     |noble             |yes                                                     |
+|            |22.04 (LTS)     |jammy [[3]](#id3) |yes                                        |
 
-{{< footnote "3" >}} only up to 3.38 (bullseye's GRASS too old)
-
-{{< footnote "4" >}} starting with nightlies after 3.34.12/3.40.0
+{{< footnote "3" >}} only up to 3.40 (cmake too old for 3.42)
 
 
 To use the QGIS archive you have to first add the archive’s repository public key:
@@ -759,7 +755,7 @@ To run the container with the latest QGIS stable version, command
 docker run -it --rm \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/qgis/base
+  quay.io/bedata/jupyterlab/qgis/base
 ```
 
 To run the GPU accelerated container with the latest QGIS stable version,
@@ -770,7 +766,7 @@ docker run -it --rm \
   --gpus 'device=all' \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/cuda/qgis/base
+  quay.io/bedata/jupyterlab/cuda/qgis/base
 ```
 
 ## QGIS LTR
@@ -781,7 +777,7 @@ To run the container with the latest QGIS LTR version, command
 docker run -it --rm \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/qgis/base:ltr
+  quay.io/bedata/jupyterlab/qgis/base:ltr
 ```
 
 To run the GPU accelerated container with the latest QGIS LTR version, command
@@ -791,7 +787,7 @@ docker run -it --rm \
   --gpus 'device=all' \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/cuda/qgis/base:ltr
+  quay.io/bedata/jupyterlab/cuda/qgis/base:ltr
 ```
 
 ## QGIS version
@@ -802,14 +798,17 @@ To run a container with a specific QGIS version, command
 docker run -it --rm \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]
+  quay.io/bedata/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]
 ```
 
 {{< rich-box-start icon="🐳" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 
-Container images are available for QGIS versions ≥ 3.28.4.
+Container images on Quay are available for QGIS versions ≥ 3.40.4.
+
+For QGIS versions 3.28.4 to 3.40.3 use
+`glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]`.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
@@ -820,14 +819,17 @@ docker run -it --rm \
   --gpus 'device=all' \
   -p 8888:8888 \
   -v jupyterlab-jovyan:/home/jovyan \
-  glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]
+  quay.io/bedata/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]
 ```
 
 {{< rich-box-start icon="🔥" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 
-GPU accelerated container images are available for QGIS versions ≥ 3.34.0.
+GPU accelerated container images on Quay are available for QGIS versions ≥ 3.40.4.
+
+For QGIS versions 3.34.0 to 3.40.3 use
+`glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]`.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 

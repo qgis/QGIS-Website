@@ -1,0 +1,67 @@
+.payrexx-widget
+  p
+    font-size: 20px  
+    font-weight: 500
+    margin-bottom: 0.5rem !important
+  &:not(:last-child)
+    margin-bottom: 0
+  hr
+    margin: 0rem 0 1rem
+  #payrexx-submit-button
+    height: 50px 
+    margin: 1rem 0 1rem 
+  .payrexx-widget-footer 
+    a 
+      font-weight: 300
+      color: #4D6370
+      font-size: 14px 
+      &:hover
+        color: #3a9800
+  .currency
+    font-weight: 300
+    color: #4D6370  
+  .picker 
+    padding-left: 1rem
+    padding-right: 1rem
+    &:hover
+     color: #fff !important      
+  #payrexx-submit-button
+    width: 100%
+    border-radius: 10px
+  select
+    display: inline-block
+    margin-left: auto
+    background-color: #fff
+    border: none
+  input[type="radio"]
+    visibility: hidden
+    display: none
+    height: 0
+    width: 0
+  input[type="radio"]:checked + label
+    background-color: #589632 !important
+    color: #fff !important
+  label.button
+    border-radius: 10px
+    margin: 5px
+    padding-bottom: 0rem
+    padding-top: calc(0.5em - 1px)
+    color: #000 !important
+  a
+    color: #000
+    &.is-active
+      color: #589632
+
+
++until-tablet
+  .payrexx-widget
+    border-radius: 10px
+
+.donatbox, .paypal img
+  background: #fff
+  border-radius: 10px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  padding: 20px
+  width: 100%
+  border: 0px
+

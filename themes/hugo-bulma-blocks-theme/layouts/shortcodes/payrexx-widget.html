@@ -1,0 +1,85 @@
+<div class="payrexx-widget donatbox">
+    <p id="payrexx-donate-frequency-options">
+        <a id="once" class="mr-4 is-active" onclick="updateOptions('once')"
+            >One-Time</a
+        >
+        <a id="monthly" onclick="updateOptions('monthly')">Monthly</a>
+    </p>
+    <hr />
+    <form id="donate-payrexx">
+        {{ range sort $.Site.Data.payrexx_products }}
+            <input
+                value="{{ .payment_link }}"
+                id="{{ .id }}"
+                type="radio"
+                name="amount"
+            />
+            <label for="{{ .id }}" class="button is-primary1 is-outlined picker"
+                >{{ .label }}</label
+            >
+        {{ end }}
+    </form>
+    <br />
+    <a
+        id="payrexx-submit-button"
+        class="button is-primary1"
+        rel="noopener noreferrer"
+        {{/* href to be set by js depending on selected donation */}}
+        >Donate
+    </a>
+
+    <div class="is-flex is-justify-content-space-between payrexx-widget-footer">
+        {{ if .Get "otherMethods" }}
+            <a href="{{ absURL "funding/donate/" }}"
+                >Other methods, more info</a
+            >
+        {{ end }}
+        <select
+            id="payrexx-currency"
+            class="currency"
+            onchange="updateOptions()"
+        >
+            <option value="eur">EUR</option>
+            <option value="usd">USD</option>
+        </select>
+    </div>
+    {{ if .Get "skipToDownload" }}
+        <hr />
+        <button
+            class="button is-primary6 is-fullwidth is-outlined"
+            id="hide-donate-prompt"
+            onclick="hidePrompt()"
+        >
+            Skip it and go to download
+        </button>
+    {{ end }}
+    {{ if .Get "alreadyDonated" }}
+        <hr />
+        <button
+            class="button is-primary6 is-fullwidth is-outlined"
+            id="hide-donate-prompt"
+            onclick="hidePrompt()"
+        >
+            Already donated? Hide this prompt
+        </button>
+    {{ end }}
+</div>
+
+{{ $donatejs := resources.Get "js/donate-payrexx.js" | resources.Minify }}
+<script src="{{ $donatejs.RelPermalink }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let pathname = window.location.pathname;
+        if (
+            localStorage.getItem("donatePromptClosed") === "true" &&
+            pathname.includes("/download/thank-you")
+        ) {
+            hidePrompt();
+        }
+    });
+    function hidePrompt() {
+        document.getElementById("donate-prompt").style.display = "none";
+        localStorage.setItem("donatePromptClosed", "true");
+        window.scrollTo(0, 0);
+    }
+</script>
