@@ -11,15 +11,20 @@ Reviewer: Tim Sutton
 
 {{< content-start >}}
 
-# Become a QGIS certified training organisation
-Is your organisation an active member of the QGIS community and offering high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
+# Certification Programme
+
+## QGIS Certificate
+
 
 Are you looking for courses with the official QGIS certificate? At the [QGIS Certification Programme website](https://certification.qgis.org/), you can explore an interactive map to locate organisations in your country that offer certified QGIS training and find upcoming courses that provide an official QGIS certificate.
 
 ![Students with certificate](../students_with_certificate.webp "Students with certificate")
 
-## Certification Process
-### Requirements
+## Become a QGIS certified training organisation
+Does your organisation participate actively in the QGIS community and offer high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
+
+### Certification Process
+#### Requirements
 
 The QGIS Certification Programme is designed to promote both community involvement in the QGIS project and quality education for QGIS software. The application process requires applicants to detail their contributions to the QGIS project and make their training materials available for review. Contributions to the QGIS project include activities such as:
 
@@ -35,7 +40,7 @@ The QGIS Certification Programme is designed to promote both community involveme
 *   Authoring QGIS books
     
 
-### Application
+#### Application
 
 You are required to provide the training material for each of your courses. This includes exercises, lectures and data. This material will be reviewed for currentness, accurate representation of the QGIS project and overall quality. If the material is not of adequate quality, this can be cause for refusal.
 
