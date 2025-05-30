@@ -33,7 +33,7 @@
 
     <div class="is-flex is-justify-content-space-between stripe-widget-footer">
       {{ if .Get "otherMethods" }}
-          <a href="{{ absURL "funding/donate/" }}">{{ i18n "otherMethodsMoreInfo" }}</a>
+          <a href="{{ relLangURL "funding/donate/" }}">{{ i18n "otherMethodsMoreInfo" }}</a>
       {{ end }}
       <select id="stripe-currency" class="currency" onchange="updateStripeOptions()">
         <option value="eur">EUR</option>
