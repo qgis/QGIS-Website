@@ -21,7 +21,7 @@ Are you looking for courses with the official QGIS certificate? At the [QGIS Cer
 ![Students with certificate](../students_with_certificate.webp "Students with certificate")
 
 ## Become a QGIS certified training organisation
-Is your organisation an active member of the QGIS community and offering high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
+Does your organisation participate actively in the QGIS community and offer high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
 
 ### Certification Process
 #### Requirements
