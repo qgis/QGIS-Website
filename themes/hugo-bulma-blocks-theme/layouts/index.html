@@ -10,11 +10,10 @@
 {{ if .Page.File }}
 <section class="section pt-0">
   <div
-      class="container content is-flex is-align-items-center is-justify-content-space-between"
+      class="container content"
   >
-      <div></div>
       <a
-          class="button is-light is-small is-rounded"
+          class="button is-light"
           href="{{ $.Site.Params.githubRepo }}/edit/{{ $.Site.Params.githubBranch }}/{{ $.Site.Params.githubSubdir }}/{{ .Page.File.Path }}"
           target="_blank"
           rel="noopener"
