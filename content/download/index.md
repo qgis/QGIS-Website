@@ -57,6 +57,13 @@ We provide installers for many flavors of GNU/Linux binary packages (including r
 
 
 {{< spoiler-start id="download-mac" title="🍏 macOS" >}}
+{{< rich-box-start icon="⚠️" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-2" >}}
+#### QGIS versions for macOS notice
+The QGIS installers for macOS are currently **outdated** and may not reflect the latest version shown in QGIS notifications. We are actively working to update the macOS packages. If you need newer features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}). Thank you for your patience and understanding.
+
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 {{< download-macos >}}
 
 Alternatively, for native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components (e.g. GDAL, PDAL, GRASS GIS) see [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
