@@ -43,6 +43,7 @@ code --user-data-dir='.vscode' \
 --install-extension akmittal.hugofy@0.1.1 \
 --install-extension kaellarkin.hugo-shortcode-syntax@2.4.0 \
 --install-extension HitkoDev.vscode-remark-hugo@0.2.13 \
+--install-extension ms-playwright.playwright@1.1.14 \
 
 # Launch VSCode with the sandboxed environment
 code --user-data-dir='.vscode' \
