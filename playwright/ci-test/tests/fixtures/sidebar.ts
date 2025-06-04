@@ -2,8 +2,8 @@ import type { Page, Locator } from "@playwright/test";
 
 export class Sidebar {
     public readonly sidebar: Locator;
-    public readonly projectLink: Locator;
-    public readonly overviewLink: Locator;
+    public readonly aboutLink: Locator;
+    public readonly featuresLink: Locator;
     public readonly caseStudiesLink: Locator;
     public readonly pluginsLink: Locator;
     public readonly visualChangelogsLink: Locator;
@@ -37,11 +37,11 @@ export class Sidebar {
 
     constructor(public readonly page: Page) {
         this.sidebar = this.page.locator("#sidebar");
-        this.projectLink = this.sidebar.getByRole("link", {
+        this.aboutLink = this.sidebar.getByRole("link", {
             name: "Project",
             exact: true,
         });
-        this.overviewLink = this.sidebar.getByRole("link", {
+        this.featuresLink = this.sidebar.getByRole("link", {
             name: "Overview",
         });
         this.caseStudiesLink = this.sidebar.getByRole("link", {
