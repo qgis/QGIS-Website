@@ -15,7 +15,7 @@ QGIS is developed by a team of dedicated volunteers, companies and organisations
 
 We rely on sponsorships and donations for much of our funding. If you would like to support us, donations are very welcome. Donations can be made by electronic funds transfer, by credit card, or by PayPal.
 
-Donations to QGIS are tax-deductible in several countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the German QGIS user group. They can issue a payment confirmation as a tax-exempt german association.
+Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt german association.
 
 
 {{< rich-box-start layoutClass="mt-6">}}
