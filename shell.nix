@@ -7,12 +7,23 @@ mkShell {
   buildInputs = [
     hugo
     vscode
+    nodejs
+    playwright-test
+    python311Packages.playwright
+    python311Packages.pytest
     python312Packages.icalendar
     python312Packages.requests
   ];
+
+  PLAYWRIGHT_BROWSERS_PATH="${pkgs.playwright-driver.browsers}";
+
   # DIRENV_LOG_FORMAT to reduce direnv verbosity
   # See https://github.com/direnv/direnv/issues/68#issuecomment-162639262
   shellHook = ''
+     # Remove playwright from node_modules, so it will be taken from playwright-test
+     rm playwright/ci-test/node_modules/@playwright/ -R
+     export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver.browsers}
+     export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=true
      export DIRENV_LOG_FORMAT=
      echo "-----------------------"
      echo "🌈 Your Hugo Dev Environment is ready."
