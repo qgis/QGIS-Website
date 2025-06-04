@@ -23,6 +23,8 @@ Whether you choose to donate or not, we hope that you enjoy using our labour of 
 
 Our very best regards!
 
+Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt german association.
+
 {{< rich-content-end >}}
 {{< rich-right-start mode="html" >}}
 <!-- {{< stripe-widget otherMethods="true" skipToDownload="true" >}} -->
