@@ -8,7 +8,7 @@ export class Footer {
     public readonly resourcesList: Locator;
     public readonly fundingList: Locator;
     public readonly downloadLink: Locator;
-    public readonly overviewLink: Locator;
+    public readonly featuresLink: Locator;
     public readonly caseStudiesLink: Locator;
     public readonly pluginsLink: Locator;
     public readonly visualChangelogsLink: Locator;
@@ -56,7 +56,7 @@ export class Footer {
             .locator("div")
             .filter({ hasText: "Download" })
             .nth(2);
-        this.overviewLink = this.banner.getByRole("link", { name: "Overview" });
+        this.featuresLink = this.banner.getByRole("link", { name: "Overview" });
         this.caseStudiesLink = this.banner.getByRole("link", {
             name: "Case studies",
         });
@@ -127,7 +127,7 @@ export class Footer {
         this.licenseLink = this.page.getByRole("link", { name: "License" });
         this.visualStyleGuideLink = this.page.getByRole("link", {
             name: "Visual Style Guide",
-        });
+        }).last();
         this.goodiesLink = this.page.getByRole("link", {
             name: "Goodies",
             exact: true,
