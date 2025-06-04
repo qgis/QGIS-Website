@@ -13,8 +13,8 @@ mkShell {
   buildInputs = [
     nodejs
     playwright-test
-    # python311Packages.playwright
-    # python311Packages.pytest
+    python311Packages.playwright
+    python311Packages.pytest
   ];
 
   PLAYWRIGHT_BROWSERS_PATH="${pkgs.playwright-driver.browsers}";
