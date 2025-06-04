@@ -55,7 +55,7 @@ The proposed changes are listed below.
 
 **Download minimal logo**
 
-[`SVG 128px`](visual/qgis-icon64.svg) [`SVG 32px`](visual/qgis-icon32.svg)
+[`SVG 128px`](visual/qgis-icon128.svg) [`SVG 64px`](visual/qgis-icon64.svg) [`SVG 32px`](visual/qgis-icon32.svg)
 
 [`PNG 128px`](visual/qgis-icon128.png) [`PNG 64px`](visual/qgis-icon64.png) [`PNG 32px`](visual/qgis-icon32.png)
 
