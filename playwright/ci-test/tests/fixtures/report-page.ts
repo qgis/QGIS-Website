@@ -10,7 +10,7 @@ export class ReportsPage {
         "Daily Reports",
         "OGC Certification",
         "Performance",
-        "Security"
+        "Security",
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");

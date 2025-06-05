@@ -6,10 +6,31 @@
 {{ .Content }}
 {{ partial "explore.html" . }}
 {{ partial "funders-simple.html" . }}
+
+{{ if .Page.File }}
+<section class="section pt-0">
+  <div
+      class="container content"
+  >
+      <a
+          class="button is-light"
+          href="{{ $.Site.Params.githubRepo }}/edit/{{ $.Site.Params.githubBranch }}/{{ $.Site.Params.githubSubdir }}/{{ .Page.File.Path }}"
+          target="_blank"
+          rel="noopener"
+      >
+          <span class="icon">
+              <i class="fab fa-github"></i>
+          </span>
+          <span>Edit this page on GitHub</span>
+      </a>
+  </div>
+</section>
+{{ end }}
 {{ partial "footer.html" . }}
+
 
 <!-- See https://discourse.gohugo.io/t/how-to-set-minimum-hugo-version/44755 -->
 {{- $minHugoVersion := .Site.Params.minHugoVersion }}
 {{- if lt hugo.Version $minHugoVersion }}
-  {{- errorf "This website requires Hugo v%s or later." $minHugoVersion }}
+    {{- errorf "This website requires Hugo v%s or later." $minHugoVersion }}
 {{- end }}
