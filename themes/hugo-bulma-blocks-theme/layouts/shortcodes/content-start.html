@@ -9,7 +9,7 @@
 
 
 {{ if .Page.File }}
-<div class="is-desktop-only edit-on-github">
+<div class="is-hidden-touch edit-on-github">
     <a
         class="button is-light is-small is-rounded"
         href="{{ $.Site.Params.githubRepo }}/edit/{{ $.Site.Params.githubBranch }}/{{ $.Site.Params.githubSubdir }}/{{ .Page.File.Path }}"
