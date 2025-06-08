@@ -30,7 +30,7 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis.pe/" icon="🇵🇪  " layoutClass="half" listTitle="QGIS Perú Official Users Group " listSubtitle="Contact: Anibal Alarcon" >}}
 
-{{< rich-list listLink="https://qgis.pl/" icon="🇵🇱  " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contact: Michał Włoga" >}}
+{{< rich-list listLink="https://qgis.pl/" icon="🇵🇱  " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contact: Michał Żugajewicz" >}}
 
 {{< rich-list listLink="https://qgis.pt/" icon="🇵🇹  " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: João Gaspar" >}}
 
