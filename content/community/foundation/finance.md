@@ -19,6 +19,8 @@ Please check the following reports, and see how your donations and sponsorships 
 ## 2024
 {{< rich-list listLink="../annual-financial-reports/PublicQGISfinancialreport2024.pdf" linkAttr="download" layoutClass="third" listTitle="Financial report 2024" listSubtitle="Download PDF" >}}
 
+{{< rich-list listLink="../annual-financial-reports/Financial-Auditing-Report_QGIS-ORG_2024.pdf" linkAttr="download" layoutClass="third" listTitle="Financial auditing report 2024" listSubtitle="Download PDF" >}}
+
 {{< rich-list listLink="../annual-budgets/QGISBudget2024.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2024" listSubtitle="Download PDF" >}}
 
 ## 2023
