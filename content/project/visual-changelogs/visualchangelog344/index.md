@@ -17,6 +17,9 @@ type: "visual-changelog"
 src="images/projects/3807b5d1851cc87bda040f637e1f4024bc11c58a.png"
 class="img-responsive img-rounded center-block" />
 
+Release date: 2025-06-20
+
+
 The QGIS Project proudly announces the release of QGIS 3.44, a momentous
 release that marks the culmination of the QGIS 3 series. This release
 arrives within a vibrant and ever-expanding ecosystem of free and
@@ -47,9 +50,7 @@ For a whirlwind tour of all the new functionalities introduced, you can
 view the [highlight reel video on
 YouTube](https://www.youtube.com/watch?v=5a02yaDKAiE).
 
-[![](https://img.youtube.com/vi/5a02yaDKAiE/0.jpg)
-
-Release date: 2025-06-20](https://www.youtube.com/watch?v=5a02yaDKAiE)
+[![](https://img.youtube.com/vi/5a02yaDKAiE/0.jpg)](https://www.youtube.com/watch?v=5a02yaDKAiE)
 
 QGIS is a community effort, and we would like to extend a big thank you
 to the developers, documenters, testers, and the many folks out there
