@@ -64,7 +64,7 @@ We provide installers for many flavors of GNU/Linux binary packages (including r
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-2" >}}
 #### QGIS versions for macOS notice
-The QGIS installers for macOS are currently **outdated** and may not reflect the latest version shown in QGIS notifications. We are actively working to update the macOS packages. If you need newer features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}). Thank you for your patience and understanding.
+The QGIS installers for macOS are currently **outdated** and may not reflect the latest version shown in QGIS notifications. We are actively working to update the macOS packages. If you need newer features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}). Thank you for your patience and understanding. We are planning to have notarised, Qt6 based macOS builds for QGIS 4.x. If you wish to be an early beta tester, you can test an unofficial, early build proof of concept at [this repository](https://github.com/opengisch/qgis-notarize). This package will become an official, OSGEO signed package as of QGIS 4.0.
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
