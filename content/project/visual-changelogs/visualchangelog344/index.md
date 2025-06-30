@@ -315,14 +315,13 @@ that only some points get their attribute value modified.
 
 <div class="player-unavailable">
 
-# Ein Fehler ist aufgetreten. {#changelog344}
+# An error has occurred. {#changelog344}
 
 <div class="submessage">
 
 <a href="https://www.youtube.com/watch?v=TRxW-g0HYjU"
-target="_blank">Sieh dir dieses Video auf www.youtube.com an</a> oder
-aktiviere JavaScript, falls es in deinem Browser deaktiviert sein
-sollte.
+target="_blank">Watch this video on www.youtube.com</a> or
+enable JavaScript if it is disabled in your browser.
 
 </div>
 
