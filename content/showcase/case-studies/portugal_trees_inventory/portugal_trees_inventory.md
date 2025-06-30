@@ -16,8 +16,8 @@ in environmental monitoring, telecommunications, agriculture or asset management
 
 In 2021, the Portuguese government passed a law governing the management of 
 trees in urban areas that requires municipalities to publish an inventory of 
-all trees on urban public land. NaturalGIS are using QGIS in coordination 
-with the Mergin Maps to conduct surveys to create urban tree inventories 
+all trees on urban public land. NaturalGIS is using QGIS Mergin Maps to 
+conduct surveys to create urban tree inventories 
 in several Portuguese municipalities (i.e. Mação, Palmela, Lourinhã and Soure). 
 The combination of QGIS and Mergin Maps allows the creation of a custom data 
 structure to match the requirements of the regulations while providing a 
