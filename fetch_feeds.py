@@ -170,10 +170,6 @@ except Exception as e:
 try:
     if args.flickr:
         fetch_flickr_screenshots(
-            showcase_type="map",
-            rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
-        )
-        fetch_flickr_screenshots(
             showcase_type="screenshot",
             rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
         )
