@@ -3,9 +3,6 @@ mkdir -p content/about
 touch content/about/index.md
 mkdir content/community
 touch content/community/index.md
-mkdir content/community-blogs
-touch content/community-blogs/index.md
-touch content/community-blogs/article1.md
 mkdir content/documentation
 touch content/documentation/overview.md
 mkdir content/download
@@ -50,7 +47,6 @@ mkdir content/showcase/case-studies/example1
 mkdir content/showcase/case-studies/example2
 touch content/showcase/case-studies/example1/index.md
 touch content/showcase/case-studies/example2/index.md
-touch content/showcase/case-studies/community-blogs.md
 touch content/showcase/case-studies/_index.md
 touch content/showcase/case-studies/maps.md
 touch content/showcase/overview.md
