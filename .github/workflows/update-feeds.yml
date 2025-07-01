@@ -43,7 +43,7 @@ jobs:
         pipenv run ./scripts/hub_maps_harvest.py
 
     - name: '✉️ Commit'
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v6
       with:
         commit_message: 'Funders scraped and committed via a GitHub Action.'
         repository: ./qgis-website
