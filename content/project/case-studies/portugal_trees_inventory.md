@@ -31,7 +31,10 @@ The combination of QGIS and Mergin Maps allows the creation of a custom data
 structure to match the requirements of the regulations while providing a 
 simplified mobile interface for non-technical users to collect accurate survey data.
 
-![Simple user interface makes Mergin Maps easy to use for non-technical users](./images/portugal_trees_inventory1.webp){.align-right}
+<figure>
+  <img src="../images/portugal_trees_inventory1.webp" class="align-right" alt="Simple user interface makes Mergin Maps easy to use for non-technical users" />
+  <figcaption>Simple user interface makes Mergin Maps easy to use for non-technical users</figcaption>
+</figure>
 
 ## Designing a Regulatory-Compliant Tree Survey with QGIS 
 
@@ -60,7 +63,10 @@ Mergin Maps CLI (Command Line Interface) tools to remove the photos from the pro
 Then a link to the photo was stored in a dedicated field in the survey layer 
 which allowed the photo to be previewed in the app.
 
-![Mobile forms were set up in QGIS project and transferred to Mergin Maps](./images/portugal_trees_inventory2.webp){.align-right}
+<figure>
+  <img src="../images/portugal_trees_inventory2.webp" class="align-right" alt="Mobile forms were set up in QGIS project and transferred to Mergin Maps" />
+  <figcaption>Mobile forms were set up in QGIS project and transferred to Mergin Maps</figcaption>
+</figure>
 
 ## Data collection optimised for mobile use
 
@@ -74,7 +80,10 @@ to train the local municipality team on how to manage the project in QGIS and up
 The use of QGIS and Mergin Maps for this project ensured that the tree inventory could be 
 collected accurately and in a timely manner.
 
-![The QGIS project used for the inventory](./images/portugal_trees_inventory3.webp){.align-right}
+<figure>
+  <img src="../images/portugal_trees_inventory3.webp" class="align-right" alt="The QGIS project used for the inventory" />
+  <figcaption>The QGIS project used for the inventory</figcaption>
+</figure>
 
 ## Author
 
