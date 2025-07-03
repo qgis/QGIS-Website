@@ -614,7 +614,7 @@ Carrillo](https://github.com/gacarrillor)
 A single "Toolbox" panel has been added to the Graphical Modeler, which
 merges the objects from the Input and Algorithm panels into a single
 panel. This simplifies the UX of the Graphical Modeler, allowing users
-to use the search filters rather than manage separate tabs for modeelr
+to use the search filters rather than manage separate tabs for modeler
 tools.
 
 <img
