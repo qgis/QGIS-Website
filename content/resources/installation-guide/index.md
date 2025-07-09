@@ -395,7 +395,7 @@ Always up-to-date version infos:
 
 ## NixOS
 
-Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=24.05&show=qgis&from=0&size=50&sort=relevance&type=packages&query=qgis). 
+Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=24.05&show=qgis&from=0&size=50&sort=relevance&type=packages&query=qgis). You can also run bleeding edge developer versions with a single command.
 
 ### Basic Install
 
@@ -427,9 +427,53 @@ environment.systemPackages = [
   ];
 ```
 
+### Running developer snapshots - Remote
+
+You can run in-development versions of QGIS with a single command. you can launch QGIS directly 
+from GitHub for any git revision (subsequent to 9 July 2025) from a branch or PR. NixOS 
+will do a build from source for the version you reference.
+
+To run QGIS from the current commit of the master branch:
+
+```
+nix run github:qgis/QGIS#qgis
+```
+
+To run a specific revision:
+
+```
+nix run github:qgis/QGIS/<git revision#qgis
+```
+
+To run a Pull Request or branch:
+
+```
+nix run github:qgis/QGIS/git branch>#qgis
+```
+
+### Running developer snapshots - Local
+
+If you have a local git checkout of QGIS, you can run your local source code tree:
+
+```
+nix run .#qgis
+```
+
+You can also create a developer environment by running the following command in the
+root of your QGIS git checkout directory:
+
+```
+nix develop
+```
+
+After running this command, you will see additional instructions for building displayed 
+in the terminal.
+
 ### Running with extra python packages:
 
-Because of the atomic nature of NixOS packages, you need to override the package if you want extra python packages to be available to QGIS. For example to run QGIS with numpy, geopandas and rasterio python libraries you can do:
+Because of the atomic nature of NixOS packages, you need to override the package 
+if you want extra python packages to be available to QGIS. For example to run QGIS 
+with numpy, geopandas and rasterio python libraries you can do:
 
 **Ephemeral use:**
 
@@ -460,6 +504,44 @@ nix-shell -p \
   ];
 }
 
+```
+
+### Running older versions
+
+You can run arbitrary old versions, and have multiple versions concurrently installed on your system. Here 
+is an example of how to provision the legacy QGIS 2.18 LTR release:
+
+```
+{
+  config,
+  pkgs,
+  ...
+}: let
+  appName = "QGIS 2.18";
+  nixpkgsUrl = "https://github.com/NixOS/nixpkgs/archive/f06d8e0bf4822788f93ed994c4a9e88bda3606c3.tar.gz";
+
+  # Import the pinned nixpkgs
+  pinnedPkgs = import (fetchTarball nixpkgsUrl) {};
+
+  # Get QGIS from the pinned nixpkgs
+  qgis218 = pinnedPkgs.qgis;
+
+  qgis218App = pkgs.makeDesktopItem {
+    name = "qgis-2.18";
+    desktopName = appName;
+    genericName = "Geographic Information System";
+    exec = "${qgis218}/bin/qgis";
+    icon = "qgis";
+    categories = ["Science" "Geography"];
+    comment = "A Geographic Information System";
+    startupWMClass = "qgis";
+  };
+in {
+  environment.systemPackages = [
+    qgis218
+    qgis218App
+  ];
+}
 ```
 
 ## SUSE / OpenSUSE
