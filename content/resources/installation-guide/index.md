@@ -442,13 +442,13 @@ nix run github:qgis/QGIS#qgis
 To run a specific revision:
 
 ```
-nix run github:qgis/QGIS/<git revision#qgis
+nix run github:qgis/QGIS/<git revision>#qgis
 ```
 
 To run a Pull Request or branch:
 
 ```
-nix run github:qgis/QGIS/git branch>#qgis
+nix run github:qgis/QGIS/<git branch>#qgis
 ```
 
 ### Running developer snapshots - Local
