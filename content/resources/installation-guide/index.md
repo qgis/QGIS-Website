@@ -395,7 +395,7 @@ Always up-to-date version infos:
 
 ## NixOS
 
-Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=24.05&show=qgis&from=0&size=50&sort=relevance&type=packages&query=qgis). You can also run bleeding edge developer versions with a single command.
+Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=qgis). You can also run bleeding edge developer versions with a single command.
 
 ### Basic Install
 
