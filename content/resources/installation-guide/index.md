@@ -429,9 +429,9 @@ environment.systemPackages = [
 
 ### Running developer snapshots - Remote
 
-You can run in-development versions of QGIS with a single command. you can launch QGIS directly 
-from GitHub for any git revision (subsequent to 9 July 2025) from a branch or PR. NixOS 
-will do a build from source for the version you reference.
+You can run in-development versions of QGIS with a single command directly 
+from GitHub for any git revision (subsequent to 9 July 2025) from a branch or PR. Nix 
+will automatically build and run the version you reference.
 
 To run QGIS from the current commit of the master branch:
 
