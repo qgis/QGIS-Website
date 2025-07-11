@@ -471,9 +471,9 @@ in the terminal.
 
 ### Running with extra python packages:
 
-Because of the atomic nature of NixOS packages, you need to override the package 
+Due to isolation of Nix packages, you need to override the package 
 if you want extra python packages to be available to QGIS. For example to run QGIS 
-with numpy, geopandas and rasterio python libraries you can do:
+with numpy, geopandas and rasterio Python libraries you can do:
 
 **Ephemeral use:**
 
