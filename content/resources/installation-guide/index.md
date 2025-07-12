@@ -395,7 +395,7 @@ Always up-to-date version infos:
 
 ## NixOS
 
-Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=24.05&show=qgis&from=0&size=50&sort=relevance&type=packages&query=qgis). You can also run bleeding edge developer versions with a single command.
+Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=qgis). You can also run bleeding edge developer versions with a single command.
 
 ### Basic Install
 
@@ -429,9 +429,9 @@ environment.systemPackages = [
 
 ### Running developer snapshots - Remote
 
-You can run in-development versions of QGIS with a single command. you can launch QGIS directly 
-from GitHub for any git revision (subsequent to 9 July 2025) from a branch or PR. NixOS 
-will do a build from source for the version you reference.
+You can run in-development versions of QGIS with a single command directly 
+from GitHub for any git revision (subsequent to 9 July 2025) from a branch or PR. Nix 
+will automatically build and run the version you reference.
 
 To run QGIS from the current commit of the master branch:
 
@@ -471,9 +471,9 @@ in the terminal.
 
 ### Running with extra python packages:
 
-Because of the atomic nature of NixOS packages, you need to override the package 
+Due to isolation of Nix packages, you need to override the package 
 if you want extra python packages to be available to QGIS. For example to run QGIS 
-with numpy, geopandas and rasterio python libraries you can do:
+with numpy, geopandas and rasterio Python libraries you can do:
 
 **Ephemeral use:**
 
