@@ -26,6 +26,8 @@ Welcome to QGIS.org! This repository hosts the source code for the official QGIS
   </ol>
 </details>
 
+![-----------------------------------------------------](./img/green-gradient.png)
+
 ## 🚀 Project Overview
 
 ![Overview](./img/qgis-org.gif)
