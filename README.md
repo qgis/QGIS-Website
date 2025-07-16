@@ -3,7 +3,28 @@
 
 ![Screenshot](./img/qgis-website.webp)
 
-Welcome to QGIS.org! This repository hosts the source code for the official QGIS Project website, available at [https://qgis.org](https://qgis.org). Here you'll find everything needed to build, develop, and contribute to the QGIS website.
+> ## 👋 Welcome to QGIS.org!
+>
+> **This repository hosts the source code for the official QGIS Project website:**  
+> 🌍 [https://qgis.org](https://qgis.org)
+>
+> Here you'll find everything you need to **build, develop, and contribute** to the QGIS website.
+>
+> ### ⚠️ Note on Subdomain Websites
+>
+> **This repository is _only_ for the main QGIS website ([qgis.org](https://qgis.org)).**
+>
+> If you are looking for the source code or want to contribute to QGIS subdomain websites, please visit their respective repositories below.  
+> Each subdomain has its own codebase and contribution process:
+>
+> - [plugins.qgis.org](https://plugins.qgis.org) ([GitHub: QGIS-Plugins-Website](https://github.com/qgis/QGIS-Plugins-Website)) – QGIS Plugins Repository
+> - [hub.qgis.org](https://hub.qgis.org) ([GitHub: QGIS-Hub-Website](https://github.com/qgis/QGIS-Hub-Website)) – QGIS Resources Hub
+> - [feed.qgis.org](https://feed.qgis.org) ([GitHub: qgis-feed](https://github.com/qgis/qgis-feed)) – QGIS Feed Manager
+> - [planet.qgis.org](https://planet.qgis.org) ([GitHub: QGIS-Planet-Website](https://github.com/qgis/QGIS-Planet-Website)) – QGIS Planet Blog Aggregator
+> - [members.qgis.org](https://members.qgis.org) ([GitHub: QGIS-Members-Website](https://github.com/qgis/QGIS-Members-Website)) – QGIS Sustaining Members Portal
+> - [certification.qgis.org](https://certification.qgis.org) ([GitHub: QGIS-Certification-Website](https://github.com/qgis/QGIS-Certification-Website)) – QGIS Certification Programme Platform
+> - [changelog.qgis.org](https://changelog.qgis.org) ([GitHub: QGIS-Changelog-Website](https://github.com/qgis/QGIS-Changelog-Website)) – QGIS Changelog Manager
+> - [uc2025.qgis.org](https://uc.qgis.org) ([GitHub: QGIS-UC-Website](https://github.com/qgis/QGIS-UC-Website)) – QGIS User Conference Website
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
