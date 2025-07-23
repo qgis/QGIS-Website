@@ -61,7 +61,7 @@ jobs:
         run: make messages-compile
 
       - name: Generate translated content
-        run: make generate-translations-with-fallback
+        run: make generate-translations
 
       - name: Archive and upload translations as artifact
         run: |
