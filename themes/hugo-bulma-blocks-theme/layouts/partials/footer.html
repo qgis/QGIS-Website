@@ -11,7 +11,7 @@
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 ">
                             <a href="{{ relLangURL "project/overview" }}" class="footertitle text-nowrap">
-                                Project
+                                {{ i18n "menuProject" | default "Project" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -19,7 +19,7 @@
                                 {{- if eq .Parent "Project" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}
@@ -31,7 +31,7 @@
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5">
                             <a href="{{ relLangURL "community/involve" }}" class="footertitle text-nowrap">
-                                Community
+                                {{ i18n "menuCommunity" | default "Community" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -39,7 +39,7 @@
                                 {{- if eq .Parent "Community" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}
@@ -50,7 +50,7 @@
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 footertitle">
                             <a href="{{ relLangURL "resources/hub" }}" class="footertitle text-nowrap">
-                                Resources
+                                {{ i18n "menuResources" | default "Resources" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -58,7 +58,7 @@
                                 {{- if eq .Parent "Resources" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}
@@ -69,7 +69,7 @@
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 ">
                             <a href="{{ relLangURL "funding/donate" }}" class="footertitle text-nowrap">
-                                Funding
+                                {{ i18n "menuFunding" | default "Funding" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -77,7 +77,7 @@
                                 {{- if eq .Parent "Funding" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}

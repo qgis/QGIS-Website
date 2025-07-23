@@ -145,107 +145,155 @@ sectionPagesMenu = 'main'
   url = "/project/overview"
   weight = 10
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.main.params]
+    i18n_key = "menuProject"
 
 [[menu.main]]
   parent = "Project"
   name = "Overview"
   url = "/project/overview/"
   weight = 10
+  [menu.main.params]
+    i18n_key = "menuOverview"
 
 [[menu.main]]
   parent = "Project"
   name = "Case studies"
   url = "/project/case-studies/"
   weight = 20
+  [menu.main.params]
+    i18n_key = "menuCaseStudies"
 
 [[menu.main]]
   parent = "Overview"
   name = "Maps"
   url = "/project/overview/maps/"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuMaps"
 
 [[menu.main]]
   parent = "Overview"
   name = "Screenshots"
   url = "/project/overview/screenshots/"
   weight = 30  
+  [menu.main.params]
+    i18n_key = "menuScreenshots"
+
 
 [[menu.main]]
   parent = "Project"
   name = "Plugins"
   url = "https://plugins.qgis.org"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuPlugins"
+
 
 [[menu.main]]
   parent = "Project"
   name = "All News"
   url = "https://feed.qgis.org"
   weight = 40
+  [menu.main.params]
+    i18n_key = "menuAllNews"
+
 
 [[menu.main]]
   parent = "Project"
   name = "Visual Changelogs"
   url = "/project/visual-changelogs"
   weight = 50
+  [menu.main.params]
+    i18n_key = "menuVisualChangelogs"
+
 
 [[menu.main]]
   parent = "Project"
   name = "QGIS Metrics"
   url = "https://analytics.qgis.org"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuQGISMetrics"
+
 
 [[menu.main]]
   name = "Community"
   url = "/community/involve"
   weight = 20
+  [menu.main.params]
+    i18n_key = "menuCommunity"
 
 [[menu.main]]
   parent = "Community"
   name = "Get involved"
   url = "/community/involve"
   weight = 10
+  [menu.main.params]
+    i18n_key = "menuGetInvolved"
 
 [[menu.main]]
   parent = "Community"
   name = "Certification Programme"
   url = "/community/certification"
   weight = 20
+  [menu.main.params]
+    i18n_key = "menuCertificationProgramme"
+
 
 [[menu.main]]
   parent = "Community"
   name = "QGIS Foundation"
   url = "/community/foundation"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuQGISFoundation"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Charter"
   url = "/community/foundation/charter"
   weight = 40
+  [menu.main.params]
+    i18n_key = "menuCharter"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Annual General Meetings"
   url = "/community/foundation/annual_general_meetings"
   weight = 50
+  [menu.main.params]
+    i18n_key = "menuAnnualGeneralMeetings"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Annual Reports"
   url = "/community/foundation/annual_reports"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuAnnualReports"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Finance"
   url = "/community/foundation/finance"
   weight = 70
+  [menu.main.params]
+    i18n_key = "menuFinance"
+
 
 [[menu.main]]
   parent = "Community"
   name = "Project Organisation"
   url = "/community/organisation"
   weight = 80
+  [menu.main.params]
+    i18n_key = "menuProjectOrganisation"
+
 
 
 [[menu.main]]
@@ -253,12 +301,18 @@ sectionPagesMenu = 'main'
   name = "Infrastructure"
   url = "/community/organisation/infrastructure"
   weight = 100
+  [menu.main.params]
+    i18n_key = "menuInfrastructure"
+
 
 [[menu.main]]
   parent = "Community"
   name = "Local User Groups"
   url = "/community/groups"
   weight = 110
+  [menu.main.params]
+    i18n_key = "menuLocalUserGroups"
+
 
 
 
@@ -267,30 +321,45 @@ sectionPagesMenu = 'main'
   name = "Brand Guidelines"
   url = "/community/organisation/guidelines"
   weight = 130
+  [menu.main.params]
+    i18n_key = "menuBrandGuidelines"
+
 
 [[menu.main]]
   parent = "Project Organisation"
   name = "Contributor Credits"
   url = "/community/organisation/credits"
   weight = 140
+  [menu.main.params]
+    i18n_key = "menuContributorCredits"
+
 
 [[menu.main]]
   parent = "Project Organisation"
   name = "Meetings"
   url = "/community/organisation/meetings"
   weight = 180
+  [menu.main.params]
+    i18n_key = "menuMeetings"
+
 
 [[menu.main]]
   parent = "Meetings"
   name = "QGIS UC 2025"
   url = "https://uc2025.qgis.org/"
   weight = 185
+  [menu.main.params]
+    i18n_key = "menuQGISUC2025"
+
 
 [[menu.main]]
   parent = "Meetings"
   name = "QGIS User Meetings"
   url = "/community/organisation/meetings/user_meetings"
   weight = 190
+  [menu.main.params]
+    i18n_key = "menuQGISUserMeetings"
+
 
 
 [[menu.main]]
@@ -298,30 +367,44 @@ sectionPagesMenu = 'main'
   name = "QGIS Developer Meetings"
   url = "/community/organisation/meetings/dev_meetings"
   weight = 200
+  [menu.main.params]
+    i18n_key = "menuQGISDeveloperMeetings"
+
 
 [[menu.main]]
   parent = "Meetings"
   name = "Reimbursements for Developer Meetings"
   url = "/community/organisation/meetings/reimbursements"
   weight = 210
+  [menu.main.params]
+    i18n_key = "menuReimbursementsForDeveloperMeetings"
+
 
 [[menu.main]]
   parent = "Project Organisation"
   name = "Mailing Lists"
   url = "/community/organisation/mailinglists"
   weight = 220
+  [menu.main.params]
+    i18n_key = "menuMailingLists"
+
   
 [[menu.main]]
   parent = "Community"
   name = "Members Blogs"
   url = "https://planet.qgis.org"
   weight = 280
+  [menu.main.params]
+    i18n_key = "menuMembersBlogs"
+
 
 [[menu.main]]
   name = "Resources"
   url = "/resources/hub"
   weight = 40 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
+  [menu.main.params]
+    i18n_key = "menuResources"
 
 [[menu.main]]
   parent = "Resources"
@@ -329,6 +412,9 @@ sectionPagesMenu = 'main'
   url = "/resources/hub"
   weight = 5 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"  
+  [menu.main.params]
+    i18n_key = "menuDocumentation"
+
 
 
 [[menu.main]]
@@ -336,24 +422,32 @@ sectionPagesMenu = 'main'
   name = "Goodies"
   url = "/goodies"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuGoodies"
 
 [[menu.main]]
   name = "Download"
   url = "/download/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 80 # Sets the menu order 
+  weight = 80 # Sets the menu order
+  [menu.main.params]
+    i18n_key = "menuDownload" 
 
 [[menu.main]]
   name = "Archive"
   url = "/archive/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 90 # Sets the menu order 
+  weight = 90 # Sets the menu order
+  [menu.main.params]
+    i18n_key = "menuArchive" 
 
 [[menu.main]]
   name = "Funding"
   url = "/funding/donate"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 50 # Sets the menu order 
+  weight = 50 # Sets the menu order
+  [menu.main.params]
+    i18n_key = "menuFunding" 
 
 [[menu.main]]
   parent = "Funding"
@@ -361,18 +455,27 @@ sectionPagesMenu = 'main'
   url = "/funding/donate"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = 30 # Sets the menu order 
+  [menu.main.params]
+    i18n_key = "menuDonate"
+
 
 [[menu.main]]
   parent = "Funding"
   name = "Membership"
   url = "/funding/membership"
   weight = 230
+  [menu.main.params]
+    i18n_key = "menuMembership"
+
 
 [[menu.main]]
   parent = "Membership"
   name = "Members"
   url = "/funding/membership/members"
   weight = 240
+  [menu.main.params]
+    i18n_key = "menuMembers"
+
 
 
 [[menu.main]]
@@ -380,18 +483,27 @@ sectionPagesMenu = 'main'
   name = "Past Members"
   url = "/funding/membership/past_members"
   weight = 260
+  [menu.main.params]
+    i18n_key = "menuPastMembers"
+
 
 [[menu.main]]
   parent = "Donate"
   name = "Donors"
   url = "/funding/donate/donors"
   weight = 270
+  [menu.main.params]
+    i18n_key = "menuDonors"
+
 
 [[menu.main]]
   parent = "Donate"
   name = "GitHub Sponsors"
   url = "/funding/donate/github-sponsors"
   weight = 280
+  [menu.main.params]
+    i18n_key = "menuGitHubSponsors"
+
 
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
@@ -399,239 +511,345 @@ sectionPagesMenu = 'main'
   name = "Installation guide"
   url = "/resources/installation-guide/"
   weight = 10
+  [menu.main.params]
+    i18n_key = "menuInstallationGuide"
+
   [[menu.main]]
     parent = "Installation guide"
     name = "Windows"
     url = "/resources/installation-guide/#windows"
     weight = 20
+    [menu.main.params]
+      i18n_key = "menuWindows"
 
   [[menu.main]]
     parent = "Windows"
     name = "Offline (Standalone) installers"
     url = "/resources/installation-guide/#offline-standalone-installers"
     weight = 30
+    [menu.main.params]
+      i18n_key = "menuOfflineStandaloneInstallers"
 
   [[menu.main]]
     parent = "Windows"
     name = "Online (OSGeo4W) installer"
     url = "/resources/installation-guide/#online-osgeo4w-installer"
     weight = 40
+    [menu.main.params]
+      i18n_key = "menuOnlineOSGeo4WInstaller"
+
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Linux"
     url = "/resources/installation-guide/#linux"
     weight = 50
+    [menu.main.params]
+      i18n_key = "menuDebianUbuntu"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Debian / Ubuntu"
     url = "/resources/installation-guide/#debian--ubuntu"
     weight = 60
+    [menu.main.params]
+      i18n_key = "menuDebianUbuntu"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Flatpak"
     url = "/resources/installation-guide/#flatpak"
     weight = 70
+    [menu.main.params]
+      i18n_key = "menuFlatpak"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Fedora"
     url = "/resources/installation-guide/#fedora"
     weight = 90
+    [menu.main.params]
+      i18n_key = "menuFedora"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "NixOS"
     url = "/resources/installation-guide/#nixos"
     weight = 100
+    [menu.main.params]
+      i18n_key = "menuNixOS"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "SUSE / openSUSE"
     url = "/resources/installation-guide/#suse--opensuse"
     weight = 110
+    [menu.main.params]
+      i18n_key = "menuSUSEOpenSUSE"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Mandriva"
     url = "/resources/installation-guide/#mandriva"
     weight = 120
+    [menu.main.params]
+      i18n_key = "menuMandriva"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Slackware"
     url = "/resources/installation-guide/#slackware"
     weight = 130
+    [menu.main.params]
+      i18n_key = "menuSlackware"
 
   [[menu.main]]
     parent = "Linux"
     name = "Arch Linux"
     url = "/resources/installation-guide/#arch-linux"
     weight = 140
+    [menu.main.params]
+      i18n_key = "menuArchLinux"
 
   [[menu.main]]
     parent = "Linux"
     name = "Spack"
     url = "/resources/installation-guide/#spack"
     weight = 160
+    [menu.main.params]
+      i18n_key = "menuSpack"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Mac OS X / macOS"
     url = "/resources/installation-guide/#mac-os-x--macos"
     weight = 170
+    [menu.main.params]
+      i18n_key = "menuMacOSXMacOS"
 
   [[menu.main]]
     parent = "Mac OS X / macOS"
     name = "Binary packages (installers)"
     url = "/resources/installation-guide/#binary-packages-installers"
     weight = 180
+    [menu.main.params]
+      i18n_key = "menuBinaryPackagesInstallers"
 
   [[menu.main]]
     parent = "Mac OS X / macOS"
     name = "MacPorts"
     url = "/resources/installation-guide/#macports"
     weight = 190
+    [menu.main.params]
+      i18n_key = "menuMacPorts"
 
   [[menu.main]]
     parent = "Mac OS X / macOS"
     name = "Old releases"
     url = "/resources/installation-guide/#old-releases"
     weight = 200
+    [menu.main.params]
+      i18n_key = "menuOldReleases"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "FreeBSD"
     url = "/resources/installation-guide/#freebsd"
     weight = 210
+    [menu.main.params]
+      i18n_key = "menuFreeBSD"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "OpenBSD"
     url = "/resources/installation-guide/#openbsd"
     weight = 220
+    [menu.main.params]
+      i18n_key = "menuOpenBSD"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Container images"
     url = "/resources/installation-guide/#container-images"
     weight = 230
+    [menu.main.params]
+      i18n_key = "menuContainerImages"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "QGIS Testing warning"
     url = "/resources/installation-guide/#qgis-testing-warning"
     weight = 240
+    [menu.main.params]
+      i18n_key = "menuQGISTestingWarning"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Installing from Source"
     url = "/resources/installation-guide/#installing-from-source"
     weight = 250
+    [menu.main.params]
+      i18n_key = "menuInstallingFromSource"
 
 [[menu.main]]
   parent = "Resources"
   name = "Testing"
   url = "/resources/testing/"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuTesting"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Roadmap"
   url = "/resources/roadmap/"
   weight = 40
+  [menu.main.params]
+    i18n_key = "menuRoadmap"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Reports"
   url = "/resources/reports/"
   weight = 50
+  [menu.main.params]
+    i18n_key = "menuReports"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Resources Hub"
   url = "https://hub.qgis.org"
   weight = 55
+  [menu.main.params]
+    i18n_key = "menuResourcesHub"
+
 
 [[menu.main]]
   parent = "Reports"
   name = "OGC Certification"
   url = "/resources/reports/#ogc-certification"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuOGCCertification"
+
 
 [[menu.main]]
   parent = "Reports"
   name = "Performance"
   url = "/resources/reports/#performance"
   weight = 70
+  [menu.main.params]
+    i18n_key = "menuPerformance"
+
 
 [[menu.main]]
   parent = "Reports"
   name = "Security"
   url = "/resources/reports/#security"
   weight = 80
+  [menu.main.params]
+    i18n_key = "menuSecurity"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Books"
   url = "/resources/books/"
   weight = 90
+  [menu.main.params]
+    i18n_key = "menuBooks"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Contact and Support"
   url = "/resources/support/"
   weight = 100
+  [menu.main.params]
+    i18n_key = "menuContactAndSupport"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "FAQ"
   url = "/resources/support/faq"
   weight = 110
+  [menu.main.params]
+    i18n_key = "menuFAQ"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Bug Reporting"
   url = "/resources/support/bug-reporting"
   weight = 120
+  [menu.main.params]
+    i18n_key = "menuBugReporting"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Contributor Requirements"
   url = "/resources/support/contributors-requirements"
   weight = 130
+  [menu.main.params]
+    i18n_key = "menuContributorRequirements"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Communication channels"
   url = "/resources/support/#communication-channels"
   weight = 140
+  [menu.main.params]
+    i18n_key = "menuCommunicationChannels"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Commercial support"
   url = "/resources/support/commercial-support"
   weight = 150
+  [menu.main.params]
+    i18n_key = "menuCommercialSupport"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "StackExchange"
   url = "/resources/support/#stackexchange"
   weight = 160
+  [menu.main.params]
+    i18n_key = "menuStackExchange"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Blog"
   url = "https://blog.qgis.org/"
   weight = 180
+  [menu.main.params]
+    i18n_key = "menuBlog"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Security"
   url = "/resources/support/security"
   weight = 190
+  [menu.main.params]
+    i18n_key = "menuSecurity"
+
 
 # Languages for translated docs
 [[menu.lang]]
@@ -759,341 +977,879 @@ sectionPagesMenu = 'main'
 
   [i18n.content]
     [i18n.content.default]
+      files = ["content/_index.md"]
       globs = ["content/**/*.md"]
       excludedGlobs = ["content/community-blogs/**", "content/funders/**", "content/flickr-images/**"]
   [languages]
     [languages.en]
     languageCode = "en"
-    contentDir = "content-translated/en"
     title = "QGIS"
     weight = 2
-
-    [languages.sk]
-    languageCode = "sk"
-    weight = 2
-    contentDir = "content-translated/sk"
-
-    [languages.zh-Hans]
-    languageCode = "zh-Hans"
-    weight = 2
-    contentDir = "content-translated/zh-Hans"
-
-    [languages.zh-Hant]
-    languageCode = "zh-Hant"
-    weight = 2
-    contentDir = "content-translated/zh-Hant"
-
-    [languages.pl]
-    languageCode = "pl"
-    weight = 2
-    contentDir = "content-translated/pl"
-
-    [languages.sq]
-    languageCode = "sq"
-    weight = 2
-    contentDir = "content-translated/sq"
-
-    [languages.sv]
-    languageCode = "sv"
-    weight = 2
-    contentDir = "content-translated/sv"
-
-    [languages.mr]
-    languageCode = "mr"
-    weight = 2
-    contentDir = "content-translated/mr"
-
-    [languages.pt_BR]
-    languageCode = "pt_BR"
-    weight = 2
-    contentDir = "content-translated/pt_BR"
-
-    [languages.ja]
-    languageCode = "ja"
-    weight = 2
-    contentDir = "content-translated/ja"
-
-    [languages.el]
-    languageCode = "el"
-    weight = 2
-    contentDir = "content-translated/el"
-
-    [languages.lv]
-    languageCode = "lv"
-    weight = 2
-    contentDir = "content-translated/lv"
-
-    [languages.it]
-    languageCode = "it"
-    weight = 2
-    contentDir = "content-translated/it"
-
-    [languages.ca]
-    languageCode = "ca"
-    weight = 2
-    contentDir = "content-translated/ca"
-
-    [languages.cs]
-    languageCode = "cs"
-    weight = 2
-    contentDir = "content-translated/cs"
-
-    [languages.pt_PT]
-    languageCode = "pt_PT"
-    weight = 2
-    contentDir = "content-translated/pt_PT"
-
-    [languages.ro]
-    languageCode = "ro"
-    weight = 2
-    contentDir = "content-translated/ro"
-
-    [languages.ru]
-    languageCode = "ru"
-    contentDir = "content-translated/ru"
-    weight = 2
-
-    [languages.nqo]
-    languageCode = "nqo"
-    weight = 2
-    contentDir = "content-translated/nqo"
-
-    [languages.km_KH]
-    languageCode = "km_KH"
-    weight = 2
-    contentDir = "content-translated/km_KH"
-
-    [languages.uk]
-    languageCode = "uk"
-    weight = 2
-    contentDir = "content-translated/uk"
-
-    [languages.ar]
-    languageCode = "ar"
-    weight = 2
-    contentDir = "content-translated/ar"
-
-    [languages.gl]
-    languageCode = "gl"
-    weight = 2
-    contentDir = "content-translated/gl"
-
-    [languages.hu]
-    languageCode = "hu"
-    weight = 2
-    contentDir = "content-translated/hu"
 
     [languages.nl]
     languageCode = "nl"
     weight = 2
-    contentDir = "content-translated/nl"
 
-    [languages.bg]
-    languageCode = "bg"
+    [languages.ro]
+    languageCode = "ro"
     weight = 2
-    contentDir = "content-translated/bg"
 
-    [languages.bn]
-    languageCode = "bn"
-    weight = 2
-    contentDir = "content-translated/bn"
+  [languages.sk]
+  languageCode = "sk"
+  weight = 2
 
-    [languages.af]
-    languageCode = "af"
-    weight = 2
-    contentDir = "content-translated/af"
+  [languages.ur]
+  languageCode = "ur"
+  weight = 2
 
-    [languages.nb]
-    languageCode = "nb"
-    weight = 2
-    contentDir = "content-translated/nb"
+    [languages.zh-hans]
+    languageCode = "zh-hans"
+  weight = 2
 
-    [languages.de]
-    languageCode = "de"
-    weight = 2
-    contentDir = "content-translated/de"
+    [languages.zh-hant]
+    languageCode = "zh-hant"
+  weight = 2
 
-    [languages.az]
-    languageCode = "az"
-    weight = 2
-    contentDir = "content-translated/az"
+  [languages.sw]
+  languageCode = "sw"
+  weight = 2
 
-    [languages.ko]
-    languageCode = "ko"
-    weight = 2
-    contentDir = "content-translated/ko"
+  [languages.kab]
+  languageCode = "kab"
+  weight = 2
 
-    [languages.fi]
-    languageCode = "fi"
-    weight = 2
-    contentDir = "content-translated/fi"
+  [languages.ug]
+  languageCode = "ug"
+  weight = 2
 
-    [languages.id]
-    languageCode = "id"
-    weight = 2
-    contentDir = "content-translated/id"
+  [languages.pl]
+  languageCode = "pl"
+  weight = 2
 
-    [languages.fr]
-    languageCode = "fr"
-    weight = 2
-    contentDir = "content-translated/fr"
+  [languages.sq]
+  languageCode = "sq"
+  weight = 2
 
-    [languages.es]
-    languageCode = "es"
-    weight = 2
-    contentDir = "content-translated/es"
+  [languages.sv]
+  languageCode = "sv"
+  weight = 2
 
-    [languages.et]
-    languageCode = "et"
-    weight = 2
-    contentDir = "content-translated/et"
+  [languages.he]
+  languageCode = "he"
+  weight = 2
 
-    [languages.fa]
-    languageCode = "fa"
-    weight = 2
-    contentDir = "content-translated/fa"
+  [languages.ms]
+  languageCode = "ms"
+  weight = 2
 
-    [languages.lt]
-    languageCode = "lt"
-    weight = 2
-    contentDir = "content-translated/lt"
+  [languages.da]
+  languageCode = "da"
+  weight = 2
 
-    [languages.eu]
-    languageCode = "eu"
-    weight = 2
-    contentDir = "content-translated/eu"
+  [languages.mr]
+  languageCode = "mr"
+  weight = 2
 
-    [languages.tr]
-    languageCode = "tr"
-    weight = 2
-    contentDir = "content-translated/tr"
+  [languages.gu]
+  languageCode = "gu"
+  weight = 2
 
-    [languages.ur]
-    languageCode = "ur"
-    weight = 2
-    contentDir = "content-translated/ur"
+  [languages.mn]
+  languageCode = "mn"
+  weight = 2
 
-    [languages.ug]
-    languageCode = "ug"
-    weight = 2
-    contentDir = "content-translated/ug"
+  [languages.mi]
+  languageCode = "mi"
+  weight = 2
 
-    [languages.ta]
-    languageCode = "ta"
-    weight = 2
-    contentDir = "content-translated/ta"
+    [languages.pt_br]
+    languageCode = "pt_br"
+  weight = 2
 
-    [languages.tl]
-    languageCode = "tl"
-    weight = 2
-    contentDir = "content-translated/tl"
+  [languages.ja]
+  languageCode = "ja"
+  weight = 2
 
-    [languages.te]
-    languageCode = "te"
-    weight = 2
-    contentDir = "content-translated/te"
+  [languages.el]
+  languageCode = "el"
+  weight = 2
 
-    [languages.sw]
-    languageCode = "sw"
-    weight = 2
-    contentDir = "content-translated/sw"
+  [languages.lv]
+  languageCode = "lv"
+  weight = 2
 
-    [languages.sr]
-    languageCode = "sr"
-    weight = 2
-    contentDir = "content-translated/sr"
+  [languages.it]
+  languageCode = "it"
+  weight = 2
 
-    [languages.si]
-    languageCode = "si"
-    weight = 2
-    contentDir = "content-translated/si"
+  [languages.ca]
+  languageCode = "ca"
+  weight = 2
 
-    [languages.pa]
-    languageCode = "pa"
-    weight = 2
-    contentDir = "content-translated/pa"
+  [languages.cs]
+  languageCode = "cs"
+  weight = 2
 
-    [languages.ne]
-    languageCode = "ne"
-    weight = 2
-    contentDir = "content-translated/ne"
+  [languages.te]
+  languageCode = "te"
+  weight = 2
 
-    [languages.my]
-    languageCode = "my"
-    weight = 2
-    contentDir = "content-translated/my"
+    [languages.pt_pt]
+    languageCode = "pt_pt"
+  weight = 2
 
-    [languages.ms]
-    languageCode = "ms"
-    weight = 2
-    contentDir = "content-translated/ms"
+  [languages.ru]
+  languageCode = "ru"
+  weight = 2
 
-    [languages.mn]
-    languageCode = "mn"
-    weight = 2
-    contentDir = "content-translated/mn"
+  [languages.tl]
+  languageCode = "tl"
+  weight = 2
 
-    [languages.mk]
-    languageCode = "mk"
-    weight = 2
-    contentDir = "content-translated/mk"
+  [languages.nqo]
+  languageCode = "nqo"
+  weight = 2
 
-    [languages.ku]
-    languageCode = "ku"
-    weight = 2
-    contentDir = "content-translated/ku"
+    [languages.km_kh]
+    languageCode = "km_kh"
+  weight = 2
 
-    [languages.kab]
-    languageCode = "kab"
-    weight = 2
-    contentDir = "content-translated/kab"
+  [languages.uk]
+  languageCode = "uk"
+  weight = 2
 
-    [languages.ka]
-    languageCode = "ka"
-    weight = 2
-    contentDir = "content-translated/ka"
+  [languages.sr]
+  languageCode = "sr"
+  weight = 2
 
-    [languages.jv]
-    languageCode = "jv"
-    weight = 2
-    contentDir = "content-translated/jv"
+  [languages.pa]
+  languageCode = "pa"
+  weight = 2
 
-    [languages.hr]
-    languageCode = "hr"
-    weight = 2
-    contentDir = "content-translated/hr"
+  [languages.si]
+  languageCode = "si"
+  weight = 2
 
-    [languages.hi]
-    languageCode = "hi"
-    weight = 2
-    contentDir = "content-translated/hi"
+  [languages.ku]
+  languageCode = "ku"
+  weight = 2
 
-    [languages.he]
-    languageCode = "he"
-    weight = 2
-    contentDir = "content-translated/he"
+  [languages.mk]
+  languageCode = "mk"
+  weight = 2
 
-    [languages.gu]
-    languageCode = "gu"
-    weight = 2
-    contentDir = "content-translated/gu"
+  [languages.ba]
+  languageCode = "ba"
+  weight = 2
 
-    [languages.fil]
-    languageCode = "fil"
-    weight = 2
-    contentDir = "content-translated/fil"
+  [languages.my]
+  languageCode = "my"
+  weight = 2
 
-    [languages.da]
-    languageCode = "da"
-    weight = 2
-    contentDir = "content-translated/da"
+  [languages.ar]
+  languageCode = "ar"
+  weight = 2
 
-    [languages.ba]
-    languageCode = "ba"
-    weight = 2
-    contentDir = "content-translated/ba"
+  [languages.gl]
+  languageCode = "gl"
+  weight = 2
 
+  [languages.hr]
+  languageCode = "hr"
+  weight = 2
 
+  [languages.hu]
+  languageCode = "hu"
+  weight = 2
+
+  [languages.bg]
+  languageCode = "bg"
+  weight = 2
+
+  [languages.bn]
+  languageCode = "bn"
+  weight = 2
+
+  [languages.ne]
+  languageCode = "ne"
+  weight = 2
+
+  [languages.fil]
+  languageCode = "fil"
+  weight = 2
+
+  [languages.af]
+  languageCode = "af"
+  weight = 2
+
+  [languages.nb]
+  languageCode = "nb"
+  weight = 2
+
+  [languages.hi]
+  languageCode = "hi"
+  weight = 2
+
+  [languages.ka]
+  languageCode = "ka"
+  weight = 2
+
+  [languages.de]
+  languageCode = "de"
+  weight = 2
+
+  [languages.az]
+  languageCode = "az"
+  weight = 2
+
+  [languages.ko]
+  languageCode = "ko"
+  weight = 2
+
+  [languages.fi]
+  languageCode = "fi"
+  weight = 2
+
+  [languages.id]
+  languageCode = "id"
+  weight = 2
+
+  [languages.fr]
+  languageCode = "fr"
+  weight = 2
+
+  [languages.es]
+  languageCode = "es"
+  weight = 2
+
+  [languages.et]
+  languageCode = "et"
+  weight = 2
+
+  [languages.fa]
+  languageCode = "fa"
+  weight = 2
+
+  [languages.lt]
+  languageCode = "lt"
+  weight = 2
+
+  [languages.eu]
+  languageCode = "eu"
+  weight = 2
+
+  [languages.jv]
+  languageCode = "jv"
+  weight = 2
+
+  [languages.ta]
+  languageCode = "ta"
+  weight = 2
+
+  [languages.tr]
+  languageCode = "tr"
+  weight = 2
+[module]
+  # English (base language) - only original content
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "en"
+
+  # All other languages - translated content first, fallback to original
+  [[module.mounts]]
+    source = "content-translated/nl"
+    target = "content"
+    lang = "nl"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "nl"
+
+  [[module.mounts]]
+    source = "content-translated/ro"
+    target = "content"
+    lang = "ro"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ro"
+
+  [[module.mounts]]
+    source = "content-translated/sk"
+    target = "content"
+    lang = "sk"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "sk"
+
+  [[module.mounts]]
+    source = "content-translated/ur"
+    target = "content"
+    lang = "ur"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ur"
+
+  [[module.mounts]]
+    source = "content-translated/sw"
+    target = "content"
+    lang = "sw"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "sw"
+
+  [[module.mounts]]
+    source = "content-translated/kab"
+    target = "content"
+    lang = "kab"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "kab"
+
+  [[module.mounts]]
+    source = "content-translated/ug"
+    target = "content"
+    lang = "ug"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ug"
+
+  [[module.mounts]]
+    source = "content-translated/pl"
+    target = "content"
+    lang = "pl"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "pl"
+
+  [[module.mounts]]
+    source = "content-translated/sq"
+    target = "content"
+    lang = "sq"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "sq"
+
+  [[module.mounts]]
+    source = "content-translated/sv"
+    target = "content"
+    lang = "sv"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "sv"
+
+  [[module.mounts]]
+    source = "content-translated/he"
+    target = "content"
+    lang = "he"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "he"
+
+  [[module.mounts]]
+    source = "content-translated/ms"
+    target = "content"
+    lang = "ms"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ms"
+
+  [[module.mounts]]
+    source = "content-translated/da"
+    target = "content"
+    lang = "da"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "da"
+
+  [[module.mounts]]
+    source = "content-translated/mr"
+    target = "content"
+    lang = "mr"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "mr"
+
+  [[module.mounts]]
+    source = "content-translated/gu"
+    target = "content"
+    lang = "gu"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "gu"
+
+  [[module.mounts]]
+    source = "content-translated/mn"
+    target = "content"
+    lang = "mn"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "mn"
+
+  [[module.mounts]]
+    source = "content-translated/mi"
+    target = "content"
+    lang = "mi"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "mi"
+
+  [[module.mounts]]
+    source = "content-translated/ja"
+    target = "content"
+    lang = "ja"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ja"
+
+  [[module.mounts]]
+    source = "content-translated/el"
+    target = "content"
+    lang = "el"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "el"
+
+  [[module.mounts]]
+    source = "content-translated/lv"
+    target = "content"
+    lang = "lv"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "lv"
+
+  [[module.mounts]]
+    source = "content-translated/it"
+    target = "content"
+    lang = "it"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "it"
+
+  [[module.mounts]]
+    source = "content-translated/ca"
+    target = "content"
+    lang = "ca"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ca"
+
+  [[module.mounts]]
+    source = "content-translated/cs"
+    target = "content"
+    lang = "cs"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "cs"
+
+  [[module.mounts]]
+    source = "content-translated/te"
+    target = "content"
+    lang = "te"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "te"
+
+  [[module.mounts]]
+    source = "content-translated/ru"
+    target = "content"
+    lang = "ru"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ru"
+
+  [[module.mounts]]
+    source = "content-translated/tl"
+    target = "content"
+    lang = "tl"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "tl"
+
+  [[module.mounts]]
+    source = "content-translated/nqo"
+    target = "content"
+    lang = "nqo"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "nqo"
+
+  [[module.mounts]]
+    source = "content-translated/uk"
+    target = "content"
+    lang = "uk"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "uk"
+
+  [[module.mounts]]
+    source = "content-translated/sr"
+    target = "content"
+    lang = "sr"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "sr"
+
+  [[module.mounts]]
+    source = "content-translated/pa"
+    target = "content"
+    lang = "pa"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "pa"
+
+  [[module.mounts]]
+    source = "content-translated/si"
+    target = "content"
+    lang = "si"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "si"
+
+  [[module.mounts]]
+    source = "content-translated/ku"
+    target = "content"
+    lang = "ku"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ku"
+
+  [[module.mounts]]
+    source = "content-translated/mk"
+    target = "content"
+    lang = "mk"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "mk"
+
+  [[module.mounts]]
+    source = "content-translated/ba"
+    target = "content"
+    lang = "ba"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ba"
+
+  [[module.mounts]]
+    source = "content-translated/my"
+    target = "content"
+    lang = "my"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "my"
+
+  [[module.mounts]]
+    source = "content-translated/ar"
+    target = "content"
+    lang = "ar"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ar"
+
+  [[module.mounts]]
+    source = "content-translated/gl"
+    target = "content"
+    lang = "gl"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "gl"
+
+  [[module.mounts]]
+    source = "content-translated/hr"
+    target = "content"
+    lang = "hr"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "hr"
+
+  [[module.mounts]]
+    source = "content-translated/hu"
+    target = "content"
+    lang = "hu"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "hu"
+
+  [[module.mounts]]
+    source = "content-translated/bg"
+    target = "content"
+    lang = "bg"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "bg"
+
+  [[module.mounts]]
+    source = "content-translated/bn"
+    target = "content"
+    lang = "bn"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "bn"
+
+  [[module.mounts]]
+    source = "content-translated/ne"
+    target = "content"
+    lang = "ne"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ne"
+
+  [[module.mounts]]
+    source = "content-translated/fil"
+    target = "content"
+    lang = "fil"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "fil"
+
+  [[module.mounts]]
+    source = "content-translated/af"
+    target = "content"
+    lang = "af"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "af"
+
+  [[module.mounts]]
+    source = "content-translated/nb"
+    target = "content"
+    lang = "nb"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "nb"
+
+  [[module.mounts]]
+    source = "content-translated/hi"
+    target = "content"
+    lang = "hi"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "hi"
+
+  [[module.mounts]]
+    source = "content-translated/ka"
+    target = "content"
+    lang = "ka"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ka"
+
+  [[module.mounts]]
+    source = "content-translated/de"
+    target = "content"
+    lang = "de"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "de"
+
+  [[module.mounts]]
+    source = "content-translated/az"
+    target = "content"
+    lang = "az"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "az"
+
+  [[module.mounts]]
+    source = "content-translated/ko"
+    target = "content"
+    lang = "ko"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ko"
+
+  [[module.mounts]]
+    source = "content-translated/fi"
+    target = "content"
+    lang = "fi"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "fi"
+
+  [[module.mounts]]
+    source = "content-translated/id"
+    target = "content"
+    lang = "id"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "id"
+
+  [[module.mounts]]
+    source = "content-translated/fr"
+    target = "content"
+    lang = "fr"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "fr"
+
+  [[module.mounts]]
+    source = "content-translated/es"
+    target = "content"
+    lang = "es"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "es"
+
+  [[module.mounts]]
+    source = "content-translated/et"
+    target = "content"
+    lang = "et"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "et"
+
+  [[module.mounts]]
+    source = "content-translated/fa"
+    target = "content"
+    lang = "fa"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "fa"
+
+  [[module.mounts]]
+    source = "content-translated/lt"
+    target = "content"
+    lang = "lt"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "lt"
+
+  [[module.mounts]]
+    source = "content-translated/eu"
+    target = "content"
+    lang = "eu"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "eu"
+
+  [[module.mounts]]
+    source = "content-translated/jv"
+    target = "content"
+    lang = "jv"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "jv"
+
+  [[module.mounts]]
+    source = "content-translated/ta"
+    target = "content"
+    lang = "ta"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ta"
+
+  [[module.mounts]]
+    source = "content-translated/tr"
+    target = "content"
+    lang = "tr"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "tr"
+
+  [[module.mounts]]
+    source = "content-translated/zh-Hans"
+    target = "content"
+    lang = "zh-hans"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "zh-hans"
+
+  [[module.mounts]]
+    source = "content-translated/zh-Hant"
+    target = "content"
+    lang = "zh-hant"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "zh-hant"
+
+  [[module.mounts]]
+    source = "content-translated/pt_BR"
+    target = "content"
+    lang = "pt_br"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "pt_br"
+
+  [[module.mounts]]
+    source = "content-translated/pt_PT"
+    target = "content"
+    lang = "pt_pt"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "pt_pt"
+
+  [[module.mounts]]
+    source = "content-translated/km_KH"
+    target = "content"
+    lang = "km_kh"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "km_kh"
 
 
 
