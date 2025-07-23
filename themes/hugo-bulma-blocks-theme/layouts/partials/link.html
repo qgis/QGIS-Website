@@ -16,11 +16,20 @@
 {{ $target := cond $isExternal "_blank" "" }}
 {{ $externalClass := cond $isExternal "external-link" "" }}
 
+{{/* Use i18n translation if available, otherwise use original name */}}
+{{ $name := .Name }}
+{{ if .Params.i18n_key }}
+  {{ $translation := i18n .Params.i18n_key }}
+  {{ if $translation }}
+    {{ $name = $translation }}
+  {{ end }}
+{{ end }}
+
 <a
     class="{{ $externalClass }}"
     href="{{ $url }}"
     target="{{ $target }}"
     rel="{{ $rel }}"
 >
-{{ .Name }}
+{{ $name }}
 </a>
