@@ -306,24 +306,54 @@ The QGIS Website project is fully internationalized using [hugo-gettext](https:/
 
 ### Hugo and hugo-gettext Configuration
 
-The configuration for hugo-gettext is set in `config.toml`:
+The configuration example for hugo-gettext is set in `config.toml`:
 
 ```toml
 [i18n]
-package = "messages"
-srcDir = "content"
-genDir = "content-translated"
-excludedKeys = "heroSize heroImage ..."
-[i18n.content]
-  [i18n.content.default]
-    globs = ["content/**/*.md"]
+  package = "messages"
+  genToOtherDir = true
+  srcDir = "content"
+  genDir = "content-translated"
+  excludedKeys = "heroSize heroImage HeroImage heroLogo Badge BadgeLink ..."
+  [i18n.shortcodes]
+    [i18n.shortcodes.params]
+      feature = ["title", "text", "col-title-1", "col-text-1", ...]
+      block = ["title", "subtitle"]
+      rich-list = ["listTitle", "listSubtitle"]
+      # ... other shortcode parameters
+  [i18n.content]
+    [i18n.content.default]
+      files = ["content/_index.md"]
+      globs = ["content/**/*.md"]
+      excludedGlobs = ["content/community-blogs/**", "content/funders/**", ...]
+
 [languages]
   [languages.en]
-    contentDir = "content"
+    languageCode = "en"
+    title = "QGIS"
+    weight = 2
   [languages.de]
-    contentDir = "content-translated/de"
-  [languages.es]
-    contentDir = "content-translated/es"
+    languageCode = "de"
+    weight = 2
+  # ... other languages
+
+[module]
+  # English uses original content
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "en"
+  
+  # Other languages: translated content first, then English fallback
+  [[module.mounts]]
+    source = "content-translated/de"
+    target = "content"
+    lang = "de"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "de"
+  # ... similar pairs for other languages
 ```
 
 ### Translation Workflow
@@ -408,15 +438,15 @@ The following steps are executed automatically:
 
 ```yaml
 - name: Extract strings
-  run: hugo-gettext extract
+  run: hugo-gettext extract translations/
 - name: Push to Transifex
   run: tx push -s
 - name: Pull translations
   run: tx pull -a
 - name: Compile .po to .mo
   run: hugo-gettext compile translations/
-- name: Generate translated content with fallback
-  run: make generate-translations-with-fallback
+- name: Generate translated content
+  run: hugo-gettext generate
 ```
 
 ### Makefile Commands for Translations
@@ -434,20 +464,11 @@ make messages-compile
 
 # Generate translated content from .mo files
 # Creates translated versions of content in content-translated/<lang>/
-make messages-generate
+make generate-translations
 
 # Clean translated content directory
 # Removes all content from content-translated/
 make clean-translations
-
-# Copy original content as fallback for all languages
-# This ensures untranslated pages still appear in other languages
-make copy-content
-
-# Generate translations with fallback content
-# Combines clean-translations, copy-content, and messages-generate
-# This ensures all pages exist in all languages, falling back to English when no translation exists
-make generate-translations-with-fallback
 
 # Push source strings to Transifex
 # Converts and uploads English strings to Transifex for translation
@@ -456,6 +477,10 @@ make txpush
 # Pull translations from Transifex
 # Downloads translations from Transifex and converts them to Hugo format
 make txpull
+
+# Fix newlines in translation files
+# Corrects newline mismatches between msgid and msgstr entries
+make fix-newlines
 
 # Create Python virtual environment
 # Sets up Python environment needed for translation scripts
@@ -470,13 +495,34 @@ These commands are typically used in sequence during the translation workflow:
 4. `make txpush` - Upload strings to Transifex
 5. `make txpull` - Download translations from Transifex
 6. `make messages-compile` - Compile translations
-7. `make generate-translations-with-fallback` - Generate translated content with English fallback
+7. `make generate-translations` - Generate translated content
 
-The commands are used in the CI/CD pipeline and can also be run locally for development. Each command has its own target in the Makefile and can be run independently.
+The commands are used in the CI/CD pipeline and can also be run locally for development. Translation fallback (displaying English content for untranslated pages) is now handled automatically by Hugo's content mounting system configured in `config.toml`.
 
 ### Translation Fallback Mechanism
 
-The `generate-translations-with-fallback` command ensures translated content is properly managed by: 1) cleaning the translations directory, 2) copying English content as fallback, and 3) applying available translations on top. This approach maintains consistent content across all languages while utilizing translations where available.
+Translation fallback is handled automatically by Hugo's content mounting system. For each language, Hugo mounts the translated content directory first, then the original English content as fallback:
+
+```toml
+[module]
+  # English uses original content
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "en"
+  
+  # Other languages: translated content first, then English fallback
+  [[module.mounts]]
+    source = "content-translated/de"
+    target = "content"
+    lang = "de"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "de"
+```
+
+This means when accessing `/de/some-page/`, Hugo first looks in `content-translated/de/some-page.md`. If it doesn't exist, it automatically falls back to `content/some-page.md` (English version). This eliminates the need for manual content copying commands.
 
 ### Summary
 
