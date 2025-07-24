@@ -1,6 +1,6 @@
 ---
 level: "Small"
-title: "Cooperativa de Trabajo Geográfico Cambalache Limitada"
+title: "Cambalache Cooperativa Geográfica"
 logo: "cambalache.coop.ar.png"
 startDate: "2025-01-01"
 endDate: "2026-02-28"
