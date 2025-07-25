@@ -63,24 +63,12 @@ jobs:
       - name: Generate translated content
         run: make generate-translations
 
-      - name: Archive and upload translations as artifact
+      - name: Configure Git
         run: |
-          tar -czf translated-content.tar.gz content-translated/
-        
-      - name: Upload translations artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: translated-content
-          path: translated-content.tar.gz
-          retention-days: 7
-          overwrite: true
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
 
-      # - name: Configure Git
-      #   run: |
-      #     git config --global user.name 'GitHub Actions'
-      #     git config --global user.email 'github-actions@github.com'
-
-      # - name: Commit and push changes
-      #   run: |
-      #     git add .
-      #     git diff --quiet && git diff --staged --quiet || (git commit -m "Update translations [skip ci]" && git push) 
+      - name: Commit and push changes
+        run: |
+          git add content-translated/* i18n/*
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update translations [skip ci]" && git push) 
