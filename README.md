@@ -432,6 +432,38 @@ For translations used in HTML templates (not in markdown files), we use a differ
      - `scripts/tx_convert_push.py`: Converts Hugo YAML to Transifex format
      - `scripts/tx_convert_pull.py`: Converts Transifex YAML back to Hugo format
 
+### Working with HTML Template Translations
+
+**Adding new translations:**
+1. Add new keys to `i18n/en.yml` with English text
+2. Add corresponding translations to language files (e.g., `i18n/ru.yml`, `i18n/de.yml`)
+3. Use the key in HTML templates with `{{ i18n "key" }}`
+
+**Example workflow:**
+```yaml
+# In i18n/en.yml
+- id: newButtonText
+  translation: "Download Now"
+
+# In i18n/ru.yml  
+- id: newButtonText
+  translation: "Скачать сейчас"
+
+# In HTML template
+<button>{{ i18n "newButtonText" }}</button>
+```
+
+**Updating existing translations:**
+- Edit YAML files directly in `i18n/` directory
+- Or use Transifex workflow: `make txpush` → translate in Transifex → `make txpull`
+
+**Testing translations:**
+- Run `hugo server` to see changes immediately
+- Check different languages by visiting `/ru/`, `/de/`, etc.
+- Verify translations appear correctly in HTML templates
+
+
+
 ### Example CI/CD Steps
 
 The following steps are executed automatically:
@@ -498,6 +530,8 @@ These commands are typically used in sequence during the translation workflow:
 7. `make generate-translations` - Generate translated content
 
 The commands are used in the CI/CD pipeline and can also be run locally for development. Translation fallback (displaying English content for untranslated pages) is now handled automatically by Hugo's content mounting system configured in `config.toml`.
+
+**⚠️ Important Note:** The `make generate-translations` command modifies the `config.toml` file in the `[languages]` section. These changes are automatically generated and should be **ignored in git**. If you see changes to `config.toml` after running translation commands, you can safely discard them.
 
 ### Translation Fallback Mechanism
 
