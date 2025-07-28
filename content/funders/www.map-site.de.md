@@ -1,9 +1,9 @@
 ---
 level: "Small"
-title: "map-site"
-logo: "www.map-site.de.png"
-startDate: "2023-01-01"
-endDate: "2024-02-29"
+title: "map-site.de Geoinformatik"
+logo: "www.map-site.de.svg"
+startDate: "2025-03-01"
+endDate: "2026-02-28"
 link: "https://www.map-site.de/"
 country: "Germany"
 ---

@@ -10,7 +10,7 @@ export class ReportsPage {
         "Daily Reports",
         "OGC Certification",
         "Performance",
-        "Security"
+        "Security",
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
@@ -21,6 +21,6 @@ export class ReportsPage {
         this.performanceLink = this.page.getByRole("link", {
             name: "Performance",
         });
-        this.securityLink = this.page.getByRole("link", { name: "Security" });
+        this.securityLink = this.page.getByRole("link", { name: "Security", exact: true });
     }
 }

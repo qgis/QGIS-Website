@@ -8,13 +8,28 @@
 {{ $sidebar := .Get "sidebar" | default false }}
 
 
-<section class="section {{ $animationClasses }}">
+{{ if .Page.File }}
+<div class="is-hidden-touch edit-on-github">
+    <a
+        class="button is-light is-small is-rounded"
+        href="{{ $.Site.Params.githubRepo }}/edit/{{ $.Site.Params.githubBranch }}/{{ $.Site.Params.githubSubdir }}/{{ .Page.File.Path }}"
+        target="_blank"
+        rel="noopener"
+    >
+        <span class="icon">
+            <i class="fab fa-github"></i>
+        </span>
+        <span>Edit on GitHub</span>
+    </a>
+</div>
+{{ end }}
+
+<section class="section {{ $animationClasses }} pt-3">
     <div class="container {{ $classes }}">
         {{ if eq .Page.Params.sidebar true}}
         <div class="columns is-multiline is-centered">
         {{ partial "sidebar" . }}
         <div class="content column is-9"> 
         {{ end }}
-        
         
 

@@ -1,14 +1,13 @@
 ---
 type: "page"
 title: "QGIS Maps"
+description: "Amazing maps created using QGIS"
 draft: false
 HasBanner: false
 sidebar: true
 ---
 {{< content-start  >}}
-# QGIS Maps
+{{< maps-header>}}
 
-Amazing maps created using QGIS
-
-{{< flickr-images showcase="map" columns="gallery" >}}
+{{< hub-maps showcase="map" columns="gallery" >}}
 {{< content-end  >}}

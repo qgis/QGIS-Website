@@ -88,7 +88,11 @@ type: "visual-changelog"
 """
         content = front_matter + content
         content = re.sub(r'^(# .+)', r'\1 {#changelog' + self.version_formatted + '}', content, flags=re.M)
-        content = re.sub(r'(!\[.*?\]\(.*?\))', r'\1\n\nRelease date: ' + self.release_date, content, 1)
+        # Insert release date right after the first HTML <img> tag
+        match = re.search(r'(<img\s+[^>]*>)', content, re.IGNORECASE)
+        if match:
+            insert_pos = match.end()
+            content = content[:insert_pos] + f"\n\nRelease date: {self.release_date}\n" + content[insert_pos:]
         content += '\n\n{{< content-end >}}'
 
         with open(index_file_path, 'w') as file:

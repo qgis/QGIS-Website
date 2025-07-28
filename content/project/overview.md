@@ -218,7 +218,7 @@ Demonstrations of our user's creativity, showcasing the powerful map creation ca
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< flickr-images showcase="map" quantity="5" columns="gallery" >}}
+{{< hub-maps showcase="map" quantity="5" columns="gallery" >}}
 
 {{< column-end >}}
 {{< columns-end >}}

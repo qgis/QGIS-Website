@@ -105,7 +105,7 @@ export class ProjectPage {
         });
         this.screenshotsLink = this.page.getByRole("link", {
             name: "Screenshots",
-        });
+        }).first();
         this.caseStudiesAmurumLink = this.page.getByRole("link", {
             name: "Amurum forest reserve habitat",
         });
