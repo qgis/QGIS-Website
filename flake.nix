@@ -33,7 +33,7 @@
 
         in
         {
-          website = pkgs.callPackage ./package.nix { };
+          website = pkgs.callPackage ./nix/package.nix { };
         });
 
 

@@ -7,7 +7,7 @@ stdenv.mkDerivation {
   name = "qgis-website";
 
   src = lib.cleanSourceWith {
-    src = ./.;
+    src = ../.;
     filter = (
       path: type: (builtins.all (x: x != baseNameOf path) [
         ".git"
@@ -31,7 +31,6 @@ stdenv.mkDerivation {
     mkdir -p $out
     cp -r public_www public_prod $out/
   '';
-
   meta = with lib; {
     description = "A QGIS website";
     license = licenses.mit;
