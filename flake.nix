@@ -81,8 +81,8 @@
             packages = with pkgs; [
               hugo # Hugo for building the website
               vscode # VSCode for development
-              python312Packages.icalendar # Python packages
-              python312Packages.requests # Python packages
+              python3Packages.icalendar # Python packages
+              python3Packages.requests # Python packages
               gnumake # GNU Make for build automation
             ];
 
