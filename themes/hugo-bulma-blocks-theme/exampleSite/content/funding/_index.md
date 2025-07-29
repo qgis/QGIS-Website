@@ -25,12 +25,11 @@ We are a community project, and although we make the software available for free
     subtitle="Make a one-off donation to support our work."
     image=""
     sub-block-side="bottom"
-    class="is-primary"     
+    class="is-primary"
     title-size="is-4"
     subtitle-size="is-6"
     link="donate/"
-    link-text="Donate!"    
->}}{{< /block >}}
+    link-text="Donate!"    >}}{{< /block >}}
 {{< column-end >}}
 {{< column-start class="is-half" >}}
 {{< block
@@ -38,12 +37,11 @@ We are a community project, and although we make the software available for free
     subtitle="Create a recurring sustaining membership."
     image=""
     sub-block-side="bottom"
-    class="is-danger" 
+    class="is-danger"
     title-size="is-4"
-    subtitle-size="is-6"    
+    subtitle-size="is-6"
     link="funding/membership/"
-    link-text="Subscribe!"
->}}{{< /block >}}
+    link-text="Subscribe!">}}{{< /block >}}
 {{< column-end >}}
 
 {{< column-start class="is-half">}}
@@ -52,12 +50,11 @@ We are a community project, and although we make the software available for free
     subtitle="Support our work and enjoy some branded products."
     image=""
     sub-block-side="bottom"
-    class="is-warning"     
+    class="is-warning"
     title-size="is-4"
-    subtitle-size="is-6"    
+    subtitle-size="is-6"
     link="https://shop.spreadshirt.net/example/"
-    link-text="Shop"
->}}{{< /block >}}
+    link-text="Shop">}}{{< /block >}}
 {{< column-end >}}
 {{< column-start class="is-half">}}
 {{< block
@@ -65,11 +62,10 @@ We are a community project, and although we make the software available for free
     subtitle="Hire community members directly to engage their services for the benefit of our project."
     image=""
     sub-block-side="bottom"
-    class="is-success"     
+    class="is-success"
     title-size="is-4"
-    subtitle-size="is-6"  
+    subtitle-size="is-6"
     link="contributors/"
-    link-text="Contributors"  
->}}{{< /block >}}
+    link-text="Contributors"  >}}{{< /block >}}
 {{< column-end >}}
 {{< columns-end >}}
