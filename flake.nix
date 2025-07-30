@@ -10,16 +10,25 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs =
+    { self, nixpkgs }:
 
     let
       # Flake system
-      supportedSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
+      supportedSystems = [
+        "x86_64-linux"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
+      ];
       forAllSystems = nixpkgs.lib.genAttrs supportedSystems;
-      nixpkgsFor = forAllSystems (system: import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      });
+      nixpkgsFor = forAllSystems (
+        system:
+        import nixpkgs {
+          inherit system;
+          config.allowUnfree = true;
+        }
+      );
 
     in
     {
@@ -27,21 +36,22 @@
       ### PACKAGES
       #
 
-      packages = forAllSystems (system:
+      packages = forAllSystems (
+        system:
         let
           pkgs = nixpkgsFor.${system};
-
         in
         {
           website = pkgs.callPackage ./nix/package.nix { };
-        });
-
+        }
+      );
 
       #
       ### APPS
       #
 
-      apps = forAllSystems (system:
+      apps = forAllSystems (
+        system:
         let
           pkgs = nixpkgsFor.${system};
           inherit (nixpkgs) lib;
@@ -55,7 +65,6 @@
                 -d ${self.packages.${system}.website}/public_www/
             '';
           };
-
         in
         rec {
           website = {
@@ -63,22 +72,21 @@
             program = "${wwwLauncher}/bin/website";
           };
           default = website;
-        });
-
+        }
+      );
 
       #
       ### SHELLS
       #
 
-      devShells = forAllSystems (system:
+      devShells = forAllSystems (
+        system:
         let
           pkgs = nixpkgsFor.${system};
-
         in
         {
           # Development environment
           default = pkgs.mkShell {
-
             packages = with pkgs; [
               hugo # Hugo for building the website
               vscode # VSCode for development
@@ -86,7 +94,6 @@
               python3Packages.requests # Python packages
               gnumake # GNU Make for build automation
             ];
-
             shellHook = ''
               export DIRENV_LOG_FORMAT=
               echo "-----------------------"
@@ -107,6 +114,7 @@
               echo "-----------------------"
             '';
           };
-        });
+        }
+      );
     };
 }

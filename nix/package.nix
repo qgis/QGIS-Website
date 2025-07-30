@@ -1,6 +1,7 @@
-{ lib
-, stdenv
-, hugo
+{
+  lib,
+  stdenv,
+  hugo,
 }:
 
 stdenv.mkDerivation {
@@ -9,7 +10,8 @@ stdenv.mkDerivation {
   src = lib.cleanSourceWith {
     src = ../.;
     filter = (
-      path: type: (builtins.all (x: x != baseNameOf path) [
+      path: type:
+      (builtins.all (x: x != baseNameOf path) [
         ".git"
         ".github"
         "flake.nix"
@@ -36,4 +38,3 @@ stdenv.mkDerivation {
     license = licenses.mit;
   };
 }
-
