@@ -57,11 +57,12 @@
           };
 
         in
-        {
-          default = {
+        rec {
+          website = {
             type = "app";
             program = "${wwwLauncher}/bin/website";
           };
+          default = website;
         });
 
 
