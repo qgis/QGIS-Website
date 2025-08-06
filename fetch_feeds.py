@@ -140,16 +140,14 @@ def fetch_first_feed_entry():
     response = requests.get(feed_url)
     response.raise_for_status()
     feed_data = response.json()
-
+    entry = {}
     if feed_data and len(feed_data) > 0:
-        first_entry = feed_data[0]
-        first_entry['url'] = f"https://feed.qgis.org/{first_entry['pk']}"
-        os.makedirs(os.path.dirname(feed_file_path), exist_ok=True)
-        with open(feed_file_path, "w", encoding="utf-8") as f:
-            json.dump(first_entry, f, ensure_ascii=False, indent=4)
+        entry = feed_data[0]
+        entry['url'] = f"https://feed.qgis.org/{entry['pk']}"
         print(f"First feed entry saved to {feed_file_path}")
-    else:
-        print("No items found in the feed.")
+    os.makedirs(os.path.dirname(feed_file_path), exist_ok=True)
+    with open(feed_file_path, "w", encoding="utf-8") as f:
+        json.dump(entry, f, ensure_ascii=False, indent=4)
 
 
 parser = argparse.ArgumentParser(description='Import items from various feeds.')
