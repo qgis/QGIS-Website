@@ -6,6 +6,7 @@ sidebar: true
 thumbnail: "images/portugal_trees_inventory3.webp"
 section: "project"
 type: "case-study"
+date: "2025-06-08"
 ---
 
 {{< content-start >}}
