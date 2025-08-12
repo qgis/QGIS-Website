@@ -1,5 +1,5 @@
 <div class="grid">
-  {{ range where .Site.Pages "Section" "project" }}
+  {{ range sort (where .Site.Pages "Section" "project") "Date" "desc" }}
     {{ if eq (index .Params "type") "case-study" }}
       {{ partial "usecase.html" . }}
     {{ end }}
