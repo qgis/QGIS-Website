@@ -7,6 +7,7 @@ thumbnail: "images/czech_brno1.jpg"
 section: "project"
 type: "case-study"
 date: 2024-02-16
+featured: false
 ---
 {{< content-start >}}
 

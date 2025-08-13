@@ -7,6 +7,7 @@ thumbnail: "images/suisse_uster1.png"
 section: "project"
 type: "case-study"
 date: 2024-02-16
+featured: false
 ---
 {{< content-start >}}
 
