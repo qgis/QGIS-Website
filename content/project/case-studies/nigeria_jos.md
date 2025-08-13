@@ -6,6 +6,7 @@ sidebar: true
 thumbnail: "images/nigeria_jos1.jpg"
 section: "project"
 type: "case-study"
+date: 2024-02-16
 ---
 {{< content-start >}}
 

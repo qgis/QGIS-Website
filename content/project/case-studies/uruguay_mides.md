@@ -6,6 +6,7 @@ sidebar: true
 thumbnail: "images/uruguay_mides1.png"
 section: "project"
 type: "case-study"
+date: 2024-02-16
 ---
 {{< content-start >}}
 

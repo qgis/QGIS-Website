@@ -6,6 +6,7 @@ sidebar: true
 thumbnail: "images/china_hydro1.jpg"
 section: "project"
 type: "case-study"
+date: 2024-02-16
 ---
 {{< content-start >}}
 
