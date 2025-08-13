@@ -8,6 +8,7 @@ section: "project"
 type: "case-study"
 date: "2025-06-08"
 featured: false
+archived: false
 ---
 
 {{< content-start >}}
