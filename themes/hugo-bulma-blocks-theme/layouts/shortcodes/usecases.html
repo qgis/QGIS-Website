@@ -1,26 +1,24 @@
-{{ $featured := where (where (where .Site.Pages "Section" "project") ".Params.type" "case-study") ".Params.featured" true }}
+{{ $featured := where (where (where (where .Site.Pages "Section" "project") ".Params.type" "case-study") ".Params.featured" true) ".Params.archived" false }}
 
 <h2>🌟 Featured Case Studies</h2>
 {{ if gt (len $featured) 0 }}
 <div class="carousel-container mb-5">
     <div class="carousel">
         <!-- Carousel Items -->
-        {{ range sort (where .Site.Pages "Section" "project") "Date" "desc" }}
-            {{ if and (eq (index .Params "type") "case-study") (index .Params "featured") }}
-              <div class="carousel-item is-active">
-                  <div class="card">
-                      <div class="card-image">
-                          <figure class="image">
-                              <img src="{{ absURL "project/case-studies/" }}{{ .Params.thumbnail }}" alt="Product 1">
-                          </figure>
-                      </div>
-                      <div class="card-content has-text-centered">
-                          <p class="title is-6 truncate-one-line">{{.Title}}</p>
-                          <a class="button is-success is-rounded" href="{{ .RelPermalink }}">More details</a>
-                      </div>
-                  </div>
-              </div>
-            {{ end }}
+        {{ range $i, $item := sort $featured "Date" "desc" }}
+        <div class="carousel-item{{ if eq $i 0 }} is-active{{ end }}">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="{{ absURL "project/case-studies/" }}{{ $item.Params.thumbnail }}" alt="{{ $item.Title }}">
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="title is-6 truncate-one-line">{{ $item.Title }}</p>
+              <a class="button is-success is-rounded" href="{{ $item.RelPermalink }}">More details</a>
+            </div>
+          </div>
+        </div>
         {{ end }}
     </div>
     
@@ -50,13 +48,24 @@
 <p>No featured case studies available at the moment. Check back soon for highlighted success stories!</p>
 {{ end }}
 
+{{ $active := where (where (where .Site.Pages "Section" "project") ".Params.type" "case-study") ".Params.archived" false }}
+
 <h2>Active Case Studies</h2>
 
+{{ if gt (len $active) 0 }}
 <div class="grid">
-  {{ range sort (where .Site.Pages "Section" "project") "Date" "desc" }}
+  {{ range sort $active "Date" "desc" }}
     {{ if eq (index .Params "type") "case-study" }}
       {{ partial "usecase.html" . }}
     {{ end }}
   {{ end }}
 </div>
-  
+{{ else }}
+<p>No active case studies available at the moment. Check back soon for updates!</p>
+{{ end }}
+
+<h2>Archived Case Studies</h2>
+<p>
+  More case studies are available in our <a href="{{ absURL "project/case-studies-archive" }}">archive</a>. You can explore past projects and their outcomes to see how our solutions have evolved over time.
+</p>
+<a href="{{ absURL "project/case-studies-archive" }}" class="button is-primary3 is-rounded ml-2">View Archive</a>

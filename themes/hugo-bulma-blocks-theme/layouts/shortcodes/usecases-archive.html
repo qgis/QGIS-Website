@@ -1,0 +1,13 @@
+{{ $archived := where (where (where .Site.Pages "Section" "project") ".Params.type" "case-study") ".Params.archived" true }}
+
+<h2>Archived Case Studies</h2>
+{{ if gt (len $archived) 0 }}
+<div class="grid">
+  {{ range sort $archived "Date" "desc" }}
+    {{ partial "usecase.html" . }}
+  {{ end }}
+</div>
+{{ else }}
+
+<p>No archived case studies available at the moment. Check back soon for more stories!</p>
+{{ end }}

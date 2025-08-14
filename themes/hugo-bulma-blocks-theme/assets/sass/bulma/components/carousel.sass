@@ -20,9 +20,15 @@
       box-sizing: border-box
       opacity: 0
       transition: opacity 0.5s ease-in-out
+      a
+        display: none
+        z-index: -1
 
       &.is-active
         opacity: 1
+        a
+          display: inline-flex
+          z-index: 1
 
       .card
         height: 98%
