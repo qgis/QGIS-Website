@@ -1,0 +1,71 @@
+{{ $orgs := $.Site.Data.contributors.organizations }}
+<div class="organization-list">
+  {{ range $org := $orgs }}
+    <div class="card contributor-card organization organization-horizontal">
+        <div class="card-content">
+            <div class="columns is-vcentered">
+                <div class="column is-narrow">
+                    <div class="avatar-container">
+                        <img src="/{{ $org.image }}" class="avatar-large">
+                        <span class="level-indicator level-{{ $org.contributions.web_sites.level }}">★</span>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="org-info">
+                        <h3 class="title is-3">{{ $org.name }}</h3>
+                        <p class="subtitle is-5">{{ $org.subtitle }}</p>
+                        <div class="content">
+                            <p>{{ $org.description }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-narrow">
+                    <div class="contribution-badges">
+                        {{ $thematics := dict }}
+                        {{ range $k, $v := $org.contributions }}
+                            {{ $thematics = $thematics | merge (dict $k $v) }}
+                        {{ end }}
+                            {{ $thematicList := slice }}
+                            {{ range $k, $v := $thematics }}
+                                {{ $thematicList = $thematicList | append (dict "name" $k "data" $v) }}
+                            {{ end }}
+                            {{ $sorted := sort $thematicList "data.level" "desc" }}
+                            {{ range $item := $sorted }}
+                                {{ $thematic := $item.name }}
+                                {{ $entry := $item.data }}
+                                <span class="contributor-badge contributor-badge-{{ $thematic }}">
+                                    <span>
+                                        {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Docs.{{ end }}
+                                        {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> Core Dev.{{ end }}
+                                        {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> Web Sites{{ end }}
+                                        {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
+                                        {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
+                                    </span>
+                                    <span class="contribution-level" style="white-space: nowrap;">
+                                        {{ $maxStars := 5 }}
+                                        {{ range $i := seq 1 $maxStars }}
+                                            {{ if le $i $entry.level }}
+                                                <i class="fas fa-star"></i>
+                                            {{ else }}
+                                                <i class="far fa-star"></i>
+                                            {{ end }}
+                                        {{ end }}
+                                        {{ if $entry.last_contribution }}
+                                            <span class="contribution-year">
+                                                {{ (time $entry.last_contribution).Year }}
+                                            </span>
+                                        {{ else }}
+                                            <span class="contribution-year">
+                                                N/D
+                                            </span>
+                                        {{ end }}
+                                    </span>
+                                </span>
+                            {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  {{ end }}
+</div>

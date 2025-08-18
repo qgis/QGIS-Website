@@ -1,0 +1,36 @@
+{
+  "levels": {
+    "documentation": {
+      "thresholds": [0, 10, 50, 200, 500],
+      "repositories": [
+        "https://github.com/qgis/QGIS-Documentation"
+      ]
+    },
+    "qgis_core": {
+      "thresholds": [0, 20, 100, 500, 2000],
+      "repositories": [
+        "https://github.com/qgis/QGIS"
+      ]
+    },
+    "web_sites": {
+      "thresholds": [0, 10, 50, 150, 400],
+      "repositories": [
+        "https://github.com/qgis/QGIS-Website",
+        "https://github.com/qgis/QGIS-Plugins-Website",
+        "https://github.com/qgis/QGIS-Hub-Website",
+        "https://github.com/qgis/QGIS-Planet-Website",
+        "https://github.com/qgis/QGIS-Certification-Website",
+        "https://github.com/qgis/QGIS-Changelog-Website",
+        "https://github.com/qgis/QGIS-Members-Website",
+        "https://github.com/qgis/QGIS-UC-Website",
+        "https://github.com/qgis/qgis-feed"
+      ]
+    },
+    "community_activities": {
+      "thresholds": [0, 1, 3, 6, 10]
+    },
+    "qgis_infrastructure": {
+      "thresholds": [0, 1, 5, 15, 30]
+    }
+  }
+}
