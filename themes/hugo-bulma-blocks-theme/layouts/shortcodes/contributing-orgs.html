@@ -12,7 +12,9 @@
                 </div>
                 <div class="column">
                     <div class="org-info">
-                        <h3 class="title is-3">{{ $org.name }}</h3>
+                        <h3 class="title is-3">
+                            <a href="{{ $org.url }}" class= "external-link" target="_blank" rel="noopener">{{ $org.name }}</a>
+                        </h3>
                         <p class="subtitle is-5">{{ $org.subtitle }}</p>
                         <div class="content">
                             <p>{{ $org.description }}</p>
@@ -40,25 +42,40 @@
                                         {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
                                         {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
                                         {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
-                                    </span>
-                                    <span class="contribution-level" style="white-space: nowrap;">
-                                        {{ $maxStars := 5 }}
-                                        {{ range $i := seq 1 $maxStars }}
-                                            {{ if le $i $entry.level }}
-                                                <i class="fas fa-star"></i>
-                                            {{ else }}
-                                                <i class="far fa-star"></i>
+                                        <span class="contribution-level" style="white-space: nowrap;">
+                                            {{ $maxStars := 5 }}
+                                            {{ range $i := seq 1 $maxStars }}
+                                                {{ if le $i $entry.level }}
+                                                    <i class="fas fa-star"></i>
+                                                {{ else }}
+                                                    <i class="far fa-star"></i>
+                                                {{ end }}
                                             {{ end }}
-                                        {{ end }}
+                                        </span>
+                                    </span>
+                                    <span>
+                                        {{ $now := now }}
                                         {{ if $entry.last_contribution }}
-                                            <span class="contribution-year">
-                                                {{ (time $entry.last_contribution).Year }}
-                                            </span>
+                                            {{ $last := time $entry.last_contribution }}
+                                            {{ $years := div (sub $now.Unix $last.Unix) 31536000 }}
+                                            {{ if lt $years 1 }}
+                                                <span class="contribution-year">
+                                                    <!-- <i class="fas fa-circle has-text-success" title="Active"></i> -->
+                                                    Active
+                                                </span>
+                                            {{ else }}
+                                                <span class="contribution-year">
+                                                    <!-- <i class="fas fa-circle has-text-info" title="Inactive"></i> -->
+                                                    {{ $years }}y ago
+                                                </span>
+                                            {{ end }}
                                         {{ else }}
                                             <span class="contribution-year">
-                                                N/D
+                                                <!-- <i class="fas fa-circle has-text-danger" title="No activity"></i> -->
+                                                No activity
                                             </span>
                                         {{ end }}
+
                                     </span>
                                 </span>
                             {{ end }}

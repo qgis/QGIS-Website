@@ -8,10 +8,14 @@
                     <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" class="avatar" loading="lazy">
                     <span class="level-indicator level-5 p-1"># {{ add $idx 1 }}</span>
                 </div>
-                <h3 class="title is-4">{{ .login }}</h3>
+                <h3 class="title is-4">
+                    <a href="https://github.com/{{ .login }}" class="external-link" target="_blank" rel="noopener">
+                        {{ .login }}
+                    </a>
+                </h3>
 
                 <div class="total-contributions mb-4 is-flex is-justify-content-center is-align-items-center">
-                    <span class="tag is-light is-medium has-text-weight-semibold mr-2 is-rounded">
+                    <span class="tag is-light is-medium has-text-weight-semibold mr-1 is-rounded">
                         <i class="fab fa-git-alt mr-1 has-text-info"></i>
                         {{ .total_contributions }}
                     </span>
@@ -38,7 +42,8 @@
                                     {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
                                     {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
                                 </span>
-                                <span class="contribution-count" style="font-size: 0.9em; color: #888; margin-left: 0.3em;">
+                                <span class="contribution-count">
+                                    <i class="fab fa-git-alt"></i>
                                     {{ $count }}
                                 </span>
                             </span>

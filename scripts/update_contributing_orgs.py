@@ -19,9 +19,13 @@ def save_json(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 def github_headers():
-    return {
+    headers = {
         "Accept": "application/vnd.github.v3+json"
     }
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+    return headers
 
 def get_commit_count(repo, author=None, since=None, until=None):
     url = f"{GITHUB_API}/repos/{repo}/commits"

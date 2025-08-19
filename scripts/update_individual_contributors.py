@@ -22,9 +22,9 @@ def github_headers():
     headers = {
         "Accept": "application/vnd.github.v3+json"
     }
-    # token = os.environ.get("GITHUB_TOKEN")
-    # if token:
-    #     headers["Authorization"] = f"token {token}"
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
     return headers
 
 def fetch_all_contributors(repo_url):
