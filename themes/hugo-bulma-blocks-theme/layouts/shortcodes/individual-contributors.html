@@ -1,168 +1,51 @@
-
+{{ $contributors := sort $.Site.Data.contributors.contributors "total_contributions" "desc" }}
 <div class="columns is-multiline">
-    <!-- Individual 1 -->
+    {{ range $idx, $contributor := $contributors }}
     <div class="column is-one-third">
         <div class="card contributor-card individual">
             <div class="card-content has-text-centered">
                 <div class="avatar-container">
-                    <img src="https://via.placeholder.com/80x80/9b59b6/white?text=JD" alt="John Developer" class="avatar">
-                    <span class="level-indicator level-5">★</span>
+                    <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" class="avatar" loading="lazy">
+                    <span class="level-indicator level-5 p-1"># {{ add $idx 1 }}</span>
                 </div>
-                <h3 class="title is-4">Alessandro Pasotti</h3>
-                <p class="subtitle is-6">Core Developer & PSC Member</p>
+                <h3 class="title is-4">{{ .login }}</h3>
+
+                <div class="total-contributions mb-4 is-flex is-justify-content-center is-align-items-center">
+                    <span class="tag is-light is-medium has-text-weight-semibold mr-2 is-rounded">
+                        <i class="fab fa-git-alt mr-1 has-text-info"></i>
+                        {{ .total_contributions }}
+                    </span>
+                    <span class="has-text-grey">commits</span>
+                </div>
+                <!-- <p class="subtitle is-6">Core Developer & PSC Member</p>
                 <div class="content">
                     <p>Long-time QGIS contributor focusing on server development, web services, and plugin architecture improvements.</p>
-                </div>
+                </div> -->
                 <div class="contribution-badges">
-                    <span class="contributor-badge contributor-badge-core">
-                        <i class="fas fa-code"></i> Core Development
-                        <span class="contribution-level">Master</span>
-                    </span>
-                    <span class="contributor-badge contributor-badge-website">
-                        <i class="fas fa-server"></i> Server
-                        <span class="contribution-level">Expert</span>
-                    </span>
-                    <span class="contributor-badge contributor-badge-community">
-                        <i class="fas fa-users"></i> Community
-                        <span class="contribution-level">Leader</span>
-                    </span>
+                        {{ $thematicList := slice }}
+                        {{ range $k, $v := .thematics }}
+                            {{ $thematicList = $thematicList | append (dict "name" $k "count" $v) }}
+                        {{ end }}
+                        {{ $sorted := sort $thematicList "count" "desc" }}
+                        {{ range $item := $sorted }}
+                            {{ $thematic := $item.name }}
+                            {{ $count := $item.count }}
+                            <span class="contributor-badge contributor-badge-{{ $thematic }}">
+                                <span>
+                                    {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Documentation{{ end }}
+                                    {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> QGIS Core{{ end }}
+                                    {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
+                                    {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
+                                    {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
+                                </span>
+                                <span class="contribution-count" style="font-size: 0.9em; color: #888; margin-left: 0.3em;">
+                                    {{ $count }}
+                                </span>
+                            </span>
+                        {{ end }}
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Individual 2 -->
-    <div class="column is-one-third">
-        <div class="card contributor-card individual">
-            <div class="card-content has-text-centered">
-                <div class="avatar-container">
-                    <img src="https://via.placeholder.com/80x80/e67e22/white?text=NP" alt="Nyall Dawson" class="avatar">
-                    <span class="level-indicator level-5">★</span>
-                </div>
-                <h3 class="title is-4">Nyall Dawson</h3>
-                <p class="subtitle is-6">Core Developer & Cartographer</p>
-                <div class="content">
-                    <p>Australian developer focusing on cartographic improvements, symbology enhancements, and print layout functionality.</p>
-                </div>
-                <div class="contribution-badges">
-                    <span class="contributor-badge contributor-badge-core">
-                        <i class="fas fa-palette"></i> Symbology
-                        <span class="contribution-level">Master</span>
-                    </span>
-                    <span class="contributor-badge contributor-badge-core">
-                        <i class="fas fa-print"></i> Print Layout
-                        <span class="contribution-level">Expert</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Individual 3 -->
-    <div class="column is-one-third">
-        <div class="card contributor-card individual">
-            <div class="card-content has-text-centered">
-                <div class="avatar-container">
-                    <img src="https://via.placeholder.com/80x80/1abc9c/white?text=MD" alt="Marco Docs" class="avatar">
-                    <span class="level-indicator level-3">●</span>
-                </div>
-                <h3 class="title is-4">Marco Hugentobler</h3>
-                <p class="subtitle is-6">Documentation Lead</p>
-                <div class="content">
-                    <p>Coordinates documentation efforts, maintains user guides, and ensures comprehensive coverage of QGIS features.</p>
-                </div>
-                <div class="contribution-badges">
-                    <span class="contributor-badge contributor-badge-docs">
-                        <i class="fas fa-book"></i> Documentation
-                        <span class="contribution-level">Master</span>
-                    </span>
-                    <span class="contributor-badge contributor-badge-community">
-                        <i class="fas fa-graduation-cap"></i> Training
-                        <span class="contribution-level">Expert</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Individual 4 -->
-    <div class="column is-one-third">
-        <div class="card contributor-card individual">
-            <div class="card-content has-text-centered">
-                <div class="avatar-container">
-                    <img src="https://via.placeholder.com/80x80/e74c3c/white?text=TL" alt="Tim Translator" class="avatar">
-                    <span class="level-indicator level-2">▲</span>
-                </div>
-                <h3 class="title is-4">Maria Rodriguez</h3>
-                <p class="subtitle is-6">Translation Coordinator</p>
-                <div class="content">
-                    <p>Manages Spanish translations and coordinates with international translation teams to make QGIS accessible globally.</p>
-                </div>
-                <div class="contribution-badges">
-                    <span class="contributor-badge contributor-badge-community">
-                        <i class="fas fa-language"></i> Translation
-                        <span class="contribution-level">Expert</span>
-                    </span>
-                    <span class="contributor-badge contributor-badge-docs">
-                        <i class="fas fa-globe-americas"></i> Localization
-                        <span class="contribution-level">Advanced</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Individual 5 -->
-    <div class="column is-one-third">
-        <div class="card contributor-card individual">
-            <div class="card-content has-text-centered">
-                <div class="avatar-container">
-                    <img src="https://via.placeholder.com/80x80/f39c12/white?text=BT" alt="Bug Tester" class="avatar">
-                    <span class="level-indicator level-2">▲</span>
-                </div>
-                <h3 class="title is-4">Chen Wei</h3>
-                <p class="subtitle is-6">QA & Testing</p>
-                <div class="content">
-                    <p>Dedicated quality assurance volunteer who tests new features, reports bugs, and helps maintain QGIS stability.</p>
-                </div>
-                <div class="contribution-badges">
-                    <span class="contributor-badge contributor-badge-core">
-                        <i class="fas fa-bug"></i> Testing
-                        <span class="contribution-level">Advanced</span>
-                    </span>
-                    <span class="contributor-badge contributor-badge-community">
-                        <i class="fas fa-comments"></i> Support
-                        <span class="contribution-level">Intermediate</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Individual 6 -->
-    <div class="column is-one-third">
-        <div class="card contributor-card individual">
-            <div class="card-content has-text-centered">
-                <div class="avatar-container">
-                    <img src="https://via.placeholder.com/80x80/2ecc71/white?text=PD" alt="Plugin Dev" class="avatar">
-                    <span class="level-indicator level-3">●</span>
-                </div>
-                <h3 class="title is-4">Andreas Mueller</h3>
-                <p class="subtitle is-6">Plugin Developer</p>
-                <div class="content">
-                    <p>Creates and maintains popular QGIS plugins, contributing to the ecosystem with specialized tools and workflows.</p>
-                </div>
-                <div class="contribution-badges">
-                    <span class="contributor-badge contributor-badge-core">
-                        <i class="fas fa-puzzle-piece"></i> Plugins
-                        <span class="contribution-level">Expert</span>
-                    </span>
-                    <span class="contributor-badge contributor-badge-docs">
-                        <i class="fas fa-code"></i> API Docs
-                        <span class="contribution-level">Advanced</span>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{ end }}
 </div>

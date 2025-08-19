@@ -7,7 +7,7 @@
                 <div class="column is-narrow">
                     <div class="avatar-container">
                         <img src="/{{ $org.image }}" class="avatar-large">
-                        <span class="level-indicator level-{{ $org.contributions.web_sites.level }}">★</span>
+                        <!-- <span class="level-indicator level-{{ $org.contributions.web_sites.level }}">★</span> -->
                     </div>
                 </div>
                 <div class="column">
@@ -35,9 +35,9 @@
                                 {{ $entry := $item.data }}
                                 <span class="contributor-badge contributor-badge-{{ $thematic }}">
                                     <span>
-                                        {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Docs.{{ end }}
-                                        {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> Core Dev.{{ end }}
-                                        {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> Web Sites{{ end }}
+                                        {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Docs{{ end }}
+                                        {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> QGIS Core{{ end }}
+                                        {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
                                         {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
                                         {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
                                     </span>

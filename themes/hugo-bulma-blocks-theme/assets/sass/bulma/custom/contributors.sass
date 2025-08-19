@@ -19,7 +19,7 @@
   height: 80px
   border-radius: 50%
   object-fit: cover
-  border: 3px solid #3498db
+  border: 3px solid $primary5
   transition: border-color 0.3s ease
 
 .organization .avatar
@@ -34,6 +34,8 @@
 .contributor-badge
   display: inline-flex
   align-items: center
+  justify-content: space-between
+  width: 100%
   padding: 0.25rem 0.75rem
   border-radius: 20px
   font-size: 0.75rem
@@ -76,9 +78,9 @@
   position: absolute
   top: -5px
   right: -5px
-  width: 24px
+  width: auto
   height: 24px
-  border-radius: 50%
+  border-radius: 10px
   display: flex
   align-items: center
   justify-content: center
@@ -97,7 +99,7 @@
 .level-4
   background: #9b59b6
 .level-5
-  background: #2ecc71
+  background: $primary1
 
 .section-header
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
@@ -165,7 +167,7 @@
   margin-left: 0.5rem
   white-space: nowrap
 
-.contribution-year
+.contribution-year, .contribution-count
   font-size: 0.9em
   color: #888
   background: #f5f5f5
@@ -195,9 +197,7 @@
   align-items: flex-end
 
 .organization-horizontal .contribution-badges .contributor-badge
-  width: 100%
   min-width: 200px
-  justify-content: space-between
 
 @media screen and (max-width: 768px)
   .organization-horizontal .columns
