@@ -42,7 +42,7 @@
                                         {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
                                         {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
                                         {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
-                                        <span class="contribution-level" style="white-space: nowrap;">
+                                        <!-- <span class="contribution-level" style="white-space: nowrap;">
                                             {{ $maxStars := 5 }}
                                             {{ range $i := seq 1 $maxStars }}
                                                 {{ if le $i $entry.level }}
@@ -51,9 +51,9 @@
                                                     <i class="far fa-star"></i>
                                                 {{ end }}
                                             {{ end }}
-                                        </span>
+                                        </span> -->
                                     </span>
-                                    <span>
+                                    <span class="ml-2">
                                         {{ $now := now }}
                                         {{ if $entry.last_contribution }}
                                             {{ $last := time $entry.last_contribution }}
