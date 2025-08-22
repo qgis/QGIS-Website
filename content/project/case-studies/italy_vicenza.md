@@ -6,6 +6,9 @@ sidebar: true
 thumbnail: "images/italy_vicenza1.png"
 section: "project"
 type: "case-study"
+date: 2024-02-16
+featured: false
+archived: false
 ---
 {{< content-start >}}
 

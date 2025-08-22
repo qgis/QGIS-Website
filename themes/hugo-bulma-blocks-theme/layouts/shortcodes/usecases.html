@@ -1,8 +1,71 @@
+{{ $featured := where (where (where (where .Site.Pages "Section" "project") ".Params.type" "case-study") ".Params.featured" true) ".Params.archived" false }}
+
+<h2>🌟 Featured Case Studies</h2>
+{{ if gt (len $featured) 0 }}
+<div class="carousel-container mb-5">
+    <div class="carousel">
+        <!-- Carousel Items -->
+        {{ range $i, $item := sort $featured "Date" "desc" }}
+        <div class="carousel-item{{ if eq $i 0 }} is-active{{ end }}">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image">
+                <img src="{{ absURL "project/case-studies/" }}{{ $item.Params.thumbnail }}" alt="{{ $item.Title }}">
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="title is-6 truncate-one-line">{{ $item.Title }}</p>
+              <a class="button is-success is-rounded" href="{{ $item.RelPermalink }}">More details</a>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <button class="carousel-nav carousel-nav-prev">
+        <span class="icon is-large">
+            <i class="fas fa-chevron-left fa-2x"></i>
+        </span>
+    </button>
+    <button class="carousel-nav carousel-nav-next">
+        <span class="icon is-large">
+            <i class="fas fa-chevron-right fa-2x"></i>
+        </span>
+    </button>
+    
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      {{ range $i, $item := $featured }}
+        <button class="carousel-indicator{{ if eq $i 0 }} is-active{{ end }}"></button>
+      {{ end }}
+    </div>
+</div>
+{{ $carouseljs := resources.Get "js/carousel.js" | resources.Minify }}
+<script src="{{ $carouseljs.RelPermalink }}"></script>
+{{ else }}
+
+<p>No featured case studies available at the moment. Check back soon for highlighted success stories!</p>
+{{ end }}
+
+{{ $active := where (where (where .Site.Pages "Section" "project") ".Params.type" "case-study") ".Params.archived" false }}
+
+<h2>Active Case Studies</h2>
+
+{{ if gt (len $active) 0 }}
 <div class="grid">
-  {{ range where .Site.Pages "Section" "project" }}
+  {{ range sort $active "Date" "desc" }}
     {{ if eq (index .Params "type") "case-study" }}
       {{ partial "usecase.html" . }}
     {{ end }}
   {{ end }}
 </div>
-  
+{{ else }}
+<p>No active case studies available at the moment. Check back soon for updates!</p>
+{{ end }}
+
+<h2>Archived Case Studies</h2>
+<p>
+  More case studies are available in our <a href="{{ absURL "project/case-studies-archive" }}">archive</a>. You can explore past projects and their outcomes to see how our solutions have evolved over time.
+</p>
+<a href="{{ absURL "project/case-studies-archive" }}" class="button is-primary3 is-rounded ml-2">View Archive</a>

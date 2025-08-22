@@ -13,10 +13,8 @@ export class ProjectPage {
     public readonly localUserGroupsHeading: Locator;
     public readonly localGroupsListLink: Locator;
     public readonly joinTheCommunityLink: Locator;
-    public readonly amurumForestLink: Locator;
     public readonly mapsLink: Locator;
     public readonly screenshotsLink: Locator;
-    public readonly caseStudiesAmurumLink: Locator;
     public readonly projectTextList: string[] = [
         "Free and open source",
         "QGIS overview",
@@ -96,9 +94,6 @@ export class ProjectPage {
         this.joinTheCommunityLink = this.page.getByRole("link", {
             name: "Join the community",
         });
-        this.amurumForestLink = this.page.getByRole("link", {
-            name: "Amurum forest reserve habitat",
-        });
         this.mapsLink = this.page.getByRole("link", {
             name: "Maps",
             exact: true,
@@ -106,8 +101,5 @@ export class ProjectPage {
         this.screenshotsLink = this.page.getByRole("link", {
             name: "Screenshots",
         }).first();
-        this.caseStudiesAmurumLink = this.page.getByRole("link", {
-            name: "Amurum forest reserve habitat",
-        });
     }
 }

@@ -39,7 +39,6 @@ test("Project page", async ({ homePage, sidebar, projectPage }) => {
     await expect(projectPage.localUserGroupsHeading).toBeVisible();
     await expect(projectPage.localGroupsListLink).toBeVisible();
     await expect(projectPage.joinTheCommunityLink).toBeVisible();
-    await expect(projectPage.amurumForestLink).toBeVisible();
 
     for (const text of projectPage.projectTextList) {
         await expect(projectPage.pageBody).toContainText(text);
@@ -62,7 +61,6 @@ test("Project page", async ({ homePage, sidebar, projectPage }) => {
         await expect(projectPage.pageBody).toContainText(text);
     }
 
-    await expect(projectPage.amurumForestLink).toBeVisible();
     await expect(sidebar.pluginsLink).toBeVisible();
     await sidebar.visualChangelogsLink.click();
 

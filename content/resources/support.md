@@ -12,15 +12,18 @@ Reviewer: Tim Sutton
 
 # Contact and Support
 
-## Project Steering Committee (PSC) 
 
-If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list and email address:
+{{< rich-box-start>}}
+{{< rich-content-start themeClass="coloring-6" >}}
+## ✉️ Mailing Lists
+QGIS has various mailing lists for discussing QGIS related topics.
 
-{{< rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc"  layoutClass="half"listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+If you are going to ask questions please read this: [How to ask a QGIS question?](faq/#how-to-ask-a-qgis-question).
 
-{{< rich-list listLink="mailto:qgis-psc@lists.osgeo.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="qgis-psc@lists.osgeo.org" >}}
+{{< button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="See Mailing lists" >}} 
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 ## Before you start
 
@@ -46,12 +49,6 @@ Be clear and objective. Try to include screenshots. Show effort by consulting th
 ## Discourse
 
 We have recently started a discourse forum for QGIS related support. Over time we expect to move more if our community support activities to this area. The discourse forums are available [on the OSGEO hosted discourse page](https://discourse.osgeo.org/tag/qgis).
-
-## Mailing Lists
-
-QGIS has various mailing lists for discussing QGIS related topics. See [Mailing lists]({{< ref "community/organisation/mailinglists" >}}).
-
-If you are going to ask questions please read this: [How to ask a QGIS question?](faq/#how-to-ask-a-qgis-question).
 
 ## StackExchange
 
@@ -89,6 +86,17 @@ See [User Groups]({{< ref "community/groups" >}}) to read more about local user 
 
 If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please refer to the [security page]({{< ref "resources/support/security" >}}) for detailed information on how to report it responsibly.
 
+
+## Project Steering Committee (PSC) 
+
+If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list and email address:
+
+{{< rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc"  layoutClass="half"listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+
+{{< rich-list listLink="mailto:qgis-psc@lists.osgeo.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="qgis-psc@lists.osgeo.org" >}}
+
+You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
+
+> **Note:** The PSC mailing list is intended for legal, trademark, funding, or administrative matters only. For general support, please use the mailing lists or communication channels mentioned above.
+
 {{< content-end >}}
-
-
