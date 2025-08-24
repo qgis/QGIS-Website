@@ -159,6 +159,10 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
   <div class="listcont external-link">
     Muddasir Shah - muddasirshah
   </div>
+</a><a class="rich-list third mr-2 mb-2" href="https://github.com/danabauer" target="_blank">
+  <div class="listcont external-link">
+    Dana Bauer - danabauer
+  </div>
 </a><!-- sponsors -->
 
 {{< content-end >}}
