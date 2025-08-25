@@ -1,0 +1,64 @@
+# List of organizations and their contributions to QGIS
+# This file combines:
+#   - Basic organization metadata
+#   - Manual mapping of GitHub usernames to org (with date ranges)
+#   - Aggregated contribution statistics per thematic
+#   - Last contribution date per thematic
+#   - Computed "level" field (1–5) per thematic
+
+- name: "Kartoza (Pty) Ltd."
+  image: "img/contributors/kartoza.png"   # Path to org logo (relative to Hugo static/)
+  width: "200px"                          # Suggested display width for logo (can be ignored in template)
+  url: "http://kartoza.com"               # Organization website
+  description: >
+    Kartoza is a leading provider of geospatial solutions and services,
+    specializing in open-source technologies. They play a crucial role
+    in the development and support of QGIS, ensuring its continued success
+    and sustainability.
+
+  # Manual mapping of GitHub usernames to this organization
+  # "from" and "to" allow historical tracking if someone leaves the org.
+  # If "to" is null, the contributor is considered active.
+  members:
+    - username: "timlinux"
+      from: "2014-01-01"
+      to: null
+    - username: "dimasciput"
+      from: "2014-01-01"
+      to: null
+
+  # Aggregated contributions grouped by thematic
+  # Values can be filled automatically (GitHub API) or manually for community/infra.
+  contributions:
+    documentation:                         # Mainly qgis/QGIS-Documentation
+      commits: 0                           # Count of commits by org members
+      pull_requests: 0                     # Count of PRs opened/merged
+      issues: 0                            # Count of issues opened/closed
+      last_contribution: null              # e.g. "2025-08-15" (ISO format)
+      level: 0                             # Computed using thresholds from config.yml
+
+    qgis_core:                             # Mainly qgis/QGIS
+      commits: 0
+      pull_requests: 0
+      issues: 0
+      last_contribution: null
+      level: 0
+
+    web_sites:                             # All QGIS website repos
+      commits: 0
+      pull_requests: 0
+      issues: 0
+      last_contribution: null
+      level: 0
+
+    community_activities:                  # Non-GitHub tracked activities
+      events: 0                            # Number of events organized
+      sponsorship: 0                       # Sponsorship / support initiatives
+      other: 0                             # Other activities (translations, forums, outreach)
+      last_contribution: null              # Date of last recorded activity
+      level: 0
+
+    qgis_infrastructure:                   # Infrastructure-related contributions
+      contributions: 0                     # Number of contributions (commits, fixes, packaging, CI scripts)
+      last_contribution: null              # Date of last infra contribution
+      level: 0
