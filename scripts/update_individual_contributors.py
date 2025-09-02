@@ -27,17 +27,16 @@ def github_headers():
         headers["Authorization"] = f"Bearer {token}"
     return headers
 
-def fetch_all_contributors(repo_url):
+def fetch_all_contributors(repo_name):
     # repo_url: https://github.com/org/repo
-    repo_path = "/".join(repo_url.split("/")[-2:])
     contributors = []
     page = 1
     while True:
-        url = f"{GITHUB_API}/repos/{repo_path}/contributors"
+        url = f"{GITHUB_API}/repos/qgis/{repo_name}/contributors"
         params = {"per_page": 100, "page": page}
         resp = requests.get(url, headers=github_headers(), params=params)
         if resp.status_code != 200:
-            print(f"Failed to fetch {repo_path} page {page}: {resp.status_code}")
+            print(f"Failed to fetch {repo_name} page {page}: {resp.status_code}")
             break
         data = resp.json()
         if not data:
@@ -51,14 +50,12 @@ def fetch_all_contributors(repo_url):
 def main():
     config = load_json(CONFIG_PATH)
     all_contributors = {}
-    levels = config.get("levels", {})
-    for thematic, info in levels.items():
-        repos = info.get("repositories", [])
+    for thematic, repos in config["repositories"].items():
         if not repos:
             continue  # Ignore thematics without repositories
-        for repo_url in repos:
-            print(f"Fetching contributors for {repo_url} (thematic: {thematic})...")
-            contributors = fetch_all_contributors(repo_url)
+        for repo_name in repos:
+            print(f"Fetching contributors for {repo_name} (thematic: {thematic})...")
+            contributors = fetch_all_contributors(repo_name)
             for c in contributors:
                 login = c.get("login")
                 avatar_url = c.get("avatar_url")

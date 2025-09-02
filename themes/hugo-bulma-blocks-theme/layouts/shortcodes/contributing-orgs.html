@@ -31,7 +31,7 @@
                             {{ range $k, $v := $thematics }}
                                 {{ $thematicList = $thematicList | append (dict "name" $k "data" $v) }}
                             {{ end }}
-                            {{ $sorted := sort $thematicList "data.level" "desc" }}
+                            {{ $sorted := sort $thematicList "data.commits" "desc" }}
                             {{ range $item := $sorted }}
                                 {{ $thematic := $item.name }}
                                 {{ $entry := $item.data }}
@@ -52,6 +52,11 @@
                                                 {{ end }}
                                             {{ end }}
                                         </span> -->
+                                    
+                                        <span class="contribution-count">
+                                            <i class="fab fa-git-alt"></i>
+                                            {{ $entry.commits }}
+                                        </span>
                                     </span>
                                     <span class="ml-2">
                                         {{ $now := now }}

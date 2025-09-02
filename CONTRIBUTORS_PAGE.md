@@ -1,6 +1,6 @@
 # QGIS Contributor & Organization Data Aggregation
 
-Link: https://qgis.org/community/volunteers/
+Link: https://qgis.org/community/contributors/
 
 This document explains how data for organizations and individual contributors is collected, aggregated, and maintained in this repository. It covers:
 - Data sources and config files
@@ -10,13 +10,13 @@ This document explains how data for organizations and individual contributors is
 
 ---
 
-## 1. Configuration: `config.json` / `config_template.yml`
+## 1. Configuration: `config.json`
 - Defines **thematic areas** (e.g., documentation, qgis_core, web_sites).
 - For each thematic:
   - `thresholds`: Used to compute contribution "level" (0–5) based on total activity.
   - `repositories`: List of GitHub repos to aggregate for that thematic (except for community/infrastructure, which are manual).
 
-## 2. Organization Data: `organizations.json` / `organizations_template.yml`
+## 2. Organization Data: `organizations.json`
 - Each organization entry includes:
   - Basic metadata: `name`, `image`, `url`, `description`, etc.
   - `members`: List of GitHub usernames mapped to the org, with `from`/`to` dates for historical tracking. **Manual**.
