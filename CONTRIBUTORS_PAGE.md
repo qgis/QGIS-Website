@@ -10,40 +10,40 @@ This document explains how data for organizations and individual contributors is
 
 ---
 
-## 1. Configuration: `config.json`
+## 1. Configuration: `data/contributors/config.json`
 - Defines **thematic areas** (e.g., documentation, qgis_core, web_sites).
 - For each thematic:
-  - `thresholds`: Used to compute contribution "level" (0–5) based on total activity.
   - `repositories`: List of GitHub repos to aggregate for that thematic (except for community/infrastructure, which are manual).
 
-## 2. Organization Data: `organizations.json`
+## 2. Organization Data: `data/contributors/organizations.json`
+**See `data/contributors/organizations_template.json` for a concrete example**
 - Each organization entry includes:
   - Basic metadata: `name`, `image`, `url`, `description`, etc.
   - `members`: List of GitHub usernames mapped to the org, with `from`/`to` dates for historical tracking. **Manual**.
-  - `contributions`: Per-thematic stats (commits, PRs, issues, last_contribution, level).
+  - `contributions`: Per-thematic stats (commits, last_contribution).
     - For GitHub-tracked thematics (documentation, qgis_core, web_sites):
       - **Automatically aggregated** by scripts (see below).
       - `commits`: Total commits by org members in thematic repos.
-      - `pull_requests`: Total PRs opened by org members.
-      - `issues`: Total issues opened by org members.
       - `last_contribution`: Latest date of any commit, PR, or issue.
-      - `level`: Computed from thresholds in config.
-    - For community_activities and qgis_infrastructure:
-      - **Manual**: `events`, `sponsorship`, `other`, `contributions`, `last_contribution`, `level`.
 
-## 3. Individual Contributor Data: `contributors.json`
+## 3. Individual Contributor Data: `data/contributors/contributors.json`
 - Each contributor entry includes:
   - `login`, `avatar_url`: From GitHub API.
-  - `total_contributions`: Sum of all commits, PRs, and issues across all thematics/repos. **Automatic**.
+  - `total_contributions`: Sum of all commits across all thematics/repos. **Automatic**.
   - `thematics`: Per-thematic breakdown:
     - For each thematic:
       - `commits`: Total commits in thematic repos.
-      - `pull_requests`: Total PRs in thematic repos.
-      - `issues`: Total issues in thematic repos.
       - `last_contribution`: Latest date of any commit, PR, or issue in thematic repos.
     - All fields **automatically aggregated** by scripts.
 
-## 4. Automation Scripts
+## 4. Supporting Contributor Stats: `data/contributors/supporting.json`
+
+
+**See `data/contributors/supporting_template.json` for a concrete example**
+
+- To be updated manually
+
+## 5. Automation Scripts
 
 ### `update_individual_contributors.py`
 - Reads config and iterates over all thematic repos.
@@ -64,7 +64,7 @@ This document explains how data for organizations and individual contributors is
   - Updates `organizations.json`.
 - For community/infrastructure thematics, stats are **manual**.
 
-## 5. Manual vs. Automatic Fields
+## 6. Manual vs. Automatic Fields
 
 | File                  | Attribute/Section         | Manual/Automatic | Notes |
 |---------------------- |--------------------------|------------------|-------|
@@ -76,7 +76,7 @@ This document explains how data for organizations and individual contributors is
 | contributors.json     | total_contributions      | Automatic        | By script |
 | contributors.json     | thematics                | Automatic        | By script |
 
-## 6. Data Update Workflow
+## 7. Data Update Workflow
 
 1. **Edit config.json** to update repos or thresholds.
 2. **Edit organizations.json** to add orgs, members, or manual stats.
@@ -84,7 +84,3 @@ This document explains how data for organizations and individual contributors is
    - `python scripts/update_individual_contributors.py`
    - `python scripts/update_contributing_orgs.py`
 4. **Review output** in JSON files. Manual fields can be edited directly if needed.
-
----
-
-For more details, see comments in each template file and script.
