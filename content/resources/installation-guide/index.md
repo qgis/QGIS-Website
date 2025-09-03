@@ -359,6 +359,7 @@ If you want to use HTML, for example in map layouts, `QtWebkit` is needed. You c
 
 ```
 flatpak install app/io.qt.qtwebkit.BaseApp/x86_64/VERSION
+# ⚠️ WARNING: This is considered insecure and is therefore not provided by default.
 ```
 
 ## Fedora
