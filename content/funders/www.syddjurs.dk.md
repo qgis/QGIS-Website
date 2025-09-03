@@ -1,9 +1,9 @@
 ---
-level: "Small"
+level: "Medium"
 title: "Syddjurs Kommune"
 logo: "www.syddjurs.dk.png"
-startDate: "2024-03-01"
-endDate: "2025-02-28"
+startDate: "2025-03-01"
+endDate: "2026-02-28"
 link: "http://www.syddjurs.dk/"
 country: "Denmark"
 ---

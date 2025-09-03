@@ -24,12 +24,6 @@ link = "showcase/user-group-events"
 text = "User Group News" >}} | User events around the world.
 {{< button
 fullwidth = "true"
-icon = "fa-solid fa-blog"
-class = "is-success"
-link = "showcase/community-blogs/"
-text = "Blogs" >}} | Blog articles related from members of our community.
-{{< button
-fullwidth = "true"
 icon = "fa-solid fa-person"
 class = "is-success"
 link = "showcase/case-studies/"

@@ -181,10 +181,10 @@ The decision on how funds are spent will be made by the QGIS Project Steering Co
 
 {{< column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters ">}}
 
-You can self-enroll, or reach out to the treasurer at finance@qgis.org or any other Project Steering Committee (PSC) member to express your interest in becoming a sustaining member.
+You can reach out to the treasurer at finance@qgis.org or any other Project Steering Committee (PSC) member to express your interest in becoming a sustaining member.
 
 {{< button class = "is-primary6" link = "mailto:finance@qgis.org" text = "Write to treasurer" >}} 
-{{< button class = "is-primary6" link = "https://changelog.qgis.org/en/accounts/login/?next=/en/qgis/sustaining-member/add/" text = "Self Enroll" >}} 
+
 {{< column-end >}}
 {{< columns-end >}}
 
@@ -221,7 +221,7 @@ The treasurer verifies the receipt of the payment to officially recognize the or
 
 We provide a website where sustaining members are listed, categorized by level and sorted by the date of introduction or renewal etc.
 
-[Open Sustaining Members changelog](https://changelog.qgis.org/en/qgis/members/list/)
+[Open Sustaining Members](https://members.qgis.org/)
 
 {{< column-end >}}
 {{< columns-end >}}

@@ -27,7 +27,7 @@ $RECYCLE.BIN/
 # Ignore all the scraped data
 scraped-data
 
-#pytest
+# pytest
 /test/.jbsite
 /test/screenshots/
 /test/.pytest_cache
@@ -42,4 +42,13 @@ node_modules/
 
 env
 core
-core
+
+# Nix
+result
+
+#VsCode
+.vscode
+.vscode-extensions
+.vscode/settings.json
+.vscode/tasks.json
+.env

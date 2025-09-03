@@ -80,8 +80,12 @@ text-font = "'Twemoji Country Flags', 'Trueno', sans-serif"
 fancy-font = "'Sevillana', cursive"
 
 menuFontClass = "is-size-6"
-## Gh repo for site footer (include trailing slash)
-githubUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/"
+## Gh repo edit link
+## This repo is used for the "Edit this page" link
+githubRepo = "https://github.com/qgis/QGIS-Website/"
+githubSubdir = "content"
+githubBranch = "main"
+
 ## GH Repo for filing a new issue
 githubIssueUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/issues/new/choose"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
@@ -383,6 +387,12 @@ sectionPagesMenu = 'main'
   url = "/funding/donate/donors"
   weight = 270
 
+[[menu.main]]
+  parent = "Donate"
+  name = "GitHub Sponsors"
+  url = "/funding/donate/github-sponsors"
+  weight = 280
+
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
   parent = "Resources"
@@ -505,15 +515,21 @@ sectionPagesMenu = 'main'
 
   [[menu.main]]
     parent = "Installation guide"
+    name = "Container images"
+    url = "/resources/installation-guide/#container-images"
+    weight = 230
+
+  [[menu.main]]
+    parent = "Installation guide"
     name = "QGIS Testing warning"
     url = "/resources/installation-guide/#qgis-testing-warning"
-    weight = 230
+    weight = 240
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Installing from Source"
     url = "/resources/installation-guide/#installing-from-source"
-    weight = 240
+    weight = 250
 
 [[menu.main]]
   parent = "Resources"

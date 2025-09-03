@@ -204,19 +204,18 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename|Also available based on ubuntugis-unstable dependencies?|
-|------------|----------------|--------|--------------------------------------------------------|
-|Debian      |12.x (stable)   |bookworm|                                                        |
-|            |11.x (oldstable)|bullseye [[3]](#id3) |                                           |
-|            |unstable        |sid     |                                                        |
-|Ubuntu      |24.10           |oracular [[4]](#id4) |                                           |
-|            |24.04 (LTS)     |noble   |yes                                                     |
-|            |23.10           |mantic  |                                                        |
-|            |22.04 (LTS)     |jammy   |yes                                                     |
+|Distribution|Version         |Codename           |Also available based on ubuntugis-unstable dependencies?|
+|------------|----------------|-------------------|--------------------------------------------------------|
+|Debian      |12.x (stable)   |bookworm           |                                                        |
+|            |13.x (testing)  |trixie [[3]](#id3) |                                                        |
+|            |unstable        |sid                |                                                        |
+|Ubuntu      |25.04           |plucky [[3]](#id3) |                                                        |
+|            |24.10           |oracular           |                                                        |
+|            |24.04 (LTS)     |noble              |yes                                                     |
+|            |22.04 (LTS)     |jammy [[4]](#id4)  |yes                                                     |
 
-{{< footnote "3" >}} only up to 3.38 (bullseye's GRASS too old)
-
-{{< footnote "4" >}} starting with nightlies after 3.34.12/3.40.0
+{{< footnote "3" >}} starting with 3.40.8/3.44.0
+{{< footnote "4" >}} only up to 3.40 (cmake too old for 3.42)
 
 
 To use the QGIS archive you have to first add the archive’s repository public key:
@@ -397,10 +396,11 @@ Follow the `toolbx` and `distrobox` [instructions](#distrobox--toolbx).
 
 Fedora switches between the current QGIS release and the LTR releases. The unstable "Rawhide" branch will ship newer but possibly buggy QGIS versions.
 
-|Distribution|Version|QGIS version|
-|---|---|---|---|
-|Fedora|40|{{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|
-||41|{{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}}|
+| Distribution | Version | QGIS version                                                                     |
+|--------------|---------|----------------------------------------------------------------------------------|
+| Fedora       | 40      | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}} |
+|              | 41      | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote">}}  |
+|              | 42      | {{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}}    |
 
 Always up-to-date version infos:
 - [QGIS](https://packages.fedoraproject.org/pkgs/qgis/qgis)
@@ -408,7 +408,7 @@ Always up-to-date version infos:
 
 ## NixOS
 
-Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=24.05&show=qgis&from=0&size=50&sort=relevance&type=packages&query=qgis). 
+Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=qgis). You can also run bleeding edge developer versions with a single command.
 
 ### Basic Install
 
@@ -440,9 +440,53 @@ environment.systemPackages = [
   ];
 ```
 
+### Running developer snapshots - Remote
+
+You can run in-development versions of QGIS with a single command directly 
+from GitHub for any git revision (subsequent to 9 July 2025) from a branch or PR. Nix 
+will automatically build and run the version you reference.
+
+To run QGIS from the current commit of the master branch:
+
+```
+nix run github:qgis/QGIS#qgis
+```
+
+To run a specific revision:
+
+```
+nix run github:qgis/QGIS/<git revision>#qgis
+```
+
+To run a Pull Request or branch:
+
+```
+nix run github:qgis/QGIS/<git branch>#qgis
+```
+
+### Running developer snapshots - Local
+
+If you have a local git checkout of QGIS, you can run your local source code tree:
+
+```
+nix run .#qgis
+```
+
+You can also create a developer environment by running the following command in the
+root of your QGIS git checkout directory:
+
+```
+nix develop
+```
+
+After running this command, you will see additional instructions for building displayed 
+in the terminal.
+
 ### Running with extra python packages:
 
-Because of the atomic nature of NixOS packages, you need to override the package if you want extra python packages to be available to QGIS. For example to run QGIS with numpy, geopandas and rasterio python libraries you can do:
+Due to isolation of Nix packages, you need to override the package 
+if you want extra python packages to be available to QGIS. For example to run QGIS 
+with numpy, geopandas and rasterio Python libraries you can do:
 
 **Ephemeral use:**
 
@@ -474,6 +518,7 @@ nix-shell -p \
 }
 
 ```
+
 
 ## SUSE / OpenSUSE
 
@@ -641,9 +686,9 @@ Official All-in-one, signed installers for macOS High Sierra (10.13) and newer c
 
 After downloading QGIS, open the DMG file. Drag and drop the QGIS application into the Applications folder. The first launch attempt may fail due to Apple's security framework. 
 
-**For macOS Sonoma and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
+**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
 
-**For macOS Sequoia and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
+**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
 
 ## MacPorts
 
@@ -730,6 +775,125 @@ See:
 
 - https://openbsd.app/?search=qgis for -stable OpenBSD
 - https://openbsd.app/?search=qgis&current=on for -current OpenBSD
+
+# Container images
+
+Experimental (GPU accelerated) multi-arch JupyterLab QGIS container images.
+
+- Current `os/arch`s: `linux/amd64`, `linux/arm64/v8`
+  - Run on Apple M series using
+    [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+  - or using [Podman Desktop](https://podman-desktop.io) (rootless mode).
+- Base images: [Debian](https://hub.docker.com/_/debian) and
+   [Ubuntu](https://hub.docker.com/_/ubuntu)
+  - GPU accelerated images are
+    [CUDA](https://hub.docker.com/r/nvidia/cuda)-based (Ubuntu).
+- [TurboVNC](https://turbovnc.org): High-speed VNC version
+  - CUDA-based images run [VirtualGL](https://virtualgl.org) to accelerate
+    OpenGL applications.
+- Just Python – no [Conda](https://github.com/conda/conda) /
+   [Mamba](https://github.com/mamba-org/mamba)
+
+{{< rich-box-start icon="🧑‍💻" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+
+The `linux/arm64/v8` JupyterLab QGIS container images are known to crash
+randomly on Apple M series.
+
+GPU acceleration requires an NVIDIA GPU, the NVIDIA Linux driver and the NVIDIA
+Container Toolkit.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+For further information, see
+<https://github.com/b-data/jupyterlab-qgis-docker-stack>.
+
+## QGIS stable
+
+To run the container with the latest QGIS stable version, command
+
+```shell
+docker run -it --rm \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  quay.io/bedata/jupyterlab/qgis/base
+```
+
+To run the GPU accelerated container with the latest QGIS stable version,
+command
+
+```shell
+docker run -it --rm \
+  --gpus 'device=all' \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  quay.io/bedata/jupyterlab/cuda/qgis/base
+```
+
+## QGIS LTR
+
+To run the container with the latest QGIS LTR version, command
+
+```shell
+docker run -it --rm \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  quay.io/bedata/jupyterlab/qgis/base:ltr
+```
+
+To run the GPU accelerated container with the latest QGIS LTR version, command
+
+```shell
+docker run -it --rm \
+  --gpus 'device=all' \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  quay.io/bedata/jupyterlab/cuda/qgis/base:ltr
+```
+
+## QGIS version
+
+To run a container with a specific QGIS version, command
+
+```shell
+docker run -it --rm \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  quay.io/bedata/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]
+```
+
+{{< rich-box-start icon="🐳" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+
+Container images on Quay are available for QGIS versions ≥ 3.40.4.
+
+For QGIS versions 3.28.4 to 3.40.3 use
+`glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]`.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
+
+To run a GPU accelerated container with a specific QGIS version, command
+
+```shell
+docker run -it --rm \
+  --gpus 'device=all' \
+  -p 8888:8888 \
+  -v jupyterlab-jovyan:/home/jovyan \
+  quay.io/bedata/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]
+```
+
+{{< rich-box-start icon="🔥" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+
+GPU accelerated container images on Quay are available for QGIS versions ≥ 3.40.4.
+
+For QGIS versions 3.34.0 to 3.40.3 use
+`glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]`.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 # QGIS Testing warning
 

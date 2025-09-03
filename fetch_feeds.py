@@ -131,62 +131,6 @@ showcase: "{showcase_type}"
             print(f"Writing: {image_filename}")
         del response    
 
-# Blogs with atom feeds
-def fetch_blog_feed(showcase_type, rss_url):
-    response = requests.get(rss_url)
-    feed = atoma.parse_atom_bytes(response.content)
-    #print(feed.description)
-    print(feed.title.value)
-    for entry in feed.entries:
-        print('----')
-        #print(dir(entry))
-        print(entry.title.value)
-        for author in entry.authors:
-            print(author.name)
-            print(author.uri)
-        image_url = entry.links[len(entry.links)-1].href
-        print(image_url)
-
-        path = urlparse(image_url).path
-        image_ext = os.path.splitext(path)[1]
-        name = os.path.basename(os.path.normpath(image_url))
-        image_name = "%s.%s" % (name, image_ext)
-        image_name = image_name.replace("..",".")
-
-        try:
-            entry_date = entry.published.strftime("%Y-%m-%d")
-        except:
-            entry_date = ""
-
-        try:
-            summary = entry.summary.value
-        except:
-            summary = ""
-
-        content = f"""---
-source: "blog"
-title: "{entry.title.value}"
-image: "{image_name}"
-date: "{entry_date}"
-link: "{image_url}"
-draft: "true"
-showcase: "{showcase_type}"
----
-
-{summary}
-"""
-        markdown_filename = f"content/community-blogs/{name}.md"
-        with open(markdown_filename , "w", encoding="utf=8") as f:
-            f.write(content)
-            print(f"Writing: {markdown_filename}")
-
-        response = requests.get(image_url, stream=True)
-        image_filename = f"content/community-blogs/{image_name}"
-        with open(image_filename, 'wb') as out_file:
-            shutil.copyfileobj(response.raw, out_file)
-            print(f"Writing: {image_filename}")
-        del response   
-
 def fetch_first_feed_entry():
     """
     Fetch the first entry from the QGIS feed and save it to data/feed.json
@@ -196,16 +140,14 @@ def fetch_first_feed_entry():
     response = requests.get(feed_url)
     response.raise_for_status()
     feed_data = response.json()
-
+    entry = {}
     if feed_data and len(feed_data) > 0:
-        first_entry = feed_data[0]
-        first_entry['url'] = f"https://feed.qgis.org/{first_entry['pk']}"
-        os.makedirs(os.path.dirname(feed_file_path), exist_ok=True)
-        with open(feed_file_path, "w", encoding="utf-8") as f:
-            json.dump(first_entry, f, ensure_ascii=False, indent=4)
+        entry = feed_data[0]
+        entry['url'] = f"https://feed.qgis.org/{entry['pk']}"
         print(f"First feed entry saved to {feed_file_path}")
-    else:
-        print("No items found in the feed.")
+    os.makedirs(os.path.dirname(feed_file_path), exist_ok=True)
+    with open(feed_file_path, "w", encoding="utf-8") as f:
+        json.dump(entry, f, ensure_ascii=False, indent=4)
 
 
 parser = argparse.ArgumentParser(description='Import items from various feeds.')
@@ -226,33 +168,11 @@ except Exception as e:
 try:
     if args.flickr:
         fetch_flickr_screenshots(
-            showcase_type="map",
-            rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2244553@N22&lang=en-us&format=atom"
-        )
-        fetch_flickr_screenshots(
             showcase_type="screenshot",
             rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
         )
 except Exception as e:
     print(f"Error fetching flickr screenshots: {e}")
-
-# try:
-#     # Planet blog aggregator
-#     fetch_blog_feed(
-#         showcase_type="planet",
-#         rss_url="https://plugins.qgis.org/planet/feed/atom/"
-#     )
-# except Exception as e:
-#     print(f"Error fetching planet blog feed: {e}")
-
-try:
-    # QGIS User group feed
-    fetch_blog_feed(
-        showcase_type="qug",
-        rss_url="https://raw.githubusercontent.com/qgis/QGIS-Website/main/source/feeds/qugsnews.atom"
-    )
-except Exception as e:
-    print(f"Error fetching QUG blog feed: {e}")
 
 try:
     # QGIS feed

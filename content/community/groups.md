@@ -30,7 +30,7 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis.pe/" icon="🇵🇪  " layoutClass="half" listTitle="QGIS Perú Official Users Group " listSubtitle="Contact: Anibal Alarcon" >}}
 
-{{< rich-list listLink="https://qgis.pl/" icon="🇵🇱  " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contact: Milena Nowotarska" >}}
+{{< rich-list listLink="https://qgis.pl/" icon="🇵🇱  " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contact: Michał Żugajewicz" >}}
 
 {{< rich-list listLink="https://qgis.pt/" icon="🇵🇹  " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: João Gaspar" >}}
 
@@ -45,7 +45,7 @@ Reviewer: Tim Sutton
 
 ### Registered 2017
 
-{{< rich-list listLink="https://qgis.no/" icon="🇳🇴" layoutClass="half" listTitle="QGIS Norge (Norway)" listSubtitle="Contact: Antonio Armas Diaz" >}}
+{{< rich-list listLink="https://qgis.no/" icon="🇳🇴" layoutClass="half" listTitle="QGIS Norge (Norway)" listSubtitle="Contact: James Stott" >}}
 
 {{< rich-list listLink="https://qgis.org.za/" icon="🇿🇦" layoutClass="half" listTitle="QGIS ZA (South Africa)" listSubtitle="Contact: Admire Nyakudya" >}}
 
@@ -143,20 +143,16 @@ Depending on your country, a smaller legal entity, e.g. an association or non-pr
 
 Statutes of the Swiss QGIS user group as an example:
 
-*   German (master): [https://www.qgis.ch/de/verein/statuten-der-qgis-anwendergruppe-schweiz](https://www.qgis.ch/de/verein/statuten-der-qgis-anwendergruppe-schweiz)
+*   German (master): [https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf](https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf)
     
-*   English (translation): [https://www.qgis.ch/en/association/statutes-of-the-swiss-qgis-user-group](https://www.qgis.ch/en/association/statutes-of-the-swiss-qgis-user-group)
-    
-*   French (translation): [https://www.qgis.ch/fr/association/statuts-du-groupe-d2019utilisateurs-qgis-suisse](https://www.qgis.ch/fr/association/statuts-du-groupe-d2019utilisateurs-qgis-suisse)
+*   French (translation): [https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf](https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf)
     
 
 Membership application forms:
 
-*   German: [https://www.qgis.ch/de/verein/beitrittserklaerung](https://www.qgis.ch/de/verein/beitrittserklaerung)
+*   German: [https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf](https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf)
     
-*   English: [https://www.qgis.ch/en/association/qgis-usergroup-switzerland-membership-application-form](https://www.qgis.ch/en/association/qgis-usergroup-switzerland-membership-application-form)
-    
-*   French: [https://www.qgis.ch/fr/association/declaration-d2019adhesion](https://www.qgis.ch/fr/association/declaration-d2019adhesion)
+*   French: [https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf](https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf)
     
 
 You can use these statutes and membership application forms as a reference and change them as needed for your local situation.

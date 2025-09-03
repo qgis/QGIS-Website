@@ -10,6 +10,8 @@ sidebar: true
 # Infrastructure
 This page should show you all the infrastructure and services that QGIS uses, and current contacts or owners.
 
+<!--
+
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### I think 
@@ -18,6 +20,8 @@ It is not wise to put accountnames here, but let me know if that is better. We c
 {{< rich-box-end >}}
 
 Please add (yourself) and or change
+
+-->
 
 Some sources: [http://app.wisemapping.com/c/maps/81444/edit](http://app.wisemapping.com/c/maps/81444/edit) and [http://docs.qgis.org/2.0/html/en/docs/qgis\_governance/](http://docs.qgis.org/2.0/html/en/docs/qgis_governance/)
 

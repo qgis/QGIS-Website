@@ -267,6 +267,8 @@ with open("data/conf.json", "w") as f:
         "ltr_sha": f"/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
         "lr_qt6_msi": f"/downloads/QGISQT6-OSGeo4W-{lr_version}-{lr_binary}.msi",
         "lr_qt6_sha": f"/downloads/QGISQT6-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
+        "ltr_qt6_msi": f"/downloads/QGISQT6-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
+        "ltr_qt6_sha": f"/downloads/QGISQT6-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
         "weekly_msi": "https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D",
     }, f, indent=4)
 
