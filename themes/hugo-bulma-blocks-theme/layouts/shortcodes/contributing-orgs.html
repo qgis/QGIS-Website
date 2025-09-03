@@ -1,4 +1,4 @@
-{{ $orgs := $.Site.Data.contributors.organizations }}
+{{ $orgs := sort $.Site.Data.contributors.organizations "name" "asc" }}
 <div class="organization-list">
   {{ range $org := $orgs }}
     <div class="card contributor-card organization organization-horizontal">
