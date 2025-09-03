@@ -10,7 +10,7 @@
                         <!-- <span class="level-indicator level-{{ $org.contributions.web_sites.level }}">★</span> -->
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-two-third">
                     <div class="org-info">
                         <h3 class="title is-3">
                             <a href="{{ $org.url }}" class= "external-link" target="_blank" rel="noopener">{{ $org.name }}</a>
@@ -20,8 +20,6 @@
                             <p>{{ $org.description }}</p>
                         </div>
                     </div>
-                </div>
-                <div class="column is-narrow">
                     <div class="contribution-badges">
                         {{ $thematics := dict }}
                         {{ range $k, $v := $org.contributions }}
@@ -87,6 +85,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
   {{ end }}
