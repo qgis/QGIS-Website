@@ -121,9 +121,6 @@ build_step() {
   else
     hugo --config "${CONFIG_MAIN},${CONFIG_PROD},${cfg_tmp}" --cleanDestinationDir=false --destination "${PUBLIC_DIR}"
   fi
-  if command -v du >/dev/null 2>&1; then
-    echo "Current size of ${PUBLIC_DIR}:"; du -sh "${PUBLIC_DIR}" 2>/dev/null || true
-  fi
 }
 
 dedup_step() {
@@ -144,6 +141,9 @@ echo "Base language '${BASE_LANG}' built. Progress: ${DONE_LANGS}/${TOTAL_LANGS}
 
 # 2) Dedup (no-op, but keeps flow consistent)
 dedup_step
+if command -v du >/dev/null 2>&1; then
+  echo "Current size of ${PUBLIC_DIR} (post-dedup):"; du -sh "${PUBLIC_DIR}" 2>/dev/null || true
+fi
 
 # 3) Build each other language incrementally and dedup after each
 for lang in "${ITER_LANGS[@]}"; do
@@ -151,6 +151,9 @@ for lang in "${ITER_LANGS[@]}"; do
   cfg=$(write_tmp_cfg "${BASE_LANG}" "$lang")
   build_step false "$cfg"
   dedup_step
+  if command -v du >/dev/null 2>&1; then
+    echo "Current size of ${PUBLIC_DIR} (post-dedup):"; du -sh "${PUBLIC_DIR}" 2>/dev/null || true
+  fi
   DONE_LANGS=$((DONE_LANGS + 1))
   echo "==== Completed language: $lang. Progress: ${DONE_LANGS}/${TOTAL_LANGS} ===="
 done
