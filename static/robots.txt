@@ -21,6 +21,9 @@ Disallow: /*.asp$
 Disallow: /*.aspx$
 Disallow: /*.jsp$
 
+# Disallow the downloads folder
+Disallow: /downloads/
+
 # Allow crawling of the main sections
 Allow: /$
 Allow: /docs/
