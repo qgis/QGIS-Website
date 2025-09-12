@@ -73,7 +73,7 @@ schedule: clearschedule assets/csv/schedule.csv scripts/schedule.ics data/conf.j
 	git pull --autostash --rebase
 	git commit -a -m "Update for $(shell jq -r '.release' data/conf.json)/$(shell jq -r '.ltrrelease' data/conf.json) point releases"
 
-.PHONY: schedule txpush txpull mktxtemp venv messages-extract messages-compile messages-generate
+.PHONY: schedule txpush txpull mktxtemp venv messages-extract messages-compile messages-generate tx-coverage tx-coverage-commit
 
 TEMP:=tx-temp
 
@@ -110,4 +110,27 @@ generate-translations:
 clean-translations:
 	@echo "Cleaning translated content..."
 	@rm -rf content-translated/
+
+# ----------------------------------------------------------------------------
+#    T R A N S I F E X    C O V E R A G E
+# ----------------------------------------------------------------------------
+
+txcoverage: ## Fetch translation coverage from Transifex into data/tx_coverage.json (uses TX_TOKEN)
+	@echo "Fetching translation coverage from Transifex..."
+	python3 scripts/tx_fetch_coverage.py \
+		--project qgis-website \
+		--resources qgis-hugo-docs-md \
+		--output data/tx_coverage.json
+
+tx-coverage-commit: tx-coverage ## Fetch coverage and commit changes if file updated
+	@echo "Committing updated coverage if changed..."
+	@if [ -n "$(shell git status --porcelain data/tx_coverage.json)" ]; then \
+		git config --global user.name 'GitHub Actions'; \
+		git config --global user.email 'github-actions@github.com'; \
+		git add data/tx_coverage.json; \
+		git commit -m "Update translation coverage [skip ci]"; \
+		echo "Committed coverage update."; \
+	else \
+		echo "No coverage changes."; \
+	fi
 
