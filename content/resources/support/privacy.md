@@ -24,8 +24,8 @@ No persistent or personally identifiable information is stored or shared. The IP
 
 For questions or concerns, please contact the QGIS Project Steering Committee at [info@qgis.org](mailto:info@qgis.org).
 
-## QGIS Plugins Analytics
-The QGIS Plugins Analytics service ([https://plugins-analytics.qgis.org](https://plugins-analytics.qgis.org)) collects minimal, non-identifiable data whenever a plugin is downloaded from the QGIS Plugins Manager or the [QGIS Plugins Website](https://plugins.qgis.org). The following information is recorded:
+## QGIS Plugins Analytics Dashboard
+The **QGIS Plugins Analytics Dashboard** ([https://plugins-analytics.qgis.org](https://plugins-analytics.qgis.org)) collects minimal, non-identifiable data whenever a plugin is downloaded from the QGIS Plugins Manager or the [QGIS Plugins Website](https://plugins.qgis.org). The following information is recorded:
 
 - **Date of download** (rounded to the nearest day)
 - **Plugin version** downloaded
