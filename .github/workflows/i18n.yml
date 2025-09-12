@@ -1,9 +1,9 @@
-name: i18n Automation
+name: 🌐 i18n Automation
 
 on:
   schedule:
     - cron: '0 0 * * *'  # Run daily at midnight UTC
-  workflow_dispatch:
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   i18n:
@@ -31,10 +31,14 @@ jobs:
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
 
-      - name: Configure Git
+      - name: Install Transifex CLI
         run: |
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
+          mkdir -p $HOME/bin
+          curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
+          # Move tx binary to a persistent location and add to PATH
+          mv tx $HOME/bin/
+          chmod +x $HOME/bin/tx
+          echo "$HOME/bin" >> $GITHUB_PATH
 
       - name: Extract messages
         run: make messages-extract
@@ -57,9 +61,14 @@ jobs:
         run: make messages-compile
 
       - name: Generate translated content
-        run: make messages-generate
+        run: make generate-translations
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'github-actions@github.com'
 
       - name: Commit and push changes
         run: |
-          git add .
+          git add content-translated/* i18n/*
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update translations [skip ci]" && git push) 

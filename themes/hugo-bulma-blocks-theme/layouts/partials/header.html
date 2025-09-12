@@ -158,11 +158,12 @@
         {{ $fusejs := resources.Get "js/fuse.js" }}
         {{ $markjs := resources.Get "js/mark.min.js" }}
         {{ $matomojs := resources.Get "js/matomo.js" }}
+        {{ $langredir := resources.Get "js/lang-redirect.js" | resources.ExecuteAsTemplate "lang-redirect.js" . | resources.Minify | resources.Fingerprint }}
         {{/* See https://www.youtube.com/watch?v=T33NN_pPeNI */}}
-        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
+        {{ $js := slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs $langredir | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ if (eq .Site.Params.cookiesstate true) }}
             {{ $cookiejs := resources.Get "js/cookie.js" }}
-            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
+            {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs $langredir $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
         {{ end }}   
         <script defer src="{{ $js.RelPermalink }}"></script> 
         {{/* Search needs to be rendered as a template to ensure urls are correct */}}
@@ -173,7 +174,9 @@
             type="application/javascript"
             src="{{ .Site.Params.uniNavHeaderUrl }}"
         ></script>
-    </head>
+
+        {{/* Language redirect is handled by assets/js/lang-redirect.js */}}
+        </head>
 
     <body></body>
 </html>
