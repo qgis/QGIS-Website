@@ -15,7 +15,7 @@ export class FaqPage {
         "Can I open ECW files with QGIS?",
         "Development",
         "Can I compile QGIS myself?",
-        "QGIS.org, %%Y. QGIS Geographic Information System. QGIS Association.",
+        `QGIS.org, ${new Date().getFullYear()}. QGIS Geographic Information System. QGIS Association.`,
         "Cite the QGIS Developers",
         "Geographic Information System Developers Manual. QGIS Association.",
         "Cite the QGIS Installation",
