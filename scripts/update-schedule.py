@@ -256,7 +256,6 @@ with open("data/conf.json", "w") as f:
         "next_lr_version": next_lr_version,
 
         # additional params:
-        "yeartag": "%%Y",
         "devcite": f"https://docs.qgis.org/{ltrversion}/en/docs/developers_guide/index.html",
         "userguidecite": f"https://docs.qgis.org/{ltrversion}/en/docs/user_manual/index.html",
         "servercite": f"https://docs.qgis.org/{ltrversion}/en/docs/server_manual/index.html",
