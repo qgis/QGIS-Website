@@ -156,13 +156,30 @@ Electronic document: {{< param-link "apicite" >}}
 Example BibTeX entry:
 
 ```
-      @Manual{QGIS_software,
-        title = {QGIS Geographic Information System},
-        author = {{QGIS Development Team}},
-        organization = {QGIS Association},
-        year = {{{< param "yeartag" >}}},
-        url = {https://www.qgis.org},
-      }
+@Manual{QGIS_software,
+  title = {QGIS Geographic Information System},
+  author = {{QGIS Development Team}},
+  organization = {QGIS Association},
+  year = {{{< param "yeartag" >}}},
+  url = {https://www.qgis.org},
+}
+```
+
+**Cite the QGIS paper in Patterns**
+
+```
+@article{graser2025,
+  title = {The QGIS project: Spatial without compromise},
+  journal = {Patterns},
+  volume = {6},
+  number = {7},
+  pages = {101265},
+  year = {2025},
+  issn = {2666-3899},
+  doi = {https://doi.org/10.1016/j.patter.2025.101265},
+  url = {https://www.sciencedirect.com/science/article/pii/S2666389925001138},
+  author = {Anita Graser and Tim Sutton and Marco Bernasocchi}
+}
 ```
 
 ### I created a map with QGIS, do I have to mention QGIS?
