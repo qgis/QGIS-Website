@@ -10,8 +10,6 @@
     {{ else }}
         {{ printf "Error: Resource not found at %s" $path }}
     {{ end }}
-{{ else }}
-    {{ $data = .Inner | unmarshal }}
 {{ end }}
 
 {{ if $data }}
@@ -39,5 +37,5 @@
     </table>
 </div>
 {{ else }}
-    <p>Error: No data available</p>
+    <p>{{ i18n "noDataAvailable" }}</p>
 {{ end }}

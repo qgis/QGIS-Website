@@ -6,7 +6,7 @@ draft: false
 HasBanner: true
 sidebar: true
 HeroImage: "img/involve.jpg"
-ButtonText: "Become a sustaining member" 
+ButtonText: "Become a sustaining member"
 ButtonLink: "funding/membership#how-become-a-sustaining-member"
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
@@ -154,7 +154,6 @@ You may use a special version of the QGIS logo on your website and materials, si
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 {{< column-end >}}
-
 {{< column-start>}}
 
 {{< rich-box-start >}}

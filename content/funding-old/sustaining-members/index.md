@@ -25,12 +25,11 @@ expensive for volunteer developers.
     subtitle="Organizations or individuals interested in supporting the QGIS project should contact the QGIS treasurer, Andreas Neumann (finance@qgis.org), with questions, requests for becoming a sustaining member, invoices or to make arrangements."
     image=""
     sub-block-side="left"
-    class="is-primary"    
+    class="is-primary"
     title-size="is-4"
     subtitle-size="is-6"
     link="mailto:finance@qgis.org"
-    link-text="Contact QGIS Treasurer"
->}}{{< /block >}}
+    link-text="Contact QGIS Treasurer">}}{{< /block >}}
 
 
 {{< content-start >}}
@@ -82,8 +81,7 @@ QGIS.ORG is to be transparent with the funds we receive and how we spend them. F
 consult the financial reports and budgets.
 
 {{< button-bar 
-    "fa-solid fa-money-bill:Annual Financial Reports:reports/"
->}}
+    "fa-solid fa-money-bill:Annual Financial Reports:reports/">}}
 
 
 
