@@ -1,5 +1,5 @@
 ---
-level: "Large"
+level: "Flagship"
 title: "QGIS user group Sweden"
 logo: "www.qgis.se.png"
 startDate: "2025-03-01"
