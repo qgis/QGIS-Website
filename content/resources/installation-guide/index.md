@@ -204,18 +204,21 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename           |Also available based on ubuntugis-unstable dependencies?|
-|------------|----------------|-------------------|--------------------------------------------------------|
-|Debian      |12.x (stable)   |bookworm           |                                                        |
-|            |13.x (testing)  |trixie [[3]](#id3) |                                                        |
-|            |unstable        |sid                |                                                        |
-|Ubuntu      |25.04           |plucky [[3]](#id3) |                                                        |
-|            |24.10           |oracular           |                                                        |
-|            |24.04 (LTS)     |noble              |yes                                                     |
-|            |22.04 (LTS)     |jammy [[4]](#id4)  |yes                                                     |
+|Distribution|Version         |Codename             |Also available based on ubuntugis-unstable dependencies?|
+|------------+----------------+---------------------+--------------------------------------------------------|
+|Debian      |12.x (stable)   |bookworm             |                                                        |
+|            |13.x (testing)  |trixie [[3]](#id3)   |                                                        |
+|            |unstable        |sid                  |                                                        |
+|Ubuntu      |25.10           |questing [[4]](#id4) |                                                        |
+|            |25.04           |plucky [[3]](#id3)   |                                                        |
+|            |24.10           |oracular [[5]](#id5) |                                                        |
+|            |24.04 (LTS)     |noble                |yes                                                     |
+|            |22.04 (LTS)     |jammy [[6]](#id6)    |yes                                                     |
 
 {{< footnote "3" >}} starting with 3.40.8/3.44.0
-{{< footnote "4" >}} only up to 3.40 (cmake too old for 3.42)
+{{< footnote "4" >}} starting with 3.40.11/3.44.3
+{{< footnote "5" >}} only up to 3.40.7/3.44.2 (oracular EOL)
+{{< footnote "5" >}} only up to 3.40 (cmake too old for 3.42)
 
 
 To use the QGIS archive you have to first add the archive’s repository public key:
