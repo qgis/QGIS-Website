@@ -676,9 +676,9 @@ Official All-in-one, signed installers for macOS High Sierra (10.13) and newer c
 
 After downloading QGIS, open the DMG file. Drag and drop the QGIS application into the Applications folder. The first launch attempt may fail due to Apple's security framework. 
 
-**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
+**For macOS Sonoma (14) and earlier:** To enable QGIS, **control-click** (hold the control key and click) on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
 
-**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
+**For macOS Sequoia (15) and newer:** To enable QGIS, **control-click** (hold the control key and click) its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
 
 ## MacPorts
 
