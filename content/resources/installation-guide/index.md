@@ -204,18 +204,21 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename           |Also available based on ubuntugis-unstable dependencies?|
-|------------|----------------|-------------------|--------------------------------------------------------|
-|Debian      |12.x (stable)   |bookworm           |                                                        |
-|            |13.x (testing)  |trixie [[3]](#id3) |                                                        |
-|            |unstable        |sid                |                                                        |
-|Ubuntu      |25.04           |plucky [[3]](#id3) |                                                        |
-|            |24.10           |oracular           |                                                        |
-|            |24.04 (LTS)     |noble              |yes                                                     |
-|            |22.04 (LTS)     |jammy [[4]](#id4)  |yes                                                     |
+|Distribution|Version         |Codename             |Also available based on ubuntugis-unstable dependencies?|
+|------------+----------------+---------------------+--------------------------------------------------------|
+|Debian      |12.x (stable)   |bookworm             |                                                        |
+|            |13.x (testing)  |trixie [[3]](#id3)   |                                                        |
+|            |unstable        |sid                  |                                                        |
+|Ubuntu      |25.10           |questing [[4]](#id4) |                                                        |
+|            |25.04           |plucky [[3]](#id3)   |                                                        |
+|            |24.10           |oracular [[5]](#id5) |                                                        |
+|            |24.04 (LTS)     |noble                |yes                                                     |
+|            |22.04 (LTS)     |jammy [[6]](#id6)    |yes                                                     |
 
 {{< footnote "3" >}} starting with 3.40.8/3.44.0
-{{< footnote "4" >}} only up to 3.40 (cmake too old for 3.42)
+{{< footnote "4" >}} starting with 3.40.11/3.44.3
+{{< footnote "5" >}} only up to 3.40.7/3.44.2 (oracular EOL)
+{{< footnote "5" >}} only up to 3.40 (cmake too old for 3.42)
 
 
 To use the QGIS archive you have to first add the archive’s repository public key:
@@ -673,9 +676,9 @@ Official All-in-one, signed installers for macOS High Sierra (10.13) and newer c
 
 After downloading QGIS, open the DMG file. Drag and drop the QGIS application into the Applications folder. The first launch attempt may fail due to Apple's security framework. 
 
-**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
+**For macOS Sonoma (14) and earlier:** To enable QGIS, **control-click** (hold the control key and click) on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
 
-**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
+**For macOS Sequoia (15) and newer:** To enable QGIS, **control-click** (hold the control key and click) its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
 
 ## MacPorts
 
