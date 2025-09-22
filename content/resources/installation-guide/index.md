@@ -205,7 +205,7 @@ Next release: {{< param "nextreleasedate" >}}
 #### Supported distribution versions: {#available-codenames}
 
 |Distribution|Version         |Codename             |Also available based on ubuntugis-unstable dependencies?|
-|------------+----------------+---------------------+--------------------------------------------------------|
+|------------|----------------|-------------------|--------------------------------------------------------|
 |Debian      |12.x (stable)   |bookworm             |                                                        |
 |            |13.x (testing)  |trixie [[3]](#id3)   |                                                        |
 |            |unstable        |sid                  |                                                        |
