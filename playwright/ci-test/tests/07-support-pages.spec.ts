@@ -57,7 +57,8 @@ test.describe("Resources Pages", () => {
         await expect(faqPage.qgisWebsiteLink).toBeVisible();
         await expect(faqPage.qgisGitHubLink).toBeVisible();
         await expect(faqPage.citeQGISUserGuide).toBeVisible();
-        await expect(faqPage.preElements).toBeVisible();
+        await expect(faqPage.bibTexPre).toBeVisible();
+        await expect(faqPage.patternsPre).toBeVisible();
         await expect(faqPage.buildingQGISFromSourceLink).toBeVisible();
 
         for (const text of faqPage.textList) {
