@@ -18,15 +18,21 @@ except ImportError:
 from scripts.resize_image import resize_image
 
 ### Funders
-def fetch_funders():
+def fetch_funders(url: str, past_members=False):
     """
     Fetch the sustaining members from the QGIS changelog 
     and create markdown files
     """
-    response = requests.get("https://changelog.qgis.org/en/qgis/members/json/")
+    response = requests.get(url)
     data = json.loads(response.text)
     items = data["rss"]["channel"]["item"]
     for item in items:
+        member_slug = item["slug"]
+        markdown_filename = f"content/funders/{member_slug}.md"
+        # Don't overwrite existing members
+        # when fetching past members
+        if past_members and os.path.exists(markdown_filename):
+            continue
         link = item["member_url"]
         image_url = item["image_url"]
         title = item["title"]
@@ -42,8 +48,7 @@ def fetch_funders():
 
         path = urlparse(image_url).path
         image_ext = os.path.splitext(path)[1]
-        name = os.path.basename(os.path.normpath(link))
-        image_name = "%s.%s" % (name, image_ext)
+        image_name = "%s.%s" % (member_slug, image_ext)
         image_name = image_name.replace("..",".")
 
         content = f"""---
@@ -56,7 +61,6 @@ link: "{link}"
 country: "{country}"
 ---
 """
-        markdown_filename = f"content/funders/{name}.md"
         with open(markdown_filename , "w", encoding="utf=8") as f:
             f.write(content)
             print(f"Writing: {markdown_filename}")
@@ -161,7 +165,10 @@ parser.parse_args()
 args = parser.parse_args()
 
 try:
-    fetch_funders()
+    # Fetch the active members before the past members
+    # so that we don't overwrite active members with past members
+    fetch_funders("https://members.qgis.org/en/members/json/")
+    fetch_funders("https://members.qgis.org/en/past-members/json/", past_members=True)
 except Exception as e:
     print(f"Error fetching funders: {e}")
 
