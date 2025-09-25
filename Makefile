@@ -21,8 +21,8 @@ build: ## Build the site for www.qgis.org and qgis.org
 	@echo "Building site in production"
 	@echo "------------------------------------------------------------------"
 	sh ./scripts/get_commit_hash.sh
-	hugo --config config.toml,config/config.prod.toml
-	hugo --config config.toml,config/config.www.toml
+	PUBLIC_DIR=public_prod CONFIG_PROD=config/config.prod.toml bash scripts/build_prod_per_lang.sh
+	PUBLIC_DIR=public_www CONFIG_PROD=config/config.www.toml bash scripts/build_prod_per_lang.sh
 
 
 deploy: ## Deploy the site for www.qgis.org and qgis.org

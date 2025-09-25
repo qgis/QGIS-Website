@@ -2,12 +2,12 @@
 
 This document explains how to run the site in development with minimal disk usage and how to produce optimized production builds with post-build media deduplication.
 
-## Dev workflow (en + nl)
+## Dev workflow (en + nl + ro)
 
 Purpose: keep `public*` small during local development and speed up iterations.
 
 - Dev config overlay: `config/config.dev.toml`
-  - Builds only English and Dutch locally
+  - Builds English, Dutch and Romanian locally
   - Serves from memory (no massive disk writes)
   - Publishes to `public_dev` (if you force write)
 
@@ -18,7 +18,7 @@ hugo server --config config.toml,config/config.dev.toml
 ```
 
 Notes:
-- Default language is `en`, Dutch (`nl`) is enabled; all other languages are disabled.
+- Default language is `en`, Dutch (`nl`) and Romanian (`ro`) are enabled; all other languages are disabled.
 - The server keeps output in memory (`renderToDisk = false`). If you need files on disk, temporarily set it to `true`.
 
 ## Production workflow (per-language incremental with media dedup)

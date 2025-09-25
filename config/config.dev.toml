@@ -2,7 +2,7 @@ baseURL = 'http://localhost:8000/'
 publishDir = "public_dev"
 defaultContentLanguage = 'en'
 defaultContentLanguageInSubdir = false
-# Build only EN locally to avoid duplicating media per language
+# Build EN, NL and RO locally; all other languages disabled to keep dev fast
 disableLanguages = [
 # Uncomment next line to disable RO language in dev mode
 #  "ro", 
