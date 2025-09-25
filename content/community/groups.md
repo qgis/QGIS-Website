@@ -49,7 +49,7 @@ Reviewer: Tim Sutton
 
 {{< rich-list listLink="https://qgis.org.za/" icon="🇿🇦" layoutClass="half" listTitle="QGIS ZA (South Africa)" listSubtitle="Contact: Admire Nyakudya" >}}
 
-{{< rich-list listLink="https://www.osgeo.fr/" icon="🇫🇷" layoutClass="half" listTitle="Groupe des Utilisateurs de QGIS - France (France)" listSubtitle="Contact: Harrissou Sant-anna" >}}
+{{< rich-list listLink="https://www.osgeo.fr/association/qgis-fr/" icon="🇫🇷" layoutClass="half" listTitle="Groupe des Utilisateurs de QGIS - France (France)" listSubtitle="Contact: Harrissou Sant-anna" >}}
 
 {{< rich-list listLink="https://qgis.se/" icon="🇸🇪" layoutClass="half" listTitle="QGIS Sverige (Sweden)" listSubtitle="Contact: Karl-Magnus Jönsson" >}}
 
