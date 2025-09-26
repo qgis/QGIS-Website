@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Lataa
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

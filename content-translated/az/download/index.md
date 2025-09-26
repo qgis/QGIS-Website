@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Yüklə
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

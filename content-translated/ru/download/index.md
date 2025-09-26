@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Скачать
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

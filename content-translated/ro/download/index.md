@@ -6,7 +6,6 @@ sidebar: true
 subtitle: ''
 title: Descărcați
 type: page
-url: /download
 
 ---
 {{<content-start >}}

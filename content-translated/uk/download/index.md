@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Завантажити
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

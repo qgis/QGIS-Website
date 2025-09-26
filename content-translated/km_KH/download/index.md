@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: ទាញយក
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

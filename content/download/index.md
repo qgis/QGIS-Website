@@ -4,7 +4,6 @@ title: "Download"
 subtitle: ""
 draft: false
 sidebar: true
-url: '/download'
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
 ---

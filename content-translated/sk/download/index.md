@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Stiahnite si
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

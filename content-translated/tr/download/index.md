@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: İndir
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

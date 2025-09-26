@@ -4,8 +4,6 @@ draft: false
 sidebar: true
 title: Dank u voor het kiezen van QGIS!
 type: page
-url: /download/thank-you
-
 ---
 {{<content-start >}}
 # Dank u voor het kiezen van QGIS!

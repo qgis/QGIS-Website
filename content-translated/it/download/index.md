@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Scarica
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

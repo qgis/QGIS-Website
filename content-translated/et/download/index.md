@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Laadi alla
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Letöltés
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

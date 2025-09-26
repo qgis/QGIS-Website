@@ -6,7 +6,6 @@ sidebar: true
 subtitle: ''
 title: Downloaden
 type: page
-url: /download
 
 ---
 {{<content-start >}}

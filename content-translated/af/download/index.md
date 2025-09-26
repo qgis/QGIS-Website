@@ -6,8 +6,6 @@ sidebar: true
 subtitle: ''
 title: Laai af
 type: page
-url: /download
-
 ---
 {{<content-start >}}
 

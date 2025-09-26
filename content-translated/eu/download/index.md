@@ -6,7 +6,7 @@ sidebar: true
 subtitle: ''
 title: Deskargatu
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}
