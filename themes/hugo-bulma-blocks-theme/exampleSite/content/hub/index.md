@@ -10,16 +10,14 @@ heroImage: "/img/banners/banner1.png"
 {{< block
     title="Get the software, documentation, and further resources"
     text-color="black"
-    background-color="white"
->}}{{< /block >}}
+    background-color="white">}}{{< /block >}}
 
 {{< block
     title="Downloads"
     subtitle="We provide downloads for all popular desktop and mobile operating systems. With a few clicks you can be using our best-in-class software on your own devices!"
     text-color="white"
     background-color="#589632"
-    image="downloads.png"
->}}{{< /block >}}
+    image="downloads.png">}}{{< /block >}}
 
 {{< block
     title="Documentation"
@@ -28,8 +26,7 @@ heroImage: "/img/banners/banner1.png"
     background-color="white"
     image="documentation.png"
     link-text="Learn More"
-    link="https://"
->}}{{< /block >}}
+    link="https://">}}{{< /block >}}
 
 {{< block
     title="Plugins, styles, and more"
@@ -38,8 +35,7 @@ heroImage: "/img/banners/banner1.png"
     background-color="#589632"
     image="pluginsstylesandmore.png"
     link-text="Explore"
-    link="https://"
->}}{{< /block >}}
+    link="https://">}}{{< /block >}}
 
 {{< block
     title="Stay up to date"
@@ -48,8 +44,7 @@ heroImage: "/img/banners/banner1.png"
     background-color="white"
     image="stayuptodate.png"
     link-text="Follow Us"
-    link="https://"
->}}{{< /block >}}
+    link="https://">}}{{< /block >}}
 
 {{< block
     title="Engage with users"
@@ -58,8 +53,7 @@ heroImage: "/img/banners/banner1.png"
     background-color="#589632"
     image="engagewithusers.png"
     link-text="Connect"
-    link="https://"
->}}{{< /block >}}
+    link="https://">}}{{< /block >}}
 
 {{< block
     title="Get certified"
@@ -68,8 +62,7 @@ heroImage: "/img/banners/banner1.png"
     background-color="white"
     image="getcertified.png"
     link-text="Learn More"
-    link="https://"
->}}{{< /block >}}
+    link="https://">}}{{< /block >}}
 
 {{< block
     title="Association"
@@ -78,5 +71,4 @@ heroImage: "/img/banners/banner1.png"
     background-color="#589632"
     image="association.png"
     link-text="Learn More"
-    link="https://"
->}}{{< /block >}}
+    link="https://">}}{{< /block >}}
