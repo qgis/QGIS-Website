@@ -45,7 +45,7 @@ This list features individuals who contribute to QGIS, based on their activity (
 {{< rich-box-start icon="🙋" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ## Supporting Contributors
-This list highlights individuals and organizations whose valuable contributions to QGIS may not be reflected in commit histories—such as community support, outreach, or other behind-the-scenes efforts. If you believe your work should be recognized here, please reach out to us at admin@qgis.org for consideration.
+This list highlights individuals and organizations whose valuable contributions to QGIS may not be reflected in commit histories—such as community support, outreach, or other behind-the-scenes efforts. If you believe your work should be recognized here, please fill out the [QGIS Supporting Contributors Application form](). The QGIS Project Steering Committee (PSC) reviews submissions on a monthly basis.
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
