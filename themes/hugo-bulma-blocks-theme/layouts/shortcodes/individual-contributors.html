@@ -1,4 +1,4 @@
-{{ $contributors := sort $.Site.Data.contributors.contributors "total_contributions" "desc" }}
+{{ $contributors := sort $.Site.Data.contributors.contributors.contributors "total_contributions" "desc" }}
 <div class="columns is-multiline">
     {{ range $idx, $contributor := $contributors }}
     <div class="column is-one-third">
@@ -34,19 +34,21 @@
                         {{ range $item := $sorted }}
                             {{ $thematic := $item.name }}
                             {{ $count := $item.count }}
-                            <span class="contributor-badge contributor-badge-{{ $thematic }}">
-                                <span>
-                                    {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Documentation{{ end }}
-                                    {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> QGIS Core{{ end }}
-                                    {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
-                                    {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
-                                    {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
+                            {{ if gt $count 0 }}
+                                <span class="contributor-badge contributor-badge-{{ $thematic }}">
+                                    <span>
+                                        {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Documentation{{ end }}
+                                        {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> QGIS Core{{ end }}
+                                        {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
+                                        {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
+                                        {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
+                                    </span>
+                                    <span class="contribution-count">
+                                        <i class="fab fa-git-alt"></i>
+                                        {{ $count }}
+                                    </span>
                                 </span>
-                                <span class="contribution-count">
-                                    <i class="fab fa-git-alt"></i>
-                                    {{ $count }}
-                                </span>
-                            </span>
+                            {{ end }}
                         {{ end }}
                 </div>
             </div>

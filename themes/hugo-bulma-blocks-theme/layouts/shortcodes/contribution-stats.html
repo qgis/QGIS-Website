@@ -17,7 +17,7 @@
         </div>
         <div class="stat-card">
             <div class="stat-number">
-                {{ $contributors := $.Site.Data.contributors.contributors }}
+                {{ $contributors := $.Site.Data.contributors.contributors.contributors }}
                 {{ $totalCommits := 0 }}
                 {{ range $contributors }}
                     {{ with .total_contributions }}
