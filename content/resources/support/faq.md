@@ -113,6 +113,13 @@ Linux). Please read [Building QGIS from source](https://github.com/qgis/QGIS/blo
 
 If you need to cite QGIS in your work or for an assignment, please use the citation style that would be most helpful:
 
+**QGIS Digital Object Identifier (DOI)**
+
+
+DOI: [10.5281/zenodo.6139224](https://doi.org/10.5281/zenodo.6139224)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224)
+
 
 **Cite the QGIS project in general**
 
