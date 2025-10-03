@@ -8,7 +8,7 @@ import os
 
 CONFIG_PATH = "data/contributors/config.json"
 ORG_PATH = "data/contributors/organizations.json"
-CONTRIBUTORS_API = "http://hub.qgis.org/api/v1/contributors"
+CONTRIBUTORS_API = "https://hub.qgis.org/api/v1/contributors"
 
 def load_json(path):
     with open(path, "r") as f:
@@ -17,6 +17,14 @@ def load_json(path):
 def save_json(path, data):
     with open(path, "w") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+
+def fetch_all_repos():
+    url = f"{CONTRIBUTORS_API}/fetch-all-repos"
+    print(f"Fetching repositories from {url}")
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    return None
 
 def get_commit_counts(repo_name, author=None, since=None, until=None):
     url = f"{CONTRIBUTORS_API}/{repo_name}/commit-counts"
@@ -74,5 +82,6 @@ def update_stats():
     print("Done.")
 
 if __name__ == "__main__":
+    fetch_all_repos()
     update_stats()
 
