@@ -125,6 +125,7 @@ $dark2-invert: findColorInvert($dark2)
 $links: {{ .Param "links" }}
 $links-invert: findColorInvert($links)
 $base: {{ .Param "text-primary1" }}
+$base-secondary: {{ .Param "text-primary2" }}
 
 
 // The custom colours are set up so that in 
@@ -236,3 +237,6 @@ $notification-radius: {{ .Param "corner-radius" }}
 @import "bulma-second-ribbon.sass"
 /* List - see https://github.com/bluefantail/bulma-list */
 @import "bulma-list.sass"
+
+// Custom pages styles
+@import "bulma/custom/_all"
