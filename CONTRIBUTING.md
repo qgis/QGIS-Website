@@ -198,6 +198,79 @@ See ```.github/workflows/playwright-e2e.yml```
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
+## 🤖 Automated Content and Manual Edit Guidelines
+
+**⚠️ IMPORTANT:** Several parts of this website are automatically generated and should **NOT** be edited manually. Manual edits to these files will be overwritten by automation scripts.
+
+### 🚫 Do NOT Edit These Files/Folders Manually
+
+| File/Folder Path | Updated By Script | How to Update Instead |
+|------------------|-------------------|----------------------|
+| `data/donors.json` | `update_donors.py`, `update_donors_from_file.py` | Use donation scripts or provide donor text files |
+| `data/feed.json` | `fetch_feeds.py` | Update the data from https://feed.qgis.org |
+| `config/commit.toml` | `get_commit_hash.sh` | Automatically updated on deployment |
+| `content/funders/` | `fetch_feeds.py` | Update the data from https://members.qgis.org |
+| `content/flickr-images/` | `fetch_feeds.py` | Content imported from Flickr feeds |
+| `content/hub-maps/` | `hub_maps_harvest.py` | Update the data from https://maps.qgis.org |
+| `content/funding/donate/github-sponsors.md` | GitHub Actions (`update-gh-sponsors.yml`) | ⚠️ **PARTIAL**: Only content outside `<!-- sponsors -->` comments can be edited |
+
+### ✅ How to Properly Update Automated Content
+
+#### 💰 Donors Information
+- **Manual donors:** Use `scripts/update_donors_from_file.py <donor_file.txt>`
+- **Stripe donors:** Run `scripts/update_donors.py` (requires Stripe API access). Runs nightly via GitHub Actions
+- **File format:** Plain text files with donor names
+
+#### 📋 Visual Changelogs
+- **Source:** changelog.qgis.org
+- **Script:** `scripts/changelog_harvest.py`
+- **Manual run:** `./scripts/changelog_harvest.py --version X.XX --release DD.MM.YYYY`
+- **Updates after harvesting:** It is allowed to update the content of `content/project/visual-changelogs` with a PR but only when the harvest from https://changelog.qgis.org is done.
+
+#### 🏢 Sustaining Members & News
+- **Script:** `fetch_feeds.py`
+- **Sources:** External feeds and APIs
+- **Schedule:** Runs nightly via GitHub Actions
+
+#### 🗺️ Maps Showcase
+- **Source:** maps.qgis.org
+- **Script:** `scripts/hub_maps_harvest.py`
+- **Schedule:** Runs twice daily via GitHub Actions
+
+#### 💖 GitHub Sponsors
+- **Source:** GitHub Sponsors API
+- **Workflow:** `.github/workflows/update-gh-sponsors.yml`
+- **Schedule:** Runs twice daily via GitHub Actions
+- **File:** `content/funding/donate/github-sponsors.md`
+- **⚠️ Important:** Only edit content **outside** the `<!-- sponsors -->` comment blocks. The sponsor list between these comments is automatically generated and will be overwritten.
+
+#### 🏢 Commercial Support
+- **Validation:** Link checking and cleanup
+- **Workflow:** `.github/workflows/check-commercial-support-links.yml`
+- **Schedule:** Runs weekly (Sundays) via GitHub Actions
+
+### 🔄 Automation Schedule
+
+| Content Type | Frequency | Method |
+|--------------|-----------|--------|
+| GitHub Sponsors | Twice daily (midnight & noon UTC) | `.github/workflows/update-gh-sponsors.yml` |
+| Stripe Donors | Twice daily (midnight & noon UTC) | `.github/workflows/update-donors.yml` |
+| News feeds & Sustaining members | Twice daily (midnight & noon UTC) | `.github/workflows/update-feeds.yml` |
+| Hub Maps | Twice daily (midnight & noon UTC) | `.github/workflows/update-feeds.yml` |
+| Commercial Support Links | Weekly (Sunday midnight UTC) | `.github/workflows/check-commercial-support-links.yml` |
+| Version info | On deployment | Build process |
+| Visual Changelogs | Manual/As needed | Local script execution (`changelog_harvest.py`) |
+
+### 🛡️ Protected Content Guidelines
+
+1. **Check file headers:** Auto-generated files contain warning comments
+2. **Use scripts:** Always use designated scripts for updates
+3. **Verify sources:** Ensure external data sources are accessible
+4. **Test locally:** Run scripts locally before committing
+5. **Monitor automation:** Check GitHub Actions for feed updates
+
+![-----------------------------------------------------](./img/green-gradient.png)
+
 ## Content Harvesting
 
 You can harvest data from various feeds using the fetch_feeds.py script. By default
