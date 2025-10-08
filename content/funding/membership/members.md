@@ -14,7 +14,7 @@ We thank our sustaining members and donors who support the QGIS project, often r
 
 {{< rich-box-start icon="💁" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-2" >}}
-##### How become a sustaining member?
+##### How to become a sustaining member?
 For information on becoming a sustaining member, please visit [Sustaining Membership Program Overview]({{< ref "/funding/membership" >}}).
 {{< rich-content-end >}}
 {{< rich-box-end >}}
