@@ -32,7 +32,7 @@ guidelines for participating in our community:
 
 ### Stay on topic
 
-This forum is for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. It is not for discussions about GIS in general or unrelated software (GIS or otherwise).
+The forums are for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. They are not for discussions about GIS in general or unrelated software (GIS or otherwise).
 
 ### Language
 As we are a global group, all posts must be in English (unless the group you join is language specific). If you have a post in another language, please provide a translated description.
