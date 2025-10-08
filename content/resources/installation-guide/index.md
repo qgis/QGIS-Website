@@ -189,10 +189,12 @@ Lines of packages:
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
 ||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
 ||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
-| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+| Development Version | {{< param "devversion" >}} master [[3]](#id3) | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
 ||| Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |  |  |
 
 {{< footnote "2" >}} Nightlies are debug builds (including debugging output)
+
+{{< footnote "3" >}} For Debian trixie and sid and Ubuntu plucky and questing the builds of master currently have Qt5 (package qgis) and Qt6 (package qgis-qt6) versions.
 
 <small>
 Next point release: {{< param "nextpointreleasedate" >}}
@@ -204,22 +206,22 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename             |Also available based on ubuntugis-unstable dependencies?|
-|------------|----------------|---------------------|--------------------------------------------------------|
-|Debian      |12.x (stable)   |bookworm             |                                                        |
-|            |13.x (testing)  |trixie [[3]](#id3)   |                                                        |
-|            |unstable        |sid                  |                                                        |
-|Ubuntu      |25.10           |questing [[4]](#id4) |                                                        |
-|            |25.04           |plucky [[3]](#id3)   |                                                        |
-|            |24.10           |oracular [[5]](#id5) |                                                        |
-|            |24.04 (LTS)     |noble                |yes                                                     |
-|            |22.04 (LTS)     |jammy                |yes                                                     |
+|Distribution|Version         |Codename             |Also available based on ubuntugis-unstable dependencies?|Qt6 version of master available|
+|------------|----------------|---------------------|--------------------------------------------------------|-------------------------------|
+|Debian      |12.x (stable)   |bookworm             |                                                        |                               |
+|            |13.x (testing)  |trixie [[4]](#id4)   |                                                        | yes                           |
+|            |unstable        |sid                  |                                                        | yes                           |
+|Ubuntu      |25.10           |questing [[5]](#id5) |                                                        | yes                           |
+|            |25.04           |plucky [[4]](#id4)   |                                                        | yes                           |
+|            |24.10           |oracular [[6]](#id5) |                                                        |                               |
+|            |24.04 (LTS)     |noble                |yes                                                     |                               |
+|            |22.04 (LTS)     |jammy                |yes                                                     |                               |
 
-{{< footnote "3" >}} starting with 3.40.8/3.44.0
+{{< footnote "4" >}} starting with 3.40.8/3.44.0
 
-{{< footnote "4" >}} starting with 3.40.11/3.44.3
+{{< footnote "5" >}} starting with 3.40.11/3.44.3
 
-{{< footnote "5" >}} only up to 3.40.7/3.44.2 (oracular EOL)
+{{< footnote "6" >}} only up to 3.40.7/3.44.2 (oracular EOL)
 
 To use the QGIS archive you have to first add the archive’s repository public key:
 
