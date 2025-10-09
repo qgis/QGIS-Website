@@ -12,16 +12,14 @@ heroImage: "img/banners/banner1.png"
 Our software is a high impact, global project. We provide open access to best-in-class tools for visualising, creating, editing, analysing and publication of spatially linked data and information products. We do not prescribe how these tools should be used, but we make these tools freely available and accessible to everyone in order to foster a more just society, the making of better decisions and further the goal of a more sustainable environment.  We provide tools for working on traditional desktop PC’s, on mobile devices and in the cloud.
 
 {{< button-bar 
-    "fa-solid fa-download:Download:download/download/"
->}}
+    "fa-solid fa-download:Download:download/download/">}}
 
 ## Who uses our software?
 
 our software is used by governments, large multi-national organisations, corporate entities, academic institutions all the way down to small businesses and hobbyist users. Our Open Source development model makes the software accessible to all of these users at a cost they can afford, excluding no one from the ability to benefit from our software.
 
 {{< button-bar 
-    "fa-solid fa-download:License:license/"
->}}
+    "fa-solid fa-download:License:license/">}}
 
 
 ## our software is free of cost, not cost free
@@ -42,15 +40,13 @@ Many of our users migrate to our software from proprietary alternatives which ar
 
 {{< button-bar 
     "fa-solid fa-file-pdf:View our License:license/"
-    "fa-solid fa-money-bill:Annual Financial Reports:reports/"
->}}
+    "fa-solid fa-money-bill:Annual Financial Reports:reports/">}}
 
 ## Governance
 
 Our software.org is registered as an Association that is operated in a non-profit manner. It is managed by an elected board and contributed to by hundreds of people from around the world. In the same way that the software we develop is open source, the project is operated with the same principle of openness, with all financial reports, board reports and community decisions carried out in an open and transparent way.
 
 {{< button-bar 
-    "fa-solid fa-file-pdf:Annual Reports:reports/annual/"
->}}
+    "fa-solid fa-file-pdf:Annual Reports:reports/annual/">}}
 
 {{< content-end >}}
