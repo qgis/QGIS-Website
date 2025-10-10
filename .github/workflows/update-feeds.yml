@@ -1,5 +1,4 @@
-# This workflow scrapes the latest show episodes and commits the new episode and data
-# files to the repo.
+# This workflow updates the feeds, members list, and contributors stats.
 
 name: ⚒️ Scrape and commit
 on:
@@ -41,6 +40,16 @@ jobs:
       run: |
         cd ./qgis-website
         pipenv run ./scripts/hub_maps_harvest.py
+
+    - name: '🏢 Update Contributing Organizations'
+      run: |
+        cd ./qgis-website
+        pipenv run ./scripts/update_contributing_orgs.py
+
+    - name: '🧑‍💻 Update GitHub Contributors'
+      run: |
+        cd ./qgis-website
+        pipenv run ./scripts/update_individual_contributors.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v6

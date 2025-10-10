@@ -1,0 +1,32 @@
+<!-- Stats Overview -->
+<div class="container">
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-number">
+                {{ $orgs := $.Site.Data.contributors.organizations }}
+                {{ len $orgs }}
+            </div>
+            <div class="stat-label">Organizations</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">
+                {{ $contributors := $.Site.Data.contributors.contributors.contributors }}
+                {{ len $contributors }}
+            </div>
+            <div class="stat-label">Individual Contributors</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-number">
+                {{ $contributors := $.Site.Data.contributors.contributors.contributors }}
+                {{ $totalCommits := 0 }}
+                {{ range $contributors }}
+                    {{ with .total_contributions }}
+                        {{ $totalCommits = add $totalCommits . }}
+                    {{ end }}
+                {{ end }}
+                {{ lang.FormatNumber 0 $totalCommits }}
+            </div>
+            <div class="stat-label">Commits</div>
+        </div>
+    </div>
+</div>
