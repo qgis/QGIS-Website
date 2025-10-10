@@ -425,6 +425,19 @@ The book is prepared like the series “for Dummies”.
 
 ## Spanish
 
+### Descubriendo QGIS 3.x
+
+Esta segunda edición es una actualización importante del título original Discover QGIS 3.x (English).
+Todos los ejercicios han sido actualizados para ser compatibles con QGIS 3.26. Los temas abarcan la interfaz de QGIS, conceptos básicos de SIG, análisis espacial, modelado, creación y edición de datos, diseño cartográfico y visualización de datos.Con mejoras en el procesamiento, flujos de trabajo más eficientes, compatibilidad con datos de nubes de puntos, desarrollo del Controlador Temporal y opciones de simbología mejoradas, ¡es un momento emocionante para aprender QGIS!
+
+- [https://locatepress.com/book/dq32-es](https://locatepress.com/book/dq32-es)
+    
+- Author(s): Kurt Menke, Carlos Lopez, Sofia Logan 
+
+- Organization: Locate Press
+    
+- Date: June 2025
+
 ### QGIS Exercise Guide: beginner, intermediate, and advanced Levels
 
 Three practical exercise guides in QGIS (beginner, intermediate, and advanced) designed for the management and analysis of geospatial data from the Servicio Geológico Colombiano using free and open-source software solutions.
