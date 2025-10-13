@@ -189,10 +189,12 @@ Lines of packages:
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
 ||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
 ||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
-| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+| Development Version | {{< param "devversion" >}} master [[3]](#id3) | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
 ||| Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |  |  |
 
 {{< footnote "2" >}} Nightlies are debug builds (including debugging output)
+
+{{< footnote "3" >}} For Debian trixie and sid and Ubuntu plucky and questing the builds of master currently have Qt5 (package qgis) and Qt6 (package qgis-qt6) versions.
 
 <small>
 Next point release: {{< param "nextpointreleasedate" >}}
@@ -204,16 +206,22 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename          |Also available based on ubuntugis-unstable dependencies?|
-|------------|----------------|------------------|--------------------------------------------------------|
-|Debian      |12.x (stable)   |bookworm          |                                                        |
-|            |unstable        |sid               |                                                        |
-|Ubuntu      |24.10           |oracular          |                                                        |
-|            |24.04 (LTS)     |noble             |yes                                                     |
-|            |22.04 (LTS)     |jammy [[3]](#id3) |yes                                        |
+|Distribution|Version         |Codename             |Also available based on ubuntugis-unstable dependencies?|Qt6 version of master available|
+|------------|----------------|---------------------|--------------------------------------------------------|-------------------------------|
+|Debian      |12.x (stable)   |bookworm             |                                                        |                               |
+|            |13.x (testing)  |trixie [[4]](#id4)   |                                                        | yes                           |
+|            |unstable        |sid                  |                                                        | yes                           |
+|Ubuntu      |25.10           |questing [[5]](#id5) |                                                        | yes                           |
+|            |25.04           |plucky [[4]](#id4)   |                                                        | yes                           |
+|            |24.10           |oracular [[6]](#id5) |                                                        |                               |
+|            |24.04 (LTS)     |noble                |yes                                                     |                               |
+|            |22.04 (LTS)     |jammy                |yes                                                     |                               |
 
-{{< footnote "3" >}} only up to 3.40 (cmake too old for 3.42)
+{{< footnote "4" >}} starting with 3.40.8/3.44.0
 
+{{< footnote "5" >}} starting with 3.40.11/3.44.3
+
+{{< footnote "6" >}} only up to 3.40.7/3.44.2 (oracular EOL)
 
 To use the QGIS archive you have to first add the archive’s repository public key:
 
@@ -334,16 +342,30 @@ On certain distributions, you may also need to install the packages `xdg-desktop
 
 See the [Flathub files here](https://github.com/flathub/org.qgis.qgis) and [report issues here](https://github.com/flathub/org.qgis.qgis/issues).
 
-### Extension Support
+### Show runtime version
+If you need the following additions, you want to know which runtime QGIS is using:
+
+```
+flatpak info org.qgis.qgis --show-runtime
+```
+
+### Extension support
 If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
 
 ```
 flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
 
-# NOTE: it is possible you get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
+# NOTE: you will likely get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
 flatpak install runtime/org.kde.Sdk/x86_64/VERSION
 ```
 
+### HTML rendering
+If you want to use HTML, for example in map layouts, `QtWebkit` is needed. You can install it from the flatpak command line interface
+
+```
+flatpak install app/io.qt.qtwebkit.BaseApp/x86_64/VERSION
+# ⚠️ WARNING: This is considered insecure and is therefore not provided by default.
+```
 
 ## Fedora
 
@@ -392,7 +414,7 @@ Always up-to-date version infos:
 
 ## NixOS
 
-Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=24.05&show=qgis&from=0&size=50&sort=relevance&type=packages&query=qgis). 
+Latest stable and LTR packages are [available in nixpkgs](https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=qgis). You can also run bleeding edge developer versions with a single command.
 
 ### Basic Install
 
@@ -424,9 +446,53 @@ environment.systemPackages = [
   ];
 ```
 
+### Running developer snapshots - Remote
+
+You can run in-development versions of QGIS with a single command directly 
+from GitHub for any git revision (subsequent to 9 July 2025) from a branch or PR. Nix 
+will automatically build and run the version you reference.
+
+To run QGIS from the current commit of the master branch:
+
+```
+nix run github:qgis/QGIS#qgis
+```
+
+To run a specific revision:
+
+```
+nix run github:qgis/QGIS/<git revision>#qgis
+```
+
+To run a Pull Request or branch:
+
+```
+nix run github:qgis/QGIS/<git branch>#qgis
+```
+
+### Running developer snapshots - Local
+
+If you have a local git checkout of QGIS, you can run your local source code tree:
+
+```
+nix run .#qgis
+```
+
+You can also create a developer environment by running the following command in the
+root of your QGIS git checkout directory:
+
+```
+nix develop
+```
+
+After running this command, you will see additional instructions for building displayed 
+in the terminal.
+
 ### Running with extra python packages:
 
-Because of the atomic nature of NixOS packages, you need to override the package if you want extra python packages to be available to QGIS. For example to run QGIS with numpy, geopandas and rasterio python libraries you can do:
+Due to isolation of Nix packages, you need to override the package 
+if you want extra python packages to be available to QGIS. For example to run QGIS 
+with numpy, geopandas and rasterio Python libraries you can do:
 
 **Ephemeral use:**
 
@@ -458,6 +524,7 @@ nix-shell -p \
 }
 
 ```
+
 
 ## SUSE / OpenSUSE
 
@@ -625,9 +692,9 @@ Official All-in-one, signed installers for macOS High Sierra (10.13) and newer c
 
 After downloading QGIS, open the DMG file. Drag and drop the QGIS application into the Applications folder. The first launch attempt may fail due to Apple's security framework. 
 
-**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
+**For macOS Sonoma (14) and earlier:** To enable QGIS, **control-click** (hold the control key and click) on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
 
-**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
+**For macOS Sequoia (15) and newer:** To enable QGIS, **control-click** (hold the control key and click) its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
 
 ## MacPorts
 

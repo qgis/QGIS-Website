@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/poland_ffth/toolbox.png"
 section: "project"
 type: "case-study"
+date: 2016-10-30
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # Using QGIS for FTTH/GPON network planning due to the implementation European Digital Agenda
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>October 30, 2016</span>
+</p>
+
 
 ## Definition of the problem
 

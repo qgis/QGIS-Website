@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/italy_igag1.png"
 section: "project"
 type: "case-study"
+date: 2015-03-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS geoprocessing model to simplify first level seismic microzonation analysis
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>March 01, 2015</span>
+</p>
+
 
 The Institute of Environmental Geology and Geoengineering (IGAG) of the National Research Council (CNR) is located in Rome, in the Area of Research \"Roma 1\". It was founded in 2002 by regrouping five former research Institutes and Centers that had been active for more than 40 years in their field of expertise. IGAG covers a wide range of scientific topics in the field of Earth sciences, mainly focusing towards the study of:
 

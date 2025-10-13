@@ -64,7 +64,7 @@ We provide installers for many flavors of GNU/Linux binary packages (including r
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-2" >}}
 #### QGIS versions for macOS notice
-The QGIS installers for macOS are currently **outdated** and may not reflect the latest version shown in QGIS notifications. We are actively working to update the macOS packages. If you need newer features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}). Thank you for your patience and understanding.
+The QGIS installers for macOS are currently **outdated** and do not reflect the latest version of QGIS. If you need newer features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}).  We are working on new, solid macOS builds for QGIS 4. If you wish to be an early beta tester, you can test a preview build at [this repository](https://github.com/opengisch/qgis-notarize). This package will become an official, OSGEO signed package as of QGIS 4.0.
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
@@ -78,9 +78,9 @@ Alternatively, for native support of both Intel x86 and Apple ARM architectures,
 ##### Tips for first launch
 After installing QGIS, the first launch attempt may fail due to Apple's security framework. 
 
-**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
+**For macOS Sonoma (14) and earlier:** To enable QGIS, **control-click** (hold the control key and click) on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
 
-**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
+**For macOS Sequoia (15) and newer:** To enable QGIS, **control-click** (hold the control key and click) its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}

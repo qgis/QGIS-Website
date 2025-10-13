@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/nigeria_jos1.jpg"
 section: "project"
 type: "case-study"
+date: 2011-12-31
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # Amurum forest reserve habitat and avifauna mapping with QGIS in Nigeria
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>December 31, 2011</span>
+</p>
+
 
 Amurum forest reserve is located near the city of Jos, Plateau state, Nigeria. It was established in conjunction with the initiation of the A.P. Leventis Ornithological Research Institute (APLORI) for the purpose of natural conservation, education and research. APLORI is hosted by the Department of Zoology at the University of Jos. Yearly a group of approximately eight highly motivated students from all over Nigeria obtain training in conservation biology, statistics (with R) and as of 2011 GIS as well. During two weeks in December 2011 we studied basic GIS concepts and applied those with QGIS for various conservation purposes. In this article we describe the way in which we used QGIS to map the habitats and its determinants of Amurum reserve and how the basic habitat maps were used to obtain strata for the purpose of efficiently determining the spatial distribution of the avifauna including the biodiversity.
 

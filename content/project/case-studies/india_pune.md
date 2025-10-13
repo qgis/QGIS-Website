@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/india_pune1.png"
 section: "project"
 type: "case-study"
+date: 2014-05-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # Use of python console to prepare offline map from WMS (tile downloader)
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>May 01, 2014</span>
+</p>
+
 
 This study explains how to prepare offline maps from WMS/WFS or any map loaded in QGIS map view by downloading tiles with the help of a script in python console. The skript also generates a mosaic of all tiles for further use.
 

@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/ft_europe_migration_balkan-route.png"
 section: "project"
 type: "case-study"
+date: 2016-04-01
+featured: true
+archived: false
 ---
 {{< content-start >}}
 
 # Use of QGIS at the Financial Times Graphics Team
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>April 01, 2016</span>
+</p>
+
 
 ## Interview with Steven Bernard (Interactive Design Editor)
 

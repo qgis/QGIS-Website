@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/china_hydro1.jpg"
 section: "project"
 type: "case-study"
+date: 2015-01-01
+featured: false
+archived: false
 ---
 {{< content-start >}}
 
 # Producing an arcHYDRO like output with QGIS
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>January 01, 2015</span>
+</p>
+
 
 I work for a urban planning company in China. It is often difficult to design proper environmental protection because the common sources of data may be a state secret or may not even exist. Frequently, we are asked to do designs without proper survey data. In addition there is usually not enough time for a proper study. My background is in Urban Planning with a minor in Environmental Science.
 

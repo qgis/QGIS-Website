@@ -6,10 +6,20 @@ sidebar: true
 thumbnail: "images/afghanistan1.png"
 section: "project"
 type: "case-study"
+date: 2015-04-01
+featured: false
+archived: false
 ---
 {{< content-start >}}
 
 # Danish Demining Group using QGIS in Afghanistan
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>April 1, 2015</span>
+</p>
 
 The Danish Demining Group (DDG), the specialised mine action unit of the Danish Refugee Council, has been working in Afghanistan since 1999, undertaking humanitarian mineclearance, unexploded ordnance (UXO) disposal and mine risk education. DDG Afghanistan delivers humanitarian mine action to save life, strengthen the sense of safety through risk education and help remove obstacles to the productive use of resources, helping to realise Afghanistan's development potential. Since the start of operations in Afghanistan, DDG has removed over 24,000 landmines and over 940,000 pieces of UXO. Currently, DDG is working in the northern provinces of Balkh and Samangan, and the central provinces of Kabul, Parwan and Panjshir.
 

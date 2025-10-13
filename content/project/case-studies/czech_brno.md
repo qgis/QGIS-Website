@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/czech_brno1.jpg"
 section: "project"
 type: "case-study"
+date: 2010-11-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS as major GIS software in the Laboratory on Experimental and Applied Geography
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>November 01, 2010</span>
+</p>
+
 
 ## Introduction
 

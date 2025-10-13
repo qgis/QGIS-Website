@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/europe_lynx1.png"
 section: "project"
 type: "case-study"
+date: 2015-02-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # Lynx habitat analysis in the Southern Carpathians
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>February 01, 2015</span>
+</p>
+
 
 A case study to promote basic understanding of wildlife habitat modeling for students based on open source data.
 

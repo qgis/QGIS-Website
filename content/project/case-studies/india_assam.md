@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/india_assam1.png"
 section: "project"
 type: "case-study"
+date: 2013-03-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS for monitoring tigers (using camera traps in Nameri Tiger Reserve, Assam, India Sonitpur District)
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>March 01, 2013</span>
+</p>
+
 
 Nameri Tiger Reserve (NTR) is one of the 3 tiger reserves of Assam and it is situated in the northern part of Sonitpur District of Assam along the foothills of Eastern Himalayas. Spread over an area of 344 sq km, NTR boasts rich diversity of flora and fauna. The core area of the reserve which constitutes the "Nameri National Park" is bound by River Jia-Bhoreli on the west and River Bor-Dikorai in the east. To the north of the Nameri lies the Pakke Tiger Reserve of Arunachal Pradesh.
 

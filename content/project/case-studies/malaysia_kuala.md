@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/malaysia_kuala1.png"
 section: "project"
 type: "case-study"
+date: 2012-01-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS at the Federal Department of Town and Country Planning, Peninsular Malaysia
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>January 01, 2012</span>
+</p>
+
 
 ## Introduction
 

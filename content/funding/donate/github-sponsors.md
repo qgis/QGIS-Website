@@ -57,7 +57,7 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
   </div>
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/vovchykbratyk" target="_blank">
   <div class="listcont external-link">
-    Vovchyk Bratyk - vovchykbratyk
+    Eric Eagle - vovchykbratyk
   </div>
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/johnzastrow" target="_blank">
   <div class="listcont external-link">
@@ -102,10 +102,6 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/SolarDesalination" target="_blank">
   <div class="listcont external-link">
     SolarDesalination - SolarDesalination
-  </div>
-</a><a class="rich-list third mr-2 mb-2" href="https://github.com/adventure-tense" target="_blank">
-  <div class="listcont external-link">
-    Andrew Wedlake - adventure-tense
   </div>
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/MyGIS" target="_blank">
   <div class="listcont external-link">
@@ -154,6 +150,14 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/jeffsilverm" target="_blank">
   <div class="listcont external-link">
     Jeff Silverman - jeffsilverm
+  </div>
+</a><a class="rich-list third mr-2 mb-2" href="https://github.com/muddasirshah" target="_blank">
+  <div class="listcont external-link">
+    Muddasir Shah - muddasirshah
+  </div>
+</a><a class="rich-list third mr-2 mb-2" href="https://github.com/danabauer" target="_blank">
+  <div class="listcont external-link">
+    Dana Bauer - danabauer
   </div>
 </a><!-- sponsors -->
 

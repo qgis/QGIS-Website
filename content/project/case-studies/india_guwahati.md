@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/india_guwahati1.png"
 section: "project"
 type: "case-study"
+date: 2014-07-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # Trainings & Research activities using QGIS at NIRD&PR-NERC, Guwahati, India
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>July 01, 2014</span>
+</p>
+
 
 The National Institute of Rural Development & Panchayati Raj (NIRD&PR) is an Apex institute of Ministry of Rural Development, Government of India. Headquarter is located at Hyderabad city of India and it has three sub centres at Guwahati, Jaipur and Patna city. Guwahati is capital of Assam State (North Eastern side of country). The NIRD Guwahati Centre is actively involved in short (mostly 5 days including one-day handheld GPS survey) residential GIS trainings for State, District and Block level government officials of eight North-East Indian States. Apart from government officials, University faculties, College lecturers, research scholars and Reputed NGOs are also trained. Trainings are fully sponsored by NIRD and participants are to bear only their travel expenses. The author is working in NIRD Guwahati centre as an Adjunct Faculty (GIS) and coordinating GIS and Rural Development related trainings at the centre along with Dr. K. Haloi, Training & Research coordinator, i/c Head, C-GARD, NIRD&PR-NERC.
 

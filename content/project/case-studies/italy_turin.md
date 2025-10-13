@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/italy_turin1.jpg"
 section: "project"
 type: "case-study"
+date: 2013-01-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # The Research Institute for Geo-hydrological Protection of Turin —— Aerial photo archive management
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>January 01, 2013</span>
+</p>
+
 
 The Research Institute for Geo-hydrological Protection of Turin (IRPI), member of the Italian National Research Council (CNR), started its activities in 1970. The skills gathered since its foundation concern various following investigation sectors, e.g. the study of geological and hydrogeological features of the Alpine-Po river system (Northern Italy) or the monitoring, prediction and prevention of natural disasters. These tasks are carried out by the employment of a multidisciplinary approach including hearth sciences, engineering and geomatic.
 

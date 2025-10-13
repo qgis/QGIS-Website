@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/uruguay_mides1.png"
 section: "project"
 type: "case-study"
+date: 2016-03-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # Use of QGIS at the Ministry of Social Development of Uruguay (MIDES)
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>March 01, 2016</span>
+</p>
+
 
 ## Introduction
 

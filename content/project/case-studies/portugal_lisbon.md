@@ -6,10 +6,21 @@ sidebar: true
 thumbnail: "images/portugal_lisbon1.jpg"
 section: "project"
 type: "case-study"
+date: 2012-01-01
+featured: false
+archived: true
 ---
 {{< content-start >}}
 
 # Using QGIS to Map Hotspot Areas for Biodiversity and Ecosystem Services (HABEaS)
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>January 01, 2012</span>
+</p>
+
 
 HABEaS —— Hotspot Areas for Biodiversity and Ecosystem Services is an online geographic information system (WebGIS) that was created by the [Centre for Applied Ecology](http://www.isa.utl.pt/ceabn/content/2/123/homepage) ([Instituto Superior de Agronomia](http://www.isa.utl.pt/home/), Technical University of Lisbon), Worldwide Fund for Nature (WWF) and Faunalia.
 
