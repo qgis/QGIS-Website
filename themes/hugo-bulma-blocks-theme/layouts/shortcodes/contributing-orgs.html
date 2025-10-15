@@ -1,0 +1,92 @@
+{{ $orgs := sort $.Site.Data.contributors.organizations "name" "asc" }}
+<div class="organization-list">
+  {{ range $org := $orgs }}
+    <div class="card contributor-card organization organization-horizontal">
+        <div class="card-content">
+            <div class="columns is-vcentered">
+                <div class="column is-narrow">
+                    <div class="avatar-container">
+                        <img src="/{{ $org.image }}" class="avatar-large">
+                        <!-- <span class="level-indicator level-{{ $org.contributions.web_sites.level }}">★</span> -->
+                    </div>
+                </div>
+                <div class="column is-two-third">
+                    <div class="org-info">
+                        <h3 class="title is-3">
+                            <a href="{{ $org.url }}" class= "external-link" target="_blank" rel="noopener">{{ $org.name }}</a>
+                        </h3>
+                        <p class="subtitle is-5">{{ $org.subtitle }}</p>
+                        <div class="content">
+                            <p>{{ $org.description }}</p>
+                        </div>
+                    </div>
+                    <div class="contribution-badges">
+                        {{ $thematics := dict }}
+                        {{ range $k, $v := $org.contributions }}
+                            {{ $thematics = $thematics | merge (dict $k $v) }}
+                        {{ end }}
+                            {{ $thematicList := slice }}
+                            {{ range $k, $v := $thematics }}
+                                {{ $thematicList = $thematicList | append (dict "name" $k "data" $v) }}
+                            {{ end }}
+                            {{ $sorted := sort $thematicList "data.commits" "desc" }}
+                            {{ range $item := $sorted }}
+                                {{ $thematic := $item.name }}
+                                {{ $entry := $item.data }}
+                                <span class="contributor-badge contributor-badge-{{ $thematic }}">
+                                    <span>
+                                        {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Docs{{ end }}
+                                        {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> QGIS Core{{ end }}
+                                        {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
+                                        {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
+                                        {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
+                                        <!-- <span class="contribution-level" style="white-space: nowrap;">
+                                            {{ $maxStars := 5 }}
+                                            {{ range $i := seq 1 $maxStars }}
+                                                {{ if le $i $entry.level }}
+                                                    <i class="fas fa-star"></i>
+                                                {{ else }}
+                                                    <i class="far fa-star"></i>
+                                                {{ end }}
+                                            {{ end }}
+                                        </span> -->
+                                    
+                                        <span class="contribution-count">
+                                            <i class="fab fa-git-alt"></i>
+                                            {{ $entry.commits }}
+                                        </span>
+                                    </span>
+                                    <span class="ml-2">
+                                        {{ $now := now }}
+                                        {{ if $entry.last_contribution }}
+                                            {{ $last := time $entry.last_contribution }}
+                                            {{ $years := div (sub $now.Unix $last.Unix) 31536000 }}
+                                            {{ if lt $years 1 }}
+                                                <span class="contribution-year">
+                                                    <!-- <i class="fas fa-circle has-text-success" title="Active"></i> -->
+                                                    Active
+                                                </span>
+                                            {{ else }}
+                                                <span class="contribution-year">
+                                                    <!-- <i class="fas fa-circle has-text-info" title="Inactive"></i> -->
+                                                    {{ $years }}y ago
+                                                </span>
+                                            {{ end }}
+                                        {{ else }}
+                                            <span class="contribution-year">
+                                                <!-- <i class="fas fa-circle has-text-danger" title="No activity"></i> -->
+                                                No activity
+                                            </span>
+                                        {{ end }}
+
+                                    </span>
+                                </span>
+                            {{ end }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  {{ end }}
+</div>

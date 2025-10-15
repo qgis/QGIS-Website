@@ -1,0 +1,31 @@
+{{ $contributors := sort $.Site.Data.contributors.supporting "name" "asc" }}
+<div class="columns is-multiline">
+    {{ range $idx, $contributor := $contributors }}
+    <div class="column is-one-third">
+        <div class="card contributor-card individual">
+            <div class="card-content has-text-centered">
+                <div class="avatar-container">
+                    <img src="{{ $contributor.avatar_img }}" alt="{{ $contributor.name }}" class="avatar" loading="lazy">
+                </div>
+                <h3 class="title is-4">
+                    {{ if .link }}
+                        <a href="{{ .link }}" class="external-link" target="_blank" rel="noopener">
+                            {{ .name }}
+                        </a>
+                    {{ else }}
+                        {{ .name }}
+                    {{ end }}
+                </h3>
+
+                <span class="tag is-light is-medium has-text-weight-semibold mr-1 is-rounded">
+                    <i class="fas fa-user mr-1 has-text-info"></i>
+                    {{ .role }}
+                </span>
+                <div class="content mt-1">
+                    <p>{{ .contribution_description }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
