@@ -113,42 +113,49 @@ Linux). Please read [Building QGIS from source](https://github.com/qgis/QGIS/blo
 
 If you need to cite QGIS in your work or for an assignment, please use the citation style that would be most helpful:
 
+**QGIS Digital Object Identifier (DOI)**
+
+
+DOI: [10.5281/zenodo.6139224](https://doi.org/10.5281/zenodo.6139224)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224)
+
 
 **Cite the QGIS project in general**
 
 
-QGIS.org, {{< param "yeartag" >}}. QGIS Geographic Information System. QGIS Association. http://www.qgis.org
+QGIS.org, {{< yeartag >}}. QGIS Geographic Information System. QGIS Association. http://www.qgis.org
 
 
 **Cite the QGIS Developers Manual**
 
 
-QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System Developers Manual. QGIS Association. 
+QGIS.org, {{< yeartag >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System Developers Manual. QGIS Association. 
 Electronic document: {{< param-link "devcite" >}}
 
 
 **Cite the QGIS Installation Guide**
 
 
-QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System Installation Guide. QGIS Association. 
+QGIS.org, {{< yeartag >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System Installation Guide. QGIS Association. 
 Electronic document: https://github.com/qgis/QGIS/blob/master/INSTALL.md
 
 
 **Cite the QGIS User Guide**
 
 
-QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System User Guide. QGIS Association. 
+QGIS.org, {{< yeartag >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System User Guide. QGIS Association. 
 Electronic document: {{< param-link "userguidecite" >}}
 
 **Cite the QGIS Server Documentation**
 
-QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System API Documentation. QGIS Association. 
+QGIS.org, {{< yeartag >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System API Documentation. QGIS Association. 
 Electronic document: {{< param-link "servercite" >}}
 
 
 **Cite the QGIS API Documentation**
 
-QGIS.org, {{< param "yeartag" >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System API Documentation. QGIS Association. 
+QGIS.org, {{< yeartag >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System API Documentation. QGIS Association. 
 Electronic document: {{< param-link "apicite" >}}
 
 **Preferred format:** [BibTeX](https://en.wikipedia.org/wiki/BibTeX)
@@ -156,13 +163,30 @@ Electronic document: {{< param-link "apicite" >}}
 Example BibTeX entry:
 
 ```
-      @Manual{QGIS_software,
-        title = {QGIS Geographic Information System},
-        author = {{QGIS Development Team}},
-        organization = {QGIS Association},
-        year = {{{< param "yeartag" >}}},
-        url = {https://www.qgis.org},
-      }
+@Manual{QGIS_software,
+  title = {QGIS Geographic Information System},
+  author = {{QGIS Development Team}},
+  organization = {QGIS Association},
+  year = {{{< yeartag >}}},
+  url = {https://www.qgis.org},
+}
+```
+
+**Cite the QGIS paper in Patterns**
+
+```
+@article{graser2025,
+  title = {The QGIS project: Spatial without compromise},
+  journal = {Patterns},
+  volume = {6},
+  number = {7},
+  pages = {101265},
+  year = {2025},
+  issn = {2666-3899},
+  doi = {https://doi.org/10.1016/j.patter.2025.101265},
+  url = {https://www.sciencedirect.com/science/article/pii/S2666389925001138},
+  author = {Anita Graser and Tim Sutton and Marco Bernasocchi}
+}
 ```
 
 ### I created a map with QGIS, do I have to mention QGIS?

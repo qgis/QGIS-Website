@@ -48,9 +48,6 @@ exampleSite/content
 ├── community
 │   ├── index.md
 │   └── image1.png
-├── community-blogs
-│   ├── index.md
-│   ├── article1.md
 ├── documentation
 │   └── overview.md
 ├── download
@@ -113,7 +110,6 @@ exampleSite/content
 │   │   │   ├── image.jpg
 │   │   │   ├── index.md
 │   │   └── _index.md
-│   ├── community-blogs.md
 │   ├── _index.md
 │   ├── maps.md
 │   ├── overview.md
