@@ -31,13 +31,16 @@ jobs:
         pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
         pipenv run pip freeze
     
-    - name: '⚙️ Update donors'
+    - name: '⚙️ Update donors from Stripe and Payrexx'
       env:
         STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+        PAYREXX_INSTANCE: ${{ secrets.PAYREXX_INSTANCE }}
+        PAYREXX_API_SECRET: ${{ secrets.PAYREXX_API_SECRET }}
         LIST_AS_DONOR_LABEL: ${{ secrets.LIST_AS_DONOR_LABEL }}
       run: |
         cd ./qgis-website
         pipenv run ./scripts/update_donors.py
+        pipenv run ./scripts/update_payrexx_donors.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v6
