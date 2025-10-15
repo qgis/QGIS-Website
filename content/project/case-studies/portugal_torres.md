@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/portugal_torres1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2010-11-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS and GRASS applied to paleontological survey in Western Portugal
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>November 01, 2010</span>
+</p>
+
 
 The Associação Leonel Trindade -- Sociedade de História Natural (ALT-SHN) is a non profit institution headquarted in Torres Vedras, Portugal, specialized in paleontology. The institution manages a large fossil collection, mainly from Upper Jurassic. One of the key issues in paleontological management is to assess spatial context of the sites from where the fossils are retrieved -- hundreds of sites representing thousands of different specimens.
 

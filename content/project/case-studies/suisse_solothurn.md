@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/suisse_solothurn1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2009-05-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS in the governmental FOSSGIS stack of the Canton of Solothurn in Switzerland
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>May 01, 2009</span>
+</p>
+
 
 ![](../images/suisse_solothurn1.png)
 

@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/canada_brunswick1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2013-01-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Creating the Fundy Footpath Trail Map with QGIS
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>January 01, 2013</span>
+</p>
+
 
 ![](../images/canada_brunswick1.jpg)
 

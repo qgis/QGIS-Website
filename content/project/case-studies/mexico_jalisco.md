@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/mexico_jalisco1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2010-07-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Working with QGIS in a spatial data infrastructure of Jalisco in Mexico
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>July 01, 2010</span>
+</p>
+
 
 The Instituto de Información Territorial del Estado de Jalisco is a government organization which was founded in 1998 to share geographical information between the government agencies of Jalisco in México.
 

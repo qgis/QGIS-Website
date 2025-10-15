@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/portugal_evora1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2010-07-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS and GRASS in Biogeographical Research in the Iberian Peninsula
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>July 01, 2010</span>
+</p>
+
 
 I started applying GIS to my work in biogeography about 10 years ago. Through my graduate internship, PhD work and two other research jobs, I used the proprietary software packages that were available and used at my workplaces — mainly CartaLinx, Idrisi, ArcView and ArcGIS. But I found it rather annoying that we were constantly dealing with license renewal issues, and that I could not use the software away from the workplace unless I acquired my own license.
 

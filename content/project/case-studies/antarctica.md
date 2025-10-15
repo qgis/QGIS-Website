@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/quantarctica.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2013-08-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Quantarctica: An Antarctic GIS package
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>August 01, 2013</span>
+</p>
+
 
 Quantarctica is a collection of Antarctic geographical datasets, such as base maps, satellite imagery, glaciology and geophysics data from data centres around the world, prepared for viewing in QGIS. The package is developed by the Norwegian Polar Institute, as a tool for the research community, for classrooms and for operational use in Antarctica — freely available for non-commercial purposes.
 
