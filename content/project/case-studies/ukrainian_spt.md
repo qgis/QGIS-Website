@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/ukraine_spt1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2022-12-31
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Ukrainian open initiative of creating tools for spatial planning in the QGIS environment
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>December 31, 2022</span>
+</p>
+
 
 ## Introduction
 

@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/australia_distance_learning1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2015-01-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS for distance learning and teaching GIS at Universities
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>January 01, 2015</span>
+</p>
+
 
 ## Introduction
 

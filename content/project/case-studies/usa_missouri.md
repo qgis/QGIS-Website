@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/usa_missouri1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2013-02-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS Maps Historic Herpetofaunal Records (in Missouri, USA)
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>February 01, 2013</span>
+</p>
+
 
 The Missouri Herpetological Atlas Project (MOHAP) was initiated in 1997 as a result of the desire to obtain and easily update detailed distribution maps for Missouri (United States of America) amphibians and reptiles. A database was established to store all valid localities, including records published in historical literature sources and specimens vouchered from museums. From the database, a series of maps can be produced representing both locality records and \"county records\" for each species.
 

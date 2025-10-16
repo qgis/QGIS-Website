@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/usa_polczynski_table1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2017-12-31
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Historical Gazetteer of the Crimea
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>December 31, 2017</span>
+</p>
+
 
 Every day, Ottomanists around the world generate valuable materials as components of their scholarly research, but these materials may not be readily available to scholars with similar interests. The purpose of the OpenOttoman (Amy Singer, OpenOttoman: A Collaborative Platform for Digital Scholarship, https://networks.hnet.org/node/11419/discussions/166360/openottoman-collaborative-platform-digital-scholarship, 2017) is to stimulate generation of such materials and provide open and convenient access to these materials. The OpenOttoman Portal (http://www.openottoman.org) (OOP) is one vehicle for accessing these materials. Materials made available through the OOP include databases, with a prime example being gazetteers of Ottoman world places. Here, we describe the Historical Gazetteer of the Crimea (HGC), a prototype OOP gazetteer that includes populated places, districts, and provinces of Crimea in existence at the end of the Crimean Khanate.
 
