@@ -2,25 +2,25 @@
   <div class="container pb-6">
     <div class="pricing-table is-comparative">
       <div class="pricing-plan is-features">
-        <div class="plan-header">Features<br> <br> <br></div>
+        <div class="plan-header">{{ i18n "features" }}<br> <br> <br></div>
         <div class="plan-price"><span class="plan-price-amount">&nbsp;</span></div>
         <div class="plan-items">
-          <div class="plan-item">Vector Editing</div>
-          <div class="plan-item">Vector and Raster formats</div>
-          <div class="plan-item">Spatial Analysis</div>
-          <div class="plan-item">Advanced Cartography</div>
-          <div class="plan-item">Publication Quality Map Production</div>
-          <div class="plan-item">Support from our Volunteer Community</div>
-          <div class="plan-item">Financially Supports Us</div>
-          <div class="plan-item">Helps to ensure our Long Term Sustainability</div>
+          <div class="plan-item">{{ i18n "vectorEditing" }}</div>
+          <div class="plan-item">{{ i18n "vectorAndRasterFormats" }}</div>
+          <div class="plan-item">{{ i18n "spatialAnalysis" }}</div>
+          <div class="plan-item">{{ i18n "advancedCartography" }}</div>
+          <div class="plan-item">{{ i18n "publicationQualityMapProduction" }}</div>
+          <div class="plan-item">{{ i18n "supportFromVolunteerCommunity" }}</div>
+          <div class="plan-item">{{ i18n "financiallySupportsUs" }}</div>
+          <div class="plan-item">{{ i18n "helpsEnsureLongTermSustainability" }}</div>
         </div>
         <div class="plan-footer">
         </div>
       </div>
       <div class="pricing-plan is-success">
-        <div class="plan-header">Prefer Free<br> <br> <br></div>
+        <div class="plan-header">{{ i18n "preferFree" }}<br> <br> <br></div>
         <div class="plan-price"><span class="plan-price-amount"><span
-              class="plan-price-currency"></span>FREE</span>/forever</div>
+              class="plan-price-currency"></span>{{ i18n "free" }}</span>{{ i18n "forever" }}</div>
         <div class="plan-items">
           <div class="plan-item has-text-success" data-feature="editing"><i class="fa-solid fa-circle-check"></i></div>
           <div class="plan-item has-text-success" data-feature="file-formats"><i class="fa-solid fa-circle-check"></i></div>
@@ -33,14 +33,14 @@
 
         </div>
         <div class="plan-footer">
-          <a href="{{ absURL "download/os-selection/" }}" class="button is-fullwidth is-small">Download Directly</a>
+          <a href="{{ relLangURL "download/os-selection/" }}" class="button is-fullwidth is-small">{{ i18n "downloadDirectly" }}</a>
         </div>
       </div>
 
       <div class="pricing-plan is-success">
-        <div class="plan-header">Startups<br>&<br>Small Businesses</div>
+        <div class="plan-header">{{ i18n "startupsAndSmallBusinesses" }}</div>
         <div class="plan-price"><span class="plan-price-amount"><span
-              class="plan-price-currency">€</span>10</span>/download</div>
+              class="plan-price-currency">€</span>10</span>{{ i18n "perDownload" }}</div>
         <div class="plan-items">
           <div class="plan-item has-text-success" data-feature="editing"><i class="fa-solid fa-circle-check"></i></div>
           <div class="plan-item has-text-success" data-feature="file-formats"><i class="fa-solid fa-circle-check"></i></div>
@@ -52,14 +52,14 @@
           <div class="plan-item has-text-danger" data-feature="supports-sustainability"><i class="fa-solid fa-circle-xmark"></i></div>
         </div>
         <div class="plan-footer">
-          <button class="button is-fullwidth is-small">Donate & Download</button>
+          <button class="button is-fullwidth is-small">{{ i18n "donateAndDownload" }}</button>
         </div>
       </div>
 
       <div class="pricing-plan is-active is-danger">
-        <div class="plan-header">Growing<br><br>Teams</div>
+        <div class="plan-header">{{ i18n "growingTeams" }}<br><br></div>
         <div class="plan-price"><span class="plan-price-amount"><span
-              class="plan-price-currency">€</span>500</span>/year</div>
+              class="plan-price-currency">€</span>500</span>{{ i18n "perYear" }}</div>
         <div class="plan-items">
           <div class="plan-item has-text-success" data-feature="editing"><i class="fa-solid fa-circle-check"></i></div>
           <div class="plan-item has-text-success" data-feature="file-formats"><i class="fa-solid fa-circle-check"></i></div>
@@ -72,14 +72,14 @@
 
         </div>
         <div class="plan-footer">
-          <button class="button is-fullwidth is-small">Subscribe & Download</button>
+          <button class="button is-fullwidth is-small">{{ i18n "subscribeAndDownload" }}</button>
         </div>
       </div>
 
       <div class="pricing-plan is-success">
-        <div class="plan-header">Governments<br>&<br>Enterprises</div>
+        <div class="plan-header">{{ i18n "governmentsAndEnterprises" }}<br><br></div>
         <div class="plan-price"><span class="plan-price-amount"><span
-              class="plan-price-currency">€</span>3000</span>/year</div>
+              class="plan-price-currency">€</span>3000</span>{{ i18n "perYear" }}</div>
         <div class="plan-items">
           <div class="plan-item has-text-success" data-feature="editing"><i class="fa-solid fa-circle-check"></i></div>
           <div class="plan-item has-text-success" data-feature="file-formats"><i class="fa-solid fa-circle-check"></i></div>
@@ -92,7 +92,7 @@
 
         </div>
         <div class="plan-footer">
-          <button class="button is-fullwidth is-small">Subscribe & Download</button>
+          <button class="button is-fullwidth is-small">{{ i18n "subscribeAndDownload" }}</button>
         </div>
       </div>
     </div>
