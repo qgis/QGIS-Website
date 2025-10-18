@@ -9,5 +9,5 @@ sidebar: true
 {{< content-start  >}}
 {{< maps-header>}}
 
-{{< hub-maps showcase="map" columns="gallery" >}}
+{{< hub-images showcase="map" columns="gallery" >}}
 {{< content-end  >}}

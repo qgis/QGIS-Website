@@ -134,7 +134,7 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | `vscode.sh`                       | Launch VSCode with all settings and extensions needed to productively work on this project    | 🛠️ Development environment only |
 | `scripts/get_commit_hash.sh`  | Get the current commit hash of this repository and write it in `config/commit.toml` for the website version display | 📄 Footer version info across all pages |
 | `scripts/changelog_harvest.py`  | Will create/update visual-changelogs at `content/project/visual-changelogs` based on the data at `data/conf.json` | 📋 Visual Changelogs pages (`/project/visual-changelogs/`) |
-| `scripts/hub_maps_harvest.py`  | Harvest maps data from https://maps.qgis.org and update showcase content | 🗺️ Maps showcase section (`content/hub-maps/`) |
+| `scripts/hub_images_harvest.py`  | Harvest maps/screenshots images from https://hub.qgis.org and update showcase content | 🗺️ Maps and Screenshots showcase section (`content/hub-maps/` and `content/hub-screenshots/`) |
 | `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity) | 🖼️ Images fetched automatically |
 | `scripts/sanitize_commercial_supports.py`  | Checks each supporter's URL and removes invalid ones from commercial support listings | 🏪 Commercial Support page (`/resources/support/commercial-support/`) |
 | `scripts/update_donors_from_file.py`  | Updates `data/donors.json` ordered alphabetically by first name based on input file | 💰 Donors page (`/funding/donate/`) |

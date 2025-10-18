@@ -1,14 +1,13 @@
 ---
 type: "page"
-title: "QGIS Maps"
+title: "QGIS Screenshots"
 draft: false
 HasBanner: false
 sidebar: true
 ---
 {{< content-start  >}}
-# QGIS Screenshots
 
-Screenshots of QGIS in action
+{{< screenshots-header>}}
 
-{{< flickr-images showcase="screenshot" quantity="100" columns="6" >}}
+{{< hub-images showcase="screenshot" columns="6" >}}
 {{< content-end  >}}

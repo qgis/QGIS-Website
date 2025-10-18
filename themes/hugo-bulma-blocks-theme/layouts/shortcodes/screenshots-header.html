@@ -1,0 +1,32 @@
+{{ $title := .Page.Params.title | default "" }}
+{{ $description := .Page.Params.description | default "" }}
+<div class="columns is-multiline screenshots-header">
+    <div class="column is-6">
+        <h1 id="qgis-screenshots">
+            {{ $title }}
+            <a class="heading-anchor" href="#qgis-screenshots"> ¶ </a>
+        </h1>
+        <p>{{ $description }}</p>
+    </div>
+    <div class="column is-6">
+        <div class="add-screenshot p-3 is-flex is-align-items-center">
+            <a
+                href="https://hub.qgis.org/screenshots/add/"
+                class="is-flex is-align-items-center"
+            >
+                <article
+                    class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0"
+                >
+                    <figure class="m-0">
+                        <img
+                            src="{{ absURL "img/addsupporter.svg" }}"
+                            loading="lazy"
+                            alt="add supporter"
+                        />
+                    </figure>
+                </article>
+                <span>Add your screenshot here!</span>
+            </a>
+        </div>
+    </div>
+</div>
