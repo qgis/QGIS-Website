@@ -56,12 +56,17 @@ def update_stats():
             last_date = None
             for repo_name in repos:
                 for member in org.get("members", []):
-                    author_names = member["author_names"]
+                    author = member.get("username", "")
+                    author_names = member.get("author_names", "")
+                    if not author or author.strip() == "":
+                        continue
+                    if author_names and author_names.strip() != "":
+                        author += f",{author_names}"
                     from_date = member.get("from")
                     to_date = member.get("to")
                     since = from_date if from_date else None
                     until = to_date if to_date else None
-                    commit_counts = get_commit_counts(repo_name, author=author_names, since=since, until=until)
+                    commit_counts = get_commit_counts(repo_name, author=author, since=since, until=until)
                     total_commits += commit_counts.get("commits", 0)
                     member_last_date = commit_counts.get("last_commit_date")
                     if member_last_date:
@@ -75,7 +80,6 @@ def update_stats():
             # Update org stats
             if thematic in org["contributions"]:
                 org["contributions"][thematic]["commits"] = total_commits
-                print(last_date, '#####')
                 org["contributions"][thematic]["last_contribution"] = last_date.strftime("%Y-%m-%d") if last_date else None
     print("Saving updated organizations...")
     save_json(ORG_PATH, orgs)
