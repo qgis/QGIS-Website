@@ -142,7 +142,7 @@ To install QGIS, choose the package that matches your preferred Qt version:
 
 - For the Qt6 build:
   ```
-  sudo apt install qgis-qt6 qgis-plugin-grass
+  sudo apt install qgis-qt6 qgis-plugin-grass-qt6
   ```
 - For the default Qt5 build:
   ```
