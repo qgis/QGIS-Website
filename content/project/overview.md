@@ -218,7 +218,7 @@ Demonstrations of our user's creativity, showcasing the powerful map creation ca
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< hub-maps showcase="map" quantity="5" columns="gallery" >}}
+{{< hub-images showcase="map" quantity="4" columns="gallery" >}}
 
 {{< column-end >}}
 {{< columns-end >}}
@@ -232,7 +232,7 @@ Below are some screenshots from QGIS itself and a selection of maps which were c
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
-{{< flickr-images showcase="screenshot" quantity="5" columns="gallery" >}}
+{{< hub-images showcase="screenshot" quantity="4" columns="gallery" >}}
 
 {{< column-end >}}
 {{< columns-end >}}
