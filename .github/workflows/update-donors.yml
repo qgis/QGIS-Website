@@ -4,7 +4,7 @@
 name: ⚒️ Update donors and commit
 on:
   schedule:
-    - cron:  '0 0,12 * * *'  # At midnight & noon UTC
+    - cron:  '0 1,7 * * *'  # At 01:00 and 07:00 UTC
   workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
 
 jobs:
