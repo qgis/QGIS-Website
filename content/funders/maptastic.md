@@ -5,11 +5,11 @@
 # To update: Run 'fetch_feeds.py' (automated nightly via GitHub Actions)
 # See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines
 
-level: "Medium"
-title: "Office of Public Works, Flood Risk Management and Data Management Section"
-logo: "office-of-public-works-flood-risk-management-data-.jpg"
-startDate: "2025-03-01"
+level: "Small"
+title: "Maptastic"
+logo: "maptastic.png"
+startDate: "2025-01-01"
 endDate: "2026-02-28"
-link: "http://www.opw.ie/"
-country: "Ireland"
+link: "www.maptastic.co.uk"
+country: "United Kingdom"
 ---
