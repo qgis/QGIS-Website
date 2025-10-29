@@ -12,6 +12,9 @@ During 2019-2025, the QGreenland team has released three main versions, with tot
 
 ## Graphics
 
+![QGreenland v3.0 interface showing Arctic sea routes, bathymetry, and various thematic data layers](images/V3Screenshot.webp)
+
+![QGreenland supports teaching GIS, easy data access, visualizations, and serves as a research tool](images/QGreenland_copy.webp)
 
 ## Links
 
