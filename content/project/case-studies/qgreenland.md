@@ -19,14 +19,14 @@ QGreenland is a free geospatial data package to support interdisciplinary Greenl
 ## About the project
 
 <figure>
-<img src="../images/V3Screenshot.webp" class="align-left" style="width:100.0%" alt="V3Screenshot.webp" />
+<img src="images/V3Screenshot.webp" class="align-left" style="width:100.0%" alt="V3Screenshot.webp" />
 <figcaption>QGreenland v3.0 interface showing Arctic sea routes, bathymetry, and various thematic data layers</figcaption>
 </figure>
 
 QGreenland development began in 2019 and is led by the National Snow and Ice Data Center, within the University of Colorado Boulder Cooperative Institute for Research in Environmental Sciences. QGreenland was inspired by the Antarctic-focused package, Quantarctica, but applying a different approach to development. The FAIR data principles (findable, accessible, interoperable, reproducible) are foundational to the QGreenland effort. QGreenland is built using free and open software, with development tools and workflows fully documented on GitHub. The QGreenland data package includes complete metadata and clear information about the original data sources. To the best of our ability, we aim to include data that are already free and publicly archived.
 
 <figure>
-<img src="../images/QGreenland.webp" class="align-left" style="width:100.0%" alt="QGreenland.webp" />
+<img src="images/QGreenland.webp" class="align-left" style="width:100.0%" alt="QGreenland.webp" />
 <figcaption>QGreenland supports teaching GIS, easy data access, visualizations, and serves as a research tool</figcaption>
 </figure>
 
