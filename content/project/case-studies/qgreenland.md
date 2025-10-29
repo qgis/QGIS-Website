@@ -18,21 +18,19 @@ QGreenland is a free geospatial data package to support interdisciplinary Greenl
 
 ## About the project
 
-<figure>
-<img src="images/V3Screenshot.webp" class="align-left" style="width:100.0%" alt="V3Screenshot.webp" />
-<figcaption>QGreenland v3.0 interface showing Arctic sea routes, bathymetry, and various thematic data layers</figcaption>
-</figure>
-
 QGreenland development began in 2019 and is led by the National Snow and Ice Data Center, within the University of Colorado Boulder Cooperative Institute for Research in Environmental Sciences. QGreenland was inspired by the Antarctic-focused package, Quantarctica, but applying a different approach to development. The FAIR data principles (findable, accessible, interoperable, reproducible) are foundational to the QGreenland effort. QGreenland is built using free and open software, with development tools and workflows fully documented on GitHub. The QGreenland data package includes complete metadata and clear information about the original data sources. To the best of our ability, we aim to include data that are already free and publicly archived.
 
-<figure>
-<img src="images/QGreenland.webp" class="align-left" style="width:100.0%" alt="QGreenland.webp" />
-<figcaption>QGreenland supports teaching GIS, easy data access, visualizations, and serves as a research tool</figcaption>
-</figure>
+![QGreenland v3.0 interface showing Arctic sea routes, bathymetry, and various thematic data layers](images/V3Screenshot.webp)
+
+*Figure 1: QGreenland v3.0 interface showing Arctic sea routes, bathymetry, and various thematic data layers*
 
 QGreenland is a research and education tool. QGreenland has a wide range of research and decision-making applications, including planning field work, synthesizing and analyzing data, and creating data and map visuals and figures. QGreenland is also used in high school to graduate classrooms and within classes that focuses on a wide range of topics, including GIS skills, polar climate, data skills, hydrology and physical sciences, and more. The QGreenland project includes tutorials for beginner GIS users and other QGreenland uses, curriculum activities, and inspiring resources to explore Greenland-focused geospatial data.
 
 During 2019-2025, the QGreenland team has released three main versions, with total downloads of more than 20,000. QGreenland is funded by the National Science Foundation and benefits from the generous efforts of a wide range of collaborators.
+
+![QGreenland supports teaching GIS, easy data access, visualizations, and serves as a research tool](images/QGreenland.webp)
+
+*Figure 2: QGreenland supports teaching GIS, easy data access, visualizations, and serves as a research tool*
 
 ## Links
 
