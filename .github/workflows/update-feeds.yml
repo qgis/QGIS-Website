@@ -39,7 +39,7 @@ jobs:
     - name: '⚙️ Update Hub Maps'
       run: |
         cd ./qgis-website
-        pipenv run ./scripts/hub_maps_harvest.py
+        pipenv run ./scripts/hub_images_harvest.py
 
     - name: '🏢 Update Contributing Organizations'
       run: |

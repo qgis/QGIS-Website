@@ -211,7 +211,7 @@ See ```.github/workflows/playwright-e2e.yml```
 | `config/commit.toml` | `get_commit_hash.sh` | Automatically updated on deployment |
 | `content/funders/` | `fetch_feeds.py` | Update the data from https://members.qgis.org |
 | `content/flickr-images/` | `fetch_feeds.py` | Content imported from Flickr feeds |
-| `content/hub-maps/` | `hub_maps_harvest.py` | Update the data from https://maps.qgis.org |
+| `content/hub-maps/` and `content/hub-screenshots/` | `hub_images_harvest.py` | Update the data from https://hub.qgis.org |
 | `content/funding/donate/github-sponsors.md` | GitHub Actions (`update-gh-sponsors.yml`) | ⚠️ **PARTIAL**: Only content outside `<!-- sponsors -->` comments can be edited |
 
 ### ✅ How to Properly Update Automated Content
@@ -232,9 +232,9 @@ See ```.github/workflows/playwright-e2e.yml```
 - **Sources:** External feeds and APIs
 - **Schedule:** Runs nightly via GitHub Actions
 
-#### 🗺️ Maps Showcase
-- **Source:** maps.qgis.org
-- **Script:** `scripts/hub_maps_harvest.py`
+#### 🗺️ Maps/Screenshot Showcase
+- **Source:** hub.qgis.org
+- **Script:** `scripts/hub_images_harvest.py`
 - **Schedule:** Runs twice daily via GitHub Actions
 
 #### 💖 GitHub Sponsors
