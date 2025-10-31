@@ -18,6 +18,18 @@ Note: The books are listed in order of newest first. After the English books, th
 
 ## English
 
+
+### Learn QGIS - Fifth Edition (Early Access)
+
+Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
+
+- [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
+    
+- Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser 
+    
+- Date: March 2026
+
+
 ### Spatial Analysis of Gender Based Work Force in India Using QGIS
 
 A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
@@ -126,18 +138,7 @@ Practical examples with real-world projects in GIS, Remote sensing, Geospatial d
 - Author: Shammunul Islam
     
 - Date: November 2018
-
-
-### Learn QGIS - Fifth Edition (Early Access)
-
-Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
-
-- [https://www.packtpub.com/en-de/product/learn-qgis-9781788998864](https://www.packtpub.com/en-de/product/learn-qgis-9781788998864)
-    
-- Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser 
-    
-- Date: March 2026
-    
+   
 
 ### Learn QGIS - Fourth Edition
 
