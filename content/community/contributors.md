@@ -16,10 +16,16 @@ sidebar: true
 
 {{< rich-box-start icon="🏢" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
-## Contributing Organizations
-These organizations actively contribute to QGIS, as reflected by their GitHub commit activity. To have your organization featured here, please update the [organizations.json](https://github.com/qgis/QGIS-Website/blob/main/data/contributors/organizations.json) file and submit a pull request. Refer to the [organizations_template.json](https://github.com/qgis/QGIS-Website/blob/main/data/contributors/organizations_template.json) for formatting guidelines.
 
-_Note: The `commits` and `last_contribution` fields are updated automatically to reflect the latest activity._
+## Contributing Organizations
+These organizations actively contribute to QGIS, as reflected by their GitHub commit activity.
+
+<div style="text-align:center;">
+	<a href="/community/contributors/add-organisation/" class="button is-success">
+		🚀 Add your Organisation!
+	</a>
+</div>
+
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
