@@ -1,6 +1,15 @@
-{{ $orgs := sort $.Site.Data.contributors.organizations "name" "asc" }}
+{{ $orgsList := slice }}
+{{ range $org := $.Site.Data.contributors.organizations }}
+  {{ $totalCommits := 0 }}
+  {{ range $k, $v := $org.contributions }}
+    {{ $totalCommits = add $totalCommits $v.commits }}
+  {{ end }}
+  {{ $orgsList = $orgsList | append (dict "org" $org "totalCommits" $totalCommits) }}
+{{ end }}
+{{ $sortedOrgs := sort $orgsList "totalCommits" "desc" }}
 <div class="organization-list">
-  {{ range $org := $orgs }}
+  {{ range $item := $sortedOrgs }}
+    {{ $org := $item.org }}
     <div class="card contributor-card organization organization-horizontal">
         <div class="card-content">
             <div class="columns is-vcentered">
