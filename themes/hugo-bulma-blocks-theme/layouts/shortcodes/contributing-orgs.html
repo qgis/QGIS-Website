@@ -21,8 +21,11 @@
                 </div>
                 <div class="column is-two-third">
                     <div class="org-info">
-                        <h3 class="title is-3">
+                        <h3 class="title is-3" id="{{ $org.name | urlize }}">
                             <a href="{{ $org.url }}" class= "external-link" target="_blank" rel="noopener">{{ $org.name }}</a>
+                            <a class="heading-anchor" href="#{{ $org.name | urlize }}">
+                                ¶
+                            </a>
                         </h3>
                         <p class="subtitle is-5">{{ $org.subtitle }}</p>
                         <div class="content">

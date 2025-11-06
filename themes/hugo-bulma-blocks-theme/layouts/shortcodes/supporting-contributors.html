@@ -2,12 +2,15 @@
 <div class="columns is-multiline">
     {{ range $idx, $contributor := $contributors }}
     <div class="column is-one-third">
-        <div class="card contributor-card individual">
+        <div class="card contributor-card individual" id="{{ .name | urlize}}">
             <div class="card-content has-text-centered">
                 <div class="avatar-container">
                     <img src="{{ $contributor.avatar_img }}" alt="{{ $contributor.name }}" class="avatar" loading="lazy">
                 </div>
                 <h3 class="title is-4">
+                    <a class="heading-anchor" href="#{{ .name | urlize }}" style="margin-left: -22.3px;">
+                        ¶
+                    </a>
                     {{ if .link }}
                         <a href="{{ .link }}" class="external-link" target="_blank" rel="noopener">
                             {{ .name }}
