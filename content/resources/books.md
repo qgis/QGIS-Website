@@ -18,6 +18,18 @@ Note: The books are listed in order of newest first. After the English books, th
 
 ## English
 
+
+### Learn QGIS - Fifth Edition (Early Access)
+
+Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
+
+- [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
+    
+- Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser 
+    
+- Date: March 2026
+
+
 ### Spatial Analysis of Gender Based Work Force in India Using QGIS
 
 A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
@@ -121,18 +133,18 @@ A workbook for Classroom or Independent Study
 
 Practical examples with real-world projects in GIS, Remote sensing, Geospatial data management and Analysis using the R programming language
 
-- [https://www.packtpub.com/application-development/hands-geospatial-analysis-r-and-qgis](https://www.packtpub.com/application-development/hands-geospatial-analysis-r-and-qgis)
+- [https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674](https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674)
     
 - Author: Shammunul Islam
     
 - Date: November 2018
-    
+   
 
 ### Learn QGIS - Fourth Edition
 
 Learn to view, edit and analyse geospatial data using QGIS and Python 3
 
-- [https://www.packtpub.com/application-development/learn-qgis-fourth-edition](https://www.packtpub.com/application-development/learn-qgis-fourth-edition)
+- [https://www.packtpub.com/en-de/product/learn-qgis-9781788998864](https://www.packtpub.com/en-de/product/learn-qgis-9781788998864)
     
 - Authors: Andrew Cutts, Anita Graser
     
@@ -163,7 +175,7 @@ Open the Door to GIS offers a way for teachers to use this powerful software in 
 
 Based on version QGIS 2.18, this book will teach you how to write Python code that works with spatial data to automate geoprocessing tasks in QGIS.
 
-- [https://www.packtpub.com/application-development/qgis-python-programming-cookbook-second-edition](https://www.packtpub.com/application-development/qgis-python-programming-cookbook-second-edition)
+- [https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102](https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102)
     
 - Author(s): Joel Lawhead
     
@@ -174,7 +186,7 @@ Based on version QGIS 2.18, this book will teach you how to write Python code th
 
 Master data management, visualization, and spatial analysis techniques in QGIS and become a GIS power user
 
-- [https://www.packtpub.com/big-data-and-business-intelligence/qgisbecoming-gis-power-user](https://www.packtpub.com/big-data-and-business-intelligence/qgisbecoming-gis-power-user)
+- [https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725](https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725)
     
 - Anita Graser, Ben Mearns, Alex Mandel, Victor Olaya Ferrero, Alexander Bruy
     
@@ -185,7 +197,7 @@ Master data management, visualization, and spatial analysis techniques in QGIS a
 
 Go beyond the basics and unleash the full power of QGIS with practical, step-by-step examples
 
-- [https://www.packtpub.com/big-data-and-business-intelligence/mastering-qgis-second-edition](https://www.packtpub.com/big-data-and-business-intelligence/mastering-qgis-second-edition)
+- [https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623](https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623)
     
 - Kurt Menke, GISP et al.
     
@@ -207,7 +219,7 @@ The Workbook for the GeoAcademy Curriculum
 
 Become a QGIS power user and master QGIS data management, visualisation and spatial analysis techniques
 
-- [https://www.packtpub.com/application-development/qgis-2-cookbook](https://www.packtpub.com/application-development/qgis-2-cookbook)
+- [https://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978](hhttps://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978)
     
 - Author(s): Alex Mandel, Anita Graser, Victor Olaya Ferrero, Alexander Bruy
     
@@ -218,7 +230,7 @@ Become a QGIS power user and master QGIS data management, visualisation and spat
 
 Use QGIS to create great maps and perform all the geoprocessing tasks you need.
 
-- [https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition](https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition)
+- [https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151](https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151)
     
 - Author(s): Anita Graser
     
@@ -234,24 +246,13 @@ Learn how to use QGIS to take your cartographic products to the highest level.
 - Author(s): Anita Graser and Gretchen N. Peterson
     
 - Date: March 2016
-    
-
-### Mastering QGIS
-
-Dive into QGIS and master geospatial data with this advanced guide, created to help you develop maps and applications that let you explore the world in new ways.
-
-- [https://www.packtpub.com/application-development/mastering-qgis](https://www.packtpub.com/application-development/mastering-qgis)
-    
-- Author(s): Kurt Menke, GISP - Dr. Richard Smith Jr., GISP - Dr. Luigi Pirelli - Dr John Van Hoesen, GISP
-    
-- Date: March 2015
-    
+       
 
 ### QGIS Blueprints
 
 Develop analytical location-based web applications with QGIS
 
-- [https://www.packtpub.com/hardware-and-creative/qgis-blueprints](https://www.packtpub.com/hardware-and-creative/qgis-blueprints)
+- [https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090](https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090)
     
 - Author(s): Ben Mearn
     
@@ -262,7 +263,7 @@ Develop analytical location-based web applications with QGIS
 
 Leverage the power of QGIS in real-world applications to become a powerful user in cartography and GIS analysis
 
-- [https://www.packtpub.com/application-development/qgis-example](https://www.packtpub.com/application-development/qgis-example)
+- [https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131](https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131)
     
 - Author(s): Alexander Bruy, Daria Svidzinsk
     
@@ -328,13 +329,13 @@ A tutorial of QGIS software and application.
 
 ## French
 
-### Systèmes d’information géographique. Cours et exercices corrigés avec Grass et Qgis
+### Systèmes d'information géographique - 3e édition Avec logiciels libres GRASS et QGIS
 
-- [https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-cours-et-exercices-corriges-avec-grass-et](https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-cours-et-exercices-corriges-avec-grass-et)
+- [https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0](https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0)
     
 - Auteur : Yves Auda
     
-- Date: March 2018
+- Date: September 2025
     
 
 ### Learning QGIS by example in french
