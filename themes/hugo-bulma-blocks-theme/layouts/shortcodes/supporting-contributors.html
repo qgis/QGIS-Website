@@ -25,7 +25,7 @@
 
 <!-- Render function for contributor cards -->
 {{ define "contributor-card" }}
-    <div class="card contributor-card organization organization-horizontal">
+    <div class="card contributor-card organization organization-horizontal" id="{{ .name | urlize}}">
         <div class="card-content">
             <div class="columns is-vcentered">
                 <div class="column is-narrow">
@@ -45,6 +45,9 @@
                             {{ else }}
                                 {{ .name }}
                             {{ end }}
+                            <a class="heading-anchor" href="#{{ .name | urlize }}">
+                                ¶
+                            </a>
                         </h3>
                         <div class="content">
                             <p>{{ .contribution_description }}</p>

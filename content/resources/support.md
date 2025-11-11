@@ -89,14 +89,16 @@ If you believe you have found a security issue, such as vulnerabilities in QGIS 
 
 ## Project Steering Committee (PSC) 
 
-If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list and email address:
+If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list or email address:
 
 {{< rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc"  layoutClass="half"listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 
-{{< rich-list listLink="mailto:qgis-psc@lists.osgeo.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="qgis-psc@lists.osgeo.org" >}}
+{{< rich-list listLink="mailto:psc@qgis.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="psc@qgis.org" >}}
 
 You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
 
-> **Note:** The PSC mailing list is intended for legal, trademark, funding, or administrative matters only. For general support, please use the mailing lists or communication channels mentioned above.
+Alternatively, you can reach the PSC directly at [psc@qgis.org](mailto:psc@qgis.org).
+
+> **Note:** The PSC mailing list and email address are intended for legal, trademark, funding, or administrative matters only. For general support, please use the mailing lists or communication channels mentioned above.
 
 {{< content-end >}}
