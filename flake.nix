@@ -7,7 +7,8 @@
   # };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-version.url = "github:QGIS/nixpkgs-version";
+    nixpkgs.follows = "nixpkgs-version/nixpkgs";
   };
 
   outputs =
