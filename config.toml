@@ -310,25 +310,40 @@ sectionPagesMenu = 'main'
   name = "Mailing Lists"
   url = "/community/organisation/mailinglists"
   weight = 220
-  
-[[menu.main]]
-  parent = "Community"
-  name = "Members Blogs"
-  url = "https://planet.qgis.org"
-  weight = 280
 
 
 [[menu.main]]
   parent = "Community"
   name = "Contributors"
   url = "/community/contributors"
-  weight = 280
+  weight = 240
 
 [[menu.main]]
   parent = "Contributors"
-  name = "Add your Organisation"
-  url = "/community/contributors/add-organisation"
+  name = "Organizations"
+  url = "/community/contributors/organisations"
+  weight = 241
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Individuals"
+  url = "/community/contributors/individuals"
+  weight = 242
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Supporting"
+  url = "/community/contributors/supporting"
+  weight = 243
+
+[[menu.main]]
+  parent = "Community"
+  name = "Members Blogs"
+  url = "https://planet.qgis.org"
   weight = 280
+
 
 [[menu.main]]
   name = "Resources"

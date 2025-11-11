@@ -2,13 +2,16 @@
 <div class="columns is-multiline">
     {{ range $idx, $contributor := $contributors }}
     <div class="column is-one-third">
-        <div class="card contributor-card individual">
+        <div class="card contributor-card individual" id="{{ .login | urlize }}">
             <div class="card-content has-text-centered">
                 <div class="avatar-container">
                     <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" class="avatar" loading="lazy">
                     <span class="level-indicator level-5 p-1"># {{ add $idx 1 }}</span>
                 </div>
                 <h3 class="title is-4">
+                    <a class="heading-anchor" href="#{{ .login | urlize }}" style="margin-left: -22.3px;">
+                        ¶
+                    </a>
                     <a href="https://github.com/{{ .login }}" class="external-link" target="_blank" rel="noopener">
                         {{ .login }}
                     </a>
