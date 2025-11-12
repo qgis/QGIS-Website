@@ -199,7 +199,7 @@ export class CommunityPage {
             page: "Brand Guidelines",
             texts: [
                 "QGIS Trademark and brand guidelines",
-                "Country User Groups",
+                "User Groups",
                 "Examples of use that do not require permission",
                 "Examples of use requiring permission",
                 "Prohibited Trademark uses",
