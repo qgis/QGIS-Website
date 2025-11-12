@@ -166,7 +166,6 @@ export class CommunityPage {
                 "Former PSC Members",
                 "Voting members",
                 "Honorable Voting Members",
-                "Country Voting Members",
                 "Community Voting Members",
                 "Release Management",
                 "Packaging Team",

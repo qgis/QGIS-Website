@@ -108,7 +108,7 @@ When referring to QGIS please do not undermine the validity of the main QGIS pro
         
     3.  **Exceptions**:
         
-        *   QGIS.ORG Country voting members should use their country TLD (QGIS.ch, QGIS.dk, …)
+        *   QGIS.ORG voting members should use their country TLD (QGIS.ch, QGIS.dk, …)
             
         *   Non-commercial projects can use qgis.xxxxx (qgis.tutorials would fall into this category if the tutorials are free) but should ask for permission before registering the domain. QGIS.ORG may register the domain and point it to the name servers provided by the requestor or instruct the requestor to do so.
 

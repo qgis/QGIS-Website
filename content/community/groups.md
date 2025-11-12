@@ -135,7 +135,7 @@ Reviewer: Tim Sutton
     
 *   Initialization/coordination of application modules, e.g. surveying, urban planning, server/web client, etc.
     
-*   Electing a representative to act as a [QGIS Country Voting Member]({{< ref "/community/organisation#voting-members" >}})
+*   Electing a representative to act as a [QGIS Voting Member]({{< ref "/community/organisation#voting-members" >}})
     
 
 ## General assumptions/recommendations
