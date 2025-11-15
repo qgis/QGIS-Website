@@ -166,7 +166,6 @@ export class CommunityPage {
                 "Former PSC Members",
                 "Voting members",
                 "Honorable Voting Members",
-                "Country Voting Members",
                 "Community Voting Members",
                 "Release Management",
                 "Packaging Team",
@@ -199,7 +198,7 @@ export class CommunityPage {
             page: "Brand Guidelines",
             texts: [
                 "QGIS Trademark and brand guidelines",
-                "Country User Groups",
+                "User Groups",
                 "Examples of use that do not require permission",
                 "Examples of use requiring permission",
                 "Prohibited Trademark uses",
