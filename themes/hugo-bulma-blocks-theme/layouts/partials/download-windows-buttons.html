@@ -1,0 +1,82 @@
+{{/*
+  Windows Download Buttons
+*/}}
+<!-- Network Installer Section -->
+<div class="notification is-primary2 is-light">
+  <p class="is-6 mb-2">
+    <strong>Online (OSGeo4W) installer</strong>
+  </p>
+  <p class="is-size-7 mb-3">Best way to keep QGIS up to date and manage multiple versions</p>
+  <a class="button mr-0 is-primary2 is-fullwidth" 
+      href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
+      onclick="thanks(this)"
+      download>
+    <span class="icon">
+      <i class="fas fa-cloud-download-alt"></i>
+    </span>
+    <span>Get OSGeo4W Installer</span>
+  </a>
+</div>
+
+<!-- LTR Section -->
+<div class="mb-5">
+  <div class="level is-mobile mb-2">
+    <div class="level-left">
+      <div class="level-item">
+        <p class="is-size-5 has-text-weight-medium mb-0">Long Term Release {{ .ltrversion }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="buttons has-addons is-fullwidth">
+    <a class="button is-primary1 is-expanded" 
+        href="{{ .ltr_msi }}"
+        onclick="thanks(this)"
+        download>
+      <span class="icon">
+        <i class="fas fa-download"></i>
+      </span>
+      <span>Download LTR {{ .ltrversion }}</span>
+    </a>
+    <a class="button is-light is-primary1 is-expanded" 
+        href="{{ .ltr_qt6_msi }}"
+        onclick="thanks(this)"
+        download>
+      <span class="icon">
+        <i class="fas fa-download"></i>
+      </span>
+      <span>{{ .ltrversion }} with Qt6 <span class="has-text-danger has-text-weight-semibold">*</span></span>
+    </a>
+  </div>
+</div>
+
+<!-- Latest Release Section -->
+<div class="mb-5">
+  <div class="level is-mobile mb-2">
+    <div class="level-left">
+      <div class="level-item">
+        <p class="is-size-5 has-text-weight-medium mb-0">Latest Release {{ .version }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="buttons has-addons is-fullwidth">
+    <a class="button is-info is-expanded" 
+        href="{{ .lr_msi }}"
+        onclick="thanks(this)"
+        download>
+      <span class="icon">
+        <i class="fas fa-download"></i>
+      </span>
+      <span>Download {{ .version }}</span>
+    </a>
+    <a class="button is-light is-primary1 is-expanded" 
+        href="{{ .lr_qt6_msi }}"
+        onclick="thanks(this)"
+        download>
+      <span class="icon">
+        <i class="fas fa-download"></i>
+      </span>
+      <span>{{ .version }} with Qt6 <span class="has-text-danger has-text-weight-semibold">*</span></span>
+    </a>
+  </div>
+  <span class="has-text-danger has-text-weight-medium">* Qt6 builds are experimental and may have stability issues.</span>
+</div>

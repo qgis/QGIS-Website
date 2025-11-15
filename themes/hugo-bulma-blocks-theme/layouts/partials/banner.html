@@ -1,5 +1,7 @@
 {{/* see https://bulma.io/documentation/layout/hero/ for size options */}}
-{{ if .Params.HasBanner }}
+{{ if .Params.HasDownloadBanner }}
+    {{ partial "download-banner.html" . }}
+{{ else if .Params.HasBanner }}
     {{ $size := .Params.HeroSize | default "is-small" }}
     <section
         class="hero is-primary1 {{ $size }} has-bg-img {{ if .Params.HeroIsUserConference }}user-conference{{ end }}"
