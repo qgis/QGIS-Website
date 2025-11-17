@@ -10,7 +10,6 @@ on:
 jobs:
   update-contributors:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'qgis'
     steps:
     - name: '🛒 Checkout QGIS Website'
       uses: actions/checkout@v4
