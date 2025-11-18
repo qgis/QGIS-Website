@@ -5,6 +5,7 @@ subtitle: ""
 draft: false
 sidebar: true
 url: '/download'
+HasDownloadBanner: true
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
 ---
@@ -35,32 +36,15 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 {{< rich-box-end >}}
 
 
-{{< download-platforms-start >}}
+{{< download-platform-selector-start >}}
 
-{{< spoiler-start id="download-win" title="Download for Windows">}}
-{{< download-windows >}}
-{{< spoiler-end >}}
+{{< platform-content-start platform="windows" >}}
+## Windows
+{{< download-windows>}}
+{{< platform-content-end >}}
 
-
-{{< spoiler-start id="download-linux" title="🐧 Linux" >}}
-GNU/Linux is a Free operating system built on the same principles that QGIS is built on.
-We provide installers for many flavors of GNU/Linux binary packages (including rpm and deb packages). Please select your choice of distro below:
-
-- [Debian/Ubuntu]({{< ref "resources/installation-guide#debian--ubuntu" >}})
-- [Fedora]({{< ref "resources/installation-guide#fedora" >}})
-- [NixOS]({{< ref "resources/installation-guide#nixos" >}})
-- [openSUSE]({{< ref "resources/installation-guide#suse--opensuse" >}})
-- [Mandriva]({{< ref "resources/installation-guide#mandriva" >}})
-- [Slackware]({{< ref "resources/installation-guide#slackware" >}})
-- [Arch Linux]({{< ref "resources/installation-guide#arch-linux" >}})
-- [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
-- [Spack]({{< ref "resources/installation-guide#spack" >}})
-
-[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
-{{< spoiler-end >}}
-
-
-{{< spoiler-start id="download-mac" title="🍏 macOS" >}}
+{{< platform-content-start platform="macos" >}}
+## macOS
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-2" >}}
 #### QGIS versions for macOS notice
@@ -84,25 +68,46 @@ After installing QGIS, the first launch attempt may fail due to Apple's security
 
 {{< rich-content-end >}}
 {{< rich-box-end >}}
+{{< platform-content-end >}}
 
-{{< spoiler-end >}}
+{{< platform-content-start platform="linux" >}}
+
+## Linux
+GNU/Linux is a Free operating system built on the same principles that QGIS is built on.
+We provide installers for many flavors of GNU/Linux binary packages (including rpm and deb packages). Please select your choice of distro below:
+
+- [Debian/Ubuntu]({{< ref "resources/installation-guide#debian--ubuntu" >}})
+- [Fedora]({{< ref "resources/installation-guide#fedora" >}})
+- [NixOS]({{< ref "resources/installation-guide#nixos" >}})
+- [openSUSE]({{< ref "resources/installation-guide#suse--opensuse" >}})
+- [Mandriva]({{< ref "resources/installation-guide#mandriva" >}})
+- [Slackware]({{< ref "resources/installation-guide#slackware" >}})
+- [Arch Linux]({{< ref "resources/installation-guide#arch-linux" >}})
+- [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
+- [Spack]({{< ref "resources/installation-guide#spack" >}})
+
+[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+{{< platform-content-end >}}
 
 
-{{< spoiler-start id="download-bsd" title="👿 BSD" >}}
+{{< platform-content-start platform="bsd" >}}
+## BSD
 [BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
-{{< spoiler-end >}}
+{{< platform-content-end >}}
 
-{{< spoiler-start id="download-container-images" title="🐳 Container Images" >}}
+
+{{< platform-content-start platform="container" >}}
+## Container Images
 [Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
-{{< spoiler-end >}}
+{{< platform-content-end >}}
 
-
-{{< spoiler-start id="download-mobile" title="📱Mobile and tablet" >}}
+{{< platform-content-start platform="mobile" >}}
+## Mobile and tablet
 {{< mobile-downloads >}}
-{{< spoiler-end >}}
+{{< platform-content-end >}}
 
-
-{{< spoiler-start title="📃 Source Code" >}}
+{{< platform-content-start platform="source" >}}
+## Source Code
 QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
 QGIS Source Code is available <a href="/downloads/qgis-latest.tar.bz2">here (latest release)</a> and <a href="/downloads/qgis-latest-ltr.tar.bz2">here (long term release)</a>
@@ -110,16 +115,13 @@ QGIS Source Code is available <a href="/downloads/qgis-latest.tar.bz2">here (lat
 Refer to the installation guide on how to compile QGIS from source for the different platforms: [here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
 You can also obtain the source code by cloning or forking our <a href="https://github.com/qgis/QGIS">GitHub repository</a>.
-{{< spoiler-end >}}
+{{< platform-content-end >}}
 
-
-{{< spoiler-start title="🗾 Example Datasets" >}}
+{{< platform-content-start platform="example" >}}
+## Example Datasets
 For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats.
-{{< spoiler-end >}}
+{{< platform-content-end >}}
 
-
-{{< download-platforms-end >}}
-
-{{< script src="js/spoiler.js" >}}
+{{< download-platform-selector-end >}}
 
 {{< content-end >}}
