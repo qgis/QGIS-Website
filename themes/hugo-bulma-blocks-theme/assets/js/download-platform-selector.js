@@ -158,3 +158,13 @@
         detectOS: detectOS
     };
 })();
+
+
+function thanks(element) {
+    event.preventDefault();
+    window.open(element.href);
+    // Redirect to thank you page after a short delay
+    setTimeout(function() {
+        window.location.href = '/download/thank-you';
+    }, 500);
+}
