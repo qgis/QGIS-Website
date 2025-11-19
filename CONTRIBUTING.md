@@ -59,8 +59,8 @@ Example, assuming that you use a dedicated directory for your local binaries :
 
 ```sh
 mkdir -p ~/apps/hugo_139/
-wget https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.3_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.139.3_linux-amd64.deb 
-dpkg -x hugo_extended_0.139.3_linux-amd64.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.139.4/hugo_extended_0.139.4_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.139.3_linux-amd64.deb 
+dpkg -x hugo_extended_0.139.3_linux-amd64.deb ~/apps/hugo_139/
 ~/apps/hugo_128/usr/local/bin/hugo server  
 ```
 
