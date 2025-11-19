@@ -10,18 +10,26 @@
         </div>
         <div class="stat-card">
             <div class="stat-number">
-                {{ $contributors := $.Site.Data.contributors.contributors.contributors }}
-                {{ len $contributors }}
+                {{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
+                {{ $githubContributors := 0 }}
+                {{ range $allContributors }}
+                    {{ if .has_github_account }}
+                        {{ $githubContributors = add $githubContributors 1 }}
+                    {{ end }}
+                {{ end }}
+                {{ $githubContributors }}
             </div>
             <div class="stat-label">Individual Contributors</div>
         </div>
         <div class="stat-card">
             <div class="stat-number">
-                {{ $contributors := $.Site.Data.contributors.contributors.contributors }}
+                {{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
                 {{ $totalCommits := 0 }}
-                {{ range $contributors }}
-                    {{ with .total_contributions }}
-                        {{ $totalCommits = add $totalCommits . }}
+                {{ range $allContributors }}
+                    {{ if .has_github_account }}
+                        {{ with .total_contributions }}
+                            {{ $totalCommits = add $totalCommits . }}
+                        {{ end }}
                     {{ end }}
                 {{ end }}
                 {{ lang.FormatNumber 0 $totalCommits }}
