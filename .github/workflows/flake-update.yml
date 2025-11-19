@@ -1,0 +1,42 @@
+name: Update nixpkgs
+
+on:
+  schedule:
+    - cron:  '0 1 * * 0'
+  workflow_dispatch:
+
+jobs:
+  nixpkgs-update:
+    name: Update nixpkgs
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.PAT }}
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+
+      - name: Run flake update
+        run: >
+          nix flake update nixpkgs-version
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7.0.7
+        with:
+          add-paths: |
+            flake.lock
+          title: "flake: flake update nixpkgs-version"
+          body: |
+            Update nixpkgs-version from `QGIS/qgis-nixpkgs-version`.
+          branch: nixpkgs-version-update-action-pr
+          delete-branch: true
+          commit-message: "flake: flake update nixpkgs-version"
+          committer: GitHub <noreply@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          token: ${{ secrets.PAT }}
