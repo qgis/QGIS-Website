@@ -1,4 +1,11 @@
-{{ $contributors := sort $.Site.Data.contributors.contributors.contributors "total_contributions" "desc" }}
+{{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
+{{ $contributors := slice }}
+{{ range $allContributors }}
+    {{ if .has_github_account }}
+        {{ $contributors = $contributors | append . }}
+    {{ end }}
+{{ end }}
+{{ $contributors = sort $contributors "total_contributions" "desc" }}
 <div class="columns is-multiline">
     {{ range $idx, $contributor := $contributors }}
     <div class="column is-one-third">
