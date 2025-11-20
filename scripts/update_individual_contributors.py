@@ -39,6 +39,9 @@ class GitHubContributionCounter:
             "QGIS-Certification-Website": "2025-03-19T00:00:00Z", 
             "QGIS-Changelog-Website": "2025-03-17T00:00:00Z"
         }
+        
+        # Load email-to-GitHub mappings
+        self.email_mappings = self.load_email_mappings()
 
         
     def check_rate_limit(self) -> Dict:
@@ -74,10 +77,14 @@ class GitHubContributionCounter:
         """
         Get commits with GitHub user associations using GraphQL.
         Uses pagination to handle large repos efficiently.
+        
+        For commits without GitHub user association (e.g., from migrations),
+        tracks by email and prefixes with 'email:' to distinguish from GitHub logins.
         """
         print(f"Fetching data for {owner}/{repo}:{branch}")
         contributions = defaultdict(int)
         excluded_bots = 0
+        anonymous_commits = 0  # Track commits without GitHub accounts
         has_next_page = True
         cursor = None
         processed_commits = 0
@@ -238,8 +245,21 @@ class GitHubContributionCounter:
                     author_login = author["user"]["login"]
                     if not self.is_bot_login(author_login):
                         contributions[author_login] += 1
-                # Skip anonymous commits (no GitHub account linked)
-                # This excludes entries like "no-github:irwingeorge@mac.com"
+                else:
+                    # No GitHub account linked - use email for anonymous commits
+                    author_email = author.get("email", "")
+                    author_name = author.get("name", "")
+                    
+                    # Skip if author email looks like a bot
+                    if author_email and not self.is_bot_email(author_email):
+                        # Use email as identifier, prefixed to distinguish from GitHub logins
+                        # Format: "email:user@example.com"
+                        contributions[f"email:{author_email}"] += 1
+                        anonymous_commits += 1
+                    elif author_name and not any(bot in author_name.lower() for bot in ['bot', 'github-actions']):
+                        # Fallback to name if no valid email (rare case)
+                        contributions[f"name:{author_name}"] += 1
+                        anonymous_commits += 1
             
             page_info = history["pageInfo"]
             has_next_page = page_info["hasNextPage"]
@@ -254,7 +274,7 @@ class GitHubContributionCounter:
                 break
                 
             # Safety check: prevent processing too many commits (likely infinite loop)
-            if processed_commits > 100000:  # 100k commits should be more than enough
+            if processed_commits > 150000:  # 150k commits should be more than enough
                 print(f"Warning: Processed {processed_commits} commits, stopping to prevent infinite loop...")
                 break
         
@@ -262,7 +282,7 @@ class GitHubContributionCounter:
             print(f"Warning: Reached maximum iterations ({max_iterations}), stopping pagination...")
         
         result = dict(contributions)
-        print(f"Total commits: {processed_commits}, Contributors: {len(result)}, Excluded bot commits: {excluded_bots}")
+        print(f"Total commits: {processed_commits}, Contributors: {len(result)}, Excluded bot commits: {excluded_bots}, Anonymous commits: {anonymous_commits}")
         
         return result
 
@@ -326,11 +346,34 @@ class GitHubContributionCounter:
                     # Accumulate contributions for this thematic
                     repo_contributors = set()
                     for login, commit_count in contributors_data.items():
-                        if login.startswith("no-github:") or self.is_bot_login(login):
+                        # Skip bot logins
+                        if self.is_bot_login(login):
                             continue
                         
-                        repo_contributors.add(login)
-                        thematic_contributors[login] += commit_count
+                        # Handle email-based contributors (from migrated commits)
+                        # Support both "email:" and old "no-github:" prefixes
+                        if login.startswith("email:") or login.startswith("name:") or login.startswith("no-github:"):
+                            # First check manual mapping file
+                            resolved_login = self.email_mappings.get(login)
+                            
+                            if resolved_login:
+                                # Successfully resolved to GitHub account
+                                repo_contributors.add(resolved_login)
+                                thematic_contributors[resolved_login] += commit_count
+                            else:
+                                # Keep as email-based contributor
+                                # Normalize to "email:" format for consistency
+                                if login.startswith("no-github:"):
+                                    normalized_login = "email:" + login[10:]
+                                    repo_contributors.add(normalized_login)
+                                    thematic_contributors[normalized_login] += commit_count
+                                else:
+                                    repo_contributors.add(login)
+                                    thematic_contributors[login] += commit_count
+                        else:
+                            # Regular GitHub login
+                            repo_contributors.add(login)
+                            thematic_contributors[login] += commit_count
                     
                     print(f"    Processed {len(repo_contributors)} contributors")
                     
@@ -340,17 +383,33 @@ class GitHubContributionCounter:
             
             # Now update all contributors with accumulated thematic contributions
             for login, commit_count in thematic_contributors.items():
-                # Get avatar URL
-                avatar_url = self.get_user_avatar(login)
+                # Get avatar URL (handle email-based contributors)
+                # Support "email:", "name:", and old "no-github:" prefixes
+                if login.startswith("email:") or login.startswith("name:") or login.startswith("no-github:"):
+                    avatar_url = "" # No avatar for email-based contributors
+                else:
+                    # Regular GitHub user
+                    avatar_url = self.get_user_avatar(login)
+                
+                # Determine if this is a GitHub account
+                has_github = not (login.startswith("email:") or login.startswith("name:") or login.startswith("no-github:"))
                 
                 # Initialize contributor if not exists
                 if login not in all_contributors:
-                    all_contributors[login] = {
+                    contributor_data = {
                         "login": login,
                         "avatar_url": avatar_url,
                         "total_contributions": 0,
-                        "thematics": {}
+                        "thematics": {},
+                        "has_github_account": has_github
                     }
+                    all_contributors[login] = contributor_data
+                else:
+                    # Update avatar URL in case it changed
+                    all_contributors[login]["avatar_url"] = avatar_url
+                    # Update has_github_account if it's now a real account
+                    if has_github:
+                        all_contributors[login]["has_github_account"] = True
                 
                 # Set thematic contributions and update total
                 all_contributors[login]["thematics"][thematic] = commit_count
@@ -363,6 +422,21 @@ class GitHubContributionCounter:
         
         return all_contributors
     
+    def load_email_mappings(self) -> dict:
+        """Load email-to-GitHub login mappings from JSON file."""
+        mapping_file = "data/contributors/email_mapping.json"
+        if not os.path.exists(mapping_file):
+            print(f"Warning: Email mapping file not found: {mapping_file}")
+            return {}
+        
+        try:
+            with open(mapping_file, 'r') as f:
+                data = json.load(f)
+                return data.get("mappings", {})
+        except Exception as e:
+            print(f"Warning: Could not load email mappings: {e}")
+            return {}
+
     def get_user_avatar(self, login: str) -> str:
         """Get user avatar URL using GraphQL"""
         query = """
@@ -431,6 +505,24 @@ class GitHubContributionCounter:
         
         with open(output_path, 'w') as f:
             json.dump(result, f, indent=2, ensure_ascii=False)
+    
+    def extract_clean_identifier(self, login: str) -> str:
+        """Extract a clean identifier from email: or name: prefixed logins."""
+        if login.startswith("email:"):
+            email = login[6:]  # Remove "email:" prefix
+            # Extract username before @
+            if "@" in email:
+                return email.split("@")[0]
+            return email
+        elif login.startswith("name:"):
+            return login[5:]  # Remove "name:" prefix
+        elif login.startswith("no-github:"):
+            email = login[10:]  # Remove "no-github:" prefix
+            if "@" in email:
+                return email.split("@")[0]
+            return email
+        return login
+    
     
     def is_bot_login(self, login: str) -> bool:
         """Check if GitHub login is a bot."""
