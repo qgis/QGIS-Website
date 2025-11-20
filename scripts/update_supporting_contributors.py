@@ -4,10 +4,12 @@ Script to convert Supporting Contributor Application CSV responses into supporti
 
 This script:
 1. Reads the CSV file from Google Forms responses
-2. Filters for approved entries only
-3. Converts data to supporting.json format
-4. Sets is_active based on end date (false if ended >3 years ago)
-5. Completely replaces the content of supporting.json
+2. Checks that avatar images exist in static/img/contributors/supporting/
+3. Resizes images to max 300px height
+4. Filters for approved entries only
+5. Converts data to supporting.json format
+6. Sets is_active based on end date (false if ended >3 years ago)
+7. Outputs email lists (BCC) for approved and rejected contributors
 
 Usage:
     python scripts/update_supporting_contributors.py <path_to_csv>
@@ -19,8 +21,13 @@ Example:
 import csv
 import json
 import sys
+import os
 from datetime import datetime, timedelta
 from pathlib import Path
+
+# Import the resize_image function
+sys.path.insert(0, str(Path(__file__).parent))
+from resize_image import resize_image
 
 
 def parse_date(date_str):
@@ -87,17 +94,30 @@ def csv_to_supporting_json(csv_path, output_path):
         csv_path: Path to the CSV file
         output_path: Path to the output JSON file
     """
+    # Load existing contributors to check for new entries
+    existing_contributors = []
+    if os.path.exists(output_path):
+        with open(output_path, 'r', encoding='utf-8') as f:
+            existing_contributors = json.load(f)
+    
+    existing_names = {c['name'].lower() for c in existing_contributors}
+    
     contributors = []
+    approved_emails = []
+    rejected_emails = []
+    skipped_no_image = []
+    
+    # Get the project root directory
+    script_dir = Path(__file__).parent
+    project_root = script_dir.parent
     
     with open(csv_path, 'r', encoding='utf-8') as csvfile:
         # Use semicolon as delimiter based on the CSV format
         reader = csv.DictReader(csvfile, delimiter=';')
         
         for row in reader:
-            # Only process approved entries
+            # Get approval status
             approved = row.get('Approved (yes/no)', '').strip().lower()
-            if approved != 'yes':
-                continue
             
             # Determine if organization or individual
             entry_type = row.get('Individual or Organisation', '').strip()
@@ -115,57 +135,158 @@ def csv_to_supporting_json(csv_path, output_path):
                 print(f"Warning: Skipping entry with no name: {row}")
                 continue
             
-            # Parse roles
-            roles = parse_roles(row.get('Type of activities', ''))
+            # Get email
+            email = row.get('Email Address', '').strip()
             
-            # Get description
-            description = row.get('Description of contribution', '').strip()
+            # Skip if already processed
+            if name.lower() in existing_names:
+                continue
             
-            # Get link
-            link = row.get('Website/Profile link', '').strip()
-            
-            # Get start and end dates
-            start_date = parse_date(row.get('Please enter the start date of your activities with the QGIS community', ''))
-            end_date = parse_date(row.get('Please enter the end date of your activities with the QGIS community', ''))
-            
-            # Determine if active
-            is_active = is_active_contributor(end_date)
-            
-            # Generate avatar filename
+            # Generate avatar filename base (without extension)
             avatar_img = generate_avatar_filename(name, is_organization)
+            avatar_base = avatar_img.rsplit('.', 1)[0]  # Remove .png extension
             
-            # Create contributor entry
-            contributor = {
-                "name": name,
-                "is_organization": is_organization,
-                "is_active": is_active,
-                "avatar_img": avatar_img,
-                "link": link if link else None,
-                "roles": roles,
-                "contribution_description": description,
-                "start_date": start_date,
-                "end_date": end_date
-            }
-            
-            contributors.append(contributor)
+            # Check if approved
+            if approved == 'yes':
+                # Check for image with various extensions
+                possible_extensions = ['.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG']
+                avatar_path = None
+                final_avatar_img = None
+                
+                for ext in possible_extensions:
+                    test_path = project_root / 'static' / (avatar_base + ext).lstrip('/')
+                    if os.path.exists(test_path):
+                        avatar_path = test_path
+                        final_avatar_img = avatar_base + ext
+                        break
+                
+                if not avatar_path:
+                    skipped_no_image.append({
+                        'name': name,
+                        'email': email,
+                        'expected_path': str(project_root / 'static' / avatar_img.lstrip('/'))
+                    })
+                    continue
+                
+                # Resize the image
+                try:
+                    resize_image(str(avatar_path), max_height=300)
+                except Exception as e:
+                    print(f"Warning: Failed to resize image for {name}: {e}")
+                
+                # Parse roles
+                roles = parse_roles(row.get('Type of activities', ''))
+                
+                # Get description
+                description = row.get('Description of contribution', '').strip()
+                
+                # Get link
+                link = row.get('Website/Profile link', '').strip()
+                
+                # Get start and end dates
+                start_date = parse_date(row.get('Please enter the start date of your activities with the QGIS community', ''))
+                end_date = parse_date(row.get('Please enter the end date of your activities with the QGIS community', ''))
+                
+                # Determine if active
+                is_active = is_active_contributor(end_date)
+                
+                # Create contributor entry
+                contributor = {
+                    "name": name,
+                    "is_organization": is_organization,
+                    "is_active": is_active,
+                    "avatar_img": final_avatar_img,
+                    "link": link if link else None,
+                    "roles": roles,
+                    "contribution_description": description,
+                    "start_date": start_date,
+                    "end_date": end_date
+                }
+                
+                contributors.append(contributor)
+                if email:
+                    approved_emails.append({'name': name, 'email': email})
+                
+            elif approved == 'no':
+                # Collect rejected email
+                if email:
+                    rejected_emails.append({'name': name, 'email': email})
+    
+    # Merge with existing contributors
+    all_contributors = existing_contributors + contributors
     
     # Sort by start date (oldest first), using a very old date for missing start dates
-    contributors.sort(key=lambda x: x.get('start_date') or '9999-12-31')
+    all_contributors.sort(key=lambda x: x.get('start_date') or '9999-12-31')
     
     # Write to JSON file
     with open(output_path, 'w', encoding='utf-8') as jsonfile:
-        json.dump(contributors, jsonfile, indent=2, ensure_ascii=False)
+        json.dump(all_contributors, jsonfile, indent=2, ensure_ascii=False)
     
-    print(f"✅ Successfully converted {len(contributors)} approved contributors to {output_path}")
-    print(f"   - Organizations: {sum(1 for c in contributors if c['is_organization'])}")
-    print(f"   - Individuals: {sum(1 for c in contributors if not c['is_organization'])}")
-    print(f"   - Active: {sum(1 for c in contributors if c['is_active'])}")
-    print(f"   - Inactive: {sum(1 for c in contributors if not c['is_active'])}")
+    # Print summary
+    print(f"✅ Successfully processed contributors")
+    print(f"   - New approved contributors: {len(contributors)}")
+    print(f"   - Total contributors in JSON: {len(all_contributors)}")
+    print(f"   - Skipped (no image): {len(skipped_no_image)}")
+    print(f"   - Rejected: {len(rejected_emails)}")
     
-    # Print avatar filenames for reference
-    print("\n📸 Avatar images needed (add these to static/img/contributors/):")
-    for contributor in contributors:
-        print(f"   - {contributor['avatar_img']}")
+    # Print skipped entries
+    if skipped_no_image:
+        print(f"\n⚠️  Skipped entries (image not found):")
+        for entry in skipped_no_image:
+            print(f"   - {entry['name']}: {entry['expected_path']}")
+    
+    # Print email information
+    print("\n" + "="*80)
+    print("📧 EMAIL NOTIFICATIONS")
+    print("="*80)
+    
+    if approved_emails:
+        print(f"\n✅ APPROVED CONTRIBUTORS ({len(approved_emails)}):")
+        print("\nBCC Recipients:")
+        bcc_list = "; ".join([f"{e['email']}" for e in approved_emails])
+        print(f"{bcc_list}")
+        
+        print("\n--- Email Content (Approval) ---")
+        print("Subject: ✅ Your QGIS Supporting Contributor Application - Approved")
+        print("\nBody:")
+        print("""Dear Contributor,
+
+Thank you for your submission to become a QGIS Supporting Contributor!
+
+We are pleased to inform you that your application has been approved. Your profile will be listed on our Supporting Contributors page soon at:
+https://qgis.org/community/contributors/supporting/
+
+Your contributions to the QGIS community are greatly valued and appreciated!
+
+Best regards,
+The QGIS Community Team""")
+        print("\n" + "-"*80)
+    
+    if rejected_emails:
+        print(f"\n❌ REJECTED APPLICATIONS ({len(rejected_emails)}):")
+        print("\nBCC Recipients:")
+        bcc_list = "; ".join([f"{e['email']}" for e in rejected_emails])
+        print(f"{bcc_list}")
+        
+        print("\n--- Email Content (Rejection) ---")
+        print("Subject: Re: Your QGIS Supporting Contributor Application")
+        print("\nBody:")
+        print("""Dear Contributor,
+
+Thank you for your submission to become a QGIS Supporting Contributor.
+
+After careful review, we are unable to approve your application at this time. This may be due to incomplete information or not meeting the current criteria.
+
+You are welcome to submit a new application with additional details about your contributions to the QGIS community.
+
+Best regards,
+The QGIS Community Team""")
+        print("\n" + "-"*80)
+    
+    if not approved_emails and not rejected_emails:
+        print("\n✨ No new notifications to send (all entries already processed)")
+    
+    print("\n" + "="*80)
 
 
 def main():
