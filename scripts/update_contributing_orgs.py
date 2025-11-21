@@ -5,6 +5,7 @@ import json
 import requests
 import datetime
 import os
+import argparse
 
 CONFIG_PATH = "data/contributors/config.json"
 ORG_PATH = "data/contributors/organizations.json"
@@ -41,13 +42,24 @@ def get_commit_counts(repo_name, author=None, since=None, until=None):
         return response.json()
     return None
 
-def update_stats():
+def update_stats(target_orgs=None,target_thematics=None):
     print("Loading config and organizations...")
+    print("Target organizations : ", target_orgs)
+    print("Target thematics : ", target_thematics)
     config = load_json(CONFIG_PATH)
     orgs = load_json(ORG_PATH)
     for org in orgs:
+        # Do not process the org found if it is not in given targets
+        if target_orgs and org["name"].lower() not in [o.lower() for o in target_orgs]:
+            print(f"Skip {org['name']}.")
+            continue
+
         print(f"Processing organization: {org['name']}")
         for thematic, repos in config["repositories"].items():
+            # Do not process the thematic if not in given targets
+            if target_thematics and thematic.lower() not in [t.lower() for t in target_thematics]:
+                continue
+
             print(f"  Thematic area: {thematic}")
             if not repos:
                 print(f"    Skipping {thematic} (no repositories defined)")
@@ -86,6 +98,13 @@ def update_stats():
     print("Done.")
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Update contributor statistics.")
+    parser.add_argument("--orgs", help="Organizations to update ( comma-separated ). Default to all.")
+    parser.add_argument("--thematics", help="Thematics to update ( comma-separated ). Default to all.")
+    args = parser.parse_args()
+
     fetch_all_repos()
-    update_stats()
+    target_orgs = [o.strip() for o in args.orgs.split(',')] if args.orgs else None
+    target_thematics = [t.strip() for t in args.thematics.split(',')] if args.thematics else None
+    update_stats(target_orgs=target_orgs,target_thematics=target_thematics)
 
