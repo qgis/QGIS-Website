@@ -45,16 +45,11 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 
 {{< platform-content-start platform="macos" >}}
 ## macOS
-{{< rich-box-start icon="⚠️" layoutClass="tips">}}
-{{< rich-content-start themeClass="coloring-2" >}}
-#### QGIS versions for macOS notice
-The QGIS installers for macOS are currently **outdated** and do not reflect the latest version of QGIS. If you need newer features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}).  We are working on new, solid macOS builds for QGIS 4. If you wish to be an early beta tester, you can test a preview build at [this repository](https://github.com/opengisch/qgis-notarize). This package will become an official, OSGEO signed package as of QGIS 4.0.
-
-{{< rich-content-end >}}
-{{< rich-box-end >}}
 {{< download-macos >}}
 
 Alternatively, for native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components (e.g. GDAL, PDAL, GRASS GIS) see [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
+
+{{< platform-content-end >}}
 
 {{< rich-box-start icon="💁" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
