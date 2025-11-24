@@ -117,5 +117,22 @@
           };
         }
       );
+
+      #
+      ### CHECKS
+      #
+
+      checks = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgsFor.${system};
+        in
+        import ./nix/tests.nix {
+          inherit pkgs;
+          website = self.packages.${system}.website;
+          devShell = self.devShells.${system}.default;
+          websiteApp = self.apps.${system}.website.program;
+        }
+      );
     };
 }
