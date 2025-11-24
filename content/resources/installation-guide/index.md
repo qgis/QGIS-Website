@@ -116,7 +116,7 @@ Add the QGIS repo for the latest stable QGIS ({{< param "version" >}}.x to `/etc
 cat << EOF | sudo tee /etc/apt/sources.list.d/qgis.sources
 Types: deb deb-src
 URIs: https://qgis.org/debian
-Suites: $(sed -n "s/VERSION_CODENAME=\(.*\)/\1/p" /etc/os-release)
+Suites: $(. /etc/os-release; [ "$ID" = "debian" ] && grep -q "/sid" /etc/debian_version && echo "sid" || echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
 Architectures: amd64
 Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
