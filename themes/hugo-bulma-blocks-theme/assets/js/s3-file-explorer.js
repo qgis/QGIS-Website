@@ -27,6 +27,15 @@
     
     let searchTimeout = null;
     
+    // Helper function to generate download URL from key
+    function getDownloadUrl(key) {
+        // Get base URL without hash
+        const baseUrl = window.location.origin + window.location.pathname;
+        // Remove trailing slash if present
+        const cleanUrl = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
+        return cleanUrl + '/' + key;
+    }
+    
     // Public initialization function
     window.initS3Explorer = function(data) {
         // Parse tree if it's a string
@@ -128,11 +137,11 @@
                 const newPath = [...currentPath, folderName];
                 navigateToPath(newPath);
             } else if (type === 'file') {
-                const url = row.dataset.downloadUrl;
+                const key = row.dataset.fileKey;
                 const name = row.dataset.fileName;
                 // Trigger download
                 const a = document.createElement('a');
-                a.href = url;
+                a.href = getDownloadUrl(key);
                 a.download = name;
                 document.body.appendChild(a);
                 a.click();
@@ -304,14 +313,15 @@
         files.forEach(file => {
             const icon = getCategoryIcon(file.category);
             const color = getCategoryColor(file.category);
+            const downloadUrl = getDownloadUrl(file.key);
             html += `
-                <tr style="cursor: pointer;" data-type="file" data-download-url="${file.download_url}" data-file-name="${file.name}">
+                <tr style="cursor: pointer;" data-type="file" data-file-key="${file.key}" data-file-name="${file.name}">
                     <td>
                         <span class="icon-text">
                             <span class="icon has-text-${color}">
                                 <i class="${icon}"></i>
                             </span>
-                            <span><a href="${file.download_url}" class="file-link" title="${file.download_url}">${file.name}</a></span>
+                            <span><a href="${downloadUrl}" class="file-link" title="${downloadUrl}">${file.name}</a></span>
                         </span>
                     </td>
                     <td class="is-hidden-mobile">${file.size_formatted}</td>
@@ -390,14 +400,15 @@
         sortedResults.forEach(file => {
             const icon = getCategoryIcon(file.category);
             const color = getCategoryColor(file.category);
+            const downloadUrl = getDownloadUrl(file.key);
             html += `
-                <tr style="cursor: pointer;" data-type="file" data-download-url="${file.download_url}" data-file-name="${file.name}">
+                <tr style="cursor: pointer;" data-type="file" data-file-key="${file.key}" data-file-name="${file.name}">
                     <td>
                         <span class="icon-text">
                             <span class="icon has-text-${color}">
                                 <i class="${icon}"></i>
                             </span>
-                            <span><a href="${file.download_url}" class="file-link" title="${file.download_url}">${file.name}</a></span>
+                            <span><a href="${downloadUrl}" class="file-link" title="${downloadUrl}">${file.name}</a></span>
                         </span>
                         <br>
                         <small class="has-text-grey">${file.path}</small>

@@ -133,7 +133,7 @@ class S3FileExplorer:
                     if key.endswith("/"):
                         continue
                     
-                    # Get file metadata
+                    # Get file metadata (only essential fields for lightweight output)
                     file_info = {
                         "key": key,
                         "name": Path(key).name,
@@ -144,12 +144,7 @@ class S3FileExplorer:
                         "last_modified_timestamp": int(obj["LastModified"].timestamp()),
                         "extension": Path(key).suffix.lower(),
                         "category": self.get_file_category(key),
-                        "mime_type": mimetypes.guess_type(key)[0] or "application/octet-stream",
-                        "etag": obj.get("ETag", "").strip('"'),
                     }
-                    
-                    # Generate download URL (public URL if bucket is public, or presigned URL)
-                    file_info["download_url"] = self.generate_download_url(key)
                     
                     files.append(file_info)
                     total_objects += 1
@@ -169,23 +164,6 @@ class S3FileExplorer:
         except ClientError as e:
             print(f"❌ Error accessing S3: {e}")
             sys.exit(1)
-
-    def generate_download_url(self, key: str) -> str:
-        """Generate download URL for S3 object."""
-        # For public buckets, use direct URL
-        # For private buckets, you might want to generate presigned URLs
-        
-        endpoint = self.s3_client.meta.endpoint_url
-        if endpoint:
-            # S3-compatible service
-            return f"{endpoint}/{self.bucket_name}/{key}"
-        else:
-            # AWS S3
-            region = self.s3_client.meta.region_name
-            if region == "us-east-1":
-                return f"https://{self.bucket_name}.s3.amazonaws.com/{key}"
-            else:
-                return f"https://{self.bucket_name}.s3.{region}.amazonaws.com/{key}"
 
     def build_file_tree(self, files: List[Dict]) -> Dict:
         """Build hierarchical file tree from flat file list."""
