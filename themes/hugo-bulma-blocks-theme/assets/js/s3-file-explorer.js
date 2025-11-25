@@ -54,7 +54,9 @@
         
         attachEventListeners();
         updateSortIcons();
-        renderCurrentDirectory();
+        
+        // Initialize from URL hash
+        loadFromUrl();
     }
     
     function attachEventListeners() {
@@ -153,6 +155,11 @@
                 renderCurrentDirectory();
             }
         });
+        
+        // Browser back/forward button support
+        window.addEventListener('popstate', function(e) {
+            loadFromUrl();
+        });
     }
     
     function updateSortIcons() {
@@ -169,11 +176,11 @@
         });
     }
     
-    function navigateToPath(pathArray) {
+    function navigateToPath(pathArray, updateUrl = true) {
         currentPath = pathArray;
         currentNode = treeData;
         
-        // Traverse the tree to find the current node
+        // Traverse the tree to find the current node (case-sensitive)
         for (let i = 0; i < pathArray.length; i++) {
             const folderName = pathArray[i];
             const found = currentNode.children.find(child => child.name === folderName && child.type === 'folder');
@@ -187,8 +194,32 @@
             }
         }
         
+        // Update URL hash
+        if (updateUrl) {
+            updateUrlHash();
+        }
+        
         renderBreadcrumb();
         renderCurrentDirectory();
+    }
+    
+    function updateUrlHash() {
+        const hash = currentPath.length > 0 ? '#' + currentPath.join('/') : '#';
+        history.pushState({ path: currentPath }, '', hash);
+    }
+    
+    function loadFromUrl() {
+        const hash = window.location.hash.substring(1); // Remove '#'
+        
+        if (!hash) {
+            // Root path
+            navigateToPath([], false);
+            return;
+        }
+        
+        // Split path and filter empty segments
+        const pathArray = hash.split('/').filter(segment => segment.length > 0);
+        navigateToPath(pathArray, false);
     }
     
     function renderBreadcrumb() {
@@ -250,14 +281,16 @@
         // Render folders first
         folders.forEach(folder => {
             const fileCount = countFilesInFolder(folder);
+            const folderHash = [...currentPath, folder.name].join('/');
+            const folderUrl = '#' + folderHash;
             html += `
                 <tr style="cursor: pointer;" data-type="folder" data-folder-name="${folder.name}">
                     <td>
                         <span class="icon-text">
-                            <span class="icon has-text-warning">
+                            <span class="icon has-text-primary2">
                                 <i class="fas fa-folder"></i>
                             </span>
-                            <span>${folder.name}</span>
+                            <span><a href="${folderUrl}" class="file-link" title="Navigate to ${folder.name}">${folder.name}</a></span>
                         </span>
                         <br><small class="has-text-grey">${fileCount} item${fileCount !== 1 ? 's' : ''}</small>
                     </td>
@@ -459,10 +492,10 @@
     
     function getCategoryColor(category) {
         const colors = {
-            'installer': 'primary',
+            'installer': 'primary1',
             'archive': 'info',
             'document': 'link',
-            'image': 'success',
+            'image': 'danger',
             'video': 'danger',
             'data': 'warning',
             'source': 'grey',
