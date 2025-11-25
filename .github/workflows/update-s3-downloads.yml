@@ -1,0 +1,59 @@
+# Workflow to update S3 downloads file listing
+name: 📦 Update S3 Downloads
+
+on:
+  # Run daily at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * *'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  update-s3-downloads:
+    name: Update S3 Downloads List
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install boto3
+      
+      - name: Fetch S3 bucket contents
+        env:
+          S3_BUCKET_NAME: ${{ secrets.S3_BUCKET_NAME }}
+          S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
+          S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          S3_ENDPOINT_URL: ${{ secrets.S3_ENDPOINT_URL }}
+        run: |
+          python scripts/update_s3_downloads.py
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code data/s3_downloads.json || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/s3_downloads.json
+          git commit -m "🤖 Update S3 downloads listing [skip ci]"
+          git push
+      
+      - name: Report status
+        if: steps.git-check.outputs.changed != 'true'
+        run: |
+          echo "ℹ️ No changes detected in S3 downloads listing"
