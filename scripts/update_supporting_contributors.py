@@ -277,7 +277,7 @@ Thank you for your submission to become a QGIS Supporting Contributor.
 
 After careful review, we are unable to approve your application at this time. This may be due to incomplete information or not meeting the current criteria.
 
-You are welcome to submit a new application with additional details about your contributions to the QGIS community.
+Please review our application guidelines at https://qgis.org/community/contributors/application-guidelines to understand what is needed for acceptance. You are welcome to submit a new application with additional details about your contributions to the QGIS community.
 
 Best regards,
 The QGIS Community Team""")
