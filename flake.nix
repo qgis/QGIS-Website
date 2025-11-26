@@ -7,11 +7,12 @@
   # };
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-version.url = "github:QGIS/qgis-nixpkgs-version";
+    nixpkgs.follows = "nixpkgs-version/nixpkgs-25-05";
   };
 
   outputs =
-    { self, nixpkgs }:
+    { self, nixpkgs, ... }:
 
     let
       # Flake system
