@@ -47,7 +47,7 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 ## macOS
 {{< download-macos >}}
 
-Alternatively, for native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components (e.g. GDAL, PDAL, GRASS GIS) see [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
+Alternatively, it is also possible to install QGIS via MacPorts, see the [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
 
 {{< platform-content-end >}}
 
