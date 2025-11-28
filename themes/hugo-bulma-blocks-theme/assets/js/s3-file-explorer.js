@@ -30,7 +30,7 @@
     // Helper function to generate download URL from key
     function getDownloadUrl(key) {
         // Get base URL without hash
-        const baseUrl = window.location.origin + window.location.pathname;
+        const baseUrl = window.location.origin + '/downloads';
         // Remove trailing slash if present
         const cleanUrl = baseUrl.endsWith('/') ? baseUrl.slice(0, -1) : baseUrl;
         return cleanUrl + '/' + key;
