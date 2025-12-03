@@ -10,9 +10,7 @@ sidebar: true
 
 {{< content-start >}}
 
-{{< contribution-stats >}}
-
-{{< rich-box-start icon="🏢" layoutClass="tips">}}
+{{< rich-box-start layoutClass="has-right rounded" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
 
 ## Contributing Organizations
@@ -26,15 +24,19 @@ Organizations making meaningful contributions to the QGIS project through develo
 
 
 {{< rich-content-end >}}
+
+{{< rich-right-start >}}  
+{{< contribution-stats "orgs" "/community/contributors/organisations/" >}}
+{{< rich-right-end >}}
+
 {{< rich-box-end >}}
 
 
 
-{{< rich-box-start icon="🧑‍💻" layoutClass="tips">}}
+{{< rich-box-start layoutClass="has-right rounded" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ## Individual Contributors
 Celebrating the developers and contributors who help build QGIS through their code contributions and collaborative efforts.
-
 
 <div style="text-align:center;">
 	<a href="/community/contributors/individuals/" class="button is-success">
@@ -43,15 +45,17 @@ Celebrating the developers and contributors who help build QGIS through their co
 </div>
 
 {{< rich-content-end >}}
+{{< rich-right-start >}}  
+{{< contribution-stats "individuals" "/community/contributors/individuals/" >}}
+{{< rich-right-end >}}
 {{< rich-box-end >}}
 
 
 
-{{< rich-box-start icon="🙋" layoutClass="tips">}}
+{{< rich-box-start layoutClass="has-right rounded" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ## Supporting Contributors
 Recognizing valuable contributions beyond code commits—community support, outreach, and behind-the-scenes efforts.
-
 
 <div style="text-align:center;">
 	<a href="/community/contributors/supporting/" class="button is-success">
@@ -60,6 +64,9 @@ Recognizing valuable contributions beyond code commits—community support, outr
 </div>
 
 {{< rich-content-end >}}
+{{< rich-right-start >}}  
+{{< contribution-stats "supporting" "/community/contributors/supporting/" >}}
+{{< rich-right-end >}}
 {{< rich-box-end >}}
 
 {{< content-end >}}

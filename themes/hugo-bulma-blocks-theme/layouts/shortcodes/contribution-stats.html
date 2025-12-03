@@ -1,15 +1,22 @@
 <!-- Stats Overview -->
+{{ $type := .Get 0 | default "all" }}
+{{ $link := .Get 1 | default "" }}
+
 <div class="container">
     <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-number">
+        {{ if or (eq $type "all") (eq $type "orgs") }}
+        <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
+            <div class="has-text-weight-semibold is-size-2">
                 {{ $orgs := $.Site.Data.contributors.organizations }}
                 {{ len $orgs }}
             </div>
             <div class="stat-label">Organizations</div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-number">
+        </a>
+        {{ end }}
+
+        {{ if or (eq $type "all") (eq $type "individuals") }}
+        <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
+            <div class="has-text-weight-semibold is-size-2">
                 {{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
                 {{ $githubContributors := 0 }}
                 {{ range $allContributors }}
@@ -20,9 +27,12 @@
                 {{ $githubContributors }}
             </div>
             <div class="stat-label">Individual Contributors</div>
-        </div>
+        </a>
+        {{ end }}
+
+        {{ if or (eq $type "all") (eq $type "commits") }}
         <div class="stat-card">
-            <div class="stat-number">
+            <div class="has-text-weight-semibold is-size-2">
                 {{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
                 {{ $totalCommits := 0 }}
                 {{ range $allContributors }}
@@ -36,5 +46,16 @@
             </div>
             <div class="stat-label">Commits</div>
         </div>
+        {{ end }}
+
+        {{ if or (eq $type "all") (eq $type "supporting") }}
+        <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
+            <div class="has-text-weight-semibold is-size-2">
+                {{ $supportingContributors := $.Site.Data.contributors.supporting }}
+                {{ len $supportingContributors }}
+            </div>
+            <div class="stat-label">Supporting Contributors</div>
+        </a>
+        {{ end }}
     </div>
 </div>
