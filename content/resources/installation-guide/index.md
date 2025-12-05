@@ -446,6 +446,94 @@ environment.systemPackages = [
   ];
 ```
 
+### Flake-based Configuration
+
+If you're using a flake-based NixOS configuration, you can add QGIS directly from the QGIS repository as a flake input.
+
+**Add to your flake inputs:**
+
+```
+{
+  inputs = {
+    # ... your other inputs
+
+    # For QGIS Master
+    qgis-master-repo = {
+      url = "github:qgis/QGIS/master";
+    };
+
+    # For QGIS Latest
+    qgis-latest-repo = {
+      url = "github:qgis/QGIS/release-3_44";
+    };
+
+    # For QGIS LTR
+    qgis-ltr-repo = {
+      url = "github:qgis/QGIS/release-3_40";
+    };
+  };
+}
+```
+
+**Access the packages in your configuration:**
+
+```
+{ inputs, system, ... }:
+
+let
+
+  # For QGIS Latest
+  qgisLatest = inputs.qgis-latest-repo.packages.${system}.default 
+    or inputs.qgis-latest-repo.defaultPackage.${system};
+  
+  # For QGIS LTR
+  qgisLtr = inputs.qgis-ltr-repo.packages.${system}.default 
+    or inputs.qgis-ltr-repo.defaultPackage.${system};
+
+  # For QGIS Master
+  qgisMaster = inputs.qgis-master-repo.packages.${system}.default 
+    or inputs.qgis-master-repo.defaultPackage.${system};
+in
+{
+  environment.systemPackages = [
+    qgisLatest  # or qgisLtr or qgisMaster
+  ];
+}
+```
+
+### Using Cachix to Speed Up Builds
+
+To avoid building QGIS from source (which can take a long time), you can use the QGIS Cachix cache for the LTR and Latest versions. This will download pre-built binaries instead of compiling everything locally.
+
+**Install Cachix (if not already installed):**
+
+```bash
+nix-env -iA cachix -f https://cachix.org/api/v1/install
+```
+
+**Add the QGIS cache:**
+
+```bash
+cachix use qgis
+```
+
+**Or add it directly to your NixOS configuration:**
+
+```
+{
+  nix.settings = {
+    substituters = [
+      "https://qgis.cachix.org"
+    ];
+    trusted-public-keys = [
+      "qgis.cachix.org-1:<add_qgis_cachix_public_key_here>"
+    ];
+  };
+}
+```
+
+After adding the cache, subsequent builds and installations for the LTR and Latest versions will download pre-built binaries from Cachix, significantly reducing build times.
+
 ### Running developer snapshots - Remote
 
 You can run in-development versions of QGIS with a single command directly 
