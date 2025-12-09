@@ -175,11 +175,15 @@ class S3FileExplorer:
             "files": [],
         }
         
-        # Group files by directory
-        directories = {}
+        # Folders to exclude from the tree (prevent memory overload from large repos)
+        excluded_folder_prefixes = ('ubuntu', 'debian')
         
         for file in files:
             path_parts = file["path"].split("/") if file["path"] else []
+            
+            # Skip files in excluded folders
+            if path_parts and any(path_parts[0].lower().startswith(prefix) for prefix in excluded_folder_prefixes):
+                continue
             
             # Navigate/create directory structure
             current_level = tree
