@@ -458,17 +458,17 @@ If you're using a flake-based NixOS configuration, you can add QGIS directly fro
     # ... your other inputs
 
     # For QGIS Master
-    qgis-master-repo = {
+    qgis-master-branch = {
       url = "github:qgis/QGIS/master";
     };
 
     # For QGIS Latest
-    qgis-latest-repo = {
+    qgis-latest-branch = {
       url = "github:qgis/QGIS/release-3_44";
     };
 
     # For QGIS LTR
-    qgis-ltr-repo = {
+    qgis-ltr-branch = {
       url = "github:qgis/QGIS/release-3_40";
     };
   };
@@ -486,12 +486,10 @@ let
   qgisLatest = inputs.qgis-latest-branch.packages.${system}.qgis;
   
   # For QGIS LTR
-  qgisLtr = inputs.qgis-ltr-repo.packages.${system}.default 
-    or inputs.qgis-ltr-repo.defaultPackage.${system};
+  qgisLtr = inputs.qgis-ltr-repo.packages.${system}.qgis;
 
   # For QGIS Master
-  qgisMaster = inputs.qgis-master-repo.packages.${system}.default 
-    or inputs.qgis-master-repo.defaultPackage.${system};
+  qgisMaster = inputs.qgis-master-repo.packages.${system}.qgis;
 in
 {
   environment.systemPackages = [
@@ -502,7 +500,7 @@ in
 
 ### Using Cachix to Speed Up Builds
 
-To avoid building QGIS from source (which can take a long time), you can use the QGIS Cachix cache for the LTR and Latest versions. This will download pre-built binaries instead of compiling everything locally.
+To avoid building QGIS from source (which can take a long time), you can use the QGIS [Cachix cache](https://www.cachix.org/) for the LTR and Latest versions. This will download pre-built binaries instead of compiling everything locally.
 
 **Install Cachix (if not already installed):**
 
