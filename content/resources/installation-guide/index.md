@@ -38,7 +38,7 @@ Standalone installers include everything QGIS needs in a single download. Once y
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|
 |Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|
 
-The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase, these also act as **release candidate** installers.
+The weekly snapshots of the nightly qgis-qt6-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase, these also act as **release candidate** installers.
 
 ## Online (OSGeo4W) installer
 
@@ -58,12 +58,19 @@ Alternatively, instead of doing the _Express_ install, you can use the _Advanced
 |Release|Version|Package|Description|
 |---|---|---|---|
 |Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|qgis|Release|
+|||qgis-qt6 |Release (Qt6)[[2]](#id2)|
 |||qgis-rel-dev [[1]](#id1)|Nightly build of the upcoming point release|
+|||qgis-qt6-rel-dev [[1]](#id1)|Nightly build of the upcoming point release (Qt6)[[2]](#id2)|
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|qgis-ltr|Release|
-|||qgis-ltr-dev [[1]](#id1)|Nightly build of the upcoming long term point release|
-|Development|{{< param "devversion" >}} master|qgis-dev [[1]](#id1)|Nightly build of the development version|
+|||qgis-qt6-ltr|Release (Qt6)[[2]](#id2)|
+|||qgis-ltr-dev [[1]](#id1)|Nightly build of the upcoming long term point release (Qt5)|
+|||qgis-qt6-ltr-dev [[1]](#id1)|Nightly build of the upcoming long term point release (Qt6)[[2]](#id2)|
+|Development|{{< param "devversion" >}} master|qgis-qt6-dev [[1]](#id1)|Nightly build of the development version|
+|||qgis-dev [[1]](#id1)|Nightly build of the development version (Qt5) [[2]](#id2)|
 
 {{< footnote "1" >}} Nightlies are debug builds (including debugging output that can be used by developers to better understand issues with the build).
+
+{{< footnote "2" >}} 3.99 will become 4.0 and mark the switch to Qt6.  Earlier versions of QGIS are experimental with Qt6. Starting with 3.99 only Qt6 is supported and Qt5 deprecated.
 
 The packages listed in the above table only install the necessary dependencies needed to run QGIS. Corresponding to those packages there are also meta packages with the suffix `-full-free` and `-full`. The `-full-free` contains additional optional dependencies that some popular (not included in the default QGIS install) plugins use.  The `-full` includes everything from `-full-free` and also adds proprietary extensions like Oracle drivers, ECW and MrSID.
 
