@@ -1,5 +1,5 @@
 ---
-title: "QGIS to describe the Cesena\'s Wall"
+title: "QGIS to describe the Cesena's Wall"
 draft: false
 HasBanner: false
 sidebar: true
