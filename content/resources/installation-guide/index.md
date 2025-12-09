@@ -483,8 +483,7 @@ If you're using a flake-based NixOS configuration, you can add QGIS directly fro
 let
 
   # For QGIS Latest
-  qgisLatest = inputs.qgis-latest-repo.packages.${system}.default 
-    or inputs.qgis-latest-repo.defaultPackage.${system};
+  qgisLatest = inputs.qgis-latest-branch.packages.${system}.qgis;
   
   # For QGIS LTR
   qgisLtr = inputs.qgis-ltr-repo.packages.${system}.default 
