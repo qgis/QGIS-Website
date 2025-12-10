@@ -7,7 +7,7 @@ thumbnail: "images/QGreenland.webp"
 section: "project"
 type: "case-study"
 date: 2025-10-29
-featured: true
+featured: false
 archived: false
 ---
 {{< content-start >}}
