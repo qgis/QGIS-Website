@@ -1,0 +1,112 @@
+{{ $data := $.Site.Data.s3_downloads }}
+
+{{ $js := resources.Get "js/s3-file-explorer.js" }}
+{{ if $js }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ end }}
+
+<!-- Search Controls -->
+<div class="control has-icons-left has-icons-right">
+    <input class="input is-primary3" type="text" id="s3-search-input" placeholder="Search by filename...">
+    <span class="icon is-left">
+        <i class="fas fa-search"></i>
+    </span>
+    <span class="icon is-right is-clickable" id="search-clear" style="pointer-events: all; display: none;">
+        <i class="fas fa-times-circle"></i>
+    </span>
+</div>
+
+<!-- Breadcrumb Navigation -->
+<nav class="breadcrumb mt-4 mb-4" aria-label="breadcrumbs" id="s3-breadcrumb">
+    <ul>
+        <li class="is-active">
+            <a href="#" aria-current="page">
+                <span class="icon is-small"><i class="fas fa-home"></i></span>
+                <span>Home</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<!-- File List View -->
+<div id="s3-list-view" class="s3-list-container">
+    <div class="table-container">
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th class="sortable" data-sort="name">
+                        Name
+                        <span class="icon is-small sort-icon">
+                            <i class="fas fa-sort"></i>
+                        </span>
+                    </th>
+                    <th class="is-hidden-mobile sortable" data-sort="size">
+                        Size
+                        <span class="icon is-small sort-icon">
+                            <i class="fas fa-sort"></i>
+                        </span>
+                    </th>
+                    <th class="is-hidden-mobile sortable" data-sort="date">
+                        Modified
+                        <span class="icon is-small sort-icon">
+                            <i class="fas fa-sort"></i>
+                        </span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="s3-files-tbody">
+                <!-- Files and folders will be rendered here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<!-- Results Info Bar -->
+<div class="s3-results-info mt-4" id="s3-results-info">
+    <div class="level is-mobile">
+        <div class="level-left">
+            <div class="level-item">
+                <span>Showing <strong id="s3-results-count">0</strong> items</span>
+            </div>
+        </div>
+        <div class="level-right">
+            <div class="level-item">
+                <button class="button is-small is-light" id="reset-filters">
+                    <span class="icon"><i class="fas fa-redo"></i></span>
+                    <span class="is-hidden-mobile">Reset</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- No Results Message -->
+<div id="s3-no-results" class="s3-no-results" style="display: none;">
+    <p class="mb-4">
+        <span class="icon is-large has-text-grey-lighter">
+            <i class="fas fa-folder-open fa-3x"></i>
+        </span>
+    </p>
+    <p class="title is-5 has-text-grey">No items found</p>
+    <p class="subtitle is-6 has-text-grey-light">This folder is empty or no items match your search</p>
+    <button class="button is-primary1 is-light" id="reset-filters-no-results">
+        <span class="icon"><i class="fas fa-redo"></i></span>
+        <span>Reset Filters</span>
+    </button>
+</div>
+
+<script>
+// Initialize the S3 Explorer with tree data
+document.addEventListener('DOMContentLoaded', function() {
+    if (typeof initS3Explorer === 'function') {
+        initS3Explorer({
+            tree: {{ $data.tree | jsonify }},
+            totalFiles: {{ len $data.files }}
+        });
+    } else {
+        console.error('S3 Explorer: initS3Explorer function not found');
+    }
+});
+</script>
