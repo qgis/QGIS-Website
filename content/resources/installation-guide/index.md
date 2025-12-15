@@ -145,12 +145,16 @@ Update your repository information to also reflect the newly added QGIS one:
 sudo apt update
 ```
 
-Now, install QGIS:
+To install QGIS, choose the package that matches your preferred Qt version:
 
-```
-sudo apt install qgis qgis-plugin-grass
-```
-
+- For the Qt6 build:
+  ```
+  sudo apt install qgis-qt6 qgis-plugin-grass-qt6
+  ```
+- For the default Qt5 build:
+  ```
+  sudo apt install qgis qgis-plugin-grass
+  ```
 {{< rich-box-start icon="✍️" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
@@ -289,6 +293,14 @@ After that type the commands below to install QGIS:
 sudo apt update
 sudo apt install qgis qgis-plugin-grass
 ```
+{{< rich-box-start icon="💡" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+##### Note
+
+**QGIS Qt6 Support:**  
+By default, the `qgis` package is built with Qt5. If you require QGIS with Qt6 support, install the `qgis-qt6` package instead.
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 In case you would like to install QGIS Server, type:
 
