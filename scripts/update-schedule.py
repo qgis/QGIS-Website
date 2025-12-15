@@ -268,7 +268,7 @@ with open("data/conf.json", "w") as f:
         "lr_qt6_sha": f"/downloads/QGISQT6-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
         "ltr_qt6_msi": f"/downloads/QGISQT6-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
         "ltr_qt6_sha": f"/downloads/QGISQT6-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
-        "weekly_msi": "https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D",
+        "weekly_msi": "/downloads/windows/weekly/",
     }, f, indent=4)
 
 o = open("content/schedule.ics", "wb")
