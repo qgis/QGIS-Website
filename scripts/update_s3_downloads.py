@@ -133,6 +133,10 @@ class S3FileExplorer:
                     if key.endswith("/"):
                         continue
                     
+                    # Skip paths with double slashes (malformed paths)
+                    if "//" in key:
+                        continue
+                    
                     # Get file metadata (only essential fields for lightweight output)
                     file_info = {
                         "key": key,
