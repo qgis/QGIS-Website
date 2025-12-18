@@ -172,6 +172,17 @@ Added 2022
 
 *  Adelcides Varela, Cabo Verde
 
+*  Germán Carrillo, Colombia
+  
+
+Added 2024
+
+* Stefanos Natsis, Greece
+
+* Isabel Kiefer, Switzerland
+
+* Damiano Lombardi, Switzerland
+
 
 ### OSGEO Voting Member
   
