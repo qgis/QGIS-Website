@@ -35,6 +35,21 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 {{< rich-right-end >}}
 {{< rich-box-end >}}
 
+{{< rich-box-start icon="🧩" layoutClass="tips">}}
+{{< rich-content-start themeClass="coloring-1" >}}
+
+## Source Code & Open Development
+
+QGIS is free and open source software. You can download the complete source code or explore its development online.
+
+- Download the latest source code release: <a href="/downloads/qgis-latest.tar.bz2">qgis-latest.tar.bz2</a>
+- Download the long term release (LTR) source code: <a href="/downloads/qgis-latest-ltr.tar.bz2">qgis-latest-ltr.tar.bz2</a>
+- Browse, clone, or fork the QGIS Git repository on <a href="https://github.com/qgis/QGIS">GitHub</a>
+
+Instructions for building QGIS from source are available in the <a href="https://github.com/qgis/QGIS/blob/master/INSTALL.md">installation guide</a>.
+
+{{< rich-content-end >}}
+{{< rich-box-end >}}
 
 {{< download-platform-selector-start >}}
 
