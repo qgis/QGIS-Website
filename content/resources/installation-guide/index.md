@@ -38,7 +38,7 @@ Standalone installers include everything QGIS needs in a single download. Once y
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|
 |Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|
 
-The weekly snapshots of the nightly qgis-qt6-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase, these also act as **release candidate** installers.
+The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase, these also act as **release candidate** installers.
 
 ## Online (OSGeo4W) installer
 
@@ -58,19 +58,18 @@ Alternatively, instead of doing the _Express_ install, you can use the _Advanced
 |Release|Version|Package|Description|
 |---|---|---|---|
 |Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|qgis|Release|
-|||qgis-qt6 |Release (Qt6)[[2]](#id2)|
+|||qgis-qt6|Release (Qt6)[[2]](#id2)|
 |||qgis-rel-dev [[1]](#id1)|Nightly build of the upcoming point release|
 |||qgis-qt6-rel-dev [[1]](#id1)|Nightly build of the upcoming point release (Qt6)[[2]](#id2)|
 |Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|qgis-ltr|Release|
 |||qgis-qt6-ltr|Release (Qt6)[[2]](#id2)|
 |||qgis-ltr-dev [[1]](#id1)|Nightly build of the upcoming long term point release (Qt5)|
 |||qgis-qt6-ltr-dev [[1]](#id1)|Nightly build of the upcoming long term point release (Qt6)[[2]](#id2)|
-|Development|{{< param "devversion" >}} master|qgis-qt6-dev [[1]](#id1)|Nightly build of the development version|
-|||qgis-dev [[1]](#id1)|Nightly build of the development version (Qt5) [[2]](#id2)|
+|Development|{{< param "devversion" >}} master|qgis-dev [[1]](#id1)|Nightly build of the development version[[2]](#id2)|
 
 {{< footnote "1" >}} Nightlies are debug builds (including debugging output that can be used by developers to better understand issues with the build).
 
-{{< footnote "2" >}} 3.99 will become 4.0 and mark the switch to Qt6.  Earlier versions of QGIS are experimental with Qt6. Starting with 3.99 only Qt6 is supported and Qt5 deprecated.
+{{< footnote "2" >}} 3.99 will become 4.0 and marks the switch to Qt6.  Earlier versions of QGIS are experimental with Qt6. Starting with 3.99 only Qt6 is supported.
 
 The packages listed in the above table only install the necessary dependencies needed to run QGIS. Corresponding to those packages there are also meta packages with the suffix `-full-free` and `-full`. The `-full-free` contains additional optional dependencies that some popular (not included in the default QGIS install) plugins use.  The `-full` includes everything from `-full-free` and also adds proprietary extensions like Oracle drivers, ECW and MrSID.
 
@@ -145,13 +144,8 @@ Update your repository information to also reflect the newly added QGIS one:
 sudo apt update
 ```
 
-To install QGIS, choose the package that matches your preferred Qt version:
+To install QGIS, run:
 
-- For the Qt6 build:
-  ```
-  sudo apt install qgis-qt6 qgis-plugin-grass-qt6
-  ```
-- For the default Qt5 build:
   ```
   sudo apt install qgis qgis-plugin-grass
   ```
@@ -200,12 +194,10 @@ Lines of packages:
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
 ||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
 ||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
-| Development Version | {{< param "devversion" >}} master [[3]](#id3) | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
 ||| Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |  |  |
 
 {{< footnote "2" >}} Nightlies are debug builds (including debugging output)
-
-{{< footnote "3" >}} For Debian trixie and sid and Ubuntu plucky and questing the builds of master currently have Qt5 (package qgis) and Qt6 (package qgis-qt6) versions.
 
 <small>
 Next point release: {{< param "nextpointreleasedate" >}}
@@ -217,22 +209,23 @@ Next release: {{< param "nextreleasedate" >}}
 
 #### Supported distribution versions: {#available-codenames}
 
-|Distribution|Version         |Codename             |Also available based on ubuntugis-unstable dependencies?|Qt6 version of master available|
-|------------|----------------|---------------------|--------------------------------------------------------|-------------------------------|
-|Debian      |12.x (stable)   |bookworm             |                                                        |                               |
-|            |13.x (testing)  |trixie [[4]](#id4)   |                                                        | yes                           |
-|            |unstable        |sid                  |                                                        | yes                           |
-|Ubuntu      |25.10           |questing [[5]](#id5) |                                                        | yes                           |
-|            |25.04           |plucky [[4]](#id4)   |                                                        | yes                           |
-|            |24.10           |oracular [[6]](#id5) |                                                        |                               |
-|            |24.04 (LTS)     |noble                |yes                                                     |                               |
-|            |22.04 (LTS)     |jammy                |yes                                                     |                               |
+|Distribution|Version         |Codename             |Master nightlies[[5]](#id5)|ubuntugis[[6]](#id6)|
+|------------|----------------|---------------------|---------------------------|--------------------|
+|Debian      |12.x (stable)   |bookworm             |                           |                    |
+|            |13.x (testing)  |trixie [[3]](#id3)   |yes                        |                    |
+|            |unstable        |sid                  |yes                        |                    |
+|Ubuntu      |25.10           |questing [[4]](#id4) |yes                        |                    |
+|            |25.04           |plucky [[3]](#id3)   |yes                        |                    |
+|            |24.04 (LTS)     |noble                |                           |yes                 |
+|            |22.04 (LTS)     |jammy                |                           |yes                 |
 
-{{< footnote "4" >}} starting with 3.40.8/3.44.0
+{{< footnote "3" >}} starting with 3.40.8/3.44.0
 
-{{< footnote "5" >}} starting with 3.40.11/3.44.3
+{{< footnote "4" >}} starting with 3.40.11/3.44.3
 
-{{< footnote "6" >}} only up to 3.40.7/3.44.2 (oracular EOL)
+{{< footnote "5" >}} based on Qt6
+
+{{< footnote "6" >}} builds based on ubuntugis dependencies
 
 To use the QGIS archive you have to first add the archive’s repository public key:
 
@@ -293,14 +286,6 @@ After that type the commands below to install QGIS:
 sudo apt update
 sudo apt install qgis qgis-plugin-grass
 ```
-{{< rich-box-start icon="💡" layoutClass="tips">}}
-{{< rich-content-start themeClass="coloring-1" >}}
-##### Note
-
-**QGIS Qt6 Support:**  
-By default, the `qgis` package is built with Qt5. If you require QGIS with Qt6 support, install the `qgis-qt6` package instead.
-{{< rich-content-end >}}
-{{< rich-box-end >}}
 
 In case you would like to install QGIS Server, type:
 
