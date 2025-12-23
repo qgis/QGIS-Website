@@ -20,7 +20,7 @@ Since 2009 the QGIS community has been organizing developer and user meetings ar
 When: 5-7 October 2026
 Where: Switzerland
 
-{{< button class = "is-primary1" link = "https://uc2026.qgis.org/" text = "Learn more" >}} 
+{{< button class = "is-primary1" link = "https://conference.qgis.org/" text = "Learn more" >}} 
 
 {{< rich-content-end >}}
 {{< rich-right-start >}}
