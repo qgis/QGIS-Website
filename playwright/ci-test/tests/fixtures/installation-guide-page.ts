@@ -27,7 +27,6 @@ export class InstallationGuidePage {
     public readonly releaseWithUbuntugisCell2: Locator;
     public readonly distributionCell: Locator;
     public readonly codenameCell: Locator;
-    public readonly alsoAvailableBasedOnCell: Locator;
     public readonly wgetQgisPre: Locator;
     public readonly qgisArchiveKeyringPre: Locator;
     public readonly mkdirAptPre1: Locator;
@@ -176,9 +175,6 @@ export class InstallationGuidePage {
             .getByRole("columnheader", { name: "Distribution" })
             .first();
         this.codenameCell = this.page.getByRole("columnheader", { name: "Codename" });
-        this.alsoAvailableBasedOnCell = this.page.getByRole("columnheader", {
-            name: "Also available based on",
-        });
         this.wgetQgisPre = this.page
             .locator("pre")
             .filter({ hasText: "wget https://download.qgis." });
