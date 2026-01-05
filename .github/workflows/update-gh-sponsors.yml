@@ -13,7 +13,7 @@ jobs:
     if: github.repository_owner == 'qgis'
     steps:
       - name: '🛎️ Checkout'
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: '💖 Generate Sponsors'
         uses: JamesIves/github-sponsors-readme-action@v1
