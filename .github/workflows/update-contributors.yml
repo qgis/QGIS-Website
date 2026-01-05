@@ -48,7 +48,7 @@ jobs:
         echo "Contributing organizations update completed"
 
     - name: '✉️ Commit and push changes'
-      uses: stefanzweifel/git-auto-commit-action@v5
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: '🤖 Contributors and organizations data updated via GitHub Action'
         repository: ./qgis-website
