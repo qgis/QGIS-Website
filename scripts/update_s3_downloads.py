@@ -169,7 +169,7 @@ class S3FileExplorer:
             print(f"❌ Error accessing S3: {e}")
             sys.exit(1)
 
-    def build_file_tree(self, files: List[Dict]) -> Dict:
+    def build_file_tree(self, files: List[Dict], excluded_prefixes: tuple = ()) -> Dict:
         """Build hierarchical file tree from flat file list."""
         tree = {
             "name": self.bucket_name,
@@ -179,14 +179,14 @@ class S3FileExplorer:
             "files": [],
         }
         
-        # Folders to exclude from the tree (prevent memory overload from large repos)
-        excluded_folder_prefixes = ('ubuntu', 'debian')
+        # Folders to exclude from the tree (if specified)
+        excluded_folder_prefixes = excluded_prefixes
         
         for file in files:
             path_parts = file["path"].split("/") if file["path"] else []
             
-            # Skip files in excluded folders
-            if path_parts and any(path_parts[0].lower().startswith(prefix) for prefix in excluded_folder_prefixes):
+            # Skip files in excluded folders (if specified)
+            if excluded_folder_prefixes and path_parts and any(path_parts[0].lower().startswith(prefix) for prefix in excluded_folder_prefixes):
                 continue
             
             # Navigate/create directory structure
@@ -273,9 +273,9 @@ class S3FileExplorer:
         
         return stats
 
-    def save_to_json(self, files: List[Dict], output_path: str):
+    def save_to_json(self, files: List[Dict], output_path: str, excluded_prefixes: tuple = ('ubuntu', 'debian')):
         """Save files data to JSON."""
-        tree = self.build_file_tree(files)
+        tree = self.build_file_tree(files, excluded_prefixes=excluded_prefixes)
         stats = self.generate_statistics(files)
         
         data = {
@@ -284,7 +284,6 @@ class S3FileExplorer:
             "generated_at": datetime.datetime.now(datetime.UTC).isoformat(),
             "statistics": stats,
             "tree": tree,
-            "files": files,
         }
         
         # Ensure output directory exists
@@ -296,6 +295,51 @@ class S3FileExplorer:
         print(f"✅ Saved file data to: {output_path}")
         print(f"   Total files: {stats['total_files']}")
         print(f"   Total size: {stats['total_size_formatted']}")
+    
+    def save_linux_packages_json(self, files: List[Dict], output_dir: str, distributions: List[str]):
+        """Save linux packages to separate JSON files per distribution."""
+        # Ensure output directory exists
+        os.makedirs(output_dir, exist_ok=True)
+        
+        for dist in distributions:
+            # Filter files for this specific distribution
+            filtered_files = []
+            for file in files:
+                path_parts = file["path"].split("/") if file["path"] else []
+                if path_parts and path_parts[0].lower() == dist.lower():
+                    # Remove the distribution prefix from the path
+                    file_copy = file.copy()
+                    if len(path_parts) > 1:
+                        file_copy["path"] = "/".join(path_parts[1:])
+                    else:
+                        file_copy["path"] = ""
+                    filtered_files.append(file_copy)
+            
+            if not filtered_files:
+                print(f"⚠️  No files found for distribution: {dist}")
+                continue
+            
+            # Build tree without exclusions (include all filtered files)
+            tree = self.build_file_tree(filtered_files, excluded_prefixes=())
+            stats = self.generate_statistics(filtered_files)
+            
+            data = {
+                "bucket_name": self.bucket_name,
+                "prefix": self.prefix,
+                "distribution": dist,
+                "generated_at": datetime.datetime.now(datetime.UTC).isoformat(),
+                "statistics": stats,
+                "tree": tree,
+            }
+            
+            # Replace hyphens with underscores in filename for Hugo compatibility
+            filename = dist.replace("-", "_") + ".json"
+            output_path = os.path.join(output_dir, filename)
+            
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            
+            print(f"✅ Saved {dist}: {stats['total_files']} files ({stats['total_size_formatted']})")
 
 
 def main():
@@ -317,9 +361,30 @@ def main():
         print("❌ Error: S3_ACCESS_KEY_ID and S3_SECRET_ACCESS_KEY are required")
         sys.exit(1)
     
-    # Output path
+    # Output paths
     script_dir = Path(__file__).parent
-    output_path = script_dir.parent / "data" / "s3_downloads.json"
+    downloads_dir = script_dir.parent / "data" / "downloads"
+    output_path = downloads_dir / "s3_downloads.json"
+    linux_packages_dir = downloads_dir / "linux_packages"  # Use underscore for Hugo compatibility
+    
+    # Linux distributions to generate separate files for
+    linux_distributions = [
+        "debian",
+        "ubuntu",
+        "ubuntugis",
+        "debian-nightly-release",
+        "ubuntu-nightly-release",
+        "ubuntugis-nightly-release",
+        "debian-ltr",
+        "ubuntu-ltr",
+        "ubuntugis-ltr",
+        "debian-nightly-ltr",
+        "ubuntu-nightly-ltr",
+        "ubuntugis-nightly-ltr",
+        "debian-nightly",
+        "ubuntu-nightly",
+        "ubuntugis-nightly",
+    ]
     
     print("🚀 Starting S3 Downloads Update")
     print(f"   Bucket: {bucket_name}")
@@ -338,7 +403,13 @@ def main():
     )
     
     files = explorer.fetch_bucket_contents()
+    
+    # Save main downloads (excluding ubuntu/debian from tree)
     explorer.save_to_json(files, str(output_path))
+    
+    # Save linux packages separately (one file per distribution)
+    print("\n📦 Generating Linux package files...")
+    explorer.save_linux_packages_json(files, str(linux_packages_dir), linux_distributions)
     
     print("\n✨ S3 downloads data updated successfully!")
 
