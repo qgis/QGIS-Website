@@ -1,0 +1,30 @@
+# Workflow to test Nix packaging on pull requests
+name: 🧪 Test Nix Package
+
+on:
+  pull_request:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  test-nix-package:
+    name: Test Nix Package
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install Nix
+      uses: cachix/install-nix-action@v31
+  
+    - name: Set up Cachix
+      uses: cachix/cachix-action@v16
+      with:
+        name: qgiswebsite
+        # Use public cache for reading, no auth token needed
+
+    - name: Run flake checks
+      run: nix flake check --show-trace --accept-flake-config
