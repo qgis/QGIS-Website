@@ -188,12 +188,12 @@ Lines of packages:
 | ---- | ---- | ---- | ---- |
 | Latest Release | {{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}} | Release for **Debian and Ubuntu** | https://qgis.org/debian <br> https://qgis.org/ubuntu |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-release |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu | https://qgis.org/debian-nightly-release <br> https://qgis.org/ubuntu-nightly-release |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies  | https://qgis.org/ubuntugis-nightly-release |  |  |
 | Long Term Release Repository | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | Release for **Debian and Ubuntu** | https://qgis.org/debian-ltr https://qgis.org/ubuntu-ltr |
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
-||| Nightly build of upcoming point release for Debian and Ubuntu [[2]](#id2) | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
-||| Nightly build of upcoming point release with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly-ltr |  |  |
+||| Nightly build of upcoming point release for Debian and Ubuntu | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
+||| Nightly build of upcoming point release with ubuntugis-unstable dependencies  | https://qgis.org/ubuntugis-nightly-ltr |  |  |
 | Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
 ||| Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |  |  |
 
