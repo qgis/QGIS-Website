@@ -1,26 +1,26 @@
 {
   "bucket_name": "qgis-download",
   "prefix": "",
-  "generated_at": "2026-01-16T02:42:21.890679+00:00",
+  "generated_at": "2026-01-17T02:36:46.853889+00:00",
   "statistics": {
-    "total_files": 114314,
-    "total_size": 3414957301680,
-    "total_size_formatted": "3.11 TB",
+    "total_files": 115205,
+    "total_size": 3454057695254,
+    "total_size_formatted": "3.14 TB",
     "by_category": {
       "installer": {
-        "count": 105295,
-        "size": 2999153105795,
-        "size_formatted": "2.73 TB"
+        "count": 106137,
+        "size": 3032596973830,
+        "size_formatted": "2.76 TB"
       },
       "other": {
-        "count": 5605,
-        "size": 16652746454,
+        "count": 5631,
+        "size": 16652912339,
         "size_formatted": "15.51 GB"
       },
       "image": {
-        "count": 109,
-        "size": 5112729,
-        "size_formatted": "4.88 MB"
+        "count": 110,
+        "size": 7568897,
+        "size_formatted": "7.22 MB"
       },
       "data": {
         "count": 5,
@@ -28,24 +28,24 @@
         "size_formatted": "99.34 KB"
       },
       "archive": {
-        "count": 3300,
-        "size": 399146234980,
-        "size_formatted": "371.73 GB"
+        "count": 3322,
+        "size": 404800138466,
+        "size_formatted": "377.00 GB"
       }
     },
     "by_extension": {
-      ".deb": 104620,
-      ".gz": 2469,
+      ".deb": 105458,
+      ".gz": 2489,
       "no extension": 2209,
-      ".dsc": 1546,
-      ".bz2": 828,
-      ".sha256sum": 399,
+      ".dsc": 1566,
+      ".bz2": 830,
+      ".sha256sum": 403,
       ".exe": 392,
       ".md5sum": 361,
       ".gpg": 347,
-      ".msi": 226
+      ".msi": 229
     },
-    "last_updated": "2026-01-16T02:42:21.836063+00:00"
+    "last_updated": "2026-01-17T02:36:46.801339+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -4566,6 +4566,39 @@
                 "last_modified_timestamp": 1766230758,
                 "extension": ".sha256sum",
                 "category": "other"
+              },
+              {
+                "key": "macos/pr/qgis_pr_final-3_44_7.dmg",
+                "name": "qgis_pr_final-3_44_7.dmg",
+                "path": "macos/pr",
+                "size": 613416421,
+                "size_formatted": "585.00 MB",
+                "last_modified": "2026-01-16T16:20:01.682000+00:00",
+                "last_modified_timestamp": 1768580401,
+                "extension": ".dmg",
+                "category": "installer"
+              },
+              {
+                "key": "macos/pr/qgis_pr_final-3_44_7.png",
+                "name": "qgis_pr_final-3_44_7.png",
+                "path": "macos/pr",
+                "size": 2456168,
+                "size_formatted": "2.34 MB",
+                "last_modified": "2026-01-16T16:22:43.141000+00:00",
+                "last_modified_timestamp": 1768580563,
+                "extension": ".png",
+                "category": "image"
+              },
+              {
+                "key": "macos/pr/qgis_pr_final-3_44_7.sha256sum",
+                "name": "qgis_pr_final-3_44_7.sha256sum",
+                "path": "macos/pr",
+                "size": 75,
+                "size_formatted": "75.00 B",
+                "last_modified": "2026-01-16T16:22:40.670000+00:00",
+                "last_modified_timestamp": 1768580560,
+                "extension": ".sha256sum",
+                "category": "other"
               }
             ]
           }
@@ -4608,10 +4641,10 @@
             "key": "macos/qgis-macos-pr.dmg",
             "name": "qgis-macos-pr.dmg",
             "path": "macos",
-            "size": 613364369,
-            "size_formatted": "584.95 MB",
-            "last_modified": "2025-12-20T11:39:17.093000+00:00",
-            "last_modified_timestamp": 1766230757,
+            "size": 613416421,
+            "size_formatted": "585.00 MB",
+            "last_modified": "2026-01-16T16:21:36.381000+00:00",
+            "last_modified_timestamp": 1768580496,
             "extension": ".dmg",
             "category": "installer"
           },
@@ -4621,8 +4654,8 @@
             "path": "macos",
             "size": 2456168,
             "size_formatted": "2.34 MB",
-            "last_modified": "2025-12-20T11:39:24.782000+00:00",
-            "last_modified_timestamp": 1766230764,
+            "last_modified": "2026-01-16T16:22:45.205000+00:00",
+            "last_modified_timestamp": 1768580565,
             "extension": ".png",
             "category": "image"
           },
@@ -4632,8 +4665,8 @@
             "path": "macos",
             "size": 75,
             "size_formatted": "75.00 B",
-            "last_modified": "2025-12-20T11:39:19.613000+00:00",
-            "last_modified_timestamp": 1766230759,
+            "last_modified": "2026-01-16T16:22:41.488000+00:00",
+            "last_modified_timestamp": 1768580561,
             "extension": ".sha256sum",
             "category": "other"
           }
@@ -24140,6 +24173,28 @@
         "category": "other"
       },
       {
+        "key": "qgis-3.40.15.tar.bz2",
+        "name": "qgis-3.40.15.tar.bz2",
+        "path": "",
+        "size": 184419550,
+        "size_formatted": "175.88 MB",
+        "last_modified": "2026-01-17T02:01:34.378000+00:00",
+        "last_modified_timestamp": 1768615294,
+        "extension": ".bz2",
+        "category": "archive"
+      },
+      {
+        "key": "qgis-3.40.15.tar.bz2.sha256",
+        "name": "qgis-3.40.15.tar.bz2.sha256",
+        "path": "",
+        "size": 87,
+        "size_formatted": "87.00 B",
+        "last_modified": "2026-01-17T02:01:04.883000+00:00",
+        "last_modified_timestamp": 1768615264,
+        "extension": ".sha256",
+        "category": "other"
+      },
+      {
         "key": "qgis-3.40.2.tar.bz2",
         "name": "qgis-3.40.2.tar.bz2",
         "path": "",
@@ -24558,6 +24613,28 @@
         "category": "other"
       },
       {
+        "key": "qgis-3.44.7.tar.bz2",
+        "name": "qgis-3.44.7.tar.bz2",
+        "path": "",
+        "size": 189647402,
+        "size_formatted": "180.86 MB",
+        "last_modified": "2026-01-17T02:01:19.380000+00:00",
+        "last_modified_timestamp": 1768615279,
+        "extension": ".bz2",
+        "category": "archive"
+      },
+      {
+        "key": "qgis-3.44.7.tar.bz2.sha256",
+        "name": "qgis-3.44.7.tar.bz2.sha256",
+        "path": "",
+        "size": 86,
+        "size_formatted": "86.00 B",
+        "last_modified": "2026-01-17T02:01:05.100000+00:00",
+        "last_modified_timestamp": 1768615265,
+        "extension": ".sha256",
+        "category": "other"
+      },
+      {
         "key": "qgis-3.6.0.tar.bz2",
         "name": "qgis-3.6.0.tar.bz2",
         "path": "",
@@ -24965,6 +25042,28 @@
         "category": "other"
       },
       {
+        "key": "QGIS-OSGeo4W-3.40.15-1.msi",
+        "name": "QGIS-OSGeo4W-3.40.15-1.msi",
+        "path": "",
+        "size": 1364066304,
+        "size_formatted": "1.27 GB",
+        "last_modified": "2026-01-17T02:02:41.420000+00:00",
+        "last_modified_timestamp": 1768615361,
+        "extension": ".msi",
+        "category": "installer"
+      },
+      {
+        "key": "QGIS-OSGeo4W-3.40.15-1.sha256sum",
+        "name": "QGIS-OSGeo4W-3.40.15-1.sha256sum",
+        "path": "",
+        "size": 93,
+        "size_formatted": "93.00 B",
+        "last_modified": "2026-01-17T02:01:04.451000+00:00",
+        "last_modified_timestamp": 1768615264,
+        "extension": ".sha256sum",
+        "category": "other"
+      },
+      {
         "key": "QGIS-OSGeo4W-3.40.2-1.msi",
         "name": "QGIS-OSGeo4W-3.40.2-1.msi",
         "path": "",
@@ -25295,6 +25394,28 @@
         "category": "other"
       },
       {
+        "key": "QGIS-OSGeo4W-3.44.7-1.msi",
+        "name": "QGIS-OSGeo4W-3.44.7-1.msi",
+        "path": "",
+        "size": 1359142912,
+        "size_formatted": "1.27 GB",
+        "last_modified": "2026-01-17T02:03:55.864000+00:00",
+        "last_modified_timestamp": 1768615435,
+        "extension": ".msi",
+        "category": "installer"
+      },
+      {
+        "key": "QGIS-OSGeo4W-3.44.7-1.sha256sum",
+        "name": "QGIS-OSGeo4W-3.44.7-1.sha256sum",
+        "path": "",
+        "size": 92,
+        "size_formatted": "92.00 B",
+        "last_modified": "2026-01-17T02:01:04.642000+00:00",
+        "last_modified_timestamp": 1768615264,
+        "extension": ".sha256sum",
+        "category": "other"
+      },
+      {
         "key": "qgis_sample_data.tar.gz.old",
         "name": "qgis_sample_data.tar.gz.old",
         "path": "",
@@ -25412,6 +25533,28 @@
         "size_formatted": "96.00 B",
         "last_modified": "2025-12-22T02:04:22.514000+00:00",
         "last_modified_timestamp": 1766369062,
+        "extension": ".sha256sum",
+        "category": "other"
+      },
+      {
+        "key": "QGISQT6-OSGeo4W-3.40.15-1.msi",
+        "name": "QGISQT6-OSGeo4W-3.40.15-1.msi",
+        "path": "",
+        "size": 1337794560,
+        "size_formatted": "1.25 GB",
+        "last_modified": "2026-01-17T02:03:17.766000+00:00",
+        "last_modified_timestamp": 1768615397,
+        "extension": ".msi",
+        "category": "installer"
+      },
+      {
+        "key": "QGISQT6-OSGeo4W-3.40.15-1.sha256sum",
+        "name": "QGISQT6-OSGeo4W-3.40.15-1.sha256sum",
+        "path": "",
+        "size": 96,
+        "size_formatted": "96.00 B",
+        "last_modified": "2026-01-17T02:01:04.965000+00:00",
+        "last_modified_timestamp": 1768615264,
         "extension": ".sha256sum",
         "category": "other"
       },
