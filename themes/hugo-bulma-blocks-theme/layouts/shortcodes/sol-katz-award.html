@@ -1,0 +1,85 @@
+{{ $recipients := $.Site.Data.contributors.sol_katz_award }}
+
+<!-- Sort by year (most recent first) -->
+{{ $sortedRecipients := sort $recipients "year" "desc" }}
+
+<div class="sol-katz-recipients">
+    <div class="recipient-list">
+        {{ range $sortedRecipients }}
+        <div class="sol-katz-card mb-6" id="{{ .name | urlize }}">
+            <!-- Header with Name and Year Badge -->
+            <div class="recipient-header mb-4">
+                <div class="is-flex is-align-items-center">
+                    <div class="is-flex-grow-1">
+                        <h3 class="title is-3 mb-1">
+                            {{ if .link }}
+                                <a href="{{ .link }}" class="recipient-name-link" target="_blank" rel="noopener">
+                                    {{ .name }}
+                                    <i class="fas fa-external-link-alt is-size-6 ml-2"></i>
+                                </a>
+                            {{ else }}
+                                {{ .name }}
+                            {{ end }}
+                            <a class="heading-anchor" href="#{{ .name | urlize }}">
+                                ¶
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="year-badge-wrapper">
+                        <span class="tag is-warning is-large">
+                            <i class="fas fa-calendar-alt mr-2"></i>
+                            <strong>{{ .year }}</strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Citation Box -->
+            <div class="citation-box mb-4">
+                <p class="is-italic">
+                    <i class="fas fa-quote-left mr-2"></i>
+                    {{ .citation }}
+                </p>
+            </div>
+            
+            <!-- Description -->
+            <div class="content recipient-description mb-4">
+                <p>{{ .description }}</p>
+            </div>
+            
+            <!-- Buttons -->
+            <div class="buttons mb-4">
+                {{ if .osgeo_announcement }}
+                <a href="{{ .osgeo_announcement }}" class="button is-small is-success is-outlined" target="_blank" rel="noopener">
+                    <span class="icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    <span>OSGeo Announcement</span>
+                </a>
+                {{ end }}
+                {{ if .link }}
+                <a href="{{ .link }}" class="button is-small is-light" target="_blank" rel="noopener">
+                    <span class="icon">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <span>OSGeo Wiki Profile</span>
+                </a>
+                {{ end }}
+            </div>
+            
+            <!-- Award Photo (full width, aligned with content above) -->
+            {{ if .photo_url }}
+            <div class="award-photo-wrapper">
+                <figure class="image">
+                    <img src="{{ .photo_url }}" alt="{{ .name }} receiving the Sol Katz Award in {{ .year }}" loading="lazy">
+                </figure>
+                <p class="has-text-centered is-size-7 has-text-grey mt-2">
+                    <em>{{ .name }} receiving the Sol Katz Award in {{ .year }}</em>
+                </p>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+
