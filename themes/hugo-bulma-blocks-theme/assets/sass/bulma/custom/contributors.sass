@@ -208,6 +208,43 @@
 .organization-horizontal .contribution-badges .contributor-badge
   min-width: 200px
 
+// Honorary Members styling
+.contributor-card.honorary-member
+  border: 2px solid $primary6
+  box-shadow: 0 4px 20px rgba(238, 121, 19, 0.15)
+
+.contributor-card.honorary-member:hover
+  box-shadow: 0 12px 35px rgba(238, 121, 19, 0.25)
+  
+.honorary-badge
+  position: absolute
+  top: -8px
+  left: -8px
+  font-size: 2rem
+  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2))
+  z-index: 10
+
+.honorary-info
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 100px
+  padding: 0.4rem 0.8rem
+  border-radius: 8px
+  background: linear-gradient(135deg, rgba(238, 121, 19, 0.95) 0%, rgba(239, 140, 82, 0.95) 100%)
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15)
+  z-index: 5
+  white-space: nowrap
+  
+
+.honorary-info p
+  color: white !important
+  font-weight: 500
+
+.avatar-container
+  position: relative
+  margin-bottom: 2rem
+
 @media screen and (max-width: 768px)
   .organization-horizontal .columns
     display: flex
