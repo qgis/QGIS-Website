@@ -42,4 +42,17 @@ QGIS proved to be a high-impact, low-cost educational tool, strengthening the un
 ## Images
 Include relevant visuals in the `images/` folder and reference them here, for example:
 
-![Example Map](images/example_map.webp)
+## Learning Resources and Student Contributions
+![Campus Diagnostic Map](images/mapa_diagnostico_campus.png)
+
+## Full Project Download
+The complete QGIS project, including all layers, views, and images (33 MB), can be downloaded here:
+- https://drive.google.com/file/d/1rte9PYqHLkxXfujQO45H16N1TFM1lF70/view
+
+## Student Produced Qgis tutorials:
+As part of the course evaluation, students produced tutorial videos demonstrating the use of QGIS for real-world applications. One example can be found here: https://www.youtube.com/watch?v=HSwpRvuri_s
+
+
+
+- Student QGIS tutorial (YouTube): https://www.youtube.com/XXXXXXXX
+
