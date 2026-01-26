@@ -1,4 +1,5 @@
 {{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
+{{ $honoraryMembers := $.Site.Data.contributors.honorary_members }}
 {{ $contributors := slice }}
 {{ range $allContributors }}
     {{ if .has_github_account }}
@@ -8,13 +9,22 @@
 {{ $contributors = sort $contributors "total_contributions" "desc" }}
 <div class="columns is-multiline">
     {{ range $idx, $contributor := $contributors }}
+    {{ $isHonorary := index $honoraryMembers $contributor.login }}
     <div class="column is-one-third">
-        <div class="card contributor-card individual" id="{{ .login | urlize }}">
+        <div class="card contributor-card individual{{ if $isHonorary }} honorary-member{{ end }}" id="{{ .login | urlize }}">
             <div class="card-content has-text-centered">
                 <div class="avatar-container">
                     <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" class="avatar" loading="lazy">
                     <span class="level-indicator level-5 p-1"># {{ add $idx 1 }}</span>
+                    {{ if $isHonorary }}
+                    <span class="honorary-badge">{{ $isHonorary.icon }}</span>
+                    {{ end }}
                 </div>
+                {{ if $isHonorary }}
+                <div class="honorary-info">
+                    <p class="is-size-6 has-text-grey">{{ $isHonorary.title }}</p>
+                </div>
+                {{ end }}
                 <h3 class="title is-4">
                     <a class="heading-anchor" href="#{{ .login | urlize }}" style="margin-left: -22.3px;">
                         ¶
@@ -31,10 +41,6 @@
                     </span>
                     <span class="has-text-grey">commits</span>
                 </div>
-                <!-- <p class="subtitle is-6">Core Developer & PSC Member</p>
-                <div class="content">
-                    <p>Long-time QGIS contributor focusing on server development, web services, and plugin architecture improvements.</p>
-                </div> -->
                 <div class="contribution-badges">
                         {{ $thematicList := slice }}
                         {{ range $k, $v := .thematics }}
