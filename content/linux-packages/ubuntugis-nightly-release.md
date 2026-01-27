@@ -13,6 +13,6 @@ url: '/linux-packages/ubuntugis-nightly-release'
 
 Browse and download QGIS nightly release packages for UbuntuGIS distributions.
 
-{{< linux-packages-explorer distribution="ubuntugis-nightly-release" >}}
+{{< linux-packages-explorer distribution="ubuntugis_nightly_release" >}}
 
 {{< content-end >}}
