@@ -10,6 +10,26 @@ sidebar: true
 
 {{< content-start >}}
 
+
+
+{{< rich-box-start layoutClass="has-right rounded" >}}
+{{< rich-content-start themeClass="coloring-1" >}}
+## Sol Katz Award Recipients
+Celebrating QGIS contributors who received the prestigious Sol Katz Award for exceptional leadership and contributions to geospatial open source software.
+
+<div style="text-align:center;">
+	<a href="/community/contributors/sol-katz-award/" class="button is-success">
+		View recipients
+	</a>
+</div>
+
+{{< rich-content-end >}}
+{{< rich-right-start >}}  
+{{< contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}}
+{{< rich-right-end >}}
+{{< rich-box-end >}}
+
+
 {{< rich-box-start layoutClass="has-right rounded" >}}
 {{< rich-content-start themeClass="coloring-1" >}}
 
@@ -68,5 +88,6 @@ Recognizing valuable contributions beyond code commits—community support, outr
 {{< contribution-stats "supporting" "/community/contributors/supporting/" >}}
 {{< rich-right-end >}}
 {{< rich-box-end >}}
+
 
 {{< content-end >}}

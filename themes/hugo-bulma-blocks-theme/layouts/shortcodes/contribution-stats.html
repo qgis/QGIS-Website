@@ -57,5 +57,15 @@
             <div class="stat-label">Supporting Contributors</div>
         </a>
         {{ end }}
+
+        {{ if or (eq $type "all") (eq $type "sol-katz") }}
+        <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
+            <div class="has-text-weight-semibold is-size-2">
+                {{ $solKatzRecipients := $.Site.Data.contributors.sol_katz_award }}
+                {{ len $solKatzRecipients }}
+            </div>
+            <div class="stat-label">Sol Katz Award Recipients</div>
+        </a>
+        {{ end }}
     </div>
 </div>
