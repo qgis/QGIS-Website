@@ -559,6 +559,14 @@ def generate_geojson(contributors_json_path: str, output_geojson_path: str):
     with open(contributors_json_path, 'r') as f:
         contributors_data = json.load(f)
     
+    # Load honorary members data
+    honorary_members = {}
+    honorary_path = "data/contributors/honorary_members.json"
+    if os.path.exists(honorary_path):
+        with open(honorary_path, 'r') as f:
+            honorary_members = json.load(f)
+        print(f"Loaded {len(honorary_members)} honorary members")
+    
     # Fetch QGIS contributors.json with geometry data
     qgis_contributors_url = "https://raw.githubusercontent.com/qgis/QGIS/refs/heads/master/resources/data/contributors.json"
     print(f"Fetching geometry data from {qgis_contributors_url}")
@@ -586,10 +594,11 @@ def generate_geojson(contributors_json_path: str, output_geojson_path: str):
     contributors_with_geometry = 0
     contributors_without_geometry = 0
     
-    # Sort contributors by total_contributions (ascending - smallest first)
+    # Sort contributors by total_contributions (descending - LARGEST first for testing)
     sorted_contributors = sorted(
         contributors_data.get("contributors", []),
-        key=lambda c: c.get("total_contributions", 0)
+        key=lambda c: c.get("total_contributions", 0),
+        reverse=True
     )
     
     for contributor in sorted_contributors:
@@ -614,6 +623,15 @@ def generate_geojson(contributors_json_path: str, output_geojson_path: str):
         # Add each thematic as a separate property
         for thematic_name, thematic_count in thematics.items():
             properties[thematic_name] = thematic_count
+        
+        # Add honorary member data if applicable
+        if login in honorary_members:
+            honorary_data = honorary_members[login]
+            properties["is_honorary"] = True
+            properties["honorary_icon"] = honorary_data.get("icon", "")
+            properties["honorary_title"] = honorary_data.get("title", "")
+            properties["honorary_subtitle"] = honorary_data.get("subtitle", "")
+            properties["honorary_badge_class"] = honorary_data.get("badge_class", "")
         
         # Create feature (with or without geometry)
         feature = {

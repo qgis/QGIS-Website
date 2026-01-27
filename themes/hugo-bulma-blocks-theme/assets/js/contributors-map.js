@@ -147,6 +147,8 @@ class ContributorsMap {
       const coords = contributor.geometry.coordinates;
       const size = this.getMarkerSize(contributor.properties.total_contributions) * 3;
       const avatarUrl = contributor.properties.avatar_url || '/img/default-avatar.png';
+      const isHonorary = contributor.properties.is_honorary || false;
+      const honoraryIcon = contributor.properties.honorary_icon || '';
       
       // Create marker element
       const el = document.createElement('div');
@@ -156,29 +158,50 @@ class ContributorsMap {
       el.style.cursor = 'pointer';
       el.style.transition = 'opacity 0.3s ease';
       
+      // Create inner wrapper for positioning badge
+      const wrapper = document.createElement('div');
+      wrapper.style.position = 'relative';
+      wrapper.style.width = '100%';
+      wrapper.style.height = '100%';
+      
       const img = document.createElement('img');
       img.src = avatarUrl;
       img.style.width = '100%';
       img.style.height = '100%';
       img.style.borderRadius = '50%';
-      img.style.border = '2px solid #589632';
-      img.style.boxShadow = '0 0 10px rgba(88,150,50,0.8)';
+      img.style.border = isHonorary ? '3px solid #ee7913' : '2px solid #589632';
+      img.style.boxShadow = isHonorary ? '0 0 15px rgba(238,121,19,0.8)' : '0 0 10px rgba(88,150,50,0.8)';
       img.style.objectFit = 'cover';
       img.style.background = 'white';
       img.style.display = 'block';
       img.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
       
-      el.appendChild(img);
+      wrapper.appendChild(img);
+      
+      // Add honorary badge if applicable
+      if (isHonorary && honoraryIcon) {
+        const badge = document.createElement('div');
+        badge.style.position = 'absolute';
+        badge.style.top = '-4px';
+        badge.style.left = '-4px';
+        badge.style.fontSize = '1rem';
+        badge.style.filter = 'drop-shadow(1px 1px 2px rgba(0,0,0,0.3))';
+        badge.style.zIndex = '10';
+        badge.textContent = honoraryIcon;
+        wrapper.appendChild(badge);
+      }
+      
+      el.appendChild(wrapper);
       
       // Add hover effect
       el.addEventListener('mouseenter', () => {
         img.style.transform = 'scale(1.15)';
-        img.style.boxShadow = '0 0 15px rgba(88,150,50,0.9)';
+        img.style.boxShadow = isHonorary ? '0 0 20px rgba(238,121,19,0.9)' : '0 0 15px rgba(88,150,50,0.9)';
       });
       
       el.addEventListener('mouseleave', () => {
         img.style.transform = 'scale(1)';
-        img.style.boxShadow = '0 0 10px rgba(88,150,50,0.8)';
+        img.style.boxShadow = isHonorary ? '0 0 15px rgba(238,121,19,0.8)' : '0 0 10px rgba(88,150,50,0.8)';
       });
       
       // Add click handler
@@ -320,12 +343,13 @@ class ContributorsMap {
     const contributorsWithLocation = this.contributorsData.features
       .filter(f => f.geometry && f.geometry.coordinates);
     
-    // Data is already sorted by contribution (smallest first) from the script
     // Create overlays for each contributor (similar to MapLibre markers)
     contributorsWithLocation.forEach((contributor, index) => {
       const coords = contributor.geometry.coordinates;
       const size = this.getMarkerSize(contributor.properties.total_contributions) * 3;
       const avatarUrl = contributor.properties.avatar_url || '/img/default-avatar.png';
+      const isHonorary = contributor.properties.is_honorary || false;
+      const honoraryIcon = contributor.properties.honorary_icon || '';
       
       // Create marker element
       const el = document.createElement('div');
@@ -333,14 +357,15 @@ class ContributorsMap {
       el.style.width = `${size}px`;
       el.style.height = `${size}px`;
       el.style.cursor = 'pointer';
+      el.style.position = 'relative';
       
       const img = document.createElement('img');
       img.src = avatarUrl;
       img.style.width = '100%';
       img.style.height = '100%';
       img.style.borderRadius = '50%';
-      img.style.border = '2px solid #589632';
-      img.style.boxShadow = '0 0 10px rgba(88,150,50,0.8)';
+      img.style.border = isHonorary ? '3px solid #ee7913' : '2px solid #589632';
+      img.style.boxShadow = isHonorary ? '0 0 15px rgba(238,121,19,0.8)' : '0 0 10px rgba(88,150,50,0.8)';
       img.style.objectFit = 'cover';
       img.style.background = 'white';
       img.style.display = 'block';
@@ -348,15 +373,28 @@ class ContributorsMap {
       
       el.appendChild(img);
       
+      // Add honorary badge if applicable
+      if (isHonorary && honoraryIcon) {
+        const badge = document.createElement('div');
+        badge.style.position = 'absolute';
+        badge.style.top = '-4px';
+        badge.style.left = '-4px';
+        badge.style.fontSize = '1rem';
+        badge.style.filter = 'drop-shadow(1px 1px 2px rgba(0,0,0,0.3))';
+        badge.style.zIndex = '10';
+        badge.textContent = honoraryIcon;
+        el.appendChild(badge);
+      }
+      
       // Add hover effect
       el.addEventListener('mouseenter', () => {
         img.style.transform = 'scale(1.15)';
-        img.style.boxShadow = '0 0 15px rgba(88,150,50,0.9)';
+        img.style.boxShadow = isHonorary ? '0 0 20px rgba(238,121,19,0.9)' : '0 0 15px rgba(88,150,50,0.9)';
       });
       
       el.addEventListener('mouseleave', () => {
         img.style.transform = 'scale(1)';
-        img.style.boxShadow = '0 0 10px rgba(88,150,50,0.8)';
+        img.style.boxShadow = isHonorary ? '0 0 15px rgba(238,121,19,0.8)' : '0 0 10px rgba(88,150,50,0.8)';
       });
       
       // Add click handler
@@ -388,11 +426,51 @@ class ContributorsMap {
   
   showContributorPopup(contributor, event) {
     const popup = document.getElementById('contributor-popup');
+    const popupCard = document.getElementById('popup-card');
     
     if (!popup) return;
     
+    // Check if contributor is honorary member
+    const isHonorary = contributor.is_honorary || false;
+    const honoraryIcon = contributor.honorary_icon || '';
+    const honoraryTitle = contributor.honorary_title || '';
+    
+    // Add/remove honorary class
+    if (isHonorary) {
+      popupCard.classList.add('honorary-member');
+    } else {
+      popupCard.classList.remove('honorary-member');
+    }
+    
     // Populate card content
     document.getElementById('popup-avatar').src = contributor.avatar_url || '/img/default-avatar.png';
+    
+    // Add honorary badge to avatar if applicable
+    const avatarContainer = popup.querySelector('.avatar-container');
+    let honoraryBadge = avatarContainer.querySelector('.honorary-badge');
+    let honoraryInfo = avatarContainer.querySelector('.honorary-info');
+    
+    if (isHonorary) {
+      // Add badge if it doesn't exist
+      if (!honoraryBadge) {
+        honoraryBadge = document.createElement('span');
+        honoraryBadge.className = 'honorary-badge';
+        avatarContainer.appendChild(honoraryBadge);
+      }
+      honoraryBadge.textContent = honoraryIcon;
+      
+      // Add honorary info if it doesn't exist
+      if (!honoraryInfo) {
+        honoraryInfo = document.createElement('div');
+        honoraryInfo.className = 'honorary-info';
+        avatarContainer.appendChild(honoraryInfo);
+      }
+      honoraryInfo.innerHTML = `<p class="is-size-6 has-text-grey">${honoraryTitle}</p>`;
+    } else {
+      // Remove badge and info if they exist
+      if (honoraryBadge) honoraryBadge.remove();
+      if (honoraryInfo) honoraryInfo.remove();
+    }
     
     const usernameLink = document.getElementById('popup-username-link');
     usernameLink.textContent = contributor.login;
