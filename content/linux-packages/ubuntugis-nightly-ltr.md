@@ -13,6 +13,6 @@ url: '/linux-packages/ubuntugis-nightly-ltr'
 
 Browse and download QGIS nightly Long Term Release (LTR) packages for UbuntuGIS distributions.
 
-{{< linux-packages-explorer distribution="ubuntugis-nightly-ltr" >}}
+{{< linux-packages-explorer distribution="ubuntugis_nightly_ltr" >}}
 
 {{< content-end >}}
