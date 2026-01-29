@@ -7,7 +7,7 @@ thumbnail: "images/alps_ski_atlas_1.webp"
 section: "project"
 type: "case-study"
 date: 2025-11-28
-featured: false
+featured: true
 archived: false
 ---
 {{< content-start >}}
@@ -58,7 +58,7 @@ As a result, this book was created, to work as a guide for each and every indivi
 ## Download the Atlas
 
 The Atlas is available at the following link (72MB). Please, download and have a look!
-https://drive.google.com/file/d/1gt6UcbxMwFQpFqsge7IGNGbP8RiPEYES/view?usp=sharing
+https://drive.google.com/file/d/17Rx3tnvqpgqpx3IxezT4LmLoWUxrRBdu/view?usp=share_link
 
 ## Authors
 
