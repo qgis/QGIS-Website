@@ -47,9 +47,16 @@ jobs:
         pipenv run python scripts/update_contributing_orgs.py
         echo "Contributing organizations update completed"
 
+    - name: '🔗 Match commercial support with contributors'
+      run: |
+        cd ./qgis-website
+        echo "Starting commercial support matching..."
+        pipenv run python scripts/match_commercial_contributors.py
+        echo "Commercial support matching completed"
+
     - name: '✉️ Commit and push changes'
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: '🤖 Contributors and organizations data updated via GitHub Action'
         repository: ./qgis-website
-        file_pattern: 'data/contributors/*.json'
+        file_pattern: 'data/contributors/*.json data/commercial_support/contributor_matches.json'

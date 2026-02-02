@@ -7,9 +7,17 @@
   {{ $orgsList = $orgsList | append (dict "org" $org "totalCommits" $totalCommits) }}
 {{ end }}
 {{ $sortedOrgs := sort $orgsList "totalCommits" "desc" }}
+{{ $matches := $.Site.Data.commercial_support.contributor_matches.matches | default dict }}
+{{ $reverseMatches := dict }}
+{{ range $commName, $match := $matches }}
+  {{ if $match.is_contributor }}
+    {{ $reverseMatches = $reverseMatches | merge (dict $match.contributor_name $commName) }}
+  {{ end }}
+{{ end }}
 <div class="organization-list">
   {{ range $item := $sortedOrgs }}
     {{ $org := $item.org }}
+    {{ $hasCommercialSupport := index $reverseMatches $org.name }}
     <div class="card contributor-card organization organization-horizontal">
         <div class="card-content">
             <div class="columns is-vcentered">
@@ -28,6 +36,16 @@
                             </a>
                         </h3>
                         <p class="subtitle is-5">{{ $org.subtitle }}</p>
+                        {{ if $hasCommercialSupport }}
+                            <div class="mb-3">
+                                <a href="/resources/support/commercial-support/#{{ $hasCommercialSupport | urlize }}" class="button is-small is-success is-rounded is-outlined">
+                                    <span class="icon">
+                                        <i class="fas fa-hand-holding-usd"></i>
+                                    </span>
+                                    <span>View Commercial Support</span>
+                                </a>
+                            </div>
+                        {{ end }}
                         <div class="content">
                             <p>{{ $org.description }}</p>
                         </div>
