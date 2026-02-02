@@ -71,7 +71,7 @@ Read more about the responsibilities of the PSC [here]({{< ref "/community/found
 
 Address of the Organization
 
-QGIS.ORG Böschacherstrasse 10a CH-8624 Grüt (Gossau ZH)
+QGIS.ORG Via Geinas 2, CH-7031 Laax
 
 ## Voting members
 
