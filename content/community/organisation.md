@@ -201,7 +201,7 @@ QGIS is being packaged for different types of operating systems. The people resp
 
 *   Windows Team: Jürgen E. Fischer
     
-*   OS X Team: William Kyngesburye, Peter Petrik
+*   macOS Team: Matthias Kuhn, OPENGIS.ch
     
 *   Linux Team:
     
@@ -220,7 +220,7 @@ QGIS is being packaged for different types of operating systems. The people resp
     
 *   Windows: Giovanni Manghi, Pedro Venâncio, Duarte Carreira, Andre Mano, Rui Pedro Henriques
     
-*   MacOS: Larry Shaffer, Tim Sutton, Denis Rouzaud, Peter Petrik
+*   MacOS: Denis Rouzaud, Matthias Kuhn
     
 
 ### Security Team
