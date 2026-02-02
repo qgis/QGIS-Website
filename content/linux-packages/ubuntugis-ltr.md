@@ -13,6 +13,6 @@ url: '/linux-packages/ubuntugis-ltr'
 
 Browse and download QGIS Long Term Release (LTR) packages for UbuntuGIS distributions.
 
-{{< linux-packages-explorer distribution="ubuntugis-ltr" >}}
+{{< linux-packages-explorer distribution="ubuntugis_ltr" >}}
 
 {{< content-end >}}

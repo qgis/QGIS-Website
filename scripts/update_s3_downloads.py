@@ -296,17 +296,25 @@ class S3FileExplorer:
         print(f"   Total files: {stats['total_files']}")
         print(f"   Total size: {stats['total_size_formatted']}")
     
-    def save_linux_packages_json(self, files: List[Dict], output_dir: str, distributions: List[str]):
-        """Save linux packages to separate JSON files per distribution."""
+    def save_linux_packages_json(self, files: List[Dict], output_dir: str, distributions: List[tuple]):
+        """Save linux packages to separate JSON files per distribution.
+        
+        Args:
+            files: List of file metadata dictionaries
+            output_dir: Directory to save JSON files
+            distributions: List of tuples (output_name, source_folder)
+                          e.g., ("debian_ubuntu", "debian")
+        """
         # Ensure output directory exists
         os.makedirs(output_dir, exist_ok=True)
         
-        for dist in distributions:
-            # Filter files for this specific distribution
+        for output_name, source_folder in distributions:
+            # Filter files for this source folder
             filtered_files = []
+            
             for file in files:
                 path_parts = file["path"].split("/") if file["path"] else []
-                if path_parts and path_parts[0].lower() == dist.lower():
+                if path_parts and path_parts[0].lower() == source_folder.lower():
                     # Remove the distribution prefix from the path
                     file_copy = file.copy()
                     if len(path_parts) > 1:
@@ -316,7 +324,7 @@ class S3FileExplorer:
                     filtered_files.append(file_copy)
             
             if not filtered_files:
-                print(f"⚠️  No files found for distribution: {dist}")
+                print(f"⚠️  No files found for: {output_name} (source: {source_folder})")
                 continue
             
             # Build tree without exclusions (include all filtered files)
@@ -326,20 +334,21 @@ class S3FileExplorer:
             data = {
                 "bucket_name": self.bucket_name,
                 "prefix": self.prefix,
-                "distribution": dist,
+                "distribution": output_name,
+                "source_folder": source_folder,
                 "generated_at": datetime.datetime.now(datetime.UTC).isoformat(),
                 "statistics": stats,
                 "tree": tree,
             }
             
-            # Replace hyphens with underscores in filename for Hugo compatibility
-            filename = dist.replace("-", "_") + ".json"
+            # Output filename already uses underscores
+            filename = output_name + ".json"
             output_path = os.path.join(output_dir, filename)
             
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
             
-            print(f"✅ Saved {dist}: {stats['total_files']} files ({stats['total_size_formatted']})")
+            print(f"✅ Saved {output_name} (source: {source_folder}): {stats['total_files']} files ({stats['total_size_formatted']})")
 
 
 def main():
@@ -368,22 +377,18 @@ def main():
     linux_packages_dir = downloads_dir / "linux_packages"  # Use underscore for Hugo compatibility
     
     # Linux distributions to generate separate files for
+    # Debian and ubuntu share the same S3 folders, so we only reference debian folders
     linux_distributions = [
-        "debian",
-        "ubuntu",
-        "ubuntugis",
-        "debian-nightly-release",
-        "ubuntu-nightly-release",
-        "ubuntugis-nightly-release",
-        "debian-ltr",
-        "ubuntu-ltr",
-        "ubuntugis-ltr",
-        "debian-nightly-ltr",
-        "ubuntu-nightly-ltr",
-        "ubuntugis-nightly-ltr",
-        "debian-nightly",
-        "ubuntu-nightly",
-        "ubuntugis-nightly",
+        ("debian_ubuntu", "debian"),  # debian folder serves both debian+ubuntu
+        ("ubuntugis", "ubuntugis"),  # Separate ubuntugis
+        ("debian_ubuntu_nightly_release", "debian-nightly-release"),
+        ("ubuntugis_nightly_release", "ubuntugis-nightly-release"),
+        ("debian_ubuntu_ltr", "debian-ltr"),
+        ("ubuntugis_ltr", "ubuntugis-ltr"),
+        ("debian_ubuntu_nightly_ltr", "debian-nightly-ltr"),
+        ("ubuntugis_nightly_ltr", "ubuntugis-nightly-ltr"),
+        ("debian_ubuntu_nightly", "debian-nightly"),
+        ("ubuntugis_nightly", "ubuntugis-nightly"),
     ]
     
     print("🚀 Starting S3 Downloads Update")
