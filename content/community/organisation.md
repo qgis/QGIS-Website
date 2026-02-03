@@ -220,7 +220,7 @@ QGIS is being packaged for different types of operating systems. The people resp
     
 *   Windows: Giovanni Manghi, Pedro Venâncio, Duarte Carreira, Andre Mano, Rui Pedro Henriques
     
-*   macOS: Denis Rouzaud, Matthias Kuhn
+*   macOS: Denis Rouzaud, Matthias Kuhn, Isabel Kiefer
     
 
 ### Security Team
