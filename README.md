@@ -142,11 +142,13 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | `scripts/update-schedule.py`  | Updates `data/conf.json` and `content/schedule.ics` with release schedule information | 📅 Download page, Release schedule, LTR/LT version info |
 | `scripts/update_individual_contributors.py`  | Aggregates GitHub stats for individual contributors across QGIS repositories | 👥 Individual Contributors section (`/community/organisation/contributors/`) |
 | `scripts/update_contributing_orgs.py`  | Aggregates GitHub stats for contributing organizations across QGIS repositories | 🏢 Contributing Organizations section (`/community/organisation/organisations/`) |
+| `scripts/match_commercial_contributors.py`  | Matches commercial support organizations with contributing organizations based on domain/name | 🏪 Commercial Support badges, 🏢 Contributing Organizations links |
 | **GitHub Actions (Automated)** | **Scheduled workflows for content updates** | **Multiple areas** |
 | `.github/workflows/update-gh-sponsors.yml` | Updates GitHub Sponsors list twice daily | 💖 GitHub Sponsors page (`content/funding/donate/github-sponsors.md`) |
 | `.github/workflows/update-donors.yml` | Updates Stripe donors list twice daily | 💰 Donors page (`data/donors.json`) |
 | `.github/workflows/update-feeds.yml` | Updates feeds and hub maps twice daily | 🏢 Funders, 📰 News feeds, 🗺️ Hub maps |
 | `.github/workflows/check-commercial-support-links.yml` | Sanitizes commercial support links weekly | 🏪 Commercial Support page |
+| `.github/workflows/update-commercial-matches.yml` | Updates commercial support contributor matches daily | 🏪 Commercial Support badges (`data/commercial_support/contributor_matches.json`) |
 
 > ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
 
