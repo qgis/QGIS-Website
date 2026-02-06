@@ -7,10 +7,90 @@
     {{ end }}
 {{ end }}
 {{ $contributors = sort $contributors "total_contributions" "desc" }}
-<div class="columns is-multiline">
+
+<!-- Filter and Search Section -->
+<div class="contributors-filter-section notification is-light p-5 mb-5">
+    <!-- Search Bar -->
+    <div class="field mb-5">
+        <div class="control has-icons-left is-large">
+            <input 
+                class="input is-medium" 
+                type="text" 
+                id="contributor-search" 
+                placeholder="Search contributors by GitHub username..."
+                aria-label="Search contributors"
+            >
+            <span class="icon is-left is-large">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="mb-4">
+        <div class="has-text-weight-semibold has-text-grey-dark mb-3 is-uppercase">
+            <span class="icon-text">
+                <span class="icon"><i class="fas fa-filter"></i></span>
+                <span>Filter by Contribution Area</span>
+            </span>
+        </div>
+        <div class="buttons">
+            <button class="button filter-button" data-thematic="qgis_core">
+                <span class="icon"><i class="fas fa-code"></i></span>
+                <span>QGIS Core</span>
+            </button>
+            <button class="button filter-button" data-thematic="documentation">
+                <span class="icon"><i class="fas fa-book"></i></span>
+                <span>Documentation</span>
+            </button>
+            <button class="button filter-button" data-thematic="web_sites">
+                <span class="icon"><i class="fas fa-globe"></i></span>
+                <span>Web Sites</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Stats and Reset -->
+    <div class="level is-mobile">
+        <div class="level-left">
+            <div class="level-item">
+                <div>
+                    <span class="has-text-grey-dark">Showing:</span>
+                    <span id="stats-showing" class="has-text-weight-semibold">{{ len $contributors }}</span>
+                </div>
+            </div>
+            <div class="level-item">
+                <div>
+                    <span class="has-text-grey-dark">Total:</span>
+                    <span id="stats-total" class="has-text-weight-semibold">{{ len $contributors }}</span>
+                </div>
+            </div>
+        </div>
+        <div class="level-right">
+            <div class="level-item">
+                <button class="button is-outlined is-primary3" id="reset-filters">
+                    <span class="icon"><i class="fas fa-redo"></i></span>
+                    <span>Reset Filters</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- No Results Message (hidden by default) -->
+<div class="contributors-no-results notification has-text-centered py-6" style="display: none;">
+    <span class="icon is-large has-text-grey-lighter mb-4">
+        <i class="fas fa-search-minus fa-3x"></i>
+    </span>
+    <h3 class="title is-4 has-text-grey">No contributors found matching your criteria</h3>
+    <p class="has-text-grey">Try adjusting your search terms or selected filters to see more results</p>
+</div>
+
+<!-- Contributors Grid -->
+<div class="columns is-multiline is-flex">
     {{ range $idx, $contributor := $contributors }}
     {{ $isHonorary := index $honoraryMembers $contributor.login }}
-    <div class="column is-one-third">
+    <div class="column is-one-third-fullhd is-half-tablet is-full-mobile">
         <div class="card contributor-card individual{{ if $isHonorary }} honorary-member{{ end }}" id="{{ .login | urlize }}">
             <div class="card-content has-text-centered">
                 <div class="avatar-container">
@@ -72,3 +152,7 @@
     </div>
     {{ end }}
 </div>
+
+<!-- Load contributors filter functionality -->
+{{ $js := resources.Get "js/contributors-filter.js" }}
+<script src="{{ $js.RelPermalink }}"></script>
