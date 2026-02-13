@@ -331,3 +331,31 @@
   
   .sol-katz-card
     padding: 1.5rem
+
+// Contributors Filter and Search Styles (minimal custom properties)
+.contributors-filter-section
+  .control.has-icons-left .input:focus
+    border-color: $primary5
+    box-shadow: 0 0 0 0.125em rgba(147, 176, 35, 0.25)
+
+  .icon.is-left i
+    color: $primary5
+
+  .filter-button
+    &:hover
+      border-color: $primary5
+      background: hsl(0, 0%, 96%)
+      color: $primary5
+
+    &.is-active
+      border-color: $primary5
+      background: $primary5
+      color: white
+
+      &:hover
+        background: darken($primary5, 10%)
+        border-color: darken($primary5, 10%)
+
+.contributors-no-results
+  border: 2px dashed hsl(0, 0%, 86%)
+
