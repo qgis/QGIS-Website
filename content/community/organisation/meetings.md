@@ -15,16 +15,16 @@ Since 2009 the QGIS community has been organizing developer and user meetings ar
 
 {{< rich-box-start layoutClass="has-right rounded" >}}
 {{< rich-content-start themeClass="coloring-2" >}}
-### QGIS User Conference 2025
+### QGIS User Conference 2026
 
-When: 2-3 June 2025  
-Where: Norrköping, Sweden
+When: 5-7 October 2026
+Where: Switzerland
 
-{{< button class = "is-primary1" link = "https://uc2025.qgis.org/" text = "Learn more" >}} 
+{{< button class = "is-primary1" link = "https://conference.qgis.org/" text = "Learn more" >}} 
 
 {{< rich-content-end >}}
 {{< rich-right-start >}}
-![](uc-2025/visualization_center.webp)
+![](uc-2026/mountains.jpg)
 {{< rich-right-end >}}
 {{< rich-box-end >}}
 

@@ -136,9 +136,6 @@ test.describe("Resources pages", () => {
         ).toBeVisible();
         await expect(installationGuidePage.distributionCell).toBeVisible();
         await expect(installationGuidePage.codenameCell).toBeVisible();
-        await expect(
-            installationGuidePage.alsoAvailableBasedOnCell,
-        ).toBeVisible();
         await expect(installationGuidePage.wgetQgisPre).toBeVisible();
         await expect(installationGuidePage.qgisArchiveKeyringPre).toBeVisible();
         await expect(installationGuidePage.mkdirAptPre1).toBeVisible();

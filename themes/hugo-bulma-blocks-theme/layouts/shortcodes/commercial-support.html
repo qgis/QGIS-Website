@@ -1,23 +1,47 @@
 {{ $dataFile := (.Get "dataFile") }}
 {{ $data := index $.Site.Data.commercial_support $dataFile | default dict }}
+{{ $matches := $.Site.Data.commercial_support.contributor_matches.matches | default dict }}
 <div class="container mt-6 mb-6">
     {{ with sort $data }}
         {{ range . }}
-            <div class="columns is-multiline is-centered">
+            {{ $match := index $matches .name }}
+            <div class="columns is-multiline is-centered" id="{{ .name | urlize }}">
                 <div class="column is-flex is-flex-direction-column is-2">
                     <img src="{{ .image | absURL }}" />
                 </div>
                 <div class="column">
-                    <a
-                        style="font-size: 24px"
-                        {{ with .url }}
-                            href="{{ . }}" class="external-link" target="_blank"
-                            rel="noopener noreferrer"
+                    <div class="is-flex is-align-items-center is-flex-wrap-wrap mb-2">
+                        <a
+                            class="title is-4 mr-3"
+                            {{ with .url }}
+                                href="{{ . }}" class="external-link" target="_blank"
+                                rel="noopener noreferrer"
+                            {{ end }}
+                            >{{ .name }}</a
+                        >
+                        <a class="heading-anchor" href="#{{ .name | urlize }}">
+                            ¶
+                        </a>
+                        {{ if and $match $match.is_contributor }}
+                            <span class="tag is-success mb-5">
+                                <span class="icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </span>
+                                <span>Active Contributor</span>
+                            </span>
                         {{ end }}
-                        >{{ .name }}</a
-                    >
-                    <br />
+                    </div>
                     {{ .description }}
+                    {{ if and $match $match.is_contributor }}
+                        <div class="mt-3">
+                            <a href="/community/contributors/organisations/#{{ $match.contributor_name | urlize }}" class="button is-success is-outlined">
+                                <span class="icon">
+                                    <i class="fas fa-users"></i>
+                                </span>
+                                <span>View Contributions</span>
+                            </a>
+                        </div>
+                    {{ end }}
                 </div>
             </div>
             <hr />

@@ -2,9 +2,9 @@
 name: 📦 Update S3 Downloads
 
 on:
-  # Run daily at 2 AM UTC
+  # Run hourly
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 * * * *'
   
   # Allow manual trigger
   workflow_dispatch:
@@ -16,12 +16,12 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -42,14 +42,14 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git diff --exit-code data/s3_downloads.json || echo "changed=true" >> $GITHUB_OUTPUT
+          git diff --exit-code data/downloads/ || echo "changed=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push changes
         if: steps.git-check.outputs.changed == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/s3_downloads.json
+          git add data/downloads/
           git commit -m "🤖 Update S3 downloads listing [skip ci]"
           git push
       

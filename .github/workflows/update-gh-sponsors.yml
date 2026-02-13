@@ -13,7 +13,7 @@ jobs:
     if: github.repository_owner == 'qgis'
     steps:
       - name: '🛎️ Checkout'
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: '💖 Generate Sponsors'
         uses: JamesIves/github-sponsors-readme-action@v1
@@ -30,6 +30,6 @@ jobs:
             </a>
     
       - name: '✉️ Commit'
-        uses: stefanzweifel/git-auto-commit-action@v6
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'GitHub Sponsors updated and committed via a GitHub Action.'

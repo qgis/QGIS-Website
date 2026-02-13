@@ -1,4 +1,9 @@
-{{ $data := $.Site.Data.s3_downloads }}
+{{ $data := $.Site.Data.downloads.s3_downloads }}
+
+{{ $coreJs := resources.Get "js/s3-file-explorer-core.js" }}
+{{ if $coreJs }}
+<script src="{{ $coreJs.RelPermalink }}"></script>
+{{ end }}
 
 {{ $js := resources.Get "js/s3-file-explorer.js" }}
 {{ if $js }}
@@ -103,7 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof initS3Explorer === 'function') {
         initS3Explorer({
             tree: {{ $data.tree | jsonify }},
-            totalFiles: {{ len $data.files }}
+            totalFiles: {{ $data.statistics.total_files }}
         });
     } else {
         console.error('S3 Explorer: initS3Explorer function not found');

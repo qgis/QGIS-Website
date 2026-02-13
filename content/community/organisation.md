@@ -71,7 +71,7 @@ Read more about the responsibilities of the PSC [here]({{< ref "/community/found
 
 Address of the Organization
 
-QGIS.ORG Böschacherstrasse 10a CH-8624 Grüt (Gossau ZH)
+QGIS.ORG Via Geinas 2, CH-7031 Laax
 
 ## Voting members
 
@@ -172,6 +172,17 @@ Added 2022
 
 *  Adelcides Varela, Cabo Verde
 
+*  Germán Carrillo, Colombia
+  
+
+Added 2024
+
+* Stefanos Natsis, Greece
+
+* Isabel Kiefer, Switzerland
+
+* Damiano Lombardi, Switzerland
+
 
 ### OSGEO Voting Member
   
@@ -190,7 +201,7 @@ QGIS is being packaged for different types of operating systems. The people resp
 
 *   Windows Team: Jürgen E. Fischer
     
-*   OS X Team: William Kyngesburye, Peter Petrik
+*   MacOS Team: Matthias Kuhn, OPENGIS.ch
     
 *   Linux Team:
     
@@ -209,7 +220,7 @@ QGIS is being packaged for different types of operating systems. The people resp
     
 *   Windows: Giovanni Manghi, Pedro Venâncio, Duarte Carreira, Andre Mano, Rui Pedro Henriques
     
-*   MacOS: Larry Shaffer, Tim Sutton, Denis Rouzaud, Peter Petrik
+*   macOS: Denis Rouzaud, Matthias Kuhn, Isabel Kiefer
     
 
 ### Security Team

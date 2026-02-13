@@ -282,8 +282,8 @@ sectionPagesMenu = 'main'
 
 [[menu.main]]
   parent = "Meetings"
-  name = "QGIS UC 2025"
-  url = "https://uc2025.qgis.org/"
+  name = "QGIS Conference"
+  url = "https://conference.qgis.org/"
   weight = 185
 
 [[menu.main]]
@@ -318,25 +318,38 @@ sectionPagesMenu = 'main'
   url = "/community/contributors"
   weight = 240
 
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Sol Katz Award"
+  url = "/community/contributors/sol-katz-award"
+  weight = 241
+
 [[menu.main]]
   parent = "Contributors"
   name = "Organizations"
   url = "/community/contributors/organisations"
-  weight = 241
+  weight = 242
 
 
 [[menu.main]]
   parent = "Contributors"
   name = "Individuals"
   url = "/community/contributors/individuals"
-  weight = 242
+  weight = 243
 
 
 [[menu.main]]
   parent = "Contributors"
   name = "Supporting"
   url = "/community/contributors/supporting"
-  weight = 243
+  weight = 244
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Map"
+  url = "/community/contributors/map"
+  weight = 245
 
 [[menu.main]]
   parent = "Community"

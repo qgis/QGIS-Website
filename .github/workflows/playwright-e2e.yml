@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛒 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
       
       - name: 🛠️ Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -47,7 +47,7 @@ jobs:
       - name: ⚡️ Run Playwright tests
         working-directory: playwright/ci-test
         run: npx playwright test
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v6
         if: always()
         with:
           name: playwright-report
