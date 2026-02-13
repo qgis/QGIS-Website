@@ -2,9 +2,9 @@
 name: 📦 Update S3 Downloads
 
 on:
-  # Run daily at 2 AM UTC
+  # Run hourly
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '0 * * * *'
   
   # Allow manual trigger
   workflow_dispatch:
