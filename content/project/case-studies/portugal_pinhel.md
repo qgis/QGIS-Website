@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/portugal_pinhel1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2015-01-01
 featured: false
 archived: false
 ---
 {{< content-start >}}
 
 # QGIS and Forest Fire Risk Mapping in Portugal
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>January 01, 2015</span>
+</p>
+
 
 Portugal has been affected by large wildfires causing huge losses, not only environmental, but also economic and social losses. To face this risk, the portuguese government, through the National Forest Authority (AFN), decided, a few years ago, to create technical offices allocated to local governments which, among other skills, must prepare Municipal Plans for Forest Fire Protection and Operational Response.
 

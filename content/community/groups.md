@@ -103,7 +103,20 @@ Reviewer: Tim Sutton
 ### Registered 2022
 
 {{< rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS Argentina" listSubtitle="Contact: Ariel Anthieni" >}}
-    
+
+
+### Registered 2024
+{{< rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="QGIS Global virtual FB group" listSubtitle="Contact: Adelcides Varela" >}}
+
+{{< rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS North Macedonia" listSubtitle="Contact: Ivica Milevski" >}}
+
+{{< rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS Albania" listSubtitle="Contact: Emiliano Qose" >}}
+
+{{< rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Republic of Kosova" listSubtitle="Contact: Milot Lubishtani" >}}
+
+### Registered 2025
+
+{{< rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contact: Antidy Kawamala" >}}
 
 ## Goals of a user group
 
@@ -122,7 +135,7 @@ Reviewer: Tim Sutton
     
 *   Initialization/coordination of application modules, e.g. surveying, urban planning, server/web client, etc.
     
-*   Electing a representative to act as a [QGIS Country Voting Member]({{< ref "/community/organisation#voting-members" >}})
+*   Electing a representative to act as a [QGIS Voting Member]({{< ref "/community/organisation#voting-members" >}})
     
 
 ## General assumptions/recommendations
@@ -169,9 +182,17 @@ Your local user group website should be used to publish any material in relation
 Good luck with organizing your local user group! Please inform the international QGIS team by registering at the QGIS community list and reporting about your progress. Please do not hesitate to ask questions regarding the establishment and maintenance of your local user group.
 
 
-## Website template
+## Starter pack
+### QGIS.org subdomain hosting
 
+If you prefer to use the official QGIS.org branding and host your user group website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
 
-If you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
+### QGIS News Feed submission access
+
+Local user groups can request access to the [QGIS News Feed system](https://feed.qgis.org), which allows you to submit news entries (such as events, crowdfunding campaigns, meetups, or announcements) that will appear in the QGIS news section once approved by moderators. This is an excellent way to share your group's activities with the global QGIS community.
+
+### Template for local country domain qgis.xx
+
+For local country domain, if you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
 
 {{< content-end >}}

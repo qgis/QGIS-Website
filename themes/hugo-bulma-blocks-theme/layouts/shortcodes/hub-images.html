@@ -1,0 +1,102 @@
+{{ $showcaseType := .Get "showcase" | default "" }}
+{{ $quantity := .Get "quantity" | default "100" }}
+{{ $columns := .Get "columns" | default "2" }}
+
+{{ $pages := slice }}
+{{ if eq $showcaseType "map" }}
+    {{ $headlessbundle := .Site.GetPage "/hub-maps" }}
+    {{ $pages = where ( $headlessbundle.Resources.ByType "page" ) "Params.source" "hub" }}
+{{ else if eq $showcaseType "screenshot" }}
+    {{ $headlessbundle := .Site.GetPage "/hub-screenshots" }}
+    {{ $pages = where ( $headlessbundle.Resources.ByType "page" ) "Params.source" "hub" }}
+{{ else }}
+    {{ $mapBundle := .Site.GetPage "/hub-maps" }}
+    {{ $mapPages := where ( $mapBundle.Resources.ByType "page" ) "Params.source" "hub" }}
+    {{ $screenshotBundle := .Site.GetPage "/hub-screenshots" }}
+    {{ $screenshotPages := where ( $screenshotBundle.Resources.ByType "page" ) "Params.source" "hub" }}
+    {{ $pages = $pages | append $mapPages }}
+    {{ $pages = $pages | append $screenshotPages }}
+{{ end }}
+
+<div class="columns is-multiline gallery">
+    {{ $.Scratch.Set "counter" 0 }}
+    {{ range sort (where $pages "Params.showcase" $showcaseType) ".Params.date" "asc" }}
+        {{ if eq .Params.draft false }}
+            {{ $count := add ($.Scratch.Get "counter") 1 }}
+            {{ $.Scratch.Set "counter" $count }}
+            {{ if le $count $quantity }}
+                <div
+                    class="column is-6 is-flex"
+                    style="max-height: unset;"
+                >
+                    {{/* is flex ensures cols have the same height */}}
+                    <div class="tile">
+                        <a
+                            class="rich-list has-image mr-2 mb-2"
+                            href="{{ .Params.hub_link }}"
+                        >
+                            <div class="image">
+                                {{ $imagePath := cond (eq .Params.showcase "map") "hub-maps" "hub-screenshots" }}
+                                <img
+                                    src="{{ .Site.BaseURL }}{{ $imagePath }}/{{ .Params.image }}"
+                                />
+                                <div
+                                    class="map-info is-flex is-flex-direction-column is-justify-content-space-between is-align-items-flex-end"
+                                >
+                                    <div>
+                                        <button
+                                            class="button is-light"
+                                            onclick="event.preventDefault(); window.open('{{ .Params.link }}', '_blank');"
+                                        >
+                                            <span class="icon is-size-4">
+                                                <i
+                                                    class="fas fa-magnifying-glass-plus"
+                                                ></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <span class="tag is-light is-success">
+                                        Uploaded by
+                                        {{ .Params.creator | default "Unknown" }}
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="listcont ">
+                                <p class="has-text-weight-semibold">
+                                    {{ .Params.title | truncate 60 }}
+                                </p>
+                                <p>
+                                    {{ .Params.description | truncate 200 }}
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</div>
+<div class="has-text-centered mt-4">
+    {{ if eq $showcaseType "map" }}
+        <a class="button is-success" href="https://hub.qgis.org/map-gallery">
+            <span class="icon">
+                <i class="fas fa-arrow-right"></i>
+            </span>
+            <span>See more maps</span>
+        </a>
+    {{ else if eq $showcaseType "screenshot" }}
+        <a class="button is-success" href="https://hub.qgis.org/screenshots">
+            <span class="icon">
+                <i class="fas fa-arrow-right"></i>
+            </span>
+            <span>See more screenshots</span>
+        </a>
+    {{ else }}
+        <a class="button is-success" href="https://hub.qgis.org">
+            <span class="icon">
+                <i class="fas fa-arrow-right"></i>
+            </span>
+            <span>See more on QGIS Hub</span>
+        </a>
+    {{ end }}
+</div>

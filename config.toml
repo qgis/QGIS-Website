@@ -345,8 +345,8 @@ sectionPagesMenu = 'main'
 
 [[menu.main]]
   parent = "Meetings"
-  name = "QGIS UC 2025"
-  url = "https://uc2025.qgis.org/"
+  name = "QGIS Conference"
+  url = "https://conference.qgis.org/"
   weight = 185
   [menu.main.params]
     i18n_key = "menuQGISUC2025"
@@ -388,7 +388,46 @@ sectionPagesMenu = 'main'
   [menu.main.params]
     i18n_key = "menuMailingLists"
 
-  
+
+[[menu.main]]
+  parent = "Community"
+  name = "Contributors"
+  url = "/community/contributors"
+  weight = 240
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Sol Katz Award"
+  url = "/community/contributors/sol-katz-award"
+  weight = 241
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Organizations"
+  url = "/community/contributors/organisations"
+  weight = 242
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Individuals"
+  url = "/community/contributors/individuals"
+  weight = 243
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Supporting"
+  url = "/community/contributors/supporting"
+  weight = 244
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Map"
+  url = "/community/contributors/map"
+  weight = 245
+
 [[menu.main]]
   parent = "Community"
   name = "Members Blogs"
@@ -396,6 +435,7 @@ sectionPagesMenu = 'main'
   weight = 280
   [menu.main.params]
     i18n_key = "menuMembersBlogs"
+
 
 
 [[menu.main]]
@@ -850,6 +890,13 @@ sectionPagesMenu = 'main'
   [menu.main.params]
     i18n_key = "menuSecurity"
 
+
+
+[[menu.main]]
+  parent = "Contact and Support"
+  name = "Privacy Policy"
+  url = "/resources/support/privacy/"
+  weight = 200
 
 # Languages for translated docs
 [[menu.lang]]

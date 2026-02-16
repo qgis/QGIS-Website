@@ -1,18 +1,26 @@
 ---
-title: "QGIS to describe the Cesena\'s Wall"
+title: "QGIS to describe the Cesena's Wall"
 draft: false
 HasBanner: false
 sidebar: true
 thumbnail: "images/italy_cesena1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2015-10-30
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS to describe the Cesena\'s Wall
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>October 30, 2015</span>
+</p>
+
 
 The ECAMPUS UNIVERSITY was created as an online University and recognized by the MIUR (Italian Ministry of Education, University and Research) by the Ministerial Decree of 30 January 2006. It was formed with the aim of providing access to university through its eLearning platform to young people, professionals, entrepreneurs, executives and business and cultural actors in order to contribute to the labor market. The headquarters, also known as Milan International Campus, or Campus of Novedrate, is located in the ex IBM training center of Novedrate (Como, Italy), on a campus in the quiet green Brianza.
 

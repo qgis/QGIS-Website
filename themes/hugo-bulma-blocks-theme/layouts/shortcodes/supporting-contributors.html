@@ -1,0 +1,100 @@
+{{ $contributors := $.Site.Data.contributors.supporting }}
+
+<!-- Sort by start_date (oldest first) -->
+{{ $sortedContributors := slice }}
+{{ range $contributors }}
+    {{ $sortKey := .start_date }}
+    {{ if not $sortKey }}
+        {{ $sortKey = "9999-12-31" }}
+    {{ end }}
+    {{ $sortedContributors = $sortedContributors | append (dict "contributor" . "sortKey" $sortKey) }}
+{{ end }}
+{{ $sortedContributors = sort $sortedContributors "sortKey" "asc" }}
+
+<!-- Separate individuals and organizations -->
+{{ $individuals := slice }}
+{{ $organizations := slice }}
+{{ range $sortedContributors }}
+    {{ $c := .contributor }}
+    {{ if $c.is_organization }}
+        {{ $organizations = $organizations | append $c }}
+    {{ else }}
+        {{ $individuals = $individuals | append $c }}
+    {{ end }}
+{{ end }}
+
+<!-- Render function for contributor cards -->
+{{ define "contributor-card" }}
+    <div class="card contributor-card organization organization-horizontal" id="{{ .name | urlize}}">
+        <div class="card-content">
+            <div class="columns is-vcentered">
+                <div class="column is-narrow">
+                    <div class="avatar-container">
+                        {{ if .is_organization }}
+                            <img src="{{ .avatar_img }}" alt="{{ .name }}" class="avatar-large" loading="lazy">
+                        {{ else }}
+                            <img src="{{ .avatar_img }}" alt="{{ .name }}" class="avatar-large-rounded" loading="lazy">
+                        {{ end }}
+                    </div>
+                </div>
+                <div class="column is-two-third">
+                    <div class="org-info">
+                        <h3 class="title is-3">
+                            {{ if .link }}
+                                <a href="{{ .link }}" class="external-link" target="_blank" rel="noopener">{{ .name }}</a>
+                            {{ else }}
+                                {{ .name }}
+                            {{ end }}
+                            <a class="heading-anchor" href="#{{ .name | urlize }}">
+                                ¶
+                            </a>
+                        </h3>
+                        <div class="content">
+                            <p>{{ .contribution_description }}</p>
+                        </div>
+                    </div>
+                    <div class="contribution-badges">
+                        {{ range .roles }}
+                        <span class="contributor-badge contributor-badge-community_activities">
+                            <span>
+                                <i class="fas fa-award mr-1"></i>
+                                {{ . }}
+                            </span>
+                        </span>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{ end }}
+
+<!-- Organizations Section -->
+{{ if gt (len $organizations) 0 }}
+<div class="mb-6">
+    <h2 class="title is-3 has-text-centered mb-5">
+        <i class="fas fa-building mr-2 has-text-primary"></i>
+        Organizations
+    </h2>
+    <div class="organization-list">
+        {{ range $organizations }}
+            {{ template "contributor-card" . }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}
+
+<!-- Individuals Section -->
+{{ if gt (len $individuals) 0 }}
+<div class="mb-6">
+    <h2 class="title is-3 has-text-centered mb-5">
+        <i class="fas fa-users mr-2 has-text-info"></i>
+        Individuals
+    </h2>
+    <div class="organization-list">
+        {{ range $individuals }}
+            {{ template "contributor-card" . }}
+        {{ end }}
+    </div>
+</div>
+{{ end }}

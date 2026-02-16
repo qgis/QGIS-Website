@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/india_hyderabad1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2012-07-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS Trainings at NIRD Jaipur Centre, India
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>July 01, 2012</span>
+</p>
+
 
 ![](../images/india_hyderabad1.png)
 

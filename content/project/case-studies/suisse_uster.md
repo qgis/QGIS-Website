@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/suisse_uster1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2011-04-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # The use of QGIS in the Geodata Infrastructure of the City of Uster
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>April 01, 2011</span>
+</p>
+
 
 The City of Uster has been using QGIS since 2007. Encouraged by the decision of the Kanton of Solothurn to use QGIS as a Desktop GIS replacement for ArcView, Uster decided to also give it a try. The city joined the effort for the further development of the QGIS application, by suggesting and testing new features and by financially supporting the development. In return Uster receives a rapidly evolving and platform independent Desktop GIS and WebGIS solution backed by a worldwide user and development community.
 

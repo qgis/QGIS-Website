@@ -98,9 +98,6 @@ test.describe("Resources pages", () => {
         ).toBeVisible();
         await expect(installationGuidePage.releaseScheduleLink).toBeVisible();
         await expect(installationGuidePage.releaseCell1).toBeVisible();
-        await expect(
-            installationGuidePage.releaseVersionPackageCell,
-        ).toBeVisible();
         await expect(installationGuidePage.packageCell).toBeVisible();
         await expect(
             installationGuidePage.mainInstallersPageLink,
@@ -113,10 +110,6 @@ test.describe("Resources pages", () => {
         await expect(installationGuidePage.ubuntugisLink).toBeVisible();
         await expect(
             installationGuidePage.ubuntugisDocumentationLink,
-        ).toBeVisible();
-        await expect(installationGuidePage.releaseCell4).toBeVisible();
-        await expect(
-            installationGuidePage.releaseVersionDescriptionCell,
         ).toBeVisible();
         await expect(installationGuidePage.descriptionCell).toBeVisible();
         await expect(installationGuidePage.repositoryCell).toBeVisible();
@@ -142,13 +135,7 @@ test.describe("Resources pages", () => {
             installationGuidePage.releaseWithUbuntugisCell2,
         ).toBeVisible();
         await expect(installationGuidePage.distributionCell).toBeVisible();
-        await expect(
-            installationGuidePage.distributionVersionCodenameCell,
-        ).toBeVisible();
         await expect(installationGuidePage.codenameCell).toBeVisible();
-        await expect(
-            installationGuidePage.alsoAvailableBasedOnCell,
-        ).toBeVisible();
         await expect(installationGuidePage.wgetQgisPre).toBeVisible();
         await expect(installationGuidePage.qgisArchiveKeyringPre).toBeVisible();
         await expect(installationGuidePage.mkdirAptPre1).toBeVisible();
@@ -161,7 +148,6 @@ test.describe("Resources pages", () => {
         ).toBeVisible();
         await expect(installationGuidePage.dnfInstallQgisPre).toBeVisible();
         await expect(installationGuidePage.distributionCell2).toBeVisible();
-        await expect(installationGuidePage.distQGISFedora).toBeVisible();
         await expect(installationGuidePage.qgisVersionCell).toBeVisible();
         await expect(installationGuidePage.rpmInstallQgis).toBeVisible();
         await expect(installationGuidePage.distributionCell3).toBeVisible();

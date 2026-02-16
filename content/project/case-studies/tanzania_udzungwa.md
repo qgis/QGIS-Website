@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/tanzania_udzungwa1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2012-03-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Using QGIS for wildlife training in Tanzania
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>March 01, 2012</span>
+</p>
+
 
 ## Introduction
 

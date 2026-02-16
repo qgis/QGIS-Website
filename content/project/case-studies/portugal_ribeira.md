@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/portugal_ribeira1.png"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2012-07-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS and GRASS for modelling ecological corridors for wolves in North Portugal
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>July 01, 2012</span>
+</p>
+
 
 The Iberian wolf is a sub-species of the gray wolf that exists only in north of Portugal and Spain, with small isolated groups in the south of Douro river. During the last century, it suffered a high regression, being a "vulnerable" species in Spain and "endangered" in Portugal. Nowadays, there are only around 300 wolves in Portugal, due to the high persecution, destruction and fragmentation of the habitat.
 

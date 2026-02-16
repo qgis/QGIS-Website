@@ -1,0 +1,62 @@
+# This workflow updates individual contributors and contributing organizations data
+# and commits the updates to the repository.
+
+name: ⚒️ Update contributors and commit
+on:
+  schedule:
+    - cron: '0 3,9 * * *'  # At 03:00 and 09:00 UTC daily
+  workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
+
+jobs:
+  update-contributors:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'qgis'
+    steps:
+    - name: '🛒 Checkout QGIS Website'
+      uses: actions/checkout@v6
+      with:
+        ref: main
+        path: ./qgis-website
+
+    - name: '🐍 Setup Python'
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.10'
+        architecture: 'x64'
+        cache: "pipenv"
+
+    - name: '🚸 Install Python deps'
+      run: |
+        cd ./qgis-website
+        pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
+        pipenv run pip freeze
+    
+    - name: '👥 Update individual contributors'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        cd ./qgis-website
+        echo "Starting individual contributors update..."
+        pipenv run python scripts/update_individual_contributors.py
+        echo "Individual contributors update completed"
+
+    - name: '🏢 Update contributing organizations'
+      run: |
+        cd ./qgis-website
+        echo "Starting contributing organizations update..."
+        pipenv run python scripts/update_contributing_orgs.py
+        echo "Contributing organizations update completed"
+
+    - name: '🔗 Match commercial support with contributors'
+      run: |
+        cd ./qgis-website
+        echo "Starting commercial support matching..."
+        pipenv run python scripts/match_commercial_contributors.py
+        echo "Commercial support matching completed"
+
+    - name: '✉️ Commit and push changes'
+      uses: stefanzweifel/git-auto-commit-action@v7
+      with:
+        commit_message: '🤖 Contributors and organizations data updated via GitHub Action'
+        repository: ./qgis-website
+        file_pattern: 'data/contributors/*.json data/commercial_support/contributor_matches.json'

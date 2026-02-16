@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/australia_snowyhydro1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2014-08-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Using the processing toolbox to automate snow classification
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>August 01, 2014</span>
+</p>
+
 
 Snowy Hydro Limited (SHL) is a peak electricity generator based in the Snowy Mountains of New South Wales, Australia. Despite owning a variety of generation assets across the country, Snowy Hydro Limited is best known for the custodianship of an iconic piece of Australian infrastructure, the Snowy Mountains Hydro Electric Scheme.
 

@@ -7,13 +7,21 @@ thumbnail: "images/portugal_trees_inventory3.webp"
 section: "project"
 type: "case-study"
 date: "2025-06-08"
-featured: false
+featured: true
 archived: false
 ---
 
 {{< content-start >}}
 
 # Using QGIS and Mergin Maps for creating urban tree inventories in Portugal
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>June 08, 2025</span>
+</p>
+
 
 NaturalGIS \[<https://www.naturalgis.pt>\] is a Portuguese company specializing in Geographic Information Systems (GIS), 
 with a particular focus on QGIS and PostGIS technologies. Their core business encompasses 

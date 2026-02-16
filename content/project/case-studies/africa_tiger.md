@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/africa_tiger1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2012-06-30
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # Water Observation and Information System: Enabling the Use of Earth Observation Data for Integrated Water Resource Management in Africa
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>June 30, 2012</span>
+</p>
+
 
 The Water Observation and Information System (WOIS) is an open source software tool for monitoring, assessing and inventorying water resources in a cost-effective manner using Earth Observation (EO) data. The WOIS has been developed under the TIGER-NET project, which is a major component of the TIGER initiative of the European Space Agency (ESA) and whose main goal is to support the African Earth observation capacity for water resource monitoring. TIGER-NET aims to support the satellite-based assessment and monitoring of water resources from watershed to cross-border basin levels through the provision of a free and powerful software package, with associated capacity building, to African authorities.
 

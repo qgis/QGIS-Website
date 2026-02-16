@@ -31,20 +31,6 @@
     download
 >{{ printf (i18n "latestVersionForWindows") .version }}</a>
 
-<a
-	class="button is-primary1 is-outlined mb-3"
-	href="{{ .lr_qt6_msi }}"
-    onclick="thanks(this)"
-    download
->{{ printf (i18n "latestVersionForWindowsQt6") .version }}</a>
-
-<a
-	class="button is-primary1 is-outlined mb-3"
-	href="{{ .ltr_qt6_msi }}"
-    onclick="thanks(this)"
-    download
->{{ printf (i18n "longTermVersionForWindowsQt6") .ltrversion }}</a>
-
 <p>
     {{ i18n "offlineInstallersDescription" }}
     <a href="{{ relLangURL "resources/installation-guide#offline-standalone-installers" }}">

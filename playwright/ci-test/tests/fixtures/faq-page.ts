@@ -15,7 +15,7 @@ export class FaqPage {
         "Can I open ECW files with QGIS?",
         "Development",
         "Can I compile QGIS myself?",
-        "QGIS.org, %%Y. QGIS Geographic Information System. QGIS Association.",
+        `QGIS.org, ${new Date().getFullYear()}. QGIS Geographic Information System. QGIS Association.`,
         "Cite the QGIS Developers",
         "Geographic Information System Developers Manual. QGIS Association.",
         "Cite the QGIS Installation",
@@ -33,7 +33,8 @@ export class FaqPage {
     public readonly qgisWebsiteLink: Locator;
     public readonly qgisGitHubLink: Locator;
     public readonly citeQGISUserGuide: Locator;
-    public readonly preElements: Locator;
+    public readonly bibTexPre: Locator;
+    public readonly patternsPre: Locator;
     public readonly buildingQGISFromSourceLink: Locator;
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
@@ -53,7 +54,12 @@ export class FaqPage {
         this.citeQGISUserGuide = this.page
             .locator("p")
             .filter({ hasText: "Cite the QGIS User Guide" });
-        this.preElements = this.page.locator("pre");
+        this.bibTexPre = this.page.locator("pre").filter(
+            { hasText: "title = {QGIS Geographic Information System}" }
+        );
+        this.patternsPre = this.page.locator("pre").filter(
+            { hasText: "title = {The QGIS project: Spatial without compromise}" }
+        );
         this.buildingQGISFromSourceLink = this.page.getByRole("link", {
             name: "Building QGIS from source",
         });

@@ -24,7 +24,7 @@
 > - [members.qgis.org](https://members.qgis.org) ([GitHub: QGIS-Members-Website](https://github.com/qgis/QGIS-Members-Website)) – QGIS Sustaining Members Portal
 > - [certification.qgis.org](https://certification.qgis.org) ([GitHub: QGIS-Certification-Website](https://github.com/qgis/QGIS-Certification-Website)) – QGIS Certification Programme Platform
 > - [changelog.qgis.org](https://changelog.qgis.org) ([GitHub: QGIS-Changelog-Website](https://github.com/qgis/QGIS-Changelog-Website)) – QGIS Changelog Manager
-> - [uc2025.qgis.org](https://uc.qgis.org) ([GitHub: QGIS-UC-Website](https://github.com/qgis/QGIS-UC-Website)) – QGIS User Conference Website
+> - [conference.qgis.org](https://conference.qgis.org) ([GitHub: QGIS-UC-Website](https://github.com/qgis/QGIS-UC-Website)) – QGIS User Conference Website
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
@@ -136,18 +136,27 @@ We are fine with using LLM's and Generative Machine Learning to act as general a
 The `scripts/` folder contains utility scripts to assist with data loading, and project maintenance. Below is a summary of each script:
 
 
-| Script Name                       | Description                                                                                  |
-|-----------------------------------|----------------------------------------------------------------------------------------------|
-| `fetch_feeds.py`                  | Simple script to get sustaining members and other feeds and update our web site with them     |
-| `vscode.sh`                       | Launch VSCode with all settings and extensions needed to productively work on this project    |
-| `scripts/get_commit_hash.sh`  | Get the current commit hash of this repository and write it in config/commit.toml for the website version.                                       |
-| `scripts/changelog_harvest.py`  | Will create/update a visual-changelogs at content/project/visual-changelogs based on the data at data/conf.json.                                       |
-| `scripts/hub_maps_harvest.py`  | Harvest maps data from https://maps.qgis.org                                       |
-| `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity).                                       |
-| `scripts/sanitize_commercial_supports.py`  | Checks each supporter's URL at https://qgis.org/resources/support/commercial-support/ and removes each invalid ones.                                       |
-| `scripts/update_donors_from_file.py`  | It will update the json file (`data/donors.json`) ordered alphabetically by the first name based on an input file.                                       |
-| `scripts/update_donors.py`  | It will update the json file (`data/donors.json`) ordered alphabetically by the first name based on Stripe donations.                                       |
-| `scripts/update-schedule.py`  | It will update `data/conf.json` and `content/schedule.ics`                                       |
+| Script Name                       | Description                                                                                  | Affected Website Parts |
+|-----------------------------------|----------------------------------------------------------------------------------------------|------------------------|
+| `fetch_feeds.py`                  | Simple script to get sustaining members and other feeds and update our web site with them     | 🏢 Sustaining Members page (`content/funders/`), 📰 News feeds (`data/feed.json`), 🎨 Flickr gallery (`content/flickr-images/`) |
+| `vscode.sh`                       | Launch VSCode with all settings and extensions needed to productively work on this project    | 🛠️ Development environment only |
+| `scripts/get_commit_hash.sh`  | Get the current commit hash of this repository and write it in `config/commit.toml` for the website version display | 📄 Footer version info across all pages |
+| `scripts/changelog_harvest.py`  | Will create/update visual-changelogs at `content/project/visual-changelogs` based on the data at `data/conf.json` | 📋 Visual Changelogs pages (`/project/visual-changelogs/`) |
+| `scripts/hub_images_harvest.py`  | Harvest maps/screenshots images from https://hub.qgis.org and update showcase content | 🗺️ Maps and Screenshots showcase section (`content/hub-maps/` and `content/hub-screenshots/`) |
+| `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity) | 🖼️ Images fetched automatically |
+| `scripts/sanitize_commercial_supports.py`  | Checks each supporter's URL and removes invalid ones from commercial support listings | 🏪 Commercial Support page (`/resources/support/commercial-support/`) |
+| `scripts/update_donors_from_file.py`  | Updates `data/donors.json` ordered alphabetically by first name based on input file | 💰 Donors page (`/funding/donate/`) |
+| `scripts/update_donors.py`  | Updates `data/donors.json` ordered alphabetically by first name based on Stripe donations | 💰 Donors page (`/funding/donate/`) |
+| `scripts/update-schedule.py`  | Updates `data/conf.json` and `content/schedule.ics` with release schedule information | 📅 Download page, Release schedule, LTR/LT version info |
+| `scripts/update_individual_contributors.py`  | Aggregates GitHub stats for individual contributors across QGIS repositories | 👥 Individual Contributors section (`/community/organisation/contributors/`) |
+| `scripts/update_contributing_orgs.py`  | Aggregates GitHub stats for contributing organizations across QGIS repositories | 🏢 Contributing Organizations section (`/community/organisation/organisations/`) |
+| `scripts/match_commercial_contributors.py`  | Matches commercial support organizations with contributing organizations based on domain/name | 🏪 Commercial Support badges, 🏢 Contributing Organizations links |
+| **GitHub Actions (Automated)** | **Scheduled workflows for content updates** | **Multiple areas** |
+| `.github/workflows/update-gh-sponsors.yml` | Updates GitHub Sponsors list twice daily | 💖 GitHub Sponsors page (`content/funding/donate/github-sponsors.md`) |
+| `.github/workflows/update-donors.yml` | Updates Stripe donors list twice daily | 💰 Donors page (`data/donors.json`) |
+| `.github/workflows/update-feeds.yml` | Updates feeds and hub maps twice daily | 🏢 Funders, 📰 News feeds, 🗺️ Hub maps |
+| `.github/workflows/check-commercial-support-links.yml` | Sanitizes commercial support links weekly | 🏪 Commercial Support page |
+| `.github/workflows/update-commercial-matches.yml` | Updates commercial support contributor matches daily | 🏪 Commercial Support badges (`data/commercial_support/contributor_matches.json`) |
 
 > ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
 

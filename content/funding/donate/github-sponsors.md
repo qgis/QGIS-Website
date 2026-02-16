@@ -103,10 +103,6 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
   <div class="listcont external-link">
     SolarDesalination - SolarDesalination
   </div>
-</a><a class="rich-list third mr-2 mb-2" href="https://github.com/adventure-tense" target="_blank">
-  <div class="listcont external-link">
-    Andrew Wedlake - adventure-tense
-  </div>
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/MyGIS" target="_blank">
   <div class="listcont external-link">
      - MyGIS
@@ -162,6 +158,14 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
 </a><a class="rich-list third mr-2 mb-2" href="https://github.com/danabauer" target="_blank">
   <div class="listcont external-link">
     Dana Bauer - danabauer
+  </div>
+</a><a class="rich-list third mr-2 mb-2" href="https://github.com/ADS-Fund" target="_blank">
+  <div class="listcont external-link">
+    ADS Fund - ADS-Fund
+  </div>
+</a><a class="rich-list third mr-2 mb-2" href="https://github.com/golden-gecko" target="_blank">
+  <div class="listcont external-link">
+     - golden-gecko
   </div>
 </a><!-- sponsors -->
 

@@ -4,7 +4,7 @@
 name: ⚒️ Update donors and commit
 on:
   schedule:
-    - cron:  '0 0,12 * * *'  # At midnight & noon UTC
+    - cron:  '0 1,7 * * *'  # At 01:00 and 07:00 UTC
   workflow_dispatch:   # Allows you to run this workflow manually from the Actions tab
 
 jobs:
@@ -13,13 +13,13 @@ jobs:
     if: github.repository_owner == 'qgis'
     steps:
     - name: '🛒 Checkout QGIS Website'
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         ref: main
         path: ./qgis-website
 
     - name: '🐍 Setup Python'
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: '3.10'
         architecture: 'x64'
@@ -31,16 +31,19 @@ jobs:
         pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
         pipenv run pip freeze
     
-    - name: '⚙️ Update donors'
+    - name: '⚙️ Update donors from Stripe and Payrexx'
       env:
         STRIPE_API_KEY: ${{ secrets.STRIPE_API_KEY }}
+        PAYREXX_INSTANCE: ${{ secrets.PAYREXX_INSTANCE }}
+        PAYREXX_API_SECRET: ${{ secrets.PAYREXX_API_SECRET }}
         LIST_AS_DONOR_LABEL: ${{ secrets.LIST_AS_DONOR_LABEL }}
       run: |
         cd ./qgis-website
         pipenv run ./scripts/update_donors.py
+        pipenv run ./scripts/update_payrexx_donors.py
 
     - name: '✉️ Commit'
-      uses: stefanzweifel/git-auto-commit-action@v6
+      uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: 'Donors updated and committed via a GitHub Action.'
         repository: ./qgis-website

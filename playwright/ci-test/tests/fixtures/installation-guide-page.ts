@@ -5,7 +5,6 @@ export class InstallationGuidePage {
     public readonly upcomingEvaluationLink: Locator;
     public readonly releaseScheduleLink: Locator;
     public readonly releaseCell1: Locator;
-    public readonly releaseVersionPackageCell: Locator;
     public readonly packageCell: Locator;
     public readonly mainInstallersPageLink: Locator;
     public readonly osgeo4WInstallerLink: Locator;
@@ -15,8 +14,6 @@ export class InstallationGuidePage {
     public readonly aptInstallQgisPre: Locator;
     public readonly ubuntugisLink: Locator;
     public readonly ubuntugisDocumentationLink: Locator;
-    public readonly releaseCell4: Locator;
-    public readonly releaseVersionDescriptionCell: Locator;
     public readonly descriptionCell: Locator;
     public readonly repositoryCell: Locator;
     public readonly latestReleaseCell: Locator;
@@ -29,9 +26,7 @@ export class InstallationGuidePage {
     public readonly releaseDebianLtrLink: Locator;
     public readonly releaseWithUbuntugisCell2: Locator;
     public readonly distributionCell: Locator;
-    public readonly distributionVersionCodenameCell: Locator;
     public readonly codenameCell: Locator;
-    public readonly alsoAvailableBasedOnCell: Locator;
     public readonly wgetQgisPre: Locator;
     public readonly qgisArchiveKeyringPre: Locator;
     public readonly mkdirAptPre1: Locator;
@@ -40,7 +35,6 @@ export class InstallationGuidePage {
     public readonly aptUpdateInstallQgisServerPre: Locator;
     public readonly dnfInstallQgisPre: Locator;
     public readonly distributionCell2: Locator;
-    public readonly distQGISFedora: Locator;
     public readonly qgisVersionCell: Locator;
     public readonly rpmInstallQgis: Locator;
     public readonly distributionCell3: Locator;
@@ -109,14 +103,10 @@ export class InstallationGuidePage {
             name: "Release schedule",
         });
         this.releaseCell1 = this.page
-            .getByRole("cell", { name: "Release", exact: true })
+            .getByRole("columnheader", { name: "Release"})
             .first();
-        this.releaseVersionPackageCell = this.page
-            .getByRole("row", { name: "Release Version Package", exact: true })
-            .getByRole("cell")
-            .nth(1);
         this.packageCell = this.page
-            .getByRole("cell", { name: "Package" })
+            .getByRole("columnheader", { name: "Package" })
             .first();
         this.mainInstallersPageLink = this.page.getByRole("link", {
             name: "the main installers page",
@@ -147,18 +137,11 @@ export class InstallationGuidePage {
         this.ubuntugisDocumentationLink = this.page.getByRole("link", {
             name: "ubuntugis documentation",
         });
-        this.releaseCell4 = this.page
-            .getByRole("cell", { name: "Release", exact: true })
-            .nth(4);
-        this.releaseVersionDescriptionCell = this.page
-            .getByRole("row", { name: "Release Version Description" })
-            .getByRole("cell")
-            .nth(1);
         this.descriptionCell = this.page
-            .getByRole("cell", { name: "Description" })
+            .getByRole("columnheader", { name: "Description" })
             .nth(1);
         this.repositoryCell = this.page
-            .getByRole("cell", { name: "Repository" })
+            .getByRole("columnheader", { name: "Repository" })
             .first();
         this.latestReleaseCell = this.page
             .getByRole("cell", { name: "Latest Release" })
@@ -189,16 +172,9 @@ export class InstallationGuidePage {
             .getByRole("cell", { name: "Release with ubuntugis-" })
             .nth(2);
         this.distributionCell = this.page
-            .getByRole("cell", { name: "Distribution" })
+            .getByRole("columnheader", { name: "Distribution" })
             .first();
-        this.distributionVersionCodenameCell = this.page
-            .getByRole("row", { name: "Distribution Version Codename" })
-            .getByRole("cell")
-            .nth(1);
-        this.codenameCell = this.page.getByRole("cell", { name: "Codename" });
-        this.alsoAvailableBasedOnCell = this.page.getByRole("cell", {
-            name: "Also available based on",
-        });
+        this.codenameCell = this.page.getByRole("columnheader", { name: "Codename" });
         this.wgetQgisPre = this.page
             .locator("pre")
             .filter({ hasText: "wget https://download.qgis." });
@@ -229,28 +205,21 @@ export class InstallationGuidePage {
             hasText: "sudo zypper in qgis qgis-plugin-grass",
         });
         this.distributionCell2 = this.page
-            .getByRole("cell", { name: "Distribution" })
-            .nth(1);
-        this.distQGISFedora = this.page
-            .locator("table")
-            .filter({
-                hasText: "Distribution Version QGIS version Fedora",
-            })
-            .locator("th")
+            .getByRole("columnheader", { name: "Distribution" })
             .nth(1);
         this.qgisVersionCell = this.page
-            .getByRole("cell", { name: "QGIS version" })
+            .getByRole("columnheader", { name: "QGIS version" })
             .first();
         this.rpmInstallQgis = this.page.locator("pre").filter({
             hasText:
                 "rpm-ostree install qgis python3-qgis qgis-grass qgis-server",
         });
         this.distributionCell3 = this.page
-            .getByRole("cell", { name: "Distribution" })
+            .getByRole("columnheader", { name: "Distribution" })
             .nth(2);
         this.repositoryCell2 = this.page
-            .getByRole("cell", { name: "Repository" })
-            .nth(2);
+            .getByRole("columnheader", { name: "Repository" })
+            .nth(1);
         this.urpmiQgisPre = this.page
             .locator("pre")
             .filter({ hasText: "urpmi qgis-python qgis-grass" });

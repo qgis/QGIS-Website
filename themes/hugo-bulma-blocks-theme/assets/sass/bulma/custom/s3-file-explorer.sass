@@ -1,0 +1,199 @@
+/* Statistics Cards */
+.s3-stats-box
+  background-color: $white-ter
+  padding: 1.5rem
+  border-radius: $radius-large
+  margin-bottom: 2rem
+
+.stat-card
+  padding: 0.5rem
+  border-radius: $radius
+  transition: transform 0.2s ease
+
+  &:hover
+    transform: translateY(-2px)
+
+/* Breadcrumb Navigation */
+#s3-breadcrumb, #linux-breadcrumb
+  background-color: $white-ter
+  padding: 1rem 1.5rem
+  border-radius: $radius
+  border: 1px solid $grey-lighter
+
+  a
+    color: $link
+    transition: color 0.2s ease
+
+    &:hover
+      color: $link-hover
+
+  .is-active a
+    color: $text
+    cursor: default
+
+    &:hover
+      color: $text
+  li + li, ul
+    margin: 0
+
+/* File Name Cell */
+.file-name-cell
+  max-width: 400px
+
+/* Folder and File Rows - All Clickable */
+#s3-files-tbody tr
+  transition: background-color 0.2s ease
+
+  &:hover
+    background-color: $white-ter
+
+/* File Links */
+.file-link
+  color: inherit
+  text-decoration: none
+  font-weight: unset !important
+  
+  &:hover
+    color: unset !important
+    text-decoration: underline
+
+/* Results Info Bar */
+.s3-results-info
+  background-color: $white-ter
+  padding: 1rem 1.5rem
+  border-radius: $radius
+  margin-bottom: 1.5rem
+
+/* List View Container */
+.s3-list-container
+  background-color: $white
+  border-radius: $radius-large
+  border: 1px solid $grey-lighter
+  overflow: hidden
+
+/* Sortable Column Headers */
+th.sortable
+  cursor: pointer
+  user-select: none
+  transition: background-color 0.2s ease
+
+  &:hover
+    background-color: $white-ter
+
+  .sort-icon
+    margin-left: 0.25rem
+    opacity: 0.5
+    transition: opacity 0.2s ease
+
+  &:hover .sort-icon
+    opacity: 1
+
+  .sort-icon i.fa-sort-up,
+  .sort-icon i.fa-sort-down
+    opacity: 1
+    color: $primary
+
+/* No Results */
+.s3-no-results
+  background-color: $white
+  padding: 3rem 1.5rem
+  border-radius: $radius-large
+  border: 1px solid $grey-lighter
+  text-align: center
+
+/* Search Clear Button */
+#search-clear
+  cursor: pointer
+
+  &:hover i
+    color: $dark !important
+
+/* Mobile Optimizations */
++mobile
+
+  .stat-card
+    margin-bottom: 1rem
+
+  .file-name-cell
+    max-width: 100%
+
+  /* Larger touch targets on mobile */
+  .button.is-small
+    font-size: 0.875rem
+    padding: 0.5rem 1rem
+
+  /* Stack level items on mobile */
+  .level.is-mobile
+    display: block
+
+    .level-left,
+    .level-right
+      display: block
+
+    .level-item
+      justify-content: flex-start
+      margin-bottom: 0.5rem
+
+  /* Breadcrumb on mobile */
+  #s3-breadcrumb, #linux-breadcrumb
+    padding: 0.75rem 1rem
+    font-size: 0.875rem
+
+    ul
+      flex-wrap: wrap
+
+/* Tablet and Up - Better Spacing */
++tablet
+  .table-container
+    border-radius: $radius
+    overflow: auto
+    max-height: 500px
+
+  .table thead th
+    position: sticky
+    top: 0
+    background: $white
+    z-index: 10
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05)
+
+/* Loading State */
+.is-loading
+  position: relative
+  pointer-events: none
+  opacity: 0.5
+
+  &::after
+    animation: spinAround 500ms infinite linear
+    border: 2px solid $grey-lighter
+    border-radius: 290486px
+    border-right-color: transparent
+    border-top-color: transparent
+    content: ""
+    display: block
+    height: 1em
+    position: absolute
+    width: 1em
+    left: calc(50% - 0.5em)
+    top: calc(50% - 0.5em)
+
+@keyframes spinAround
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
+
+/* Smooth transitions for view switching */
+#s3-list-view
+  animation: fadeIn 0.3s ease
+
+@keyframes fadeIn
+  from
+    opacity: 0
+    transform: translateY(10px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+/* Empty state improvements */
+#s3-no-results
+  animation: fadeIn 0.3s ease

@@ -32,7 +32,7 @@ guidelines for participating in our community:
 
 ### Stay on topic
 
-This forum is for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. It is not for discussions about GIS in general or unrelated software (GIS or otherwise).
+The forums are for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. They are not for discussions about GIS in general or unrelated software (GIS or otherwise).
 
 ### Language
 As we are a global group, all posts must be in English (unless the group you join is language specific). If you have a post in another language, please provide a translated description.
@@ -68,7 +68,7 @@ There is also a web version (https://web.telegram.org) which you can join in the
 
 Matrix (https://matrix.org) is a project for decentralised chat. QGIS has a room which is accessible at the **#qgis:osgeo.org** alias (among others) which bridges to the libera.chat **#qgis** IRC channel.
 
-To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/docs/projects/try-matrix-now/#clients for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org.
+To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/ecosystem/clients/ for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org.
 
 To use IRC: install an IRC client and connect to irc://irc.libera.chat/#qgis or point your browser to https://web.libera.chat/?channels=#qgis
 
@@ -89,14 +89,16 @@ If you believe you have found a security issue, such as vulnerabilities in QGIS 
 
 ## Project Steering Committee (PSC) 
 
-If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list and email address:
+If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list or email address:
 
 {{< rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc"  layoutClass="half"listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 
-{{< rich-list listLink="mailto:qgis-psc@lists.osgeo.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="qgis-psc@lists.osgeo.org" >}}
+{{< rich-list listLink="mailto:psc@qgis.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="psc@qgis.org" >}}
 
 You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
 
-> **Note:** The PSC mailing list is intended for legal, trademark, funding, or administrative matters only. For general support, please use the mailing lists or communication channels mentioned above.
+Alternatively, you can reach the PSC directly at [psc@qgis.org](mailto:psc@qgis.org).
+
+> **Note:** The PSC mailing list and email address are intended for legal, trademark, funding, or administrative matters only. For general support, please use the mailing lists or communication channels mentioned above.
 
 {{< content-end >}}

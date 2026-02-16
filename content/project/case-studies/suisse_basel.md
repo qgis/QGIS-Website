@@ -6,13 +6,21 @@ sidebar: true
 thumbnail: "images/suisse_basel1.jpg"
 section: "project"
 type: "case-study"
-date: 2024-02-16
+date: 2010-06-01
 featured: false
-archived: false
+archived: true
 ---
 {{< content-start >}}
 
 # QGIS —— an interesting instrument for forestry planning concepts at local and regional level
+
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>June 01, 2010</span>
+</p>
+
 
 Almost 35% of Switzerland\'s surface is covered by forests. Changing demands upon the forest and the poor financial situation of forest enterprises in Switzerland led to the development of a new forestry planning concept about fifteen years ago. This concept introduced a clear distinction between planning at the level of the authorities and planning at the level of the owners1. As a new forestry planning office, guaraci works primarily in the region of Basel (Switzerland) on both mentioned planning levels. This case study discusses the use of QGIS at the forest owner level. On this level, a simple, dynamic and compatible geographic information system is required for the establishment of a forest management plan. This plan covers about 1000 ha of forests, will be valid for about 20 years and is implemented by the local forest manager. The area is situated in the region of Basel (see google maps).
 

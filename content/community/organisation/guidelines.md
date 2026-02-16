@@ -28,11 +28,11 @@ QGIS trademarks, service marks, logos and designs, as well as other works of aut
 
 These Guidelines should be followed along with all QGIS’s rules and policies, posted on QGIS.ORG website or otherwise.
 
-## Country User Groups
+## User Groups
 
-QGIS.ORG permits official [QGIS country user groups]({{< ref "/community/groups" >}}), to modify the QGIS logo and use the modified QGIS logo for non-commercial communications and projects. This permission is subject to continued compliance with these Guidelines, QGIS Trademark Guidelines and all other rules and policies. QGIS reserves the right to cancel or change this permission at any time at its sole discretion. If you would like to use a modified version of the QGIS logo, please submit your artwork for approval at trademark@qgis.org. Upon approval, you will receive a license agreement to sign before you may begin using the artwork.
+QGIS.ORG permits official [QGIS user groups]({{< ref "/community/groups" >}}), to modify the QGIS logo and use the modified QGIS logo for non-commercial communications and projects. This permission is subject to continued compliance with these Guidelines, QGIS Trademark Guidelines and all other rules and policies. QGIS reserves the right to cancel or change this permission at any time at its sole discretion. If you would like to use a modified version of the QGIS logo, please submit your artwork for approval at trademark@qgis.org. Upon approval, you will receive a license agreement to sign before you may begin using the artwork.
 
-QGIS.ORG also permits official country user groups, to register a QGIS Top Level Domain (e.g. qgis.ch, qgis.dk etc.) according to the rules further down in this document.
+QGIS.ORG also permits official user groups, to register a QGIS Top Level Domain (e.g. qgis.ch, qgis.dk etc.) according to the rules further down in this document.
 
 ## Examples of use that do not require permission
 
@@ -116,7 +116,7 @@ When referring to QGIS please do not undermine the validity of the main QGIS pro
         
     3.  **Exceptions**:
         
-        *   QGIS.ORG Country voting members should use their country TLD (QGIS.ch, QGIS.dk, …)
+        *   QGIS.ORG voting members should use their country TLD (QGIS.ch, QGIS.dk, …)
             
         *   Non-commercial projects can use qgis.xxxxx (qgis.tutorials would fall into this category if the tutorials are free) but should ask for permission before registering the domain. QGIS.ORG may register the domain and point it to the name servers provided by the requestor or instruct the requestor to do so.
 
