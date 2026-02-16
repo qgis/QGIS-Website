@@ -1,5 +1,5 @@
 <div class="box mb-0 context-container" id="context">
-    <div class="container is-flex is-justify-content-space-between">
+    <div class="container is-flex is-justify-content-space-between is-align-items-center">
         <div class="rss-feed">
             {{ $data := .Site.Data.feed }}
             {{ with $data }}
@@ -9,14 +9,39 @@
             {{ else }}
                 <span class="is-italic" style="font-size: 14px;">Latest news will appear here soon.</span>
             {{ end }}
-        </div>    
-        <div id="search-control" class="control has-icons-right search-control">
-            <form action="{{ "search/" | absURL }}" method="GET">
-                <input class="input is-small" type="search" id="search-query" name="q" placeholder="Search">
-                <span class="icon is-right">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-            </form>
+        </div>
+        <div class="is-flex is-gap-3 is-align-items-center">
+                <div class="dropdown is-hoverable" id="language-dropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button is-small is-ghost" aria-haspopup="true" aria-controls="dropdown-menu" title="Select Language">
+                            <span id="current-lang-display">🇬🇧 English</span>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu is-right" id="dropdown-menu" role="menu" style="position: absolute; right: 0; top: 100%; min-width: 600px;">
+                        <div class="dropdown-content">
+                            <div class="columns is-multiline is-gapless" style="margin: 0; padding: 0.5rem;">
+                                {{ range .Site.Data.languages }}
+                                <div class="column is-3" style="padding: 0.25rem;">
+                                    <a href="/{{ .code }}/" class="dropdown-item lang-option" data-lang="{{ .code }}" title="{{ .displayName }}" style="display: block; padding: 0.5rem;">
+                                        {{ .displayName }}
+                                    </a>
+                                </div>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div id="search-control" class="control has-icons-right search-control">
+                <form action="{{ "search/" | absURL }}" method="GET">
+                    <input class="input is-small" type="search" id="search-query" name="q" placeholder="Search">
+                    <span class="icon is-right">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </form>
+            </div>
         </div>
     </div>
 </div>
