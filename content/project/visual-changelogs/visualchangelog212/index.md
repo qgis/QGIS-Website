@@ -75,13 +75,13 @@ Instead of simply showing a blank, white canvas, QGIS will now show you a list o
 
 **This feature was developed by:** Matthias Kuhn at [OPENGIS.ch](http://www.opengis.ch)
 
-![image11](images/entries/30f2ab32f4ae0d135a26b6a6ddb6705f0f6dd74a.png)
+![image11](images/entries/30f2ab32f4ae0d135a26b6a6ddb6705f0f6dd74a.webp)
 
 ### Feature: Ongoing improvements to code quality
 
 Through the use of the address sanitizer library, hundreds of memory leaks have been identified and fixed. Automated code scans using Coverity Scan have been regularly used to identify potential issues, and our Coverity defect density is now impressively low at just 0.02 defects per 1000 lines of code. The library of automated unit tests has also grown significantly during 2.12, resulting in more regressions being identified and fixed immediately. In 2.12 we also added continuous testing on OSX, so that every commit is tested against the unit test suite on both Linux and OSX platforms.
 
-![image12](images/entries/774d1839283f357009c64811bd000e2f8ad97c7a.png)
+![image12](images/entries/774d1839283f357009c64811bd000e2f8ad97c7a.webp)
 
 ### Feature: Advanced settings editor
 
@@ -89,7 +89,7 @@ A new panel has been added to the settings dialog that lets you edit any of the 
 
 **This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 
-![image13](images/entries/6d59988bf11726192579915cff18f2b81e3f9c8f.png)
+![image13](images/entries/6d59988bf11726192579915cff18f2b81e3f9c8f.webp)
 
 ### Feature: Mutually exclusive layer tree groups
 
@@ -99,7 +99,7 @@ With this feature, you can create layer groups where only one layer in the group
 
 **This feature was funded by:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
 
-![image14](images/entries/5c68a4deab4d6058d05d3129fec89c6f9abb8530.png)
+![image14](images/entries/5c68a4deab4d6058d05d3129fec89c6f9abb8530.webp)
 
 ### Feature: Filtering for field values in expression widget
 
@@ -107,7 +107,7 @@ When creating an expression that uses values from a field, you can now filter th
 
 **This feature was developed by:** Salvatore Larosa
 
-![image15](images/entries/5d41174bdf2a059d41824590520857002a70a056.png)
+![image15](images/entries/5d41174bdf2a059d41824590520857002a70a056.webp)
 
 ### Feature: User Interface Theme support
 
@@ -117,7 +117,7 @@ Find out more about theming support by reading [Nathan Woodrow\'s blog article](
 
 **This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
 
-![image16](images/entries/2ec302b12a3b0db8e7a66465afccb227bc543a3e.png)
+![image16](images/entries/2ec302b12a3b0db8e7a66465afccb227bc543a3e.webp)
 
 ### Feature: New expression functions in 2.12
 
@@ -141,7 +141,7 @@ Additionally, some very useful expressions have been ported from the expressions
 
 Additionally, the context help for expression functions has been improved for better readability.
 
-![image17](images/entries/b56f529af78b2d970f057c2c25ba89b87a85ce85.png)
+![image17](images/entries/b56f529af78b2d970f057c2c25ba89b87a85ce85.webp)
 
 ### Feature: Variables in expressions
 
@@ -157,7 +157,7 @@ You can manage global variables from the `Settings -> Options` menu, and project
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image18](images/entries/19aca1d680543a4013c53ba80406bdd5ebff88c5.png)
+![image18](images/entries/19aca1d680543a4013c53ba80406bdd5ebff88c5.webp)
 
 ## Analysis tools
 
@@ -178,7 +178,7 @@ This new tool in qgis_analysis library is able to take several rasters as input 
 
 **This feature was funded by:** [DFAT](http://dfat.gov.au) for the [InaSAFE project](http://inasafe.org/)
 
-![image2](images/entries/c613bb210ba0e85eb3b479ab79cd895827c22602.png)
+![image2](images/entries/c613bb210ba0e85eb3b479ab79cd895827c22602.webp)
 
 ### Feature: Geometry Checker and Geometry Snapper plugins
 
@@ -190,7 +190,7 @@ With the **Geometry Snapper** tool you can align the edges and vertices of one v
 
 **This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
 
-![image3](images/entries/319136e65a51c7a8d76adac7aef89806db170c2e.png)
+![image3](images/entries/319136e65a51c7a8d76adac7aef89806db170c2e.webp)
 
 ## Application and Project Options
 
@@ -228,7 +228,7 @@ PKI example docs: <https://github.com/dakcarto/QGIS-Enhancement-Proposals/blob/a
 
 **This feature was funded by:** [Boundless Spatial, Inc.](http://boundlessgeo.com/)
 
-![image4](images/entries/d6c9305a8dcaea3a5a6c039dec40d50e0caf23ff.png)
+![image4](images/entries/d6c9305a8dcaea3a5a6c039dec40d50e0caf23ff.webp)
 
 ## Browser
 
@@ -240,7 +240,7 @@ The QGIS browser now supports additional functionality for PostGIS connections, 
 
 **Table copying by:** Jürgen Fischer at [norBIT GmbH](http://www.norbit.de/)
 
-![image5](images/entries/00820dbcf67c97b61154e7e1f41af0397009b548.png)
+![image5](images/entries/00820dbcf67c97b61154e7e1f41af0397009b548.webp)
 
 ## Data Providers
 
@@ -253,7 +253,7 @@ The following improvements were made to the PostGIS provider:
 
 **Compound keys developed by:** Jürgen Fischer at [norBIT GmbH](http://www.norbit.de/)
 
-![image6](images/entries/bc56564581d97034137956cd27e945b3d3ceb3df.png)
+![image6](images/entries/bc56564581d97034137956cd27e945b3d3ceb3df.webp)
 
 ## Data management
 
@@ -266,7 +266,7 @@ There have been a number of improvements to the DB Manager tool:
 -   When importing data into a table you can use the new **import only selected features** option to restrict what will be imported.
 -   New query windows are now created as tabs to reduce the number of dialogs
 
-![image7](images/entries/daa22cc4517b58f2457d78781d4dbab12663ce9d.png)
+![image7](images/entries/daa22cc4517b58f2457d78781d4dbab12663ce9d.webp)
 
 ### Feature: Conditional formatting for attribute table cells
 
@@ -274,7 +274,7 @@ This is a major improvement to QGIS\'s attribute table rendering support. You ca
 
 **This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
 
-![image8](images/entries/ae9afefda043d31ef7718528d506d98e90e7a1f7.png)
+![image8](images/entries/ae9afefda043d31ef7718528d506d98e90e7a1f7.webp)
 
 ### Feature: Support for relative paths in widgets
 
@@ -290,7 +290,7 @@ If the path which is selected with the file browser is located in the same direc
 
 **This feature was funded by:** [Alta ehf](http://www.alta.is/)
 
-![image9](images/entries/fcf703990b5cb743ffa5cc7778cb151022ff2d20.png)
+![image9](images/entries/fcf703990b5cb743ffa5cc7778cb151022ff2d20.webp)
 
 ## Digitising
 
@@ -309,7 +309,7 @@ Additionally, more of the geometry editing and modification tools were updated t
 
 **This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
 
-![image10](images/entries/215ead2dd5e43e394d47169a7fd82aa5cc08b6b6.png)
+![image10](images/entries/215ead2dd5e43e394d47169a7fd82aa5cc08b6b6.webp)
 
 ## Labelling
 
@@ -321,7 +321,7 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image19](images/entries/27a58b65cf449505c92cc6c8470a93d1f09893a1.png)
+![image19](images/entries/27a58b65cf449505c92cc6c8470a93d1f09893a1.webp)
 
 ### Feature: Draw only labels which fit inside polygons
 
@@ -329,7 +329,7 @@ An option has been added to polygon layers to only draw labels which fit complet
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image20](images/entries/5c8461abe3aa5483c3243c0f145940b0d5fd1310.png)
+![image20](images/entries/5c8461abe3aa5483c3243c0f145940b0d5fd1310.webp)
 
 ### Feature: Control priority of labeling obstacles
 
@@ -337,7 +337,7 @@ In 2.12 it\'s now possible to specify the priority for labeling obstacles. This 
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image21](images/entries/f07a082bd4e62f059788c18a9de353107b8bdc44.png)
+![image21](images/entries/f07a082bd4e62f059788c18a9de353107b8bdc44.webp)
 
 ### Feature: New options to control how polygon layers act as obstacles
 
@@ -347,7 +347,7 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image22](images/entries/e37943c654080e33219acb5e519970cf748c87bf.png)
+![image22](images/entries/e37943c654080e33219acb5e519970cf748c87bf.webp)
 
 ### Feature: Data defined control over label priority
 
@@ -357,7 +357,7 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image23](images/entries/bd185cde38420f50fb540d742d178768d28ac577.png)
+![image23](images/entries/bd185cde38420f50fb540d742d178768d28ac577.webp)
 
 ### Feature: Option for obstacle-only layers
 
@@ -371,7 +371,7 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image24](images/entries/de1eae1359ce92045d51c6fa9bc3f014a3f3ae67.png)
+![image24](images/entries/de1eae1359ce92045d51c6fa9bc3f014a3f3ae67.webp)
 
 ### Feature: Rule-based labeling
 
@@ -383,7 +383,7 @@ See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-label
 
 **This feature was funded by:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
 
-![image25](images/entries/8846f57f0395e7f6b2543a92a5c55b67e8b19923.png)
+![image25](images/entries/8846f57f0395e7f6b2543a92a5c55b67e8b19923.webp)
 
 ## Map Composer
 
@@ -395,7 +395,7 @@ The page name can also be used within symbology and labeling expressions to allo
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image26](images/entries/bbf6147ef8be9d209fa188d6c524bce9d13d5ba8.png)
+![image26](images/entries/bbf6147ef8be9d209fa188d6c524bce9d13d5ba8.webp)
 
 ### Feature: Custom format for grid annotations
 
@@ -403,7 +403,7 @@ Composer map grid annotations can now be formatted in custom formats, which are 
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image27](images/entries/a6cd03594ca802015ef4a5bf7806cc1ce291214b.png)
+![image27](images/entries/a6cd03594ca802015ef4a5bf7806cc1ce291214b.webp)
 
 ### Feature: Multiline text handling and automatic text wrapping in composer attribute tables
 
@@ -413,7 +413,7 @@ Composer attribute tables now include full support for multi line strings. Contr
 
 **This feature was funded by:** [City of Uster](http://gis.uster.ch/)
 
-![image28](images/entries/db66b56f79949779ea32126bd22f2f1c9d4b55e6.png)
+![image28](images/entries/db66b56f79949779ea32126bd22f2f1c9d4b55e6.webp)
 
 ### Feature: Advanced customisation of cell background color
 
@@ -423,7 +423,7 @@ This change allows users to set differing colors for alternating rows and column
 
 **This feature was funded by:** [Ville de Morges](http://www.morges.ch/)
 
-![image29](images/entries/68266f6b11599dfa226952455ca150448a5d082a.png)
+![image29](images/entries/68266f6b11599dfa226952455ca150448a5d082a.webp)
 
 ### Feature: Add fit page to contents option and options for cropping exports to contents
 
@@ -439,7 +439,7 @@ A new image export options dialog has been added to facilitate this, which also 
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image30](images/entries/38572cf4aa662cc4463c2a29f3d5ca38aa382632.png)
+![image30](images/entries/38572cf4aa662cc4463c2a29f3d5ca38aa382632.webp)
 
 ### Feature: Force vector layers to render as a raster images
 
@@ -447,7 +447,7 @@ A new option has been added under the layer properties, rendering tab to force a
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image31](images/entries/0127fe10ecae31dbcd133492c93f33b0d569dcba.png)
+![image31](images/entries/0127fe10ecae31dbcd133492c93f33b0d569dcba.webp)
 
 ### Feature: Data defined control over map layers and style presets
 
@@ -459,7 +459,7 @@ Using this control over map layers allows for \"layer-based\" atlases, where the
 
 **This feature was funded by:** [City of Uster](http://gis.uster.ch/)
 
-![image32](images/entries/a8dc3b35df4020897e39c81bd22a469ab5ea6225.png)
+![image32](images/entries/a8dc3b35df4020897e39c81bd22a469ab5ea6225.webp)
 
 ### Feature: Option to hide pages from view/export
 
@@ -488,7 +488,7 @@ See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-gra
 
 **This feature was funded by:** Crowd funding, see [project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
 
-![image33](images/entries/fb9ac25e9ca6c5e4030167e289435e995f5af8f5.png)
+![image33](images/entries/fb9ac25e9ca6c5e4030167e289435e995f5af8f5.webp)
 
 ## Programmability
 
@@ -537,7 +537,7 @@ Pythonistas rejoice - you can now open your scripts in an external editor using 
 
 **This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
 
-![image34](images/entries/78acf0058f4306bf408a58df3762dff5986633a7.png)
+![image34](images/entries/78acf0058f4306bf408a58df3762dff5986633a7.webp)
 
 ### Feature: New classes for PyQGIS programs
 
@@ -585,7 +585,7 @@ In the screenshot you see QGIS Web Client on the left with the DXF export functi
 
 **This feature was funded by:** [City of Uster](http://gis.uster.ch/)
 
-![image35](images/entries/beb2e9c00102c67ae703eac097ffba8866379609.png)
+![image35](images/entries/beb2e9c00102c67ae703eac097ffba8866379609.webp)
 
 ## Symbology
 
@@ -595,13 +595,13 @@ Style manager now allows you to export selected style thumbnails as either SVG o
 
 **This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
 
-![image36](images/entries/8861a040751804f6c2691ee4d93d410efd6d99ac.png)
+![image36](images/entries/8861a040751804f6c2691ee4d93d410efd6d99ac.webp)
 
 ### Feature: New option for limiting size in mm when using map unit sizes
 
 Previously only the option to limit the scale range of the map unit sizes was available. Now you can also choose to limit the corresponding rendered size in mm.
 
-![image37](images/entries/b822235ddb09b4184b926bf2e0acc5c892147d0b.png)
+![image37](images/entries/b822235ddb09b4184b926bf2e0acc5c892147d0b.webp)
 
 ### Feature: Improvements to displacement renderer
 
@@ -611,13 +611,13 @@ Previously only the option to limit the scale range of the map unit sizes was av
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image38](images/entries/33b5f15429279a7ec75dd1f6a2e01b1a7df789ca.png)
+![image38](images/entries/33b5f15429279a7ec75dd1f6a2e01b1a7df789ca.webp)
 
 ### Feature: All color ramps can now be edited
 
 In QGIS 2.12 \"edit\" buttons have been added next to every color ramp choice. This allows you to easily edit an existing color ramp without having to create a new ramp and overwrite the existing one.
 
-![image39](images/entries/6ca1426e6e9bfd5500b08fb2185ae50a77258892.png)
+![image39](images/entries/6ca1426e6e9bfd5500b08fb2185ae50a77258892.webp)
 
 ### Feature: Improved handling of SVG marker outlines
 
@@ -627,7 +627,7 @@ Previous versions of QGIS would render the outlines at a significantly smaller s
 
 These issues have been fixed in QGIS 2.12, but as a result you may need to update your project symbology if you\'ve previously set oversized outlines for your symbols to overcome these bugs. In the image you see QGIS 2.12 vs QGIS 2.10 SVG markers in the symbol layer dialogs.
 
-![image40](images/entries/a678d22393345b4fcc07b5bd023babe383151b46.png)
+![image40](images/entries/a678d22393345b4fcc07b5bd023babe383151b46.webp)
 
 ### Feature: Add pixels as option for all symbology size unit choices
 
@@ -635,6 +635,6 @@ For all size input widgets there is now a third option \"pixel\", next to \"mm\"
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image41](images/entries/cbc683061bcc06764361ab79874f1020ccfe8eb7.png)
+![image41](images/entries/cbc683061bcc06764361ab79874f1020ccfe8eb7.webp)
 
 {{< content-end >}}

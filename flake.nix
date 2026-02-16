@@ -94,6 +94,7 @@
               vscode # VSCode for development
               python3Packages.icalendar # Python packages
               python3Packages.requests # Python packages
+              python3Packages.pillow # Python packages
               gnumake # GNU Make for build automation
             ];
             shellHook = ''

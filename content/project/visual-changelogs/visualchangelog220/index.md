@@ -41,7 +41,7 @@ If you would like to make a donation or sponsor our project, please visit [our s
 
 For you seafaring folks out there, you can now measure distances using nautical miles. To enable this, use the `Settings -> Options -> Map Tools` option panel.
 
-![image1](images/entries/e1115ca7d43ec24fceaee93f976848583148724f.png)
+![image1](images/entries/e1115ca7d43ec24fceaee93f976848583148724f.webp)
 
 ## Data Providers
 
@@ -49,19 +49,19 @@ For you seafaring folks out there, you can now measure distances using nautical 
 
 This release sports the ability to define 1:n relations. The relations are defined in the project properties dialog. Once relations exist for a layer, a new user interface element in the form view (e.g. when identifying a feature and opening its form) will list the related entities. This provides a powerful way to express e.g. the inspection history on a length of pipeline or road segment. You can find out more about relations support [here](http://blog.vitu.ch/10112013-1201/qgis-relations).
 
-![image2](images/entries/0e5e0d1b9dfafe9d64dd5b79866877980f03d099.png)
+![image2](images/entries/0e5e0d1b9dfafe9d64dd5b79866877980f03d099.webp)
 
 ### Feature: DXF Export tool
 
 A new tool for exporting DXF\'s has been added to the `Project` menu
 
-![image3](images/entries/452e7692b5b8d2704b4d31067265eb71986d969f.png)
+![image3](images/entries/452e7692b5b8d2704b4d31067265eb71986d969f.webp)
 
 ### Feature: Paste as new vector layer
 
 It is a common activity in a GIS to create a sub-selection and then to create a new layer from the selection. In QGIS you can already do `save selection as` to save a layer from your selection, and now offers functionality that allows you to create a new file or memory layer from whatever is in your clipboard. Simply select some features, copy them to your clipboard and then do `Edit -> Paste features as` and choose either `New vector layer` or `New memory layer` from the submenu. The best part of this new feature is that if you have some Well Known Text (WKT) features in your clipboard from another app, you can simply paste them into QGIS as a new layer now.
 
-![image4](images/entries/636db14446809f9e284013113a7b881868591ed3.png)
+![image4](images/entries/636db14446809f9e284013113a7b881868591ed3.webp)
 
 ### Feature: WMS legend graphic in table of contents and composer
 
@@ -69,7 +69,7 @@ Prior to QGIS 2.2 the WMS data provider was not able to display a legend in the 
 
 Clicking on the layer\'s legend will open a frame with the legend at full resolution. The legend will display contextual information based on your current scale. The WMS legend will be shown only if the WMS server has GetLegendGraphic capability. Legend resolution can be modified changing Canvas & Legend options.
 
-![image5](images/entries/6e7cd4849824a802558c0e029f605145d5c885aa.png)
+![image5](images/entries/6e7cd4849824a802558c0e029f605145d5c885aa.webp)
 
 ## Digitising
 
@@ -77,7 +77,7 @@ Clicking on the layer\'s legend will open a frame with the legend at full resolu
 
 This new tool is used to cut holes in polygons and automatically fill them with new features. If you hold down `Ctrl` when finalising the feature, the attributes will be taken from parent feature.
 
-![image6](images/entries/a8c671765578b660cb5d33cca51efa66ecdb17a4.png)
+![image6](images/entries/a8c671765578b660cb5d33cca51efa66ecdb17a4.webp)
 
 ## General
 
@@ -85,7 +85,7 @@ This new tool is used to cut holes in polygons and automatically fill them with 
 
 The expression builder will now remember the last 20 used expressions.
 
-![image7](images/entries/90a6b4d181fb2dc7699402d17c1f31522c4f3409.png)
+![image7](images/entries/90a6b4d181fb2dc7699402d17c1f31522c4f3409.webp)
 
 ### Feature: Paste WKT from clipboard
 
@@ -97,25 +97,25 @@ QGIS can now paste and create a new feature based on WKT that is found in the cl
 
 You can now set the colours of the `Zebra` border on the map element in the map composer.
 
-![image8](images/entries/682c36e3ac96b491e2e0a99a7ff9d94b9e0dc4e5.png)
+![image8](images/entries/682c36e3ac96b491e2e0a99a7ff9d94b9e0dc4e5.webp)
 
 ### Feature: Element rotation support
 
 Every type of element in the composer can now be rotated, including scale bars, tables and legends. For example you can rotate a label on the composition so that it fits into your page layout better (as illustrated). Resizing of rotated elements has also been improved.
 
-![image9](images/entries/700e0999552bc2e2bb2cef86ed14240b05f1da4e.png)
+![image9](images/entries/700e0999552bc2e2bb2cef86ed14240b05f1da4e.webp)
 
 ### Feature: Composer scale added and ruler improvements
 
 The appearance of rulers has been improved by adjusting the scale logic and by adding smaller ruler divisions, and by making vertical rulers use rotated text. There is also a new composer action for hiding/showing rulers. You can now quickly zoom to 100% page scale using the new `Zoom to 100%` tool on the toolbar. The composer window now lets you quickly switch the page scaling via a new scale combobox in the status bar. In addition a new indicator has been added to show you the precise pixel position of your cursor. The `Close` and `Help` buttons have been removed from the bottom of the composer window to give you the maximum amount of screen space for working with your compositions.
 
-![image10](images/entries/8b148acf4ef24204b42f14ee7cec43d57c87911a.png)
+![image10](images/entries/8b148acf4ef24204b42f14ee7cec43d57c87911a.webp)
 
 ### Feature: World file generation
 
 In the composer you can now create georefenced maps! Simply ensure that you choose the correct map element in the `Composition tab` and then export your map as a PNG file. An accompanying world file will be written, allowing you to load your exported composition in QGIS as a raster layer.
 
-![image11](images/entries/d5887511afbe8379f9e240c3763f6b68766cac88.png)
+![image11](images/entries/d5887511afbe8379f9e240c3763f6b68766cac88.webp)
 
 ### Feature: Working with multiple items
 
@@ -125,7 +125,7 @@ Support has been added for moving and resizing multiple items simultaneously. Yo
 
 You can now preview the individual pages of the map atlas that will be generated in composer. While in atlas preview mode you can output the current page without outputting the entire atlas. You can also tweak the map extent or scale for each feature while previewing the atlas page. Atlas map settings have been moved from the atlas panel to the map properties panel, so now more than one map can be controlled by the atlas generation. There\'s a new option to automatically centre an overview map, which comes in handy when creating atlas based maps. More context information is now available so that you can adjust your symbology based on whether the feature is the current atlas feature or not. See [this article for more info](http://nathanw.net/2013/12/02/waiting-for-qgis-22-highlighting-current-atlas-feature/).
 
-![image12](images/entries/fe668e5f257efec81db855a91fc7d6febc221261.png)
+![image12](images/entries/fe668e5f257efec81db855a91fc7d6febc221261.webp)
 
 ### Feature: Improved item selection
 
@@ -145,7 +145,7 @@ You can now control the style of the composition background using the full range
 
 QGIS-Server already supports standards : Web Map Service (WMS version 1.3.0 and 1.1.1) and Web Feature Service (WFS version 1.0.0) and Web Feature Service with Transaction (WFS-T). With this new release of QGIS, you can now serve raster layers using the Web Coverage Service (WCS version 1.0.0)) standard.
 
-![image13](images/entries/b93abbe00e7a32ffb06144ac839619ab50521e5c.png)
+![image13](images/entries/b93abbe00e7a32ffb06144ac839619ab50521e5c.webp)
 
 ## Symbology
 
@@ -161,49 +161,49 @@ The new gradient fill feature lets you create even better cartography than ever 
 
 Read more about how to use gradient fills [here](http://nyalldawson.net/2014/01/waiting-for-qgis-2-2-gradient-fills/).
 
-![image14](images/entries/7c4cb6c7ce981ca88b27cd2ae55bc4e503a1234f.png)
+![image14](images/entries/7c4cb6c7ce981ca88b27cd2ae55bc4e503a1234f.webp)
 
 ### Feature: Label support for palleted rasters
 
 Rasters that use a fixed colour pallette (typical for e.g. a land cover map) can now have category labels assigned which will be shown in the map legend and in the composer legend.
 
-![image15](images/entries/232d60f2aa3accb19eb4da3a08b75ad4c15d068a.png)
+![image15](images/entries/232d60f2aa3accb19eb4da3a08b75ad4c15d068a.webp)
 
 ### Feature: Colour ramps can be inverted
 
 A new option has been added to symbology dialogs that deal with colour ramps to allow you to invert the colour ramp when it is created.
 
-![image16](images/entries/3b1e65705f751bb468cc6495267633d613edbe34.png)
+![image16](images/entries/3b1e65705f751bb468cc6495267633d613edbe34.webp)
 
 ### Feature: Copy and Paste in Rule based renderer
 
 In the rule based renderer, you can now right click on a rule and then copy and paste the rule as a new rule.
 
-![image17](images/entries/8e69ef57ed6ae838e813d798312d7d1e39913749.png)
+![image17](images/entries/8e69ef57ed6ae838e813d798312d7d1e39913749.webp)
 
 ### Feature: On the fly feature generalisation
 
 QGIS 2.2 introduces support for on the fly feature generalisation. This can improve rendering times when drawing many complex features at small scales. This feature can be enabled or disabled in the layer settings. There is also a new global setting that enables generalisation by default for newly added layers. **Note:** Feature generalisation may introduce artefacts into your rendered output in some cases. These may include slivers between polygons and inaccurate rendering when using offset based symbol layers.
 
-![image18](images/entries/baa801841f58883d93d0ea6ecb5363da963e4ee2.png)
+![image18](images/entries/baa801841f58883d93d0ea6ecb5363da963e4ee2.webp)
 
 ### Feature: Anchor points can be set for marker layers
 
 When defining symbology with marker layers (e.g. a point layer symbolized with SVG markers) you can now specify what part of the image should correspond to the \'anchor point\'. For example you can indicate that the bottom-left corner of the image should coincide with the position of the feature. You can also use the `data defined properties` to have this property set at render time based on an attribute in the data table for that layer (or an arbitrary expression).
 
-![image19](images/entries/ecac63dad2e0da0702b2fe5bc361d68f0c0c6a0f.png)
+![image19](images/entries/ecac63dad2e0da0702b2fe5bc361d68f0c0c6a0f.webp)
 
 ### Feature: Thematic maps based on expressions
 
 Categorized and Graduated thematic maps can now be created using the result of an expression. In the properties dialog for vector layers the attribute chooser has been augmented with an expression builder. So now you no longer need to write the classification attribute to a new column in your attribute table if you want the classification attribute to be a composite of multiple fields, or a formula of some sort.
 
-![image20](images/entries/cc5cad88da77d1868e394a115606f4b1e6ee8c29.png)
+![image20](images/entries/cc5cad88da77d1868e394a115606f4b1e6ee8c29.webp)
 
 ### Feature: Expression support in symbol diagrams for size and attributes
 
 You can now use an expression to define the size and attributes when using the diagramming capabilities of QGIS. For more info see the Pull Request here [Pull 1039](https://github.com/qgis/QGIS/pull/1039)
 
-![image21](images/entries/547b5058efeca906c00ee65ee2504f2669ff52f9.png)
+![image21](images/entries/547b5058efeca906c00ee65ee2504f2669ff52f9.webp)
 
 ### Feature: Else rule in rule based renderer
 
@@ -214,7 +214,7 @@ An example might be:
 | `type = 'water' (style grey)`
 |  `ELSE (style red)`
 
-![image22](images/entries/4c38bdd63e64274d22e6a57a6541920ed47bc4be.png)
+![image22](images/entries/4c38bdd63e64274d22e6a57a6541920ed47bc4be.webp)
 
 ### Feature: Inner stroke support for polygons
 
@@ -222,7 +222,7 @@ Support has been added for polygon strokes to be limited to the interior of the 
 
 More information on this feature can be found on the [second part of this article](http://nyalldawson.net/2014/01/qgis-two-neat-features-in-2-2/).
 
-![image23](images/entries/81597f0bc2b848fe39e078a2684c57d44fbda79d.png)
+![image23](images/entries/81597f0bc2b848fe39e078a2684c57d44fbda79d.webp)
 
 ## User Interface
 
@@ -230,13 +230,13 @@ More information on this feature can be found on the [second part of this articl
 
 All our properties dialogs have had their main property menus updated so they look slicker with a inverse coloured side bar. This is purely cosmetic but should make it easier to know what your current context is in a dialog.
 
-![image24](images/entries/9d817847f89a3ea7836f86ddff3317040543a78f.png)
+![image24](images/entries/9d817847f89a3ea7836f86ddff3317040543a78f.webp)
 
 ### Feature: Expression dialog improvements
 
 We have made some tweaks to the expression dialog - power users can now hide the operator buttons. There are also now splitters between the function list and function help areas, and between the expression and function list area. See the [original pull request](https://github.com/qgis/QGIS/pull/1073) for details.
 
-![image25](images/entries/150ae30a6d905e008131c28e4befe862f1bf8ed6.png)
+![image25](images/entries/150ae30a6d905e008131c28e4befe862f1bf8ed6.webp)
 
 ### Feature: New keybindings
 
@@ -250,6 +250,6 @@ We have updated the keyboard shortcuts in QGIS to make it more efficient to carr
 
 See also [Issue 9094](http://hub.qgis.org/issues/9094) and [Pull Request 1010](https://github.com/qgis/QGIS/pull/1010) for more details.
 
-![image26](images/entries/e8766bfccf2da60b09acde28f5d766eb3d76cec9.png)
+![image26](images/entries/e8766bfccf2da60b09acde28f5d766eb3d76cec9.webp)
 
 {{< content-end >}}

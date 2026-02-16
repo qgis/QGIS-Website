@@ -137,7 +137,7 @@ Opens a file explorer window and directly selects the file
 
 Also fixes the existing \"File Properties\" action so that it shows regardless of the file type, and doesn\'t show incorrectly in some circumstances.
 
-![image4](images/entries/f80090adb3c2f85fa81b5689741afd936f8d5439.png)
+![image4](images/entries/f80090adb3c2f85fa81b5689741afd936f8d5439.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -157,7 +157,7 @@ The update provides the following unit choices:
 
 When millimeters, pixels, inches or points are selected, then the \@map_geometry variable will be available for use within the expression, containing the feature geometry in the specified units (relative to the map frame), whilst the \$geometry variable remains available within the expression in the layer CRS map units.
 
-![image5](images/entries/d1c6b0c69cf9dd8247d1dc0e370d0182b550f48a.png)
+![image5](images/entries/d1c6b0c69cf9dd8247d1dc0e370d0182b550f48a.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -187,7 +187,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 Specify the angle unit for data defined label rotation
 
-![image](images/entries/126294292-06c91bd5-83d2-4d6f-88a2-38fa2d303c86.png)
+![image](images/entries/126294292-06c91bd5-83d2-4d6f-88a2-38fa2d303c86.webp)
 
 ![Peek 2021-08-29 14-38](images/entries/131250678-52360214-31a9-4cf9-ad84-b10a4f78c431.gif)
 
@@ -349,7 +349,7 @@ Options provided for the transform include:
 
 Whilst the term \"break lines\" is typically used to refer to polylines that constrain a surface or TIN to the defined positions, these break lines are often components of the mesh itself, and additional operations would continue to constrain the surface to these lines. This functionality specifically transforms the surface in a static manner, so that future operations are not constrained to the lines used to transform the mesh elements.
 
-![image21](images/entries/704c731583ce48d963fe9878177bc40639ae3078.png)
+![image21](images/entries/704c731583ce48d963fe9878177bc40639ae3078.webp)
 
 This feature was funded by [Hydrotec](https://www.hydrotec.de/)
 
@@ -408,7 +408,7 @@ Two new entries have been added to the \"Spacing\" section of the Legend propert
 
 Items belonging to groups or subgroups will be shifted right by the specified amount. When legend patches are added to the left of entries they will be indented as well.
 
-![image24](images/entries/3792e9ae5124b81f1b4289cab220fdbb237851a8.png)
+![image24](images/entries/3792e9ae5124b81f1b4289cab220fdbb237851a8.webp)
 
 This feature was developed by [Jürnjakob Dugge](https://github.com/jdugge)
 
@@ -510,7 +510,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 The layer properties dialog\'s information panel now shows the size and last modified date of file-based datasets, removing the need to retrieve these details from a file manager. These additional details are also visible in the browser panel\'s information section. For datasets formed of more than a single file, the size will reflect the sum of all the auxiliary/ sidecar files forming the dataset.
 
-![image28](images/entries/10c72ab958bb1e7a59f8f81afb81d33780ed0834.png)
+![image28](images/entries/10c72ab958bb1e7a59f8f81afb81d33780ed0834.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -534,7 +534,7 @@ Historically, when using drag and drop functionality with the GPKG format, only 
 
 QGIS will now show projects embedded in a GPKG when the GPKG file is added to the QGIS canvas using the drag and drop functionality.
 
-![image29](images/entries/3672e8bb8d50bf1593252343da8fd8ff78a46535.png)
+![image29](images/entries/3672e8bb8d50bf1593252343da8fd8ff78a46535.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -575,7 +575,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 A new feature has been added to allow the selection of a placeholder image which may be used in the legend item of a raster or vector layer. This is very useful in certain instances such as when using raster layers with QGIS server, preventing long lists of palleted values from GetLegendGraphic requests and instead returning a tailored result, among various other use cases.
 
-![image32](images/entries/f06524b9f422ee1ced55d9d79b816cabc5ea212d.jpg)
+![image32](images/entries/f06524b9f422ee1ced55d9d79b816cabc5ea212d.webp)
 
 This feature was funded by [Canton of Glarus](https://www.gl.ch/verwaltung/bau-und-umwelt/hochbau/raumentwicklung-und-geoinformation/geoportal-kanton-glarus.html/808)
 
@@ -623,7 +623,7 @@ If the POST parameter is specified, some DATA can be added in the query.
 
 This is useful in many contexts, such as for sending longer requests to the Overpass API using POST to download OSM data.
 
-![image35](images/entries/89bee20177cb03e453300ae291ae879649e963ab.png)
+![image35](images/entries/89bee20177cb03e453300ae291ae879649e963ab.webp)
 
 This feature was funded by [3Liz](https://www.3liz.com)
 
@@ -691,7 +691,7 @@ For more details, please see the following papers:
 -   Birant, Derya, and Alp Kut. \"ST-DBSCAN: An algorithm for clustering spatial--temporal data.\" Data & Knowledge Engineering 60.1 (2007): 208-221.
 -   Peca, I., Fuchs, G., Vrotsou, K., Andrienko, N. V., & Andrienko, G. L. (2012). Scalable Cluster Analysis of Spatial Events. In EuroVA@ EuroVis.
 
-![image36](images/entries/10136b7563df169c40e2c20a96fe75b6ed93e16f.png)
+![image36](images/entries/10136b7563df169c40e2c20a96fe75b6ed93e16f.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -715,7 +715,7 @@ Historically, when exporting keyboard shortcuts to an XML file, QGIS would only 
 
 A new option has been provided to export all available keyboard shortcuts to the resulting XML file, or to generate a PDF output with a list of all defined QGIS shortcuts.
 
-![image37](images/entries/1822a5ace82d1e8030ed3d563c07f6b9b6fc3901.png)
+![image37](images/entries/1822a5ace82d1e8030ed3d563c07f6b9b6fc3901.webp)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
@@ -723,7 +723,7 @@ This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
 The GPS babel configuration settings has been moved from a settings page in the deprecated GPS Tools plugin, to a new page in the main settings dialog.
 
-![image38](images/entries/d61c12a455d85b290431d5ff461de15db0afb446.png)
+![image38](images/entries/d61c12a455d85b290431d5ff461de15db0afb446.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -829,7 +829,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 QGIS Server historically only supported the provision of a single metadata URL, but will now allow multiple metadata endpoints to be specified in the service definition.
 
-![image40](images/entries/8e644bb4823b8da291e1e2b2dd1ca472d3d57246.png)
+![image40](images/entries/8e644bb4823b8da291e1e2b2dd1ca472d3d57246.webp)
 
 This feature was funded by [Ifremer](https://wwz.ifremer.fr/)
 

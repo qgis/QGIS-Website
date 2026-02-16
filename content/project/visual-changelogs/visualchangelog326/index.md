@@ -91,7 +91,7 @@ A \"Keep synchronized with TOC\" checkbox has been added to the statistics panel
 
 The most recently defined expression used for defining the statistics calculation on a layer will be retained for each layer independently.
 
-![image7](images/entries/0075fa6cc3b8410072eeec8bb43ac4cef4c38e61.png)
+![image7](images/entries/0075fa6cc3b8410072eeec8bb43ac4cef4c38e61.webp)
 
 This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
 
@@ -169,7 +169,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 The custom dash pattern panel now displays the total dash pattern length, enhancing the ability for users to match the overall pattern length with sizes from other parts of a symbol.
 
-![image14](images/entries/201cc3be8689d55102c675c4af0ffdf4204c2a2b.png)
+![image14](images/entries/201cc3be8689d55102c675c4af0ffdf4204c2a2b.webp)
 
 This feature was funded by [North Road Consulting](https://north-road.com)
 
@@ -181,7 +181,7 @@ QGIS supports the storing of layer styles in the source database, or in the loca
 
 In prior releases of QGIS, this process stored all available style categories in the database, however new functionality allows users to select which specific style categories should be stored, providing a similar level of flexibility for storing styles in database sources as was previously available only for the QML and SLD style formats.
 
-![image15](images/entries/0bd238b2326485fe91d8dd6f2aa8956e5534a5e3.png)
+![image15](images/entries/0bd238b2326485fe91d8dd6f2aa8956e5534a5e3.webp)
 
 This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
 
@@ -241,7 +241,7 @@ This long awaited feature implements selective masking in a way that vectorizes 
 
 This is implemented in line with [QEP 186](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/186).
 
-![image18](images/entries/c717fac5bdd68a9f803738c77a5637fc070823e0.png)
+![image18](images/entries/c717fac5bdd68a9f803738c77a5637fc070823e0.webp)
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
@@ -251,7 +251,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 Provides support for rendering semi transparent objects in 3D. An opacity slider is provided for the phong material widget, which defaults to 100% (fully opaque).
 
-![image19](images/entries/38a2c9b60971a3056d2749373b2153e59eb0b3e1.png)
+![image19](images/entries/38a2c9b60971a3056d2749373b2153e59eb0b3e1.webp)
 
 This feature was funded by [Swedish QGIS user group.](https://www.qgis.se/)
 
@@ -275,7 +275,7 @@ A new \"Navigation sync\" setting for 3D map frames provides the ability to auto
 
 Actions are also available for quickly turning these options on and off.
 
-![image20](images/entries/9438a5861c6891d7123bdba4918fd4cd9da82343.png)
+![image20](images/entries/9438a5861c6891d7123bdba4918fd4cd9da82343.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -304,7 +304,7 @@ Triangulation is configured using a checkbox in the 3D styling options, and conf
 
 This triangulation is available for all the 3D point cloud renderer styles, including unique color, ramp color, classification, and RGB.
 
-![image22](images/entries/4b103066398ae065f4e3eb1e898356fceda8ef1d.png)
+![image22](images/entries/4b103066398ae065f4e3eb1e898356fceda8ef1d.webp)
 
 This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
 
@@ -322,7 +322,7 @@ This feature was developed by [Lutra Consulting (Nedjima Belgacem)](https://www.
 
 Filtering support has been added for point cloud layers, including a graphical query tool. Using filter expressions, point cloud points on both 2d and 3d canvases may be conditionally displayed based on xyz and/or LAS attributes.
 
-![image23](images/entries/a86ac2e8e5f5f1dbdc9630e2b71d4e62686362d9.png)
+![image23](images/entries/a86ac2e8e5f5f1dbdc9630e2b71d4e62686362d9.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -332,7 +332,7 @@ This feature was developed by [Lutra Consulting (Stefanos Natsis)](http://www.lu
 
 A new \"Follow 2d renderer\" style for 3D point cloud symbology allows for a point cloud layer\'s 3D symbol to be kept in sync with its 2D counterpart. Any changes to the 2D symbology will be automatically applied to the 3D symbology.
 
-![image12](images/entries/9fde94a418b67018b72ad7d0e71c01cf9bc19afa.png)
+![image12](images/entries/9fde94a418b67018b72ad7d0e71c01cf9bc19afa.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -346,7 +346,7 @@ Classified renderer for point clouds has been improved to:
 -   Show percentage of points for each class
 -   Work also for other attributes (return number, number of returns, point source and few other classes)
 
-![image55](images/entries/74d4c97f9c4d402e928893c88f331e9.png)
+![image55](images/entries/74d4c97f9c4d402e928893c88f331e9.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -368,7 +368,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 Adds data defined overrides to the Scalebar layout item. This feature is useful when generating an atlas with the atlas feature containing the scale as a field. The map can be driven by this value, but the scalebar cannot. This implements #48084, which allows the scalebar properties to be data driven by the atlas feature.
 
-![image56](images/entries/d3e680f3e4facc9078e4755045152d57f7dc680f.png)
+![image56](images/entries/d3e680f3e4facc9078e4755045152d57f7dc680f.webp)
 
 This feature was developed by [Ethan Snyder](https://github.com/esnyder-rve)
 
@@ -509,7 +509,7 @@ With this edit mode, all editable layers are toggled synchronously and all edits
 
 This new edit mode attempts to provide a hybrid alternative for managing the data editing approaches used in the current editing modes, local edit buffers and transactional editing, and is implemented in line with [QEP 203](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/203)
 
-![image33](images/entries/c7c3eea32a0cf34a07a9325fd87fdefcf8afb280.png)
+![image33](images/entries/c7c3eea32a0cf34a07a9325fd87fdefcf8afb280.webp)
 
 This feature was funded by Kanton Glarus
 
@@ -533,7 +533,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 The font and color of form labels and group or tabs titles can now be customized in the Drag & Drop from designer interface.
 
-![image35](images/entries/df03bff457eac65712cad54d0acee177526a3f13.png)
+![image35](images/entries/df03bff457eac65712cad54d0acee177526a3f13.webp)
 
 This feature was funded by ARPA Piemonte
 
@@ -543,7 +543,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 New configuration options are now available for Drag & Drop form group boxes which allow specifying an expression to define whether a form group should be collapsed.
 
-![image36](images/entries/d601af9dff97189a63c0c9d7125ad9d50de3ff66.png)
+![image36](images/entries/d601af9dff97189a63c0c9d7125ad9d50de3ff66.webp)
 
 This feature was funded by ARPA Piemonte
 
@@ -555,7 +555,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 A \"Keep disjoint features separate\" option has been added for the dissolve algorithm which will cause features and parts that do not overlap or touch to be exported as separate features instead of parts of a single multipart feature. This makes it much simpler to perform simple aggregation based dissolves on a single class.
 
-![image37](images/entries/350b223b3d7b647643338f57158c2b139df11f87.png)
+![image37](images/entries/350b223b3d7b647643338f57158c2b139df11f87.webp)
 
 This feature was funded by City of Canning
 
@@ -605,7 +605,7 @@ Adds new Intersect, Union and Difference tools which support multiple \"overlay\
 
 This is a useful abstraction which can be utilized in various scenarios, such as processing models where iterative processes or loops may be limited.
 
-![image40](images/entries/419403e295be2748e89100cb31117685b151e409.png)
+![image40](images/entries/419403e295be2748e89100cb31117685b151e409.webp)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
@@ -621,7 +621,7 @@ This framework provides configuration options for:
 -   **DEM (Raster Layer)** with settings for defining the source raster layer, vertical scale and offset
 -   **Mesh** with settings for defining the source mesh layer, vertical scale and offset
 
-![image41](images/entries/c58fa193b00b77b743b17b9ef50336f1b13d1b9f.png)
+![image41](images/entries/c58fa193b00b77b743b17b9ef50336f1b13d1b9f.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -643,7 +643,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 An opt-in setting has been added to project properties for \"Remember editable layer status between sessions\". If checked, then any layers which are editable will be remembered when saving that project and immediately made editable whenever the project is restored to make it simpler for users who are making complex, data-editing focused projects to store their configurations on a project by project basis.
 
-![image43](images/entries/04bf91d7cd37549d0949e2d3c67be6e7a809a3a5.png)
+![image43](images/entries/04bf91d7cd37549d0949e2d3c67be6e7a809a3a5.webp)
 
 This feature was funded by City of Canning
 
@@ -657,7 +657,7 @@ The style paths can point to style .db databases or .xml exports. When a project
 
 **This functionality requires a QGIS build based on Qt 5.13 or later, and is hidden on older builds (e.g. on Ubuntu 20.04)**
 
-![image44](images/entries/6172a0a8196db373e0eac8edbcbf790ae9532ba8.png)
+![image44](images/entries/6172a0a8196db373e0eac8edbcbf790ae9532ba8.webp)
 
 This feature was funded by the QGIS Swiss user group.
 
@@ -667,7 +667,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 If enabled, this option will cause the feature count to be enabled for any newly added/created map layers. This setting will remain disabled by default.
 
-![image45](images/entries/3706248ef1ca50af9877d04df93d6f3455bce9ca.png)
+![image45](images/entries/3706248ef1ca50af9877d04df93d6f3455bce9ca.webp)
 
 This feature was funded by SevenCs GmbH
 
@@ -693,7 +693,7 @@ This new version of QGIS has revamped the way default projects symbols are handl
 -   A new project-level default text format setting has been added to allow user defined configuration of the default project font for newly-added vector layers
 -   The user interface has been upgraded to make use of QGIS\' symbol and color ramp buttons
 
-![image47](images/entries/5fca0da47e4af53c46a12dcd5b68a1982afff16b.png)
+![image47](images/entries/5fca0da47e4af53c46a12dcd5b68a1982afff16b.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -729,7 +729,7 @@ Keyboard shortcuts for nudging are:
 
 For more information on this awesome feature and framework, be sure to watch the [QGIS Elevation Profiles Deep Dive](https://www.youtube.com/watch?v=AknJjNPystU) presentation on YouTube.
 
-![image48](images/entries/6c530f4bfd565313f515ae9f6a79662d1682bfc7.png)
+![image48](images/entries/6c530f4bfd565313f515ae9f6a79662d1682bfc7.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -745,7 +745,7 @@ There\'s also options to change the interpretation of the elevation profile for 
 
 Additional rendering capabilities are provided for the \"continuous surface\" interpretation option, such as a \"fill below\" symbol style. This can be easier to interpret in some cases, and helps match expected symbology conventions in certain disciplines.
 
-![image49](images/entries/50ff18ed7962a0fbc09ca17f3b0688db6ed33bd3.png)
+![image49](images/entries/50ff18ed7962a0fbc09ca17f3b0688db6ed33bd3.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -761,7 +761,7 @@ Point cloud layers in profile charts include the following symbology features:
 -   Automatic refinement based on plot visible area and scale, with a user controllable max screen error
 -   Control over appearance of points (color, size and shape)
 
-![image50](images/entries/c8cf49088468d798190f56a32c0e6c6d1cefe72f.png)
+![image50](images/entries/c8cf49088468d798190f56a32c0e6c6d1cefe72f.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -771,7 +771,7 @@ This feature was developed by [Nyall Dawson (North Road Consulting)](https://nor
 
 The elevation profile tool provides support for vector feature extrusion and offset heights for incorporation of 2D vector in profile charts. These propertied can be data defined, and will also be used as the default offset/extrusion settings for any new 3D polygon symbols created for that layer.
 
-![image51](images/entries/3bfe2bcf8051167fd7729ef3c5a2a4f5249f823b.png)
+![image51](images/entries/3bfe2bcf8051167fd7729ef3c5a2a4f5249f823b.webp)
 
 This feature was funded by [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
@@ -809,7 +809,7 @@ Note that this is specifically designed to be used as a debugging and developmen
 
 This has been implemented in line with [QEP 242](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/242).
 
-![image53](images/entries/62594ee3295e3276fe9510f42e2ba54d05153ebd.png)
+![image53](images/entries/62594ee3295e3276fe9510f42e2ba54d05153ebd.webp)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -876,7 +876,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 A set to null / clear current symbol action has been added to clear the current symbol attached to a symbol button widget.
 
-![image54](images/entries/e7c6ed595485dd51c3bccb87f2a31f9691ad4aae.png)
+![image54](images/entries/e7c6ed595485dd51c3bccb87f2a31f9691ad4aae.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 

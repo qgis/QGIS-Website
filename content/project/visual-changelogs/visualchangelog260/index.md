@@ -46,13 +46,13 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 You can now see the full path for the QGIS project file in the project properties dialog.
 
-![](images/entries/8662dc4a69298f603dd9038d1199ab16fd25f786.png)
+![](images/entries/8662dc4a69298f603dd9038d1199ab16fd25f786.webp)
 
 ### Feature: Allow removing last point while measuring via del/backspace keys
 
 Now when you are measuring areas and distances, you can remove unwanted vertices from your measurement line using the delete or backspace keys.
 
-![](images/entries/ed471908937cb068e2f004e7b3311f2bdf307042.png)
+![](images/entries/ed471908937cb068e2f004e7b3311f2bdf307042.webp)
 
 ### Feature: select related feature on the canvas from the relation reference widget
 
@@ -68,25 +68,25 @@ We have made a number of improvements to the editor widgets:
 -   Attribute table can distinguish between 0 and NULL
 -   Add suffix support for range widget
 
-![](images/entries/78fd27b2cf736f37bdf97694a5018f29c609c6cb.png)
+![](images/entries/78fd27b2cf736f37bdf97694a5018f29c609c6cb.webp)
 
 ### Feature: Optionally use just a subset of fields from the joined layer
 
 You can now use just a subset of related fields when creating a vector join.
 
-![](images/entries/14023cf2ee768960d9c4a43da6e2a1624d10b3c3.png)
+![](images/entries/14023cf2ee768960d9c4a43da6e2a1624d10b3c3.webp)
 
 ### Feature: Expression field (virtual fields)
 
 Sometimes you want to have an attribute that is calculated and that is always \'fresh\' - reflecting the current state of the feature properties. Now you can add virtual fields to your table which are based on an expression.
 
-![](images/entries/5fe53ad54b8d0cf8b7a22b90e733a421bb929506.png)
+![](images/entries/5fe53ad54b8d0cf8b7a22b90e733a421bb929506.webp)
 
 ### Feature: Actions can now have an associated icon
 
 When creating a custom action for a vector layer, you can now define an icon to be used for the action too.
 
-![](images/entries/e7bd5b306e3a72cc111a81f86a053b42679aa2f8.png)
+![](images/entries/e7bd5b306e3a72cc111a81f86a053b42679aa2f8.webp)
 
 ### Feature: Additional expressions types and options
 
@@ -96,13 +96,13 @@ When creating a custom action for a vector layer, you can now define an icon to 
 -   New keyword: `$atlasfeature` - returns the atlas feature.
 -   New keyword: `getFeature` - gets a matching feature from a layer.
 
-![](images/entries/e2e079bec87be65ccc97055251fc2544be91aaab.png)
+![](images/entries/e2e079bec87be65ccc97055251fc2544be91aaab.webp)
 
 ### Feature: Classes within graduated and categorised renderers can be toggled
 
 You can now choose to disable certain classes in graduated and categorised renderers without actually removing them.
 
-![](images/entries/84d11c6d978775d92f6a1902092795735d1f32b3.png)
+![](images/entries/84d11c6d978775d92f6a1902092795735d1f32b3.webp)
 
 ### Feature: Legend improvements
 
@@ -114,7 +114,7 @@ The second phase of the legend / table of contents overhaul has been completed. 
 -   The new legend filter option on the legend toolbar will remove legend items for any classes which are not currently in the view extent. This is an awesome improvement as it ensures that your map legend does not contain entries for items not currently in the map view. It is available in the main map legend and in map composer and for WMS layers.
 -   Rule-based renderer legends can now be displayed in a pseudo-tree
 
-![](images/entries/363048a7d08ac76d35463abbef514c65031922e7.png)
+![](images/entries/363048a7d08ac76d35463abbef514c65031922e7.webp)
 
 ## Data Providers
 
@@ -127,7 +127,7 @@ The second phase of the legend / table of contents overhaul has been completed. 
 -   use AutoCAD 2000 DXF (R15) instead of R12
 -   remove R18 test methods
 
-![](images/entries/4f615505e3fd6ec0b619278e42ecc5a3e79ac827.png)
+![](images/entries/4f615505e3fd6ec0b619278e42ecc5a3e79ac827.webp)
 
 ## Map Composer
 
@@ -135,19 +135,19 @@ The second phase of the legend / table of contents overhaul has been completed. 
 
 We have added a checkbox and data defined button for controlling whether an item is excluded from composer exports/printouts. If the item is unchecked it will be visible at composition design time only.
 
-![](images/entries/f334447d13ee49a6c4c5cb4322e3f12824643416.png)
+![](images/entries/f334447d13ee49a6c4c5cb4322e3f12824643416.webp)
 
 ### Feature: Control over page printing for empty composer frames
 
 For table or HTML frames, a checkbox now controls whether the containing page should be exported when the frame is empty.
 
-![](images/entries/1500ba6abdf5b314c760ebfc63e460731dcc5110.png)
+![](images/entries/1500ba6abdf5b314c760ebfc63e460731dcc5110.webp)
 
 ### Feature: Item tree panel
 
 The item tree panel in the map composer allows for selection of items, hiding/showing items, toggling lock status of items and double-clicking to edit item id. You can also use drag and drop to reorder items.
 
-![](images/entries/52b70bdf87d21a13c00798458bab6347dddd7910.png)
+![](images/entries/52b70bdf87d21a13c00798458bab6347dddd7910.webp)
 
 ### Feature: More control over appearance of composer arrow/line items
 
@@ -155,7 +155,7 @@ The item tree panel in the map composer allows for selection of items, hiding/sh
 -   Arrow head fill and outline colors can be user defined
 -   Arrow head outline width can be user defined
 
-![](images/entries/49757b3cc09839edb8af38f1cb1317458f279110.png)
+![](images/entries/49757b3cc09839edb8af38f1cb1317458f279110.webp)
 
 ### Feature: Data defined control of composer items
 
@@ -168,13 +168,13 @@ Many properties of composer items can now be controlled using data binding. Thes
 -   Item size and position.
 -   Page size, orientation and number of pages.
 
-![](images/entries/9f321489cd9c90eb4d66e577680fc5467756e58e.png)
+![](images/entries/9f321489cd9c90eb4d66e577680fc5467756e58e.webp)
 
 ### Feature: Composer images can be specifed as remote URLS
 
 Picture items in the map composer now support remote urls as a picture source. This source can also be data defined.
 
-![](images/entries/05cd7008c231df3b3af874753b840669a605cb0f.png)
+![](images/entries/05cd7008c231df3b3af874753b840669a605cb0f.webp)
 
 ### Feature: Composer Table improvements
 
@@ -189,7 +189,7 @@ Picture items in the map composer now support remote urls as a picture source. T
 
 Note that tables in existing projects are not automatically updated to the new table format which supports these features, and tables must be readded to a composition for the new settings to appear.
 
-![](images/entries/9ccb75b2110daf0c95a3fba31ac18144c1345f0e.png)
+![](images/entries/9ccb75b2110daf0c95a3fba31ac18144c1345f0e.webp)
 
 ### Feature: Composer improvements
 
@@ -202,19 +202,19 @@ The map composer (used to prepare printable map compositions) has received a num
 -   Holding alt while pressing cursor keys results in a 1px movement for items
 -   Removed the destructive \'Load from template\' menu item, replace with a new non-destructive \'Add items from template\' action
 
-![](images/entries/a7267ed637121bc9be70c5fa0afd2a63f9790bc7.png)
+![](images/entries/a7267ed637121bc9be70c5fa0afd2a63f9790bc7.webp)
 
 ### Feature: Improved item snapping
 
 Snapping thresholds are now set in pixels, allowing for finer movement and resizing of items when zoomed in to a composition. Items within a group are no longer used for auto snap lines.
 
-![](images/entries/8e43479380c28942345f3d9500dd956bd13f43e8.png)
+![](images/entries/8e43479380c28942345f3d9500dd956bd13f43e8.webp)
 
 ### Feature: Multiple overviews for a map item
 
 Sometimes it is useful to be able to show more than one overview frame for a map frame. For example if you want to show where your map is in local, regional and global context, using multiple overview maps can help you to achieve this. As of QGIS 2.6 you can now achieve this by assigning as many maps as you like to the \'overview\' role in your composition.
 
-![](images/entries/88b55cc5f5e7cfb62486fe3b4867b7133ae66953.png)
+![](images/entries/88b55cc5f5e7cfb62486fe3b4867b7133ae66953.webp)
 
 ### Feature: HTML item improvements
 
@@ -225,7 +225,7 @@ There are a number of useful new options for the HTML composer item:
 -   Data defined URL for HTML source
 -   Allow for creating a user stylesheet to override HTML styles
 
-![](images/entries/7ed388f0c775b738648b2bd6eb6be0a75fa5816a.png)
+![](images/entries/7ed388f0c775b738648b2bd6eb6be0a75fa5816a.webp)
 
 ### Feature: Composer map grid improvements
 
@@ -238,7 +238,7 @@ There are a number of useful new options for the HTML composer item:
 -   We have made improvements to grid annotations, including many new formats for annotations.
 -   Grid annotations now use the typographically correct prime and double prime symbols for grid annotations.
 
-![](images/entries/eeb61d7da3d3f95283b1bb47545cbdff9cc334ae.png)
+![](images/entries/eeb61d7da3d3f95283b1bb47545cbdff9cc334ae.webp)
 
 ## Processing
 
@@ -246,13 +246,13 @@ There are a number of useful new options for the HTML composer item:
 
 Models and scripts can be downloaded from the online collection and installed directly from the Processing interface. The collection will be expanded with new scripts and models provided by Processing users.
 
-![](images/entries/23e357ca0e559a33a7872206b306c0b1fbdb4b7d.png)
+![](images/entries/23e357ca0e559a33a7872206b306c0b1fbdb4b7d.webp)
 
 ### Feature: New modeler implementation
 
 The modeler has been rewritten, and now provides extra functionality such as allowing nested models with no depth limit. Models are now stored as JSON files. Backwards compatibility is kept, so all models can still be used. You can also now drag and drop items from the inputs and algorithms onto the modeler graph.
 
-![](images/entries/72bb8beaf97133424d1e68da67ae6fe79ea6faf6.png)
+![](images/entries/72bb8beaf97133424d1e68da67ae6fe79ea6faf6.webp)
 
 ## Programmability
 
@@ -289,7 +289,7 @@ In order to normalise the naming of QGIS widgets, some minor API changes have be
 
 We have improved the random colour algorithm for classified renderer so that the colours generated are more visually distinct from each other.
 
-![](images/entries/ec29c9d6eb23d01b4dbbae32a6e20fe0b1f48198.png)
+![](images/entries/ec29c9d6eb23d01b4dbbae32a6e20fe0b1f48198.webp)
 
 ### Feature: Symbology user interface improvements
 
@@ -302,7 +302,7 @@ We have improved the random colour algorithm for classified renderer so that the
 -   Retain symbol when switching between simple, graduated, categorized, and other renderers.
 -   Improved labelling of StdDev calculation mode.
 
-![](images/entries/08305d5131c28c45b400662267ff0d174ef9c8ce.png)
+![](images/entries/08305d5131c28c45b400662267ff0d174ef9c8ce.webp)
 
 ## User Interface
 
@@ -310,7 +310,7 @@ We have improved the random colour algorithm for classified renderer so that the
 
 For python script editors, expression builder, filter window, composer HTML and CSS editors
 
-![](images/entries/54b470a064d65d6d65aa66a8feece43ba8cbf6c4.png)
+![](images/entries/54b470a064d65d6d65aa66a8feece43ba8cbf6c4.webp)
 
 ### Feature: Color palettes
 
@@ -321,7 +321,7 @@ You can now define your own custom color palettes for use in QGIS.
 -   Colors are shown in color button menus and new color picker dialog.
 -   You can import/export colors to a GPL palette file.
 
-![](images/entries/a156f408d7a87fc930095c8fd68e9fba0fc0a817.png)
+![](images/entries/a156f408d7a87fc930095c8fd68e9fba0fc0a817.webp)
 
 ### Feature: New color picker dialog
 
@@ -338,36 +338,36 @@ There is a new custom QGIS color picker dialog. Features include:
     -   Supports interaction with other apps via drag and drop of colors (OS support dependant).
     -   Option to disable the dialog and use the native picker dialog instead.
 
-![](images/entries/7189c0fe2d1ff3fdc63c531a02f74b5d32b70bfd.png)
+![](images/entries/7189c0fe2d1ff3fdc63c531a02f74b5d32b70bfd.webp)
 
 ### Feature: Single select feature tool merged into select by rectangle
 
 We have merged the single selection tool into the rectangle tool. If you want to select a single feature, simply enable the rectangle tool and then single click (rather than dragging a rectangle) a feature.
 
-![](images/entries/f8a68fcdfcaa59e6162185acb5c92edb9145c881.png)
+![](images/entries/f8a68fcdfcaa59e6162185acb5c92edb9145c881.webp)
 
 ### Feature: Add layer to map canvas behaviour
 
 In many of QGIS\' dialogs that generate a new layer, the \'Add layer to map canvas\' checkbox is now checked by default so that the new layer automatically gets added to the map.
 
-![](images/entries/f36f5912d2422a439d67b1a743fe81588e709dfb.png)
+![](images/entries/f36f5912d2422a439d67b1a743fe81588e709dfb.webp)
 
 ### Feature: Add icon size 48 and 64
 
 For those using QGIS on touch devices (or if you just like big, chunky icons), you can now set the icons up to 64 x 64 pixels in size.
 
-![](images/entries/3be3f51da2f54a8395f054f757f9fae1948a6103.png)
+![](images/entries/3be3f51da2f54a8395f054f757f9fae1948a6103.webp)
 
 ### Feature: New colour buttons
 
 This is probably one of the most useful new features in QGIS 2.6 -especially if you are involved a lot in cartography work. The colour button used everywhere in QGIS has been enhanced, with drop down menus, colour swatches, default colours, etc. Click on the drop down item to the right of the colour button to see the quick options. Click on the button to the left of the colour widget to see a standard colour chooser dialog.
 
-![](images/entries/54c211513bc86d00a5bce01a17476481937e0fbe.png)
+![](images/entries/54c211513bc86d00a5bce01a17476481937e0fbe.webp)
 
 ### Feature: Context menu for identify tool
 
 When using the identify tool, you can now right click on the canvas to use the identify tool in context mode. In the menu that appears you can define which feature types you wish to identify (all all if you like).
 
-![](images/entries/c395c2ce4964826458a721a8a3f89cb7dc2853b5.png)
+![](images/entries/c395c2ce4964826458a721a8a3f89cb7dc2853b5.webp)
 
 {{< content-end >}}
