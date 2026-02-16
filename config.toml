@@ -438,6 +438,7 @@ sectionPagesMenu = 'main'
 
 
 
+
 [[menu.main]]
   name = "Resources"
   url = "/resources/hub"
@@ -890,6 +891,13 @@ sectionPagesMenu = 'main'
   [menu.main.params]
     i18n_key = "menuSecurity"
 
+
+
+[[menu.main]]
+  parent = "Contact and Support"
+  name = "Privacy Policy"
+  url = "/resources/support/privacy/"
+  weight = 200
 
 
 [[menu.main]]
