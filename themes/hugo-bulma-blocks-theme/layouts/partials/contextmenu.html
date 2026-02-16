@@ -11,7 +11,7 @@
             {{ end }}
         </div>
         <div class="is-flex is-gap-3 is-align-items-center">
-                <div class="dropdown is-hoverable" id="language-dropdown">
+                <div class="dropdown" id="language-dropdown">
                     <div class="dropdown-trigger">
                         <button class="button is-small is-ghost" aria-haspopup="true" aria-controls="dropdown-menu" title="Select Language">
                             <span id="current-lang-display">🇬🇧 English</span>
@@ -20,15 +20,13 @@
                             </span>
                         </button>
                     </div>
-                    <div class="dropdown-menu is-right" id="dropdown-menu" role="menu" style="position: absolute; right: 0; top: 100%; min-width: 600px;">
-                        <div class="dropdown-content">
-                            <div class="columns is-multiline is-gapless" style="margin: 0; padding: 0.5rem;">
+                    <div class="dropdown-menu is-right" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content" style="max-height: 50dvh; overflow-y: auto;">
+                            <div class=" is-multiline is-gapless">
                                 {{ range .Site.Data.languages }}
-                                <div class="column is-3" style="padding: 0.25rem;">
-                                    <a href="/{{ .code }}/" class="dropdown-item lang-option" data-lang="{{ .code }}" title="{{ .displayName }}" style="display: block; padding: 0.5rem;">
-                                        {{ .displayName }}
-                                    </a>
-                                </div>
+                                <a href="/{{ .code }}/" class="dropdown-item lang-option" data-lang="{{ .code }}" title="{{ .displayName }}" style="display: block; padding: 0.5rem;">
+                                    {{ .displayName }}
+                                </a>
                                 {{ end }}
                             </div>
                         </div>

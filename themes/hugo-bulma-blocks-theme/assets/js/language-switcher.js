@@ -145,15 +145,31 @@
   }
 
   /**
-   * Handle dropdown click to close on item selection
+   * Handle dropdown click to toggle open/close
    */
   function setupDropdownBehavior() {
-    const langOptions = document.querySelectorAll('.lang-option');
     const dropdown = document.getElementById('language-dropdown');
+    const dropdownTrigger = dropdown ? dropdown.querySelector('.dropdown-trigger') : null;
+    const langOptions = document.querySelectorAll('.lang-option');
     
+    // Toggle dropdown on trigger click
+    if (dropdownTrigger) {
+      dropdownTrigger.addEventListener('click', function(e) {
+        e.stopPropagation();
+        dropdown.classList.toggle('is-active');
+      });
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(e) {
+      if (dropdown && !dropdown.contains(e.target)) {
+        dropdown.classList.remove('is-active');
+      }
+    });
+    
+    // Close dropdown after selecting an option
     langOptions.forEach(option => {
       option.addEventListener('click', function() {
-        // Close dropdown after selection
         if (dropdown) {
           dropdown.classList.remove('is-active');
         }
