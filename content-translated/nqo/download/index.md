@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: ߊ߬ ߟߊߖߌ߰
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

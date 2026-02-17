@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Shkarko
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

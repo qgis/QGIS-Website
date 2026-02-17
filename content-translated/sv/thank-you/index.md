@@ -4,7 +4,7 @@ draft: false
 sidebar: true
 title: Tack för att du valde QGIS!
 type: page
-url: /download/thank-you
+aliases: ["/download/thank-you"]
 
 ---
 {{<content-start >}}
@@ -16,7 +16,7 @@ url: /download/thank-you
 ##### Övervaka din nedladdning
 Nedladdningar kan ta en stund. Vänligen **övervaka framstegen** med hjälp av din **nedladdningshanterare**.
 
-Om din nedladdning inte startade kan du ladda ner QGIS manuellt från [QGIS.org hosted downloads] (https://download.qgis.org/downloads/). {{< rich-content-end >}} {{< rich-box-slut >}}
+Om din nedladdning inte startade kan du ladda ner QGIS manuellt från [QGIS.org hosted downloads] (https://download.qgis.org/downloads/). {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Ditt stöd är avgörande för att QGIS ska fortsätta att förbättras

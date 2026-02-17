@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Μεταφόρτωση
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

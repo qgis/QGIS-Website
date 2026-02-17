@@ -27,7 +27,7 @@ Upplev QGIS omfattande uppsättning designalternativ för att förverkliga dina 
 ###### Professionell kartproduktion
 Använd det intuitiva verktyget för layoutdesign för att producera högkvalitativa kartor i storformat.
 ###### Kraftfulla rapporteringsverktyg
-Skapa atlaser och rapporter med kartor, media och tabellinnehåll. {{< kolumn-slut >}} {{< kolumn-slut >}}
+Skapa atlaser och rapporter med kartor, media och tabellinnehåll. {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start id="content-tab-2" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Redigera karta](../img/edit.gif "Redigera karta") {{< column-end >}}
 
@@ -89,7 +89,7 @@ Gå med i en gemenskap av likasinnade i din region.
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Server
-Publicera dina QGIS-projekt och skikt som OGC-kompatibla WMS-, WMTS-, WFS- och WCS-tjänster. Kontrollera vilka skikt, attribut, layouter och koordinatsystem som ska exporteras. QGIS server betraktas som en referensimplementation för WMS 1.3. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< kolumn-start>}}
+Publicera dina QGIS-projekt och skikt som OGC-kompatibla WMS-, WMTS-, WFS- och WCS-tjänster. Kontrollera vilka skikt, attribut, layouter och koordinatsystem som ska exporteras. QGIS server betraktas som en referensimplementation för WMS 1.3. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6" >}}
 ### QGIS Desktop

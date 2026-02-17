@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Last ned
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

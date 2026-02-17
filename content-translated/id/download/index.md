@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Unduh
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

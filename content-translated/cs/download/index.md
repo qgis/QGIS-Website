@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Stáhnout
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

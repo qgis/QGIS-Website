@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Atsisiųsti
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: ডাউনলোড
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

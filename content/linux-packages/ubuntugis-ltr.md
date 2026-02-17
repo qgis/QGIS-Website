@@ -4,7 +4,7 @@ title: "UbuntuGIS LTR Packages"
 subtitle: "QGIS Long Term Release packages for UbuntuGIS"
 draft: false
 sidebar: true
-url: '/linux-packages/ubuntugis-ltr'
+aliases: ["/linux-packages/ubuntugis-ltr"]
 ---
 
 {{< content-start >}}

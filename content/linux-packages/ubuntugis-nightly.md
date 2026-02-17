@@ -4,7 +4,7 @@ title: "UbuntuGIS Nightly Packages"
 subtitle: "QGIS nightly build packages for UbuntuGIS"
 draft: false
 sidebar: true
-url: '/linux-packages/ubuntugis-nightly'
+aliases: ["/linux-packages/ubuntugis-nightly"]
 ---
 
 {{< content-start >}}

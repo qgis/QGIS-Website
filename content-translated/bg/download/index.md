@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Изтегляне
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

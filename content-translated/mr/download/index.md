@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: डाउनलोड करा
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

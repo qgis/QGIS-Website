@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: გადმოწერა
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

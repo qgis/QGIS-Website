@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Baixa
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

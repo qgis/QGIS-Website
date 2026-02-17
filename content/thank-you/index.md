@@ -4,7 +4,7 @@ title: "Thank you for choosing QGIS!"
 draft: false
 HasBanner: false
 sidebar: true
-url: "/download/thank-you"
+aliases: ["/download/thank-you"]
 ---
 
 {{< content-start >}}

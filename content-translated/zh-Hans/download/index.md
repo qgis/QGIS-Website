@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: 下载
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

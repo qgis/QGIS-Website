@@ -4,8 +4,8 @@ title: "Debian / Ubuntu LTR Packages"
 subtitle: "QGIS Long Term Release packages for Debian and Ubuntu"
 draft: false
 sidebar: true
-url: '/linux-packages/debian-ltr'
 aliases:
+  - /linux-packages/debian-ltr
   - /linux-packages/ubuntu-ltr
 ---
 

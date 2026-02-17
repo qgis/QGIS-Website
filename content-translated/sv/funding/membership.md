@@ -76,7 +76,7 @@ Alla stödjande medlemmar och donatorer kommer att listas på projektets [Medlem
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text">}}
 #### Förbättrad programvarukvalitet
-Bidrag från stödmedlemskap hjälper till att lösa buggar och problem snabbt, vilket resulterar i en bättre användarupplevelse. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< kolumn-start>}}
+Bidrag från stödmedlemskap hjälper till att lösa buggar och problem snabbt, vilket resulterar i en bättre användarupplevelse. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Förbättrad varumärkesexponering
@@ -88,7 +88,7 @@ Flaggskeppsmedlemmar, stora och medelstora stödmedlemmar kommer att ha sin logo
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4">}}
 #### Utvalda i Programuppdateringar
-Stödjande medlemmar lyfts fram i de visuella ändringsloggarna för QGIS-programvaruversioner, vilket visar deras pågående engagemang för att stödja projektet. {{< rich-content-end >}} {{< rich-box-end >}} {{< kolumn-slut >}} {{< kolumn-start>}}
+Stödjande medlemmar lyfts fram i de visuella ändringsloggarna för QGIS-programvaruversioner, vilket visar deras pågående engagemang för att stödja projektet. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
 #### Offentligt erkännande
@@ -174,7 +174,7 @@ Tidigare stödmedlemmar listas separat under en period av två år för att uppm
 
 {{< rich-box-start icon="💡" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
 ##### Engångsbetalningar
-Donationer kan vara av valfritt belopp, via direktöverföring till vårt bankkonto (SEPA-betalning), kreditkortsbetalning (via stripe.com) eller Paypal (information finns på [Donationer]({{< ref "/funding/donate.md" >}}) sidan). Även en liten donation kan göra skillnad och hjälpa oss att nå viktiga projektmål! {{< rich-content-end >}} {{< rich-box-slut >}}
+Donationer kan vara av valfritt belopp, via direktöverföring till vårt bankkonto (SEPA-betalning), kreditkortsbetalning (via stripe.com) eller Paypal (information finns på [Donationer]({{< ref "/funding/donate.md" >}}) sidan). Även en liten donation kan göra skillnad och hjälpa oss att nå viktiga projektmål! {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
 ##### Om "öronmärkt" finansiering

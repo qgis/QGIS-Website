@@ -4,7 +4,7 @@ draft: false
 sidebar: true
 title: Vă mulțumim pentru că ați ales QGIS!
 type: page
-url: /download/thank-you
+aliases: ["/download/thank-you"]
 
 ---
 {{<content-start >}}

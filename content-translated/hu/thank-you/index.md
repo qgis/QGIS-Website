@@ -4,7 +4,7 @@ draft: false
 sidebar: true
 title: Köszönjük, hogy a QGIS-t választotta!
 type: page
-url: /download/thank-you
+aliases: ["/download/thank-you"]
 
 ---
 {{<content-start >}}

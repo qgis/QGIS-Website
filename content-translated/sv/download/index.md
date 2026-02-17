@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Ladda ner
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

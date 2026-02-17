@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Baixar
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}

@@ -7,7 +7,7 @@ sidebar: true
 subtitle: ''
 title: Lejupielādēt
 type: page
-url: /download
+
 
 ---
 {{<content-start >}}
