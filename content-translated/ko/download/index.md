@@ -35,7 +35,7 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 {{< download-windows>}} {{< platform-content-end >}}
 
 {{<platform-content-start platform="macos" >}}
-## macOS
+## 맥OS
 {{<download-macos >}}
 
 Note: There are no QGIS 3.40 LTR builds available on macOS. QGIS 3.44 is stable and has been designated as the future Long Term Release (LTR); therefore 3.44 is the recommended version for macOS users.
