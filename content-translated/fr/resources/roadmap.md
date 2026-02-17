@@ -59,8 +59,8 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 | FF | Gel des fonctionnalités, fin de la phase de développement |
 | PR | Version ponctuelle de la dernière version et de la branche LTR |
 | EPR | Version ponctuelle supplémentaire |
-| :rm-current:current | :rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} |
-| :rm-next:next | :rm-next:next releases |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## Localisation des pré-versions / nightly builds{#qgis-prereleases }
 | Plateforme | Emplacement |

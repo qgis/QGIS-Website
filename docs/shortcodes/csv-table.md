@@ -18,8 +18,8 @@ For simple tables, standard Markdown tables should be used:
 | FF | Feature freeze, end of development phase |
 | PR | Point release of latest release and LTR branch |
 | EPR | Extra Point release |
-| :rm-current:current | :rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} |
-| :rm-next:next | :rm-next:next releases |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 ```
 
 Note: Hugo shortcode `param` can be used inside markdown tables to substitute dynamic vars: `{{< param "ltrrelease" >}}`

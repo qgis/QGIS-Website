@@ -59,8 +59,8 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 | FF | 功能凍結，開發階段結束 |
 | PR | 最新版與長期發行版的小數點版本 |
 | EPR | 特別小數點版 |
-| :rm-current:current | :rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} |
-| :rm-next:next | :rm-next:next releases |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## 預備發行版/每夜建構版安裝檔位置{#qgis-prereleases }
 | 平台 | 位置 |

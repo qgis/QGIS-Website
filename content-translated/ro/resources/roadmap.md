@@ -59,8 +59,8 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 | FF | Înghețare caracteristici; sfârșitul fazei de dezvoltare |
 | PR | Versiune minoră a ultimei versiuni și a ramurii LTR |
 | EPR | Versiune Minoră Suplimentară |
-| :rm-current:current | :rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} |
-| :rm-next:next | :rm-next:next releases |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## Locația prelansărilor / compilațiilor nocturne{#qgis-prereleases }
 | Platformă | Locație |

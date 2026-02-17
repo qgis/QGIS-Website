@@ -59,8 +59,8 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 | FF | Congelamiento de característica, fin de la fase de desarrollo |
 | PR | Punto de lanzamiento de la última versión y rama LLP |
 | EPR | Punto extra de lanzamiento |
-| :rm-current:current | :rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} |
-| :rm-next:next | :rm-next:next releases |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## Ubicación de prelanzamientos / construcciones nocturnas{#qgis-prereleases }
 | Plataforma | Ubicación |

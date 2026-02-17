@@ -59,8 +59,8 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 | FF | Feature-Freeze, Ende der Entwicklungsphase |
 | PR | Point-Release des aktuellen und des LTR-Zweigs |
 | EPR | Zusätzliches Point-Release |
-| :rm-current:current | :rm-current:currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} |
-| :rm-next:next | :rm-next:next releases |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## Ort von Vorabversionen / nächtlichen Kompilaten{#qgis-prereleases }
 | Plattform | Ort |
