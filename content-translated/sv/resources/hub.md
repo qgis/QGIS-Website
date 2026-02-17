@@ -83,18 +83,7 @@ Du hittar dokumentation för varje QGIS Long Term Release (LTR) på respektive d
 
 {{<rich-list listLink="https://qgis.org/pyqgis/|version|/" layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api-dokumentation" >}}
 
-{{<rich-list listLink="https://qgis.org/api/|version|/" layoutClass="inline-block" listTitle="Dokumentation av C++ API" listSubtitle="Project-Id-Version: messages 1.0
-Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2026-02-17 06:33+0000
-PO-Revision-Date: 2025-04-28 23:55+0000
-Last-Translator: Transifex Bot <>, 2026
-Language-Team: Swedish (https://app.transifex.com/qgis/teams/6144/sv/)
-Language: sv
-MIME-Version: 1.0
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: 8bit
-Plural-Forms: nplurals=2; plural=(n != 1);
-" >}}
+{{<rich-list listLink="https://qgis.org/api/|version|/" layoutClass="inline-block" listTitle="Dokumentation av C++ API" >}}
 
 {{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md" layoutClass="inline-block" listTitle="Bygga QGIS från källkod" >}}
 

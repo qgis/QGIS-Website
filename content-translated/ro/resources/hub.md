@@ -83,18 +83,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{<rich-list listLink="https://qgis.org/pyqgis/|version|/" layoutClass="inline-block" listTitle="Documentație API Python QGIS - PyQGIS" >}}
 
-{{<rich-list listLink="https://qgis.org/api/|version|/" layoutClass="inline-block" listTitle="C++ API documentation" listSubtitle="Project-Id-Version: messages 1.0
-Report-Msgid-Bugs-To: 
-POT-Creation-Date: 2026-02-17 06:33+0000
-PO-Revision-Date: 2025-04-28 23:55+0000
-Last-Translator: Transifex Bot <>, 2026
-Language-Team: Romanian (https://app.transifex.com/qgis/teams/6144/ro/)
-Language: ro
-MIME-Version: 1.0
-Content-Type: text/plain; charset=utf-8
-Content-Transfer-Encoding: 8bit
-Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));
-" >}}
+{{<rich-list listLink="https://qgis.org/api/|version|/" layoutClass="inline-block" listTitle="C++ API documentation" >}}
 
 {{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md" layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
 
