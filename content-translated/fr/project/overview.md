@@ -5,7 +5,7 @@ HasBanner: true
 LabelText: Free and open source
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
-SupportedOS: Disponible avec Windows, Mac, Linux
+SupportedOS: Disponible sur Windows, Mac, Linux
 draft: false
 heroImage: img/project.jpg
 og_image: img/project.jpg
@@ -22,33 +22,33 @@ type: page
 {{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Create map](../img/create.gif "Create maps") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Class-leading cartography
+###### Cartographie de pointe
 Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
-###### Professional map production
+###### Production de cartes professionnelles
 Use the intuitive layout design tool to produce high-quality, large-format print maps.
-###### Powerful reporting tools
+###### Des outils de reporting puissants
 Create atlases and reports with maps, media and tabular content. {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start id="content-tab-2" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Edit map](../img/edit.gif "Edit map") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Exceptional digitizing proficiency
+###### Des capacités exceptionnelles en numérisation
 Create and edit points, lines, polygons, and meshes with precision.
-###### Advanced construction tools
-Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations.
-###### Highly customizable forms
-Create user-friendly forms using our form designer.
+###### Outils de construction avancés
+Créez des géométries avec des courbes, des outils de type CAO et une vaste gamme de transformations géométriques.
+###### Formulaires hautement personnalisables
+Créez des formulaires conviviaux à l'aide de notre concepteur de formulaires.
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start id="content-tab-3" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![visualize map](../img/visualize.gif "visualize map") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Comprehensive analysis toolset
+###### Ensemble d'outils d'analyse complet
 Uncover insights from your data with our comprehensive array of hundreds of analysis tools.
-###### Automated analysis workflows
+###### Flux de travail d'analyse automatisés
 Visually combine analysis tools to create reproducible workflows easily.
-###### Extensible analysis environment
+###### Environnement d'analyse extensible
 Explore our diverse plugin ecosystem of third-party analysis tools for expanded capabilities.
 
 {{< column-end >}} {{< columns-end >}}
@@ -58,9 +58,9 @@ Explore our diverse plugin ecosystem of third-party analysis tools for expanded 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Industry-leading format support
 Conquer data integration challenges with support for a multitude of data sources and formats.
-###### Standards and interoperability
+###### Standards et interopérabilité
 Amplify your impact by exploring, utilizing, and creating web services based on industry standards.
-###### Publish your work
+###### Publiez votre travail
 Extend QGIS to the cloud and mobile devices for wider accessibility.
 
 {{< column-end >}} {{< columns-end >}}
@@ -134,7 +134,7 @@ Demonstrations of our user's creativity, showcasing the powerful map creation ca
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 
@@ -144,7 +144,7 @@ Below are some screenshots from QGIS itself and a selection of maps which were c
 
 [Go to screenshots]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< flickr-images showcase="screenshot" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="screenshot" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 

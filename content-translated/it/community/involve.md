@@ -3,15 +3,15 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: QGIS is developed by a team of dedicated volunteers and organizations. We
-  aim to foster a welcoming community for people of all races, creeds, genders, and
-  walks of life
+subtitle: QGIS è sviluppato da un team di volontari e organizzazioni dedicati. Il
+  nostro obiettivo è quello di promuovere una comunità accogliente per persone di
+  ogni cultura, credo, genere e estrazione sociale.
 title: Partecipa
 type: page
 
 ---
 {{<content-start >}}
-## Ways of Contributing
+## Modalità di contribuzione
 [Participate in Support Channels](#participate-in-support-channels "scroll-on-page") [Report Bugs](#report-bugs "scroll-on-page") [QGIS Documentation](#qgis-documentation "scroll-on-page") [Translate QGIS](#translate-qgis "scroll-on-page") [Develop a Plugin](#develop-a-plugin "scroll-on-page") [Develop QGIS Core](#develop-qgis-core "scroll-on-page") [Sustain & Donate](#sustain--donate "scroll-on-page")
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
@@ -42,11 +42,11 @@ Creating documentation offers an ideal starting point for your first contributio
 ### Traduci QGIS
 If you're interested in contributing to the documentation effort, such as translating the English manual into another language, find out how to get started here:
 
-[How to translate QGIS](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html ) {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../img/Translate.jpg) {{< rich-right-end >}} {{< rich-box-end >}}
+[Come tradurre QGIS](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html ) {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../img/Translate.jpg) {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded">}} {{< rich-content-start themeClass="coloring-6" >}}
 ### Sviluppa un Plugin
-Interested in crafting your own? Learn how to get started!
+Ti interessa crearne uno tuo? Scopri come iniziare!
 
 [Develop Python plugins](https://docs.qgis.org/latest/en/docs/pyqgis_developer_cookbook/index.html) {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../img/Plugin.jpg) {{< rich-right-end >}} {{< rich-box-end >}}
 
@@ -54,15 +54,15 @@ Interested in crafting your own? Learn how to get started!
 ### Sviluppo QGIS Core
 QGIS Core comprises libraries for building custom applications through a robust API. It also includes desktop and server applications that showcase the library capabilities, providing a user-friendly interface
 
-[Contributor Requirements]({{< ref "resources/support/contributors-requirements" >}})
+[Requisiti per i Contributori]({{< ref "resources/support/contributors-requirements" >}})
 
-[Get set up for QGIS Core development](https://docs.qgis.org/latest/en/docs/developers_guide/index.html )
+[Preparati allo sviluppo di QGIS Core](https://docs.qgis.org/latest/en/docs/developers_guide/index.html )
 
-[QGIS roadmap]({{< ref "resources/roadmap" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../img/Core.jpg) {{< rich-right-end >}} {{< rich-box-end >}}
+[Roadmap di QGIS]({{< ref "resources/roadmap" >}}) {{< rich-content-end >}} {{< rich-right-start >}}1![](../img/Core.jpg) {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" mode="html">}} {{< rich-content-start themeClass="coloring-2" >}}
 ### Sostieni & Dona
-We welcome two types of financial contributions:
+Accogliamo con favore due tipi di contributi finanziari:
 
 {{< button class = "is-primary1" link = "funding/membership" text = "Become a Sustaining Member" >}} {{< button class = "is-primary6" link = "funding/donate" text = "One-Time Donation" >}}
 

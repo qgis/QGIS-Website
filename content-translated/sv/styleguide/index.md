@@ -10,105 +10,105 @@ type: page
 ## Version 1.0
 Detta är den visuella stilguiden för QGIS. Det här dokumentet definierar standarden för vår visuella identitet. Den föreslår en modernisering av QGIS-märket för att göra det starkare, mer synlig och mer anpassningsbar till en bred flora av användningsområden.
 
-The Visual Style Guide is a living document, initiated with the goal of developing a consistent message and image for QGIS. It is a "living" document because we expect it to expand as we cover more use cases where visual consistency is important and can be described using simpler rules. The standards and simple policies described here are designed to maintain the uniformity of presentation necessary for successful promotion and marketing efforts for the QGIS project.
+Den visuella stilguiden är ett levande dokument som initierades med målet att utveckla ett konsekvent budskap och en enhetlig bild för QGIS. Det är ett "levande" dokument eftersom vi förväntar oss att det kommer att utökas i takt med att vi täcker fler användningsfall där visuell konsekvens är viktig och kan beskrivas med hjälp av enklare regler. De standarder och enkla policyer som beskrivs här är utformade för att upprätthålla den enhetlighet i presentationen som krävs för framgångsrik marknadsföring och marknadsföringsinsatser för QGIS-projektet.
 
-Our visual identity symbolizes QGIS's strength, promise of quality and competence. Proper treatment of logo, fonts and color ensures that QGIS will be recognized and stand out amid communications clutter. Graphic standards are a visual expression of QGIS and should serve as the base for our overall communications strategy.
+Vår visuella identitet symboliserar QGIS styrka, kvalitetslöfte och kompetens. Korrekt hantering av logotyp, typsnitt och färg säkerställer att QGIS känns igen och sticker ut i kommunikationsbruset. Grafiska standarder är ett visuellt uttryck för QGIS och bör fungera som bas för vår övergripande kommunikationsstrategi.
 
-This first version of the Graphic Style Guide outlines the core elements of the new QGIS logo. Future versions will focus on branding assets and how to spread the QGIS brand across the web, mobile devices and printed materials.
+Denna första version av den grafiska stilguiden beskriver kärnelementen i den nya QGIS-logotypen. Framtida versioner kommer att fokusera på varumärkestillgångar och hur man sprider QGIS varumärke över webben, mobila enheter och tryckt material.
 ## Logotyp
 ### Ursprunglig
-![Main logo](visual/main_logo.png) ![Main logo monochrome](visual/main_logo_monochrome.png)
+![Huvudsaklig logotyp](visual/main_logo.png) ![Huvudsaklig logotyp monokrom](visual/main_logo_monochrome.png)
 
-**Download logo file**
+**Ladda ner logotypfil**
 
-[`SVG logo`](visual/qgis-logo.svg)
+[`SVG-logotyp`](visual/qgis-logo.svg)
 
-[`PNG logo`](visual/qgis-logo.png)
+[`PNG-logotyp`](visual/qgis-logo.png)
 
-[`SVG monochrome logo`](visual/qgis-logo-monochrome.svg)
+[`Monokrom SVG-logotyp`](visual/qgis-logo-monochrome.svg)
 
-[`PNG monochrome logo`](visual/qgis-logo-monochrome.png)
+[`Monokrom PNG-logotyp`](visual/qgis-logo-monochrome.png)
 
-The new QGIS logo is presented here. Keeping the core elements of the original QGIS logo (Q letter with an arrow through it), this new version intends to be sharp and scalable, introducing simpler and bolder shapes.
+Här presenteras den nya QGIS-logotypen. Den nya versionen behåller kärnelementen i den ursprungliga QGIS-logotypen (bokstaven Q med en pil genom), men är skarp och skalbar med enklare och djärvare former.
 
-The proposed changes are listed below.
-- The existing spirit is preserved but the logo is bold
+De föreslagna ändringarna anges nedan.
+- Den befintliga andan bevaras men logotypen är djärv
 - Skuggor borttagna
 - Q:et är i sans-serif
 - Pilen blir en del av bokstaven Q
-- The QGIS logo text is based on the free & libre Trueno Bold font.
+- Texten i QGIS-logotypen är baserad på det fria typsnittet Trueno Bold.
 
 ### Minimal
 ![Minimal](visual/minimal.png)
 
-**Download minimal logo**
+**Ladda ner minimal logotyp**
 
 [`SVG 128px`](visual/qgis-icon128.svg) [`SVG 64px`](visual/qgis-icon64.svg) [`SVG 32px`](visual/qgis-icon32.svg)
 
 [`PNG 128px`](visual/qgis-icon128.png) [`PNG 64px`](visual/qgis-icon64.png) [`PNG 32px`](visual/qgis-icon32.png)
 
-![Minimal black](visual/minimal_black.png)
+![Minimal svart](visual/minimal_black.png)
 
-**Download minimal black**
+**Ladda ner minimal black**
 
-[`SVG black 128px`](visual/qgis-icon-black128.svg) [`SVG black 64px`](visual/qgis-icon-black64.svg) [`SVG black 32px`](visual/qgis-icon-black32.svg)
+[`SVG svart 128px`](visual/qgis-icon-black128.svg) [`SVG svart 64px`](visual/qgis-icon-black64.svg) [`SVG svart 32px`](visual/qgis-icon-black32.svg)
 
-[`PNG black 128px`](visual/qgis-icon-black128.png) [`PNG black 64px`](visual/qgis-icon-black64.png) [`PNG black 32px`](visual/qgis-icon-black32.png)
+[`PNG svart 128px`](visual/qgis-icon-black128.png) [`PNG svart 64px`](visual/qgis-icon-black64.png) [`PNG svart 32px`](visual/qgis-icon-black32.png)
 
-![Minimal green](visual/minimal_green.png)
+![Minimal grön](visual/minimal_green.png)
 
-**Download minimal green**
+**Ladda ner minimal green**
 
-[`SVG green 128px`](visual/qgis-icon-green128.svg) [`SVG green 64px`](visual/qgis-icon-green64.svg) [`SVG green 32px`](visual/qgis-icon-green32.svg)
+[`SVG grön 128px`](visual/qgis-icon-green128.svg) [`SVG grön 64px`](visual/qgis-icon-green64.svg) [`SVG grön 32px`](visual/qgis-icon-green32.svg)
 
-[`PNG green 128px`](visual/qgis-icon-green128.png) [`PNG green 64px`](visual/qgis-icon-green64.png) [`PNG green 32px`](visual/qgis-icon-green32.png)
+[`PNG grön 128px`](visual/qgis-icon-green128.png) [`PNG grön 64px`](visual/qgis-icon-green64.png) [`PNG grön 32px`](visual/qgis-icon-green32.png)
 
-![Minimal white](visual/minimal_white.png)
+![Minimal vit](visual/minimal_white.png)
 
-**Download minimal white**
+**Ladda ner minimal white**
 
-[`SVG white 128px`](visual/qgis-icon-white128.svg) [`SVG white 64px`](visual/qgis-icon-white64.svg) [`SVG white 32px`](visual/qgis-icon-white32.svg)
+[`SVG vit 128px`](visual/qgis-icon-white128.svg) [`SVG vit 64px`](visual/qgis-icon-white64.svg) [`SVG vit 32px`](visual/qgis-icon-white32.svg)
 
-[`PNG white 128px`](visual/qgis-icon-white128.png) [`PNG white 64px`](visual/qgis-icon-white64.png) [`PNG white 32px`](visual/qgis-icon-white32.png)
-## Typography
-### Trueno fonts
-Trueno is a free Font Library serif font. In order to embed it, please use
+[`PNG vit 128px`](visual/qgis-icon-white128.png) [`PNG vit 64px`](visual/qgis-icon-white64.png) [`PNG vit 32px`](visual/qgis-icon-white32.png)
+## Typografi
+### Trueno typsnitt
+Trueno är ett gratis Font Library serif-typsnitt. För att bädda in det, vänligen använd
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
 in the site header {{< table >}} | Name | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
 ## Färg
-### Primary colors
-**Dark Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Dark green](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}
+### Primärfärger
+**Mörkgrön** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Mörkgrön](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}
 
-The QGIS Dark Green color to be used for every logo element in the monochrome version. It can also be used as background, primary headline or text color.
+Den mörkgröna QGIS-färg som ska användas för varje logotypelement i den svartvita versionen. Den kan också användas som bakgrundsfärg, primär rubrikfärg eller textfärg.
 
-**Light Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Light green](visual/light_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86<br />{{< column-end >}} {{< columns-end >}}
+**Ljusgrön** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Ljusgrön](visual/light_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50,62, 12,6, 100, 0,86<br />{{< column-end >}} {{< columns-end >}}
 
-The QGIS Light Green color to be used for content of lesser importance. It can be used as secondary background, text or links color.
+QGIS ljusgröna färg som ska användas för innehåll av mindre betydelse. Den kan användas som sekundär bakgrunds-, text- eller länkfärg.
 
-**The gradient**
+**Gradienten**
 
 ![Gradient](visual/gradient.png)
 
-The two primary colors are used as a vertical linear gradient in the logo, and this gradient can be used for website and printed materials background
+De två primärfärgerna används som en vertikal linjär gradient i logotypen, och denna gradient kan användas för webbplats- och tryckt materialbakgrund
 
-**Color Palette**
+**Färgpalett**
 
-![Dark green palette](visual/dark_green_palette.png) ![Light green palette](visual/light_green_palette.png)
-### Secondary colors
-**Lemon**
+![Mörkgrön palett](visual/dark_green_palette.png) ![Ljusgrön palett](visual/light_green_palette.png)
+### Sekundära färger
+**Citron**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Lemon](visual/lemon.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0<br />{{< column-end >}} {{< columns-end >}}
+{{< columns-start >}} {{< column-start class="is-one-third">}} ![Citron](visual/lemon.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0<br />{{< column-end >}} {{< columns-end >}}
 
-**Orange**
+**Apelsin**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Orange](visual/orange.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0<br />{{< column-end >}} {{< columns-end >}}
+{{< columns-start >}} {{< column-start class="is-one-third">}} ![Apelsin](visual/orange.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0<br />{{< column-end >}} {{< columns-end >}}
 
-The QGIS Lemon and Orange colors to be used for the accents and call-to-actions
+QGIS-färgerna Lemon och Orange som ska användas för accenter och uppmaningar till handling
 
-**Color Palette**
+**Färgpalett**
 
-![Lemon palette](visual/lemon_palette.png) ![Orange palette](visual/orange_palette.png)
+![Citronpalett](visual/lemon_palette.png) ![Apelsinpalett](visual/orange_palette.png)
 
 {{<content-end >}}

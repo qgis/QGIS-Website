@@ -10,18 +10,19 @@ type: page
 ---
 {{<content-start >}}
 # Contact en ondersteuning
-## Project Steering Committee (PSC)
-If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list and email address:
+{{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
+## ✉️ Mailing Lists
+QGIS has various mailing lists for discussing QGIS related topics.
 
-{{<rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+Als u een vraag wilt gaan stellen, lees dan eerst dit: [Hoe een vraag over QGIS te stellen?](faq/#how-to-ask-a-qgis-question).
 
-{{<rich-list listLink="mailto:qgis-psc@lists.osgeo.org" layoutClass="half" listTitle="QGIS PSC email" listSubtitle="qgis-psc@lists.osgeo.org" >}}
+{{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="See Mailing lists" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
+{{< rich-content-end >}} {{< rich-box-end >}}
 ## Voordat u begint
 Voordat u koers zet om deel te nemen aan de door u gekozen groep voor ondersteuning, zouden we graag een paar richtlijnen willen vermelden voor het deelnemen in onze gemeenschap:
 ### Blijf bij het onderwerp
-Dit forum is voor het delen van ideeën, programma's, handleidingen, gebruiksgevallen en vragen die alleen gerelateerd zijn aan het gebruiken van QGIS (en gerelateerde programma's) in verschillende velden. Het is niet voor discussies over GIS in het algemeen of over niet gerelateerde software (GIS of anderszins).
+The forums are for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. They are not for discussions about GIS in general or unrelated software (GIS or otherwise).
 ### Taal
 Omdat we een globale groep zijn moeten alle posts in het Engels zijn (tenzij de groep waar u deel van wilt worden taalspecifiek is). Als u post in een andere taal, lever daar dan een in het Engels vertaalde beschrijving bij.
 ### Spam
@@ -32,12 +33,8 @@ Bedrijven of individuen die posten over producten en services over QGIS zijn wel
 Wees helder en objectief. Probeer schermafdrukken bij te voegen. Laat inspanning zien door de officiële documentatie van QGIS te raadplegen. Laat bijvoorbeeld zien dat u de documentatie al hebt bekeken, met Google hebt gezocht, ChatGPT hebt bevraagd, etc. Markeer problemen als opgelost als ze zijn opgelost, zodat mensen geen onnodige moeite meer doen voor uw probleem.
 ## Discourse
 We zijn recent een forum op Discourse begonnen voor aan QGIS gerelateerde ondersteuning. Over een tijdje zijn we van plan om al onze activiteiten voor ondersteuning van de gemeenschap naar deze vorm te brengen. De forums van Discourse zijn beschikbaar [op de door OSGEO gehoste pagina van Discourse](https://discourse.osgeo.org/tag/qgis).
-## Mailinglijsten
-QGIS heeft verscheidene mailinglijsten voor het bespreken van aan QGIS gerelateerde onderwerpen. Bekijk [Mailinglijsten]({{< ref "community/organisation/mailinglists" >}}).
-
-Als u een vraag wilt gaan stellen, lees dan eerst dit: [Hoe een vraag over QGIS te stellen?](faq/#how-to-ask-a-qgis-question).
 ## StackExchange
-You can ask questions on [GIS StackExchange](http://gis.stackexchange.com). If you use the tag `qgis` you’ll see all QGIS related questions and answers: http://gis.stackexchange.com/?tags=qgis
+U kunt ook vragen over QGIS stellen op [GIS StackExchange](http://gis.stackexchange.com). Als u de tag `qgis` gebruikt vindt u alle aan QGIS gerelateerde vragen en antwoorden: https://gis.stackexchange.com/?tags=qgis
 ## Communicatiekanalen
 ### Telegram
 Er is een levendige en aan de gebruikers en gemeenschap gerelateerde chatgroep (Engels gesproken) op het kanaal van Telegram.  [Hier kunt u zich aanmelden](https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ).
@@ -48,7 +45,7 @@ Er is ook een webversie (https://web.telegram.org) waarbij u zich kunt aanmelden
 ### Matrix / IRC
 Matrix (https://matrix.org) is een project voor gedecentraliseerde chat. QGIS heeft een ruimte die toegankelijk is via het alias **#qgis:osgeo.org** (naast andere), die verbindt met het libera.chat **#qgis** IRC-kanaal.
 
-To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/docs/projects/try-matrix-now/#clients for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org.
+To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/ecosystem/clients/ for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org.
 
 IRC gebruiken: installeer een cliënt voor IRC en verbind met irc://irc.libera.chat/#qgis of ga met uw browser naar https://web.libera.chat/?channels=#qgis
 ### Facebook
@@ -59,5 +56,16 @@ Lokale gebruikersgroepen voor QGIS zijn een fantastische plek om andere gebruike
 Bekijk [Gebruikersgroepen]({{< ref "community/groups" >}}) om meer te weten te komen over lokale gebruikersgroepen.
 ## Rapporteren van kwetsbaarheden in beveiliging 
 Als u denkt dat u een probleem met d ebeveiliging hebt gevonden, zoals kwetsbaarheden in QGIS of de afhankelijkheden daarvan, bekijk dan de [pagina Beveiliging]({{< ref "resources/support/security" >}}) voor gedetailleerde informatie over hoe het verantwoordelijk te rapporteren.
+## Project Steering Committee (PSC)
+If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list or email address:
+
+{{<rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="QGIS PSC mailinglijst" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+
+{{<rich-list listLink="mailto:psc@qgis.org" layoutClass="half" listTitle="QGIS PSC e-mail" listSubtitle="psc@qgis.org" >}}
+
+U kunt zich abonneren op de lijst met de link hierboven. Als u eenmaal bent geabonneerd, kunt u het volgende e-mailadres gebruiken om uw vragen en invoer voor discussies te posten: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
+
+Alternatively, you can reach the PSC directly at [psc@qgis.org](mailto:psc@qgis.org).
+> **Note:** The PSC mailing list and email address are intended for legal, trademark, funding, or administrative matters only. For general support, please use the mailing lists or communication channels mentioned above.
 
 {{<content-end >}}

@@ -27,7 +27,9 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{<language-select >}}
 
-{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases" tab4="数据保护" >}}
+{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="数据保护" >}}
+
+<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases" tab4="Data protection">}} -->
 
 {{< tab-content-start tab="1" >}} **For users (QGIS {{< param "ltrversion" >}}):**
 
@@ -61,7 +63,50 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{<tab-content-end >}}
 
-{{<tab-content-start tab="2" >}}
+{{< tab-content-start tab="2" >}} **For users (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction" layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
+
+**For documentation writers (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>" >}}
+
+**For developers (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>" >}}
+
+{{<rich-list listLink="https://qgis.org/pyqgis/|version|/" layoutClass="inline-block" listTitle="PyQGIS - QGIS Python API 文档" >}}
+
+{{<rich-list listLink="https://qgis.org/api/|version|/" layoutClass="inline-block" listTitle="C++ API documentation" listSubtitle="Project-Id-Version: messages 1.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2026-02-17 06:33+0000
+PO-Revision-Date: 2025-04-28 23:55+0000
+Last-Translator: Transifex Bot <>, 2026
+Language-Team: Chinese Simplified (https://app.transifex.com/qgis/teams/6144/zh-Hans/)
+Language: zh-Hans
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=1; plural=0;
+" >}}
+
+{{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md" layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
+
+**For download (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/pdf" layoutClass="inline-block" listTitle="手册PDF版" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/zip" layoutClass="inline-block" listTitle="手册HTML版ZIP压缩格式" >}}
+
+{{<tab-content-end >}}
+
+{{<tab-content-start tab="3" >}}
 
 We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "ltrversion" >}}. We call this version 'QGIS Testing' and the documentation can be found here:
 
@@ -97,7 +142,7 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<tab-content-end >}}
 
-{{<tab-content-start tab="3" >}}
+{{<tab-content-start tab="4" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 Documentation — <lang>" >}}
 
@@ -115,7 +160,7 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<tab-content-end >}}
 
-{{<tab-content-start tab="4" >}}
+{{<tab-content-start tab="5" >}}
 
 In line with GDPR and related data protection regulations, we provide the following documentation:
 

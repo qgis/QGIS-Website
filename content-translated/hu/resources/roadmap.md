@@ -59,8 +59,8 @@ Ez az ütemezés [“iCalendar”](https://qgis.org/schedule.ics) formában is e
 | FF | Funkcióbővítés befagyasztása (Feature Freeze), fejlesztési fázis vége |
 | PR | Hibajavító kiadás (Point Release) a legutóbbi kiadásból és az LTR ágból |
 | EPR | Extra hibajavító kiadás |
-| :rm-current:aktuális | :rm-current:jelenleg támogatott kiadások: {{< param "ltrrelease" >}} és {{< param "release" >}} |
-| :rm-next:következő | :rm-next:következő kiadások |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## Előzetes kiadások / napi kiadások helye{#qgis-prereleases }
 | Platform | Hely |

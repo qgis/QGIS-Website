@@ -135,7 +135,7 @@ Demonstraties van de creativiteit van onze gebruikers, die de krachtige mogelijk
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 
@@ -145,7 +145,7 @@ Hieronder staan een aantal schermafdrukken van QGIS zelf, en een selectie kaarte
 
 [Ga naar schermafdrukken]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< flickr-images showcase="screenshot" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="screenshot" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 

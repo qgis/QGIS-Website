@@ -10,13 +10,14 @@ draft: false
 heroImage: img/project.jpg
 og_image: img/project.jpg
 sidebar: true
-subtitle: Giving the power of spatial visualization and decision making tools to everyone
-title: QGIS overview
+subtitle: Предоставляя мощь геопространственной визуализации и инструментов принятия
+  решений каждому
+title: QGIS в общих чертах
 type: page
 
 ---
 {{<content-start >}}
-## Key features
+## Ключевые возможности
 {{<tabs tab1="Создавайте карты" tab2="Редактируйте слои" tab3="Обрабатывайте и анализируйте" tab4="Делитесь картами" >}}
 
 {{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Create map](../img/create.gif "Create maps") {{< column-end >}}
@@ -34,21 +35,21 @@ Create atlases and reports with maps, media and tabular content. {{< column-end 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Исключительное мастерство оцифровки
 Create and edit points, lines, polygons, and meshes with precision.
-###### Advanced construction tools
+###### Продвинутые инструменты построения
 Создавайте геометрические фигуры с помощью кривых, инструментов САПР и широкого спектра геометрических преобразований.
 ###### Широкие возможности настройки форм
-Create user-friendly forms using our form designer.
+Создавайте дружелюбные формы при помощи нашего построителя.
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start id="content-tab-3" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![visualize map](../img/visualize.gif "visualize map") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Comprehensive analysis toolset
+###### Обширный аналитический инструментарий
 Uncover insights from your data with our comprehensive array of hundreds of analysis tools.
 ###### Автоматизированные инструменты анализа
 Visually combine analysis tools to create reproducible workflows easily.
-###### Extensible analysis environment
+###### Расширяемая аналитическая среда 
 Explore our diverse plugin ecosystem of third-party analysis tools for expanded capabilities.
 
 {{< column-end >}} {{< columns-end >}}
@@ -58,7 +59,7 @@ Explore our diverse plugin ecosystem of third-party analysis tools for expanded 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Поддержка основных форматов индустрии
 Conquer data integration challenges with support for a multitude of data sources and formats.
-###### Standards and interoperability
+###### Стандарты и совместимость
 Amplify your impact by exploring, utilizing, and creating web services based on industry standards.
 ###### Опубликуйте свою работу
 Extend QGIS to the cloud and mobile devices for wider accessibility.
@@ -69,22 +70,22 @@ Extend QGIS to the cloud and mobile devices for wider accessibility.
 ### 2000+ plugins developed by community
 Enhance the functionality of QGIS application with thousands of free additional features.
 
-[Go to plugins](https://plugins.qgis.org/) {{< column-end >}} {{< columns-end >}}
+[Перейти к модулям](https://plugins.qgis.org/) {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![International conference](../img/meetings.jpg "International conference") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
-### Annual international conference
+### Ежегодная международная конференция
 Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing at our annual international user conference.
 
 [Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}}) {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column rounded mb-4" >}} ![Local user groups](../img/groups.jpg "Local user groups") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
-### Local user groups and support providers
+### Местные группы пользователей и поставщики поддержки
 Join a community of like-minded individuals in your region.
 
-[Local groups list]({{< ref "community/groups.md" >}}) {{< column-end >}} {{< columns-end >}}
+[Список местных групп]({{< ref "community/groups.md" >}}) {{< column-end >}} {{< columns-end >}}
 
-[Join the community]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
-## Cross platform
+[Вступить в сообщество]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
+## Межплатформенный
 {{< columns-start >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
@@ -95,13 +96,13 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 ### QGIS Desktop
 Создание, редактирование, визуализация, анализ и публикация геопространственной информации.
 
-[Download]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+[Загрузить]({{< ref "download.md" >}}) для Windows, Mac, Linux, BSD и Android. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Web Client
-Publish your QGIS projects on the web with ease.
+С лёгкостью публикуйте проекты QGIS в сети.
 
 Benefit from the powerful symbology, labeling and blending features to impress the world with your maps.
 
@@ -127,24 +128,24 @@ We gather inspiring stories from our users that showcase the versatility and pow
 {{<rich-box-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third mb-6">}}
-## Maps showcase
+## Образцы карт
 Demonstrations of our user's creativity, showcasing the powerful map creation capabilities of QGIS.
 
-[Go to maps showcase]({{< ref "project/overview/maps.md" >}})
+[Перейти к примерам карт]({{< ref "project/overview/maps.md" >}})
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
-## Application screenshots
+## Снимки приложения
 Below are some screenshots from QGIS itself and a selection of maps which were created with QGIS.
 
-[Go to screenshots]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
+[Перейти к скриншотам]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< flickr-images showcase="screenshot" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="screenshot" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 

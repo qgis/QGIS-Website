@@ -11,12 +11,12 @@ type: page
 ---
 {{<content-start >}}
 # Proces van certificeren
-## QGIS Certificate
-Are you looking for courses with the official QGIS certificate? At the [QGIS Certification Programme website](https://certification.qgis.org/), you can explore an interactive map to locate organisations in your country that offer certified QGIS training and find upcoming courses that provide an official QGIS certificate.
+## QGIS-certificaat
+Bent u op zoek naar cursussen met het officiële QGIS-certificaat? Op de [website van het QGIS certificatie programma](https://certification.qgis.org/) kunt u een interactieve kaart verkennen om te onderzoeken naar organisaties die in uw land gecertificeerde QGIS training aanbieden en toekomstige cursussen vinden die een officieel QGIS-certificaat geven.
 
 ![Studenten met certificaten](../students_with_certificate.webp "Students with certificate")
 ## Wordt een QGIS gecertificeerde trainingsorganisatie
-Does your organisation participate actively in the QGIS community and offer high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
+Neemt uw organisatie actief deel aan de gemeenschap van QGIS en biedt ze trainingscursussen van hoge kwaliteit aan met QGIS? Overweeg dan om mee te doen aan het **QGIS certificatie programma**. Als lid zult in staat zijn het officiële certificaat voor QGIS uit te reiken aan deelnemers van uw cursussen, workshops en training. Elk certificaat draagt €20 bij aan QGIS.
 ### Proces van certificeren
 #### Vereisten
 Het QGIS Certificatie Programma is ontworpen om zowel de betrokkenheid van de gemeenschap in het project QGIS te promoten als ook de kwaliteit van onderwijzen voor software van QGIS. Het aanvraagproces vereist dat aanvragers hun bijdragen aan het project QGIS benoemen en hun trainingsmateriaal beschikbaar maken voor review. Bijdragen aan het project QGIS omvatten onder meer activiteiten als:
@@ -40,6 +40,6 @@ Het PSC zal de uiteindelijke beslissing nemen. Indien geaccepteerd als een QGIS 
 
 Indien goedgekeurd bent u verplicht een **donatie van €20 voor elk certificaat** dat u uitgeeft te voldoen aan het project QGIS. Dit zorgt voor een mechanisme voor financiële ondersteuning van het project. Betalingen voor certificaten worden verricht ofwel via online creditcardtransacties of op verzoek op normale factuur en een SEPA-overboeking. Betalingen mogen in bulk worden afgehandeld voor veel certificaten in één keer.
 
-You can apply through the [QGIS Certification Programme website](https://certification.qgis.org/).
+U kunt zich aanmelden via de [website van het QGIS certificatie programma](https://certification.qgis.org/).
 
 {{<content-end >}}

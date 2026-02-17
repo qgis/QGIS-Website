@@ -5,20 +5,20 @@ ButtonLink: download/
 ButtonText: Ladda ner
 HasBanner: true
 HeroImage: img/hegobg1.webp
-LabelText: Free and Open Source
-SupportedOS: Available on Windows, Mac, Linux
+LabelText: Fri och öppen källkod
+SupportedOS: Tillgänglig på Windows, Mac, Linux
 draft: false
 heroLogo: img/logosign.svg
 heroSize: is-medium
-subtitle: Spatial visualization and decision-making tools for everyone
-title: Spatial without Compromise
+subtitle: Verktyg för spatial visualisering och beslutsfattande för alla
+title: Spatial utan kompromisser
 type: page
 
 ---
-{{<feature title="Create maps" text="Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print media." col-title-1="Class-leading cartography" col-text-1="Experience QGIS's extensive set of design options to bring your maps to life." col-title-2="Professional map production" col-text-2="Use the intuitive layout designer to produce high-quality, large-format print maps." col-title-3="Powerful reporting tools" col-text-3="Create atlases and reports including maps and tabular content." img="img/main-create.webp" order=1 >}}
+{{<feature title="Skapa kartor" text="Utforska QGIS exceptionella kartografiska designfunktioner för att skapa enastående kartor för skrivbords-, mobil-, moln- och utskriftsmedier." col-title-1="Klassledande kartografi" col-text-1="Upplev QGIS omfattande uppsättning designalternativ för att ge dina kartor liv." col-title-2="Professionell kartproduktion" col-text-2="Använd den intuitiva layoutdesignern för att producera högkvalitativa, tryckta kartor i storformat." col-title-3="Kraftfulla rapporteringsverktyg" col-text-3="Skapa atlaser och rapporter med kartor och tabellinnehåll." img="img/main-create.webp" order=1 >}}
 
-{{<feature title="Edit layers" text="Harness the unmatched capabilities of powerful digitizing and construction tools." col-title-1="Exceptional digitizing proficiency" col-text-1="Craft and edit points, lines, polygons, and meshes with precision." col-title-2="Advanced construction tools" col-text-2="Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations." col-title-3="Highly customizable forms" col-text-3="Create user-friendly forms using our form designer." img="img/main-edit.webp" order=2 >}}
+{{<feature title="Redigera lager" text="Utnyttja den oöverträffade kapaciteten hos kraftfulla digitaliserings- och konstruktionsverktyg." col-title-1="Exceptionell digitaliseringskompetens" col-text-1="Skapa och redigera punkter, linjer, polygoner och nät med precision." col-title-2="Avancerade konstruktionsverktyg" col-text-2="Skapa geometrier med kurvor, CAD-liknande verktyg och ett stort antal geometriska transformationer." col-title-3="Mycket anpassningsbara formulär" col-text-3="Skapa användarvänliga formulär med hjälp av vår formulärdesigner." img="img/main-edit.webp" order=2 >}}
 
-{{<feature title="Process and analyze" text="Benefit from state-of-the-art analysis tools seamlessly integrated into our toolbox." col-title-1="Comprehensive analysis toolset" col-text-1="Uncover insights from your data with our comprehensive array of analysis tools." col-title-2="Automated analysis workflows" col-text-2="Visually combine analysis tools to create easily reproducible workflows." col-title-3="Extensible analysis environment" col-text-3="Explore a diverse ecosystem of third-party analysis tools for expanded capabilities." img="img/main-analyze.webp" order=3 >}}
+{{<feature title="Bearbeta och analysera" text="Dra nytta av toppmoderna analysverktyg som är sömlöst integrerade i vår verktygslåda." col-title-1="Omfattande analysverktyg" col-text-1="Få insikter från dina data med hjälp av vårt omfattande utbud av analysverktyg." col-title-2="Automatiserade arbetsflöden för analys" col-text-2="Kombinera analysverktyg visuellt för att skapa lätt reproducerbara arbetsflöden." col-title-3="Utökad analysmiljö" col-text-3="Utforska ett brett ekosystem av analysverktyg från tredje part för utökade möjligheter." img="img/main-analyze.webp" order=3 >}}
 
-{{<feature title="Share maps" text="QGIS provides an equal-access platform for everyone to share their results." col-title-1="Industry-leading format support" col-text-1="Conquer data integration challenges with support for various data sources and formats." col-title-2="Standards and interoperability" col-text-2="Amplify your impact by exploring, utilizing, and creating web services based on industry standards." col-title-3="Publish your work" col-text-3="Extend QGIS to the cloud and mobile devices for wider accessibility." img="img/main-share.webp" order=4 >}}
+{{<feature title="Dela kartor" text="QGIS tillhandahåller en plattform med lika tillgång för alla att dela med sig av sina resultat." col-title-1="Stöd för branschledande format" col-text-1="Övervinn utmaningar med dataintegration med stöd för olika datakällor och format." col-title-2="Standarder och interoperabilitet" col-text-2="Förstärk din påverkan genom att utforska, använda och skapa webbtjänster baserade på branschstandarder." col-title-3="Publicera ditt arbete" col-text-3="Utöka QGIS till molnet och mobila enheter för ökad tillgänglighet." img="img/main-share.webp" order=4 >}}

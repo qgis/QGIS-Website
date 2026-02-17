@@ -16,7 +16,7 @@ QGIS is an incredibly powerful toolset, capable of a range of diverse functional
 | --- | --- |
 | {{<button fullwidth="true" icon="fa-solid fa-calendar" class="is-success" link="showcase/user-group-events" text="User Group News" >}} | User events around the world. |
 | {{<button fullwidth="true" icon="fa-solid fa-person" class="is-success" link="showcase/case-studies/" text="Studii de Caz" >}} | Case studies of QGIS being applied to real world problems. |
-| {{<button fullwidth="true" icon="fa-solid fa-map" class="is-success" link="showcase/maps/" text="Hărți" >}} | Amazing maps created using QGIS. |
+| {{<button fullwidth="true" icon="fa-solid fa-map" class="is-success" link="showcase/maps/" text="Hărți" >}} | Hărți uimitoare create cu ajutorul QGIS. |
 | {{<button fullwidth="true" icon="fa-solid fa-display" class="is-success" link="showcase/screenshots/" text="Capturi de ecran" >}} | Screenshots of QGIS in action. |
 
 {{<content-end >}}

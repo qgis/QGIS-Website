@@ -10,59 +10,59 @@ type: page
 # Färdplan
 {{<roadmap >}}
 
-{{<button class="is-primary1 is-rounded" link="https://qgis.org/schedule.ics" text="Subscribe to the roadmap iCalendar" >}}
+{{<button class="is-primary1 is-rounded" link="https://qgis.org/schedule.ics" text="Prenumerera på färdplanen iCalendar" >}}
 
-Releases and development of QGIS follow a timebased schedule (roadmap).
-- Even version numbers (2.18, 3.2 etc) are release versions.
-- Odd version numbers (2.99, 3.1 etc) are development versions.
+Utgåvor och utveckling av QGIS följer ett tidsbaserat schema (roadmap).
+- Även versionsnummer (2.18, 3.2 etc) är releaseversioner.
+- Udda versionsnummer (2.99, 3.1 etc) är utvecklingsversioner.
 
-A new release will happen every four months. In the first three months, new development is taking place. In the last month before a release, a feature freeze is invoked and the final month is used for testing, bugfixing, translation and release preparations. When the release happens, a branch with an even release number is created and the master branch advances to the next odd version. After the release a call for packaging is issued.
+En ny release kommer att ske var fjärde månad. Under de första tre månaderna sker nyutveckling. Under den sista månaden före en release fryses utvecklingen och den sista månaden används för testning, buggfixning, översättning och förberedelser inför releasen. När releasen sker skapas en gren med ett jämnt versionsnummer och mastergrenen går vidare till nästa udda version. Efter releasen skickas en uppmaning om paketering ut.
 
-Every third release (starting with 2.8) is a long-term-release (LTR) that is maintained until the next long-term-release occurs.
+Var tredje release (från och med 2.8) är en långtidsrelease (LTR) som underhålls tills nästa långtidsrelease inträffar.
 ## Utvecklingsfas
-In the development phase, developers work on adding new features for the next release. Early adopters can use the nightly builds we have for all major platforms to see the development progress, do preliminary testing and provide bug reports and their thoughts to help with development.
+I utvecklingsfasen arbetar utvecklarna med att lägga till nya funktioner för nästa release. Tidiga användare kan använda de nattliga builds som vi har för alla större plattformar för att se hur utvecklingen fortskrider, göra preliminära tester och skicka in felrapporter och tankar som kan hjälpa till med utvecklingen.
 ## Versionsfrysning
-In the feature freeze phase, new features are not allowed in anymore and the focus of everyone moves from enhancing QGIS to stabilizing it. This also turns the nightly builds effectively into [prereleases](#qgis-prereleases).
+I fasen för funktionsfrysning tillåts inte nya funktioner längre och allas fokus flyttas från att förbättra QGIS till att stabilisera det. Detta förvandlar också de nattliga builds effektivt till [prereleases] (#qgis-prereleases).
 
-**Users** should start extensive testing of these prereleases in their environment to verify that there are no issues, they wouldn’t want to see in the upcoming release. All such issues should be reported (see [Bugs, Features and Issues]({{< ref "resources/support/bug-reporting" >}})). Everything that goes unnoticed, will also end up in the next release. Only in case of serious problems backports to a latest release will occur. Therefore testing of the prereleases and reporting issues is very important.
+**Användare** bör påbörja omfattande tester av dessa prereleaser i sin miljö för att verifiera att det inte finns några problem som de inte vill se i den kommande releasen. Alla sådana problem bör rapporteras (se [Buggar, funktioner och problem]({{< ref "resources/support/bug-reporting" >}})). Allt som går obemärkt förbi kommer också att hamna i nästa version. Endast i händelse av allvarliga problem kommer bakåtporter till en senaste version att ske. Därför är det mycket viktigt att testa prereleaser och rapportera problem.
 
-In the feature freeze, **developers** monitor the bugtracker and start working on fixing the reported issues and update the **visual changelog** with the features they added.
+Under funktionsfrysningen övervakar **utvecklarna** buggtrackern och börjar arbeta med att åtgärda de rapporterade problemen och uppdaterar den **visuella ändringsloggen** med de funktioner som de har lagt till.
 
-With the start of the feature freeze, the translation files will be updated so that **translators** can start their work. Note that this might be an incremental process as although the features are frozen, bug fixes might still introduce translation string changes.
+När funktionsfrysningen inleds kommer översättningsfilerna att uppdateras så att **översättare** kan påbörja sitt arbete. Observera att detta kan vara en stegvis process eftersom buggfixar fortfarande kan medföra ändringar i översättningssträngarna, även om funktionerna är frysta.
 
-Two weeks before the release, a hard freeze is initiated after which only fixes to severe problems and regressions introduced after the feature freeze are allowed in.
+Två veckor före lanseringen inleds en hård frysning, varefter endast korrigeringar av allvarliga problem och regressioner som införts efter funktionsfrysningen tillåts.
 
-The release manager announces this on feature freeze.
+Release manager meddelar detta vid feature freeze.
 ## Version
-On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+På datum för större och mindre releaser skapas release-grenen och releasen taggas och tar balls förbereds. Point-releaser taggas bara och tar balls skapas.
 
-The packagers are notified that packaging can begin.
+Packarna meddelas att packningen kan påbörjas.
 
-Once some packages are available the release can be announced and the website is updated accordingly.
+När vissa paket är tillgängliga kan lanseringen meddelas och webbplatsen uppdateras i enlighet med detta.
 ## Släppschema
-The schedule is aligned to produce roughly the same dates for each year given our four monthly releases with LTRs entering the LTR repo in late february.
+Schemat är anpassat för att ge ungefär samma datum för varje år med tanke på våra fyra månatliga utgåvor med LTR som kommer in i LTR-repån i slutet av februari.
 
-Beginning after 2.12 the development phase is always 12 weeks and the freeze phase is at least 5 weeks. Remainders are used to extend the freeze phase of LTR releases.
+Från och med 2.12 är utvecklingsfasen alltid 12 veckor och frysningsfasen är minst 5 veckor. Remainders används för att förlänga frysningsfasen för LTR-utgåvor.
 
-Point releases will happen every month on the latest release branch, if there are backports. Beginning with the 3.28 release, point releases are only done with new latest releases.
+Punktutgåvor kommer att ske varje månad på den senaste utgåveförgreningen, om det finns backports. Från och med utgåva 3.28 görs punktutgåvor endast med nya senaste utgåvor.
 
-In the first four months after its release, a new LTR is also the current LR. In this phase, the new LTR doesn’t replace the previous LTR in the LTR repositories. This happens as soon as a new LR is released.
+Under de första fyra månaderna efter utgivningen är en ny LTR också den aktuella LR. Under denna fas ersätter den nya LTR inte den tidigare LTR i LTR-arkivet. Detta sker så snart en ny LR har släppts.
 
-This schedule is also available as [“iCalendar”](https://qgis.org/schedule.ics).
-### Schedule
+Detta schema finns även tillgängligt som ["iCalendar"] (https://qgis.org/schedule.ics).
+### Schema
 {{<csv-table file="csv/schedule.csv" >}}
-### Event legend
-| Abbreviation | Beskrivning |
+### Händelseförklaring
+| Förkortning | Beskrivning |
 | --- | --- |
-| LTR | Long term release, begin of new development phase |
-| LR | Regular release, begin of new development phase |
-| FF | Feature freeze, end of development phase |
-| PR | Point release of latest release and LTR branch |
-| EPR | Extra Point release |
+| LTR | Långsiktig utgåva, början på en ny utvecklingsfas |
+| LR | Regelbunden lansering, början på ny utvecklingsfas |
+| FF | Funktionsfrysning, slutet av utvecklingsfasen |
+| PR | Punktutgåva för senaste utgåva och LTR-förgrening |
+| EPR | Extra punktutgåva |
 | <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
 | <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
-## Location of prereleases / nightly builds{#qgis-prereleases }
+## Plats för förhandsversioner/nattliga byggen{#qgis-prereleases }
 | Plattform | Plats |
 | --- | --- |
 | Windows | [OSGeo4W]({{< ref "resources/installation-guide#online-osgeo4w-installer" >}}) |

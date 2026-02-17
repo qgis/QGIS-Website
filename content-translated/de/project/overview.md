@@ -5,7 +5,7 @@ HasBanner: true
 LabelText: Free and open source
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
-SupportedOS: Available on Windows, Mac, Linux
+SupportedOS: Verfügbar auf Windows, Mac, Linux
 draft: false
 heroImage: img/project.jpg
 og_image: img/project.jpg
@@ -17,7 +17,7 @@ type: page
 ---
 {{<content-start >}}
 ## Key features
-{{<tabs tab1="Create maps" tab2="Edit layers" tab3="Process and analyze" tab4="Share maps" >}}
+{{<tabs tab1="Karten erstellen" tab2="Layer bearbeiten" tab3="Verarbeiten und analysieren" tab4="Karten teilen" >}}
 
 {{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Create map](../img/create.gif "Create maps") {{< column-end >}}
 
@@ -134,7 +134,7 @@ Demonstrations of our user's creativity, showcasing the powerful map creation ca
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 
@@ -144,7 +144,7 @@ Below are some screenshots from QGIS itself and a selection of maps which were c
 
 [Go to screenshots]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< flickr-images showcase="screenshot" quantity="5" columns="gallery" >}}
+{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="screenshot" quantity="4" columns="gallery" >}}
 
 {{< column-end >}} {{< columns-end >}}
 

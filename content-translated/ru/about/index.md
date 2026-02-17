@@ -2,8 +2,8 @@
 draft: 'true'
 heroImage: img/banners/banner4.png
 sidebar: true
-subtitle: QGIS is a professional GIS application, built on top of Free and Open Source
-  Software (FOSS), and takes pride in being a part of the FOSS community.
+subtitle: QGIS – профессиональное ПО ГИС, построенное на свободном ПО с открытым исходным
+  кодом (СПО) и с гордостью причисляет себя к сообществу СПО.
 title: QGIS - лучшая настольная ГИС с открытым исходным кодом
 type: page
 

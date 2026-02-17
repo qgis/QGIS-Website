@@ -14,6 +14,12 @@ Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your b
 
 Note: The books are listed in order of newest first. After the English books, there are items in French, Greek, Polish and other languages.
 ## anglicky
+### Learn QGIS - Fifth Edition (Early Access)
+Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
+- [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
+- Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
+- Date: March 2026
+
 ### Spatial Analysis of Gender Based Work Force in India Using QGIS
 A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
 - [https://www.gyanbooks.com/](https://www.gyanbooks.com/index.php?p=sr&format=fullpage&Field=bookcode&String=1111036579312&Book=SPATIAL%20ANALYSIS%20OF%20GENDER%20BASED%20WORK%20FORCE%20IN%20INDIA%20USING%20QGIS%20A%20comparative%20study%20of%20vil..)
@@ -70,13 +76,13 @@ Pracovní sešit pro výuku ve třídě nebo samostatné studium
 
 ### Praktická geoprostorová analýza pomocí R a QGIS
 Praktické příklady s reálnými projekty v oblasti GIS, dálkového průzkumu Země, správy a analýzy geoprostorových dat s využitím programovacího jazyka R.
-- [https://www.packtpub.com/application-development/hands-geospatial-analysis-r-and-qgis](https://www.packtpub.com/application-development/hands-geospatial-analysis-r-and-qgis)
+- [https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674](https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674)
 - Autor: Shammunul Islam
 - Datum: Listopad 2018
 
 ### Naučte se QGIS - čtvrté vydání
 Naučte se zobrazovat, upravovat a analyzovat geoprostorová data pomocí QGIS a Pythonu 3.
-- [https://www.packtpub.com/application-development/learn-qgis-fourth-edition](https://www.packtpub.com/application-development/learn-qgis-fourth-edition)
+- [https://www.packtpub.com/en-de/product/learn-qgis-9781788998864](https://www.packtpub.com/en-de/product/learn-qgis-9781788998864)
 - Autoři: Andrew Cutts, Anita Graser
 - Datum: Listopad 2018
 
@@ -93,19 +99,19 @@ Open the Door to GIS nabízí učitelům možnost používat tento výkonný sof
 
 ### Kuchařka programování QGIS v jazyce Python - druhé vydání
 Tato kniha vychází z verze QGIS 2.18 a naučí vás psát kód v jazyce Python, který pracuje s prostorovými daty a automatizuje úlohy geoprocessingu v QGIS.
-- [https://www.packtpub.com/application-development/qgis-python-programming-cookbook-second-edition](https://www.packtpub.com/application-development/qgis-python-programming-cookbook-second-edition)
+- [https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102](https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102)
 - Autor: Joel Lawhead
 - Datum: březen 2017
 
 ### QGIS:Jak se stát zkušeným uživatelem GIS
 Osvojte si techniky správy dat, vizualizace a prostorové analýzy v QGIS a staňte se zkušenými uživateli GIS.
-- [https://www.packtpub.com/big-data-and-business-intelligence/qgisbecoming-gis-power-user](https://www.packtpub.com/big-data-and-business-intelligence/qgisbecoming-gis-power-user)
+- [https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725](https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725)
 - Anita Graser, Ben Mearns, Alex Mandel, Victor Olaya Ferrero, Alexander Bruy
 - Datum: únor 2017
 
 ### Zvládnutí QGIS - druhé vydání
 Překonejte základy a využijte plný výkon QGIS díky praktickým příkladům krok za krokem.
-- [https://www.packtpub.com/big-data-and-business-intelligence/mastering-qgis-second-edition](https://www.packtpub.com/big-data-and-business-intelligence/mastering-qgis-second-edition)
+- [https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623](https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623)
 - Kurt Menke, GISP a kol.
 - Datum: září 2016
 
@@ -117,13 +123,13 @@ Pracovní sešit k učebnímu plánu GeoAcademy
 
 ### Kuchařka QGIS 2
 Staňte se zkušenými uživateli QGIS a osvojte si techniky správy dat, vizualizace a prostorové analýzy QGIS.
-- [https://www.packtpub.com/application-development/qgis-2-cookbook](https://www.packtpub.com/application-development/qgis-2-cookbook)
+- [https://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978](hhttps://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978)
 - Author(s): Alex Mandel, Anita Graser, Victor Olaya Ferrero, Alexander Bruy
 - Date: April 2016
 
 ### Learning QGIS - Third Edition
 Pomocí QGIS můžete vytvářet skvělé mapy a provádět všechny potřebné úlohy geoprocessingu.
-- [https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition](https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition)
+- [https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151](https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151)
 - Author(s): Anita Graser
 - Date: March 2016
 
@@ -133,21 +139,15 @@ Naučte se, jak používat QGIS k tomu, aby vaše kartografické produkty byly n
 - Author(s): Anita Graser and Gretchen N. Peterson
 - Date: March 2016
 
-### Mastering QGIS
-Ponořte se do QGIS a ovládněte geoprostorová data s tímto pokročilým průvodcem, který vám pomůže vytvářet mapy a aplikace, které vám umožní prozkoumat svět novými způsoby.
-- [https://www.packtpub.com/application-development/mastering-qgis](https://www.packtpub.com/application-development/mastering-qgis)
-- Author(s): Kurt Menke, GISP - Dr. Richard Smith Jr., GISP - Dr. Luigi Pirelli - Dr John Van Hoesen, GISP
-- Date: March 2015
-
 ### QGIS Blueprints
 Vývoj analytických webových aplikací založených na poloze pomocí QGIS
-- [https://www.packtpub.com/hardware-and-creative/qgis-blueprints](https://www.packtpub.com/hardware-and-creative/qgis-blueprints)
+- [https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090](https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090)
 - Author(s): Ben Mearn
 - Datum: září 2015
 
 ### QGIS v příkladech
 Využijte sílu QGIS v reálných aplikacích a staňte se výkonným uživatelem v oblasti kartografie a analýzy GIS.
-- [https://www.packtpub.com/application-development/qgis-example](https://www.packtpub.com/application-development/qgis-example)
+- [https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131](https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131)
 - Autor(ři): Alexander Bruy, Daria Svidzinsk
 - Datum: červen 2015
 
@@ -184,10 +184,10 @@ Výukový program a aplikace QGIS.
 - Date: December 2016
 
 ## francouzsky
-### Systèmes d’information géographique. Cours et exercices corrigés avec Grass et Qgis
-- [https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-cours-et-exercices-corriges-avec-grass-et](https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-cours-et-exercices-corriges-avec-grass-et)
+### Systèmes d'information géographique - 3e édition Avec logiciels libres GRASS et QGIS
+- [https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0](https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0)
 - Auteur : Yves Auda
-- Date: March 2018
+- Date: September 2025
 
 ### Výuka QGIS na příkladech ve francouzštině
 Tato kniha se zabývá základními pracovními postupy v GIS od vytváření dat až po jejich kartografickou reprezentaci a některé základy prostorové analýzy.
@@ -237,6 +237,13 @@ The book is prepared like the series “for Dummies”.
 - Datum: říjen 2016
 
 ## španělsky
+### Descubriendo QGIS 3.x
+Esta segunda edición es una actualización importante del título original Discover QGIS 3.x (English). Todos los ejercicios han sido actualizados para ser compatibles con QGIS 3.26. Los temas abarcan la interfaz de QGIS, conceptos básicos de SIG, análisis espacial, modelado, creación y edición de datos, diseño cartográfico y visualización de datos.Con mejoras en el procesamiento, flujos de trabajo más eficientes, compatibilidad con datos de nubes de puntos, desarrollo del Controlador Temporal y opciones de simbología mejoradas, ¡es un momento emocionante para aprender QGIS!
+- [https://locatepress.com/book/dq32-es](https://locatepress.com/book/dq32-es)
+- Author(s): Kurt Menke, Carlos Lopez, Sofia Logan
+- Organization: Locate Press
+- Date: June 2025
+
 ### QGIS Exercise Guide: beginner, intermediate, and advanced Levels
 Three practical exercise guides in QGIS (beginner, intermediate, and advanced) designed for the management and analysis of geospatial data from the Servicio Geológico Colombiano using free and open-source software solutions.
 - [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)

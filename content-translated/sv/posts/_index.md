@@ -4,6 +4,6 @@ aliases:
 author: Tim Sutton
 tags:
 - index
-title: Posts
+title: Inlägg
 
 ---

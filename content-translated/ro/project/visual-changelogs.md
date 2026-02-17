@@ -14,7 +14,7 @@ QGIS is supported by donors and sustaining members. A current list of donors who
 
 QGIS este un soft gratuit iar dvs. nu aveți obligația de a plăti pentru folosirea lui - de fapt, vrem să încurajăm oamenii de pretutindeni să-l folosească, indiferent de starea lor financiară sau socială - noi având convingerea că prin aducerea deciziei spațială la îndemâna utilizatorilor vom obține o societate mai bună.
 
-Below, you will find the Visual Changelogs since version 2.0.
+Mai jos se află Jurnalul Schimbărilor, începând cu versiunea 2.0
 
 {{<visualchangelogs >}}
 

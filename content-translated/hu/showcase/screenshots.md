@@ -7,4 +7,4 @@ title: Galéria – Képernyőképek
 type: page
 
 ---
-{{<flickr-images showcase="screenshot" >}}
+{{<hub-images showcase="screenshot" >}}

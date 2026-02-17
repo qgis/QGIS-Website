@@ -15,7 +15,7 @@ QGIS wordt ontwikkeld door een team van toegewijde, vrijwilligers, bedrijven en 
 
 We zijn afhankelijk van sponsoren en donaties voor veel van onze fondsen. Als u ons zou willen ondersteunen, donaties zijn van harte welkom. Donaties kunnen elektronisch worden verricht, met creditcard of met PayPal.
 
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt german association.
+Donaties aan QGIS zouden in sommige landen af te trekken zijn van de belastingen. Vraag uw lokale belastingkantoor naar de details. Als u als Duits bedrijf of organisatie uw gift wilt aftrekken van de belasting, doneer dan via de [Duitse QGIS gebruikersgroep](https://qgis.de/doku.php/verein/spenden). Zij kunnen u, als een van belasting vrijgestelde Duitse vereniging, een bevestiging van de betaling verschaffen.
 
 {{< rich-box-start layoutClass="mt-6">}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Dragende leden
@@ -52,7 +52,7 @@ VAT-number:   CHE-489.853.176
 
 {{< rich-box-start layoutClass="has-right paypal mb-6" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Donatie via Paypal
-You can use Paypal to donate using your own credit card (but we prefer to use [Payrexx](#payrexx-donation) for that). The payment is processed by PayPal but you don't need to have a PayPal account or sign-up for one if you are paying by credit card.
+U kunt gebruik maken van PayPal om te doneren via uw eigen creditcard (maar wij hebben liever dat u [Payrexx](#payrexx-donation) daarvoor gebruikt). De betaling wordt verwerkt door PayPal, maar u hoeft geen account van PayPal te hebben of lid te worden, als u wilt betalen met de creditcard.
 
 U kunt ook uw eigen PayPal account gebruiken om te doneren.
 

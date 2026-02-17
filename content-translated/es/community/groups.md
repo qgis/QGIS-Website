@@ -81,6 +81,16 @@ type: page
 {{<rich-list listLink="https://qgisghana.org/" icon="🇬🇭" layoutClass="half" listTitle="QGIS Ghana" listSubtitle="Contact: Enock Seth Nyamador" >}}
 ### Registered 2022
 {{<rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS Argentina" listSubtitle="Contact: Ariel Anthieni" >}}
+### Registered 2024
+{{<rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="QGIS Global virtual FB group" listSubtitle="Contact: Adelcides Varela" >}}
+
+{{<rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS North Macedonia" listSubtitle="Contact: Ivica Milevski" >}}
+
+{{<rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS Albania" listSubtitle="Contact: Emiliano Qose" >}}
+
+{{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Republic of Kosova" listSubtitle="Contact: Milot Lubishtani" >}}
+### Registered 2025
+{{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contact: Antidy Kawamala" >}}
 ## Metas de un grupo de usuarios
 * Organización de los encuentros de usuarios
 * Coordination of development, with an emphasis on regional/national standards and requirements
@@ -89,7 +99,7 @@ type: page
 * Sponsoring: local user groups are encouraged to collect reasonable annual membership fees (depending on the country). These collected funds can be used to fund the development of relevant features, help with bug-fixing or as a donation to the international QGIS project.
 * Establecimiento de grupos de interés, p. topografía, planificación urbana, servidor/cliente web, etc.
 * Inicialización/coordinación de aplicaciones modulares, p. Ej. topografía, planificación urbana, servidor/cliente web, etc.
-* Electing a representative to act as a [QGIS Country Voting Member]({{< ref "/community/organisation#voting-members" >}})
+* Electing a representative to act as a [QGIS Voting Member]({{< ref "/community/organisation#voting-members" >}})
 
 ## Supuestos/recomendaciones generales
 * local user groups should stay vendor/company neutral
@@ -115,7 +125,12 @@ It is recommended to register your local country domains, e.g. qgis.ch or qgis.u
 Your local user group website should be used to publish any material in relation to the information and management of the user group. Examples include the user meetings, case study, shared material, discussion boards, etc. Public material should be available without login requirements (e.g. do not require interested people to be a member of a social media network like Facebook or Google+). Usage of social media is recommended but should not be the only channel of information. RSS feeds should be made available at the Website of the QGIS user group.
 
 Good luck with organizing your local user group! Please inform the international QGIS team by registering at the QGIS community list and reporting about your progress. Please do not hesitate to ask questions regarding the establishment and maintenance of your local user group.
-## Sitio web plantilla
-If you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
+## Starter pack
+### QGIS.org subdomain hosting
+If you prefer to use the official QGIS.org branding and host your user group website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
+### QGIS News Feed submission access
+Local user groups can request access to the [QGIS News Feed system](https://feed.qgis.org), which allows you to submit news entries (such as events, crowdfunding campaigns, meetups, or announcements) that will appear in the QGIS news section once approved by moderators. This is an excellent way to share your group's activities with the global QGIS community.
+### Template for local country domain qgis.xx
+For local country domain, if you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
 
 {{<content-end >}}

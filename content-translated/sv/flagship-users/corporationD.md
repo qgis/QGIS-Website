@@ -1,7 +1,7 @@
 ---
 draft: 'true'
 logo: corporationD.png
-title: Corporation D
+title: Företag D
 type: flagship-user
 
 ---

@@ -10,7 +10,7 @@ type: page
 
 Produse
 =
-If you are a fan of QGIS, you might want to visit our store so you can buy some mementos to show off your favourite desktop GIS. We have a number of great t-shirts, mugs, hoodies, caps and more, so do pay a visit to one of our stores below!
+Dacă sunteți un fan QGIS, ați putea dori să vizitați magazinul nostru astfel încât să puteți cumpăra unele suveniruri care ar putea scoate în evidență aplicația GIS preferată. Avem un număr de mare tricouri, căni, hanorace, șepci și așa mai departe, așa că vă așteptăm la unul din magazinele noastre de mai jos!
 
 Prin cumpărăturile QGIS arătați nu doar faptul că utilizați QGIS, dar pentru fiecare tricou vândut un comision este transferat proiectului QGIS.
 

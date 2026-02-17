@@ -14,6 +14,12 @@ Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your b
 
 Note: The books are listed in order of newest first. After the English books, there are items in French, Greek, Polish and other languages.
 ## इंग्रजी
+### Learn QGIS - Fifth Edition (Early Access)
+Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
+- [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
+- Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
+- Date: March 2026
+
 ### Spatial Analysis of Gender Based Work Force in India Using QGIS
 A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
 - [https://www.gyanbooks.com/](https://www.gyanbooks.com/index.php?p=sr&format=fullpage&Field=bookcode&String=1111036579312&Book=SPATIAL%20ANALYSIS%20OF%20GENDER%20BASED%20WORK%20FORCE%20IN%20INDIA%20USING%20QGIS%20A%20comparative%20study%20of%20vil..)
@@ -70,13 +76,13 @@ Get started with QGIS with this introduction covering everything needed to get y
 
 ### आर आणि क्यूजीआयएससह हँड्स-ऑन जिओस्पाटियल विश्लेषण
 जीआयएस, रिमोट सेन्सिंग, जिओस्पाटियल डेटा मॅनेजमेन्ट आणि आर प्रोग्रामिंग भाषेचा वापर करुन विश्लेषणेमधील वास्तविक-जगातील प्रकल्पांसह व्यावहारिक उदाहरणे
-- [https://www.packtpub.com/application-development/hands-geospatial-analysis-r-and-qgis](https://www.packtpub.com/application-development/hands-geospatial-analysis-r-and-qgis)
+- [https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674](https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674)
 - लेखक: शाममुनुल इस्लाम
 - तारीख: नोव्हेंबर 2018
 
 ### QGIS जाणून घ्या - चौथी संस्करण
 क्यूजीआयएस आणि पायथन 3 वापरून भौगोलिक डेटा पाहणे, संपादित करणे आणि त्यांचे विश्लेषण करणे जाणून घ्या
-- [https://www.packtpub.com/application-development/learn-qgis-fourth-edition](https://www.packtpub.com/application-development/learn-qgis-fourth-edition)
+- [https://www.packtpub.com/en-de/product/learn-qgis-9781788998864](https://www.packtpub.com/en-de/product/learn-qgis-9781788998864)
 - लेखकः अँड्र्यू कट्स, अनिता ग्रॅसर
 - तारीख: नोव्हेंबर 2018
 
@@ -93,19 +99,19 @@ Get started with QGIS with this introduction covering everything needed to get y
 
 ### क्यूजीआयएस पायथन प्रोग्रामिंग कूकबुक - दुसरी आवृत्ती
 आवृत्ती QGIS 2.18 वर आधारित, हे पुस्तक आपल्याला पायथन कोड कसे लिहावे हे शिकवते जे QGIS मधील भौगोलिक प्रक्रिया स्वयंचलित करण्यासाठी स्थानिक डेटासह कार्य करते.
-- [https://www.packtpub.com/application-development/qgis-python-programming-cookbook-second-edition](https://www.packtpub.com/application-development/qgis-python-programming-cookbook-second-edition)
+- [https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102](https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102)
 - लेखक (र्स): जोएल लॉहेड
 - तारीख: मार्च 2017
 
 ### क्यूजीआयएस: जीआयएस पॉवर यूजर बनणे
 क्यूजीआयएस मधील मास्टर डेटा व्यवस्थापन, व्हिज्युअलायझेशन आणि स्थानिक विश्लेषण तंत्र आणि जीआयएस उर्जा वापरकर्ता बनतात
-- [https://www.packtpub.com/big-data-and-business-intelligence/qgisbecoming-gis-power-user](https://www.packtpub.com/big-data-and-business-intelligence/qgisbecoming-gis-power-user)
+- [https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725](https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725)
 - अनिता ग्रॅसर, बेन मेर्न्स, अ‍ॅलेक्स मंडेल, व्हिक्टर ओलाया फेरेरो, अलेक्झांडर ब्रू
 - तारीख: फेब्रुवारी 2017
 
 ### मास्टरिंग क्यूजीआयएस - दुसरी आवृत्ती
 मूलभूत गोष्टींच्या पलीकडे जा आणि प्रात्यक्षिक, चरण-दर-चरण उदाहरणांसह QGIS ची संपूर्ण शक्ती मुक्त करा
-- [https://www.packtpub.com/big-data-and-business-intelligence/mastering-qgis-second-edition](https://www.packtpub.com/big-data-and-business-intelligence/mastering-qgis-second-edition)
+- [https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623](https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623)
 - कर्ट मेनके, जीआयएसपी वगैरे.
 - तारीख: सप्टेंबर 2016
 
@@ -117,13 +123,13 @@ Get started with QGIS with this introduction covering everything needed to get y
 
 ### QGIS 2 कूकबुक
 एक QGIS उर्जा वापरकर्ता आणि मास्टर QGIS डेटा व्यवस्थापन, व्हिज्युअलायझेशन आणि स्थानिक विश्लेषण तंत्र व्हा
-- [https://www.packtpub.com/application-development/qgis-2-cookbook](https://www.packtpub.com/application-development/qgis-2-cookbook)
+- [https://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978](hhttps://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978)
 - लेखक (र्स): अलेक्स मंडेल, अनिता ग्रॅसर, व्हिक्टर ओलाया फेरेरो, अलेक्झांडर ब्रू
 - तारीख: एप्रिल 2016
 
 ### क्यूजीआयएस शिकणे - तिसरी आवृत्ती
 क्विजी वाचणे - तिसरा मजकूर
-- [https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition](https://www.packtpub.com/big-data-and-business-intelligence/learning-qgis-third-edition)
+- [https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151](https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151)
 - लेखक (रे): अनिता ग्रॅसर
 - तारीख: मार्च 2016
 
@@ -133,21 +139,15 @@ Get started with QGIS with this introduction covering everything needed to get y
 - लेखक (र्स): अनिता ग्रॅसर आणि ग्रॅचेन एन. पीटरसन
 - तारीख: मार्च 2016
 
-### मास्टरिंग क्यूजीआयएस
-आपल्याला नकाशे आणि अनुप्रयोग विकसित करण्यात मदत करण्यासाठी तयार केलेल्या या प्रगत मार्गदर्शकासह क्यूजीआयएस आणि मास्टर जिओस्पाटियल डेटामध्ये जा, जे आपल्याला नवीन मार्गांनी जग एक्सप्लोर करू देते.
-- [https://www.packtpub.com/application-development/mastering-qgis](https://www.packtpub.com/application-development/mastering-qgis)
-- लेखक (रे): कर्ट मेनके, जीआयएसपी - डॉ. रिचर्ड स्मिथ जूनियर, जीआयएसपी - डॉ. लुईगी पिरेली - डॉ. जॉन व्हॅन होसेन, जीआयएसपी
-- तारीख: मार्च 2015
-
 ### QGIS ब्लूप्रिंट्स
 QGIS सह विश्लेषणात्मक स्थान-आधारित वेब अनुप्रयोग विकसित करा
-- [https://www.packtpub.com/hardware-and-creative/qgis-blueprints](https://www.packtpub.com/hardware-and-creative/qgis-blueprints)
+- [https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090](https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090)
 - लेखक (र्स): बेन मेअरन
 - तारीख: सप्टेंबर 2015
 
 ### QGIS उदाहरणाद्वारे
 कार्टोग्राफी आणि जीआयएस विश्लेषणाचा एक शक्तिशाली वापरकर्ता होण्यासाठी वास्तविक-जगातील अनुप्रयोगांमध्ये क्यूजीआयएसच्या सामर्थ्याचा फायदा घ्या
-- [https://www.packtpub.com/application-development/qgis-example](https://www.packtpub.com/application-development/qgis-example)
+- [https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131](https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131)
 - लेखक (र्स): अलेक्झांडर ब्रूय, डारिया स्वीडझिंस्क
 - तारीख: जून 2015
 
@@ -184,10 +184,10 @@ A tutorial of QGIS software and application.
 - तारीख: डिसेंबर 2016
 
 ## फ्रेंच
-### Systèmes d’information géographique. Cours et exercices corrigés avec Grass et Qgis
-- [https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-cours-et-exercices-corriges-avec-grass-et](https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-cours-et-exercices-corriges-avec-grass-et)
+### Systèmes d'information géographique - 3e édition Avec logiciels libres GRASS et QGIS
+- [https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0](https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0)
 - ऑउटर: यवेस ऑडा
-- तारीख: मार्च 2018
+- Date: September 2025
 
 ### फ्रेंच मध्ये उदाहरणार्थ QGIS शिकणे
 या पुस्तकात जीआयएस मधील डेटा तयार करण्यापासून ते त्याच्या कार्टोग्राफिक प्रतिनिधीत्व आणि स्थानिक विश्लेषणामधील काही मूलभूत गोष्टींचे आवश्यक कार्यप्रवाह समाविष्ट आहेत.
@@ -237,6 +237,13 @@ The book is prepared like the series “for Dummies”.
 - तारीख: ऑक्टोबर 2016
 
 ## स्पॅनिश
+### Descubriendo QGIS 3.x
+Esta segunda edición es una actualización importante del título original Discover QGIS 3.x (English). Todos los ejercicios han sido actualizados para ser compatibles con QGIS 3.26. Los temas abarcan la interfaz de QGIS, conceptos básicos de SIG, análisis espacial, modelado, creación y edición de datos, diseño cartográfico y visualización de datos.Con mejoras en el procesamiento, flujos de trabajo más eficientes, compatibilidad con datos de nubes de puntos, desarrollo del Controlador Temporal y opciones de simbología mejoradas, ¡es un momento emocionante para aprender QGIS!
+- [https://locatepress.com/book/dq32-es](https://locatepress.com/book/dq32-es)
+- Author(s): Kurt Menke, Carlos Lopez, Sofia Logan
+- Organization: Locate Press
+- Date: June 2025
+
 ### QGIS Exercise Guide: beginner, intermediate, and advanced Levels
 Three practical exercise guides in QGIS (beginner, intermediate, and advanced) designed for the management and analysis of geospatial data from the Servicio Geológico Colombiano using free and open-source software solutions.
 - [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)

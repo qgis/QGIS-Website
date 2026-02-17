@@ -2,13 +2,13 @@
 draft: false
 sidebar: true
 subtitle: ''
-title: Ништяки
+title: Товары
 type: page
 
 ---
 {{<content-start >}}
 
-Ништяки
+Товары
 =
 If you are a fan of QGIS, you might want to visit our store so you can buy some mementos to show off your favourite desktop GIS. We have a number of great t-shirts, mugs, hoodies, caps and more, so do pay a visit to one of our stores below!
 

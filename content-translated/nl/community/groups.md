@@ -81,6 +81,16 @@ type: page
 {{<rich-list listLink="https://qgisghana.org/" icon="🇬🇭" layoutClass="half" listTitle="QGIS Ghana (Ghana)" listSubtitle="Contact: Enock Seth Nyamador" >}}
 ### Geregistreerd in 2022
 {{<rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS Argentina (Argentinië)" listSubtitle="Contact: Ariel Anthieni" >}}
+### Registered 2024
+{{<rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="QGIS Global virtual FB group" listSubtitle="Contact: Adelcides Varela" >}}
+
+{{<rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS North Macedonia" listSubtitle="Contact: Ivica Milevski" >}}
+
+{{<rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS Albania" listSubtitle="Contact: Emiliano Qose" >}}
+
+{{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Republic of Kosova" listSubtitle="Contact: Milot Lubishtani" >}}
+### Registered 2025
+{{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contact: Antidy Kawamala" >}}
 ## Doelen van een gebruikersgroep
 * Organiseren van gebruikersbijeenkomsten
 * Coördinatie van ontwikkeling, met de nadruk op regionale/nationale standaarden en vereisten 
@@ -89,7 +99,7 @@ type: page
 * Sponsoren: lokale gebruikersgroepen worden aangemoedigd een redelijk bedrag aan jaarlijkse kosten voor lidmaatschap te verzamelen (afhankelijk van het land). Deze verzamelde gelden kunnen worden gebruikt voor de ontwikkeling van bepaalde mogelijkheden, helpen met het oplossen van problemen of als een donatie aan het internationale project QGIS.
 * Vaststellen van interesse van groepen, bijv. landmeten, stedelijke planning, server/webcliënt, etc.
 * Initialisatie/coördinatie van modules voor de toepassing, bijv. landmeten, stedelijke planning, server/webcliënt, etc.
-* Selecteren van een vertegenwoordiger om op te treden als een [QGIS Country Voting Member]({{< ref "/community/organisation#voting-members" >}})
+* Electing a representative to act as a [QGIS Voting Member]({{< ref "/community/organisation#voting-members" >}})
 
 ## Algemene veronderstellingen/aanbevelingen
 * lokale gebruikersgroepen zouden verkoper/bedrijf-neutraal moeten blijven
@@ -101,12 +111,12 @@ type: page
 Afhankelijk van uw land zou een kleinere legale entiteit, bijv. een vereniging of non-profit organisatie, kunnen worden opgericht. Afhankelijk van lokale wetgeving impliceert een dergelijke entiteit dat u ten minste één maal per jaar vergadert (algemene vergadering), een jaarverslag publiceert en het financiële verslag beschikbaar maakt voor uw leden. Vaak impliceert het ook het opstellen van statuten.
 
 De statuten van de Zwitserse gebruikersgroep van QGIS als een voorbeeld:
-* German (master): [https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf](https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf)
-* French (translation): [https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf](https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf)
+* Duits (master): [https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf](https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf)
+* Frans (vertaling): [https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf](https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf)
 
 Formulieren aanvragen lidmaatschap:
-* German: [https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf](https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf)
-* French: [https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf](https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf)
+* Duits: [https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf](https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf)
+* Frans: [https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf](https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf)
 
 U kunt deze statuten en de formulieren voor het aanvragen van lidmaatschap gebruiken als een verwijzing en ze, waar nodig, wijzigen naar uw lokale situatie.
 ## Lokaal landdomein qgis.xx
@@ -115,7 +125,12 @@ Het wordt aanbevolen uw lokale landdomeinen te registreren, bijv. qgis.ch of qgi
 De website van uw lokale gebruikersgroep zou moeten worden gebruikt om materiaal te publiceren in relatie tot informatie en beheer van de gebruikersgroep. Voorbeelden omvatten de bijeenkomsten van gebruikers, bespreken van gevallen, gedeeld materiaal, discussiefora, etc. Publiek materiaal zou beschikbaar moeten zijn zonder vereisten voor inloggen (bijv. eis niet dat geïnteresseerde mensen lid zijn van een of ander netwerk voor sociale media zoals Facebook of Google+). Gebruik van sociale media wordt aanbevolen, maar zou niet het enige kanaal van informatie moeten zijn. RSS-feeds zouden beschikbaar moeten worden gemaakt op de website van de gebruikersgroep van QGIS.
 
 Veel succes met het organiseren van uw lokale gebruikersgroep. Informeer het internationale team van QGIS door te registreren op de gemeenschapslijst van QGIS en rapporteer over uw voortgang. Aarzel niet om vragen te stellen met betrekking tot het instellen en onderhouden van uw lokale gebruikersgroep.
-## Website-sjabloon
-Als u de website voor de groep niet vanaf nul wilt hosten en ontwerpen, kunt u de sjabloon gebruiken die wordt verschaft op [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
+## Starter pack
+### QGIS.org subdomain hosting
+If you prefer to use the official QGIS.org branding and host your user group website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
+### QGIS News Feed submission access
+Local user groups can request access to the [QGIS News Feed system](https://feed.qgis.org), which allows you to submit news entries (such as events, crowdfunding campaigns, meetups, or announcements) that will appear in the QGIS news section once approved by moderators. This is an excellent way to share your group's activities with the global QGIS community.
+### Template for local country domain qgis.xx
+For local country domain, if you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
 
 {{<content-end >}}

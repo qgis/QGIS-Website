@@ -9,19 +9,19 @@ type: page
 # Cod de Conduită
 La fel ca și întreaga comunitate tehnică, echipa și comunitatea QGIS sunt alcătuite dintr-o diversitate de profesioniști și voluntari din întreaga lume, care lucrează la fiecare aspect al misiunii - incluzând mentorat, predare, și punerea în contact a oamenilor.
 
-Diversity is one of our huge strengths, but it can also lead to communication issues and unhappiness. To that end, we have a few ground rules that we ask people to adhere to when they're participating within this community and project. These rules apply equally to founders, mentors and those seeking help and guidance.
+Diversitatea reprezintă unul dintre uriașele noastre puncte forte, dar ea poate duce, de asemenea, la probleme de comunicare și de nemulțumire. De aceea, cerem tuturor să adere la câteva reguli de bază, atunci când participă în cadrul acestei comunități și al proiectului. Aceste reguli se aplică în mod egal fondatorilor, mentorilor și celor care solicită asistență și îndrumare.
 
-This isn't an exhaustive list of things that you can't do. Rather, take it in the spirit in which it's intended - a guide to make it easier to enrich all of us and the technical communities in which we participate.
+Aceasta nu este o listă exhaustivă a lucrurilor pe care nu le puteți efectua. Mai degrabă, priviți-o în spiritul în care a fost creată - a unui ghid cu rolul de a ne face să câștigăm și noi dar și comunitățile tehnice în care participăm.
 
 Acest cod de conduită se aplică tuturor spațiilor administrate de proiectul QGIS. Acestea includ IRC, listele de discuții, urmărirea problemelor, evenimentele DSF, precum și orice alte forumuri create de echipa proiectului, și pe care comunitatea le folosește pentru comunicare.
 
-If you believe someone is violating the code of conduct, we ask that you report it by emailing [psc@qgis.org](mailto:psc%40qgis.org).
+Dacă aveți convingerea că cineva a încălcat codul de conduită, vă rugăm să transmiteți un e-mail la [psc@qgis.org](mailto:psc%40qgis.org).
 ## Fiți primitori, prietenoși și răbdători
 ## Fiți chibzuiți
 Munca dvs. va fi folosită de către alte persoane, iar dumneavoastră veți depinde de munca altora. Orice decizie ați lua, aceasta îi va afecta pe utilizatorii și colegii dvs., așa că ar trebui să luați în considerare și consecințele, în luarea deciziilor. Amintiți-vă că suntem o comunitate la nivel mondial, așa că s-ar putea să nu putem comunica în limba maternă a altcuiva.
 ## Fiți respectuoși
-Not all of us will agree all the time, but disagreement is no excuse for poor behavior and poor manners. We might all experience some frustration now and then, but we cannot allow that frustration to turn into a personal attack. It's important to remember that a community where people feel uncomfortable or threatened is not a productive one. Members of the QGIS community should be respectful when dealing with other members as well as with people outside the QGIS community.
-## Be careful in the words that you choose
+Nu întotdeauna suntem cu toții de aceeași părere, însă dezacordul nu este o scuză pentru un comportament labil și pentru maniere proaste. Fiecare am putea experimenta anumite frustrări, mai devreme sau mai târziu, dar nu ne putem permite ca frustrarea să se transforme într-un atac la persoană. Este important să ne amintim că o comunitate în care oamenii se simt inconfortabil sau amenințați nu este una productivă. Membrii comunității QGIS ar trebui să fie respectuoși atunci când interacționează cu alți membri, precum și cu persoane din afara comunității QGIS.
+## Fiți atenți la cuvintele pe care le alegeți
 Suntem o comunitate de profesioniști și, de aceea, ne comportăm ca niște profesioniști. Fiți buni cu alții. Nu-i insultați și nu-i denigrați pe ceilalți participanți. Hărțuirea și alte comportamente de excludere nu sunt acceptabile. Acestea includ, dar nu se limitează la:
 - Amenințările cu violența sau limbajul îndreptat împotriva unei alte persoane.
 - Limbajul discriminatoriu și glumele referitoare la sex sau rasă.
@@ -32,11 +32,11 @@ Suntem o comunitate de profesioniști și, de aceea, ne comportăm ca niște pro
 - Încurajarea sau pledoaria pentru oricare dintre comportamentele de mai sus.
 - Hărțuirea repetată a altora. În general, dacă cineva vă cere să vă opriți, atunci opriți-vă.
 
-## When we disagree, try to understand why
-Disagreements, both social and technical, happen all the time and QGIS is no exception. It is important that we resolve disagreements and differing views constructively. Remember that we're different. The strength of QGIS comes from its varied community, people from a wide range of backgrounds. Different people have different perspectives on issues. Being unable to understand why someone holds a viewpoint doesn't mean that they're wrong. Don't forget that it is human to err and blaming each other doesn't get us anywhere, rather offer to help resolving issues and to help learn from mistakes.
+## Când nu suntem de acord, încercăm să înțelegem de ce
+Dezacordurile, atât sociale cât și tehnice, apar tot timpul, iar QGIS nu face excepție. Este important să rezolvați neînțelegerile și punctele de vedere diferite în mod constructiv. Amintiți-vă că suntem diferiți. Puterea QGIS constă în comunitatea sa variată, oamenii provenind dintr-o gamă largă de medii. Diferitele persoane au perspective diferite asupra problemelor. Aflându-vă în imposibilitatea de a înțelege de ce cineva are un anumit punct de vedere, nu înseamnă că ei nu au dreptate. Nu uitați că a greși este omenește, iar blamarea unuia sau altuia nu duce la nici un rezultat, așa că, mai degrabă, oferiți-vă să ajutați la rezolvarea problemelor și învățați din greșeli.
 
 Textul aparține în original proiectului Speak Up! și Codului de conduită Django
 
-If you have questions, feel free to contact us: [psc@qgis.org](mailto:psc%40qgis.org)
+Dacă aveți întrebări, nu ezitați să ne contactați la: [psc@qgis.org](mailto:psc%40qgis.org)
 
 {{<content-end >}}

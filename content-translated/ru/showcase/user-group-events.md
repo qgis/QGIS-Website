@@ -2,8 +2,8 @@
 draft: 'true'
 heroImage: img/banners/banner3.png
 submenus: showcase
-subtitle: Updates from user groups around the world
-title: QGIS User Group Events
+subtitle: Вести от групп пользователей со всего мира
+title: События групп пользователей QGIS
 type: page
 
 ---

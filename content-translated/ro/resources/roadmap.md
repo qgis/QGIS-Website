@@ -22,9 +22,9 @@ Fiecare a treia versiune (începând cu 2.8) este o versiune cu suport pe termen
 ## Faza de dezvoltare
 În faza de dezvoltare, dezvoltatorii lucrează la adăugarea de noi caracteristici pentru următoarea lansare. Utilizatorii se pot folosi de compilările nocturne existente pentru toate platformele majore, în scopul observării progresului dezvoltării, efectuării de teste preliminare, transmiterii de rapoarte despre probleme și comunicându-și impresiile, ajutând astfel dezvoltarea.
 ## Înghețarea funcțiunilor
-In the feature freeze phase, new features are not allowed in anymore and the focus of everyone moves from enhancing QGIS to stabilizing it. This also turns the nightly builds effectively into [prereleases](#qgis-prereleases).
+În faza de înghețare, nu mai este permisă adăugarea de noi funcțiuni, centrul de greutate mutându-se spre sporirea stabilității QGIS. Acest lucru transformă efectiv compilările nocturne în [prelansări](#qgis-prereleases).
 
-**Users** should start extensive testing of these prereleases in their environment to verify that there are no issues, they wouldn’t want to see in the upcoming release. All such issues should be reported (see [Bugs, Features and Issues]({{< ref "resources/support/bug-reporting" >}})). Everything that goes unnoticed, will also end up in the next release. Only in case of serious problems backports to a latest release will occur. Therefore testing of the prereleases and reporting issues is very important.
+**Utilizatorii** ar trebui să înceapă testarea extensivă a acestor prelansări, în mediile proprii, pentru a verifica existența unor aspecte nedorite pentru viitoarea versiune. Toate acestea ar trebui să fie raportate (v. [Erori, Caracteristici și Probleme]({{< ref "resources/support/bug-reporting" >}})). Tot ceea ce trece neobservat, va fi înglobat, de asemenea, în următoarea versiune. Numai în cazul unor probleme grave se va efectua o retroportare. Prin urmare, testarea prelansărilor și raportarea problemelor este foarte importantă.
 
 Pe perioada înghețării, **dezvoltatorii** monitorizează erorile, lucrează la rezolvarea problemelor raportate și introduc în **registrul schimbărilor** funcțiile nou adăugate.                               .
 
@@ -34,7 +34,7 @@ Cu două săptămâni înainte de lansare, este inițiată o înghețare dură, 
 
 Responsabilul lansărilor anunță intrarea în faza de înghețare.
 ## Lansarea
-On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+La momentul lansării unei versiuni majore se creează ramura de lansare, apoi se etichetează versiunea, după care se pregătesc arhivele TAR. Pentru versiunile minore au loc doar etichetarea și crearea arhivelor TAR.
 
 Constructorii noilor versiuni sunt informați că poate începe împachetarea.
 
@@ -42,17 +42,17 @@ O dată ce pachetele sunt disponibile, lansarea poate fi anunțată și site-ul 
 ## Planificarea versiunilor
 Lansările au loc o dată la patru luni, aproximativ în aceleași date ale fiecărui an, o nouă versiune cu suport pe termen lung intrând în depozitul LTR la sfârșitul lunii februarie.
 
-Beginning after 2.12 the development phase is always 12 weeks and the freeze phase is at least 5 weeks. Remainders are used to extend the freeze phase of LTR releases.
+Începând cu versiunea 2.12, faza de dezvoltare este de 12 săptămâni, iar faza de înghețare este de cel puțin 5 săptămâni. Pentru a extinde faza de înghețare a versiunilor LTR se folosesc notificări.
 
-Point releases will happen every month on the latest release branch, if there are backports. Beginning with the 3.28 release, point releases are only done with new latest releases.
+Versiunile minore au loc în fiecare lună, pe cea mai recentă ramură de dezvoltare, dacă există backport-uri. Începând cu versiunea 3.28, lansările au loc numai pentru ultima versiune majoră.
 
-In the first four months after its release, a new LTR is also the current LR. In this phase, the new LTR doesn’t replace the previous LTR in the LTR repositories. This happens as soon as a new LR is released.
+În primele patru luni după lansare, noul LTR are, de asemenea, calitatea de LR curent. În această fază, noul LTR nu înlocuiește LTR-ul anterior în depozitele LTR. Acest lucru se întâmplă imediat ce se lansează un nou LR.
 
-This schedule is also available as [“iCalendar”](https://qgis.org/schedule.ics).
+Planificarea este disponibilă și sub formă de [“iCalendar”](https://qgis.org/schedule.ics).
 ### Programare
 {{<csv-table file="csv/schedule.csv" >}}
 ### Legenda evenimentelor
-| Abbreviation | Descriere |
+| Abreviere | Descriere |
 | --- | --- |
 | LTR | Versiune cu suport pe termen lung; începerea unei noi faze de dezvoltate |
 | LR | Versiune obișnuită; începerea unei noi faze de dezvoltare |

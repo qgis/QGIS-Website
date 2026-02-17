@@ -1,12 +1,12 @@
 ---
 draft: false
 subtitle: ''
-title: Diversity statement
+title: Uttalande om mångfald
 type: page
 
 ---
 {{<content-start classes="content narrow" >}}
-# Diversity statement
+# Uttalande om mångfald
 QGIS-projektet välkomnar och uppmuntrar alla att delta.
 
 Oavsett hur du identifierar dig själv eller hur andra uppfattar dig så välkomnar vi dig. Vi välkomnar bidrag från alla så länge som de samverkar konstruktivt med vår gemenskap.
@@ -15,6 +15,6 @@ Oavsett hur du identifierar dig själv eller hur andra uppfattar dig så välkom
 
 Användbara kontakter:
 
-QGIS PSC (Project Steering Commity: [psc@qgis.org](mailto:psc@qgis.org))
+QGIS PSC (projektstyrningsgrupp: [psc@qgis.org](mailto:psc@qgis.org))
 
 {{<content-end >}}

@@ -2,18 +2,18 @@
 draft: 'true'
 heroImage: img/banners/banner4.png
 sidebar: true
-subtitle: QGIS is a professional GIS application, built on top of Free and Open Source
-  Software (FOSS), and takes pride in being a part of the FOSS community.
+subtitle: QGIS è un'applicazione GIS professionale, basata su software libero e open
+  source (FOSS), e siamo orgogliosi di far parte della comunità FOSS.
 title: QGIS - Il Leader dei Software GIS Desktop Open Source
 type: page
 
 ---
-{{< content-start >}} {{< block title="Mapping." subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps for digital and print." image="" sub-block-side="left" class="is-primary1" >}}{{< /block >}}
+{{< content-start >}} {{< block title="Mappare." subtitle="Libera la tua creatività e prova le funzionalità di progettazione cartografica di prima classe per creare fantastiche mappe per il digitale e la stampa." image="" sub-block-side="left" class="is-primary1" >}}{{< /block >}}
 
-{{< block title="Editing." subtitle="Simple and sophisticated tools for efficiently capturing geospatial data." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
+{{< block title="Modifica." subtitle="Strumenti semplici e sofisticati per acquisire in modo efficiente dati geospaziali." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
 
-{{< block title="Process & Analyze." subtitle="Powerful tools for geospatial computational analysis at your fingertips." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
+{{< block title="Elaborazione e Analisi." subtitle="Potenti strumenti per l'analisi computazionale geospaziale a portata di mano." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
 
-{{< block title="Sharing." subtitle="Reach a global audience online with your amazing maps and spatial information products. Powered by QGIS." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
+{{< block title="Condividere." subtitle="Raggiungi un pubblico globale online con le tue fantastiche mappe e i tuoi prodotti di informazione spaziale. Realizzato con QGIS." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
 
-{{< block title="Behind the scenes." subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals." image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}
+{{< block title="Dietro le quinte." subtitle="Sfrutta il lavoro e l'esperienza di alcuni dei migliori esperti e sviluppatori geospaziali al mondo. Utilizza le loro creazioni per raggiungere gli obiettivi del tuo progetto." image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}

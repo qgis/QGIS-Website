@@ -59,8 +59,8 @@ Dit schema is ook beschikbaar als [“iCalendar”](https://qgis.org/schedule.ic
 | FF | Vriesfase voor mogelijkheden, einde van de ontwikkelingsfase |
 | PR | Puntuitgave van takken van laatste uitgave en van LTR |
 | EPR | Extra puntuitgave |
-| :rm-current:huidige | :rm-current:momenteel ondersteunde uitgaven: {{< param "ltrrelease" >}} en {{< param "release" >}} |
-| :rm-next:volgende | :rm-next:volgende uitgaven |
+| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## Locatie van pre-uitgaven / nachtelijke builds{#qgis-prereleases }
 | Platform | Locatie |

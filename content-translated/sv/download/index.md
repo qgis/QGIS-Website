@@ -1,4 +1,5 @@
 ---
+HasDownloadBanner: true
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
 draft: false
@@ -6,32 +7,48 @@ sidebar: true
 subtitle: ''
 title: Ladda ner
 type: page
-
+url: /download
 
 ---
 {{<content-start >}}
 
 {{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
-## Before download starts
-Our software is, and always will be, available free of charge if downloaded from QGIS.org.
+## Innan nedladdningen startar
+Vår programvara är, och kommer alltid att vara, tillgänglig kostnadsfritt om den laddas ner från QGIS.org.
 
-The project is a result of a huge effort and social contribution from many community members who volunteer their time and expertise. In addition, many businesses, government agencies and commercial entities have contributed to the development of QGIS. They do this either to ensure that QGIS meets their specific needs or to contribute to and accelerate the huge social impact that is realised by making a tool such as QGIS freely available. Our goal is the betterment of society through informed spatial decision making. If you are able, we gently request that you support our work.
+Projektet är ett resultat av en enorm insats och ett socialt bidrag från många medlemmar i samhället som frivilligt ställer upp med sin tid och expertis. Dessutom har många företag, myndigheter och kommersiella enheter bidragit till utvecklingen av QGIS. De gör detta antingen för att säkerställa att QGIS uppfyller deras specifika behov eller för att bidra till och påskynda den enorma sociala påverkan som realiseras genom att göra ett verktyg som QGIS fritt tillgängligt. Vårt mål är att förbättra samhället genom välinformerat spatialt beslutsfattande. Om du har möjlighet ber vi dig att stödja vårt arbete.
 
-Whether you choose to donate or not, we hope that you enjoy using our labour of love and encourage you to share and spread your downloaded copy far and wide so that others may enjoy it too.
+Oavsett om du väljer att donera eller inte hoppas vi att du tycker om att använda vårt kärleksarbete och uppmuntrar dig att dela och sprida din nedladdade kopia långt och brett så att andra också kan njuta av den.
 
-Our very best regards!
+Våra allra bästa hälsningar!
 
 <p class="is-size-7 has-text-weight-medium">
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the <a href="https://qgis.de/doku.php/verein/spenden">German QGIS user group</a>. They can issue a payment confirmation as a tax-exempt German association.
+Donationer till QGIS kan vara avdragsgilla i vissa länder. Vänligen kontakta ditt lokala skattekontor för mer information. Om du vill göra skatteavdrag som ett tyskt företag eller en tysk organisation, vänligen donera genom den <a href="https://qgis.de/doku.php/verein/spenden">tyska QGIS-användargruppen</a>. De kan utfärda en betalningsbekräftelse som en skattebefriad tysk förening.
 </p>
 
 {{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< payrexx-widget otherMethods="true" skipToDownload="true" >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
-{{<download-platforms-start >}}
+{{<download-platform-selector-start >}}
 
-{{< spoiler-start id="download-win" title="Download for Windows">}} {{< download-windows >}} {{< spoiler-end >}}
+{{<platform-content-start platform="windows" >}}
+## Windows
+{{< download-windows>}} {{< platform-content-end >}}
 
-{{< spoiler-start id="download-linux" title="🐧 Linux" >}} GNU/Linux is a Free operating system built on the same principles that QGIS is built on. We provide installers for many flavors of GNU/Linux binary packages (including rpm and deb packages). Please select your choice of distro below:
+{{<platform-content-start platform="macos" >}}
+## macOS
+{{<download-macos >}}
+
+Note: There are no QGIS 3.40 LTR builds available on macOS. QGIS 3.44 is stable and has been designated as the future Long Term Release (LTR); therefore 3.44 is the recommended version for macOS users.
+
+Alternatively, it is also possible to install QGIS via MacPorts, see the [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
+
+{{<platform-content-end >}}
+
+{{<platform-content-end >}}
+
+{{<platform-content-start platform="linux" >}}
+## Linux
+GNU/Linux is a Free operating system built on the same principles that QGIS is built on. We provide installers for many flavors of GNU/Linux binary packages (including rpm and deb packages). Please select your choice of distro below:
 - [Debian/Ubuntu]({{< ref "resources/installation-guide#debian--ubuntu" >}})
 - [Fedora]({{< ref "resources/installation-guide#fedora" >}})
 - [NixOS]({{< ref "resources/installation-guide#nixos" >}})
@@ -42,46 +59,34 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}}) {{< spoiler-end >}}
+[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}}) {{< platform-content-end >}}
 
-{{< spoiler-start id="download-mac" title="🍏 macOS" >}} {{< rich-box-start icon="⚠️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-2" >}}
-#### QGIS versions for macOS notice
-The QGIS installers for macOS are currently **outdated** and do not reflect the latest version of QGIS. If you need newer features or fixes, please consider installing QGIS via [MacPorts]({{< ref "resources/installation-guide/#macports" >}}). We are working on new, solid macOS builds for QGIS 4. If you wish to be an early beta tester, you can test a preview build at [this repository](https://github.com/opengisch/qgis-notarize). This package will become an official, OSGEO signed package as of QGIS 4.0.
+{{<platform-content-start platform="bsd" >}}
+## BSD
+[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}}) {{< platform-content-end >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< download-macos >}}
+{{<platform-content-start platform="container" >}}
+## Container Images
+[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}}) {{< platform-content-end >}}
 
-Alternatively, for native support of both Intel x86 and Apple ARM architectures, together with the latest versions of key components (e.g. GDAL, PDAL, GRASS GIS) see [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
+{{<platform-content-start platform="mobile" >}}
+## Mobile and tablet
+{{< mobile-downloads >}} {{< platform-content-end >}}
 
-{{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-##### Tips for first launch
-After installing QGIS, the first launch attempt may fail due to Apple's security framework.
+{{<platform-content-start platform="source" >}}
+## Source Code
+QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
-**For macOS Sonoma (14) and earlier:** To enable QGIS, command-click on its icon in your Applications folder and select ***Open*** in the context menu. A confirmation dialog will display where you need to click the ***Open*** button again. This only has to be done once.
+QGIS källkod finns tillgänglig <a href="/downloads/qgis-latest.tar.bz2">här (senaste versionen)</a> och <a href="/downloads/qgis-latest-ltr.tar.bz2">här (långsiktig version</a>)
 
-**For macOS Sequoia (15) and newer:** To enable QGIS, command-click its icon in your Applications folder and select ***Open*** from the context menu. A warning dialog will appear; click the ***Done*** button. Next, navigate to ***System Settings > Privacy & Security*** and scroll to the ***Security*** section. You should see a message stating that ***"QGIS" was blocked to protect your Mac***. Click ***Open Anyway***. A confirmation dialog will appear; click ***Open Anyway*** again. This only has to be done once.
+Se installationsguiden för hur du kompilerar QGIS från källkod för de olika plattformarna: [här](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+You can also obtain the source code by cloning or forking our <a href="https://github.com/qgis/QGIS">GitHub repository</a>. {{< platform-content-end >}}
 
-{{<spoiler-end >}}
+{{<platform-content-start platform="example" >}}
+## Example Datasets
+For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats. {{< platform-content-end >}}
 
-{{< spoiler-start id="download-bsd" title="👿 BSD" >}} [BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}}) {{< spoiler-end >}}
-
-{{< spoiler-start id="download-container-images" title="🐳 Container Images" >}} [Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}}) {{< spoiler-end >}}
-
-{{< spoiler-start id="download-mobile" title="📱Mobile and tablet" >}} {{< mobile-downloads >}} {{< spoiler-end >}}
-
-{{< spoiler-start title="📃 Source Code" >}} QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
-
-QGIS Source Code is available <a href="/downloads/qgis-latest.tar.bz2">here (latest release)</a> and <a href="/downloads/qgis-latest-ltr.tar.bz2">here (long term release)</a>
-
-Refer to the installation guide on how to compile QGIS from source for the different platforms: [here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
-
-You can also obtain the source code by cloning or forking our <a href="https://github.com/qgis/QGIS">GitHub repository</a>. {{< spoiler-end >}}
-
-{{< spoiler-start title="🗾 Example Datasets" >}} For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats. {{< spoiler-end >}}
-
-{{<download-platforms-end >}}
-
-{{<script src="js/spoiler.js" >}}
+{{<download-platform-selector-end >}}
 
 {{<content-end >}}

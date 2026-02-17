@@ -1,18 +1,18 @@
 ---
 author: ''
 categories:
-- Funding
+- Finanțare
 date: '2023-01-18'
-description: Funding avenues that support our work.
+description: Căi de finanțare care să sprijine activitatea noastră.
 draft: 'true'
 heroImage: ''
 tags:
-- funding
-- donations
-- sustaining-members
+- finanțare
+- donații
+- membri-susținători
 - magazin
 thumbnail: ''
-title: QGIS Funding
+title: Finanțarea QGIS
 type: funding
 
 ---

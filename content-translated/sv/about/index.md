@@ -2,18 +2,18 @@
 draft: 'true'
 heroImage: img/banners/banner4.png
 sidebar: true
-subtitle: QGIS is a professional GIS application, built on top of Free and Open Source
-  Software (FOSS), and takes pride in being a part of the FOSS community.
+subtitle: QGIS är en professionell GIS-applikation, byggd på Free and Open Source
+  Software (FOSS), och är stolt över att vara en del av FOSS-communityn.
 title: QGIS - Det ledande öppna GIS-verktyget
 type: page
 
 ---
-{{< content-start >}} {{< block title="Mapping." subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps for digital and print." image="" sub-block-side="left" class="is-primary1" >}}{{< /block >}}
+{{< content-start >}} {{< block title="Kartering." subtitle="Släpp loss din kreativitet och upplev förstklassiga kartografiska designfunktioner och designa fantastiska kartor för digitala och tryckta medier." image="" sub-block-side="left" class="is-primary1" >}}{{< /block >}}
 
-{{< block title="Editing." subtitle="Simple and sophisticated tools for efficiently capturing geospatial data." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
+{{< block title="Redigering." subtitle="Enkla och sofistikerade verktyg för effektiv insamling av geospatial data." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
 
-{{< block title="Process & Analyze." subtitle="Powerful tools for geospatial computational analysis at your fingertips." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
+{{< block title="Bearbeta och analysera." subtitle="Kraftfulla verktyg för geospatial beräkningsanalys inom räckhåll." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
 
-{{< block title="Sharing." subtitle="Reach a global audience online with your amazing maps and spatial information products. Powered by QGIS." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
+{{< block title="Delning." subtitle="Nå en global publik online med dina fantastiska kartor och produkter med spatial information. Drivs av QGIS." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
 
-{{< block title="Behind the scenes." subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals." image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}
+{{< block title="Bakom kulisserna." subtitle="Utnyttja arbetet och erfarenheten från några av världens främsta experter och utvecklare inom geospatial teknik. Använd deras skapelser för att uppnå dina projektmål." image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}

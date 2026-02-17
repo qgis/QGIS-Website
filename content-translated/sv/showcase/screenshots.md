@@ -2,9 +2,9 @@
 draft: 'true'
 heroImage: img/banners/banner3.png
 submenus: showcase
-subtitle: Amazing work from our community
-title: Gallery - Screenshots
+subtitle: Fantastiskt arbete från vårt samhälle
+title: Galleri - Skärmdumpar
 type: page
 
 ---
-{{<flickr-images showcase="screenshot" >}}
+{{<hub-images showcase="screenshot" >}}

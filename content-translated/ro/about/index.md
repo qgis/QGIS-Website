@@ -10,10 +10,10 @@ type: page
 ---
 {{< content-start >}} {{< block title="Cartografiere." subtitle="Dezlănțuiți-vă creativitatea și fructificați capacitățile de proiectare cartografică de primă clasă, realizând hărți excelente în format digital sau imprimabil." image="" sub-block-side="left" class="is-primary1" >}}{{< /block >}}
 
-{{< block title="Editing." subtitle="Simple and sophisticated tools for efficiently capturing geospatial data." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
+{{< block title="Editare." subtitle="Instrumente simple și instrumente sofisticate, dedicate capturării eficiente a datelor geospațiale." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
 
-{{< block title="Process & Analyze." subtitle="Powerful tools for geospatial computational analysis at your fingertips." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
+{{< block title="Procesare & Analiză." subtitle="Instrumente puternice, dedicate analizei computaționale geospatiale, la îndemâna oricui." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
 
-{{< block title="Sharing." subtitle="Reach a global audience online with your amazing maps and spatial information products. Powered by QGIS." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
+{{< block title="Partajare." subtitle="Atingeți o audiență globală on-line, cu hărți uimitoare și informații spațiale. Powered  by QGIS." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
 
-{{< block title="Behind the scenes." subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals." image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}
+{{< block title="În spatele scenei." subtitle="Beneficiați de munca și experiența unora dintre cei mai buni experți și dezvoltatori geospațiali din lume. Folosiți-le creațiile pentru a vă atinge obiectivele." image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}

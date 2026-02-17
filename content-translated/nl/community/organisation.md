@@ -49,16 +49,16 @@ Lees meer over de verantwoordelijkheden van de PSC  [hier]({{< ref "/community/f
 
 Adres van de organisatie
 
-QGIS.ORG Böschacherstrasse 10a CH-8624 Grüt (Gossau ZH)
+QGIS.ORG Via Geinas 2, CH-7031 Laax
 ## Stemgerechtigde leden
 ### Stemgerechtigde ere-leden
 * Harrissou Sant-anna \[vanaf mei 2020\]
 * Nyall Dawson \[vanaf mei 2020\]
 
-### Stemmende leden voor landen
-Overeenkomstig onze statuten zal, voor elke gebruikersgroep die is gevormd voor een land, die groep een QGIS Country User Group Voting Member kiezen om hun belangen te behartigen. Deze stemmende leden worden [hier]({{< ref "/community/groups.md" >}}) vermeld. E-mail [trademark@qgis.org](mailto:trademark@qgis.org) als u een nieuwe gebruikersgroep voor een land hebt geregistreerd, of de vertegenwoordiger van uw groep hebt gewijzigd.
+### Voting Members
+According to our statutes, for each user group that is formed, that group will select a QGIS User Group Voting Member to represent their interests. These voting members are listed [here]({{< ref "/community/groups.md" >}}) . Please email [trademark@qgis.org](mailto:trademark@qgis.org) if you have registered a new user group, or have changed your user group representative.
 ### Stemmende leden voor de gemeenschap
-Overeenkomstig onze statuten mag één lid uit de bredere gemeenschap worden gekozen voor elk stemmend lid voor een land. De volgende lijst bevat de huidige stemmende leden voor de gemeenschap:
+According to our statutes, one member from the broader community can be elected for each voting member. The following list includes the current community voting members:
 * Martin Dobias, Slowakije
 * Nathan Woodrow, Australië
 * Matthias Kuhn, Zwitserland
@@ -103,6 +103,12 @@ Toegevoegd in 2021
 
 Toegevoegd in 2022
 * Adelcides Varela, Cabo Verde
+* Germán Carrillo, Colombia
+
+Added 2024
+* Stefanos Natsis, Greece
+* Isabel Kiefer, Switzerland
+* Damiano Lombardi, Switzerland
 
 ### OSGEO Voting Member
 * Michael Smith [vanaf 2015/16]
@@ -114,7 +120,7 @@ Uitgaven van QGIS worden beheerd door het Release Team (Release Manager en Relea
 ### Team voor de pakketten
 QGIS wordt verpakt voor verschillende typen besturingssystemen. De verantwoordelijke mensen voor die pakketten zijn de volgende:
 * Windows Team: Jürgen E. Fischer
-* macOS Team: William Kyngesburye, Peter Petrik
+* MacOS Team: Matthias Kuhn, OPENGIS.ch
 * Linux Team:
   * OpenSuSE RPM Maintainer: Angelos Tzotsos
   * Fedora RPM Maintainer: Daniel Viganò
@@ -124,7 +130,7 @@ QGIS wordt verpakt voor verschillende typen besturingssystemen. De verantwoordel
 * Ubuntu Linux: Ricardo Soares Garcia, Giovanni Manghi, Luís de Sousa
 * Debian Linux: Paolo Cavallini, Pedro Venâncio, Ivan Mincik
 * Windows: Giovanni Manghi, Pedro Venâncio, Duarte Carreira, Andre Mano, Rui Pedro Henriques
-* macOS: Larry Shaffer, Tim Sutton, Denis Rouzaud, Peter Petrik
+* macOS: Denis Rouzaud, Matthias Kuhn, Isabel Kiefer
 
 ### Beveiligingsteam
 Schrijf naar [security@qgis.org](mailto:security@qgis.org) met vragen over beveiliging.

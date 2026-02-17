@@ -11,14 +11,14 @@ type: page
 ---
 {{<content-start >}}
 # Certification Programme
-## QGIS Certificate
-Are you looking for courses with the official QGIS certificate? At the [QGIS Certification Programme website](https://certification.qgis.org/), you can explore an interactive map to locate organisations in your country that offer certified QGIS training and find upcoming courses that provide an official QGIS certificate.
+## Certificat QGIS
+Vous recherchez des cours donnant accès au certificat officiel QGIS ? Sur le [site internet QGIS Certification Programme](https://certification.qgis.org/), vous pouvez explorer la carte interactive pour localiser les organisations qui offrent des formations certifiées QGIS dans votre pays, et trouver les cours à venir donnant accès à un certificat QGIS officiel.
 
 ![Students with certificate](../students_with_certificate.webp "Students with certificate")
-## Become a QGIS certified training organisation
+## Devenez un organisme de formation certifié par QGIS
 Does your organisation participate actively in the QGIS community and offer high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
 ### Processus de certification
-#### Requirements
+#### Prérequis
 The QGIS Certification Programme is designed to promote both community involvement in the QGIS project and quality education for QGIS software. The application process requires applicants to detail their contributions to the QGIS project and make their training materials available for review. Contributions to the QGIS project include activities such as:
 * Développement/commits dans QGIS
 * Contributions à la documentation et au matériel de formation QGIS
@@ -40,6 +40,6 @@ The PSC will make the final determination. If accepted as a QGIS Certified Organ
 
 If approved, you are required to pay a **€20 certification fee** to the QGIS project for each certificate you issue. This creates a mechanism for financial support of the project. Payments for certificates are made either using online credit card transactions or on request by regular invoice and SEPA wire transfer. Payments can be handled in batches for many certificates at once.
 
-You can apply through the [QGIS Certification Programme website](https://certification.qgis.org/).
+Vous pouvez candidater sur le [site internet QGIS Certification Programme](https://certification.qgis.org/).
 
 {{<content-end >}}

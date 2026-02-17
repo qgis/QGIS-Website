@@ -10,9 +10,9 @@ type: page
 ## Versiunea 1.0
 Acesta este ghidul Stilului Vizual al QGIS. Acest document definește standardele pentru utilizarea identității noastre vizuale. Documentul propune o modernizare a mărcii QGIS, pentru a o face mai puternică, mai vizibilă și mai potrivită unei game largi de cazuri de utilizare.
 
-The Visual Style Guide is a living document, initiated with the goal of developing a consistent message and image for QGIS. It is a "living" document because we expect it to expand as we cover more use cases where visual consistency is important and can be described using simpler rules. The standards and simple policies described here are designed to maintain the uniformity of presentation necessary for successful promotion and marketing efforts for the QGIS project.
+Ghidul Stilului Vizual este un document dinamic, menirea acestuia fiind de a dezvolta un mesaj și o imagine adecvate aplicației QGIS. Este un document “dinamic”, întrucât ne așteptăm ca acesta să acopere, în timp, majoritatea cazurilor de utilizare în care consistența vizuală este importantă și poate fi descrisă cu ajutorul unor reguli simple. Standardele și politicile descrise aici sunt destinate menținerii uniformității prezentării, lucru necesar promovării cu succes, și eforturilor de marketing din cadrul proiectului QGIS.
 
-Our visual identity symbolizes QGIS's strength, promise of quality and competence. Proper treatment of logo, fonts and color ensures that QGIS will be recognized and stand out amid communications clutter. Graphic standards are a visual expression of QGIS and should serve as the base for our overall communications strategy.
+Identitatea noastră vizuală simbolizează punctele forte ale aplicației QGIS, competența și promisiunea calității. Tratarea adecvată a logo-ului, a fonturilor și a culorilor asigură că simbolul QGIS va fi recunoscut și va ieși în evidență indiferent de gradul de dezordine al comunicării. Standardele grafice reprezintă o expresie vizuală a QGIS, ele trebuind să servească drept bază pentru întreaga noastră strategie de comunicare.
 
 Această primă versiune a Ghidului de Stil Grafic prezintă principalele elemente ale noului logo QGIS. Versiunile viitoare se vor concentra asupra activităților de promovare a mărcii QGIS pe web, dispozitive mobile și pe materialele tipărite.
 ## Logotip
@@ -76,7 +76,7 @@ Trueno is a free Font Library serif font. In order to embed it, please use
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
-in the site header {{< table >}} | Name | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
+în antetul siteului {{< table >}} | Nume | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
 ## Culoare
 ### Culori primare
 **Dark Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Dark green](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}

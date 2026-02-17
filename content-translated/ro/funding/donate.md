@@ -18,7 +18,7 @@ We rely on sponsorships and donations for much of our funding. If you would like
 Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt german association.
 
 {{< rich-box-start layoutClass="mt-6">}} {{< rich-content-start themeClass="coloring-2" >}}
-## Sustaining Membership
+## Membri Susținători
 Create a recurring sustaining membership.
 
 {{<button class="is-primary6" link="funding/membership" text="Subscribe" >}}
@@ -94,6 +94,6 @@ Ne-ar plăcea să ne extindem activitățile și să îmbunătățim calitatea Q
 
 {{< column-end >}} {{< columns-end >}}
 
-QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance]({{< ref "/community/foundation/finance" >}}) section.
+QGIS.ORG își dorește să fie transparent cu fondurile primite și cu modul de cheltuire. Vă rugăm să aruncați o privire la rapoartele financiare și la bugetele postate în secțiunea [Finanțe]({{< ref "/community/foundation/finance" >}}).
 
 {{<content-end >}}

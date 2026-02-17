@@ -27,7 +27,9 @@ Documentatie voor elke lange termijn uitgave (LTR) van QGIS kunt u vinden op de 
 
 {{<language-select >}}
 
-{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Gearchiveerde uitgaven" tab4="Gegevensbescherming" >}}
+{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Gearchiveerde uitgaven" tab5="Gegevensbescherming" >}}
+
+<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases" tab4="Data protection">}} -->
 
 {{< tab-content-start tab="1" >}} **Voor gebruikers (QGIS {{< param "ltrversion" >}}):**
 
@@ -61,7 +63,50 @@ Documentatie voor elke lange termijn uitgave (LTR) van QGIS kunt u vinden op de 
 
 {{<tab-content-end >}}
 
-{{<tab-content-start tab="2" >}}
+{{< tab-content-start tab="2" >}} **For users (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop gebruikershandleiding — <lang>" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="QGIS Trainingshandleiding — <lang>" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction" layoutClass="inline-block link-with-language" listTitle="Kleine introductie voor GIS — <lang>" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="Server gebruikershandleiding — <lang>" >}}
+
+**For documentation writers (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="Richtlijnen voor documentatie — <lang>" >}}
+
+**For developers (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS kookboek (voor plug-ins en scripten) — <lang>" >}}
+
+{{<rich-list listLink="https://qgis.org/pyqgis/|version|/" layoutClass="inline-block" listTitle="PyQGIS - documentatie voor QGIS Python Api " >}}
+
+{{<rich-list listLink="https://qgis.org/api/|version|/" layoutClass="inline-block" listTitle="C++ API-documentatie" listSubtitle="Project-Id-Version: messages 1.0
+Report-Msgid-Bugs-To: 
+POT-Creation-Date: 2026-02-17 06:33+0000
+PO-Revision-Date: 2025-04-28 23:55+0000
+Last-Translator: Transifex Bot <>, 2026
+Language-Team: Dutch (https://app.transifex.com/qgis/teams/6144/nl/)
+Language: nl
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: 8bit
+Plural-Forms: nplurals=2; plural=(n != 1);
+" >}}
+
+{{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md" layoutClass="inline-block" listTitle="QGIS bouwen vanuit de bron" >}}
+
+**For download (QGIS {{< param "version" >}}):**
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/pdf" layoutClass="inline-block" listTitle="PDF van de handleidingen" >}}
+
+{{<rich-list listLink="https://docs.qgis.org/|version|/zip" layoutClass="inline-block" listTitle="HTML-zip van de handleidingen" >}}
+
+{{<tab-content-end >}}
+
+{{<tab-content-start tab="3" >}}
 
 We zijn nog steeds de documentatie voor uitgaven nieuwer dan QGIS {{< param "ltrversion" >}} aan het bijwerken (nog niet aan het vertalen). We noemen deze versie 'QGIS testing' en de documentatie is hier te vinden:
 
@@ -97,7 +142,7 @@ We zijn nog steeds de documentatie voor uitgaven nieuwer dan QGIS {{< param "ltr
 
 {{<tab-content-end >}}
 
-{{<tab-content-start tab="3" >}}
+{{<tab-content-start tab="4" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 Documentatie — <lang>" >}}
 
@@ -115,7 +160,7 @@ We zijn nog steeds de documentatie voor uitgaven nieuwer dan QGIS {{< param "ltr
 
 {{<tab-content-end >}}
 
-{{<tab-content-start tab="4" >}}
+{{<tab-content-start tab="5" >}}
 
 In lijn met de GDPR en gerelateerde regelgeving met betrekking tot gegevensbescherming verschaffen we de volgende documentatie: 
 

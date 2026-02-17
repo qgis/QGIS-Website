@@ -15,6 +15,6 @@ Nu contează cum vă identificați sau cum vă percep alții: noi vă primim. Sa
 
 Contacte utile:
 
-QGIS PSC (Project Steering Commity: [psc@qgis.org](mailto:psc@qgis.org))
+QGIS PSC (Comitetul de Coordonare a Proiectului: [psc@qgis.org](mailto:psc@qgis.org))
 
 {{<content-end >}}

@@ -5,8 +5,8 @@ ButtonLink: download/
 ButtonText: İndir
 HasBanner: true
 HeroImage: img/hegobg1.webp
-LabelText: Free and Open Source
-SupportedOS: Available on Windows, Mac, Linux
+LabelText: Ücretsiz ve Açık Kaynak.
+SupportedOS: Windows, macOS, Linux için mevcut.
 draft: false
 heroLogo: img/logosign.svg
 heroSize: is-medium
@@ -15,7 +15,7 @@ title: Spatial without Compromise
 type: page
 
 ---
-{{<feature title="Create maps" text="Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print media." col-title-1="Class-leading cartography" col-text-1="Experience QGIS's extensive set of design options to bring your maps to life." col-title-2="Professional map production" col-text-2="Use the intuitive layout designer to produce high-quality, large-format print maps." col-title-3="Powerful reporting tools" col-text-3="Create atlases and reports including maps and tabular content." img="img/main-create.webp" order=1 >}}
+{{<feature title="Harita Oluştur." text=" QGIS’in gelişmiş kartografik tasarım yeteneklerini kullanarak masaüstü, mobil, bulut ve baskı için yüksek kaliteli haritalar oluşturabilirsiniz." col-title-1="Üstün Kartografik Özellikler." col-text-1=" QGIS’in gelişmiş tasarım yeteneklerini kullanarak haritalarınızı görselleştirin." col-title-2="Profesyonel Harita Oluşturun." col-text-2="Use the intuitive layout designer to produce high-quality, large-format print maps." col-title-3="Powerful reporting tools" col-text-3="Create atlases and reports including maps and tabular content." img="img/main-create.webp" order=1 >}}
 
 {{<feature title="Edit layers" text="Harness the unmatched capabilities of powerful digitizing and construction tools." col-title-1="Exceptional digitizing proficiency" col-text-1="Craft and edit points, lines, polygons, and meshes with precision." col-title-2="Advanced construction tools" col-text-2="Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations." col-title-3="Highly customizable forms" col-text-3="Create user-friendly forms using our form designer." img="img/main-edit.webp" order=2 >}}
 

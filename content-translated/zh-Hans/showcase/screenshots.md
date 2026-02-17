@@ -7,4 +7,4 @@ title: Gallery - Screenshots
 type: page
 
 ---
-{{<flickr-images showcase="screenshot" >}}
+{{<hub-images showcase="screenshot" >}}

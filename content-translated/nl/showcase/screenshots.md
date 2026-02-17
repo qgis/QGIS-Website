@@ -7,4 +7,4 @@ title: Galerij - Schermafdrukken
 type: page
 
 ---
-{{<flickr-images showcase="screenshot" >}}
+{{<hub-images showcase="screenshot" >}}
