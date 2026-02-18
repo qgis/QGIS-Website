@@ -116,27 +116,18 @@ sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like
 sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 ```
 
-Add the QGIS repo for the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) to `/etc/apt/sources.list.d/qgis.sources`:
+Add the QGIS repo for the latest stable QGIS ({{< param "version" >}}.x to `/etc/apt/sources.list.d/qgis.sources`:
 
 ```
+cat << EOF | sudo tee /etc/apt/sources.list.d/qgis.sources
 Types: deb deb-src
 URIs: https://qgis.org/debian
-Suites: your-distributions-codename
+Suites: $(. /etc/os-release; [ "$ID" = "debian" ] && grep -q "/sid" /etc/debian_version && echo "sid" || echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
 Architectures: amd64
 Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
+EOF
 ```
-
-{{< rich-box-start icon="💬" layoutClass="tips">}}
-{{< rich-content-start themeClass="coloring-1" >}}
-##### Note
-`Suites` in above lines depends on your distribution. `lsb_release -cs` will show your distribution name.
-
-In some distributions (like Linux Mint), `. /etc/os-release; echo "$UBUNTU_CODENAME"` will show the correct distibution name.
-
-See [Available codenames](#available-codenames).
-{{< rich-content-end >}}
-{{< rich-box-end >}}
 
 Update your repository information to also reflect the newly added QGIS one:
 
