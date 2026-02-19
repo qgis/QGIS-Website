@@ -12,7 +12,7 @@ ensure a smooth contribution process.
 
 This web site is a static site built using [Hugo](https://gohugo.io/).
 
-![Hugo Logo](./img/hugo-logo.png) and using the [hugo bulma blocks theme](https://github.com/kartoza/hugo-bulma-blocks-theme).
+![Hugo Logo](./img/hugo-logo.png) and using the [hugo bulma blocks theme](https://github.com/qgis/QGIS-Hugo-Website-Theme).
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -20,7 +20,7 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 ## 🛒 Getting the Code
 
 ```
-git clone https://github.com/qgis/QGIS-Website.git
+git clone --recurse-submodules https://github.com/qgis/QGIS-Website.git
 cd QGIS-Website
 ```
 
