@@ -22,6 +22,8 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 ```
 git clone --recurse-submodules https://github.com/qgis/QGIS-Website.git
 cd QGIS-Website
+# To update the submodule
+git submodule update --init --recursive
 ```
 
 
