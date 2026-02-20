@@ -17,15 +17,25 @@ Organizations marked with a <span class="tag is-success"><span class="icon"><i c
 {{< rich-box-start icon="🦸" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
-we take responsibility for the accuracy, reliability or completeness of the provided information for **Core contributors** only.
+We take responsibility for the accuracy, reliability or completeness of the provided information for **Core contributors** only.
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
 
-## Commercial Support Providers
+## Core contributors
+
+In lexical order:
 
 {{< commercial-support dataFile="core_contributors" >}}
+
+## Contributors
+
+In lexical order:
+
 {{< commercial-support dataFile="contributors" >}}
+
+## Others
+
 {{< commercial-support dataFile="others" >}}
 
 {{< content-end >}}
