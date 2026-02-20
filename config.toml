@@ -2,7 +2,7 @@
 baseURL = 'https://qgis.org/'
 languageCode = 'en-us'
 title = 'QGIS Web Site'
-theme = 'hugo-bulma-blocks-theme'
+theme = 'qgis-website-theme'
 # Default pagination.
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
 [pagination]
@@ -98,7 +98,7 @@ uniNavHeaderUrl = 'https://qgis.github.io/qgis-uni-navigation/index.js'
 uniNavHeaderLocationPrefix = ""
 
 ## Url to news feed. After URL change you have to check 
-## themes/hugo-bulma-blocks-theme/layouts/partials/contextmenu.html 
+## themes/qgis-website-theme/layouts/partials/contextmenu.html 
 ## file to ensure that it adresses the correct keys 
 newsfeed ='https://feed.qgis.org/?lang=en&json=1'
 
