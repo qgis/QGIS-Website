@@ -21,20 +21,11 @@ We take responsibility for the accuracy, reliability or completeness of the prov
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-
-## Core contributors
-
-In lexical order:
+## Commercial Support Providers
 
 {{< commercial-support dataFile="core_contributors" >}}
 
-## Contributors
-
-In lexical order:
-
 {{< commercial-support dataFile="contributors" >}}
-
-## Others
 
 {{< commercial-support dataFile="others" >}}
 
