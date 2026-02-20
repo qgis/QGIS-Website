@@ -133,7 +133,7 @@ Added 2017
     
 *   Alexandre Neto, Portugal
     
-*   Tom Chadwin, United Kingdeom
+*   Tom Chadwin, United Kingdom
     
 *   Marco Hugentobler, Switzerland
     
@@ -150,7 +150,7 @@ Added 2019
 
 Added 2020
 
-*   David signer, Switzerland
+*   David Signer, Switzerland
     
 *   Enrico Ferreguti, Italy
     
