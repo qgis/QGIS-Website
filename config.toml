@@ -2,7 +2,7 @@
 baseURL = 'https://qgis.org/'
 languageCode = 'en-us'
 title = 'QGIS Web Site'
-theme = 'hugo-bulma-blocks-theme'
+theme = 'qgis-website-theme'
 # Default pagination.
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
 [pagination]
@@ -87,9 +87,9 @@ githubSubdir = "content"
 githubBranch = "main"
 
 ## GH Repo for filing a new issue
-githubIssueUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/issues/new/choose"
+githubIssueUrl = "https://github.com/qgis/QGIS-Hugo-Website-Theme/issues/new/choose"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
-githubEditUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/edit/main"
+githubEditUrl = "https://github.com/qgis/QGIS-Hugo-Website-Theme/edit/main"
 ### Radius for boxes
 corner-radius = "0px"
 
@@ -98,7 +98,7 @@ uniNavHeaderUrl = 'https://qgis.github.io/qgis-uni-navigation/index.js'
 uniNavHeaderLocationPrefix = ""
 
 ## Url to news feed. After URL change you have to check 
-## themes/hugo-bulma-blocks-theme/layouts/partials/contextmenu.html 
+## themes/qgis-website-theme/layouts/partials/contextmenu.html 
 ## file to ensure that it adresses the correct keys 
 newsfeed ='https://feed.qgis.org/?lang=en&json=1'
 
