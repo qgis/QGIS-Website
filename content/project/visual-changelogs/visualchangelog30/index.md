@@ -47,13 +47,13 @@ More Help buttons for algorithms and dialogs are added and now pointing to the o
 
 Configuration allows to access context help stored online, in the organization network or on local computer. Also it is possible to combine different help sources.
 
-![image112](images/entries/thumbnails/7c17e43c0c6738c9588f3bef149ca7f3d8a13948.png.400x300_q85_crop.jpg)
+![image112](images/entries/7c17e43c0c6738c9588f3bef149ca7f3d8a13948.png.400x300_q85_crop.webp)
 
 This feature was developed by Alexander Bruy
 
 ### Feature: Migrate Photo, WebView and FileName widgets to Attachment
 
-![image113](images/entries/thumbnails/d2e949a9804de76d196af6e58996165d01350fec.jpeg.400x300_q85_crop.jpg)
+![image113](images/entries/d2e949a9804de76d196af6e58996165d01350fec.jpeg.400x300_q85_crop.webp)
 
 ### Feature: Removed otb and lidartools providers from processing
 
@@ -77,7 +77,7 @@ This feature was developed by Matthias Kuhn
 
 Supports search by action name and by shortcut
 
-![image67](images/entries/thumbnails/5f9439417546fff26fe410b5a860a7680b07c53e.png.400x300_q85_crop.jpg)
+![image67](images/entries/5f9439417546fff26fe410b5a860a7680b07c53e.png.400x300_q85_crop.webp)
 
 This feature was developed by Alexander Bruy
 
@@ -118,7 +118,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Color setting has been added for all map canvas north arrow decoration.
 
-![image69](images/entries/thumbnails/6a3fa6fb065a02defaa42440f301847e8fbbeb75.jpg.400x300_q85_crop.jpg)
+![image69](images/entries/6a3fa6fb065a02defaa42440f301847e8fbbeb75.jpg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -126,7 +126,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 The map canvas\' save as image function has been expanded and now offers users the possibility to tweak the scale, resolution, and extent on-the-fly. Extents can be restricted to a height-width ratio. A save as PDF function was also added to quickly export the map canvas into a resolution-independent PDF.
 
-![image70](images/entries/thumbnails/a2adf1e9930f23fa739e68a6e2c55e1b553867b9.png.400x300_q85_crop.png)
+![image70](images/entries/a2adf1e9930f23fa739e68a6e2c55e1b553867b9.png.400x300_q85_crop.webp)
 
 This feature was funded by Andreas Neumann (partial funding)
 
@@ -163,7 +163,7 @@ This feature was developed by [Nyall Dawson](https://north-road.com)
 
 If you try to open many sublayers, you can now open them all within a same group in the legend.
 
-![image72](images/entries/thumbnails/a64155774fee81370dfb5a786cf7386bffb7a089.png.400x300_q85_crop.png)
+![image72](images/entries/a64155774fee81370dfb5a786cf7386bffb7a089.png.400x300_q85_crop.webp)
 
 This feature was funded by [Kartoza](http://www.kartoza.com)
 
@@ -181,7 +181,7 @@ Use menu View \> New 3D Map View to add a 3D view of the project. This will crea
 -   by pressing Shift and dragging the mouse with left mouse button pressed
 -   by pressing Shift and using up/down/left/right keys
 
-![image121](images/entries/thumbnails/86e6303419d84812266eada5327e74dbc6d507a4.jpg.400x300_q85_crop.jpg)
+![image121](images/entries/86e6303419d84812266eada5327e74dbc6d507a4.jpg.400x300_q85_crop.webp)
 
 This feature was funded by [QGIS.ORG](https://qgis.org/)
 
@@ -196,7 +196,7 @@ In the default configuration, map layers are rendered into 2D map images on top 
 
 To configure 3D renderers, use layer styling dock widget or the vector layer properties dialog - there is a new tab for configuration of 3D renderers.
 
-![image122](images/entries/thumbnails/311f1b52d068ccca9ef74f9ea1dcba259c7ed674.png.400x300_q85_crop.jpg)
+![image122](images/entries/311f1b52d068ccca9ef74f9ea1dcba259c7ed674.png.400x300_q85_crop.webp)
 
 This feature was funded by [QGIS.ORG](https://qgis.org/)
 
@@ -212,7 +212,7 @@ Adds `@project_crs` and `@project_crs_definition` variables for retrieving the c
 
 Returns current locale used by QGIS. By default this is current system locale. If user enabled locale override in QGIS settings overriden locale will be returned.
 
-![image63](images/entries/thumbnails/23e0bd2bc2cd560dad2d2a873e7d9ab98c532fb0.png.400x300_q85_crop.jpg)
+![image63](images/entries/23e0bd2bc2cd560dad2d2a873e7d9ab98c532fb0.png.400x300_q85_crop.webp)
 
 This feature was developed by Alexander Bruy
 
@@ -360,7 +360,7 @@ Or a default attribute value when digitizing features:
 
 `aggregate(layer:='countries', aggregate:='max', expression:=\"code\", filter:=intersects( $geometry, geometry(@parent) ) )`
 
-![image64](images/entries/thumbnails/7666e6f1fd7a95ec3e099c27c6bf9ef6b145c956.jpeg.400x300_q85_crop.jpg)
+![image64](images/entries/7666e6f1fd7a95ec3e099c27c6bf9ef6b145c956.jpeg.400x300_q85_crop.webp)
 
 This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://opengis.ch)
 
@@ -388,7 +388,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Processing algorithms have been reviewed and documented. Clicking the Help button will open the QGIS website and show the algorithm description with enhanced documentation and pictures.
 
-![image65](images/entries/thumbnails/ca710bbcb3e67a83217d5894ccccfcb5103b1bf4.png.400x300_q85_crop.jpg)
+![image65](images/entries/ca710bbcb3e67a83217d5894ccccfcb5103b1bf4.png.400x300_q85_crop.webp)
 
 This feature was funded by QGIS Grant Proposal
 
@@ -418,7 +418,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 In QGIS 3.0, handling of color ramps has gotten much better via a newly introduced color ramp button widget. Improvements include: - custom color ramp settings are remembered when projects are re-opened - color ramp inversion is implemented within the widget, enabling this action across QGIS - quick access to \"favorite\" color ramps within the widget pop-up menu - interfacing with catalogs (cpt-city and ColorBrewer) is now much more pleasant
 
-![image73](images/entries/thumbnails/547ffa26f79435ff28198820bb0d95dc495b4f13.png.400x300_q85_crop.png)
+![image73](images/entries/547ffa26f79435ff28198820bb0d95dc495b4f13.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -433,7 +433,7 @@ Style management has received a major upgrade. The improvements include:
 -   To streamline style management, groups have been removed and fully replaced by tags
 -   Tags have been integrated into the import/export user interface
 
-![image74](images/entries/thumbnails/bb43cc8a048018b0f54463674ebf2d11bb0abc21.png.400x300_q85_crop.png)
+![image74](images/entries/bb43cc8a048018b0f54463674ebf2d11bb0abc21.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -441,7 +441,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 It is now possible to change the color and transparency for multiple values at the same time for the singleband pseudocolor and the paletted renderers. Simply select values within the values\' list and right click to have a pop-up menu appear.
 
-![image75](images/entries/thumbnails/dc60a3f5fdc3a6568e8f3b9bf635066fcde9926d.png.400x300_q85_crop.png)
+![image75](images/entries/dc60a3f5fdc3a6568e8f3b9bf635066fcde9926d.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -449,7 +449,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 Allows quick tweaks to the color alpha
 
-![image76](images/entries/thumbnails/669437f416c6ef5c18dd87ecdfc52772e0b597c7.png.400x300_q85_crop.jpg)
+![image76](images/entries/669437f416c6ef5c18dd87ecdfc52772e0b597c7.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com/)
 
@@ -463,7 +463,7 @@ This feature was developed by Mathieu Pellerin
 
 In QGIS 3.0, it is now possible to change the transparency value for unique values for the paletted renderer.
 
-![image77](images/entries/thumbnails/603b73fbf8ad7db9cdb43689641eb70326c11bbf.png.400x300_q85_crop.png)
+![image77](images/entries/603b73fbf8ad7db9cdb43689641eb70326c11bbf.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -505,7 +505,7 @@ For developers: QgsPointDisplacementRenderer has been split into a new pure virt
 
 See the crowd [funding programme](https://north-road.com/qgis-cluster-renderer-crowdfunding/) for more details.
 
-![image78](images/entries/thumbnails/a9a26b2c7154f918f8b218c2e01f3b38f599436a.png.400x300_q85_crop.png)
+![image78](images/entries/a9a26b2c7154f918f8b218c2e01f3b38f599436a.png.400x300_q85_crop.webp)
 
 This feature was funded by Andreas Neumann, Qtibia Engineering (Tudor Barascu), Karl-Magnus Jönsson, Geonesia (Nicolas Ponzo) & numerous additional anonymous backers whose generous contributions are also highly valued!
 
@@ -515,7 +515,7 @@ This feature was developed by [Nyall Dawson](https://north-road.com/qgis-cluster
 
 see <http://nyalldawson.net/2017/02/new-map-coloring-algorithms-in-qgis-3-0/>
 
-![image79](images/entries/thumbnails/1a507363f0c35065d8c2751e167531b96600d700.png.400x300_q85_crop.png)
+![image79](images/entries/1a507363f0c35065d8c2751e167531b96600d700.png.400x300_q85_crop.webp)
 
 This feature was developed by Nyall Dawson
 
@@ -523,7 +523,7 @@ This feature was developed by Nyall Dawson
 
 Allows use of a color ramp consisting of a list of selected colors. Currently there\'s no way in QGIS to classify a renderer using some list of colors you\'ve previously selected. So you can modify the colors manually after classifying, but that\'s a pain if you\'re regularly using the same color scheme. Basically, it\'s like the color brewer color ramp options but allowing users to pick their own preset list of colors to use (Because Cynthia Brewer isn\'t the only cartographic color expert!)
 
-![image80](images/entries/thumbnails/ea1e2fe7215ea888b9de00329e230f6b665610a6.png.400x300_q85_crop.jpg)
+![image80](images/entries/ea1e2fe7215ea888b9de00329e230f6b665610a6.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com/)
 
@@ -533,7 +533,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Adds a new checkbox at the bottom of each symbol layer\'s properties which allows you to control whether the layer is enabled or not. Disabled layers are not drawn, but are saved and can be enabled at a later stage. This makes it easier to tweak symbol appearance without having to totally delete a symbol layer.
 
-![image81](images/entries/thumbnails/555204a38e13852e4717179a9981cb522244613a.png.400x300_q85_crop.png)
+![image81](images/entries/555204a38e13852e4717179a9981cb522244613a.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com/)
 
@@ -547,7 +547,7 @@ The unique value calculation is performed in a background thread to keep the UI 
 
 Color palettes can be loaded from a text file, with ESRI clr/GDAL/GRASS color table formats supported. Color palettes can be saved to a clr text file for sharing.
 
-![image82](images/entries/thumbnails/536a7bce4d526e2d5fbeeb3189de6f60b2d79256.png.400x300_q85_crop.png)
+![image82](images/entries/536a7bce4d526e2d5fbeeb3189de6f60b2d79256.png.400x300_q85_crop.webp)
 
 This feature was funded by Stéphane Henriod, Satelligence (<http://satelligence.com/>), Bird\'s Eye View (<https://www.birdseyeviewgis.com/>), other anonymous backers
 
@@ -567,7 +567,7 @@ Thanks to the awesome **auxiliary data storage** and the editable joined table, 
 
 And for power users, the old way of having data defined fields in your datasource is still there. Just define them in the layer\'s properties as before!
 
-![image83](images/entries/thumbnails/546a77b230bf9b0b28bf61bb231b78cbb6bd5b5f.png.400x300_q85_crop.png)
+![image83](images/entries/546a77b230bf9b0b28bf61bb231b78cbb6bd5b5f.png.400x300_q85_crop.webp)
 
 This feature was funded by [French ministry of Ecology and Sustainable Developpement](https://www.ecologique-solidaire.gouv.fr/)
 
@@ -623,7 +623,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Grid renderer for points displacement
 
-![image85](images/entries/thumbnails/0247dfa555b6a80139f399b69071a2cc9bd278b3.png.400x300_q85_crop.jpg)
+![image85](images/entries/0247dfa555b6a80139f399b69071a2cc9bd278b3.png.400x300_q85_crop.webp)
 
 This feature was developed by [Muhammad Yarjuna Rohmat (Kartoza)](http://www.kartoza.com)
 
@@ -649,7 +649,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutr
 
 Create Geopackages/Shapefiles: Now with the option to have Z-values
 
-![image87](images/entries/thumbnails/80e8c78a1b38dfde5120144fac7354e800b9daff.png.400x300_q85_crop.png)
+![image87](images/entries/80e8c78a1b38dfde5120144fac7354e800b9daff.png.400x300_q85_crop.webp)
 
 This feature was developed by Alexander Lisovenko / Paul Blottiere
 
@@ -663,7 +663,7 @@ This feature was developed by Denis Rouzaud
 
 This allow to duplicate feature and move them in one move from a selected feature
 
-![image88](images/entries/thumbnails/eea327329365ad80c7fc3363ad0fb455fc9d4335.png.400x300_q85_crop.jpg)
+![image88](images/entries/eea327329365ad80c7fc3363ad0fb455fc9d4335.png.400x300_q85_crop.webp)
 
 This feature was developed by Denis Rouzaud
 
@@ -738,7 +738,7 @@ This feature was developed by Marco Hugentobler
 
 ### Feature: Map of CRS-extent in Project properties
 
-![image95](images/entries/thumbnails/d56d5d68aff5b7f10999751041490769b79e619d.png.400x300_q85_crop.jpg)
+![image95](images/entries/d56d5d68aff5b7f10999751041490769b79e619d.png.400x300_q85_crop.webp)
 
 ### Feature: Auxiliary Storage Support
 
@@ -750,7 +750,7 @@ Auxiliary data is stored in a sqlite database and managed thanks to the OGR data
 
 See the original [pull request](https://github.com/qgis/QGIS/pull/5086) and this article [which explains more](http://oslandia.com/en/2017/10/17/auxiliary-storage-support-in-qgis-3/)
 
-![image96](images/entries/thumbnails/f0fded6f5276d4b7e51b11834bad3d615e2b4f2d.png.400x300_q85_crop.png)
+![image96](images/entries/f0fded6f5276d4b7e51b11834bad3d615e2b4f2d.png.400x300_q85_crop.webp)
 
 This feature was developed by [Paul Blottiere / Oslandia](http://oslandia.com/)
 
@@ -766,7 +766,7 @@ The specification for the QGIS metadata schema is [here](https://github.com/qgis
 
 The primary funder for this work was [The WorldBank/GFDRR](https://www.gfdrr.org) with supporting funding provided by [NINA](https://www.nina.no/english).
 
-![image97](images/entries/thumbnails/a26adc99ea62733e65222769095537e3be3fb29a.png.400x300_q85_crop.png)
+![image97](images/entries/a26adc99ea62733e65222769095537e3be3fb29a.png.400x300_q85_crop.webp)
 
 This feature was funded by [WorldBank/GFDRR](http://gfdrr.org)
 
@@ -818,7 +818,7 @@ This feature was developed by Patrick Valsecchi
 
 Non-enforced constraints just show a warning to the user, but do not prevent committing the feature. Enforced constraints block users from committing non compliant features. So we have soft warnings now! Any constraints detected by the provider are always enforced.
 
-![image99](images/entries/thumbnails/da468dc209eb7e7da3696ee26850af6b9017312c.png.400x300_q85_crop.jpg)
+![image99](images/entries/da468dc209eb7e7da3696ee26850af6b9017312c.png.400x300_q85_crop.webp)
 
 This feature was funded by OpenGIS.ch
 
@@ -850,7 +850,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ### Feature: Add between/not between to numerical fields in select by form
 
-![image100](images/entries/thumbnails/4bfb34794edbff35e6336c165993278e9a515644.jpeg.400x300_q85_crop.jpg)
+![image100](images/entries/4bfb34794edbff35e6336c165993278e9a515644.jpeg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -860,7 +860,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 Allows you to quickly hide all deselected layers. This is very handy when you have a large project and want to quickly hide all except for a couple of layers
 
-![image101](images/entries/thumbnails/a8419d6027de9351afa6f8a99700509b24cc7418.png.400x300_q85_crop.png)
+![image101](images/entries/a8419d6027de9351afa6f8a99700509b24cc7418.png.400x300_q85_crop.webp)
 
 This feature was funded by [SMEC (Surbana Jurong)](http://www.smec.com/en_au)
 
@@ -885,7 +885,7 @@ This feature was developed by Even Rouault
 
 It is now possible to independently control horizontal and vertical line rendering of composer table items. This added flexibility expends the styling possibilities of this item directly within QGIS.
 
-![image102](images/entries/thumbnails/ac1b2079c9e6c19747322d246d666df7e3c4ac0d.jpg.400x300_q85_crop.jpg)
+![image102](images/entries/ac1b2079c9e6c19747322d246d666df7e3c4ac0d.jpg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -935,7 +935,7 @@ Highlights are:
 
 More info at <https://north-road.com/qgis-layout-and-reporting-engine-campaign/>
 
-![image103](images/entries/thumbnails/fa298be4fea348f58b9bd2f4bea30f2e7f1c2ee5.png.400x300_q85_crop.png)
+![image103](images/entries/fa298be4fea348f58b9bd2f4bea30f2e7f1c2ee5.png.400x300_q85_crop.webp)
 
 This feature was funded by The Swiss QGIS User Group and many more!
 
@@ -1003,7 +1003,7 @@ The following algorithms were added to Processing from the Raster Analysis plugi
 
 Now these algorithms can be used in scripts, models and for batch processing.
 
-![image104](images/entries/thumbnails/f5980f4840b9c822e5a228ec03da59168cd9c5e9.png.400x300_q85_crop.jpg)
+![image104](images/entries/f5980f4840b9c822e5a228ec03da59168cd9c5e9.png.400x300_q85_crop.webp)
 
 This feature was developed by Alexander Bruy
 
@@ -1161,7 +1161,7 @@ This feature was developed by Alexander Bruy
 
 In addition to exporting processing models as bitmap images, it is now possible to export processing models as resolution-independent PDFs and SVGs. This allows for high-resolution export of models which can be embedded into papers and books being published.
 
-![image105](images/entries/thumbnails/0ad81df99f01b91d2421263ad35fdc4430c483e0.jpg.400x300_q85_crop.jpg)
+![image105](images/entries/0ad81df99f01b91d2421263ad35fdc4430c483e0.jpg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -1213,7 +1213,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 The processing modeler window has received a lot of attention for this release. Improvements include: - zoom controls in the window\'s toolbar - customization of inputs and algorithms panels\' location - panels can now float above the processing window
 
-![image106](images/entries/thumbnails/d7d74d9113516f51289380755f1862324c83feb5.png.400x300_q85_crop.png)
+![image106](images/entries/d7d74d9113516f51289380755f1862324c83feb5.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -1221,7 +1221,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 A new algorithm was added to processing which returns the count and area of each unique value within a given raster layer.
 
-![image107](images/entries/thumbnails/096af77b050265c85d7ee203c2ab4d974b8be126.jpg.400x300_q85_crop.jpg)
+![image107](images/entries/096af77b050265c85d7ee203c2ab4d974b8be126.jpg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -1229,7 +1229,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 We have removed the TauDEM provider from processing.
 
-![image108](images/entries/thumbnails/c48a25965a147b866502d10771bea3e831a4d28e.jpeg.400x300_q85_crop.jpg)
+![image108](images/entries/c48a25965a147b866502d10771bea3e831a4d28e.jpeg.400x300_q85_crop.webp)
 
 ### Feature: Download a file from Processing
 
@@ -1241,7 +1241,7 @@ This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
 Supports also polygon geometries, handles null geometries, and records the original line angle along with the distance for each point.
 
-![image109](images/entries/thumbnails/9b24dc337e4896a8be9b0e651e32b3dc9cb11593.png.400x300_q85_crop.jpg)
+![image109](images/entries/9b24dc337e4896a8be9b0e651e32b3dc9cb11593.png.400x300_q85_crop.webp)
 
 This feature was funded by Andreas Neumann
 
@@ -1259,7 +1259,7 @@ This feature was developed by [Etienne Trimaille (Kartoza)](http://www.kartoza.c
 
 A long time ago on the developper\'s mailing list, we discussed of a container storing the xml file and other ressources. This is now possible, though it remains optional. The auxiliary storage feature takes advantage of that by storing the associated .qgd sqlite database. We hope that in next versions land support for embedding other resources like SVG, color ramps, datasources, images, etc\...
 
-![image110](images/entries/thumbnails/b954811defffce51a7375ae24c640e0d1dcf88da.png.400x300_q85_crop.png)
+![image110](images/entries/b954811defffce51a7375ae24c640e0d1dcf88da.png.400x300_q85_crop.webp)
 
 This feature was funded by [French ministry of Ecology and Sustainable Developpement](https://www.ecologique-solidaire.gouv.fr/)
 
@@ -1273,7 +1273,7 @@ This allows for different runtime setups depending on what the user needs, e.g t
 
 Profile menu allows for switching between profiles or creating new ones.
 
-![image111](images/entries/thumbnails/82d90b2a02b84584279b5e2b75774631a0cd4a44.jpeg.400x300_q85_crop.jpg)
+![image111](images/entries/82d90b2a02b84584279b5e2b75774631a0cd4a44.jpeg.400x300_q85_crop.webp)
 
 This feature was developed by [Nathan Woodrow](https://github.com/NathanW2)
 
@@ -1295,7 +1295,7 @@ We have removed the standalone QGIS Browser application that shipped with QGIS 2
 
 You can now use a single dialog to add a huge variety of data formats to QGIS.
 
-![image114](images/entries/thumbnails/d81a5fba0df198b53ef60293ade556125499e5e8.png.400x300_q85_crop.png)
+![image114](images/entries/d81a5fba0df198b53ef60293ade556125499e5e8.png.400x300_q85_crop.webp)
 
 This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
 
@@ -1316,7 +1316,7 @@ This feature was developed by Nyall Dawson
 
 Support for Z dimension and M values was added to QGIS\' gpkg, spatialite and memory layer provider. the option to add Z and M dimensions has also been added to the \"create new layer\" dialogs
 
-![image115](images/entries/thumbnails/63c518b689c749b106944c9d48826abba90887f0.jpg.400x300_q85_crop.jpg)
+![image115](images/entries/63c518b689c749b106944c9d48826abba90887f0.jpg.400x300_q85_crop.webp)
 
 This feature was funded by [QWAT group, http://www.imhere-asia.com/](http://www.qwat.org)
 
@@ -1443,7 +1443,7 @@ This feature was funded by QGIS.ORG Donors
 
 Many web clients can\'t display circular arcs in geometries. To allow such clients to still display a feature\'s geometry (e.g. for highlighting the feature), a new per project QGIS server option was introduced (Menu \"Project\" -\> \"Project Properties\" -\> \"QGIS Server\") to segmentize the geometry before sending it to the client in a GetFeatureInfo response.
 
-![image117](images/entries/thumbnails/c6e36e36b5dc6fb0f5534ef11cb773781db4bf8c.png.400x300_q85_crop.png)
+![image117](images/entries/c6e36e36b5dc6fb0f5534ef11cb773781db4bf8c.png.400x300_q85_crop.webp)
 
 This feature was funded by [Kanton of Zug](https://geo.zg.ch/)
 
@@ -1469,7 +1469,7 @@ GDALTools plugin has been removed.
 
 All functions previously available through the GDALTools plugin were moved to the QGIS Processing framework, allowing to use these tools in scripts, models and execute them in batch processes. Additionaly we updated the algorithms with new parameters, introduced in latest GDAL versions and improved overall UI/UX by exposing some advanced parameters like creation options, NODATA value settings etc.
 
-![image118](images/entries/thumbnails/ee1c51737225b6dac80a044f272319534fee2832.png.400x300_q85_crop.png)
+![image118](images/entries/ee1c51737225b6dac80a044f272319534fee2832.png.400x300_q85_crop.webp)
 
 This feature was developed by Alexander Bruy
 
@@ -1477,7 +1477,7 @@ This feature was developed by Alexander Bruy
 
 It is now more easy to install plugins manually without having to unzip them in the user profile directory by hand.
 
-![image119](images/entries/thumbnails/b0311613cf73564f4dc104772abfab551c391dad.jpg.400x300_q85_crop.jpg)
+![image119](images/entries/b0311613cf73564f4dc104772abfab551c391dad.jpg.400x300_q85_crop.webp)
 
 This feature was developed by Alexander Bruy
 
@@ -1485,7 +1485,7 @@ This feature was developed by Alexander Bruy
 
 Plugins which are providing expressions can add a custom help made with HTML strings.
 
-![image120](images/entries/thumbnails/ef610ef1efd507e9bf0ee905d8f8d24a40c753e5.png.400x300_q85_crop.png)
+![image120](images/entries/ef610ef1efd507e9bf0ee905d8f8d24a40c753e5.png.400x300_q85_crop.webp)
 
 This feature was funded by [DFAT/DMI](http://dfat.gov.au)
 

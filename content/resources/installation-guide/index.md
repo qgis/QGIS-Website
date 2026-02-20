@@ -683,11 +683,6 @@ toolbx run -c box sudo dnf update
 # Mac OS X / macOS
 
 
-<!--
-## QGIS nightly release
-
-A nightly updated standalone installer from QGIS master can be downloaded from [here](/downloads/macos/qgis-macos-nightly.dmg).
--->
 
 
 ## Binary packages (installers)

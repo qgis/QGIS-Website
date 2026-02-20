@@ -90,7 +90,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new \"Show in Attribute Table\" action has been added to the right-click context menu of legend class symbols in the table of contents. This allows users to open the attribute table with a filter applied to match only the features relevant to a particular symbol group. This provides a significant performance improvement for certain datasets, such as large vector layers loaded from a remote source.
 
-![image5](images/entries/8b43481bcab479b040b0a5ac5400ddc89c77dd0a.png)
+![image5](images/entries/8b43481bcab479b040b0a5ac5400ddc89c77dd0a.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -127,7 +127,7 @@ The symbol styles for the ellipse marker type now include additional shape types
 -   Quarter Circle
 -   Star
 
-![image8](images/entries/3e749b405f10a24f95665cd0ad3e1ea0f199811b.png)
+![image8](images/entries/3e749b405f10a24f95665cd0ad3e1ea0f199811b.webp)
 
 This feature was funded by North Road
 
@@ -146,7 +146,7 @@ Supported tags specifically include:
 -   bold
 -   italic
 
-![image9](images/entries/b49f780e98b4276b76cf3022b34da26dd4ed9d1f.jpg)
+![image9](images/entries/b49f780e98b4276b76cf3022b34da26dd4ed9d1f.webp)
 
 This feature was funded by the Swiss QGIS user group
 
@@ -156,7 +156,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Previously, the line height was always set in multiples of the text line spacing, however, it is now possible to use absolute units for line height (useful in contexts where mixed text sizes are used within a single document).
 
-![image10](images/entries/b413c593933bc197886a97919ae015880e119aa7.png)
+![image10](images/entries/b413c593933bc197886a97919ae015880e119aa7.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -184,7 +184,7 @@ There is a new item for controlling the state of Ambient Occlusion in the config
 -   Intensity: The strength of the effect should be (higher values make things darker)
 -   Occlusion threshold: Number of neighboring points that need to be occluded for the effect to appear (values lower than 50% will make the output darker, but possibly provide a greater range of occlusion)
 
-![image12](images/entries/996b020346252bc10d87279d9e0cac766802c1d4.png)
+![image12](images/entries/996b020346252bc10d87279d9e0cac766802c1d4.webp)
 
 This feature was developed by [Martin Dobias & Belgacem Nedjima](https://github.com/wonder-sk)
 
@@ -212,7 +212,7 @@ Export operations support filtering by:
 
 In addition, output CRS definition and re-projection are also supported.
 
-![image13](images/entries/9b7102f1bbd9286c16285a43158904395e56c4bc.png)
+![image13](images/entries/9b7102f1bbd9286c16285a43158904395e56c4bc.webp)
 
 This feature was funded by State of Vorarlberg and Swiss QGIS user group
 
@@ -222,7 +222,7 @@ This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 
 The eye dome lighting effect is now available for point clouds in 2D renderers
 
-![image14](images/entries/99c16bf2efe3bdcf020a41ad088e29ec7437573e.png)
+![image14](images/entries/99c16bf2efe3bdcf020a41ad088e29ec7437573e.webp)
 
 This feature was developed by [Nedjima Belgacem](https://github.com/NEDJIMAbelgacem)
 
@@ -234,7 +234,7 @@ The `FORCE_RASTER` and `IMAGE_COMPRESSION` parameters have been added to the var
 
 `FORCE_RASTER` is mutually exclusive with and takes precedence over the `FORCE_VECTOR` parameter.
 
-![image15](images/entries/06cc045f6a69f9caaacde8f8b3ead9e89f02af22.png)
+![image15](images/entries/06cc045f6a69f9caaacde8f8b3ead9e89f02af22.webp)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -254,7 +254,7 @@ This is a step towards eventually deprecating the older `$` style functions, and
 
 Older functions and variable references will continue to work (and will likely continue working indefinitely for the sake of compatibility with older projects). They will also continue (for the time being) to be exposed in the UI to avoid user confusion.
 
-![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.png)
+![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -262,7 +262,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new `shared_paths` function has been added which returns a collection containing paths shared by the two input geometries. Those going in the same direction are in the first element of the collection, and those going in the opposite direction are in the second element. The paths themselves are given in the direction of the first geometry.
 
-![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.png)
+![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -273,7 +273,7 @@ Additional functions have been added for:
 -   `make_valid`: Repair broken input geometries and returns the corrected geometries
 -   `geometries_to_array`: This converts a geometry collection into an array for easier handling and iteration
 
-![image18](images/entries/bc2bbd8d26e2ebb4fd7dc02f0ce7ec6460f3a3bc.png)
+![image18](images/entries/bc2bbd8d26e2ebb4fd7dc02f0ce7ec6460f3a3bc.webp)
 
 This feature was developed by [Alex](https://github.com/roya0045)
 
@@ -281,7 +281,7 @@ This feature was developed by [Alex](https://github.com/roya0045)
 
 A new `concave_hull` function is now available in QGIS expressions (GEOS 3.11+)
 
-![image19](images/entries/e434b7356dc93f9c43fa3142c7f8f914a4aa5615.png)
+![image19](images/entries/e434b7356dc93f9c43fa3142c7f8f914a4aa5615.webp)
 
 This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
@@ -289,7 +289,7 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
 A new confirmation dialog is now safeguarding users against accidentally discarding their unapplied changes in expression editor dialogs. This safeguard is used in the Expression String Builder, the Expression Dialog (Epsilon icon, e. g. for Geometry Generators or for Pre-calculated Values in the model builder) and the Expression Based Filter (Attribute Table -\> Advanced filter expression).
 
-![image36](images/entries/cebe844ae2c28045a8b6e2e89cb2b40cdbbd38c6.png)
+![image36](images/entries/cebe844ae2c28045a8b6e2e89cb2b40cdbbd38c6.webp)
 
 This feature was funded by [WhereGroup GmbH](https://wheregroup.com/)
 
@@ -303,7 +303,7 @@ A new confirmation dialog appears by default when users perform an action that w
 
 In previous releases, similar confirmation prompts would only be displayed when some features fell out of the extent of the map canvas, or the deletion triggered the removal of child relation features. The new behavior is for the prompt to be enabled by default and disabled by using the \"Don\'t show this message again\" checkbox.
 
-![image20](images/entries/677952561ec24d417a74cf46842a6c52aec49587.png)
+![image20](images/entries/677952561ec24d417a74cf46842a6c52aec49587.webp)
 
 This feature was funded by [QGIS user group Switzerland](https://www.qgis.ch/)
 
@@ -323,7 +323,7 @@ The following data providers/formats are supported for storing and managing laye
 
 In addition, a new layer metadata search tab is available from the data source manager, and an interactive layer metadata search is available using the QGIS locator.
 
-![image21](images/entries/17fc26636b3c1fe423ec8f715e69365495519add.png)
+![image21](images/entries/17fc26636b3c1fe423ec8f715e69365495519add.webp)
 
 This feature was funded by ARPA Piemonte
 
@@ -341,7 +341,7 @@ A new advanced parameter is available for some processing tools which allows the
 -   Symmetrical Difference
 -   Union
 
-![image22](images/entries/b2ef315dc1013852d3316023c62af5ff06626e93.png)
+![image22](images/entries/b2ef315dc1013852d3316023c62af5ff06626e93.webp)
 
 This feature was funded by Orange Telecom FR
 
@@ -351,7 +351,7 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
 QGIS can now use the newer refined GEOS 3.10+ methods for validating and repairing geometry features.
 
-![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.png)
+![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -359,7 +359,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new `Show feature count for output vector layers` setting is available (but disabled by default for performance reasons), which will automatically enable the \"show feature count\" option on output layers loaded from QGIS processing. This is able to give users a first glimpse of what to expect as an output from a Processing algorithm.
 
-![image24](images/entries/e804b2accbcf155f4db2ea4024bd89ed5883097f.png)
+![image24](images/entries/e804b2accbcf155f4db2ea4024bd89ed5883097f.webp)
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
 
@@ -367,7 +367,7 @@ This feature was developed by [Germap](https://github.com/gacarrillor)
 
 The \"Package Layers\" processing tool now supports optionally following project relations and exporting related tables following the hierarchy both upstream and downstream, whilst also taking selected features into account.
 
-![image25](images/entries/26076b13de92a8ac2a1fea1511e03776c1aeae13.png)
+![image25](images/entries/26076b13de92a8ac2a1fea1511e03776c1aeae13.webp)
 
 This feature was funded by ARPA Piemonte
 
@@ -377,7 +377,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 Adds the \"Offset\" parameter to the \"Drape (set Z value from raster)\" and \"Set M value from raster\" algorithms. The \"Offset\" value is algebraically added to the band values after applying the \"Scale factor\".
 
-![image26](images/entries/78e9cb5b82c872604fc3616c2c7b3772e7d26bef.png)
+![image26](images/entries/78e9cb5b82c872604fc3616c2c7b3772e7d26bef.webp)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -397,7 +397,7 @@ The updated Map Geographic (degrees) option, which supersedes the legacy approac
 
 The Custom Projection Units type is a new addition that defaults to WGS84 and allows users to set any CRS they desire as display coordinates.
 
-![image27](images/entries/7af6704f72373fec3c1e9c212366fd3d8cfa0218.png)
+![image27](images/entries/7af6704f72373fec3c1e9c212366fd3d8cfa0218.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -424,7 +424,7 @@ The Project Properties → Relations → Discover Relations feature is now able 
 
 The QGIS Browser Panel now includes the ability to show detailed relationship information for these data sources.
 
-![image29](images/entries/11c3f493eff806b4eccbf9af27c96894ea3223a3.png)
+![image29](images/entries/11c3f493eff806b4eccbf9af27c96894ea3223a3.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -452,7 +452,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 The QGIS browser now supports more advanced functionalities for OGR databases that are not in GPKG format, including Field domain management capabilities (creation and listing domains) and table creation. This means that users can manage field domains and create new tables in an existing ESRI FileGeodatabase database from the QGIS Browser interface.
 
-![image32](images/entries/cc1f815593c28352dffaad020061004db91f8ded.png)
+![image32](images/entries/cc1f815593c28352dffaad020061004db91f8ded.webp)
 
 This feature was funded by Provincie Gelderland
 
@@ -553,7 +553,7 @@ This feature was developed by [Ismail Sunni](https://github.com/ismailsunni)
 
 QGIS now supports saving projects to Oracle databases.
 
-![image35](images/entries/6a575714dfc905211f3518a4f5f3803c32e8afa9.png)
+![image35](images/entries/6a575714dfc905211f3518a4f5f3803c32e8afa9.webp)
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 

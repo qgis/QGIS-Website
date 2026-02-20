@@ -61,7 +61,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 If you are creating a spatial bookmark, you can now choose to store the bookmark in your active project file. Scroll across in the bookmarks panel to find the checkbox that enables this capability.
 
-![image96](images/entries/thumbnails/fe01b36ab39b8cc21e6ec875c4baadc890cf6519.png.400x300_q85_crop.png)
+![image96](images/entries/fe01b36ab39b8cc21e6ec875c4baadc890cf6519.png.400x300_q85_crop.webp)
 
 This feature was developed by [Stéphane Brunner](http://www.camptocamp.com/)
 
@@ -69,7 +69,7 @@ This feature was developed by [Stéphane Brunner](http://www.camptocamp.com/)
 
 QGIS can now handle GLONASS satellite data (\$GN\* lines) to get a more precise Position from external GPS/GNSS Receivers.
 
-![image97](images/entries/thumbnails/9d13c0c632da1e70199f035ce5a186c018da2cef.png.400x300_q85_crop.jpg)
+![image97](images/entries/9d13c0c632da1e70199f035ce5a186c018da2cef.png.400x300_q85_crop.webp)
 
 This feature was developed by Ondřej Fibich
 
@@ -86,7 +86,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 -   Maptip visibility is now preserved across sessions
 -   Maptips can now show HTML content, including images, videos and URL links
 
-![image99](images/entries/thumbnails/96467c2c86ede6392190f021d266ee0e7ed6cbb5.png.400x300_q85_crop.jpg)
+![image99](images/entries/96467c2c86ede6392190f021d266ee0e7ed6cbb5.png.400x300_q85_crop.webp)
 
 This feature was funded by [OPENGIS.ch GmbH](http://www.opengis.ch)
 
@@ -101,7 +101,7 @@ It\'s now easier to recognise and differentiate QGIS\'s file types on your opera
 -   \*.qlr - Layer definitions file
 -   \*.qpt - Composer template file
 
-![image100](images/entries/thumbnails/9161a4c36a0149b32cd18119954ac32ce42788a6.PNG.400x300_q85_crop.png)
+![image100](images/entries/9161a4c36a0149b32cd18119954ac32ce42788a6.PNG.400x300_q85_crop.webp)
 
 This feature was developed by [Alexandre Neto](https://gisunchained.wordpress.com/)
 
@@ -171,7 +171,7 @@ This feature was developed by [Nathan Woodrow](http://nathanw.net)
 
 A new context menu item called `Copy cell content` is now available in the menu opened by a right click on a cell within the attribute table. When this button is clicked, the content of the cell is copied in the clipboard, whatever the kind of widget.
 
-![image47](images/entries/thumbnails/968170742ce1d075c6ab1c462e682ea4fd8c5225.png.400x300_q85_crop.png)
+![image47](images/entries/968170742ce1d075c6ab1c462e682ea4fd8c5225.png.400x300_q85_crop.webp)
 
 This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
 
@@ -179,7 +179,7 @@ This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
 
 HiDPI screen users will notice an improved user interface as more work has been done to upgrade icons to rely on SVG images. As of QGIS 2.16, all toolbars are now HiDPI-compatible.
 
-![image48](images/entries/thumbnails/e60e55de87e8d2558134f9c9552ef41295642217.png.400x300_q85_crop.jpg)
+![image48](images/entries/e60e55de87e8d2558134f9c9552ef41295642217.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -218,7 +218,7 @@ The documentation team has also worked on improving the documentation guidelines
 
 The documentation team will now work hard the next months to document the current stable release (2.16) of QGIS.
 
-![image51](images/entries/thumbnails/3d6aea22a76278945fcbaebcb6e959c6f4f8790e.png.400x300_q85_crop.png)
+![image51](images/entries/3d6aea22a76278945fcbaebcb6e959c6f4f8790e.png.400x300_q85_crop.webp)
 
 Check the 2.10, 2.12 and 2.14 milestone to see all the documentation work that has taken place:
 
@@ -230,7 +230,7 @@ Check the 2.10, 2.12 and 2.14 milestone to see all the documentation work that h
 
 The authentication system features introduced in earlier versions of QGIS (2.12 and 2.14) are now fully documented in the Users manual, and will be a great contribute to the system\'s understanding and adoption.
 
-![image50](images/entries/thumbnails/2408c7661583ab3114123624225f8f8422c634a3.png.400x300_q85_crop.png)
+![image50](images/entries/2408c7661583ab3114123624225f8f8422c634a3.png.400x300_q85_crop.webp)
 
 This feature was funded by [Boundless](http://boundlessgeo.com/)
 
@@ -244,7 +244,7 @@ The \"arrow\" symbol layer is a symbol layer allowing to draw straight or curved
 
 In curved mode, nodes of the line layer this symbol layer is applied to are used as control points for circle arcs. Arrows can be filled with whatever existing filling style QGIS supports. Options also allows to select the type of the arrow (with one or two heads, plain or halved), its width (that may be variable) and size of the heads.
 
-![image52](images/entries/thumbnails/000cc7827fe96aa72aedb646e6497cc69a050396.png.400x300_q85_crop.png)
+![image52](images/entries/000cc7827fe96aa72aedb646e6497cc69a050396.png.400x300_q85_crop.webp)
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/) and Andreas Neumann
 
@@ -254,7 +254,7 @@ This feature was developed by [Hugo Mercier](http://oslandia.com/)
 
 A \"filled marker\" is similar to the simple marker symbol layer, except that it uses a fill sub symbol to render the marker. This allows use of all the existing QGIS fill (and outline) styles for rendering markers, eg gradient or shapeburst fills.
 
-![image53](images/entries/thumbnails/6107e2a6192e6d459fce2f0a1d9da99680dc53b0.png.400x300_q85_crop.png)
+![image53](images/entries/6107e2a6192e6d459fce2f0a1d9da99680dc53b0.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
@@ -262,7 +262,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 Additional accessibility and low visions symbols are now available in QGIS\' SVG symbols collection.
 
-![image54](images/entries/thumbnails/7f6fc338b6f85fb59cd6e5e79b27899724e1c33e.png.400x300_q85_crop.png)
+![image54](images/entries/7f6fc338b6f85fb59cd6e5e79b27899724e1c33e.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -273,7 +273,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 -   filled cross and hexagon markers
 -   diamond ellipse marker
 
-![image55](images/entries/thumbnails/e5f7ea942c155a0a8dff05c60aca0f299907ee02.png.400x300_q85_crop.png)
+![image55](images/entries/e5f7ea942c155a0a8dff05c60aca0f299907ee02.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -285,7 +285,7 @@ Selections can still be made on the layer in the canvas and selected features wi
 
 This is intended as a handy shortcut for layers which you only want to show labels or diagrams for, and avoids the need to render symbols with totally transparent fill/border to achieve this. It may not sound useful from the title - but it\'s quite a handy shortcut!
 
-![image56](images/entries/thumbnails/4e02691b64446f5a36f4faf3cc4906726cf57aad.png.400x300_q85_crop.png)
+![image56](images/entries/4e02691b64446f5a36f4faf3cc4906726cf57aad.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
@@ -293,7 +293,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 An option has been added to control whether the marker is drawn on all parts or a single part of multi-features.
 
-![image57](images/entries/thumbnails/1a5e1daeefff5beb028c3230fffd86624974acea.png.400x300_q85_crop.png)
+![image57](images/entries/1a5e1daeefff5beb028c3230fffd86624974acea.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -301,7 +301,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 Font markers symbol can now have outline, which can help increasing visibility of such symbols by adding an outline buffer color. Emoji-enabled font characters can serve as nice markers when used with a thick outline.
 
-![image58](images/entries/thumbnails/be266e3dace9cc7011bfea6bab34ee8e4ade414e.jpeg.400x300_q85_crop.jpg)
+![image58](images/entries/be266e3dace9cc7011bfea6bab34ee8e4ade414e.jpeg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -309,7 +309,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 Users can now change the join style of outlines for simple, ellipse, and font markers to fine-tune their symbology.
 
-![image59](images/entries/thumbnails/c6b3a2f051a8c4e3f82c5cb6a995ae150acccb4b.png.400x300_q85_crop.png)
+![image59](images/entries/c6b3a2f051a8c4e3f82c5cb6a995ae150acccb4b.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -345,7 +345,7 @@ This feature was developed by Martin Dobias
 
 A new \"legend\" tab has been added to diagram properties, allowing both the existing attribute legend and a new size legend to be enabled/disabled. The size legend has a configurable marker symbol.
 
-![image63](images/entries/thumbnails/eb51ab12f096acf0422786510fc15324060fe9e1.png.400x300_q85_crop.png)
+![image63](images/entries/eb51ab12f096acf0422786510fc15324060fe9e1.png.400x300_q85_crop.webp)
 
 This feature was funded by [ADUGA](http://www.aduga.org/)
 
@@ -355,7 +355,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 Outline width unit selection is now available. This allows for a map unit sized diagram that will grow and shrink based on map scale while maintaining a fixed millimeter outline width.
 
-![image64](images/entries/thumbnails/932c792c43a94b8236ea803ae334c1a3d9f447ef.png.400x300_q85_crop.png)
+![image64](images/entries/932c792c43a94b8236ea803ae334c1a3d9f447ef.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -370,7 +370,7 @@ Originally, there was a toolbar for labels allowing to:
 
 With this new feature, a new tool is available in the label toolbar allowing to set properties of diagrams for the current layer. Moreover, each tool mentioned above are now fully usable with diagrams too.
 
-![image65](images/entries/thumbnails/eb337b7d02cd7ecb923134de80a63aa62c3e8bb8.png.400x300_q85_crop.png)
+![image65](images/entries/eb337b7d02cd7ecb923134de80a63aa62c3e8bb8.png.400x300_q85_crop.webp)
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
@@ -388,7 +388,7 @@ The user can select the algorithm to use when the local-side simplification runs
 
 This change also moves the local \"on-the-fly\" simplification from the provider and iterator classes to the rendering code. This avoids cases where simplification changes the geometry fetched from vector data providers, possibly affecting rule based and other expression based symbology. This is important when you have expressions that use the feature geometry (e.g. calculation of area) - we want to be sure that these calculations are done on the original geometry, not on the simplified ones.
 
-![image66](images/entries/thumbnails/9460e7d5f10a8c89697cef1f80674ca30d1c3aef.jpg.400x300_q85_crop.jpg)
+![image66](images/entries/9460e7d5f10a8c89697cef1f80674ca30d1c3aef.jpg.400x300_q85_crop.webp)
 
 This feature was developed by [Alvaro Huarte](https://es.linkedin.com/in/alvarohuarte)
 
@@ -396,7 +396,7 @@ This feature was developed by [Alvaro Huarte](https://es.linkedin.com/in/alvaroh
 
 This option can be found for single band pseudocolor rasters in the classification `mode` dialog.
 
-![image67](images/entries/thumbnails/844d12273c1d3d42e5f1b20367e92bc1144b77fe.png.400x300_q85_crop.png)
+![image67](images/entries/844d12273c1d3d42e5f1b20367e92bc1144b77fe.png.400x300_q85_crop.webp)
 
 This feature was developed by Piers Titus van der Torren
 
@@ -430,7 +430,7 @@ This feature was developed by Martin Dobias
 
 Support was added to set the segmentation tolerance (maximum angle or maximum difference). This setting controls the way circular arcs are rendered. The smaller maximum angle (in degrees) or maximum difference (in map units), the more straight line segments will be used during rendering. You can find this option in `Settings -> Options -> Rendering -> Curve Segmentation`.
 
-![image71](images/entries/thumbnails/c86e3cd9ebab19e1581568eb5804c69ba279787d.png.400x300_q85_crop.png)
+![image71](images/entries/c86e3cd9ebab19e1581568eb5804c69ba279787d.png.400x300_q85_crop.webp)
 
 This feature was developed by Marco Hugentobler
 
@@ -473,7 +473,7 @@ Checkboxes have been added so that you can select which attributes you want incl
 
 Depending on the data format, the \"displayed value\" is enabled by default, e.g. for export to spreadsheet formats (ODF, XLSX, CSV/Text).
 
-![image74](images/entries/thumbnails/1c9b2b234c1ccb7a1b92af1f5856817f65dc70f1.png.400x300_q85_crop.png)
+![image74](images/entries/1c9b2b234c1ccb7a1b92af1f5856817f65dc70f1.png.400x300_q85_crop.webp)
 
 This feature was partially funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
@@ -483,7 +483,7 @@ This feature was developed by Jürgen Fischer, Even Rouault
 
 In the forms mode of the QGIS attribute table there is a side column one can use to directly jump to a specific feature. Up-to this release, this side view was not sortable. For sorting, one had to jump to the table mode and then back to the form mode. Now one can directly sort the feature by the feature attribute preview in the side panel by chosing the sort function on the expression drop-down button above the side column.
 
-![image75](images/entries/thumbnails/3d6b97523db9d4389e5dbac8f0befb10d9d8f020.png.400x300_q85_crop.png)
+![image75](images/entries/3d6b97523db9d4389e5dbac8f0befb10d9d8f020.png.400x300_q85_crop.webp)
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
@@ -493,7 +493,7 @@ This feature was developed by [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
 The relation reference widget was enhanced to allow quicker extensions of related value lists. If the checkbox \"Allow adding new features\" is enabled in the widget properties (access through \"Fields\" tab in layer properties), a green plus button will appear to the right of the widget. After pressing the \"Plus\" button, the dialog of the related table will open in \"new record\" mode where one can add an additional entry.
 
-![image76](images/entries/thumbnails/5788b370bc8535629699d8b69656335974ca6feb.png.400x300_q85_crop.png)
+![image76](images/entries/5788b370bc8535629699d8b69656335974ca6feb.png.400x300_q85_crop.webp)
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
@@ -503,7 +503,7 @@ This feature was developed by [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
 Support has been added for rule based labeling and rotated symbols, and for outputting 3D geometries.
 
-![image77](images/entries/thumbnails/8a21b400f4e417df6e25f32c8b23191f1ff83628.png.400x300_q85_crop.png)
+![image77](images/entries/8a21b400f4e417df6e25f32c8b23191f1ff83628.png.400x300_q85_crop.webp)
 
 This feature was developed by Jürgen Fischer
 
@@ -511,7 +511,7 @@ This feature was developed by Jürgen Fischer
 
 It is now possible to put widgets directly on the form with the drag and drop designer. A drag and drop designer form can therefore exist without any tabs on it.
 
-![image78](images/entries/thumbnails/720df275d40a2d527f2492bde7db4dcdc94fc3da.png.400x300_q85_crop.png)
+![image78](images/entries/720df275d40a2d527f2492bde7db4dcdc94fc3da.png.400x300_q85_crop.webp)
 
 This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
 
@@ -535,7 +535,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The [GeoPackage](http://www.geopackage.org) format is an open standard for geospatial data that should be on your radar as a replacement for the ESRI Shapefile format. It addresses many shortcomings with the shape file format including limitations in the number and width of fields. In QGIS 2.16 it is now easy to create a new GeoPackage as it has been integrated into the `Layer` toolbar and `Layer -> Create Layer` menu.
 
-![image80](images/entries/thumbnails/34cfb4a4532464ab1983e561228a9a16d16dfd54.png.400x300_q85_crop.png)
+![image80](images/entries/34cfb4a4532464ab1983e561228a9a16d16dfd54.png.400x300_q85_crop.webp)
 
 This feature was developed by Even Rouault
 
@@ -545,7 +545,7 @@ In previous QGIS versions there was no way to check the validity of values enter
 
 Constraints are evaluated on the fly while a user is modifying a feature. A tooltip is available on any field having a constraint, showing the constraint\'s expression, the result of the evaluation and a description of the constraint. A message bar will also displayed at the top of the form summarizing any fields which do not meet the constraint criteria.
 
-![image81](images/entries/thumbnails/ab562b71015b29b17a6b86e8e3c5f71838e25d50.png.400x300_q85_crop.png)
+![image81](images/entries/ab562b71015b29b17a6b86e8e3c5f71838e25d50.png.400x300_q85_crop.webp)
 
 This feature was funded by [the QWAT project](https://github.com/qwat) and the [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
@@ -587,7 +587,7 @@ Two new types of composer shape items, based on nodes, are now available in the 
 
 New tools have also been added to allow editing nodes (ie move or remove nodes) and also to add new nodes to an existing shape. Composer polygon and polyline items can also be styled using all the symbol styles available for line and polygon layers!
 
-![image84](images/entries/thumbnails/52e5ebd093c119ee882b1c354fefc97f5e823ffc.png.400x300_q85_crop.png)
+![image84](images/entries/52e5ebd093c119ee882b1c354fefc97f5e823ffc.png.400x300_q85_crop.webp)
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
@@ -597,7 +597,7 @@ This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
 
 Now labels and HTML boxes can contain relative URLs. If we don\'t have a base URL, the project file will be used as a base URL.
 
-![image85](images/entries/thumbnails/5efabc11a312d90df04591a62cbafbb85b0ffc4d.png.400x300_q85_crop.png)
+![image85](images/entries/5efabc11a312d90df04591a62cbafbb85b0ffc4d.png.400x300_q85_crop.webp)
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
@@ -609,7 +609,7 @@ This change makes the current atlas feature (and additionally all attributes of 
 
 To use this, the HTML source must implement a \"setFeature(feature)\" JavaScript function. This function is called whenever the atlas feature changes, and is passed the atlas feature (and all related attributes) as a GeoJSON Feature.
 
-![image86](images/entries/thumbnails/15b7c338bb2fa76444929f3c7ae6fd6614018032.png.400x300_q85_crop.png)
+![image86](images/entries/15b7c338bb2fa76444929f3c7ae6fd6614018032.png.400x300_q85_crop.webp)
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
@@ -619,7 +619,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com/
 
 This change makes it possible to change an SVG files fill and outline colors, and outline width when using parameterised SVG files such as those included with QGIS. For more details on parameterised SVG files see [this article](http://blog.sourcepole.ch/2011/06/30/svg-symbols-in-qgis-with-modifiable-colors/).
 
-![image87](images/entries/thumbnails/f9766e2ad952c9a3d4a7fe2ddbdfa20d63b2aff4.png.400x300_q85_crop.png)
+![image87](images/entries/f9766e2ad952c9a3d4a7fe2ddbdfa20d63b2aff4.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
@@ -627,7 +627,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 In QGIS 2.16, the base stylesheet of composer labels will automatically set the label font and margins to match the label\'s settings. This allows interactive choice of font, margins and colors and avoids the need to manually set these with CSS within the label HTML code.
 
-![image88](images/entries/thumbnails/d078efbe63f71e8bdf28d476f9da0396f4b7dc0a.png.400x300_q85_crop.png)
+![image88](images/entries/d078efbe63f71e8bdf28d476f9da0396f4b7dc0a.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
@@ -637,7 +637,7 @@ In QGIS 2.16 the map composer automatically georeferences outputs (when the outp
 
 The existing option to create a world file has been separated from the map selection for georeferencing. The new behaviour is to always georeference outputs, and only create the separate world file if that option is checked.
 
-![image89](images/entries/thumbnails/e05ee773025d69f028f01ffa15521578be7d3dc3.png.400x300_q85_crop.png)
+![image89](images/entries/e05ee773025d69f028f01ffa15521578be7d3dc3.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
@@ -667,7 +667,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The choice of distance units has been widened, with new options including kilometers, yards and miles. Using these units prevents the need for manual conversion of distances (eg feet to miles).
 
-![image91](images/entries/thumbnails/a550363f123d3bf08bd53fef79dc92559ae8965d.png.400x300_q85_crop.png)
+![image91](images/entries/a550363f123d3bf08bd53fef79dc92559ae8965d.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
@@ -681,7 +681,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The statistical summary dock can now calculate aggregate statistics for string and date fields.
 
-![image92](images/entries/thumbnails/819559c98282bcf044fae47ddcc00908be3adf69.png.400x300_q85_crop.png)
+![image92](images/entries/819559c98282bcf044fae47ddcc00908be3adf69.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
@@ -689,7 +689,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 If you click on a curved line using the info tool, QGIS will now display the radius in the info tool.
 
-![image93](images/entries/thumbnails/70f085e8494b3f65fd801b79fe6e15fe4ec7f012.png.400x300_q85_crop.png)
+![image93](images/entries/70f085e8494b3f65fd801b79fe6e15fe4ec7f012.png.400x300_q85_crop.webp)
 
 This feature was developed by Marco Hugentobler
 
@@ -711,7 +711,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 fTools is a core plugin that for many years has provided the tools found in the `Vector` menu in QGIS. With the advent of the QGIS processing framework, the fTools began to represent a duplication of effort, and many of the tools have been improved in their Processing equivalents. To address, the fTools plugin has been removed from QGIS and equivalent menu entries have been added to the vector menu, pointing to the Processing framework tools that achieve the same thing.
 
-![image94](images/entries/thumbnails/99f9e994013dd63cdbba44a765ae5b5a0595d533.png.400x300_q85_crop.png)
+![image94](images/entries/99f9e994013dd63cdbba44a765ae5b5a0595d533.png.400x300_q85_crop.webp)
 
 This feature was developed by Alex Bruy
 
@@ -794,7 +794,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 Using this option, you can prevent users from inadvertently editing layers. Go to `Project properties -> Identify layers` to configure which layers should be presented as read only.
 
-![image101](images/entries/thumbnails/9fce381bdf92bd039a26282a93579d5d5ef22e92.png.400x300_q85_crop.png)
+![image101](images/entries/9fce381bdf92bd039a26282a93579d5d5ef22e92.png.400x300_q85_crop.webp)
 
 This feature was developed by [Matthias Kuhn](http://www.opengis.ch/)
 
@@ -859,7 +859,7 @@ QGIS 2.16 brings an overhaul of the WFS provider, including
 -   Support for additional/mixed geometry types (CurvePolygon, CompoundCurve)
 -   More tolerance for non-conforming WFS servers
 
-![image102](images/entries/thumbnails/d69f2cc2fcc59b26d830bb84c82d5e6c9d89beae.png.400x300_q85_crop.png)
+![image102](images/entries/d69f2cc2fcc59b26d830bb84c82d5e6c9d89beae.png.400x300_q85_crop.webp)
 
 This feature was funded by [Land Information New Zealand and Canton of Zug, Switzerland](http://www.linz.govt.nz/)
 
@@ -877,7 +877,7 @@ A new option in the \"project properties\" (tab \"Data Sources\") allows evaluat
 
 The main advantage of this improvement, is that one can now directly create and link records of related tables before having to save the data first, because the primary key is already present before the feature is saved.
 
-![image103](images/entries/thumbnails/6d4b378f46ee1338b7aa80f15adf2ea8e510909e.png.400x300_q85_crop.png)
+![image103](images/entries/6d4b378f46ee1338b7aa80f15adf2ea8e510909e.png.400x300_q85_crop.webp)
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
@@ -910,7 +910,7 @@ This feature was developed by [Marco Hugentobler (Sourcepole)](https://www.sourc
 -   Independent layer selection for globe
 -   Port of Mathias Kuhns master thesis work from QGIS 2.1/OsgEarth 2.4
 
-![image104](images/entries/thumbnails/f709cc02852b833f459f30431f38f868d69ebfad.jpg.400x300_q85_crop.jpg)
+![image104](images/entries/f709cc02852b833f459f30431f38f868d69ebfad.jpg.400x300_q85_crop.webp)
 
 This feature was funded by [Sourcepole QGIS Enterprise](http://qgisenterprise.com/)
 
@@ -954,7 +954,7 @@ This allows definition of widgets embedded into layer tree for individual layers
 
 The implementation comes with transparency widget, in the future there may be more standard widgets coming, e.g. to setup filtering, selection, style or other stuff. The API allows plugins to register their own widgets, which will be useful for various domain specific plugins to assign custom widgets to layers they manage.
 
-![image105](images/entries/thumbnails/f6cd05f9d927a47543b0c3b1fba740d86a226076.png.400x300_q85_crop.png)
+![image105](images/entries/f6cd05f9d927a47543b0c3b1fba740d86a226076.png.400x300_q85_crop.webp)
 
 This feature was developed by Martian Dobias
 

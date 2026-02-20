@@ -1,5 +1,5 @@
 <div class="box mb-0 context-container" id="context">
-    <div class="container is-flex is-justify-content-space-between">
+    <div class="container is-flex is-justify-content-space-between is-align-items-center">
         <div class="rss-feed">
             {{ $data := .Site.Data.feed }}
             {{ with $data }}
@@ -9,14 +9,37 @@
             {{ else }}
                 <span class="is-italic" style="font-size: 14px;">Latest news will appear here soon.</span>
             {{ end }}
-        </div>    
-        <div id="search-control" class="control has-icons-right search-control">
-            <form action="{{ "search/" | absURL }}" method="GET">
-                <input class="input is-small" type="search" id="search-query" name="q" placeholder="Search">
-                <span class="icon is-right">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-            </form>
+        </div>
+        <div class="is-flex is-gap-3 is-align-items-center">
+                <div class="dropdown" id="language-dropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button is-small is-ghost" aria-haspopup="true" aria-controls="dropdown-menu" title="Select Language">
+                            <span id="current-lang-display">🇬🇧 English</span>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu is-right" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content" style="max-height: 50dvh; overflow-y: auto;">
+                            <div class=" is-multiline is-gapless">
+                                {{ range .Site.Data.languages }}
+                                <a href="/{{ .code }}/" class="dropdown-item lang-option" data-lang="{{ .code }}" title="{{ .displayName }}" style="display: block; padding: 0.5rem;">
+                                    {{ .displayName }}
+                                </a>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div id="search-control" class="control has-icons-right search-control">
+                <form action="{{ "search/" | absURL }}" method="GET">
+                    <input class="input is-small" type="search" id="search-query" name="q" placeholder="Search">
+                    <span class="icon is-right">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </form>
+            </div>
         </div>
     </div>
 </div>

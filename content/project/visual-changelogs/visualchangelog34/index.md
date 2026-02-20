@@ -11,7 +11,7 @@ type: "visual-changelog"
 
 # Changelog for QGIS 3.4 {#changelog34}
 
-![image0](images/entries/splash34vs.png)
+![image0](images/entries/splash34vs.webp)
 
 Release date: 2018-10-26
 
@@ -37,7 +37,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 QGIS is now available as a flatpak application on [flathub](https://flathub.org/apps/search/qgis) Flatpak (formerly xdg-app) is a software utility for software deployment, package management, and application virtualization for Linux desktop computers. It allows users to install different QGIS versions on linux without having to recompile or use Docker. It is a full package with all libraries included, and it uses its own user profile locations. So you\'ll need some disk space and new habits working with flatpak, but it rocks!
 
-[![image28](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.png)](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.png)
+[![image28](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.webp)](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.webp)
 
 This feature was funded by [Aleix Pol](https://github.com/aleixpol)
 
@@ -83,7 +83,7 @@ Additionally, some new variables have also been made available for use within QG
 -   **\@map_layers**: Contains an array of all layers which are visible within the map
 -   **\@map_layer_ids**: Contains an array of all layer IDs for layers visible within the map
 
-[![image2](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.jpg)](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.jpg)
+[![image2](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.webp)](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.webp)
 
 This feature was developed by [Etienne Trimaille, Matteo Ghetta, Matthias Kuhn, Mathieu Pellerin, Nyall Dawson](https://qgis.org)
 
@@ -106,7 +106,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 Often it is useful to select/identify features that are covered by an existing polygon. For this, users can use \"Select Features by Polygon\" and \"Identify Features by Polygon\" tools, but it was necessary to manually trace the polygon of interest. This new feature allows user to right click on the map and pick an existing polygon feature at that location from popup menu - that polygon will be used as input for selection or identification.
 
-[![image4](images/entries/ee07ddaa42114f923a4fae5429bd8d2f93e66ce5.png)](images/entries/ee07ddaa42114f923a4fae5429bd8d2f93e66ce5.png)
+[![image4](images/entries/ee07ddaa42114f923a4fae5429bd8d2f93e66ce5.webp)](images/entries/ee07ddaa42114f923a4fae5429bd8d2f93e66ce5.webp)
 
 This feature was funded by Leicestershire County Council
 
@@ -138,7 +138,7 @@ Temporary Scratch Layers in QGIS can be very handy when a \"throw-away\" layer i
 
 It\'s also much easier to transition these temporary layers to permanent disk-based formats. You can either click the new indicator icon or select \"Make Permanent\" from the layer context menu. QGIS will then prompt for a location to save the temporary layer to, then replaces it in place (keeping the same layer ID, style, form settings, etc).
 
-[![image6](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.png)](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.png)
+[![image6](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -158,7 +158,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 For local vector and raster datasets, the Information tab within the layer properties dialog now features source file path hyperlinks. Upon clicking on the hyperlink, the system\'s file navigator will open and automatically highlight the dataset.
 
-[![image7](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.jpg)](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.jpg)
+[![image7](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.webp)](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.webp)
 
 This feature was funded by [iMhere Asia](https://www.imhere-asia.com/)
 
@@ -180,7 +180,7 @@ Tons of work was done for this release to improve the user interface and experie
 
 Functionality has also been added, including the ability to create a new directory directly from the browser context menu. The browser also now shows a more complete range of options for SQL Server connections, matching those options which were already available for other database connections.
 
-[![image8](images/entries/579042fca8a22be300449c3b55629fced75316b8.jpg)](images/entries/579042fca8a22be300449c3b55629fced75316b8.jpg)
+[![image8](images/entries/579042fca8a22be300449c3b55629fced75316b8.webp)](images/entries/579042fca8a22be300449c3b55629fced75316b8.webp)
 
 This feature was developed by Mathieu Pellerin (iMHere Asia), Nyall Dawson (North Road)
 
@@ -219,7 +219,7 @@ This feature was developed by <https://github.com/pierreloicq>
 
 When exporting and importing styles to and from `.qml` files it is now possible to select a subset of sections. This allows to save and restore parts of a layer configuration while omitting others. For example, it\'s possible to export only the symbology of a layer and when importing this QML style file into a layer, any configuration on the forms and widgets or other properties are unaffected. It is also possible to only handle single sections of a style when using copy/paste.
 
-[![image10](images/entries/93836361649c4b182b46e143014d7f30be674187.png)](images/entries/93836361649c4b182b46e143014d7f30be674187.png)
+[![image10](images/entries/93836361649c4b182b46e143014d7f30be674187.webp)](images/entries/93836361649c4b182b46e143014d7f30be674187.webp)
 
 This feature was funded by [qwat group](http://qwat.org/)
 
@@ -239,7 +239,7 @@ This feature was developed by [Andrea Rossi](https://github.com/rossia)
 
 Options were added to allowing snapping to 5/10/15/18/22.5 degrees while in construction mode.
 
-[![image11](images/entries/7c32c14544fb2f45646ea03f794e5124b4d4f9be.png)](images/entries/7c32c14544fb2f45646ea03f794e5124b4d4f9be.png)
+[![image11](images/entries/7c32c14544fb2f45646ea03f794e5124b4d4f9be.webp)](images/entries/7c32c14544fb2f45646ea03f794e5124b4d4f9be.webp)
 
 This feature was funded by [lbartoletti](https://github.com/lbartoletti)
 
@@ -249,7 +249,7 @@ This feature was developed by [lbartoletti](https://github.com/lbartoletti)
 
 The new vertex is a lot more productive now. It can move vertices of all editable layers at once, which is great to preserve cross layers topology. However in many cases, many of us don\'t want to modify all layers at once. We added a variation of the vertex map tool just for that.
 
-[![image12](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.png)](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.png)
+[![image12](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.webp)](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.webp)
 
 This feature was funded by [Oslandia](https://oslandia.com)
 
@@ -259,7 +259,7 @@ This feature was developed by [Paul Blottiere (Oslandia)](https://oslandia.com/e
 
 A long awaited feature ! No more external plugin or algorithm to reverse a line\'s direction!
 
-[![image13](images/entries/988902221b0384cd96f880633f9d822faaad6903.png)](images/entries/988902221b0384cd96f880633f9d822faaad6903.png)
+[![image13](images/entries/988902221b0384cd96f880633f9d822faaad6903.webp)](images/entries/988902221b0384cd96f880633f9d822faaad6903.webp)
 
 This feature was funded by [OSLANDIA](https://oslandia.com)
 
@@ -287,7 +287,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 Each new or edited geometry can be checked for validity if this option is activated. This allows to communicate transparently to a user when there are erroneous geometries produced by the current edit session.
 
-[![image15](images/entries/f5eee0b5a59923d41b427c9acc432b4c4f86da01.png)](images/entries/f5eee0b5a59923d41b427c9acc432b4c4f86da01.png)
+[![image15](images/entries/f5eee0b5a59923d41b427c9acc432b4c4f86da01.webp)](images/entries/f5eee0b5a59923d41b427c9acc432b4c4f86da01.webp)
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
@@ -339,7 +339,7 @@ A new locator filter has been added which allows users to search across *all* la
 
 The filter can be activated by using the prefix \'af\', or by making it a default search via QGIS options -\> Locator -\> Features In All Layer. Display expressions are defined in the vector layer properties under the display tab. Individual layers can be marked as not searchable in the Project Properties dialog, under the Data Sources tab.
 
-[![image18](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.png)](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.png)
+[![image18](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.webp)](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.webp)
 
 This feature was funded by [Opengis.ch](https://www.opengis.ch/)
 
@@ -351,7 +351,7 @@ A new indicator \"locked\" icon is shown for any layers marked as \"required\" w
 
 Required layers are configured via the Project Properties dialog, Data Sources tab.
 
-[![image19](images/entries/43cff3e927cdbacf08d61f979891030e48f9a451.png)](images/entries/43cff3e927cdbacf08d61f979891030e48f9a451.png)
+[![image19](images/entries/43cff3e927cdbacf08d61f979891030e48f9a451.webp)](images/entries/43cff3e927cdbacf08d61f979891030e48f9a451.webp)
 
 This feature was funded by [Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) within ERIKUS project](https://www.arpa.piemonte.it/)
 
@@ -361,7 +361,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 When saving a raster layer to GeoPackage database, it\'s now possible to append the layer to an existing file.
 
-[![image20](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.png)](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.png)
+[![image20](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.webp)](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.webp)
 
 This feature was funded by [Borys Jurgiel](https://github.com/borysiasty)
 
@@ -385,7 +385,7 @@ This feature was developed by Alessandro Pasotti (with North Road)
 
 This feature allows users to add their 3D map view to the print layout.
 
-[![image22](images/entries/413f4a9377731af02f3fe815bf3b7e70ac508d1c.png)](images/entries/413f4a9377731af02f3fe815bf3b7e70ac508d1c.png)
+[![image22](images/entries/413f4a9377731af02f3fe815bf3b7e70ac508d1c.webp)](images/entries/413f4a9377731af02f3fe815bf3b7e70ac508d1c.webp)
 
 This feature was funded by [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
@@ -424,7 +424,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 A new algorithm was added for sampling raster layer values at point locations.
 
-[![image24](images/entries/835925fb7c793d7e56a8c21a49408cd2542c973c.png)](images/entries/835925fb7c793d7e56a8c21a49408cd2542c973c.png)
+[![image24](images/entries/835925fb7c793d7e56a8c21a49408cd2542c973c.webp)](images/entries/835925fb7c793d7e56a8c21a49408cd2542c973c.webp)
 
 This feature was funded by [Faunalia](https://www.faunalia.eu)
 
@@ -547,7 +547,7 @@ When appropriate, scripts will now launch a processing algorithm dialog upon:
 -   Dragging and dropping a Python script onto the main window
 -   Using the browser panel\'s right-click run script action
 
-[![image25](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.jpg)](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.jpg)
+[![image25](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.webp)](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.webp)
 
 This feature was funded by [iMhere Asia](https://www.imhere-asia.com/)
 
@@ -557,7 +557,7 @@ This feature was developed by [Mathieu Pellerin](https://www.imhere-asia.com/)
 
 A new GDAL provider \'Rearrange band\' algorithm was added to the processing toolbox. The algorithm allows to output rasters continuing a subset of a given input raster\'s bands, and offers the possibility to re-order the bands.
 
-[![image26](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.jpg)](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.jpg)
+[![image26](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.webp)](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.webp)
 
 This feature was funded by [iMHere Asia](https://www.imhere-asia.com/)
 
@@ -581,7 +581,7 @@ The matching is case-insensitive by default, but can be made case-sensitive if r
 
 If desired, tables can also be output containing lists of the categories which could not be matched to symbols, and symbols which were not matched to categories.
 
-[![image27](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.png)](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.png)
+[![image27](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.webp)](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -628,7 +628,7 @@ This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.
 
 With this API, developers can inspect mesh elements and fetch values spatially and temporally. As an example, you can create time series plot from your mesh layer.
 
-[![image30](images/entries/45c0ea5d14157275da7153ac31cc41987319e5eb.png)](images/entries/45c0ea5d14157275da7153ac31cc41987319e5eb.png)
+[![image30](images/entries/45c0ea5d14157275da7153ac31cc41987319e5eb.webp)](images/entries/45c0ea5d14157275da7153ac31cc41987319e5eb.webp)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
@@ -648,7 +648,7 @@ This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.
 
 Scalar data are generated usually at the centre/corner of each mesh element. When displaying the scalar data, the arrows might look sparse and often not possible to see the general trend. With this option, arrows can be displayed on a user-defined grid. Extra scalar values will be interpolated on-the-fly and placed on the user-defined grid.
 
-[![image32](images/entries/9eaa1430fee8b738a79936d7df104270e0b7f2a8.png)](images/entries/9eaa1430fee8b738a79936d7df104270e0b7f2a8.png)
+[![image32](images/entries/9eaa1430fee8b738a79936d7df104270e0b7f2a8.webp)](images/entries/9eaa1430fee8b738a79936d7df104270e0b7f2a8.webp)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
@@ -658,7 +658,7 @@ This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.
 
 The reading of PostgreSQL JSON types is supported. JSON Data can be displayed in the widgets as \"Key/Value\" (maps), as \"List\" (arrays) or as text.
 
-[![image33](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.png)](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.png)
+[![image33](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.webp)](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.webp)
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
@@ -823,7 +823,7 @@ QGIS Server reuse the CRS defined in the WMS for WMTS.
 
 To manage the tile cache, a QGIS Server plugin with a QgsServerCacheFilter class has to be installed and loaded by QGIS Server.
 
-[![image34](images/entries/d0d72b47494e231b98bf3169fcbe34ca22d0624d.png)](images/entries/d0d72b47494e231b98bf3169fcbe34ca22d0624d.png)
+[![image34](images/entries/d0d72b47494e231b98bf3169fcbe34ca22d0624d.webp)](images/entries/d0d72b47494e231b98bf3169fcbe34ca22d0624d.webp)
 
 This feature was funded by [Ifremer](https://wwz.ifremer.fr/)
 
@@ -849,7 +849,7 @@ This feature was developed by [Eric Lemoine](https://github.com/elemoine)
 
 Plugin Manager is now able to install plugins from local zip files even if encrypted.
 
-[![image35](images/entries/1bfc11325b9afa06d3196603749e1786f7922ffd.png)](images/entries/1bfc11325b9afa06d3196603749e1786f7922ffd.png)
+[![image35](images/entries/1bfc11325b9afa06d3196603749e1786f7922ffd.webp)](images/entries/1bfc11325b9afa06d3196603749e1786f7922ffd.webp)
 
 This feature was funded by [Borys Jurgiel](https://github.com/borysiasty)
 
@@ -903,7 +903,7 @@ Due to upstream changes within the PyQt/sip library, the recommended way to impo
 
 Development of the API, a sample provider and tests allowing the creation of vector data provider in pure python.
 
-[![image36](images/entries/dbae71a0ccad069280a263fabddf3452b8165ca3.jpg)](images/entries/dbae71a0ccad069280a263fabddf3452b8165ca3.jpg)
+[![image36](images/entries/dbae71a0ccad069280a263fabddf3452b8165ca3.webp)](images/entries/dbae71a0ccad069280a263fabddf3452b8165ca3.webp)
 
 This feature was funded by Good will
 
@@ -945,7 +945,7 @@ The advantage is that the 3D lines do not loose their Z coordinate which is the 
 
 The disadvantage is that the lines cannot be wide (supported in Qt3D only since 5.10, but even then their rendering won\'t have nice joins/caps) and only ambient color is used from the material.
 
-[![image39](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.png)](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.png)
+[![image39](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.webp)](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.webp)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 

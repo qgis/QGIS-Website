@@ -10,8 +10,8 @@
                 <div class="columns is-desktop">
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 ">
-                            <a href="{{ absURL "project/overview" }}" class="footertitle text-nowrap">
-                                Project
+                            <a href="{{ relLangURL "project/overview" }}" class="footertitle text-nowrap">
+                                {{ i18n "menuProject" | default "Project" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -19,7 +19,7 @@
                                 {{- if eq .Parent "Project" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}
@@ -30,8 +30,8 @@
 
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5">
-                            <a href="{{ absURL "community/involve" }}" class="footertitle text-nowrap">
-                                Community
+                            <a href="{{ relLangURL "community/involve" }}" class="footertitle text-nowrap">
+                                {{ i18n "menuCommunity" | default "Community" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -39,7 +39,7 @@
                                 {{- if eq .Parent "Community" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}
@@ -49,8 +49,8 @@
 
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 footertitle">
-                            <a href="{{ absURL "resources/hub" }}" class="footertitle text-nowrap">
-                                Resources
+                            <a href="{{ relLangURL "resources/hub" }}" class="footertitle text-nowrap">
+                                {{ i18n "menuResources" | default "Resources" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -58,7 +58,7 @@
                                 {{- if eq .Parent "Resources" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}
@@ -68,8 +68,8 @@
 
                     <ul class="column mb-5">
                         <li class="is-size-5 mb-5 ">
-                            <a href="{{ absURL "funding/donate" }}" class="footertitle text-nowrap">
-                                Funding
+                            <a href="{{ relLangURL "funding/donate" }}" class="footertitle text-nowrap">
+                                {{ i18n "menuFunding" | default "Funding" }}
                             </a>
                         </li>
                         {{- range site.Menus.main }}
@@ -77,7 +77,7 @@
                                 {{- if eq .Parent "Funding" -}}
                                     <li class="mb-4">
                                         <a class="has-text-white text-nowrap" href="{{ .URL }}">
-                                            {{ .Name }}
+                                            {{ i18n (or .Params.i18n_key .Name) | default .Name }}
                                         </a>
                                     </li>
                                 {{ end }}
@@ -87,8 +87,8 @@
                 </div>
             </div>
             <div class="column is-2-desktop">
-                <a href="{{ absURL "download" }}">
-                    <button class="button is-primary1 is-size-5">Download</button>
+                <a href="{{ relLangURL "download" }}">
+                    <button class="button is-primary1 is-size-5">{{ i18n "download" }}</button>
                 </a>
             </div>
         </div>
@@ -107,30 +107,30 @@
                 <a class="has-text-white" href="https://github.com/qgis/">
                     <i class="fa-brands fa-square-github"></i>
                 </a>
-                <a class="has-text-white" href="{{ absURL "community/organisation/mailinglists" }}">
+                <a class="has-text-white" href="{{ relLangURL "community/organisation/mailinglists" }}">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
         </div>
         <div class="columns is-desktop privacy-links">
-            <a href="{{ absURL "diversity" }}" class="column is-narrow is-offset-2-desktop">Diversity statement</a>
-            <a href="{{ absURL "conduct" }}" class="column is-narrow">Code of conduct</a>
-            <a href="{{ absURL "environmental-policy" }}" class="column is-narrow">Environmental policy</a>
-            <a href="{{ absURL "license" }}" class="column is-narrow">License</a>
-            <a href="{{ absURL "styleguide" }}" class="column is-narrow">Visual Style Guide</a>   
-            <a href="{{ absURL "goodies" }}" class="column is-narrow">Goodies</a>   
-            <a href="{{ absURL "archive" }}" class="column is-narrow">Archive</a>   
+            <a href="{{ relLangURL "diversity" }}" class="column is-narrow is-offset-2-desktop">{{ i18n "diversityStatement" }}</a>
+            <a href="{{ relLangURL "conduct" }}" class="column is-narrow">{{ i18n "codeOfConduct" }}</a>
+            <a href="{{ relLangURL "environmental-policy" }}" class="column is-narrow">{{ i18n "environmentalPolicy" }}</a>
+            <a href="{{ relLangURL "license" }}" class="column is-narrow">{{ i18n "license" }}</a>
+            <a href="{{ relLangURL "styleguide" }}" class="column is-narrow">{{ i18n "visualStyleGuide" }}</a>   
+            <a href="{{ relLangURL "goodies" }}" class="column is-narrow">{{ i18n "goodies" }}</a>   
+            <a href="{{ relLangURL "archive" }}" class="column is-narrow">{{ i18n "archive" }}</a>   
 
         </div>
         <div class="columns is-desktop issue-report-link is-justify-content-center">
-            <a href="https://github.com/qgis/QGIS-Website/issues" class="column is-narrow p-0 is-size-6" target="_blank">Problems with this website? Report an issue here 🐙</a> 
+            <a href="https://github.com/qgis/QGIS-Website/issues" class="column is-narrow p-0 is-size-6" target="_blank">{{ i18n "reportIssue" }}</a> 
               
         </div>
     </div>
     <div class="commit-link is-size-7">
         {{ $commit := readFile (print .Site.Params.commitFile)}}
         <p>
-            Commit revision: <a href="https://github.com/qgis/QGIS-Website/commit/{{ $commit }}" target="_blank">{{ $commit }}</a>
+            {{ i18n "commitRevision" }}: <a href="https://github.com/qgis/QGIS-Website/commit/{{ $commit }}" target="_blank">{{ $commit }}</a>
         </p>
     </div>
 </footer>

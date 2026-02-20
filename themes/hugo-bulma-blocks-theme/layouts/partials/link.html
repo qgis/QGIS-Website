@@ -1,8 +1,29 @@
 {{ $url := .URL }}
 {{ $isExternal := or (strings.HasPrefix $url "http://") (strings.HasPrefix $url "https://") }}
+
+{{/* Check if URL is internal or external link */}}
+{{ if not $isExternal }}
+    {{/* If URL is internal, check if it's an absolute or relative path */}}
+  {{ if strings.HasPrefix $url "/" }}
+    {{ $url = relLangURL $url }}
+  {{ else }}
+    {{/* If relative path, add "/" and use relLangURL for multilingual support */}}
+    {{ $url = relLangURL (printf "/%s" $url) }}
+  {{ end }}
+{{ end }}
+
 {{ $rel := cond $isExternal "noopener noreferrer" "" }}
 {{ $target := cond $isExternal "_blank" "" }}
 {{ $externalClass := cond $isExternal "external-link" "" }}
+
+{{/* Use i18n translation if available, otherwise use original name */}}
+{{ $name := .Name }}
+{{ if .Params.i18n_key }}
+  {{ $translation := i18n .Params.i18n_key }}
+  {{ if $translation }}
+    {{ $name = $translation }}
+  {{ end }}
+{{ end }}
 
 <a
     class="{{ $externalClass }}"
@@ -10,5 +31,5 @@
     target="{{ $target }}"
     rel="{{ $rel }}"
 >
-{{ .Name }}
+{{ $name }}
 </a>

@@ -35,7 +35,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 Using the Identify Features tool on a 3D linestring now includes the 3d Cartesian length of the line in the results (alongside the existing 2D Cartesian and 2D ellipsoidal lengths).
 
-![image2](images/entries/b1aba6e9334ee1d862bde8f66f9ae4d30d945703.png)
+![image2](images/entries/b1aba6e9334ee1d862bde8f66f9ae4d30d945703.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -47,7 +47,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 In QGIS 3.10 we\'ve added a new setting for the default resampling mode to use when for newly-added raster datasets. (This setting can be found in the rendering panel of the options dialog).
 
-![image3](images/entries/07ae51e244cc5b1d6a971e386ea98f1314a3dfb1.png)
+![image3](images/entries/07ae51e244cc5b1d6a971e386ea98f1314a3dfb1.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -55,7 +55,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 We\'re passionate about making QGIS a user-friendly cartographic tool which is a joy to work with, so we\'ve added a bunch of new shortcuts throughout the interface which allow you to copy and paste symbols from one part of QGIS to another. E.g, you can copy a symbol from a category and paste it directly onto another category, or a layout shape item, or inside the style manager dialog!
 
-![image4](images/entries/79f8365571da7b6c60f001f388d9c02d9e8920b2.png)
+![image4](images/entries/79f8365571da7b6c60f001f388d9c02d9e8920b2.webp)
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
@@ -65,7 +65,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We\'ve added a brand new \"Center of segment\" mode for placement of marker line or hashed lines symbols. This allows you to place markers or hash lines over the center point of individual line segments, exposing cartographic effects which were not possible before (and improving the quality of layers converted from ArcMap using the [SLYR](https://north-road.com/slyr/) tool).
 
-![image5](images/entries/c1f50067d50b909e38b7333ad5d8d415e763801d.png)
+![image5](images/entries/c1f50067d50b909e38b7333ad5d8d415e763801d.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -75,7 +75,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 In previous QGIS releases, only string values of the format \'x,y\' would be permitted for data-defined symbol and label offsets. We\'ve listened to user feedback that this was confusing, and in QGIS 3.10 we now allow arrays of numbers as a valid expression result for offsets. E.g. \"array(3,5)\".
 
-![image6](images/entries/1ccab8f4328238f5275e41c3d466bf27a5d097a2.png)
+![image6](images/entries/1ccab8f4328238f5275e41c3d466bf27a5d097a2.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -91,7 +91,7 @@ Now, the Style Manager dialog can be used to manage text formats (which store th
 
 Text Formats and Label Settings offer all the same functionality as you\'re used to for managing symbols and color ramps within styles, including import and export to XML files, tagging, smart groups, favoriting etc\...
 
-![image7](images/entries/bf657c21ba6deaff10ff80611a77b435e12155e5.png)
+![image7](images/entries/bf657c21ba6deaff10ff80611a77b435e12155e5.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -101,7 +101,7 @@ This feature was developed by [North Road](http://north-road.com)
 
 Alongside all the other exciting labeling improvements which we\'ve landed in 3.10, we now allow use of marker symbols as a background for labels. This allows you to use all the rich functionality available for marker symbols as a background to labels, and complements the existing shapes and SVG background choices!
 
-![image8](images/entries/3a9fd11192cdbdaa2f139a28d63cc33e1d10c3bc.png)
+![image8](images/entries/3a9fd11192cdbdaa2f139a28d63cc33e1d10c3bc.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -115,7 +115,7 @@ We\'ve added many settings for controlling exactly how these label callouts are 
 
 In 3.10, we expose options for either a \"simple\" (direct line) or \"Manhattan\" (straight lines) callout styles. If you\'re interested in sponsoring additional callout styles in a future release, get in contact with the QGIS team to find out how you can make this happen!
 
-![image9](images/entries/7bcc02d06eb7030a289e129b9bed2656d6c6fefb.png)
+![image9](images/entries/7bcc02d06eb7030a289e129b9bed2656d6c6fefb.webp)
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
@@ -125,7 +125,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We\'ve added an additional option to allow you to control multi-line alignment on a label-by-label basis. Just active the Label Properties tool and click on your map labels, and a new setting for the text alignment is now available.
 
-![image10](images/entries/14b307efef5de1085e4c402d3e06e5dd10a64ae2.png)
+![image10](images/entries/14b307efef5de1085e4c402d3e06e5dd10a64ae2.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -135,7 +135,7 @@ If you\'ve ever been concerned about automatic label placement hiding away impor
 
 This new setting (which is accessed through the Labeling toolbar) will render these Unplaced Labels in a red color (but the color can be changed from the project Label Settings dialog). After identifying any missing labels in your map, we suggest you use the existing Labeling tools such as the \"move label\" or \"show/hide label\" tool to rearrange your map and make these labels visible again.
 
-![image11](images/entries/4e53a6482dacb6e2d6d1ff2a8c4592d98f82430a.png)
+![image11](images/entries/4e53a6482dacb6e2d6d1ff2a8c4592d98f82430a.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -155,7 +155,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The \"label every part\" option was one of the very few settings which couldn\'t be previously data-definable for labels. We\'ve remedied this omission in QGIS 3.10, and you can now control whether you want all parts labelled on a feature-by-feature basis!
 
-![image13](images/entries/9db2c54c0d65bc61da8c0c46cfefcbab96c833df.png)
+![image13](images/entries/9db2c54c0d65bc61da8c0c46cfefcbab96c833df.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -165,7 +165,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We aren\'t lying when we say that QGIS 3.10 is a love-letter to map labelling! Another new option we\'ve added in this version is interactive control over whether all parts of a feature should be labeled via the Label Properties tool.
 
-![image14](images/entries/737cd2f8bc569ee9ad7df9aee02eec83b4e6facd.png)
+![image14](images/entries/737cd2f8bc569ee9ad7df9aee02eec83b4e6facd.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -177,7 +177,7 @@ As of 3.10, QGIS is now fully equipped to render vertically oriented labels. To 
 
 You can choose between two vertical orientation mode: one that always renders labels vertically, or an alternative mode that dynamically picks the orientation based on the label rotation.
 
-![image15](images/entries/e49baccdb83da1b88433e2c7718642ae4a78810d.jpg)
+![image15](images/entries/e49baccdb83da1b88433e2c7718642ae4a78810d.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -185,7 +185,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 Another option we\'ve added for improving the conversion of ArcMap symbology to QGIS (via [SLYR](https://north-road.com/slyr/)) is a new setting for controlling whether label fonts are kerned (or not).
 
-![image16](images/entries/b2a650a874e263173a56d93b046df7f031eb8d6e.png)
+![image16](images/entries/b2a650a874e263173a56d93b046df7f031eb8d6e.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -203,7 +203,7 @@ This feature was developed by Matthias Kuhn (Opengis.ch)
 
 In QGIS 3.10 we\'ve implemented support for embedded georeferencing within PDFs and TIFs when using the save \[map canvas\] as image or PDF.
 
-![image17](images/entries/1030adf0c9c0c46ff5a38a09ae16a735bdff3684.png)
+![image17](images/entries/1030adf0c9c0c46ff5a38a09ae16a735bdff3684.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -213,7 +213,7 @@ We\'ve added a brand new decoration for the QGIS main canvas, allowing you to ad
 
 As with other parts of QGIS, the image decoration supports customizable fill and outline color for parameter-enabled SVGs.
 
-![image18](images/entries/41ab256b477b0baf0971b398f882a6633cd12615.png)
+![image18](images/entries/41ab256b477b0baf0971b398f882a6633cd12615.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -221,7 +221,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 You can now use a logarithmic based classification technique when creating ranges for the graduated renderer.
 
-![image19](images/entries/bb6303d9589972781988549283ef150700ba5863.png)
+![image19](images/entries/bb6303d9589972781988549283ef150700ba5863.webp)
 
 This feature was developed by [OPENGIS.ch](https://www.opengis.ch)
 
@@ -247,7 +247,7 @@ This feature was developed by [Ismail Sunni](http://ismailsunni.id)
 
 In earlier QGIS versions, you could already navigate the 3D world by using a mouse and keyboard. Unfortunately, for a new user, it is not easy to start using them! 3D On-Screen Navigation will help to navigate the 3D world. There are buttons to zoom in/out, tilt up/down, pan up/down/left/right, and rotate the 3D map view. This feature can be activated from the 3D map view toolbar. See how to use it in this video:
 
-![image20](images/entries/570ff6f8c365a78d05bb56cfdbd8647f83aac331.jpg)
+![image20](images/entries/570ff6f8c365a78d05bb56cfdbd8647f83aac331.webp)
 
 This feature was funded by [Google Summer of Code Program](https://summerofcode.withgoogle.com/projects/#5265985207009280)
 
@@ -261,7 +261,7 @@ Thanks to funding from our right-to-left locale users, we\'ve added a new choice
 
 This feature allows creation of right-to-left locale friendly legends. To make things user-friendly, we even default to this right-to-left style alignment when creating new legends under a RTL based locale.
 
-![image21](images/entries/420b784c4fc79a09358201c8814cfe48b82dbbca.png)
+![image21](images/entries/420b784c4fc79a09358201c8814cfe48b82dbbca.webp)
 
 This feature was funded by [Kaplan Open Source](https://kaplanopensource.co.il/)
 
@@ -271,7 +271,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 If you\'re after pixel-perfect control over your legend appearance \-- this one\'s for you! QGIS 3.10 now allows you to tweak the spacing applied under group or subgroup headings.
 
-![image22](images/entries/78263d3350afd05147928378f81dddba13961acc.png)
+![image22](images/entries/78263d3350afd05147928378f81dddba13961acc.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -281,7 +281,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 Since so much of QGIS\' cartographic power comes from the flexibility of data-defined symbol settings, we\'ve now allowed them to be used for text formats too! This means you can now use data defined properties wherever text formats are used, e.g. within layout scalebar text.
 
-![image23](images/entries/69961f6faa732b683ccfb1ab539250b21ea5bd26.png)
+![image23](images/entries/69961f6faa732b683ccfb1ab539250b21ea5bd26.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -301,7 +301,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We\'ve extended layout scale bars with additional styling options, adding a pair of settings to refine the placement of scalebar labels. Now you can define whether labels are shown above or below the scalebar itself, as well as setting whether labels are centered in the middle of a segment or placed at its end.
 
-![image25](images/entries/e571fc1811ccf58e007a7913600b65377e31ed41.jpg)
+![image25](images/entries/e571fc1811ccf58e007a7913600b65377e31ed41.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -313,7 +313,7 @@ This new setting, \"Simplify geometries to reduce output file size\", is exposed
 
 No more ridiculously complex and large export file size for your QGIS print layouts! Aside from the file size issues, these also cause problems when trying to load into other applications, e.g. Inkscape, which chokes on the huge number of vertices and grinds to a crawl\.... ouch!
 
-![image26](images/entries/7eea84e316a148c6872369d3df5fb63a6bc2f043.png)
+![image26](images/entries/7eea84e316a148c6872369d3df5fb63a6bc2f043.webp)
 
 This feature was funded by GeoPDF export group: Land Vorarlberg; Cantons of Zug, Thurgovia and Neuchâtel; Cities of Vienna and Dornbirn; Biodiversity Information Service for Powys & Brecon Beacons National Park
 
@@ -323,7 +323,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 User feedback told us that the way we created layered SVG files in past releases was frustrating to work with. So, in QGIS 3.10, we\'ve revamped this feature and now SVG layer names will match the layer names from QGIS, making it much easier for designers to understand the contents of the document! Read more about this are related features [here](https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/).
 
-![image27](images/entries/dac35ad47f56dd24456df6d318359a0d70efeb15.png)
+![image27](images/entries/dac35ad47f56dd24456df6d318359a0d70efeb15.webp)
 
 This feature was funded by GeoPDF export group
 
@@ -333,7 +333,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 In earlier QGIS releases, there was no way to tell whether a map refresh had finished inside a QGIS print layout designer window. So, we\'ve added a new indicator in the status bar which shows whenever there\'s a redraw is humming away in the background. No more user confusion!
 
-![image28](images/entries/8c6426a723b9fdc1cead1949f3304db4763ecb9c.png)
+![image28](images/entries/8c6426a723b9fdc1cead1949f3304db4763ecb9c.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -349,7 +349,7 @@ Note that GeoPDF export requires a QGIS build based on GDAL 3.0 or later.
 
 Read more at [QGIS 3.10 Loves GeoPdf](https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/)
 
-![image29](images/entries/9f73cce9c3f3ff81c6b66adab654ff4e23524ae1.png)
+![image29](images/entries/9f73cce9c3f3ff81c6b66adab654ff4e23524ae1.webp)
 
 This feature was funded by GeoPDF export group: Land Vorarlberg; Cantons of Zug, Thurgovia and Neuchâtel; Cities of Vienna and Dornbirn; Biodiversity Information Service for Powys & Brecon Beacons National Park
 
@@ -369,7 +369,7 @@ Now, you\'re able to set data-defined control for:
 -   grid cross size
 -   grid frame line thickness
 
-![image30](images/entries/e219a18e997a6506314c1777c94050bf4a69cf9b.png)
+![image30](images/entries/e219a18e997a6506314c1777c94050bf4a69cf9b.webp)
 
 This feature was funded by Andreas Neumann
 
@@ -381,7 +381,7 @@ Just like the existing scalebar setting of the same name, this new setting allow
 
 This change makes it possible for you to create layouts and layout templates with grids which respond elegantly to a wide range of map scales!
 
-![image31](images/entries/245ada907ba2e14ad291dae54b93adb327b64225.png)
+![image31](images/entries/245ada907ba2e14ad291dae54b93adb327b64225.webp)
 
 This feature was funded by Andreas Neumann
 
@@ -391,7 +391,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 Another long-requested feature we\'ve implemented for QGIS 3.10 is a new button in the layout map item properties toolbar, which allows you to directly set a map item to the extent of a spatial bookmark!
 
-![image32](images/entries/4b8ed681a38435a2f0bf299fd28f299e2873848c.png)
+![image32](images/entries/4b8ed681a38435a2f0bf299fd28f299e2873848c.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -425,7 +425,7 @@ This feature was developed by [Alessandro Pasotti (North Road)](http://north-roa
 
 In QGIS 3.4 we introduced the ability to configure QGIS layers to run topological checks on every save operation. For 3.10, we have now added a new option to the check for \"gaps\" which allows you to actively mark some gaps as allowed. These exceptions will be saved on a separate, configurable layer. Whenever a gap is detected, you either have the possibility to fix it or to add it to the allowed exceptions with the press of a button.
 
-![image33](images/entries/4a7b306942755ac96cfa9bc97abbfd7815d17ad4.png)
+![image33](images/entries/4a7b306942755ac96cfa9bc97abbfd7815d17ad4.webp)
 
 This feature was funded by [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
@@ -437,7 +437,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 In QGIS 3.10, we added the possibility to create layer relationships which utilise composite foreign keys. QGIS now fully supports editing parent and child features which are linked with more than one attribute. This functionality is accessed in the Project Properties -\> Relations tab.
 
-![image34](images/entries/6b2177a5781bc2d5cdfb63f121501a734897e4a1.png)
+![image34](images/entries/6b2177a5781bc2d5cdfb63f121501a734897e4a1.webp)
 
 This feature was funded by [California Geological Survey](https://www.conservation.ca.gov/cgs)
 
@@ -449,7 +449,7 @@ Ever had issues with snapping when editing a feature that is modified by someone
 
 More info in the [pull request](https://github.com/qgis/QGIS/pull/30947)
 
-![image35](images/entries/3b93e7b25eef3e3f149ba8db022e467258a74116.png)
+![image35](images/entries/3b93e7b25eef3e3f149ba8db022e467258a74116.webp)
 
 This feature was funded by [QGIS.org](https://qgis.org)
 
@@ -461,7 +461,7 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 
 Updates widget values on real time while editing the referenced fields. When widget A contains a default value depending on widget B, it updates as soon as widget B is edited.
 
-![image36](images/entries/0f24e8e2746cb4b7890d015c2ae476f1f1bf96ef.png)
+![image36](images/entries/0f24e8e2746cb4b7890d015c2ae476f1f1bf96ef.webp)
 
 This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
@@ -473,7 +473,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 While previous versions of QGIS allowed you to filter attribute tables using a custom expression, these expressions were lost whenever the attribute table was closed. Now, we\'ve added the ability to store and manage your custom expression filters to the attribute table dialog. You can now build up your own personal collection of useful filters, which will always be available for re-use with a few simple mouse clicks!
 
-![image37](images/entries/d6791d32d649fdc3b2e86aa257a33796391e13e0.png)
+![image37](images/entries/d6791d32d649fdc3b2e86aa257a33796391e13e0.webp)
 
 This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
@@ -483,7 +483,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch
 
 You ask, we listen: `abs` , `min` and `max` are now available in the Raster Calculator user interface!
 
-![image38](images/entries/8a0081e087a6f9ff9180615f34bb56ea6dccc649.png)
+![image38](images/entries/8a0081e087a6f9ff9180615f34bb56ea6dccc649.webp)
 
 This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
 
@@ -493,7 +493,7 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
 
 This algorithm creates a new vector layer which contains a single feature with geometry matching a point parameter. It can be used in models to convert a point input into a layer, which can then be used for other algorithms which require a layer based input.
 
-![image39](images/entries/9f61759f0b8d6a61ea070a5328c4f641c582778e.PNG)
+![image39](images/entries/9f61759f0b8d6a61ea070a5328c4f641c582778e.webp)
 
 This feature was developed by Olivier Dalang
 
@@ -501,7 +501,7 @@ This feature was developed by Olivier Dalang
 
 When creating inputs for a Processing model, you can now mark these input parameters as \"Advanced\" options. (Advanced parameters are hidden by default when users run your model through the Processing toolbox)
 
-![image40](images/entries/d9224e26da62b092d56fd091195942d4142e9bd7.PNG)
+![image40](images/entries/d9224e26da62b092d56fd091195942d4142e9bd7.webp)
 
 This feature was developed by Alex Bruy
 
@@ -509,7 +509,7 @@ This feature was developed by Alex Bruy
 
 We added an optional \"Additional command-line parameters\" parameter to all GDAL algorithms , useful for cases when you need to pass a specific command-line argument(s) which is not exposed in the algorithm UI.
 
-![image41](images/entries/18f42d184246ed167be10dee72f5000671d7ac01.png)
+![image41](images/entries/18f42d184246ed167be10dee72f5000671d7ac01.webp)
 
 This feature was developed by Alex Bruy
 
@@ -517,7 +517,7 @@ This feature was developed by Alex Bruy
 
 You can now specify a custom metatile size when generating XYZ tiles. Larger values may speed up the rendering of tiles and provide better labelling (fewer gaps without labels) at the expense of using more memory.
 
-![image42](images/entries/471f15d2616ffc1531c8eef95d4d8ed87d161998.png)
+![image42](images/entries/471f15d2616ffc1531c8eef95d4d8ed87d161998.webp)
 
 This feature was developed by Martin Dobias
 
@@ -525,7 +525,7 @@ This feature was developed by Martin Dobias
 
 QGIS 3.10 brings a new parameter type for use in Processing models and scripts, which allows for users to pick a color value. Useful for any models and algorithms which require a color value as an input!
 
-![image43](images/entries/87cae0401b93aa308c156a615e63a71e98d25980.png)
+![image43](images/entries/87cae0401b93aa308c156a615e63a71e98d25980.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -535,7 +535,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This algorithm extracts all style objects (symbols, color ramps, text formats and label settings) from a QGIS project and stores them in a new style XML database, which can then be managed and imported via the Style Manager dialog.
 
-![image44](images/entries/8d6075eb1c4fc38b76f9761836048e940be408f8.PNG)
+![image44](images/entries/8d6075eb1c4fc38b76f9761836048e940be408f8.webp)
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
@@ -545,7 +545,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 For file or folder inputs in Processing models we\'ve added a new file filter setting (with some standard file formats available as an optional preset), and now allow you to set a default value for these inputs.
 
-![image45](images/entries/94fe90f54308a81c5f031066c132e1ad5e8e6ac2.PNG)
+![image45](images/entries/94fe90f54308a81c5f031066c132e1ad5e8e6ac2.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -557,7 +557,7 @@ The new \"Combine style databases\" algorithm combines multiple QGIS style datab
 
 It works brilliantly with results generated by running the \"Create style database from project\" in a batch mode!
 
-![image46](images/entries/479f2a711f8c4b254e72348eda3c79187d4117f2.PNG)
+![image46](images/entries/479f2a711f8c4b254e72348eda3c79187d4117f2.webp)
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
@@ -567,7 +567,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The existing Generate XYZ tiles algorithm has been optimised and can now generate tiles using multiple processing threads.
 
-![image47](images/entries/60aac076d447f244dd232a8e8766a109032a9540.png)
+![image47](images/entries/60aac076d447f244dd232a8e8766a109032a9540.webp)
 
 This feature was developed by Isghj5
 
@@ -575,7 +575,7 @@ This feature was developed by Isghj5
 
 To complement the spatial bookmark overhaul in QGIS 3.10, we\'ve added new Processing algorithms which allow you to create a bunch of new bookmarks corresponding to the features from a layer, or to export existing spatial bookmark extents to a new polygon layer.
 
-![image48](images/entries/d0471bc7ea65e476537c8828a7850a64ca9120ef.png)
+![image48](images/entries/d0471bc7ea65e476537c8828a7850a64ca9120ef.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -591,7 +591,7 @@ Optionally, the separator string can be a regular expression for added flexibili
 
 This algorithm was designed for use in models which need to process input files with multiple concatenated values in a single attribute, e.g. geocoding a table with \"address1,address2,address3\" format strings.
 
-![image49](images/entries/a0adf902641c8ace142d9749e632e114262342cd.png)
+![image49](images/entries/a0adf902641c8ace142d9749e632e114262342cd.webp)
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
@@ -601,7 +601,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 Previously available as a plugin, the \"Climb Along Line\" algorithm has been added to the out-of-the-box QGIS toolset. This algorithm calculates the accumulated height differences for lines in an input line layer, calculated using the Z values of the line vertices. A copy of the input line layer is returned with additional attributes for accumulated climb and descent, as well as the minimum and maximum Z values for each line.
 
-![image50](images/entries/1b68212fa4a991c79f7d352b5ee3798d0e9a10a3.png)
+![image50](images/entries/1b68212fa4a991c79f7d352b5ee3798d0e9a10a3.webp)
 
 This feature was developed by [Håvard Tveite (NMBU) and Matteo Ghetta (Faunalia)](https://www.faunalia.eu)
 
@@ -609,7 +609,7 @@ This feature was developed by [Håvard Tveite (NMBU) and Matteo Ghetta (Faunalia
 
 We ported the Create Grid algorithm from Python to C++ in order to speed up the algorithm. The algorithm now performs much faster for you and is also capable of creating point\|line\|rectangle\|diamond\|hexagon regular vector grids in high resolution in huge extents (eg. whole nations) in a reasonable amount of time.
 
-![image51](images/entries/6ef35bc88e69aaf92f5f223249bf792ffd4d28d5.png)
+![image51](images/entries/6ef35bc88e69aaf92f5f223249bf792ffd4d28d5.webp)
 
 This feature was funded by [Clemens Raffler](https://twitter.com/root676)
 
@@ -621,7 +621,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 QGIS\' Browser panel just keeps getting more and more powerful! In 3.10, we\'ve added a new option when right-clicking a QGIS project within the browser: \"Extract Symbols\". Selecting this option opens a style manager dialog showing all symbols, color ramps, text formats and label settings from the selected project, allowing you to easily export the browse these symbols.
 
-![image52](images/entries/4c9dd54203cbce44f91e85ed1ff01f1cbb4a40c5.png)
+![image52](images/entries/4c9dd54203cbce44f91e85ed1ff01f1cbb4a40c5.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -633,7 +633,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 A curated QGIS news feed is now shown on the welcome page. This finally gives us a direct channel to push project news to ALL our users! Expect to see lots of interesting QGIS news, tips, and events coming your way!
 
-![image53](images/entries/d3822539302bcd15ae05ef697abafaa1aa5c3ae4.png)
+![image53](images/entries/d3822539302bcd15ae05ef697abafaa1aa5c3ae4.webp)
 
 This feature was funded by QGIS.org
 
@@ -643,7 +643,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 QGIS 3.10 allows you to measure angles in two new units, milliradians (SI definition) and mil (NATO) units.
 
-![image54](images/entries/f208b7c32bfe608a448dc2e9359de20e3e4397dd.png)
+![image54](images/entries/f208b7c32bfe608a448dc2e9359de20e3e4397dd.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -653,7 +653,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We\'ve added a new \"search\" box to the Interface Customization dialog, which allows you to filter through the widgets and easily find the widget you are trying to customize\...
 
-![image55](images/entries/57f395b303ba963e67242e0f2cfe7104e61f2ad0.png)
+![image55](images/entries/57f395b303ba963e67242e0f2cfe7104e61f2ad0.webp)
 
 This feature was developed by DelazJ
 
@@ -661,7 +661,7 @@ This feature was developed by DelazJ
 
 When a layer path is fixed in a project, QGIS 3.10 will automatically scan through all other broken paths and try to auto-fix any others which were also pointing to the same original broken file path. Any change which speeds up fixing broken layer paths is a welcome change in our view!
 
-![image56](images/entries/0119e6f0b3d950d613d224d7bbd53a38575b3579.png)
+![image56](images/entries/0119e6f0b3d950d613d224d7bbd53a38575b3579.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -675,7 +675,7 @@ We also added a brand new bookmark editor dialog, which features an extent widge
 
 Bookmarks can also now be dragged and dropped onto canvases, allowing secondary canvases to zoom to a particular bookmark. This allows bookmarks to play nice in multi-canvas projects, since you can drop them onto a specific canvas to zoom.
 
-![image57](images/entries/8329961bfa04631c5a970888f9a21bad66ddc6fa.png)
+![image57](images/entries/8329961bfa04631c5a970888f9a21bad66ddc6fa.webp)
 
 This feature was developed by Mathieu Pellerin, Nyall Dawson
 
@@ -683,7 +683,7 @@ This feature was developed by Mathieu Pellerin, Nyall Dawson
 
 Ever spend 10 minutes painstakingly creating an interactive selection of features, only to accidentally deselect them all through an errant mouse click? If so, this feature is designed just for you! Now, you can restore a layer\'s selection following a selection clear operation via the new \"Reselect Features\" option in the Edit menu.
 
-![image58](images/entries/e1234a3ca30866b91f64f97b83fdf0fb90838cb6.png)
+![image58](images/entries/e1234a3ca30866b91f64f97b83fdf0fb90838cb6.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -699,7 +699,7 @@ This feature was developed by Oslandia
 
 QGIS 3.10 includes the ability to directly use Project Templates from the welcome page. Additionally, you can now ship project templates to your whole organisation by placing them in a system folder, next to the already existing possibility to put it into a user profile folder.
 
-![image59](images/entries/5adaa5a973e0b232bae3a8dbab8739c8887ac70e.png)
+![image59](images/entries/5adaa5a973e0b232bae3a8dbab8739c8887ac70e.webp)
 
 This feature was funded by [The QGIS Project](https://www.qgis.org)
 
@@ -735,7 +735,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 We\'ve added optional support for Z and M fields to QGIS\' delimited text provider, allowing you to create Z or M enabled layers directly from CSV files.
 
-![image60](images/entries/bfaa5fc4c03d27e5345475172f5e7bdb20a4f6ff.png)
+![image60](images/entries/bfaa5fc4c03d27e5345475172f5e7bdb20a4f6ff.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -753,7 +753,7 @@ This feature was developed by [Peter Petrik, Martin Dobias](http://www.lutracons
 
 Earlier QGIS server versions had rendering issues when remote SVG files were used in a project (e.g. those hosted via external http servers). We\'ve improved how QGIS Server fetches these resources, and it\'s now possible to use remote SVG paths in your layers and publish them as WMS without rendering issues in QGIS Server.
 
-![image61](images/entries/71d731c71f864fcb542f2f7ec52c68e4c03068d3.png)
+![image61](images/entries/71d731c71f864fcb542f2f7ec52c68e4c03068d3.webp)
 
 This feature was funded by [Ifremer](https://sextant.ifremer.fr/)
 
@@ -763,7 +763,7 @@ This feature was developed by [René-Luc D\'Hont (3Liz)](https://www.3liz.com/)
 
 In QGIS 3.10 a WMS server can provide support for several type of dimensions such as time, elevation or other types of dimensions. The dimension has to be defined as the layer level and can be used by the WMS client to filter requested information. WMS Time is part of the WMS Dimension.
 
-![image62](images/entries/45744c5a4a4c94e1c71a91bcfa7b672333002e75.png)
+![image62](images/entries/45744c5a4a4c94e1c71a91bcfa7b672333002e75.webp)
 
 This feature was funded by [Ifremer](https://sextant.ifremer.fr/)
 
@@ -777,7 +777,7 @@ This is a completely new implementation that provides an HTML and JSON based ser
 
 More information is available in the [documentation](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/services.html#wfs3-ogc-api-features)
 
-![image63](images/entries/81af9beefcd8522ecc0f953b2a6b9b4895e35675.png)
+![image63](images/entries/81af9beefcd8522ecc0f953b2a6b9b4895e35675.webp)
 
 This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
 

@@ -4,9 +4,9 @@ title: "Debian / Ubuntu Nightly LTR Packages"
 subtitle: "QGIS nightly LTR packages for Debian and Ubuntu"
 draft: false
 sidebar: true
-url: '/linux-packages/debian-nightly-ltr'
 aliases:
   - /linux-packages/ubuntu-nightly-ltr
+  - /linux-packages/debian-nightly-ltr
 ---
 
 {{< content-start >}}

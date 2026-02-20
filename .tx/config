@@ -1,0 +1,17 @@
+[main]
+host = https://app.transifex.com
+
+
+[o:qgis:p:qgis-website:r:qgis-hugo-docs-md]
+file_filter = translations/<lang>/messages.po
+source_file = translations/en/messages.pot
+source_lang = en
+type = PO
+resource_name = qgis-hugo-docs-md
+
+[o:qgis:p:qgis-website:r:qgis-hugo-docs-yml]
+file_filter = tx-temp/<lang>.yml
+source_file = tx-temp/en.yml
+source_lang = en
+type = YML
+resource_name = qgis-hugo-docs-yml

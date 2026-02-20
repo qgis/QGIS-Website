@@ -4,9 +4,9 @@ title: "Debian / Ubuntu Nightly Release Packages"
 subtitle: "QGIS nightly release packages for Debian and Ubuntu"
 draft: false
 sidebar: true
-url: '/linux-packages/debian-nightly-release'
 aliases:
   - /linux-packages/ubuntu-nightly-release
+  - /linux-packages/debian-nightly-release
 ---
 
 {{< content-start >}}

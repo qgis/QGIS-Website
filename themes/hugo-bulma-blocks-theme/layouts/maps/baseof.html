@@ -266,7 +266,7 @@
             {{- block "main" . }}{{ end }}
         </main>
         {{- partialCached "icons" . }}
-        {{- partialCached "footer" . }}
+        {{- partial "footer" . }}
         <script
             type="text/javascript"
             src="{{ $bundle.Permalink }}"

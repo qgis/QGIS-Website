@@ -4,7 +4,6 @@ title: "Download"
 subtitle: ""
 draft: false
 sidebar: true
-url: '/download'
 HasDownloadBanner: true
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
@@ -30,7 +29,6 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 
 {{< rich-content-end >}}
 {{< rich-right-start mode="html" >}}
-<!-- {{< stripe-widget otherMethods="true" skipToDownload="true" >}} -->
 {{< payrexx-widget otherMethods="true" skipToDownload="true" >}}
 {{< rich-right-end >}}
 {{< rich-box-end >}}

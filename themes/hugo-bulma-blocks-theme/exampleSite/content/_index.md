@@ -10,22 +10,19 @@ heroSize: "is-large"
 {{< block
     title="Map."
     subtitle="Create, manage, analyze and share data on desktop, mobile and cloud."
-    class="is-info"    
+    class="is-info"
     sub-block-side="left"
-
 >}}{{< /block >}}
 
 {{< block
     title="Share."
     subtitle="Generate high quality, print ready paper, digital and web reports. "
     sub-block-side="left"
-    class="is-danger"    
->}}{{< /block >}}
+    class="is-danger"    >}}{{< /block >}}
 
 
 {{< block
     title="Participate."
     subtitle="With a level playing field, everyone from individuals to multinational organisations can use and participate in the evolution of our software."
     sub-block-side="left"
-    class="is-warning"    
->}}{{< /block >}}
+    class="is-warning"    >}}{{< /block >}}

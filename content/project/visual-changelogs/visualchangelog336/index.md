@@ -59,7 +59,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 We've added display of custom layer properties for map layers within the layer properties information tab, making it easy for users to view any additional metadata and properties attached to their map layers.
 
-![](images/entries/393384efc22e1add7f41288a80b6e4bbd681b68d)
+![](images/entries/393384efc22e1add7f41288a80b6e4bbd681b68d.webp)
 
 This feature was developed by [Jorge Alexandre Delesderrier da Silva](https://github.com/jadsilva)
 
@@ -67,7 +67,7 @@ This feature was developed by [Jorge Alexandre Delesderrier da Silva](https://gi
 
 In 3.36, we've made QGIS a little bit cleverer in the way it handles saving of projects and images. The project type (.qgz, .qgs) or image format (.png, .jpg, .tif, etc.) is now (by default) determined by any file extension you've typed in the save dialog. This allows for a faster user experience when changing from one format to another, as you don't need to manually set an explicit format in advance via the format combo box!
 
-![](images/entries/6585d31ab7870351c8b58c9bec57e36df50f3018.png)
+![](images/entries/6585d31ab7870351c8b58c9bec57e36df50f3018.webp)
 
 This feature was developed by [Mathieu Pellerin (OPENGIS.ch)](https://www.opengis.ch/)
 
@@ -97,7 +97,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 In 3.36 we've added labeling support for mesh layers. Labels can be applied to mesh vertices, or mesh faces, and can take advantage of all the advanced formatting options and appearance settings that you get for vector labels. Labelling settings are available through layer properties dialog and the layer styling panel. Toggling mesh labels on and off can also be conveniently done through the layer panel's context menu.
 
-![](images/entries/42674b6a42180aa567bf76ec53db917e191f4595)
+![](images/entries/42674b6a42180aa567bf76ec53db917e191f4595.webp)
 
 This feature was funded by GÖTEBORGS STAD
 
@@ -109,7 +109,7 @@ This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.l
 
 You can now set a data-defined, dynamic color for 3D lines rendered using the "Render as simple 3D lines" option. This is extremely useful for visualising line features in 3D, eg displaying underground pipelines in different colors based on their classifications.
 
-![](images/entries/609eca4c0ebaa0b4dbf12d0dc4f4fae3fab5dc29)
+![](images/entries/609eca4c0ebaa0b4dbf12d0dc4f4fae3fab5dc29.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -121,7 +121,7 @@ The Phong shader is used as the default material for showing vector features in 
 
 For easier configuration of nicer-looking materials, we also added new controls for modifying the strength of the ambient, diffuse, and specular lighting contributions.
 
-![](images/entries/267232fa32fc1510a5c27c0364451699c1f415a1)
+![](images/entries/267232fa32fc1510a5c27c0364451699c1f415a1.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -155,7 +155,7 @@ A new "Size" column was added to the categories widget, which will appear blank 
 
 You can also use the right-click context menu to set the point size for multiple selected categories at once.
 
-![](images/entries/1be03fcdc04fd2f382222b9de4c41a8528090b0d.png)
+![](images/entries/1be03fcdc04fd2f382222b9de4c41a8528090b0d.webp)
 
 This feature was funded by Natural Resources Canada
 
@@ -175,7 +175,7 @@ We also added an option to filter large triangles (based on the maximum length o
 
 Be sure to check out the feature [Pull Request](https://github.com/qgis/QGIS/pull/55332) on GitHub for a showcase of the new functionality in different modes and contexts.
 
-![](images/entries/cc7d5061c43b895106162fc314cbd6712ee8256c.png)
+![](images/entries/cc7d5061c43b895106162fc314cbd6712ee8256c.webp)
 
 This feature was funded by National Resources Canada
 
@@ -221,7 +221,7 @@ This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.l
 
 We've added some new aliases for arguments to the aggregate expression functions, so that "minimum" and "maximum" can be used instead of "min" and"max" for these functions.
 
-![](images/entries/7f06f7f34b8a3fb756e8a982bb734d0439eadbdd.png)
+![](images/entries/7f06f7f34b8a3fb756e8a982bb734d0439eadbdd.webp)
 
 This feature was developed by [Harrissou Sant-anna](https://github.com/DelazJ)
 
@@ -277,7 +277,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 A super-helpful new shortcut we added to 3.36 is that any output paths (such as file, folder, or HTML outputs) in the Processing log are now clickable, allowing you to directly open the containing folder and preselect the generated file!
 
-![](images/entries/52699edf93f7fb8710fe715ccc5482ac2f299c9c)
+![](images/entries/52699edf93f7fb8710fe715ccc5482ac2f299c9c.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -293,7 +293,7 @@ QGIS 3.36 introduces a number of new tools for working with vector coverage laye
 
 These new tools rely on functionality from the GEOS geometry handling library. Our thanks go to the GEOS maintainers for making this work possible!
 
-![](images/entries/c9fa268bf003676d082860bdc8f8bfe53bee66d8.png)
+![](images/entries/c9fa268bf003676d082860bdc8f8bfe53bee66d8.webp)
 
 <div class="col-lg-8 col-md-offset-1">
 
@@ -312,7 +312,7 @@ We've introduced a number of new parameters to the "Export Layers to DXF" algori
 
 We've also fixed several shortcomings in the algorithm, including skipping layers within which no features were exported.
 
-![](images/entries/c151ba5e35152faf79d23401181bf21da3f46bca.png)
+![](images/entries/c151ba5e35152faf79d23401181bf21da3f46bca.webp)
 
 This feature was funded by [QGIS Swiss User Group (QGIS-CH)](https://www.qgis.ch/)
 
@@ -352,7 +352,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 For 3.36 you can now customize the connection speed (baud rate) to use for serial port sensors. Previously, this parameter was hardcoded at 9600 baud, limiting compatibility with various sensor types, such as NMEA sensors requiring 4800 baud. You can now connect to a wider array of sensors by adjusting the baud rate to meet specific requirements.
 
-![](images/entries/5c594b33da01255f2c3b2b126ee2221ff484fc6f.png)
+![](images/entries/5c594b33da01255f2c3b2b126ee2221ff484fc6f.webp)
 
 This feature was developed by [Jorge Tornero](https://github.com/jtornero)
 
@@ -382,7 +382,7 @@ This functionality was developed in line with [QEP 257](https://github.com/qgis/
 
 We've taken care to ensure that SensorThings data sources are loaded in the most optimised way possible, providing an streamlined, user-friendly way to load SensorThings data into your QGIS projects. This is just the beginning though, and we've more functionality and improvements planned for access to SensorThings sources in QGIS 3.38!
 
-![](images/entries/3802b455a5bdad53b1c7b8e9a7877b3c5988106f.png)
+![](images/entries/3802b455a5bdad53b1c7b8e9a7877b3c5988106f.webp)
 
 This feature was funded by [BRGM](https://www.brgm.fr/en), French PEPR OneWater - Eau Bien Commun ([https://www.onewater.fr/en](https://www.onewater.fr/en), ANR-22-PEXO-0009, under the Future Program France 2030) and [Water4All Partnership](https://www.water4all-partnership.eu/)
 
@@ -394,7 +394,7 @@ We enhanced the WFS Provider to add support for complex feature schemas. The imp
 
 For more details, see the [QGIS Enhancement Proposal](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/277).
 
-![](images/entries/587b31f23c77cdbd1589932f716759d3c2d3c015.png)
+![](images/entries/587b31f23c77cdbd1589932f716759d3c2d3c015.webp)
 
 This feature was funded by [QGIS user group Germany](https://qgis.de/)
 
@@ -412,7 +412,7 @@ This feature was developed by [mhugent](https://github.com/mhugent)
 
 The Layer Properties Dialog for Vector Tile layers will now include a section for editing the QGIS Server layer settings, providing the ability to configure layer-specific settings such as shortname, abstract, and other metadata.
 
-![](images/entries/4dd2ce2af31695f8e917b037c7dfcaaa798dd575)
+![](images/entries/4dd2ce2af31695f8e917b037c7dfcaaa798dd575.webp)
 
 This feature was developed by [Sandro Mani](https://github.com/manisandro)
 
@@ -464,7 +464,7 @@ This feature was developed by [Tomas Straupis](https://github.com/tomass)
 
 When importing vector data in the DB Manager core plugin, the "Input" combo box, which is populated with all the vector data in the layer tree, is now automatically set to the active layer whenever possible. This small change makes it much more user-friendly, especially when working with large and complex projects!
 
-![](images/entries/1c69e30e80b5ef71d5dec8a3c6b4854f191f22cc.png)
+![](images/entries/1c69e30e80b5ef71d5dec8a3c6b4854f191f22cc.webp)
 
 This feature was developed by [Patrice Pineault](https://github.com/TurboGraphxBeige)
 

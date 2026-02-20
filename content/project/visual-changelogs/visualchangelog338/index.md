@@ -47,7 +47,7 @@ Examples of some interesting temporal use cases include:
 -   representation of flooding over time
 -   representation of movement cost (e.g. GRASS' `r.walk`)
 
-![](images/entries/e9349bf2255cb4e027d1f91460eb4fea9710c4c1.png)
+![](images/entries/e9349bf2255cb4e027d1f91460eb4fea9710c4c1.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -77,7 +77,7 @@ A new option is provided on the configuration menu of the elevation controller, 
 
 It can be used when a specific elevation range width is desired, or when the range should always be zero width.
 
-![](images/entries/89ac87d5ec596dbd04f45be17dac9532d4a120b4.png)
+![](images/entries/89ac87d5ec596dbd04f45be17dac9532d4a120b4.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -87,7 +87,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new optional regex mode has been exposed for advanced search options, as implemented in the updated search functionality for the code editor.
 
-![](images/entries/2ab6a0a0e6837a51cf7e50a7104359fc063ced7e.png)
+![](images/entries/2ab6a0a0e6837a51cf7e50a7104359fc063ced7e.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -107,7 +107,7 @@ This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudice
 
 A new single-color symbology has been added for raster layers. This allows for a super simple and friendly way to render a raster using a single color.
 
-![](images/entries/73049b50b1c9d2e2c0c22fbfdd00db58d4ffc5c0.png)
+![](images/entries/73049b50b1c9d2e2c0c22fbfdd00db58d4ffc5c0.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -117,7 +117,7 @@ Wind Barbs are a common way to display wind strength and direction on maps, and 
 
 Wind barbs encode the wind speed in knots (nautical miles per hour) so users must explicitly select the relevant data units for their data to display correctly, or use a custom multiplier to convert the value to knots.
 
-![](images/entries/1f5b158227f114192f411835adfb8dd40d0a8900)
+![](images/entries/1f5b158227f114192f411835adfb8dd40d0a8900.webp)
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 
@@ -133,7 +133,7 @@ When the layer is set to the "around point" mode, then label candidates that are
 
 When the layer is set to the "cartographic" mode, then the default behavior is also to prioritize closer labels. A new combo box allows users to control the priority, with an option for preferring position ordering. If this option is set, candidates at the corresponding positions (e.g. top left) are preferred, regardless of how far they are from the point, with the labeling falling back to alternate positions only when no labels can be placed up to the maximum label distance.
 
-![](images/entries/cf8223309d9bf77cf5634a7166706e3b9841bda9.png)
+![](images/entries/cf8223309d9bf77cf5634a7166706e3b9841bda9.webp)
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
@@ -145,7 +145,7 @@ A new option for label placement has been added for "O" = "over point" when the 
 
 When a feature's data-defined placement priorities include this new 'O' option, a label can be placed directly over the corresponding point.
 
-![](images/entries/25c00222d0e6f17efda6784e8ce9a577275618a8.png)
+![](images/entries/25c00222d0e6f17efda6784e8ce9a577275618a8.webp)
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
@@ -169,7 +169,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A [regression](https://github.com/qgis/QGIS/issues/56981) resulted in QGIS stripping tab characters and limiting the ability to use tab characters in certain contexts, such as performing character alignment in legends.
 
-![](images/entries/b8934ab8ad907adbc628a9e168fcbd9c88af83ee.png)
+![](images/entries/b8934ab8ad907adbc628a9e168fcbd9c88af83ee.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -179,7 +179,7 @@ A button to copy (duplicate) the selected grid has been added to the print compo
 
 This simplifies the process of creating new grids which only have a few differences from an existing grid or using an existing grid as a template.
 
-![](images/entries/bad634a873669247fe13d334d080b0b1cb6e1363)
+![](images/entries/bad634a873669247fe13d334d080b0b1cb6e1363.webp)
 
 This feature was funded by [NaturalGIS](https://naturalgis.pt/)
 
@@ -201,7 +201,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 New buttons have been added to allow users to easily expand or collapse the legend trees within print layouts.
 
-![](images/entries/e3ada0021b7137123133b645093168bd483530a7.png)
+![](images/entries/e3ada0021b7137123133b645093168bd483530a7.webp)
 
 This feature was developed by [Harrissou Sant-anna](https://github.com/DelazJ)
 
@@ -229,7 +229,7 @@ There are three policy options currently available:
 -   **Default Value**: Not to be confused with the default mode, the default value setting resets new features to the feature form default as defined in the form designer (typically a QGIS Expression).
 -   **Remove Value**: Unsets and removes the field value (NULL).
 
-![](images/entries/76e7f27309a07b9bb7e61a074efa81c1340bfbed)
+![](images/entries/76e7f27309a07b9bb7e61a074efa81c1340bfbed.webp)
 
 This feature was developed by [signedav](https://github.com/signedav)
 
@@ -239,7 +239,7 @@ This mode can be used when each band in the raster layer is associated with a fi
 
 The user can either manually populate a table with begin/end dates for each band in the raster or build the table using QGIS expressions which return datetime values
 
-![](images/entries/7075b0b60ec0f0d4e5901e4d94452fa187b9a787)
+![](images/entries/7075b0b60ec0f0d4e5901e4d94452fa187b9a787.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -251,7 +251,7 @@ Users can set the lower and upper elevation range for the layer, and whether the
 
 When enabled, the layer will only be visible in 2D maps with elevation filtering active if the layer's range is included in the z range of the map.
 
-![](images/entries/64a2386154517472b58a41f2551b0d8d30951770.png)
+![](images/entries/64a2386154517472b58a41f2551b0d8d30951770.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -263,7 +263,7 @@ Users can set the lower and upper elevation range for the layer, and whether the
 
 When enabled, the layer will only be visible in 2D maps with elevation filtering active if the layer's range is included in the z range of the map.
 
-![](images/entries/88a53a76a505418c2ed776f70fb56cd5bd85031b)
+![](images/entries/88a53a76a505418c2ed776f70fb56cd5bd85031b.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -279,7 +279,7 @@ The layer configuration is exposed as a user-editable table of raster bands with
 
 Expression-based value definitions will allow users to design expressions capable of extracting useful information from file metadata that might otherwise be difficult to manipulate, such as the band names themselves, e.g. "Band 001: depth=-5500 (meters)".
 
-![](images/entries/9622032fd646ac79cc63e48ed30eca1841c9993b.png)
+![](images/entries/9622032fd646ac79cc63e48ed30eca1841c9993b.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -299,7 +299,7 @@ The expression will be evaluated when required to determine the actual elevation
 
 This differs from the"Fixed Elevation Range Per Band" mode which requires users to manually enter an elevation for each band separately, and these values are then treated as constants. That mode works best for rasters with non-regular steps in the band elevation values, while the dynamic mode is more suitable for data that includes regular elevation steps across each band.
 
-![](images/entries/d40450a1bcc9d3d2d3c5565681228b1d52256b69)
+![](images/entries/d40450a1bcc9d3d2d3c5565681228b1d52256b69.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -315,7 +315,7 @@ An optional setting has been added to dxf exports that will allow users to write
 
 Lines within DXF files having zero width typically remain minimal in the CAD regardless of zoom level, so this functionality can be quite useful for compatibility with exported DXFs that are edited with other software, especially in use cases where high data density is a concern.
 
-![](images/entries/1c7a18b41d42049e6c6ab7538d74d69406b837bb)
+![](images/entries/1c7a18b41d42049e6c6ab7538d74d69406b837bb.webp)
 
 This feature was funded by [Stadtwerke München](http://www.swm.de/)
 
@@ -325,7 +325,7 @@ This feature was developed by [mhugent](https://github.com/mhugent)
 
 It is now possible to override the output name of individual layers exported, with new configuration options added to the DXF export dialogs for project exports, layer exports, and the Export layers to DXF Processing algorithm.
 
-![](images/entries/83f65d9f8afbd45ecc0fa6b2804a7981f6192e7e.png)
+![](images/entries/83f65d9f8afbd45ecc0fa6b2804a7981f6192e7e.webp)
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 
@@ -337,7 +337,7 @@ Additional enhancements have been added to the capability of utilizing reference
 
 A process of attribute hashing is utilized to optimize the performance and account for all possible attribute combinations. In instances where many combinations are unique, each block would only be used nearly once - resulting in a large output file. To manage such cases, the "Export Project to DXF" dialog now includes new configuration options to limit the number of blocks per symbol layer (-1 means no limitation). If the limit is set to an integer value, e.g. 5, then only the 5 blocks with the highest number of references are created and the other symbols are written inline.
 
-![](images/entries/5de078fe33adb052f1177d7359432e69c84d81fa.png)
+![](images/entries/5de078fe33adb052f1177d7359432e69c84d81fa.webp)
 
 This feature was funded by [Stadtwerke München](http://www.swm.de)
 
@@ -349,7 +349,7 @@ A new option has been added to DXF export dialogs that will allow users to expor
 
 By default, this setting will be set to false.
 
-![](images/entries/28e6ac14aac9b118efadc23167f795da2bc0c19c.png)
+![](images/entries/28e6ac14aac9b118efadc23167f795da2bc0c19c.webp)
 
 This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
 
@@ -361,7 +361,7 @@ Users to save and restore GUI settings for the DXF Export dialog, making it poss
 
 Settings are exported to an XML file which can be loaded into the DXF Export configuration interface, overwriting the existing configuration values.
 
-![](images/entries/7f343b6a090823e6a090f4a33423cdd52fb655a8)
+![](images/entries/7f343b6a090823e6a090f4a33423cdd52fb655a8.webp)
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 
@@ -373,7 +373,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 CMYK color support has been added for the color widget in line with the [CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283).
 
-![](images/entries/b5572a60bcc06b580b55f42d2b87f6825daa5774)
+![](images/entries/b5572a60bcc06b580b55f42d2b87f6825daa5774.webp)
 
 This feature was funded by Métropôle de Bordeaux
 
@@ -395,7 +395,7 @@ Previously, the autocomplete function would match from the beginning of the stri
 
 The old behavior is still the default for autocomplete, making this setting an opt-in operation.
 
-![](images/entries/3834e0b22600cce776ac149910fd9246bda6bd9c.png)
+![](images/entries/3834e0b22600cce776ac149910fd9246bda6bd9c.webp)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -403,7 +403,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 Grouping functionality has been added for the value relation editor widget, allowing users to regroup items into buckets of values. Users are also given the option to show the group value as a group header name in the combo box and table widgets.
 
-![](images/entries/3ef4fa48ee89cc91babb736dd477a1db6b66bcbc.png)
+![](images/entries/3ef4fa48ee89cc91babb736dd477a1db6b66bcbc.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -417,7 +417,7 @@ Users can control the text for the min/ max labels, the direction of the bar, an
 
 This update also introduced changes to the internal API for vector renderers so that renderers have the flexibility to create other types of legend nodes other than `QgsSymbolLegendNodes` and provides the opportunity for future extensions to existing renderers.
 
-![](images/entries/06b024c9294de21d36cc6efb702c342106a6242d)
+![](images/entries/06b024c9294de21d36cc6efb702c342106a6242d.webp)
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
@@ -439,7 +439,7 @@ A new tree display is provided for review of processing history entries, where t
 
 This provides more useful information for users browsing the history, while still making all the previous information available.
 
-![](images/entries/34df4b46463545d3d9fc20168d386ffc04d9341d.png)
+![](images/entries/34df4b46463545d3d9fc20168d386ffc04d9341d.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -467,7 +467,7 @@ This is designed as a helpful debugging action. If a user's model fails (or give
 
 An additional "View Log" action has also been provided so that users can see the log for each child after the algorithm dialog has been closed down.
 
-![](images/entries/f4357f5df60617753cb9fc215f4cce96f34139b2.png)
+![](images/entries/f4357f5df60617753cb9fc215f4cce96f34139b2.webp)
 
 This feature was funded by City of Canning
 
@@ -520,7 +520,7 @@ The API for project objects has also been extended to support this functionality
 -   verticalCrs(): A new project method for fetching the Vertical Reference System
 -   [crs3D()](https://github.com/qgis/QGIS/pull/57107): An explicit getter for retrieving a compound reference system (combination of crs and verticalCrs)
 
-![](images/entries/83cc370834aa045a61e3021da640753f406f4a23.png)
+![](images/entries/83cc370834aa045a61e3021da640753f406f4a23.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -530,7 +530,7 @@ This setting allows users to specify the upper and lower elevation limits associ
 
 This can be specified through the Elevation tab (renamed from "Terrain") in the Project Properties and extends the API of the QgsProjectElevationProperties class.
 
-![](images/entries/c9f0765306562047cdba7a675587d484d5a7ce51.png)
+![](images/entries/c9f0765306562047cdba7a675587d484d5a7ce51.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -546,7 +546,7 @@ This functionality is best used when combined with some extent, feature limit, o
 
 An option to limit the number of child features returned when expanding is provided. By default, a conservative amount of features will be returned to reduce the load on services and require users to explicitly "opt-in" to fetch large amounts of features.
 
-![](images/entries/457f84d686c8c91d0fc894920ab462511226c0d2)
+![](images/entries/457f84d686c8c91d0fc894920ab462511226c0d2.webp)
 
 This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
@@ -568,7 +568,7 @@ A new data frame delimiter option has been added to the serial port sensor confi
 
 In cases where multiple data frames are found in the last chunk of data pushed by the serial port, this implementation will return all data frames. Users can then use an expression to further split the returned last data value from the sensor into individual frames (e.g. using string\_to\_array).
 
-![](images/entries/6cc5c72f2a9ff329f8a507e63e28d3771b26c0d3.png)
+![](images/entries/6cc5c72f2a9ff329f8a507e63e28d3771b26c0d3.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -618,7 +618,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new prefix field is provided in ArcGIS settings dialogs that allows users to define the URL prefix of a web proxy used to access ArcGIS Services which will be prepended to all requests.
 
-![](images/entries/671e0f4b015b4a575c6bb1255317f0af56a6c056.png)
+![](images/entries/671e0f4b015b4a575c6bb1255317f0af56a6c056.webp)
 
 This feature was developed by [Vytax](https://github.com/Vytax)
 
@@ -628,7 +628,7 @@ Stored extent metadata can be utilized with the new "use estimated metadata" con
 
 Although costly aggregation functions are avoided whenever the extent is recomputed, the extent information for HANA tables is only available after a delta merge. By default, this option will leverage a fallback to the standard behavior of using aggregation functions to compute extents in cases where the data is unavailable(or has not yet been computed).
 
-![](images/entries/cf6ffc5f71ca8d57e9f3f717bf3e960c5afb51e4.png)
+![](images/entries/cf6ffc5f71ca8d57e9f3f717bf3e960c5afb51e4.webp)
 
 This feature was developed by [Johannes Quast](https://github.com/jatsqi)
 
@@ -642,7 +642,7 @@ This default also works when adding WMS layers from the browser and it can be ov
 
 The default user experience has not changed when adding layers from the data source manager, so the default of 10 still applies unless it is explicitly set from the connection settings.
 
-![](images/entries/aa3907488d32cf1e90bb04115dfacffb5cdfee21)
+![](images/entries/aa3907488d32cf1e90bb04115dfacffb5cdfee21.webp)
 
 This feature was funded by [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/)
 
@@ -664,7 +664,7 @@ The new replace functionality allows replacing matching text. If the regex find 
 
 In addition, the processing script editor has been ported to leverage the `QgsCodeEditorWidget` class and functionalities.
 
-![](images/entries/286b7da77b39735f963327f8c0c373a4530023fc.png)
+![](images/entries/286b7da77b39735f963327f8c0c373a4530023fc.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -678,7 +678,7 @@ To do so, plugins should subclass `QgsAbstractPluginSource` and pass it to the r
 
 Like other QGIS registries, the profile source registry is available from the `QgsApplication` object: `QgsApplication.profileSourceRegistry()`.
 
-![Custom profile source example](images/entries/custom_profile_source.png)
+![Custom profile source example](images/entries/custom_profile_source.webp)
 
 This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
 

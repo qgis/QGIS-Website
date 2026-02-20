@@ -9,6 +9,9 @@ export class RoadmapPage {
     public readonly date: Locator;
     public readonly weekNumber: Locator;
     public readonly weeks: Locator;
+    public readonly abbreviation: Locator;
+    public readonly description: Locator;
+    public readonly ltr: Locator;
     public readonly longTermReleaseBegin: Locator;
     public readonly regularReleaseBegin: Locator;
     public readonly featureFreezeEnd: Locator;
@@ -53,7 +56,14 @@ export class RoadmapPage {
         this.date = this.page.getByRole("columnheader", { name: "Date" });
         this.weekNumber = this.page.getByRole("columnheader", { name: "Week #" });
         this.weeks = this.page.getByRole("columnheader", { name: "Weeks" });
-        this.longTermReleaseBegin = this.page.getByRole("columnheader", {
+        this.abbreviation = this.page.getByRole("columnheader", {
+            name: "Abbreviation",
+        });
+        this.description = this.page.getByRole("columnheader", {
+            name: "Description",
+        });
+        this.ltr = this.page.getByRole("cell", { name: "LTR", exact: true });
+        this.longTermReleaseBegin = this.page.getByRole("cell", {
             name: "Long term release, begin of",
         });
         this.regularReleaseBegin = this.page.getByRole("cell", {

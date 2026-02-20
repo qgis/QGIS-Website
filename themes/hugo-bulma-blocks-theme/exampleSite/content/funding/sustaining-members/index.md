@@ -25,12 +25,11 @@ expensive for volunteer developers.
     subtitle="Organizations or individuals interested in supporting our project should contact the treasurer, Joe Bloggs(finances@example.com), with questions, requests for becoming a sustaining member, invoices or to make arrangements."
     image=""
     sub-block-side="left"
-    class="is-primary"    
+    class="is-primary"
     title-size="is-4"
     subtitle-size="is-6"
     link="mailto:finance@example.com"
-    link-text="Contact our treasurer"
->}}{{< /block >}}
+    link-text="Contact our treasurer">}}{{< /block >}}
 
 
 {{< content-start >}}
@@ -82,8 +81,7 @@ We are transparent with the funds we receive and how we spend them. For more inf
 consult the financial reports and budgets.
 
 {{< button-bar 
-    "fa-solid fa-money-bill:Annual Financial Reports:reports/"
->}}
+    "fa-solid fa-money-bill:Annual Financial Reports:reports/">}}
 
 
 

@@ -1,9 +1,9 @@
 <div class="payrexx-widget donatbox">
     <p id="payrexx-donate-frequency-options">
         <a id="once" class="mr-4 is-active" onclick="updateOptions('once')"
-            >One-Time</a
+            >{{ i18n "oneTime" }}</a
         >
-        <a id="monthly" onclick="updateOptions('monthly')">Monthly</a>
+        <a id="monthly" onclick="updateOptions('monthly')">{{ i18n "monthly" }}</a>
     </p>
     <hr />
     <form id="donate-payrexx">
@@ -25,13 +25,13 @@
         class="button is-primary1"
         rel="noopener noreferrer"
         {{/* href to be set by js depending on selected donation */}}
-        >Donate
+        >{{ i18n "donate" }}
     </a>
 
     <div class="is-flex is-justify-content-space-between payrexx-widget-footer">
         {{ if .Get "otherMethods" }}
-            <a href="{{ absURL "funding/donate/" }}"
-                >Other methods, more info</a
+            <a href="{{ relLangURL "funding/donate/" }}"
+                >{{ i18n "otherMethodsMoreInfo" }}</a
             >
         {{ end }}
         <select
@@ -50,7 +50,7 @@
             id="hide-donate-prompt"
             onclick="hidePrompt()"
         >
-            Skip it and go to download
+            {{ i18n "skipToDownload" }}
         </button>
     {{ end }}
     {{ if .Get "alreadyDonated" }}
@@ -60,7 +60,7 @@
             id="hide-donate-prompt"
             onclick="hidePrompt()"
         >
-            Already donated? Hide this prompt
+            {{ i18n "alreadyDonated" }}
         </button>
     {{ end }}
 </div>

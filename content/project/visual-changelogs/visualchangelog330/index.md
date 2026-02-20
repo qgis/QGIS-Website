@@ -58,7 +58,7 @@ Raster layers now support MapTips, and new expression utility functions have bee
 -   `raster_attributes`: creates a map with the fields names as keys and the raster attribute table values as values from the attribute table entry that matches the given raster value
 -   a new \"Map Layer Position\" expression scope that defines a variable `@layer_cursor_point` with the layer coordinates (in the layer\'s CRS) under the mouse position
 
-![image3](images/entries/7cc33f0191d7461c103eef9eb792495d4b298dd6.png)
+![image3](images/entries/7cc33f0191d7461c103eef9eb792495d4b298dd6.webp)
 
 This feature was funded by NOAA OCS Hydrography
 
@@ -84,7 +84,7 @@ New constraint-based conditional styling and failing constraints feature filters
 
 This functionality provides filtering options to view or hide features that have failing (hard or soft) constraints, and introduces a new conditional styling type that works alongside the pre-existing row and field types to highlight features which fail to meet the layer constraints.
 
-![image5](images/entries/4ad89600c1e78bca863927f30581319b86afe6f1.png)
+![image5](images/entries/4ad89600c1e78bca863927f30581319b86afe6f1.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -113,7 +113,7 @@ GPS functionality has now been split up into distinct parts:
 
 The GPS information widget class is now responsible ONLY for showing the GPS information in the panel, and new dedicated classes have been created for handling digitizing from GPS, the new GPS toolbar, and GPS settings accordingly.
 
-![image6](images/entries/206ae34a728a37cae967f60887b5a7f2bbd94c0f.png)
+![image6](images/entries/206ae34a728a37cae967f60887b5a7f2bbd94c0f.webp)
 
 This feature was funded by NIWA
 
@@ -127,7 +127,7 @@ A new extension of the Styled Layer Descriptor (SLD) export API has been develop
 
 This development includes the export of complex polygon layer styles as external graphic symbols which are stored alongside the exported SLD.
 
-![image7](images/entries/cce332a4adc8cc7a24ead53acd8924431f1085f2.png)
+![image7](images/entries/cce332a4adc8cc7a24ead53acd8924431f1085f2.webp)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -153,7 +153,7 @@ Elevation shading settings are exposed to the user interface in the following co
 -   In project properties, in the same tab of the project elevation settings
 -   In the layer styling panel, a new tab has been created for defining global terrain shading settings
 
-![image8](images/entries/e75c69fb42f1916ceaf4b30f589154dc47881c6f.png)
+![image8](images/entries/e75c69fb42f1916ceaf4b30f589154dc47881c6f.webp)
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
@@ -168,7 +168,7 @@ This allows for:
 -   `<sup>superscript</sup>` / `<sub>subscript</sub>` components in text, where the text will be vertically super or subscript aligned and automatically sized to 2/3rd of the parent font size. Users can also set a fixed font size for the super/subscript by including the relevant CSS rules in their HTML, e.g. `<sup style="font-size:33pt">super</sup>`
 -   `vertical-align: super` or `vertical-align: sub` CSS formatting rules in any other HTML element
 
-![image9](images/entries/24e510e32b919b373d09e5fe8536cfc0dfd0d66e.png)
+![image9](images/entries/24e510e32b919b373d09e5fe8536cfc0dfd0d66e.webp)
 
 This feature was funded by OSGEO UK
 
@@ -188,7 +188,7 @@ The manner in which rendered features are limited is dependent on the source dat
 
 Extent-based feature filtering on mesh layers is still currently in development.
 
-![image10](images/entries/a8135c9cfcaa91fdc540512f36cf276a2cdb4f02.png)
+![image10](images/entries/a8135c9cfcaa91fdc540512f36cf276a2cdb4f02.webp)
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
@@ -237,7 +237,7 @@ A new `feature_id($feature)` expression function now allows for retrieving the f
 
 The function accepts one argument which must be a feature object. Accordingly, this function can be used with the results of any other function which returns feature objects, such as \"get_feature\", \"overlay\_\*\", etc.
 
-![image12](images/entries/6536913b10d68dded9a54bc58ba003b821b100f6.png)
+![image12](images/entries/6536913b10d68dded9a54bc58ba003b821b100f6.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -245,7 +245,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 New `is_feature_valid()` and `is_attribute_valid()` functions are provided in QGIS expressions. Both functions validate a feature or attribute, based on the constraints attached to fields for a given vector layer. This enables users to leverage the select-by-expression utility to locate features that have unmet constraints. In addition, users can now use the rule-based renderer to provide visual feedback through symbology indicating the constraint validity state of rendered features.
 
-![image13](images/entries/f6a73012edcc84033d40e91bc6216365fd4f5ae6.png)
+![image13](images/entries/f6a73012edcc84033d40e91bc6216365fd4f5ae6.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -342,7 +342,7 @@ This change includes additional configuration options for external resources, wi
 
 This functionality includes the development of the `QgsMediaWidget` object into the QGIS API for extended multimedia support.
 
-![image15](images/entries/75fcba5750d9ce4bb1b7ad41089dd39fd11ae827.png)
+![image15](images/entries/75fcba5750d9ce4bb1b7ad41089dd39fd11ae827.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -364,7 +364,7 @@ The widget renders as a blank space in the form, which creates a manual separati
 
 When the \"Draw line\" option is set in the configuration it will fill the vacant space with a line in a manner similar to the horizontal rule, or `<hr>` tag in html.
 
-![image17](images/entries/72c262227fb339abd30833edc712ead25d943044.png)
+![image17](images/entries/72c262227fb339abd30833edc712ead25d943044.webp)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -421,7 +421,7 @@ The optimal index will attempt to intelligently order layers by type (e.g. point
 
 In addition, drag and drop added layers will be added to the layer index tree at the location of the cursor when released to ensure the layer is rendered in a predictable and intuitive manner.
 
-![image21](images/entries/a2f44bdf5df6e8b33dc71c975cbb9c01cfa4845c.png)
+![image21](images/entries/a2f44bdf5df6e8b33dc71c975cbb9c01cfa4845c.webp)
 
 This feature was funded by [Funded by the QGIS user group Switzerland](https://www.qgis.ch/)
 
@@ -437,7 +437,7 @@ Three new optional advanced parameters have been exposed for the XYZ Tile genera
 -   Leaflet HTML output attribution
 -   Include OpenStreetMap basemap in Leaflet HTML output
 
-![image22](images/entries/a96f4972c9664c8887220b0a218103c053050e71.png)
+![image22](images/entries/a96f4972c9664c8887220b0a218103c053050e71.webp)
 
 This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
 
@@ -521,7 +521,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new elevation profile canvas item is available for [QGIS Quick](https://api.qgis.org/api/qgsquick.html), allowing the elevation profile tools to be used in other cross platform and mobile QGIS applications.
 
-![image24](images/entries/f870a9112a3577742c6f8c6a98b142b23145d525.png)
+![image24](images/entries/f870a9112a3577742c6f8c6a98b142b23145d525.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -537,7 +537,7 @@ The elevation profile has wide configuration options - you can specify:
 -   chart area borders and colors
 -   distance and elevation axes properties - intervals of labels, grid lines appearance, fonts and more
 
-![image25](images/entries/ca6f01c1c76d7cff23ff8d27492734c74b8c3973.png)
+![image25](images/entries/ca6f01c1c76d7cff23ff8d27492734c74b8c3973.webp)
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
@@ -603,7 +603,7 @@ A new combo box has been added in the new WMS and WMTS server dialog for configu
 
 Note that enabling smooth pixmap transform is recommended when automatic upscaling is active
 
-![image28](images/entries/a921de87af46b4774b94bd632e704527f840ea55.png)
+![image28](images/entries/a921de87af46b4774b94bd632e704527f840ea55.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -623,7 +623,7 @@ When such a layer is added to the project, a \"Select Items to Add\" dialog box 
 
 This enables the user to select one or several layers among ones of `NoGeometry`, `MultiPoint`, `MultiCurve`, `MultiSurface`, `GeometryCollection` types.
 
-![image32](images/entries/2068734219e240ca90b22435ca1381f3c8e4b9ef.png)
+![image32](images/entries/2068734219e240ca90b22435ca1381f3c8e4b9ef.webp)
 
 This feature was funded by [QGIS-DE user group](https://qgis.de)
 
@@ -663,7 +663,7 @@ The topology checker rules dialog now features check boxes which are attached to
 
 The topology checker panel also has a a new combo box below its toolbar to allow for quick filtering of errors to allow users to focus on a specific error type, although it will continue to display all error types by default.
 
-![image29](images/entries/52e54d9f31a12f024d3c452ecbc77fb3278c18e4.png)
+![image29](images/entries/52e54d9f31a12f024d3c452ecbc77fb3278c18e4.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -696,7 +696,7 @@ With the exception of the backtick and asterisk characters, the autoCloseBracket
 
 The autocompletion configuration is enabled by default for new releases, but a new settings interface is provided for granular control by users.
 
-![image30](images/entries/2ed531d2789b12d258d1503c8fb74e396f06e63d.png)
+![image30](images/entries/2ed531d2789b12d258d1503c8fb74e396f06e63d.webp)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 

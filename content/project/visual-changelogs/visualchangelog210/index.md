@@ -68,13 +68,13 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 It is now possible to edit join parameters (such as join prefix or columns to join) after a join has been created. Prior to this change one had to delete and recreate the whole join.
 
-![image14](images/entries/bb09241b7b997dfa07942ee5172ad466ebb777f7.png)
+![image14](images/entries/bb09241b7b997dfa07942ee5172ad466ebb777f7.webp)
 
 ### Feature: Layers with joins can now be filtered
 
 Prior to version 2.10 a layer couldn\'t be filtered if it had at least one join. Now it is still filterable, but only using columns of the original master table.
 
-![image15](images/entries/a2a93d4e621c1a2cfd976f3b0ec9673739aafda3.png)
+![image15](images/entries/a2a93d4e621c1a2cfd976f3b0ec9673739aafda3.webp)
 
 ### Feature: General improvements
 
@@ -87,7 +87,7 @@ As well as the numerous items listed below, the following improvements have been
 -   Greatly improved and more robust raster calculator and georeferencer tools
 -   Improved UI and workflow for the data defined label properties window
 
-![image16](images/entries/db0cb94196fd524d93236131418f6e5f3bbf6f25.png)
+![image16](images/entries/db0cb94196fd524d93236131418f6e5f3bbf6f25.webp)
 
 ### Feature: Improved handling of potential project file overwrites
 
@@ -95,7 +95,7 @@ QGIS 2.10 will now warn you when attempting to save you project if last modifica
 
 **This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
-![image17](images/entries/c30c07afc9123db564b766339daefe53af3cd348.jpg)
+![image17](images/entries/c30c07afc9123db564b766339daefe53af3cd348.webp)
 
 ### Feature: New geometry engine
 
@@ -118,7 +118,7 @@ Then add the layer `curves` to your project.
 
 **This feature was funded by:** [KantonSolothurn, Switzerland](http://www.sogis.ch/)
 
-![image18](images/entries/4f070e4075b4703edb40d8cb91d5fb527d1d3a93.png)
+![image18](images/entries/4f070e4075b4703edb40d8cb91d5fb527d1d3a93.webp)
 
 ## Analysis tools
 
@@ -126,13 +126,13 @@ Then add the layer `curves` to your project.
 
 Can display summary statistics (e.g. mean, standard deviation, \...) for a field or expression from a vector layer or selection. This is provided by means of a new dock panel that you can activate from the `View -> Panels -> Statistics` menu. Please note that you will only be able to generate statistics on **vector layers** that have a **numeric column**.
 
-![image1](images/entries/7d52fdffac5546ea3f39ee4dac5dbe19f961703a.png)
+![image1](images/entries/7d52fdffac5546ea3f39ee4dac5dbe19f961703a.webp)
 
 ### Feature: Use logarithmic functions in the raster calculator
 
 The raster calculator (`Raster -> Raster Calculator` in the QGIS menu) is a tool that allows you to perform matrix operations on one or more raster layers. With QGIS 2.10 you can now use `LN` and `LOG10` functions in the raster calculator.
 
-![image2](images/entries/13c65100ab57ed8f97fa23b08704ca726a7c33da.png)
+![image2](images/entries/13c65100ab57ed8f97fa23b08704ca726a7c33da.webp)
 
 ### Feature: New zonal statistics features
 
@@ -144,7 +144,7 @@ Zonal statistics provide a way to extract aggregate values for the pixels underl
 
 Note that zonal stats is a \'core plugin\' (a plugin that ships with your QGIS installer), but is disabled by default. You need to enable it in the plugin manager and then a menu entry for zonal statistics will appear in the `Raster` menu.
 
-![image3](images/entries/d86b8eb8a72d26a0fcb0bf043c9189e14a4ae125.png)
+![image3](images/entries/d86b8eb8a72d26a0fcb0bf043c9189e14a4ae125.webp)
 
 ## Browser
 
@@ -152,13 +152,13 @@ Note that zonal stats is a \'core plugin\' (a plugin that ships with your QGIS i
 
 When using the QGIS Browser dock panels (`View -> Panels -> Browser`), you and now enable a properties widget at the bottom of the file system tree. Any data source that you click on will have its properties shown in this panel. This makes it quick and convenient to see basic information about the dataset you have selected. To toggle the properties view, you should use the `i` icon at the top of the browser panel.
 
-![image4](images/entries/2f3fed9a32d761418704da2a7da378ba172164da.png)
+![image4](images/entries/2f3fed9a32d761418704da2a7da378ba172164da.webp)
 
 ### Feature: New browser icon
 
 The QGIS Browser is a separate, standalone application that allows you to browse and view the GIS datasets available to you (from your file system, database connections, web service connections etc.) In previous releases of QGIS we used a very similar icon to the QGIS application itself which has been the source of confusion for many users. In order to reduce the likeliness of opening the wrong application, we have created a new icon for QGIS Browser.
 
-![image5](images/entries/e76e98dffc99404f3cad540c42baebb434a696fe.png)
+![image5](images/entries/e76e98dffc99404f3cad540c42baebb434a696fe.webp)
 
 ## Data Providers
 
@@ -172,7 +172,7 @@ See also [this article on qgis.ch](http://www.qgis.ch/en/projects/dxf-export) ex
 
 **This feature was funded by:** Communities of Morges, Uster, Vevey and SIGE
 
-![image6](images/entries/b5ee8bd7a3412e429782a5e56954dabee05c36ff.png)
+![image6](images/entries/b5ee8bd7a3412e429782a5e56954dabee05c36ff.webp)
 
 ### Feature: PostGIS provider side expression filters
 
@@ -186,7 +186,7 @@ or
 
 `QgsVectorLayer::getFeatures( expression )`
 
-![image7](images/entries/4d4076579ecc0b5aace30fa2743f616a9b691a02.png)
+![image7](images/entries/4d4076579ecc0b5aace30fa2743f616a9b691a02.webp)
 
 ## Data management
 
@@ -198,13 +198,13 @@ Prior to version 2.8 you had to delete and recreate virtual fields if you wanted
 
 **This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
 
-![image8](images/entries/f45d5a4447f28d96a2c5c4cc6c27b84285096a02.png)
+![image8](images/entries/f45d5a4447f28d96a2c5c4cc6c27b84285096a02.webp)
 
 ### Feature: Line edit with auto-completer for ValueRelation edit widget
 
 The value relation edit widget for vector layers (`Layer -> Properties -> Fields -> Edit Widget -> Value Relation`) can now be set to autocomplete as you start typing in the input box it creates on the feature form.
 
-![image9](images/entries/4610dc0ab64a85ae020aeb22b4cbfcc8d45d0df3.png)
+![image9](images/entries/4610dc0ab64a85ae020aeb22b4cbfcc8d45d0df3.webp)
 
 ### Feature: Improvements to DB Manager
 
@@ -222,7 +222,7 @@ A new window in DB Manager helps the creation of SQL queries by means of widgets
 
 **These features were developed by**: Hugo Mercier / Oslandia
 
-![image10](images/entries/f5ad9f81ac37ff4dcfa754f83d23c2700ad4c9f8.png)
+![image10](images/entries/f5ad9f81ac37ff4dcfa754f83d23c2700ad4c9f8.webp)
 
 ### Feature: Filter chaining for relation reference widget
 
@@ -232,7 +232,7 @@ To select linked entries from other tables one can use the relation reference wi
 
 **This feature was funded by:** [SIGE](http://www.sige.ch/)
 
-![image11](images/entries/fd0d2e726135033e8e5a61b8a718535074a2ac0c.png)
+![image11](images/entries/fd0d2e726135033e8e5a61b8a718535074a2ac0c.webp)
 
 ## Diagrams
 
@@ -245,7 +245,7 @@ The diagram functionality in QGIS allows you to overlay small pie charts or hist
 -   Diagrams user interface has been refreshed to simplify the dialog and make it more user friendly
 -   Diagram classes are now shown in the layer\'s legend
 
-![image12](images/entries/cc5753de0538c89e3231f18c7ce62c7bc0afa5e8.png)
+![image12](images/entries/cc5753de0538c89e3231f18c7ce62c7bc0afa5e8.webp)
 
 ## Digitising
 
@@ -258,7 +258,7 @@ The geometry rotation tool is an advanced digitising tool that allows you to arb
 -   added support for snapping to angles (directly enabled when `using`shift + click\`\`)
 -   rotation anchor is defined on `CTRL+click` and not on mouse move
 
-![image13](images/entries/7ff32dd8c7ead358f9ffab4576dff33503154eb2.png)
+![image13](images/entries/7ff32dd8c7ead358f9ffab4576dff33503154eb2.webp)
 
 ## Labelling
 
@@ -266,7 +266,7 @@ The geometry rotation tool is an advanced digitising tool that allows you to arb
 
 When set to this mode, text alignment for labels are dependent on the final placement of the label relative to the point. Eg, if the label is placed to the left of the point then the label will be right aligned, and if it is placed to the right of the point then the label will be left aligned. This greatly improves the appearance of multiline labels for point layers.
 
-![image19](images/entries/851e7234a9509e2452dee69939d9de933a8bb90a.png)
+![image19](images/entries/851e7234a9509e2452dee69939d9de933a8bb90a.webp)
 
 ## Map Composer
 
@@ -280,7 +280,7 @@ Don\'t forget to also set the alignment of the scalebar, esp. if you want it to 
 
 **This feature was funded by:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
 
-![image20](images/entries/d435d4f94cf3d70a97c8d373aa08c28f8685defd.png)
+![image20](images/entries/d435d4f94cf3d70a97c8d373aa08c28f8685defd.webp)
 
 ## Programmability
 
@@ -294,7 +294,7 @@ We have made a number of changes and improvements that will be of interest to de
 -   Implicit sharing of classes : `QgsField`, `QgsFields`, `QgsDataDefined`, `QgsFeature`, `QgsGeometry`.
 -   Plugins can now create their own entries in the browser widget with two new classes : `QgsDataItemProvider` and `QgsDataItemProviderRegistry`.
 
-![image21](images/entries/c702d89260cbab35323c052a15ab5c5728fc7115.png)
+![image21](images/entries/c702d89260cbab35323c052a15ab5c5728fc7115.webp)
 
 ## QGIS Server
 
@@ -310,7 +310,7 @@ and change the tolerance values (in pixels) to suit your needs.
 
 **This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
 
-![image22](images/entries/29470cc51906dffe3a96d3e17a7e8c83b4504a18.png)
+![image22](images/entries/29470cc51906dffe3a96d3e17a7e8c83b4504a18.webp)
 
 ## Symbology
 
@@ -318,7 +318,7 @@ and change the tolerance values (in pixels) to suit your needs.
 
 Add options under categorised renderer advanced menu to set categories to symbols with a matching name from the style library or an XML style file.
 
-![image23](images/entries/c3fe0d0389c267271cbd47b8c44f52ac079961d7.jpg)
+![image23](images/entries/c3fe0d0389c267271cbd47b8c44f52ac079961d7.webp)
 
 ### Feature: Vary symbol sizes using the graduated renderer
 
@@ -328,13 +328,13 @@ Renderers are the subsystem of QGIS that allow you to create rich cartographical
 
 **This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
-![image24](images/entries/1d170efe9ca0c76e971cfe0f1d0adb7c4e14f08f.png)
+![image24](images/entries/1d170efe9ca0c76e971cfe0f1d0adb7c4e14f08f.webp)
 
 ### Feature: New option for preventing the automatic clipping of features to the map extent
 
 This option (located under the symbol advanced menu) disables the automatic clipping of lines/polygons to the canvas extent. In some cases this clipping results in unfavourable symbology (eg centroid fills where the centroid must always be the actual feature\'s centroid).
 
-![image25](images/entries/ecd30b6893fd93d65c95df8f069cc3c3e0fff7be.jpg)
+![image25](images/entries/ecd30b6893fd93d65c95df8f069cc3c3e0fff7be.webp)
 
 ### Feature: Size scale and rotation have been removed from the advanced menu
 
@@ -344,13 +344,13 @@ We have removed `SizeScale` and `Rotation` from `` `Layer -> Properties -> Symbo
 
 **This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
-![image26](images/entries/2e02fb11f0f967b1ea17331d9af3d5a22a63fed1.png)
+![image26](images/entries/2e02fb11f0f967b1ea17331d9af3d5a22a63fed1.webp)
 
 ### Feature: Data defined properties for font marker
 
 Most properties of the font marker can now be data defined, including marker size, rotation and character.
 
-![image27](images/entries/9ffd9d3284adcc85d6434f0b97f2db8974a7f647.jpg)
+![image27](images/entries/9ffd9d3284adcc85d6434f0b97f2db8974a7f647.webp)
 
 ### Feature: Visualise and modify the graduated renderer using a histogram
 
@@ -360,7 +360,7 @@ A new histogram tab has been added to the graduated renderer, which shows an int
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
-![image28](images/entries/b519e61b5b50de563203adf8ef35a7c037536332.png)
+![image28](images/entries/b519e61b5b50de563203adf8ef35a7c037536332.webp)
 
 ### Feature: Size, rotation and stroke-width expressions at the symbollist level
 
@@ -374,7 +374,7 @@ An assistant, with preview, is accessible through the data defined button to hel
 
 **This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
-![image29](images/entries/30f4392583400a0ed2fbdae3468265b91f39e675.png)
+![image29](images/entries/30f4392583400a0ed2fbdae3468265b91f39e675.webp)
 
 ### Feature: Live layer effects for layers and symbol layers
 
@@ -386,6 +386,6 @@ Live layer effects add to the already extensive cartographic capabilities of QGI
 
 **This feature was funded by:** [a crowd-funding initiative](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
 
-![image30](images/entries/2ce331bd884c14764989c1bc5e3c4d1f80ec588c.png)
+![image30](images/entries/2ce331bd884c14764989c1bc5e3c4d1f80ec588c.webp)
 
 {{< content-end >}}
