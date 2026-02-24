@@ -184,6 +184,11 @@ Added 2024
 * Damiano Lombardi, Switzerland
 
 
+Added 2026
+
+* Lova Andriarimalala, Madagascar
+
+
 ### OSGEO Voting Member
   
 *  Michael Smith [since 2015/16]
