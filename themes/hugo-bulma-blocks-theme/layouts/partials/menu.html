@@ -1,8 +1,234 @@
-{{ $isLocal := (or (eq .Site.BaseURL "/") (strings.Contains .Site.BaseURL "localhost")) }}
-{{ $locationPrefix := cond $isLocal "" .Site.Params.uniNavHeaderLocationPrefix }}
+{{/* Beautiful OSGeo Navigation */}}
+<nav class="navbar is-fixed-top is-osgeo-nav" role="navigation" aria-label="main navigation">
+    <div class="container">
+        {{/* Brand/Logo */}}
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ .Site.BaseURL }}">
+                <img src="{{ absURL "img/osgeo/osgeo-logo.svg" }}" alt="OSGeo" class="navbar-logo">
+            </a>
 
-<qg-top-nav
-    breakpoint="1024"
-    class="is-highest navbar is-fixed-top"
-    location-prefix="{{ $locationPrefix }}"
-></qg-top-nav>
+            {{/* Mobile Menu Toggle */}}
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="osgeoNavbar">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        {{/* Main Navigation Menu */}}
+        <div id="osgeoNavbar" class="navbar-menu">
+            <div class="navbar-start">
+                {{/* Projects Dropdown */}}
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="{{ absURL "projects" }}">
+                        Projects
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="{{ absURL "projects" }}">
+                            <span class="icon has-text-primary"><i class="fa-solid fa-cubes"></i></span>
+                            <span>
+                                <strong>OSGeo Projects</strong>
+                                <br><small class="has-text-grey">50+ incubated projects</small>
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "projects/community" }}">
+                            <span class="icon has-text-info"><i class="fa-solid fa-users"></i></span>
+                            <span>
+                                <strong>Community Projects</strong>
+                                <br><small class="has-text-grey">Projects working toward incubation</small>
+                            </span>
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="{{ absURL "about/incubation" }}">
+                            <span class="icon has-text-warning"><i class="fa-solid fa-egg"></i></span>
+                            <span>Incubation Process</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "initiatives/osgeolive" }}">
+                            <span class="icon has-text-success"><i class="fa-solid fa-compact-disc"></i></span>
+                            <span>OSGeoLive - Try All Projects</span>
+                        </a>
+                    </div>
+                </div>
+
+                {{/* Initiatives Dropdown */}}
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="{{ absURL "initiatives" }}">
+                        Initiatives
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="{{ absURL "initiatives/foss4g" }}">
+                            <span class="icon has-text-primary"><i class="fa-solid fa-globe"></i></span>
+                            <span>
+                                <strong>FOSS4G Conference</strong>
+                                <br><small class="has-text-grey">The annual global gathering</small>
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "initiatives/geo-for-all" }}">
+                            <span class="icon has-text-info"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <span>
+                                <strong>Geo for All</strong>
+                                <br><small class="has-text-grey">Open geospatial education</small>
+                            </span>
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="{{ absURL "initiatives/gsoc" }}">
+                            <span class="icon"><i class="fa-solid fa-laptop-code"></i></span>
+                            <span>Google Summer of Code</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "initiatives/osgeolive" }}">
+                            <span class="icon"><i class="fa-solid fa-compact-disc"></i></span>
+                            <span>OSGeoLive</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "local-chapters" }}">
+                            <span class="icon"><i class="fa-solid fa-map-location-dot"></i></span>
+                            <span>Local Chapters</span>
+                        </a>
+                    </div>
+                </div>
+
+                {{/* Community Dropdown */}}
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="{{ absURL "community" }}">
+                        Community
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="{{ absURL "community/getting-started" }}">
+                            <span class="icon has-text-success"><i class="fa-solid fa-rocket"></i></span>
+                            <span>
+                                <strong>Get Started</strong>
+                                <br><small class="has-text-grey">Begin your OSGeo journey</small>
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "local-chapters" }}">
+                            <span class="icon has-text-primary"><i class="fa-solid fa-map-location-dot"></i></span>
+                            <span>
+                                <strong>Local Chapters</strong>
+                                <br><small class="has-text-grey">Find your regional community</small>
+                            </span>
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="{{ absURL "community/mailing-lists" }}">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <span>Mailing Lists</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "community/irc" }}">
+                            <span class="icon"><i class="fa-solid fa-comments"></i></span>
+                            <span>Chat / IRC</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "events" }}">
+                            <span class="icon"><i class="fa-solid fa-calendar"></i></span>
+                            <span>Events</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "service-providers" }}">
+                            <span class="icon"><i class="fa-solid fa-building"></i></span>
+                            <span>Service Providers</span>
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="{{ absURL "community/code-of-conduct" }}">
+                            <span class="icon"><i class="fa-solid fa-heart"></i></span>
+                            <span>Code of Conduct</span>
+                        </a>
+                    </div>
+                </div>
+
+                {{/* About Dropdown */}}
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="{{ absURL "about" }}">
+                        About
+                    </a>
+                    <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="{{ absURL "about" }}">
+                            <span class="icon has-text-primary"><i class="fa-solid fa-info-circle"></i></span>
+                            <span>
+                                <strong>About OSGeo</strong>
+                                <br><small class="has-text-grey">Mission, vision & history</small>
+                            </span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "about/faq" }}">
+                            <span class="icon has-text-info"><i class="fa-solid fa-question-circle"></i></span>
+                            <span>FAQ</span>
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="{{ absURL "sponsors" }}">
+                            <span class="icon"><i class="fa-solid fa-handshake"></i></span>
+                            <span>Sponsors</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "about/awards" }}">
+                            <span class="icon"><i class="fa-solid fa-trophy"></i></span>
+                            <span>Awards</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "about/branding" }}">
+                            <span class="icon"><i class="fa-solid fa-palette"></i></span>
+                            <span>Branding</span>
+                        </a>
+                        <a class="navbar-item" href="{{ absURL "about/contact" }}">
+                            <span class="icon"><i class="fa-solid fa-paper-plane"></i></span>
+                            <span>Contact</span>
+                        </a>
+                    </div>
+                </div>
+
+                {{/* News Link */}}
+                <a class="navbar-item" href="{{ absURL "news" }}">
+                    News
+                </a>
+            </div>
+
+            {{/* Right Side - CTA Buttons */}}
+            <div class="navbar-end">
+                {{/* Search */}}
+                <a class="navbar-item" href="{{ absURL "search" }}" title="Search">
+                    <span class="icon"><i class="fa-solid fa-search"></i></span>
+                </a>
+
+                {{/* GitHub */}}
+                <a class="navbar-item" href="https://github.com/osgeo" target="_blank" rel="noopener" title="GitHub">
+                    <span class="icon"><i class="fa-brands fa-github"></i></span>
+                </a>
+
+                {{/* Support/Donate Button */}}
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-osgeo-primary is-rounded" href="{{ absURL "membership" }}">
+                            <span class="icon"><i class="fa-solid fa-heart"></i></span>
+                            <span>Support</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+{{/* Mobile Menu JavaScript */}}
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+        });
+    });
+
+    // Handle scroll for navbar shadow
+    const navbar = document.querySelector('.navbar.is-osgeo-nav');
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('is-scrolled');
+            } else {
+                navbar.classList.remove('is-scrolled');
+            }
+        });
+    }
+});
+</script>
