@@ -4,7 +4,7 @@ title: "UbuntuGIS Nightly LTR Packages"
 subtitle: "QGIS nightly LTR packages for UbuntuGIS"
 draft: false
 sidebar: true
-url: '/linux-packages/ubuntugis-nightly-ltr'
+aliases: ["/linux-packages/ubuntugis-nightly-ltr"]
 ---
 
 {{< content-start >}}

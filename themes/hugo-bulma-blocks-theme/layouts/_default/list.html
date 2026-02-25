@@ -23,7 +23,7 @@
                         <h3 class="">{{ .Title }}</h3>
                             <p> {{ .Description }}</p>
                             <a class="button is-primary1 " href="{{ .Permalink }}">
-                                <span>Read more</span>
+                                <span>{{ i18n "readMore" }}</span>
                             </a>
                     </div>
                     {{ if $has_right}}
@@ -39,4 +39,4 @@
 </section>
 
 {{ partial "pagination.html" }}
-{{ partial "footer.html" }}
+{{ partial "footer.html" . }}

@@ -4,7 +4,7 @@ title: "UbuntuGIS Packages"
 subtitle: "QGIS packages for UbuntuGIS"
 draft: false
 sidebar: true
-url: '/linux-packages/ubuntugis'
+aliases: ["/linux-packages/ubuntugis"]
 ---
 
 {{< content-start >}}

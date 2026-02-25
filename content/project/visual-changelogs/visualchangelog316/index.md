@@ -35,7 +35,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 Type the words \"user groups\" into the current coordinates window and watch the magic happen.
 
-![image2](images/entries/079434bceb5004b0ee2c4ad5d62edd1290c28575.png)
+![image2](images/entries/079434bceb5004b0ee2c4ad5d62edd1290c28575.webp)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
@@ -77,7 +77,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 
 The map canvas now has a right-click context menu. By default, it creates the \"Copy Coordinate\" menu that was introduced with QGIS 3.14, however, it is expected that this functionality will be extended to allow many more functionalities to be accessed with spatial context in the future.
 
-![image4](images/entries/f6e3ce9dca04583c9fa791204fe7e1a3c49c61d0.png)
+![image4](images/entries/f6e3ce9dca04583c9fa791204fe7e1a3c49c61d0.webp)
 
 This feature was developed by [jakimowb](https://api.github.com/users/jakimowb)
 
@@ -137,11 +137,11 @@ The following images illustrate the \"Align dash pattern to line length\" change
 
 Before:
 
-![image6](images/entries/87635346-39f11c00-c782-11ea-88bc-369866d7f57a.png)
+![image6](images/entries/87635346-39f11c00-c782-11ea-88bc-369866d7f57a.webp)
 
 After:
 
-![image7](images/entries/87635368-44131a80-c782-11ea-95d9-07fb7d00ffcf.png)
+![image7](images/entries/87635368-44131a80-c782-11ea-95d9-07fb7d00ffcf.webp)
 
 ![image8](images/entries/e1a4d82c248cdd0f04f236443897178c12574885.gif)
 
@@ -192,7 +192,7 @@ Negative values are not handled properly by stacked bar diagrams with or without
 
 Addresses [Issue 34915](https://github.com/qgis/QGIS/issues/34915)
 
-![image12](images/entries/09739c5bed021a99baec41c98b87f5335a4bf8ec.png)
+![image12](images/entries/09739c5bed021a99baec41c98b87f5335a4bf8ec.webp)
 
 This feature was developed by [Dan Minor](https://api.github.com/users/dminor)
 
@@ -208,7 +208,7 @@ This feature also introduces the ability to remove or save these memory dataset 
 
 ![image13](images/entries/85622744-4d9edc00-b635-11ea-91db-a02fa28e6bea.gif)
 
-![image14](images/entries/b27519025102be3b07fc8241f0ff8f8f2f9b31c6.png)
+![image14](images/entries/b27519025102be3b07fc8241f0ff8f8f2f9b31c6.webp)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -226,7 +226,7 @@ The identify tool has been adapted when used on mesh layers and now displays the
 
 When the map canvas does not have temporal navigation enabled, the identify results contain only information about the active dataset groups which have static datasets defined in the mesh properties dialog.
 
-![image15](images/entries/c4974747f5bc0dcba02f30a97e68bb5edacc5f48.png)
+![image15](images/entries/c4974747f5bc0dcba02f30a97e68bb5edacc5f48.webp)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -248,7 +248,7 @@ Virtual: purple
 
 ![image16](images/entries/86540129-a8a3bf00-bed0-11ea-94b8-bf29b5818cb8.gif)
 
-![image17](images/entries/803983acbaec38e8df0fb4fd12d28beef7399520.png)
+![image17](images/entries/803983acbaec38e8df0fb4fd12d28beef7399520.webp)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -268,7 +268,7 @@ This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcl
 
 TIN mesh layers can be created from vector layer data (vertices and/ or break lines). The resulting mesh is constructed with a constrained Delaunay triangulation. This mesh layer can be created using the python API or through an algorithm in the processing tool box.
 
-![image18](images/entries/fc8a9633b87b29bba052dacd166c0735b4449c90.png)
+![image18](images/entries/fc8a9633b87b29bba052dacd166c0735b4449c90.webp)
 
 This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcloarec)
 
@@ -298,7 +298,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 Shadows can now be rendered in 3D views.
 
-![image20](images/entries/ef724bf261c7740d3cc92238d71d5ecb32a190c3.jpeg)
+![image20](images/entries/ef724bf261c7740d3cc92238d71d5ecb32a190c3.webp)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -306,7 +306,7 @@ This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NE
 
 3D Scenes can now be exported for use in other 3D software, such as Blender. This export feature supports multiple additional functions including output model simplification by specifying the output resolution, optional model smoothing, and the exporting of 3D vector layers.
 
-![image21](images/entries/91c112ba42358124faec9c3427542524d6b593f9.png)
+![image21](images/entries/91c112ba42358124faec9c3427542524d6b593f9.webp)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -320,7 +320,7 @@ Added directional lights to QGIS 3D
 -   This is just a duplication of the already existing point lights implementation with some changes.
 -   Later it may be useful to add a way to visualize the light direction by displaying a mesh that is positioned at camera\'s view point like an arrow that displays how the sun lights the scene for example.
 
-![image22](images/entries/4dcd7d7f4bcfb71d765656bfe734ec32ddcaca9c.png)
+![image22](images/entries/4dcd7d7f4bcfb71d765656bfe734ec32ddcaca9c.webp)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -333,7 +333,7 @@ Texturing support has been added for QGIS 3D with the following new functionalit
 
 Some visual issues may appear when using textures. These issues relate to the normals of surfaces that you may be able to fix by checking \"add back faces\" and playing around with the invert normals and culling mode in the symbol properties.
 
-![image23](images/entries/1c4fc6ffc1b7a28aeff9c625fb6238998dd30b67.png)
+![image23](images/entries/1c4fc6ffc1b7a28aeff9c625fb6238998dd30b67.webp)
 
 This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NEDJIMAbelgacem)
 
@@ -341,7 +341,7 @@ This feature was developed by [Nedjima Belgacem](https://api.github.com/users/NE
 
 Users can now utilise and embed remote 3D models for 3D point symbols.
 
-![image24](images/entries/d4deaabbeddcf5f4784f602f19dabfac22b2d100.png)
+![image24](images/entries/d4deaabbeddcf5f4784f602f19dabfac22b2d100.webp)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -364,7 +364,7 @@ Further improvements for material handling were introduced, and a Gooch shading 
 -   The technique handling in the gooch material widget was improved to avoid showing settings that have no effect in a particular context (e.g. hiding all but the ambient color choice for simple 2D line symbols).
 -   A new material, \"Gooch\", was added. This material gives a CAD style 3D render, where the shading is not dependent on appropriate lighting setup in a scene and where the 3D details are always visible, regardless of the lighting choice.
 
-![image25](images/entries/b6df518d57147bfdfd207d4499363c9d4653721b.png)
+![image25](images/entries/b6df518d57147bfdfd207d4499363c9d4653721b.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -392,7 +392,7 @@ Allows for grid annotations which use buffers, shadows, background shapes, etc.
 
 ![image26](images/entries/86863750-26550e00-c10f-11ea-8dd4-1b740017949e.gif)
 
-![image27](images/entries/349efbc988ccbf3499e18ec4453b637abf893c38.png)
+![image27](images/entries/349efbc988ccbf3499e18ec4453b637abf893c38.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -420,7 +420,7 @@ Options exist for:
 
 ![image28](images/entries/86433831-191ad680-bd3f-11ea-9289-cc6d2b3e2e11.gif)
 
-![image29](images/entries/1f1343d09c75b0e1d131c25a79b905d7aaadbc35.png)
+![image29](images/entries/1f1343d09c75b0e1d131c25a79b905d7aaadbc35.webp)
 
 This feature was funded by City of Canning
 
@@ -467,7 +467,7 @@ New functionality was introduced which allows users to clip a map item to a shap
 
 ![image30](images/entries/88761088-c1428480-d1b1-11ea-90c0-a391d00b084d.gif)
 
-![image31](images/entries/7179282b09e8d196251f543a9c5f059f89c701e2.png)
+![image31](images/entries/7179282b09e8d196251f543a9c5f059f89c701e2.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -517,7 +517,7 @@ Returns the angle of the oriented minimum bounding box which covers the geometry
 
 Useful for data defined overrides in the symbology of label expressions, e.g. to rotate labels to match the overall angle of a polygon, and similar for line pattern fill. ![image33](images/entries/87367553-aae7d680-c5be-11ea-923a-e81200f2b90c.gif)
 
-![image34](images/entries/03463ac0a8303444d94806fb2ff66d6a73c56ccb.png)
+![image34](images/entries/03463ac0a8303444d94806fb2ff66d6a73c56ccb.webp)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
@@ -544,7 +544,7 @@ In all instances, the spatial operator is evaluated against the other layer. If 
 
 The `overlay_nearest` function has an additional max_distance filter.
 
-![image36](images/entries/d4bb059729eecfc689e001f731d59fff25225615.png)
+![image36](images/entries/d4bb059729eecfc689e001f731d59fff25225615.webp)
 
 This feature was developed by [Olivier Dalang, OPENGIS.ch](https://www.opengis.ch)
 
@@ -570,7 +570,7 @@ A toolbar button was added to enable switching between linear/circular: ![image3
 
 ![image39](images/entries/86938444-7089bf80-c10e-11ea-8fd0-0f419f71b52e.gif)
 
-![image40](images/entries/8145ccfa4e659f7d8315830cecfe2b2f391b9aa4.png)
+![image40](images/entries/8145ccfa4e659f7d8315830cecfe2b2f391b9aa4.webp)
 
 This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcloarec)
 
@@ -580,7 +580,7 @@ This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcl
 
 Adds a rescale raster algorithm to change raster value range, whilst preserving the shape of the raster\'s histogram. Useful for when rasters from different sources should be compared or processed together and their pixel values should be in the same range. By default, the algorithm preserves the NODATA value of the input raster but there is an option to override it.
 
-The following image displays a histogram of a DEM (value range is 85-243) ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.png) And the next image displays a histogram of same DEM rescaled to the range 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.png)
+The following image displays a histogram of a DEM (value range is 85-243) ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.webp) And the next image displays a histogram of same DEM rescaled to the range 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.webp)
 
 Addresses [Issue 26099](https://github.com/qgis/QGIS/issues/26099).
 
@@ -630,9 +630,9 @@ TODO: In the majority of cases, performance problems will be caused by one or mo
 
 In its current form, only the overall load time of each individual layer is displayed.
 
-![image47](images/entries/85852208-7bca1a80-b7f3-11ea-8882-b3253622b1b6.png)
+![image47](images/entries/85852208-7bca1a80-b7f3-11ea-8882-b3253622b1b6.webp)
 
-![image48](images/entries/943a79db68aee3458cb88cacd7a69b66fda3caea.png)
+![image48](images/entries/943a79db68aee3458cb88cacd7a69b66fda3caea.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -644,7 +644,7 @@ Help strings can now be specified at the parameter level.
 
 This will be visible in the tooltip, in the CLI and Python Processing API.
 
-![image55](images/entries/2196bcb0123ced5e180ffb2b9469a65a38dcc41b.png)
+![image55](images/entries/2196bcb0123ced5e180ffb2b9469a65a38dcc41b.webp)
 
 This feature was developed by [Étienne Trimaille](https://api.github.com/users/Gustry)
 
@@ -686,7 +686,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 There is now a native processing algorithm to save vector features to a file dataset within a model. It comes with a pair of advanced features to pass dataset and layer options on to GDAL.
 
-![image56](images/entries/b238631365830b019300700cf59c3a8dd3d05a4f.png)
+![image56](images/entries/b238631365830b019300700cf59c3a8dd3d05a4f.webp)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -712,7 +712,7 @@ A new native processing algorithm was added to export layout atlases as images.
 
 This is useful in models where remote datasets are processed with the goal of being used as atlas coverage layers.
 
-![image57](images/entries/e4f315e60743577c9f45ad44643fd5ba9778c040.png)
+![image57](images/entries/e4f315e60743577c9f45ad44643fd5ba9778c040.webp)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 
@@ -734,7 +734,7 @@ We added a **Cell statistics** raster analysis algorithm. It performs cell-wise 
 -   Range (max - min)
 -   Variety (count of unique values)
 
-![image49](images/entries/fca13f48b118ed13ebe84191a226ca0e20c37bfa.png)
+![image49](images/entries/fca13f48b118ed13ebe84191a226ca0e20c37bfa.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -742,7 +742,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 
 We have added some new raster algorithms that operate on a local cell-by-cell basis in a raster stack. The Equal to frequency algorithm evaluates on a cell-by-cell basis the frequency (number of times) the values of an input stack of rasters are equal to the value of a value raster.
 
-![image50](images/entries/e368e10cfa5e19992176930121e0cb846c3d1ca8.png)
+![image50](images/entries/e368e10cfa5e19992176930121e0cb846c3d1ca8.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -750,7 +750,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 
 We have added some new raster algorithms that operate on a local cell-by-cell basis in a raster stack. The Greater than frequency algorithm evaluates on a cell-by-cell basis the frequency (number of times) the values of an input stack of rasters are greater than the value of a value raster.
 
-![image51](images/entries/97228db861367c2875dab0533ab616bb2ac2432c.png)
+![image51](images/entries/97228db861367c2875dab0533ab616bb2ac2432c.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -758,7 +758,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We have added some new raster algorithms that operate on a local cell-by-cell basis in a raster stack. The Less than frequency algorithm evaluates on a cell-by-cell basis the frequency (number of times) the values of an input stack of rasters are less than the value of a value raster.
 
-![image52](images/entries/114853cd3d7c245b56edea0024704c853997275c.png)
+![image52](images/entries/114853cd3d7c245b56edea0024704c853997275c.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -766,7 +766,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We added some raster value position analysis tools with this new QGIS version: The *Lowest position in raster stack* algorithm evaluates on a cell-by-cell basis the position of the raster with the lowest value in a stack of rasters. Position counts start with 1 and range to the total number input rasters. The order of the input rasters is relevant for the algorithm.
 
-![image53](images/entries/f3383f5583c9096b1b8d1873679e1a495fac0485.png)
+![image53](images/entries/f3383f5583c9096b1b8d1873679e1a495fac0485.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -774,7 +774,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We added some raster value position analysis tools with this new QGIS version: The *Highest position in raster stack* algorithm evaluates on a cell-by-cell basis the position of the raster with the highest value in a stack of rasters. Position counts start with 1 and range to the total number input rasters. The order of the input rasters is relevant for the algorithm.
 
-![image54](images/entries/a730b8c1566c99bdebff09c783ae320b0c138d76.png)
+![image54](images/entries/a730b8c1566c99bdebff09c783ae320b0c138d76.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -823,7 +823,7 @@ A *Vector Drivers* tab is now available within the QGIS GDAL Settings window, wh
 
 This functionality directly addresses the limitations outlined in [Issue 18738](https://github.com/qgis/QGIS/issues/18738).
 
-![image59](images/entries/5cc48d8ea8bc276446f8eae4a1c838e0d1f91a40.png)
+![image59](images/entries/5cc48d8ea8bc276446f8eae4a1c838e0d1f91a40.webp)
 
 This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
 
@@ -833,7 +833,7 @@ MacOS previously had a platform-specific custom parameter setting Grass7Utils.GR
 
 This resolves [Issue 38595](https://github.com/qgis/QGIS/issues/38595).
 
-![image60](images/entries/e59bb83513293830df8ec4dcf825247b14dacc98.png)
+![image60](images/entries/e59bb83513293830df8ec4dcf825247b14dacc98.webp)
 
 This feature was developed by [Lutra Consulting (Peter Petrik)](https://api.github.com/users/PeterPetrik)
 
@@ -857,7 +857,7 @@ The following operations are supported on fields:
 
 ![image61](images/entries/87223743-a4b7e700-c37f-11ea-88a3-4b371bfadf89.gif)
 
-![image62](images/entries/d4e761ad977a712aa1fc1fbc65d61c886e6e79fb.png)
+![image62](images/entries/d4e761ad977a712aa1fc1fbc65d61c886e6e79fb.webp)
 
 This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
 
@@ -901,9 +901,9 @@ This feature was developed by [Julien Cabieces](https://api.github.com/users/tro
 
 New functionality has been introduced which allows advanced parameters to be specified when importing layers using the OGR data provider, opening a vast range of new possibilities, especially when working around expected dataset issues.
 
-![image64](images/entries/e1c7474d19828b39f5872b289a1e8ba994556a10-1.png)
+![image64](images/entries/e1c7474d19828b39f5872b289a1e8ba994556a10-1.webp)
 
-![image65](images/entries/4a2d99c6ef6ec12e5f63a29ad00d9ebc3cd534e2.png)
+![image65](images/entries/4a2d99c6ef6ec12e5f63a29ad00d9ebc3cd534e2.webp)
 
 This feature was developed by [Even Rouault](https://api.github.com/users/rouault)
 

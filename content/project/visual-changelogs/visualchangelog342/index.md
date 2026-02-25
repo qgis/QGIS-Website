@@ -223,7 +223,7 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 
 A new "Apply to all Pages" button has been added to the Page Properties panel for multi-page layouts so that users can more efficiently make changes to complex layout properties.
 
-![](images/entries/17edee9a6187866ed824fe92134f088e32327056)
+![](images/entries/17edee9a6187866ed824fe92134f088e32327056.webp)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -241,7 +241,7 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 
 The styling and behavior for the Trim/Extend functionality has been modified to more closely align with the UX of the Advanced Digitizing tools so that geometry limits are more clearly represented to users visually.
 
-![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390)
+![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390.webp)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -264,7 +264,7 @@ Building on the STAC Client capabilities introduced in QGIS 3.40 as a part of [Q
 -   Display or hide footprints of the search results items in the map canvas
 -   Highlight the selected item's footprint
 
-![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db)
+![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db.webp)
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 
@@ -287,7 +287,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 A context menu has been added to the `Available Widgets` panel in the vector layer properties dialog, allowing users to copy & paste widget configurations between fields of the same layer, between fields from different layers in the QGIS project, or between fields from layers in different QGIS instances.
 
-![Copy and paste context menu](images/entries/copy_paste_widget_configuration.png)
+![Copy and paste context menu](images/entries/copy_paste_widget_configuration.webp)
 
 This feature was funded by Ville de Pully (Switzerland)
 

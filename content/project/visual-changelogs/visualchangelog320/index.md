@@ -41,7 +41,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 The previously available shortcuts for opening attribute tables, using filters to display only the selected items or the items visible within the canvas, have been integrated into the Menu Toolbar to facilitate their ease of use and improve the user experience, especially when working with large datasets.
 
-![image2](images/entries/571fda8da2dc36cc6032354e4249ac9f642aad02.png)
+![image2](images/entries/571fda8da2dc36cc6032354e4249ac9f642aad02.webp)
 
 This feature was developed by [Raymond Nijssen](https://github.com/raymondnijssen)
 
@@ -51,7 +51,7 @@ The existing ability to \"Set Width\" and \"Autosize\" for columns has been exte
 
 This includes the ability to set a fixed width or to \"Autosize\" all columns. These actions are available from the attribute table header context menu which is accessible by right-clicking a field header.
 
-![image3](images/entries/424dea8c61279f20c7f3ca5bf3cd13c21f999987.png)
+![image3](images/entries/424dea8c61279f20c7f3ca5bf3cd13c21f999987.webp)
 
 This feature was developed by [Ben Wirf](https://github.com/benwirf)
 
@@ -96,7 +96,7 @@ Example of settings with a server exposing a list of available datetime instance
 
 ![datetime](images/entries/f8d2510c5cdf7241f1ed61a9bdd0211f1d6fb0f7.gif)
 
-![image7](images/entries/f8ab8c722dde210f851f838752916bfe76147420.png)
+![image7](images/entries/f8ab8c722dde210f851f838752916bfe76147420.webp)
 
 This feature was funded by Natural resources Canada Contract: 3000720707
 
@@ -138,7 +138,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 The processing\'s history dialog has had a series of user interface improvements, including regrouping of algorithms in meaningful folder structures and making use of individual algorithm icons. Searching for that algorithm you ran last week has never been as easy!
 
-![image9](images/entries/4e8fa82827363fa9b82ed5b79c1b84f12a220465.png)
+![image9](images/entries/4e8fa82827363fa9b82ed5b79c1b84f12a220465.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -146,7 +146,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 The expression builder dialog now displays map layer icons next to the list of layers under the \'Map Layers\' parent group. This speeds up skipping through the list and provides additional context.
 
-![image10](images/entries/2128b48e7c773959e0305181db1b4da9c917889d.png)
+![image10](images/entries/2128b48e7c773959e0305181db1b4da9c917889d.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -178,9 +178,9 @@ An option to trim the start and end of simple line symbols was added, allowing f
 
 A sample gallery of this functionality in use:
 
-![image13](images/entries/f0cad8bbc2de6c44b22c4875c45ed6e24e9f4bf6.png)
+![image13](images/entries/f0cad8bbc2de6c44b22c4875c45ed6e24e9f4bf6.webp)
 
-![image14](images/entries/14f48f5bcc891d1c97a8b187f53bb21c6dd6dff6.png)
+![image14](images/entries/14f48f5bcc891d1c97a8b187f53bb21c6dd6dff6.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -200,7 +200,7 @@ This functionality also supports the direct conversion of embedded symbol render
 
 ![image16](images/entries/3a408fbcff1ee8d5889c3fe30c0d9d831b050698.gif)
 
-![image17](images/entries/be73e288ed1f46860868a6ae49e7d1f8604082b9.png)
+![image17](images/entries/be73e288ed1f46860868a6ae49e7d1f8604082b9.webp)
 
 This feature was funded by QGIS Denmark user-group
 
@@ -210,7 +210,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Several new shapes - semi arc and arrow signs - were added to the ellipse marker symbol layer, as well as a setting to modify the cap style for stroke-only ellipse shapes.
 
-![image18](images/entries/3b34a6b8ceb5cad5a423a10562511457c0c21396.png)
+![image18](images/entries/3b34a6b8ceb5cad5a423a10562511457c0c21396.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -224,7 +224,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Ellipse markers now also include support for modifying the pen cap (line ending) styles
 
-![image19](images/entries/5d01d2759751cf797586797a74beea3c9561677d.png)
+![image19](images/entries/5d01d2759751cf797586797a74beea3c9561677d.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -242,7 +242,7 @@ Label shields can now use fill symbols for the rectangle, square, circle, and el
 
 This extends beyond the previously available ability for these shields to utilize simple fill and stroke and grants the ability to leverage the complete symbology capabilities of QGIS for shield rendering, including the utilization of \"saved styles\".
 
-![image20](images/entries/5698488e5fae8bdd876dfe754b56bfad0c3fd950.png)
+![image20](images/entries/5698488e5fae8bdd876dfe754b56bfad0c3fd950.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -250,7 +250,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 Label callouts can now leverage the advanced blending modes from QGIS
 
-![image21](images/entries/4dd84f1e0b5ec295da997ffd84fb15b2cae25b13.png)
+![image21](images/entries/4dd84f1e0b5ec295da997ffd84fb15b2cae25b13.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -258,7 +258,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 In previous versions, when an anchor position for a line label was calculated, QGIS would only consider the visible extent of the feature. This affected the expected label position in some cases, and a new \"Use Entire Line\" setting allows users to configure the behavior according to their needs, so that the entire feature may be considered before label placement rather than just the portion of a feature that is currently visible.
 
-![image22](images/entries/1a1788cc98f860e53b8ba3b1b2d7ad5b0969179f.png)
+![image22](images/entries/1a1788cc98f860e53b8ba3b1b2d7ad5b0969179f.webp)
 
 This feature was funded by Stadt Zürich
 
@@ -268,7 +268,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 Balloon callout styles now support rounded corners by introducing a \"corner radius\" option, resulting in the ability to easily produce visually pleasing designs.
 
-![image23](images/entries/9c3d5b37de37e8db7168e68229a6bb3cd02138e6.png)
+![image23](images/entries/9c3d5b37de37e8db7168e68229a6bb3cd02138e6.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -276,7 +276,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A new \"balloon\", or speech bubble, callout style is provided for labels.
 
-![image24](images/entries/7dcb80eacfb6e10dc6b6b05a160421a93ee78d14.png)
+![image24](images/entries/7dcb80eacfb6e10dc6b6b05a160421a93ee78d14.webp)
 
 This feature was funded by SLYR
 
@@ -294,7 +294,7 @@ Options include:
 
 ![curved-callout](images/entries/fd1a05c782e4e2e487a5ed876dc6c396269b0acf.gif)
 
-![image26](images/entries/42e4e2dd600bceda0ff426996577761d9e8b1638.png)
+![image26](images/entries/42e4e2dd600bceda0ff426996577761d9e8b1638.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -302,7 +302,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 When the \"show pinned labels\" option is enabled, QGIS will now also highlight any pinned callout start or end points. This allows users to immediately see which callouts points have been manually placed in relation to those that are automatically placed.
 
-![image27](images/entries/e1de38ee6adde2a016b8d4550111ff766211f0f7.png)
+![image27](images/entries/e1de38ee6adde2a016b8d4550111ff766211f0f7.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -361,7 +361,7 @@ You can test with [USGS LiDAR data](https://usgs.entwine.io/) - just use the lin
 
 By the way, every point cloud dataset that QGIS loads is first processed to EPT (look for \"ept_XXX\" sub-folder where your original data is located), so it is possible to just copy that \"ept_XXX\" folder to a HTTP(S) server and you are ready to use this feature.
 
-![image30](images/entries/50ed450146655afb5c6ae68f0ead344cfc9eea73.png)
+![image30](images/entries/50ed450146655afb5c6ae68f0ead344cfc9eea73.webp)
 
 This feature was funded by [Hobu](https://hobu.co/)
 
@@ -411,7 +411,7 @@ This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
 
 The new `mime_type( bytes )` expression function returns the MIME Type, or [Media type](https://en.wikipedia.org/wiki/Media_type), of an input bytes object
 
-![image31](images/entries/c6aa4689915ec3337efac4284ed39a15e8cadddf.png)
+![image31](images/entries/c6aa4689915ec3337efac4284ed39a15e8cadddf.webp)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
@@ -421,7 +421,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 
 A button to select attributes from the largest geometry has been added to the confirmation dialogue when using the merge features editing tools for polygon and line layers.
 
-![image32](images/entries/e27a6a42f878cdfec87021d53241457aa1d8845f.png)
+![image32](images/entries/e27a6a42f878cdfec87021d53241457aa1d8845f.webp)
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 
@@ -503,7 +503,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 QGIS now shows a warning in the projection selection widget when a CRS based on a datum ensemble is selected, warning the user that there\'s an inherent lack of accuracy in the selected CRS.
 
-![image35](images/entries/b99e932e308d3b6d2b3868a88f3528386adb3d1f.png)
+![image35](images/entries/b99e932e308d3b6d2b3868a88f3528386adb3d1f.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -529,7 +529,7 @@ These notes may be copied and pasted using the traditional copy/ paste methodolo
 
 Layer notes are also supported by and stored within QML (QGIS Style) and QLR (QGIS Layer Definition) files.
 
-![image36](images/entries/250d188c3987a1247b9e3a414d5d72c9c681b0ad.png)
+![image36](images/entries/250d188c3987a1247b9e3a414d5d72c9c681b0ad.webp)
 
 This feature was funded by Alta Ehf
 
@@ -563,7 +563,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 GeoPackage supports layers with a generic \"geometry\" type, with the QGIS release 3.20 it is now possible to load them and specify the requested geometry type on load, just like with PostGIS.
 
-![image37](images/entries/a37aab7ea49b4870a931206e88811ebabcff6546.png)
+![image37](images/entries/a37aab7ea49b4870a931206e88811ebabcff6546.webp)
 
 This feature was developed by [Marco Bernasocchi (OPENGIS.ch)](https://www.opengis.ch)
 
@@ -583,7 +583,7 @@ Historically this functionality was configured using a global option that causes
 
 This allows for finer control over form behavior, where some values may be desirable to reuse but others should be cleared or set to a default value based on an expression.
 
-![image38](images/entries/73f699bdf27a1b3b35de96e7a233d12a49b585d9.png)
+![image38](images/entries/73f699bdf27a1b3b35de96e7a233d12a49b585d9.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -607,7 +607,7 @@ This provides a legend entry that allows users to explicitly identify features b
 
 Control of this behavior is made accessible by adding a \"show label legend\" option to the legend tab of the vector layer properties.
 
-![image40](images/entries/89218cecca8823903e432b9cd1a38280cc5101a9.png)
+![image40](images/entries/89218cecca8823903e432b9cd1a38280cc5101a9.webp)
 
 This feature was funded by Canton of Glarus
 
@@ -667,7 +667,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 The aggregate processing tool now includes a `last_value` aggregation function, which is especially useful when working with input data that has meaningful ordering.
 
-![image41](images/entries/77afe9dba20e9134db3a1c628c5eeebab275b87a.png)
+![image41](images/entries/77afe9dba20e9134db3a1c628c5eeebab275b87a.webp)
 
 This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
@@ -691,7 +691,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 QGIS now allows users to set a custom icon color for different folders in the browser. This effectively allows users to \"tag\" folders, which aids in the rapid navigation of complex folder structures in the browser.
 
-![image42](images/entries/5135bb429434786f87aca3d2deeb980ce874ae44.png)
+![image42](images/entries/5135bb429434786f87aca3d2deeb980ce874ae44.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 

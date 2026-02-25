@@ -37,7 +37,7 @@ A special thanks to all our [sustaining members, sponsors and donors]({{< ref "/
 
 QGZ was added as an optional format in 3.0. Having this format as the default format will ease a lot the path to go to a container able to embed resources like SVG, offline data in GPKG, color ramps, plugins or scripts.
 
-![image29](images/entries/thumbnails/15e0d291ccc9722a61ed5d2611d3ac4c0eef3685.png.400x300_q85_crop.jpg)
+![image29](images/entries/15e0d291ccc9722a61ed5d2611d3ac4c0eef3685.png.400x300_q85_crop.webp)
 
 This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pblottiere)
 
@@ -45,7 +45,7 @@ This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pbl
 
 When creating a new expression filter in query builder, you can now filter the field values preview panel.
 
-![image30](images/entries/thumbnails/731d930d07ca6d35f6bff727ef94a6322fcf21d0.gif.400x300_q85_crop.jpg)
+![image30](images/entries/731d930d07ca6d35f6bff727ef94a6322fcf21d0.gif.400x300_q85_crop.webp)
 
 This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
 
@@ -53,7 +53,7 @@ This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
 
 Besides Ctrl-Tab you can now do Ctrl-Shift-Tab, which will show you the Map and ONLY the Map, no more toolbars or buttons (or even without Window Title, in combination with F11). Great for Full Screen Map projection via Beamer or on Big Screens. You can still zoom and pan! (Based on work of Mathieu Pellerin)
 
-![image31](images/entries/thumbnails/e05bfa8d423465a0ec6697fac1d21dfeee177aea.png.400x300_q85_crop.jpg)
+![image31](images/entries/e05bfa8d423465a0ec6697fac1d21dfeee177aea.png.400x300_q85_crop.webp)
 
 This feature was developed by Richard Duivenvoorde
 
@@ -63,7 +63,7 @@ This feature was developed by Richard Duivenvoorde
 
 The Simplify Features map tool has been renamed to \"Simplify/Smooth Features\", and now supports interactive smoothing of features.
 
-![image2](images/entries/thumbnails/eca7851f8710661b929a99722afd28707f5926b3.png.400x300_q85_crop.png)
+![image2](images/entries/eca7851f8710661b929a99722afd28707f5926b3.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -81,7 +81,7 @@ This feature was developed by [Martin Dobias and Viktor Sklencar](https://www.lu
 
 Each map theme will also record which layers, groups and legend items are expanded, so when a map theme is selected, the expanded/collapsed states get applied in the layer tree.
 
-![image3](images/entries/thumbnails/0cfc7d80448436d67a4b1e92773e66eda5900a57.PNG.400x300_q85_crop.png)
+![image3](images/entries/0cfc7d80448436d67a4b1e92773e66eda5900a57.PNG.400x300_q85_crop.webp)
 
 This feature was funded by [Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) within ERIKUS project](https://www.arpa.piemonte.it/)
 
@@ -91,7 +91,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 A new map view can be configured to automatically zoom to the current selection. Could be combined with different map themes as in this example.
 
-![image4](images/entries/thumbnails/17848d809ce5a999115619ace229b6f07dba272a.PNG.400x300_q85_crop.png)
+![image4](images/entries/17848d809ce5a999115619ace229b6f07dba272a.PNG.400x300_q85_crop.webp)
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
@@ -101,7 +101,7 @@ This feature was developed by [Nathan Woodrow](https://nathanw.net/)
 
 This allows different techniques to be used for simplification in the interactive simplify map tool, including the more cartographically pleasing \"Visvalingam\" simplification algorithm.
 
-![image5](images/entries/thumbnails/085ad891fdc2b416a89603a6962544d165f2cef1.PNG.400x300_q85_crop.png)
+![image5](images/entries/085ad891fdc2b416a89603a6962544d165f2cef1.PNG.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -111,7 +111,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 A new button appears in the feature attribute sub form when one or more records are selected in a related table. The button zooms the map to these features if they have geometries.
 
-![image6](images/entries/thumbnails/697d671bf6227445e10f9c899c0740b4225c1e7f.PNG.400x300_q85_crop.png)
+![image6](images/entries/697d671bf6227445e10f9c899c0740b4225c1e7f.PNG.400x300_q85_crop.webp)
 
 This feature was developed by Jürgen Fischer
 
@@ -119,7 +119,7 @@ This feature was developed by Jürgen Fischer
 
 In QGIS 3.2 we now show both ellipsoidal and cartesian areas, lengths and perimeters separately within the identify results panel. Seeing the two distinct measurements gives users a better understanding of potential issues in area or distance calculations caused by incorrect projection or ellipsoid choices.
 
-![image7](images/entries/thumbnails/28e185f928be7d08fd2971828a1daed53c224394.png.400x300_q85_crop.png)
+![image7](images/entries/28e185f928be7d08fd2971828a1daed53c224394.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -156,7 +156,7 @@ The expression builder now makes it easier to build expressions within QGIS!
 -   It now shows indicators for parts of expressions with errors
 -   It shows a complete list of error messages obtained from parsing the expression
 
-![image8](images/entries/thumbnails/a296b411a0950f6bbd9af3c3cffec90b509b6e78.png.400x300_q85_crop.png)
+![image8](images/entries/a296b411a0950f6bbd9af3c3cffec90b509b6e78.png.400x300_q85_crop.webp)
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
@@ -175,7 +175,7 @@ This adds a mini-framework for display of extra icons in layer tree views next t
 -   map layer has missing data source
 -   map layer with invalid CRS
 
-![image9](images/entries/thumbnails/ff2206aa7147ca68357ea4e3a1354bc231fb49cc.png.400x300_q85_crop.jpg)
+![image9](images/entries/ff2206aa7147ca68357ea4e3a1354bc231fb49cc.png.400x300_q85_crop.webp)
 
 This feature was funded by [Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) within ERIKUS project](https://www.arpa.piemonte.it/)
 
@@ -185,7 +185,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 Prefixes of locator filters can now be customized under the application settings in the \"Locator\" tab
 
-![image10](images/entries/thumbnails/d45b0ff62c8013eed8171c3bc42c9cdacc7dac10.png.400x300_q85_crop.png)
+![image10](images/entries/d45b0ff62c8013eed8171c3bc42c9cdacc7dac10.png.400x300_q85_crop.webp)
 
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
@@ -195,7 +195,7 @@ This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
 
 In 3.2, the data source manager\'s vector and raster panels have been updated to simplify opening of vector and raster datasets stored on HTTP(S), FTP, or cloud services. Basic HTTP(S) authentication support included.
 
-![image11](images/entries/thumbnails/06e06201fb4db385ae14d6932353ce0b0b035e83.jpg.400x300_q85_crop.jpg)
+![image11](images/entries/06e06201fb4db385ae14d6932353ce0b0b035e83.jpg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -205,7 +205,7 @@ QGIS 3.2 allows evaluation of simple expressions (well, actually ANY QGIS expres
 
 E.g. entering \"= 10/3\" shows a locator entry \"Copy \'3.3333333\' to clipboard\".
 
-![image12](images/entries/thumbnails/873ea8846c5f2f2cea56e8d4602bb41ac0567d7d.png.400x300_q85_crop.jpg)
+![image12](images/entries/873ea8846c5f2f2cea56e8d4602bb41ac0567d7d.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -236,7 +236,7 @@ Two new actions have been added to the \"Project\" menu
 -   \"Close\": Closes the active project, returning the QGIS window to the \"Recent Projects\" list
 -   \"Revert\": Restores the active project to the last saved state, discarding all unsaved changes
 
-![image13](images/entries/thumbnails/3801ee06f51aa6517fd1c4a5de5eafffd4114f71.png.400x300_q85_crop.png)
+![image13](images/entries/3801ee06f51aa6517fd1c4a5de5eafffd4114f71.png.400x300_q85_crop.webp)
 
 This feature was developed by Nathan Woodrow, Nyall Dawson
 
@@ -262,7 +262,7 @@ This feature was developed by Mie Winstrup
 
 It is now possible to copy the statistics panel\'s output table into the clipboard.
 
-![image14](images/entries/thumbnails/0d1f4be90052251c05a1fc351dd099aaa92c65f7.png.400x300_q85_crop.png)
+![image14](images/entries/0d1f4be90052251c05a1fc351dd099aaa92c65f7.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -315,7 +315,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 From the browser, with a right click on a materialized view, you can now refresh it.
 
-![image15](images/entries/thumbnails/125ee6837700d992fb8b6452ab1b346ba96c5cce.png.400x300_q85_crop.png)
+![image15](images/entries/125ee6837700d992fb8b6452ab1b346ba96c5cce.png.400x300_q85_crop.webp)
 
 This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
@@ -331,7 +331,7 @@ This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 
 Continuing the metadata work begun in QGIS 3.0, 3.2 now supports metadata for QGIS projects. This allows for detailed metadata to be set in project properties, including abstracts, keywords, contact details, links, etc.
 
-![image16](images/entries/thumbnails/eb1394b46bf05e8a9b6be480cac4382c2f22a865.png.400x300_q85_crop.jpg)
+![image16](images/entries/eb1394b46bf05e8a9b6be480cac4382c2f22a865.png.400x300_q85_crop.webp)
 
 This feature was funded by Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) within ERIKUS project
 
@@ -343,7 +343,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 The value relation widget with multi selection enabled now supports multiple columns. This allows better usage of horizontal screen space.
 
-![image17](images/entries/thumbnails/5fb9e551ed835b45161f3a2e9a94320dc50d5b97.gif.400x300_q85_crop.jpg)
+![image17](images/entries/5fb9e551ed835b45161f3a2e9a94320dc50d5b97.gif.400x300_q85_crop.webp)
 
 This feature was funded by [Grundbuch- und Vermessungsamt des Kanton Zug](https://www.zg.ch/behoerden/direktion-des-innern/grundbuch-und-vermessungsamt/gis-fachstelle)
 
@@ -361,7 +361,7 @@ This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
 
 QGIS 3.2 introduces drill-down (cascading) form support, where the values available in one field depend on the values of other fields. This feature allows users to create "value-relation" expressions based on the current value of another field in the same form. When the user modifies a field's value, the choices available in all related fields are filtered to match the new value -- allowing a hierarchical filtering strategy (drill-down, or cascading) inside a form.
 
-![image18](images/entries/thumbnails/5990ff168d5b6b41176de4fa487964b97c32fafc.gif.400x300_q85_crop.png)
+![image18](images/entries/5990ff168d5b6b41176de4fa487964b97c32fafc.gif.400x300_q85_crop.webp)
 
 This feature was funded by Grant Boxer, NaturalGIS, Tudor Bărăscu, NotioGIS, République et canton de Neuchâtel, Arpa Piemonte, Nelson Silva, QGIS Danish User Group, Bo Victor Thomsen and Lene Fischer, North River Geographic
 
@@ -373,7 +373,7 @@ This feature was developed by [Alessandro Pasotti (North Road)](https://north-ro
 
 This feature allows users to add extra information to the symbols in the legend.
 
-![image19](images/entries/thumbnails/2e1e6a3c4b154c35642096a4c2235c2b2d706200.png.400x300_q85_crop.jpg)
+![image19](images/entries/2e1e6a3c4b154c35642096a4c2235c2b2d706200.png.400x300_q85_crop.webp)
 
 This feature was funded by [Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) within ERIKUS project](https://www.arpa.piemonte.it/)
 
@@ -421,7 +421,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 The \'Join by attribute table\' algorithm has been upgraded to support one-to-many joins (i.e. create separate features for each matching feature) as well as an option to discard records which could not be joined. Additionally, an optional prefix for joined fields can now be specified.
 
-![image20](images/entries/thumbnails/93dd2a52ae3ed2b7a3842f6379d033fabc7932fe.png.400x300_q85_crop.png)
+![image20](images/entries/93dd2a52ae3ed2b7a3842f6379d033fabc7932fe.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin, Nyall Dawson](http://www.imhere-asia.com/)
 
@@ -429,7 +429,7 @@ This feature was developed by [Mathieu Pellerin, Nyall Dawson](http://www.imhere
 
 New option to load Processing scripts from a custom template
 
-![image21](images/entries/thumbnails/fce801da5d7b82a1038f19d603d64046e6a399a0.gif.400x300_q85_crop.png)
+![image21](images/entries/fce801da5d7b82a1038f19d603d64046e6a399a0.gif.400x300_q85_crop.webp)
 
 This feature was developed by [Matteo Ghetta (Faunalia)](http://www.faunalia.eu/)
 
@@ -439,7 +439,7 @@ Add a new feature filter algorithm for the processing modeler. Allows filtering 
 
 Read this [blog post for more information](http://www.opengis.ch/2018/05/28/how-to-filter-features-in-qgis-using-the-graphical-processing-modeler/).
 
-![image22](images/entries/thumbnails/3b1e5e0d5b1874d2e3f0cbb8070eb82dedd89a4e.png.400x300_q85_crop.png)
+![image22](images/entries/3b1e5e0d5b1874d2e3f0cbb8070eb82dedd89a4e.png.400x300_q85_crop.webp)
 
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
@@ -449,7 +449,7 @@ This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 
 This new algorithm appends fields representing counts of each unique value from a raster layer contained within zones defined as polygons.
 
-![image23](images/entries/thumbnails/577c3ed7ed7875d51e968a135bfd532f97d692c8.jpg.400x300_q85_crop.jpg)
+![image23](images/entries/577c3ed7ed7875d51e968a135bfd532f97d692c8.jpg.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
@@ -536,7 +536,7 @@ Optionally the scan can be recursive and you can create an optional table of pho
 
 The algorithm automatically sets the output table to use an external resource widget to display the linked photos in the attribute form.
 
-![image24](images/entries/thumbnails/399ace1f3d437044b9fb478afb820372195b79d8.png.400x300_q85_crop.jpg)
+![image24](images/entries/399ace1f3d437044b9fb478afb820372195b79d8.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -613,7 +613,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 The union algorithm can be now run with just a single input layer in order to resolve any overlaps among the layer\'s features. For example, if an area is covered by three features, that area will be cut out from those features and three new features will be added, copying attributes of the original features.
 
-![image25](images/entries/thumbnails/a32fa9ccc63bd3f91e6696ee8f9aef32f61b4691.png.400x300_q85_crop.jpg)
+![image25](images/entries/a32fa9ccc63bd3f91e6696ee8f9aef32f61b4691.png.400x300_q85_crop.webp)
 
 This feature was funded by [InaSAFE DFAT](https://www.dfat.gov.au/)
 
@@ -625,7 +625,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 Required layers are not allowed to be removed from the project. This adds extra safety to protect project users from removing layers they may think are not needed (e.g. used in joins, relations, expressions).
 
-![image26](images/entries/thumbnails/b65c47d1a41ab4a7ad545696b4985ebd7edb9f75.png.400x300_q85_crop.jpg)
+![image26](images/entries/b65c47d1a41ab4a7ad545696b4985ebd7edb9f75.png.400x300_q85_crop.webp)
 
 This feature was funded by [Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) within ERIKUS project](https://www.arpa.piemonte.it/)
 
@@ -649,7 +649,7 @@ This feature was developed by [Martin Dobias, Peter Petrik (Lutra Consulting)](h
 
 From the Browser panel, XYZ Tiles entries can be exported/imported to/from an XML file.
 
-![image27](images/entries/thumbnails/678a1f4686de353f4a04fc83877e27c18d2fca7d.png.400x300_q85_crop.png)
+![image27](images/entries/678a1f4686de353f4a04fc83877e27c18d2fca7d.png.400x300_q85_crop.webp)
 
 This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
 
@@ -663,7 +663,7 @@ Project home paths can also be set to relative paths, in which case they will be
 
 The path can be set through the Project Properties dialog, or by right-clicking on the Project Home browser item and selecting \'Set Project Home\'.
 
-![image28](images/entries/thumbnails/db297eb148a7d62dd58aab40dca32ee91d148831.png.400x300_q85_crop.jpg)
+![image28](images/entries/db297eb148a7d62dd58aab40dca32ee91d148831.png.400x300_q85_crop.webp)
 
 This feature was funded by SMEC/SJ
 
@@ -683,7 +683,7 @@ and
 
 <https://github.com/lutraconsulting/MDAL>
 
-![image32](images/entries/thumbnails/91c7bf725bc4afecc9efbeaedc8e98ad153b73b4.png.400x300_q85_crop.png)
+![image32](images/entries/91c7bf725bc4afecc9efbeaedc8e98ad153b73b4.png.400x300_q85_crop.webp)
 
 This feature was developed by [Peter Petrik and Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 
@@ -727,7 +727,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 In 3.2 it is possible to store SQL queries. The query history is available into the SQL Window tab of the DB Manager plugin.
 
-![image33](images/entries/thumbnails/9c6074aaf1e989c460833535788d0b396a677e34.png.400x300_q85_crop.png)
+![image33](images/entries/9c6074aaf1e989c460833535788d0b396a677e34.png.400x300_q85_crop.webp)
 
 This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
 
@@ -745,7 +745,7 @@ The only downside when using this option is that more graphical memory is used (
 
 The image contains freely available Prague 3D buildings dataset.
 
-![image34](images/entries/thumbnails/875e423e7a857a509812da6f46d468486fb7fd99.png.400x300_q85_crop.png)
+![image34](images/entries/875e423e7a857a509812da6f46d468486fb7fd99.png.400x300_q85_crop.webp)
 
 This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 

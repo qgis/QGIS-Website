@@ -41,20 +41,26 @@ In cases of fair use, you may use or refer to QGIS trademark without explicit pe
 * **Books, articles, tutorials**: If you write articles, books, blog articles, tutorials, study materials for university, and similar, you do not need a permission to cite QGIS name and use the logo in the content you produce.
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 We require you to **give attribution** to the QGIS project and reference the project website somewhere in your book, article, etc. This could be a short paragraph in the Introduction or Preface. Avoid anything that may give the impression that your work is an official QGIS product.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 
 * **Courses, training**: If you present a course on QGIS, in either an academic, free, or commercial context, you can use the logo and the name ‘QGIS’ in course material.
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
 ##### Note
 Please routinely explain in your course materials that QGIS is free and open source software, and actively encourage anyone to contribute, directly or indirectly, to the project.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 * **Services**: If you provide services (support, development) for QGIS, you can use QGIS trademark to describe or advertise your services or products relating to QGIS, provided this is done in a way that is not misleading (such as presenting the QGIS project as your own work). See the requirements for product names below.
@@ -70,6 +76,7 @@ Some uses of our trademark require the user to obtain permission. If you need pe
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 Obtaining permission is not a formal endorsement of your QGIS related project and doesn’t constitute a statement on the quality of your service.
 {{< rich-content-end >}}
@@ -94,6 +101,7 @@ Obtaining permission is not a formal endorsement of your QGIS related project an
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Referring to QGIS
 When referring to QGIS please do not undermine the validity of the main QGIS project. We prefer that you refer to our software packages as “Official Packages” and not “Community Releases” or similar. If you create your own packages, please make it clear that these are derivative packages and not created or endorsed by the QGIS project.
 {{< rich-content-end >}}
@@ -113,7 +121,9 @@ When referring to QGIS please do not undermine the validity of the main QGIS pro
         *   Non-commercial projects can use qgis.xxxxx (qgis.tutorials would fall into this category if the tutorials are free) but should ask for permission before registering the domain. QGIS.ORG may register the domain and point it to the name servers provided by the requestor or instruct the requestor to do so.
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Referring to QGIS
 Permission is not a formal endorsement from the QGIS project and doesn’t imply anything about quality of the service.
 {{< rich-content-end >}}

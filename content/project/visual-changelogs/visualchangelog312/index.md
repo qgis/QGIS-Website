@@ -129,7 +129,7 @@ This feature was developed by Alessandro Pasotti
 
 Mesh vector renderer now can visualize streamlines and particles on top of existing \"arrow\" mode.
 
-![image11](images/entries/5b772e74d433e766b50023cd107aad9cb1d68de6.png)
+![image11](images/entries/5b772e74d433e766b50023cd107aad9cb1d68de6.webp)
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
@@ -235,7 +235,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 With this new feature users will have possibility to create stacks bars of varying colors for each attribute on top of each other vertically or horizontally. Designed to match the \"Stacked\" chart renderer option available in ArcGIS.
 
-![image20](images/entries/933c25cf0cd8997e177eee809b4fa26462b6d8c2.png)
+![image20](images/entries/933c25cf0cd8997e177eee809b4fa26462b6d8c2.webp)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -245,7 +245,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Allows for user-controlled spacing between each bar in the chart.
 
-![image21](images/entries/7906ea6467d1d5ea19550ce1711fcc277df709a0.png)
+![image21](images/entries/7906ea6467d1d5ea19550ce1711fcc277df709a0.webp)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -255,7 +255,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature allows to control whether the sections are rendered in a clockwise or counter-clockwise direction.
 
-![image22](images/entries/c2484d36648c335d16d1e3a45ac1a132ca2baafe.png)
+![image22](images/entries/c2484d36648c335d16d1e3a45ac1a132ca2baafe.webp)
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
@@ -267,7 +267,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 It is possible to switch the timeframes of mesh layer\'s datasets by play/stop button. The playback setting could be adjusted in the time setting dialog.
 
-![image23](images/entries/4799685965addef6ca2c788d82eea77e67e2f1f3.png)
+![image23](images/entries/4799685965addef6ca2c788d82eea77e67e2f1f3.webp)
 
 This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk)
 
@@ -279,7 +279,7 @@ For datasets defined on faces, one can choose to interpolate data to vertices wi
 
 Use mesh contours styling panel to switch between the data interpolation methods.
 
-![image24](images/entries/c9c38ee8c59693b2971ab6269db22681a61002a1.png)
+![image24](images/entries/c9c38ee8c59693b2971ab6269db22681a61002a1.webp)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
@@ -368,7 +368,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This new item type allows for the creation of tables with contents manually entered by users (i.e. spreadsheet-style) so that users can create completely custom tables. Supports control custom cell contents, foreground and background colors (and soon, preset row and column heights). A brand new table designer dialog has been added which allows for customization of these tables.
 
-![image29](images/entries/95cfa9a8c44fb0141474d80e4b3a5e7f98352e70.png)
+![image29](images/entries/95cfa9a8c44fb0141474d80e4b3a5e7f98352e70.webp)
 
 This feature was funded by City of Canning
 
@@ -398,7 +398,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 Allows filtering the list of layouts in a project by name, handy when a project has many layouts..!
 
-![image32](images/entries/fb510c6c079d55dab2dd22f02c7c5355b317ac47.png)
+![image32](images/entries/fb510c6c079d55dab2dd22f02c7c5355b317ac47.webp)
 
 This feature was developed by Nyall Dawson
 
@@ -440,7 +440,7 @@ While this result could also be achieved with the Refactor Fields algorithm, Ref
 
 In contrast, this simple Rename Field algorithm adapts nicely for model use, because it operates on a single field only and leaves all the other fields untouched.
 
-![image35](images/entries/c01edc8ee51dff2b4df8f825e0dcaf27940e4aba.png)
+![image35](images/entries/c01edc8ee51dff2b4df8f825e0dcaf27940e4aba.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -540,7 +540,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 In previous version of QGIS, the snapping index cache was built sequentially and you had to wait for all your layers to be indexed before starting edition. Thanks to the QGIS.org grant program, QGIS now builds the snapping index cache in parallel for each layer, so it speeds up the whole process. Snapping has also been relaxed, meaning that you don\'t have to wait for the cache to be complete, you can start editing and snapping information will appear as soon as they are ready.
 
-![image39](images/entries/d77958db7175267448d9b94950532dee8b90145c.png)
+![image39](images/entries/d77958db7175267448d9b94950532dee8b90145c.webp)
 
 This feature was funded by [QGIS.org](https://qgis.org)
 
@@ -617,7 +617,7 @@ This feature was developed by [Sandro Mani](https://api.github.com/users/manisan
 
 A new algorithm in QGIS's analysis library API to export directly contour lines and polygons is added. The method is not based on GDAL algorithms, but directly uses mesh layer triangular mesh interpolation methods. It is both fast and with smooth shapes, matching rendered images from QGIS. You can try the new processing algorithm in Crayfish processing toolbox.
 
-![image44](images/entries/044ad55bfb4287026b4e002c46c8687093488d22.png)
+![image44](images/entries/044ad55bfb4287026b4e002c46c8687093488d22.webp)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
@@ -627,7 +627,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 You can use mesh calculator for all dataset types, both defined on faces and vertices. Additionally, it allows users to store the result of mesh calculator under different name or format. This allows for example to work with FLO-2D or HEC-RAS data in the QGIS mesh calculator
 
-![image45](images/entries/044d52fe937887854583ecfdc551e73eafb94a41.png)
+![image45](images/entries/044d52fe937887854583ecfdc551e73eafb94a41.webp)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
@@ -639,7 +639,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 We improved the existing *package layers* processing algorithm to be able to add new layers to existing GeoPackages. All you need to do to make use of this is disable the OVERWRITE parameter and specify an existing GeoPackage.
 
-![image46](images/entries/35d87f4826aad132de4a0b99ac7c775f6aa9b029.png)
+![image46](images/entries/35d87f4826aad132de4a0b99ac7c775f6aa9b029.webp)
 
 This feature was funded by [BikePlan](https://www.bikeplan.ch/)
 
@@ -649,7 +649,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 The Fuzzify raster (linear membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a linear fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a linear membership function.
 
-![image47](images/entries/bfb37d710293c252dae11b67b25bdc1431f13815.png)
+![image47](images/entries/bfb37d710293c252dae11b67b25bdc1431f13815.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -657,7 +657,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (power membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a power fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a power membership function.
 
-![image48](images/entries/7a81ecd4414ee39b37e575863687615c88e9a856.png)
+![image48](images/entries/7a81ecd4414ee39b37e575863687615c88e9a856.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -665,7 +665,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (small membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'small\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'small\' membership function. The \'small\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
 
-![image49](images/entries/2bef948a7b02bd26208ca98e9ddb243d46d104a6.png)
+![image49](images/entries/2bef948a7b02bd26208ca98e9ddb243d46d104a6.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -673,7 +673,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (large membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'large\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'large\' membership function.The \'large\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
 
-![image50](images/entries/10963d11812664a76d4fc3fac72777c34a08c767.png)
+![image50](images/entries/10963d11812664a76d4fc3fac72777c34a08c767.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -681,7 +681,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (gaussian membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'gaussian\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'gaussian\' membership function. The gaussian function is constructed using two user-defined input values which set the midpoint of the gaussian function (midpoint, results to 1) and a predefined function spread which controls the function spread.
 
-![image51](images/entries/58068dc6518a0df20a39df69ea4175f7b196b049.png)
+![image51](images/entries/58068dc6518a0df20a39df69ea4175f7b196b049.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -689,7 +689,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 The Fuzzify raster (near membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'near\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'near\' membership function. The near function is constructed using two user-defined input values which set the midpoint of the near function (midpoint, results to 1) and a predefined function spread which controls the function spread.
 
-![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.png)
+![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -697,7 +697,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We ported the Densify by count algorithm to C++ in order to enhance it\'s speed when compared to the previous Python implementation. The new algorithm also exposes the count parameter as dynamic parameter so that it can be controlled by expressions or field values.
 
-![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.png)
+![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -705,7 +705,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We ported the Random points in extent algorithm to C++. This boosts it\'s speed when comparing it to the previous Python implementation. The new algorithm also exposes an advanced parameter of maximum numbers of retrys for the algorithm when searching for randomly placed points that respect a certain distance between all points.
 
-![image54](images/entries/c452431d9a2cd9f9f76869cf98e09e18bf2a81a4.png)
+![image54](images/entries/c452431d9a2cd9f9f76869cf98e09e18bf2a81a4.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -713,7 +713,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 In this version we added a native algorithm to calculate the raster based density of lines. This algorithm calculates the line density based on a search radius and weights of the lines inside the search radius. The algorithm was ported to provide more functionality form the ArcGIS Spatial Analyst extension in QGIS.
 
-![image55](images/entries/b28bbe3d5129ccc5dd61585dc1a9e31383a59c6f.png)
+![image55](images/entries/b28bbe3d5129ccc5dd61585dc1a9e31383a59c6f.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 
@@ -721,7 +721,7 @@ This feature was developed by [Clemens Raffler](https://github.com/root676)
 
 We added a new algorithm which uses GDAL to repair shapefiles which have a broken or missing .SHX file.
 
-![image56](images/entries/c3a6a174187284126ea0af289614505ab8c0c593.png)
+![image56](images/entries/c3a6a174187284126ea0af289614505ab8c0c593.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
@@ -737,7 +737,7 @@ If any features in the original or revised layers do not have an associated geom
 
 The algorithm outputs three layers, one containing all features which are considered to be unchanged between the revisions, one containing features deleted from the original layer which are not present in the revised layer, and one containing features add to the revised layer which are not present in the original layer.
 
-![image57](images/entries/e38dcea12e1198341eb9f0bd45a33ebf7eda390b.png)
+![image57](images/entries/e38dcea12e1198341eb9f0bd45a33ebf7eda390b.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -745,7 +745,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 This allows for easy polygon-\>polygon joins, where you expect there to be only a single matching feature and don\'t want to include features which are just touching or have just tiny sliver polygon overlaps.
 
-![image58](images/entries/27b8e5e11deca93ffade31b86edc712ce918d179.png)
+![image58](images/entries/27b8e5e11deca93ffade31b86edc712ce918d179.webp)
 
 This feature was funded by SMEC/SJ
 
@@ -761,7 +761,7 @@ Offers the following benefits over the GRASS/SAGA versions:
 -   Allows transformation and scaling of both Z and M values (if present)
 -   Supports in-place edit mode
 
-![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.png)
+![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -777,7 +777,7 @@ This feature was developed by Alexander Bruy
 
 Add customization of the items shown in browser to the Interface Customization dialog. User can hide some of the root items in the browser panel (e.g. Favourites, PostGIS provider, MSSQL, Oracle, Volumes, \...)
 
-![image60](images/entries/5e8e9037420b83cd44d4e1994d4119e4ae92c8aa.png)
+![image60](images/entries/5e8e9037420b83cd44d4e1994d4119e4ae92c8aa.webp)
 
 This feature was funded by [Limerick City and County Council](https://www.limerick.ie/council)
 
@@ -787,7 +787,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 This feature allows .htm(l) files to be shown and opened from the browser panel. These are often used to document data files or mapping projects.
 
-![image61](images/entries/0db8930d20ca6f2fbf5b29593afdcf59e1af8d1e.png)
+![image61](images/entries/0db8930d20ca6f2fbf5b29593afdcf59e1af8d1e.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
@@ -839,7 +839,7 @@ This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
 
 ### Feature: Fetch and show dimensions metadata for a WMS layer metadata
 
-![image65](images/entries/d058ac6b89a8d06169b06580843967ad26e1ef54.png)
+![image65](images/entries/d058ac6b89a8d06169b06580843967ad26e1ef54.webp)
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
@@ -857,7 +857,7 @@ This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
 
 MDAL and QGIS now supports 3D Stacked Meshes, particularly for TUFLOW-FV format. For this release, you need to choose appropriate averaging method in the QGIS interface and you are able to browse the data similarly to any other 2D dataset.
 
-![image67](images/entries/dc3d85153d9bcecdf7ebbc6433c7cb40319e00dd.png)
+![image67](images/entries/dc3d85153d9bcecdf7ebbc6433c7cb40319e00dd.webp)
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
@@ -949,7 +949,7 @@ This feature was developed by [Peter Petrik](https://api.github.com/users/PeterP
 
 This new provider is a client-side implementation of the recently adopted [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) specification, previously known as WFS3. It is integrated within the graphical user interface of the WFS provider, and leverages its core mechanisms to offer background downloading of features, using paging, and a local cache of already downloaded features for a smoother interactive use of datasets.
 
-![image70](images/entries/d74a13f520336e0c2e44469ee4e527188e2466de.png)
+![image70](images/entries/d74a13f520336e0c2e44469ee4e527188e2466de.webp)
 
 This feature was funded by [Planet](https://planet.com)
 

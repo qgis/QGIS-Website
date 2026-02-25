@@ -39,9 +39,9 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 Previously, the QGIS Desktop *Identify* utility would expose a large number of derived attributes, such as geometry information. Although incredibly valuable, for many use cases this information is verbose. Users will now have the option to toggle the display of derived attributes to create a more concise view of the Identify results.
 
-![image2](images/entries/96178054-1aa78d80-0f2f-11eb-8d75-299bfd6aa73e.png)
+![image2](images/entries/96178054-1aa78d80-0f2f-11eb-8d75-299bfd6aa73e.webp)
 
-![image3](images/entries/c9eea14d2c01670795967bd1e42fcb8777330718.png)
+![image3](images/entries/c9eea14d2c01670795967bd1e42fcb8777330718.webp)
 
 This feature was developed by [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde)
 
@@ -49,7 +49,7 @@ This feature was developed by [Richard Duivenvoorde](https://api.github.com/user
 
 The QgsMessageLogViewer now includes an **\"Empty tab and close others\"** to the log viewer panel context menu, supporting a quicker action to a clean interface when debugging.
 
-![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.png)
+![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.webp)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
 
@@ -62,9 +62,9 @@ Two implementations have been added for this:
 1.  A file picker widget for GDAL file-based layers.
 2.  A widget for customizing XYZ layer properties.
 
-![image5](images/entries/24c8af6d1314e7a22f8f70a7628f3aeae9b3ce1a-1.png)
+![image5](images/entries/24c8af6d1314e7a22f8f70a7628f3aeae9b3ce1a-1.webp)
 
-![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.png)
+![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -72,7 +72,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 QGIS now supports dynamic standard vector graphic elements, as outlined in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). This allows QGIS to dynamically replace attributes or node values in the XML of the SVG and apply data-driven values to SVG elements. QGIS Desktop has additionally added a GUI editor to ensure that users are able to properly leverage this new functionality.
 
-![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.png)
+![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.webp)
 
 This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
 
@@ -128,7 +128,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 The Style Manager interface now includes a button to open the [styles gallery](https://plugins.qgis.org/styles/) from the QGIS HUB.
 
-![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.png)
+![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -142,7 +142,7 @@ New export options have been added for mesh layers. These allow the following op
 -   Export edges (1D mesh)
 -   Export as grid
 
-![image13](images/entries/4738ffe8180f8fc320cf464121ec10fc27bd4c33.png)
+![image13](images/entries/4738ffe8180f8fc320cf464121ec10fc27bd4c33.webp)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -175,7 +175,7 @@ A number of new processing algorithms have been ported from the crayfish plugin,
 -   Export cross section to text file (csv)
 -   Export time series to text file (csv)
 
-![image16](images/entries/3acf2cfe05dc7550f16e183026350914d028a6da.png)
+![image16](images/entries/3acf2cfe05dc7550f16e183026350914d028a6da.webp)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -187,7 +187,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 A new rendering option allows area and line features to be \"dissolved\" into a single object prior to rendering to ensure that complex symbols or overlapping features are represented by a uniform and contiguous cartographic symbol.
 
-![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.png)
+![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -213,7 +213,7 @@ An EDL configuration element has been added to the advanced settings tab of the 
 
 The eye dome lighting is, by principle, an image-based rendering solution similar to SSAO (screen space ambient occlusion), and therefore works on the whole scene and doesn\'t differ between point clouds or regular 3D objects.
 
-![image19](images/entries/4e7b365e9e991bf06f15a3ad15ff50a0ac9692e2.jpg)
+![image19](images/entries/4e7b365e9e991bf06f15a3ad15ff50a0ac9692e2.webp)
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -230,9 +230,9 @@ Rendering of polygons may be currently done with multiple material types, each h
 
 Textured materials are unsupported at this time.
 
-![image20](images/entries/97449982-9da1ee00-1908-11eb-9276-32c863c3f6e1.jpeg)
+![image20](images/entries/97449982-9da1ee00-1908-11eb-9276-32c863c3f6e1.webp)
 
-![image21](images/entries/504010202dcff6a9b78450fedfa493b6e726b5c0.jpeg)
+![image21](images/entries/504010202dcff6a9b78450fedfa493b6e726b5c0.webp)
 
 This feature was funded by [Kristianstad](https://www.kristianstad.se)
 
@@ -254,7 +254,7 @@ Following the successful [crowdfunding campaign](https://www.lutraconsulting.co.
 
 This includes the ability to add point cloud layers to QGIS projects, with support for the EPT format, and render them in 2D and 3D contexts.
 
-![image23](images/entries/3d87d5647d363b53b1a19ffd67de7406632df572.png)
+![image23](images/entries/3d87d5647d363b53b1a19ffd67de7406632df572.webp)
 
 This feature was funded by [Point Cloud data support in QGIS](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
@@ -264,7 +264,7 @@ This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutr
 
 The QGIS Browser and data source management interface now support the basic structure of PDAL supported point cloud layers.
 
-![image24](images/entries/96aca5c2d2f428f0aa7fee0d11b5c8600c5c523c.png)
+![image24](images/entries/96aca5c2d2f428f0aa7fee0d11b5c8600c5c523c.webp)
 
 This feature was funded by [Point Cloud data support in QGIS crowd funding campaign](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
@@ -344,7 +344,7 @@ There is now a string format parameter available for the `uuid()` function in QG
 -   `uuid('WithoutBraces')`: **0bd2f60f-f157-4a6d-96af-d4ba4cb366a1**
 -   `uuid('Id128')`: **0bd2f60ff1574a6d96afd4ba4cb366a1**
 
-![image32](images/entries/3f0471353b72cffc4b69defb87cea2d7a1c44017.png)
+![image32](images/entries/3f0471353b72cffc4b69defb87cea2d7a1c44017.webp)
 
 This feature was developed by [signedav](https://api.github.com/users/signedav)
 
@@ -411,7 +411,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 Existing curve tracing settings [were introduced previously](https://github.com/qgis/QGIS/pull/37826) and have now been exposed in the user interface to enable users to incrementally modify settings to optimize their results when capturing curve data.
 
-![image34](images/entries/29b75d5574181d5b7570090b9801ede92bec2fcd.png)
+![image34](images/entries/29b75d5574181d5b7570090b9801ede92bec2fcd.webp)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
 
@@ -451,7 +451,7 @@ Once saved, the list of relations appear as a tree widget, where the generated r
 
 Polymorphic relations are stored within a project and currently cannot be exported.
 
-![image37](images/entries/6628cd483a00a52f51cd963febd883d2756eb299.png)
+![image37](images/entries/6628cd483a00a52f51cd963febd883d2756eb299.webp)
 
 This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
 
@@ -491,7 +491,7 @@ This feature was developed by [rldhont](https://api.github.com/users/rldhont)
 
 Allows users to select a list of fields to keep, and all other fields will be dropped from the layer. Helps with making flexible models where input datasets may have a range of different fields and only a certain subset of them need to be retained. This work was inspired by [#39114](https://github.com/qgis/QGIS/pull/39114)
 
-![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.png)
+![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -537,7 +537,7 @@ All algorithms provide different methods for calculating percentiles and percent
 
 **Percentrank:** - Inclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTRANK.INC* function) - Exclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTRANK.EXC* function)
 
-![image39](images/entries/febde74bab33bb165971509e90fb112c4b643001.png)
+![image39](images/entries/febde74bab33bb165971509e90fb112c4b643001.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -569,7 +569,7 @@ This feature was developed by [Alessandro Pasotti](https://api.github.com/users/
 
 A new \"View Settings\" tab has been added to the project properties, with the option to manually defined the full extent of a project. The extent defined here will be the extent used when zooming to the full map extent, instead of the calculated or maximum extent of all layers. This is useful for defining a particular area of interest for a project and does not limit user\'s ability to \"zoom out\" further than the defined extent.
 
-![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.png)
+![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -579,7 +579,7 @@ A checkbox in the network logger panel now allows users to temporarily disable t
 
 This is a transient setting by design and is forgotten as soon as QGIS is closed.
 
-![image42](images/entries/0115a38666f35166fa9e6fd53791a7bc8f73b6dc.png)
+![image42](images/entries/0115a38666f35166fa9e6fd53791a7bc8f73b6dc.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -689,7 +689,7 @@ This feature was developed by [Julien Cabieces](https://api.github.com/users/tro
 
 New functionality has been introduced which allows advanced parameters to be specified when importing layers using the GDAL data provider, opening a vast range of new possibilities, especially when working around expected dataset issues and shortcomings.
 
-![image47](images/entries/5d7ccf71a162d927706fd6e6517a67452ec653e1.jpg)
+![image47](images/entries/5d7ccf71a162d927706fd6e6517a67452ec653e1.webp)
 
 This feature was developed by Mathieu Pellerin
 
@@ -713,7 +713,7 @@ This feature was developed by [mhugent](https://api.github.com/users/mhugent)
 
 The QGIS Python Console now supports the execution of multiple selected commands from the history dialog by adding a new **Paste** button.
 
-![image48](images/entries/1de42c7dc35c2b73dce1605a3c36b97166d81850.png)
+![image48](images/entries/1de42c7dc35c2b73dce1605a3c36b97166d81850.webp)
 
 This feature was developed by [Salvatore Larosa](https://api.github.com/users/slarosa)
 

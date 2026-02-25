@@ -35,7 +35,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 Annotations for the map canvas\' grid decoration are now fully customizable including font color, buffer, etc.
 
-![image8](images/entries/14b7cf800ef293ac3ea3f00d12a30022876e713c.png)
+![image8](images/entries/14b7cf800ef293ac3ea3f00d12a30022876e713c.webp)
 
 This feature was funded by iMHere Asia
 
@@ -86,7 +86,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 Added temporal capabilities integration for Postgres rasters.
 
-![image3](images/entries/78421839-37e3d100-765b-11ea-83e5-e7e3e519155e.png)
+![image3](images/entries/78421839-37e3d100-765b-11ea-83e5-e7e3e519155e.webp)
 
 ![image4](images/entries/a8347da9570ae597bc17e23236e4eb4d57efb1d1.gif)
 
@@ -142,7 +142,7 @@ This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.co
 
 The identify map tool is now able to inspect attributes of features in vector tiles.
 
-![image9](images/entries/79157425-d3501100-7dd4-11ea-8395-5c8ff1dce449.png)
+![image9](images/entries/79157425-d3501100-7dd4-11ea-8395-5c8ff1dce449.webp)
 
 This feature was funded by [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
 
@@ -190,7 +190,7 @@ In addition there is support for \"index contours\" - contour lines with higher 
 
 If we generate contour lines on input raster blocks with the same size as our output raster block, the generated lines would contain too much detail. This detail can be reduced by the \"downscale\" factor - this will request lower resolution of the source raster.
 
-![image14](images/entries/77861880-17111b00-7218-11ea-95ba-410c97830b93.png)
+![image14](images/entries/77861880-17111b00-7218-11ea-95ba-410c97830b93.webp)
 
 This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
 
@@ -200,15 +200,15 @@ According to the [Feature Request](https://github.com/qgis/QGIS/issues/30057) th
 
 For example a layer contains raster images of various sizes and aspect ratios:
 
-![image15](images/entries/77845535-6e3fcd00-71d1-11ea-8760-b477e75f7a3a.jpg) ![image16](images/entries/77845539-726bea80-71d1-11ea-9512-0a8e6cde7b3c.jpg)
+![image15](images/entries/77845535-6e3fcd00-71d1-11ea-8760-b477e75f7a3a.webp) ![image16](images/entries/77845539-726bea80-71d1-11ea-9512-0a8e6cde7b3c.webp)
 
 If we use an existing Raster image marker **size unit** values the layer will look like this (with a normal croc, but huge giraffe):
 
-![image17](images/entries/77846711-bfec5580-71d9-11ea-9afe-a52af9b2784e.jpg)
+![image17](images/entries/77846711-bfec5580-71d9-11ea-9afe-a52af9b2784e.webp)
 
 or like this (with a normal giraffe but tiny croc):
 
-![image18](images/entries/77846764-1eb1cf00-71da-11ea-9d6d-f468708ea726.jpg)
+![image18](images/entries/77846764-1eb1cf00-71da-11ea-9d6d-f468708ea726.webp)
 
 The new **percentage** value of size units is intended to fix this issue.
 
@@ -220,7 +220,7 @@ This feature was developed by [beketata](https://api.github.com/users/beketata)
 
 Data-defined properties were added for the font markers\' font family and the brand new font style properties. This can come in handy for a number of scenarios, including multilingual context where a data-defined property can avoid duplicating datasets.
 
-![image19](images/entries/1ded1a8bbec9eeebafad96b7616e963847961e14.png)
+![image19](images/entries/1ded1a8bbec9eeebafad96b7616e963847961e14.webp)
 
 This feature was funded by iMHere Asia
 
@@ -230,7 +230,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 
 With this brand new font style setting, users can pick non-default style of font families previously not available.
 
-![image20](images/entries/e387c3745d49a36116908dffc1126befae7d1b1f.png)
+![image20](images/entries/e387c3745d49a36116908dffc1126befae7d1b1f.webp)
 
 This feature was funded by iMHere Asia
 
@@ -248,9 +248,9 @@ On the plus side, it works correctly with ALL other label settings, including sh
 
 Now some pretty pictures:
 
-![image21](images/entries/81377287-84359b80-9148-11ea-95f4-9d7917d62cf9.png)
+![image21](images/entries/81377287-84359b80-9148-11ea-95f4-9d7917d62cf9.webp)
 
-![image22](images/entries/81377294-88fa4f80-9148-11ea-9036-2a597b064bbc.png)
+![image22](images/entries/81377294-88fa4f80-9148-11ea-9036-2a597b064bbc.webp)
 
 This feature was funded by [geoProRegio AG](http://www.geoproregio.ch)
 
@@ -262,8 +262,8 @@ This feature adds the ability to automatically place labels outside of polygon f
 
 This is exposed in a number of ways:
 
-1.  A new placement mode which always places polygon labels for the layer outside the features: ![image23](images/entries/80680381-faf7e680-8b01-11ea-8612-b0f543bfd943.png) ![image24](images/entries/80680391-00553100-8b02-11ea-8e56-21b57964f765.png)
-2.  When using other polygon placement modes, a new checkbox \"Allow placing labels outside of polygons\" can be checked to allow labels to be placed outside when it isn\'t possible to place them inside the polygon: ![image25](images/entries/80680478-30043900-8b02-11ea-8bd5-3325fc0a5021.png) ![image26](images/entries/80680488-37c3dd80-8b02-11ea-98bb-e0882e6ab9ab.png)
+1.  A new placement mode which always places polygon labels for the layer outside the features: ![image23](images/entries/80680381-faf7e680-8b01-11ea-8612-b0f543bfd943.webp) ![image24](images/entries/80680391-00553100-8b02-11ea-8e56-21b57964f765.webp)
+2.  When using other polygon placement modes, a new checkbox \"Allow placing labels outside of polygons\" can be checked to allow labels to be placed outside when it isn\'t possible to place them inside the polygon: ![image25](images/entries/80680478-30043900-8b02-11ea-8bd5-3325fc0a5021.webp) ![image26](images/entries/80680488-37c3dd80-8b02-11ea-98bb-e0882e6ab9ab.webp)
 
 The \"allow placing labels outside\" checkbox can be data defined, allowing users to either allow outside labels, prevent outside labels, or force outside labels on a feature-by-feature basis.
 
@@ -283,7 +283,7 @@ This adds labeling support for vector tile layers. So far this is just working o
 
 Note there is a \"chicken-and-egg problem\" with labeling: For vector tiles, we create QgsFields for a sub-layer based on fields that renderer and labeling request, but with labeling it was impossible to get required fields if they were not already available in the expression context (hence some small additions to QgsProperty, QgsPropertyCollection, QgsPalLayerSettings to be able to get required field names by not preparing internal expressions at the same time).
 
-![image27](images/entries/78723460-bf676380-792b-11ea-9cab-a6732e20033a.png)
+![image27](images/entries/78723460-bf676380-792b-11ea-9cab-a6732e20033a.webp)
 
 An example how to set the above labeling in Python console:
 
@@ -319,11 +319,11 @@ Helps fix some callout ugliness!
 
 Previous result (closest point mode):
 
-![image28](images/entries/76173692-5a660400-61ed-11ea-87dd-74a4db5cf0ce.png)
+![image28](images/entries/76173692-5a660400-61ed-11ea-87dd-74a4db5cf0ce.webp)
 
 With new \"centroid\" placement:
 
-![image29](images/entries/76173706-6d78d400-61ed-11ea-89c1-ce4e2477dfef.png)
+![image29](images/entries/76173706-6d78d400-61ed-11ea-89c1-ce4e2477dfef.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -349,7 +349,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 With this feature, MDAL reads classified scalar values in the dataset. When values are classified, the default scalar rendering settings has the color ramp shader and labels set according to the classified values.
 
-![image31](images/entries/81480226-42fbc500-91f6-11ea-91fd-3d430693d551.png)
+![image31](images/entries/81480226-42fbc500-91f6-11ea-91fd-3d430693d551.webp)
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
@@ -426,7 +426,7 @@ The time in a mesh layer is defined by :
 
 The class **QgsMeshDataprovidertemporalCapabilities** stores the reference time provided by the data and all the relative times of the dataset. This class has the ability to return dataset index from a dataset group index and a relative time since the reference time. The reference time (which can be different than the provider reference time) and the absolute time extent are stored in the class **QgsMeshTemporalProperties**
 
-The temporal settings in the properties widget are only the reference time and the provider time unit: ![image36](images/entries/77871643-bf23e580-7212-11ea-9b92-82c906c19c22.png)
+The temporal settings in the properties widget are only the reference time and the provider time unit: ![image36](images/entries/77871643-bf23e580-7212-11ea-9b92-82c906c19c22.webp)
 
 The default reference time of the layer is set by (sorted by priority):
 
@@ -444,7 +444,7 @@ The data are brought from the provider with the dataset index.
 
 #### Static dataset
 
-There is also the option to set a static dataset, that is to choose a dataset that will be rendered independently of the QGIS time controller. To do that the user can check the check box at the bottom of the temporal page of the properties widget: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.png) For now, as it was simpler to implement and allows the required dataset to be chosen directly, the user can independently choose scalar dataset and vector dataset from combo boxes with the time associated for each dataset (relative time for data without reference time). If required, a unique time could be implemented but that could lead to inconsistent results with non synchronous datasets. The static dataset settings are in the temporal page but can be easily put in the source page if wanted.
+There is also the option to set a static dataset, that is to choose a dataset that will be rendered independently of the QGIS time controller. To do that the user can check the check box at the bottom of the temporal page of the properties widget: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.webp) For now, as it was simpler to implement and allows the required dataset to be chosen directly, the user can independently choose scalar dataset and vector dataset from combo boxes with the time associated for each dataset (relative time for data without reference time). If required, a unique time could be implemented but that could lead to inconsistent results with non synchronous datasets. The static dataset settings are in the temporal page but can be easily put in the source page if wanted.
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -464,11 +464,11 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature allows the user to color the mesh layer vector dataset (arrow, stream lines, traces) with the color ramp shader depending on the magnitude of the vector.
 
-![image39](images/entries/77156534-ed1c6380-6a75-11ea-8b97-a13d3ea27ede.png)
+![image39](images/entries/77156534-ed1c6380-6a75-11ea-8b97-a13d3ea27ede.webp)
 
-![image40](images/entries/77156669-2c4ab480-6a76-11ea-9209-d0144fbfc3f0.png)
+![image40](images/entries/77156669-2c4ab480-6a76-11ea-9209-d0144fbfc3f0.webp)
 
-![image41](images/entries/77156736-5bf9bc80-6a76-11ea-827b-bb55ce52b814.png)
+![image41](images/entries/77156736-5bf9bc80-6a76-11ea-827b-bb55ce52b814.webp)
 
 This feature was funded by [Deltares](https://www.deltares.nl/en/)
 
@@ -478,7 +478,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 This feature adds the option for saving a mesh layer style in a qml file, as utilised for vector and raster layers.
 
-The feature also refactors the raster and vector layer properties menu style. ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.png)
+The feature also refactors the raster and vector layer properties menu style. ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.webp)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -492,11 +492,11 @@ Initial implementation of [Support of 1D elements in Mesh Layers](https://github
 
 1D Meshes consist of vertices and edges. An edge connects two vertices and can have assigned data (scalars or vectors) on it. The 1D mesh network can, for example, be used for modelling an urban drainage system.
 
-There are new options to display 1D mesh (edges) in the mesh frame tab ![image43](images/entries/75885078-2aea7c80-5e26-11ea-8435-eef74afce7b7.png)
+There are new options to display 1D mesh (edges) in the mesh frame tab ![image43](images/entries/75885078-2aea7c80-5e26-11ea-8435-eef74afce7b7.webp)
 
 Also for data on 1D mesh (edges or vertices) there are new options in the contours tab
 
-![image44](images/entries/75885122-3b9af280-5e26-11ea-96a3-f4a4e48c040e.png)
+![image44](images/entries/75885122-3b9af280-5e26-11ea-96a3-f4a4e48c040e.webp)
 
 Note that not all functionality available for 2D meshes is available, notably
 
@@ -521,9 +521,9 @@ A new tab in the mesh layer properties widget allows the user to change the sett
 -   The reduction factor is used to simplify a mesh; the number of triangles for each level of detail is approximately equal to the number of triangles of the previous level of detail, divided by the reduction factor
 -   Maximum mesh resolution: this is the average size (in pixels) of the triangles that are allowed to be displayed; if the average size of the mesh is lower than this value, a mesh with a lower level of detail is displayed, i.e. a mesh with an average size just greater than the maximum mesh resolution.
 
-![image45](images/entries/74750757-9e936380-5242-11ea-98cf-a0e3e6694831.png)
+![image45](images/entries/74750757-9e936380-5242-11ea-98cf-a0e3e6694831.webp)
 
-This feature allows the speeding up of rendering as shown in these tables (result in milliseconds) : ![image46](images/entries/74750903-d69aa680-5242-11ea-9be3-0af7b2beacaf.png)
+This feature allows the speeding up of rendering as shown in these tables (result in milliseconds) : ![image46](images/entries/74750903-d69aa680-5242-11ea-9be3-0af7b2beacaf.webp)
 
 Demo GIF Before: ![image47](images/entries/74751034-0cd82600-5243-11ea-8a02-de78a337f299.gif)
 
@@ -545,7 +545,7 @@ In the same way, the color of arrows are defined in the 2D rendering settings fo
 
 In 3D settings, the user can define the spacing of arrows and if size is fixed or scaled on magnitude.
 
-This spacing setting also defines the maximum size of arrows because arrows can\'t overlap. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.png)
+This spacing setting also defines the maximum size of arrows because arrows can\'t overlap. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 
@@ -614,13 +614,13 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 Adds the ability to create subdivisions for segments included in the right part of the ticks scalebar.
 
-Line Ticks Up ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.png)
+Line Ticks Up ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.webp)
 
-Line Ticks Middle ![image52](images/entries/80860663-6c9e7480-8c69-11ea-94a3-8d0e8544867d.png)
+Line Ticks Middle ![image52](images/entries/80860663-6c9e7480-8c69-11ea-94a3-8d0e8544867d.webp)
 
-Line Ticks Down ![image53](images/entries/80860675-7b852700-8c69-11ea-984d-584eff1e3c95.png)
+Line Ticks Down ![image53](images/entries/80860675-7b852700-8c69-11ea-984d-584eff1e3c95.webp)
 
-Scalebar item properties - Segments groupbox ![image54](images/entries/81009703-653bbe80-8e55-11ea-9286-4850b32edb23.png)
+Scalebar item properties - Segments groupbox ![image54](images/entries/81009703-653bbe80-8e55-11ea-9286-4850b32edb23.webp)
 
 The behaviour related to the segments on the left side of the scalebar is unchanged.
 
@@ -676,7 +676,7 @@ This allows creation of north arrows from marker symbols, exposing the same opti
 
 When a marker acts as a north arrow, the map rotation is ADDED to any existing marker symbol rotation (e.g. if you have to rotate the triangle marker 90% to get it pointing straight up, it will still work nicely in north arrow mode!)
 
-![image58](images/entries/78468312-2c2b0400-775a-11ea-926e-2acf7ec15aa4.png)
+![image58](images/entries/78468312-2c2b0400-775a-11ea-926e-2acf7ec15aa4.webp)
 
 Sponsored by SLYR
 
@@ -690,7 +690,7 @@ Previously you had to hack support for these, e.g. by drawing rectangles using c
 
 Sponsored by SLYR
 
-![image59](images/entries/78419618-c885d580-768a-11ea-959a-8459e19e05df.png)
+![image59](images/entries/78419618-c885d580-768a-11ea-959a-8459e19e05df.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -714,7 +714,7 @@ Ultimately this allows for creation of scalebars with fractional representations
 
 Sponsored by SLYR
 
-![image61](images/entries/77267662-0c71f580-6cef-11ea-9956-917e1d6ef496.png)
+![image61](images/entries/77267662-0c71f580-6cef-11ea-9956-917e1d6ef496.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -724,11 +724,11 @@ Adds two new scalebar styles (which are available in ArcMap, but previously impo
 
 Stepped line style:
 
-![image62](images/entries/77247015-c1b59680-6c78-11ea-92a9-7bbb2ba8638a.png)
+![image62](images/entries/77247015-c1b59680-6c78-11ea-92a9-7bbb2ba8638a.webp)
 
 Hollow (aka \"South African\") style:
 
-![image63](images/entries/77247024-dc880b00-6c78-11ea-827a-344645cec248.png)
+![image63](images/entries/77247024-dc880b00-6c78-11ea-827a-344645cec248.webp)
 
 Sponsored by SLYR
 
@@ -761,7 +761,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 This makes the Map CRS controllable by a variable.
 
-![image64](images/entries/74844265-348ac500-52fb-11ea-9198-78f4f9022ac1.PNG)
+![image64](images/entries/74844265-348ac500-52fb-11ea-9198-78f4f9022ac1.webp)
 
 Related to #34547
 
@@ -796,7 +796,7 @@ This feature was developed by Etienne Trimaille, Jan Caha, Julien Monticolo, Nya
 
 ### Feature: Feature browser for preview in expression builder
 
-This adds a feature browser to the expression builder so one can browse features to see the result of the expression ![image65](images/entries/80604352-e6e4b400-8a31-11ea-8f3b-8c864e124c78.png)
+This adds a feature browser to the expression builder so one can browse features to see the result of the expression ![image65](images/entries/80604352-e6e4b400-8a31-11ea-8f3b-8c864e124c78.webp)
 
 A new widget is added: `QgsFeaturePickerWidget`. For the moment, it\'s a simple combobox (but inherits widget so we can add a map picker button later on). It behaves the same way than the one in the relation reference widget (an editable combobox).
 
@@ -850,7 +850,7 @@ Avoid intersections/overlaps on user-defined layers list.
 
 The third mode\'s layers list is setup by the user via the advanced snapping configuration widgets.
 
-![image66](images/entries/caa646295d6f1cf6297864810637e9f8ceddc102.png)
+![image66](images/entries/caa646295d6f1cf6297864810637e9f8ceddc102.webp)
 
 This feature was funded by [OpenGIS.ch](http://www.opengis.ch/)
 
@@ -864,7 +864,7 @@ It adds two new modes. Snapping on the center of a geometry (centroid) and the m
 
 To allow the selection of these new modes, several snapping modes can be selected at the same time.
 
-![image67](images/entries/71798125-35201280-3051-11ea-959d-a5897ca3391a.png)
+![image67](images/entries/71798125-35201280-3051-11ea-959d-a5897ca3391a.webp)
 
 The order of preference for snapping is as follows: - Vertex, Intersection - Middle - Centroid - Edge - Area
 
@@ -914,7 +914,7 @@ This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids
 
 This new feature allows form labels (aliases) to be evaluated in the form context.
 
-![image72](images/entries/78998144-46912300-7b48-11ea-9fbf-232d11fbeff6.png)
+![image72](images/entries/78998144-46912300-7b48-11ea-9fbf-232d11fbeff6.webp)
 
 ![image73](images/entries/78904645-26486200-7a7d-11ea-84b0-b9e96c0c9797.gif)
 
@@ -954,7 +954,7 @@ The new functions and variables are also available when the parent form is opene
 
 ### New functions and variables
 
-![image77](images/entries/75693398-2ba8d480-5ca7-11ea-8be0-9643f8841c89.png) ![image78](images/entries/75693402-2cda0180-5ca7-11ea-9d65-f0c00e26180e.png) ![image79](images/entries/75693404-2d729800-5ca7-11ea-889d-5aa73bc131ce.png)
+![image77](images/entries/75693398-2ba8d480-5ca7-11ea-8be0-9643f8841c89.webp) ![image78](images/entries/75693402-2cda0180-5ca7-11ea-9d65-f0c00e26180e.webp) ![image79](images/entries/75693404-2d729800-5ca7-11ea-889d-5aa73bc131ce.webp)
 
 Funded by: **ARPA Piemonte**
 
@@ -968,7 +968,7 @@ This is very useful for embedded forms.
 
 Funded by: **ARPA Piemonte**
 
-![image80](images/entries/75524592-82e04800-5a0e-11ea-9333-461a0d02a1c0.png)
+![image80](images/entries/75524592-82e04800-5a0e-11ea-9333-461a0d02a1c0.webp)
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
@@ -980,7 +980,7 @@ Adds an option to the relation widget configuration to suppress form popup open 
 
 This option overrides the form-level option (that might still be the desired behavior when the form is used as a standalone form).
 
-![image81](images/entries/75249972-9786cb00-57d7-11ea-8100-3426d32831db.png)
+![image81](images/entries/75249972-9786cb00-57d7-11ea-8100-3426d32831db.webp)
 
 Note: the final label is **Force hide form on add feature**
 
@@ -1062,7 +1062,7 @@ With this feature we added a large collection of random number raster generation
 6.  Create random raster layer (poisson distribution)
 7.  Create random raster layer (uniform distribution)
 
-![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.png)
+![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1072,23 +1072,23 @@ This feature adds Processing integration for vector tile writing. It is just a w
 
 New algorithms in the Processing toolbox:
 
-![image87](images/entries/81117303-224a1b80-8f27-11ea-851d-f4271ce66ed3.png)
+![image87](images/entries/81117303-224a1b80-8f27-11ea-851d-f4271ce66ed3.webp)
 
 Algorithm\'s parameters for XYZ:
 
-![image88](images/entries/81117371-4279da80-8f27-11ea-9d8b-bbe1c78d9bf1.png)
+![image88](images/entries/81117371-4279da80-8f27-11ea-9d8b-bbe1c78d9bf1.webp)
 
 Algorithm\'s parameters for MBTiles:
 
-![image89](images/entries/81117466-6ccb9800-8f27-11ea-85e7-9c9a1df87920.png)
+![image89](images/entries/81117466-6ccb9800-8f27-11ea-85e7-9c9a1df87920.webp)
 
 List of input layers:
 
-![image90](images/entries/81117708-d6e43d00-8f27-11ea-866a-0c3bdbd97291.png)
+![image90](images/entries/81117708-d6e43d00-8f27-11ea-866a-0c3bdbd97291.webp)
 
 Input layer details:
 
-![image91](images/entries/81117621-ae5c4300-8f27-11ea-993b-782d7de4a10e.png)
+![image91](images/entries/81117621-ae5c4300-8f27-11ea-993b-782d7de4a10e.webp)
 
 This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
 
@@ -1136,7 +1136,7 @@ With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Cre
 -   Float32
 -   Float64
 
-![image93](images/entries/b7b0b73f7d48104cb49f33ed2d453a70d188cbd6.png)
+![image93](images/entries/b7b0b73f7d48104cb49f33ed2d453a70d188cbd6.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1148,7 +1148,7 @@ The main functionality of the algorithm is either standard up/nearest/down-round
 
 The example shows an output raster rounded to multiples of 10
 
-![image94](images/entries/650983141141fc954abc96f79e5255e4634c5051.png)
+![image94](images/entries/650983141141fc954abc96f79e5255e4634c5051.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1190,7 +1190,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 A picture explains this best! After running the algorithm through the designer, you now see the values calculated for the inputs and outputs for each child algorithm:
 
-![image98](images/entries/77991113-5d749000-7366-11ea-986c-652f6e2229e7.png)
+![image98](images/entries/77991113-5d749000-7366-11ea-986c-652f6e2229e7.webp)
 
 This is very useful for debugging models \-- you can see a much clearer visual picture of the flow of values through the model.
 
@@ -1263,7 +1263,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 Empty geometries do not contain coordinates. Thus, like *null* geometries, empty geometries are not spatial data in a strict sense. To make it easier for users to clean a vector layer, the *Remove Null Gometries* algorithm now has an \"**Also remove empty geometries**\" option.
 
-![image101](images/entries/76703713-81b34a00-66a1-11ea-9818-ebf771885206.png)
+![image101](images/entries/76703713-81b34a00-66a1-11ea-9818-ebf771885206.webp)
 
 This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
@@ -1371,7 +1371,7 @@ In the new QGIS version we introduce a new processing algorithm for filling NoDa
 
 The algorithm scans an input raster dataset for NoData cells and fills them with the user defined fill value. Doing so, the algorithm respects the data type of the input raster so that e.g. floating point numbers will be dealt with appropriately for an integer raster. The resulting dataset will not contain any NoData cells.
 
-![image105](images/entries/6cbf249116a09b4d342729da1e09060b9f0ec52f.png)
+![image105](images/entries/6cbf249116a09b4d342729da1e09060b9f0ec52f.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
 
@@ -1391,7 +1391,7 @@ When you are migrating data, it is important to be aware of constraints on targe
 
 The \"Refactor Fields\" algorithm now highlights constraints, and even lets you know more about them via tool-tips.
 
-![image106](images/entries/75100644-6079a500-559e-11ea-91b6-f99fa05451de.png)
+![image106](images/entries/75100644-6079a500-559e-11ea-91b6-f99fa05451de.webp)
 
 This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
@@ -1403,7 +1403,7 @@ We added a new algorithm to convert segmentized geometries to curved geometries.
 
 The algorithm considers successive points to represent a curve if they are evenly spaced and within a tolerance.
 
-![image107](images/entries/c747d86081f3862d9d4bbb2ab067103daceab724.png)
+![image107](images/entries/c747d86081f3862d9d4bbb2ab067103daceab724.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 
@@ -1423,7 +1423,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 ### Feature: Allow adding attributes in the New Scratch Layer dialog
 
-Allows the user to add attributes directly in the New Scratch Layer dialog making it more consistent with other dialogs like New Shapefile/Geopackage. ![image108](images/entries/81394331-76711d80-912a-11ea-8b86-4f2789adff08.png)
+Allows the user to add attributes directly in the New Scratch Layer dialog making it more consistent with other dialogs like New Shapefile/Geopackage. ![image108](images/entries/81394331-76711d80-912a-11ea-8b86-4f2789adff08.webp)
 
 It is still possible to create a scratch layer without any attributes by not adding any fields to the list.
 
@@ -1433,7 +1433,7 @@ This feature was developed by [Alexander Bruy](https://api.github.com/users/alex
 
 Allow creating \"plain\" DBF files without associated geometries from the New Shapefile dialog.
 
-![image109](images/entries/81068877-be553200-8ee9-11ea-9a06-a4d30e773cf6.png)
+![image109](images/entries/81068877-be553200-8ee9-11ea-9a06-a4d30e773cf6.webp)
 
 Creating DBF tables can be useful in some cases and having to use third-party tools for this instead of doing it from within QGIS is inconvenient. This also makes the New Shapefile dialog more consistent with the New Geopackage dialog, which already allows \"geometryless\" tables to be created.
 
@@ -1443,9 +1443,9 @@ This feature was developed by [Alexander Bruy](https://api.github.com/users/alex
 
 Add ability to filter between lists of WMS or WMTS from the source dialog
 
-WMS ![image110](images/entries/80964825-d0fc3800-8e11-11ea-9961-34edb623458c.png)
+WMS ![image110](images/entries/80964825-d0fc3800-8e11-11ea-9961-34edb623458c.webp)
 
-WMTS ![image111](images/entries/80964191-b4abcb80-8e10-11ea-8b80-395dbb37b45c.png)
+WMTS ![image111](images/entries/80964191-b4abcb80-8e10-11ea-8b80-395dbb37b45c.webp)
 
 Sponsored by the QGIS Swiss user group
 
@@ -1617,7 +1617,7 @@ This makes it possible to have pre-releases of plugins in the repository for pow
 
 This change makes no difference for users who haven\'t checked the *enable experimental* option.
 
-![image115](images/entries/75906887-b1638600-5e47-11ea-98c6-06fb664ab177.PNG)
+![image115](images/entries/75906887-b1638600-5e47-11ea-98c6-06fb664ab177.webp)
 
 This feature was funded by [Swiss QGIS User Group](https://www.qgis.ch/)
 
@@ -1678,7 +1678,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 This is the initial work on vector tile layer support.
 
-![image118](images/entries/77539757-2d2e7c80-6ea2-11ea-9098-c6c0924f9d59.png) (The red lines are not rendering artifacts, they are drawn intentionally to show tile borders.)
+![image118](images/entries/77539757-2d2e7c80-6ea2-11ea-9098-c6c0924f9d59.webp) (The red lines are not rendering artifacts, they are drawn intentionally to show tile borders.)
 
 ### Summary
 
@@ -1756,7 +1756,7 @@ The intention here is that specialised development/debugging tools will be moved
 
 Here\'s an example demo showing a \"Python locals\" dev tool:
 
-![image119](images/entries/77492080-55f74780-6e8b-11ea-9141-1b96c42c29eb.png)
+![image119](images/entries/77492080-55f74780-6e8b-11ea-9141-1b96c42c29eb.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 

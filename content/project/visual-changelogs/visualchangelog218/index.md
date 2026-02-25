@@ -39,7 +39,7 @@ Annually we also receive support from various organisations who appreciate the w
 
 Any `http` or `mailto` links within attribute values will now automatically be converted to clickable links within the identify results panel.
 
-![image58](images/entries/thumbnails/eab95eb0acb92a68edeee71a13ea23d77b88d307.png.400x300_q85_crop.png)
+![image58](images/entries/eab95eb0acb92a68edeee71a13ea23d77b88d307.png.400x300_q85_crop.webp)
 
 This feature was developed by [Sandro Mani (Sourcepole)](https://sourcepole.ch/)
 
@@ -57,7 +57,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 QGIS 2.18 adds the ability for users to set whether a user created color scheme should show up in the color button drop-down menus. This setting is controlled through the color picker dialog, on the lists tab. Just add a new color scheme, then from the scheme menu tick the new \"show in buttons\" option. It\'s a handy shortcut if you have sets of common palettes and want them to be instantly available through the color menu.
 
-![image60](images/entries/thumbnails/9453954d199c4950d7aecf153b6d5e53f820ff19.PNG.400x300_q85_crop.png)
+![image60](images/entries/9453954d199c4950d7aecf153b6d5e53f820ff19.PNG.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -69,7 +69,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 In QGIS 2.18 clicking a color button inside the layer style panel causes the color picker dialog to be opened inside the style panel itself rather than as a separate dialog. This allows for interactive modification of colors with immediate preview of the result.
 
-![image42](images/entries/thumbnails/3af7533f5148810d0c26a221d7acdccaf1d7a835.png.400x300_q85_crop.png)
+![image42](images/entries/3af7533f5148810d0c26a221d7acdccaf1d7a835.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -83,7 +83,7 @@ Adds the ability to specify a list of text substitutes to make which apply to la
 
 Users can export and import lists of substitutes to make reuse and sharing easier.
 
-![image43](images/entries/thumbnails/a73aec5fad4c5e39800e462bbac6dd2597f98cba.png.400x300_q85_crop.png)
+![image43](images/entries/a73aec5fad4c5e39800e462bbac6dd2597f98cba.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -93,7 +93,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The parallel labeling mode for line layers has been greatly improved, with a new algorithm which avoids placing labels over jagged parts of the feature geometries.
 
-![image44](images/entries/thumbnails/5b77d12263e0dabfb0649f27d92188613796f409.png.400x300_q85_crop.png)
+![image44](images/entries/5b77d12263e0dabfb0649f27d92188613796f409.png.400x300_q85_crop.webp)
 
 This feature was funded by Andreas Neumann
 
@@ -103,7 +103,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This adds a new mode for labeling polygons where the perimeter of the polygon is labeled using curved labeling.
 
-![image45](images/entries/thumbnails/c7a28cf09a0f1646210faaae85a56c2209ee15e9.PNG.400x300_q85_crop.png)
+![image45](images/entries/c7a28cf09a0f1646210faaae85a56c2209ee15e9.PNG.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -135,7 +135,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutr
 
 The offline editing plugins is a default plugin that ships with QGIS and allows you to offline a remote dataset (e.g. from a database), edit it in the field, and then resynchonise it when you get back to your office. This extends the offline editing possibilities to only work on subset of large layers.
 
-![image47](images/entries/thumbnails/ec977674f356d5376d19be49534818a4cc830c64.png.400x300_q85_crop.png)
+![image47](images/entries/ec977674f356d5376d19be49534818a4cc830c64.png.400x300_q85_crop.webp)
 
 This feature was funded by DB Fahrwegdienste GmbH
 
@@ -149,7 +149,7 @@ Allow controlling labels for individual edit widgets in a form. In the drag and 
 
 In addition it is possible to configure if the link/unlink buttons are shown in relation reference widget, which is useful to hide in 1:n relations where a child can\'t exist without its parents.
 
-![image48](images/entries/thumbnails/6d827c6b286f137ec9de1d97a15c745764494d0a.png.400x300_q85_crop.png)
+![image48](images/entries/6d827c6b286f137ec9de1d97a15c745764494d0a.png.400x300_q85_crop.webp)
 
 This feature was funded by [Kanton Zug, GIS-Fachstelle](http://geo.zg.ch/)
 
@@ -163,7 +163,7 @@ Configuration is done via a double click in the designer tree in the fields conf
 
 An expression can be entered to control the visibility. The expression will be re-evaluated everytime values in the form change and the tab or groupbox shown/hidden accordingly.
 
-![image49](images/entries/thumbnails/8adda1d639ba9b46b15f8a70b38c6cfd407d2515.png.400x300_q85_crop.png)
+![image49](images/entries/8adda1d639ba9b46b15f8a70b38c6cfd407d2515.png.400x300_q85_crop.webp)
 
 This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
 
@@ -171,7 +171,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch
 
 Allows an expression to be set for a vector layer field which is used to evaluate a default value for this field. Default value expressions can utilise properties of the feature which exist at the time of calling, such as digitized geometries. Expression variables can also be used in default value expressions, making it easy to eg insert a user\'s name, the current datetime, project path, etc.
 
-![image50](images/entries/thumbnails/49a9d8a5c38f04d96cf37ad190a97dd4dc4b5025.png.400x300_q85_crop.png)
+![image50](images/entries/49a9d8a5c38f04d96cf37ad190a97dd4dc4b5025.png.400x300_q85_crop.webp)
 
 This feature was funded by DB Fahrwegdienste GmbH
 
@@ -183,7 +183,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 QGIS 2.18 adds support for orienting north arrows in the composer to True North. Previously all arrows were aligned to grid north, which is unsuitable for polar regions or non-north up projections (such as some South African projection systems). Now, you can choose to orient arrows to either grid north or true north. There\'s also an optional offset angle, which can be used to specify a grid convergence to make your arrows orient to magnetic north!
 
-![image51](images/entries/thumbnails/b36b83066c2361e4a9647ee830b55b01a04ce4c5.png.400x300_q85_crop.png)
+![image51](images/entries/b36b83066c2361e4a9647ee830b55b01a04ce4c5.png.400x300_q85_crop.webp)
 
 This feature was funded by [Norwegian Polar Institute\'s Quantarctica project](http://quantarctica.npolar.no)
 
@@ -195,7 +195,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This new algorithm is similar to the centroids algorithm, but where a centroid may fall outside its corresponding feature the \'Point on surface\' algorithm is guaranteed to create a point which is inside the corresponding polygon feature (or touching the corresponding line feature for line layers).
 
-![image52](images/entries/thumbnails/133a854441e2ade7bec91a48e9a1f1d4b1d012ac.png.400x300_q85_crop.png)
+![image52](images/entries/133a854441e2ade7bec91a48e9a1f1d4b1d012ac.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -205,7 +205,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 The dissolve algorithm now allows you to dissolve based on more than one field value. In previous QGIS versions a dissolve could only group features by a single field value.
 
-![image53](images/entries/thumbnails/a75b372f431c98592bdaccbc0bf4e90654969fa2.PNG.400x300_q85_crop.png)
+![image53](images/entries/a75b372f431c98592bdaccbc0bf4e90654969fa2.PNG.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -225,7 +225,7 @@ The processing clip algorithm has been optimised for common use scenarios, resul
 | **Earlier versions:** 50 minutes
 | **QGIS 2.18:** 30 seconds
 
-![image54](images/entries/thumbnails/f975cb641b319e952264dc1e706deafdfd2b7496.png.400x300_q85_crop.png)
+![image54](images/entries/f975cb641b319e952264dc1e706deafdfd2b7496.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -235,7 +235,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This new algorithm calculates the bounding box (envelope) of each feature in the input layer.
 
-![image55](images/entries/thumbnails/398557f0cfe897a227fea70ceef700f9ab048e2d.png.400x300_q85_crop.png)
+![image55](images/entries/398557f0cfe897a227fea70ceef700f9ab048e2d.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -245,7 +245,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This algorithm joins all the connected parts of MultiLineString geometries into single LineString geometries. If any parts of the input MultiLineString geometries are not connected, the resultant geometry will be a MultiLineString containing any lines which could be merged and any non-connected line parts.
 
-![image56](images/entries/thumbnails/7ebf10a71a1c3f28d48a2c19f7ad1f08ca75bf80.PNG.400x300_q85_crop.png)
+![image56](images/entries/7ebf10a71a1c3f28d48a2c19f7ad1f08ca75bf80.PNG.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -255,7 +255,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This new algorithm returns the closure of the combinatorial boundary of the input geometries (ie the topological boundary of the geometry). For instance, a polygon geometry will have a boundary consisting of the linestrings for each ring in the polygon, and a line geometry will have a boundary consisting of the start and end points of the line. This algorithm is only valid for polygon or line layers.
 
-![image57](images/entries/thumbnails/907b7b5c36af36547f10f33f65e9655a5cbe5a67.png.400x300_q85_crop.png)
+![image57](images/entries/907b7b5c36af36547f10f33f65e9655a5cbe5a67.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
@@ -285,7 +285,7 @@ Necessary for geometries that contain curves (CircularArc, CompoundCurve, CurveP
 
 This feature can be enabled in the \"OWS server\" tab in the \"Project Properties\" dialogue.
 
-![image62](images/entries/thumbnails/f4b9cf3ba10669b933eb3f3a5c401f675ad76533.png.400x300_q85_crop.png)
+![image62](images/entries/f4b9cf3ba10669b933eb3f3a5c401f675ad76533.png.400x300_q85_crop.webp)
 
 This feature was funded by Andreas Neumann
 

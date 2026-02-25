@@ -188,6 +188,9 @@ test.describe("Resources pages", () => {
         await expect(roadmapPage.date).toBeVisible();
         await expect(roadmapPage.weekNumber).toBeVisible();
         await expect(roadmapPage.weeks).toBeVisible();
+        await expect(roadmapPage.abbreviation).toBeVisible();
+        await expect(roadmapPage.description).toBeVisible();
+        await expect(roadmapPage.ltr).toBeVisible();
         await expect(roadmapPage.longTermReleaseBegin).toBeVisible();
         await expect(roadmapPage.regularReleaseBegin).toBeVisible();
         await expect(roadmapPage.featureFreezeEnd).toBeVisible();

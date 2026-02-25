@@ -6,7 +6,7 @@ draft: false
 HasBanner: true
 heroImage: "img/project.jpg"
 sidebar: true
-ButtonText: "Download" 
+ButtonText: "Download"
 ButtonLink: "download/"
 SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and open source"

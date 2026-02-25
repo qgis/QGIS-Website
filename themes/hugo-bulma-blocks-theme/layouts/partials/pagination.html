@@ -2,13 +2,13 @@
 
 {{ if .Paginator.HasPrev }}
 <a href="{{.Paginator.Prev.URL}}" class="">
-  <i class=""></i>&nbsp;Newer
+  <i class=""></i>&nbsp;{{ i18n "newer" }}
 </a>
 {{ end }}
-<span class="">Page {{.Paginator.PageNumber}} of {{.Paginator.TotalPages}}</span>
+<span class="">{{ printf (i18n "pagination") .Paginator.PageNumber .Paginator.TotalPages }}</span>
 {{ if .Paginator.HasNext }}
 <a href="{{.Paginator.Next.URL}}" class="">
-  Older&nbsp;<i class=""></i>
+  {{ i18n "older" }}&nbsp;<i class=""></i>
 </a>
 {{ end }}
 {{ end }}

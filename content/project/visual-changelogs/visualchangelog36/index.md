@@ -35,7 +35,7 @@ QGIS is Free software and you are under no obligation to pay anything to use it 
 
 A new decorator has been added to allow users to quickly add a title onto their canvases. The decorator features a background bar with customizable color and opacity.
 
-![image2](images/entries/thumbnails/400e617d8059eddcd1228f3ce6861d6087f65794.png.400x300_q85_crop.png)
+![image2](images/entries/400e617d8059eddcd1228f3ce6861d6087f65794.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -99,7 +99,7 @@ This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia
 
 The identify tool now works on the mesh layer. It displays the value of scalar and vector components of the mesh at the current time.
 
-![image3](images/entries/thumbnails/62a172172d717af1b5399af4006db1ee0e82c7f5.png.400x300_q85_crop.png)
+![image3](images/entries/62a172172d717af1b5399af4006db1ee0e82c7f5.png.400x300_q85_crop.webp)
 
 This feature was funded by Lutra Consulting
 
@@ -155,7 +155,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 A brand new UI theme has made its way into QGIS named \"Blend of Gray\". In addition, hundreds of fixes, tweaks, and refinements were applied to the preexisting \"Night Mapping\" theme.
 
-![image4](images/entries/thumbnails/32e743ea5bf84c96b86ea31160b1677b6362eacf.png.400x300_q85_crop.png)
+![image4](images/entries/32e743ea5bf84c96b86ea31160b1677b6362eacf.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -201,7 +201,7 @@ A new raster image marker symbology type was added to QGIS allowing users to use
 
 Using data-defined image source, this new symbology makes for a great method to display georeferenced images on a map canvas.
 
-![image5](images/entries/thumbnails/511ac83d3b841be6ae81db5f5d0f319e07e9656e.png.400x300_q85_crop.png)
+![image5](images/entries/511ac83d3b841be6ae81db5f5d0f319e07e9656e.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
@@ -225,7 +225,7 @@ This allows simpler styling of layers with a large number of categories, where i
 
 The option is available from the right click context menu in the categories list view, whenever multiple categories are selected.
 
-![image6](images/entries/thumbnails/159eb5270ab436adbbddba1c92799d8621a0b8e5.png.400x300_q85_crop.jpg)
+![image6](images/entries/159eb5270ab436adbbddba1c92799d8621a0b8e5.png.400x300_q85_crop.webp)
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
@@ -256,7 +256,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 QGIS is now able to export raster styling to sld, for example to be used in Geoserver. See: <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
 
-![image7](images/entries/thumbnails/7ab383dfaa0a0dbc9651168a56f44e2275b8c2df.png.400x300_q85_crop.jpg)
+![image7](images/entries/7ab383dfaa0a0dbc9651168a56f44e2275b8c2df.png.400x300_q85_crop.webp)
 
 This feature was funded by OSGeo UK, GeoServer PSC, Brad Hards
 
@@ -269,7 +269,7 @@ This feature was developed by [Luigi Pirelli and GeoSolutions](https://www.geo-s
 -   add dX, dY and residual on GCP Points
 -   add option to automatically save GCP Points in the raster-modified path
 
-![image8](images/entries/thumbnails/2d6278e2e65be30ceb12ff30f26d34dae6196e42.png.400x300_q85_crop.jpg)
+![image8](images/entries/2d6278e2e65be30ceb12ff30f26d34dae6196e42.png.400x300_q85_crop.webp)
 
 This feature was developed by [Faneva Andriamiadantsoa](https://github.com/Fanevanjanahary)
 
@@ -419,7 +419,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 
 Allows for removal of duplicate features, identified using the values in one (or more) field values from the input features. Optionally any discarded (duplicate) features can be saved to a separate sink.
 
-![image9](images/entries/thumbnails/ae0544826b7d16479b2e48ba97f1f530c80bbd42.png.400x300_q85_crop.png)
+![image9](images/entries/ae0544826b7d16479b2e48ba97f1f530c80bbd42.png.400x300_q85_crop.webp)
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
@@ -429,7 +429,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This algorithm creates a copy of an input layer and adds a new field for every unique key found in a HStore type field. For instance, a HStore field is often present in an OSM dataset (\"other_tags\").
 
-![image10](images/entries/thumbnails/304c29f7cc6d26aa823001b67a46744deec3c2dd.png.400x300_q85_crop.jpg)
+![image10](images/entries/304c29f7cc6d26aa823001b67a46744deec3c2dd.png.400x300_q85_crop.webp)
 
 This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
@@ -437,7 +437,7 @@ This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
 This new algorithm forces polygon geometries to respect the Right-Hand-Rule, in which the area that is bounded by a polygon is to the right of the boundary. In particular, the exterior ring is oriented in a clockwise direction and the interior rings in a counter-clockwise direction.
 
-![image11](images/entries/thumbnails/16db7b4b5931c9d96eba053701641defc6f52290.png.400x300_q85_crop.png)
+![image11](images/entries/16db7b4b5931c9d96eba053701641defc6f52290.png.400x300_q85_crop.webp)
 
 This feature was funded by QGIS User Group Germany
 
@@ -447,7 +447,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This new algorithm allows users to extract binary fields to files.
 
-![image12](images/entries/thumbnails/6715290eac02e216394b3f24045da0b982069c7d.png.400x300_q85_crop.png)
+![image12](images/entries/6715290eac02e216394b3f24045da0b982069c7d.png.400x300_q85_crop.webp)
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
@@ -459,7 +459,7 @@ This algorithm takes an input (multi)line (or curve) layer, and splits each feat
 
 Supports data-defined maximum length property, and edit in place operation.
 
-![image13](images/entries/thumbnails/13c8c2fedfa76ff8decbc4d7e6d683d01bab1126.png.400x300_q85_crop.png)
+![image13](images/entries/13c8c2fedfa76ff8decbc4d7e6d683d01bab1126.png.400x300_q85_crop.webp)
 
 This feature was developed by Nyall Dawson, Nathan Woodrow
 
@@ -483,7 +483,7 @@ This feature was developed by Alex Bruy
 
 This algorithm calculates statistics for a raster layer\'s values, categorized by zones defined in another raster layer.
 
-![image14](images/entries/thumbnails/014272dcac2a228f8d8cc7a1587ac9b07865bc1f.png.400x300_q85_crop.png)
+![image14](images/entries/014272dcac2a228f8d8cc7a1587ac9b07865bc1f.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
@@ -519,7 +519,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 The SAGA raster surface volume has been ported to a native QGIS algorithm. The SAGA version of this algorithm is of limited use in QGIS, because the volume calculated is embedded only in the SAGA terminal output. This prevents it being saved to a file, or reused within a model as an input to a later model step. Accordingly, the algorithm has been ported across to a native QGIS c++ algorithm. The algorithm duplicates the SAGA algorithm 1:1, but outputs the volume (and area) to either a HTML report, or a vector table. Additionally, the outputs are exported as numeric outputs from the algorithm, allowing them to be re-used within models.
 
-![image15](images/entries/thumbnails/e0a8089ec0653cf5628636354ec80ef317e68565.png.400x300_q85_crop.png)
+![image15](images/entries/e0a8089ec0653cf5628636354ec80ef317e68565.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
@@ -527,7 +527,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 The 2.x ability to directly convert a Processing model to an equivalent Python script has been resurrected and updated for the 3.x Processing API.
 
-![image16](images/entries/thumbnails/42b342e04b54d5e106ba1051b210d83af8712dd8.png.400x300_q85_crop.jpg)
+![image16](images/entries/42b342e04b54d5e106ba1051b210d83af8712dd8.png.400x300_q85_crop.webp)
 
 This feature was funded by [Solspec](http://solspec.io)
 
@@ -539,7 +539,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This change adds a new right click menu to the settings shown in the \"Advanced\" tab in the settings dialog, which allows users to remove that setting (or group of settings).
 
-![image17](images/entries/thumbnails/6b012542ef9ca282ba6f9087758f85d818dd5ec9.png.400x300_q85_crop.jpg)
+![image17](images/entries/6b012542ef9ca282ba6f9087758f85d818dd5ec9.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -551,7 +551,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Allows for direct export of these files (e.g. to a different format, crs, etc) without having to actually load them into a project first.
 
-![image18](images/entries/thumbnails/d939594c84d7aa186fe5f18f46ed7ad0c89d8c67.png.400x300_q85_crop.jpg)
+![image18](images/entries/d939594c84d7aa186fe5f18f46ed7ad0c89d8c67.png.400x300_q85_crop.webp)
 
 This feature was funded by [Nyall Dawson (North Road)](https://north-road.com)
 
@@ -569,7 +569,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 QGIS 3.6 brings back the functionality from the old 2.18 standalone \"browser\" application to preview layers and their attributes. This functionality has been moved to the inbuilt browser panel, and is available by right-clicking on a layer and selecting \"properties\" (or by clicking the \"enable properties widget\" button in the browser toolbar).
 
-![image19](images/entries/thumbnails/5058aa9a701e417271b0cbf0869669177a7f0fe4.png.400x300_q85_crop.png)
+![image19](images/entries/5058aa9a701e417271b0cbf0869669177a7f0fe4.png.400x300_q85_crop.webp)
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
@@ -587,7 +587,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Right clicking a directory in the browser panel now shows a \"New\" menu, containing items for creating a new Geopackage, Shapefile, or subdirectory under the selected directory.
 
-![image20](images/entries/thumbnails/2bc8475b95a8413285b3c88a9a070f02f43cf5b9.png.400x300_q85_crop.jpg)
+![image20](images/entries/2bc8475b95a8413285b3c88a9a070f02f43cf5b9.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -601,7 +601,7 @@ On Windows, this new terminal inherits the QGIS environment, so GDAL commands an
 
 Terminal hackers rejoice!
 
-![image21](images/entries/thumbnails/623ef55ae3918f72faa7ec796bbac01bf5063464.png.400x300_q85_crop.jpg)
+![image21](images/entries/623ef55ae3918f72faa7ec796bbac01bf5063464.png.400x300_q85_crop.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 
@@ -609,7 +609,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ### Feature: Improved \"missing layer\" handling on project load
 
-![image22](images/entries/thumbnails/8e3fbce280478d8e88cab7e24b489b783c83fc13.png.400x300_q85_crop.png)
+![image22](images/entries/8e3fbce280478d8e88cab7e24b489b783c83fc13.png.400x300_q85_crop.webp)
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it/)
 
@@ -627,7 +627,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ### Feature: Add a toggle action to vector layer legend items
 
-![image23](images/entries/thumbnails/f3b822b5591367b7d246fbdd5173763a1633b9ec.png.400x300_q85_crop.png)
+![image23](images/entries/f3b822b5591367b7d246fbdd5173763a1633b9ec.png.400x300_q85_crop.webp)
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
@@ -717,7 +717,7 @@ One can also provide an asterisk (\*) for ATLAS_PK to request all features of an
 
 As clients may not know which template has an atlas and which attribute(s) are the primary key of the coverage layer, this new feature also adds this information to the GetProjectSettings response of the WMS service.
 
-![image24](images/entries/thumbnails/6a4648e447531099dfd8d5e113c2a79c8420df06.png.400x300_q85_crop.png)
+![image24](images/entries/6a4648e447531099dfd8d5e113c2a79c8420df06.png.400x300_q85_crop.webp)
 
 This feature was funded by [Kanton Zug, Amt für Geoinformation](https://geo.zg.ch/)
 
@@ -762,7 +762,7 @@ This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
 
 The new buttons allow the user to load and save the query in an external SQL file.
 
-![image25](images/entries/thumbnails/7d8fbe3054bd3d8b311d26d9343a20041f3fb809.png.400x300_q85_crop.png)
+![image25](images/entries/7d8fbe3054bd3d8b311d26d9343a20041f3fb809.png.400x300_q85_crop.webp)
 
 This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 
@@ -926,7 +926,7 @@ This feature was developed by Martin Dobias (Lutra Consulting)
 
 ### Feature: Rule-based 3D renderer
 
-![image26](images/entries/thumbnails/0825fbe986d774f7f2d5a0bdfdbc2487453ef49c.png.400x300_q85_crop.jpg)
+![image26](images/entries/0825fbe986d774f7f2d5a0bdfdbc2487453ef49c.png.400x300_q85_crop.webp)
 
 This feature was funded by QGIS community
 
@@ -936,7 +936,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 With this feature, you can use mesh layer in 3D scene,
 
-![image27](images/entries/thumbnails/82a388b33e8fb96df43fb32b9bc5ef013be0459c.jpg.400x300_q85_crop.jpg)
+![image27](images/entries/82a388b33e8fb96df43fb32b9bc5ef013be0459c.jpg.400x300_q85_crop.webp)
 
 This feature was funded by Lutra Consulting
 

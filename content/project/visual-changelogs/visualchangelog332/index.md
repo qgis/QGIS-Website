@@ -81,7 +81,7 @@ A description tooltip is now available when hovering the cursor over the value i
 
 The description tooltip matches that of the currently selected item\'s description as defined in the \'description column\' on the value relation configuration panel.
 
-![image6](images/entries/369ecca5320fe09a8f2657463df647c5526a496c.png)
+![image6](images/entries/369ecca5320fe09a8f2657463df647c5526a496c.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -89,7 +89,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 The action to dock and undock 2d map canvas views has been added to match the behaviour of 3d canvas views.
 
-![image7](images/entries/d6aaec94112b3787b59d1d820b0335b9ab9b2385.png)
+![image7](images/entries/d6aaec94112b3787b59d1d820b0335b9ab9b2385.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -119,7 +119,7 @@ This setting will affects wheel zooms in multiple contexts, including:
 -   in the Elevation profile canvas (`QgsElevationProfileCanvas`)
 -   In the model editor graphic view (`QgsModelGraphicsView`)
 
-![image9](images/entries/b242e0115f29586846d88d6d0cfb1d5f6f9760f0.png)
+![image9](images/entries/b242e0115f29586846d88d6d0cfb1d5f6f9760f0.webp)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -170,7 +170,7 @@ The following improvements have been implemented to the measuring tool in 3d sce
 
 The object selection logic has also been refactored for more control, and the 3d identify tool was also enhanced to prevent interference with camera navigation as well as a bug fix for where the wrong FIDs were returned on specific cases.
 
-![image13](images/entries/65d6c0b4ab0c187c6a4b1e9f2f6c6483708cfce4.png)
+![image13](images/entries/65d6c0b4ab0c187c6a4b1e9f2f6c6483708cfce4.webp)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -201,7 +201,7 @@ Under the hood provider utilizes the [pdal_wrench](https://github.com/PDAL/wrenc
 
 As pdal_wrench requires PDAL \>= 2.5.0, the new processing provider will be available only where the PDAL version requirement is satisfied.
 
-![image14](images/entries/e6c8922d1f55cc29aeceb514da8253f9b5b36edf.png)
+![image14](images/entries/e6c8922d1f55cc29aeceb514da8253f9b5b36edf.webp)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -217,7 +217,7 @@ The `QgsPointCloudExpression` class was also extended with a new method to conve
 
 Existing PDAL algorithms using expression filters have been updated to use expression parameters instead of strings.
 
-![image15](images/entries/f69a04fbddde3eee72333fab2c1af0c58582aaae.png)
+![image15](images/entries/f69a04fbddde3eee72333fab2c1af0c58582aaae.webp)
 
 This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
@@ -293,7 +293,7 @@ Instead of limiting layout legend filtering to a single linked map, this change 
 
 The UX has been designed to avoid changing the current user workflows, in that legends will still be linked to a single main map item. This map is used when determining the scale (and other map dependent properties) at which to render the legend\'s symbols. Checking the \"Only show items inside linked maps\" option will still automatically filter the legend by the content of the main linked maps. However, there\'s a new \"\...\" options button next to the \"Only show items inside linked maps\" checkbox which allows users to select also other maps from their layout to consider when determining visible items:
 
-![image18](images/entries/3246252a68bf9e6ecbd8d54d20b477305ec8f79a.png)
+![image18](images/entries/3246252a68bf9e6ecbd8d54d20b477305ec8f79a.webp)
 
 This feature was funded by City of Canning
 
@@ -313,7 +313,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 When merging features, users may now select from a list of available values from the selected features, rather than manually capturing a manual value for a field.
 
-![image19](images/entries/01bce8523b3c79ad48ae040c8a5d446c4aa338ae.png)
+![image19](images/entries/01bce8523b3c79ad48ae040c8a5d446c4aa338ae.webp)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 
@@ -325,7 +325,7 @@ The advanced digitizing options for common angles have been extended with the fo
 -   A new option has been added to show current common angle in the floater context widget
 -   New \'N\' \'SHIFT+N\' keyboard shortcuts are available to cycle through the common angle options
 
-![image20](images/entries/7e402e89c5fb13d41c7e1e99d9fa13b51499c571.png)
+![image20](images/entries/7e402e89c5fb13d41c7e1e99d9fa13b51499c571.webp)
 
 This feature was funded by ChartWorld International
 
@@ -384,7 +384,7 @@ The following policies have been provided:
 -   use default value
 -   use ratio of geometries
 
-![image22](images/entries/f53e5c49ba0c25415b7a5bd163cb94a1ab72ebcd.png)
+![image22](images/entries/f53e5c49ba0c25415b7a5bd163cb94a1ab72ebcd.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -448,7 +448,7 @@ A new \"Reorder Output Layers\" action to the model designer menu has been added
 
 The model creator can also set an optional \"Group name\" for the outputs for automatically grouping outputs within the layer tree using a new group name or by adding them to an existing group.
 
-![image23](images/entries/a898507ce882d4e757064429471307a3cdd0e0e9.png)
+![image23](images/entries/a898507ce882d4e757064429471307a3cdd0e0e9.webp)
 
 This feature was funded by [QGIS User Group Germany](https://qgis.de/)
 
@@ -502,7 +502,7 @@ A handy new environment configuration setting has been created for the configura
 
 This functionality has been applied to the PDAL and TileXYZ algorithms.
 
-![image25](images/entries/d5a70cd3ed4a01b2e51381907b92b05256e13cc2.png)
+![image25](images/entries/d5a70cd3ed4a01b2e51381907b92b05256e13cc2.webp)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
@@ -510,7 +510,7 @@ This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
 Individual processing algorithms may now include an environment setting to specify a custom temporary folder which overwrites the configured temporary file path. This is useful in situations where a particular tool may use a lot of temporary disk space and a dedicated location or scratch disk is required, or when a particular operation requires performance enhancements offered by a particular disk or path.
 
-![image26](images/entries/e36dd209990541e93fdf7a3170596fe0f81ec920.png)
+![image26](images/entries/e36dd209990541e93fdf7a3170596fe0f81ec920.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -547,7 +547,7 @@ This change adds a new \"feature filter\" option alongside the existing feature 
 
 It allows users to enter an expression to subset the layer dynamically when running the tool, avoiding the need for separate steps to set layer filters or create layer subsets.
 
-![image28](images/entries/032c4a9555a7debad18a2fd8fb4b84a09e94eb3b.png)
+![image28](images/entries/032c4a9555a7debad18a2fd8fb4b84a09e94eb3b.webp)
 
 This feature was funded by City of Canning
 
@@ -584,7 +584,7 @@ New API classes introduced include:
 -   Classes for settings editors: QgsSettingsStringEditorWidgetWrapper, etc.
 -   QgsSettingsEditorWidgetRegistry: a registry of the setting editor wrappers
 
-![image29](images/entries/36a2db1e6a9448a1bdd4699bbeaa79057e912535.png)
+![image29](images/entries/36a2db1e6a9448a1bdd4699bbeaa79057e912535.webp)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 
@@ -604,7 +604,7 @@ Regardless of the selected policy, if only one profile exists it will be used, a
 
 User profile icons are also provided to allow users to visually differentiate between their active profiles.
 
-![image30](images/entries/ac274c8186837f23d80df6142030a416efcdcb1e.png)
+![image30](images/entries/ac274c8186837f23d80df6142030a416efcdcb1e.webp)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 
@@ -693,7 +693,7 @@ Configuration widgets are provided for the TCP, UDP, and serial port sensor type
 
 The implementation includes a sensor GUI registry to easily allow for additional python sensors to be created and shipped as plugins.
 
-![image32](images/entries/59e82c99ec67a2bd1778543c7fa649a02e5fcf70.png)
+![image32](images/entries/59e82c99ec67a2bd1778543c7fa649a02e5fcf70.webp)
 
 This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
 
@@ -703,7 +703,7 @@ This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
 A sensor table widget is provided that displays registered sensors within a project, along with with actions to connect and disconnect from sensors. The table is accessible via a new sensors panel in the project properties dialog.
 
-![image33](images/entries/e797ad206e4fbb63387d98411d8e08c6a6fe0f47.png)
+![image33](images/entries/e797ad206e4fbb63387d98411d8e08c6a6fe0f47.webp)
 
 This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
 
@@ -737,7 +737,7 @@ To load a layer on a parallel worker thread, the layer data provider must suppor
 
 A new advanced setting is available to deactivate this behavior when necessary.
 
-![image34](images/entries/809438ef5d3fd9f3574891be96131f9d113562d9.png)
+![image34](images/entries/809438ef5d3fd9f3574891be96131f9d113562d9.webp)
 
 This feature was funded by [KoBold Metals](https://www.koboldmetals.com/)
 
@@ -831,7 +831,7 @@ To make browsing the features more user friendly and provide more information, t
 -   number of returned items
 -   pagesize/pagination controls also at the bottom of the page
 
-![image36](images/entries/2fc23a3a7f310ae6cc53ae4ff676c5a96eb8c34a.png)
+![image36](images/entries/2fc23a3a7f310ae6cc53ae4ff676c5a96eb8c34a.webp)
 
 This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
 

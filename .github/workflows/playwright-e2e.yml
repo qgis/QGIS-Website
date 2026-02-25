@@ -25,8 +25,8 @@ jobs:
           hugo-version: '0.139.4'
           extended: true
 
-      - name: 🧱 Hugo build
-        run: hugo --gc --config ./config.toml -b http://127.0.0.1:1313
+      - name: 🧱 Hugo build (dev overlay, reduced languages)
+        run: hugo --gc --config ./config.toml,./config/config.dev.toml -b http://127.0.0.1:1313 -d public
 
       - name: 🕸️ Run server
         run: |

@@ -4,9 +4,9 @@ title: "Debian / Ubuntu Packages"
 subtitle: "QGIS packages for Debian and Ubuntu"
 draft: false
 sidebar: true
-url: '/linux-packages/debian'
 aliases:
   - /linux-packages/ubuntu
+  - /linux-packages/debian
 ---
 
 {{< content-start >}}
