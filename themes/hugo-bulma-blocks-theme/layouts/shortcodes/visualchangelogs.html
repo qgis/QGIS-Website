@@ -1,9 +1,0 @@
-{{ range (where .Site.Pages "Section" "project") }}
-  {{ range sort (where .Pages "Type" "visual-changelog") ".Params.releasedate" "desc" }}
-    <p>
-      <a href="{{ .RelPermalink }}">
-        {{ .Title }} <span style="color: #888; font-weight:300">{{ .Params.releasedate }}</span>
-      </a>
-    </p>
-  {{ end }}
-{{ end }}

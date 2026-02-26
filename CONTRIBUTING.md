@@ -12,7 +12,7 @@ ensure a smooth contribution process.
 
 This web site is a static site built using [Hugo](https://gohugo.io/).
 
-![Hugo Logo](./img/hugo-logo.png) and using the [hugo bulma blocks theme](https://github.com/kartoza/hugo-bulma-blocks-theme).
+![Hugo Logo](./img/hugo-logo.png) and using the [hugo bulma blocks theme](https://github.com/qgis/QGIS-Hugo-Website-Theme).
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -20,8 +20,10 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 ## 🛒 Getting the Code
 
 ```
-git clone https://github.com/qgis/QGIS-Website.git
+git clone --recurse-submodules https://github.com/qgis/QGIS-Website.git
 cd QGIS-Website
+# To update the submodule
+git submodule update --init --recursive
 ```
 
 
@@ -313,11 +315,11 @@ The site needs to work in production, where the links of the site are all below 
 
 ## Styles (SASS/CSS)
 
-SASS for most components is stored in themes/hugo-bulma-blocks-theme/assets/sass/bulma/components/
+SASS for most components is stored in themes/qgis-website-theme/assets/sass/bulma/components/
 
-Some common styles are places in themes/hugo-bulma-blocks-theme/assets/sass/style.sass - this file is compiled as hugo template, hence has access to config.toml variables and hugo macroses
+Some common styles are places in themes/qgis-website-theme/assets/sass/style.sass - this file is compiled as hugo template, hence has access to config.toml variables and hugo macroses
 
-Also some bulma theme overrides are placed in themes/hugo-bulma-blocks-theme/assets/css/custom.css
+Also some bulma theme overrides are placed in themes/qgis-website-theme/assets/css/custom.css
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -353,7 +355,7 @@ We welcome your contributions! All contributors are expected to sign a contribut
 
 ## 🏠 Editing the landing (home) page
 
-The layout of the landing page is themes/hugo-bulma-blocks-theme/layouts/index.html: the main page has many diverse blocks, that are not used anywhere else, hence its content is mostly in the partials.
+The layout of the landing page is themes/qgis-website-theme/layouts/index.html: the main page has many diverse blocks, that are not used anywhere else, hence its content is mostly in the partials.
 
 The ``content/_index.md`` contains the front matter of the page and the contents for the `feature` shortcodes. Just edit whatever you like there. The blocks shortcodes are described [here](https://github.com/qgis/QGIS-Website/blob/main/docs/shortcodes.md)
 
@@ -381,7 +383,7 @@ markdown as ```/img/foo.png```.
 
 ## 📦 Blocks Shortcodes
 
-The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/hugo-bulma-blocks-theme/layouts/shortcodes/``` folder.
+The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/qgis-website-theme/layouts/shortcodes/``` folder.
 
 The shortcodes with screenshots are described [here](https://github.com/qgis/QGIS-Website/blob/main/docs/shortcodes.md)
 
@@ -392,7 +394,7 @@ TODO
 
 ### Sidebar
 
-Sidebar is implemented in themes/hugo-bulma-blocks-theme/layouts/partials/sidebar.html
+Sidebar is implemented in themes/qgis-website-theme/layouts/partials/sidebar.html
 
 Items are retrieved from config.toml under `[menu]` section. `weight` parameter defines the order of the item.
 
