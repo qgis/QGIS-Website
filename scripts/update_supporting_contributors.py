@@ -117,7 +117,7 @@ def xlsx_to_supporting_json(xlsx_path, output_path, geojson_path):
     existing_names = {c['name'].lower() for c in existing_contributors}
     
     contributors = []
-    geojson_features = []  # This will include ALL approved contributors from XLSX
+    coord_map = {}  # name → (longitude, latitude) collected from XLSX
     approved_emails = []
     rejected_emails = []
     skipped_no_image = []
@@ -245,27 +245,9 @@ def xlsx_to_supporting_json(xlsx_path, output_path, geojson_path):
                 if email:
                     approved_emails.append({'name': name, 'email': email})
             
-            # Always create GeoJSON feature if coordinates exist (for both new and existing)
+            # Always store coordinates if present (for both new and existing)
             if longitude is not None and latitude is not None:
-                feature = {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": [longitude, latitude]
-                    },
-                    "properties": {
-                        "name": name,
-                        "is_organization": is_organization,
-                        "is_active": is_active,
-                        "avatar_img": final_avatar_img,
-                        "link": link if link else None,
-                        "roles": roles,
-                        "contribution_description": description,
-                        "start_date": start_date,
-                        "end_date": end_date
-                    }
-                }
-                geojson_features.append(feature)
+                coord_map[name] = (longitude, latitude)
             
         elif approved == 'no':
             # Collect rejected email (only for new rejections)
@@ -277,6 +259,23 @@ def xlsx_to_supporting_json(xlsx_path, output_path, geojson_path):
     
     # Sort by start date (oldest first), using a very old date for missing start dates
     all_contributors.sort(key=lambda x: x.get('start_date') or '9999-12-31')
+    
+    # Build GeoJSON features using all_contributors as the property source
+    # so every field value is identical to what is stored in supporting.json
+    geojson_features = []
+    for contributor in all_contributors:
+        name = contributor['name']
+        if name in coord_map:
+            longitude, latitude = coord_map[name]
+            feature = {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Point",
+                    "coordinates": [longitude, latitude]
+                },
+                "properties": dict(contributor)
+            }
+            geojson_features.append(feature)
     
     # Write to JSON file
     with open(output_path, 'w', encoding='utf-8') as jsonfile:
