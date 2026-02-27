@@ -5,11 +5,11 @@
 # To update: Run 'fetch_feeds.py' (automated nightly via GitHub Actions)
 # See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines
 
-level: "Medium"
-title: "Idrostudi srl"
-logo: "idrostudi-srl.png"
-startDate: "2025-03-01"
-endDate: "2026-02-28"
-link: "https://www.idrostudi.it/"
+level: "Small"
+title: "GIS Specialist Di Alejandra Duque Ropero"
+logo: "gis-specialist-di-alejandra-duque-ropero.svg"
+startDate: "2026-01-01"
+endDate: "2027-02-28"
+link: "https://gisspecialist.it/"
 country: "Italy"
 ---
