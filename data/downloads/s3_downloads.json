@@ -1,26 +1,26 @@
 {
   "bucket_name": "qgis-download",
   "prefix": "",
-  "generated_at": "2026-02-26T13:30:15.759954+00:00",
+  "generated_at": "2026-03-01T04:51:13.061208+00:00",
   "statistics": {
-    "total_files": 128820,
-    "total_size": 3883336166251,
-    "total_size_formatted": "3.53 TB",
+    "total_files": 129456,
+    "total_size": 3905322193590,
+    "total_size_formatted": "3.55 TB",
     "by_category": {
       "installer": {
-        "count": 119105,
-        "size": 3377683963089,
-        "size_formatted": "3.07 TB"
+        "count": 119709,
+        "size": 3395663759916,
+        "size_formatted": "3.09 TB"
       },
       "other": {
-        "count": 5953,
-        "size": 16670686171,
+        "count": 5969,
+        "size": 16670764341,
         "size_formatted": "15.53 GB"
       },
       "image": {
-        "count": 111,
-        "size": 10025065,
-        "size_formatted": "9.56 MB"
+        "count": 112,
+        "size": 12481233,
+        "size_formatted": "11.90 MB"
       },
       "data": {
         "count": 5,
@@ -28,24 +28,24 @@
         "size_formatted": "99.34 KB"
       },
       "archive": {
-        "count": 3646,
-        "size": 488971390204,
-        "size_formatted": "455.39 GB"
+        "count": 3661,
+        "size": 492975086378,
+        "size_formatted": "459.12 GB"
       }
     },
     "by_extension": {
-      ".deb": 118428,
-      ".gz": 2813,
+      ".deb": 119031,
+      ".gz": 2828,
       "no extension": 2209,
-      ".dsc": 1890,
+      ".dsc": 1905,
       ".bz2": 830,
-      ".sha256sum": 401,
+      ".sha256sum": 402,
       ".exe": 392,
       ".md5sum": 361,
       ".gpg": 347,
       ".msi": 226
     },
-    "last_updated": "2026-02-26T13:30:15.701123+00:00"
+    "last_updated": "2026-03-01T04:51:12.995139+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -4601,6 +4601,39 @@
                 "category": "other"
               },
               {
+                "key": "macos/pr/qgis_pr_final-3_44_7-2.dmg",
+                "name": "qgis_pr_final-3_44_7-2.dmg",
+                "path": "macos/pr",
+                "size": 1493045939,
+                "size_formatted": "1.39 GB",
+                "last_modified": "2026-02-27T11:50:01.139000+00:00",
+                "last_modified_timestamp": 1772193001,
+                "extension": ".dmg",
+                "category": "installer"
+              },
+              {
+                "key": "macos/pr/qgis_pr_final-3_44_7-2.png",
+                "name": "qgis_pr_final-3_44_7-2.png",
+                "path": "macos/pr",
+                "size": 2456168,
+                "size_formatted": "2.34 MB",
+                "last_modified": "2026-02-27T11:52:25.101000+00:00",
+                "last_modified_timestamp": 1772193145,
+                "extension": ".png",
+                "category": "image"
+              },
+              {
+                "key": "macos/pr/qgis_pr_final-3_44_7-2.sha256sum",
+                "name": "qgis_pr_final-3_44_7-2.sha256sum",
+                "path": "macos/pr",
+                "size": 75,
+                "size_formatted": "75.00 B",
+                "last_modified": "2026-02-27T11:52:22.016000+00:00",
+                "last_modified_timestamp": 1772193142,
+                "extension": ".sha256sum",
+                "category": "other"
+              },
+              {
                 "key": "macos/pr/qgis_pr_final-3_44_7.dmg",
                 "name": "qgis_pr_final-3_44_7.dmg",
                 "path": "macos/pr",
@@ -4674,10 +4707,10 @@
             "key": "macos/qgis-macos-pr.dmg",
             "name": "qgis-macos-pr.dmg",
             "path": "macos",
-            "size": 1493053051,
+            "size": 1493045939,
             "size_formatted": "1.39 GB",
-            "last_modified": "2026-02-21T12:52:25.230000+00:00",
-            "last_modified_timestamp": 1771678345,
+            "last_modified": "2026-02-27T11:52:20.989000+00:00",
+            "last_modified_timestamp": 1772193140,
             "extension": ".dmg",
             "category": "installer"
           },
@@ -4687,8 +4720,8 @@
             "path": "macos",
             "size": 2456168,
             "size_formatted": "2.34 MB",
-            "last_modified": "2026-02-21T12:52:31.248000+00:00",
-            "last_modified_timestamp": 1771678351,
+            "last_modified": "2026-02-27T11:52:26.988000+00:00",
+            "last_modified_timestamp": 1772193146,
             "extension": ".png",
             "category": "image"
           },
@@ -4698,8 +4731,8 @@
             "path": "macos",
             "size": 75,
             "size_formatted": "75.00 B",
-            "last_modified": "2026-02-21T12:52:27.516000+00:00",
-            "last_modified_timestamp": 1771678347,
+            "last_modified": "2026-02-27T11:52:23.009000+00:00",
+            "last_modified_timestamp": 1772193143,
             "extension": ".sha256sum",
             "category": "other"
           }
@@ -4783,6 +4816,28 @@
                 "category": "other"
               },
               {
+                "key": "windows/weekly/QGIS-OSGeo4W-3.99.0-1097-8d844eb34ac-1.msi",
+                "name": "QGIS-OSGeo4W-3.99.0-1097-8d844eb34ac-1.msi",
+                "path": "windows/weekly",
+                "size": 1390837760,
+                "size_formatted": "1.30 GB",
+                "last_modified": "2026-02-27T08:09:52.433000+00:00",
+                "last_modified_timestamp": 1772179792,
+                "extension": ".msi",
+                "category": "installer"
+              },
+              {
+                "key": "windows/weekly/QGIS-OSGeo4W-3.99.0-1097-8d844eb34ac-1.sha256sum",
+                "name": "QGIS-OSGeo4W-3.99.0-1097-8d844eb34ac-1.sha256sum",
+                "path": "windows/weekly",
+                "size": 109,
+                "size_formatted": "109.00 B",
+                "last_modified": "2026-02-27T08:08:58.250000+00:00",
+                "last_modified_timestamp": 1772179738,
+                "extension": ".sha256sum",
+                "category": "other"
+              },
+              {
                 "key": "windows/weekly/QGIS-OSGeo4W-3.99.0-328-dbf6360e52b-1.msi",
                 "name": "QGIS-OSGeo4W-3.99.0-328-dbf6360e52b-1.msi",
                 "path": "windows/weekly",
@@ -4801,28 +4856,6 @@
                 "size_formatted": "96.00 B",
                 "last_modified": "2026-01-05T05:31:40.440000+00:00",
                 "last_modified_timestamp": 1767591100,
-                "extension": ".sha256sum",
-                "category": "other"
-              },
-              {
-                "key": "windows/weekly/QGISQT6-OSGeo4W-3.99.0-317-06429743457-1.msi",
-                "name": "QGISQT6-OSGeo4W-3.99.0-317-06429743457-1.msi",
-                "path": "windows/weekly",
-                "size": 1389465600,
-                "size_formatted": "1.29 GB",
-                "last_modified": "2025-12-16T05:51:23.575000+00:00",
-                "last_modified_timestamp": 1765864283,
-                "extension": ".msi",
-                "category": "installer"
-              },
-              {
-                "key": "windows/weekly/QGISQT6-OSGeo4W-3.99.0-317-06429743457-1.sha256sum",
-                "name": "QGISQT6-OSGeo4W-3.99.0-317-06429743457-1.sha256sum",
-                "path": "windows/weekly",
-                "size": 111,
-                "size_formatted": "111.00 B",
-                "last_modified": "2025-12-08T13:28:41.333000+00:00",
-                "last_modified_timestamp": 1765200521,
                 "extension": ".sha256sum",
                 "category": "other"
               },
@@ -24781,10 +24814,10 @@
         "key": "qgis-api-doc.7z",
         "name": "qgis-api-doc.7z",
         "path": "",
-        "size": 3605170240,
+        "size": 3612620086,
         "size_formatted": "3.36 GB",
-        "last_modified": "2026-02-26T02:02:08.813000+00:00",
-        "last_modified_timestamp": 1772071328,
+        "last_modified": "2026-02-28T02:02:26.414000+00:00",
+        "last_modified_timestamp": 1772244146,
         "extension": ".7z",
         "category": "archive"
       },
