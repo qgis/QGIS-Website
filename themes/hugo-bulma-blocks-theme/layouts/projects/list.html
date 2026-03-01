@@ -1,0 +1,191 @@
+{{ partial "header.html" . }}
+{{ partial "menu.html" . }}
+{{ partial "submenu.html" . }}
+{{ partial "banner.html" . }}
+
+{{/* Project Gallery Section */}}
+<section class="section project-gallery-section">
+    <div class="container">
+        {{/* Compact Filter Bar */}}
+        <div class="project-filter-bar mb-5">
+            <div class="filter-bar-inner">
+                {{/* Category Pills */}}
+                <div class="category-pills" id="categoryFilters">
+                    <button class="pill is-active" data-filter="all">All</button>
+                    {{ with site.Data.projects.categories }}
+                        {{ range $key, $cat := . }}
+                        <button class="pill" data-filter="{{ $key }}" style="--pill-color: {{ $cat.color }}">
+                            {{ $cat.name }}
+                        </button>
+                        {{ end }}
+                    {{ end }}
+                </div>
+
+                {{/* Search */}}
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="projectSearch" placeholder="Search projects...">
+                </div>
+            </div>
+        </div>
+
+        {{/* Project Grid - Clean Cards */}}
+        <div class="project-grid-clean" id="projectGrid">
+            {{ $categories := site.Data.projects.categories }}
+            {{ with site.Data.projects }}
+                {{/* Incubated Projects */}}
+                {{ range .incubated }}
+                {{ $category := index $categories .category }}
+                <a href="/projects/{{ .id }}/" class="project-card-clean"
+                   data-category="{{ .category }}"
+                   data-status="incubated"
+                   data-name="{{ .name | lower }}"
+                   data-tagline="{{ .tagline | lower }}">
+
+                    {{/* Color accent bar */}}
+                    <div class="card-accent" style="background: {{ $category.color }}"></div>
+
+                    {{/* Card Content */}}
+                    <div class="card-body">
+                        {{/* Icon */}}
+                        <div class="project-icon" style="background: {{ $category.color }}15; color: {{ $category.color }}">
+                            <i class="{{ $category.icon }}"></i>
+                        </div>
+
+                        {{/* Text */}}
+                        <h3 class="project-title">{{ .name }}</h3>
+                        <p class="project-desc">{{ .tagline }}</p>
+
+                        {{/* Category label */}}
+                        <span class="category-label" style="color: {{ $category.color }}">
+                            {{ $category.name }}
+                        </span>
+                    </div>
+
+                    {{/* Hover arrow */}}
+                    <div class="card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+                {{ end }}
+
+                {{/* Community Projects */}}
+                {{ range .community }}
+                {{ $category := index $categories .category }}
+                <a href="/projects/{{ .id }}/" class="project-card-clean community"
+                   data-category="{{ .category }}"
+                   data-status="community"
+                   data-name="{{ .name | lower }}"
+                   data-tagline="{{ .tagline | lower }}">
+
+                    {{/* Color accent bar */}}
+                    <div class="card-accent" style="background: {{ $category.color }}"></div>
+
+                    {{/* Card Content */}}
+                    <div class="card-body">
+                        {{/* Icon */}}
+                        <div class="project-icon" style="background: {{ $category.color }}15; color: {{ $category.color }}">
+                            <i class="{{ $category.icon }}"></i>
+                        </div>
+
+                        {{/* Text */}}
+                        <h3 class="project-title">{{ .name }}</h3>
+                        <p class="project-desc">{{ .tagline }}</p>
+
+                        {{/* Category label */}}
+                        <span class="category-label" style="color: {{ $category.color }}">
+                            {{ $category.name }}
+                        </span>
+                    </div>
+
+                    {{/* Hover arrow */}}
+                    <div class="card-arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </a>
+                {{ end }}
+            {{ end }}
+        </div>
+
+        {{/* No Results */}}
+        <div class="no-results-clean" id="noResults" style="display: none;">
+            <i class="fa-solid fa-search"></i>
+            <p>No projects match your search</p>
+            <button onclick="resetFilters()">Clear filters</button>
+        </div>
+
+        {{/* Results count */}}
+        <div class="results-footer">
+            <span id="resultsCount"></span>
+        </div>
+    </div>
+</section>
+
+{{/* Filter JavaScript */}}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const grid = document.getElementById('projectGrid');
+    const cards = grid.querySelectorAll('.project-card-clean');
+    const pills = document.querySelectorAll('.pill');
+    const searchInput = document.getElementById('projectSearch');
+    const resultsCount = document.getElementById('resultsCount');
+    const noResults = document.getElementById('noResults');
+
+    let activeCategory = 'all';
+    let searchTerm = '';
+
+    function filterProjects() {
+        let visibleCount = 0;
+
+        cards.forEach((card, index) => {
+            const cardCategory = card.dataset.category;
+            const cardName = card.dataset.name;
+            const cardTagline = card.dataset.tagline;
+
+            const matchesCategory = activeCategory === 'all' || cardCategory === activeCategory;
+            const matchesSearch = searchTerm === '' ||
+                cardName.includes(searchTerm) ||
+                cardTagline.includes(searchTerm);
+
+            if (matchesCategory && matchesSearch) {
+                card.style.display = '';
+                card.style.animationDelay = (index * 0.03) + 's';
+                visibleCount++;
+            } else {
+                card.style.display = 'none';
+            }
+        });
+
+        resultsCount.textContent = visibleCount + ' project' + (visibleCount !== 1 ? 's' : '');
+        noResults.style.display = visibleCount === 0 ? 'flex' : 'none';
+        grid.style.display = visibleCount === 0 ? 'none' : 'grid';
+    }
+
+    pills.forEach(pill => {
+        pill.addEventListener('click', function() {
+            pills.forEach(p => p.classList.remove('is-active'));
+            this.classList.add('is-active');
+            activeCategory = this.dataset.filter;
+            filterProjects();
+        });
+    });
+
+    searchInput.addEventListener('input', function() {
+        searchTerm = this.value.toLowerCase().trim();
+        filterProjects();
+    });
+
+    window.resetFilters = function() {
+        activeCategory = 'all';
+        searchTerm = '';
+        pills.forEach(p => p.classList.remove('is-active'));
+        document.querySelector('.pill[data-filter="all"]').classList.add('is-active');
+        searchInput.value = '';
+        filterProjects();
+    };
+
+    filterProjects();
+});
+</script>
+
+{{ partial "footer.html" }}

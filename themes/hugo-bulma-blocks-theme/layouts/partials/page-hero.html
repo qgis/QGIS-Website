@@ -1,0 +1,75 @@
+{{/* OSGeo Consistent Page Hero Section */}}
+{{ $size := .Params.HeroSize | default "is-medium" }}
+{{ $isLarge := eq $size "is-large" }}
+
+<section class="page-hero {{ $size }}">
+    {{/* Gradient Background */}}
+    <div class="page-hero-bg">
+        <div class="hero-gradient-overlay"></div>
+        {{/* Optional background image */}}
+        {{ if .Params.HeroImage }}
+        <div class="hero-bg-image" style="background-image: url('{{ absURL .Params.HeroImage }}');"></div>
+        {{ end }}
+    </div>
+
+    {{/* Grid Pattern */}}
+    <div class="page-hero-pattern"></div>
+
+    {{/* Content */}}
+    <div class="page-hero-content">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column {{ if .Params.HeroLogo }}is-8{{ else }}is-12{{ end }}">
+                    {{/* Badge/Label */}}
+                    {{ if .Params.LabelText }}
+                    <div class="page-hero-badge">
+                        <span class="badge-icon"><i class="fa-solid fa-tag"></i></span>
+                        <span>{{ .Params.LabelText }}</span>
+                    </div>
+                    {{ end }}
+
+                    {{/* Title */}}
+                    <h1 class="page-hero-title">{{ .Params.Title }}</h1>
+
+                    {{/* Subtitle */}}
+                    {{ if .Params.SubTitle }}
+                    <p class="page-hero-subtitle">{{ .Params.SubTitle }}</p>
+                    {{ end }}
+
+                    {{/* Buttons */}}
+                    {{ if or .Params.ButtonText .Params.SecondaryButtonText }}
+                    <div class="page-hero-buttons">
+                        {{ if .Params.ButtonText }}
+                        <a href="{{ .Params.ButtonLink | absURL }}" class="hero-btn hero-btn-primary">
+                            <span class="btn-text">{{ .Params.ButtonText }}</span>
+                            <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                        </a>
+                        {{ end }}
+                        {{ if .Params.SecondaryButtonText }}
+                        <a href="{{ .Params.SecondaryButtonLink | absURL }}" class="hero-btn hero-btn-secondary">
+                            <span class="btn-text">{{ .Params.SecondaryButtonText }}</span>
+                        </a>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+
+                {{/* Optional Logo */}}
+                {{ if .Params.HeroLogo }}
+                <div class="column is-4 has-text-centered">
+                    <div class="page-hero-logo">
+                        <img src="{{ absURL .Params.HeroLogo }}" alt="{{ .Params.Title }}">
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    {{/* Bottom Wave */}}
+    <div class="page-hero-wave">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 80L60 73.3C120 66.7 240 53.3 360 46.7C480 40 600 40 720 43.3C840 46.7 960 53.3 1080 56.7C1200 60 1320 60 1380 60L1440 60V80H1380C1320 80 1200 80 1080 80C960 80 840 80 720 80C600 80 480 80 360 80C240 80 120 80 60 80H0Z" fill="white"/>
+        </svg>
+    </div>
+</section>

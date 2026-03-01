@@ -111,22 +111,15 @@
   background: $primary1
 
 .section-header
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
-  color: white
+  background: transparent
+  color: inherit
   padding: 2rem 0
-  margin-bottom: 3rem
+  margin-bottom: 0
   position: relative
-  overflow: hidden
+  overflow: visible
 
 .section-header::before
-  content: ''
-  position: absolute
-  top: -50%
-  left: -50%
-  width: 200%
-  height: 200%
-  background: repeating-linear-gradient(45deg, rgba(255,255,255,0.05), rgba(255,255,255,0.05) 10px, transparent 10px, transparent 20px)
-  animation: slide 20s linear infinite
+  content: none
 
 @keyframes slide
   0%

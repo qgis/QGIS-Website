@@ -1,0 +1,122 @@
+/**
+ * Experimental Site Ribbon Styles
+ * Warning banner for unofficial R&D prototype site
+ */
+
+.experimental-ribbon {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: linear-gradient(135deg, #FF6B6B 0%, #F59E0B 100%);
+    color: white;
+    font-size: 0.875rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.experimental-ribbon-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.experimental-ribbon-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 1.75rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.experimental-ribbon-icon i {
+    font-size: 0.875rem;
+}
+
+.experimental-ribbon-text {
+    text-align: center;
+    line-height: 1.4;
+}
+
+.experimental-ribbon-text a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.experimental-ribbon-text a:hover {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.experimental-ribbon-close {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease;
+}
+
+.experimental-ribbon-close:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.experimental-ribbon-close i {
+    font-size: 0.75rem;
+}
+
+/* Adjust navbar position when ribbon is visible */
+html.has-navbar-fixed-top {
+    padding-top: calc(3.25rem + 2.5rem) !important; /* navbar + ribbon */
+}
+
+.navbar.is-fixed-top {
+    top: 2.5rem !important; /* Push navbar down by ribbon height */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .experimental-ribbon {
+        font-size: 0.75rem;
+    }
+
+    .experimental-ribbon-content {
+        padding: 0.375rem 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .experimental-ribbon-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .experimental-ribbon-icon i {
+        font-size: 0.75rem;
+    }
+
+    .experimental-ribbon-text strong {
+        display: block;
+    }
+
+    html.has-navbar-fixed-top {
+        padding-top: calc(3.25rem + 3rem) !important;
+    }
+
+    .navbar.is-fixed-top {
+        top: 3rem !important;
+    }
+}

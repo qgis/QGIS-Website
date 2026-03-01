@@ -1,0 +1,22 @@
+{{/* CTA Box Shortcode - Creates a beautiful call-to-action section */}}
+{{ $title := .Get "title" | default "Join Us" }}
+{{ $subtitle := .Get "subtitle" | default "" }}
+{{ $button1Text := .Get "button1-text" | default "" }}
+{{ $button1Link := .Get "button1-link" | default "#" }}
+{{ $button2Text := .Get "button2-text" | default "" }}
+{{ $button2Link := .Get "button2-link" | default "#" }}
+
+<div class="cta-section">
+    <h2>{{ $title }}</h2>
+    {{ if $subtitle }}<p>{{ $subtitle }}</p>{{ end }}
+    {{ if or $button1Text $button2Text }}
+    <div class="button-bar">
+        {{ if $button1Text }}
+        <a href="{{ $button1Link }}" class="button is-white is-large">{{ $button1Text }}</a>
+        {{ end }}
+        {{ if $button2Text }}
+        <a href="{{ $button2Link }}" class="button is-outlined is-white is-large">{{ $button2Text }}</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>

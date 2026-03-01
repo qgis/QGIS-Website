@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(xargs cat:*)",
+      "Bash(xargs ls:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(unzip:*)",
+      "WebFetch(domain:www.osgeo.org)",
+      "WebFetch(domain:live.osgeo.org)",
+      "Bash(hugo:*)",
+      "Bash(tr:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "Bash(nix develop:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

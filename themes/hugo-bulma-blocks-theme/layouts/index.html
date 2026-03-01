@@ -2,10 +2,13 @@
 {{ partial "header.html" . }}
 {{ partial "menu.html" . }}
 {{ partial "contextmenu.html" . }}
-{{ partial "banner.html" . }}
+{{/* Use stunning OSGeo hero on homepage instead of standard banner */}}
+{{ if eq .RelPermalink "/" }}
+    {{ partial "osgeo-hero.html" . }}
+{{ else }}
+    {{ partial "banner.html" . }}
+{{ end }}
 {{ .Content }}
-{{ partial "explore.html" . }}
-{{ partial "funders-simple.html" . }}
 
 {{ if .Page.File }}
 <section class="section pt-0 is-hidden-touch">

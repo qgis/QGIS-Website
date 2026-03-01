@@ -1,9 +1,0 @@
----
-logo: cawdor_forestry_logo.png
-level: Small
-title: CawdorForestry Resource Management
-link: http://www.cawdorforestry.com/
-country: Scotland
-startDate: 02.2016
-endDate: 02.2017
----

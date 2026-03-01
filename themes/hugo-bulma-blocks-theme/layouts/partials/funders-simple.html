@@ -1,101 +1,108 @@
-<section class="section">
-    <div class="container">
-        <div class="pb-2">
-            <h2 id="sustaining-members">
-                QGIS sustaining members
-                <a class="heading-anchor" href="#sustaining-members">
-                    ¶
-                </a>
-            </h2>
-        </div>
-        
-        <div class="supporters-grid large-grid">
-            <div class="large-supporter is-vertical is-flex fund-Flagship add-supporter">
-                <a href="{{ absURL "funding/membership" }}">
-                    <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
-                        <figure>
-                            <img src="{{ absURL "img/addsupporter.svg" }}" loading="lazy" alt="add supporter">
-                        </figure>
-                    </article>
-                    <span class="partner-title">Add your logo here?</span>
-                </a>
-            </div>
-        
-            {{ $.Scratch.Set "counter" 0 }}
-            {{ $headlessbundle := .Site.GetPage "/funders" }}
-        
-            <!-- List Flagship supporters first -->
-            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                {{ if eq .Params.level "Flagship" }}
-                    {{ $startDate := time .Params.startDate }}
-                    {{ $endDate := time .Params.endDate }}
-                    {{ if ge $endDate now }}
-                        {{ $count := add ($.Scratch.Get "counter") 1 }}
-                        {{ $.Scratch.Set "counter" $count }}
-                        <div class="large-supporter is-vertical is-flex fund-{{ .Params.level }}">
-                            <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
-                                <a href="{{ .Params.link }}">
-                                    <figure>
-                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" loading="lazy" alt="{{ .Params.title }}">
-                                    </figure>
-                                </a>
-                            </article>
-                            <p class="partner-title">Flagship membership</p>
-                            <br>
-                        </div>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-        
-            <!-- Then list Large supporters -->
-            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                {{ if eq .Params.level "Large" }}
-                    {{ $startDate := time .Params.startDate }}
-                    {{ $endDate := time .Params.endDate }}
-                    {{ if ge $endDate now }}
-                        {{ $count := add ($.Scratch.Get "counter") 1 }}
-                        {{ $.Scratch.Set "counter" $count }}
-                        <div class="large-supporter is-vertical is-flex fund-{{ .Params.level }}">
-                            <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center">
-                                <a href="{{ .Params.link }}">
-                                    <figure>
-                                        <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" loading="lazy" alt="{{ .Params.title }}">
-                                    </figure>
-                                </a>
-                            </article>
-                            <p class="partner-title">Large membership</p>
-                            <br>
-                        </div>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-        </div>
-        
+{{/* OSGeo Sponsors Section - Clean Modern Design */}}
+{{ $headlessbundle := .Site.GetPage "/funders" }}
+{{ $hasSponsors := false }}
+{{ range ( $headlessbundle.Resources.ByType "page" ) }}
+    {{ $endDate := time .Params.endDate }}
+    {{ if ge $endDate now }}
+        {{ $hasSponsors = true }}
+    {{ end }}
+{{ end }}
 
-        <div class="supporters-grid small-grid">
-                {{ $.Scratch.Set "counter" 0 }}
-                {{ $headlessbundle := .Site.GetPage "/funders" }}
+<section class="osgeo-sponsors-section">
+    <div class="container">
+        {{ if $hasSponsors }}
+        {{/* Flagship & Large Sponsors */}}
+        <div class="sponsors-tier sponsors-tier-large">
+            {{ $.Scratch.Set "hasFlagship" false }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                {{ if or (eq .Params.level "Flagship") (eq .Params.level "Large") }}
+                    {{ $endDate := time .Params.endDate }}
+                    {{ if ge $endDate now }}
+                        {{ $.Scratch.Set "hasFlagship" true }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+            {{ if $.Scratch.Get "hasFlagship" }}
+            <div class="sponsors-grid sponsors-grid-large">
                 {{ range ( $headlessbundle.Resources.ByType "page" ) }}
-                    {{ if (eq .Params.level "Medium") }}
-                        {{ $startDate := time .Params.startDate }}
+                    {{ if or (eq .Params.level "Flagship") (eq .Params.level "Large") }}
                         {{ $endDate := time .Params.endDate }}
                         {{ if ge $endDate now }}
-                            {{ $count := add ($.Scratch.Get "counter") 1 }}
-                            {{ $.Scratch.Set "counter" $count }}
-                            <div class="tile">
-                                <article class="tile is-child box is-transparent is-flex is-justify-content-center is-align-items-center p-0 fund-Medium">
-                                    <a href="{{ .Params.link }}">
-                                        <figure >
-                                            <img class="grayscale" loading="lazy" src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" alt="{{ .Params.title }}">
-                                        </figure>
-                                    </a>
-                                </article>
-                            </div>
+                            <a href="{{ .Params.link }}" class="sponsor-card sponsor-{{ .Params.level | lower }}" target="_blank" rel="noopener">
+                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" loading="lazy" alt="{{ .Params.title }}">
+                            </a>
                         {{ end }}
                     {{ end }}
                 {{ end }}
             </div>
+            {{ end }}
         </div>
 
+        {{/* Medium Sponsors */}}
+        <div class="sponsors-tier sponsors-tier-medium">
+            {{ $.Scratch.Set "hasMedium" false }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                {{ if eq .Params.level "Medium" }}
+                    {{ $endDate := time .Params.endDate }}
+                    {{ if ge $endDate now }}
+                        {{ $.Scratch.Set "hasMedium" true }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+            {{ if $.Scratch.Get "hasMedium" }}
+            <div class="sponsors-grid sponsors-grid-medium">
+                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                    {{ if eq .Params.level "Medium" }}
+                        {{ $endDate := time .Params.endDate }}
+                        {{ if ge $endDate now }}
+                            <a href="{{ .Params.link }}" class="sponsor-card sponsor-medium" target="_blank" rel="noopener">
+                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" loading="lazy" alt="{{ .Params.title }}">
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+
+        {{/* Small Sponsors */}}
+        <div class="sponsors-tier sponsors-tier-small">
+            {{ $.Scratch.Set "hasSmall" false }}
+            {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                {{ if eq .Params.level "Small" }}
+                    {{ $endDate := time .Params.endDate }}
+                    {{ if ge $endDate now }}
+                        {{ $.Scratch.Set "hasSmall" true }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+
+            {{ if $.Scratch.Get "hasSmall" }}
+            <div class="sponsors-grid sponsors-grid-small">
+                {{ range ( $headlessbundle.Resources.ByType "page" ) }}
+                    {{ if eq .Params.level "Small" }}
+                        {{ $endDate := time .Params.endDate }}
+                        {{ if ge $endDate now }}
+                            <a href="{{ .Params.link }}" class="sponsor-card sponsor-small" target="_blank" rel="noopener">
+                                <img src="{{ .Site.BaseURL }}funders/{{ .Params.logo }}" loading="lazy" alt="{{ .Params.title }}">
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        {{ else }}
+        {{/* No sponsors - show call to action */}}
+        <div class="sponsors-empty">
+            <div class="sponsors-empty-content">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <p>Be the first to support OSGeo's mission!</p>
+                <a href="{{ absURL "sponsors/" }}" class="button is-osgeo-primary">Become a Sponsor</a>
+            </div>
+        </div>
+        {{ end }}
     </div>
 </section>

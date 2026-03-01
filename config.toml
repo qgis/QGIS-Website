@@ -1,777 +1,365 @@
-# May be overwritten in .github/workflows/github-pages.yml or other config files
-baseURL = 'https://qgis.org/'
+# OSGeo Hugo Website Configuration
+# Based on QGIS-Hugo structure with OSGeo branding
+# Note: For GitHub Pages deployment, this is overridden by the --baseURL flag
+baseURL = 'https://timlinux.github.io/OSGEO-Hugo/'
 languageCode = 'en-us'
-title = 'QGIS Web Site'
+title = 'OSGeo - Open Source Geospatial Foundation'
 theme = 'hugo-bulma-blocks-theme'
-# Default pagination.
-# Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
+
+# Default pagination
 [pagination]
   paginate = 50
 
-# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+# Syntax highlighting
 pygmentsUseClasses = true
 pygmentsCodefences = true
 
-
-# Folders in these folders get published automatically
+# Static directories
 staticDir = ['static']
 
-# See https://gohugo.io/templates/robots/
-# Set it to false to create a robots.txt file without using a template.
-# The file robot.txt will be copied into the root folder when building
-# the static file
+# Robots.txt
 enableRobotsTXT = false
 
 [taxonomies]
   category = 'categories'
   series = 'series'
   tag = 'tags'
-  # See readme for submenu notes
   submenu = 'submenus'
 
 [params]
 # Min hugo version
 minHugoVersion = "0.139.0"
-# Brand colours:
-primary1 = "#589632"
-primary2 = "#55828b"
-primary3 = "#395c6b"
-primary4 = "#EEE766"
-primary5 = "#93B023"
-primary6 = "#ee7913"
+
+# OSGeo Brand Colours (from OSGeo Branding Style Guide)
+# Primary: Light Green #4DB05B (Pantone 361 U)
+# Secondary: Dark Teal #003A40 (Pantone 330 U)
+primary1 = "#4DB05B"
+primary2 = "#003A40"
+primary3 = "#2D6E4B"
+primary4 = "#5DC06B"
+primary5 = "#006670"
+primary6 = "#00858C"
 primary1-invert = "#fff"
-primary2-invert = "#eeeeee"
-primary3-invert = "#eeeeee"
-primary4-invert = "#363636"
-primary5-invert = "#eeeeee"
-primary6-invert = "#fff"
-links = "#3A9800"
-# TODO update these to gradient colours like above
-complementary1 = "#93B023"
-complementary2 = "#ee7913"
-complementary3 = "#EEE766"
-complementary4 = "#93b023"
-complementary5 = "#a7cecb"
-complementary6 = "#589732"
-complementary7 = "#93B022"
-complementary8 = "#385C6B"
-light1 = "#fbfbfb"
-light2 = "#eeeeee"
-light3 = "#E7E7E7"
-dark1 = "#808080"
-dark2 = "#000"
-text-primary1 = "#002033"
-text-primary2 = "#4D6370"
-# Bulma specific colours based on our branding
-black = "#000"
+primary2-invert = "#ffffff"
+primary3-invert = "#ffffff"
+primary4-invert = "#003A40"
+primary5-invert = "#ffffff"
+primary6-invert = "#ffffff"
+links = "#4DB05B"
+
+# Complementary colours
+complementary1 = "#4DB05B"
+complementary2 = "#003A40"
+complementary3 = "#5DC06B"
+complementary4 = "#006670"
+complementary5 = "#87D492"
+complementary6 = "#2D6E4B"
+complementary7 = "#00858C"
+complementary8 = "#004D52"
+
+light1 = "#f8faf8"
+light2 = "#e8f5e9"
+light3 = "#c8e6c9"
+dark1 = "#003A40"
+dark2 = "#001F22"
+text-primary1 = "#003A40"
+text-primary2 = "#2D5A52"
+
+# Bulma specific colours based on OSGeo branding
+black = "#001F22"
 white = "#ffffff"
-grey-dark = "#444444"
-grey-darker = "#363636"
-grey-light = "#d4d4d4"
-primary = "#a7cecb"
-danger = "#ee7913"
-info = "#93b023"
-success = "#589632"
-warning = "#EEE766"
-link = "#ee7913"
-# Brand fonts to override bulma font families
-heading-font = "'Twemoji Country Flags', 'Trueno', sans-serif"
-text-font = "'Twemoji Country Flags', 'Trueno', sans-serif"
-fancy-font = "'Sevillana', cursive"
+grey-dark = "#003A40"
+grey-darker = "#001F22"
+grey-light = "#c8e6c9"
+primary = "#4DB05B"
+danger = "#d32f2f"
+info = "#003A40"
+success = "#4DB05B"
+warning = "#ffc107"
+link = "#4DB05B"
+
+# OSGeo Brand fonts
+# Headers: Miriam Libre Bold
+# Body: Sintony Regular
+heading-font = "'Miriam Libre', 'Helvetica Neue', sans-serif"
+text-font = "'Sintony', 'Helvetica Neue', sans-serif"
+fancy-font = "'Miriam Libre', serif"
 
 menuFontClass = "is-size-6"
-## Gh repo edit link
-## This repo is used for the "Edit this page" link
-githubRepo = "https://github.com/qgis/QGIS-Website/"
+
+## GitHub repo edit link
+githubRepo = "https://github.com/OSGeo/osgeo-hugo/"
 githubSubdir = "content"
 githubBranch = "main"
 
 ## GH Repo for filing a new issue
-githubIssueUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/issues/new/choose"
-### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
-githubEditUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/edit/main"
+githubIssueUrl = "https://github.com/OSGeo/osgeo-hugo/issues/new/choose"
+### Edit content repo
+githubEditUrl = "https://github.com/OSGeo/osgeo-hugo/edit/main"
 ### Radius for boxes
-corner-radius = "0px"
+corner-radius = "4px"
 
-## Url to navigation web component
-uniNavHeaderUrl = 'https://qgis.github.io/qgis-uni-navigation/index.js'
+## Disable uni-navigation (OSGeo doesn't use this)
+uniNavHeaderUrl = ''
 uniNavHeaderLocationPrefix = ""
 
-## Url to news feed. After URL change you have to check 
-## themes/hugo-bulma-blocks-theme/layouts/partials/contextmenu.html 
-## file to ensure that it adresses the correct keys 
-newsfeed ='https://feed.qgis.org/?lang=en&json=1'
+## News feed - to be configured
+newsfeed = ''
 
-## This will turn on Coockie popup. True to show popup
+## Cookie popup
 cookiesstate = false
 
-# Matomo
-matomoURL = "//matomo.qgis.org/"
-matomoSiteId = '7'
+# Analytics - to be configured
+# matomoURL = ""
+# matomoSiteId = ''
 
 # commit hash file
 commitFile = "config/commit.toml"
 
-# This will cause html in markdown files to be rendered directly
+# Allow HTML in markdown files
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 
-# Syntax highlighter for code blocks
-# See https://mertbakir.gitlab.io/hugo/syntax-highlighting-in-hugo/
+# Syntax highlighter
 [markup.highlight]
-      codeFences = true
-      guessSyntax = true
-      hl_Lines = ""
-      lineNoStart = 1
-      lineNos = false
-      lineNumbersInTable = false
-      tabWidth = 4
-      noClasses = false
-      style = "monokai"
-    
-[markup.tableOfContents]
-      endLevel = 3
-      ordered = false
-      startLevel = 2
+  codeFences = true
+  guessSyntax = true
+  hl_Lines = ""
+  lineNoStart = 1
+  lineNos = false
+  lineNumbersInTable = false
+  tabWidth = 4
+  noClasses = false
+  style = "monokai"
 
+[markup.tableOfContents]
+  endLevel = 3
+  ordered = false
+  startLevel = 2
 
 sectionPagesMenu = 'main'
-# See https://gohugo.io/content-management/menus/
+
+# ============================================
+# OSGeo Menu Structure
+# Based on osgeo.org navigation
+# ============================================
 [menu]
-[[menu.main]]
-  name = "Project"
-  url = "/project/overview"
-  weight = 10
-  #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
 
+# ------------------------------------------
+# Projects Menu
+# ------------------------------------------
 [[menu.main]]
-  parent = "Project"
-  name = "Overview"
-  url = "/project/overview/"
+  name = "Projects"
+  url = "/projects/"
   weight = 10
 
 [[menu.main]]
-  parent = "Project"
-  name = "Case studies"
-  url = "/project/case-studies/"
-  weight = 20
-
-[[menu.main]]
-  parent = "Overview"
-  name = "Maps"
-  url = "/project/overview/maps/"
-  weight = 30
-
-[[menu.main]]
-  parent = "Overview"
-  name = "Screenshots"
-  url = "/project/overview/screenshots/"
-  weight = 30  
-
-[[menu.main]]
-  parent = "Project"
-  name = "Plugins"
-  url = "https://plugins.qgis.org"
-  weight = 30
-
-[[menu.main]]
-  parent = "Project"
-  name = "All News"
-  url = "https://feed.qgis.org"
-  weight = 40
-
-[[menu.main]]
-  parent = "Project"
-  name = "Visual Changelogs"
-  url = "/project/visual-changelogs"
-  weight = 50
-
-[[menu.main]]
-  parent = "Project"
-  name = "QGIS Metrics"
-  url = "https://analytics.qgis.org"
-  weight = 60
-
-[[menu.main]]
-  name = "Community"
-  url = "/community/involve"
-  weight = 20
-
-[[menu.main]]
-  parent = "Community"
-  name = "Get involved"
-  url = "/community/involve"
+  parent = "Projects"
+  name = "OSGeo Projects"
+  url = "/projects/"
   weight = 10
 
 [[menu.main]]
-  parent = "Community"
-  name = "Certification Programme"
-  url = "/community/certification"
+  parent = "Projects"
+  name = "Community Projects"
+  url = "/projects/community/"
   weight = 20
 
 [[menu.main]]
-  parent = "Community"
-  name = "QGIS Foundation"
-  url = "/community/foundation"
+  parent = "Projects"
+  name = "Incubation"
+  url = "/about/incubation/"
   weight = 30
 
-[[menu.main]]
-  parent = "QGIS Foundation"
-  name = "Charter"
-  url = "/community/foundation/charter"
-  weight = 40
-
-[[menu.main]]
-  parent = "QGIS Foundation"
-  name = "Annual General Meetings"
-  url = "/community/foundation/annual_general_meetings"
-  weight = 50
-
-[[menu.main]]
-  parent = "QGIS Foundation"
-  name = "Annual Reports"
-  url = "/community/foundation/annual_reports"
-  weight = 60
-
-[[menu.main]]
-  parent = "QGIS Foundation"
-  name = "Finance"
-  url = "/community/foundation/finance"
-  weight = 70
-
-[[menu.main]]
-  parent = "Community"
-  name = "Project Organisation"
-  url = "/community/organisation"
-  weight = 80
-
-
-[[menu.main]]
-  parent = "Project Organisation"
-  name = "Infrastructure"
-  url = "/community/organisation/infrastructure"
-  weight = 100
-
-[[menu.main]]
-  parent = "Community"
-  name = "Local User Groups"
-  url = "/community/groups"
-  weight = 110
-
-
-
-[[menu.main]]
-  parent = "Project Organisation"
-  name = "Brand Guidelines"
-  url = "/community/organisation/guidelines"
-  weight = 130
-
-[[menu.main]]
-  parent = "Project Organisation"
-  name = "Contributor Credits"
-  url = "/community/organisation/credits"
-  weight = 140
-
-[[menu.main]]
-  parent = "Project Organisation"
-  name = "Meetings"
-  url = "/community/organisation/meetings"
-  weight = 180
-
-[[menu.main]]
-  parent = "Meetings"
-  name = "QGIS Conference"
-  url = "https://conference.qgis.org/"
-  weight = 185
-
-[[menu.main]]
-  parent = "Meetings"
-  name = "QGIS User Meetings"
-  url = "/community/organisation/meetings/user_meetings"
-  weight = 190
-
-
-[[menu.main]]
-  parent = "Meetings"
-  name = "QGIS Developer Meetings"
-  url = "/community/organisation/meetings/dev_meetings"
-  weight = 200
-
-[[menu.main]]
-  parent = "Meetings"
-  name = "Reimbursements for Developer Meetings"
-  url = "/community/organisation/meetings/reimbursements"
-  weight = 210
-
-[[menu.main]]
-  parent = "Project Organisation"
-  name = "Mailing Lists"
-  url = "/community/organisation/mailinglists"
-  weight = 220
-
-
-[[menu.main]]
-  parent = "Community"
-  name = "Contributors"
-  url = "/community/contributors"
-  weight = 240
-
-
-[[menu.main]]
-  parent = "Contributors"
-  name = "Sol Katz Award"
-  url = "/community/contributors/sol-katz-award"
-  weight = 241
-
-[[menu.main]]
-  parent = "Contributors"
-  name = "Organizations"
-  url = "/community/contributors/organisations"
-  weight = 242
-
-
-[[menu.main]]
-  parent = "Contributors"
-  name = "Individuals"
-  url = "/community/contributors/individuals"
-  weight = 243
-
-
-[[menu.main]]
-  parent = "Contributors"
-  name = "Supporting"
-  url = "/community/contributors/supporting"
-  weight = 244
-
-[[menu.main]]
-  parent = "Community"
-  name = "Members Blogs"
-  url = "https://planet.qgis.org"
-  weight = 280
-
-
+# ------------------------------------------
+# Resources Menu
+# ------------------------------------------
 [[menu.main]]
   name = "Resources"
-  url = "/resources/hub"
-  weight = 40 # Sets the menu order 
-  #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
+  url = "/resources/"
+  weight = 20
 
 [[menu.main]]
   parent = "Resources"
-  name = "Documentation"
-  url = "/resources/hub"
-  weight = 5 # Sets the menu order 
-  #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"  
-
-
-[[menu.main]]
-  # parent = "Funding"
-  name = "Goodies"
-  url = "/goodies"
-  weight = 60
-
-[[menu.main]]
-  name = "Download"
-  url = "/download/"
-  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 80 # Sets the menu order 
-
-[[menu.main]]
-  name = "Archive"
-  url = "/archive/"
-  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 90 # Sets the menu order 
-
-[[menu.main]]
-  name = "Funding"
-  url = "/funding/donate"
-  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 50 # Sets the menu order 
-
-[[menu.main]]
-  parent = "Funding"
-  name = "Donate"
-  url = "/funding/donate"
-  #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 30 # Sets the menu order 
-
-[[menu.main]]
-  parent = "Funding"
-  name = "Membership"
-  url = "/funding/membership"
-  weight = 230
-
-[[menu.main]]
-  parent = "Membership"
-  name = "Members"
-  url = "/funding/membership/members"
-  weight = 240
-
-
-[[menu.main]]
-  parent = "Membership"
-  name = "Past Members"
-  url = "/funding/membership/past_members"
-  weight = 260
-
-[[menu.main]]
-  parent = "Donate"
-  name = "Donors"
-  url = "/funding/donate/donors"
-  weight = 270
-
-[[menu.main]]
-  parent = "Donate"
-  name = "GitHub Sponsors"
-  url = "/funding/donate/github-sponsors"
-  weight = 280
-
-# Submenus are done this way: parent -> identifier
-[[menu.main]]
-  parent = "Resources"
-  name = "Installation guide"
-  url = "/resources/installation-guide/"
+  name = "Live DVD"
+  url = "/resources/live-dvd/"
   weight = 10
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "Windows"
-    url = "/resources/installation-guide/#windows"
-    weight = 20
-
-  [[menu.main]]
-    parent = "Windows"
-    name = "Offline (Standalone) installers"
-    url = "/resources/installation-guide/#offline-standalone-installers"
-    weight = 30
-
-  [[menu.main]]
-    parent = "Windows"
-    name = "Online (OSGeo4W) installer"
-    url = "/resources/installation-guide/#online-osgeo4w-installer"
-    weight = 40
-
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "Linux"
-    url = "/resources/installation-guide/#linux"
-    weight = 50
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Debian / Ubuntu"
-    url = "/resources/installation-guide/#debian--ubuntu"
-    weight = 60
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Flatpak"
-    url = "/resources/installation-guide/#flatpak"
-    weight = 70
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Fedora"
-    url = "/resources/installation-guide/#fedora"
-    weight = 90
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "NixOS"
-    url = "/resources/installation-guide/#nixos"
-    weight = 100
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "SUSE / openSUSE"
-    url = "/resources/installation-guide/#suse--opensuse"
-    weight = 110
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Mandriva"
-    url = "/resources/installation-guide/#mandriva"
-    weight = 120
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Slackware"
-    url = "/resources/installation-guide/#slackware"
-    weight = 130
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Arch Linux"
-    url = "/resources/installation-guide/#arch-linux"
-    weight = 140
-
-  [[menu.main]]
-    parent = "Linux"
-    name = "Spack"
-    url = "/resources/installation-guide/#spack"
-    weight = 160
-
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "Mac OS X / macOS"
-    url = "/resources/installation-guide/#mac-os-x--macos"
-    weight = 170
-
-  [[menu.main]]
-    parent = "Mac OS X / macOS"
-    name = "Binary packages (installers)"
-    url = "/resources/installation-guide/#binary-packages-installers"
-    weight = 180
-
-  [[menu.main]]
-    parent = "Mac OS X / macOS"
-    name = "MacPorts"
-    url = "/resources/installation-guide/#macports"
-    weight = 190
-
-  [[menu.main]]
-    parent = "Mac OS X / macOS"
-    name = "Old releases"
-    url = "/resources/installation-guide/#old-releases"
-    weight = 200
-
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "FreeBSD"
-    url = "/resources/installation-guide/#freebsd"
-    weight = 210
-
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "OpenBSD"
-    url = "/resources/installation-guide/#openbsd"
-    weight = 220
-
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "Container images"
-    url = "/resources/installation-guide/#container-images"
-    weight = 230
-
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "QGIS Testing warning"
-    url = "/resources/installation-guide/#qgis-testing-warning"
-    weight = 240
-
-  [[menu.main]]
-    parent = "Installation guide"
-    name = "Installing from Source"
-    url = "/resources/installation-guide/#installing-from-source"
-    weight = 250
 
 [[menu.main]]
   parent = "Resources"
-  name = "Testing"
-  url = "/resources/testing/"
+  name = "Events"
+  url = "/events/"
+  weight = 20
+
+[[menu.main]]
+  parent = "Resources"
+  name = "Education"
+  url = "/resources/education/"
   weight = 30
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Roadmap"
-  url = "/resources/roadmap/"
-  weight = 40
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Reports"
-  url = "/resources/reports/"
-  weight = 50
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Resources Hub"
-  url = "https://hub.qgis.org"
-  weight = 55
-
-[[menu.main]]
-  parent = "Reports"
-  name = "OGC Certification"
-  url = "/resources/reports/#ogc-certification"
-  weight = 60
-
-[[menu.main]]
-  parent = "Reports"
-  name = "Performance"
-  url = "/resources/reports/#performance"
-  weight = 70
-
-[[menu.main]]
-  parent = "Reports"
-  name = "Security"
-  url = "/resources/reports/#security"
-  weight = 80
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Books"
-  url = "/resources/books/"
-  weight = 90
-
-[[menu.main]]
-  parent = "Resources"
-  name = "Contact and Support"
-  url = "/resources/support/"
-  weight = 100
-
-[[menu.main]]
-  parent = "Contact and Support"
-  name = "FAQ"
-  url = "/resources/support/faq"
-  weight = 110
-
-[[menu.main]]
-  parent = "Contact and Support"
-  name = "Bug Reporting"
-  url = "/resources/support/bug-reporting"
-  weight = 120
-
-[[menu.main]]
-  parent = "Contact and Support"
-  name = "Contributor Requirements"
-  url = "/resources/support/contributors-requirements"
-  weight = 130
-
-[[menu.main]]
-  parent = "Contact and Support"
-  name = "Communication channels"
-  url = "/resources/support/#communication-channels"
-  weight = 140
-
-[[menu.main]]
-  parent = "Contact and Support"
-  name = "Commercial support"
-  url = "/resources/support/commercial-support"
-  weight = 150
-
-[[menu.main]]
-  parent = "Contact and Support"
-  name = "StackExchange"
-  url = "/resources/support/#stackexchange"
-  weight = 160
 
 [[menu.main]]
   parent = "Resources"
   name = "Blog"
-  url = "https://blog.qgis.org/"
-  weight = 180
+  url = "/news/"
+  weight = 40
+
+# ------------------------------------------
+# About OSGeo Menu
+# ------------------------------------------
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 30
 
 [[menu.main]]
-  parent = "Contact and Support"
-  name = "Security"
-  url = "/resources/support/security"
-  weight = 190
-
+  parent = "About"
+  name = "About OSGeo"
+  url = "/about/"
+  weight = 10
 
 [[menu.main]]
-  parent = "Contact and Support"
-  name = "Privacy Policy"
-  url = "/resources/support/privacy/"
-  weight = 200
+  parent = "About"
+  name = "FAQ"
+  url = "/about/faq/"
+  weight = 20
 
-# Languages for translated docs
+[[menu.main]]
+  parent = "About"
+  name = "Contact"
+  url = "/about/contact/"
+  weight = 30
+
+[[menu.main]]
+  parent = "About"
+  name = "Branding"
+  url = "/about/branding/"
+  weight = 40
+
+[[menu.main]]
+  parent = "About"
+  name = "Sponsors"
+  url = "/sponsors/"
+  weight = 50
+
+[[menu.main]]
+  parent = "About"
+  name = "Awards"
+  url = "/about/awards/"
+  weight = 60
+
+[[menu.main]]
+  parent = "Awards"
+  name = "Sol Katz Award"
+  url = "/about/awards/sol-katz/"
+  weight = 61
+
+# ------------------------------------------
+# Initiatives Menu
+# ------------------------------------------
+[[menu.main]]
+  name = "Initiatives"
+  url = "/initiatives/"
+  weight = 40
+
+[[menu.main]]
+  parent = "Initiatives"
+  name = "FOSS4G"
+  url = "/initiatives/foss4g/"
+  weight = 10
+
+[[menu.main]]
+  parent = "Initiatives"
+  name = "OSGeo Local Chapters"
+  url = "/local-chapters/"
+  weight = 20
+
+[[menu.main]]
+  parent = "Initiatives"
+  name = "GeoForAll"
+  url = "/initiatives/geo-for-all/"
+  weight = 30
+
+[[menu.main]]
+  parent = "Initiatives"
+  name = "UN Committee of Experts"
+  url = "/initiatives/un-ggim/"
+  weight = 40
+
+# ------------------------------------------
+# Community Menu
+# ------------------------------------------
+[[menu.main]]
+  name = "Community"
+  url = "/community/"
+  weight = 50
+
+[[menu.main]]
+  parent = "Community"
+  name = "Get Involved"
+  url = "/community/get-involved/"
+  weight = 10
+
+[[menu.main]]
+  parent = "Community"
+  name = "Mailing Lists"
+  url = "/community/mailing-lists/"
+  weight = 20
+
+[[menu.main]]
+  parent = "Community"
+  name = "IRC / Chat"
+  url = "/community/irc/"
+  weight = 30
+
+[[menu.main]]
+  parent = "Community"
+  name = "Code of Conduct"
+  url = "/community/code-of-conduct/"
+  weight = 40
+
+[[menu.main]]
+  parent = "Community"
+  name = "Local Chapters"
+  url = "/local-chapters/"
+  weight = 50
+
+# ------------------------------------------
+# Membership/Donate Menu
+# ------------------------------------------
+[[menu.main]]
+  name = "Membership"
+  url = "/membership/"
+  weight = 60
+
+[[menu.main]]
+  parent = "Membership"
+  name = "Become a Member"
+  url = "/membership/"
+  weight = 10
+
+[[menu.main]]
+  parent = "Membership"
+  name = "Charter Members"
+  url = "/membership/charter-members/"
+  weight = 20
+
+[[menu.main]]
+  parent = "Membership"
+  name = "Donate"
+  url = "/donate/"
+  weight = 30
+
+# ------------------------------------------
+# Language Menu
+# ------------------------------------------
 [[menu.lang]]
-  name = "🇬🇧 English"
+  name = "English"
   url = "en"
   weight = 1
 
-[[menu.lang]]
-  name = "🇨🇿 Čeština"
-  url = "cs"
-  weight = 2
-
-[[menu.lang]]
-  name = "🇩🇪 Deutsch"
-  url = "de"
-  weight = 3
-
-[[menu.lang]]
-  name = "🇪🇸 Español"
-  url = "es"
-  weight = 4
-
-[[menu.lang]]
-  name = "🇫🇷 Français"
-  url = "fr"
-  weight = 5
-
-[[menu.lang]]
-  name = "🇭🇺 Magyar"
-  url = "hu"
-  weight = 6
-
-[[menu.lang]]
-  name = "🇮🇹 Italiano"
-  url = "it"
-  weight = 7
-
-[[menu.lang]]
-  name = "🇯🇵 日本語"
-  url = "ja"
-  weight = 8
-
-[[menu.lang]]
-  name = "🇰🇷 한국어"
-  url = "ko"
-  weight = 9
-
-[[menu.lang]]
-  name = "🇱🇹 Lietuviškai"
-  url = "lt"
-  weight = 10
-
-[[menu.lang]]
-  name = "🇳🇱 Nederlands"
-  url = "nl"
-  weight = 11
-
-[[menu.lang]]
-  name = "🇧🇷 Português - Brasil"
-  url = "pt_BR"
-  weight = 12
-
-[[menu.lang]]
-  name = "🇵🇹 Português - Portugal"
-  url = "pt_PT"
-  weight = 13
-
-[[menu.lang]]
-  name = "🇷🇴 Românește"
-  url = "ro"
-  weight = 14
-
-[[menu.lang]]
-  name = "🇷🇺 Русский"
-  url = "ru"
-  weight = 15
-
-[[menu.lang]]
-  name = "🇨🇳 简体中文"
-  url = "zh-Hans"
-  weight = 16
-
 [outputs]
-  home = ["HTML", "RSS", "JSON", "version", "version-ltr", "version-json"]
+  home = ["HTML", "RSS", "JSON"]
 
 [outputFormats]
-[outputFormats.version]
-  baseName = "version"
-  isPlainText = true
-  mediaType = "text/plain"
-
-[outputFormats.version-ltr]
-  baseName = "version-ltr"
-  isPlainText = true
-  mediaType = "text/plain"
-
-[outputFormats.version-json]
-  baseName = "version"
-  isPlainText = true
-  mediaType = "application/json"
-

@@ -1,4 +1,13 @@
-{{ $classes := .Get "classes" | default "container content notification is-light" }}
+{{ $classes := "" }}
+{{ $classFromParam := .Get "class" }}
+{{ $classesFromParam := .Get "classes" }}
+{{ if $classFromParam }}
+    {{ $classes = $classFromParam }}
+{{ else if $classesFromParam }}
+    {{ $classes = $classesFromParam }}
+{{ else }}
+    {{ $classes = "container content notification is-light" }}
+{{ end }}
 {{ $ribbon := .Get "ribbon" | default "" }}
 {{ $backgroundImage := .Get "backgroundImage" | default "" }}
 {{ $ribbonClass := .Get "ribbon-class" | default "is-info is-small" }}
@@ -14,7 +23,7 @@
                     background-size: cover;"
                     {{ end }}>
                     {{/* Padding in case ribbon is there */}}
-        
+
 
 
 

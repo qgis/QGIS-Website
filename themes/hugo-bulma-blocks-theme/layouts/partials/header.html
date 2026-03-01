@@ -93,8 +93,9 @@
         {{ $highlightcss := resources.Get "css/highlight.css" }}
         {{ $overridescss := resources.Get "css/bulma-overrides.css" }}
         {{ $cookiecss := resources.Get "css/cookie.css" }}
+        {{ $osgeovibrantcss := resources.Get "css/osgeo-vibrant.css" }}
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
-        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
+        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss $osgeovibrantcss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
         <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
         {{/* We can compile SASS too... */}}

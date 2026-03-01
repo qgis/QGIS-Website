@@ -1,2 +1,0 @@
-headless = true
-draft: "true"

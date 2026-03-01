@@ -1,0 +1,391 @@
+{{ partial "header.html" . }}
+{{ partial "menu.html" . }}
+{{ partial "submenu.html" . }}
+
+{{/* Get project data from YAML */}}
+{{ $projectId := .Params.project_id | default .File.ContentBaseName }}
+{{ $project := false }}
+{{ $category := false }}
+
+{{ with site.Data.projects }}
+    {{ range .incubated }}
+        {{ if eq .id $projectId }}
+            {{ $project = . }}
+        {{ end }}
+    {{ end }}
+    {{ if not $project }}
+        {{ range .community }}
+            {{ if eq .id $projectId }}
+                {{ $project = . }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ if $project }}
+        {{ $category = index .categories $project.category }}
+    {{ end }}
+{{ end }}
+
+{{ if $project }}
+{{/* Project Hero */}}
+<section class="project-hero" style="--project-color: {{ $category.color }}">
+    <div class="container">
+        <div class="columns is-vcentered">
+            <div class="column is-8">
+                {{/* Breadcrumb */}}
+                <nav class="project-breadcrumb">
+                    <a href="/projects/">Projects</a>
+                    <span>/</span>
+                    <span>{{ $category.name }}</span>
+                </nav>
+
+                {{/* Project Title */}}
+                <h1 class="project-hero-title">{{ $project.name }}</h1>
+                <p class="project-hero-tagline">{{ $project.tagline }}</p>
+
+                {{/* Status Badge & DOI */}}
+                <div class="project-hero-badges">
+                    {{ if eq $project.status "incubated" }}
+                    <span class="badge badge-incubated">
+                        <i class="fa-solid fa-certificate"></i> OSGeo Project
+                    </span>
+                    {{ else }}
+                    <span class="badge badge-community">
+                        <i class="fa-solid fa-users"></i> Community Project
+                    </span>
+                    {{ end }}
+                    <span class="badge badge-category" style="background: {{ $category.color }}">
+                        <i class="{{ $category.icon }}"></i> {{ $category.name }}
+                    </span>
+                    {{ if $project.doi }}
+                    <a href="https://doi.org/{{ $project.doi }}" class="badge badge-doi" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-quote-left"></i> DOI: {{ $project.doi }}
+                    </a>
+                    {{ end }}
+                </div>
+
+                {{/* Action Buttons */}}
+                <div class="project-hero-actions">
+                    {{ if $project.url }}
+                    <a href="{{ $project.url }}" class="btn-hero btn-primary" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-globe"></i> Visit Website
+                    </a>
+                    {{ end }}
+                    {{ if $project.download }}
+                    <a href="{{ $project.download }}" class="btn-hero btn-secondary" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-download"></i> Download
+                    </a>
+                    {{ end }}
+                    {{ if $project.repo }}
+                    <a href="{{ $project.repo }}" class="btn-hero btn-outline" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i> Source Code
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+            <div class="column is-4">
+                {{ if $project.hero_image }}
+                <div class="project-hero-image">
+                    <img src="{{ $project.hero_image }}" alt="{{ $project.name }}">
+                </div>
+                {{ else if $project.screenshot }}
+                <div class="project-hero-image">
+                    <img src="{{ $project.screenshot }}" alt="{{ $project.name }} screenshot">
+                </div>
+                {{ else }}
+                <div class="project-hero-icon" style="background: {{ $category.color }}15; color: {{ $category.color }}">
+                    <i class="{{ $category.icon }}"></i>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* Project Content */}}
+<section class="section project-content-section">
+    <div class="container">
+        <div class="columns">
+            {{/* Main Content */}}
+            <div class="column is-8">
+                {{/* About / Description */}}
+                <div class="project-section">
+                    <h2>About {{ $project.name }}</h2>
+                    <p class="project-description">{{ $project.description | markdownify }}</p>
+
+                    {{/* Overview */}}
+                    {{ if $project.overview }}
+                    <p class="project-overview">{{ $project.overview | markdownify }}</p>
+                    {{ end }}
+
+                    {{/* Components */}}
+                    {{ if $project.components }}
+                    <div class="project-components">
+                        {{ range $project.components }}
+                        <div class="component-item">
+                            <strong>{{ .name }}:</strong> {{ .description }}
+                        </div>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+
+                    {{/* Platform Info */}}
+                    {{ if $project.platform_info }}
+                    <p class="project-platform">{{ $project.platform_info }}</p>
+                    {{ end }}
+
+                    {{/* Large Screenshot */}}
+                    {{ if $project.screenshot }}
+                    <div class="project-screenshot">
+                        <img src="{{ $project.screenshot }}" alt="{{ $project.name }} interface screenshot">
+                    </div>
+                    {{ end }}
+
+                    {{/* Page Content (from markdown) */}}
+                    {{ if .Content }}
+                    <div class="project-markdown content">
+                        {{ .Content }}
+                    </div>
+                    {{ end }}
+                </div>
+
+                {{/* Key Features */}}
+                {{ if $project.features }}
+                <div class="project-section">
+                    <h2>Key Features</h2>
+                    {{ if $project.features_intro }}
+                    <p class="section-intro">{{ $project.features_intro }}</p>
+                    {{ end }}
+                    {{ if $project.features_summary }}
+                    <p class="section-summary"><strong>{{ $project.features_summary }}</strong></p>
+                    {{ end }}
+                    <ul class="feature-list">
+                        {{ range $project.features }}
+                        <li>
+                            <i class="fa-solid fa-check" style="color: {{ $category.color }}"></i>
+                            {{ if reflect.IsMap . }}
+                            <span><strong>{{ .name }}:</strong> {{ .description }}</span>
+                            {{ else }}
+                            <span>{{ . }}</span>
+                            {{ end }}
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
+                {{/* Specs */}}
+                {{ if $project.specs }}
+                <div class="project-section">
+                    <h2>Specs</h2>
+                    <p class="project-specs">{{ $project.specs | markdownify }}</p>
+                </div>
+                {{ end }}
+
+                {{/* Community */}}
+                {{ if or $project.community $project.users_info $project.developer_meetings }}
+                <div class="project-section">
+                    <h2>{{ $project.name }} Community</h2>
+                    {{ if $project.community }}
+                    <p>{{ $project.community | markdownify }}</p>
+                    {{ end }}
+                    {{ if $project.users_info }}
+                    <p>{{ $project.users_info | markdownify }}</p>
+                    {{ end }}
+                    {{ if $project.developer_meetings }}
+                    <p>{{ $project.developer_meetings }}</p>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+                {{/* International */}}
+                {{ if or $project.international $project.support_info }}
+                <div class="project-section">
+                    <h2>International Presence</h2>
+                    {{ if $project.international }}
+                    <p>{{ $project.international | markdownify }}</p>
+                    {{ end }}
+                    {{ if $project.support_info }}
+                    <p>{{ $project.support_info | markdownify }}</p>
+                    {{ end }}
+                </div>
+                {{ end }}
+
+                {{/* Implemented Standards */}}
+                {{ if $project.standards }}
+                <div class="project-section">
+                    <h2>Implemented Standards</h2>
+                    <ul class="standards-list">
+                        {{ range $project.standards }}
+                        <li>
+                            <i class="fa-solid fa-certificate" style="color: {{ $category.color }}"></i>
+                            <span>{{ . }}</span>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+
+                {{/* Service Providers */}}
+                {{ if $project.service_providers }}
+                <div class="project-section">
+                    <h2>Service Providers</h2>
+                    <p class="section-intro">Core Contributors</p>
+                    <div class="service-providers-grid">
+                        {{ range $project.service_providers }}
+                        <a href="{{ .url }}" class="service-provider-card" target="_blank" rel="noopener">
+                            <span class="provider-name">{{ .name }}</span>
+                            <i class="fa-solid fa-external-link"></i>
+                        </a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+
+            {{/* Sidebar */}}
+            <div class="column is-4">
+                <div class="project-sidebar">
+                    {{/* Communication */}}
+                    {{ if $project.communication }}
+                    <div class="sidebar-card">
+                        <h3>Communication</h3>
+                        <ul class="quick-links">
+                            {{ if $project.communication.blog }}
+                            <li>
+                                <a href="{{ $project.communication.blog }}" target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-blog"></i> Blog
+                                </a>
+                            </li>
+                            {{ end }}
+                            {{ if $project.communication.planet_rss }}
+                            <li>
+                                <a href="{{ $project.communication.planet_rss }}" target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-rss"></i> Planet RSS Feed
+                                </a>
+                            </li>
+                            {{ end }}
+                            {{ if $project.communication.mailing_lists }}
+                            <li>
+                                <a href="{{ $project.communication.mailing_lists }}" target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-envelope"></i> Mailing Lists
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+
+                    {{/* End-User Resources */}}
+                    {{ if $project.end_user_resources }}
+                    <div class="sidebar-card">
+                        <h3>End-User Resources</h3>
+                        <ul class="quick-links">
+                            {{ range $project.end_user_resources }}
+                            <li>
+                                <a href="{{ .url }}" target="_blank" rel="noopener">
+                                    <i class="{{ .icon }}"></i> {{ .name }}
+                                </a>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+
+                    {{/* Tools/Libraries Based On */}}
+                    {{ if $project.based_on }}
+                    <div class="sidebar-card">
+                        <h3>Tools/Libraries Based On</h3>
+                        <ul class="related-list">
+                            {{ range $project.based_on }}
+                            {{ if reflect.IsMap . }}
+                            <li><a href="{{ .url }}">{{ .name }}</a></li>
+                            {{ else }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+
+                    {{/* Similar Projects */}}
+                    {{ if $project.similar_projects }}
+                    <div class="sidebar-card">
+                        <h3>Similar Projects</h3>
+                        <ul class="related-list">
+                            {{ range $project.similar_projects }}
+                            {{ if reflect.IsMap . }}
+                            <li><a href="{{ .url }}">{{ .name }}</a></li>
+                            {{ else }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+
+                    {{/* Migrate From */}}
+                    {{ if $project.migrate_from }}
+                    <div class="sidebar-card">
+                        <h3>Migrate From</h3>
+                        <ul class="related-list">
+                            {{ range $project.migrate_from }}
+                            <li>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+
+                    {{/* Technical Info */}}
+                    <div class="sidebar-card">
+                        <h3>Technical Details</h3>
+                        <dl class="tech-details">
+                            {{ if $project.languages }}
+                            <dt>Languages</dt>
+                            <dd>
+                                {{ range $i, $lang := $project.languages }}{{ if $i }}, {{ end }}{{ $lang }}{{ end }}
+                            </dd>
+                            {{ end }}
+                            {{ if $project.license }}
+                            <dt>License</dt>
+                            <dd>{{ $project.license }}</dd>
+                            {{ end }}
+                            <dt>Status</dt>
+                            <dd>{{ if eq $project.status "incubated" }}OSGeo Project{{ else }}Community Project{{ end }}</dd>
+                        </dl>
+                    </div>
+
+                    {{/* Try on OSGeoLive */}}
+                    <div class="sidebar-card sidebar-cta">
+                        <h3>Try {{ $project.name }}</h3>
+                        <p>Try {{ $project.name }} and 50+ other geospatial tools with OSGeoLive - no installation required.</p>
+                        <a href="/initiatives/osgeolive/" class="btn-sidebar">
+                            <i class="fa-solid fa-compact-disc"></i> Get OSGeoLive
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* Back to Projects */}}
+<section class="section project-nav-section">
+    <div class="container">
+        <a href="/projects/" class="back-link">
+            <i class="fa-solid fa-arrow-left"></i> Back to all projects
+        </a>
+    </div>
+</section>
+
+{{ else }}
+{{/* Project Not Found */}}
+<section class="section">
+    <div class="container has-text-centered">
+        <h1>Project Not Found</h1>
+        <p>The requested project could not be found.</p>
+        <a href="/projects/" class="button is-primary">View All Projects</a>
+    </div>
+</section>
+{{ end }}
+
+{{ partial "footer.html" }}

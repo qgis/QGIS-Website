@@ -1,0 +1,132 @@
+{{/* OSGeo Homepage Hero - With OSGeo triangular brand elements */}}
+{{/* Calculate dynamic stats from data files */}}
+{{ $projectCount := 0 }}
+{{ with site.Data.projects }}
+    {{ $projectCount = add (len .incubated) (len .community) }}
+{{ end }}
+{{ $chapterCount := 0 }}
+{{ with site.Data.chapters }}
+    {{ $chapterCount = len .chapters }}
+{{ end }}
+{{ $charterMembers := 300 }}
+{{ $geoforallLabs := 100 }}
+{{ $yearsActive := 19 }}
+{{ with site.Data.stats }}
+    {{ $charterMembers = .charter_members }}
+    {{ $geoforallLabs = .geoforall_labs }}
+    {{ $yearsActive = sub now.Year .years_founded }}
+{{ end }}
+
+<section class="osgeo-hero">
+    {{/* Background Image - using OSGeo aerial imagery */}}
+    <div class="hero-bg-image" style="background-image: url('{{ absURL "img/bg-intro.jpg" }}');"></div>
+
+    {{/* Compass Triangle Overlay - THE OSGeo Brand Element */}}
+    <div class="compass-intro"></div>
+
+    {{/* Animated Background Orbs - subtle enhancement */}}
+    <div class="hero-bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+    </div>
+
+    {{/* Grid Pattern Overlay */}}
+    <div class="hero-grid-pattern"></div>
+
+    {{/* Main Hero Content */}}
+    <div class="hero-content">
+        <div class="container">
+            <div class="columns is-vcentered">
+                {{/* Left Side - Text Content */}}
+                <div class="column is-7">
+                    <div class="hero-text-content">
+                        {{/* Badge */}}
+                        <div class="hero-badge">
+                            <span class="badge-icon"><i class="fa-solid fa-globe"></i></span>
+                            <span>Open Source Geospatial Foundation</span>
+                        </div>
+
+                        {{/* Main Headline */}}
+                        <h1 class="hero-headline">
+                            <span class="headline-word">Powering the</span>
+                            <span class="headline-word highlight">World's Maps</span>
+                        </h1>
+
+                        {{/* Subheadline */}}
+                        <p class="hero-subheadline">
+                            OSGeo software runs on <strong>billions of devices</strong> - from your phone to global infrastructure.
+                            Every map you use likely depends on our {{ $projectCount }}+ open source projects.
+                        </p>
+
+                        {{/* CTA Buttons */}}
+                        <div class="hero-ctas">
+                            <a href="/projects/" class="hero-btn hero-btn-primary">
+                                <span class="btn-icon"><i class="fa-solid fa-cubes"></i></span>
+                                <span class="btn-text">
+                                    <span class="btn-label">Explore</span>
+                                    <span class="btn-sublabel">{{ $projectCount }}+ Projects</span>
+                                </span>
+                                <span class="btn-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                            </a>
+                            <a href="/community/getting-started/" class="hero-btn hero-btn-secondary">
+                                <span class="btn-icon"><i class="fa-solid fa-rocket"></i></span>
+                                <span class="btn-text">
+                                    <span class="btn-label">Get Started</span>
+                                    <span class="btn-sublabel">Join the Community</span>
+                                </span>
+                            </a>
+                        </div>
+
+                        {{/* Trust Indicators */}}
+                        <div class="hero-trust">
+                            <span class="trust-label">Powering critical infrastructure at:</span>
+                            <div class="trust-logos">
+                                <span class="trust-item">NASA</span>
+                                <span class="trust-item">ESA</span>
+                                <span class="trust-item">United Nations</span>
+                                <span class="trust-item">OpenStreetMap</span>
+                                <span class="trust-item">+ Billions of devices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{/* Right Side - Visual Impact */}}
+                <div class="column is-5">
+                    <div class="hero-visual">
+                        {{/* Floating Logo */}}
+                        <div class="hero-logo-container">
+                            <div class="logo-glow"></div>
+                            <img src="{{ absURL "img/osgeo/osgeo-logo.svg" }}" alt="OSGeo" class="hero-logo">
+                        </div>
+
+                        {{/* Stats Cards - Dynamic Values */}}
+                        <div class="hero-stats-grid">
+                            <div class="hero-stat-card stat-1">
+                                <div class="stat-number">{{ $projectCount }}<span class="stat-plus">+</span></div>
+                                <div class="stat-label">Open Source Projects</div>
+                                <div class="stat-icon"><i class="fa-solid fa-cubes"></i></div>
+                            </div>
+                            <div class="hero-stat-card stat-2">
+                                <div class="stat-number">B<span class="stat-plus">+</span></div>
+                                <div class="stat-label">Devices Worldwide</div>
+                                <div class="stat-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            </div>
+                            <div class="hero-stat-card stat-3">
+                                <div class="stat-number">{{ $yearsActive }}</div>
+                                <div class="stat-label">Years Powering Maps</div>
+                                <div class="stat-icon"><i class="fa-solid fa-award"></i></div>
+                            </div>
+                            <div class="hero-stat-card stat-4">
+                                <div class="stat-number">M<span class="stat-plus">+</span></div>
+                                <div class="stat-label">Users Globally</div>
+                                <div class="stat-icon"><i class="fa-solid fa-earth-americas"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>

@@ -1,181 +1,107 @@
+# OSGeo Hugo Website
 
-# 🌐 QGIS Website [![DPG Badge](https://img.shields.io/badge/Verified-DPG-3333AB?logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMzEiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAzMSAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0LjIwMDggMjEuMzY3OEwxMC4xNzM2IDE4LjAxMjRMMTEuNTIxOSAxNi40MDAzTDEzLjk5MjggMTguNDU5TDE5LjYyNjkgMTIuMjExMUwyMS4xOTA5IDEzLjYxNkwxNC4yMDA4IDIxLjM2NzhaTTI0LjYyNDEgOS4zNTEyN0wyNC44MDcxIDMuMDcyOTdMMTguODgxIDUuMTg2NjJMMTUuMzMxNCAtMi4zMzA4MmUtMDVMMTEuNzgyMSA1LjE4NjYyTDUuODU2MDEgMy4wNzI5N0w2LjAzOTA2IDkuMzUxMjdMMCAxMS4xMTc3TDMuODQ1MjEgMTYuMDg5NUwwIDIxLjA2MTJMNi4wMzkwNiAyMi44Mjc3TDUuODU2MDEgMjkuMTA2TDExLjc4MjEgMjYuOTkyM0wxNS4zMzE0IDMyLjE3OUwxOC44ODEgMjYuOTkyM0wyNC44MDcxIDI5LjEwNkwyNC42MjQxIDIyLjgyNzdMMzAuNjYzMSAyMS4wNjEyTDI2LjgxNzYgMTYuMDg5NUwzMC42NjMxIDExLjExNzdMMjQuNjI0MSA5LjM1MTI3WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==)](https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/)
+This is the official website for the Open Source Geospatial Foundation (OSGeo), built with Hugo using the hugo-bulma-blocks-theme.
 
-![Screenshot](./img/qgis-website.webp)
+## About OSGeo
 
-> ## 👋 Welcome to QGIS.org!
->
-> **This repository hosts the source code for the official QGIS Project website:**  
-> 🌍 [https://qgis.org](https://qgis.org)
->
-> Here you'll find everything you need to **build, develop, and contribute** to the QGIS website.
->
-> ### ⚠️ Note on Subdomain Websites
->
-> **This repository is _only_ for the main QGIS website ([qgis.org](https://qgis.org)).**
->
-> If you are looking for the source code or want to contribute to QGIS subdomain websites, please visit their respective repositories below.  
-> Each subdomain has its own codebase and contribution process:
->
-> - [plugins.qgis.org](https://plugins.qgis.org) ([GitHub: QGIS-Plugins-Website](https://github.com/qgis/QGIS-Plugins-Website)) – QGIS Plugins Repository
-> - [hub.qgis.org](https://hub.qgis.org) ([GitHub: QGIS-Hub-Website](https://github.com/qgis/QGIS-Hub-Website)) – QGIS Resources Hub
-> - [feed.qgis.org](https://feed.qgis.org) ([GitHub: qgis-feed](https://github.com/qgis/qgis-feed)) – QGIS Feed Manager
-> - [planet.qgis.org](https://planet.qgis.org) ([GitHub: QGIS-Planet-Website](https://github.com/qgis/QGIS-Planet-Website)) – QGIS Planet Blog Aggregator
-> - [members.qgis.org](https://members.qgis.org) ([GitHub: QGIS-Members-Website](https://github.com/qgis/QGIS-Members-Website)) – QGIS Sustaining Members Portal
-> - [certification.qgis.org](https://certification.qgis.org) ([GitHub: QGIS-Certification-Website](https://github.com/qgis/QGIS-Certification-Website)) – QGIS Certification Programme Platform
-> - [changelog.qgis.org](https://changelog.qgis.org) ([GitHub: QGIS-Changelog-Website](https://github.com/qgis/QGIS-Changelog-Website)) – QGIS Changelog Manager
-> - [conference.qgis.org](https://conference.qgis.org) ([GitHub: QGIS-UC-Website](https://github.com/qgis/QGIS-UC-Website)) – QGIS User Conference Website
+The Open Source Geospatial Foundation (OSGeo) is a not-for-profit organization whose mission is to foster global adoption of open geospatial technology by being an inclusive software foundation devoted to an open philosophy and participatory community-driven development.
 
-![-----------------------------------------------------](./img/green-gradient.png)
+## Development
 
-<!-- TABLE OF CONTENTS -->
-<h2 id="table-of-contents"> 📖 Table of Contents</h2>
+### Prerequisites
 
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#-project-overview"> 🚀 Project Overview </a></li>
-    <li><a href="#-qa-status"> 🚥 QA Status </a></li>
-    <li><a href="#-license"> 📜 License </a></li>
-    <li><a href="#-folder-structure"> 📂 Folder Structure </a></li>
-    <li><a href="#-using-ai-large-language-models"> 🤖 Using 'AI' (Large Language Models) </a></li>
-    <li><a href="#️-scripts-overview"> 🛠️ Scripts Overview </a></li>
-    <li><a href="#-using-the-nix-shell"> 🧊 Using the Nix Shell </a></li>
-    <li><a href="#-contributing"> ✨ Contributing </a></li>
-    <li><a href="#-have-questions"> 🙋 Have Questions? </a></li>
-    <li><a href="#-contributors"> 🧑‍💻👩‍💻 Contributors </a></li>
-  </ol>
-</details>
+- Hugo Extended (v0.139.0 or later)
+- Nix (recommended for development environment)
 
-![-----------------------------------------------------](./img/green-gradient.png)
+### Using Nix
 
-## 🚀 Project Overview
+Enter the development environment:
 
-![Overview](./img/qgis-org.gif)
-
-![-----------------------------------------------------](./img/green-gradient.png)
-
-## 🚥 QA Status
-
-### 🪪 Badges
-| Badge | Description |
-|-------|-------------|
-| [![E2E Tests](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml) | End-to-end tests status (Playwright) |
-| [![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml) | Deployment status to GitHub Pages |
-| ![Website Status](https://img.shields.io/website-up-down-green-red/https/qgis.org.svg) | Website availability status |
-| ![License](https://img.shields.io/github/license/qgis/QGIS-Website.svg) | Repository license |
-| ![](https://img.shields.io/github/issues/qgis/QGIS-Website.svg) | Open issues count |
-| ![](https://img.shields.io/github/issues-closed/qgis/QGIS-Website.svg) | Closed issues count |
-| ![](https://img.shields.io/github/issues-pr/qgis/QGIS-Website.svg) | Open pull requests count |
-| ![](https://img.shields.io/github/issues-pr-closed/qgis/QGIS-Website.svg) | Closed pull requests count |
-
-### ⭐️ Project Stars
-
-![Stars](https://starchart.cc/qgis/QGIS-Website.svg)
-
-![-----------------------------------------------------](./img/green-gradient.png)
-
-## 📜 License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-![-----------------------------------------------------](./img/green-gradient.png)
-
-## 📂 Folder Structure
-
-```plaintext
-QGIS-Website/
-  ├── 🖼️  assets/           # Mainly used to store the schedule.csv file
-  ├── ⚙️  config/           # Hugo configuration files
-  ├── 📄  content/          # Markdown content files (pages, posts)
-  ├── 🗄️  data/             # Data files (YAML, JSON, TOML) for site variables
-  ├── 📚  docs/             # Project documentation
-  ├── 🖼️  img/              # Images files used by this README
-  ├── 🧩  layouts/          # Hugo templates and partials
-  ├── 🧪  playwright/       # Playwright end-to-end test scripts
-  ├── 📦  public/           # Generated site output (after `hugo` build)
-  ├── 🗂️  resources/        # Hugo-generated resources (e.g., minified assets)
-  ├── 🛠️  scripts/          # Utility scripts for development/maintenance/harvesting
-  ├── 💻  source/           # Mainly used to store the qugsneews.atom file
-  ├── 📄  static/           # Static files served as-is (e.g., favicon, robots.txt)
-  ├── 🎨  themes/           # Hugo themes
-  ├── ⚙️  config.toml       # Main Hugo configuration file
-  ├── 🤝  CONTRIBUTING.md   # Contribution guidelines
-  ├── 🐍  fetch_feeds.py*   # Script to get sustaining members and other feeds to update our web site
-  ├── 📜  LICENSE           # Project license
-  ├── ⚙️  Makefile          # Build/Deployment automation commands
-  ├── 📖  README.md         # Project overview and instructions
-  ├── 📋  REQUIREMENTS.txt  # Python dependencies (pip)
-  ├── 🐚  shell.nix         # Nix shell environment definition
-  └── 💡  vscode.sh*        # VSCode helper script for Nix shell environment
+```bash
+nix develop
 ```
 
+### Running Locally
 
-![-----------------------------------------------------](./img/green-gradient.png)
+Start the development server:
 
-## 🤖 Using 'AI' (Large Language Models)
+```bash
+hugo server
+```
 
-We are fine with using LLM's and Generative Machine Learning to act as general assistants, but the following three guidelines should be followed:
+Or using the Makefile:
 
-1. **Repeatability:** Although we understand that repeatability is not possible generally, whenever you are verbatim using LLM or Generative Machine Learning outputs in this project, you **must** also provide the prompt that you used to generate the resource.
-2. **Declaration:** Sharing the prompt above is implicit declaration that a machine learning assistant was used. If it is not obvious that a piece of work was generated, include the robot (🤖) icon next to a code snippet or text snippet.
-3. **Validation:** Outputs generated by a virtual assistant should always be validated by a human and you, as contributor, take ultimate responsibility for the correct functionality of any code and the correct expression in any text or media you submit to this project.
+```bash
+make hugo-run-dev
+```
 
-![-----------------------------------------------------](./img/green-gradient.png)
+Visit http://localhost:1313 to see the site.
 
-## 🛠️ Scripts Overview
+### Building
 
-The `scripts/` folder contains utility scripts to assist with data loading, and project maintenance. Below is a summary of each script:
+Build the site:
 
+```bash
+hugo
+```
 
-| Script Name                       | Description                                                                                  | Affected Website Parts |
-|-----------------------------------|----------------------------------------------------------------------------------------------|------------------------|
-| `fetch_feeds.py`                  | Simple script to get sustaining members and other feeds and update our web site with them     | 🏢 Sustaining Members page (`content/funders/`), 📰 News feeds (`data/feed.json`), 🎨 Flickr gallery (`content/flickr-images/`) |
-| `vscode.sh`                       | Launch VSCode with all settings and extensions needed to productively work on this project    | 🛠️ Development environment only |
-| `scripts/get_commit_hash.sh`  | Get the current commit hash of this repository and write it in `config/commit.toml` for the website version display | 📄 Footer version info across all pages |
-| `scripts/changelog_harvest.py`  | Will create/update visual-changelogs at `content/project/visual-changelogs` based on the data at `data/conf.json` | 📋 Visual Changelogs pages (`/project/visual-changelogs/`) |
-| `scripts/hub_images_harvest.py`  | Harvest maps/screenshots images from https://hub.qgis.org and update showcase content | 🗺️ Maps and Screenshots showcase section (`content/hub-maps/` and `content/hub-screenshots/`) |
-| `scripts/resize_image.py`  | Contains utilities to optimize images (resize, transform to webp, check validity) | 🖼️ Images fetched automatically |
-| `scripts/sanitize_commercial_supports.py`  | Checks each supporter's URL and removes invalid ones from commercial support listings | 🏪 Commercial Support page (`/resources/support/commercial-support/`) |
-| `scripts/update_donors_from_file.py`  | Updates `data/donors.json` ordered alphabetically by first name based on input file | 💰 Donors page (`/funding/donate/`) |
-| `scripts/update_donors.py`  | Updates `data/donors.json` ordered alphabetically by first name based on Stripe donations | 💰 Donors page (`/funding/donate/`) |
-| `scripts/update-schedule.py`  | Updates `data/conf.json` and `content/schedule.ics` with release schedule information | 📅 Download page, Release schedule, LTR/LT version info |
-| `scripts/update_individual_contributors.py`  | Aggregates GitHub stats for individual contributors across QGIS repositories | 👥 Individual Contributors section (`/community/organisation/contributors/`) |
-| `scripts/update_contributing_orgs.py`  | Aggregates GitHub stats for contributing organizations across QGIS repositories | 🏢 Contributing Organizations section (`/community/organisation/organisations/`) |
-| **GitHub Actions (Automated)** | **Scheduled workflows for content updates** | **Multiple areas** |
-| `.github/workflows/update-gh-sponsors.yml` | Updates GitHub Sponsors list twice daily | 💖 GitHub Sponsors page (`content/funding/donate/github-sponsors.md`) |
-| `.github/workflows/update-donors.yml` | Updates Stripe donors list twice daily | 💰 Donors page (`data/donors.json`) |
-| `.github/workflows/update-feeds.yml` | Updates feeds and hub maps twice daily | 🏢 Funders, 📰 News feeds, 🗺️ Hub maps |
-| `.github/workflows/check-commercial-support-links.yml` | Sanitizes commercial support links weekly | 🏪 Commercial Support page |
+For production build:
 
-> ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
+```bash
+hugo --config config.toml,config/config.prod.toml
+```
 
-![-----------------------------------------------------](./img/green-gradient.png)
+## Project Structure
 
-## 🧊 Using the Nix Shell
+```plaintext
+OSGEO-hugo/
+├── config.toml           # Main Hugo configuration
+├── config/               # Environment-specific configs
+├── content/              # Markdown content
+│   ├── about/           # About OSGeo pages
+│   ├── projects/        # OSGeo project listings
+│   ├── community/       # Community pages
+│   ├── initiatives/     # FOSS4G, Geo for All, etc.
+│   ├── resources/       # Documentation and resources
+│   ├── membership/      # Membership information
+│   ├── local-chapters/  # Local chapter listings
+│   ├── donate/          # Donation page
+│   └── sponsors/        # Sponsor listings
+├── static/              # Static assets
+│   └── img/
+│       └── osgeo/       # OSGeo logos and branding
+├── themes/              # Hugo theme
+│   └── hugo-bulma-blocks-theme/
+└── data/                # Data files (JSON, YAML)
+```
 
-Please refer to the [Nix section](./CONTRIBUTING.md#nix) in [CONTRIBUTING.md](./CONTRIBUTING.md).
+## Contributing
 
-![-----------------------------------------------------](./img/green-gradient.png)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-## ✨ Contributing
+Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for more detailed guidelines.
 
-We welcome contributions! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to get started.
+## License
 
-![-----------------------------------------------------](./img/green-gradient.png)
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙋 Have Questions?
+## Brand Guidelines
 
-Have questions or feedback? Feel free to open an issue or submit a Pull Request!  
+This site uses OSGeo's official branding:
 
-![-----------------------------------------------------](./img/green-gradient.png)
-## 🧑‍💻👩‍💻 Contributors
+- **Primary Color**: Light Green #4DB05B (Pantone 361 U)
+- **Secondary Color**: Dark Teal #003A40 (Pantone 330 U)
+- **Fonts**: Miriam Libre (headings), Sintony (body text)
 
-- [Tim Sutton](https://github.com/timlinux) – Original author and lead maintainer of the QGIS Website project
-- [Kontur Team](https://www.kontur.io) – Responsible for the design and development of the current website version
-- [Lova Andriarimalala](https://github.com/Xpirix) – Core developer and ongoing maintainer
-- [QGIS Contributors](https://github.com/qgis/QGIS-Website/graphs/contributors) – See the full list of amazing contributors who have helped make this website possible.
+For more information about OSGeo branding, see the [OSGeo Branding Materials](https://www.osgeo.org/about/branding-material/).
 
-![-----------------------------------------------------](./img/green-gradient.png)
+## Have Questions?
 
-Made with ❤️ by Tim Sutton (@timlinux), Lova Andriarimalala (@Xpirix) and QGIS Contributors.
+Have questions or feedback? Feel free to open an issue or submit a Pull Request!
+
+---
+
+Based on the QGIS-Hugo website architecture by Tim Sutton (@timlinux).

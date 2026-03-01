@@ -1,24 +1,49 @@
+{{/* Button Bar Shortcode - Creates a centered row of buttons */}}
+{{/* Supports both old positional params (icon:text:link) and new named params */}}
+
+{{ $button1Text := .Get "button1-text" | default "" }}
+{{ $button1Link := .Get "button1-link" | default "#" }}
+{{ $button1Class := .Get "button1-class" | default "is-osgeo-primary" }}
+{{ $button2Text := .Get "button2-text" | default "" }}
+{{ $button2Link := .Get "button2-link" | default "#" }}
+{{ $button2Class := .Get "button2-class" | default "is-osgeo-secondary" }}
+
 {{ $animationClasses := "" }}
 {{ $animate := .Get "animate" | default "false" }}
 {{ if eq $animate "true" }}
-{{ $animationClasses := "animation-element animate-from-left" }}
+{{ $animationClasses = "animation-element animate-from-left" }}
 {{ end}}
 
-<section class="section {{ $animationClasses }}">
+<section class="section button-bar-section {{ $animationClasses }}">
     <div class="container">
-        <nav class="level is-fullwidth">
-            {{- range (seq 0 (sub (len .Params) 1) ) }}
-            <div class="level-item has-text-centered">
-                {{- $myArg := $.Get . }}
-                {{ $myArgs := split $myArg ":" }}
-                <a class="button is-primary" href="{{ absURL (index $myArgs 2) }}">
-                    <span class="icon is-small">
-                    <i class="{{ index $myArgs 0 }}"></i>
-                    </span>
-                    <span>{{ index $myArgs 1 }}</span>
+        <div class="buttons is-centered">
+            {{/* Check for named parameters first */}}
+            {{ if $button1Text }}
+                <a class="button is-medium {{ $button1Class }}" href="{{ $button1Link }}">
+                    {{ $button1Text }}
                 </a>
-            </div>
-            {{ end }}        
-        </nav>
+            {{ end }}
+            {{ if $button2Text }}
+                <a class="button is-medium {{ $button2Class }}" href="{{ $button2Link }}">
+                    {{ $button2Text }}
+                </a>
+            {{ end }}
+
+            {{/* Fall back to old positional params if no named params */}}
+            {{ if and (not $button1Text) (not $button2Text) }}
+                {{- range (seq 0 (sub (len .Params) 1) ) }}
+                <div class="level-item has-text-centered">
+                    {{- $myArg := $.Get . }}
+                    {{ $myArgs := split $myArg ":" }}
+                    <a class="button is-osgeo-primary" href="{{ absURL (index $myArgs 2) }}">
+                        <span class="icon is-small">
+                        <i class="{{ index $myArgs 0 }}"></i>
+                        </span>
+                        <span>{{ index $myArgs 1 }}</span>
+                    </a>
+                </div>
+                {{ end }}
+            {{ end }}
+        </div>
     </div>
 </section>

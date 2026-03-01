@@ -1,0 +1,1 @@
+- whenever i wrote (ss), consult the latest screenshot in /home/timlinux/dev/hugo/OSGEO-hugo/screenshots
