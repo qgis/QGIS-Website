@@ -54,7 +54,16 @@ jobs:
     - name: '⬇️ Pull latest changes before commit'
       run: |
         cd ./qgis-website
-        git pull --rebase origin main
+        # Stash any changes, pull with rebase, then pop the stash
+        if ! git diff --quiet || ! git diff --cached --quiet; then
+          echo "Changes detected, stashing..."
+          git stash push -u -m "Auto-stash before pull"
+          git pull --rebase origin main || echo "No upstream changes to pull"
+          git stash pop || echo "No stash to pop or conflicts resolved"
+        else
+          echo "No changes to stash, pulling directly..."
+          git pull --rebase origin main || echo "No upstream changes to pull"
+        fi
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v7
