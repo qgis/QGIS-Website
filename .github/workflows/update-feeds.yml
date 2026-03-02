@@ -51,9 +51,13 @@ jobs:
         cd ./qgis-website
         pipenv run ./scripts/update_individual_contributors.py
 
+    - name: '⬇️ Pull latest changes before commit'
+      run: |
+        cd ./qgis-website
+        git pull --rebase origin main
+
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: 'Funders scraped and committed via a GitHub Action.'
         repository: ./qgis-website
-        # push_options: --force
