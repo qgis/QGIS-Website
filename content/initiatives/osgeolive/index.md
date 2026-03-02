@@ -14,7 +14,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## What is OSGeoLive?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-compact-disc"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">What is OSGeoLive?</h2>
+</div>
 
 OSGeoLive is a self-contained bootable platform available as a DVD, USB drive, or virtual machine. Built on [Lubuntu](https://lubuntu.me/), it enables users to explore a wide range of open source geospatial software without any installation requirements.
 
@@ -24,7 +30,13 @@ The entire system consists of free software, permitting unrestricted distributio
 <strong>Current Version:</strong> OSGeoLive 16.0 - Based on Lubuntu 22.04 LTS
 </div>
 
-## Key Features
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-star"></i>
+<span>Features</span>
+</div>
+<h2 class="section-title">Key Features</h2>
+</div>
 
 <div class="columns is-multiline mt-4">
 <div class="column is-6">
@@ -65,11 +77,20 @@ The entire system consists of free software, permitting unrestricted distributio
 </div>
 </div>
 
-## Included Software
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-box-open"></i>
+<span>Software</span>
+</div>
+<h2 class="section-title">Included Software</h2>
+</div>
 
 OSGeoLive includes software across multiple categories:
 
-### Desktop GIS
+{{< content-panel-grid-start >}}
+
+{{< content-panel-start title="Desktop GIS" icon="fa-solid fa-desktop" variant="featured" >}}
+
 - QGIS
 - GRASS GIS
 - gvSIG Desktop
@@ -77,45 +98,73 @@ OSGeoLive includes software across multiple categories:
 - OpenJUMP
 - SAGA GIS
 
-### Web Mapping
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Web Mapping" icon="fa-solid fa-globe" variant="cyan" >}}
+
 - GeoServer
 - MapServer
 - MapProxy
 - GeoNode
 - pygeoapi
 
-### Databases
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Databases" icon="fa-solid fa-database" variant="teal" >}}
+
 - PostGIS
 - SpatiaLite
 - Rasdaman
 
-### Libraries
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Libraries" icon="fa-solid fa-cubes" >}}
+
 - GDAL/OGR
 - PROJ
 - GEOS
 - JTS
 
-### Navigation & Routing
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Navigation & Routing" icon="fa-solid fa-route" variant="amber" >}}
+
 - OpenRouteService
 - OSRM
 - pgRouting
 
-...and many more!
+{{< content-panel-end >}}
 
-## Getting Started
+{{< content-panel-grid-end >}}
 
-Using OSGeoLive is simple:
+*...and many more!*
+
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rocket"></i>
+<span>Start</span>
+</div>
+<h2 class="section-title">Getting Started</h2>
+</div>
+
+{{< content-panel-start title="Simple Steps" subtitle="Using OSGeoLive is simple" icon="fa-solid fa-shoe-prints" variant="featured steps" >}}
 
 1. **Download** the ISO image or virtual machine
 2. **Boot** from DVD, USB, or import into your VM software
 3. **Login** (default user: `user`, password: `user`)
 4. **Explore** applications from the Geospatial menu
 
-[Download OSGeoLive](https://live.osgeo.org/en/download.html){.button .is-osgeo-primary .is-large}
+{{< content-panel-end button-text="Download OSGeoLive" button-link="https://live.osgeo.org/en/download.html" >}}
 
-## Use Cases
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-lightbulb"></i>
+<span>Usage</span>
+</div>
+<h2 class="section-title">Use Cases</h2>
+</div>
 
-OSGeoLive is perfect for:
+{{< content-panel-start title="Perfect For" subtitle="OSGeoLive is ideal for" icon="fa-solid fa-bullseye" variant="cyan checklist" >}}
 
 - **Training workshops** - No software installation needed
 - **Conferences** - Demonstrate multiple tools easily
@@ -123,55 +172,44 @@ OSGeoLive is perfect for:
 - **Evaluation** - Try software before deploying
 - **Offline work** - Complete GIS toolkit without internet
 
+{{< content-panel-end >}}
+
 {{< column-end >}}
 {{< column-start class="is-4" >}}
 
-{{< box-start classes="has-background-light" >}}
-### Quick Facts
+{{< content-panel-start title="Quick Facts" icon="fa-solid fa-chart-simple" variant="compact teal" >}}
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-compact-disc"></i></span>
-<span><strong>Size:</strong> ~5 GB (ISO)</span>
-</div>
+**Size:** ~5 GB (ISO)
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-box-open"></i></span>
-<span><strong>Applications:</strong> 50+</span>
-</div>
+**Applications:** 50+
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-computer"></i></span>
-<span><strong>Base:</strong> Lubuntu 22.04 LTS</span>
-</div>
+**Base:** Lubuntu 22.04 LTS
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-globe"></i></span>
-<span><strong>Languages:</strong> Multiple</span>
-</div>
-{{< box-end >}}
+**Languages:** Multiple
 
-{{< box-start classes="has-background-osgeo-light mt-4" >}}
-### Download Options
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Download Options" icon="fa-solid fa-download" variant="compact featured" >}}
 
 - **ISO Image** - Boot from DVD/USB
 - **VirtualBox VM** - Ready-to-run VM
 - **VMWare** - For VMWare users
 
 [All Downloads](https://live.osgeo.org/en/download.html)
-{{< box-end >}}
 
-{{< box-start classes="has-background-white mt-4" >}}
-### Resources
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Resources" icon="fa-solid fa-book-open" variant="compact" >}}
 
 - [Official Website](https://live.osgeo.org)
 - [Application List](https://live.osgeo.org/en/overview/overview.html)
 - [Quickstart Guides](https://live.osgeo.org/en/quickstart/)
 - [Installation Guide](https://live.osgeo.org/en/quickstart/virtualization_quickstart.html)
 - [Presentation](https://live.osgeo.org/en/presentation.html)
-{{< box-end >}}
 
-{{< box-start classes="has-background-light mt-4" >}}
-### Contribute
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Contribute" icon="fa-solid fa-hand-holding-heart" variant="compact amber checklist" >}}
 
 OSGeoLive is a community project. We welcome contributions:
 
@@ -181,7 +219,8 @@ OSGeoLive is a community project. We welcome contributions:
 - Package new software
 
 [Contribute to OSGeoLive](https://wiki.osgeo.org/wiki/Live_GIS_Disc)
-{{< box-end >}}
+
+{{< content-panel-end >}}
 
 {{< column-end >}}
 {{< columns-end >}}

@@ -7,7 +7,13 @@ HasBanner: false
 sidebar: false
 ---
 
-## Resources
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-book-open"></i>
+<span>Learn</span>
+</div>
+<h2 class="section-title">Resources</h2>
+</div>
 
 OSGeo provides a variety of resources to help you learn about and use open source geospatial software.
 
@@ -39,7 +45,13 @@ Keep up with the latest developments in the OSGeo community.
 
 [Read News](/news/)
 
-## Getting Help
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-life-ring"></i>
+<span>Support</span>
+</div>
+<h2 class="section-title">Getting Help</h2>
+</div>
 
 ### Mailing Lists
 

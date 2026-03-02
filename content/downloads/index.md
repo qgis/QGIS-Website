@@ -15,13 +15,25 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Download OSGeo Software
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-download"></i>
+<span>Software</span>
+</div>
+<h2 class="section-title">Download OSGeo Software</h2>
+</div>
 
 All OSGeo software is free and open source. Download, use, modify, and share freely.
 
 ---
 
-## Quick Start: OSGeoLive
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-compact-disc"></i>
+<span>Quick Start</span>
+</div>
+<h2 class="section-title">Quick Start: OSGeoLive</h2>
+</div>
 
 The easiest way to try OSGeo software is with OSGeoLive - a self-contained bootable DVD/USB with 50+ pre-configured geospatial applications.
 
@@ -42,7 +54,13 @@ Try 50+ open source geospatial applications without installing anything. Perfect
 
 ---
 
-## Desktop Applications
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-desktop"></i>
+<span>Desktop</span>
+</div>
+<h2 class="section-title">Desktop Applications</h2>
+</div>
 
 Full-featured geographic information systems for your desktop.
 
@@ -104,7 +122,13 @@ Virtual globe and world atlas.
 
 ---
 
-## Web Mapping Servers
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-server"></i>
+<span>Web</span>
+</div>
+<h2 class="section-title">Web Mapping Servers</h2>
+</div>
 
 Publish geospatial data on the web.
 
@@ -134,7 +158,13 @@ High-performance web mapping platform.
 
 ---
 
-## Spatial Databases
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-database"></i>
+<span>Databases</span>
+</div>
+<h2 class="section-title">Spatial Databases</h2>
+</div>
 
 Store and query spatial data at scale.
 
@@ -154,7 +184,13 @@ Spatial extension for PostgreSQL.
 
 ---
 
-## Libraries & Tools
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-code"></i>
+<span>Libraries</span>
+</div>
+<h2 class="section-title">Libraries & Tools</h2>
+</div>
 
 Core libraries that power geospatial applications.
 
@@ -194,7 +230,13 @@ Geometry engine.
 
 ---
 
-## JavaScript Libraries
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-brands fa-js"></i>
+<span>JavaScript</span>
+</div>
+<h2 class="section-title">JavaScript Libraries</h2>
+</div>
 
 Build interactive web maps.
 
@@ -224,7 +266,13 @@ Lightweight interactive maps.
 
 ---
 
-## All Projects
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-cubes"></i>
+<span>All</span>
+</div>
+<h2 class="section-title">All Projects</h2>
+</div>
 
 View the complete catalog of OSGeo projects:
 

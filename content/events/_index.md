@@ -15,7 +15,13 @@ sidebar: false
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Come Together
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-calendar-days"></i>
+<span>Community</span>
+</div>
+<h2 class="section-title">Come Together</h2>
+</div>
 
 The OSGeo community organizes events worldwide - from our flagship FOSS4G global conference to regional events, workshops, and local meetups. These gatherings bring together developers, users, and advocates to share knowledge, collaborate, and strengthen the open source geospatial ecosystem.
 
@@ -23,7 +29,13 @@ The OSGeo community organizes events worldwide - from our flagship FOSS4G global
 
 ---
 
-## FOSS4G 2025
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-globe"></i>
+<span>Global</span>
+</div>
+<h2 class="section-title">FOSS4G 2025</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -89,7 +101,13 @@ Share your work! Submit a presentation, workshop, or academic paper.
 
 ---
 
-## Regional Events
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-map-location-dot"></i>
+<span>Regional</span>
+</div>
+<h2 class="section-title">Regional Events</h2>
+</div>
 
 Regional FOSS4G conferences bring the community together at a local level, often in local languages and with regional focus areas.
 
@@ -168,7 +186,13 @@ Connect with local chapters for upcoming events.
 
 ---
 
-## Event Types
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-list"></i>
+<span>Types</span>
+</div>
+<h2 class="section-title">Event Types</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -208,7 +232,13 @@ Online presentations and training sessions. Access OSGeo content from anywhere i
 
 ---
 
-## Upcoming Events Calendar
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-calendar-check"></i>
+<span>Upcoming</span>
+</div>
+<h2 class="section-title">Upcoming Events Calendar</h2>
+</div>
 
 {{< box-start class="is-light2 p-4" >}}
 
@@ -225,7 +255,13 @@ Online presentations and training sessions. Access OSGeo content from anywhere i
 
 ---
 
-## Host an Event
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-star"></i>
+<span>Host</span>
+</div>
+<h2 class="section-title">Host an Event</h2>
+</div>
 
 Interested in hosting a FOSS4G or regional event? OSGeo supports local organizers with:
 
@@ -257,7 +293,13 @@ Contact the OSGeo Conference Committee to discuss hosting an event in your regio
 
 ---
 
-## Past FOSS4G Conferences
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-history"></i>
+<span>History</span>
+</div>
+<h2 class="section-title">Past FOSS4G Conferences</h2>
+</div>
 
 Since 2006, FOSS4G has traveled the world:
 
@@ -302,7 +344,13 @@ Since 2006, FOSS4G has traveled the world:
 
 {{< box-start class="cta-section my-6" >}}
 
-## Join Us at FOSS4G 2025
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-ticket"></i>
+<span>Register</span>
+</div>
+<h2 class="section-title">Join Us at FOSS4G 2025</h2>
+</div>
 
 The premier global open source geospatial conference. Auckland, New Zealand.
 

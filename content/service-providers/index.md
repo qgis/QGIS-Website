@@ -13,7 +13,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Professional Support
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-briefcase"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">Professional Support</h2>
+</div>
 
 While OSGeo software is free to use, many organizations need professional support for implementation, customization, training, and maintenance. Service providers fill this role, offering commercial services built on OSGeo projects.
 
@@ -21,7 +27,13 @@ While OSGeo software is free to use, many organizations need professional suppor
 <strong>Note:</strong> OSGeo does not endorse any specific service provider. This directory is provided as a community resource.
 </div>
 
-## Find a Service Provider
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-search"></i>
+<span>Directory</span>
+</div>
+<h2 class="section-title">Find a Service Provider</h2>
+</div>
 
 Service providers are listed on the OSGeo wiki, organized by:
 
@@ -31,7 +43,13 @@ Service providers are listed on the OSGeo wiki, organized by:
 
 [Browse Service Provider Directory](https://wiki.osgeo.org/wiki/Service_Providers){.button .is-osgeo-primary .is-large}
 
-## Types of Services
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-list"></i>
+<span>Services</span>
+</div>
+<h2 class="section-title">Types of Services</h2>
+</div>
 
 Service providers typically offer:
 
@@ -92,7 +110,13 @@ Service providers typically offer:
 </div>
 </div>
 
-## Featured Service Providers
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-star"></i>
+<span>Featured</span>
+</div>
+<h2 class="section-title">Featured Service Providers</h2>
+</div>
 
 Many service providers actively contribute to OSGeo projects while also offering commercial services. Some are also [OSGeo sponsors](/sponsors/).
 
@@ -102,7 +126,13 @@ Many service providers actively contribute to OSGeo projects while also offering
 <a href="/initiatives/geo-for-all/" class="button is-small is-osgeo-secondary">Learn More</a>
 </div>
 
-## Become a Listed Service Provider
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-plus"></i>
+<span>Join</span>
+</div>
+<h2 class="section-title">Become a Listed Service Provider</h2>
+</div>
 
 If your organization provides professional services for OSGeo software, you can add your listing to the wiki directory.
 

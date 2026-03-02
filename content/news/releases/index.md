@@ -15,7 +15,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Latest Releases
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rocket"></i>
+<span>Updates</span>
+</div>
+<h2 class="section-title">Latest Releases</h2>
+</div>
 
 Stay informed about new versions and updates from OSGeo projects. Our projects follow regular release cycles, providing new features, bug fixes, and security updates.
 
@@ -89,7 +95,13 @@ Java-based software server for sharing and editing geospatial data.
 
 ---
 
-## Release Schedules
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-calendar-days"></i>
+<span>Schedule</span>
+</div>
+<h2 class="section-title">Release Schedules</h2>
+</div>
 
 OSGeo projects follow different release strategies:
 
@@ -104,7 +116,13 @@ Stable releases maintained for extended periods (1-3 years) with backported bug 
 
 ---
 
-## Subscribe to Updates
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-bell"></i>
+<span>Subscribe</span>
+</div>
+<h2 class="section-title">Subscribe to Updates</h2>
+</div>
 
 Get notified about new releases:
 

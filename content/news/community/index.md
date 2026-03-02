@@ -15,7 +15,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Community News
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-users"></i>
+<span>Updates</span>
+</div>
+<h2 class="section-title">Community News</h2>
+</div>
 
 Updates about the people, events, and activities that make OSGeo a vibrant community.
 
@@ -69,7 +75,13 @@ OSGeo's Geo for All initiative continues to expand, bringing open source geospat
 
 ---
 
-## Get Involved
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hand-holding-heart"></i>
+<span>Participate</span>
+</div>
+<h2 class="section-title">Get Involved</h2>
+</div>
 
 The OSGeo community is always welcoming new contributors. There are many ways to participate:
 
@@ -83,7 +95,13 @@ The OSGeo community is always welcoming new contributors. There are many ways to
 
 ---
 
-## Board of Directors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-building-columns"></i>
+<span>Governance</span>
+</div>
+<h2 class="section-title">Board of Directors</h2>
+</div>
 
 OSGeo is governed by an elected Board of Directors. Board elections are held annually with Charter Members voting.
 

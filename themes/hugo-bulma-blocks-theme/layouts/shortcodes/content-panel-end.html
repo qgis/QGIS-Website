@@ -1,0 +1,21 @@
+{{/*
+  Content Panel Shortcode - End
+
+  Usage:
+  {{< content-panel-end >}}
+
+  Or with a button:
+  {{< content-panel-end button-text="Learn More" button-link="/page/" >}}
+*/}}
+
+{{ $buttonText := .Get "button-text" | default "" }}
+{{ $buttonLink := .Get "button-link" | default "" }}
+{{ $buttonClass := .Get "button-class" | default "is-osgeo-primary" }}
+
+</div>
+{{ if and $buttonText $buttonLink }}
+<div class="content-panel-footer">
+<a href="{{ $buttonLink }}" class="button {{ $buttonClass }}">{{ $buttonText }}</a>
+</div>
+{{ end }}
+</div>

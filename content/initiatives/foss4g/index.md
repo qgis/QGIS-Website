@@ -14,11 +14,17 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## About FOSS4G
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-info-circle"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">About FOSS4G</h2>
+</div>
 
 The internationally acclaimed "Free and Open Source Software for Geospatial" conference is OSGeo's annual global event, held in a different city each year since 2004. FOSS4G consistently draws over 1,000 attendees who are passionate about open source geospatial solutions.
 
-FOSS4G provides participants with:
+{{< content-panel-start title="FOSS4G Experience" subtitle="What you'll find at the conference" icon="fa-solid fa-star" variant="featured checklist" >}}
 
 - **Keynote speeches** from industry leaders and visionaries
 - **Presentation sessions** covering the latest developments in open source geospatial
@@ -26,9 +32,17 @@ FOSS4G provides participants with:
 - **Code sprints** where developers collaborate on projects
 - **Community networking** opportunities with the global geospatial community
 
+{{< content-panel-end >}}
+
 The conference alternates between three geographic regions: Europe, North America, and worldwide locations, ensuring accessibility for our global community.
 
-## FOSS4G 2025 - Auckland, New Zealand
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-calendar-star"></i>
+<span>Upcoming</span>
+</div>
+<h2 class="section-title">FOSS4G 2025 - Auckland, New Zealand</h2>
+</div>
 
 <div class="notification is-osgeo-featured">
 <div class="columns is-vcentered">
@@ -48,9 +62,17 @@ This year's conference offers a unique opportunity for both newcomers and regula
 
 [Visit FOSS4G 2025 Website](https://2025.foss4g.org){.button .is-osgeo-primary .is-medium}
 
-## Regional Events
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-map-location-dot"></i>
+<span>Regional</span>
+</div>
+<h2 class="section-title">Regional Events</h2>
+</div>
 
 In addition to the global conference, FOSS4G regional events are held throughout the year:
+
+{{< content-panel-start title="Regional Conferences" subtitle="Events around the world" icon="fa-solid fa-earth-americas" variant="cyan checklist" >}}
 
 - **FOSS4G Europe** - Annual European conference
 - **FOSS4G North America** - Annual North American conference
@@ -58,7 +80,15 @@ In addition to the global conference, FOSS4G regional events are held throughout
 - **FOSS4G Oceania** - Australia and Pacific region event
 - **State of the Map** - OpenStreetMap community conference
 
-## Past Global Conferences
+{{< content-panel-end >}}
+
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<span>History</span>
+</div>
+<h2 class="section-title">Past Global Conferences</h2>
+</div>
 
 | Year | Location | Theme |
 |------|----------|-------|
@@ -78,32 +108,19 @@ Video archives are available for many past events on the [OSGeo YouTube Channel]
 {{< column-end >}}
 {{< column-start class="is-4" >}}
 
-{{< box-start classes="has-background-light" >}}
-### Quick Facts
+{{< content-panel-start title="Quick Facts" icon="fa-solid fa-chart-simple" variant="compact teal" >}}
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-calendar"></i></span>
-<span><strong>Founded:</strong> 2004</span>
-</div>
+**Founded:** 2004
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-users"></i></span>
-<span><strong>Annual Attendance:</strong> 1,000+</span>
-</div>
+**Annual Attendance:** 1,000+
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-earth-americas"></i></span>
-<span><strong>Locations:</strong> Rotating globally</span>
-</div>
+**Locations:** Rotating globally
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-comments"></i></span>
-<span><strong>Languages:</strong> English (primary)</span>
-</div>
-{{< box-end >}}
+**Languages:** English (primary)
 
-{{< box-start classes="has-background-osgeo-light mt-4" >}}
-### Get Involved
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Get Involved" icon="fa-solid fa-hand-holding-heart" variant="compact featured" >}}
 
 **Submit a Talk**
 Share your work with the community
@@ -118,7 +135,8 @@ Help make the conference happen
 Learn, network, and contribute
 
 [Learn More](/community/get-involved/)
-{{< box-end >}}
+
+{{< content-panel-end >}}
 
 {{< column-end >}}
 {{< columns-end >}}

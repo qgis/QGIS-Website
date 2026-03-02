@@ -15,7 +15,13 @@ LabelText: "300+ Charter Members"
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Why Support OSGeo?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-heart"></i>
+<span>Support</span>
+</div>
+<h2 class="section-title">Why Support OSGeo?</h2>
+</div>
 
 Your support enables us to:
 - **Maintain infrastructure** for 50+ open source projects
@@ -29,7 +35,13 @@ Your support enables us to:
 
 ---
 
-## Ways to Support
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hands-helping"></i>
+<span>Options</span>
+</div>
+<h2 class="section-title">Ways to Support</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -81,7 +93,13 @@ Contribute your skills and expertise to help OSGeo projects, events, and communi
 
 ---
 
-## Charter Membership
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-user-check"></i>
+<span>Members</span>
+</div>
+<h2 class="section-title">Charter Membership</h2>
+</div>
 
 Charter Members are individuals who have demonstrated sustained commitment to the OSGeo community. They help guide the foundation's direction and vote in board elections.
 
@@ -120,7 +138,13 @@ Existing Charter Members nominate new members based on their contributions.
 
 ---
 
-## Sponsorship Tiers
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-building"></i>
+<span>Tiers</span>
+</div>
+<h2 class="section-title">Sponsorship Tiers</h2>
+</div>
 
 Organizations can sponsor OSGeo at various levels:
 
@@ -183,7 +207,13 @@ Organizations can sponsor OSGeo at various levels:
 
 ---
 
-## Current Sponsors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-star"></i>
+<span>Sponsors</span>
+</div>
+<h2 class="section-title">Current Sponsors</h2>
+</div>
 
 We're grateful for the support of our sponsors:
 
@@ -216,7 +246,13 @@ We're grateful for the support of our sponsors:
 
 ---
 
-## Donate
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hand-holding-heart"></i>
+<span>Give</span>
+</div>
+<h2 class="section-title">Donate</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -248,7 +284,13 @@ Your contribution directly supports open source geospatial software development,
 
 ---
 
-## How Funds Are Used
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-coins"></i>
+<span>Funds</span>
+</div>
+<h2 class="section-title">How Funds Are Used</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -282,7 +324,13 @@ Supporting Geo for All and other educational initiatives.
 
 {{< box-start class="cta-section my-6" >}}
 
-## Support Open Source Geospatial
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rocket"></i>
+<span>Action</span>
+</div>
+<h2 class="section-title">Support Open Source Geospatial</h2>
+</div>
 
 Your contribution makes a difference. Help us build the future of open geospatial technology.
 

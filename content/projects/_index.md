@@ -30,11 +30,14 @@ All OSGeo projects have completed our rigorous **incubation process**, ensuring 
 </div>
 {{< box-end >}}
 
----
-
-## Desktop Applications
-
-Full-featured geographic information systems for visualization, editing, and analysis.
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-desktop"></i>
+<span>Desktop</span>
+</div>
+<h2 class="section-title">Desktop Applications</h2>
+<p class="section-subtitle">Full-featured geographic information systems for visualization, editing, and analysis.</p>
+</div>
 
 {{< columns-start >}}
 
@@ -120,11 +123,14 @@ A virtual globe and world atlas that can be used to learn more about Earth. Embe
 
 {{< columns-end >}}
 
----
-
-## Web Mapping
-
-Publish and share geospatial data on the web using open standards.
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-globe"></i>
+<span>Web</span>
+</div>
+<h2 class="section-title">Web Mapping</h2>
+<p class="section-subtitle">Publish and share geospatial data on the web using open standards.</p>
+</div>
 
 {{< columns-start >}}
 
@@ -309,11 +315,14 @@ A Python implementation of the OGC Web Processing Service standard.
 
 {{< columns-end >}}
 
----
-
-## Geospatial Libraries
-
-Core libraries that power geospatial applications.
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-code"></i>
+<span>Libraries</span>
+</div>
+<h2 class="section-title">Geospatial Libraries</h2>
+<p class="section-subtitle">Core libraries that power geospatial applications.</p>
+</div>
 
 {{< columns-start >}}
 
@@ -460,11 +469,14 @@ A PyTorch domain library providing datasets, samplers, transforms, and pre-train
 
 {{< columns-end >}}
 
----
-
-## Spatial Databases
-
-Store, query, and analyze spatial data at scale.
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-database"></i>
+<span>Databases</span>
+</div>
+<h2 class="section-title">Spatial Databases</h2>
+<p class="section-subtitle">Store, query, and analyze spatial data at scale.</p>
+</div>
 
 {{< columns-start >}}
 
@@ -490,11 +502,14 @@ Spatial database extender for PostgreSQL. Adds support for geographic objects al
 
 {{< columns-end >}}
 
----
-
-## Metadata Catalogs
-
-Discover, publish, and manage geospatial metadata.
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-book-open"></i>
+<span>Catalogs</span>
+</div>
+<h2 class="section-title">Metadata Catalogs</h2>
+<p class="section-subtitle">Discover, publish, and manage geospatial metadata.</p>
+</div>
 
 {{< columns-start >}}
 
@@ -538,11 +553,14 @@ A Python implementation of the OGC Catalogue Service for the Web (CSW) standard.
 
 {{< columns-end >}}
 
----
-
-## Content Management
-
-Build complete geospatial platforms.
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-layer-group"></i>
+<span>CMS</span>
+</div>
+<h2 class="section-title">Content Management</h2>
+<p class="section-subtitle">Build complete geospatial platforms.</p>
+</div>
 
 {{< columns-start >}}
 
@@ -567,9 +585,13 @@ A web-based application and platform for developing geospatial information syste
 
 {{< columns-end >}}
 
----
-
-## Other Projects
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-puzzle-piece"></i>
+<span>More</span>
+</div>
+<h2 class="section-title">Other Projects</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -594,9 +616,13 @@ A self-contained bootable DVD, USB thumb drive or Virtual Machine with over 50 p
 
 {{< columns-end >}}
 
----
-
-## Community Projects
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-users"></i>
+<span>Community</span>
+</div>
+<h2 class="section-title">Community Projects</h2>
+</div>
 
 In addition to our incubated projects, OSGeo also hosts **Community Projects** - software that has joined OSGeo but has not yet completed the full incubation process. These projects benefit from OSGeo infrastructure and community support while working toward full project status.
 
@@ -606,7 +632,13 @@ In addition to our incubated projects, OSGeo also hosts **Community Projects** -
 
 {{< box-start class="cta-section my-6" >}}
 
-## Try All These Projects Today
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-download"></i>
+<span>Try</span>
+</div>
+<h2 class="section-title has-text-white">Try All These Projects Today</h2>
+</div>
 
 OSGeoLive is a bootable DVD/USB with 50+ pre-configured geospatial applications. No installation required.
 

@@ -18,7 +18,13 @@ Organizations offering professional services for OSGeo software can be listed in
 
 ---
 
-## Why List Your Organization?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-star"></i>
+<span>Benefits</span>
+</div>
+<h2 class="section-title">Why List Your Organization?</h2>
+</div>
 
 {{< columns-start >}}
 {{< column-start class="is-6" >}}
@@ -40,7 +46,13 @@ Associate your organization with the global open source geospatial community.
 
 ---
 
-## How to Apply
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-file-signature"></i>
+<span>Apply</span>
+</div>
+<h2 class="section-title">How to Apply</h2>
+</div>
 
 ### Requirements
 
@@ -61,7 +73,13 @@ To be listed as an OSGeo service provider, organizations should:
 
 ---
 
-## What to Include
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-list"></i>
+<span>Details</span>
+</div>
+<h2 class="section-title">What to Include</h2>
+</div>
 
 Your listing should include:
 

@@ -15,7 +15,13 @@ sidebar: false
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Join Your Regional Community
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-users"></i>
+<span>Community</span>
+</div>
+<h2 class="section-title">Join Your Regional Community</h2>
+</div>
 
 OSGeo Local Chapters bring together geospatial professionals, developers, and enthusiasts in their regions. Chapters organize events, provide local-language support, and create networking opportunities.
 
@@ -23,7 +29,13 @@ OSGeo Local Chapters bring together geospatial professionals, developers, and en
 
 ---
 
-## Active Chapters by Region
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-globe"></i>
+<span>Regions</span>
+</div>
+<h2 class="section-title">Active Chapters by Region</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -97,7 +109,13 @@ OSGeo Local Chapters bring together geospatial professionals, developers, and en
 
 ---
 
-## What Chapters Do
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-tasks"></i>
+<span>Activities</span>
+</div>
+<h2 class="section-title">What Chapters Do</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -129,7 +147,13 @@ Connect professionals, academics, and government agencies working with open sour
 
 ---
 
-## Start a Chapter
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-plus"></i>
+<span>New</span>
+</div>
+<h2 class="section-title">Start a Chapter</h2>
+</div>
 
 Interested in starting a local chapter in your region? OSGeo welcomes new chapters and provides guidance.
 
@@ -171,7 +195,13 @@ Contact OSGeo to discuss starting a local chapter in your region.
 
 {{< box-start class="cta-section my-6" >}}
 
-## Find Your Community
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-search"></i>
+<span>Find</span>
+</div>
+<h2 class="section-title">Find Your Community</h2>
+</div>
 
 Connect with geospatial professionals in your region.
 

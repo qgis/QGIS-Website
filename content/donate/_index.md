@@ -15,7 +15,13 @@ sidebar: false
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Why Donate?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-heart"></i>
+<span>Impact</span>
+</div>
+<h2 class="section-title">Why Donate?</h2>
+</div>
 
 Your donation directly supports the global open source geospatial community. Every contribution helps maintain infrastructure, fund events, and expand educational opportunities.
 
@@ -23,7 +29,13 @@ Your donation directly supports the global open source geospatial community. Eve
 
 ---
 
-## How Your Donation Helps
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-coins"></i>
+<span>Usage</span>
+</div>
+<h2 class="section-title">How Your Donation Helps</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -63,7 +75,13 @@ Funding FOSS4G and community events that bring together developers and users wor
 
 ---
 
-## Ways to Give
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hand-holding-dollar"></i>
+<span>Methods</span>
+</div>
+<h2 class="section-title">Ways to Give</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -115,7 +133,13 @@ Organizations can become OSGeo sponsors at various levels, gaining visibility wh
 
 ---
 
-## Tax Information
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-file-invoice-dollar"></i>
+<span>Tax</span>
+</div>
+<h2 class="section-title">Tax Information</h2>
+</div>
 
 {{< box-start class="is-warning-light p-4" >}}
 
@@ -125,7 +149,13 @@ OSGeo is a United States 501(c)(4) non-profit organization. Donations may or may
 
 ---
 
-## Other Ways to Support
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hands-helping"></i>
+<span>Alternatives</span>
+</div>
+<h2 class="section-title">Other Ways to Support</h2>
+</div>
 
 Not able to donate financially? There are many other valuable ways to support OSGeo:
 
@@ -169,7 +199,13 @@ Not able to donate financially? There are many other valuable ways to support OS
 
 {{< box-start class="cta-section my-6" >}}
 
-## Make a Difference Today
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rocket"></i>
+<span>Action</span>
+</div>
+<h2 class="section-title">Make a Difference Today</h2>
+</div>
 
 Your contribution supports the future of open geospatial technology.
 

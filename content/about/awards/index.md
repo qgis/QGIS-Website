@@ -13,7 +13,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Sol Katz Award for Geospatial Free and Open Source Software
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-award"></i>
+<span>Award</span>
+</div>
+<h2 class="section-title">Sol Katz Award for Geospatial Free and Open Source Software</h2>
+</div>
 
 The Sol Katz Award is OSGeo's highest honor, presented annually to individuals who have demonstrated leadership and dedication to the open source geospatial community.
 
@@ -61,7 +67,13 @@ Recipients are selected based on:
 
 [View Full List](https://wiki.osgeo.org/wiki/Sol_Katz_Award){.button .is-osgeo-primary .is-medium}
 
-## Other Recognition
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-trophy"></i>
+<span>Recognition</span>
+</div>
+<h2 class="section-title">Other Recognition</h2>
+</div>
 
 ### Charter Members
 

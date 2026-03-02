@@ -15,7 +15,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Press Releases
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-newspaper"></i>
+<span>Press</span>
+</div>
+<h2 class="section-title">Press Releases</h2>
+</div>
 
 Official announcements from the Open Source Geospatial Foundation.
 
@@ -49,7 +55,13 @@ Previous press releases are archived on the OSGeo wiki:
 
 ---
 
-## Media Resources
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-photo-film"></i>
+<span>Media</span>
+</div>
+<h2 class="section-title">Media Resources</h2>
+</div>
 
 ### About OSGeo
 
@@ -71,7 +83,13 @@ Download official OSGeo logos and brand assets:
 
 ---
 
-## Media Contact
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-address-card"></i>
+<span>Contact</span>
+</div>
+<h2 class="section-title">Media Contact</h2>
+</div>
 
 For press inquiries, interviews, or media requests:
 

@@ -1,0 +1,14 @@
+{{/*
+  Content Panel Grid Shortcode - Start
+
+  Usage:
+  {{< content-panel-grid-start >}}
+
+  (multiple content panels here)
+
+  {{< content-panel-grid-end >}}
+*/}}
+
+{{ $columns := .Get "columns" | default "3" }}
+
+<div class="content-panel-grid" style="--grid-columns: {{ $columns }};">

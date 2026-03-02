@@ -13,7 +13,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## General Inquiries
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-envelope"></i>
+<span>General</span>
+</div>
+<h2 class="section-title">General Inquiries</h2>
+</div>
 
 For general questions about OSGeo:
 
@@ -31,7 +37,13 @@ For general questions about OSGeo:
 </div>
 </div>
 
-## Board of Directors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-users"></i>
+<span>Board</span>
+</div>
+<h2 class="section-title">Board of Directors</h2>
+</div>
 
 For matters requiring Board attention:
 
@@ -49,7 +61,13 @@ For matters requiring Board attention:
 </div>
 </div>
 
-## Press & Media
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-newspaper"></i>
+<span>Press</span>
+</div>
+<h2 class="section-title">Press & Media</h2>
+</div>
 
 For press inquiries, interviews, or media requests:
 
@@ -67,7 +85,13 @@ For press inquiries, interviews, or media requests:
 </div>
 </div>
 
-## Sponsorship & Donations
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hand-holding-heart"></i>
+<span>Support</span>
+</div>
+<h2 class="section-title">Sponsorship & Donations</h2>
+</div>
 
 Interested in supporting OSGeo financially:
 
@@ -86,7 +110,13 @@ Interested in supporting OSGeo financially:
 </div>
 </div>
 
-## Social Media
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-share-nodes"></i>
+<span>Social</span>
+</div>
+<h2 class="section-title">Social Media</h2>
+</div>
 
 Follow OSGeo on social media:
 
@@ -121,7 +151,13 @@ Follow OSGeo on social media:
 </div>
 </div>
 
-## Project-Specific Questions
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-cubes"></i>
+<span>Projects</span>
+</div>
+<h2 class="section-title">Project-Specific Questions</h2>
+</div>
 
 For questions about specific OSGeo projects, please contact them directly through their mailing lists or issue trackers.
 

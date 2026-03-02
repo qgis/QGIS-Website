@@ -17,9 +17,13 @@ sidebar: true
 Find answers to the most common questions about OSGeo, our projects, and how you can participate in the open source geospatial community.
 {{< box-end >}}
 
----
-
-## About OSGeo
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-circle-info"></i>
+<span>Foundation</span>
+</div>
+<h2 class="section-title">About OSGeo</h2>
+</div>
 
 {{< rich-box-start icon="fa-solid fa-circle-question" >}}
 ### What is OSGeo?
@@ -54,9 +58,13 @@ OSGeo is funded through:
 [Become a Sponsor](/sponsors/)
 {{< rich-box-end >}}
 
----
-
-## Using OSGeo Software
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-laptop"></i>
+<span>Software</span>
+</div>
+<h2 class="section-title">Using OSGeo Software</h2>
+</div>
 
 {{< rich-box-start icon="fa-solid fa-gift" >}}
 ### Is OSGeo software free?
@@ -113,9 +121,13 @@ Each project has its own bug tracker (typically on GitHub). Good bug reports inc
 </div>
 {{< rich-box-end >}}
 
----
-
-## Getting Involved
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hands-helping"></i>
+<span>Contribute</span>
+</div>
+<h2 class="section-title">Getting Involved</h2>
+</div>
 
 {{< rich-box-start icon="fa-solid fa-hands-helping" >}}
 ### How can I contribute?
@@ -171,9 +183,13 @@ Charter Members are individuals who have demonstrated **sustained and significan
 [About Membership](/membership/)
 {{< rich-box-end >}}
 
----
-
-## Projects & Governance
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-sitemap"></i>
+<span>Governance</span>
+</div>
+<h2 class="section-title">Projects & Governance</h2>
+</div>
 
 {{< rich-box-start icon="fa-solid fa-seedling" >}}
 ### How does a project join OSGeo?

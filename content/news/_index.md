@@ -15,7 +15,13 @@ sidebar: false
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Stay Connected
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rss"></i>
+<span>Updates</span>
+</div>
+<h2 class="section-title">Stay Connected</h2>
+</div>
 
 Get the latest news about OSGeo projects, events, and community activities. From major software releases to FOSS4G announcements, find everything happening in the open source geospatial world.
 
@@ -23,7 +29,13 @@ Get the latest news about OSGeo projects, events, and community activities. From
 
 ---
 
-## Recent Announcements
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-bullhorn"></i>
+<span>Latest</span>
+</div>
+<h2 class="section-title">Recent Announcements</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -102,7 +114,13 @@ Stay updated with our RSS feeds for news and announcements.
 
 ---
 
-## News Categories
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-folder"></i>
+<span>Categories</span>
+</div>
+<h2 class="section-title">News Categories</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -150,7 +168,13 @@ Official OSGeo press releases and media announcements.
 
 ---
 
-## Follow Us
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-share-nodes"></i>
+<span>Social</span>
+</div>
+<h2 class="section-title">Follow Us</h2>
+</div>
 
 Stay connected through our social channels:
 
@@ -186,7 +210,13 @@ Stay connected through our social channels:
 
 {{< box-start class="cta-section my-6" >}}
 
-## Never Miss an Update
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-bell"></i>
+<span>Subscribe</span>
+</div>
+<h2 class="section-title">Never Miss an Update</h2>
+</div>
 
 Subscribe to our mailing lists for the latest news and announcements.
 

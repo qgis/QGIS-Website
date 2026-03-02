@@ -18,7 +18,13 @@ OSGeo is committed to providing a safe and welcoming environment for all communi
 
 ---
 
-## How to Report
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-flag"></i>
+<span>Report</span>
+</div>
+<h2 class="section-title">How to Report</h2>
+</div>
 
 ### Email the Code of Conduct Committee
 
@@ -34,7 +40,13 @@ All reports are treated confidentially and reviewed by the committee.
 
 ---
 
-## What to Include
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-list"></i>
+<span>Details</span>
+</div>
+<h2 class="section-title">What to Include</h2>
+</div>
 
 When reporting an incident, please include:
 
@@ -47,7 +59,13 @@ When reporting an incident, please include:
 
 ---
 
-## What Happens Next
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-clipboard-list"></i>
+<span>Process</span>
+</div>
+<h2 class="section-title">What Happens Next</h2>
+</div>
 
 {{< rich-box-start icon="fa-solid fa-shield-halved" >}}
 ### Our Process
@@ -61,13 +79,25 @@ When reporting an incident, please include:
 
 ---
 
-## Confidentiality
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-lock"></i>
+<span>Privacy</span>
+</div>
+<h2 class="section-title">Confidentiality</h2>
+</div>
 
 All reports are treated with strict confidentiality. Information will only be shared with committee members involved in reviewing the report. We will protect reporter identities unless disclosure is required by law or with explicit permission.
 
 ---
 
-## Read the Code of Conduct
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-book"></i>
+<span>Read</span>
+</div>
+<h2 class="section-title">Read the Code of Conduct</h2>
+</div>
 
 [View Full Code of Conduct](/community/code-of-conduct/)
 

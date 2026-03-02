@@ -14,17 +14,31 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## About GSoC at OSGeo
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-sun"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">About GSoC at OSGeo</h2>
+</div>
 
 OSGeo has been a proud participant in [Google Summer of Code](https://summerofcode.withgoogle.com/) since 2007. This global program pairs student developers with mentors from open source organizations to work on real software projects during the summer months.
 
-Through GSoC, we have:
+{{< content-panel-start title="Our Impact" subtitle="Through GSoC, we have" icon="fa-solid fa-trophy" variant="featured checklist" >}}
 
 - **Graduated 180+ students** who have contributed to OSGeo projects
 - **Mentored contributors** who have become core developers
 - **Advanced open source geospatial** software through fresh perspectives
 
-## How It Works
+{{< content-panel-end >}}
+
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-route"></i>
+<span>Process</span>
+</div>
+<h2 class="section-title">How It Works</h2>
+</div>
 
 <div class="timeline">
 <div class="timeline-item">
@@ -61,7 +75,13 @@ Through GSoC, we have:
 </div>
 </div>
 
-## Participating Projects
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-cubes"></i>
+<span>Projects</span>
+</div>
+<h2 class="section-title">Participating Projects</h2>
+</div>
 
 Many OSGeo projects participate in GSoC, including:
 
@@ -104,77 +124,79 @@ Many OSGeo projects participate in GSoC, including:
 </div>
 </div>
 
-## For Students
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-user-graduate"></i>
+<span>Students</span>
+</div>
+<h2 class="section-title">For Students</h2>
+</div>
 
-Interested in participating? Here's how to get started:
+{{< content-panel-start title="Getting Started" subtitle="How to participate" icon="fa-solid fa-shoe-prints" variant="cyan steps" >}}
 
 1. **Explore our projects** - Browse the [OSGeo project list](/projects/) and find one that interests you
 2. **Join the community** - Subscribe to project mailing lists and introduce yourself
 3. **Start contributing** - Fix bugs, improve documentation, or add small features
 4. **Prepare your proposal** - Work with mentors to develop a strong project proposal
 
+{{< content-panel-end >}}
+
 <div class="notification is-info is-light">
 <strong>Pro Tip:</strong> Students who engage with the community before the application period have a much higher success rate!
 </div>
 
-## For Mentors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-chalkboard-teacher"></i>
+<span>Mentors</span>
+</div>
+<h2 class="section-title">For Mentors</h2>
+</div>
 
 Are you an OSGeo project contributor interested in mentoring? We need experienced developers to guide students through their projects.
 
-### What Mentors Do
+{{< content-panel-start title="What Mentors Do" subtitle="Guide the next generation" icon="fa-solid fa-user-tie" variant="amber checklist" >}}
 
 - Help students understand the codebase
 - Provide regular feedback and guidance
 - Review code and suggest improvements
 - Evaluate student progress
 
-[Volunteer as a Mentor](https://wiki.osgeo.org/wiki/Google_Summer_of_Code){.button .is-osgeo-primary .is-medium}
+{{< content-panel-end button-text="Volunteer as a Mentor" button-link="https://wiki.osgeo.org/wiki/Google_Summer_of_Code" >}}
 
 {{< column-end >}}
 {{< column-start class="is-4" >}}
 
-{{< box-start classes="has-background-light" >}}
-### Quick Facts
+{{< content-panel-start title="Quick Facts" icon="fa-solid fa-chart-simple" variant="compact teal" >}}
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-calendar"></i></span>
-<span><strong>Participating Since:</strong> 2007</span>
-</div>
+**Participating Since:** 2007
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-user-graduate"></i></span>
-<span><strong>Students Graduated:</strong> 180+</span>
-</div>
+**Students Graduated:** 180+
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-code"></i></span>
-<span><strong>Projects:</strong> 15+ participating</span>
-</div>
+**Projects:** 15+ participating
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-earth-americas"></i></span>
-<span><strong>Students From:</strong> 50+ countries</span>
-</div>
-{{< box-end >}}
+**Students From:** 50+ countries
 
-{{< box-start classes="has-background-osgeo-light mt-4" >}}
-### Important Links
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Important Links" icon="fa-solid fa-link" variant="compact featured" >}}
 
 - [GSoC Ideas Page](https://wiki.osgeo.org/wiki/Google_Summer_of_Code_Ideas)
 - [Student Guidelines](https://wiki.osgeo.org/wiki/Google_Summer_of_Code_Student_Guidelines)
 - [Mentor Guidelines](https://wiki.osgeo.org/wiki/Google_Summer_of_Code_Mentor_Guidelines)
 - [Past Projects](https://wiki.osgeo.org/wiki/Google_Summer_of_Code_Past_Projects)
-{{< box-end >}}
 
-{{< box-start classes="has-background-white mt-4" >}}
-### Timeline 2025
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Timeline 2025" icon="fa-solid fa-calendar-days" variant="compact amber" >}}
 
 - **Feb 21**: Org applications open
 - **Mar 5**: Accepted orgs announced
 - **Mar 24 - Apr 8**: Student applications
 - **May 1**: Accepted students announced
 - **May 26 - Aug 25**: Coding period
-{{< box-end >}}
+
+{{< content-panel-end >}}
 
 {{< column-end >}}
 {{< columns-end >}}

@@ -13,7 +13,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## OSGeo Mailing Lists
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-envelope"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">OSGeo Mailing Lists</h2>
+</div>
 
 Mailing lists are the primary way the OSGeo community communicates. They're used for:
 
@@ -22,7 +28,13 @@ Mailing lists are the primary way the OSGeo community communicates. They're used
 - **Announcing releases** and important news
 - **Coordinating contributions** and activities
 
-## General OSGeo Lists
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-globe"></i>
+<span>General</span>
+</div>
+<h2 class="section-title">General OSGeo Lists</h2>
+</div>
 
 These lists cover the OSGeo organization and general topics:
 
@@ -32,7 +44,13 @@ These lists cover the OSGeo organization and general topics:
 | **OSGeo-Board** | Board meeting announcements (read-only) | [Subscribe](https://lists.osgeo.org/mailman/listinfo/board) |
 | **OSGeo-Marketing** | Marketing and outreach coordination | [Subscribe](https://lists.osgeo.org/mailman/listinfo/marketing) |
 
-## Project-Specific Lists
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-cubes"></i>
+<span>Projects</span>
+</div>
+<h2 class="section-title">Project-Specific Lists</h2>
+</div>
 
 Each OSGeo project maintains its own mailing lists:
 
@@ -71,7 +89,13 @@ Each OSGeo project maintains its own mailing lists:
 | **OpenLayers-Users** | User questions and discussion | [Subscribe](https://lists.osgeo.org/mailman/listinfo/openlayers-users) |
 | **OpenLayers-Dev** | Development discussion | [Subscribe](https://lists.osgeo.org/mailman/listinfo/openlayers-dev) |
 
-## Regional Lists
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-map-location-dot"></i>
+<span>Regional</span>
+</div>
+<h2 class="section-title">Regional Lists</h2>
+</div>
 
 Connect with geospatial communities in your region:
 
@@ -81,7 +105,13 @@ Connect with geospatial communities in your region:
 | **OSGeo-Asia** | Asia | [Subscribe](https://lists.osgeo.org/mailman/listinfo/asia) |
 | **OSGeo-Oceania** | Australia & Pacific | [Subscribe](https://lists.osgeo.org/mailman/listinfo/oceania) |
 
-## Mailing List Etiquette
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-heart"></i>
+<span>Guidelines</span>
+</div>
+<h2 class="section-title">Mailing List Etiquette</h2>
+</div>
 
 To get the most from mailing lists:
 

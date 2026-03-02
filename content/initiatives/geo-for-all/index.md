@@ -14,19 +14,39 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Our Mission
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-bullseye"></i>
+<span>Mission</span>
+</div>
+<h2 class="section-title">Our Mission</h2>
+</div>
 
 "Geo for All" is the Open Source Geospatial Foundation's Committee for Educational outreach. We work in close collaboration with ICA, ISPRS, UN-GIS, AGILE, UCGIS, IGU and other partners worldwide in our mission for making geospatial education and opportunities accessible to all.
 
+{{< content-panel-start title="Our Core Belief" subtitle="Knowledge is a public good" icon="fa-solid fa-lightbulb" variant="featured" >}}
+
 Central to the "Geo for All" mission is the belief that **knowledge is a public good** and Open Principles in Education will provide great opportunities for everyone.
 
-Though the members of our community hail from many different backgrounds, we all seek to:
+**Though the members of our community hail from many different backgrounds, we all seek to:**
+
+{{< content-panel-end >}}
+
+{{< content-panel-start variant="teal checklist" >}}
 
 - **Eliminate the digital divide** in geospatial education
 - **Empower all people** as full citizens in the digital age
 - **Build Open Knowledge** for the benefit of society and future generations
 
-## Global Lab Network
+{{< content-panel-end >}}
+
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-globe"></i>
+<span>Network</span>
+</div>
+<h2 class="section-title">Global Lab Network</h2>
+</div>
 
 The Geo for All initiative has established a worldwide network of **100+ Open Source Geospatial Labs** at universities and research institutions. These labs provide:
 
@@ -69,9 +89,15 @@ The Geo for All initiative has established a worldwide network of **100+ Open So
 </div>
 </div>
 
-## Regional Chapters
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-map-location-dot"></i>
+<span>Regional</span>
+</div>
+<h2 class="section-title">Regional Chapters</h2>
+</div>
 
-Geo for All operates through regional chapters around the world:
+{{< content-panel-start title="Worldwide Presence" subtitle="Geo for All operates through regional chapters around the world" icon="fa-solid fa-earth-americas" variant="cyan checklist" >}}
 
 - **Africa** - Growing network across the continent
 - **Asia & Australia** - Strong presence in universities
@@ -79,63 +105,76 @@ Geo for All operates through regional chapters around the world:
 - **Ibero America** - Spanish and Portuguese speaking regions
 - **North America** - Labs across USA and Canada
 
-## Join the Network
+{{< content-panel-end >}}
+
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-user-plus"></i>
+<span>Join</span>
+</div>
+<h2 class="section-title">Join the Network</h2>
+</div>
+
+{{< content-panel-start title="Establish a Lab" subtitle="Join our global network of open source geospatial labs" icon="fa-solid fa-building-columns" variant="featured" >}}
 
 Are you part of an educational institution interested in establishing a Geo for All lab? We welcome new members who share our commitment to open education.
 
-### Requirements
+**Requirements:**
+
+{{< content-panel-end >}}
+
+{{< content-panel-start variant="amber checklist" >}}
 
 - Commitment to open source principles
 - Educational institution or research organization
 - Willingness to contribute to the community
 - Support from institution leadership
 
-[Apply to Join](https://wiki.osgeo.org/wiki/Geo_for_All){.button .is-osgeo-primary .is-medium}
+{{< content-panel-end button-text="Apply to Join" button-link="https://wiki.osgeo.org/wiki/Geo_for_All" >}}
 
-## Newsletter
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-envelope"></i>
+<span>Updates</span>
+</div>
+<h2 class="section-title">Newsletter</h2>
+</div>
+
+{{< content-panel-start title="Stay Connected" subtitle="Get the latest news and updates" icon="fa-solid fa-newspaper" variant="teal" >}}
 
 Stay informed about Geo for All activities, events, and opportunities through our newsletter. Join our global mailing list to receive updates.
 
-[Subscribe to Newsletter](/community/mailing-lists/){.button .is-osgeo-secondary .is-medium}
+{{< content-panel-end button-text="Subscribe to Newsletter" button-link="/community/mailing-lists/" button-class="is-osgeo-secondary" >}}
 
 {{< column-end >}}
 {{< column-start class="is-4" >}}
 
-{{< box-start classes="has-background-light" >}}
-### Quick Facts
+{{< content-panel-start title="Quick Facts" icon="fa-solid fa-chart-simple" variant="compact teal" >}}
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-building-columns"></i></span>
-<span><strong>Labs:</strong> 100+ worldwide</span>
-</div>
+**Labs:** 100+ worldwide
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-earth-americas"></i></span>
-<span><strong>Regions:</strong> 5 continents</span>
-</div>
+**Regions:** 5 continents
 
-<div class="icon-text mb-3">
-<span class="icon has-text-success"><i class="fa-solid fa-handshake"></i></span>
-<span><strong>Partners:</strong> ICA, ISPRS, UN-GIS, AGILE, UCGIS, IGU</span>
-</div>
-{{< box-end >}}
+**Partners:** ICA, ISPRS, UN-GIS, AGILE, UCGIS, IGU
 
-{{< box-start classes="has-background-osgeo-light mt-4" >}}
-### Advisory Board
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Advisory Board" icon="fa-solid fa-users" variant="compact featured" >}}
 
 The Geo for All initiative is guided by an advisory board of distinguished educators and researchers from around the world.
 
 [View Advisory Board](https://wiki.osgeo.org/wiki/Geo_for_All)
-{{< box-end >}}
 
-{{< box-start classes="has-background-white mt-4" >}}
-### Resources
+{{< content-panel-end >}}
+
+{{< content-panel-start title="Resources" icon="fa-solid fa-book-open" variant="compact amber" >}}
 
 - [Lab Directory](https://wiki.osgeo.org/wiki/Geo_for_All_Listing)
 - [Teaching Materials](https://wiki.osgeo.org/wiki/Educational_Content)
 - [Newsletter Archive](/initiatives/geo-for-all/newsletters/)
 - [Wiki Documentation](https://wiki.osgeo.org/wiki/Geo_for_All)
-{{< box-end >}}
+
+{{< content-panel-end >}}
 
 {{< column-end >}}
 {{< columns-end >}}

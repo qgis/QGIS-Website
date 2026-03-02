@@ -15,7 +15,13 @@ sidebar: false
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Supporting Open Source Geospatial
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-heart"></i>
+<span>Mission</span>
+</div>
+<h2 class="section-title">Supporting Open Source Geospatial</h2>
+</div>
 
 OSGeo sponsors make our mission possible. Their financial support funds infrastructure, events, education initiatives, and community building efforts that benefit millions of users worldwide.
 
@@ -23,7 +29,13 @@ OSGeo sponsors make our mission possible. Their financial support funds infrastr
 
 ---
 
-## Diamond Sponsors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-gem"></i>
+<span>Diamond</span>
+</div>
+<h2 class="section-title">Diamond Sponsors</h2>
+</div>
 
 Our highest-tier sponsors demonstrate exceptional commitment to open source geospatial technology.
 
@@ -53,7 +65,13 @@ Spatial data infrastructure experts. Publishers of GeoNetwork and Bridge for Arc
 
 ---
 
-## Gold Sponsors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-medal"></i>
+<span>Gold</span>
+</div>
+<h2 class="section-title">Gold Sponsors</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -91,7 +109,13 @@ GIS and database experts in Bonn, Germany, providing open source geospatial solu
 
 ---
 
-## Silver Sponsors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-award"></i>
+<span>Silver</span>
+</div>
+<h2 class="section-title">Silver Sponsors</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -147,13 +171,25 @@ Enterprise-grade geospatial infrastructure and consulting.
 
 ---
 
-## Bronze Sponsors
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-certificate"></i>
+<span>Bronze</span>
+</div>
+<h2 class="section-title">Bronze Sponsors</h2>
+</div>
 
 We also thank our Bronze sponsors for their valuable support of the open source geospatial community.
 
 ---
 
-## Sponsorship Benefits
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-gift"></i>
+<span>Benefits</span>
+</div>
+<h2 class="section-title">Sponsorship Benefits</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -210,7 +246,13 @@ We also thank our Bronze sponsors for their valuable support of the open source 
 
 ---
 
-## Why Sponsor OSGeo?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-question"></i>
+<span>Why</span>
+</div>
+<h2 class="section-title">Why Sponsor OSGeo?</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -242,7 +284,13 @@ Build relationships with key players in the open source geospatial ecosystem and
 
 ---
 
-## Where Sponsorship Funds Go
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-coins"></i>
+<span>Funds</span>
+</div>
+<h2 class="section-title">Where Sponsorship Funds Go</h2>
+</div>
 
 {{< box-start class="is-light2 p-5" >}}
 
@@ -288,7 +336,13 @@ FOSS4G and regional conferences worldwide
 
 {{< box-start class="cta-section my-6" >}}
 
-## Become a Sponsor
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-handshake"></i>
+<span>Join</span>
+</div>
+<h2 class="section-title">Become a Sponsor</h2>
+</div>
 
 Join these organizations in supporting open source geospatial technology.
 

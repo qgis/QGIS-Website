@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1920px" height="900px" viewBox="0 0 1920 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>OSGeo Compass Wide</title>
-    <desc>Wide triangular brand element for OSGeo</desc>
-    <defs></defs>
-    <g id="compass-wide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <!-- Small dark teal triangle on left edge -->
-        <polygon id="teal-accent" fill="#00383F" points="0 0 0 900 200 900"></polygon>
-        <!-- Large green triangle sweeping across -->
-        <polygon id="green-main" fill="#4CAF5B" points="0 0 960 900 1920 900"></polygon>
+<svg width="1920px" height="1080px" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>OSGeo Diagonal Sliver</title>
+    <desc>Subtle diagonal gradient overlay matching osgeo.org design</desc>
+    <defs>
+        <linearGradient id="diagonalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:rgba(0,102,112,0.4);stop-opacity:1" />
+            <stop offset="40%" style="stop-color:rgba(0,102,112,0.15);stop-opacity:1" />
+            <stop offset="100%" style="stop-color:rgba(0,102,112,0);stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <g id="diagonal-sliver" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Subtle diagonal gradient sweep from top-left -->
+        <polygon fill="url(#diagonalGradient)" points="0 0 1920 0 1920 1080 0 1080"></polygon>
     </g>
 </svg>

@@ -16,7 +16,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## What are Community Projects?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-seedling"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">What are Community Projects?</h2>
+</div>
 
 Community Projects are open source geospatial software that has joined the OSGeo ecosystem but has not yet completed the full incubation process. These projects benefit from:
 
@@ -27,7 +33,13 @@ Community Projects are open source geospatial software that has joined the OSGeo
 
 Community projects may be working toward full OSGeo project status through incubation, or may be associated projects that benefit from the OSGeo umbrella without seeking full graduation.
 
-## Current Community Projects
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-cubes"></i>
+<span>Projects</span>
+</div>
+<h2 class="section-title">Current Community Projects</h2>
+</div>
 
 The OSGeo community ecosystem includes a diverse range of projects at various stages of development:
 
@@ -57,36 +69,104 @@ The OSGeo community ecosystem includes a diverse range of projects at various st
 
 </div>
 
-## The Path to Full Project Status
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-stairs"></i>
+<span>Path</span>
+</div>
+<h2 class="section-title">The Path to Full Project Status</h2>
+</div>
 
 Community projects interested in becoming full OSGeo projects can apply for incubation. The incubation process evaluates:
 
-### Open Source Requirements
-- OSI-approved open source license
-- All dependencies must be license-compatible
-- Clear intellectual property ownership
+<div class="timeline is-centered mt-5">
 
-### Community Health
-- Open and welcoming community
-- Multiple active contributors
-- Responsive to users and contributors
-- Clear contribution guidelines
+<div class="timeline-header">
+<span class="tag is-medium is-osgeo-primary">Start</span>
+</div>
 
-### Technical Standards
-- Version control (typically Git)
-- Issue tracking system
-- Documentation (user and developer)
-- Quality assurance practices
-- Regular releases
+<div class="timeline-item is-success">
+<div class="timeline-marker is-success is-icon">
+<i class="fa fa-certificate"></i>
+</div>
+<div class="timeline-content">
+<p class="heading has-text-weight-bold">Open Source Requirements</p>
+<div class="content">
+<ul>
+<li>OSI-approved open source license</li>
+<li>All dependencies must be license-compatible</li>
+<li>Clear intellectual property ownership</li>
+</ul>
+</div>
+</div>
+</div>
 
-### Governance
-- Transparent decision-making
-- Project steering committee or equivalent
-- Code of conduct adoption
+<div class="timeline-item is-info">
+<div class="timeline-marker is-info is-icon">
+<i class="fa fa-users"></i>
+</div>
+<div class="timeline-content">
+<p class="heading has-text-weight-bold">Community Health</p>
+<div class="content">
+<ul>
+<li>Open and welcoming community</li>
+<li>Multiple active contributors</li>
+<li>Responsive to users and contributors</li>
+<li>Clear contribution guidelines</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="timeline-item is-warning">
+<div class="timeline-marker is-warning is-icon">
+<i class="fa fa-cogs"></i>
+</div>
+<div class="timeline-content">
+<p class="heading has-text-weight-bold">Technical Standards</p>
+<div class="content">
+<ul>
+<li>Version control (typically Git)</li>
+<li>Issue tracking system</li>
+<li>Documentation (user and developer)</li>
+<li>Quality assurance practices</li>
+<li>Regular releases</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="timeline-item is-primary">
+<div class="timeline-marker is-primary is-icon">
+<i class="fa fa-landmark"></i>
+</div>
+<div class="timeline-content">
+<p class="heading has-text-weight-bold">Governance</p>
+<div class="content">
+<ul>
+<li>Transparent decision-making</li>
+<li>Project steering committee or equivalent</li>
+<li>Code of conduct adoption</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div class="timeline-header">
+<span class="tag is-medium is-success">OSGeo Project</span>
+</div>
+
+</div>
 
 ---
 
-## Featured Community Projects
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-star"></i>
+<span>Featured</span>
+</div>
+<h2 class="section-title">Featured Community Projects</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -146,60 +226,116 @@ A specification for storing geospatial vector data in Apache Parquet.
 
 ---
 
-## Submit Your Project
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-paper-plane"></i>
+<span>Submit</span>
+</div>
+<h2 class="section-title">Submit Your Project</h2>
+</div>
 
-Have an open source geospatial project that would benefit from OSGeo association? We welcome new community projects.
+<p class="is-size-5 mb-5">Have an open source geospatial project that would benefit from OSGeo association? We welcome new community projects.</p>
 
-### Requirements
+<div class="content-panel-grid">
 
-- Open source license (OSI-approved)
-- Geospatial focus
-- Active development community
-- Alignment with OSGeo mission
+<div class="content-panel is-featured">
+<div class="content-panel-header">
+<div class="content-panel-icon">
+<i class="fa-solid fa-clipboard-check"></i>
+</div>
+<div>
+<h4 class="content-panel-title">Requirements</h4>
+<p class="content-panel-subtitle">What you need to join</p>
+</div>
+</div>
+<div class="content-panel-body">
+<ul class="checklist">
+<li>Open source license (OSI-approved)</li>
+<li>Geospatial focus</li>
+<li>Active development community</li>
+<li>Alignment with OSGeo mission</li>
+</ul>
+</div>
+</div>
 
-### Process
+<div class="content-panel is-cyan">
+<div class="content-panel-header">
+<div class="content-panel-icon">
+<i class="fa-solid fa-route"></i>
+</div>
+<div>
+<h4 class="content-panel-title">Process</h4>
+<p class="content-panel-subtitle">Steps to get started</p>
+</div>
+</div>
+<div class="content-panel-body">
+<ol class="numbered-steps">
+<li>Review the community project guidelines</li>
+<li>Submit an application to the OSGeo Board</li>
+<li>Discuss your project with the community</li>
+<li>Receive approval and onboarding</li>
+</ol>
+</div>
+<div class="content-panel-footer">
+<a href="/about/incubation/" class="button is-osgeo-primary">Apply to Join OSGeo</a>
+</div>
+</div>
 
-1. Review the community project guidelines
-2. Submit an application to the OSGeo Board
-3. Discuss your project with the community
-4. Receive approval and onboarding
-
-[Apply to Join OSGeo](/about/incubation/){.button .is-osgeo-primary .is-medium}
+</div>
 
 {{< column-end >}}
 {{< column-start class="is-4" >}}
 
-{{< box-start classes="has-background-osgeo-light" >}}
-### Project Status Levels
+<div class="content-panel is-compact is-teal mb-4">
+<div class="content-panel-header">
+<div class="content-panel-icon">
+<i class="fa-solid fa-layer-group"></i>
+</div>
+<div>
+<h4 class="content-panel-title">Project Status Levels</h4>
+</div>
+</div>
+<div class="content-panel-body">
+<p><strong>OSGeo Project</strong><br>Fully graduated, meets all incubation criteria</p>
+<p><strong>Incubating Project</strong><br>Actively working toward graduation</p>
+<p><strong>Community Project</strong><br>Associated with OSGeo ecosystem</p>
+</div>
+</div>
 
-**OSGeo Project**
-Fully graduated, meets all incubation criteria
+<div class="content-panel is-compact mb-4">
+<div class="content-panel-header">
+<div class="content-panel-icon">
+<i class="fa-solid fa-book-open"></i>
+</div>
+<div>
+<h4 class="content-panel-title">Resources</h4>
+</div>
+</div>
+<div class="content-panel-body">
+<ul>
+<li><a href="/about/incubation/">Incubation Process</a></li>
+<li><a href="https://wiki.osgeo.org/wiki/Project_Checklist">Project Checklist</a></li>
+<li><a href="/projects/">All OSGeo Projects</a></li>
+<li><a href="https://wiki.osgeo.org/wiki/Project_Status">Project Status Wiki</a></li>
+</ul>
+</div>
+</div>
 
-**Incubating Project**
-Actively working toward graduation
-
-**Community Project**
-Associated with OSGeo ecosystem
-{{< box-end >}}
-
-{{< box-start classes="has-background-light mt-4" >}}
-### Resources
-
-- [Incubation Process](/about/incubation/)
-- [Project Checklist](https://wiki.osgeo.org/wiki/Project_Checklist)
-- [All OSGeo Projects](/projects/)
-- [Project Status Wiki](https://wiki.osgeo.org/wiki/Project_Status)
-{{< box-end >}}
-
-{{< box-start classes="has-background-white mt-4" >}}
-### Get Help
-
-Questions about community projects or incubation?
-
-[Incubation Committee](https://wiki.osgeo.org/wiki/Incubation_Committee)
-
-[Contact OSGeo](/about/contact/)
-{{< box-end >}}
+<div class="content-panel is-compact is-amber">
+<div class="content-panel-header">
+<div class="content-panel-icon">
+<i class="fa-solid fa-circle-question"></i>
+</div>
+<div>
+<h4 class="content-panel-title">Get Help</h4>
+</div>
+</div>
+<div class="content-panel-body">
+<p>Questions about community projects or incubation?</p>
+<p><a href="https://wiki.osgeo.org/wiki/Incubation_Committee">Incubation Committee</a></p>
+<p><a href="/about/contact/">Contact OSGeo</a></p>
+</div>
+</div>
 
 {{< column-end >}}
 {{< columns-end >}}

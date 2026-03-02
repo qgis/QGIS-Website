@@ -16,7 +16,13 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## What is a Charter Member?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-user-shield"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">What is a Charter Member?</h2>
+</div>
 
 Charter Members are individuals who have demonstrated sustained and significant contributions to the OSGeo community. Charter membership is the highest form of individual recognition within OSGeo and comes with important governance responsibilities.
 
@@ -28,7 +34,13 @@ Charter Members are the heart of OSGeo's democratic governance structure. They:
 - **Represent** OSGeo at conferences and events
 - **Mentor** new community members
 
-## Becoming a Charter Member
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-road"></i>
+<span>Path</span>
+</div>
+<h2 class="section-title">Becoming a Charter Member</h2>
+</div>
 
 Charter membership is **earned through contribution**, not purchased or applied for directly. The path to charter membership typically involves years of sustained contribution to the OSGeo community.
 
@@ -102,7 +114,13 @@ Charter Member elections typically take place annually alongside board elections
 
 ---
 
-## Charter Member Responsibilities
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-clipboard-check"></i>
+<span>Duties</span>
+</div>
+<h2 class="section-title">Charter Member Responsibilities</h2>
+</div>
 
 ### Voting
 
@@ -125,7 +143,13 @@ Charter Members are expected to:
 
 ---
 
-## Current Charter Members
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-users"></i>
+<span>Members</span>
+</div>
+<h2 class="section-title">Current Charter Members</h2>
+</div>
 
 OSGeo has over 300 Charter Members from around the world, representing diverse backgrounds, projects, and regions.
 
@@ -177,7 +201,13 @@ The complete list of Charter Members is maintained on the OSGeo wiki:
 
 ---
 
-## Emeritus Members
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-award"></i>
+<span>Emeritus</span>
+</div>
+<h2 class="section-title">Emeritus Members</h2>
+</div>
 
 Charter Members who are no longer actively contributing may be designated as Emeritus Members. Emeritus status recognizes past contributions while keeping the active voting membership current.
 
@@ -188,7 +218,13 @@ Emeritus Members:
 
 ---
 
-## Start Your Journey
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-flag-checkered"></i>
+<span>Join</span>
+</div>
+<h2 class="section-title">Start Your Journey</h2>
+</div>
 
 Interested in becoming a Charter Member someday? Start contributing to the OSGeo community today!
 

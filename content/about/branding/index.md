@@ -13,11 +13,23 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## OSGeo Brand Identity
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-palette"></i>
+<span>Identity</span>
+</div>
+<h2 class="section-title">OSGeo Brand Identity</h2>
+</div>
 
 The OSGeo brand represents our commitment to open source geospatial software. These guidelines ensure consistent use of our identity across all contexts.
 
-## Logo
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-image"></i>
+<span>Logo</span>
+</div>
+<h2 class="section-title">Logo</h2>
+</div>
 
 The OSGeo logo features a compass rose design symbolizing geographic orientation and navigation.
 
@@ -63,7 +75,13 @@ The OSGeo logo features a compass rose design symbolizing geographic orientation
 </div>
 </div>
 
-## Color Palette
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-swatchbook"></i>
+<span>Colors</span>
+</div>
+<h2 class="section-title">Color Palette</h2>
+</div>
 
 ### Primary Colors
 
@@ -117,7 +135,13 @@ The OSGeo logo features a compass rose design symbolizing geographic orientation
 </div>
 </div>
 
-## Typography
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-font"></i>
+<span>Type</span>
+</div>
+<h2 class="section-title">Typography</h2>
+</div>
 
 OSGeo uses clean, readable typefaces:
 
@@ -125,7 +149,13 @@ OSGeo uses clean, readable typefaces:
 - **Body**: System fonts for optimal readability
 - **Code**: Monospace fonts
 
-## Downloads
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-download"></i>
+<span>Assets</span>
+</div>
+<h2 class="section-title">Downloads</h2>
+</div>
 
 Download official brand assets:
 

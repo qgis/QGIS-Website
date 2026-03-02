@@ -15,13 +15,25 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Open Source Geospatial Education
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-graduation-cap"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">Open Source Geospatial Education</h2>
+</div>
 
 OSGeo supports geospatial education worldwide through multiple initiatives, resources, and partnerships.
 
 ---
 
-## Geo for All
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-earth-americas"></i>
+<span>Initiative</span>
+</div>
+<h2 class="section-title">Geo for All</h2>
+</div>
 
 OSGeo's flagship educational initiative, Geo for All, promotes open geospatial education through a global network of university labs.
 
@@ -37,7 +49,13 @@ Over 100 Geo for All labs at universities worldwide provide:
 
 ---
 
-## Learning Resources
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-book-open"></i>
+<span>Learn</span>
+</div>
+<h2 class="section-title">Learning Resources</h2>
+</div>
 
 ### Official Documentation
 
@@ -65,7 +83,13 @@ Many universities and organizations offer courses using OSGeo software:
 
 ---
 
-## Workshops and Training
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-chalkboard-teacher"></i>
+<span>Training</span>
+</div>
+<h2 class="section-title">Workshops and Training</h2>
+</div>
 
 ### FOSS4G Workshops
 
@@ -85,7 +109,13 @@ Many OSGeo local chapters organize training events and workshops in their region
 
 ---
 
-## Contribute to Education
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hands-helping"></i>
+<span>Contribute</span>
+</div>
+<h2 class="section-title">Contribute to Education</h2>
+</div>
 
 Help expand open geospatial education:
 

@@ -17,8 +17,9 @@ SupportedOS: ""
 LabelText: "Open Source Geospatial Foundation"
 ---
 
-<section class="interstitial-section is-gradient-earth">
+<section class="interstitial-section is-gradient-earth has-sliver">
 <div class="interstitial-bg"></div>
+<div class="diagonal-sliver"></div>
 <div class="container">
 
 <div class="interstitial-header">
@@ -184,8 +185,9 @@ Powers interactive maps across millions of websites. The go-to JavaScript librar
     button1-class="is-osgeo-cta"
 >}}
 
-<section class="interstitial-section is-gradient-ocean">
-<div class="interstitial-bg is-animated"></div>
+<section class="interstitial-section is-gradient-ocean has-sliver">
+<div class="interstitial-bg"></div>
+<div class="diagonal-sliver"></div>
 <div class="container">
 
 <div class="interstitial-header is-light">
@@ -314,9 +316,14 @@ Find professional support from certified consultants and service providers world
     button2-link="/membership/"
 >}}
 
-## Our Sponsors
-
-OSGeo is supported by organizations committed to open source geospatial technology.
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-handshake"></i>
+<span>Partners</span>
+</div>
+<h2 class="section-title">Our Sponsors</h2>
+<p class="section-subtitle">OSGeo is supported by organizations committed to open source geospatial technology.</p>
+</div>
 
 {{< funders-simple >}}
 

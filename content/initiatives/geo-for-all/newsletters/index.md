@@ -19,7 +19,13 @@ Stay informed about the latest developments in open source geospatial education 
 
 ---
 
-## Newsletter Archives
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-archive"></i>
+<span>Archives</span>
+</div>
+<h2 class="section-title">Newsletter Archives</h2>
+</div>
 
 Geo for All newsletters are published periodically to share news about:
 
@@ -37,7 +43,13 @@ All past newsletters are available on the OSGeo wiki:
 
 ---
 
-## Subscribe
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-envelope"></i>
+<span>Subscribe</span>
+</div>
+<h2 class="section-title">Subscribe</h2>
+</div>
 
 To receive future newsletters and updates:
 

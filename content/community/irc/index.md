@@ -13,11 +13,23 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## Real-Time Chat
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-comments"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">Real-Time Chat</h2>
+</div>
 
 While mailing lists are great for discussions that don't require immediate response, sometimes you need real-time help or just want to chat with the community. OSGeo projects use several chat platforms.
 
-## IRC on Libera.Chat
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hashtag"></i>
+<span>IRC</span>
+</div>
+<h2 class="section-title">IRC on Libera.Chat</h2>
+</div>
 
 Many OSGeo projects have IRC channels on [Libera.Chat](https://libera.chat/).
 
@@ -40,7 +52,13 @@ Many OSGeo projects have IRC channels on [Libera.Chat](https://libera.chat/).
 | `#openlayers` | OpenLayers |
 | `#mapserver` | MapServer |
 
-## Matrix
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-network-wired"></i>
+<span>Matrix</span>
+</div>
+<h2 class="section-title">Matrix</h2>
+</div>
 
 Matrix is a modern, federated chat protocol. Many IRC channels are bridged to Matrix, so you can use either.
 
@@ -54,7 +72,13 @@ Matrix is a modern, federated chat protocol. Many IRC channels are bridged to Ma
 <strong>Tip:</strong> Matrix rooms bridged to IRC show messages from both platforms, so you can participate from either.
 </div>
 
-## Project-Specific Platforms
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-cubes"></i>
+<span>Other</span>
+</div>
+<h2 class="section-title">Project-Specific Platforms</h2>
+</div>
 
 Some projects use additional platforms:
 
@@ -68,7 +92,13 @@ Some projects use additional platforms:
 ### Gitter
 - Some projects have Gitter channels (now part of Matrix)
 
-## Chat Etiquette
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-heart"></i>
+<span>Guidelines</span>
+</div>
+<h2 class="section-title">Chat Etiquette</h2>
+</div>
 
 <div class="box has-background-light">
 <h4>Tips for Getting Help</h4>
@@ -82,7 +112,13 @@ Some projects use additional platforms:
 </ul>
 </div>
 
-## Getting Started
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rocket"></i>
+<span>Start</span>
+</div>
+<h2 class="section-title">Getting Started</h2>
+</div>
 
 For most users, we recommend:
 

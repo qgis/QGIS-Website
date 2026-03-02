@@ -18,7 +18,13 @@ OSGeo works with United Nations organizations to promote the adoption of open so
 
 ---
 
-## About the Initiative
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-globe"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">About the Initiative</h2>
+</div>
 
 The UN Open Source Initiative supports the United Nations' adoption of open source geospatial software and open standards. We work with:
 
@@ -28,7 +34,13 @@ The UN Open Source Initiative supports the United Nations' adoption of open sour
 
 ---
 
-## Focus Areas
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-bullseye"></i>
+<span>Focus</span>
+</div>
+<h2 class="section-title">Focus Areas</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -72,7 +84,13 @@ Promoting OGC and ISO standards in UN systems.
 
 ---
 
-## Activities
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-list-check"></i>
+<span>Activities</span>
+</div>
+<h2 class="section-title">Activities</h2>
+</div>
 
 - **Workshops** at UN events and conferences
 - **Technical guidance** on open source adoption
@@ -81,7 +99,13 @@ Promoting OGC and ISO standards in UN systems.
 
 ---
 
-## Learn More
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-circle-info"></i>
+<span>Info</span>
+</div>
+<h2 class="section-title">Learn More</h2>
+</div>
 
 [UN Committee Wiki](https://wiki.osgeo.org/wiki/UN_Committee){.button .is-osgeo-secondary}
 

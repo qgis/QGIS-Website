@@ -15,7 +15,13 @@ LabelText: "Est. February 2006"
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Our Vision
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-eye"></i>
+<span>Vision</span>
+</div>
+<h2 class="section-title">Our Vision</h2>
+</div>
 
 **Empower everyone with open source geospatial.**
 
@@ -23,9 +29,13 @@ We believe that geographic data and the tools to work with it should be accessib
 
 {{< box-end >}}
 
----
-
-## Our Mission
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-bullseye"></i>
+<span>Mission</span>
+</div>
+<h2 class="section-title">Our Mission</h2>
+</div>
 
 The Open Source Geospatial Foundation (OSGeo) is a **not-for-profit organization** whose mission is to foster global adoption of open geospatial technology by being an inclusive software foundation devoted to an open philosophy and participatory community-driven development.
 
@@ -35,9 +45,13 @@ We serve as:
 - **An advocacy organization** promoting open source geospatial software and open standards
 - **A community catalyst** fostering cooperation among projects and users worldwide
 
----
-
-## What We Do
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-gears"></i>
+<span>Activities</span>
+</div>
+<h2 class="section-title">What We Do</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -87,9 +101,13 @@ We connect developers, users, and advocates through local chapters, mailing list
 
 {{< columns-end >}}
 
----
-
-## Our History
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-clock-rotate-left"></i>
+<span>History</span>
+</div>
+<h2 class="section-title">Our History</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -122,9 +140,13 @@ In 2026, we celebrate two decades of fostering open source geospatial technology
 
 {{< columns-end >}}
 
----
-
-## Governance
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-landmark"></i>
+<span>Leadership</span>
+</div>
+<h2 class="section-title">Governance</h2>
+</div>
 
 OSGeo is governed by a **Board of Directors** elected by our Charter Members. The board sets the strategic direction of the foundation and oversees its operations.
 
@@ -166,9 +188,13 @@ The foundation operates as a "do-ocracy" - influence comes from participation.
 
 {{< columns-end >}}
 
----
-
-## Legal Status
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-scale-balanced"></i>
+<span>Legal</span>
+</div>
+<h2 class="section-title">Legal Status</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -196,9 +222,13 @@ OSGeo is incorporated in the **State of Delaware, USA** as a **501(c)(4)** not-f
 
 {{< columns-end >}}
 
----
-
-## Committees
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-people-group"></i>
+<span>Teams</span>
+</div>
+<h2 class="section-title">Committees</h2>
+</div>
 
 OSGeo's work is driven by passionate volunteers organized into committees:
 
@@ -241,7 +271,13 @@ OSGeo's work is driven by passionate volunteers organized into committees:
 
 {{< box-start class="cta-section my-6" >}}
 
-## Get Involved
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hand-point-right"></i>
+<span>Action</span>
+</div>
+<h2 class="section-title has-text-white">Get Involved</h2>
+</div>
 
 Join thousands of developers, users, and advocates working together to advance open geospatial technology.
 
@@ -256,9 +292,13 @@ Join thousands of developers, users, and advocates working together to advance o
 
 {{< box-end >}}
 
----
-
-## More About OSGeo
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-circle-info"></i>
+<span>Resources</span>
+</div>
+<h2 class="section-title">More About OSGeo</h2>
+</div>
 
 {{< columns-start >}}
 

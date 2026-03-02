@@ -16,13 +16,25 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## About OSGeoLive
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-compact-disc"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">About OSGeoLive</h2>
+</div>
 
 OSGeoLive is a self-contained bootable DVD, USB thumb drive, or Virtual Machine based on Lubuntu that allows you to try a wide variety of open source geospatial software without installing anything.
 
 It is entirely composed of free software, allowing it to be freely distributed, duplicated, and passed around.
 
-## What's Included?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-box-open"></i>
+<span>Contents</span>
+</div>
+<h2 class="section-title">What's Included?</h2>
+</div>
 
 OSGeoLive includes 50+ open source geospatial applications, including:
 
@@ -53,7 +65,13 @@ OSGeoLive includes 50+ open source geospatial applications, including:
 
 ---
 
-## Download Options
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-download"></i>
+<span>Download</span>
+</div>
+<h2 class="section-title">Download Options</h2>
+</div>
 
 ### Virtual Machine
 Run OSGeoLive in VirtualBox or VMware.

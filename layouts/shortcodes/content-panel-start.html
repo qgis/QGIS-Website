@@ -1,0 +1,55 @@
+{{/*
+  Content Panel Shortcode - Start
+
+  Usage:
+  {{< content-panel-start
+      title="Panel Title"
+      subtitle="Optional subtitle"
+      icon="fa-solid fa-star"
+      variant="featured"
+      button-text="Learn More"
+      button-link="/page/"
+  >}}
+
+  Your markdown content here...
+
+  - Bullet points work
+  - **Bold text** works
+  - Links work
+
+  {{< content-panel-end >}}
+
+  Variants: featured, teal, cyan, amber, dark, compact
+  Can combine: variant="featured compact"
+*/}}
+
+{{ $title := .Get "title" | default "" }}
+{{ $subtitle := .Get "subtitle" | default "" }}
+{{ $icon := .Get "icon" | default "" }}
+{{ $variant := .Get "variant" | default "" }}
+{{ $id := .Get "id" | default "" }}
+
+{{/* Build variant classes */}}
+{{ $variantClasses := "" }}
+{{ if $variant }}
+  {{ $variants := split $variant " " }}
+  {{ range $variants }}
+    {{ $variantClasses = printf "%s is-%s" $variantClasses . }}
+  {{ end }}
+{{ end }}
+
+<div class="content-panel{{ $variantClasses }}"{{ with $id }} id="{{ . }}"{{ end }}>
+{{ if or $title $icon }}
+<div class="content-panel-header">
+{{ if $icon }}
+<div class="content-panel-icon">
+<i class="{{ $icon }}"></i>
+</div>
+{{ end }}
+<div>
+{{ with $title }}<h4 class="content-panel-title">{{ . }}</h4>{{ end }}
+{{ with $subtitle }}<p class="content-panel-subtitle">{{ . }}</p>{{ end }}
+</div>
+</div>
+{{ end }}
+<div class="content-panel-body">

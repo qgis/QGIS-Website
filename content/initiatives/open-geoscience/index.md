@@ -18,7 +18,13 @@ The Open GeoScience initiative promotes the use of open source software, open da
 
 ---
 
-## About Open GeoScience
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-flask"></i>
+<span>Overview</span>
+</div>
+<h2 class="section-title">About Open GeoScience</h2>
+</div>
 
 Open GeoScience bridges the OSGeo community with researchers in Earth sciences, environmental science, and related fields. We advocate for:
 
@@ -50,7 +56,13 @@ Adopting interoperable standards for geoscience data exchange.
 
 ---
 
-## Activities
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-list-check"></i>
+<span>Activities</span>
+</div>
+<h2 class="section-title">Activities</h2>
+</div>
 
 The Open GeoScience committee works on:
 
@@ -61,7 +73,13 @@ The Open GeoScience committee works on:
 
 ---
 
-## Get Involved
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hand-holding-heart"></i>
+<span>Join</span>
+</div>
+<h2 class="section-title">Get Involved</h2>
+</div>
 
 Interested in Open GeoScience? Join us:
 

@@ -38,7 +38,7 @@
         {{ .Get "linkAttr" }}
     >
         {{ with .Get "icon" }}
-            <div class="icon">{{ . }}</div>
+            <div class="icon"><i class="{{ . }}"></i></div>
         {{ end }}
         {{ with .Get "image" }}
             <div class="image"><img src="{{ . }}"></div>
@@ -49,7 +49,7 @@
 {{ else }}
     <div class="rich-list {{ $layoutClass }} {{ $iconClass }} {{ $imageClass }} mr-2 mb-2">
         {{ with .Get "icon" }}
-            <div class="icon">{{ . }}</div>
+            <div class="icon"><i class="{{ . }}"></i></div>
         {{ end }}
         {{ with .Get "image" }}
             <div class="image"><img src="{{ . }}"></div>

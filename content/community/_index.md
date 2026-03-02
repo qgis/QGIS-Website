@@ -15,15 +15,25 @@ LabelText: "Your Open Source Compass"
 
 {{< box-start class="is-light2 p-5 mb-6" >}}
 
-## Welcome to the OSGeo Community!
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-heart"></i>
+<span>Welcome</span>
+</div>
+<h2 class="section-title">Welcome to the OSGeo Community!</h2>
+</div>
 
 The OSGeo community is a diverse and welcoming group of developers, users, educators, and advocates united by a passion for open source geospatial technology. Whether you're just getting started or a seasoned contributor, there's a place for you here.
 
 {{< box-end >}}
 
----
-
-## Connect With Us
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-link"></i>
+<span>Connect</span>
+</div>
+<h2 class="section-title">Connect With Us</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -73,9 +83,13 @@ For real-time conversations, join us on IRC or Matrix chat channels. Get quick h
 
 {{< columns-end >}}
 
----
-
-## Social Media
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-share-nodes"></i>
+<span>Social</span>
+</div>
+<h2 class="section-title">Social Media</h2>
+</div>
 
 Follow OSGeo for news, events, and community highlights:
 
@@ -107,9 +121,13 @@ Follow OSGeo for news, events, and community highlights:
 
 {{< columns-end >}}
 
----
-
-## Get Involved
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-hands-helping"></i>
+<span>Contribute</span>
+</div>
+<h2 class="section-title">Get Involved</h2>
+</div>
 
 There are many ways to contribute to the OSGeo community, regardless of your background or skill level:
 
@@ -169,9 +187,13 @@ There are many ways to contribute to the OSGeo community, regardless of your bac
 
 [Full Getting Involved Guide &rarr;](/community/getting-started/)
 
----
-
-## Events
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-calendar-days"></i>
+<span>Events</span>
+</div>
+<h2 class="section-title">Events</h2>
+</div>
 
 The OSGeo community organizes and participates in events worldwide:
 
@@ -208,9 +230,13 @@ Local chapters organize regional FOSS4G conferences and meetups throughout the y
 
 {{< columns-end >}}
 
----
-
-## Code of Conduct
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-shield-heart"></i>
+<span>Values</span>
+</div>
+<h2 class="section-title">Code of Conduct</h2>
+</div>
 
 OSGeo is committed to providing a **welcoming and inclusive environment** for all community members. We expect all participants to:
 
@@ -240,9 +266,13 @@ If you experience or witness behavior that violates our Code of Conduct, please 
 
 {{< columns-end >}}
 
----
-
-## Service Providers
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-building"></i>
+<span>Support</span>
+</div>
+<h2 class="section-title">Service Providers</h2>
+</div>
 
 Need professional support? Our service provider directory lists consultants, companies, and organizations offering services around OSGeo projects.
 
@@ -273,9 +303,13 @@ Browse our directory of certified service providers worldwide.
 
 {{< columns-end >}}
 
----
-
-## Awards
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-trophy"></i>
+<span>Recognition</span>
+</div>
+<h2 class="section-title">Awards</h2>
+</div>
 
 OSGeo recognizes outstanding contributions to the open source geospatial community:
 
@@ -312,7 +346,13 @@ Sponsored by GeoCat, this award recognizes exceptional technical contributions t
 
 {{< box-start class="cta-section my-6" >}}
 
-## Ready to Get Started?
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rocket"></i>
+<span>Action</span>
+</div>
+<h2 class="section-title has-text-white">Ready to Get Started?</h2>
+</div>
 
 Join the global community of open source geospatial enthusiasts.
 

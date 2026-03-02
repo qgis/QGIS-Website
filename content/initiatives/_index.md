@@ -15,9 +15,13 @@ LabelText: "See Our Community in Action"
 
 OSGeo drives global initiatives that bring together the open source geospatial community, expand education, and advance technology adoption worldwide.
 
----
-
-## Our Active Initiatives
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-rocket"></i>
+<span>Active</span>
+</div>
+<h2 class="section-title">Our Active Initiatives</h2>
+</div>
 
 {{< columns-start >}}
 
@@ -133,9 +137,13 @@ Supporting the United Nations' migration toward open source geospatial software.
 
 {{< columns-end >}}
 
----
-
-## Initiative Impact
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-chart-line"></i>
+<span>Results</span>
+</div>
+<h2 class="section-title">Initiative Impact</h2>
+</div>
 
 {{< box-start class="is-light2 p-5" >}}
 {{< columns-start >}}
@@ -163,17 +171,25 @@ Supporting the United Nations' migration toward open source geospatial software.
 {{< columns-end >}}
 {{< box-end >}}
 
----
-
-## Completed Initiatives
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-check-circle"></i>
+<span>Completed</span>
+</div>
+<h2 class="section-title">Completed Initiatives</h2>
+</div>
 
 Some initiatives have successfully achieved their goals:
 
 - **OpenGIS Harmonization** - Completed work on harmonizing geospatial standards
 
----
-
-## Start an Initiative
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-lightbulb"></i>
+<span>Propose</span>
+</div>
+<h2 class="section-title">Start an Initiative</h2>
+</div>
 
 Have an idea for a new OSGeo initiative? We welcome proposals from the community. Successful initiatives align with OSGeo's mission, have clear goals, and engage the community.
 
@@ -209,7 +225,13 @@ Have an idea? Let's talk!
 
 {{< box-start class="cta-section my-6" >}}
 
-## Join FOSS4G 2025
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-calendar-days"></i>
+<span>Event</span>
+</div>
+<h2 class="section-title has-text-white">Join FOSS4G 2025</h2>
+</div>
 
 The premier global event for open source geospatial. Auckland, New Zealand, November 17-23.
 

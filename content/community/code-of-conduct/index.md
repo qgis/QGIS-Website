@@ -13,13 +13,25 @@ sidebar: true
 {{< columns-start >}}
 {{< column-start class="is-8" >}}
 
-## OSGeo Community Guidelines
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-shield-heart"></i>
+<span>Guidelines</span>
+</div>
+<h2 class="section-title">OSGeo Community Guidelines</h2>
+</div>
 
 The Open Source Geospatial Foundation is dedicated to providing a harassment-free experience for everyone, regardless of gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion (or lack thereof), or technology choices.
 
 We do not tolerate harassment of community members in any form. This code of conduct applies to all OSGeo community spaces, including mailing lists, wikis, social media, conferences, and any other OSGeo-sponsored events or gatherings.
 
-## Expected Behavior
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-check-circle"></i>
+<span>Expected</span>
+</div>
+<h2 class="section-title">Expected Behavior</h2>
+</div>
 
 Community members are expected to:
 
@@ -34,7 +46,13 @@ Community members are expected to:
 </ul>
 </div>
 
-## Unacceptable Behavior
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-ban"></i>
+<span>Prohibited</span>
+</div>
+<h2 class="section-title">Unacceptable Behavior</h2>
+</div>
 
 The following behaviors are considered harassment and are unacceptable:
 
@@ -47,13 +65,25 @@ The following behaviors are considered harassment and are unacceptable:
 - Advocating for, or encouraging, any of the above behavior
 - Repeated harassment of others
 
-## Enforcement
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-gavel"></i>
+<span>Action</span>
+</div>
+<h2 class="section-title">Enforcement</h2>
+</div>
 
 Community members asked to stop any harassing behavior are expected to comply immediately.
 
 If a community member engages in harassing behavior, OSGeo may take any action deemed appropriate, including warning the offender or expulsion from OSGeo-controlled spaces.
 
-## Reporting
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-flag"></i>
+<span>Report</span>
+</div>
+<h2 class="section-title">Reporting</h2>
+</div>
 
 If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact the OSGeo Board:
 
@@ -61,7 +91,13 @@ If you are being harassed, notice that someone else is being harassed, or have a
 
 All reports will be treated confidentially.
 
-## Attribution
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-quote-left"></i>
+<span>Credits</span>
+</div>
+<h2 class="section-title">Attribution</h2>
+</div>
 
 This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/) and [Django Code of Conduct](https://www.djangoproject.com/conduct/).
 

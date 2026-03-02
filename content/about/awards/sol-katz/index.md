@@ -19,7 +19,13 @@ The Sol Katz Award for Geospatial Free and Open Source Software (GFOSS) is given
 
 ---
 
-## About Sol Katz
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-user"></i>
+<span>History</span>
+</div>
+<h2 class="section-title">About Sol Katz</h2>
+</div>
 
 Sol Katz (1948-1999) was a pioneer in the open source geospatial movement. As a software developer at the Bureau of Land Management (BLM), Sol created and maintained numerous free geospatial utilities and libraries. He freely shared his work with others, laying the groundwork for today's open source geospatial ecosystem.
 
@@ -27,7 +33,13 @@ Sol's generosity and commitment to sharing knowledge inspired countless develope
 
 ---
 
-## Award Recipients
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-trophy"></i>
+<span>Recipients</span>
+</div>
+<h2 class="section-title">Award Recipients</h2>
+</div>
 
 {{< rich-box-start >}}
 ### Recent Recipients
@@ -46,7 +58,13 @@ Sol's generosity and commitment to sharing knowledge inspired countless develope
 
 ---
 
-## Nomination Process
+<div class="section-header">
+<div class="section-header-badge">
+<i class="fa-solid fa-paper-plane"></i>
+<span>Nominate</span>
+</div>
+<h2 class="section-title">Nomination Process</h2>
+</div>
 
 Nominations for the Sol Katz Award are open to all members of the geospatial community. The award committee evaluates nominations based on:
 
