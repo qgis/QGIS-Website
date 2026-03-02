@@ -36,7 +36,7 @@
                 {{/* Incubated Projects */}}
                 {{ range .incubated }}
                 {{ $category := index $categories .category }}
-                <a href="/projects/{{ .id }}/" class="project-card-clean"
+                <a href="{{ printf "projects/%s/" .id | absURL }}" class="project-card-clean"
                    data-category="{{ .category }}"
                    data-status="incubated"
                    data-name="{{ .name | lower }}"
@@ -72,7 +72,7 @@
                 {{/* Community Projects */}}
                 {{ range .community }}
                 {{ $category := index $categories .category }}
-                <a href="/projects/{{ .id }}/" class="project-card-clean community"
+                <a href="{{ printf "projects/%s/" .id | absURL }}" class="project-card-clean community"
                    data-category="{{ .category }}"
                    data-status="community"
                    data-name="{{ .name | lower }}"

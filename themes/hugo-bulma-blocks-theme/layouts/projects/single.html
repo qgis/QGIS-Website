@@ -33,7 +33,7 @@
             <div class="column is-8">
                 {{/* Breadcrumb */}}
                 <nav class="project-breadcrumb">
-                    <a href="/projects/">Projects</a>
+                    <a href="{{ "projects/" | absURL }}">Projects</a>
                     <span>/</span>
                     <span>{{ $category.name }}</span>
                 </nav>
@@ -371,7 +371,7 @@
 {{/* Back to Projects */}}
 <section class="section project-nav-section">
     <div class="container">
-        <a href="/projects/" class="back-link">
+        <a href="{{ "projects/" | absURL }}" class="back-link">
             <i class="fa-solid fa-arrow-left"></i> Back to all projects
         </a>
     </div>
@@ -383,7 +383,7 @@
     <div class="container has-text-centered">
         <h1>Project Not Found</h1>
         <p>The requested project could not be found.</p>
-        <a href="/projects/" class="button is-primary">View All Projects</a>
+        <a href="{{ "projects/" | absURL }}" class="button is-primary">View All Projects</a>
     </div>
 </section>
 {{ end }}
