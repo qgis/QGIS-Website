@@ -18,6 +18,7 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           token: ${{ secrets.PAT }}
+          submodules: recursive
 
       - name: Install Nix
         uses: cachix/install-nix-action@v31

@@ -16,6 +16,7 @@ jobs:
       with:
         ref: main
         path: ./qgis-website
+        submodules: recursive
 
     - name: '🐍 Setup Python'
       uses: actions/setup-python@v6
