@@ -25,7 +25,6 @@ export class Sidebar {
     public readonly booksLink: Locator;
     public readonly supportLink: Locator;
     public readonly membersLink: Locator;
-    public readonly pastMembersLink: Locator;
     public readonly windowsLink: Locator;
     public readonly linuxLink: Locator;
     public readonly macOSLink: Locator;
@@ -153,11 +152,6 @@ export class Sidebar {
 
         this.membersLink = this.sidebar.getByRole("link", {
             name: "Members",
-            exact: true,
-        });
-
-        this.pastMembersLink = this.sidebar.getByRole("link", {
-            name: "Past Members",
             exact: true,
         });
     }

@@ -18,7 +18,7 @@ except ImportError:
 from scripts.resize_image import resize_image
 
 ### Funders
-def fetch_funders(url: str, past_members=False):
+def fetch_funders(url: str):
     """
     Fetch the sustaining members from the QGIS changelog 
     and create markdown files
@@ -29,10 +29,6 @@ def fetch_funders(url: str, past_members=False):
     for item in items:
         member_slug = item["slug"]
         markdown_filename = f"content/funders/{member_slug}.md"
-        # Don't overwrite existing members
-        # when fetching past members
-        if past_members and os.path.exists(markdown_filename):
-            continue
         link = item["member_url"]
         image_url = item["image_url"]
         title = item["title"]
@@ -178,10 +174,7 @@ parser.parse_args()
 args = parser.parse_args()
 
 try:
-    # Fetch the active members before the past members
-    # so that we don't overwrite active members with past members
     fetch_funders("https://members.qgis.org/en/members/json/")
-    fetch_funders("https://members.qgis.org/en/past-members/json/", past_members=True)
 except Exception as e:
     print(f"Error fetching funders: {e}")
 
