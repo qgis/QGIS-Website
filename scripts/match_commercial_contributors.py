@@ -14,6 +14,7 @@ import yaml
 from urllib.parse import urlparse
 import os
 import re
+from datetime import datetime, timedelta
 
 def normalize_domain(url):
     """Extract and normalize domain from URL"""
@@ -44,6 +45,28 @@ def normalize_name(name):
     # Remove extra whitespace
     normalized = re.sub(r'\s+', ' ', normalized).strip()
     return normalized
+
+def is_contributor_active(contributor_org, months_threshold=12):
+    """
+    Determine if a contributor is active based on their last contribution.
+    Active = contributed within the last N months (default: 12 months)
+    """
+    if not contributor_org.get('contributions'):
+        return False
+    
+    cutoff_date = datetime.now() - timedelta(days=months_threshold * 30)
+    
+    # Check all contribution areas
+    for area, details in contributor_org['contributions'].items():
+        if 'last_contribution' in details:
+            try:
+                last_contrib = datetime.strptime(details['last_contribution'], '%Y-%m-%d')
+                if last_contrib >= cutoff_date:
+                    return True
+            except (ValueError, TypeError):
+                continue
+    
+    return False
 
 def load_commercial_support():
     """Load all commercial support organizations"""
@@ -103,9 +126,11 @@ def match_organizations(commercial_orgs, contributing_orgs):
         
         # Only add to matches if there's a match
         if contributor:
+            is_active = is_contributor_active(contributor)
             match_info = {
                 'is_contributor': True,
-                'contributor_name': contributor['name']
+                'contributor_name': contributor['name'],
+                'is_active': is_active
             }
             matches[comm_org['name']] = match_info
         else:
@@ -135,17 +160,23 @@ def save_matches(matches, total_orgs, unmatched_count):
     
     # Print statistics
     matched = len(matches)
+    active_count = sum(1 for m in matches.values() if m.get('is_active', False))
+    inactive_count = matched - active_count
+    
     print(f"\n📊 Statistics:")
     print(f"   Total commercial support orgs: {total_orgs}")
     print(f"   Matched with contributors: {matched}")
+    print(f"   - Active contributors: {active_count}")
+    print(f"   - Inactive contributors: {inactive_count}")
     print(f"   Unmatched: {unmatched_count}")
     print(f"   Match rate: {matched/total_orgs*100:.1f}%")
     
     # Print matched organizations
     if matched > 0:
         print(f"\n✅ Matched organizations:")
-        for name, info in matches.items():
-            print(f"   • {name} → {info['contributor_name']}")
+        for name, info in sorted(matches.items()):
+            status = "🟢 Active" if info.get('is_active', False) else "🟡 Inactive"
+            print(f"   {status} • {name} → {info['contributor_name']}")
 
 def main():
     print("🔍 Matching commercial support with contributing organizations...\n")
