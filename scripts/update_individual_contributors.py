@@ -579,6 +579,10 @@ def generate_geojson(contributors_json_path: str, output_geojson_path: str):
             
             # Convert simple coordinate arrays to GeoJSON geometry format
             for git_nickname, coordinates in location_data.items():
+                # Skip metadata keys (starting with underscore)
+                if git_nickname.lower() == "__comment__":
+                    continue
+                    
                 git_nickname_to_geometry[git_nickname] = {
                     "type": "Point",
                     "coordinates": coordinates
