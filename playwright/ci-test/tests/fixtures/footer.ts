@@ -135,7 +135,7 @@ export class Footer {
         this.archiveLink = this.page
             .getByRole("link", { name: "Archive" })
             .last();
-        this.logoImage = this.page.getByRole("img", { name: "Logo" });
+        this.logoImage = this.page.getByRole("img", { name: "Logo" }).last();
         this.facebookLink = this.page.getByRole("link", { name: "" });
         this.youtubeLink = this.page.getByRole("link", { name: "" });
         this.mapstodonLink = this.page
