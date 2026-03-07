@@ -1,0 +1,25 @@
+name: Tailor 🪡
+on:
+  schedule:
+    - cron: "0 9 * * 1" # Weekly
+  workflow_dispatch:
+
+jobs:
+  alter:
+    runs-on: ubuntu-slim
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup tailor
+        uses: wimpysworld/tailor-action@v1
+
+      - name: Alter swatches
+        run: tailor alter
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: tailor-alter
+          title: "chore: alter tailor swatches"
