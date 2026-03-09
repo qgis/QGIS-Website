@@ -72,11 +72,11 @@ export class HomePage {
         this.pageBody = this.page.locator("body");
         this.freeOpenSourceSpatialDiv = this.page
             .locator("div")
-            .filter({ hasText: "Free and Open Source ▼ An" })
-            .first();
+            .filter({ hasText: "Free and open source an" })
+            .nth(2);
         this.downloadLink = this.page
             .locator("section")
-            .filter({ hasText: "Free and Open Source ▼ An" })
+            .filter({ hasText: "Free and open source an" })
             .getByRole("link").last();
         this.spatialWithoutCompromiseHeading = this.page.getByRole("heading", {
             name: "Spatial without compromise",
