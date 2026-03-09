@@ -2359,5 +2359,36 @@ memberships)](https://qgis.org/)
 This feature was developed by [Alexander Bruy
 (QCooperative)](https://www.qcooperative.net/)
 
+### Feature: Bug fixes by Nyall Dawson (North Road)
+
+## Nyall Dawson
+
+| Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.40 backport commit (GitHub) |
+|----|----|----|----|
+| Fix nothing happens when zooming to very small line feature extent | Unreported | [PR \#65215](https://github.com/qgis/QGIS/pull/65215) | [PR \#65274](https://github.com/qgis/QGIS/pull/65274) |
+| Don't immediately validate child algorithms in models | Unreported | [PR \#65183](https://github.com/qgis/QGIS/pull/65183) | N/A |
+| \[browser\] Don't permit renaming tables which are open in the current project | Unreported | [PR \#65182](https://github.com/qgis/QGIS/pull/65182) | N/A |
+| Extend timeout for processing executable tests | Unreported | [PR \#65161](https://github.com/qgis/QGIS/pull/65161) | [PR \#65224](https://github.com/qgis/QGIS/pull/65224) |
+| Downgrade thread safety check to non-fatal | Unreported | [PR \#65148](https://github.com/qgis/QGIS/pull/65148) | N/A |
+| Fix network fetching tasks triggered by rendering of map layers using raster marker symbol layer never complete | [\#65137](https://github.com/qgis/QGIS/issues/65137) | [PR \#65147](https://github.com/qgis/QGIS/pull/65147) | Too risky, potential backport after 3.44.10? |
+| \[server\] Fix completely broken service url setting handling | Unreported | [PR \#65117](https://github.com/qgis/QGIS/pull/65117) | [PR \#65226](https://github.com/qgis/QGIS/pull/65226) |
+| Fix broken value range when calling deprecated setComponentValue int variant | Unreported | [PR \#65115](https://github.com/qgis/QGIS/pull/65115) | [PR \#65135](https://github.com/qgis/QGIS/pull/65135) |
+| \[wms\] Fix regression in encode/decodeUri | Unreported | [PR \#65114](https://github.com/qgis/QGIS/pull/65114) | N/A |
+| Fix a bunch of python tests weren't actually run on CI | Unreported | [PR \#65113](https://github.com/qgis/QGIS/pull/65113) |  |
+| Fix assert triggered on qt6 builds | Unreported | [PR \#65079](https://github.com/qgis/QGIS/pull/65079) | N/A |
+| \[gdal\] Fix openfilegdb raster path decoding/encoding | Unreported | [PR \#65078](https://github.com/qgis/QGIS/pull/65078) | [PR \#65096](https://github.com/qgis/QGIS/pull/65096) |
+| Fix mdb files not shown in browser for non-windows platforms | Unreported | [PR \#65077](https://github.com/qgis/QGIS/pull/65077) | [PR \#65098](https://github.com/qgis/QGIS/pull/65098) |
+| Fix failing dock widget test on newer Qt versions | Unreported | [PR \#65073](https://github.com/qgis/QGIS/pull/65073) | N/A |
+| \[browser\] Prevent deletion or rename of fields when table is open in project | Unreported | [PR \#64958](https://github.com/qgis/QGIS/pull/64958) | Not suitable |
+| Fix strict curved label anchoring when placement is on line | Unreported | [PR \#64736](https://github.com/qgis/QGIS/pull/64736) | [PR \#64801](https://github.com/qgis/QGIS/pull/64801) |
+| Move to QGIS4 settings storage, add migration from QGIS3 | [\#61636](https://github.com/qgis/QGIS/issues/61636) | [PR \#64752](https://github.com/qgis/QGIS/pull/64752) | N/A |
+| Ensure QString and Qt::StringLiterals namespace are present when needed | Unreported | [PR \#64724](https://github.com/qgis/QGIS/pull/64724) | N/A |
+
+This feature was funded by [QGIS.ORG (through donations and sustaining
+memberships)](https://qgis.org/)
+
+This feature was developed by [Nyall Dawson (North
+Road)](https://north-road.com/)
+
 
 {{< content-end >}}
