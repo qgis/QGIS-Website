@@ -567,27 +567,34 @@ def generate_geojson(contributors_json_path: str, output_geojson_path: str):
             honorary_members = json.load(f)
         print(f"Loaded {len(honorary_members)} honorary members")
     
-    # Fetch QGIS contributors.json with geometry data
-    qgis_contributors_url = "https://raw.githubusercontent.com/qgis/QGIS/refs/heads/master/resources/data/contributors.json"
-    print(f"Fetching geometry data from {qgis_contributors_url}")
+    # Load contributors location data from local file
+    contributors_location_path = "data/contributors/contributors_location.json"
+    print(f"Loading geometry data from {contributors_location_path}")
     
-    try:
-        response = requests.get(qgis_contributors_url, timeout=30)
-        response.raise_for_status()
-        qgis_geojson = response.json()
-    except requests.RequestException as e:
-        print(f"Error fetching QGIS contributors geometry: {e}")
-        return False
-    
-    # Create a mapping of GIT Nickname -> geometry from QGIS data
     git_nickname_to_geometry = {}
-    for feature in qgis_geojson.get("features", []):
-        git_nickname = feature.get("properties", {}).get("GIT Nickname")
-        geometry = feature.get("geometry")
-        if git_nickname and geometry:
-            git_nickname_to_geometry[git_nickname] = geometry
-    
-    print(f"Loaded {len(git_nickname_to_geometry)} contributors with geometry from QGIS data")
+    if os.path.exists(contributors_location_path):
+        try:
+            with open(contributors_location_path, 'r') as f:
+                location_data = json.load(f)
+            
+            # Convert simple coordinate arrays to GeoJSON geometry format
+            for git_nickname, coordinates in location_data.items():
+                # Skip metadata keys (starting with underscore)
+                if git_nickname.lower() == "__comment__":
+                    continue
+                    
+                git_nickname_to_geometry[git_nickname] = {
+                    "type": "Point",
+                    "coordinates": coordinates
+                }
+            
+            print(f"Loaded {len(git_nickname_to_geometry)} contributors with geometry from local data")
+        except Exception as e:
+            print(f"Error loading contributors location data: {e}")
+            return False
+    else:
+        print(f"Warning: Contributors location file not found: {contributors_location_path}")
+        print("Continuing without geometry data...")
     
     # Build GeoJSON features
     features = []
