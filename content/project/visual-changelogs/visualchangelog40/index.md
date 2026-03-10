@@ -73,9 +73,9 @@ exciting period of growth for the revamped [QGIS
 Hub](https://hub.qgis.org/) and associated community sites.
 
 If you want to see more about our release, check out our [community
-sharing the announcement](https://youtu.be/845iI03QU7Y)!
+sharing the announcement](https://youtu.be/SQJZm5Y0EKs)!
 
-[![](https://img.youtube.com/vi/845iI03QU7Y/0.jpg)](https://www.youtube.com/watch?v=845iI03QU7Y)
+[![](https://img.youtube.com/vi/SQJZm5Y0EKs/0.jpg)](https://www.youtube.com/watch?v=SQJZm5Y0EKs)
 
 For a whirlwind tour of all the new functionalities introduced in this
 release, you can view the [highlight reel video on
