@@ -1873,7 +1873,7 @@ This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
 ### Feature: Save QGIS projects to PostgreSQL
 
-QGIS now natively supports the ability to save the current QGIS project
+QGIS natively supports the ability to save the current QGIS project
 to a PostgreSQL database, as well as import QGIS projects from a folder
 into a PostgreSQL database.  
 Two new menu entries for PostgreSQL connections are added:  
@@ -1939,7 +1939,7 @@ Consulting)](https://github.com/uclaros)
 
 ### Feature: QGIS Project Versioning in PostgreSQL
 
-For QGIS Projects that leverage the new functionality to be stored
+For QGIS Projects that leverage the functionality to be stored
 directly in PostgreSQL, automatic version control can be enabled, which
 allows users to save, load, edit, and restore historic copies of their
 project. The process is mostly handled by a function and a trigger
