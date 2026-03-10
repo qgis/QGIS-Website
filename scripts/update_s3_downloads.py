@@ -273,6 +273,39 @@ class S3FileExplorer:
         
         return stats
 
+    def _preserve_timestamps_if_unchanged(self, new_data: Dict, existing_path: str) -> Dict:
+        """Return new_data with timestamps preserved from existing file if content is unchanged.
+        
+        Compares new_data against the existing JSON file, excluding the 'generated_at' and
+        'statistics.last_updated' timestamp fields. If content is identical, the old timestamps
+        are restored so that the file on disk is not modified by the cron job.
+        """
+        if not os.path.exists(existing_path):
+            return new_data
+        
+        try:
+            with open(existing_path, "r", encoding="utf-8") as f:
+                existing_data = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            return new_data
+        
+        def strip_timestamps(d: Dict) -> Dict:
+            d = dict(d)
+            d.pop("generated_at", None)
+            if "statistics" in d:
+                stats = dict(d["statistics"])
+                stats.pop("last_updated", None)
+                d["statistics"] = stats
+            return d
+        
+        if json.dumps(strip_timestamps(new_data), sort_keys=True) == json.dumps(strip_timestamps(existing_data), sort_keys=True):
+            new_data["generated_at"] = existing_data.get("generated_at", new_data["generated_at"])
+            new_data["statistics"]["last_updated"] = existing_data.get("statistics", {}).get(
+                "last_updated", new_data["statistics"]["last_updated"]
+            )
+        
+        return new_data
+
     def save_to_json(self, files: List[Dict], output_path: str, excluded_prefixes: tuple = ('ubuntu', 'debian')):
         """Save files data to JSON."""
         tree = self.build_file_tree(files, excluded_prefixes=excluded_prefixes)
@@ -285,6 +318,9 @@ class S3FileExplorer:
             "statistics": stats,
             "tree": tree,
         }
+        
+        # Preserve timestamps if S3 content has not changed
+        data = self._preserve_timestamps_if_unchanged(data, output_path)
         
         # Ensure output directory exists
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
@@ -344,6 +380,9 @@ class S3FileExplorer:
             # Output filename already uses underscores
             filename = output_name + ".json"
             output_path = os.path.join(output_dir, filename)
+            
+            # Preserve timestamps if S3 content has not changed
+            data = self._preserve_timestamps_if_unchanged(data, output_path)
             
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
