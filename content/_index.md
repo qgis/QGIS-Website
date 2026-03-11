@@ -14,6 +14,15 @@ SupportedOS: "Available on Windows, Mac, Linux"
 LabelText: "Free and Open Source"
 Badge: "img/badges/dpg-badge.png"
 BadgeLink: "https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/"
+OsgeoBadge: "img/badges/osgeo-logo-white.svg"
+OsgeoBadgeLink: "https://www.osgeo.org/projects/qgis/"
+
+HasAnnouncement: true
+AnnouncementLabel: "QGIS 4.0"
+AnnouncementTitle: "QGIS 4.0 is here — our most powerful release yet!"
+AnnouncementText: "Discover the new features, improvements, and everything that makes this release a landmark moment."
+AnnouncementLink: "project/visual-changelogs/visualchangelog40/"
+AnnouncementLinkText: "Explore the changelog"
 ---
 
 {{< feature

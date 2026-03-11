@@ -64,9 +64,9 @@ export class ProjectPage {
             name: "QGIS overview",
         });
         this.fosQGISLink = this.page
-            .locator("section")
-            .filter({ hasText: "Free and open source QGIS" })
-            .getByRole("link");
+            .locator('div')
+            .filter({ hasText: 'Free and open source QGIS' })
+            .nth(2);
         this.contentTab1Img = this.page
             .locator("#content-tab-1")
             .getByRole("img", { name: "Create map" });
