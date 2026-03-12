@@ -1,20 +1,20 @@
 {
   "bucket_name": "qgis-download",
   "prefix": "",
-  "generated_at": "2026-03-12T05:24:52.480200+00:00",
+  "generated_at": "2026-03-12T06:16:10.624669+00:00",
   "statistics": {
-    "total_files": 132537,
-    "total_size": 4018653002355,
+    "total_files": 132538,
+    "total_size": 4018653036926,
     "total_size_formatted": "3.65 TB",
     "by_category": {
       "installer": {
         "count": 122574,
-        "size": 3489242068957,
+        "size": 3489242103438,
         "size_formatted": "3.17 TB"
       },
       "other": {
-        "count": 6111,
-        "size": 18999764601,
+        "count": 6112,
+        "size": 18999764691,
         "size_formatted": "17.69 GB"
       },
       "image": {
@@ -39,13 +39,13 @@
       "no extension": 2213,
       ".dsc": 1971,
       ".bz2": 833,
-      ".sha256sum": 410,
+      ".sha256sum": 411,
       ".exe": 392,
       ".md5sum": 361,
       ".gpg": 347,
       ".msi": 230
     },
-    "last_updated": "2026-03-12T05:24:52.410982+00:00"
+    "last_updated": "2026-03-12T06:16:10.549133+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -2666,6 +2666,17 @@
                 "last_modified_timestamp": 1773292280,
                 "extension": ".dmg",
                 "category": "installer"
+              },
+              {
+                "key": "macos/master/qgis_master_2026-03-12.sha256sum",
+                "name": "qgis_master_2026-03-12.sha256sum",
+                "path": "macos/master",
+                "size": 90,
+                "size_formatted": "90.00 B",
+                "last_modified": "2026-03-12T05:29:00.039000+00:00",
+                "last_modified_timestamp": 1773293340,
+                "extension": ".sha256sum",
+                "category": "other"
               }
             ]
           },
@@ -4814,10 +4825,10 @@
             "key": "macos/qgis-macos-master.dmg",
             "name": "qgis-macos-master.dmg",
             "path": "macos",
-            "size": 1542806499,
+            "size": 1542840980,
             "size_formatted": "1.44 GB",
-            "last_modified": "2026-03-11T06:56:36.782000+00:00",
-            "last_modified_timestamp": 1773212196,
+            "last_modified": "2026-03-12T05:28:58.203000+00:00",
+            "last_modified_timestamp": 1773293338,
             "extension": ".dmg",
             "category": "installer"
           },
@@ -4827,8 +4838,8 @@
             "path": "macos",
             "size": 90,
             "size_formatted": "90.00 B",
-            "last_modified": "2026-03-11T06:56:38.551000+00:00",
-            "last_modified_timestamp": 1773212198,
+            "last_modified": "2026-03-12T05:29:01.323000+00:00",
+            "last_modified_timestamp": 1773293341,
             "extension": ".sha256sum",
             "category": "other"
           },
