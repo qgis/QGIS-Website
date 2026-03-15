@@ -116,7 +116,7 @@ sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like
 sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 ```
 
-Add the QGIS repo for the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) to `/etc/apt/sources.list.d/qgis.sources`:
+Add the QGIS repo for the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) to `/etc/apt/sources.list.d/qgis.sources`. Open the file in a text editor (e.g. `sudo editor /etc/apt/sources.list.d/qgis.sources`) and paste the following content (replace `your-distributions-codename` with your actual distribution codename, see [Available codenames](#available-codenames)):
 
 ```
 Types: deb deb-src
@@ -138,7 +138,7 @@ See [Available codenames](#available-codenames).
 {{< rich-content-end >}}
 {{< rich-box-end >}}
 
-Update your repository information to also reflect the newly added QGIS one:
+Save and close the file, then update your repository information:
 
 ```
 sudo apt update
@@ -258,7 +258,7 @@ sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like
 sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 ```
 
-With the keyring in place you can add the repository as `/etc/apt/sources.list.d/qgis.sources` with following content:
+With the keyring in place you can add the repository. Create or open for editing the file `/etc/apt/sources.list.d/qgis.sources` (e.g. `sudo editor /etc/apt/sources.list.d/qgis.sources`) and add the following content (replace `*repository*` and `*codename*` with values from the table above):
 
 ```
 Types: deb deb-src
