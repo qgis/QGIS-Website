@@ -194,10 +194,10 @@ Lines of packages:
 ||| Release with ubuntugis-unstable dependencies | https://qgis.org/ubuntugis-ltr |  |  |
 ||| Nightly build of upcoming point release for Debian and Ubuntu | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |  |  |
 ||| Nightly build of upcoming point release with ubuntugis-unstable dependencies  | https://qgis.org/ubuntugis-nightly-ltr |  |  |
-| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
-||| Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |  |  |
+| Development Version | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[3]](#id3) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+||| Nightly build with ubuntugis-unstable dependencies [[3]](#id3) | https://qgis.org/ubuntugis-nightly |  |  |
 
-{{< footnote "2" >}} Nightlies are debug builds (including debugging output)
+{{< footnote "3" >}} Nightlies are debug builds (including debugging output)
 
 <small>
 Next point release: {{< param "nextpointreleasedate" >}}
@@ -211,17 +211,15 @@ Next release: {{< param "nextreleasedate" >}}
 
 |Distribution|Version         |Codename             |Master nightlies[[5]](#id5)|ubuntugis[[6]](#id6)|
 |------------|----------------|---------------------|---------------------------|--------------------|
-|Debian      |12.x (stable)   |bookworm             |                           |                    |
-|            |13.x (testing)  |trixie [[3]](#id3)   |yes                        |                    |
+|Debian      |12.x (stable)   |bookworm [[4]](#id4) |                           |                    |
+|            |13.x (testing)  |trixie               |yes                        |                    |
 |            |unstable        |sid                  |yes                        |                    |
-|Ubuntu      |25.10           |questing [[4]](#id4) |yes                        |                    |
-|            |25.04           |plucky [[3]](#id3)   |yes                        |                    |
-|            |24.04 (LTS)     |noble                |                           |yes                 |
-|            |22.04 (LTS)     |jammy                |                           |yes                 |
+|Ubuntu      |25.10           |questing             |yes                        |                    |
+|            |25.04           |plucky               |yes                        |                    |
+|            |24.04 (LTS)     |noble [[4]](#id4)    |                           |yes                 |
+|            |22.04 (LTS)     |jammy [[4]](#id4)    |                           |yes                 |
 
-{{< footnote "3" >}} starting with 3.40.8/3.44.0
-
-{{< footnote "4" >}} starting with 3.40.11/3.44.3
+{{< footnote "4" >}} only up to 3.44
 
 {{< footnote "5" >}} based on Qt6
 
