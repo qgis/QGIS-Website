@@ -95,8 +95,9 @@
         {{ $cookiecss := resources.Get "css/cookie.css" }}
         {{ $osgeovibrantcss := resources.Get "css/osgeo-vibrant.css" }}
         {{ $siteoverridescss := resources.Get "css/site-overrides.css" }}
+        {{ $experimentalribboncss := resources.Get "css/experimental-ribbon.css" }}
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
-        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss $osgeovibrantcss $siteoverridescss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
+        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss $osgeovibrantcss $siteoverridescss $experimentalribboncss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
         <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
         {{/* We can compile SASS too... */}}
