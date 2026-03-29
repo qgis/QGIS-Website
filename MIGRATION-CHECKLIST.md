@@ -13,7 +13,7 @@ This checklist tracks content and URL verification for all pages migrated from o
 | Page | osgeo.org URL | Hugo Path | Content | URL |
 |------|---------------|-----------|:-------:|:---:|
 | Homepage | `/` | `content/_index.md` | [x] | [x] |
-| Search | `/search/` | *Not implemented* | N/A | [ ] |
+| Search | `/search/` | `content/search.md` | [x] | [x] |
 
 ---
 
@@ -209,7 +209,7 @@ The following Hugo aliases have been configured for backward compatibility:
 
 | Section | Total Pages | Content Verified | URL Verified |
 |---------|-------------|------------------|--------------|
-| Main | 2 | 1/2 | 1/2 |
+| Main | 2 | 2/2 | 2/2 |
 | About | 17 | 17/17 | 17/17 |
 | Initiatives | 11 | 11/11 | 11/11 |
 | Community | 11 | 11/11 | 11/11 |
@@ -217,11 +217,11 @@ The following Hugo aliases have been configured for backward compatibility:
 | Resources | 3 | 3/3 | 3/3 |
 | Footer/Legal | 2 | 2/2 | 2/2 |
 | Projects | 53 | 53/53 | 53/53 |
-| **TOTAL** | **103** | **102/103** | **102/103** |
+| **TOTAL** | **103** | **103/103** | **103/103** |
 
-### Outstanding Items
+### Migration Complete
 
-1. **Search functionality** (`/search/`) - Not yet implemented. Requires Hugo search integration (e.g., Algolia, Lunr.js, or Pagefind).
+All 103 pages have been verified and migrated, including search functionality using Fuse.js.
 
 ---
 
