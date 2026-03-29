@@ -1,0 +1,340 @@
+/**
+ * OSGeo Search Styles
+ * Beautiful, geospatial-themed search experience
+ */
+
+/* Search Results Page Styling */
+.search-container {
+    max-width: 900px !important;
+}
+
+.search-results-section {
+    min-height: 60vh;
+    background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%);
+}
+
+/* Search Header */
+.search-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, rgba(77, 176, 91, 0.05) 0%, rgba(0, 58, 64, 0.03) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(77, 176, 91, 0.1);
+}
+
+.search-header-icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+}
+
+.search-globe {
+    width: 100%;
+    height: 100%;
+    animation: globe-rotate 20s linear infinite;
+}
+
+@keyframes globe-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.search-header-content {
+    flex: 1;
+}
+
+.search-header-content .title {
+    margin-bottom: 0.5rem;
+    color: #003A40;
+}
+
+.search-query-display {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6B7B8D;
+    margin: 0;
+}
+
+.search-query-display .icon {
+    color: #4DB05B;
+}
+
+.search-query-display strong {
+    color: #003A40;
+}
+
+/* Inline Search Form */
+.search-input-inline {
+    margin-bottom: 2rem;
+}
+
+.search-form-inline .field.has-addons {
+    justify-content: center;
+}
+
+.search-form-inline .control.is-expanded {
+    max-width: 600px;
+}
+
+.search-form-inline .input {
+    border-radius: 12px 0 0 12px;
+    border: 2px solid #d4dbe2;
+    transition: all 0.3s ease;
+}
+
+.search-form-inline .input:focus {
+    border-color: #4DB05B;
+    box-shadow: 0 0 0 4px rgba(77, 176, 91, 0.1);
+}
+
+.search-form-inline .button {
+    border-radius: 0 12px 12px 0;
+    background: linear-gradient(135deg, #4DB05B 0%, #003A40 100%);
+    border: none;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.search-form-inline .button:hover {
+    background: linear-gradient(135deg, #003A40 0%, #4DB05B 100%);
+}
+
+/* Search Loading */
+.search-loading {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 3rem;
+    color: #6B7B8D;
+    font-size: 1.1rem;
+}
+
+.search-loading-spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #d4dbe2;
+    border-top-color: #4DB05B;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Search Results Container */
+.search-results-container {
+    margin-bottom: 2rem;
+}
+
+.search-results-empty {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #6B7B8D;
+    background: linear-gradient(135deg, #f7f9fb 0%, #e8ecf0 100%);
+    border-radius: 16px;
+    margin: 1rem 0;
+}
+
+.search-results-empty a {
+    color: #4DB05B;
+    font-weight: 600;
+}
+
+/* Search result items */
+#search-results .search-item {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    transition: transform 0.25s ease;
+}
+
+#search-results .search-item:hover {
+    transform: translateX(8px);
+}
+
+#search-results .list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid #e8ecf0;
+    box-shadow: 0 4px 16px rgba(0, 58, 64, 0.06);
+    transition: all 0.3s ease;
+}
+
+#search-results .list-item:hover {
+    border-color: #4DB05B;
+    box-shadow: 0 8px 28px rgba(77, 176, 91, 0.12);
+}
+
+#search-results .list-item-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(77, 176, 91, 0.1) 0%, rgba(0, 58, 64, 0.08) 100%);
+    border-radius: 10px;
+    color: #4DB05B;
+}
+
+#search-results .list-item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+#search-results .list-item-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #003A40;
+    margin-bottom: 0.5rem;
+    transition: color 0.25s ease;
+}
+
+#search-results .search-item:hover .list-item-title {
+    color: #4DB05B;
+}
+
+#search-results .list-item-description {
+    font-size: 0.95rem;
+    color: #4D6370;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+#search-results .list-item-arrow {
+    flex-shrink: 0;
+    color: #d4dbe2;
+    transition: all 0.3s ease;
+}
+
+#search-results .search-item:hover .list-item-arrow {
+    color: #4DB05B;
+    transform: translateX(4px);
+}
+
+#search-results .tags {
+    margin-top: 0.5rem;
+}
+
+#search-results .tags .tag {
+    font-size: 0.75rem;
+    border-radius: 20px;
+    padding: 0.25em 0.75em;
+    font-weight: 500;
+}
+
+#search-results .tags .tag a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Mark.js highlight styling */
+#search-results mark {
+    background: linear-gradient(135deg, rgba(77, 176, 91, 0.3) 0%, rgba(77, 176, 91, 0.2) 100%);
+    color: inherit;
+    padding: 0.1em 0.25em;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Search Tips Card */
+.search-tips {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.search-tips-card {
+    max-width: 500px;
+    padding: 1.5rem 2rem;
+    background: linear-gradient(135deg, #f7f9fb 0%, #e8ecf0 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(77, 176, 91, 0.1);
+}
+
+.search-tips-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #003A40;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search-tips-title .icon {
+    color: #4DB05B;
+}
+
+.search-tips-list {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: #6B7B8D;
+    font-size: 0.9rem;
+}
+
+.search-tips-list li {
+    margin-bottom: 0.5rem;
+}
+
+.search-tips-list li:last-child {
+    margin-bottom: 0;
+}
+
+.search-tips-list a {
+    color: #4DB05B;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+.search-tips-list a:hover {
+    color: #003A40;
+    text-decoration: underline;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    .search-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.25rem;
+    }
+
+    .search-header-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .search-query-display {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #search-results .list-item {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    #search-results .list-item-icon {
+        margin-bottom: 0.5rem;
+    }
+
+    #search-results .list-item-arrow {
+        display: none;
+    }
+
+    .search-tips-card {
+        padding: 1.25rem 1.5rem;
+    }
+}

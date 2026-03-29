@@ -1,0 +1,120 @@
+{{ partial "header.html" . }}
+{{/* Load search-specific CSS */}}
+{{ $searchcss := resources.Get "css/search.css" | resources.Minify | resources.Fingerprint }}
+<link href="{{ $searchcss.RelPermalink }}" rel="stylesheet" />
+{{ partial "menu.html" . }}
+{{ partial "banner.html" . }}
+{{ partial "contextmenu.html" . }}
+
+<section class="section search-results-section">
+    <div class="container content search-container">
+        <div class="search-header">
+            <div class="search-header-icon">
+                <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" class="search-globe">
+                    <defs>
+                        <linearGradient id="globeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#4DB05B;stop-opacity:0.8" />
+                            <stop offset="100%" style="stop-color:#003A40;stop-opacity:0.6" />
+                        </linearGradient>
+                    </defs>
+                    <circle cx="40" cy="40" r="35" fill="none" stroke="url(#globeGradient)" stroke-width="2"/>
+                    <ellipse cx="40" cy="40" rx="35" ry="15" fill="none" stroke="#4DB05B" stroke-width="1" opacity="0.5"/>
+                    <ellipse cx="40" cy="40" rx="15" ry="35" fill="none" stroke="#4DB05B" stroke-width="1" opacity="0.5"/>
+                    <line x1="5" y1="40" x2="75" y2="40" stroke="#4DB05B" stroke-width="1" opacity="0.4"/>
+                    <circle cx="40" cy="40" r="4" fill="#4DB05B"/>
+                    <circle cx="25" cy="30" r="2" fill="#003A40" opacity="0.6"/>
+                    <circle cx="55" cy="50" r="2.5" fill="#4DB05B" opacity="0.6"/>
+                    <circle cx="50" cy="25" r="1.5" fill="#003A40" opacity="0.5"/>
+                </svg>
+            </div>
+            <div class="search-header-content">
+                <h1 class="title">Search Results</h1>
+                <p class="search-query-display">
+                    <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    Searching for: <strong id="search-query-text"></strong>
+                </p>
+            </div>
+        </div>
+
+        <div class="search-input-inline">
+            <form action="{{ "search/" | absURL }}" method="GET" class="search-form-inline">
+                <div class="field has-addons">
+                    <div class="control is-expanded has-icons-left">
+                        <input class="input is-medium" type="search" id="search-query" name="q" placeholder="Search OSGeo projects, initiatives, and more...">
+                        <span class="icon is-left">
+                            <i class="fa-solid fa-compass"></i>
+                        </span>
+                    </div>
+                    <div class="control">
+                        <button class="button is-osgeo-primary is-medium" type="submit">
+                            <span class="icon"><i class="fa-solid fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="search-loading">
+            <span class="search-loading-spinner"></span>
+            <span>Searching the geospatial world...</span>
+        </div>
+
+        <div class="search-results-container">
+            <div id="search-results" class="list"></div>
+        </div>
+
+        <div class="search-tips">
+            <div class="search-tips-card">
+                <h4 class="search-tips-title">
+                    <span class="icon"><i class="fa-solid fa-lightbulb"></i></span>
+                    Search Tips
+                </h4>
+                <ul class="search-tips-list">
+                    <li>Use multiple keywords for better results</li>
+                    <li>Try project names like "QGIS", "PostGIS", or "GDAL"</li>
+                    <li>Search for initiatives: "FOSS4G", "Geo for All"</li>
+                    <li>Browse all <a href="{{ "projects/" | absURL }}">projects</a> or <a href="{{ "initiatives/" | absURL }}">initiatives</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{/* This javascript template will get iteratively rendered into the
+     div above with id of search-results. See search.js for
+     logic of how this template is called. */}}
+<script id="search-result-template" type="text/x-js-template">
+    <a href="${link}" class="search-item">
+        <div class="list-item">
+            <div class="list-item-icon">
+                <span class="icon"><i class="fa-solid fa-map-location-dot"></i></span>
+            </div>
+            <div id="summary-${key}" class="list-item-content">
+                <div class="list-item-title">${title}</div>
+                <div class="list-item-description">${snippet}</div>
+                <div class="tags">
+                    ${ isset categories }${categories}${ end }
+                    ${ isset tags }${tags}${ end }
+                </div>
+            </div>
+            <div class="list-item-arrow">
+                <span class="icon"><i class="fa-solid fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </a>
+</script>
+
+<script>
+// Display the search query in the header
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const query = urlParams.get('q');
+    const queryDisplay = document.getElementById('search-query-text');
+    if (query && queryDisplay) {
+        queryDisplay.textContent = query;
+    }
+});
+</script>
+
+{{ partial "blocks-end.html" . }}
+{{ partial "footer.html" . }}
