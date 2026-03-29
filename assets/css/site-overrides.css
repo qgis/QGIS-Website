@@ -70,7 +70,53 @@
   border-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Logo with subtle shadow */
+/* Logo with light background frame for contrast */
+.page-hero-logo {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.2),
+    0 8px 40px rgba(0, 0, 0, 0.15);
+}
+
 .page-hero-logo img {
-  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+  filter: none;
+  max-width: 180px;
+}
+
+/* =============================================
+   HERO STAT CARDS - IMPROVED CONTRAST
+   ============================================= */
+
+/* Make stat numbers bright white for readability */
+.hero-stat-card .stat-number {
+  color: #ffffff;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.3),
+    0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Brighter plus signs */
+.hero-stat-card .stat-plus {
+  color: #90EE90;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Brighter labels */
+.hero-stat-card .stat-label {
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Add slight backdrop blur and lighter background for better contrast */
+.hero-stat-card {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Brighter icons */
+.hero-stat-card .stat-icon {
+  color: rgba(255, 255, 255, 0.4);
 }
