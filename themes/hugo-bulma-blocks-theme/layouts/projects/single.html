@@ -85,11 +85,11 @@
             <div class="column is-4">
                 {{ if $project.hero_image }}
                 <div class="project-hero-image">
-                    <img src="{{ $project.hero_image }}" alt="{{ $project.name }}">
+                    <img src="{{ relURL $project.hero_image }}" alt="{{ $project.name }}">
                 </div>
                 {{ else if $project.screenshot }}
                 <div class="project-hero-image">
-                    <img src="{{ $project.screenshot }}" alt="{{ $project.name }} screenshot">
+                    <img src="{{ relURL $project.screenshot }}" alt="{{ $project.name }} screenshot">
                 </div>
                 {{ else }}
                 <div class="project-hero-icon" style="background: {{ $category.color }}15; color: {{ $category.color }}">
@@ -136,7 +136,7 @@
                     {{/* Large Screenshot */}}
                     {{ if $project.screenshot }}
                     <div class="project-screenshot">
-                        <img src="{{ $project.screenshot }}" alt="{{ $project.name }} interface screenshot">
+                        <img src="{{ relURL $project.screenshot }}" alt="{{ $project.name }} interface screenshot">
                     </div>
                     {{ end }}
 
