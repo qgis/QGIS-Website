@@ -3,7 +3,7 @@
 {{ partial "menu.html" . }}
 {{ partial "contextmenu.html" . }}
 {{/* Use stunning OSGeo hero on homepage instead of standard banner */}}
-{{ if eq .RelPermalink "/" }}
+{{ if .IsHome }}
     {{ partial "osgeo-hero.html" . }}
 {{ else }}
     {{ partial "banner.html" . }}
