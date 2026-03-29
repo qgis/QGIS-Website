@@ -3,6 +3,8 @@ type: "page"
 title: "OSGeoLive"
 subtitle: "Try 50+ Geospatial Applications Without Installing Anything"
 description: "OSGeoLive is a self-contained bootable DVD, USB drive, or virtual machine with pre-configured open source geospatial software for evaluation and training."
+aliases:
+  - /initiatives/osgeo-live-initiative/
 draft: false
 heroSize: "is-medium"
 heroLogo: ""

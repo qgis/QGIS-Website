@@ -154,20 +154,21 @@ OSGeo is governed by a **Board of Directors** elected by our Charter Members. Th
 
 {{< column-start class="is-6" >}}
 
-### Board of Directors (2025)
+### Board of Directors
 
-| Name | Location |
-|------|----------|
-| Angelos Tzotsos (President) | Athens, Greece |
-| Michael Smith (Treasurer) | Hanover, USA |
-| Astrid Emde (Secretary) | Germany |
-| Jeroen Ticheler | Netherlands |
-| Tom Kralidis (VP) | Toronto, Canada |
-| Tim Sutton | South Africa |
-| Codrina Maria Ilie (VP) | Romania |
-| Vicky Vergara (VP) | Mexico |
-| Joana Simoes | Worldwide |
-| Marco Bernasocchi (VP) | Switzerland |
+| Name | Role |
+|------|------|
+| Jeroen Ticheler | President |
+| Tom Kralidis | VP North America |
+| Tim Sutton | VP Africa |
+| Codrina Maria Ilie | VP Europe |
+| Marco Bernasocchi | VP Oceania |
+| Vicky Vergara | VP South America & Asia |
+| Angelos Tzotsos | Board Member |
+| Joana Simoes | Board Member |
+| Michael Smith | Treasurer |
+
+*Secretary: Astrid Emde*
 
 {{< column-end >}}
 
@@ -214,9 +215,9 @@ OSGeo is incorporated in the **State of Delaware, USA** as a **501(c)(4)** not-f
 ### Key Documents
 
 - [Certificate of Incorporation](https://wiki.osgeo.org/wiki/Incorporation)
-- [Bylaws](https://wiki.osgeo.org/wiki/Bylaws)
+- [Bylaws](/about/bylaws/)
 - [Code of Conduct](/community/code-of-conduct/)
-- [Trademark Guidelines](/about/branding/)
+- [Trademark Guidelines](/legal-information/)
 
 {{< column-end >}}
 
@@ -265,7 +266,7 @@ OSGeo's work is driven by passionate volunteers organized into committees:
 
 {{< columns-end >}}
 
-[Learn About Committees &rarr;](https://wiki.osgeo.org/wiki/Committees)
+[Learn About Committees &rarr;](/about/committees/)
 
 ---
 

@@ -179,9 +179,10 @@ Supporting the United Nations' migration toward open source geospatial software.
 <h2 class="section-title">Completed Initiatives</h2>
 </div>
 
-Some initiatives have successfully achieved their goals:
+Some initiatives have successfully achieved their goals or are ongoing specialized efforts:
 
-- **OpenGIS Harmonization** - Completed work on harmonizing geospatial standards
+- **[OpenGIS Harmonization](/opengis-harmonization/)** - Coordinating the org.opengis Java package among stakeholders
+- **[Meta CRS Initiative](/meta-crs-initiative/)** - Interoperability initiative for coordinate reference systems
 
 <div class="section-header">
 <div class="section-header-badge">

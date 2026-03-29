@@ -3,6 +3,8 @@ type: "page"
 title: "Awards & Recognition"
 subtitle: "Celebrating Excellence in Open Source Geospatial"
 description: "OSGeo recognizes outstanding contributions to open source geospatial through the Sol Katz Award and other honors."
+aliases:
+  - /community/awards/
 draft: false
 heroSize: "is-medium"
 HeroImage: "/img/about-community.jpg"

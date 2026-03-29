@@ -3,6 +3,8 @@ type: "page"
 title: "Code of Conduct"
 subtitle: "Creating a Welcoming Community"
 description: "The OSGeo Code of Conduct sets the standards for respectful and inclusive behavior within our community."
+aliases:
+  - /code_of_conduct/
 draft: false
 heroSize: "is-medium"
 HeroImage: "/img/community/getting-started-hero.jpg"

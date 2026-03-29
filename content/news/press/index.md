@@ -3,6 +3,8 @@ type: "page"
 title: "Press Releases"
 subtitle: "Official announcements from OSGeo"
 description: "Official press releases and media announcements from the Open Source Geospatial Foundation."
+aliases:
+  - /foundation-news/
 draft: false
 heroSize: "is-medium"
 HasBanner: true

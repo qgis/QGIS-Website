@@ -8,6 +8,8 @@ heroSize: "is-medium"
 HeroImage: "/img/banners/banner3.png"
 HasBanner: true
 sidebar: true
+aliases:
+  - /about/committees/incubation/
 ---
 
 {{< columns-start >}}

@@ -3,6 +3,8 @@ type: "page"
 title: "Getting Started with OSGeo"
 subtitle: "Your Journey into Open Source Geospatial Begins Here"
 description: "Learn how to get started with OSGeo software, join the community, and begin contributing to open source geospatial projects."
+aliases:
+  - /community/getting-started-osgeo/
 draft: false
 heroSize: "is-medium"
 HeroImage: "/img/community/getting-started-hero.jpg"

@@ -3,6 +3,8 @@ type: "page"
 title: "Community Updates"
 subtitle: "News from the OSGeo community"
 description: "Community news, charter member elections, awards, and updates from the open source geospatial community."
+aliases:
+  - /community-news/
 draft: false
 heroSize: "is-medium"
 HasBanner: true

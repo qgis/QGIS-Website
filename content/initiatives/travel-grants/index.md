@@ -3,6 +3,8 @@ type: "page"
 title: "Travel Grants"
 subtitle: "Supporting diverse participation at FOSS4G"
 description: "Apply for an OSGeo travel grant to attend FOSS4G conferences. We support community members who need financial assistance to participate."
+aliases:
+  - /initiatives/foss4g-travel-grant-program/
 draft: false
 heroSize: "is-medium"
 HeroImage: "/img/initiatives/foss4g-hero.webp"

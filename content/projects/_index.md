@@ -3,7 +3,8 @@ type: "projects"
 title: "OSGeo Projects"
 subtitle: "Discover powerful open source geospatial software trusted by organizations worldwide"
 description: "Browse the complete collection of OSGeo projects - from desktop GIS applications to web mapping frameworks, spatial databases, and geospatial libraries."
-
+aliases:
+  - /choose-a-project/
 draft: false
 heroSize: "is-medium"
 HeroImage: "img/banners/projects-banner.webp"

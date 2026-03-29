@@ -33,6 +33,7 @@ For general questions about OSGeo:
 <div class="column">
 <h4>Email</h4>
 <p><a href="mailto:info@osgeo.org">info@osgeo.org</a></p>
+<p class="is-size-7 has-text-grey">Note: This address is not monitored regularly. For technical questions, please use the project-specific mailing lists.</p>
 </div>
 </div>
 </div>
@@ -181,11 +182,10 @@ For questions about specific OSGeo projects, please contact them directly throug
 {{< box-start classes="has-background-light mt-4" >}}
 ### Mailing Address
 
-Open Source Geospatial Foundation
-
-*OSGeo is a distributed organization with no physical headquarters.*
-
-Legal seat: Beaverton, Oregon, USA
+**OSGeo**
+9450 SW Gemini Dr. #42523
+Beaverton, Oregon 97008
+United States
 {{< box-end >}}
 
 {{< box-start classes="has-background-white mt-4" >}}

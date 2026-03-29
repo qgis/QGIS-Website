@@ -3,6 +3,8 @@ type: "page"
 title: "Charter Members"
 subtitle: "The foundation of the OSGeo community"
 description: "Meet the OSGeo Charter Members - individuals who have demonstrated sustained and significant contributions to the open source geospatial community."
+aliases:
+  - /about/charter-members/
 draft: false
 heroSize: "is-medium"
 HeroImage: "/img/community/get-involved-hero.jpg"

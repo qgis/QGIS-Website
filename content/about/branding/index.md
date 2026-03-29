@@ -3,6 +3,8 @@ type: "page"
 title: "Brand Guidelines"
 subtitle: "Using the OSGeo Identity"
 description: "Guidelines for using OSGeo logos, colors, and brand assets in your projects, presentations, and materials."
+aliases:
+  - /about/branding-material/
 draft: false
 heroSize: "is-medium"
 HeroImage: "/img/banners/banner4.png"
