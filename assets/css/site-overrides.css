@@ -1,0 +1,76 @@
+/**
+ * OSGeo Site Overrides
+ * Custom styling improvements
+ */
+
+/* =============================================
+   HERO TEXT CONTRAST IMPROVEMENTS
+   ============================================= */
+
+/* Enhanced title with text shadow for better legibility */
+.page-hero-title {
+  color: #ffffff;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.4),
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced subtitle with better contrast */
+.page-hero-subtitle {
+  color: #ffffff;
+  text-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Badge with better contrast */
+.page-hero-badge {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(77, 176, 91, 0.5);
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Hero background image - increase visibility */
+.page-hero-bg .hero-bg-image {
+  opacity: 0.25;
+}
+
+/* Add a subtle dark overlay for text readability */
+.page-hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 30, 34, 0.3) 0%,
+    rgba(0, 58, 64, 0.2) 50%,
+    rgba(0, 30, 34, 0.4) 100%
+  );
+  z-index: 1;
+}
+
+/* Ensure content is above the overlay */
+.page-hero-pattern {
+  z-index: 2;
+}
+
+.page-hero-content {
+  z-index: 10;
+}
+
+/* Hero buttons with better contrast */
+.hero-btn-primary {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero-btn-secondary {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Logo with subtle shadow */
+.page-hero-logo img {
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
+}

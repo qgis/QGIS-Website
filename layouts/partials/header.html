@@ -94,9 +94,9 @@
         {{ $overridescss := resources.Get "css/bulma-overrides.css" }}
         {{ $cookiecss := resources.Get "css/cookie.css" }}
         {{ $osgeovibrantcss := resources.Get "css/osgeo-vibrant.css" }}
-        {{ $experimentalribboncss := resources.Get "css/experimental-ribbon.css" }}
+        {{ $siteoverridescss := resources.Get "css/site-overrides.css" }}
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
-        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss $osgeovibrantcss $experimentalribboncss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
+        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss $osgeovibrantcss $siteoverridescss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
         <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
         {{/* We can compile SASS too... */}}
@@ -165,8 +165,8 @@
         {{ if (eq .Site.Params.cookiesstate true) }}
             {{ $cookiejs := resources.Get "js/cookie.js" }}
             {{ $js = slice $animatejs $expandjs $navbarjs $qrcreatejs $fusejs $markjs $matomojs $cookiejs | resources.Concat "js/all.js" | resources.Minify | resources.Fingerprint }}
-        {{ end }}
-        <script defer src="{{ $js.RelPermalink }}"></script>
+        {{ end }}   
+        <script defer src="{{ $js.RelPermalink }}"></script> 
         {{/* Search needs to be rendered as a template to ensure urls are correct */}}
         {{ $searchjs := resources.Get "js/search.js" | resources.ExecuteAsTemplate "search.js" . | resources.Minify | resources.Fingerprint }}
         <script defer src="{{ $searchjs.RelPermalink }}"></script>

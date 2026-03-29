@@ -7,7 +7,7 @@ description: "The Open Source Geospatial Foundation (OSGeo) develops the open so
 draft: false
 heroSize: "is-large"
 heroLogo: "img/osgeo/osgeo-logo.svg"
-HeroImage: "img/hero-bg.webp"
+HeroImage: "/img/aerial-image-with-vector-overlay.webp"
 HasBanner: true
 ButtonText: "Explore Projects"
 ButtonLink: "projects/"
