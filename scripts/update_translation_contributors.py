@@ -269,9 +269,7 @@ def main() -> None:
                 all_word_counts[username] += count
         except PlanLimitationError as exc:
             print(
-                f"  SKIP: Project {project_slug!r} requires a premium Transifex plan.\n"
-                f"    Detail: {exc}\n"
-                f"    Apply for an open-source plan at https://www.transifex.com/open-source/",
+                f"    Detail: {exc}\n",
                 file=sys.stderr,
             )
             plan_limited += 1
