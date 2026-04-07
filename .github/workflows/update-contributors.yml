@@ -55,6 +55,16 @@ jobs:
         pipenv run python scripts/match_commercial_contributors.py
         echo "Commercial support matching completed"
 
+    - name: '🌐 Update translation contributors'
+      continue-on-error: true
+      env:
+        TX_TOKEN: ${{ secrets.TX_TOKEN }}
+      run: |
+        cd ./qgis-website
+        echo "Starting translation contributors update..."
+        pipenv run python scripts/update_translation_contributors.py
+        echo "Translation contributors update completed"
+
     - name: '✉️ Commit and push changes'
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
