@@ -1,0 +1,95 @@
+{{/*
+  Windows Download Buttons
+  Project-root override that adds BitTorrent P2P download buttons alongside
+  the standard HTTP downloads for the standalone MSI installers.
+  NOTE: this partial is called with . already set to site.Data.conf
+  (via the {{ with index .Site.Data.conf }} in download-banner.html),
+  so do not add another with wrapper here.
+*/}}
+
+<!-- Network Installer Section -->
+<div class="notification is-primary2 is-light">
+  <p class="is-6 mb-2">
+    <strong>Online (OSGeo4W) installer</strong>
+  </p>
+  <p class="is-size-7 mb-3">Best way to keep QGIS up to date and manage multiple versions.
+    <a class="has-text-dark" href="{{ absURL "resources/installation-guide#online-osgeo4w-installer" }}">
+        Learn more.
+    </a>
+  </p>
+  <a class="button mr-0 is-primary2 is-fullwidth"
+      href="https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe"
+      onclick="thanks(this)"
+      download>
+    <span class="icon">
+      <i class="fas fa-cloud-download-alt"></i>
+    </span>
+    <span>Get OSGeo4W Installer</span>
+  </a>
+</div>
+
+<!-- LTR Section -->
+<div class="mb-5">
+  <div class="level is-mobile mb-2">
+    <div class="level-left">
+      <div class="level-item">
+        <p class="is-size-5 has-text-weight-medium mb-0">Long Term Release</p>
+      </div>
+    </div>
+  </div>
+  <div class="qgis-torrent-wrap">
+    <div class="buttons has-addons is-fullwidth mb-0">
+      <a class="button is-primary1 is-expanded"
+          href="{{ .ltr_msi }}"
+          onclick="thanks(this)"
+          download>
+        <span class="icon">
+          <i class="fas fa-download"></i>
+        </span>
+        <span>Download LTR {{ .ltrversion }}</span>
+      </a>
+      <button class="button is-primary1 qgis-torrent-btn"
+          data-http="{{ .ltr_msi }}"
+          data-filename="{{ path.Base .ltr_msi }}"
+          data-platform="windows"
+          title="Download via BitTorrent P2P — gets faster the more people download">
+        <span class="icon"><i class="fas fa-bolt"></i></span>
+        <span>BitTorrent</span>
+      </button>
+    </div>
+    <div class="qgis-torrent-status is-size-7 has-text-grey mt-1"></div>
+  </div>
+</div>
+
+<!-- Latest Release Section -->
+<div class="mb-5">
+  <div class="level is-mobile mb-2">
+    <div class="level-left">
+      <div class="level-item">
+        <p class="is-size-5 has-text-weight-medium mb-0">{{ if strings.HasSuffix .release ".0" }}Early Adopter Release{{ else }}Latest Release{{ end }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="qgis-torrent-wrap">
+    <div class="buttons has-addons is-fullwidth mb-0">
+      <a class="button is-info is-expanded"
+          href="{{ .lr_msi }}"
+          onclick="thanks(this)"
+          download>
+        <span class="icon">
+          <i class="fas fa-download"></i>
+        </span>
+        <span>Download {{ if strings.HasSuffix .release ".0" }}{{ .release }}{{ else }}{{ .version }}{{ end }}</span>
+      </a>
+      <button class="button is-info qgis-torrent-btn"
+          data-http="{{ .lr_msi }}"
+          data-filename="{{ path.Base .lr_msi }}"
+          data-platform="windows"
+          title="Download via BitTorrent P2P — gets faster the more people download">
+        <span class="icon"><i class="fas fa-bolt"></i></span>
+        <span>BitTorrent</span>
+      </button>
+    </div>
+    <div class="qgis-torrent-status is-size-7 has-text-grey mt-1"></div>
+  </div>
+</div>

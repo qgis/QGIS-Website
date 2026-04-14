@@ -1,5 +1,8 @@
 {{/*
   macOS Download Buttons
+  BitTorrent buttons use the File System Access API (showDirectoryPicker) to
+  stream ~1.5 GB DMG files directly to disk. The JS falls back to the plain
+  HTTP download on browsers that lack the API (e.g. Firefox).
 */}}
 <!-- LTR Section -->
 <div class="mb-5">
@@ -10,16 +13,30 @@
       </div>
     </div>
   </div>
-  <a class="button is-primary1 is-fullwidth" 
-      href="https://download.qgis.org/downloads/macos/qgis-macos-ltr.dmg"
-      onclick="thanks(this)"
-      download>
-    <span class="icon">
-      <i class="fas fa-download"></i>
-    </span>
-    <span>Download LTR {{ .ltrversion }} for macOS</span>
-  </a>
+  <div class="qgis-torrent-wrap">
+    <div class="buttons has-addons is-fullwidth mb-0">
+      <a class="button is-primary1 is-expanded"
+          href="https://download.qgis.org/downloads/macos/qgis-macos-ltr.dmg"
+          onclick="thanks(this)"
+          download>
+        <span class="icon">
+          <i class="fas fa-download"></i>
+        </span>
+        <span>Download LTR {{ .ltrversion }} for macOS</span>
+      </a>
+      <button class="button is-primary1 qgis-torrent-btn"
+          data-http="https://download.qgis.org/downloads/macos/qgis-macos-ltr.dmg"
+          data-filename="qgis-macos-ltr.dmg"
+          data-platform="macos"
+          title="Download via BitTorrent P2P — gets faster the more people download (requires Chrome, Edge or Safari)">
+        <span class="icon"><i class="fas fa-bolt"></i></span>
+        <span>BitTorrent</span>
+      </button>
+    </div>
+    <div class="qgis-torrent-status is-size-7 has-text-grey mt-1"></div>
+  </div>
 </div>
+
 <!-- Latest Release Section -->
 <div class="mb-5">
   <div class="level is-mobile mb-2">
@@ -29,15 +46,28 @@
       </div>
     </div>
   </div>
-  <a class="button is-info is-fullwidth" 
-      href="https://download.qgis.org/downloads/macos/qgis-macos-pr.dmg"
-      onclick="thanks(this)"
-      download>
-    <span class="icon">
-      <i class="fas fa-download"></i>
-    </span>
-    <span>Download {{ .version }} for macOS</span>
-  </a>
+  <div class="qgis-torrent-wrap">
+    <div class="buttons has-addons is-fullwidth mb-0">
+      <a class="button is-info is-expanded"
+          href="https://download.qgis.org/downloads/macos/qgis-macos-pr.dmg"
+          onclick="thanks(this)"
+          download>
+        <span class="icon">
+          <i class="fas fa-download"></i>
+        </span>
+        <span>Download {{ .version }} for macOS</span>
+      </a>
+      <button class="button is-info qgis-torrent-btn"
+          data-http="https://download.qgis.org/downloads/macos/qgis-macos-pr.dmg"
+          data-filename="qgis-macos-pr.dmg"
+          data-platform="macos"
+          title="Download via BitTorrent P2P — gets faster the more people download (requires Chrome, Edge or Safari)">
+        <span class="icon"><i class="fas fa-bolt"></i></span>
+        <span>BitTorrent</span>
+      </button>
+    </div>
+    <div class="qgis-torrent-status is-size-7 has-text-grey mt-1"></div>
+  </div>
 </div>
 
 <!-- Nightly builds Section -->
@@ -48,7 +78,7 @@
       </div>
     </div>
   </div>
-  <a class="button is-primary1 is-outlined is-fullwidth" 
+  <a class="button is-primary1 is-outlined is-fullwidth"
       href="https://nightly.link/qgis/qgis-notarize/workflows/notarize/main/QGIS-master.zip"
       onclick="thanks(this)"
       download>
