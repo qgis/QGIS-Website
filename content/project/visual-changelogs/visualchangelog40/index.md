@@ -155,7 +155,7 @@ the line to reduce/enlarge it
 src="images/entries/05d17bd62aaa441e7756a5bf5970d4ddc90760da"
 class="img-responsive img-rounded" />
 
-This feature was funded by Stadt Frankfurt am Main and Oslandia
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) and Oslandia
 
 This feature was developed by [Julien
 Cabieces](https://github.com/troopa81)
@@ -169,10 +169,9 @@ and is available for polygon/linestring/point geometry types.
 src="images/entries/60adf287a322741a4f92f851fcfc369b068ed097.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by Stadt Frankfurt am Main
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
-This feature was developed by [Jacky
-Volpes](https://github.com/Djedouas)
+This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
 
 ## User Interface
 
@@ -217,7 +216,7 @@ This implements [QEP
 src="images/entries/553f1a2b5712a2f02d6a5a038197c1baefe6c012"
 class="img-responsive img-rounded" />
 
-This feature was funded by Stadt Frankfurt am Main and Oslandia
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) and Oslandia
 
 This feature was developed by [Julien
 Cabieces](https://github.com/troopa81)
@@ -287,6 +286,8 @@ operations for annotation items, including:
 <img
 src="images/entries/db55791d9e7c92428f8165d661bc264fd09ae61c.png"
 class="img-responsive img-rounded" />
+
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
@@ -466,7 +467,7 @@ terrain types.
 src="images/entries/45d755c8e01bb45c2b728dd1dc59dc6afabe8856.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by Stadt Frankfurt am Main
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 
@@ -559,6 +560,8 @@ display the camera frustum.
 <img
 src="images/entries/0c322a45de5780379e95e0f0d7467482e1d6661a.png"
 class="img-responsive img-rounded" />
+
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 
@@ -863,6 +866,8 @@ rendering (e.g., vector tile base maps).
 src="images/entries/6cadd40d1ebfa64b6190c75334df0340c00a4d93.png"
 class="img-responsive img-rounded" />
 
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
 
@@ -874,6 +879,8 @@ its layout designer.
 <img
 src="images/entries/ae30dae66281636965dbff50915b96b6ecbabacc.png"
 class="img-responsive img-rounded" />
+
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
@@ -896,6 +903,8 @@ be taken into account by the bar/line charts.
 src="images/entries/65b7cdfcb7c7595f007a1911e51894e3cfab80dc.png"
 class="img-responsive img-rounded" />
 
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
 
@@ -910,6 +919,8 @@ the active atlas feature.
 src="images/entries/7f1b58c91bf273f63b125dc5fe30327ae18068ed.png"
 class="img-responsive img-rounded" />
 
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
 
@@ -923,6 +934,8 @@ extent of a spatial layer in the project.
 src="images/entries/e4ba1fa83ed9a5601b434666eb8952eb270b970e"
 class="img-responsive img-rounded" />
 
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
 
@@ -934,6 +947,8 @@ users to tweak item rotation and perfect their layouts.
 <img
 src="images/entries/eaed49778b763c98749a2d37a9e4654602911616.png"
 class="img-responsive img-rounded" />
+
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
@@ -1066,7 +1081,7 @@ on a point using `alt+click`.
 src="images/entries/584c6a12ea7a79081fa1fce9f86d9c7d80ecf31c.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by Stadt Frankfurt am Main and Oslandia
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) and Oslandia
 
 This feature was developed by [Loïc
 Bartoletti](https://github.com/lbartoletti)
@@ -1093,14 +1108,14 @@ This feature was developed by [North Road](https://north-road.com/)
 A new digitizing Maptool allows users to chamfer or fillet polygons.  
 Development supported by:
 
-- Stadt Frankfurt am Main
+- [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 - Oslandia
 
 <img
 src="images/entries/58ace0c2995032999b366d0171a78857e687d3c4.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by Stadt Frankfurt am Main
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Benoit D.-M. -
 oslandia](https://github.com/benoitdm-oslandia)
@@ -1232,7 +1247,7 @@ disable reuse policies across all fields in a layer.
 src="images/entries/b06e53bc63de8ea4643beb74c69781076b613d07.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by Funded by DB Fahrwegdienste GmbH
+This feature was funded by DB Fahrwegdienste GmbH
 
 This feature was developed by [Mathieu
 Pellerin](https://github.com/nirvn)
@@ -1551,7 +1566,7 @@ the approximate medial axis will be calculated from its 2D projection.
 src="images/entries/0804299923000a846f55b0b8fb0b50e19e3893d5.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by Stadt Frankfurt am Main
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 
@@ -1575,8 +1590,7 @@ These changes were enabled by the introduction of the
 src="images/entries/532bbcaddf65f8d815ecdddd48ed71b067cdb855.png"
 class="img-responsive img-rounded" />
 
-This feature was funded by [City of Frankfurt –
-Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
 
@@ -1633,8 +1647,7 @@ be created and will be empty in the output GeoPackage.
 src="images/entries/33644c3a135003c6e8df79e9eda8878004b6ea28"
 class="img-responsive img-rounded" />
 
-This feature was funded by [City of Frankfurt –
-Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
 
@@ -2047,7 +2060,7 @@ and 3D points and calls the corresponding `QgsGeometryUtilsBase`
 function. A new `QgsGeometryUtilsBase::points3DAreCollinear` has also
 been introduced, which works for 3D points.
 
-This feature was funded by Stadt Frankfurt am Main\*\*
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 
@@ -2108,7 +2121,7 @@ The QGIS API was extended to support the implementation of blank area
 operations in line with [QEP
 \#345](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/345).
 
-This feature was funded by Stadt Frankfurt am Main\*\*
+This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 This feature was developed by [Julien
 Cabieces](https://github.com/troopa81)
@@ -2139,7 +2152,7 @@ Developed with support from:
 
 - CEA/DAM
 - CP4SC/France Relance/European Union
-- Stadt Frankfurt am Main
+- [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 - Oslandia
 - OPENGIS.ch
 
