@@ -1,4 +1,4 @@
----
+-7.234511, 112.625455---
 type: "page"
 title: "Download"
 subtitle: ""
