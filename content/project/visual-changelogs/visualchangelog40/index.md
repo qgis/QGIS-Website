@@ -1425,7 +1425,7 @@ A new Data Identification algorithm allows for the automated extraction
 of metadata using GDAL.  
 This algorithm requires GDAL \>= 3.13.0, as it uses the new capabilities
 of [gdal dataset
-identify](https://gdal--13506.org.readthedocs.build/en/13506/programs/gdal_dataset_identify.html).
+identify](https://gdal.org/en/stable/programs/gdal_dataset_identify.html).
 
 <img
 src="images/entries/76dfc1189b899bedaa208692766fc765ccb76175.png"
