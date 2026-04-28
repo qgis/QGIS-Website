@@ -4,7 +4,7 @@ title: "Changelog for QGIS 4.0"
 draft: false
 HasBanner: false
 sidebar: true
-releaseDate: "2026-04-03"
+releaseDate: "2026-03-06"
 section: "project"
 type: "visual-changelog"
 
