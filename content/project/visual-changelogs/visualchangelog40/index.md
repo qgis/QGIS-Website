@@ -1959,7 +1959,7 @@ Consulting)](https://github.com/uclaros)
 
 ### Feature: QGIS Project Versioning in PostgreSQL
 
-For QGIS Projects that leverage the new functionality to be stored
+For QGIS Projects that leverage the functionality to be stored
 directly in PostgreSQL, automatic version control can be enabled, which
 allows users to save, load, edit, and restore historic copies of their
 project. The process is mostly handled by a function and a trigger
