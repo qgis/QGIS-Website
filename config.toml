@@ -1081,6 +1081,12 @@ sectionPagesMenu = 'main'
     weight = 2
     contentDir = "content-translated/it"
 
+
+    [languages.bg]
+    languageCode = "bg"
+    weight = 2
+    contentDir = "content-translated/bg"
+
 [module]
   # English (base language) - only original content
   [[module.mounts]]
@@ -1142,3 +1148,12 @@ sectionPagesMenu = 'main'
     source = "content"
     target = "content"
     lang = "it"
+
+  [[module.mounts]]
+    source = "content-translated/bg"
+    target = "content"
+    lang = "bg"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "bg"

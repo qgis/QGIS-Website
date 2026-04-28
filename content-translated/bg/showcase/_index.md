@@ -3,7 +3,7 @@ author: ''
 draft: true
 heroImage: img/banners/banner1.png
 thumbnail: ''
-title: QGIS Showcases
+title: QGIS демонстрации
 type: showcase
 
 ---

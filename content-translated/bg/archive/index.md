@@ -10,12 +10,12 @@ type: page
 ---
 {{<content-start >}}
 # Архив
-Previous releases of QGIS are available at the following locations:
-* [QGIS.org hosted downloads](/downloads)
-* [Older releases for macOS / OS X](/downloads/macOS/)
-* [OSGeo hosted downloads](https://download.osgeo.org/qgis/)
-* [Legacy 'Kyngchaos' macOS / OS X downloads](https://www.kyngchaos.com/software/archive/).
+Предишни версии на QGIS са достъпни на следните места:
+* [Изтегляния, хоствани от QGIS.org](/downloads)
+* [По-стари версии за macOS / OS X](/downloads/macOS/)
+* [Изтегляния, хоствани от OSGeo](https://download.osgeo.org/qgis/)
+* [Изтегляния на стари версии на 'Kyngchaos' за macOS / OS X](https://www.kyngchaos.com/software/archive/).
 
-Plugins for QGIS are also available [at plugins.qgis.org](https://plugins.qgis.org/plugins/).
+Предлагат се и плъгини за QGIS [на plugins.qgis.org](https://plugins.qgis.org/plugins/).
 
 {{<content-end >}}

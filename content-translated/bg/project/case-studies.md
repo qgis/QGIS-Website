@@ -14,15 +14,15 @@ type: page
 {{<usecases >}}
 _______
 {{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-## Submit Your Case Study
+## Изпратете вашия казус
 Share your QGIS success story with the community! We welcome case study submissions that showcase real-world applications and inspire other users.
-### Option 1: Direct Contribution
+### Вариант 1: Директен принос
 1. **Create your case study** - Add a new markdown file under `content/project/case-studies/` in the [QGIS Website repository](https://github.com/qgis/QGIS-Website/)
 2. **Follow the template** - Use existing case studies as a structural guide
 3. **Optimize images** - Add visuals to the `images/` folder in `.webp` format for optimal performance
-4. **Submit via PR** - Create a pull request with your contribution
+4. **Изпращане чрез PR** - Създайте заявка за изтегляне с вашия принос
 
-### Option 2: Submit via Issue
+### Вариант 2: Изпращане чрез „Проблем“
 1. **Open an issue** - Create a new issue in the [QGIS Website repository](https://github.com/qgis/QGIS-Website/issues)
 2. **Share your story** - Write your case study text directly in the issue description
 3. **Attach media** - Upload images, screenshots, or other relevant files to the issue

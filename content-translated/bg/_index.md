@@ -1,10 +1,10 @@
 ---
 AnnouncementLabel: QGIS 4.0
 AnnouncementLink: project/visual-changelogs/visualchangelog40/
-AnnouncementLinkText: Explore the changelog
-AnnouncementText: Discover the new features, improvements, and everything that makes
-  this release a landmark moment.
-AnnouncementTitle: QGIS 4.0 is here — our most powerful release yet!
+AnnouncementLinkText: Разгледайте списъка с промени
+AnnouncementText: Открийте новите функции, подобрения и всичко, което прави това издание
+  забележително.
+AnnouncementTitle: QGIS 4.0 е тук — най-мощната ни версия досега!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
@@ -12,22 +12,22 @@ ButtonText: Изтегляне
 HasAnnouncement: true
 HasBanner: true
 HeroImage: img/hegobg1.webp
-LabelText: Free and Open Source
+LabelText: Безплатно и с отворен код
 OsgeoBadge: img/badges/osgeo-logo-white.svg
 OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
-SupportedOS: Available on Windows, Mac, Linux
+SupportedOS: Предлага се за Windows, Mac и Linux
 draft: false
 heroLogo: img/logosign.svg
 heroSize: is-medium
-subtitle: Spatial visualization and decision-making tools for everyone
-title: Spatial without Compromise
+subtitle: Инструменти за пространствена визуализация и вземане на решения за всеки
+title: Пространство без компромис
 type: page
 
 ---
-{{<feature title="Create maps" text="Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print media." col-title-1="Class-leading cartography" col-text-1="Experience QGIS's extensive set of design options to bring your maps to life." col-title-2="Professional map production" col-text-2="Use the intuitive layout designer to produce high-quality, large-format print maps." col-title-3="Powerful reporting tools" col-text-3="Create atlases and reports including maps and tabular content." img="img/main-create.webp" order=1 >}}
+{{<feature title="Създаване на карти" text="Разгледайте изключителните функции за картографски дизайн на QGIS, за да създавате отлични карти за настолни компютри, мобилни устройства, облачни услуги и печатни медии." col-title-1="Водеща в класа картография" col-text-1="Изпробвайте богатия набор от дизайнерски опции на QGIS, за да вдъхнете живот на вашите карти." col-title-2="Професионално изработване на карти" col-text-2="Използвайте интуитивния дизайнер на оформление, за да създавате висококачествени карти за печат в голям формат." col-title-3="Мощни инструменти за отчитане" col-text-3="Създавайте атласи и отчети, включително карти и таблично съдържание." img="img/main-create.webp" order=1 >}}
 
-{{<feature title="Edit layers" text="Harness the unmatched capabilities of powerful digitizing and construction tools." col-title-1="Exceptional digitizing proficiency" col-text-1="Craft and edit points, lines, polygons, and meshes with precision." col-title-2="Advanced construction tools" col-text-2="Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations." col-title-3="Highly customizable forms" col-text-3="Create user-friendly forms using our form designer." img="img/main-edit.webp" order=2 >}}
+{{<feature title="Редактиране на слоеве" text="Възползвайте се от несравнимите възможности на мощните инструменти за дигитализация и конструиране." col-title-1="Изключителни умения за дигитализиране" col-text-1="Създавайте и редактирайте точки, линии, полигони и мрежи с прецизност." col-title-2="Усъвършенствани строителни инструменти" col-text-2="Изграждайте геометрии с криви, CAD-подобни инструменти и широк набор от геометрични трансформации." col-title-3="Високо персонализируеми форми" col-text-3="Създавайте удобни за потребителя формуляри, използвайки нашия дизайнер на формуляри." img="img/main-edit.webp" order=2 >}}
 
-{{<feature title="Process and analyze" text="Benefit from state-of-the-art analysis tools seamlessly integrated into our toolbox." col-title-1="Comprehensive analysis toolset" col-text-1="Uncover insights from your data with our comprehensive array of analysis tools." col-title-2="Automated analysis workflows" col-text-2="Visually combine analysis tools to create easily reproducible workflows." col-title-3="Extensible analysis environment" col-text-3="Explore a diverse ecosystem of third-party analysis tools for expanded capabilities." img="img/main-analyze.webp" order=3 >}}
+{{<feature title="Обработка и анализ" text="Възползвайте се от най-съвременните инструменти за анализ, безпроблемно интегрирани в нашия набор от инструменти." col-title-1="Пълен набор от инструменти за анализ" col-text-1="Разберете прозрения от вашите данни с нашия богат набор от инструменти за анализ." col-title-2="Автоматизирани работни процеси за анализ" col-text-2="Визуално комбинирайте инструменти за анализ, за ​​да създадете лесно възпроизводими работни процеси." col-title-3="Разширяема среда за анализ" col-text-3="Разгледайте разнообразна екосистема от инструменти за анализ на трети страни за разширени възможности." img="img/main-analyze.webp" order=3 >}}
 
-{{<feature title="Share maps" text="QGIS provides an equal-access platform for everyone to share their results." col-title-1="Industry-leading format support" col-text-1="Conquer data integration challenges with support for various data sources and formats." col-title-2="Standards and interoperability" col-text-2="Amplify your impact by exploring, utilizing, and creating web services based on industry standards." col-title-3="Publish your work" col-text-3="Extend QGIS to the cloud and mobile devices for wider accessibility." img="img/main-share.webp" order=4 >}}
+{{<feature title="Споделяне на карти" text="QGIS предоставя платформа с равен достъп за всички, за да споделят своите резултати." col-title-1="Водеща в индустрията поддръжка на формати" col-text-1="Преодолейте предизвикателствата при интеграцията на данни с поддръжка на различни източници и формати на данни." col-title-2="Стандарти и оперативна съвместимост" col-text-2="Увеличете въздействието си, като проучите, използвате и създадете уеб услуги, базирани на индустриални стандарти." col-title-3="Публикувайте работата си" col-text-3="Разширете QGIS до облака и мобилните устройства за по-широка достъпност." img="img/main-share.webp" order=4 >}}

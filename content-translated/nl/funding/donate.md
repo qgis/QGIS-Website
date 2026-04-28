@@ -27,11 +27,11 @@ Neem een terugkerend dragend lidmaatschap.
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Donatie via Stripe 
-We use the [stripe.com](https://stripe.com) service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+We gebruiken de service van [stripe.com](https://stripe.com) om donaties via creditcards te ontvangen. Onthoud dat de kosten voor betalingen bij Stripe substantieel lager zijn dan bij Paypal - we zouden het dus op prijs stellen als u Stripe zou willen gebruiken in plaats van PayPal. Aanmelden is niet vereist.  {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Donatie via Payrexx
-We also use the [payrexx.com](https://payrexx.com) service to receive credit card donations. Note that the payment fees at Payrexx are substantially lower than at Paypal - so we would appreciate it, if you could use [Stripe](#stripe-donation) or Payrexx instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+We gebruiken de service van [Payrexx.com](https://payrexx.com) om donaties via creditcards te ontvangen. Onthoud dat de kosten voor betalingen bij Payrexx substantieel lager zijn dan bij Paypal - we zouden het dus op prijs stellen als u [Stripe](#stripe-donation) of Payrexx zou willen gebruiken in plaats van PayPal. Aanmelden is niet vereist.  {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Bankoverschrijving

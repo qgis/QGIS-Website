@@ -1,7 +1,7 @@
 ---
 draft: 'true'
-logo: corporationC.png
-title: Corporation C
+logo: АДВ.png
+title: Корпорация В
 type: flagship-user
 
 ---

@@ -179,6 +179,10 @@ Donations can be of any amount through [GitHub Sponsors](https://github.com/spon
   <div class="listcont external-link">
     Nikolay - nikiomori
   </div>
+</a><a class="rich-list third mr-2 mb-2" href="https://github.com/SpatialWorkflowIo" target="_blank">
+  <div class="listcont external-link">
+    Spatial Workflow - SpatialWorkflowIo
+  </div>
 </a><!-- sponsors -->
 
 {{< content-end >}}

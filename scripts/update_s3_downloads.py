@@ -29,6 +29,13 @@ from pathlib import Path
 from typing import List, Dict, Optional
 
 try:
+    from tqdm import tqdm
+except ImportError:
+    print("❌ Error: tqdm is not installed. Install it with:")
+    print("   pip install tqdm")
+    sys.exit(1)
+
+try:
     import boto3
     from botocore.exceptions import ClientError, NoCredentialsError
 except ImportError:
@@ -97,77 +104,79 @@ class S3FileExplorer:
             size_bytes /= 1024.0
         return f"{size_bytes:.2f} PB"
 
-    def fetch_bucket_contents(self) -> List[Dict]:
-        """Fetch all objects from S3 bucket."""
+    def fetch_bucket_contents(self, mtime_cache: Dict[str, str] = None) -> List[Dict]:
+        """Fetch all objects from S3 bucket.
+        
+        Args:
+            mtime_cache: Optional dict mapping S3 key -> ISO timestamp string,
+                         produced by scripts/generate_mtime_cache.py. When provided,
+                         its values are used as last_modified instead of LastModified.
+        """
         print(f"📦 Fetching contents from bucket: {self.bucket_name}")
         if self.prefix:
             print(f"   With prefix: {self.prefix}")
-        
+        if mtime_cache:
+            print(f"   Using mtime cache ({len(mtime_cache)} entries)")
+
         files = []
         continuation_token = None
-        total_objects = 0
-        
+
         try:
-            while True:
-                list_kwargs = {
-                    "Bucket": self.bucket_name,
-                    "MaxKeys": 1000,
-                }
-                
-                if self.prefix:
-                    list_kwargs["Prefix"] = self.prefix + "/"
-                
-                if continuation_token:
-                    list_kwargs["ContinuationToken"] = continuation_token
-                
-                response = self.s3_client.list_objects_v2(**list_kwargs)
-                
-                if "Contents" not in response:
-                    print("   No objects found in bucket")
-                    break
-                
-                for obj in response["Contents"]:
-                    key = obj["Key"]
-                    
-                    # Skip folders (keys ending with /)
-                    if key.endswith("/"):
-                        continue
-                    
-                    # Skip paths with double slashes (malformed paths)
-                    if "//" in key:
-                        continue
-                    
-                    # Get file metadata (only essential fields for lightweight output)
-                    file_info = {
-                        "key": key,
-                        "name": Path(key).name,
-                        "path": str(Path(key).parent) if Path(key).parent != Path(".") else "",
-                        "size": obj["Size"],
-                        "size_formatted": self.format_size(obj["Size"]),
-                        "last_modified": obj["LastModified"].isoformat(),
-                        "last_modified_timestamp": int(obj["LastModified"].timestamp()),
-                        "extension": Path(key).suffix.lower(),
-                        "category": self.get_file_category(key),
-                    }
-                    
-                    files.append(file_info)
-                    total_objects += 1
-                
-                # Check if there are more objects to fetch
-                if response.get("IsTruncated"):
-                    continuation_token = response.get("NextContinuationToken")
-                else:
-                    break
-            
-            print(f"   ✅ Found {total_objects} files")
-            return files
-        
+            with tqdm(desc="   Listing objects", unit="file") as pbar:
+                while True:
+                    list_kwargs = {"Bucket": self.bucket_name, "MaxKeys": 1000}
+                    if self.prefix:
+                        list_kwargs["Prefix"] = self.prefix + "/"
+                    if continuation_token:
+                        list_kwargs["ContinuationToken"] = continuation_token
+
+                    response = self.s3_client.list_objects_v2(**list_kwargs)
+
+                    if "Contents" not in response:
+                        print("   No objects found in bucket")
+                        break
+
+                    for obj in response["Contents"]:
+                        key = obj["Key"]
+                        if key.endswith("/") or "//" in key:
+                            continue
+
+                        if mtime_cache and key in mtime_cache:
+                            last_modified_iso = mtime_cache[key]
+                            last_modified_ts = int(
+                                datetime.datetime.fromisoformat(last_modified_iso).timestamp()
+                            )
+                        else:
+                            last_modified_iso = obj["LastModified"].isoformat()
+                            last_modified_ts = int(obj["LastModified"].timestamp())
+
+                        files.append({
+                            "key": key,
+                            "name": Path(key).name,
+                            "path": str(Path(key).parent) if Path(key).parent != Path(".") else "",
+                            "size": obj["Size"],
+                            "size_formatted": self.format_size(obj["Size"]),
+                            "last_modified": last_modified_iso,
+                            "last_modified_timestamp": last_modified_ts,
+                            "extension": Path(key).suffix.lower(),
+                            "category": self.get_file_category(key),
+                        })
+                        pbar.update(1)
+
+                    if response.get("IsTruncated"):
+                        continuation_token = response.get("NextContinuationToken")
+                    else:
+                        break
+
         except NoCredentialsError:
             print("❌ Error: AWS credentials not found")
             sys.exit(1)
         except ClientError as e:
             print(f"❌ Error accessing S3: {e}")
             sys.exit(1)
+
+        print(f"   ✅ Found {len(files)} files")
+        return files
 
     def build_file_tree(self, files: List[Dict], excluded_prefixes: tuple = ()) -> Dict:
         """Build hierarchical file tree from flat file list."""
@@ -446,9 +455,15 @@ def main():
         prefix=prefix,
     )
     
-    files = explorer.fetch_bucket_contents()
-    
-    # Save main downloads (excluding ubuntu/debian from tree)
+    # Load mtime cache if available (generated once by scripts/generate_mtime_cache.py)
+    mtime_cache_path = downloads_dir / "mtime_cache.json"
+    mtime_cache = None
+    if mtime_cache_path.exists():
+        with open(mtime_cache_path, "r", encoding="utf-8") as f:
+            mtime_cache = json.load(f)
+
+    files = explorer.fetch_bucket_contents(mtime_cache=mtime_cache)
+
     explorer.save_to_json(files, str(output_path))
     
     # Save linux packages separately (one file per distribution)
