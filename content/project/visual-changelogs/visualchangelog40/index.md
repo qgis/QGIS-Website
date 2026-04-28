@@ -1891,7 +1891,7 @@ This feature was funded by Ocean Winds
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 
-### Feature: Save QGIS projects to PostgreSQL
+### Feature: Save and import QGIS projects to PostgreSQL via Browser
 
 QGIS now natively supports the ability to save the current QGIS project
 to a PostgreSQL database, as well as import QGIS projects from a folder
