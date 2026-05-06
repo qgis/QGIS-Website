@@ -14,58 +14,58 @@ type: page
 ## ✉️ Пощенски списъци
 QGIS има различни пощенски списъци за обсъждане на теми, свързани с QGIS.
 
-If you are going to ask questions please read this: [How to ask a QGIS question?](faq/#how-to-ask-a-qgis-question).
+Ако ще задавате въпроси, моля, прочетете това: [Как да задам въпрос за QGIS?](faq/#how-to-ask-a-qgis-question).
 
 {{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="Вижте пощенските списъци" >}}
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 ## Преди да започнете
-Before you head off to join up with your chosen support group, we would like to mention a few guidelines for participating in our community:
+Преди да се присъедините към избраната от вас група за подкрепа, бихме искали да споменем няколко насоки за участие в нашата общност:
 ### Придържайте се към темата
-The forums are for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. They are not for discussions about GIS in general or unrelated software (GIS or otherwise).
+Форумите са за споделяне на идеи, инструменти, уроци, казуси и въпроси, свързани единствено с използването на QGIS (и свързани инструменти) в различни области. Те не са за дискусии относно ГИС като цяло или несвързан софтуер (ГИС или друг).
 ### Език
-As we are a global group, all posts must be in English (unless the group you join is language specific). If you have a post in another language, please provide a translated description.
+Тъй като сме глобална група, всички публикации трябва да са на английски (освен ако групата, към която се присъединявате, е езиково специфична). Ако имате публикация на друг език, моля, предоставете преведено описание.
 ### Спам
-Posts about platforms, products, and services not pertaining to QGIS or not incorporating QGIS as part of a broader offering are not allowed.
+Не се допускат публикации за платформи, продукти и услуги, които не са свързани с QGIS или не включват QGIS като част от по-широко предлагане.
 ### Самореклама
-Companies or individuals posting products and services about QGIS are welcome (this does not mean endorsement) as long as they contribute meaningfully to the discourse, such as by answering questions. Excessive self-promotion will be considered spam.
+Фирми или лица, публикуващи продукти и услуги за QGIS, са добре дошли (това не означава одобрение), стига да допринасят смислено за дискусията, например чрез отговаряне на въпроси. Прекомерната самореклама ще се счита за спам.
 ### Clarity
-Be clear and objective. Try to include screenshots. Show effort by consulting the official QGIS documentation. For example, show that you have already reviewed the documentation, searched Google, asked ChatGPT etc. Mark issues as solved once they are resolved so that people do not spend effort on your problem unnecessarily.
+Бъдете ясни и обективни. Опитайте се да включите екранни снимки. Покажете усилия, като се консултирате с официалната документация на QGIS. Например, покажете, че вече сте прегледали документацията, търсили сте в Google, попитали сте ChatGPT и т.н. Маркирайте проблемите като решени, след като бъдат решени, за да не се налага хората да се занимават с вашия проблем ненужно.
 ## Discourse
-We have recently started a discourse forum for QGIS related support. Over time we expect to move more if our community support activities to this area. The discourse forums are available [on the OSGEO hosted discourse page](https://discourse.osgeo.org/tag/qgis).
+Наскоро стартирахме дискусионен форум за поддръжка, свързана с QGIS. С течение на времето очакваме да насочим повече дейности за подкрепа на общността към тази област. Дискурсивните форуми са достъпни [на страницата за дискусии, хоствана от OSGEO] (https://discourse.osgeo.org/tag/qgis).
 ## StackExchange
-You can ask questions on [GIS StackExchange](http://gis.stackexchange.com). If you use the tag `qgis` you’ll see all QGIS related questions and answers: http://gis.stackexchange.com/?tags=qgis
+Можете да задавате въпроси на [GIS StackExchange](http://gis.stackexchange.com). Ако използвате етикета `qgis`, ще видите всички въпроси и отговори, свързани с QGIS: http://gis.stackexchange.com/?tags=qgis
 ## Комуникационни канали
 ### Telegram
-There is a vibrant user and community related chat group (english spoken) on the Telegram channel, which you can [join here](https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ).
+В канала на Telegram има оживена чат група, свързана с потребители и общност (на английски език), към която можете [да се присъедините тук] (https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ).
 
-To join: install Telegram on your phone, register and join via the link above.
+За да се присъедините: инсталирайте Telegram на телефона си, регистрирайте се и се присъединете чрез връзката по-горе.
 
-There is also a web version (https://web.telegram.org) which you can join in the browser (after you have joined telegram via your phone number).
+Има и уеб версия (https://web.telegram.org), към която можете да се присъедините през браузъра (след като сте се регистрирали в Telegram чрез телефонния си номер).
 ### Матрица / IRC
-Matrix (https://matrix.org) is a project for decentralised chat. QGIS has a room which is accessible at the **#qgis:osgeo.org** alias (among others) which bridges to the libera.chat **#qgis** IRC channel.
+Matrix (https://matrix.org) е проект за децентрализиран чат. QGIS има стая, достъпна на псевдонима **#qgis:osgeo.org** (наред с други), която е свързана с IRC канала libera.chat **#qgis**.
 
-To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/ecosystem/clients/ for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org.
+За да използвате Matrix: създайте акаунт (най-лесно е на matrix.org, но ако имате OSGeo акаунт, можете също [да използвате вашия OSGeo идентификатор като matrix id] (https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), инсталирайте клиент (най-лесно е на Element, но вижте https://matrix.org/ecosystem/clients/ за повече информация) или насочете браузъра си към https://matrix.to/#/#qgis:osgeo.org.
 
-To use IRC: install an IRC client and connect to irc://irc.libera.chat/#qgis or point your browser to https://web.libera.chat/?channels=#qgis
+За да използвате IRC: инсталирайте IRC клиент и се свържете с irc://irc.libera.chat/#qgis или насочете браузъра си към https://web.libera.chat/?channels=#qgis
 ### Facebook
-For Facebook users, an english-speaking global community group for QGIS users can be found at https://www.facebook.com/groups/qgiscommunityofficialvirtualgroup
+За потребителите на Facebook, англоезична глобална общностна група за потребители на QGIS може да бъде намерена на адрес https://www.facebook.com/groups/qgiscommunityofficialvirtualgroup
 ## Потребителски групи
 Местните потребителски групи на QGIS са чудесно място за срещи с други потребители.
 
-See [User Groups]({{< ref "community/groups" >}}) to read more about local user groups.
+Вижте [Потребителски групи]({{< ref "community/groups" >}}) за да прочетете повече за местните потребителски групи.
 ## Докладване на уязвимости в сигурността
-If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please refer to the [security page]({{< ref "resources/support/security" >}}) for detailed information on how to report it responsibly.
+Ако смятате, че сте открили проблем със сигурността, като например уязвимости в QGIS или неговите зависимости, моля, вижте [страницата за сигурност]({{< ref "resources/support/security" >}}) за подробна информация как да го докладвате отговорно.
 ## Управителен комитет на проекта (PSC)
-If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list or email address:
+Ако е необходимо да се свържете с някого от Управителния комитет на проекта QGIS (PSC) по правни, търговски, финансови или административни въпроси **(не за общи заявки за поддръжка)**, моля, използвайте следния пощенски списък или имейл адрес:
 
 {{<rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="Пощенски списък на QGIS PSC" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 
 {{<rich-list listLink="mailto:psc@qgis.org" layoutClass="half" listTitle="Имейл за PSC на QGIS" listSubtitle="psc@qgis.org" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
+Можете да се абонирате за списъка, като използвате връзката по-горе. След като се абонирате, можете да използвате следния имейл адрес, за да публикувате вашите въпроси или материали за дискусия: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
 
 Като алтернатива, можете да се свържете директно с PSC на [psc@qgis.org](mailto:psc@qgis.org).
-> **Note:** The PSC mailing list and email address are intended for legal, trademark, funding, or administrative matters only. For general support, please use the mailing lists or communication channels mentioned above.
+> **Забележка:** Пощенският списък и имейл адресът на PSC са предназначени само за правни, търговски, финансови или административни въпроси. За обща поддръжка, моля, използвайте пощенските списъци или комуникационните канали, посочени по-горе.
 
 {{<content-end >}}

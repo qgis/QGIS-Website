@@ -5,21 +5,21 @@ Reviewer: Tim Sutton
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-title: Certification Programme
+title: 認定プログラム
 type: page
 
 ---
 {{<content-start >}}
-# Certification Programme
-## QGIS Certificate
-Are you looking for courses with the official QGIS certificate? At the [QGIS Certification Programme website](https://certification.qgis.org/), you can explore an interactive map to locate organisations in your country that offer certified QGIS training and find upcoming courses that provide an official QGIS certificate.
+# 認定プログラム
+## QGIS認定資格
+公式QGIS認定証が取得できるコースをお探しですか？[QGIS認定プログラムのウェブサイト](https://certification.qgis.org/)では、インタラクティブな地図から各国の認定QGISトレーニング提供機関を検索したり、公式QGIS認定証が取得できるコースを確認を行えます。
 
 ![Students with certificate](../students_with_certificate.webp "Students with certificate")
-## Become a QGIS certified training organisation
-Does your organisation participate actively in the QGIS community and offer high-quality training courses with QGIS? Then consider applying for the **QGIS Certification Programme**. As a member, you'll be able to issue the official QGIS certificate to participants of your courses, workshops and training. Each certificate contributes €20 to QGIS.
-### 証明プロセス
-#### Requirements
-The QGIS Certification Programme is designed to promote both community involvement in the QGIS project and quality education for QGIS software. The application process requires applicants to detail their contributions to the QGIS project and make their training materials available for review. Contributions to the QGIS project include activities such as:
+## QGIS認定トレーニング機関になる
+QGISコミュニティに積極的に関わり、高品質なQGISトレーニングを提供している組織の方は、ぜひ **QGIS認定プログラム** へのご応募をご検討ください。メンバーとして認定されると、コース・ワークショップ・トレーニングの参加者に公式QGIS認定証を発行する権限が付与されます。認定証1枚の発行ごとに€20がQGISの活動に充てられます。
+### 認定手続き
+#### 要件
+QGIS認定プログラムは、QGISプロジェクトへのコミュニティ参加と、QGISソフトウェアに関する質の高い教育の促進を目的としています。申請にあたっては、QGISプロジェクトへの貢献内容を具体的に記載し、トレーニング資料を審査用に提出していただく必要があります。QGISプロジェクトへの貢献活動には、以下のようなものが含まれます:
 * 開発/ QGISへのコミット
 * QGISドキュメンテーションとトレーニング教材への貢献
 * QGIS資料の翻訳
@@ -34,12 +34,12 @@ The QGIS Certification Programme is designed to promote both community involveme
 #### 申請
 各コースのトレーニング教材を提供する必要があります。これには演習、講義、データが含まれます。この資料は、最新性、QGISプロジェクトの正確な表現、および全体的な品質についてレビューされます。教材の品質が十分でない場合は、これが拒否の原因になる可能性があります。
 
-Following an initial review, the application will be sent to local [QGIS User Groups](https://qgis.org/community/groups/) for their opinion. This part of the review should be completed within a month. If there is not a local QGIS User Group, the QGIS Project Steering Committee (PSC) will make a determination based on material provided and your reputation in the community. In this latter case, you are encouraged to establish a local QGIS User Group. If you are not considered a member in good standing of the QGIS community, this could be a reason for refusal.
+初回審査の後、申請書は地域のQGISユーザーグループに送付され、意見が求められます。この審査は1ヶ月以内に完了する見込みです。地域のQGISユーザーグループが存在しない場合は、QGISプロジェクト運営委員会（PSC）が提出資料およびコミュニティでの実績をもとに判断します。その場合、地域のQGISユーザーグループの設立が推奨されます。QGISコミュニティの正式なメンバーとして認められていない場合、申請が却下される理由となる場合があります。
 
-The PSC will make the final determination. If accepted as a QGIS Certified Organization, your contributions to the project will be published for transparency.
+最終決定はPSCが行います。QGIS認定組織として承認された場合、透明性を確保するため、プロジェクトへの貢献内容が一般に公開されます。
 
-If approved, you are required to pay a **€20 certification fee** to the QGIS project for each certificate you issue. This creates a mechanism for financial support of the project. Payments for certificates are made either using online credit card transactions or on request by regular invoice and SEPA wire transfer. Payments can be handled in batches for many certificates at once.
+承認された場合、発行する認定証1枚につき **€20の認定費用** をQGISプロジェクトにお支払いいただく必要があります。この仕組みにより、プロジェクトへの継続的な財政支援が実現されます。お支払いはオンラインクレジットカード決済、またはご要望に応じて請求書によるSEPA銀行振込でも対応しております。複数の認定証をまとめて一括でお支払いいただくことも可能です。
 
-You can apply through the [QGIS Certification Programme website](https://certification.qgis.org/).
+申請は [QGIS認定プログラムのウェブサイト] (https://certification.qgis.org/) から行えます。
 
 {{<content-end >}}

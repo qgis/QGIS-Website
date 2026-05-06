@@ -10,7 +10,7 @@ type: page
 ---
 {{<content-start >}}
 # UbuntuGIS LTR пакети
-Browse and download QGIS Long Term Release (LTR) packages for UbuntuGIS distributions.
+Разгледайте и изтеглете QGIS пакети с дългосрочно издание (LTR) за дистрибуции на UbuntuGIS.
 
 {{<linux-packages-explorer distribution="ubuntugis_ltr" >}}
 

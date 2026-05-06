@@ -3,8 +3,8 @@ HasBanner: true
 HeroImage: img/involve.jpg
 draft: false
 sidebar: true
-subtitle: Your support is vital to enhance and promote QGIS as an essential tool for
-  the global GIS community
+subtitle: Вашата подкрепа е жизненоважна за подобряване и популяризиране на QGIS като
+  основен инструмент за световната ГИС общност.
 title: Donate
 type: page
 
@@ -13,9 +13,9 @@ type: page
 
 QGIS е разработен от екип от всеотдайни доброволци, компании и организации.
 
-We rely on sponsorships and donations for much of our funding. If you would like to support us, donations are very welcome. Donations can be made by electronic funds transfer, by credit card, or by PayPal.
+Разчитаме на спонсорства и дарения за голяма част от финансирането си. Ако желаете да ни подкрепите, даренията са добре дошли. Даренията могат да бъдат направени чрез електронен превод на средства, с кредитна карта или чрез PayPal.
 
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt german association.
+Даренията за QGIS може да подлежат на данъчно облекчение в някои страни. Моля, обърнете се към местната данъчна служба за подробности. Ако искате да се възползвате от данъчно облекчение като немска компания или организация, моля, дарете чрез [Немската потребителска група на QGIS] (https://qgis.de/doku.php/verein/spenden). Те могат да издадат потвърждение за плащане като освободена от данъци немска асоциация.
 
 {{< rich-box-start layoutClass="mt-6">}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Поддържане на членството
@@ -27,26 +27,26 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Вид Дарение
-We use the [stripe.com](https://stripe.com) service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+Използваме услугата [stripe.com](https://stripe.com) , за да получаваме дарения с кредитни карти. Обърнете внимание, че таксите за плащане в Stripe са значително по-ниски, отколкото в Paypal - така че ще ви бъдем благодарни, ако можете да използвате Stripe вместо PayPal. Не е необходима регистрация. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Дарение от Payrexx
-We also use the [payrexx.com](https://payrexx.com) service to receive credit card donations. Note that the payment fees at Payrexx are substantially lower than at Paypal - so we would appreciate it, if you could use [Stripe](#stripe-donation) or Payrexx instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+Също така използваме услугата [payrexx.com](https://payrexx.com) за получаване на дарения с кредитни карти. Обърнете внимание, че таксите за плащане в Payrexx са значително по-ниски, отколкото в Paypal - така че ще сме благодарни, ако можете да използвате [Stripe](#stripe-donation) или Payrexx вместо PayPal. Не е необходима регистрация. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Банков превод
-Use the details below to make a donation via international money transfer: {{< rich-content-end >}} {{< rich-right-start >}}
+Използвайте данните по-долу, за да направите дарение чрез международен паричен превод: {{< rich-content-end >}} {{< rich-right-start >}}
 
 <pre class="donatbox">
-Account name: QGIS.ORG
-Address:      Via Geinas 2
+Име на сметка: QGIS.ORG
+Адрес:      Via Geinas 2
               CH-7031 Laax
 BIC/SWIFT:    POFICHBEXXX
 IBAN:         CH09 0900 0000 9146 3839 8
-Reference:    Donation QGIS
-Currency:     EUR
-Bank name:    PostFinance AG
-Bank address: Mingerstrasse 20
+Референция:     Дарение QGIS
+Валута:     EUR
+Име на банката:    PostFinance AG
+Адрес на банката: Mingerstrasse 20
               3030 Berne
               Switzerland
 VAT-number:   CHE-489.853.176
@@ -56,13 +56,13 @@ VAT-number:   CHE-489.853.176
 
 {{< rich-box-start layoutClass="has-right paypal mb-6" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Дарение чрез PayPal
-You can use Paypal to donate using your own credit card (but we prefer to use [Payrexx](#payrexx-donation) for that). The payment is processed by PayPal but you don't need to have a PayPal account or sign-up for one if you are paying by credit card.
+Можете да използвате Paypal, за да дарите, използвайки собствената си кредитна карта (но ние предпочитаме да използваме [Payrexx](#payrexx-donation) за това). Плащането се обработва чрез PayPal, но не е необходимо да имате PayPal акаунт или да се регистрирате за такъв, ако плащате с кредитна карта.
 
 Може да изпозвате вашата регистрация в Paypal, за да направите дарение.
 
 {{< paypal-button >}} {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../paypal.png) {{< rich-right-end >}} {{< rich-box-end >}}
 ## Вашата подкрепа е жизненоважна за продължаващото усъвършенстване на QGIS
-We would like to extend our activities and improve the quality of QGIS. Your financial contribution will support the maintenance, improvement, and promotion of QGIS. Becoming a sustaining member is a way of ensuring the longevity and overall health of the project.
+Бихме искали да разширим дейността си и да подобрим качеството на QGIS. Вашият финансов принос ще подпомогне поддръжката, подобряването и популяризирането на QGIS. Членството в програмата е начин да се гарантира дълготрайността и цялостното здраве на проекта.
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third left-title">}}
 ## Подобрена подкрепа за инфраструктура и развитие
@@ -72,13 +72,13 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 #### Поддържане на основна инфраструктура
 * Официалният уебсайт QGIS.org, централен център за всичко, свързано с QGIS.
 * Нашата система за проследяване на проблеми за ефективно докладване на грешки и функции.
-* The continuous integration system, ensuring code quality and stability through automated tests. {{< rich-content-end >}} {{< rich-box-end >}}
+* Системата за непрекъсната интеграция, осигуряваща качество и стабилност на кода чрез автоматизирани тестове. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
 #### Разработка на софтуер и осигуряване на качеството
-* Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
+* Непрекъснато подобрявайте и пакетирайте QGIS за различни операционни системи, правейки го достъпен за повече потребители по целия свят.
 * Отстранявайте грешки и други проблеми своевременно, подобрявайки потребителското изживяване.
-* Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development. {{< rich-content-end >}} {{< rich-box-end >}}
+* Управлявайте заявките за изтегляне (pull requests) и провеждайте щателни прегледи на кода, осигурявайки най-високите стандарти за разработка на софтуер. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< columns-end >}}
 
@@ -90,14 +90,14 @@ We would like to extend our activities and improve the quality of QGIS. Your fin
 #### Овластяване на нашите доброволци
 * Наставничество на нови участници, насърчаване на приветлива и продуктивна общност.
 * Превеждане на QGIS на множество езици, което прави софтуера наистина глобален.
-* Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own. {{< rich-content-end >}} {{< rich-box-end >}}
+* Управление на системата за грантове QGIS, което позволява целенасочена работа върху значителни подобрения и иновации, които често са трудни за самостоятелно осъществяване от доброволците. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
 #### Насърчаване на сътрудничеството и споделянето на знания
-* Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project. {{< rich-content-end >}} {{< rich-box-end >}}
+* Организиране и подкрепа на срещи на сътрудници и QGIS конференции, от съществено значение за обмена на знания, сътрудничеството и колективния напредък на проекта QGIS. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< columns-end >}}
 
-QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance]({{< ref "/community/foundation/finance" >}}) section.
+QGIS.ORG иска да бъде прозрачен по отношение на средствата, които получаваме, и как ги изразходваме. Моля, разгледайте финансовите отчети и бюджети в нашия раздел [Финанси]({{< ref "/community/foundation/finance" >}}).
 
 {{<content-end >}}

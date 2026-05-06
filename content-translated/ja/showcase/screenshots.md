@@ -2,7 +2,7 @@
 draft: 'true'
 heroImage: img/banners/banner3.png
 submenus: showcase
-subtitle: Amazing work from our community
+subtitle: コミュニティの素晴らしい成果
 title: Gallery - Screenshots
 type: page
 

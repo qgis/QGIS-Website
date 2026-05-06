@@ -8,13 +8,13 @@ type: page
 ---
 {{<content-start >}}
 # Кой кой е
-QGIS as a Project is currently organised as an association legally based in Switzerland with the following structure:
+QGIS като проект в момента е организиран като асоциация, легално базирана в Швейцария, със следната структура:
 
 ![Организационна структура на QGIS](./QGIS-ORG_Organizational_structure.png)
 
 Организационна структура на QGIS
 
-The QGIS project is managed by the Board (3 members, legal representation) and the PSC which consists of 6 members (with their individual responsibilities listed in brackets):
+Проектът QGIS се управлява от Управителния съвет (3 членове, законно представителство) и Управителния съвет, който се състои от 6 членове (с индивидуалните им отговорности, изброени в скоби):
 
 Съвет
 -
@@ -36,11 +36,11 @@ The QGIS project is managed by the Board (3 members, legal representation) and t
 За да се свържете с PSC, моля, пишете на [psc@qgis.org](mailto:psc@qgis.org).
 ### Почетни членове на УПС
 * Гари Шърман (основател и пожизнен почетен член на PSC)
-* Tim Sutton (awarded Honorary PSC member in 9.2018 at the FOSS4G in Tanzania)
+* Тим Сътън (удостоен с почетно звание член на PSC през септември 2018 г. на FOSS4G в Танзания)
 
 ### Бивши членове на КПС
 * Тим Сътън (председател; мениджър тестване/QA) (до 2018 г.)
-* Paolo Cavallini \[Member 4.2020 - 9.2022; Chair 4.2018 - 4.2020; Vice chair 1.2008 - 3.2018\]
+* Паоло Кавалини  \[Член 4.2020 - 9.2022; Председател 4.2018 - 4.2020; Заместник-председател 1.2008 - 3.2018\]
 * Марко Хугентоблер \[до 2016 г.\]
 * Ото Дасау (общински съветник) \[2007 - 2016\]
 * Richard Duivenvoorde (мениджър на инфраструктурата) \[2013 - 2019\]
@@ -56,9 +56,9 @@ QGIS.ORG Via Geinas 2, CH-7031 Laax
 * Найъл Доусън \[от 5.2020 г.\]
 
 ### Членове с право на глас
-According to our statutes, for each user group that is formed, that group will select a QGIS User Group Voting Member to represent their interests. These voting members are listed [here]({{< ref "/community/groups.md" >}}) . Please email [trademark@qgis.org](mailto:trademark@qgis.org) if you have registered a new user group, or have changed your user group representative.
+Съгласно нашия устав, за всяка сформирана потребителска група, тя ще избере член с право на глас на потребителската група на QGIS, който да представлява нейните интереси. Тези членове с право на глас са изброени [тук]({{< ref "/community/groups.md" >}}). Моля, изпратете имейл на[trademark@qgis.org](mailto:trademark@qgis.org), ако сте регистрирали нова потребителска група или сте променили представителя си.
 ### Членове с право на глас в общността
-According to our statutes, one member from the broader community can be elected for each voting member. The following list includes the current community voting members:
+Съгласно нашия устав, за всеки член с право на глас може да бъде избран един член от по-широката общност. Следният списък включва настоящите членове с право на глас от общността:
 * Мартин Добиас, Словакия
 * Нейтън Удроу, Австралия
 * Матиас Кун, Швейцария
@@ -119,9 +119,9 @@ According to our statutes, one member from the broader community can be elected 
 ## Управление на изданията
 Настоящ мениджър по изданията: Юрген Е. Фишер
 
-QGIS Releases are managed by the Release Team (Release Manager and Release Assistants). Together with numerous contributors, they oversee timely, regular, stable releases of QGIS on the various supported platforms. The release team recruits and supports build managers to create packages for supported platforms and oversee the maintenance of the bug tracking system.
+Изданията на QGIS се управляват от екипа по изданията (мениджър по изданията и асистенти по изданията). Заедно с многобройни сътрудници, те контролират навременните, редовни и стабилни издания на QGIS за различните поддържани платформи. Екипът по изданията набира и подкрепя мениджъри по изграждане, които да създават пакети за поддържаните платформи и да контролират поддръжката на системата за проследяване на грешки.
 ### Екип за опаковане
-QGIS is being packaged for different types of operating systems. The people responsible for these packages are as follows:
+QGIS се пакетира за различни видове операционни системи. Хората, отговорни за тези пакети, са следните:
 * Екип на Windows: Юрген Е. Фишер
 * Екип на MacOS: Матиас Кун, OPENGIS.ch
 * Екип по Линукс:
@@ -140,7 +140,7 @@ QGIS is being packaged for different types of operating systems. The people resp
 
 Ресурси на общността
 -
-The QGIS community resources are managed by the Community Team (Community Manager and Assistants). With numerous contributors they keep contact to the community, take care of QGIS events, documentation, GUI translations, and ensure smooth running of the QGIS.org online experience including web sites, blog, and mailing lists.
+Ресурсите на общността на QGIS се управляват от екипа на общността (мениджър на общността и асистенти). С многобройни сътрудници те поддържат връзка с общността, грижат се за събития на QGIS, документация, преводи на графичен потребителски интерфейс и осигуряват безпроблемното функциониране на онлайн изживяването на QGIS.org, включително уебсайтове, блог и пощенски списъци.
 
 Настоящи ръководители на екипи в общността:
 * Лене Фишер (общностни задачи)
@@ -150,22 +150,22 @@ The QGIS community resources are managed by the Community Team (Community Manage
 ### Превод
 Настоящ ръководител на екипа по преводи: Вернер Мачо
 
-The QGIS Translation is managed by the Community Assistant (Translation Team Lead) and supported by additional language specific teams. Information about the current documentation status and the translation process is provided at the [Translators Corner](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html).
+Преводът на QGIS се управлява от Общностния асистент (ръководител на екипа по преводи) и се подкрепя от допълнителни екипи, специализирани в езиците. Информация за текущото състояние на документацията и процеса на превод е предоставена в [Къта на преводачите](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html).
 
 Контакт: списък [qgis-community-team](http://lists.osgeo.org/mailman/listinfo/qgis-community-team) или [списък за изпращане на имейли за превод на QGIS](http://lists.osgeo.org/mailman/listinfo/qgis-tr)
 ### Прессъобщения + Превод
 Настоящ ръководител на екипа за прес материали: Анита Грейзър
 
-QGIS Press Material and its translations are managed by the Community Assistant (Press Material Team Lead) and supported by additional language specific teams. Information about current activities and the translation process is provided at the Press Centre.
+Пресматериалите на QGIS и техните преводи се управляват от Обществения асистент (ръководител на екипа за пресматериали) и се подкрепят от допълнителни екипи, специализирани в езиците. Информация за текущите дейности и процеса на превод се предоставя в пресцентъра.
 
 ОТБОР
 -
-A successful project requires many people to play many different roles. Some members write code or documentation, while others are valuable as testers, submitting patches and suggestions.
+Един успешен проект изисква много хора да играят много различни роли. Някои членове пишат код или документация, докато други са ценни като тестери, изпращайки корекции и предложения.
 
-The number of Contributors to the project is unbounded. Get involved today. All contributions (adding code or documentation, fixing typo error, reporting issues…) to the project are greatly appreciated.
+Броят на участниците в проекта е неограничен. Включете се още днес. Всички приноси (добавяне на код или документация, коригиране на печатни грешки, докладване на проблеми...) към проекта са високо оценени.
 
 Тези [лица](https://github.com/qgis/QGIS/graphs/contributors) са признати за сътрудници в основния код [github хранилище](https://github.com/qgis/QGIS).
 
-Follow the lists of maintainers of the [documentation](https://github.com/qgis/QGIS-Documentation/graphs/contributors) and the [website](https://github.com/qgis/QGIS-Website/graphs/contributors). Feel free to join any of those teams.
+Следвайте списъците с поддържащите [документацията](https://github.com/qgis/QGIS-Documentation/graphs/contributors) и [уебсайта](https://github.com/qgis/QGIS-Website/graphs/contributors). Чувствайте се свободни да се присъедините към някой от тези екипи.
 
 {{<content-end >}}

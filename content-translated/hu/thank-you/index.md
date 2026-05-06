@@ -21,13 +21,13 @@ Ha a letöltés nem indult el, manuálisan is letöltheti a QGIS-t a [QGIS.org l
 
 {{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Your support is vital to keep QGIS improving
-Our software is, and always will be, available free of charge if downloaded from QGIS.org.
+Szoftverünk a QGIS.org weboldalról ingyenesen érhető el, és örökre ingyenes is marad.
 
-The project is a result of a huge effort and social contribution from many community members who volunteer their time and expertise. In addition, many businesses, government agencies and commercial entities have contributed to the development of QGIS. They do this either to ensure that QGIS meets their specific needs or to contribute to and accelerate the huge social impact that is realised by making a tool such as QGIS freely available. Our goal is the betterment of society through informed spatial decision making. If you are able, we gently request that you support our work.
+A projekt számos közösségi tag hatalmas erőfeszítéseinek és társadalmi hozzájárulásának eredménye, akik önkéntes munkájukkal és szakértelmükkel támogatják a kezdeményezést. Emellett számos vállalkozás, kormányzati szerv és kereskedelmi szervezet is hozzájárult a QGIS fejlesztéséhez. Ezt vagy azért teszik, hogy a QGIS megfeleljen a konkrét igényeiknek, vagy azért, hogy hozzájáruljanak ahhoz a hatalmas társadalmi hatáshoz, amelyet egy olyan eszköz ingyenes elérhetővé tétele valósít meg, mint a QGIS, valamint hogy felgyorsítsák ennek megvalósulását. Célunk a társadalom javítása a tájékozott térbeli döntéshozatal révén. Ha teheti, kérjük, támogassa munkánkat.
 
-Whether you choose to donate or not, we hope that you enjoy using our labour of love and encourage you to share and spread your downloaded copy far and wide so that others may enjoy it too.
+Akár az adományozás mellett dönt, akár nem, reméljük, hogy élvezni fogja a szívből készült munkánkat, és arra bátorítjuk, hogy ossza meg és terjessze a letöltött példányt minél szélesebb körben, hogy mások is élvezhessék.
 
-Our very best regards!
+Minden jót!
 
 {{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" alreadyDonated="true">}}
 

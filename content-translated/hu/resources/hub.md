@@ -2,7 +2,7 @@
 Reviewed: 4 June 2024
 Reviewer: Tim Sutton
 draft: false
-selected_language: en
+selected_language: hu
 sidebar: true
 subtitle: ''
 title: QGIS resources

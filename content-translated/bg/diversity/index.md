@@ -9,9 +9,9 @@ type: page
 # Декларация за многообразие
 Проектът QGIS приветства и насърчава участието на всички.
 
-No matter how you identify yourself or how others perceive you: we welcome you. We welcome contributions from everyone as long as they interact constructively with our community.
+Без значение как се идентифицирате или как другите ви възприемат: ние ви приветстваме. Приветстваме приноса от всички, стига те да взаимодействат конструктивно с нашата общност.
 
-While much of the work for our project is technical in nature, we value and encourage contributions from those with expertise in other areas, and welcome them into our community.
+Въпреки че голяма част от работата по нашия проект е от технически характер, ние ценим и насърчаваме приноса на хора с опит в други области и ги приветстваме в нашата общност.
 
 Полезни контакти:
 

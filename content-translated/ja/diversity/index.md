@@ -15,6 +15,6 @@ QGISプロジェクトは、皆様の参加を歓迎し、奨励します。
 
 役に立つ連絡先：
 
-QGIS PSC (Project Steering Commity: [psc@qgis.org](mailto:psc@qgis.org))
+QGIS PSC (プロジェクト運営委員会: [psc@qgis.org](mailto:psc@qgis.org))
 
 {{<content-end >}}

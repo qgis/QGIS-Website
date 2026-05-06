@@ -3,7 +3,8 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Recognizing the amazing people and organizations that make QGIS possible
+subtitle: Tisztelgés azon csodálatos emberek és szervezetek előtt, akiknek köszönhetően
+  a QGIS létezik
 title: QGIS-hozzájárulók
 type: page
 
@@ -11,24 +12,24 @@ type: page
 {{<content-start >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Sol Katz Award Recipients
-Celebrating QGIS contributors who received the prestigious Sol Katz Award for exceptional leadership and contributions to geospatial open source software.
+## A Sol Katz-díj elnyerői
+Tisztelgés a QGIS közreműködői előtt, akik kivételes vezetői teljesítményükért és a térinformatikai nyílt forráskódú szoftverekhez való hozzájárulásukért elnyerték a rangos Sol Katz-díjat.
 
 <div style="text-align:center;">
 	<a href="/community/contributors/sol-katz-award/" class="button is-success">
-		View recipients
+		Díjazottak megtekintése
 	</a>
 </div>
 
 {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Contributing Organizations
-Organizations making meaningful contributions to the QGIS project through development and collaboration
+## Közreműködő szervezetek
+A QGIS-projekthez fejlesztéssel és együttműködéssel jelentősen hozzájáruló szervezetek
 
 <div style="text-align:center;">
 	<a href="/community/contributors/organisations/" class="button is-success">
-		View list
+		Lista megtekintése
 	</a>
 </div>
 
@@ -39,24 +40,24 @@ Organizations making meaningful contributions to the QGIS project through develo
 {{<rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Individual Contributors
-Celebrating the developers and contributors who help build QGIS through their code contributions and collaborative efforts.
+## Egyéni közreműködők
+Tisztelgés azon fejlesztők és közreműködők előtt, akik kódjukkal és közösségi munkájukkal hozzájárulnak a QGIS fejlesztéséhez.
 
 <div style="text-align:center;">
 	<a href="/community/contributors/individuals/" class="button is-success">
-		View list
+		Lista megtekintése
 	</a>
 </div>
 
 {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< contribution-stats "individuals" "/community/contributors/individuals/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Supporting Contributors
-Recognizing valuable contributions beyond code commits—community support, outreach, and behind-the-scenes efforts.
+## Támogató közreműködők
+A kódbeküldésen túlmutató értékes hozzájárulások elismerése – közösségi támogatás, népszerűsítés és a kulisszák mögött végzett munka.
 
 <div style="text-align:center;">
 	<a href="/community/contributors/supporting/" class="button is-success">
-		View list
+		Lista megtekintése
 	</a>
 </div>
 

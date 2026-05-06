@@ -11,7 +11,7 @@ type: page
 ---
 {{<content-start >}}
 # LTR пакети за Debian / Ubuntu
-Browse and download QGIS Long Term Release (LTR) packages for Debian and Ubuntu distributions.
+Разгледайте и изтеглете QGIS Long Term Release (LTR) пакети за дистрибуции на Debian и Ubuntu.
 
 {{<linux-packages-explorer distribution="debian_ubuntu_ltr" >}}
 

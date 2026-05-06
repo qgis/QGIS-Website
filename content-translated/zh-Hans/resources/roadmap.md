@@ -52,14 +52,14 @@ This schedule is also available as [“iCalendar”](https://qgis.org/schedule.i
 ### 计划表
 {{< csv-table file="csv/schedule.csv" />}}
 ### 版本说明
-| Abbreviation | 描述 |
+| 缩写 | 描述 |
 | --- | --- |
 | LTR | 长期发行版，开始进入新版本的开发阶段 |
 | LR | 定期发行版，开始进入新版本的开发阶段 |
 | FF | 功能冻结，开发阶段结束 |
 | PR | 最新版和LTR分支的单点版 |
 | EPR | 特别单点版 - Extra Point release |
-| <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-current"> current </span> | <span class="rm-current"> 当前支持的版本: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
 | <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
 
 ## 预发布的位置 / 每日构建版{#qgis-prereleases }

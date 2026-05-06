@@ -51,7 +51,7 @@ Az IRC használatához: telepítsen egy IRC-klienst és csatlakozzon az irc://ir
 ### Facebook
 A Facebook-felhasználók számára a QGIS-felhasználók angol nyelvű globális közösségi csoportja a https://www.facebook.com/groups/qgiscommunityofficialvirtualgroup címen érhető el.
 ## Felhasználói csoportok
-A helyi QGIS felhasználói csoport nagyszerű hely más felhasználókkal találkozásra.
+A helyi QGIS-felhasználói csoportok kiváló alkalmat nyújtanak más felhasználókkal való ismerkedésre.
 
 See [User Groups]({{< ref "community/groups" >}}) to read more about local user groups.
 ## Security Vulnerability Reporting

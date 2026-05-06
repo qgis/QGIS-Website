@@ -11,7 +11,7 @@ type: page
 ---
 {{<content-start >}}
 # Пакети за нощно издание на Debian / Ubuntu
-Browse and download QGIS nightly release packages for Debian and Ubuntu distributions.
+Разгледайте и изтеглете QGIS пакети за нощно издание за Debian и Ubuntu дистрибуции.
 
 {{<linux-packages-explorer distribution="debian_ubuntu_nightly_release" >}}
 

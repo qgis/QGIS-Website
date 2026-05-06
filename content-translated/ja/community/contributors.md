@@ -3,7 +3,7 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Recognizing the amazing people and organizations that make QGIS possible
+subtitle: QGISを支えるすばらしい人々と組織への感謝
 title: QGISへの貢献者
 type: page
 
@@ -11,24 +11,24 @@ type: page
 {{<content-start >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Sol Katz Award Recipients
-Celebrating QGIS contributors who received the prestigious Sol Katz Award for exceptional leadership and contributions to geospatial open source software.
+## Sol Katz賞 受賞者
+地理空間オープンソースソフトウェアへの優れたリーダーシップと多大な貢献が認められ、権威あるSol Katz賞を受賞したQGISコントリビューターの皆さんを称えます。
 
 <div style="text-align:center;">
 	<a href="/community/contributors/sol-katz-award/" class="button is-success">
-		View recipients
+		受賞者一覧を見る
 	</a>
 </div>
 
 {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Contributing Organizations
-Organizations making meaningful contributions to the QGIS project through development and collaboration
+## 貢献組織
+開発と協力を通じてQGISプロジェクトに多大な貢献をしている組織
 
 <div style="text-align:center;">
 	<a href="/community/contributors/organisations/" class="button is-success">
-		View list
+		一覧を見る
 	</a>
 </div>
 
@@ -39,24 +39,24 @@ Organizations making meaningful contributions to the QGIS project through develo
 {{<rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Individual Contributors
-Celebrating the developers and contributors who help build QGIS through their code contributions and collaborative efforts.
+## 個人貢献者
+コードの貢献と協力活動を通じてQGISの構築を支えてくださっている開発者・コントリビューターの皆さんに感謝します。
 
 <div style="text-align:center;">
 	<a href="/community/contributors/individuals/" class="button is-success">
-		View list
+		一覧を見る
 	</a>
 </div>
 
 {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< contribution-stats "individuals" "/community/contributors/individuals/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Supporting Contributors
-Recognizing valuable contributions beyond code commits—community support, outreach, and behind-the-scenes efforts.
+## 支援コントリビューター
+コードのコミットにとどまらず、コミュニティサポート・普及活動・舞台裏での取り組みなど、多岐にわたる貴重な貢献を称えます。
 
 <div style="text-align:center;">
 	<a href="/community/contributors/supporting/" class="button is-success">
-		View list
+		一覧を見る
 	</a>
 </div>
 

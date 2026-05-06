@@ -10,12 +10,12 @@ type: page
 ---
 {{<content-start >}}
 # アーカイブ
-Previous releases of QGIS are available at the following locations:
-* [QGIS.org hosted downloads](/downloads)
-* [Older releases for macOS / OS X](/downloads/macOS/)
-* [OSGeo hosted downloads](https://download.osgeo.org/qgis/)
-* [Legacy 'Kyngchaos' macOS / OS X downloads](https://www.kyngchaos.com/software/archive/).
+QGISの旧バージョンは、以下から入手できます:
+* [QGIS.org からのダウンロード](/downloads)
+* [macOS / OS X 向け旧バージョン](/downloads/macOS/)
+* [OSGeo からのダウンロード](https://download.osgeo.org/qgis/)
+* [レガシー 'Kyngchaos' macOS / OS X ダウンロード](https://www.kyngchaos.com/software/archive/)｡
 
-Plugins for QGIS are also available [at plugins.qgis.org](https://plugins.qgis.org/plugins/).
+QGISのプラグインは [at plugins.qgis.org](https://plugins.qgis.org/plugins/) でも公開されています。
 
 {{<content-end >}}

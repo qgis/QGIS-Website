@@ -7,11 +7,11 @@ type: page
 ---
 {{<content-start classes="content narrow" >}}
 # Környezetvédelmi politika
-Rationale[](https://www.qgis.org/en/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#rationale "Link to this heading")
+Indoklás[](https://www.qgis.org/hu/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#rationale "Link to this heading")
 -
-Environmental issues, such as the climate crisis, the rapid decrease of biodiversity, and pollution are pressing issues for everyone in the Geoscience community and beyond. Many QGIS users and contributors are geoscientists or geoinformatics specialists. As such, we need to act responsibly and serve as role models. If we act, there is a chance that the members of the general public that are less informed about these issues will also feel the urgency to act and help reduce the impact of human activity on our planet.
+A környezeti problémák – mint például az éghajlati válság, a biológiai sokféleség gyors csökkenése és a környezetszennyezés – sürgető kérdések mind a földtudományi közösség tagjai, mind pedig a közvélemény számára. Sok QGIS-felhasználó és közreműködő geotudós vagy geoinformatikai szakember. Ennek megfelelően felelősségteljesen kell cselekednünk, és példaként kell szolgálnunk. Ha cselekszünk, esély van arra, hogy a közvéleménynek azok a tagjai is érzékeljék a cselekvés sürgősségét, akik kevésbé tájékozottak ezekről a kérdésekről, és segítsenek csökkenteni az emberi tevékenység bolygónkra gyakorolt hatását.
 
-Policy[](https://www.qgis.org/en/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#policy "Link to this heading")
+Irányelv[](https://www.qgis.org/hu/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#policy "Link to this heading")
 -
 QGIS.ORG and the QGIS community are committed to act responsibly regarding their actions and activities where it has any relevant influence on the environment. This includes mainly our server infrastructure and our physical contributor meetings.
 

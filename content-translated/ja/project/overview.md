@@ -16,94 +16,94 @@ type: page
 
 ---
 {{<content-start >}}
-## Key features
-{{<tabs tab1="地図を作成" tab2="レイヤを編集" tab3="処理・分析" tab4="地図を共有" >}}
+## 主な機能
+{{<tabs tab1="地図を作成する" tab2="レイヤを編集する" tab3="処理と解析機能" tab4="地図を共有します" >}}
 
 {{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Create map](../img/create.gif "Create maps") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Class-leading cartography
-Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
-###### Professional map production
-Use the intuitive layout design tool to produce high-quality, large-format print maps.
+###### トップクラスの地図制作機能
+QGISの豊富なデザインオプションで、地図表現のアイデアを存分に発揮しましょう。
+###### 本格的な地図制作
+使いやすいレイアウトデザインツールで、高品質な大判印刷用地図を作成できます。
 ###### Powerful reporting tools
-Create atlases and reports with maps, media and tabular content. {{< column-end >}} {{< columns-end >}}
+地図・メディア・表データを組み合わせたアトラスやレポートを作成しましょう。　{{< column-end >}}{{< columns-end >}}
 
 {{< columns-start id="content-tab-2" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Edit map](../img/edit.gif "Edit map") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Exceptional digitizing proficiency
-Create and edit points, lines, polygons, and meshes with precision.
-###### Advanced construction tools
-Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations.
-###### Highly customizable forms
-Create user-friendly forms using our form designer.
+###### 比類なきデジタイジング機能
+ポイント・ライン・ポリゴン・メッシュを高精度で作成・編集できます。
+###### 高機能な作図ツール
+カーブやCAD風ツール、充実したジオメトリ変換機能を活用して、高度なジオメトリを作成しましょう。
+###### 高度にカスタマイズ可能なフォーム
+フォームデザイナーを使用して、使いやすいフォームを作成できます。
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start id="content-tab-3" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![visualize map](../img/visualize.gif "visualize map") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Comprehensive analysis toolset
-Uncover insights from your data with our comprehensive array of hundreds of analysis tools.
-###### Automated analysis workflows
-Visually combine analysis tools to create reproducible workflows easily.
-###### Extensible analysis environment
-Explore our diverse plugin ecosystem of third-party analysis tools for expanded capabilities.
+###### 充実した解析ツールセット
+数百種類にわたる豊富な解析ツールを駆使して、データに隠された知見を発見しましょう
+###### 自動化された解析ワークフロー
+解析ツールをビジュアルにつなぎ合わせることで、再現性の高いワークフローを手軽に構築できます。
+###### 拡張性の高い解析環境
+豊富なサードパーティ製解析ツールのプラグインエコシステムを活用して、さらなる機能拡張を実現しましょう。
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start id="content-tab-4" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![share map](../img/share.gif "share map") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Industry-leading format support
-Conquer data integration challenges with support for a multitude of data sources and formats.
-###### Standards and interoperability
-Amplify your impact by exploring, utilizing, and creating web services based on industry standards.
-###### Publish your work
-Extend QGIS to the cloud and mobile devices for wider accessibility.
+###### 業界最高水準のフォーマット対応
+多種多様なデータソース・フォーマットに対応し、データ統合の課題をスムーズに解決できます。
+###### 標準規格と相互運用性
+業界標準に準拠したウェブサービスの探索・活用・作成により、さらなる可能性を広げましょう。
+###### 作業結果を公開する
+QGISをクラウドやモバイルデバイスに展開して、より多くのユーザーがアクセスできる環境を実現しましょう。
 
 {{< column-end >}} {{< columns-end >}}
-## Level up with community resources
+## コミュニティリソースを活用してレベルアップ
 {{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![Create map](../img/plugs.jpg "Create map") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
-### 2000+ plugins developed by community
-Enhance the functionality of QGIS application with thousands of free additional features.
+### コミュニティによって開発された2000以上のプラグイン
+数千のフリープラグインでQGISの機能を大幅に拡張できます。
 
 [Go to plugins](https://plugins.qgis.org/) {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![International conference](../img/meetings.jpg "International conference") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
-### Annual international conference
-Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing at our annual international user conference.
+### 年次国際カンファレンス
+年次国際ユーザーカンファレンスで、専門家・愛好家・QGISユーザーとネットワークを築き、知識を共有しましょう。
 
-[Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}}) {{< column-end >}} {{< columns-end >}}
+[コミュニティミーティング]({{< ref "community/organisation/meetings/user_meetings.md" >}}) {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column rounded mb-4" >}} ![Local user groups](../img/groups.jpg "Local user groups") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
-### Local user groups and support providers
-Join a community of like-minded individuals in your region.
+### 地域のユーザーグループとサポートプロバイダー
+あなたの地域で、同じ関心を持つ仲間たちのコミュニティに加わりましょう。
 
-[Local groups list]({{< ref "community/groups.md" >}}) {{< column-end >}} {{< columns-end >}}
+[ローカルグループリスト]({{< ref "community/groups.md" >}}) {{< column-end >}} {{< columns-end >}}
 
-[Join the community]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
-## Cross platform
+[コミュニティへの参加]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
+## クロスプラットフォーム
 {{< columns-start >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
 ### QGISサーバー
-Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layouts and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+QGISのプロジェクトとレイヤーを、OGC互換のWMS・WMTS・WFS・WCSサービスとして公開できます。エクスポートするレイヤー・属性・レイアウト・座標系を細かく制御できます。QGISサーバーはWMS 1.3のリファレンス実装として認定されています。 {{< rich-content-end >}}{{< rich-box-end >}}{{< column-end >}}{{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6" >}}
 ### QGISデスクトップ
 地理空間情報の作成、編集、解析と公開を行います。
 
-[Download]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+[ダウンロード]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Webクライアント
-Publish your QGIS projects on the web with ease.
+あなたのQGISプロジェクトをウェブに手軽に公開できます。
 
-Benefit from the powerful symbology, labeling and blending features to impress the world with your maps.
+充実したシンボロジー・ラベリング・ブレンド機能を駆使して、世界に誇れる美しい地図を作り上げましょう。
 
 [QGIS Web Client 2](https://github.com/qgis/qwc2)
 
@@ -111,7 +111,7 @@ Benefit from the powerful symbology, labeling and blending features to impress t
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6" >}}
 ### モバイル・タブレットでのQGIS
-The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS out of the office.
+QGISはデスクトップだけにとどまりません。タッチ操作に最適化された様々なサードパーティ製アプリを活用することで、フィールドワークでもQGISをご利用いただけます。
 * [QField]({{< ref "download.md" >}})
 * [Mergin Maps mobile app]({{< ref "download.md" >}})
 * [IntraMaps Roam]({{< ref "download.md" >}})
@@ -120,15 +120,15 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 
 {{< rich-box-start layoutClass="has-right mt-6 mb-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ### ケーススタディ
-We gather inspiring stories from our users that showcase the versatility and power of the QGIS project.
+QGISプロジェクトの多様性と可能性を示す、ユーザーの皆さまからの事例や体験談を紹介しています。
 
 [Find out more]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}}
 
 {{<rich-box-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third mb-6">}}
-## Maps showcase
-Demonstrations of our user's creativity, showcasing the powerful map creation capabilities of QGIS.
+## 地図ショーケース
+ユーザーの創造性とQGISの強力な地図作成機能を示す、素晴らしい作品の数々をご覧ください。
 
 [Go to maps showcase]({{< ref "project/overview/maps.md" >}})
 
@@ -139,8 +139,8 @@ Demonstrations of our user's creativity, showcasing the powerful map creation ca
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
-## Application screenshots
-Below are some screenshots from QGIS itself and a selection of maps which were created with QGIS.
+## アプリケーションのスクリーンショット
+以下に、QGISアプリケーションのスクリーンショットと、QGISを使って作成された地図の一部をご覧いただけます。
 
 [Go to screenshots]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
 

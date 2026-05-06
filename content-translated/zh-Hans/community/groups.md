@@ -10,115 +10,115 @@ type: page
 ---
 {{<content-start >}}
 # 用户组
-## 当前 QGIS 用户组列表
-### Registered 2016 or earlier
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Arthur Nanni" >}}
+## 当前QGIS用户组列表
+### 2016年或更早注册
+{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (巴西)" listSubtitle="联系人: Arthur Nanni" >}}
 
-{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Jacob Arpe" >}}
+{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (丹麦) " listSubtitle="联系人: Jacob Arpe" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contact: Simon Miles" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (英国) " listSubtitle="联系人: Simon Miles" >}}
 
-{{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Germany) " listSubtitle="Contact: Thomas Schüttenberg" >}}
+{{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (德国) " listSubtitle="联系人: Thomas Schüttenberg" >}}
 
-{{<rich-list listLink="http://qgis.it/" icon="🇮🇹 " layoutClass="half" listTitle="Gruppo degli utenti italiani di QGIS (Italy) " listSubtitle="Contact: Matteo Ghetta" >}}
+{{<rich-list listLink="http://qgis.it/" icon="🇮🇹 " layoutClass="half" listTitle="Gruppo degli utenti italiani di QGIS (意大利) " listSubtitle="联系人: Matteo Ghetta" >}}
 
-{{<rich-list listLink="http://qgis.jp/" icon="🇯🇵 " layoutClass="half" listTitle="QGIS User Group Japan (OSGeo.JP) " listSubtitle="Contact: Kosuke ASAHI" >}}
+{{<rich-list listLink="http://qgis.jp/" icon="🇯🇵 " layoutClass="half" listTitle="日本QGIS用户组 (OSGeo.JP) " listSubtitle="联系人: Kosuke ASAHI" >}}
 
-{{<rich-list listLink="https://qgis.pe/" icon="🇵🇪 " layoutClass="half" listTitle="QGIS Perú Official Users Group " listSubtitle="Contact: Anibal Alarcon" >}}
+{{<rich-list listLink="https://qgis.pe/" icon="🇵🇪 " layoutClass="half" listTitle="QGIS秘鲁官方用户组 " listSubtitle="联系人: Anibal Alarcon" >}}
 
-{{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contact: Michał Żugajewicz" >}}
+{{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (波兰) " listSubtitle="联系人: Michał Żugajewicz" >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: João Gaspar" >}}
+{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS 葡萄牙 " listSubtitle="联系人: João Gaspar" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Scotland) " listSubtitle="Contact: Ross McDonald" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (苏格兰) " listSubtitle="联系人: Ross McDonald" >}}
 
-{{<rich-list listLink="https://qgis.ch/" icon="🇨🇭 " layoutClass="half" listTitle="QGIS user group Switzerland " listSubtitle="Contact: François Voisard" >}}
+{{<rich-list listLink="https://qgis.ch/" icon="🇨🇭 " layoutClass="half" listTitle="瑞士QGIS用户组" listSubtitle="联系人: François Voisard" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿 " layoutClass="half" listTitle="QGIS UK (Wales/Cymru) " listSubtitle="Contact: Kevin Williams" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁷󠁬󠁳󠁿 " layoutClass="half" listTitle="QGIS UK (Wales/Cymru) " listSubtitle="联系人: Kevin Williams" >}}
 
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (New Zealand) " listSubtitle="Contact: Brent Wood –> REMOVED in 2018" >}}
-### Registered 2017
-{{<rich-list listLink="https://qgis.no/" icon="🇳🇴" layoutClass="half" listTitle="QGIS Norge (Norway)" listSubtitle="Contact: James Stott" >}}
+{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS 用户组 (新西兰) " listSubtitle="联系人: Brent Wood –> 2018年移除" >}}
+### 2017年注册
+{{<rich-list listLink="https://qgis.no/" icon="🇳🇴" layoutClass="half" listTitle="QGIS Norge (挪威)" listSubtitle="联系人: James Stott" >}}
 
-{{<rich-list listLink="https://qgis.org.za/" icon="🇿🇦" layoutClass="half" listTitle="QGIS ZA (South Africa)" listSubtitle="Contact: Admire Nyakudya" >}}
+{{<rich-list listLink="https://qgis.org.za/" icon="🇿🇦" layoutClass="half" listTitle="QGIS ZA (南非)" listSubtitle="联系人: Admire Nyakudya" >}}
 
-{{<rich-list listLink="https://www.osgeo.fr/" icon="🇫🇷" layoutClass="half" listTitle="Groupe des Utilisateurs de QGIS - France (France)" listSubtitle="Contact: Harrissou Sant-anna" >}}
+{{<rich-list listLink="https://www.osgeo.fr/" icon="🇫🇷" layoutClass="half" listTitle="Groupe des Utilisateurs de QGIS - France (法国)" listSubtitle="联系人: Harrissou Sant-anna" >}}
 
-{{<rich-list listLink="https://qgis.se/" icon="🇸🇪" layoutClass="half" listTitle="QGIS Sverige (Sweden)" listSubtitle="Contact: Karl-Magnus Jönsson" >}}
+{{<rich-list listLink="https://qgis.se/" icon="🇸🇪" layoutClass="half" listTitle="QGIS Sverige (瑞典)" listSubtitle="联系人: Karl-Magnus Jönsson" >}}
 
-{{<rich-list listLink="https://qgis.or.ke" icon="🇰🇪" layoutClass="half" listTitle="QGIS Kenya" listSubtitle="Contact: Benard Mitto" >}}
+{{<rich-list listLink="https://qgis.or.ke" icon="🇰🇪" layoutClass="half" listTitle="QGIS肯尼亚" listSubtitle="联系人: Benard Mitto" >}}
 
-{{<rich-list listLink="https://qgis-australia.org/" icon="🇦🇺" layoutClass="half" listTitle="QGIS Australia" listSubtitle="Contact: Emma Hain" >}}
+{{<rich-list listLink="https://qgis-australia.org/" icon="🇦🇺" layoutClass="half" listTitle="QGIS澳大利亚" listSubtitle="联系人: Emma Hain" >}}
 
-{{<rich-list listLink="http://qgis-us.org" icon="🇺🇸" layoutClass="half" listTitle="QGIS USA" listSubtitle="Contact: Randal Hale" >}}
+{{<rich-list listLink="http://qgis-us.org" icon="🇺🇸" layoutClass="half" listTitle="QGIS美国" listSubtitle="联系人: Randal Hale" >}}
 
-{{<rich-list listLink="https://qgis.mx" icon="🇲🇽" layoutClass="half" listTitle="QGIS Mexico" listSubtitle="Contact: Hennessy Amor Becerra Ayala" >}}
+{{<rich-list listLink="https://qgis.mx" icon="🇲🇽" layoutClass="half" listTitle="QGIS墨西哥" listSubtitle="联系人: Hennessy Amor Becerra Ayala" >}}
 
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Georgia" listSubtitle="Contact: Zurab Archvadze –> REMOVED in 2018" >}}
-### Registered 2018
-{{<rich-list listLink="https://qgis.ro/" icon="🇷🇴" layoutClass="half" listTitle="Asociația Utilizatorilor QGIS (Romania)" listSubtitle="Contact: Tudor Bărăscu" >}}
+{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS格鲁吉亚" listSubtitle="联系人: Zurab Archvadze –> 2018年移除" >}}
+### 2018年注册
+{{<rich-list listLink="https://qgis.ro/" icon="🇷🇴" layoutClass="half" listTitle="Asociația Utilizatorilor QGIS (罗马尼亚)" listSubtitle="联系人: Tudor Bărăscu" >}}
 
-{{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="Association of QGIS users in Spain" listSubtitle="Contact: Carlos López Quintanilla" >}}
+{{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="西班牙QGIS用户协会" listSubtitle="联系人: Carlos López Quintanilla" >}}
 
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Contact: Germán Carrillo" >}}
-### Removed 2018
-{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (New Zealand)" listSubtitle="Contact: Brent Wood" >}}
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="联系人: Germán Carrillo" >}}
+### 2018年移除
+{{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS 用户组 (新西兰)" listSubtitle="联系人: Brent Wood" >}}
 
-{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS Georgia" listSubtitle="Contact: Zurab Archvadze" >}}
-### Registered 2020
-{{<rich-list listLink="https://qgis.nl/" icon="🇳🇱" layoutClass="half" listTitle="QGIS gebruikersgroep (Netherlands)" listSubtitle="Contact: Raymond Nijssen" >}}
+{{<rich-list listLink="https://qgis.org" icon="🇬🇪" layoutClass="half" listTitle="QGIS格鲁吉亚" listSubtitle="联系人: Zurab Archvadze" >}}
+### 2020年注册
+{{<rich-list listLink="https://qgis.nl/" icon="🇳🇱" layoutClass="half" listTitle="QGIS gebruikersgroep (荷兰)" listSubtitle="联系人: Raymond Nijssen" >}}
 
-{{<rich-list listLink="https://qgis.org.mx/" icon="🇲🇽" layoutClass="half" listTitle="Asociación QGIS México" listSubtitle="Contact: Hennessy Amor Becerra Ayala" >}}
+{{<rich-list listLink="https://qgis.org.mx/" icon="🇲🇽" layoutClass="half" listTitle="Asociación QGIS México" listSubtitle="联系人: Hennessy Amor Becerra Ayala" >}}
 
-{{<rich-list listLink="https://qgis-id.github.io/" icon="🇮🇩" layoutClass="half" listTitle="Komunitas Pengguna QGIS Indonesia" listSubtitle="Contact: Ismail Sunni" >}}
+{{<rich-list listLink="https://qgis-id.github.io/" icon="🇮🇩" layoutClass="half" listTitle="Komunitas Pengguna QGIS Indonesia" listSubtitle="联系人: Ismail Sunni" >}}
 
-{{<rich-list listLink="https://qgis.sk/" icon="🇸🇰" layoutClass="half" listTitle="QGIS Slovensko (Slovakia)" listSubtitle="Contact: Jana Michalkova" >}}
+{{<rich-list listLink="https://qgis.sk/" icon="🇸🇰" layoutClass="half" listTitle="QGIS Slovensko (斯洛伐克)" listSubtitle="联系人: Jana Michalkova" >}}
 
-{{<rich-list listLink="https://qgis.ec/" icon="🇪🇨" layoutClass="half" listTitle="Grupo de usuarios QGIS Ecuador" listSubtitle="Contact: Adrián Benavides" >}}
-### Registered 2021
-{{<rich-list listLink="https://qgis.at/" icon="🇦🇹" layoutClass="half" listTitle="QGIS Anwendergruppe Österreich (Austria)" listSubtitle="Contact: Paul Stampfl" >}}
+{{<rich-list listLink="https://qgis.ec/" icon="🇪🇨" layoutClass="half" listTitle="Grupo de usuarios QGIS Ecuador" listSubtitle="联系人: Adrián Benavides" >}}
+### 2021年注册
+{{<rich-list listLink="https://qgis.at/" icon="🇦🇹" layoutClass="half" listTitle="QGIS Anwendergruppe Österreich (奥地利)" listSubtitle="联系人: Paul Stampfl" >}}
 
-{{<rich-list listLink="https://qgisghana.org/" icon="🇬🇭" layoutClass="half" listTitle="QGIS Ghana" listSubtitle="Contact: Enock Seth Nyamador" >}}
-### Registered 2022
-{{<rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS Argentina" listSubtitle="Contact: Ariel Anthieni" >}}
-### Registered 2024
-{{<rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="QGIS Global virtual FB group" listSubtitle="Contact: Adelcides Varela" >}}
+{{<rich-list listLink="https://qgisghana.org/" icon="🇬🇭" layoutClass="half" listTitle="QGIS加纳" listSubtitle="联系人: Enock Seth Nyamador" >}}
+### 2022年注册
+{{<rich-list listLink="https://qgis.ar/" icon="🇦🇷" layoutClass="half" listTitle="QGIS阿根廷" listSubtitle="联系人: Ariel Anthieni" >}}
+### 2024年注册
+{{<rich-list listLink="https://www.facebook.com/groups/612486875596534" icon="🌐" layoutClass="half" listTitle="QGIS全球虚拟FB组" listSubtitle="联系人: Adelcides Varela" >}}
 
-{{<rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS North Macedonia" listSubtitle="Contact: Ivica Milevski" >}}
+{{<rich-list listLink="https://qgis-mk.blogspot.com" icon="🇲🇰" layoutClass="half" listTitle="QGIS北马其顿" listSubtitle="联系人: Ivica Milevski" >}}
 
-{{<rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS Albania" listSubtitle="Contact: Emiliano Qose" >}}
+{{<rich-list listLink="https://qgis-al.blogspot.com/" icon="🇦🇱" layoutClass="half" listTitle="QGIS阿尔巴尼亚" listSubtitle="联系人: Emiliano Qose" >}}
 
-{{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Republic of Kosova" listSubtitle="Contact: Milot Lubishtani" >}}
-### Registered 2025
-{{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contact: Antidy Kawamala" >}}
-### Registered 2026
-{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}
+{{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS科索沃共和国" listSubtitle="联系人: Milot Lubishtani" >}}
+### 2025年注册
+{{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS坦桑尼亚" listSubtitle="联系人: Antidy Kawamala" >}}
+### 2026年注册
+{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS印度用户组" listSubtitle="联系人: Ujaval Gandhi" >}}
 ## 用户组目的
 * 组织用户会议
-* Coordination of development, with an emphasis on regional/national standards and requirements
-* QGIS information dissemination: meetings, articles in GIS magazines, QGIS information in social media, GIS discussion boards, etc.
-* Collection of case studies of local QGIS usage
-* Sponsoring: local user groups are encouraged to collect reasonable annual membership fees (depending on the country). These collected funds can be used to fund the development of relevant features, help with bug-fixing or as a donation to the international QGIS project.
-* Establishment of interest groups, e.g. surveying, urban planning, server/web client, etc.
-* Initialization/coordination of application modules, e.g. surveying, urban planning, server/web client, etc.
-* Electing a representative to act as a [QGIS Voting Member]({{< ref "/community/organisation#voting-members" >}})
+* 统筹协调发展，重点契合区域及国家相关标准与规范要求
+* QGIS信息宣传渠道：会议、GIS杂志的文章、社交媒体的QGIS信息、GIS讨论板块等。
+* 本地QGIS应用案例研究汇编
+* 赞助：鼓励本地用户组 (根据当地实际情况) 收取合理的年度会员费。所筹集的资金可用于资助相关功能的开发、协助修复Bug，或作为对国际QGIS项目的捐助。
+* 成立专业兴趣小组，例如测绘、城市规划、服务器/Web客户端等。
+* 应用模块初始化与统筹协同，例如测绘、城市规划、服务器/Web客户端等。
+* 推选一名代表担任 [QGIS投票成员]({{< ref "/community/organisation#voting-members" >}})
 
-## General assumptions/recommendations
-* local user groups should stay vendor/company neutral
-* establish democratic structures for the local steering committee, voting and making important decisions
-* stay transparent, especially if you deal with membership-fees and how you spend them
-* inform the international project from time to time about your local activities
+## 意见或建议
+* 本地用户组应保持供应商/公司中立
+* 为地方指导委员会建立民主运作机制，开展投票表决并审议重大事项。
+* 保持公开透明，尤其是在处理会费及使用支出方面。
+* 及时向国际项目组汇报本地的相关活动情况
 
-## 机构
-Depending on your country, a smaller legal entity, e.g. an association or non-profit organisation, can be established. Depending on local legislation, such an entity implies that you meet at least once per year (general assembly), publish a yearly report and make the financial report available to your members. Often it also implies the creation of statutes.
+## 组织
+根据所在国家实际情况，可注册成立小型法人实体，例如协会或非营利组织。依据当地法律，此类实体每年至少需要召开一次会议 (全体会员大会)，发布年度工作报告，并向会员公开财务报告。通常，还要求制定组织章程。
 
-Statutes of the Swiss QGIS user group as an example:
-* German (master): [https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf](https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf)
-* French (translation): [https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf](https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf)
+以瑞士QGIS用户组的章程为例：
+* 德语 (原版): [https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf](https://www.qgis.ch/assets/pdf/StatutenderQGISAnwendergruppeSchweiz.pdf)
+* 法语 (译本): [https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf](https://www.qgis.ch/assets/pdf/StatutsdugroupedutilisateursQGISSuisse.pdf)
 
-Membership application forms:
-* German: [https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf](https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf)
-* French: [https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf](https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf)
+入会申请表:
+* 德语: [https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf](https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf)
+* 法语: [https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf](https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf)
 
 You can use these statutes and membership application forms as a reference and change them as needed for your local situation.
 ## Local Country domain qgis.xx

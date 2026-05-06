@@ -7,11 +7,11 @@ type: page
 ---
 {{<content-start >}}
 # Изтегляния на QGIS
-Browse and download QGIS installers, packages, and related files from our comprehensive download repository. Files are hosted on our storage server, so download speeds may vary compared to current release versions.
+Разглеждайте и изтегляйте инсталатори, пакети и свързани файлове на QGIS от нашето изчерпателно хранилище за изтегляния. Файловете се хостват на нашия сървър за съхранение, така че скоростта на изтегляне може да варира в сравнение с текущите версии.
 
 {{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
 #### Търсите актуалните версии?
-For the most recent QGIS releases with optimal download speeds, visit our main download page.
+За най-новите версии на QGIS с оптимални скорости на изтегляне, посетете нашата основна страница за изтегляне.
 
 [Изтегляне на QGIS]({{< ref "/download/index.md" >}})
 

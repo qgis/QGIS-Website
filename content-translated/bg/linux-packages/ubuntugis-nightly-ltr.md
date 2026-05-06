@@ -10,7 +10,7 @@ type: page
 ---
 {{<content-start >}}
 # UbuntuGIS Нощни LTR пакети
-Browse and download QGIS nightly Long Term Release (LTR) packages for UbuntuGIS distributions.
+Разгледайте и изтеглете QGIS нощни пакети с дългосрочно издание (LTR) за дистрибуции на UbuntuGIS.
 
 {{<linux-packages-explorer distribution="ubuntugis_nightly_ltr" >}}
 

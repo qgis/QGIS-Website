@@ -6,7 +6,7 @@ draft: 'true'
 homepage: https://kartoza.com
 instagram: null
 linkedin: null
-title: ティム・サットン
+title: Tim Sutton
 twitter: https://twitter.com/timlinux
 type: guest
 username: timlinux

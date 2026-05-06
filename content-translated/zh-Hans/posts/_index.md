@@ -4,6 +4,6 @@ aliases:
 author: Tim Sutton
 tags:
 - 索引
-title: Posts
+title: 动态
 
 ---

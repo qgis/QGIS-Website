@@ -10,13 +10,13 @@ type: page
 
 Goodies
 =
-If you are a fan of QGIS, you might want to visit our store so you can buy some mementos to show off your favourite desktop GIS. We have a number of great t-shirts, mugs, hoodies, caps and more, so do pay a visit to one of our stores below!
+Ако сте фен на QGIS, може би ще искате да посетите нашия магазин, за да си купите сувенири, с които да се похвалите с любимата си настолна ГИС система. Имаме редица страхотни тениски, чаши, суичъри с качулки, шапки и други, така че посетете някой от магазините ни по-долу!
 
-Buying QGIS apparel not only lets you show off the fact that you use QGIS, for every t-shirt sold a commission is given to the QGIS project.
+Купуването на дрехи от QGIS не само ви позволява да покажете факта, че използвате QGIS, но и за всяка продадена тениска се дава комисионна на проекта QGIS.
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
 ## Spreadshirt
-We co-operate with Spreadshirt. They produce locally and ship the products to all countries in the world.
+Сътрудничим си със Spreadshirt. Те произвеждат локално и доставят продуктите до всички страни по света.
 
 [https://shop.spreadshirt.net/qgis/](https://shop.spreadshirt.net/qgis/)
 
@@ -30,7 +30,7 @@ We co-operate with Spreadshirt. They produce locally and ship the products to al
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
 ## Червен балон
-Some more creative and funny (but unofficial) designs can be found in the Red Bubble store.
+Някои по-креативни и забавни (но неофициални) дизайни можете да намерите в магазина на Red Bubble.
 
 [https://www.redbubble.com/shop/qgis](https://www.redbubble.com/shop/qgis)
 

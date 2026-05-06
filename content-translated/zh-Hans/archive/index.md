@@ -4,18 +4,18 @@ Reviewer: Tim Sutton
 draft: false
 sidebar: true
 subtitle: ''
-title: 档案
+title: 存档
 type: page
 
 ---
 {{<content-start >}}
-# 档案
-Previous releases of QGIS are available at the following locations:
-* [QGIS.org hosted downloads](/downloads)
-* [Older releases for macOS / OS X](/downloads/macOS/)
-* [OSGeo hosted downloads](https://download.osgeo.org/qgis/)
-* [Legacy 'Kyngchaos' macOS / OS X downloads](https://www.kyngchaos.com/software/archive/).
+# 存档
+QGIS的历史版本可在以下位置获取：
+* [QGIS.org托管下载](/downloads)
+* [适用于 macOS / OS X 的旧版本](/downloads/macOS/)
+* [OSGeo托管下载](https://download.osgeo.org/qgis/)
+* [旧版 'Kyngchaos' macOS / OS X 下载](https://www.kyngchaos.com/software/archive/).
 
-Plugins for QGIS are also available [at plugins.qgis.org](https://plugins.qgis.org/plugins/).
+QGIS插件也可在 [plugins.qgis.org](https://plugins.qgis.org/plugins/) 获取。
 
 {{<content-end >}}

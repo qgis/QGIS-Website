@@ -46,6 +46,8 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 ## macOS
 {{< download-macos >}}
 
+Official All-in-one, signed and notarized installers for macOS. [Learn more]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
+
 Alternatively, it is also possible to install QGIS via MacPorts, see the [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
 
 {{< platform-content-end >}}

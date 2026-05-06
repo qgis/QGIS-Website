@@ -13,24 +13,24 @@ QGIS е глобален проект с голямо въздействие. QG
 
 {{<button-bar "fa-solid fa-download:Download:download/download/" >}}
 ## Кой използва QGIS?
-QGIS is used by governments, large multi-national organisations, corporate entities, academic institutions all the way down to small businesses and hobbyist users. Our Open Source development model makes the software accessible to all of these users at a cost they can afford, excluding no one from the ability to benefit from QGIS.
+QGIS се използва от правителства, големи мултинационални организации, корпоративни структури, академични институции, малки предприятия и любители. Нашият модел на разработка с отворен код прави софтуера достъпен за всички тези потребители на цена, която могат да си позволят, като не изключва никого от възможността да се възползва от QGIS.
 
 {{<button-bar "fa-solid fa-download:License:license/" >}}
 ## QGIS е безплатен, не е напълно безплатен
-It has taken, and will continue to take, a great deal of effort to develop high quality tools like those provided at QGIS.org. Initially this cost was borne exclusively through the efforts of dedicated volunteers. As the project matured, a financial ecosystem developed around the project. Customers began to contract community members to extend the QGIS project (software, documentation, online infrastructure) to better serve their needs.
+Необходими са и ще продължат да бъдат положени много усилия за разработването на висококачествени инструменти, като тези, предоставени на QGIS.org. Първоначално тези разходи се поеха изключително от усилията на всеотдайни доброволци. С развитието на проекта около него се разви финансова екосистема. Клиентите започнаха да наемат членове на общността, за да разширят проекта QGIS (софтуер, документация, онлайн инфраструктура), за да обслужват по-добре техните нужди.
 
-In parallel to these directed funding efforts, we developed programmes for supporting the project with funds that we can use at our own discretion via donations and sustaining memberships. These discretionary funds allow us to provide all of the supporting infrastructure around the project. In addition it enables us to fund:
+Успоредно с тези усилия за целенасочено финансиране, разработихме програми за подкрепа на проекта със средства, които можем да използваме по наша преценка чрез дарения и поддържащи членства. Тези дискреционни средства ни позволяват да осигурим цялата поддържаща инфраструктура около проекта. Освен това, те ни позволяват да финансираме:
 - подобрения в качеството на софтуера
 - домакин на срещи на разработчици
 - наемане на технически сътрудници за подобряване на широкообхватните елементи на проекта и
 - развиване на общността около проекта, за да се засили неговата дългосрочна устойчивост.
 
-## Модел „стойност за стойност“
+## Модел стойност за стойност
 Много от нашите потребители мигрират към QGIS от собствени алтернативи, които са финансово неустойчиви за използване в техните организации. Ние празнуваме факта, че сме в състояние да отворим врати за тези, които се нуждаят от пространствени инструменти като QGIS, които иначе биха били затворени. Въпреки това, ви молим да споделите с нас някои от ползите от прехода към QGIS. Средствата, които ни предоставяте, се използват в пряка полза за всички потребители, които могат да се насладят на по-богат на функции, стабилен и добре документиран набор от инструменти на QGIS. Този модел „стойност за стойност“ помага да се гарантира дългосрочната устойчивост и просперитет на проекта QGIS. С близо половин милион активни потребители дневно, вашият принос може да окаже огромно влияние върху живота на много хора. Проектът е получил непарични и финансови вноски от много известни международни организации по целия свят, на които искрено благодарим. Каним ви да се присъедините към все по-нарастващия брой организации, които виждат стойност в работата, която вършим, и споделят стойност с нас под формата на финансови вноски в подкрепа на нашата работа.
 
 {{<button-bar "fa-solid fa-file-pdf:View our License:license/" "fa-solid fa-money-bill:Annual Financial Reports:reports/" >}}
 ## Управление
-QGIS.org is registered as a Swiss Verrein (Association) that is operated in a non-profit manner. It is managed by an elected board and contributed to by hundreds of people from around the world. In the same way that the software we develop is open source, the project is operated with the same principle of openness, with all financial reports, board reports and community decisions carried out in an open and transparent way.
+QGIS.org е регистрирана като швейцарска Verrein (асоциация), която работи с нестопанска цел. Управлява се от избран съвет и в него участват стотици хора от цял ​​свят. По същия начин, както софтуерът, който разработваме, е с отворен код, проектът се управлява със същия принцип на откритост, като всички финансови отчети, доклади на съвета и решения на общността се извършват по открит и прозрачен начин.
 
 {{<button-bar "fa-solid fa-file-pdf:Annual Reports:reports/annual/" >}}
 

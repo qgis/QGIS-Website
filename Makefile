@@ -108,7 +108,7 @@ txpull: mktxtemp
 
 sanitize-shortcodes: ## Restore corrupted Hugo shortcode names in translated .po files
 	@echo "Sanitizing shortcode names in translations..."
-	python3 scripts/i18n/sanitize_shortcodes.py
+	python3 scripts/i18n/sanitize_shortcodes.py || (echo "ERROR: Sanitization failed" && exit 1)
 
 messages-extract:
 	hugo-gettext extract translations/en/

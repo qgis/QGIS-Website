@@ -13,27 +13,27 @@ type: page
 # Resources
 {{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
 #### Проблеми с инсталацията?
-If you are looking for information on installing QGIS on all available platforms, we have prepared a comprehensive guide for you:
+Ако търсите информация за инсталирането на QGIS на всички налични платформи, сме подготвили подробно ръководство за вас:
 
 [Ръководство за монтаж]({{< ref "/resources/installation-guide/index.md" >}})
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 ## Документация
-QGIS has a lot of documentation. All of the core documentation (user manual, developer handbooks etc.) is available in English. Some documents such as the user guide are also available in other languages.
+QGIS разполага с много документация. Цялата основна документация (ръководство за потребителя, наръчници за разработчици и др.) е достъпна на английски език. Някои документи, като например ръководството за потребителя, са достъпни и на други езици.
 
-You will find documentation for every QGIS Long Term Release (LTR) on the respective documentation website.
+Ще намерите документация за всяка дългосрочна версия (LTR) на QGIS на съответния уебсайт за документация.
 
 [Включете се]({{< ref "/community/involve" >}}) и ни помогнете да напишем по-добра документация.
 
 {{<language-select >}}
 
-<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
+<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS тестване (>|version|)" tab4="Архивирани издания" tab5="Защита на данните">}} -->
 
-{{<tabs tab1="QGIS |алтернативна версия|" tab2="QGIS тестване (>|ltrversion|)" tab3="Архивирани издания" tab4="Защита на данните" >}}
+{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS тестване (>|ltrversion|)" tab3="Архивирани издания" tab4="Защита на данните" >}}
 
 {{< tab-content-start tab="1" >}} **For users (QGIS {{< param "ltrversion" >}}):**
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Ръководство за монтаж — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Ръководство за настолна версия— <lang>" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="Ръководство за QGIS обучение — <lang>" >}}
 
@@ -41,11 +41,11 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="Ръководство за сървъра — <lang>" >}}
 
-**За автори на документация (QGIS {{< параметър "LTR Версия" >}}):**
+**За автори на документация (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="Указания за документация — <lang>" >}}
 
-**За разработчици (QGIS {{< параметър "LTR версия" >}}):**
+**За разработчици (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS готварска книга (за плъгини и скриптове) — <lang>" >}}
 
@@ -55,7 +55,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|ltrversion|/INSTALL.md" layoutClass="inline-block" listTitle="Изграждане на QGIS от изходния код" >}}
 
-**За изтегляне (QGIS {{< параметър "LTR версия" >}}):**
+**За изтегляне (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/pdf" layoutClass="inline-block" listTitle="PDF файл с ръководствата" >}}
 
@@ -64,13 +64,13 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 {{<tab-content-end >}}
 
 <!--{{< tab-content-start tab="2" >}}
-**For users (QGIS {{< param "version" >}}):**
+**За Потребители (QGIS {{< param "version" >}}):**
 
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Ръководство за потребителя на настолни компютри — <lang>" >}}
  
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>">}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Ръководство за обучение— <lang>">}}
 
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
+{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Леко въведение в GIS — <lang>" >}}
 
 {{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Ръководство за сървъра — <lang>" >}}
 
@@ -84,7 +84,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS готварска книга (за плъгини и скриптове) — <lang>">}}
 
-{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
+{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api Документация" >}}
 
 
 {{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API документация" >}}
@@ -101,11 +101,11 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{<tab-content-start tab="2" >}}
 
-We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "ltrversion" >}}. We call this version 'QGIS Testing' and the documentation can be found here:
+Все още актуализираме (не превеждаме) документацията за версии, по-нови от QGIS {{< param "LTR версия" >}}. Наричаме тази версия „QGIS Testing“ и документацията може да бъде намерена тук:
 
 **За потребители (тестване на QGIS):**
 
-{{<rich-list listLink="https://docs.qgis.org/testing/en/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Ръководство за потребителя на настолни компютри" >}}
+{{<rich-list listLink="https://docs.qgis.org/testing/en/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Ръководство на потребителя за настолни компютри" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="QGIS Ръководство за обучение" >}}
 
@@ -157,7 +157,7 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<tab-content-start tab="4" >}}
 
-In line with GDPR and related data protection regulations, we provide the following documentation:
+В съответствие с GDPR и свързаните с него разпоредби за защита на данните, ние предоставяме следната документация:
 
 {{<rich-list listLink="https://docs.qgis.org/latest/en/docs/user_manual/appendices/qgis_desktop_network_connections.html" layoutClass="inline-block" listTitle="Мрежови връзки на приложението QGIS" >}}
 

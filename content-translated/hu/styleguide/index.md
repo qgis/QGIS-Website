@@ -33,7 +33,7 @@ Az új QGIS logót itt mutatjuk be. Az eredeti QGIS logó alapvető elemeinek me
 
 A javasolt változások lent láthatók.
 - A korábbi szellemet megőriztük, de a logó merész
-- Az árnyékot eltávolítottuk
+- Árnyékok eltávolítva
 - A Q betűtípusa sans-serif
 - A nyíl a Q betű részévé vált
 - A QGIS logó felirata a szabad Trueno Bold betűkészletet használja.

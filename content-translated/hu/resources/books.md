@@ -109,8 +109,8 @@ Master data management, visualization, and spatial analysis techniques in QGIS a
 - Anita Graser, Ben Mearns, Alex Mandel, Victor Olaya Ferrero, Alexander Bruy
 - Date: February 2017
 
-### Mastering QGIS - második kiadás
-Az alapok mentén halad és gyakorlati, lépésről-lépésre példákkal mutatja be a QGIS teljes erejét.
+### Mastering QGIS – második kiadás
+Az alapokon túllépve fedezze fel a QGIS teljes potenciálját gyakorlati, lépésről lépésre bemutatott példák segítségével
 - [https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623](https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623)
 - Kurt Menke, GISP et al.
 - Dátum: 2016 szeptember
@@ -140,19 +140,19 @@ Tanulja meg a QGIS használatát a legmagasabb szintű kartográfiai termékek e
 - Dátum: 2016 március
 
 ### QGIS Blueprints
-Elemző, hely alapú, web alkalmazások kidolgozása QGIS-sel
+Elemző, hely alapú, webalkalmazások fejlesztése QGIS-szel
 - [https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090](https://www.packtpub.com/en-de/product/qgis-blueprints-9781785284090)
 - Szerző(k): Ben Mearn
 - Dátum: 2015 szeptember
 
 ### QGIS By Example
-A QGIS erejének hasznosítása valós alkalmazásokban, hogy hatékony kartográfiai és GIS elemző felhasználóvá váljon
+Használja ki a QGIS teljesítményét a gyakorlati alkalmazásokban, hogy a kartográfia és a GIS-elemzés terén jártas felhasználóvá váljon
 - [https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131](https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131)
 - Szerző(k): Alexander Bruy, Daria Svidzinsk
 - Dátum: 2015 június
 
 ### The PyQGIS Programmer’s Guide - Extending QGIS with Python
-Üdvözöljük a PyQGIS világában, a QGIS és a Python keveréke a nyílt forráskódú GIS eszköztár kibővítésére és megnövelésére. A PYQGIS-sel szkripteket és modulokat készíthet új funkciók megvalósítására és feladatok automatizálására. 
+Üdvözöljük a PyQGIS világában, ahol a Quantum GIS és a Python ötvözésével bővítheti és fejlesztheti nyílt forráskódú GIS-eszköztárát. A PyQGIS segítségével szkripteket és bővítményeket írhat új funkciók megvalósításához és automatizált feladatok elvégzéséhez.
 - [http://locatepress.com/ppg](http://locatepress.com/ppg)
 - Szerző(k): Gary Sherman
 - Dátum: 2014 április
@@ -178,7 +178,7 @@ A tutorial of QGIS software and application.
 - Anton Huizinga
 - Date: November 2020
 
-### QGIS második szinten - Földrajzi Tanulmányok . Térképészet második szinten - GISwijzer GO game
+### QGIS at secondary level - Geography Studies - Cartography at secondary level - GISwijzer GO game
 - [https://www.giswijzer.nl/?product=qgis-op-vo-niveau-geografie-studies-cartografie-op-vo-niveau-giswijzer-go-spel](https://www.giswijzer.nl/?product=qgis-op-vo-niveau-geografie-studies-cartografie-op-vo-niveau-giswijzer-go-spel)
 - Margit Stapel
 - Dátum: 2016. december
@@ -196,7 +196,7 @@ Ez a könyv az alapvető munkafolyamatokat foglalaja össze a GIS-ben történő
 - Dátum: 2015 szeptember
 
 ## Görög
-### Bevezetés a Raszter analízishez (QGIS tanulása, 2. könyv)
+### Bevezetés a Raszteranalízisbe (QGIS tanulása, 2. könyv)
 - [https://www.kobo.com/cy/en/ebook/V7poK2Or2za3IqGN-__5ZA](https://www.kobo.com/cy/en/ebook/V7poK2Or2za3IqGN-__5ZA)
 - Szerző(k): Anthony Antoniou
 - Dátum: 2016. december

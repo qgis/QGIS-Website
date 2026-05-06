@@ -178,6 +178,30 @@ class S3FileExplorer:
         print(f"   ✅ Found {len(files)} files")
         return files
 
+    def deduplicate_files(self, files: List[Dict]) -> List[Dict]:
+        """Remove files from windows folder if they exist at root level (by filename)."""
+        # Collect all filenames at root level (O(n) with O(1) lookups)
+        root_filenames = {
+            file["name"] for file in files 
+            if not file["path"] or file["path"] == "."
+        }
+        
+        # Filter out windows folder files that duplicate root files (O(n))
+        deduplicated = [
+            file for file in files
+            if not (
+                file["path"] and 
+                file["path"].split("/")[0].lower() == "windows" and 
+                file["name"] in root_filenames
+            )
+        ]
+        
+        removed_count = len(files) - len(deduplicated)
+        if removed_count > 0:
+            print(f"   ℹ️  Removed {removed_count} duplicate files from windows folder")
+        
+        return deduplicated
+
     def build_file_tree(self, files: List[Dict], excluded_prefixes: tuple = ()) -> Dict:
         """Build hierarchical file tree from flat file list."""
         tree = {
@@ -463,6 +487,9 @@ def main():
             mtime_cache = json.load(f)
 
     files = explorer.fetch_bucket_contents(mtime_cache=mtime_cache)
+    
+    # Deduplicate files once before generating outputs
+    files = explorer.deduplicate_files(files)
 
     explorer.save_to_json(files, str(output_path))
     

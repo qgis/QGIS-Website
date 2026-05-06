@@ -8,11 +8,11 @@ type: page
 ---
 {{<content-start >}}
 # 書籍
-This page lists books available from other publishers. QGIS does not manage any of them, and they are listed here only for your convenience.
+このページでは、他の出版社から刊行されている書籍をご紹介しています。これらの書籍はQGISが管理するものではなく、ご参考までに掲載しているものです。
 
-Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your book added here. Alternatively, you can edit this page on GitHub and submit a pull request.
+書籍の追加をご希望の方は、  [psc@qgis.org](mailto:psc%40qgis.org) にメールをお送りください。あるいは、GitHubでこのページを直接編集し、プルリクエストをご送付いただくことも可能です。
 
-Note: The books are listed in order of newest first. After the English books, there are items in French, Greek, Polish and other languages.
+注意：書籍は新刊順に掲載されています。英語の書籍の後に、フランス語・ギリシャ語・ポーランド語・その他の言語の書籍が続きます。
 ## 英語
 ### Learn QGIS - Fifth Edition (Early Access)
 Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.

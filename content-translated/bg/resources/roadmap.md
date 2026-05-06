@@ -16,37 +16,37 @@ type: page
 - Дори номерата на версиите (2.18, 3.2 и т.н.) са версии за пускане на пазара.
 - Нечетните номера на версиите (2.99, 3.1 и т.н.) са версии за разработка.
 
-A new release will happen every four months. In the first three months, new development is taking place. In the last month before a release, a feature freeze is invoked and the final month is used for testing, bugfixing, translation and release preparations. When the release happens, a branch with an even release number is created and the master branch advances to the next odd version. After the release a call for packaging is issued.
+Ново издание ще се издава на всеки четири месеца. През първите три месеца се извършва нова разработка. В последния месец преди изданието се задейства замразяване на функции, а последният месец се използва за тестване, отстраняване на грешки, превод и подготовка за изданието. Когато изданието се осъществи, се създава клон с четен номер на изданието, а главният клон преминава към следващата нечетна версия. След изданието се издава покана за пакетиране.
 
-Every third release (starting with 2.8) is a long-term-release (LTR) that is maintained until the next long-term-release occurs.
+Всяко трето издание (започвайки с версия 2.8) е дългосрочно издание (LTR), което се поддържа до следващото дългосрочно издание.
 ## Фаза на развитие
-In the development phase, developers work on adding new features for the next release. Early adopters can use the nightly builds we have for all major platforms to see the development progress, do preliminary testing and provide bug reports and their thoughts to help with development.
+Във фазата на разработка, разработчиците работят върху добавянето на нови функции за следващото издание. Ранните потребители могат да използват нощните компилации, които имаме за всички основни платформи, за да видят напредъка на разработката, да направят предварителни тестове и да предоставят отчети за грешки и своите мисли, за да помогнат с разработката.
 ## Замразяване на функциите
-In the feature freeze phase, new features are not allowed in anymore and the focus of everyone moves from enhancing QGIS to stabilizing it. This also turns the nightly builds effectively into [prereleases](#qgis-prereleases).
+Във фазата на замразяване на функциите, новите функции вече не са позволени и фокусът на всички се измества от подобряване на QGIS към стабилизирането му. Това също така превръща нощните компилации ефективно в [предварителни версии](#qgis-prereleases).
 
-**Users** should start extensive testing of these prereleases in their environment to verify that there are no issues, they wouldn’t want to see in the upcoming release. All such issues should be reported (see [Bugs, Features and Issues]({{< ref "resources/support/bug-reporting" >}})). Everything that goes unnoticed, will also end up in the next release. Only in case of serious problems backports to a latest release will occur. Therefore testing of the prereleases and reporting issues is very important.
+**Потребителите** трябва да започнат обширно тестване на тези предварителни версии в своята среда, за да се уверят, че няма проблеми, които не биха искали да видят в предстоящата версия. Всички такива проблеми трябва да бъдат докладвани (вижте [Грешки, функции и проблеми]{{< ref "resources/support/bug-reporting" >}})). Всичко, което остане незабелязано, ще се появи и в следващата версия. Само в случай на сериозни проблеми ще се извършват връщания към най-нова версия. Следователно тестването на предварителните версии и докладването на проблеми е много важно.
 
-In the feature freeze, **developers** monitor the bugtracker and start working on fixing the reported issues and update the **visual changelog** with the features they added.
+При замразяването на функциите, **разработчиците** наблюдават системата за проследяване на грешки и започват да работят по отстраняването на докладваните проблеми, както и по актуализирането на **визуалния регистър на промените** с добавените от тях функции.
 
-With the start of the feature freeze, the translation files will be updated so that **translators** can start their work. Note that this might be an incremental process as although the features are frozen, bug fixes might still introduce translation string changes.
+С началото на замразяването на функциите, файловете за превод ще бъдат актуализирани, така че **преводачите** да могат да започнат работата си. Обърнете внимание, че това може да е постепенен процес, тъй като въпреки че функциите са замразени, корекциите на грешки все още могат да доведат до промени в преводните низове.
 
-Two weeks before the release, a hard freeze is initiated after which only fixes to severe problems and regressions introduced after the feature freeze are allowed in.
+Две седмици преди пускането на пазара се инициира твърдо замразяване, след което се допускат само поправки на сериозни проблеми и регресии, въведени след замразяването на функциите.
 
 Мениджърът на изданията обявява това при замразяване на функции.
 ## Обновяване
-On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
+На датите на основно и второстепенно издание се създава клонът за издание, изданието се маркира и се подготвят tar топки. Точковите издания просто се маркират и се създават tar топки.
 
 Опаковачите са уведомени, че опаковането може да започне.
 
-Once some packages are available the release can be announced and the website is updated accordingly.
+След като някои пакети са налични, изданието може да бъде обявено и уебсайтът да бъде актуализиран съответно.
 ## График за издаване
-The schedule is aligned to produce roughly the same dates for each year given our four monthly releases with LTRs entering the LTR repo in late february.
+Графикът е подравнен, за да се получат приблизително едни и същи дати за всяка година, предвид нашите четири месечни издания, като LTR-овете влизат в хранилището за LTR в края на февруари.
 
-Beginning after 2.12 the development phase is always 12 weeks and the freeze phase is at least 5 weeks. Remainders are used to extend the freeze phase of LTR releases.
+Започвайки след версия 2.12, фазата на разработка винаги е 12 седмици, а фазата на замразяване е поне 5 седмици. Останалите се използват за удължаване на фазата на замразяване на дългосрочните издания.
 
-Point releases will happen every month on the latest release branch, if there are backports. Beginning with the 3.28 release, point releases are only done with new latest releases.
+Точкови издания ще се случват всеки месец в най-новия клон на изданията, ако има backports. Започвайки с версия 3.28, точкови издания се правят само с най-новите издания.
 
-In the first four months after its release, a new LTR is also the current LR. In this phase, the new LTR doesn’t replace the previous LTR in the LTR repositories. This happens as soon as a new LR is released.
+През първите четири месеца след пускането си, нов LTR е и текущият LR. В тази фаза новият LTR не замества предишния LTR в хранилищата за LTR. Това се случва веднага щом бъде пуснат нов LR.
 
 Този график е наличен и като [“iCalendar”](https://qgis.org/schedule.ics).
 ### График
@@ -59,7 +59,7 @@ In the first four months after its release, a new LTR is also the current LR. In
 | FF | Замразяване на функции, край на фазата на разработка |
 | PR | Точково издание на най-новата версия и LTR клон |
 | EPR | Освобождаване на Extra Point |
-| <span class="rm-current"> текущ </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
+| <span class="rm-current"> текущ </span> | <span class="rm-current"> текущо поддържани издания: {{< param "LTR Версия" >}} and {{< param "версия" >}} </span> |
 | <span class="rm-next"> следващ </span> | <span class="rm-next"> следващи издания </span> |
 
 ## Местоположение на предварителните издания / нощните компилации{#qgis-prereleases }

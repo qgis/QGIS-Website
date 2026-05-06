@@ -20,17 +20,17 @@ type: page
 ## Основни характеристики
 {{<tabs tab1="Създаване на карти" tab2="Редактиране на слоеве" tab3="Обработка и анализ" tab4="Споделяне на карти" >}}
 
-{{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Create map](../img/create.gif "Create maps") {{< column-end >}}
+{{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Създаване на карта](../img/create.gif "Create maps") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Водеща в класа картография
-Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
+Изпробвайте богатия набор от дизайнерски опции на QGIS, за да вдъхнете живот на вашите картографски идеи.
 ###### Професионално изработване на карти
 Използвайте интуитивния инструмент за проектиране на оформление, за да създавате висококачествени карти за печат в голям формат.
 ###### Мощни инструменти за отчитане
-Create atlases and reports with maps, media and tabular content. {{< column-end >}} {{< columns-end >}}
+Създавайте атласи и отчети с карти, медийно съдържание и таблично съдържание. {{< column-end >}} {{< columns-end >}}
 
-{{< columns-start id="content-tab-2" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Edit map](../img/edit.gif "Edit map") {{< column-end >}}
+{{< columns-start id="content-tab-2" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Редактиране на картата](../img/edit.gif "Редактиране на картата") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Изключителни умения за дигитализиране
@@ -42,11 +42,11 @@ Create atlases and reports with maps, media and tabular content. {{< column-end 
 
 {{< column-end >}} {{< columns-end >}}
 
-{{< columns-start id="content-tab-3" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![visualize map](../img/visualize.gif "visualize map") {{< column-end >}}
+{{< columns-start id="content-tab-3" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![визуализиране на карта](../img/visualize.gif "визуализиране на карта") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Пълен набор от инструменти за анализ
-Uncover insights from your data with our comprehensive array of hundreds of analysis tools.
+Разберете прозрения от вашите данни с нашия богат набор от стотици инструменти за анализ.
 ###### Автоматизирани работни процеси за анализ
 Визуално комбинирайте инструменти за анализ, за ​​да създавате лесно възпроизводими работни процеси.
 ###### Разширяема среда за анализ
@@ -54,11 +54,11 @@ Uncover insights from your data with our comprehensive array of hundreds of anal
 
 {{< column-end >}} {{< columns-end >}}
 
-{{< columns-start id="content-tab-4" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![share map](../img/share.gif "share map") {{< column-end >}}
+{{< columns-start id="content-tab-4" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![споделяне на карта](../img/share.gif "споделяне на карта") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Водеща в индустрията поддръжка на формати
-Conquer data integration challenges with support for a multitude of data sources and formats.
+Преодолейте предизвикателствата при интеграцията на данни с поддръжка на множество източници и формати на данни.
 ###### Стандарти и оперативна съвместимост
 Увеличете въздействието си, като проучите, използвате и създадете уеб услуги, базирани на индустриални стандарти.
 ###### Публикувайте работата си
@@ -66,23 +66,23 @@ Conquer data integration challenges with support for a multitude of data sources
 
 {{< column-end >}} {{< columns-end >}}
 ## Повишете нивото си с ресурси на общността
-{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![Create map](../img/plugs.jpg "Create map") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
+{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![Създаване на карта](../img/plugs.jpg "Създаване на карта") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
 ### 2000+ плъгина, разработени от общността
 Подобрете функционалността на приложението QGIS с хиляди безплатни допълнителни функции.
 
 [Отидете на плъгините](https://plugins.qgis.org/) {{< column-end >}} {{< columns-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![International conference](../img/meetings.jpg "International conference") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
+{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![Международна конференция](../img/meetings.jpg "International conference") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
 ### Годишна международна конференция
-Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing at our annual international user conference.
+Свържете се с професионалисти, ентусиасти и потребители на QGIS за работа в мрежа и споделяне на знания на нашата годишна международна потребителска конференция.
 
 [Срещи на общността]({{< ref "community/organisation/meetings/user_meetings.md" >}}) {{< column-end >}} {{< columns-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded mb-4" >}} ![Local user groups](../img/groups.jpg "Local user groups") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
+{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded mb-4" >}} ![Локални потребителски групи](../img/groups.jpg "Локални потребителски групи") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
 ### Местни потребителски групи и доставчици на поддръжка
 Присъединете се към общност от хора със сходни интереси във вашия регион.
 
-[Списък с местни групи]({{<реф. "community/groups.md" >}}) {{< column-end >}} {{< columns-end >}}
+[Списък с местни групи]({{< ref "community/groups.md" >}}) {{< column-end >}} {{< columns-end >}}
 
 [Присъединете се към общността]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
 ## Кросплатформен
@@ -90,13 +90,13 @@ Connect with professionals, enthusiasts, and QGIS users for networking and knowl
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
 ### QGIS Сървър
-Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layouts and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Публикувайте вашите QGIS проекти и слоеве като OGC съвместими WMS, WMTS, WFS и WCS услуги. Контролирайте кои слоеве, атрибути, оформления и координатни системи се експортират. QGIS сървърът се счита за референтна имплементация за WMS 1.3. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6" >}}
-### QGIS Десктоп
+### QGIS Настолен
 Създаване, редактиране, визуализиране, анализиране и публикуване на геопространствена информация.
 
-[Download]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+[Изтегляне]({{< ref "download.md" >}}) за Windows, Mac, Linux, BSD и Android. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start>}}
 
@@ -104,7 +104,7 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 ### QGIS Уеб клиент
 Публикувайте лесно вашите QGIS проекти в интернет.
 
-Benefit from the powerful symbology, labeling and blending features to impress the world with your maps.
+Възползвайте се от мощната симвология, функции за етикетиране и смесване, за да впечатлите света с вашите карти.
 
 [QGIS Уеб клиент 2](https://github.com/qgis/qwc2)
 
@@ -112,7 +112,7 @@ Benefit from the powerful symbology, labeling and blending features to impress t
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6" >}}
 ### QGIS на мобилни телефони и таблети
-The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS out of the office.
+Изживяването с QGIS не спира само на настолния компютър. Различни приложения на трети страни, оптимизирани за тъчскрийн, ви позволяват да използвате QGIS извън офиса.
 * [QField]({{< ref "download.md" >}})
 * [Мобилното приложение Mergin Maps]({{< ref "download.md" >}})
 * [IntraMaps Roam]({{< ref "download.md" >}})
@@ -121,17 +121,17 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 
 {{< rich-box-start layoutClass="has-right mt-6 mb-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ### Примери с QGIS
-We gather inspiring stories from our users that showcase the versatility and power of the QGIS project.
+Събираме вдъхновяващи истории от нашите потребители, които показват многостранността и силата на проекта QGIS.
 
-[Find out more]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}}
+[Научете повече]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}}
 
 {{<rich-box-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third mb-6">}}
-## Витрина на Карти
-Demonstrations of our user's creativity, showcasing the powerful map creation capabilities of QGIS.
+## Галерия с Карти
+Демонстрации на креативността на нашите потребители, показващи мощните възможности за създаване на карти на QGIS.
 
-[Към витрината на картите]({{< ref "project/overview/maps.md" >}})
+[Към галерията с картите]({{< ref "project/overview/maps.md" >}})
 
 {{<column-end >}}
 
@@ -141,7 +141,7 @@ Demonstrations of our user's creativity, showcasing the powerful map creation ca
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
 ## Снимки на екрана на приложението
-Below are some screenshots from QGIS itself and a selection of maps which were created with QGIS.
+По-долу са дадени някои екранни снимки от самия QGIS и селекция от карти, създадени с QGIS.
 
 [Отидете на екранните снимки]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
 

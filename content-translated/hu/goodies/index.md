@@ -2,17 +2,17 @@
 draft: false
 sidebar: true
 subtitle: ''
-title: Nyalánkságok
+title: Emléktárgyak
 type: page
 
 ---
 {{<content-start >}}
 
-Nyalánkságok
+Emléktárgyak
 =
 If you are a fan of QGIS, you might want to visit our store so you can buy some mementos to show off your favourite desktop GIS. We have a number of great t-shirts, mugs, hoodies, caps and more, so do pay a visit to one of our stores below!
 
-QGIS felszerelés vásárlása nemcsak azt teszi lehetővé, hogy megmutassa, hogy QGIS-t használ, hanem minden eladott póló után jutalékot kap a QGIS projekt.
+A QGIS-es ruhák vásárlásával nemcsak azt mutathatja meg, hogy QGIS-t használ, hanem minden eladott póló után jutalékot is kap a QGIS-projekt.
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
 ## Spreadshirt

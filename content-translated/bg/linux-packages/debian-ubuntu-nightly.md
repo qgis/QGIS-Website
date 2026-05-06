@@ -11,7 +11,7 @@ type: page
 ---
 {{<content-start >}}
 # Нощни пакети за Debian / Ubuntu
-Browse and download QGIS nightly build packages for Debian and Ubuntu distributions.
+Разгледайте и изтеглете QGIS пакети за нощно изграждане за Debian и Ubuntu дистрибуции.
 
 {{<linux-packages-explorer distribution="debian_ubuntu_nightly" >}}
 

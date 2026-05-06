@@ -8,20 +8,20 @@ type: page
 ---
 {{<content-start >}}
 # Books
-This page lists books available from other publishers. QGIS does not manage any of them, and they are listed here only for your convenience.
+Тази страница изброява книги, предлагани от други издателства. QGIS не управлява нито една от тях и те са изброени тук само за ваше удобство.
 
-Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your book added here. Alternatively, you can edit this page on GitHub and submit a pull request.
+Моля, пишете на [psc@qgis.org](mailto:psc%40qgis.org), ако искате книгата ви да бъде добавена тук. Като алтернатива, можете да редактирате тази страница в GitHub и да изпратите заявка за изтегляне (pull request).
 
-Note: The books are listed in order of newest first. After the English books, there are items in French, Greek, Polish and other languages.
+Забележка: Книгите са подредени по реда на най-новите. След книгите на английски език има материали на френски, гръцки, полски и други езици.
 ## English
 ### Научете QGIS - Пето издание (ранен достъп)
-Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
+„Научете QGIS (5-то издание)“ предлага практическо въведение в съвременния ГИС анализ с QGIS и Python както за студенти, така и за професионалисти, обхващайки наблюдение на Земята, мобилно събиране на данни и интеграцията на изкуствен интелект и машинно обучение в ГИС, като същевременно се обръща внимание на сигурността на данните и етичните аспекти.
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
 - Автори: Евгения Сарафова, Иван Иванов, Андрю Кътс, Анита Грасер
 - Дата: март 2026 г.
 
 ### Пространствен анализ на работната сила, основана на пола, в Индия с помощта на QGIS
-A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
+Сравнително проучване на данните от преброяването на населението на ниво село за три области Качар, Каримгандж и Хайлаканди в щата Асам, Североизточна Индия, за годините 1991, 2001 и 2011
 - [https://www.gyanbooks.com/](https://www.gyanbooks.com/index.php?p=sr&format=fullpage&Field=bookcode&String=1111036579312&Book=SPATIAL%20ANALYSIS%20OF%20GENDER%20BASED%20WORK%20FORCE%20IN%20INDIA%20USING%20QGIS%20A%20comparative%20study%20of%20vil..)
 - Автор: д-р Пулак Дас и д-р Пинки Пуркаястха
 - Дата: декември 2024 г.
@@ -33,7 +33,7 @@ A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, 
 - Дата: октомври 2024 г.
 
 ### Събиране на полеви данни с QGIS и Сливане на Карти
-Learn to master the Mergin Maps platform to collect, share and manage your field data.
+Научете се да овладеете платформата Mergin Maps, за да събирате, споделяте и управлявате вашите полеви данни.
 - [https://locatepress.com/book/mergin-maps](https://locatepress.com/book/mergin-maps)
 - Автори: Кърт Менке и Александра Буча Расова
 - Дата: септември 2024 г.
@@ -51,13 +51,13 @@ Learn to master the Mergin Maps platform to collect, share and manage your field
 - Дата: май 2022 г.
 
 ### Набори от данни за земеползване и инструменти за валидиране. Практики за валидиране с QGIS
-Introduction to Land Use Cover mapping, Land Use Cover Change Modelling and the validation of Land Use Cover datasets. The book includes practical exercises on the validation of Land Use Cover datasets with QGIS, as well as a comprehensive review of the Land Use Cover datasets currently available at global and continental scales.
+Въведение в картографирането на земеползващото покритие, моделирането на промените в земеползващото покритие и валидирането на набори от данни за земеползващото покритие. Книгата включва практически упражнения за валидиране на набори от данни за земеползващото покритие с QGIS, както и подробен преглед на наборите от данни за земеползващото покритие, налични в момента в глобален и континентален мащаб.
 - [https://link.springer.com/book/10.1007/978-3-030-90998-7](https://link.springer.com/book/10.1007/978-3-030-90998-7)
 - Автори: Давид Гарсия-Алварес, Мария Тереза ​​Камачо Олмедо, Мартин Пегелоу, Жан Франсоа Мас
 - Дата: юни 2022 г.
 
 ### Въведение в QGIS
-Get started with QGIS with this introduction covering everything needed to get you going.
+Започнете работа с QGIS с това въведение, което обхваща всичко необходимо, за да започнете.
 - [https://locatepress.com/book/itq](https://locatepress.com/book/itq)
 - <div></div>
 - Дата: април 2021 г.
@@ -75,13 +75,13 @@ Get started with QGIS with this introduction covering everything needed to get y
 - Дата: май 2019 г.
 
 ### Практически геопространствен анализ с R и QGIS
-Practical examples with real-world projects in GIS, Remote sensing, Geospatial data management and Analysis using the R programming language
+Практически примери с реални проекти в областта на ГИС, дистанционното наблюдение, управлението на геопространствени данни и анализа с помощта на езика за програмиране R
 - [https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674](https://www.packtpub.com/en-de/product/hands-on-geospatial-analysis-with-r-and-qgis-9781788991674)
 - Автор: Шамунул Ислам
 - Дата: ноември 2018 г.
 
 ### Научете QGIS - четвърто издание
-Learn to view, edit and analyse geospatial data using QGIS and Python 3
+Научете се да преглеждате, редактирате и анализирате геопространствени данни, използвайки QGIS и Python 3
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781788998864](https://www.packtpub.com/en-de/product/learn-qgis-9781788998864)
 - Автори: Андрю Кътс, Анита Грейзър
 - Дата: ноември 2018 г.
@@ -92,25 +92,25 @@ Learn to view, edit and analyse geospatial data using QGIS and Python 3
 - Дата: февруари 2018 г.
 
 ### Отворете вратата към ГИС - издание за ученици и учители
-Open the Door to GIS offers a way for teachers to use this powerful software in their classes without having to become experts, with freely downloadable Open-Source GIS, QGIS. Open the Door to GIS is recommended for students age 10 to 15 years and is available as both a Teacher and Student edition.
+„Отворете вратата към ГИС“ предлага начин учителите да използват този мощен софтуер в своите класове, без да е необходимо да стават експерти, с помощта на свободно изтегляемия ГИС с отворен код, QGIS. „Отворете вратата към ГИС“ се препоръчва за ученици на възраст от 10 до 15 години и е достъпен както като учителско, така и като ученическо издание.
 - [https://locatepress.com/odg](https://locatepress.com/odg)
 - Автор(и): Тони Фишър
 - Дата: май 2017 г.
 
 ### Наръчник за програмиране на QGIS на Python - второ издание
-Based on version QGIS 2.18, this book will teach you how to write Python code that works with spatial data to automate geoprocessing tasks in QGIS.
+Базирана на версия QGIS 2.18, тази книга ще ви научи как да пишете Python код, който работи с пространствени данни, за да автоматизира задачи за геообработка в QGIS.
 - [https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102](https://www.packtpub.com/en-de/product/qgis-python-programming-cookbook-second-edition-9781787121102)
 - Автор(и): Джоел Лоухед
 - Дата: март 2017 г.
 
 ### QGIS: Как да станете опитен потребител на ГИС
-Master data management, visualization, and spatial analysis techniques in QGIS and become a GIS power user
+Усвояване на техники за управление на основни данни, визуализация и пространствен анализ в QGIS и превръщане в опитен потребител на ГИС
 - [https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725](https://www.packtpub.com/en-de/product/qgisbecoming-a-gis-power-user-9781788299725)
 - Анита Грейзър, Бен Миърнс, Алекс Мандел, Виктор Олая Фереро, Александър Бруи
 - Дата: февруари 2017 г.
 
 ### Овладяване на QGIS - Второ издание
-Go beyond the basics and unleash the full power of QGIS with practical, step-by-step examples
+Надхвърлете основите и разгърнете пълната мощ на QGIS с практични, стъпка по стъпка примери
 - [https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623](https://www.packtpub.com/en-de/product/mastering-qgis-9781786463623)
 - Курт Менке, GISP и др.
 - Дата: септември 2016 г.
@@ -122,19 +122,19 @@ Go beyond the basics and unleash the full power of QGIS with practical, step-by-
 - Дата: юли 2016 г.
 
 ### QGIS 2 Готварска книга
-Become a QGIS power user and master QGIS data management, visualisation and spatial analysis techniques
+Станете опитен потребител на QGIS и овладейте техниките за управление, визуализация и пространствен анализ на данни в QGIS.
 - [https://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978](hhttps://www.packtpub.com/en-de/product/qgis-2-cookbook-9781783984978)
 - Автор(и): Алекс Мандел, Анита Грасер, Виктор Олая Фереро, Александър Бруи
 - Дата: април 2016 г.
 
 ### Учене на QGIS - Трето издание
-Use QGIS to create great maps and perform all the geoprocessing tasks you need.
+Използвайте QGIS, за да създавате страхотни карти и да изпълнявате всички задачи за геообработка, от които се нуждаете.
 - [https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151](https://www.packtpub.com/en-de/product/learning-qgis-third-edition-9781785888151)
 - Автор(и): Анита Грейзър
 - Дата: март 2016 г.
 
 ### Дизайн на карти QGIS
-Learn how to use QGIS to take your cartographic products to the highest level.
+Научете как да използвате QGIS, за да изведете картографските си продукти на най-високо ниво.
 - [http://locatepress.com/qmd](http://locatepress.com/qmd)
 - Автор(и): Анита Грейзър и Гретхен Н. Питърсън
 - Дата: март 2016 г.
@@ -146,13 +146,13 @@ Learn how to use QGIS to take your cartographic products to the highest level.
 - Дата: септември 2015 г.
 
 ### QGIS чрез пример
-Leverage the power of QGIS in real-world applications to become a powerful user in cartography and GIS analysis
+Възползвайте се от силата на QGIS в реални приложения, за да станете мощен потребител в картографията и ГИС анализа.
 - [https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131](https://www.packtpub.com/en-de/product/qgis-by-example-9781782175131)
 - Автор(и): Александър Бруй, Дария Свидзинск
 - Дата: юни 2015 г.
 
 ### Ръководство за програмисти на PyQGIS - Разширяване на QGIS с Python
-Welcome to the world of PyQGIS, the blending of Quantum GIS and Python to extend and enhance your open source GIS toolbox. With PyQGIS you can write scripts and plugins to implement new features and perform automated tasks.
+Добре дошли в света на PyQGIS, съчетанието от Quantum GIS и Python за разширяване и подобряване на вашия GIS инструментариум с отворен код. С PyQGIS можете да пишете скриптове и плъгини за внедряване на нови функции и изпълнение на автоматизирани задачи.
 - [http://locatepress.com/ppg](http://locatepress.com/ppg)
 - Автор(и): Гари Шърман
 - Дата: април 2014 г.
@@ -160,7 +160,7 @@ Welcome to the world of PyQGIS, the blending of Quantum GIS and Python to extend
 ### Ръководство за обучение по QGIS - Изчерпателно въведение в квантовата ГИС
 Проектиран за работа с QGIS 1.8
 
-Years of experience in a single book─the official Quantum GIS Training Manual written by seasoned trainers. It’s the jump-start you need to learn this incredibly popular free desktop mapping and GIS toolset.
+Години опит в една книга – официалното ръководство за обучение по квантови ГИС, написано от опитни обучители. Това е началният тласък, от който се нуждаете, за да научите този невероятно популярен безплатен набор от инструменти за картографиране и ГИС за настолни компютри.
 - [http://locatepress.com/qtm](http://locatepress.com/qtm)
 - Автор(и): Рюдигер Тиде, Тим Сътън, Хорст Дюстер и Марсел Сътън
 - Дата: май 2013 г.
@@ -178,19 +178,19 @@ Years of experience in a single book─the official Quantum GIS Training Manual 
 - Антон Хьойзинга
 - Дата: ноември 2020 г.
 
-### QGIS at secondary level - Geography Studies - Cartography at secondary level - GISwijzer GO game
+### QGIS на средно ниво - Географски изследвания - Картография на средно ниво - Игра GISwijzer GO
 - [https://www.giswijzer.nl/?product=qgis-op-vo-niveau-geografie-studies-cartografie-op-vo-niveau-giswijzer-go-spel](https://www.giswijzer.nl/?product=qgis-op-vo-niveau-geografie-studies-cartografie-op-vo-niveau-giswijzer-go-spel)
 - Маргит Стапел
 - Дата: декември 2016 г.
 
 ## French
-### Systèmes d'information géographique - 3e édition Avec logiciels libres GRASS et QGIS
+### Географски информационни системи - 3-то издание с безплатен софтуер GRASS и QGIS
 - [https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0](https://www.dunod.com/sciences-techniques/systemes-d-information-geographique-avec-logiciels-libres-grass-et-qgis-0)
 - Автор: Ив Ода
 - Дата: септември 2025 г.
 
 ### Изучаване на QGIS чрез пример на френски език
-This book covers essential workflows in GIS from data creation to its cartographic representation and some basics in spatial analysis.
+Тази книга обхваща основни работни процеси в ГИС - от създаването на данни до тяхното картографско представяне, както и някои основи на пространствения анализ.
 - [https://www.amazon.fr/Apprendre-QGIS-par-lexemple-dInformation/dp/1517565766](https://www.amazon.fr/Apprendre-QGIS-par-lexemple-dInformation/dp/1517565766)
 - Автор: Джерард Алали
 - Дата: септември 2015 г.
@@ -208,7 +208,7 @@ This book covers essential workflows in GIS from data creation to its cartograph
 
 ## Italian
 ### Анализирайте и обработвайте данни с QGIS
-A practical guide to spatial data processing, analysis, and automation in QGIS, covering vector and raster workflows, databases, and Python integration.
+Практическо ръководство за обработка, анализ и автоматизация на пространствени данни в QGIS, обхващащо векторни и растерни работни процеси, бази данни и интеграция с Python.
 - https://www.lafeltrinelli.it/analizzare-processare-dati-con-qgis-libro-faustino-cetraro/e/9788857917863
 - Автор: Фаустино Четраро
 - Дата: февруари 2026 г.
@@ -251,7 +251,7 @@ A practical guide to spatial data processing, analysis, and automation in QGIS, 
 - Дата: юни 2025 г.
 
 ### Ръководство за упражнения на QGIS: нива за начинаещи, средно напреднали и напреднали
-Three practical exercise guides in QGIS (beginner, intermediate, and advanced) designed for the management and analysis of geospatial data from the Servicio Geológico Colombiano using free and open-source software solutions.
+Три практически ръководства за упражнения в QGIS (за начинаещи, средно напреднали и напреднали), предназначени за управление и анализ на геопространствени данни от Servicio Geológico Colombiano, използващи безплатни софтуерни решения с отворен код.
 - [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)
 - Автор(и): Самуел Меса, Хайме Гарсон, Луис Салас
 - Организация: Колумбийска геоложка служба
@@ -261,7 +261,7 @@ Three practical exercise guides in QGIS (beginner, intermediate, and advanced) d
 ### Геоложки приложения с географски информационни системи с отворен код
 (Географски информационни системи с отворен код и геоложки приложения)
 
-The book consists of 2 main parts; In the first part, Geographical Information Systems subject is explained. In the second part, QGIS is used with geological applications.
+Книгата се състои от 2 основни части; В първата част е обяснена темата за географските информационни системи. Във втората част QGIS се използва с геоложки приложения.
 - [http://www.jmo.org.tr/yayinlar/kitap_goster.php?kodu=260](http://www.jmo.org.tr/yayinlar/kitap_goster.php?kodu=260)
 - Автори: Джан Айдай, Левент Сабах, Нефисе Яман, Кюбра Кесер
 - Дата: януари 2016 г.
@@ -269,7 +269,7 @@ The book consists of 2 main parts; In the first part, Geographical Information S
 ## Ukrainian
 ### РАБОТНА ТЕТРАДКА „АНАЛИЗ НА КОСМИЧЕСКИ ИЗОБРАЖЕНИЯ В ГЕОИНФОРМАЦИОННИ СИСТЕМИ“ Част 2:
 - [https://api.man.gov.ua/api/assets/man/a0746113-31c9-44d7-b6a1-d819e2e535dd/](https://api.man.gov.ua/api/assets/man/a0746113-31c9-44d7-b6a1-d819e2e535dd/)
-- Authors: С. М. Бабійчук, Т. Л. Кучма, Л. Я. Юрків, О. В. Томченко
+- Автори: С. М. Бабийчук, Т. Л. Кучма, Л. Я. Юркив, О. В. Томченко
 - Дата: 2021 г.
 
 {{<content-end >}}

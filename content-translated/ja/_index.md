@@ -2,9 +2,8 @@
 AnnouncementLabel: QGIS 4.0
 AnnouncementLink: project/visual-changelogs/visualchangelog40/
 AnnouncementLinkText: 更新履歴を見る
-AnnouncementText: Discover the new features, improvements, and everything that makes
-  this release a landmark moment.
-AnnouncementTitle: QGIS 4.0 is here — our most powerful release yet!
+AnnouncementText: 新機能・改善点をはじめ、今回のリリースのハイライトをご覧ください。
+AnnouncementTitle: QGIS 4.0 登場 — 史上最強のリリース！
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
@@ -19,15 +18,15 @@ SupportedOS: Windows、macOS、Linuxで利用できます。
 draft: false
 heroLogo: img/logosign.svg
 heroSize: is-medium
-subtitle: Spatial visualization and decision-making tools for everyone
-title: Spatial without Compromise
+subtitle: 誰もが使える、空間可視化と意思決定のためのツール
+title: 妥協のない地理空間情報
 type: page
 
 ---
-{{<feature title="地図を作成" text="Explore QGIS's exceptional cartographic design features to craft outstanding maps for desktop, mobile, cloud, and print media." col-title-1="Class-leading cartography" col-text-1="Experience QGIS's extensive set of design options to bring your maps to life." col-title-2="Professional map production" col-text-2="Use the intuitive layout designer to produce high-quality, large-format print maps." col-title-3="Powerful reporting tools" col-text-3="Create atlases and reports including maps and tabular content." img="img/main-create.webp" order=1 >}}
+{{<feature title="地図を作成する" text="QGISの優れた地図デザイン機能を活用して、デスクトップ・モバイル・クラウド・印刷物など、あらゆる用途に対応した美しい地図を作成しましょう。" col-title-1="トップクラスの地図制作機能" col-text-1="QGISの豊富なデザインオプションで、地図の表現力を最大限に引き出しましょう。" col-title-2="本格的な地図制作" col-text-2="直感的に操作できるレイアウトデザイナーで、高品質な大判印刷用地図を作成しましょう。" col-title-3="Powerful reporting tools" col-text-3="地図や表形式のコンテンツを含むアトラスやレポートを作成できます。" img="img/main-create.webp" order=1 >}}
 
-{{<feature title="レイヤを編集" text="Harness the unmatched capabilities of powerful digitizing and construction tools." col-title-1="Exceptional digitizing proficiency" col-text-1="Craft and edit points, lines, polygons, and meshes with precision." col-title-2="Advanced construction tools" col-text-2="Build geometries with curves, CAD-like tools, and an extensive range of geometry transformations." col-title-3="Highly customizable forms" col-text-3="Create user-friendly forms using our form designer." img="img/main-edit.webp" order=2 >}}
+{{<feature title="レイヤを編集する" text="強力なデジタイジング・作図ツールが持つ、他に類を見ない機能をご活用ください。" col-title-1="比類なきデジタイジング機能" col-text-1="ポイント・ライン・ポリゴン・メッシュを高精度で作成・編集しましょう。" col-title-2="高機能な作図ツール" col-text-2="カーブやCAD風ツール、充実したジオメトリ変換機能を活用して、高度なジオメトリを作成しましょう。" col-title-3="高度にカスタマイズ可能なフォーム" col-text-3="フォームデザイナーを使用して、使いやすいフォームを作成できます。" img="img/main-edit.webp" order=2 >}}
 
-{{<feature title="処理・分析" text="Benefit from state-of-the-art analysis tools seamlessly integrated into our toolbox." col-title-1="Comprehensive analysis toolset" col-text-1="Uncover insights from your data with our comprehensive array of analysis tools." col-title-2="Automated analysis workflows" col-text-2="Visually combine analysis tools to create easily reproducible workflows." col-title-3="Extensible analysis environment" col-text-3="Explore a diverse ecosystem of third-party analysis tools for expanded capabilities." img="img/main-analyze.webp" order=3 >}}
+{{<feature title="処理と解析機能" text="ツールボックスに統合された最先端の解析ツールをフルに活用しましょう。" col-title-1="充実した解析ツールセット" col-text-1="充実した解析ツール群で、データから新たな知見を引き出しましょう。" col-title-2="自動化された解析ワークフロー" col-text-2="解析ツールをビジュアルに組み合わせることで、再現性の高いワークフローを構築できます。" col-title-3="拡張性の高い解析環境" col-text-3="多彩なサードパーティ製解析ツールで、QGISの機能をさらに拡張できます。" img="img/main-analyze.webp" order=3 >}}
 
-{{<feature title="地図を共有" text="QGIS provides an equal-access platform for everyone to share their results." col-title-1="Industry-leading format support" col-text-1="Conquer data integration challenges with support for various data sources and formats." col-title-2="Standards and interoperability" col-text-2="Amplify your impact by exploring, utilizing, and creating web services based on industry standards." col-title-3="Publish your work" col-text-3="Extend QGIS to the cloud and mobile devices for wider accessibility." img="img/main-share.webp" order=4 >}}
+{{<feature title="地図を共有します" text="QGISは、誰もが成果を共有できるオープンなプラットフォームを提供します。" col-title-1="業界最高水準のフォーマット対応" col-text-1="さまざまなデータソースとフォーマットに対応し、データ統合の課題をスムーズに解決できます。" col-title-2="標準規格と相互運用性" col-text-2="業界標準に準拠したウェブサービスの探索・活用・作成により、さらなる可能性を広げましょう。" col-title-3="作業結果を公開する" col-text-3="QGISをクラウドやモバイルデバイスに展開して、より多くのユーザーがアクセスできる環境を実現しましょう。" img="img/main-share.webp" order=4 >}}
