@@ -5,14 +5,14 @@ draft: false
 selected_language: hu
 sidebar: true
 subtitle: ''
-title: QGIS resources
+title: QGIS-erőforrások
 type: page
 
 ---
 {{<content-start >}}
 # Erőforrások
 {{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Telepítési gondok?
+#### Problémája akadt a telepítéssel?
 Ha információt keres a QGIS telepítéséről valamely elérhető platformhoz, készítettünk Önnek egy átfogó útmutatót:
 
 [Telepítési útmutató]({{< ref "/resources/installation-guide/index.md" >}})
@@ -41,13 +41,13 @@ Minden QGIS hosszútávú kiadás (LTR) dokumentációját megtalálja a megfele
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="Szerver kézikönyv – <lang>" >}}
 
-**Dokumentáció készítőknek (QGIS {{< param "ltrversion" >}}):**
+**Dokumentációíróknak (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="Dokumentációs irányelvek – <lang>" >}}
 
 **Fejlesztőknek (QGIS {{< param "ltrversion" >}}):**
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS szakácskönyvet (modulokhoz és szkriptekhez) – <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS szakácskönyv (modulokhoz és szkriptekhez) – <lang>" >}}
 
 {{<rich-list listLink="https://qgis.org/pyqgis/|ltrversion|/" layoutClass="inline-block" listTitle="PyQGIS – QGIS Python API-dokumentáció" >}}
 
@@ -55,9 +55,9 @@ Minden QGIS hosszútávú kiadás (LTR) dokumentációját megtalálja a megfele
 
 {{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|ltrversion|/INSTALL.md" layoutClass="inline-block" listTitle="QGIS fordítása forráskódból" >}}
 
-**Letöltésre (QGIS {{< param "ltrversion" >}}):**
+**Letölthető (QGIS {{< param "ltrversion" >}}):**
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/pdf" layoutClass="inline-block" listTitle="PDF kézikönyvek" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/pdf" layoutClass="inline-block" listTitle="A kézikönyvek PDF-ben" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/zip" layoutClass="inline-block" listTitle="HTML kézikönyvek zip-ben" >}}
 
@@ -129,7 +129,7 @@ Folyamatosan aktualizáljuk (de még nem fordítjuk) a QGIS {{< param "ltrversio
 
 **Letöltésre (QGIS testing):**
 
-{{<rich-list listLink="https://docs.qgis.org/testing/pdf" layoutClass="inline-block" listTitle="PDF kézikönyvek" >}}
+{{<rich-list listLink="https://docs.qgis.org/testing/pdf" layoutClass="inline-block" listTitle="A kézikönyvek PDF-ben" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/testing/zip" layoutClass="inline-block" listTitle="HTML kézikönyvek zip-ben" >}}
 
@@ -137,7 +137,7 @@ Folyamatosan aktualizáljuk (de még nem fordítjuk) a QGIS {{< param "ltrversio
 
 {{<tab-content-start tab="3" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.40 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.40 dokumentáció – <lang>" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 dokumentáció – <lang>" >}}
 

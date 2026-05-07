@@ -20,7 +20,7 @@ A letöltés eltarthat egy ideig. Kérjük, **kövesse a folyamatot** a **letöl
 Ha a letöltés nem indult el, manuálisan is letöltheti a QGIS-t a [QGIS.org letölthető fájlok](https://download.qgis.org/downloads/) oldalról. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
-## Your support is vital to keep QGIS improving
+## Az Ön támogatása létfontosságú a QGIS fejlesztéséhez
 Szoftverünk a QGIS.org weboldalról ingyenesen érhető el, és örökre ingyenes is marad.
 
 A projekt számos közösségi tag hatalmas erőfeszítéseinek és társadalmi hozzájárulásának eredménye, akik önkéntes munkájukkal és szakértelmükkel támogatják a kezdeményezést. Emellett számos vállalkozás, kormányzati szerv és kereskedelmi szervezet is hozzájárult a QGIS fejlesztéséhez. Ezt vagy azért teszik, hogy a QGIS megfeleljen a konkrét igényeiknek, vagy azért, hogy hozzájáruljanak ahhoz a hatalmas társadalmi hatáshoz, amelyet egy olyan eszköz ingyenes elérhetővé tétele valósít meg, mint a QGIS, valamint hogy felgyorsítsák ennek megvalósulását. Célunk a társadalom javítása a tájékozott térbeli döntéshozatal révén. Ha teheti, kérjük, támogassa munkánkat.

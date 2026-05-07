@@ -41,6 +41,8 @@ type: page
 ## macOS
 {{<download-macos >}}
 
+Official All-in-one, signed and notarized installers for macOS. [Learn more]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
+
 Като алтернатива е възможно да инсталирате QGIS чрез MacPorts, вижте [Инструкции за инсталиране на MacPorts]({{< ref "resources/installation-guide/#macports" >}})
 
 {{<platform-content-end >}}

@@ -1,12 +1,12 @@
 ---
 draft: false
 subtitle: ''
-title: Заявление в отношении разнообразия
+title: Заявление о разнообразии
 type: page
 
 ---
 {{<content-start classes="content narrow" >}}
-# Заявление в отношении разнообразия
+# Заявление о разнообразии
 Проект QGIS приветствует и поощряет участие каждого.
 
 No matter how you identify yourself or how others perceive you: we welcome you. We welcome contributions from everyone as long as they interact constructively with our community.

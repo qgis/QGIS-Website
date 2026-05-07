@@ -41,6 +41,8 @@ Donaties aan QGIS zijn in sommige landen af te trekken van de belastingen. Vraag
 ## macOS
 {{<download-macos >}}
 
+Official All-in-one, signed and notarized installers for macOS. [Learn more]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
+
 Alts alternatief is het ook mogelijk QGIS te installeren via MacPorts, bekijk de  [MacPorts installatie-instructies]({{< ref "resources/installation-guide/#macports" >}})
 
 {{<platform-content-end >}}

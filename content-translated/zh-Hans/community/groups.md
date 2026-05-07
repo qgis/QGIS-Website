@@ -120,19 +120,19 @@ type: page
 * 德语: [https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf](https://www.qgis.ch/assets/pdf/QGIS%20Usergruppe%20Beitrittserklaerung.pdf)
 * 法语: [https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf](https://www.qgis.ch/assets/pdf/QGIS%20groupe%20d%20utilisateurs%20Suisse%20declaration%20d%20adhesion.pdf)
 
-You can use these statutes and membership application forms as a reference and change them as needed for your local situation.
-## Local Country domain qgis.xx
-It is recommended to register your local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by other organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
+您可以参考这些章程及会员申请表，并根据当地实际情况按需修改。
+## 本地国家域名 qgis.xx
+建议您注册所在国家的域名，例如qgis.ch或qgis.uk。如果该域名已被其他组织、公司或个人注册，请协商是否可以将域名所有权转让给本地QGIS用户组。QGIS国际项目已将 [QGIS注册为商标](../organisation/guidelines), 可在协商过程中为您提供帮助。
 ## 网站
-Your local user group website should be used to publish any material in relation to the information and management of the user group. Examples include the user meetings, case study, shared material, discussion boards, etc. Public material should be available without login requirements (e.g. do not require interested people to be a member of a social media network like Facebook or Google+). Usage of social media is recommended but should not be the only channel of information. RSS feeds should be made available at the Website of the QGIS user group.
+您所在的本地用户组网站用于发布与用户组信息和管理相关的各类资料，例如用户会议、案例研究、共享资料、讨论板块等。公开资料应无需登录即可访问 (例如，不得要求感兴趣人士必须加入Facebook或Google+等社交媒体平台)。建议使用社交媒体作为宣传渠道，但不应将其视为唯一的信息渠道。QGIS用户组的网站应提供RSS订阅源。
 
-Good luck with organizing your local user group! Please inform the international QGIS team by registering at the QGIS community list and reporting about your progress. Please do not hesitate to ask questions regarding the establishment and maintenance of your local user group.
-## Starter pack
-### QGIS.org subdomain hosting
-If you prefer to use the official QGIS.org branding and host your user group website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
-### QGIS News Feed submission access
+祝您顺利组建本地用户组！请在QGIS社区列表完成注册，并向国际QGIS团队汇报组建进展情况。如在组建和维护本地用户组方面有任何疑问，欢迎随时咨询。
+## 入门必备
+### QGIS.org子域名托管
+如果您更倾向于使用官方的QGIS.org品牌标识，并将用户组网站托管在QGIS.org的子域名之下 (例如 `sweden.qgis.org`), 可以使用官方提供的模板仓库: [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website) 。此选项可确保与QGIS主网站设计保持一致。请仔细阅读并遵循仓库中提供的设置说明。
+### QGIS新闻供稿提交权限
 Local user groups can request access to the [QGIS News Feed system](https://feed.qgis.org), which allows you to submit news entries (such as events, crowdfunding campaigns, meetups, or announcements) that will appear in the QGIS news section once approved by moderators. This is an excellent way to share your group's activities with the global QGIS community.
-### Template for local country domain qgis.xx
+### 本国域名模板 qgis.xx
 For local country domain, if you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
 
 {{<content-end >}}

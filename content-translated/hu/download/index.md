@@ -41,6 +41,8 @@ A QGIS-nek nyújtott adományok egyes országokban adólevonásra jogosíthatnak
 ## macOS
 {{<download-macos >}}
 
+Official All-in-one, signed and notarized installers for macOS. [Learn more]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
+
 Alternatív megoldásként a QGIS-t a MacPorts segítségével is telepítheti. Lásd a [MacPorts telepítési útmutatót]({{< ref "resources/installation-guide/#macports" >}})
 
 {{<platform-content-end >}}

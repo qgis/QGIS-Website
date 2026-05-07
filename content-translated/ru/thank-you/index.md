@@ -21,11 +21,11 @@ If your download didn't start, you can manually download QGIS from the [QGIS.org
 
 {{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Ваша поддержка жизненно необходима для развития QGIS
-Our software is, and always will be, available free of charge if downloaded from QGIS.org.
+Наше ПО всегда было и будет доступно бесплатно на QGIS.org.
 
-The project is a result of a huge effort and social contribution from many community members who volunteer their time and expertise. In addition, many businesses, government agencies and commercial entities have contributed to the development of QGIS. They do this either to ensure that QGIS meets their specific needs or to contribute to and accelerate the huge social impact that is realised by making a tool such as QGIS freely available. Our goal is the betterment of society through informed spatial decision making. If you are able, we gently request that you support our work.
+Этот проект - результат огромных усилий множества участников, которые на волонтёрской основе вкладывают в него своё время и профессиональные навыки. Помимо этого, развитию QGIS помогает множество коммерческих компаний и государственных организаций. Они поддерживают проект, чтобы QGIS мог решать их конкретные задачи, или из-за социального значения общедоступности такого инструмента, как QGIS. Наша цель — улучшить общество, помогая принимать информированные решения в сфере территориального планирования. Если у вас есть такая возможность, мы просим вас поддержать нашу работу.
 
-Whether you choose to donate or not, we hope that you enjoy using our labour of love and encourage you to share and spread your downloaded copy far and wide so that others may enjoy it too.
+Независимо от того, решите ли вы сделать пожертвование, мы надеемся, что вы с удовольствием будете использовать наше детище. Делитесь своей копией программы и распространяйте её как можно шире, чтобы она помогала и другим пользователям.
 
 С наилучшими пожеланиями!
 

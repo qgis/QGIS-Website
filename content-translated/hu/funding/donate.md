@@ -15,7 +15,7 @@ A QGIS-t elkötelezett önkéntesek, vállalatok és szervezetek csapata fejlesz
 
 Finanszírozásunk nagy része szponzorációkra és adományokra épül. Ha támogatni szeretne minket, szívesen fogadunk adományokat. Az adományokat elektronikus átutalással, hitelkártyával vagy PayPal-on keresztül tudjuk fogadni.
 
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt german association.
+A QGIS-nek küldött adományok egyes országokban adólevonásra jogosíthatnak. A részletekről kérjük, érdeklődjön a helyi adóhivatalnál. Ha német vállalatként vagy szervezetként szeretne adólevonást igénybe venni, kérjük, a [német QGIS felhasználói csoporton](https://qgis.de/doku.php/verein/spenden) keresztül adományozzon. Ők adómentes német egyesületként kiállíthatnak fizetési igazolást.
 
 {{< rich-box-start layoutClass="mt-6">}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Pártoló tagság
@@ -26,78 +26,78 @@ Kössön visszatérő pártoló tagságot.
 {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
-## Stripe Donation
-We use the [stripe.com](https://stripe.com) service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+## Stripe adományozás
+A hitelkártyás adományok fogadásához a [stripe.com](https://stripe.com) szolgáltatást használjuk. Felhívjuk figyelmét, hogy a Stripe fizetési díjai lényegesen alacsonyabbak, mint a PayPalé, ezért nagyra értékelnénk, ha a PayPal helyett a Stripe-et használná. Regisztráció nem szükséges. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Payrexx adományozás
-We also use the [payrexx.com](https://payrexx.com) service to receive credit card donations. Note that the payment fees at Payrexx are substantially lower than at Paypal - so we would appreciate it, if you could use [Stripe](#stripe-donation) or Payrexx instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+Hitelkártyás adományok fogadásához a [payrexx.com](https://payrexx.com) szolgáltatást is igénybe vesszük. Felhívjuk a figyelmét, hogy a Payrexx fizetési díjai lényegesen alacsonyabbak, mint a PayPalé, ezért nagyra értékelnénk, ha a PayPal helyett a [Stripe](#stripe-donation) vagy a Payrexxet használná. Regisztráció nem szükséges. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Banki átutalás
-Use the details below to make a donation via international money transfer: {{< rich-content-end >}} {{< rich-right-start >}}
+Az alábbi adatok segítségével nemzetközi átutalással is adományozhat: {{< rich-content-end >}} {{< rich-right-start >}}
 
 <pre class="donatbox">
-Account name: QGIS.ORG
-Address:      Via Geinas 2
+Számlatulajdonos: QGIS.ORG
+Cím:          Via Geinas 2
               CH-7031 Laax
 BIC/SWIFT:    POFICHBEXXX
 IBAN:         CH09 0900 0000 9146 3839 8
-Reference:    Donation QGIS
-Currency:     EUR
-Bank name:    PostFinance AG
-Bank address: Mingerstrasse 20
+Közlemény:    Donation QGIS
+Pénznem:      EUR
+Bank neve:    PostFinance AG
+Bank címe:    Mingerstrasse 20
               3030 Berne
               Switzerland
-VAT-number:   CHE-489.853.176
+VAT-szám:    CHE-489.853.176
 </pre>
 
 {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right paypal mb-6" >}} {{< rich-content-start themeClass="coloring-1" >}}
 ## Paypal adományozás
-You can use Paypal to donate using your own credit card (but we prefer to use [Payrexx](#payrexx-donation) for that). The payment is processed by PayPal but you don't need to have a PayPal account or sign-up for one if you are paying by credit card.
+A PayPal segítségével saját hitelkártyájával is adományozhat (bár mi inkább a [Payrexx](#payrexx-donation) használatát javasoljuk erre a célra). A fizetést a PayPal bonyolítja le, de ha hitelkártyával fizet, nem szükséges, hogy PayPal-fiókja vagy regisztrációja legyen.
 
 Használhatja a saját PayPal számláját is az adományküldéshez.
 
 {{< paypal-button >}} {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../paypal.png) {{< rich-right-end >}} {{< rich-box-end >}}
-## Your support is vital to keep QGIS improving
-We would like to extend our activities and improve the quality of QGIS. Your financial contribution will support the maintenance, improvement, and promotion of QGIS. Becoming a sustaining member is a way of ensuring the longevity and overall health of the project.
+## Az Ön támogatása létfontosságú a QGIS fejlesztéséhez
+Szeretnénk bővíteni tevékenységünket és javítani a QGIS minőségén. Pénzügyi támogatásával hozzájárul a QGIS karbantartásához, fejlesztéséhez és népszerűsítéséhez. A pártoló taggá válás egy módja annak, hogy biztosítsa a projekt hosszú távú fennmaradását és általános jó működését.
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third left-title">}}
-## Enhanced Infrastructure & Development Support
+## Infrastruktúra-bővítés és fejlesztési támogatás
 {{<column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}} {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Maintaining Core Infrastructure
-* The official QGIS.org website, a central hub for all things QGIS.
-* Our issue tracking system for efficient bug and feature reporting.
-* The continuous integration system, ensuring code quality and stability through automated tests. {{< rich-content-end >}} {{< rich-box-end >}}
+#### Az alapvető infrastruktúra karbantartása
+* A QGIS.org hivatalos weboldala, a QGIS-szel kapcsolatos minden információ központi gyűjtőhelye.
+* Hibajelentések és új funkciók hatékony nyomon követésére szolgáló rendszerünk.
+* A folyamatos integrációs rendszer, amely automatizált tesztekkel biztosítja a kód minőségét és stabilitását. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Software Development & QA
-* Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
-* Address bugs and other issues promptly, enhancing the user experience.
-* Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development. {{< rich-content-end >}} {{< rich-box-end >}}
+#### Szoftverfejlesztés és minőségbiztosítás
+* A QGIS folyamatos fejlesztése és különböző operációs rendszerekre való csomagolása, hogy világszerte minél több felhasználó számára elérhetővé váljon.
+* A hibák és egyéb problémák haladéktalan orvoslása, javítva ezzel a felhasználói élményt.
+* A pull requestek kezelése és a kód alapos áttekintése a szoftverfejlesztés legmagasabb színvonalának biztosítása érdekében. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start class="mb-6">}} {{< column-start class="is-flex-direction-column is-one-third left-title">}}
-## Community Growth & Engagement
+## Közösségépítés és közösségi részvétel
 {{<column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds ">}} {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Empowering Our Volunteers
-* Mentoring new contributors, fostering a welcoming and productive community.
-* Translating QGIS into multiple languages, making the software truly global.
-* Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own. {{< rich-content-end >}} {{< rich-box-end >}}
+#### Önkénteseink támogatása
+* Az új közreműködők mentorálása, egy barátságos és eredményes közösség kialakítása.
+* A QGIS több nyelvre történő lefordítása, hogy a szoftver valóban globális lehessen.
+* A QGIS támogatási rendszer működtetése, amely lehetővé teszi a jelentős fejlesztésekre és újításokra való összpontosított munkát, amit az önkénteseknek gyakran nehézséget jelent egyedül megvalósítani. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Fostering Collaboration & Knowledge Sharing
-* Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project. {{< rich-content-end >}} {{< rich-box-end >}}
+#### Együttműködés és a tudásmegosztás előmozdítása
+* Közreműködői találkozók és QGIS-konferenciák szervezése és támogatása, amelyek elengedhetetlenek a tudáscseréhez, az együttműködéshez és a QGIS-projekt közös fejlődéséhez. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< columns-end >}}
 
-QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance]({{< ref "/community/foundation/finance" >}}) section.
+A QGIS.ORG átláthatóan kíván eljárni a kapott források és azok felhasználása tekintetében. Kérjük, tekintse meg a pénzügyi jelentéseket és költségvetéseket a [Pénzügyek]({{< ref "/community/foundation/finance" >}}) lapon.
 
 {{<content-end >}}

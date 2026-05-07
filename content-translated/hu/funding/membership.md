@@ -33,156 +33,156 @@ Reméljük, hogy a jövőben, ha a finanszírozás lehetővé teszi, bővíteni 
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-2" >}}
 ### € 27,000+
-Flagship Member (e.g. for companies larger than 100 employees, federal governmental organizations) {{< rich-content-end >}} {{< rich-box-end >}}
+Zászlóshajó tag (pl. 100 főnél több alkalmazottat foglalkoztató vállalatok, kormányzati szervezetek számára) {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
 ### € 9,000+
-Large Member (e.g. for larger cities, provinces or companies up to 100 employees) {{< rich-content-end >}} {{< rich-box-end >}}
+Nagy tag (pl. nagyobb városok, megyék vagy legfeljebb 100 alkalmazottat foglalkoztató vállalatok számára) {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
 ### € 3,000+
-Medium Member (e.g. for universities, medium size cities or companies up to 50 employees) {{< rich-content-end >}} {{< rich-box-end >}}
+Közepes tag (pl. egyetemek, közepes méretű városok vagy legfeljebb 50 alkalmazottat foglalkoztató vállalatok számára) {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
 ### € 500+
-Small Member (e.g. for smaller cities or companies up to 10 employees) {{< rich-content-end >}} {{< rich-box-end >}}
+Kis tag (pl. kisebb városok vagy legfeljebb 10 alkalmazottat foglalkoztató vállalatok számára) {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< column-end >}} {{< columns-end >}}
 
-Sustaining memberships last one year, after which they may be continued with a new payment, or allowed to lapse. Sustaining memberships do not include voting rights. Existing voting rights remain unaffected.
+A pártoló tagság egy évig érvényes, ezt követően új befizetéssel meghosszabbítható, vagy le is járhat. A pártolói tagság nem jár szavazati joggal. A meglévő szavazati jogok változatlanok maradnak.
 
-Membership fees are approved or changed by the QGIS general assembly. They are defined as minimum fees per category, but the sustaining member may choose to pay more than the minimum if they wish.
+A tagsági díjakat a QGIS közgyűlése hagyja jóvá vagy módosítja. Ezeket kategóriánkénti minimális díjakként határozzák meg, de a támogató tagok saját belátásuk szerint a minimális összegnél többet is befizethetnek.
 
-Because QGIS.ORG is a global project and different companies, NGOs or governmental organizations have different financial means, we do not mandate membership levels. Sustaining members self-select whichever level they are able to afford.
+Mivel a QGIS.ORG egy globális projekt, és a különböző vállalatok, civil szervezetek vagy kormányzati szervek pénzügyi lehetőségei eltérőek, nem írjuk elő a tagsági szinteket. A pártoló tagok maguk választják ki azt a szintet, amelyet meg tudnak fizetni.
 
-Acceptance of sustaining members shall be subject to the discretion and approval of The Board, who reserve the right to accept or reject applications for sustaining membership and ongoing support memberships as deemed appropriate.
-## Sustaining membership benefits
-Supporting the QGIS project as a sustaining member provides the following benefits:
+A pártoló tagok felvétele az Igazgatóság belátására és jóváhagyására tartozik, amely fenntartja magának a jogot, hogy a pártoló tagságra és a folyamatos támogatói tagságra irányuló kérelmeket saját belátása szerint elfogadja vagy elutasítsa.
+## A pártoló tagság előnyei
+A QGIS-projekt pártoló tagként történő támogatása a következő előnyökkel jár:
 
 {{< columns-start >}} {{< column-start class="is-one-third">}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
-#### Public Acknowledgment
-All sustaining members and donors will be listed on the project [Members page]({{< ref "/funding/membership.md" >}}), ordered by membership category with a link back to the sustaining member's organization or company website and their logo sized according to their membership category.
+#### Nyilvános köszönetnyilvánítás
+Minden pártoló tag és adományozó felkerül a projekt [Tagok oldalára]({{< ref "/funding/membership.md" >}}), tagsági kategória szerint rendezve, a pártoló tag szervezetének vagy vállalatának weboldalára mutató linkkel, valamint a tagsági kategóriának megfelelő méretű logóval.
 
 {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}}
 
 {{< column-start class="is-two-thirds vertical-colums" >}} {{< columns-start >}} {{< column-start >}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text">}}
-#### Enhanced Software Quality
-Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+#### Jobb szoftverminőség
+A pártolói tagságból származó hozzájárulások segítenek a hibák és problémák gyors megoldásában, ami jobb felhasználói élményt eredményez. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
-#### Enhanced Brand Exposure
-Flagship, large and medium sustaining members will have their logo on the QGIS homepage footer banner with a logo size and order reflecting their membership category
+#### Nagyobb márkaismertség
+A zászlóshajó, a nagy és a közepes pártoló tagok logója megjelenik a QGIS honlapjának láblécében, a logó mérete és sorrendje pedig a tagsági kategóriájukat tükrözi
 
 {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}} {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4">}}
-#### Featured in Software Updates
-Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+#### Kiemelés a szoftverfrissítésekben
+A pártoló tagok nevei kiemelve jelennek meg a QGIS szoftverkiadások vizuális változásnaplóiban, jelezve ezzel a projekt iránti folyamatos elkötelezettségüket. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
-#### Public Acknowledgment
-You may use a special version of the QGIS logo on your website and materials, signaling your support for the project.
+#### Nyilvános köszönetnyilvánítás
+Weboldalán és kiadványaiban felhasználhatja a QGIS logó egy speciális változatát, jelezve ezzel, hogy támogatja a projektet.
 
 {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
-#### Keep QGIS Ad Free
-Sustaining memberships help to ensure we do not need to employ 'user hostile' tactics, such as advertising, to fund the project.
+#### A QGIS megtartása reklámmentesnek
+A pártoló tagságok hozzájárulnak ahhoz, hogy a projekt finanszírozásához ne kelljen a felhasználók számára barátságtalan módszerekhez, például hirdetésekhez folyamodnunk.
 
 {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
 
-The decision on how funds are spent will be made by the QGIS Project Steering Committee, proposed in a budget that will be approved or declined by the QGIS.ORG general assembly.
-## How become a sustaining member
+A források felhasználásáról a QGIS Projektirányító Bizottság dönt, aki javaslatot tesz egy költségvetésre, amelyet a QGIS.ORG közgyűlése hagy jóvá vagy utasít el.
+## Hogyan válhatok pártoló taggá
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
-#### Initial Contact
+#### Első kapcsolatfelvétel
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters " >}}
 
-You can reach out to the treasurer at finance@qgis.org or any other Project Steering Committee (PSC) member to express your interest in becoming a sustaining member.
+Ha pártoló taggá szeretne válni, írjon a pénzügyesünknek a finance@qgis.org címre, vagy a Projektirányító Bizottság (PSC) bármely más tagjának.
 
-{{<button class="is-primary6" link="mailto:finance@qgis.org" text="Write to treasurer" >}}
+{{<button class="is-primary6" link="mailto:finance@qgis.org" text="Írjon a pénzügyesünknek" >}}
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
-#### Clarification and Invoice Issuance
+#### Tisztázás és számla kiállítása
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters " >}}
 
-The treasurer will gather necessary details (such as contact information, address, and permission to use the organization's logo on the QGIS sustaining membership page) and issue an invoice for the membership fee.
+A pénzügyes összegyűjti a szükséges adatokat (például elérhetőségi adatokat, címet, valamint a szervezet logójának a QGIS támogatói tagsági oldalon való felhasználására vonatkozó engedélyt), majd kiállítja a tagsági díjról szóló számlát.
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
-#### Payment Verification
+#### Fizetés ellenőrzése
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters " >}}
 
-The treasurer verifies the receipt of the payment to officially recognize the organization as a sustaining member.
+A pénzügyes ellenőrzi a befizetés beérkezését, hogy a szervezetet hivatalosan támogató tagként ismerhesse el.
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
-#### Membership Management
+#### Tagság kezelése
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters " >}}
 
-We provide a website where sustaining members are listed, categorized by level and sorted by the date of introduction or renewal etc.
+Weboldalunkon közzétesszük a pártoló tagok listáját, kategóriákba sorolva és a csatlakozás vagy megújítás dátuma szerint rendezve stb.
 
-[Open Sustaining Members](https://members.qgis.org/)
+[Pártoló tagok megtekintése](https://members.qgis.org/)
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
-#### Recognition and Promotion
+#### Elismerés és támogatás
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters " >}}
 
-**Recognition**: Sustaining members are acknowledged on the QGIS website, with logos of flagship, large, and medium members featured in the footer banner.
+**Elismerés**: A pártoló tagok nevét feltüntetjük a QGIS weboldalán, a kiemelt, nagy és közepes méretű tagok logóit pedig a láblécben elhelyezett szalagcímben szerepeltetjük.
 
-**Visibility**: Members are listed in the visual changelog of QGIS releases.
+**Láthatóság**: A tagok nevei szerepelnek a QGIS-kiadások vizuális változásnaplójában.
 
-**Promotion**: When appropriate, QGIS will conduct social media promotion to highlight the support from sustaining members.
+**Promóció**: Adott esetben a QGIS a közösségi médiában is népszerűsíti a pártoló tagok által nyújtott támogatást.
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
-#### Ongoing Engagement
+#### Folyamatos együttműködés
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-align-items-flex-start is-three-quarters " >}}
 
-Past sustaining members are listed separately for a period of two years to acknowledge their previous contributions.
+A korábbi pártoló tagok nevét két évig külön feltüntetjük, hogy elismerjük korábbi hozzájárulásukat.
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< rich-box-start icon="💡" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-##### One-time payments
-Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals! {{< rich-content-end >}} {{< rich-box-end >}}
+##### Egyszeri befizetések
+Az adományok összege tetszőleges lehet, és közvetlen átutalással a bankszámlánkra (SEPA-átutalás), hitelkártyával (a stripe.com oldalon keresztül) vagy Paypalon keresztül is befizethetők (további információk a [Adományok]({{< ref "/funding/donate.md" >}}) oldalon találhatók). Még egy kis adomány is sokat jelenthet, és segíthet nekünk a fontos projektcélok elérésében! {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-##### About ‘earmarked’ funding
-We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative. {{< rich-content-end >}} {{< rich-box-end >}}
+##### A „célhoz kötött” támogatásokról
+Sajnáljuk, de nem tudunk elfogadni célhoz kötött támogatást, mivel az számos adminisztratív problémával járna. Ha a QGIS fejlesztésének konkrét területeit szeretné támogatni, javasoljuk, hogy inkább további munkaerővel segítse a projektet, például fejlesztő felvételével, vagy csatlakozzon a hibajavítási kezdeményezésünkhöz. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start icon="⚠️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-6" >}}
 ##### Figyelmeztetés
-Acceptance of sustaining membership applications is at the discretion of the QGIS PSC. We reserve the right to decline offers of sustaining members if the membership organisation or party seems to be at odds with the ethos of our project. For example offers from marketing companies that have nothing to do with GIS / spatial services, or offers where we have reason to believe the presence of the sustaining member logo and marketing materials on our site and other materials will degrade the experience of our users will be declined. {{< rich-content-end >}} {{< rich-box-end >}}
+A pártolói tagsági kérelmek elfogadásáról a QGIS PSC dönt. Fenntartjuk a jogot, hogy elutasítsuk a pártoló tagsági kérelmeket, ha a tagsági szervezet vagy fél ellentétben áll projektünk szellemiségével. Például elutasítjuk azon marketingcégek ajánlatait, amelyeknek semmi közük a GIS-hez vagy a térinformatikai szolgáltatásokhoz, illetve azokat az ajánlatokat, amelyek esetében okunk van feltételezni, hogy a támogató tag logójának és marketinganyagainak megjelenése a weboldalunkon és egyéb anyagainkon rontaná a felhasználói élményt. {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{<content-end >}}

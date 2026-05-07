@@ -113,11 +113,11 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="サーバガイド/マニュアル" >}}
 
-**For documentation writers (QGIS testing):**
+**文書執筆者向け (QGIS testing):**
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="ドキュメントガイドライン" >}}
 
-**For developers (QGIS testing):**
+**開発者向け (QGIS testing):**
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (プラグイン開発とスクリプト記述に有用)" >}}
 
@@ -127,7 +127,7 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<rich-list listLink="https://github.com/qgis/QGIS/blob/master/INSTALL.md" layoutClass="inline-block" listTitle="ソースからの QGIS ビルド" >}}
 
-**For download (QGIS testing):**
+**ダウンロード (QGIS testing):**
 
 {{<rich-list listLink="https://docs.qgis.org/testing/pdf" layoutClass="inline-block" listTitle="PDF 版マニュアル" >}}
 
@@ -137,27 +137,27 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<tab-content-start tab="3" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.40 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.40 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.28/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.28 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.28/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.28 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.22/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.22/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.16/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.16 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.16/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.16 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.10/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.10 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.10/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.10 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.4/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.4 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.4/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.4 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/2.18/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 2.18 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/2.18/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 2.18 文書 — <lang>" >}}
 
 {{<tab-content-end >}}
 
 {{<tab-content-start tab="4" >}}
 
-In line with GDPR and related data protection regulations, we provide the following documentation:
+GDPRおよび関連するデータ保護法規に基づき、以下のドキュメントをご用意しています:
 
 {{<rich-list listLink="https://docs.qgis.org/latest/en/docs/user_manual/appendices/qgis_desktop_network_connections.html" layoutClass="inline-block" listTitle="QGIS アプリケーションのネットワーク接続" >}}
 
@@ -165,9 +165,9 @@ In line with GDPR and related data protection regulations, we provide the follow
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
 ## サポート
-The QGIS community offers a wealth of excellent websites with support forums.
+QGISコミュニティは、サポートフォーラムを備えた優れたウェブサイトを豊富に提供しています。
 
-{{<button class="is-primary6" link="resources/support" text="View support options" >}}
+{{<button class="is-primary6" link="resources/support" text="サポートオプションを見る" >}}
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 

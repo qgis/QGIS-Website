@@ -13,11 +13,11 @@ type: page
 
 {{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
 ## Прежде чем начнётся загрузка
-Our software is, and always will be, available free of charge if downloaded from QGIS.org.
+Наше ПО всегда было и будет доступно бесплатно на QGIS.org.
 
-The project is a result of a huge effort and social contribution from many community members who volunteer their time and expertise. In addition, many businesses, government agencies and commercial entities have contributed to the development of QGIS. They do this either to ensure that QGIS meets their specific needs or to contribute to and accelerate the huge social impact that is realised by making a tool such as QGIS freely available. Our goal is the betterment of society through informed spatial decision making. If you are able, we gently request that you support our work.
+Этот проект - результат огромных усилий множества участников, которые на волонтёрской основе вкладывают в него своё время и профессиональные навыки. Помимо этого, развитию QGIS помогает множество коммерческих компаний и государственных организаций. Они поддерживают проект, чтобы QGIS мог решать их конкретные задачи, или из-за социального значения общедоступности такого инструмента, как QGIS. Наша цель — улучшить общество, помогая принимать информированные решения в сфере территориального планирования. Если у вас есть такая возможность, мы просим вас поддержать нашу работу.
 
-Whether you choose to donate or not, we hope that you enjoy using our labour of love and encourage you to share and spread your downloaded copy far and wide so that others may enjoy it too.
+Независимо от того, решите ли вы сделать пожертвование, мы надеемся, что вы с удовольствием будете использовать наше детище. Делитесь своей копией программы и распространяйте её как можно шире, чтобы она помогала и другим пользователям.
 
 С наилучшими пожеланиями!
 
@@ -41,7 +41,9 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 ## macOS
 {{<download-macos >}}
 
-Alternatively, it is also possible to install QGIS via MacPorts, see the [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
+Official All-in-one, signed and notarized installers for macOS. [Learn more]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
+
+Также вы можете установить QGIS через MacPorts, см. [инструкцию по установке через MacPorts]({{< ref "resources/installation-guide/#macports" >}})
 
 {{<platform-content-end >}}
 
@@ -49,7 +51,7 @@ Alternatively, it is also possible to install QGIS via MacPorts, see the [MacPor
 
 {{<platform-content-start platform="linux" >}}
 ## Linux
-GNU/Linux is a Free operating system built on the same principles that QGIS is built on. We provide installers for many flavors of GNU/Linux binary packages (including rpm and deb packages). Please select your choice of distro below:
+GNU/Linux - свободно распространяемая операционная система, основанная на тех же принципах, что и QGIS. У нас вы найдёте установщики для разных бинарных пакетов GNU/Linux  (в том числе rpm и deb). Выберите подходящий дистрибутив ниже:
 - [Debian/Ubuntu]({{< ref "resources/installation-guide#debian--ubuntu" >}})
 - [Fedora]({{< ref "resources/installation-guide#fedora" >}})
 - [NixOS]({{< ref "resources/installation-guide#nixos" >}})
@@ -60,33 +62,33 @@ GNU/Linux is a Free operating system built on the same principles that QGIS is b
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}}) {{< platform-content-end >}}
+[Инструкция по установке для Linux]({{< ref "resources/installation-guide#linux" >}}) {{< platform-content-end >}}
 
 {{<platform-content-start platform="bsd" >}}
 ## BSD
-[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}}) {{< platform-content-end >}}
+[Инструкция по установке для BSD]({{< ref "resources/installation-guide#freebsd" >}}) {{< platform-content-end >}}
 
 {{<platform-content-start platform="container" >}}
-## Container Images
-[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}}) {{< platform-content-end >}}
+## Образы контейнеров
+[Инструкция по установке образов контейнеров]({{< ref "resources/installation-guide#container-images" >}}) {{< platform-content-end >}}
 
 {{<platform-content-start platform="mobile" >}}
-## Mobile and tablet
+## Мобильные устройства
 {{< mobile-downloads >}} {{< platform-content-end >}}
 
 {{<platform-content-start platform="source" >}}
-## Source Code
-QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
+## Исходный код
+QGIS - ПО с открытым кодом, доступно по лицензии <b>GNU General Public License</b>, это означает, что его исходный код можно скачать через 'tarballs'  или репозиторий git.
 
-QGIS Source Code is available <a href="/downloads/qgis-latest.tar.bz2">here (latest release)</a> and <a href="/downloads/qgis-latest-ltr.tar.bz2">here (long term release)</a>
+Исходный код QGIS доступен <a href="/downloads/qgis-latest.tar.bz2">здесь (актуальный релиз)</a> и <a href="/downloads/qgis-latest-ltr.tar.bz2">здесь (long term release)</a>
 
-Refer to the installation guide on how to compile QGIS from source for the different platforms: [here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
+Чтобы скомпилировать QGIS для других платформ, воспользуйтесь [следующим руководством](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-You can also obtain the source code by cloning or forking our <a href="https://github.com/qgis/QGIS">GitHub repository</a>. {{< platform-content-end >}}
+Исходный код вы также можете получить путём клонирования или создания форка нашего <a href="https://github.com/qgis/QGIS">репозитория GitHub</a>. {{< platform-content-end >}}
 
 {{<platform-content-start platform="example" >}}
-## Example Datasets
-For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats. {{< platform-content-end >}}
+## Примеры данных
+Для целей тестирования и обучения [доступен пример набора данных](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), который содержит данные из разных источников в разных форматах. {{< platform-content-end >}}
 
 {{<download-platform-selector-end >}}
 

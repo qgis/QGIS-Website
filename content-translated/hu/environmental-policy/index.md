@@ -13,25 +13,25 @@ A környezeti problémák – mint például az éghajlati válság, a biológia
 
 Irányelv[](https://www.qgis.org/hu/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#policy "Link to this heading")
 -
-QGIS.ORG and the QGIS community are committed to act responsibly regarding their actions and activities where it has any relevant influence on the environment. This includes mainly our server infrastructure and our physical contributor meetings.
+A QGIS.ORG és a QGIS-közösség elkötelezett amellett, hogy felelősségteljesen járjon el minden olyan tevékenységében, amelynek hatása van a környezetre. Ez elsősorban a szerverinfrastruktúránkat és a személyes találkozóinkat érinti.
 
-Server infrastructure[](https://www.qgis.org/en/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#server-infrastructure "Link to this heading")
+Szerverinfrastruktúra[](https://www.qgis.org/en/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#server-infrastructure "Link to this heading")
 -
-The infrastructure provider should run the QGIS.ORG infrastructure with renewable energy. Rented server or cloud resources should be sized according to their expected load. Oversizing of infrastructure resources should be avoided.
+Az infrastruktúra-szolgáltatónak megújuló energiával kell üzemeltetnie a QGIS.ORG infrastruktúráját. A bérelt szerverek vagy felhőalapú erőforrások méretét a várható terhelésnek megfelelően kell meghatározni. Kerülni kell az infrastruktúra-erőforrások túlméretezését.
 
-Physical contributor meetings[](https://www.qgis.org/en/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#physical-contributor-meetings "Link to this heading")
+Személyes közreműködői találkozók[](https://www.qgis.org/en/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#physical-contributor-meetings "Link to this heading")
 -
-*Choice of location:* ​when choosing the location for a contributor meeting, the remoteness of the location of the contributor meeting should be factored in. Very remote places where the majority of participants have to fly to should be avoided.
+*A helyszín kiválasztása:* ​A közreműködői találkozó helyszínének kiválasztásakor figyelembe kell venni a helyszín elszigeteltségét. Kerülni kell azokat a nagyon távoli helyeket, ahová a résztvevők többségének repülővel kell utaznia.
 
-*Traveling to the meeting:*​ when feasible, participants should be encouraged to choose more environmentally friendly transport options: preferably trains or buses rather than planes. When choosing transport by car, car pooling should be encouraged. QGIS.ORG has a program allowing contributor meeting participants to ask for travel expenses reimbursement. Efforts to travel with a low-impact means of transportation will be taken into account for travel grant decisions. Conditions for reimbursement of plane tickets :
-> - no reimbursement if alternative train rides with a travel time <= 10 hours exist (12 hours when including a night train connection), even if the train ticket costs more than the airfare.
-> - When the air travel option has to be chosen and the traveller is claiming travel cost reimbursements, the traveller should pay extra for a carbon offset through an accredited carbon offset company. QGIS.ORG will also reimburse this extra cost.
-> - Sample organizations who offer carbon offset: MyClimate, Atmosfair or other comparable organizations.
+*A találkozóra való utazás:* amennyiben lehetséges, a résztvevőket ösztönözni kell a környezetbarátabb közlekedési módok választására: repülőgép helyett lehetőleg vonattal vagy busszal. Autóval történő utazás esetén a telekocsizást kell ösztönözni. A QGIS.ORG rendelkezik egy programmal, amely lehetővé teszi a közreműködői értekezlet résztvevőinek, hogy utazási költségeik megtérítését kérjék. Az alacsony környezeti terhelésű közlekedési eszközök használatára irányuló törekvéseket figyelembe vesszük az utazási támogatás odaítélésénél. A repülőjegyek megtérítésének feltételei:
+> - nem jár visszatérítés, ha léteznek olyan alternatív vonatjáratok, amelyek utazási ideje legfeljebb 10 óra (éjszakai vonatkapcsolattal együtt 12 óra), még akkor sem, ha a vonatjegy drágább, mint a repülőjegy.
+> - Ha a légi utazás mellett kell dönteni, és az utazó az utazási költségek visszatérítését igényli, az utazónak egy akkreditált szén-dioxid-kiegészítő cégnél felár ellenében szén-dioxid-kiegészítést kell vásárolnia. A QGIS.ORG ezt a felárat is megtéríti.
+> - Példák szén-dioxid-kibocsátási kompenzációt kínáló szervezetekre: MyClimate, Atmosfair vagy más hasonló szervezetek.
 
-*Remote participation:* For participants who cannot attend in person, QGIS.org encourages meeting's organizers to enable remote participation through scheduled discussions and video conferencing.
+*Távoli részvétel:* Azok számára, akik személyesen nem tudnak részt venni, a QGIS.org arra ösztönzi a találkozó szervezőit, hogy tervezett beszélgetések és videokonferenciák révén tegyék lehetővé a távoli részvételt.
 
-*Catering:* Local organizers should organize the catering in an environmentally friendly way as much as possible. Local food should be preferred over food that requires significant transportation. Reusable tableware, cups and cutlery should be preferred over disposable single-use options as they are generally considered to be more friendly to the environment. Meeting attendees should be encouraged to bring their own drinking bottle and event organisers should be requested to promote using potable water from the water mains system, or if that is not suitable, a 'drinking fountain' that can be used to fill up water containers without generating large amounts of plastic waste.
+*Étkeztetés:* A helyi szervezőknek az étkeztetést a lehető legkörnyezetbarátabb módon kell megszervezniük. A hosszú szállítási utat igénylő élelmiszerek helyett a helyi termékeket kell előnyben részesíteni. Az eldobható, egyszer használatos termékek helyett az újrahasználható edényeket, poharakat és evőeszközöket kell előnyben részesíteni, mivel ezek általában környezetkímélőbbnek minősülnek. A találkozó résztvevőit ösztönözni kell arra, hogy hozzák magukkal saját palackjukat, és a rendezvény szervezőit fel kell kérni, hogy népszerűsítsék a vezetékes víz használatát, vagy ha ez nem megfelelő, olyan „ivókút” használatát, amelyből a víztartályok feltölthetők anélkül, hogy nagy mennyiségű műanyaghulladék keletkezne.
 
-*Smoking and e-cigarettes:* second-hand intake of nicotine-based products are hazardous to health and create an unpleasant environment for non-consumers when done near them. Be respectful and do not use these products in doorways or other common areas outside where non-smokers gather. Organizers should rather provide a designated smoking area and request that smokers and e-cigarette users refrain from smoking elsewhere.
+*Dohányzás és e-cigaretta:* a nikotintartalmú termékek passzív használata egészségre káros, és kellemetlen légkört teremt a nem dohányzók számára, ha azok közelében történik. Legyenek figyelmesek, és ne használják ezeket a termékeket bejáratoknál vagy más olyan kültéri közös területeken, ahol nemdohányzók gyülekeznek. A szervezőknek inkább kijelölt dohányzóhelyet kell biztosítaniuk, és meg kell kérniük a dohányzókat és az e-cigaretta-használókat, hogy máshol ne dohányozzanak.
 
 {{<content-end >}}
