@@ -18,7 +18,7 @@ type: "visual-changelog"
 src="images/projects/388120cc4ef54e6b606481e3c2b08ba3738b5c17.png"
 class="img-responsive img-rounded center-block" />
 
-Release date: 2026-04-03
+Release date: 2026-03-06
 
 
 The wait is over! QGIS 4.0 is here!
