@@ -19,13 +19,7 @@ Reviewer: Tim Sutton
 Both QGIS Desktop and QGIS server are tested rigorously. Each pull request (i.e. code contribution) to QGIS undergoes automated Continuous Integration build tests (github workflows). Our QGIS Server platform is tested using our OGC conformance testing suite.
 
 
-<a href="https://github.com/qgis/QGIS/actions/workflows/run-tests.yml?query=branch%3Amaster+event%3Apush" target="_blank">
-<img src="https://github.com/qgis/QGIS/actions/workflows/run-tests.yml/badge.svg">
-</a>
-
-<a href="https://hub.docker.com/r/qgis/qgis/tags" target="_blank">
-<img src="https://img.shields.io/docker/automated/qgis/qgis.svg">
-</a>
+[![Tests](https://github.com/qgis/QGIS/actions/workflows/run-tests.yml/badge.svg)](https://github.com/qgis/QGIS/actions/workflows/run-tests.yml?query=branch%3Amaster+event%3Apush) [![Docker Automated Build](https://img.shields.io/docker/automated/qgis/qgis.svg)](https://hub.docker.com/r/qgis/qgis/tags)
 
 
 See [Unit testing](https://docs.qgis.org/testing/en/docs/developers_guide/unittesting.html) in our documentation for notes on the test suite.

@@ -85,7 +85,8 @@ Use the details below to make a donation via international money transfer:
 
 {{< rich-right-start >}}  
 
-<pre class="donatbox">
+{{< pre-block textClasses="donatbox" >}}
+
 Account name: QGIS.ORG
 Address:      Via Geinas 2
               CH-7031 Laax
@@ -98,7 +99,8 @@ Bank address: Mingerstrasse 20
               3030 Berne
               Switzerland
 VAT-number:   CHE-489.853.176
-</pre>
+
+{{< /pre-block >}}
 
 {{< rich-right-end >}}
 

@@ -19,11 +19,10 @@ sidebar: true
 ## Sol Katz Award Recipients
 Celebrating QGIS contributors who received the prestigious Sol Katz Award for exceptional leadership and contributions to geospatial open source software.
 
-<div style="text-align:center;">
-	<a href="/community/contributors/sol-katz-award/" class="button is-success">
-		View recipients
-	</a>
-</div>
+{{< button
+class = "is-success"
+link = "/community/contributors/sol-katz-award/"
+text = "View recipients" >}}
 
 {{< rich-content-end >}}
 
@@ -43,11 +42,10 @@ Celebrating QGIS contributors who received the prestigious Sol Katz Award for ex
 ## Contributing Organizations
 Organizations making meaningful contributions to the QGIS project through development and collaboration
 
-<div style="text-align:center;">
-	<a href="/community/contributors/organisations/" class="button is-success">
-		View list
-	</a>
-</div>
+{{< button
+class = "is-success"
+link = "/community/contributors/organisations/"
+text = "View list" >}}
 
 
 {{< rich-content-end >}}
@@ -69,11 +67,10 @@ Organizations making meaningful contributions to the QGIS project through develo
 ## Individual Contributors
 Celebrating the developers and contributors who help build QGIS through their code contributions and collaborative efforts.
 
-<div style="text-align:center;">
-	<a href="/community/contributors/individuals/" class="button is-success">
-		View list
-	</a>
-</div>
+{{< button
+class = "is-success"
+link = "/community/contributors/individuals/"
+text = "View list" >}}
 
 {{< rich-content-end >}}
 
@@ -94,11 +91,10 @@ Celebrating the developers and contributors who help build QGIS through their co
 ## Supporting Contributors
 Recognizing valuable contributions beyond code commits—community support, outreach, and behind-the-scenes efforts.
 
-<div style="text-align:center;">
-	<a href="/community/contributors/supporting/" class="button is-success">
-		View list
-	</a>
-</div>
+{{< button
+class = "is-success"
+link = "/community/contributors/supporting/"
+text = "View list" >}}
 
 {{< rich-content-end >}}
 

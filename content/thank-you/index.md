@@ -70,7 +70,7 @@ Our very best regards!
 
 ##### Tips for first launch
 If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time.
-<a href="/resources/installation-guide">Installation guide  </a>
+[Installation guide]({{< ref "resources/installation-guide" >}})
 
 {{< rich-content-end >}}
 

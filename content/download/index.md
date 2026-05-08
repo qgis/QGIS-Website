@@ -25,9 +25,11 @@ Whether you choose to donate or not, we hope that you enjoy using our labour of 
 
 Our very best regards!
 
-<p class="is-size-7 has-text-weight-medium">
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the <a href="https://qgis.de/doku.php/verein/spenden">German QGIS user group</a>. They can issue a payment confirmation as a tax-exempt German association.
-</p>
+{{< paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
+
+Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
+
+{{< paragraph-end >}}
 
 {{< rich-content-end >}}
 
@@ -111,13 +113,13 @@ We provide installers for many flavors of GNU/Linux binary packages (including r
 {{< platform-content-start platform="source" >}}
 
 ## Source Code
-QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
+QGIS is open source software available under the terms of the **GNU General Public License** meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
-QGIS Source Code is available <a href="/downloads/qgis-latest.tar.bz2">here (latest release)</a> and <a href="/downloads/qgis-latest-ltr.tar.bz2">here (long term release)</a>
+QGIS Source Code is available [here (latest release)](/downloads/qgis-latest.tar.bz2) and [here (long term release)](/downloads/qgis-latest-ltr.tar.bz2)
 
 Refer to the installation guide on how to compile QGIS from source for the different platforms: [here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-You can also obtain the source code by cloning or forking our <a href="https://github.com/qgis/QGIS">GitHub repository</a>.
+You can also obtain the source code by cloning or forking our [GitHub repository](https://github.com/qgis/QGIS).
 
 {{< platform-content-end >}}
 
