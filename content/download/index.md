@@ -12,7 +12,9 @@ Reviewer: Tim Sutton
 {{< content-start  >}}
 
 {{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}}
+
 {{< rich-content-start themeClass="coloring-2" >}}
+
 ## Before download starts
 
 Our software is, and always will be, available free of charge if downloaded from QGIS.org.
@@ -28,21 +30,30 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 </p>
 
 {{< rich-content-end >}}
+
 {{< rich-right-start mode="html" >}}
+
 {{< stripe-widget otherMethods="true" skipToDownload="true" >}}
+
 {{< rich-right-end >}}
+
 {{< rich-box-end >}}
 
 
 {{< download-platform-selector-start >}}
 
 {{< platform-content-start platform="windows" >}}
+
 ## Windows
+
 {{< download-windows>}}
+
 {{< platform-content-end >}}
 
 {{< platform-content-start platform="macos" >}}
+
 ## macOS
+
 {{< download-macos >}}
 
 Official All-in-one, signed and notarized installers for macOS. [Learn more]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
@@ -70,26 +81,35 @@ We provide installers for many flavors of GNU/Linux binary packages (including r
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
 [Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+
 {{< platform-content-end >}}
 
 
 {{< platform-content-start platform="bsd" >}}
+
 ## BSD
 [BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
+
 {{< platform-content-end >}}
 
 
 {{< platform-content-start platform="container" >}}
+
 ## Container Images
 [Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+
 {{< platform-content-end >}}
 
 {{< platform-content-start platform="mobile" >}}
+
 ## Mobile and tablet
+
 {{< mobile-downloads >}}
+
 {{< platform-content-end >}}
 
 {{< platform-content-start platform="source" >}}
+
 ## Source Code
 QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
@@ -98,11 +118,14 @@ QGIS Source Code is available <a href="/downloads/qgis-latest.tar.bz2">here (lat
 Refer to the installation guide on how to compile QGIS from source for the different platforms: [here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
 You can also obtain the source code by cloning or forking our <a href="https://github.com/qgis/QGIS">GitHub repository</a>.
+
 {{< platform-content-end >}}
 
 {{< platform-content-start platform="example" >}}
+
 ## Example Datasets
 For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats.
+
 {{< platform-content-end >}}
 
 {{< download-platform-selector-end >}}

@@ -60,10 +60,14 @@ Keep in mind that the more precise your question is, the quicker and more
 accurate the answer can be.
 
 {{< rich-box-start icon="💁" layoutClass="tips" mode="html">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 In case of a broken function, you may give a look at [QGIS issue tracker](https://github.com/qgis/QGIS/issues) before mailing to the list. More information at [bug-reporting]({{< ref "resources/support/bug-reporting" >}}).
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ### How are QGIS release names selected?
@@ -212,11 +216,15 @@ It is of course really welcome if you would like to add a note saying that the m
 "Made with QGIS" or "Map created using the Free and Open Source QGIS" are good examples of such a note.
 
 {{< rich-box-start icon="✋" layoutClass="tips" >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 
 Do not say ©QGIS as QGIS does not hold copyrights on your work.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 

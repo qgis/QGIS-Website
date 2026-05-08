@@ -8,6 +8,7 @@ sidebar: true
 ---
 
 {{< content-start  >}}
+
 # Executive Summary
 
 QGIS is a high impact, global project. QGIS.org provides open access to best-in-class tools for visualising, creating, editing, analysing and publication of spatially linked data and information products. QGIS.org does not prescribe how these tools should be used, but we make these tools freely available and accessible to everyone in order to foster a more just society, the making of better decisions and further the goal of a more sustainable environment.  We provide tools for working on traditional desktop PC’s, on mobile devices and in the cloud.

@@ -7,6 +7,7 @@ releaseDate: "2023-03-04"
 section: "project"
 type: "visual-changelog"
 ---
+
 {{< content-start >}}
 
 # Changelog for QGIS 3.30 {#changelog330}

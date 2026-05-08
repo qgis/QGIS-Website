@@ -10,6 +10,7 @@ date: 2012-05-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Using QGIS for urban planning in the municipality of Montecchio Maggiore, Vicenza, Italy

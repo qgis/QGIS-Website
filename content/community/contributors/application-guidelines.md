@@ -10,7 +10,9 @@ sidebar: true
 {{< content-start >}}
 
 {{< rich-box-start icon="📋" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ## About Supporting Contributors Recognition
 
 The QGIS Supporting Contributors program recognizes individuals and organizations whose valuable contributions to QGIS extend beyond code commits. This includes community support, documentation, translation, event organization, outreach, and other behind-the-scenes efforts that make QGIS thrive.
@@ -24,6 +26,7 @@ If you've been actively supporting the QGIS community, we encourage you to apply
 </div>
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ---
@@ -132,6 +135,7 @@ Your application will be evaluated based on:
 ### Writing Your Description
 
 {{< rich-box-start icon="💡" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-2" >}}
 
 **DO:**
@@ -149,6 +153,7 @@ Example: **"Coordinated monthly QGIS meetups in Berlin since 2022 with 20-40 att
 - Exceed the 500 character limit
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ### Image Requirements

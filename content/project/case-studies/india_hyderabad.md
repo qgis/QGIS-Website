@@ -10,6 +10,7 @@ date: 2012-07-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS Trainings at NIRD Jaipur Centre, India

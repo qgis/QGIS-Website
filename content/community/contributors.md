@@ -13,7 +13,9 @@ sidebar: true
 
 
 {{< rich-box-start layoutClass="has-right rounded" >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ## Sol Katz Award Recipients
 Celebrating QGIS contributors who received the prestigious Sol Katz Award for exceptional leadership and contributions to geospatial open source software.
 
@@ -24,13 +26,18 @@ Celebrating QGIS contributors who received the prestigious Sol Katz Award for ex
 </div>
 
 {{< rich-content-end >}}
+
 {{< rich-right-start >}}  
+
 {{< contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}}
+
 {{< rich-right-end >}}
+
 {{< rich-box-end >}}
 
 
 {{< rich-box-start layoutClass="has-right rounded" >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
 
 ## Contributing Organizations
@@ -46,7 +53,9 @@ Organizations making meaningful contributions to the QGIS project through develo
 {{< rich-content-end >}}
 
 {{< rich-right-start >}}  
+
 {{< contribution-stats "orgs" "/community/contributors/organisations/" >}}
+
 {{< rich-right-end >}}
 
 {{< rich-box-end >}}
@@ -54,7 +63,9 @@ Organizations making meaningful contributions to the QGIS project through develo
 
 
 {{< rich-box-start layoutClass="has-right rounded" >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ## Individual Contributors
 Celebrating the developers and contributors who help build QGIS through their code contributions and collaborative efforts.
 
@@ -65,15 +76,21 @@ Celebrating the developers and contributors who help build QGIS through their co
 </div>
 
 {{< rich-content-end >}}
+
 {{< rich-right-start >}}  
+
 {{< contribution-stats "individuals" "/community/contributors/individuals/" >}}
+
 {{< rich-right-end >}}
+
 {{< rich-box-end >}}
 
 
 
 {{< rich-box-start layoutClass="has-right rounded" >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ## Supporting Contributors
 Recognizing valuable contributions beyond code commits—community support, outreach, and behind-the-scenes efforts.
 
@@ -84,9 +101,13 @@ Recognizing valuable contributions beyond code commits—community support, outr
 </div>
 
 {{< rich-content-end >}}
+
 {{< rich-right-start >}}  
+
 {{< contribution-stats "supporting" "/community/contributors/supporting/" >}}
+
 {{< rich-right-end >}}
+
 {{< rich-box-end >}}
 
 

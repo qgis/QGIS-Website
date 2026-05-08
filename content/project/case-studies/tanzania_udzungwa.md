@@ -10,6 +10,7 @@ date: 2012-03-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Using QGIS for wildlife training in Tanzania

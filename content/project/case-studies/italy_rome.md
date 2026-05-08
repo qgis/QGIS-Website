@@ -10,6 +10,7 @@ date: 2015-03-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS geoprocessing model to simplify first level seismic microzonation analysis

@@ -10,6 +10,7 @@ date: 2022-12-31
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Ukrainian open initiative of creating tools for spatial planning in the QGIS environment

@@ -11,7 +11,9 @@ sidebar: true
 {{< content-start >}}
 
 {{< rich-box-start icon="🏆" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ## QGIS Contributors Who Received the Sol Katz Award
 
 The **Sol Katz Award for Geospatial Free and Open Source Software (GFOSS)** is awarded annually by [OSGeo](https://www.osgeo.org/) to individuals who have demonstrated leadership in the GFOSS community. Recipients of the award have contributed significantly through their activities to advance open source ideals in the geospatial realm.
@@ -28,6 +30,7 @@ QGIS has a strong history of contributions from individuals who have been recogn
 </div>
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 

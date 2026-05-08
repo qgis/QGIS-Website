@@ -5,12 +5,17 @@ draft: false
 HasBanner: false
 sidebar: true
 ---
+
 {{< content-start  >}}
 
 # Road Map
+
 {{< roadmap >}}
 
-{{< button class="is-primary1 is-rounded" link="https://qgis.org/schedule.ics" text="Subscribe to the roadmap iCalendar" >}} 
+{{< button
+class = "is-primary1 is-rounded"
+link = "https://qgis.org/schedule.ics"
+text = "Subscribe to the roadmap iCalendar" >}}
 
 
 Releases and development of QGIS follow a timebased schedule (roadmap).

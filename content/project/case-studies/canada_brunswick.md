@@ -10,6 +10,7 @@ date: 2013-01-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Creating the Fundy Footpath Trail Map with QGIS

@@ -10,6 +10,7 @@ date: 2015-01-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS for distance learning and teaching GIS at Universities

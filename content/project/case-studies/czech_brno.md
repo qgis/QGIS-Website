@@ -10,6 +10,7 @@ date: 2010-11-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS as major GIS software in the Laboratory on Experimental and Applied Geography

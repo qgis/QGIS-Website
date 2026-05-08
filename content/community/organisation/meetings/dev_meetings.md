@@ -11,10 +11,14 @@ sidebar: true
 # QGIS Developer Meetings
 
 {{< rich-box-start icon="💁" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Do you want to organize a new meeting?
 The organization of events happens on the [QGIS wiki](https://github.com/qgis/QGIS/wiki#qgis-hackfests).
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 

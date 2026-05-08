@@ -14,15 +14,21 @@ Reviewer: Tim Sutton
 
 
 {{< rich-box-start>}}
+
 {{< rich-content-start themeClass="coloring-6" >}}
+
 ## ✉️ Mailing Lists
 QGIS has various mailing lists for discussing QGIS related topics.
 
 If you are going to ask questions please read this: [How to ask a QGIS question?](faq/#how-to-ask-a-qgis-question).
 
-{{< button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="See Mailing lists" >}} 
+{{< button
+class = "is-primary1 is-rounded"
+link = "community/organisation/mailinglists"
+text = "See Mailing lists" >}}
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ## Before you start
@@ -91,9 +97,17 @@ If you believe you have found a security issue, such as vulnerabilities in QGIS 
 
 If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list or email address:
 
-{{< rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc"  layoutClass="half"listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+{{< rich-list
+listLink = "https://lists.osgeo.org/mailman/listinfo/qgis-psc"
+layoutClass = "half"
+listTitle = "QGIS PSC mailing list"
+listSubtitle = "https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 
-{{< rich-list listLink="mailto:psc@qgis.org"  layoutClass="half"listTitle="QGIS PSC email" listSubtitle="psc@qgis.org" >}}
+{{< rich-list
+listLink = "mailto:psc@qgis.org"
+layoutClass = "half"
+listTitle = "QGIS PSC email"
+listSubtitle = "psc@qgis.org" >}}
 
 You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
 

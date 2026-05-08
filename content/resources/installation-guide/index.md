@@ -104,19 +104,27 @@ Below you will find specific instructions per distribution. For most distro’s 
 ### Quickstart
 
 {{< rich-box-start icon="💁" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 In the section following this one, you will find ALL possible options to install different versions of QGIS in different versions of Debian/Ubuntu. If you have problems, verify whether your distribution is still supported as the repositories also contain older **unsupported** distributions with the last QGIS version that was supported. Be aware that those might have meanwhile ceased to work.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 Simply install the latest stable QGIS ({{< param "version" >}}.x {{< param "codename" >}}) in your Debian or Ubuntu without having to edit config files.
 
 {{< rich-box-start icon="🌀" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 Although you see ‘Debian’ in some places, this also works for ‘Ubuntu’, as one is actually a symlink to the other on our server.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 First install some tools you will need for these instructions:
@@ -144,14 +152,18 @@ Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 ```
 
 {{< rich-box-start icon="💬" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 `Suites` in above lines depends on your distribution. `lsb_release -cs` will show your distribution name.
 
 In some distributions (like Linux Mint), `. /etc/os-release; echo "$UBUNTU_CODENAME"` will show the correct distibution name.
 
 See [Available codenames](#available-codenames).
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 Save and close the file, then update your repository information:
@@ -165,11 +177,16 @@ To install QGIS, run:
   ```
   sudo apt install qgis qgis-plugin-grass
   ```
+
 {{< rich-box-start icon="✍️" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 Add `qgis-server` to the above line if you also want to install QGIS Server
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ### Repositories
@@ -183,7 +200,9 @@ Our main repository contains multiple lines of packages for several versions of 
 For Ubuntu we also used to have extra packages in a separate repository that are based on [ubuntugis](https://launchpad.net/~ubuntugis), which held more up-to-date versions of other GIS packages than Ubuntu itself for LTS versions. If you want those you also need to include ubuntugis-unstable ppa in your /etc/apt/sources.list.d/qgis.list file (see [ubuntugis documentation](https://trac.osgeo.org/ubuntugis/wiki/UbuntuGISRepository)).
 
 {{< rich-box-start icon="💁" layoutClass="tips" mode="html" >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 The release packages are only produced once, shortly after a new version has been released. As unstable, not yet released debian versions (testing) and ubuntugis-unstable can have library changes the packages might sooner or later be broken for these targets, when the development in debian, ubuntu or ubuntugis-unstable moves on and their packages used as dependencies in QGIS change. In that event you can either:
 
@@ -194,7 +213,9 @@ The release packages are only produced once, shortly after a new version has bee
 - switch to a nightly repository (available for the **two** release branches and master) whose packages are rebuild on regular basis and will also pickup the updated dependencies automatically or
     
 - build your own set of packages (see [build-debian-packages](https://github.com/qgis/QGIS/blob/master/INSTALL.md#310-building-debian-packages)).
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
     
 
@@ -318,23 +339,31 @@ apt install python3-qgis
 ```
 
 {{< rich-box-start icon="💁" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 Please remove all the QGIS and GRASS packages you may have installed from other repositories before doing the update.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ## Flatpak
 
 {{< rich-box-start icon="💡" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 Flatpak is a universal package format for all Linux distributions. Packages are isolated from the system, which can have security and stability benefits. For example, you can use the latest QGIS version on a stable distribution.
 
 Flatpaks are installed for all users by default, but can also be installed for a single user only with the `--user` argument.
 
 Only users with `sudo` permission can change systemwide Flatpak apps and repositories, but all users can update them. This can be useful on managed machines.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 There is a Flatpak for QGIS Stable and LTR available, maintained by the Flathub community.
@@ -395,10 +424,14 @@ flatpak install app/io.qt.qtwebkit.BaseApp/x86_64/VERSION
 ## Fedora
 
 {{< rich-box-start icon="🙋‍♂️" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 It’s not a common practice to install both client and server applications on the same machine.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 Get packages for Fedora variants using `dnf` by typing:
@@ -664,10 +697,14 @@ Spack related issues should be reported at: https://github.com/spack/spack/issue
 To install QGis on any Linux system, you can also use `distrobox` or `toolbx`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGIS.
 
 {{< rich-box-start icon="🙋‍♀️" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 OpenSUSE and uBlue's Fedora-based Systems preinstall `distrobox`, Fedora preinstalls `toolbx` on their "Atomic Desktops". `distrobox` allows easy graphical integration, for `toolbx` you need to add a desktop entry yourself. You can use all available system images with `distrobox` and `toolbx`, even though `distrobox` displays more available options.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 To setup a distrobox, here for example using OpenSUSE Tumbleweed:
@@ -739,11 +776,15 @@ sudo port upgrade outdated
 ```
 
 {{< rich-box-start icon="👩‍💻" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 
 Concurrent installation of Homebrew and MacPorts is not compatible and will almost certainly lead to conflicts. If you choose to install one of the package systems you need to uninstall the other.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ## Old releases
@@ -818,7 +859,9 @@ Experimental (GPU accelerated) multi-arch JupyterLab QGIS container images.
    [Mamba](https://github.com/mamba-org/mamba)
 
 {{< rich-box-start icon="🧑‍💻" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 
 The `linux/arm64/v8` JupyterLab QGIS container images are known to crash
@@ -826,7 +869,9 @@ randomly on Apple M series.
 
 GPU acceleration requires an NVIDIA GPU, the NVIDIA Linux driver and the NVIDIA
 Container Toolkit.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 For further information, see
@@ -887,14 +932,18 @@ docker run -it --rm \
 ```
 
 {{< rich-box-start icon="🐳" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 
 Container images on Quay are available for QGIS versions ≥ 3.40.4.
 
 For QGIS versions 3.28.4 to 3.40.3 use
 `glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]`.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 To run a GPU accelerated container with a specific QGIS version, command
@@ -908,24 +957,32 @@ docker run -it --rm \
 ```
 
 {{< rich-box-start icon="🔥" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 
 GPU accelerated container images on Quay are available for QGIS versions ≥ 3.40.4.
 
 For QGIS versions 3.34.0 to 3.40.3 use
 `glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]`.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 # QGIS Testing warning
 
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-6" >}}
+
 ##### Warning
 
 QGIS testing packages are provided for some platforms in addition to the QGIS stable version. QGIS testing contains unreleased software that is currently being worked on. They are only provided for testing purposes to early adopters to check if bugs have been resolved and that no new bugs have been introduced. Although we carefully try to avoid breakages, it may at any given time not work, or may do bad things to your data. Take care. You have been warned!
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 # Installing from Source

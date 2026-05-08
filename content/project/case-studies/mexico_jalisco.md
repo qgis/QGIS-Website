@@ -10,6 +10,7 @@ date: 2010-07-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Working with QGIS in a spatial data infrastructure of Jalisco in Mexico

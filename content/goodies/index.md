@@ -18,7 +18,9 @@ Buying QGIS apparel not only lets you show off the fact that you use QGIS, for e
 
 
 {{< columns-start >}}
+
 {{< column-start class="is-flex-direction-column is-one-third">}}
+
 ## Spreadshirt
 We co-operate with Spreadshirt. They produce locally and ship the products to all countries in the world.
 
@@ -27,35 +29,56 @@ We co-operate with Spreadshirt. They produce locally and ship the products to al
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
+
 {{< columns-start >}}
+
 {{< column-start>}}
+
 ![QGIS hoodie](img/hoodie.jpg)
+
 {{< column-end>}}
+
 {{< column-start>}}
+
 ![QGIS tshirt](img/qgis-heart-logo.jpg)
+
 {{< column-end>}}
+
 {{< columns-end >}}
 
 {{< columns-start >}}
+
 {{< column-start>}}
+
 ![QGIS mugs](img/qgis-q-logo.jpg)
+
 {{< column-end >}}
+
 {{< column-start>}}
+
 ![QGIS thermos](img/thermos.jpg)
+
 {{< column-end >}}
+
 {{< column-start>}}
+
 ![QGIS sign](img/qgis-q.jpg)
+
 {{< column-end>}}
+
 {{< columns-end >}}
 
 {{< column-end >}}
+
 {{< columns-end >}}
 
 
 
 
 {{< columns-start >}}
+
 {{< column-start class="is-flex-direction-column is-one-third">}}
+
 ## Redbubble
 Some more creative and funny (but unofficial) designs can be found in the Red Bubble store.
 
@@ -64,28 +87,47 @@ Some more creative and funny (but unofficial) designs can be found in the Red Bu
 {{< column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}}
+
 {{< columns-start >}}
+
 {{< column-start>}}
+
 ![QGIS hoodie](img/redbubble1.jpg)
+
 {{< column-end>}}
+
 {{< column-start>}}
+
 ![QGIS tshirt](img/redbubble2.jpg)
+
 {{< column-end>}}
+
 {{< columns-end >}}
 
 {{< columns-start >}}
+
 {{< column-start>}}
+
 ![QGIS mugs](img/redbubble3.jpg)
+
 {{< column-end >}}
+
 {{< column-start>}}
+
 ![QGIS thermos](img/redbubble4.jpg)
+
 {{< column-end >}}
+
 {{< column-start>}}
+
 ![QGIS sign](img/redbubble5.jpg)
+
 {{< column-end>}}
+
 {{< columns-end >}}
 
 {{< column-end >}}
+
 {{< columns-end >}}
 
 

@@ -10,6 +10,7 @@ date: 2010-06-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS —— an interesting instrument for forestry planning concepts at local and regional level

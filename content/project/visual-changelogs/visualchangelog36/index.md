@@ -7,6 +7,7 @@ releaseDate: "2019-02-22"
 section: "project"
 type: "visual-changelog"
 ---
+
 {{< content-start >}}
 
 # Changelog for QGIS 3.6 {#changelog36}

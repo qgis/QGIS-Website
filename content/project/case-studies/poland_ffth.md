@@ -10,6 +10,7 @@ date: 2016-10-30
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Using QGIS for FTTH/GPON network planning due to the implementation European Digital Agenda
