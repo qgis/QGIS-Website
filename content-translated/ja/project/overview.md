@@ -10,8 +10,8 @@ draft: false
 heroImage: img/project.jpg
 og_image: img/project.jpg
 sidebar: true
-subtitle: Giving the power of spatial visualization and decision making tools to everyone
-title: QGIS overview
+subtitle: 空間可視化と意思決定のツールの力を、すべての人の手に
+title: QGISの全体像
 type: page
 
 ---
@@ -26,7 +26,7 @@ type: page
 QGISの豊富なデザインオプションで、地図表現のアイデアを存分に発揮しましょう。
 ###### 本格的な地図制作
 使いやすいレイアウトデザインツールで、高品質な大判印刷用地図を作成できます。
-###### Powerful reporting tools
+###### 強力なレポーティングツール
 地図・メディア・表データを組み合わせたアトラスやレポートを作成しましょう。　{{< column-end >}}{{< columns-end >}}
 
 {{< columns-start id="content-tab-2" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Edit map](../img/edit.gif "Edit map") {{< column-end >}}
