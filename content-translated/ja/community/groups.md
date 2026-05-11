@@ -130,7 +130,7 @@ type: page
 ## 導入セット
 ### QGIS.org サブドメインホスティング
 公式のQGIS.orgブランドを使用し、ユーザーグループのウェブサイトをQGIS.orgのサブドメイン（例：[sweden.qgis.org](http://sweden.qgis.org)）上でホストしたい場合は、https://github.com/qgis/QGIS-User-Group-Websiteのテンプレートリポジトリをご活用ください。このオプションにより、メインのQGISウェブサイトとデザインの一貫性が保たれます。リポジトリに記載されたセットアップ手順をよくお読みの上、設定を行ってください。
-### QGIS News Feed submission access
+### QGISニュースフィードの投稿アクセス権
 地域のユーザーグループは、 [QGISニュースフィードシステム](https://feed.qgis.org) へのアクセスを申請できます。このシステムでは、イベント・クラウドファンディングキャンペーン・ミートアップ・お知らせなどのニュースを投稿でき、モデレーターの承認を経てQGISニュースセクションに掲載されます。グループの活動をグローバルなQGISコミュニティと共有する絶好の手段です。
 ### ローカルコミュニティのドメイン qgis.xx 用のテンプレート
 地域の国別ドメインをご利用の場合、ウェブサイトをゼロから構築・デザインしたくない場合は、　 [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) で提供されているテンプレートをご利用いただけます。

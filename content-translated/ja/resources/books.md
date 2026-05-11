@@ -15,7 +15,7 @@ type: page
 注意：書籍は新刊順に掲載されています。英語の書籍の後に、フランス語・ギリシャ語・ポーランド語・その他の言語の書籍が続きます。
 ## 英語
 ### Learn QGIS - Fifth Edition (Early Access)
-Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
+Learn QGIS (5th Edition)” は、学生や専門家を対象に、QGISとPythonを用いた現代的なGIS分析の実践的な入門書を提供します。地球観測、モバイルデータ収集、GISにおけるAIと機械学習の統合といった内容を網羅し、同時にデータのセキュリティや倫理的な側面についても触れています。
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
 - Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
 - Date: March 2026
