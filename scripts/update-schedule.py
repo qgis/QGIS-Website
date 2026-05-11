@@ -10,6 +10,7 @@ will update data/conf.json and content/schedule.ics
 '''
 
 from urllib.request import urlopen
+from urllib.error import URLError
 import csv
 import json
 import os
@@ -17,6 +18,35 @@ import re
 import codecs
 from datetime import datetime, timedelta, timezone
 from icalendar import Calendar, Event
+
+_DL_BASE = "https://download.qgis.org"
+_TORRENT_BASE = "https://dl1.qgis.org"
+
+
+def torrent_url(download_url):
+    """Return the .torrent URL for a given download URL."""
+    path = download_url.removeprefix(_DL_BASE)
+    return f"{_TORRENT_BASE}{path}.torrent"
+
+
+def meta4_url(download_url):
+    """Return the .meta4 (Metalink 4) URL for a given download URL."""
+    path = download_url.removeprefix(_DL_BASE)
+    return f"{_TORRENT_BASE}{path}.meta4"
+
+
+def fetch_magnet(download_url):
+    """Fetch the magnet URI from the server-generated .magnet sidecar file.
+
+    Returns the magnet URI string, or None if the file does not exist yet.
+    """
+    path = download_url.removeprefix(_DL_BASE)
+    magnet_url = f"{_TORRENT_BASE}{path}.magnet"
+    try:
+        with urlopen(magnet_url, timeout=10) as resp:
+            return resp.read().decode("utf-8").strip()
+    except (URLError, Exception):
+        return None
 
 url = "https://docs.google.com/spreadsheets/u/1/d/1MOIjwon5eDI04DG6rX_HwucZkW1fxFJ0b_yB0xYETOE/export?format=csv&id=1MOIjwon5eDI04DG6rX_HwucZkW1fxFJ0b_yB0xYETOE&gid=1982100417#"
 
@@ -273,6 +303,26 @@ with open("data/conf.json", "w") as f:
         "lr_dmg": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{ "_".join(lr_version.split(".")) }.dmg",
         "lr_dmg_sha": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{ "_".join(lr_version.split(".")) }.sha256sum",
         "weekly_msi": "/downloads/windows/weekly/",
+
+        # torrent / magnet links (torrent hosted on dl1.qgis.org, magnet from server-generated sidecar)
+        "lr_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "ltr_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "lr_grids_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_grids_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_grids_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "ltr_grids_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_grids_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_grids_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "lr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{ '_'.join(lr_version.split('.')) }.dmg"),
+        "lr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{ '_'.join(lr_version.split('.')) }.dmg"),
+        "lr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{ '_'.join(lr_version.split('.')) }.dmg"),
+        "ltr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{ '_'.join(ltr_version.split('.')) }.dmg"),
+        "ltr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{ '_'.join(ltr_version.split('.')) }.dmg"),
+        "ltr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{ '_'.join(ltr_version.split('.')) }.dmg"),
     }, f, indent=4)
 
 o = open("content/schedule.ics", "wb")

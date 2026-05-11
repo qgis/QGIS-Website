@@ -32,11 +32,11 @@ There are two options for installing on Windows:
 
 Standalone installers include everything QGIS needs in a single download. Once you have the installer, no internet is required to complete the installation. When a new release is available, you need to download the complete installer again in order to upgrade. For beginners, the standalone installer is probably the easiest way to install QGIS:
 
-|Release|Version|Package|
-|---|---|---|
-|Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|[Installer]({{< param "lr_msi" >}}) [Checksum]({{< param "lr_sha" >}})|
-|Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|
-|Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|
+|Release|Version|Package|Alternative|
+|---|---|---|---|
+|Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|[Installer]({{< param "lr_msi" >}}) [Checksum]({{< param "lr_sha" >}})|[Torrent]({{< param "lr_msi_torrent" >}}) [Magnet]({{< param "lr_msi_magnet" >}}) [Metalink]({{< param "lr_msi_meta4" >}})|
+|Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}})|[Torrent]({{< param "ltr_msi_torrent" >}}) [Magnet]({{< param "ltr_msi_magnet" >}}) [Metalink]({{< param "ltr_msi_meta4" >}})|
+|Development|{{< param "devversion" >}} master|[Weekly snapshots]({{< param "weekly_msi">}})|–|
 
 Due to their extensive size the optional projection grids were excluded from
 the default installer.  QGIS will identify at runtime when grids are required
@@ -46,10 +46,10 @@ For environments where that isn't possible or inconvienient there are still
 standalone installers that include the grids.  As of 4.0.1 the regular
 installer is 0.5 GiB, while the installer including all the grids is 1.2 GiB.
 
-|Release|Version|Package|
-|---|---|---|
-|Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|[Installer]({{< param "lr_grids_msi" >}}) [Checksum]({{< param "lr_grids_sha" >}})|
-|Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_grids_msi">}}) [Checksum]({{< param "ltr_grids_sha">}})|
+|Release|Version|Package|Alternative|
+|---|---|---|---|
+|Latest Release|{{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}}|[Installer]({{< param "lr_grids_msi" >}}) [Checksum]({{< param "lr_grids_sha" >}})|[Torrent]({{< param "lr_grids_msi_torrent" >}}) [Magnet]({{< param "lr_grids_msi_magnet" >}}) [Metalink]({{< param "lr_grids_msi_meta4" >}})|
+|Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_grids_msi">}}) [Checksum]({{< param "ltr_grids_sha">}})|[Torrent]({{< param "ltr_grids_msi_torrent" >}}) [Magnet]({{< param "ltr_grids_msi_magnet" >}}) [Metalink]({{< param "ltr_grids_msi_meta4" >}})|
 
 It's also possible to add the grids later by using the included "OSGeo4W Setup" to
 install the `proj-data` package.  Or to use the also included command line tool
@@ -711,6 +711,11 @@ toolbx run -c box sudo dnf update
 Official All-in-one, signed and notarized installers for macOS can be downloaded from the [QGIS download page]({{< ref "download" >}}). They are compatible with High Sierra (10.14) and newer for Intel x64 and Apple silicon (ARM) devices.
 
 After downloading QGIS, open the DMG file. Drag and drop the QGIS application into the Applications folder.
+
+|Release|Version|Package|Alternative|
+|---|---|---|---|
+|Latest Release|{{< param "release" >}} {{< param "codename" >}}|[Installer]({{< param "lr_dmg" >}}) [Checksum]({{< param "lr_dmg_sha" >}})|[Torrent]({{< param "lr_dmg_torrent" >}}) [Magnet]({{< param "lr_dmg_magnet" >}}) [Metalink]({{< param "lr_dmg_meta4" >}})|
+|Long Term Release|{{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}}|[Installer]({{< param "ltr_dmg" >}}) [Checksum]({{< param "ltr_dmg_sha" >}})|[Torrent]({{< param "ltr_dmg_torrent" >}}) [Magnet]({{< param "ltr_dmg_magnet" >}}) [Metalink]({{< param "ltr_dmg_meta4" >}})|
 
 
 ## MacPorts
