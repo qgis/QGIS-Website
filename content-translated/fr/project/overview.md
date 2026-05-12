@@ -66,14 +66,14 @@ Renforcez votre impact en explorant, en exploitant et en créant des services we
 {{< column-end >}} {{< columns-end >}}
 ## Level up with community resources
 {{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![Create map](../img/plugs.jpg "Create map") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
-### 2000+ plugins developed by community
-Enhance the functionality of QGIS application with thousands of free additional features.
+### Plus de 2 000 extensions développées par la communauté
+Améliorez les fonctionnalités de l'application QGIS grâce à des milliers d'extensions gratuites.
 
-[Go to plugins](https://plugins.qgis.org/) {{< column-end >}} {{< columns-end >}}
+[Accéder aux extensions](https://plugins.qgis.org/) {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![International conference](../img/meetings.jpg "International conference") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
-### Annual international conference
-Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing at our annual international user conference.
+### Conférence internationale annuelle
+Venez rencontrer des professionnels, des passionnés et des utilisateurs de QGIS pour nouer des contacts et échanger vos connaissances lors de notre conférence internationale annuelle des utilisateurs.
 
 [Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}}) {{< column-end >}} {{< columns-end >}}
 

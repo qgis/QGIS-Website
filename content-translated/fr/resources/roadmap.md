@@ -60,7 +60,7 @@ Ce calendrier est également disponible au format [“iCalendar”](https://qgis
 | PR | Version ponctuelle de la dernière version et de la branche LTR |
 | EPR | Version ponctuelle supplémentaire |
 | <span class="rm-current"> current </span> | <span class="rm-current"> currently supported releases: {{< param "ltrrelease" >}} and {{< param "release" >}} </span> |
-| <span class="rm-next"> next </span> | <span class="rm-next"> next releases </span> |
+| <span class="rm-next"> suivant </span> | <span class="rm-next"> prochaines releases </span> |
 
 ## Localisation des pré-versions / nightly builds{#qgis-prereleases }
 | Plateforme | Emplacement |

@@ -5,23 +5,23 @@ draft: false
 selected_language: en
 sidebar: true
 subtitle: ''
-title: QGIS resources
+title: Ressources QGIS
 type: page
 
 ---
 {{<content-start >}}
 # Resources
 {{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Installation troubles?
-If you are looking for information on installing QGIS on all available platforms, we have prepared a comprehensive guide for you:
+#### Des problèmes d'installation ?
+Si vous cherchez des informations sur l'installation de QGIS sur toutes les plateformes disponibles, nous avons préparé un guide complet à votre intention :
 
-[Installation guide]({{< ref "/resources/installation-guide/index.md" >}})
+[Guide d'installation]({{< ref "/resources/installation-guide/index.md" >}})
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 ## Documentation
-QGIS has a lot of documentation. All of the core documentation (user manual, developer handbooks etc.) is available in English. Some documents such as the user guide are also available in other languages.
+QGIS dispose d'une documentation très complète. L'ensemble de la documentation de base (manuel d'utilisation, guides du développeur, etc.) est disponible en anglais. Certains documents, comme le guide de l'utilisateur, sont également disponibles dans d'autres langues.
 
-You will find documentation for every QGIS Long Term Release (LTR) on the respective documentation website.
+Vous trouverez la documentation relative à chaque version à support à long terme (LTR) de QGIS sur le site web dédié à la documentation.
 
 [Get involved]({{< ref "/community/involve" >}}) and help us write a better documentation.
 
@@ -29,7 +29,7 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 <!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
 
-{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases" tab4="Protection des données" >}}
+{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Versions archivés" tab4="Protection des données" >}}
 
 {{< tab-content-start tab="1" >}} **For users (QGIS {{< param "ltrversion" >}}):**
 
@@ -137,21 +137,21 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<tab-content-start tab="3" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.40 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 3.40 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 3.34 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.28/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.28 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.28/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 3.28 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.22/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.22/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 3.22 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.16/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.16 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.16/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 3.16 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.10/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.10 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.10/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 3.10 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.4/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.4 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.4/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 3.4  — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/2.18/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 2.18 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/2.18/<lang>" layoutClass="inline-block link-with-language" listTitle="Documentation QGIS 2.18 — <lang>" >}}
 
 {{<tab-content-end >}}
 
