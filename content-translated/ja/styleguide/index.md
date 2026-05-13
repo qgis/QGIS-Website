@@ -10,9 +10,9 @@ type: page
 ## バージョン1.0
 これが私たちのQGISビジュアルスタイルガイドです。この文書は、当社のビジュアルアイデンティティの使用のための標準を定義します。それはより強く、より多くの目に見えるとユースケースの幅広い範囲より適応させるためにQGISブランドの近代化を提案しています。
 
-The Visual Style Guide is a living document, initiated with the goal of developing a consistent message and image for QGIS. It is a "living" document because we expect it to expand as we cover more use cases where visual consistency is important and can be described using simpler rules. The standards and simple policies described here are designed to maintain the uniformity of presentation necessary for successful promotion and marketing efforts for the QGIS project.
+このビジュアルスタイルガイドは、QGISの一貫したメッセージとイメージを構築することを目的として作成された「生きた文書（常に更新される文書）」です。視覚的な一貫性が重要となるユースケースが増え、より簡潔なルールで記述できるようになるにつれて、このガイドも拡張されていくことを想定しているため、あえて「生きた」文書と呼んでいます。ここに記載されている標準規格やシンプルな方針は、QGISプロジェクトのプロモーションやマーケティング活動を成功させるために不可欠な、プレゼンテーションの統一性を維持するために設計されています。
 
-Our visual identity symbolizes QGIS's strength, promise of quality and competence. Proper treatment of logo, fonts and color ensures that QGIS will be recognized and stand out amid communications clutter. Graphic standards are a visual expression of QGIS and should serve as the base for our overall communications strategy.
+私たちのビジュアルアイデンティティは、QGISの強さ、品質への約束、そして専門能力を象徴しています。ロゴ、フォント、配色を適切に扱うことで、情報が溢れる中でもQGISが正しく認識され、際立つ存在となります。グラフィック基準はQGISを視覚的に表現したものであり、私たちのコミュニケーション戦略全体の基盤となるものです。
 
 グラフィックスタイルガイドのこの最初のバージョンでは、新たなQGISのロゴのコア要素の概要を説明します。将来のバージョンでは、資産をブランディングし、どのようにウェブ、モバイルデバイスや印刷物を越えQGISのブランドを広めるために焦点を当てます。
 ## ロゴタイプ

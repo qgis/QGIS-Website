@@ -12,7 +12,7 @@ type: page
 {{<content-start >}}
 # 認定プログラム
 ## QGIS認定資格
-公式QGIS認定証が取得できるコースをお探しですか？[QGIS認定プログラムのウェブサイト](https://certification.qgis.org/)では、インタラクティブな地図から各国の認定QGISトレーニング提供機関を検索したり、公式QGIS認定証が取得できるコースを確認を行えます。
+公式QGIS認定証が取得できるコースをお探しですか？ [QGIS認定プログラムのウェブサイト](https://certification.qgis.org/) では、インタラクティブな地図から各国の認定QGISトレーニング提供機関を検索したり、公式QGIS認定証が取得できるコースを確認を行えます。
 
 ![Students with certificate](../students_with_certificate.webp "Students with certificate")
 ## QGIS認定トレーニング機関になる
@@ -40,6 +40,6 @@ QGIS認定プログラムは、QGISプロジェクトへのコミュニティ参
 
 承認された場合、発行する認定証1枚につき **€20の認定費用** をQGISプロジェクトにお支払いいただく必要があります。この仕組みにより、プロジェクトへの継続的な財政支援が実現されます。お支払いはオンラインクレジットカード決済、またはご要望に応じて請求書によるSEPA銀行振込でも対応しております。複数の認定証をまとめて一括でお支払いいただくことも可能です。
 
-申請は [QGIS認定プログラムのウェブサイト] (https://certification.qgis.org/) から行えます。
+申請は  [QGIS認定プログラムのウェブサイト] (https://certification.qgis.org/)  から行えます。
 
 {{<content-end >}}

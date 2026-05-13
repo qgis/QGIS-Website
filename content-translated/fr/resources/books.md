@@ -8,14 +8,14 @@ type: page
 ---
 {{<content-start >}}
 # Livres
-This page lists books available from other publishers. QGIS does not manage any of them, and they are listed here only for your convenience.
+Cette page répertorie les ouvrages publiés par d'autres éditeurs. QGIS n'en gère aucun, et ils sont mentionnés ici uniquement à titre indicatif.
 
-Please write to [psc@qgis.org](mailto:psc%40qgis.org) if you want to have your book added here. Alternatively, you can edit this page on GitHub and submit a pull request.
+Si vous souhaitez que votre livre soit ajouté ici, veuillez écrire à [psc@qgis.org](mailto:psc%40qgis.org). Vous pouvez également modifier cette page sur GitHub et envoyer une pull request.
 
-Note: The books are listed in order of newest first. After the English books, there are items in French, Greek, Polish and other languages.
+Remarque : les ouvrages sont classés par ordre chronologique, les plus récents apparaissant en premier. Après les ouvrages en anglais, on trouve des ouvrages en français, en grec, en polonais et dans d'autres langues.
 ## En anglais
-### Learn QGIS - Fifth Edition (Early Access)
-Learn QGIS (5th Edition)” offers a hands-on introduction to modern GIS analysis with QGIS and Python for students and professionals alike, covering Earth observation, mobile data collection, and the integration of AI and machine learning in GIS, while addressing data security and ethical aspects.
+### Apprendre QGIS - Cinquième édition (accès anticipé)
+"Apprendre QGIS (5e édition)" propose une initiation pratique à l'analyse SIG moderne avec QGIS et Python, destinée aussi bien aux étudiants qu'aux professionnels. L'ouvrage aborde l'observation de la Terre, la collecte de données mobiles et l'intégration de l'IA et de l'apprentissage automatique dans les SIG, tout en traitant des questions de sécurité des données et des aspects éthiques.
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
 - Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
 - Date: March 2026
@@ -50,8 +50,8 @@ Recettes pour l'hydrologie des bassins versants et la gestion de l'eau. Mise à 
 - Auteurs : Hans van der Kwast, Kurt Menke
 - Date : Mai 2022
 
-### Land Use Cover Datasets and Validation Tools. Validation Practices with QGIS
-Introduction to Land Use Cover mapping, Land Use Cover Change Modelling and the validation of Land Use Cover datasets. The book includes practical exercises on the validation of Land Use Cover datasets with QGIS, as well as a comprehensive review of the Land Use Cover datasets currently available at global and continental scales.
+### Ensembles de données sur l'occupation du sol et outils de validation. Pratiques de validation avec QGIS
+Introduction à la cartographie de l'occupation du sol, à la modélisation de son évolution et à la validation des ensembles de données sur l'occupation du sol. L'ouvrage propose des exercices pratiques sur la validation de ces ensembles de données à l'aide de QGIS, ainsi qu'un tour d'horizon complet des ensembles de données sur l'occupation du sol actuellement disponibles à l'échelle mondiale et continentale.
 - [https://link.springer.com/book/10.1007/978-3-030-90998-7](https://link.springer.com/book/10.1007/978-3-030-90998-7)
 - Auteurs : David García-Álvarez, María Teresa Camacho Olmedo, Martin Paegelow, Jean François Mas
 - Date : Juin 2022
@@ -237,21 +237,21 @@ Applications cartographiques, débuter avec Python (disponible en pdf et version
 
 ## En polonais
 ### Apprendre sur les SIG et QGIS en polonais.
-The book is prepared like the series “for Dummies”.
+Ce livre est conçu sur le modèle de la série "Pour les nuls".
 - [http://helion.pl/ksiazki/qgis-tworzenie-i-analiza-map-bartlomiej-iwanczak,qgista.htm](http://helion.pl/ksiazki/qgis-tworzenie-i-analiza-map-bartlomiej-iwanczak,qgista.htm)
 - Auteur : Bartłomiej Iwańczak
 - Date : Octobre 2016
 
 ## Espagnol
-### Descubriendo QGIS 3.x
-Esta segunda edición es una actualización importante del título original Discover QGIS 3.x (English). Todos los ejercicios han sido actualizados para ser compatibles con QGIS 3.26. Los temas abarcan la interfaz de QGIS, conceptos básicos de SIG, análisis espacial, modelado, creación y edición de datos, diseño cartográfico y visualización de datos.Con mejoras en el procesamiento, flujos de trabajo más eficientes, compatibilidad con datos de nubes de puntos, desarrollo del Controlador Temporal y opciones de simbología mejoradas, ¡es un momento emocionante para aprender QGIS!
+### À la découverte de QGIS 3.x
+Cette deuxième édition constitue une mise à jour majeure de l'ouvrage original Discover QGIS 3.x (en anglais). Tous les exercices ont été mis à jour pour être compatibles avec QGIS 3.26. Les thèmes abordés couvrent l'interface de QGIS, les concepts de base des SIG, l'analyse spatiale, la modélisation, la création et l'édition de données, la conception cartographique et la visualisation des données. Avec des améliorations au niveau du traitement, des flux de travail plus efficaces, la prise en charge des données de nuages de points, le développement du Contrôleur temporel et des options de symbologie améliorées, c'est le moment idéal pour apprendre QGIS !
 - [https://locatepress.com/book/dq32-es](https://locatepress.com/book/dq32-es)
 - Author(s): Kurt Menke, Carlos Lopez, Sofia Logan
 - Organization: Locate Press
 - Date: June 2025
 
-### QGIS Exercise Guide: beginner, intermediate, and advanced Levels
-Three practical exercise guides in QGIS (beginner, intermediate, and advanced) designed for the management and analysis of geospatial data from the Servicio Geológico Colombiano using free and open-source software solutions.
+### Guide d'exercices QGIS : niveaux débutant, intermédiaire et avancé
+Trois guides d'exercices pratiques sous QGIS (niveau débutant, intermédiaire et avancé) conçus pour la gestion et l'analyse des données géospatiales du Service Géologique Colombien à l'aide de solutions logicielles libres et open source.
 - [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)
 - Author(s): Samuel Mesa, Jaime Garzón, Luis Salas
 - Organization: Servicio Geológico Colombiano

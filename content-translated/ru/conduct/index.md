@@ -1,12 +1,12 @@
 ---
 draft: false
 subtitle: ''
-title: Правила сообщества
+title: Правила
 type: page
 
 ---
 {{<content-start classes="content narrow" >}}
-# Правила сообщества
+# Правила
 Как и техническое сообщество в целом, команда и сообщество QGIS состоят из профессионалов и добровольцев со всего мира, которые работают над каждым аспектом задачи, включая наставничество, обучение, и связи между людьми.
 
 Diversity is one of our huge strengths, but it can also lead to communication issues and unhappiness. To that end, we have a few ground rules that we ask people to adhere to when they're participating within this community and project. These rules apply equally to founders, mentors and those seeking help and guidance.
