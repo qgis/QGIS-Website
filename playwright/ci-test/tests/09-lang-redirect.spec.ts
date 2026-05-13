@@ -1,48 +1,45 @@
 import { test, expect } from "@playwright/test";
 
-async function mockLocale(page, codes: string[]) {
-    // Ensure our navigator locale overrides are present before any site scripts run
-    await page.addInitScript((langs) => {
-        try {
-            Object.defineProperty(navigator, "languages", {
-                get: () => langs,
-                configurable: true,
-            });
-            Object.defineProperty(navigator, "language", {
-                get: () => langs[0] || "en-US",
-                configurable: true,
-            });
-        } catch (e) {
-            // ignore
-        }
-    }, codes);
-}
+// NOTE: We use test.use({ locale }) rather than Object.defineProperty(navigator, 'languages')
+// because Playwright's Chromium does not reliably allow overriding navigator.languages via
+// Object.defineProperty — failures are swallowed by try/catch, leaving the headless browser's
+// default "en-US" locale in place and preventing any redirect from firing.
 
 test.describe("Language redirect & threshold", () => {
-    test("redirects to /nl/ for nl locale when coverage >= threshold", async ({ page }) => {
-        await mockLocale(page, ["nl-NL", "nl"]);
-        await page.goto("/?langredirdebug=1");
-        // Should redirect to NL (coverage 100% in data/tx_coverage.json)
-        await expect.poll(() => page.url(), { timeout: 3000 }).toContain("/nl/");
+
+    test.describe("redirects to /nl/ for nl locale when coverage >= threshold", () => {
+        test.use({ locale: "nl-NL" });
+
+        test("redirects to /nl/ for nl locale when coverage >= threshold", async ({ page }) => {
+            await page.goto("/?langredirdebug=1");
+            // NL coverage is 100% which is >= 35% threshold
+            await expect.poll(() => page.url(), { timeout: 3000 }).toContain("/nl/");
+        });
     });
 
-    test("does not redirect for ro locale when coverage < threshold", async ({ page, baseURL }) => {
-        await mockLocale(page, ["ro-RO", "ro"]);
-        await page.goto("/?langredirdebug=1");
-        // Should remain at root because RO coverage ~57% < default threshold 80
-        await expect.poll(() => page.url(), { timeout: 1000 }).toBe(`${baseURL}/?langredirdebug=1`);
+    test.describe("does not redirect for de locale when coverage < threshold", () => {
+        test.use({ locale: "de-DE" });
+
+        test("does not redirect for de locale when coverage < threshold", async ({ page, baseURL }) => {
+            await page.goto("/?langredirdebug=1");
+            // DE coverage is ~23% which is below the 35% threshold
+            await expect.poll(() => page.url(), { timeout: 1000 }).toBe(`${baseURL}/?langredirdebug=1`);
+        });
     });
 });
 
 test.describe("Debug logging flag", () => {
+    // Use a locale below the threshold (DE ~23%) so no redirect occurs and the
+    // test stays on the navigated URL. RO was used previously but its coverage
+    // (~57%) is now above the 35% threshold, which would trigger a redirect.
+    test.use({ locale: "de-DE" });
+
     test("no debug logs without query param", async ({ page, baseURL }) => {
         const logs: string[] = [];
         page.on("console", (msg) => {
             const t = msg.text();
             if (t.includes("[lang-redirect]")) logs.push(t);
         });
-        // Use ro to avoid redirect and keep single page
-        await mockLocale(page, ["ro-RO", "ro"]);
         await page.goto("/");
         await page.waitForTimeout(500);
         expect(logs.length).toBe(0);
@@ -56,11 +53,8 @@ test.describe("Debug logging flag", () => {
             const t = msg.text();
             if (t.includes("[lang-redirect]")) logs.push(t);
         });
-        await mockLocale(page, ["ro-RO", "ro"]);
         await page.goto("/?langredirdebug=1");
         await page.waitForTimeout(500);
         expect(logs.length).toBeGreaterThan(0);
     });
 });
-
-
