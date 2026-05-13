@@ -29,4 +29,6 @@ jobs:
         # Use public cache for reading, no auth token needed
 
     - name: Run flake checks
-      run: nix flake check --show-trace --accept-flake-config
+      run: |
+        git submodule update --init --recursive
+        nix flake check --show-trace --accept-flake-config
