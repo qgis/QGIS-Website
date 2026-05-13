@@ -10,6 +10,7 @@ date: 2015-04-01
 featured: false
 archived: false
 ---
+
 {{< content-start >}}
 
 # Danish Demining Group using QGIS in Afghanistan

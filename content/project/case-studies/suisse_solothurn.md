@@ -10,6 +10,7 @@ date: 2009-05-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS in the governmental FOSSGIS stack of the Canton of Solothurn in Switzerland

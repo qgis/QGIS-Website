@@ -13,10 +13,14 @@ This page should show you all the infrastructure and services that QGIS uses, an
 <!--
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### I think 
 It is not wise to put accountnames here, but let me know if that is better. We can also use nicks.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 Please add (yourself) and or change
@@ -33,7 +37,11 @@ Some sources: [http://app.wisemapping.com/c/maps/81444/edit](http://app.wisemapp
 
 ## Main server
 
-{{< rich-list listLink="http://documentation.qgis.org"  layoutClass="half" listTitle="Main server" listSubtitle="http://documentation.qgis.org" >}}
+{{< rich-list
+listLink = "http://documentation.qgis.org"
+layoutClass = "half"
+listTitle = "Main server"
+listSubtitle = "http://documentation.qgis.org" >}}
 
 **Access:** Alessandro P, Werner M, Richard D, Frank W, Martin, Otto D, Gary S, Jurgen F, Tim S, Pirmin K
 
@@ -45,9 +53,17 @@ Some sources: [http://app.wisemapping.com/c/maps/81444/edit](http://app.wisemapp
 Documentation and website
 -------------------------------------------------------------------------------
 
-{{< rich-list listLink="http://docs.qgis.org"  layoutClass="half" listTitle="Documentation" listSubtitle="http://docs.qgis.org" >}}
+{{< rich-list
+listLink = "http://docs.qgis.org"
+layoutClass = "half"
+listTitle = "Documentation"
+listSubtitle = "http://docs.qgis.org" >}}
 
-{{< rich-list listLink="http://new.qgis.org"  layoutClass="half" listTitle="Website" listSubtitle="http://new.qgis.org" >}}
+{{< rich-list
+listLink = "http://new.qgis.org"
+layoutClass = "half"
+listTitle = "Website"
+listSubtitle = "http://new.qgis.org" >}}
 
 **Responsible:** Harrissou S, Richard D, Matteo G …
     
@@ -56,7 +72,11 @@ Github management
 ---------------------------------------------------------------
 
 
-{{< rich-list listLink="https://github.com/qgis"  layoutClass="half" listTitle="GitHub repository" listSubtitle="https://github.com/qgis" >}}
+{{< rich-list
+listLink = "https://github.com/qgis"
+layoutClass = "half"
+listTitle = "GitHub repository"
+listSubtitle = "https://github.com/qgis" >}}
     
 **Rights depending on sub project plz contact** Marco B, Alessandro P, Tim S, Richard D
     
@@ -64,9 +84,17 @@ Github management
 Flickr Groups
 -------------------------------------------------------
 
-{{< rich-list listLink="http://www.flickr.com/groups/qgis/pool/"  layoutClass="half" listTitle="Screenshots" listSubtitle="http://www.flickr.com/groups/qgis/pool/" >}}
+{{< rich-list
+listLink = "http://www.flickr.com/groups/qgis/pool/"
+layoutClass = "half"
+listTitle = "Screenshots"
+listSubtitle = "http://www.flickr.com/groups/qgis/pool/" >}}
 
-{{< rich-list listLink="http://www.flickr.com/groups/qgis-screenshots/"  layoutClass="half" listTitle="Maps" listSubtitle="http://www.flickr.com/groups/qgis-screenshots/" >}}
+{{< rich-list
+listLink = "http://www.flickr.com/groups/qgis-screenshots/"
+layoutClass = "half"
+listTitle = "Maps"
+listSubtitle = "http://www.flickr.com/groups/qgis-screenshots/" >}}
 
 **Groupstarters:** Nathan W, Anita G, Matieu
 
@@ -74,14 +102,23 @@ Flickr Groups
 Mastodon
 -------------------------------------------
 
-{{< rich-list listLink="https://fosstodon.org/@qgis"  layoutClass="half" listTitle="Mastodon" listSubtitle="https://fosstodon.org/@qgis" >}}
+{{< rich-list
+listLink = "https://fosstodon.org/@qgis"
+layoutClass = "half"
+listTitle = "Mastodon"
+listSubtitle = "https://fosstodon.org/@qgis" >}}
 
 **Responsible:** Nathan W, Anita G
     
 
 Facebook
 ---------------------------------------------
-{{< rich-list listLink="https://www.facebook.com/pages/QGIS-Quantum-GIS-/298112000235096"  layoutClass="half" listTitle="Facebook" listSubtitle="https://www.facebook.com/pages/QGIS-Quantum-GIS-/298112000235096" >}}
+
+{{< rich-list
+listLink = "https://www.facebook.com/pages/QGIS-Quantum-GIS-/298112000235096"
+layoutClass = "half"
+listTitle = "Facebook"
+listSubtitle = "https://www.facebook.com/pages/QGIS-Quantum-GIS-/298112000235096" >}}
 
 **Responsible:** Nathan W
     
@@ -107,7 +144,11 @@ Planet feeds
 OLD Wiki and Redmine
 ---------------------------------------------------------------------
 
-{{< rich-list listLink="https://issues.qgis.org/projects/qgis/issues"  layoutClass="half" listTitle="Redmine" listSubtitle="https://issues.qgis.org/projects/qgis/issues" >}}
+{{< rich-list
+listLink = "https://issues.qgis.org/projects/qgis/issues"
+layoutClass = "half"
+listTitle = "Redmine"
+listSubtitle = "https://issues.qgis.org/projects/qgis/issues" >}}
 
 **Responsible:** Pirmin K, Duivenvoorde R
 

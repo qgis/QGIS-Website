@@ -14,6 +14,17 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 
 ![Hugo Logo](./img/hugo-logo.png) and using the [hugo bulma blocks theme](https://github.com/qgis/QGIS-Hugo-Website-Theme).
 
+## 🌐 i18n Shortcode and Markdown Rules (Read Before Editing Content)
+
+When editing files in `content/`, please follow these formatting standards to keep translation extraction stable:
+
+- Use shortcode params with spaces around `=` (for example: `title = "..."`, not `title="..."`).
+- Keep shortcode closing `>}}` on the same line as the last shortcode argument.
+- Keep shortcode lines isolated in markdown (avoid combining multiple shortcodes in one paragraph).
+- Do not use inline HTML in markdown content files. Avoid tags like `<span>`, `<br/>`, `<div>`, etc.
+
+See [I18N.md](./I18N.md) for the full i18n syntax and translation workflow.
+
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 

@@ -8,6 +8,7 @@ description: QGIS.ORG is the worldwide association of QGIS users and developers.
 ---
 
 {{< content-start >}}
+
 # Charter of the QGIS.ORG Association
 
 ## 1 Legal status of QGIS.ORG

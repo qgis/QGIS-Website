@@ -10,6 +10,7 @@ date: 2016-04-01
 featured: true
 archived: false
 ---
+
 {{< content-start >}}
 
 # Use of QGIS at the Financial Times Graphics Team

@@ -10,6 +10,7 @@ date: 2016-03-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Use of QGIS at the Ministry of Social Development of Uruguay (MIDES)

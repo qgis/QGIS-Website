@@ -19,6 +19,7 @@ thumbnail: "/img/map2.png"
 ------
 
 {{< rich-box-start icon="🙋" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
 
 ## Submit Your Case Study
@@ -41,6 +42,7 @@ Your case study demonstrates QGIS capabilities and helps grow our community know
 
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 

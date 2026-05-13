@@ -10,6 +10,7 @@ date: 2013-03-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS for monitoring tigers (using camera traps in Nameri Tiger Reserve, Assam, India Sonitpur District)

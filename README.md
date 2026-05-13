@@ -60,6 +60,7 @@
 
 - Internationalization and translation workflow: see [I18N.md](./I18N.md)
 - Development and production build guide (including incremental per-language builds and media dedup): see [DEVELOPMENT.md](./DEVELOPMENT.md)
+- Content authoring standards for i18n: use shortcode params with spaces around `=`, keep shortcode closing `>}}` on the same line, and do not use inline HTML in markdown files. See [I18N.md](./I18N.md) and [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 

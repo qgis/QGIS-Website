@@ -10,6 +10,7 @@ date: 2014-07-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Trainings & Research activities using QGIS at NIRD&PR-NERC, Guwahati, India

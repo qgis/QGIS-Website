@@ -10,6 +10,7 @@ date: 2012-01-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Using QGIS to Map Hotspot Areas for Biodiversity and Ecosystem Services (HABEaS)

@@ -7,6 +7,7 @@ releaseDate: "2020-02-21"
 section: "project"
 type: "visual-changelog"
 ---
+
 {{< content-start >}}
 
 # Changelog for QGIS 3.12 {#changelog312}

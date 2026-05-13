@@ -10,6 +10,7 @@ date: 2014-08-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Using the processing toolbox to automate snow classification

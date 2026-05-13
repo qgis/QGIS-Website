@@ -7,6 +7,7 @@ releaseDate: "2022-02-18"
 section: "project"
 type: "visual-changelog"
 ---
+
 {{< content-start >}}
 
 # Changelog for QGIS 3.24 {#changelog324}
@@ -889,11 +890,15 @@ So e.g. now in expressions if you have secondary geometry column you can do:
 and it will work.
 
 {{< rich-box-start icon="⚠️" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-6" >}}
+
 ##### Warning
 
 This changes the behavior of existing projects.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ![image58](images/entries/2f2169f6a9927916d3841b63333982a5417a3a0c.webp)

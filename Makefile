@@ -112,6 +112,7 @@ sanitize-shortcodes: ## Restore corrupted Hugo shortcode names in translated .po
 
 messages-extract:
 	hugo-gettext extract translations/en/
+	python3 scripts/i18n/annotate_po.py
 
 messages-compile: fix-newlines
 	hugo-gettext compile translations/

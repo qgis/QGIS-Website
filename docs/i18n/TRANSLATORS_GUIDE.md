@@ -95,6 +95,12 @@ Spanish:    QGIS |ltrversion|         (keep "QGIS" or translate if needed)
 
 The key rule: **Text between pipes (|...|) is a variable name - never translate it!**
 
+### 6. Inline HTML in Markdown
+
+Please do not add or modify inline HTML tags in markdown translation strings.
+
+If a string already contains HTML, keep tags exactly as they are and only translate human-readable text.
+
 ## What SHOULD Be Translated
 
 Translate:
@@ -104,6 +110,12 @@ Translate:
 - ✅ Alt text for images
 - ✅ Link text that appears to users
 - ✅ Descriptions and instructions
+
+Do NOT translate/modify:
+- ❌ Shortcode names and shortcode syntax (`{{< ... >}}`)
+- ❌ Pipe variables (`|version|`, `|ltrversion|`, etc.)
+- ❌ URLs and file paths used for linking
+- ❌ Inline HTML tags (`<span>`, `<br/>`, `<div>`, etc.)
 
 ## Examples
 

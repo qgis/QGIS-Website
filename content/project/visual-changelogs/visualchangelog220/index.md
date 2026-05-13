@@ -7,6 +7,7 @@ releaseDate: "2014-02-22"
 section: "project"
 type: "visual-changelog"
 ---
+
 {{< content-start >}}
 
 # Changelog for QGIS 2.2 {#changelog22}

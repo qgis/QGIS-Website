@@ -10,6 +10,7 @@ date: 2011-03-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Using a free GIS at Jaime Moniz Secondary School: QGIS

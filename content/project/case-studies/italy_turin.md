@@ -10,6 +10,7 @@ date: 2013-01-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # The Research Institute for Geo-hydrological Protection of Turin —— Aerial photo archive management

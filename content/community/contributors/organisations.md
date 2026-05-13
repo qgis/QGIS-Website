@@ -11,6 +11,7 @@ sidebar: true
 {{< content-start >}}
 
 {{< rich-box-start icon="🏢" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
 
 ## Contributing Organizations
@@ -24,6 +25,7 @@ These organizations actively contribute to QGIS, as reflected by their GitHub co
 
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 {{< contributing-orgs >}}

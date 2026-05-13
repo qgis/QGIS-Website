@@ -10,6 +10,7 @@ date: 2015-02-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # Lynx habitat analysis in the Southern Carpathians

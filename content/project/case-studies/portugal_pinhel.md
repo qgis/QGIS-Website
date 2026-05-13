@@ -10,6 +10,7 @@ date: 2015-01-01
 featured: false
 archived: false
 ---
+
 {{< content-start >}}
 
 # QGIS and Forest Fire Risk Mapping in Portugal

@@ -10,6 +10,7 @@ date: 2010-11-01
 featured: false
 archived: true
 ---
+
 {{< content-start >}}
 
 # QGIS and GRASS applied to paleontological survey in Western Portugal
