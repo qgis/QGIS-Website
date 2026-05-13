@@ -1,7 +1,7 @@
 ---
 aliases:
 - posts
-author: ティム・サットン
+author: Tim Sutton
 tags:
 - index
 title: Posts

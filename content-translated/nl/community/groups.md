@@ -91,8 +91,8 @@ type: page
 {{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Republiek Kosovo" listSubtitle="Contact: Milot Lubishtani" >}}
 ### Geregistreerd in 2025
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contact: Antidy Kawamala" >}}
-### Registered 2026
-{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}
+### Geregistreerd in 2026
+{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India gebruikersgroep" listSubtitle="Contact: Ujaval Gandhi" >}}
 ## Doelen van een gebruikersgroep
 * Organiseren van gebruikersbijeenkomsten
 * Coördinatie van ontwikkeling, met de nadruk op regionale/nationale standaarden en vereisten 

@@ -22,7 +22,7 @@ type: page
 {{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Create map](../img/create.gif "Create maps") {{< column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
-###### Leader nella categoria Cartografia 
+###### Cartografia all'avanguardia
 Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
 ###### Produzione professionale di mappe
 Use the intuitive layout design tool to produce high-quality, large-format print maps.
@@ -34,8 +34,8 @@ Create atlases and reports with maps, media and tabular content. {{< column-end 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Eccezionale capacità di digitalizzazione
 Create and edit points, lines, polygons, and meshes with precision.
-###### Strumenti di costruzione avanzati
-Costruisci geometrie con curve, strumenti simili a quelli CAD e un'ampia gamma di trasformazioni geometriche.
+###### Strumenti avanzati di costruzione
+Crea geometrie utilizzando curve, strumenti simili a quelli CAD e un'ampia gamma di trasformazioni geometriche.
 ###### Moduli altamente personalizzabili
 Crea moduli intuitivi utilizzando il nostro form designer.
 

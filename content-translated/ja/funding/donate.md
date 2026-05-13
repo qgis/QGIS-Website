@@ -3,8 +3,7 @@ HasBanner: true
 HeroImage: img/involve.jpg
 draft: false
 sidebar: true
-subtitle: Your support is vital to enhance and promote QGIS as an essential tool for
-  the global GIS community
+subtitle: QGISをグローバルなGISコミュニティに欠かせないツールとして発展・普及させていくために、皆さまのご支援が大きな力となります。
 title: 寄贈
 type: page
 
@@ -13,29 +12,29 @@ type: page
 
 QGISは、専用ボランティア、企業、組織のチームによって開発されています。
 
-We rely on sponsorships and donations for much of our funding. If you would like to support us, donations are very welcome. Donations can be made by electronic funds transfer, by credit card, or by PayPal.
+私たちの活動資金の多くは、スポンサーシップと寄付によって支えられています。ご支援をご検討の方は、ぜひ寄付をお寄せください。寄付は電子送金・クレジットカード・PayPalにてお受けしております。
 
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a german company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt german association.
+QGISへの寄付は、一部の国において税控除の対象となる場合があります。詳細については、地域の税務署にお問い合わせください。ドイツの企業や組織として税控除を受けたい場合は、 [German QGIS user group](https://qgis.de/doku.php/verein/spenden) を通じて寄付してください。彼らは税免除のドイツ団体として支払い確認書を発行することができます。
 
 {{< rich-box-start layoutClass="mt-6">}} {{< rich-content-start themeClass="coloring-2" >}}
-## Sustaining Membership
-Create a recurring sustaining membership.
+## サステイニングメンバーシップ
+サステイニングメンバーに登録する
 
-{{<button class="is-primary6" link="funding/membership" text="Subscribe" >}}
+{{<button class="is-primary6" link="funding/membership" text="購読する" >}}
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
-## Stripe Donation
-We use the [stripe.com](https://stripe.com) service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+## Stripeによる寄付
+クレジットカードによる寄付を受け付けるために  [stripe.com](https://stripe.com) のサービスを利用しています。Stripeの決済手数料はPayPalよりも大幅に低いため、PayPalの代わりにStripeをご利用いただければ幸いです。サインアップは不要です。 {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Payrexx Donation
-We also use the [payrexx.com](https://payrexx.com) service to receive credit card donations. Note that the payment fees at Payrexx are substantially lower than at Paypal - so we would appreciate it, if you could use [Stripe](#stripe-donation) or Payrexx instead of PayPal. No signup needed. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+## Payrexx による寄付
+クレジットカードによる寄付を受け付けるために [payrexx.com](https://payrexx.com) のサービスも利用しています。 Payrexxの決済手数料はPayPalよりも大幅に低いため、PayPalの代わりに  [Stripe](#stripe-donation) やPayrexxをご利用いただければ幸いです。サインアップは不要です 。 {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Bank transfer
-Use the details below to make a donation via international money transfer: {{< rich-content-end >}} {{< rich-right-start >}}
+## 銀行振込
+国際送金で寄付を行うには、以下の詳細情報を使用してください: {{< rich-content-end >}} {{< rich-right-start >}}
 
 <pre class="donatbox">
 Account name: QGIS.ORG
@@ -55,49 +54,49 @@ VAT-number:   CHE-489.853.176
 {{< rich-right-end >}} {{< rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right paypal mb-6" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Paypal Donation
-You can use Paypal to donate using your own credit card (but we prefer to use [Payrexx](#payrexx-donation) for that). The payment is processed by PayPal but you don't need to have a PayPal account or sign-up for one if you are paying by credit card.
+## Paypal による寄付
+PayPalを使用して、ご自身のクレジットカードで寄付を行うことができます (ただし、カード決済には [Payrexx](#payrexx-donation) の利用を推奨しています) 。支払いはPayPalによって処理されますが、クレジットカードで支払う場合、PayPalアカウントを持っている必要や、新しく登録する必要はありません。
 
 ご自身のPayPalアカウントを使って寄付することもできます.
 
 {{< paypal-button >}} {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../paypal.png) {{< rich-right-end >}} {{< rich-box-end >}}
-## Your support is vital to keep QGIS improving
+## QGISをより良くし続けるために、皆さまのサポートが欠かせません
 私たちは活動を拡大し、QGISの品質を向上させたいと考えています。皆様の寄付は、QGISの保守、改善、および宣伝を支援します。維持会員になることは、プロジェクトの寿命と全体的な健全性を確保する方法の1つです。
 
 {{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third left-title">}}
-## Enhanced Infrastructure & Development Support
+## インフラと開発への強化支援
 {{<column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds">}} {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Maintaining Core Infrastructure
-* The official QGIS.org website, a central hub for all things QGIS.
-* Our issue tracking system for efficient bug and feature reporting.
-* The continuous integration system, ensuring code quality and stability through automated tests. {{< rich-content-end >}} {{< rich-box-end >}}
+#### コアインフラの維持管理
+* 公式QGIS.orgウェブサイトは、QGISに関するすべての情報が集まる中心的なハブです。
+* 私たちの課題追跡システムではバグ報告や機能リクエストを効率的に管理することができます。
+* 自動テストによってコードの品質と安定性を確保する継続的インテグレーションシステムです。 {{< rich-content-end >}}{{< rich-box-end >}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Software Development & QA
-* Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
-* Address bugs and other issues promptly, enhancing the user experience.
-* Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development. {{< rich-content-end >}} {{< rich-box-end >}}
+#### ソフトウェア開発・QA
+* QGISを継続的に改善し、様々なオペレーティングシステム向けにパッケージ化することで、世界中のより多くのユーザーがアクセスできるようにしています。
+* バグやその他の問題に迅速に対応することで、ユーザーエクスペリエンスの向上を図ります。
+* プルリクエストの管理と徹底したコードレビューの実施により、最高水準のソフトウェア開発品質を維持します。 {{< rich-content-end >}}{{< rich-box-end >}}
 
 {{< column-end >}} {{< columns-end >}}
 
 {{< columns-start class="mb-6">}} {{< column-start class="is-flex-direction-column is-one-third left-title">}}
-## Community Growth & Engagement
+## コミュニティの拡大と参加促進
 {{<column-end >}}
 
 {{< column-start class="is-flex-direction-column is-two-thirds ">}} {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Empowering Our Volunteers
-* Mentoring new contributors, fostering a welcoming and productive community.
-* Translating QGIS into multiple languages, making the software truly global.
-* Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own. {{< rich-content-end >}} {{< rich-box-end >}}
+#### ボランティアの力を引き出す
+* 新規コントリビューターへのメンタリングを通じて、誰もが参加しやすく生産性の高いコミュニティを育てています。
+* QGISの多言語翻訳による、真のグローバル化への貢献
+* QGISグラントシステムを運営し、ボランティアが単独で取り組むことが難しい重要な改善やイノベーションに集中して取り組めるようにすること。{{< rich-content-end >}}{{< rich-box-end >}}
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Fostering Collaboration & Knowledge Sharing
-* Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project. {{< rich-content-end >}} {{< rich-box-end >}}
+#### 協力体制と知識共有の促進
+* コントリビューターミーティングやQGISカンファレンスの開催・支援を通じて、知識の共有、協力、そしてQGISプロジェクトの共同発展を促進しています。 {{< rich-content-end >}}{{< rich-box-end >}}
 
 {{< column-end >}} {{< columns-end >}}
 
-QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance]({{< ref "/community/foundation/finance" >}}) section.
+QGIS.ORGは、受け取った資金とその使途について透明性を確保することを大切にしています。[財務]({{< ref "/community/foundation/finance" >}})セクションにて財務報告書と予算をご確認いただけます。
 
 {{<content-end >}}

@@ -1,12 +1,12 @@
 ---
 draft: false
 subtitle: ''
-title: Руководство по визуальному оформлению
+title: Руководство по стилю
 type: page
 
 ---
 {{<content-start classes="content narrow" >}}
-# Руководство по визуальному оформлению
+# Руководство по стилю
 ## Версия 1.0
 This is our QGIS Visual Style Guide. This document defines standards for the use of the our visual identity. It proposes a modernization of the QGIS brand to make it stronger, more visible and more adaptable to a broad range of use cases.
 

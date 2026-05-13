@@ -2,60 +2,60 @@
 Reviewed: 4 June 2024
 Reviewer: Tim Sutton
 draft: false
-selected_language: ja
+selected_language: en
 sidebar: true
 subtitle: ''
-title: QGIS resources
+title: QGIS リソース
 type: page
 
 ---
 {{<content-start >}}
-# Resources
+# リソース
 {{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-#### Installation troubles?
-If you are looking for information on installing QGIS on all available platforms, we have prepared a comprehensive guide for you:
+#### インストールでトラブルがありますか？
+あらゆるプラットフォームへのQGISのインストール方法については、詳細なガイドをご用意していますのでご参照ください:
 
 [Installation guide]({{< ref "/resources/installation-guide/index.md" >}})
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 ## 文書化
-QGIS has a lot of documentation. All of the core documentation (user manual, developer handbooks etc.) is available in English. Some documents such as the user guide are also available in other languages.
+QGISには充実したドキュメントが揃っています。ユーザーマニュアル・開発者ハンドブックなどのコアドキュメントはすべて英語で提供されています。ユーザーガイドなど一部のドキュメントは他の言語でもご利用いただけます。
 
-You will find documentation for every QGIS Long Term Release (LTR) on the respective documentation website.
+各QGISの長期サポートリリース（LTR）のドキュメントは、それぞれのドキュメントウェブサイトでご覧いただけます。
 
-[Get involved]({{< ref "/community/involve" >}}) and help us write a better documentation.
+[Get involved]({{< ref "/community/involve" >}}) より良いドキュメントの作成にご協力ください。
 
 {{<language-select >}}
 
 <!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
 
-{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases" tab4="データ保護" >}}
+{{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="過去のリリース" tab4="データ保護" >}}
 
 {{< tab-content-start tab="1" >}} **For users (QGIS {{< param "ltrversion" >}}):**
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="デスクトップユーザーガイド — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="QGIS トレーニングマニュアル — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/gentle_gis_introduction" layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/gentle_gis_introduction" layoutClass="inline-block link-with-language" listTitle="GISのやさしい入門 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="サーバーガイド — <lang>" >}}
 
-**For documentation writers (QGIS {{< param "ltrversion" >}}):**
+**ドキュメント執筆者向け (QGIS {{< param "ltrversion" >}}):**
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="ドキュメンテーションガイドライン — <lang>" >}}
 
-**For developers (QGIS {{< param "ltrversion" >}}):**
+**開発者向け (QGIS {{< param "ltrversion" >}}):**
 
-{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS クックブック (プラグインとスクリプティング用) — <lang>" >}}
 
 {{<rich-list listLink="https://qgis.org/pyqgis/|ltrversion|/" layoutClass="inline-block" listTitle="PyQGIS - QGIS Python API ドキュメント" >}}
 
-{{<rich-list listLink="https://qgis.org/api/|ltrversion|/" layoutClass="inline-block" listTitle="C++ API documentation" >}}
+{{<rich-list listLink="https://qgis.org/api/|ltrversion|/" layoutClass="inline-block" listTitle="C++ API ドキュメンテーション" >}}
 
-{{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|ltrversion|/INSTALL.md" layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
+{{<rich-list listLink="https://github.com/qgis/QGIS/blob/release-|ltrversion|/INSTALL.md" layoutClass="inline-block" listTitle="ソースからの QGIS ビルド" >}}
 
-**For download (QGIS {{< param "ltrversion" >}}):**
+**ダウンロード (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/pdf" layoutClass="inline-block" listTitle="PDF 版マニュアル" >}}
 
@@ -103,31 +103,31 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 We are still updating (not translating yet) the documentation for releases newer than QGIS {{< param "ltrversion" >}}. We call this version 'QGIS Testing' and the documentation can be found here:
 
-**For users (QGIS testing):**
+**ユーザー向け (QGIS testing):**
 
-{{<rich-list listLink="https://docs.qgis.org/testing/en/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop User Guide" >}}
+{{<rich-list listLink="https://docs.qgis.org/testing/en/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="デスクトップユーザーガイド" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="QGIS トレーニングマニュアル" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/testing/en/docs/gentle_gis_introduction" layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS" >}}
+{{<rich-list listLink="https://docs.qgis.org/testing/en/docs/gentle_gis_introduction" layoutClass="inline-block link-with-language" listTitle="GISのやさしい入門" >}}
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="サーバガイド/マニュアル" >}}
 
-**For documentation writers (QGIS testing):**
+**文書執筆者向け (QGIS testing):**
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="ドキュメントガイドライン" >}}
 
-**For developers (QGIS testing):**
+**開発者向け (QGIS testing):**
 
 {{<rich-list listLink="https://docs.qgis.org/testing/en/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (プラグイン開発とスクリプト記述に有用)" >}}
 
-{{<rich-list listLink="https://qgis.org/api/" layoutClass="inline-block" listTitle="C++ API documentation" >}}
+{{<rich-list listLink="https://qgis.org/api/" layoutClass="inline-block" listTitle="C++ API ドキュメンテーション" >}}
 
 {{<rich-list listLink="https://qgis.org/pyqgis/" layoutClass="inline-block" listTitle="PyQGIS - QGIS Python API ドキュメント" >}}
 
-{{<rich-list listLink="https://github.com/qgis/QGIS/blob/master/INSTALL.md" layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
+{{<rich-list listLink="https://github.com/qgis/QGIS/blob/master/INSTALL.md" layoutClass="inline-block" listTitle="ソースからの QGIS ビルド" >}}
 
-**For download (QGIS testing):**
+**ダウンロード (QGIS testing):**
 
 {{<rich-list listLink="https://docs.qgis.org/testing/pdf" layoutClass="inline-block" listTitle="PDF 版マニュアル" >}}
 
@@ -137,27 +137,27 @@ We are still updating (not translating yet) the documentation for releases newer
 
 {{<tab-content-start tab="3" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.40 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.40/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.40 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.34/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.34 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.28/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.28 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.28/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.28 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.22/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.22/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.22 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.16/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.16 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.16/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.16 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.10/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.10 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.10/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.10 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/3.4/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.4 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/3.4/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 3.4 文書 — <lang>" >}}
 
-{{<rich-list listLink="https://docs.qgis.org/2.18/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 2.18 Documentation — <lang>" >}}
+{{<rich-list listLink="https://docs.qgis.org/2.18/<lang>" layoutClass="inline-block link-with-language" listTitle="QGIS 2.18 文書 — <lang>" >}}
 
 {{<tab-content-end >}}
 
 {{<tab-content-start tab="4" >}}
 
-In line with GDPR and related data protection regulations, we provide the following documentation:
+GDPRおよび関連するデータ保護法規に基づき、以下のドキュメントをご用意しています:
 
 {{<rich-list listLink="https://docs.qgis.org/latest/en/docs/user_manual/appendices/qgis_desktop_network_connections.html" layoutClass="inline-block" listTitle="QGIS アプリケーションのネットワーク接続" >}}
 
@@ -165,9 +165,9 @@ In line with GDPR and related data protection regulations, we provide the follow
 
 {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
 ## サポート
-The QGIS community offers a wealth of excellent websites with support forums.
+QGISコミュニティは、サポートフォーラムを備えた優れたウェブサイトを豊富に提供しています。
 
-{{<button class="is-primary6" link="resources/support" text="View support options" >}}
+{{<button class="is-primary6" link="resources/support" text="サポートオプションを見る" >}}
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 

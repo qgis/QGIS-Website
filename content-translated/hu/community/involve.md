@@ -27,7 +27,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 {{<rich-box-end >}}
 
 {{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-### Hiba bejelentése
+### Hibák bejelentése
 If you encounter any issues while working with QGIS, let the QGIS developers know about them.
 
 [Report an issue]({{< ref "resources/support/bug-reporting" >}}) {{< rich-content-end>}} {{< rich-right-start >}}<br />![](../img/Bugs.jpg) {{< rich-right-end >}} {{< rich-box-end >}}

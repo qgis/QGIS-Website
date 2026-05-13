@@ -9,26 +9,26 @@ type: page
 ---
 {{<content-start >}}
 # Примери с QGIS
-> **Want to showcase your QGIS project?** [Submit your case study](#submit-your-case-study) and inspire the community with your success story.
+> **Искате да представите вашия QGIS проект?** [Изпратете вашия казус](#изпратете-вашия-казус-проучване) и вдъхновете общността с вашата история на успех.
 
 {{<usecases >}}
 _______
 {{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-## Submit Your Case Study
-Share your QGIS success story with the community! We welcome case study submissions that showcase real-world applications and inspire other users.
-### Option 1: Direct Contribution
-1. **Create your case study** - Add a new markdown file under `content/project/case-studies/` in the [QGIS Website repository](https://github.com/qgis/QGIS-Website/)
-2. **Follow the template** - Use existing case studies as a structural guide
-3. **Optimize images** - Add visuals to the `images/` folder in `.webp` format for optimal performance
-4. **Submit via PR** - Create a pull request with your contribution
+## Изпратете вашия казус
+Споделете вашата история на успех с QGIS с общността! Приветстваме подавания на казуси, които демонстрират приложения от реалния свят и вдъхновяват други потребители.
+### Вариант 1: Директен принос
+1. **Създайте своя казус** - Добавете нов markdown файл под `content/project/case-studies/` в [хранилището на уебсайта на QGIS](https://github.com/qgis/QGIS-Website/)
+2. **Следвайте шаблона** - Използвайте съществуващи казуси като структурно ръководство
+3. **Оптимизиране на изображения** - Добавете визуални елементи към папката `images/` във формат `.webp` за оптимална производителност
+4. **Изпращане чрез PR** - Създайте заявка за изтегляне с вашия принос
 
-### Option 2: Submit via Issue
-1. **Open an issue** - Create a new issue in the [QGIS Website repository](https://github.com/qgis/QGIS-Website/issues)
-2. **Share your story** - Write your case study text directly in the issue description
-3. **Attach media** - Upload images, screenshots, or other relevant files to the issue
-4. **Let us handle the rest** - Our team will format and integrate your submission
+### Вариант 2: Изпращане чрез „Проблем“
+1. **Отваряне на задача** - Създаване на нова задача в [хранилище на уебсайта на QGIS](https://github.com/qgis/QGIS-Website/issues)
+2. **Споделете вашата история** - Напишете текста на вашия казус директно в описанието на проблема
+3. **Прикачете медийни файлове** - Качете изображения, екранни снимки или други подходящи файлове за проблема
+4. **Оставете ни да се погрижим за останалото** - Нашият екип ще форматира и интегрира вашата заявка
 
-Your case study demonstrates QGIS capabilities and helps grow our community knowledge base.
+Вашият казус демонстрира възможностите на QGIS и помага за разширяване на базата от знания на нашата общност.
 
 {{< rich-content-end >}} {{< rich-box-end >}}
 

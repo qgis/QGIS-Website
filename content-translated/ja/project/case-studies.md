@@ -9,13 +9,13 @@ type: page
 ---
 {{<content-start >}}
 # ケーススタディ
-> **Want to showcase your QGIS project?** [Submit your case study](#submit-your-case-study) and inspire the community with your success story.
+> **あなたのQGISプロジェクトを披露してみませんか？**  [活用事例を投稿して](#submit-your-case-study) あなたの成功体験でコミュニティを刺激しましょう
 
 {{<usecases >}}
 _______
 {{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
-## Submit Your Case Study
-Share your QGIS success story with the community! We welcome case study submissions that showcase real-world applications and inspire other users.
+## あなたの活用事例を投稿しましょう
+あなたのQGIS成功体験をコミュニティと共有しましょう！現実世界での活用例を紹介し、他のユーザーに刺激を与えるようなケーススタディの投稿を歓迎します。
 ### Option 1: Direct Contribution
 1. **Create your case study** - Add a new markdown file under `content/project/case-studies/` in the [QGIS Website repository](https://github.com/qgis/QGIS-Website/)
 2. **Follow the template** - Use existing case studies as a structural guide

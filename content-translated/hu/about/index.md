@@ -2,18 +2,18 @@
 draft: 'true'
 heroImage: img/banners/banner4.png
 sidebar: true
-subtitle: QGIS is a professional GIS application, built on top of Free and Open Source
-  Software (FOSS), and takes pride in being a part of the FOSS community.
+subtitle: A QGIS egy professzionális GIS-alkalmazás, amely szabad és nyílt forráskódú
+  szoftverekre (FOSS) épül, és büszke arra, hogy a FOSS-közösség tagja.
 title: QGIS – a vezető nyílt forráskódú asztali GIS
 type: page
 
 ---
-{{< content-start >}} {{< block title="Mapping." subtitle="Unleash your creativity and experience first class cartographic design capabilities and design great maps for digital and print." image="" sub-block-side="left" class="is-primary1" >}}{{< /block >}}
+{{< content-start >}} {{< block title="Térképezés." subtitle="Engedje szabadjára kreativitását, fedezze fel az első osztályú kartográfiai tervezési lehetőségeket, és készítsen remek digitális és nyomtatott térképeket." image="" sub-block-side="left" class="is-primary1" >}}{{< /block >}}
 
-{{< block title="Editing." subtitle="Simple and sophisticated tools for efficiently capturing geospatial data." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
+{{< block title="Szerkesztés." subtitle="Egyszerű és kifinomult eszközök a térbeli adatok hatékony rögzítéséhez." image="" sub-block-side="left" class="is-primary2" >}}{{< /block >}}
 
-{{< block title="Process & Analyze." subtitle="Powerful tools for geospatial computational analysis at your fingertips." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
+{{< block title="Feldolgozás és elemzés." subtitle="Hatékony eszközök a térinformatikai számítógépes elemzéshez." image="" sub-block-side="left" class="is-primary3" >}}{{< /block >}}
 
-{{< block title="Sharing." subtitle="Reach a global audience online with your amazing maps and spatial information products. Powered by QGIS." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
+{{< block title="Megosztás." subtitle="Érje el világszerte az online közönséget lenyűgöző térképeivel és térinformatikai termékeivel. A QGIS segítségével." image="" sub-block-side="left" class="is-primary4" >}}{{< /block >}}
 
-{{< block title="Behind the scenes." subtitle="Leverage the work and experience of some the world’s top geospatial experts and developers. Use their creations to achieve your project goals." image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}
+{{< block title="A kulisszák mögött." subtitle="Használja ki a világ legkiválóbb térinformatikai szakértőinek és fejlesztőinek munkáját és tapasztalatát! Alkalmazza az általuk készített megoldásokat céljai eléréséhez!" image="" sub-block-side="left" class="is-primary5" >}}{{< /block >}} {{< content-end >}}

@@ -11,55 +11,55 @@ type: page
 {{<content-start >}}
 # Kapcsolat és támogatás
 {{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
-## ✉️ Mailing Lists
-QGIS has various mailing lists for discussing QGIS related topics.
+## ✉️ Levelezőlisták
+A QGIS-nek számos levelezőlistája van, ahol QGIS-hez kapcsolódó témákról lehet beszélgetni.
 
-If you are going to ask questions please read this: [How to ask a QGIS question?](faq/#how-to-ask-a-qgis-question).
+Ha kérdéseket szeretne feltenni, kérjük, olvassa el ezt: [Hogyan tegyünk fel kérdést a QGIS-szel kapcsolatban?](faq/#how-to-ask-a-qgis-question).
 
-{{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="See Mailing lists" >}}
+{{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="Levelezőlisták megtekintése" >}}
 
 {{< rich-content-end >}} {{< rich-box-end >}}
-## Before you start
-Before you head off to join up with your chosen support group, we would like to mention a few guidelines for participating in our community:
-### Stay on topic
-The forums are for sharing ideas, tools, tutorials, case studies, and questions related only to the use of QGIS (and related tools) in various fields. They are not for discussions about GIS in general or unrelated software (GIS or otherwise).
+## Mielőtt elkezdené
+Mielőtt csatlakozna a kiválasztott támogató csoporthoz, szeretnénk néhány irányelvet megemlíteni a közösségünkben való részvételhez:
+### Maradjunk a témánál
+A fórumok kizárólag a QGIS (és a kapcsolódó eszközök) különböző területeken történő használatával kapcsolatos ötletek, eszközök, útmutatók, esettanulmányok és kérdések megosztására szolgálnak. Nem alkalmasak általános GIS-témákról vagy más, nem kapcsolódó szoftverekről (akár GIS-ekről, akár másról) szóló vitákra.
 ### Nyelv
-As we are a global group, all posts must be in English (unless the group you join is language specific). If you have a post in another language, please provide a translated description.
+Mivel globális közösség vagyunk, minden bejegyzést angolul kell megírni (kivéve, ha az a közösség, amelyhez csatlakozott, egy adott nyelvre specializálódott). Ha más nyelven ír bejegyzést, kérjük, mellékeljen hozzá egy fordítást is.
 ### Spam
-Posts about platforms, products, and services not pertaining to QGIS or not incorporating QGIS as part of a broader offering are not allowed.
-### Self-Promotion
-Companies or individuals posting products and services about QGIS are welcome (this does not mean endorsement) as long as they contribute meaningfully to the discourse, such as by answering questions. Excessive self-promotion will be considered spam.
-### Clarity
-Be clear and objective. Try to include screenshots. Show effort by consulting the official QGIS documentation. For example, show that you have already reviewed the documentation, searched Google, asked ChatGPT etc. Mark issues as solved once they are resolved so that people do not spend effort on your problem unnecessarily.
+A QGIS-hez nem kapcsolódó, illetve a QGIS-t nem tartalmazó platformokról, termékekről és szolgáltatásokról szóló bejegyzések nem megengedettek.
+### Önreklám
+A QGIS-hez kapcsolódó termékeket és szolgáltatásokat hirdető vállalatok és magánszemélyek szívesen látottak (ez nem jelenti azt, hogy támogatjuk őket), feltéve, hogy érdemben hozzájárulnak a beszélgetéshez, például kérdések megválaszolásával. A túlzott önreklám viszont spamnek minősül.
+### Egyértelműség
+Legyen világos és tárgyilagos. Próbáljon meg képernyőképeket csatolni. Mutassa meg, hogy igyekezett megoldást találni a hivatalos QGIS-dokumentáció segítségével. Például mutassa meg, hogy már átnézte a dokumentációt, keresett a Google-on, megkérdezte a ChatGPT-t stb. A problémákat jelölje meg megoldottként, miután azok megoldódtak, hogy mások ne pazarolják feleslegesen az idejüket a problémájára.
 ## Discourse
-We have recently started a discourse forum for QGIS related support. Over time we expect to move more if our community support activities to this area. The discourse forums are available [on the OSGEO hosted discourse page](https://discourse.osgeo.org/tag/qgis).
+Nemrég elindítottunk egy Discourse fórumot a QGIS-hez kapcsolódó támogatás céljából. A jövőben várhatóan közösségi támogatási tevékenységeink egyre nagyobb részét fogjuk ide áthelyezni. A Discourse fórumok az [OSGEO által üzemeltetett Discourse oldalon](https://discourse.osgeo.org/tag/qgis) érhetők el.
 ## StackExchange
-You can ask questions on [GIS StackExchange](http://gis.stackexchange.com). If you use the tag `qgis` you’ll see all QGIS related questions and answers: http://gis.stackexchange.com/?tags=qgis
+Kérdéseket tehet fel a [GIS StackExchange](http://gis.stackexchange.com) oldalon. Ha a `qgis` címkét használja, akkor a QGIS-hez kapcsolódó összes kérdést és választ megtekintheti: http://gis.stackexchange.com/?tags=qgis
 ## Kommunikációs csatornák
 ### Telegram
-There is a vibrant user and community related chat group (english spoken) on the Telegram channel, which you can [join here](https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ).
+A Telegram-csatornán élénk felhasználói és közösségi csevegőcsoport működik (angol nyelven), amelyhez [itt csatlakozhatsz](https://t.me/joinchat/Aq2V5RPoxYYhXqUPoxRWPQ).
 
-To join: install Telegram on your phone, register and join via the link above.
+Csatlakozáshoz: telepítse a Telegramot a telefonjára, regisztráljon és csatlakozzon a fenti linken keresztül.
 
-There is also a web version (https://web.telegram.org) which you can join in the browser (after you have joined telegram via your phone number).
+Van egy webes verzió is (https://web.telegram.org), amelyhez böngészőn keresztül csatlakozhat (miután telefonszámmal regisztrált a Telegramra).
 ### Matrix / IRC
-Matrix (https://matrix.org) is a project for decentralised chat. QGIS has a room which is accessible at the **#qgis:osgeo.org** alias (among others) which bridges to the libera.chat **#qgis** IRC channel.
+A Matrix (https://matrix.org) egy decentralizált csevegőplatform. A QGIS-nek van egy csevegőszobája, amely többek között a **#qgis:osgeo.org** név alatt érhető el, és amely összeköttetést biztosít a libera.chat **#qgis** IRC-csatornájával.
 
-To use Matrix: create an account (at matrix.org is easiest, but if you have an OSGeo account you can also [use your OSGeo id as matrix id](https://wiki.osgeo.org/wiki/Matrix#Connecting_to_the_OSGeo_Matrix_Homeserver)), install a client (Element is easiest, but see https://matrix.org/ecosystem/clients/ for more), or point your browser to https://matrix.to/#/#qgis:osgeo.org.
+A Matrix használatához: hozzon létre egy fiókot (a legegyszerűbb a matrix.org oldalon, de ha már rendelkezik OSGeo-fiókkal, akkor [az OSGeo-azonosítóját is használhatja Matrix-azonosítóként](https://wiki.osgeo.org/wiki/Matrix# Connecting_to_the_OSGeo_Matrix_Homeserver)), telepítsen egy klienst (az Element a legegyszerűbb, de további információkért látogasson el a https://matrix.org/ecosystem/clients/ oldalra), vagy írja be a böngészőjébe a https://matrix.to/#/#qgis:osgeo.org címet.
 
 Az IRC használatához: telepítsen egy IRC-klienst és csatlakozzon az irc://irc.libera.chat/#qgis szobához, vagy nyissa meg böngészőben a https://web.libera.chat/?channels=#qgis címet.
 ### Facebook
 A Facebook-felhasználók számára a QGIS-felhasználók angol nyelvű globális közösségi csoportja a https://www.facebook.com/groups/qgiscommunityofficialvirtualgroup címen érhető el.
 ## Felhasználói csoportok
-A helyi QGIS felhasználói csoport nagyszerű hely más felhasználókkal találkozásra.
+A helyi QGIS-felhasználói csoportok kiváló alkalmat nyújtanak más felhasználókkal való ismerkedésre.
 
-See [User Groups]({{< ref "community/groups" >}}) to read more about local user groups.
-## Security Vulnerability Reporting
-If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please refer to the [security page]({{< ref "resources/support/security" >}}) for detailed information on how to report it responsibly.
-## Project Steering Committee (PSC)
-If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list or email address:
+A helyi felhasználói csoportokról bővebben a [Felhasználói csoportok]({{< ref "community/groups" >}}) oldalon olvashat.
+## Biztonsági sebezhetőségek bejelentése
+Ha úgy gondolja, hogy biztonsági problémát talált, például a QGIS-ben vagy annak függőségeiben lévő sebezhetőségeket, kérjük, látogasson el a [biztonsági oldalra]({{< ref "resources/support/security" >}}), ahol részletes információkat talál arról, hogyan jelentse be felelősségteljesen a problémát.
+## Projektirányító Bizottság (PSC)
+Ha jogi, védjeggyel kapcsolatos, finanszírozási vagy adminisztratív ügyekben szeretne kapcsolatba lépni a QGIS Projektirányító Bizottság (PSC) valamely tagjával **(nem általános támogatási kérések esetén)**, kérjük, használja az alábbi levelezőlistát vagy e-mail címet:
 
-{{<rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+{{<rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="QGIS PSC levelezőlista" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 
 {{<rich-list listLink="mailto:psc@qgis.org" layoutClass="half" listTitle="QGIS PSC email" listSubtitle="psc@qgis.org" >}}
 

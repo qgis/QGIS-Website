@@ -8,48 +8,48 @@ type: page
 {{<content-start classes="content narrow" >}}
 # Ръководство за визуален стил
 ## Версия 1.0
-This is our QGIS Visual Style Guide. This document defines standards for the use of the our visual identity. It proposes a modernization of the QGIS brand to make it stronger, more visible and more adaptable to a broad range of use cases.
+Това е нашето Ръководство за визуален стил на QGIS. Този документ определя стандартите за използване на нашата визуална идентичност. Той предлага модернизиране на марката QGIS, за да стане тя по-силна, по-видима и по-адаптивна към широк спектър от случаи на употреба.
 
-The Visual Style Guide is a living document, initiated with the goal of developing a consistent message and image for QGIS. It is a "living" document because we expect it to expand as we cover more use cases where visual consistency is important and can be described using simpler rules. The standards and simple policies described here are designed to maintain the uniformity of presentation necessary for successful promotion and marketing efforts for the QGIS project.
+Ръководството за визуален стил е динамичен документ, създаден с цел разработване на последователно послание и изображение за QGIS. Той е „жив“ документ, защото очакваме той да се разширява, тъй като обхващаме повече случаи на употреба, където визуалната последователност е важна и може да бъде описана с помощта на по-прости правила. Стандартите и опростените политики, описани тук, са предназначени да поддържат еднаквостта на представянето, необходима за успешни промоционални и маркетингови усилия за проекта QGIS.
 
-Our visual identity symbolizes QGIS's strength, promise of quality and competence. Proper treatment of logo, fonts and color ensures that QGIS will be recognized and stand out amid communications clutter. Graphic standards are a visual expression of QGIS and should serve as the base for our overall communications strategy.
+Нашата визуална идентичност символизира силата на QGIS, обещанието за качество и компетентност. Правилното отношение към логото, шрифтовете и цвета гарантира, че QGIS ще бъде разпознаваем и ще се откроява сред комуникационната бъркотия. Графичните стандарти са визуален израз на QGIS и трябва да служат като основа за цялостната ни комуникационна стратегия.
 
-This first version of the Graphic Style Guide outlines the core elements of the new QGIS logo. Future versions will focus on branding assets and how to spread the QGIS brand across the web, mobile devices and printed materials.
-## Logotype
+Тази първа версия на Ръководството за графичен стил очертава основните елементи на новото лого на QGIS. Бъдещите версии ще се фокусират върху брандиращите елементи и как да се разпространи марката QGIS в мрежата, мобилните устройства и печатните материали.
+## Логотип
 ### Оригинал
-![Main logo](visual/main_logo.png) ![Main logo monochrome](visual/main_logo_monochrome.png)
+![Главно лого](visual/main_logo.png) ![Основно лого монохромно](visual/main_logo_monochrome.png)
 
-**Download logo file**
+**Изтегляне на файл с лого**
 
-[`SVG logo`](visual/qgis-logo.svg)
+[`SVG  лого`](visual/qgis-logo.svg)
 
-[`PNG logo`](visual/qgis-logo.png)
+[`PNG лого`](visual/qgis-logo.png)
 
-[`SVG monochrome logo`](visual/qgis-logo-monochrome.svg)
+[`SVG монохромно лого`](visual/qgis-logo-monochrome.svg)
 
-[`PNG monochrome logo`](visual/qgis-logo-monochrome.png)
+[`PNG монохромно лого`](visual/qgis-logo-monochrome.png)
 
-The new QGIS logo is presented here. Keeping the core elements of the original QGIS logo (Q letter with an arrow through it), this new version intends to be sharp and scalable, introducing simpler and bolder shapes.
+Тук е представено новото лого на QGIS. Запазвайки основните елементи на оригиналното лого на QGIS (буква Q със стрелка през нея), тази нова версия има за цел да бъде остра и мащабируема, въвеждайки по-прости и смели форми.
 
-The proposed changes are listed below.
-- The existing spirit is preserved but the logo is bold
-- Shadows removed
-- The Q is sans-serif
-- The arrow becomes the part of Q letter
-- The QGIS logo text is based on the free & libre Trueno Bold font.
+Предложените промени са изброени по-долу.
+- Съществуващият дух е запазен, но логото е смело
+- Сенките са премахнати
+- Q е безсерифен
+- Стрелката става част от буквата Q
+- Текстът на логото на QGIS е базиран на безплатния шрифт Trueno Bold.
 
-### Minimal
-![Minimal](visual/minimal.png)
+### Минимално
+![Минималистично](visual/minimal.png)
 
-**Download minimal logo**
+**Изтеглете минималистично лого**
 
 [`SVG 128px`](visual/qgis-icon128.svg) [`SVG 64px`](visual/qgis-icon64.svg) [`SVG 32px`](visual/qgis-icon32.svg)
 
 [`PNG 128px`](visual/qgis-icon128.png) [`PNG 64px`](visual/qgis-icon64.png) [`PNG 32px`](visual/qgis-icon32.png)
 
-![Minimal black](visual/minimal_black.png)
+![Минималистично черно](visual/minimal_black.png)
 
-**Download minimal black**
+**Изтеглете минималистично черно**
 
 [`SVG black 128px`](visual/qgis-icon-black128.svg) [`SVG black 64px`](visual/qgis-icon-black64.svg) [`SVG black 32px`](visual/qgis-icon-black32.svg)
 
@@ -57,7 +57,7 @@ The proposed changes are listed below.
 
 ![Minimal green](visual/minimal_green.png)
 
-**Download minimal green**
+**Изтеглете минималистично зелено**
 
 [`SVG green 128px`](visual/qgis-icon-green128.svg) [`SVG green 64px`](visual/qgis-icon-green64.svg) [`SVG green 32px`](visual/qgis-icon-green32.svg)
 
@@ -65,50 +65,50 @@ The proposed changes are listed below.
 
 ![Minimal white](visual/minimal_white.png)
 
-**Download minimal white**
+**Изтеглете минималистично бяло**
 
 [`SVG white 128px`](visual/qgis-icon-white128.svg) [`SVG white 64px`](visual/qgis-icon-white64.svg) [`SVG white 32px`](visual/qgis-icon-white32.svg)
 
 [`PNG white 128px`](visual/qgis-icon-white128.png) [`PNG white 64px`](visual/qgis-icon-white64.png) [`PNG white 32px`](visual/qgis-icon-white32.png)
-## Typography
-### Trueno fonts
-Trueno is a free Font Library serif font. In order to embed it, please use
+## Типография
+### Шрифтове Trueno
+Trueno е безплатен шрифт със серифни линии от Font Library. За да го вградите, моля, използвайте
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
-in the site header {{< table >}} | Name | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
+в заглавката на сайта {{< table >}} | Име | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
 ## Цвят
-### Primary colors
-**Dark Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Dark green](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}
+### Основни цветове
+**Тъмно зелено**{{< columns-start >}} {{< column-start class="is-one-third">}} ![Dark green](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}
 
-The QGIS Dark Green color to be used for every logo element in the monochrome version. It can also be used as background, primary headline or text color.
+Тъмнозеленият цвят на QGIS, който ще се използва за всеки елемент от логото в монохромната версия. Може да се използва и като фон, основно заглавие или цвят на текста.
 
-**Light Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Light green](visual/light_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86<br />{{< column-end >}} {{< columns-end >}}
+**Светлозелено** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Светлозелено](visual/light_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86<br />{{< column-end >}} {{< columns-end >}}
 
-The QGIS Light Green color to be used for content of lesser importance. It can be used as secondary background, text or links color.
+Светлозеленият цвят на QGIS, който се използва за съдържание с по-малка важност. Може да се използва като вторичен цвят за фон, текст или връзки.
 
-**The gradient**
+**Градиентът**
 
-![Gradient](visual/gradient.png)
+![Градиент](visual/gradient.png)
 
-The two primary colors are used as a vertical linear gradient in the logo, and this gradient can be used for website and printed materials background
+Двата основни цвята се използват като вертикален линеен градиент в логото и този градиент може да се използва за фон на уебсайтове и печатни материали.
 
-**Color Palette**
+**Цветна палитра**
 
 ![Dark green palette](visual/dark_green_palette.png) ![Light green palette](visual/light_green_palette.png)
-### Secondary colors
-**Lemon**
+### Вторични цветове
+**Лимон**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Lemon](visual/lemon.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0<br />{{< column-end >}} {{< columns-end >}}
+{{< columns-start >}} {{< column-start class="is-one-third">}} ![Лимон](visual/lemon.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0<br />{{< column-end >}} {{< columns-end >}}
 
-**Orange**
+**Оранжево**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Orange](visual/orange.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0<br />{{< column-end >}} {{< columns-end >}}
+{{< columns-start >}} {{< column-start class="is-one-third">}} ![Оранжево](visual/orange.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0<br />{{< column-end >}} {{< columns-end >}}
 
-The QGIS Lemon and Orange colors to be used for the accents and call-to-actions
+Цветовете QGIS лимон и оранжево, които ще се използват за акцентите и призивите за действие
 
-**Color Palette**
+**Цветна палитра**
 
-![Lemon palette](visual/lemon_palette.png) ![Orange palette](visual/orange_palette.png)
+![Лимонова палитра](visual/lemon_palette.png) ![Orange palette](visual/orange_palette.png)
 
 {{<content-end >}}

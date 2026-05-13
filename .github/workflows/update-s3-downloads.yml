@@ -32,6 +32,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install boto3
+          pip install tqdm
       
       - name: Fetch S3 bucket contents
         env:

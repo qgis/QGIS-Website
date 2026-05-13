@@ -2,8 +2,8 @@
 draft: 'true'
 heroImage: img/banners/banner3.png
 submenus: showcase
-subtitle: Amazing work from our community
-title: Gallery - Screenshots
+subtitle: Невероятна работа от нашата общност
+title: Галерия - Снимки на екрана
 type: page
 
 ---

@@ -1,9 +1,9 @@
 ---
 aliases:
 - posts
-author: Tim Sutton
+author: Тим Сътън
 tags:
-- index
-title: Posts
+- индекс
+title: Публикации
 
 ---

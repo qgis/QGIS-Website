@@ -1,12 +1,12 @@
 ---
 draft: false
 subtitle: ''
-title: Политика в отношении окружающей среды
+title: Экологическая политика
 type: page
 
 ---
 {{<content-start classes="content narrow" >}}
-# Политика в отношении окружающей среды
+# Экологическая политика
 Rationale[](https://www.qgis.org/en/site/getinvolved/governance/codeofconduct/environmentalpolicy.html#rationale "Link to this heading")
 -
 Environmental issues, such as the climate crisis, the rapid decrease of biodiversity, and pollution are pressing issues for everyone in the Geoscience community and beyond. Many QGIS users and contributors are geoscientists or geoinformatics specialists. As such, we need to act responsibly and serve as role models. If we act, there is a chance that the members of the general public that are less informed about these issues will also feel the urgency to act and help reduce the impact of human activity on our planet.

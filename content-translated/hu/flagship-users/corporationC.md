@@ -1,7 +1,7 @@
 ---
 draft: 'true'
 logo: corporationC.png
-title: Corporation C
+title: C vállalat
 type: flagship-user
 
 ---

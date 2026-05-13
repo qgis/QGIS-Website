@@ -12,6 +12,8 @@
   translation: Разширена картография
 - id: alreadyDonated
   translation: Вече сте дарили? Скрийте тази подкана
+- id: alternativeDownloads
+  translation: ''
 - id: annualInternationalConference
   translation: годишна международна конференция
 - id: archive
@@ -31,7 +33,7 @@
   translation: Нашият модел за развитие на общността дава възможност на всеки да оформи
     бъдещето на QGIS според своите нужди.
 - id: cookieNotice
-  translation: Използваме „бисквитки“ 🍪. Това подобрява работата на сайта и го прави
+  translation: Използваме бисквитки 🍪. Това подобрява работата на сайта и го прави
     по-ефективен. Като продължите да използвате този сайт, вие се съгласявате с нашите
 - id: cookiePolicy
   translation: политика за бисквитките
@@ -48,7 +50,7 @@
 - id: diversityStatement
   translation: Декларация за многообразие
 - id: donate
-  translation: Donate
+  translation: Дари
 - id: donateAndDownload
   translation: Дарете и изтеглете
 - id: download
@@ -131,11 +133,17 @@
   translation: да се проучи бъдещето на ГИС.
 - id: largeMembership
   translation: Голямо членство
+- id: latestInstallerForWindows
+  translation: ''
+- id: latestInstallerWithGridsForWindows
+  translation: ''
 - id: latestPointReleaseTip
   translation: Всеки месец създаваме ново издание за най-новата ни версия. Тези издания
     не съдържат нови функции, а само корекции на грешки.
 - id: latestRelease
   translation: Последно обновяване
+- id: latestReleaseMacOS
+  translation: ''
 - id: latestVersionForMacOS
   translation: Стандартна версия за macOS
 - id: latestVersionForWindows
@@ -165,6 +173,14 @@
   translation: Дългосрочна версия за Windows (%s %s)
 - id: longTermVersionForWindowsQt6
   translation: Дългосрочна версия за Windows (%s) с Qt6 (експериментална)
+- id: ltrInstallerForWindows
+  translation: ''
+- id: ltrInstallerWithGridsForWindows
+  translation: ''
+- id: ltrReleaseMacOS
+  translation: ''
+- id: magnetLink
+  translation: ''
 - id: mapEast
   translation: Карта Изток
 - id: mapNorth
@@ -188,15 +204,15 @@
 - id: menuBlog
   translation: Блог
 - id: menuBooks
-  translation: Books
+  translation: Книги
 - id: menuBrandGuidelines
-  translation: Насоки за марката
+  translation: Указания - Марка
 - id: menuBugReporting
   translation: Докладване на грешки
 - id: menuCaseStudies
   translation: Казуси
 - id: menuCertificationProgramme
-  translation: Certification Programme
+  translation: Програма за сертифициране
 - id: menuCharter
   translation: Харта
 - id: menuCommercialSupport
@@ -204,7 +220,7 @@
 - id: menuCommunicationChannels
   translation: Комуникационни канали
 - id: menuCommunity
-  translation: Community
+  translation: Общност
 - id: menuContactAndSupport
   translation: Contact and Support
 - id: menuContainerImages
@@ -218,7 +234,7 @@
 - id: menuDocumentation
   translation: Документация
 - id: menuDonate
-  translation: Donate
+  translation: Дари
 - id: menuDonors
   translation: Дарители
 - id: menuDownload
@@ -236,11 +252,11 @@
 - id: menuFunding
   translation: Финансиране
 - id: menuGetInvolved
-  translation: Get involved
+  translation: Включете се
 - id: menuGitHubSponsors
   translation: Спонсори на GitHub
 - id: menuGoodies
-  translation: Goodies
+  translation: Лакомства
 - id: menuInfrastructure
   translation: Инфраструктура
 - id: menuInstallationGuide
@@ -292,13 +308,13 @@
 - id: menuProject
   translation: Проект
 - id: menuProjectOrganisation
-  translation: Project Organisation
+  translation: Проектна Организация
 - id: menuQGISDeveloperMeetings
   translation: Срещи на разработчици на QGIS
 - id: menuQGISFoundation
-  translation: QGIS Foundation
+  translation: QGIS Фондация
 - id: menuQGISMetrics
-  translation: QGIS Metrics
+  translation: QGIS Показатели
 - id: menuQGISTestingWarning
   translation: Предупреждение за тестване на QGIS
 - id: menuQGISUC2025
@@ -310,9 +326,9 @@
 - id: menuReports
   translation: Доклади
 - id: menuResources
-  translation: Resources
+  translation: Ресурсен център
 - id: menuResourcesHub
-  translation: Resources Hub
+  translation: Ресурсен център
 - id: menuRoadmap
   translation: Пътна карта
 - id: menuSUSEOpenSUSE
@@ -326,7 +342,7 @@
 - id: menuSpack
   translation: Spack
 - id: menuStackExchange
-  translation: StackExchange
+  translation: СтикованОбмен
 - id: menuTesting
   translation: Тестване
 - id: menuVisualChangelogs
@@ -336,6 +352,8 @@
 - id: merginMapsPlatforms
   translation: Мобилно приложение за Сливане на карти (достъпно за устройства с Android,
     iOS и Windows)
+- id: metalinkFile
+  translation: ''
 - id: minutes
   translation: Мин.
 - id: monthly
@@ -352,7 +370,9 @@
   translation: Офлайн (самостоятелни) инсталатори
 - id: offlineInstallersDescription
   translation: Тези инсталатори са за потребители, които желаят лесно да споделят
-    изтегления файл, например като го поставят на USB памет или мрежово споделяне.
+    изтегления файл, например като го запишат на USB памет или мрежово споделяне.
+    Обърнете внимание, че горните инсталатори не включват опционалните проекционни
+    решетки.
 - id: older
   translation: По-стари
 - id: oneTime
@@ -360,7 +380,9 @@
 - id: onlineInstaller
   translation: Онлайн инсталатор (OSGeo4W)
 - id: onlineInstallerDescription
-  translation: ''
+  translation: Този инсталатор е най-добрият начин да поддържате QGIS актуален, да
+    стартирате множество версии на вашата система и да сведете до минимум натоварването
+    на нашите сървъри за изтегляне.
 - id: osgeo4wNetworkInstaller
   translation: OSGeo4W Мрежов инсталатор
 - id: otherMethodsMoreInfo
@@ -431,6 +453,8 @@
   translation: Подкрепа от нашата доброволческа общност
 - id: thirdPartyTouchOptimizedApps
   translation: Приложения на трети страни, оптимизирани за докосване
+- id: torrentFile
+  translation: ''
 - id: upToDateDocumentation
   translation: Актуална документация
 - id: usedBy

@@ -10,7 +10,7 @@ type: page
 
 グッズ
 =
-If you are a fan of QGIS, you might want to visit our store so you can buy some mementos to show off your favourite desktop GIS. We have a number of great t-shirts, mugs, hoodies, caps and more, so do pay a visit to one of our stores below!
+QGISのファンの方は、ぜひ当ストアをチェックしてみてください！お気に入りのデスクトップGISへの愛着を示すグッズが揃っています。Tシャツ・マグカップ・パーカー・キャップなど豊富なアイテムをご用意していますので、以下のストアをぜひご覧ください！
 
 QGISのアパレルを購入すると、QGISを使用していることをアピールできるだけでなく、販売されたTシャツごとにQGISプロジェクトに手数料が与えられます。
 
