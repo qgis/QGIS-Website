@@ -13,7 +13,7 @@
 - id: alreadyDonated
   translation: Уже пожертвовали? Скрыть запрос
 - id: alternativeDownloads
-  translation: ''
+  translation: Другие варианты скачивания
 - id: annualInternationalConference
   translation: ежегодной международной конференции,
 - id: archive
@@ -40,7 +40,7 @@
 - id: current
   translation: Актуальная
 - id: currentVersion
-  translation: Текущая версия QGIS %s '%s', выпущенная %s.
+  translation: Текущая версия QGIS %s '%s', выпущена %s.
 - id: cursorLocation
   translation: Положение курсора
 - id: days
@@ -133,16 +133,16 @@
 - id: largeMembership
   translation: Значительное участие
 - id: latestInstallerForWindows
-  translation: ''
+  translation: Установить Актуальный релиз (%s)
 - id: latestInstallerWithGridsForWindows
-  translation: ''
+  translation: Установить Актуальный релиз с сетками (%s)
 - id: latestPointReleaseTip
   translation: Каждый месяц выходит версия, которая кроме цифры после точки, содержит
     исправления ошибок, но без новых возможностей.
 - id: latestRelease
-  translation: Последний релиз
+  translation: Актуальный релиз
 - id: latestReleaseMacOS
-  translation: ''
+  translation: Актуальный релиз для macOS (%s)
 - id: latestVersionForMacOS
   translation: Обычная версия для macOS
 - id: latestVersionForWindows
@@ -366,7 +366,9 @@
 - id: offlineInstallers
   translation: Полноценные установщики
 - id: offlineInstallersDescription
-  translation: ''
+  translation: Данный установщик — для тех, кому нужно передавать установщик в виде
+    файла, например, на флешке или по локальной сети. Имейте в виду, что эти установщики
+    не включают пользовательские сетки.
 - id: older
   translation: Старше
 - id: oneTime
@@ -374,9 +376,8 @@
 - id: onlineInstaller
   translation: Сетевой установщик (OSGeo4W)
 - id: onlineInstallerDescription
-  translation: Данный установщик является налучшим для поддержания в актуальном состоянии
-    QGIS, позволяет запускать разные версии на вашей системе и снижать нагрузку на
-    наши сервера.
+  translation: Данный установщик лучше всего подходит, чтобы поддерживать QGIS в актуальном
+    состоянии, запускать разные версии и минимизировать нагрузку на наши сервера.
 - id: osgeo4wNetworkInstaller
   translation: Сетевой установщик OSGeo4W
 - id: otherMethodsMoreInfo

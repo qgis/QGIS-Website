@@ -19,11 +19,11 @@ QGIS is used by governments, large multi-national organisations, corporate entit
 ## QGIS бесплатен, но не без затратен
 It has taken, and will continue to take, a great deal of effort to develop high quality tools like those provided at QGIS.org. Initially this cost was borne exclusively through the efforts of dedicated volunteers. As the project matured, a financial ecosystem developed around the project. Customers began to contract community members to extend the QGIS project (software, documentation, online infrastructure) to better serve their needs.
 
-In parallel to these directed funding efforts, we developed programmes for supporting the project with funds that we can use at our own discretion via donations and sustaining memberships. These discretionary funds allow us to provide all of the supporting infrastructure around the project. In addition it enables us to fund:
+Наряду с этим прямым финансированием мы разработали программы поддержки проекта средствами, которыми мы можем распоряжаться по своему усмотрению, получаемыми через пожертвования или постоянное участие. Эти средства позволяют нам поддерживать необходимую инфраструктуру проекта. Кроме того, это позволяет нам финансировать:
 - улучшения качества ПО
 - организация встреч разработчиков
-- набор технических специалистов для увеличения охвата частей проекта и
-- взращивание сообщества вокруг проекта, дабы обеспечить его долголетие.
+- набор технических специалистов для расширенных элементов проекта и
+- развитие сообщества, обеспечивающее стабильность и долголетие проекта.
 
 ## A value for value model
 Many of our users migrate to QGIS from proprietary alternatives which are financially unsustainable to use within their organisations. We celebrate the fact that we are able to open doors for those needing spatial tools such as QGIS which would have otherwise been closed. However, we also ask you to share some of the value gains that you realise from moving to QGIS with us. The funds you provide to us are used to the direct benefit of all users, who get to enjoy a more feature rich, stable and well documented set of QGIS tools. This ‘value for value’ model helps to ensure the long term sustainability and prosperity of the QGIS project. With nearly half a million daily active users, your contributions can make a huge impact to the lives of many people. The project has received in-kind and financial contributions from many well known international organisations around the world, whom we thank deeply. We invite you to join the ever growing number of organisations who see value in the work we do and share value back to us in the form of financial contributions to support our work.
