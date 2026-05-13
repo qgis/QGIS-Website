@@ -183,7 +183,7 @@ Join a community of like-minded individuals in your region.
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -199,7 +199,7 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -221,7 +221,7 @@ Create, edit, visualise, analyse and publish geospatial information.
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -241,7 +241,7 @@ Benefit from the powerful symbology, labeling and blending features to impress t
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 

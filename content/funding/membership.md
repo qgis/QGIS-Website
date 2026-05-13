@@ -39,7 +39,7 @@ In the future we hope to expand these activities as funding allows.
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -54,7 +54,7 @@ Flagship Member (e.g. for companies larger than 100 employees, federal governmen
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -69,7 +69,7 @@ Large Member (e.g. for larger cities, provinces or companies up to 100 employees
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -84,7 +84,7 @@ Medium Member (e.g. for universities, medium size cities or companies up to 50 e
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -152,7 +152,7 @@ Contributions from sustaining memberships aid in resolving bugs and issues promp
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -176,7 +176,7 @@ Flagship, large and medium sustaining members will have their logo on the QGIS h
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -192,7 +192,7 @@ Sustaining members are highlighted in the visual changelogs of QGIS software rel
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -207,7 +207,7 @@ You may use a special version of the QGIS logo on your website and materials, si
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 

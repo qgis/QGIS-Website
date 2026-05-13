@@ -58,7 +58,7 @@ listSubtitle = "layoutClass=third" >}}
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -74,7 +74,7 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -98,7 +98,7 @@ Create, edit, visualise, analyse and publish geospatial information.
 On major and minor release dates, the release branch is created and the release is tagged and tar balls are prepared. Point releases are just tagged and tar balls are created.
 
 
-{{< rich-box-start>}}
+{{< rich-box-start >}}
 
 {{< rich-content-start themeClass="coloring-1" >}}
 
@@ -114,7 +114,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 
 {{< rich-box-end >}}
 
-{{< rich-box-start>}}
+{{< rich-box-start >}}
 
 {{< rich-content-start themeClass="coloring-2" >}}
 
@@ -130,7 +130,7 @@ Feel free to subscribe to any of the lists, and remember to contribute by answer
 
 {{< rich-box-end >}}
 
-{{< rich-box-start>}}
+{{< rich-box-start >}}
 
 {{< rich-content-start themeClass="coloring-6" >}}
 
@@ -198,7 +198,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 
 [Report an issue](#)
 
-{{< rich-content-end>}}
+{{< rich-content-end >}}
 
 {{< rich-right-start >}}  
 

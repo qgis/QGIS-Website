@@ -32,39 +32,39 @@ We co-operate with Spreadshirt. They produce locally and ship the products to al
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS hoodie](img/hoodie.jpg)
 
-{{< column-end>}}
+{{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS tshirt](img/qgis-heart-logo.jpg)
 
-{{< column-end>}}
+{{< column-end >}}
 
 {{< columns-end >}}
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS mugs](img/qgis-q-logo.jpg)
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS thermos](img/thermos.jpg)
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS sign](img/qgis-q.jpg)
 
-{{< column-end>}}
+{{< column-end >}}
 
 {{< columns-end >}}
 
@@ -90,39 +90,39 @@ Some more creative and funny (but unofficial) designs can be found in the Red Bu
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS hoodie](img/redbubble1.jpg)
 
-{{< column-end>}}
+{{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS tshirt](img/redbubble2.jpg)
 
-{{< column-end>}}
+{{< column-end >}}
 
 {{< columns-end >}}
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS mugs](img/redbubble3.jpg)
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS thermos](img/redbubble4.jpg)
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 ![QGIS sign](img/redbubble5.jpg)
 
-{{< column-end>}}
+{{< column-end >}}
 
 {{< columns-end >}}
 

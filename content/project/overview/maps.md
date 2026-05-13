@@ -9,7 +9,7 @@ sidebar: true
 
 {{< content-start  >}}
 
-{{< maps-header>}}
+{{< maps-header >}}
 
 {{< hub-images showcase="map" columns="gallery" >}}
 

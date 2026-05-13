@@ -62,7 +62,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 
 [Report an issue]({{< ref "resources/support/bug-reporting" >}})
 
-{{< rich-content-end>}}
+{{< rich-content-end >}}
 
 {{< rich-right-start >}}  
 

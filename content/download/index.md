@@ -48,7 +48,7 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 
 ## Windows
 
-{{< download-windows>}}
+{{< download-windows >}}
 
 {{< platform-content-end >}}
 

@@ -13,7 +13,7 @@ Reviewer: Tim Sutton
 # Contact and Support
 
 
-{{< rich-box-start>}}
+{{< rich-box-start >}}
 
 {{< rich-content-start themeClass="coloring-6" >}}
 

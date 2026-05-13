@@ -39,7 +39,7 @@ text = "Learn more" >}}
 
 {{< columns-start >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 
@@ -54,7 +54,7 @@ text = "Learn more" >}}
 
 {{< column-end >}}
 
-{{< column-start>}}
+{{< column-start >}}
 
 {{< rich-box-start >}}
 

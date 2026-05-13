@@ -8,7 +8,7 @@ sidebar: true
 
 {{< content-start  >}}
 
-{{< screenshots-header>}}
+{{< screenshots-header >}}
 
 {{< hub-images showcase="screenshot" columns="6" >}}
 
