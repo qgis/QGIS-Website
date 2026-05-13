@@ -1041,8 +1041,18 @@ sectionPagesMenu = 'main'
   [i18n.content]
     [i18n.content.default]
       files = ["content/_index.md"]
-      globs = ["content/**/*.md"]
-      excludedGlobs = ["content/community-blogs/**", "content/funders/**", "content/flickr-images/**"]
+      globs = [
+        "content/**/*.md",
+        "content/**/**/*.md", 
+        "content/**/**/**/*.md",
+        "content/**/**/**/**/*.md"
+      ]
+      excludedGlobs = [
+        "content/community-blogs/**",
+        "content/funders/**",
+        "content/flickr-images/**",
+        "content/project/visual-changelogs/**/funders/**"
+        ]
   [languages]
     [languages.en]
     languageCode = "en"
