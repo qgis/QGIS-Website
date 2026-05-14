@@ -2,7 +2,7 @@ name: 🌐 i18n Automation
 
 on:
   schedule:
-    - cron: '0 4 * * *'  # Run daily at 04:00 UTC (after tx-coverage at 03:00)
+    - cron: '30 4 * * *'  # Run daily at 04:30 UTC (after tx-coverage at 03:00)
   workflow_dispatch:  # Allow manual triggering
 
 jobs:
@@ -92,7 +92,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add content-translated/* i18n/* config.toml
           git commit -m "🤖 Update translations"
-          git pull --rebase origin ${{ github.ref_name }}
           git push
       
       - name: Report status
