@@ -29,31 +29,65 @@ Hier zijn enkele dingen waar we de gelden die we ontvangen voor gebruiken:
 
 In de toekomst hopen we, als de fondsen ons dat mogelijk maken, de activiteiten nog uit te breiden.
 ## Niveaus voor lidmaatschap
-{{< columns-start >}} {{< column-start>}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### € 27.000+
-Lid Vlaggenschip (bijv. voor bedrijven met meer dan 100 werknemers, federale overheidsorganisaties) {{< rich-content-end >}} {{< rich-box-end >}}
+Lid Vlaggenschip (bijv. voor bedrijven met meer dan 100 werknemers, federale overheidsorganisaties)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 9.000+
-Lid Groot (bijv. voor grotere steden, provincies of bedrijven met tot 100 werknemers) {{< rich-content-end >}} {{< rich-box-end >}}
+Lid Large (bijv. voor grotere steden, provincies of bedrijven met tot 100 werknemers)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 3.000+
-Lid Medium (bijv. voor universiteiten, medium grote steden of bedrijven tot 50 werknemers) {{< rich-content-end >}} {{< rich-box-end >}}
+Lid Medium (bijv. voor universiteiten, medium grote steden of bedrijven tot 50 werknemers)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 500+
-Lid Klein (bijv voor kleinere steden of bedrijven tot 10 werknemers) {{< rich-content-end >}} {{< rich-box-end >}}
+Lid Small (bijv voor kleinere steden of bedrijven tot 10 werknemers)
 
-{{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Dragende lidmaatschappen duren ten minste een jaar, waarna ze kunnen worden voortgezet met een nieuwe betaling, of het is mogelijk ze te laten verlopen. Dragende lidmaatschappen hebben geen stemrecht. Bestaand stemrecht wordt niet beïnvloed.
 
@@ -65,47 +99,111 @@ Accepteren van dragende leden is ter beoordeling en goedkeuring van de Board, di
 ## Voordelen voor dragende leden
 Ondersteunen van het project QGIS als dragend lid  verschaft de volgende voordelen:
 
-{{< columns-start >}} {{< column-start class="is-one-third">}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<column-start class="is-one-third" >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Publieke erkenning
 Alle dragende leden en donoren zullen worden vermeld op de projectpagina [Dragende leden]({{< ref "/funding/membership.md" >}}), in de volgorde van de categorie van lidmaatschap met een link terug naar de organisatie van het dragende lid of website van het bedrijf en hun logo in een grootte die de categorie van hun lidmaatschap reflecteert.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}}
+{{<rich-content-end >}}
 
-{{< column-start class="is-two-thirds vertical-colums" >}} {{< columns-start >}} {{< column-start >}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text">}}
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds vertical-colums" >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Verbeterde kwaliteit software
-Bijdragen van dragende leden helpen bij het snel oplossen van bugs en problemen, wat resulteert in een betere gebruikerservaring. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Verbeterde zichtbaarheid merk
 Van dragende leden van vlaggenschip, large en medium zal hun logo worden opgenomen in de banner in de voettekst op de startpagina van QGIS met een logo van grootte en volgorde die de categorie van hun lidmaatschap reflecteren.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
 
-{{< columns-start >}} {{< column-start>}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Vermeldingen in updates van de software
-Dragende leden worden vermeld in de visuele logs met wijzigingen van uitgaven van de software van QGIS, wat hun voortgezette inspanningen voor de ondersteuning van het project benadrukt. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Publieke erkenning
 U mag een speciale versie van het logo van QGIS op uw website en materialen gebruiken, die weergeven dat u het project ondersteunt.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### QGIS vrij van advertenties houden
 Dragend lidmaatschap helpt ons ervoor te zorgen dat we geen tactieken tegen 'vijandige gebruikers' hoeven te gebruiken, zoals adverteren, om het project te financieren.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 De beslissingen over het uitgeven van fondsen zullen worden gemaakt door het QGIS Project Steering Committee, voorgesteld in een budget dat dient te worden goed- of afgekeurd door de algemene vergadering van QGIS.ORG.
 ## Hoe een dragend lid te worden
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Eerste contact
 {{<column-end >}}
 
@@ -115,9 +213,13 @@ U kunt contact opnemen met de penningmeester op finance@qgis.org of enig ander l
 
 {{<button class="is-primary6" link="mailto:finance@qgis.org" text="Schrijven naar de penningmeester" >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Verklaringen en uitgeven van facturen
 {{<column-end >}}
 
@@ -125,9 +227,13 @@ U kunt contact opnemen met de penningmeester op finance@qgis.org of enig ander l
 
 De penningmeester zal alle details uitleggen (zoals contactinformatie en adres, het recht om het logo van de organisatie te gebruiken op onze pagina voor dragende leden) en zal een factuur afgeven voor de kosten van het afgedragen lidmaatschap.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Verificatie van betalingen
 {{<column-end >}}
 
@@ -135,9 +241,13 @@ De penningmeester zal alle details uitleggen (zoals contactinformatie en adres, 
 
 De penningmeester verifieert de ontvangst van de betaling om officieel de organisatie te erkennen als een dragend lid.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Beheren van lidmaatschap
 {{<column-end >}}
 
@@ -147,9 +257,13 @@ We verschaffen een website waar dragende leden worden vermeld, gecategoriseerd o
 
 [Dragende leden openen](https://members.qgis.org/)
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Erkenning en promotie
 {{<column-end >}}
 
@@ -161,9 +275,13 @@ We verschaffen een website waar dragende leden worden vermeld, gecategoriseerd o
 
 **Promotie**: Indien van toepassing zal QGIS promotie op sociale media uitvoeren om de ondersteuning van dragende leden te benadrukken.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Doorlopende verbintenis
 {{<column-end >}}
 
@@ -171,18 +289,38 @@ We verschaffen een website waar dragende leden worden vermeld, gecategoriseerd o
 
 Voormalige dragende leden worden afzonderlijk vermeld voor een periode van twee jaar om hun eerdere bijdragen te erkennen.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< rich-box-start icon="💡" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<columns-end >}}
+
+{{<rich-box-start icon="💡" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Eenmalige betalingen
-Elk bedrag kan gedoneerd worden, via directe overschrijvingen naar onze bankrekening (SEPA-betaling), betaling met creditcard (via Stripe.com) of Paypal (informatie is beschikbaar op de pagina [Donaties]({{< ref "/funding/donate.md" >}}). Zelfs een kleine donatie kan het verschil maken en helpen om een belangrijke projectdoelen te bereiken! {{< rich-content-end >}} {{< rich-box-end >}}
+Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals!
 
-{{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="💁" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Over ‘geoormerkt’ bijdragen
-We betreuren het dat we geen fondsen kunnen accepteren die zijn ‘geoormerkt’ omdat dat vele administratieve problemen oplevert. Als u bent geïnteresseerd in het financieel bijdragen aan specifieke aspecten van de ontwikkeling van QGIS, moedigen wij u aan om aanvullende menselijke bronnen aan het project toe te voegen, bijv. het inhuren van een ontwikkelaar, of deelnemen in ons initiatief voor het oplossen van problemen. {{< rich-content-end >}} {{< rich-box-end >}}
+We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative.
 
-{{< rich-box-start icon="⚠️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="⚠️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ##### Waarschuwing
-Het accepteren van aangevraagde lidmaatschappen voor dragende leden is ter beoordeling van de QGIS PSC. We behouden ons het recht voor aanvragen te weigeren als de ondersteunende organisatie of partij  op gespannen voet lijken te staan met het ethos van ons project. Bijvoorbeeld aanvragen van marketingbedrijven die niets te maken hebben met GIS / ruimtelijke diensten, of aanvragen waarvan we redenen hebben om aan te nemen dat de aanwezigheid van het logo van de sponsor en marketingmaterialen op onze site en andere materialen die de ervaring van onze gebruikers naar beneden halen, zullen worden geweigerd. {{< rich-content-end >}} {{< rich-box-end >}}
+Het accepteren van aangevraagde lidmaatschappen voor dragende leden is ter beoordeling van de QGIS PSC. We behouden ons het recht voor aanvragen te weigeren als de ondersteunende organisatie of partij  op gespannen voet lijken te staan met het ethos van ons project. Bijvoorbeeld aanvragen van marketingbedrijven die niets te maken hebben met GIS / ruimtelijke diensten, of aanvragen waarvan we redenen hebben om aan te nemen dat de aanwezigheid van het logo van de sponsor en marketingmaterialen op onze site en andere materialen die de ervaring van onze gebruikers naar beneden halen, zullen worden geweigerd.
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

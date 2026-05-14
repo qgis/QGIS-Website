@@ -11,13 +11,17 @@ type: page
 ---
 {{<content-start >}}
 # 资源
-{{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🖖" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### 安装问题?
 如果您想了解在所有支持平台安装QGIS的信息，我们已为您准备了一份完整的安装指南：
 
 [安装指南]({{< ref "/resources/installation-guide/index.md" >}})
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## 文档
 QGIS拥有丰富的文档资料。所有核心文档 (用户手册、开发者手册等) 均提供英文版本。用户指南等部分文档还提供其他语言版本。
 
@@ -27,11 +31,11 @@ QGIS拥有丰富的文档资料。所有核心文档 (用户手册、开发者�
 
 {{<language-select >}}
 
-<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
-
 {{<tabs tab1="QGIS |ltrversion|" tab2="QGIS测试版 (>|ltrversion|)" tab3="归档版本" tab4="数据保护" >}}
 
-{{< tab-content-start tab="1" >}} **面向用户 (QGIS {{< param "ltrversion" >}}):**
+{{<tab-content-start tab="1" >}}
+
+**For users (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="桌面用户指南 — <lang>" >}}
 
@@ -62,42 +66,6 @@ QGIS拥有丰富的文档资料。所有核心文档 (用户手册、开发者�
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/zip" layoutClass="inline-block" listTitle="手册 HTML ZIP 版" >}}
 
 {{<tab-content-end >}}
-
-<!--{{< tab-content-start tab="2" >}}
-**面向用户 (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual" layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>">}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction" layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual" layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
-
-
-**面向文档编写者 (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines" layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
-
-
-**面向开发者 (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook" layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>">}}
-
-{{< rich-list listLink="https://qgis.org/pyqgis/|version|/" layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
-
-
-{{< rich-list listLink="https://qgis.org/api/|version|/" layoutClass="inline-block" listTitle="C++ API documentation" >}}
-
-{{< rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md" layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
-
-**下载专区 (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/pdf" layoutClass="inline-block" listTitle="PDF of the manuals" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/zip" layoutClass="inline-block" listTitle="HTML zip of the manuals" >}}
-
-{{< tab-content-end >}} -->
 
 {{<tab-content-start tab="2" >}}
 
@@ -163,12 +131,16 @@ QGIS拥有丰富的文档资料。所有核心文档 (用户手册、开发者�
 
 {{<tab-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## 支持
 QGIS社区拥有大量优质网站及技术支持论坛。
 
 {{<button class="is-primary6" link="resources/support" text="查看支持选项" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

@@ -28,31 +28,65 @@ Här är några av de saker som vi använder de medel vi får till:
 
 I framtiden hoppas vi kunna utöka dessa aktiviteter i takt med att finansieringen tillåter.
 ## Medlemskapsnivåer
-{{< columns-start >}} {{< column-start>}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### € 27,000+
-Flaggskeppsmedlem (t.ex. för företag som är större än 100 anställda, federala statliga organisationer) {{< rich-content-end >}} {{< rich-box-end >}}
+Flagship Member (e.g. for companies larger than 100 employees, federal governmental organizations)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 9,000+
-Stor medlem (t.ex. för större städer, provinser eller företag med upp till 100 anställda) {{< rich-content-end >}} {{< rich-box-end >}}
+Large Member (e.g. for larger cities, provinces or companies up to 100 employees)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 3,000+
-Medium Member (t.ex. för universitet, medelstora städer eller företag med upp till 50 anställda) {{< rich-content-end >}} {{< rich-box-end >}}
+Medium Member (e.g. for universities, medium size cities or companies up to 50 employees)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 500+
-Liten medlem (t.ex. för mindre städer eller företag med upp till 10 anställda) {{< rich-content-end >}} {{< rich-box-end >}}
+Small Member (e.g. for smaller cities or companies up to 10 employees)
 
-{{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Understödjande medlemskap gäller i ett år, varefter det kan fortsätta med en ny betalning eller upphöra att gälla. Stödmedlemskap omfattar inte rösträtt. Befintliga rösträtter förblir opåverkade.
 
@@ -64,47 +98,111 @@ Godkännande av stödjande medlemmar ska vara föremål för styrelsens bedömni
 ## Förmåner för stödjande medlemskap
 Att stödja QGIS-projektet som en stödjande medlem ger följande fördelar:
 
-{{< columns-start >}} {{< column-start class="is-one-third">}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<column-start class="is-one-third" >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Offentligt erkännande
 Alla stödjande medlemmar och donatorer kommer att listas på projektets [Medlemssida] ({{< ref "/funding/membership.md" >}}), ordnade efter medlemskategori med en länk tillbaka till den stödjande medlemmens organisations- eller företagswebbplats och deras logotyp i storlek enligt deras medlemskategori.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}}
+{{<rich-content-end >}}
 
-{{< column-start class="is-two-thirds vertical-colums" >}} {{< columns-start >}} {{< column-start >}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text">}}
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds vertical-colums" >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Förbättrad programvarukvalitet
-Bidrag från stödmedlemskap hjälper till att lösa buggar och problem snabbt, vilket resulterar i en bättre användarupplevelse. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Förbättrad varumärkesexponering
 Flaggskeppsmedlemmar, stora och medelstora stödmedlemmar kommer att ha sin logotyp på QGIS-hemsidans sidfotsbanner med en logotypstorlek och ordning som återspeglar deras medlemskategori
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
 
-{{< columns-start >}} {{< column-start>}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Utvalda i Programuppdateringar
-Stödjande medlemmar lyfts fram i de visuella ändringsloggarna för QGIS-programvaruversioner, vilket visar deras pågående engagemang för att stödja projektet. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Offentligt erkännande
 Du får använda en specialversion av QGIS-logotypen på din webbplats och i ditt material för att signalera ditt stöd för projektet.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Håll QGIS reklamfritt
 Stödjande medlemskap bidrar till att säkerställa att vi inte behöver använda "användarfientliga" taktiker, såsom reklam, för att finansiera projektet.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Beslutet om hur medlen ska användas kommer att fattas av QGIS-projektets styrkommitté och föreslås i en budget som kommer att godkännas eller avslås av QGIS.ORG:s generalförsamling.
 ## Hur blir jag stödmedlem
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Inledande kontakt
 {{<column-end >}}
 
@@ -114,9 +212,13 @@ Du kan kontakta kassören på finance@qgis.org eller någon annan medlem i PSC (
 
 {{<button class="is-primary6" link="mailto:finance@qgis.org" text="Skriv till kassören" >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Förtydligande och fakturautställande
 {{<column-end >}}
 
@@ -124,9 +226,13 @@ Du kan kontakta kassören på finance@qgis.org eller någon annan medlem i PSC (
 
 Kassören samlar in nödvändiga uppgifter (t.ex. kontaktuppgifter, adress och tillstånd att använda organisationens logotyp på sidan för QGIS stödmedlemskap) och skickar en faktura på medlemsavgiften.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Verifiering av betalning
 {{<column-end >}}
 
@@ -134,9 +240,13 @@ Kassören samlar in nödvändiga uppgifter (t.ex. kontaktuppgifter, adress och t
 
 Kassören verifierar mottagandet av betalningen för att officiellt erkänna organisationen som en stödjande medlem.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Förvaltning av medlemskap
 {{<column-end >}}
 
@@ -146,9 +256,13 @@ Vi tillhandahåller en webbplats där stödmedlemmar listas, kategoriseras efter
 
 [Öppen stödmedlem](https://members.qgis.org/)
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Erkännande och marknadsföring
 {{<column-end >}}
 
@@ -160,9 +274,13 @@ Vi tillhandahåller en webbplats där stödmedlemmar listas, kategoriseras efter
 
 **Marknadsföring**: När det är lämpligt kommer QGIS att genomföra marknadsföring i sociala medier för att lyfta fram stödet från stödjande medlemmar.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Löpande engagemang
 {{<column-end >}}
 
@@ -170,18 +288,38 @@ Vi tillhandahåller en webbplats där stödmedlemmar listas, kategoriseras efter
 
 Tidigare stödmedlemmar listas separat under en period av två år för att uppmärksamma deras tidigare bidrag.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< rich-box-start icon="💡" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<columns-end >}}
+
+{{<rich-box-start icon="💡" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Engångsbetalningar
-Donationer kan vara av valfritt belopp, via direktöverföring till vårt bankkonto (SEPA-betalning), kreditkortsbetalning (via stripe.com) eller Paypal (information finns på [Donationer]({{< ref "/funding/donate.md" >}}) sidan). Även en liten donation kan göra skillnad och hjälpa oss att nå viktiga projektmål! {{< rich-content-end >}} {{< rich-box-end >}}
+Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals!
 
-{{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="💁" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Om "öronmärkt" finansiering
-Vi beklagar att vi inte accepterar "öronmärkt" finansiering eftersom det skapar många administrativa problem. Om du är intresserad av att finansiera specifika aspekter av QGIS-utvecklingen uppmuntrar vi dig att avsätta ytterligare mänskliga resurser till projektet, t.ex. genom att anställa en utvecklare eller delta i vårt buggfixningsinitiativ. {{< rich-content-end >}} {{< rich-box-end >}}
+We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative.
 
-{{< rich-box-start icon="⚠️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="⚠️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ##### Varning
-Godkännande av ansökningar om stödjande medlemskap sker enligt QGIS PSC:s gottfinnande. Vi förbehåller oss rätten att avvisa erbjudanden om stödjande medlemmar om medlemsorganisationen eller gruppen verkar vara i strid med vårt projekts etos. Till exempel erbjudanden från marknadsföringsföretag som inte har något att göra med GIS / spatiala tjänster, eller erbjudanden där vi har anledning att tro att närvaron av den stödjande medlemmens logotyp och marknadsföringsmaterial på vår webbplats och annat material kommer att försämra våra användares upplevelse kommer att avvisas. {{< rich-content-end >}} {{< rich-box-end >}}
+Acceptance of sustaining membership applications is at the discretion of the QGIS PSC. We reserve the right to decline offers of sustaining members if the membership organisation or party seems to be at odds with the ethos of our project. For example offers from marketing companies that have nothing to do with GIS / spatial services, or offers where we have reason to believe the presence of the sustaining member logo and marketing materials on our site and other materials will degrade the experience of our users will be declined.
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

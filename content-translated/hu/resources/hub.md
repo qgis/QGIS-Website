@@ -11,13 +11,17 @@ type: page
 ---
 {{<content-start >}}
 # Erőforrások
-{{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🖖" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Problémája akadt a telepítéssel?
 Ha információt keres a QGIS telepítéséről valamely elérhető platformhoz, készítettünk Önnek egy átfogó útmutatót:
 
 [Telepítési útmutató]({{< ref "/resources/installation-guide/index.md" >}})
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Dokumentáció
 A QGIS-hez rengeteg dokumentáció érhető el. Az összes alapvető dokumentáció (felhasználói kézikönyv, fejlesztői kézikönyvek stb.) elérhető angol nyelven. Néhány dokumentáció, például a felhasználói kézikönyv, más nyelveken is elérhető.
 
@@ -27,11 +31,11 @@ Minden QGIS hosszútávú kiadás (LTR) dokumentációját megtalálja a megfele
 
 {{<language-select >}}
 
-<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
-
 {{<tabs tab1="QGIS |ltrversion|" tab2="QGIS próbaverzió (>|ltrversion|)" tab3="Archivált kiadások" tab4="Adatvédelem" >}}
 
-{{< tab-content-start tab="1" >}} **Felhasználóknak (QGIS {{< param "ltrversion" >}}):**
+{{<tab-content-start tab="1" >}}
+
+**For users (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Asztali felhasználói kézikönyv – <lang>" >}}
 
@@ -62,42 +66,6 @@ Minden QGIS hosszútávú kiadás (LTR) dokumentációját megtalálja a megfele
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/zip" layoutClass="inline-block" listTitle="HTML kézikönyvek zip-ben" >}}
 
 {{<tab-content-end >}}
-
-<!--{{< tab-content-start tab="2" >}}
-**For users (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
- 
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>">}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
-
-
-**For documentation writers (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
-
-
-**For developers (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>">}}
-
-{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
-
-
-{{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API documentation" >}}
-
-{{< rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md"  layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
-
-**For download (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/pdf"  layoutClass="inline-block" listTitle="PDF of the manuals" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/zip"  layoutClass="inline-block" listTitle="HTML zip of the manuals" >}}
-
-{{< tab-content-end >}} -->
 
 {{<tab-content-start tab="2" >}}
 
@@ -163,12 +131,16 @@ A GDPR-nak és a kapcsolódó adatvédelmi előírásoknak megfelelően az aláb
 
 {{<tab-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## Támogatás
 A QGIS-közösség számos kiváló weboldalt üzemeltet támogató fórumokkal.
 
 {{<button class="is-primary6" link="resources/support" text="Támogatási lehetőségek megtekintése" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

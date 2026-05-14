@@ -76,14 +76,52 @@ Trueno is a free Font Library serif font. In order to embed it, please use
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
-în antetul siteului {{< table >}} | Nume | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
+in the site header
+
+{{<table >}}
+
+| Name | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' |
+
+{{</table >}}
 ## Culoare
 ### Culori primare
-**Dark Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Dark green](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}
+**Verde Închis**
+
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Dark green](visual/dark_green.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Culoarea verde închis din QGIS se va utiliza pentru fiecare element de logo din versiunea monocromă. Se poate folosi și pentru fundal, titlul principal sau text.
 
-**Light Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Light green](visual/light_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86<br />{{< column-end >}} {{< columns-end >}}
+**Verde Deschis**
+
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Light green](visual/light_green.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Culoarea verde deschis din QGIS se va utiliza pentru conținutul mai puțin important. Se poate folosi pentru un al doilea fundal, text sau pentru legături.
 
@@ -99,11 +137,39 @@ Cele două culori primare sunt folosite ca și gradient vertical liniar în logo
 ### Culori secundare
 **Galben pal**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Lemon](visual/lemon.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0<br />{{< column-end >}} {{< columns-end >}}
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Lemon](visual/lemon.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 **Portocaliu**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Orange](visual/orange.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0<br />{{< column-end >}} {{< columns-end >}}
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Orange](visual/orange.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Culorile Galben pal și Portocaliu din QGIS vor fi folosite pentru accentuări și la apelarea acțiunilor
 

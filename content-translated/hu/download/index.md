@@ -11,7 +11,9 @@ type: page
 ---
 {{<content-start >}}
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## A letöltés megkezdése előtt
 Szoftverünk a QGIS.org weboldalról ingyenesen érhető el, és örökre ingyenes is marad.
 
@@ -21,21 +23,29 @@ Akár az adományozás mellett dönt, akár nem, reméljük, hogy élvezni fogja
 
 Minden jót!
 
-<p class="is-size-7 has-text-weight-medium">
-A QGIS-nek nyújtott adományok egyes országokban adólevonásra jogosíthatnak. A részletekről kérjük, érdeklődjön a helyi adóhivatalnál. Ha német vállalatként vagy szervezetként szeretne adólevonást igénybe venni, kérjük, a <a href="https://qgis.de/doku.php/verein/spenden">Német QGIS felhasználói csoporton</a> keresztül adományozzon. Ők adómentes német egyesületként kiállíthatnak fizetési igazolást.
-</p>
+{{<paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" skipToDownload="true" >}}
+Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
 
-<!-- {{< payrexx-widget otherMethods="true" skipToDownload="true" >}} -->
+{{<paragraph-end >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start mode="html" >}}
+
+{{<stripe-widget otherMethods="true" skipToDownload="true" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<download-platform-selector-start >}}
 
 {{<platform-content-start platform="windows" >}}
 ## Windows
-{{< download-windows>}} {{< platform-content-end >}}
+{{<download-windows >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="macos" >}}
 ## macOS
@@ -62,33 +72,45 @@ A GNU/Linux egy szabad operációs rendszer, amely ugyanazokon az elveken alapul
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux telepítési útmutató]({{< ref "resources/installation-guide#linux" >}}) {{< platform-content-end >}}
+[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="bsd" >}}
 ## BSD
-[BSD telepítési útmutató]({{< ref "resources/installation-guide#freebsd" >}}) {{< platform-content-end >}}
+[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="container" >}}
 ## Konténer-rendszerképek
-[Konténre-rendszerkép telepítési útmutató]({{< ref "resources/installation-guide#container-images" >}}) {{< platform-content-end >}}
+[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="mobile" >}}
 ## Mobil és tablet
-{{< mobile-downloads >}} {{< platform-content-end >}}
+{{<mobile-downloads >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="source" >}}
 ## Forráskód
-A QGIS egy nyílt forráskódú szoftver, amely a <b>GNU General Public License</b> feltételei szerint érhető el, így forráskódja „tarball” fájlokban vagy a git-tárolóból tölthető le.
+QGIS is open source software available under the terms of the **GNU General Public License** meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
-A QGIS forráskódja <a href="/downloads/qgis-latest.tar.bz2">innen (legutóbbi kiadás)</a> és <a href="/downloads/qgis-latest-ltr.tar.bz2">innen (hosszútávú kiadás)</a> érhető el
+QGIS Source Code is available [here (latest release)](/downloads/qgis-latest.tar.bz2) and [here (long term release)](/downloads/qgis-latest-ltr.tar.bz2)
 
 A QGIS forráskódból történő fordításának módjáról a különböző platformok esetében a telepítési útmutatóban talál információkat: [itt](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-A forráskódot a <a href="https://github.com/qgis/QGIS">GitHub-tárolónk</a> klónozásával vagy forkolásával is beszerezheti. {{< platform-content-end >}}
+You can also obtain the source code by cloning or forking our [GitHub repository](https://github.com/qgis/QGIS).
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="example" >}}
 ## Minta adathalmazok
-Tesztelési és tanulási célokra [elérhető egy minta adatkészlet](https://docs.qgis.org/latest/hu/docs/user_manual/introduction/getting_started.html#downloading-sample-data), amely különböző forrásokból származó, különböző formátumú adatokat tartalmaz. {{< platform-content-end >}}
+Tesztelési és tanulási célokra [rendelkezésre áll egy minta adatkészlet](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), amely különböző forrásokból származó és különböző formátumú adatok gyűjteményét tartalmazza.
+
+{{<platform-content-end >}}
 
 {{<download-platform-selector-end >}}
 

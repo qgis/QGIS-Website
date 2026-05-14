@@ -13,7 +13,9 @@ type: page
 
 {{<usecases >}}
 _______
-{{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🙋" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Изпратете вашия казус
 Споделете вашата история на успех с QGIS с общността! Приветстваме подавания на казуси, които демонстрират приложения от реалния свят и вдъхновяват други потребители.
 ### Вариант 1: Директен принос
@@ -30,6 +32,8 @@ _______
 
 Вашият казус демонстрира възможностите на QGIS и помага за разширяване на базата от знания на нашата общност.
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

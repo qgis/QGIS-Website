@@ -13,13 +13,21 @@ type: page
 ## Az Ön frissen sült QGIS példánya épp töltődik.
 {{<progress-bar autoHideAfter="60000" >}}
 
-{{< rich-box-start icon="⬇️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="⬇️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Kövesse figyelemmel a letöltést
 A letöltés eltarthat egy ideig. Kérjük, **kövesse a folyamatot** a **letöltéskezelője** segítségével.
 
-Ha a letöltés nem indult el, manuálisan is letöltheti a QGIS-t a [QGIS.org letölthető fájlok](https://download.qgis.org/downloads/) oldalról. {{< rich-content-end >}} {{< rich-box-end >}}
+If your download didn't start, you can manually download QGIS from the [QGIS.org hosted downloads](https://download.qgis.org/downloads/).
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Az Ön támogatása létfontosságú a QGIS fejlesztéséhez
 Szoftverünk a QGIS.org weboldalról ingyenesen érhető el, és örökre ingyenes is marad.
 
@@ -29,32 +37,74 @@ Akár az adományozás mellett dönt, akár nem, reméljük, hogy élvezni fogja
 
 Minden jót!
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" alreadyDonated="true">}}
+{{<rich-content-end >}}
 
-<!-- {{< payrexx-widget otherMethods="true" alreadyDonated="true">}} -->
+{{<rich-right-start mode="html" >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<stripe-widget otherMethods="true" alreadyDonated="true" >}}
 
-{{< rich-box-start layoutClass="qgis_first_conference mt-6">}} {{< rich-content-start >}} ![QGIS fejlesztők 1. találkozója](qgis_1st_conference.png "QGIS fejlesztők 1. találkozója") {{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-right-end >}}
 
-{{< rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="qgis_first_conference mt-6" >}}
+
+{{<rich-content-start >}}
+
+![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting")
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Tippek az első indításhoz
-Ha bármilyen kérdése van a QGIS indítása során, várjuk az első telepítéshez készült teljes útmutatónkban. <a href="/resources/installation-guide">Telepítési útmutató </a> {{< rich-content-end >}} {{< rich-box-end >}}
+If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time. [Installation guide]({{< ref "resources/installation-guide" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Hogyan tovább?
 Tesztelési és tanulási célokra [rendelkezésre áll egy minta adatkészlet](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), amely különböző forrásokból származó és különböző formátumú adatok gyűjteményét tartalmazza.
 
 Megnézheti az esettanulmányokat, ott is sok inspiráló történet található.
 
-{{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### Esettanulmányok
 Inspiráló történeteket gyűjtünk felhasználóinktól, amelyek bemutatják a QGIS projekt sokoldalúságát és erejét.
 
-[Tudjon meg többet]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}} {{< rich-box-end >}}
+[Find out more]({{< ref "project/case-studies.md" >}})
 
-{{< rich-box-start layoutClass="has-right rounded" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<usecase >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### Helyi felhasználói csoportok
 Csatlakozzon a régiójában élő hasonlóan gondolkodók közösségéhez.
 
-[Helyi csoportok listája]({{< ref "community/groups.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />![Helyi felhasználói csoportok](../../project/img/groups.jpg "Helyi felhasználói csoportok") {{< rich-right-end >}} {{< rich-box-end >}}
+[Local groups list]({{< ref "community/groups.md" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+![Local user groups](../../project/img/groups.jpg "Local user groups")
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

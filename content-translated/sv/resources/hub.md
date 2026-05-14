@@ -11,13 +11,17 @@ type: page
 ---
 {{<content-start >}}
 # Resources
-{{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🖖" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Problem med installationen?
 Om du letar efter information om hur du installerar QGIS på alla tillgängliga plattformar har vi tagit fram en omfattande guide åt dig:
 
 [Installation guide]({{< ref "/resources/installation-guide/index.md" >}})
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Dokumentation
 QGIS har en hel del dokumentation. All kärndokumentation (användarhandbok, handböcker för utvecklare etc.) finns på engelska. Vissa dokument, t.ex. användarhandboken, finns även på andra språk.
 
@@ -27,11 +31,11 @@ Du hittar dokumentation för varje QGIS Long Term Release (LTR) på respektive d
 
 {{<language-select >}}
 
-<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
-
 {{<tabs tab1="QGIS |ltrversion|" tab2="QGIS-testning (>|ltrversion|)" tab3="Arkiverade utgåvor" tab4="Dataskydd" >}}
 
-{{< tab-content-start tab="1" >}} **För användare (QGIS {{< param "ltrversion" >}}):**
+{{<tab-content-start tab="1" >}}
+
+**For users (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Användarhandbok för stationära datorer <lang>" >}}
 
@@ -62,42 +66,6 @@ Du hittar dokumentation för varje QGIS Long Term Release (LTR) på respektive d
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/zip" layoutClass="inline-block" listTitle="HTML-zip av manualerna" >}}
 
 {{<tab-content-end >}}
-
-<!--{{< tab-content-start tab="2" >}}
-**For users (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
- 
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>">}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
-
-
-**For documentation writers (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
-
-
-**For developers (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>">}}
-
-{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
-
-
-{{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API documentation" >}}
-
-{{< rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md"  layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
-
-**For download (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/pdf"  layoutClass="inline-block" listTitle="PDF of the manuals" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/zip"  layoutClass="inline-block" listTitle="HTML zip of the manuals" >}}
-
-{{< tab-content-end >}} -->
 
 {{<tab-content-start tab="2" >}}
 
@@ -163,12 +131,16 @@ I enlighet med GDPR och relaterade dataskyddsbestämmelser tillhandahåller vi f
 
 {{<tab-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## Support
 QGIS-communityn erbjuder en mängd utmärkta webbplatser med supportforum.
 
 {{<button class="is-primary6" link="resources/support" text="Visa supportalternativ" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

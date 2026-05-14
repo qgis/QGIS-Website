@@ -10,7 +10,9 @@ type: page
 ---
 {{<content-start >}}
 # Контакты и поддержка
-{{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## ✉️ Mailing Lists
 QGIS has various mailing lists for discussing QGIS related topics.
 
@@ -18,7 +20,9 @@ If you are going to ask questions please read this: [How to ask a QGIS question?
 
 {{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="See Mailing lists" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Before you start
 Before you head off to join up with your chosen support group, we would like to mention a few guidelines for participating in our community:
 ### Stay on topic

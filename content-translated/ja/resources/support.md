@@ -10,7 +10,9 @@ type: page
 ---
 {{<content-start >}}
 # Contact and Support
-{{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## ✉️ メーリングリスト
 QGIS には関連する話題を議論するための様々なメーリングリストがあります。
 
@@ -18,7 +20,9 @@ QGIS には関連する話題を議論するための様々なメーリングリ
 
 {{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="メーリングリストを見て下さい" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## 参加する前に
 お好みのサポートグループに参加する前に、私たちのコミュニティへ参加する際のガイドラインをいくつかご紹介します:
 ### トピックを外れない

@@ -13,13 +13,21 @@ type: page
 ## Свежеиспечённая копия QGIS загружается.
 {{<progress-bar autoHideAfter="60000" >}}
 
-{{< rich-box-start icon="⬇️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="⬇️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Monitor Your Download
 Downloads may take a while. Please **monitor the progress** using your **download manager**.
 
-If your download didn't start, you can manually download QGIS from the [QGIS.org hosted downloads](https://download.qgis.org/downloads/). {{< rich-content-end >}} {{< rich-box-end >}}
+If your download didn't start, you can manually download QGIS from the [QGIS.org hosted downloads](https://download.qgis.org/downloads/).
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Ваша поддержка жизненно необходима для развития QGIS
 Наше ПО всегда было и будет доступно бесплатно на QGIS.org.
 
@@ -29,32 +37,74 @@ If your download didn't start, you can manually download QGIS from the [QGIS.org
 
 С наилучшими пожеланиями!
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" alreadyDonated="true">}}
+{{<rich-content-end >}}
 
-<!-- {{< payrexx-widget otherMethods="true" alreadyDonated="true">}} -->
+{{<rich-right-start mode="html" >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<stripe-widget otherMethods="true" alreadyDonated="true" >}}
 
-{{< rich-box-start layoutClass="qgis_first_conference mt-6">}} {{< rich-content-start >}} ![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting") {{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-right-end >}}
 
-{{< rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="qgis_first_conference mt-6" >}}
+
+{{<rich-content-start >}}
+
+![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting")
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Советы по первому запуску
-If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time. <a href="/resources/installation-guide">Installation guide </a> {{< rich-content-end >}} {{< rich-box-end >}}
+If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time. [Installation guide]({{< ref "resources/installation-guide" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Что дальше?
 For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats.
 
 You can also look at the cases - there are many inspiring stories there.
 
-{{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### Примеры использования
 We gather inspiring stories from actual users that showcase the versatility and power of the QGIS solution
 
-[Узнать подробности]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}} {{< rich-box-end >}}
+[Find out more]({{< ref "project/case-studies.md" >}})
 
-{{< rich-box-start layoutClass="has-right rounded" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<usecase >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### Местные группы пользователей
 Join a community of like-minded individuals in your region.
 
-[Список местных групп]({{< ref "community/groups.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />![Местные группы пользователей](../../project/img/groups.jpg "Местные группы пользователей") {{< rich-right-end >}} {{< rich-box-end >}}
+[Local groups list]({{< ref "community/groups.md" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+![Local user groups](../../project/img/groups.jpg "Local user groups")
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

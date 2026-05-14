@@ -76,14 +76,52 @@ Trueno est une police à serif disponible gratuitement dans la bibliothèque de 
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
-dans l'en-tête du site {{< table >}} | Nom | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
+in the site header
+
+{{<table >}}
+
+| Name | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' |
+
+{{</table >}}
 ## Couleur
 ### Couleurs primaires
-**Dark Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Dark green](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}
+**Vert Foncé**
+
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Dark green](visual/dark_green.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 La couleur Vert foncé de QGIS sera utilisée pour tous les éléments du logo dans sa version monochrome. Elle peut aussi être utilisée comme couleur de fond, de l'en-tête principale ou de texte.
 
-**Light Green** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Light green](visual/light_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86<br />{{< column-end >}} {{< columns-end >}}
+**Vert clair**
+
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Light green](visual/light_green.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 La couleur Vert clair de QGIS sera utilisée pour le contenu de moindre importance. Elle peut être utilisée comme couleur pour un fond secondaire, du texte ou des liens.
 
@@ -99,11 +137,39 @@ Les deux couleurs primaires sont utilisées comme gradient linéaire vertical po
 ### Couleurs secondaires
 **Citron**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Lemon](visual/lemon.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0<br />{{< column-end >}} {{< columns-end >}}
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Lemon](visual/lemon.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 **Orange**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Orange](visual/orange.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0<br />{{< column-end >}} {{< columns-end >}}
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Orange](visual/orange.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Les couleurs Citron et Orange de QGIS seront utilisées pour les mises en valeurs et les appels à action
 

@@ -10,7 +10,9 @@ type: page
 ---
 {{<content-start >}}
 # Contact en ondersteuning
-{{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## ✉️ Mailinglijsten
 QGIS heeft verscheidene mailinglijsten voor het bespreken van aan QGIS gerelateerde onderwerpen.
 
@@ -18,7 +20,9 @@ Als u een vraag wilt gaan stellen, lees dan eerst dit: [Hoe een vraag over QGIS 
 
 {{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="Bekijk Mailinglijsten" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Voordat u begint
 Voordat u koers zet om deel te nemen aan de door u gekozen groep voor ondersteuning, zouden we graag een paar richtlijnen willen vermelden voor het deelnemen in onze gemeenschap:
 ### Blijf bij het onderwerp

@@ -11,13 +11,17 @@ type: page
 ---
 {{<content-start >}}
 # Resources
-{{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🖖" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Installation troubles?
 If you are looking for information on installing QGIS on all available platforms, we have prepared a comprehensive guide for you:
 
 [Installation guide]({{< ref "/resources/installation-guide/index.md" >}})
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## API-Dokumentation
 QGIS has a lot of documentation. All of the core documentation (user manual, developer handbooks etc.) is available in English. Some documents such as the user guide are also available in other languages.
 
@@ -27,11 +31,11 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 
 {{<language-select >}}
 
-<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
-
 {{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Archived releases" tab4="Datenschutz" >}}
 
-{{< tab-content-start tab="1" >}} **For users (QGIS {{< param "ltrversion" >}}):**
+{{<tab-content-start tab="1" >}}
+
+**For users (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
 
@@ -62,42 +66,6 @@ You will find documentation for every QGIS Long Term Release (LTR) on the respec
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/zip" layoutClass="inline-block" listTitle="HTML-Version der Handbücher als .zip-Datei" >}}
 
 {{<tab-content-end >}}
-
-<!--{{< tab-content-start tab="2" >}}
-**For users (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop User Guide — <lang>" >}}
- 
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Training manual — <lang>">}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Gentle Intro to GIS — <lang>" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Server Guide — <lang>" >}}
-
-
-**For documentation writers (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines"  layoutClass="inline-block link-with-language" listTitle="Documentation Guidelines — <lang>">}}
-
-
-**For developers (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS cookbook (for plugins and scripting) — <lang>">}}
-
-{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python Api documentation" >}}
-
-
-{{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API documentation" >}}
-
-{{< rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md"  layoutClass="inline-block" listTitle="Building QGIS from Source" >}}
-
-**For download (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/pdf"  layoutClass="inline-block" listTitle="PDF of the manuals" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/zip"  layoutClass="inline-block" listTitle="HTML zip of the manuals" >}}
-
-{{< tab-content-end >}} -->
 
 {{<tab-content-start tab="2" >}}
 
@@ -163,12 +131,16 @@ In line with GDPR and related data protection regulations, we provide the follow
 
 {{<tab-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## Unterstützung
 The QGIS community offers a wealth of excellent websites with support forums.
 
 {{<button class="is-primary6" link="resources/support" text="View support options" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

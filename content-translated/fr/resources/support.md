@@ -10,7 +10,9 @@ type: page
 ---
 {{<content-start >}}
 # Contact and Support
-{{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## ✉️ Listes de diffusion
 QGIS dispose de plusieurs listes de diffusion permettant de discuter de sujets liés à QGIS.
 
@@ -18,7 +20,9 @@ Si vous souhaitez poser des questions, veuillez lire ceci : [Comment poser une q
 
 {{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="Voir les listes de diffusion" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Avant de commencer
 Avant de rejoindre le groupe de soutien de votre choix, nous aimerions vous donner quelques conseils pour participer à notre communauté :
 ### Restez dans le sujet

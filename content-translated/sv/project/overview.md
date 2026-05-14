@@ -19,7 +19,13 @@ type: page
 ## Viktiga funktioner
 {{<tabs tab1="Skapa kartor" tab2="Redigera lager" tab3="Bearbeta och analysera" tab4="Dela kartor" >}}
 
-{{< columns-start id="content-tab-1" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Skapa karta](../img/create.gif "Skapa kartor") {{< column-end >}}
+{{<columns-start id="content-tab-1" >}}
+
+{{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
+
+![Create map](../img/create.gif "Create maps")
+
+{{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Klassledande kartografi
@@ -27,9 +33,19 @@ Upplev QGIS omfattande uppsättning designalternativ för att förverkliga dina 
 ###### Professionell kartproduktion
 Använd det intuitiva verktyget för layoutdesign för att producera högkvalitativa kartor i storformat.
 ###### Kraftfulla rapporteringsverktyg
-Skapa atlaser och rapporter med kartor, media och tabellinnehåll. {{< column-end >}} {{< columns-end >}}
+Create atlases and reports with maps, media and tabular content.
 
-{{< columns-start id="content-tab-2" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![Redigera karta](../img/edit.gif "Redigera karta") {{< column-end >}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start id="content-tab-2" >}}
+
+{{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
+
+![Edit map](../img/edit.gif "Edit map")
+
+{{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Exceptionell digitaliseringskompetens
@@ -39,9 +55,17 @@ Skapa geometrier med kurvor, CAD-liknande verktyg och ett stort antal geometrisk
 ###### Mycket anpassningsbara formulär
 Skapa användarvänliga formulär med hjälp av vår formulärdesigner.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start id="content-tab-3" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![visualisera karta](../img/visualize.gif "visualize map") {{< column-end >}}
+{{<columns-end >}}
+
+{{<columns-start id="content-tab-3" >}}
+
+{{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
+
+![visualize map](../img/visualize.gif "visualize map")
+
+{{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Omfattande analysverktyg
@@ -51,9 +75,17 @@ Kombinera analysverktyg visuellt för att enkelt skapa reproducerbara arbetsflö
 ###### Utökad analysmiljö
 Utforska vårt mångsidiga plugin-ekosystem med analysverktyg från tredje part för utökade möjligheter.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start id="content-tab-4" >}} {{< column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}} ![dela karta](../img/share.gif "share map") {{< column-end >}}
+{{<columns-end >}}
+
+{{<columns-start id="content-tab-4" >}}
+
+{{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
+
+![share map](../img/share.gif "share map")
+
+{{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Stöd för branschledande format
@@ -63,44 +95,108 @@ Förstärk din påverkan genom att utforska, använda och skapa webbtjänster ba
 ###### Publicera ditt arbete
 Utöka QGIS till molnet och mobila enheter för ökad tillgänglighet.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
+
+{{<columns-end >}}
 ## Utöka dina kunskaper med hjälp av gemenskapens resurser
-{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![Skapa karta](../img/plugs.jpg "Skapa karta") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column rounded" >}}
+
+![Create map](../img/plugs.jpg "Create map")
+
+{{<column-end >}}
+
+{{<column-start class="is-flex-direction-column is-justify-content-center " >}}
 ### 2000+ plugins utvecklade av gemenskapen
 Utöka funktionaliteten i QGIS-programmet med tusentals kostnadsfria tilläggsfunktioner.
 
-[Gå till plugins](https://plugins.qgis.org/) {{< column-end >}} {{< columns-end >}}
+[Go to plugins](https://plugins.qgis.org/)
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded" >}} ![Internationell konferens](../img/meetings.jpg "Internationell konferens") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column rounded" >}}
+
+![International conference](../img/meetings.jpg "International conference")
+
+{{<column-end >}}
+
+{{<column-start class="is-flex-direction-column is-justify-content-center " >}}
 ### Årlig internationell konferens
 Kom i kontakt med yrkesverksamma, entusiaster och QGIS-användare för nätverkande och kunskapsutbyte på vår årliga internationella användarkonferens.
 
-[Gemenskapsmöten]({{< ref "community/organisation/meetings/user_meetings.md" >}}) {{< column-end >}} {{< columns-end >}}
+[Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}})
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column rounded mb-4" >}} ![Lokala användargrupper](../img/groups.jpg "Lokala användargrupper") {{< column-end >}} {{< column-start class="is-flex-direction-column is-justify-content-center ">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column rounded mb-4" >}}
+
+![Local user groups](../img/groups.jpg "Local user groups")
+
+{{<column-end >}}
+
+{{<column-start class="is-flex-direction-column is-justify-content-center " >}}
 ### Lokala användargrupper och supportleverantörer
 Gå med i en gemenskap av likasinnade i din region.
 
-[Lokala grupplistor]({{< ref "community/groups.md" >}}) {{< column-end >}} {{< columns-end >}}
+[Local groups list]({{< ref "community/groups.md" >}})
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 [Gå med i gemenskapen]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
 ## Plattformsoberoende
-{{< columns-start >}} {{< column-start>}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ### QGIS Server
-Publicera dina QGIS-projekt och skikt som OGC-kompatibla WMS-, WMTS-, WFS- och WCS-tjänster. Kontrollera vilka skikt, attribut, layouter och koordinatsystem som ska exporteras. QGIS server betraktas som en referensimplementation för WMS 1.3. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layouts and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ### QGIS Desktop
 Skapa, redigera, visualisera, analysera och publicera spatial
 information.
 
-[Nedladdning]({{< ref "download.md" >}}) för Windows, Mac, Linux, BSD och Android. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+[Download]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android.
 
-{{< columns-start >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ### QGIS Webbklient
 Publicera dina QGIS-projekt på webben på ett enkelt sätt.
 
@@ -108,26 +204,52 @@ Dra nytta av de kraftfulla funktionerna för symbologi, märkning och blandning 
 
 [QGIS Web Client 2](https://github.com/qgis/qwc2)
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ### QGIS på mobiler och surfplattor
 QGIS-upplevelsen stannar inte på skrivbordet. Olika touchoptimerade appar från tredje part gör att du kan ta med dig QGIS ut från kontoret.
 * [QField]({{< ref "download.md" >}})
 * [Mergin Maps mobil-app]({{< ref "download.md" >}})
 * [IntraMaps Roam]({{< ref "download.md" >}})
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
-
-{{< rich-box-start layoutClass="has-right mt-6 mb-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
-### Fallstudier
-Vi samlar inspirerande berättelser från våra användare som visar hur mångsidigt och kraftfullt QGIS-projektet är.
-
-[Läs mer]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}}
+{{<rich-content-end >}}
 
 {{<rich-box-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third mb-6">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<rich-box-start layoutClass="has-right mt-6 mb-6" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
+### Fallstudier
+Vi samlar inspirerande berättelser från våra användare som visar hur mångsidigt och kraftfullt QGIS-projektet är.
+
+[Find out more]({{< ref "project/case-studies.md" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<usecase >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-third mb-6" >}}
 ## Visning av kartor
 Demonstrationer av våra användares kreativitet, som visar de kraftfulla kartskapande funktionerna i QGIS.
 
@@ -135,18 +257,30 @@ Demonstrationer av våra användares kreativitet, som visar de kraftfulla kartsk
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="map" quantity="4" columns="gallery" >}}
+{{<column-start class="is-flex-direction-column is-two-thirds" >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<hub-images showcase="map" quantity="4" columns="gallery" >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-third" >}}
 ## Applikationens skärmdumpar
 Nedan visas några skärmdumpar från QGIS självt och ett urval av kartor som skapats med QGIS.
 
-[Gå till skärmbilder]({{< ref "project/overview/screenshots.md" >}}) {{< column-end >}}
+[Go to screenshots]({{< ref "project/overview/screenshots.md" >}})
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< hub-images showcase="screenshot" quantity="4" columns="gallery" >}}
+{{<column-end >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-start class="is-flex-direction-column is-two-thirds" >}}
+
+{{<hub-images showcase="screenshot" quantity="4" columns="gallery" >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 {{<content-end >}}

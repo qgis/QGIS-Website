@@ -13,7 +13,9 @@ type: page
 
 {{<usecases >}}
 _______
-{{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🙋" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## 提交您的案例研究
 与社区分享您的QGIS成功故事！我们欢迎提交案例研究，展示实际应用成果并启示其他用户。
 ### 选项 1: 直接投稿
@@ -30,6 +32,8 @@ _______
 
 您的案例研究能够展示QGIS的各项功能，并有助于丰富社区知识库。
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

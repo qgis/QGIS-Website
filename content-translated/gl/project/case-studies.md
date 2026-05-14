@@ -13,7 +13,9 @@ type: page
 
 {{<usecases >}}
 _______
-{{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🙋" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Submit Your Case Study
 Share your QGIS success story with the community! We welcome case study submissions that showcase real-world applications and inspire other users.
 ### Option 1: Direct Contribution
@@ -30,6 +32,8 @@ Share your QGIS success story with the community! We welcome case study submissi
 
 Your case study demonstrates QGIS capabilities and helps grow our community knowledge base.
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

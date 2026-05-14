@@ -1,0 +1,52 @@
+---
+HasBanner: false
+archived: true
+date: 2014-07-01
+draft: false
+featured: false
+section: projektą
+sidebar: true
+thumbnail: images/india_guwahati1.png
+title: Mokymai ir tyrimai naudojant QGIS NIRD&PR-NERC, Guwahatyje, Indijoje
+type: case-study
+
+---
+{{<content-start >}}
+# Mokymai ir tyrimai naudojant QGIS NIRD&PR-NERC, Guwahatyje, Indijoje
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>July 01, 2014</span>
+</p>
+
+Nacionalinis Kaimo Vystymo Institutas ir Panchayati Raj (NIRD&PR) yra Indijos vyriausybės Kaimo vystymo ministerijos padalinys. Centrinė būstinė yra Hyderbado mieste ir turi tris sub-centrus Guwahati, Jaipur ir Patna miestuose. Guwahati yra Assam valstijos sostinė (Šiaurės-rytinėje šalies dalyje). Centras aktyviai užsiima trumpais (dažniausiai 5 dienų įskaitant ir vienos dienos GPS įrenginių apžiūros) GIS mokymais, skirtais valstybės, apskrities ir bloko lygio vyriausybės pareigūnams iš aštuonių šiaurės-rytų Indijos valstijų. Be valstybės pareigūnų, taipogi mokomi Universiteto fakultetų ir koledžų lektoriai, mokslininkai ir nevyriausybinių organizacijų nariai. Mokymus pilnai finansuoja NIRD, dalyviai turi apmokėti tik kelionės išlaidas. Autorius dirba NIRD Guwahati centro papildomo GIS fakulteto (GIS) koordinatoriumi ir Kaimo vystymo ir susijusių mokymų centre kartu su Dr. K. Haloi, mokymų ir tyrimų koordinatoriumi, i/c head, C-GARD, BIRD&PR-NERC.
+
+Anksčiau aš vesdavau GIS mokymus su komercine programine įranga, tokia kaip ArcGIS ir ERDAS. Po mokymo programos pabaigos dalyviai būdavo nepatenkinti, kad negali gauti programinės įrangos praktikai. Tada buvo rastas sprendimas - QGIS. Pristačius QuantumGIS pasidarė aišku, kad Atviro Kodo GIS gali patenkinti Indijos kaimo vystymo sektoriaus poreikius. Atitinkamai jis buvo įvestas į tyrimo darbus, kuriant geografinio pagrindo žemėlapius, tokius kaip kelių, drėkinimo, gyvenviečių, vandens naudojimo ribų ir pan. bei GPS duomenų paruošimui, atsiuntimui, analizei, susiejimui su vietovėje padarytomis nuotraukomis ir pan. Naudojant Google earth priedą mes supažindinti su LULC žemėlapių ruošimu.
+
+Programinė įranga tada buvo vienus metus naudota asmeniniams tikslams, naujose versijose buvo ieškoma pagerinto funkcionalumo. Tuo metu, kai autorius buvo mokymų koordinatorius, jis naudojo QGIS įvadiniams mokymams ir atsiliepimams.
+
+Centre QGIS naudojamas GIS mokymams. Toliau informuojama ir siūloma nepirkti jokių komercinių GIS paketų mokymams visoje apskrityje (administracinis Indijos vienetas po Valstybės ir Valstijos) ir žemesniuose lygmenyse, jei nėra realaus poreikio, o sutaupytos lėšos gali būti panaudotos perkant techninę įrangą, tokią kaip GPS, kompiuterius ir pan. Mokymuose mes supažindiname dalyvius su geopririšimu, duomenų bazių kūrimu, skaitmeninimu, keitimu, analize, spausdinimo kūrėju ir kt. Po QGIS pristatymo gauname gerus atsiliepimus iš įvairių tarnautojų ir studentų.
+
+Yra klausimas kodėl tik QGIS, kai yra tokia programinė įranga kaip uDig, MapWindow, gvSIG, GRASS. Atsakymas aiškus dėl to, kad QGIS yra OSGeo kuruojamas projektas, mažiau sudėtingas, vystymas labai greitas ir susietas su didžiule naudotojų ir vystytojų bendruomene ir pagaliau su autorių ekspertize. Paskutinioji 2.4 versija leidžia patenkinti visus kaimo vietovių vystymo vykdytojų Indijoje poreikius, patenkinant tiek šiandieninius reikalavimus, tiek ir norus ateičiai.
+
+Programinė įranga pagrinde naudojama resursų žymėjimui, kaimo infrastruktūros ir įrenginių žymėjimui, takoskyroms ir Mahatma Gandžio nacionalinės kaimo vystymo garantijos schemai (MGNREGS). Takoskyra ir MGNREGS yra Indijos vyriausybės flagmanai. Pratyboms naudojami vietos atviri rastro ir vektoriniai duomenys. Dalyviai skatinami atvykti su savo skyrių duomenimis, jei jie tinka darbui. Mokymai vykdomi laboratorijoje, kurioje yra 22 kompiuteriai su i7, 4GB RAM ir Windows8 OS. Kiekvienos mokymo programos dalyvių skaičius 20-30.
+
+<figure>
+<img src="../images/india_guwahati1.png" class="align-left" alt="india_guwahati1.png" />
+<figcaption>Training course at NIRD&amp;PR-NERC, Guwahati</figcaption>
+</figure>
+
+## Vykdyti QGIS mokymai ir dalyviai
+Pagrindinės mokymų temos yra įvadas į GIS ir QGIS programinę įrangą, pagrindinės įrankinės, priedų struktūra, geo-referencija, vektorinių duomenų kūrimas/keitimas, apkarpymas (rastro/vektorių), suliejimas, paviršiaus analizė, kontūrai, .csv į .shp sluoksniai, .shp į .kml konversija ir atgal, GPS duomenų apdorojimas, interpoliacija, lentelių keitimas/užklausos, laukų skaičiuotuvas, spausdinimo kūrėjas ir kelios bazinės vektorinių duomenų analizės. Be informacijos apie įvairias pagalbos svetaines, buvo sukurta LinkedIn grupė, skirta pagalbai po mokymų. Be QGIS mokymo programų, QGIS taipogi naudojamas tyrimuose, tokiuose kaip žemėlapių geo-pririšimas, duombazių kūrimas, vektorinių duomenų ištraukimas iš topolapų ir google earth, keitimas ir analizė, GPS duomenų atsiuntimas ir apdorojimas, o tada išdėstymo paruošimas ir pan.
+## Sėkmė
+Kiekvieną mėnesį mokoma 20-30 dalyvių, taigi šis skaičius kiekvieną mėnesį auga. Atsiliepimai apie mokymą vis dar labai pozityvūs ir skatinantys. Po mokymo dalyviai gauna sertifikatus. Šiuo metu dalyviai gauna atspausdintus lankstinukus ir mokymo medžiagą, o elektroniniu pavidalu - programinę įrangą ir praktikos duomenis, bet ateities planas yra sukurti DVD, kuriame būtų paskaitų/demonstracijų įrašas anglų kalba. Ateityje taipogi gali būti pradėtos sertifikatų ir diplomų programos.
+## Autoriai
+<figure>
+<img src="../images/india_guwahati2.png" class="align-left" alt="india_guwahati2.png" />
+<figcaption>Alajangi Simhachalam</figcaption>
+</figure>
+
+This article was contributed in July 2014 by Alajangi Simhachalam, Adjunct Faculty, NIRD-NERC, Guwahati Website: <http://www.nirdnerc.nic.in>
+
+{{<content-end >}}

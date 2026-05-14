@@ -11,7 +11,9 @@ type: page
 ---
 {{<content-start >}}
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Прежде чем начнётся загрузка
 Наше ПО всегда было и будет доступно бесплатно на QGIS.org.
 
@@ -21,21 +23,29 @@ type: page
 
 С наилучшими пожеланиями!
 
-<p class="is-size-7 has-text-weight-medium">
-Пожертвования в QGIS могут предусматривать налоговый вычет в некоторых странах. Пожалуйста, обратитесь в ваш налоговый орган за подробностями. Если вы хотите получить налоговый вычет как немецкая компания или организация, пожалуйста, оформите пожертвование через <a href="https://qgis.de/doku.php/verein/spenden">Немецкое сообщество QGIS</a>. Там вам выдадут подтверждение платежа от освобождённой от налогов немецкой ассоциации.
-</p>
+{{<paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" skipToDownload="true" >}}
+Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
 
-<!-- {{< payrexx-widget otherMethods="true" skipToDownload="true" >}} -->
+{{<paragraph-end >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start mode="html" >}}
+
+{{<stripe-widget otherMethods="true" skipToDownload="true" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<download-platform-selector-start >}}
 
 {{<platform-content-start platform="windows" >}}
 ## Windows
-{{< download-windows>}} {{< platform-content-end >}}
+{{<download-windows >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="macos" >}}
 ## macOS
@@ -62,33 +72,45 @@ GNU/Linux - свободно распространяемая операцион
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Инструкция по установке для Linux]({{< ref "resources/installation-guide#linux" >}}) {{< platform-content-end >}}
+[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="bsd" >}}
 ## BSD
-[Инструкция по установке для BSD]({{< ref "resources/installation-guide#freebsd" >}}) {{< platform-content-end >}}
+[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="container" >}}
 ## Образы контейнеров
-[Инструкция по установке образов контейнеров]({{< ref "resources/installation-guide#container-images" >}}) {{< platform-content-end >}}
+[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="mobile" >}}
 ## Мобильные устройства
-{{< mobile-downloads >}} {{< platform-content-end >}}
+{{<mobile-downloads >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="source" >}}
 ## Исходный код
-QGIS - ПО с открытым кодом, доступно по лицензии <b>GNU General Public License</b>, это означает, что его исходный код можно скачать через 'tarballs'  или репозиторий git.
+QGIS is open source software available under the terms of the **GNU General Public License** meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
-Исходный код QGIS доступен <a href="/downloads/qgis-latest.tar.bz2">здесь (актуальный релиз)</a> и <a href="/downloads/qgis-latest-ltr.tar.bz2">здесь (long term release)</a>
+QGIS Source Code is available [here (latest release)](/downloads/qgis-latest.tar.bz2) and [here (long term release)](/downloads/qgis-latest-ltr.tar.bz2)
 
 Чтобы скомпилировать QGIS для других платформ, воспользуйтесь [следующим руководством](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-Исходный код вы также можете получить путём клонирования или создания форка нашего <a href="https://github.com/qgis/QGIS">репозитория GitHub</a>. {{< platform-content-end >}}
+You can also obtain the source code by cloning or forking our [GitHub repository](https://github.com/qgis/QGIS).
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="example" >}}
 ## Примеры данных
-Для целей тестирования и обучения [доступен пример набора данных](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), который содержит данные из разных источников в разных форматах. {{< platform-content-end >}}
+For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats.
+
+{{<platform-content-end >}}
 
 {{<download-platform-selector-end >}}
 

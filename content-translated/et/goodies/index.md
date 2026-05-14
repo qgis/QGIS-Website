@@ -14,7 +14,9 @@ If you are a fan of QGIS, you might want to visit our store so you can buy some 
 
 Ostes QGIS'i rõivaid ei näita see ainult seda, et kasutad QGIS tarkvara, vaid iga särgi müügist saadud tulu antakse QGIS'i projektile.
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-third" >}}
 ## Spreadshirt
 Me teeme koostööd Spreadshirt'iga. Neil on kohalik tootmine  ja nad saadavad oma tooteid igasse riiki üle maailma.
 
@@ -22,13 +24,53 @@ Me teeme koostööd Spreadshirt'iga. Neil on kohalik tootmine  ja nad saadavad o
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< columns-start >}} {{< column-start>}} ![QGIS hoodie](img/hoodie.jpg) {{< column-end>}} {{< column-start>}} ![QGIS tshirt](img/qgis-heart-logo.jpg) {{< column-end>}} {{< columns-end >}}
+{{<column-start class="is-flex-direction-column is-two-thirds" >}}
 
-{{< columns-start >}} {{< column-start>}} ![QGIS mugs](img/qgis-q-logo.jpg) {{< column-end >}} {{< column-start>}} ![QGIS thermos](img/thermos.jpg) {{< column-end >}} {{< column-start>}} ![QGIS sign](img/qgis-q.jpg) {{< column-end>}} {{< columns-end >}}
+{{<columns-start >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-start >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
+![QGIS hoodie](img/hoodie.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS tshirt](img/qgis-heart-logo.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+![QGIS mugs](img/qgis-q-logo.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS thermos](img/thermos.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS sign](img/qgis-q.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-third" >}}
 ## Redbubble
 Red Bubble poest võib leida loomingulisemaid ja naljakamaid (kuid mitteametlikke) kujundusi.
 
@@ -36,10 +78,48 @@ Red Bubble poest võib leida loomingulisemaid ja naljakamaid (kuid mitteametlikk
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< columns-start >}} {{< column-start>}} ![QGIS hoodie](img/redbubble1.jpg) {{< column-end>}} {{< column-start>}} ![QGIS tshirt](img/redbubble2.jpg) {{< column-end>}} {{< columns-end >}}
+{{<column-start class="is-flex-direction-column is-two-thirds" >}}
 
-{{< columns-start >}} {{< column-start>}} ![QGIS mugs](img/redbubble3.jpg) {{< column-end >}} {{< column-start>}} ![QGIS thermos](img/redbubble4.jpg) {{< column-end >}} {{< column-start>}} ![QGIS sign](img/redbubble5.jpg) {{< column-end>}} {{< columns-end >}}
+{{<columns-start >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-start >}}
+
+![QGIS hoodie](img/redbubble1.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS tshirt](img/redbubble2.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+![QGIS mugs](img/redbubble3.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS thermos](img/redbubble4.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS sign](img/redbubble5.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 {{<content-end >}}

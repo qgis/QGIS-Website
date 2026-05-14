@@ -13,7 +13,9 @@ type: page
 
 {{<usecases >}}
 _______
-{{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🙋" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Dien uw praktijvoorbeeld in
 Deel uw succesverhaal in QGIS met de gemeenschap! We verwelkomen ingediende praktijkvoorbeelden die toepassingen in de echte wereld laten zien en andere gebruikers inspireren.
 ### Optie 1: Direct bijdragen
@@ -30,6 +32,8 @@ Deel uw succesverhaal in QGIS met de gemeenschap! We verwelkomen ingediende prak
 
 Uw praktijkvoorbeeld demonstreert de mogelijkheden van QGIS en helpt de kennisbank van de gemeenschap te vergroten.
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

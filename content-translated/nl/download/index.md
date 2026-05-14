@@ -11,7 +11,9 @@ type: page
 ---
 {{<content-start >}}
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Voordat het downloaden begint
 QGIS is gratis, en zal altijd gratis blijven, zonder kosten beschikbaar als het wordt gedownload vanaf QGIS.org.
 
@@ -21,21 +23,29 @@ Of u ervoor kiest om te doneren of niet, we hopen dat u geniet van ons werk van 
 
 Onze allerbeste groeten!
 
-<p class="is-size-7 has-text-weight-medium">
-Donaties aan QGIS zijn in sommige landen af te trekken van de belastingen. Vraag uw lokale belastingkantoor naar de details. Als u als Duits bedrijf of organisatie uw gift wilt aftrekken van de belasting, doneer dan via de <a href="https://qgis.de/doku.php/verein/spenden">Duitse QGIS gebruikersgroep</a>. Zij kunnen u, als een van belasting vrijgestelde Duitse vereniging, een bevestiging van de betaling verschaffen.
-</p>
+{{<paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" skipToDownload="true" >}}
+Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
 
-<!-- {{< payrexx-widget otherMethods="true" skipToDownload="true" >}} -->
+{{<paragraph-end >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start mode="html" >}}
+
+{{<stripe-widget otherMethods="true" skipToDownload="true" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<download-platform-selector-start >}}
 
 {{<platform-content-start platform="windows" >}}
 ## Windows
-{{< download-windows>}} {{< platform-content-end >}}
+{{<download-windows >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="macos" >}}
 ## macOS
@@ -62,33 +72,45 @@ GNU/Linux is een gratis besturingssysteem, gebouwd op dezelfde principes als waa
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}}) {{< platform-content-end >}}
+[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="bsd" >}}
 ## BSD
-[BSD-installatie-instructies]({{< ref "resources/installation-guide#freebsd" >}}) {{< platform-content-end >}}
+[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="container" >}}
 ## Container-images
-[Container-images Installatie-Instructies]({{< ref "resources/installation-guide#container-images" >}}) {{< platform-content-end >}}
+[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="mobile" >}}
 ## Mobiel en tablet
-{{< mobile-downloads >}} {{< platform-content-end >}}
+{{<mobile-downloads >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="source" >}}
 ## Broncode
-QGIS is open bron-software, beschikbaar onder de termen van de <b>GNU General Public License</b> wat betekent dat zijn broncode kan worden gedownload in 'tarballs' of vanuit de opslagplaats van Git.
+QGIS is open source software available under the terms of the **GNU General Public License** meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
-QGIS broncode is beschikbaar <a href="/downloads/qgis-latest.tar.bz2">hier (laatste uitgave)</a> en <a href="/downloads/qgis-latest-ltr.tar.bz2">hier (lange termijn uitgave)</a>
+QGIS Source Code is available [here (latest release)](/downloads/qgis-latest.tar.bz2) and [here (long term release)](/downloads/qgis-latest-ltr.tar.bz2)
 
 Bekijk de installatiegids om te zien hoe QGIS te compileren vanuit de bron voor de verschillende platforms: [hier](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-U kunt de broncode ook verkrijgen door onze <a href="https://github.com/qgis/QGIS">opslagplaats van GitHub</a>te klonen of te forken. {{< platform-content-end >}}
+You can also obtain the source code by cloning or forking our [GitHub repository](https://github.com/qgis/QGIS).
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="example" >}}
 ## Voorbeeld gegevenssets
-Voor doeleinden van testen en leren, [is een voorbeeld gegevensset beschikbaar](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), die collecties van gegevens bevat uit verschillende bronnen en in verschillende indelingen. {{< platform-content-end >}}
+Voor doeleinden van testen en leren, [is een voorbeeld gegevensset beschikbaar](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), die collecties van gegevens bevat uit verschillende bronnen en in verschillende indelingen.
+
+{{<platform-content-end >}}
 
 {{<download-platform-selector-end >}}
 

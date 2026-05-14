@@ -17,86 +17,161 @@ QGIS разработан командой целеустремлённых до
 
 Пожертвования в QGIS могут предусматривать налоговый вычет в некоторых странах. Пожалуйста, обратитесь в ваш налоговый орган за подробностями. Если вы хотите получить налоговый вычет как немецкая компания или организация, пожалуйста, оформите пожертвование через [Немецкое сообщество QGIS](https://qgis.de/doku.php/verein/spenden). Там вам выдадут подтверждение платежа от освобождённой от налогов немецкой ассоциации.
 
-{{< rich-box-start layoutClass="mt-6">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-box-start layoutClass="mt-6" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Меценатство
 Create a recurring sustaining membership.
 
 {{<button class="is-primary6" link="funding/membership" text="Подписаться" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
 
-{{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right mt-6" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Stripe Donation
-Для приёма пожертвований мы пользуемся услугами [stripe.com](https://stripe.com). Имейте в виду, что комиссия в Stripe заметно ниже, чем у Paypal, а потому мы будем признательны, если вы воспользуетесь Stripe вместо PayPal. Регистрации не требуется. {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< stripe-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+We use the [stripe.com](https://stripe.com) service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.
 
-{{< rich-box-start layoutClass="has-right mt-6" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<stripe-widget >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right mt-6" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Пожертвование через Payrexx
-Также для приёма пожертвований мы пользуемся услугами [payrexx.com](https://payrexx.com). Имейте в виду, что комиссия в Payrexx заметно ниже, чем у Paypal, а потому мы будем признательны, если вы воспользуетесь [Stripe](#stripe-donation) или Payrexx вместо PayPal. Регистрации не требуется.  {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< payrexx-widget >}} {{< rich-right-end >}} {{< rich-box-end >}}
+We also use the [payrexx.com](https://payrexx.com) service to receive credit card donations. Note that the payment fees at Payrexx are substantially lower than at Paypal - so we would appreciate it, if you could use [Stripe](#stripe-donation) or Payrexx instead of PayPal. No signup needed.
 
-{{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<payrexx-widget >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Банковский перевод
-Use the details below to make a donation via international money transfer: {{< rich-content-end >}} {{< rich-right-start >}}
+Вы можете сделать международный денежный перевод по этим реквизитам:
 
-<pre class="donatbox">
-Account name: QGIS.ORG
-Address:      Via Geinas 2
-              CH-7031 Laax
-BIC/SWIFT:    POFICHBEXXX
-IBAN:         CH09 0900 0000 9146 3839 8
-Reference:    Donation QGIS
-Currency:     EUR
-Bank name:    PostFinance AG
-Bank address: Mingerstrasse 20
-              3030 Berne
-              Switzerland
-VAT-number:   CHE-489.853.176
-</pre>
+{{<rich-content-end >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-right-start >}}
 
-{{< rich-box-start layoutClass="has-right paypal mb-6" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<pre-block textClasses="donatbox" >}}
+
+Account name: QGIS.ORG Address: Via Geinas 2 CH-7031 Laax BIC/SWIFT: POFICHBEXXX IBAN: CH09 0900 0000 9146 3839 8 Reference: Donation QGIS Currency: EUR Bank name: PostFinance AG Bank address: Mingerstrasse 20 3030 Berne Switzerland VAT-number: CHE-489.853.176
+
+{{</pre-block >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right paypal mb-6" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Пожертвование через Paypal
 You can use Paypal to donate using your own credit card (but we prefer to use [Payrexx](#payrexx-donation) for that). The payment is processed by PayPal but you don't need to have a PayPal account or sign-up for one if you are paying by credit card.
 
 Вы также можете пожертвовать из своей учетной записи PayPal.
 
-{{< paypal-button >}} {{< rich-content-end >}} {{< rich-right-start >}}<br />![](../paypal.png) {{< rich-right-end >}} {{< rich-box-end >}}
+{{<paypal-button >}}
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+![](../paypal.png)
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 ## Ваша поддержка жизненно необходима для развития QGIS
 We would like to extend our activities and improve the quality of QGIS. Your financial contribution will support the maintenance, improvement, and promotion of QGIS. Becoming a sustaining member is a way of ensuring the longevity and overall health of the project.
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third left-title">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-third left-title" >}}
 ## Enhanced Infrastructure & Development Support
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<column-start class="is-flex-direction-column is-two-thirds" >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Поддержание основной инфраструктуры
 * The official QGIS.org website, a central hub for all things QGIS.
 * Our issue tracking system for efficient bug and feature reporting.
-* The continuous integration system, ensuring code quality and stability through automated tests. {{< rich-content-end >}} {{< rich-box-end >}}
+* The continuous integration system, ensuring code quality and stability through automated tests.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Разработка ПО и контроль качества
 * Continually improve and package QGIS for various operating systems, making it accessible to more users worldwide.
 * Address bugs and other issues promptly, enhancing the user experience.
-* Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development. {{< rich-content-end >}} {{< rich-box-end >}}
+* Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development.
 
-{{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
 
-{{< columns-start class="mb-6">}} {{< column-start class="is-flex-direction-column is-one-third left-title">}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start class="mb-6" >}}
+
+{{<column-start class="is-flex-direction-column is-one-third left-title" >}}
 ## Рост сообщества и вовлечённости
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds ">}} {{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<column-start class="is-flex-direction-column is-two-thirds " >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Придание сил нашим добровольцам
 * Mentoring new contributors, fostering a welcoming and productive community.
 * Translating QGIS into multiple languages, making the software truly global.
-* Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own. {{< rich-content-end >}} {{< rich-box-end >}}
+* Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Взращивание сотрудничества и обмен знаниями
-* Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project. {{< rich-content-end >}} {{< rich-box-end >}}
+* Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project.
 
-{{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 QGIS.ORG wants to be transparent with the funds we receive and how we spend them. Please have a look at the financial reports and budgets in our [Finance]({{< ref "/community/foundation/finance" >}}) section.
 

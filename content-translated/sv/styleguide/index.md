@@ -76,14 +76,52 @@ Trueno är ett gratis Font Library serif-typsnitt. För att bädda in det, vänl
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
-in the site header {{< table >}} | Name | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' | {{< /table >}}
+in the site header
+
+{{<table >}}
+
+| Name | Font-family |:-------:|:----------------------:|------------| | Trueno Ultra light | 'TruenoUltraLight' | | Trueno Regular | 'TruenoRegular' | | Trueno Bold | 'TruenoBold' |
+
+{{</table >}}
 ## Färg
 ### Primärfärger
-**Mörkgrön** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Mörkgrön](visual/dark_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7<br />{{< column-end >}} {{< columns-end >}}
+**Dark Green**
+
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Dark green](visual/dark_green.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #589632<br />RGB: 88, 150, 50<br />CMYK: 70.53, 18.84, 100, 3.7
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Den mörkgröna QGIS-färg som ska användas för varje logotypelement i den svartvita versionen. Den kan också användas som bakgrundsfärg, primär rubrikfärg eller textfärg.
 
-**Ljusgrön** {{< columns-start >}} {{< column-start class="is-one-third">}} ![Ljusgrön](visual/light_green.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50,62, 12,6, 100, 0,86<br />{{< column-end >}} {{< columns-end >}}
+**Light Green**
+
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Light green](visual/light_green.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #93b023<br />RGB: 147, 176, 35<br />CMYK: 50.62, 12.6, 100, 0.86
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 QGIS ljusgröna färg som ska användas för innehåll av mindre betydelse. Den kan användas som sekundär bakgrunds-, text- eller länkfärg.
 
@@ -99,11 +137,39 @@ De två primärfärgerna används som en vertikal linjär gradient i logotypen, 
 ### Sekundära färger
 **Citron**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Citron](visual/lemon.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0<br />{{< column-end >}} {{< columns-end >}}
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Lemon](visual/lemon.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 **Apelsin**
 
-{{< columns-start >}} {{< column-start class="is-one-third">}} ![Apelsin](visual/orange.png) {{< column-end >}} {{< column-start class="is-two-thirds">}} HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0<br />{{< column-end >}} {{< columns-end >}}
+{{<columns-start >}}
+
+{{<column-start class="is-one-third" >}}
+
+![Orange](visual/orange.png)
+
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds" >}}
+
+HEX: #ee7913<br />RGB: 238, 121, 19<br />CMYK: 0, 62, 96, 0
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 QGIS-färgerna Lemon och Orange som ska användas för accenter och uppmaningar till handling
 

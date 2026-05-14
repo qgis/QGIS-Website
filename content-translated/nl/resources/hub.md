@@ -11,13 +11,17 @@ type: page
 ---
 {{<content-start >}}
 # Bronnen
-{{< rich-box-start icon="🖖" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🖖" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Problemen bij installeren?
 Als u op zoekt bent naar informatie voor het installeren van QGIS op alle beschikbare platforms, we hebben een uitgebreide gids voor u voorbereid:
 
 [Installatiegids]({{< ref "/resources/installation-guide/index.md" >}})
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Documentatie
 QGIS heeft veel documentatie. Alle belangrijkste brondocumentatie (gebruikersgids/-handleiding, handboek voor ontwikkelaars etc.) is beschikbaar in het Engels. Sommige documenten, zoals de gebruikersgids/-handleiding, zijn ook beschikbaar in andere talen.
 
@@ -27,11 +31,11 @@ Documentatie voor elke lange termijn uitgave (LTR) van QGIS kunt u vinden op de 
 
 {{<language-select >}}
 
-<!--{{< tabs tab1="QGIS |ltrversion|" tab2="QGIS |version|" tab3="QGIS testing (>|version|)" tab4="Archived releases" tab5="Data protection">}} -->
-
 {{<tabs tab1="QGIS |ltrversion|" tab2="QGIS testing (>|ltrversion|)" tab3="Gearchiveerde uitgaven" tab4="Gegevensbescherming" >}}
 
-{{< tab-content-start tab="1" >}} **Voor gebruikers (QGIS {{< param "ltrversion" >}}):**
+{{<tab-content-start tab="1" >}}
+
+**For users (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop gebruikershandleiding — <lang>" >}}
 
@@ -62,42 +66,6 @@ Documentatie voor elke lange termijn uitgave (LTR) van QGIS kunt u vinden op de 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/zip" layoutClass="inline-block" listTitle="HTML-zip van de handleidingen" >}}
 
 {{<tab-content-end >}}
-
-<!--{{< tab-content-start tab="2" >}}
-**Voor gebruikers (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/user_manual"  layoutClass="inline-block link-with-language" listTitle="Desktop gebruikershandleiding — <lang>" >}}
- 
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/training_manual"  layoutClass="inline-block link-with-language" listTitle="QGIS Trainingshandleiding — <lang>">}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/gentle_gis_introduction"  layoutClass="inline-block link-with-language" listTitle="Introductie voor GIS — <lang>" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/server_manual"  layoutClass="inline-block link-with-language" listTitle="Serverhandleiding — <lang>" >}}
-
-
-**Voor schrijvers van documentatie (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/documentation_guidelines"  layoutClass="inline-block link-with-language" listTitle="Richtlijnen voor documentatie — <lang>">}}
-
-
-**Voor ontwikkelaars (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/<lang>/docs/pyqgis_developer_cookbook"  layoutClass="inline-block link-with-language" listTitle="PyQGIS kookboek (voor plug-ins en scripten) — <lang>">}}
-
-{{< rich-list listLink="https://qgis.org/pyqgis/|version|/"  layoutClass="inline-block" listTitle="PyQGIS - QGIS Python API-documentatie" >}}
-
-
-{{< rich-list listLink="https://qgis.org/api/|version|/"  layoutClass="inline-block" listTitle="C++ API-documentatie" >}}
-
-{{< rich-list listLink="https://github.com/qgis/QGIS/blob/release-|version|/INSTALL.md"  layoutClass="inline-block" listTitle="QGIS vanuit de bron bouwen" >}}
-
-**Voor downloaden (QGIS {{< param "version" >}}):**
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/pdf"  layoutClass="inline-block" listTitle="PDF van de handleidingen" >}}
-
-{{< rich-list listLink="https://docs.qgis.org/|version|/zip"  layoutClass="inline-block" listTitle="HTML-zip van de handleidingen" >}}
-
-{{< tab-content-end >}} -->
 
 {{<tab-content-start tab="2" >}}
 
@@ -163,12 +131,16 @@ In lijn met de GDPR en gerelateerde regelgeving met betrekking tot gegevensbesch
 
 {{<tab-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-6">}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## Ondersteuning
 De gemeenschap van QGIS biedt een rijkdom aan excellente websites met forums voor ondersteuning.
 
 {{<button class="is-primary6" link="resources/support" text="Opties voor ondersteuning bekijken" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

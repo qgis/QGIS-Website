@@ -28,31 +28,65 @@ QGIS е проект с отворен код. Разработката на QGI
 
 В бъдеще се надяваме да разширим тези дейности, когато финансирането позволява.
 ## Нива на членство
-{{< columns-start >}} {{< column-start>}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### € 27,000+
-Водещ член (напр. за компании с над 100 служители, федерални правителствени организации) {{< rich-content-end >}} {{< rich-box-end >}}
+Flagship Member (e.g. for companies larger than 100 employees, federal governmental organizations)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 9,000+
-Голям член (напр. за по-големи градове, провинции или компании с до 100 служители) {{< rich-content-end >}} {{< rich-box-end >}}
+Large Member (e.g. for larger cities, provinces or companies up to 100 employees)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 3,000+
-Среден член (напр. за университети, средно големи градове или компании с до 50 служители) {{< rich-content-end >}} {{< rich-box-end >}}
+Medium Member (e.g. for universities, medium size cities or companies up to 50 employees)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 500+
-Малък член (напр. за по-малки градове или компании с до 10 служители) {{< rich-content-end >}} {{< rich-box-end >}}
+Small Member (e.g. for smaller cities or companies up to 10 employees)
 
-{{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Поддържащите членства са валидни една година, след което могат да бъдат продължени с ново плащане или да бъдат прекратени. Поддържащите членства не включват право на глас. Съществуващите права на глас остават незасегнати.
 
@@ -64,47 +98,111 @@ QGIS е проект с отворен код. Разработката на QGI
 ## Поддържане на предимствата на членството
 Подкрепата на проекта QGIS като поддържащ член предоставя следните предимства:
 
-{{< columns-start >}} {{< column-start class="is-one-third">}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<column-start class="is-one-third" >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Публично признание
 Всички подкрепящи членове и дарители ще бъдат изброени на страницата на проекта [Членове]({{< ref "/funding/membership.md" >}}), подредени по категория членство с линк към уебсайта на организацията или компанията на подкрепящия член и тяхното лого, оразмерено според категорията на членството им.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}}
+{{<rich-content-end >}}
 
-{{< column-start class="is-two-thirds vertical-colums" >}} {{< columns-start >}} {{< column-start >}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text">}}
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds vertical-colums" >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Подобрено качество на софтуера
-Приносът от поддържащите членства помага за бързото разрешаване на грешки и проблеми, което води до по-добро потребителско изживяване. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Подобрена видимост на марката
 Водещите, големите и средните поддържащи членове ще имат своето лого в долния банер на началната страница на QGIS, като размерът и редът на логото ще отразяват категорията им на членство.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
 
-{{< columns-start >}} {{< column-start>}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Представено в актуализациите на софтуера
-Поддържащите членове са откроени във визуалните дневници с промени на софтуерните издания на QGIS, което показва техния постоянен ангажимент за подкрепа на проекта. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Публично признание
 Можете да използвате специална версия на логото на QGIS на вашия уебсайт и материали, като по този начин сигнализирате за подкрепата си за проекта.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Запазете QGIS без реклами
 Поддържането на членства помага да се гарантира, че не е необходимо да използваме „враждебни към потребителите“ тактики, като например реклама, за да финансираме проекта.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 Решението за това как ще бъдат изразходвани средствата ще бъде взето от Управителния комитет на проекта QGIS, предложен в бюджет, който ще бъде одобрен или отхвърлен от общото събрание на QGIS.ORG.
 ## Как да станете поддържащ член
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Първоначален контакт
 {{<column-end >}}
 
@@ -114,9 +212,13 @@ QGIS е проект с отворен код. Разработката на QGI
 
 {{<button class="is-primary6" link="mailto:finance@qgis.org" text="Пишете на касиера" >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Уточнение и издаване на фактура
 {{<column-end >}}
 
@@ -124,9 +226,13 @@ QGIS е проект с отворен код. Разработката на QGI
 
 Касиерът ще събере необходимите данни (като информация за контакт, адрес и разрешение за използване на логото на организацията на страницата за поддържане на членството в QGIS) и ще издаде фактура за членската такса.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Проверка на плащането
 {{<column-end >}}
 
@@ -134,9 +240,13 @@ QGIS е проект с отворен код. Разработката на QGI
 
 Касиерът проверява получаването на плащането, за да признае официално организацията за поддържащ член.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Управление на членството
 {{<column-end >}}
 
@@ -146,9 +256,13 @@ QGIS е проект с отворен код. Разработката на QGI
 
 [Отворени поддържащи членове](https://members.qgis.org/)
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Признание и повишение
 {{<column-end >}}
 
@@ -160,9 +274,13 @@ QGIS е проект с отворен код. Разработката на QGI
 
 **Промоция**: Когато е уместно, QGIS ще провежда промоции в социалните медии, за да подчертае подкрепата от членовете, които поддържат програмата.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Текуща ангажираност
 {{<column-end >}}
 
@@ -170,18 +288,38 @@ QGIS е проект с отворен код. Разработката на QGI
 
 Бившите членове, които са подкрепяли членството, са изброени отделно за период от две години, за да се признаят предишните им приноси.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< rich-box-start icon="💡" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<columns-end >}}
+
+{{<rich-box-start icon="💡" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Еднократни плащания
-Даренията могат да бъдат на всякаква сума, чрез директни преводи към нашата банкова сметка (SEPA плащане), плащане с кредитна карта (чрез stripe.com) или Paypal (информация е налична на страницата [Дарения]({{< ref "/funding/donate.md" >}})). Дори малко дарение може да промени нещата и да ни помогне да постигнем важни цели на проекта! {{< rich-content-end >}} {{< rich-box-end >}}
+Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals!
 
-{{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="💁" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Относно ‘целевото’ финансиране
-Съжаляваме, че не приемаме „целево“ финансиране, тъй като то създава много административни проблеми. Ако се интересувате от финансиране на специфични аспекти на разработването на QGIS, ви насърчаваме да отделите допълнителни човешки ресурси за проекта, например като наемете разработчик или участвате в нашата инициатива за отстраняване на грешки. {{< rich-content-end >}} {{< rich-box-end >}}
+We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative.
 
-{{< rich-box-start icon="⚠️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="⚠️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ##### Внимание
-Приемането на заявления за поддържащо членство е по преценка на QGIS PSC. Запазваме си правото да откажем предложения от поддържащи членове, ако организацията или партията, която членува, изглежда е в противоречие с етиката на нашия проект. Например, оферти от маркетингови компании, които нямат нищо общо с ГИС/пространствени услуги, или оферти, за които имаме основание да смятаме, че наличието на логото и маркетинговите материали на поддържащия член на нашия сайт и други материали ще влошат потребителското изживяване, ще бъдат отхвърлени. {{< rich-content-end >}} {{< rich-box-end >}}
+Acceptance of sustaining membership applications is at the discretion of the QGIS PSC. We reserve the right to decline offers of sustaining members if the membership organisation or party seems to be at odds with the ethos of our project. For example offers from marketing companies that have nothing to do with GIS / spatial services, or offers where we have reason to believe the presence of the sustaining member logo and marketing materials on our site and other materials will degrade the experience of our users will be declined.
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

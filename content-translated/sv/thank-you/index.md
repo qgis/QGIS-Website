@@ -13,13 +13,21 @@ type: page
 ## Din nybakade kopia av QGIS laddas ner.
 {{<progress-bar autoHideAfter="60000" >}}
 
-{{< rich-box-start icon="⬇️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="⬇️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Övervaka din nedladdning
 Nedladdningar kan ta en stund. Vänligen **övervaka framstegen** med hjälp av din **nedladdningshanterare**.
 
-Om din nedladdning inte startade kan du ladda ner QGIS manuellt från [QGIS.org hosted downloads] (https://download.qgis.org/downloads/). {{< rich-content-end >}} {{< rich-box-end >}}
+If your download didn't start, you can manually download QGIS from the [QGIS.org hosted downloads](https://download.qgis.org/downloads/).
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Ditt stöd är avgörande för att QGIS ska fortsätta att förbättras
 Vår programvara är, och kommer alltid att vara, tillgänglig kostnadsfritt om den laddas ner från QGIS.org.
 
@@ -29,32 +37,74 @@ Oavsett om du väljer att donera eller inte hoppas vi att du tycker om att anvä
 
 Våra allra bästa hälsningar!
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" alreadyDonated="true">}}
+{{<rich-content-end >}}
 
-<!-- {{< payrexx-widget otherMethods="true" alreadyDonated="true">}} -->
+{{<rich-right-start mode="html" >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<stripe-widget otherMethods="true" alreadyDonated="true" >}}
 
-{{< rich-box-start layoutClass="qgis_first_conference mt-6">}} {{< rich-content-start >}} ![QGIS-utvecklarnas första möte](qgis_1st_conference.png "QGIS-utvecklarnas första möte") {{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-right-end >}}
 
-{{< rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="qgis_first_conference mt-6" >}}
+
+{{<rich-content-start >}}
+
+![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting")
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Tips för första lanseringen
-Om du har några frågor när du startar QGIS är du välkommen till vår kompletta guide för att installera för första gången. <a href="/resources/installation-guide">Installationshandbok </a> {{< rich-content-end >}} {{< rich-box-end >}}
+If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time. [Installation guide]({{< ref "resources/installation-guide" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Vad kommer härnäst?
 För test- och inlärningssyften finns [en exempeldataset] (https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), som innehåller samlingar av data från olika källor och i olika format.
 
 Du kan också titta på ärendena - det finns många inspirerande berättelser där.
 
-{{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### Fallstudier
 Vi samlar inspirerande berättelser från verkliga användare som visar hur mångsidig och kraftfull QGIS-lösningen är
 
-[Läs mer]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}} {{< rich-box-end >}}
+[Find out more]({{< ref "project/case-studies.md" >}})
 
-{{< rich-box-start layoutClass="has-right rounded" mode="html" >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<usecase >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### Lokala användargrupper
 Gå med i en gemenskap av likasinnade i din region.
 
-[Lokala grupplistor]({{< ref "community/groups.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />![Lokala användargrupper](../../project/img/groups.jpg "Lokala användargrupper") {{< rich-right-end >}} {{< rich-box-end >}}
+[Local groups list]({{< ref "community/groups.md" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+![Local user groups](../../project/img/groups.jpg "Local user groups")
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

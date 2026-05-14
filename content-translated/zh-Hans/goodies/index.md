@@ -14,7 +14,9 @@ If you are a fan of QGIS, you might want to visit our store so you can buy some 
 
 购买QGIS服装不仅可以向人展示您正在使用QGIS，而且每售出一件T恤衫，就会获得相应资金，用于QGIS项目的健康发展。
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-third" >}}
 ## Spreadshirt
 我们与Spreadshirt合作，他们在当地生产并将产品运往世界各地。
 
@@ -22,13 +24,53 @@ If you are a fan of QGIS, you might want to visit our store so you can buy some 
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< columns-start >}} {{< column-start>}} ![QGIS hoodie](img/hoodie.jpg) {{< column-end>}} {{< column-start>}} ![QGIS tshirt](img/qgis-heart-logo.jpg) {{< column-end>}} {{< columns-end >}}
+{{<column-start class="is-flex-direction-column is-two-thirds" >}}
 
-{{< columns-start >}} {{< column-start>}} ![QGIS mugs](img/qgis-q-logo.jpg) {{< column-end >}} {{< column-start>}} ![QGIS thermos](img/thermos.jpg) {{< column-end >}} {{< column-start>}} ![QGIS sign](img/qgis-q.jpg) {{< column-end>}} {{< columns-end >}}
+{{<columns-start >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-start >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-third">}}
+![QGIS hoodie](img/hoodie.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS tshirt](img/qgis-heart-logo.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+![QGIS mugs](img/qgis-q-logo.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS thermos](img/thermos.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS sign](img/qgis-q.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-third" >}}
 ## Redbubble
 一些更有创意和有趣设计的产品 (非官方) 可以在 Red Bubble 商店中找到。
 
@@ -36,10 +78,48 @@ If you are a fan of QGIS, you might want to visit our store so you can buy some 
 
 {{<column-end >}}
 
-{{< column-start class="is-flex-direction-column is-two-thirds">}} {{< columns-start >}} {{< column-start>}} ![QGIS hoodie](img/redbubble1.jpg) {{< column-end>}} {{< column-start>}} ![QGIS tshirt](img/redbubble2.jpg) {{< column-end>}} {{< columns-end >}}
+{{<column-start class="is-flex-direction-column is-two-thirds" >}}
 
-{{< columns-start >}} {{< column-start>}} ![QGIS mugs](img/redbubble3.jpg) {{< column-end >}} {{< column-start>}} ![QGIS thermos](img/redbubble4.jpg) {{< column-end >}} {{< column-start>}} ![QGIS sign](img/redbubble5.jpg) {{< column-end>}} {{< columns-end >}}
+{{<columns-start >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-start >}}
+
+![QGIS hoodie](img/redbubble1.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS tshirt](img/redbubble2.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+![QGIS mugs](img/redbubble3.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS thermos](img/redbubble4.jpg)
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+![QGIS sign](img/redbubble5.jpg)
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 {{<content-end >}}

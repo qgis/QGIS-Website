@@ -13,13 +13,21 @@ type: page
 ## Uw nieuw gemaakte kopie van QGIS wordt gedownload.
 {{<progress-bar autoHideAfter="60000" >}}
 
-{{< rich-box-start icon="⬇️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="⬇️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Monitoren van uw download
 Downloaden zouden enige tijd kunnen duren. **Monitor de voortgang** met uw **downloadbeheerder**.
 
-Als uw download niet begon, kunt u handmatig QGIS downloaden vanaf de door [QGIS.org gehoste downloads](https://download.qgis.org/downloads/). {{< rich-content-end >}} {{< rich-box-end >}}
+If your download didn't start, you can manually download QGIS from the [QGIS.org hosted downloads](https://download.qgis.org/downloads/).
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Uw ondersteuning is heel belangrijk om QGIS te kunnen blijven verbeteren
 QGIS is gratis, en zal altijd gratis blijven, zonder kosten beschikbaar als het wordt gedownload vanaf QGIS.org.
 
@@ -29,32 +37,74 @@ Of u ervoor kiest om te doneren of niet, we hopen dat u geniet van ons werk van 
 
 Onze allerbeste groeten!
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" alreadyDonated="true">}}
+{{<rich-content-end >}}
 
-<!-- {{< payrexx-widget otherMethods="true" alreadyDonated="true">}} -->
+{{<rich-right-start mode="html" >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<stripe-widget otherMethods="true" alreadyDonated="true" >}}
 
-{{< rich-box-start layoutClass="qgis_first_conference mt-6">}} {{< rich-content-start >}} ![QGIS ontwikkelaars 1ste bijeenkomst](qgis_1st_conference.png "QGIS ontwikkelaars 1ste bijeenkomst") {{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-right-end >}}
 
-{{< rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="qgis_first_conference mt-6" >}}
+
+{{<rich-content-start >}}
+
+![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting")
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="🛟" layoutClass="tips mt-6 mb-6" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Tips voor de eerste keer opstarten
-Als u vragen heeft over het beginnen met QGIS, welkom bij onze volledige gids bij het voor de eerste keer installeren. <a href="/resources/installation-guide">Installatiegids </a> {{< rich-content-end >}} {{< rich-box-end >}}
+If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time. [Installation guide]({{< ref "resources/installation-guide" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Wat dan?
 Voor doeleinden van testen en leren, [is een voorbeeld gegevensset beschikbaar](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), die collecties van gegevens bevat uit verschillende bronnen en in verschillende indelingen.
 
 U kunt ook naar de gebruiksgevallen kijken - er staan daar veel inspirerende verhalen.
 
-{{< rich-box-start layoutClass="has-right" mode="html" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### Praktijkvoorbeelden
 We verzamelen inspirerende verhalen van feitelijke gebruikers die de veelzijdigheid en kracht van de oplossing van QGIS laten zien.
 
-[Meer te weten komen]({{< ref "project/case-studies.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />{{< usecase >}} {{< rich-right-end >}} {{< rich-box-end >}}
+[Find out more]({{< ref "project/case-studies.md" >}})
 
-{{< rich-box-start layoutClass="has-right rounded" mode="html">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<usecase >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" mode="html" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### Lokale gebruikersgroepen
 Neem deel aan een gemeenschap van gelijkgestemde individuen in uw regio.
 
-[Lijst met lokale gebruikersgroepen]({{< ref "community/groups.md" >}}) {{< rich-content-end >}} {{< rich-right-start >}}<br />![Lokale gebruikersgroepen](../../project/img/groups.jpg "Lokale gebruikersgroepen") {{< rich-right-end >}} {{< rich-box-end >}}
+[Local groups list]({{< ref "community/groups.md" >}})
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+![Local user groups](../../project/img/groups.jpg "Local user groups")
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

@@ -11,7 +11,9 @@ type: page
 ---
 {{<content-start >}}
 
-{{< rich-box-start mode="html" layoutClass="has-right" id="donate-prompt">}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ## Innan nedladdningen startar
 Vår programvara är, och kommer alltid att vara, tillgänglig kostnadsfritt om den laddas ner från QGIS.org.
 
@@ -21,21 +23,29 @@ Oavsett om du väljer att donera eller inte hoppas vi att du tycker om att anvä
 
 Våra allra bästa hälsningar!
 
-<p class="is-size-7 has-text-weight-medium">
-Donationer till QGIS kan vara avdragsgilla i vissa länder. Vänligen kontakta ditt lokala skattekontor för mer information. Om du vill göra skatteavdrag som ett tyskt företag eller en tysk organisation, vänligen donera genom den <a href="https://qgis.de/doku.php/verein/spenden">tyska QGIS-användargruppen</a>. De kan utfärda en betalningsbekräftelse som en skattebefriad tysk förening.
-</p>
+{{<paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
 
-{{< rich-content-end >}} {{< rich-right-start mode="html" >}} {{< stripe-widget otherMethods="true" skipToDownload="true" >}}
+Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
 
-<!-- {{< payrexx-widget otherMethods="true" skipToDownload="true" >}} -->
+{{<paragraph-end >}}
 
-{{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start mode="html" >}}
+
+{{<stripe-widget otherMethods="true" skipToDownload="true" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<download-platform-selector-start >}}
 
 {{<platform-content-start platform="windows" >}}
 ## Windows
-{{< download-windows>}} {{< platform-content-end >}}
+{{<download-windows >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="macos" >}}
 ## macOS
@@ -62,33 +72,45 @@ GNU/Linux is a Free operating system built on the same principles that QGIS is b
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}}) {{< platform-content-end >}}
+[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="bsd" >}}
 ## BSD
-[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}}) {{< platform-content-end >}}
+[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="container" >}}
 ## Container Images
-[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}}) {{< platform-content-end >}}
+[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="mobile" >}}
 ## Mobile and tablet
-{{< mobile-downloads >}} {{< platform-content-end >}}
+{{<mobile-downloads >}}
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="source" >}}
 ## Source Code
-QGIS is open source software available under the terms of the <b>GNU General Public License</b> meaning that its source code can be downloaded through 'tarballs' or the git repository.
+QGIS is open source software available under the terms of the **GNU General Public License** meaning that its source code can be downloaded through 'tarballs' or the git repository.
 
-QGIS källkod finns tillgänglig <a href="/downloads/qgis-latest.tar.bz2">här (senaste versionen)</a> och <a href="/downloads/qgis-latest-ltr.tar.bz2">här (långsiktig version</a>)
+QGIS Source Code is available [here (latest release)](/downloads/qgis-latest.tar.bz2) and [here (long term release)](/downloads/qgis-latest-ltr.tar.bz2)
 
 Se installationsguiden för hur du kompilerar QGIS från källkod för de olika plattformarna: [här](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-You can also obtain the source code by cloning or forking our <a href="https://github.com/qgis/QGIS">GitHub repository</a>. {{< platform-content-end >}}
+You can also obtain the source code by cloning or forking our [GitHub repository](https://github.com/qgis/QGIS).
+
+{{<platform-content-end >}}
 
 {{<platform-content-start platform="example" >}}
 ## Example Datasets
-For testing and learning purposes, [a sample dataset is available](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), which contains collections of data from different sources and in different formats. {{< platform-content-end >}}
+För test- och inlärningssyften finns [en exempeldataset] (https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), som innehåller samlingar av data från olika källor och i olika format.
+
+{{<platform-content-end >}}
 
 {{<download-platform-selector-end >}}
 

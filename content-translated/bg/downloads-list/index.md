@@ -9,13 +9,17 @@ type: page
 # Изтегляния на QGIS
 Разглеждайте и изтегляйте инсталатори, пакети и свързани файлове на QGIS от нашето изчерпателно хранилище за изтегляния. Файловете се хостват на нашия сървър за съхранение, така че скоростта на изтегляне може да варира в сравнение с текущите версии.
 
-{{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="💁" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 #### Търсите актуалните версии?
 За най-новите версии на QGIS с оптимални скорости на изтегляне, посетете нашата основна страница за изтегляне.
 
 [Изтегляне на QGIS]({{< ref "/download/index.md" >}})
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<s3-file-explorer >}}
 

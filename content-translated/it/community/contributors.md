@@ -11,44 +11,76 @@ type: page
 ---
 {{<content-start >}}
 
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Vincitori del Premio Sol Katz
 Celebrazione dei collaboratori di QGIS che hanno ricevuto il prestigioso premio Sol Katz per la loro eccezionale leadership e il loro contributo al software geospaziale open source.
 
-1  → 2  → Visualizza destinatari  → 2  → 1
-
-{{< rich-content-end >}} {{< rich-right-start >}}{{< contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
-
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Organizzazioni Sostenitrici
-Organizzazioni che contribuiscono in modo significativo al progetto QGIS attraverso lo sviluppo e la collaborazione
-
-<div style="text-align:center;">
-	<a href="/community/contributors/organisations/" class="button is-success">
-		Visualizza elenco
-	</a>
-</div>
+{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="View recipients" >}}
 
 {{<rich-content-end >}}
 
-{{< rich-right-start >}}{{< contribution-stats "orgs" "/community/contributors/organisations/" >}} {{< rich-right-end >}}
+{{<rich-right-start >}}
+
+{{<contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}}
+
+{{<rich-right-end >}}
 
 {{<rich-box-end >}}
 
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
+## Organizzazioni Sostenitrici
+Organizzazioni che contribuiscono in modo significativo al progetto QGIS attraverso lo sviluppo e la collaborazione
+
+{{<button class="is-success" link="/community/contributors/organisations/" text="View list" >}}
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<contribution-stats "orgs" "/community/contributors/organisations/" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Collaboratori individuali
 Celebriamo gli sviluppatori e i collaboratori che contribuiscono alla realizzazione di QGIS attraverso i loro contributi di codice e il loro lavoro di squadra.
 
-1  → 2  → Visualizza elenco  → 2  → 1
+{{<button class="is-success" link="/community/contributors/individuals/" text="View list" >}}
 
-{{< rich-content-end >}} {{< rich-right-start >}}{{< contribution-stats "individuals" "/community/contributors/individuals/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
 
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-right-start >}}
+
+{{<contribution-stats "individuals" "/community/contributors/individuals/" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Collaboratori sostenitori
 Riconoscendo i contributi preziosi al di là dei commit di codice—supporto alla comunità, divulgazione e sforzi dietro le quinte.
 
-1  → 2  → Visualizza elenco  → 2  → 1 
+{{<button class="is-success" link="/community/contributors/supporting/" text="View list" >}}
 
-{{< rich-content-end >}} {{< rich-right-start >}}{{< contribution-stats "supporting" "/community/contributors/supporting/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<contribution-stats "supporting" "/community/contributors/supporting/" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

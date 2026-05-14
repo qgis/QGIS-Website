@@ -29,31 +29,65 @@ Weboldalunkon ingyenes hozzáférést biztosítunk a QGIS forráskódjához és 
 
 Reméljük, hogy a jövőben, ha a finanszírozás lehetővé teszi, bővíteni tudjuk ezeket a tevékenységeket.
 ## Tagsági szintek
-{{< columns-start >}} {{< column-start>}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-2" >}}
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-2" >}}
 ### € 27,000+
-Zászlóshajó tag (pl. 100 főnél több alkalmazottat foglalkoztató vállalatok, kormányzati szervezetek számára) {{< rich-content-end >}} {{< rich-box-end >}}
+Flagship Member (e.g. for companies larger than 100 employees, federal governmental organizations)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 9,000+
-Nagy tag (pl. nagyobb városok, megyék vagy legfeljebb 100 alkalmazottat foglalkoztató vállalatok számára) {{< rich-content-end >}} {{< rich-box-end >}}
+Large Member (e.g. for larger cities, provinces or companies up to 100 employees)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 3,000+
-Közepes tag (pl. egyetemek, közepes méretű városok vagy legfeljebb 50 alkalmazottat foglalkoztató vállalatok számára) {{< rich-content-end >}} {{< rich-box-end >}}
+Medium Member (e.g. for universities, medium size cities or companies up to 50 employees)
 
-{{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ### € 500+
-Kis tag (pl. kisebb városok vagy legfeljebb 10 alkalmazottat foglalkoztató vállalatok számára) {{< rich-content-end >}} {{< rich-box-end >}}
+Small Member (e.g. for smaller cities or companies up to 10 employees)
 
-{{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 A pártoló tagság egy évig érvényes, ezt követően új befizetéssel meghosszabbítható, vagy le is járhat. A pártolói tagság nem jár szavazati joggal. A meglévő szavazati jogok változatlanok maradnak.
 
@@ -65,47 +99,111 @@ A pártoló tagok felvétele az Igazgatóság belátására és jóváhagyásár
 ## A pártoló tagság előnyei
 A QGIS-projekt pártoló tagként történő támogatása a következő előnyökkel jár:
 
-{{< columns-start >}} {{< column-start class="is-one-third">}}
+{{<columns-start >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<column-start class="is-one-third" >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Nyilvános köszönetnyilvánítás
 Minden pártoló tag és adományozó felkerül a projekt [Tagok oldalára]({{< ref "/funding/membership.md" >}}), tagsági kategória szerint rendezve, a pártoló tag szervezetének vagy vállalatának weboldalára mutató linkkel, valamint a tagsági kategóriának megfelelő méretű logóval.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}}
+{{<rich-content-end >}}
 
-{{< column-start class="is-two-thirds vertical-colums" >}} {{< columns-start >}} {{< column-start >}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text">}}
+{{<column-end >}}
+
+{{<column-start class="is-two-thirds vertical-colums" >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Jobb szoftverminőség
-A pártolói tagságból származó hozzájárulások segítenek a hibák és problémák gyors megoldásában, ami jobb felhasználói élményt eredményez. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4 rich-content-text" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Nagyobb márkaismertség
 A zászlóshajó, a nagy és a közepes pártoló tagok logója megjelenik a QGIS honlapjának láblécében, a logó mérete és sorrendje pedig a tagsági kategóriájukat tükrözi
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
 
-{{< columns-start >}} {{< column-start>}}
+{{<rich-box-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4">}}
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Kiemelés a szoftverfrissítésekben
-A pártoló tagok nevei kiemelve jelennek meg a QGIS szoftverkiadások vizuális változásnaplóiban, jelezve ezzel a projekt iránti folyamatos elkötelezettségüket. {{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project.
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### Nyilvános köszönetnyilvánítás
 Weboldalán és kiadványaiban felhasználhatja a QGIS logó egy speciális változatát, jelezve ezzel, hogy támogatja a projektet.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< column-start>}}
+{{<rich-content-end >}}
 
-{{< rich-box-start >}} {{< rich-content-start themeClass="coloring-4" >}}
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<column-start >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-4" >}}
 #### A QGIS megtartása reklámmentesnek
 A pártoló tagságok hozzájárulnak ahhoz, hogy a projekt finanszírozásához ne kelljen a felhasználók számára barátságtalan módszerekhez, például hirdetésekhez folyamodnunk.
 
-{{< rich-content-end >}} {{< rich-box-end >}} {{< column-end >}} {{< columns-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<column-end >}}
+
+{{<columns-end >}}
 
 A források felhasználásáról a QGIS Projektirányító Bizottság dönt, aki javaslatot tesz egy költségvetésre, amelyet a QGIS.ORG közgyűlése hagy jóvá vagy utasít el.
 ## Hogyan válhatok pártoló taggá
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Első kapcsolatfelvétel
 {{<column-end >}}
 
@@ -115,9 +213,13 @@ Ha pártoló taggá szeretne válni, írjon a pénzügyesünknek a finance@qgis.
 
 {{<button class="is-primary6" link="mailto:finance@qgis.org" text="Írjon a pénzügyesünknek" >}}
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Tisztázás és számla kiállítása
 {{<column-end >}}
 
@@ -125,9 +227,13 @@ Ha pártoló taggá szeretne válni, írjon a pénzügyesünknek a finance@qgis.
 
 A pénzügyes összegyűjti a szükséges adatokat (például elérhetőségi adatokat, címet, valamint a szervezet logójának a QGIS támogatói tagsági oldalon való felhasználására vonatkozó engedélyt), majd kiállítja a tagsági díjról szóló számlát.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Fizetés ellenőrzése
 {{<column-end >}}
 
@@ -135,9 +241,13 @@ A pénzügyes összegyűjti a szükséges adatokat (például elérhetőségi ad
 
 A pénzügyes ellenőrzi a befizetés beérkezését, hogy a szervezetet hivatalosan támogató tagként ismerhesse el.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Tagság kezelése
 {{<column-end >}}
 
@@ -147,9 +257,13 @@ Weboldalunkon közzétesszük a pártoló tagok listáját, kategóriákba sorol
 
 [Pártoló tagok megtekintése](https://members.qgis.org/)
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Elismerés és támogatás
 {{<column-end >}}
 
@@ -161,9 +275,13 @@ Weboldalunkon közzétesszük a pártoló tagok listáját, kategóriákba sorol
 
 **Promóció**: Adott esetben a QGIS a közösségi médiában is népszerűsíti a pártoló tagok által nyújtott támogatást.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< columns-start >}} {{< column-start class="is-flex-direction-column is-one-quarter">}}
+{{<columns-end >}}
+
+{{<columns-start >}}
+
+{{<column-start class="is-flex-direction-column is-one-quarter" >}}
 #### Folyamatos együttműködés
 {{<column-end >}}
 
@@ -171,18 +289,38 @@ Weboldalunkon közzétesszük a pártoló tagok listáját, kategóriákba sorol
 
 A korábbi pártoló tagok nevét két évig külön feltüntetjük, hogy elismerjük korábbi hozzájárulásukat.
 
-{{< column-end >}} {{< columns-end >}}
+{{<column-end >}}
 
-{{< rich-box-start icon="💡" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<columns-end >}}
+
+{{<rich-box-start icon="💡" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### Egyszeri befizetések
-Az adományok összege tetszőleges lehet, és közvetlen átutalással a bankszámlánkra (SEPA-átutalás), hitelkártyával (a stripe.com oldalon keresztül) vagy Paypalon keresztül is befizethetők (további információk a [Adományok]({{< ref "/funding/donate.md" >}}) oldalon találhatók). Még egy kis adomány is sokat jelenthet, és segíthet nekünk a fontos projektcélok elérésében! {{< rich-content-end >}} {{< rich-box-end >}}
+Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals!
 
-{{< rich-box-start icon="💁" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="💁" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ##### A „célhoz kötött” támogatásokról
-Sajnáljuk, de nem tudunk elfogadni célhoz kötött támogatást, mivel az számos adminisztratív problémával járna. Ha a QGIS fejlesztésének konkrét területeit szeretné támogatni, javasoljuk, hogy inkább további munkaerővel segítse a projektet, például fejlesztő felvételével, vagy csatlakozzon a hibajavítási kezdeményezésünkhöz. {{< rich-content-end >}} {{< rich-box-end >}}
+We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative.
 
-{{< rich-box-start icon="⚠️" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start icon="⚠️" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ##### Figyelmeztetés
-A pártolói tagsági kérelmek elfogadásáról a QGIS PSC dönt. Fenntartjuk a jogot, hogy elutasítsuk a pártoló tagsági kérelmeket, ha a tagsági szervezet vagy fél ellentétben áll projektünk szellemiségével. Például elutasítjuk azon marketingcégek ajánlatait, amelyeknek semmi közük a GIS-hez vagy a térinformatikai szolgáltatásokhoz, illetve azokat az ajánlatokat, amelyek esetében okunk van feltételezni, hogy a támogató tag logójának és marketinganyagainak megjelenése a weboldalunkon és egyéb anyagainkon rontaná a felhasználói élményt. {{< rich-content-end >}} {{< rich-box-end >}}
+Acceptance of sustaining membership applications is at the discretion of the QGIS PSC. We reserve the right to decline offers of sustaining members if the membership organisation or party seems to be at odds with the ethos of our project. For example offers from marketing companies that have nothing to do with GIS / spatial services, or offers where we have reason to believe the presence of the sustaining member logo and marketing materials on our site and other materials will degrade the experience of our users will be declined.
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

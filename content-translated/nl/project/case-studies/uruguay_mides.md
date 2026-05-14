@@ -1,0 +1,64 @@
+---
+HasBanner: false
+archived: true
+date: 2016-03-01
+draft: false
+featured: false
+section: project
+sidebar: true
+thumbnail: images/uruguay_mides1.png
+title: Gebruiken van QGIS bij het Ministerie van Sociale ontwikkeling in Uruguay (MIDES)
+type: case-study
+
+---
+{{<content-start >}}
+# Gebruiken van QGIS bij het Ministerie van Sociale ontwikkeling in Uruguay (MIDES)
+<p class="is-size-6 is-italic has-text-weight-medium">
+  <span class="icon">
+    <i class="fas fa-calendar-alt"></i>
+  </span>
+  <span>March 01, 2016</span>
+</p>
+
+## Introductie
+The Ministry of Social Development of Uruguay ([MIDES,](http://www.mides.gub.uy/innovaportal/v/4376/3/innova.front/mision) , for its acronym in Spanish) is responsible for the national social policies. MIDES is also accountable for the coordination -at both sectoral and territorial levels- articulation, monitoring, supervision and evaluation of plans, programs and projects, within the areas of its competence, aiming at the consolidation of a progressive redistributive social policy.
+
+The National Division of Evaluation and Monitoring ([DINEM](http://dinem.mides.gub.uy/innovaportal/v/25948/11/innova.front/mision-y-cometidos) ) is a section of MIDES that oversees the monitoring and evaluation of plans, programs, actions, devices and social projects through the national territory. DINEM also produces and manages necessary information to improve their design and implementation.
+
+The [Department of Geography of DINEM](http://dinem.mides.gub.uy/innovaportal/v/25507/11/innova.front/departamento-de-geografia) is responsible for the production, management and analysis of geographical information,
+## QGIS bij het Department of Geography van de DINEM
+Ever since the consolidation of the Department of Geography in 2012, we have tried to incorporate open source software to fulfill our duties. In particular, the management of an extensive field work, consisting in the annual implementation of approximately 40,000 visits to socially vulnerable households throughout the country. The objective was to conform a thorough georeferenced database of target households, in order to improve social policies implementation. Particularly, data was collected to enhance the scope of monetary transfer programs ([\"Asignaciones Familiares -- Plan de Equidad\"](https://www.bps.gub.uy/3540/plan-de-equidad.html) and [\"Tarjeta Uruguay Social\"](http://www.mides.gub.uy/innovaportal/v/55480/3/innova.front/tarjeta-uruguay-social-tus)). The survey form applied contemplates social, housing, and environmental aspects.
+
+Logistiek om het veldwerk te kunnen verwerken betrof onder meer het gebruiken van statistiekpakketten om de gegenereerde database te beheren, samen met een intensief gebruik van GIS om veldwerk te organiseren en ontvangen gegevens te voorzien van geoverwijzingen.
+
+<figure>
+<img src="../images/uruguay_mides1.png" class="align-center" alt="uruguay_mides1.png" />
+<figcaption>QGIS at work: identifying houses on informal settlements to implement fieldwork</figcaption>
+</figure>
+
+Hoewel merksoftware was geïmplementeerd toen werd begonnen met het werkproces, vroeg de ontwikkeling van de zelfstandige taken zelf langzamerhand dat het zou worden geconverteerd naar open bron-software. Toen het gehele proces als geheel meer werd gecomputeriseerd - waaronder het inpassen van een programma voor de werkstroom en een PostGIS georuimtelijke database-, moedigden vereisten voor licenties en aangeboden opties van voordelen van vrije en open bron-software (FOSS)  ons aan de overstap te wagen. op die manier, waarbij het project van QGIS werd verfijnd (minder problemen en meer functionaliteiten), waren we in staat onze wensen uit te voeren met behulp van QGIS. Met PostGIS geassocieerde gereedschappen stelden de werkgroep in staat snel de benodigde taken voor het plannen van het dagelijkse veldwerk te coördineren, samen met opvolgende taken taken voor analyses op dezelfde bij het veldwerk gegenereerde gegevens, kort nadat het was verkregen en gedigitaliseerd.
+
+<figure>
+<img src="../images/uruguay_mides2.png" class="align-center" alt="uruguay_mides2.png" />
+<figcaption>QGIS at work: Montevideo, Uruguay’s capital and most populated city, overlayed with PostGIS layer showing to-do visits (mostly composed of socially vulnerable households, in the outskirts of the city)</figcaption>
+</figure>
+
+In addition to information management and field work implementation, we constantly use QGIS typical geospatial tools to produce tematic cartography, and in spatial analysis tasks. This last, as much about the data that the fieldwork generates, as with other ministry programs information, and frequently even to aid interinstitutional projects. With [\"qgis2web\"](https://plugins.qgis.org/plugins/qgis2web/) we were able to produce interactive maps, which have become the main way to communicate the results of such investigations. They allow human resources within other programs and agencies to easily and effectively manage higher amounts of information than with a collection of static maps, even when these resources are not used to reading spatial data.
+## Conclusie
+QGIS is een fundamentele software geworden voor het Department of Geography bij DINEM. Het presenteert een excellente uitvoering om te werken met grote bestanden en samen te werken met PostGIS en ons programma voor de werkstroom. Dit stelt ons in staat onze geografische gegevens excellent te beheren, wat ook geldt voor het produceren van basiskaarten en thematische cartografie van superieure kwaliteit.
+
+At the same time, extra features that are incorporated through plugins are of great value to us. For instance, the possibility of exporting \"leaflet\" map viewers, as well as incorporating high resolution satellite imagery directly into the GIS work area through "OpenLayers" to manually vectorize information, among others.
+
+This variety of options is precisely what has allowed us to develop the specific and at the same time very different technical solutions that programs and agencies have been needing through past years.As mentioned in this article, we can state that QGIS meets the necessary requirements to be used in public administration as desktop GIS software. Also it has been a cornerstone in helping this institution to set up a web map, offering general population much information about social issues ([SIG MIDES](https://mapas.mides.gub.uy/), OpenLayers based WEB GIS developed by the IT division).
+## Auteurs
+Guillermo D\'Angelo - Head of the Geography Department (DINEM-MIDES, Uruguay). Degree in Geography.
+
+Richard Detomasi - Adviseur in het Spatial Analysis Section of Geography Department (DINEM-MIDES, Uruguay). Ph.D. student in Social Sciences, Population Studies. Magister in Contemporary Studies van Latijns-Amerika. Graad in Anthropological Sciences.
+
+Martín Hahn - Adviseur in Spatial Analysis Section of Geography Department (DINEM-MIDES, Uruguay). Bach. momentele studerend voor een graad in Geography.
+
+Ondanks het feit dat het huidige artikel werd geschreven door de drie hierboven vermelde personen, zijn er meer dan honderd mensen betrokken bij het daarin beschreven proces, dit werk behoort dan ook voor een groot deel aan hen toe.
+
+Contact: <mapas@mides.gub.uy>
+
+{{<content-end >}}

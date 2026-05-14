@@ -13,7 +13,9 @@ type: page
 
 {{<usecases >}}
 _______
-{{< rich-box-start icon="🙋" layoutClass="tips">}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start icon="🙋" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## あなたの活用事例を投稿しましょう
 あなたのQGIS成功体験をコミュニティと共有しましょう！現実世界での活用例を紹介し、他のユーザーに刺激を与えるようなケーススタディの投稿を歓迎します。
 ### Option 1: Direct Contribution
@@ -30,6 +32,8 @@ _______
 
 Your case study demonstrates QGIS capabilities and helps grow our community knowledge base.
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}

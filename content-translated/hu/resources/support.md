@@ -10,7 +10,9 @@ type: page
 ---
 {{<content-start >}}
 # Kapcsolat és támogatás
-{{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## ✉️ Levelezőlisták
 A QGIS-nek számos levelezőlistája van, ahol QGIS-hez kapcsolódó témákról lehet beszélgetni.
 
@@ -18,7 +20,9 @@ Ha kérdéseket szeretne feltenni, kérjük, olvassa el ezt: [Hogyan tegyünk fe
 
 {{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="Levelezőlisták megtekintése" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Mielőtt elkezdené
 Mielőtt csatlakozna a kiválasztott támogató csoporthoz, szeretnénk néhány irányelvet megemlíteni a közösségünkben való részvételhez:
 ### Maradjunk a témánál

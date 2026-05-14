@@ -10,7 +10,9 @@ type: page
 ---
 {{<content-start >}}
 # Contact and Support
-{{< rich-box-start>}} {{< rich-content-start themeClass="coloring-6" >}}
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-6" >}}
 ## ✉️ Пощенски списъци
 QGIS има различни пощенски списъци за обсъждане на теми, свързани с QGIS.
 
@@ -18,7 +20,9 @@ QGIS има различни пощенски списъци за обсъжда
 
 {{<button class="is-primary1 is-rounded" link="community/organisation/mailinglists" text="Вижте пощенските списъци" >}}
 
-{{< rich-content-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
 ## Преди да започнете
 Преди да се присъедините към избраната от вас група за подкрепа, бихме искали да споменем няколко насоки за участие в нашата общност:
 ### Придържайте се към темата

@@ -10,56 +10,76 @@ type: page
 ---
 {{<content-start >}}
 
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Dobitnici nagrade Sol Kac
 Proslava saradnika QGIS-a koji su dobili prestižnu nagradu Sol Kac za izuzetno liderstvo i doprinos geoprostornom softveru otvorenog koda.
 
-<div style="text-align:center;">
-	<a href="/community/contributors/sol-katz-award/" class="button is-success">
-		View recipients
-	</a>
-</div>
-
-{{< rich-content-end >}} {{< rich-right-start >}}<br />{{< contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
-
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
-## Organizacije koje doprinose
-Organizacije koje daju značajan doprinos projektu QGIS kroz razvoj i saradnju
-
-<div style="text-align:center;">
-	<a href="/community/contributors/organisations/" class="button is-success">
-		View list
-	</a>
-</div>
+{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="View recipients" >}}
 
 {{<rich-content-end >}}
 
-{{< rich-right-start >}}<br />{{< contribution-stats "orgs" "/community/contributors/organisations/" >}} {{< rich-right-end >}}
+{{<rich-right-start >}}
+
+{{<contribution-stats "sol-katz" "/community/contributors/sol-katz-award/" >}}
+
+{{<rich-right-end >}}
 
 {{<rich-box-end >}}
 
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
+## Organizacije koje doprinose
+Organizacije koje daju značajan doprinos projektu QGIS kroz razvoj i saradnju
+
+{{<button class="is-success" link="/community/contributors/organisations/" text="View list" >}}
+
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<contribution-stats "orgs" "/community/contributors/organisations/" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Pojedinačni saradnici
 Slavimo programere i saradnike koji pomažu u izgradnji QGIS-a kroz svoj doprinos kodu i zajedničke napore.
 
-<div style="text-align:center;">
-	<a href="/community/contributors/individuals/" class="button is-success">
-		View list
-	</a>
-</div>
+{{<button class="is-success" link="/community/contributors/individuals/" text="View list" >}}
 
-{{< rich-content-end >}} {{< rich-right-start >}}<br />{{< contribution-stats "individuals" "/community/contributors/individuals/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
 
-{{< rich-box-start layoutClass="has-right rounded" >}} {{< rich-content-start themeClass="coloring-1" >}}
+{{<rich-right-start >}}
+
+{{<contribution-stats "individuals" "/community/contributors/individuals/" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start layoutClass="has-right rounded" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
 ## Podržavajući saradnici
 Prepoznavanje vrednih doprinosa izvan obaveza na izmene koda – podrška zajednice, terenski rad i napori iza kulisa.
 
-<div style="text-align:center;">
-	<a href="/community/contributors/supporting/" class="button is-success">
-		View list
-	</a>
-</div>
+{{<button class="is-success" link="/community/contributors/supporting/" text="View list" >}}
 
-{{< rich-content-end >}} {{< rich-right-start >}}<br />{{< contribution-stats "supporting" "/community/contributors/supporting/" >}} {{< rich-right-end >}} {{< rich-box-end >}}
+{{<rich-content-end >}}
+
+{{<rich-right-start >}}
+
+{{<contribution-stats "supporting" "/community/contributors/supporting/" >}}
+
+{{<rich-right-end >}}
+
+{{<rich-box-end >}}
 
 {{<content-end >}}
