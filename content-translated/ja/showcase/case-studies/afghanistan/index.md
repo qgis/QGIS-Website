@@ -1,5 +1,5 @@
 ---
-author: エドワード・クラウザー
+author: Edward Crowther
 categories:
 - ケーススタディ
 date: '2015-04-01'
@@ -11,8 +11,8 @@ heroImage: ''
 tags:
 - humanitarian
 - afghanistan
-- case-study
-- showcase
+- ケーススタディ
+- ショーケース
 thumbnail: afghanistan3.jpg
 title: アフガニスタンでQGISを使用するデンマークの地雷除去グループ
 type: showcase/case-studies

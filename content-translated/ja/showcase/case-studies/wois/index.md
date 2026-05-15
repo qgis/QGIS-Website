@@ -8,9 +8,9 @@ description: Enabling the Use of Earth Observation Data for Integrated Water Res
 draft: 'true'
 heroImage: ''
 tags:
-- water
-- case-study
-- showcase
+- 水
+- ケーススタディ
+- ショーケース
 thumbnail: wois.png
 title: Water Observation and Information System
 type: showcase/case-studies

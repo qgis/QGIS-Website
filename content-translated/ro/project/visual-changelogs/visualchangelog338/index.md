@@ -42,7 +42,7 @@ Examples of some interesting temporal use cases include:
 
 ![](images/entries/e9349bf2255cb4e027d1f91460eb4fea9710c4c1.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ## Instrumente De Cartografiere
 ### Feature: Add Elevation Controller for filtering vertical data in 2d maps
 A new Elevation Controller provides users with the ability to filter vertical data in 2D maps, providing the equivalent experience of the temporal controller for elevation z-range slicing of data in line with [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201).
@@ -53,11 +53,11 @@ The controller shows as a range slider on the left of the map. There's a configu
 
 ![](images/entries/09e8196d117fbd9dc521e59ed5e206ced16e14ab.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add Z range support to map canvas / map settings items
 Elevation filtering is now supported in map canvases
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add option to set a fixed elevation slice width for elevation controller
 A new option is provided on the configuration menu of the elevation controller, which allows for setting a fixed elevation slice width.
 
@@ -65,28 +65,28 @@ It can be used when a specific elevation range width is desired, or when the ran
 
 ![](images/entries/89ac87d5ec596dbd04f45be17dac9532d4a120b4.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Interfața cu Utilizatorul
 ### Feature: Add search option for regular expression based searching
 A new optional regex mode has been exposed for advanced search options, as implemented in the updated search functionality for the code editor.
 
 ![](images/entries/2ab6a0a0e6837a51cf7e50a7104359fc063ced7e.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Data defined override: use middle-click to open the Expression Builder dialog window
 ## Descriere
 The middle-click on the Data defined override icon makes the Expression Builder dialog window open, as a convenient shortcut for right-clicking and then left-clicking on the Edit menu item.
 
 ![](images/entries/f44815b85558f76d7a6e6791370f683def53d51d.gif)
 
-This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
+Această funcționalitate a fost dezvoltată de [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ## Simbologie
 ### Feature: New single color renderer for rasters
 A new single-color symbology has been added for raster layers. This allows for a super simple and friendly way to render a raster using a single color.
 
 ![](images/entries/73049b50b1c9d2e2c0c22fbfdd00db58d4ffc5c0.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add support for Wind Barb rendering for mesh vector datasets
 Wind Barbs are a common way to display wind strength and direction on maps, and the new Wind Barb symbology type makes it easy for users to use this powerful visualization style for their mesh vector datasets.
 
@@ -94,7 +94,7 @@ Wind barbs encode the wind speed in knots (nautical miles per hour) so users mus
 
 ![](images/entries/1f5b158227f114192f411835adfb8dd40d0a8900.webp)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Această funcționalitate a fost dezvoltată de [Stefanos Natsis](https://github.com/uclaros)
 ## Etichetare
 ### Feature: Add maximum distance setting for point labels
 A new optional setting has been added for the "Around point" and "Cartographic" placement modes to specify the maximum distance of the labels from the feature. It's used together with the existing distance setting to define a range of distances at which labels may be placed from their corresponding point features.
@@ -107,9 +107,9 @@ When the layer is set to the "cartographic" mode, then the default behavior is a
 
 ![](images/entries/cf8223309d9bf77cf5634a7166706e3b9841bda9.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Această funcționalitate a fost finanțată de Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add 'over point' placement option for cartographic label mode
 A new option for label placement has been added for "O" = "over point" when the label placement mode is set to the "cartographic" mode.
 
@@ -117,25 +117,25 @@ When a feature's data-defined placement priorities include this new 'O' option, 
 
 ![](images/entries/25c00222d0e6f17efda6784e8ce9a577275618a8.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Această funcționalitate a fost finanțată de Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Randare
 ### Feature: Add data defined control over heatmap radius and maximum value
 This allows users to define the radius and maximum as a value that makes sense for the current situation, e.g. the current map scale, current print atlas feature, or current temporal range.
 
 This additionally includes the base changes required for data-defined properties at the feature renderer level, which may be useful for extending other vector renderer classes (e.g. point cluster/ displacement).
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Această funcționalitate a fost finanțată de Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Compoziții Cartografice
 ### Feature: Tab character support for QgsTextFormat and QgsTextRenderer
 A [regression](https://github.com/qgis/QGIS/issues/56981) resulted in QGIS stripping tab characters and limiting the ability to use tab characters in certain contexts, such as performing character alignment in legends.
 
 ![](images/entries/b8934ab8ad907adbc628a9e168fcbd9c88af83ee.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Copy composer grids
 A button to copy (duplicate) the selected grid has been added to the print composer.
 
@@ -143,9 +143,9 @@ This simplifies the process of creating new grids which only have a few differen
 
 ![](images/entries/bad634a873669247fe13d334d080b0b1cb6e1363.webp)
 
-This feature was funded by [NaturalGIS](https://naturalgis.pt/)
+Această funcționalitate a fost finanțată de [NaturalGIS](https://naturalgis.pt/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Add z range filter option for layout maps
 A new setting for layout map items allows users to set a specific elevation/z range for the filtering of 2D layout maps, similar to the existing setting for temporal filters.
 
@@ -155,20 +155,20 @@ Additionally, the range for z-filtering can be data-defined, allowing different 
 
 ![](images/entries/c7f2cc35cfaf4a101ee2be654688142fb83ac055.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add buttons to expand or collapse layout legend tree
 New buttons have been added to allow users to easily expand or collapse the legend trees within print layouts.
 
 ![](images/entries/e3ada0021b7137123133b645093168bd483530a7.webp)
 
-This feature was developed by [Harrissou Sant-anna](https://github.com/DelazJ)
+Această funcționalitate a fost dezvoltată de [Harrissou Sant-anna](https://github.com/DelazJ)
 ## Expresii
 ### Feature: Add @map\_z\_range variables reflecting the map's z range values
 New variables for retrieving the current `@map_z_range_lower` and `@map_z_range_upper` values have been added to QGIS Expressions that reflect the map canvas' z range value.
 
 ![](images/entries/ab7a53d114337665cded7fd178658144222d1962.gif)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ## Gestiunea Datelor
 ### Feature: Duplicate policy on fields when duplicating features
 When duplicating a feature (and its children) a new duplication policy will be available on QgsField objects.
@@ -182,7 +182,7 @@ There are three policy options currently available:
 
 ![](images/entries/76e7f27309a07b9bb7e61a074efa81c1340bfbed.webp)
 
-This feature was developed by [signedav](https://github.com/signedav)
+Această funcționalitate a fost dezvoltată de [signedav](https://github.com/signedav)
 ### Feature: Add "Fixed Time Range Per Band" mode for raster temporal control
 This mode can be used when each band in the raster layer is associated with a fixed time range, eg. NetCDF files.
 
@@ -190,7 +190,7 @@ The user can either manually populate a table with begin/end dates for each band
 
 ![](images/entries/7075b0b60ec0f0d4e5901e4d94452fa187b9a787.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Introduce fixed elevation range for raster layers
 A new option has been introduced for specifying how elevation is associated with raster layers. It permits a fixed elevation range to be set for the layer and can be used when the layer has a single fixed elevation or a range (slice) of elevation values.
 
@@ -200,7 +200,7 @@ When enabled, the layer will only be visible in 2D maps with elevation filtering
 
 ![](images/entries/64a2386154517472b58a41f2551b0d8d30951770.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Introduce fixed elevation range for mesh layers
 A new fixed elevation range mode is available for mesh layers, equivalent to the fixed elevation range mode for raster layers which provides a new option for specifying how mesh layers have associated elevation. It permits a fixed elevation range to be set for the layer. It can be used when the layer has a single fixed elevation or a range (slice) of elevation values.
 
@@ -210,7 +210,7 @@ When enabled, the layer will only be visible in 2D maps with elevation filtering
 
 ![](images/entries/88a53a76a505418c2ed776f70fb56cd5bd85031b.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add a "fixed range per band" elevation mode for rasters
 In this new mode, each band in the raster can have a fixed elevation range associated with it.
 
@@ -224,7 +224,7 @@ Expression-based value definitions will allow users to design expressions capabl
 
 ![](images/entries/9622032fd646ac79cc63e48ed30eca1841c9993b.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add "dynamic elevation range per band" mode for rasters
 A new dynamic mode for configuration raster elevation is provided where the elevation range for raster bands is calculated using a pair of QGIS Expressions for the lower and the upper limits of the elevation range for the layer.
 
@@ -242,11 +242,11 @@ This differs from the"Fixed Elevation Range Per Band" mode which requires users 
 
 ![](images/entries/d40450a1bcc9d3d2d3c5565681228b1d52256b69.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add fixed elevation range per dataset group mode for mesh layers
 Additional functionality to set a fixed elevation range per dataset group on mesh layers mimics the new "fixed range per band" mode raster layers but allows a per-dataset group elevation range to be set for mesh layers.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add option to export all lines with minimal width in dxf exports
 An optional setting has been added to dxf exports that will allow users to write all lines with minimal width 0 (hairline).
 
@@ -254,17 +254,17 @@ Lines within DXF files having zero width typically remain minimal in the CAD reg
 
 ![](images/entries/1c7a18b41d42049e6c6ab7538d74d69406b837bb.webp)
 
-This feature was funded by [Stadtwerke München](http://www.swm.de/)
+Această funcționalitate a fost finanțată de [Stadtwerke München](http://www.swm.de/)
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Această funcționalitate a fost dezvoltată de [mhugent](https://github.com/mhugent)
 ### Feature: Allow users to override the layer names exported to DXF
 It is now possible to override the output name of individual layers exported, with new configuration options added to the DXF export dialogs for project exports, layer exports, and the Export layers to DXF Processing algorithm.
 
 ![](images/entries/83f65d9f8afbd45ecc0fa6b2804a7981f6192e7e.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+Această funcționalitate a fost finanțată de [the QGIS user group Elveția](https://qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Create DXF blocks for point symbols with data defined properties
 Additional enhancements have been added to the capability of utilizing references within a DXF, especially for complex data-defined properties, providing much smaller DXF outputs for complex layers that include repeated point symbols.
 
@@ -272,9 +272,9 @@ A process of attribute hashing is utilized to optimize the performance and accou
 
 ![](images/entries/5de078fe33adb052f1177d7359432e69c84d81fa.webp)
 
-This feature was funded by [Stadtwerke München](http://www.swm.de)
+Această funcționalitate a fost finanțată de [Stadtwerke München](http://www.swm.de)
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Această funcționalitate a fost dezvoltată de [mhugent](https://github.com/mhugent)
 ### Feature: Add option 'Use only selected features' to DXF export
 A new option has been added to DXF export dialogs that will allow users to export only the features active in the current selection.
 
@@ -282,9 +282,9 @@ By default, this setting will be set to false.
 
 ![](images/entries/28e6ac14aac9b118efadc23167f795da2bc0c19c.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
+Această funcționalitate a fost finanțată de [the QGIS user group Elveția](https://www.qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Import/ Export 'DXF Export' dialog settings
 Users to save and restore GUI settings for the DXF Export dialog, making it possible to export any number of configurations for improved reusability or to share them with colleagues for enhanced collaboration.
 
@@ -292,26 +292,26 @@ Settings are exported to an XML file which can be loaded into the DXF Export con
 
 ![](images/entries/7f343b6a090823e6a090f4a33423cdd52fb655a8.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+Această funcționalitate a fost finanțată de [the QGIS user group Elveția](https://qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ## Formulare și Controale grafice
 ### Feature: Add CMYK support for Color Widget
 CMYK color support has been added for the color widget in line with the [CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283).
 
 ![](images/entries/b5572a60bcc06b580b55f42d2b87f6825daa5774.webp)
 
-This feature was funded by Métropôle de Bordeaux
+Această funcționalitate a fost finanțată de Métropôle de Bordeaux
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces](https://github.com/troopa81)
 ### Feature: Add parent feature scope when adding/editing a child feature through the relation editor widget
 A current\_parent\_\* scope is now provided when adding and editing child features through the attribute form's relation editor widget.
 
 This is very useful in contexts where a captured feature or value may rely on the parent entity being captured at the same time, but as the parent feature has not yet been captured, the attributes and geometry cannot be retrieved.
 
-This feature was funded by [Hansestadt Herford](https://www.herford.de/)
+Această funcționalitate a fost finanțată de [Hansestadt Herford](https://www.herford.de/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add "match contains" to autocompleter in value relation widget
 Previously, the autocomplete function would match from the beginning of the string only, but a new checkbox option allows users to match contained values within the entire string.
 
@@ -319,13 +319,13 @@ The old behavior is still the default for autocomplete, making this setting an o
 
 ![](images/entries/3834e0b22600cce776ac149910fd9246bda6bd9c.webp)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Implement value relation's grouping functionality
 Grouping functionality has been added for the value relation editor widget, allowing users to regroup items into buckets of values. Users are also given the option to show the group value as a group header name in the combo box and table widgets.
 
 ![](images/entries/3ef4fa48ee89cc91babb736dd477a1db6b66bcbc.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ## Legenda stratului
 ### Feature: Show a color ramp legend for vector heatmap layers
 Instead of showing no legend for these layers, QGIS will now show the color ramp as a gradient bar.
@@ -336,15 +336,15 @@ This update also introduced changes to the internal API for vector renderers so 
 
 ![](images/entries/06b024c9294de21d36cc6efb702c342106a6242d.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Această funcționalitate a fost finanțată de Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add layer tree filter for "Show Broken Layers Only"
 When checked, only layers with broken sources will be shown in the tree.
 
 This allows users to easily find broken layers in large complex projects, where they may otherwise escape notice!
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Procesare
 ### Feature: Show more detail in history dialog
 A new tree display is provided for review of processing history entries, where the root item for each entry shows the full algorithm log when clicked and the respective python or qgis\_process commands are displayed as child items.
@@ -353,7 +353,7 @@ This provides more useful information for users browsing the history, while stil
 
 ![](images/entries/34df4b46463545d3d9fc20168d386ffc04d9341d.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add "Run Selected Steps" option to model designer
 A new action will allow users to run only the selected steps in a model, effectively allowing users to run a subset of a model.
 
@@ -363,7 +363,7 @@ This makes it possible for a user to fix parts of a large model, without having 
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add "View Output Layers" option for model child algorithms
 When editing a model through the designer, a new right-click context option has been added for "View Output Layers" on any child step in the model<br />that has been run. Selecting this option will add the output layers from that step as new layers in the current QGIS project.
 
@@ -377,7 +377,7 @@ An additional "View Log" action has also been provided so that users can see the
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Endpoint distance threshold for network analysis
 An optional end-point distance threshold parameter has been added to the network analysis tools.
 
@@ -393,13 +393,13 @@ The behavior of the threshold depends on the algorithm:
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add support for pure date and time decorators
 QGIS Processing previously provided support for generating and processing datetime values as an explicit datetime type, but this release will support the definition of datetime, time, and date objects as discrete data types.
 
 Această facilitate a fost finanțată de Ifremer
 
-This feature was developed by [Jean Felder](https://github.com/ptitjano)
+Această funcționalitate a fost dezvoltată de [Jean Felder](https://github.com/ptitjano)
 ## Opțiunile Aplicației și ale Proiectului
 ### Feature: Add vertical crs option for projects
 In line with [QEP \#267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267), a new vertical CRS option has been added to projects.
@@ -419,7 +419,7 @@ The API for project objects has also been extended to support this functionality
 
 ![](images/entries/83cc370834aa045a61e3021da640753f406f4a23.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add elevation range to project properties
 This setting allows users to specify the upper and lower elevation limits associated with the project in line with [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201), providing an equivalent user experience for filtering elevation range as users may already be familiar with for configuring the temporal range settings within projects.
 
@@ -427,7 +427,7 @@ This can be specified through the Elevation tab (renamed from "Terrain") in the 
 
 ![](images/entries/c9f0765306562047cdba7a675587d484d5a7ce51.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Senzori
 ### Feature: Support feature expansion
 This change allows SensorThings entities to be expanded to contain their related child feature attributes, exposing the relational SensorThings model as a traditional "flat" GIS-friendly table structure.
@@ -440,17 +440,17 @@ An option to limit the number of child features returned when expanding is provi
 
 ![](images/entries/457f84d686c8c91d0fc894920ab462511226c0d2.webp)
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Această funcționalitate a fost finanțată de [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add support for SensorThings Multidatastreams
 This adds support for the Multidatastream entity type, as implemented in the SensorThings version 1.1 "MultiDatastream extension".
 
 While the specification mandates that MultiDatastreams have an optional polygon geometry, many servers expose different geometry types for this entity or return errors when attempting to read the geometries from MultiDatastreams. Accordingly, QGIS now exposes an option to load MultiDatastreams as geometryless layers alongside the default option to load them as polygon layers, allowing users to handle a wider range of connections.
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Această funcționalitate a fost finanțată de [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Serial port sensor's data frame delimiter
 A new data frame delimiter option has been added to the serial port sensor configuration.
 
@@ -458,19 +458,19 @@ In cases where multiple data frames are found in the last chunk of data pushed b
 
 ![](images/entries/6cc5c72f2a9ff329f8a507e63e28d3771b26c0d3.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add an optional feature limit setting
 Allows setting a maximum number of features to request from the service, avoiding overloading services with too many requests
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Implement subset string support for SensorThings
 This allows setting custom filters on the layer, using the SensorThings filter syntax.
 
 A custom layer filter GUI is provided for SensorThings layer filters, making it easier for users to craft valid filters using the SensorThings filter language.
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Această funcționalitate a fost finanțată de [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Profile Plots
 ### Feature: Add tolerance for lines and polygons
 The elevation profile tool has been improved by adding tolerance support for lines and polygons (2D/ 3D), as illustrated using drillhole representations (from the [OpenLog plugin](https://plugins.qgis.org/plugins/openlog/)).
@@ -479,24 +479,24 @@ Without support for tolerances, any line or polygon feature is displayed in its 
 
 ![](images/entries/25b1f63397246b4195891a08956b38239e78df07.gif)
 
-This feature was funded by CEA/DAM François Renard
+Această funcționalitate a fost finanțată de CEA/DAM François Renard
 
-This feature was developed by [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
+Această funcționalitate a fost dezvoltată de [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
 ## Furnizorii de Date
 ### Feature: Add extent based filtering for SensorThings layers
 Allows users to set an extent limit for the layer so that features are only ever loaded within this extent.
 
 The extent can be set using the data source manager before initially adding the layer, or modified within the source tab if the layer properties.
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Această funcționalitate a fost finanțată de [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Web proxy prefix support for ArcGIS URLs
 A new prefix field is provided in ArcGIS settings dialogs that allows users to define the URL prefix of a web proxy used to access ArcGIS Services which will be prepended to all requests.
 
 ![](images/entries/671e0f4b015b4a575c6bb1255317f0af56a6c056.webp)
 
-This feature was developed by [Vytax](https://github.com/Vytax)
+Această funcționalitate a fost dezvoltată de [Vytax](https://github.com/Vytax)
 ### Feature: Add support for fast extent estimation on SAP HANA connections
 Stored extent metadata can be utilized with the new "use estimated metadata" connection, which allows for precomputed extent estimation and much faster connectivity on large tables.
 
@@ -504,7 +504,7 @@ Although costly aggregation functions are avoided whenever the extent is recompu
 
 ![](images/entries/cf6ffc5f71ca8d57e9f3f717bf3e960c5afb51e4.webp)
 
-This feature was developed by [Johannes Quast](https://github.com/jatsqi)
+Această funcționalitate a fost dezvoltată de [Johannes Quast](https://github.com/jatsqi)
 ## QGIS Server
 ### Feature: Default limit for GetFeatureInfo results
 A new setting allows users to set a default FEATURE\_COUNT value individually for each WMS connection, with a predefined default value of 10.
@@ -515,15 +515,15 @@ The default user experience has not changed when adding layers from the data sou
 
 ![](images/entries/aa3907488d32cf1e90bb04115dfacffb5cdfee21.webp)
 
-This feature was funded by [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/)
+Această funcționalitate a fost finanțată de [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Add crs information in WMS GetFeatureInfo output when it differs from WGS84
 GeoJSON explicitly requires the use of OGC:CRS84, but when a GetFeatureInfo request that explicitly requests a CRS that is not WGS84 is sent to a QGIS Server WMS, the output will now include the CRS definition in a manner compatible with the older [GeoJSON specification format](http://wiki.geojson.org/GeoJSON_draft_version_6#Specification) that included support for multiple Coordinate Reference Systems.
 
-This feature was funded by Eurométropole de Strasbourg
+Această funcționalitate a fost finanțată de Eurométropole de Strasbourg
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces](https://github.com/troopa81)
 ## Programabilitate
 ### Feature: Add replace/ replace all functionality to QgsCodeEditorWidget
 The new replace functionality allows replacing matching text. If the regex find option is enabled, then captured groups from the regular expression pattern are available for use in the replacement string using the numeric identifier of the group (e.g. via `\1`).
@@ -532,7 +532,7 @@ In addition, the processing script editor has been ported to leverage the `QgsCo
 
 ![](images/entries/286b7da77b39735f963327f8c0c373a4530023fc.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Register custom elevation profile sources
 We've added a new `QgsProfileSourceRegistry` class to allow both core and plugin developers to register profile sources other than map layers (e.g., based on profile web services).
 
@@ -544,9 +544,9 @@ Like other QGIS registries, the profile source registry is available from the `Q
 
 ![Custom profile source example](images/entries/custom_profile_source.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
+Această funcționalitate a fost finanțată de [the QGIS user group Elveția](https://www.qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ## Corecții Importante
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
@@ -561,9 +561,9 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 | [OAPIF] Server defined fields are not fetched when creating a new feature | [#57486](https://github.com/qgis/QGIS/issues/57486) | [PR #57547](https://github.com/qgis/QGIS/pull/57547) | [PR #57549](https://github.com/qgis/QGIS/pull/57549) |
 | QGIS3.28.15:Polygon Features from ArcGIS GDB Turn into TABLE after Editing in QGIS | [#57536](https://github.com/qgis/QGIS/issues/57536) | [GDAL PR 10008](https://github.com/OSGeo/gdal/pull/10008) | N/A |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
+Această funcționalitate a fost dezvoltată de [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Feature: Bug fixes by Alessandro Pasotti (itOpen / qcooperative)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -589,9 +589,9 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | Identify Results for raster data value does not use correct decimal separator | [#57765](https://github.com/qgis/QGIS/issues/57765) | [PR #57769](https://github.com/qgis/QGIS/pull/57769) | queued |
 | Value relation dropdown issue -Dropdown list selection reverts to default value upon selecting subtype option | [#57808](https://github.com/qgis/QGIS/issues/57808) | Cannot reproduce (awaiting feedback) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by David Signer (OPENGIS)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -599,9 +599,9 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 | Custom properties variableNames and variableValues are cleared when more than one layer custom variable exist | [#57334](https://github.com/qgis/QGIS/issues/57334) | [PR #57490](https://github.com/qgis/QGIS/pull/57490) | Not appropriate |
 | Default values depending on other fields are not correctly applied when field not part of form made by Drag and Drop Designer | [#57411](https://github.com/qgis/QGIS/issues/57411) | [PR #57527](https://github.com/qgis/QGIS/pull/57527) | Not appropriate |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [David Signer (OPENGIS)](https://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [David Signer (OPENGIS)](https://www.opengis.ch/)
 ### Feature: Bug fixes by Sandro Santilli (strk)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -617,9 +617,9 @@ This feature was developed by [David Signer (OPENGIS)](https://www.opengis.ch/)
 | Directory /tmp full of QGIS temporary files after ctest run | [#48884](https://github.com/qgis/QGIS/issues/48884) |  |  |
 | test_provider_postgresprovider TestPyQgsPostgresProvider.testExtent doesn't test extent | [#57818](https://github.com/qgis/QGIS/issues/57818) | [PR #57829](https://github.com/qgis/QGIS/pull/57829) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
+Această funcționalitate a fost dezvoltată de [Sandro Santilli (strk)](https://strk.kbt.io/)
 ### Feature: Bug fixes by Julien Cabieces (Oslandia)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -631,9 +631,9 @@ This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 | Topology Checker crashes | [#57627](https://github.com/qgis/QGIS/issues/57627) | [PR #57695](https://github.com/qgis/QGIS/pull/57695) | [PR #57712](https://github.com/qgis/QGIS/pull/57712) |
 | Debian sid Qt6 compile fails on sip build, python bindings | [#57760](https://github.com/qgis/QGIS/issues/57760) | upstream issue, wait for PyQt/sip mailing list answer |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Jacky Volpes (Oslandia)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -641,18 +641,18 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 | Postgres layer with multi geometry columns fails to export | [#57757](https://github.com/qgis/QGIS/issues/57757) | Nu este o eroare |  |
 | Georeferencing tool: default name for export with an accent in french (_modifié) | [#55389](https://github.com/qgis/QGIS/issues/55389) | [Transifex](https://app.transifex.com/qgis/QGIS/translate/#fr/$/412589941?q=text%3A_modified) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Jacky Volpes (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Jean Felder (Oslandia)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | qgsabstractmaterialsettings: Handle selection in addParametersToEffect | neraportat | [PR #57803](https://github.com/qgis/QGIS/pull/57803) | not backported |
 | qgs3daxis: Fix cube face picking | neraportat | [PR #57848](https://github.com/qgis/QGIS/pull/57848) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Jean Felder (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Nyall Dawson (North Road)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -687,8 +687,8 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 | Fix colors for new diagram categories are not randomly picked | [#56862](https://github.com/qgis/QGIS/issues/56862) | [PR #57532](https://github.com/qgis/QGIS/pull/57532) | [PR #57539](https://github.com/qgis/QGIS/pull/57539) |
 | Make brush and stroke style combo box icons visible on dark themes | neraportat | [PR #57506](https://github.com/qgis/QGIS/pull/57506) | [PR #57510](https://github.com/qgis/QGIS/pull/57510) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 
 {{<content-end >}}

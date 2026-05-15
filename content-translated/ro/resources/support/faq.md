@@ -70,7 +70,7 @@ Here are some choices to cite the overall QGIS software project, a specific QGIS
 
 **The QGIS project as an evolving software project, independent of a specific software release, by Digital Object Identifier (concept DOI)**
 
-Use the concept DOI [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224) when
+Folosește conceptul [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224) atunci când
 - referring to the QGIS software in general (e.g., in introductions or background sections)
 - describing workflows where the exact version is not critical
 - citing QGIS as a long-term research tool or infrastructure

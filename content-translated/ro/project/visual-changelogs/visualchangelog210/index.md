@@ -81,7 +81,7 @@ Conform listei de mai jos, s-au adus următoarele îmbunătățiri:
 ### Funcționalitate: Gestiune îmbunătățită pentru suprascrierea potențială a proiecției proiectului
 QGIS 2.10 vă va avertiza acum, la încercarea de a salva proiectul dvs., dacă data ultimei modificări dintr-un proiect încărcat s-a schimbat. Acest lucru este util în cazul în care mai mult de un utilizator, sau de o sesiune, au deschis același fișier de proiect, și ambii încearcă să salveze modificările în fișierul de proiect.
 
-**This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
+**Această funcționalitate a fost dezvoltată de:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
 ![image17](images/entries/c30c07afc9123db564b766339daefe53af3cd348.webp)
 ### Funcționalitate: Nou motor geometric
@@ -100,9 +100,9 @@ QGIS 2.10 has a new geometry engine. In general you won\'t see many differences 
     
 Then add the layer `curves` to your project.
 
-**This feature was developed by:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
+**Această funcționalitate a fost dezvoltată de:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [KantonSolothurn, Switzerland](http://www.sogis.ch/)
+**Această funcționalitate a fost finanțată de:** [Cantonul Solothurn, Elveția](http://www.sogis.ch/)
 
 ![image18](images/entries/4f070e4075b4703edb40d8cb91d5fb527d1d3a93.webp)
 ## Instrumentele de analiză
@@ -138,7 +138,7 @@ Exportul DXF a fost îmbunătățit în mod continuu în ultimile trei versiuni 
 
 See also [this article on qgis.ch](http://www.qgis.ch/en/projects/dxf-export) explaining what is supported and what not.
 
-**This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
+**Această funcționalitate a fost dezvoltată de:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
 **Această funcționalitate a fost finanțată de:** Comunitățile din Morges, Uster, Vevey și SIGE
 
@@ -159,9 +159,9 @@ sau
 ### Funcționalitate: Câmpurile virtuale sunt actualizabile
 Prior to version 2.8 you had to delete and recreate virtual fields if you wanted to change the expression for calculating the virtual field. In 2.10 you can now go to the `Fields` tab and press the small `Expression` button to open the expression editor and update the expression used for the virtual field.
 
-**This feature was developed by:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+**Această funcționalitate a fost dezvoltată de:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
-**This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
+**Această funcționalitate a fost finanțată de:** [Orașul Uster, Elveția](http://gis.uster.ch/)
 
 ![image8](images/entries/f45d5a4447f28d96a2c5c4cc6c27b84285096a02.webp)
 ### Funcționalitate: Linie de editare cu auto-completare pentru widget-ul ValueRelation
@@ -187,9 +187,9 @@ De acum, nu mai este necesară o coloană cu întregi unici, pentru a încărca 
 ### Funcționalitate: Înlănțuirea filtrelor pentru widgetul de referință a relațiilor
 To select linked entries from other tables one can use the relation reference widgets. One can either select elements graphically by selecting them in the map, if the linked feature has a geometry attached or choose an element by the linked id. To facilitate the non-spatial selection it is now possible to narrow the available options with filters (chained or unchained). If the filters are unchained their choices are combined with \"AND\" to define the available options. If chained is checked, a drill-down mode for the filters is activated so each filter only shows the entries which correspond to the previous filter. This is useful for selecting from hierarchical data like City -\> Street -\> Number.
 
-**This feature was developed by:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+**Această funcționalitate a fost dezvoltată de:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+**Această funcționalitate a fost finanțată de:** [SIGE](http://www.sige.ch/)
 
 ![image11](images/entries/fd0d2e726135033e8e5a61b8a718535074a2ac0c.webp)
 ## Diagrame
@@ -221,9 +221,9 @@ In previous QGISversions it was hard to use graphical scalebars when the range o
 
 Don\'t forget to also set the alignment of the scalebar, esp. if you want it to be centered or right-aligned!
 
-**This feature was developed by:** [Sandro Mani (Sourcepole AG)](http://www.sourcepole.ch/)
+**Această funcționalitate a fost dezvoltată de:** [Sandro Mani (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
+**Această funcționalitate a fost finanțată de:** [Cantonul Glarus, Elveția](http://geo.gl.ch/)
 
 ![image20](images/entries/d435d4f94cf3d70a97c8d373aa08c28f8685defd.webp)
 ## Programabilitate
@@ -244,9 +244,9 @@ FI_POINT_TOLERANCE=16&FI_LINE_TOLERANCE=8&FI_POLYGON_TOLERANCE=4
 
 și modificați valorile toleranței (în pixeli) pentru a se potrivi nevoilor dumneavoastră.
 
-**This feature was developed by:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
+**Această funcționalitate a fost dezvoltată de:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
+**Această funcționalitate a fost finanțată de:** [Orașul Uster, Elveția](http://gis.uster.ch/)
 
 ![image22](images/entries/29470cc51906dffe3a96d3e17a7e8c83b4504a18.webp)
 ## Simbologie
@@ -257,9 +257,9 @@ Adăugarea opțiunilor în meniul avansat de randare clasificată, pentru a stab
 ### Funcționalitate: Diverse dimensiuni pentru simboluri, folosind renderul gradat
 Renderele sunt subsisteme ale QGIS care vă permit să creați reprezentări cartografice bogate, pentru datele dvs. Un render gradat prezintă simbologia în funcție de o valoare în continuă schimbare într-un strat vectorial. În versiunile anterioare de QGIS puteați modifica numai culoarea (de exemplu, prin utilizarea unei culori de-a lungul unei game de culori). În QGIS 2.10, randarea gradată a simbolurilor acceptă, de acum, să modificați dimensiunea *sau* culoarea. Pentru straturile de tip punct se poate modifica dimensiunea punctului, iar pentru linii se poate schimba lățimea liniei. Straturile de tip poligon păstrează doar capacitatea de schimbare în funcție de culoare, nefiind posibilă încă, schimbarea în funcție de dimensiunea liniei.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Această funcționalitate a fost dezvoltată de:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Această funcționalitate a fost finanțată de:** [Agenția Apei Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image24](images/entries/1d170efe9ca0c76e971cfe0f1d0adb7c4e14f08f.webp)
 ### Funcționalitate: O nouă opțiune pentru prevenirea decupării automate a entităților după extinderea hărții
@@ -269,9 +269,9 @@ This option (located under the symbol advanced menu) disables the automatic clip
 ### Funcționalitate: Dimensiunea scării și rotația au fost eliminate din meniul avansat
 We have removed `SizeScale` and `Rotation` from `` `Layer -> Properties -> Symbology tab -> Advanced Menu ``. You should rather set rotation on a *per-symbol layer basis* using an expression or field. The expressions used in old projects are converted to symbol level **data defined size and angle** properties.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Această funcționalitate a fost dezvoltată de:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Această funcționalitate a fost finanțată de:** [Agenția Apei Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image26](images/entries/2e02fb11f0f967b1ea17331d9af3d5a22a63fed1.webp)
 ### Funcționalitate: Proprietăți definite cu ajutorul datelor, pentru fontul marcajului
@@ -281,9 +281,9 @@ Cele mai multe proprietăți ale marcajului de tip font pot fi de acum definite 
 ### Funcționalitate: Vizualizarea și modificarea renderului gradat folosind o histogramă
 O nouă filă pentru histogramă a fost adăugată la renderul gradat, ceea ce arată o histogramă interactivă a valorilor din câmpul sau expresia atribuite. Pauzele între clase pot fi deplasate sau adăugate folosindu-se histograma.
 
-**This feature was funded by:** [ADUGA](http://www.aduga.org)
+**Această funcționalitate a fost finanțată de:** [ADUGA](http://www.aduga.org)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image28](images/entries/b519e61b5b50de563203adf8ef35a7c037536332.webp)
 ### Funcționalitate: Expresii pentru dimensiune, rotație și lățimea-liniei la nivelul listei de simboluri
@@ -293,9 +293,9 @@ Pentru simboluri, este generată o legendă pentru diverse dimensiuni. Acest luc
 
 Un asistent, cu previzualizare, este accesibil prin intermediul butonului de definire a datelor, pentru a ajuta utilizatorul să definească expresia dimensiunii. Sunt disponibile trei metode: Flannery, Area și Radius.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Această funcționalitate a fost dezvoltată de:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Această funcționalitate a fost finanțată de:** [Agenția Apei Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image29](images/entries/30f4392583400a0ed2fbdae3468265b91f39e675.webp)
 ### Funcționalitate: Efecte în timp real pentru straturi
@@ -303,9 +303,9 @@ Efectele în timp real pentru straturi adaugă capacităților cartografice, dej
 
 **Observație**: Aceasta este o funcționalitate pentru utilizatorii avansați, și ar trebui să rețineți că folosirea excesivă a acestei caracteristici poate încetini semnificativ timpul de randare, așa că ar trebui să luați în considerare diferite profiluri de simbologie pentru stratul dvs. - unul pentru generarea de hărți de calitate și altul pentru producerea de schițe.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [a crowd-funding initiative](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
+**Această funcționalitate a fost finanțată de:** [o inițiativă de strângere de fonduri](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
 
 ![image30](images/entries/2ce331bd884c14764989c1bc5e3c4d1f80ec588c.webp)
 

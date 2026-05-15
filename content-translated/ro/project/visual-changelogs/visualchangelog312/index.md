@@ -33,7 +33,7 @@ A new menu entry (Actions on selection) is added to the layer tree context menu.
 
 ![imageQ1](https://user-images.githubusercontent.com/127259/74035907-7f334580-49bb-11ea-8d2d-b99eaa10aa89.png)
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Feature: Show distance from GPS lock position to current cursor
 When a GPS device is connected, whenever the user moves the cursor over the canvas a live status bar message displays the distance and bearing from the cursor to the GPS fix position.
 
@@ -41,7 +41,7 @@ Project distance and bearing settings are respected in this display.
 
 ![Peek 2020-01-14 16-06](https://user-images.githubusercontent.com/1829991/72318360-cd6c6600-36e7-11ea-9f2d-9a47d8772623.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add setting for format to show angular bearings to projects
 The Settings - Options - Map Tools tab contains a new setting for controlling the default format to use for displaying angular bearings for newly created projects. Whenever a new project is created, it will inherit this default setting.
 
@@ -53,20 +53,20 @@ Also includes lots of nice API additions providing a stable, easy to discover pl
 
 ![Peek 2020-01-09 11-08](https://user-images.githubusercontent.com/1829991/72029046-5fcbce80-32d0-11ea-8571-0ae8fa8e3bb0.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Interfața cu Utilizatorul
 ### Feature: Deselecting tables when adding PostgreSQL data after add button is clicked.
 When adding PostgreSQL data in Data Source Manager after pressing the add button QGIS should deselect previously selected tables.
 
-This feature was funded by [Kartoza](http://kartoza.com/)
+Această funcționalitate a fost finanțată de [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+Această funcționalitate a fost dezvoltată de [Samweli Mwakisambwe](http://samweli.github.io/)
 ### Feature: Show the total pan distance and bearing in the status bar
 We added the total pan distance and bearing in the status bar during canvas pan operations. Allows users to know exactly how far (and in what direction) they\'ve dragged the map.
 
 ![image5](images/entries/48c75d20d3805af3dad8c7faae3c3786a8f6fed0.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: New option to set the default project file format (qgs/qgz)
 This adds a new global option to define the preferred project file format
 
@@ -74,7 +74,7 @@ This adds a new global option to define the preferred project file format
 
 Această facilitate a fost finanțată de fundația GEM
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Feature: Fix invalid attributes dialog on copy to another layer
 It\'s possible to copy features from one layer to another. If there are the same fields in the destination layer, then the attributes for them are taken from the original feature. If not, the default value is taken. Otherwise, the new attribute is null.
 
@@ -88,13 +88,13 @@ And on pasting only one feature, the options are reduced:
 
 ![copypastesingle](https://user-images.githubusercontent.com/28384354/72243125-5ce01f00-35eb-11ea-897e-0bccdcf083d7.png)
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+Această funcționalitate a fost dezvoltată de [signedav](https://api.github.com/users/signedav)
 ### Feature: Allow dropping a map layer from the layer tree onto a projection selection widget
 \...to set the projection to match that layer. Just a little timesaving shortcut!
 
 ![Peek 2019-12-20 11-27](https://user-images.githubusercontent.com/1829991/71222288-b7070080-231b-11ea-89f4-af856dece4c3.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Processing raster calc: add missing btns and validate
 Add missing buttons for ABS/MIN/MAX and validate expression.
 
@@ -107,17 +107,17 @@ Mesh vector renderer now can visualize streamlines and particles on top of exist
 
 ![image11](images/entries/5b772e74d433e766b50023cd107aad9cb1d68de6.webp)
 
-This feature was funded by [TUFLOW](http://www.tuflow.com)
+Această funcționalitate a fost finanțată de [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### Feature: Selective masking
 A new advanced rendering feature has been added: selective masking. It allows the definition of \'masks\' areas around labels or point markers. These masks will \"un-draw\" only some symbol layers of other layers underneath, chosen by the user.
 
 ![image12](https://user-images.githubusercontent.com/1618556/62111873-d68c8680-b2b1-11e9-8cd4-19077f99a8ff.gif)
 
-This feature was funded by [QGIS.CH and others through a cofunding campaign](https://oslandia.com/en/offre-qgis/selective-masking/)
+Această funcționalitate a fost finanțată de [QGIS.CH and others through a cofunding campaign](https://oslandia.com/en/offre-qgis/selective-masking/)
 
-This feature was developed by [Hugo Mercier (Oslandia)](https://www.oslandia.com)
+Această funcționalitate a fost dezvoltată de [Hugo Mercier (Oslandia)](https://www.oslandia.com)
 ### Feature: When decimal degrees rotation fails to evaluate, fallback to static value
 The legend finally also works nicely with data defined rotation. QGIS could already apply data defined rotation to symbols and individual symbol layers, but this resulted in a broken legend. The rotation of symbols (and symbol parts defined on symbol layers) on the legend can now be controlled by changing the default values next to the data defined properties.
 
@@ -145,7 +145,7 @@ The new behavior is to fall back to the static, configured values which makes it
 
 ![Peek 2019-12-08 09-16](https://user-images.githubusercontent.com/588407/70386651-acec1600-199b-11ea-8ce2-27798aec38a7.gif)
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Feature: Add density-based point count for the random marker fill
 This feature adds a density-based point count method to the new random marker fill.
 
@@ -162,66 +162,66 @@ Opțiunile includ:
 
 ![image16](https://user-images.githubusercontent.com/1829991/66734145-51267480-eea5-11e9-9e0a-3bfeee15f976.png)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Această funcționalitate a fost finanțată de [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Add option to set color for rendering nodata pixels in raster layers
 Allows raster nodata pixels to be colored in a specific (non-transparent) color. Designed to match the \"Display background value\" option from ArcMap.
 
 ![image17](https://user-images.githubusercontent.com/1728657/64846100-f4c9fe00-d635-11e9-8acb-367ad2dd2915.png)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Această funcționalitate a fost finanțată de [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ## Etichetare
 ### Feature: Allow to delete custom label position
 We added a new possibility option to delete custom label position by pressing DEL key when moving the label.
 
 ![image18](images/entries/e8064c56705b7a74befa85e8a34e7b7311626f0a.gif)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://www.opengis.ch)
 ## Diagrame
 ### Feature: Paint effect support for diagram renderer
 this new feature allows for diagrams to use paint effects, including drop shadows, outer glows, etc\...
 
 ![image19](images/entries/37d0a22707eca463e5aba7c0a349b2d8029fb823.gif)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Această funcționalitate a fost finanțată de [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: New diagram type \"stacked bars\"
 With this new feature users will have possibility to create stacks bars of varying colors for each attribute on top of each other vertically or horizontally. Designed to match the \"Stacked\" chart renderer option available in ArcGIS.
 
 ![image20](images/entries/933c25cf0cd8997e177eee809b4fa26462b6d8c2.webp)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Această funcționalitate a fost finanțată de [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Spacing option for vector layer bar chart diagrams
 Allows for user-controlled spacing between each bar in the chart.
 
 ![image21](images/entries/7906ea6467d1d5ea19550ce1711fcc277df709a0.webp)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Această funcționalitate a fost finanțată de [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: New option to control pie diagram angular direction
 This feature allows to control whether the sections are rendered in a clockwise or counter-clockwise direction.
 
 ![image22](images/entries/c2484d36648c335d16d1e3a45ac1a132ca2baafe.webp)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Această funcționalitate a fost finanțată de [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ## Randare
 ### Feature: Play/Stop Buttons for Mesh Layer Playback
 It is possible to switch the timeframes of mesh layer\'s datasets by play/stop button. The playback setting could be adjusted in the time setting dialog.
 
 ![image23](images/entries/4799685965addef6ca2c788d82eea77e67e2f1f3.webp)
 
-This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost finanțată de [Lutra Consulting](http://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting](http://www.lutraconsulting.co.uk)
 ### Feature: On the Fly Resampling of Data Defined on Faces to Vertices (Mesh Layer)
 For datasets defined on faces, one can choose to interpolate data to vertices with neighbour average method. When no data interpolation method is chosen, each pixel on a single face has a single value/color. With data on vertices, the rendering for each pixel is interpolated from the values on the vertices, making smoother figures.
 
@@ -229,9 +229,9 @@ Use mesh contours styling panel to switch between the data interpolation methods
 
 ![image24](images/entries/c9c38ee8c59693b2971ab6269db22681a61002a1.webp)
 
-This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
+Această funcționalitate a fost finanțată de [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### Feature: Support for Mesh Reference Time
 For various dataset types, for example GRIB and NetCDF, the reference time in QGIS time settings dialog is prepopulated from the raw data and does not need to be set manually. Also we fixed various bugs related to time parsing, so in QGIS 3.12 it should be possible to format and show your time in plots/animations in the proper way:
 - If there is a valid time reference provided with dataset groups, this time reference is used to displaying time (using absolute time).
@@ -244,9 +244,9 @@ It also adds a new feature to let the user set the time unit of the provider wit
 
 ![imageQ3](https://user-images.githubusercontent.com/7416892/70955568-bb939680-2047-11ea-9857-8aba122e43dd.png)
 
-This feature was funded by [TUFLOW](http://www.tuflow.com)
+Această funcționalitate a fost finanțată de [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ## Funcționalități 3D
 ### Feature: 3D Mesh Layer Terrain Renderer
 It is possible to render the mesh layer in the 3D view as terrain.
@@ -271,9 +271,9 @@ For now, the mesh can be rendered as a TIN but rendering dataset is not supporte
 
 ![image27](images/entries/f19c25acbd1eb462cdc0365d3af3f706c1b4d2fe.gif)
 
-This feature was funded by [TUFLOW](http://www.tuflow.com)
+Această funcționalitate a fost finanțată de [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### Feature: Load 3D vector layer data in background + tiling
 This adds support for background loading of data from vector layers into 3D map views. Until now, loading (and tessellation) would freeze the GUI completely - this could take many seconds depending on the complexity of input data.
 
@@ -289,14 +289,14 @@ For debugging purposes, there is also a new configuration option \"show bounding
 
 Această funcționalitate a fost finanțată de QGIS.org
 
-This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
+Această funcționalitate a fost dezvoltată de [Martin Dobias](https://api.github.com/users/wonder-sk)
 ## Compoziții Cartografice
 ### Feature: Allow drag and drop of pictures onto map layouts
 This new feature allows user e.g. drag an svg from a file explorer onto the layout to create a new picture item containing that svg image.
 
 ![image28](images/entries/21b9f2fba7bf1576f794410fd238ef7553154d53.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: New layout item type: manually created fixed tables
 This new item type allows for the creation of tables with contents manually entered by users (i.e. spreadsheet-style) so that users can create completely custom tables. Supports control custom cell contents, foreground and background colors (and soon, preset row and column heights). A brand new table designer dialog has been added which allows for customization of these tables.
 
@@ -304,7 +304,7 @@ This new item type allows for the creation of tables with contents manually ente
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add user control over scalebar numeric formats
 You now have the option for controlling the numeric format used by a layout scalebar.
 
@@ -312,7 +312,7 @@ You can manage all the formatting properties for the numbers in scale bars, incl
 
 ![image30](images/entries/99c97baaee3e5930bca0cb63db1391b6fd49b34f.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow layout attribute tables to be styled using the foreground and background colors of matching conditional styles
 When the new \"Apply layer conditional styling colors\" option is enabled in the layout attribute table settings, any conditional styling rules present in the layer will be applied inside the layout attribute table (foreground and background colors only, for now!).
 
@@ -320,7 +320,7 @@ When the new \"Apply layer conditional styling colors\" option is enabled in the
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add search box to layout manager
 Allows filtering the list of layouts in a project by name, handy when a project has many layouts..!
 
@@ -333,23 +333,23 @@ Tags on static expression functions to make them more retrievable. Functions lik
 
 ![image33](images/entries/689a669fe84721d7574aba7e595e019a9936f0b9.gif)
 
-This feature was funded by [SwissTierras-Colombia](https://www.proadmintierra.info)
+Această funcționalitate a fost finanțată de [SwissTierras-Colombia](https://www.proadmintierra.info)
 
-This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 ### Feature: List Referenced Layer Values
 When a field is a RelationReference, ValueRelation and ValueMap, there is the possibility not only to show the values of the current layer but also the possible values in the referenced layer / configured possibilities.
 
 ![image34](images/entries/394c762c41e71764d9be397b718252eddb2dbd3e.gif)
 
-This feature was funded by [SwissTierras-Colombia](https://www.proadmintierra.info)
+Această funcționalitate a fost finanțată de [SwissTierras-Colombia](https://www.proadmintierra.info)
 
-This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 ### Funcționalitate: Noi expresii
 - `is_empty(geom)`, check if a geometry is empty (geometry that contain no coordinates)
 - `is_empty_or_null(geom)`, check if a geometry is empty or NULL (does not have geometry)
 - `hash`, cryptographic hashes functions using [QCryptographicHash](https://doc.qt.io/qt-5/qcryptographichash.html). Use case is the same as PgCrypto but in client side for all supported format.
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+Această funcționalitate a fost dezvoltată de [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ### Feature: New algorithm \"Rename table field\"
 Takes an input layer, existing field and a new name for the field, and outputs a new layer with the selected field renamed.
 
@@ -359,7 +359,7 @@ In contrast, this simple Rename Field algorithm adapts nicely for model use, bec
 
 ![image35](images/entries/c01edc8ee51dff2b4df8f825e0dcaf27940e4aba.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Stored expressions
 - Store user expressions
 - Clear editor icon/action
@@ -368,9 +368,9 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 See also QEP <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/135>
 
-This feature was funded by [Salvatore Fiandaca](https://pigrecoinfinito.com/2019/12/14/field-calc-di-qgis-save-expressions-crowdfunding/)
+Această funcționalitate a fost finanțată de [Salvatore Fiandaca](https://pigrecoinfinito.com/2019/12/14/field-calc-di-qgis-save-expressions-crowdfunding/)
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Feature: List referenced layer values in Expression Builder
 When a field is a RelationReference, ValueRelation and ValueMap, there is the possibility not only to show the values of the current layer but also the possible values in the referenced layer / configured possibilities.
 
@@ -382,7 +382,7 @@ In the example we have the persons:
 - *George (in Cuba, in his twenties, human) Paul (in Vietnam, in his thirties, human) Ringo (in Venezuela, in his forties, cat) John (in Vietnam as well, in his forties, table)*
 - And the entries in the country layer are *USSR, Cuba, Vietnam, Burma, Venezuela, North Korea*
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+Această funcționalitate a fost dezvoltată de [signedav](https://api.github.com/users/signedav)
 ### Feature: Add expression functions for converting to/from wkb
 - `geom_from_wkb( geom_to_wkb( make_point(4,5) ) ) → a point geometry object` Returns a geometry created from a Well-Known Binary (WKB) representation.
 - `geom_to_wkb( $geometry ) → binary blob containing a geometry object` Returns the Well-Known Binary (WKB) representation of a geometry as a binary blob.
@@ -391,9 +391,9 @@ Adds geom_from_wkb and geom_to_wkb, which mirror the existing geom_from_wkt/geom
 
 Since QGIS 3.6 we\'ve had good support for binary blob values in expressions and field values, so adding these functions allows users to work with binary blob fields containing WKB representations of geometries (e.g. with a geometry generator showing the encoded geometries)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Această funcționalitate a fost finanțată de [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: is_valid expression
 `is_valid(geom_from_wkt('LINESTRING(0 0, 1 1, 2 2, 0 0)')) → true` Returns true if a geometry is valid; if it is well-formed in 2D according to the OGC rules
 
@@ -429,17 +429,17 @@ On copy-paste features from one layer to another, in case there are constraints 
 
 ![image38](images/entries/5bd43dd39955e37ace130038b968550c6fa260c5.gif)
 
-This feature was funded by [Amt für Wald und Wild Zug](https://www.zg.ch/behoerden/direktion-des-innern/wald-und-wild)
+Această funcționalitate a fost finanțată de [Amt für Wald und Wild Zug](https://www.zg.ch/behoerden/direktion-des-innern/wald-und-wild)
 
-This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 ### Feature: Snapping cache parallelization
 In previous version of QGIS, the snapping index cache was built sequentially and you had to wait for all your layers to be indexed before starting edition. Thanks to the QGIS.org grant program, QGIS now builds the snapping index cache in parallel for each layer, so it speeds up the whole process. Snapping has also been relaxed, meaning that you don\'t have to wait for the cache to be complete, you can start editing and snapping information will appear as soon as they are ready.
 
 ![image39](images/entries/d77958db7175267448d9b94950532dee8b90145c.webp)
 
-This feature was funded by [QGIS.org](https://qgis.org)
+Această funcționalitate a fost finanțată de [QGIS.org](https://qgis.org)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ## Gestiunea Datelor
 ### Funcționalitate: Îmbunătățiri aduse Exportului DXF
 We did a revamp of the DXF export process. This solidifies the export process and offers new features.
@@ -449,26 +449,26 @@ We did a revamp of the DXF export process. This solidifies the export process an
 
 The whole DXF export process has also been made ready for running in a thread. With this in place, it\'s now only one step away from being sent to the background, allow cancellation of an ongoing export process or being exposed as a processing algorithm.
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-1262910-DE.html)
+Această funcționalitate a fost finanțată de [Cantonul Schaffhausen](https://sh.ch/CMS/Webseite/Cantonul-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-1262910-DE.html)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Formulare și Controale grafice
 ### Feature: Create geometric feature from the relation editor
 We added the ability to add a new feature and digitize its geometry directly from within the relation editor widget. It\'s now easier to add a geometric feature related to your currently displayed parent feature.
 
 ![image40](images/entries/fe03aefab87464e54b70569e6d05ad09a1b8fae5.gif)
 
-This feature was funded by [QWAT user group](http://qwat.org/about/)
+Această funcționalitate a fost finanțată de [QWAT user group](http://qwat.org/about/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Feature: Improve feature selection dialog
 From the relation editor widget, you can link your currently displayed feature with existing features. The feature selection dialog allows you to choose these features. Thanks to the QWAT user group, feature selection is now shared with the canvas\' one so it is easy to find out and pick the feature you want to link. We have also added the ability to filter displayed features (selected ones, visible on map, matching an expression\...) reusing the same widgets already existing in attribute form.
 
 ![image41](images/entries/a65364e6a48857a8720643c41a3cb17461d9e16a.gif)
 
-This feature was funded by [QWAT user group](http://qwat.org/about/)
+Această funcționalitate a fost finanțată de [QWAT user group](http://qwat.org/about/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Feature: UX improvements in drag\'n\'drop form designer
 The drag\'n\'drop form designer has received some nice UX improvements
 - The two lists (available fields and layout tree) are now synchronized: whenever you select an entry in a list, the matching item is selected in the other one.
@@ -478,7 +478,7 @@ The drag\'n\'drop form designer has received some nice UX improvements
 
 Această funcționalitate a fost finanțată prin programul de remediere a erorilor QGIS.org
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
 ## Legenda stratului
 ### Feature: Support for displaying WMTS legend graphics in layer tree
 We added support for displaying WMTS legend graphics directly in the layer tree, as is already the case with WMS legend graphics.
@@ -489,93 +489,93 @@ Exemplu:
 
 Sample use case: <https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml>
 
-This feature was developed by [Sandro Mani](https://api.github.com/users/manisandro)
+Această funcționalitate a fost dezvoltată de [Sandro Mani](https://api.github.com/users/manisandro)
 ## Instrumentele de Analiză
 ### Feature: Smooth Export of the Contours from Mesh Layer
 A new algorithm in QGIS's analysis library API to export directly contour lines and polygons is added. The method is not based on GDAL algorithms, but directly uses mesh layer triangular mesh interpolation methods. It is both fast and with smooth shapes, matching rendered images from QGIS. You can try the new processing algorithm in Crayfish processing toolbox.
 
 ![image44](images/entries/044ad55bfb4287026b4e002c46c8687093488d22.webp)
 
-This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
+Această funcționalitate a fost finanțată de [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### Feature: Support of Datasets Defined on Faces in QGIS Mesh Calculator
 You can use mesh calculator for all dataset types, both defined on faces and vertices. Additionally, it allows users to store the result of mesh calculator under different name or format. This allows for example to work with FLO-2D or HEC-RAS data in the QGIS mesh calculator
 
 ![image45](images/entries/044d52fe937887854583ecfdc551e73eafb94a41.webp)
 
-This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
+Această funcționalitate a fost finanțată de [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ## Procesare
 ### Feature: Package new layers to existing GeoPackage
 We improved the existing *package layers* processing algorithm to be able to add new layers to existing GeoPackages. All you need to do to make use of this is disable the OVERWRITE parameter and specify an existing GeoPackage.
 
 ![image46](images/entries/35d87f4826aad132de4a0b99ac7c775f6aa9b029.webp)
 
-This feature was funded by [BikePlan](https://www.bikeplan.ch/)
+Această funcționalitate a fost finanțată de [BikePlan](https://www.bikeplan.ch/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Feature: Fuzzy Logic - Fuzzfiy Raster (linear membership)
 The Fuzzify raster (linear membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a linear fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a linear membership function.
 
 ![image47](images/entries/bfb37d710293c252dae11b67b25bdc1431f13815.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Fuzzy Logic - Fuzzfiy Raster (power membership)
 The Fuzzify raster (power membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a power fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a power membership function.
 
 ![image48](images/entries/7a81ecd4414ee39b37e575863687615c88e9a856.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Fuzzy Logic - Fuzzfiy Raster (small membership)
 The Fuzzify raster (small membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'small\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'small\' membership function. The \'small\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
 
 ![image49](images/entries/2bef948a7b02bd26208ca98e9ddb243d46d104a6.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Fuzzy Logic - Fuzzfiy Raster (large membership)
 The Fuzzify raster (large membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'large\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'large\' membership function.The \'large\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
 
 ![image50](images/entries/10963d11812664a76d4fc3fac72777c34a08c767.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Fuzzy Logic - Fuzzfiy Raster (gaussian membership)
 The Fuzzify raster (gaussian membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'gaussian\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'gaussian\' membership function. The gaussian function is constructed using two user-defined input values which set the midpoint of the gaussian function (midpoint, results to 1) and a predefined function spread which controls the function spread.
 
 ![image51](images/entries/58068dc6518a0df20a39df69ea4175f7b196b049.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Fuzzy Logic - Fuzzfiy Raster (near membership)
 The Fuzzify raster (near membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'near\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'near\' membership function. The near function is constructed using two user-defined input values which set the midpoint of the near function (midpoint, results to 1) and a predefined function spread which controls the function spread.
 
 ![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Port Densify by count Algorithm to C++
 We ported the Densify by count algorithm to C++ in order to enhance it\'s speed when compared to the previous Python implementation. The new algorithm also exposes the count parameter as dynamic parameter so that it can be controlled by expressions or field values.
 
 ![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Port Random points in extent algorithm to C++
 We ported the Random points in extent algorithm to C++. This boosts it\'s speed when comparing it to the previous Python implementation. The new algorithm also exposes an advanced parameter of maximum numbers of retrys for the algorithm when searching for randomly placed points that respect a certain distance between all points.
 
 ![image54](images/entries/c452431d9a2cd9f9f76869cf98e09e18bf2a81a4.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: Line density algorithm
 In this version we added a native algorithm to calculate the raster based density of lines. This algorithm calculates the line density based on a search radius and weights of the lines inside the search radius. The algorithm was ported to provide more functionality form the ArcGIS Spatial Analyst extension in QGIS.
 
 ![image55](images/entries/b28bbe3d5129ccc5dd61585dc1a9e31383a59c6f.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://github.com/root676)
 ### Feature: New algorithm \"Repair Shapefile\"
 We added a new algorithm which uses GDAL to repair shapefiles which have a broken or missing .SHX file.
 
 ![image56](images/entries/c3a6a174187284126ea0af289614505ab8c0c593.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Add new algorithm \"Detect Dataset Changes\"
 This algorithm compares two vector layers, and determines which features are unchanged, added or deleted between the two. It is designed for comparing two different versions of the same dataset.
 
@@ -589,7 +589,7 @@ The algorithm outputs three layers, one containing all features which are consid
 
 ![image57](images/entries/e38dcea12e1198341eb9f0bd45a33ebf7eda390b.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: New mode to \"Join Attributes by Location\" to take attributes from matching feature with largest area of overlap only
 This allows for easy polygon-\>polygon joins, where you expect there to be only a single matching feature and don\'t want to include features which are just touching or have just tiny sliver polygon overlaps.
 
@@ -597,7 +597,7 @@ This allows for easy polygon-\>polygon joins, where you expect there to be only 
 
 Această funcționalitate a fost finanțată de SMEC/SJ
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add native affine transform algorithm for vectors
 Offers the following benefits over the GRASS/SAGA versions:
 - Full support for z/m values and handling curved geometries without loss of curves
@@ -608,7 +608,7 @@ Offers the following benefits over the GRASS/SAGA versions:
 
 ![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: add gdal_viewshed algorithm
 Expose new gdal_viewshed tool via Processing toolbox. Note: this requires GDAL \>= 3.1.
 
@@ -619,15 +619,15 @@ Add customization of the items shown in browser to the Interface Customization d
 
 ![image60](images/entries/5e8e9037420b83cd44d4e1994d4119e4ae92c8aa.webp)
 
-This feature was funded by [Limerick City and County Council](https://www.limerick.ie/council)
+Această funcționalitate a fost finanțată de [Limerick City and County Council](https://www.limerick.ie/council)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### Feature: Show html files in browser panel
 This feature allows .htm(l) files to be shown and opened from the browser panel. These are often used to document data files or mapping projects.
 
 ![image61](images/entries/0db8930d20ca6f2fbf5b29593afdcf59e1af8d1e.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Show \"Open Document\...\" action in browser
 When right clicking certain files in the browser, allowing them to be opened with the default external application for that file type
 
@@ -637,7 +637,7 @@ Works with PDF, ODS, XLS(X), CSV, TXT, PNG, JPEG, TIFF, SVG (other types will li
 
 ![image62](images/entries/447f201d2342a64912bbef1e1d0aa3ebb8963ae4.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Allow customization of the items shown in browser
 You can now customize items shown in the browser. User can decide (in the Interface Customization dialog) to hide some of the root items in the browser panel (e.g. Favourites, or POSTGIS provider, \...)
 
@@ -645,44 +645,44 @@ You can now customize items shown in the browser. User can decide (in the Interf
 
 Această facilitate a fost finanțată de Limerick City and County Council
 
-This feature was developed by [Peter Petrik](https://api.github.com/users/PeterPetrik)
+Această funcționalitate a fost dezvoltată de [Peter Petrik](https://api.github.com/users/PeterPetrik)
 ### Feature: Add Refresh action to OGC services
 You can now refresh OGC services in the browser. Below is a screenshot showing an example of how this function works in WMS/WMTS connections:
 
 ![OGCrefreshonaction](https://user-images.githubusercontent.com/2663775/71974919-cfd04b00-3223-11ea-834d-ff016c70a8c6.gif)
 
-This feature was developed by [Samweli Mwakisambwe](https://api.github.com/users/Samweli)
+Această funcționalitate a fost dezvoltată de [Samweli Mwakisambwe](https://api.github.com/users/Samweli)
 ## Furnizorii de Date
 ### Feature: Changed WMTS layer collection icon
 This was a change of the icon used for WMTS layer collection item, a database schema was used instead of a WMTS related icon. A general WMS icon is now used.
 
-This feature was funded by [Kartoza](http://kartoza.com/)
+Această funcționalitate a fost finanțată de [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+Această funcționalitate a fost dezvoltată de [Samweli Mwakisambwe](http://samweli.github.io/)
 ### Feature: Added Metadata URL property in the layer metadata tab for WMS / WMTS and WCS services
-This feature was funded by [Kartoza](http://kartoza.com/)
+Această funcționalitate a fost finanțată de [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+Această funcționalitate a fost dezvoltată de [Samweli Mwakisambwe](http://samweli.github.io/)
 ### Feature: Fetch and show dimensions metadata for a WMS layer metadata
 ![image65](images/entries/d058ac6b89a8d06169b06580843967ad26e1ef54.webp)
 
-This feature was funded by [Kartoza](http://kartoza.com/)
+Această funcționalitate a fost finanțată de [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+Această funcționalitate a fost dezvoltată de [Samweli Mwakisambwe](http://samweli.github.io/)
 ### Feature: Added refresh action to OGC services entries
 ![image66](images/entries/7ce331ee78be7f8b0693c653ecc58916d70a1a92.gif)
 
-This feature was funded by [Kartoza](http://kartoza.com/)
+Această funcționalitate a fost finanțată de [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+Această funcționalitate a fost dezvoltată de [Samweli Mwakisambwe](http://samweli.github.io/)
 ### Feature: 3d Stacked Meshes
 MDAL and QGIS now supports 3D Stacked Meshes, particularly for TUFLOW-FV format. For this release, you need to choose appropriate averaging method in the QGIS interface and you are able to browse the data similarly to any other 2D dataset.
 
 ![image67](images/entries/dc3d85153d9bcecdf7ebbc6433c7cb40319e00dd.webp)
 
-This feature was funded by [TUFLOW](http://www.tuflow.com)
+Această funcționalitate a fost finanțată de [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### Feature: Fix numerous shapefile encoding issues
 This fixes the (broken by design?) handling of Shapefile encoding, which has been an ongoing issue for years in QGIS.
 
@@ -703,7 +703,7 @@ So, now we:
 
 This should give the best of both worlds \-- a nice default behavior resulting in shapefiles being read with the correct encoding, whilst still allowing users to override this on a layer-by-layer basis as needed.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Oracle curve type edition support
 In earlier versions of QGIS, it was not possible to edit some geometry types coming from an Oracle database. We have then added edition support for the following geometry types:
 - CircularString(Z)
@@ -714,7 +714,7 @@ In earlier versions of QGIS, it was not possible to edit some geometry types com
 
 Această facilitate a fost finanțată de Lille Metropole
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Feature: MBTiles raster support in WMS provider
 This feature adds MBTiles tiled raster map support to WMS provider so that it uses the same code paths like WMTS or XYZ tiles. Here are the advantages of the approach through WMS provider:
 - correctly scaling tiles on high dpi display
@@ -723,17 +723,17 @@ This feature adds MBTiles tiled raster map support to WMS provider so that it us
 - possible to use tile scale slider dock widget
 - faster - mainly a side effect of loading fewer tiles on high dpi display
 
-This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
+Această funcționalitate a fost dezvoltată de [Martin Dobias](https://api.github.com/users/wonder-sk)
 ### Feature: Native PostGIS raster data provider
 This is an implementation of a PostGIS raster data provider in QGIS core. Tiles are cached in RAM memory.
 
 Această facilitate a fost finanțată de Christmas Holidays Inc.
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Feature: Show dimensions metadata on WMS layer metadata
 ![wms-ttimelayermetadataqgis](https://user-images.githubusercontent.com/2663775/71542497-37f77500-2978-11ea-854b-d9a9ca2d6c77.png)
 
-This feature was developed by [Samweli Mwakisambwe](https://api.github.com/users/Samweli)
+Această funcționalitate a fost dezvoltată de [Samweli Mwakisambwe](https://api.github.com/users/Samweli)
 ### Feature: Other average methods 3d mesh
 QGIS now includes numerous methods for averaging mesh layers (see [related QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/158), and for a description of the methods see [TUFLOW documentation](https://fvwiki.tuflow.com/index.php?title=Depth_Averaging_Results).
 - SingleLevelAverageMethod (sus)
@@ -747,15 +747,15 @@ QGIS now includes numerous methods for averaging mesh layers (see [related QEP](
 
 ![Screenshot 2019-12-19 at 13 59 47](https://user-images.githubusercontent.com/804608/71175509-068bf480-2268-11ea-9d60-adad896912e2.png)
 
-This feature was developed by [Peter Petrik](https://api.github.com/users/PeterPetrik)
+Această funcționalitate a fost dezvoltată de [Peter Petrik](https://api.github.com/users/PeterPetrik)
 ### Feature: OGC API - Features provider
 This new provider is a client-side implementation of the recently adopted [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) specification, previously known as WFS3. It is integrated within the graphical user interface of the WFS provider, and leverages its core mechanisms to offer background downloading of features, using paging, and a local cache of already downloaded features for a smoother interactive use of datasets.
 
 ![image70](images/entries/d74a13f520336e0c2e44469ee4e527188e2466de.webp)
 
-This feature was funded by [Planet](https://planet.com)
+Această funcționalitate a fost finanțată de [Planet](https://planet.com)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com)
+Această funcționalitate a fost dezvoltată de [Even Rouault (Spatialys)](https://www.spatialys.com)
 ## QGIS Server
 ### Feature: QGIS Development Server Application
 **QGIS Development HTTP Server**
@@ -789,11 +789,11 @@ Sample output:
 
 `bash QGIS Development Server listening on http://localhost:8000 CTRL+C to exit 127.0.0.1 [lun gen 20 15:16:41 2020] 5140 103ms "GET /wfs3/?MAP=/home/ale/dev/QGIS/tests/testdata/qgis_server/test_project.qgs HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 3298 2ms "GET /wfs3/static/jsonFormatter.min.js HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 1678 3ms "GET /wfs3/static/jsonFormatter.min.css HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 1310 5ms "GET /wfs3/static/style.css HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:43 2020] 4285 13ms "GET /wfs3/collections?MAP=/home/ale/dev/QGIS/tests/testdata/qgis_server/test_project.qgs HTTP/1.1" 200`
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Feature: Add DXF server export params NO_MTEXT and FORCE_2D
 QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control text and line symbology for generated DXF files. Adds missing parameters to GetDxf request
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Feature: Add json support to WMS GetLegendGraphic
 This feature adds support for GetLegendGraphic responses encoded as JSON. It builds on previous work by \@pblottiere, who added QgsLegendRenderer::exportLegendToJson for that exact purpose.
 
@@ -812,7 +812,7 @@ The actions to trigger the drawing tools were not exposed in the API, if you wan
 
 Această funcționalitate a fost finanțată de grupul QWAT/QGEP
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+Această funcționalitate a fost dezvoltată de [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ## Corecții Importante
 ### Funcționalitate: Corecții efectuate de Stephen Knox
 | Bug Title | URL issues (if reported) | URL PR or commit |----|----|----|----| | Allow editing of postgres JSON fields from Text Edit Widget | [#29361](https://github.com/qgis/QGIS/issues/29361) | [#30758](https://github.com/qgis/QGIS/pull/30758)
@@ -852,9 +852,9 @@ Această funcționalitate a fost dezvoltată de Stephen Knox
 | QGIS crashes when changing \"default value\" in layer property on a point scratch layer, after editing feature | [#34404](https://github.com/qgis/QGIS/issues/34404) | [PR #34428](https://github.com/qgis/QGIS/pull/34428) | [PR #34514](https://github.com/qgis/QGIS/pull/34514) |
 | Raster calculator turns one row of pixels into nodata | [#34435](https://github.com/qgis/QGIS/issues/34435) | [PR #34460](https://github.com/qgis/QGIS/pull/34460) | [PR #34511](https://github.com/qgis/QGIS/pull/34511) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it/)
 ### Funcționalitate: Corecții efectuate de Sandro Santilli
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -864,7 +864,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | Only look for pointcloud in its installed extension schema | [#33509](https://github.com/qgis/QGIS/issues/33509) | [Commit 1f44b29](https://github.com/qgis/QGIS/commit/1f44b29933bff3b8806bba75b761dd47b6c349c8) | N/A |
 | QGIS 3.10 unable to load PostGIS-table on MacOS Catalina | [#32558](https://github.com/qgis/QGIS/issues/32558) | [Commit d15ce6b](https://github.com/qgis/QGIS/commit/d15ce6b4c30f9faed8b818c575d6b729192fa064) | [Commit a06b164](https://github.com/qgis/QGIS/commit/a06b164b5465ee7a0f8509e737d7c71ea7c166db) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
 Această funcționalitate a fost dezvoltată de Sandro Santilli
 ### Funcționalitate: Corecții efectuate de Even Rouault
@@ -880,9 +880,9 @@ Această funcționalitate a fost dezvoltată de Sandro Santilli
 | Draw effects units setting doesn\'t persist | [#34089](https://github.com/qgis/QGIS/issues/34089) | [PR #34135](https://github.com/qgis/QGIS/pull/34135) | [PR #34151](https://github.com/qgis/QGIS/pull/34151) |
 | Bad georeferencing of OZI .map | [#34299](https://github.com/qgis/QGIS/issues/34299) | [GDAL commit](https://github.com/OSGeo/gdal/commit/7bedf61bbb8d8c331642b44f30c083abb43f4085) | - |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+Această funcționalitate a fost dezvoltată de [Even Rouault](http://www.spatialys.com/)
 ### Funcționalitate: Corecții efectuate de Alexander Bruy
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -891,7 +891,7 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 | DB Manager: Create Layer dialog should be closed or cleared once the new layer is generated | [#25535](https://github.com/qgis/QGIS/issues/25535) | [PR #33910](https://github.com/qgis/QGIS/pull/33910) |  |
 | Two different default shortcuts for the Layer styling panel (F7 vs Ctrl+3) | [#26696](https://github.com/qgis/QGIS/issues/26696) | [PR #33984](https://github.com/qgis/QGIS/pull/33984) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
 Această funcționalitate a fost dezvoltată de Alexander Bruy
 ### Funcționalitate: Corecții efectuate de Paul Blottiere
@@ -911,9 +911,9 @@ Această funcționalitate a fost dezvoltată de Alexander Bruy
 
 | Raise log level of server exception | [Discussed on qgis-developers list](https://lists.osgeo.org/pipermail/qgis-developer/2020-February/060108.html) | [PR #34256](https://github.com/qgis/QGIS/pull/34256) | [PR #34539](https://github.com/qgis/QGIS/pull/34539) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
+Această funcționalitate a fost dezvoltată de [Paul Blottiere](https://hytech-imaging.fr/)
 ### Funcționalitate: Corecții efectuate de Denis Rouzaud
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -925,9 +925,9 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 | DnD improvements (do not hide behind double click) | [#29063](https://github.com/qgis/QGIS/issues/29063) | [PR #34479](https://github.com/qgis/QGIS/pull/34479) |  |
 | disable browsing auto pan/scale in attribute table when showing visible features only | [#34486](https://github.com/qgis/QGIS/issues/34486) | [PR #34493](https://github.com/qgis/QGIS/pull/34493) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://www.opengis.ch/)
 ### Funcționalitate: Corecții efectuate de Julien Cabieces
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -941,9 +941,9 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 | WCS client stopped working on a specific service from 2.18 to 3.x | [#33339](https://github.com/qgis/QGIS/issues/33339) | [PR #34300](https://github.com/qgis/QGIS/pull/34300) | DE EFECTUAT |
 | Crash in relation reference test | [#34779](https://github.com/qgis/QGIS/issues/34779) | [PR #34822](https://github.com/qgis/QGIS/pull/34822) | DE EFECTUAT |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Bertrand Rix
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -957,9 +957,9 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 | WCS client stopped working on a specific service from 2.18 to 3.x | [#33339](https://github.com/qgis/QGIS/issues/33339) | [PR #34300](https://github.com/qgis/QGIS/pull/34300) | DE EFECTUAT |
 | Crash in relation reference test | [#34779](https://github.com/qgis/QGIS/issues/34779) | [PR #34822](https://github.com/qgis/QGIS/pull/34822) | DE EFECTUAT |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Bertrand Rix](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Loïc Bartoletti
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -975,9 +975,9 @@ This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
 | Fix build with txt2tags \>= 3.5 | directly reported by FreeBSD qgis maintainer | [PR #34377](https://github.com/qgis/QGIS/pull/34377) | [PR #34389](https://github.com/qgis/QGIS/pull/34389) |
 | Fix identify menu when an expression is used as display name | neraportat | [PR #34361](https://github.com/qgis/QGIS/pull/34361) | [PR #34402](https://github.com/qgis/QGIS/pull/34402) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Loïc Bartoletti](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Sebastien Peillet
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -989,9 +989,9 @@ This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 | Oracle : tables are listed once for Polygons and once for MultiPolygons but both show all geometries | [#32521](https://github.com/qgis/QGIS/issues/32521) | [PR #34358](https://github.com/qgis/QGIS/pull/34358) |  |
 | BUG: fix invalid layer result when Oracle version is under 12 | neraportat | [PR #34546](https://github.com/qgis/QGIS/pull/34546) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Sebastien Peillet](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Nyall Dawson
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1018,8 +1018,8 @@ This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
 | Fix crashes when attempting to export reprojected raster layers | [#33801](https://github.com/qgis/QGIS/issues/33801) | [Commit bbd055c](https://github.com/qgis/QGIS/commit/bbd055ca13a3d6ee150251222d73e3b9e76d94c5) | [Commit 2fff8e1](https://github.com/qgis/QGIS/commit/2fff8e1205daffafa257b9312cc2c005b5e3017e) |
 | Fix shapefile encoding issues | [#21264](https://github.com/qgis/QGIS/issues/21264) | Transmis | Held off to 3.10.4 |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://north-road.com/)
 
 {{<content-end >}}

@@ -34,7 +34,7 @@ type: page
 ## 貢献組織
 開発と協力を通じてQGISプロジェクトに多大な貢献をしている組織
 
-{{<button class="is-success" link="/community/contributors/organisations/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/organisations/" text="リストの閲覧" >}}
 
 {{<rich-content-end >}}
 
@@ -52,7 +52,7 @@ type: page
 ## 個人貢献者
 コードの貢献と協力活動を通じてQGISの構築を支えてくださっている開発者・コントリビューターの皆さんに感謝します。
 
-{{<button class="is-success" link="/community/contributors/individuals/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/individuals/" text="リストの閲覧" >}}
 
 {{<rich-content-end >}}
 
@@ -70,7 +70,7 @@ type: page
 ## 支援コントリビューター
 コードのコミットにとどまらず、コミュニティサポート・普及活動・舞台裏での取り組みなど、多岐にわたる貴重な貢献を称えます。
 
-{{<button class="is-success" link="/community/contributors/supporting/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/supporting/" text="リストの閲覧" >}}
 
 {{<rich-content-end >}}
 

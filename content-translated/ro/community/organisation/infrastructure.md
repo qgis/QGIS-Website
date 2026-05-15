@@ -44,7 +44,7 @@ Documentația și site-ul
 
 {{<rich-list listLink="http://new.qgis.org" layoutClass="half" listTitle="Site web" listSubtitle="http://new.qgis.org" >}}
 
-**Responsible:** Harrissou S, Richard D, Matteo G …
+**Responsabil:** Harrissou S, Richard D, Matteo G …
 
 Managementul Github
 -
@@ -64,30 +64,30 @@ Mastodon
 -
 {{<rich-list listLink="https://fosstodon.org/@qgis" layoutClass="half" listTitle="Mastodon" listSubtitle="https://fosstodon.org/@qgis" >}}
 
-**Responsible:** Nathan W, Anita G
+**Responsabil:** Nathan W, Anita G
 
 Facebook
 -
 {{<rich-list listLink="https://www.facebook.com/pages/QGIS-Quantum-GIS-/298112000235096" layoutClass="half" listTitle="Facebook" listSubtitle="https://www.facebook.com/pages/QGIS-Quantum-GIS-/298112000235096" >}}
 
-**Responsible:** Nathan W
+**Responsabil:** Nathan W
 
 Finanțe
 -
-**Responsible:** Andreas N
+**Responsabil:** Andreas N
 
 IRC
 -
-**Responsible:** Jurgen F
+**Responsabil:** Jurgen F
 
 Planet feeds
 -
-**Responsible:** Tim S, Marco B
+**Responsabil:** Tim S, Marco B
 
 Versiunile vechi de Wiki și Redmine
 -
 {{<rich-list listLink="https://issues.qgis.org/projects/qgis/issues" layoutClass="half" listTitle="Redmine" listSubtitle="https://issues.qgis.org/projects/qgis/issues" >}}
 
-**Responsible:** Pirmin K, Duivenvoorde R
+**Responsabil:** Pirmin K, Duivenvoorde R
 
 {{<content-end >}}

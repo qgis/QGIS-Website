@@ -178,7 +178,7 @@ Calculatorul de câmpuri poate fi utilizat de acum pentru a actualiza o geometri
 
 ![image51](images/entries/ba37e2e778a2349c7099e09fcf648238090d8af4.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Noi funcții pentru expresii în 2.14
 În versiunea 2.14 au fost adăugate multe funcții noi, specifice expresiilor:
 - `relate`: performs a DE-9IM geometry relation by either returning the DE-9IM representation of the relationship between two geometries, or by testing whether the DE-9IM relationship matches a specified pattern.
@@ -214,13 +214,13 @@ Atunci când se utilizează îmbinarea valorilor atributului sau instrumentul de
 
 ![image27](images/entries/3820507f3bffdaab2bafe7285a8c51791f0b1fdb.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Valorile z/m sunt afișate atunci când se utilizează instrumentul de identificare
 Instrumentul de identificare este de acum capabil să arate orice valoare z sau m prezentă în entitățile identificate. În cazul în care entitatea este de tip linie sau poligon, instrumentul va afișa numărul vertecșilor și coordonatele x/y/z/m pentru cel mai apropiat vertex față de punctul identificat. De acum, instrumentul de identificare arată, de asemenea, numărul de părți și numărul de identificare al fiecărei părți, în cazul colecțiilor.
 
 ![image28](images/entries/c9813d351340f46e28e6a0cb576a4b2ca72466a9.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Manipulare centralizată a unităților de distanță și de suprafață, și a formatelor pentru coordonate
 În QGIS 2.14 manipularea diferitelor opțiuni referitoare la unitățile de distanță, de suprafață și de afișare a coordonatelor au fost unificate, simplificate, fiind grupate în Proprietățile Proiectului. Această modificare aduce numeroase avantaje, printre care:
 - Formatul pentru coordonate, specificat în Proprietățile Proiectului, este utilizat de fiecare dată când o coordonată este afișată utilizatorului, inclusiv la prezentarea rezultatelor instrumentului de identificare și la afișarea în bara de stare.
@@ -233,7 +233,7 @@ This feature was developed by [Nyall Dawson](http://nyalldawson.net)
 
 Această facilitate a fost finanțată prin programul de eliminare a erorilor, sponsorizat de QGIS
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ## Navigatorul
 ### Funcționalitate: Îmbunătățiri aduse Navigatorului
 Navigatorul QGIS constă într-un sistem de fișiere, în Servicii Web OGC și conexiuni de date, care vă permit să trageți cu ușurință orice strat din sursele menționate mai sus, iar apoi să-l fixați în canevasul hărții (sau în fereastra DB Manager). În această versiune s-au adus două noi îmbunătățiri utile:
@@ -255,7 +255,7 @@ The delimited text provider now supports curved WKT strings, and the memory prov
 
 ![image32](images/entries/79f4b8256ab3507b192277c4f14d3bb04423dc52.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Gestiune îmbunătățită pentru câmpurile de tipurile time și datetime
 QGIS 2.14 dispune de o manipulare îmbunătățită a câmpurilor de tipurile time și datetime, iar în plus:
 - Câmpurile de tip amprentă temporală din PostgreSQL sunt manipulate corect
@@ -272,7 +272,7 @@ The delimited text provider has gained support for WKT strings containing Z and 
 
 ![image34](images/entries/41d5c223ac43b4f8f392894109414e9d053c9136.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Grupuri de tranzacții pentru editarea Postgres: 
 O nouă opțiune a fost introdusă pentru a permite editarea tranzacțională.
 
@@ -289,15 +289,15 @@ Acest lucru este aplicabil doar bazelor de date Postgres, la acest moment.
 
 ![image35](images/entries/bb8a03f09c9675985409cf4360308509830d38d4.png.400x300_q85_crop.webp)
 
-This feature was funded by [SIGE](http://www.sige.ch/)
+Această funcționalitate a fost finanțată de [SIGE](http://www.sige.ch/)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch, based on work by Sourcepole](https://opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn, OPENGIS.ch, based on work by Sourcepole](https://opengis.ch)
 ### Funcționalitate: Autentificare PKI pentru furnizorul Postgres
 Abilitatea de a utiliza Managerul de Autentificare QGIS, introdusă în 2.12, a fost extinsă la furnizorul PostGIS. Acest lucru permite conectarea la Postgres folosind autentificarea de bază sau PKI, cu acreditările stocate în configurația QGIS. Noul furnizor de autentificarea Postgres poate fi utilizat și în DB Manager.
 
 ![image36](images/entries/6e8f65042bd5981e585812ce2d957d0c6055ba3f.jpg.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
+Această funcționalitate a fost finanțată de [Boundless Spatial](http://boundlessgeo.com)
 
 Această funcționalitate a fost dezvoltată de Luigi Pirelli
 ### Funcționalitate: Straturi virtuale
@@ -311,9 +311,9 @@ Support for virtual layers has also been added to DB Manager as well as to the P
 
 ![image37](images/entries/58bc1a2fea31fe8d6ab70ff33c763c9ddac40ade.png.400x300_q85_crop.webp)
 
-This feature was funded by [MEDDE (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr)
+Această funcționalitate a fost finanțată de [MEDDE (Ministerul Francez al Dezvoltării Sustenabile)](http://www.developpement-durable.gouv.fr)
 
-This feature was developed by [Hugo Mercier / Oslandia](http://oslandia.com)
+Această funcționalitate a fost dezvoltată de [Hugo Mercier / Oslandia](http://oslandia.com)
 ### Funcționalitate: Mai multe extensii de fișiere pentru furnizorii selectorilor de fișiere  GDAL și OGR
 Pentru fișierele vectoriale și raster, QGIS se bazează pe biblioteca GDAL/OGR. Aceasta înseamnă că aproape orice format de fișier care poate fi deschis de către GDAL sau OGR, poate fi deschis direct din QGIS. Până în prezent, unele extensii de fișiere nu au fost adăugate în selectorul de fișiere GDAL sau OGR și, drept urmare, există utilizatori care cred că QGIS nu poate deschide sau manipula aceste formate. Pentru a minimiza această problemă, unele extensii noi au fost adăugate în filtrele de selectare a fișierelor GDAL și OGR:
 
@@ -349,7 +349,7 @@ Pentru fișierele vectoriale și raster, QGIS se bazează pe biblioteca GDAL/OGR
 
 ![image38](images/entries/7a628a66f2f63454bd65fbedda309ff5a7d25f1e.png.400x300_q85_crop.webp)
 
-This feature was developed by [Médéric Ribreux](https://medspx.fr)
+Această funcționalitate a fost dezvoltată de [Médéric Ribreux](https://medspx.fr)
 ### Feature: Use ST_RemoveRepeatedPoints for server-side simplification with PostGIS 2.2 (or newer) layers
 When using a PostGIS 2.2 instance, QGIS now uses the ST_RemoveRepeatedPoints function instead of the ST_SnapToGrid function to process server-side simplification, as described by [Paul Ramsey](http://blog.cartodb.com/smaller-faster/).
 
@@ -357,7 +357,7 @@ Această metodă va reduce numărul de noduri al geometriilor pe care QGIS trebu
 
 ![image39](images/entries/bea701efeedd257314f507dfb2689fbf95403095.png.400x300_q85_crop.webp)
 
-This feature was developed by [Michaël Douchin \@kimaidou](http://3liz.com)
+Această funcționalitate a fost dezvoltată de [Michaël Douchin \@kimaidou](http://3liz.com)
 ## Gestiunea datelor
 ### Funcționalitate: Eliminarea plugin-ului SPIT
 The \"SPIT\" plugin is no longer bundled with QGIS, as the plugin was unmaintained and has been surpassed by DB Manager and the processing database import algorithms.
@@ -368,7 +368,7 @@ Această funcționalitate a fost dezvoltată de Nathan Woodrow
 ### Funcționalitate: Exportul DXF: opțiunea de a utiliza titlul în loc de nume, ca denumire a stratului DXF în aplicație și server
 ![image41](images/entries/e09652676e15a883821ca9b269c03ab0239aacb3.png.400x300_q85_crop.webp)
 
-This feature was funded by [City of Uster](http://gis.uster.ch/)
+Această funcționalitate a fost finanțată de [Orașul Uster](http://gis.uster.ch/)
 
 Această funcționalitate a fost dezvoltată de Jürgen Fischer
 ### Funcționalitate: Tipul de geometrie poate fi suprascris în dialogul de salvare a vectorului
@@ -378,7 +378,7 @@ Acest lucru face posibilă efectuarea unor lucruri cum ar fi salvarea unui tabel
 
 ![image42](images/entries/886630cb835b72865c5442a73a79b46cc5a7b60f.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Joncțiunile vectoriale sunt de acum salvate în interiorul fișierului QLR, cu definițiile stratului
 ### Funcționalitate: Controlul grafic al Resurselor Externe
 A new form widget is now available. It is named \"External resource\" and it allows a more complete handling of attributes assigned to file paths storing. Here is a complete summary of the widget features:
@@ -417,7 +417,7 @@ Acesta face unele presupuneri privitor la sistemul de baze de date. În special:
 
 Această caracteristică a fost finanțată de către Republica și Cantonul Neuchâtel, Ville de Pully, Ville de Vevey
 
-This feature was developed by [Matthias Kuhn](http://opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn](http://opengis.ch)
 ## Digitizarea
 ### Funcționalitate: Culoare configurabilă pentru banda elastică
 De acum, se pot seta lățimea și culoarea pentru banda elastică folosită la digitizare.
@@ -439,7 +439,7 @@ Această caracteristică a fost finanțată de: The Royal Borough of Windsor and
 
 ![image46](images/entries/357ff84cf7685a2686a019ebe42f0012b495f79a.png.400x300_q85_crop.webp)
 
-This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting](http://www.lutraconsulting.co.uk)
 ## Etichetare
 ### Feature: \"Cartographic\" placement mode for point labels
 În acest mod de poziționare, etichetele punctelor sunt generate după reguli ideale de plasare, cartografice, aranjarea etichetelor fiind prioritizată astfel:
@@ -460,7 +460,7 @@ Prioritatea destinațiilor de plasare poate fi, de asemenea, setată pentru o en
 
 Această funcționalitate a fost finanțată de Andreas Neumann
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Aplicarea distanței etichetei față de limitele simbolurilor
 Când această setare este activă, distanța etichetei se calculează de la limitele simbolului randat pentru un punct. Este deosebit de util atunci când dimensiunea simbolului nu este fixă, cum ar fi în cazul în care dimensiunea este definită cu ajutorul datelor, sau atunci când se utilizează diferite simboluri dintr-un render organizat pe categorii.
 
@@ -470,7 +470,7 @@ Rețineți că această setare este disponibilă numai pentru noul mod, Cartogra
 
 Această funcționalitate a fost finanțată de Andreas Neumann
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Controlul ordinii de randare a etichetelor
 A new control for setting a label\'s \"z-index\" has been added to the labeling properties dialog. This control (which also accepts data-defined overrides for individual features) determines the order in which labels are rendered. Label layers with a higher z-index are rendered on top of labels from a layer with a lower z-index.
 
@@ -484,7 +484,7 @@ Rețineți că acest control *NU* stabilește ca etichetele să fie desenate sub
 
 ![image55](images/entries/52f3e941b047714fbaf81adc7a226e4808a82d09.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Simbolulul de randare actual este de acum considerat drept un obstacol pentru etichetele entităților de tip punct
 Anterior, numai entitățile de tip punct erau considerate ca obstacol pentru etichete. În cazul în care pentru punct erau utilizate un simbol sau un decalaj mare, atunci etichetele erau lăsate să se suprapună peste acest simbol, fără a se lua în considerare obstacolul.
 
@@ -494,7 +494,7 @@ De acum, sunt luate în considerare atât dimensiunea reală, cât și decalajul
 
 Această funcționalitate a fost finanțată de City of Uster
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ## Legenda stratului
 ### Funcționalitate: Se poate aplica un stil mai multor straturi selectate, sau tuturor straturilor din legenda grupului
 Această facilitate adaugă posibilitatea de a aplica stilul unuia dintre straturi, unui grup de straturi sau unor straturi selectate.
@@ -509,9 +509,9 @@ Filtrarea legendei este disponibilă în legenda aplicației principale, precum 
 
 ![image59](images/entries/8c957ae820bc98f0a23a7d660abd40264af6e31d.png.400x300_q85_crop.webp)
 
-This feature was funded by [Agence de l\'Eau Adour-Garonne (Adour-Garonne Water Agency)](http://www.eau-adour-garonne.fr)
+Această funcționalitate a fost finanțată de [Agenția Apei Adour-Garonne (Adour-Garonne Water Agency)](http://www.eau-adour-garonne.fr)
 
-This feature was developed by [Hugo Mercier / Oslandia](http://oslandia.com)
+Această funcționalitate a fost dezvoltată de [Hugo Mercier / Oslandia](http://oslandia.com)
 ## Compozitorul de Hărți
 ### Funcționalitate: Noi opțiuni pentru filtrarea elementelor de legendă
 S-au introdus două noi opțiuni pentru filtrarea elementelor de legendă.
@@ -522,7 +522,7 @@ A doua opțiune de filtrare permite legendei compozitorului să fie filtrată, p
 
 ![image58](images/entries/cf32cc889370df205de51af684c4e683c3ec2dc4.png.400x300_q85_crop.webp)
 
-This feature was developed by [Hugo Mercier (Oslandia)](http://oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Hugo Mercier (Oslandia)](http://oslandia.com/)
 ### Funcționalitate: Căi suplimentare pentru șabloanele compozitorului
 You can now define custom paths that should be used for QGIS to find composer templates. This means that you can for example put a bunch of templates in a network share and give your users access to that folder in addition to the local ones that exist on their own system. To manage the composer template search paths, look in `Settings -> Options -> Composer`
 
@@ -534,14 +534,14 @@ Managerul de compoziții acceptă gestionarea mai multor compoziții în acelaș
 
 ![image61](images/entries/2603b37c6a6ccec10f56f37951d9494cb44c8d0a.png.400x300_q85_crop.webp)
 
-This feature was developed by [Médéric Ribreux](https://medspx.fr)
+Această funcționalitate a fost dezvoltată de [Médéric Ribreux](https://medspx.fr)
 ## Plugin-urile
 ### Funcționalitate: Sistem de autentificare pentru managerul de plugin-uri
 A fost adăugat managerului de plugin-uri suport pentru noul sistem de autentificare. Acest lucru permite utilizatorilor să aplice configurații de autentificare pentru conexiunile către depozitele de plugin-uri, iar administratorilor de sistem să creeze acces autentificat la arhivele și/sau la pachetelor descărcabile de plugin-uri.
 
 ![image62](images/entries/7b66e68eb37b27b0ecabcab7d0656985e222e8c0.png.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
+Această funcționalitate a fost finanțată de [Boundless Spatial](http://boundlessgeo.com)
 
 Această funcționalitate a fost dezvoltată de Larry Shaffer
 ## Procesare
@@ -563,15 +563,15 @@ It is possible - and desired - that more tests are added. You can read more abou
 
 ![image63](images/entries/4121e58bd51cfe5c8b2c0cd14d1420eaeb1f4473.png.400x300_q85_crop.webp)
 
-This feature was funded by [The QGIS Project](https://www.qgis.org)
+Această funcționalitate a fost finanțată de [Proiectul QGIS](https://www.qgis.org)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ### Funcționalitate: Îmbunătățiri aduse barei de instrumente
 Interfața simplificată a fost eliminată, fiind adăugat un sistem nou, mai ușor de utilizat, pentru gestionarea furnizorilor. Algoritmul de căutare caută, de acum, și  furnizorii care nu sunt activi, sugerând activarea acestora.
 
 ![image64](images/entries/2a135d5384f592e77938c59c0563cc2d0f6c3ebf.jpg.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com/)
+Această funcționalitate a fost finanțată de [Boundless Spatial](http://boundlessgeo.com/)
 
 Această funcționalitate a fost dezvoltată de Víctor Olaya
 ### Funcționalitate: Procesarea loturilor se poate salva, deschizându-se, ulterior, cu ajutorul interfeței de prelucrare a loturilor
@@ -615,7 +615,7 @@ Use the \"Help\" tab on each of the v.net Processing algorithm to read [the offi
 
 ![image67](images/entries/655bbfccc4997a5a3e3d1f5c709da5277eef6000.png.400x300_q85_crop.webp)
 
-This feature was developed by [Médéric Ribreux](https://medspx.fr)
+Această funcționalitate a fost dezvoltată de [Médéric Ribreux](https://medspx.fr)
 ## Programabilitate
 ### Funcționalitate: S-a reproiectat editorul de expresii
 Cu auto salvare
@@ -641,9 +641,9 @@ Opțiunile de configurare, inclusiv codul Python personalizat, introdus în fere
 
 ![image71](images/entries/65e82ab529ee1287c631712127e1ac75f78d05c6.png.400x300_q85_crop.webp)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
+Această funcționalitate a fost finanțată de [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
 
-This feature was developed by [Alessandro Pasotti (ItOpen)](http://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti (ItOpen)](http://www.itopen.it)
 ### Funcționalitate: Noi clase PyQGIS în 2.14
 ### Noi clase de baze
 - [QgsAttributeEditorElement](https://qgis.org/api/classQgsAttributeEditorElement.html)
@@ -707,7 +707,7 @@ This feature was developed by [Alessandro Pasotti (ItOpen)](http://www.itopen.it
 
 `STARTINDEX` can be used to skip some features in the result set and in combination with `MAXFEATURES` provides for the ability to use WFS GetFeature to page through results. Note that `STARTINDEX=0` means start with the first feature, skipping none.
 
-This feature was developed by [3Liz](http://3liz.com)
+Această funcționalitate a fost dezvoltată de [3Liz](http://3liz.com)
 ### Funcționalitate: showFeatureCount în GetLegendGraphic
 Add non-standard parameter **showFeatureCount** to add feature count in the legend. To activate it,**showFeatureCount** can be set to *TRUE* or *1*.
 
@@ -715,7 +715,7 @@ Această caracteristică are nevoie de un server fals de X.
 
 ![image72](images/entries/95f13aa3a1f4cb4ca8cbf7ce30e6bb278e6b9cd8.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+Această funcționalitate a fost dezvoltată de [3Liz](http://3liz.com)
 ### Funcționalitate: Opțiune de evitare a randării artefactelor, la marginile plăcuțelor
 ![image73](images/entries/1ded32aa2bb962fde1b9f00b891b2a04406be621.png.400x300_q85_crop.webp)
 ### Funcționalitate: Verificator de configurare, în Proprietățile Proiectului
@@ -728,9 +728,9 @@ Verificatorul depistează următoarele erori:
 
 ![image74](images/entries/c548fc562785f400d3000e7ae1f61705c333026c.png.400x300_q85_crop.webp)
 
-This feature was funded by [Ifremer](http://wwz.ifremer.fr/institut_eng/)
+Această funcționalitate a fost finanțată de [Ifremer](http://wwz.ifremer.fr/institut_eng/)
 
-This feature was developed by [3Liz](http://3liz.com)
+Această funcționalitate a fost dezvoltată de [3Liz](http://3liz.com)
 ### Funcționalitate: Capabilităţi WMS INSPIRE
 În proprietățile proiectului, utilizatorul poate:
 - să activeze capabilităţile INSPIRE
@@ -741,7 +741,7 @@ Capabilitățile WMS 1.3.0 reflectă configurația INSPIRE.
 
 ![image75](images/entries/4ee445bcb5e9eab3fb9bf2eda8f9b1b81bbe21c0.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+Această funcționalitate a fost dezvoltată de [3Liz](http://3liz.com)
 ### Funcționalitate: Adăugarea unor nume scurte pentru straturi, grupuri și proiecte
 O serie de elemente au atât un **Name** cât și un **Titlu**. Numele este reprezentat printr-un șir de caractere, care este utilizat pentru comunicarea de-la-mașină-la-mașină, în timp ce titlul este folosit pentru comunicarea între utilizatori. De exemplu, un set de date poate avea Titlul descriptiv *Temperatura Atmosferică Maximă* și să fie solicitat cu ajutorul Numelui abreviat *ATMAX*.
 
@@ -758,7 +758,7 @@ Pentru a adăuga utilizatorilor capacitatea de a defini Numele ca pe un șir de 
 
 ![image76](images/entries/e2345455bda9f0ed3da5e1c2750d6e2239ab8a86.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+Această funcționalitate a fost dezvoltată de [3Liz](http://3liz.com)
 ## Simbologie
 ### Funcționalitate: Asistent pentru ajustarea lățimii liniei
 ![image77](images/entries/1d891425b0e1b9927ced6aab3e0353aed92608de.png.400x300_q85_crop.webp)
@@ -773,13 +773,13 @@ SVG-urile care nu sunt încorporate au nevoie de:
 
 pentru activarea transparenței.
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Duplicarea facilă a straturilor pentru simboluri
 A new \"duplicate\" button has been added to the symbol properties dialog, which allows symbol layers to be easily duplicated.
 
 ![image78](images/entries/a6e2ad682852a2fb8b635395ec75f83ef584621d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Render 2.5D
 S-a adăugat o interfață de configurare și un render care ușurează operațiunile necesare obținerii un efect 2.5D.
 
@@ -812,11 +812,11 @@ De asemenea, este disponibilă și pentru plugin-uri:
 
     layer.getFeatures( QgsFeatureRequest().setOrderBy( 'name' ) ) -- alphabetical by name
     
-**This feature was developed by**: Matthias Kuhn at [OPENGIS.ch](https://opengis.ch) **This feature was funded by**: Regional Council of Picardy, ADUGA, Ville de Nyon, Wetu GIT cc
+**Această funcționalitate a fost dezvoltată de**: Matthias Kuhn at [OPENGIS.ch](https://opengis.ch) **Această funcționalitate a fost finanțată de**: Consiliul Regional Picardy, ADUGA, Orașul Nyon, Wetu GIT cc
 
 ![image80](images/entries/e06cf21a35e070a28ce5b3b98c92f2fb1c1b881d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ### Funcționalitate: Simboluri pentru generatorul de geometrie
 Simbolurile generatorului de geometrii permit utilizarea motorului de expresii pentru a modifica geometria înainte de randare, sau chiar crearea de noi geometrii în timp ce are loc randarea bazată pe atributele entităților.
 
@@ -838,7 +838,7 @@ Diversele straturi pentru simboluri pot conține diferite generatoare de geometr
 
 Această funcționalitate a fost finanțată de Consiliul Regional Picardy, ADUGA, Orașul Nyon, Wetu GIT cc
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ## Interfața cu Utilizatorul
 ### Funcționalitate: Tabela de atribute poate fi actualizată
 De acum, este disponibilă opțiunea de reîncărcare a atributelor din tabelul de atribute.
@@ -849,18 +849,18 @@ Deschide un control grafic de tip roată de culoare direct din meniu, ceea ce v�
 
 ![image83](images/entries/3159457a414ea61f8f40659af5c9561882a44fe1.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Editarea simbolurilor legendei direct din arborele straturilor
 This adds a new \"edit symbol\" item to the right-click menu for a renderer child legend item (eg categories for the categorised renderer). Selecting it opens a symbol editor dialog which allows for directly editing the class\'s symbol. It\'s much faster than opening the layer properties and going through the style tab. You can also double-click on a child item to open the symbol editor immediately.
 
 ![image84](images/entries/e7b2447e329507f0b27e855111ffa038b1ccc353.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 ### Funcționalitate: Afișarea/ascunderea tuturor elementelor din legendă, prin intermediul meniului contextual
 Allows toggling on/off all the symbol items for categorized/graduated/rule-based layers via the right click menu on an item. Previously you\'d have to toggle each item manually one-by-one.
 
 ![image85](images/entries/c526cf9c28c92dde193490a2707c1fe2e0a58ea6.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](http://nyalldawson.net)
 
 {{<content-end >}}

@@ -35,7 +35,7 @@ Annotations for the map canvas\' grid decoration are now fully customizable incl
 
 Această funcționalitate a fost finanțată de iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## Facilități Temporale
 ### Funcționalitate: Setarea cumulativă a intervalului temporal din cadrul controlerului temporal
 În controlerul temporal s-a introdus o setare dedicată cumulării intervalului temporal al animației. Astfel, toate cadrele animației vor avea același moment de început, diferind doar datele și orele de sfârșit.
@@ -44,15 +44,15 @@ This is useful is you wish to accumulate data in your temporal visualisation ins
 
 ![image2](images/entries/90da13821bfde46aa6d9d951fb9a31bf27d85656.gif)
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Această funcționalitate a fost finanțată de [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+Această funcționalitate a fost dezvoltată de [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
 ### Feature: Add a new \"Redraw Layer Only\" mode for temporal vector layers
 Când este setat acest mod, stratul se redesenează automat, la fiecare schimbare a intervalului temporal, fără aplicarea vreunei filtrări în funcție de timp asupra entităților.
 
 Această configurație este utilă atunci când stratul are setări de simbologie care variază în funcție de intervalul temporal. Cum ar fi, de exemplu, atunci când un strat folosește expresii de randare bazate pe reguli sau expresii de simbologie definite prin intermediul datelor.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: S-a introdus suport minimal dedicat manipulării temporale a straturilor vectoriale
 În cazul straturilor vectoriale sunt disponibile următoarele capabilități temporale:
 - Interval de timp static (conform posibilităților stratului raster): întregului strat i se va aplica un singur interval de timp static. Entitățile stratului vor fi afișate ori de câte ori ora canevasului se suprapune cu ora stratului
@@ -67,7 +67,7 @@ Câteva limitări sesizate:
 
 Ca atare, în prezent, pentru straturile mari performanța este mult mai slabă comparativ cu cea oferită de Time Manager (întrucât setul de entități expuse este mai mic, nu există, de exemplu, gestionarea interpolării), însă avantajele constau în ușurința în utilizarea cadrului temporal nativ și în asocierea straturilor vectoriale animate împreună cu straturile raster și cu suprafețele poliedrice!
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: Suport pentru API-ul temporal al straturilor raster Postgres
 Rasterelor Postgres li s-au adăugat capabilități temporale.
 
@@ -77,7 +77,7 @@ Rasterelor Postgres li s-au adăugat capabilități temporale.
 
 Această funcționalitate a fost finanțată de ARPA Piemonte
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Funcționalitate: Setări temporale pentru proiectele QGIS 
 Această caracteristică permite manipularea timpului în cadrul proiectelor.
 
@@ -89,9 +89,9 @@ Here\'s an example of setting the project temporal range. ![image5](images/entri
 
 Prior discussions about QGIS temporal support can be found [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/161) and [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/128).
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Această funcționalitate a fost finanțată de [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+Această funcționalitate a fost dezvoltată de [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
 ### Funcționalitate: Suport pentru constrângeri în straturile temporale WMS-T
 Această caracteristică oferă abilități de constrângere în straturile WMS Temporale (WMS-T) din QGIS. Astfel, există posibilitatea de restricționare a intervalului DateTime pentru orice strat temporal provenit de la un furnizor WMS-T.
 
@@ -103,49 +103,49 @@ Below is an example of the workflow. ![image6](images/entries/74638436-ee0f5c00-
 
 ![image7](images/entries/b86eea9111e33e6aea345b0e0759de48eaceade9.gif)
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Această funcționalitate a fost finanțată de [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+Această funcționalitate a fost dezvoltată de [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
 ### Funcționalitate: API Temporal
 S-a implementat un API dedicat suportului temporal din QGIS.
 
 You can find the API for Python by searching for \'Temporal\' in the python docs ([link](https://qgis.org/pyqgis/master/search.html?q=Temporal&check_keywords=yes&area=default)).
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Această funcționalitate a fost finanțată de [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+Această funcționalitate a fost dezvoltată de [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
 ## Instrumente De Cartografiere
 ### Funcționalitate: Suport pentru Instrumentul de Identificare a straturilor cu plăcuțe vectoriale din QGIS.
 De acum, instrumentul cartografic de identificare este capabil să inspecteze atributele entităților din plăcuțele vectoriale.
 
 ![image9](images/entries/79157425-d3501100-7dd4-11ea-8395-5c8ff1dce449.webp)
 
-This feature was funded by [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
+Această funcționalitate a fost finanțată de [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Afișarea unui meniu lângă butoanele ferestrei de control a scării grafice, în scopul setării  acesteia direct dintr-o compoziție
 O demonstrație video valorează cât o mie de cuvinte:
 
 ![image10](images/entries/78198825-34bada80-74cd-11ea-803a-90afea085b38.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add tool button to \"Deselect Features from the Current Active layer\"
 ![image11](images/entries/76692569-26616780-6661-11ea-9071-fd4c712860db.gif)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+Această funcționalitate a fost dezvoltată de [Ivan Ivanov](https://api.github.com/users/suricactus)
 ## Interfața cu Utilizatorul
 ### Funcționalitate: Este permisă glisarea straturilor între mai multe instanțe de QGIS
 ![image12](images/entries/77666018-b5834f00-6f80-11ea-971e-c6d7d996d37d.gif)
 
-This feature was funded by [QGIS Swiss user group](https://www.qgis.ch)
+Această funcționalitate a fost finanțată de [QGIS Swiss user group](https://www.qgis.ch)
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Funcționalitate: Deschiderea în file diferite a tabelelor de atribute
 If the option \"Open new attribute tables as dock windows\" is active, new attribute tables will be opened as tabs on top of existing attribute tables.
 
 ![image13](images/entries/80049561-d8017d00-84d8-11ea-826e-d7092ac7a5c6.gif)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ## Simbologie
 ### Funcționalitate: Generator de Curbe de Nivel pentru Straturile Raster
 Curbele de nivel desenate de noul generator se calculează automat din banda raster sursă. Este posibilă setarea intervalului dintre curbele de nivel și alegerea simbolului utilizat pentru linii.
@@ -156,7 +156,7 @@ If we generate contour lines on input raster blocks with the same size as our ou
 
 ![image14](images/entries/77861880-17111b00-7218-11ea-95ba-410c97830b93.webp)
 
-This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
+Această funcționalitate a fost dezvoltată de [Martin Dobias](https://api.github.com/users/wonder-sk)
 ### Funcționalitate: Adăugarea unei unități de măsură de tip procentual pentru dimensiunea Imaginilor Raster folosite în straturile din compunerea Simbolurilor de stilizare.
 According to the [Feature Request](https://github.com/qgis/QGIS/issues/30057) this patch adds a new percentage (of original image size) value for size units of **Raster Image Marker** and **Raster fill** (by [nirvn](https://github.com/qgis/QGIS/pull/34869#issuecomment-595090465) suggestion) layers.
 
@@ -176,7 +176,7 @@ Noua valoare a unităților de măsură, **procentuală**, este destinată rezol
 
 Both unit tests \"qgis_rasterfilltest\" and \"qgis_rastermarkertest\" were rewritten with a set of new control images for testing the proposed **percentage** value of size units.
 
-This feature was developed by [beketata](https://api.github.com/users/beketata)
+Această funcționalitate a fost dezvoltată de [beketata](https://api.github.com/users/beketata)
 ### Funcționalitate: Proprietăți definite cu ajutorul datelor pentru caracterele din cadrul simbolurilor de tip font
 Data-defined properties were added for the font markers\' font family and the brand new font style properties. This can come in handy for a number of scenarios, including multilingual context where a data-defined property can avoid duplicating datasets.
 
@@ -184,7 +184,7 @@ Data-defined properties were added for the font markers\' font family and the br
 
 Această funcționalitate a fost finanțată de iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Funcționalitate: Noi setări pentru stilul caracterelor din cadrul simbolurilor de tip font
 Folosind această nouă setare, utilizatorii pot stabili stilurile pentru familiile de fonturi, facilitate indisponibilă până acum.
 
@@ -192,7 +192,7 @@ Folosind această nouă setare, utilizatorii pot stabili stilurile pentru famili
 
 Această funcționalitate a fost finanțată de iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## Etichetare
 ### Funcționalitate: Interpretarea culorilor HTML
 Atunci când este activată, această opțiune va interpreta codul HTML din conținutul etichetelor conform instrucțiunilor de formatare legate de CULOAREA TEXTULUI.
@@ -207,9 +207,9 @@ Câteva imagini demonstrative:
 
 ![image22](images/entries/81377294-88fa4f80-9148-11ea-9036-2a597b064bbc.webp)
 
-This feature was funded by [geoProRegio AG](http://www.geoproregio.ch)
+Această funcționalitate a fost finanțată de [geoProRegio AG](http://www.geoproregio.ch)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: Poziționarea automată a etichetelor în exteriorul poligoanelor
 S-a adăugat posibilitatea de plasare automată a etichetelor în afara entităților poligonale.
 
@@ -223,9 +223,9 @@ The placement algorithm is based on a modification of Rylov & Reimer (2016) \"*A
 
 As shown in the islands screenshot above, the outside placement mode works as expected with the \"Follow label placement\" multiline alignment mode.
 
-This feature was funded by [Swiss QGIS user group](https://www.qgis.ch/)
+Această funcționalitate a fost finanțată de [Swiss QGIS user group](https://www.qgis.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: Straturi cu plăcuțe vectoriale - partea a 4-a (etichetarea)
 S-a continuat munca de implementare a straturilor cu plăcuțe vectoriale.
 
@@ -249,9 +249,9 @@ An example how to set the above labeling in Python console:
     labeling.setStyles([s])
     iface.activeLayer().setLabeling(labeling)
     
-This feature was funded by [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
+Această funcționalitate a fost finanțată de [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Control asupra punctului de conectare a casetelor de text cu etichetele
 De acum, utilizatorii au controlul asupra locului în care o casetă de text ar trebui să se conecteze la o etichetă (anterior, aveau control doar asupra locului în care o casetă de text se conecta la geometria entității respective).
 
@@ -272,7 +272,7 @@ With new \"centroid\" placement:
 
 ![image29](images/entries/76173706-6d78d400-61ed-11ea-89c1-ce4e2477dfef.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Suprafața poliedrică
 ### Funcționalitate: Folosirea doar a grupurilor de seturi de date specificate
 Această caracteristică permite utilizatorului alegerea grupurilor de seturi de date.. Acest lucru se poate face din fila sursă a ferestrei cu proprietățile stratului ce conține suprafața poliedrică.
@@ -285,17 +285,17 @@ Doar grupul de date selectat se va afișa în controlul grafic cu setările de r
 
 ![image30](images/entries/81516813-3a46e400-9307-11ea-9621-a27d5a8c86f2.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Această funcționalitate a fost finanțată de [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Setări de culoare scalare, conform clasificării
 În cadrul acestei funcțiuni, MDAL citește valorile scalare clasificate din setul de date. Atunci când valorile sunt clasificate, setările implicite de randare au gama de culori și etichetele conforme cu valorile clasificate.
 
 ![image31](images/entries/81480226-42fbc500-91f6-11ea-91fd-3d430693d551.webp)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Această funcționalitate a fost finanțată de [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate:  Acroșare la suprafețele poliedrice
 S-a adăugat API-ului o metodă care permite acroșarea la suprafețele poliedrice.
 
@@ -308,9 +308,9 @@ Poziția returnată utilizează coordonatele hărții.
 
 ![image32](images/entries/f11b278c71fecee8445ff29077bfddef543b564d.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Această funcționalitate a fost finanțată de [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Dimensiuni/culori variabile pentru suprafețele poliedrice 1D
 Această caracteristică oferă un nou mod de generare a suprafețelor poliedrice 1D, cu muchii a căror lățime este variabilă. De acum, lățimile și culorile variază în funcție de valorile din muchii sau vertecși.
 
@@ -322,9 +322,9 @@ Pentru această nouă randare, s-au introdus noi clase generice, care sunt utili
 
 ![image33](images/entries/80013358-bb475400-849c-11ea-95c8-71b04382a927.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Această funcționalitate a fost finanțată de [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Suport pentru multiple suprafețe poliedrice (începând cu MDAL 0.5.91)
 Pe lângă actualizarea la MDAL 0.5.91, această caracteristică permite încărcarea mai multor suprafețe poliedrice dintr-un singur fișier.
 
@@ -332,9 +332,9 @@ După analiza fișierului se lansează o fereastră de dialog pentru sub-stratur
 
 ![image34](images/entries/78789841-b1413380-797b-11ea-9c7b-f31cb9756809.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Această funcționalitate a fost finanțată de [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Straturile cu suprafețe poliedrice au fost conectate la cadrul de lucru temporal din QGIS
 ![image35](images/entries/77872855-31e29000-7216-11ea-80fb-82e351dbb4a2.gif)
 #### Gestionarea timpului în suprafețele poliedrice
@@ -370,9 +370,9 @@ Datele sunt aduse de la furnizor împreună cu indexul setului de date.
 #### Set de date statice
 There is also the option to set a static dataset, that is to choose a dataset that will be rendered independently of the QGIS time controller. To do that the user can check the check box at the bottom of the temporal page of the properties widget: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.webp) For now, as it was simpler to implement and allows the required dataset to be chosen directly, the user can independently choose scalar dataset and vector dataset from combo boxes with the time associated for each dataset (relative time for data without reference time). If required, a unique time could be implemented but that could lead to inconsistent results with non synchronous datasets. The static dataset settings are in the temporal page but can be easily put in the source page if wanted.
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+Această funcționalitate a fost finanțată de [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Reeșantionare valori de la vertecși la fețe
 Reeșantionarea este disponibilă pentru seturile de date definite pe fețe, de ex. valorile vertecșilor sunt calculate din valorile fețelor.
 
@@ -380,7 +380,7 @@ Această caracteristică implementează reeșantionarea valorilor din vertecși 
 
 The default method is set to \"none\" for resampling from vertices to faces and to \"neighbor average\" for resampling from faces to vertices. Then the default rendering is always smooth. ![image38](images/entries/77320848-acc41c00-6ce7-11ea-85af-2bff553ecbb5.gif)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Colorarea setului de date vectorial al suprafeței poliedrice cu ajutorul paletei de culori
 Această caracteristică permite utilizatorului să coloreze setul de date vectorial al suprafeței poliedrice (săgețile, liniile fluxului, urmele) folosind paleta de culori, în funcție de mărimea vectorului.
 
@@ -390,17 +390,17 @@ Această caracteristică permite utilizatorului să coloreze setul de date vecto
 
 ![image41](images/entries/77156736-5bf9bc80-6a76-11ea-827b-bb55ce52b814.webp)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Această funcționalitate a fost finanțată de [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Setarea stilurilor pentru suprafețele poliedrice
 Această caracteristică adaugă opțiunea de salvare a stilului unei suprafețe poliedrice într-un fișier qml, așa cum se procedează în cazul straturilor vectoriale și a rasterelor.
 
 The feature also refactors the raster and vector layer properties menu style. ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.webp)
 
-This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
+Această funcționalitate a fost finanțată de [Artelia Group](https://www.arteliagroup.com/en)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Redarea Suprafețelor Poliedrice 1D
 Update to [MDAL 0.5.90](https://github.com/lutraconsulting/MDAL/releases/tag/0.5.90)
 
@@ -422,7 +422,7 @@ Rețineți că nu sunt implementate toate funcționalitățile disponibile pentr
 Unele funcții nu sunt necesare pentru suprafețele poliedrice 1D, cum ar fi
 - Exportarea contururilor suprafețelor poliedrice
 
-This feature was developed by [Peter Petrik](https://api.github.com/users/PeterPetrik)
+Această funcționalitate a fost dezvoltată de [Peter Petrik](https://api.github.com/users/PeterPetrik)
 ### Funcționalitate: Simplificarea suprafețelor poliedrice
 Întrucât suprafețele poliedrice pot fi compuse din milioane de triunghiuri, afișarea lor va fi foarte lentă, mai ales că sunt reprezentate toate triunghiurile chiar și atunci când acestea sunt prea mici pentru a fi observate.
 
@@ -440,9 +440,9 @@ Demo GIF Before: ![image47](images/entries/74751034-0cd82600-5243-11ea-8a02-de78
 
 After: ![image48](images/entries/74751042-12357080-5243-11ea-80cb-2a3217d03a78.gif)
 
-This feature was funded by [BMT](https://www.bmt.org/)
+Această funcționalitate a fost finanțată de [BMT](https://www.bmt.org/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ## Funcționalități 3D
 ### Funcționalitate: Săgeți pentru reprezentarea setului de date al suprafețelor poliedrice 3D
 Această caracteristică adaugă opțiunea de afișare a săgeților unei suprafețe poliedrice 3D, corespunzător setului de date vectorial.
@@ -455,7 +455,7 @@ Setul de date utilizat la reprezentarea săgeților este cel ales pentru randare
 
 This spacing setting also defines the maximum size of arrows because arrows can\'t overlap. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ## Compoziții Cartografice
 ### Funcționalitate: Setări temporale pentru elementele compozițiilor
 Această caracteristică adaugă elementelor unei compoziții o nouă secțiune, care permite activarea și stabilirea intervalului temporal de utilizat la momentul randării conținutului hărții.
@@ -466,11 +466,11 @@ Valorile amprentelor temporale de început și de final pot fi definite prin int
 
 Această funcționalitate a fost finanțată de iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Funcționalitate: Este permisă sortarea tabelei de atribute după un câmp nelistat
 În locul folosirii aceluiași model de date pentru afișarea coloanelor și pentru sortare, de acum se utilizează două modele de date. Acestea folosesc aceeași clasă de bază / API, întrucât sunt asemănătoare.
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Funcționalitate: Expunerea controlului asupra comportamentului de divizare a legendei pe o bază strat-după-strat
 This allows users to manually override the legend\'s default setting for \"split layers\" on a layer-by-layer basis, by double clicking a layer in the layout legend panel and choosing whether that layer:
 - Respectă setarea implicită pentru divizarea legendei
@@ -481,7 +481,7 @@ sau
 
 Sponsorizat de SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: Este permisă personalizarea simbolurilor diviziunilor și subdiviziunilor, separat de simbolul bării orizontale a scării
 De acum, este posibilă personalizarea simbolurilor diviziunilor și subdiviziunilor, separat de simbolul bării orizontale a scării
 
@@ -489,19 +489,19 @@ Sponsorizat de SLYR
 
 Builds off the hard work done by \@agiudiceandrea!
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: Este permisă suprascrierea simbolului implicit pentru nodurile legendei
 This allows users to (optionally) customise the symbol appearance for a legend node, e.g. to tweak the colors or symbol sizes to better provide a \"representative\" patch symbol compared with how those corresponding features actually appear on the map.
 
 It\'s useful for exaggerating symbol widths, or for manually tweaking the colors of semi-transparent symbols so that the colors represent the actual appearance of the symbols when rendered on top of the map content. Or to tweak the marker interval/offset in marker lines so that the markers are nicely spaced in the legend patch.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: Este permisă spațierea manuală a coloanelor legendei
 La configurarea unui articol din legendă a apărut opțiunea de plasare a unui sfârșit de coloană înaintea elementului, determinând poziționarea acestuia într-o coloană nouă.
 
 This allows user control over the column content, for cases when the automatic column generation doesn\'t result in the desired results.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Funcționalitate: Adăugare subdiviziuni în segmentele din dreapta scării grafice
 S-a adăugat capacitatea de creare a subdiviziunilor pentru segmentele incluse în partea dreaptă a scării grafice.
 
@@ -515,7 +515,7 @@ Scalebar item properties - Segments groupbox ![image54](images/entries/81009703-
 
 Comportamentul segmentelor din partea stângă a scării a rămas neschimbat.
 
-This feature was developed by [Andrea Giudiceandrea](https://api.github.com/users/agiudiceandrea)
+Această funcționalitate a fost dezvoltată de [Andrea Giudiceandrea](https://api.github.com/users/agiudiceandrea)
 ### Feature: Allow overriding the legend patch size on a per-item basis
 Allows users to override the symbol patch size for individual legend nodes, by double clicking the node
 
@@ -523,13 +523,13 @@ Width and height can be individually overridden, with the node falling back to t
 
 Sponsored by SLYR ![image55](images/entries/80325577-0edce780-8879-11ea-82bd-8f323a4c68ab.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow control over the horizontal spacing before legend group/subgroup/symbols
 Gives flexibility to allow \"nesting\" legend groups/subgroups/symbols and much greater control over legend item placement.
 
 Sponsorizat de SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Manage legend patch shapes through style manager
 This update finalises the recent legend patch shape customisation work, by adding in support for custom legend patch shapes to style manager!
 
@@ -537,7 +537,7 @@ Now we just need a really nice set of default patch shapes to ship!!
 
 ![image56](images/entries/79927419-0c4a4e80-8483-11ea-9b87-7ed8b393d349.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow configuring legend patch shapes by double-clicking on legend items
 Allows users to set custom legend patch shapes for items by entering a WKT string representing the patch geometry.
 
@@ -545,11 +545,11 @@ Sponsorizat de SLYR
 
 ![image57](images/entries/79714030-ea31be80-8312-11ea-8b6f-f40e3eea04b1.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Support pasting pictures directly into layouts
 Embeds the pasted picture into the layout.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow marker items to sync rotation with maps
 This allows creation of north arrows from marker symbols, exposing the same options as exist for picture items acting as north arrows.
 
@@ -559,7 +559,7 @@ When a marker acts as a north arrow, the map rotation is ADDED to any existing m
 
 Sponsorizat de SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: New item type for marker symbols
 Allows marker symbols to be placed directly on layouts, e.g. for manually placing markers over a map item or for creation of advanced custom legends.
 
@@ -569,7 +569,7 @@ Sponsorizat de SLYR
 
 ![image59](images/entries/78419618-c885d580-768a-11ea-959a-8459e19e05df.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add import content from clipboard for fixed table items
 A new import content from clipboard feature has been added to QGIS\' table editor to enable quicker layout fixed table item editing and creation.
 
@@ -577,7 +577,7 @@ A new import content from clipboard feature has been added to QGIS\' table edito
 
 Această funcționalitate a fost finanțată de iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Feature: Add numeric formatter \"fraction\" style
 This style represents decimal numbers as vulgar fractions, e.g. \"3/4\" instead of 0.75.
 
@@ -589,7 +589,7 @@ Sponsorizat de SLYR
 
 ![image61](images/entries/77267662-0c71f580-6cef-11ea-9956-917e1d6ef496.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add \"stepped line\" and \"hollow\" scalebar styles
 Adds two new scalebar styles (which are available in ArcMap, but previously impossible to reproduce in QGIS)
 
@@ -603,7 +603,7 @@ Hollow (aka \"South African\") style:
 
 Sponsorizat de SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow scalebar line style to be set using standard QGIS line symbols
 Instead of the previous settings of scalebar line color/width/cap styles, we now expose the option as a full line symbol for more advanced styling.
 
@@ -611,7 +611,7 @@ Also some code cleanups.
 
 Sponsorizat de SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Rework picture item UI and behavior
 Adds an explicit choice between SVG or raster image sources, which allows us to clean up the configuration panel for layout pictures by hiding options which don\'t apply to a certain picture source. Also permits us to:
 - Reuse the standard SVG selector tree widget, which loads images in a background thread
@@ -621,7 +621,7 @@ Ultimately this is motivated by a desire to allow users to embed images in layou
 
 Sponsorizat de SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Make CRS controlable by a variable
 This makes the Map CRS controllable by a variable.
 
@@ -629,7 +629,7 @@ This makes the Map CRS controllable by a variable.
 
 Ține de #34547
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
+Această funcționalitate a fost dezvoltată de [Alex](https://api.github.com/users/roya0045)
 ## Expresii
 ### Funcționalitate: Noi expresii
 - `ascii`
@@ -667,11 +667,11 @@ Tests have been added.
 
 Sponsorizat de **Grupul Utilizatorilor Elvețieni de QGIS**!
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Feature: Ability to remove custom functions
 Adds a remove button to the Functions Editor tab in the Expression builder dialog to allow the removal of user functions from QGIS without needing to navigate to the user profile directory.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Add ability to edit, import and export user expressions
 A new button is added that allows editing of saved expressions. It is only active when a user expression is selected in the expressions tree. When pressed, it opens a window that allows the currently selected user expression to be edited. Changing the label of the expression makes a copy of the currently existing one. [Demo](https://imgur.com/w3UEOoR)
 
@@ -679,7 +679,7 @@ A new button is added that allows editing of saved expressions. It is only activ
 
 A new button with a menu is added, that allows the import/export of user expressions to/from a JSON file. Clicking on either of the menu entries opens a file selector dialog for the expressions JSON file source/destination. In the case of label conflicts, an additional dialog asks how to proceed - either to overwrite or to skip the current expression. [Import/Export Demo](https://imgur.com/0eiaFfu)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+Această funcționalitate a fost dezvoltată de [Ivan Ivanov](https://api.github.com/users/suricactus)
 ## Digitizarea
 ### Feature: Dedicated avoid geometry intersection/overlap mode
 This version of QGIS comes with a new dedicated avoid geometry intersection/overlap mode setting when digitizing features.
@@ -704,9 +704,9 @@ The third mode\'s layers list is setup by the user via the advanced snapping con
 
 ![image66](images/entries/caa646295d6f1cf6297864810637e9f8ceddc102.webp)
 
-This feature was funded by [OpenGIS.ch](http://www.opengis.ch/)
+Această funcționalitate a fost finanțată de [OpenGIS.ch](http://www.opengis.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Feature: New snapping modes: Centroid and middle of a segment (midpoint)
 This feature is aimed at improving [snapping modes in QGIS](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/107) by getting closer to the experience of CAD tools.
 
@@ -722,7 +722,7 @@ The order of preference for snapping is as follows: - Vertex, Intersection - Mid
 
 Sponsored by: Qwat group / Ville de Lausanne ( \@ponceta \@dsavary ) / Oslandia and some spare time
 
-This feature was developed by [lbartoletti](https://api.github.com/users/lbartoletti)
+Această funcționalitate a fost dezvoltată de [lbartoletti](https://api.github.com/users/lbartoletti)
 ### Feature: Snapping to the currently digitized feature
 Snapping can now also supports snapping to the feature currently being digitised. This option is enabled/disabled a new button in the snapping toolbar.
 
@@ -732,7 +732,7 @@ This enables some really nice CAD-like editing abilities, such as closing featur
 
 Această funcționalitate a fost finanțată de Kanton Solothurn și Land Vorarlberg
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+Această funcționalitate a fost dezvoltată de [Olivier Dalang](https://api.github.com/users/olivierdalang)
 ### Feature: Tracing now supports curved geometries
 The tracing tool now creates curved geometries when working on a layer that supports curved geometries.
 
@@ -742,7 +742,7 @@ The support is still experimental, so this feature must be enabled in the digiti
 
 Această funcționalitate a fost finanțată de ecoptima și Planteam
 
-This feature was developed by [Olivier Dalang (OPENGIS.ch)](https://api.github.com/users/olivierdalang)
+Această funcționalitate a fost dezvoltată de [Olivier Dalang (OPENGIS.ch)](https://api.github.com/users/olivierdalang)
 ## Formulare și Controale grafice
 ### Feature: Allow editing of links in file widget
 In a form, links can now be edited in the file widget (when the widget is not readonly).
@@ -751,7 +751,7 @@ In a form, links can now be edited in the file widget (when the widget is not re
 
 Sponsored by the QGIS Swiss user group
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Feature: Expression controlled labels (aliases)
 This new feature allows form labels (aliases) to be evaluated in the form context.
 
@@ -759,9 +759,9 @@ This new feature allows form labels (aliases) to be evaluated in the form contex
 
 ![image73](images/entries/78904645-26486200-7a7d-11ea-84b0-b9e96c0c9797.gif)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Această funcționalitate a fost finanțată de [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Add description to value relation widget
 Adds an option for adding a description to each value in a value relation widget. The description will show up as tooltip
 
@@ -769,13 +769,13 @@ Please excuse the different languages in the demo video.
 
 ![image74](images/entries/76538031-f195ba80-647e-11ea-9a41-271576e315bc.gif)
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Feature: New database table name widget
 A new widget was added to QGIS to select a new table from an existing DB connection:
 
 ![image75](images/entries/76504669-70233580-6448-11ea-9194-173ae0d344ce.gif)
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Feature: Get current parent form values in child forms
 This feature adds the option of using current values from the \"parent\" form in filter expressions (for now only in value-relation widgets: to be used in drill-down filters).
 
@@ -789,9 +789,9 @@ The new functions and variables are also available when the parent form is opene
 
 Finanțare: **ARPA Piemonte**
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Această funcționalitate a fost finanțată de [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Relation widget: add checkbox to hide save child edits button
 This is very useful for embedded forms.
 
@@ -799,9 +799,9 @@ Finanțare: **ARPA Piemonte**
 
 ![image80](images/entries/75524592-82e04800-5a0e-11ea-9333-461a0d02a1c0.webp)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Această funcționalitate a fost finanțată de [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Relation widget force suppress popup
 Adds an option to the relation widget configuration to suppress form popup open when new features are added in an embedded form context.
 
@@ -811,28 +811,28 @@ This option overrides the form-level option (that might still be the desired beh
 
 Note: the final label is **Force hide form on add feature**
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Această funcționalitate a fost finanțată de [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ## Legenda stratului
 ### Feature: Added move to bottom in layertreeview context menu
 Moving around layers on big projects was made easier with *Move to top* but one still had to manually move basemaps to the bottom of the layer list, a cumbersome task in big layer trees. This feature adds a *Move to bottom* option to the layer tree context menu that works in the same way as Move to top.
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+Această funcționalitate a fost dezvoltată de [uclaros](https://api.github.com/users/uclaros)
 ### Feature: Make Add Group button act as Group Selected if selected layers \>= 2
 When there is more than one layer selected and the user presses the *Add Group* button, create a new group and put the selected layers in it too! ![image82](images/entries/76710403-f624d200-670f-11ea-9a41-13420c7940e3.gif)
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+Această funcționalitate a fost dezvoltată de [uclaros](https://api.github.com/users/uclaros)
 ### Feature: Allow renaming of the current map theme
 This adds the option of renaming a map theme from the map theme drop-down menu.
 
 ![image83](images/entries/78195435-e29f9800-747f-11ea-95d2-604be58cf229-1.gif)
 
-This feature was developed by [Harrissou Sant-anna](https://api.github.com/users/DelazJ)
+Această funcționalitate a fost dezvoltată de [Harrissou Sant-anna](https://api.github.com/users/DelazJ)
 ### Feature: Turn on/off ALL selected layers with \"Space\" button
 Toggles the visibility of the currently selected layers or groups using the space button: ![image84](images/entries/77874799-cff64a80-7256-11ea-974b-c4084d1e01ae.gif)
 
-This feature was developed by [Ivan Ivanov](https://github.com/suricactus)
+Această funcționalitate a fost dezvoltată de [Ivan Ivanov](https://github.com/suricactus)
 ## Instrumentele de Analiză
 ### Feature: Network logger - more functionality
 Adds some more useful tools to the network logger:
@@ -840,7 +840,7 @@ Adds some more useful tools to the network logger:
 - Copy request as JSON
 - Save log to file (after a big warning to users that the log may contain sensitive information and should be treated as confidential)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Inbuilt network logging tool
 This tool, which is available from the new F12 \"dev tools\" panel, is a native port of \@rduivenvoorde\'s network logger plugin.
 
@@ -855,9 +855,9 @@ Why do we want this as a native tool instead of a plugin? Well:
 
 ![image85](images/entries/77712469-95ef3380-701f-11ea-8fec-3eded258b4e9.gif)
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Această funcționalitate a fost finanțată de [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Nyall Dawson (for Kartoza)](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (for Kartoza)](https://api.github.com/users/nyalldawson)
 ## Procesare
 ### Feature: Collection of random raster generation algorithms
 With this feature we added a large collection of random number raster generation algorithms. The algorithms are capable of outputting random rasters following specific random number distributions. The following distributions are available:
@@ -871,7 +871,7 @@ With this feature we added a large collection of random number raster generation
 
 ![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://api.github.com/users/root676)
 ### Feature: Vector tile layer - part 8 (writer in Processing)
 This feature adds Processing integration for vector tile writing. It is just a wrapper around the existing QgsVectorTileWriter class.
 
@@ -895,9 +895,9 @@ Input layer details:
 
 ![image91](images/entries/81117621-ae5c4300-8f27-11ea-993b-782d7de4a10e.webp)
 
-This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
+Această funcționalitate a fost finanțată de [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
 ### Feature: New modeler algorithm for creating conditional branches
 This algorithm allows users to setup multiple conditions (via qgis expressions), which cause their corresponding branch of the model to be run or skipped depending on the result of the expression evaluation.
 
@@ -905,7 +905,7 @@ This algorithm allows users to setup multiple conditions (via qgis expressions),
 
 Această funcționalitate a fost finanțată de Andreas Neumann
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow reordering model inputs
 Instead of forcing a quasi-random ordering of inputs for models, this feature exposes a new \"Reorder Model Inputs\" option in the model designer which allows users control over the exact order of inputs to show users for their model.
 
@@ -913,7 +913,7 @@ No more illogical ordering like showing a field choice before the layer choice i
 
 Sponsorizat de NaturalGIS
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Defer model validation
 Instead of forcing all child algorithms to be immediately valid and have all parameters correctly filled, this feature defers model validation until run time or when a new \"Validate model\" action is triggered.
 
@@ -921,7 +921,7 @@ A common frustration with the QGIS model designer is that it constantly forces m
 
 This change sees the model validation deferred until run time. Models can be temporarily invalid (e.g. having algorithm components which are only partially configured). The missing required values can now be filled at a later stage, without losing any existing settings. If a non-valid model is run, the user gets a descriptive warning informing them of the changes they need to make in order to finish configuration of the model.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Added support for different raster data types in Create constant raster layer algorithm
 With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Create constant raster layer* algorithm. Via this parameter, you can now specify an output data type for your constant raster layers.
 - Octet
@@ -934,7 +934,7 @@ With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Cre
 
 ![image93](images/entries/b7b0b73f7d48104cb49f33ed2d453a70d188cbd6.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://api.github.com/users/root676)
 ### Feature: Added Round raster algorithm
 With this new processing algorithm we enable QGIS to **round Raster values**.
 
@@ -944,7 +944,7 @@ The example shows an output raster rounded to multiples of 10
 
 ![image94](images/entries/650983141141fc954abc96f79e5255e4634c5051.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://api.github.com/users/root676)
 ### Feature: Allow copying/cut/paste of model components
 This feature allows users to copy and paste model components, both within the same model and between different models
 
@@ -952,7 +952,7 @@ This feature allows users to copy and paste model components, both within the sa
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow appending processing results to existing layers
 When appending results, users are given a field mapping panel choice to allow them to manually set how fields are mapped to the destination layer\'s fields:
 
@@ -960,7 +960,7 @@ When appending results, users are given a field mapping panel choice to allow th
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow creation of group boxes in models
 Adds the following functions to the model designer:
 - The ability to customise the color of individual comments in a model
@@ -971,7 +971,7 @@ Adds the following functions to the model designer:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Processing: show input and output values for children after running model through designer
 A picture explains this best! After running the algorithm through the designer, you now see the values calculated for the inputs and outputs for each child algorithm:
 
@@ -981,7 +981,7 @@ This is very useful for debugging models \-- you can see a much clearer visual p
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add \"Save Log to File\" algorithm for models
 This algorithm saves the contents of the execution log (right up to the point in the model at which the \'save log\' algorithm executes) to a file.
 
@@ -989,7 +989,7 @@ It can be used to automatically store the debugging log when running models for 
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow running algorithms directly on database (and other non-disk) sources without loading into projects first
 This change allows users to directly browse to non disk-based layer sources for any processing feature source inputs. It allows these inputs to be taken direct from postgres, sql server, oracle, wfs, afs, etc layers directly without having to first load them into a project!
 
@@ -999,7 +999,7 @@ We take full advantage of the QGIS browser to enable this:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Expose per-feature-source advanced options for processing inputs
 This feature exposes per-feature-source advanced options, such as:
 - The ability to limit the number of features read from the source. (Useful in model development, you can easily test run models using a small subset of an input layer)
@@ -1009,7 +1009,7 @@ This feature exposes per-feature-source advanced options, such as:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Enable snapping to grid for models in designer
 This update implements two \"snapping\" features in the Processing model designer:
 1. Users can enable a new \"Enable Snapping\" option from the view menu, which will cause all component moving or resizing operations to automatically snap to grids
@@ -1019,7 +1019,7 @@ Additionally, I\'ve added a helpful \"select all\" action for quickly selecting 
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add \"filter by geometry type\" and \"filter by layer type\" algorithms to processing
 This update adds two new algorithms to processing:
 - \"Filter by geometry type\": This algorithm filters features by their geometry type. Incoming features will be directed to different outputs based on whether they have a point, line or polygon geometry. It allows for model creation which responds to different input layer geometry types by applying different logic depending on the input geometry type.
@@ -1029,15 +1029,15 @@ It also adds in the required API to allow algorithms to \"prune\" model branches
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: \"Remove Null Geometries\" algorithm can also remove EMPTY geometries
 Empty geometries do not contain coordinates. Thus, like *null* geometries, empty geometries are not spatial data in a strict sense. To make it easier for users to clean a vector layer, the *Remove Null Gometries* algorithm now has an \"**Also remove empty geometries**\" option.
 
 ![image101](images/entries/76703713-81b34a00-66a1-11ea-9818-ebf771885206.webp)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+Această funcționalitate a fost finanțată de [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Add multi-selection handling to model designer, interactive resizing
 Adds:
 - The ability to select multiple items at once in the model designer
@@ -1052,7 +1052,7 @@ Here\'s how it looks in action (with a particular ugly looking test model I use!
 
 ![image102](images/entries/76388083-f9d4f380-63b3-11ea-8f06-97249e85ac2e.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add undo/redo support to model designer
 Makes QGIS more forgiving for users!
 
@@ -1064,7 +1064,7 @@ Works just like you\'d expect:
 
 Note that we save the whole model definition in the undo stack, not just the affected component changes.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Remember parameter values between model designer runs
 When designing a model, users typically will need to run the model many times as they tweak its structure.
 
@@ -1076,7 +1076,7 @@ Sponsored by Alta Ehf
 
 Also includes a partial port of the model designer dialog from Python to c++, because c++ \>\> Python.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Comments in Processing Models
 This allows users to create comments attached to model components (inputs, algorithms or outputs). Comments are shown linked to the associated component, and can be freely moved around the model.
 
@@ -1084,7 +1084,7 @@ This allows users to create comments attached to model components (inputs, algor
 
 Funded by Fisel + König
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: New standalone console tool for running processing algorithms
 This new qgis_process tool allows users to run processing algorithms (both built-in, and those provided by plugins) directly from the console.
 
@@ -1105,11 +1105,11 @@ While running an algorithm a text-based feedback bar is shown, and the operation
 
 Sponsored by the Swedish User Group
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: New parameter type for datetime (or date, or time) values
 Adds a new parameter type QgsProcessingParameterDateTime for handling date/datetime/time values.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add algorithms for raising warnings and exceptions from models
 These algorithms raise either a custom warning in the processing log OR raise an exception which causes the model execution to terminate.
 
@@ -1117,7 +1117,7 @@ An optional condition expression can be specified to control whether or not the 
 
 Sponsored by Fisel + König
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add Fill NoData cells algorithm
 In the new QGIS version we introduce a new processing algorithm for filling NoData cells in a raster dataset with a constant numerical input.
 
@@ -1125,7 +1125,7 @@ The algorithm scans an input raster dataset for NoData cells and fills them with
 
 ![image105](images/entries/6cbf249116a09b4d342729da1e09060b9f0ec52f.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Această funcționalitate a fost dezvoltată de [Clemens Raffler](https://api.github.com/users/root676)
 ### Feature: Various fixes for Processing
 - Finalize work on range parameters support in GRASS algorithms;
 - Fix broken r.series algorithm
@@ -1133,7 +1133,7 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 - Fix for rasterize tool
 - GRASS GIS tests cleanup
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Show \"template layer\" field constraints in the \"Refactor Fields\" algorithm interface
 When you are migrating data, it is important to be aware of constraints on target (a.k.a. template) layers.
 
@@ -1141,9 +1141,9 @@ The \"Refactor Fields\" algorithm now highlights constraints, and even lets you 
 
 ![image106](images/entries/75100644-6079a500-559e-11ea-91b6-f99fa05451de.webp)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+Această funcționalitate a fost finanțată de [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ### Funcționalitate: Nou algoritm de conversie în curbe
 We added a new algorithm to convert segmentized geometries to curved geometries.
 
@@ -1151,7 +1151,7 @@ The algorithm considers successive points to represent a curve if they are evenl
 
 ![image107](images/entries/c747d86081f3862d9d4bbb2ab067103daceab724.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Opțiunile Aplicației și ale Proiectului
 ### Feature: Add \@layers, \@layer_ids project scope variables
 Add \@layers, \@layer_ids project scope variables which contain lists of map layers and map layers ids for all layers from the current project
@@ -1160,14 +1160,14 @@ This mimics the existing \@map_layers, \@map_layer_ids, but unlike the \@map var
 
 Sponsorizat de SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Furnizorii de Date
 ### Feature: Allow adding attributes in the New Scratch Layer dialog
 Allows the user to add attributes directly in the New Scratch Layer dialog making it more consistent with other dialogs like New Shapefile/Geopackage. ![image108](images/entries/81394331-76711d80-912a-11ea-8b86-4f2789adff08.webp)
 
 It is still possible to create a scratch layer without any attributes by not adding any fields to the list.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Allow creating geometryless DBF tables from the New Shapefile dialog
 Allow creating \"plain\" DBF files without associated geometries from the New Shapefile dialog.
 
@@ -1175,7 +1175,7 @@ Allow creating \"plain\" DBF files without associated geometries from the New Sh
 
 Creating DBF tables can be useful in some cases and having to use third-party tools for this instead of doing it from within QGIS is inconvenient. This also makes the New Shapefile dialog more consistent with the New Geopackage dialog, which already allows \"geometryless\" tables to be created.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Allow filtering WM(T)S list in source dialog
 Add ability to filter between lists of WMS or WMTS from the source dialog
 
@@ -1185,25 +1185,25 @@ WMTS ![image111](images/entries/80964191-b4abcb80-8e10-11ea-8b80-395dbb37b45c.we
 
 Sponsored by the QGIS Swiss user group
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Feature: Add vector tiles to Datasource manager dialog and Layers menu
 Adds a new tab to the Datasource Manager dialog allowing the user to manage/add vector tile connections, including import/export. Also adds a corresponding entry to Layers menu.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Import/export for ArcGIS Map and FeatureServer connections
 Add missed import/export functionality for ArcGIS MapServer and FeatureServer connections.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Add XYZ tiles to Datasource manager dialog and Layers menu
 Adds new tab to Datasource Manager dialog allowing to manage/add XYZ connections. Also add corresponding entry to Layers menu.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Spatialite transaction group
 Transactions implementation for the native SpatiaLite provider.
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Această funcționalitate a fost finanțată de [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Allowing saving outputs direct to more database formats (and other nice stuff)
 This update allows users to save processing vector outputs directly to more database formats.
 
@@ -1223,17 +1223,17 @@ Other nice stuff includes:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add dedicated parameter type for database connections
 Allows selection from the registered database connections for a specific database provider type (the provider must implement the connections API).
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: PG: expose foreign tables
 Expose foreign tables to the browser and data source select dialog.
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Feature: PG raster expose set filter to app
 This should be the final change to the PG raster data provider and exposes the set filter options:
 - Filter can be set in the data source dialog (as for vector layers)
@@ -1243,44 +1243,44 @@ This should be the final change to the PG raster data provider and exposes the s
 
 ![image113](images/entries/75894983-49a43f80-5e35-11ea-95a8-a86276b39bbc.gif)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Această funcționalitate a fost finanțată de [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Postgres: save features into tables with generated fields
 Allow updating/inserting features in PostgreSQL tables with generated fields. GENERATED columns is a feature introduced by PostgreSQL 12, which allows column values to be generated from other columns in the same table; this replaces the creation of triggers to, for instance, automatically populate and keep up-to-date a column of centroids or areas for the polygons in the main geometry column.
 
-This feature was developed by [José de Paula Rodrigues N. Assis](https://api.github.com/users/espinafre)
+Această funcționalitate a fost dezvoltată de [José de Paula Rodrigues N. Assis](https://api.github.com/users/espinafre)
 ### Feature: Date and DateTime field types support added to Spatialite and Delimited Text providers
 The Spatialite and Delimited Text providers now support Date and DateTime field types.
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## QGIS Server
 ### Feature: Add QGIS_SERVER_IGNORE_BAD_LAYERS config option
 Allows the overriding of the default behavior in the case of bad layers (which is to invalidate the whole project).
 
 When set to TRUE, bad layers are skipped and the remainder of the project becomes available.
 
-This feature was funded by [Geoinformatikbüro Dassau GmbH](https://www.gbd-consult.de/home.html)
+Această funcționalitate a fost finanțată de [Geoinformatikbüro Dassau GmbH](https://www.gbd-consult.de/home.html)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Server project settings, add \'expanded\' attribute
 In addition to the \'visible\' and \'mutuallyExclusive\' attribute, this update adds \'expanded\' to the GetProjectSettings response of the server. The update allows a web client to see which layer tree elements are expanded / collapsed and to then present them the same way in the web map layer list.
 
-This feature was developed by [mhugent](https://api.github.com/users/mhugent)
+Această funcționalitate a fost dezvoltată de [mhugent](https://api.github.com/users/mhugent)
 ### Feature: Add DXF server export params NO_MTEXT and FORCE_2D
 QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control text and line symbology for generated DXF files.
 
 Adds missing parameters to GetDxf request.
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Feature: WMS project validator
 The QGIS Server validator has been reviewed. This tool is useful when you want to publish a QGIS project using the WMS protocol.
 
 For programmers, the validator is also now callable from PyQGIS, so plugins can now use it too.
 
-This feature was funded by [3Liz](https://www.3liz.com)
+Această funcționalitate a fost finanțată de [3Liz](https://www.3liz.com)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+Această funcționalitate a fost dezvoltată de [Etienne Trimaille](https://github.com/Gustry)
 ### Feature: Webp
 > WebP is a modern image format that provides superior lossless and lossy compression for images on the web. WebP creates smaller, richer images that make the web faster.
 > 
@@ -1290,9 +1290,9 @@ Source: <https://developers.google.com/speed/webp>
 
 With webp QGIS server now supports a format that provides smaller file sizes for the same quality and even provides transparency.
 
-This feature was funded by [OPENGIS.ch](https://www.opengis.ch)
+Această funcționalitate a fost finanțată de [OPENGIS.ch](https://www.opengis.ch)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Plugin-urile
 ### Feature: Allow plugins to register custom \"Project Open\" handlers
 These allow plugins to extend the \"Open Project\" dialog by adding in support for new file filters, which appear in the formats drop down list alongside the existing \"QGS Projects\" entry.
@@ -1307,7 +1307,7 @@ Sponsorizat de SLYR
 
 ![image114](images/entries/78514331-1833e080-77f4-11ea-9c8d-a5e9ead7dc1a.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow users to install stable or experimental plugins
 This update improves the plugin manager by allowing users to choose between installing the stable or the experimental version of a plugin.
 
@@ -1317,9 +1317,9 @@ This change makes no difference for users who haven\'t checked the *enable exper
 
 ![image115](images/entries/75906887-b1638600-5e47-11ea-98c6-06fb664ab177.webp)
 
-This feature was funded by [Swiss QGIS User Group](https://www.qgis.ch/)
+Această funcționalitate a fost finanțată de [Swiss QGIS User Group](https://www.qgis.ch/)
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+Această funcționalitate a fost dezvoltată de [Olivier Dalang](https://api.github.com/users/olivierdalang)
 ## Programabilitate
 ### Feature: Support for adding dock widgets as tabs: addTabifyDockWidget()
 Dock widgets are great for displaying complex interfaces that extend QGIS functionality.
@@ -1328,9 +1328,9 @@ Now, both core and plugin devs have the option to tabify their dock widgets on t
 
 ![image116](images/entries/80051225-4b0cf280-84dd-11ea-9016-84a4303f230f.gif)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+Această funcționalitate a fost finanțată de [SwissTierras Colombia](https://swisstierrascolombia.com/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Port output parameter wrappers to new API
 Ports the output parameter wrappers (sinks, vector, raster, file and folder destinations) to the new c++ API for dialog and modeler.
 
@@ -1342,7 +1342,7 @@ This allows a range of new possibilities, including:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Port last remaining input parameters to new API
 This update ports the Raster Band input parameter and Multi Layer input parameter to the new C++ API.
 
@@ -1353,13 +1353,13 @@ Benefits include:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Port Feature Source, Raster, Vector and Mesh Layer parameters to new API
 It\'s now possible to use expression-based layer sources in processing models.
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Vector tile layer - part 1
 This is the initial work on vector tile layer support.
 
@@ -1399,9 +1399,9 @@ There is currently no support for labeling.
 ### Mulțumiri
 Huge thanks to all funders who have contributed to the crowdfunding and made this possible - <https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors>
 
-This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
+Această funcționalitate a fost finanțată de [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk)
 ### Feature: Port processing extent parameter to new api, many other improvements
 This update ultimately ports the extent parameter to the new c++ api, but along the way it:
 - Refactors the existing gui widget \"QgsExtentGroupBox\" to move the guts out to \"QgsExtentWidget\" (allowing it to be used in places where a group box is inappropriate/looks bad). It also adds a new \"condensed\" mode for the widget, because the default appearance is very space heavy.
@@ -1412,7 +1412,7 @@ This update ultimately ports the extent parameter to the new c++ api, but along 
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Interface and API for unified development/debugging tools
 Adds interface hooks to allow plugins (and c++) to register \"development/debugging\" tools
 
@@ -1428,19 +1428,19 @@ Here\'s an example demo showing a \"Python locals\" dev tool:
 
 ![image119](images/entries/77492080-55f74780-6e8b-11ea-9141-1b96c42c29eb.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Data type support for QgsProcessingParameterMapLayer
 Allow the definition of accepted layer types for `QgsProcessingParameterMapLayer`. This is useful when an algorithm can work with different layer types (for example, points and rasters) and avoids duplication of the same algorithm with different inputs.
 
 This is an API improvement and is not visible for the vast majority of users.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Feature: Add processing parameter types for database schema and table name
 Replaces the previous ad-hoc Python postgis widget wrappers with proper first class c++ dedicated parameters for schemas and tables, with wrappers built off the core connections api.
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Corecții Importante
 ### Funcționalitate: Corecții efectuate de Alessandro Pasotti
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
@@ -1477,9 +1477,9 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 | Using \"Add feature\" to create feature and child feature with transaction group causes foreign key error | [#37222](https://github.com/qgis/QGIS/issues/37222) | [PR #37249](https://github.com/qgis/QGIS/pull/37249) | non critic |
 | Vectorlayer from spatialite missing features and inconsistent feature count | [#29264](https://github.com/qgis/QGIS/issues/29264) | [PR #37277](https://github.com/qgis/QGIS/pull/37277) | DE EFECTUAT |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it/)
 ### Funcționalitate: Corecții efectuate de Loïc Bartoletti
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1489,9 +1489,9 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | Fix the absence of words in the advanced configuration widget | [PR #35643](https://github.com/qgis/QGIS/pull/35643)#issuecomment-610215386 | [PR #36511](https://github.com/qgis/QGIS/pull/36511) | N/A |
 | Fix interpolation on split geometry | [PR #36514](https://github.com/qgis/QGIS/pull/36514) | [#33489](https://github.com/qgis/QGIS/issues/33489) | N/A |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Loïc Bartoletti](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Even Rouault
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1513,9 +1513,9 @@ This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 | QGIS 3.12 unknown CRS or Select Transformation | [#36837](https://github.com/qgis/QGIS/issues/36837) | [GDAL Commit 68133b8](https://github.com/OSGeo/gdal/commit/68133b8b6f724a581a5dcb19fbdcd657ddbd6c4c) | [GDAL Commit 6ae7f60](https://github.com/OSGeo/gdal/commit/6ae7f60a5914a2f16b8b1a94758f10e6621e4aca) |
 | BIGTIFF error is not obvious in processing log | [#36867](https://github.com/qgis/QGIS/issues/36867) | [GDAL Commit cfc8e61](https://github.com/OSGeo/gdal/commit/cfc8e613ad86dd4b00604dd64df239916ccda135) | [GDAL Commit fb88e3c](https://github.com/OSGeo/gdal/commit/fb88e3ca5c8905fbcaab79e96a2bfc1c36f72d08) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+Această funcționalitate a fost dezvoltată de [Even Rouault](http://www.spatialys.com/)
 ### Funcționalitate: Corecții efectuate de Paul Blottiere
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1528,9 +1528,9 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 | Auxiliary storage not usable in non editable layer | [#30376](https://github.com/qgis/QGIS/issues/30376) | Already fixed. Closed. | N/A |
 | Fix compilation with GCC 10, Qt/PyQt 5.15.0 and SIP 4.19.23 | [#37072](https://github.com/qgis/QGIS/issues/37072) | [PR #37116](https://github.com/qgis/QGIS/pull/37116) | [PR #37250](https://github.com/qgis/QGIS/pull/37250) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
+Această funcționalitate a fost dezvoltată de [Paul Blottiere](https://hytech-imaging.fr/)
 ### Funcționalitate: Corecții efectuate de Julien Cabieces
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1548,9 +1548,9 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 | Project is modified as soon as you move cursor on canvas | [#36796](https://github.com/qgis/QGIS/issues/36796) | [PR #36797](https://github.com/qgis/QGIS/pull/36797) | [PR #36718](https://github.com/qgis/QGIS/pull/36718) |
 | Set filter applied to wrong \"version\" of table when multiple geometry types | [#34982](https://github.com/qgis/QGIS/issues/34982) | [PR #36801](https://github.com/qgis/QGIS/pull/36801)[PR #36718](https://github.com/qgis/QGIS/pull/36718) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Bertrand Rix
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1559,9 +1559,9 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 | Selective masking: phantom lines on dark background | [#34650](https://github.com/qgis/QGIS/issues/34650) | [PR #36697](https://github.com/qgis/QGIS/pull/36697) | N/A |
 | Selective masking: issue with mask opacity | [#34947](https://github.com/qgis/QGIS/issues/34947) | [PR #36697](https://github.com/qgis/QGIS/pull/36697) | N/A |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Bertrand Rix](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Sebastien Peillet
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1572,9 +1572,9 @@ This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
 | Oracle : tables are listed once for Polygons and once for MultiPolygons but both show all geometries | [#32521](https://github.com/qgis/QGIS/issues/32521) | [PR #34358](https://github.com/qgis/QGIS/pull/34358) | N/A |
 | Can\'t set min/max values to decimal in raster symbology with QGis Linux versions | [#33859](https://github.com/qgis/QGIS/issues/33859) | [PR #37136](https://github.com/qgis/QGIS/pull/37136) | N/A |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Sebastien Peillet](https://www.oslandia.com/)
 ### Funcționalitate: Corecții efectuate de Alexander Bruy
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1594,7 +1594,7 @@ This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
 | Attributes shift in the Service area algorithm results | neraportat | [PR #37074](https://github.com/qgis/QGIS/pull/37074), [PR #37097](https://github.com/qgis/QGIS/pull/37097) | N/A |
 | Processing testing framework does not apply rounding to values casted to numbers | neraportat | [PR #37234](https://github.com/qgis/QGIS/pull/37234) | N/A |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
 Această funcționalitate a fost dezvoltată de Alexander Bruy
 ### Funcționalitate: Corecții efectuate de Nyall Dawson
@@ -1667,9 +1667,9 @@ Această funcționalitate a fost dezvoltată de Alexander Bruy
 | Fix incorrect dialog title for raster layer properties | [#35510](https://github.com/qgis/QGIS/issues/35510) | [Commit 2099261](https://github.com/qgis/QGIS/commit/2099261230f82c5cd4439538e38754947c8f6bd6) | [PR 36718 Commit e809f48](https://github.com/qgis/QGIS/pull/36718/commits/e809f48cb9aaf03dfe8671c2d885f99b4a91922b) |
 | Don\'t try to identify CRSes created just for ellipsoid definitions | neraportat | [Commit 15b318b](https://github.com/qgis/QGIS/commit/15b318b50de9131ed1dd6bbf73ae5eb7572579a7) | No \-- too intrusive |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://north-road.com/)
 ### Funcționalitate: Corecții efectuate de Denis Rouzaud
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1680,17 +1680,17 @@ This feature was developed by [Nyall Dawson](https://north-road.com/)
 | Freeze when showing attribute table of WFS layer | [#37224](https://github.com/qgis/QGIS/issues/37224) | not yet fixed | N/A |
 | Lookups in tables with more than 100 entries show wrong value in Relation Reference form parts | [#37266](https://github.com/qgis/QGIS/issues/37266) | [PR #37280](https://github.com/qgis/QGIS/pull/37280) | [PR #37286](https://github.com/qgis/QGIS/pull/37286) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://www.opengis.ch/)
 ### Funcționalitate: Corecții efectuate de Audun Ellertsen
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | SpatiaLite support for importing layers with binary fields | [#36705](https://github.com/qgis/QGIS/issues/36705) | [PR #36744](https://github.com/qgis/QGIS/pull/36744) | N/A |
 | PostGIS support for importing layers with binary fields | [#36705](https://github.com/qgis/QGIS/issues/36705) | [PR #36708](https://github.com/qgis/QGIS/pull/36708) | [PR #36720](https://github.com/qgis/QGIS/pull/36720) |
 
-This feature was funded by [Kongsberg Digital](https://www.kongsberg.com/digital/)
+Această funcționalitate a fost finanțată de [Kongsberg Digital](https://www.kongsberg.com/digital/)
 
-This feature was developed by [Audun Ellertsen](https://github.com/audun/)
+Această funcționalitate a fost dezvoltată de [Audun Ellertsen](https://github.com/audun/)
 
 {{<content-end >}}

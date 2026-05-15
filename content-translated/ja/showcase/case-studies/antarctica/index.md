@@ -1,5 +1,5 @@
 ---
-author: アンダース・スコグランドと松岡健一
+author: Anders Skoglund と Kenichi Matsuoka
 categories:
 - ケーススタディ
 date: '2015-04-01'
@@ -9,10 +9,10 @@ description: Quantarctica is a collection of Antarctic geographical datasets, su
 draft: 'true'
 heroImage: ''
 tags:
-- data
+- データ
 - antarctic
-- case-study
-- showcase
+- ケーススタディ
+- ショーケース
 thumbnail: quantarctica3.jpg
 title: Quantarctica：南極GISパッケージ
 type: showcase/case-studies

@@ -43,7 +43,7 @@ Date range for the time dimension has also been added in line with the OGC WMS a
 
 Această facilitate a fost finanțată de Ifremer
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces](https://github.com/troopa81)
 ### Feature: Add fixed date/time to raster temporal mode
 Allows the user to select a fixed date/time on a raster layer's temporal properties, allowing the start and end of a temporal range to be inferred by a single input value.
 
@@ -51,7 +51,7 @@ Allows the user to select a fixed date/time on a raster layer's temporal propert
 
 Această facilitate a fost finanțată de Ifremer
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces](https://github.com/troopa81)
 ## Interfața cu Utilizatorul
 ### Feature: Open a specific tab in the Message Log Panel
 QGIS now supports opening messages in a specific tab of the Message Log Panel.
@@ -62,9 +62,9 @@ This is achieved by extending the `openMessageLog` method to accept the tab name
 
 Included with this change is the extension of the iface method, `iface.openMessageLog( tab_name )`.
 
-This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+Această funcționalitate a fost finanțată de [Orașul Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ## Simbologie
 ### Feature: Add an option to delete unused categories in the categorized symbol renderer widget
 A new option has been added to the categorized symbol widget to allow users to bulk remove unused categories.
@@ -75,7 +75,7 @@ This is especially useful when utilizing a clipped subset of data that inherited
 
 <img src="images/entries/85eb6c595a8e44e2fd6deb1586215bc523861dfd.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Ben Wirf](https://github.com/benwirf)
+Această funcționalitate a fost dezvoltată de [Ben Wirf](https://github.com/benwirf)
 ## Etichetare
 ### Feature: Add settings for controlling margin around labels and preventing duplicate labels
 Two new settings have been introduced for vector layer labels, namely:
@@ -86,7 +86,7 @@ This can be used to improve the appearance of labels in the rendering of complex
 
 <img src="images/entries/efc5a69fe9fa346ba7b2d6b9c3ec2b6d57b731d0.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Funcționalități 3D
 ### Feature: Cross-section tool
 A new tool has been added for creating cross sections in a 3D scene. User can pick a region of interest in the 2D map canvas (by clicking three points - start point, end point and cross-section thickness), which will make 3D view filter out everything outside of the region. The camera in the 3D view also gets moved to look at the region of interest from the side.
@@ -95,9 +95,9 @@ Compared to the configuration of the extent of the 3D view, cross section tool i
 
 <img src="images/entries/8034dbe7d55e297f052ef4d310beab10a56ddbb5.png" class="img-responsive img-rounded" />
 
-This feature was funded by Septima, Klimadatastyrelsen
+Această funcționalitate a fost finanțată de Septima, Klimadatastyrelsen
 
-This feature was developed by [Matej Bagar](https://github.com/Withalion)
+Această funcționalitate a fost dezvoltată de [Matej Bagar](https://github.com/Withalion)
 ### Feature: Globe view
 There is a new mode for 3D scenes - globe view - in addition to the traditional 3D view based on a projected CRS.
 
@@ -111,15 +111,15 @@ More info:
 
 <img src="images/entries/b0ebe685540c3191ad07235d63e45176e9694551.png" class="img-responsive img-rounded" />
 
-This feature was funded by Cesium Ecosystem Grant
+Această funcționalitate a fost finanțată de Cesium Ecosystem Grant
 
-This feature was developed by Lutra Consulting & North Road
+Această funcționalitate a fost dezvoltată de Lutra Consulting & North Road
 ### Feature: Large 3D scene support
 In earlier versions of QGIS, 3D map views would not behave correctly with scenes larger than 50-100 kilometers due to numerical precision issues - the camera would move erratically (to the point of being unusable) or features would jitter when zoomed in. This has been fixed now - for both local scenes and globe scenes, as outlined in [QEP 301](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301).
 
-This feature was funded by Cesium Ecosystem Grant
+Această funcționalitate a fost finanțată de Cesium Ecosystem Grant
 
-This feature was developed by Lutra Consulting & North Road
+Această funcționalitate a fost dezvoltată de Lutra Consulting & North Road
 ## Nori de Puncte
 ### Feature: Update pdal_wrench to v1.2
 This provides:
@@ -130,19 +130,19 @@ See the [pdal_wrench changelog](https://github.com/PDAL/wrench/releases/tag/v1.2
 
 Această funcționalitate a fost finanțată de Oficiul de Stat pentru Topografie și Geoinformații din Vorarlberg
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ### Feature: Allow COPC output for PDAL Algorithms
 By leveraging the upgraded pdal_wrench dependency, PDAL Algorithm outputs can be generated as Cloud Optimized Point Clouds
 
 Această funcționalitate a fost finanțată de Oficiul de Stat pentru Topografie și Geoinformații din Vorarlberg
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ### Feature: Automatic utilization of COPC index files in processing tools
 If a COPC file has an index available, QGIS will now automatically utilize it by default when performing processing operations. This will make some operations faster (e.g. clip).
 
 Această funcționalitate a fost finanțată de Oficiul de Stat pentru Topografie și Geoinformații din Vorarlberg
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ### Feature: Point cloud editing
 It is now possible to edit point cloud layers in the 3D map views. Users can pick which attribute to modify, the target value and then interactively select points that should be modified.
 
@@ -176,9 +176,9 @@ Users can set up filtering of edited points using QGIS expressions, so that only
 
 </div>
 
-This feature was funded by Septima, Klimadatastyrelsen
+Această funcționalitate a fost finanțată de Septima, Klimadatastyrelsen
 
-This feature was developed by Lutra Consulting
+Această funcționalitate a fost dezvoltată de Lutra Consulting
 ## Compoziții Cartografice
 ### Feature: Add auto-wrap after setting for layout legends
 The auto-wrap setting allows legend text to be automatically wrapped after a fixed line length (set in millimeters).
@@ -189,20 +189,20 @@ This can be used to prevent excessive widths on auto-generated legends.
 
 Această funcționalitate a fost finanțată de North Road cu sprijinul SLYR
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Expresii
 ### Feature: Add repeat function and reverse variant for strings
 New expressions include:
 - A new 'repeat' function, which repeats a string a specified number of times
 - A string variant for 'reverse' that allows the reversing of strings
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Expression functions to create CRS from string definition and to get authid from CRS
 New expression functions have been added that support the management of coordinate reference systems, namely:
 - **crs_from_text**: Creates a coordinate reference system from a string definition. The string definition can be represented using a CRS code in `auth:id` format, a WKT definition, or a PROJ string definition of the CRS.
 - **crs_to_authid**: Returns the identifier string for a coordinate reference system in the format `authority:id`, e.g., `EPSG:4326`.
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ## Digitizarea
 ### Feature: Add merge policies
 Similar to the already existing Split and Duplicate "policies", QGIS now supports Merge Policies, which can be configured to determine the initial values in the Merge Features dialog.
@@ -221,9 +221,9 @@ Policy methods include:
 
 <img src="images/entries/544229ddb1a9eb37b3deacd955241731f8aa4c59.png" class="img-responsive img-rounded" />
 
-This feature was funded by the National Land Survey of Finland.
+Această funcționalitate a fost finanțată de the National Land Survey of Finland.
 
-This feature was developed by [Juho Ervasti](https://github.com/JuhoErvasti)
+Această funcționalitate a fost dezvoltată de [Juho Ervasti](https://github.com/JuhoErvasti)
 ## Gestiunea Datelor
 ### Feature: Use HEIGHT_AVERAGE from RPC when available
 QGIS can now more accurately position satellite images, especially those from DIMAP / Pleiades NEO products.
@@ -232,7 +232,7 @@ This improvement means that these types of satellite images will be displayed in
 
 <img src="images/entries/6dac68ebcbe251181b8b878ca25e96bee1bf2b33" class="img-responsive img-rounded" />
 
-This feature was developed by [Even Rouault](https://github.com/rouault)
+Această funcționalitate a fost dezvoltată de [Even Rouault](https://github.com/rouault)
 ### Feature: Allow field customisation when importing db tables
 The database table import dialog has been expanded to include a new field mapping section, which gives users control over the fields in the created table.
 
@@ -244,7 +244,7 @@ Fields can also be excluded from the import, or new fields created that don't ex
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add optional extent, expression based filter when importing tables to database
 When a table is imported to a database via the browser, the user now has an option to filter the copied records by extent or expression.
 
@@ -252,7 +252,7 @@ When a table is imported to a database via the browser, the user now has an opti
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add stored query support to Execute SQL window
 The "Execute SQL" dialog now supports stored queries, replicating the functionality from the DB Manager in the new browser tools.
 
@@ -264,7 +264,7 @@ Queries can be stored in the current project or in the local user profile.
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Saving/Loading SQL queries from Execute SQL/Update SQL dialogs
 Support has been added to the Execute SQL dialog and Update SQL dialogs that allows users to save and load SQL queries to/from .sql text files. This replicates the functionality available in the DB Manager over to the core browser-based database connection facilities.
 
@@ -274,7 +274,7 @@ The UX has been designed to mimic the same functionality from other standard par
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Allow for extra OAuth2 token(s) to be added into headers
 OAuth2 advanced configuration options can now attach extra tokens sent by the OAuth2 token endpoint as HTTP(S) request headers. This allows for more flexible handling of OAuth configurations, such as when certain providers append OpenID tokens to their token replies.
 
@@ -282,23 +282,23 @@ This change is integrated into the credential management and is available for al
 
 <img src="images/entries/2a9dadb3cfbf35b2efea8c7cd9dd4fe49ffbc292" class="img-responsive img-rounded" />
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Convert field name Casing when importing vector layers
 The Import Vector dialog for migrating vector layers to data sources now supports the option to automatically transform all field names to lowercase or uppercase.
 
 <img src="images/entries/dc2c1e575d451c7bd98fb6c3b0a7cebe2800fe04" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+Această funcționalitate a fost finanțată de Ocean Winds
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ### Feature: Import selected features only to database table
 When importing layer features into a database table, a new dialog option allows for filtering the import to only the selected features. This option is only available if there is a current selection on the imported layer.
 
 <img src="images/entries/4a0b7ca2843d5acb9b2c3b3b2a237d6f7e55a308" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+Această funcționalitate a fost finanțată de Ocean Winds
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ## Formulare și Controale grafice
 ### Feature: Switch between field names and field aliases in forms
 In line with [QEP 401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md), the Vector Layer Properties has been switched to model-based tree views.
@@ -311,9 +311,9 @@ Additional enhancements include:
 
 <img src="images/entries/5501d969ec51c06d6ecf49c691c484bec4d08b33.gif" class="img-responsive img-rounded" />
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+Această funcționalitate a fost finanțată de [the QGIS user group Elveția](https://qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Add a search box to Atrributes Form Designer
 In line with [QEP#401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md), the Drag and Drop form designer now includes a search box to filter items by name or alias, making it much easier to work with tables and datasets that include a lot of attribute fields.
 
@@ -321,18 +321,18 @@ This filter works across both the Available Widgets and the Form Layout panels.
 
 <img src="images/entries/3fefddf7d32b70bf849e390847eca7904ca85ea0.png" class="img-responsive img-rounded" />
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch)
+Această funcționalitate a fost finanțată de [the QGIS user group Elveția](https://qgis.ch)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ## Instrumentele de Analiză
 ### Feature: Add input parameters to the toolbox in the modeler
 A single "Toolbox" panel has been added to the Graphical Modeler, which merges the objects from the Input and Algorithm panels into a single panel. This simplifies the UX of the Graphical Modeler, allowing users to use the search filters rather than manage separate tabs for modeler tools.
 
 <img src="images/entries/2372c98c1724436a5d872bab22bd356ab6bae5d8.png" class="img-responsive img-rounded" />
 
-This feature was funded by [Hauts-de-France](https://www.hautsdefrance.fr/)
+Această funcționalitate a fost finanțată de [Hauts-de-France](https://www.hautsdefrance.fr/)
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
+Această funcționalitate a fost dezvoltată de [Valentin Buira](https://github.com/ValentinBuira)
 ## Procesare
 ### Feature: Port SAGA "Fill Sinks Wang & Liu" to native tool
 This highly in-demand tool seemed to be fragile and error-prone when run via the SAGA Processing Plugin.
@@ -341,21 +341,21 @@ A new native tool has been provided to provide an optimized out-of-the-box tool 
 
 Note that, as this implementation is a clone of the SAGA implementation, bugs present in the source will be present in the new native tool.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add creation options UI to raster calculator
 Raster creation options are now exposed in the raster calculator UI for both the native dialog and within the Processing Algorithm dialog.
 
 <img src="images/entries/f95b1f5cf9163bbb300ce45564d4e1a7a0877271.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Batch processing temporary output
 Temporary output layers are now supported in the Batch processing utility, improving the ability to generate intermediate data sources or perform experiments more efficiently.
 
 <img src="images/entries/6c4eab5ac90474f0d924f460586ff36b9c8df288.png" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+Această funcționalitate a fost finanțată de Ocean Winds
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ### Feature: Add basic drag and drop support in the model designer
 The QGIS Graphical Modeler now supports independent sockets connected to model nodes, which can be interactively connected via drag and drop.
 
@@ -363,7 +363,7 @@ This allows users to quickly and easily connect an output from one node to a spe
 
 <img src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
+Această funcționalitate a fost dezvoltată de [Valentin Buira](https://github.com/ValentinBuira)
 ### Feature: Processing raster rank algorithm
 The new "Raster rank" algorithm takes a collection of rasters as input and creates an output with cell values matching the rank order of a list of cell values taken from the input collection of rasters.
 
@@ -375,7 +375,7 @@ Finally, the algorithm offers to nodata handling behavior. By default, nodata va
 
 <img src="images/entries/8fe5df608b4c445246e6e0f4379304e062e20b88" class="img-responsive img-rounded" />
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ## Opțiunile Aplicației și ale Proiectului
 ### Feature: Add project setting for scale calculation, including new "scale at equator" method
 A new project-level setting for the scale calculation method has been added, with choices for:
@@ -398,24 +398,24 @@ Note that symbology sizes determined in map units are NOT affected by this setti
 
 The new "scale at equator "scale calculation method always calculates the scale at the equator, regardless of the actual visible map extent. It can be used to provide a consistent, static scale for maps in geographic reference systems, regardless of the latitudes actually visible in the map. Note that this method is only applicable when calculating scales with a degree-based reference system.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add multiple country codes filter to Nominatim Geocoder Locator
 A new optional configuration value for the Nominatim Geocoder Locator allows filtering results to one or more countries by providing a comma-separated string of the [Two-letter country codes](https://wiki.openstreetmap.org/wiki/Nominatim/Country_Codes) a user would like to restrict their results to.
 
 <img src="images/entries/ad98e211c26bc952c65e8c84b0323c866cc293f0" class="img-responsive img-rounded" />
 
-This feature was funded by [level2](https://level2.si/)
+Această funcționalitate a fost finanțată de [level2](https://level2.si/)
 
-This feature was developed by [Uroš Preložnik](https://github.com/uprel)
+Această funcționalitate a fost dezvoltată de [Uroš Preložnik](https://github.com/uprel)
 ## Profile Plots
 ### Feature: Add support for subsections indicator
 Profile plots now support the display of subsection indicators, which are rendered as vertical lines in the profile tool. This is based on outcomes from [QEP#260](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/260) and supports custom indicator symbology as well as providing subsection indicators on both the Elevation Profile view and Print Layout elements.
 
 <img src="images/entries/4eb01abb7bde11412b39323f0dc89ac13958e050.png" class="img-responsive img-rounded" />
 
-This feature was funded by BRGM
+Această funcționalitate a fost finanțată de BRGM
 
-This feature was developed by [Jean Felder](https://github.com/ptitjano)
+Această funcționalitate a fost dezvoltată de [Jean Felder](https://github.com/ptitjano)
 ## Navigatorul
 ### Feature: Port SQL Query History to Browser
 The database query history panel is now displayed in the Execute SQL dialog on the browser, in line with [QEP#332](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-332-sql-query-history.md).
@@ -424,9 +424,9 @@ This adds a new top-level action to open the query history window.
 
 <img src="images/entries/0790aa10b23a8a21663586201234bb438b88bb21.png" class="img-responsive img-rounded" />
 
-This feature was funded by QGIS grant program 2025
+Această funcționalitate a fost finanțată de QGIS grant program 2025
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Improved project management for PostgreSQL stored Projects
 QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
 - Redenumire Proiect
@@ -436,9 +436,9 @@ QGIS now includes options in the browser that allow manipulating QGIS Projects s
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+Această funcționalitate a fost finanțată de Ocean Winds
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ### Feature: Show dialog when importing tables via browser and give users options to control import
 A new dialog will prompt users for more comprehensive import configuration when dragging layers into data sources in the QGIS Browser, emulating functionality provided by the DB Manager Plugin for data imports.
 
@@ -462,19 +462,19 @@ Note that this feature does not currently support Oracle databases, due to legac
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Move table to another schema for PostgreSQL Provider
 PostgreSQL Tables can now be moved to another schema directly in the QGIS Browser.
 
-This feature was funded by Ocean Winds
+Această funcționalitate a fost finanțată de Ocean Winds
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ### Feature: Enable field rename for PostgreSQL
 QGIS now supports renaming fields for PostgreSQL tables directly in the QGIS Browser interface.
 
-This feature was funded by Ocean Winds
+Această funcționalitate a fost finanțată de Ocean Winds
 
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
+Această funcționalitate a fost dezvoltată de [Jan Caha](https://github.com/JanCaha)
 ## Furnizorii de Date
 ### Feature: Add a WFS parameter for featureMode
 The WFS Provider URI and UI now support a "featureMode" parameter, which supports options for :
@@ -482,7 +482,7 @@ The WFS Provider URI and UI now support a "featureMode" parameter, which support
 - SimpleFeatures (Enable simplification on returned features)
 - ComplexFeatures (Disable simplification on returned features)
 
-This feature was developed by [Even Rouault](https://github.com/rouault)
+Această funcționalitate a fost dezvoltată de [Even Rouault](https://github.com/rouault)
 ### Feature: Add connection setting for restricting PostgreSQL Schema
 This feature allows users to specify a single schema to limit a Postgres connection to, much like the equivalent Oracle provider setting.
 
@@ -492,28 +492,28 @@ This can be used to limit the database work required to populate tables for a co
 
 <img src="images/entries/14da725b2b420a05075ba1b09c83786bf5c839f3" class="img-responsive img-rounded" />
 
-This feature was funded by Regiodata
+Această funcționalitate a fost finanțată de Regiodata
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add option to use POST requests for WFS connections
 By default, connecting to a WFS server will be done using GET requests; however, users will now be able to switch specific WFS connections to utilize the POST HTTP method, allowing more flexibility in web service configurations.
 
 <img src="images/entries/4a70618846a5eac6a459a0262887e3474bb1c091" class="img-responsive img-rounded" />
 
-This feature was funded by Dorset Council
+Această funcționalitate a fost finanțată de Dorset Council
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Allow SQL queries as layer sources from SQL Server
 QGIS now allows loading SQL Server queries as map layers from the browser and updating the SQL for existing query layers.
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## QGIS Server
 ### Feature: Allow configuring the server project cache size
 A new `QGIS_SERVER_PROJECT_CACHE_SIZE` environment variable has been added, which allows the configuration of the QCache cost, which was previously a hardcoded value.
 
-This feature was developed by [Sandro Mani](https://github.com/manisandro)
+Această funcționalitate a fost dezvoltată de [Sandro Mani](https://github.com/manisandro)
 ### Feature: Add server properties on layer tree group
 Users can now edit additional server properties on a layer tree group that will be returned in the GetCapabilities request. Available properties have been extended beyond the previous options of short name, title, and abstract to include:
 - Cuvinte cheie
@@ -526,12 +526,12 @@ Users can now edit additional server properties on a layer tree group that will 
 
 Această facilitate a fost finanțată de Ifremer
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces](https://github.com/troopa81)
 ## Programabilitate
 ### Feature: Add method to convert shapely geometry to QGIS Geometry
 In line with [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
 
-This feature was developed by [Till Frankenbach](https://github.com/merydian)
+Această funcționalitate a fost dezvoltată de [Till Frankenbach](https://github.com/merydian)
 ### Feature: Expose QGIS GPS Tools to Python API and Plugins
 The GPS tools class is now available in the PyQGIS API via a brand new `QgsAppGpsTools` class, accessed via `QgisInterface::gpsTools()`, so that plugins have more control on the QGIS GPS tracking session.
 
@@ -539,9 +539,9 @@ From QGIS 3.44 on, plugins can create a vector layer feature from the current GP
 
 This also exposes additional functionalities, such as setting the GPS track line symbol by changing the corresponding setting in `QgsOptions` and updating the eventual current GPS track geometry accordingly, e.g. `iface.gpsTools().setGpsTrackLineSymbol( line_symbol )`
 
-This feature was funded by [the Danish Nature Agency, Naturstyrelsen](https://naturstyrelsen.dk/)
+Această funcționalitate a fost finanțată de [the Danish Nature Agency, Naturstyrelsen](https://naturstyrelsen.dk/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo](https://github.com/gacarrillor)
 ## Corecții Importante
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
@@ -562,9 +562,9 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 | QT6 tests: fix PyQgsServerAccessControlWFSTransactional |  | [PR \#62034](https://github.com/qgis/QGIS/pull/62034) | N/A |
 | OAPIF: CQL layer filter expression is not used in request | [\#60092](https://github.com/qgis/QGIS/issues/60092) | [PR \#62156](https://github.com/qgis/QGIS/pull/62156) | [PR \#62186](https://github.com/qgis/QGIS/pull/62186) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
+Această funcționalitate a fost dezvoltată de [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Feature: Bug fixes by Alessandro Pasotti (QCooperative)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -592,9 +592,9 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | Ellipsoidal measurement not working when the project is using a custom CRS | [\#61299](https://github.com/qgis/QGIS/issues/61299) | [PR \#62212](https://github.com/qgis/QGIS/pull/62212) | [PR \#62252](https://github.com/qgis/QGIS/pull/62252) |
 | \[Processing\] "Select by Expression" doesn't works with some expressions | [\#62231](https://github.com/qgis/QGIS/issues/62231) | [PR \#62233](https://github.com/qgis/QGIS/pull/62233) | N/A |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qcooperative.net/)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti (QCooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Jacky Volpes (Oslandia)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -603,9 +603,9 @@ This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qc
 | Issue with the geometry combine and mergeLines | [\#61136](https://github.com/qgis/QGIS/issues/61136) | [PR \#62184](https://github.com/qgis/QGIS/pull/62184) |  |
 | Atlas activation crash | [\#59610](https://github.com/qgis/QGIS/issues/59610) | [PR \#62260](https://github.com/qgis/QGIS/pull/62260) | [PR \#62288](https://github.com/qgis/QGIS/pull/62288) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Jacky Volpes (Oslandia)](https://oslandia.com/en/)
 ### Feature: Bug fixes by Jean Felder (Oslandia)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -614,9 +614,9 @@ This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/en/
 | Issue with the geometry combine and mergeLines | [\#61136](https://github.com/qgis/QGIS/issues/61136) | [PR \#62184](https://github.com/qgis/QGIS/pull/62184) |  |
 | Atlas activation crash | [\#59610](https://github.com/qgis/QGIS/issues/59610) | [PR \#62260](https://github.com/qgis/QGIS/pull/62260) | [PR \#62288](https://github.com/qgis/QGIS/pull/62288) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Jean Felder (Oslandia)](https://oslandia.com/en/)
 ### Feature: Bug fixes by Alexander Bruy (QCooperative)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -653,9 +653,9 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/en/)
 | qgsidentifyresultsdialog.cpp: ‘best approach’ vs. ‘old fragile approach’ | [\#61499](https://github.com/qgis/QGIS/issues/61499) | can't reproduce |  |
 | exporting to .dxf sets units to imperial inch | [\#50579](https://github.com/qgis/QGIS/issues/50579) | works for me, fixed upstream |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -676,9 +676,9 @@ This feature was developed by [Alexander Bruy (QCooperative)](https://www.qcoope
 | QGIS 3.40.7 Bratislava crashes every time I try to use the tracing tool to create polygons | [\#62342](https://github.com/qgis/QGIS/issues/62342) | [PR \#62345](https://github.com/qgis/QGIS/pull/62345) |  |
 | Misbehavior of advanced topology settings on independant layers | nu este o eroare |  |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Bug Fixes by Germán Carrillo (OPENGIS)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -688,9 +688,9 @@ This feature was developed by [Stefanos Natsis (LutraConsulting)](https://www.lu
 | Disallow point layer as input to Oriented Minimum Bounding Box | [\#62126](https://github.com/qgis/QGIS/issues/62126) | [PR \#62300](https://github.com/qgis/QGIS/pull/62300) | [PR \#62330](https://github.com/qgis/QGIS/pull/62330) |
 | When saving SLD to DB, make sure errors are reported to callers (like Package layers algorithm) | neraportat | [PR \#62332](https://github.com/qgis/QGIS/pull/62332) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Germán Carrillo (OPENGIS)](https://opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Germán Carrillo (OPENGIS)](https://opengis.ch/)
 ### Feature: Bug fixes by Mathieu Pellerin (OPENGIS)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -710,9 +710,9 @@ This feature was developed by [Germán Carrillo (OPENGIS)](https://opengis.ch/)
 | QGIS-Locator, Behavior changed between 3.22 and 3.4x | [\#62013](https://github.com/qgis/QGIS/issues/62013) | [PR \#62043](https://github.com/qgis/QGIS/pull/62043) | [PR \#62058](https://github.com/qgis/QGIS/pull/62058) |
 | Various new connection dialog spacing and size issues | neraportat | [PR \#62041](https://github.com/qgis/QGIS/pull/62041) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Mathieu Pellerin (OPENGIS)](https://opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin (OPENGIS)](https://opengis.ch/)
 ### Feature: Bug fixes by Julien Cabieces (Oslandia)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -720,9 +720,9 @@ This feature was developed by [Mathieu Pellerin (OPENGIS)](https://opengis.ch/)
 | \[Oracle\] Fix PyQgsProviderRegistry test | qt6 test failing | [PR \#62109](https://github.com/qgis/QGIS/pull/62109) | Nu |
 | Model Designer - Python Converter not generating unique keys | [\#54150](https://github.com/qgis/QGIS/issues/54150) | [PR \#62261](https://github.com/qgis/QGIS/pull/62261) | [PR \#62329](https://github.com/qgis/QGIS/pull/62329) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Feature: Bug fixes by Nyall Dawson (North Road)
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -749,8 +749,8 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 | Fix mesh layer labeling tests not actually run | Neraportată | [PR \#61899](https://github.com/qgis/QGIS/pull/61899) | [PR \#61909](https://github.com/qgis/QGIS/pull/61909) |
 | \[ogr\] Handle auto addition of vsizip prefix for vsicurl archives | [\#61561](https://github.com/qgis/QGIS/issues/61561) | [PR \#61854](https://github.com/qgis/QGIS/pull/61854) | [PR \#61896](https://github.com/qgis/QGIS/pull/61896) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 
 {{<content-end >}}

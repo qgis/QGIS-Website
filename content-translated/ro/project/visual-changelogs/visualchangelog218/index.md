@@ -35,32 +35,32 @@ Any `http` or `mailto` links within attribute values will now automatically be c
 
 ![image58](images/entries/eab95eb0acb92a68edeee71a13ea23d77b88d307.png.400x300_q85_crop.webp)
 
-This feature was developed by [Sandro Mani (Sourcepole)](https://sourcepole.ch/)
+Această funcționalitate a fost dezvoltată de [Sandro Mani (Sourcepole)](https://sourcepole.ch/)
 ### Funcționalitate: Deplasarea rotiței mouse-ului deasupra butoanelor de alegere a culorii
 În QGIS 2.18 există posibilitatea deplasării rotiței mouse-ului deasupra oricărui buton glisant din dialogul de alegere a culorii, pentru a realiza incrementarea valorii. Această facilitate este indicată pentru modificări ale componentelor de culoare.
 
 ![image59](images/entries/ab472e2c8270ba64bee64bbbf8c9f5104edc79de.gif)
 
-This feature was funded by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost finanțată de [Nyall Dawson (North Road)](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: S-au adăugat scheme de culoare particularizate la meniul butonului de culoare
 QGIS 2.18 adds the ability for users to set whether a user created color scheme should show up in the color button drop-down menus. This setting is controlled through the color picker dialog, on the lists tab. Just add a new color scheme, then from the scheme menu tick the new \"show in buttons\" option. It\'s a handy shortcut if you have sets of common palettes and want them to be instantly available through the color menu.
 
 ![image60](images/entries/9453954d199c4950d7aecf153b6d5e53f820ff19.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Simbologie
 ### Funcționalitate: De acum, selectorul de culoare este încorporat în panoul de configurare a stilurilor straturilor
 În QGIS 2.18, dacă efectuați un clic pe un buton de culoare din interiorul panoului cu stilurile stratului, atunci dialogul de alegere a culorii se va deschide în interiorul panoului, și nu într-o fereastră de dialog separată. Acest lucru permite modificarea interactivă a culorilor, cu previzualizarea imediată a rezultatului.
 
 ![image42](images/entries/3af7533f5148810d0c26a221d7acdccaf1d7a835.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Etichetare
 ### Funcționalitate: Lista de substituție acceptă etichetarea
 S-a adăugat capacitatea de a specifica o listă cu substituții de text, care vor fi aplicate etichetelor. De exemplu, la abrevierea tipurilor de străzi.
@@ -69,9 +69,9 @@ Utilizatorii pot exporta și importa liste de substituții pentru a ușura reuti
 
 ![image43](images/entries/a73aec5fad4c5e39800e462bbac6dd2597f98cba.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: Algoritm îmbunătățit de plasare pe linie a etichetei
 Modul de etichetare paralelă a straturilor de tip linie a fost mult îmbunătățit, cu un nou algoritm care să evite plasarea etichetelor peste părțile zimțate ale entităților.
 
@@ -79,30 +79,30 @@ Modul de etichetare paralelă a straturilor de tip linie a fost mult îmbunătă
 
 Această funcționalitate a fost finanțată de Andreas Neumann
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: Etichetarea poligoanelor se face folosind etichete de-a lungul perimetrului
 S-a adăugat un nou mod de etichetare a poligoanelor, al căror perimetru este etichetat cu ajutorul etichetării curbate.
 
 ![image45](images/entries/c7a28cf09a0f1646210faaae85a56c2209ee15e9.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Randare
 ### Funcționalitate: Previzualizarea plăcuțelor raster (WMTS și straturi XYZ)
 În versiunile anterioare ale QGIS, utilizatorii trebuiau să aștepte până când descărcarea tuturor plăcuțelor unui strat se încheia, pentru a vedea harta rezultată. De acum, acest lucru a fost remediat, plăcuțele apărând pe canevas imediat ce au fost descărcate, experiența utilizatorului îmbunătățindu-se prin reducerea timpului până la afișare. Mai mult decât atât, plăcuțele descărcate anterior, cu rezoluții mai mici sau mai mari, pot fi utilizate de către funcția de previzualizare, în zonele în care  plăcuțele cu rezoluția corectă nu au fost descărcate încă.
 
 ![image46](images/entries/007bf6d09a1f67e0c0c4ee71d48081185c0c5c84.gif)
 
-This feature was funded by [Land Information New Zealand](http://www.linz.govt.nz/)
+Această funcționalitate a fost finanțată de [Land Information New Zealand](http://www.linz.govt.nz/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Randarea rasterelor poate fi anulată (straturi WMS, WMTS, WCS și XYZ)
 Această funcționalitate îmbunătățește experiența utilizatorului, atunci când se lucrează cu straturi raster care provin de la servere aflate la distanță. Anterior, trebuia să se aștepte descărcarea completă, pentru a putea mări sau deplasa iarăși harta, pentru că interfața cu utilizatorul rămânea, între timp, înghețată. De acum, acest lucru s-a remediat, randarea straturilor raster putând fi anulată în orice moment.
 
-This feature was funded by [Land Information New Zealand](http://www.linz.govt.nz/)
+Această funcționalitate a fost finanțată de [Land Information New Zealand](http://www.linz.govt.nz/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
 ## Gestiunea Datelor
 ### Funcționalitate: S-a adăugat un fanion numai pentru entitățile selectate
 Plugin-ul de editare offline este un plugin implicit din QGIS, care vă permite să lucrați offline cu un set de date aflat la distanță (ex.: dintr-o bază de date), să îl editați în teren, apoi să îl resincronizați la revenirea în birou. Acest lucru extinde offline posibilitățile de editare asupra subseturilor de straturi mari.
@@ -111,7 +111,7 @@ Plugin-ul de editare offline este un plugin implicit din QGIS, care vă permite 
 
 Această funcționalitate a fost finanțată de DB Fahrwegdienste GmbH
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
 ## Formulare și Controale grafice
 ### Funcționalitate: Este permis controlul etichetelor pentru controale grafice de editare
 Este permisă manevrarea etichetelor pentru controalele grafice de editare dintr-o formă. În interfața de proiectare drag and drop, un dublu clic pe un element va permite controlul în cazul în care eticheta ar trebui să afișată în mod individual, pentru fiecare element.
@@ -120,9 +120,9 @@ In addition it is possible to configure if the link/unlink buttons are shown in 
 
 ![image48](images/entries/6d827c6b286f137ec9de1d97a15c745764494d0a.png.400x300_q85_crop.webp)
 
-This feature was funded by [Kanton Zug, GIS-Fachstelle](http://geo.zg.ch/)
+Această funcționalitate a fost finanțată de [Cantonul Zug, GIS-Fachstelle](http://geo.zg.ch/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
 ### Funcționalitate: Vizibilitate condițională pentru file și pentru grupuri de casete
 S-a adăugat o nouă opțiune de configurare pentru afișarea condiționată, sau pentru a ascunde filele și grupul de casete din interfața de proiectare drag and drop.
 
@@ -132,7 +132,7 @@ Se poate introduce o expresie pentru a controla vizibilitatea. Expresia va fi re
 
 ![image49](images/entries/8adda1d639ba9b46b15f8a70b38c6cfd407d2515.png.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
 ### Funcționalitate: Valori implicite ale câmpurilor, pe partea de client
 Allows an expression to be set for a vector layer field which is used to evaluate a default value for this field. Default value expressions can utilise properties of the feature which exist at the time of calling, such as digitized geometries. Expression variables can also be used in default value expressions, making it easy to eg insert a user\'s name, the current datetime, project path, etc.
 
@@ -140,33 +140,33 @@ Allows an expression to be set for a vector layer field which is used to evaluat
 
 Această funcționalitate a fost finanțată de DB Fahrwegdienste GmbH
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Compozitorul de Hărți
 ### Funcționalitate: Săgeată pentru Nordul Adevărat
 QGIS 2.18 adds support for orienting north arrows in the composer to True North. Previously all arrows were aligned to grid north, which is unsuitable for polar regions or non-north up projections (such as some South African projection systems). Now, you can choose to orient arrows to either grid north or true north. There\'s also an optional offset angle, which can be used to specify a grid convergence to make your arrows orient to magnetic north!
 
 ![image51](images/entries/b36b83066c2361e4a9647ee830b55b01a04ce4c5.png.400x300_q85_crop.webp)
 
-This feature was funded by [Norwegian Polar Institute\'s Quantarctica project](http://quantarctica.npolar.no)
+Această funcționalitate a fost finanțată de [Norwegian Polar Institute\'s Quantarctica project](http://quantarctica.npolar.no)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Procesare
 ### Funcționalitate: Algoritmul punctului de pe o suprafață
 This new algorithm is similar to the centroids algorithm, but where a centroid may fall outside its corresponding feature the \'Point on surface\' algorithm is guaranteed to create a point which is inside the corresponding polygon feature (or touching the corresponding line feature for line layers).
 
 ![image52](images/entries/133a854441e2ade7bec91a48e9a1f1d4b1d012ac.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: Algoritmul de dizolvare din Processing acceptă câmpuri multiple
 Algoritmul de dizolvare acceptă, de acum, valorile din mai multe câmpuri. În versiunile de QGIS anterioare, o dizolvare putea grupa entitățile după valoarea dintr-un singur câmp.
 
 ![image53](images/entries/a75b372f431c98592bdaccbc0bf4e90654969fa2.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: S-au optimizat calculele algoritmului de decupare
 Algoritmul de procesare clip a fost optimizat pentru scenarii de utilizare comune, având ca rezultat creșterea dramatică a vitezei pentru operațiile de tăiere. De exemplu:
 
@@ -180,33 +180,33 @@ Algoritmul de procesare clip a fost optimizat pentru scenarii de utilizare comun
 
 ![image54](images/entries/f975cb641b319e952264dc1e706deafdfd2b7496.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: Algoritm pentru casetele de încadrare
 Acest nou algoritm calculează caseta de încadrare (anvelopa) pentru fiecare element prezent în stratul de intrare.
 
 ![image55](images/entries/398557f0cfe897a227fea70ceef700f9ab048e2d.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: Algoritm de îmbinare a liniilor conectate
 Acest algoritm îmbină toate părțile conectate ale geometriilor MultiLineString în geometrii simple LineString. În cazul în care unele părți ale geometriilor MultiLineString de intrare nu sunt conectate, geometria rezultantă va consta într-un MultiLineString, care conține toate liniile care au putut fi îmbinate plus părțile de linie neconectate.
 
 ![image56](images/entries/7ebf10a71a1c3f28d48a2c19f7ad1f08ca75bf80.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Funcționalitate: Algoritmul de delimitare a geometriei
 Acest nou algoritm returnează limita combinatorie închisă a geometriilor de intrare (adică limita topologică a geometriei). De exemplu, limita unei geometrii poligonale va consta în șiruri de linii pentru fiecare inel din poligon, iar o geometrie liniară va avea o limită care constă din punctele de început și de sfârșit ale liniei. Acest algoritm este valabil numai pentru straturile de tip poligonal sau liniar.
 
 ![image57](images/entries/907b7b5c36af36547f10f33f65e9655a5cbe5a67.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Furnizorii de Date
 ### Funcționalitate: Suport nativ pentru plăcuțele straturilor XYZ 
 Plăcuțele rasterelor în format XYZ sunt de acum acceptate de furnizorii de date WMS, care permite utilizatorilor să afișeze hărți din alte surse, fără a mai necesita plugin-uri terțe, cum ar fi QuickMapServices sau OpenLayers.
@@ -217,9 +217,9 @@ The data provider also supports encoding of XYZ tile numbers into \"quadkeys\" u
 
 ![image61](images/entries/f69a3601e9201e38f9a561d40807512035da2298.gif)
 
-This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost finanțată de [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
 ## QGIS Server
 ### Funcționalitate: Posibilitate de fragmentare a informațiilor geometrice obținute de la server despre entități
 Necessary for geometries that contain curves (CircularArc, CompoundCurve, CurvePolygon), but the web client (e.g. QGIS Web Client) can\'t handle the display of these geometry types.
@@ -230,21 +230,21 @@ This feature can be enabled in the \"OWS server\" tab in the \"Project Propertie
 
 Această funcționalitate a fost finanțată de Andreas Neumann
 
-This feature was developed by [Marco Hugentobler (Sourcepole)](http://www.sourcepole.ch/)
+Această funcționalitate a fost dezvoltată de [Marco Hugentobler (Sourcepole)](http://www.sourcepole.ch/)
 ## Plugin-urile
 ### Funcționalitate: DB Manager: S-a adăugat capacitatea de actualizare a Stratului SQL
 With this feature the user can update the layer datasource if it\'s based on an SQL request.
 
-This feature was funded by [Ifremer](http://wwz.ifremer.fr)
+Această funcționalitate a fost finanțată de [Ifremer](http://wwz.ifremer.fr)
 
-This feature was developed by [3Liz](http://3liz.com)
+Această funcționalitate a fost dezvoltată de [3Liz](http://3liz.com)
 ## Programabilitate
 ### Funcționalitate: Funcția de referențiere liniară GEOS este expusă la QgsGeometry
 A new function `QgsGeometry::lineLocatePoint()` has been added for retrieving the distance along a linestring to the nearest position on the linestring to a given point.
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Funcționalitate: Noi clase PyQGIS în 2.18
 ### Noi clase de baze
 - [QgsAnnotation](https://qgis.org/api/classQgsAnnotation.html) - an interface for annotation items which are drawn over a map
@@ -267,6 +267,6 @@ QGIS 2.18 adaugă mai multe funcții noi pentru expresii, inclusiv funcții de i
 
 Această funcționalitate a fost finanțată de Andreas Neumann
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 
 {{<content-end >}}

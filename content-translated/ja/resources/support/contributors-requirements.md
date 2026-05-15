@@ -22,7 +22,7 @@ type: page
 - Agree to these requirements by sending an email to the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) stating agreement.
 
 ## Social Contract
-QGIS is a collaborative project. As an open source project we hope for and encourage participation and code contributions from interested parties. However in order to maintain high standards we encourage you to participate in the project according to the following social contract:
+QGISは共同プロジェクトです。オープンソースプロジェクトとして、関心を持つ方々の参加やコードへの貢献を歓迎・奨励しています。ただし、高い水準を維持するため、以下のソーシャルコントラクト（社会契約）に従ってプロジェクトに参加されることをお勧めします:
 - To be polite to all members of the project
 - To ensure any code you submit via a patch or commit to source control is properly documented
 - To ensure any code you submit via a patch or commit to source control is compliant with our CodingStandards

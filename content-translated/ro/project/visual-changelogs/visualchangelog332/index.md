@@ -41,7 +41,7 @@ A map tip preview window has been added to the Raster and Vector layer propertie
 
 ![image3](images/entries/9e24454517900953b1b667e670c553ac29f10d58.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Measure tool copy coordinates
 The measurement dialog has been extended with the following functions:
 - X and Y columns with X and Y coordinates
@@ -54,7 +54,7 @@ Additional settings for managing the \"Copy All\" button behavior are provided t
 
 ![image4](images/entries/4eb0ded16e3b6be3c0696230eb63a7a88fab4197.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Disable map tips for a specific layer
 A new feature in the layer properties allows for disabling mapTips on a specific layer.
 
@@ -62,7 +62,7 @@ On the QGIS API, a `mapTipsEnabled` Q_PROPERTY was added to the `QgsMapLayer` cl
 
 ![image5](images/entries/73c9d66fac45f948e63ead3f94be4ccddb3172b4.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Interfața cu Utilizatorul
 ### Feature: Show value relation description when hovering the combobox
 A description tooltip is now available when hovering the cursor over the value in the relation editor widget\'s combobox.
@@ -71,13 +71,13 @@ The description tooltip matches that of the currently selected item\'s descripti
 
 ![image6](images/entries/369ecca5320fe09a8f2657463df647c5526a496c.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: 2d map canvas view docking actions
 The action to dock and undock 2d map canvas views has been added to match the behaviour of 3d canvas views.
 
 ![image7](images/entries/d6aaec94112b3787b59d1d820b0335b9ab9b2385.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add clear recently used crs button
 The ability to remove \"recently used\" CRS information has been implemented in various ways, including:
 - Pressing the Del key while the list of recently used crs has focus remove the selected CRS
@@ -87,7 +87,7 @@ The ability to remove \"recently used\" CRS information has been implemented in 
 
 ![image8](images/entries/564478bebbaeda3394d77001b46cb051a795c73f.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Reverse wheel zoom
 A setting is now available to reverse the zoom direction of the mouse wheel (scrolling forward zooms out)
 
@@ -101,13 +101,13 @@ This setting will affects wheel zooms in multiple contexts, including:
 
 ![image9](images/entries/b242e0115f29586846d88d6d0cfb1d5f6f9760f0.webp)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Spatial bookmarks rotation
 Map rotation can now be stored and applied in Spatial bookmarks, which includes a new context menu in the Spatial Bookmark Manager Panel.
 
 ![image10](images/entries/ea7e07b0c6a753ab205dd31d20454a4006c17bba.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Adnotări
 ### Feature: Annotation tool improvements
 A number of improvements have been made to the behavior of annotation tools including:
@@ -118,13 +118,13 @@ A number of improvements have been made to the behavior of annotation tools incl
 
 ![image11](images/entries/fe30ec582f3b10338c05db078429751c06c890af.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Annotation live preview
 A \"live update\" checkbox in the annotation editors allows for on the fly review of rendered annotation content.
 
 ![image12](images/entries/a969c1ce6990854c84031bc4b7085b799c03f32f.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Funcționalități 3D
 ### Feature: Improved 3d measure tool
 The following improvements have been implemented to the measuring tool in 3d scenes:
@@ -140,9 +140,9 @@ The object selection logic has also been refactored for more control, and the 3d
 
 ![image13](images/entries/65d6c0b4ab0c187c6a4b1e9f2f6c6483708cfce4.webp)
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Această funcționalitate a fost dezvoltată de [Stefanos Natsis](https://github.com/uclaros)
 ## Nori de Puncte
 ### Feature: Native point cloud Processing provider
 A new native processing provider has been provided for point cloud algorithms, in line with [QEP 263](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/263).
@@ -167,9 +167,9 @@ As pdal_wrench requires PDAL \>= 2.5.0, the new processing provider will be avai
 
 ![image14](images/entries/e6c8922d1f55cc29aeceb514da8253f9b5b36edf.webp)
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Point cloud expression builder for Processing framework
 A new point cloud expression builder widget is available within the GUI to create filters for point clouds in a user friendly manner consistent with the existing QGIS Expression Builder interfaces.
 
@@ -181,9 +181,9 @@ Existing PDAL algorithms using expression filters have been updated to use expre
 
 ![image15](images/entries/f69a04fbddde3eee72333fab2c1af0c58582aaae.webp)
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Add filtering by rectangle and expression to PDAL algorithms
 Added the option to filter input point cloud by rectangle (extent) and expression in the following PDAL algorithms:
 - limita
@@ -198,25 +198,25 @@ This allows the processing of only a subset of points from the input file(s), wi
 
 For these who need only filtering there is also a separate Filter algorithm capable of filtering either by extent, by expression or by their combination.
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: New parameter type for point cloud attribute
 Useful for point cloud algorithms involving attributes, like exporting specific attribute values as raster or filtering point clouds.
 
 This also deprecates `parameterAsFields` API call, and `parameterAsStrings` should be used both for fields and point cloud attributes instead.
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Display virtual point clouds (VPC) in 3D views
 Virtual point clouds can be rendered within 3d views. For performance management, a sub index threshold is specified so that the view will render the chunked entity of the point cloud only when appropriate and will instead render the bounding region of a particular sub index when the threshold criteria is not met.
 
 ![image16](images/entries/ec9947c41a6b8caedcf2a72bf7b61ff4f2b8b04e.gif)
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Această funcționalitate a fost dezvoltată de [Stefanos Natsis](https://github.com/uclaros)
 ### Feature: Virtual point clouds (VPC)
 A new data provider is available for *Virtual Point Cloud* (VPC) files created by the [pdal_wrench](https://github.com/PDAL/wrench) utility and the *Build virtual point cloud (VPC)* tool in the newly introduced [Native point cloud Processing provider](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/263).
 
@@ -226,16 +226,16 @@ A Virtual Point Cloud is a JSON container file with a `.vpc` extension, referrin
 
 ![image17](images/entries/ec51218d00c661a9fd68dbda499f13ab56974c6a.gif)
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Această funcționalitate a fost dezvoltată de [Stefanos Natsis](https://github.com/uclaros)
 ## Compoziții Cartografice
 ### Feature: Hyperlink support for HTML-enabled label exports
 QGIS labels which contain HTML content will now support embedding functional hyperlinks in relevant layouts exports, such as PDFs.
 
 Această funcționalitate a fost finanțată de Cantonul Schaffhausen
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Support filtering layout legends by multiple linked map items
 Instead of limiting layout legend filtering to a single linked map, this change permits legends to be filtered instead by multiple linked maps. It is designed to accommodate the use case where a layout has multiple maps, potentially at different scales and showing different extents, and a single legend is required which includes all symbols visible across all the maps.
 
@@ -245,19 +245,19 @@ The UX has been designed to avoid changing the current user workflows, in that l
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Expresii
 ### Feature: Add ltrim/rtrim functions
 Allows trimming spaces or other characters from just the start or end of strings
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Digitizarea
 ### Feature: Field value list in merge feature dialog
 When merging features, users may now select from a list of available values from the selected features, rather than manually capturing a manual value for a field.
 
 ![image19](images/entries/01bce8523b3c79ad48ae040c8a5d446c4aa338ae.webp)
 
-This feature was developed by [Denis Rouzaud](https://github.com/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://github.com/3nids)
 ### Feature: Common angle option extensions for advanced digitizing
 The advanced digitizing options for common angles have been extended with the following functionalities:
 - New common angles for 0.1°, 0.5°, and 1.0°
@@ -268,7 +268,7 @@ The advanced digitizing options for common angles have been extended with the fo
 
 Această funcționalitate a fost finanțată de ChartWorld International
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Floater settings and bearing information for advanced digitizing
 A new configuration setting for the advanced digitizing tool allows users to toggle the display of the \"floater\" contextual menu which follows the cursor during digitizing. Additional options are included for adding information to the floater panel, such as the display of bearing and azimuth information.
 
@@ -276,29 +276,29 @@ A new configuration setting for the advanced digitizing tool allows users to tog
 
 Această funcționalitate a fost finanțată de ChartWorld International
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://github.com/elpaso)
 ## Tabela de atribute
 ### Feature: Improve loading time of attribute tables with hidden fields
 Improve attribute table loading time when there are hidden virtual fields and (in a more limited way) when there are hidden non-virtual fields.
 
 Această funcționalitate a fost finanțată de QTIBIA Engineering și QCooperative.
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://github.com/elpaso)
 ## Gestiunea Datelor
 ### Feature: Allow a range of cells to be copied from SQL results window
 Allows selection of a range of cells to copy to clipboard. Results are copied as both plain text and html, so can be pasted easily into spreadsheet apps/etc as tables
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Modified New field dialog behavior and alias support
 When creating new fields, the \'Comment\' option is now only exposed for datasources which support editing comments (preventing QGIS from silently discarding the information).
 
 This also adds support for setting field aliases within the new field dialog, and extends field comments and aliases for supported OGR formats.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add DistanceUnit value for inches
 Inches are now included as valid map units within QGIS.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Record split policy selection in form dialog
 A new \"field split policy\" choice item is exposed in the layer properties form dialog. That allows users to easily determine the current policy for splitting a field and change as required.
 
@@ -310,7 +310,7 @@ The following policies have been provided:
 
 ![image22](images/entries/f53e5c49ba0c25415b7a5bd163cb94a1ab72ebcd.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Formulare și Controale grafice
 ### Feature: Add control over horizontal / vertical stretch for attribute form widgets
 This functionality exposes two new \"size\" options for edit form widgets, allowing control over the horizontal and vertical stretch factors for the widget. By setting a horizontal or vertical stretch, users can control how edit widgets will relatively resize when resizing an attribute form.
@@ -321,7 +321,7 @@ Together these options give more control to users over the exact layout and sizi
 
 By default, the stretch values are set to \"Default\" which is the same as the behavior exhibited in previous versions of QGIS.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add new attribute form container type \"Row\"
 This container always lays out child widgets in a horizontal row, where the number of columns is automatically determined by the number of child widgets.
 
@@ -349,14 +349,14 @@ Without the option of row containers then the all horizontal rows will have the 
 
 Această funcționalitate a fost finanțată de NIWA
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Procesare
 ### Feature: Download vector tiles algorithm
 A new Processing algorithm has been added which enables the downloading of vector tiles from a remote server. This functionality includes vector tile support for the map layer parameter, as well as a new vector tile destination parameter for Processing algorithms. The output MBTiles format files can also be automatically added to the canvas after processing.
 
-This feature was funded by [Mergin Maps](https://merginmaps.com/)
+Această funcționalitate a fost finanțată de [Mergin Maps](https://merginmaps.com/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Allow configuration of the order of outputs created by a model
 A new \"Reorder Output Layers\" action to the model designer menu has been added which allows model creators to set a specific order which the outputs from their model must use when loading the results into a project. This gives the model creator a means of ensuring that layers are logically ordered on the canvas when running a model, such as placing a vector layer output over a raster layer output, or a point layer over a polygon layer.
 
@@ -364,15 +364,15 @@ The model creator can also set an optional \"Group name\" for the outputs for au
 
 ![image23](images/entries/a898507ce882d4e757064429471307a3cdd0e0e9.webp)
 
-This feature was funded by [QGIS User Group Germany](https://qgis.de/)
+Această funcționalitate a fost finanțată de [QGIS User Group Germany](https://qgis.de/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Algorithm to create COPC files for input point clouds
 A new algorithm adds the \"Create COPC\" option to the PDAL provider for generating Cloud Optimized Point Clouds. The algorithm creates a COPC file for each input point cloud file and can be useful for indexing files before using them in QGIS, or when building a VPC.
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Add invert selection tool on refactor fields processing tool
 A new button has been added to the field management interface of the refactor fields processing tool button which allows users to invert the selection. This allows for more efficient management of fields such as enabling bulk field deletes.
 
@@ -380,15 +380,15 @@ This feature was added during the [QGIS Contributor Meeting 2023, s-hertogenbosc
 
 ![image24](images/entries/ab43192e1204465860a221e323f478d9a1e8d2f6.gif)
 
-This feature was funded by [camptocamp](https://camptocamp.com)
+Această funcționalitate a fost finanțată de [camptocamp](https://camptocamp.com)
 
-This feature was developed by [Ismail Sunni](https://github.com/ismailsunni)
+Această funcționalitate a fost dezvoltată de [Ismail Sunni](https://github.com/ismailsunni)
 ### Feature: Support field comments and aliases in processing algorithms
 This adds support for handling field comments and aliases in the processing \"add field to attributes table\" and \"refactor fields\" algorithms. Additionally, it ensures that field comments and aliases are copied from source layers to destination layers when present.
 
 If the output layers do not support comments/ aliases then user-friendly warnings are shown in the processing log advising users of the limitation.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Build virtual point cloud (VPC) algorithm
 The new algorithm allows user to build [virtual point cloud (VPC)](https://github.com/PDAL/wrench/blob/main/vpc-spec.md) files that reference multiple existing point cloud datasets. This allows then visualization and processing of many point cloud files as a single layer in QGIS.
 
@@ -397,9 +397,9 @@ Additional options are available for the \"Build VPC\" Processing algorithm, whi
 - calculate exact boundaries from input data
 - build an overview point cloud
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Thread management in algorithm settings
 A handy new environment configuration setting has been created for the configuration of the number of threads an algorithm should use when an algorithm is capable of using several cores, such as TauDEM or PDAL.
 
@@ -407,13 +407,13 @@ This functionality has been applied to the PDAL and TileXYZ algorithms.
 
 ![image25](images/entries/d5a70cd3ed4a01b2e51381907b92b05256e13cc2.webp)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Allow temporary folder to be temporarily changed through the algorithm settings panel
 Individual processing algorithms may now include an environment setting to specify a custom temporary folder which overwrites the configured temporary file path. This is useful in situations where a particular tool may use a lot of temporary disk space and a dedicated location or scratch disk is required, or when a particular operation requires performance enhancements offered by a particular disk or path.
 
 ![image26](images/entries/e36dd209990541e93fdf7a3170596fe0f81ec920.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Allow processing dialog to override default processing context settings
 A new \"Algorithm Settings\" action has been added to the Advanced button of the processing algorithms interface. Selecting it shows a panel which allows users to control general processing settings which apply to a **particular instance** of the algorithm execution. It\'s intended to be a place where a user can override their global processing settings on an ad-hoc basis without having to change their usual default settings.
 
@@ -423,17 +423,17 @@ Includes settings for:
 
 ![image27](images/entries/2039528616fa5e39d98dd01dc43899db654d3a45.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Additional parameters for gdal2xyz algorithm
 The gdal2xyz processing algorithm from the GDAL processing provider now includes parameters for `skipnodata` and `src`, and `dstnodata`.
 
-This feature was developed by [Luke Pinner](https://github.com/lpinner)
+Această funcționalitate a fost dezvoltată de [Luke Pinner](https://github.com/lpinner)
 ### Feature: Add \"Keep disjoint results separate\" option to buffer algorithm
 If checked, then any disjoint parts in the buffer results will be output as separate single-part features. This setting is designed to expose a similar functionality as is available for the \'dissolve\' algorithm.
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Allow filter expressions to be set for vector sources
 This change adds a new \"feature filter\" option alongside the existing feature limit and invalid geometry handling options available for all vector inputs to processing layers.
 
@@ -443,11 +443,11 @@ It allows users to enter an expression to subset the layer dynamically when runn
 
 Această funcționalitate a fost finanțată de City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Support \*.HEIC format images in Processing \"Import Photos\" algorithm
 The Import Photos algorithm now allows importing `*.heic` images with GDAL\'s HEIF image support.
 
-This feature was developed by [Chris Shucksmith](https://github.com/shuckc)
+Această funcționalitate a fost dezvoltată de [Chris Shucksmith](https://github.com/shuckc)
 ## Opțiunile Aplicației și ale Proiectului
 ### Feature: Settings editor updates
 The interface for settings editors have seen a major overhaul and the advanced settings interface has the following user facing changes:
@@ -470,7 +470,7 @@ New API classes introduced include:
 
 ![image29](images/entries/36a2db1e6a9448a1bdd4699bbeaa79057e912535.webp)
 
-This feature was developed by [Denis Rouzaud](https://github.com/3nids)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://github.com/3nids)
 ### Feature: User profile selector
 In previous versions of QGIS, when QGIS Desktop was closed the current profile would be saved in the profiles.ini configuration file, so the default profile was the profile used in the last instance of QGIS that was closed.
 
@@ -487,7 +487,7 @@ User profile icons are also provided to allow users to visually differentiate be
 
 ![image30](images/entries/ac274c8186837f23d80df6142030a416efcdcb1e.webp)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Profile Plots
 ### Feature: Distance unit selection for elevation profiles
 Users may now choose from a selection of distance units to override the default (Canvas CRS map units) for elevation profiles in both the interactive elevation profiles (via the settings toolbar button) and for layout elevation profiles.
@@ -501,9 +501,9 @@ In layout profiles, there is an additional option which controls where the dista
 
 Note that it is currently not possible to expose unit selection for the vertical axis, as this is currently dimensionless and will require the development of vertical CRS handling in QGIS as outlined in [QEP 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267).
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Export elevation profiles
 A new item has been added to the elevation profile toolbar, which includes various options for exporting elevation profiles.
 
@@ -514,26 +514,26 @@ Profile plots can now be exported as:
 
 The results can be saved as DXF files, CSV files, or any of the standard writable vector spatial formats shapefile geopackages.
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add layers to elevation profiles
 1. An explicit \"Add Layers\" button has been added to the elevation profile dock. This provides a user-friendly why of adding new layers to a plot - clicking it will show a filtered list of possible layers which can be added to the plot, but which currently aren\'t in the plot (i.e it will include all raster layers from the project which aren\'t marked as having elevation data). Selecting layers will cause them to automatically be marked as having elevation data and immediately added to the plot.
 2. Layers can now be added to elevation plots via drag and drop from the layer tree. Unfortunately, users will have to explicitly hold the \"Ctrl\" key while dragging in order to force the copy action due to upstream library limitations.
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add \"Fill Above\" mode for elevation profile drawing
 The new fill above drawing mode for profile plots also includes additional options to limit the extent of \"fill above\" and \"fill below\" elevation ranges for a layer.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add option to lock the horizontal/ vertical scale to matching scales
 When activated, this option ensures that the horizontal and vertical scales are always kept equal. For instance, a 45 degree slope will always appear as a 45 degree slope in the profile.
 
-This feature was funded by [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+Această funcționalitate a fost finanțată de [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Senzori
 ### Feature: Core sensors framework
 A core sensors framework provides a sensor types registry, a sensor manager, and three simple QIODevice-based sensor types as follows:
@@ -547,9 +547,9 @@ A new `sensor_data()` function is added to the project scope which is available 
 
 ![image31](images/entries/79f13eef3f01b425e4523a9dd9b0922a97712d4f.gif)
 
-This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
+Această funcționalitate a fost finanțată de [Sevenson Environmental Services](https://sevenson.com/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Sensors GUI registry and configuration widgets
 Configuration widgets are provided for the TCP, UDP, and serial port sensor types which will allow users to configure, add, and remove sensors within the project properties dialog\'s sensors panel.
 
@@ -557,30 +557,30 @@ The implementation includes a sensor GUI registry to easily allow for additional
 
 ![image32](images/entries/59e82c99ec67a2bd1778543c7fa649a02e5fcf70.webp)
 
-This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
+Această funcționalitate a fost finanțată de [Sevenson Environmental Services](https://sevenson.com/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Sensor options panel within the project properties dialog
 A sensor table widget is provided that displays registered sensors within a project, along with with actions to connect and disconnect from sensors. The table is accessible via a new sensors panel in the project properties dialog.
 
 ![image33](images/entries/e797ad206e4fbb63387d98411d8e08c6a6fe0f47.webp)
 
-This feature was funded by [Sevenson Environmental Services](https://sevenson.com/)
+Această funcționalitate a fost finanțată de [Sevenson Environmental Services](https://sevenson.com/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](https://github.com/nirvn)
 ## Navigatorul
 ### Feature: Set field comments in browser
 When supported by providers, a new browser context menu action for fields allows for users to set/change the field\'s comments in the datasource.
 
 Currently supported for OGR formats with field comment capabilities such as GPKG, ESRI File Geodatabase, NetCDF, or Geoparquet, as well as PostgreSQL data sources.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Set field aliases in browser
 When supported by providers, a new browser context menu action for fields allows for users to set/change the field\'s alias in the datasource.
 
 Currently supported for OGR formats with field comment capabilities such as GPKG, ESRI File Geodatabase, NetCDF, or Geoparquet.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## Furnizorii de Date
 ### Feature: Load layers in parallel threads when opening project
 QGIS will now load supported layers in parallel when loading a project, significantly improving project load times in certain instances such as when a project includes numerous remote layers.
@@ -591,9 +591,9 @@ A new advanced setting is available to deactivate this behavior when necessary.
 
 ![image34](images/entries/809438ef5d3fd9f3574891be96131f9d113562d9.webp)
 
-This feature was funded by [KoBold Metals](https://www.koboldmetals.com/)
+Această funcționalitate a fost finanțată de [KoBold Metals](https://www.koboldmetals.com/)
 
-This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
+Această funcționalitate a fost dezvoltată de [Vincent Cloarec](https://github.com/vcloarec)
 ### Feature: Implements server-side filtering using Part 1 or Part 3
 The WFS/ OGC API for Features (OAPIF) data provider has been extended to support enhanced filtering criteria in line with open standards.
 
@@ -616,7 +616,7 @@ Additional conformance classes for advanced filtering include the following item
 - <http://www.opengis.net/spec/cql2/1.0/conf/case-insensitive-comparison>: for ILIKE
 - <http://www.opengis.net/spec/cql2/1.0/conf/basic-spatial-operators>: for `intersects(geomcolumn, geomFromWkt('POINT(x y)'))` and `bbox_intersects(geomcolumn, geomFromWkt('WKT LITERAL'))`
 
-This feature was developed by [Even Rouault](https://github.com/rouault)
+Această funcționalitate a fost dezvoltată de [Even Rouault](https://github.com/rouault)
 ### Feature: Expose option to load vector tile sources from files in Data Source Manager
 The Vector Tile tab now includes choices for selecting from a \"Service\" (the existing, connection based approach for adding vector tiles from online sources) or \"File\" (a new option which allows directly adding a data source using VTPK or MBTiles vector tile files).
 
@@ -624,7 +624,7 @@ The Vector Tile tab now includes choices for selecting from a \"Service\" (the e
 
 Această funcționalitate a fost finanțată de Oficiul de Stat pentru Topografie și Geoinformații din Feldkirch, Austria
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Additional user controlled vector tile properties
 Vector tile data sources now support user defined controls for layer opacity and blending modes.
 
@@ -632,28 +632,28 @@ Additionally, it adds the standard \"Source\" and \"Rendering\" tabs to the vect
 
 Source widgets are also for the VTPK and MBTiles vector tile providers, allowing control over the source vtpk/mbtiles file path.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Fix broken layer support for vtpk/mbtile vector tile layers, show vtpk files in browser
 Vector tile layers now expose all the required API items for supporting broken layer handling and discovery, making their behavior consistent with other layer types. Additionally, by implementing the modern provider metadata APIs for the VTPK provider we ensure that VTPK files are shown in the browser panel for easy discovery.
 
 Această funcționalitate a fost finanțată de Oficiul de Stat pentru Topografie și Geoinformații din Feldkirch, Austria
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ## QGIS Server
 ### Feature: PDF format options for WMS GetPrint
 The `FORMAT_OPTIONS` parameter in QGIS Server can now also be used to pass format options for PDF format to WMS GetPrint. This allows more control in GetPrint requests when generating GeoPDF outputs, such as Georeference or Geometry Simplification settings.
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Această funcționalitate a fost dezvoltată de [mhugent](https://github.com/mhugent)
 ### Feature: Configurable capabilities cache size
 The QGIS Server GetCapabilities request cache size can now be configured with the `QGIS_SERVER_CAPABILITIES_CACHE_SIZE` parameter, which uses an integer input specifying the number of requests to cache. A notice of \"Removed cached WMS capabilities document\" will be logged when all slots are taken and a cached document is dropped.
 
-This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
+Această funcționalitate a fost dezvoltată de [Jürgen Fischer](https://github.com/jef-n)
 ### Feature: Add display name in GetFeatureInfo response
 A new `WITH_DISPLAY_NAME` parameter will add the display name in the `GetFeatureInfo` response if needed, similar to the existing `WITH_MAPTIP` parameter.
 
-This feature was funded by [3liz.com](https://3liz.com)
+Această funcționalitate a fost finanțată de [3liz.com](https://3liz.com)
 
-This feature was developed by [Étienne Trimaille](https://github.com/Gustry)
+Această funcționalitate a fost dezvoltată de [Étienne Trimaille](https://github.com/Gustry)
 ### Feature: OGC API - Features: Add full pagination for collection items HTML page
 To make browsing the features more user friendly and provide more information, the following was implemented and added to the HTML template:
 - full pagination which shows always the total number of pages
@@ -664,7 +664,7 @@ To make browsing the features more user friendly and provide more information, t
 
 ![image36](images/entries/2fc23a3a7f310ae6cc53ae4ff676c5a96eb8c34a.webp)
 
-This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
+Această funcționalitate a fost dezvoltată de [Björn Hinkeldey](https://github.com/pathmapper)
 ## Programabilitate
 ### Feature: Python console help improvements
 A special `?` command has been added to the python console which displays a useful help message, identifies some key variables, and provides helper functions for improving the developer experience within QGIS Desktop.
@@ -673,7 +673,7 @@ The `_pyqgis` and `_api` helper functions will take a parameter (an instance or 
 
 ![image37](images/entries/5eae659a4df942e04095e38fa5256e7c1436ae39.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Run shell commands from the Python Console
 The QGIS Python ConsoleMimics IPython behavior to run system commands.
 - Run any command that works at the command-line with the syntax `!<cmd>`. The console will start a subprocess, and forward its output to the Python Console Output.
@@ -684,7 +684,7 @@ The QGIS Python ConsoleMimics IPython behavior to run system commands.
 
 ![image38](images/entries/6f4da5dd9d63b6c8e0914c4ad4e7e79ccdfea109.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Reformat code action for code editors
 A \"format code\" action has been added to the Python Console Editor which allows for the automated linting/ pretty printing of code in line with the capabilities of modern code editors.
 
@@ -706,15 +706,15 @@ These operations will facilitate consistent development in line with industry be
 
 ![image39](images/entries/4d955fb378b92e625bbfbd84e720d680fecbd063.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: Toggle Python console to full main window
 Adds the same toggle button 3d map canvases and attribute tables to make it super-easy to switch the Python console to a full main window or back to a docked widget.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Reformat HTML Code in Code Editors
 Editors using the `QgsCodeEditorHTML` class will be able to use the code reformatting functionality to pretty print HTML data within QGIS. Note that this functionality will require the BeautifulSoup4 or lxml libraries to be installed within the python environment to parse the XML/ HTML data.
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Această funcționalitate a fost dezvoltată de [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Corecții Importante
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
@@ -728,18 +728,18 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 | Field domain created incorrectly | [#52318](https://github.com/qgis/QGIS/issues/52318) | [PR #53314](https://github.com/qgis/QGIS/pull/53314) | [PR #53349](https://github.com/qgis/QGIS/pull/53349) |
 | Longer opening time of GPKG file in newer versions | [#53525](https://github.com/qgis/QGIS/issues/53525) | [PR #53566](https://github.com/qgis/QGIS/pull/53566) | DE EFECTUAT |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
+Această funcționalitate a fost dezvoltată de [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Feature: Bug fixes by Sandro Santilli (strk)
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | QGIS offset line shows perpendicular tags issue | [#53165](https://github.com/qgis/QGIS/issues/53165) | [PR #53234](https://github.com/qgis/QGIS/pull/53234) | [PR #53308](https://github.com/qgis/QGIS/pull/53308) |
 | strange behaviour of single sided buffer algorithm | [#52795](https://github.com/qgis/QGIS/issues/52795) | [geos PR 912](https://github.com/libgeos/geos/pull/912) | N/A - GEOS fix |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Sandro Santilli (strk)](http://strk.kbt.io/)
+Această funcționalitate a fost dezvoltată de [Sandro Santilli (strk)](http://strk.kbt.io/)
 ### Feature: Bug fixes by Alessandro Pasotti (itOpen / qcooperative)
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -754,9 +754,9 @@ This feature was developed by [Sandro Santilli (strk)](http://strk.kbt.io/)
 | The list in \"Link to existing child features\" does not help in selecting the right child features | [#53410](https://github.com/qgis/QGIS/issues/53410) | won\'t fix | Object Snap on Lines does not work for arc-elements |
 | Attribute form widgets are not disabled when \"Editable\" state is data-defined and layer is not in edit mode | [#53031](https://github.com/qgis/QGIS/issues/53031) | [PR #53506](https://github.com/qgis/QGIS/pull/53506) | N/A |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Alex Bruy (LutraConsulting)
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -768,9 +768,9 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 | Name column always shows alias instead of field name in refactor fields algorithm | [#53028](https://github.com/qgis/QGIS/issues/53028) | [PR #53365](https://github.com/qgis/QGIS/pull/53365) | [PR #53407](https://github.com/qgis/QGIS/pull/53407) |
 | Sentinel 1 data set not working properly | [#52694](https://github.com/qgis/QGIS/issues/52694) | Not a bug, wrong selection of data format for huge and complex geometries | Generate XYZ tiles (MBTiles) - error when run |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Alex Bruy (LutraConsulting)](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Alex Bruy (LutraConsulting)](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Corecții efectuate de Julien Cabieces
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -783,25 +783,25 @@ This feature was developed by [Alex Bruy (LutraConsulting)](https://www.lutracon
 | Vector Tile Layers do not clip to layout map frame when mask enabled | [#52347](https://github.com/qgis/QGIS/issues/52347) | Qt upstream issue |  |
 | Splitfeatures function | [#52145](https://github.com/qgis/QGIS/issues/52145) | [PR #53526](https://github.com/qgis/QGIS/pull/53526) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Jean Felder (Oslandia)
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Erased profile plot is redrawn after a layer toggles on/off | [#48117](https://github.com/qgis/QGIS/issues/48117) | [PR #53468](https://github.com/qgis/QGIS/pull/53468) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Jean Felder (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Jacky Volpes (Oslandia)
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Legend not updating dynamically when using an atlas | [#53442](https://github.com/qgis/QGIS/issues/53442) | Still WIP |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
+Această funcționalitate a fost dezvoltată de [Jacky Volpes (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Nyall Dawson (North Road)
 | Titlul Erorii | URL issues (Github, if reported) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -827,8 +827,8 @@ This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
 | Greatly speed up browser when a large number of files are visible | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53268](https://github.com/qgis/QGIS/pull/53268) | [PR #53299](https://github.com/qgis/QGIS/pull/53299) |
 | Pass renderer usage from download vector tile algorithm | [#53183](https://github.com/qgis/QGIS/issues/53183) | [PR #53258](https://github.com/qgis/QGIS/pull/53258) | NA |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](https://north-road.com/)
 
 {{<content-end >}}

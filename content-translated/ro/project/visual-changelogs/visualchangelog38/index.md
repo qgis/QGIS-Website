@@ -33,16 +33,16 @@ In 3.8, we added an option to the measurement tool which forces Cartesian measur
 
 ![image2](images/entries/e912304d18194a43111a2f054b7f1dba931985d4.webp)
 
-This feature was funded by [Oslandia](https://oslandia.com)
+Această funcționalitate a fost finanțată de [Oslandia](https://oslandia.com)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com)
+Această funcționalitate a fost dezvoltată de [Loïc Bartoletti (Oslandia)](https://oslandia.com)
 ## Interfața cu Utilizatorul
 ### Feature: Save to Template Button
 While QGIS has offered support for Project Templates for many years, we enhanced this in 3.8 and made it much simpler for users to create new templates. Now, users can create a new template from their current project by selecting \"Save To -\> Templates\" from the \"Project\" menu.
 
 ![image3](images/entries/8a99e041656f5d3d1fa504636aa36b0046efe532.webp)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
 ### Feature: Improved \"Zoom to Native Resolution\" behavior
 We\'ve improved the \"Zoom to Native\" action, so it now works correctly with tiled (e.g. WMTS/XYZ/ArcGIS MapServer) layers, by zooming to the closest native tile resolution. Additionally, we tweaked tile rendering so that pixel-perfect rendering occurs when the map is viewed at a native tile resolution. The result: super-crisp map renders when using tiled layer sources!
 
@@ -52,14 +52,14 @@ To improve the usability of large QGIS projects, we now support direct drag and 
 
 Additionally, for Processing algorithms, layers can be dragged direct from the Browser panel to input layer choices.
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Simbologie
 ### Feature: Multi-character strings for font markers
 While QGIS has long offered support for rendering points using font-based character markers, we\'ve enhanced this functionality in 3.8 and now offer the ability to render multi-character strings! And since we\'re always aiming to make the QGIS application interface as user-friendly and pleasant to use as possible, we also took the opportunity to tweak the UI for font markers and squash a number of frustrating GUI issues which previous versions suffered from.
 
 ![image5](images/entries/a0f55caed98366ae6eaa0e413d425259aa613b9b.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://imhere-asia.com/)
 ### Feature: Point Displacement label distance factor
 Another addition to the new symbology features added in 3.8 is a brand new label distance factor control for Point Displacement markers. This option allows displaced marker labels to be placed at a distance based on the actual marker diagonal size instead of a fixed distance.
 
@@ -75,7 +75,7 @@ All options available for the existing Marker Line symbol layer are also availab
 
 Această facilitate a fost finanțată de anonim
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Average line angles for marker and hashed line symbology
 In previous QGIS versions, when a marker line was rendered using interval or center point place placement, the symbol angles were determined by taking the exact line orientation at the position of the symbol. This often leads to undesirable rendering effects, where little \"jaggies\" or corners in lines which occur right at the position of the symbol cause the marker to be oriented at a very different angle to what the eye expects to see.
 
@@ -89,17 +89,17 @@ This option is available for both the marker line symbol and the new hash line s
 
 Această facilitate a fost finanțată de anonim
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Offset settings for point pattern fill symbol layers
 To round out the new symbology options we\'ve added in 3.8, the Point Pattern Fill symbol type has a new setting allowing for offsetting the markers in the pattern by a preset (or data-defined!) amount. This opens the door for many styling possibilities which were not possible in earlier versions, and further increases our compatibility with converted ArcGIS symbol and layer styles.
 
 ![image9](images/entries/0cda10ddf2bac42e77b7cfc9ada813e4a26353a5.gif)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://imhere-asia.com/)
 ### Feature: Live Effects Blur Radius is now hi-dpi friendly
 QGIS 3.8 brings a highly-desired fix to layer effects\' blurring radius (aka strength). In earlier QGIS versions, these blur settings did not take into account the DPI of the map render --- resulting in inaccurate effects rendering when exporting canvases/layouts at high resolutions. In 3.8, this was fixed and high-resolution map exports now match the results shown on the map canvas and are completely resolution-independent.
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Etichetare
 ### Feature: Geometry generators for labeling
 This is a huge one! During the developer\'s meeting in A Coruña, Matthias Kuhn took the opportunity to implement a frequently-asked-for feature in our labeling engine: Geometry Generator support.
@@ -108,9 +108,9 @@ Just like Geometry Generators for symbols, we now allow label paths and position
 
 ![image10](images/entries/abc08ecfe2a879424b3f8e96c26b0391e342090e.webp)
 
-This feature was funded by [QGIS user group switzerland](https://www.qgis.ch)
+Această funcționalitate a fost finanțată de [QGIS user group switzerland](https://www.qgis.ch)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Feature: Label Map Tools now use click-click behavior
 Like the other QGIS digitizing and map tools, the \"Move Label\" and \"Rotate Label\" tools now use the standard left-click-to-start edit, left-click-to-end behavior. Consistency is good!
 ## Funcționalități 3D
@@ -123,27 +123,27 @@ Like all recent QGIS releases, in version 3.8 we\'ve significantly boosted QGIS\
 
 Această funcționalitate a fost finanțată de Andreas Neumann
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Feature: Export 3d animations
 Another exciting change we\'ve introduced in QGIS 3.8 is the ability to export your 3D animations! These are exported as a series of png/jpg/\... images, which can be easily merged into .avi or other standard video files (using external tools).
 
 ![image12](images/entries/f0d7bb5632bfaa9c9feafb12e7b258c312ba66a6.webp)
 
-This feature was funded by [Northumberland National Park Authority](https://www.northumberlandnationalpark.org.uk/)
+Această funcționalitate a fost finanțată de [Northumberland National Park Authority](https://www.northumberlandnationalpark.org.uk/)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Feature: Terrain from online sources
 With this new version 3.8 feature, you can now directly fetch terrains for your 3D scenes from online sources (e.g. tiles hosted on AWS). No more sourcing and preparing rasters with DEM, just enable this option and see beautiful 3D scenes out-of-the-box!
 
-This feature was funded by [Crowdfunding: More QGIS 3D](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
+Această funcționalitate a fost finanțată de [Crowdfunding: More QGIS 3D](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Această funcționalitate a fost dezvoltată de [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Feature: Configuration of field of view angle of camera
 In QGIS 3.8, the field of view of the camera through which 3D scenes are rendered has gained a new configurable field of view settings.
 
 ![image13](images/entries/13a7660953586fea69df8afea7f75dd5d457fce8.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Compoziții Cartografice
 ### Feature: Distribute spacing between items evenly
 To make it easy to create your perfect QGIS Print Layout, we added new tools for automatically re-positioning items so that horizontal or vertical space between them is equal. This addition nicely rounds out the existing options for aligning items, bringing more of the power of a dedicated DTP application directly inside the QGIS Print Layout Designer!
@@ -156,9 +156,9 @@ Even experienced users will likely appreciate the improved workflow, including a
 
 ![image14](images/entries/7a0dd68c9a38f6e4b4f0177ae53978710df89ad5.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Expresii
 ### Feature: Order by support for expression aggregate and concatenation functions
 Since certain aggregate and concatenation expressions require results in a certain order, we now allow control over the order features are added to the aggregate during expression evaluation.
@@ -167,9 +167,9 @@ E.g. `concatenate("Station",concatenator:=',', order_by:="Station")` will give a
 
 ![image15](images/entries/024918bb03f4620a2b5d32926322d0644c782bb8.webp)
 
-This feature was funded by [SMEC/SJ](https://www.smec.com/)
+Această funcționalitate a fost finanțată de [SMEC/SJ](https://www.smec.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Simplified variant of \"attribute\" function
 This improvement brings a second variant for the existing \"attribute\" function. The \"attribute\" function in previous QGIS releases required both a target feature and attribute name to be specified. The new version is much simpler, automatically using the current feature and only requiring an attribute name.
 
@@ -187,15 +187,15 @@ It\'s just a faster shorthand version!
 
 ![image16](images/entries/13f09f754dea12a13b9d9aeb8606e86582e87e3f.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Retrieve vertices from the end of geometeries
 We added negative index support to the point_n(), angle_at_vertex(), and distance_to_vertex() functions, allowing for retrieval of vertices counting backward from the end of a geometry.
 
 ![image17](images/entries/6eac3dcc7d9053f16733306878fb0cebf993737a.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://imhere-asia.com/)
 ### Funcționalitate: Noi funcții pentru expresii
 As always, a new QGIS release brings a bunch of new functions for use within QGIS\' expression engine. These new functions add increased flexibility and power to the expression engine, and everywhere it\'s used throughout QGIS. This round, we\'ve added a set of new functions which make it super-easy to operate on file names and paths.
 
@@ -219,32 +219,32 @@ We added a new function `concatenate_unique()` to the expression engine (and Pro
 
 ![image19](images/entries/77c53d02f719feaf03e7e3d9cea8468645aa81e3.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Digitizarea
 ### Feature: Floating widget for advanced input next to cursor
 To make the existing Advanced Digitizing tools easier to use, we added an option to show the current distance/angle/x/y values as a floating display next to the mouse cursor.
 
 ![image20](images/entries/c0703ea4a49115bfb398d174aa727c7e0fc67240.gif)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Această funcționalitate a fost finanțată de [Cantonul Schaffhausen](https://sh.ch/CMS/Webseite/Cantonul-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
-This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
 ### Feature: Chained add vertex at the endpoint
 In QGIS 3.0, we added the ability to extend an existing line feature by clicking a \"+\" indicator at the start or end of line features when using the node tool. Version 3.8 extends this functionality by allowing addition of more than one vertex using the \"+\" button.
 
 ![image21](images/entries/a58caabea738a7e34529b9aeb2bb1d4cd307cf50.gif)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Această funcționalitate a fost finanțată de [Cantonul Schaffhausen](https://sh.ch/CMS/Webseite/Cantonul-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
-This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
 ### Feature: Improvements in the vertex editor
 For this release we improved the vertex editor so it will now properly link the *selected vertices on the canvas* with the *vertices for manual coordinate editing in the table*.
 
 ![image22](images/entries/e518f5fc5b2decdbaba6272249cdfb3b6c2ad2fe.gif)
 
-This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
+Această funcționalitate a fost finanțată de [QGIS User Group Elveția](https://qgis.ch)
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
 ## Formulare și Controale grafice
 ### Feature: Allow browsing feature list
 | arrows allow browsing the feature list in the attribute table in form view | the current edited feature can be highlighted and the map canvas automatically panned or zoomed
@@ -253,17 +253,17 @@ Thanks to the generous sponsorship by A.R.P.A Piemonte (one of the italian regio
 
 ![image23](images/entries/3932162893e8bb8d20d284d7a99ead2de9dac601.gif)
 
-This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
+Această funcționalitate a fost finanțată de [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Form widgets custom background color
 Thanks to the generous sponsorship by A.R.P.A Piemonte (one of the italian regional environmental agencies) we finally freed you from the boredom of gray backgrounds.
 
 ![image24](images/entries/8627ae1acd4ed30ae116e3b79679ecb5cad3241a.gif)
 
-This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
+Această funcționalitate a fost finanțată de [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Browse through features in the attribute table form view
 We\'ve added the possibility to browse through the attributes of features in a layer. This makes workflows for *asset management* a **lot** easier! You can:
 1. Define a filter
@@ -276,18 +276,18 @@ You can also pan and zoom to the geometry of the feature or highlight the curren
 
 ![image25](images/entries/f034aaf2a173be885b5f8fca36e3b577795ad1de.webp)
 
-This feature was funded by [regioDATA](https://www.regiodata-gmbh.de/)
+Această funcționalitate a fost finanțată de [regioDATA](https://www.regiodata-gmbh.de/)
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
 ## Procesare
 ### Feature: Add \"Save layer styles into GeoPackage\" option for Package Layers algorithm
 QGIS loves GeoPackage, so it\'s likely no surprise that every new QGIS version brings improvements to GeoPackage handling! In 3.8, we enhanced the \"Package Layers\" Processing algorithm so that it now allows embedding the current layer styles directly into the packaged layers!
 
 ![image26](images/entries/ebabefc4ccc4b71dcffda0508834b709fddec635.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Overlap Analysis
 This new Processing algorithm calculates the area and percentage cover by which features from an input layer are overlapped by features from a selection of overlay layers. New attributes are added to the output layer reporting the total area of overlap and percentage of the input feature overlapped by each of the selected overlay layers.
 
@@ -295,9 +295,9 @@ This is quite a common GIS task request, yet is full of traps for inexperienced 
 
 ![image27](images/entries/d265fa2b9bab9184d25244f0cd8aececb5136e66.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Allow rounding values in Extract Layer Extent
 We\'ve added a parameter to the Processing algorithm \'Extract Layer Extent\' to round the extent bounding box coordinates to a certain interval. While rounding, the bounding box will only ever be enlarged, to ensure it will always cover the input data set. (I.e. the x and y minimum coordinates are rounded down, and x and y maximum coordinates are rounded up).
 
@@ -312,9 +312,9 @@ In QGIS 3.8 we moved the existing \"double click column header\" to fill values 
 
 ![image29](images/entries/e20e687223b884d70737f09130f0e9792974eed6.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Generate raster XYZ tiles
 We\'ve added a brand-new algorithm to generate raster \"XYZ\" tiles using the current QGIS project. Tile images can be saved as individual images in directory structure, or as a single file in the \"MBTiles\" format.
 
@@ -322,7 +322,7 @@ We\'ve added a brand-new algorithm to generate raster \"XYZ\" tiles using the cu
 
 Această funcționalitate a fost finanțată de Hansestadt Herford, SWK mbH, Datenbankgesellschaft mbH
 
-This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Feature: Resurrection of the OTB provider
 QGIS 3.8 brings back the OTB Processing provider, which was removed in the QGIS 3.0 update. The provider was updated to use all the new goodies which are available in Processing in QGIS 3, and is once again available out-of-the-box for all your imagery analysis requirements!
 
@@ -340,9 +340,9 @@ Model variables are stored within an individual Processing model itself, and are
 
 ![image32](images/entries/dfd820ccdc499878a5d7c818f03cd2d586311945.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Improved modeler UI
 We\'ve added numerous usability improvements to the Processing Graphical Modeler, including
 - The addition of helpful tooltips when hovering over model components
@@ -350,15 +350,15 @@ We\'ve added numerous usability improvements to the Processing Graphical Modeler
 - Input parameter types are now shown in the title of the parameter definition dialog
 - The data type for numeric parameters may now be specified, allowing for integer-only inputs for models
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Flagging algorithms with known issues
 By default, we now hide 3rd party algorithms with known issues from the Processing toolbox, helping you avoid frustration (or misleading results) when running these algorithms. A new setting in the Processing options screen allows these algorithms to be shown, but they will be highlighted in the toolbox with a warning icon. Use at your own risk!
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Raster Boolean logical OR/AND algorithms
 In version 3.8 we\'ve added new algorithms which calculate the boolean OR or AND for a set of input rasters. For AND, if all of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, otherwise it will be set to 0. For OR, if ANY of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, else 0.
 
@@ -370,13 +370,13 @@ These new algorithms make for much simpler raster boolean logic calculation, wit
 
 Această funcționalitate a fost finanțată de SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: New input parameter types for Print Layouts and Print Layout Items
 By adding new parameter types for Print Layouts and Print Layout items, we\'ve opened up QGIS 3.8 to a whole new world of Processing algorithms which operate on print layouts. These new parameter types allow for creation of Processing algorithms and graphical models which prompt users to select a print layout and/or an item on the layout when run.
 
 Această funcționalitate a fost finanțată de SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: New parameter type for Map Scales
 We\'ve added a new parameter type specifically for map scales, QgsProcessingParameterScale. Scale values are evaluated using self.parameterAsDouble, which return the map scale denominator (matching the standard in other parts of the QGIS API).
 
@@ -384,13 +384,13 @@ Scale parameters are displayed to users using the standard QgsScaleWidget, which
 
 Această funcționalitate a fost finanțată de SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Improved \"point\" parameter handling
 We improved the workflow for algorithms with a \"point\" input parameter. When picking the point coordinate from a map you can now take advantage of QGIS snapping tools, allowing you to exactly match the point parameter to a feature\'s boundary.
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: New \"Print Layout Map Extent to Layer\" algorithm
 Taking advantage of the new facilities for accessing Print Layouts in Processing, we added a new algorithm which creates a polygon layer containing the extent of a print layout map item. The output layer also includes handy attributes specifying the map size (in layout units), scale and rotation.
 
@@ -400,7 +400,7 @@ If you\'ve ever wanted to create an advanced overview indicator, and the inbuilt
 
 Această funcționalitate a fost finanțată de SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Add X/Y fields to layer
 This new algorithm is a handy shortcut for adding X and Y (or latitude/longitude) fields to a point layer. You can even calculate the X/Y values using a different coordinate reference system from the layer (e.g. creating latitude/longitude fields for a layer in a projected CRS).
 
@@ -408,7 +408,7 @@ This new algorithm is a handy shortcut for adding X and Y (or latitude/longitude
 
 Această funcționalitate a fost finanțată de SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: \"Join attributes by nearest\" algorithm
 You can now perform K-nearest neighbour joins from the Processing toolbox!
 
@@ -418,9 +418,9 @@ By default only the single nearest feature is joined, but optionally the join ca
 
 ![image35](images/entries/f78e2f7a712f8a5cc1d5e9e20b4bb378598c1180.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Grass r.geomorphon algorithm
 The upstream GRASS team has been hard at work creating a new GRASS module for terrain analysis --- \"r.geomorphon\". In 3.8 we expose their efforts via a new Processing tool, which calculates geomorphons (terrain forms) and associated geometry using a machine learning approach.
 
@@ -440,25 +440,25 @@ We\'ve added overlay layer fields prefix parameter for the following algorithms:
 
 This can come in very handy to avoid arbitrary colliding field renaming when merging layers.
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://imhere-asia.com/)
 ## Navigatorul
 ### Feature: Direct access to sheets from XLSX/ODS files
 QGIS 3.8 brings even more power to the browser panel, and now displays all sheets from spreadsheet files (e.g. Microsoft Excel and LibreOffice calc files) in the browser file tree.
 
 ![image38](images/entries/f311137d05c73b9ba673d6b68669b7117589dacd.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Generalități
 ### Feature: QGIS projects inside geopackage files
 Did we already say that QGIS loves GeoPackage? Need any more proof of this? Well, in QGIS 3.8, we\'ve added to ability to store QGIS projects directly inside GeoPackage files! Now you can create a totally self-contained GeoPackage which embeds a QGIS Project AND all the data used by the project. (Let\'s see Shapefiles match that one!)
 
 ![image39](images/entries/8750f1c2e3c3919926fd2cb97488da071f7efc85.webp)
 
-This feature was funded by [QCooperative](https://www.qcooperative.net)
+Această funcționalitate a fost finanțată de [QCooperative](https://www.qcooperative.net)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Much Improved Coordinate Transform Handling
 Thanks to underlying work from the tireless PROJ and GDAL teams, QGIS now sports many huge improvements in geodetic and transformation capabilities! Highlights include:
 - The PROJ CRS database is now used to populate QGIS\' CRS selection lists, removing the custom database we used in previous releases. This means that ALL responsibility for CRS definitions and updating these sit were they belong, upstream in the PROJ library \-- and consequently you can expect to see QGIS CRS definitions being a closer match to the official definitions, and newer CRS definitions will be added much faster than in previous releases.. This change also means we\'ll be an exact match for projection handling as all other open-source geospatial tools which have completed the port to the latest PROJ version, such as GDAL 3.0.
@@ -471,9 +471,9 @@ Thanks to underlying work from the tireless PROJ and GDAL teams, QGIS now sports
 
 A lot of this is only possible thanks to improvements in the underlying PROJ and GDAL libraries, which landed as a result of the GDAL \"barn raising\" effort. On the QGIS side, it was ONLY possible thanks to funding from the Australian ICSM.
 
-This feature was funded by [ICSM](https://www.icsm.gov.au/)
+Această funcționalitate a fost finanțată de [ICSM](https://www.icsm.gov.au/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Furnizorii de Date
 ### Feature: postgres provider: add support for generated identity columns
 Această funcționalitate a fost dezvoltată de jef-n
@@ -497,7 +497,7 @@ SQL Server users rejoice: QGIS now fully supports curved geometry types (and oth
 
 In past QGIS versions, the SQL Server provider would only handle version 1 type geometries, and could only show straight feature types. In 3.8, we\'ve added full support for version 2 geometries. This change also allows full support for Z or M enabled geometry types! Additionally, we fixed several known issues with geography field types.
 
-This feature was developed by [Tamas Szekeres](https://github.com/szekerest)
+Această funcționalitate a fost dezvoltată de [Tamas Szekeres](https://github.com/szekerest)
 ### Feature: WMS: Define one filter for several layers
 Sometimes, you need to define the same filter for every selected layer when making a WMS request (e.g. when accessing user-specific data). In previous QGIS versions we had to define the filter using the format:
 
@@ -509,20 +509,20 @@ With QGIS 3.8, we\'ve simplified this, and now allow the filter format:
 
 Această funcționalitate a fost finanțată de VEOLIA
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Feature: Support for curves in DXF export
 You can now export curved geometry layers to DXF format without segmentizing the features --- no more loss of curves!
 
 ![image41](images/entries/d0543abc36459754e4e3630e3703f0f1169ba7b3.webp)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Această funcționalitate a fost finanțată de [Cantonul Schaffhausen](https://sh.ch/CMS/Webseite/Cantonul-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
 Această funcționalitate a fost dezvoltată de Jürgen Fischer în colaborare cu Matthias Kuhn
 ## QGIS Server
 ### Feature: Allow configuring size for GetLegendGraphics
 | For this release we improved how the legend for QGIS servers handles the size of symbols which are scaled by map units. | Whenever possible, the server will determine the legend size based on the map canvas and resolution. Even more, for cases where this information is not available in the GetLegend request, it is now possible to configure a *default scale* in the project, symbols in the legend will then be drawn in the size they will have when rendered at this scale.
 
-This feature was developed by [David Signer, OPENGIS.ch](https://www.opengis.ch)
+Această funcționalitate a fost dezvoltată de [David Signer, OPENGIS.ch](https://www.opengis.ch)
 ## Plugin-urile
 ### Feature: Support for plugin dependencies
 In QGIS 3.8, we\'ve introduced a long-sought-after feature for QGIS plugin developers: the ability to specify dependencies for your plugins.
@@ -542,20 +542,20 @@ When a plugin is installed, the metadata is parsed and a user will be prompted w
 
 ![image40](images/entries/28da67ad96ccda7a8a64b261db17bf33be4b3f69.gif)
 
-This feature was funded by [GISCE TI](https://gisce.net/)
+Această funcționalitate a fost finanțată de [GISCE TI](https://gisce.net/)
 
-This feature was developed by [Alessandro Pasotti](http://www.itopen.it/)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](http://www.itopen.it/)
 ## Programabilitate
 ### Feature: REGEXP SQL syntax support for spatialite provider and python connections
 We\'ve enabled REGEX to be used with the spatialite provider. (This comes in handy when setting filters!). We\'ve also added support for this syntax via any python connections made through Qgis.utils\'s \"spatialite_connection\" API - allowing you to use REGEXP in your SQL queries from within DB Manager.
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Această funcționalitate a fost dezvoltată de [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Feature: Nearest Neighbour search in QgsSpatialIndex
 We added API to allow accurate nearest neighbor search based on QgsGeometry to QgsGeometry searches via QgsSpatialIndex. In previous QGIS versions only point to geometry nearest neighbour searches were possible. But with this change, you can safely and accurately use QgsSpatialIndex to determine the nearest neighbours between any types of geometries.
 
-This feature was funded by [North Road](http://north-road.com)
+Această funcționalitate a fost finanțată de [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Această funcționalitate a fost dezvoltată de [Nyall Dawson (North Road)](http://north-road.com)
 ## Corecții Importante
 ### Funcționalitate: Corecții efectuate de Alessandro Pasotti
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.4 backport commit (GitHub) |
@@ -594,9 +594,9 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 | Value relation widget settings lost on import of layer definition file | [#30115](https://github.com/qgis/QGIS/issues/30115) | [PR #30151](https://github.com/qgis/QGIS/pull/30151) | Riscant? |
 | Unable to add new features in QGIS for PostGIS table using sequence for gid. Data type serial: \'integer overflow\' | [#30041](https://github.com/qgis/QGIS/issues/30041) | [PR #30184](https://github.com/qgis/QGIS/pull/30184) | Îndeplinit |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Această funcționalitate a fost dezvoltată de [Alessandro Pasotti](https://www.itopen.it/)
 ### Funcționalitate: Corecții efectuate de Alexander Bruy
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -616,9 +616,9 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | Fixed table not working under User defined filter (SAGA) | [#29999](https://github.com/qgis/QGIS/issues/29999) | [PR #30001](https://github.com/qgis/QGIS/pull/30001) | Îndeplinit |
 | DB Manager Versioning: \_current view lacks primary key | [#25888](https://github.com/qgis/QGIS/issues/25888) | [PR #30045](https://github.com/qgis/QGIS/pull/30045) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Alexander Bruy](https://bruy.me/)
+Această funcționalitate a fost dezvoltată de [Alexander Bruy](https://bruy.me/)
 ### Funcționalitate: Corecții efectuate de Victor Olaya
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -633,7 +633,7 @@ This feature was developed by [Alexander Bruy](https://bruy.me/)
 | Corecții legate de interfața batch, care nu este legată de niciun raport de eroare. Acestea sunt regresii introduse în schimbările recente, identificate în timpul lucrului la o altă problemă | [PR #29948](https://github.com/qgis/QGIS/pull/29948) |  |  |
 |  | [PR #29950](https://github.com/qgis/QGIS/pull/29950) |  |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Această funcționalitate a fost dezvoltată de Victor Olaya
 ### Funcționalitate: Corecții efectuate de Even Rouault
@@ -649,17 +649,17 @@ Această funcționalitate a fost dezvoltată de Victor Olaya
 | Multiple issues and deadlocks with WFS | [#29258](https://github.com/qgis/QGIS/issues/29258) | [PR #30026](https://github.com/qgis/QGIS/pull/30026) | Îndeplinit |
 | WFS provider: Avoid dangling download progress dialog | [PR #30039](https://github.com/qgis/QGIS/pull/30039) | [PR #30039](https://github.com/qgis/QGIS/pull/30039) | Îndeplinit |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](https://www.spatialys.com/)
+Această funcționalitate a fost dezvoltată de [Even Rouault](https://www.spatialys.com/)
 ### Funcționalitate: Corecții efectuate de Denis Rouzaud
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
-| Probleme în straturile încapsulate | [#29678](https://github.com/qgis/QGIS/issues/29678) | [PR #9993](https://github.com/qgis/QGIS/pull/9993) and [PR #10004](https://github.com/qgis/QGIS/pull/10004) |  |
+| Probleme în straturile încapsulate | [#29678](https://github.com/qgis/QGIS/issues/29678) | [PR #9993](https://github.com/qgis/QGIS/pull/9993) și [PR #10004](https://github.com/qgis/QGIS/pull/10004) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+Această funcționalitate a fost dezvoltată de [Denis Rouzaud](https://www.opengis.ch/)
 ### Funcționalitate: Corecții efectuate de Peter Petrik
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -671,9 +671,9 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 | Closing Vertex Edititor crashes the app | [#30028](https://github.com/qgis/QGIS/issues/30028) | [PR #30030](https://github.com/qgis/QGIS/pull/30030) | DE EFECTUAT |
 | Detached 3D view crash \[macOS\] | [#29169](https://github.com/qgis/QGIS/issues/29169) | Nu se poate replica |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+Această funcționalitate a fost dezvoltată de [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Funcționalitate: Corecții efectuate de Loïc Bartoletti
 | Titlul Erorii | URL issues.qgis.org (dacă a fost raportată) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -682,8 +682,8 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 | Improve the advanced digitizing by angle | [#30133](https://github.com/qgis/QGIS/issues/30133) | nu este o eroare |  |
 | Fix reshape for snapped point with Z | [PR #30108](https://github.com/qgis/QGIS/pull/30108) |  |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Această funcționalitate a fost finanțată de [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://oslandia.com/en/)
+Această funcționalitate a fost dezvoltată de [Loïc Bartoletti](https://oslandia.com/en/)
 
 {{<content-end >}}

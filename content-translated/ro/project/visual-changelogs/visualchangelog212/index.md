@@ -68,7 +68,7 @@ QGIS este un soft gratuit iar dvs. nu aveți obligația de a plăti pentru folos
 ### Funcționalitate: Un nou ecran de întâmpinare
 În loc de a afișa un simplu canevas alb, QGIS vă va prezenta de acum o listă a proiectelor cele mai recente, însoțite de miniaturi, pentru a face rapidă și ușoară revenirea la activitatea efectuată în ultima sesiune.
 
-**This feature was developed by:** Matthias Kuhn at [OPENGIS.ch](http://www.opengis.ch)
+**Această funcționalitate a fost dezvoltată de:** Matthias Kuhn at [OPENGIS.ch](http://www.opengis.ch)
 
 ![image11](images/entries/30f2ab32f4ae0d135a26b6a6ddb6705f0f6dd74a.webp)
 ### Funcționalitate: Îmbunătățiri aduse calității codului
@@ -78,13 +78,13 @@ Prin utilizarea bibliotecii de curățare a adreselor, sute de pierderi de memor
 ### Funcționalitate: Editor de setări avansat
 Un nou panou a fost adăugat în dialogul setărilor, permițându-vă să editați oricare dintre opțiunile deja definite în profilul dvs. Acest lucru este destinat doar utilizatorilor avansați, deoarece ați putea experimenta un comportament neașteptat din partea QGIS, dacă modificați aceste setări fără a înțelege pe deplin ceea ce faceți.
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Această funcționalitate a fost dezvoltată de:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 
 ![image13](images/entries/6d59988bf11726192579915cff18f2b81e3f9c8f.webp)
 ### Funcționalitate: Grupuri cu Excludere Reciprocă în Arborele Straturilor
 Cu această funcționalitate puteți crea grupuri de straturi, în care doar un singur strat să poată fi vizibil la un moment dat. Funcționalitatea poate fi aplicată individual grupurilor din arborele cu straturi, care apare la accesarea meniului contextual.
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**Această funcționalitate a fost dezvoltată de:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
 
 **Această funcționalitate a fost finanțată de:** Regiunea Toscana (Italia) - SITA (CIG: 63526840AE)
 
@@ -100,7 +100,7 @@ QGIS 2.12 now supports user interface theming support which you can use to custo
 
 Find out more about theming support by reading [Nathan Woodrow\'s blog article](http://nathanw.net/2015/08/29/ui-theme-support-now-core-in-qgis/).
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image16](images/entries/2ec302b12a3b0db8e7a66465afccb227bc543a3e.webp)
 ### Funcționalitate: Noi funcții pentru expresii în 2.12
@@ -134,7 +134,7 @@ Va produce o etichetă care arată în felul următor:
 
 You can manage global variables from the `Settings -> Options` menu, and project level variables from `Project properties` (including adding your own custom variables).
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image18](images/entries/19aca1d680543a4013c53ba80406bdd5ebff88c5.webp)
 ## Instrumentele de analiză
@@ -147,9 +147,9 @@ This new tool in qgis_analysis library is able to take several rasters as input 
 - să decupeze regiunea de interes
 - să rescaleze valorile atunci când este necesar
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Kartoza](http://kartoza.com/)
+**Această funcționalitate a fost dezvoltată de:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Kartoza](http://kartoza.com/)
 
-**This feature was funded by:** [DFAT](http://dfat.gov.au) for the [InaSAFE project](http://inasafe.org/)
+**Această funcționalitate a fost finanțată de:** [DFAT](http://dfat.gov.au) for the [InaSAFE project](http://inasafe.org/)
 
 ![image2](images/entries/c613bb210ba0e85eb3b479ab79cd895827c22602.webp)
 ### Funcționalitate: Plugin-urile de Verificare a Geometriei și de Acroșare a Geometriei
@@ -157,9 +157,9 @@ Două plugin-uri noi (pe care trebuie să le activați manual în managerul de p
 
 Cu ajutorul instrumentului de **Acroșare Geometrie**, puteți alinia marginile și vertecșii unui strat vectorial față de marginile și vertecșii celui de-al doilea strat, folosind o toleranță definită de utilizator.
 
-**This feature was developed by:** Sandro Mani at [Sourcepole AG](http://www.sourcepole.ch/)
+**Această funcționalitate a fost dezvoltată de:** Sandro Mani at [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
+**Această funcționalitate a fost finanțată de:** [Cantonul Solothurn](http://www.sogis.so.ch/)
 
 ![image3](images/entries/319136e65a51c7a8d76adac7aef89806db170c2e.webp)
 ## Opțiunile Aplicației și ale Proiectului
@@ -192,14 +192,14 @@ PKI example docs: <https://github.com/dakcarto/QGIS-Enhancement-Proposals/blob/a
 
 **Această funcționalitate a fost dezvoltată de:** Larry Shaffer
 
-**This feature was funded by:** [Boundless Spatial, Inc.](http://boundlessgeo.com/)
+**Această funcționalitate a fost finanțată de:** [Boundless Spatial, Inc.](http://boundlessgeo.com/)
 
 ![image4](images/entries/d6c9305a8dcaea3a5a6c039dec40d50e0caf23ff.webp)
 ## Navigatorul
 ### Funcționalitate: Îmbunătățiri aduse conexiunilor PostGIS din navigator
 Navigatorul QGIS suportă de acum funcționalități suplimentare pentru conexiuni PostGIS, inclusiv capacitatea de a **crea, redenumi și șterge scheme**, **suport pentru redenumire și trunchiere straturi** și **copiere tabele dintr-o schemă în alta**.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 **Table copying by:** Jürgen Fischer at [norBIT GmbH](http://www.norbit.de/)
 
@@ -225,7 +225,7 @@ S-au adus o serie de îmbunătățiri instrumentului DB Manger:
 ### Funcționalitate: Formatări condiționale pentru celulele tabelelor cu atribute
 This is a major improvement to QGIS\'s attribute table rendering support. You can now style table cells according to rules. For example you can colour all cells with a population of less than 50 000 in red. The option is enabled via a new icon on the table toolbar at the top right of the attribute table window. You can read more about this feature on [Nathan Woodrow\'s blog article](http://nathanw.net/2015/08/20/mixing-a-bit-of-excel-into-qgis-conditional-formatted-table-cells/).
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image8](images/entries/ae9afefda043d31ef7718528d506d98e90e7a1f7.webp)
 ### Funcționalitate: Suport pentru căile relative ale widget-urilor
@@ -236,9 +236,9 @@ Pentru următoarele tipuri de widget-uri de editare:
 
 În cazul în care calea este selectată cu exploratorul de fișiere se află în același director cu al fișierului proiectului .qgs, atunci ea va fi convertită în căi relative. Acest lucru crește portabilitatea unui proiect QGIS care are atașate informații multimedia.
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Această funcționalitate a fost dezvoltată de:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 
-**This feature was funded by:** [Alta ehf](http://www.alta.is/)
+**Această funcționalitate a fost finanțată de:** [Alta ehf](http://www.alta.is/)
 
 ![image9](images/entries/fcf703990b5cb743ffa5cc7778cb151022ff2d20.webp)
 ## Digitizarea
@@ -251,9 +251,9 @@ In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but
 
 În plus, multe dintre instrumentele de editare și de modificare a geometriei au fost actualizate, pentru a funcționa corect cu straturile care conțin z sau m dimensiuni.
 
-**This feature was developed by:** Marco Hugentobler at [Sourcepole AG](http://www.sourcepole.ch/)
+**Această funcționalitate a fost dezvoltată de:** Marco Hugentobler at [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
+**Această funcționalitate a fost finanțată de:** [Cantonul Solothurn](http://www.sogis.so.ch/)
 
 ![image10](images/entries/215ead2dd5e43e394d47169a7fd82aa5cc08b6b6.webp)
 ## Etichetare
@@ -262,19 +262,19 @@ De acum, este posibilă specificarea unui cvadrant definit cu ajutorul datelor, 
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image19](images/entries/27a58b65cf449505c92cc6c8470a93d1f09893a1.webp)
 ### Funcționalitate: Desenarea doar a etichetelor care se potrivesc în interiorul poligoanelor
 Straturilor poligoanelor li s-a adăugat opțiunea de desenare a etichetelor care se încadrează complet în entitățile poligonale.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image20](images/entries/5c8461abe3aa5483c3243c0f145940b0d5fd1310.webp)
 ### Funcționalitate: Prioritate de control a obstacolelor de etichetare
 In 2.12 it\'s now possible to specify the priority for labeling obstacles. This allows you to make labels prefer to overlap features from certain layers rather than others. The priority can also be data defined so that certain features are more likely to be covered than others. You can also use data defined expressions or fields to control whether a specific feature in layer will act as an obstacle for labels.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image21](images/entries/f07a082bd4e62f059788c18a9de353107b8bdc44.webp)
 ### Funcționalitate: Noi opțiuni pentru controlul modului în care straturile poligonale pot acționa ca obstacole
@@ -282,7 +282,7 @@ New options have been added to control how labels should be placed to avoid over
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image22](images/entries/e37943c654080e33219acb5e519970cf748c87bf.webp)
 ### Funcționalitate: Control definit cu ajutorul datelor, pentru prioritatea etichetelor
@@ -290,7 +290,7 @@ Această caracteristică, solicitată adesea, permite utilizatorilor setarea pri
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image23](images/entries/bd185cde38420f50fb540d742d178768d28ac577.webp)
 ### Funcționalitate: Opțiuni doar pentru straturile obstacol
@@ -302,7 +302,7 @@ Note, that it is also possible to both label a layer, but also act as obstacle l
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image24](images/entries/de1eae1359ce92045d51c6fa9bc3f014a3f3ae67.webp)
 ### Funcționalitate: Etichetare bazată pe reguli
@@ -310,7 +310,7 @@ Etichetele de pe entități pot fi de acum stilizate folosind reguli, pentru a a
 
 See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**Această funcționalitate a fost dezvoltată de:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
 
 **Această funcționalitate a fost finanțată de:** Regiunea Toscana (Italia) - SITA (CIG: 63526840AE)
 
@@ -321,29 +321,29 @@ You can now set a field or expression as the \"page name\" for atlas composition
 
 Numele paginii poate fi, de asemenea, utilizat în cadrul expresiilor de simbolizare și de etichetare, pentru a permite o stilizare avansată a entităților Atlasului.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image26](images/entries/bbf6147ef8be9d209fa188d6c524bce9d13d5ba8.webp)
 ### Funcționalitate: Format personalizat pentru adnotările grilelor
 Adnotările din grila hărții din Compozitor pot fi de acum stilizate în formate personalizate, care sunt evaluate cu ajutorul motorului de expresii. De acum puteți utiliza orice format de numerotare pe care îl necesită grila hărții!
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image27](images/entries/a6cd03594ca802015ef4a5bf7806cc1ce291214b.webp)
 ### Funcționalitate: Manipulare și împachetare automată a textului multiliniilor în tabelele de atribute ale compozitorului
 Tabela de atribute din compozitor include de acum suport complet pentru șirurile de caractere extinse pe linii multiple. De asemenea, a fost  adăugat controlul asupra alinierii verticale a textului dintr-o celulă, împreună cu opțiuni pentru încadrarea textului într-un anumit număr de caractere, sau pentru calcularea în mod automat a încadrării textului pentru a se potrivi cu dimensiunea coloanelor. Pentru a forța aranjarea automată a textului la înălțimea rândului, setați lățimea coloanei la o dimensiune fixă.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**Această funcționalitate a fost finanțată de:** [Orașul Uster](http://gis.uster.ch/)
 
 ![image28](images/entries/db66b56f79949779ea32126bd22f2f1c9d4b55e6.webp)
 ### Funcționalitate: Personalizare avansată a culorii de fundal din celule
 Această modificare permite utilizatorilor să stabilească diferite culori pentru rânduri și coloane alternative, pentru primele/ultimele rânduri/coloane, din tabela de atribute a compozitorului.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [Ville de Morges](http://www.morges.ch/)
+**Această funcționalitate a fost finanțată de:** [Orașul Morges](http://www.morges.ch/)
 
 ![image29](images/entries/68266f6b11599dfa226952455ca150448a5d082a.webp)
 ### Funcționalitate: S-a adăugat o opțiune de potrivire a conținutului la pagină, și opțiuni de decupare a exporturilor după conținut
@@ -357,13 +357,13 @@ A fost adăugat un nou dialog cu opțiuni de export pentru a facilita exportul i
 
 **Sponsored by:** [NIWA](https://www.niwa.co.nz/)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image30](images/entries/38572cf4aa662cc4463c2a29f3d5ca38aa382632.webp)
 ### Funcționalitate: Forțarea randării straturilor vectoriale ca imagini raster
 A new option has been added under the layer properties, rendering tab to force a vector layer to render as a raster. Extremely detailed layers (eg polygon layers with a huge number of nodes) can cause composer exports in PDF/SVG format to be huge as all nodes are included in the exported file. This can also make the resultant file very slow to work with or open in external programs. Now, you can force these layers to be rasterised on a layer-by-layer basis, so that the exported files won\'t have to include all the nodes contained in these layers. The end result is smaller file sizes and PDFs/SVGs which are faster to open.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image31](images/entries/0127fe10ecae31dbcd133492c93f33b0d569dcba.webp)
 ### Funcționalitate: Control definit cu ajutorul datelor, pentru straturile hărții și pentru presetările stilului
@@ -371,9 +371,9 @@ Un nou control definit cu ajutorul datelor a fost adăugat pentru straturile har
 
 Using this control over map layers allows for \"layer-based\" atlases, where the map layers should change between atlas pages instead of or in combination with the map extent changing. An example could be an atlas looping over different administrative units and at the same time looping over several historic maps or aerial images.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**Această funcționalitate a fost finanțată de:** [Orașul Uster](http://gis.uster.ch/)
 
 ![image32](images/entries/a8dc3b35df4020897e39c81bd22a469ab5ea6225.webp)
 ### Funcționalitate: Opțiune de a ascunde paginile din vizualizare/export
@@ -381,7 +381,7 @@ There\'s now an option to hide the display of pages while editing and exporting 
 
 **Sponsored by:** [NIWA](https://www.niwa.co.nz/)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 ## Plugin-urile
 ### Funcționalitate: Actualizare plugin GRASS
 Plugin-ul GRASS a fost actualizat pentru versiunea 7. Straturile GRASS pot fi accesat și încărcate din navigatorul QGIS sau din panoul  navigatorului. Datele vectoriale GRASS pot fi editate direct în QGIS. Proiectul conține următoarele pachete de lucru:
@@ -394,18 +394,18 @@ Atât utilizatorii GRASS 6, cât și utilizatorii GRASS 7, vor descoperi că int
 
 See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/) and [progress report](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/progress.html)
 
-**This feature was developed by:** [Radim Blazek](http://www.gissula.eu/)
+**Această funcționalitate a fost dezvoltată de:** [Radim Blazek](http://www.gissula.eu/)
 
-**This feature was funded by:** Crowd funding, see [project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
+**Această funcționalitate a fost finanțată prin:** Multifinanțare, a se vedea [pagina proiectului](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
 
 ![image33](images/entries/fb9ac25e9ca6c5e4030167e289435e995f5af8f5.webp)
 ## Programabilitate
 ### Feature: Map tools moved from app-\>gui
 Această modificare permite reutilizarea instrumentelor hărții din cadrul scrípturilor PyQGIS și al plugin-urilor Python.
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Această funcționalitate a fost dezvoltată de:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+**Această funcționalitate a fost finanțată de:** [SIGE](http://www.sige.ch/)
 ### Funcționalitate: Editare straturi prin intermediul \`with edit(layer):\`
 Exemplu:
 
@@ -418,7 +418,7 @@ Exemplu:
     
 Aceasta va apela în mod automat commitChanges() la final. Dacă nu apare nici o excepție, modificările vor suferi un rollBack() 
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Această funcționalitate a fost dezvoltată de:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 ### Funcționalitate: Un nou API pentru motorul de etichetare (QgsLabelingEngineV2)
 Ideea este de a face motorul mai flexibil, comparativ cu implementarea QgsPalLabeling:
 > - abstractizarea utilizării a etichetelor cu text / diagramelor, față de motor în sine
@@ -429,19 +429,19 @@ Ideea este de a face motorul mai flexibil, comparativ cu implementarea QgsPalLab
 
 See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**Această funcționalitate a fost dezvoltată de:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
 
 **Această funcționalitate a fost finanțată de:** Regiunea Toscana (Italia) - SITA (CIG: 63526840AE)
 ### Funcționalitate: Deschidere scrípturi într-un editor extern
 Programatorii care preferă Python se vor bucura - scrípturile se pot deschide de acum într-un editor extern, folosind butonul nou adăugat în consolă.
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image34](images/entries/78acf0058f4306bf408a58df3762dff5986633a7.webp)
 ### Funcționalitate: Noi clase pentru programele PyQGIS
 O nouă clasă QgsStringUtils a fost adăugată, ceea ce permite scrípturilor PyQGIS să utilizeze noii algoritmi de potrivire fuzzy adăugați în 2.12. Acestea includ funcțiile pentru găsirea distanței de editare Levenshtein dintre două șiruri și pentru calcularea reprezentării fonetică, soundex, a unui șir. Performanța acestor algoritmi a fost bine optimizată, astfel încât aceștia să fie gata pentru a începe potrivirea fuzzy pentru milioane de șiruri de caractere!
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 ## QGIS Server
 ### Funcționalitate: API Python pentru Serverul QGIS
 QGIS Server este împachetat de acum ca o bibliotecă, având un API incipient (dar în creștere) și legături Python. Cu noul API avem un set de teste Python pentru componenta principală a serverului și pentru plugin-urile serverului. Invocarea serverului din Python are loc astfel:
@@ -461,16 +461,16 @@ See also [QGIS as OGC data server](http://docs.qgis.org/2.18/en/docs/user_manual
 
 În captura de ecran veți vedea Clientul Web QGIS în partea stângă, cu funcționalitatea exportului DXF (utilizarea serverului QGIS), și aceeași extindere privită în Autodesk TrueView, în dreapta.
 
-**This feature was developed by:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
+**Această funcționalitate a fost dezvoltată de:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**Această funcționalitate a fost finanțată de:** [Orașul Uster](http://gis.uster.ch/)
 
 ![image35](images/entries/beb2e9c00102c67ae703eac097ffba8866379609.webp)
 ## Simbologie
 ### Funcționalitate: Export de miniaturi din managerul de stiluri
 Managerul de stiluri vă permite de acum exportarea de miniaturi pentru stilul selectat, fie ca SVG, fie ca imagini PNG.
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image36](images/entries/8861a040751804f6c2691ee4d93d410efd6d99ac.webp)
 ### Funcționalitate: O nouă opțiune pentru a limita dimensiunea, în mm, la utilizarea unităților de mărime ale hărții
@@ -482,7 +482,7 @@ Anterior, era disponibilă numai posibilitatea de a limita gama scărilor, pentr
 - Permite setarea transparenței pentru culori
 - Modul de plasare al inelelor concentrice (permite o afișare mai compactă, numai cu inele)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image38](images/entries/33b5f15429279a7ec75dd1f6a2e01b1a7df789ca.webp)
 ### Funcționalitate: Toate gamele de culori pot fi de acum editate
@@ -500,7 +500,7 @@ These issues have been fixed in QGIS 2.12, but as a result you may need to updat
 ### Funcționalitate: S-au adăugat pixelii ca opțiune pentru toate unitățile de mărime pentru simbologie
 For all size input widgets there is now a third option \"pixel\", next to \"mm\" and \"map units\". This concerns symbol sizes, stroke widths, dash sizes, offsets, etc. This may help, if you design for screens and not for print output.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Această funcționalitate a fost dezvoltată de:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image41](images/entries/cbc683061bcc06764361ab79874f1020ccfe8eb7.webp)
 

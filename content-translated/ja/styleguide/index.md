@@ -71,12 +71,12 @@ type: page
 
 [`PNG white 128px`](visual/qgis-icon-white128.png) [`PNG white 64px`](visual/qgis-icon-white64.png) [`PNG white 32px`](visual/qgis-icon-white32.png)
 ## タイポグラフィ
-### トレノフォント
-Trueno is a free Font Library serif font. In order to embed it, please use
+### Trueno フォント
+TruenoはFont Libraryの無料セリフフォントです。埋め込むには、以下をご使用ください。
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
-in the site header
+サイトのヘッダ内に
 
 {{<table >}}
 

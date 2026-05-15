@@ -11,8 +11,8 @@ heroImage: ''
 tags:
 - education
 - argentina
-- case-study
-- showcase
+- ケーススタディ
+- ショーケース
 thumbnail: argentinia_thumbnail.png
 title: 'QGIS at high school: the urban green spaces in Rada Tilly coastal town, Chubut
   province, Argentina'

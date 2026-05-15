@@ -8,7 +8,7 @@ type: page
 ---
 {{<content-start >}}
 # 商用サポート
-Do you plan to use QGIS in your company or organization, but worry about whether there is commercial support available? Are you looking for a developer to add features you need or fix bugs you encounter? Here is an alphabetical list of support contractors.
+企業や組織でQGISの導入を検討しているが、商用サポートが受けられるか不安な方へ。必要な機能の追加や発生したバグの修正を依頼できる開発者をお探しですか？以下に、サポート業者をアルファベット順に掲載しています。
 
 Organizations marked with an <span class="tag is-success"><span class="icon"><i class="fas fa-check-circle"></i></span><span>Active Contributor</span></span> badge have contributed to QGIS within the last 12 months and are also listed in our [Contributing Organizations](/community/contributors/organisations/) page. Organizations with an <span class="tag is-warning"><span class="icon"><i class="fas fa-clock"></i></span><span>Inactive Contributor</span></span> badge have contributed to QGIS in the past but not recently.
 
@@ -16,12 +16,12 @@ Organizations marked with an <span class="tag is-success"><span class="icon"><i 
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### Note
-We take responsibility for the accuracy, reliability or completeness of the provided information for **Core contributors** only.
+ 提供情報の正確性・信頼性・完全性については、 **コアコントリビューター** のみを対象として責任を負います。
 
 {{<rich-content-end >}}
 
 {{<rich-box-end >}}
-## Commercial Support Providers
+## 商用サポート提供者
 {{<commercial-support dataFile="core_contributors" >}}
 
 {{<commercial-support dataFile="contributors" >}}
