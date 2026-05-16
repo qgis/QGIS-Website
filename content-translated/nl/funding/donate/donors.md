@@ -8,9 +8,9 @@ type: page
 ---
 {{<content-start >}}
 # Donoren
-Donations can be of any amount, via our bank account, Stripe or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help to reach important project goals!
+Elk bedrag kan gedoneerd worden via onze bankrekening, Stripe of Paypal (informatie is beschikbaar op de pagina [Donaties]({{< ref "/funding/donate.md" >}})). Zelfs een kleine donatie kan het verschil maken en helpen om belangrijke projectdoelen te bereiken!
 
-If you wish to send us a larger donation, you are strongly encouraged to use the bank account or stripe (if you want to do credit card payments) rather than PayPal (they have higher payment fees and an unnecessary currency conversion is involved). Please contact [finance@qgis.org](mailto:finance@qgis.org) if you want to pay larger amounts with credit cards through Stripe. We can send you a payment link and/or invoice.
+Wanneer u ons een grotere donatie wilt sturen, wordt u sterk aangeraden dit te doen via onze bankrekening of Stripe (als u met creditcard wilt betalen), in plaats van via PayPal (zij rekenen hogere overschrijvingskosten en een onnodige valutawissel is hierbij nodig). Neem contact op met [finance@qgis.org](mailto:finance@qgis.org) als u grotere bedragen wilt betalen met creditcards via Stripe. We kunnen u een link voor de betaling sturen en/of een factuur.
 
 Donaties aan QGIS zijn in verscheidene landen af te trekken van de belastingen. Vraag uw lokale belastingkantoor naar de details.
 

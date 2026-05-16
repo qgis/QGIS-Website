@@ -10,7 +10,8 @@ draft: false
 heroImage: img/project.jpg
 og_image: img/project.jpg
 sidebar: true
-subtitle: Giving the power of spatial visualization and decision making tools to everyone
+subtitle: Mettere a disposizione di tutti gli strumenti per la visualizzazione spaziale
+  e il processo decisionale
 title: QGIS overview
 type: page
 

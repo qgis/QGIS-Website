@@ -15,14 +15,14 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Collaboratori sostenitori
-This list highlights individuals and organizations whose valuable contributions to QGIS may not be reflected in commit histories—such as community support, outreach, or other behind-the-scenes efforts. If you believe your work should be recognized here, please review our [application guidelines](/community/contributors/application-guidelines/) and fill out the [QGIS Supporting Contributors Application form](https://forms.gle/wZr4EfCjqPWGaoq37). The QGIS Project Steering Committee (PSC) reviews submissions on a monthly basis.
+Questo elenco mette in evidenza persone e organizzazioni il cui prezioso contributo a QGIS potrebbe non essere visibile nella cronologia dei commit, come ad esempio il supporto alla comunità, le attività di divulgazione o altri sforzi dietro le quinte. Se ritieni che il tuo lavoro debba essere riconosciuto in questa sede, ti invitiamo a consultare le nostre [linee guida per la candidatura](/community/contributors/application-guidelines/) e a compilare il [modulo di candidatura per i contributori di supporto a QGIS](https://forms.gle/wZr4EfCjqPWGaoq37). Il Comitato direttivo del progetto QGIS (PSC) esamina le candidature su base mensile.
 
 <div style="text-align:center;">
   <a href="/community/contributors/application-guidelines/" class="button is-success is-outlined" style="margin-right: 1rem;">
-    📋 Application Guidelines
+    📋 Linee guida per la candidatura
   </a>
   <a href="https://forms.gle/wZr4EfCjqPWGaoq37" class="button is-success">
-    🚀 Submit Your Contribution
+    🚀 Invia il tuo contributo
   </a>
 </div>
 

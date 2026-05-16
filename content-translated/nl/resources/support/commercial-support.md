@@ -15,7 +15,7 @@ Organizations marked with an <span class="tag is-success"><span class="icon"><i 
 {{<rich-box-start icon="🦸" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### Opmerking
 We take responsibility for the accuracy, reliability or completeness of the provided information for **Core contributors** only.
 
 {{<rich-content-end >}}

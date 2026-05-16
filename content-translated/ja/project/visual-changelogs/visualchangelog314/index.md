@@ -77,7 +77,7 @@ Postgresラスタの時間機能の統合を追加。
 
 この機能は ARPA Piemonte によって資金提供されました
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### 機能: QGISプロジェクトの時間設定
 この機能はプロジェクトの時間設定機能を追加します。
 
@@ -156,7 +156,7 @@ If we generate contour lines on input raster blocks with the same size as our ou
 
 ![image14](images/entries/77861880-17111b00-7218-11ea-95ba-410c97830b93.webp)
 
-This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
+この機能は [Martin Dobias](https://api.github.com/users/wonder-sk) によって開発されました
 ### 機能: ラスタイメージマーカーとラスタ塗りつぶしレイヤシンボロジにパーセンテージの大きさ単位を追加
 According to the [Feature Request](https://github.com/qgis/QGIS/issues/30057) this patch adds a new percentage (of original image size) value for size units of **Raster Image Marker** and **Raster fill** (by [nirvn](https://github.com/qgis/QGIS/pull/34869#issuecomment-595090465) suggestion) layers.
 
@@ -775,7 +775,7 @@ This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuh
 
 ![image75](images/entries/76504669-70233580-6448-11ea-9194-173ae0d344ce.gif)
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### 機能: 子フォームで現在の親フォームの値を取得する
 This feature adds the option of using current values from the \"parent\" form in filter expressions (for now only in value-relation widgets: to be used in drill-down filters).
 
@@ -1233,7 +1233,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 ### 機能: PG: 外部テーブルを見えるようにする
 Expose foreign tables to the browser and data source select dialog.
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### Feature: PG raster expose set filter to app
 This should be the final change to the PG raster data provider and exposes the set filter options:
 - Filter can be set in the data source dialog (as for vector layers)

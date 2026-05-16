@@ -2,7 +2,8 @@
 HasBanner: false
 draft: false
 sidebar: true
-subtitle: Giving the power of spatial visualization and decision making tools to everyone
+subtitle: Mettere a disposizione di tutti gli strumenti per la visualizzazione spaziale
+  e il processo decisionale
 title: Fondazione QGIS
 type: page
 

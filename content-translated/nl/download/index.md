@@ -25,7 +25,7 @@ Onze allerbeste groeten!
 
 {{<paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
 
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
+Donaties aan QGIS zouden in sommige landen af te trekken zijn van de belastingen. Vraag uw lokale belastingkantoor naar de details. Als u als Duits bedrijf of organisatie uw gift wilt aftrekken van de belasting, doneer dan via de [Duitse QGIS gebruikersgroep](https://qgis.de/doku.php/verein/spenden). Zij kunnen u, als een van belasting vrijgestelde Duitse vereniging, een bevestiging van de betaling verschaffen.
 
 {{<paragraph-end >}}
 
@@ -72,19 +72,19 @@ GNU/Linux is een gratis besturingssysteem, gebouwd op dezelfde principes als waa
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+[Linux installatie-instructies]({{< ref "resources/installation-guide#linux" >}})
 
 {{<platform-content-end >}}
 
 {{<platform-content-start platform="bsd" >}}
 ## BSD
-[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
+[BSD-installatie-instructies]({{< ref "resources/installation-guide#freebsd" >}})
 
 {{<platform-content-end >}}
 
 {{<platform-content-start platform="container" >}}
 ## Container-images
-[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+[Container-images Installatie-Instructies]({{< ref "resources/installation-guide#container-images" >}})
 
 {{<platform-content-end >}}
 
@@ -96,13 +96,13 @@ GNU/Linux is een gratis besturingssysteem, gebouwd op dezelfde principes als waa
 
 {{<platform-content-start platform="source" >}}
 ## Broncode
-QGIS is open source software available under the terms of the **GNU General Public License** meaning that its source code can be downloaded through 'tarballs' or the git repository.
+QGIS is open bron-software, beschikbaar onder de termen van de **GNU General Public License** wat betekent dat zijn broncode kan worden gedownload in 'tarballs' of vanuit de opslagplaats van Git.
 
-QGIS Source Code is available [here (latest release)](/downloads/qgis-latest.tar.bz2) and [here (long term release)](/downloads/qgis-latest-ltr.tar.bz2)
+QGIS broncode is  [hier (latest release)](/downloads/qgis-latest.tar.bz2) en [hier (long term release)](/downloads/qgis-latest-ltr.tar.bz2) beschikbaar.
 
 Bekijk de installatiegids om te zien hoe QGIS te compileren vanuit de bron voor de verschillende platforms: [hier](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-You can also obtain the source code by cloning or forking our [GitHub repository](https://github.com/qgis/QGIS).
+U kunt de broncode ook verkrijgen door onze [opslagplaats van GitHub](https://github.com/qgis/QGIS) te klonen of te forken.
 
 {{<platform-content-end >}}
 

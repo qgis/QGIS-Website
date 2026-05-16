@@ -3,8 +3,8 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Celebrating QGIS contributors who received the prestigious Sol Katz Award
-  for Geospatial Free and Open Source Software.
+subtitle: Erkenning voor de bijdragers aan QGIS die de prestigieuze Sol Katz Award
+  kregen voor georuimtelijke vrije en open bron software.
 title: Ontvangers van de Sol Katz Award
 type: page
 
@@ -14,14 +14,14 @@ type: page
 {{<rich-box-start icon="🏆" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## QGIS Contributors Who Received the Sol Katz Award
-The **Sol Katz Award for Geospatial Free and Open Source Software (GFOSS)** is awarded annually by [OSGeo](https://www.osgeo.org/) to individuals who have demonstrated leadership in the GFOSS community. Recipients of the award have contributed significantly through their activities to advance open source ideals in the geospatial realm.
+## Bijdragers aan QGIS die de Sol Katz Award ontvingen
+De **Sol Katz Award for Geospatial Free and Open Source Software (GFOSS)** wordt jaarlijks toegekend door [OSGeo](https://www.osgeo.org/) aan personen die leiderschap hebben laten zien in de gemeenschap van GFOSS. Ontvangers van de prijs hebben door hun activiteiten significant bijgedragen om idealen over open bron verder te brengen op georuimtelijk gebied.
 
-QGIS has a strong history of contributions from individuals who have been recognized by OSGeo at an international level. Several QGIS community members have been honored with this prestigious award, highlighting the excellence and recognition of the QGIS community and strengthening our connection with OSGeo projects and values.
+QGIS heeft een sterke geschiedenis van bijdragen van personen die zijn erkend door OSGeo op internationaal niveau. Verscheidene gemeenschapsleden van QGIS zijn geëerd met deze prestigieuze prijs, wat de excellentie en erkenning van de gemeenschap van QGIS accentueert en onze verbinding met projecten van OSGeo en waarden versterkt.
 
 <div style="text-align:center;">
   <a href="https://www.osgeo.org/community/awards/" class="button is-success is-outlined" style="margin-right: 1rem;" target="_blank" rel="noopener">
-    🌐 OSGeo Awards Page
+    🌐 Pagina prijzen OSGeo
   </a>
   <a href="https://wiki.osgeo.org/wiki/Sol_Katz_Award" class="button is-success" target="_blank" rel="noopener">
     📖 Sol Katz Award Wiki

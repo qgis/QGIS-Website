@@ -281,24 +281,24 @@ This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lu
 - 読み込みプロセスは、単一のコアを使用する代わりに、マルチスレッドで行われます
 - 読み込みはタイルで行なわれます - そのため、他のデータがまだ読み込まれている間に3Dデータが表示されるタイルを見ることができます。
 
-There is a new configuration option in the 3D tab of vector layers - it determines how deep the quadtree will be. For example, one zoom level means there will be a single tile for the whole layer. Three zoom levels means there will be 16 tiles at the leaf level (every extra zoom level multiplies that by 4, so I have limited GUI to max. 8 levels which gives \~16K tiles which is already a lot).
+ベクターレイヤーの3Dタブに新しい設定オプションが追加されました。これはクワッドツリーの深さを決定するものです。例えば、ズームレベル1ではレイヤー全体が単一のタイルになります。ズームレベル3ではリーフレベルで16枚のタイルになります（ズームレベルが1つ増えるごとに4倍になるため、GUIの上限を最大8レベルに制限しています。これで  \~16Kタイルとなり、すでにかなりの量です）。
 
-How a vector layer\'s tiling quadtree gets populated: all internal tree nodes are empty and thus the 3D map scene tries to immediately replace them with their children - this goes until leaf nodes are reached. Only nodes at the leaf level currently hold any data. This may change in the future when we introduce more elaborate strategies - for example, internal nodes may contain a small percentage of features of the child nodes (this would allow us to show something while zoomed out a lot, not requiring to load all data).
+ベクターレイヤーのタイリングクワッドツリーへのデータ投入方法：内部ツリーノードはすべて空のため、3Dマップシーンは直ちにそれらを子ノードに置き換えようとします。これはリーフノードに達するまで繰り返されます。現在、データを保持しているのはリーフレベルのノードのみです。将来的にはより高度な戦略を導入することでこの仕組みが変わる可能性があります。例えば、内部ノードが子ノードのフィーチャーの一部を保持するようになれば、全データをロードすることなく、大幅にズームアウトした状態でも何らかの表示が可能になります。
 
-For debugging purposes, there is also a new configuration option \"show bounding boxes\". This allows you to see the bounding box of each tile (especially useful if there are some issues with tiles not showing up when they should).
+デバッグ目的のため、 \"バウンディングボックスを表示\" という新しい設定オプションも追加されました。これにより、各タイルのバウンディングボックスを確認することができます（タイルが表示されるべき場面で表示されない問題が発生した場合に特に便利です）。
 
 この機能は QGIS.org grant によって資金提供されました
 
-This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
+この機能は [Martin Dobias](https://api.github.com/users/wonder-sk) によって開発されました
 ## 印刷レイアウト
 ### 機能：地図レイアウトに写真をドラッグ＆ドロップできる
-This new feature allows user e.g. drag an svg from a file explorer onto the layout to create a new picture item containing that svg image.
+この新機能により、例えばファイルエクスプローラーからSVGファイルをレイアウト上にドラッグして、そのSVG画像を含む新しい画像アイテムを作成することができます。
 
 ![image28](images/entries/21b9f2fba7bf1576f794410fd238ef7553154d53.gif)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 ### 機能: 新しいレイアウトアイテムタイプ：手動で作成された固定テーブル
-This new item type allows for the creation of tables with contents manually entered by users (i.e. spreadsheet-style) so that users can create completely custom tables. Supports control custom cell contents, foreground and background colors (and soon, preset row and column heights). A brand new table designer dialog has been added which allows for customization of these tables.
+この新しいアイテムタイプにより、ユーザーが手動でコンテンツを入力したテーブル（スプレッドシート形式）を作成できるようになり、完全にカスタマイズされたテーブルを作成することができます。セルのコンテンツ、前景色および背景色のカスタマイズに対応しています（行の高さと列の幅のプリセットも近日対応予定）。これらのテーブルをカスタマイズするための新しいテーブルデザイナーダイアログも追加されました。
 
 ![image29](images/entries/95cfa9a8c44fb0141474d80e4b3a5e7f98352e70.webp)
 
@@ -308,13 +308,13 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 ### 機能: スケールバーの数値形式についてユーザー制御を追加
 これでレイアウトスケールバーで使用される数値の形式を制御するオプションができました。
 
-You can manage all the formatting properties for the numbers in scale bars, including whether they want a thousand separator, decimal places, scientific notation, etc. Very useful in the case of making maps for audiences outside of the current QGIS locale, or when you\'d just prefer to vary the style from the locale defaults (e.g. adding thousands separators when the locale default is to hide them).
+スケールバーの数値に関するすべての書式設定プロパティを管理できます。千の位の区切り文字、小数点以下の桁数、指数表記などが含まれます。現在のQGISロケール以外の読者向けに地図を作成する場合や、ロケールのデフォルト設定とは異なるスタイルにしたい場合（例：デフォルトでは非表示の千の位区切り文字を追加するなど）に非常に便利です。
 
 ![image30](images/entries/99c97baaee3e5930bca0cb63db1391b6fd49b34f.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### 機能：一致する条件付きスタイルの前景色と背景色を使用して、レイアウト属性テーブルにスタイルを適用できるようにする
-When the new \"Apply layer conditional styling colors\" option is enabled in the layout attribute table settings, any conditional styling rules present in the layer will be applied inside the layout attribute table (foreground and background colors only, for now!).
+レイアウトの属性テーブル設定で新しい \"レイヤーの条件付きスタイル色を適用\" オプションを有効にすると、レイヤーに設定されている条件付きスタイルのルールがレイアウトの属性テーブルにも適用されます（現時点では前景色と背景色のみ対応）。
 
 ![image31](images/entries/baded0d05539439d58e6df5a8f24157293cf8022.gif)
 
@@ -322,18 +322,18 @@ When the new \"Apply layer conditional styling colors\" option is enabled in the
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### 機能: レイアウトマネージャに検索ボックスを追加
-Allows filtering the list of layouts in a project by name, handy when a project has many layouts..!
+プロジェクト内のレイアウト一覧を名前でフィルタリングできます。レイアウト数が多いプロジェクトで非常に便利です！
 
 ![image32](images/entries/fb510c6c079d55dab2dd22f02c7c5355b317ac47.webp)
 
 この機能はNyall Dawsonによって開発されました
 ## 計算式
 ### 機能：関数のためのタグを検索する
-Tags on static expression functions to make them more retrievable. Functions like array_to_string are listed when the user enters \"split\" or \"convert\" or - like before - a part of the function name.
+ 静的な式関数にタグが付与され、検索しやすくなりました。例えば array_to_string のような関数は、ユーザーが  \"split \" や \"convert \" と入力した場合や、従来通り関数名の一部を入力した場合にも一覧に表示されます。
 
 ![image33](images/entries/689a669fe84721d7574aba7e595e019a9936f0b9.gif)
 
-This feature was funded by [SwissTierras-Colombia](https://www.proadmintierra.info)
+この機能は [SwissTierras-Colombia](https://www.proadmintierra.info) の資金提供を受けました
 
 This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 ### 機能: リスト参照先レイヤの値
@@ -341,36 +341,36 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 ![image34](images/entries/394c762c41e71764d9be397b718252eddb2dbd3e.gif)
 
-This feature was funded by [SwissTierras-Colombia](https://www.proadmintierra.info)
+この機能は [SwissTierras-Colombia](https://www.proadmintierra.info) の資金提供を受けました
 
 This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 ### 機能: 新しい式
-- `is_empty(geom)`, check if a geometry is empty (geometry that contain no coordinates)
-- `is_empty_or_null(geom)`, check if a geometry is empty or NULL (does not have geometry)
-- `hash`, cryptographic hashes functions using [QCryptographicHash](https://doc.qt.io/qt-5/qcryptographichash.html). Use case is the same as PgCrypto but in client side for all supported format.
+- `is_empty(geom)` 、ジオメトリが空かどうかを確認します（座標を含まないジオメトリ）
+- `is_empty_or_null(geom)` ,ジオメトリが空またはNULLかどうかを確認します（ジオメトリを持たない場合）
+- `hash`, [QCryptographicHash](https://doc.qt.io/qt-5/qcryptographichash.html) を使用した暗号化ハッシュ関数です。用途はPgCryptoと同様ですが、サポートされているすべての形式に対してクライアントサイドで動作します。
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
-### Feature: New algorithm \"Rename table field\"
-Takes an input layer, existing field and a new name for the field, and outputs a new layer with the selected field renamed.
+この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
+### 機能: 新アルゴリズム \"テーブルフィールドの名前変更\"
+入力レイヤー、既存のフィールド、およびフィールドの新しい名前を指定することで、選択したフィールドの名前を変更した新しいレイヤーを出力します。
 
-While this result could also be achieved with the Refactor Fields algorithm, Refactor Fields isn\'t particularly model friendly. It relies on a constant, fixed table structure, and can\'t adapt to input tables with different field structures.
+この結果は「フィールドのリファクタリング」アルゴリズムでも実現できますが、フィールドのリファクタリングはモデルとの親和性が高くありません。固定されたテーブル構造に依存しているため、異なるフィールド構造を持つ入力テーブルには対応できません。
 
-In contrast, this simple Rename Field algorithm adapts nicely for model use, because it operates on a single field only and leaves all the other fields untouched.
+一方、このシンプルな「フィールドの名前変更」アルゴリズムは、単一のフィールドのみを対象とし、他のすべてのフィールドはそのままにするため、モデルでの使用に適しています。
 
 ![image35](images/entries/c01edc8ee51dff2b4df8f825e0dcaf27940e4aba.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### 機能: 保存された式
-- Store user expressions
+### 機能: 式の保存
+- ユーザ指定式の保存
 - Clear editor icon/action
 
 ![expression-storage-opt](https://user-images.githubusercontent.com/142164/70983414-faae0000-20b8-11ea-9f25-14b338d4c680.gif)
 
-See also QEP <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/135>
+QEP <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/135>  もご覧ください
 
-This feature was funded by [Salvatore Fiandaca](https://pigrecoinfinito.com/2019/12/14/field-calc-di-qgis-save-expressions-crowdfunding/)
+この機能は [Salvatore Fiandaca](https://pigrecoinfinito.com/2019/12/14/field-calc-di-qgis-save-expressions-crowdfunding/)  から出資を受けています
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### 機能：参照されたレイヤの値を式ビルダでリストアップする
 フィールドがRelationReference、ValueRelation、およびValueMapの場合、現在のレイヤの値だけでなく、参照先のレイヤ/設定された可能性の値も表示する可能性があります。
 
@@ -723,13 +723,13 @@ This feature adds MBTiles tiled raster map support to WMS provider so that it us
 - possible to use tile scale slider dock widget
 - faster - mainly a side effect of loading fewer tiles on high dpi display
 
-This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
+この機能は [Martin Dobias](https://api.github.com/users/wonder-sk) によって開発されました
 ### 機能: ネイティブのPostGISラスタデータプロバイダ
 This is an implementation of a PostGIS raster data provider in QGIS core. Tiles are cached in RAM memory.
 
 この機能は Christmas Holidays Inc. によって資金提供されました
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### 機能: WMSレイヤのメタデータに寸法のメタデータを表示する
 ![wms-ttimelayermetadataqgis](https://user-images.githubusercontent.com/2663775/71542497-37f77500-2978-11ea-854b-d9a9ca2d6c77.png)
 
@@ -789,7 +789,7 @@ Sample output:
 
 `bash QGIS Development Server listening on http://localhost:8000 CTRL+C to exit 127.0.0.1 [lun gen 20 15:16:41 2020] 5140 103ms "GET /wfs3/?MAP=/home/ale/dev/QGIS/tests/testdata/qgis_server/test_project.qgs HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 3298 2ms "GET /wfs3/static/jsonFormatter.min.js HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 1678 3ms "GET /wfs3/static/jsonFormatter.min.css HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 1310 5ms "GET /wfs3/static/style.css HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:43 2020] 4285 13ms "GET /wfs3/collections?MAP=/home/ale/dev/QGIS/tests/testdata/qgis_server/test_project.qgs HTTP/1.1" 200`
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### Feature: Add DXF server export params NO_MTEXT and FORCE_2D
 QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control text and line symbology for generated DXF files. Adds missing parameters to GetDxf request
 
@@ -812,7 +812,7 @@ The actions to trigger the drawing tools were not exposed in the API, if you wan
 
 この機能は QWAT/QGEP グループによって資金提供されました
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
 ## 注目すべき修正
 ### 機能: Stephen Knoxによるバグ修正
 | Bug Title | URL issues (if reported) | URL PR or commit |----|----|----|----| | Allow editing of postgres JSON fields from Text Edit Widget | [#29361](https://github.com/qgis/QGIS/issues/29361) | [#30758](https://github.com/qgis/QGIS/pull/30758)

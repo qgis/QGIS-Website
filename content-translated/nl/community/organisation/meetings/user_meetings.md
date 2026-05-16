@@ -13,12 +13,12 @@ type: page
 {{<rich-box-start icon="💁" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Do you want to organize a new meeting?
-We organize events on the [QGIS wiki](https://github.com/qgis/QGIS/wiki#qgis-hackfests).
+##### Wilt u een nieuwe bijeenkomst organiseren?
+We organiseren gebeurtenissen op de [wiki van QGIS](https://github.com/qgis/QGIS/wiki#qgis-hackfests).
 
-**Annual User Conference:** We hold an annual user conference with talks and presentations covering a broad range of topics that are presented by users, showcasing how they use QGIS to solve their day to day analysis needs.
+**Jaarlijkse gebruikersbijeenkomst:** We houden een jaarlijkse gebruikersbijeenkomst met sprekers en presentaties die een breed bereik aan onderwerpen bestrijken, gepresenteerd door gebruikers die laten zien hoe ze QGIS gebruiken om hun dagelijkse behoeften aan analyses oplossen.
 
-**QGIS Open Day:** On the last Friday of every month we hold an informal virtual meeting to engage with the awesome QGIS community. The agenda is dependent on the community and encourages a culture of collaboration and self-organisation - you can add topics that interest you on the event page, or get in touch with the event organisers if you are interested in facilitating a session.
+**QGIS Open dag:** Op elke laatste vrijdag van elke maand houden we een informele virtuele bijeenkomst om te verbinden met de fantastische gemeenschap van QGIS. De agenda is afhankelijk van de gemeenschap en moedigt een cultuur van samenwerken en zelforganisatie aan - u kunt onderwerpen aandragen die u interesseren op de pagina van de gebeurtenis, of contact opnemen met de organisatoren van de gebeurtenis als u geïnteresseerd bent in het faciliteren van een sessie.
 
 {{<rich-content-end >}}
 

@@ -15,9 +15,9 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Individuele bijdragers
-This list features individuals who contribute to QGIS, based on their activity (commits) on GitHub.
+Deze lijst vermeld personen die bijdragen aan QGIS, gebaseerd op hun activiteiten (commits) op GitHub.
 
-**Special Recognition:** Look for the 👑 and ⭐ icons highlighting our **QGIS Project Founder** and **Honorary PSC Members** who have made extraordinary contributions to the project beyond commit numbers.
+**Speciale erkenning:** Zoek naar de pictogrammen 👑 en ⭐ die onze **stichter QGIS Project** en **Erelid PSC** accentueren, die buitengewone bijdragen hebben geleverd aan het project, naast het indienen van getallen.
 
 {{<rich-content-end >}}
 

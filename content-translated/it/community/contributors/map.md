@@ -12,18 +12,18 @@ type: page
 
 {{<contributors-map >}}
 ## About This Map
-This interactive map displays the geographic distribution of QGIS contributors around the world. Each marker represents a contributor, with the size indicating their level of contribution to the project.
+Questa mappa interattiva mostra la distribuzione geografica dei contributori di QGIS in tutto il mondo. Ogni indicatore rappresenta un contributore e la sua dimensione indica il livello di contributo al progetto.
 ### Funzionalità
-- **3D Globe View**: An animated, rotating globe that gradually reveals contributors
-- **Interactive Markers**: Click on any contributor to see detailed contribution statistics
-- **Contribution Categories**: View contributions broken down by thematic areas (Core, Documentation, Websites)
+- **Vista del mappamondo in 3D**: un mappamondo animato e rotante che mostra gradualmente i contributori
+- **Indicatori interattivi**: clicca su un qualsiasi collaboratore per visualizzare le statistiche dettagliate sui suoi contributi
+- **Categorie dei contributi**: visualizza i contributi suddivisi per aree tematiche (Core, Documentazione, Siti web)
 
-### Sorgenti Dati
-Contributor data is automatically generated from GitHub repositories and includes contributions to:
+### Sorgenti dati
+I dati relativi ai contributori vengono generati automaticamente dai repository GitHub e includono i contributi a:
 - Funzionalità di base di QGIS
 - Documentazione QGIS
-- QGIS Websites and related projects
+- Siti web di QGIS e progetti correlati
 
-*Note: Only contributors with publicly available location data are shown on the map.*
+*Nota: sulla mappa vengono visualizzati solo i contributori i cui dati di localizzazione sono disponibili pubblicamente.*
 
 {{<content-end >}}

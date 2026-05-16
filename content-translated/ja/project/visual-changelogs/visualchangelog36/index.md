@@ -69,13 +69,13 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 This feature was funded by [Mairie de Megève](https://www.megeve.fr/)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
 ### 機能:3点からの長方形作成(投影されたデータ)
 四角形を最初の点と二番目の点の間の長さとし、二番目の長さは三番目と二番目の点の間の距離に等しい3点で四角形を作る方法はすでにあります。
 
 この新しい方法では、3点で長方形を作成できます。2番目の長さは、点と線分（またはその延長線）に垂直に投影された点の間の距離です。
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
 ### 機能: メッシュレイヤの識別ツール
 識別ツールがメッシュレイヤで機能するようになりました。現在の時刻におけるメッシュのスカラ成分とベクタ成分の値を表示します。
 
@@ -597,7 +597,7 @@ This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
 
 ![image25](images/entries/7d8fbe3054bd3d8b311d26d9343a20041f3fb809.png.400x300_q85_crop.webp)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
 ## プログラム可能
 ### 機能: 新クラス QgsExifTools
 Contains utilities for retrieving the geotag from images and for setting an image\'s geotag.
@@ -699,7 +699,7 @@ This refactoring simplifies maptools and allows you to use the QgsQuadrilateral 
 
 さらに、それは3点で長方形のZのより良い管理を可能にします。今日では最初のZが使用され、今度は点がZを持ち、4番目の点が平面上に投影されます。
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
 ## 三次元機能
 ### 機能: 地形のシェーディング
 This adds new options for user to choose how the terrain should be rendered: - shading disabled - color of terrain is determined only from map texture - shading enabled - color of terrain is determined using Phong\'s shading model, taking into account map texture, terrain normal vector, scene light(s) and terrain material\'s ambient+specular colors and shininess

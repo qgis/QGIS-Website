@@ -17,7 +17,7 @@ type: page
 ## Ontvangers van de Sol Katz Award
 Erkenning voor de bijdragers aan QGIS die de prestigieuze Sol Katz Award kregen voor buitengewoon leiderschap en hun bijdragen aan de open bron georuimtelijke software.
 
-{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="View recipients" >}}
+{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="Ontvangers bekijken" >}}
 
 {{<rich-content-end >}}
 
@@ -35,7 +35,7 @@ Erkenning voor de bijdragers aan QGIS die de prestigieuze Sol Katz Award kregen 
 ## Bijdragende organisaties
 Organisaties die door ontwikkeling en samenwerking betekenisvolle bijdragen geven aan het project QGIS
 
-{{<button class="is-success" link="/community/contributors/organisations/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/organisations/" text="Lijst bekijken" >}}
 
 {{<rich-content-end >}}
 
@@ -53,7 +53,7 @@ Organisaties die door ontwikkeling en samenwerking betekenisvolle bijdragen geve
 ## Individuele bijdragers
 Erkenning voor de ontwikkelaars en bijdragers die helpen bij het bouwen van QGIS door hun bijdragen van code en inspanningen om samen te werken.
 
-{{<button class="is-success" link="/community/contributors/individuals/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/individuals/" text="Lijst bekijken" >}}
 
 {{<rich-content-end >}}
 
@@ -71,7 +71,7 @@ Erkenning voor de ontwikkelaars en bijdragers die helpen bij het bouwen van QGIS
 ## Ondersteunende bijdragers
 Erkennen van waardevolle bijdragen, naast indienen van code—ondersteuning van de gemeenschap, hulp en inspanningen achter de schermen.
 
-{{<button class="is-success" link="/community/contributors/supporting/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/supporting/" text="Lijst bekijken" >}}
 
 {{<rich-content-end >}}
 

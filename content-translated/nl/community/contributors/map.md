@@ -3,27 +3,27 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Explore our global community of QGIS individual contributors
-title: Meewerkenden kaart
+subtitle: Verken onze globale gemeenschap van individuele bijdragers aan QGIS
+title: Kaart met bijdragers
 type: page
 
 ---
 {{<content-start >}}
 
 {{<contributors-map >}}
-## About This Map
-This interactive map displays the geographic distribution of QGIS contributors around the world. Each marker represents a contributor, with the size indicating their level of contribution to the project.
+## Over deze kaart
+Deze interactieve kaart geeft de geografische verdeling over de gehele wereld weer van bijdragers aan QGIS. Elke markering geeft een bijdrager weer, waarbij de grootte hun mate van bijdragen aan het project weergeeft.
 ### Mogelijkheden
-- **3D Globe View**: An animated, rotating globe that gradually reveals contributors
-- **Interactive Markers**: Click on any contributor to see detailed contribution statistics
-- **Contribution Categories**: View contributions broken down by thematic areas (Core, Documentation, Websites)
+- **3D-wereldweergave**: Een geanimeerde, draaiende globe die gradueel bijdragers laat zien
+- **Interactieve markeringen**: Klik op een bijdrager om gedetailleerde statistieken over bijdragen te bekijken
+- **Categorieën bijdragen**: Bekijk bijdragen die zijn opgedeeld in thematische delen (bron, documentatie, websites)
 
 ### Databron
-Contributor data is automatically generated from GitHub repositories and includes contributions to:
+Gegevens over bijdragen worden automatisch gemaakt vanuit opslagplaatsen van GitHub en bevatten bijdragen aan:
 - QGIS-applicatie
 - QGIS Documentatie
-- QGIS Websites and related projects
+- QGIS-websites en gerelateerde projecten
 
-*Note: Only contributors with publicly available location data are shown on the map.*
+*Opmerking: Alleen bijdragers met publiek beschikbare locatiegegevens worden op de kaart weergegeven.*
 
 {{<content-end >}}

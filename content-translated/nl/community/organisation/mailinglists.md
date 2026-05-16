@@ -10,7 +10,7 @@ type: page
 # Mailinglijsten
 We communiceren in mailinglijsten die zijn ingedeeld in groepen op onderwerp en doel. U kunt u vrijelijk abonneren op deze lijsten. Vergeet echter niet ook bij te dragen aan de lijst door vragen te beantwoorden en uw ervaringen te delen.
 
-Please don’t use these mailing lists to advertise your services or training courses. Use your local user group mailing lists to inform your local community about training offers.
+Gebruik deze mailinglijsten niet om uw diensten of cursussen te promoten. Gebruik de mailinglijst van de lokale gebruikersgroep om uw lokale gemeenschap op de hoogte te houden van uw aanbiedingen.
 
 QGIS gebruikerslijst
 -
@@ -18,7 +18,7 @@ De belangrijkste lijst voor vragen van gebruikers: gebruikt voor het bespreken v
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-user" layoutClass="half" listTitle="QGIS gebruikerslijst" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-user" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-user@lists.osgeo.org](mailto:qgis-user@lists.osgeo.org).
+U kunt zich abonneren op de lijst met de link hierboven. Als u eenmaal bent geabonneerd, kunt u het volgende e-mailadres gebruiken om uw vragen en invoer voor discussies te posten: [qgis-user@lists.osgeo.org](mailto:qgis-user@lists.osgeo.org).
 
 QGIS lijst voor ontwikkelaars
 -
@@ -26,7 +26,7 @@ De belangrijkste lijst voor vragen over de ontwikkeling van de bron van QGIS of 
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-developer" layoutClass="half" listTitle="QGIS lijst voor ontwikkelaars" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-developer" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-developer@lists.osgeo.org](mailto:qgis-developer@lists.osgeo.org).
+U kunt zich abonneren op de lijst met de link hierboven. Als u eenmaal bent geabonneerd, kunt u het volgende e-mailadres gebruiken om uw vragen en invoer voor discussies te posten: [qgis-developer@lists.osgeo.org](mailto:qgis-developer@lists.osgeo.org).
 
 QGIS community team
 -
@@ -34,7 +34,7 @@ Deze lijst behandelt onderwerpen als documentatie, gebruikershandleiding, websit
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-community-team" layoutClass="half" listTitle="QGIS community team" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-community-team" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-community-team@lists.osgeo.org](mailto:qgis-community-team@lists.osgeo.org).
+U kunt zich abonneren op de lijst met de link hierboven. Als u eenmaal bent geabonneerd, kunt u het volgende e-mailadres gebruiken om uw vragen en invoer voor discussies te posten: [qgis-community-team@lists.osgeo.org](mailto:qgis-community-team@lists.osgeo.org).
 
 QGIS vertalingen
 -
@@ -42,7 +42,7 @@ Deze mailinglijst is voor vertalingen en vertalers. Als u mee wilt werken aan de
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-tr" layoutClass="half" listTitle="QGIS vertalingen" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-tr" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-tr@lists.osgeo.org](mailto:qgis-tr@lists.osgeo.org).
+U kunt zich abonneren op de lijst met de link hierboven. Als u eenmaal bent geabonneerd, kunt u het volgende e-mailadres gebruiken om uw vragen en invoer voor discussies te posten: [qgis-tr@lists.osgeo.org](mailto:qgis-tr@lists.osgeo.org).
 
 QGIS lijst voor Project Steering Committee (PSC)
 -
@@ -54,10 +54,10 @@ U kunt zich abonneren op de lijst met de link hierboven. Als u eenmaal bent geab
 
 QGIS Webcliënt 2
 -
-This list is used to get help for setting up [QGIS Web Client 2 (QWC2)](https://github.com/qgis/qwc2-demo-app) and discuss future development of QWC2.
+Deze lijst wordt gebruikt om hulp te krijgen bij het instellen van [QGIS Web Client 2 (QWC2)](https://github.com/qgis/qwc2-demo-app) en het bespreken van de toekomstige ontwikkeling van QWC2.
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-qwc2" layoutClass="half" listTitle="QGIS Webcliënt 2" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-qwc2" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-qwc2@lists.osgeo.org](mailto:qgis-qwc2@lists.osgeo.org).
+U kunt zich abonneren op de lijst met de link hierboven. Als u eenmaal bent geabonneerd, kunt u het volgende e-mailadres gebruiken om uw vragen en invoer voor discussies te posten: [qgis-qwc2@lists.osgeo.org](mailto:qgis-qwc2@lists.osgeo.org).
 
 {{<content-end >}}

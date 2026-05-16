@@ -85,7 +85,7 @@ Ik heb een systeem ingesteld waar we sets van bladen van Google hebben met kolom
 
 Het pictogram voor de markering is een keuzelijst die is gekoppeld aan een tabel met vLookUp die alle details voor die markering invult.
 
-Alles wat is hoef te doen is de CSV te downloaden, die importeren in QGIS, een stijl toe te passen en ik heb een kaart die al voor 95% klaar is.
+Alles wat ik hoef te doen is de CSV te downloaden, die importeren in QGIS, een stijl toe te passen en ik heb een kaart die al voor 95% klaar is.
 
 To be perfectly honest I can't think of any weaknesses, there are a couple of things that I would like to see or be able to do but, I don't see that as a weakness, just a missing feature.
 

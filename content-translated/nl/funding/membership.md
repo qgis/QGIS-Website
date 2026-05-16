@@ -125,7 +125,7 @@ Alle dragende leden en donoren zullen worden vermeld op de projectpagina [Dragen
 
 {{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### Verbeterde kwaliteit software
-Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience.
+Bijdragen van dragende leden helpen bij het snel oplossen van bugs en problemen, wat resulteert in een betere gebruikerservaring.
 
 {{<rich-content-end >}}
 
@@ -161,7 +161,7 @@ Van dragende leden van vlaggenschip, large en medium zal hun logo worden opgenom
 
 {{<rich-content-start themeClass="coloring-4" >}}
 #### Vermeldingen in updates van de software
-Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project.
+Dragende leden worden vermeld in de visuele logs met wijzigingen van uitgaven van de software van QGIS, wat hun voortgezette inspanningen voor de ondersteuning van het project benadrukt.
 
 {{<rich-content-end >}}
 
@@ -297,7 +297,7 @@ Voormalige dragende leden worden afzonderlijk vermeld voor een periode van twee 
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### Eenmalige betalingen
-Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals!
+Elk bedrag kan gedoneerd worden, via directe overschrijvingen naar onze bankrekening (SEPA-betaling), betaling met creditcard (via Stripe.com) of Paypal (informatie is beschikbaar op de pagina [Donations]({{< ref "/funding/donate.md" >}}). Zelfs een kleine donatie kan het verschil maken en helpen om belangrijke projectdoelen te bereiken!
 
 {{<rich-content-end >}}
 
@@ -307,7 +307,7 @@ Donations can be of any amount, via direct transfers to our bank account (SEPA p
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### Over ‘geoormerkt’ bijdragen
-We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative.
+We betreuren het dat we geen fondsen accepteren die zijn 'geoormerkt', omdat dat vele administratieve problemen oplevert. Als u geïnteresseerd bent in het financieel bijdragen aan specifieke aspecten van de ontwikkeling van QGIS, moedigen wij u aan om aanvullende menselijke bronnen aan het project toe te voegen, bijv. het inhuren van een ontwikkelaar, of deel te nemen aan ons initiatief voor het oplossen van problemen.
 
 {{<rich-content-end >}}
 

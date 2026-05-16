@@ -782,7 +782,7 @@ This feature adds the option of using current values from the \"parent\" form in
 A new \"parentForm\" scope was added as well as a new set of functions and variables to access the parent from within an embedded child form. The new functions and variables were modelled on the existing \"current_value\", \"current_feature\" etc.
 
 The new functions and variables are also available when the parent form is opened from a new (unsaved, unbuffered) feature, making it easier to create drill-down filters based on the parent\'s values when adding children from an unsaved parent form.
-### Example
+### Esempio
 ![image76](images/entries/75692656-28f9af80-5ca6-11ea-8dd6-9a4bf454f5b7.gif)
 ### New functions and variables
 ![image77](images/entries/75693398-2ba8d480-5ca7-11ea-8be0-9643f8841c89.webp) ![image78](images/entries/75693402-2cda0180-5ca7-11ea-9d65-f0c00e26180e.webp) ![image79](images/entries/75693404-2d729800-5ca7-11ea-889d-5aa73bc131ce.webp)

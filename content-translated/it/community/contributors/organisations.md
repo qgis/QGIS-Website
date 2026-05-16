@@ -15,11 +15,11 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Organizzazioni Sostenitrici
-These organizations actively contribute to QGIS, as reflected by their GitHub commit activity.
+Queste organizzazioni contribuiscono attivamente a QGIS, come dimostra la loro attività di commit su GitHub.
 
 <div style="text-align:center;">
 	<a href="/community/contributors/add-organisation/" class="button is-success">
-		🚀 Add your Organisation!
+		🚀 Aggiungi la tua organizzazione!
 	</a>
 </div>
 

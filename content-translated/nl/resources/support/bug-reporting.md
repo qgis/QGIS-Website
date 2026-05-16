@@ -67,7 +67,7 @@ Klik op **New Issue**, typ een titel en een heldere beschrijving voor uw problee
 
 When you’re finished, click **Submit new issue**.
 
-Note
+Opmerking
 
 A `Fix me` link is provided at the bottom of any page of the web site to help you directly improve this page and submit pull request.
 

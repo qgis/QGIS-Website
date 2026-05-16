@@ -33,7 +33,7 @@ Neem een terugkerend dragend lidmaatschap.
 
 {{<rich-content-start themeClass="coloring-2" >}}
 ## Donatie via Stripe 
-We use the [stripe.com](https://stripe.com) service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.
+We gebruiken de service van [stripe.com](https://stripe.com) om donaties via creditcards te ontvangen. Onthoud dat de kosten voor betalingen bij Stripe substantieel lager zijn dan bij Paypal - we zouden het dus op prijs stellen als u Stripe zou willen gebruiken in plaats van PayPal. Aanmelden is niet vereist.
 
 {{<rich-content-end >}}
 
@@ -49,7 +49,7 @@ We use the [stripe.com](https://stripe.com) service to receive credit card donat
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Donatie via Payrexx
-We also use the [payrexx.com](https://payrexx.com) service to receive credit card donations. Note that the payment fees at Payrexx are substantially lower than at Paypal - so we would appreciate it, if you could use [Stripe](#stripe-donation) or Payrexx instead of PayPal. No signup needed.
+We gebruiken ook de service van [payrexx.com](https://payrexx.com) om donaties via creditcards te ontvangen. Onthoud dat de kosten voor betalingen bij Payrexx substantieel lager zijn dan bij Paypal - we zouden het dus op prijs stellen als u [Stripe](#stripe-donation) of Payrexx zou willen gebruiken in plaats van PayPal. Aanmelden is niet vereist.
 
 {{<rich-content-end >}}
 
@@ -73,7 +73,8 @@ Gebruik onderstaande gegevens om geld te doneren via een internationale overboek
 
 {{<pre-block textClasses="donatbox" >}}
 
-Account name: QGIS.ORG Address: Via Geinas 2 CH-7031 Laax BIC/SWIFT: POFICHBEXXX IBAN: CH09 0900 0000 9146 3839 8 Reference: Donation QGIS Currency: EUR Bank name: PostFinance AG Bank address: Mingerstrasse 20 3030 Berne Switzerland VAT-number: CHE-489.853.176
+Accountnaam: QGIS.ORG Adres: Via Geinas 2 CH-7031 Laax
+BIC/SWIFT: POFICHBEXXX IBAN: CH09 0900 0000 9146 3839 8 Reference: Donation QGIS Valuta: EUR Banknaam: PostFinance AG Bank adres: Mingerstrasse 20 3030 Berne Switzerland VAT-number: CHE-489.853.176
 
 {{</pre-block >}}
 
@@ -117,7 +118,7 @@ We zouden onze activiteiten willen uitbreiden en de kwaliteit van QGIS willen ve
 #### Onderhouden van de bron-infrastructeur
 * De officiële website van QGIS.org, een centrale hub voor alle dingen van QGIS.
 * Ons systeem voor het bijhouden van problemen voor efficiënt rapporteren van problemen en mogelijkheden.
-* The continuous integration system, ensuring code quality and stability through automated tests.
+* Het doorlopende systeem voor integratie, dat zorgt voor kwaliteit en stabiliteit voor de code, door geautomatiseerde testen.
 
 {{<rich-content-end >}}
 
@@ -129,7 +130,7 @@ We zouden onze activiteiten willen uitbreiden en de kwaliteit van QGIS willen ve
 #### Software-ontwikkeling en & kwaliteitsbeheersing
 * Doorlopend verbeteren en verpakken van QGIS voor verscheidene besturingssystemen dat het meer toegankelijk maakt voor gebruikers overal op de wereld.
 * Direct aanpakken van problemen en andere onvolkomenheden, wat de gebruikerservaring verbetert.
-* Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development.
+* Pull requests beheren en beheersen door uitgebreide codereviews uit te voeren, die de hoogste standaarden voor softwareontwikkeling verzekeren.
 
 {{<rich-content-end >}}
 
@@ -153,7 +154,7 @@ We zouden onze activiteiten willen uitbreiden en de kwaliteit van QGIS willen ve
 #### Onze vrijwilligers in hun kracht zetten
 * Mentoren van nieuwe deelnemers, een gastvrije en productieve gemeenschap bouwen.
 * Vertalen van QGIS in meerdere talen, wat de software echt globaal maakt.
-* Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own.
+* Uitvoeren van systeem financiële ondersteuning voor QGIS, dat gefocust werken mogelijk maakt aan significante verbeteringen en innovaties, die vaak te uitdagend zijn voor vrijwilligers om ze zelf aan te pakken.
 
 {{<rich-content-end >}}
 
@@ -163,7 +164,7 @@ We zouden onze activiteiten willen uitbreiden en de kwaliteit van QGIS willen ve
 
 {{<rich-content-start themeClass="coloring-1" >}}
 #### Samenwerken en delen van kennis koesteren
-* Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project.
+* Organiseren en ondersteunen van gebruikersbijeenkomsten en conferenties van QGIS, essentieel voor het uitwisselen van kennis, samenwerkingen en de collectieve vooruitgang van het project QGIS.
 
 {{<rich-content-end >}}
 

@@ -1,11 +1,11 @@
 ---
-description: QGIS.ORG is the worldwide association of QGIS users and developers. QGIS.ORG
-  is constituted as a Swiss association (Verein im Sinne des Schweizerischen Zivilgesetzbuches
-  (Art. 60-79 ZGB)).
+description: QGIS.ORG is de wereldwijde associatie van gebruikers en ontwikkelaars
+  van QGIS. QGIS.ORG is gevestigd als een Zwitserse ‘association’ (Verein im Sinne
+  des Schweizerischen Zivilgesetzbuches (Art. 60-79 ZGB)).
 draft: false
 layout: single
 sidebar: true
-title: QGIS.org Charter
+title: 'Statuten QGIS.org '
 type: page
 
 ---
@@ -81,7 +81,7 @@ Dragende leden zijn leden die QGIS.ORG financieel ondersteunen met een jaarlijks
 
 De volgende categorieën worden aan dragende leden aangeboden, gebaseerd op hun grootte en toegewezen op basis van door henzelf vermelde gegevens:
 * Small (bijv voor kleinere steden of bedrijven tot 10 werknemers)
-* Medium (e.g. for universities, medium size cities or companies up to 50 employees)
+* Medium (bijv. voor universiteiten, medium grote steden of bedrijven tot 50 werknemers)
 * Large (bijv. voor grotere steden, provincies of bedrijven met tot 100 werknemers)
 * Vlaggenschip (bijv. voor bedrijven met meer dan 100 werknemers, federale overheidsorganisaties)
 
@@ -120,13 +120,13 @@ In het geval dat een lid van Board zich terugtrekt uit die Board zal de PSC, uit
 ### 8.1 Kiezen van leden van de PSC
 Bij het verstrijken van een termijn van een lid van de PSC, kunnen genomineerden van binnen de gemeenschap van QGIS worden voorgedragen door elk lid van de QGIS gemeenschap. Het terugtredende lid van de PSC zal automatisch een nominatie krijgen, tenzij hij/zij niet langer deel wenst uit te maken van de PSC. Als een inkomend lid van de PSC een Stemmend lid is, zullen zij hun lidmaatschap van Stemmende leden in de Algemene vergadering verliezen bij het lid worden van de PSC.
 
-Prior to the election, the outgoing PSC determines the total number of seats of the incoming committee. QGIS Voting Members shall be allowed a number of votes equal to the number of PSC memberships up for election and shall be asked to rank their votes in order of preference. After removing elected Board members from the vote results, PSC memberships shall be awarded on the total vote count, with the nominee receiving the greatest count being awarded PSC membership first and so on in descending order of number of votes received until all PSC memberships have been allocated. A list of currently serving PSC members shall be maintained at: https://qgis.org/community/organisation/
+Voorafgaande aan de verkiezing, bepaalt het terugtredende PSC het aantal zetels voor het nieuw te kiezen PSC. QGIS Stemmende leden zal het aantal stemmen worden toegekend dat gelijk is aan het aantal leden voor de PSC die dienen te worden gekozen en zullen worden gevraagd hun stemmen op voorkeur in te dienen. Na het verwijderen van de gekozen leden voor de Board uit de resultaatstemmen zal worden toegekend op basis van het totale aantal stemmen, waarbij de genomineerde die het grootste aantal stemmen krijgt als eerste het lidmaatschap van de PSC zal verkrijgen, enzovoort in aflopende volgorde van het aantal stemmen, totdat alle lidmaatschappen voor de PSC zijn toegekend. Een lijst met de huidige dienende leden van de PSC zal worden onderhouden op: https://qgis.org/community/organisation/
 ### 8.2 Termijnen voor de leden van de PSC
 Leden van de PSC dienen voor een termijn van twee jaar.
 ### 8.3 Ereleden PSC
 Gary Sherman, als oprichter van het project QGIS, is levenslang lidmaatschap van de QGIS PSC, vanaf het oprichten daarvan, toegekend. Met algemene stemmen kan QGIS.ORG elk individu een levenslange zetel in de de PSC toekennen.
 ## 9 Administratie van QGIS.ORG
-The annual general meeting (AGM) will be held via a virtual forum. The online location and date is to be determined and communicated by the board in advance of the meeting. The board shall publish a meeting agenda prior to the meeting. The protocol of the past general meeting shall be provided by the board and sent to the voting members at least 15 days prior to each general meeting. The chair of the association authorizes the release of the protocol.
+De jaarlijkse Algemene vergadering (AGM) wordt gehouden via een virtueel forum. De online locatie en de datum worden bepaald en gecommuniceerd door de board, voorafgaande aan de vergadering. De board zal, voorafgaande aan de vergadering, een agenda publiceren. Het verslag van de vorige algemene vergadering zal door de board worden verschaft en tenminste 15 dagen voorafgaande aan elke algemene vergadering worden toegezonden aan de Stemmende leden. De chair van de associatie autoriseert de uitgave van het verslag.
 
 De vergadering is toegankelijk voor alle leden van de gemeenschap van QGIS. Alleen Stemmende leden mogen stemmen over een motie. Substantiële voorstellen van leden van de gemeenschap van QGIS voor toekomstige activiteiten van moeten als items voor de agenda op schrift aan de board worden verschaft, voorafgaande aan de vergadering. Kleine voorstellen dienen aan de board te worden gepresenteerd en kunnen afzonderlijk van de AGM worden afgehandeld.
 
@@ -157,7 +157,7 @@ De financiële opbrengsten van QGIS.ORG zullen hun oorsprong vinden in donaties,
 
 De algemene vergadering kiest elk jaar twee financiële auditeurs.
 
-Limited Liability: the QGIS Association can only be held liable up to the amount of the current assets of the association. Personal liability of board members or other individual members is excluded.
+Beperkte aansprakelijkheid: de QGIS Association kan alleen aansprakelijk worden gehouden tot het bedrag van de huidige waarden van de association. Persoonlijke aansprakelijkheid van leden van de board of andere individuele leden is uitgesloten.
 
 Deze statuten werden goedgekeurd op de algemene samenkomst via een stemming via Loomio op 17 maart 2019.
 

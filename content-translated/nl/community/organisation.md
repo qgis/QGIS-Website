@@ -152,7 +152,7 @@ Huidige leider van het Translation Team: Werner Macho
 
 De vertaling van QGIS wordt beheerd door de Community Assistant (Translation Team Lead) en ondersteunt door aanvullende , taalspecifieke, teams. Informatie over de huidige status van de documentatie en het vertaalproces wordt gegeven in de [Hoek voor de vertalers](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html).
 
-Contact :  [qgis-community-team](http://lists.osgeo.org/mailman/listinfo/qgis-community-team) lijst of [QGIS Translation mailinglijst](http://lists.osgeo.org/mailman/listinfo/qgis-tr)
+Contact : [qgis-community-team](http://lists.osgeo.org/mailman/listinfo/qgis-community-team) lijst of [QGIS Translation mailinglijst](http://lists.osgeo.org/mailman/listinfo/qgis-tr)
 ### Materiaal voor de pers + vertaling
 Huidige leider Press Material Team: Anita Graser
 

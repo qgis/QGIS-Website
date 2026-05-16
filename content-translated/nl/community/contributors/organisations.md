@@ -15,11 +15,11 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Bijdragende organisaties
-These organizations actively contribute to QGIS, as reflected by their GitHub commit activity.
+Deze organisaties dragen actief bij aan QGIS, zoals weergegeven door hun activiteiten van commits op GitHub.
 
 <div style="text-align:center;">
 	<a href="/community/contributors/add-organisation/" class="button is-success">
-		🚀 Add your Organisation!
+		🚀 Voeg uw organisatie toe!
 	</a>
 </div>
 

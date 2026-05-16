@@ -3,8 +3,8 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Celebrating QGIS contributors who received the prestigious Sol Katz Award
-  for Geospatial Free and Open Source Software.
+subtitle: Rendiamo omaggio ai contributori di QGIS che hanno ricevuto il prestigioso
+  Premio Sol Katz per il software geospaziale libero e open source.
 title: Vincitori del Premio Sol Katz
 type: page
 
@@ -14,17 +14,17 @@ type: page
 {{<rich-box-start icon="🏆" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## QGIS Contributors Who Received the Sol Katz Award
-The **Sol Katz Award for Geospatial Free and Open Source Software (GFOSS)** is awarded annually by [OSGeo](https://www.osgeo.org/) to individuals who have demonstrated leadership in the GFOSS community. Recipients of the award have contributed significantly through their activities to advance open source ideals in the geospatial realm.
+## Contributori di QGIS che hanno ricevuto il Premio Sol Katz
+Il **Premio Sol Katz per il software geospaziale libero e open source (GFOSS)** viene assegnato ogni anno da [OSGeo](https://www.osgeo.org/) a persone che si sono distinte per la loro leadership nella comunità GFOSS. I vincitori del premio hanno contribuito in modo significativo, attraverso le loro attività, alla promozione degli ideali dell'open source nel settore geospaziale.
 
-QGIS has a strong history of contributions from individuals who have been recognized by OSGeo at an international level. Several QGIS community members have been honored with this prestigious award, highlighting the excellence and recognition of the QGIS community and strengthening our connection with OSGeo projects and values.
+QGIS vanta una lunga tradizione di contributi da parte di persone che hanno ricevuto riconoscimenti da OSGeo a livello internazionale. Diversi membri della comunità QGIS sono stati insigniti di questo prestigioso premio, a testimonianza dell'eccellenza e del prestigio della comunità QGIS e a rafforzamento del nostro legame con i progetti e i valori di OSGeo.
 
 <div style="text-align:center;">
   <a href="https://www.osgeo.org/community/awards/" class="button is-success is-outlined" style="margin-right: 1rem;" target="_blank" rel="noopener">
-    🌐 OSGeo Awards Page
+    🌐 Pagina dei premi OSGeo
   </a>
   <a href="https://wiki.osgeo.org/wiki/Sol_Katz_Award" class="button is-success" target="_blank" rel="noopener">
-    📖 Sol Katz Award Wiki
+    📖 Wiki del Premio Sol Katz
   </a>
 </div>
 

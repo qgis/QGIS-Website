@@ -1,7 +1,7 @@
 ---
 HasBanner: false
-description: We are publishing an annual report for the preceding year highlighting
-  key activities within the QGIS project.
+description: We publiceren een jaarlijks rapport over het voorgaande jaar met het
+  accent op de belangrijkste activiteiten in het project QGIS.
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
@@ -11,26 +11,26 @@ type: page
 ---
 {{<content-start >}}
 # Jaarlijkse rapporten
-Starting in 2016, coincident with the establishment of a formal legal entity (Swiss “Verein”), we are publishing an annual report for the preceding year highlighting key activities within the QGIS project.
+Beginnend in 2016, gelijktijdig met het vestigen van een formele legale entiteit (Zwitsers “Verein”), publiceren we een jaarlijks rapport over het voorgaande jaar met het accent op de belangrijkste activiteiten in het project QGIS.
 
 Als opmerking zij vermeld dat het rapport enige financiële informatie zal bevatten die ook beschikbaar is als afzonderlijk rapport in het financiële gedeelte van deze website.
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2024" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2024" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2023" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2023" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2022.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2022" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2022.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2022" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2021.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2021" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2021.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2021" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2020.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2020" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2020.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2020" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2019.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2019" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2019.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2019" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2018.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2018" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2018.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2018" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2017.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2017" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2017.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2017" listSubtitle=" PDF downloaden" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2016.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2016" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2016.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Jaarlijks rapport 2016" listSubtitle=" PDF downloaden" >}}
 
 {{<content-end >}}

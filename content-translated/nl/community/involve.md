@@ -18,17 +18,17 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ### Werk mee in ondersteuningskanalen
-{{<button class="is-primary1 is-small is-rounded" link="community/groups" text="User groups 🇩🇪 🇫🇷 🇪🇸" >}}
+{{<button class="is-primary1 is-small is-rounded" link="community/groups" text="Gebruikersgroepen 🇩🇪 🇫🇷 🇪🇸" >}}
 
 {{<button class="is-primary1 is-small is-rounded" link="community/organisation/mailinglists" text="mailinglijsten voor QGIS" >}}
 
-{{<button class="is-primary1 is-small is-rounded" link="resources/support/#communication-channels" text="Chats rooms" >}}
+{{<button class="is-primary1 is-small is-rounded" link="resources/support/#communication-channels" text="Chatrooms" >}}
 
 Kanalen gebruiken om assistentie te zoeken van collega gebruikers en ontwikkelaars of op de hoogte blijven van huidige gebeurtenissen in het project.
 
 U kunt u vrijelijk abonneren op deze lijsten, maar vergeet echter niet ook bij te dragen aan de lijst door vragen te beantwoorden en uw ervaringen te delen.
 
-[Community support channels page]({{< ref "resources/support" >}})
+[Ondersteuningskanalen voor de gemeenschap]({{< ref "resources/support" >}})
 
 {{<rich-content-end >}}
 
@@ -46,7 +46,7 @@ U kunt u vrijelijk abonneren op deze lijsten, maar vergeet echter niet ook bij t
 ### Fouten melden
 Als u problemen tegenkomt bij het werken met QGIS, laat de ontwikkelaars van QGIS dat dan weten.
 
-[Report an issue]({{< ref "resources/support/bug-reporting" >}})
+[Een probleem rapporteren]({{< ref "resources/support/bug-reporting" >}})
 
 {{<rich-content-end >}}
 
@@ -64,7 +64,7 @@ Als u problemen tegenkomt bij het werken met QGIS, laat de ontwikkelaars van QGI
 ### QGIS Documentatie
 Het schrijven van documentatie biedt u een ideaal startpunt voor uw eerste bijdrage aan het project. Als u wilt deelnemen aan de inspanningen voor de  documentatie, vindt u hier een kleine introductie en richtlijnen:
 
-[How to write documentation](https://docs.qgis.org/latest/en/docs/documentation_guidelines/)
+[Hoe documentatie te schrijven?](https://docs.qgis.org/latest/en/docs/documentation_guidelines/)
 
 {{<rich-content-end >}}
 
@@ -82,7 +82,7 @@ Het schrijven van documentatie biedt u een ideaal startpunt voor uw eerste bijdr
 ### Vertaal QGIS
 Als u wilt geïnteresseerd bent in het bijdragen aan de inspanningen voor de documentatie, zoals het vertalen van de Engelse handleiding naar een andere taal, kunt u hier uitvinden hoe daarmee te beginnen:
 
-[How to translate QGIS](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html )
+[Hoe QGIS te vertalen?](https://docs.qgis.org/latest/en/docs/documentation_guidelines/do_translations.html )
 
 {{<rich-content-end >}}
 
@@ -100,7 +100,7 @@ Als u wilt geïnteresseerd bent in het bijdragen aan de inspanningen voor de doc
 ### Maak een Plug-in
 Geïnteresseerd in het maken van uw eigen? Leer hoe te beginnen!
 
-[Develop Python plugins](https://docs.qgis.org/latest/en/docs/pyqgis_developer_cookbook/index.html)
+[Python plug-ins ontwikkelen](https://docs.qgis.org/latest/en/docs/pyqgis_developer_cookbook/index.html)
 
 {{<rich-content-end >}}
 
@@ -140,9 +140,9 @@ QGIS Core bevat bibliotheken voor het bouwen van aangepaste toepassingen door ee
 ### Dragend & doneren
 Er zijn twee soorten financiële bijdragen die we verwelkomen:
 
-{{<button class="is-primary1" link="funding/membership" text="Become a Sustaining Member" >}}
+{{<button class="is-primary1" link="funding/membership" text="Wordt dragend lid" >}}
 
-{{<button class="is-primary6" link="funding/donate" text="One-Time Donation" >}}
+{{<button class="is-primary6" link="funding/donate" text="Eenmalige donatie" >}}
 
 {{<rich-content-end >}}
 

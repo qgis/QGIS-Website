@@ -678,7 +678,7 @@ First part of QEP <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/171
 
 ![image62](images/entries/d4e761ad977a712aa1fc1fbc65d61c886e6e79fb.webp)
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ## データプロバイダ
 ### ArcGIS Vector TIle Service接続
 ArcGIS Vector Tile Serviceへの接続を作成するオプションが追加され、ArcGISサーバーのベクタタイルサービスから簡単にベクタタイルレイヤを読み込めるようになりました。また、ベクタタイル接続に対する認証、設定、およびカスタムリファラ文字列のサポートも追加されました。
@@ -720,13 +720,13 @@ This feature was developed by [Even Rouault](https://api.github.com/users/rouaul
 ### QGIS Server WFS3 API Sorting
 Adds sorting functionality to the QGIS Server WFS3 API
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### QGIS Server landing page plugin
 A Landing Page Plugin for QGIS Server was created, which is a C++ port of <https://github.com/elpaso/qgis-server-landing-page-plugin>
 
 ![image66](images/entries/a2254bbef892835317a9f608afd8bd3722ee4b38.gif)
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
 ### Environment variable to disable GetPrint and to not load layouts
 A new `QGIS_SERVER_DISABLE_GETPRINT` environment variable was added to QGIS Server which prevents the loading of layouts when projects are read and disables the WMS GetPrint request, improving the read time of projects.
 

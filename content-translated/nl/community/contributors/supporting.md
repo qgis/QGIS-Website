@@ -15,14 +15,14 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Ondersteunende bijdragers
-This list highlights individuals and organizations whose valuable contributions to QGIS may not be reflected in commit histories—such as community support, outreach, or other behind-the-scenes efforts. If you believe your work should be recognized here, please review our [application guidelines](/community/contributors/application-guidelines/) and fill out the [QGIS Supporting Contributors Application form](https://forms.gle/wZr4EfCjqPWGaoq37). The QGIS Project Steering Committee (PSC) reviews submissions on a monthly basis.
+Deze lijst accentueert personen en organisaties waarvan hun waardevolle bijdragen aan QGIS niet alleen wordne weergegeven in de geschiedenis van commits—zoals ondersteuning aan de gemeenschap, stages of andere inspanningen achter de schermen. Als u van mening bent dat uw werk hier erkend zou moeten worden, bekijk onze [richtlijnen voor aanvragen](/community/contributors/application-guidelines/) en vul het [aanvraagformulier QGIS Supporting Contributors Application](https://forms.gle/wZr4EfCjqPWGaoq37) in. Het QGIS Project Steering Committee (PSC) beoordeelt aanvragen op een maandelijkse basis.
 
 <div style="text-align:center;">
   <a href="/community/contributors/application-guidelines/" class="button is-success is-outlined" style="margin-right: 1rem;">
-    📋 Application Guidelines
+    📋 Richtlijnen voor aanvragen
   </a>
   <a href="https://forms.gle/wZr4EfCjqPWGaoq37" class="button is-success">
-    🚀 Submit Your Contribution
+    🚀 Dien uw bijdrage in
   </a>
 </div>
 

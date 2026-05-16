@@ -8,16 +8,16 @@ type: page
 ---
 {{<content-start >}}
 # Onkostenvergoedingen voor Ontwikkelingsbijeenkomsten
-The QGIS project holds twice-yearly developer meetings, typically somewhere in Europe. The purpose of the meetings is to provide face-to-face time for developers. It is a forum for presenting new ideas, planning, putting heads together to solve problems and so on.
+Het project QGIS houdt tweejaarlijkse ontwikkelaarsbijeenkomsten, ergens in Europa. Het doel van de bijeenkomsten is om face-to-facetijd voor ontwikkelaars te creëren. Het is een forum voor het presenteren van nieuwe ideeën, planning, koppen bij elkaar steken om problemen op te lossen, enzovoort.
 
-We use funding from our [Sustaining Membership Program Overview]({{< ref "/funding/membership.md" >}}) to facilitate the event, with co-funding from the host who usually supplies the venue and the infrastructure for hosting the meeting. Individual developers also co-fund the event by donating their time and in many cases financially supporting their visit to the meeting directly.
+We gebruiken fondsen uit ons [Overzicht programma Dragende leden]({{< ref "/funding/membership.md" >}}) om deze bijeenkomst te faciliteren, maar deels ook betaald door de organiserende partij die de ruimte en infrastructuur regelt voor de bijeenkomst. Individuele ontwikkelaars dragen ook bij door hun tijd, en in veel gevallen ook hun bezoek aan de bijeenkomst, zelf te financieren.
 
 Teruggave nodig voor uitgaven voor QGIS HF?
 -
-If you are a contributor to the project (to either code, documentation, translation, or infrastructure), you think your participation to the HF will be useful for the project, and you do not have funds to cover for travelling and lodging, you can [apply for refund](https://goo.gl/forms/YKm5fo7ll5GfQEJI3), at least 40 days in advance
+Als u een deelnemer bent van het project (ofwel met code, documentatie, vertalen of infrastructuur), en u denkt dat uw deelname aan het HF nuttig zal zijn voor het project, en u heeft niet de fondsen om reis en verblijf te dekken, kunt u om [teruggave vragen](https://goo.gl/forms/YKm5fo7ll5GfQEJI3), ten minste 40 dagen van tevoren.
 1. Laat ons bij de inschrijving  weten (i) een schatting van het totaal benodigde bedrag, en (ii) hoe uw deelname bijdraagt aan QGIS
 2. Met latere aanmeldingen (<40 dagen) zal rekening worden, gebaseerd op het beschikbare budget en de prioriteiten van de PSC
-3. Please note that our funds are limited, so we’ll generally not be able to refund all participants
+3. Onthoud dat onze fondsen beperkt zijn, dus we kunnen in het algemeen niet alle deelnemers een teruggave verlenen
 4. Bron-ontwikkelaars (iedereen met directe rechten om toe te voegen aan de opslagplaats) en leden van de PSC zullen prioriteit hebben bij de toedeling van de fondsen
 5. Tenminste 30 dagen van tevoren zal de PSC een beslissing doen toekomen aan allen die een aanvraag hebben ingediend
 6. De teruggave zal worden gestort op uw bankrekening, na het HF, op basis van de actuele betaalde rekeningen en worden verzonden aan onze Treasurer.
