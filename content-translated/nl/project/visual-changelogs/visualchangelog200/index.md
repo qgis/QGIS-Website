@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: '2013-09-09'
+releaseDate: 09-09-2013
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 2.0
@@ -23,7 +23,7 @@ De plug-in Heatmap is op een aantal punten verbeterd en geoptimaliseerd zodat de
 
 ![image2](images/Selection_027.png)
 ### Mogelijkheid: Ondersteuning voor Processing
-The SEXTANTE project has been ported to and incorporated into QGIS as core functionality. SEXTANTE has been renamed to \'Processing\' and introduces a new menu in QGIS from where you can access a rich toolbox of spatial analysis tools. The processing toolbox has incredibly rich functionality - with a python programming API allowing you to easily add new tools, and hooks to provide access to analysis capabilities of many popular open source tools such as GRASS, OTB, SAGA etc.
+Het project SEXTANTE is geport en nu ook in QGIS ingebouwd als brononderdeel. SEXTANTE is hernoemd naar \'Processing\' en introduceert een nieuw menu in QGIS van waaruit u toegang heeft tot een rijke gereedschapskist met gereedschappen voor ruimtelijke analyses. De Toolbox van Processing bevat veel functionaliteit die verder uitgebreid kan worden doordat de Python API het toestaat om toegang te bieden tot open source-gereedschap beschikbaar in GRASS, OTB, SAGA enzovoorts en nieuwe analysetools toe te voegen. 
 
 ![image3](images/Selection_028.png)
 ### Mogelijkheid: Processing - Grafische modellen bouwen
@@ -32,34 +32,34 @@ Een prachtig onderdeel van het nieuwe framework Processing is de mogelijkheid om
 ![image4](images/Processing_modeler_029.png)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Standaard opstartproject en projectsjablonen definiëren
-With QGIS 2.0 you can specify what QGIS should do when it starts: `New Project` (legacy behaviour, starts with a blank project), `Most recent` (when you start QGIS it will load the last project you worked on), `Specific` (always load a specific project when QGIS starts). You can use the project template directory to specify where your template projects should be stored. Any project that you store in that directory will be available for use as a template when invoking the `Project --> New from template` menu.
+Met QGIS 2.0 kunt u specificeren wat |qg| moet doen bij het opstarten: `Nieuw project` (als vanouds, start met een nieuw leeg project), `Meest recent` (wanneer u QGIS start zal het het laatst geopende project weer openen), `Specifiek` (altijd een specifiek project laden wanneer QGIS wordt gestart). U kunt een projectmap voor sjablonen instellen waarin u uw sjablonen voor het project kunt bewaren. Elk project dat daarin is bewaard kan gekozen worden in de lijst van sjabloonprojecten die wordt getoond als in het menu `Project --> Nieuw van sjabloon` wordt geselecteerd.
 
 ![image5](images/Screen_Shot_2013-09-12_at_11.23.02_PM.png)
 ### Mogelijkheid: Systeem omgevingsvariabelen
-Current system environment variables can now be viewed and many configured within the application Options dialog. Useful for platforms, such as Mac, where a GUI application does not necessarily inherit the user\'s shell environment. Also useful for setting/viewing environment variables for the external tool sets controlled by the processing toolbox, e.g. SAGA, GRASS; and, for turning on debugging output for specific sections of the source code.
+De systeem-omgevingsvariabelen kunnen nu worden bekeken en deze kunnen ook worden geconfigureerd via het dialoogvenster Opties. Dit is erg handig voor besturingssystemen zoals die op de Mac waarbij een grafische toepassing niet automatisch de omgevingsvariabelen erft van de shell-omgeving van de gebruiker. Ook handig om omgevingsvariabelen in te stellen die gebruikt worden door externe gereedschappen die o.a. gebruikt worden door de Processing Toolbox, bijv. SAGA, GRASS; en ook voor het meer uitvoer genereren voor het opsporen van fouten voor bepaalde gedeelten van de broncode.  
 
 ![image6](images/changelog-2.0_sys-env-options.png)
 ### Mogelijkheid: gebruikergedefinieerde zoomschalen
-A listing of zoom scales can now be configured for the application and optionally overridden per project. The list will show up in the `Scale` popup combo box in the main window status bar, allowing for quick access to known scales for efficiently viewing and working with the current data sources. Defined scales can be exported to an XML file that can be imported into other projects or another QGIS application.
+Een lijst van schaalniveaus kan nu worden ingesteld voor de toepassing en ook per project. De lijst van schaalniveaus zal worden weergegeven in het pop-upcombinatievak `Schaal` in de statusbalk van het hoofdvenster voor snelle toegang tot bekende schalen voor efficiënt weergeven en werken met de huidige gegevensbronnen. Gedefinieerde schaalniveaus kunnen worden geëxporteerd naar een XML bestand dat kan worden geïmporteerd in andere projecten of een andere toepassing van QGIS.
 
 ![image7](images/changelog-2.0_predefined-scales.png)
 ## Browser
 ### Mogelijkheid: Verbeteringen aan browser paneel binnen toepassing
 - Mappen kunnen worden gefilterd met een wildcard (=jokerteken) of een reguliere expressie
-- New `Project home` (parent directory of current project)
-- View `Properties` of the selected directory in a dialog
-- Choose which directories to `Fast scan`
-- Choose to `Add a directory` directly to `Favourites` via filesystem browse dialog
-- New `/Volumes` on Mac (hidden directory for access to external drives)
-- New `OWS` group (collation of available map server connections)
-- Open a second browser (`View -> Panels -> Browser (2)`) for drag-n-drop interactions between browser panels
+- Nieuw `Thuis voo project` (oudermap van huidige project)
+- Bekijk `Eigenschappen` van de geselecteerde map in een dialoogvenster
+- Kiezen voor welke mappen `Snel scannen` moet worden uitgevoerd
+- Kiezen voor `Map toevoegen` aan `Favorieten` via standaard bestandsdialoogvenster
+- Nieuwe `/Volumes` op de Mac (verborgen map voor toegang tot externe opslag)
+- Nieuwe groep `OWS` (samenvoeging van beschikbare verbindingen voor kaartservers)
+- Een tweede browser openen (`Beeld -> Panelen -> Browser (2)`) zodat men gegevensbronnen tussen de twee browserpanelen kan slepen en neerzetten
 - Iconen zijn nu ingedeeld per groepstype (bestandssysteem, databases, map servers)
-- Layer `Properties` now have better visual layout
+- `Laageigenschappen` heeft nu een betere visuele indeling
 
 ![image8](images/changelog-2.0_browser.png)
 ## Gegevensproviders
 ### Mogelijkheid: Raster-gegevensprovider vernieuwd
-The raster data provider system has been completely overhauled. One of the best new features stemming from this work is the ability to \'Layer -\> Save As\...\' to save any raster layer as a new layer. In the process you can clip, resample, and reproject the layer to a new Coordinate Reference System. You can also save a raster layer as a rendered image so if you for example have single band raster that you have applied a colour palette to, you can save the rendered layer out to a georeferenced RGB layer.
+De rastergegevensprovider is volledig op de schop gegaan. Een van de beste nieuwe functies die hieruit voortkomt, is de mogelijkheid via \'Laag -> Opslaan als\...\' elke rasterlaag op te slaan als een nieuwe laag. Tijdens het opslaan kunt u daarbij een bewerking clippen uitvoeren (knippen met masker), resamplen (andere kleurenindeling) en de laag projecteren naar een ander Coördinaten Referentie Systeem. U kunt ook een rasterlaag opslaan als een gerenderde afbeelding. Bijvoorbeeld nadat een eenbandsraster, waar een kleurenpalet is toegepast, kunt u deze gerenderde afbeelding opslaan als een RGB-rasterlaag met geoverwijzingen.
 
 ![image9](images/Selection_017.png)
 ### Mogelijkheid: Ondersteuning voor Oracle Spatial
@@ -81,17 +81,17 @@ De WMS-cliënt in QGIS ondersteunt WMTS (Web Mapping Tile Service) waarbij de se
 
 ![image13](images/Selection_035.png)
 ## Algemeen
-### Feature: Quantum GIS is now known only as \'QGIS\'
-The \'Quantum\' in \'Quantum GIS\' never had any particular significance and the duality of referring to our project as both `Quantum GIS` and `QGIS` caused some confusion. We are streamlining our project and as part of that process we are officially dropping the use of the word `Quantum` - henceforth we will be known only as `QGIS` (spelled with all letters in upper case). We will be updating all our code and publicity material to reflect this.
+### Mogelijkheid: Quantum GIS is nu nog alleen bekend als \'QGIS\'
+Het \'Quantum\' in \'Quantum GIS\' had eigenlijk geen bijzondere betekenis en doordat ons project twee verschillende namen kende, `Quantum GIS` en `QGIS`, veroorzaakte dat alleen maar verwarring. Als onderdeel van het verder stroomlijnen van het project is officieel besloten het woord `Quantum` niet langer meer te gebruiken. Het project gaat voortaan verder als `QGIS` (in hoofdletters). Alle code en gepubliceerd materiaal zal hierop worden aangepast.
 
 ![image14](images/qgis.png)
 ## Labelen
 ### Mogelijkheid: Nieuw systeem voor labels
-The labelling system has been totally overhauled - it now includes many new features such as drop shadows, \'highway shields\', many more data bound options, and various performance enhancements. We are slowly doing away with the \'old labels\' system, although you will still find that functionality available for this release, you should expect that it will disappear in a follow up release.
+Het nieuwe systeem voor labels is grondig verbouwd - het bevat nu veel nieuwe functionaliteit als achtergrondschaduwen, wegmarkeringen, veel meer datagerelateerde opties en verschillende verbeteringen voor de uitvoering. De \'oude\' manier van labels zijn we zo langzamerhand aan het verlaten, maar het is er nog wel in deze uitgave. Maar houd er rekening mee dat deze in de volgende uitgave is verdwenen. 
 
 ![image15](images/Layer_labeling_settings_003_1.png)
 ### Mogelijkheid: Op expressie gebaseerd labeleigenschappen
-The full power of normal label and rule expressions can now be used for label properties. Nearly every property can be defined with an expression or field value giving you more control over the label result. Expressions can refer to a field (e.g. set the font size to the value of the field \'font\') or can include more complex logic.
+De volledige kracht van de normale labels en regelexpressies kunnen nu ook voor labeleigenschappen worden gebruikt. Bijna elke eigenschap kan nu worden ingesteld met een expressie of een veldwaarde, zodat u meer controle heeft over het resultaat van het label. Expressies kunnen verwijzen naar een veld (bijv. de lettergrootte afhankelijk maken van de waarde van het veld \'lettertype\') of kunnen een veel complexere logica bevatten.
 
 Voorbeelden van gebonden eigenschappen omvatten:
 - Lettertype
@@ -101,10 +101,10 @@ Voorbeelden van gebonden eigenschappen omvatten:
 
 ![image16](images/2013-09-05_09_44_59-qgis-dev-bin.png)
 ### Mogelijkheid: Oude systeem voor labels vervallen
-Use of the older labelling engine available in QGIS \<= 1.8 is now discouraged (i.e. deprecated), but has not been removed. This is to allow users to migrate existing projects from the old to new labelling engine.
+Gebruik van de oudere manier van labelen, zoals beschikbaar in QGIS \<= 1.8  wordt afgeraden (komt te vervallen), maar is nog niet verwijderd. Het bestaat nog, zodat gebruikers de mogelijkheid hebben om hun projecten bij te werken, waarbij de oudere manier van labelen wordt vervangen door de nieuwe manier.
 
 De volgende richtlijnen voor het werken met de oude mogelijkheid gelden in QGIS 2.0:
-- Deprecated labelling tab is removed from vector layer properties dialog for new projects or older opened projects that don\'t use that labelling engine.
+- De tab Labels wordt niet langer getoond in het menu Eigenschappen voor vectorlagen, wanneer het een nieuw project betreft of een ouder, geopend project waarbij de oudere manier van labelen niet is gebruikt.
 - De vervallen tab blijft echter actief voor projecten opgeslagen in een oudere versie waarin een vectorlaag deze oudere manier van labelen nog gebruikt en gaat ook niet weg wanneer het project wordt opgeslagen zonder lagen die de oude manier van labelen hebben ingeschakeld.
 
 De vervallen tab voor labels kan worden in-/uitgeschakeld voor het huidige project, via Python consoleopdrachten, bijv.:
@@ -122,7 +122,7 @@ De vervallen tab voor labels kan worden in-/uitgeschakeld voor het huidige proje
 - Vectorlagen in mode bewerken, hebben nu een rood potlood om aan te geven dat er nog niet opgeslagen wijzigingen aanwezig zijn.
 - De actieve laag wordt nu onderlijnd zodat deze is aangegeven zelfs wanneer er meerdere lagen zijn geselecteerd of geen laag is geselecteerd
 - Door te klikken in de witruimte van de legenda van niet-lijst onderdelen wordt de selectie ongedaan gemaakt
-- `Right-clicks` are now treated as `left-clicks` prior to showing the contextual menu, allowing for one click instead of two
+- `Klikken met rechts` wordt nu hetzelfde behandeld als `klikken met links`, voorheen voor het starten van het contextuele snelmenu, zodat met één muisklik hetzelfde kan worden bereikt als voorheen met twee muisklikken
 - Groepen en lagen kunnen nu optioneel in een vet lettertype worden weergegeven
 - Voor Rasterlagen gemaakte voorbeeldpictogrammen kunnen nu uitgezet worden, omdat het tekenen daarvan vertragend kan werken
 
@@ -145,7 +145,7 @@ U kunt nu HTML-elementen op uw kaart plaatsen.
 
 ![image22](images/2013-09-08_22_31_33-Composer_1.png)
 ### Mogelijkheid: Expressies in labels Printvormgeving
-The composer label item in 1.8 was quite limited and only allowed a single token \$CURRENT_DATE to be used. In 2.0 full expression support has been added too greater power and control of the final labels.
+Het label in Printvormgeving in 1.8 was nogal beperkt en alleen \$CURRENT\_DATE kon worden gebruikt. In 2.0 is volledige ondersteuning voor expressies toegevoegd, waarmee men veel meer controle heeft gekregen over de te plaatsen labels. 
 
 Een label met een expressie als:
 
@@ -155,7 +155,7 @@ zal bij afdrukken (en weergeven) worden geëvalueerd om te genereren:
 
     This was printed on: 06.09.2013
     
-When atlas generation is enabled the currently active features\' attribute values will also be accessible in the expressions allowing such things as:
+Als Atlas-generatie is ingeschakeld, zullen de waarden van attributen van de huidige actieve objecten ook toegankelijk zijn in de expressies, wat dingen mogelijk maakt als:
 
     Asset ID [% "ID" %] and the Tree Type is [% "TreeType" %]
     
@@ -177,9 +177,9 @@ Behoefte om te laten zien waar het getoonde gebied van de hoofdkaart zich bevind
 
 ![image27](images/Picture1_1.png)
 ### Mogelijkheid: Laag mengen
-Layer blending makes it possible to combine layers in new and exciting ways. While in older versions, all you could do was to make the layer transparent, you can now choose between much more advanced options such as \"multiply\", \"darken only\", and many more.
+Het mengen van lagen maakt het mogelijk om lagen te combineren op nieuwe, verrassende manieren. In de oudere versies kon je lagen transparant maken, maar nu kun je kiezen uit veel geavanceerdere manieren zoals \"multiply\", \"darken only\" en nog veel meer.
 
-Blending can be used in the normal map view as well as in print composer. For a short tutorial on how to use blending in print composer to make the most out of background images, see [\"Vintage map design using QGIS\"](http://anitagraser.com/2013/07/29/vintage-map-design-using-qgis/).
+Mengen kan worden gebruikt in de normale kaartweergave, maar ook in Printvormgeving. Bekijk, voor een korte handleiding over hoe mengen te gebruiken om het meeste uit de achtergrond te halen, [\"Vintage map design using QGIS"](http://anitagraser.com/2013/07/29/vintage-map-design-using-qgis/).
 
 ![image28](images/printcomposer_blending_1.png)
 ### Mogelijkheid: Ondersteuning voor HTML in labels
@@ -194,7 +194,7 @@ De legenda in de Printvormgeving ondersteunt nu het gebruik van een legenda die 
 De volgende verbeteringen zijn gemaakt aan het beheer van Printvormgeving:
 - De naam van Printvormgeving kan nu worden gegeven bij het aanmaken ervan, waarbij optioneel gekozen kan worden uit andere namen voor Printvormgeving
 - Lay-outs kunnen nu worden gedupliceerd
-- `New from Template` and from `Specific` (in Composer Manager) creates a composer from a template located anywhere on the filesystem
+- `Nieuw uit sjabloon` en van `Specifiek` (in Lay-out beheren) maakt een printvormgeving vanuit een reeds opgeslagen sjabloon
 - Het ouder-project kan direct worden opgeslagen vanuit de werkruimte van Printvormgeving
 - Alle beheersacties voor printvormgeving zijn direct beschikbaar vanuit de werkruimte van Printvormgeving
 
@@ -214,7 +214,7 @@ De expressie engine wordt op steeds meer plekken in |qg| beschikbaar, waarmee bi
 
 ![image34](images/2013-09-06_09_10_49-Expression_based_label.png)
 ### Mogelijkheid: Aangepaste functies voor expressies
-If the expression engine doesn\'t have the function that you need. Not to worry. New functions can be added via a plugin using a simple Python API.
+Wanneer de expressie-engine niet die functie heeft die u nodig hebt, kan er een nieuwe functie worden toegevoegd via een plug-in, met behulp van een eenvoudige Python API.
 
 ![image35](images/2013-09-06_09_14_58-untitled__routing_-_Sublime_Text_UNREGISTERED.png)
 ### Mogelijkheid: Nieuwe opgeruimde Python API
@@ -231,7 +231,7 @@ De manier waarop objecten uit een laag worden gelezen is ook verbeterd, wat mult
     
 ![image36](images/2013-09-06_09_28_08-untitled__routing_-_Sublime_Text_UNREGISTERED.png)
 ### Feature: Compatibiliteit code met uitgaven versie 1.x
-As this is a major release, it is not completely API compatible with previous 1.x releases. In most cases porting your code should be fairly straightforward - you can use [this guide](https://github.com/qgis/QGIS/wiki/Python_plugin_API_changes_from_18_to_20) to get started. Please use the developer mailing list if you need further help.
+Omdat dit een major release betreft, is de API niet volledig compatibel met de voorgaande versies 1.x. In de meeste gevallen is het porten van de code vrij eenvoudig - u kunt om te beginnen [deze handleiding](https://github.com/qgis/QGIS/wiki/Python_plugin_API_changes_from_18_to_20) gebruiken als start. Ga naar de developer mailinglijst als u meer hulp nodig hebt.
 
 ![image37](images/Selection_021.png)
 ### Mogelijkheid: Python projectmacro's
@@ -253,15 +253,15 @@ Het nieuwe overzicht van symboollagen gebruikt een duidelijke boomstructuur die 
 
 ![image40](images/symbollayertree.png)
 ### Mogelijkheid: Ondersteuning voor transparantie in kleurdefinities
-In most places where you select colours, QGIS now allows you to specify the alpha channel (which determins how transparent the colour should be). This allows you to create great looking maps and to hide data easily that you don\'t want users to see.
+Op de meeste plaatsen in QGIS waar je kleuren kunt kiezen, kun je nu ook het alfakanaal instellen (waarmee je de mate van transparantie kunt instellen). Dit draagt bij aan het maken van kaarten die er erg goed uitzien, waarbij u ook gegevens kunt verbergen waarvan u niet wilt dat die zichtbaar zijn voor gebruikers.
 
 ![image41](images/Layer_Properties_-_nat_026_1.png)
 ### Mogelijkheid: Kleurbeheer voor rasterlagen
-QGIS 2.0 allows you to precisely control exactly how you\'d like raster layers to appear. You now have complete control over the brightness, contrast and saturation of raster layers. There\'s even options to allow display of rasters in grayscale or by colorising with a specified color.
+QGIS 2.0 geeft u meer controle over hoe de rasterlagen eruit komen te zien. U hebt nu de volledige controle over lichtsterkte, contrast en verzadiging van kleuren van rasterlagen. Er zijn ook opties die rasters kunnen tonen in grijstinten of in een bepaalde kleur.
 
 ![image42](images/Layer_Properties_-_blue_marble_032.png)
 ### Mogelijkheid: Symbologie tussen lagen kopiëren
-Its now super easy to copy symbology from one layer to another layer. If you are working with several similar layer, you can simply `right-click` on one layer, choose `Copy Style` from the context menu and then `right-click` on another layer and choose `Paste-Style`.
+Het is nu erg simpel geworden om de symbologie van de ene naar een andere laag te kopiëren. Wanneer u werkt met meerdere gelijksoortige lagen, kunt u `met rechts klikken` op een laag, de optie `Stijl kopiëren` kiezen en deze, via `met rechts klikken`, in een andere laag overbrengen met de optie `Stijl plakken`. 
 
 ![image43](images/Selection_034.png)
 ### Mogelijkheid: Stijl in uw database opslaan
@@ -269,16 +269,16 @@ Als u vectorgegevens opslaat in een database, dan kan nu ook de stijldefinitie v
 
 ![image44](images/Selection_037.png)
 ### Mogelijkheid: Ondersteuning voor kleurovergangen
-Colour ramps are now available in many places in QGIS symbology settings and QGIS ships with a rich, extensible set of colour ramps. You can also design your own and many [cpt-city](http://soliton.vm.bytemark.co.uk/pub/cpt-city/) themes are included in QGIS now \'out of the box\'. Color ramps even have full support for transparency!
+Kleurovergangen zijn nu beschikbaar op veel plaatsen onder QGIS instellingen voor symbologie, en QGIS komt met een rijke set aan kleurovergangen. U kunt ook uw eigen kleurovergang ontwerpen en veel cpt-city thema's voor [cpt-city](http://soliton.vm.bytemark.co.uk/pub/cpt-city/) zijn nu \'out of the box\' toegevoegd in QGIS. De kleurovergangen ondersteunen ook transparantie!
 
 ![image45](images/Selection_038.png)
 ### Mogelijkheid: Standaard stijlen instellen voor alle typen lagen
-Now QGIS lets you control how new layers will be drawn when they do not have an existing `.qml` style defined. You can also set the default transparency level for new layers and whether symbols should have random colours assigned to them.
+Nu laat QGIS u beheren hoe nieuwe lagen zullen worden getekend als zij geen bestaande stijl `.qml` hebben gedefinieerd. U kunt ook de standaardtransparantie die moet worden toegekend aan nieuwe lagen instellen en of symbolen willekeurige kleuren toegekend moeten krijgen.
 
 ![image46](images/Screen_Shot_2013-09-12_at_11.18.52_PM.png)
 ## Gebruikersinterface
 ### Mogelijkheid: Nieuw thema pictogram
-We have updated out icon theme to use the \'GIS\' theme which introduces an improved level of consistency and professionalism to the QGIS user interface.
+We hebben ons thema voor pictogrammen bijgewerkt om het thema \'GIS\' te gebruiken, zodat de gebruikersinterface van QGIS een meer consistent en professioneler uiterlijk heeft gekregen.
 
 ![image47](images/Selection_001_1.png)
 ### Mogelijkheid: Zij-tabs, in te klappen groepen
@@ -286,11 +286,11 @@ We hebben de lay-out van tabbladen gestandaardiseerd en de inklapbare groepen ge
 
 ![image48](images/Selection_005.png)
 ### Mogelijkheid: Zachte mededelingen
-In many cases we want to tell you something, but we don\'t want to stop your work or get in your way. With the new notification system QGIS can let you know about important information via a yellow message bar that appears at the top of the map canvas but doesn\'t force you to deal with it if you are busy doing something else. Programmers can create these notification (e.g. from a plugin) too using our python API.
+In veel gevallen willen we een mededeling doen, maar we willen niet dat dit uw werkzaamheden onderbreekt. Met het nieuwe systeem voor mededelingen kan QGIS belangrijke informatie via een gele berichtenbalk, die zich boven het kaartvenster bevindt, tonen. Maar zo'n mededeling zal uw werkzaamheden niet onderbreken wanneer u ergens anders mee bezig bent. Ontwikkelaars kunnen ook mededelingen maken die getoond worden (bijvoorbeeld vanuit de plug-in) via onze Python-API. 
 
 ![image49](images/Selection_030.png)
 ### Mogelijkheid: Aangepast lettertype voor applicatie en Qt-stylesheet
-The system font used for the application\'s user interface can now be set. Any C++ or Python plugin that is a child of the QGIS GUI application or has copied/applied the application\'s GUI stylesheet can inherit its styling, which is useful for GUI fixes across platforms and when using custom QGIS Qt widgets, like `QgsCollapsibleGroupBox`.
+Het systeemlettertype voor de gebruikersinterface van de toepassing kan nu worden ingesteld. Elke plug-in voor C++ of Python die een kind is van de QGIS GUI-toepassing of die het GUI-stylesheet van de toepassing heeft gekopieerd/toegepast, kan de stijl erven. Dit is erg handig, zodat de GUI kan worden aangepast voor de verschillende platformen en wanneer aangepaste QGIS Qt-widgets worden gebruikt, zoals de `QgsCollapsibleGroupBox`.
 
 Toegang tot het gegenereerde QGIS GUI-toepassing stylesheet voor het huidige platform kan worden verkregen nadat het is opgestart (in PyQGIS):
 
@@ -298,7 +298,7 @@ Toegang tot het gegenereerde QGIS GUI-toepassing stylesheet voor het huidige pla
     
 ![image50](images/changelog-2.0_app-font.png)
 ### Mogelijkheid: Live dialoogvensters voor kleurkeuze en knoppen
-Every color chooser button throughout the interface has been updated to give visual feedback on whether the current color has a transparent, or \'alpha,\' component. The color chooser opened by the new color buttons will now always be the default for the operating system. If the user has `Use live-updating color chooser dialogs` checked under `Options -> General -> Application`, any change in the color chooser will immediately be shown in the color button and for any item currently being edited, where applicable.
+Elke knop voor het kiezen van kleuren van de toepassing is bijgewerkt, zodat direct zichtbaar wordt wat er is gewijzigd of wanneer de huidige kleur een transparante, of \'alfa\'-component heeft. De kleurenkeuze opent nu standaard met de nieuwe kleurenknoppen zoals ingesteld voor het besturingssysteem. Als de gebruiker de optie `Gebruik directe kleurenkeuzedialogen bijwerken` selecteert onder `Opties -> Algemeen -> Applicatie` dan zal elke wijziging in de kleurenkeuze direct zichtbaar zijn in de kleurenknoppen en elk object dat wordt bewerkt waar toepasbaar.
 
 ![image51](images/changelog-2.0_live-color-dlgs.png)
 ### Mogelijkheid: SVG-annotaties

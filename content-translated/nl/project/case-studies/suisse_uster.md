@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>April 01, 2011</span>
+  <span>1 april 2011</span>
 </p>
 
 De stad Uster gebruikt QGIS sinds 2007. Aangemoedigd door de beslissing van het kanton Solothurn om QGIS te gebruiken als Desktop GIS als vervanging voor ArcView, Uster besloot om et ook een kans te geven. De stad sloot aan bij de inspanningen voor verdere ontwikkeling van de toepassing QGIS, door nieuwe mogelijkheden voor te stellen en te testen en door de ontwikkeling financieel te steunen. Als tegenprestatie ontving Uster een snel evoluerend en platformonafhankelijk Desktop GIS en oplossing voor WebGIS, gesteund door een wereldwijde gebruikers- en ontwikkelgemeenschap.
@@ -30,7 +30,7 @@ Postgis/PostgreSQL wordt gebruikt als centrale opslag voor geogegevens. Andere d
 
 De stadsadministratie gebruikt ook commerciële GIS software: Autodesk Topobase, voor het vastleggen en bewerken van gegevens van de kadastrale en afvalwater-infrastructuur, en GE Smallworld voor het beheren van netwerken voor gas, water en elektriciteit. Dit zijn echter expertsystemen die in gebruik zijn bij speciaal getrainde werknemers. Alle andere GIS-projecten en het bekijken van alle gegevens wordt afgehandeld door QGIS.
 
-In the second half of 2010, first tests with QGIS server were carried out. In 2011 we introduced a new WebGIS system based on the QGIS WMS server and GeoExt/OpenLayers as the web client. The main reasons for the decision to use QGIS server were the considerable time savings made possible by re-using the existing QGIS desktop project configurations, rather than having to manage parallel Web project configurations. Additional advantages are the rich set of symbolization and labeling options and the consistent map rendering between the Desktop GIS application and the Web-GIS. The QGIS webclient can be tested and used at <http://gis.uster.ch/>
+In de tweede helft van 2010 werden de eerste testen met QGIS-server uitgevoerd. In 2011 introduceerden we een nieuw WebGIS-systeem, gebaseerd op de QGIS WMS-server en GeoExt/OpenLayers als de webclient. De voornaamste reden voor de beslissing om QGIS-server te gebruiken was de aanzienlijke besparing in tijd die mogelijk was door de bestaande projectconfiguraties voor QGIS Desktop opnieuw te kunnen gebruiken, in plaats van het beheren van parallelle webprojectconfiguraties. Aanvullende voordelen waren de rijke set voor symbologie en opties voor labelen en het consistente renderen van kaarten tussen de toepassing voor de Desktop GIS en de Web-GIS. De QGIS-webclient kan worden getest en gebruikt op <http://gis.uster.ch/>
 
 ![](../images/suisse_uster3.png)
 

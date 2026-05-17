@@ -585,7 +585,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 | QGIS crashes when cancelling add child form | [#41295](https://github.com/qgis/QGIS/issues/41295) | [PR #41375](https://github.com/qgis/QGIS/pull/41375) | N/A |
 | Group has no name when importing sublayers from browser panel | [#41343](https://github.com/qgis/QGIS/issues/41343) | [PR #41379](https://github.com/qgis/QGIS/pull/41379) | [PR #41402](https://github.com/qgis/QGIS/pull/41402) |
 | Identifty tool does not work anymore on arcgis map services layers | [#41311](https://github.com/qgis/QGIS/issues/41311) | [PR #41427](https://github.com/qgis/QGIS/pull/41427) | [PR #41430](https://github.com/qgis/QGIS/pull/41430) |
-| Signal committedAttributeValuesChanges not emitted when project in auto transaction mode | [#41477](https://github.com/qgis/QGIS/issues/41477) | [PR #41539](https://github.com/qgis/QGIS/pull/41539) | risky |
+| Signal committedAttributeValuesChanges not emitted when project in auto transaction mode | [#41477](https://github.com/qgis/QGIS/issues/41477) | [PR #41539](https://github.com/qgis/QGIS/pull/41539) | リスクあり |
 | The project file does not store variables with formatted text | [#41541](https://github.com/qgis/QGIS/issues/41541) | Upstream bug in QT |  |
 | New spatial table in a geopackage with index always throw a warning | [#41436](https://github.com/qgis/QGIS/issues/41436) | [PR #41556](https://github.com/qgis/QGIS/pull/41556) | [PR #41609](https://github.com/qgis/QGIS/pull/41609) |
 | Empty \"Exclude layers\" selection list in Server settings dialog when using projects saved in GPKG files or PGSQL databases | [#40552](https://github.com/qgis/QGIS/issues/40552) | [PR #41605](https://github.com/qgis/QGIS/pull/41605) |  |

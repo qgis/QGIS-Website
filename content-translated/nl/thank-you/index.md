@@ -77,7 +77,7 @@ U kunt ook naar de gebruiksgevallen kijken - er staan daar veel inspirerende ver
 ### Praktijkvoorbeelden
 We verzamelen inspirerende verhalen van feitelijke gebruikers die de veelzijdigheid en kracht van de oplossing van QGIS laten zien.
 
-[Find out more]({{< ref "project/case-studies.md" >}})
+[Meer weten]({{< ref "project/case-studies.md" >}})
 
 {{<rich-content-end >}}
 
@@ -95,7 +95,7 @@ We verzamelen inspirerende verhalen van feitelijke gebruikers die de veelzijdigh
 ### Lokale gebruikersgroepen
 Neem deel aan een gemeenschap van gelijkgestemde individuen in uw regio.
 
-[Local groups list]({{< ref "community/groups.md" >}})
+[Lijst met lokale groepen]({{< ref "community/groups.md" >}})
 
 {{<rich-content-end >}}
 

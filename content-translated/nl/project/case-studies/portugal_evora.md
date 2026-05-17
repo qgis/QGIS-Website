@@ -17,23 +17,23 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2010</span>
+  <span>1 juli 2010</span>
 </p>
 
-I started applying GIS to my work in biogeography about 10 years ago. Through my graduate internship, PhD work and two other research jobs, I used the proprietary software packages that were available and used at my workplaces — mainly CartaLinx, Idrisi, ArcView and ArcGIS. But I found it rather annoying that we were constantly dealing with license renewal issues, and that I could not use the software away from the workplace unless I acquired my own license.
+Ik begon ongeveer 10 jaar geleden met het gebruiken van GIS voor mijn werk in biogeografie. Tijdens mijn interne stage, PhD-werk en twee andere onderzoeksbanen gebruikte ik merkgebonden softwarepakketten die beschikbaar waren en op mijn werk werden gebruikt —— voornamelijk CartaLinx, Idrisi, ArcView en ArcGIS. Maar ik vond het nogal irritant dat we constant bezig waren met het vernieuwen van de licenties, en dat ik de software niet ergens anders kon gebruiken dan op mijn plaats van tewerkstelling, tenzij ik een eigen licentie kocht.
 
 <figure>
 <img src="../images/portugal_evora1.png" alt="portugal_evora1.png" />
-<figcaption>Distribution of Spanish algyroides (Algyroides marchi) at three spatial scales and from two different data sources.</figcaption>
+<figcaption>Verdeling van Spaanse kielhagedissen (Algyroides marchi) op drie ruimtelijke schalen en uit twee verschillende gegevensbronnen.</figcaption>
 </figure>
 
 Ik bedacht mij dat het overschakelen naar gratis en vrije software mij deze problemen zou besparen. Er waren echter nogal wat vooroordelen over de analytische mogelijkheden van vrije software, en zelfs nadat ik over het potentieel van GRASS, was ik nog steeds terughouden omdat ik dacht dat het moeilijk te leren zou zijn. Ik was ook bang dat het nogal moeilijk zou zijn om alle kaarten en analyses, die ik tot dan toe had gedaan, te migreren. Aan het begin van mijn postdoctoraal in 2008 gaf ik het uiteindelijk ene kans en nam een trainingscursus in QGIS en GRASS. Dat was mogelijk de beste beslissing in mijn professionele leven! Ik merkte dat QGIS een zeer intuïtieve interface voor GRASS verschafte, en dat zij elkaar perfect aanvulden, en dat zij alle analytische mogelijkheden verschafte die ik nodig had.
 
-I started using both programs immediately after the course. Not only did I begin all my new GIS work with QGIS/GRASS \[e.g. 1, 2\], but I also did follow-up analyses on previous works that I had done with commercial software. For example, I had built models of otter \[3\] and desman \[4\] distribution in the Iberian Peninsula. After switching to QGIS-GRASS, I analysed how those models behaved when downscaled to a finer resolution \[5\]. Another previous work on biogeographic relationships between Iberian lynx and rabbit \[6\] had a follow-up after I switched to QGIS-GRASS \[7\]. Not only did I not have any problems with the migration of the data and previous results: I also found it much easier to do the things I wanted to do with the new software, and was able to do extra analyses which I could not have done with the programs I used before.
+Ik begon beide programma's direct na de cursus te gebruiken. Niet alleen begon ik al mijn nieuwe werk in GIS met QGIS/GRASS \[bijv. 1, 2\], maar ik deed ook vervolganalyses op eerder werk dat ik had gedaan met commerciële software. Ik had bijvoorbeeld modellen gebouwd van de verdeling van otter \[3\] en desman \[4\] op het Iberisch Schiereiland. Na het overschakelen op QGIS-GRASS analyseerde ik hoe deze modellen zich zouden gedragen op een lagere schaal met een fijnere resolutie \[5\]. Een ander eerder werk over biogeografische relaties tussen de Iberische lynx en konijn \[6\] kreeg een vervolg nadat ik was overgeschakeld naar QGIS-GRASS \[7\]. Niet alleen liep ik tegen geen enkel probleem aan bij het migreren van de gegevens en eerdere resultaten: ik merkte ook dat het met de nieuwe software veel eenvoudiger was de dingen te doen die ik wilde doen, en was in staat extra analyses te doen die ik niet zou hebben kunnen doen met de programma's die ik eerder gebruikte.
 
 <figure>
 <img src="../images/portugal_evora2.png" alt="portugal_evora2.png" />
-<figcaption>Environmental suitability for the Pyrenean desman (Galemys pyrenaicus) together with presence, absence, and random points in north Catalonia (Spain).</figcaption>
+<figcaption>Milieutechnische geschiktheid voor de Pyrenese desman (Galemys pyrenaicus) samen met aanwezigheid, afwezigheid en willekeurige punten in noordelijk Catalonië (Spanje).</figcaption>
 </figure>
 
 ## Conclusie

@@ -18,7 +18,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>October 30, 2016</span>
+  <span>30 oktober 2016</span>
 </p>
 
 ## Definitie van het probleem
@@ -43,10 +43,10 @@ Al deze items werden verbonden op het platform van QGIS platform. Hieronder staa
 We hadden, om ons doel te kunnen bereiken, nog een aantal functionele componenten nodig, los van het standaard platform van GIS:
 - GRASS - een verzameling algoritmes voor vector en netwerk,
 - QGIS plug-ins - OpenLayer, QuickOSM, Scipy Point Clustering, WorkContextTracer (onze plug-in),
-- QGIS modeler -- tool for graphical flow modelling,
+- QGIS Grafische modellen bouwen – programma voor grafisch bouwen van modellen,
 - SpatiaLite - een lokale database voor het opslaan van gegevens voor in- en uitvoer.
 
-The entire solution was based on the concept of so called wizards which realize the process of preparing the FTTx network technical concept step by step. Using \'geoprocessing\' modeller, we created models requiring only the necessary input data from operator. Algorithmic complexity was encapsulated within models in the form of designed flow, which use existing QGIS algorithms and calls dedicated scripts.
+De gehele oplossing was gebaseerd op het concept van zogenaamde assistenten die, stap voor stap, het proces van het realiseren van het voorbereiden van het technische concept voor het FFTx-netwerk doorliepen. Met behulp van Grafische modellen bouwen \'geoprocessing\' maakten we modellen die alleen de benodigde invoergegevens van de verwerker nodig hadden. Algoritmische complexiteit werd in modellen ingebouwd in de vorm van een ontworpen stroom, die bestaande algoritmes van QGIS gebruikt en toegewezen scripts aanroept.
 
 ![](../images/poland_ffth/toolbox.png)
 
@@ -56,7 +56,7 @@ We verschaften een plug-in, genaamd WorkContextTracer, die ons werk groepeert in
 
 Netwerkalgoritmes gebaseerd op de functie Graph die beschikbaar zijn in GRASS werden verrijkt door de scripts voor telecommunicatie toe te voegen. We introduceerden een concept van het vragen van clusters wat ons in staat stelde zowel K-gemiddelden als hiërarchische methoden te gebruiken om vraagpunten samen te voegen.
 
-Geoprocessing scripts with usage of cable routing layer and Djikstra algorithm develops a cable route proposal with optical fiber nodes\' locations.
+Scripts voor Geoprocessing met gebruik van de laag voor routeren van kabels en Dijkstra-algoritme ontwikkelen een voorstel voor routering van de kabel met locaties voor optische fiberknopen.
 
 Operators hebben ook een verbinding nodig tussen gemaakte netwerkknopen en adrespunten om de individuele kosten voor elke netwerktak in te schatten. We maakten. om deze taak te voltooien, scripts die deze bewerking uitvoert en de resultaten opslaat in de lokale database van SpatiaLite. De gegevens moesten zijn te exporteren naar een werkblad, dus gebruikten we een vrije softwarebibliotheek om aan dit vereiste te voldoen.
 ## Hoe gebruikers het gereedschap gebruikten om een netwerkplan FTTH/GPON te maken
@@ -72,7 +72,7 @@ Nadat alle adrespunten waren geclusterd, initieerde de gebruiker de stappen voor
 
 ![](../images/poland_ffth/step1-2_result.png)
 
-Upon the completion of the algorithm, in QGIS there are geometry objects representing planned cables and splice closure locations. Basing on demand data and network topology, an additional information is stored in database such as the length of the cable, its profile, node's serving areas.
+Bij het voltooien van het algoritme staan in QGIS geometrieobjecten die geplande kabels en locaties voor verbindingen weergeven. Gebaseerd op de gevraagde gegevens en topologie van het netwerk, wordt aanvullende informatie opgeslagen in de database, zoals de lengte van de kabel, het profiel ervan, servicegebieden van nodes.
 
 ![](../images/poland_ffth/step4_results.png)
 
@@ -96,15 +96,15 @@ De gebruiker kreeg veel nuttige voordelen:
 - Mogelijkheid om basale economische indicatoren te evalueren, zoals ROI, NPV.
 
 ## Nuttige links en bibliografie
-- <http://europa.eu/rapid/press-release_MEMO-10-200_en.htm> - information on European Digital Agenda
-- <http://www.ftthcouncil.eu/> - FTTH Council Europe website
-- <https://www.scipy.org/> - SciPy project website
+- <http://europa.eu/rapid/press-release_MEMO-10-200_en.htm> - informatie over European Digital Agenda
+- <http://www.ftthcouncil.eu/> - website FTTH Council Europe 
+- <https://www.scipy.org/> - website SciPy project
 - <https://ksavinetworkinventory.com/en/download-geospatial-network-inventory-free/>
-  - tool download webpage.
+  - webpagina downloaden programma.
 
 ## Auteurs
 De oplossing is een volledig vrij open bron-programma. Het is deel van een groter project, gebaseerd op QGIS en FreeCAD-platformen waarvan de bedoeling is dat het wordt gebruikt in de telecommunicatie-industrie.
 
-The author of this QGIS based solution is Softelnet (<https://www.softelnet.com>), a company manufacturing and integrating software for the telecommunications industry for over 15 years.
+De auteur van deze op QGIS gebaseerde oplossing is Softelnet (<https://www.softelnet.com>), een bedrijf dat software maakt en integreert voor de telecommunicatie-industrie voor meer dan 15 jaar.
 
 {{<content-end >}}

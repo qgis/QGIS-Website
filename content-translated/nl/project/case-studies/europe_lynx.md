@@ -17,39 +17,39 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>February 01, 2015</span>
+  <span>1 februari 2015</span>
 </p>
 
 Een praktijkvoorbeeld om het basisbegrip te promoten voor het modelleren van woonomgevingen voor wilde dieren, voor studenten, gebaseerd op gegevens van open source.
 ## Introductie
-Challenged with the task of GIS based modeling for the first time, a working group of undergraduate forestry students of the University for Sustainable Development Eberswalde (HNEE) conducted literature research for habitat suitability and behavior of the Eurasian Lynx (*Lynx lynx*). In the module 'Applied GIS in Natural Resource Management', under the guidance of Prof. Mund, the students quickly discovered the subject's complexity, especially within regard to the adaptability of species to changing environments. With limited research published in English about lynx habitat on the Romanian side, we continued the project based on only freely available data sets and open-source software, aiming to establish conceptual knowledge of habitat modeling, strengthening skills on widely applied QGIS tools and to create a **basic expert model** in the process.
+Uitgedaagd door de taak om voor de eerste keer op GIS gebaseerd te modelleren, voerde een werkgroep van studenten bosbouw aan de University for Sustainable Development Eberswalde (HNEE) literatuuronderzoek uit naar de geschiktheid van de woonomgeving en het gedrag van de Euraziatische Lynx (*Lynx lynx*). In de module ‘Applied GIS in Natural Resource Management’, onder begeleiding van Prof. Mund, ontdekten de studenten al snel de complexiteit van het onderwerp, speciaal met betrekking tot de aanpassing van de soort aan wijzigende omgevingen. Met beperkt onderzoek dat is gepubliceerd in het Engels over de woonomgeving van de lynx habitat op de Romeinse kant, zetten we het project voort, gebaseerd op alleen vrij beschikbare gegevenssets en en open-source software, met als doel het de conceptuele kennis voor het modelleren van woonomgevingen neer te zetten, het versterken van de vaardigheden met breed toegepaste gereedschappen voor QGIS en om in het proces een **basis expertmodel** te maken.
 ## Methodologie
 Alle verzamelde gegevens werden verwerkt met QGIS 2.6 en 2.8, geprojecteerd in ETRS89 / ETRS-LAEA en opgeslagen conform de richtlijn van INSPIRE om te voldoen aan de standaarden van de EU. Een overall **discrete index of weights** werd gedefinieerd en toegepast op alle ingevoerde gegevens.
 
 <figure>
 <img src="../images/europe_lynx1.png" alt="europe_lynx1.png" />
-<figcaption>Figure 1: Workflow - Lynx habitat expert model</figcaption>
+<figcaption>Afbeelding 1: Werkstroom - Lynx woongebied expert model</figcaption>
 </figure>
 
 **Beschrijving werkstroom**
-- Area of Interest \[Step I -- II\]: Based on selected national park areas and adding a 10 kilometer buffer, a minimum bounding box \[α\] was created and clipped with the outline of the river Danube (derived from Corine Land Cover 2006). Further clipping tools \[β\] were applied to all additional data as an initial preparation step (Figure 2)
-- Land Cover Suitability Model \[Step IX\]: \[γ\] Input III and IV were transformed into shape files using the inbuilt #Polygonize function. Corine Landcover (2006) data was reclassified using the field calculator to group land use classes and assign respective index values. Similar processing was applied to Hansen Forestcover data (2000), extracting only areas of cover equal or higher 75 %. Sub-model IX was produced by using the functions #Merge Shapes to combine III with IV and #Rasterize
+- Gebied van interesse \[Stap I – II\]: gebaseerd op geselecteerde gebieden van nationale parken en een buffer van 10 kilometer toegevoegd, er werd een minimaal begrenzingsvak \[α\] gemaakt en afgesneden op de omtrek van de rivier Donau (afgeleid van Corine Land Cover 2006). Verdere gereedschappen voor afsnijden \[β\] werden toegepast op alle aanvullende gegevens als een initieel voorbereidende stap (Afbeelding 2)
+- Land Cover Suitability Model \[Stap IX\]: \[γ\] Invoer III en IV werden getransformeerd in shapefiles met behulp van de ingebouwde functie #Polygoniseren. Gegevens van Corine Landcover (2006) werden opnieuw geclassificeerd met behulp van veldberekening om klassen van landgebruik te groeperen en respectievelijke waarden voor de index toe te kennen. Soortgelijke verwerking werd toegepast op gegevens van Hansen Forestcover data (2000), waarbij alleen gebieden werden uitgenomen met een bedekking van 75% of hoger. Sub-model IX werd geproduceerd met behulp van de functies #Merge Shapes om III met IV te combineren en te #Rasteriseren
 
 *Opmerking: Klassen van landbedekking werden gegroepeerd op mogelijk voorkomen van de lynx en menselijke activiteiten. Hoewel technisch van oudere herkomst, werd informatie, gerelateerd om waarden van bosbedekking, geïntegreerd om de verbetering in de habitat aan te kunnen geven en als een algemeen voorbeeld voor het samenvoegen van ruimtelijke gegevenssets*
-- Habitat Suitability Model \[Step X\]: \[δ\] An Elevation Suitability Index was derived from the AsterDEM 2.0 \[VI\] and together with a Population Density Index \[V\] was integrated into the final habitat suitability model (Figure 3) by using the #Raster calculator
+- Habitat Suitability Model \[Stap X\]: \[δ\] Een Elevation Suitability Index werd afgeleid uit de AsterDEM 2.0 \[VI\] en werd samen met een Population Density Index \[V\] geïntegreerd in het uiteindelijke model voor geschiktheid van habitat (Afbeelding 3) door de #Rasterberekening te gebruiken
 
 ```
     Cover Suitability Model * Population Density Index * Elevation Suitability Index
 ```
-*Note:Defining forest (\>= 75 % cover) as best suitable and using the elevation data to reduce index values above assumed tree line is conceptually related to habitat of deer as the main prey*
-- Potential Hunter Accessibility Model \[Step XI\]: Applying the #Terrain analysis tool \[ε\], a slope layer was extracted from the DEM data and combined \[η\] with a road distance layer, which was produced by processing rasterized OSM road data within the #Proximity function and index values assigned using #Reclassify grid values
+*Opmerking: Definiëren van bos (\>= 75% bedekking) als best geschikt en gebruiken van de hoogtegegevens om waarden van index boven de aangenomen boomgrens is conceptueel gerelateerd aan de habitat van het hert als belangrijkste prooi*
+- Potential Hunter Accessibility Model \[Stap XI\]: Met toepassing van het gereedschap #Terreinanalyse \[ε\], werd een hellingslaag uitgenomen uit de gegevens van de DEM en gecombineerd \[η\] met een laag met wegafstanden, die werd geproduceerd door gerasteriseerde OSM-weggegevens te verwerken met de functie #Proximity en indexwaarden werden toegekend met behulp van rasterwaarden #Reclassify
 
 ```
                           Slopelayer
     Road distance * ( 1 + ----------- )
                              100
 ```
-- Conservation Value Model \[Step XII\]: Is the result of the #Raster calculator function: (Figure 4)
+- Conservation Value Model \[Stap XII\]: Is het resultaat van de functie #Rasterberekening: (Afbeelding 4)
 
 ```
     (Habitat Suitability Model * Hunter Accessibility Model)
@@ -60,7 +60,7 @@ Alle verzamelde gegevens werden verwerkt met QGIS 2.6 en 2.8, geprojecteerd in E
 
 <figure>
 <img src="../images/europe_lynx2.png" alt="europe_lynx2.png" />
-<figcaption>Figure 2, 3 and 4</figcaption>
+<figcaption>Afbeeldingen 2, 3 en 4</figcaption>
 </figure>
 
 ## Conclusie

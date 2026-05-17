@@ -12,7 +12,7 @@ De eerste stap die we namen was het introduceren van UMN MapServer en het maken 
 Na evaluatie van verschillende Desktop GIS-sen besloten we QGIS te gebruiken in samenwerking met GRASS, door ESRI ArcInfo en ArcView3 te vervangen in 2006.
 
 De beslissing werd ingegeven door de volgende aspecten:
-- Due to our use of desktop GIS in a Linux Terminal Server environment, Java wasn\'t an option.
+- Vanwege het gebruik van desktop GIS in een Linux Terminal Server-omgeving was Java geen optie.
 - OSGeo Projectorganisatie
 - GUI vertaald in de Duitse taal
 - Documentatie geschreven in de Duitse taal
@@ -26,7 +26,7 @@ De beslissing werd ingegeven door de volgende aspecten:
 ## Waar gebruiken we QGIS
 In tegenstelling tot de interactieve kaarten die worden geboden door UMN MapServer, moet de desktop GIS een flexibele weergave bieden op de geo-ruimtelijke gegevens van Solothurn. QGIS Desktop GIS is voor hun dagelijkse werk in gebruik bij meer dan 50 gebruikers. Maar veel van hen zijn geen experts in GIS. Zij willen geo-ruimtelijke gegevens visualiseren en/of vastleggen met een intuïtieve gebruikersinterface.
 
-One of the most important Desktop GIS issues is the question: \"How do I get the information from the PostGIS geodata repository I need?\". Since our end users are unfamiliar with data models and the underlying structures of our spatial database, offering the users a raw connection to the PostGIS DB was not an option. We have a metadata database that stores the descriptions of all production data called \'SO!DATA\'.
+Een van de belangrijkste problemen met Desktop GIS is de vraag: \"Hoe krijg ik de informatie die ik nodig heb uit de opslagplaats van PostGIS geogegevens?\". Omdat onze eindgebruikers niet bekend zijn met gegevensmodellen en de onderliggende structuren van onze ruimtelijke database, was het aanbieden van een ruwe verbinding naar de database van PostGIS DB geen optie. We hebben een database van metadata die de beschrijving van alle productiegegevens opslaat, genaamd \'SO!DATA\'.
 
 SO!DATA bevat een menselijk leesbare inventaris van de gegevensmodellen en de niet GIS-Experts-gebruikers zijn in staat deze database te gebruiken om de informatie die zij nodig hebben op te zoeken.
 
@@ -36,11 +36,11 @@ To remove the need for end users to interact directly with PostGIS connections a
 
 ![\"SO!GIS Suche\" plugin developed at the Canton of Solothurn](./images/suisse_solothurn3.png){.align-right}
 
-Another required QGIS plugin we created is called \'SO!GIS Suche\'. This provides the possibility to search for locations like townships, addresses or cadastral parcels (see Figure 2). As a result the user is able to navigate very easily to an area of interest.
+Een andere vereiste plug-in voor QGIS die we hebben gemaakt, is genaamd \'SO!GIS Suche\'. Dit verschaft de mogelijkheid om te zoeken naar locaties zoals dorpen, adressen of kadastrale percelen (zie Afbeelding 2). Als resultaat daarvan kan de gebruiker heel eenvoudig naar een gebied van interesse navigeren.
 
-At the moment many other plugins are under development. These will support data manipulation, analysis or mapping for different projects. Our in-development plugins cover topics such as nature reserves, soil conservation, cadastral data verification, crisis management, abandoned sites and so on.
+Op dit moment worden nog veel meer plug-ins ontwikkeld. Deze zullen het bewerken van gegevens, analyses of maken van kaarten voor verschillende projecten ondersteunen. Onze plug-ins in ontwikkeling omvatten onderwerpen zoals natuurreservaten, conservatie van de bodem, verificatie van kadastrale gegevens, crisisbeheer, verlaten gebieden enzovoort.
 ## Conclusie
-Today we can say that using QGIS was the right decision for us. QGIS offers most of the features requested by our users. The Canton of Solothurn subcontracts the creation of features that QGIS lacks to commercial support providers. With PyQgis and PyQt there are excellent options for easy in-house application development based on QGIS. One huge benefit is the unlimited number of installations. Everyone who needs to use QGIS can use it without any limitations. To push the development of QGIS the Canton of Solothurn has invested approximately \$30,000 into QGIS every year since 2007. This is much more efficient and target-oriented than the payment of support into the black box of our former software provider. Apart from using FOSSGIS, the Canton of Solothurn also provides public geodata free of charge via the SO!ONLINE web portal.
+Vandaag kunnen we zeggen dat het gebruiken van QGIS voor ons de juiste beslissing was. QGIS biedt de meeste mogelijkheden die onze gebruikers nodig hebben. Het Kanton Solothurn subcontracteert het maken van mogelijkheden die ontbreken in QGIS aan commerciële verschaffers van ondersteuning. Met PyQgis en PyQt zijn er excellente opties voor gemakkelijke in-huisontwikkeling van toepassingen, gebaseerd op QGIS. Een groot voordeel is het onbeperkte aantal installaties. Iedereen die QGIS dient te gebruiken, kan het zonder beperkingen gebruiken. Om de ontwikkeling van QGIS te stimuleren heeft het Kanton Solothurn elk jaar ongeveer \$30,000 in QGIS geïnvesteerd, sinds 2007. Dit is veel efficiënter en doelgerichter dan het betalen van ondersteuning in de zwarte doos van onze voormalige softwareverschaffer. Los van het gebruiken van FOSSGIS, verschaft het Kanton Solothurn ook publieke geodata, zonder kosten, via het webportaal SO!ONLINE.
 ## Auteur
 ![Horst Düster](./images/suisse_solothurnaut.jpg){.align-left height="200px"}
 

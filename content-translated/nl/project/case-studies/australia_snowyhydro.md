@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>August 01, 2014</span>
+  <span>1 augustus 2014</span>
 </p>
 
 Snowy Hydro Limited (SHL) is een piek electriciteitsgenerator gevestigd in de Snowy Mountains van New South Wales, Australië. Ondanks het bezit van een variëteit aan generatoren door het gehele land, is Snowy Hydro Limited het meest bekend door het beheren van een iconisch stukje Australische infrastructuur, het Snowy Mountains Hydro Electric Scheme.
@@ -28,7 +28,7 @@ Classificeren van het sneeuwdek gedurende de wintermaanden stelt SHL in staat om
 
 <figure>
 <img src="../images/australia_snowyhydro1.jpg" class="align-center" height="43400" alt="images/australia_snowyhydro1.jpg" />
-<figcaption>Map 1.1 Snowy Water Catchment Map</figcaption>
+<figcaption>Kaart 1.1 Snowy Water Catchment Map</figcaption>
 </figure>
 
 ## Achtergrond
@@ -40,50 +40,50 @@ Het algoritme NDSI zelf is zeer eenvoudig (hieronder weergegeven in Formule 1.1 
 
 <figure>
 <img src="../images/australia_snowyhydro8.png" alt="australia_snowyhydro8.png" />
-<figcaption>Formula 1.1 - Normalised Difference Snow Index (NDSI)</figcaption>
+<figcaption>Formule 1.1 - Genormaliseerde verschil sneeuwindex (NDSI)</figcaption>
 </figure>
 
 Dit algoritme NDSI zal resultaten teruggeven tussen -1 en 1, waarin de drempel van sneeuw normaal gesproken ligt bij waarden groter dan 0.4. Een voorbeeld van de uitvoer van NDSI wordt hieronder weergegeven (Kaart 1.3 - uitvoer NDSI), naast een afbeelding met natuurlijke kleuren (Kaart 1.2 - MODIS ware kleuren) voor 13 juli 2014. Zoals op deze afbeeldingen kan worden gezien is de uitvoer van NDSI zeer goed in het verwijderen van met sneeuw bedekte gebieden uit andere typen landgebruik en wolken. Het kan echter gedeelten van grote waterlichamen ten onrechte classificeren als sneeuw, veroorzaakt dor het feit dat water absorptiekarakteristieken heeft in het gedeelte Bijna infrarood van het spectrum. Deze karakteristiek van de NDSI vereist, op enig moment, het gebruiken van een watermasker in het model.
 
 <figure>
 <img src="../images/australia_snowyhydro2.jpg" class="align-left" width="300" alt="australia_snowyhydro2.jpg" />
-<figcaption>Map 1.2 - MODIS true colour</figcaption>
+<figcaption>Kaart 1.2 - MODIS ware kleuren</figcaption>
 </figure>
 
 <figure>
 <img src="../images/australia_snowyhydro3.jpg" class="align-center" width="300" alt="australia_snowyhydro3.jpg" />
-<figcaption>Map 1.3 - NDSI output</figcaption>
+<figcaption>Kaart 1.3 - NDSI uitvoer</figcaption>
 </figure>
 
 <figure>
 <img src="../images/australia_snowyhydro4.jpg" class="align-left" width="300" alt="australia_snowyhydro4.jpg" />
-<figcaption>Map 1.4 - Recoded "Snow" vs "Non snow"</figcaption>
+<figcaption>Kaart 1.4 - Opnieuw gecodeerde "Sneeuw" vs "Geen sneeuw"</figcaption>
 </figure>
 
-The NDSI output is created with some very simple band map by using the GRASS module \"r.mapcalculator\". Once the NDSI grid was available the NDSI threshold of 0.4 needed to be applied and this would result in a boolean grid depicting \"Snow\" and \"Non snow\" areas. To get that classification another GRASS module \"r.recode\" was used and produced the result shown above in Map 1.4 Recoded 'Snow' vs 'Non Snow'.
+De uitvoer NDSI wordt gemaakt met behulp van een zeer eenvoudige bandkaart door gebruik te maken van de module \"r.mapcalculator\" in GRASS. Zodra het raster NDSI beschikbaar was, diende de NDSI-drempel van 0.4 te worden toegepast en dat zou resulteren in een booleaans raster dat de gebieden "Sneeuw" en "Geen sneeuw" weer zou geven. Een andere module van GRASS \"r.recode\" werd gebruikt om die classificatie te verkrijgen en produceerde het resultaat zoals hierboven weergegeven in Kaart 1.4 Opnieuw gecodeerde ‘sneeuw’ vs ‘geen sneeuw’.
 
-The recoded grid was then converted to a vector polygon dataset and the snow covered areas were extracted (shown below, Map 1.5 - Extracted snow). The snow covered areas were then clipped to the Snowy Water Catchment (shown below, Map - 1.6 Snow inside the SWC), then the large water bodies are masked out (shown below, Map 1.7 - Final snow covered area), and finally the area statistics for the snow covered area is generated.
+Het opnieuw gecodeerde raster werd daarna geconverteerd naar een gegevensset voor een vectorpolygoon en de met sneeuw bedekte gebieden werden uitgenomen (hieronder weergegeven, Kaart 1.5 - Uitgenomen sneeuw). De met sneeuw bedekte gebieden werden hierna geclipt tot de Sneeuwwateropvang (hieronder weergegeven, Kaart 1.6 - Sneeuw binnen de SWO). Daarna werden de grote waterlichamen eruit genomen met een masker (hieronder weergegeven, Kaart 1.7 - Uiteindelijk met sneeuw bedekte gebied), en tenslotte werden de gebiedsstatistieken voor het met sneeuw bedekte gebied gegenereerd.
 
 <figure>
 <img src="../images/australia_snowyhydro5.jpg" class="align-left" width="300" alt="australia_snowyhydro5.jpg" />
-<figcaption>Map 1.5 - Extracted Snow</figcaption>
+<figcaption>Kaart 1.5 - Uitgenomen sneeuw</figcaption>
 </figure>
 
 <figure>
 <img src="../images/australia_snowyhydro6.jpg" class="align-center" width="300" alt="australia_snowyhydro6.jpg" />
-<figcaption>Map 1.6 - Snow inside the SWC</figcaption>
+<figcaption>Kaart 1.6 - Sneeuw binnen het SWC</figcaption>
 </figure>
 
 <figure>
 <img src="../images/australia_snowyhydro7.jpg" class="align-left" width="300" alt="australia_snowyhydro7.jpg" />
-<figcaption>Map 1.7 - Final snow covered area</figcaption>
+<figcaption>Kaart 1.7 - Uiteindelijke met sneeuw bedekte gebied</figcaption>
 </figure>
 
-The output from the model is a vector polygon showing the snow covered area within the Snowy Water Catchment. The attributes of the polygon include the area covered by the snow and the percentage of the catchment that is covered. The model in its entirety can be seen below in \"Image 1.1 - Normalised Difference Snow Index (NDSI) QGIS processing toolbox model\".
+De uitvoer van het model is een vectorpolygoon die het met sneeuw bedekte gebied binnen de sneeuwwateropvang weergeeft. De attributen van de polygoon omvatten het gebied dat wordt bedekt door sneeuw en het percentage van de opvang dat is bedekt. Het model in zijn geheel kan hieronder worden bekeken \"Afbeelding 1.1 - model Normalised Difference Snow Index (NDSI) Toolbox QGIS Processing\".
 
 <figure>
 <img src="../images/australia_snowyhydro.png" class="align-center" width="600" alt="australia_snowyhydro.png" />
-<figcaption>Image 1.1 - Normalised Difference Snow Index (NDSI) QGIS processing toolbox model</figcaption>
+<figcaption>Afbeelding 1.1 - Genormaliseerd verschil sneeuwIndex (NDSI) QGIS Processing Toolbox-model</figcaption>
 </figure>
 
 ## Resultaten/Conclusie

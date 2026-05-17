@@ -19,10 +19,10 @@ De toepassingen van software gedurende de training werden over het algemeen geco
 
 Behandelde algemene onderwerpen waren basisintroducties voor GIS en QGIS-software , belangrijke werkbalken, structuur van plug-ins, geo-verwijzingen, maken/bewerken van vectorgegevens, clippen (raster/vector), samenvoegen, terreinanalyse, contouren, van .csv naar .shp-laag, .shp naar .kml en vice versa, afhandelen van GPS-gegevens, interpolatie, bewerken/bevragen van tabellen, veldberekeningen, printvormgeving etc. en enkele basisanalyses op vectorgegevens. Apart van de introductie naar verscheidene beschikbare koppelingen voor hulp, werd een groep in LinkedIn gemaakt voor deelnemers voor ondersteuning na de training.
 
-Number of QGIS-based trainings conducted by author with participants' details is shown in the table:
+Aantal op QGIS gebaseerde trainingen, gegeven door de auteur, met details over de deelnemers wordt weergegeven in tabel:
 ## Succes
 Elke maand wordt de training gegeven met 20-30 deelnemers, dus het aantal groeit elke maand. terugkoppeling over de training  blijven zeer positief en bemoedigend. Certificaten worden aan de deelnemers verschaft na het voltooien van de training. Momenteel worden hand-outs op papier gegeven aan de deelnemers en handleidingen. software en gegevens voor oefeningen als data maar het plan is om DVD's te maken met vanaf het scherm opgenomen lessen/demo van verscheidene onderwerpen in Hindi en in het Engels. In de toekomst zouden ook programma's met certificaten en diploma's kunnen worden geïnitieerd.
 ## Auteur
 ![H K Solanki](./images/india_hyderabadaut.png){.align-left}
 
-This article was contributed in July 2012 by H K Solanki, Assistant professor, NIRD Jaipur centre, Website: <http://www.nird.org.in>
+Dit artikel werd bijgedragen in juli 2012 door H K Solanki, Assistant professor, NIRD Jaipur centre, Website: <http://www.nird.org.in>

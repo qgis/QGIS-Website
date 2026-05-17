@@ -17,14 +17,14 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>November 01, 2010</span>
+  <span>1 november 2010</span>
 </p>
 
-The Associação Leonel Trindade -- Sociedade de História Natural (ALT-SHN) is a non profit institution headquarted in Torres Vedras, Portugal, specialized in paleontology. The institution manages a large fossil collection, mainly from Upper Jurassic. One of the key issues in paleontological management is to assess spatial context of the sites from where the fossils are retrieved -- hundreds of sites representing thousands of different specimens.
+De Associação Leonel Trindade -- Sociedade de História Natural (ALT-SHN) is een non-profitinstituut dat is gevestigd in Torres Vedras, Portugal, gespecialiseerd in paleontologie. Het instituut beheert een grote collectie fossielen, voornamelijk uit de Upper Jurassic. Een van de sleutelproblemen in paleontologisch beheer is om de ruimtelijke context te beoordelen van de plaatsen waar de fossielen zijn gevonden – honderden plaatsen die duizenden verschillende specimens vertegenwoordigen.
 ## Het project
 ![](../images/portugal_torres1.jpg)
 
-Back in 2008, we came up with the idea of exploring GIS technologies to support the investigation and get a more holistic perspective on the heritage we were dealing. This idea boosted SIGAP Project (GIS applied to paleontology) \[2\]. The project, supported by public and private entities -- mainly the Municipalty, Digiterra.hu and the Army\'s Geographic Institute (IGeoE), aimed three goals:
+In 2008 kregen we het idee om GIS-technologieën te verkennen om het onderzoek te ondersteunen en een meer holistisch perspectief te krijgen op de erfenis die we behandelen. Dit idee accelereerde het project SIGAP (GIS toegepast in paleontologie) \[2\]. Het project, ondersteund door publieke en private private entiteiten -- voornamelijk de gemeente, Digiterra.hu en het Army\'s Geographic Institute (IGeoE), richtte zich op drie doelen:
 - Veldonderzoek met verschillende GPS-en om coördinaten van de plaatsen te verkrijgen;
 - Bouwen van een risicomodel om gevaren te identificeren met betrekking tot de paleontologische erfenis en ze aldus beschermend door regelmatig veldonderzoek;
 - Bouwen van een geografische database om alle informatie af te handelen en de inventarisatie van de collectie te beginnen.
@@ -34,20 +34,20 @@ QGIS was het hoofdbestanddeel van het gehele project. gegevens werden direct in 
 
 <figure>
 <img src="../images/portugal_torres2.jpg" class="align-right" alt="portugal_torres2.jpg" />
-<figcaption>Vector point data editing and visualization</figcaption>
+<figcaption>Bewerken en visualiseren van vectorpuntgegevens</figcaption>
 </figure>
 
-The choice for QGIS was also encouraged by the multi platform support. The institution has three distinct facilities, and each of those facilities has different systems — we have Mac, Windows PC and Linux PC, therefore it\'s of extreme importance that we have the freedom to install the software on any machine we want so we don\'t get stuck to a particular computer.
+De keuze voor QGIS werd ook aangemoedigd door de ondersteuning voor meerdere platformen. Het instituut heeft drie afzonderlijke faciliteiten en elk daarvan heeft verschillende systemen — we hebben Mac, Windows PC en Linux-pc. Daarom is het uitermate belangrijk dat we de vrijheid hebben om de software te kunnen installeren op elke machine die we willen, zodat we niet gebonden zijn aan een bepaalde computer.
 
 <figure>
 <img src="../images/portugal_torres3.jpg" class="align-right" alt="portugal_torres3.jpg" />
-<figcaption>Paleontological Risk Map</figcaption>
+<figcaption>Paleontologische risicokaart</figcaption>
 </figure>
 
 ## Conclusie
-The overall experience with QGIS can only be rated has being very good and recommendable. From our point of view, the main advantage of QGIS is that it\'s not just a GIS software — it\'s a productivity suite for spatial data. It allowed us to take advantage of other powerful tools within a single work environment. From QGIS you can work with GRASS, with PostGIS, with GPS data, with webservices and with tens of useful plug-ins developed by users worldwide. The user friendly interface is also a big advantage, especially if you have to train first time users has we\'ve done. The easyness of the interface makes production of maps an everyday task and brought people closer to spatial approaches \[3\].
+De gehele ervaring met QGIS kan alleen worden gewaardeerd als zeer goed en aanbevelenswaardig. Vanuit ons gezichtspunt was het belangrijkste voordeel van QGIS dat het niet slechts een software voor GIS is — het is een productiviteitspakket voor ruimtelijke gegevens. Het stelde ons in staat voordeel te trekken uit andere krachtige gereedschappen binnen een enkele werkomgeving. Vanuit QGIS kunt u werken met GRASS, met PostGIS, met GPS-gegevens, met webservices en met tientallen nuttige plug-ins, ontwikkeld door gebruikers van over de hele wereld. De gebruiksvriendelijke interface is ook een groot voordeel, in het bijzonder als u gebruikers moet trainen die het voor de eerste keer gebruiken, zoals we hebben gedaan. Het gemak van de interface maakt het produceren van kaarten een taak voor elke dag en bracht mensen dichter bij ruimtelijke benaderingen \[3\].
 ## Verwijzingen
-- \[1\] www.alt-shn.org (portuguese only)
+- \[1\] www.alt-shn.org (alleen Portugees)
 - \[2\] MANO, André. (2009) -- Sistema de Informação Geográfica Aplicado à Paleontologia. Paleolusitana: Revista de Paleontologia e Paleoecologia, Torres Vedras: Alt-Sociedade de História Natural. ISSN 1647-2756, n.º 1, p. 245-250.
 - \[3\] Mano, André. (2010) -- Projecto SIGAP, Trabalho de Projecto apresentado como requisito parcial para a obtenção do grau de Mestre em Ciência e Sistemas de Informação Geográfica. ISEGI -- UNL, Lisboa, 2010
 
@@ -57,6 +57,6 @@ The overall experience with QGIS can only be rated has being very good and recom
 <figcaption>André Mano</figcaption>
 </figure>
 
-This article was contributed in November 2010 by André Mano. He is responsible for the Geopraphic Department of Associação Leonel Trindade -- Sociedade de História Natural. His area of interest is focused on geotechnology applications to the fields of paleontology, archeology and cultural heritage.
+Dit artikel werd bijgedragen in november 2010 door André Mano. Hij is verantwoordelijk voor het Geopraphic Department of Associação Leonel Trindade -- Sociedade de História Natural. Zijn werkgebied is gefocust op geotechnologische toepassingen op het gebied van paleontologie, archeologie en culturele erfenis.
 
 {{<content-end >}}

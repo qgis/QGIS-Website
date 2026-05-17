@@ -1,9 +1,9 @@
 ---
 HasBanner: false
-description: Amazing maps created using QGIS
+description: Verbazingwekkende kaarten, gemaakt met QGIS
 draft: false
 sidebar: true
-title: QGIS Maps
+title: QGIS Kaarten
 type: page
 
 ---

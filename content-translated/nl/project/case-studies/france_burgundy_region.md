@@ -17,10 +17,10 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>August 01, 2013</span>
+  <span>1 augustus 2013</span>
 </p>
 
-An interdisciplinary group of researchers based at the University of North Carolina have been working in the Burgundy region of France for over 30 years. We are trying to understand the changing patterns of human settlement and land use over a period of 2,000 years from the Iron Age, Gallo-Roman, Medieval periods into the present. Our project has included a wide variety of disciplinary researchers, and part of our project includes how to conduct such long-duration interdisciplinary research activities. GIS, GPS and remote sensing have been integral to our work, and our GIS database was first created in 1986, one of the first such archaeological applications. We have done archaeological, historical, geological, ecological, and ethnographic research in the area surrounding the commune of Uxeau, in Southern Burgundy, which is a rich and resilient landscape that has maintained productivity and stability for an extended period.
+Een interdisciplinaire groep onderzoekers, met hun basis aan de Universiteit van North Carolina, heeft meer dan 30 jaar gewerkt in de regio Bourgondië van Frankrijk. We hebben geprobeerd de veranderingspatronen te begrijpen in de woonplaatsen van mensen en het landgebruik, gedurende een periode van 2000 jaar vanaf de IJzertijd, Gallo-Romeinen, middeleeuwse perioden tot in de huidige tijd. Ons project omvatte een brede variëteit aan disciplinaire onderzoekers, en een deel van ons project omvatte hoe dergelijke langdurige interdisciplinaire onderzoeksactiviteiten uit te voeren. GIS, GPS en observeren op afstand waren integraal aanwezig in ons werk, en onze database voor GIS werd pas gemaakt in 1986, een van de eerste dergelijke archeologische toepassingen. We hebben archeologische, historische, geologische, ecologische en etnografische onderzoeken gedaan in het gebied rondom de commune van Uxeau, in zuidelijk Bourgondië, wat een rijk en flexibel landschap heeft dat productiviteit en stabiliteit over een lange periode heeft behouden.
 
 ![](../images/france_burgundy.jpg)
 ## Ons project en hoe QGIS werd gebruikt
@@ -38,25 +38,25 @@ De gegevens en types analyses die we momenteel gebruiken om dit complexe landsch
 </figure>
 
 ## Conclusie
-Our project started using GRASS in 1986, and has continued to use this, as well as commercial ArcGIS and a variety of other tools such as Photoshop, Garmin's BaseCamp, eVis and others. With many collaborators at various institutions in the US and Europe, and graduate students coming and going, using free and open source tools makes a lot of sense. We have found that the combination of QGIS and GRASS provides capable data analysis and visualization, ease of use, interoperability, and portability for our project. Archaeologists have had a strong presence in the GRASS and open source GIS communities for many years, and have contributed much to this important effort, developing and sharing many capabilities. I have taught several 4-day QGIS/GRASS/R short courses in France over the years, sharing these tools with many archaeologists from throughout France.
+Ons project startte met behulp van GRASS in 1986, en is doorgegaan met het gebruik daarvan, alsook met het commerciële ArcGIS en een variëteit aan andere programma's zoals Photoshop, Garmin’s BaseCamp, eVis en andere. Met vele mensen die samenwerken vanuit verschillende instituten in de VS en Europa, en studenten die komen en gaan, is het gebruiken van gratis en open sourceprogramma's zinnig. We hebben gemerkt dat de combinatie van QGIS en GRASS capabele gegevensanalyses en -visualisatie verschaft, eenvoudig is te gebruiken, interoperabel is, en draagbaar binnen ons project. Archeologen waren gedurende vele jaren sterk aanwezig binnen de GRASS en open source GIS-gemeenschappen, en hebben veel aan deze belangrijke inspanningen bijgedragen. Veel mogelijkheden ontwikkeld en gedeeld. Ik heb verschillende 4-daagse korte cursussen QGIS/GRASS/R in Frankrijk gegeven in enkele jaren, deze programma's gedeeld met veel archeologen vanuit heel Frankrijk.
 
-Our research will continue to explore the long-term history of the inhabitants' relationship with this landscape and we will expand our work beyond our current focus on mills and ponds to include changing patterns of forests, pastures and meadows, croplands and former vineyards in the area.
+Ons onderzoek zal doorgaan met het verkennen van de geschiedenis over een lange tijd van de relatie tussen de inwoners en dit landschap, en we zullen ons werk uitbreiden tot buiten de focus van molens en vijvers om ook wijzigingspatronen van bossen, weiden en weilanden, landbouwgronden en voormalige wijngaarden in dit gebied daarin op te nemen.
 
 <figure>
 <img src="../images/france_burgundy3.jpg" class="align-left" alt="france_burgundy3.jpg" />
-<figcaption>From top left going clockwise: Some of the local Charolais cattle, doing ethnographic interviews with local farmers, a GIS map showing forest change from 1759 to 1983, and a book of Uxeau 1791 cadastral tax records. In the center is a color 1759 Cassini map of the area.</figcaption>
+<figcaption>Van linksboven met de klok mee: Lokaal Charolais-vee, etnografische interviews houden met lokale boeren, een GIS-kaart die de verandering in bos weergeeft van 1759 tot en met 1983, en een boek van de kadastrale belastingrecords van Uxeau 1791. In het midden een kleurenkaart van 1759 van Cassini van het gebied.</figcaption>
 </figure>
 
 ## Contact
-- Project website: <http://burgundylandscapes.com> with more information and online publications.
-- Dr. Scott Madry: <http://scottmadry.web.unc.edu> or email: madrys 'at' email.unc.edu
+- Projectwebsite: <http://burgundylandscapes.com> met meer informatie en online publicaties.
+- Dr. Scott Madry: <http://scottmadry.web.unc.edu> of e-mail: madrys 'at' email.unc.edu
 
 ## Auteurs
 <figure>
 <img src="../images/france_burgundy4.png" class="align-left" height="220" alt="france_burgundy4.png" />
-<figcaption>Jones, Tickner and Madry doing field work</figcaption>
+<figcaption>Jones, Tickner en Madry werken in het veld</figcaption>
 </figure>
 
-This article was contributed in August 2013 by Dr. Scott Madry. He is a research associate professor in the Curriculum in Archaeology at the University of North Carolina at Chapel Hill's Research Laboratories of Archaeology. He is on the faculty of the International Space University in Strasbourg, France, and is a chercheur associé du Laboratoire Archéologie et Territoires de l\'UMR 7324 CITERES, Université François-Rabelais/CNRS. This research project is conducted collaboratively with Dr. Elizabeth A. Jones, historical anthropologist (UNC), Dr. Amanda B. Tickner, paleoethnobotanist (UNC) and Dr. D. Seth Murray, ethnographer and oral historian (NCSU).
+Dit artikel werd bijgedragen in augustus 2013 door Dr. Scott Madry. Hij is een onderzoeksassociate professor in het Curriculum in Archaeology van de University of North Carolina aan Chapel Hill’s Research Laboratories of Archaeology. Hij is verbonden aan de faculteit van de International Space University in Straatsburg, Frankrijk, en is een chercheur associé du Laboratoire Archéologie et Territoires de l'UMR 7324 CITERES, Université François-Rabelais/CNRS. Dit onderzoeksproject is in samenwerking uitgevoerd met Dr. Elizabeth A. Jones, historisch antropoloog (UNC), Dr. Amanda B. Tickner, paleoetnobotanist (UNC) en Dr. D. Seth Murray, etnograaf en oraal historicus (NCSU).
 
 {{<content-end >}}

@@ -18,10 +18,10 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>March 01, 2013</span>
+  <span>1 maart 2013</span>
 </p>
 
-Nameri Tiger Reserve (NTR) is one of the 3 tiger reserves of Assam and it is situated in the northern part of Sonitpur District of Assam along the foothills of Eastern Himalayas. Spread over an area of 344 sq km, NTR boasts rich diversity of flora and fauna. The core area of the reserve which constitutes the "Nameri National Park" is bound by River Jia-Bhoreli on the west and River Bor-Dikorai in the east. To the north of the Nameri lies the Pakke Tiger Reserve of Arunachal Pradesh.
+Nameri Tiger Reserve (NTR) is één van de 3 tijgerreservaten van Assam en is gelegen in het noordelijke deel van het Sonitpur District van Assam langs de uitlopers van de oostelijke Himalaya. Verspreid over een gebied van 344 km² biedt NTR een rijke diversiteit aan flora en fauna. Het belangrijkste gebied van het reservaat, dat de naam "Nameri National Park" draagt, wordt begrensd door de rivier Jia-Bhoreli in het westen en de rivier Bor-Dikorai in het oosten. Ten noorden van Nameri ligt het Pakke Tiger Reserve van Arunachal Pradesh.
 
 ![](../images/india_assam1.png)
 
@@ -31,25 +31,25 @@ Vanaf 2011 heeft de National Tiger Conservation Authority (NTCA) van India het v
 
 <figure>
 <img src="../images/india_assam2.png" class="align-right" alt="india_assam2.png" />
-<figcaption>Picture of a male tiger that was captured in one of the camera traps</figcaption>
+<figcaption>Afbeelding van een mannelijke tijger die door een van de cameravallen werd vastgelegd</figcaption>
 </figure>
 
 Gedurende 2012-13 implementeerden we dit nieuwe protocol voor het monitoren van tijgers in NTR met behulp van QGIS. We digitaliseerden. om te beginnen, de begrenzing van NTR in QGIS en sloegen die op als polygoon. Dit polygoon voor de begrenzing werd geëxporteerd naar GPS voor navigatie-doeleinden gedurende de opnamen in het veld. We voerden een uitgebreide zoekactie naar tekenen van bewijs van de aanwezigheid van tijgers in NTR zoals voetafdrukken, krassporen en uitwerpselen. GPS-coördinaten van de teken van aanwezigheid van tijgers, alsmede geschikte locaties voor de cameravallen werden opgenomen. Na het voltooien van dit onderzoek werden de gegevens getransfereerd naar QGIS met behulp van GPS-programma's, voor verdere verwerking en het vaststellen van de locaties voor de cameravallen. Een shapefile dat de tekenen van aanwezigheid van de tijgers en de mogelijke locaties voor de cameravallen bevatte, werd voorbereid.
 
 <figure>
 <img src="../images/india_assam3.png" alt="india_assam3.png" />
-<figcaption>Block wise distribution of camera trap locations and assigning camera traps to different forest camps by using voronoi polygons &amp; hub distance.</figcaption>
+<figcaption>Bloksgewijze verdeling van locaties van cameravallen en toewijzen van verschillende cameravallen aan verschillende boskampen met behulp van Voronoi-polygonen & hub distance.</figcaption>
 </figure>
 
-Next we prepared 4 sq km grid layer using mmqgis plugin. The shape file containing results of sign survey was overlaid on the 4 sq grid to visualise the distribution of camera traps in NTR. Distance matrix option under vector analysis tools was quite handy for determining the inter camera distance. Camera locations having less than 1.8 km inter distance were removed to comply with the monitoring protocol. Due to lack of sufficient cameras to monitor the entire reserve area in one go, we decided to divide the reserve area into 2 blocks of 100 sq km each. Boundaries of these blocks were digitised and saved as separate shape files for both the blocks. Using RGB composition plugin, a false color composite of the reserve was created and the sign survey shape file overlaid to assess the habitat types used by the tiger. During the study period, the camera traps have to be monitored intensively by the field staff. To ensure smooth functioning of monitoring process, we used Voronoi polygon feature of Geometry tools and hub distance of mmqgis plugin for planning logistic requirements. The geographic coordinates of camera traps are required for estimating the tiger density and occupancy modelling of other species. These coordinate details were easily generated from camera trap shape files by using the "Export/ add geometry columns" feature of vector Geometry tools.
+Vervolgens bereidden we een 4 km^2^ rasterlaag voor met behulp van de plug-in mmqgis. De shapefile die de resultaten bevatte van het onderzoek naar de tekenen van aanwezigheid werd over het raster van 4 km^2^ gelegd om de verdeling van de cameravallen in NTR te visualiseren. De optie Afstandsmatrix onder Vector. Analyse-gereedschappen waren erg handig voor het bepalen van de afstanden tussen de camera's. Cameralocaties die minder dan 1,8 km afstand hadden tot een andere werden verwijderd om te voldoen aan de bepalingen van het protocol voor het monitoren. Wegens een tekort aan camera's om het gehele reservaat in één keer te kunnen verwerken, besloten we het reservaat op te delen in 2 blokken van gebieden van elk 100 km^2^. Grenzen van deze twee blokken werden gedigitaliseerd en opgeslagen als afzonderlijke shapefiles voor beide blokken. Met behulp van de plug-in RGB compositie werd een negatieve kleurcompositie van het reservaat gemaakt en het shapefile van de tekenen van aanwezigheid werd daaroverheen gelegd om de type leefgebieden te bepalen die door de tijgers werden gebruikt. Gedurende de periode van de studie werden de cameravallen intensief gemonitord door de staf in het veld. We gebruikten de mogelijkheid Voronoi-polygonen van de plug-in Geometrie-gereedschap en hub distance van de plug-in mmqgis voor het plannen van logistieke vereisten om het gladjes functioneren van het proces van monitoren te waarborgen. De geografische coördinaten van cameravallen zijn vereist voor het bepalen van de dichtheid aan tijgers en het modelleren van de bewoning door andere soorten. Deze details van de coördinaten werden eenvoudig gegenereerd uit de shapefiles van de cameravallen met behulp van de mogelijkheid "Geometriekolommen toevoegen/exporteren" van Vector > Geometrie-gereedschappen.
 
 <figure>
 <img src="../images/india_assam4.png" class="align-right" alt="india_assam4.png" />
-<figcaption>Survey grids with tiger presence</figcaption>
+<figcaption>Onderzoeksraster met aanwezigheid tijgers</figcaption>
 </figure>
 
 ## Conclusie
-For the first time in the history of this small tiger reserve of North East India, it was possible to monitor tigers by using camera traps mainly because of QGIS. Results of this monitoring exercise indicate the presence of 8-15 tigers in this landscape. In addition to the tigers, several elusive species have also been photographically documented. Apart from tiger monitoring, we are also using QGIS for activities such as planning habitat management works, revising patrolling schedules, and designing maps for visitors. The user-friendly interface, rich features, in-depth documentation, on-line support and the free/open source philosophy are the few qualities of QGIS that made us to select it over other proprietary software. We believe that QGIS has great potential for empowering individuals/institutions/ involved in conserving endangered wildlife in the developing world by offering GIS technology at little or no cost.
+Voor het eerst in de geschiedenis van dit kleine tijgerreservaat in noordoost-India was het mogelijk tijgers te monitoren met behulp van cameravallen, voornamelijk dankzij QGIS. Resultaten van deze oefening in monitoren geven aan dat er ongeveer 8-15 tijgers in deze omgeving aanwezig zijn. In aanvulling op de tijgers werden ook verschillende uitzonderlijke soorten fotografisch gedocumenteerd. Los van het monitoren van de tijgers gebruikten we QGIS ook voor activiteiten zoals het plannen van het werk voor het beheer van de woonomgeving, herzien van schema's voor patrouilles en het ontwerpen van kaarten voor bezoekers. De gebruiksvriendelijke interface, vele mogelijkheden, diepgang in de documentatie, online ondersteuning en de vrije/open source-filosofie zijn enkele van de kwaliteiten van QGIS die ons ertoe bewogen het te kiezen boven andere merkgebonden software. We geloven dat QGIS een groot potentieel heeft voor bijdragen aan individuen/instituten/betrokken bij de bescherming van wilde dieren in de ontwikkelingswereld door GIS-technologie ter beschikking te stellen tegen weinig of geen kosten.
 ## Auteur
 <figure>
 <img src="../images/india_assamaut.png" class="align-left" height="200" alt="india_assamaut.png" />

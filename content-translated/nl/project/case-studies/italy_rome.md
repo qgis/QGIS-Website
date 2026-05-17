@@ -18,10 +18,10 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>March 01, 2015</span>
+  <span>1 maart 2015</span>
 </p>
 
-The Institute of Environmental Geology and Geoengineering (IGAG) of the National Research Council (CNR) is located in Rome, in the Area of Research \"Roma 1\". It was founded in 2002 by regrouping five former research Institutes and Centers that had been active for more than 40 years in their field of expertise. IGAG covers a wide range of scientific topics in the field of Earth sciences, mainly focusing towards the study of:
+Het Instituut voor Environmental Geology and Geoengineering (IGAG) van de National Research Council (CNR) is gevestigd in Rome, in het onderzoeksgebied \"Roma 1\". Het werd opgericht in 2002 door de samenvoeging van vijf bestaande onderzoeksinstituten en centra die meer dan 40 jaar actief waren op hun gebied van expertise. IGAG behandelt een brede variëteit aan wetenschappelijke onderwerpen op het gebied van Aardwetenschappen, voornamelijk met de focus op het bestuderen van:
 - Milieukundige geo-scheikunde en het tegengaan van verontreinigde bodem en wateren;
 - Minerale uitstroom en minerale verwerking, inclusief de behandeling van afvalwater;
 - Geo-ingenieurswerk en veiligheid bij afgravingen van rotsen;
@@ -39,7 +39,7 @@ De observatie van door een aardbeving veroorzaakte schade laat vaak variaties op
 
 De seismische microzonering evalueert het lokale seismische gevaar, door het identificeren van gebiedsdelen die worden gekarakteriseerd door homogeen seismisch gedrag.
 
-The Guidelines and Criteria for Seismic microzoning 2008 (<http://www.protezionecivile.gov.it/jcms/it/view_pub.wp?contentId=PUB1137>) provide standards for seismic microzoning studies on Italian territory; they distinguish three levels of increasing depth (from 1 to 3).
+De Guidelines and Criteria for Seismic microzoning 2008 (<http://www.protezionecivile.gov.it/jcms/it/view_pub.wp?contentId=PUB1137>) verschaffen standaarden voor studies van seismische microzonering in Italiaans gebied; ze onderscheiden drie niveaus van toenemende grootte (van 1 tot en met 3).
 
 Het eerste niveau seismische microzonering bestaat uit het maken van drie thematische kaarten:
 1. Onderzoekskaart bevat de gegevens voor bestuderen van seismische microzonering;
@@ -57,42 +57,42 @@ Het model maakt gebruik van verschillende open source software en bibliotheken (
 
 <figure>
 <img src="../images/italy_igag1.png" class="align-right" alt="italy_igag1.png" />
-<figcaption>(Fig. 1) Screenshot from the geoprocessing model.</figcaption>
+<figcaption>(Afb. 1) Schermafdruk van het model voor geoprocessing.</figcaption>
 </figure>
 
 Het model neemt als invoer (Fig. 2):
 - Een shapefile van contourlijnen die een veld met waarden voor hoogten bevat;
-- The name of the field containing elevation values;
+- De naam van het veld dat de waarden voor hoogte bevat;
 - De gewenste rasterresolutie in meters voor DEM en Slope (standaard 10);
 - Een polygoon-shapefile waaruit objecten die kruisen met gebieden met een helling groter dan 15 graden zullen worden uitgenomen;
 - De naam van de resulterende polygoonlaag.
 
 <figure>
 <img src="../images/italy_igag2.png" class="align-right" alt="italy_igag2.png" />
-<figcaption>(Fig. 2) Model input form (left) and execution log (right).</figcaption>
+<figcaption>(Afb. 2) Model invoerformulier (links) en log van uitvoering (rechts).</figcaption>
 </figure>
 
 Na het starten voert het model de volgende bewerkingen uit:
 - Het gereedschap voor GRASS v.to.rast.attribute converteert contour hoogtelijnen naar raster, met het contour-shapefile, de naam van het Z-veld en de rasterresolutie als invoer;
 - Het gereedschap voor GRASS r.surf.contour genereert het hoogtemodel, met als invoer de gerasteriseerde tijdelijke uitvoer uit de vorige stap en de rasterresolutie;
-- The GDAL tool "gdaldem" generates the slope expressed as degrees from the elevation model;
+- Het gereedschap voor GDAL "gdaldem" genereert de helling, uitgedrukt in graden, uit het hoogtemodel;
 - Het gereedschap voor GRASS r.mapcalculator wordt gebruikt om een 1 bit raster te genereren dat gebieden identificeert met een helling die groter is dan 15 graden (deze waarde is gecodeerd in de richtlijnen voor microzonering en dus een vaste waarde), met behulp van de expressie:
 
 if(A\>15,1,null())
 
 waar A het tijdelijke hellingsraster is dat werd gegenereerd door gdaldem;
-- The GDAL tool "gdal_polygonize" converts the 1 bit raster to polygons;
-- The QGIS tool "Intersection" is used to overlay the areas with slope greater than 15 degrees with the chosen intersection layer.
+- Het gereedschap voor GDAL "gdal_polygonize" converteert het 1 bit raster naar polygonen;
+- Het gereedschap voor QGIS "Intersection" wordt gebruikt om de gebieden te overleggen met een helling van 15 graden met de gekozen laag met kruisingen.
 
 Het resultaat is een polygoonlaag met gebieden die gevoelig zijn voor instabiliteit vanwege een hellingswaarde van meer dan 15 graden, automatisch uitgenomen uit een thematische kaart, zoals een polygoonlaag van aardverschuivingen (Fig. 3) of een lithologische kaart.
 
 <figure>
 <img src="../images/italy_igag3.png" class="align-right" alt="italy_igag3.png" />
-<figcaption>(Fig. 3) The model output (in red) shows highly unstable areas extracted from a landslides layer (orange).</figcaption>
+<figcaption>(Afb. 3) De uitvoer voor het model (in rood) geeft de zeer onstabiele gebieden aan die zijn uitgenomen uit een laag met aardverschuivingen (oranje).</figcaption>
 </figure>
 
 ## Conclusies
-This work clearly demonstrates that open source GIS tools like QGIS, GRASS, GDAL/OGR, can successfully be used for spatial analysis and data processing aimed at first level seismic microzonation studies. In this example work, QGIS has been used as a simplified and unified interface for different high quality GFOSS tools; the Graphical Modeler allows to intuitively construct geoprocessing models that can be easily shared as portable and cross-platform tools that doesn\'t require expensive software licenses. The tool leverages the QGIS modeling capabilities to graphically chain different algorithms, defining input and output parameters and leaving to the software the task of managing intermediate data output. The use of GRASS algorithms does not require defining and using a GRASS database and mapset, greatly simplifying the design of the model. Future developments include the creation of a package of tools and models, based on open source software, that can be used to simplify and speed up spatial analysis tasks necessary for seismic microzonation studies.
+Dit werk demonstreert helder dat open source GIS-gereedschappen, zoals QGIS, GRASS, GDAL/OGR, met succes kunnen worden gebruikt voor ruimtelijke analyses en het verwerken van gegevens die zijn gericht op studies voor seismische microzonering op het eerste niveau. In dit voorbeeldwerk is QGIS gebruikt als een vereenvoudigde en geünificeerde interface voor verschillende gereedschappen van hoge kwaliteit voor GFOSS. Grafische modellen bouwen maakt het mogelijk intuïtieve modellen voor geoprocessing te maken die eenvoudig kunnen worden gedeeld als draagbare gereedschappen en voor verschillende platformen, die geen dure softwarelicenties vergen. Het gereedschap koppelt de mogelijkheid voor het maken van modellen van QGIS aan een grafische keten van verschillende algoritmen, het definiëren van parameters voor invoer en uitvoer en laat het aan de software over om de tussenliggende gegevensuitvoer te beheren. Het gebruiken van algoritmen van GRASS vereist niet het definiëren en gebruiken van een database en mapset voor GRASS, wat het ontwerpen van het model enorm vereenvoudigt. Toekomstige ontwikkelingen omvatten het maken van een pakket gereedschappen en modellen, gebaseerd op open source-software, die kunnen worden gebruikt om taken van ruimtelijke analyses die nodig zijn voor seismische microzonering te vereenvoudigen en te versnellen.
 ## Verwijzingen
 - G. Baldassarre; Gallicchio, S.; Giannandrea, P. & Tropeano, M.: \"Relazione Finale Geolitologica per la microzonazione sismica di livello 1dei Comuni della Provincia di Foggia Dipartimento di Geologia e Geofisica dell\'Università di Bari, 2011\"
 - Cavinato,G.P.; Cavuoto, G.; Coltella, M.; Cosentino, G.; Paolucci, E.; Peronace, E. & Simionato, M.: \"Studio di fattibilità per il monitoraggio e la messa in sicurezza delle aree urbane a rischio di stabilità statica e vulnerabilità strutturale del Comune e della Provincia di Foggia -CIPE 20/2004 Consiglio Nazionale delle Ricerche - Istituto di Geologia Ambientale e Geoingegneria, 2013, 526\"
@@ -107,13 +107,13 @@ Dit artikel werd bijgedragen in maart 2015 door Giuseppe Cosentino en Francesco 
 <figcaption>Giuseppe Cosentino</figcaption>
 </figure>
 
-Giuseppe Cosentino \<<g.cosentino@igag.cnr.it>\> is geologist and technologist specializied in Geographic Information Systems for the management of geological and engineering hazards. Currently working in the field of seismic microzonation and environmental characterization of the lands in contaminated sites. Areas of interest: geological and environmental hazards, cartography, structural geology, explorative drillings.
+Giuseppe Cosentino \<<g.cosentino@igag.cnr.it>\> is geoloog en technoloog, gespecialiseerd in Geographic Information Systems voor het beheer van geologische en bouwkundige gevaren. Momenteel werkt hij in het veld van seismische microzonering en milieutechnische karakterisering van grond in verontreinigde gebieden. Interesses: geologische en milieugevaren, cartografie, structurele geologie, verkennende boringen.
 
 <figure>
 <img src="../images/francesco_pennica.png" class="align-left" height="200" alt="francesco_pennica.png" />
 <figcaption>Francesco Pennica</figcaption>
 </figure>
 
-Francesco Pennica provides GIS and WebGIS software development and data management: GeoServer, MapServer, ArcGIS Server, GeoNetwork OGC standard based webgis services, Java, HTML, CSS, Javascript, Python, PHP languages and frameworks, WebGIS front-end development with OpenLayers, ExtJS, GeoExt, JQuery, GWT, Ext-GWT, Google Maps API SQL, geodatabase management, PostgreSQL, PostGIS, GIS desktop software based analysis and scripting (ArcGIS, GRASS, GFOSS tools), Software configuration and management in Linux and Windows based servers and desktops.
+Francesco Pennica verschaft GIS en WebGIS softwareontwikkeling en gegevensbeheer: GeoServer, MapServer, ArcGIS Server, GeoNetwork OGC standaard gebaseerde webgisservices, Java, HTML, CSS, Javascript, Python, PHP-talen en frameworks, WebGIS front-end ontwikkeling met OpenLayers, ExtJS, GeoExt, JQuery, GWT, Ext-GWT, Google Maps API SQL, beheer van geodatabases, PostgreSQL, PostGIS, op GIS desktop software gebaseerde analyses en scripten (gereedschappen voor ArcGIS, GRASS, GFOSS), softwareconfiguratie en beheer in op Linux en Windows gebaseerde servers en desktops.
 
 {{<content-end >}}

@@ -36,7 +36,7 @@ Wij werken samen met Spreadshirt. Zij produceren lokaal en verzenden de producte
 
 {{<column-start >}}
 
-![QGIS tshirt](img/qgis-heart-logo.jpg)
+![QGIS t-shirt](img/qgis-heart-logo.jpg)
 
 {{<column-end >}}
 
@@ -46,13 +46,13 @@ Wij werken samen met Spreadshirt. Zij produceren lokaal en verzenden de producte
 
 {{<column-start >}}
 
-![QGIS mugs](img/qgis-q-logo.jpg)
+![QGIS mokken](img/qgis-q-logo.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS thermos](img/thermos.jpg)
+![QGIS thermoskan](img/thermos.jpg)
 
 {{<column-end >}}
 
@@ -90,7 +90,7 @@ Enkele meer creatieve en grappige (maar niet-officiële) ontwerpen zijn te vinde
 
 {{<column-start >}}
 
-![QGIS tshirt](img/redbubble2.jpg)
+![QGIS t-shirt](img/redbubble2.jpg)
 
 {{<column-end >}}
 
@@ -100,13 +100,13 @@ Enkele meer creatieve en grappige (maar niet-officiële) ontwerpen zijn te vinde
 
 {{<column-start >}}
 
-![QGIS mugs](img/redbubble3.jpg)
+![QGIS mokken](img/redbubble3.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS thermos](img/redbubble4.jpg)
+![QGIS thermoskan](img/redbubble4.jpg)
 
 {{<column-end >}}
 

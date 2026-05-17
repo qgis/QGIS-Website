@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>March 01, 2012</span>
+  <span>1 maart 2012</span>
 </p>
 
 ## Introductie
@@ -30,11 +30,11 @@ De deelnemers aan de training gebruikten hun eigen laptop en kregen de installat
 <figcaption>QGIS Udzungwa</figcaption>
 </figure>
 
-By the end of the two days, everyone was able to add GPS download data, create and edit new layers, save map projects, design print composers, and save graphics files for inclusion in reports and presentations —— this last feature is specially useful in using GIS to help in normal workflows. Even during the course, National Park staff were using the GIS to view the GPS locations of new-reported elephant carcass locations —— the result of poaching —— and to start planning responses.
+Aan het einde van de twee dagen was iedereen in staat om GPS-gegevens die gedownload waren toe te voegen, om nieuwe lagen aan te maken en te bewerken, de kaartprojecten op te slaan, sjablonen te ontwerpen met de printvormgeving en om de kaart als een grafisch bestand op te slaan om op te nemen in rapporten en presentaties —— deze laatste functionaliteit is bijzonder nuttig om het GIS te gebruiken in het normale werkproces. Zelfs tijdens de training gebruikte personeel van het nationale park het GIS om de GPS-locaties te bekijken van nieuwe locaties waar nieuwe karkassen van olifanten waren gevonden —— het resultaat van stropen —— en om tegenmaatregelen te plannen.
 
 QGIS was voor ons om verschillende redenen aantrekkelijk: Het is niet alleen geheel gratis, maar omdat het open source software betreft, kan deze worden aangepast voor verschillende doeleinden; het draait prima op oudere computers en heeft een relatief klein installatiepakket; en we vonden het gebruiksvriendelijk voor nieuwe gebruikers van GIS . 
 
-The Udzungwa Elephant Project is based next to Tanzania\'s Udzungwa Mountains National Park, a range of evergreen forested mountains reaching over 2,500 metres. It studies the ecology of elephants in and around the mountains, with the aim of understanding how elephants move between different Tanzanian parks and reserves, and how such corridors might be maintained while reducing crop damage caused by elephants. More widely, elephants are a \"flagship species\" for the conservation of the incredible wildlife and landscapes of southern Tanzania.
+Het Udzungwa Elephant Project is gesitueerd naast Tanzania\'s Udzungwa Mountains National Park, een reeks altijd groene bergen die tot 2500 meter hoog zijn. Het project bestudeert de ecologie van olifanten in en nabij de bergen, met als doel meer inzicht te krijgen in hoe olifanten zich verplaatsen tussen de Tanzaniaanse parken en reservaten, en hoe je corridors kunt handhaven en hoe de schade aan gewassen, veroorzaakt door olifanten, verminderd kan worden. In bredere zin zijn olifanten een \"vlaggenschip-soort\", die van belang is voor het behoud van het ongelooflijke wildleven en landschap in het zuiden van Tanzania. 
 
 <figure>
 <img src="../images/tanzania_udzungwa2.jpg" class="align-right" alt="tanzania_udzungwa2.jpg" />
@@ -53,6 +53,6 @@ Speciale dank aan de US Fish and Wildlife Service African Elephant Fund voor het
 <figcaption>Nick McWilliam</figcaption>
 </figure>
 
-This article was contributed in March 2012 by Nick McWilliam. UK-based, he has been visiting Tanzania since 1996 to work with GIS in National parks and Game Reserves, with an emphasis on training, low-cost systems, and using GIS to help in applied research, management and conservation. He also volunteers with the NGO MapAction, providing GIS support to humanitarian organisations in emergencies, and previously worked with the British Antarctic Survey, United Nations, Royal Geographical Society, and as a GIS Lecturer.
+Dit artikel is ingezonden in maart 2012 door Nick McWilliam. Vanuit Engeland heeft hij sinds 1996 Tanzania regelmatig bezocht om met GIS te werken in Nationale Parken en wildreservaten, waarbij de nadruk werd gelegd op trainingen, goedkope systemen en het gebruik van GIS in toegepast onderzoek, natuurbeheer en natuurbehoud. Hij verricht ook vrijwilligerswerk voor de NGO MapAction, die GIS-ondersteuning biedt aan humanitaire hulporganisaties, en daarvoor werkte hij voor het Britse Antarctic Survey, de Verenigde Naties, de Royal Geographical Society en gaf hij lezingen over GIS.
 
 {{<content-end >}}

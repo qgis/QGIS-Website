@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2012</span>
+  <span>1 juli 2012</span>
 </p>
 
 ![](../images/india_hyderabad1.png)
@@ -26,7 +26,7 @@ Het National Institute of Rural Development & Panchayati Raj (NIRD&PR) is een Ap
 ## QGIS wordt gebruikt voor alle GIS trainingscursussen
 <figure>
 <img src="../images/india_hyderabad2.jpg" class="align-right" alt="india_hyderabad2.jpg" />
-<figcaption>QGIS training course at NIRD Jaipur Centre</figcaption>
+<figcaption>QGIS trainingscursus bij NIRD Jaipur Centre</figcaption>
 </figure>
 
 Alleen QGIS wordt gebruikt in GIS-trainingen sinds de oprichting van het NIRD Jaipur centrum. Verder wordt in alle trainingen vermeld en geadviseerd  dat geen commerciële GIS-software zou moeten worden aangekocht op het niveau van District (administratieve eenheid in India na nationaal en provincie) en daaronder, als daar geen echte reden voor is en deze besparingen kunnen worden gebruikt voor de aankoop van hardware, zoals GPS-en, computers etc.
@@ -37,12 +37,12 @@ De toepassingen van software gedurende de training werden over het algemeen geco
 
 <figure>
 <img src="../images/india_hyderabad3.png" class="align-right" alt="india_hyderabad3.png" />
-<figcaption>Conducted QGIS training courses and participants</figcaption>
+<figcaption>Uitgevoerde QGIS trainingscursussen en deelnemers</figcaption>
 </figure>
 
 Behandelde algemene onderwerpen waren basisintroducties voor GIS en QGIS-software , belangrijke werkbalken, structuur van plug-ins, geo-verwijzingen, maken/bewerken van vectorgegevens, clippen (raster/vector), samenvoegen, terreinanalyse, contouren, van .csv naar .shp-laag, .shp naar .kml en vice versa, afhandelen van GPS-gegevens, interpolatie, bewerken/bevragen van tabellen, veldberekeningen, printvormgeving etc. en enkele basisanalyses op vectorgegevens. Apart van de introductie naar verscheidene beschikbare koppelingen voor hulp, werd een groep in LinkedIn gemaakt voor deelnemers voor ondersteuning na de training.
 
-Number of QGIS-based trainings conducted by author with participants' details is shown in the table:
+Aantal op QGIS gebaseerde trainingen, gegeven door de auteur, met details over de deelnemers wordt weergegeven in tabel:
 ## Succes
 Elke maand wordt de training gegeven met 20-30 deelnemers, dus het aantal groeit elke maand. terugkoppeling over de training  blijven zeer positief en bemoedigend. Certificaten worden aan de deelnemers verschaft na het voltooien van de training. Momenteel worden hand-outs op papier gegeven aan de deelnemers en handleidingen. software en gegevens voor oefeningen als data maar het plan is om DVD's te maken met vanaf het scherm opgenomen lessen/demo van verscheidene onderwerpen in Hindi en in het Engels. In de toekomst zouden ook programma's met certificaten en diploma's kunnen worden geïnitieerd.
 ## Auteur
@@ -51,6 +51,6 @@ Elke maand wordt de training gegeven met 20-30 deelnemers, dus het aantal groeit
 <figcaption>H K Solanki</figcaption>
 </figure>
 
-This article was contributed in July 2012 by H K Solanki, Assistant professor, NIRD Jaipur centre, Website: <http://www.nird.org.in>
+Dit artikel werd bijgedragen in juli 2012 door H K Solanki, Assistant professor, NIRD Jaipur centre, Website: <http://www.nird.org.in>
 
 {{<content-end >}}

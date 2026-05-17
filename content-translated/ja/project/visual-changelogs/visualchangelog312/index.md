@@ -384,56 +384,56 @@ In the example we have the persons:
 
 This feature was developed by [signedav](https://api.github.com/users/signedav)
 ### 機能: WKBへ/から変換する式関数を追加
-- `geom_from_wkb( geom_to_wkb( make_point(4,5) ) ) → a point geometry object` Returns a geometry created from a Well-Known Binary (WKB) representation.
-- `geom_to_wkb( $geometry ) → binary blob containing a geometry object` Returns the Well-Known Binary (WKB) representation of a geometry as a binary blob.
+- `geom_from_wkb( geom_to_wkb( make_point(4,5) ) ) → a point geometry object` Well-Known Binary（WKB）表現からジオメトリを生成して返します。
+- `geom_to_wkb( $geometry ) → binary blob containing a geometry object` ジオメトリをWell-Known Binary（WKB）で表現したバイナリBLOBを返します。
 
-Adds geom_from_wkb and geom_to_wkb, which mirror the existing geom_from_wkt/geom_to_wkt functions but for WKB representations of geometries.
+既存の geom_from_wkt / geom_to_wkt 関数と同様の機能を持つ geom_from_wkb および geom_to_wkb を追加します。ただし、こちらはジオメトリのWKB表現を対象としています。
 
-Since QGIS 3.6 we\'ve had good support for binary blob values in expressions and field values, so adding these functions allows users to work with binary blob fields containing WKB representations of geometries (e.g. with a geometry generator showing the encoded geometries)
+QGIS 3.6以降、式やフィールド値でのバイナリBLOB値のサポートが充実しています。これらの関数を追加することで、ジオメトリのWKB表現を含むバイナリBLOBフィールドを扱えるようになります（例：エンコードされたジオメトリを表示するジオメトリジェネレーターと組み合わせて使用するなど）。
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: is_valid expression
-`is_valid(geom_from_wkt('LINESTRING(0 0, 1 1, 2 2, 0 0)')) → true` Returns true if a geometry is valid; if it is well-formed in 2D according to the OGC rules
+### 機能:is_valid expression
+`is_valid(geom_from_wkt('LINESTRING(0 0, 1 1, 2 2, 0 0)')) → true` ジオメトリが有効な場合にtrueを返します。OGCルールに従って2Dで正しく形成されているかどうかを判定します。
 
-Add an is_valid function to the expressions, which reuses GEOS is valid and returns true if a geometry is valid; if it is well-formed in 2D according to the OGC rules.
+式にGEOSのis validを再利用した is_valid 関数を追加します。ジオメトリがOGCルールに従って2Dで正しく形成されている（有効な）場合にtrueを返します。
 
 この機能は Pete King によって開発されました
-### Feature: Add datetime_from_epoch (MSec from epoch) expression function
-`datetime_from_epoch(1483225200000) → 2017-01-01T00:00:00` Returns a datetime whose date and time are the number of milliseconds, msecs, that have passed since 1970-01-01T00:00:00.000, Coordinated Universal Time (Qt.UTC), and converted to Qt.LocalTime.
+### 機能: datetime_from_epoch (エポックからのミリ秒) 式関数の追加。
+`datetime_from_epoch(1483225200000) → 2017-01-01T00:00:00` 協定世界時（Qt.UTC）の1970-01-01T00:00:00.000からのミリ秒数（msecs）を日時として返し、Qt.LocalTimeに変換します。
 
 この機能はRichard Duivenvoordeによって開発されました
-### Feature: rotate() expression function
-`rotate($geometry, 45, make_point(4, 5)) → geometry rotated 45 degrees clockwise around the (4, 5) point` Returns a rotated version of a geometry. Calculations are in the Spatial Reference System of this geometry.
+### 機能: rotate() 式関数の追加
+`rotate($geometry, 45, make_point(4, 5)) → geometry rotated 45 degrees clockwise around the (4, 5) point` ジオメトリを回転させたバージョンを返します。計算はそのジオメトリの空間参照系（SRS）で行われます。
 
 この機能は Raymond Nijssen, Nyall Dawson によって開発されました
 ### 機能: random関数にシードを設定できるようにする
-- `rand(10, 80, 1) → 30` Returns a random integer within the range specified by the minimum and maximum argument (inclusive). If a seed is provided, the returned will always be the same, depending on the seed.
-- `randf(10, 80, 1) → 19.37136508087729` Returns a random float within the range specified by the minimum and maximum argument (inclusive). If a seed is provided, the returned will always be the same, depending on the seed.
+- `rand(10, 80, 1) → 30` 最小値と最大値の引数で指定された範囲内（両端を含む）のランダムな整数を返します。シードが指定された場合、返される値はシードに依存して常に同じになります。
+- `randf(10, 80, 1) → 19.37136508087729` 最小値と最大値の引数で指定された範囲内（両端を含む）のランダムな浮動小数点数を返します。シードが指定された場合、返される値はシードに依存して常に同じになります。
 
-This feature adds an optional seed parameter to rand() and randf() functions This is very useful if you want the result to be deterministic, for instance to assign random but fixed colors to features. Using color_hsb(rand(0,360,\$id),50,50) for instance yields always the same color for the same feature. We also improves the rand() function, which didn\'t work for high values (over 32000) by using Qt\'s QRandomGenerator instead of qrand (which it seems was deprecated in Qt 5.11).
+この機能は rand() および randf() 関数にオプションのシードパラメーターを追加します。結果を決定論的にしたい場合、例えば地物にランダムだが固定された色を割り当てる場合に非常に便利です。例えばを color_hsb(rand(0,360,\$id),50,50) 使用すると、同じ地物には常に同じ色が割り当てられます。 また、Qt 5.11で非推奨となった qrand の代わりにQtの QRandomGenerator を使用することで、高い値（32000以上）で正しく動作しなかった rand() 関数の問題も改善しています。
 
 この機能は olivierdalang によって開発されました
-### Feature: Language support for format_date() and to\_{date,datetime,time}()
+### 機能: format_date() と to\_{date,datetime,time}() におけるランゲージサポート
 - `format_date('2012-05-15','d MMMM yyyy','fr') → '15 mai 2012'`
 - `format_date('2012-05-15','d MMMM yyyy','it') → '15 maggio 2012'`
-- `format_date('2012-05-15','d MMMM yyyy','en') → '15 May 2012'` Formats a date type or string into a custom string format. Uses Qt date/time format strings. See QDateTime::toString.
+- `format_date('2012-05-15','d MMMM yyyy','en') → '15 May 2012'`日付型または文字列をカスタム文字列フォーマットに変換します。Qtの日付/時刻フォーマット文字列を使用します。QDateTime::toStringを参照してください。
 
-By default, those expression use the application\'s locale. The addition of an optional language parameter allows handling of dates that wouldn\'t match that default locale (say for e.g. an English system running QGIS trying to transform a French-formatted string into a date object).
+デフォルトでは、これらの式はアプリケーションのロケールを使用します。オプションの言語パラメーターを追加することで、デフォルトのロケールと一致しない日付も処理できるようになります（例えば、英語環境でQGISを実行しているシステムでフランス語形式の文字列を日付オブジェクトに変換しようとする場合など）。
 
 この機能はMathieu Pellerinによって開発されました
 ## デジタイズ
 ### 機能：別のレイヤにコピー/貼り付けする際に無効な属性を編集する
-On copy-paste features from one layer to another, in case there are constraints (e.g. not null) on the destination layer, that cannot bee fulfilled automatically by default values, a dialog pops up to fix the invalid attributes or disregard the constraints on purpose.
+あるレイヤーから別のレイヤーへ地物をコピー＆ペーストする際、コピー先のレイヤーにデフォルト値で自動的に満たすことができない制約（例：NOT NULL制約）がある場合、無効な属性を修正するか制約を意図的に無視するかを選択するダイアログが表示されます。
 
 ![image38](images/entries/5bd43dd39955e37ace130038b968550c6fa260c5.gif)
 
-This feature was funded by [Amt für Wald und Wild Zug](https://www.zg.ch/behoerden/direktion-des-innern/wald-und-wild)
+この機能の開発には [Amt für Wald und Wild Zug](https://www.zg.ch/behoerden/direktion-des-innern/wald-und-wild) からの資金提供がありました
 
 This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 ### 機能: スナップキャッシュの並列化
-In previous version of QGIS, the snapping index cache was built sequentially and you had to wait for all your layers to be indexed before starting edition. Thanks to the QGIS.org grant program, QGIS now builds the snapping index cache in parallel for each layer, so it speeds up the whole process. Snapping has also been relaxed, meaning that you don\'t have to wait for the cache to be complete, you can start editing and snapping information will appear as soon as they are ready.
+以前のバージョンのQGISでは、スナッピングインデックスキャッシュは順番に構築されており、編集を開始する前にすべてのレイヤーのインデックスが完成するまで待つ必要がありました。QGIS.orgの助成プログラムのおかげで、QGISは各レイヤーのスナッピングインデックスキャッシュを並行して構築するようになり、処理全体が高速化されました。また、スナッピングの制限も緩和され、キャッシュの構築完了を待たずに編集を開始できるようになりました。スナッピング情報は準備ができ次第、順次表示されます。
 
 ![image39](images/entries/d77958db7175267448d9b94950532dee8b90145c.webp)
 
@@ -442,65 +442,65 @@ This feature was funded by [QGIS.org](https://qgis.org)
 This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ## データ管理
 ### 機能：DXFエクスポートの改善
-We did a revamp of the DXF export process. This solidifies the export process and offers new features.
-- Styles of geometries are exported and blocks are used
-- The Z coordinate of 3D geometries are preserved
-- Labels are exported with their anchor points and horizontal and vertical alignment or quadrant settings respected
+DXFエクスポートの処理を全面的に刷新しました。これによりエクスポート処理が安定し、新機能も追加されました。
+- ジオメトリのスタイルがエクスポートされ、ブロックが使用されます。
+- 3Dジオメトリのz座標が保持されます。
+- ラベルはアンカーポイント、水平・垂直の配置設定、または象限設定を維持した状態でエクスポートされます。
 
-The whole DXF export process has also been made ready for running in a thread. With this in place, it\'s now only one step away from being sent to the background, allow cancellation of an ongoing export process or being exposed as a processing algorithm.
+DXFエクスポート処理全体がスレッドで実行できるように対応しました。これにより、バックグラウンドでの実行、進行中のエクスポート処理のキャンセル、またはプロセッシングアルゴリズムとしての公開まで、あと一歩のところまで来ています。
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-1262910-DE.html)
+この機能の開発には [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-1262910-DE.html) から資金提供を受けています
 
 This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## フォームとウィジェット
 ### 機能: リレーションエディタからジオメトリの地物を作成する
-We added the ability to add a new feature and digitize its geometry directly from within the relation editor widget. It\'s now easier to add a geometric feature related to your currently displayed parent feature.
+リレーションエディターウィジェット内から直接、新しい地物を追加してそのジオメトリをデジタイズする機能を追加しました。現在表示されている親地物に関連するジオメトリ地物をより簡単に追加できるようになりました。
 
 ![image40](images/entries/fe03aefab87464e54b70569e6d05ad09a1b8fae5.gif)
 
-This feature was funded by [QWAT user group](http://qwat.org/about/)
+この機能開発には [QWAT user group](http://qwat.org/about/) の資金提供を受けています
 
 This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### 機能: 地物選択ダイアログの改善
-From the relation editor widget, you can link your currently displayed feature with existing features. The feature selection dialog allows you to choose these features. Thanks to the QWAT user group, feature selection is now shared with the canvas\' one so it is easy to find out and pick the feature you want to link. We have also added the ability to filter displayed features (selected ones, visible on map, matching an expression\...) reusing the same widgets already existing in attribute form.
+リレーションエディターウィジェットから、現在表示されている地物を既存の地物にリンクすることができます。地物選択ダイアログでこれらの地物を選択できます。QWATユーザーグループのおかげで、地物の選択がキャンバスの選択と共有されるようになり、リンクしたい地物を簡単に見つけて選択できるようになりました。また、属性フォームの既存ウィジェットを再利用して、表示される地物をフィルタリングする機能（選択中の地物、地図上で表示されている地物、式に一致する地物など）も追加されました。
 
 ![image41](images/entries/a65364e6a48857a8720643c41a3cb17461d9e16a.gif)
 
-This feature was funded by [QWAT user group](http://qwat.org/about/)
+この機能開発には [QWAT user group](http://qwat.org/about/) の資金提供を受けています
 
 This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
-### Feature: UX improvements in drag\'n\'drop form designer
-The drag\'n\'drop form designer has received some nice UX improvements
-- The two lists (available fields and layout tree) are now synchronized: whenever you select an entry in a list, the matching item is selected in the other one.
-- Hidden config dialogs (under double-click) have been brought to the right panel
+### 機能: ドラッグ＆ドロップフォームデザイナーのUX改善
+ドラッグ＆ドロップフォームデザイナーにいくつかのUX改善が加えられました。
+- 2つのリスト（利用可能なフィールドとレイアウトツリー）が同期されるようになりました。一方のリストでエントリを選択すると、もう一方のリストで対応するアイテムが自動的に選択されます。
+- ダブルクリックで表示されていた非表示の設定ダイアログが右パネルに移動されました。
 
 ![image42](images/entries/5f47cb6311a9bffef94128a703719d709deb995a.gif)
 
 この機能は QGIS.org bugfixing によって資金提供されました
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
+この機能は [Denis Rouzaud, OPENGIS.ch](https://opengis.ch) によって開発されました
 ## レイヤ凡例
 ### 機能：レイヤツリーでWMTS凡例グラフィックスの表示に対応
-We added support for displaying WMTS legend graphics directly in the layer tree, as is already the case with WMS legend graphics.
+WMSの凡例グラフィックと同様に、WMTSの凡例グラフィックをレイヤーツリーに直接表示できるようになりました。
 
 例:
 
 ![imageQ4](https://user-images.githubusercontent.com/1298852/72462785-33351c80-37d2-11ea-98f2-ce0d5221e1f5.png)
 
-Sample use case: <https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml>
+サンプルユースケース: <https://wmts10.geo.admin.ch/EPSG/2056/1.0.0/WMTSCapabilities.xml>
 
-This feature was developed by [Sandro Mani](https://api.github.com/users/manisandro)
+この機能は [Sandro Mani](https://api.github.com/users/manisandro) によって開発されました
 ## 分析ツール
 ### 機能: メッシュレイヤからの等高線のスムーズなエクスポート
-A new algorithm in QGIS's analysis library API to export directly contour lines and polygons is added. The method is not based on GDAL algorithms, but directly uses mesh layer triangular mesh interpolation methods. It is both fast and with smooth shapes, matching rendered images from QGIS. You can try the new processing algorithm in Crayfish processing toolbox.
+等高線と等値面ポリゴンを直接エクスポートするための新しいアルゴリズムがQGISの解析ライブラリAPIに追加されました。この手法はGDALアルゴリズムをベースにせず、メッシュレイヤーの三角形メッシュ補間手法を直接使用しています。処理が高速で滑らかな形状が得られ、QGISのレンダリング画像と一致します。新しいプロセッシングアルゴリズムはCrayfishプロセッシングツールボックスでお試しいただけます。
 
 ![image44](images/entries/044ad55bfb4287026b4e002c46c8687093488d22.webp)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
 This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
-### Feature: Support of Datasets Defined on Faces in QGIS Mesh Calculator
-You can use mesh calculator for all dataset types, both defined on faces and vertices. Additionally, it allows users to store the result of mesh calculator under different name or format. This allows for example to work with FLO-2D or HEC-RAS data in the QGIS mesh calculator
+### 機能: QGISメッシュ計算機でのフェイス定義データセットのサポート
+フェイスおよび頂点に定義されたすべてのデータセット種別に対してメッシュ計算機を使用できます。また、メッシュ計算機の結果を異なる名前や形式で保存することもできます。これにより、例えばFLO-2DやHEC-RASのデータをQGISメッシュ計算機で扱うことが可能になります。
 
 ![image45](images/entries/044d52fe937887854583ecfdc551e73eafb94a41.webp)
 
@@ -508,90 +508,90 @@ This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environm
 
 This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ## プロセシング
-### Feature: Package new layers to existing GeoPackage
-We improved the existing *package layers* processing algorithm to be able to add new layers to existing GeoPackages. All you need to do to make use of this is disable the OVERWRITE parameter and specify an existing GeoPackage.
+### 機能: 既存のGeoPackageへの新しいレイヤーの追加
+既存のGeoPackageに新しいレイヤーを追加できるよう、既存の レイヤーのパッケージ化 プロセッシングアルゴリズムを改善しました。この機能を利用するには、OVERWRITEパラメーターを無効にして既存のGeoPackageを指定するだけです。
 
 ![image46](images/entries/35d87f4826aad132de4a0b99ac7c775f6aa9b029.webp)
 
-This feature was funded by [BikePlan](https://www.bikeplan.ch/)
+この機能の開発には [BikePlan](https://www.bikeplan.ch/) の資金提供を受けています
 
 This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### 機能: ファジー理論 - ラスタのファジー化 (linear membership)
-The Fuzzify raster (linear membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a linear fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a linear membership function.
+ラスターのファジー化（線形メンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、線形ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは線形メンバーシップ関数に従います。
 
 ![image47](images/entries/bfb37d710293c252dae11b67b25bdc1431f13815.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: ファジー理論 - ラスタのファジー化 (power membership)
-The Fuzzify raster (power membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following a power fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows a power membership function.
+ラスターのファジー化（べき乗メンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、べき乗ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いはべき乗メンバーシップ関数に従います。
 
 ![image48](images/entries/7a81ecd4414ee39b37e575863687615c88e9a856.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: Fuzzy Logic - Fuzzfiy ラスタ (small membership)
-The Fuzzify raster (small membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'small\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'small\' membership function. The \'small\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
+ラスターのファジー化（smallメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'small \' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは  \'small \' メンバーシップ関数に従います。 \'small \' 関数は、半メンバーシップの点（中間点、結果は0.5）を設定するユーザー定義の2つの入力ラスター値と、関数の立ち上がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image49](images/entries/2bef948a7b02bd26208ca98e9ddb243d46d104a6.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: ファジー理論 - ラスタのファジー化 (large membership)
-The Fuzzify raster (large membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'large\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'large\' membership function.The \'large\' function is constructed using two user-defined input raster values which set the point of half membership (midpoint, results to 0.5) and a predefined function spread which controls the function uptake.
+ラスターのファジー化（largeメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'large \' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは \'large \' メンバーシップ関数に従います。 \'large \' 関数は、半メンバーシップの点（中間点、結果は0.5）を設定するユーザー定義の2つの入力ラスター値と、関数の立ち上がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image50](images/entries/10963d11812664a76d4fc3fac72777c34a08c767.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: ファジー理論 - ラスタのファジー化 (gaussian membership)
-The Fuzzify raster (gaussian membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'gaussian\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'gaussian\' membership function. The gaussian function is constructed using two user-defined input values which set the midpoint of the gaussian function (midpoint, results to 1) and a predefined function spread which controls the function spread.
+ラスターのファジー化（gaussianメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'gaussian \' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは  \'gaussian \' メンバーシップ関数に従います。gaussian関数は、gaussian関数の中間点（中間点、結果は1）を設定するユーザー定義の2つの入力値と、関数の広がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image51](images/entries/58068dc6518a0df20a39df69ea4175f7b196b049.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: ファジー理論 - ラスタのファジー化 (near membership)
-The Fuzzify raster (near membership) algorithm is a native implementation of a fuzzy logic algorithm. It transforms an input raster to a fuzzified raster and thereby assigns values between 0 and 1 following the \'near\' fuzzy membership function. The value of 0 implies no membership with the defined fuzzy set, a value of 1 depicts full membership. In between, the degree of membership of raster values follows the \'near\' membership function. The near function is constructed using two user-defined input values which set the midpoint of the near function (midpoint, results to 1) and a predefined function spread which controls the function spread.
+ラスターのファジー化（nearメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'near\' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは \'near\' メンバーシップ関数に従います。near関数は、near関数の中間点（中間点、結果は1）を設定するユーザー定義の2つの入力値と、関数の広がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: 頂点を高密度化アルゴリズムをC++に移植
-We ported the Densify by count algorithm to C++ in order to enhance it\'s speed when compared to the previous Python implementation. The new algorithm also exposes the count parameter as dynamic parameter so that it can be controlled by expressions or field values.
+以前のPython実装と比較して処理速度を向上させるため、「カウントによる頂点の追加」アルゴリズムをC++に移植しました。新しいアルゴリズムではcountパラメーターが動的パラメーターとして公開され、式やフィールド値で制御できるようになりました。
 
 ![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: 指定範囲にランダム点群アルゴリズムをC++に移植
-We ported the Random points in extent algorithm to C++. This boosts it\'s speed when comparing it to the previous Python implementation. The new algorithm also exposes an advanced parameter of maximum numbers of retrys for the algorithm when searching for randomly placed points that respect a certain distance between all points.
+「範囲内のランダムポイント」アルゴリズムをC++に移植しました。これにより、以前のPython実装と比較して処理速度が向上しました。新しいアルゴリズムでは、すべてのポイント間で一定の距離を保つランダムなポイントを探索する際の最大再試行回数を指定する詳細パラメーターも公開されています。
 
 ![image54](images/entries/c452431d9a2cd9f9f76869cf98e09e18bf2a81a4.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
 ### 機能: 線密度アルゴリズム
-In this version we added a native algorithm to calculate the raster based density of lines. This algorithm calculates the line density based on a search radius and weights of the lines inside the search radius. The algorithm was ported to provide more functionality form the ArcGIS Spatial Analyst extension in QGIS.
+このバージョンでは、ラスターベースのライン密度を計算するネイティブアルゴリズムを追加しました。このアルゴリズムは、検索半径と検索半径内のラインの重みに基づいてライン密度を計算します。このアルゴリズムは、ArcGIS Spatial Analyst拡張機能の機能をQGISに移植したものです。
 
 ![image55](images/entries/b28bbe3d5129ccc5dd61585dc1a9e31383a59c6f.webp)
 
 This feature was developed by [Clemens Raffler](https://github.com/root676)
-### Feature: New algorithm \"Repair Shapefile\"
-We added a new algorithm which uses GDAL to repair shapefiles which have a broken or missing .SHX file.
+### 機能: 新アルゴリズム \"Shapefileの修復\"
+GDALを使用して、破損または欠落した.SHXファイルを持つシェープファイルを修復する新しいアルゴリズムを追加しました。
 
 ![image56](images/entries/c3a6a174187284126ea0af289614505ab8c0c593.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Add new algorithm \"Detect Dataset Changes\"
-This algorithm compares two vector layers, and determines which features are unchanged, added or deleted between the two. It is designed for comparing two different versions of the same dataset.
+### 機能: 新アルゴリズムび追加 \"データセット変更の検出\"
+このアルゴリズムは2つのベクターレイヤーを比較し、両者の間で変更されていない地物、追加された地物、削除された地物を判定します。同じデータセットの2つの異なるバージョンを比較するために設計されています。
 
-When comparing features, the original and revised feature geometries will be compared against each other. Depending on the Geometry Comparison Behavior setting, the comparison will either be made using an exact comparison (where geometries must be an exact match for each other, including the order and count of vertices) or a topological comparison only (where are geometries area considered equal if all of the their component edges overlap. E.g. lines with the same vertex locations but opposite direction will be considered equal by this method). If the topological comparison is selected then any z or m values present in the geometries will not be compared.
+地物を比較する際、元の地物と修正後の地物のジオメトリが相互に比較されます。「ジオメトリ比較動作」の設定に応じて、完全一致比較（頂点の順序と数を含め、ジオメトリが完全に一致する必要がある）またはトポロジ比較のみ（構成するエッジがすべて重なる場合にジオメトリが等しいとみなされる。例えば、同じ頂点位置を持つが方向が逆のラインはこの方法では等しいとみなされる）のいずれかで比較が行われます。トポロジ比較を選択した場合、ジオメトリに含まれるZ値やM値は比較されません。
 
-By default, the algorithm compares all attributes from the original and revised features. If the Attributes to Consider for Match parameter is changed, then only the selected attributes will be compared (e.g. allowing users to ignore a timestamp or ID field which is expected to change between the revisions).
+デフォルトでは、アルゴリズムは元の地物と修正後の地物のすべての属性を比較します。「照合対象の属性」パラメーターを変更すると、選択した属性のみが比較されます（例：バージョン間で変更されることが想定されるタイムスタンプやIDフィールドを無視するなど）。
 
-If any features in the original or revised layers do not have an associated geometry, then care must be taken to ensure that these features have a unique set of attributes selected for comparison. If this condition is not met, warnings will be raised and the resultant outputs may be misleading.
+元のレイヤーまたは修正後のレイヤーにジオメトリを持たない地物が含まれる場合、比較対象として選択した属性の組み合わせがその地物に対して一意になるよう注意が必要です。この条件が満たされない場合、警告が表示され、結果の出力が誤解を招く可能性があります。
 
-The algorithm outputs three layers, one containing all features which are considered to be unchanged between the revisions, one containing features deleted from the original layer which are not present in the revised layer, and one containing features add to the revised layer which are not present in the original layer.
+このアルゴリズムは3つのレイヤーを出力します。1つはバージョン間で変更なしとみなされるすべての地物を含むレイヤー、1つは元のレイヤーから削除され修正後のレイヤーに存在しない地物を含むレイヤー、もう1つは修正後のレイヤーに追加され元のレイヤーに存在しない地物を含むレイヤーです。
 
 ![image57](images/entries/e38dcea12e1198341eb9f0bd45a33ebf7eda390b.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: New mode to \"Join Attributes by Location\" to take attributes from matching feature with largest area of overlap only
-This allows for easy polygon-\>polygon joins, where you expect there to be only a single matching feature and don\'t want to include features which are just touching or have just tiny sliver polygon overlaps.
+### 機能:  \"Join Attributes by Location\" に、最大重複面積を持つ一致地物の属性のみを取得する新しいモードを追加
+これにより、一致する地物が1つだけであることが想定され、単に接触しているだけの地物や微小なスリバーポリゴンの重なりのみを持つ地物を含めたくない場合の、ポリゴン→ポリゴンの結合が簡単に行えるようになります。
 
 ![image58](images/entries/27b8e5e11deca93ffade31b86edc712ce918d179.webp)
 
@@ -599,84 +599,84 @@ This allows for easy polygon-\>polygon joins, where you expect there to be only 
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### 機能: ベクタのネイティブアフィン変換アルゴリズムを追加
-Offers the following benefits over the GRASS/SAGA versions:
-- Full support for z/m values and handling curved geometries without loss of curves
-- Works with all native data types, no need for format transformation
-- Supports dynamic (data defined, per feature) translate/scale/rotate parameters
-- Allows transformation and scaling of both Z and M values (if present)
-- Supports in-place edit mode
+GRASSおよびSAGAバージョンと比較して、以下の利点があります:
+- Z値/M値の完全サポートと、曲線を損なわない曲線ジオメトリの処理
+- すべてのネイティブデータ型に対応し、形式変換が不要
+- 動的な（データ定義による、地物ごとの）移動・拡大縮小・回転パラメーターをサポート
+- Z値とM値の両方（存在する場合）の変換およびスケーリングが可能
+- インプレース編集モードをサポート
 
 ![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: add gdal_viewshed algorithm
-Expose new gdal_viewshed tool via Processing toolbox. Note: this requires GDAL \>= 3.1.
+### 機能: gdal_viewshed アルゴリズムの追加
+プロセッシングツールボックスから新しい gdal_viewshed ツールを利用できるようになりました。注意：GDAL 3.1以上が必要です。
 
 この機能はAlexander Bruyによって開発されました
 ## ブラウザ
 ### 機能: ブラウザに表示されるアイテムのカスタマイズ
-Add customization of the items shown in browser to the Interface Customization dialog. User can hide some of the root items in the browser panel (e.g. Favourites, PostGIS provider, MSSQL, Oracle, Volumes, \...)
+インターフェースカスタマイズダイアログに、ブラウザーに表示されるアイテムのカスタマイズ機能を追加しました。ユーザーはブラウザーパネルのルートアイテムの一部を非表示にできます（例：お気に入り、PostGISプロバイダー、MSSQL、Oracle、ボリュームなど）。
 
 ![image60](images/entries/5e8e9037420b83cd44d4e1994d4119e4ae92c8aa.webp)
 
-This feature was funded by [Limerick City and County Council](https://www.limerick.ie/council)
+この機能開発は  [Limerick City and County Council](https://www.limerick.ie/council) の資金提供を受けました
 
 This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### 機能: ブラウザパネルにhtmlファイルを表示
-This feature allows .htm(l) files to be shown and opened from the browser panel. These are often used to document data files or mapping projects.
+この機能により、.htm(l)ファイルをブラウザーパネルから表示・開けるようになりました。これらのファイルはデータファイルや地図プロジェクトのドキュメントとしてよく使用されます。
 
 ![image61](images/entries/0db8930d20ca6f2fbf5b29593afdcf59e1af8d1e.webp)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Show \"Open Document\...\" action in browser
-When right clicking certain files in the browser, allowing them to be opened with the default external application for that file type
+### 機能: ブラウザに \"Open Document\...\" アクションを追加しました
+ブラウザーで特定のファイルを右クリックすることで、そのファイル種別に対応したデフォルトの外部アプリケーションで開けるようになりました。
 
-E.g. PDFs will open with the default external PDF viewer.
+例えば、PDFはデフォルトの外部PDFビューアーで開きます。
 
-Works with PDF, ODS, XLS(X), CSV, TXT, PNG, JPEG, TIFF, SVG (other types will likely need more work, since they aren\'t currently shown in the browser).
+PDF、ODS、XLS(X)、CSV、TXT、PNG、JPEG、TIFF、SVGに対応しています（他の形式は現在ブラウザーに表示されていないため、対応には追加作業が必要になる可能性があります）。
 
 ![image62](images/entries/447f201d2342a64912bbef1e1d0aa3ebb8963ae4.gif)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Allow customization of the items shown in browser
-You can now customize items shown in the browser. User can decide (in the Interface Customization dialog) to hide some of the root items in the browser panel (e.g. Favourites, or POSTGIS provider, \...)
+### 機能: ブラウザーに表示されるアイテムのカスタマイズが可能
+ブラウザーに表示されるアイテムをカスタマイズできるようになりました。ユーザーはインターフェースカスタマイズダイアログで、ブラウザーパネルのルートアイテムの一部を非表示にするかどうかを設定できます（例：お気に入り、POSTGISプロバイダーなど）。
 
 ![Screenshot 2020-01-09 at 09 17 05](https://user-images.githubusercontent.com/804608/72050388-466f5600-32c1-11ea-94f5-092cc8471243.png)
 
 この機能は Limerick City and County Council によって資金提供されました
 
-This feature was developed by [Peter Petrik](https://api.github.com/users/PeterPetrik)
-### Feature: Add Refresh action to OGC services
-You can now refresh OGC services in the browser. Below is a screenshot showing an example of how this function works in WMS/WMTS connections:
+この機能は [Peter Petrik](https://api.github.com/users/PeterPetrik) によって開発されました
+### 機能: OGCサービスへの更新アクションの追加
+ブラウザーからOGCサービスを更新できるようになりました。以下は、WMS/WMTS接続でのこの機能の動作例のスクリーンショットです:
 
 ![OGCrefreshonaction](https://user-images.githubusercontent.com/2663775/71974919-cfd04b00-3223-11ea-834d-ff016c70a8c6.gif)
 
-This feature was developed by [Samweli Mwakisambwe](https://api.github.com/users/Samweli)
+この機能は [Samweli Mwakisambwe](https://api.github.com/users/Samweli) によって開発されました
 ## データプロバイダ
-### Feature: Changed WMTS layer collection icon
-This was a change of the icon used for WMTS layer collection item, a database schema was used instead of a WMTS related icon. A general WMS icon is now used.
+### 機能: WMTSレイヤーコレクションのアイコンを変更
+WMTSレイヤーコレクションアイテムに使用されるアイコンを変更しました。以前はWMTS関連のアイコンの代わりにデータベーススキーマのアイコンが使用されていましたが、現在は汎用のWMSアイコンが使用されています。
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
 This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
-### Feature: Added Metadata URL property in the layer metadata tab for WMS / WMTS and WCS services
+### 機能: WMS / WMTSおよびWCSサービスのレイヤーメタデータタブにメタデータURLプロパティを追加
 This feature was funded by [Kartoza](http://kartoza.com/)
 
 This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
-### Feature: Fetch and show dimensions metadata for a WMS layer metadata
+### 機能: WMSレイヤーのメタデータのディメンションメタデータを取得して表示
 ![image65](images/entries/d058ac6b89a8d06169b06580843967ad26e1ef54.webp)
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
 This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
-### Feature: Added refresh action to OGC services entries
+### 機能: OGCサービスエントリへの更新アクションを追加
 ![image66](images/entries/7ce331ee78be7f8b0693c653ecc58916d70a1a92.gif)
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
 This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
-### Feature: 3d Stacked Meshes
-MDAL and QGIS now supports 3D Stacked Meshes, particularly for TUFLOW-FV format. For this release, you need to choose appropriate averaging method in the QGIS interface and you are able to browse the data similarly to any other 2D dataset.
+### 機能: 3Dスタックメッシュ
+MDALとQGISが3Dスタックメッシュに対応しました。特にTUFLOW-FV形式をサポートしています。このリリースでは、QGISインターフェースで適切な平均化手法を選択することで、他の2Dデータセットと同様にデータを参照することができます。
 
 ![image67](images/entries/dc3d85153d9bcecdf7ebbc6433c7cb40319e00dd.webp)
 
@@ -684,28 +684,28 @@ This feature was funded by [TUFLOW](http://www.tuflow.com)
 
 This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
 ### 機能: シェープファイルの符号化のとても多くの数の問題を修正
-This fixes the (broken by design?) handling of Shapefile encoding, which has been an ongoing issue for years in QGIS.
+これにより、QGISで長年にわたる問題となっていたシェープファイルのエンコーディング処理（設計上の欠陥？）が修正されます。
 
-See discussion at
+詳細はこちらのディスカッションを参照してください:
 - [#21264](https://github.com/qgis/QGIS/issues/21264)
 - <http://osgeo-org.1560.x6.nabble.com/Shapefile-with-file-cpg-codepage-td5275106.html>
 - <http://osgeo-org.1560.x6.nabble.com/QGIS-ignore-the-cpg-files-when-loading-shapefiles-td5348021.html>
 
 (+ others!)
 
-The situation was that we had two different code paths for handling GDAL side attribute decoding OR QGIS side decoding. Unfortunately, they are both incompatible with each other, and due to GDAL API for this, we can\'t unify the two approaches. (More technical detail in the commit log message!)
+GDALサイドの属性デコードとQGISサイドのデコードを処理するための2つの異なるコードパスが存在していました。残念ながら、両者は互いに互換性がなく、GDALのAPIの制約上、2つのアプローチを統合することができません。（技術的な詳細はコミットログメッセージを参照してください！）
 
-So, now we:
-- always do the decoding on QGIS\' side. This allows users to manually override a shapefile\'s declared encoding because they are often incorrect!
-- use a port of GDAL\'s shapefile detection logic (it\'s not exposed in GDAL API, so I had to re-implement it here) so that we default to reading shapefiles by respecting the embedded encoding information (via CPG files or DBF LDID information)
-- Completely remove the confusing/broken \"Ignore shapefile encoding declaration\" option, as it\'s no longer required \-- users are ALWAYS able to manually change the encoding of shapefiles layers if needed
-- Always show users the detected embedded encoding in the layer properties, instead of always showing \"UTF-8\" when the embedded encoding information is used
+そのため、現在は以下の対応を行っています:
+- 常にQGIS側でデコードを行うようにしました。シェープファイルで宣言されているエンコーディングが誤っていることが多いため、ユーザーが手動で上書きできるようになります。
+- GDALのシェープファイル検出ロジックを移植して使用しています（GDAL APIでは公開されていないため、ここで再実装しました）。これにより、デフォルトでCPGファイルまたはDBFのLDID情報による埋め込みエンコーディング情報を尊重してシェープファイルを読み込むようになります
+- 混乱を招く/壊れた「シェープファイルのエンコーディング宣言を無視する」オプションを完全に削除しました。このオプションはもはや不要です。ユーザーは必要に応じて常にシェープファイルレイヤーのエンコーディングを手動で変更できます。
+- 埋め込みエンコーディング情報が使用される場合に常に「UTF-8」と表示されていた問題を修正し、レイヤープロパティに検出された埋め込みエンコーディングを常に表示するようにしました。
 
-This should give the best of both worlds \-- a nice default behavior resulting in shapefiles being read with the correct encoding, whilst still allowing users to override this on a layer-by-layer basis as needed.
+これにより、両方の利点が得られます。シェープファイルが正しいエンコーディングで読み込まれる優れたデフォルト動作を実現しつつ、必要に応じてレイヤーごとにユーザーが上書きできる柔軟性も維持されています。
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Oracle curve type edition support
-In earlier versions of QGIS, it was not possible to edit some geometry types coming from an Oracle database. We have then added edition support for the following geometry types:
+### 機能: Oracleカーブ形式編集のサポート
+以前のバージョンのQGISでは、Oracleデータベースから取得した一部のジオメトリタイプを編集することができませんでした。そのため、以下のジオメトリタイプへの編集サポートを追加しました:
 - CircularString(Z)
 - CompoundCurve(Z)
 - MultiCurve(Z)
@@ -716,16 +716,16 @@ In earlier versions of QGIS, it was not possible to edit some geometry types com
 
 This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### 機能: WMS プロバイダでMBTiles ラスタの対応
-This feature adds MBTiles tiled raster map support to WMS provider so that it uses the same code paths like WMTS or XYZ tiles. Here are the advantages of the approach through WMS provider:
-- correctly scaling tiles on high dpi display
-- better look when not zoomed to the native resolution of the tiles. WMS provider uses smooth scaling while GDAL uses nearest neighbor by default.
-- map tile showing up while rendering (with GDAL it\'s blank map until everything is loaded)
-- possible to use tile scale slider dock widget
-- faster - mainly a side effect of loading fewer tiles on high dpi display
+この機能は、WMSプロバイダーにMBTilesタイルラスターマップのサポートを追加し、WMTSやXYZタイルと同じコードパスを使用するようにします。WMSプロバイダーを通じたこのアプローチの利点は以下の通りです:
+- 高DPIディスプレイでのタイルの正しいスケーリング
+- タイルのネイティブ解像度にズームしていない場合の表示品質の向上。WMSプロバイダーはスムーズなスケーリングを使用しますが、GDALはデフォルトで最近傍補間を使用します。
+- レンダリング中にマップタイルが順次表示されます（GDALではすべて読み込まれるまで空白の地図が表示されます）。
+- タイルスケールスライダードックウィジェットの使用が可能
+- 高速化 - 主に高DPIディスプレイでの読み込みタイル数削減による副次的効果
 
 この機能は [Martin Dobias](https://api.github.com/users/wonder-sk) によって開発されました
 ### 機能: ネイティブのPostGISラスタデータプロバイダ
-This is an implementation of a PostGIS raster data provider in QGIS core. Tiles are cached in RAM memory.
+QGISコアにおけるPostGISラスターデータプロバイダーの実装です。タイルはRAMメモリにキャッシュされます。
 
 この機能は Christmas Holidays Inc. によって資金提供されました
 
@@ -733,9 +733,9 @@ This is an implementation of a PostGIS raster data provider in QGIS core. Tiles 
 ### 機能: WMSレイヤのメタデータに寸法のメタデータを表示する
 ![wms-ttimelayermetadataqgis](https://user-images.githubusercontent.com/2663775/71542497-37f77500-2978-11ea-854b-d9a9ca2d6c77.png)
 
-This feature was developed by [Samweli Mwakisambwe](https://api.github.com/users/Samweli)
-### Feature: Other average methods 3d mesh
-QGIS now includes numerous methods for averaging mesh layers (see [related QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/158), and for a description of the methods see [TUFLOW documentation](https://fvwiki.tuflow.com/index.php?title=Depth_Averaging_Results).
+この機能は [Samweli Mwakisambwe](https://api.github.com/users/Samweli) によって開発されました
+### 機能: 3Dメッシュのその他の平均化手法
+QGISにメッシュレイヤーの多数の平均化手法が追加されました ( [related QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/158) と  各手法の説明については  [TUFLOW documentation](https://fvwiki.tuflow.com/index.php?title=Depth_Averaging_Results) を参照して下さい。
 - SingleLevelAverageMethod (top)
 - SingleLevelAverageMethod (bottom)
 - MultiLevelsFromTopAveragingMethod
@@ -747,22 +747,22 @@ QGIS now includes numerous methods for averaging mesh layers (see [related QEP](
 
 ![Screenshot 2019-12-19 at 13 59 47](https://user-images.githubusercontent.com/804608/71175509-068bf480-2268-11ea-9d60-adad896912e2.png)
 
-This feature was developed by [Peter Petrik](https://api.github.com/users/PeterPetrik)
-### Feature: OGC API - Features provider
-This new provider is a client-side implementation of the recently adopted [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) specification, previously known as WFS3. It is integrated within the graphical user interface of the WFS provider, and leverages its core mechanisms to offer background downloading of features, using paging, and a local cache of already downloaded features for a smoother interactive use of datasets.
+この機能は [Peter Petrik](https://api.github.com/users/PeterPetrik) によって開発されました
+### 機能: OGC API - Features プロバイダー
+この新しいプロバイダーは、以前WFS3として知られていた最近採択された [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) 仕様のクライアントサイド実装です。WFSプロバイダーのグラフィカルユーザーインターフェースに統合されており、そのコアメカニズムを活用してページングによる地物のバックグラウンドダウンロードと、ダウンロード済み地物のローカルキャッシュを提供し、データセットのよりスムーズなインタラクティブ操作を実現します。
 
 ![image70](images/entries/d74a13f520336e0c2e44469ee4e527188e2466de.webp)
 
-This feature was funded by [Planet](https://planet.com)
+この機能開発には [Planet](https://planet.com) の資金提供を受けています
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com)
+この機能は [Even Rouault (Spatialys)](https://www.spatialys.com) によって開発されました
 ## QGISサーバー
-### Feature: QGIS Development Server Application
-**QGIS Development HTTP Server**
+### 機能: QGIS開発用サーバーアプリケーション
+**QGIS 開発用 HTTP サーバー**
 
-This is a small independent command-line application that implements a minimal HTTP development server for QGIS Server.
+これはQGIS Server向けの最小限のHTTP開発用サーバーを実装した、小規模な独立したコマンドラインアプリケーションです。
 
-It can be useful when developing and testing QGIS Server projects, modules, and plugins without requiring a full webserver/FCGI stack.
+完全なWebサーバー/FCGIスタックを必要とせずに、QGISサーバーのプロジェクト、モジュール、プラグインの開発およびテストを行う際に役立ちます。
 
 ![qgismapserver](https://user-images.githubusercontent.com/142164/73081781-84c36280-3ec8-11ea-9285-ab4c41e3082c.gif)
 ``` bash
@@ -785,30 +785,30 @@ addressAndPort Listen to address and port (default: "localhost:8000")
 address and port can also be specified with the environment
 variables QGIS\_SERVER\_ADDRESS and QGIS\_SERVER\_PORT
 ```
-Sample output:
+出力例:
 
 `bash QGIS Development Server listening on http://localhost:8000 CTRL+C to exit 127.0.0.1 [lun gen 20 15:16:41 2020] 5140 103ms "GET /wfs3/?MAP=/home/ale/dev/QGIS/tests/testdata/qgis_server/test_project.qgs HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 3298 2ms "GET /wfs3/static/jsonFormatter.min.js HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 1678 3ms "GET /wfs3/static/jsonFormatter.min.css HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:41 2020] 1310 5ms "GET /wfs3/static/style.css HTTP/1.1" 200 127.0.0.1 [lun gen 20 15:16:43 2020] 4285 13ms "GET /wfs3/collections?MAP=/home/ale/dev/QGIS/tests/testdata/qgis_server/test_project.qgs HTTP/1.1" 200`
 
 この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
-### Feature: Add DXF server export params NO_MTEXT and FORCE_2D
-QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control text and line symbology for generated DXF files. Adds missing parameters to GetDxf request
+### 機能: DXFサーバーエクスポートパラメーター NO_MTEXT および FORCE_2D の追加
+QGISサーバーに、生成されるDXFファイルのテストおよびラインシンボロジーを制御するための新しいパラメーター `NO_MTEXT` および `FORCE_2D`  が追加されました。GetDxfリクエストに不足していたパラメーターを追加します。
 
 This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
-### Feature: Add json support to WMS GetLegendGraphic
-This feature adds support for GetLegendGraphic responses encoded as JSON. It builds on previous work by \@pblottiere, who added QgsLegendRenderer::exportLegendToJson for that exact purpose.
+### 機能: WMS GetLegendGraphicへのJSONサポートの追加
+この機能は、JSON形式でエンコードされたGetLegendGraphicレスポンスのサポートを追加します。まさにこの目的のために QgsLegendRenderer::exportLegendToJson を追加した  \@pblottiere の以前の作業を基に構築されています。
 
-For example a GetLegendGraphic request with FORMAT=image/png producing the image
+例えば FORMAT=image/png を指定したGetLegendGraphicリクエストによる画像の生成
 
 ![image72](https://user-images.githubusercontent.com/76594/64876231-fbb13a80-d64e-11e9-83e5-120fb1bc0ea8.png)
 
-will produce the following with FORMAT=application/json
+以下のものを FORMAT=application/json を指定して作成します
 
-The icon image is encoded in base64, and directly displayable in a web page.
+アイコン画像はbase64でエンコードされており、Webページで直接表示できます。
 
 この機能は Éric Lemoine によって開発されました
 ## プログラム可能
-### Feature: Exposes shape digitizing methods to QgisInterface
-The actions to trigger the drawing tools were not exposed in the API, if you wanted to do an action for one of these tools, you had to recreate classes. So a call of the type `qgis.utils.iface.actionCircleCenterPoint().trigger()` simplifies programmability.
+### 機能: QgisInterfaceへのシェープデジタイズメソッドの公開
+描画ツールを起動するアクションはAPIで公開されていなかったため、これらのツールのいずれかに対してアクションを実行する場合、クラスを再作成する必要がありました。`qgis.utils.iface.actionCircleCenterPoint().trigger()` のような呼び出しによりプログラマビリティが向上します。
 
 この機能は QWAT/QGEP グループによって資金提供されました
 
@@ -822,21 +822,21 @@ The actions to trigger the drawing tools were not exposed in the API, if you wan
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | \"Recent\" Group do not appear when opening the \"Select by expression\" dialog | [#33791](https://github.com/qgis/QGIS/issues/33791) | [PR #33922](https://github.com/qgis/QGIS/pull/33922) | [PR #33922](https://github.com/qgis/QGIS/pull/33922) |
-| QGISserver cannot find shp; tries to open absolute instead of relative path | [#33200](https://github.com/qgis/QGIS/issues/33200) | [PR #33925](https://github.com/qgis/QGIS/pull/33925) | risky |
-| unreported: wrong link in server WFS3 items page (too many slashes) | 未報告 | [PR #33926](https://github.com/qgis/QGIS/pull/33926) | risky |
-| Qgis scans raster tables on connection to postgis | [#33885](https://github.com/qgis/QGIS/issues/33885) | [PR #33922](https://github.com/qgis/QGIS/pull/33922) | [PR #34288](https://github.com/qgis/QGIS/pull/34288) |
-| Layer Properties Information tab - formatting problems | [#33862](https://github.com/qgis/QGIS/issues/33862) | [PR #33955](https://github.com/qgis/QGIS/pull/33955) | [PR #34289](https://github.com/qgis/QGIS/pull/34289) |
-| Can\'t set min/max values to decimal in raster symbology with QGis Linux versions | [#33859](https://github.com/qgis/QGIS/issues/33859) | works for me in current master |  |
-| QgsVectorLayer readStyle does not read scale based visibility | [#33840](https://github.com/qgis/QGIS/issues/33840) | [PR #33987](https://github.com/qgis/QGIS/pull/33987) | [PR #34289](https://github.com/qgis/QGIS/pull/34289) |
+| QGISサーバーがshpファイルを見つけられない; 相対パスの代わりに絶対パスで開こうとする | [#33200](https://github.com/qgis/QGIS/issues/33200) | [PR #33925](https://github.com/qgis/QGIS/pull/33925) | リスクあり |
+| 未報告：サーバーWFS3アイテムページの誤ったリンク（スラッシュが多すぎる） | 未報告 | [PR #33926](https://github.com/qgis/QGIS/pull/33926) | リスクあり |
+| QGISがPostGIS接続時にラスターテーブルをスキャンする | [#33885](https://github.com/qgis/QGIS/issues/33885) | [PR #33922](https://github.com/qgis/QGIS/pull/33922) | [PR #34288](https://github.com/qgis/QGIS/pull/34288) |
+| レイヤープロパティの情報タブ - 書式設定の問題 | [#33862](https://github.com/qgis/QGIS/issues/33862) | [PR #33955](https://github.com/qgis/QGIS/pull/33955) | [PR #34289](https://github.com/qgis/QGIS/pull/34289) |
+| QGIS Linuxバージョンでラスターシンボロジーの最小値/最大値を小数に設定できない | [#33859](https://github.com/qgis/QGIS/issues/33859) | 現在のmasterブランチでは動作確認済み |  |
+| QgsVectorLayerのreadStyleがスケールベースの表示設定を読み込まない | [#33840](https://github.com/qgis/QGIS/issues/33840) | [PR #33987](https://github.com/qgis/QGIS/pull/33987) | [PR #34289](https://github.com/qgis/QGIS/pull/34289) |
 | Categorized symbolization does not work on bigint columns in QGIS | [#33585](https://github.com/qgis/QGIS/issues/33585) | [PR #33992](https://github.com/qgis/QGIS/pull/33992) | [PR #34290](https://github.com/qgis/QGIS/pull/34290) |
 | QGIS fails to apply style file to rasters | [#29427](https://github.com/qgis/QGIS/issues/29427) | no change required, but still investigating |  |
-| copy / paste feature does not work correctly for MultilinestringZ | [#33977](https://github.com/qgis/QGIS/issues/33977) | works for me in current master |  |
+| copy / paste feature does not work correctly for MultilinestringZ | [#33977](https://github.com/qgis/QGIS/issues/33977) | 現在のmasterブランチでは動作確認済み |  |
 | Edit Form shows and saves raw default-values from geopackage, spatialite or sqlite | [#33383](https://github.com/qgis/QGIS/issues/33383) | [PR #34012](https://github.com/qgis/QGIS/pull/34012) | [PR #34298](https://github.com/qgis/QGIS/pull/34298) |
 | Not possible to uncheck layers in Order Panel | [#33854](https://github.com/qgis/QGIS/issues/33854) | [PR #34015](https://github.com/qgis/QGIS/pull/34015) | [PR #34288](https://github.com/qgis/QGIS/pull/34288) |
 | PostgreSQL identity column not recognized properly | [#29560](https://github.com/qgis/QGIS/issues/29560) | [PR #34017](https://github.com/qgis/QGIS/pull/34017) | [PR #34291](https://github.com/qgis/QGIS/pull/34291) |
 | Spatialite provider does not recognize autoincrement PKs when table definition uses backticks | [#34085](https://github.com/qgis/QGIS/issues/34085) | [PR #34012](https://github.com/qgis/QGIS/pull/34012) | [PR #34298](https://github.com/qgis/QGIS/pull/34298) |
 | QGIS crash when I click on the button \"Manage Map Themes\" | [#33295](https://github.com/qgis/QGIS/issues/33295) | [PR #34090](https://github.com/qgis/QGIS/pull/34090) | [PR #34098](https://github.com/qgis/QGIS/pull/34098) |
-| QGIS Server - WMS Request GetPrint fails with ATLAS_PK | [#30817](https://github.com/qgis/QGIS/issues/30817) | works for me in current master |  |
+| QGIS Server - WMS Request GetPrint fails with ATLAS_PK | [#30817](https://github.com/qgis/QGIS/issues/30817) | 現在のmasterブランチでは動作確認済み |  |
 | QGIS 3.10.2 replace 0 to NULL | [#34118](https://github.com/qgis/QGIS/issues/34118) | [PR #34152](https://github.com/qgis/QGIS/pull/34152) | [PR #34292](https://github.com/qgis/QGIS/pull/34292) |
 | Representation for NULL values inconsistent use/display | [#28643](https://github.com/qgis/QGIS/issues/28643) | [PR #34157](https://github.com/qgis/QGIS/pull/34157) | [PR #34293](https://github.com/qgis/QGIS/pull/34293) |
 | DB Manager in 3.11 Master can\'t connect to PostGIS Enabled database | [#34132](https://github.com/qgis/QGIS/issues/34132) | [PR #34171](https://github.com/qgis/QGIS/pull/34171) | N/A |

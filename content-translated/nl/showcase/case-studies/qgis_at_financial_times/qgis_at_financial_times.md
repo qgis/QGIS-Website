@@ -4,7 +4,7 @@ draft: 'true'
 ---
 # Gebruiken van QGIS door het Financial Times Graphics Team
 ## Interview met Steven Bernard (Interactive Design Editor)
-Steven is an Interactive Design Editor at Financial Times. You can find him on [Twitter](https://twitter.com/sdbernard). He also publishes useful [HOWTO Videos on Youtube](https://t.co/6aTE6G8h0T) for certain cartographic tasks in QGIS.
+Steven is een Interactive Design Editor bij de Financial Times. U kunt hem vinden op [Twitter](https://twitter.com/sdbernard). Hij publiceert ook nuttige [HOWTO Videos on Youtube](https://t.co/6aTE6G8h0T) voor bepaalde cartografische taken in QGIS.
 
 **QGIS**: Steven, wat is de naam van het team waarmee u werkt bij FT? Kunt u ons wat achtergrondinformatie geven over wat uw team bij FT doet?
 
@@ -22,31 +22,31 @@ Alan heeft één enkele digitale werkstroom voor ons team geïntroduceerd, inclu
 
 **Steven**: Inclusief all ontwerpers, ontwikkelaars, producers en statistici, hebben we een team van 24
 
-**QGIS**: What\'s your specific role within the team?
+**QGIS**: Wat is uw specifieke rol binnen het team?
 
-**Steven**: We are a multi-disciplinary department so I don't have a specific role as such. My role includes producing responsive designs for interactive graphics as well as doing the front-end development on the less complicated interactives (e.g. [Inside Isis Inc: The journey of a barrel of oil](http://ig.ft.com/sites/2015/isis-oil/)). I also produce the standard news related charts and maps on a daily basis. Over the past two years I have been concentrating on developing our cartographic offerings at the FT. QGIS has been instrumental in changing how we produce maps, and in conjunction with other tools such Blender have helped me to be more creative with how we approach maps.
+**Steven**: We zijn een multi-disciplinaire afdeling dus ik heb niet echt een specifieke rol. Mijn rol omvat het produceren van responsieve ontwerpen voor interactieve afbeeldingen als ook het uitvoeren van ontwikkeling aan het frontend voor de wat minder gecompliceerde interactieven (bijv. [Inside Isis Inc: The journey of a barrel of oil](http://ig.ft.com/sites/2015/isis-oil/)). Ik maak ook standaard aan het nieuws gerelateerde diagrammen en kaarten op dagelijkse basis. De laatste twee jaar heb ik me geconcentreerd op de ontwikkeling van hetgeen we op het gebied van cartografie bieden aan de FT. QGIS is belangrijk geweest voor de manier waarop we kaarten maken hebben gewijzigd, en in samenwerking met andere gereedschappen, zoals Blender, hebben we ons geholpen creatiever te zijn met betrekking tot de wijze waarop we kaarten benaderen.
 
 ![](./images/ft_nigeria-migration_animation.gif){.align-left width="100.0%"}
 
-*Example: Animation of Dora\'s journey from Nigeria to Sicily - one of thousands by trafficked women each year.*
+*Voorbeeld: Animatie van Dora\'s reis van Nigeria naar Sicilië - één van de elk jaar duizenden verhandelde vrouwen.*
 
-**QGIS**: Can you tell us a bit about yourself? What\'s your educational background? What did you do before joining the data visualization team at FT?
+**QGIS**: Kunt u ons iets over uzelf vertellen? Wat is uw achtergrond qua onderwijs? Wat deed u voordat u deel uitmaakte van het data visualisatie team bij FT?
 
 ![](./images/ft_gotthard-tunnel.png){.align-left width="60.0%"}
 
 *Voorbeeld: Gotthard spoor- en wegtunnel in de Zwitserse Alpen.*
 
-**Steven**: I am traditionally trained as scientific illustrator. What's that I hear you ask? It involves producing illustrations for medical journals, natural history publications anything where you are trying to convey information visually where a photograph can't. Think of diagrams showing the human circulatory system, or showing a procedure to fix a broken bone. Sadly there wasn't much call for that kind of work when I left university and I basically fell into the job at the FT. I have always been good at maths, which I think is important when working with data visualisations, it has certainly helped me with my coding as well.
+**Steven**: Ik ben van oorsprong getraind als wetenschappelijk illustrator. "Wat is dat dan?" hoor ik u vragen. Het omvat het maken van illustraties voor medische bladen, publicaties over de geschiedenis van de natuur, alles waarbij je probeert visueel informatie te verschaffen waar een foto dat niet kan. Denk aan diagrammen die het menselijk circulatiesysteem weergeven, of het weergeven van een procedure om een gebroken bot te repareren. Helaas was er niet veel werk op dat terrein toen ik de universiteit verliet en ik kwam eigenlijk direct bij mijn werk voor de FT terecht. Ik ben altijd nogal goed geweest in rekenen, wat volgens mij wel belangrijk is bij het werken met visualisaties van gegevens. Het heeft me zeker ook bij het coderen geholpen.
 
 **QGIS**: Hoe ontdekte u QGIS?
 
-**Steven**: I came across QGIS in 2013 when we were working on a [project mapping the ethnicity of the Middle East](http://ig.ft.com/features/2013-07-19_middleeast_religion_map/dist/index.html)
+**Steven**: Ik kwam QGIS in 2013 tegen toen we werkten aan een [project voor het in kaart brengen van de etniciteit in het Midden Oosten](http://ig.ft.com/features/2013-07-19_middleeast_religion_map/dist/index.html)
 
-We used it to georeference maps that were created by a professor at Columbia University. At first I found it really tricky using the add feature drawing tool, probably because it was unlike anything I'd used in Adobe Illustrator for 17 years prior! I also found it frustrating that you had to save things twice, once when done editing the shapefile, then again to save the project. However, this was just down to inexperience with the program and in the end it did exactly what we needed, which was to produce shapefiles that we could add to a Mapbox base map.
+We gebruikten het om kaarten, die waren gemaakt door een professor aan de Columbia University, te voorzien van geoverwijzingen. Eerst vond ik het nogal beangstigend om het gereedschap Object toevoegen te gebruiken, waarschijnlijk omdat het in niets leek op wat ik had gebruikt in Adobe Illustrator in de 17 jaar daarvoor! Ik vond het ook frustrerend dat je dingen tweemaal moest opslaan, eenmaal bij het bewerken van het shapefile, en dan nogmaals om het project op te slaan. Dit kwam echter door onervarenheid met het programma en op het eind deed het precies wat we nodig hadden, wat het maken van shapefiles was die we dan konden toevoegen aan een basiskaart van Mapbox.
 
-**QGIS**: What\'s the role of QGIS within your usual workflows?
+**QGIS**: Wat is de rol van QGIS binnen uw normale werkstromen?
 
-**Steven**: QGIS is now an integral part of our mapping workflow. I don't use any other GIS tool to create our maps. Although a few members of our team also use Map Publisher as they feel more comfortable staying within Adobe Illustrator. I would say 80% of our maps are now produced in QGIS.
+**Steven**: QGIS maakt nu een integraal deel uit van onze werkstroom voor het maken van kaarten. Ik gebruik geen ander gereedschap voor GIS om onze kaarten te maken. Hoewel een aantal leden van ons team ook Map Publisher gebruiken, omdat ze zich beter voelen bij Adobe Illustrator. Ik zou zeggen dat ongeveer 80% van onze kaarten nu wordt gemaakt in QGIS.
 
 ![](./images/ft_blm-federal-land-map.png){.align-left width="100.0%"}
 
@@ -58,7 +58,7 @@ We used it to georeference maps that were created by a professor at Columbia Uni
 
 Als ik werk aan een kaart met reliëf, dan is het proces veel complexer. Ik haal DEM-bestanden op van Nasa Earth Explorer, en plaats die binnen QGIS om ze op grootte te maken. Ik doe de verkleinde DEM dan in Blender om een #D rendering te maken. Als ik een satellietoverlay gebruk voor de schaduw op de heuvels, dan download ik een afbeelding van BlueMarble vanaf Nasa en plaats die ook in Blender. De geëxporteerde rendering uit Blender wordt dan teruggeplaatst in QGIS om te dienen als achtergrondlaag. Ik pas soms, indien nodig, eerst nog wat aan in Photoshop.
 
-For responsive maps like those in the [Isis oil story](http://ig.ft.com/sites/2015/isis-oil/), I used all of the above tools but the final step is to use an open source Adobe Illustrator script developed by the New York Times' Archie Tse. This allows me to create responsive versions of my maps that work on all devices.
+Voor responsieve kaarten zoals die in de [Isis oil story](http://ig.ft.com/sites/2015/isis-oil/), gebruikte ik alle bovenstaande programma's, maar de uiteindelijke stap was het gebruiken van een openbron-script voor Adobe Illustrator, dat werd ontwikkeld door de New York Times’ Archie Tse. Dit maakt het voor mij mogelijk responsieve versies van mijn kaarten te maken die op alle apparaten werken.
 
 Een ander programma dat nuttig is is Google My Maps wat het voor journalisten over d egehele wereld mogelijk maakt locaties op een kaart te markeren die we dan kunnen downloaden als een KMZ-bestand en die we rechtsreeks kunnen importeren in QGIS.
 
@@ -77,7 +77,7 @@ Het laatste programma dat ik gebruik is is Adobe After Effects omdat ik recent b
 
 **QGIS**: Kunt u de sterke en zwakte punten van QGIS beschrijven met betrekking tot de taken die u moet uitvoeren?
 
-**Steven**: When I first used QGIS I saw it as a specialist tool, fit for only dealing with specific tasks. I really didn't see it a production tool. In late 2014 two of my colleagues went on a QGIS course held by Alasdair Rae at Sheffield University. They both enthused about how good QGIS was, so I took it upon myself to evaluate it as a tool that could be used to produce all our maps.
+**Steven**: Toen ik QGIS voor het eerst gebruikte, zag ik het als een programma voor specialisten, geschikt om alleen specifieke taken uit te voeren. Ik zag het echt niet als een programma voor productie. Eind 2014 woonden twee van mijn collega's een cursus voor QGIS bij die werd gegeven door Alasdair Rae aan de Sheffield University. Zij waren beide zeer enthousiast over hoe goed QGIS was, dus moest ik ook tot de conclusie komen dat het een programma was dat kon worden gebruikt om al onze kaarten te maken.
 
 Binnen twee weken was ik er van overtuigd dat het dat ook zou kunnen. Het belangrijkste argument was de mogelijkheid tot het instellen van stijlen voor alles inclusief stijlen voor op zoomniveau voor kaarten op straatniveau.
 
@@ -87,7 +87,7 @@ Het pictogram voor de markering is een keuzelijst die is gekoppeld aan een tabel
 
 Alles wat ik hoef te doen is de CSV te downloaden, die importeren in QGIS, een stijl toe te passen en ik heb een kaart die al voor 95% klaar is.
 
-To be perfectly honest I can't think of any weaknesses, there are a couple of things that I would like to see or be able to do but, I don't see that as a weakness, just a missing feature.
+Ik kan echter eerlijk gezegd geen zwak punt benoemen. Er zijn een aantal dingen die ik zou willen zien of zou willen doen, maar dat zie ik niet als zwak punt, maar als een ontbrekende mogelijkheid.
 
 ![](./images/ft_chinaMigration.png){.align-left width="100.0%"}
 
@@ -103,23 +103,23 @@ To be perfectly honest I can't think of any weaknesses, there are a couple of th
 
 **QGIS**: Welke mogelijkkheid of functionaliteit mist u het meest in QGIS? Heeft u een lijst met ontbrekende mogelijkheden die u zouden helpen als zij werden geïmplementeerd?
 
-**Steven**: A couple of things I would like to see in future versions are\...
+**Steven**: Een aantal dingen die ik graag zou zien in toekomstige versies zijn\…
 
-Bezier curve support, this would be particularly useful in conjunction with Georeferencer. I know there is a spline plugin but it doesn't give you the full control a bezier curve would.
+ondersteuning voor Bezier-bogen, dat zou in het bijzonder nuttig zijn in combinatie met Georeferencer. Ik weet dat er een plug-in voor Spline is, maar die geeft niet het volledige beheer dat een Bezier-boog zou geven.
 
 De mogelijkheid om afbeelding in grotere grootten op te slaan. Momenteel is de enige manier waarop ik een verkleining met geo-verwijzingen van een DEM-bestand kan maken is om het in Blender te doen. maar het is beperkt tot de grootte van je scherm. Als ik een 8000 pixel DEM-bestand inQGIS kon laden zou ik in staat zijn de verkleining te exporteren in ene grotere grootte dan mijn scherm om bijvoorbeeld in een HD-video te gebruiken.
 
 **QGIS**: Als u bepaalde mogelijkheden ontbeert in QGIS, zie u zouden kunnen helpen - zou u overwegen om QGIS zelf te verbetern (met coderen in de bron van QGIS of met plug-ins van Python), of zou u overwegen om een ontwikelaar van QGIS in te huren om de ontbrekende mogelijkheid voor u te implementeren? Of zou u in plaats daarvan zoeken naar andere programma's om dat gat te vullen?
 
-**Steven**: I certainly don't have the necessary skills to do the coding myself, I'm fairly proficient in Javascript but would struggle with Python. I would love to hire a developer to get features implemented but unfortunately I'm not in control of any budgets, so I use other tools to get around this.
+**Steven**: Ik heb zelf absoluut niet de nodige vaardigheden om het coderen te doen, Ik kan redelijk overweg met Javascript maar zou moeite hebben met Python. Ik zou graag een ontwikkelaar inhuren om de mogelijkheden geïmplementeerd te krijgen, maar ik ga niet over het beheren van budgetten, dus zou ik andere programma's gebruiken om dit op te lossen.
 
 ![](./images/ft_us_broadband_internet_subscription.png){.align-left width="100.0%"}
 
 *Voorbeeld: Percentage van huishoudens met een breedband internetabonnement in de VS.*
 
-**QGIS**: Let\'s talk about user experience - the QGIS team is aware that there are various places in the UI (dialogs, panels, etc) that could be improved a lot. Can you tell us a little bit where in the UI you see the biggest potential for a UI overhaul?
+**QGIS**: Laten we het eens hebben over de gebruikerservaring - het team van QGIS is zich ervan bewust dat er verscheidene plekken in de gebruikersinterface (dialoogvensters, panelen, etc.) zijn die aanzienlijk verbeterd zouden kunnen worden. Kunt u ons vertellen waar in de gebruikersinterface u het grootste potentieel voor een verbetering van die UI ziet?
 
-**Steven**: I think the main tools are fine as they are, once you are familiar with them they're pretty obvious. However, one thing I do find a little frustrating is trying to hunt down a plugin once it's been installed. They either create their own menu (MMQGIS), live under one of the menus (Georeferencer) or create their own icon (threejs). It would be handy to have a plugin window that has all installed plugins in it. Again this isn't a deal breaker but would make it easier than hunting in several different locations.
+**Steven**: Ik denk dat de belangrijkste gereedschappen goed zijn zoals ze zijn; als je het eenmaal weet, is het ook wel duidelijk. Eén ding dat ik echter wel een beetje frustrerend vind, is het zoeken van een plug-in als die eenmaal is geïnstalleerd. Zij maken ofwel hun eigen menu (MMQGIS), leven onder een van de bestaande menu's (Georeferencer) of maken hun eigen pictogram (threejs). Het zou handig zijn om een venster voor plug-ins te hebben waarin alle geïnstalleerde plug-ins staan. Ook dit is geen halszaak, maar het zou eenvoudiger zijn dan het zoeken op verschillende locaties.
 
 **QGIS**: Dank u voor uw tijd en het werk dat u doet voor het promoten en documenteren van werkstromen in QGIS!
 
@@ -127,6 +127,6 @@ De mogelijkheid om afbeelding in grotere grootten op te slaan. Momenteel is de e
 
 *Portret van Steve Bernard. Interactive Design Editor bij de Financial Times.*
 
-**Steven**: A pleasure, I'm almost evangelical about QGIS! Hence the [31 video tutorials](https://t.co/6aTE6G8h0T) and always happy to spread the word.
+**Steven**: Graag gedaan, ik ben bijna evangelisch over QGIS! Daarom ook de [31 videohandleidingen](https://t.co/6aTE6G8h0T) en altijd bereid erover te vertellen.
 
 Interviewvragen door A. Neumann en T. Sutton. April 2016.

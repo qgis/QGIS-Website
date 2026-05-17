@@ -151,7 +151,7 @@ Prefixes of locator filters can now be customized under the application settings
 
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
+この機能は [Denis Rouzaud, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能：HTTP（S）、FTP、またはクラウドサービスに格納されたベクターとラスターのオープン
 In 3.2, the data source manager\'s vector and raster panels have been updated to simplify opening of vector and raster datasets stored on HTTP(S), FTP, or cloud services. Basic HTTP(S) authentication support included.
 
@@ -272,7 +272,7 @@ UIファイルは、最初の使用時にすべてのセッションでダウン
 
 This feature was funded by [SIRS](http://www.sirs-fr.com)
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
+この機能は [Denis Rouzaud, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能：ドリルダウン（カスケード）フォーム
 QGIS 3.2 introduces drill-down (cascading) form support, where the values available in one field depend on the values of other fields. This feature allows users to create "value-relation" expressions based on the current value of another field in the same form. When the user modifies a field's value, the choices available in all related fields are filtered to match the new value -- allowing a hierarchical filtering strategy (drill-down, or cascading) inside a form.
 

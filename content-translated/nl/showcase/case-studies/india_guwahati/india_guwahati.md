@@ -23,4 +23,4 @@ Elke maand wordt de training gegeven met 20-30 deelnemers, dus het aantal groeit
 ## Auteurs
 ![Alajangi Simhachalam](./images/india_guwahati2.png){.align-left}
 
-This article was contributed in July 2014 by Alajangi Simhachalam, Adjunct Faculty, NIRD-NERC, Guwahati Website: <http://www.nirdnerc.nic.in>
+Dit artikel werd bijgedragen in juli 2014 door Alajangi Simhachalam, Adjunct Faculty, NIRD-NERC, Guwahati Website: <http://www.nirdnerc.nic.in>

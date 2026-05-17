@@ -18,35 +18,35 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2014</span>
+  <span>1 juli 2014</span>
 </p>
 
-This case study results from the final draft of the Graduate Geographic Information Systems taught by GeoPoint. We proposed to study a landscape using Landscape Ecology plugin (LecoS) in QGIS 2.01 Dufour. The study was conduted in a region of central Portugal, Municipality of Coimbra, with an total area of 31940ha and it has geographic coordinates 40°12\'11.84\" North, 8°24\'37.15\" West. Because the new administrative reorganization this municipality are divided into 18 parishes, which are mostly urban areas (Figure 1).
+Dit praktijkvoorbeeld resulteert uit de uiteindelijke weergave van Graduate Geographic Information Systems, gedoceerd door GeoPoint. We stelden voor een landschap te bestuderen met behulp van de plug-in Landscape Ecology (LecoS) in QGIS 2.01 Dufour. De studie werd uitgevoerd in een regio van centraal Portugal, gemeente Coimbra, met een totaalgebied van 31.940 ha en heeft de geografische coördinaten 40°12\'11.84\" North, 8°24\'37.15\" West. Vanwege de nieuwe administratieve reorganisatie is deze gemeente opgedeeld in 18 delen, wat meestal stedelijke gebieden zijn (Afbeelding 1).
 
 <figure>
 <img src="../images/portugal_coimbra1.png" class="align-left" alt="portugal_coimbra1.png" />
-<figcaption>Geographic location of the municipality of Coimbra.</figcaption>
+<figcaption>Geografische locatie van de gemeente Coimbra.</figcaption>
 </figure>
 
 Het karakteriseren van het landschap werd uitgevoerd met behulp van kwantitatieve indices, ontworpen door metrische gegevens van het landschap. Deze indices werden toen gebruikt om de structurele karakteristieken van het landschap, de wijziging te documenteren en hun relatie met de aanwezigheid van verscheidene soorten of groepen van soorten te beschrijven (Turner et al, 2001;. Olsen et al, 2007;. Fidalgo et al. , 2009). Het aantal metrische gegevens is extreem groot en kan worden berekend op het niveau van landschap, klasse en vlek (Turner et al, 2001;. Fidalgo et al, 2009.). Metrische gegevens kunnen worden berekend met behulp van Corine Land Cover, Land use (COS 90 en COS2006) of kaarten van landgebruik geproduceerd door ons. Volgens Martin Jung (2012), is de Landscape Ecology Stistics (Lecos) een module van QGIS die wordt gebruikt in metrische gegevens van landschappen te berekenen in rasterlagen. Het resultaat kan beschikbaar worden gesteld in de indeling CSV.
 ## Methoden
-Landscape metrics was calculated using the Corine Land Cover (CLC) of the years 1990 and 2006. For this purpose it was necessary to transform the coverages in raster format with cell size 50x50 meters. We use r.to.raster tool the Grass Gis module that were present in processing toolbox and the CLC classification level used it´s the first. After transform coverages we calculate the metrics in Landscape Ecology plugin (LecoS) using the graphical modeler (Figure 2).
+Metrische gegevens van het landschap werden berekend met behulp van de Corine Land Cover (CLC) over de jaren 1990 en 2006. Voor dit deel was het noodzakelijk om het grondgebruik te transformeren naar rasterindeling met een celgrootte van 50x50 meter. We gebruikten het gereedschap r.to.raster van de module GRASS GIS die aanwezig was in de Toolbox van Processing en het gebruikte niveau van de classificatie in CLC is het eerste. Na het transformeren berekenden we de metrische gegevens in de plug-in Landscape Ecology (LecoS) met behulp van Grafische modellen maken (Afbeelding 2).
 
 <figure>
 <img src="../images/portugal_coimbra3.png" class="align-left" alt="portugal_coimbra3.png" />
-<figcaption>Landscape metrics calculated for diferent years (1990 and 2006).</figcaption>
+<figcaption>Metrische gegevens landschap, berekend over verschillende jaren (1990 en 2006).</figcaption>
 </figure>
 
 We berekenden het gebruik van het land, proportie van het landschap, dichtheid van randen, aantal gronddelen, grootste gebied gronddeel, kleinste gebied gronddeel , gemiddelde afstand tussen gronddelen en de effectieve grootte van de mazen (Tabel 1). Metingen van de diversiteit van het landschap werden berekend met de Shannon-index, Uniformiteit en de Simpson-index.
 ## Resultaten
-From analysis of the landscape metrics calculated it was found that there was an increase in the degree of human disturbance and therefore a greater fragmentation of uses between 1990 and 2006. The number of patches of "Forest Semi Natural areas" and "Agricultural areas" decreased between 1990 and 2006 (Table 1). This metric can give us some indication of ecological processes increasing or decreasing relationships between populations and habitats (Viana and Aranha, 2008). Also of note is the average distance between spots, one measure that allows us to understand the degree of landscape fragmentation, the decline of "Forest and Semi Natural areas" 1990 to 2006 at the expense of increased "Artificial areas" (Table 1).
+Uit analyses van de berekende metrische gegevens van het landschap werd bekend dat er een verhoging was van de mate van menselijke verstoring en daarom een grotere fragmentatie van gebruik tussen 1990 en 2006. Het aantal gronddelen van "Forest Semi Natural gebieden" en "Agricultural gebieden" verminderde tussen 1990 en 2006 (Tabel 1). Deze metrische gegevens kunnen ons enige indicatie geven over ecologische processen die relaties tussen bevolking en woonomgeving doen verkleinen of vergroten (Viana and Aranha, 2008). Ook opmerkelijk is de gemiddelde afstand tussen de landdelen, een meting die ons in staat stelt de mate van defragmentatie van het landschap te begrijpen, de afname van de "Forest and Semi Natural"-gebieden 1990 tot en met 2006 ten koste van de vergrote "Artificial"-gebieden (Tabel 1).
 
 <figure>
 <img src="../images/portugal_coimbra2.png" class="align-left" alt="portugal_coimbra2.png" />
-<figcaption>Model to calculate landscape metrics in 1990.</figcaption>
+<figcaption>Model om metrische gegevens van het landschap te berekenen in 1990.</figcaption>
 </figure>
 
-From 1990 to 2006 diversity increased, however it is known that this result is directly related to the transfer between land cover, in particular loss of "Agricultural areas" and "Forest and Semi Natural areas". The same happened with uniformity.
+Van 1990 tot en met 2006 nam de diversiteit toe. Het is echter bekend dat dat resultaat direct is gerelateerd aan de transfer in het landgebruik, in het bijzonder het verlies van "Agricultural"-gebieden en "Forest and Semi Natural"-gebieden. Hetzelfde gebeurde met uniformiteit.
 ## Conclusie
 Het was mogelijk de metrische gegevens van het landschap te bepalen met behulp van de plug-in LecoS met dien verstande dat het te bestuderen gebied fragmentatieproblemen weergeeft ten gevolge van de hoge mate van menselijke verstoring. QGIS bewees heel intuïtief en heel praktisch te zijn in het berekenen van metrische gegevens voor het landschap door de afwezigheid van enige beperking. Het is inderdaad robuust en betrouwbaar, vergeleken met de oplossingen van commerciële software. In de toekomst zijn we van plan om deze methode toe te passen op gebieden die problemen hebben met invasieve soorten om hun gedrag in het landschap te bestuderen.
 ## Verwijzingen

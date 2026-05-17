@@ -18,43 +18,43 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2010</span>
+  <span>1 juli 2010</span>
 </p>
 
 Het Instituto de Información Territorial del Estado de Jalisco is een gouvernementele organisatie die werd opgericht in 1998 om geografische informatie te delen tussen de gouvernementele agentschappen van Jalisco in México.
 
 <figure>
 <img src="../images/mexico_jalisco1.jpg" class="align-right" alt="mexico_jalisco1.jpg" />
-<figcaption>Exploring the data with its online viewer</figcaption>
+<figcaption>De gegevens verkennen met zijn online viewer</figcaption>
 </figure>
 
 In de loop van de jaren heeft het instituut heel veel informatie verzameld in verschillende indelingen, zoals SHP, DWG, DXF, GeoTIFF en ECW, naast andere. Wat we dus wilden was al deze informatie beschikbaar maken, georganiseerd en in een algemene indeling met als doel het ter beschikking te stellen en zichtbaar te zijn via het internet.
 
 <figure>
 <img src="../images/mexico_jalisco2.jpg" class="align-right" alt="mexico_jalisco2.jpg" />
-<figcaption>Connecting to the Spatial Data Infrastructure with WMS</figcaption>
+<figcaption>Verbinden door WMS met de Spatial Data Infrastructure</figcaption>
 </figure>
 
-That\'s how it was developed the Sistema de Información Territorial Estatal en Línea, with the main target to build a spatial data infrastructure which allows our government agencies to share this kind of information to be included in their own projects as health, security or mobility.
+Dat is hoe het werd ontwikkeld als het Sistema de Información Territorial Estatal en Línea, met als hoofddoel een infrastructuur voor ruimtelijke gegevens te bouwen die het voor gouvernementele agentschappen mogelijk maakt dit soort informatie te delen om het op te nemen in hun eigen projecten voor gezondheid, veiligheid of mobiliteit.
 ## Keuze voor QGIS
-I decided to use Mapserver and PostgreSQL with PostGIS extension to be able to deliver our satellite imagery, orthopothos, digital elevation models and vector information with Web Map Services, thinking that any application will consume our services. But the problem was that many of the commercial and free applications don't work with OGC standards, specially with WFS. After exploring many geographic information systems, I realized that QGIS was the only one which can connect to WMS, WCS and WFS successfully.
+Ik besloot om Mapserver en PostgreSQL met de extensie PostGIS te gebruiken om in staat te zijn onze satellietafbeeldingen, orthografische foto's, digitale hoogtemodellen en vectorinformatie af te leveren met Web Map Services, ervan uitgaande dat elke toepassing onze services kon verwerken. Maar het probleem was dat vele van de commerciële en gratis toepassingen niet werken met de standaarden van OGC, in het bijzonder met WFS. Na het verkennen van vele geografische informatiesystemen realiseerde ik me dat QGIS de enige was die met succes kon verbinden met WMS, WCS en WFS.
 ## Waar gebruiken we QGIS voor
-Internally, we use QGIS to check the raster and vector data of the agencies before publishing it, and after its integration, we used it again to test the Web services that we've created. Also, we have done many spatial analysis with QGIS pulling the data directly from our PostgreSQL spatial database, then, we export the results as shape files.
+Intern gebruiken we QGIS om de raster- en vectorgegevens van de agentschappen te controleren voordat ze worden gepubliceerd, en na de integratie, gebruikten we het opnieuw om de webservices die we hebben gemaakt te testen. Ook hebben we veel ruimtelijke analyses gedaan met QGIS, waar we de gegevens rechtstreeks uit onze ruimtelijke database van PostgreSQL haalden en dan de resultaten exporteerden als shapefiles.
 
 <figure>
-<img src="../images/mexico_jalisco3.jpg" class="align-right" alt="mexico_jalisco3.jpg" />
-<figcaption>Connecting to the Spatial Data Infrastructure with WFS</figcaption>
+<img src="../images/mexico_jalisco2.jpg" class="align-right" alt="mexico_jalisco2.jpg" />
+<figcaption>Verbinden door WFS met de Spatial Data Infrastructure</figcaption>
 </figure>
 
-We're encouraging our users to download QGIS and link directly with our Sistema de Información Territorial Estatal en Línea, mainly because it fully supports OGC standards and has many interesting features like geoprocessing tools, which allow them to make analysis of their interest, and all this absolutely for free.
+We moedigen onze gebruikers aan QGIS te downloaden en direct te verbinden met ons Sistema de Información Territorial Estatal en Línea, voornamelijk omdat het de standaarden voor OGC volledig ondersteunt en veel interessante mogelijkheden heeft, zoals gereedschappen voor geoprocessing, wat hen in staat stelt analyses te maken op hun gebied van interesse, en dat allemaal gratis.
 ## Conclusie
-This project understood as the technological component of a Spatial Data Infrastructure, has been considered as a PostGIS case study, and I have to say that working with open source in all of our system's cycle, has been satisfactory and trustworthy, the best choice that we have found to share our geographic information.
+Dit project, bedoeld als de technologische component van een infrastructuur voor ruimtelijke gegevens, is beschouwd als een praktijkvoorbeeld voor PostGIS, en ik moet zeggen dat het werken met open source, in de gehele cyclus van ons systeem, veel voldoening gaf en betrouwbaar was, de beste keuze die we hebben kunnen vinden om onze geografische informatie te delen.
 ## Auteur
 <figure>
 <img src="../images/mexico_jaliscoaut.jpg" class="align-left" height="200" alt="mexico_jaliscoaut.jpg" />
 <figcaption>Carlos Ruiz</figcaption>
 </figure>
 
-This article was contributed in July 2010 by IC Carlos Ruiz. He works as project\'s coordinator at the Instituto de Información Territorial del Estado de Jalisco, Mexico.
+Dit artikel werd bijgedragen in juli 2010 door IC Carlos Ruiz. Hij werkt als projectcoördinator aan het Instituto de Información Territorial del Estado van Jalisco, Mexico.
 
 {{<content-end >}}

@@ -17,33 +17,33 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>March 01, 2011</span>
+  <span>1 maart 2011</span>
 </p>
 
-There will be democratic teaching in our schools or education communities when we generalize the use of Open Source software. This demands not only a change in people\'s way of thinking (sometimes molded by advertising), but also a sustainable management of expenses and, indirectly, fighting against software piracy. These advantages which are inherent to the philosophy of the Open Source software will be the model to follow if we want a quality education without boundaries or dependencies of any kind. From this perspective, class 35 of the 12th grade belonging to the technological course of territory and environment at Jaime Moniz Secondary School, uses QGIS to develop activities proposed in Geographical Information Systems, Applied Information Systems and during their training period. Within the range of options of free GIS, there were three underlying reasons for the choice of Open Source selection: the user friendly and intuitive approach, supported by online information provided by forums; the several software plug-ins and the quality of the product in its final stage. (One should bear in mind that these academic works were done by students who belong to a very young age group.)
-## The Project —— Expectation
-Expectation was the most dominating feeling in the firth lessons! The group of students had only a theoretical and somewhat vague knowledge about the issue of GIS. It was, therefore, necessary to link practical activities to that theoretical knowledge - at first, through the gathering of geographical information by using a support map, within the school\'s perimeter, and later, by using a GPS, concerning the area surrounding the school. In figures 1 and 2 it is possible to view some of the activities developed in class.
+Er zal democratisch onderwijs worden gegeven in onze scholen of bij het onderwijzen van gemeenschappen als we het gebruik van open source-software algemeen maken. Dit vraagt niet alleen een wijziging in de manier van denken van mensen (soms versmolten met advertenties), maar ook een duurzaam beheer van uitgaven en, indirect, het vechten tegen softwarepiraterij. Deze voordelen, die inherent zijn aan de filosofie van open source-software, zullen het te volgen model zijn als we onderwijs met kwaliteit willen, zonder grenzen of afhankelijkheden van enige soort. Vanuit dit perspectief gebruikt klas 35 van de 12e graad, behorende tot de technologische cursus van gebied en milieu aan de Jaime Moniz Secondary School, QGIS om activiteiten te ontwikkelen die worden voorgesteld in Geographical Information Systems, Toegepaste informatiesystemen en gedurende hun trainingsperiode. Binnen het bereik van opties voor gratis GIS, waren er drie onderliggende redenen voor de keuze van de selectie voor Open Source: de gebruikersvriendelijke en intuïtieve benadering, ondersteund door online informatie verschaft door forums; de verscheidene softwareplug-ins en de kwaliteit van het product in zijn uiteindelijke vorm. (Men zou moeten weten dat deze academische werken werden uitgevoerd door studenten in een zeer jonge leeftijdscategorie.)
+## Het project —— Verwachting
+Verwachting was het meest dominante gevoel in de eerste lessen! De groep studenten had alleen een theoretische en enigszins vage kennis van GIS. Het was daarom noodzakelijk om praktische activiteiten te koppelen aan die theoretische kennis - als eerste, door het verzamelen van geografische informatie door middel van een kaart ter ondersteuning, binnen de omgeving van de school, en later met een GPS, met betrekking tot de wijdere omgeving rondom de school. In de afbeeldingen 1 en 2 is het mogelijk enkele van de activiteiten te bekijken die werden ontwikkeld in de klas.
 
 <figure>
 <img src="../images/portugal_funchal1.jpg" class="align-right" alt="portugal_funchal1.jpg" />
-<figcaption>Distribution of dustbins (green) and garden benches (yellow) at Jaime Moniz Secondary School</figcaption>
+<figcaption>Verdeling van afvalbakken (groen) en tuinbanken (geel) bij de Jaime Moniz Secondary School</figcaption>
 </figure>
 
-At present, some students are still using the QGIS to make different work plans during their training period. In figure 3, a student\'s work stands out: it is related to the distribution regarding the number of the inhabitants of Santo António, including a placement proposal for recycle containers, in a parish of Funchal.
+Momenteel gebruiken sommige studenten nog steeds QGIS om verschillende werkplannen te maken gedurende hun trainingsperiode. In afbeelding 3 is het werk van een student opgenomen: het is gerelateerd aan de verdeling van het aantal inwoners van Santo António, inclusief een voorstel voor het plaatsen van containers voor recycling, in een wijk van Funchal.
 
 <figure>
 <img src="../images/portugal_funchal2.jpg" class="align-right" alt="portugal_funchal2.jpg" />
-<figcaption>Functional map of an area in the old part of the town of Funchal, surrounding Jaime Moniz Secondary School</figcaption>
+<figcaption>Functionele kaart van een gebied in het oude deel van de stad Funchal, dat de Jaime Moniz Secondary School omringd</figcaption>
 </figure>
 
 ## Keuze voor QGIS
-Generally speaking, QGIS allured the students: "to accomplish basic functions of GIS through exercise associations of graphic and non-graphic elements"; "to upload alphanumeric data"; "use functions of spacial analysis"; "to make thematic maps"; "to make a Digital Elevation Model" and, last but not least, "to recognize the relevance of a free GIS for the analysis of geographical information, as well for the sustainable management of the territory". These theoretical and practical purposes are achieved together along with other goals, extremely important in the education context, such as: "creating a diversified educational experience"; "being in contact with local reality" and "developing a constructive, positive and critical mind".
+Over het algemeen verlichtte QGIS de studenten: "om basisfuncties van GIS te voltooien door middel van associaties van oefeningen met grafische en niet-grafische elementen"; "om alfanumerieke gegevens te uploaden"; "functies te gebruiken voor ruimtelijke analyses"; "om thematische kaarten te maken"; "om een Digital Elevation Model te maken" en, laatste maar niet de minste, "om de relevantie van een gratis GIS voor het analyseren van geografische informatie te herkennen, alsook voor het duurzame beheer van het gebied". Deze theoretische en praktische doelen werden naast andere doelen bereikt, extreem belangrijk in de context van onderwijs, zoals: "maken van een diverse onderwijskundige ervaring"; "in contact zijn met de lokale realiteit" en "ontwikkelen van een constructieve, positieve en kritische geest".
 ## Van de klas tot een de gemeenschap voor onderwijs
-The idea of creating a website: <http://www.sig-na-jaime-moniz.webnode.pt> implied two main purposes: "spreading the word about project works done by the students" and, simultaneously, "show the importance of Open Source QGIS for the accomplishment of these school works". At present, the website is a motivation source for the follow up of the whole teaching process.
+Het idee van het maken van een website: <http://www.sig-na-jaime-moniz.webnode.pt> diende twee belangrijke doelen: "verspreiden van de bekendheid van projectwerk, gemaakt door studenten" en tegelijkertijd "de belangrijkheid van Open Source QGIS laten zien voor het voltooien van deze werken voor school". Momenteel is de website een bron van motivatie voor de opvolging van het gehele onderwijsproces.
 
 <figure>
 <img src="../images/portugal_funchal3.jpg" class="align-right" alt="portugal_funchal3.jpg" />
-<figcaption>Placement proposal for recycle containers in the parish of Santo António</figcaption>
+<figcaption>Voorstel voor plaatsen van containers voor recyclen in de parochie Santo António</figcaption>
 </figure>
 
 ## Conclusie

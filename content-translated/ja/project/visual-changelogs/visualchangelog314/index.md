@@ -422,7 +422,7 @@ There are new options to display 1D mesh (edges) in the mesh frame tab ![image43
 1Dメッシュには必要ない機能がいくつかあります。特に
 - メッシュ等高線のエクスポート
 
-This feature was developed by [Peter Petrik](https://api.github.com/users/PeterPetrik)
+この機能は [Peter Petrik](https://api.github.com/users/PeterPetrik) によって開発されました
 ### 機能: メッシュの単純化
 メッシュレイヤは数百万の三角形を持つことができ、レンダリングは非常に遅くなることがあります。特に、三角形が小さ過ぎて見えないときでも、すべての三角形がビューに表示されるためです。
 
@@ -1267,7 +1267,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
 In addition to the \'visible\' and \'mutuallyExclusive\' attribute, this update adds \'expanded\' to the GetProjectSettings response of the server. The update allows a web client to see which layer tree elements are expanded / collapsed and to then present them the same way in the web map layer list.
 
 This feature was developed by [mhugent](https://api.github.com/users/mhugent)
-### Feature: Add DXF server export params NO_MTEXT and FORCE_2D
+### 機能: DXFサーバーエクスポートパラメーター NO_MTEXT および FORCE_2D の追加
 QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control text and line symbology for generated DXF files.
 
 Adds missing parameters to GetDxf request.
@@ -1570,7 +1570,7 @@ This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
 | Fields missing in Visibility by expression for a group in drag/drop form | [#35196](https://github.com/qgis/QGIS/issues/35196) | [PR #36824](https://github.com/qgis/QGIS/pull/36824) | N/A |
 | Project custom scales are displayed with scientific notation | [#36859](https://github.com/qgis/QGIS/issues/36859) | [PR #36860](https://github.com/qgis/QGIS/pull/36860) | N/A |
 | Oracle : tables are listed once for Polygons and once for MultiPolygons but both show all geometries | [#32521](https://github.com/qgis/QGIS/issues/32521) | [PR #34358](https://github.com/qgis/QGIS/pull/34358) | N/A |
-| Can\'t set min/max values to decimal in raster symbology with QGis Linux versions | [#33859](https://github.com/qgis/QGIS/issues/33859) | [PR #37136](https://github.com/qgis/QGIS/pull/37136) | N/A |
+| QGIS Linuxバージョンでラスターシンボロジーの最小値/最大値を小数に設定できない | [#33859](https://github.com/qgis/QGIS/issues/33859) | [PR #37136](https://github.com/qgis/QGIS/pull/37136) | N/A |
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 

@@ -17,18 +17,18 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>January 01, 2013</span>
+  <span>1 januari 2013</span>
 </p>
 
 ![](../images/canada_brunswick1.jpg)
 
-The Fundy Footpath is a wilderness hiking trail located along the Fundy coast of New Brunswick, Canada. It is a charter member of the [UNESCO Fundy Biosphere Reserve](http://fundy-biosphere.ca/en/about-us/the-reserve) and affiliated with the [NB Trails Council Inc.](http://www.sentiernbtrail.com/) and the Trans Canada Trail. The Footpath takes hikers through the coastal Acadian Forest, home to the world's highest tides, old growth forests, and several rare and unique types of flora and fauna.
+Het Fundy Footpath  is een wandelpad in de wildernis, gesitueerd langs de kust van Fundy van New Brunswick, Canada. Het is markant lid van de [UNESCO Fundy Biosphere Reserve](http://fundy-biosphere.ca/en/about-us/the-reserve) en verbonden aan de [NB Trails Council Inc.](http://www.sentiernbtrail.com/) en de Trans Canada Trail. Het Footpath neemt wandelaars mee langs het langs de kust gelegen Acadian Forest, thuis van de hoogste getijden, oudste groeiende wouden, en verscheidene bijzondere en unieke typen flora en fauna.
 
 Het pad werd gemaakt, wordt onderhouden, en gepromoot door een groep vrijwilligers die bekend staan als de Fundy Hiking Trail Association Inc. (FHTA)(1975). Als een non-profit organisatie werft de FHTA fondsen voor zijn activiteiten door de verkoop van gidsen die een kaart van het pad bevat. In 2011 benaderde ik de FHTA om vrijwillig de officiële kaart voor het pad bij te werken. Als een vrijwilliger die een kaart maakt voor een non-profit organisatie voldoet QGIS zowel als gereedschap voor het bewerken van gegevens en voor de uiteindelijk lay-out van de kaart. Door de inspanningen van mijzelf en leden van de FHTA wordt de nieuwe officiële kaart voor het Fundy Footpath, opgenomen in de gids, van begin tot einde gemaakt met QGIS.
 
 <figure>
 <img src="../images/canada_brunswick2.jpg" class="align-right" alt="canada_brunswick2.jpg" />
-<figcaption>QGIS GPS Tools Plugin for data collection</figcaption>
+<figcaption>QGIS Plug-in GPS Tools voor verzamelen van gegevens</figcaption>
 </figure>
 
 ## Het project
@@ -37,11 +37,11 @@ Het proces voor het maken van de nieuwe kaart voor het Fundy Footpath met QGIS k
 - Bewerken en voorbereiden van de gegevens.
 - Maken van de kaart
 
-Data was collected both with handheld GPS units and from various free data sources. Trail data (e.g. trail centerline, campsite locations, and tidal crossings) was collected with a Garmin GPSMap 60CSX. This data was then transferred from the GPS and to shapefile format in QGIS using the GPS plugin. Free data in vector formats was then obtained from the [Natural Resources Canada (NRCan) CanVec](http://geogratis.cgdi.gc.ca/geogratis/en/product/search.do?id=5460AA9D-54CD-8349-C95E-1A4D03172FDF) website and from [Service New Brunswick (SNB) online](http://www.snb.ca/gdam-igec/e/2900e_1.asp).
+Gegevens werden verzameld met zowel draagbare GPS-apparaten als uit verschillende gratis bronnen met gegevens. Gegevens voor het pad (bijv. centrumlijn van het pad, locaties van kampeersites en oversteekplaatsen voor getijden) werden verzameld met een Garmin GPSMap 60CSX. Deze gegevens werden daarna overgebracht vanaf de GPS naar de indeling shapefile in QGIS met behulp van de GPS-plug-in. Vrije gegevens in vectorindelingen werden verkregen van de website van [Natural Resources Canada (NRCan) CanVec](http://geogratis.cgdi.gc.ca/geogratis/en/product/search.do?id=5460AA9D-54CD-8349-C95E-1A4D03172FDF) en vanaf [Service New Brunswick (SNB) online](http://www.snb.ca/gdam-igec/e/2900e_1.asp).
 
 <figure>
 <img src="../images/canada_brunswick3.jpg" class="align-right" alt="canada_brunswick3.jpg" />
-<figcaption>Creation of the footpath map in QGIS</figcaption>
+<figcaption>Maken van de kaart van het voetpad in QGIS</figcaption>
 </figure>
 
 De volgende gereedschappen binnen QGIS werden gebruikt om specifieke taken te volbrengen bij het voorbereiden van de gegevens om te gebruiken in de uiteindelijke kaart:
@@ -51,16 +51,16 @@ De volgende gereedschappen binnen QGIS werden gebruikt om specifieke taken te vo
 
 <figure>
 <img src="../images/canada_brunswick4.jpg" class="align-right" alt="canada_brunswick4.jpg" />
-<figcaption>Footpath map in the Print Composer</figcaption>
+<figcaption>Kaart voetpad in de Printvormgeving</figcaption>
 </figure>
 
-Once the data required to create the map was assembled and in a usable format the creation of the final map was started. To create the hiking map data was symbolized and labeled with the symbolization properties dialog and labeled with QGIS's very functional label engine. Once labels and symbolization were in place the map composer tool was run to create the layout. It was very easy to add useful map elements such as a custom north arrow and elevation profile in the print composer. Two layouts were created since it was to be a double-sided map. Once both layouts were created they were exported as PDF files and sent to the printers.
+Als de vereiste gegevens voor het maken van de kaart eenmaal zijn samengesteld en in een bruikbare indeling, werd het maken van de uiteindelijke kaart gestart. Gegevens werden gesymboliseerd en gelabeld met het dialoogvenster voor de eigenschappen voor symboliseren en gelabeld met QGIS’s zeer functionele labeling om de wandelkaart te maken. Toen labels en symbolisatie eenmaal op hun plaats waren, werd het gereedschap printvormgeving uitgevoerd om de lay-out te maken. Het was zeer eenvoudig om handige kaartelementen, zoals een aangepaste noordpijl en een hoogteprofiel toe te voegen in de Printvormgeving. Twee lay-outs werden gemaakt, omdat het een dubbelzijdige kaart moest worden. Toen beide lay-outs eenmaal waren gemaakt, werden ze geëxporteerd als PDF-bestanden en verzonden naar de printers.
 ## Conclusie
-The hiking map was printed on heavy-duty waterproof paper, folded and inserted in the back of the new edition of the Fundy Footpath Hiker's Guide Book. QGIS was the best and most functional choice for the creation of this map. Being free software the price was right for a volunteer creating a map for a non-profit organization. But the real advantage of QGIS was that it had all of the functionality and tools required to create a highly useful and detailed hiking map from start to finish. I would highly recommend QGIS to both experienced and beginning GIS users alike.
+De wandelkaart werd afgedrukt op zwaar waterproof papier, gevouwen en ingevoegd aan de achterzijde van de nieuwe uitgave van het Fundy Footpath Hiker’s Guide Book. QGIS was de beste en functioneelste keuze voor het maken van deze kaart. Vanwege de gratis software was de prijs juist voor een vrijwilliger om een kaart te maken voor een non-profitorganisatie. Maar het echte voordeel van QGIS was dat het alle functionaliteiten en vereiste gereedschappen had om een goed bruikbare en gedetailleerde wandelkaart te maken van begin tot einde. Ik zou QGIS van harte aanbevelen aan zowel ervaren als beginnende gebruikers van GIS.
 
 <figure>
 <img src="../images/canada_brunswick5.jpg" class="align-right" alt="canada_brunswick5.jpg" />
-<figcaption>The final Fundy Footpath map with accompanying guidebook</figcaption>
+<figcaption>De uiteindelijke kaart van het Fundy Footpath met bijbehorende gids</figcaption>
 </figure>
 
 ## Links

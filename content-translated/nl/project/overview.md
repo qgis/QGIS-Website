@@ -24,7 +24,7 @@ type: page
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![Create map](../img/create.gif "Create maps")
+![Create map](../img/create.gif "Kaarten maken")
 
 {{<column-end >}}
 
@@ -34,7 +34,7 @@ Ervaar QGIS uitgebreide set van ontwerpopties om uw cartografische ideeën tot l
 ###### Professioneel maken van kaarten
 Gebruik het intuïtieve ontwerpgereedschap voor lay-out om af te drukken groot formaat kaarten te produceren in hoge kwaliteit.
 ###### Krachtige gereedschappen voor rapporteren
-Create atlases and reports with maps, media and tabular content.
+Atlassen en rapporten maken, inclusief kaarten, media en tabulaire inhoud.
 
 {{<column-end >}}
 
@@ -44,7 +44,7 @@ Create atlases and reports with maps, media and tabular content.
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![Edit map](../img/edit.gif "Edit map")
+![Edit map](../img/edit.gif "Kaart bewerken")
 
 {{<column-end >}}
 
@@ -64,7 +64,7 @@ Gebruiksvriendelijke formulieren maken met onze formulierontwerper.
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![visualize map](../img/visualize.gif "visualize map")
+![visualize map](../img/visualize.gif "kaart visualiseren")
 
 {{<column-end >}}
 
@@ -84,7 +84,7 @@ Verken ons diverse plug-in ecosysteem van gereedschappen voor analyses van derde
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![share map](../img/share.gif "share map")
+![share map](../img/share.gif "kaart delen")
 
 {{<column-end >}}
 
@@ -104,7 +104,7 @@ Breidt QGIS uit naar de cloud en mobiele apparaten voor meer toegankelijkheid.
 
 {{<column-start class="is-flex-direction-column rounded" >}}
 
-![Create map](../img/plugs.jpg "Create map")
+![Kaart maken](../img/plugs.jpg "Kaart maken")
 
 {{<column-end >}}
 
@@ -112,7 +112,7 @@ Breidt QGIS uit naar de cloud en mobiele apparaten voor meer toegankelijkheid.
 ### 2000+ plug-ins, ontwikkeld door de gemeenschap
 Verhoog de functionaliteit van de toepassing QGIS met duizenden gratis aanvullende mogelijkheden.
 
-[Go to plugins](https://plugins.qgis.org/)
+[Ga naar plug-ins](https://plugins.qgis.org/)
 
 {{<column-end >}}
 
@@ -122,7 +122,7 @@ Verhoog de functionaliteit van de toepassing QGIS met duizenden gratis aanvullen
 
 {{<column-start class="is-flex-direction-column rounded" >}}
 
-![International conference](../img/meetings.jpg "International conference")
+![Internationale bijeenkomst](../img/meetings.jpg "Internationale bijeenkomst")
 
 {{<column-end >}}
 
@@ -130,7 +130,7 @@ Verhoog de functionaliteit van de toepassing QGIS met duizenden gratis aanvullen
 ### Jaarlijkse internationale conferentie
 Maak verbinding met professionals, enthousiasten en gebruikers van QGIS voor netwerken en het delen van kennis op onze jaarlijkse gebruikersconferentie.
 
-[Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}})
+[Gebruikersbijeenkomsten]({{< ref "community/organisation/meetings/user_meetings.md" >}})
 
 {{<column-end >}}
 
@@ -140,7 +140,7 @@ Maak verbinding met professionals, enthousiasten en gebruikers van QGIS voor net
 
 {{<column-start class="is-flex-direction-column rounded mb-4" >}}
 
-![Local user groups](../img/groups.jpg "Local user groups")
+![Lokale gebruikersgroepen](../img/groups.jpg "Lokale gebruikersgroepen")
 
 {{<column-end >}}
 
@@ -148,7 +148,7 @@ Maak verbinding met professionals, enthousiasten en gebruikers van QGIS voor net
 ### Lokale gebruikersgroepen en ondersteuning van providers
 Neem deel aan een gemeenschap van gelijkgestemde individuen in uw regio.
 
-[Local groups list]({{< ref "community/groups.md" >}})
+[Lijst met lokale groepen]({{< ref "community/groups.md" >}})
 
 {{<column-end >}}
 
@@ -180,7 +180,7 @@ Publiceer uw projecten en lagen van QGIS als OGC-compatibel WMS-, WMTS-, WFS- en
 ### QGIS Desktop
 Het maken, bewerken, visualiseren, analyseren en publiceren van geo-spatiale (ruimtelijke) informatie.
 
-[Download]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android.
+[Downloaden]({{< ref "download.md" >}}) voor Windows, Mac, Linux, BSD en Android.
 
 {{<rich-content-end >}}
 
@@ -235,7 +235,7 @@ De QGIS-ervaring stopt niet met het bureaublad. Verscheidene voor aanraken geopt
 ### Praktijkvoorbeelden
 We verzamelen inspirerende verhalen van onze gebruikers die de veelzijdigheid en kracht van het project QGIS laten zien.
 
-[Find out more]({{< ref "project/case-studies.md" >}})
+[Meer weten]({{< ref "project/case-studies.md" >}})
 
 {{<rich-content-end >}}
 
@@ -271,7 +271,7 @@ Demonstraties van de creativiteit van onze gebruikers, die de krachtige mogelijk
 ## Schermafdrukken toepassing
 Hieronder staan een aantal schermafdrukken van QGIS zelf, en een selectie kaarten die zijn gemaakt met QGIS:
 
-[Go to screenshots]({{< ref "project/overview/screenshots.md" >}})
+[Ga naar schermafdrukken]({{< ref "project/overview/screenshots.md" >}})
 
 {{<column-end >}}
 

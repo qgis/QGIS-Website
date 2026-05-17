@@ -17,58 +17,58 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>December 31, 2017</span>
+  <span>31 december 2017</span>
 </p>
 
-Every day, Ottomanists around the world generate valuable materials as components of their scholarly research, but these materials may not be readily available to scholars with similar interests. The purpose of the OpenOttoman (Amy Singer, OpenOttoman: A Collaborative Platform for Digital Scholarship, https://networks.hnet.org/node/11419/discussions/166360/openottoman-collaborative-platform-digital-scholarship, 2017) is to stimulate generation of such materials and provide open and convenient access to these materials. The OpenOttoman Portal (http://www.openottoman.org) (OOP) is one vehicle for accessing these materials. Materials made available through the OOP include databases, with a prime example being gazetteers of Ottoman world places. Here, we describe the Historical Gazetteer of the Crimea (HGC), a prototype OOP gazetteer that includes populated places, districts, and provinces of Crimea in existence at the end of the Crimean Khanate.
+Elke dag genereren Ottomanen over de gehele waardevol materiaal zoals componenten van hun research voor hun studies, maar dit materiaal is vaak niet beschikbaar voor studenten met dezelfde interesses. Het doel van de OpenOttoman (Amy Singer, OpenOttoman: A Collaborative Platform for Digital Scholarship, https://networks.hnet.org/node/11419/discussions/166360/openottoman-collaborative-platform-digital-scholarship, 2017) is om het genereren van dergelijk materiaal te stimuleren en open en handige toegang te verschaffen tot dit materiaal. Het OpenOttoman Portal (http://www.openottoman.org) (OOP) is één mogelijkheid om toegang te verkrijgen tot dit materiaal. Materiaal dat beschikbaar is via OOP omvat databases, met als een voortreffelijk voorbeeld een gazetteer te zijn voor Ottomaanse plaatsen in de wereld. Hier beschrijven we de Historical Gazetteer of the Crimea (HGC), een prototype OOP gazetteer die bewoonde plaatsen, districten en provincies van de Krim omvat zoals die bestonden aan het einde van het kanaat van de Krim.
 
-The primary source of data for the HGC databases is Jankowski's dictionary of pre-Russian places in Crimea (Henryk Jankowski, Historical-Etymological Dictionary of Pre-Russian Habitation Names of the Crimea, Brill, Leiden, 2006). This source contains a map showing the locations of 137 populated places, 99 of which have been associated with existing places contained in the GeoNames database. These are the populated place entries in the HGC, with latitude and longitude for these entries being taken from the GeoNames database.
+De primaire gegevensbron voor de databases van HGC is Jankowski\’s woordenboek van vóór-Russische plaatsen in de Krim (Henryk Jankowski, Historical-Etymological Dictionary of Pre-Russian Habitation Names of the Crimea, Brill, Leiden, 2006). Deze bron bevat een kaart die de locaties weergeeft van 137 bewoonde plaatsen, waarvan 99 die zijn geassocieerd met bestaande plaatsen die zijn opgenomen in de database van GeoNames. Dit zijn de items voor bewoonde plaatsen in de HGC, met lengte- en breedtegraad voor deze plaatsen die zijn opgehaald uit de database van GeoNames.
 
-Jankowski's map also shows boundaries for six provinces and 43 districts. HGC locations for these features are region centroids approximated using boundaries shown on Jankowski's map. The HGC contains entries for 14 of the 16 rivers shown on Jankowski's map plus 61 additional rivers included to aid in locating populated places and district and province boundaries.
+Jankowski\’s kaart geeft ook grenzen voor zes provincies en 43 districten weer. Locaties van HGC voor deze objecten zijn geschatte zwaartepunten voor de regio met behulp van de grenzen die worden weergegeven op de kaart van Jankowski. De HGC bevat items voor 14 van de 16 weergegeven rivieren die worden weergegeven op Jankowski\’s kaart, plus 61 aanvullende rivieren die zijn opgenomen om te helpen bij het lokaliseren van bewoonde plaatsen en grenzen van district en provincie.
 
-Terrain elevation data (Shuttle Radar Topography Mission (SRTM) data, available at <https://lta.cr.usgs.gov/SRTM1Arc>) was incorporated into a base map of the region covered by Jankowski's map. District and province boundaries were approximated using Jankowski's map plus terrain features such as rivers, ridge lines, and valleys where boundaries on Jankowski' map were difficult to trace. Gazetteer locations for rivers are river mouth latitude and longitude taken from the GeoNames database. Per Table 1, the HGC includes three separate sets of databases which can be accessed at <http://epublications.marquette.edu/ottoman_crimea/>. This website also provides access to a project named HGC-QGIS-Project.qgs. Opening the project in QGIS yields the result shown in Figure 1. For the KML and shape file rivers databases, rivers were traced in QGIS using the Google Maps physical map.
+Hoogtegegevens voor het terrein (Shuttle Radar Topography Mission (SRTM), beschikbaar op <https://lta.cr.usgs.gov/SRTM1Arc>) werden ingepast in een basiskaart voor de regio die wordt bedekt door Jankowski\’s kaart.  Grenzen voor districten en provincies werden geschat met behulp van de kaart van Jankowski, plus objecten in het terrein, zoals rivieren, lijnen van bergkammen en valleien, omdat grenzen op de kaart van Jankowski moeilijk te traceren waren. Gazetteerlocaties voor rivieren zijn de lengte- en breedtegraad van de monding van de rivier, genomen uit de database van GeoNames. Per Tabel 1 omvat de HGC drie afzonderlijke sets van databases waartoe toegang kan worden verkregen op <http://epublications.marquette.edu/ottoman_crimea/>.  Deze website verschaft ook toegang tot een project genaamd HGC-QGIS-Project.qgs. Openen van het project in QGIS geeft het resultaat dat wordt weergegeven in Afbeelding 1. Voor de KML- en shapefiledatabase voor rivieren werden rivieren getraceerd in QGIS met behulp van de fysieke kaart van Google Maps.
 
 <figure>
 <img src="../images/usa_polczynski_table1.png" class="align-right" alt="usa_polczynski_table1.png" />
-<figcaption>Table 1: Gazetteer databases</figcaption>
+<figcaption>Tabel 1: Gazetteer databases</figcaption>
 </figure>
 
-Opening the project in QGIS yields the result shown in Figure 1. For the KML and shape file rivers databases, rivers were traced in QGIS using the Google Maps physical map.
+Openen van het project in QGIS geeft het resultaat dat wordt weergegeven in Afbeelding 1. Voor de KML- en shapefiledatabase voor rivieren werden rivieren getraceerd in QGIS met behulp van de fysieke kaart van Google Maps.
 
 <figure>
 <img src="../images/usa_polczynski_figure1.png" class="align-right" alt="usa_polczynski_figure1.png" />
-<figcaption>Figure 1: HGC-QGIS-Project.qgs opened in QGIS.</figcaption>
+<figcaption>Afbeelding 1: HGC-QGIS-Project.qgs geopend in QGIS.</figcaption>
 </figure>
 
-Table 2 shows the HGC database fields. Note the manner in which a unique ID is assigned to each place in the database. Since each Jankowski place is associated with a place in the GeoNames database, and since each place in the GeoNames database has a unique ID given as a URL, the GeoNames URL for the place serves as a unique identifier for the HGC place.
+Tabel 2 geeft de velden van de database van HGC weer. Merk de manier op waarop een unieke ID wordt toegewezen aan elke plaats in de database. Omdat elke plaats op de kaart van Jankowski is geassocieerd met een plaats in de database van GeoNames, en omdat elke plaats in de database van GeoNames als URL een unieke ID is gegeven, dient de URL van GeoNames voor de plaats als een unieke identificatie voor de plaats in HGC.
 
 <figure>
 <img src="../images/usa_polczynski_table2.png" class="align-right" alt="usa_polczynski_table2.png" />
-<figcaption>Table 2: HGC database fields.</figcaption>
+<figcaption>Tabel 2: HGC databasevelden.</figcaption>
 </figure>
 
 Onthoud dat de ID kan worden geopend in een webbrowser, waarbij automatisch een kaart van GeoNames wordt weergegeven met de bewoonde plaats als het centrum, zoals weergegeven in Afbeelding 2.
 
 <figure>
 <img src="../images/usa_polczynski_figure2.png" class="align-right" alt="usa_polczynski_figure2.png" />
-<figcaption>Figure 2: Opening the URL ID for Qarağy in a web browser.</figcaption>
+<figcaption>Afbeelding 2: Openen van de URL-ID voor Qarağy in een webbrowser.</figcaption>
 </figure>
 
-Per Table 2, the fields for the district, province, and river databases are the same as the fields for populated places except that the Page field is left blank, since districts, provinces, and rivers do not appear as entries in Jankowski's dictionary. Districts, provinces, and rivers are assigned URL IDs in the same way that they are assigned for populated places. Thus, in Table 2 the Part of field for the populated place Qarağy is the GeoNames URL for Tarɣan, the district in which this place is located. The Code and Class fields use the nomenclature employed in the GeoNames database. Per the example, the P code applies generally to populated places, and the PPLH class (sub-code) applies to historical populated places that no longer exists.
+Voor Tabel 2 zijn de velden voor de district-, provincie- en de rivierendatabases dezelfde velden voor bewoonde plaatsen, met als uitzondering dat het veld Page leeg is gelaten, omdat districten, provincies en rivieren niet als items voorkomen in Jankowski\’s woordenboek.  Districten, provincies en rivieren worden op dezelfde manier URL-ID's toegewezen als waarop ze worden toegewezen aan bewoonde plaatsen. Dus in Tabel 2 het Part of field voor de bewoonde plaats Qarağy is de URL van GeoNames voor Tarɣan, het district waarin deze plaats ligt. De velden Code en Class gebruiken de naamgeving die wordt gebruikt in de database van GeoNames. Als voorbeeld: de code P is gewoonlijk van toepassing voor bewoonde plaatsen, en de klasse PPLH (sub-code) is van toepassing voor historische bewoonde plaatsen die niet langer bestaan.
 
-The Confidence field reflects the confidence level of the data captured in a particular database entry. Because all populated places in the HGC can be associated with existing places in the GeoNames database, they are assigned a confidence level of 1. Rivers are also assigned a confidence level of 1, since they have been traced directly from Google Maps.
+Het veld Confidence reflecteert de mate van betrouwbaarheid van de gegevens die zijn opgenomen in een bepaald item van de database. Omdat alle bewoonde plaatsen in de HGC kunnen worden geassocieerd met bestaande plaatsen in de database van GeoNames, wordt een betrouwbaarheidsniveau van 1 toegekend. Rivieren krijgen ook een betrouwbaarheidsniveau van 1, omdat ze direct zijn getraceerd vanaf Google Maps.
 
-While providing a useful gazetteer, a primary purpose of the HGC was to serve as a test bed and use case for how other Ottoman world gazetteers could be incorporated into the OOP. Based on experience gained through this project, a new project has been initiated to geolocate approximately 3,000 populated places, rivers, river fords, rapids, islands, forests, mountains, and valleys found on a set of 17th century maps of Ukraine produced by Guillaume Le Vasseur, sieur de Beauplan. This project directly supports one of the principal investigator's research on the Polish-Lithuanian Commonwealth /Ottoman Empire frontier. More generally, this work responds to the need for gazetteers of the Ottoman world as expressed by the OpenOttoman initiative (<http://openottoman.org>).
+Waar het een nuttige gazetteer verschaft, was een primair doel van de HGC om te dienen als testomgeving en als gebruiksmogelijkheid voor hoe andere Ottomaanse wereldgazetteers zouden kunnen worden ingepast in de OOP. Gebaseerd op de ervaring die uit dit project werd verkregen, werd een nieuw project geïnitieerd om ongeveer 3000 bewoonde plaatsen, rivieren, oversteekplaatsen in rivieren, stroomversnellingen, eilanden, bossen, bergen en valleien, die zijn te vinden op een set van kaarten uit de 17e eeuw van Oekraïne, geproduceerd door Guillaume Le Vasseur, sieur de Beauplan, te voorzien van geoverwijzingen. Dit project ondersteunt direct een van de onderzoeken van de belangrijkste onderzoeker over de grens van de Pools-Litouwse gemeenschap/Ottomaanse Rijk. Meer in het algemeen beantwoordt dit werk de vraag naar gazetteers voor de Ottomaanse wereld, zoals uitgesproken door het OpenOttoman initiatief (<http://openottoman.org>).
 ## Auteurs
 Afbeelding 3: Michael en Mark Polczynski
 
 <figure>
 <img src="../images/usa_polczynski_authors.jpg" class="align-left" alt="usa_polczynski_authors.jpg" />
-<figcaption>Michael and Mark Polczynski</figcaption>
+<figcaption>Michael en Mark Polczynski</figcaption>
 </figure>
 
-Michael Polczynski (<Michael.Polczynski@georgetown.edu>) lectures at Georgetown University, where his work focuses on early modern Ottoman and East/Central European history, frontier history, historical geography, diplomacy, and intellectual history. Michael also studies Late Medieval Eurasian history and 19th century European Emigres in the Ottoman Empire and works extensively with historical GIS and manage several on-line academic communities.
+Michael Polczynski (<Michael.Polczynski@georgetown.edu>) is een lector aan de Georgetown University, waar zijn werk focust op vroegmoderne Ottomaanse en Oost-/Centraal-Europese geschiedenis, geschiedenis van grenzen, historische geografie, diplomatie, en intellectuele geschiedenis. Michael studeert ook laatmiddeleeuwse Euraziatische geschiedenis en 19e-eeuwse Europese emigranten in het Ottomaanse Rijk en werkt uitgebreid met historisch GIS en beheert verscheidene online academische gemeenschappen.
 
-Mark Polczynski (<mark.polczynski@marquette.edu>) is retired from Marquette University's College of Engineering, and currently provides technical assistance to the OpenOttoman (openottoman.org), a developing transnational digital collaborative for scholarship and public history focused on the Ottoman world.
+Mark Polczynski (<mark.polczynski@marquette.edu>) is gepensioneerd van Marquette University’s College of Engineering, en verschaft momenteel technische assistentie aan OpenOttoman (openottoman.org), een ontwikkeling van transnationale digitale samenwerking van scholing en publieke geschiedenis, gefocust op de Ottomaanse wereld.
 
 {{<content-end >}}

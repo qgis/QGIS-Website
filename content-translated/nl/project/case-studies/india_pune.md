@@ -18,32 +18,32 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>May 01, 2014</span>
+  <span>1 mei 2014</span>
 </p>
 
 Dit praktijkvoorbeeld legt uit hoe offline kaarten vanuit WMS/WFS of een in het kaartvenster van QGIS geladen kaart voor te bereidden door tegels te downloaden met behulp van een script in de console van Python. Het script genereert ook een mozaïek uit de tegels voor verder gebruik.
 
 Toegang tot raster-/vectorkaarten door middle van Web Mapping Service (WMS)-services is zeer algemeen en efficiënt. Het heeft verscheidene voordelen, zoals veiligheid, gecentraliseerde en flexibele kaartstijlen. Voorbeelden zijn Google maps, Yahoo, Bing, MODIS, Landsat, kaarten gepubliceerd door NASA, NRSC (India). Het nadeel/beperking van WMS is dat het werkt via internet of intranet. Het is misschien niet mogelijk om altijd een internetverbinding te krijgen, in het bijzonder tijdens veldonderzoek. Ook werkt WMS traag, vergeleken met andere offline indelingen voor afbeeldingen, zoals GeoTiff, jpg, img etc.
 ## Gebruik van QGIS
-QGIS provides a tool to connect/access any WMS service. WMS connection is based on simple URL and once connection is established map can be seen on QGIS mapview. If we save the map of visible extent from QGIS mapview as jpg (File \> Save as Image) it creates world file which has the geographic coordinate information of particular region E.g. sample.jpg is the map and sample.jpgw have the coordinates. That means the downloaded image is georeferenced. We can download tiles in grid format manually and use later offline. Manual downloading is possible if the area is very small or low resolution images are fine.
+QGIS verschaft een gereedschap om verbinding te maken met/toegang te krijgen tot elke WMS-service. De verbinding met WMS is gebaseerd op een eenvoudige URL en als de verbinding eenmaal is gemaakt, is de kaart te zien in het kaartvenster van QGIS. Als we de kaart van het zichtbare bereik vanuit het kaartvenster van QGIS willen opslaan als jpg (Bestand > Als afbeelding opslaan) maakt het een wereldbestand dat de informatie over de geografische coördinaten van een bepaalde regio bevat. Bijv. sample.jpg is de kaart en sample.jpgw bevat de coördinaten. Dat betekent dat de gedownloade afbeelding is voorzien van geoverwijzingen. We kunnen handmatig tegels in rasterindeling downloaden en later offline gebruiken. Handmatig downloaden is mogelijk als het gebied heel klein is of als afbeeldingen met een lage resolutie voldoende zijn.
 
 <figure>
 <img src="../images/india_pune1.png" class="align-left" alt="india_pune1.png" />
-<figcaption>QGIS with WMS tiles</figcaption>
+<figcaption>QGIS met WMS-tegels</figcaption>
 </figure>
 
 ## Python-Console
-A short script was written in "Python Console" with help available on QGIS official website in PyQGIS Developer Cookbook. Script consists of basically 4 components as following,
+Een kort script werd geschreven in de "Python Console" met beschikbare hulp van QGIS officiële website in het PyQGIS Developer Cookbook. Het script bestaat in de basis uit 4 componenten, en wel als volgt,
 1. X-,Y-coördinaten (linksboven en rechtsonder) van eerste tegel
 2. Grootte van de te downloaden tegel (bijv. 0.001 X 0.001 graden)
 3. Aantal te downloaden tegels (berekening gebaseerd op volledig bereik van de kaart en grootte van de tegels)
 4. Map voor uitvoer om de uitvoerbestanden/-tegels op te slaan
 
-The script works in two simple for loops first which defines the extent of map in QGIS map view and run row/columns. Once the map extent is set then map is loaded in QGIS. The delay of 3 seconds (depends on internet connection) was introduced before saving map as jpg in user defined directory. Once the script is executed all the tiles created in directory can be directly loaded in QGIS or single mosaic is prepared from Raster \> Miscellaneous \> Merge or Build Virtual Raster (Catalog). Both tools generates mosaic but basic difference in Merge creates an image independent of tiles whereas Virtual raster generates a link in all individual tiles (tiles are required).
+Het script werkt met twee eenvoudige FOR-loops die eerst het bereik van de kaart in het kaartvenster van QGIS definiëren en over de rijen/kolommen worden uitgevoerd. Als het kaartbereik is ingesteld, wordt de kaart geladen in QGIS. De vertraging van 3 seconden (afhankelijk van de internetverbinding) werd geïntroduceerd voor het opslaan van de kaart als jpg in de door de gebruiker gedefinieerde map. Als het script wordt uitgevoerd, kunnen alle in de map gemaakte tegels direct worden geladen in QGIS of wordt een enkel mozaïek voorbereid via Raster \> Diversen \> Samenvoegen of Virtueel raster bouwen (Catalogus). Beide gereedschappen genereren mozaïeken, maar het basisverschil is dat Samenvoegen een afbeelding maakt die onafhankelijk is van de tegels, terwijl Virtueel raster een koppeling genereert in alle individuele tegels (tegels zijn vereist).
 
 <figure>
 <img src="../images/india_pune2.png" class="align-left" alt="india_pune2.png" />
-<figcaption>Python script and directory where tiles are stored</figcaption>
+<figcaption>Python-script en de map waar de tegels worden opgeslagen</figcaption>
 </figure>
 
 De methode heeft de beperking dat wijzigingen in de kaart aan de kant van de server niet zichtbaar zullen zijn offline (gedownloade kaart). In dat geval zal de gebruiker het proces moeten herhalen en een nieuwe offline kaart moeten genereren. De tweede beperking is dat de offline gemaakte kaart in de indeling van een afbeelding is; hij kan niet worden gebruikt als thematische kaart of classificatie van de afbeelding. met enige extra inspanningen kunnen kaarten over grondgebruik worden geconverteerd naar vector met enig gegevensverlies.

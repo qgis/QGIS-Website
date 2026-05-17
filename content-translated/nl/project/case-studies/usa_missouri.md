@@ -17,32 +17,32 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>February 01, 2013</span>
+  <span>1 februari 2013</span>
 </p>
 
-The Missouri Herpetological Atlas Project (MOHAP) was initiated in 1997 as a result of the desire to obtain and easily update detailed distribution maps for Missouri (United States of America) amphibians and reptiles. A database was established to store all valid localities, including records published in historical literature sources and specimens vouchered from museums. From the database, a series of maps can be produced representing both locality records and \"county records\" for each species.
+Het Missouri Herpetological Atlas Project (MOHAP) werd geïnitieerd in 1997 als resultaat van de wens te komen tot een eenvoudig bij te werken kaart van de verdeling van amfibieën en reptielen voor Missouri (Verenigde Staten van Amerika). Een database werd opgezet om alle geldige locaties op te kunnen slaan, inclusief records die werden gepubliceerd in historische literatuurbronnen en specimens die gewaarmerkt werden verkregen vanuit musea. Vanuit de database kan een reeks kaarten worden geproduceerd die zowel de records voor plaats als ook de \"county records\" voor elke soort weergeven.
 
-MOHAP hosts a web site at <http://atlas.moherp.org/> that describes the project in detail and displays a variety of static maps, all produced by QGIS. An atlas, published as a downloadable PDF, is released periodically as a gratis publication in the spirit of open access to scientific research (Daniel, R.E. and B.S. Edmond. 2012. Atlas of Missouri Amphibians and Reptiles for 2011. \<<http://atlas.moherp.org/pubs/atlas11.pdf>\>). Published maps are used by field biologists, land managers, and others to better understand species\' distributions in Missouri.
+MOHAP host een website op <http://atlas.moherp.org/> die het project in detail beschrijft en een variëteit aan statische kaarten weergeeft, alle geproduceerd door QGIS.  Een atlas, gepubliceerd als een te downloaden pdf, wordt periodiek uitgegeven als een gratis publicatie in de geest van open toegang tot wetenschappelijk onderzoek (Daniel, R.E. and B.S. Edmond. 2012. Atlas of Missouri Amphibians and Reptiles for 2011. \<<http://atlas.moherp.org/pubs/atlas11.pdf>\>). Gepubliceerde kaarten worden gebruikt door veldbiologen, landbeheerders en anderen om de verdeling van de soorten in Missouri beter te begrijpen.
 
-As of February 2013, the MOHAP database contained 31,495 entries representing the specimens housed in 34 museum collections and cited in 32 historical literature sources; 5,118 documented county records; 6,884 unique localities; and 12,866 unique species / locality combinations. The state\'s herpetofauna consists of 113 species.
+Vanaf februari 2013 bevat de database van MOHAP  31.495 items die de soorten weergeven die die worden bewaard in 34 museumcollecties en zijn vermeld in 32 historische literatuurbronnen; 5118 gedocumenteerde county records; 6884 unieke plaatsen; en 12.866 unieke combinaties van soorten / plaatsen. De herpetofauna van de staat bestaat uit 113 soorten.
 ## Statische kaarten genereren en exporteren 
 Het proces van het maken van kaarten met QGIS begint met de gegevens die zijn opgeslagen in verschillende tabellen van PostgreSQL, ruimtelijk te gebruiken door middel van PostGIS. Omdat kaarten statisch zijn en uiteindelijk bedoeld voor ofwel het web of een afgedrukte atlas, worden zij voor elke soort automatisch gegenereerd door middle van een aangepaste Python-plug-in voor QGIS  (Figures 1,2).
 
 <figure>
 <img src="../images/usa_missouri1.png" class="align-right" alt="usa_missouri1.png" />
-<figcaption>Custom map generation and export user interface, maps are generated and exported in a batch process.</figcaption>
+<figcaption>Aangepaste kaart maken en gebruikersinterface exporteren, kaarten worden gemaakt en geëxporteerd in een batchproces.</figcaption>
 </figure>
 
-The final species maps have a clean and professional appearance (Figure 3). To better understand species\' distributions, a series of base maps are also created and labelled (Figure 4). Because of the way styles are managed within each data layer, the base map layers can also be incorporated into a set of species maps with little extra effort.
+De uiteindelijke kaarten voor de soorten hebben een helder en professioneel uiterlijk (Afbeelding 3). Een serie basiskaarten wordt ook gemaakt en gelabeld om de verdeling van de soorten beter te begrijpen (Afbeelding 4). Vanwege de manier waarop de kaartstijlen worden bekeerd binnen elke gegevenslaag, kunnen de lagen van de basiskaart ook met weinig inspanning worden verwerkt in een set van kaarten van soorten.
 
 <figure>
 <img src="../images/usa_missouri2.png" class="align-right" alt="usa_missouri2.png" />
-<figcaption>Maps are displayed as static images.</figcaption>
+<figcaption>Kaarten worden weergegeven als statische afbeeldingen.</figcaption>
 </figure>
 
 <figure>
 <img src="../images/usa_missouri3.png" class="align-right" alt="usa_missouri3.png" />
-<figcaption>Labelled Level III Ecoregion map for Missouri and surrounding states.</figcaption>
+<figcaption>Kaart met gelabelde Level III Ecoregion voor Missouri en omliggende staten.</figcaption>
 </figure>
 
 ## Conclusies
@@ -57,6 +57,6 @@ Hoewel we QGIS op een kleine en specifieke manier gebruiken, zijn zijn mogelijkh
 <figcaption>Brian Edmond</figcaption>
 </figure>
 
-This article was contributed by Brian Edmond in February 2013. He is a Senior Systems Analyst in Computer Services at Missouri State University. He holds a BS in Wildlife Biology from the University of Missouri and has spent his career in the intergrade zone between biology and technology.
+Dit artikel werd bijgedragen door Brian Edmond in februari 2013. Hij is een Senior Systems Analyst in Computer Services aan de Missouri State University. Hij heeft een BS in Wildlife Biology van de University of Missouri en ontwikkelde zijn carrière in de samengevoegde zone tussen biologie en technologie.
 
 {{<content-end >}}

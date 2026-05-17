@@ -18,14 +18,14 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2012</span>
+  <span>1 juli 2012</span>
 </p>
 
-The Iberian wolf is a sub-species of the gray wolf that exists only in north of Portugal and Spain, with small isolated groups in the south of Douro river. During the last century, it suffered a high regression, being a "vulnerable" species in Spain and "endangered" in Portugal. Nowadays, there are only around 300 wolves in Portugal, due to the high persecution, destruction and fragmentation of the habitat.
+De Iberische wolf is een ondersoort van de grijze wolf die alleen voorkomt in het noorden van Portugal en Spanje, met kleine geïsoleerde groepen ten zuiden van de rivier Douro. Gedurende de laatste eeuw liep het aantal sterk terug, wat het een "kwetsbare" soort maakte in Spanje en een "bedreigde" in Portugal. Tegenwoordig zijn er nog maar ongeveer 300 wolven in Portugal, vanwege de enorme vervolging, vernietiging en fragmentatie van de leefomgeving.
 
 <figure>
 <img src="../images/portugal_ribeira1.png" class="align-right" alt="portugal_ribeira1.png" />
-<figcaption>Study area in Portugal</figcaption>
+<figcaption>Studiegebied in Portugal</figcaption>
 </figure>
 
 Ribeira de Pena is een gemeente in het district Vila Real in het noorden van Portugal. Het is een landelijke gemeente, gekarakteriseerd door landbouw, grazend vee, bossen, bergen, valleien en diverse fauna, naast een lage bevolkingsdichtheid, dat beschutting en voedsel verschaft aan de wolven. Gelegen in een overgangsgebied tussen de onherbergzame en bergachtige Trás-os-Montes en de groene Minho, is Ribeira de Pena één van de gemeenten die kan werken als een ecologische corridor tussen gebieden met hogere concentraties wolven in het boorden en lagere concentraties in het zuiden.
@@ -42,19 +42,19 @@ We gebruikten QGIS tezamen met de plug-in GRASS om modellen te bouwen voor de ec
 - r.slope.aspect.slope in GRASS: om de helling uit de DEM te berekenen
 - r.mapcalculator in GRASS: om enige eenvoudige algebra voor de kaart te berekenen
 - r.cost.coord in GRASS: maakt een rasterkaart die de cumulatieve kosten weergeeft van de verplaatsing tussen verschillende geografische locaties op een invoerrasterkaart waarvan de waarden van categorieën kosten vertegenwoordigen
-- r.drain in GRASS: Traces a flow through an elevation model on a raster map — the one used to create the corridors
+- r.drain in GRASS: Traceert een stroom over een hoogtemodel op een rasterkaart — die welke werd gebruikt om de corridors te maken
 
 Met dit werk verkregen we een kaart met de potentiële ecologische corridors voor wolven in de gemeente Ribeira de Pena. Met deze gebieden moet door technici van de gemeente rekening worden gehouden bij het plannen van maatregelen ter bescherming van de soort. Deze corridors zijn van extreem belang omdat zij de fragiele roedels wolven in Vila Real in het zuiden verbinden met die in het noorden, welke doorlopen in de veel meer stabiele van Peneda-Gerês en Spanje. Het is van bijzonder belang voor die corridors die menselijke nederzettingen, zoals kleine dorpen, steden en wegen, doorsnijden. Deze gebieden moeten geacht worden kritiek te zijn voor het behoud van de wolf, en vereisen maatregelen om de menselijke invloed op deze soort te beperken.
 
 <figure>
 <img src="../images/portugal_ribeira2.png" class="align-right" style="width:100.0%" alt="portugal_ribeira2.png" />
-<figcaption>Ecological corridors and critical conservation areas for wolves in northern Portugal.</figcaption>
+<figcaption>Ecologische corridors en kritische conservatiegebieden voor wolven in Noord-Portugal.</figcaption>
 </figure>
 
 ## Conclusie
-Both QGIS and plugin GRASS are very intuitive with user-friendly interface, with all essential functions to perform most analysis. For what I could see, QGIS and GRASS perform equally as well as the proprietary programs I was most familiar with from college days, with the big advantage of free open-source software, usable in every computer or notebook without licenses, constant upgrades and the ultimate advantage to contribute to it\'s improvement and/or tip the developers about some essential function.
+Zowel QGIS als de plug-in GRASS zijn enorm intuïtief met een gebruikersvriendelijke interface, met alle essentiële functies om de meeste analyses uit te voeren. Voor wat ik kon zien, presteerden QGIS en GRASS gelijk aan de merkgebonden programma's die ik al had gebruikt in mijn schooltijd, met het grote voordeel van de gratis open-source software, zonder licenties te gebruiken op elke computer of notebook, constante bijwerkingen en het ultieme voordeel om bij te kunnen dragen aan zijn verbeteringen en/of de ontwikkelaars te tippen over enkele essentiële functies.
 
-Changing to Linux and then to QGIS and GRASS was one of my best calls, and although there can be some missing issues, easily resolved in the future with the developers, I don\'t regret my decision and advise everyone to use them.
+De overstap naar Linux en daarna naar QGIS en GRASS was een van mijn betere beslissingen, en hoewel er enkele ontbrekende problemen kunnen zijn, kunnen die in de toekomst eenvoudig worden opgelost door de ontwikkelaars. Ik heb geen spijt van mijn beslissing en raad iedereen aan om ze te gebruiken.
 ## Auteur
 <figure>
 <img src="../images/portugal_ribeiraaut.png" class="align-left" height="200" alt="portugal_ribeiraaut.png" />

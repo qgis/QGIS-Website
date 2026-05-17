@@ -12,12 +12,12 @@ type: case-study
 
 ---
 {{<content-start >}}
-# QGIS to describe the Cesena\'s Wall
+# QGIS om de Muur van Cesena te beschrijven
 <p class="is-size-6 is-italic has-text-weight-medium">
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>October 30, 2015</span>
+  <span>30 oktober 2015</span>
 </p>
 
 De ECAMPUS UNIVERSITY werd gemaakt als een online iniversiteit en erkend door de MIUR (Italian Ministry of Education, University and Research) bij ministerieel decreet van 30 januari 2006. Het werd gevormd met als doel om aan jonge mensen, professionals, ondernemers,uitvoerenden, zakenmensen en culturele actoren toegang tot de universiteit te verschaffen via zijn platform voor e-Learning platform om bij te dragen  aan de arbeidsmarkt. Het hoofdkwartier, ook bekend als Milan International Campus, of Campus of Novedrate, is gesitueerd in het voormalige leercentrum van IBM in Novedrate (Como, Italy), op een campus in de rustige groene Brianza.
@@ -30,19 +30,19 @@ QGIS was een fundamenteel gereedschap om deze kaarten met geoverwijzingen te lez
 
 <figure>
 <img src="../images/italy_cesena1.png" style="width:100.0%" alt="italy_cesena1.png" />
-<figcaption>Fig. 1 Concept Map of the QGIS project</figcaption>
+<figcaption>Afb. 1 Conceptkaart van het project van QGIS</figcaption>
 </figure>
 
 Met behulp van die gereedschappen vergaarde in informatie over:
-- The precision of the Leonardo Da Vinci\'s topographic survey, realized in 1502, such as how many points of this survey are correct (Fig. 2);
-- The Cesena Wall\'s Development from the Roman Age to the 15th Century;
-- The Cesena Wall\'s Demolitions from the 19th Century to the Early 20th Century;
+- De precisie van het topografische onderzoek van Leonardo Da Vinci, gerealiseerd in 1502, zoals hoeveel punten van zijn onderzoek juist waren (Afb. 2);
+- De ontwikkeling van de muur van Cesena van de Romeinse tijd tot aan de 15e eeuw;
+- Het verval van de muur van Cesena vanaf de 19e eeuw tot aan het begin van de 20e eeuw;
 - De morfologische wijzigingen van de stadsmuur, zoals het verval van zijn oude geforitficeerde torens en zijn oude stadspoorten;
-- The Cesena\'s Urban Progress from the 16th Century to the Present;
+- De stedelijke vooruitgang van Cesena vanaf de 16e eeuw tot heden;
 
 <figure>
 <img src="../images/italy_cesena2.png" style="width:100.0%" alt="italy_cesena2.png" />
-<figcaption>Fig. 2: Openlayer Google Satellite overlapped by the informations recorded in different layers: the present City Wall in black, the Leonardo Da Vinci's topographic survey of the City Wall in orange, the Leonardo Da Vinci's points of survey in yellow and the present ancient City Gates in red.</figcaption>
+<figcaption>Afb. 2: Openlayer Google Satellite overlapt door de opgenomen informatie uit verschillende lagen: de huidige stadsmuur in zwart, het topografische onderzoek van Leonardo Da Vinci van de stadsmuur in oranje, de punten van het onderzoek van Leonardo Da Vinci in geel en de huidige oude stadspoorten in rood.</figcaption>
 </figure>
 
 Er zijn heel veel gereedschappen in QGIS en ik gebruikte sommige daarvan om te maken:
@@ -52,7 +52,7 @@ Er zijn heel veel gereedschappen in QGIS en ik gebruikte sommige daarvan om te m
 
 <figure>
 <img src="../images/italy_cesena3.png" style="width:100.0%" alt="italy_cesena3.png" />
-<figcaption>Fig. 3: The 3D model of the present City Wall and Cesena's buildings inside and outside the Wall. The ancient fortified towers and the ancient City Gates are indicated.</figcaption>
+<figcaption>Afb. 3: Het 3D-model van de huidige stadsmuur en de gebouwen van Cesena binnen en buiten de muur. De oude gefortificeerde torens en de oude stadspoorten worden aangegeven.</figcaption>
 </figure>
 
 ## Conclusie
@@ -70,6 +70,6 @@ De historische informatie is afkomstig uit:
 - \"La cartografia dall\'antichità fino al XVIII secolo\", Carlo Monti, Maggioli Editore, 2011
 
 ## Auteur
-Camilla Fabbri has a bachelor\'s degree in Civil and Environmental Engineering. She has developed her dissertation on historical cartography of the Cesena Wall using the QGIS program with the Supervisor Alessandra Borghi, who is the University Teacher of Topography and Theoretical Mechanics of the bachelor\'s degree in Civil and Environmental Engineering in the eCampus University.
+Camilla Fabbri is een bachelor in Civil and Environmental Engineering. Zij heeft haar dissertatie gebaseerd op de historische cartografie van de muur van Cesena met behulp van het programma QGIS, met als supervisor Alessandra Borghi, die de University Teacher of Topography and Theoretical Mechanics van de bachelors in Civil and Environmental Engineering op de eCampus University is.
 
 {{<content-end >}}

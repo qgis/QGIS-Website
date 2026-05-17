@@ -18,7 +18,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2014</span>
+  <span>1 juli 2014</span>
 </p>
 
 Het National Institute of Rural Development & Panchayati Raj (NIRD&PR) is een Apex institute van het Ministry of Rural Development, Government of India. het hoofdkantoor is gevestigd in de stad Hyderabad in India en het heeft drie kantoren in de steden Guwahati, Jaipur en Patna. Guwahati is de hoofdstad van Assam State (noordoostelijke gedeelte van het land). Het NIRD Guwahati Centre is actief betrokken in korte (meestal 5 dagen, inclusief één dag onderzoek met draagbare GPS) in huis GIS-trainingen voor overheidsambtenaren van de provincies, districten en blokken van acht noordoostelijke Indiase provincies. Apart van overheidsambtenaren worden ook faculteiten van universiteiten, leraren van Colleges, onderzoeksscholieren en bekende NGO's getraind. Trainingen worden volledig gesponsord door NIRD en deelnemers dragen alleen hun reiskosten. De auteur werkt in het NIRD Guwahati centre als Adjunct Faculty (GIS) en coördinerende GIS en Rural Development gerelateerde trainingen aan het centrum samen met Dr. K. Haloi, coördinator Training & Research, i/c Head, C-GARD, NIRD&PR-NERC.
@@ -35,7 +35,7 @@ De toepassingen van software gedurende de training werden over het algemeen geco
 
 <figure>
 <img src="../images/india_guwahati1.png" class="align-left" alt="india_guwahati1.png" />
-<figcaption>Training course at NIRD&amp;PR-NERC, Guwahati</figcaption>
+<figcaption>Trainingscursus bij NIRD&amp;PR-NERC, Guwahati</figcaption>
 </figure>
 
 ## Uitgevoerde trainingscursus in QGIS en deelnemers
@@ -48,6 +48,6 @@ Elke maand wordt de training gegeven met 20-30 deelnemers, dus het aantal groeit
 <figcaption>Alajangi Simhachalam</figcaption>
 </figure>
 
-This article was contributed in July 2014 by Alajangi Simhachalam, Adjunct Faculty, NIRD-NERC, Guwahati Website: <http://www.nirdnerc.nic.in>
+Dit artikel werd bijgedragen in juli 2014 door Alajangi Simhachalam, Adjunct Faculty, NIRD-NERC, Guwahati Website: <http://www.nirdnerc.nic.in>
 
 {{<content-end >}}

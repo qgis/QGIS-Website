@@ -18,16 +18,16 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>January 01, 2012</span>
+  <span>1 januari 2012</span>
 </p>
 
-HABEaS —— Hotspot Areas for Biodiversity and Ecosystem Services is an online geographic information system (WebGIS) that was created by the [Centre for Applied Ecology](http://www.isa.utl.pt/ceabn/content/2/123/homepage) ([Instituto Superior de Agronomia](http://www.isa.utl.pt/home/), Technical University of Lisbon), Worldwide Fund for Nature (WWF) and Faunalia.
+HABEaS —— Hotspot Areas for Biodiversity and Ecosystem Services is een online geografisch informatiesysteem (WebGIS) dat werd gemaakt door het [Centre for Applied Ecology](http://www.isa.utl.pt/ceabn/content/2/123/homepage) ([Instituto Superior de Agronomia](http://www.isa.utl.pt/home/), Technical University van Lissabon), Wereld Natuur Fonds (WNF) en Faunalia.
 
 Het belangrijkste doel van dit platform is om gratis toegang te verschaffen tot een brede variëteit aan gegevens van services voor biodiversiteit en ecosysteem voor het mediterrane bassin dat was verspreid over een aantal publieke en private entiteiten. Tegenwoordig bestrijkt HABEaS WebGIS het zuiden van Portugal, maar eind 2012/begin 2013 zal het zijn uitgebreid tot het noorden van Portugal en ook tot het Tuzla Canton in Bosnia & Herzegovina. Op de lange termijn willen we dit gereedschap uitbreiden tot het gehele mediterrane bassin.
 
 ![](../images/portugal_lisbon1.jpg)
 
-Since the main goal of this tool is to promote free and easy access to information on biodiversity and ecosystem services we decided to use only free and open source software, that any person or entity can use regardless of their location or financial constraints. The website where HABEaS WebGIS is hosted on a server that runs Debian Linux and was developed with Drupal CMS. PostgreSQL/PostGIS was used to store the data and QGIS was used to process and analyze the GIS that we obtained from several entities. We used both QGIS\'s native tools but also GRASS GIS and SAGA GIS tools through the GRASS plugin and SEXTANTE Toolbox.
+Omdat het belangrijkste doel van dit gereedschap is om vrije en eenvoudige toegang te bieden tot informatie over services voor biodiversiteit en ecosysteem, besloten we om alleen gratis en open source software te gebruiken, die iedereen kan gebruiken, ongeacht hun locatie of financiële beperkingen. De website HABEaS WebGIS wordt gehost op een server die Debian Linux uitvoert en werd ontwikkeld met Drupal CMS. PostgreSQL/PostGIS werd gebruikt om de gegevens op te slaan en QGIS werd gebruikt om de GIS, die we uit verschillende entiteiten verkregen, te verwerken en te analyseren. We gebruikten zowel de eigen gereedschappen van QGIS als gereedschappen van GRASS GIS en SAGA GIS via de plug-in van GRASS en de SEXTANTE Toolbox.
 
 ![](../images/portugal_lisbon2.jpg)
 
@@ -41,7 +41,7 @@ We gebruikten Grafische modellen bouwen van SEXTANTE om een script te maken dat 
 ## Conclusies
 QGIS is eenvoudig te gebruiken en heeft zeer krachtige mogelijkheden voor geo-verwerking. De integratie van gereedschappen voor GRASS GIS en SAGA GIS door middle van de SEXTANTE Toolbox maakten het ons mogelijk een aantal complexe ruimtelijke analyses uit te voeren en om ze te stroomlijnen met behulp van Grafische modellen bouwen van SEXTANTE. Het was ook zeer eenvoudig om kaarten van hoge kwaliteit te maken met behulp van de nieuwe printvormgeving en ze te exporteren in de indeling SVG voor nadere bewerking met Inkscape, wat een krachtig open source bewerkingsprogramma voor vectorafbeeldingen is.
 
-In general, our experience with QGIS has been very positive, the software runs smoothly and the community is very active and supportive. Reported bugs are usually resolved shortly after being reported by users and QGIS developers are always willing to listen to "end user\'s" needs and suggestions.
+In het algemeen zijn onze ervaringen met QGIS heel positief geweest; de software draait gladjes en de gemeenschap is zeer actief en ondersteunend. Gerapporteerde problemen worden gewoonlijk snel nadat ze door gebruikers zijn gerapporteerd verholpen en ontwikkelaars van QGIS zijn altijd bereid om te luisteren naar de wensen en suggesties van "eindgebruikers".
 ## Auteur
 <figure>
 <img src="../images/portugal_lisbonaut.jpg" class="align-left" height="200" alt="portugal_lisbonaut.jpg" />

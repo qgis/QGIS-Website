@@ -28,38 +28,38 @@ Whenever new features are added to software they introduce the possibility of ne
 
 We willen de ontwikkelaars, schrijvers van documentatie, testers en alle andere vele mensen bedanken die vrijwillig hun tijd en inspanningen bijdragen (of mensen ondersteunen om dat te doen).
 
-From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
+Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn in het opwaarderen van QGIS, kijk dan ook eens op [qgis.org](https://qgis.org) en help een handje!
 
 Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare financiële ondersteuning die zij aan dit project verlenen:
 - **GOLD Sponsor:** [Asia Air Survey, Japan](http://www.asiaairsurvey.com/)
-- SILVER Sponsor: [AGH University of Science and Technology, Krakow, Poland](http://www.agh.edu.pl/en)
-- SILVER Sponsor: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
-- SILVER Sponsor: [Office of Public Works, Ireland, Ireland](http://www.opw.ie/)
-- SILVER Sponsor: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
-- BRONZE Sponsor: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
+- ZILVEREN Sponsor: [AGH University of Science and Technology, Krakow, Polen](http://www.agh.edu.pl/en)
+- ZILVEREN sponsor: [Staat Vorarlberg, Oostenrijk](http://www.vorarlberg.at/)
+- ZILVEREN sponsor: [Office of Public Works, Ireland, Ireland](http://www.opw.ie/)
+- ZILVEREN sponsor: [Sourcepole AG, Zwitserland](http://www.sourcepole.com/)
+- BRONZEN sponsor: [Lutra Consulting, VK](http://www.lutraconsulting.co.uk/)
 - BRONZE Sponsor: [WhereGroup GmbH & Co. KG, Germany](http://wheregroup.com/)
 - BRONZE Sponsor: [Nicholas Pearson Associates, UK](http://www.npaconsult.co.uk/)
 - BRONZE Sponsor: [QGIS Poland, Poland](http://qgis-polska.org/)
 - BRONZE Sponsor: [www.terrelogiche.com, Italy](http://www.terrelogiche.com/)
-- BRONZE Sponsor: [GeoSynergy, Australia](http://www.geosynergy.com.au/)
-- BRONZE Sponsor: [Gaia3D, South Korea](http://www.gaia3d.com/)
-- BRONZE Sponsor: [Royal Borough of Windsor and Maidenhead, UK](http://www.rbwm.gov.uk/)
-- BRONZE Sponsor: [Chartwell Consultants Ltd, Canada](http://www.chartwell-consultants.com/)
-- BRONZE Sponsor: [Trage Wegen vzw, Belgium](http://www.tragewegen.be/)
-- BRONZE Sponsor: [GFI - Gesellschaft fr Informations technologie mbH, Germany](http://www.gfi-gis.de/)
-- BRONZE Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
-- BRONZE Sponsor: [GIS-Support, Poland](http://www.gis-support.com/)
-- BRONZE Sponsor: [ADLARES GmbH, Germany](http://www.adlares.com/)
-- BRONZE Sponsor: [www.molitec.it, Italy](http://www.molitec.it/)
-- BRONZE Sponsor: [www.argusoft.de, Germany](http://www.argusoft.de)
-- BRONZE Sponsor: [Customer Analytics, USA](http://www.customeranalytics.com/)
-- BRONZE Sponsor: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
-- BRONZE Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
-- BRONZE Sponsor: [Urbsol, Australia](http://www.urbsol.com.au/)
-- BRONZE Sponsor: [MappingGIS, Spain](http://www.mappinggis.com/)
-- BRONZE Sponsor: [GIS3W, italy](http://www.gis3w.it/)
+- BRONZEN Sponsor: [GeoSynergy, Australië](http://www.geosynergy.com.au/)
+- BRONZEN Sponsor: [Gaia3D, Zuid-Korea](http://www.gaia3d.com/)
+- BRONZEN Sponsor: [Royal Borough of Windsor and Maidenhead, VK](http://www.rbwm.gov.uk/)
+- BRONZEN Sponsor: [Chartwell Consultants Ltd, Canada](http://www.chartwell-consultants.com/)
+- BRONZEN Sponsor: [Trage Wegen vzw, België](http://www.tragewegen.be/)
+- BRONZEN Sponsor: [GFI - Gesellschaft fr Informations technologie mbH, Duitsland](http://www.gfi-gis.de/)
+- BRONZEN sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Duitsland](http://www.gkg-kassel.de/)
+- BRONZEN Sponsor: [GIS-Support, Polen](http://www.gis-support.com/)
+- BRONZEN sponsor: [ADLARES GmbH, Duitsland](http://www.adlares.com/)
+- BRONZEN sponsor: [www.molitec.it, Italië](http://www.molitec.it/)
+- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de
+- BRONZEN sponsor: [Customer Analytics, USA](http://www.customeranalytics.com/)
+- BRONZEN sponsor: [Avioportolano Italia, Italië](http://www.avioportolano.it/)
+- BRONZEN Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Polen](http://www.wggios.agh.edu.pl/en)
+- BRONZEN sponsor: [Urbsol, Australië](http://www.urbsol.com.au/)
+- BRONZEN sponsor: [MappingGIS, Spanje](http://www.mappinggis.com/)
+- BRONZEN Sponsor: [GIS3W, italië](http://www.gis3w.it/)
 
-A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become and official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
+Een huidige lijst van doneren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/nl/site/about/sponsorship.html#list-of-donors). Als u een officiële sponsor voor het project zou willen worden, bekijk dan [onze pagina om te sponsoren](https://qgis.org/nl/site/about/sponsorship.html#sponsorship) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze halfjaarlijkse ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren.
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruik ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken ongeacht uw financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 
