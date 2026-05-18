@@ -242,7 +242,7 @@ This is a major improvement to QGIS\'s attribute table rendering support. You ca
 
 ![image9](images/entries/fcf703990b5cb743ffa5cc7778cb151022ff2d20.webp)
 ## デジタイズ
-### 特集：デジタル化の改善
+### 機能：デジタル化の改善
 In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but that not all features were supported in the digitising tools. With QGIS 2.12 we now have editing support for the **creation of curves / \'circular strings\`**. Note again that you need to be using a data provider (e.g. PostGIS, GML or WFS) that supports curves. These improvements to the digitising tools were also added in QGIS 2.12:
 - 2点と半径を持つ円形の文字列を追加するツール
 - 開始点,カーブポイント,終了点を指定して円形の文字列を追加するツール

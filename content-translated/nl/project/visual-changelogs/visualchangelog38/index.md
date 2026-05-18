@@ -42,7 +42,7 @@ While QGIS has offered support for Project Templates for many years, we enhanced
 
 ![image3](images/entries/8a99e041656f5d3d1fa504636aa36b0046efe532.webp)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
 ### Feature: Improved \"Zoom to Native Resolution\" behavior
 We\'ve improved the \"Zoom to Native\" action, so it now works correctly with tiled (e.g. WMTS/XYZ/ArcGIS MapServer) layers, by zooming to the closest native tile resolution. Additionally, we tweaked tile rendering so that pixel-perfect rendering occurs when the map is viewed at a native tile resolution. The result: super-crisp map renders when using tiled layer sources!
 
@@ -52,14 +52,14 @@ We ondersteunen nu, om het gebruiken van grote projecten van QGIS te verbeteren,
 
 Aanvullend, voor algoritmes van Processing, kunnen lagen direct uit het paneel Browser worden gesleept voor keuzes voor lagen om in te voeren.
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Symbologie
 ### Mogelijkheid: Tekenreeksen met meerdere tekens voor markeringen lettertypen
 While QGIS has long offered support for rendering points using font-based character markers, we\'ve enhanced this functionality in 3.8 and now offer the ability to render multi-character strings! And since we\'re always aiming to make the QGIS application interface as user-friendly and pleasant to use as possible, we also took the opportunity to tweak the UI for font markers and squash a number of frustrating GUI issues which previous versions suffered from.
 
 ![image5](images/entries/a0f55caed98366ae6eaa0e413d425259aa613b9b.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Factor  afstand label voor renderer Puntverplaatsing
 Een andere aanvulling op de nieuwe mogelijkheden voor symbologie in 3.8 is een nagelnieuw besturingselement voor een factor labelafstand voor markeringen van Puntverplaatsing. Deze optie maakt het mogelijk verplaatste markeringen te plaatsen op een afstand die is gebaseerd op de diagonale grootte van de feitelijke markering, in plaats op een vaste afstand.
 
@@ -75,7 +75,7 @@ Alle beschikbare opties voor de bestaande symboollaag Markering zijn ook beschik
 
 Deze mogelijkheid werd mogelijk gemaakt door anonymous
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Gemiddelde hoeken lijnen voor symbologie Markering en Symbolen-lijn
 In previous QGIS versions, when a marker line was rendered using interval or center point place placement, the symbol angles were determined by taking the exact line orientation at the position of the symbol. This often leads to undesirable rendering effects, where little \"jaggies\" or corners in lines which occur right at the position of the symbol cause the marker to be oriented at a very different angle to what the eye expects to see.
 
@@ -89,17 +89,17 @@ Deze optie is beschikbaar voor zowel het symbool Markering als de nieuwe typen s
 
 Deze mogelijkheid werd mogelijk gemaakt door anonymous
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Instellingen voor verschuiving van symboollagen Puntpatroonvulling
 To round out the new symbology options we\'ve added in 3.8, the Point Pattern Fill symbol type has a new setting allowing for offsetting the markers in the pattern by a preset (or data-defined!) amount. This opens the door for many styling possibilities which were not possible in earlier versions, and further increases our compatibility with converted ArcGIS symbol and layer styles.
 
 ![image9](images/entries/0cda10ddf2bac42e77b7cfc9ada813e4a26353a5.gif)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Live effect Vervagen straal is nu hi-dpi vriendelijk
 QGIS 3.8 brings a highly-desired fix to layer effects\' blurring radius (aka strength). In earlier QGIS versions, these blur settings did not take into account the DPI of the map render --- resulting in inaccurate effects rendering when exporting canvases/layouts at high resolutions. In 3.8, this was fixed and high-resolution map exports now match the results shown on the map canvas and are completely resolution-independent.
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Labelen
 ### Mogelijkheid: Geometrie-generatoren voor labelen
 This is a huge one! During the developer\'s meeting in A Coruña, Matthias Kuhn took the opportunity to implement a frequently-asked-for feature in our labeling engine: Geometry Generator support.
@@ -110,7 +110,7 @@ Just like Geometry Generators for symbols, we now allow label paths and position
 
 This feature was funded by [QGIS user group switzerland](https://www.qgis.ch)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Kaartgereedschappen voor labels gebruiken nu klik-klik-gedrag
 Like the other QGIS digitizing and map tools, the \"Move Label\" and \"Rotate Label\" tools now use the standard left-click-to-start edit, left-click-to-end behavior. Consistency is good!
 ## 3D-objecten
@@ -143,7 +143,7 @@ In QGIS 3.8, heeft het veld voor de weergave van de camera, waarmee 3D-scenes wo
 
 ![image13](images/entries/13a7660953586fea69df8afea7f75dd5d457fce8.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Afdruklay-outs
 ### Mogelijkheid: Evenredige verdeling van afstand tussen items
 We hebben nieuwe gereedschappen toegevoegd voor het automatisch opnieuw positioneren van items, zodat de horizontale of verticale afstand tussen de items gelijk is, om gemakkelijker uw perfecte afdruklay-out voor QGIS  te maken. Deze aanvulling rondt de bestaande opties voor het uitlijnen van items netjes af, en brengt meer van de kracht van specifieke toepassingen voor DTP direct in de ontwerper van afdruklay-out voor QGIS!
@@ -156,9 +156,9 @@ Even experienced users will likely appreciate the improved workflow, including a
 
 ![image14](images/entries/7a0dd68c9a38f6e4b4f0177ae53978710df89ad5.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Expressies
 ### Mogelijkheid: Ondersteuning voor sorteren op voor functies voor samenvoegen
 Omdat bepaalde expressies voor samenvoegen vereisen dat de resultaten in een bepaalde volgorde staan, maken we nu het beheren van de volgorde waarin objecten worden toegevoegd aan de samenvoeging bij het evalueren van de expressie, mogelijk.
@@ -169,7 +169,7 @@ E.g. `concatenate("Station",concatenator:=',', order_by:="Station")` will give a
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Simplified variant of \"attribute\" function
 This improvement brings a second variant for the existing \"attribute\" function. The \"attribute\" function in previous QGIS releases required both a target feature and attribute name to be specified. The new version is much simpler, automatically using the current feature and only requiring an attribute name.
 
@@ -187,15 +187,15 @@ It\'s just a faster shorthand version!
 
 ![image16](images/entries/13f09f754dea12a13b9d9aeb8606e86582e87e3f.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Punten ophalen van einde van geometerieën
 We added negative index support to the point_n(), angle_at_vertex(), and distance_to_vertex() functions, allowing for retrieval of vertices counting backward from the end of a geometry.
 
 ![image17](images/entries/6eac3dcc7d9053f16733306878fb0cebf993737a.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Nieuwe functies voor expressies
 As always, a new QGIS release brings a bunch of new functions for use within QGIS\' expression engine. These new functions add increased flexibility and power to the expression engine, and everywhere it\'s used throughout QGIS. This round, we\'ve added a set of new functions which make it super-easy to operate on file names and paths.
 
@@ -219,14 +219,14 @@ We added a new function `concatenate_unique()` to the expression engine (and Pro
 
 ![image19](images/entries/77c53d02f719feaf03e7e3d9cea8468645aa81e3.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Digitaliseren
 ### Mogelijkheid: Zwevend widget voor gevorderde invoer naast cursor
 We hebben een optie toegevoegd om de huidige waarden afstand/hoek/X/Y als een zwevend venster naast de muiscursor weer te geven om de bestaande gereedschappen voor Geavanceerd digitaliseren gemakkelijker te gebruiken te maken. 
 
 ![image20](images/entries/c0703ea4a49115bfb398d174aa727c7e0fc67240.gif)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
 This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
 ### Mogelijkheid: Geschakelde punten toevoegen op eindpunt
@@ -234,7 +234,7 @@ In QGIS 3.0, we added the ability to extend an existing line feature by clicking
 
 ![image21](images/entries/a58caabea738a7e34529b9aeb2bb1d4cd307cf50.gif)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
 This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
 ### Mogelijkheid: Verbeteringen aan bewerker voor punten
@@ -255,7 +255,7 @@ Dankzij de genereuze bijdrage van A.R.P.A Piemonte (een van de Italiaanse region
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Aangepaste achtergrondkleur voor formulierwidgets
 Dankzij de genereuze bijdrage van A.R.P.A Piemonte (een van de Italiaanse regionale agentschappen voor het milieu) hebben we u eindelijk bevrijd van de saaiheid van grijze achtergronden.
 
@@ -263,7 +263,7 @@ Dankzij de genereuze bijdrage van A.R.P.A Piemonte (een van de Italiaanse region
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Door objecten in de attributentabel bladeren in formulierweergave
 We\'ve added the possibility to browse through the attributes of features in a layer. This makes workflows for *asset management* a **lot** easier! You can:
 1. Een filter definiëren
@@ -285,9 +285,9 @@ QGIS loves GeoPackage, so it\'s likely no surprise that every new QGIS version b
 
 ![image26](images/entries/ebabefc4ccc4b71dcffda0508834b709fddec635.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Analyse Overlappen 
 Dit nieuwe algoritme voor Processing berekent het gebied en het bedekkingspercentage waarmee objecten op een invoerlaag worden overlapt door objecten uit een selectie van overleglagen. Nieuwe attributen worden toegevoegd aan de uitvoerlaag die het totale overlappende gebied aangeven en het percentage van de invoerobjecten die worden overlapt door elk van de geselecteerde overleglagen.
 
@@ -295,9 +295,9 @@ This is quite a common GIS task request, yet is full of traps for inexperienced 
 
 ![image27](images/entries/d265fa2b9bab9184d25244f0cd8aececb5136e66.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Afronden van waarden toestaan in Uitnemen/clippen op bereik
 We\'ve added a parameter to the Processing algorithm \'Extract Layer Extent\' to round the extent bounding box coordinates to a certain interval. While rounding, the bounding box will only ever be enlarged, to ensure it will always cover the input data set. (I.e. the x and y minimum coordinates are rounded down, and x and y maximum coordinates are rounded up).
 
@@ -312,9 +312,9 @@ In QGIS 3.8 we moved the existing \"double click column header\" to fill values 
 
 ![image29](images/entries/e20e687223b884d70737f09130f0e9792974eed6.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: XYZ-rastertegels maken
 We\'ve added a brand-new algorithm to generate raster \"XYZ\" tiles using the current QGIS project. Tile images can be saved as individual images in directory structure, or as a single file in the \"MBTiles\" format.
 
@@ -340,9 +340,9 @@ Modelvariabelen worden opgeslagen binnen een individueel model van Processing ze
 
 ![image32](images/entries/dfd820ccdc499878a5d7c818f03cd2d586311945.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Verbeterde Grafische modellen bouwen UI
 We\'ve added numerous usability improvements to the Processing Graphical Modeler, including
 - De aanvulling van nuttige Helptips bij het met de muis gaan over componenten van het model
@@ -350,15 +350,15 @@ We\'ve added numerous usability improvements to the Processing Graphical Modeler
 - Typen invoerparameters worden nu weergegeven in de titel van het dialoogvenster voor definitie van de parameters
 - Het gegevenstype voor numerieke parameters kan nu worden gespecificeerd, wat invoer van alleen gehele getallen mogelijk maakt voor modellen
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Algoritmes met bekende problemen vlaggen
 Standaard verbergen we nu van derde partijen algoritmes met bekende problemen in de Toolbox van Processing, wat u helpt om frustaties te vermijden (of misleidende resultaten) bij het uitvoeren van deze algoritmes. Een nieuwe instelling in het scherm voor opties van Processing maakt het mogelijk deze algoritmes weer te geven, maar zij zullen in de Toolbox worden weergegeven met een pictogram Waarschuwing. Gebruik is op eigen risico!
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Raster Booleaanse logische OF/EN algoritmes
 In version 3.8 we\'ve added new algorithms which calculate the boolean OR or AND for a set of input rasters. For AND, if all of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, otherwise it will be set to 0. For OR, if ANY of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, else 0.
 
@@ -370,13 +370,13 @@ Deze nieuwe algoritmes zorgen voor veel eenvoudiger berekeningen in rasters voor
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Nieuwe typen invoerparameters voor afdruklay-outs en items van afdruklay-out
 By adding new parameter types for Print Layouts and Print Layout items, we\'ve opened up QGIS 3.8 to a whole new world of Processing algorithms which operate on print layouts. These new parameter types allow for creation of Processing algorithms and graphical models which prompt users to select a print layout and/or an item on the layout when run.
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Nieuw type parameter voor schalen van kaarten
 We\'ve added a new parameter type specifically for map scales, QgsProcessingParameterScale. Scale values are evaluated using self.parameterAsDouble, which return the map scale denominator (matching the standard in other parts of the QGIS API).
 
@@ -384,13 +384,13 @@ Parameters voor de schaal worden aan de gebruikers weergegeven in het standaard 
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Improved \"point\" parameter handling
 We improved the workflow for algorithms with a \"point\" input parameter. When picking the point coordinate from a map you can now take advantage of QGIS snapping tools, allowing you to exactly match the point parameter to a feature\'s boundary.
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: New \"Print Layout Map Extent to Layer\" algorithm
 Voordeel trekkend uit de nieuwe faciliteiten voor de toegang tot afdruklay-outs in Processing, hebben we een nieuw algoritme toegevoegd dat een polygoonlaag maakt die het bereik van een kaartitem van afdruklay-out omvat. De laag voor de uitvoer bevat ook handige attributen die de grootte van de kaart (in eenheden voor de lay-out), schaal en rotatie specificeren.
 
@@ -400,7 +400,7 @@ If you\'ve ever wanted to create an advanced overview indicator, and the inbuilt
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Velden X/Y toevoegen aan laag
 Dit nieuwe algoritme is een handige sneltoets voor het toevoegen van velden X en Y (of latitude/longitude) aan een puntenlaag. U kunt zelfs de waarden X/Y berekenen met een verschillend coördinaten referentiesysteem van de laag (bijv. velden latitude/longitude maken voor een laag in een geprojecteerd CRS).
 
@@ -408,7 +408,7 @@ Dit nieuwe algoritme is een handige sneltoets voor het toevoegen van velden X en
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: \"Join attributes by nearest\" algorithm
 U kunt nu koppelingen K-nearest neighbour uitvoeren vanuit de Toolbox van Processing!
 
@@ -418,9 +418,9 @@ Standaard wordt alleen het enkele dichtstbijzijnde object gekoppeld, maar option
 
 ![image35](images/entries/f78e2f7a712f8a5cc1d5e9e20b4bb378598c1180.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Algoritme Grass r.geomorphon 
 The upstream GRASS team has been hard at work creating a new GRASS module for terrain analysis --- \"r.geomorphon\". In 3.8 we expose their efforts via a new Processing tool, which calculates geomorphons (terrain forms) and associated geometry using a machine learning approach.
 
@@ -440,16 +440,16 @@ We\'ve added overlay layer fields prefix parameter for the following algorithms:
 
 Dit kan handig zijn om te voorkomen dat niet uniek benoemde velden botsen bij het samenvoegen van lagen.
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ## Browser
 ### Mogelijkheid: Directe toegang tot werkbladen van XLSX/ODS-bestanden
 QGIS 3.8 brengt zelfs nog meer kracht naar het paneel Browser en geeft nu alle werkbladen weer uit werkbladbestanden (bijv. Microsoft Excel en LibreOffice Calc-bestanden) in de boom van bestanden in de Browser.
 
 ![image38](images/entries/f311137d05c73b9ba673d6b68669b7117589dacd.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Algemeen
 ### Mogelijkheid: Projecten van QGIS binnen bestanden van GeoPackage
 Did we already say that QGIS loves GeoPackage? Need any more proof of this? Well, in QGIS 3.8, we\'ve added to ability to store QGIS projects directly inside GeoPackage files! Now you can create a totally self-contained GeoPackage which embeds a QGIS Project AND all the data used by the project. (Let\'s see Shapefiles match that one!)
@@ -458,7 +458,7 @@ Did we already say that QGIS loves GeoPackage? Need any more proof of this? Well
 
 This feature was funded by [QCooperative](https://www.qcooperative.net)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Veel verbeterde afhandeling voor transformeren van coördinaten
 Dankzij het onderliggende werk van de onvermoeibare teams van PROJ en GDAL ondersteunt QGIS nu heel veel verbeteringen in mogelijkheden voor geodetie en transformatie! Hoogtepunten omvatten:
 - The PROJ CRS database is now used to populate QGIS\' CRS selection lists, removing the custom database we used in previous releases. This means that ALL responsibility for CRS definitions and updating these sit were they belong, upstream in the PROJ library \-- and consequently you can expect to see QGIS CRS definitions being a closer match to the official definitions, and newer CRS definitions will be added much faster than in previous releases.. This change also means we\'ll be an exact match for projection handling as all other open-source geospatial tools which have completed the port to the latest PROJ version, such as GDAL 3.0.
@@ -473,7 +473,7 @@ A lot of this is only possible thanks to improvements in the underlying PROJ and
 
 This feature was funded by [ICSM](https://www.icsm.gov.au/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Gegevensproviders
 ### Mogelijkheid: provider Postgres: ondersteuning toegevoegd voor gemaakte kolommen voor identiteit
 Deze mogelijkheid werd ontwikkeld door jef-n
@@ -509,13 +509,13 @@ With QGIS 3.8, we\'ve simplified this, and now allow the filter format:
 
 Deze mogelijkheid werd mogelijk gemaakt VEOLIA
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Mogelijkheid: Ondersteuning voor bogen bij exporteren naar DXF
 You can now export curved geometry layers to DXF format without segmentizing the features --- no more loss of curves!
 
 ![image41](images/entries/d0543abc36459754e4e3630e3703f0f1169ba7b3.webp)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
 Deze mogelijkheid werd ontwikkeld door Jürgen Fischer in samenwerking met Matthias Kuhn
 ## QGIS Server
@@ -549,13 +549,13 @@ This feature was developed by [Alessandro Pasotti](http://www.itopen.it/)
 ### Mogelijkheid: Ondersteuning voor SQL-syntaxis REGEXP voor provider SpatiaLite en verbindingen voor Python
 We\'ve enabled REGEX to be used with the spatialite provider. (This comes in handy when setting filters!). We\'ve also added support for this syntax via any python connections made through Qgis.utils\'s \"spatialite_connection\" API - allowing you to use REGEXP in your SQL queries from within DB Manager.
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Zoeken naar Nearest Neighbour in QgsSpatialIndex
 We hebben API toegevoegd om nauwkeurige zoekacties naar dichtstbijzijnde buren mogelijk te maken, gebaseerd op zoekacties QgsGeometry to QgsGeometry via QgsSpatialIndex. In eerdere versies van QGIS waren alleen zoekacties point to geometry nearest neighbour mogelijk. Maar met deze wijziging kunt u veilig en nauwkeurig QgsSpatialIndex gebruiken om de dichtstbijzijnde buren tussen elk type geometrie te bepalen.
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
@@ -596,7 +596,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it/)
 ### Mogelijkheid: Reparaties van problemen door Alexander Bruy
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |

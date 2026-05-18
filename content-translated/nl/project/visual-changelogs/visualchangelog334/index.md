@@ -419,7 +419,7 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |

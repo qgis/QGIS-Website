@@ -18,9 +18,9 @@ The greatest QGIS release ever! QGIS 3.2 brings a massive list of new changes - 
 
 **Dankwoord**
 
-We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
+We willen onze dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en alle andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen). Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn bij het opwaarderen van QGIS, kijk dan ook eens op [qgis.org](https://qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sustaining members is provided below - our very great thank you to all of our supporters!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst met donoren]({{< ref "/funding/donate.md" >}}). Als u een officieel dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende lidmaatschappen]({{< ref "/funding/membership.md" >}}) voor details. Ondersteuning van QGIS helpt ons om fondsen te verkrijgen voor onze halfjaarlijkse ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige dragende leden wordt hieronder weergegeven - een welgemeend bedankt voor al onze ondersteuners!
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruik ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken ongeacht uw financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 
@@ -33,7 +33,7 @@ QGZ werd als optionele indeling toegevoegd in 3.0. Door van deze indeling de sta
 
 ![image29](images/entries/15e0d291ccc9722a61ed5d2611d3ac4c0eef3685.png.400x300_q85_crop.webp)
 
-This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pblottiere)
+Deze mogelijkheid werd ontwikkeld door [OSLANDIA - Paul Blottiere](https://github.com/pblottiere)
 ### Mogelijkheid: Filteren op veldwaarden in widget Querybouwer
 Bij het maken van een nieuw filter met een expressie in Querybouwer kunt u nu de waarden van de velden filteren in een voorbeeldpaneel.
 
@@ -76,7 +76,7 @@ Een nieuwe kaartweergave kan worden geconfigureerd om automatisch in te zoomen o
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
-This feature was developed by [Nathan Woodrow](https://nathanw.net/)
+Deze mogelijkheid werd ontwikkeld door [Nathan Woodrow](https://nathanw.net/)
 ### Mogelijkheid: Keuze voor methode van vereenvoudigen voor gereedschap Kaart vereenvoudigen
 This allows different techniques to be used for simplification in the interactive simplify map tool, including the more cartographically pleasing \"Visvalingam\" simplification algorithm.
 
@@ -128,7 +128,7 @@ De expressiebouwer maakt het nu eenvoudiger om expressies in QGIS te bouwen!
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
-This feature was developed by [Nathan Woodrow](https://nathanw.net/)
+Deze mogelijkheid werd ontwikkeld door [Nathan Woodrow](https://nathanw.net/)
 ## Gebruikersinterface
 ### Mogelijkheid: Lagenpaneel: indicaties voor gefilterde kaartlagen
 The main window\'s layer tree view (ToC) gets support for indicators that are shown when a vector layer has a filter applied. This makes it easier for users to understand that they are looking at a subset of all data. Clicking the indicator\'s icon brings up query builder.
@@ -157,7 +157,7 @@ In 3.2, the data source manager\'s vector and raster panels have been updated to
 
 ![image11](images/entries/06e06201fb4db385ae14d6932353ce0b0b035e83.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Snel veld voor veldberekening in werkbalk voor Lokaliseren
 QGIS 3.2 allows evaluation of simple expressions (well, actually ANY QGIS expression\... so you could use aggregates and the like if you really wanted!) by entering \"= \" followed by an expression into the locator bar. If a valid expression is entered, users are given an option to copy the result to the clipboard.
 
@@ -173,7 +173,7 @@ sneltoets Ctrl+{no}
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
-This feature was developed by [Nathan Woodrow](https://nathanw.net/)
+Deze mogelijkheid werd ontwikkeld door [Nathan Woodrow](https://nathanw.net/)
 ### Mogelijkheid: Zoeken naar Favoriete plaatsen in Lokaliseren
 Maakt het zoeken naar Favoriete plaatsen mogelijk. Dubbelklikken op een zoekresultaat zal zoomen naar de Favoriete plaats.
 
@@ -207,7 +207,7 @@ It is now possible to copy the statistics panel\'s output table into the clipboa
 
 ![image14](images/entries/0d1f4be90052251c05a1fc351dd099aaa92c65f7.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Zoeken naar pagina's Instellingen, Opties en projecteigenschappen vanuit Lokaliseren
 Short video: <https://www.youtube.com/watch?v=duB2YekUmV0>
 
@@ -232,24 +232,24 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 - Ondersteuning voor expressie voor de tekst van het auteursrecht.
 - Verbeterde opties voor opmaken van de tekst, inclusief schaduwen, omtrekken, achtergronden, etc.
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Lettertype en soort lettertype kan nu worden aangepast voor Schaalbalk in het hoofdvenster
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Aangepast SVG-pad en grootte voor decoratie Noordpijl
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Gegevensbeheer
 ### Mogelijkheid: Een gematerialiseerde weergave vernieuwen
 Vanuit de browser kunt u, met een rechtsklik op een gematerialiseerde weergave, die nu vernieuwen.
 
 ![image15](images/entries/125ee6837700d992fb8b6452ab1b346ba96c5cce.png.400x300_q85_crop.webp)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+Deze mogelijkheid werd ontwikkeld door [Etienne Trimaille](https://github.com/Gustry)
 ### Mogelijkheid: Ondersteuning voor Z en M in offline bewerken
 Offline bewerken ondersteunt nu ook lagen met coördinaten Z en M.
 
 This feature was funded by [Oester Messtechnik](https://messtechnik.ch/)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ### Mogelijkheid: Metadata voor projecten van QGIS
 Volgend op het werk aan de metadata dat begon in QGIS 3.0, ondersteunt 3.2 nu metadata voor projecten van QGIS. Dit maakt het mogelijk gedetailleerde metadata in te stellen in projecteigenschappen, inclusief abstracten, sleutelwoorden, contact details, links, etc.
 
@@ -339,13 +339,13 @@ Read this [blog post for more information](http://www.opengis.ch/2018/05/28/how-
 
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ### Mogelijkheid: Zonehistogram
 Dit nieuwe algoritme voegt velden toe die tellingen weergeven van elke unieke waarde uit een rasterlaag, opgenomen in zones die zijn gedefinieerd als polygonen.
 
 ![image23](images/entries/577c3ed7ed7875d51e968a135bfd532f97d692c8.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Algoritmes Union, Difference and Intersection geporteerd naar C++
 QGIS eigen algoritmes voor geoprocessing  zijn geporteerd van Python naar C++. In aanvulling daarop, om de uitvoering te verbeteren, zijn een aantal problemen met deze update opgelost.
 
@@ -391,7 +391,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 ### Mogelijkheid: Optie om punten op alle delen van polygonen te maken
 The \"Centroid\" and \"Point on surface\" algorithms have a new option to create points for every individual part of input geometries.
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Algoritme Rotate Features
 This new algorithm allows rotation of features by a set angle. The rotation can occur around a preset point or each individual feature\'s centroid.
 
@@ -475,7 +475,7 @@ The union algorithm can be now run with just a single input layer in order to re
 
 This feature was funded by [InaSAFE DFAT](https://www.dfat.gov.au/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Verplichte lagen in project
 Voor verplichte lagen geldt dat zij niet uit het project kunnen worden verwijderd. Dit voegt extra beveiliging toe om gebruikers van het project te beschermen tegen het verwijderen van lagen waarvan zij denken dat die niet nodig zijn (bijv. gebruikt bij samenvoegingen, relaties, expressies).
@@ -576,6 +576,6 @@ De afbeelding bevat de vrij verkrijgbare gegevensset Prague 3D buildings.
 
 ![image34](images/entries/875e423e7a857a509812da6f46d468486fb7fd99.png.400x300_q85_crop.webp)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 
 {{<content-end >}}

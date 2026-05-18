@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: '2014-10-31'
+releaseDate: 31-10-2014
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 2.6
@@ -14,25 +14,25 @@ Datum uitgave 31-10-2014
 
 Log met wijzigingen voor de volgende uitgave van QGIS 2.6.0. We hebben vele nieuwe mogelijkheden, aanpassingen en verbeteringen toegevoegd om de meest populaire gratis desktop GIS nog nuttiger en voller met mogelijkheden te maken.
 
-Whenever new features are added to software they introduce the possibility of new bugs - if you encounter any problems with this release, please file a ticket [on the QGIS Bug Tracker](http://hub.qgis.org).
+Wanneer aan software nieuwe mogelijkheden worden toegevoegd, introduceren die de mogelijkheid tot het ontstaan van nieuwe problemen - als u in deze uitgave nieuwe problemen tegenkomt, vul dan een ticket in [op de QGIS Bug Tracker](http://hub.qgis.org).
 
 We willen de ontwikkelaars, schrijvers van documentatie, testers en alle andere vele mensen bedanken die vrijwillig hun tijd en inspanningen bijdragen (of mensen ondersteunen om dat te doen).
 
 Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn in het opwaarderen van QGIS, kijk dan ook eens op [qgis.org](https://qgis.org) en help een handje!
 
 Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare financiële ondersteuning die zij aan dit project verlenen:
-- **GOLD Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
+- **GOUDEN Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
 - ZILVEREN sponsor: [Sourcepole AG, Zwitserland](http://www.sourcepole.com/)
 - ZILVEREN sponsor: [Staat Vorarlberg, Oostenrijk](http://www.vorarlberg.at/)
 - BRONZEN sponsor: [Lutra Consulting, VK](http://www.lutraconsulting.co.uk/)
 - BRONZEN sponsor: [www.molitec.it, Italië](http://www.molitec.it/)
 - BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de
 - BRONZEN sponsor: [www.openrunner.com, Frankrijk](http://www.openrunner.com)
-- BRONZE Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.eschenlaub.de/)
+- BRONZEN Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Duitsland](http://www.eschenlaub.de/)
 
-A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become an official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
+Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/nl/site/about/sponsorship.html#list-of-donors). Als u een officiële sponsor voor het project zou willen worden, bekijk dan [onze pagina om te sponsoren](https://qgis.org/nl/site/about/sponsorship.html#sponsorship) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze halfjaarlijkse ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren.
 
-If you enjoy using QGIS, please consider making a donation to support the project - either [financial](https://qgis.org/en/site/getinvolved/donations.html) or of [your time and skills](https://qgis.org/en/site/getinvolved/index.html)! Lastly we would like to also take a moment to encourage you to fund a [special campaign](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) by one of our QGIS developers to get a working test suite for QGIS so that we can improve out quality assurance process and deliver you the best possible releases.
+Als u geniet van het gebruiken van QGIS, overweeg dan eens om een donatie te geven om het project te ondersteunen - ofwel [financieel](https://qgis.org/nl/site/getinvolved/donations.html) of van [uw tijd en vaardigheden](https://qgis.org/nl/site/getinvolved/index.html)! Tenslotte willen we even stilstaan om u aan te moedigen bij te dragen aan een [speciale campagne](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) door een van onze ontwikkelaars van QGIS om een werkende testsuite voor QGIS te krijgen. Zodat we onze processen voor het verbeteren van de kwaliteit kunnen verbeteren en u de best mogelijke uitgaven kunnen geven.
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruik ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken ongeacht uw financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 
@@ -63,7 +63,7 @@ U kunt nu slechts een subset gebruiken van gerelateerde velden bij het maken van
 
 ![](images/entries/14023cf2ee768960d9c4a43da6e2a1624d10b3c3.webp)
 ### Mogelijkheid: Expressieveld (virtuele velden)
-Sometimes you want to have an attribute that is calculated and that is always \'fresh\' - reflecting the current state of the feature properties. Now you can add virtual fields to your table which are based on an expression.
+Soms wilt u een attribuut dat wordt berekend en dat altijd \'vers\' is - de huidige status van de objecteigenschappen reflecteert. Nu kunt u virtuele velden aan uw tabel toevoegen die zijn gebaseerd op een expressie.
 
 ![](images/entries/5fe53ad54b8d0cf8b7a22b90e733a421bb929506.webp)
 ### Mogelijkheid: Acties kunnen nu een geassocieerd pictogram hebben
@@ -71,11 +71,11 @@ Bij het maken van een aangepaste actie voor een vectorlaag kunt u nu ook een pic
 
 ![](images/entries/e7bd5b306e3a72cc111a81f86a053b42679aa2f8.webp)
 ### Mogelijkheid: Aanvullende  typen en opties voor expressies
-- Allow using `+` for string concatenation.
-- New keyword: `attribute( feature, attribute_name )` - gets the specified attribute from a feature.
-- New keyword: `$currentfeature` - returns the current feature.
-- New keyword: `$atlasfeature` - returns the atlas feature.
-- New keyword: `getFeature` - gets a matching feature from a layer.
+- Gebruiken van `+` voor samenvoegen van tekenreeksen toestaan.
+- Nieuw sleutelwoord: `attribute( feature, attribute_name )` - verkrijgt het gespecificeerde attribuut uit een object.
+- Nieuw sleutelwoord: `$currentfeature` - geeft het huidige object terug.
+- Nieuw sleutelwoord: `$atlasfeature` - geeft het atlas-object terug.
+- Nieuw sleutelwoord: `getFeature` - verkrijgt een overeenkomend object uit een laag.
 
 ![](images/entries/e2e079bec87be65ccc97055251fc2544be91aaab.webp)
 ### Mogelijkheid: Klassen binnen renderers Gradueel en Categorieën kunnen worden geschakeld
@@ -96,7 +96,7 @@ De tweede fase van de vernieuwing van de legenda / inhoudsopgave is voltooid. Di
 - Weergave als boom en selectie van attributen voor toewijzen aan laag in het dialoogvenster
 - Arcering en vulkleur kunnen worden ingesteld voor polygonen.
 - Door het gebruik van MTEXT in plaats van TEXT bij het exporteren kunnen nu ook lettertype, -vorm en -dikte worden opgegeven.
-- support for RGB colors when there\'s no exact color match
+- ondersteuning voor RGB indien geen exacte kleurovereenkomst gevonden wordt
 - De ondersteunde versie van DXF indeling is verhoogd naar AutoCAD 2000 DXF (R15) in plaats van R12.
 - R18 testmethoden verwijderen
 
@@ -154,7 +154,7 @@ De Printvormgeving (gebruikt om af te drukken lay-outs voor kaarten voor te bere
 - Ingedrukt houden van Shift tijdens tekenen van andere nieuwe items beperkt ze tot vierkanten, ingedrukt houden van Alt zorgt er voor dat het item vanuit het midden wordt getekend
 - Klikken met rechts zet niet langer items vast/maakt ze los, dit wordt nu afgehandeld door het nieuwe paneel Items. Vastgezette items kunnen niet langer worden geselecteerd vanuit het venster van printvormgeving, wat interactie met items eronder mogelijk maakt.
 - Ingedrukt houden van Alt bij het drukken op pijltjestoetsen resulteert in een verplaatsing van het item met 1px
-- Removed the destructive \'Load from template\' menu item, replace with a new non-destructive \'Add items from template\' action
+- Het destructieve menu-item\'Laden uit sjabloon\' verwijderd, vervangen door een nieuwe niet destructieve actie \'Items uit sjabloon toevoegen\'
 
 ![](images/entries/a7267ed637121bc9be70c5fa0afd2a63f9790bc7.webp)
 ### Mogelijkheid: Verbeterd snappen voor item
@@ -162,7 +162,7 @@ Drempels voor snappen worden nu ingesteld in pixels, wat het mogelijk maakt nauw
 
 ![](images/entries/8e43479380c28942345f3d9500dd956bd13f43e8.webp)
 ### Mogelijkheid: Meerdere overzichtskaarten voor een kaartitem
-Sometimes it is useful to be able to show more than one overview frame for a map frame. For example if you want to show where your map is in local, regional and global context, using multiple overview maps can help you to achieve this. As of QGIS 2.6 you can now achieve this by assigning as many maps as you like to the \'overview\' role in your composition.
+Soms is het nuttig om in staat te zijn meer dan één frame voor overzichten te kunnen weergeven voor een kaartframe. Als u bijvoorbeeld wilt weergeven waar uw kaart zich bevindt in lokale, regionale en globale context, kan het gebruiken van meerdere overzichtskaarten helpen dit te bereiken. Vanaf QGIS 2.6 kunt u dit nu bereiken door net zoveel kaarten toe te wijzen als u wilt aan de rol \'overzicht\' in uw lay-out.
 
 ![](images/entries/88b55cc5f5e7cfb62486fe3b4867b7133ae66953.webp)
 ### Mogelijkheid: Verbeteringen voor HTML-items
@@ -195,7 +195,7 @@ Grafische modellen bouwen is opnieuw geschreven, en verschaft nu extra functiona
 ![](images/entries/72bb8beaf97133424d1e68da67ae6fe79ea6faf6.webp)
 ## Programmeerbaarheid
 ### Mogelijkheid: API-wijzigingen voor widgets van QGIS
-In order to normalise the naming of QGIS widgets, some minor API changes have been made. Almost all edit widgets were renamed by adding \"Wrapper\" at the end of their names. In particular this concerns:
+Enkele kleine wijzigingen in de API zijn doorgevoerd om de naamgeving van widgets voor QGIS te normaliseren. Bijna alle Wijzig-hulpmiddelen werden hernoemd door \"Wrapper\" toe te voegen aan het einde van hun namen. In het bijzonder betreft dit:
 - QgsCheckboxWidget -\> QgsCheckboxWidgetWrapper
 - QgsClassificationWidget -\> QgsClassificationWidgetWrapper
 - QgsColorWidget -\> QgsColorWidgetWrapper
@@ -263,7 +263,7 @@ We hebben het gereedschap Eén object selecteren samengevoegd met met het gereed
 
 ![](images/entries/f8a68fcdfcaa59e6162185acb5c92edb9145c881.webp)
 ### Mogelijkheid: Gedrag Laag aan kaartvenster toevoegen
-In many of QGIS\' dialogs that generate a new layer, the \'Add layer to map canvas\' checkbox is now checked by default so that the new layer automatically gets added to the map.
+In vele dialoogvensters van QGIS die een nieuwe laag genereren, is het keuzevak \'Laag aan kaartvenster toevoegen\' nu standaard geselecteerd, zodat de nieuwe laag automatisch wordt toegevoegd aan het kaartvenster.
 
 ![](images/entries/f36f5912d2422a439d67b1a743fe81588e709dfb.webp)
 ### Mogelijkheid: Grootte pictogram 48 en 64 toegevoegd
@@ -271,7 +271,7 @@ Voor hen die QGIS gebruiken op aanraak-apparaten (of als u gewoon grote hoekige 
 
 ![](images/entries/3be3f51da2f54a8395f054f757f9fae1948a6103.webp)
 ### Mogelijkheid: Nieuwe knoppen kleuren
-This is probably one of the most useful new features in QGIS 2.6 -especially if you are involved a lot in cartography work. The colour button used everywhere in QGIS has been enhanced, with drop down menus, colour swatches, default colours, etc. Click on the drop down item to the right of the colour button to see the quick options. Click on the button to the left of the colour widget to see a standard colour chooser dialog.
+Dit is waarschijnlijk een van de nuttigste nieuwe mogelijkheden in QGIS 2.6 - speciaal als u veel bent betrokken bij cartografisch werk. De overal in QGIS gebruikte knop Kleur is verbeterd, met keuzemenu's, kleurklokken, standaardkleuren, etc. Klik op het item voor het keuzemenu rechts van de knop Kleur om de snelle opties te kunnen zien. Klik op de knop links van de widget Kleur om een standaard dialoogvenster Kleur kiezen te zien.
 
 ![](images/entries/54c211513bc86d00a5bce01a17476481937e0fbe.webp)
 ### Mogelijkheid: Contextmenu voor Gereedschap objecten identificeren

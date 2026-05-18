@@ -18,7 +18,7 @@ The first long-term release (LTR) of QGIS 3. QGIS 3.4 just released. After five 
 
 **Dankwoord**
 
-We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
+We willen onze dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en alle andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen). Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn bij het opwaarderen van QGIS, kijk dan ook eens op [qgis.org](https://qgis.org) en help een handje!
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate/donors.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current supporters is provided below - our very great thank you to all of our supporters!
 
@@ -45,9 +45,9 @@ Aanvullend kunnen ingebedde bestanden uit projecten en symbolen worden uitgenome
 
 This feature was funded by [SMEC/SJ](http://smec.com)
 
-This feature was developed by [Nyall Dawson](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Mogelijkheid: Op OpenCL gebaseerde acceleratie
-This feature was funded by [QGIS.org](https://qgis.org)
+Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
 
 This feature was developed by [Alessandro Pasotti](https://qgis.org)
 ## Expressies
@@ -219,13 +219,13 @@ Vectorlagen hebben een optie voor configuratie van de precisie. De precisie defi
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Automatisch verwijderen van gedupliceerde knopen
 Bij het toevoegen of bewerken van geometrieën op een vectorlaag kan QGIS automatisch gedupliceerde knopen uit geometrieën verwijderen. Deze optie is te configureren op de tab Digitaliseren van vectorlagen.
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Controleren op geldigheid van geometrie
 Elke nieuwe of bewerkte geometrie kan worden gecontroleerd op geldigheid als deze optie is geactiveerd. Dit maakt het mogelijk tranparant te communiceren naar een gebruiker als er geometrieën met fouten worden geproduceerd tijdens de huidjge sessie van bewerken.
 
@@ -233,7 +233,7 @@ Elke nieuwe of bewerkte geometrie kan worden gecontroleerd op geldigheid als dez
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Controles van topologie tijdens bewerken
 Controles van topologie kunnen worden geactiveerd op een laag. Voor nieuw toegevoegde en bewerkte geometrieën kunnen controles van toplogie worden uitgevoerd. De controles zullen worden uitgevoerd als de laag wordt opgeslagen of bij het klikken op de knop voor het controleren van de topologie in het paneel voor Geldigheid van de geometrie.
 
@@ -248,7 +248,7 @@ This builds on top of the functionality of the geometry checker plugin which was
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Gegevensbeheer
 ### Mogelijkheid: Vertalen van projecten van QGIS
 Like QGIS and the plugins, the projects are translated with the Qt translation process. Means, it makes the translation according to a Qt Compiled Translation Source File (`.qm` file). When the user opens a project, QGIS checks for a `.qm` file laying in the same folder like the `.qgs` file, having the same name like the `.qgs` file and having the language-code as postfix of the users language (the language configured in the QGIS settings). To create the translation, in the project settings, there is an option to generate the `.ts` file, that can edited by programs like Qt Linguist or Transifex.
@@ -348,7 +348,7 @@ Dit algoritme converteert een rasterlaag naar een vectorlaag, met een polygoonob
 
 This feature was funded by [SMEC/SJ](http://smec.com)
 
-This feature was developed by [Nyall Dawson](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Mogelijkheid: Algoritme K Means clustering
 QGIS 3.4 adds a native \"k-means clustering\" algorithm. Based on a port of PostGIS\' ST_ClusterKMeans function, this algorithm adds a new cluster ID field to a set of input features which identifies the feature\'s cluster based on a k-means clustering approach. If non-point geometries are used as input, the clustering is based off the centroid of the input geometries.
 
@@ -397,7 +397,7 @@ Wanneer een algoritme een parameter afstand heeft in meters/feet/etc (d.i. niet-
 
 This feature was funded by [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Feature: \"Drape features to z/m\" algorithms
 Deze twee nieuwe algoritmes kunnen Z- of M-waarden van geometriepunten instellen naar monsterwaarden die zijn genomen uit een rasterband. Waarden kunnen optioneel worden geschaald met behulp van een (datagedefinieerde) schaalwaarde.
 
@@ -471,7 +471,7 @@ Dit algoritme is handig bij bewerkingen waarbij vectoren over elkaar worden gele
 
 This feature was funded by [InaSAFE DFAT](https://www.dfat.gov.au/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Gegevensproviders
 ### Mogelijkheid: Plug-in OAuth2 authenticatiemethode
 - Ondersteunt authenticatiecode, impliciete en stromen met toestemming van broneigenaar
@@ -524,7 +524,7 @@ The reading of PostgreSQL JSON types is supported. JSON Data can be displayed in
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Ondersteuning voor ESRI tokenauthenticatie
 Support has been added to QGIS\' Authentication system for ESRI\'s temporary token based authentication. This allows for connection to ArcGIS Feature and Map Servers via an allocated temporary token.
 
@@ -703,7 +703,7 @@ Met de functionaliteit Offline bewerken is het  mogelijk om te selecteren of de 
 
 This feature was funded by [Oester Messtechnik](https://messtechnik.ch/)
 
-This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch)
 ## Programmeerbaarheid
 ### Mogelijkheid: QgsSpatialIndexKDBush
 A very fast static spatial index for 2D points based on a flat KD-tree, using <https://github.com/mourner/kdbush.hpp>
@@ -751,7 +751,7 @@ Camera verplaatsen met behoud van de positie met Ctrl + pijltjestoetsen / muis
 
 This feature was funded by [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Animatie
 U kunt een animatie maken, gebaseerd op een set sleutelframes - cameraposities op bepaalde tijden. QGIS 3D interpoleert dan de cameraposities/-rotaties tussen de sleutelframes.
 
@@ -773,7 +773,7 @@ The disadvantage is that the lines cannot be wide (supported in Qt3D only since 
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Kaartgereedschap Identificatie voor 3D-weergaven
 Een nieuw gereedschap Identificatie werd geïntroduceerd voor de 3D-kaart. Met behulp van dit gereedschap kunt u objecten inspecteren vanuit de 3D-scene.
 
@@ -787,6 +787,6 @@ Enkele klassen van QGIS 3D zijn beschikbaar gemaakt voor ontwikkelaars in Python
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 
 {{<content-end >}}

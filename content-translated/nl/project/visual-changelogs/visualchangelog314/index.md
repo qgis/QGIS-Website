@@ -52,7 +52,7 @@ Indien ingesteld voor deze modus, zal de laag automatisch opnieuw worden geteken
 
 Deze configuratie is nuttig als de laag instellingen voor Symbologie heeft die variëren gebaseerd op de tijdsperiode. Wanneer het bijvoorbeeld tijdsafhankelijke expressies voor de renderer Regel-gebaseerd gebruikt of data-bepaalde expressies voor Symbologie.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning voor basisafhandeling van Tijdbeheer voor vectorlagen toegevoegd
 Dit laat enkele basismogelijkheden voor het eigen Tijdbeheer voor vectorlagen zien:
 - Statisch tijdbereik voor de laag (om overeen te komen met mogelijkheden voor rasterlagen), dit stelt één enkele statische tijdsperiode in die van toepassing is voor de gehele laag. Alle objecten van de laag zullen worden weergegeven als de tijd van het kaartvenster de tijdsperiode van de laag overlapt
@@ -67,7 +67,7 @@ Enkele bekend beperkingen/inefficiënties:
 
 Dis is, momenteel, de uitvoering veel slechter met grote lagen, vergeleken met Time Manager (en de weergegeven set met objecten is kleiner, bijv. geen afhandeling voor interpolatie), maar het voordeel is dat we het eigen framewerk voor Tijdbeheer kunnen gebruiken en geanimeerde vectorlagen kunnen maken, naast lagen met mazen en rasterlagen!
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning voor API van Tijdbeheer voor raster in PostgreSQL
 Integratie van mogelijkheden voor Tijdbeheer voor rasters in PostgreSQL toegevoegd.
 
@@ -85,7 +85,7 @@ You will be able to set the project temporal range either by using manual input 
 
 Deze implementatie stelt het podium in voor het toevoegen van geanimeerde objecten voor lagen van Tijdbeheer in QGIS.
 
-Here\'s an example of setting the project temporal range. ![image5](images/entries/74980472-93f2ed00-5441-11ea-8765-f35d1f69b144.gif)
+Hier is een voorbeeld voor het instellen van een tijdsperiode in een project. ![image5](images/entries/74980472-93f2ed00-5441-11ea-8765-f35d1f69b144.gif)
 
 Prior discussions about QGIS temporal support can be found [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/161) and [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/128).
 
@@ -97,7 +97,7 @@ Deze mogelijkheid maakt het mogelijk om lagen WMS voor Tijdbeheer (WMS-T) binnen
 
 Deze implementatie laat de gebruiker de vereiste periode DateTime op de laag te specificeren vanaf de tab Bron in het dialoogvenster Laageigenschappen.
 
-Below is an example of the workflow. ![image6](images/entries/74638436-ee0f5c00-517c-11ea-938e-cec23c61ba29.gif)
+Hieronder staat een voorbeeld van de werkstroom. ![image6](images/entries/74638436-ee0f5c00-517c-11ea-938e-cec23c61ba29.gif)
 
 **Opmerking:** *Voor directe punten in tijdperioden zal het specificeren van ene periode met een gelijke begin en eind DateTime resulteren in het gebruiken van het gespecificeerde punt DateTime en geen periode.*
 
@@ -128,7 +128,7 @@ Een screencast zegt meer dan duizend woorden:
 
 ![image10](images/entries/78198825-34bada80-74cd-11ea-803a-90afea085b38.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add tool button to \"Deselect Features from the Current Active layer\"
 ![image11](images/entries/76692569-26616780-6661-11ea-9071-fd4c712860db.gif)
 
@@ -139,7 +139,7 @@ This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricac
 
 This feature was funded by [QGIS Swiss user group](https://www.qgis.ch)
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Attributentabellen als tabs openen 
 If the option \"Open new attribute tables as dock windows\" is active, new attribute tables will be opened as tabs on top of existing attribute tables.
 
@@ -156,7 +156,7 @@ If we generate contour lines on input raster blocks with the same size as our ou
 
 ![image14](images/entries/77861880-17111b00-7218-11ea-95ba-410c97830b93.webp)
 
-This feature was developed by [Martin Dobias](https://api.github.com/users/wonder-sk)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://api.github.com/users/wonder-sk)
 ### Mogelijkheid: Eenheid percentage voor grootte symbologie markering rasterafbeelding en vulling raster toegevoegd.
 According to the [Feature Request](https://github.com/qgis/QGIS/issues/30057) this patch adds a new percentage (of original image size) value for size units of **Raster Image Marker** and **Raster fill** (by [nirvn](https://github.com/qgis/QGIS/pull/34869#issuecomment-595090465) suggestion) layers.
 
@@ -209,13 +209,13 @@ Nu enkele leuke plaatjes:
 
 This feature was funded by [geoProRegio AG](http://www.geoproregio.ch)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Automatisch plaatsen van labels buiten polygonen
 Deze mogelijkheid maakt het mogelijk automatisch labels buiten objecten polygonen te plaatsen.
 
 Dit wordt op een aantal manieren weergegeven:
-1. A new placement mode which always places polygon labels for the layer outside the features: ![image23](images/entries/80680381-faf7e680-8b01-11ea-8612-b0f543bfd943.webp) ![image24](images/entries/80680391-00553100-8b02-11ea-8e56-21b57964f765.webp)
-2. When using other polygon placement modes, a new checkbox \"Allow placing labels outside of polygons\" can be checked to allow labels to be placed outside when it isn\'t possible to place them inside the polygon: ![image25](images/entries/80680478-30043900-8b02-11ea-8bd5-3325fc0a5021.webp) ![image26](images/entries/80680488-37c3dd80-8b02-11ea-98bb-e0882e6ab9ab.webp)
+1. Een nieuwe modus voor plaatsing die polygoonlabels voor de laag altijd buiten de objecten plaatst: ![image23](images/entries/80680381-faf7e680-8b01-11ea-8612-b0f543bfd943.webp) ![image24](images/entries/80680391-00553100-8b02-11ea-8e56-21b57964f765.webp)
+2. Bij het gebruiken van andere modi voor het plaatsen van polygonen, kan een nieuw keuzevak \"Plaatsen labels buiten polygonen toestaan\" worden geselecteerd om toe te staan dat labels buiten worden geplaatst, als het niet mogelijk is ze binnen de polygoon te plaatsen: ![image25](images/entries/80680478-30043900-8b02-11ea-8bd5-3325fc0a5021.webp) ![image26](images/entries/80680488-37c3dd80-8b02-11ea-98bb-e0882e6ab9ab.webp)
 
 The \"allow placing labels outside\" checkbox can be data defined, allowing users to either allow outside labels, prevent outside labels, or force outside labels on a feature-by-feature basis.
 
@@ -225,7 +225,7 @@ As shown in the islands screenshot above, the outside placement mode works as ex
 
 This feature was funded by [Swiss QGIS user group](https://www.qgis.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Laag met vectortegels - deel 4 (labelen)
 Doorgegaan met het werken aan de implementatie va lagen met vectortegels.
 
@@ -272,7 +272,7 @@ With new \"centroid\" placement:
 
 ![image29](images/entries/76173706-6d78d400-61ed-11ea-89c1-ce4e2477dfef.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Mazen
 ### Mogelijkheid: Alleen gespecificeerde groep van gegevensset gebruiken
 Deze mogelijkheid stelt de gebruiker in staat de te gebruiken groepen van de gegevensset te kiezen. Dit kan worden gedaan in het dialoogvenster voor eigenschappen van de laag met mazen op de tab Bron.
@@ -355,7 +355,7 @@ De tijd in een laag met mazen wordt gedefinieerd door :
 ```
 De klasse **QgsMeshDataprovidertemporalCapabilities** slaat de door de gegevens verschafte referentietijd en alle relatieve tijden van de gegevensset op. Deze klasse is in staat een index voor de gegevensset uit een groep voor de gegevensset terug te geven en een relatieve tijd vanaf de referentietijd. De referentietijd (die anders mag zijn dan de referentietijd van de provider) en de absolute tijdperiode worden opgeslagen in de klasse **QgsMeshTemporalProperties**
 
-The temporal settings in the properties widget are only the reference time and the provider time unit: ![image36](images/entries/77871643-bf23e580-7212-11ea-9b92-82c906c19c22.webp)
+De instellingen voor Tijdbeheer in de widget Eigenschappen zijn alleen de referentietijd en de tijdseenheid van de provider: ![image36](images/entries/77871643-bf23e580-7212-11ea-9b92-82c906c19c22.webp)
 
 De standaard referentietijd van de laag wordt ingesteld door (gesorteerd op prioriteit):
 - Vanuit de gegevensprovider indien gedefinieerd in de gegevens
@@ -368,7 +368,7 @@ The 2D and 3D renderers access the active dataset index from the layer with the 
 
 De gegevens worden vanuit de provider gebracht met de index van de gegevensset.
 #### Statische gegevensset
-There is also the option to set a static dataset, that is to choose a dataset that will be rendered independently of the QGIS time controller. To do that the user can check the check box at the bottom of the temporal page of the properties widget: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.webp) For now, as it was simpler to implement and allows the required dataset to be chosen directly, the user can independently choose scalar dataset and vector dataset from combo boxes with the time associated for each dataset (relative time for data without reference time). If required, a unique time could be implemented but that could lead to inconsistent results with non synchronous datasets. The static dataset settings are in the temporal page but can be easily put in the source page if wanted.
+Er is ook de optie om een statische gegevensset in te stellen, dat is: om een gegevensset te kiezen die onafhankelijk zal worden gerenderd van QGIS Tijdbeheer. De gebruiker kan, om dat te doen, het keuzevak selecteren aan de onderzijde van de pagina voor Tijdbeheer van de widget Eigenschappen: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.webp). Voor nu, omdat het eenvoudiger was om te implementeren en het mogelijk te maken de gegevens direct te kiezen, kan de gebruiker onafhankelijk kiezen tussen een scalaire gegevensset en een vectorgegevensset uit combinatievakken waarin de tijd voor elke gegevensset is geassocieerd (relatieve tijd voor gegevens zonder referentietijd). Indien vereist, zou een unieke tijd kunnen worden geïmplementeerd, maar dat zou kunnen leiden tot inconsistente resultaten met niet-synchrone gegevenssets. De instellingen voor de statische gegevensset staan op de pagina Tijdbeheer, maar kunnen eenvoudig worden ingevoerd in de pagina Bron, indien gewenst.
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -378,7 +378,7 @@ Resamplen is beschikbaar voor gegevenssets die zijn gedefinieerd op zijden, bijv
 
 Deze mogelijkheid implementeert resamplen vanuit waarden voor punten naar waarden op zijden met behulp van de methode Neighbor average.
 
-The default method is set to \"none\" for resampling from vertices to faces and to \"neighbor average\" for resampling from faces to vertices. Then the default rendering is always smooth. ![image38](images/entries/77320848-acc41c00-6ce7-11ea-85af-2bff553ecbb5.gif)
+De standaardmethode is ingesteld op \"geen\" voor resamplen vanuit punten naar zijden en op \"neighbor average\" voor resamplen van zijden naar punten. Dan wordt het standaard renderen altijd glad. ![image38](images/entries/77320848-acc41c00-6ce7-11ea-85af-2bff553ecbb5.gif)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Vector gegevensset met mazen kleuren met contrast voor kleurverloop
@@ -396,7 +396,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 ### Mogelijkheid: Stijl opslaan voor laag met mazen
 Deze mogelijkheid voegt de optie toe om de stijl voor een laag met mazen op te slaan in een bestand QML, zoals die worden gebruikt voor vector- en rasterlagen.
 
-The feature also refactors the raster and vector layer properties menu style. ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.webp)
+Deze mogelijkheid past ook de stijl voor het menu Eigenschappen van raster- en vectorlagen aan.  ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.webp)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -408,7 +408,7 @@ Initial implementation of [Support of 1D elements in Mesh Layers](https://github
 
 1D-mazen bestaan uit punten en randen. Een rand verbindt twee punten en kan eraan toegewezen gegevens hebben (scalaire of vectors). Het netwerk voor 1D-mazen kan, bijvoorbeeld, worden gebruikt voor het modelleren van een stedelijk drainagesysteem.
 
-There are new options to display 1D mesh (edges) in the mesh frame tab ![image43](images/entries/75885078-2aea7c80-5e26-11ea-8435-eef74afce7b7.webp)
+Er zijn nieuwe opties om 1D-mazen (randen) weer te geven op de tab Mazen ![image43](images/entries/75885078-2aea7c80-5e26-11ea-8435-eef74afce7b7.webp)
 
 Ook voor gegevens voor 1D-mazen (randen of punten) zijn er nieuwe opties op de tab Contouren
 
@@ -434,11 +434,11 @@ Een nieuwe tab in de widget met eigenschappen voor de laag met mazen stelt de ge
 
 ![image45](images/entries/74750757-9e936380-5242-11ea-98cf-a0e3e6694831.webp)
 
-This feature allows the speeding up of rendering as shown in these tables (result in milliseconds) : ![image46](images/entries/74750903-d69aa680-5242-11ea-9be3-0af7b2beacaf.webp)
+Deze mogelijkheid maakt het mogelijk het renderen te versnellen, zoals weergegeven in deze tabellen (resultaten in milliseconden): ![image46](images/entries/74750903-d69aa680-5242-11ea-9be3-0af7b2beacaf.webp)
 
-Demo GIF Before: ![image47](images/entries/74751034-0cd82600-5243-11ea-8a02-de78a337f299.gif)
+Demo GIF voor: ![image47](images/entries/74751034-0cd82600-5243-11ea-8a02-de78a337f299.gif)
 
-After: ![image48](images/entries/74751042-12357080-5243-11ea-80cb-2a3217d03a78.gif)
+Na: ![image48](images/entries/74751042-12357080-5243-11ea-80cb-2a3217d03a78.gif)
 
 This feature was funded by [BMT](https://www.bmt.org/)
 
@@ -453,7 +453,7 @@ Op dezelfde manier worden de kleuren voor de pijlen gedefinieerd in de instellin
 
 In instellingen voor 3D kan de gebruiker de afstand voor de pijlen definiëren en of de grootte vast is of geschaald op grootte.
 
-This spacing setting also defines the maximum size of arrows because arrows can\'t overlap. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
+Deze instelling voor afstand definieert ook de maximale grootte van de pijlen, omdat pijlen niet mogen overlappen. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ## Afdruklay-outs
@@ -470,7 +470,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 ### Mogelijkheid: Sorteren van de attributentabel op een veld, dat niet in de tabel vermeld is, toestaan
 In plaats van hetzelfde gegevensmodel te gebruiken voor de weergegeven en gesorteerde kolommen, worden nu twee gegevensmodellen gebruikt. Zij gebruiken dezelfde API / basisklasse, omdat zij heel erg op elkaar lijken.
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Beheer weergeven over het gedrag bij het splitsen van de legenda van de laag op een laag-per-laag basis
 This allows users to manually override the legend\'s default setting for \"split layers\" on a layer-by-layer basis, by double clicking a layer in the layout legend panel and choosing whether that layer:
 - de standaardinstelling voor de legenda volgt bij splitsen
@@ -481,7 +481,7 @@ of
 
 Gesponsord door SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Aanpassen van symbolen voor delen en subdelen toestaan als afzonderlijk van horizontale symbool voor de schaalbalk
 Staat opmaken van symbolen voor delen en subdelen op een andere manier, vergeleken met het horizontale lijnsymbool in een schaalbalk, toe
 
@@ -489,29 +489,29 @@ Gesponsord door SLYR
 
 Builds off the hard work done by \@agiudiceandrea!
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Overschrijven van het standaardsymbool voor de knoop van een legenda toestaan
 This allows users to (optionally) customise the symbol appearance for a legend node, e.g. to tweak the colors or symbol sizes to better provide a \"representative\" patch symbol compared with how those corresponding features actually appear on the map.
 
 It\'s useful for exaggerating symbol widths, or for manually tweaking the colors of semi-transparent symbols so that the colors represent the actual appearance of the symbols when rendered on top of the map content. Or to tweak the marker interval/offset in marker lines so that the markers are nicely spaced in the legend patch.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Plaatsen van handmatige kolomeinden in legenda's toestaan
 Voegt, bij het configureren van een item voor de legenda, de optie  toe om een kolomeinde te plaatsen vóór het item, wat er voor zorgt dat het wordt geplaatst in een nieuwe kolom.
 
 This allows user control over the column content, for cases when the automatic column generation doesn\'t result in the desired results.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Subdelen toegevoegd in streepjes rechter segmenten schaalbalk
 Voegt de mogelijkheid toe om sub-delen voor segmenten te maken die zijn opgenomen in het rechter gedeelte van de schaalbalk met streepjes.
 
-Line Ticks Up ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.webp)
+Lijnstreepjes boven ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.webp)
 
-Line Ticks Middle ![image52](images/entries/80860663-6c9e7480-8c69-11ea-94a3-8d0e8544867d.webp)
+Lijnstreepjes midden ![image52](images/entries/80860663-6c9e7480-8c69-11ea-94a3-8d0e8544867d.webp)
 
-Line Ticks Down ![image53](images/entries/80860675-7b852700-8c69-11ea-984d-584eff1e3c95.webp)
+Lijnstreepjes onder ![image53](images/entries/80860675-7b852700-8c69-11ea-984d-584eff1e3c95.webp)
 
-Scalebar item properties - Segments groupbox ![image54](images/entries/81009703-653bbe80-8e55-11ea-9286-4850b32edb23.webp)
+Eigenschappen item Schaalbalk - groepsvak Segmenten ![image54](images/entries/81009703-653bbe80-8e55-11ea-9286-4850b32edb23.webp)
 
 Het gedrag dat is gerelateerd aan de segmenten aan de linkerkant van de schaalbalk blijft ongewijzigd.
 
@@ -521,15 +521,15 @@ Geeft gebruikers de mogelijkheid om de grootte van de vorm van het symbool in de
 
 Width and height can be individually overridden, with the node falling back to the default width or height when the override isn\'t set.
 
-Sponsored by SLYR ![image55](images/entries/80325577-0edce780-8879-11ea-82bd-8f323a4c68ab.gif)
+Gesponsord door SLYR ![image55](images/entries/80325577-0edce780-8879-11ea-82bd-8f323a4c68ab.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Beheer toestaan over de horizontale afstand vóór groepen/sub-groepen/symbolen van de legenda 
 Gives flexibility to allow \"nesting\" legend groups/subgroups/symbols and much greater control over legend item placement.
 
 Gesponsord door SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Modelvormen van de legenda beheren door Stijlmanager
 Deze update beëindigt het werk aan het recente aanpassen van modelvormen voor de legenda, door ondersteuning voor de modelvormen van de legenda toe te voegen aan de Stijlmanager!
 
@@ -537,7 +537,7 @@ Nu hebben we nog slechts een leuke set van standaard modelvormen nodig om bij te
 
 ![image56](images/entries/79927419-0c4a4e80-8483-11ea-9b87-7ed8b393d349.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Configureren van modelvormen voor de legenda, door dubbel te klikken op items Legenda, toestaan
 Gebruikers toestaan om aangepaste modelvormen voor items in te stellen door een WKT-tekenreeks in te voeren die de geometrie voor de vorm weergeeft.
 
@@ -545,11 +545,11 @@ Gesponsord door SLYR
 
 ![image57](images/entries/79714030-ea31be80-8312-11ea-8b6f-f40e3eea04b1.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning voor het direct in lay-outs plakken van afbeeldingen
 Bedt de geplakte afbeelding in de lay-out in.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Markeringsitems toestaan om rotatie te synchroniseren met kaarten
 Dit maakt het maken van noordpijlen vanuit markeringssymbolen mogelijk, wat dezelfde opties weergeeft als die bestaan voor items Afbeelding die optreden als noordpijlen.
 
@@ -559,7 +559,7 @@ Wanneer een markering wordt gebruikt als noordpijl, wordt roteren voor de kaart 
 
 Gesponsord door SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Nieuwe type symbolen voor symbolen voor markering
 Maakt het mogelijk symbolen voor markering direct in lay-outs te plaatsen, bijv. voor handmatig plaatsen van markeringen over een kaartitem of voor het maken van geavanceerde aangepaste legenda's.
 
@@ -569,7 +569,7 @@ Gesponsord door SLYR
 
 ![image59](images/entries/78419618-c885d580-768a-11ea-959a-8459e19e05df.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Inhoud vanaf klembord importeren voor vaste tabelitems toegevoegd
 A new import content from clipboard feature has been added to QGIS\' table editor to enable quicker layout fixed table item editing and creation.
 
@@ -589,7 +589,7 @@ Gesponsord door SLYR
 
 ![image61](images/entries/77267662-0c71f580-6cef-11ea-9956-917e1d6ef496.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add \"stepped line\" and \"hollow\" scalebar styles
 Voegt twee nieuwe stijlen voor de schaalbalk toe (die beschikbaar zijn in ArcMap, maar eerder onmogelijk waren te reproduceren in QGIS)
 
@@ -603,7 +603,7 @@ Hollow (aka \"South African\") style:
 
 Gesponsord door SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Mogelijk tot instellen lijnstijl voor schaalbalk met standaard lijnsymbolen van QGIS
 In plaats van de eerdere instellingen voor de lijnstijlen kleur/dikte/eind, geven we nu de optie weer als een volledig lijnsymbool voor meer geavanceerd stijlen.
 
@@ -611,7 +611,7 @@ Ook enig opruimwerk in de code.
 
 Gesponsord door SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Opnieuw bewerken van de UI en gedrag voor item Afbeelding
 Adds an explicit choice between SVG or raster image sources, which allows us to clean up the configuration panel for layout pictures by hiding options which don\'t apply to a certain picture source. Also permits us to:
 - De standaard widget voor selecteren van SVG te hergebruiken, wat afbeeldingen laadt in een thread op deachtergrond
@@ -621,7 +621,7 @@ Uiteindelijk is de motivatie hiervoor de wens om gebruikers toe te staan afbeeld
 
 Gesponsord door SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: CRS beheerbaar maken door een variabele
 Dit maakt het CRS voor een kaart beheerbaar door een variabele.
 
@@ -655,7 +655,7 @@ This feature was developed by [Alex](https://api.github.com/users/roya0045)
 
 Deze mogelijkheid werd ontwikkeld door Etienne Trimaille, Jan Caha, Julien Monticolo, Nyall Dawson
 ### Mogelijkheid: Browser voor objecten voor voorbeeld in expressiebouwer
-This adds a feature browser to the expression builder so one can browse features to see the result of the expression ![image65](images/entries/80604352-e6e4b400-8a31-11ea-8f3b-8c864e124c78.webp)
+Dit voegt een browser voor objecten toe aan de expressiebouwer, zodat iemand door objecten kan bladeren om het resultaat van de expressie te zien ![image65](images/entries/80604352-e6e4b400-8a31-11ea-8f3b-8c864e124c78.webp)
 
 A new widget is added: `QgsFeaturePickerWidget`. For the moment, it\'s a simple combobox (but inherits widget so we can add a map picker button later on). It behaves the same way than the one in the relation reference widget (an editable combobox).
 
@@ -667,7 +667,7 @@ Testen zijn toegevoegd.
 
 Gesponsord door de **QGIS Zwitserse gebruikersgroep**!
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Het is mogelijk aangepaste functies te verwijderen
 Voegt een knop voor verwijderen toe aan de tab Functiebewerker in het  dialoogvenster Expressiebouwer om het verwijderen van gebruikersfuncties uit QGIS mogelijk te maken, zonder naar de map voor het gebruikersprofiel te hoeven navigeren.
 
@@ -751,7 +751,7 @@ In een formulier kunnen links nu worden bewerk de widget Bestand (als de widget 
 
 Gesponsord door de QGIS Zwitserse gebruikersgroep
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Expressie-beheerde labels (aliassen)
 Deze nieuwe mogelijkheid maakt het mogelijk dat labels in formulieren (aliassen) worden geëvalueerd in de context van het formulier.
 
@@ -761,7 +761,7 @@ Deze nieuwe mogelijkheid maakt het mogelijk dat labels in formulieren (aliassen)
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Beschrijving toevoegen aan widget Waarde relatie
 Voegt een optie toe voor het toevoegen van een beschrijving aan elke waarde in een widget Waarde relatie. De beschrijving zal zichtbaar zijn als helptip
 
@@ -769,7 +769,7 @@ Excuses voor de verschillende talen in de demonstratievideo.
 
 ![image74](images/entries/76538031-f195ba80-647e-11ea-9a41-271576e315bc.gif)
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Mogelijkheid: Widget Nieuwe database tabelnaam
 Een nieuw widget werd aan QGIS toegevoegd om een nieuwe tabel uit een bestaande verbinding naar een database te selecteren:
 
@@ -791,7 +791,7 @@ Mogelijk gemaakt door: **ARPA Piemonte**
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Widget Relatie: keuzevak toegevoegd om de knop voor bewerken van kinderen te verbergen
 Dit is bijzonder nuttig voor ingebedde formulieren.
 
@@ -801,7 +801,7 @@ Mogelijk gemaakt door: **ARPA Piemonte**
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Widget Relatie forceert onderdrukken van pop-up
 Voegt een optie toe aan de configuratie van de widget Relatie om het openen van pop-up in een formulier te onderdrukken, als nieuwe objecten worden toegevoegd in de context van een ingebed formulier.
 
@@ -813,14 +813,14 @@ Opmerking: het uiteindelijke label is **Formulier verbergen bij toevoegen nieuw 
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ## Legenda van laag
 ### Mogelijkheid: Verplaats naar onderste toegevoegd aan contextmenu in weergave lagenboom
 Verplaatsen van lagen in grote projecten werd al gemakkelijker gemaakt met *Verplaats naar bovenste*, maar men moest nog steeds handmatig basiskaarten verplaatsen naar de onderzijde van de lagenlijst, een bewerkelijke taak in grote lagenbomen. Deze mogelijkheid voegt een optie *Verplaats naar onderste* aan het contextmenu van de lagenboom toe dat op dezelfde manier werkt als Verplaats naar bovenste.
 
 This feature was developed by [uclaros](https://api.github.com/users/uclaros)
 ### Feature: Make Add Group button act as Group Selected if selected layers \>= 2
-When there is more than one layer selected and the user presses the *Add Group* button, create a new group and put the selected layers in it too! ![image82](images/entries/76710403-f624d200-670f-11ea-9a41-13420c7940e3.gif)
+Wanneer er meer dan één laag is geselecteerd en de gebruiker drukt op de knop *Groep toevoegen*, maak dan een nieuwe groep en plaats daar de geselecteerde lagen ook in! ![image82](images/entries/76710403-f624d200-670f-11ea-9a41-13420c7940e3.gif)
 
 This feature was developed by [uclaros](https://api.github.com/users/uclaros)
 ### Mogelijkheid: Hernoemen van het huidige kaartthema toestaan
@@ -830,7 +830,7 @@ Dit voegt de optie toe voor het hernoemen van een kaartthema uit het keuzemenu v
 
 This feature was developed by [Harrissou Sant-anna](https://api.github.com/users/DelazJ)
 ### Feature: Turn on/off ALL selected layers with \"Space\" button
-Toggles the visibility of the currently selected layers or groups using the space button: ![image84](images/entries/77874799-cff64a80-7256-11ea-974b-c4084d1e01ae.gif)
+Schakelt de zichtbaarheid van de momenteel geselecteerde lagen of groepen met de spatiebalk: ![image84](images/entries/77874799-cff64a80-7256-11ea-974b-c4084d1e01ae.gif)
 
 This feature was developed by [Ivan Ivanov](https://github.com/suricactus)
 ## Analyse-gereedschappen
@@ -840,7 +840,7 @@ Voegt enkele nuttige gereedschappen toe aan de netwerklogger:
 - Verzoek als JSON kopiëren 
 - Log naar bestand opslaan (na een belangrijke waarschuwing aan gebruikers dat het log gevoelige informatie zou kunnen bevatten en daarom als vertrouwelijk zou moeten worden behandeld)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ingebouwd gereedschap voor loggen van netwerk
 This tool, which is available from the new F12 \"dev tools\" panel, is a native port of \@rduivenvoorde\'s network logger plugin.
 
@@ -905,7 +905,7 @@ Dit algoritme stelt gebruikers in staat om meerdere voorwaarden in te stellen (v
 
 Dit werd mogelijk gemaakt door Andreas Neumann
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Opnieuw ordenen invoer voor modellen toestaan
 Instead of forcing a quasi-random ordering of inputs for models, this feature exposes a new \"Reorder Model Inputs\" option in the model designer which allows users control over the exact order of inputs to show users for their model.
 
@@ -913,7 +913,7 @@ No more illogical ordering like showing a field choice before the layer choice i
 
 Gesponsord door NaturalGIS
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Validatie model uitstellen
 Instead of forcing all child algorithms to be immediately valid and have all parameters correctly filled, this feature defers model validation until run time or when a new \"Validate model\" action is triggered.
 
@@ -921,7 +921,7 @@ A common frustration with the QGIS model designer is that it constantly forces m
 
 Deze wijziging ziet er op toe dat het valideren van het model wordt uitgesteld tot de feitelijke uitvoering. Modellen mogen tijdelijk ongeldig zijn (bijv. componenten voor het algoritme hebben die slechts gedeeltelijk geconfigureerd zijn). De ontbrekende vereiste waarden kunnen nu in een later stadium worden ingevuld, zonder bestaande instellingen te verliezen. Als een niet-geldig model wordt uitgevoerd, krijgt de gebruiker een waarschuwing met een beschrijving die hen informeert over de wijzigingen die zij moeten maken om de configuratie van het model te voltooien.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning toegevoegd voor verschillende typen rastergegevens in algoritme Constante rasterlaag maken
 With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Create constant raster layer* algorithm. Via this parameter, you can now specify an output data type for your constant raster layers.
 - Byte
@@ -952,7 +952,7 @@ Deze mogelijkheid stelt gebruikers in staat componenten van modellen te kopiëre
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Toevoegen van resultaten van Processing aan bestaande lagen toestaan
 When appending results, users are given a field mapping panel choice to allow them to manually set how fields are mapped to the destination layer\'s fields:
 
@@ -960,7 +960,7 @@ When appending results, users are given a field mapping panel choice to allow th
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Maken van groepsvakken in modellen toestaan
 Voegt de volgende functiies toe aan de ontwerper voor Grafische modellen maken:
 - De mogelijkheid de kleur van individuele opmerkingen in een model aan te passen
@@ -971,7 +971,7 @@ Voegt de volgende functiies toe aan de ontwerper voor Grafische modellen maken:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Processing: waarden voor invoer en uitvoer voor kinderen weergeven na uitvoeren van model in ontwerper
 Een afbeelding laat dit het beste zien! Na het uitvoeren van het algoritme in de ontwerper, ziet u nu de berekende waarden voor de invoeren en uitvoer voor elke kind-algoritme:
 
@@ -981,7 +981,7 @@ This is very useful for debugging models \-- you can see a much clearer visual p
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add \"Save Log to File\" algorithm for models
 This algorithm saves the contents of the execution log (right up to the point in the model at which the \'save log\' algorithm executes) to a file.
 
@@ -989,7 +989,7 @@ Het kan worden gebruikt om automatisch het log voor debuggen op te slaan bij het
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### "Mogelijkheid: Direct uitvoeren van algoritmen op databasebronnen (en andere niet-schijf) toestaan zonder ze eerst in projecten te laden
 Deze wijziging stelt gebruikers in staat om direct te bladeren naar niet op schijf gebaseerde bronnen voor lagen voor het verwerken van elke broninvoer voor objecten. Het maakt het mogelijk deze invoeren direct op te halen uit lagen van PostgreSQL, SQL-server, Oracle, WFS, AFS, etc zonder ze eerst te moeten laden in een project!
 
@@ -999,7 +999,7 @@ We maken volledig gebruik van de mogelijkheden van de QGIS browser om dit in te 
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid : Geavanceerde opties per-object-bron weergeven voor invoer van Processing
 Deze optie geeft geavanceerde opties per-object-bron weer, zoals:
 - De mogelijkheid om het aantal uit de bron te lezen objecten te beperken. (Nuttig bij het ontwikkelen van modellen, u kunt gemakkelijk het uitvoeren van modellen testen met een kleine subset van een invoerlaag)
@@ -1009,7 +1009,7 @@ Deze optie geeft geavanceerde opties per-object-bron weer, zoals:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Snappen aan raster voor modellen in ontwerper inschakelen
 This update implements two \"snapping\" features in the Processing model designer:
 1. Users can enable a new \"Enable Snapping\" option from the view menu, which will cause all component moving or resizing operations to automatically snap to grids
@@ -1019,7 +1019,7 @@ Additionally, I\'ve added a helpful \"select all\" action for quickly selecting 
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Add \"filter by geometry type\" and \"filter by layer type\" algorithms to processing
 Deze update voegt twee nieuwe algoritmen toe aan Processing:
 - \"Filter by geometry type\": This algorithm filters features by their geometry type. Incoming features will be directed to different outputs based on whether they have a point, line or polygon geometry. It allows for model creation which responds to different input layer geometry types by applying different logic depending on the input geometry type.
@@ -1029,7 +1029,7 @@ It also adds in the required API to allow algorithms to \"prune\" model branches
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: \"Remove Null Geometries\" algorithm can also remove EMPTY geometries
 Empty geometries do not contain coordinates. Thus, like *null* geometries, empty geometries are not spatial data in a strict sense. To make it easier for users to clean a vector layer, the *Remove Null Gometries* algorithm now has an \"**Also remove empty geometries**\" option.
 
@@ -1052,7 +1052,7 @@ Here\'s how it looks in action (with a particular ugly looking test model I use!
 
 ![image102](images/entries/76388083-f9d4f380-63b3-11ea-8f06-97249e85ac2e.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning voor Ongedaan maken/Opnieuw toegevoegd aan de ontwerper voor Grafische modellen bouwen
 Maakt QGIS meer vergevingsgezind voor gebruikers!
 
@@ -1064,7 +1064,7 @@ Works just like you\'d expect:
 
 Merk op dat we de gehele definitie van het model in de stapel Ongedaan maken opslaan, niet slechts de betrokken wijzigingen van componenten.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Waarden van parameter onthouden tussen uitvoeringen van ontwerper van Grafische modellen bouwen
 Bij het ontwerpen van een model, zullen gebruikers gewoonlijk het model vele keren dienen uit te voeren als zij zijn structuur aanpassen.
 
@@ -1076,7 +1076,7 @@ Gesponsord door Alta Ehf
 
 Also includes a partial port of the model designer dialog from Python to c++, because c++ \>\> Python.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Opmerkingen in modellen van Processing
 Dit stelt gebruikers in staat opmerkingen te maken die worden verbonden aan componenten van het model (invoeren, algoritmen of uitvoeren). Opmerkingen worden weergegeven gekoppeld aan de geassocieerde component, en kunnen vrijelijk worden verplaatst binnen het model.
 
@@ -1084,7 +1084,7 @@ Dit stelt gebruikers in staat opmerkingen te maken die worden verbonden aan comp
 
 Dit werd mogelijk gemaakt door Fisel + König
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Nieuw zelfstandig console-gereedschap voor het uitvoeren van algoritmen van Processing
 This new qgis_process tool allows users to run processing algorithms (both built-in, and those provided by plugins) directly from the console.
 
@@ -1105,11 +1105,11 @@ Bij het uitvoeren van een algoritme wordt een op tekst gebaseerde balk voor teru
 
 Gesponsord door de Zweedse gebruikersgroep
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Nieuw type parameter voor waarden datetime (of date, of time)
 Voegt een nieuw type parameter QgsProcessingParameterDateTime toe voor het afhandelen van waarden date/datetime/time.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Nieuwe algoritmes voor laten zien van waarschuwingen en uitzonderingen vanuit modellen toegevoegd
 Deze algoritmen laten ofwel een aangepaste waarschuwing in het log van Processing zien OF werpt een uitzondering op die er voor zorgt dat het uitvoeren van het model wordt beëindigd.
 
@@ -1117,7 +1117,7 @@ An optional condition expression can be specified to control whether or not the 
 
 Gesponsord door Fisel + König
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Algoritme Cellen GeenGegevens vullen toegevoegd
 In de nieuwe versie van QGIS introduceren we een nieuw algoritme voor Processing voor het vullen van cellen GeenGegevens in een raster gegevensset met een constante numerieke invoer.
 
@@ -1151,7 +1151,7 @@ Het algoritme beschouwt opeenvolgende punten om een boog weer te geven als zij g
 
 ![image107](images/entries/c747d86081f3862d9d4bbb2ab067103daceab724.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Opties voor toepassing en projecten
 ### Feature: Add \@layers, \@layer_ids project scope variables
 Add \@layers, \@layer_ids project scope variables which contain lists of map layers and map layers ids for all layers from the current project
@@ -1160,10 +1160,10 @@ This mimics the existing \@map_layers, \@map_layer_ids, but unlike the \@map var
 
 Gesponsord door SLYR
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Toevoegen van attributen in het dialoogvenster Nieuwe tekenlaag toestaan
-Allows the user to add attributes directly in the New Scratch Layer dialog making it more consistent with other dialogs like New Shapefile/Geopackage. ![image108](images/entries/81394331-76711d80-912a-11ea-8b86-4f2789adff08.webp)
+Stelt de gebruiker in staat om attributen direct toe te voegen in het dialoogvenster Nieuwe tekenlaag. Wat het meer consistent maakt met andere dialoogvensters, zoals Nieuwe Shapefile/Geopackage. ![image108](images/entries/81394331-76711d80-912a-11ea-8b86-4f2789adff08.webp)
 
 Het is nog steeds mogelijk om een tekenlaag te maken zonder attributen, door geen velden aan de lijst toe te voegen.
 
@@ -1185,7 +1185,7 @@ WMTS ![image111](images/entries/80964191-b4abcb80-8e10-11ea-8b80-395dbb37b45c.we
 
 Gesponsord door de QGIS Zwitserse gebruikersgroep
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Vectortegels toevoegen aan dialoogvenster Databronnen beheren en menu Lagen
 Voegt een nieuwe tab toe aan het dialoogvenster Databronnen beheren, die de gebruiker in staat stelt verbindingen voor vectortegels te beheren/toe te voegen, inclusief importeren/exporteren. Voegt ook een overeenkomstig item in het menu Lagen in.
 
@@ -1203,7 +1203,7 @@ Implementatie voor transacties voor de eigen provider SpatiaLite.
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Direct opslaan van uitvoeren naar meerdere indelingen voor databases toestaan (en andere leuke dingen)
 Deze update stelt gebruikers in staat vector-uitvoeren van Processing direct op te slaan in indelingen voor meerdere databases.
 
@@ -1223,13 +1223,13 @@ Andere leuke dingen omvatten:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Aangewezen type parameter voor verbindingen van databases toegevoegd
 Maakt selecteren vanuit de geregistreerde databaseverbindingen van een specifieke type database-provider mogelijk (de provider moet de API voor de verbindingen implementeren).
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: PG: weergeven vreemde tabellen
 Geef vreemde tabellen weer in de browser en het dialoogvenster Databronnen selecteren.
 
@@ -1245,7 +1245,7 @@ Dit zou de laatste wijziging moeten zijn voor de PostgreSQL raster gegevensprovi
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: PostgreSQL: sla objecten op in tabellen met gemaakte velden
 Sta bijwerken/invoegen van objecten in tabellen van PostgreSQLmet gemaakte velden toe. GENERATED-kolommen is een mogelijkheid die werd geïntroduceerd in PostgreSQL 12, wat het mogelijk maakt dat kolomwaarden worden gemaakt vanuit andere kolommen uit dezelfde tabel; dit vervangt het maken van triggers om, bijvoorbeeld, automatisch een kolom met zwaartepunten of gebieden voor de polygonen in de hoofd geometriekolom te vullen en bij te houden.
 
@@ -1262,7 +1262,7 @@ Indien ingesteld op TRUE worden slechte lagen overgeslagen en het restant van he
 
 This feature was funded by [Geoinformatikbüro Dassau GmbH](https://www.gbd-consult.de/home.html)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Server project settings, add \'expanded\' attribute
 In addition to the \'visible\' and \'mutuallyExclusive\' attribute, this update adds \'expanded\' to the GetProjectSettings response of the server. The update allows a web client to see which layer tree elements are expanded / collapsed and to then present them the same way in the web map layer list.
 
@@ -1272,7 +1272,7 @@ QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control
 
 Voegt ontbrekende parameters toe aan verzoek GetDxf.
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Mogelijkheid: WMS-project validatie
 De validatie voor QGIS Server is opnieuw bekeken. Dit gereedschap is nuttig als u een project van QGIS wilt publiceren met het protocol WMS.
 
@@ -1280,7 +1280,7 @@ Voor programmeurs is de validatie nu ook aan te roepen vanuit PyQGIS, dus plug-i
 
 This feature was funded by [3Liz](https://www.3liz.com)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+Deze mogelijkheid werd ontwikkeld door [Etienne Trimaille](https://github.com/Gustry)
 ### Mogelijkheid: Webp
 > WebP is een moderne indeling voor afbeeldingen die superieure verliesloze en compressie met verlies verschaft voor afbeeldingen op het web. WebP maakt kleinere, rijkere afbeeldingen die het web sneller maakt.
 > 
@@ -1292,7 +1292,7 @@ Met Webp ondersteunt QGIS server nu een indeling die kleinere bestandsgrootten v
 
 This feature was funded by [OPENGIS.ch](https://www.opengis.ch)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Plug-ins
 ### Feature: Allow plugins to register custom \"Project Open\" handlers
 These allow plugins to extend the \"Open Project\" dialog by adding in support for new file filters, which appear in the formats drop down list alongside the existing \"QGS Projects\" entry.
@@ -1307,7 +1307,7 @@ Gesponsord door SLYR
 
 ![image114](images/entries/78514331-1833e080-77f4-11ea-9c8d-a5e9ead7dc1a.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Gebruikers toestaan stabiele of experimentele plug-ins te installeren
 Deze update verbeterd Plug-ins beheren en installeren door gebruikers toe te staan te kiezen tussen het installeren van de stabiele of de experimentele versie van een plug-in.
 
@@ -1342,7 +1342,7 @@ Dit opent een heel bereik van nieuwe mogelijkheden, inclusief:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Resterende parameters voor invoer overzetten naar nieuwe API
 Deze update zet de parameters voor de invoer Rasterband  en Meerdere lagen om naar de nieuwe C++ API.
 
@@ -1353,17 +1353,17 @@ Voordelen omvatten:
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Parameters Bron object, Raster, Vector en Laag met mazen overzetten naar nieuwe API
 It\'s now possible to use expression-based layer sources in processing models.
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Laag met vectortegels - deel 1
 Dit is het initiële werk voor ondersteuning van vectortegels-lagen.
 
-![image118](images/entries/77539757-2d2e7c80-6ea2-11ea-9098-c6c0924f9d59.webp) (The red lines are not rendering artifacts, they are drawn intentionally to show tile borders.)
+![image118](images/entries/77539757-2d2e7c80-6ea2-11ea-9098-c6c0924f9d59.webp) (De rode lijnen zijn geen artefacten van het renderen; ze zijn met opzet getekend om randen van tegels weer te geven.)
 ### Overzicht
 So far this only includes changes to the qgis_core library.
 
@@ -1412,7 +1412,7 @@ Deze update zet uiteindelijk de parameter Bereik om naar de nieuwe C++ API, maar
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Interface en API voor universele gereedschappen voor ontwikkeling/debuggen
 Adds interface hooks to allow plugins (and c++) to register \"development/debugging\" tools
 
@@ -1428,7 +1428,7 @@ Here\'s an example demo showing a \"Python locals\" dev tool:
 
 ![image119](images/entries/77492080-55f74780-6e8b-11ea-9141-1b96c42c29eb.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning voor gegevenstype voor QgsProcessingParameterMapLayer
 Allow the definition of accepted layer types for `QgsProcessingParameterMapLayer`. This is useful when an algorithm can work with different layer types (for example, points and rasters) and avoids duplication of the same algorithm with different inputs.
 
@@ -1440,7 +1440,7 @@ Vervangt het eerdere ad-hoc Python wrappers voor de widget PostGIS door juiste e
 
 Refs NRCan Contract#3000707093
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
@@ -1477,9 +1477,9 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 | Using \"Add feature\" to create feature and child feature with transaction group causes foreign key error | [#37222](https://github.com/qgis/QGIS/issues/37222) | [PR #37249](https://github.com/qgis/QGIS/pull/37249) | niet kritisch |
 | Vectorlayer from spatialite missing features and inconsistent feature count | [#29264](https://github.com/qgis/QGIS/issues/29264) | [PR #37277](https://github.com/qgis/QGIS/pull/37277) | NOG TE DOEN |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it/)
 ### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1489,7 +1489,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | Fix the absence of words in the advanced configuration widget | [PR #35643](https://github.com/qgis/QGIS/pull/35643)#issuecomment-610215386 | [PR #36511](https://github.com/qgis/QGIS/pull/36511) | N/B |
 | Fix interpolation on split geometry | [PR #36514](https://github.com/qgis/QGIS/pull/36514) | [#33489](https://github.com/qgis/QGIS/issues/33489) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
@@ -1513,9 +1513,9 @@ This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 | QGIS 3.12 unknown CRS or Select Transformation | [#36837](https://github.com/qgis/QGIS/issues/36837) | [GDAL Commit 68133b8](https://github.com/OSGeo/gdal/commit/68133b8b6f724a581a5dcb19fbdcd657ddbd6c4c) | [GDAL Commit 6ae7f60](https://github.com/OSGeo/gdal/commit/6ae7f60a5914a2f16b8b1a94758f10e6621e4aca) |
 | BIGTIFF error is not obvious in processing log | [#36867](https://github.com/qgis/QGIS/issues/36867) | [GDAL Commit cfc8e61](https://github.com/OSGeo/gdal/commit/cfc8e613ad86dd4b00604dd64df239916ccda135) | [GDAL Commit fb88e3c](https://github.com/OSGeo/gdal/commit/fb88e3ca5c8905fbcaab79e96a2bfc1c36f72d08) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Paul Blottiere
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1528,7 +1528,7 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 | Auxiliary storage not usable in non editable layer | [#30376](https://github.com/qgis/QGIS/issues/30376) | Al gerepareerd. Gesloten. | N/B |
 | Fix compilation with GCC 10, Qt/PyQt 5.15.0 and SIP 4.19.23 | [#37072](https://github.com/qgis/QGIS/issues/37072) | [PR #37116](https://github.com/qgis/QGIS/pull/37116) | [PR #37250](https://github.com/qgis/QGIS/pull/37250) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces
@@ -1548,7 +1548,7 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 | Project is modified as soon as you move cursor on canvas | [#36796](https://github.com/qgis/QGIS/issues/36796) | [PR #36797](https://github.com/qgis/QGIS/pull/36797) | [PR #36718](https://github.com/qgis/QGIS/pull/36718) |
 | Set filter applied to wrong \"version\" of table when multiple geometry types | [#34982](https://github.com/qgis/QGIS/issues/34982) | [PR #36801](https://github.com/qgis/QGIS/pull/36801)[PR #36718](https://github.com/qgis/QGIS/pull/36718) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Bertrand Rix
@@ -1559,7 +1559,7 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 | Selective masking: phantom lines on dark background | [#34650](https://github.com/qgis/QGIS/issues/34650) | [PR #36697](https://github.com/qgis/QGIS/pull/36697) | N/B |
 | Selective masking: issue with mask opacity | [#34947](https://github.com/qgis/QGIS/issues/34947) | [PR #36697](https://github.com/qgis/QGIS/pull/36697) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Sebastien Peillet
@@ -1572,7 +1572,7 @@ This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
 | Oracle : tables are listed once for Polygons and once for MultiPolygons but both show all geometries | [#32521](https://github.com/qgis/QGIS/issues/32521) | [PR #34358](https://github.com/qgis/QGIS/pull/34358) | N/B |
 | Can\'t set min/max values to decimal in raster symbology with QGis Linux versions | [#33859](https://github.com/qgis/QGIS/issues/33859) | [PR #37136](https://github.com/qgis/QGIS/pull/37136) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Alexander Bruy
@@ -1594,7 +1594,7 @@ This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
 | Attributes shift in the Service area algorithm results | niet gerapporteerd | [PR #37074](https://github.com/qgis/QGIS/pull/37074), [PR #37097](https://github.com/qgis/QGIS/pull/37097) | N/B |
 | Processing testing framework does not apply rounding to values casted to numbers | niet gerapporteerd | [PR #37234](https://github.com/qgis/QGIS/pull/37234) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson
@@ -1667,9 +1667,9 @@ Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 | Fix incorrect dialog title for raster layer properties | [#35510](https://github.com/qgis/QGIS/issues/35510) | [Commit 2099261](https://github.com/qgis/QGIS/commit/2099261230f82c5cd4439538e38754947c8f6bd6) | [PR 36718 Commit e809f48](https://github.com/qgis/QGIS/pull/36718/commits/e809f48cb9aaf03dfe8671c2d885f99b4a91922b) |
 | Don\'t try to identify CRSes created just for ellipsoid definitions | niet gerapporteerd | [Commit 15b318b](https://github.com/qgis/QGIS/commit/15b318b50de9131ed1dd6bbf73ae5eb7572579a7) | No \-- too intrusive |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door Denis Rouzaud
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1680,7 +1680,7 @@ This feature was developed by [Nyall Dawson](https://north-road.com/)
 | Freeze when showing attribute table of WFS layer | [#37224](https://github.com/qgis/QGIS/issues/37224) | nog niet gerepareerd | N/B |
 | Lookups in tables with more than 100 entries show wrong value in Relation Reference form parts | [#37266](https://github.com/qgis/QGIS/issues/37266) | [PR #37280](https://github.com/qgis/QGIS/pull/37280) | [PR #37286](https://github.com/qgis/QGIS/pull/37286) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Audun Ellertsen

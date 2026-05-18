@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: '2015-02-20'
+releaseDate: 20-02-2015
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 2.8
@@ -12,11 +12,11 @@ type: visual-changelog
 # Log met wijzigingen voor QGIS 2.8{#changelog28 }
 Datum uitgave 20-02-2015
 
-This is the change log for the next release of QGIS - version 2.8 \' Wien\'. Wien is German for \'Vienna\' - host city to our developer meet up in November 2009 and again in March 2014.
+Dit is het log met wijzigingen voor de volgende uitgave van QGIS - versie 2.8 \' Wien\'. Wien is Duits voor \'Wenen\' - gastheer voor de ontmoeting van de ontwikkelaars in november 2009 en opnieuw in maart 2014.
 
 **Long Term Release**
 
-This is a special release since it is designated an \'LTR\' (Long Term Release). LTR releases will be supported with backported bug fixes for one year, and will be in permanent feature freeze (i.e. no new features will be added, only bug fixes and trivial updates).
+Dit is een speciale uitgave omdat het is aangewezen als een \'LTR\' (Long Term Release). LTR-uitgaven zullen worden ondersteund met achterwaarts ondersteunende probleemoplossingen voor één jaar, en zullen een permanente bevriezingsfase hebben (d.i. er zullen geen nieuwe mogelijkheden worden toegevoegd, alleen probleemoplossingen en kleinere updates).
 
 Het doel van LTR-uitgaven is om een stabiel en minder vaak wijzigend platform te verschaffen voor bedrijven en organisaties die zich niet meer dan eenmaal per jaar willen bezighouden met het bijscholen van gebruikers, trainingsmateriaal etc.  Het succes van de LTR hangt heel veel van u, onze geliefde gebruikers, af, we hebben uw ondersteuning nodig om ons probleemoplossingen aan te reiken en er voor zorgend dat u in uw ondersteuningscontracten met verleners van ondersteuning specificeert dat probleemoplossingen die voor u worden toegepast ook worden toegepast op de tak van de LTR als ook op onze normale takken voor ontwikkeling.
 
@@ -26,7 +26,7 @@ Als een LTR belangrijk voor u is, overweeg dan ook directe ondersteuning voor he
 
 QGIS 2.8 is ook een speciale uitgave omdat het zoveel fantastische nieuwe mogelijkheden bevat, wijzigingen en verbeteringen om het het meest populaire vrije desktop GIS te maken, zelfs meer gevuld met mogelijkheden en nuttig.
 
-Whenever new features are added to software they introduce the possibility of new bugs - if you encounter any problems with this release, please file a ticket [on the QGIS Bug Tracker](http://hub.qgis.org).
+Wanneer aan software nieuwe mogelijkheden worden toegevoegd, introduceren die de mogelijkheid tot het ontstaan van nieuwe problemen - als u in deze uitgave nieuwe problemen tegenkomt, vul dan een ticket in [op de QGIS Bug Tracker](http://hub.qgis.org).
 
 **Dankwoord**
 
@@ -35,11 +35,11 @@ We willen de ontwikkelaars, schrijvers van documentatie, testers en alle andere 
 Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn in het opwaarderen van QGIS, kijk dan ook eens op [qgis.org](https://qgis.org) en help een handje!
 
 Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare financiële ondersteuning die zij aan dit project verlenen:
-- **GOLD Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
+- **GOUDEN Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
 - ZILVEREN sponsor: [Sourcepole AG, Zwitserland](http://www.sourcepole.com/)
 - ZILVEREN sponsor: [Staat Vorarlberg, Oostenrijk](http://www.vorarlberg.at/)
 - ZILVEREN sponsor: [Office of Public Works, Ireland, Ireland](http://www.opw.ie/)
-- BRONZE Sponsor: [GIS3W, Italy](http://www.gis3w.it/)
+- BRONZEN Sponsor: [GIS3W, Italië](http://www.gis3w.it/)
 - BRONZEN sponsor: [www.molitec.it, Italië](http://www.molitec.it/)
 - BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de
 - BRONZEN sponsor: [www.openrunner.com, Frankrijk](http://www.openrunner.com)
@@ -50,18 +50,18 @@ Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare finan
 - BRONZEN sponsor: [Lutra Consulting, VK](http://www.lutraconsulting.co.uk/)
 - BRONZEN sponsor: [ADLARES GmbH, Duitsland](http://www.adlares.com/)
 - BRONZEN sponsor: [Avioportolano Italia, Italië](http://www.avioportolano.it/)
-- BRONZE Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, ​University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
+- BRONZEN Sponsor: [Faculteit voor Geologie, Geofysica en Milieubescherming, AGH, ​University of Science and Technology, Polen](http://www.wggios.agh.edu.pl/en)
 
-A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become an official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
+Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/nl/site/about/sponsorship.html#list-of-donors). Als u een officiële sponsor voor het project zou willen worden, bekijk dan [onze pagina om te sponsoren](https://qgis.org/nl/site/about/sponsorship.html#sponsorship) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze halfjaarlijkse ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren.
 
-If you enjoy using QGIS, please consider making a donation to support the project - either [financial](https://qgis.org/en/site/getinvolved/donations.html) or of [your time and skills](https://qgis.org/en/site/getinvolved/index.html)! Lastly we would like to also take a moment to encourage you to fund a [special campaign](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) by one of our QGIS developers to get a working test suite for QGIS so that we can improve out quality assurance process and deliver you the best possible releases.
+Als u geniet van het gebruiken van QGIS, overweeg dan eens om een donatie te geven om het project te ondersteunen - ofwel [financieel](https://qgis.org/nl/site/getinvolved/donations.html) of van [uw tijd en vaardigheden](https://qgis.org/nl/site/getinvolved/index.html)! Tenslotte willen we even stilstaan om u aan te moedigen bij te dragen aan een [speciale campagne](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) door een van onze ontwikkelaars van QGIS om een werkende testsuite voor QGIS te krijgen. Zodat we onze processen voor het verbeteren van de kwaliteit kunnen verbeteren en u de best mogelijke uitgaven kunnen geven.
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruik ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken ongeacht uw financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 
 {{<table-of-contents >}}
 ## Algemeen
 ### Mogelijkheid: Expressies invoeren in draaivelden
-When editing attributes in the **attribute table or forms**, you can now enter expressions directly into spin boxes, e.g. `5 * 2.5` and they will be automatically evaluated.
+Bij het bewerken van attributen in de **attributentabel of formulieren**, kunt u nu direct expressies invoeren in draaivelden, bijv. `5 * 2.5` en zij zullen automatisch worden geëvalueerd.
 
 ![](images/entries/e094287244ee1fe161c8ca95951c2d11ca1e6cdd.webp)
 ### Mogelijkheid: Favoriete plaatsen kunnen worden geïmporteerd/geëxporteerd
@@ -71,16 +71,16 @@ Het is nu mogelijk om uw Favoriete plaatsen naar/vanuit een bestand op te slaan/
 
 ![](images/entries/e3d35c32da659821bc0c657b8e7ba40587a1bfb2.webp)
 ### Mogelijkheid: Verbeteringen aan expressies
-- **Integer division produces a double when required**: Previously dividing two integers in an expression would always result in an integer value, i.e. `5 / 2 = 2`. Now the result will always be double when required, so `5 / 2 = 2.5`, which is much more expected for users. A new integer divide operator - `//` has been added to mimic the old behaviour, i.e. `5 // 2 = 2`.
-- **New \'if()\' function**: There is now a new `if(cond, true, false)` expression
+- **Delen van een integer produceert een double indien vereist**: Eerder zou het delen van twee integers in een expressie altijd resulteren in een waarde integer, d.i. `5 / 2 = 2`. Nu zal het resultaat, indien vereist, altijd een double zijn, dus `5 / 2 = 2.5`, wat veel meer wordt verwacht door gebruikers. Een nieuwe operator voor het delen van integer - `//` is toegevoegd om het oude gedrag na te bootsen, d.i. `5 // 2 = 2`.
+- **Nieuwe functie \'if()\'**: Er is nu een nieuwe expressie `if(cond, true, false)`
 - **Trage evaluatie van expressies**
-- **Added get and transform geometry**: These new keywords can be used with `getFeature` for some geometry tests like intersects, crosses, contains, etc.
-- `geometry` - returns the feature\'s geometry
-- `transform` - returns the transformed geometry
+- **Geometrie verkrijgen en transformeren toegevoegd**: Deze nieuwe sleutelwoorden kunnen worden gebruikt met `getFeature` voor enkele testen van geometrie zoals intersects, crosses, contains, etc.
+- `geometry` - geeft de geometrie van het object terug
+- `transform` - geeft de getransformeerde geometrie terug
 
 ![](images/entries/ec56f9b8331e619ad1a44970fde655b68125f9d8.webp)
 ### Mogelijkheid: Doorlopend framework voor testen en verbeteringen in QA
-In our ongoing quest to improve the stability and quality of QGIS, every commit is now tested against a growing test suite to identify regressions automatically. In the image on the right you can see the list of incoming pull requests on our GitHub page are now automatically annotated with a check or cross based on whether our test suite successfully ran on [Travis.ci](https://travis-ci.org/qgis/QGIS) when the pull request is made or updated.
+In onze doorlopende zoektocht naar het verbeteren van de stabiliteit en kwaliteit van QGIS, wordt elke bijdrage nu getest tegen een groeiende testsuite om regressies automatisch te identificeren. In de afbeelding rechts ziet u in de lijst met inkomende pull requests op onze pagina van GitHub, dat ze nu automatisch geannoteerd worden met een vinkje of een kruis. Gebaseerd op het feit of onze testsuite al dan niet succesvol werd uitgevoerd op [Travis.ci](https://travis-ci.org/qgis/QGIS) toen het pull request werd gemaakt of werd bijgewerkt.
 
 We voeren nu ook regelmatig Coverity-scans uit op de codebasis van QGIS. Als resultaat hiervan hebben we meer dan 1000 gevlagde problemen geïdentificeerd en opgelost, inclusief lekken in het geheugen en potentiële crashes. QGIS heeft een dichtheid voor defecten van 0.01 waar het gemiddelde, voor programma's met een soortgelijke grootte, ongeveer 1.0 is.
 
@@ -92,18 +92,18 @@ Het gereedschap voor meten is verbeterd zodat u nu kunt kiezen welke eenheden in
 ![](images/entries/67a001d3d800feec8805de698ed364e91d00daab.webp)
 ## Browser
 ### Meer responderende browser
-In the QGIS Browser items are now expanded in their own threads, speeding up the load time of the browser and making the browser more responsive. Navigating PostGIS sources is now much faster in the browser. The animated snapshot to the right (click image to see the animation) shows the loading of two slow WMS servers in parallel . The browser\'s state (tree expansion) is restored on startup.
+In de QGIS Browser worden items nu in hun eigen threads uitgevouwen, wat de tijd voor laden van de browser versnelt en de browser meer reagerend maakt. Navigeren door bronnen van PostGIS is nu veel sneller in de browser. De geanimeerde schermafbeelding rechts (klik op de afbeelding om de animatie te zien) geeft het laden van twee trage servers van WMS parallel weer. De status van de browser (uitbreiding boom) wordt hersteld bij opstarten.
 
 **Deze mogelijkheid werd ontwikkeld door:** Radim Blazek
 
 ![](images/entries/c8df646572084b8f12027fd54c1210f14c80c8e1.gif)
 ## Gegevensproviders
 ### Mogelijkheid: Ondersteuning voor contextuele afbeeldingen van legenda's van WMS
-If your WMS server supports contextual legends, you can make use of them in QGIS now too. Contextual legends are getLegendGraphic requests which return only the relevant legend for your current view extent, and thus do not include legend items for things you can\'t see in the current map.
+Als uw server van WMS contextuele legenda's ondersteunt, kunt u daar nu ook in QGIS gebruik van maken. Contextuele legenda's zijn verzoeken getLegendGraphic die alleen de relevante legenda voor uw huidige bereik van de weergave teruggeven, en dus geen items voor de legenda bevatten voor dingen die u in de huidige kaart niet kunt zien.
 
-**This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
+**Dit werd mogelijk gemaakt door:** [Regio Toscane](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**Deze mogelijkheid werd ontwikkeld door:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/e516a25492b547113c487d00475cfe07bc7b131e.webp)
 ## Gegevensbeheer
@@ -112,7 +112,7 @@ U kunt nu een aangepast voorvoegsel definiëren in het beheer van joins in het d
 
 ![](images/entries/372e6561a4db3ed3ca3d418c946f81bce0d0d134.webp)
 ### Mogelijkheid: Ondersteuning voor het maken van tijdelijke geheugenlagen
-This release add support for creating new temporary scratch layers within QGIS core. Scratch layers can be created in the `Layer --> Create layer --> New Temporary Scratch Layer` menu option.
+Deze uitgave voegt ondersteuning toe voor het maken van nieuwe tijdelijke tekenlagen binnen de bron van QGIS. Tekenlagen kunnen worden gemaakt via de menuoptie `Kaartlagen --> Laag maken --> Nieuwe tijdelijke tekenlaag`.
 
 ![](images/entries/bddbbd6cb55e9a19441ea564275dd480661e61de.webp)
 ### Mogelijkheid: Ondersteuning voor berekeningen op geselecteerde rijen
@@ -134,33 +134,33 @@ Het gereedschap vereenvoudigen is bewerkt, toegevoegd:
 - ondersteuning voor meerdelige objecten
 - statistieken over de reductie van het aantal punten
 
-**This feature was funded by:** [Tracks for Africa](http://tracks4africa.com/)
+**Dit werd mogelijk gemaakt door:** [Tracks for Africa](http://tracks4africa.com/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**Deze mogelijkheid werd ontwikkeld door:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in samenwerking met [Kartoza](http://kartoza.com/)
 
 ![](images/entries/20b7f96ffc7d37b8c2ae09189d7957a929a716e5.webp)
 ### Mogelijkheid: Verbeteringen voor snappen
-There is a new snapping mode : **snap to all layers** which makes it quick to enable snapping between all layers. Also the underlying snapping architecture of QGIS has been overhauled making snapping much faster on large projects and improving the precision with which snapping takes place. ​There's also less confusion with snapping tolerances being to map units or layer units, so those anticipated 1 metre tolerances don't become 1 degree tolerances without you knowing.
+Er is een nieuwe modus voor snappen : **snappen aan alle lagen** wat het inschakelen van snappen tussen alle lagen sneller maakt. Ook is de onderliggende architectuur voor snappen in QGIS bijgewerkt, wat snappen op grotere projecten sneller maakt en de precisie waarmee snappen wordt uitgevoerd verbetert. ​Er is ook minder verwarring tussen toleranties voor snappen in kaarteenheden of laageenheden, dus de verwachte toleranties van 1 meter worden geen toleranties van 1 graad zonder dat u dat weet.
 
-**This feature was funded by:** [Ville de Vevey, SITNyon](http://www.vevey.ch/) and [QGIS Usergroup Switzerland](http://www.qgis.ch/)
+**Dit werd mogelijk gemaakt door:** [Stad Vevey, SITNyon](http://www.vevey.ch/) en [QGIS gebruikersgroep Zwitserland](http://www.qgis.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**Deze mogelijkheid werd ontwikkeld door:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/8454af2743154585eb82325ab2694e50e7d9efcd.webp)
 ## Legenda van laag
-### Feature: Show rule-based renderer\'s legend as a tree
-Advanced users who leverage QGIS\'s rule based renderer system will be pleased to see that the rules are now presented as a tree in the legend. Better still, each node in the **tree** can be **toggled on/off** individually providing for great flexibility in which sublayers get rendered in your map.
+### Mogelijkheid: Legenda van regelgebaseerde-renderer als een boom weergeven
+Gevorderde gebruikers die gebruikmaken van het systeem van Regelgebaseerde-renderer in QGIS zullen blij zijn te zien dat de regels nu worden gepresenteerd als een boom in de Legenda. Beter nog, elke knoop in de **boom** kan individueel worden **in-/uitgeschakeld** wat grote flexibiliteit verschaft voor hoe sublagen worden gerenderd in uw kaart.
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+**Dit werd mogelijk gemaakt door:** [SIGE](http://www.sige.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**Deze mogelijkheid werd ontwikkeld door:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in samenwerking met [Kartoza](http://kartoza.com/)
 
 ![](images/entries/0d39448aa0893d7a71c5241aa2181750535e62c3.webp)
 ## Printvormgeving
 ### Mogelijkheid: Verbeteringen GUI Printvormgeving
-- View menu option to **hide bounding boxes**. This allows users to hide the bounding boxes for selected items within a composition. It\'s a handy feature for allowing interaction with items while previewing exactly how they will look when the composition is exported, without large boxes blocking the view.
+- Menuoptie voor weergave om **begrenzingsvakken te verbergen**. Dit stelt gebruikers in staat de begrenzingsvakken van in de compositie geselecteerde items te verbergen. Het is een handige mogelijkheid voor het toestaan van interactie met items, terwijl de voorvertoning exact laat zien hoe ze eruit komen te zien wanneer de compositie wordt geëxporteerd, zonder dat grote blokken de weergave blokkeren.
 - **Modus Volledig scherm voor Printvormgeving**
-- Option to **toggle display of panels** in composer, available by both the `view menu`, using the shortcut `F10` and by pressing `Tab` when the composer canvas is selected. It\'s useful for maximising the space when planning a map layout.
+- Optie om **de weergave van panelen in/uit te schakelen** in Printvormgeving, beschikbaar in zowel het `menu Beeld`, met behulp van de sneltoets `F10` en door op `Tab` te drukken wanneer het kaartvenster in printvormgeving is geselecteerd. Het is nuttig voor het maximaliseren van de ruimte bij het plannen van een lay-out voor een kaart.
 
 ![](images/entries/10677c6e1612a4392e8bca0a9cbe31126426becf.webp)
 ### Mogelijkheid: Verbeteringen voor raster
@@ -171,21 +171,21 @@ Nieuwe verticale aflopende richting voor annotaties. Deze wijziging voegt een ni
 ![](images/entries/288d533cbed1f6beeef17004897060c8639bbbb4.webp)
 ### Mogelijkheid: Marges voor items Label
 - U kunt nu zowel horizontale als verticale **marges voor label**-items beheren. Eerder zou alleen één enkele instelling voor de marge gelden voor zowel de horizontale als de verticale marges. Deze wijziging maakt het voor gebruikers mogelijk verschillende horizontale en verticale marges te specificeren.
-- You can now specify negative margins for label items, **allowing text to be drawn slightly outside of a label item\'s bounds**. This is desirable for aligning label items with other items while allowing for optical margin alignment for the label type.
+- U kunt nu negatieve marges specificeren voor items Label, **toestaan dat tekst enigszins buiten de grenzen van het item label wordt getekend**. Dit is gewenst voor het uitlijnen van items Label met andere items terwijl een optische uitlijning van de marge voor het type label wordt toegestaan.
 
 ![](images/entries/7f4905d74ca140ed369bea8866357b9d952ee212.webp)
 ## Plug-ins
 ### Mogelijkheid: Verbeteringen voor console Python
-You can now drag and drop python scripts into QGIS window and they will be executed automatically. We also added a toolbar icon to the plugins toolbar and a shortcut ( `Ctrl-Alt-P` ) for quick access to the python console.
+U kunt nu scripts voor Python in het venster van QGIS slepen en laten vallen en zij zullen automatisch worden uitgevoerd. We hebben ook een pictogram voor de werkbalk toegevoegd aan de werkbalk Plug-ins en een sneltoets ( `Ctrl-Alt-P` ) voor snelle toegang tot de console voor Python.
 
 ![](images/entries/03be8f30ce341816bd3bcd1a58f3b913ddcea07c.webp)
 ## Processing
 ### Mogelijkheid: Nieuw type parameter geometrisch predikaat
 met dit nieuwe type parameter, gebruikt in de algoritmen **Select by location, Extract by location** en **Join attributes by location**, kan de gebruiker precies de te gebruiken ruimtelijke operator selecteren.
 
-**This feature was funded by:** [French Ministry of Ecology, Sustainable Development and Energy](http://www.developpement-durable.gouv.fr/)
+**Dit werd mogelijk gemaakt door:** [Franse Ministerie van Ecologie, Duurzame ontwikkeling en Energie](http://www.developpement-durable.gouv.fr/)
 
-**This feature was developed by:** [Camptocamp](http://www.camptocamp.com)
+**Deze mogelijkheid werd ontwikkeld door:** [Camptocamp](http://www.camptocamp.com)
 
 ![](images/entries/cd198b98cf28e611f5c2e3be93bc5ec90dd0a5b4.webp)
 ### Mogelijkheid: Nieuwe algoritmen
@@ -201,11 +201,11 @@ Een aantal nieuwe algoritmen zijn toegevoegd aan het framework Processing:
 ![](images/entries/b2403fae20cd24cfb1883d24e97de6fc51e40c88.webp)
 ## Programmeerbaarheid
 ### Mogelijkheid: Functionaliteit voor opmerkingen bij expressies toegevoegd
-Comments can now be added to expressions using an SQL style `--` prefix.
+Opmerkingen kunnen nu aan expressies worden toegevoegd met behulp van een SQL-stijl voorvoegsel `--`.
 
 ![](images/entries/e1579eec6d8ab74330fb2f784c68ed16c83bb79d.webp)
 ### Mogelijkheid: Aangepaste functiebewerker voor expressies
-You can now define custom expression functions in the expression widget. See [this blog post](http://nathanw.net/2015/01/19/function-editor-for-qgis-expressions/) for more details.
+U kunt nu aangepaste functies voor expressies definiëren in het widget Expressie. Bekijk [deze blogpost](http://nathanw.net/2015/01/19/function-editor-for-qgis-expressions/) voor meer details.
 
 ![](images/entries/503dd9dadec4fb85ee5ab6335e4f03979a8e7d77.webp)
 ### Mogelijkheid: Ondersteuning voor Qt5
@@ -227,14 +227,14 @@ De boom voor de index zou in theorie ook beter moeten zijn geconstrueerd en zou 
 
 ![](images/entries/80cea18c68b7885cb71c1682ca3777caa048ff9e.webp)
 ### Mogelijkheid: Alleen het geselecteerde deel van een query in SQL uitvoeren
-In the DB Manager SQL editor, it is now possible to highlight a portion of the SQL and only that portion will be executed when you press `F5` or click the `run` button
+In de SQL-bewerker van DB Manager is het nu mogelijk om een deel van de SQL te accentueren en alleen dat gedeelte zal dan worden uitgevoerd als u drukt op `F5` of klikt op de knop `Uitvoeren`
 
 ![](images/entries/0d1343e84aa0946becab1e37880a58ceeffbd491.webp)
 ## QGIS Server
 ### Mogelijkheid: Python plug-ins voor server 
 Ondersteuning van Python plug-ins voor QGIS server brengt de kracht van Python naar de kant van de server, hetgeen snelle en efficiënte ontwikkeling toestaat alsmede het uitrollen van nieuwe mogelijkheden.
 
-**This feature was developed by:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
+**Deze mogelijkheid werd ontwikkeld door:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
 ### Mogelijkheid: Ondersteuning voor laagstijlen
 - QGIS Server ondersteund nu vooraf gedefinieerde laagstijlen in verzoeken GetMap
 - QGIS Server ondersteunt nu meerdere stijlen in het verzoek GetStyles (zie gedeelte Symbologie hieronder)
@@ -263,11 +263,11 @@ Opties omvatten het specificeren van de straal voor de heatmap in pixels, mm of 
 
 ![](images/entries/a13862e4cf8707ec70ddb37a8e3e824db6af883d.webp)
 ### Mogelijkheid: Meerdere stijlen per laag
-It is now possible to set multiple styles for a layer and then easily toggle between them. This functionality is available in the `legend context menu --> styles sub-menu` where it is possible to add/remove styles and quickly switch between them. Layer sets remember styles, and different styles can also be applied to individual composer map items. The multiple styles defined are also available when the project is served via QGIS Server as a WMS layer. For more information on this see also this [blog post](http://www.lutraconsulting.co.uk/blog/2015/02/19/towering-qgis-release/).
+Het is nu mogelijk om meerdere stijlen voor ene laag in te stellen en dan eenvoudig daartussen te schakelen. Deze functionaliteit is beschikbaar in het `contextmenu Legenda --> submenu Stijlen` waar het mogelijk is stijlen toe te voegen/te verwijderen en daar snel tussen te schakelen. Sets van lagen onthouden stijlen, en verschillende stijlen kunnen ook worden toegepast op individuele kaartitems in Printvormgeving. De gedefinieerde meerdere stijlen zijn ook beschikbaar als het project wordt gebruikt via QGIS Server als een laag voor WMS. Voor meer informatie hierover, zie ook deze [blogpost](http://www.lutraconsulting.co.uk/blog/2015/02/19/towering-qgis-release/).
 
-**This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
+**Dit werd mogelijk gemaakt door:** [Regio Toscane](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**Deze mogelijkheid werd ontwikkeld door:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/e6d0058bbae51c52fb9fffc79d4cc459fbaf853b.webp)
 ### Mogelijkheid: Meer instellingen voor gegevens-gedefinieerde symbologie
@@ -279,9 +279,9 @@ De functionaliteit exporteren voor bestanden van DXF is verbeterd, met betere tr
 ### Mogelijkheid: Roteren van kaart in kaartvenster, verbeterde rotatie in Printvormgeving
 Deze uitgave omvat voorlopige ondersteuning voor het roteren in het kaartvenster. U kunt het kaartvenster roteren met behulp van het nieuwe widget voor roteren in de Statusbalk. Ondersteuning voor roteren is ook uitgebreid naar de Printvormgeving zodat  het labelen en symbologie etc. juist afhandelt.
 
-**This feature was funded by:** [Japan Space Imaging Corporation (JSI)](http://www.spaceimaging.co.jp/)
+**Dit werd mogelijk gemaakt door:** [Japan Space Imaging Corporation (JSI)](http://www.spaceimaging.co.jp/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**Deze mogelijkheid werd ontwikkeld door:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/b655549a3336c2fb16eef87f6f30fe50f5abe9f9.webp)
 ## Gebruikersinterface

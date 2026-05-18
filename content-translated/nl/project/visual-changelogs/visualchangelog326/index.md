@@ -131,7 +131,7 @@ Stelt gebruikers in staat graduele afbrekingen te maken met een specifieke breed
 
 ![image13](images/entries/5f4efe2866e8ba166c3948fb22946ec1ed3fa02b.gif)
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Dit werd mogelijk gemaakt door [SLYR](https://north-road.com/slyr/)
 
 This feature was developed by [Nyall Dawson (North Road Consulting)](https://north-road.com)
 ### Mogelijkheid: Paneel voor aangepast streepjespatroon geeft totale lengte van het patroon weer

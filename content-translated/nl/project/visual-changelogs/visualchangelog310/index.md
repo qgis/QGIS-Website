@@ -20,7 +20,7 @@ QGIS 3.10 brengt een uitgebreide lijst nieuwe wijzigingen en heel veel polijsten
 
 We willen onze dank uitspreken aan alle ontwikkelaars schrijvers van documentatie, testers en alle andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen). Vanuit de QGIS gemeenschap hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn in het opwaarderen van QGIS, kijk dan ook eens op qgis.org en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sustaining members is provided below - our very great thank you to all of our supporters!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst met donoren]({{< ref "/funding/donate.md" >}}). Als u een officieel dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende lidmaatschappen]({{< ref "/funding/membership.md" >}}) voor details. Ondersteuning van QGIS helpt ons om fondsen te verkrijgen voor onze halfjaarlijkse ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige dragende leden wordt hieronder weergegeven - een welgemeend bedankt voor al onze ondersteuners!
 
 {{<fund type="active" >}}
 
@@ -33,113 +33,113 @@ Gebruiken van het gereedschap Objecten identificeren op een 3D-lijn neemt nu de 
 
 ![image2](images/entries/b1aba6e9334ee1d862bde8f66f9ae4d30d945703.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Symbologie
 ### Mogelijkheid: Standaard instelling van resamplen voor nieuw toegevoegde rasterlagen
-In QGIS 3.10 we\'ve added a new setting for the default resampling mode to use when for newly-added raster datasets. (This setting can be found in the rendering panel of the options dialog).
+In QGIS 3.10 hebben we een nieuwe instelling toegevoegd voor de te gebruiken standaardmodus voor resamplen voor nieuw toegevoegde rastergegevenssets. (Deze instelling is te vinden in het paneel Renderen van het dialoogvenster Opties).
 
 ![image3](images/entries/07ae51e244cc5b1d6a971e386ea98f1314a3dfb1.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Verbeterd kopiëren/plakken van symbolen
-We\'re passionate about making QGIS a user-friendly cartographic tool which is a joy to work with, so we\'ve added a bunch of new shortcuts throughout the interface which allow you to copy and paste symbols from one part of QGIS to another. E.g, you can copy a symbol from a category and paste it directly onto another category, or a layout shape item, or inside the style manager dialog!
+We zijn echt van plan om van QGIS een gebruikersvriendelijk cartografisch gereedschap te maken dat een plezier is om mee te werken, dus hebben we veel nieuwe sneltoetsen toegevoegd, door de gehele interface, die u in staat stellen symbolen van het ene gedeelte van QGIS naar een ander te kopiëren en te plakken. U kunt bijvoorbeeld een symbool kopiëren uit een categorie en dat direct plakken in een andere categorie, of een item Vorm voor lay-out, of in het dialoogvenster van Stijlmanager!
 
 ![image4](images/entries/79f8365571da7b6c60f001f388d9c02d9e8920b2.webp)
 
-This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: \"Center of segment\" placement mode for marker and hash line symbol layers
-We\'ve added a brand new \"Center of segment\" mode for placement of marker line or hashed lines symbols. This allows you to place markers or hash lines over the center point of individual line segments, exposing cartographic effects which were not possible before (and improving the quality of layers converted from ArcMap using the [SLYR](https://north-road.com/slyr/) tool).
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
+### Mogelijkheid: Modus voor plaatsing \"Midden van segment\" voor markerings- en gestreepte lijn-symboollagen
+We hebben een nagelnieuwe modus \"Midden van segment\" toegevoegd voor het plaatsen van symbolen van markeringslijnen of gestreepte lijnen. Dit stelt u in staat markeringen of gestreepte lijnen te maken boven het middelpunt van individuele lijnsegmenten, wat cartografische effecten laat zien die eerder niet mogelijk waren (en de kwaliteit van vanuit ArcMap geconverteerde lagen met behulp van het gereedschap [SLYR](https://north-road.com/slyr/) verbetert).
 
 ![image5](images/entries/c1f50067d50b909e38b7333ad5d8d415e763801d.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Meer flexibele Data-bepaalde expressies voor verschuivingen
-In previous QGIS releases, only string values of the format \'x,y\' would be permitted for data-defined symbol and label offsets. We\'ve listened to user feedback that this was confusing, and in QGIS 3.10 we now allow arrays of numbers as a valid expression result for offsets. E.g. \"array(3,5)\".
+In eerdere uitgaven van QGIS waren alleen waarden tekenreeks in de indeling \'X,Y\' toegestaan voor verschuivingen voor data-bepaalde symbolen en labels. We hebben geluisterd naar de terugkoppeling van onze gebruikers dat dit verwarrend was en in QGIS 3.10 staan we nu arrays van getallen toe als een geldig resultaat voor de expressie voor verschuivingen. Bijv. \"array(3,5)\".
 
 ![image6](images/entries/1ccab8f4328238f5275e41c3d466bf27a5d097a2.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Labelen
 ### Mogelijkheid: Tekstindelingen en instellingen voor labels in stijlen voor QGIS maken en beheren
-In QGIS 3.10 we\'ve finally implemented a long-awaited feature, allowing users to manage their own libraries of custom text formats and label settings alongside their existing symbol libraries!
+In QGIS 3.10 hebben we eindelijk een langverwachte mogelijkheid geïmplementeerd, die het voor gebruikers mogelijk maakt hun eigen bibliotheken met aangepaste tekstindelingen en instellingen voor labels te beheren, naast hun bestaande symboolbibliotheken!
 
-Now, the Style Manager dialog can be used to manage text formats (which store the font, color, buffers, shadows, and backgrounds of text formats) and layer-wide label settings. (A \"text format\" includes just font settings and other appearance related settings, while a \"labe setting\" also includes layer-type specific settings such as label placement, priority, and rendering settings).
+Nu kan het dialoogvenster Stijlmanager worden gebruikt om tekstindelingen (die het lettertype, kleur, buffers, schaduwen, en achtergronden van tekstindelingen opslaan) en laag-brede instellingen voor labels te beheren. (Een \"tekstindeling\" bevat slechts instellingen voor lettertype en andere aan het uiterlijke gerelateerde instellingen, terwijl een \"instelling voor een label\" ook de voor het type laag specifieke instellingen, zoals plaatsing van labels, prioriteit, en instellingen voor renderen bevat).
 
-Text Formats and Label Settings offer all the same functionality as you\'re used to for managing symbols and color ramps within styles, including import and export to XML files, tagging, smart groups, favoriting etc\...
+Tekstindelingen en Instellingen voor labels bieden dezelfde functionaliteit als die welke u gewend was voor het beheren van symbolen en kleurverlopen in stijlen, inclusief het importeren en exporteren naar XML-bestanden, taggen, slimme groepen, favorieten etc\…
 
 ![image7](images/entries/bf657c21ba6deaff10ff80611a77b435e12155e5.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [North Road](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [North Road](http://north-road.com)
 ### Mogelijkheid: Markeringssymbolen als achtergrond voor labels
-Alongside all the other exciting labeling improvements which we\'ve landed in 3.10, we now allow use of marker symbols as a background for labels. This allows you to use all the rich functionality available for marker symbols as a background to labels, and complements the existing shapes and SVG background choices!
+Naast alle andere opwindende verbeteringen voor labelen die we hebben doorgevoerd in 3.10, staan we nu het gebruiken van symbolen voor markeringen als een achtergrond voor labels toe. Dit stelt u in staat alle rijke beschikbare functionaliteit voor symbolen van markeringen te gebruiken als achtergrond voor labels, en vult de bestaande keuzes voor vormen en SVG-achtergronden aan!
 
 ![image8](images/entries/3a9fd11192cdbdaa2f139a28d63cc33e1d10c3bc.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [North Road](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [North Road](http://north-road.com)
 ### Mogelijkheid: Tekstballonnen label!
-A common practice when placing labels on a crowded map is to use \'callouts\' - labels which are placed outside (or displaced from) their associated feature, with a line connecting the label and the feature. In QGIS 3.10, we\'ve added native support for quickly and easily creating beautiful label callouts (no more expression mangling or drawing by hand!).
+Een veelvoorkomend gebruik bij het plaatsen van labels op een volle kaart is om \'tekstballonen\' te gebruiken – labels die worden geplaatst buiten (of verplaatst van) hun geassocieerde object, met een lijn die het label verbindt aan het object. In QGIS 3.10 hebben we eigen ondersteuning toegevoegd voor het snel en gemakkelijk maken van mooie tekstballonnen voor labels (niet meer het verhaspelen van expressies of met de hand tekenen!).
 
-We\'ve added many settings for controlling exactly how these label callouts are drawn, and naturally, you can take full advantage of the richness of QGIS line symbol support within your callouts! This includes all the existing line symbol styles, layer effects, and even support for data-defined settings!
+We hebben veel instellingen toegevoegd voor het exact beheren van hoe deze tekstballonnen voor labels moeten worden getekend, en natuurlijk kunt u volledig voordeel halen uit de rijkheid van QGIS voor ondersteuning van lijnsymbolen in uw tekstballonnen! Dit omvat alle bestaande stijlen voor lijnsymbolen, laageffecten, en zelfs ondersteuning voor data-bepaalde instellingen!
 
-In 3.10, we expose options for either a \"simple\" (direct line) or \"Manhattan\" (straight lines) callout styles. If you\'re interested in sponsoring additional callout styles in a future release, get in contact with the QGIS team to find out how you can make this happen!
+In 3.10 maken we opties beschikbaar voor ofwel een \"doorgetrokken\" (directe lijn) of \"Manhattan\" (rechte lijnen) stijl voor tekstballonnen. Als u geïnteresseerd bent in het sponsoren van aanvullende stijlen voor tekstballonnen in een toekomstige uitgave, neem dan contact op met het team van QGIS om uit te zoeken hoe u dit kunt laten gebeuren!
 
 ![image9](images/entries/7bcc02d06eb7030a289e129b9bed2656d6c6fefb.webp)
 
-This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Uitlijning label over meerdere regels voor individuele labels wijzigen
-We\'ve added an additional option to allow you to control multi-line alignment on a label-by-label basis. Just active the Label Properties tool and click on your map labels, and a new setting for the text alignment is now available.
+We hebben een aanvullende optie toegevoegd om het u mogelijk te maken de uitlijning over meerdere regels op een basis per-label te beheren. Activeer gewoon het gereedschap Labeleigenschappen en klik op uw kaartlabels, en een nieuwe instelling voor uitlijning van de tekst is nu beschikbaar.
 
 ![image10](images/entries/14b307efef5de1085e4c402d3e06e5dd10a64ae2.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Niet geplaatste labels weergeven
-If you\'ve ever been concerned about automatic label placement hiding away important labels on your map \-- this feature is for you! In QGIS 3.10 we\'ve added an option to show \"Unplaced labels\" on your map, so you can see immediately exactly what\'s been hidden from view (AKA \"see what others can\'t\")!
+Als u ooit bezorgd was over het feit dat automatisch plaatsen van labels belangrijke labels op uw kaart zou verbergen \-- dan is deze mogelijkheid voor u! In QGIS 3.10 hebben we een optie toegevoegd om \"Niet geplaatste labels\" weer te geven op uw kaart. U kunt dus onmiddellijk exact zien wat in de weergave is verborgen (ALIAS \"zien wat anderen niet kunnen zien\")!
 
-This new setting (which is accessed through the Labeling toolbar) will render these Unplaced Labels in a red color (but the color can be changed from the project Label Settings dialog). After identifying any missing labels in your map, we suggest you use the existing Labeling tools such as the \"move label\" or \"show/hide label\" tool to rearrange your map and make these labels visible again.
+Deze nieuwe instelling (waar u toegang toe krijgt via de werkbalk Labelen) zal deze Niet geplaatste labels renderen in een rode kleur (maar de kleur kan worden gewijzigd in het dialoogvenster Instellingen voor labels van het project). Na het identificeren van ontbrekende labels in uw kaart, raden we aan de bestaande gereedschappen voor Labelen, zoals de gereedschappen \"Label verplaatsen\" of \"Labels weergeven/verbergen\" te gebruiken om uw kaart opnieuw te schikken en deze labels opnieuw zichtbaar te maken.
 
 ![image11](images/entries/4e53a6482dacb6e2d6d1ff2a8c4592d98f82430a.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Afstand overschrijden voor lijnlabels
-We understand that making a cartographic masterpiece is a demanding task, so in QGIS 3.10 we\'ve extended the capabilities of curved labels by adding a new \"overrun distance\" setting. This setting allows you to control exactly how far a curved label is allowed to extend past to ends of a line feature. Bumping up the distance will result in giving the labeling engine more flexibility in placing your labels, resulting in more labels being placed in better locations on your map! Win! The setting works for both curved and parallel label modes, and supports distances in mm/map units/pixels/etc, and data-defined distances.
+We begrijpen dat het maken van een cartografisch meesterwerk een veeleisende taak is, dus hebben we in QGIS 3.10 de mogelijkheden voor gebogen labels uitgebreid door een nieuwe instelling \"Afstand overschrijding\". Deze instelling stelt u in staat exact te beheren hoe ver een gebogen label zich mag uitstrekken tot voorbij de einden van een object lijn. Opvoeren van de afstand zal resulteren in het meer flexibiliteit geven aan het programma voor labelen voor het plaatsen van uw labels, wat ertoe zal leiden dat meer labels op betere locaties op uw kaart zullen worden geplaatst! Winst! De instelling werkt voor zowel de modi voor labels Gebogen als Parallel, en ondersteunt afstanden in mm/kaarteenheden/pixels/etc., en data-bepaalde afstanden.
 
 ![image12](images/entries/0b830e5ea769aacfd9c5bf9d8028ed278590d803.gif)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: Data defined control for \"label every part of multipart features\" setting
-The \"label every part\" option was one of the very few settings which couldn\'t be previously data-definable for labels. We\'ve remedied this omission in QGIS 3.10, and you can now control whether you want all parts labelled on a feature-by-feature basis!
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
+### Mogelijkheid: Data-bepaald besturingselement voor instelling \"Elk deel van een samengesteld object labelen\"
+De optie \"Elk deel van een samengesteld object labelen\" was een van de weinige instellingen die eerder niet data-bepaald was voor labels. We hebben deze ontbrekende mogelijkheid verholpen in QGIS 3.10, en u kunt nu beheren of u alle delen gelabeld wilt hebben op een object-per-objectbasis!
 
 ![image13](images/entries/9db2c54c0d65bc61da8c0c46cfefcbab96c833df.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: Control \"label all parts\" via the label properties tool
-We aren\'t lying when we say that QGIS 3.10 is a love-letter to map labelling! Another new option we\'ve added in this version is interactive control over whether all parts of a feature should be labeled via the Label Properties tool.
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
+### Feature: \"Alle delen labelen\" beheren via het gereedschap Labeleigenschappen
+We liegen niet als we zeggen dat QGIS 3.10 een liefdesbrief is voor het labelen van een kaart! Een andere nieuwe optie die we in deze versie hebben toegevoegd, is interactief beheer over het feit of alle delen van een object zouden moeten worden gelabeld via het gereedschap Labeleigenschappen.
 
 ![image14](images/entries/737cd2f8bc569ee9ad7df9aee02eec83b4e6facd.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Verticale tekstrichting
 Vanaf 3.10 is QGIS nu volledig uitgerust om verticaal georiënteerde labels te renderen Voor onze Chinese, Japanse en Koreaanse gebruikers: zegt het voort! :)
 
@@ -147,148 +147,148 @@ U kunt kiezen uit twee modi voor verticale oriëntatie: een die altijd labels ve
 
 ![image15](images/entries/e49baccdb83da1b88433e2c7718642ae4a78810d.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Kerning van lettertype beheren
-Another option we\'ve added for improving the conversion of ArcMap symbology to QGIS (via [SLYR](https://north-road.com/slyr/)) is a new setting for controlling whether label fonts are kerned (or not).
+Een andere optie die we hebben toegevoegd voor het verbeteren van de conversie van symbologie van ArcMap naar QGIS (via [SLYR](https://north-road.com/slyr/)) is een nieuwe instelling voor het beheren of lettertypen moeten worden gespatieerd (of niet).
 
 ![image16](images/entries/b2a650a874e263173a56d93b046df7f031eb8d6e.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Renderen
 ### Mogelijkheid: Rasterlagen buiten het gerapporteerde bereik renderen 
-Depending on the server technology used, sometimes the map extent reported by raster layers may be smaller than the actual area which can be rendered (especially notably for WMS servers with symbology which takes more space than the data extent). Previous version of QGIS would crop raster layers to the reported extents, resulting in truncated symbols on the borders of these layers. Now, there\'s a new option to allow you to override this behaviour and ignore the reported extent for affected servers.
+Afhankelijk van de gebruikte technologie voor de server zou het door rasterlagen gerapporteerde kaartbereik soms kleiner kunnen zijn dan het feitelijke gebied dat kan worden gerenderd (valt speciaal op bij WMS-servers met symbologie die meer ruimte inneemt dan het gegevensbereik). Eerdere versies van QGIS zouden rasterlagen bijknippen tot de gerapporteerde bereiken, wat zou resulteren in afgebroken symbolen aan de randen van deze lagen. Nu is er een nieuwe optie die u toestaat dit gedrag te overschrijven en het gerapporteerde bereik voor getroffen servers te negeren.
 
 Deze mogelijkheid werd ontwikkeld door Matthias Kuhn (Opengis.ch)
 ### Mogelijkheid: PDF's en TIF's voorzien van geoverwijzingen bij opslaan van het kaartvenster als afbeelding/PDF
-In QGIS 3.10 we\'ve implemented support for embedded georeferencing within PDFs and TIFs when using the save \[map canvas\] as image or PDF.
+In QGIS 3.10 hebben we ondersteuning geïmplementeerd voor ingebedde geoverwijzingen binnen PDF\'s en TIF\'s bij het gebruiken van het opgeslagen \[kaartvenster\] als afbeelding of PDF.
 
 ![image17](images/entries/1030adf0c9c0c46ff5a38a09ae16a735bdff3684.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Nieuwe decoratie voor afbeelding kaartvenster
-We\'ve added a brand new decoration for the QGIS main canvas, allowing you to add a bitmap and SVG image overlay (logo, legend, etc.) to your map window.
+We hebben een nagelnieuwe decoratie toegevoegd voor het kaartvenster van QGIS, die het u mogelijk maakt een bitmap en SVG-afbeelding overleg (logo, legenda, etc.) toe te voegen aan uw kaartvenster.
 
 Net als met andere delen van QGIS ondersteunt de decoratie afbeelding aan te passen vulling- en omtrekkleuren voor parameter-ingeschakelde SVG's.
 
 ![image18](images/entries/41ab256b477b0baf0971b398f882a6633cd12615.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Classificatie voor logaritmische schaal
 U kunt nu een techniek voor een classificatie, gebaseerd op logaritme, gebruiken bij het maken van bereiken voor de renderer Gradueel.
 
 ![image19](images/entries/bb6303d9589972781988549283ef150700ba5863.webp)
 
-This feature was developed by [OPENGIS.ch](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [OPENGIS.ch](https://www.opengis.ch)
 ## 3D-objecten
 ### Mogelijkheid: Gereedschap Meten in 3D-kaartweergave
-Now you can measure distances in 3D map views! This new tool is available in the 3D map view toolbar, and has the same workflow as the 2D measurement tool (with the same configuration settings of rubber band color, units, decimal place, etc). It also has the same behavior (left-click to add a new point, middle-click to delete the last point, and right-click to restart the measurement). This allows you to measure distances in 3d, e.g. the distance between two building's roofs or the length of a river running down a mountain. See the 3D measurement tool in action:
+Nu kunt u afstanden meten in 3D-kaartweergaven! Dit nieuwe gereedschap is beschikbaar in de werkbalk 3D-kaartweergave en heeft dezelfde werkstroom als het gereedschap Meten voor 2D (met dezelfde instellingen voor configuratie van kleuren voor elastiek, eenheden, decimale plaatsen, etc.). Het heeft ook hetzelfde gedrag (links-klikken voor toevoegen van een nieuw punt, middel-klikken om het laatste punt te verwijderen en rechts-klikken om het meten opnieuw te beginnen). Dit stelt u in staat afstanden te meten in 3D, bijv. de afstand tussen de daken van twee gebouwen of de lengte van een rivier die afdaalt langs een berg. Bekijk het gereedschap 3D Meten in actie:
 
-This feature was funded by [Google Summer of Code Program](https://summerofcode.withgoogle.com/projects/#5265985207009280)
+Dit werd mogelijk gemaakt door [Google Summer of Code Program](https://summerofcode.withgoogle.com/projects/#5265985207009280)
 
-This feature was developed by [Ismail Sunni](http://ismailsunni.id)
+Deze mogelijkheid werd ontwikkeld door [Ismail Sunni](http://ismailsunni.id)
 ### Mogelijkheid: Renderen Billboard voor punten
 We hebben een nieuw soort stijl voor renderen toegevoegd voor puntlagen. Het stelt u in staat het punt weer te geven met een symbool van QGIS (bijv. markering, SVG, etc) dat altijd gericht is op de gebruiker en altijd dezelfde grootte heeft. U kunt een voorbeeld van het gebruik zien in de video.
 
-This feature was funded by [Google Summer of Code Program](https://summerofcode.withgoogle.com/projects/#5265985207009280)
+Dit werd mogelijk gemaakt door [Google Summer of Code Program](https://summerofcode.withgoogle.com/projects/#5265985207009280)
 
-This feature was developed by [Ismail Sunni](http://ismailsunni.id)
+Deze mogelijkheid werd ontwikkeld door [Ismail Sunni](http://ismailsunni.id)
 ### Mogelijkheid: 3D-navigatie op scherm
 In eerdere versies van QGIS kon u al door de 3D-wereld navigeren met een muis en het toetsenbord. Helaas is het voor een nieuwe gebruiker niet zo eenvoudig om ze te gebruiken! 3D navigeren op scherm zal helpen bij het navigeren in de 3D-wereld. Er zijn knoppen om in/uit te zoomen, op/neer kantelen, verschuiven op/neer/links/rechts, en roteren van de 3D-kaartweergave. Deze mogelijkheid kan worden geactiveerd in de werkbalk 3D-kaartweergave Bekijk hoe het te gebruiken in deze video:
 
 ![image20](images/entries/570ff6f8c365a78d05bb56cfdbd8647f83aac331.webp)
 
-This feature was funded by [Google Summer of Code Program](https://summerofcode.withgoogle.com/projects/#5265985207009280)
+Dit werd mogelijk gemaakt door [Google Summer of Code Program](https://summerofcode.withgoogle.com/projects/#5265985207009280)
 
-This feature was developed by [Ismail Sunni](http://ismailsunni.id)
+Deze mogelijkheid werd ontwikkeld door [Ismail Sunni](http://ismailsunni.id)
 ## Afdruklay-outs
 ### Mogelijkheid: Schikking van rechts naar links voor legenda's
-Thanks to funding from our right-to-left locale users, we\'ve added a new choice for arrangement of legend elements. These include symbols to the left OR symbols to the right of the legend text, and alignment options for groups, subgroups and item text.
+Dankzij de giften van onze van rechts naar links locale-gebruikers hebben we een nieuwe keuze toegevoegd voor het schikken van elementen van de legenda. Dit omvat symbolen links OF symbolen rechts van de tekst van de legenda, en opties voor uitlijnen voor groepen, subgroepen en items tekst.
 
 Deze mogelijkheid maakt het mogelijk gebruikersvriendelijke legenda's van rechts naar links te maken. We maken deze stijl voor uitlijning van rechts naar links zelfs de standaard bij het maken van nieuwe legenda's onder op RTL gebaseerde locale om dingen gebruikersvriendelijker te maken.
 
 ![image21](images/entries/420b784c4fc79a09358201c8814cfe48b82dbbca.webp)
 
-This feature was funded by [Kaplan Open Source](https://kaplanopensource.co.il/)
+Dit werd mogelijk gemaakt door [Kaplan Open Source](https://kaplanopensource.co.il/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Marge beheren onder koppen van groepen en subgroepen van legenda
-If you\'re after pixel-perfect control over your legend appearance \-- this one\'s for you! QGIS 3.10 now allows you to tweak the spacing applied under group or subgroup headings.
+Als u uit bent op pixel-perfect beheer over het uiterlijk van uw legenda \-- dan is deze voor u! QGIS 3.10 stelt u nu in staat de afstand aan te passen die wordt toegepast onder koppen van groepen of subgroepen.
 
 ![image22](images/entries/78263d3350afd05147928378f81dddba13961acc.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Data-bepaalde instellingen in tekstindelingen
-Since so much of QGIS\' cartographic power comes from the flexibility of data-defined symbol settings, we\'ve now allowed them to be used for text formats too! This means you can now use data defined properties wherever text formats are used, e.g. within layout scalebar text.
+Omdat zoveel van de cartografische kracht van QGIS voortkomt uit de flexibiliteit van data-bepaalde instellingen voor symbolen, hebben we het nu mogelijk gemaakt ze ook te gebruiken voor tekstindelingen! Dat betekent dat u nu data-bepaalde eigenschappen kunt gebruiken, overal waar tekstindelingen worden gebruikt, bijv. binnen tekst van de lay-out voor de schaalbalk.
 
 ![image23](images/entries/69961f6faa732b683ccfb1ab539250b21ea5bd26.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: \@scale_value variable
-To complement the new support for data-defined settings within text formats, we added a new \@scale_value expression variable. This can be used when evaluating data defined text format properties while rendering scale bar text, and ultimately allows you to have per-label customisation of the text format inside scale bars (e.g. showing certain distance labels in bold).
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
+### Mogelijkheid: Variabele @scale_value
+Als aanvulling op de nieuwe ondersteuning voor data-bepaalde instellingen binnen tekstindelingen, hebben we een nieuwe variabele voor een expressie @scale_value toegevoegd. Deze kan worden gebruikt bij het evalueren van eigenschappen van data-bepaalde tekstindelingen tijdens het renderen van de tekst voor de schaalbalk, en stelt u uiteindelijk in staat om aanpassingen per-label van de tekst binnen schaalbalken te hebben (bijv. bepaalde labels voor afstanden vet weergeven).
 
 ![image24](images/entries/ec2940b4222b8172403b20b0f70af0588c38f0cc.gif)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Opties voor plaatsen van label Schaalbalk
-We\'ve extended layout scale bars with additional styling options, adding a pair of settings to refine the placement of scalebar labels. Now you can define whether labels are shown above or below the scalebar itself, as well as setting whether labels are centered in the middle of a segment or placed at its end.
+We hebben de lay-out van schaalbalken uitgebreid met aanvullende opties voor opmaken, en een paar instellingen toegevoegd om het plaatsen van labels voor de schaalbalk te verfijnen. Nu kunt u definiëren of labels boven of onder de schaalbalk zelf moeten worden weergegeven, alsook instellen of labels moeten worden gecentreerd in het midden van een segment of aan het eind ervan geplaatst moeten worden.
 
 ![image25](images/entries/e571fc1811ccf58e007a7913600b65377e31ed41.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Vereenvoudigen van exporteren van PDF of SVG
 Eerdere versies van QGIS maakten vaak ENORME uitvoer voor PDF (of SVG), omdat deze uitvoer veel overbodige punten bevatten die niet herkenbaar waren als anders voor de DPI van de export. Nu passen we, standaard, een vereenvoudiging toe bij het schrijven naar PDF- of SVG-bestanden, wat er voor zorgt dat geometrieën worden vereenvoudigd en aanwezige overbodige punten automatisch worden verwijderd (bijv. als de DPI voor het exporteren 300 dpi is, zullen punten die minder dan 1/600 inch verschillen van elkaar worden verwijderd).
 
-This new setting, \"Simplify geometries to reduce output file size\", is exposed in the SVG or PDF export settings dialogs shown when exporting a layout/atlas/report to PDF or SVG.
+Deze nieuwe instelling, \"Geometrieën vereenvoudigen om de bestandsgrootten te verkleinen\", is zichtbaar in de dialoogvensters voor instellingen voor het exporteren als SVG of PDF, weergegeven wanneer een lay-out/Atlas/rapport wordt geëxporteerd naar PDF of SVG.
 
-No more ridiculously complex and large export file size for your QGIS print layouts! Aside from the file size issues, these also cause problems when trying to load into other applications, e.g. Inkscape, which chokes on the huge number of vertices and grinds to a crawl\.... ouch!
+Geen belachelijk complexe en grote bestandsgrootte na exporteren voor uw afdruklay-outs van QGIS! Naast de problemen met de bestandsgrootten, veroorzaken zij ook problemen bij het proberen te laden in andere toepassingen, bijv. Inkscape dat zich verslikt in het enorme aantal punten en uiteindelijk nog slechts voortkruipt\…. ouch!
 
 ![image26](images/entries/7eea84e316a148c6872369d3df5fb63a6bc2f043.webp)
 
 Dit werd mogelijk gemaakt door de GeoPDF export group: Land Vorarlberg; Kantons van Zug, Thurgovia en Neuchâtel; Steden Wenen en Dornbirn; Biodiversity Information Service for Powys & Brecon Beacons National Park
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Verbeterde exports SVG-lagen
-User feedback told us that the way we created layered SVG files in past releases was frustrating to work with. So, in QGIS 3.10, we\'ve revamped this feature and now SVG layer names will match the layer names from QGIS, making it much easier for designers to understand the contents of the document! Read more about this are related features [here](https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/).
+Terugkoppeling van gebruikers leerde ons dat de manier waarop we in eerdere uitgaven gelaagde SVG-bestanden maakten, frustrerend was om mee te werken. In QGIS 3.10 hebben we dus deze mogelijkheid opnieuw opgebouwd en nu zullen de laagnamen van de SVG overeenkomen met de laagnamen uit QGIS, wat het voor ontwerpers veel gemakkelijker maakt de inhoud van het document te begrijpen! Lees meer hierover en gerelateerde mogelijkheden [hier](https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/).
 
 ![image27](images/entries/dac35ad47f56dd24456df6d318359a0d70efeb15.webp)
 
 Dit werd mogelijk gemaakt door de GeoPDF export group
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Indicatie voor opnieuw tekenen kaartlay-out
-In earlier QGIS releases, there was no way to tell whether a map refresh had finished inside a QGIS print layout designer window. So, we\'ve added a new indicator in the status bar which shows whenever there\'s a redraw is humming away in the background. No more user confusion!
+In eerdere uitgaven van QGIS was er geen manier om aan te geven of het vernieuwen van de kaart was voltooid binnen een venster van QGIS-afdruklay-out ontwerpen. We hebben dus een nieuwe indicator in de Statusbalk toegevoegd die weergeeft of het opnieuw tekenen nog nazoemt op de achtergrond. Geen verwarring meer voor de gebruiker!
 
 ![image28](images/entries/8c6426a723b9fdc1cead1949f3304db4763ecb9c.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: GeoPDF exporteren
-If you export PDF\'s from QGIS now, there is an option to export it as GeoPDF. If you open this PDF with a compatible PDF viewer, you will then be able to toggle layers on and off, pan and zoom around the PDF and interactively interrogate features! Futhermore, you can re-import these GeoPDF documents back into QGIS as vector layers, and see all the features in their original locations and with their original attribute values.
+Wanneer u nu pdf\'s exporteert vanuit QGIS, is er een optie om het als GeoPDF te exporteren. Als u deze pdf opent met een compatibele pdf-lezer, zult u in staat zijn lagen in en uit te schakelen, te verplaatsen en te zoomen in de pdf en interactief objecten kunnen bevragen! Verder kunt u deze documenten van GeoPDF terug importeren in QGIS als vectorlagen, en alle objecten zien op hun originele locaties en met hun originele waarden voor attributen.
 
-GeoPDF export is available for either print layouts or map canvas exports. We\'ve added lots of flexibility to this new option, e.g. with options for controlling which layers will be exported as interactive layers. You can even choose to export multiple map themes into a single GeoPDF document, so that your readers can interactive switch between these themes! (Wow!)
+Exporteren naar GeoPDF is beschikbaar voor zowel afdruklay-outs als voor het kaartvenster. We hebben heel veel flexibiliteit voor deze nieuwe optie toegevoegd, bijv. met opties voor het beheren van welke lagen als interactieve lagen zullen worden geëxporteerd. U kunt er zelfs voor kiezen om meerdere kaartthema's naar een enkel document van GeoPDF te exporteren, zodat uw lezers interactief kunnen schakelen tussen deze thema's! (Wow!)
 
 Onthoud dat exporteren naar GeoPDF een versie van QGIS vereist die is gebaseerd op GDAL 3.0 of later.
 
-Read more at [QGIS 3.10 Loves GeoPdf](https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/)
+Lees meer op [QGIS 3.10 Loves GeoPdf](https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/)
 
 ![image29](images/entries/9f73cce9c3f3ff81c6b66adab654ff4e23524ae1.webp)
 
 Dit werd mogelijk gemaakt door de GeoPDF export group: Land Vorarlberg; Kantons van Zug, Thurgovia en Neuchâtel; Steden Wenen en Dornbirn; Biodiversity Information Service for Powys & Brecon Beacons National Park
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Data-bepaald beheer rastereigenschappen
-We\'ve added data defined control over layout map grids, to give you extra flexibility in the appearance and behaviour of these grids, and to allow you to create layout templates and atlases with grids which dynamically respond to map scale changes.
+We hebben data-bepaald beheer voor kaartrasters van lay-outs toegevoegd, om u extra flexibiliteit te geven voor het uiterlijk en gedrag van deze rasters, en om het voor u mogelijk te maken sjablonen voor lay-outs en Atlassen te maken met rasters die dynamisch reageren op wijzigingen in de schaal van de kaart.
 
-Now, you\'re able to set data-defined control for:
+Nu bent u in staat data-bepaald beheer in te stellen voor:
 - status raster ingeschakeld
 - X/Y-intervallen voor raster
 - X/Y-verschuivingen voor rasters
@@ -301,9 +301,9 @@ Now, you\'re able to set data-defined control for:
 
 Dit werd mogelijk gemaakt door Andreas Neumann
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Dynamische grootten segment rasters
-Just like the existing scalebar setting of the same name, this new setting allows you to set a page-size-based range for map grid intervals. The grid interval will be dynamically calculated based on the map extent and scale to pick the largest possible \"pretty\" interval which results in grid sizes inside the desired range.
+Net als de bestaande instelling voor de schaalbalk met dezelfde naam, stelt deze nieuwe instelling u in staat een op de paginagrootte gebaseerd bereik in te stellen voor intervallen van het kaartraster. De interval voor het raster zal dynamisch worden berekend, gebaseerd op het kaartbereik, en op schaal worden gebracht voor de grootst mogelijke \"prettige\" interval die resulteert in rastergrootten binnen het gewenste bereik.
 
 Deze wijziging maakt het voor u mogelijk lay-outs en sjablonen voor lay-outs te maken met rasters die elegant reageren voor een groot bereik aan schalen voor de kaart!
 
@@ -311,95 +311,95 @@ Deze wijziging maakt het voor u mogelijk lay-outs en sjablonen voor lay-outs te 
 
 Dit werd mogelijk gemaakt door Andreas Neumann
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Favoriete plaatsen voor lay-outkaarten
-Another long-requested feature we\'ve implemented for QGIS 3.10 is a new button in the layout map item properties toolbar, which allows you to directly set a map item to the extent of a spatial bookmark!
+Een andere langverzochte mogelijkheid die we hebben geïmplementeerd voor QGIS 3.10 is een nieuwe knop op de werkbalk Item-eigenschappen voor een kaartitem in Lay-out, die u in staat stelt direct een kaartitem in te stellen voor een Favoriete plaats!
 
 ![image32](images/entries/4b8ed681a38435a2f0bf299fd28f299e2873848c.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Expressies
 ### Mogelijkheid: Nieuwe functies voor expressies
-- **attributes()**: returns a map containing all attributes from a feature, with field names as map keys. We\'ve got flexible, robust support for working with map values in expressions now, so this allows rapid conversion of all feature attributes to a map to use with these handy functions!
-- New optional \"format\" parameters were added to the **to_date**, **to_datetime**, and **to_time** functions
-- | **collect_geometries**: this new function collects a set of geometries into a multi-part geometry object. Geometry parts can either be specified as separate arguments to the function or (more flexibly), as an array of geometry parts. This function allows geometries to be generated using iterator based approaches, such as transforming an array generated using generate_series, e.g: | `collect_geometries( array_foreach( generate_series( 0, 330, 30), project($geometry, .2, radians(@element)) ) )` | Gives a nice radial effect of points surrounding the central feature point when used as a MultiPoint geometry generator
-- A new **make_line** expression function variant which accepts an array of points. This allows creation of lines from variable numbers of points, and from sequences from aggregates/dynamically generated sequences.
+- **attributes()**: geeft een kaart terug die alle attributen van een object bevat, met veldnamen als kaartsleutels. We hebben nu flexibele, robuuste ondersteuning voor het werken met waarden van de kaart in expressies, dus dit maakt een snelle conversie van attributen van een object naar een te gebruiken kaart mogelijk met deze handige functies!
+- Nieuwe optionele parameters \"format\" werden toegevoegd aan de functies **to_date**, **to_datetime**, en**to_time**
+- **collect_geometries**: deze nieuwe functie verzamelt een set geometrieën in een object geometrie met meerdere delen. Delen van de geometrie kunnen ofwel worden gespecificeerd als afzonderlijke argumenten voor de functie of (meer flexibel) als een array met delen van de geometrie. Deze functie maakt het mogelijk dat geometrieën worden gemaakt met op iteratie gebaseerde benaderingen, zoals transformeren van een gemaakte array met behulp van generate_series, bijv: | `collect_geometries( array_foreach( generate_series( 0, 330, 30), project($geometry, .2, radians(@element)) ) )` | Geeft een mooi radiaal effect van punten die het centrale objectpunt omringen als dat wordt gebruikt als een MultiPoint geometriegenerator
+- Een nieuwe  functievariant voor expressie **make_line** die een array van punten accepteert. Dit maakt het mogelijk lijnen te maken uit een variabel aantal punten, en uit reeksen van samengevoegde/dynamisch gemaakte reeksen.
 
 ## Digitaliseren
 ### Mogelijkheid: Ondersteuning voor GPS-tijdstempel
-We\'ve overhauled the existing GPS based functionality in QGIS 3.10, adding new options for automatically retrieving and storing GPS timestamps alongside GPS based features.
+We hebben de bestaande op GPS gebaseerde functionaliteit in QGIS 3.10 vernieuwd, en nieuwe opties toegevoegd voor het automatisch ophalen en opslaan van GPS-tijdstempels naast op GPS gebaseerde objecten.
 
-This feature was funded by [NIWA](https://niwa.co.nz/)
+Dit werd mogelijk gemaakt door [NIWA](https://niwa.co.nz/)
 
-This feature was developed by [Alessandro Pasotti (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (North Road)](http://north-road.com)
 ### Mogelijkheid: toegestane uitzonderingen gat
-In QGIS 3.4 we introduced the ability to configure QGIS layers to run topological checks on every save operation. For 3.10, we have now added a new option to the check for \"gaps\" which allows you to actively mark some gaps as allowed. These exceptions will be saved on a separate, configurable layer. Whenever a gap is detected, you either have the possibility to fix it or to add it to the allowed exceptions with the press of a button.
+In QGIS 3.4 introduceerden we de mogelijkheid om lagen van QGIS te configureren om topologische controles uit te voeren bij elke bewerking Opslaan. Voor 3.10 hebben we nu een nieuwe optie toegevoegd om te controleren op \"gaten\" wat u in staat stelt om actief enkele gaten te markeren als toegestaan. Deze uitzonderingen zullen worden opgeslagen op een afzonderlijk te configureren laag. Wanneer een gat wordt gedetecteerd, heeft u ofwel de mogelijkheid om het te repareren of om het toe te voegen aan de toegestane uitzonderingen, met één druk op de knop.
 
 ![image33](images/entries/4a7b306942755ac96cfa9bc97abbfd7815d17ad4.webp)
 
-This feature was funded by [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Gegevensbeheer
 ### Mogelijkheid: Foreign Keys samenstellen
-In QGIS 3.10, we added the possibility to create layer relationships which utilise composite foreign keys. QGIS now fully supports editing parent and child features which are linked with more than one attribute. This functionality is accessed in the Project Properties -\> Relations tab.
+In QGIS 3.10 hebben we de mogelijkheid toegevoegd om relaties voor lagen te maken die samengestelde foreign keys gebruiken. QGIS ondersteunt nu volledig het bewerken van ouder- en kindobjecten die zijn gekoppeld met meer dan één attribuut. Deze functionaliteit is toegankelijk in de Projecteigenschappen -\> tab Relaties.
 
 ![image34](images/entries/6b2177a5781bc2d5cdfb63f121501a734897e4a1.webp)
 
-This feature was funded by [California Geological Survey](https://www.conservation.ca.gov/cgs)
+Dit werd mogelijk gemaakt door [California Geological Survey](https://www.conservation.ca.gov/cgs)
 
-This feature was developed by [OPENGIS.ch](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [OPENGIS.ch](https://www.opengis.ch)
 ### Mogelijkheid: Afhankelijkheden voor circulaire gegevens toevoegen
 Ooit problemen gehad met snappen bij het bewerken van een object dat door iemand anders was aangepast (of een nare trigger van de database)? Afhankelijkheden voor gegevens maken het vernieuwen van de inhoud van afhankelijke lagen mogelijk als de gegevens worden gewijzigd. We verbeterden de ondersteuning voor afhankelijkheden in QGIS door het vernieuwen van de aangepaste laag zelf toe te staan, wat een soort circulaire afhankelijkheid is (een puntenlaag en een lijnenlaag bijvoorbeeld die van elkaar afhankelijk zijn). Geen snappen meer aan spook-objecten!
 
-More info in the [pull request](https://github.com/qgis/QGIS/pull/30947)
+Meer informatie in het [pull request](https://github.com/qgis/QGIS/pull/30947)
 
 ![image35](images/entries/3b93e7b25eef3e3f149ba8db022e467258a74116.webp)
 
-This feature was funded by [QGIS.org](https://qgis.org)
+Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ## Formulieren en widgets
 ### Mogelijkheid: Afhankelijke widgets real-time bijwerken
 Werkt waarden van widgets bij in real time tijdens het bewerken van de verwezen velden. Wanneer widget A een standaard waarde bevat die afhankelijk is van widget B, wordt die bijgewerkt zodra widget B wordt bewerkt.
 
 ![image36](images/entries/0f24e8e2746cb4b7890d015c2ae476f1f1bf96ef.webp)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
-This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 ## Analyse-gereedschappen
 ### Mogelijkheid: Opgeslagen filterexpressies voor attributentabellen
-While previous versions of QGIS allowed you to filter attribute tables using a custom expression, these expressions were lost whenever the attribute table was closed. Now, we\'ve added the ability to store and manage your custom expression filters to the attribute table dialog. You can now build up your own personal collection of useful filters, which will always be available for re-use with a few simple mouse clicks!
+Waar eerdere versies van QGIS u in staat stelden attributentabellen te filteren met een aangepaste expressie, gingen deze expressies verloren als de attributentabel werd gesloten. Nu hebben we de mogelijkheid toegevoegd om uw aangepaste filterexpressies voor het dialoogvenster Attributentabel op te slaan en te beheren. U kunt nu uw eigen persoonlijke verzameling van nuttige filters opbouwen, die met enkele muisklikken altijd weer beschikbaar zijn om opnieuw te gebruiken!
 
 ![image37](images/entries/d6791d32d649fdc3b2e86aa257a33796391e13e0.webp)
 
-This feature was funded by [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
+Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
-This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Nieuwe bewerkingen voor Rasterberekeningen
-You ask, we listen: `abs` , `min` and `max` are now available in the Raster Calculator user interface!
+U vraagt, we luisteren: `abs` , `min` en `max` zijn nu beschikbaar in de gebruikersinterface van Rasterberekeningen!
 
 ![image38](images/entries/8a0081e087a6f9ff9180615f34bb56ea6dccc649.webp)
 
-This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.qcooperative.net)
 ## Processing
-### Feature: New algorithm \"Point to layer\"
+### Mogelijkheid: Nieuw algoritme \"Laag uit punt maken\"
 Dit algoritme maakt een nieuwe vectorlaag, die één enkel object bevat, waarvan de geometrie overeenkomt met een parameter voor een punt. Het kan in modellen worden gebruikt om een punt naar een laag te converteren die kan worden gebruikt voor andere algoritmen die een op een laag gebaseerde invoer vereisen.
 
 ![image39](images/entries/9f61759f0b8d6a61ea070a5328c4f641c582778e.webp)
 
 Deze mogelijkheid werd ontwikkeld door Olivier Dalang
 ### Mogelijkheid: Gevorderde parameters model
-When creating inputs for a Processing model, you can now mark these input parameters as \"Advanced\" options. (Advanced parameters are hidden by default when users run your model through the Processing toolbox)
+Bij het maken van invoer voor een model van Processing kunt u nu deze parameters voor de invoer markeren als opties \"Geavanceerd\". (Geavanceerde parameters zijn standaard verborgen als gebruikers uw model uitvoeren via Toolbox van Processing)
 
 ![image40](images/entries/d9224e26da62b092d56fd091195942d4142e9bd7.webp)
 
 Deze mogelijkheid werd ontwikkeld door Alex Bruy
-### Feature: All GDAL based algorithms now support free-form \"additional parameters\"
-We added an optional \"Additional command-line parameters\" parameter to all GDAL algorithms , useful for cases when you need to pass a specific command-line argument(s) which is not exposed in the algorithm UI.
+### Mogelijkheid: Alle op GDAL gebaseerde algoritmes ondersteunen nu vrije-vorm \"aanvullende parameters\"
+We voegden een optionele parameter \"Aanvullende parameters opdrachtregel\" toe aan alle algoritmes van GDAL. Nuttig voor gevallen waarin u een specifiek argument(en) voor de opdrachtregel moet doorgeven die niet wordt weergegeven in de UI van het algoritme.
 
 ![image41](images/entries/18f42d184246ed167be10dee72f5000671d7ac01.webp)
 
@@ -415,35 +415,35 @@ QGIS 3.10 brengt een nieuw type parameter om te gebruiken in modellen en scripts
 
 ![image43](images/entries/87cae0401b93aa308c156a615e63a71e98d25980.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: New algorithm \"Create style database from project\"
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
+### Mogelijkheid: Nieuw algoritme \"Stijldatabase maken uit project\"
 Dit algoritme neemt alle stijlobjecten (inclusief symbolen, kleurverlopen, tekstindelingen en instellingen voor labels) uit een project van QGIS uit en slaat ze op in een nieuwe XML-stijldatabase, die kan worden beheerd en geïmporteerd via het dialoogvenster Stijlmanager.
 
 ![image44](images/entries/8d6075eb1c4fc38b76f9761836048e940be408f8.webp)
 
-This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Bestandsfilter en standaard waarden voor invoer van bestand en map in modellen
-For file or folder inputs in Processing models we\'ve added a new file filter setting (with some standard file formats available as an optional preset), and now allow you to set a default value for these inputs.
+Voor invoer van bestanden en mappen in modellen van Processing hebben we een nieuwe instelling voor bestandsfilters toegevoegd (met enkele standaard bestandsindelingen beschikbaar als optionele voorkeuze), en maakt het u mogelijk een standaard waarde voor deze invoer in te stellen.
 
 ![image45](images/entries/94fe90f54308a81c5f031066c132e1ad5e8e6ac2.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: New algorithm \"Combine style databases\"
-The new \"Combine style databases\" algorithm combines multiple QGIS style databases into a single output style database. If any symbols exist with duplicate names between the different source databases these will be renamed to have unique names in the output combined database. It\'s designed to give users an easy way to condense multiple separate style databases into a single unified database.
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
+### Mogelijkheid: Nieuw algoritme \"Stijldatabases combineren\"
+Het nieuwe algoritme \"Stijldatabases combineren\" combineert meerdere stijldatabases van QGIS tot een enkele stijldatabase. Als er symbolen bestaan met dezelfde namen tussen de verschillende brondatabases, zullen deze worden hernoemd, zodat ze unieke namen hebben in de gecombineerde database van de uitvoer. Het is ontworpen om gebruikers een gemakkelijke manier te geven om meerdere afzonderlijke stijldatabases samen te voegen tot een enkele geünificeerde database.
 
-It works brilliantly with results generated by running the \"Create style database from project\" in a batch mode!
+Het werkt briljant met gemaakte resultaten door het uitvoeren van het algoritme \"Stijldatabase maken uit project\" in een batchmodus!
 
 ![image46](images/entries/479f2a711f8c4b254e72348eda3c79187d4117f2.webp)
 
-This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: XYZ-tegels maken met meerdere threads
 Het  bestaande algoritme XYZ-tegels maken is geoptimaliseerd en kan nu tegels maken met behulp van meerdere threads voor verwerking.
 
@@ -451,50 +451,50 @@ Het  bestaande algoritme XYZ-tegels maken is geoptimaliseerd en kan nu tegels ma
 
 Deze mogelijkheid werd ontwikkeld door Isghj5
 ### Mogelijkheid: Nieuwe algoritmes voor exporteren en importeren van Favoriete plaatsen naar/uit kaartlagen
-To complement the spatial bookmark overhaul in QGIS 3.10, we\'ve added new Processing algorithms which allow you to create a bunch of new bookmarks corresponding to the features from a layer, or to export existing spatial bookmark extents to a new polygon layer.
+We hebben, om de vernieuwing van de Favoriete plaatsen in QGIS 3.10 aan te vullen, nieuwe algoritmes voor Processing toegevoegd die u in staat stellen een aantal nieuwe Favoriete plaatsen te maken, overeenkomstig de objecten van een laag, of om bereiken van bestaande Favoriete plaatsen te exporteren naar een nieuwe polygoonlaag.
 
 ![image48](images/entries/d0471bc7ea65e476537c8828a7850a64ca9120ef.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: New algorithm \"Split features by character\"
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
+### Mogelijkheid: Nieuw algoritme \"Objecten splitsen op teken\"
 Dit nagelnieuwe algoritme splitst objecten in meerdere uitvoerobjecten door een veldwaarde te splitsen op een gespecificeerd teken.
 
 Als bijvoorbeeld een laag meerdere kommagescheiden waarden bevat, die zijn opgenomen in een enkel veld, kan dit algoritme worden gebruikt om die waarden in meerdere uitvoerobjecten te splitsen. Geometrieën en andere attributen blijven in de uitvoer ongewijzigd.
 
 Optioneel mag de tekenreeks voor het scheiden een reguliere expressie zijn voor toegevoegde flexibiliteit.
 
-This algorithm was designed for use in models which need to process input files with multiple concatenated values in a single attribute, e.g. geocoding a table with \"address1,address2,address3\" format strings.
+Dit algoritme werd ontworpen om te gebruiken in modellen die invoerbestanden moeten verwerken met meerdere samengevoegde waarden in een attribuut, bijv. geocoderen van een tabel met tekenreeksen in de indeling \"address1,address2,address3\".
 
 ![image49](images/entries/a0adf902641c8ace142d9749e632e114262342cd.webp)
 
-This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Nieuw algoritme Klimmen langs lijn
-Previously available as a plugin, the \"Climb Along Line\" algorithm has been added to the out-of-the-box QGIS toolset. This algorithm calculates the accumulated height differences for lines in an input line layer, calculated using the Z values of the line vertices. A copy of the input line layer is returned with additional attributes for accumulated climb and descent, as well as the minimum and maximum Z values for each line.
+Eerder beschikbaar als een plug-in, is het algoritme \"Klimmen langs lijn\" toegevoegd aan de out-of-the-box-gereedschapsset van QGIS. Dit algoritme berekent de geaccumuleerde hoogteverschillen voor lijnen in een invoerlijnenlaag, berekend met behulp van de Z-waarden van de lijnpunten. Een kopie van de invoerlijnenlaag wordt teruggegeven met aanvullende attributen voor geaccumuleerde klim en afdaling, alsook de minimum- en maximum Z-waarden voor elke lijn.
 
 ![image50](images/entries/1b68212fa4a991c79f7d352b5ee3798d0e9a10a3.webp)
 
-This feature was developed by [Håvard Tveite (NMBU) and Matteo Ghetta (Faunalia)](https://www.faunalia.eu)
+Deze mogelijkheid werd ontwikkeld door [Håvard Tveite (NMBU) en Matteo Ghetta (Faunalia)](https://www.faunalia.eu)
 ### Mogelijkheid: Algoritme Grid maken geporteerd naar C++
 We hebben het algoritme Grid maken geporteerd van Python naar C++ om het algoritme te versnellen. Het algoritme wordt nu veel sneller voor u uitgevoerd en is ook in staat punt\|lijn\|rechthoek\|diamant\|hexagoon-regelmatige vectorrasters te maken in hoge resolutie voor grote bereiken (bijv. hele landen) binnen een redelijke tijdspanne.
 
 ![image51](images/entries/6ef35bc88e69aaf92f5f223249bf792ffd4d28d5.webp)
 
-This feature was funded by [Clemens Raffler](https://twitter.com/root676)
+Dit werd mogelijk gemaakt door [Clemens Raffler](https://twitter.com/root676)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://github.com/root676)
 ## Browser
 ### Mogelijkheid: Symbolen uit projecten van QGIS uitnemen binnen de browser
-QGIS\' Browser panel just keeps getting more and more powerful! In 3.10, we\'ve added a new option when right-clicking a QGIS project within the browser: \"Extract Symbols\". Selecting this option opens a style manager dialog showing all symbols, color ramps, text formats and label settings from the selected project, allowing you to easily export the browse these symbols.
+Het paneel Browser van QGIS wordt steeds krachtiger en krachtiger! In 3.10 hebben we een nieuwe optie toegevoegd bij het met rechts klikken op een project van QGIS binnen de browser: \"Symbolen uitnemen\". Selecteren van deze optie opent een dialoogvenster voor Stijlmanager dat alle symbolen, kleurverlopen, tekstindelingen en instellingen voor labels uit het geselecteerde project weergeeft, wat u in staat stelt deze symbolen eenvoudig vanuit de Browser te exporteren.
 
 ![image52](images/entries/4c9dd54203cbce44f91e85ed1ff01f1cbb4a40c5.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Algemeen
 ### Mogelijkheid: Nieuwsitems weergeven op welkomstpagina
 Een gecureerde nieuwsfeed van QGIS wordt nu weergegeven op de Welkomstpagina. Dit geeft ons eindelijk een direct kanaal om nieuw s over het project door te zetten naar AL onze gebruikers! Verwacht maar dat er veel interessant(e) nieuws, tips, en gebeurtenissen van QGIS uw kant op komen!
@@ -503,17 +503,17 @@ Een gecureerde nieuwsfeed van QGIS wordt nu weergegeven op de Welkomstpagina. Di
 
 Dit werd mogelijk gemaakt door QGIS.org
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Milliradialen (SI-definitie) en mil (NATO) eenheden
 QGIS 3.10 stelt u in staat hoeken in twee nieuwe eenheden te meten, milliradialen (SI-definitie) en mil (NATO) eenheden.
 
 ![image54](images/entries/f208b7c32bfe608a448dc2e9359de20e3e4397dd.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Filteren dialoogvenster Aanpassen van de interface
-We\'ve added a new \"search\" box to the Interface Customization dialog, which allows you to filter through the widgets and easily find the widget you are trying to customize\...
+We hebben een nieuw \"zoek\"-vak toegevoegd aan het dialoogvenster voor het aanpassen van de interface, dat u in staat stelt door de widgets te filteren en gemakkelijk de widget te zoeken die u probeert aan te passen\…
 
 ![image55](images/entries/57f395b303ba963e67242e0f2cfe7104e61f2ad0.webp)
 
@@ -523,11 +523,11 @@ Wanneer een laagpad wordt gerepareerd in een project, zal QGIS 3.10 automatisch 
 
 ![image56](images/entries/0119e6f0b3d950d613d224d7bbd53a38575b3579.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Favoriete plaatsen super opgeladen!
-We\'ve totally revamped how spatial bookmarks are exposed and managed in QGIS 3.10. Spatial Bookmarks are now shown in the browser panel, and can be regrouped into custom, categorized folders. This offers a much easier way to navigate and manage your bookmarks.
+We hebben totaal vernieuwd hoe Favoriete plaatsen worden weergegeven en beheerd in QGIS 3.10. Favoriete plaatsen worden nu weergegeven in het paneel Browser, en kunnen opnieuw worden gegroepeerd in aangepaste, gecategoriseerde mappen. Dit biedt een veel gemakkelijkere manier om door uw Favoriete plaatsen te navigeren en ze te beheren.
 
 We hebben ook een nagelnieuw dialoogvenster voor het bewerken van Favoriete plaatsen, dat als mogelijkheid een widget voor het bereik heeft dat het bewerken van Favoriete plaatsen fantastisch faciliteert.
 
@@ -536,14 +536,14 @@ Favoriete plaatsen kunnen nu ook worden gesleept en neergezet op kaartvensters, 
 ![image57](images/entries/8329961bfa04631c5a970888f9a21bad66ddc6fa.webp)
 
 Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin, Nyall Dawson
-### Feature: \"Reselect Features\" action in Edit -\> Select menu
-Ever spend 10 minutes painstakingly creating an interactive selection of features, only to accidentally deselect them all through an errant mouse click? If so, this feature is designed just for you! Now, you can restore a layer\'s selection following a selection clear operation via the new \"Reselect Features\" option in the Edit menu.
+### Mogelijkheid: Actie \"Objecten opnieuw selecteren\" in menu Bewerken -\> Selecteren
+Ooit 10 minuten gespendeerd aan het nauwkeurig maken van een interactieve selectie van objecten, alleen maar om ze per ongeluk te deselecteren met een foute muisklik? Indien ja, dan is deze mogelijkheid speciaal voor u ontworpen! Nu kunt u een selectie op een laag herstellen die volgt op een bewerking leegmaken, via de nieuwe optie \"Objecten opnieuw selecteren\" in het menu Bewerken.
 
 ![image58](images/entries/e1234a3ca30866b91f64f97b83fdf0fb90838cb6.webp)
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Parallelliseren bouwen index snappen
 Het idee was om voor elke laag het berekenen van de snapcache (sequentieel op dit moment) te parallelliseren en niet-blokkerend te maken. Als consequentie is het nog steeds mogelijk QGIS te gebruiken zelfs als de snapcache momenteel wordt opgebouwd. Gebruiker kan bijvoorbeeld beginnen met het bewerken van een knoop, terwijl het bouwen van de snapcache nog voortduurt.
 
@@ -553,16 +553,16 @@ QGIS 3.10 bevat de mogelijkheid om sjablonen voor het project direct te gebruike
 
 ![image59](images/entries/5adaa5a973e0b232bae3a8dbab8739c8887ac70e.webp)
 
-This feature was funded by [The QGIS Project](https://www.qgis.org)
+Dit werd mogelijk gemaakt door [het project QGIS](https://www.qgis.org)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Gegevensproviders
 ### Mogelijkheid: Ondersteuning voor lezen-schrijven voor .shz en .shp.zip
-For QGIS builds based on GDAL 3.1, you can now open and edit single-layer ZIP compressed shapefiles (.shz), or multi-layer ones (.shp.zip). Regardless of where you sit on the Shapefile vs Geopackage battle, you\'ll welcome this ability to de-clutter your folders and store shapefiles as a single file!
+Voor versies van QGIS gebaseerd op GDAL 3.1 kunt u nu enkele-laag ZIP gecomprimeerde shapefiles (.shz), of met meerdere lagen (.shp.zip) openen en bewerken. Ongeacht waar u zich bevindt in de strijd tussen Shapefile vs Geopackage, u zult deze mogelijkheid tot het opruimen van uw mappen verwelkomen en shapefiles als een enkel bestand opslaan!
 
 Deze mogelijkheid werd ontwikkeld door Even Rouault
 ### Mogelijkheid: Authenticatie voor provider Oracle
-We\'ve updated the Oracle database provider to add full support for QGIS built-in authentication system.
+We hebben de Oracle databaseprovider bijgewerkt door volledige ondersteuning voor het in QGIS ingebouwde systeem voor authenticatie toe te voegen.
 
 Deze mogelijkheid werd ontwikkeld door Jürgen Fischer
 ### Mogelijkheid: Verbeterde ondersteuning voor PostGIS raster
@@ -570,61 +570,61 @@ PostGIS rasterlagen worden nu weergegeven in het paneel Browser en in het dialoo
 
 Deze mogelijkheid werd ontwikkeld door Alessandro Pasotti
 ### Mogelijkheid: Oracle - Database ondersteuning voor transactie
-For version 3.10, we\'ve enhanced the Oracle database provider and added support for editing layers via transactions.
+Voor versie 3.10 hebben we de Oracle-databaseprovider opgewaardeerd en ondersteuning toegevoegd voor het bewerken van lagen via transacties.
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Dimensies Z/M in lagen Tekengescheiden tekst
-We\'ve added optional support for Z and M fields to QGIS\' delimited text provider, allowing you to create Z or M enabled layers directly from CSV files.
+We hebben optionele ondersteuning voor velden Z en M toegevoegd voor QGIS tekengescheiden tekstprovider, wat het voor u mogelijk maakt Z- of M-ingeschakelde lagen direct te maken vanuit CSV-bestanden.
 
 ![image60](images/entries/bfaa5fc4c03d27e5345475172f5e7bdb20a4f6ff.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Statische gegevensproviders
 Één taak vanachter de schermen die we hebben voltooid voor QGIS 3.10 is het opnieuw opbouwen van de infrastructuur voor providers. Nu staan providers zowel dynamisch als statisch koppelen toe. Dit was een vereiste om bibliotheken voor QGIS te kunnen bouwen voor platformen die dynamisch koppelen niet toestaan (iOS), en het mogelijk maken voor op QGIS gebaseerde gereedschappen, zoals de app Input data collection, om te worden gedistribueerd voor op iOS gebaseerde apparaten!
 
-This feature was funded by [Lutra Consulting Ltd.](http://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [Lutra Consulting Ltd.](http://www.lutraconsulting.co.uk)
 
-This feature was developed by [Peter Petrik, Martin Dobias](http://www.lutraconsulting.co.uk/about)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik, Martin Dobias](http://www.lutraconsulting.co.uk/about)
 ## QGIS Server
 ### Mogelijkheid: SVG gebruiken in QGIS Server
-Earlier QGIS server versions had rendering issues when remote SVG files were used in a project (e.g. those hosted via external http servers). We\'ve improved how QGIS Server fetches these resources, and it\'s now possible to use remote SVG paths in your layers and publish them as WMS without rendering issues in QGIS Server.
+Eerdere versies van QGIS Server hadden problemen bij het renderen als SVG-bestanden op afstand werden gebruikt in een project (bijv. die welke werden gehost via externe http-servers). We hebben verbeterd hoe QGIS Server deze bronnen ophaalt, en het is nu mogelijk om SVG-paden op afstand in uw lagen te gebruiken en ze als WMS te publiceren zonder problemen bij het renderen in QGIS Server.
 
 ![image61](images/entries/71d731c71f864fcb542f2f7ec52c68e4c03068d3.webp)
 
-This feature was funded by [Ifremer](https://sextant.ifremer.fr/)
+Dit werd mogelijk gemaakt door [Ifremer](https://sextant.ifremer.fr/)
 
-This feature was developed by [René-Luc D\'Hont (3Liz)](https://www.3liz.com/)
+Deze mogelijkheid werd ontwikkeld door [René-Luc D\'Hont (3Liz)](https://www.3liz.com/)
 ### Mogelijkheid: WMS dimensie
 In QGIS 3.10 kan een WMS-server ondersteuning bieden voor verscheidene typen dimensies, zoals tijd, hoogte of andere typen dimensies. De dimensie moet worden gedefinieerd als het niveau van de laag en kan worden gebruikt door de cliënt van WMS om gevraagde informatie te filteren. WMS Time is deel van de WMS Dimensie.
 
 ![image62](images/entries/45744c5a4a4c94e1c71a91bcfa7b672333002e75.webp)
 
-This feature was funded by [Ifremer](https://sextant.ifremer.fr/)
+Dit werd mogelijk gemaakt door [Ifremer](https://sextant.ifremer.fr/)
 
-This feature was developed by [René-Luc D\'Hont (3Liz)](https://www.3liz.com/)
+Deze mogelijkheid werd ontwikkeld door [René-Luc D\'Hont (3Liz)](https://www.3liz.com/)
 ### Mogelijkheid: Server OAPIF (alias WFS3) ondersteuning
-QGIS 3.10 Server is one of the very first geospatial servers which supports the new [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) standard (also known as WFS3)!
+QGIS 3.10 Server is een van de eerste georuimtelijke servers die de nieuwe [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) standaard ondersteunt (ook wel bekend als WFS3)!
 
 Dit is een volledig nieuwe implementatie die een op HTML en JSON gebaseerde service verschaft voor uw ontwikkelingen voor webkaarten, inclusief een eenvoudige interface WebGIS die out of the box beschikbaar is en eenvoudig is aan te passen via een systeem met sjablonen in HTML.
 
-More information is available in the [documentation](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/services.html#wfs3-ogc-api-features)
+Meer informatie is beschikbaar in de [documentatie](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/services.html#wfs3-ogc-api-features)
 
 ![image63](images/entries/81af9beefcd8522ecc0f953b2a6b9b4895e35675.webp)
 
-This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.qcooperative.net)
 ## Programmeerbaarheid
 ### Mogelijkheid: Nieuwe klasse QgsBookmarkManager
 Verbonden met QgsProject en QgsApplication verschaft deze nieuwe klasse een stabiele, ondersteunde methode voor het beheren van project en globale Favoriete plaatsen (vs de oude niet gedocumenteerde, niet stabiele benadering van het direct bewerken van projectsleutels of een database van SQLite). Nu zijn uw plug-ins en scripts in staat Favoriete plaatsen te lezen, aan te passen en te beheren!
 
-This feature was funded by [North Road](http://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Nieuwe API voor verbindingen naar database van providers
-Thanks to funding from the QGIS grant program, you can now use a [new API](https://github.com/qgis/QGIS/pull/31190) aimed to manage DB connections in a unified way. The new connection API also provides a set of useful methods that can be used by plugin authors to access information about tables, schemas etc. and to run SQL arbitrary queries and get the results back into a handy Python array.
+Dankzij de fondsen uit het programma van QGIS voor giften kunt u nu een [nieuwe API](https://github.com/qgis/QGIS/pull/31190) gebruiken, die tot doel heeft om verbindingen naar een DB op een uniforme manier te beheren. De nieuwe API voor verbindingen verschaft ook een set nuttige methoden die kunnen worden gebruikt door auteurs van plug-ins om toegang te krijgen tot informatie over tabellen, schema's etc. en om willekeurige query's van SQL uit te voeren en de resultaten terug te krijgen in een handige array voor Python.
 
 Dit werd mogelijk gemaakt door QGIS 
 
-This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.qcooperative.net)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti
 | Titel probleem | URL issues  (indien gerapporteerd) | URL PR of commit | 3.4 backport PR of commit |
@@ -670,9 +670,9 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
 | null pointer dereferences when plugins are off | [#32338](https://github.com/qgis/QGIS/issues/32338) | [PR #3234](https://github.com/qgis/QGIS/pull/32345) |  |
 | \"Merge features\" and \"merge feature attributes\" have broken numerical functions | [PR #3236](https://github.com/qgis/QGIS/pull/32360) | [PR #3236](https://github.com/qgis/QGIS/pull/32360) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it/)
 ### Mogelijkheid: Reparaties van problemen door Alexander Bruy
 | Titel probleem | URL issues  (indien gerapporteerd) | URL PR of commit | 3.4 backport PR of commit |
 | --- | --- | --- | --- |
@@ -696,7 +696,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | DB Manager: Create Layer dialog should be closed or cleared once the new layer is generated | [#25535](https://github.com/qgis/QGIS/issues/25535) | [PR #3195](https://github.com/qgis/QGIS/pull/31956) |  |
 | \[Vector Save As\...\] Extension is not replaced in filename when switching format | [#26054](https://github.com/qgis/QGIS/issues/26054) | [PR #3196](https://github.com/qgis/QGIS/pull/31960) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 ### Mogelijkheid: Reparaties van problemen door Peter Petrik
@@ -711,7 +711,7 @@ Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 | Renaming macOS app causes authentication error | [#32163](https://github.com/qgis/QGIS/issues/32163) |  |  |
 | QGIS cannot be opened after updating to Mac OS Catalina | [#32167](https://github.com/qgis/QGIS/issues/32167) |  |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
@@ -731,9 +731,9 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 | Feature count from online Geojson not updated upon refresh | [#30518](https://github.com/qgis/QGIS/issues/30518) | [PR #31860](https://github.com/qgis/QGIS/pull/31860) | is het niet waard |
 | Edits in GeoJson datasources are not saved anymore | [#28580](https://github.com/qgis/QGIS/issues/28580) | GDAL <https://github.com/OSGeo/gdal/pull/1846> | Gebackport naar GDAL 3.0 en 2.4 onderhoudstakken |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Sandro Santilli
 | Titel probleem | URL issues  (indien gerapporteerd) | URL PR of commit | 3.4 backport PR of commit |
 | --- | --- | --- | --- |
@@ -747,7 +747,7 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 | TestSagaAlgorithms: line 139, in check_algorithm: \'NoneType\' object has no attribute \'checkParameterValues\' | [#32143](https://github.com/qgis/QGIS/issues/32143) | [Commit 76b39de1](https://github.com/qgis/QGIS/commit/76b39de1b85375f48d7a5d35ebe39a52224d1809) | Niet beschikbaar |
 | PostGIS Data Loads Extemely Slow | [#26186](https://github.com/qgis/QGIS/issues/26186) | [PR #31858](https://github.com/qgis/QGIS/pull/31858) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Sandro Santilli](http://strk.kbt.io/)
 ### Mogelijkheid: Reparaties van problemen door Matthias Kuhn
@@ -758,9 +758,9 @@ This feature was developed by [Sandro Santilli](http://strk.kbt.io/)
 | qgz are marked as temporary on windows | [#32118](https://github.com/qgis/QGIS/issues/32118) |  |  |
 | Allow selecting geometry type in context | [#32121](https://github.com/qgis/QGIS/issues/32121) | [PR #32125](https://github.com/qgis/QGIS/pull/32125) | Niet beschikbaar |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Matthias Kuhn](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Paul Blottiere
 | Titel probleem | URL issues  (indien gerapporteerd) | URL PR of commit | 3.4 backport PR of commit |
 | --- | --- | --- | --- |
@@ -770,7 +770,7 @@ This feature was developed by [Matthias Kuhn](https://www.opengis.ch/)
 | Regression with opacities for the WMS GetPrint request | [#29317](https://github.com/qgis/QGIS/issues/29317) |  |  |
 | Unreported regression: Invalid renderer type after loading a QML style file | niet gerapporteerde regressie | [PR #32388](https://github.com/qgis/QGIS/pull/32388) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door Paul Blottiere
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson
@@ -851,8 +851,8 @@ Deze mogelijkheid werd ontwikkeld door Paul Blottiere
 | Fix loss of label background settings when restoring projects. | [#31427](https://github.com/qgis/QGIS/issues/31427) | [Commit aa4a8da3](https://github.com/qgis/QGIS/commit/aa4a8da3a713b6961fccce019c5e9b5778f68b23) | Niet beschikbaar |
 | Fix crash in point displacement renderer | [Commit 7043933f](https://github.com/qgis/QGIS/commit/7043933ff2bed42df5ae3439867330e39fe60f53) | Niet beschikbaar |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 
 {{<content-end >}}

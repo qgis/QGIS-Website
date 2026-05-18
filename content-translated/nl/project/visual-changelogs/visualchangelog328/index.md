@@ -625,7 +625,7 @@ This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |

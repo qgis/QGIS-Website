@@ -143,7 +143,7 @@ Be sure to check out the feature [Pull Request](https://github.com/qgis/QGIS/pul
 
 This feature was funded by National Resources Canada
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Faster point cloud rendering by caching decoded data blocks
 Want even faster point cloud rendering? Well, QGIS now supports rendering point clouds faster by using a cache for storing nodes which have already been decoded.
 
@@ -405,7 +405,7 @@ As part of the ongoing QGIS grant project for vertical CRS handling (see [QEP 26
 
 See QgsCoordinateReferenceSystemProxyModel.Filter for the available CRS filtering options for use in these widgets.
 
-This feature was funded by [QGIS.org](https://qgis.org)
+Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Python support in Qt6 builds
@@ -413,7 +413,7 @@ While version 5.15 remains the recommended Qt version for compiling QGIS, we've 
 
 QGIS 3.36 brings support for running Python under Qt 6 builds, and enables use of the PyQGIS library within Qt 6. This is a significant milestone in our ongoing journey towards full support for Qt 6!
 
-This feature was funded by [QGIS.org](https://qgis.org)
+Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
 ### Feature: Add meshMenu to QGIS Interface
 `meshMenu` has been added to the `iface` object, giving plugins and scripts an easy way to extend the Mesh menu.
 
@@ -637,7 +637,7 @@ Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Bug fixes by Martin Dobias (LutraConsulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |

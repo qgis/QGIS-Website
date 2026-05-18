@@ -57,13 +57,13 @@ Hiervoor zijn twee implementaties toegevoegd:
 
 ![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: GUI voor dynamische SVG's
 QGIS now supports dynamic standard vector graphic elements, as outlined in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). This allows QGIS to dynamically replace attributes or node values in the XML of the SVG and apply data-driven values to SVG elements. QGIS Desktop has additionally added a GUI editor to ensure that users are able to properly leverage this new functionality.
 
 ![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.webp)
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Zoomen naar meerdere lagen
 The \"Zoom to Layer\" function available from the context menu, the View menu and the Map Navigation toolbar can now zoom to the extent of all the selected layers in the layer tree.
 
@@ -97,13 +97,13 @@ This feature was developed by [uclaros](https://api.github.com/users/uclaros)
 ### Mogelijkheid: Data-bepaalde doorzichtbaarheid voor alle symbolen
 Waar het eerder mogelijk was om de doorzichtbaarheid voor kleuren van individuele symboollagen in te stellen via data-bepaalde expressies, is het nu mogelijk om een data-bepaalde expressie in te stellen om de doorzichtbaarheid voor alle symbolen in te stellen.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Galerij Stijlen openen vanuit Stijlmanager
 The Style Manager interface now includes a button to open the [styles gallery](https://plugins.qgis.org/styles/) from the QGIS HUB.
 
 ![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Mazen
 ### Mogelijkheid: Nieuwe algoritmes voor exporteren van lagen met mazen
 Nieuwe opties voor exporteren zijn toegevoegd voor lagen met mazen. Deze staan de volgende opties toe bij het exporteren van een laag met mazen naar een vectorlaag:
@@ -148,7 +148,7 @@ A new rendering option allows area and line features to be \"dissolved\" into a 
 
 ![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Slimmer opnieuw tekenen van kaart
 Previously, map redraws would attempt to redraw all elements in the frame. The map rendering has been significantly improved and now the existing map frame elements are used during the redraw process. This work was completed as a part of [QEP #181](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/181) and was funded by the QGIS Grant program for 2020.
 
@@ -241,7 +241,7 @@ En, uiteraard, werken de items netjes in legenda's met meerdere kolommen:
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Verbeteringen voor kleurverlopen legenda
 Legenda-items voor kleurenbalken ondersteunen nu de volgende te configureren opties:
 - Een voor- en achtervoegsel voor de tekst van de kleurenbalk
@@ -258,7 +258,7 @@ Gebruikers kunnen er ook voor kiezen om deze instellingen te verfijnen voor een 
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Dynamische voorkeuzen tekst
 The new *Add Item -\> Dynamic Text* menu contains preset dynamic text expressions that users can use to insert a label automatically containing the corresponding expression.
 
@@ -266,7 +266,7 @@ For example, using the dynamic text element **Layout Name** will insert a label 
 
 ![image31](images/entries/c41a7d2a5ec018bfba237429aa5d125d11ad9310.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Expressies
 ### Mogelijkheid: Optionele opmaak voor resultaten van UUID
 There is now a string format parameter available for the `uuid()` function in QGIS expressions. Users now have various options that they can use to stipulate the format of the returned UUID value, including the following options:
@@ -276,7 +276,7 @@ There is now a string format parameter available for the `uuid()` function in QG
 
 ![image32](images/entries/3f0471353b72cffc4b69defb87cea2d7a1c44017.webp)
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+Deze mogelijkheid werd ontwikkeld door [signedav](https://api.github.com/users/signedav)
 ### Mogelijkheid: Variabele laag-CRS in expressies
 QGIS expressions now support a *layer_crs* variable which will return the AuthID for a particular layer\'s coordinate reference system. This allows expressions to identify the layer CRS dynamically and perform transformations without needing to manually specify the CRS.
 
@@ -312,9 +312,9 @@ There\'s an optional *include_layer_names* argument you can use to include layer
     
 This would return a comma-separated list of layer names and their credits for layers shown in the \'Main Map\' layout item, e.g. \'Railway lines: CC-BY-NC, Basemap: CC-BY-SA\'
 
-This feature was funded by [SLYR](https://north-road.com/slyr/)
+Dit werd mogelijk gemaakt door [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Digitaliseren
 ### Mogelijkheid: Contextmenu Objecten selecteren 
 Het is nu mogelijk objecten te selecteren met een contextmenu in het kaartvenster. Klikken met rechts op de kaart zal intelligent de objecten onder de muiscursor identificeren en het mogelijk maken de beschikbare objecten toe te voegen of te verwijderen uit de huidige selectie. Waar meerdere objecten beschikbaar zijn zou een korte vertraging op kunnen treden, terwijl het systeem probeert te zoeken naar beschikbare objecten die in een genest menu-item beschikbaar komen voor selecteren, of gebruikers kunnen eenvoudigweg de functie *Alles selecteren* gebruiken om alle beschikbare objecten te selecteren op de  opgegeven positie.
@@ -335,12 +335,12 @@ A new digitizing tool allows for selected features to be scaled when in editing 
 
 ![image35](images/entries/16ac8bca1e78da740dc8ea8b6b46a916f8f0b83d.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Gegevensbeheer
 ### Mogelijkheid: Nieuw algoritme voor exporteren naar werkblad
 Gebruikers kunnen een selectie van vectorlagen exporteren als bladen in een nieuw werkbladdocument of ze toevoegen als aanvullende werkbladen aan een bestaand werkbladdocument
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Coördinaten opnieuw projecteren in de Georeferencer
 De Georeferencer  projecteert nu gegevenspunten opnieuw in een gewenste projectie voor de uitvoer, in plaats van het CRS van het kaartvenster te gebruiken voor het bepalen van de posities van de gegevenspunten. Dit geeft gebruikers meer flexibiliteit en beheer bij het vastleggen van controlepunten.
 
@@ -377,7 +377,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 ### Mogelijkheid: Expressie toestaan voor velden voor volgorde in algoritme Punten naar pad
 `$id` may be used as an expression for a csv with ordered values, and the `ORDER_EXPRESSION` parameter has been added to the PointsToPath algorithm.
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Mogelijkheid: CRS overschrijven voor uitvoer van Raster op bereik clippen
 In some instances, the **Clip raster by extent** algorithm may output features without a CRS specified, which can now be modified by explicitly enforcing the output to inherit it\'s CRS from the input layer.
 
@@ -387,7 +387,7 @@ Allows users to select a list of fields to keep, and all other fields will be dr
 
 ![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Parameter voor verwijzing naar gemeenschappelijk veld voor meerdere lagen
 Parameters voor velden in gereedschappen van Processing kunnen het verwerken van een gemeenschappelijk veld voor meerdere vectorlagen ondersteunen, in een implementatie die is geïnspireerd op het gedrag van enkele algoritmen voor Processing in Orfeo ToolBox.
 
@@ -447,7 +447,7 @@ A new \"View Settings\" tab has been added to the project properties, with the o
 
 ![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Netwerk cachen schakelen naar QgsNetworkAccessManager
 Een keuzevak in het paneel Gereedschap voor debuggen/ontwikkeling staat gebruikers nu toe om tijdelijk de cache van het netwerk uit te schakelen, wat nuttig is bij het debuggen van activiteiten van QGIS op het netwerk, of bij het gebruiken van QGIS om wijzigingen aan de kant van de server te testen.
 
@@ -455,12 +455,12 @@ Dit is ontworpen als een vluchtige instelling en wordt vergeten zodra QGIS wordt
 
 ![image42](images/entries/0115a38666f35166fa9e6fd53791a7bc8f73b6dc.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Browser
 ### Mogelijkheid: Verbindingen in browser voor ArcGis Feature Service en ArcGIS Map Service geünificeerd
 The separate \"ArcGis Feature Service\" and \"ArcGIS Map Service\" browser connections have been replaced with a single, unified, **\"ArcGIS Rest Servers\"** connection and browser node, which shows a definitive view of the server and exposes both service types.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Bladeren door ArcGIS REST door groepen voor inhoud toestaan
 Verbindingen voor ArcGIS Feature Service die hun overeenkomende URL's voor het Portal-eindpunt hebben ingesteld kunnen worden verkend door groepen voor inhoud in het paneel Browser.
 
@@ -468,7 +468,7 @@ If a connection has the Portal endpoints set, then expanding out the connection 
 
 This feature was funded by [SRK Consulting](https://www.srk.com)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Eigen algoritme voor exporteren DXF
 Maakt het exporteren van individuele of meerdere lagen naar één enkel DXF-bestand mogelijk. Voor elke invoerlaag kan de gebruiker selecteren welk attribuut moet worden gebruikt voor het splitsen van één enkele laag naar meerdere uitvoerlagen.
@@ -525,7 +525,7 @@ This feature was developed by [Maxim Rylov](https://api.github.com/users/mrylov)
 
 QGIS has adopted a gentle approach to removing unmaintained core providers, and users of deprecated providers may enable support for them by setting the hidden \"providers/showDeprecated\" settings key to *true*.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: API Oracle-verbinding
 De QGIS API bevat nu *QgsAbstractDatabaseProviderConnection* voor de provider Oracle.
 
@@ -561,7 +561,7 @@ The qgis_process command line tool has had new commands added which allow users 
 
 This improves the automation capabilities of QGIS and allows the use of plugins on headless environments with the qgis_process tool.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.16 backport commit (GitHub) |
@@ -590,7 +590,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 | New spatial table in a geopackage with index always throw a warning | [#41436](https://github.com/qgis/QGIS/issues/41436) | [PR #41556](https://github.com/qgis/QGIS/pull/41556) | [PR #41609](https://github.com/qgis/QGIS/pull/41609) |
 | Empty \"Exclude layers\" selection list in Server settings dialog when using projects saved in GPKG files or PGSQL databases | [#40552](https://github.com/qgis/QGIS/issues/40552) | [PR #41605](https://github.com/qgis/QGIS/pull/41605) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/)
 ### Mogelijkheid: Reparaties van problemen door Peter Petrik
@@ -611,7 +611,7 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 | QGIS crashes when \"open directory\" is selected from the recent projects contextual menu | [PR #41591](https://github.com/qgis/QGIS/pull/41591) | [PR #41591](https://github.com/qgis/QGIS/pull/41591) | nog te doen |
 | Data-defined setting in html frame does not work | [#41590](https://github.com/qgis/QGIS/issues/41590) | onderzoek gedaan |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
@@ -629,9 +629,9 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 | Georeferencer: fix crash on .points files generated by older QGIS versions | niet gerapporteerd | [PR #41480](https://github.com/qgis/QGIS/pull/41480) | N/B |
 | Crash trying to load ArcGis community map vector tiles | [#41401](https://github.com/qgis/QGIS/issues/41401) | [PR #41481](https://github.com/qgis/QGIS/pull/41481) | [PR #41516](https://github.com/qgis/QGIS/pull/41516) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -645,7 +645,7 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 | Closed Python call to \--processing.run(\'qgis:fieldcalculator\'\-- fails to catch divide by zero | [#37737](https://github.com/qgis/QGIS/issues/37737) | Al gerepareerd |  |
 | Expression widget does not list fields when Selected features only is checked | [#40055](https://github.com/qgis/QGIS/issues/40055) | [PR #41457](https://github.com/qgis/QGIS/pull/41457) | [PR #41511](https://github.com/qgis/QGIS/pull/41511) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Julien Cabieces](https://oslandia.com/en/)
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson
@@ -683,8 +683,8 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/en/)
 | Fix scalebar decoration uses incorrect map extent when restoring a project | [#40748](https://github.com/qgis/QGIS/issues/40748) | [Commit f1ea5a9](https://github.com/qgis/QGIS/commit/f1ea5a9c560eaba6f3947cc8447d6f25226c2b5d) | [Commit 6b1e67d](https://github.com/qgis/QGIS/commit/6b1e67dd947e41359a7ad3d1a8f44ef1ec20b442) |
 | Fix missing identify results right click menu items for non vector layer types | niet gerapporteerd | [Commit 176e972](https://github.com/qgis/QGIS/commit/176e9728c5ebb24f309369878664c2c49dc6eb16) | Niet van toepassing |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 
 {{<content-end >}}

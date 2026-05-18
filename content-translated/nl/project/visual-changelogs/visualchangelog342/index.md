@@ -431,7 +431,7 @@ This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qc
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Mogelijkheid: Reparaties van problemen door Jacky Volpes (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -492,7 +492,7 @@ This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/en/
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Bug fixes by Alexander Bruy (QCooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |

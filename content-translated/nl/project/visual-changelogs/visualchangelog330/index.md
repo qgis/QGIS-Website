@@ -721,7 +721,7 @@ This feature was developed by [Stefanos Natsis](https://www.lutraconsulting.co.u
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door David Signer
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |

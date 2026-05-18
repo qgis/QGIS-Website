@@ -189,7 +189,7 @@ Men kan de widgets voor relatieverwijzing gebruiken om gekoppelde items uit ande
 
 **Deze mogelijkheid werd ontwikkeld door:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+**Dit werd mogelijk gemaakt door:** [SIGE](http://www.sige.ch/)
 
 ![image11](images/entries/fd0d2e726135033e8e5a61b8a718535074a2ac0c.webp)
 ## Diagrammen
@@ -198,42 +198,42 @@ De functionaliteit Diagram in QGIS maakt het u mogelijk om kleine taartdiagramme
 - Diagrammen kunnen worden uitgeschakeld zonder verlies van instellingen
 - Keuzevak om diagrammen altijd weer te geven voor een laag toegevoegd 
 - De gebruikersinterface voor diagrammen is vernieuwd om het dialoogvenster te vereenvoudigen en het meer gebruikersvriendelijk te maken
-- Diagram classes are now shown in the layer\'s legend
+- Klassen voor diagrammen worden nu weergegeven in de legenda van de laag
 
 ![image12](images/entries/cc5753de0538c89e3231f18c7ce62c7bc0afa5e8.webp)
 ## Digitaliseren
 ### Mogelijkheid: Verbeterd gereedschao voor draiien van geometrie
-The geometry rotation tool is an advanced digitising tool that allows you to arbitrarily rotate a feature\'s geometry. The following improvements have been made to the rotation tool:
+Het gereedschap voor het draaien van een geometrie is een geavanceerd gereedschap voor digitaliseren dat u in staat stelt de geometrie van een object onafhankelijk te draaien. De volgende verbeteringen zijn aan het gereedschap om te draaien gemaakt:
 - u kunt nu numerieke invoer in het gereedschap om te draaien gebruiken
 - u kunt een combinatievak gebruiken om de hoeken in te stellen
-- added support for snapping to angles (directly enabled when `using`shift + click\`\`)
-- rotation anchor is defined on `CTRL+click` and not on mouse move
+- ondersteuning voor snappen aan hoeken toegevoegd (direct ingeschakeld bij `gebruiken van `\shift + click\`\`)
+- het anker voor de draaiing wordt gedefinieerd met `CTRL+click` en niet bij het verplaatsen van de muis
 
 ![image13](images/entries/7ff32dd8c7ead358f9ffab4576dff33503154eb2.webp)
 ## Labelen
-### Feature: \"Follow point\" alignment for multiline labels
+### Mogelijkheid: Uitlijning \"Punt volgen\" voor labels met meerdere regels
 Indien ingesteld op deze modus, is de uitlijning van de tekst van labels afhankelijk van de uiteindelijke plaatsing van het label, relatief ten opzichte van het punt. Bijv, als het label links va het punt wordt geplaatst zal het label rechts worden uitgelijnd, en als het rechts van het punt wordt geplaatst dan zal het label links worden uitgelijnd. Dit verbetert de weergave van labels met meerdere regels voor puntlagen enorm.
 
 ![image19](images/entries/851e7234a9509e2452dee69939d9de933a8bb90a.webp)
 ## Printvormgeving
 ### Mogelijkheid: Modus voor schalen van schaalbalk toegevoegd om een gewenste breedte van de schaalbalk passend te maken
-In previous QGISversions it was hard to use graphical scalebars when the range of potential scales was big. The scalebar would either be quickly too wide or too narrow and one had to manually adapt the segment sizes (units per segment) after each scale change. It also meant that graphical scalebars couldn\'t be really used in Atlas serial printing or with QGISserver when the final map scale was unknown. With QGIS2.10 one can now set min/max sizes for one segment length in mm and QGISwould automatically adapt the units per segment while still keeping round values.
+In eerdere versies van QGIS was het moeilijk om grafische schaalbalken te gebruiken als het bereik van de potentiële schalen te groot was. De schaalbalk zou ofwel snel te breed of te smal zijn en men moest handmatig de segmentgrootten (eenheden per segment) aanpassen na elke wijziging in de schaal. Het betekende ook dat schaalbalken niet echt gebruikt konden worden bij het in serie afdrukken van een Atlas of met QGIS Server indien de uiteindelijke schaal onbekend was. Met QGIS 2.10 kan men nu min/max-groottes voor een segmentlengte in mm instellen en QGIS zal automatisch de eenheden per segment aanpassen met behoud van ronde waarden.
 
-Don\'t forget to also set the alignment of the scalebar, esp. if you want it to be centered or right-aligned!
+Vergeet ook niet om de uitlijning van de schaalbalk in te stellen, speciaal als u wilt dat die wordt gecentreerd of rechts uitgelijnd!
 
-**This feature was developed by:** [Sandro Mani (Sourcepole AG)](http://www.sourcepole.ch/)
+**Deze mogelijkheid werd ontwikkeld door:** [Sandro Mani (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
+**Dit werd mogelijk gemaakt door:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
 
 ![image20](images/entries/d435d4f94cf3d70a97c8d373aa08c28f8685defd.webp)
 ## Programmeerbaarheid
 ### Mogelijkheid: Verbeteringen voor programmeurs
 We hebben een aantal wijzigingen en verbeteringen gemaakt die interessant zullen zijn voor ontwikkelaars:
 - We hebben de minimale vereiste voor Qt4 verhoogd naar versie 4.8. Qt4 is een van de belangrijkste C++ gereedschappen / bibliotheken die we gebruiken om QGIS te maken.
-- New `QgsStatisticalSummary` class for calculating statistics from a list of numbers.
+- Nieuwe klasse `QgsStatisticalSummary` voor het berekenen van statistieken uit een lijst met getallen.
 - Wijzigen van de gegevensbron voor een vectorlaag mogelijk gemaakt.
-- Implicit sharing of classes : `QgsField`, `QgsFields`, `QgsDataDefined`, `QgsFeature`, `QgsGeometry`.
-- Plugins can now create their own entries in the browser widget with two new classes : `QgsDataItemProvider` and `QgsDataItemProviderRegistry`.
+- Impliciet delen van de klassen: `QgsField`, `QgsFields`, `QgsDataDefined`, `QgsFeature`, `QgsGeometry`.
+- Plug-ins kunnen nu hun eigen items maken in de widget Browser met twee nieuwe klassen: `QgsDataItemProvider` en `QgsDataItemProviderRegistry`.
 
 ![image21](images/entries/c702d89260cbab35323c052a15ab5c5728fc7115.webp)
 ## QGIS Server
@@ -257,21 +257,21 @@ Opties onder menu Categorieën van de renderer toegevoegd om categorieën in te 
 ### Mogelijkheid: Variëren van symboolgrootten met behulp van de renderer Gradueel
 Renderers zijn het subsysteem van QGIS dat u in staat stelt rijke cartografische weergaven van uw gegevens te maken. Een renderer Gradueel varieert de symbologie, gebaseerd op een doorlopend wijzigende waarde in een vectorlaag. In eerdere versies van QGIS kon u alleen de kleur laten variëren (bijv. door een kleur van een kleurenbalk te gebruiken). In QGIS 2.10 stelt de symboolrenderer Gradueel u nu in staat om de grootte *of* de kleur te variëren. Voor puntlagen kunt u de grootte van de punt variëren, voor lijnen kunt u de breedte van de lijn variëren. Polygoonlagen behouden slechts de mogelijkheid om te variëren op kleur, lijndikte wordt nog niet ondersteund.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Deze mogelijkheid werd ontwikkeld door:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Dit werd mogelijk gemaakt door:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image24](images/entries/1d170efe9ca0c76e971cfe0f1d0adb7c4e14f08f.webp)
 ### Mogelijkheid: Nieuwe optie voor het voorkomen van het automatisch afsnijden van objecten naar het kaartbereik
-This option (located under the symbol advanced menu) disables the automatic clipping of lines/polygons to the canvas extent. In some cases this clipping results in unfavourable symbology (eg centroid fills where the centroid must always be the actual feature\'s centroid).
+Deze optie (geplaatst onder het menu Geavanceerd van symbolen) schakelt het automatisch afsnijden van lijnen/polygonen naar het kaartbereik uit. In sommige gevallen resulteert dit afsnijden in niet gewenste symbologie (bijv. zwaartepuntvullingen waarbij het zwaartepunt altijd het actuele zwaartepunt van het object moet zijn).
 
 ![image25](images/entries/ecd30b6893fd93d65c95df8f069cc3c3e0fff7be.webp)
 ### Mogelijkheid: Schalen van grootte en draaien zijn verwijderd uit het menu Geavanceerd
-We have removed `SizeScale` and `Rotation` from `` `Layer -> Properties -> Symbology tab -> Advanced Menu ``. You should rather set rotation on a *per-symbol layer basis* using an expression or field. The expressions used in old projects are converted to symbol level **data defined size and angle** properties.
+We hebben `Grootte schalen` en `Draaien` verwijderd uit `` `Laag -> Eigenschappen -> tab Symbologie -> menu Geavanceerd ``. U zou in plaats daarvan draaien moeten instellen op een *per-symbool laag basis* met behulp van een expressie of veld. De gebruikte expressies in oude projecten worden geconverteerd naar eigenschappen **data-bepaalde grootte en hoek**  op symboolniveau.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Deze mogelijkheid werd ontwikkeld door:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Dit werd mogelijk gemaakt door:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image26](images/entries/2e02fb11f0f967b1ea17331d9af3d5a22a63fed1.webp)
 ### Mogelijkheid: Datagedefinieerde eigenschappen voor markering lettertype
@@ -281,9 +281,9 @@ De meeste eigenschappen van de markering voor lettertype kunnen nu datagedefinie
 ### Mogelijkheid: Visualiseren en aanpassen van de renderer Gradueel met behulp van een histogram
 Een nieuwe tab Histogram is toegevoegd aan de renderer Graduaeel, die een interactief histogram van de waarden uit het toegewezen veld of expressie weergeeft. Klasse-afbrekingen kunnen met behulp van het histogram worden verplaatst of toegevoegd.
 
-**This feature was funded by:** [ADUGA](http://www.aduga.org)
+**Dit werd mogelijk gemaakt door:** [ADUGA](http://www.aduga.org)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Deze mogelijkheid werd ontwikkeld door:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image28](images/entries/b519e61b5b50de563203adf8ef35a7c037536332.webp)
 ### Mogelijkheid: Expressies voor grootte, rotatie en lijndikte op niveau van de symboollijst
@@ -293,9 +293,9 @@ Voor symbolen wordt een legenda gegenereerd voor variërende grootten. Dit maakt
 
 Een assistent, met voorbeeld, is toegankelijk via de knop Datagedefinieerd om de gebruiker te helpen de expressie voor de grootte te definiëren. Drie methoden zijn beschikbaar: Flannery, Area en Radius.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Deze mogelijkheid werd ontwikkeld door:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Dit werd mogelijk gemaakt door:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image29](images/entries/30f4392583400a0ed2fbdae3468265b91f39e675.webp)
 ### Mogelijkheid: Live laageffecten voor lagen en symboollagen
@@ -303,9 +303,9 @@ Live lageneffecten zijn toegevoegd aan de reeds ruime cartografische mogelijkhed
 
 **Opmerking**: Deze mogelijkheid is voor gevorderde gebruikers en we moeten opmerken dat het overmatig gebruiken van deze mogelijkheid de benodigde tijd voor renderen significant kan verlagen, overweeg dus om verschillende profielen voor symbologie voor uw laag te gebruiken - één voor het genereren van kaarten in productiekwaliteit en één voor de ontwerpmodus.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Deze mogelijkheid werd ontwikkeld door:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [a crowd-funding initiative](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
+**Dit werd mogelijk gemaakt door:** [een initiatief voor crowd-funding](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
 
 ![image30](images/entries/2ce331bd884c14764989c1bc5e3c4d1f80ec588c.webp)
 

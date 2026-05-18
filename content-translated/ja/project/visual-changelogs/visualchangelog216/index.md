@@ -607,7 +607,7 @@ For this release, QGIS Processing now includes every [vector](https://grass.osge
 
 現時点では、GRASS7処理アルゴリズムはシェープファイルベクターレイヤーとGeoTiffラスターのみを使用して生成できます。ラスターレイヤーを一時ディレクトリに複製するGRASS7ラスターアルゴリズム（カラーテーブルを操作するすべてのアルゴリズム）には制限があります。ソースラスターのサイズによっては、それらを処理するためのディスクスペースが必要になることがあります。
 
-This feature was developed by [Médéric Ribreux](https://medspx.fr)
+この機能は [Médéric Ribreux](https://medspx.fr) によって開発されました
 ## データプロバイダ
 ### 機能：OGRデータセットは既定で読み取り専用モードで開きます
 QGISとMapInfoの両方でシェイプファイルとタブファイルを同時に編集できます。

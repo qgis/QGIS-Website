@@ -34,7 +34,7 @@ De gegevens en types analyses die we momenteel gebruiken om dit complexe landsch
 
 <figure>
 <img src="../images/france_burgundy2.jpg" class="align-left" alt="france_burgundy2.jpg" />
-<figcaption>A view of our project QGIS database. At right is the eVis GPS ground photo and data of a recently drained pond dating back at least to 1834. In the GIS image at center top you can see the location of the pond as a yellow dot. Red dots show other eVis ground photos of mills and other historical or archaeological sites.</figcaption>
+<figcaption>Een weergave van onze database voor het project van QGIS. Rechts is de eVis GPS-grondfoto en gegevens van een recent gedraineerde vijver, daterend van ten minste 1834. In de GIS-afbeelding boven in het midden ziet u de locatie van de vijver als een gele stip. Rode stippen geven andere eVis-grondfoto's weer van molens en andere historische of archeologische plaatsen.</figcaption>
 </figure>
 
 ## Conclusie

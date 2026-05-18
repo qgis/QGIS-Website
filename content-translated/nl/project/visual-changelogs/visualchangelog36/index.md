@@ -33,11 +33,11 @@ Een nieuwe decoratie werd toegevoegd om gebruikers toe te laten snel een titel w
 
 ![image2](images/entries/400e617d8059eddcd1228f3ce6861d6087f65794.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Boven/onder centreren voor decoratie items
 Kaartvenster copyright en de nieuw toegevoegde titellabel-decoratie kunnen nu gecentreerd worden boven- of onderaan de kaartweergave.
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Gereedschap Punten reparaties en verbeteringen
 Opmerking: alle hieronder vermelde items zijn ook aan de LTR toegevoegd, zodat ze ook in QGIS 3.4.5 zullen verschijnen.
 ### Select (\"lock\") feature before editing
@@ -57,7 +57,7 @@ From the two modes of vertex tool, \"all layers\" used to be the default one. Bu
 
 This feature was funded by [German QGIS user group](http://qgis.de/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Verkleind/Vergroot
 Anders dan in andere software stelt het gereedschap u in staat (multi)lijnen EN (multi)polygonen aan te passen. Meer nog, het is niet noodzakelijkerwijze het einde van de lijnen dat is betrokken; elk segment van een geometrie kan worden aangepast. De andere kant is dat dit kan leiden tot ongeldige geometrieën, het is de verantwoordelijkheid van de gebruiker.
 
@@ -118,14 +118,14 @@ Deze mogelijkheid werd ontwikkeld door  Alexis Roy-Lizotte
 ### Mogelijkheid: Nieuwe funtie try() om fouten te vangen
 De nieuwe functie try() probeert een expressie en geeft de waarde ervan terug indien foutenvrij. Als de expressie een fout teruggeeft zal een alternatieve waarde worden teruggegeven, indien opgegeven, anders zal de functie null teruggeven.
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ## Gebruikersinterface
 ### Feature: A new grayscale theme: \"Blend of Gray\"
 A brand new UI theme has made its way into QGIS named \"Blend of Gray\". In addition, hundreds of fixes, tweaks, and refinements were applied to the preexisting \"Night Mapping\" theme.
 
 ![image4](images/entries/32e743ea5bf84c96b86ea31160b1677b6362eacf.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Meerregelige selecties en bewerken in bewerkers voor code/expressies
 Indrukken van Ctrl tijdens het selecteren in de bewerkers voor expressies en Python-scripts in QGIS stelt u in staat een meerregelig blok tekst te selecteren, die in één keer kan worden bewerkt.
 
@@ -146,13 +146,13 @@ Dit maakt het maken van gevulde symbolen met een consistent uiterlijk mogelijk, 
 
 Deze mogelijkheid werd mogelijk gemaakt door de Duitse QGIS gebruikersgroep
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Optie voor eenvoudige lijnen en markeringslijnen om alleen de buitenste ring of binnenste ringen te renderen
 This new option is shown whenever a simple line symbol or marker line symbol is used as part of a fill symbol for rendering polygons. The default behavior is to render both interior and exterior rings, but this new setting allows users to set the symbol layer to render only for the exterior ring OR only for interior rings. This allows for symbolisation which wasn\'t directly possible before, such as a marker line with markers for interior rings angled toward the interior of the polygon.
 
 Deze mogelijkheid werd mogelijk gemaakt door de Duitse QGIS gebruikersgroep
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Rasterafbeelding als puntsymbool
 Een nieuw type symbologie voor punten als rasterafbeeldingen werd toegevoegd aan QGIS die gebruikers in staat stelt een raster, d.i. bitmap, afbeeldingsbestand te gebruiken en weer te geven als een puntsymbool. De symbologie voor punten als rasterafbeelding staat aanpassen van de breedte, hoogte, verhoudingen van de afbeelding, rotatie, en transparantie toe.
 
@@ -160,7 +160,7 @@ Gebruik maken van een gegevens-gedefinieerde afbeeldingsbron maakt deze nieuwe s
 
 ![image5](images/entries/511ac83d3b841be6ae81db5f5d0f319e07e9656e.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Vulling voor raster mag afbeeldingen hebben ingesteld naar URL's op afstand of ingebedde afbeeldingen
 Net zoals de SVG en markering voor rasterafbeeldingen, kan de vulling voor rasters nu worden ingesteld om URL's naar HTTP(s) te gebruiken of bestanden direct hebben ingebed binnen het symbool zelf.
 
@@ -311,7 +311,7 @@ Acceleratie van OpenCL is nu standaard beschikbaar voor bewerkingen van rasterbe
 
 Deze mogelijkheid werd mogelijk gemaakt door Alessandro Pasotti - ItOpen
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Mazen berekenen
 Soortgelijk aan rasterberekeningen werkt Mazen berekenen op lagen met mazen. In aanvulling op de algemene functies verschaft Mazen berekenen ook functies voor het optellen van tijden. Als u bijvoorbeeld een netcdf hebt met dagelijkse temperaturen over een maand, kunt u de gemiddelde temperatuur over de gehele maand berekenen voor elke cel. De uitvoer kan worden gefilterd op tijdsduur of ruimtelijk bereik.
 
@@ -332,7 +332,7 @@ This algorithm creates a copy of an input layer and adds a new field for every u
 
 ![image10](images/entries/304c29f7cc6d26aa823001b67a46744deec3c2dd.png.400x300_q85_crop.webp)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+Deze mogelijkheid werd ontwikkeld door [Etienne Trimaille](https://github.com/Gustry)
 ### Mogelijkheid: Rechterhand-regel forceren 
 Dit nieuwe algoritme forceert geometrieën polygoon om de Rechterhand-regel te respecteren, waarin het gebied dat is gebonden aan een polygoon aan de rechterkant van de grens ligt. In het bijzonder de buitenste ring is georiënteerd in de richting met de klok mee en de binnenste ringen in de richting tegen de klok in.
 
@@ -487,7 +487,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ## Gegevensproviders
 ### Mogelijkheid: Open service info voor ArcGIS Feature Server-lagen
 ArcGIS Feature Server-lagen hebben een nieuw rechtsklik-menu optie in het browser paneel, dat gebruikers toelaat om de service informatie webpagina voor de geselecteerde laag rechtstreeks te openen.
@@ -538,7 +538,7 @@ Deze mogelijkheid werd ontwikkeld door Jürgen Fischer
 ### Mogelijkheid: Ondersteuning voor unieke waarden in meervoudige velden van ArcGIS Feature Server
 QGIS kan nu een laag van Feature Server met een renderinstelling voor unieke waarden voor meervoudige lagen weergeven.
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ## QGIS Server
 ### Feature: Possibility to set ATLAS_PK in GetPrint request to print atlas sheet(s)
 De nieuwe parameter GetPrint accepteert de primaire sleutel(s) waarvoor bladen van atlas zouden moeten worden afgedrukt, gescheiden door komma,
@@ -585,7 +585,7 @@ Thanks to this new feature, the FORMAT parameter of GetFeatureInfo for the WMS s
     
 This feature was funded by [Veolia](https://www.veolia.com)
 
-This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Paul Blottiere (Oslandia)](http://oslandia.com/)
 ## Plug-ins
 ### Mogelijkheid: DB Manager: Knoppen toegevoegd om een extern bestand van SQL te laden en op te slaan
 De nieuwe knoppen stellen de gebruiker in staat de query in een extern bestand van SQL te laden en op te slaan.
@@ -673,20 +673,20 @@ Deze API zou altijd moeten worden gebruikt als een blokkeerverzoek voor een netw
 
 Doorverwijzingen worden automatisch afgehandeld door de klasse.
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Aangepaste controles voor geldigheid voor exports van lay-out
 See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: API voor berekenen van geodetische lijnen
 Nieuwe PyQGIS API voor het berekenen van geodetische lijnen (kortste afstand op een ellipsoïde) is toegevoegd aan QgsDistanceArea, wat de volwassen bibliotheek geographiclib gebruikt voor geodetische berekeningen.
 - QgsDistanceArea.geodesicLine : berekent de geodetische lijn tussen twee punten
 - QgsDistanceArea.latitudeGeodesicCrossesAntimeridian berekent de breedtegraad waarop de geodetische lijn twee punten verbindt die de ant-meridiaan kruisen
 - QgsDistanceArea.splitGeometryAtAntimeridian : splitst een (multi)linestring op de anti-meridiaan, met behulp van geodetische lijnen om het exacte punt te berekenen om te splitsen op de anti-meridiaan
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Nieuwe klasse QgsQuadrilateral
 QgsRectangle stelt niet de ondersteuning voor oriëntatie of Z voor, omdat zijn rol is voor het bereik. Een nieuwe klasse, genaamd QgsQuadrilateral, om 4 vertexpolygonen te beheren is gemaakt. Voor dit moment zijn er alleen rechthoeken maar het is mogelijk later andere vormen toe te voegen.
 
@@ -755,7 +755,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it/)
 ### Mogelijkheid: Reparaties van problemen door Alexander Bruy
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -889,7 +889,7 @@ Deze mogelijkheid werd ontwikkeld door Victor Olaya
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Martin Dobias
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -931,7 +931,7 @@ This feature was developed by [Martin Dobias](https://www.lutraconsulting.co.uk/
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door Hugo Mercier
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |

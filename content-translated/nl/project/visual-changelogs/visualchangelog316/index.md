@@ -38,7 +38,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ### Mogelijkheid om geanimeerde frames van Tijdbeheer te exporteren
 Maakt het exporteren van geanimeerde frames van Tijdbeheer naar opvolgende afbeeldingen mogelijk, om ze later samen te voegen in een externe toepassing. Gebruikers hebben precieze controle over de grootte van de afbeelding en het kaartbereik.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Kaartgereedschap
 ### Ga naar locatie
 We hebben een nieuw filter Ga naar locatie toegevoegd.
@@ -73,7 +73,7 @@ Meerder verbeteringen werden geïntroduceerd voor het bewerken van complexe opma
 - Stelt de gebruikers in staat de lijst met stijlen te filteren om alleen de momenteel zichtbare weer te geven
 - Stel het juiste zoomniveau voor het kaartvenster in bij het bewerken van symbolen, zodat voorbeelden van expressies netjes werken
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Gebruikers toestaan optioneel de URL voor de standaardstijl voor verbindingen van vectortegels te specificeren
 When setting up a vector tile source connection, there\'s a new option to enter a URL to a MapBox GL JSON style configuration. If one has been entered, then that style will be applied whenever the layers from the connection are added to QGIS.
 
@@ -81,15 +81,15 @@ Dit werkt ook met verbindingen naar ArcGIS Vector Tile Service die de configurat
 
 ![image5](images/entries/f93d5dca726eb94be82cc47479424b8fe42f5920.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Data-bepaalde verschuiving toestaan voor vulling van symboollagen
 Elke vulling voor symboollaag die verschuiving van polygonen ondersteunt, inclusief standaard vullingen, vullingen voor rasterafbeeldingen, vullingen shapeburst en vullingen voor kleurverlopen, staat nu data-bepaalde verschuivingen toe
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Stijlen voor MapBox GL JSON voor lagen van vectortegels importeren 
 Gebruikers kunnen nu configuratiebestanden voor stijlen van MapBox GL JSON laden bij het importeren van stijlbestanden voor lagen van vectortegels
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Optie weergeven om standaardpatronen lijn streepje te verschuiven met een vooraf ingestelde hoeveelheid
 Allows for tweaking the positioning of dashes/spaces in the line, so that the dashes/spaces can be placed at nicer positions to account for corners in the line (also can be used potentially to \"align\" adjacent dash pattern borders).
 
@@ -97,7 +97,7 @@ De verschuiving kan worden ingesteld in verschillende eenheden, inclusief kaarte
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Opties toegevoegd om dynamisch streepjespatronen aan te passen in standaard lijnsymboollagen
 Opties zijn toegevoegd om het aanpassen van streepjespatronen mogelijk te maken om meer beheer voor het verbeteren van de kwaliteit van renderen van lijnsymbolen toe te staan. Deze opties omvatten:
 - Streepjespatroon uitlijnen op lijnlengte: Indien geselecteerd zullen de lengtes van het streepjespatroon subtiel worden aangepast om er voor te zorgen dan wanneer een lijn wordt gerenderd, het zal eindigen met een volledige element streepje, in plaats van een element gat of een gedeeltelijk element streepje.
@@ -117,7 +117,7 @@ Na:
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### 3D-symbolen beheren door Stijlmanager
 Ondersteuning is toegevoegd voor het beheren van 3D-suymbolen door de Stijlmanager van QGIS, inclusief ondersteuning voor het importeren en exporteren van bibliotheken van 3D-symbolen, en completeert het recente werk in het volledig abstract maken van 3D-symbolen en afhandeling in hun widgets.
 
@@ -127,14 +127,14 @@ This feature addresses the issue raised in [31479](https://github.com/qgis/QGIS/
 
 ![image9](images/entries/7e4ee802abba7dfd7ec61cdd8b3db333b7a30fae.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Labelen
 ### Optie toegevoegd om gebruikers toe te staan de plaatsing van labels langs objecten lijn te beheren
 A new \"Label Anchoring\" section in the line placement settings for labels allows users to specify whether labels should be placed at the center, start or end of lines. In addition, it allows offsets of these positions (based on the percentage of the feature length), which may be defined statically or by using a data-defined definition.
 
 ![image10](images/entries/f5cc643fc4eafe75053c134b245e91d2e72e33d0.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Ankerpunt voor lijnlabels beheren
 Een nieuwe optie wordt weergegeven die gebruikers in staat stelt te beheren of het ankerpunt voor het labelen van objecten een hint is of een strikte eis. Het resulterende gedrag van de aanpassingen omvat het volgende:
 - Strikt: Labels worden alleen exact geplaatst op het ankerpunt van het label, en er zijn geen andere plaatsingen om op terug te vallen toegestaan.
@@ -142,7 +142,7 @@ Een nieuwe optie wordt weergegeven die gebruikers in staat stelt te beheren of h
 
 ![image11](images/entries/a6c67225ee3b55a021a395ffbf58bd05352ef6fb.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Diagrammen
 ### As renderen voor gestapelde staafdiagrammen
 Dit voegt ondersteuning toe voor het renderen van de as voor gestapelde staafdiagrammen als een as is ingesteld. De implementatie is gebaseerd op het renderen van de as voor het diagram histogram.
@@ -232,7 +232,7 @@ This feature was developed by [Alexander Bruy](https://api.github.com/users/alex
 ### Toestaan dat 3D materiaal textuurbestanden worden ingebed in stijl/project
 Enige kleine opschoning van API en code werd uitgevoerd, als ook de introductie van het gebruiken van QgsImageCache voor 3D textuurbestanden, om toe te kunnen staan dat zij worden ingebed in projecten.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Schaduw renderen
 Schaduwen kunnen nu worden gerenderd in 3D-weergaven.
 
@@ -279,7 +279,7 @@ Dit maakt het mogelijk lichtbronnen gemakkelijker opnieuw te positioneren en te 
 
 Addresses [Issue #37726](https://github.com/qgis/QGIS/issues/37726).
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Verbeteringen voor behandeling van materiaal
 Verdere verbeteringen voor behandelen van materiaal werd geïntroduceerd, en een schaduwmodel Gooch werd toegevoegd. Dit verbetert de QgsAbstractMaterialSettings API, door:
 - Toevoegen van ondersteuning met pictogram voorgeregistreerde typen materiaal (om te gebruiken in het combinatievak voor het selecteren van materiaal).
@@ -289,20 +289,20 @@ Verdere verbeteringen voor behandelen van materiaal werd geïntroduceerd, en een
 
 ![image25](images/entries/b6df518d57147bfdfd207d4499363c9d4653721b.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Afdruklay-outs
 ### Beheer weergeven over tekstindeling en uitlijning voor individuele cellen in handmatige teksttabellen
 Voegt beheer toe over instellen van de tekstindeling (bijv. vet/cursief/buffer/schaduw etc.) en uitlijnen van tekst (horizontaal en verticaal) voor de inhoud van individuele cellen in een handmatige teksttabel.
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### QgsTextRenderer gebruiken om tekst van de attributentabel te renderen
 Maakt het mogelijk dat het volledige bereik aan opties voor het opmaken van tekst wordt gebruikt in attributentabellen voor lay-out, inclusief buffers, schaduwen, afstand tussen woorden etc.
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### QgsTextRenderer gebruiken om tekst voor het kaartraster te tekenen in lay-outs
 Staat annotaties voor het raster toe die buffers, schaduwen, vormen voor de achtergrond, etc. gebruiken
 
@@ -310,13 +310,13 @@ Staat annotaties voor het raster toe die buffers, schaduwen, vormen voor de acht
 
 ![image27](images/entries/349efbc988ccbf3499e18ec4453b637abf893c38.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Optie weergeven voor beheer van de methode voor compressie van afbeelding naar PDF bij het exporteren van lay-outs naar PDF
 Opties zijn voor compressie Met verlies, wat de standaard gebruikte JPEG-compressie is, en compressie Zonder verlies (wat in de meeste gevallen grotere bestanden maakt, maar veel meer geschikt is voor professionele afdrukuitvoeren of voor post-productie in andere producten zoals Illustrator etc.)
 
 Het slechte nieuws is dat deze optie alleen beschikbaar is in builds die zijn gebaseerd op Qt 5.13 of later.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Instellingen voor automatisch clippen toegevoegd voor kaarten als atlas
 Deze mogelijkheid stelt gebruikers in staat clippen van kaarten op items voor lay-out in te schakelen, zodat kaartlagen automatisch worden geclipt naar de grenzen van het huidige object van atlas.
 
@@ -335,7 +335,7 @@ Opties bestaan voor:
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### API aan QgsMapSettings toegevoegd voor het specificeren van toe te passen regio's voor clippen bij renderen van kaarten
 Dit is momenteel alleen functionaliteit voor de API, maar functionaliteit is toegevoegd die mogelijkheden aan de achterzijde verschaft om regio's te specificeren voor het clippen die mogen worden gebruikt bij bewerkingen voor het renderen van kaarten.
 
@@ -350,7 +350,7 @@ of
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Maximale grootte markering voor legenda van lay-out
 De mogelijkheid toegevoegd om de maximale grootte voor een markering in te voeren in de widget voor de legenda van de lay-out.
 
@@ -362,7 +362,7 @@ Staat individuele cellen in een handmatige teksttabel toe dat hun inhoud wordt v
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Kaarten van lay-out clippen naar vorm
 Nieuwe functionaliteit werd geïntroduceerd die het voor gebruikers mogelijk maakt een kaart-item te clippen naar een vorm of item polygoon vanuit hun lay-out, wat niet rechthoekige kaarten binnen de lay-out mogelijk maakt.
 
@@ -370,7 +370,7 @@ Nieuwe functionaliteit werd geïntroduceerd die het voor gebruikers mogelijk maa
 
 ![image31](images/entries/7179282b09e8d196251f543a9c5f059f89c701e2.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Ondersteuning voor geroteerde streepjes/annotatie
 Tick marks and annotations on a map frame in the print composer can now be rotated, allowing them to align with a rotated map frame as described in [issue 36904](https://github.com/qgis/QGIS/issues/36904). It works for both rotated maps and reprojected grids.
 
@@ -406,13 +406,13 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 ### Add \"main_angle\" function to return the estimated main angle of a geometry
 Geeft de hoek terug van het georiënteerde minimum begrenzingsvak dat de waarde van de geometrie bedekt.
 
-Useful for data defined overrides in the symbology of label expressions, e.g. to rotate labels to match the overall angle of a polygon, and similar for line pattern fill. ![image33](images/entries/87367553-aae7d680-c5be-11ea-923a-e81200f2b90c.gif)
+Nuttig voor data-bepaalde overrides in de symbologie van expressies voor labels, bijv. om labels te roteren zodat zij overeenkomen met de algehele hoek van een polygoon, en soortgelijk voor vulling lijnpatroon. ![image33](images/entries/87367553-aae7d680-c5be-11ea-923a-e81200f2b90c.gif)
 
 ![image34](images/entries/03463ac0a8303444d94806fb2ff66d6a73c56ccb.webp)
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### refFunctions geporteerd naar de bron
 Verscheidene functies voor bewerkingen van overleggen zijn toegevoegd aan het programma voor de expressies. Dit dekt de functionaliteit van de plug-in refFunctions.
 
@@ -440,7 +440,7 @@ This feature was developed by [Olivier Dalang, OPENGIS.ch](https://www.opengis.c
 ### Optie toegevoegd voor berekenen van richting uit richting van reizen
 Voor apparaten die foutieve berekeningen van richtingen rapporteren kan deze optie worden gebruikt om in plaats daarvan de GPS-richting te berekenen, gebaseerd op de vorige twee opgenomen locaties.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Digitaliseren en splitsen van gebogen objecten
 Nieuwe functionaliteit werd geïntroduceerd die de mogelijkheid toevoegt om te schakelen tussen lineaire of cirkeltekenreeksen bij het digitaliseren of splitsen van objecten van vectorlagen.
 
@@ -448,7 +448,7 @@ De gebruiker kan de sneltoetscombinatie **Ctrl+Shift+G** gebruiken om te schakel
 
 For splitting features, new overloading methods have been added to the API. When splitting, curves are preserved. For this, the curve is segmentized before splitting, and all the split features are \"de-segmentized\" after splitting.
 
-A toolbar button was added to enable switching between linear/circular: ![image37](images/entries/88101713-6505b200-cb6c-11ea-9feb-68a4130d6f52.gif)
+Een knop werd aan de werkbalk toegevoegd om te schakelen tussen lineair/cirkel: ![image37](images/entries/88101713-6505b200-cb6c-11ea-9feb-68a4130d6f52.gif)
 
 ![image38](images/entries/86938423-6a93de80-c10e-11ea-8511-489d8b4f006f.gif)
 
@@ -461,7 +461,7 @@ This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcl
 ### Algoritme Raster opnieuw op schaal brengen voor Processing
 Adds a rescale raster algorithm to change raster value range, whilst preserving the shape of the raster\'s histogram. Useful for when rasters from different sources should be compared or processed together and their pixel values should be in the same range. By default, the algorithm preserves the NODATA value of the input raster but there is an option to override it.
 
-The following image displays a histogram of a DEM (value range is 85-243) ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.webp) And the next image displays a histogram of same DEM rescaled to the range 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.webp)
+De volgende afbeelding geeft een histogram van een DEM weer (waardenbereik is 85-243). ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.webp) En de volgende afbeelding geeft een histogram weer van dezelfde DEM die opnieuw op schaal is gebracht naar het bereik van 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.webp)
 
 Addresses [Issue 26099](https://github.com/qgis/QGIS/issues/26099).
 
@@ -476,7 +476,7 @@ Bij het lezen van een project dat is geconfigureerd met een oudere versie van QG
 
 ![image44](images/entries/d3a51f9b7ea6ffa3c8c8c457e3d6278d57bcf125.gif)
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+Deze mogelijkheid werd ontwikkeld door [signedav](https://api.github.com/users/signedav)
 ### Gerelateerde objecten weergeven in boom van Identificatieresultaten 
 Gebruikers zullen nu in staat zijn gerelateerde (kind)objecten te zien in het venster Identificatieresultaten bij het gebruiken van het gereedschap Identificeren. Onder elk geïdentificeerd ouderobject zullen nieuwe groepen zichtbaar zijn die gerelateerde kindobjecten bevatten, hun attributen weergeven, acties, en de gebruiker in staat stellen om direct het objectformulier voor het kindobject te openen.
 
@@ -484,7 +484,7 @@ This feature addresses issue [18634](https://github.com/qgis/QGIS/issues/18634).
 
 ![image45](images/entries/863b80851b995421b6f2ea455faf6b1c41211cd5.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Filterexpressies in widget Rrelatie-verwijzing
 Een optie is toegevoegd om statische filterexpressies te kunnen gebruiken in de widget Relatie-verwijzing.
 
@@ -505,7 +505,7 @@ In zijn huidige vorm wordt alleen de algehele laadtijd van elke individuele laag
 
 ![image48](images/entries/943a79db68aee3458cb88cacd7a69b66fda3caea.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Processing
 ### Tekenreeks voor Help toegevoegd aan parameters
 Tekenreeksen voor Help kunnen nu worden gespecificeerd op het niveau van de parameter.
@@ -524,23 +524,23 @@ Indien gewenst kan een maximale te gebruiken afstand worden ingesteld bij het ui
 
 Een voorbeeld voor een gebruiksgeval is het uitlijnen van puntsymbolen van gebouwen om de dichtstbijzijnde richting van een weg te volgen door een data-bepaalde waarde voor rotatie te gebruiken die wordt gemaakt door dit algoritme.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Algoritme voor Grafische modellen bouwen voor het maken van mappen
 Dit algoritme stelt modellen in staat om nieuwe bestandsmappen te maken. Nuttig voor modellen die resultaten moeten uitvoeren naar bepaalde dynamisch gemaakte paden (bijv. een map die de huidige datum bevat).
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Algoritme voor Grafische modellen bouwen voor het maken van een expressievariabele voor het project
 Allows a model to set Project-level expression variables during execution. Especially useful with the new [Export Print Layout algorithms](https://github.com/qgis/QGIS/pull/36916) to allow models which dynamically set variables used in a layout prior to export.
 
 This functionality was ported from <https://gis.stackexchange.com/questions/359386>
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Aan algoritmen van Processing toegevoegd om een afdruklay-out als PDF/afbeelding te exporteren.
 Modellen zijn in staat om afdruklay-outs te exporteren vanuit het huidige project. Één gebruiksgeval is om gebruikers toe te staan een model in het project te maken dat een bepaalde set lay-outs vanuit het project naar bepaalde mappen exporteert, zodat zij gemakkelijk vanuit het huidige project opnieuw geëxporteerd kunnen worden in één enkele bewerking in plaats van meerdere lay-outs te moeten openen en ze een voor een te exporteren.
 
 Aanvullend, met de nieuwe mogelijkheden om op expressies gebaseerde uitvoerbestanden in modellen te hebben, kunt u automatisch de lay-outs naar een map exporteren met de tag voor de huidige datum en dat opnemen in de geëxporteerde bestandsnamen!
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Opgeslagen objecten toevoegen aan bestand van algoritme
 Er is nu een eigen algoritme voor Processing om vectorobjecten op te slaan in een gegevensbestand voor een bestand in een model. Het komt met een paar geavanceerde mogelijkheden om opties voor gegevensset en laag door te geven aan GDAL.
 
@@ -558,7 +558,7 @@ It\'s designed as a quick way to de-normalize a relation from a project, e.g. to
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Algoritme voor exporteren van atlas van lay-out als afbeelding
 Een nieuw eigen algoritme voor Processing werd toegevoegd om atlassen van lay-outs te exporteren als afbeeldingen.
 
@@ -597,33 +597,33 @@ We hebben enkele nieuwe algoritmen voor rasters toegevoegd die werken op een lok
 
 ![image51](images/entries/97228db861367c2875dab0533ab616bb2ac2432c.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://github.com/root676)
 ### Nieuw algoritme Kleiner dan frequentie
 We hebben enkele nieuwe algoritmen voor rasters toegevoegd die werken op een lokale cel-per-cel basis in een stapels rasters. Het algoritme Kleiner dan frequentie evalueert op een cel-per-cel basis de frequentie (aantal keer) de waarden van een invoerstapel van rasters kleiner zijn dan de waarde van een waardenraster.
 
 ![image52](images/entries/114853cd3d7c245b56edea0024704c853997275c.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://github.com/root676)
 ### Nieuw algoritme Laagste positie in stapel rasters
 We hebben enkele rasteranalyse-gereedschappen voor posities van waarden toegevoegd aan deze nieuwe versie van QGIS: Het algoritme *Laagste positie in stapel rasters* evalueert op een cel-per-cel basis de positie van het raster de laagste waarde in een stapel van rasters. Tellen van de positie begint met 1 en loopt tot het totale aantal invoerrasters. De volgorde van de invoerrasters is relevant voor het algoritme.
 
 ![image53](images/entries/f3383f5583c9096b1b8d1873679e1a495fac0485.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://github.com/root676)
 ### Nieuw algoritme Hoogste positie in stapel rasters
 We hebben enkele rasteranalyse-gereedschappen voor posities van waarden toegevoegd aan deze nieuwe versie van QGIS: Het algoritme *Hoogste positie in stapel rasters* evalueert op een cel-per-cel basis de positie van het raster de hoogste waarde in een stapel van rasters. Tellen van de positie begint met 1 en loopt tot het totale aantal invoerrasters. De volgorde van de invoerrasters is relevant voor het algoritme.
 
 ![image54](images/entries/a730b8c1566c99bdebff09c783ae320b0c138d76.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://github.com/root676)
 ### Resultaten van Processing laden in groep van lagen
-Users can now optionally set a group name which ensures that the resulting output layers added to the project when using the *Open output file after running algorithm* option are grouped together. This allows all outputs from several processing algorithms to be grouped so that they may be easily located in the layer tree and be removed, exported, or have their visibility toggled easily. ![image58](images/entries/414c68839518d5b658d6e6f1565f6c27e1f4336f.gif)
+Gebruikers kunnen nu optioneel een naam van een groep instellen die ervoor zorgt dat de resulterende uitvoerlagen die aan het project worden toegevoegd met de optie *Uitvoerbestand openen na uitvoeren algoritme* gegroepeerd worden. Dit maakt het mogelijk dat alle uitvoer van verscheidene algoritmen van Processing wordt gegroepeerd, zodat ze gemakkelijk kunnen worden gevonden in de boom met lagen en worden verwijderd, geëxporteerd, of gemakkelijk hun zichtbaarheid kan worden geschakeld. ![image58](images/entries/414c68839518d5b658d6e6f1565f6c27e1f4336f.gif)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ### Algoritme Gebiedsstatistieken dat nieuw uitvoer maakt toegevoegd
 Previously, when calculating zonal statistics, the algorithm always updated the original data source, adding additional fields. A new zonal statistics algorithm has been added which creates a new output instead. This functionality is an implementation of the [29504 feature request](https://github.com/qgis/QGIS/issues/29504).
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Nieuwe parameter geometrie toegevoegd
 Added a new `QgisProcessingParameterGeometry` for passing geometries as a parameter to processing alogrithms.
 
@@ -642,7 +642,7 @@ This feature was developed by [David Marteau](https://api.github.com/users/dmart
 ### Een interface toegevoegd om te bepalen of het veilig is om voor de toepassing om af te sluiten
 Een interface voor plug-ins en scripts om aangepaste logica te registreren om te voorkomen dat de toepassing QGIS afsluit werd toegevoegd. Dit maakt het voor plug-ins mogelijk om te bepalen of het veilig is om de toepassing af te sluiten. Dit heeft het mogelijk gemaakt om plug-ins toe te staan te bepalen of er niet opgeslagen wijzigingen zijn die moeten worden opgeslagen of genegeerd vóór QGIS wordt toegestaan af te sluiten, functionaliteit die al was geïmplementeerd in de console scriptbewerker, wat gegevensverlies voorkomt door de gebruikers te laten weten dat er niet opgeslagen wijzigingen zijn in plaats van de toepassing stilletjes af te sluiten.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Opties voor toepassing en projecten
 ### Beschikbare GDAL vectorstuurprogramma's opsommen
 A *Vector Drivers* tab is now available within the QGIS GDAL Settings window, which lists all the available GDAL vector drivers and allows users to toggle their active state. Where several drivers may be used to open data of a specific type, users may now modify these settings to ensure that the intended driver is used when importing specific vector data types. For example, the FileGDB and OpenFileGDB drivers are both capable of being used to import .gdb files, but if the data file has a version of 9.x, the FileGDB won\'t be able to open it. In this instance, a user may disable the FileGDB driver and ensure that the data is loaded using the OpenFileGDB driver instead.
@@ -689,7 +689,7 @@ After a user adds a layer from a VectorTileService, the server\'s default stylin
 
 ![image63](images/entries/e31c882fa9552ed6bd247f0092305ae8c153948a.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Vermeerderen van metadata van laag vertrouwen
 De vlag trust op het niveau van het project wordt alleen gebruikt voor het lezen van het bereik van de vectorlaag vanuit XML, niet vanaf de provider.
 
@@ -766,9 +766,9 @@ This feature was developed by [3Liz](https://www.3liz.com)
 | Freeze when showing attribute table of WFS layer | [#37224](https://github.com/qgis/QGIS/issues/37224) | [PR #38952](https://github.com/qgis/QGIS/pull/38952) | [PR #38956](https://github.com/qgis/QGIS/pull/38956) |
 | OGR Error when editing a kml file | [#39087](https://github.com/qgis/QGIS/issues/39087) | [GDAL Commit 72e1a4d7c96e0381d2d335857697b5f8e1668450](https://github.com/OSGeo/gdal/commit/72e1a4d7c96e0381d2d335857697b5f8e1668450) | Ook verwerkt in branch GDAL 3.1 |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 ### Reparaties van problemen door Alessandro Pasotti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -817,9 +817,9 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 | Passwords are URL-encoded before base64 encoding for HTTP Basic auth | [#39243](https://github.com/qgis/QGIS/issues/39243) | [PR #39347](https://github.com/qgis/QGIS/pull/39347) | [PR #39382](https://github.com/qgis/QGIS/pull/39382) |
 | QGIS crash in Settings menu if NOT in english | [#39430](https://github.com/qgis/QGIS/issues/39430) | [PR #39434](https://github.com/qgis/QGIS/pull/39434) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it/)
 ### Reparaties van problemen door Peter Petrik
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -872,7 +872,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | Creating 3D View from raster | [#37163](https://github.com/qgis/QGIS/issues/37163) | duplicate of [#35483](https://github.com/qgis/QGIS/issues/35483) | N/B |
 | Crash when moving camera in 3D | \"[#37881](https://github.com/qgis/QGIS/issues/37881) | kan niet worden gereproduceerd op master |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Reparaties van problemen door Paul Blottiere
@@ -890,7 +890,7 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 | Map tips should not appear for invisible features | [#37066](https://github.com/qgis/QGIS/issues/37066) | [PR #38861](https://github.com/qgis/QGIS/pull/38861) |  |
 | Merge features: manual value is not respected | [#37659](https://github.com/qgis/QGIS/issues/37659) | [PR #39083](https://github.com/qgis/QGIS/pull/39083) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 ### Reparaties van problemen door Matthias Kuhn
@@ -901,9 +901,9 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 | AMS layers cannot be added when no project CRS is set | [#38892](https://github.com/qgis/QGIS/issues/38892) | [PR #38893](https://github.com/qgis/QGIS/pull/38893) | niet de bedoeling |
 | Legend performance problems | [#38978](https://github.com/qgis/QGIS/issues/38978) | [PR #39066](https://github.com/qgis/QGIS/pull/39066) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Matthias Kuhn](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://opengis.ch/)
 ### Reparaties van problemen door Julien Cabieces
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -931,7 +931,7 @@ This feature was developed by [Matthias Kuhn](https://www.opengis.ch/)
 | Test connection Oracle DB ready - OK greyed out ! | [#39116](https://github.com/qgis/QGIS/issues/39116) | Duplicaat van #38979 |  |
 | Scale dependent snapping does not activate as long as it displays the scale as \"1:xxxxxx\" | [#39031](https://github.com/qgis/QGIS/issues/39031) | [PR #39133](https://github.com/qgis/QGIS/pull/39133) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 ### Reparaties van problemen door Denis Rouzaud
@@ -946,7 +946,7 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 | Fix duplicating features | [PR #39548](https://github.com/qgis/QGIS/pull/39548) |  |  |
 | fix duplication of feature being stopped at 1 level deep | [PR #39550](https://github.com/qgis/QGIS/pull/39550) |  |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 ### Reparaties van problemen door Olivier Dalang
@@ -954,7 +954,7 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 | --- | --- | --- | --- |
 | Core topology fixer issues | niet gerapporteerd | [PR #39392](https://github.com/qgis/QGIS/pull/39392) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Olivier Dalang](https://www.opengis.ch/)
 ### Reparaties van problemen door Nyall Dawson
@@ -1044,8 +1044,8 @@ This feature was developed by [Olivier Dalang](https://www.opengis.ch/)
 | Fix diagram settings are not correctly restored when loading a QML file | [#35343](https://github.com/qgis/QGIS/issues/35343) | [Commit 4668927ce432b198b3c572535ff234343c5042f5](https://github.com/qgis/QGIS/commit/4668927ce432b198b3c572535ff234343c5042f5) | Te riskant |
 | Fix can no longer paste colors from text strings | niet gerapporteerd | [PR #39561](https://github.com/qgis/QGIS/pull/39561) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 
 {{<content-end >}}

@@ -599,7 +599,7 @@ This feature was developed by [Stéphane Brunner](https://github.com/sbrunner)
 | Mesh data in GRIB format from ERA5 | [#41809](https://github.com/qgis/QGIS/issues/41809) | [GDAL PR 3875](https://github.com/OSGeo/gdal/pull/3875) | [GDAL PR 3877](https://github.com/OSGeo/gdal/pull/3877) |
 | Two OGR provider filtered layers with same source dataset don\'t restore proper feature count / extent on project reload | [#43361](https://github.com/qgis/QGIS/issues/43361) | [PR #43372](https://github.com/qgis/QGIS/pull/43372) | [PR #43394](https://github.com/qgis/QGIS/pull/43394) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Even Rouault](https://www.spatialys.com/en/home/)
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti
@@ -635,7 +635,7 @@ This feature was developed by [Even Rouault](https://www.spatialys.com/en/home/)
 | Deleting \"all other values\" breaks date based categorise symbology | [#43651](https://github.com/qgis/QGIS/issues/43651) | [GDAL PR 3978](https://github.com/OSGeo/gdal/pull/3978) |  |
 | Fix documentation doctest builds | <https://github.com/qgis/QGIS-Documentation/pull/6747> | <https://github.com/qgis/QGIS-Documentation/pull/6747> | Niet relevant |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/)
 ### Mogelijkheid: Reparaties van problemen door Paul Blottiere
@@ -649,7 +649,7 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 | Niet mogelijk hulpmiddel voor opslaan op te slaan | [#26365](https://github.com/qgis/QGIS/issues/26365) | [PR #43560](https://github.com/qgis/QGIS/pull/43560) | Riskant |
 | WMS GetFeatureInfo on time enabled layer does not pass TIME parameter | [#42141](https://github.com/qgis/QGIS/issues/42141) | [PR #43599](https://github.com/qgis/QGIS/pull/43599) | [PR #43774](https://github.com/qgis/QGIS/pull/43774) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Paul Blottiere](https://www.qcooperative.net/)
 ### Mogelijkheid: Reparaties van problemen door Denis Rouzaud
@@ -665,7 +665,7 @@ This feature was developed by [Paul Blottiere](https://www.qcooperative.net/)
 | Value Relation and Relation reference widget: Entries are sorted although the option \"Order by value\" is NOT checked | [#26468](https://github.com/qgis/QGIS/issues/26468) | voor nu niet zeker hoe dit op te lossen |  |
 | Errors while adding a feature with a polymorphic relation | [#41962](https://github.com/qgis/QGIS/issues/41962) | gerepareerd |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti
@@ -679,7 +679,7 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 | Check geometries tool does not save default action changes | [#42489](https://github.com/qgis/QGIS/issues/42489) | [PR #43550](https://github.com/qgis/QGIS/pull/43550) | [PR #43568](https://github.com/qgis/QGIS/pull/43568) |
 | Wrong error output location when using Check validity on data with certain type of 3D error | [#43582](https://github.com/qgis/QGIS/issues/43582) | [PR #43588](https://github.com/qgis/QGIS/pull/43588) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces
@@ -694,7 +694,7 @@ This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 | Plugin manager doesn\'t work with proxy | [#43284](https://github.com/qgis/QGIS/issues/43284) | Terugkoppeling |  |
 | Form fails to initialize \$geometry | [#34791](https://github.com/qgis/QGIS/issues/34791) | [PR #43617](https://github.com/qgis/QGIS/pull/43617) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Peter Petrik
@@ -707,7 +707,7 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 | Crash with point clouds when zooming into 3D viewer \[Mac\] | [#41903](https://github.com/qgis/QGIS/issues/41903) | [PR #43743](https://github.com/qgis/QGIS/pull/43743) | niet relevant |
 | Crash when chcking the \"Show bounding boxes\" option in 3D view settings | [#40766](https://github.com/qgis/QGIS/issues/40766) | [PR #43755](https://github.com/qgis/QGIS/pull/43755) | backport_bot |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
 This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson
@@ -760,8 +760,8 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 | \[processing\] Fix use of data defined parameter values when editing features in place | [#43758](https://github.com/qgis/QGIS/issues/43758) | [Commit 3ae9625](https://github.com/qgis/QGIS/commit/3ae96253de7efc5e8921e776ae91de4b9281d90c) |  |
 | \[layouts\] Fix bounding rectangle for shapes doesn\'t include stroke width after loading from xml | [#43748](https://github.com/qgis/QGIS/issues/43748) | [Commit fad1800](https://github.com/qgis/QGIS/commit/fad18003b3560e6daa1c47080f5b2fe10ddef9e6) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
+Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 
 {{<content-end >}}

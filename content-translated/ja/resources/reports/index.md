@@ -23,7 +23,7 @@ In order to detect regressions, OGC tests are run daily basis **master** branch.
 
 Latest reports are [WMS 1.3.0](http://test.qgis.org/ogc_cite/wms_130/latest/report.html) and [WFS 1.1.0](http://test.qgis.org/ogc_cite/wfs_110/latest/report.html).
 ## パフォーマンス
-At the moment, two tools are available to test and generate performance reports.
+現在、パフォーマンスのテストおよびレポート生成に使用できるツールが2つあります。
 
 The first one is [MS-Perfs](https://github.com/camptocamp/ms_perfs) which supports comparison of QGIS Server with other map servers (like GeoServer or MapServer). Reports are generated weekly and available [here](http://test.qgis.org/perf_test/ms_perf/).
 
