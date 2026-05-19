@@ -16,13 +16,13 @@ Datum uitgave 18-02-2022
 
 In Memorium: This release is named \'Tisler\' after a small Norwegian island that was a favourite visiting place of Håvard Tveite who passed away in May 2021. Håvard was a very active member of the QGIS community, providing valuable input to the documentation, developing numerous plugins, and taking care of the QGIS Resources Sharing Repository to name just a few of his contributions. The map on the QGIS 3.24 splash screen is an orienteering map that Håvard has created. He liked spending some time each year map-making at Tisler.
 
-We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+We willen nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier betrokken wilt zijn bij het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://www.qgis.org) en help een handje!
 
 For a whirlwind tour of all the new functionalities introduced, you can view the highlight reel video on youtube at <https://youtu.be/gVgR4Oxqtkk>
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/gVgR4Oxqtkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende leden](https://www.qgis.org/nl/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
 
 {{<fund type="active" >}}
 
@@ -35,7 +35,7 @@ Dit is een handige tijdspaarder! De widget Extent in QGIS stelt u nu in staat om
 
 ![image3](images/entries/2dc42086879501e4645c8f6b7bbaba0f90fa4164.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Gemakkelijker aangepaste Coördinaten ReferentieSystemen maken 
 We\'ve added a new option when selecting a Coordinate Reference System (CRS) which allows you to just directly enter a custom CRS definition (from proj or WKT strings), instead of requiring you to specifically add these custom CRS to the projection database first.
 
@@ -43,7 +43,7 @@ It\'s much friendlier when you just want to define a custom projection for a sin
 
 ![image4](images/entries/c0053c5fd55a77bc13f8e92bbf9d27ecd57535e4.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Symbologie
 ### Feature: Marker/hash line: offsets along line by \"percent\" of line length (and negative offsets!)
 U kunt nu de *verschuiving langs lijn* specificeren in het  percentage voor zowel de markerings- als de hash-lijn typen symboollagen. (Deze verschuivingen worden behandeld als percentages van de totale lijnlengte).
@@ -56,7 +56,7 @@ Tenslotte hebben we het ook mogelijk gemaakt om een negatieve *verschuiving lang
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Beheren of plaatsingen van eerste/laatste punt van toepassing zijn voor elk deel van meerdelige geometrieën
 Deze nieuwe optie voor Symbologie voor de Markerings- en Hash-lijn symbooltypen stellen u in staat te beheren of de opties voor plaatsing van het eerste en laatste punt van toepassing zouden moeten zijn voor elk deel van een meerdelige lijn (of polygoon) individueel, of alleen het allereerste en allerlaatste punt in de gehele meerdelige geometrie.
 
@@ -64,7 +64,7 @@ Deze nieuwe optie voor Symbologie voor de Markerings- en Hash-lijn symbooltypen 
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Marker/hash line \"on vertices\" placement option replaced by \"on inner vertices\"
 De nieuwe modus *Op binnenste punten* plaatst de symbolen alleen op alle **binnenste** punten (d.i. alle punten, behalve het eerste of laatste punt).
 
@@ -76,13 +76,13 @@ Previously, the old \"Vertex\" mode put symbols on the first and last vertex as 
 
 Dit werd mogelijk gemaakt door North Road, met dank aan SLYR
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Opties voor plaatsing in markerings- en hash-lijn symboollagen hebben nu keuzevakken in plaats van elkaar uitsluitende knoppen
 Deze verbetering maakt het aanzienlijk eenvoudiger om markerings- (of hash) lijnen te maken met de markeringen op zowel het eerste **en** laatste punt (naast andere nuttige combinaties!)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Beheren van het gebruikte kleurmodel bij het interpoleren van kleurverlopen
 Bij het renderen van een kleurverloop zorgen sommige combinaties van verlopende kleuren er voor dat het verloop modderige grijze middentonen weergeeft als de interpolatie wordt uitgevoerd met afzonderlijke kanalen rood/groen/blauw. Een alternatieve benadering is om in plaats van kleuren te interpoleren via hun nuance/saturatie/helderheid of waardekanalen. Deze benadering kan deze ontzadigde middentonen vermijden, wat resulteert in meer visueel prettige verlopen.
 
@@ -92,7 +92,7 @@ This [video](https://user-images.githubusercontent.com/1829991/140872101-b6d7dd6
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Miniaturen in grootte wijzigen in dialoogvenster Stijlbeheer
 We\'ve added a new slider to control the size of thumbnails shown in the style manager dialog, because sometimes these thumbnail sizes are just too small to get a good representation of a symbol!
 
@@ -100,7 +100,7 @@ We\'ve added a new slider to control the size of thumbnails shown in the style m
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: \"Lineburst\" symbols
 We\'ve added a brand new \"Lineburst\" symbol layer type, which renders a gradient along the **width** of a line (as opposed to the Interpolated Line renderer, which renders a gradient along the **length** of a line). It\'s just like the Shapeburst fill symbol type, but for lines!
 
@@ -108,7 +108,7 @@ We\'ve added a brand new \"Lineburst\" symbol layer type, which renders a gradie
 
 This feature was funded by [North Road, thanks to SLYR!](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: \"Raster Line\" symbols
 We\'re super-excited to bring you this brand new line symbol type, which allows you to render a raster image following a line feature\'s shape. This symbol type opens a whole new realm of possibilities for QGIS symbology, and is especially useful when creating maps in a hand drawn or painted style.
 
@@ -122,7 +122,7 @@ Opties die beschikbaar zijn om te beheren:
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Keuze voor gedrag van clippen voor patroonvullingen voor lijnen
 U kunt nu beheren hoe lijnen in een symbool voor patroonvulling worden geclipt naar polygoon-vormen. De beschikbare opties omvatten:
 - **Alleen clippen tijdens renderen**: lijnen worden gemaakt die het gehele *begrenzingsvak* van het object bedekken die dan worden geclipt tijdens het tekenen. De extremiteiten van de lijn (begin en einde) zullen niet zichtbaar zijn (dit is hetzelfde gedrag las in oudere uitgaven van QGIS).
@@ -133,7 +133,7 @@ U kunt nu beheren hoe lijnen in een symbool voor patroonvulling worden geclipt n
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeterd renderen van vullingen van lijnpatronen
 Bij het exporteren naar een vectorindeling (bijv. PDF of SVG) of wanneer een subsymbool van een lijn dynamische (data-bepaalde) eigenschappen heeft, kunnen we nu automatisch schakelen naar een lijn-per-lijn gebaseerde benadering om de vulling te renderen. (Eerder werd altijd een op een patroon van tegels gebaseerde benadering gebruikt, wat vaak resulteerde in ongewenste artefacten en zichtbare naden in het patroon).
 
@@ -152,7 +152,7 @@ En zelfs nog beter, het opent de deur voor een groot bereik aan nieuwe symboolst
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Rotatiehoek voor vullingen van puntpatronen
 Nu kunt u een optionele rotatiehoek specificeren voor vullingen van puntpatronen, wat er voor zorgt dat het gehele puntpatroon onder die hoek valt. Dit kan extreem nuttig zijn bij het over elkaar leggen van meerdere vullingen van puntpatronen!
 
@@ -160,7 +160,7 @@ Nu kunt u een optionele rotatiehoek specificeren voor vullingen van puntpatronen
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Willekeurige verschuivingen van punten voor vullingen van puntpatronen
 This (optional) setting allows each point in a point pattern fill to be randomly shifted up to the specified maximum distance in the x or y direction. You can specify the maximum offset in millimeters, points, map units, or even \"percentage\" units (where percentage is relative to the pattern width or height).
 
@@ -172,7 +172,7 @@ The main difference between this new setting and the existing *random marker fil
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Instelling Modus Coördinaten verwijzing voor lijnpatronen en puntpatroon vullingsymboollagen
 Lijnpatroon en puntpatroon vullingsymboollagen hebben een nieuwe instelling Modus Coördinaten verwijzing om het verankeren van de patronen aan te kunnen passen. Praktisch gesproken maakt dit het mogelijk dat patronen netjes worden uitgelijnd over aanliggende en overlappende objecten.
 
@@ -180,7 +180,7 @@ Lijnpatroon en puntpatroon vullingsymboollagen hebben een nieuwe instelling Modu
 
 ![image16](images/entries/afd8b9d9b32f494472a3787323764d9266f6f6ff.gif)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Clippen van markeringen beheren voor vullingen van puntpatronen
 Deze nieuwe optie geeft u beheer over hoe markeringen worden geclipt in een vulling van puntpatronen. De beschikbare opties omvatten:
 - **Clip to shape**: markers will be clipped by the boundary of the shape, so \"cut off\" markers may be visible (same behaviour as previous QGIS versions)
@@ -192,7 +192,7 @@ Deze nieuwe optie geeft u beheer over hoe markeringen worden geclipt in een vull
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Expressiefuncties voor het maken van driehoekige/vierkante/gebogen golven
 We\'ve added some new expression functions which produce \"wavy lines\" along geometry boundaries. Multiple wave shapes are available, including:
 - Golf (sinusachtig)
@@ -207,7 +207,7 @@ Wanneer gebruikt met geometrie-generatoren kunnen deze expressies worden gebruik
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Labelen
 ### Feature: \"Percentage\" units for text buffer size, shadow offset and blur radius
 We maken het nu mogelijk de grootte voor de tekstbuffer, verschuiving van de schaduw en de straal voor vervagen in te stellen als een percentage van de grootte van het lettertype. Dit is gewenst omdat het het mogelijk maakt tekstindelingen te maken waarbij de componenten netjes op schaal worden gebracht als de grootte van de tekst wordt gewijzigd, in plaats van een vaste grootte voor buffer/schaduw te hebben die onafhankelijk moeten worden aangepast als de grootte van de tekst wijzigt.
@@ -216,7 +216,7 @@ We maken het nu mogelijk de grootte voor de tekstbuffer, verschuiving van de sch
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Data-bepaalde labelposities voor geometrieën punt
 U kunt nu de data-bepaalde plaatsing van labels instellen om te worden gebonden aan een veld voor een geometrie punt of expressie. (Eerdere versies van QGIS stonden alleen data-bepaalde plaatsing toe om te worden ingesteld via twee afzonderlijke numerieke velden X en Y).
 
@@ -234,7 +234,7 @@ This improvement allows your text to be horizontally stretched or condensed by a
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Renderen
 ### Mogelijkheid: Renderen van lagen als groepen
 Dit is een andere spannende cartografische verbetering die een geheel nieuwe arena van symbologie en visualisatie van kaarten in QGIS!
@@ -249,19 +249,19 @@ Additionally, when a layer is contained in a group which has the new *Render as 
 
 Dit werd mogelijk gemaakt door Andrew Fletcher.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Support for \"Line pattern\" when converting Mapbox GL vector tile layer styles
 Door gebruik te maken van de nagelnieuwe rasterlijn symboollaag, rendert QGIS 3.24 nu op de juiste wijze de opmaak van het Mapbox GL lijnpatroon voor nieuw toegevoegde vector tegellagen.
 
 ![image22](images/entries/8a1550b27e8d8252b4b79267b0cef1c72ff10659.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Ondersteuning voor achtergrondstijlen voor als Mapbox GL-opgemaakte vector tegellagen
 We renderen nu op de juiste wijze vooraf gedefinieerde achtergrondstijlen die aanwezig zijn in als Mapbox GL-opgemaakte vector tegellagen. Dit verbeterd aanzienlijk het uiterlijk van vector tegellagen met donkere stijlen!
 
 ![image23](images/entries/38d362b08812fcb3d9129f2f8881d3bf02e77703.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## 3D-objecten
 ### Mogelijkheid: Respecteren van Z-volgorde bij het renderen van puntenwolken in 2D
 We\'ve added an option to render point clouds according to their Z-order in 2D map views. With the new *bottom-to-top* ordering option enabled, points with larger Z values will cover lower points \-- resulting in the appearance of a true orthographic photo. There\'s also an option for reverse sorting (*top-to-bottom*), where the scene appears as if viewed from below.
@@ -305,7 +305,7 @@ In oudere uitgaven van QGIS moest u terugvallen op bijzondere trucs zoals het to
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Expressies
 ### Feature: geometry_type function
 The new `geometry_type` function returns the high-level type of a geometry (i.e. \'Point\', \'Line\' or \'Polygon\').
@@ -314,7 +314,7 @@ The new `geometry_type` function returns the high-level type of a geometry (i.e.
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Sorteren van kruisingen bij overleggen op grootte kruising
 We have added further enhancements to the `overlay_intersects` function. The change adds two new optional arguments to the existing function:
 - **return_details**: only valid when used with an expression, set this to true to return a list of maps containing (key names in quotes) the feature \'id\', the expression \'result\' and the \'overlap\' value, the \'radius\' of the maximum inscribed circle is also returned when the target layer is a polygon.
@@ -373,7 +373,7 @@ Deze functionaliteit, die eerder alleen beschikbaar was via de Toolbox van Proce
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Rotate parts of multi-part geometries independently with \"rotate\" expression function
 The new \"per_part\" option for the \"rotate\" expression function allows you to rotate each part of a multi-part geometry around the center of each part (instead of the center of the geometry as a whole). This enhancement is designed to help out symbology when the rotate function is used as a cartographic tool as part of a geometry generator symbol layer.
 
@@ -381,7 +381,7 @@ The new \"per_part\" option for the \"rotate\" expression function allows you to
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: apply_dash_pattern function
 Deze boeiende nieuwe expressiefunctie past een patroon met streepjes toe op een geometrie,  wat een geometrie MultiLineString teruggeeft waarvan de invoergeometrie langs elke lijn (of ring) is gestreept met een lijnpatroon van streepjes.
 
@@ -393,7 +393,7 @@ U kunt ook een optionele verschuiving voor het patroon instellen om te specifice
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Functie scale
 This new expression function allows you to scale (resize) a geometry. Just like the \'rotate\' function, the function accepts an optional point position to apply the scaling from. If no anchor point is not specified then scaling is done from the center of the geometry\'s bounding box.
 
@@ -401,7 +401,7 @@ This new expression function allows you to scale (resize) a geometry. Just like 
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Filter by multiple attributes for get_feature function
 We extended the `get_feature` function to allow multi-attribute filtering, by adding an option to pass an array of filter values to the input.
 
@@ -476,19 +476,19 @@ If a map theme is specified when extracting labels, the exported labels will mat
 
 This feature was funded by [TEKSI](https://www.teksi.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Optionele parameter voor bereik van de uitvoer voor het algoritme GDAL Raster Calculator
 When running against GDAL 3.3 or newer, QGIS processing toolbox\'s GDAL Raster Calculator algorithm now allows you to specify an optional \"output extent\" parameter. This can be quite useful when working with large datasets, often avoiding the need to create an intermediary clipped raster prior to running the calculator algorithm.
 
 ![image43](images/entries/7ebbfa145decc6a81678410d53e4d96709d6b2c7.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Optionele parameter voor bereik voor het algoritme GDAL Raster op maskerlaag clippen
 We added an optional extent parameter to the GDAL \"clip raster by mask\" algorithm, which can come in handy when working with large raster datasets.
 
 ![image44](images/entries/08731bc9d93110cb048f5ac8c9256c9b7556694d.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Geschiedenis van Processing opnieuw bewerkt
 QGIS 3.24 includes a partial implementation of the framework described in [QEP 130](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/130), and ports the Processing history log over to this framework.
 
@@ -504,7 +504,7 @@ We\'ll be using this framework in future to further extend the Processing histor
 
 This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Geavanceerde acties in dialoogvensters van Processing
 We have added new actions on the processing dialog including **copy as qgis_process command**, and **copy/paste as JSON**. Together these actions:
 - Het gemakkelijk kopiëren van de equivalente opdracht voor PyQGIS om het gereedschap uit te voeren met de parameters die zijn gedefinieerd in het dialoogvenster
@@ -516,13 +516,13 @@ We have added new actions on the processing dialog including **copy as qgis_proc
 
 This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Exporteren van naar één enkel bestand met algoritme Lay-out van Atlas als PDF exporteren
 You can now export an atlas layout to a single (collated) PDF file using the \"Export atlas layout as PDF\" processing algorithm.
 
 ![image47](images/entries/ced24ad63c3ff2bf6d47b975a965e6a0b9b28466.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Projectmodellen worden weergegeven in het menu Project
 We added a new submenu to the \"Project\" menu, which will list any Processing models stored within the current project. This gives you a quick way to launch these project-specific models, in either a single or batch mode!
 
@@ -548,14 +548,14 @@ In QGIS 3.24, we\'ve made array field types first-class citizen in the Processin
 
 This feature was funded by [SwissTierras Colombia](https://www.swisstierrascolombia.com/)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Opties voor toepassing en projecten
 ### Feature: qgis_process \--no-python argument
 This new, optional command line parameter for the qgis_process command-line tool allows you to skip launching Processing with Python support when it is not required. This can result in a significant improvement in qgis_process startup times!
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Suppress \"bad layers\" handler on startup
 We\'ve added support for a new command line flag for the `qgis` executable, which allows you to disable the default dialog which shows when opening a project with missing/broken layers:
 
@@ -599,11 +599,11 @@ One big motivation behind this enhancement is to provide a way for the qgis_proc
 
 This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Run Python script algorithms directly via qgis_process
 The qgis_process command-line tool now supports running a Python script algorithm directly by specifying the path to the .py file, in place of an algorithm ID or model file path!
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Vriendelijker fouten van XYZ-rastertegels, WMS- en vectortegels
 Server errors which occur during XYZ, vector tile or WMS network requests are now shown directly in the QGIS window via the message bar. We\'ve made these error messages much more descriptive and helpful, by including the original response error text wherever possible!
@@ -618,7 +618,7 @@ QGIS now sports built-in support for the Terrarium DEM format for WMS/XYZ layers
 
 ![image51](images/entries/68cfde8b146eb42d4e75fd089adb2fbe8e7e5012.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: HMAC SHA256 authenticatiemethode voor MapTiler
 We\'ve added a new authentication method specific for MapTiler which allows you to use a token encrypted with HMAC-SHA256.
 
@@ -657,13 +657,13 @@ U kunt nu typen arrayvelden direct toevoegen aan nieuw gemaakte tekenlagen. (Hoe
 
 ![image54](images/entries/57bd4059d12ad5ef94acb42989824a746de92582.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: JSON veldtypen voor nieuwe GeoPackage-lagen
 We\'ve added support for creating JSON fields directly to newly created GeoPackage layers. (While JSON field types have previously been supported by GeoPackage layers, there was no way for users to add them when creating a new layer.)
 
 ![image55](images/entries/a96a3edb24bb7e7132fdb353b77ea1a1c98ed9ef.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Overschrijven door type tekengescheiden tekst en andere verbeteringen
 We\'ve given some love to the delimited text data provider in 3.24, with several enhancements which include:
 
@@ -729,7 +729,7 @@ Dit wijzigt het gedrag van bestaande projecten.
 
 ![image58](images/entries/2f2169f6a9927916d3841b63333982a5417a3a0c.webp)
 
-This feature was funded by [OPENGIS.ch](https://www.opengis.ch)
+Dit werd mogelijk gemaakt door [OPENGIS.ch](https://www.opengis.ch)
 
 This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://github.com/m-kuhn)
 ## QGIS Server

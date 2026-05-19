@@ -98,15 +98,15 @@ Whenever a message bar item links to a created file (e.g. after exporting a layo
 
 [![image5](images/entries/0ccd6bdae5b0df6d65c259ef08f38032fe4ee34f.gif)](images/entries/0ccd6bdae5b0df6d65c259ef08f38032fe4ee34f.gif)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: New \"Open Directory\" option for disabled welcome page projects
 Deze nieuwe optie in het contextmenu, met rechts klikken, voor uitgeschakelde items op de pagina Welkom stelt gebruikers in staat om het dichtstbijzijnde bestaande pad te openen naar de originele projectlocatie in hun bestandsbeheerder, hopelijk om ze te helpen ontbrekende/verplaatste/hernoemde projecten terug te vinden.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen aan UX voor tijdelijke tekenlagen
 Temporary Scratch Layers in QGIS can be very handy when a \"throw-away\" layer is needed, such as when pre-processing data in multiple steps. However, they can be a trap for uniformed users who may not realise that the contents of the layer will be permanently lost when the current QGIS project is closed. Accordingly, a new indicator icon has been added which shows up next to any temporary scratch layers in the layer tree, making it immediately clear which layers are temporary only.
 
@@ -114,17 +114,17 @@ It\'s also much easier to transition these temporary layers to permanent disk-ba
 
 [![image6](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen aan taakbeheer
 The QGIS task manager widget (shown in the status bar whenever a background task is running) now shows an estimated time remaining and completion time for long-running background tasks. This Estimated Time of Arrival is calculated using a simple linear interpolation based on the task\'s elapsed time and current progress, and allows users to know whether they\'ve only got time to make an instance coffee in the office kitchen or walk round the block for a proper barista made coffee before that long processing task completes\...
 
 Additionally, QGIS uses the standard operating system progress reporting mechanisms on more platforms and occasions in QGIS 3.4. Some long running tasks (which don\'t run in the background) such as atlas exports now show their progress via the operating system mechanism, and throw up handy completion notifications.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Hyperlinks naar lokale vector- & rastergegevenssets in het paneel Informatie
 For local vector and raster datasets, the Information tab within the layer properties dialog now features source file path hyperlinks. Upon clicking on the hyperlink, the system\'s file navigator will open and automatically highlight the dataset.
 
@@ -138,9 +138,9 @@ Het QGIS-dialoogvenster Stijlbeheer (dat gebruikers in staat stelt hun eigen bib
 
 We\'ve also improved the preview of symbols within the Layer Styling dock, adding a toggle to switch between a large icon view and a detailed list view of symbols. Hovering over symbols (and colors!) now shows a large preview of the symbol. Finally, we\'ve made symbol lists more hi-dpi friendly.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Gepolijste interface en ervaring met browserpaneel
 Tonnen werk werden voor deze uitgave uitgevoerd om de gebruikersinterface en ervaring met het browserpaneel te verbeteren, inclusief reparaties voor HiDPI, verbeteringen voor gecomprimeerde vector-/rastergegevenssets, en een vernieuwde set pictogrammen.
 
@@ -166,7 +166,7 @@ This feature was developed by [David Signer and Matthias Kuhn (OPENGIS.ch)](http
 - Stijlen van frame van mazen (paneel Eigenschappen of Stijl)
 - Stijlen van vectorpijlen (paneel Eigenschappen of Stijl)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
 This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/blog/2018/10/18/mdal/)
 ### Mogelijkheid: Symmetrie classificeren in renderer Gradueel
@@ -263,9 +263,9 @@ A button has been added to the Attribute Table toolbar for switching between doc
 
 [![image17](images/entries/2ed512377b90aed08dc73bb7b3ea17ae5c9f4708.gif)](images/entries/2ed512377b90aed08dc73bb7b3ea17ae5c9f4708.gif)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Nieuw filter voor locatie om over alle lagen te zoeken
 A new locator filter has been added which allows users to search across *all* layers in their project, by the layer\'s display expression.
 
@@ -275,7 +275,7 @@ The filter can be activated by using the prefix \'af\', or by making it a defaul
 
 This feature was funded by [Opengis.ch](https://www.opengis.ch/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Niet-verwijderbare (vereiste) lagen geaccentueerd in lagenboom
 A new indicator \"locked\" icon is shown for any layers marked as \"required\" within the current project. This icon gives users instant feedback that a particular layer cannot be removed from the project.
 
@@ -283,9 +283,9 @@ Vereiste lagen worden geconfigureerd via het dialoogvenster Projecteigenschappen
 
 [![image19](images/entries/43cff3e927cdbacf08d61f979891030e48f9a451.webp)](images/entries/43cff3e927cdbacf08d61f979891030e48f9a451.webp)
 
-This feature was funded by [Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) within ERIKUS project](https://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [Arpa Piemonte (Dipartimento Tematico Geologia e Dissesto) binnen het project ERIKUS](https://www.arpa.piemonte.it/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk) and [Faunalia](https://www.faunalia.eu)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk) en [Faunalia](https://www.faunalia.eu)
 ### Mogelijkheid: Rasterlaag aan een bestaand Geopackage toevoegen
 When saving a raster layer to GeoPackage database, it\'s now possible to append the layer to an existing file.
 
@@ -332,9 +332,9 @@ Some Processing models are so intrinsically linked to the logic inside a particu
 
 Models are stored inside projects by clicking the new \"Embed in Project\" button in the Modeler dialog toolbar. Models can be removed from a project from the model\'s right click menu in the toolbox.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Monster rasterwaarden
 Een nieuw algoritme werd toegevoegd voor monsterneming van waarden van rasterlagen op locaties van punten.
 
@@ -352,15 +352,15 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Mogelijkheid: Algoritme K Means clustering
 QGIS 3.4 adds a native \"k-means clustering\" algorithm. Based on a port of PostGIS\' ST_ClusterKMeans function, this algorithm adds a new cluster ID field to a set of input features which identifies the feature\'s cluster based on a k-means clustering approach. If non-point geometries are used as input, the clustering is based off the centroid of the input geometries.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Dbscan spatial clustering
 Dit nieuwe eigen algoritme implementeert een geoptimaliseerde op dichtheid gebaseerde benadering DBSCAN cluster voor het clusteren van 2D puntobjecten.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeterde algoritmes
 Enkele verschillende verbeteringen voor bestaande algoritmes van Processing omvatten:
 - Het algoritme *Reverse line direction* werkt nu met MultiLineString geometrie-invoer
@@ -369,59 +369,59 @@ Enkele verschillende verbeteringen voor bestaande algoritmes van Processing omva
 - De algoritmes *Join by Field Value* en *Join by Location* kunnen nu, optioneel, niet overeenkomende records exporteren
 - *Join by Field Value* rapporteert ook aantallen overeenkomende/niet overeenkomende objecten
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritmes Filter Vertices by M en Filter Vertices by Z
 Twee nieuwe algoritmes werden toegevoegd voor het filteren van punten lijn/polygoon op hun M- of Z-waarde. Een minimum en maximum M/Z-waarde kan worden ingevoerd, en als de punten buiten deze bereiken vallen zullen zij worden genegeerd in de uitvoergeometrie. Zowel de minimum als de maximum filterwaarde kunnen ook datagedefinieerd worden, dus kunnen zij per object variëren.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: \"Array of Translated Features\" algorithm
 Dit nieuwe algoritme maakt kopieën van objecten in een laag, door meerdere vertaalde (verschoven) versies van het object te maken. Elke kopie wordt verplaatst met een vooraf opgegeven hoeveelheid op de X/Y/Z/M-as.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: \"Array of offset (parallel) lines\" algorithm
 Dit nieuwe algoritme maakt kopieën van lijnobjecten in een laag, door meerdere parallelle versies van elk object te maken. Elke kopie wordt verschoven met een vooraf opgegeven afstand.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Keuze voor eenheden voor geen graden/onbekende afstanden
 Wanneer een algoritme een parameter afstand heeft in meters/feet/etc (d.i. niet-geografische afstanden), is een combinatievak toegevoegd voor het kiezen van het type eenheid.
 
 (QGIS doesn\'t (and should **never**) expose this for distances in degrees \-- it\'s up to users in this situation to choose a suitable local projection and reproject their data to match.)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Feature: \"Drape features to z/m\" algorithms
 Deze twee nieuwe algoritmes kunnen Z- of M-waarden van geometriepunten instellen naar monsterwaarden die zijn genomen uit een rasterband. Waarden kunnen optioneel worden geschaald met behulp van een (datagedefinieerde) schaalwaarde.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: \"Raster pixels to points\" algorithm
 A new \"pixels to points\" algorithm was added in QGIS 3.4, which creates a point feature at the center of every pixel. nodata pixels are skipped.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Line substring
 Dit nieuwe, veel om gevraagde, algoritme geeft het gedeelte van een lijn (of een boog) terug dat valt tussen de gespecificeerde begin- en eindafstanden (gemeten vanaf het begin van de lijn). Z- en M-waarden worden lineair geínterpoleerd vanuit bestaande waarden.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: \"Interpolate point on line\" algorithm
 Dit nieuwe algoritme maakt een puntgeometrie, geïnterpoleerd op een ingestelde afstand langs de lijn- (of grens van de polygoon) geometrieën. Gebogen invoergeometrieën worden volledig ondersteund. Z- of M-waarden worden lineair geïnterpoleerd, gebaseerd op bestaande waarden.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: k-neighbour concave hull
 This feature was funded by <https://qgis.org>
 
@@ -449,7 +449,7 @@ A new option is present for all parameters of using a \"precalculated expression
 
 This feature was funded by [QGIS](https://qgis.org)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: \"Categorize a layer using a style XML file\" algorithm
 This new algorithm sets a vector layer\'s renderer to a categorized renderer using matching symbols from a style database.
 
@@ -461,15 +461,15 @@ Indien gewenst kunnen ook tabellen worden uitgevoerd die lijsten bevatten van de
 
 [![image27](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.webp)](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Nieuwe modus voor algoritme Snap geometries
 The new mode \"Snap to anchor nodes (single layer only)\" makes sure that any two vertices of the vector layer are at least at distance given by the threshold value.
 
 Dit algoritme is handig bij bewerkingen waarbij vectoren over elkaar worden gelegd, zoals kruisen, verenigen of verschil om mogelijke topologische fouten, veroorzaakt door numerieke fouten als coördinaten heel dicht bij elkaar liggen, te voorkomen. Na het uitvoeren van het algoritme zouden eerdere geldige geometrieën ongeldig kunnen zijn geworden en daarom kan het nuttig zijn daarna het algoritme Fix geometries uit te voeren.
 
-This feature was funded by [InaSAFE DFAT](https://www.dfat.gov.au/)
+Dit werd mogelijk gemaakt door [InaSAFE DFAT](https://www.dfat.gov.au/)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Gegevensproviders
@@ -498,7 +498,7 @@ Met deze API kunnen ontwikkelaars elementen van mazen inspecteren en waarden oph
 
 [![image30](images/entries/45c0ea5d14157275da7153ac31cc41987319e5eb.webp)](images/entries/45c0ea5d14157275da7153ac31cc41987319e5eb.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
 This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Laag met mazen: mogelijk maken om verschillende vector en scalaire gegevensset te kiezen
@@ -506,7 +506,7 @@ Een laag met mazen bevat vaak diverse kwantiteiten. Een netcdf/grib kan bijvoorb
 
 [![image31](images/entries/74ce47f09e8644a2ce6a8daeae2e37e13615b956.gif)](images/entries/74ce47f09e8644a2ce6a8daeae2e37e13615b956.gif)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
 This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Laag met mazen: mogelijk maken van renderen van vectoren/pijlen op het gebruigedefinieerde raster
@@ -514,7 +514,7 @@ Scalaire gegevens worden gewoonlijk in het midden/hoek van elk element mesh gege
 
 [![image32](images/entries/9eaa1430fee8b738a79936d7df104270e0b7f2a8.webp)](images/entries/9eaa1430fee8b738a79936d7df104270e0b7f2a8.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
 This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Ondersteuning voor type JSON/JSONB
@@ -528,13 +528,13 @@ Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.o
 ### Mogelijkheid: Ondersteuning voor ESRI tokenauthenticatie
 Support has been added to QGIS\' Authentication system for ESRI\'s temporary token based authentication. This allows for connection to ArcGIS Feature and Map Servers via an allocated temporary token.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: SQL Server - Afhandeling ongeldige geometrie
 Recent versions of QGIS have switched to a safer approach to reading SQL Server layers, which automatically checks for geometry validity and repairs geometries when needed. This workaround is required to avoid issues with the design of SQL Server\'s geometry handling, where encountering any rows with invalid geometries can silently abort a request without returning all the features from a layer. Unfortunately, the workaround comes at a significant performance cost.
 
 In QGIS 3.4 a new setting was added to allow users to manually turn off QGIS\' SQL Server invalid geometry handling. Turning on the \"Skip invalid geometry handling\" setting under a SQL Server connection\'s properties causes QGIS to skip all the expensive geometry validation processing, but firmly places the responsibility for ensuring that all features on the database have valid geometries back upon the user/database administrator. **This is a \"use at your own risk\" setting. Improperly enabling this option can lead to missing features and data loss.**
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## QGIS Server
 ### Mogelijkheid: Servercache kan worden beheerd door plug-ins
 Standaard cacht QGIS Server alleen in geheugen documenten WMS GetCapabilities. Met implementatie van WMTS is het nodig om een manier te hebben om tegels te cachen. Maar het beheer van de cache is niet ontwikkeld om alleen tegels te cachen.
@@ -701,7 +701,7 @@ This feature was developed by [Borys Jurgiel](https://github.com/borysiasty)
 ### Mogelijkheid: GeoPackage offline bewerken
 Met de functionaliteit Offline bewerken is het  mogelijk om te selecteren of de export een SpatiaLite of een bestand voor GeoPackage moet maken voor gebruik offline.
 
-This feature was funded by [Oester Messtechnik](https://messtechnik.ch/)
+Dit werd mogelijk gemaakt door [Oester Messtechnik](https://messtechnik.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch)
 ## Programmeerbaarheid
@@ -710,15 +710,15 @@ A very fast static spatial index for 2D points based on a flat KD-tree, using <h
 
 Compared to QgsSpatialIndex, this index: - supports single point features only (no multipoints) - is static (features cannot be added or removed from the index after construction) - is much faster! - supports true \"distance based\" searches, i.e. return all points within a radius from a search point
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: QgsRasterDataProvider::sample methode voor efficiëntt nemen van monsters van rasters op een bepaald punt
 This is an alternative to the `QgsRasterDataProvider::identify` method, which is less efficient but more powerful
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Nieuwe aanroep voor geometrie API om een gebogen subtekenreeks te rug te geven
 Nieuwe PyQGIS API is toegevoegd om het eenvoudiger te maken een subtekenreeks te halen uit een geometrie LineString/Curve:
 
@@ -726,9 +726,9 @@ Nieuwe PyQGIS API is toegevoegd om het eenvoudiger te maken een subtekenreeks te
 
 If z or m values are present, the output z and m will be interpolated using the existing vertices\' z or m values. The method also handles curved geometries without loss or segmentation.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: sip Module API wijzigingen
 Due to upstream changes within the PyQt/sip library, the recommended way to import this module has changed in QGIS 3.4. For maximum portability, instead of directly calling: `import sip` plugins should instead use: `from qgis.PyQt import sip` Using this newer style import will ensure that the code works correct across all platforms and remains functional in future QGIS versions.
 ### Mogelijkheid: Python vectorgegevensproviders
@@ -771,7 +771,7 @@ The disadvantage is that the lines cannot be wide (supported in Qt3D only since 
 
 [![image39](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.webp)](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Kaartgereedschap Identificatie voor 3D-weergaven
@@ -781,11 +781,11 @@ Een nieuw gereedschap Identificatie werd geïntroduceerd voor de 3D-kaart. Met b
 
 This feature was funded by [Department of Environment, Land and Infrastructure Engineering (DIATI)](https://www.faunalia.eu/en/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk) and [Faunalia](https://www.faunalia.eu)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk) en [Faunalia](https://www.faunalia.eu)
 ### Mogelijkheid: Experimentele Python API
 Enkele klassen van QGIS 3D zijn beschikbaar gemaakt voor ontwikkelaars in Python. Het is nu mogelijk om 3D-renderers van lagen te bevragen of te wijzigen en eigenschappen te lezen/schrijven van opgenomen 3D-symbolen, zoals kleuren van materiaal. Onthoud dat voor nu de API wordt beschouwd als experimenteel, dus die zou kunnen wijzigen in toekomstige uitgaven van 3.x.
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 

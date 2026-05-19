@@ -39,7 +39,7 @@ QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor he
 ### Mogelijkheid: Vervallen achterwaartse compatibiliteit voor symbologie in project met QGIS 3.16 en ouder
 Eerdere uitgaven van QGIS zouden significante hoeveelheden compatibiliteits-objecten schrijven naar de XML-structuur van projectbestanden om achterwaartse compatibiliteit te behouden voor symbologieën om er voor te zorgen dat projectbestanden kunnen worden geopend met QGIS 3.16 en ouder. Deze compatibiliteit is verwijderd uit toekomstige uitgavent.
 
-This feature was developed by [Denis Rouzaud](https://github.com/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
 ## Kaartgereedschap
 ### Mogelijkheid: Raster kaarttips
 in eerdere uitgaven waren Kaarttips slechts alleen beschikbaar voor vectorlagen, maar nieuwe wijzigingen in de API hebben het mogelijk gemaakt om Kaarttips ook voor andere typen kaarten te implementeren.
@@ -73,7 +73,7 @@ Deze functionaliteit verschaft opties voor het filteren om objecten weer te geve
 
 ![image5](images/entries/4ad89600c1e78bca863927f30581319b86afe6f1.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Aanvullend informatiepaneel en werkbalk Velden voor GPS
 Het informatiepaneel voor GPS bevat nu de huidige totale lengte van het spoor, en de afstand vanaf het begin van het spoor. Deze mogelijkheden zijn ook beschikbaar als een (niet standaard ingeschakeld) optie die het mogelijk maakt ze weer te geven in de werkbalk voor het informatielabel van GPS.
 
@@ -81,7 +81,7 @@ Het informatiepaneel GPS bevat ook ellipsoïde hoogte in de beschikbare waarden 
 
 Dit werd mogelijk gemaakt door NIWA
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: UX GPS Informatiepaneel en opnieuw bewerkt
 Substantieel opnieuw bewerken van het informatiepaneel voor GPS is uitgevoerd om het verwerken van GPS door gebruikers in QGIS te vereenvoudigen en een meer gestroomlijnde ervaring voor GPS te verschaffen.
 
@@ -99,7 +99,7 @@ De klasse widget GPS informatie is nu ALLEEN verantwoordelijk voor het weergeven
 
 Dit werd mogelijk gemaakt door NIWA
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Symbologie
 ### Mogelijkheid: Verbeterde opties voor exporteren SLD
 Een nieuwe uitbreiding voor de API voor het exporteren van Styled Layer Descriptor (SLD) is ontwikkeld en parallel bestaat naast bestaande opties voor exporteren van SLD, maar aanvullende functionaliteit verschaft voor nauwkeuriger beheer van het exporteren van SLD.
@@ -130,7 +130,7 @@ Instellingen voor schaduw worden in de volgende besturingselementen in de gebrui
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
-This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
+Deze mogelijkheid werd ontwikkeld door [Vincent Cloarec](https://github.com/vcloarec)
 ### Mogelijkheid: Ondersteuning toegevoegd voor super- en subscript voor de tekstrenderer
 Tekstitems in QGIS ondersteunen nu superscript en subscript.
 
@@ -142,7 +142,7 @@ Dit maakt:
 
 Deze mogelijkheid werd mogelijk gemaakt door OSGEO UK
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## 3D-objecten
 ### Mogelijkheid: Beperken bereik 2D van 3D-scene
 Het gerenderde bereik van een 3D-scene kan nu worden beperkt tot de objecten die kruisen met een door de gebruiker gespecificeerd 2D-bereik.
@@ -185,7 +185,7 @@ Het maakt het mogelijk buffers, schaduwen, beheren van afstanden van lettertypen
 
 Dit werd mogelijk gemaakt door NIBIO
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Expressies
 ### Feature: Add feature_id() function
 A new `feature_id($feature)` expression function now allows for retrieving the feature ID of a feature object.
@@ -194,13 +194,13 @@ The function accepts one argument which must be a feature object. Accordingly, t
 
 ![image12](images/entries/6536913b10d68dded9a54bc58ba003b821b100f6.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: New is_feature_valid() and is_attribute_valid() functions
 New `is_feature_valid()` and `is_attribute_valid()` functions are provided in QGIS expressions. Both functions validate a feature or attribute, based on the constraints attached to fields for a given vector layer. This enables users to leverage the select-by-expression utility to locate features that have unmet constraints. In addition, users can now use the rule-based renderer to provide visual feedback through symbology indicating the constraint validity state of rendered features.
 
 ![image13](images/entries/f6a73012edcc84033d40e91bc6216365fd4f5ae6.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add x_at, y_at, z_at, m_at expression functions
 The available \$functions are considered deprecated (\$x_at`and`\$y_at\`), and instead of operating on the current feature geometry the functions instead support a feature geometry as arguments.
 
@@ -229,13 +229,13 @@ When the GPS is disconnected (or QGIS is closed), the entire recorded GPS track 
 
 Dit werd mogelijk gemaakt door NIWA
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add an explicit \"Offset from UTC\" option for storing GPS feature timestamps
 Deze optie stelt gebruikers in staat om handmatig een gewenste verschuiving vanaf UTC in te voeren voor het opslaan van GPS tijdstempels. Dit maakt volledige flexibiliteit mogelijk voor gebruikers die rekening moeten houden met verschuivingen door zomer-/wintertijd of andere complexe problemen met tijdzones.
 
 Dit werd mogelijk gemaakt door NIWA
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Ondersteuning voor Raster-AttributenTabellen (RAT)
 QGIS ondersteunt nu uitgebreid Raster-AttributenTabellen (RAT's).
 
@@ -266,7 +266,7 @@ De volgende velden zijn toegevoegd aan de standaard voor metadata van QGIS laag/
 
 In eerdere uitgaven had metadata voor de laag geen velden voor datums, waar metadata voor het project alleen het veld Datum maken bevatte
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Formulieren en widgets
 ### Mogelijkheid: Ondersteuning voor attributen van audiovisuele multimedia bijlagen
 Nieuwe functionaliteit introduceert ondersteuning voor multimedia voor de widget voor externe bronnen, wat het gebruikers mogelijk maakt audio en video mediabestanden af te spelen in de viewer voor bijlagen.
@@ -277,13 +277,13 @@ This functionality includes the development of the `QgsMediaWidget` object into 
 
 ![image15](images/entries/75fcba5750d9ce4bb1b7ad41089dd39fd11ae827.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Bewerkbare status data-bepaald voor formulierwidgets
 The \"Editable\" checkbox status can now be controlled through an expression, the expression supports the \"form\" context, meaning that it can use `current_value( '<field_name>' )` to dynamically change the editable status according to changes to other fields in the form.
 
 ![image16](images/entries/ce2bc7938c4c5f28d3f0d872e9045c856ef79ef1.gif)
 
-This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Scheidingsteken-widget voor slepen & neerzetten attributenformulieren
@@ -295,7 +295,7 @@ When the \"Draw line\" option is set in the configuration it will fill the vacan
 
 ![image17](images/entries/72c262227fb339abd30833edc712ead25d943044.webp)
 
-This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Dynamic text widgets with current_value support
@@ -305,7 +305,7 @@ Using the `current_value( '<field_name>' )` expression will evaluate and update 
 
 ![image18](images/entries/6de3cc5d5a6d002fd014717e57f251ec9b0147d9.gif)
 
-This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Dynamic HTML widgets with current_value support
@@ -315,7 +315,7 @@ Using the `current_value( '<field_name>' )` expression will evaluate and update 
 
 ![image19](images/entries/f04157ac77cf00862595f8b75707c8126e121ce4.gif)
 
-This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Meerdere selecties met filteren voor widget relatie met waarden
@@ -344,7 +344,7 @@ In aanvulling daarop zullen met slepen en neerzetten toegevoegde lagen worden to
 
 This feature was funded by [Funded by the QGIS user group Switzerland](https://www.qgis.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Processing
 ### Mogelijkheid: Aanvullende opties voor export van XYZ Tile bij het gebruiken van Leaflet HTML-uitvoer
 Drie nieuwe optionele geavanceerde parameters zijn weergegeven voor het algoritme voor het maken van het XYZ Tile:
@@ -378,7 +378,7 @@ Terwijl de weergave in JSON zou moeten zijn:
     
 Dit werd mogelijk gemaakt door het Research Institute for Nature and Forest, Vlaamse overheid
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: New \"load_layer\" function
 A new `load_layer` expression function has been made available (exclusively for Processing expressions for the time being), which allows the loading of a map layer using a source string and provider name.
 
@@ -388,7 +388,7 @@ This permits the usage of these functions to be used outside of a project (such 
 
 Dit werd mogelijk gemaakt door het Research Institute for Nature and Forest, Vlaamse overheid
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Gebruikersinterface toegevoegd voor definitie van bereik in GDAL Raster Calculator
 The GDAL Raster Calculator now includes an interface for user-specified extent definition, so that users no longer have to specify the `--extent` criteria in advanced options.
 
@@ -401,7 +401,7 @@ Opties omvatten het opslaan van tijdstempels (als milliseconden vanaf epoch), gr
 
 Dit werd mogelijk gemaakt door NIWA
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: GPS-spoor doellaag maken een expliciete keuze voor de gebruiker maken, onthouden in project
 In eerdere uitgaven volgde de doellaag voor nieuw gemaakte GPS-gedigitaliseerde objecten altijd de selectie van de huidige laag. Dat maakte het heel lastig projecten te ontwerpen rondom het digitaliseren van GPS, omdat, elke keer als een gebruiker begon te interacteren met het project, de vastgelegde objecten van GPS onvoorspelbaar zouden worden geplaatst in de beschikbare lagen.
 
@@ -416,14 +416,14 @@ Aanvullende verbeteringen omvatten:
 
 Dit werd mogelijk gemaakt door NIWA
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Profiel plotten
 ### Mogelijkheid: Nieuw item Hoogteprofiel voor kaartvenster voor QGIS Quick
 A new elevation profile canvas item is available for [QGIS Quick](https://api.qgis.org/api/qgsquick.html), allowing the elevation profile tools to be used in other cross platform and mobile QGIS applications.
 
 ![image24](images/entries/f870a9112a3577742c6f8c6a98b142b23145d525.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Hoogteprofielen plotten in afdruklay-outs 
 It is now possible to include profile plots in print layouts! There is a new \"Add Elevation Profile\" button in the toolbar which will initially create an empty plot. A plot can be initialized by clicking \"Copy From Profile\" button in the properties of the elevation profile item - this will use the active elevation profile from the main window of QGIS.
 
@@ -438,7 +438,7 @@ Het hoogteprofiel heeft brede opties voor configureren - u kunt specificeren:
 
 This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Browser
 ### Mogelijkheid: Mogelijkheden voor bewerken en maken van relatie voor gegevensset toegevoegd in Browser
 Deze functionaliteit maakt het mogelijk nieuwe ingebedde definities voor relaties te maken in databasebestanden voor databases ESRI FileGeodatabases, GeoPackage, en SQLite.
@@ -449,7 +449,7 @@ Verwijderen en aanpassen van bestaande relaties wordt ook ondersteund, de beschi
 
 Dit werd mogelijk gemaakt door Provincie Zuid-Holland
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Verwijderen van Native GeoNode Provider
 The Native GeoNode Provider has been removed from QGIS and is now instead available as a [plugin](https://geonode.org/QGISGeoNodePlugin/).
@@ -464,7 +464,7 @@ Dit staat gebruikers toe om gemakkelijk ad-hoc XYZ-lagen toe te voegen aan hun k
 
 ![image27](images/entries/1e5a07f058db3b16265d94f6e535ac7c79664bcd.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: SQL loggen voor OGR Provider
 Omdat GDAL nu loggen van callbacks van queries ondersteunt voor op SQLite-gebaseerde lagen, biedt QGIS deze functionaliteit aan voor het loggen van queries in de gereedschappen voor debuggen van QGIS.
 
@@ -488,13 +488,13 @@ Onthoud dat inschakelen van gladde pixmap transformatie wordt aanbevolen als het
 
 ![image28](images/entries/a921de87af46b4774b94bd632e704527f840ea55.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Verwijderen niet onderhouden provider SAGA uit installaties van QGIS
 This provider has not been maintained and does not work with newer SAGA versions. Users are encouraged to use the 3rd-party \"Processing Saga NextGen\" plugin instead.
 
 After many many years of discussion, it\'s time for the inbuilt provider to go!
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeterde ondersteuning voor lagen met onbekend type geometrie voor provider WFS
 The QGIS WFS provider has been improved to look in the response to the GetCapabilities request (if using WFS 2.0) if the `IsPoint`, `IsCurve`, `IsSurface` extended filter functions are present.
 
@@ -536,14 +536,14 @@ Het Topologie controlepaneel  heeft ook een nieuw combinatievak onder zijn werkb
 
 ![image29](images/entries/52e54d9f31a12f024d3c452ecbc77fb3278c18e4.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Programmeerbaarheid
 ### Mogelijkheid: Verbeteringen QgsExifTools
 Nieuwe functionaliteit is toegevoegd aan de klasse QgsExifTools, inclusief:
 - The `readTag()` and `readTags()` functions now support Xmp metadata tags
 - A new `tagImage()` function can be used to add individual metadata tags to a given image, which can be used in addition to the pre-existing `geoTagImage()` function
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Updates voor automatisch aanvullen slimme haakjes voor codebewerkers
 Previous releases of QGIS included an `autoCloseBracket` setting for the Python Console, which had a number of limitations in its behavior, including being limited to use within the Python Console and Script Editor interfaces.
 

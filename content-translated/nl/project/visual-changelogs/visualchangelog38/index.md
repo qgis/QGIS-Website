@@ -123,7 +123,7 @@ Like all recent QGIS releases, in version 3.8 we\'ve significantly boosted QGIS\
 
 Dit werd mogelijk gemaakt door Andreas Neumann
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: 3D-animaties exporteren
 Another exciting change we\'ve introduced in QGIS 3.8 is the ability to export your 3D animations! These are exported as a series of png/jpg/\... images, which can be easily merged into .avi or other standard video files (using external tools).
 
@@ -137,7 +137,7 @@ Met deze nieuwe mogelijkheid voor versie 3.8, kunt u nu direct terreinen voor uw
 
 This feature was funded by [Crowdfunding: More QGIS 3D](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Configuratie van veld voor hoek van weergave van camera
 In QGIS 3.8, heeft het veld voor de weergave van de camera, waarmee 3D-scenes worden gerenderd, een nieuw te configureren veld voor instellingen van de weergave gekregen.
 
@@ -242,7 +242,7 @@ Voor deze uitgave verbeterden we de bewerker voor punten zodat het nu op de juis
 
 ![image22](images/entries/e518f5fc5b2decdbaba6272249cdfb3b6c2ad2fe.gif)
 
-This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch)
 
 This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
 ## Formulieren en widgets
@@ -659,7 +659,7 @@ This feature was developed by [Even Rouault](https://www.spatialys.com/)
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Peter Petrik
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |

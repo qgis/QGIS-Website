@@ -46,7 +46,7 @@ Dit zou de gebruikerservaring moeten unificeren zodat het gebruiken van WMTS tij
 
 ![image3](images/entries/8f0a6c8e4850886732633ab76d5873dffd7746c4.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Kaartgereedschap
 ### Mogelijkheid: Selecteren van objecten vector-tegellagen toestaan
 Ondersteuning voor het selecteren van objecten uit vectortegellagen is toegevoegd, wat het voor gebruikers mogelijk maakt de standaard, op kaarten gebaseerde, gereedschappen voor selecteren te gebruiken om interactief objecten uit deze bronnen te selecteren.
@@ -61,7 +61,7 @@ Selecteren van objecten wordt uitgevoerd met behulp van het tegel-zoomniveau van
 
 Dit werd mogelijk gemaakt door Toitū Te Whenua Land Information New Zealand
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gebruikersinterface
 ### Mogelijkheid: Exclusief venster, gebaseerd op gebruikerservaringen voor Databronnen beheren
 The data source manager dialog is now ALWAYS non modal, and options to set it as such have been removed. The dialog now functions just like other \"manager\" type windows in QGIS, such as the style manager or layout manager.
@@ -70,13 +70,13 @@ Databronnen beheren zal in plaats daarvan worden behandeld als zijn eigen venste
 
 ![image4](images/entries/9bbc312e9b1362ae660a9719c910ab209d3e8a55.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Actie Weergeven in attributentabel toegevoegd aan het menu voor rechtsklikken van symbolen van klassen voor Legenda's
 A new \"Show in Attribute Table\" action has been added to the right-click context menu of legend class symbols in the table of contents. This allows users to open the attribute table with a filter applied to match only the features relevant to a particular symbol group. This provides a significant performance improvement for certain datasets, such as large vector layers loaded from a remote source.
 
 ![image5](images/entries/8b43481bcab479b040b0a5ac5400ddc89c77dd0a.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Instelling toegevoegd om waarden NULL te verbergen in Identificatieresultaten
 The \"Identify Features\" utility now provides the capability to hide NULL values from the returned results
 
@@ -93,7 +93,7 @@ Een nieuwe algemene pagina voor opties voor GPS is geïntroduceerd die nieuwe in
 
 Dit werd mogelijk gemaakt door Tiwi Resources, Bush Heritage, Australian Wildlife Conservancy
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Nieuwe vormen voor ellips-markeringen toegevoegd
 De symboolstijlen voor het type ellipsmarkering bevatten nu aanvullende typen vormen voor:
 - Pentagon
@@ -122,13 +122,13 @@ Onderetunde tags omvatten specifiek:
 
 Dit werd mogelijk gemaakt door de Zwitserse QGIS gebruikersgroep.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Optie toegevoegd om absolute eenheden te gebruiken voor regelhoogte
 Eerder werd de regelhoogte altijd ingesteld in meervouden van de regelafstand van de tekst. Het is nu echter mogelijk om absolute eenheden te gebruiken voor de regelhoogte (nuttig in contexten waarin gemixte tekstgrootten worden gebruikt binnen één enkel document).
 
 ![image10](images/entries/b413c593933bc197886a97919ae015880e119aa7.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Mazen
 ### Mogelijkheid: Optie toegevoegd om tijdelijke eigenschappen van lagen met mazen opnieuw te laden
 An \"Always take reference time from data source\" option has been added for mesh layers that when checked, will ensure that the reference time is reloaded from the data source, and each time the layer is reloaded or the project reopened the time properties will be updated from the file automatically.
@@ -137,7 +137,7 @@ In previous releases, when a mesh layer file had a reference time and time exten
 
 ![image11](images/entries/8bf480abed6701e5535110f8069ba1f63ecf2de4.gif)
 
-This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
+Deze mogelijkheid werd ontwikkeld door [Vincent Cloarec](https://github.com/vcloarec)
 ## 3D-objecten
 ### Mogelijkheid:  3D-effect omgeving opnemen
 Een nieuw effect voor het opnemen van de omgeving is beschikbaar voor het renderen van gegevens in 3D-weergaven, wat nuttig is voor het verbeteren van de perceptie van diepte van de gegevens in 3D. Dit is een nabewerkings-effect en het kan zelfs worden gecombineerd met eye dome lighting (EDL) voor bijzonder interessante resultaten. Een oversimplificatie van het effect is dat objecten die niet zichtbaar zijn voor de camera worden gebruikt nabijgelegen elementen te voorzien van textuur en donkerder te maken, met het voordeel van het verbeteren van contrast, definitie van het object en differentiatie.
@@ -205,13 +205,13 @@ Oudere functies en verwijzingen naar variabelen zullen blijven werken (en zullen
 
 ![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add new shared_paths function
 A new `shared_paths` function has been added which returns a collection containing paths shared by the two input geometries. Those going in the same direction are in the first element of the collection, and those going in the opposite direction are in the second element. The paths themselves are given in the direction of the first geometry.
 
 ![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Make_valid and geom_to_array functions
 Aanvullende functies zijn toegevoegd voor:
 - `make_valid`: Repair broken input geometries and returns the corrected geometries
@@ -244,7 +244,7 @@ In previous releases, similar confirmation prompts would only be displayed when 
 
 This feature was funded by [QGIS user group Switzerland](https://www.qgis.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Metadata en Metasearch
 ### Mogelijkheid: Zoeken en opslaan van metadata van de gegevensprovider van de laag
 Implementation of elements from the [QEP #250 \"Database metadata storage\"](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/250) initiative have been completed and this functionality includes the creation of a new layer metadata API and GUI components.
@@ -280,7 +280,7 @@ QGIS kan nu de nieuwere verfijnde methoden voor GEOS 3.10+ gebruiken voor valide
 
 ![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Standaard optie om de telling voor vectoruitvoer vanuit Processing weer te geven
 A new `Show feature count for output vector layers` setting is available (but disabled by default for performance reasons), which will automatically enable the \"show feature count\" option on output layers loaded from QGIS processing. This is able to give users a first glimpse of what to expect as an output from a Processing algorithm.
 
@@ -316,7 +316,7 @@ Het type Eenheden aangepaste projecties is een nieuwe aanvulling die standaard t
 
 ![image27](images/entries/7af6704f72373fec3c1e9c212366fd3d8cfa0218.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add support for \"user\" fonts, and automatic downloading of freely licensed fonts
 A new \"Fonts\" panel has been added to the settings dialog, which provides support for the following functionalities:
 - The ability for users to populate a list of automatic font replacements to apply when loading projects or styles, allowing better support for projects and styles to be used across different operating systems (e.g. replace \"Arial\" with \"Helvetica\").
@@ -328,7 +328,7 @@ A new \"Fonts\" panel has been added to the settings dialog, which provides supp
 
 Dit werd mogelijk gemaakt door Toitū Te Whenua Land Information New Zealand
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Browser
 ### Mogelijkheid: Implementeren van het ontdekken van relaties voor lagen van OGR, en relatens weergeven in browser
 De mogelijkheid Project Eigenschappen → Relaties → Relaties ontdekken is nu in staat lagen van OGR te ondersteunen die relaties ondersteunen, zoals GeoPackage (via de uitbreiding van de gerelateerde tabellen) en ESRI FileGeodatabases.
@@ -337,7 +337,7 @@ Het paneel QGIS Browser bevat nu de mogelijkheid om gedetailleerde informatie vo
 
 ![image29](images/entries/11c3f493eff806b4eccbf9af27c96894ea3223a3.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Aangepaste UX voor het maken van Geopackage en ESRI File Geodatabase
 A \"New ESRI File Geodatabase\" action has been added to the QGIS Browser right-click context menu on directories, and a new \"vacuum\" action is available for GDB files. (requires GDAL 3.6+)
 
@@ -347,13 +347,13 @@ Aanvullend zal het maken van een nieuwe Geopackage vanuit hetzelfde menu nu onmi
 
 ![image30](images/entries/7a0e8f73e24aa061244e30d6bf1b8154e5eebce4.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Toestaan van verslepen van vectorlagen naar niet-GPKG OGR database-gegevenssets
 QGIS staat nu het slepen en neerzetten van vectorlagen toe tussen OGR-database-gegevenssets die niet zijn opgeslagen in de indeling GPKG. Bijvoorbeeld het slepen van een laag op een GDB om die gegevensset te importeren in de geodatabase
 
 ![image31](images/entries/c1c17d31db79a4beaab864daf13257e6e7ed0ba0.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Beheren van velddomein weergeven voor niet-gpkg OGR-bronnen
 De QGIS Browser ondersteunt nu meer geavanceerde functionaliteiten voor databases van OGR die niet in de indeling GPKG zijn, inclusief mogelijkheden voor het Beheren van velddomeinen (maken en vermelden van domeinen) en het maken van tabellen. Dit betekent dat gebruikers velddomeinen kunnen beheren en nieuwe tabellen kunnen maken in een bestaande ESRI FileGeodatabase-database vanuit de interface van QGIS Browser.
 
@@ -361,7 +361,7 @@ De QGIS Browser ondersteunt nu meer geavanceerde functionaliteiten voor database
 
 Dit werd mogelijk gemaakt door Provincie Gelderland
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Rol voor sessie definiëren voor verbindingen van PostgreSQL
 A `session_role` setting can now be specified for PostgreSQL connections to set the user identifier of the active SQL session. Permissions checking for SQL commands are then carried out with the associated named role.
@@ -384,17 +384,17 @@ Dit werkt voor alle indelingen die de API voor relaties van GDAL ondersteunt, di
 
 Deze mogelijkheid werd mogelijk gemaakt door de Universiteit van Uppsala
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Ondersteuning toegevoegd voor subset string-(filter) voor Arcgis REST-lagen
 Dit kan de uitvoering op grote lagen **enorm** verbeteren!
 
 This feature was funded by [Naturstyrelsen and Miljøstyrelsen, Danish Ministry of Environment](https://eng.naturstyrelsen.dk/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Abstracte database-provider voor hernoemen van velden
 A `QgsAbstractDatabaseProviderConnection` interface has been added for supporting renaming fields, and implemented for OGR connections along with the ability to rename existing fields for supported database connections via the QGIS Browser interface.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: WFS uitvoeren van binaire ruimtelijke bewerkingen in expressies op de server
 QGIS was in staat om de expressie-filters voor binaire ruimtelijk bewerkingen op de server uit te voeren als de geometrie werd opgegeven als WKT of in de indeling GML. Deze wijziging converteert de geometrie van een statische variabele in de expressie tot een filter voor OGC. De URL voor WFS wordt dan gemaakt door het combineren van een rechthoek van een begrenzingsvak, een filter voor de laag en de filter-expressie.
 
@@ -415,7 +415,7 @@ QGIS ondersteunt nu het bewerken van lagen van ArcGIS feature server, zoals die 
 
 This feature was funded by [Naturstyrelsen and Miljøstyrelsen, Danish Ministry of Environment](https://eng.naturstyrelsen.dk/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Automatisch raster sublagen laden uit vectortegelstijlen
 Bij het laden van een nieuwe bron voor vectortegels in een project, als de geassocieerde stijl van MapBox GL al enige raster sublaag bevat, laad deze dan ook in het project met geconverteerde stijlen.
 
@@ -425,7 +425,7 @@ Fixes <https://github.com/qgis/QGIS/issues/46593>
 
 Dit werd mogelijk gemaakt door Toitū Te Whenua Land Information New Zealand
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Individuele WMS-lagen toevoegen
 In eerdere uitgaven zou de selectie van lagen uit WMS Servers in QGIS worden geladen als één enkele projectlaag. Deze nieuwe functionaliteit verschaft een optioneel keuzevak om elke van de geselecteerde WMS-lagenyers in QGIS te laden als afzonderlijke projectlagen.
 
@@ -467,12 +467,12 @@ Het is bedoeld om een betere ervaring met QGIS aan onze gebruikers te bieden, do
 
 Aanvullend is de optie om het aantal dagen te beheren tussen de controles voor plug-ins bij opstarten verwijderd en is hard gecodeerd op 3 dagen.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Programmeerbaarheid
 ### Mogelijkheid: AfhandelingTijdbeheer van kaarten in QGIS Quick toegevoegd
 A new implementation has been added to allow the Canvas and Map Settings in [QGIS Quick](https://api.qgis.org/api/qgsquick.html) to handle temporal functionality.
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Aanvulling van de parameter voor de opdrachtregel py-args
 When running QGIS from the command line with the `--code` parameter, a new `--py-args` utility allows the passing of arguments to the python interpreter.
 
@@ -581,7 +581,7 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
+Deze mogelijkheid werd ontwikkeld door [Paul Blottiere](https://hytech-imaging.fr/)
 ### Mogelijkheid: Reparaties van problemen door Sandro Santilli
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |

@@ -49,7 +49,7 @@ This is useful when a identifying a raster which has sections of similar colored
 
 ![image2](images/entries/dc219caa150c9bbcb15aece90744f63e54ec25a1.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Raster met rij/kolom weergeven van geklikt punt in resultaten Objecten identificeren
 Bij  het gebruiken van het gereedschap Objecten identificeren op rasterlagen zullen de afgeleide resultaten nu het rij- en kolomnummer weergeven van de geïdentificeerde pixel.
 
@@ -69,7 +69,7 @@ Dit is nuttig in verscheidene scenario's, inclusief gevallen waar:
 
 ![image4](images/entries/c648e5905c6c69e7a1e7c1dc91e3a15de1c8d523.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Labelen
 ### Mogelijkheid: Labels schakelen voor lagen vectortegel
 Gebruikers kunnen nu schakelen met labels voor lagen met vectortegels met het paneel voor opmaken van de laag met vectortegel en het contextmenu van de laag in de inhoudsopgave van het paneel Lagen, wat effectief de schakelmogelijkheden voor vectorlagen vervangt.
@@ -78,7 +78,7 @@ This functionality is enabled by the addition of new functions to the `QgsVector
 
 ![image5](images/entries/9e04c9c98886edf1d34eeb9750dc8f5c94946b51.gif)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Renderen
 ### Feature: \"Sticky\" Map Decorations
 Dynamic map decorations are now rendered to a transparent overlay, preventing re-rendering of decoration objects (such as title or scale bar) during navigation. The `QgsMapDecoration` now also includes `hasFixedMapPosition` to fix a decoration to a geographic location.
@@ -93,7 +93,7 @@ Met dit gereedschap zijn gebruikers in staat pijnpunten te identificeren in het 
 
 ![image7](images/entries/50fd809522d42944942ca7a059807f59fdcec5d2.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add choice of two different modes for \"Refresh Layer at Interval\"
 When using \"Refresh Layer at Interval\" on vector layers, previous versions of QGIS would simply redraw the layer (for animations etc.), without refreshing data from the data source.
 
@@ -103,7 +103,7 @@ Een nieuw widget is verschaft dat gebruikers in staat stelt de opties voor het b
 
 ![image8](images/entries/e0b0d4561cf7963d9a16bef9f77ea8214fe15f7b.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## 3D-objecten
 ### Mogelijkheid: Configuratie van beperking geheugen GPU toestaan
 Gebruikers kunnen nu de beperking van het geheugen voor de GPU configureren voor elke laag (eerder vastgezet op 500MB per entiteit/ laag)
@@ -176,13 +176,13 @@ Dit verbetert enorm de mogelijkheid voor gebruikers om gegevens te beheren met o
 
 ![image16](images/entries/2eaef470fbd823689e50cfd9fde3a747b888bc83.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Relaties behouden voor gekopieerde objecten
 Nieuwe functionaliteit zorgt ervoor dat gekopieerde objecten op dezelfde laag door zullen gaan met het respecteren van de sterkte van projectrelatie(s).
 
 Bij het kopiëren van objecten op dezelfde vectorlaag met gereedschappen voor kaart, attributentabel, of het gereedschap Objecten kopiëren/ verplaatsen, zal QGIS nu relaties in het geopende project opsporen en objecten dupliceren met intacte relaties.
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Analyse-gereedschappen
 ### Mogelijkheid: Ondersteuning beschrijving rasterband
 QGIS zal nu beschrijvingen van banden weergeven op de tab Symbologie voor rasterlagen, in aanvulling op het bandnummer.
@@ -216,19 +216,19 @@ Het vermijdt de noodzaak om dezelfde expressie meerdere malen te moeten gebruike
 
 ![image20](images/entries/90b9d8da0ec1f13c638525cedd360a5c65d89c1a.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Algoritme toegevoegd om inhoud uit een bestand GLTF/GLB te converteren naar standaard objecten voor vectorlagen
 QGIS maakt nu het converteren van 3D-tegelinhoud in indelingen GLTF en GLB naar bewerkbare indelingen voor vectorobjecten mogelijk.
 
 ![image21](images/entries/6c95d6382b9e6abe72607df57dfefb8a4d9e8442.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Port SAGA \"DTM Filter (slope-based)\" tool to a native QGIS algorithm
 The SAGA [DTM Filter tool](https://saga-gis.sourceforge.io/saga_tool_doc/8.1.0/grid_filter_7.html) has been ported to a native QGIS algorithm.
 
 ![image22](images/entries/740fdd036b19e5e0d2c13493d66e785fca89b46a.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Lijst recent geopend project leegmaken
 A \"Clear Recently Opened\" action is now listed at the bottom of the `Project → Open Recent` menu, which will remove every unpinned project from the menu.
@@ -267,7 +267,7 @@ Dit is een instelling opt-in, en standaard zullen de hoogteprofielen doorgaan me
 
 ![image24](images/entries/e3bae5cc601894eca9775d5603cc3af6bd03c747.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Relaties ontdekken voor provider Oracle
 QGIS ondersteunt nu het geautomatiseerd ontdekken van relaties voor de gegevensprovider Oracle.
@@ -285,12 +285,12 @@ Het ligt in de lijn der verwachting dat de plug-in GRASS Processing Plugin prior
 
 Further details on the specifics of this feature cleanup can be found on the feature [Pull Request](https://github.com/qgis/QGIS/pull/53597).
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Programmeerbaarheid
 ### Mogelijkheid: Functie om runtime profiler modelinhoud als tekst te exporteren
 A new function has been added to allow for the export of the current runtime profiler (`QgsRuntimeProfiler`) model content as a multi-line text string.
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (itOpen / qcooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |

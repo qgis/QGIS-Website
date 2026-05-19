@@ -51,7 +51,7 @@ Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare finan
 - BRONZEN Sponsor: [GIS-Support, Polen](http://www.gis-support.com/)
 - BRONZEN sponsor: [ADLARES GmbH, Duitsland](http://www.adlares.com/)
 - BRONZEN sponsor: [www.molitec.it, Italië](http://www.molitec.it/)
-- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de
+- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de)
 - BRONZEN sponsor: [Customer Analytics, USA](http://www.customeranalytics.com/)
 - BRONZEN sponsor: [Avioportolano Italia, Italië](http://www.avioportolano.it/)
 - BRONZEN Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Polen](http://www.wggios.agh.edu.pl/en)

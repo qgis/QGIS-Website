@@ -172,11 +172,11 @@ Het algoritme Clip voor Processing is geoptimaliseerd voor veel voorkomende en i
 
 **Clippen van een laag met wegen met 1 miljoen lijnen tegen 2 polygonen**
 
-| **Earlier versions:** 5 mins 30 seconds | **QGIS 2.18:** 10 seconden
+| **Eerdere versies:** 5 minuten 30 seconden | **QGIS 2.18:** 10 seconden
 
 **Clippen van een 5 miljoen puntenlaag met adressen tegen 2 polygonen**
 
-| **Earlier versions:** 50 minutes | **QGIS 2.18:** 30 seconden
+| **Eerdere versies:** 50 minuten | **QGIS 2.18:** 30 seconden
 
 ![image54](images/entries/f975cb641b319e952264dc1e706deafdfd2b7496.png.400x300_q85_crop.webp)
 

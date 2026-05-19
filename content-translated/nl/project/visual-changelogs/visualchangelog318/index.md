@@ -14,17 +14,17 @@ type: visual-changelog
 
 Datum uitgave 19-02-2021
 
-Following on from the feature-filled releases of [QGIS 3.14](https://qgis.org/en/site/forusers/visualchangelog314/) and [QGIS 3.16](https://qgis.org/en/site/forusers/visualchangelog316/), QGIS 3.18 introduces a host of enhancements and new features, along with a long-awaited feature - Native Point Cloud support in QGIS! Thanks to the efforts of [Lutra](https://www.lutraconsulting.co.uk/), [North Road](https://north-road.com/), and [Hobu](https://hobu.co/), QGIS is now able to import and render point cloud data in various formats by leveraging the Open Source PDAL library. This functionality has been introduced due to the success of a [crowd-funding campaign](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) and would not have been possible without the support of the QGIS community and contributors. Thank you to all those involved in realizing this incredible milestone!
+Volgend op de met nieuwe mogelijkheden gevulde uitgaven van [QGIS 3.14](https://qgis.org/nl/site/forusers/visualchangelog314/) en [QGIS 3.16](https://qgis.org/nl/site/forusers/visualchangelog316/), introduceert QGIS 3.18 heel veel verbeteringen en nieuwe mogelijkheden, naast een langverwachte mogelijkheid: eigen ondersteuning voor puntenwolken in QGIS! Dankzij de inspanningen van [Lutra](https://www.lutraconsulting.co.uk/), [North Road](https://north-road.com/), en [Hobu](https://hobu.co/), is QGIS nu in staat gegevens van puntenwolken te importeren en te renderen in verscheidene indelingen door de open-bronbibliotheek PDAL op te waarderen. Deze functionaliteit is geïntroduceerd na het succes van een [crowdfunding campagne](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) en zou niet mogelijk zijn geweest zonder de ondersteuning van de gemeenschap van QGIS en bijdragen. Dank aan allen die zijn betrokken bij het realiseren van deze ongelooflijke mijlpaal!
 
 Omdat QGIS Desktop 3.18 afscheid heeft genomen van de databaseprovider DB2, introduceert het ondersteuning voor de gebruikers van het databasesysteem van SAP HANA.
 
-The QGIS ecosystem has also seen some exciting changes in the form of the [QGIS HUB](https://plugins.qgis.org/) which is an extension of the plugin site which now supports the distribution of community developed [styles](https://plugins.qgis.org/styles/), [projects](https://plugins.qgis.org/geopackages/), and even [processing models](https://plugins.qgis.org/models/).
+Het ecosysteem van QGIS heeft ook enkele spannende wijzigingen ondergaan in de vorm van de [QGIS HUB](https://plugins.qgis.org/). Dat een uitbreiding is van de site voor plug-ins die nu de distributie van door de gemeenschap ontwikkelde [stijlen](https://plugins.qgis.org/styles/), [projecten](https://plugins.qgis.org/geopackages/), en zelfs [modellen voor Processing](https://plugins.qgis.org/models/) ondersteunt.
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/Yeo6sXVpXvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
-We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+We willen nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier betrokken wilt zijn bij het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://www.qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende leden](https://www.qgis.org/nl/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
 
 {{<fund type="active" >}}
 
@@ -39,15 +39,15 @@ Eerder liet het QGIS Desktop  gereedschap *Identificeren* een groot aantal afgel
 
 ![image3](images/entries/c9eea14d2c01670795967bd1e42fcb8777330718.webp)
 
-This feature was developed by [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde)
+Deze mogelijkheid werd ontwikkeld door [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde)
 ### Mogelijkheid: Alle tabs van de interface voor Logberichten in één keer sluiten
-The QgsMessageLogViewer now includes an **\"Empty tab and close others\"** to the log viewer panel context menu, supporting a quicker action to a clean interface when debugging.
+De QgsMessageLogViewer bevat nu een **\"Alle tabbladen sluiten\"** in het contextmenu van het paneel Logboekmeldingen, wat een snellere actie voor een schone interface ondersteunt bij het debuggen.
 
 ![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.webp)
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+Deze mogelijkheid werd ontwikkeld door [Olivier Dalang](https://api.github.com/users/olivierdalang)
 ### Mogelijkheid: API voor bronwidgets van lagen
-An API has been added in the provider GUI to allow a provider to create a custom widget, which exposes options to customize and change the layer\'s source. For example, a file-based layer provider could expose a widget for selecting a new file path, or an online provider could expose widgets for changing the host or authentication information.
+Een API is toegevoegd in de provider-GUI om het voor een provider mogelijk te maken een aangepaste widget te maken die opties weergeeft voor het aanpassen en wijzigen van de bron van de laag. Een op een bestand gebaseerde laag zou bijvoorbeeld een widget weer kunnen geven voor het selecteren van een nieuw bestandspad, of een online provider zou widgets weer kunnen geven voor het wijzigen van de host of informatie voor authenticatie.
 
 Hiervoor zijn twee implementaties toegevoegd:
 1. Een widget bestandskiezer voor op GDAL op bestand gebaseerde lagen.
@@ -59,47 +59,47 @@ Hiervoor zijn twee implementaties toegevoegd:
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: GUI voor dynamische SVG's
-QGIS now supports dynamic standard vector graphic elements, as outlined in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). This allows QGIS to dynamically replace attributes or node values in the XML of the SVG and apply data-driven values to SVG elements. QGIS Desktop has additionally added a GUI editor to ensure that users are able to properly leverage this new functionality.
+QGIS ondersteunt nu dynamische standaardelementen voor vectorafbeeldingen, zoals vermeld in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). Dit stelt QGIS in staat om dynamisch attributen of waarden voor knopen in de XML van de SVG te vervangen en op gegevens bepaalde waarden toe te passen op elementen van de SVG. QGIS Desktop heeft aanvullend een GUI-bewerker toegevoegd gekregen om ervoor te zorgen dat gebruikers deze nieuwe functionaliteit kunnen gebruiken.
 
 ![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Zoomen naar meerdere lagen
-The \"Zoom to Layer\" function available from the context menu, the View menu and the Map Navigation toolbar can now zoom to the extent of all the selected layers in the layer tree.
+De functie \"Zoomen naar La(a)g(en)\", beschikbaar in het contextmenu, het menu Beeld en de werkbalk Kaartnavigatie, kan nu zoomen naar het bereik van alle geselecteerde lagen in de boom met lagen.
 
 ![image8](images/entries/101234295-f1cc8a80-368b-11eb-9b52-8f42a4f994a2.gif)
 
-This feature was developed by [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
+Deze mogelijkheid werd ontwikkeld door [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
 ### Mogelijkheid: Zoomen en verschuiven naar selectie voor meerdere lagen
-The \"Zoom to Selection\" and \"Pan Map to Selection\" functions available from the context menu, the View menu or the Map Navigation toolbox now offer the ability to navigate to the extent of the selection from the selected layers in the layer tree.
+De functie \"Zoomen naar selectie\" en \"Kaart verschuiven naar selectie\", beschikbaar in het contextmenu, het menu Beeld en de werkbalk Kaartnavigatie, biedt nu de mogelijkheid om te navigeren naar het bereik van de selectie van alle geselecteerde lagen in de boom met lagen.
 
 ![image9](images/entries/a76fca5cfc367779584da0655cd18474e4518329-1.gif)
 
-This feature was developed by [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
+Deze mogelijkheid werd ontwikkeld door [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
 ### Mogelijkheid: In-/uitzoomen met scrollwiel van de muis in de kaart van het paneel Overzichtskaart
 Gebruikers kunnen nu in- en uitzoomen in het paneel Overzichtskaart met het scrollwiel van de muis.
 
 ![image10](images/entries/77b55b4c85c9c4f5076b1a735f7971819cc2a2ee.gif)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## Toegankelijkheid
 ### Mogelijkheid: Verbeterde simulatie kleurenblindheid
 Dit past de eerdere ondersteuning voor grijswaarden en op LMS gebaseerde simulatie voor protanopie en deuteranopie, wat het in lijn brengt met de toegepaste methodologie die momenteel wordt gebruikt in Chromium en Firefox. QGIS gebruikt nu bijgewerkte berekeningen voor helderheid in grijswaarden (hernoemd naar achromatopsie), een vooraf berekende matrix voor protanopie (hernoemd vanuit protanope), een vooraf berekende matrix voor deuteranopie (hernoemd vanuit deuteranope), en een aanvullende modus voor tritanopie met een soortgelijke een vooraf berekende matrix.
 
-This feature was developed by [Will Cohen](https://api.github.com/users/willcohen)
+Deze mogelijkheid werd ontwikkeld door [Will Cohen](https://api.github.com/users/willcohen)
 ### Mogelijkheid: Widget Rotatie voor de Georeferencer
 Het kaartvenster van Georeferencer kan nu worden gedraaid om het plaatsen van de verwijzingpunten te faciliteren. Dit is in het bijzonder nuttig voor gescande afbeeldingen die geen uniforme oriëntaties zouden kunnen hebben.
 
 ![image11](images/entries/aba35ba4bb5ff0f2a8c1afcb55673e496efea18a.gif)
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+Deze mogelijkheid werd ontwikkeld door [uclaros](https://api.github.com/users/uclaros)
 ## Symbologie
 ### Mogelijkheid: Data-bepaalde doorzichtbaarheid voor alle symbolen
 Waar het eerder mogelijk was om de doorzichtbaarheid voor kleuren van individuele symboollagen in te stellen via data-bepaalde expressies, is het nu mogelijk om een data-bepaalde expressie in te stellen om de doorzichtbaarheid voor alle symbolen in te stellen.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Galerij Stijlen openen vanuit Stijlmanager
-The Style Manager interface now includes a button to open the [styles gallery](https://plugins.qgis.org/styles/) from the QGIS HUB.
+De interface Stijlmanager bevat nu een knop om de [galerij met stijlen](https://plugins.qgis.org/styles/) van de QGIS HUB te openen.
 
 ![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.webp)
 
@@ -113,23 +113,23 @@ Nieuwe opties voor exporteren zijn toegevoegd voor lagen met mazen. Deze staan d
 
 ![image13](images/entries/4738ffe8180f8fc320cf464121ec10fc27bd4c33.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ### Mogelijkheid: Eigen export voor lagen met mazen
 Eerdere versies van QGIS vereisten het gebruiken van de plug-in Crayfish, echter, die functionaliteit is nu ingebouwd in de bron van QGIS en stelt gebruikers in staat lagen met mazen te exporteren naar vectoren en de waarde van de gegevensset toe te voegen als een attribuut.
 
 ![image14](images/entries/41bdfc3d3c6afabc0e3e23986e42dbc22eb794df.gif)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ### Mogelijkheid: Vereenvoudigen van mazen voor 3D 
 Gegevens voor mazen kunnen nu worden vereenvoudigd door een niveau voor het detail voor het renderen van 3D te definiëren. Dit helpt bij de uitvoering voor complexe gegevenssets en zorgt voor een gladdere ervaring als navigatie voor 3D is vereist.
 
 ![image15](images/entries/6461d329ef7d4936ddbc932b0bf96edcb071b398.gif)
 
-This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcloarec)
+Deze mogelijkheid werd ontwikkeld door [Vincent Cloarec](https://api.github.com/users/vcloarec)
 ### Mogelijkheid: Meerdere eigen algoritmes voor Processing voor lagen met mazen
 Een aantal nieuwe algoritmes voor Processing zijn geporteerd vanuit de plug-in Crayfish, inclusief:
 - Gegevensset laag met mazen rasteriseren
@@ -139,39 +139,39 @@ Een aantal nieuwe algoritmes voor Processing zijn geporteerd vanuit de plug-in C
 
 ![image16](images/entries/3acf2cfe05dc7550f16e183026350914d028a6da.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ## Renderen
-### Feature: \"Merged feature\" renderer for polygon and line layers
-A new rendering option allows area and line features to be \"dissolved\" into a single object prior to rendering to ensure that complex symbols or overlapping features are represented by a uniform and contiguous cartographic symbol.
+### Feature: Renderer \"Samengevoegde objecten\" voor polygoon- en lijnlagen
+Een nieuwe optie voor renderen maakt het mogelijk dat gebieds- en lijnobjecten worden \"samengevoegd\" naar een enkel object, voorafgaande aan het renderen. Om ervoor te zorgen dat complexe symbolen of overlappende objecten worden weergegeven door een uniform en doorlopend cartografisch symbool.
 
 ![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Slimmer opnieuw tekenen van kaart
-Previously, map redraws would attempt to redraw all elements in the frame. The map rendering has been significantly improved and now the existing map frame elements are used during the redraw process. This work was completed as a part of [QEP #181](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/181) and was funded by the QGIS Grant program for 2020.
+Eerder zou het opnieuw tekenen van de kaart proberen om alle elementen in het frame opnieuw te tekenen. Het renderen van de kaart is significant verbeterd en nu worden de bestaande elementen van het kaartframe gebruikt in het proces van opnieuw tekenen. Dit werk werd voltooid als een deel van [QEP #181](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/181) en werd mogelijk gemaakt door het QGIS Grant-programma voor 2020.
 
 De volgende weergave laat het opnieuw tekenen zien vóór de verbetering:
 
 ![image18](images/entries/7d0a503ab9ae05427e42e2987335ef569c761a3e-1.gif)
 
-This feature was funded by [QGIS grant 2020](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS grant 2020](https://qgis.org/)
 
-This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/)
 ## 3D-objecten
 ### Mogelijkheid: Eye dome lighting
 Eye dome lighting (EDL) is een effect voor nabewerking dat de diepte van elke pixel (afstand vanaf de camera) vergelijkt met de diepte van naburige pixels en accentueert randen overeenkomstig de berekende verschillen.
 
 Een element voor configuratie van EDL is toegevoegd aan de tab Opties van het dialoogvenster voor configuratie van de 3D-weergave. EDL sterkte heeft het effect van vergroten van het contrast, wat betere perceptie van de diepte (wat nodig kan zijn om aan te passen bij inzoomen) mogelijk maakt. EDL-afstand is de afstand van de gebruikte pixels vanaf de middelste pixel en heeft het effect van het dikker maken van randen.
 
-The eye dome lighting is, by principle, an image-based rendering solution similar to SSAO (screen space ambient occlusion), and therefore works on the whole scene and doesn\'t differ between point clouds or regular 3D objects.
+De Eye Dome Lighting is, door zijn principe, een op afbeeldingen gebaseerde oplossing voor renderen, soortgelijk aan SSAO (screen space ambient occlusion), en werkt daarom op de gehele scène en verschilt niet tussen puntenwolken of normale 3D-objecten.
 
 ![image19](images/entries/4e7b365e9e991bf06f15a3ad15ff50a0ac9692e2.webp)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Nedjima Belgacem)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Nedjima Belgacem)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Data-bepaalde kleuren 3D-materiaal
 Kleuren voor 3D-materiaal kunnen nu data-bepaald worden, wat het mogelijk maakt dat kleuren van objecten worden bepaald door de waarde van een attribuut of expressie.
 
@@ -185,43 +185,43 @@ Materiaal met textuur wordt op dit moment niet ondersteund.
 
 ![image21](images/entries/504010202dcff6a9b78450fedfa493b6e726b5c0.webp)
 
-This feature was funded by [Kristianstad](https://www.kristianstad.se)
+Dit werd mogelijk gemaakt door [Kristianstad](https://www.kristianstad.se)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Ondersteuning voor 3D orthografische projectie
 QGIS biedt nu ondersteuning voor orthografische projectie voor 3D-scenes, een mogelijkheid die vaak is gewenst in de context van architectuur, archeologie, en meer.
 
 ![image22](images/entries/7e43323cea578f6f50e83de6307c22bdef948f8d.gif)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## Puntenwolken
 ### Mogelijkheid: Ondersteuning voor puntenwolken
-Following the successful [crowdfunding campaign](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) for point cloud support in QGIS, the engineers at Lutra, North Road, and Hobu have been able to introduce the ability for QGIS to import and render point cloud data.
+Als vervolg op de succesvolle [crowdfunding campagne](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) voor ondersteuning voor puntenwolken in QGIS, zijn de ontwikkelaars van Lutra, North Road en Hobu in staat geweest de mogelijkheid voor QGIS te introduceren om gegevens voor puntenwolken te importeren en te renderen.
 
 Dit omvat de mogelijkheid om lagen met puntenwolken toe te voegen aan projecten van QGIS, met ondersteuning voor de indeling EPT, en ze te renderen in 2D- en 3D-context.
 
 ![image23](images/entries/3d87d5647d363b53b1a19ffd67de7406632df572.webp)
 
-This feature was funded by [Point Cloud data support in QGIS](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
+Dit werd mogelijk gemaakt door [Point Cloud data support in QGIS](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
-This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Puntenwolken toevoegen aan browser
 De QGIS Browser en interface voor het beheren van databronnen ondersteunen nu de basisstructuur van door PDAL ondersteunde lagen met puntenwolken.
 
 ![image24](images/entries/96aca5c2d2f428f0aa7fee0d11b5c8600c5c523c.webp)
 
-This feature was funded by [Point Cloud data support in QGIS crowd funding campaign](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
+Dit werd mogelijk gemaakt door [Point Cloud data support in QGIS crowdfunding campaign](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
-This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Integratie van PDAL-provider ontvlechten 
-Ability to generate EPT index for (smaller) laz files directly in QGIS via the [untwine](https://github.com/hobu/untwine) library
+Mogelijkheid voor het maken van EPT-index voor (kleinere) LAZ-bestanden, direct in QGIS via de bibliotheek [untwine](https://github.com/hobu/untwine)
 
-This feature was funded by [Point Cloud data support in QGIS crowd funding campaign](https://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [de crowdfunding campagne Point Cloud data support in QGIS ](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk)
 ## Afdruklay-outs
 ### Mogelijkheid: Op kleurverlopen gebaseerde legenda's
-A new QgsColorRampLegendNode class was added which allows for the creation of color ramp-based legend nodes. It\'s now used for raster layers when using a pseudocolor renderer with the linear interpolation type or for the single-band gray renderer, as well as for point clouds using a ramp based renderer.
+Een nieuwe klasse QgsColorRampLegendNode werd toegevoegd, wat het maken van legendaknopen op basis van kleurverlopen mogelijk maakt. Het wordt nu gebruikt voor rasterlagen bij het gebruiken van een renderer voor pseudokleur met het type lineaire interpolatie of voor de renderer enkelbands grijs, alsook voor puntenwolken met een op kleurenbalk gebaseerde renderer.
 
 In een legenda van een lay-out erft het item kleurenbalk de breedte en hoogte van het standaard legendasymbool, maar het is optioneel mogelijk dat gedrag te overschrijven.
 
@@ -239,7 +239,7 @@ En, uiteraard, werken de items netjes in legenda's met meerdere kolommen:
 
 ![image28](images/entries/0dad8d8307a3c3fe1f5b28aa56790b307c090f33-1.gif)
 
-This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
+Dit werd mogelijk gemaakt door [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Verbeteringen voor kleurverlopen legenda
@@ -256,20 +256,20 @@ Gebruikers kunnen er ook voor kiezen om deze instellingen te verfijnen voor een 
 
 ![image30](images/entries/fb52826e81fd08763c269aaab50ea0c25b7af9b8-1.gif)
 
-This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
+Dit werd mogelijk gemaakt door [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Dynamische voorkeuzen tekst
-The new *Add Item -\> Dynamic Text* menu contains preset dynamic text expressions that users can use to insert a label automatically containing the corresponding expression.
+Het nieuwe menu *Item toevoegen -\> Dynamische tekst toevoegen* bevat nu voorkeuzen van expressies met dynamische tekst die gebruikers kunnen gebruiken om automatisch een label in te voegen dat de overeenkomende expressie bevat.
 
-For example, using the dynamic text element **Layout Name** will insert a label containing the expression \[% \@layout_name %\]. This improves the feature awareness, discoverability, and provides an easy method for users to access dynamic attributes.
+Gebruik van, bijvoorbeeld, het dynamische tekstelement **Naam Lay-out** zal een label invoegen dat de expressie \[% \@layout_name %\] bevat. Dit verbetert de bewustwording voor de mogelijkheid, de mogelijkheid om hem te ontdekken, en verschaft een gemakkelijke methode voor gebruikers voor toegang tot dynamische attributen.
 
 ![image31](images/entries/c41a7d2a5ec018bfba237429aa5d125d11ad9310.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Expressies
 ### Mogelijkheid: Optionele opmaak voor resultaten van UUID
-There is now a string format parameter available for the `uuid()` function in QGIS expressions. Users now have various options that they can use to stipulate the format of the returned UUID value, including the following options:
+Er is nu een parameter voor opmaak van de tekenreeks beschikbaar voor de functie `uuid()` in expressies van QGIS. Gebruikers hebben nu verscheidene opties die ze kunnen gebruiken om de opmaak aan te geven van de teruggegeven waarde van UUID, inclusief de volgende opties:
 - `uuid()`: **{0bd2f60f-f157-4a6d-96af-d4ba4cb366a1}**
 - `uuid('WithoutBraces')`: **0bd2f60f-f157-4a6d-96af-d4ba4cb366a1**
 - `uuid('Id128')`: **0bd2f60ff1574a6d96afd4ba4cb366a1**
@@ -278,9 +278,9 @@ There is now a string format parameter available for the `uuid()` function in QG
 
 Deze mogelijkheid werd ontwikkeld door [signedav](https://api.github.com/users/signedav)
 ### Mogelijkheid: Variabele laag-CRS in expressies
-QGIS expressions now support a *layer_crs* variable which will return the AuthID for a particular layer\'s coordinate reference system. This allows expressions to identify the layer CRS dynamically and perform transformations without needing to manually specify the CRS.
+Expressies in QGIS ondersteunen nu een variabele *layer_crs* die de AuthID voor een bepaald coördinatenreferentiesysteem voor de laag zal teruggeven. Dit stelt expressies in staat om dynamisch het laag-CRS te identificeren en transformaties uit te voeren zonder handmatig het CRS te moeten specificeren.
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
+Deze mogelijkheid werd ontwikkeld door [Alex](https://api.github.com/users/roya0045)
 ### Mogelijkheid: Ondersteuning voor functies min, max, meerderheid, som, gemiddelde en mediaan in numerieke arrays
 Expressies in QGIS bevatten nu functies voor samenvoegen voor arrays, wat het eenvoudig ophalen mogelijk maakt van specifieke waarden uit een array die zouden kunnen worden gebruikt in elementen van QGIS, zoals symbologieën. De volgende functies werden geïntroduceerd:
 - array_min
@@ -290,27 +290,27 @@ Expressies in QGIS bevatten nu functies voor samenvoegen voor arrays, wat het ee
 - array_mean
 - array_median
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
-### Feature: Negative index for array_get function
-The function array_get now supports the use of negative index positions.
+Deze mogelijkheid werd ontwikkeld door [uclaros](https://api.github.com/users/uclaros)
+### Mogelijkheid: Negatieve index voor functie array_get
+De functie array_get ondersteunt nu het gebruiken van negatieve indexposities.
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
-### Feature: Add map_credits function
-A *map_credits* function was added that collates a list of all the layer metadata attribution strings for the layers shown inside a specified map item.
+Deze mogelijkheid werd ontwikkeld door [Alex](https://api.github.com/users/roya0045)
+### Mogelijkheid: Functie map_credits toegevoegd
+Een functie *map_credits* werd toegevoegd die een lijst samenstelt van alle tekenreeksen voor naamsvermelding van de metadata van de laag voor de lagen die worden weergegeven binnen een gespecificeerd kaartitem.
 
 Bijvoorbeeld:
 
     array_to_string( map_credits( 'Main Map' ) )
     
-Returns a comma-separated list of layer credits for layers shown in the \'Main Map\' layout item, e.g \'CC-BY-NC, CC-BY-SA\'
+Geeft een kommagescheiden lijst met naamsvermelding terug voor lagen die worden weergegeven in het kaartitem \'Main Map\', bijv. \'CC-BY-NC, CC-BY-SA\'
 
-There\'s an optional *include_layer_names* argument you can use to include layer names before their attribution:
+Er is een optioneel argument *include_layer_names* dat u kunt gebruiken om laagnamen op te nemen voor hun naamsvermeldingen:
 
     array_to_string( map_credits( 'Main Map',
        include_layer_names := true,
        layer_name_separator := ': ' ) )
     
-This would return a comma-separated list of layer names and their credits for layers shown in the \'Main Map\' layout item, e.g. \'Railway lines: CC-BY-NC, Basemap: CC-BY-SA\'
+Dit zou een kommagescheiden lijst van laagnamen en hun naamsvermelding teruggeven voor lagen die worden weergegeven in het kaartitem \'Main Map\', bijv. \'Spoorwegen: CC-BY-NC, Basiskaart: CC-BY-SA\'
 
 Dit werd mogelijk gemaakt door [SLYR](https://north-road.com/slyr/)
 
@@ -321,17 +321,17 @@ Het is nu mogelijk objecten te selecteren met een contextmenu in het kaartvenste
 
 ![image33](images/entries/edec99086412445b929c0926f69600279e56d4fb.gif)
 
-This feature was funded by [Kristianstad](https://www.kristianstad.se)
+Dit werd mogelijk gemaakt door [Kristianstad](https://www.kristianstad.se)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Instellingen voor traceren boog toegevoegd aan UI
-Existing curve tracing settings [were introduced previously](https://github.com/qgis/QGIS/pull/37826) and have now been exposed in the user interface to enable users to incrementally modify settings to optimize their results when capturing curve data.
+Bestaande instellingen voor traceren van bogen [werden eerder geïntroduceerd](https://github.com/qgis/QGIS/pull/37826) en worden nu in de gebruikersinterface weergegeven. Om gebruikers in staat te stellen instellingen stapsgewijs aan te passen om hun resultaten te optimaliseren bij het opnemen van de gegevens van de boog.
 
 ![image34](images/entries/29b75d5574181d5b7570090b9801ede92bec2fcd.webp)
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+Deze mogelijkheid werd ontwikkeld door [Olivier Dalang](https://api.github.com/users/olivierdalang)
 ### Mogelijkheid: Gereedschap Object op schaal brengen
-A new digitizing tool allows for selected features to be scaled when in editing mode. This implementation was based on the work of [\@roya0045](https://github.com/roya0045) with [#40650](https://github.com/qgis/QGIS/pull/40650).
+Een nieuw gereedschap voor digitaliseren maakt het mogelijk in de modus Bewerken geselecteerde objecten op schaal te brengen. Deze implementatie is gebaseerd op het werk van [@roya0045](https://github.com/roya0045) met [#40650](https://github.com/qgis/QGIS/pull/40650).
 
 ![image35](images/entries/16ac8bca1e78da740dc8ea8b6b46a916f8f0b83d.gif)
 
@@ -346,13 +346,13 @@ De Georeferencer  projecteert nu gegevenspunten opnieuw in een gewenste projecti
 
 ![image36](images/entries/50d4d1d6353ebfa251c53ea29c28821bf4c5ac18.gif)
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
+Deze mogelijkheid werd ontwikkeld door [Alex](https://api.github.com/users/roya0045)
 ### Mogelijkheid: Polymorfische relaties/ Document beheerssysteem
-A new GUI is available to manage polymorphic relations, implemented as a part of the dynamic relations described in [QEP #79](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/79).
+Een nieuwe gebruikersinterface is beschikbaar om polymorfische relaties te beheren, geïmplementeerd als een deel van de dynamische relaties die worden beschreven in [QEP #79](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/79).
 
-The \"Add relation\" button in the relation manager screen now has additional options for adding and editing polymorphic relations:
+De knop \"Relatie toevoegen\" in het scherm voor het beheren van Relaties heeft nu aanvullende opties voor het toevoegen en bewerken van polymorfische relaties:
 
-The \"Add polymorphic relation\" and \"Edit polymorphic relation\" open the same dialog, although in the latter case it will automatically be populated with existing values.
+De knoppen \"Polymorfische relatie toevoegen\" en \"Polymorfische relatie bewerken\" openen hetzelfde dialoogvenster, hoewel in het laatste geval het automatisch zal worden gevuld met bestaande waarden.
 
 Eenmaal opgeslagen verschijnt de lijst met relaties als een widget Boom, waarin de gemaakte relatie-objecten voor een polymorfische relatie verschijnen als kinderen. De namen van de gemaakte relaties kunnen niet worden gewijzigd.
 
@@ -360,30 +360,30 @@ Polymorfische relaties worden opgeslagen binnen een project en kunnen momenteel 
 
 ![image37](images/entries/6628cd483a00a52f51cd963febd883d2756eb299.webp)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+Deze mogelijkheid werd ontwikkeld door [Ivan Ivanov](https://api.github.com/users/suricactus)
 ## Formulieren en widgets
 ### Mogelijkheid: Zachte en harde beperkingen in formulieren
-Historically, required fields would prevent a form from being saved entirely. Using soft constraints allow forms to notify users that expected information has been omitted, without preventing the form submission. Hard constraints, by contrast, function identically to the previous \"required fields\" functionality and will prevent form submissions unless data is correctly captured for the field.
+Historisch zouden vereiste velden voorkomen dat een formulier in zijn geheel zou worden opgeslagen. Gebruik van zachte beperkingen staat formulieren toe gebruikers te informeren dat verwachte informatie is weggelaten, zonder de indiening van het formulier te voorkomen. Harde beperkingen daarentegen functioneren identiek aan de eerdere functionaliteit voor \"vereiste velden\" en zullen indienen van het formulier voorkomen, tenzij gegevens correct worden vastgelegd in het veld.
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Viktor Sklencar)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Viktor Sklencar)](https://www.lutraconsulting.co.uk)
 ## Analyse-gereedschappen
 ### Mogelijkheid: Nominatim geocoder API
-Although not exposed through the locator or as an algorithm, QGIS now includes a Nominatim API geocoder class. The geocoder class\' implementation insures that it respects the OpenStreetMap Foundation Terms of Use by caching results and throttling requests by default.
+Hoewel niet weergegeven in de balk Lokaliseren of als een algoritme bevat QGIS nu een klasse voor het geocoderen van de Nominatim API. De implementatie van de klasse voor geocoderen verzekert het respecteren van de OpenStreetMap Foundation Terms of Use door resultaten te cachen en het standaard beperken van aanvragen.
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## Processing
 ### Mogelijkheid: Expressie toestaan voor velden voor volgorde in algoritme Punten naar pad
-`$id` may be used as an expression for a csv with ordered values, and the `ORDER_EXPRESSION` parameter has been added to the PointsToPath algorithm.
+`$id` kan als een expressie worden gebruikt voor een CSV met gesorteerde waarden, en de parameter `ORDER_EXPRESSION` is toegevoegd aan het algoritme Punten naar pad.
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://api.github.com/users/m-kuhn)
 ### Mogelijkheid: CRS overschrijven voor uitvoer van Raster op bereik clippen
-In some instances, the **Clip raster by extent** algorithm may output features without a CRS specified, which can now be modified by explicitly enforcing the output to inherit it\'s CRS from the input layer.
+In sommige gevallen zou het algoritme **Raster op bereik clippen** objecten kunnen uitvoeren zonder dat een CRS is gespecificeerd, wat nu kan worden aangepast door expliciet te forceren dat de uitvoer zijn CRS erft van de invoerlaag.
 
-This feature was developed by [rldhont](https://api.github.com/users/rldhont)
-### Feature: Add \"retain fields\" algorithm
-Allows users to select a list of fields to keep, and all other fields will be dropped from the layer. Helps with making flexible models where input datasets may have a range of different fields and only a certain subset of them need to be retained. This work was inspired by [#39114](https://github.com/qgis/QGIS/pull/39114)
+Deze mogelijkheid werd ontwikkeld door [rldhont](https://api.github.com/users/rldhont)
+### Mogelijkheid: Algoritme \"Velden behouden\" toegevoegd
+Stelt gebruikers in staat een lijst met velden te selecteren om te behouden, en alle andere velden zullen worden verwijderd uit de laag. Helpt bij het maken van flexibele modellen waarvoor de gegevenssets voor de invoer een bereik aan verschillende velden hebben en slechts een bepaalde subset daarvan moet worden behouden. Dit werk is geïnspireerd op [#39114](https://github.com/qgis/QGIS/pull/39114)
 
 ![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.webp)
 
@@ -391,11 +391,11 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/use
 ### Mogelijkheid: Parameter voor verwijzing naar gemeenschappelijk veld voor meerdere lagen
 Parameters voor velden in gereedschappen van Processing kunnen het verwerken van een gemeenschappelijk veld voor meerdere vectorlagen ondersteunen, in een implementatie die is geïnspireerd op het gedrag van enkele algoritmen voor Processing in Orfeo ToolBox.
 
-This feature was developed by [Julien Cabieces](https://api.github.com/users/troopa81)
-### Feature: Extend import geotagged photos to include exif_orientation
-The \"Import geotagged photos\" tool has been updated so that the exif_orientation parameter value is extracted to the output table. This ensures that maptips and other HTML widgets can be configured to correctly transform the photos to be correctly displayed based on the orientation value.
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://api.github.com/users/troopa81)
+### Mogelijkheid: Importeren van foto's met geoverwijzingen uitgebreid met opnemen van exif_orientation
+Het gereedschap \"Foto's met geoverwijzingen importeren\" is bijgewerkt, zodat de waarde van de parameter exif_orientation naar de uitvoertabel wordt overgenomen. Dit zorgt ervoor dat kaarttips en andere widgets HTML kunnen worden geconfigureerd om de foto's correct te transformeren om juist te worden weergegeven, gebaseerd op de waarde van de oriëntatie.
 
-This feature was developed by [Pelle Rosenbeck Gøeg](https://api.github.com/users/pellegoeg)
+Deze mogelijkheid werd ontwikkeld door [Pelle Rosenbeck Gøeg](https://api.github.com/users/pellegoeg)
 ### Mogelijkheid: Algoritme Informatie van lagen exporteren 
 Een nieuw algoritme in de Toolbox van Processing, genaamd Informatie van lagen exporteren, is toegevoegd om het maken te ondersteunen van een polygoonlaag, die overeenkomt met het bereik van gebruikergedefinieerde la(a)g(en) met aanvullende details voor de laag die als attributen aan elk object polygoon worden gehecht. De verzamelde informatie ondersteunt momenteel de volgende elementen:
 - CRS
@@ -406,7 +406,7 @@ Een nieuw algoritme in de Toolbox van Processing, genaamd Informatie van lagen e
 - Samenvatting
 - Naamsvermelding
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Mogelijkheid: Algoritmes Percentiel stapelen cellen en Rang percentage gestapelde cellen 
 De karakteristieken van het gereedschap voor Processing **Celstatistieken** is opnieuw vorm gegeven en aangepast om het mogelijk te maken drie nieuwe algoritmes voor Processing toe te voegen, die QGIS in staat stellen om celstatistieken te berekenen op een soortgelijke manier als voor veel voorkomende functies voor percentages in programma's met werkbladen. De nieuwe algoritmes voor Processing zijn:
 - **Percentiel stapelen cellen**
@@ -417,20 +417,20 @@ Waar het algoritme voor het percentiel alleen de mogelijkheid beidt voor het ber
 
 Alle algoritmes verschaffen verschillende methoden voor het berekenen van percentielen en rangen percentage:
 
-**Percentile:** - Nearest Rank - Inclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTILE.INC* function) - Exclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTILE.EXC* function)
+**Percentiel:** - Dichtstbijzijnde rang - Inclusieve lineaire interpolatie (bekijk LibreOffice\'s en Microsoft Excel\'s functie *PERCENTILE.INC*) - Exclusieve lineaire interpolatie (bekijk LibreOffice\'s en Microsoft Excel\'s functie *PERCENTILE.EXC*)
 
-**Percentrank:** - Inclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTRANK.INC* function) - Exclusive linear interpolation (see LibreOffice\'s and Microsoft Excel\'s *PERCENTRANK.EXC* function)
+**Rang percentage:** - Inclusieve lineaire interpolatie (bekijk LibreOffice\'s en Microsoft Excel\'s functie *PERCENTRANK.INC*) - Exclusieve lineaire interpolatie (bekijk LibreOffice\'s en Microsoft Excel\'s functie *PERCENTRANK.EXC*)
 
 ![image39](images/entries/febde74bab33bb165971509e90fb112c4b643001.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://api.github.com/users/root676)
 ### Mogelijkheid: Algoritme voor Processing Punten naar lijn
 Een eigen algoritme voor Processing in C++ is toegevoegd dat lijnlagen maakt uit puntlagen, soortgelijk aan de bestaande *Punten naar pad* voor Python, maar met uitgebreide functionaliteit:
-- Added support for *natural sorting* ( \'10\' \> \'9\' )
+- Ondersteuning toegevoegd voor *natuurlijk sorteren* ( \'10\' \> \'9\' )
 - Maken van ongeldige lijnen met een enkel punt vermijden
 - Maken van gesloten lijnen met twee punten vermijden
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+Deze mogelijkheid werd ontwikkeld door [uclaros](https://api.github.com/users/uclaros)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Verborgen lagen
 Projecten van QGIS ondersteunen nu het opnemen van verborgen lagen, wat het mogelijk maakt ze op te nemen in een project, maar dat ze niet zichtbaar zijn in de inhoudsopgave.
@@ -441,9 +441,9 @@ De  eigenschap voor de laag is te configureren op de tab **Databronnen** van de 
 
 Dit werd mogelijk gemaakt door **ARPA Piemonte**
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
-### Feature: Custom \"Full Extent\" definition
-A new \"View Settings\" tab has been added to the project properties, with the option to manually defined the full extent of a project. The extent defined here will be the extent used when zooming to the full map extent, instead of the calculated or maximum extent of all layers. This is useful for defining a particular area of interest for a project and does not limit user\'s ability to \"zoom out\" further than the defined extent.
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://api.github.com/users/elpaso)
+### Mogelijkheid: Aan te passen definitie \"Volledig bereik\"
+Een nieuwe tab \"Instellingen voor weergave\" is toegevoegd aan de projecteigenschappen, met de optie om handmatig het volledige bereik van een project te definiëren. Het hier gedefinieerde bereik zal het bereik zijn dat wordt gebruikt bij het zoomen naar het volledige kaartbereik, in plaats van het berekende of maximale bereik van alle lagen. Dit is nuttig voor het definiëren van een bepaald interessegebied voor een project en beperkt niet de mogelijkheid voor de gebruiker om verder \"uit te zoomen\" dan het gedefinieerde bereik.
 
 ![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.webp)
 
@@ -458,46 +458,46 @@ Dit is ontworpen als een vluchtige instelling en wordt vergeten zodra QGIS wordt
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Browser
 ### Mogelijkheid: Verbindingen in browser voor ArcGis Feature Service en ArcGIS Map Service geünificeerd
-The separate \"ArcGis Feature Service\" and \"ArcGIS Map Service\" browser connections have been replaced with a single, unified, **\"ArcGIS Rest Servers\"** connection and browser node, which shows a definitive view of the server and exposes both service types.
+De afzonderlijke verbindingen voor de browser voor \"ArcGis Feature Service\" en \"ArcGIS Map Service\" zijn vervangen door een enkele, geünificeerde verbinding **\"ArcGIS Rest Servers\"** en knoop voor de browser, die een definitieve weergave van de server laat zien en beide typen service weergeeft.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Bladeren door ArcGIS REST door groepen voor inhoud toestaan
 Verbindingen voor ArcGIS Feature Service die hun overeenkomende URL's voor het Portal-eindpunt hebben ingesteld kunnen worden verkend door groepen voor inhoud in het paneel Browser.
 
-If a connection has the Portal endpoints set, then expanding out the connection in the browser will show a \"Groups\" and \"Services\" folder, instead of the full list of services usually shown. Expanding out the groups folder will show a list of all content groups that the user is a member of, each of which can be expanded to show the service items belonging to that group.
+Als een verbinding de Portal-eindpunten heeft ingesteld, dan zal het uitbreiden van de verbinding in de browser een map \"Groups\" en \"Services\" weergeven, in plaats van de volledige lijst met services die normaal gesproken wordt weergegeven. Uitbreiden van de map Groups zal een lijst weergeven van alle groepen met inhoud waar de gebruiker lid van is. Elk daarvan kan worden uitgebreid om de items voor services weer te geven die tot die groep behoren.
 
-This feature was funded by [SRK Consulting](https://www.srk.com)
+Dit werd mogelijk gemaakt door [SRK Consulting](https://www.srk.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Eigen algoritme voor exporteren DXF
 Maakt het exporteren van individuele of meerdere lagen naar één enkel DXF-bestand mogelijk. Voor elke invoerlaag kan de gebruiker selecteren welk attribuut moet worden gebruikt voor het splitsen van één enkele laag naar meerdere uitvoerlagen.
 
-Implements a native DXF export algorithm using `QgsDxfExport` functionality, which is also used by `Project -> Import/Export -> Export Project to DXF`.
+Implementeert een eigen algoritme voor exporteren naar DXF met functionaliteit `QgsDxfExport`, die ook wordt gebruikt door `Project -> Importeren/Exporteren -> Exporteer project naar DXF`.
 
 ![image43](images/entries/7800af6d2597ad04650532f201c8d4ee005c8e53.gif)
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: Aanvullende typen geometrie voor exporteren naar PostGIS
-Some available geometry types from the GDAL ogr2ogr operation used for exporting data to PostGIS databases have been added to the tool interface. This functionality also includes the option to specify vector dimensions for exported data and resolves issue [39003](https://github.com/qgis/QGIS/issues/39003).
+Sommige beschikbare typen geometrie van de bewerking van GDAL ogr2ogr, gebruikt voor het exporteren van gegevens naar databases van PostGIS zijn toegevoegd aan de interface voor het gereedschap. Deze functionaliteit bevat ook de optie om vectordimensies voor geëxporteerde gegevens te specificeren en repareert het probleem [39003](https://github.com/qgis/QGIS/issues/39003).
 
 ![image44](images/entries/48415fefe669fa93d5c7e13959c4a35e6dab60e2.gif)
 
-This feature was developed by [mazano](https://api.github.com/users/NyakudyaA)
+Deze mogelijkheid werd ontwikkeld door [mazano](https://api.github.com/users/NyakudyaA)
 ### Mogelijkheid: Verbeterde netwerkverzoeken met GDAL
-A QgsCPLHTTPFetchOverrider utility class was added and used in the OGR provider which redirects GDAL\'s CPL HTTP calls through QgsBlockingNetworkRequest. This ensures that GDAL can use the QGIS network provider rather than redirecting requests through cURL. Additional head(), put() and deleteResource() methods were added to QgsBlockingNetworkRequest.
+Een gebruiksklasse QgsCPLHTTPFetchOverrider werd toegevoegd en gebruikt in de provider OGR die aanroepen van GDAL's CPL HTTP omleidt via QgsBlockingNetworkRequest. Dit zorgt ervoor dat GDAL de netwerkprovider van QGIS kan gebruiken in plaats van verzoeken om te leiden via cURL. Aanvullende methoden head(), put() en deleteResource() werden toegevoegd aan QgsBlockingNetworkRequest.
 
-This feature was developed by [Even Rouault](https://api.github.com/users/rouault)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://api.github.com/users/rouault)
 ### Mogelijkheid: Alleen-lezen gemaakte velden
 Een API-methode is toegevoegd om er voor te zorgen dat gemaakte kolommen, die Alleen-lezen zijn, niet worden weergegeven in berwerkers.
 
-This feature was developed by [Julien Cabieces](https://api.github.com/users/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://api.github.com/users/troopa81)
 ### Mogelijkheid: Verbeterd laden van MSSQL met vooraf gedefinieerde parameters
 Om laadtijd te verminderen kan het bereik van de kaart vooraf worden berekend, en Primaire sleutels kunnen worden opgegeven, wat de noodzaak verwijdert voor QGIS om deze karakteristieken te berekenen en uitvoering te verbeteren.
 
-This is done by extending dbo.geometry_columns tables and adding the following extra columns, which may be populated accordingly by database administrators:
-- Extent : qgis_xmin, qgis_xmax, qgis_ymin, qgis_ymax
-- Primary key : qgis_pkey
+Dit is gedaan door het uitbreiden van tabellen dbo.geometry_columns en het toevoegen van de volgende extra kolommen, die overeenkomstig kunnen worden gevuld door beheerders van de database:
+- Bereik : qgis_xmin, qgis_xmax, qgis_ymin, qgis_ymax
+- Primaire sleutel : qgis_pkey
 
 In de widget voor het configureren van de database staan nu twee extra keuzevakken die gebruikmaken van deze parameters:
 - Laagbereik uit tabel geometry_columns gebruiken
@@ -505,25 +505,25 @@ In de widget voor het configureren van de database staan nu twee extra keuzevakk
 
 ![image45](images/entries/3d77459436d542190afa88f6d927be7f8245dbf0.gif)
 
-This feature was funded by [ms.GIS](http://msgis.com/)
+Dit werd mogelijk gemaakt door [ms.GIS](http://msgis.com/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Schema's voor MS SQL filteren
 Gebruikers kunnen nu de beschikbare schema's voor verbindingen van MS SQL filteren De widget voor de verbinding van de database bevat nu opties voor het filteren van beschikbare schema's, zodat alleen de verwachte schema's beschikbaar zijn in d browser van QGIS.
 
 ![image46](images/entries/1e2fe1a94747c9aa2fbbaab3053bfc6631cfbb22.gif)
 
-This feature was funded by [ms.GIS](http://msgis.com/)
+Dit werd mogelijk gemaakt door [ms.GIS](http://msgis.com/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Ondersteuning voor database SAP HANA
 QGIS ondersteunt nu databases van SAP HANA. SAP HANA is een in-geheugen database met een OGC-compliant ruimtelijk programma met een gratis expres-uitgave die beschikbaar is op www.sap.com
 
-This feature was developed by [Maxim Rylov](https://api.github.com/users/mrylov)
+Deze mogelijkheid werd ontwikkeld door [Maxim Rylov](https://api.github.com/users/mrylov)
 ### Mogelijkheid: Vervallen ondersteuning voor DB2
 **De gegevensprovider DB2 is gemarkeerd als vervallen**, en is standaard verborgen in de gebruikersinterface van QGIS.
 
-QGIS has adopted a gentle approach to removing unmaintained core providers, and users of deprecated providers may enable support for them by setting the hidden \"providers/showDeprecated\" settings key to *true*.
+QGIS heeft een nette benadering geadopteerd om niet-onderhouden bronproviders te verwijderen, en gebruikers van vervallen providers kunnen ondersteuning daarvoor instellen door de verborgen sleutel voor de instelling \"providers/showDeprecated\" in te stellen op *true*.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: API Oracle-verbinding
@@ -531,7 +531,7 @@ De QGIS API bevat nu *QgsAbstractDatabaseProviderConnection* voor de provider Or
 
 Dit werd mogelijk gemaakt door Metropole de Lille
 
-This feature was developed by [Julien Cabieces](https://api.github.com/users/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://api.github.com/users/troopa81)
 ### Mogelijkheid: Geavanceerde opties voor importeren van rastergegevens toegevoegd
 Nieuwe functionaliteit is geïntroduceerd die het mogelijk maakt geavanceerde parameters te specificeren bij het importeren van lagen met de gegevensprovider GDAL, openen van een uitgebreid bereik van nieuwe mogelijkheden, speciaal bij het werken rondom verwachte problemen met gegevenssets en tekortkomingen.
 
@@ -542,24 +542,24 @@ Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 ### Mogelijkheid: Schaal symbool GetLegendGraphics
 Het QGIS Server-verzoek WMS GetLegendGraphics ondersteunt nu het opnemen van het benoemen van min/max schaal voor JSON symboolexport
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Mogelijkheid: Slepen en neerzetten van WMS antwoord GetFeatureInfo
 Met het bewerkersfomulier slepen en neerzetten is het mogelijk de attributen opnieuw te sorteren en groepen of subgroepen toe te voegen in het berwerkersformulier. Deze functionaliteit is uitgebreid zodat het antwoord van WMS GetFeatureInfo kan worden aangepast om groepen en subgroepen te bevatten, als ook toe te staan dat de inhoud van het antwoord kan worden aangepast en opnieuw geschikt met het bewerkersformulier, met ondersteuning voor functionaliteit voor slepen en neerzetten.
 
-This feature was developed by [mhugent](https://api.github.com/users/mhugent)
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://api.github.com/users/mhugent)
 ## Programmeerbaarheid
 ### Mogelijkheid: Meerdere items uitvoeren vanuit het dialoogvenster voor geschiedenis van de opdrachtregel
 De QGIS Python Console ondersteunt nu het uitvoeren van meerdere geselecteerde opdrachten uit het dialoogvenster Geschiedenis door het toevoegen van een nieuwe knop **Plakken**.
 
 ![image48](images/entries/1de42c7dc35c2b73dce1605a3c36b97166d81850.webp)
 
-This feature was developed by [Salvatore Larosa](https://api.github.com/users/slarosa)
+Deze mogelijkheid werd ontwikkeld door [Salvatore Larosa](https://api.github.com/users/slarosa)
 ### Mogelijkheid: Plug-ins in- of uitschakelen vanaf de opdrachtregel
-The qgis_process command line tool has had new commands added which allow users to enable or disable plugins using the commands as outlined below:
-- `qgis_process plugins enable plugin_name`: enables the named plugin
-- `qgis_process plugins disable plugin_name`: disables the named plugin
+Het programma voor de opdrachtregel qgis_process heeft nieuwe opdrachten toegevoegd gekregen die het voor gebruikers mogelijk maken plug-ins in of uit te schakelen met de opdrachten die hieronder zijn weergegeven:
+- `qgis_process plugins enable plugin_name`: schakelt de gelijknamige plug-in in
+- `qgis_process plugins disable plugin_name`: schakelt de gelijknamige plug-in uit
 
-This improves the automation capabilities of QGIS and allows the use of plugins on headless environments with the qgis_process tool.
+Dit verbetert de mogelijkheden voor het automatiseren van QGIS en maakt het gebruiken van plug-ins in omgevingen headless met het programma qgis_process mogelijk.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Belangrijke reparaties

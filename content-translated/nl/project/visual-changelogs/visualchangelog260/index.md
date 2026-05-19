@@ -26,7 +26,7 @@ Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare finan
 - ZILVEREN sponsor: [Staat Vorarlberg, Oostenrijk](http://www.vorarlberg.at/)
 - BRONZEN sponsor: [Lutra Consulting, VK](http://www.lutraconsulting.co.uk/)
 - BRONZEN sponsor: [www.molitec.it, Italië](http://www.molitec.it/)
-- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de
+- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de)
 - BRONZEN sponsor: [www.openrunner.com, Frankrijk](http://www.openrunner.com)
 - BRONZEN Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Duitsland](http://www.eschenlaub.de/)
 

@@ -14,19 +14,19 @@ type: visual-changelog
 
 Datum uitgave 18-06-2021
 
-QGIS 3.20 Odense features a splash screen which displays a section of [the earliest map](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object80440/en/) of Denmark's third largest city, [Odense](https://en.wikipedia.org/wiki/Odense) from 1593. The map was published by [Georg Braun](https://en.wikipedia.org/wiki/Georg_Braun) (1541-1622) in the work *Civitates orbis terrarum* (Cities of the World). Georg Braun's maps are all beautiful and were, for the period, produced at a high cartographic level. *Civitates orbis terrarum* was long the main source of maps of the world's cities, such as [Paris](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62269/en/), [London](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62684/en/), [Mexico City](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62261/en/) and [Aden](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62257/en/).
+QGIS 3.20 Odense heeft een welkomstscherm dat een gedeelte weergeeft van [de vroegste kaart](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object80440/en/) van Denemarken, de op twee na grootste stad, [Odense](https://en.wikipedia.org/wiki/Odense) uit 1593. De kaart werd gepubliceerd door [Georg Braun](https://en.wikipedia.org/wiki/Georg_Braun) (1541-1622) in het werk *Civitates orbis terrarum* (Steden van de wereld). Georg Braun’s kaarten zijn allemaal prachtig en waren, voor die periode, geproduceerd op een hoog cartografisch niveau. *Civitates orbis terrarum* was lange tijd de belangrijkste bron voor kaarten van steden van de wereld, zoals [Parijs](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62269/en/), [Londen](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62684/en/), [Mexico Stad](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62261/en/) en [Aden](http://www5.kb.dk/maps/kortsa/2012/jul/kortatlas/object62257/en/).
 
-The name Odense literally means "Odin's temple", and the place may have originally been a shrine to the pagan god Odin. At the bottom left of the map you see the ruins of one of the large Viking-Age ring-shaped fortress, which were constructed in Denmark by the Danish Viking king [Harald Bluetooth](https://en.wikipedia.org/wiki/Harald_Bluetooth) (died c. 985/86). The ring fortress in Odense is called [Nonnebakken](https://odensebysmuseer.dk/nonnebakken-the-viking-ring-fortress-in-time-and-space/?lang=en).
+De naam Odense betekent letterlijk \“Odins tempel\”, en de plaats zou oorspronkelijk een altaar zijn geweest voor de heidense god Odin. Aan de linkeronderzijde van de kaart ziet u de ruïnes van een groot ringvormig fort uit de Vikingtijd, dat in Denemarken werd geconstrueerd door de Deense Vikingkoning [Harald Bluetooth](https://en.wikipedia.org/wiki/Harald_Bluetooth) (gestorven in c. 985/86). Het ringvormige fort in Odense is genaamd [Nonnebakken](https://odensebysmuseer.dk/nonnebakken-the-viking-ring-fortress-in-time-and-space/?lang=en).
 
 Deze uitgave introduceert een schat aan subtiele wijzigingen en bijwerkingen voor de stabiliteit, die de meest nieuwste mogelijkheden, die werden geïntroduceerd in recente uitgaven van QGIS, versterken. Opgenomen in deze uitgave zijn heel veel verbeteringen voor het beheren van gegevens, met enkele geavanceerde wijzigingen voor het beheer en weergeven van CRS-systemen en informatie voor projecties. Naast deze verbeteringen voor het beheer van CRS plaatsen de basisondersteuning voor de epoch van coördinaten voor dynamische CRS-systemen en integriteitswaarschuwingen voor geavanceerde nauwkeurigheid, QGIS 3.20 ferm aan de leidende zijde van praktijken voor GIS en het beheren van gegevens voor systemen met hoge nauwkeurigheid.
 
-Additionally, users can expect improved metadata management and handling for certain data and metadata types. Another key highlight is the native integration of the [nominatim](https://nominatim.org/) geocoding service, which will allow users to search locations and addresses using data from the OpenStreetMap project directly from the QGIS locator bar.
+Aanvullend kunnen gebruikers verbeterd beheer van metadata en afhandeling voor bepaalde gegevens en typen metadata verwachten. Een ander noemenswaardig punt is de eigen integratie van de geocoderingsservice [Nominatim](https://nominatim.org/), die het voor gebruikers mogelijk maakt locaties en adressen te zoeken met gegevens uit het project OpenStreetMap, direct vanuit de Locatiebalk van QGIS.
 
-The QGIS Community has also seen an uptick in activity in the [QGIS HUB](https://plugins.qgis.org/), as well as the Virtual QGIS Open Days, with the [Cutting Edge Open Day](https://github.com/qgis/qgis/wiki/QHF-May-2021) showcasing a number of demonstrations which leverage rich QGIS functionality that was introduced in more recent releases.
+De gemeenschap van QGIS heeft ook een stijging gezien van de activiteiten in de [QGIS HUB](https://plugins.qgis.org/). Alsook bij de Virtuele QGIS Open Dagen, met de [Cutting Edge Open Dag](https://github.com/qgis/qgis/wiki/QHF-May-2021) die een aantal demonstraties liet zien van hoogwaardige functionaliteit voor QGIS die werd geïntroduceerd in meer recente uitgaven.
 
-We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+We willen nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier betrokken wilt zijn bij het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://www.qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende leden](https://www.qgis.org/nl/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
 
 {{<fund type="active" >}}
 
@@ -39,32 +39,32 @@ De eerder beschikbare sneltoetsen voor het openen van attributentabellen, met fi
 
 ![image2](images/entries/571fda8da2dc36cc6032354e4249ac9f642aad02.webp)
 
-This feature was developed by [Raymond Nijssen](https://github.com/raymondnijssen)
+Deze mogelijkheid werd ontwikkeld door [Raymond Nijssen](https://github.com/raymondnijssen)
 ### Mogelijkheid: Grootte instellen voor alle kolommen in de attributentabel
-The existing ability to \"Set Width\" and \"Autosize\" for columns has been extended to apply the resizing of a field to all columns.
+De bestaande mogelijkheden voor \"Breedte instellen\" en \"Autom. grootte\" voor kolommen zijn uitgebreid voor het aanpassen van de grootte voor een veld voor alle kolommen.
 
-This includes the ability to set a fixed width or to \"Autosize\" all columns. These actions are available from the attribute table header context menu which is accessible by right-clicking a field header.
+Dit omvat ook de mogelijkheid om een vaste breedte in te stellen of om \"Automatische grootte\" voor alle kolommen toe te passen. Deze acties zijn beschikbaar in het contextmenu van de kop in de attributentabel, dat toegankelijk is door met rechts te klikken op de kop van een veld.
 
 ![image3](images/entries/424dea8c61279f20c7f3ca5bf3cd13c21f999987.webp)
 
-This feature was developed by [Ben Wirf](https://github.com/benwirf)
+Deze mogelijkheid werd ontwikkeld door [Ben Wirf](https://github.com/benwirf)
 ### Mogelijkheid: Configuraties voor authenticatie im-/exporteren gemakkelijker gemaakt
-Starting with QGIS 3.20, users can now easily export and import authentication configurations via a pair of actions in QGIS settings\' authentication panel. Exported configurations can be password-protected to avoid sensitive information leakage.
+Vanaf QGIS 3.20 kunnen gebruikers nu configuraties voor authenticatie gemakkelijker exporteren en importeren via een paar acties in het paneel voor instellingen voor authenticatie van QGIS. Geëxporteerde configuraties kunnen met een wachtwoord worden beveiligd om het lekken van gevoelige informatie te vermijden.
 
 Dit vergroot enorm het gemak voor het delen van verscheidene configuraties voor authenticatie over meerdere gebruikers van QGIS, speciaal als het aankomt op meer complexe methoden voor configuratie, zoals Oauth2.
 
-This feature was funded by Ville d\'Yverdon-les-Bains
+Dit werd mogelijk gemaakt door Ville d\'Yverdon-les-Bains
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Tijdbeheer
 ### Mogelijkheid: Stappen navigatie Tijdbeheer
-A temporal navigation step option for \"source timestamps\" has been added to the temporal controller. When selected, this causes the temporal navigation to step between all available time ranges from layers in the project. It\'s useful when a project contains layers with non-contiguous available times, such as a WMS-T service which provides images that are available at irregular dates. This option will allow users to only step between time ranges where the next available image is shown.
+Een optie voor stappen voor navigatie in Tijdbeheer voor \"bron tijdstempels\" is toegevoegd aan het beheer van Tijdbeheer. Indien geselecteerd, zorgt dit ervoor dat de navigatie voor Tijdbeheer door alle beschikbare tijdsperioden in lagen van het project stapt. Dit is nuttig als een project lagen bevat met niet-doorlopende beschikbare tijden, zoals een service voor WMS-T die afbeeldingen verschaft die beschikbaar zijn op onregelmatige datums. Deze optie maakt het voor gebruikers mogelijk alleen door tijdsbereiken te stappen waarvoor de volgende beschikbare afbeelding wordt weergegeven.
 
 ![image4](images/entries/09959743079b809c8969b49f5fbbffe774aeb644.gif)
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720707
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeterde instellingen voor WMS-T
 Instellingen voor WMS-T werden vereenvoudigd en besturingselementen werden geïntroduceerd om het gemakkelijker te maken om voor sommige providers de gewenste tijd te selecteren.
 
@@ -86,24 +86,24 @@ Voorbeeld van instellingen voor een server die alleen een lijst van beschikbare 
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720707
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Horizontaal navigeren Tijdbeheer met muiswiel
-Horizontal scrolling using the mouse wheel (where supported) with the cursor on the map canvas will allow users to navigate, or \"scrub\", the temporal navigation slider backwards and forwards
+Horizontaal scrollen met het muiswiel (indien ondersteund) met de cursor in het kaartvenster stelt gebruikers in staat te navigeren, of \"te schrobben\", de schuifbalk voor navigatie in Tijdbeheer naar achteren en voorwaarts
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Kaartgereedschap
 ### Mogelijkheid: Integratie Nominatim geocodering
-The Nominatim Geocoder is now natively integrated into QGIS out of the box! QGIS provides a Nominatim locator filter, as well as the \"Batch Nominatim Geocoder\" processing tool for batch geocoding locations.
+De Nominatim Geocoder is nu standaard op eigen wijze geïntegreerd in QGIS! QGIS verschaft een Nominatim locatiefilter, als ook het gereedschap voor Processing \"Bulk geocodering Nominatim\" voor het in batch geocoderen van locaties.
 
 *Nominatim locatiefilter*
 
-The QGIS locator bar widget (by default, a search bar in the bottom left corner CTRL+K) now supports Nominatim geocode searches by using the prefix \'\>\'.
+De widget Locatiebalk in QGIS (standaard, een zoekbalk in de linkerbenedenhoek CTRL+K) ondersteunt nu zoekacties voor geocode van Nominatim door het voorvoegsel \'\>\' te gebruiken.
 
-Users may now search for locations using the format `> search string` in the locator and will be provided with a selection of results. Selecting a search result will reposition the canvas extent on that location.
+Gebruikers kunnen nu zoeken naar locaties met de indeling `> zoektekst` in de Locatiebalk en er zal een selectie van resultaten worden gegeven. Selecteren van een zoekresultaat zal het bereik van het kaartvenster plaatsen op die locatie.
 
 *Bulk geocodering Nominatim*
 
-In addition, a new \"Batch Nominatim Geocoder\" algorithm has been added to the QGIS processing toolbox under Vector tools, allowing users to geocode multiple locations at once.
+In aanvulling daarop is een nieuw algoritme \"Bulk geocodering Nominatim\" toegevoegd aan de Toolbox van Processing in QGIS, onder Vector algemeen, wat gebruikers in staat stelt meerdere locaties in één keer te geocoderen.
 
 Nominatim is een service voor geocodering die gegevens gebruikt van het project OpenStreetMap. Beperkingen voor gebruike en limieten - 1 query per seconde - pas het toe in lijn met de beleidsregels voor gebruik van de OpenStreetMap Foundation (OSMF), en de gegevens worden verschaft onder de termen van de licentie ODbl. Aanvullend, query's naar de service van Nominatim mogen informatie voor telemetrie bevatten.
 
@@ -111,37 +111,37 @@ Standaard opnemen van deze fantastische service voor geocodering zou niet mogeli
 
 ![image8](images/entries/bd1b0900b9e2b2756dbc9c9aa90f8b8f34ef166e.gif)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Gebruikersinterface
 ### Mogelijkheid: Verbeteringen aan dialoogvenster Geschiedenis van Processing
-The processing\'s history dialog has had a series of user interface improvements, including regrouping of algorithms in meaningful folder structures and making use of individual algorithm icons. Searching for that algorithm you ran last week has never been as easy!
+Het dialoogvenster Geschiedenis van Processing heeft een reeks verbeteringen aan de gebruikersinterface ondergaan, inclusief het opnieuw groeperen van algoritmes in structuren van betekenisvolle mappen en gebruik makend van pictogrammen van individuele algoritmes. Zoeken naar een algoritme dat u vorige week hebt uitgevoerd was nog nooit zo gemakkelijk!
 
 ![image9](images/entries/4e8fa82827363fa9b82ed5b79c1b84f12a220465.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Pictogrammen voor kaartlagen in het dialoogvenster Expressiebouwer
-The expression builder dialog now displays map layer icons next to the list of layers under the \'Map Layers\' parent group. This speeds up skipping through the list and provides additional context.
+Het dialoogvenster Expressiebouwer geeft nu pictogrammen voor kaartlagen weer naast de lijst met lagen onder de oudergroep \'Lagen\'. Dit versnelt het zoeken in de lijst en verschaft aanvullende context.
 
 ![image10](images/entries/2128b48e7c773959e0305181db1b4da9c917889d.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: SVG browser filteren
 De SVG browser-interface ondersteunt nu filteren gebaseerd op eenvoudige tekst, wat het voor gebruikers mogelijk maakt de beschikbare SVG-afbeeldingen te filteren, gebaseerd op een opgegeven zoektekst.
 
 ![image11](images/entries/3e4dfa0a3e25db1821ae914eeec5c34d7c125ebf.gif)
 
-This feature was developed by [Denis Rouzaud](https://github.com/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
 ## Symbologie
 ### Mogelijkheid: Geïnterpoleerde lijn type symboollaag voor vectorlagen
-QGIS provides a new \"Interpolated Line\" symbol layer type, which results in the rendering of a color and/ or width varying line.
+QGIS verschaft een nieuw type symboollaag \"Geïnterpoleerde lijn\", wat resulteert in het renderen van een in kleur en/of breedte variërende lijn.
 
 Dit symbool is in grote mate te configureren en geeft gebruikers de mogelijkheid om attributen of expressies te associëren met elk uiteinde van de lijn of boog, naast andere opties voor configuratie. Waarden worden geïnterpoleerd langs de lijn tussen uiteinden. Kleur wordt geconfigureerd met een widget voor kleurverloop.
 
 ![image12](images/entries/ebfd1d989cdb0d61ab56ab5a629a82a716446666.gif)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
+Deze mogelijkheid werd ontwikkeld door [Vincent Cloarec](https://github.com/vcloarec)
 ### Mogelijkheid: Het enkele lijnsymbool afbreken
 Een optie om het begin en einde van enkele lijnsymbolen af te breken werd toegevoegd, wat het bij het renderen van de lijn mogelijk maakt de eerste en laatste gedeelten van een lijn op een door de gebruiker gedefinieerde afstand af te breken. Dit is nuttig bij het maken van complexe symbolen waar een lijnlaag geen lagen met markeringssymbolen, die zijn geplaatst op begin- of eindposities van een object lijn, zou moeten overlappen, zoals bij routes voor transport. De afstand voor het afbreken ondersteunt een bereik aan eenheden, inclusief een percentage van de gehele lengte van de lijn en mag ook worden geconfigureerd als een data-bepaalde eigenschap.
 
@@ -151,11 +151,11 @@ Een voorbeeld voor het gebruik van deze functionaliteit:
 
 ![image14](images/entries/14f48f5bcc891d1c97a8b187f53bb21c6dd6dff6.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: New \"Embedded styling\" renderer with OGR feature styles support
-A new \"Embedded styling\" renderer has been added which exposes OGR feature styles, allowing QGIS to automatically symbolize data from certain datatypes which have integrated style information, such as KML or TAB files.
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Nieuwe renderer \"Ingebedde symbolen\" met ondersteuning voor stijlen voor OGR-objecten
+Een nieuwe renderer \"Ingebedde symbolen\" is toegevoegd om stijlen van OGR-objecten weer te geven, wat het voor QGIS mogelijk maakt om automatisch gegevens van bepaalde gegevenstypen te symboliseren die geïntegreerde stijlinformatie hebben, zoals KML- of TAB-bestanden.
 
-This feature implements [QEP-209](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/209)
+Deze mogelijkheid implementeert [QEP-209](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/209)
 
 Ondersteuning zou automatisch moeten zijn uitgebreid naar alle stuurprogramma's voor GDAL die de API voor stijl van OGR-objecten implementeren.
 
@@ -171,64 +171,64 @@ Deze functionaliteit ondersteunt ook de directe conversie van renderers Ingebedd
 
 Deze mogelijkheid werd mogelijk gemaakt door de QGIS Denmark gebruikersgroep
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Nieuwe vormen en eindstijlen voor ellipsmarkeringen
 Verscheidene nieuwe vormen - semi-boog en pijltekens - werden toegevoegd aan de symboollagen voor ellipsmarkeringen, als ook een instelling om de eindstijl aan te passen voor ellipsvormen met alleen lijnen.
 
 ![image18](images/entries/3b34a6b8ceb5cad5a423a10562511457c0c21396.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Eindstijl instellen voor eenvoudige markeringen
-QGIS now allows for the pen cap (or line ending) style to be set for simple marker symbol layers, which is useful for the stroke-only symbols like cross and arrowhead markers, where it\'s beneficial to allow the use of round caps instead of square caps.
+QGIS maakt het nu mogelijk om de afgeronde eindstijl (of lijnuiteinde) in te stellen voor eenvoudige markering-symboollagen, wat nuttig is voor de alleen-lijn-symbolen zoals kruis- en pijlmarkeringen, waar het een voordeel heeft ronde uiteinden te gebruiken in plaats van vierkante uiteinden.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Afgeronde eindstijl instellen voor ellipsmarkering-symboollagen
 Ellipsmarkeringen bevatten nu ook ondersteuning voor het aanpassen van de afgeronde eindstijlen (lijnuiteinden)
 
 ![image19](images/entries/5d01d2759751cf797586797a74beea3c9561677d.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Polygon rings \@geometry_ring_num variable
-A new variable, `@geometry_ring_num`, has been added for data-defined styling when rendering polygon rings. The variable is available whenever a polygon outline is being rendered, such as a simple line or marker line. This data-defined property will be set to 0 for the exterior ring, and increment accordingly (1, 2, 3\... etc) for successive interior rings.
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
+### Mogelijkheid: Variabele voor polygoonringen \@geometry_ring_num
+Een nieuwe variabele, `@geometry_ring_num`, is toegevoegd voor data-bepaalde opmaak bij het renderen van polygoonringen. De variabele is altijd bereikbaar als een omtrek van een polygoon wordt gerenderd, zoals een enkele lijn of markeringslijn. Deze data-bepaalde eigenschap zal op 0 worden ingesteld voor de buitenste ring, en overeenkomstig verhoogd worden (1, 2, 3\… etc) voor opeenvolgende binnenste ringen.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Labelen
 ### Mogelijkheid: Vulsymbolen voor achtergronden van labels
 Achtergronden voor labels kunnen nu vulsymbolen gebruiken voor de vormen rechthoek, vierkant, cirkel en ellips.
 
-This extends beyond the previously available ability for these shields to utilize simple fill and stroke and grants the ability to leverage the complete symbology capabilities of QGIS for shield rendering, including the utilization of \"saved styles\".
+Dit breidt de reeds eerder aanwezige mogelijkheid voor deze achtergronden uit om eenvoudige vulling en lijnen te gebruiken. En geeft tevens de mogelijkheid om de volledige mogelijkheden voor symbologie in QGIS voor het renderen van achtergronden te verhogen, inclusief het gebruiken van \"opgeslagen stijlen\".
 
 ![image20](images/entries/5698488e5fae8bdd876dfe754b56bfad0c3fd950.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Instellingen voor Meng-modus voor label Tekstballonnen
 Labels Tekstballonnen mogen nu verhoogd worden met de geavanceerde meng-modi van QGIS
 
 ![image21](images/entries/4dd84f1e0b5ec295da997ffd84fb15b2cae25b13.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Lijnlabels verankeren aan gehele lijn
-In previous versions, when an anchor position for a line label was calculated, QGIS would only consider the visible extent of the feature. This affected the expected label position in some cases, and a new \"Use Entire Line\" setting allows users to configure the behavior according to their needs, so that the entire feature may be considered before label placement rather than just the portion of a feature that is currently visible.
+In eerdere versies, wanneer een ankerpositie voor een lijnlabel werd berekend, zou QGIS alleen rekening houden met het zichtbare bereik van het object. Dit beïnvloedde in sommige gevallen de verwachte labelpositie en een nieuwe instelling \"Gehele lijn gebruiken\" stelt gebruikers in staat het gedrag te configureren. Overeenkomstig hun wensen, zodat rekening wordt gehouden met het gehele object voor het plaatsen van het label, in plaats van slechts met het gedeelte van het object dat momenteel zichtbaar is.
 
 ![image22](images/entries/1a1788cc98f860e53b8ba3b1b2d7ad5b0969179f.webp)
 
 Dit werd mogelijk gemaakt door Stadt Zürich
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Radius hoek tekstballon
-Balloon callout styles now support rounded corners by introducing a \"corner radius\" option, resulting in the ability to easily produce visually pleasing designs.
+Stijlen voor tekstballonnen ondersteunen nu afgeronde hoeken door de introductie van een optie \"Radius hoek\", die resulteert in de mogelijkheid om gemakkelijk visueel aantrekkelijke ontwerpen te maken.
 
 ![image23](images/entries/9c3d5b37de37e8db7168e68229a6bb3cd02138e6.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Tekstballonnen (speech bubble)
-A new \"balloon\", or speech bubble, callout style is provided for labels.
+Een nieuwe \"tekstballon\", of speech bubble-stijl voor labels wordt verschaft.
 
 ![image24](images/entries/7dcb80eacfb6e10dc6b6b05a160421a93ee78d14.webp)
 
 Dit werd mogelijk gemaakt door SLYR
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Tekstballon stijl Gebogen lijn
 A new \"Curved Line\" callout style has been provided for creating cartographically pleasing curved line callouts between the labels and features
 
@@ -241,21 +241,21 @@ Opties bevatten:
 
 ![image26](images/entries/42e4e2dd600bceda0ff426996577761d9e8b1638.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Begin- of eindpunten vastgezette tekstballon accentueren
 When the \"show pinned labels\" option is enabled, QGIS will now also highlight any pinned callout start or end points. This allows users to immediately see which callouts points have been manually placed in relation to those that are automatically placed.
 
 ![image27](images/entries/e1de38ee6adde2a016b8d4550111ff766211f0f7.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Automatisch maken van hulpvelden voor tekstbalonnen
 QGIS beheert nu automatisch het maken van hulpvelden voor tekstballonnen bij het proberen om interactief een begin- of eindpunt van een tekstballon te verplaatsen, waardoor de ervaring voor de gebruiker voor het verplaatsen van een tekstballon exact hetzelfde gedrag geeft als bij het verplaatsen van een label, hiermee voorkomend dat het systeem gebruikers dwingt om vooraf hulpvelden te moeten maken.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Snappen van tekstballon
 Bij het interactief verplaatsen van een lijn van een tekstballon, zal het ingedrukt houden van de Shift-toets er voor zorgen dat de tekstballon wordt gesnapt aan hoeken met verhogende stappen van 15 graden
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Sneltoets voor schakelen labellagen
 Een actie met een sneltoets om het labelen te schakelen is toegevoegd aan het contextmenu van vectorlagen in de laagpanelen. Dit maakt het voor labels mogelijk om snel in- of uitgeschakeld te worden, zonder de configuratie voor het label te verliezen. Als een laag nooit is geconfigureerd voor labels en de actie wordt geselecteerd, zal QGIS proberen een eenvoudige configuratie voor labelen toe te passen op de laag met standaard parameters.
 
@@ -263,17 +263,17 @@ Een actie met een sneltoets om het labelen te schakelen is toegevoegd aan het co
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720707
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Data-bepaalde begin- en eindpunten tekstballon
 Lijnen voor tekstballonnen mogen nu data-bepaalde begin- en eindpunten hebben, nuttig voor het handmatig beheren van de exacte plaatsing voor individuele lijnen voor tekstballonnen.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Interactief verplaatsen van tekstballonnen met het gereedschap Label verplaatsen toestaan
 This change allows the interactive \"Move labels\" tool to also move callout endpoints, whenever the callout has data-defined origin or destination fields set.
 
 ![image29](images/entries/8bb0e3614666059f3fe66065173f207d335d3800.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Puntenwolken
 ### Mogelijkheid: Ondersteuning voor gegevenssets op afstand (EPT)
 Point cloud datasets that have been processed to [EPT format](https://entwine.io/entwine-point-tile.html) can be loaded from remote HTTP(S) servers, similar to how raster/vector tiles work. This way, it is possible to access large point cloud datasets without first having to download them as LAS/LAZ files. The EPT format is optimized for tiling and streaming, so QGIS only downloads small amounts of data necessary for display of the current view and resolution. This works in both 2D and 3D view.
@@ -303,18 +303,18 @@ This option will evaluate and replace any dynamic parts of a label\'s contents w
 
 Dit geeft een gemakkelijke manier om dynamische labels te wijzigen naar statische, zodat gebruikers, indien nodig, de resultaten handmatig aan kunnen passen.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeteringen aan voorbeeldweergave lagen XYZ in kaartitems
 Afhandelen van lagen XYZ, die als voorbeeld worden weergegeven in kaartitems van de lay-out, is verbeterd om er voor te zorgen dat hun zoomniveaus voor de tegels overeenkomen met die van de geëxporteerde lay-out tijdens het in-/uitzoomen in het dialoogvenster voor het ontwerpen van de lay-out. Gebruikers kunnen nu gemakkelijker de plaatsing van hun items verfijnen (labels, legenda, afbeeldingen, etc.) tegen een kaartvoorbeeld dat overeenkomt met de bedoelde uitvoer.
 
 Dit werd mogelijk gemaakt door Kanton Zug - Amt für Raum und Verkehr (ARV)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Expressies
 ### Mogelijkheid: Functie length3D
 A \"length3D\" function has been added for returning the 3D length of a LineGeometry type geometry. This calculates the cartesian 3D length of a geometry line object. If the geometry is not a 3D line object, it returns its 2D length.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Uitgebreide arrayfuncties voor expressies
 De volgende expressies voor arrays werden toegevoegd:
 - array_count
@@ -348,13 +348,13 @@ Werkt met meerdere kaartgereedschappen, inclusief het maken van nieuwe lijn- of 
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720707
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: New \"Line Endpoints\" snapping option
 Indien ingeschakeld snapt deze modus voor snappen alleen aan het begin- of eindpunt van lijnen. Bij snappen op een polygonenlaag zal alleen aan het eerste punt in ringen worden gesnapt.
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720707
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Punten per polygoon selecteren
 Gebruikers kunnen nu de ALT-toets gebruiken om tijdens digitaliseren punten per polygoon te selecteren.
 
@@ -380,7 +380,7 @@ Voorbeelden van laag-nauwkeurige lagen zouden die kunnen bevatten met een dynami
 
 Deze optie is standaard uitgeschakeld, en ontworpen voor gebruik door ingenieurs, BIM, en andere industrieën waar onnauwkeurigheden op het niveau van meter/submeter erg gevaarlijk zijn.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Basisondersteuning voor dynamische epoche voor CRS-coördinaten
 Basic support for the coordinate epoch of dynamic (not plate fixed) CRS has been added in line with relevant updates to [GDAL](https://github.com/OSGeo/gdal/pull/3810).
 
@@ -388,26 +388,26 @@ QGIS heeft ondersteuning toegevoegd voor het respecteren van de bron- of doel-ep
 
 Als een dynamisch CRS naar een transformatie naar dynamisch CRS met verschillende epochen wordt geprobeerd, wat momenteel niet wordt ondersteund door PROJ, zal een waarschuwingsbericht voor de gebruiker worden weergegeven die hem in kennis stelt van het feit dat de resultaten misleidend kunnen zijn en niet zouden moeten worden gebruikt voor werk waar een hoge mate van nauwkeurigheid is vereist.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeteringen aan projectinformatie
 Verscheidene verbeteringen zijn gemaakt aan de afhandeling en weergave van projectinformatie in QGIS, inclusief:
 - De toevoeging van een API om bewerkingsdetails voor PROJ voor CRS-en op te halen
 - The ability to show extended information about a layer\'s CRS in the layer properties info tab, including accuracy warnings
 - The addition of a `@map_crs_projection` variable, for retrieving a friendly name of a map\'s projection (e.g. \"Albers Equal Area\")
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Waarschuwingen voor CRS datum-ensemble
 QGIS now shows a warning in the projection selection widget when a CRS based on a datum ensemble is selected, warning the user that there\'s an inherent lack of accuracy in the selected CRS.
 
 ![image35](images/entries/b99e932e308d3b6d2b3868a88f3528386adb3d1f.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Metadata van lagen behouden in export van vectorbestanden
 A \"persist layer metadata\" checkbox has been added to the export vector file dialog. When checked, any layer metadata present in the source layer will be copied and stored in the destination file.
 
 Deze functionaliteit is standaard ingeschakeld en zorgt ervoor dat de metadata op de juiste wijze wordt overgebracht naar de nieuw gemaakte items, wat in het bijzonder effectief is bij het gebruiken van de indeling GPKG.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Opmerkingen voor lagen
 QGIS now supports \"layer notes\", which can be created via the \"Add Layer Notes\" action in the layer context menu.
 
@@ -425,17 +425,17 @@ Opmerkingen voor lagen worden ook ondersteund door en opgeslagen in QML- (QGIS S
 
 Dit werd mogelijk gemaakt door Alta Ehf
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Automatisch laden van metadata uit .shp.xml
 QGIS zal nu automatisch ESRI-metadata laden en converteren die is opgeslagen in een bijbestand .shp.xml. Waar gegevens uit shapefile worden geladen en deze ebstanden voor metadata zijn aanwezig, zullen zij automatisch worden geladen, waarbij de beschikbare metadata  voor de laag overeenkomstig wordt gevuld.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Automatisch gegevens van laag vertalen van ESRI Filegeodatabases naar QGIS metadata voor de laag
 When loading data from a .gdb file, QGIS will automatically attempt to translate as much as possible of the original ESRI metadata across to the QGIS metadata, so that it\'s immediately available for use.
 
 Dit werd mogelijk gemaakt door North Road / SLYR
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Domeinen voor velden lezen uit gegevenssets
 Voor indelingen die de ingebedde definitie voor velddomeinen ondersteunen (momenteel GPKG en GDB), converteert QGIS automatisch het ingebedde velddomein naar de equivalente configuratie voor de bewerker van QGIS voor het veld.
 
@@ -443,7 +443,7 @@ Dit betekent dat GPKG/GDB met gecodeerde velddomeinen automatisch zullen worden 
 
 Dit werd mogelijk gemaakt door North Road
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Laden van lagen GPKG met type GEOMETRY toestaan
 GeoPackage supports layers with a generic \"geometry\" type, with the QGIS release 3.20 it is now possible to load them and specify the requested geometry type on load, just like with PostGIS.
 
@@ -453,7 +453,7 @@ This feature was developed by [Marco Bernasocchi (OPENGIS.ch)](https://www.openg
 ### Mogelijkheid: Ondersteuning voor offline bewerken voor veldtypen lijst tekenreeks en lijst nummer
 PostGIS-gebruikers verheugt u: offline bewerken werd enigszins slimmer en kan nu veldtypen lijst tekenreeks en lijst nummer afhandelen.
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Formulieren en widgets
 ### Mogelijkheid: Per-veld gebruiken van laatste waarden voor nieuw gemaakte objecten
 Uitgebreider beheer is verschaft voor wanneer de laatst ingevoerde waarden voor velden opnieuw gebruikt zouden moeten worden bij het maken van nieuwe objecten, zodat deze functionaliteit nu onafhankelijk kan worden beheerd voor elk individueel attributenveld voor elke laag.
@@ -464,7 +464,7 @@ Dit maakt fijner beheer over het gedrag van formulieren mogelijk, waar van sommi
 
 ![image38](images/entries/73f699bdf27a1b3b35de96e7a233d12a49b585d9.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Widget weergave JSON
 Nieuw weergavewidget om gegevens van JSON op een gebruiksvriendelijke manier weer te geven. Gegevens kunnen worden weergegeven als geaccentueerde tekst in syntaxis of als een boom.
 
@@ -490,13 +490,13 @@ This feature was developed by [mhugent](https://github.com/mhugent)
 ### Mogelijkheid: Optie toegevoegd om metadata voor laag op te slaan in algoritme Pakketlagen
 Deze aanvullende optie verrijkt het algoritme Pakketlagen en zal de metadata voor de bronlaag kopiëren in het geopackage, zodat het als standaard metadata zal worden gebruikt voor de laag.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Algoritme Rasterlaag eigenschappen
 Dit algoritme haalt basiseigenschappen voor de rasterlaag op, zoals de grootte in pixels, dimensies van pixels (kaarteenheden per pixel), aantal banden, en waarden Geen gegevens.
 
 It is intended for use as a means of extracting these useful properties to use as the input values to other algorithms in a model, such as passing an existing raster\'s pixel sizes over to a GDAL raster algorithm.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeterde bewerking rasteriseren met #D-ondersteuning
 Het GDAL-proces rasteriseren (vector naar raster) ondersteunt nu 3D-gegevens, in zoverre dat het nu de mogelijkheid bevat om de waarde Z (hoogte) van een object te gebruiken om brandwaarden uit te nemen.
 
@@ -516,35 +516,35 @@ The qgis_process command line operation has been granted a \--verbose switch to 
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720411
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Opnieuw bewerken van snappen aan geometrie biedt een grote snelheidswinst
 This development cycle saw a rework of the inner workings of QGIS\' geometry snapper algorithm, which has led to a significant speed boost. Datasets which could take over 10 minutes to process now take less than 10 seconds.
 
 This feature was funded by [SwissTierras Colombia](https://www.swisstierrascolombia.com)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Add a last_value function to the aggregate algorithm
 The aggregate processing tool now includes a `last_value` aggregation function, which is especially useful when working with input data that has meaningful ordering.
 
 ![image41](images/entries/77afe9dba20e9134db3a1c628c5eeebab275b87a.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Globale optie om monitoren van mappen uit te schakelen
 Geeft gebruikers de mogelijkheid om handmatig standaard het monitoren van mappen in de browser uit te schakelen, en verschaft ook een mechanisme voor installaties voor bedrijven om dit potentieel ongewenst gedrag uit te schakelen.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: API's voor exporteren en importeren van XML configuraties voor authenticatie
 QGIS verschaft nu functies voor exporteren en importeren naar het QGIS authenticatiebeheer. Deze functionaliteit wordt nog niet weergegeven in de gebruikersinterface. Complexe configuraties voor authenticatie met veel opties, zoals OAuth2, kunnen optioneel worden versleuteld of worden opgeslagen in platte tekst om het beheren van werkstromen met authenticatie te verbeteren.
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Browser
 ### Mogelijkheid: Aangepaste kleuren voor pictogrammen van mappen in browser
 QGIS now allows users to set a custom icon color for different folders in the browser. This effectively allows users to \"tag\" folders, which aids in the rapid navigation of complex folder structures in the browser.
 
 ![image42](images/entries/5135bb429434786f87aca3d2deeb980ce874ae44.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Groep OWS verwijderd uit de QGIS Browser
 The non-functional and redundant \"OWS\" Group has been removed from the QGIS Browser panel.
 
@@ -553,7 +553,7 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 ### Mogelijkheid: Ondersteuning voor lijsten van gegevenstypen integer, real en integer64 in OGR toegevoegd
 Aanvullende lijsten voor veldtypen zijn toegevoegd aan het stuurprogramma voor OGR voor ondersteunde gegevenstypen, zoals Geojson.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Mogelijkheid voor lezen van vectorlaag uitgebreid naar ander typen lagen
 Whilst the ability for QGIS to access a layer\'s metadata information, such as reading the extent of a layer from the metadata, was previously restricted to vector layers, this functionality has now been extended to include various other layer types including raster, point cloud, and others.
 
@@ -667,7 +667,7 @@ This feature was developed by [Paul Blottiere](https://www.qcooperative.net/)
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti
 | Titel probleem | URL (indien gerapporteerd, GitHub) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -681,7 +681,7 @@ This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces
 | Titel probleem | URL (indien gerapporteerd, GitHub) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -696,7 +696,7 @@ This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Peter Petrik
 | Titel probleem | URL (indien gerapporteerd, GitHub) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |

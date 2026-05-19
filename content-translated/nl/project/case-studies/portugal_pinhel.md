@@ -45,7 +45,7 @@ In het vervolg van deze tweede fase gebruikten we de Python-versie van de softwa
 
 <figure>
 <img src="../images/portugal_pinhel4.png" class="align-right" alt="portugal_pinhel4.png" />
-<figcaption>Deel van het model dat is ontwikkeld voor het automatiseren van de productie van cartografie voor bosbrandgevaar en risico\'s.</figcaption>
+<figcaption>Deel van het model dat is ontwikkeld voor het automatiseren van de productie van cartografie voor bosbrandgevaar en risico's.</figcaption>
 </figure>
 
 De tot op heden verkregen resultaten zijn veelbelovend, omdat nu al het automatisch maken van de kaarten voor gevaar en risico kan worden bereikt \[2\]. Rekening houdend met het feit dat de Python-versie van Sextante nog steeds vrij recent is en aan veranderingen onderhevig, zijn er enkele problemen die moeten worden gecorrigeerd, zodat de modellen kunnen worden voltooid, wat zeker op korte termijn zal gebeuren, gegeven het momentum dat het project Sextante presenteert. Als toekomstig werk zijn we van plan, ook automatisch, de symbologie toe te passen op de resultaten en ook de uiteindelijke lay-outs weer te geven in QGIS Printomgeving, klaar om te exporteren en/of af te drukken. Na voltooiïng van de tweede fase en het realiseren van een voldoende set van testen die de verkregen resultaten kunnen valideren, is het onze intentie om het model open en vrij te verschaffen.

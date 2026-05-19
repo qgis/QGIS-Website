@@ -25,7 +25,7 @@ Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare finan
 - ZILVEREN sponsor: [G.A.I.A. mbH, Duitsland](http://www.gaia-mbh.de/)
 - ZILVEREN sponsor: [Staat Vorarlberg, Oostenrijk](http://www.vorarlberg.at/)
 - BRONZEN sponsor: [www.molitec.it, Italië](http://www.molitec.it/)
-- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de
+- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de)
 
 Een recente lijst van donoren die een financiële bijdrage, klein en groot, hebben gegeven aan het project kan worden bekeken op onze [lijst met donoren](https://qgis.org/nl/site/about/sponsorship.html#list-of-donors).
 

@@ -35,7 +35,7 @@ Tenslotte willen we onze officiële sponsoren bedanken voor de onschatbare finan
 - ZILVEREN sponsor: [Office of Public Works, Ireland, Ireland](http://www.opw.ie/)
 - ZILVEREN Sponsor: [AGH University of Science and Technology, Krakow, Polen](http://www.agh.edu.pl/en)
 - BRONZEN sponsor: [www.molitec.it, Italië](http://www.molitec.it/)
-- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de
+- BRONZEN sponsor: [www.argusoft.de, Duitsland](http://www.argusoft.de)
 - BRONZEN sponsor: [www.openrunner.com, Frankrijk](http://www.openrunner.com)
 - BRONZEN sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Duitsland](http://www.gkg-kassel.de/)
 - BRONZEN sponsor: [Customer Analytics, USA](http://www.customeranalytics.com/)

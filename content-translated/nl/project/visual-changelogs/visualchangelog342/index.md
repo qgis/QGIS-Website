@@ -60,7 +60,7 @@ QGIS now allows raster pixels to be labeled with the value taken from a raster b
 
 This feature was funded by Canton de Neuchâtel
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Custom tab distances for labels
 Allows setting a list of custom tab stop distances on labels, instead of just a single distance This allows different thresholds to be used between breaks.
 
@@ -68,7 +68,7 @@ Allows setting a list of custom tab stop distances on labels, instead of just a 
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Support CSS background property in labels/text renderer
 QGIS now supports CSS background-color and background-image properties when used with HTML labels.
 - Backgrounds are supported for block items (e.g. `<div>`) or inline items (e.g. `<span>`)
@@ -78,7 +78,7 @@ QGIS now supports CSS background-color and background-image properties when used
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Support CSS margins for block elements in HTML labels
 QGIS has added support for CSS margin properties on block elements in the text renderer. Specifically:
 - This is available for block-type elements only, e.g. DIV, P, H1-H6.
@@ -89,7 +89,7 @@ QGIS has added support for CSS margin properties on block elements in the text r
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Support CSS line-height in HTML labels
 QGIS has added support for the line-height CSS property in HTML formatted labels.
 
@@ -97,7 +97,7 @@ Supports line-height in either points or percent, e.g. "line-height: 40pt" or "l
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Mazen
 ### Feature: Mesh Render Extent Settings
 The renderer setting for Mesh now includes an option for setting the Min/Max limits of the Color Ramp renderer based on the current canvas extent. This can be locked to a specific canvas instance or changed based on the active canvas using the same rendering behaviors as Raster Layers.
@@ -161,7 +161,7 @@ This feature was developed by [Matej Bagar](https://github.com/Withalion)
 ### Feature: Double-clicking a mouse handle for a layout label resizes to fit text
 Double-clicking a handle will auto-size the label to fit exactly within the contained text (growing or shrinking as needed). The opposite side of the label will remain fixed in place so that, for example, double-clicking the bottom-right handle causes the bottom-right corner of the label to move.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Action on double click layout item
 The QGIS API has been extended to add an event to Print Layout elements that are double-clicked, allowing for more advanced functionalities to be introduced in the future (e.g. double-click to edit an item).
 
@@ -197,7 +197,7 @@ The advanced digitizing panel and snapping options have been added to the georef
 
 ![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png.webp)
 
-This feature was developed by [Denis Rouzaud](https://github.com/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
 ### Feature: Data Source Manager STAC enhancements
 Building on the STAC Client capabilities introduced in QGIS 3.40 as a part of [QEP\#300](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/300), the QGIS STAC client now supports additional functionalities including:
 - STAC Catalog search functionality within the Data Source Manager
@@ -226,7 +226,7 @@ A context menu has been added to the `Available Widgets` panel in the vector lay
 
 This feature was funded by Ville de Pully (Switzerland)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Processing
 ### Feature: Processing metadata tools
 New native algorithms have been added to the processing toolbox for better handling of layer metadata.
@@ -285,7 +285,7 @@ A new algorithm has been added that extracts point features corresponding to the
 
 The output will contain one point feature for the minimum and one for the maximum raster value for every individual zonal feature from a polygon layer.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Algorithm to extract min/max pixel from raster
 A new algorithm has been added that extracts extrema (minimum and maximum) values from a given band of the input raster layer.
 
@@ -295,13 +295,13 @@ If multiple pixels in the raster share the minimum or maximum value, then only o
 
 The algorithm uses raster iterator to remain efficient on huge rasters, and does not require reading the entire raster to memory
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: New algorithm to generate elevation profile images
 A new processing algorithm has been created which allows users to generate elevation profile images. This can effectively be used within models and will allows users to efficiently output elevation profiles for multiple curves.
 
 ![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: New Mesh: Surface to Polygon Algorithm
 A new processing algorithm has been added for Mesh datasets that exports a surface of the mesh to a MultiPolygon output.
 
@@ -351,7 +351,7 @@ This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ### Feature: Expose QgsGeos class to PyQGIS
 GEOS-specific functionality which is not exposed through the base QgsGeometryEngine class is now directly accessible via the new QgsGeos class.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Make Z and M values accessible via QgsGeometry.as\_numpy()
 In previous versions of QGIS, the `QgsGeometry.as_numpy()` method would return coordinates with XY values only.
 

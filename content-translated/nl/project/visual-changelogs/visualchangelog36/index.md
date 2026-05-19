@@ -69,13 +69,13 @@ In het geval van verkleinen moet u het deel selecteren dat moet worden verkort d
 
 This feature was funded by [Mairie de Megève](https://www.megeve.fr/)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ### Mogelijkheid: Rechthoek uit 3 punten (geprojecteerd)
 Er is al een methode om een rechthoek uit 3 punten te maken waarbij de rechthoek een lengte krijgt van tussen het eerste en tweede punt en de tweede lengte gelijk is aan de afstand tussen het 3e en 2e punt.
 
 Deze nieuwe methode maakt het mogelijk een rechthoek te maken uit 3 punten waarbij de tweede lengte de afstand is tussen het punt en het loodrecht geprojecteerde punt op het segment (of de uitbreiding daarvan).
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ### Mogelijkheid: Gereedschap Identificeren voor lagen met mazen
 Het gereedschap identificarenwerkt nu op de laag met mazen. Het geeft de huidige waarde weer van scalaire en vectorcomponenten van de mazen.
 
@@ -134,9 +134,9 @@ This feature was developed by [Nyall Dawson ()](https://north-road.com)
 ### Mogelijkheid: Verbeterde afhandeling van stijlbibliotheken voor .XML
 Het paneel Browser geeft nu stijlbibliotheken voor XML in QGIS weer en deze bestanden kunnen ook worden versleept en worden neergezet in een venster van QGIS. Dit opent een dialoogvenster dat gebruikers in staat stelt de stijlbibliotheek te verkennen en stijlen uit de bibliotheek te importeren naar hun installatie van QGIS.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Optioneel forceren van de Rechterhand-regel gedurende het renderen van symbolen voor polygonen
 This new option, available under the \"Advanced\" button for fill symbols, allows forcing rendered polygons to follow the standard \"right hand rule\" for ring orientation (where exterior ring is clockwise, and interior rings are all counter-clockwise).
 
@@ -180,7 +180,7 @@ De optie is beschikbaar in het contextmenu, klik met rechts, in de lijstweergave
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Projectkleuren weergeven in kleurgebonden data-gedefinieerde knoppen
 This adds a new \"Project Colors\" section in data defined buttons which are linked to a color value. The color menu contains all colors defined as part of the current project\'s Project Color Scheme (which is defined through project properties).
 
@@ -188,15 +188,15 @@ Wanneer een projectkleur wordt gekozen uit de knop, wordt de eigenschap gekoppel
 
 This allows users to define common colors for a project once, and then \"bind\" symbol, label, layout, etc colors to these preset colors. The link is live, so you change it once, and the change is reflected EVERYWHERE. Sure beats updating a color 100 times when it\'s use has been scattered throughout a project\'s symbols, labels, etc\...
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen aan dialoogvenster stijlbeheer
 Het dialoogvenster Stijl manager heeft een aantal verbeteringen ondergaan:
 - A new \"list view\" mode has been added
 - An \"all\" tab has been added, which shows all matching symbols (regardless of the symbol type)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: SLD exporteren voor rasterstijlen
 QGIS is now able to export raster styling to sld, for example to be used in Geoserver. See: <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
 
@@ -216,7 +216,7 @@ This feature was developed by [Faneva Andriamiadantsoa](https://github.com/Fanev
 ### Mogelijkheid: Nieuwe optie om minimaliseren van Georeferencer bij het toevoegen van punten te voorkomen
 Gebruikers kunnen er nu voor kiezen om het automatisch minimaliseren van het venster van georeferencer, dat voorkomt bij het toevoegen van nieuw grondcontrolepunten aan het kaartvenster, te voorkomen. Dit gedrag kan irritant zijn op setups met meerdere schermen, waar het wenselijk kan zijn om beide vensters zichtbaar te hebben bij het toevoegen van punten.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Gegevensbeheer
 ### Mogelijkheid: Optie Opmerking in DB Manager
 This feature was developed by [Corentin Falcone (SIRS)](https://www.sirs-fr.com/sirs/fr/)
@@ -228,7 +228,7 @@ Een knop met keuzemenu laat gebruikers toe om de huidige binaire inhoud van het 
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Printvormgeving
 ### Mogelijkheid: Grid frame verbeteringen
 Users can now set a margin for the grid frames in layout map items. Additionally, new \"Zebra (Nautical)\" and \"Line border (Nautical)\" frame styles have been added, which show nautical-style blocks in the grid corners when a margin is set for the grid.
@@ -237,23 +237,23 @@ Deze mogelijkheid werd ontwikkeld door konst
 ### Mogelijkheid: Verbeterde behandeling van exporteren van tekst en labels
 Bij het exporteren van een afdruklay-out naar PDF- of SVG- indelingen hebben gebruikers nu de keuze over hoe tekst en labels binnen die lay-out zouden moeten wordne geëxporteerd. Beschikbare opties worden geconverteerd naar allemaal tekst voor omtrekken/bogen (de eerdere standaard), of om tekst en labels als tekstobjecten te behouden.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen voor kaartlabels
 Verscheidene verbeteringen zijn gemaakt met betrekking tot hoe labels worden gerenderd in kaartitems van lay-out.
 - A new setting allows per-map control of how close labels are permitted to be placed to the map item\'s edges. Sizes can be set using mm/inches/pixels/etc, and data defined label margins are allowed.
 - Een nieuwe instelling maakt beheer per kaart mogelijk of gedeeltelijke labels zichtbaar zijn op de kaart. Dit staat standaard uit, (anders dan de instelling voor het kaartvenster die standaard aan staat voor een nieuw project) omdat lay-outs altijd standaard de instellingen zouden moeten gebruiken die de hoogste kwaliteit cartografische uitvoer produceren.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Sneltoetsen voor bereik/schaal van kaartitems opnieuw bewerkt
 De knoppen voor het instellen van kaartitems voor lay-out om overene te komen met de huidige kaartweergave (en vice versa) zijn naar boven verplaatst naar een nieuwe werkbalk in het venster voor eigenschappen van kaartitems.
 
 New actions have also been added to set the map item\'s scale to match the main canvas scale, and to set the main canvas scale to match the selected layout map\'s scale. These mirror the existing settings for setting the extent from the canvas and pushing the extent TO the canvas.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Layout items can \"block\" map labels
 This feature allows other layout items (such as scalebars, north arrows, inset maps, etc) to be marked as \"blockers\" for the map labels in a map item. This prevents any map labels from being placed under those items - causing the labeling engine to either try alternative placement for these labels (or discarding them altogether).
 
@@ -261,9 +261,9 @@ This allows for more cartographically pleasing maps \-- placing labels under oth
 
 The blocking items are set through a map item\'s properties, under the label settings panel. The setting is per-map item, so you can have a scalebar block the labels for one map in your layout and not others (if you so desire!)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Waarschuwingen voor exporteren
 Bij het exporteren van afdruklay-outs controleert QGIS nu automatisch de lay-out op veel voorkomende fouten en waarschuwt de gebruiker als die worden gevonden:
 - Schaalbalken niet gekoppeld aan een kaartitem
@@ -272,11 +272,11 @@ Bij het exporteren van afdruklay-outs controleert QGIS nu automatisch de lay-out
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Beheer over stapelpositie van bereiken van overzichtskaarten
 QGIS allows overview extents to be drawn below map labels (the new default), but in 3.6 choices have been added for drawing them below all map layers, or above/below a specific map layer. This allows users to control exactly where in the map item\'s layer stack the overview will be placed, e.g. allowing them to draw a overview extent below some feature layers such as roads whilst drawing it above other background layers.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Nieuwe variabelen voor expressies voor items van de legenda
 Nieuwe variabelen voor expressies zijn toegevoegd om te gebruiken in data-gedefinieerde expressies in items van de legenda van een lay-out, inclusief:
 - \@legend_title
@@ -304,7 +304,7 @@ zal in de uitvoer worden weergegeven als
 
     My layer (rendered at 1:1000)
     
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Analyse-gereedschappen
 ### Mogelijkheid: Hardware-acceleratie voor rasterberekeningen
 Acceleratie van OpenCL is nu standaard beschikbaar voor bewerkingen van rasterberekeningen
@@ -326,7 +326,7 @@ Maakt het verwijderen van gedupliceerde objecten mogelijk, geïdentificeerd met 
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Explode HStore
 This algorithm creates a copy of an input layer and adds a new field for every unique key found in a HStore type field. For instance, a HStore field is often present in an OSM dataset (\"other_tags\").
 
@@ -340,7 +340,7 @@ Dit nieuwe algoritme forceert geometrieën polygoon om de Rechterhand-regel te r
 
 Deze mogelijkheid werd mogelijk gemaakt door de Duitse QGIS gebruikersgroep
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Binair veld uitnemen
 Dit algoritme stelt gebruikers in staat de inhoud uit binaire velden te nemen en op te slaan in bestanden.
 
@@ -348,7 +348,7 @@ Dit algoritme stelt gebruikers in staat de inhoud uit binaire velden te nemen en
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Lijnen splitsen op maximum lengte
 Dit algoritme neemt een invoer (meerdere) lijnen- (of boog-)laag en splitst elk object in meerdere delen, waarbij elk deel niet langer is dan de gespecificeerde maximale lengte.
 
@@ -366,7 +366,7 @@ Parameters QgsProcessingParameterAuthConfig worden geëvalueerd met behulp van Q
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Opties voor resamplen en indeling in het algoritme gdaladdo
 Deze mogelijkheid werd ontwikkeld door Alex Bruy
 ### Mogelijkheid: Algoritme Rastergebiedsstatistieken
@@ -374,13 +374,13 @@ This algorithm calculates statistics for a raster layer\'s values, categorized b
 
 ![image14](images/entries/014272dcac2a228f8d8cc7a1587ac9b07865bc1f.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritmes Z-waarden uitnemen en M-waarden uitnemen 
 Deze algoritmes stellen gebruikers in staat de in object-geometrieën aanwezige Z- en M-waarden te converteren naar attributen in de laag.
 
 Standaard wordt de Z/M-waarde uit het eerste punt in het object uitgenomen, maar optionele statistieken kunnen wordne berekend voor ALLE Z-/M-waarden uit de geometrie (bijv. berekenen van gemiddelde/min/max/som/etc van Z-waarden).
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Geodesische lijn gesplitst op antimeridiaan
 Dit algoritme splitst een lijn in meerdere geodesische segmenten wanneer de lijn de antimeridiaan (±180 graden longitude) kruist. Splitsen op de antimeridiaan helpt de visuele weergave van de lijnen in sommige projecties. De teruggegeven geometrie zal altijd een meerdelige geometrie zijn.
 
@@ -390,19 +390,19 @@ Als de invoergeometrie M- of Z-waarden bevat zullen die lineair worden geïnterp
 
 Modus Direct bewerken wordt ook ondersteund.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Geodesic mode for \"Join by Lines (Hub lines)\" algorithm
 Dit maakt het mogelijk optioneel geodesische lijnen te maken, die de kortste afstand tussen de punten weergeven, gebaseerd op de ellipsoïde.
 
 Wanneer de modus Geodesisch wortd gebruikt is het mogelijk de gemaakte lijnen te splitsen op de antimeridiaan (±180 graden longitude), wat het renderen van de lijnen kan verbeteren. Aanvullend kan de afstand tussen de punten worden gespecificeerd. Een kleinere afstand resulteert in een dichtere, meer nauwkeuriger lijn.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Rasteroppervlak volume
 Het SAGA rasteroppervlak volume is geporteerd naar een eigen alforitme van QGIS. De versie van SAGA van dit algoritme is van beperkt gebruik in QGIS, omdat het berekende volume alleen is ingebed in de uitvoer voor de terminal in SAGA. Dit voorkomt dat het wordt opgeslagen naar een bestand, of opnieuw gebruikt in een model als een invoer voor een latere stap in het model. Dientengevolge is het algoritme geporteerd naar een eigen QGIS C++-algoritme. Het algoritme dupliceert het algoritme voor SAGA 1:1, maar voert het volume (en gebied) uit naar ofwel een rapport in HTML, of een vectortabel. Aanvullend wordt de uitvoer geëxporteerd als numerieke uitvoer vanuit het algoritme, wat het mogelijk maakt ze opnieuw te gebruiken in modellen.
 
 ![image15](images/entries/e0a8089ec0653cf5628636354ec80ef317e68565.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Herrezen functionaliteit model naar Python-script
 De 2.x mogelijkheid voor het direct converteren van een model van Processing naar een equivalent script voor Python is nieuw leven ingeblazen en bijgewerkt voor de 3.x API van Processing.
 
@@ -410,31 +410,31 @@ De 2.x mogelijkheid voor het direct converteren van een model van Processing naa
 
 This feature was funded by [Solspec](http://solspec.io)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Verwijderen van instellingen van de tab Geavanceerd in Opties
 This change adds a new right click menu to the settings shown in the \"Advanced\" tab in the settings dialog, which allows users to remove that setting (or group of settings).
 
 ![image17](images/entries/6b012542ef9ca282ba6f9087758f85d818dd5ec9.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Browser
 ### Feature: Add \"export to file\" options for raster and vector layers within the browser
 Maakt het mogelijk deze bestanden direct te exporteren (bijv. naar een andere indeling, CRS, etc) zonder de noodzaak ze feitelijk eerst in het project te laden.
 
 ![image18](images/entries/d939594c84d7aa186fe5f18f46ed7ad0c89d8c67.png.400x300_q85_crop.webp)
 
-This feature was funded by [Nyall Dawson (North Road)](https://north-road.com)
+Dit werd mogelijk gemaakt door [Nyall Dawson (North Road)](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Eigen eigenschappen bestand/map
 You can now right click on a file or folder within the browser, and select \"File Properties\" or \"Directory Properties\" to open the native file/folder properties dialog for that entry. This allows rapid access to operating system file or folder properties, such as file permissions and sharing options.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Voorbeeld lagen en attributen
 QGIS 3.6 brings back the functionality from the old 2.18 standalone \"browser\" application to preview layers and their attributes. This functionality has been moved to the inbuilt browser panel, and is available by right-clicking on a layer and selecting \"properties\" (or by clicking the \"enable properties widget\" button in the browser toolbar).
 
@@ -442,21 +442,21 @@ QGIS 3.6 brings back the functionality from the old 2.18 standalone \"browser\" 
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: QGS/QGZ projectbestanden verkennen in de browser
 Eerdere versies van QGIS gaven QGS/QGZ projectbestanden weer in de browser, waar ze konden worden geopend als nieuw actief project.  In QGIS 3.6 werd deze functionaliteit uitgebreid en projectbestanden kunnen nu rechtstreeks verkend worden IN de browser zelf.  Projecten zijn nu uitklapbare items en door ze uit te klappen wordt de volledige projectstructuur van groepen en lagen weergegeven.  Elke laag kan dan gesleept en neergezet worden in het huidige project.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Het rechtstreeks aanmaken van Geopackage- en Shapebestanden.
 Right clicking a directory in the browser panel now shows a \"New\" menu, containing items for creating a new Geopackage, Shapefile, or subdirectory under the selected directory.
 
 ![image20](images/entries/2bc8475b95a8413285b3c88a9a070f02f43cf5b9.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Terminal openen in pad
 Een nieuwe contextmenu optie werd toegevoegd voor map items in het browser paneel om een nieuw terminal venster te openen in die map.
 
@@ -466,7 +466,7 @@ Terminal hackers verheug u!
 
 ![image21](images/entries/623ef55ae3918f72faa7ec796bbac01bf5063464.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Algemeen
 ### Feature: Improved \"missing layer\" handling on project load
 ![image22](images/entries/8e3fbce280478d8e88cab7e24b489b783c83fc13.png.400x300_q85_crop.webp)
@@ -481,7 +481,7 @@ Deze instelling is bedoeld voor gebruik in bedrijfsinstallaties waar QGIS versie
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Een aan/uit actie werd toegevoegd aan vectorlaag legende items
 ![image23](images/entries/f3b822b5591367b7d246fbdd5173763a1633b9ec.png.400x300_q85_crop.webp)
 
@@ -494,7 +494,7 @@ ArcGIS Feature Server-lagen hebben een nieuw rechtsklik-menu optie in het browse
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Binaire blob ondersteuning voor OGR provider
 In plaats van binaire velden om te zetten naar afgekorte strings, zijn deze nu op te halen als hun originele binaire inhoud.  Dit laat toe dat plugins en scripts binaire velden gebruiken, zoals hun inhoud er uit halen.
 
@@ -502,7 +502,7 @@ Aanvullend kunnen nieuwe binaire velden aangemaakt worden voor compatibele gegev
 
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Ondersteuning voor markering afbeelding en vullen afbeelding voor ArcGIS Feature Server
 Bij het laden van een laag van Feature Server met markeringen voor afbeeldingen of symbologie voor het vullen van afbeeldingen zal QGIS automatiscg de ESRI markeringen voor afbeeldingen en de symbolen voor vullen converteren en ze gebruiken als de standaard stijl voor de laag.
 
@@ -516,9 +516,9 @@ Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 ### Mogelijkheid: Ondersteuning voor geheugenlagen met Booleaanse en binaire velden
 Memory (\"Temporary scratch\") layers can now use binary and boolean (true/false) field types.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Ondersteuning voor JSON voor GeoPackage
 Ondersteuning voor JSON maakt het mogelijk gestructureerde gegevens op te slaan binnen één enkel veld in bestanden van GeoPackage.
 
@@ -592,7 +592,7 @@ De nieuwe knoppen stellen de gebruiker in staat de query in een extern bestand v
 
 ![image25](images/entries/7d8fbe3054bd3d8b311d26d9343a20041f3fb809.png.400x300_q85_crop.webp)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ## Programmeerbaarheid
 ### Mogelijkheid: Nieuwe klasse QgsExifTools
 Contains utilities for retrieving the geotag from images and for setting an image\'s geotag.
@@ -601,7 +601,7 @@ Werken met geotags (vóór deze klasse!) is super-vervelend en vergt veel werk e
 
 Met deze klasse hebben we stabiele methoden voor ophalen/instellen van geotags, die universeel beschikbaar zijn en veilig kunnen worden gebruikt door plug-ins en scripts.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Doorlopen over een delen van een QgsGeometry
 This new PyQGIS API allows easy iteration over all the parts of a geometry, regardless of the geometry\'s type. E.g.
 
@@ -625,9 +625,9 @@ For a const iteration, calling .const_parts() gives a const iterator, which cann
     for part in geometry.const_parts():
        print(part.x())
     
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeterde QgsLineString PyQGIS API
 Enkele nette aanvullingen in de API zijn gemaakt voor de QgsLineString API:
 - len(QgsCurve) geeft het aantal punten terug in een boog
@@ -636,9 +636,9 @@ Enkele nette aanvullingen in de API zijn gemaakt voor de QgsLineString API:
 - Add \[\] setter for setting specific (existing) vertices, e.g. ls\[1\] = QgsPoint(1,2)
 - Add del support for removing vertices, e.g. del ls\[1\] removes the second vertex
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen aan PyQGIS Geometry Collection API 
 De PyQGIS API voor het werken met verzamelingen van geometrieën is verbeterd:
 - Aanroepen van removeGeometry met een ongeldige index zal nu een IndexError aangeven
@@ -652,9 +652,9 @@ Aanvullend kunt u nu ook gemakkelijk door de geometrieën in de verzameling lope
     for part in gc:
       print(part.asWkt())
     
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Easier Processing algorithm creation via \@alg decorator
 Maakt het volgende mogelijk om scripts voor Processing te definiëren zonder de noodzaak van het implementeren van een aangepaste klasse:
 
@@ -694,7 +694,7 @@ Deze opnieuw uitgevoerde fabricage vereenvoudigt kaartgereedschappen en stelt u 
 
 Aanvullend daar zal het een beter beheer van de Z voor rechthoeken door 3 punten mogelijk maken. Vandaag wordt de eerste Z gebruikt, nu zullen de punten hun Z hebben en de 4e zal op de vlakte wordne geprojecteerd.
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ## 3D-objecten
 ### Mogelijkheid: Terreinschaduw
 This adds new options for user to choose how the terrain should be rendered: - shading disabled - color of terrain is determined only from map texture - shading enabled - color of terrain is determined using Phong\'s shading model, taking into account map texture, terrain normal vector, scene light(s) and terrain material\'s ambient+specular colors and shininess
@@ -711,7 +711,7 @@ Deze mogelijkheid werd ontwikkeld door Martin Dobias (Lutra Consulting)
 
 Deze mogelijkheid werd mogelijk gemaakt door de gemeenschap van QGIS
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Ondersteuning voor lagen met mazen (faces) in 3D
 Met deze mogelijkheid kunt u uw laag met mazen gebruiken in 3D-scenes,
 

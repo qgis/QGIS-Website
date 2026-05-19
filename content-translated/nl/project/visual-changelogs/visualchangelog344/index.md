@@ -64,7 +64,7 @@ Included with this change is the extension of the iface method, `iface.openMessa
 
 This feature was funded by [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Symbologie
 ### Feature: Add an option to delete unused categories in the categorized symbol renderer widget
 A new option has been added to the categorized symbol widget to allow users to bulk remove unused categories.
@@ -75,7 +75,7 @@ This is especially useful when utilizing a clipped subset of data that inherited
 
 <img src="images/entries/85eb6c595a8e44e2fd6deb1586215bc523861dfd.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Ben Wirf](https://github.com/benwirf)
+Deze mogelijkheid werd ontwikkeld door [Ben Wirf](https://github.com/benwirf)
 ## Labelen
 ### Feature: Add settings for controlling margin around labels and preventing duplicate labels
 Two new settings have been introduced for vector layer labels, namely:
@@ -86,7 +86,7 @@ This can be used to improve the appearance of labels in the rendering of complex
 
 <img src="images/entries/efc5a69fe9fa346ba7b2d6b9c3ec2b6d57b731d0.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## 3D-objecten
 ### Feature: Cross-section tool
 A new tool has been added for creating cross sections in a 3D scene. User can pick a region of interest in the 2D map canvas (by clicking three points - start point, end point and cross-section thickness), which will make 3D view filter out everything outside of the region. The camera in the 3D view also gets moved to look at the region of interest from the side.
@@ -189,14 +189,14 @@ This can be used to prevent excessive widths on auto-generated legends.
 
 Dit werd mogelijk gemaakt door North Road, met dank aan SLYR
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Expressies
 ### Feature: Add repeat function and reverse variant for strings
 New expressions include:
 - A new 'repeat' function, which repeats a string a specified number of times
 - A string variant for 'reverse' that allows the reversing of strings
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Expression functions to create CRS from string definition and to get authid from CRS
 New expression functions have been added that support the management of coordinate reference systems, namely:
 - **crs_from_text**: Creates a coordinate reference system from a string definition. The string definition can be represented using a CRS code in `auth:id` format, a WKT definition, or a PROJ string definition of the CRS.
@@ -244,7 +244,7 @@ Fields can also be excluded from the import, or new fields created that don't ex
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add optional extent, expression based filter when importing tables to database
 When a table is imported to a database via the browser, the user now has an option to filter the copied records by extent or expression.
 
@@ -252,7 +252,7 @@ When a table is imported to a database via the browser, the user now has an opti
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add stored query support to Execute SQL window
 The "Execute SQL" dialog now supports stored queries, replicating the functionality from the DB Manager in the new browser tools.
 
@@ -264,7 +264,7 @@ Queries can be stored in the current project or in the local user profile.
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Saving/Loading SQL queries from Execute SQL/Update SQL dialogs
 Support has been added to the Execute SQL dialog and Update SQL dialogs that allows users to save and load SQL queries to/from .sql text files. This replicates the functionality available in the DB Manager over to the core browser-based database connection facilities.
 
@@ -274,7 +274,7 @@ The UX has been designed to mimic the same functionality from other standard par
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Allow for extra OAuth2 token(s) to be added into headers
 OAuth2 advanced configuration options can now attach extra tokens sent by the OAuth2 token endpoint as HTTP(S) request headers. This allows for more flexible handling of OAuth configurations, such as when certain providers append OpenID tokens to their token replies.
 
@@ -282,7 +282,7 @@ This change is integrated into the credential management and is available for al
 
 <img src="images/entries/2a9dadb3cfbf35b2efea8c7cd9dd4fe49ffbc292" class="img-responsive img-rounded" />
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Convert field name Casing when importing vector layers
 The Import Vector dialog for migrating vector layers to data sources now supports the option to automatically transform all field names to lowercase or uppercase.
 
@@ -313,7 +313,7 @@ Aanvullende verbeteringen omvatten:
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Add a search box to Atrributes Form Designer
 In line with [QEP#401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md), the Drag and Drop form designer now includes a search box to filter items by name or alias, making it much easier to work with tables and datasets that include a lot of attribute fields.
 
@@ -323,7 +323,7 @@ This filter works across both the Available Widgets and the Form Layout panels.
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Analyse-gereedschappen
 ### Feature: Add input parameters to the toolbox in the modeler
 A single "Toolbox" panel has been added to the Graphical Modeler, which merges the objects from the Input and Algorithm panels into a single panel. This simplifies the UX of the Graphical Modeler, allowing users to use the search filters rather than manage separate tabs for modeler tools.
@@ -341,7 +341,7 @@ A new native tool has been provided to provide an optimized out-of-the-box tool 
 
 Note that, as this implementation is a clone of the SAGA implementation, bugs present in the source will be present in the new native tool.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add creation options UI to raster calculator
 Raster creation options are now exposed in the raster calculator UI for both the native dialog and within the Processing Algorithm dialog.
 
@@ -375,7 +375,7 @@ Finally, the algorithm offers to nodata handling behavior. By default, nodata va
 
 <img src="images/entries/8fe5df608b4c445246e6e0f4379304e062e20b88" class="img-responsive img-rounded" />
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Opties voor toepassing en projecten
 ### Feature: Add project setting for scale calculation, including new "scale at equator" method
 A new project-level setting for the scale calculation method has been added, with choices for:
@@ -398,7 +398,7 @@ Note that symbology sizes determined in map units are NOT affected by this setti
 
 The new "scale at equator "scale calculation method always calculates the scale at the equator, regardless of the actual visible map extent. It can be used to provide a consistent, static scale for maps in geographic reference systems, regardless of the latitudes actually visible in the map. Note that this method is only applicable when calculating scales with a degree-based reference system.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add multiple country codes filter to Nominatim Geocoder Locator
 A new optional configuration value for the Nominatim Geocoder Locator allows filtering results to one or more countries by providing a comma-separated string of the [Two-letter country codes](https://wiki.openstreetmap.org/wiki/Nominatim/Country_Codes) a user would like to restrict their results to.
 
@@ -426,7 +426,7 @@ This adds a new top-level action to open the query history window.
 
 This feature was funded by QGIS grant program 2025
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Improved project management for PostgreSQL stored Projects
 QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
 - Project hernoemen
@@ -462,7 +462,7 @@ Note that this feature does not currently support Oracle databases, due to legac
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Move table to another schema for PostgreSQL Provider
 PostgreSQL Tables can now be moved to another schema directly in the QGIS Browser.
 
@@ -494,7 +494,7 @@ This can be used to limit the database work required to populate tables for a co
 
 This feature was funded by Regiodata
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add option to use POST requests for WFS connections
 By default, connecting to a WFS server will be done using GET requests; however, users will now be able to switch specific WFS connections to utilize the POST HTTP method, allowing more flexibility in web service configurations.
 
@@ -502,13 +502,13 @@ By default, connecting to a WFS server will be done using GET requests; however,
 
 This feature was funded by Dorset Council
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Allow SQL queries as layer sources from SQL Server
 QGIS now allows loading SQL Server queries as map layers from the browser and updating the SQL for existing query layers.
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## QGIS Server
 ### Feature: Allow configuring the server project cache size
 A new `QGIS_SERVER_PROJECT_CACHE_SIZE` environment variable has been added, which allows the configuration of the QCache cost, which was previously a hardcoded value.
@@ -541,7 +541,7 @@ This also exposes additional functionalities, such as setting the GPS track line
 
 This feature was funded by [the Danish Nature Agency, Naturstyrelsen](https://naturstyrelsen.dk/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Even Rouault (Spatialys)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |

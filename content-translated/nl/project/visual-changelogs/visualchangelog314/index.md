@@ -14,13 +14,13 @@ type: visual-changelog
 
 Datum uitgave 19-06-2020
 
-Another awesome release in the trail of great QGIS releases we have made across 18 years of development. This release is so jam-packed with new features and improvements big and small, it is hard to know where to start. Some of the marquee features include vector tile support, huge advances in mdal / mesh support, native support for temporal data in WMS-T, PG Raster, vector providers, and mesh layers. Users focussed on cartography and digitising haven\'t been left out either, with many new options for you!
+De volgende uitgave in het spoor van fantastische uitgaven van QGIS die we de afgelopen 18 jaar hebben ontwikkeld. Deze uitgave zit zo boordevol nieuwe mogelijkheden en verbeteringen, groot en klein dat het moeilijk is waar te beginnen. Enkele van de kenmerkende mogelijkheden omvatten ondersteuning voor vectortegels, grote voordelen in ondersteuning voor MDAL mdal / mazen, eigen ondersteuning voor tijdbeheer in WMS-T, PG Raster, vectorproviders, en lagen met mazen. Gebruikers die zich richten op cartografie en digitaliseren zijn ook niet vergeten, met heel veel nieuwe opties voor u!
 
 **Dankwoord**
 
-We would like to thank the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+We willen onze dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en alle andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen). Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn bij het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://www.qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende leden](https://www.qgis.org/nl/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
 
 {{<fund type="active" >}}
 
@@ -29,25 +29,25 @@ QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor he
 {{<table-of-contents >}}
 ## Algemeen
 ### Mogelijkheid: Nieuwe instellingen voor lettertypen voor annotaties van Decoratie
-Annotations for the map canvas\' grid decoration are now fully customizable including font color, buffer, etc.
+Annotaties voor het decoreren van het raster van het kaartvenster zijn nu volledig aan te passen, inclusief kleur van het lettertype, buffer, etc.
 
 ![image8](images/entries/14b7cf800ef293ac3ea3f00d12a30022876e713c.webp)
 
 Dit werd mogelijk gemaakt door iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## Tijdbeheer
 ### Mogelijkheid: Instellen van cumulatieve tijdsperiode in Tijdbeheer
 Voegt een instelling toe aan Tijdbeheer om de tijdsperiode voor de animatie cumulatief in te stellen. Dit betekent dat alle frames voor de animatie dezelfde datum-tijd voor het begin hebben, maar verschillende datums en tijden voor het einde.
 
-This is useful is you wish to accumulate data in your temporal visualisation instead of showing a \'moving time window\' across your data.
+Dit is nuttig voor u als u accumulerende gegevens in uw visualisatie in Tijdbeheer wilt, in plaats van een \'verplaatsend tijdvenster\' weer te geven over uw gegevens.
 
 ![image2](images/entries/90da13821bfde46aa6d9d951fb9a31bf27d85656.gif)
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Dit werd mogelijk gemaakt door [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
-### Feature: Add a new \"Redraw Layer Only\" mode for temporal vector layers
+Deze mogelijkheid werd ontwikkeld door [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+### Mogelijkheid: Nieuwe modus \"Alleen laag opnieuw tekenen\" toegevoegd voor vectorlagen van Tijdbeheer
 Indien ingesteld voor deze modus, zal de laag automatisch opnieuw worden getekend wanneer de tijdsperiode van Tijdbeheer wordt gewijzigd, maar er zal geen op tijd gebaseerd filteren worden toegepast op de objecten.
 
 Deze configuratie is nuttig als de laag instellingen voor Symbologie heeft die variëren gebaseerd op de tijdsperiode. Wanneer het bijvoorbeeld tijdsafhankelijke expressies voor de renderer Regel-gebaseerd gebruikt of data-bepaalde expressies voor Symbologie.
@@ -56,14 +56,14 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/use
 ### Mogelijkheid: Ondersteuning voor basisafhandeling van Tijdbeheer voor vectorlagen toegevoegd
 Dit laat enkele basismogelijkheden voor het eigen Tijdbeheer voor vectorlagen zien:
 - Statisch tijdbereik voor de laag (om overeen te komen met mogelijkheden voor rasterlagen), dit stelt één enkele statische tijdsperiode in die van toepassing is voor de gehele laag. Alle objecten van de laag zullen worden weergegeven als de tijd van het kaartvenster de tijdsperiode van de laag overlapt
-- \"Single field with DateTime\": Allows selection of a single Date or DateTime field from the layer. Features will be shown whenever this field value is within the canvas time range
-- \"Separate Fields for Start and End Date/Time\": Allows selection of start and end Date/DateTime fields from the layer. Features will be shown whenever the time interval calculated from these fields overlaps the canvas time range
+- \"Enkel veld met DateTime\": Maakt selecteren van één enkel veld Date of DateTime uit de laag mogelijk. Objecten zullen worden weergegeven als de waarde van dit veld binnen de tijdsperiode van het kaartvenster ligt
+- \"Afzonderlijke velden voor begin- en einddatum/-tijd\": Maakt het mogelijk velden voor begin- en einddatum/-tijd te selecteren uit de laag. Objecten zullen worden weergegeven als het berekende tijdsinterval uit deze velden de tijdsperiode van het kaartvenster overlapt
 
-We should consider extending this in future, e.g. to add modes like \"start time + fixed duration\", \"start time + duration from field\", \"start and end time via expressions\", etc.
+We zouden moeten overwegen dit in de toekomst uit te breiden, bijv. om modi toe te voegen voor \"begintijd + vaste duur\", \"begintijd + duur vanuit veld\", \"begin- en eindtijd via expressies\", etc.
 
 Enkele bekend beperkingen/inefficiënties:
 - Momenteel kunnen alleen velden Date/DateTime worden gebruikt. Dit is gedaan om de afhandeling van de indeling te vereenvoudigen en de noodzaak om rekening te houden met velden met tekenreeksen met andere indelingen voor DateTime te vermijden. In de toekomst zouden we het selecteren van velden met tekenreeksen mogelijk moeten maken, en gebruikers toestaan om een aangepaste tekenreeks voor de indeling DateTime in te voeren
-- Unlike the Time Manager plugin approach, the approach taken here is to rely completely on QGIS expressions and feature requests to do the filtering (Time Manager uses layer filter strings and attempts to set a native SQL filter syntax so that filtering is done on the backend). This is intentional because it provides a unified filter approach regardless of the provider used (i.e. we don\'t need to worry about the different SQL syntaxes used natively by the different providers). The beauty of feature request expression compilation **should** mean that the QGIS expressions are magically turned into native backend queries, BUUUUUUUUUUUT\... because we lack QGIS expression support for DateTime literals, we currently rely on the \"to_datetime\" expression function and coerce everything through strings. None of the expression compilers handle this function, so currently \*all\* filtering is done on the QGIS side. We need to add functions for optimised DateTime literal creation and then ensure that the different compilers correctly map these literals across to the backend filter syntax to allow all the filtering work to be done on the database side\...
+- Anders dan de benadering met de plug-in Time Manager, berust de hier geboden benadering volledig op expressies van QGIS en verzoeken voor objecten om het filteren uit te voeren (Time Manager gebruikt tekenreeksen voor filteren van lagen en probeert een eigen syntaxis voor het SQL-filter in te stellen, zodat het filteren op de achtergrond wordt uitgevoerd). Dit is met opzet, omdat het een universele benadering voor filteren verschaft, ongeacht de gebruikte provider (d.i. we hoeven geen rekening te houden met de verschillende syntaxis voor SQL, die door de verschillende providers zelf wordt gebruikt). Het mooie van het compileren van expressies voor verzoeken voor objecten **zou** betekenen dat de expressies van QGIS magisch worden omgezet naar eigen query's op de achtergrond. MAAAAAAAAAAAR\… omdat ondersteuning voor expressies van QGIS voor letterlijke DateTime ontbreekt, kunnen we momenteel alleen vertrouwen op de functie voor de expressie "to_datetime" en alles door middel van tekenreeksen af te dwingen. Geen van de compilers voor expressies handelt deze functie af, dus momenteel wordt \*alle\* filteren uitgevoerd aan de zijde van QGIS. We dienen functies toe te voegen voor het geoptimaliseerd maken van letterlijke DateTime. En er dan voor zorgen dat de verschillende compilers deze letterlijken correct omzetten naar de syntaxis voor het filteren op de achtergrond, om het mogelijk te maken dat al het werk voor het filteren wordt uitgevoerd aan de zijde van de database\…
 
 Dis is, momenteel, de uitvoering veel slechter met grote lagen, vergeleken met Time Manager (en de weergegeven set met objecten is kleiner, bijv. geen afhandeling voor interpolatie), maar het voordeel is dat we het eigen framewerk voor Tijdbeheer kunnen gebruiken en geanimeerde vectorlagen kunnen maken, naast lagen met mazen en rasterlagen!
 
@@ -77,21 +77,21 @@ Integratie van mogelijkheden voor Tijdbeheer voor rasters in PostgreSQL toegevoe
 
 Dit werd mogelijk gemaakt door ARPA Piemonte
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Mogelijkheid: QGIS Projectinstellingen voor Tijdbeheer
 Deze mogelijkheid voegt functionaliteit voor tijdsinstellingen voor het project toe.
 
-You will be able to set the project temporal range either by using manual input or by calculating it from the current project\'s temporal layers. The latter can be done by clicking the provided \"Calculate from Layers\" button.
+U zult in staat zijn de tijdsperiode voor Tijdbeheer in te stellen, hetzij met handmatige invoer, hetzij door deze uit de huidige projectlagen voor Tijdbeheer te berekenen. Het laatste kan worden uitgevoerd door te klikken op de verschafte knop \"Uit lagen berekenen\".
 
 Deze implementatie stelt het podium in voor het toevoegen van geanimeerde objecten voor lagen van Tijdbeheer in QGIS.
 
 Hier is een voorbeeld voor het instellen van een tijdsperiode in een project. ![image5](images/entries/74980472-93f2ed00-5441-11ea-8765-f35d1f69b144.gif)
 
-Prior discussions about QGIS temporal support can be found [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/161) and [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/128).
+Eerdere discussies over ondersteuning voor Tijdbeheer in QGIS zijn [hier](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/161) en [hier](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/128) te vinden.
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Dit werd mogelijk gemaakt door [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+Deze mogelijkheid werd ontwikkeld door [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
 ### Mogelijkheid: Ondersteuning voor beperkingen van Tijdbeheer in lagen van WMS-T
 Deze mogelijkheid maakt het mogelijk om lagen WMS voor Tijdbeheer (WMS-T) binnen QGIS te beperken. U zult in staat zijn hede periode DateTime te beperken voor elke laag voor Tijdbeheer van providers van WMS-T.
 
@@ -103,62 +103,62 @@ Hieronder staat een voorbeeld van de werkstroom. ![image6](images/entries/746384
 
 ![image7](images/entries/b86eea9111e33e6aea345b0e0759de48eaceade9.gif)
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Dit werd mogelijk gemaakt door [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+Deze mogelijkheid werd ontwikkeld door [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
 ### Mogelijkheid: API Tijdbeheer 
 Deze mogelijkheid verschaft een implementatie van de API voor ondersteuning van Tijdbeheer in QGIS.
 
-You can find the API for Python by searching for \'Temporal\' in the python docs ([link](https://qgis.org/pyqgis/master/search.html?q=Temporal&check_keywords=yes&area=default)).
+U kunt de API voor Python vinden door te zoeken naar \'Temporal\' in de documentatie voor Python ([link](https://qgis.org/pyqgis/master/search.html?q=Temporal&check_keywords=yes&area=default)).
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Dit werd mogelijk gemaakt door [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
+Deze mogelijkheid werd ontwikkeld door [Kartoza / Samweli Mwakisambwe](https://kartoza.com)
 ## Kaartgereedschap
 ### Mogelijkheid: Ondersteuning voor Gereedschap Identificeren in QGIS voor lagen met vectortegels.
 Het gereedschap Identificeren is nu in staat attributen van objecten in vectortegels te inspecteren.
 
 ![image9](images/entries/79157425-d3501100-7dd4-11ea-8395-5c8ff1dce449.webp)
 
-This feature was funded by [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
+Dit werd mogelijk gemaakt door [Vele giften](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Geef een menu weer naast de knoppen van de widget Schaal, om direct instellen van de widget op een schaal, vanuit een kaart van afdruklay-out, mogelijk te maken
 Een screencast zegt meer dan duizend woorden:
 
 ![image10](images/entries/78198825-34bada80-74cd-11ea-803a-90afea085b38.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Add tool button to \"Deselect Features from the Current Active layer\"
+### Mogelijkheid: Knop \"Objecten deselecteren van huidige actieve laag\" aan gereedschap toegevoegd
 ![image11](images/entries/76692569-26616780-6661-11ea-9071-fd4c712860db.gif)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+Deze mogelijkheid werd ontwikkeld door [Ivan Ivanov](https://api.github.com/users/suricactus)
 ## Gebruikersinterface
 ### Mogelijkheid: Slepen en neerzetten van een laag in verscheidene instanties van QGIS toestaan
 ![image12](images/entries/77666018-b5834f00-6f80-11ea-971e-c6d7d996d37d.gif)
 
-This feature was funded by [QGIS Swiss user group](https://www.qgis.ch)
+Dit werd mogelijk gemaakt door [QGIS Zwitserse gebruikersgroep](https://www.qgis.ch)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Attributentabellen als tabs openen 
-If the option \"Open new attribute tables as dock windows\" is active, new attribute tables will be opened as tabs on top of existing attribute tables.
+Als de optie \"Nieuwe attributentabellen als vastgezette vensters openen\" actief is, zullen nieuwe attributentabellen worden geopend als tabs, bovenop bestaande attributentabellen.
 
 ![image13](images/entries/80049561-d8017d00-84d8-11ea-826e-d7092ac7a5c6.gif)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Symbologie
 ### Mogelijkheid: Renderer voor contouren voor rasterlagen 
 Deze nieuwe renderer tekent contourlijnen die direct worden berekend uit de bron-rastwerband. Het is mogelijk de interval voor de contourlijnen en het te gebruiken symbool voor het tekenen in te stellen.
 
-In addition there is support for \"index contours\" - contour lines with higher intervals, typically drawn with a wider line symbol.
+In aanvulling daarop is er ondersteuning voor \"index contouren\" - contourlijnen met hogere intervallen worden gewoonlijk getekend met een breder lijnsymbool.
 
-If we generate contour lines on input raster blocks with the same size as our output raster block, the generated lines would contain too much detail. This detail can be reduced by the \"downscale\" factor - this will request lower resolution of the source raster.
+Als we contourlijnen op rasterblokken voor de invoer maken met dezelfde grootte als onze rasterblokken voor de uitvoer, zullen de gemaakte lijnen te veel details bevatten. Deze details kunnen worden verminderd door de factor \"Invoer verlagen\" - dit zal een lagere resolutie van het bronraster vragen.
 
 ![image14](images/entries/77861880-17111b00-7218-11ea-95ba-410c97830b93.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://api.github.com/users/wonder-sk)
 ### Mogelijkheid: Eenheid percentage voor grootte symbologie markering rasterafbeelding en vulling raster toegevoegd.
-According to the [Feature Request](https://github.com/qgis/QGIS/issues/30057) this patch adds a new percentage (of original image size) value for size units of **Raster Image Marker** and **Raster fill** (by [nirvn](https://github.com/qgis/QGIS/pull/34869#issuecomment-595090465) suggestion) layers.
+Overeenkomstig het [Feature Request](https://github.com/qgis/QGIS/issues/30057) voegt deze patch een nieuwe waarde in percentage (van de originele afbeeldingsgrootte) voor eenheden van de grootte voor lagen **Markering rasterafbeelding** en **Vulling raster** (suggestie van [nirvn](https://github.com/qgis/QGIS/pull/34869#issuecomment-595090465) ).
 
 Een laag bevat bijvoorbeeld rasterafbeeldingen van verscheidene grootten en verhoudingen:
 
@@ -174,17 +174,17 @@ of zoals dit (met een normale giraffe, maar hele kleine krokodil):
 
 De nieuwe waarde **percentage** van de eenheid voor grootte is bedoeld om dit probleem op te lossen.
 
-Both unit tests \"qgis_rasterfilltest\" and \"qgis_rastermarkertest\" were rewritten with a set of new control images for testing the proposed **percentage** value of size units.
+Beide eenheidstesten \"qgis_rasterfilltest\" en \"qgis_rastermarkertest\" werden herschreven met een set van nieuwe controleafbeeldingen voor het testen van de voorgestelde waarden **percentage** van eenheden voor grootte.
 
-This feature was developed by [beketata](https://api.github.com/users/beketata)
+Deze mogelijkheid werd ontwikkeld door [beketata](https://api.github.com/users/beketata)
 ### Mogelijkheid: Data-bepaalde eigenschap voor familie/stijl lettertype voor markering lettertype toegevoegd
-Data-defined properties were added for the font markers\' font family and the brand new font style properties. This can come in handy for a number of scenarios, including multilingual context where a data-defined property can avoid duplicating datasets.
+Data-bepaalde eigenschappen werden toegepast voor de familie van het lettertype voor markeringen van lettertypen en de nagelnieuwe eigenschappen voor de stijl van het lettertype. Dit kan handig zijn voor een aantal scenario's, inclusief meertalige context waar een data-bepaalde eigenschap het dupliceren van gegevenssets kan voorkomen.
 
 ![image19](images/entries/1ded1a8bbec9eeebafad96b7616e963847961e14.webp)
 
 Dit werd mogelijk gemaakt door iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Mogelijkheid: Nieuwe instelling voor stijl van lettertype voor markeringen van lettertype
 Met deze nagelnieuwe instelling, die eerder niet beschikbaar was, kunnen gebruikers en niet-standaard stijl van families van lettertypen selecteren.
 
@@ -192,12 +192,12 @@ Met deze nagelnieuwe instelling, die eerder niet beschikbaar was, kunnen gebruik
 
 Dit werd mogelijk gemaakt door iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## Labelen
 ### Mogelijkheid: Kleuren voor HTML in labels respecteren 
 Indien ingeschakeld zal deze optie de inhoud van labels als HTML behandelen, en  KLEURGERELATEERDE opties voor opmaak van HTML voor de VOORGROND zullen in het gerenderde label worden gerespecteerd.
 
-Note: ONLY HTML COLOR TAGS ARE RESPECTED. This is NOT a bug, rather this feature has been designed as a \"test of the waters\" with HTML formatting in labels, and accordingly only formatting options which do not alter the font shape were considered.
+Opmerking: ALLEEN TAGS VOOR KLEUR IN HTML WORDEN GERESPECTEERD. Dit is GEEN bug, deze mogelijkheid is meer ontworpen als een \"test van het water\" met opmaak in HTML in labels, en overeenkomstig komen alleen opties voor de opmaak die niet de vorm van het lettertype wijzigen in aanmerking.
 
 Aan de pluskant werkt het correct met ALLE andere instellingen voor labels, inclusief schaduwen, buffers, gebogen labels, etc!
 
@@ -207,7 +207,7 @@ Nu enkele leuke plaatjes:
 
 ![image22](images/entries/81377294-88fa4f80-9148-11ea-9036-2a597b064bbc.webp)
 
-This feature was funded by [geoProRegio AG](http://www.geoproregio.ch)
+Dit werd mogelijk gemaakt door [geoProRegio AG](http://www.geoproregio.ch)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Automatisch plaatsen van labels buiten polygonen
@@ -217,25 +217,25 @@ Dit wordt op een aantal manieren weergegeven:
 1. Een nieuwe modus voor plaatsing die polygoonlabels voor de laag altijd buiten de objecten plaatst: ![image23](images/entries/80680381-faf7e680-8b01-11ea-8612-b0f543bfd943.webp) ![image24](images/entries/80680391-00553100-8b02-11ea-8e56-21b57964f765.webp)
 2. Bij het gebruiken van andere modi voor het plaatsen van polygonen, kan een nieuw keuzevak \"Plaatsen labels buiten polygonen toestaan\" worden geselecteerd om toe te staan dat labels buiten worden geplaatst, als het niet mogelijk is ze binnen de polygoon te plaatsen: ![image25](images/entries/80680478-30043900-8b02-11ea-8bd5-3325fc0a5021.webp) ![image26](images/entries/80680488-37c3dd80-8b02-11ea-98bb-e0882e6ab9ab.webp)
 
-The \"allow placing labels outside\" checkbox can be data defined, allowing users to either allow outside labels, prevent outside labels, or force outside labels on a feature-by-feature basis.
+Het keuzevak \"Plaatsen labels buiten polygonen toestaan\" mag data-bepaald zijn, wat het gebruikers in staat stelt om ofwel labels buiten toe te staan, labels buiten te voorkomen, of labels buiten te forceren, op een object-voor-objectbasis.
 
-The placement algorithm is based on a modification of Rylov & Reimer (2016) \"*A practical algorithm for the external annotation of area features*\". While Rylov & Reimer propose a horizontal sweep-line based approach for selection of candidate label points, in practice I found that this delivered inferior results (and was slower) then just traversing the exterior ring of the polygon and generating candidate point at regular intervals (especially for narrow, nearly horizontal polygons).
+Het algoritme voor plaatsing is gebaseerd op een modificatie van Rylov & Reimer (2016) \"*A practical algorithm for the external annotation of area features*\". Rylov & Reimer stellen een op een horizontale veeglijn gebaseerde benadering voor het selecteren van kandidaat labelpunten voor. Ik vond in de praktijk dat dit inferieure resultaten opleverde (en trager was) dan gewoon door de buitenste ring van de polygoon te gaan en kandidaat-punten te maken op regelmatige intervallen (speciaal voor nauwe, bijna horizontale polygonen).
 
-As shown in the islands screenshot above, the outside placement mode works as expected with the \"Follow label placement\" multiline alignment mode.
+Zoals weergegeven in de schermafdruk met eilanden hierboven, werkt de modus voor plaatsen buiten zoals verwacht met de meerregelige modus voor uitlijnen \"Plaatsing van labels volgen\".
 
-This feature was funded by [Swiss QGIS user group](https://www.qgis.ch/)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Laag met vectortegels - deel 4 (labelen)
 Doorgegaan met het werken aan de implementatie va lagen met vectortegels.
 
-This adds labeling support for vector tile layers. So far this is just working on qgis_core\... GUI support will come next. Labeling uses the same concepts as the rendering of vector tiles: we have a list of labeling styles, each one is defined by sub-layer name, geometry type, filter expression, zoom range and of course label style configuration (QgsPalLayerSettings).
+Dit voegt ondersteuning voor labelen voor lagen met vectortegels toe. Tot op heden werkt het alleen in qgis_core\… Ondersteuning voor GUI zal het volgende zijn. Labelen gebruikt dezelfde concepten als het renderen van vectortegels: we hebben een lijst met stijlen voor labelen, elke gedefinieerd door zijn naam voor de sublaag, type geometrie, filterexpressie, zoombereik, en natuurlijk de configuratie voor de stijl van het label (QgsPalLayerSettings).
 
-Note there is a \"chicken-and-egg problem\" with labeling: For vector tiles, we create QgsFields for a sub-layer based on fields that renderer and labeling request, but with labeling it was impossible to get required fields if they were not already available in the expression context (hence some small additions to QgsProperty, QgsPropertyCollection, QgsPalLayerSettings to be able to get required field names by not preparing internal expressions at the same time).
+Onthoud dat er een \"kip-en-het-ei probleem\" is met labelen: Voor vectortegels maken we QgsFields voor een sublaag, gebaseerd op velden die de renderer en labelen aanvragen. Maar met labelen was het onmogelijk om de aangevraagde velden op te halen als zij nog niet beschikbaar waren in de context van de expressie (ondanks enkele kleine aanvullingen aan QgsProperty, QgsPropertyCollection, QgsPalLayerSettings om in staat te zijn aangevraagde veldnamen op te halen door niet tegelijkertijd interne expressies voor te bereiden).
 
 ![image27](images/entries/78723460-bf676380-792b-11ea-9cab-a6732e20033a.webp)
 
-An example how to set the above labeling in Python console:
+Een voorbeeld hoe bovenstaand labelen in te stellen in de console van Python:
 
     s = QgsVectorTileBasicLabelingStyle()
     s.setLayerName("place")
@@ -249,9 +249,9 @@ An example how to set the above labeling in Python console:
     labeling.setStyles([s])
     iface.activeLayer().setLabeling(labeling)
     
-This feature was funded by [Many funders](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
+Dit werd mogelijk gemaakt door [Vele giften](https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Beheer over ankerpunt voor tekstballon op label toegevoegd
 Dit geeft gebruikers beheer over waar een tekstballon met de tekst van een label zou moeten worden samengevoegd (eerder had u alleen beheer over waar de tekstballon zou worden samengevoegd met de overeenkomende geometrie van het object).
 
@@ -268,7 +268,7 @@ Eerder resultaat (modus Dichtsbijzijnde punt):
 
 ![image28](images/entries/76173692-5a660400-61ed-11ea-87dd-74a4db5cf0ce.webp)
 
-With new \"centroid\" placement:
+Met nieuwe plaatsing \"zwaartepunt\":
 
 ![image29](images/entries/76173706-6d78d400-61ed-11ea-89c1-ce4e2477dfef.webp)
 
@@ -285,17 +285,17 @@ Alleen de geselecteerde groep van de gegevensset zal worden weergegeven in de wi
 
 ![image30](images/entries/81516813-3a46e400-9307-11ea-9621-a27d5a8c86f2.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Dit werd mogelijk gemaakt door [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Scalaire instellingen voor kleuren, afhankelijk van classificatie
 Met deze mogelijkheid leest MDAL geclassificeerde scalaire waarden in de gegevensset. Wanneer waarden zijn geclassificeerd, worden standaard scalaire instellingen voor renderen ingesteld voor het contrast van het kleurverloop en worden labels ingesteld overeenkomstig de geclassificeerde waarden.
 
 ![image31](images/entries/81480226-42fbc500-91f6-11ea-91fd-3d430693d551.webp)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Dit werd mogelijk gemaakt door [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Snappen aan elementen van mazen
 Voegt een methode toe aan de API om aan elementen van mazen te snappen.
 
@@ -308,9 +308,9 @@ De teruggegeven positie is in kaartcoördinaten.
 
 ![image32](images/entries/f11b278c71fecee8445ff29077bfddef543b564d.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Dit werd mogelijk gemaakt door [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: 1D variëren van breedte/kleur van mazen
 Deze mogelijkheid verschaft een nieuwe manier om 1D-mazen te renderen met dikten van randen die kunnen variëren met hun waarden. Dus nu kunnen breedte en kleur variëren, afhankelijk van de waarde op de randen of op punten.
 
@@ -322,9 +322,9 @@ Voor dit nieuwe renderen worden nieuwe algemene klassen geïntroduceerd, die bui
 
 ![image33](images/entries/80013358-bb475400-849c-11ea-95c8-71b04382a927.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Dit werd mogelijk gemaakt door [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Ondersteuning voor meerdere lagen met mazen (vanaf MDAL 0.5.91)
 In aanvulling op het bijwerken naar MDAL 0.5.91, staat deze mogelijkheid toe dat meerdere lagen met mazen worden geladen uit één bestand.
 
@@ -332,9 +332,9 @@ Het bestand wordt geparset en een dialoogvenster voor een sub-laag, dat dezelfde
 
 ![image34](images/entries/78789841-b1413380-797b-11ea-9c7b-f31cb9756809.gif)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Dit werd mogelijk gemaakt door [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Laag met mazen verbinden met QGIS framewerk Tijdbeheer
 ![image35](images/entries/77872855-31e29000-7216-11ea-80fb-82e351dbb4a2.gif)
 #### Afhandelen van tijd in een laag met mazen
@@ -364,15 +364,15 @@ De standaard referentietijd van de laag wordt ingesteld door (gesorteerd op prio
 
 De gebruiker kan het wijzigen als hij dat wil.
 #### Principe voor renderen 
-The 2D and 3D renderers access the active dataset index from the layer with the time range stored in the `QgsContextRenderer` and in the `Qgs3DMapSettings` : Relative time is calculated as the difference between the time range of `QgsContextRenderer` and the reference time stored by `QgsMeshTemporalProperties`. The dataset index comes from the `QgsMeshDataproviderTemporalCapabilities` that maps the relative time with dataset index.
+De renderers 2D en 3D hebben toegang tot de index van de actieve gegevensset vanuit de laag waarvan de tijdperiode is opgeslagen in de `QgsContextRenderer` en in de `Qgs3DMapSettings` : Relatieve tijd wordt berekend als het verschil tussen de tijdperiode van `QgsContextRenderer` en de referentietijd die is opgeslagen door `QgsMeshTemporalProperties`. De index voor de gegevensset komt uit de `QgsMeshDataproviderTemporalCapabilities`, die de relatieve tijd in kaart brengt met de index van de gegevensset.
 
 De gegevens worden vanuit de provider gebracht met de index van de gegevensset.
 #### Statische gegevensset
 Er is ook de optie om een statische gegevensset in te stellen, dat is: om een gegevensset te kiezen die onafhankelijk zal worden gerenderd van QGIS Tijdbeheer. De gebruiker kan, om dat te doen, het keuzevak selecteren aan de onderzijde van de pagina voor Tijdbeheer van de widget Eigenschappen: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.webp). Voor nu, omdat het eenvoudiger was om te implementeren en het mogelijk te maken de gegevens direct te kiezen, kan de gebruiker onafhankelijk kiezen tussen een scalaire gegevensset en een vectorgegevensset uit combinatievakken waarin de tijd voor elke gegevensset is geassocieerd (relatieve tijd voor gegevens zonder referentietijd). Indien vereist, zou een unieke tijd kunnen worden geïmplementeerd, maar dat zou kunnen leiden tot inconsistente resultaten met niet-synchrone gegevenssets. De instellingen voor de statische gegevensset staan op de pagina Tijdbeheer, maar kunnen eenvoudig worden ingevoerd in de pagina Bron, indien gewenst.
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Resamplen vanuit waarden voor punten naar waarden voor zijden
 Resamplen is beschikbaar voor gegevenssets die zijn gedefinieerd op zijden, bijv. de waarden voor punten wordt berekend uit waarden op zijden.
 
@@ -380,7 +380,7 @@ Deze mogelijkheid implementeert resamplen vanuit waarden voor punten naar waarde
 
 De standaardmethode is ingesteld op \"geen\" voor resamplen vanuit punten naar zijden en op \"neighbor average\" voor resamplen van zijden naar punten. Dan wordt het standaard renderen altijd glad. ![image38](images/entries/77320848-acc41c00-6ce7-11ea-85af-2bff553ecbb5.gif)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Vector gegevensset met mazen kleuren met contrast voor kleurverloop
 Deze mogelijkheid stelt de gebruiker in staat de vector gegevensset met mazen (pijl, stroomlijnen, sporen) te kleuren met contrast van het kleurverloop, afhankelijk van de grootte van de vector.
 
@@ -390,21 +390,21 @@ Deze mogelijkheid stelt de gebruiker in staat de vector gegevensset met mazen (p
 
 ![image41](images/entries/77156736-5bf9bc80-6a76-11ea-827b-bb55ce52b814.webp)
 
-This feature was funded by [Deltares](https://www.deltares.nl/en/)
+Dit werd mogelijk gemaakt door [Deltares](https://www.deltares.nl/en/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Stijl opslaan voor laag met mazen
 Deze mogelijkheid voegt de optie toe om de stijl voor een laag met mazen op te slaan in een bestand QML, zoals die worden gebruikt voor vector- en rasterlagen.
 
 Deze mogelijkheid past ook de stijl voor het menu Eigenschappen van raster- en vectorlagen aan.  ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.webp)
 
-This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
+Dit werd mogelijk gemaakt door [Artelia Group](https://www.arteliagroup.com/en)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Renderer 1D-mazen 
-Update to [MDAL 0.5.90](https://github.com/lutraconsulting/MDAL/releases/tag/0.5.90)
+Bijgewerkt naar [MDAL 0.5.90](https://github.com/lutraconsulting/MDAL/releases/tag/0.5.90)
 
-Initial implementation of [Support of 1D elements in Mesh Layers](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/164)
+Initiële implementatie van [Support of 1D elements in Mesh Layers](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/164)
 
 1D-mazen bestaan uit punten en randen. Een rand verbindt twee punten en kan eraan toegewezen gegevens hebben (scalaire of vectors). Het netwerk voor 1D-mazen kan, bijvoorbeeld, worden gebruikt voor het modelleren van een stedelijk drainagesysteem.
 
@@ -422,7 +422,7 @@ Onthoud dat niet alle functionaliteiten, beschikbaar voor 2D-mazen, beschikbaar 
 Sommige functies zijn niet nodig voor 1D-mazen, speciaal
 - Exporteren van contouren van mazen
 
-This feature was developed by [Peter Petrik](https://api.github.com/users/PeterPetrik)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik](https://api.github.com/users/PeterPetrik)
 ### Mogelijkheid: Mazen vereenvoudigen
 Omdat een laag met mazen miljoenen driehoeken zou kunnen hebben, zou renderen heel traag kunnen zijn, speciaal als alle driehoeken worden weergegeven in de weergave, zelfs als driehoeken te klein zijn om te worden gezien.
 
@@ -440,9 +440,9 @@ Demo GIF voor: ![image47](images/entries/74751034-0cd82600-5243-11ea-8a02-de78a3
 
 Na: ![image48](images/entries/74751042-12357080-5243-11ea-80cb-2a3217d03a78.gif)
 
-This feature was funded by [BMT](https://www.bmt.org/)
+Dit werd mogelijk gemaakt door [BMT](https://www.bmt.org/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ## 3D-objecten
 ### Mogelijkheid: Pijlen voor renderen van 3D gegevensset voor laag met mazen
 Deze mogelijkheid voegt een optie toe voor het weergeven van pijlen op een 3D-entiteit gegevensset voor een laag met mazen, afhankelijk van een vector gegevensset.
@@ -455,7 +455,7 @@ In instellingen voor 3D kan de gebruiker de afstand voor de pijlen definiëren e
 
 Deze instelling voor afstand definieert ook de maximale grootte van de pijlen, omdat pijlen niet mogen overlappen. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ## Afdruklay-outs
 ### Mogelijkheid: Instellingen Tijdbeheer voor lay-out kaartitems
 Deze mogelijkheid voegt een in te klappen gedeelte toe aan de widget voor lay-out kaartitems, dat gebruikers in staat stelt een tijdperiode in te schakelen en in te stellen die moet worden gebruikt bij het renderen van de inhoud van de kaart.
@@ -466,18 +466,18 @@ De waarden DateTime voor begin en eind mogen data-bepaald zijn, wat handig kan z
 
 Dit werd mogelijk gemaakt door iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Mogelijkheid: Sorteren van de attributentabel op een veld, dat niet in de tabel vermeld is, toestaan
 In plaats van hetzelfde gegevensmodel te gebruiken voor de weergegeven en gesorteerde kolommen, worden nu twee gegevensmodellen gebruikt. Zij gebruiken dezelfde API / basisklasse, omdat zij heel erg op elkaar lijken.
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/users/3nids)
 ### Mogelijkheid: Beheer weergeven over het gedrag bij het splitsen van de legenda van de laag op een laag-per-laag basis
-This allows users to manually override the legend\'s default setting for \"split layers\" on a layer-by-layer basis, by double clicking a layer in the layout legend panel and choosing whether that layer:
+Dit staat gebruikers toe om handmatig de standaardinstelling voor \"lagen splitsen\" voor de legenda te overschrijven op een laag-per-laag basis, door dubbel te klikken op een laag in het paneel voor de legenda van de lay-out en te kiezen of die laag:
 - de standaardinstelling voor de legenda volgt bij splitsen
-- Can ALWAYS be split over multiple columns (regardless of the legend\'s setting)
+- ALTIJD mag worden gesplitst over meerdere kolommen (ongeacht de instelling voor de legenda)
 
 of
-- Can NEVER be split over multiple columns (regardless of the legend\'s setting)
+- NOOIT mag worden gesplitst over meerdere kolommen (ongeacht de instelling voor de legenda)
 
 Gesponsord door SLYR
 
@@ -487,19 +487,19 @@ Staat opmaken van symbolen voor delen en subdelen op een andere manier, vergelek
 
 Gesponsord door SLYR
 
-Builds off the hard work done by \@agiudiceandrea!
+Gebouwd naar aanleiding van het vele werk dat werd gedaan door \@agiudiceandrea!
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Overschrijven van het standaardsymbool voor de knoop van een legenda toestaan
-This allows users to (optionally) customise the symbol appearance for a legend node, e.g. to tweak the colors or symbol sizes to better provide a \"representative\" patch symbol compared with how those corresponding features actually appear on the map.
+Dit stelt gebruikers in staat om (optioneel) het uiterlijk van een symbool voor de knoop van een legenda aan te passen. Bijvoorbeeld om de kleuren of grootten van symbolen aan te passen om een beter \"representatief\" symbool te verschaffen. Vergeleken met hoe deze overeenkomende objecten in feite worden weergegeven op de kaart.
 
-It\'s useful for exaggerating symbol widths, or for manually tweaking the colors of semi-transparent symbols so that the colors represent the actual appearance of the symbols when rendered on top of the map content. Or to tweak the marker interval/offset in marker lines so that the markers are nicely spaced in the legend patch.
+Het is nuttig voor het overdrijven van de dikte van symbolen, of voor het handmatig aanpassen van de kleuren van semitransparante symbolen, zodat de kleuren het feitelijke uiterlijk van de symbolen weergeven. Als ze worden gerenderd bovenop de inhoud van de kaart. Of om de interval/verschuiving voor markeringen in markeringslijnen aan te passen, zodat de markeringen netjes zijn uitgelijnd in de legenda.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Plaatsen van handmatige kolomeinden in legenda's toestaan
 Voegt, bij het configureren van een item voor de legenda, de optie  toe om een kolomeinde te plaatsen vóór het item, wat er voor zorgt dat het wordt geplaatst in een nieuwe kolom.
 
-This allows user control over the column content, for cases when the automatic column generation doesn\'t result in the desired results.
+Dit geeft de gebruiker beheer over de inhoud van kolommen, voor gevallen waarin het automatisch maken van kolommen niet het gewenste resultaat geeft.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Subdelen toegevoegd in streepjes rechter segmenten schaalbalk
@@ -515,17 +515,17 @@ Eigenschappen item Schaalbalk - groepsvak Segmenten ![image54](images/entries/81
 
 Het gedrag dat is gerelateerd aan de segmenten aan de linkerkant van de schaalbalk blijft ongewijzigd.
 
-This feature was developed by [Andrea Giudiceandrea](https://api.github.com/users/agiudiceandrea)
+Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://api.github.com/users/agiudiceandrea)
 ### Mogelijkheid: Overschrijven van grootte van de vorm van het symbool voor legenda op een per-item basis toestaan
 Geeft gebruikers de mogelijkheid om de grootte van de vorm van het symbool in de legenda, voor individuele knopen van de legenda, te overschrijven, door op de knoop dubbel te klikken
 
-Width and height can be individually overridden, with the node falling back to the default width or height when the override isn\'t set.
+Breedte en hoogte kunnen individueel worden overschreven, waarbij de knoop terugvalt naar de standaardbreedte of -hoogte als het overschrijven niet wordt ingesteld.
 
 Gesponsord door SLYR ![image55](images/entries/80325577-0edce780-8879-11ea-82bd-8f323a4c68ab.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Beheer toestaan over de horizontale afstand vóór groepen/sub-groepen/symbolen van de legenda 
-Gives flexibility to allow \"nesting\" legend groups/subgroups/symbols and much greater control over legend item placement.
+Geeft flexibiliteit om \"nesten\" van groepen/subgroepen/symbolen van de legenda toe te staan en veel meer beheer over de plaatsing van het item Legenda.
 
 Gesponsord door SLYR
 
@@ -571,33 +571,33 @@ Gesponsord door SLYR
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Inhoud vanaf klembord importeren voor vaste tabelitems toegevoegd
-A new import content from clipboard feature has been added to QGIS\' table editor to enable quicker layout fixed table item editing and creation.
+Een nieuwe mogelijkheid voor het importeren van inhoud vanaf het klembord is toegevoegd aan de tabelbewerker van QGIS om het sneller bewerken en maken van de lay-out van vaste tabelitems in te schakelen.
 
 ![image60](images/entries/e7f2b64e48b0726bc03e2d4fa9424feabde1808d.gif)
 
 Dit werd mogelijk gemaakt door iMHere Asia
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
-### Feature: Add numeric formatter \"fraction\" style
-This style represents decimal numbers as vulgar fractions, e.g. \"3/4\" instead of 0.75.
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
+### Mogelijkheid: Numerieke opmaak stijl \"breuk\" toegevoegd
+Deze stijl geeft decimale getallen weer als breuken, bijv. \"3/4\" in plaats van 0,75.
 
-Options include using Unicode superscript and subscript characters for nicer typography, e.g. ¹⁷/₂₃ (this is the default mode, disabling this option uses the \"17/23\" format). An option also exists for using dedicated unicode characters for specific fractions (where a unicode character exists), e.g. ½ or ¾.
+Opties omvatten het gebruiken van tekens voor Unicode superscript en subscript voor nettere typografie, bijv. ¹⁷/₂₃ (dit is de standaardmodus; uitschakelen van deze optie gebruikt de indeling \"17/23\"). Een optie bestaat ook voor het gebruiken van aangewezen tekens voor Unicode voor specifieke breuken (waar een teken Unicode voor bestaat), bijv. ½ of ¾.
 
-Ultimately this allows for creation of scalebars with fractional representations of distances, e.g. 0 \-\-\-\-- ½ \-\-\-\-- 1 km (instead of 0 \-\-\-\-\-- 0.5 \-\-\-\-\-- 1km)
+Uiteindelijk maakt dit het maken van schaalbalken met weergave in breuken van afstanden mogelijk, bijv. 0 \-\-\-\-- ½ \-\-\-\-- 1 km (in plaats van 0 \-\-\-\-\-- 0,5 \-\-\-\-\-- 1km)
 
 Gesponsord door SLYR
 
 ![image61](images/entries/77267662-0c71f580-6cef-11ea-9956-917e1d6ef496.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Add \"stepped line\" and \"hollow\" scalebar styles
+### Mogelijkheid: Stijlen \"staplijn\" en \"hol\" voor schaalbalk toegevoegd
 Voegt twee nieuwe stijlen voor de schaalbalk toe (die beschikbaar zijn in ArcMap, maar eerder onmogelijk waren te reproduceren in QGIS)
 
 Stijl Staplijn:
 
 ![image62](images/entries/77247015-c1b59680-6c78-11ea-92a9-7bbb2ba8638a.webp)
 
-Hollow (aka \"South African\") style:
+Hol (alias stijl \"Zuid-Afrikaans\"):
 
 ![image63](images/entries/77247024-dc880b00-6c78-11ea-827a-344645cec248.webp)
 
@@ -613,7 +613,7 @@ Gesponsord door SLYR
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Opnieuw bewerken van de UI en gedrag voor item Afbeelding
-Adds an explicit choice between SVG or raster image sources, which allows us to clean up the configuration panel for layout pictures by hiding options which don\'t apply to a certain picture source. Also permits us to:
+Voegt een expliciete keuze toe tussen bronnen SVG of rasterafbeelding, die ons in staat stellen het paneel voor het configureren van afbeeldingen voor lay-out op te ruimen bij het verbergen van opties die niet van toepassing zijn voor een bepaalde afbeeldingsbron. Stelt ons ook in staat om:
 - De standaard widget voor selecteren van SVG te hergebruiken, wat afbeeldingen laadt in een thread op deachtergrond
 - Gebruikt de standaard tekstbewerker voor selectie van SVG en afbeeldingen, wat het slepen en neerzetten van afbeeldingen mogelijk maakt, en opties weergeeft om afbeeldingen in te bedden en te koppelen aan bronnen online
 
@@ -629,11 +629,11 @@ Dit maakt het CRS voor een kaart beheerbaar door een variabele.
 
 Gerelateerd aan #34547
 
-This feature was developed by [Alex](https://api.github.com/users/roya0045)
+Deze mogelijkheid werd ontwikkeld door [Alex](https://api.github.com/users/roya0045)
 ## Expressies
 ### Mogelijkheid: Nieuwe expressies
 - `ascii`
-- `make_interval` Allows direct construction of interval values from years/months/weeks/days/hours/minutes/second values, without having to construct a string representation of the interval first
+- `make_interval` Maakt direct construeren van waarden voor intervallen uit waarden years/months/weeks/days/hours/minutes/second mogelijk, zonder eerst een weergave tekenreeks van het interval te moeten maken
 - `maptip`
 - `layer_property('distance_units')`
 - `display_expression`
@@ -647,9 +647,9 @@ This feature was developed by [Alex](https://api.github.com/users/roya0045)
 - `@frame_number`
 - `@frame_rate`
 - `@frame_duration`
-- `@map_start_time` Start of the map\'s temporal time range (as a datetime value)
-- `@map_end_time` End of the map\'s temporal time range (as a datetime value)
-- `@map_interval:` Duration of the map\'s temporal time range (as an interval value)
+- `@map_start_time` Begin van de tijdsperiode van de kaart (als een waarde datetime)
+- `@map_end_time` Einde van de tijdsperiode van de kaart (als een waarde datetime)
+- `@map_interval:` Duur van de tijdsperiode van de kaart (als een waarde interval)
 - `@animation_start_time`
 - `@animation_end_time`
 
@@ -657,11 +657,11 @@ Deze mogelijkheid werd ontwikkeld door Etienne Trimaille, Jan Caha, Julien Monti
 ### Mogelijkheid: Browser voor objecten voor voorbeeld in expressiebouwer
 Dit voegt een browser voor objecten toe aan de expressiebouwer, zodat iemand door objecten kan bladeren om het resultaat van de expressie te zien ![image65](images/entries/80604352-e6e4b400-8a31-11ea-8f3b-8c864e124c78.webp)
 
-A new widget is added: `QgsFeaturePickerWidget`. For the moment, it\'s a simple combobox (but inherits widget so we can add a map picker button later on). It behaves the same way than the one in the relation reference widget (an editable combobox).
+Een nieuwe widget is toegevoegd: `QgsFeaturePickerWidget`. Voor dit moment is het een eenvoudig combinatievak (maar erft widget, dus kunnen we later een knoop voor het selecteren van de kaart eraan toevoegen). Het gedraagt zich op dezelfde manier als die in de widget relatieverwijzing (een bewerkbaar combinatievak).
 
-It relies on the same base model (`QgsFeatureFilterModel`). A new abstract class `QgsFeaturePickerModelBase` regroups the logic of the, and the new model is called `QgsFeaturePickerModel`. Basically the `QgsFeaturePickerModel` used the feature id to identify the features while `QgsFeatureFilterModel` use a list of attributes (the foreign keys of a relation). It declutters a bit the former model which was quite\...cluttered.
+Het vertrouwt op hetzelfde basismodel (`QgsFeatureFilterModel`). Een nieuwe abstracte klasse `QgsFeaturePickerModelBase` hergroepeert de logica ervan en het nieuwe model is genaamd `QgsFeaturePickerModel`. In de basis gebruikt `QgsFeaturePickerModel` het object-ID om de objecten te identificeren, terwijl `QgsFeatureFilterModel` een lijst met attributen gebruikt (de vreemde sleutels van een relatie). Het ruimt het vorige model een beetje op, omdat dat nogal \…vol was.
 
-As a side note, I tried to use templates for `QgsFeaturePickerModelBase`, but since templates cannot be mixed with Q_OBJECT, the alternatives sounded like the code would be less readable.
+Als een opmerking terzijde: ik probeerde sjablonen te gebruiken voor `QgsFeaturePickerModelBase`, maar omdat sjablonen niet kunnen worden gemixt met Q_OBJECT, zouden alternatieven leiden tot minder leesbare code.
 
 Testen zijn toegevoegd.
 
@@ -671,20 +671,20 @@ Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/us
 ### Mogelijkheid: Het is mogelijk aangepaste functies te verwijderen
 Voegt een knop voor verwijderen toe aan de tab Functiebewerker in het  dialoogvenster Expressiebouwer om het verwijderen van gebruikersfuncties uit QGIS mogelijk te maken, zonder naar de map voor het gebruikersprofiel te hoeven navigeren.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: Bewerken, importeren en exporteren van expressies van gebruikers mogelijk gemaakt
-A new button is added that allows editing of saved expressions. It is only active when a user expression is selected in the expressions tree. When pressed, it opens a window that allows the currently selected user expression to be edited. Changing the label of the expression makes a copy of the currently existing one. [Demo](https://imgur.com/w3UEOoR)
+Een nieuwe knop is toegevoegd die het bewerken van opgeslagen expressies mogelijk maakt. Die is alleen actief als een gebruikersexpressie is geselecteerd in de boom met expressies. Als erop wordt gedrukt, opent een venster dat het mogelijk maakt dat de momenteel geselecteerde gebruikersexpressie wordt bewerkt. Wijzigen van het label van de expressie maakt een kopie van de momenteel bestaande. [Demo](https://imgur.com/w3UEOoR)
 
 **Importeren/Exporteren**
 
-A new button with a menu is added, that allows the import/export of user expressions to/from a JSON file. Clicking on either of the menu entries opens a file selector dialog for the expressions JSON file source/destination. In the case of label conflicts, an additional dialog asks how to proceed - either to overwrite or to skip the current expression. [Import/Export Demo](https://imgur.com/0eiaFfu)
+Een nieuwe knop met een menu is toegevoegd, die het mogelijk maakt gebruikersexpressies te importeren/exporteren naar/vanuit een bestand JSON. Klikken op een van de menu-items opent een dialoogvenster voor bestandsselectie voor de/het bron/doel van het bestand van JSON voor de expressies. In het geval van conflicten met het label, vraagt een aanvullend dialoogvenster hoe door te gaan - ofwel overschrijven of de huidige expressie overslaan. [Importeren/Exporteren demo](https://imgur.com/0eiaFfu)
 
-This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
+Deze mogelijkheid werd ontwikkeld door [Ivan Ivanov](https://api.github.com/users/suricactus)
 ## Digitaliseren
 ### Mogelijkheid: Toegewezen modus Kruisen/overlappen van geometrie voorkomen
 Deze versie van QGIS komt met een nieuwe modusinstelling voor het vermijden van kruisen/overlappen van geometrie, bij het digitaliseren van objecten.
 
-| The three available modes are:
+| De drie beschikbare modi zijn:
 
 |
 
@@ -700,15 +700,15 @@ Kruisen/overlappen op gebruikergedefinieerde lagenlijst vermijden
 
 |
 
-The third mode\'s layers list is setup by the user via the advanced snapping configuration widgets.
+De lagenlijst voor de derde modus wordt door de gebruiker ingesteld via de widgets voor het configureren van geavanceerd snappen.
 
 ![image66](images/entries/caa646295d6f1cf6297864810637e9f8ceddc102.webp)
 
-This feature was funded by [OpenGIS.ch](http://www.opengis.ch/)
+Dit werd mogelijk gemaakt door [OpenGIS.ch](http://www.opengis.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ### Mogelijkheid: Nieuwe modi voor snappen: Zwaartepunt en midden van een segment (middelpunt)
-This feature is aimed at improving [snapping modes in QGIS](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/107) by getting closer to the experience of CAD tools.
+Deze mogelijkheid is gericht op het verbeteren van [modi voor snappen in QGIS](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/107) door dichter bij de ervaring van CAD-programma\'s te komen.
 
 Het voegt twee nieuwe modi toe. Snappen aan het midden van een geometrie (zwaartepunt) en het midden van een segment.
 
@@ -720,19 +720,19 @@ De volgorde van voorkeur voor snappen is de volgende: - Hoekpunt, Kruising - Mid
 
 ![image68](images/entries/71799417-7e726100-3055-11ea-8e07-3792dbc741c2.gif)
 
-Sponsored by: Qwat group / Ville de Lausanne ( \@ponceta \@dsavary ) / Oslandia and some spare time
+Gesponsord door: Qwat groep / Stad Lausanne ( \@ponceta \@dsavary ) / Oslandia en enige vrije tijd
 
-This feature was developed by [lbartoletti](https://api.github.com/users/lbartoletti)
+Deze mogelijkheid werd ontwikkeld door [lbartoletti](https://api.github.com/users/lbartoletti)
 ### Mogelijkheid: Snappen aan het huidige te digitaliseren object
 Snappen kan nu ook snappen aan het object dat momenteel wordt gedigitaliseerd. Deze optie wordt in-/uitgeschakeld door een nieuwe knop op de werkbalk Snappen.
 
-This enables some really nice CAD-like editing abilities, such as closing features at a 90° angle or precisely aligning segments inside a feature. It\'s very efficient once one is accustomed to using the alt+a shortcut to lock the angle.
+Dit schakelt enkele leuke CAD-achtige mogelijkheden voor bewerken in, zoals het sluiten van objecten onder een hoek van 90° of het precies uitlijnen van segmenten binnen een object. Het is bijzonder efficiënt als men gewend is aan het gebruiken van de sneltoets Alt+A om de hoek te vergrendelen.
 
 ![image69](images/entries/81065380-a37bc100-8edb-11ea-8aed-6fd52d843a26.gif)
 
 Dit werd mogelijk gemaakt door Kanton Solothurn en Land Vorarlberg
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+Deze mogelijkheid werd ontwikkeld door [Olivier Dalang](https://api.github.com/users/olivierdalang)
 ### Mogelijkheid: Traceren ondersteunt nu gebogen geometrieën
 Het gereedschap Traceren maakt nu gebogen geometrieën bij het werken op een laag die gebogen geometrieën ondersteunt.
 
@@ -742,7 +742,7 @@ De ondersteuning is nog experimenteel, dus moet deze mogelijkheid worden ingesch
 
 Dit werd mogelijk gemaakt door ecoptima en Planteam
 
-This feature was developed by [Olivier Dalang (OPENGIS.ch)](https://api.github.com/users/olivierdalang)
+Deze mogelijkheid werd ontwikkeld door [Olivier Dalang (OPENGIS.ch)](https://api.github.com/users/olivierdalang)
 ## Formulieren en widgets
 ### Mogelijkheid: Bewerken van links in widget Bestand toestaan
 In een formulier kunnen links nu worden bewerk de widget Bestand (als de widget niet alleen-lezen is).
@@ -759,7 +759,7 @@ Deze nieuwe mogelijkheid maakt het mogelijk dat labels in formulieren (aliassen)
 
 ![image73](images/entries/78904645-26486200-7a7d-11ea-84b0-b9e96c0c9797.gif)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Beschrijving toevoegen aan widget Waarde relatie
@@ -775,13 +775,13 @@ Een nieuw widget werd aan QGIS toegevoegd om een nieuwe tabel uit een bestaande 
 
 ![image75](images/entries/76504669-70233580-6448-11ea-9194-173ae0d344ce.gif)
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Mogelijkheid: Waarden huidige ouderformulier ophalen in kindformulieren
-This feature adds the option of using current values from the \"parent\" form in filter expressions (for now only in value-relation widgets: to be used in drill-down filters).
+Deze mogelijkheid voegt de optie toe om huidige waarden uit het \"ouder\"-formulier in filterexpressies te gebruiken (voor nu alleen in widgets Waarde-relatie: te gebruiken in filters voor dieper zoeken).
 
-A new \"parentForm\" scope was added as well as a new set of functions and variables to access the parent from within an embedded child form. The new functions and variables were modelled on the existing \"current_value\", \"current_feature\" etc.
+Een nieuw bereik "parentForm" werd toegevoegd, alsook een nieuwe set functies en variabelen om toegang te verkrijgen tot het ouderformulier binnen een ingebed kindformulier. De nieuwe functies en variabelen werden gemodelleerd op de bestaande \"current_value\", \"current_feature\" etc.
 
-The new functions and variables are also available when the parent form is opened from a new (unsaved, unbuffered) feature, making it easier to create drill-down filters based on the parent\'s values when adding children from an unsaved parent form.
+De nieuwe functies en variabelen zijn ook beschikbaar als het ouderformulier is geopend in een nieuw (niet opgeslagen, niet gebufferd) object. Wat het gemakkelijker maakt filters voor dieper zoeken te maken, gebaseerd op de waarden van de ouder, bij het toevoegen van kinderen uit een niet opgeslagen ouderformulier.
 ### Voorbeeld
 ![image76](images/entries/75692656-28f9af80-5ca6-11ea-8dd6-9a4bf454f5b7.gif)
 ### Nieuwe functies en variabelen
@@ -789,7 +789,7 @@ The new functions and variables are also available when the parent form is opene
 
 Mogelijk gemaakt door: **ARPA Piemonte**
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Widget Relatie: keuzevak toegevoegd om de knop voor bewerken van kinderen te verbergen
@@ -799,7 +799,7 @@ Mogelijk gemaakt door: **ARPA Piemonte**
 
 ![image80](images/entries/75524592-82e04800-5a0e-11ea-9333-461a0d02a1c0.webp)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Widget Relatie forceert onderdrukken van pop-up
@@ -811,28 +811,28 @@ Deze optie overschrijft de optie op het niveau van het formulier (wat nog steeds
 
 Opmerking: het uiteindelijke label is **Formulier verbergen bij toevoegen nieuw object forceren**
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ## Legenda van laag
 ### Mogelijkheid: Verplaats naar onderste toegevoegd aan contextmenu in weergave lagenboom
 Verplaatsen van lagen in grote projecten werd al gemakkelijker gemaakt met *Verplaats naar bovenste*, maar men moest nog steeds handmatig basiskaarten verplaatsen naar de onderzijde van de lagenlijst, een bewerkelijke taak in grote lagenbomen. Deze mogelijkheid voegt een optie *Verplaats naar onderste* aan het contextmenu van de lagenboom toe dat op dezelfde manier werkt als Verplaats naar bovenste.
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
-### Feature: Make Add Group button act as Group Selected if selected layers \>= 2
+Deze mogelijkheid werd ontwikkeld door [uclaros](https://api.github.com/users/uclaros)
+### Mogelijkheid: Knop Groep toevoegen laten acteren als Geselecteerde groeperen als geselecteerde lagen \>= 2
 Wanneer er meer dan één laag is geselecteerd en de gebruiker drukt op de knop *Groep toevoegen*, maak dan een nieuwe groep en plaats daar de geselecteerde lagen ook in! ![image82](images/entries/76710403-f624d200-670f-11ea-9a41-13420c7940e3.gif)
 
-This feature was developed by [uclaros](https://api.github.com/users/uclaros)
+Deze mogelijkheid werd ontwikkeld door [uclaros](https://api.github.com/users/uclaros)
 ### Mogelijkheid: Hernoemen van het huidige kaartthema toestaan
 Dit voegt de optie toe voor het hernoemen van een kaartthema uit het keuzemenu voor de kaartthema's.
 
 ![image83](images/entries/78195435-e29f9800-747f-11ea-95d2-604be58cf229-1.gif)
 
-This feature was developed by [Harrissou Sant-anna](https://api.github.com/users/DelazJ)
-### Feature: Turn on/off ALL selected layers with \"Space\" button
+Deze mogelijkheid werd ontwikkeld door [Harrissou Sant-anna](https://api.github.com/users/DelazJ)
+### Mogelijkheid: ALLE geselecteerde lagen in-/uitschakelen met de knop \"Spatie\"
 Schakelt de zichtbaarheid van de momenteel geselecteerde lagen of groepen met de spatiebalk: ![image84](images/entries/77874799-cff64a80-7256-11ea-974b-c4084d1e01ae.gif)
 
-This feature was developed by [Ivan Ivanov](https://github.com/suricactus)
+Deze mogelijkheid werd ontwikkeld door [Ivan Ivanov](https://github.com/suricactus)
 ## Analyse-gereedschappen
 ### Mogelijkheid: Netwerk loggen - meer functionaliteit
 Voegt enkele nuttige gereedschappen toe aan de netwerklogger:
@@ -842,22 +842,22 @@ Voegt enkele nuttige gereedschappen toe aan de netwerklogger:
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ingebouwd gereedschap voor loggen van netwerk
-This tool, which is available from the new F12 \"dev tools\" panel, is a native port of \@rduivenvoorde\'s network logger plugin.
+Dit gereedschap, dat beschikbaar is vanuit het nieuwe F12 paneel \"Debugging/Development tools\", is een eigen bewerking van de plug-in Network logger van \@rduivenvoorde.
 
 Het geeft een lijst weer van lopende en voltooide netwerkverzoeken, naast heel veel nuttige details, zoals status van verzoek en antwoord, headers, fouten, SSL configuratiefouten, time-outs, status van de cache, etc.
 
 Heeft ook heel veel nuttige mogelijkheden en om op te poetsen, zoals de mogelijkheid om verzoeken te filteren op sub-tekenreeksen van URL's en status, en u kunt met rechts klikken op verzoeken om de URL in een browser te openen of ze te kopiëren als een opdracht cURL.
 
 Waarom willen we dit als een eigen bewerking in plaats van als een plug-in? Wel:
-- It\'s extremely useful, so is nice to have available out-of-the-box
+- Het is bijzonder nuttig, dus goed om out-of-the-box beschikbaar te hebben
 - Door het te verplaatsen naar C++ kunnen we het proces voor loggen veel eerder opstarten dan dat een plug-in daar de mogelijkheid voor krijgt. Dit maakt het mogelijk dat het log aanvullende informatie kan bevatten, zoals verzoeken die worden ingediend door andere plug-ins die optreden voordat de plug-in Network logger is geladen (ook andere ingebouwde verzoeken, bijv. nieuwsfeed)
 - Uitvoering is een doorlopende strijd geweest met de plug-in voor Python. Hoewel dit voor zover mogelijk een 1:1 port is als maar mogelijk is, zijn de problemen met de uitvoering op magische wijze opgelost. De klassen bevatten enkele bijzonder intensieve lijstbewerkingen, wat waarschijnlijk de oorzaak is van de povere uitvoering onder Python.
 
 ![image85](images/entries/77712469-95ef3380-701f-11ea-8fec-3eded258b4e9.gif)
 
-This feature was funded by [Meteorological Service of Canada](https://weather.gc.ca)
+Dit werd mogelijk gemaakt door [Meteorological Service of Canada](https://weather.gc.ca)
 
-This feature was developed by [Nyall Dawson (for Kartoza)](https://api.github.com/users/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (voor Kartoza)](https://api.github.com/users/nyalldawson)
 ## Processing
 ### Mogelijkheid: Collectie algoritmen voor maken van willekeurige rasters
 Met deze mogelijkheid hebben we een grote collectie van algoritmen voor het maken van willekeurige rasters toegevoegd. De algoritmen zijn in staat willekeurige rasters uit te voeren die specifieke verdelingen voor willekeurige getallen volgen. De volgende verdelingen zijn beschikbaar:
@@ -871,7 +871,7 @@ Met deze mogelijkheid hebben we een grote collectie van algoritmen voor het make
 
 ![image86](images/entries/6304472935d29f8292cf24c7cb0198e95a4de137.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://api.github.com/users/root676)
 ### Mogelijkheid: Laag vectortegel - deel 8 (schrijven in Processing)
 Deze mogelijkheid voegt integratie voor Processing toe voor het schrijven van vectortegels. Het is slechts een verpakking rondom de bestaande klasse QgsVectorTileWriter.
 
@@ -879,11 +879,11 @@ Nieuwe algoritmen in de Toolbox van Processing:
 
 ![image87](images/entries/81117303-224a1b80-8f27-11ea-851d-f4271ce66ed3.webp)
 
-Algorithm\'s parameters for XYZ:
+Parameters voor algoritme voor XYZ:
 
 ![image88](images/entries/81117371-4279da80-8f27-11ea-9d8b-bbe1c78d9bf1.webp)
 
-Algorithm\'s parameters for MBTiles:
+Parameters voor algoritme voor MBTiles:
 
 ![image89](images/entries/81117466-6ccb9800-8f27-11ea-85e7-9c9a1df87920.webp)
 
@@ -895,9 +895,9 @@ Details Invoerlaag:
 
 ![image91](images/entries/81117621-ae5c4300-8f27-11ea-993b-782d7de4a10e.webp)
 
-This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
+Dit werd mogelijk gemaakt door [QGIS gemeenschap](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Nieuw algoritme voor Grafische modellen maken voor het maken van voorwaardelijke aftakkingen
 Dit algoritme stelt gebruikers in staat om meerdere voorwaarden in te stellen (via expressies van QGIS), die er voor zorgen dat de corresponderende tak van het grafische model wordt uitgevoerd of overgeslagen, afhankelijk van het resultaat van het evalueren van de expressie.
 
@@ -907,23 +907,23 @@ Dit werd mogelijk gemaakt door Andreas Neumann
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Opnieuw ordenen invoer voor modellen toestaan
-Instead of forcing a quasi-random ordering of inputs for models, this feature exposes a new \"Reorder Model Inputs\" option in the model designer which allows users control over the exact order of inputs to show users for their model.
+In plaats van het forceren van een quasi-willekeurige ordening van invoer voor modellen, geeft deze mogelijkheid een nieuwe optie \"Invoer modellen opnieuw ordenen\" in de ontwerper voor Grafische modellen. Die gebruikers beheersmogelijkheden geeft over de exacte volgorde van aan gebruikers weer te geven invoer voor hun model.
 
-No more illogical ordering like showing a field choice before the layer choice it\'s based on!
+Geen onlogische volgorde meer, zoals een veldkeuze weergeven voordat de laag is gekozen waarop het is gebaseerd!
 
 Gesponsord door NaturalGIS
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Validatie model uitstellen
-Instead of forcing all child algorithms to be immediately valid and have all parameters correctly filled, this feature defers model validation until run time or when a new \"Validate model\" action is triggered.
+In plaats van te forceren dat alle kind-algoritmen onmiddellijk geldig zijn en dat alle parameters juist zijn ingevuld, stelt deze mogelijkheid het valideren van het model uit tot de feitelijke uitvoering of tot wanneer een nieuwe actie \"Model valideren\" wordt getriggerd.
 
-A common frustration with the QGIS model designer is that it constantly forces models to be valid, even work-in-progress models. This means it's impossible to add a component to a model and only partially populate its settings --- you have to fill in everything upfront. If you realise mid way through this that you need to make a change somewhere else in your model, it's impossible to do without canceling and losing all the settings you've already configured.
+Een veelvoorkomende frustratie met de QGIS ontwerper voor Grafische modellen is dat het constant forceert dat modellen geldig moeten zijn, zelfs modellen waaraan nog wordt gewerkt. Dit betekent dat het onmogelijk is een component aan een model toe te voegen en slechts gedeeltelijk de instellingen te vullen — u dient alles van tevoren in te voeren. Als u zich halverwege realiseert dat u ergens anders in uw model een wijziging moet maken, is het onmogelijk om dat te doen zonder te annuleren en alle instellingen te verliezen die u al hebt geconfigureerd.
 
 Deze wijziging ziet er op toe dat het valideren van het model wordt uitgesteld tot de feitelijke uitvoering. Modellen mogen tijdelijk ongeldig zijn (bijv. componenten voor het algoritme hebben die slechts gedeeltelijk geconfigureerd zijn). De ontbrekende vereiste waarden kunnen nu in een later stadium worden ingevuld, zonder bestaande instellingen te verliezen. Als een niet-geldig model wordt uitgevoerd, krijgt de gebruiker een waarschuwing met een beschrijving die hen informeert over de wijzigingen die zij moeten maken om de configuratie van het model te voltooien.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning toegevoegd voor verschillende typen rastergegevens in algoritme Constante rasterlaag maken
-With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Create constant raster layer* algorithm. Via this parameter, you can now specify an output data type for your constant raster layers.
+Met deze mogelijkheid hebben we een nieuwe gevorderde parameter **OUTPUT_TYPE** voor het algoritme *Constante rasterlaag maken*. Via deze parameter kunt u nu een gegevenstype voor de uitvoer specificeren voor uw constante rasterlagen.
 - Byte
 - Integer16
 - Unsigned Integer16
@@ -934,7 +934,7 @@ With this feature we added a new advanced **OUTPUT_TYPE** parameter for the *Cre
 
 ![image93](images/entries/b7b0b73f7d48104cb49f33ed2d453a70d188cbd6.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://api.github.com/users/root676)
 ### Mogelijkheid: Algoritme Raster afronden
 Met dit nieuwe algoritme voor Processing stellen we QGIS in staat **Rasterwaarden af te ronden**.
 
@@ -944,7 +944,7 @@ Het voorbeeld geeft een uitvoerraster weer dat is afgerond naar veelvouden van 1
 
 ![image94](images/entries/650983141141fc954abc96f79e5255e4634c5051.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://api.github.com/users/root676)
 ### Mogelijkheid: Kopiëren/knippen/plakken van componenten van modellen toestaan
 Deze mogelijkheid stelt gebruikers in staat componenten van modellen te kopiëren en te plakken, zowel in hetzelfde model als tussen verschillende modellen
 
@@ -954,7 +954,7 @@ Refs NRCan Contract#3000707093
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Toevoegen van resultaten van Processing aan bestaande lagen toestaan
-When appending results, users are given a field mapping panel choice to allow them to manually set how fields are mapped to the destination layer\'s fields:
+Bij het toevoegen van resultaten wordt aan gebruikers een paneel met velden getoond dat hen in staat stelt in te stellen hoe velden moeten worden geplaatst in de velden van de bestaande laag:
 
 ![image96](images/entries/78631098-b9976100-78de-11ea-8f18-f7c7473e0945.gif)
 
@@ -964,7 +964,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/use
 ### Mogelijkheid: Maken van groepsvakken in modellen toestaan
 Voegt de volgende functiies toe aan de ontwerper voor Grafische modellen maken:
 - De mogelijkheid de kleur van individuele opmerkingen in een model aan te passen
-- Allow creation of \"Group Boxes\" in models, which are a visual indicator of logically linked model components (e.g. \'Data Preparation Steps\', \'NDVI Calculation Steps\', \... etc). Users can customise the color and title for group boxes.
+- Maken van \"Groepsvakken\" in modellen, die een visuele indicatie zijn van logisch aan elkaar gekoppelde componenten van het model, toestaan (bijv. \'Stappen voor voorbereiden van gegevens\', \'Stappen voor berekening NDVI\', \… etc.). Gebruikers kunnen de kleur en titel voor groepsvakken aanpassen.
 - Direct navigeren naar groepsvakken vanuit het menu Beeld toestaan, wat helpt bij het navigeren door complexe modellen.
 
 ![image97](images/entries/78090538-bba87e00-740d-11ea-9476-144163d8f1ca.gif)
@@ -977,13 +977,13 @@ Een afbeelding laat dit het beste zien! Na het uitvoeren van het algoritme in de
 
 ![image98](images/entries/77991113-5d749000-7366-11ea-986c-652f6e2229e7.webp)
 
-This is very useful for debugging models \-- you can see a much clearer visual picture of the flow of values through the model.
+Dit is bijzonder nuttig voor het debuggen van modellen \-- u kunt nu een veel helderder visueel beeld zien van de waarden door het model.
 
 Refs NRCan Contract#3000707093
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Add \"Save Log to File\" algorithm for models
-This algorithm saves the contents of the execution log (right up to the point in the model at which the \'save log\' algorithm executes) to a file.
+### Mogelijkheid: Algoritme \"Log naar bestand opslaan\" voor modellen toegevoegd
+Dit algoritme slaat de inhoud van het log voor de uitvoering op (tot het punt in het model waar het algoritme \'Log opslaan\' wordt uitgevoerd) naar een bestand.
 
 Het kan worden gebruikt om automatisch het log voor debuggen op te slaan bij het uitvoeren van modellen, voor latere verwijzing en transparantie.
 
@@ -1003,7 +1003,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/use
 ### Mogelijkheid : Geavanceerde opties per-object-bron weergeven voor invoer van Processing
 Deze optie geeft geavanceerde opties per-object-bron weer, zoals:
 - De mogelijkheid om het aantal uit de bron te lezen objecten te beperken. (Nuttig bij het ontwikkelen van modellen, u kunt gemakkelijk het uitvoeren van modellen testen met een kleine subset van een invoerlaag)
-- The ability to override on a per-input basis the global processing option for how to handle invalid geometries. Now you can safely leave the default processing setting at the conservative \"Stop algorithm execution when a geometry is invalid\" setting while easily temporarily overriding this for one particular input!
+- De mogelijkheid om op een per-invoer basis de globale optie voor Processing, voor hoe ongeldige geometrieën af te handelen, te overschrijven. Nu kunt u met een gerust hart de standaardinstelling voor Processing bij de conservatieve instelling \"Uitvoeren van algoritme stoppen als geometrie ongeldig is\" laten staan door deze gemakkelijk te kunnen overschrijven voor een bepaalde invoer!
 
 ![image100](images/entries/77395930-64dbec80-6dee-11ea-9590-b7fadcd242c1.gif)
 
@@ -1011,44 +1011,44 @@ Refs NRCan Contract#3000707093
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Snappen aan raster voor modellen in ontwerper inschakelen
-This update implements two \"snapping\" features in the Processing model designer:
-1. Users can enable a new \"Enable Snapping\" option from the view menu, which will cause all component moving or resizing operations to automatically snap to grids
-2. After selecting some components, users can select Edit -\> Snap Selected Components to Grid to manually snap just those selected components.
+Deze update implementeert twee mogelijkheden voor het \"snappen\" van objecten in de ontwerper voor Grafische modellen maken van Processing:
+1. Gebruikers kunnen een nieuwe optie \"Snappen inschakelen\" in het menu Beeld inschakelen, wat er toe zal leiden dat alle bewerkingen, voor verplaatsen of afmeting aanpassen van componenten, automatisch zal snappen aan rasters
+2. Na het selecteren van enkele componenten, kunnen gebruikers Bewerken -\> Geselecteerde componenten aan raster snappen selecteren om handmatig slechts deze geselecteerde componenten te snappen.
 
-Additionally, I\'ve added a helpful \"select all\" action for quickly selecting all components in a model.
+Aanvullend heb ik een nuttige actie \"Alles selecteren\" toegevoegd voor het snel selecteren van alle componenten in een model.
 
 Refs NRCan Contract#3000707093
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Add \"filter by geometry type\" and \"filter by layer type\" algorithms to processing
+### Mogelijkheid: Algoritmen \"Filteren type geometrie\" en \"Filteren op type laag\" toegevoegd aan Processing
 Deze update voegt twee nieuwe algoritmen toe aan Processing:
-- \"Filter by geometry type\": This algorithm filters features by their geometry type. Incoming features will be directed to different outputs based on whether they have a point, line or polygon geometry. It allows for model creation which responds to different input layer geometry types by applying different logic depending on the input geometry type.
-- \"Filter by layer type\": This algorithm allows conditional model branching based on an input layer type. For instance, it allows a model to adapt to the actual layer type of a generic \"map layer\" parameter input, and decide which branch of the model to run as a result.
+- \"Filteren op type geometrie\": Dit algoritme filtert objecten op hun type geometrie. Inkomende objecten zullen naar verschillende uitvoer wordt verwezen, gebaseerd op het feit of zij een geometrie punt, lijn of polygoon hebben. Het maakt het maken van modellen mogelijk die reageren op verschillende typen geometrie van de invoerlaag door verschillende logica toe te passen, afhankelijk van het type geometrie voor de invoer.
+- \"Filteren op type laag\": Dit algoritme maakt het mogelijk voorwaardelijke aftakkingen van modellen te maken, gebaseerd op een type invoerlaag. Het maakt het bijvoorbeeld voor een model mogelijk om het feitelijke type laag van een algemene parameter \"map layer\" voor de invoer aan te passen, en te bepalen welke tak van het model als resultaat moet worden uitgevoerd.
 
-It also adds in the required API to allow algorithms to \"prune\" model branches based on their calculated results. For example, a model which returns the new *FlagPruneModelBranchesBasedOnAlgorithmResults* flag will cause any remaining parts of the model which are dependent on the outputs of that algorithm to be entirely skipped IF the algorithm does not return that particular output. (This is a prerequisite component for a future generic \"conditional branching by expression\" algorithm, and also used by \"filter by layer type\" to control the model flow based on the input layer type)
+Het voegt ook in de vereiste API toe om algoritmen toe te staan aftakkingen van een model te \"snoeien\", gebaseerd op hun berekende resultaten. Bijvoorbeeld een model dat de nieuwe vlag *FlagPruneModelBranchesBasedOnAlgorithmResults* teruggeeft, zal ervoor zorgen dat resterende delen van het model, die afhankelijk zijn van de uitvoer van dat algoritme, geheel worden overgeslagen ALS het algoritme niet die bepaalde uitvoer teruggeeft. (Dit is een al vooraf ingevoerde component voor een toekomstig algemeen algoritme \"Voorwaardelijke aftakkingen met expressies\", en wordt ook gebruikt door \"Filteren op type laag\" om de stroom van het model te beheren, gebaseerd op het type invoerlaag)
 
 Refs NRCan Contract#3000707093
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: \"Remove Null Geometries\" algorithm can also remove EMPTY geometries
-Empty geometries do not contain coordinates. Thus, like *null* geometries, empty geometries are not spatial data in a strict sense. To make it easier for users to clean a vector layer, the *Remove Null Gometries* algorithm now has an \"**Also remove empty geometries**\" option.
+### Mogelijkheid: Algoritme \"Geometrieën Null verwijderen\" kan ook LEGE geometrieën verwijderen
+Lege geometrieën bevatten geen coördinaten. Dus, net als geometrieën *null*, zijn lege geometrieën in de strikte betekenis geen ruimtelijke gegevens. Het algoritme *Geometrieën Null verwijderen* heeft nu een optie \"**Ook lege geometrieën verwijderen**\", om het voor gebruikers gemakkelijker te maken een vectorlaag op te schonen.
 
 ![image101](images/entries/76703713-81b34a00-66a1-11ea-9818-ebf771885206.webp)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+Dit werd mogelijk gemaakt door [SwissTierras Colombia](https://swisstierrascolombia.com/)+
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Mogelijkheid: Meervoudig selecteren afhandeling toegevoegd aan ontwerper Grafische modellen bouwen, interactief afmetingen aanpassen
 Voegt toe:
 - De mogelijkheid om in één keer meerdere items te selecteren in de ontwerper van Grafische modellen bouwen
 - De mogelijkheid om afmetingen van individuele of meerdere items te wijzigen
 - De mogelijkheid om meerdere geselecteerde items te verwijderen
-- Improved model designer \"tool\" interaction, following the layout designer approach (e.g. alt + space = zoom drag mode, and selection tools follow their counterparts in layouts so shift+selection adds to selection, ctrl+selection removes, etc)
+- Verbeterde interactie voor \"gereedschap\" in de ontwerper van Grafische modellen bouwen, die de benadering voor de ontwerper van lay-outs volgt (bijv. alt + spatie = zoom sleepmodus, en gereedschappen voor selecteren volgen hun soortgenoten in lay-outs dus Shift+selectie voegt toe aan de selectie, Ctrl+selectie verwijdert, etc.)
 - Geselecteerde items kunnen worden verplaatst met de pijltjestoetsen
 
 Refs NRCan Contract#3000707093
 
-Here\'s how it looks in action (with a particular ugly looking test model I use!)
+Hier is hoe dat er in actie uitziet (met een bijzonder lelijk uitziend testmodel dat ik gebruik!)
 
 ![image102](images/entries/76388083-f9d4f380-63b3-11ea-8f06-97249e85ac2e.gif)
 
@@ -1058,7 +1058,7 @@ Maakt QGIS meer vergevingsgezind voor gebruikers!
 
 Refs NRCan Contract#3000707093
 
-Works just like you\'d expect:
+Werkt net zoals u zou verwachten:
 
 ![image103](images/entries/76176510-c8fe8e00-61fc-11ea-90e1-91cbeadcbd4f.gif)
 
@@ -1068,13 +1068,13 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/use
 ### Mogelijkheid: Waarden van parameter onthouden tussen uitvoeringen van ontwerper van Grafische modellen bouwen
 Bij het ontwerpen van een model, zullen gebruikers gewoonlijk het model vele keren dienen uit te voeren als zij zijn structuur aanpassen.
 
-This change causes the parameters used when running the model from the designer to be remembered and saved into the model, so that each time you run the model from the designer you don\'t have to re-set all the input parameter values to the desired test ones.
+Deze wijziging zorgt ervoor dat de gebruikte parameters bij het uitvoeren van het model in de ontwerper worden onthouden en opgeslagen in het model. Zodat u, elke keer als u het model in de ontwerper uitvoert, niet alle waarden voor de invoerparameters opnieuw moet instellen op die van de gewenste test.
 
 Maakt iteratief modelontwerp ZOVEEL gemakkelijker!
 
 Gesponsord door Alta Ehf
 
-Also includes a partial port of the model designer dialog from Python to c++, because c++ \>\> Python.
+Bevat ook een gedeeltelijke overgang van het dialoogvenster van de ontwerper van Grafische modellen bouwen van Python naar C++, omdat C++ \>\> Python.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Opmerkingen in modellen van Processing
@@ -1086,14 +1086,14 @@ Dit werd mogelijk gemaakt door Fisel + König
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Nieuw zelfstandig console-gereedschap voor het uitvoeren van algoritmen van Processing
-This new qgis_process tool allows users to run processing algorithms (both built-in, and those provided by plugins) directly from the console.
+Dit nieuwe gereedschap qgis_process stelt gebruikers in staat algoritmen van Processing uit te voeren (zowel ingebouwde als ook die worden verschaft door plug-ins) direct vanuit de console.
 
 Uitvoeren:
-- `qgis_process list` will output a complete list of all available algorithms, grouped by provider.
-- `qgis_process plugins` lists available and activated plugins which advertise the hasProcessingProvider metadata option (only these plugins are loaded by the tool)
-- `qgis_process help algid` outputs the help and input descriptions for the specified algorithm, e.g. `qgis_process help native:centroids`
+- `qgis_process list` zal een volledig lijst van alle beschikbare algoritmen uitvoeren, gegroepeerd per provider.
+- `qgis_process plugins` vermeldt beschikbare en geactiveerde plug-ins die de metadata optie hasProcessingProvider hebben (alleen die plug-ins worden door het gereedschap geladen)
+- `qgis_process help algid` voert de Help uit en beschrijvingen voor de invoer van het gespecificeerde algoritme, bijv. `qgis_process help native:centroids`
 
-`qgis_process run`: runs an algorithm. Parameters are specified by a `--param=value` syntax. E.g.
+`qgis_process run`: voert een algoritme uit. Parameters worden gespecificeerd door de syntaxis `--param=value`. Bijv.
 
     qgis_process run native:centroids --INPUT="my_shapefile.shp" --OUTPUT="centroids.kml"
     
@@ -1113,7 +1113,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/use
 ### Mogelijkheid: Nieuwe algoritmes voor laten zien van waarschuwingen en uitzonderingen vanuit modellen toegevoegd
 Deze algoritmen laten ofwel een aangepaste waarschuwing in het log van Processing zien OF werpt een uitzondering op die er voor zorgt dat het uitvoeren van het model wordt beëindigd.
 
-An optional condition expression can be specified to control whether or not the warning/exception is raised, allowing logic like \"if the output layer from another algorithm contains more than 10 features, then abort the model execution\".
+Een optionele voorwaardelijke expressie kan worden gespecificeerd om te beheren of de waarschuwing/uitzondering wordt opgeworpen of niet, wat logica, zoals \"als de uitvoerlaag van een ander algoritme meer dan 10 objecten bevat, annuleer dan het uitvoeren van het model\", mogelijk maakt.
 
 Gesponsord door Fisel + König
 
@@ -1125,7 +1125,7 @@ Het algoritme scant een invoer raster gegevensset op cellen GeenGegevens en vult
 
 ![image105](images/entries/6cbf249116a09b4d342729da1e09060b9f0ec52f.webp)
 
-This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
+Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://api.github.com/users/root676)
 ### Mogelijkheid: Verscheidene reparaties voor Processing
 - Voltooid werk aan ondersteuning voor parameters voor bereik in algoritmen van GRASS;
 - Defecte algoritme r.series gerepareerd 
@@ -1133,17 +1133,17 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 - Reparatie voor gereedschap Rasteriseren
 - GRASS GIS testen opgeschoond
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
-### Feature: Show \"template layer\" field constraints in the \"Refactor Fields\" algorithm interface
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
+### Mogelijkheid: Beperkingen voor veld \"template layer\" in de interface van het algoritme \"Refactor Fields\" weergeven
 Wanneer u gegevens migreert is het belangrijk om u bewust te zijn van beperkingen op doel- (alias template) lagen.
 
-The \"Refactor Fields\" algorithm now highlights constraints, and even lets you know more about them via tool-tips.
+Het algoritme \"Refactor Fields\" accentueert nu beperkingen, en laat u zelfs meer daarover te weten komen via Help-tips.
 
 ![image106](images/entries/75100644-6079a500-559e-11ea-91b6-f99fa05451de.webp)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+Dit werd mogelijk gemaakt door [SwissTierras Colombia](https://swisstierrascolombia.com/)+
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Mogelijkheid: Nieuw algoritme voor converteren naar bogen
 We hebben een nieuw algoritme toegevoegd voor het converteren van gesegmenteerde geometrieën naar gebogen geometrieën.
 
@@ -1153,10 +1153,10 @@ Het algoritme beschouwt opeenvolgende punten om een boog weer te geven als zij g
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Opties voor toepassing en projecten
-### Feature: Add \@layers, \@layer_ids project scope variables
-Add \@layers, \@layer_ids project scope variables which contain lists of map layers and map layers ids for all layers from the current project
+### Mogelijkheid: Variabelen voor bereik project \@layers, \@layer_ids toegevoegd
+Variabelen voor bereik project \@layers, \@layer_ids toegevoegd die een lijst met lagen en laag-ID\'s bevatten voor alle lagen in het huidige project
 
-This mimics the existing \@map_layers, \@map_layer_ids, but unlike the \@map variants these return ALL project layers, not just those associated with the current context\'s map settings.
+Dit bootst de bestaande \@map_layers, \@map_layer_ids na, maar anders dan de varianten @map geven deze ALLE projectlagen terug. Niet slechts die welke zijn geassocieerd aan de kaartinstellingen voor de huidige context.
 
 Gesponsord door SLYR
 
@@ -1167,15 +1167,15 @@ Stelt de gebruiker in staat om attributen direct toe te voegen in het dialoogven
 
 Het is nog steeds mogelijk om een tekenlaag te maken zonder attributen, door geen velden aan de lijst toe te voegen.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: Maken van DBF-tabellen zonder geometrie in het dialoogvenster Nieuwe Shapefile toestaan
-Allow creating \"plain\" DBF files without associated geometries from the New Shapefile dialog.
+Staat het maken van \"gewone\" DBF-bestanden zonder geassocieerde geometrieën toe in het dialoogvenster Nieuwe Shapefile.
 
 ![image109](images/entries/81068877-be553200-8ee9-11ea-9a06-a4d30e773cf6.webp)
 
-Creating DBF tables can be useful in some cases and having to use third-party tools for this instead of doing it from within QGIS is inconvenient. This also makes the New Shapefile dialog more consistent with the New Geopackage dialog, which already allows \"geometryless\" tables to be created.
+Het maken van DBF-tabellen kan in sommige gevallen nuttig zijn en om programma's van derde partijen te moeten gebruiken in plaats van het rechtstreeks in QGIS te doen is onhandig. Dit maakt ook het dialoogvenster Nieuwe Shapefile meer consistent met het dialoogvenster Nieuw GeoPackage, dat al toestaat dat tabellen \"zonder geometrie\" worden gemaakt.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: Filteren lijst WM(T)S in dialoogvenster van bron toestaan
 Voegt de mogelijkheid toe om te filteren tussen lijsten van WMS of WMTS in het dialoogvenster van de bron
 
@@ -1189,19 +1189,19 @@ Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://api.github.com/us
 ### Mogelijkheid: Vectortegels toevoegen aan dialoogvenster Databronnen beheren en menu Lagen
 Voegt een nieuwe tab toe aan het dialoogvenster Databronnen beheren, die de gebruiker in staat stelt verbindingen voor vectortegels te beheren/toe te voegen, inclusief importeren/exporteren. Voegt ook een overeenkomstig item in het menu Lagen in.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: Importeren/exporteren voor verbindingen van ArcGIS Map en FeatureServer
 Ontbrekende functionaliteit voor importeren/exporteren voor verbindingen naar ArcGIS MapServer en FeatureServer toegevoegd.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: XYZ-tegels toevoegen aan dialoogvenster Databronnen beheren en menu Lagen
 Voegt een nieuwe tab toe aan het dialoogvenster Databronnen beheren, die de gebruiker in staat stelt verbindingen voor XYZ-tegels te beheren/toe te voegen. Voegt ook een overeenkomstig item in het menu Lagen in.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: SpatiaLite transactiegroep
 Implementatie voor transacties voor de eigen provider SpatiaLite.
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Direct opslaan van uitvoeren naar meerdere indelingen voor databases toestaan (en andere leuke dingen)
@@ -1211,15 +1211,15 @@ Eerder konden uitvoeren alleen direct worden weggeschreven naar databases van Po
 
 Uiteindelijk geeft dit de nieuwe mogelijkheid weer om uitvoer direct op te slaan naar databases van SQL Server of SpatiaLite (naast de eerdere opties voor GPKG+PostgreSQL die al bestaan)
 
-(As soon as oracle, db2, \... have the connections API implemented we\'ll instantly gain direct write support for those too!)
+(Zodra Oracle, DB2, \… de API voor de verbindingen hebben geïmplementeerd, zullen we ook daarvoor ondersteuning voor direct wegschrijven verkrijgen)
 
-We do this via a nice inline version of the new \"new database table name\" widget.
+We doen dit via een leuke in-regelige versie van de nieuwe widget \"Nieuwe tabelnaam database\".
 
 ![image112](images/entries/77608752-dab89300-6f69-11ea-9c48-eefca7a4d199.gif)
 
 Andere leuke dingen omvatten:
 - U kunt nu bestanden of mappen slepen en neerzetten vanuit de bestandsbeheerder of de QGIS browser om parameters uit te voeren om deze bestanden gemakkelijker te kunnen overschrijven (of op te slaan in de map), wat overeenkomt met het mogelijke gedrag voor invoer
-- You can actually write scripts which output direct to ANY qgis data provider (including oracle and db2)\... it\'s just that these don\'t get exposed in the UI because they don\'t yet support the connections API
+- U kunt in feite scripts schrijven die direct uitvoeren naar ELKE gegevensprovider van QGIS (inclusief Oracle en DB2)\… Het is slechts dat die niet worden weergegeven in de UI, omdat ze nog niet de API voor de verbindingen ondersteunen
 
 Refs NRCan Contract#3000707093
 
@@ -1233,42 +1233,42 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/use
 ### Mogelijkheid: PG: weergeven vreemde tabellen
 Geef vreemde tabellen weer in de browser en het dialoogvenster Databronnen selecteren.
 
-This feature was developed by [Alessandro Pasotti](https://api.github.com/users/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://api.github.com/users/elpaso)
 ### Mogelijkheid: PG raster geef toe te passen ingestelde filter weer
 Dit zou de laatste wijziging moeten zijn voor de PostgreSQL raster gegevensprovider en geeft de ingestelde opties voor filteren weer:
 - Filter kan worden ingesteld in het dialoogvenster Databronnen (net als voor vectorlagen)
-- Filter can be set from the legend tree\'s context menu (as for vector layers)
+- Filter kan worden ingesteld in het contextmenu voor de boom van de legenda (net als voor vectorlagen)
 - De renderer, het bereik en de statistieken min/max worden ook bijgewerkt als het filter wijzigt
 - Nieuwe testen voor het nieuwe gedrag
 
 ![image113](images/entries/75894983-49a43f80-5e35-11ea-95a8-a86276b39bbc.gif)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: PostgreSQL: sla objecten op in tabellen met gemaakte velden
 Sta bijwerken/invoegen van objecten in tabellen van PostgreSQLmet gemaakte velden toe. GENERATED-kolommen is een mogelijkheid die werd geïntroduceerd in PostgreSQL 12, wat het mogelijk maakt dat kolomwaarden worden gemaakt vanuit andere kolommen uit dezelfde tabel; dit vervangt het maken van triggers om, bijvoorbeeld, automatisch een kolom met zwaartepunten of gebieden voor de polygonen in de hoofd geometriekolom te vullen en bij te houden.
 
-This feature was developed by [José de Paula Rodrigues N. Assis](https://api.github.com/users/espinafre)
+Deze mogelijkheid werd ontwikkeld door [José de Paula Rodrigues N. Assis](https://api.github.com/users/espinafre)
 ### Mogelijkheid: Ondersteuning voor veldtypen Date en DateTime toegevoegd aan de providers SpatiaLite en Tekengescheiden tekst
 De providers SpatiaLite en Tekengescheiden tekst ondersteunen nu de veldtypen Date en DateTime.
 
-This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## QGIS Server
-### Feature: Add QGIS_SERVER_IGNORE_BAD_LAYERS config option
+### Mogelijkheid: Optie voor configuratie van QGIS_SERVER_IGNORE_BAD_LAYERS toegevoegd
 Maakt het overschrijven van het standaardgedrag mogelijk in het geval van slechte lagen (om het gehele project ongeldig te maken.
 
 Indien ingesteld op TRUE worden slechte lagen overgeslagen en het restant van het project komt beschikbaar.
 
-This feature was funded by [Geoinformatikbüro Dassau GmbH](https://www.gbd-consult.de/home.html)
+Dit werd mogelijk gemaakt door [Geoinformatikbüro Dassau GmbH](https://www.gbd-consult.de/home.html)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
-### Feature: Server project settings, add \'expanded\' attribute
-In addition to the \'visible\' and \'mutuallyExclusive\' attribute, this update adds \'expanded\' to the GetProjectSettings response of the server. The update allows a web client to see which layer tree elements are expanded / collapsed and to then present them the same way in the web map layer list.
+### Mogelijkheid: Server projectinstellingen, attribuut \'expanded\' toegevoegd
+In aanvulling op de attributen \'visible\' en \'mutuallyExclusive\' voegt deze update \'expanded\' toe aan het antwoord GetProjectSettings van de server. De update maakt het voor een webcliënt mogelijk om te zien welke elementen van de laagboom zijn uitgeklapt / ingeklapt en om ze op dezelfde wijze te presenteren in de lagenlijst van de webkaart.
 
-This feature was developed by [mhugent](https://api.github.com/users/mhugent)
-### Feature: Add DXF server export params NO_MTEXT and FORCE_2D
-QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control text and line symbology for generated DXF files.
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://api.github.com/users/mhugent)
+### Mogelijkheid: Toegevoegd DXF server export parameters NO_MTEXT en FORCE_2D
+QGIS-server ondersteunt nu de nieuwe parameters `NO_MTEXT` en `FORCE_2D` om symbologie voor tekst en lijnen te beheren voor gegenereerde DXF-bestanden.
 
 Voegt ontbrekende parameters toe aan verzoek GetDxf.
 
@@ -1278,7 +1278,7 @@ De validatie voor QGIS Server is opnieuw bekeken. Dit gereedschap is nuttig als 
 
 Voor programmeurs is de validatie nu ook aan te roepen vanuit PyQGIS, dus plug-ins kunnen het nu ook gebruiken.
 
-This feature was funded by [3Liz](https://www.3liz.com)
+Dit werd mogelijk gemaakt door [3Liz](https://www.3liz.com)
 
 Deze mogelijkheid werd ontwikkeld door [Etienne Trimaille](https://github.com/Gustry)
 ### Mogelijkheid: Webp
@@ -1286,16 +1286,16 @@ Deze mogelijkheid werd ontwikkeld door [Etienne Trimaille](https://github.com/Gu
 > 
 > WebP verliesloze afbeeldingen zijn 26% kleiner in grotte, vergeleken met PNG's. WebP afbeeldingen met verlies zijn 25-34% kleiner dan vergelijkbare afbeeldingen JPEG op de equivalente SSIM-kwaliteitsindex.
 
-Source: <https://developers.google.com/speed/webp>
+Bron: <https://developers.google.com/speed/webp>
 
 Met Webp ondersteunt QGIS server nu een indeling die kleinere bestandsgrootten verschaft voor dezelfde kwaliteit en zelfs transparantie verschaft.
 
-This feature was funded by [OPENGIS.ch](https://www.opengis.ch)
+Dit werd mogelijk gemaakt door [OPENGIS.ch](https://www.opengis.ch)
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Plug-ins
-### Feature: Allow plugins to register custom \"Project Open\" handlers
-These allow plugins to extend the \"Open Project\" dialog by adding in support for new file filters, which appear in the formats drop down list alongside the existing \"QGS Projects\" entry.
+### Mogelijkheid: Plug-ins toestaan om aangepaste afhandeling voor \"Project openen\" te registreren
+Deze stellen plug-ins in staat om het dialoogvenster "Project openen" uit te breiden door ondersteuning toe te voegen voor nieuwe bestandsfilters, die verschijnen in de keuzelijst voor indelingen naast het bestaande item \"QGIS projecten\".
 
 Aangepaste afhandeling voor het openen van projecten krijgen dan de eerste kans bij het laden van projectbestanden.
 
@@ -1313,13 +1313,13 @@ Deze update verbeterd Plug-ins beheren en installeren door gebruikers toe te sta
 
 Dit maakt het mogelijk om pre-uitgaven van plug-ins in de opslagplaats voor power-users te testen, daarbij hen nog steeds gemakkelijk in staat te stellen terug te vallen op stabiele versies, zonder de globale optie *Ook de experimentele plug-ins tonen* te moeten deselecteren.
 
-This change makes no difference for users who haven\'t checked the *enable experimental* option.
+Deze wijziging maakt geen verschil voor gebruikers die de optie *Ook de experimentele plug-ins tonen* niet hebben geselecteerd.
 
 ![image115](images/entries/75906887-b1638600-5e47-11ea-98c6-06fb664ab177.webp)
 
-This feature was funded by [Swiss QGIS User Group](https://www.qgis.ch/)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/)
 
-This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
+Deze mogelijkheid werd ontwikkeld door [Olivier Dalang](https://api.github.com/users/olivierdalang)
 ## Programmeerbaarheid
 ### Mogelijkheid: Ondersteuning voor toevoegen van vast te zetten widgets als tabs: addTabifyDockWidget()
 Vast te zetten widgets zijn fantastisch voor het weergeven van complexe interfaces die de functionaliteit van QGIS uitbreiden.
@@ -1328,15 +1328,15 @@ Nu hebben zowel ontwikkelaars van de bron als van plug-ins de optie om tabs te m
 
 ![image116](images/entries/80051225-4b0cf280-84dd-11ea-9016-84a4303f230f.gif)
 
-This feature was funded by [SwissTierras Colombia](https://swisstierrascolombia.com/)
+Dit werd mogelijk gemaakt door [SwissTierras Colombia](https://swisstierrascolombia.com/)+
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Mogelijkheid: Wrappers van parameters voor uitvoer overzetten naar nieuwe API
 Zet de wrappers van parameters voor uitvoer (doelen afvoeren, vector, raster, bestand en map) om naar de nieuwe C++ API voor dialoogvenster en Grafische modellen bouwen.
 
 Dit opent een heel bereik van nieuwe mogelijkheden, inclusief:
-- Models with static outputs for child algorithms, e.g. always saving a child algorithm\'s output to a geopackage or postgres layer
-- Models with expression based output values for child algorithms, e.g. generating an automatic file name based on today\'s date and saving outputs to that file
+- Modellen met statisch uitvoeren voor kind-algoritmen, bijv. altijd de uitvoer van een kind-algoritme opslaan naar een laag van GeoPackage of PostgreSQL
+- Modellen met op expressies gebaseerde waarden voor uitvoer voor kind-algoritmen, bijv. maken van een automatische bestandsnaam, gebaseerd op de datum van vandaag en uitvoer opslaan naar dat bestand
 
 ![image117](images/entries/78028688-bbbf6400-73a2-11ea-9b7f-a7d81133d321.gif)
 
@@ -1355,7 +1355,7 @@ Refs NRCan Contract#3000707093
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Parameters Bron object, Raster, Vector en Laag met mazen overzetten naar nieuwe API
-It\'s now possible to use expression-based layer sources in processing models.
+Het is nu mogelijk om op expressie gebaseerde laagbronnen in modellen van Processing te gebruiken.
 
 Refs NRCan Contract#3000707093
 
@@ -1365,7 +1365,7 @@ Dit is het initiële werk voor ondersteuning van vectortegels-lagen.
 
 ![image118](images/entries/77539757-2d2e7c80-6ea2-11ea-9098-c6c0924f9d59.webp) (De rode lijnen zijn geen artefacten van het renderen; ze zijn met opzet getekend om randen van tegels weer te geven.)
 ### Overzicht
-So far this only includes changes to the qgis_core library.
+Tot op heden bevat dit alleen wijzigingen aan de bibliotheek qgis_core.
 
 Belangrijke aanvullingen aan de publieke API:
 - QgsVectorTileLayer - de belangrijkste klasse voor kaartlagen
@@ -1385,7 +1385,7 @@ Enkele nieuwe klassen die kunnen worden gedeeld door vector- en rastertegels:
 
 (ook QgsTileMatrixSet zal later worden toegevoegd als we ook andere tegelmatrixsets dan alleen GoogleCRS84Quad ondersteunen)
 ### Testen
-You can load a vector tile layer from Python console, e.g.:
+U kunt een vectortegellaag laden vanuit de console voor Python, bijv.:
 
     ds = QgsDataSourceUri() ds.setParam("type","xyz")
     ds.setParam("url", "https://api.maptiler.com/tiles/v3/{z}/{x}/{y}.pbf?key=YOUR_FREE_API_KEY") 
@@ -1393,28 +1393,28 @@ You can load a vector tile layer from Python console, e.g.:
     vtl = QgsVectorTileLayer(uri, "Vector Tiles Test")
     QgsProject.instance().addMapLayer(vtl)
     
-It is also possible to load vector tiles from a local MBTiles file - for \"type\" use \"mbtiles\" and for \"url\" use a local path (e.g. \"/home/martin/x.mbtiles\").
+Het is ook mogelijk vectortegels te laden vanuit een lokaal bestand MBTiles - gebruik \"mbtiles\" voor \"type\" en gebruik voor \"url\" een lokaal pad (bijv. \"/home/martin/x.mbtiles\").
 
 Er is momenteel geen ondersteuning voor labelen.
 ### Dank u wel
-Huge thanks to all funders who have contributed to the crowdfunding and made this possible - <https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors>
+Heel veel dank aan alle gulle gevers die hebben bijgedragen aan de crowdfunding en dit mogelijk hebben gemaakt - <https://www.lutraconsulting.co.uk/blog/2020/04/02/vectortiles-donors>
 
-This feature was funded by [QGIS Community](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
+Dit werd mogelijk gemaakt door [QGIS gemeenschap](https://www.lutraconsulting.co.uk/crowdfunding/vectortile-qgis/)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Parameters voor bereik in Processing overzetten naar nieuwe API, vele andere verbetringen
 Deze update zet uiteindelijk de parameter Bereik om naar de nieuwe C++ API, maar op weg daar naartoe wordt:
-- Refactors the existing gui widget \"QgsExtentGroupBox\" to move the guts out to \"QgsExtentWidget\" (allowing it to be used in places where a group box is inappropriate/looks bad). It also adds a new \"condensed\" mode for the widget, because the default appearance is very space heavy.
+- De bestaande widget voor de GUI \"QgsExtentGroupBox\" opnieuw bijgewerkt om de kern daarvan te verplaatsen naar \"QgsExtentWidget\" (wat het mogelijk maakt het te gebruiken op plaatsen waar een groepsvak niet mogelijk is/er slecht uitziet). Het voegt ook een nieuwe modus \"verkleind\" voor de widget toe, omdat het standaard uiterlijk nogal veel plaats inneemt.
 - De widget voor de nieuwe parameter gebruikt deze algemene QgsExtentWidget, zodat we alle duplicaatcode verwijderen die eerder werd gebruikt voor de oude wrapper van Python
 - Maakt slepen en neerzetten mogelijk van projectlagen vanuit de lagenboom naar een QgsExtentWidget om het bereik automatisch in te stellen zodat het overeenkomt
 - Maakt het mogelijk QgsExtentWidget optioneel null te laten zijn
-- Allows QgsGeometry values to be set for extent parameter values. This is done to aid use of extent parameters with the \"precalculated value\" mode in models \-- you can now use all the expression geometry functions to calculate a geometry and the bounding box of this is used for the parameter value in the child algorithm
+- Maakt waarden QgsGeometry mogelijk die worden ingesteld voor waarden van de parameter Bereik. Dit is gedaan om te helpen bij het gebruiken van parameters bereik met de modus \"vooraf berekende waarde\" in modellen. U kunt nu alle functies voor expressies voor geometrie gebruiken om een geometrie te berekenen en het begrenzingsvak hiervan wordt gebruikt voor de waarde van de parameter in het kind-algoritme
 
 Refs NRCan Contract#3000707093
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Interface en API voor universele gereedschappen voor ontwikkeling/debuggen
-Adds interface hooks to allow plugins (and c++) to register \"development/debugging\" tools
+Voegt haken voor de interface toe om plug-ins (en C++) in staat te stellen gereedschappen voor \"ontwikkeling/debuggen\" te registreren
 
 Deze gereedschappen verschijnen in een nieuw venster Gereedschap Ontwikkeling/Debuggen, en verschaft een geünificeerde afhandeling en plek voor deze gereedschappen in de UI.
 
@@ -1422,19 +1422,19 @@ De bedoeling hier is dat gespecialiseerde gereedschappen voor ontwikkeling/debug
 - Netwerklogger
 - Stijl Eerste Hulp inspectie van lokale variabelen voor Python
 - Gereedschappen voor debuggen bij opstarten
-- Layer load and rendering time debugging tools \... ?
+- Gereedschappen voor debuggen bij Lagen laden en renderen \… ?
 
-Here\'s an example demo showing a \"Python locals\" dev tool:
+Hier is een voorbeelddemo die een gereedschap voor ontwikkeling van \"Python lokalen\" laat zien:
 
 ![image119](images/entries/77492080-55f74780-6e8b-11ea-9141-1b96c42c29eb.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Mogelijkheid: Ondersteuning voor gegevenstype voor QgsProcessingParameterMapLayer
-Allow the definition of accepted layer types for `QgsProcessingParameterMapLayer`. This is useful when an algorithm can work with different layer types (for example, points and rasters) and avoids duplication of the same algorithm with different inputs.
+De definitie van geaccepteerde typen lagen voor `QgsProcessingParameterMapLayer` toestaan. Dit is nuttig als een algoritme kan werken met verschillende typen lagen (bijvoorbeeld punten en rasters) en het vermijdt het dupliceren van hetzelfde algoritme met verschillende invoer.
 
 Dit is een verbetering in de API en is niet zichtbaar voor de grootste meerderheid van de gebruikers.
 
-This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: Typen parameter voor Processing voor databaseschema en tabelnaam toegevoegd
 Vervangt het eerdere ad-hoc Python wrappers voor de widget PostGIS door juiste eerste klasse C++ toegewezen parameters voor schema's en tabellen, met wrappers die zijn gebouwd vanuit de bron-API voor verbindingen.
 
@@ -1491,7 +1491,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.i
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://www.oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1530,7 +1530,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
+Deze mogelijkheid werd ontwikkeld door [Paul Blottiere](https://hytech-imaging.fr/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1550,7 +1550,7 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Bertrand Rix
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1561,7 +1561,7 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Bertrand Rix](https://www.oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Bertrand Rix](https://www.oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Sebastien Peillet
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1682,15 +1682,15 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Audun Ellertsen
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | SpatiaLite support for importing layers with binary fields | [#36705](https://github.com/qgis/QGIS/issues/36705) | [PR #36744](https://github.com/qgis/QGIS/pull/36744) | N/B |
 | PostGIS support for importing layers with binary fields | [#36705](https://github.com/qgis/QGIS/issues/36705) | [PR #36708](https://github.com/qgis/QGIS/pull/36708) | [PR #36720](https://github.com/qgis/QGIS/pull/36720) |
 
-This feature was funded by [Kongsberg Digital](https://www.kongsberg.com/digital/)
+Dit werd mogelijk gemaakt door [Kongsberg Digital](https://www.kongsberg.com/digital/)
 
-This feature was developed by [Audun Ellertsen](https://github.com/audun/)
+Deze mogelijkheid werd ontwikkeld door [Audun Ellertsen](https://github.com/audun/)
 
 {{<content-end >}}

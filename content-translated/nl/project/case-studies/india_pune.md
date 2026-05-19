@@ -21,7 +21,7 @@ type: case-study
   <span>1 mei 2014</span>
 </p>
 
-Dit praktijkvoorbeeld legt uit hoe offline kaarten vanuit WMS/WFS of een in het kaartvenster van QGIS geladen kaart voor te bereidden door tegels te downloaden met behulp van een script in de console van Python. Het script genereert ook een mozaïek uit de tegels voor verder gebruik.
+Dit praktijkvoorbeeld legt uit hoe offline kaarten vanuit WMS/WFS of een in het kaartvenster van QGIS geladen kaart voor te bereiden door tegels te downloaden met behulp van een script in de console van Python. Het script genereert ook een mozaïek uit de tegels voor verder gebruik.
 
 Toegang tot raster-/vectorkaarten door middle van Web Mapping Service (WMS)-services is zeer algemeen en efficiënt. Het heeft verscheidene voordelen, zoals veiligheid, gecentraliseerde en flexibele kaartstijlen. Voorbeelden zijn Google maps, Yahoo, Bing, MODIS, Landsat, kaarten gepubliceerd door NASA, NRSC (India). Het nadeel/beperking van WMS is dat het werkt via internet of intranet. Het is misschien niet mogelijk om altijd een internetverbinding te krijgen, in het bijzonder tijdens veldonderzoek. Ook werkt WMS traag, vergeleken met andere offline indelingen voor afbeeldingen, zoals GeoTiff, jpg, img etc.
 ## Gebruik van QGIS

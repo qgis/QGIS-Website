@@ -87,7 +87,7 @@ In aanvulling daarop zal het activeren van een actie voor het muiswiel, terwijl 
 
 ![image8](images/entries/ab668355973259b389bd2623c4b1ba01b5e8f237.gif)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Toegankelijkheid
 ### Mogelijkheid: Horizontaal scrollen in tabel met shift+wiel
 Attributentabellen kunnen nu horizontaal gescrold worden met de toetscombinatie Shift + muiswiel, schakelend vanuit de standaard verticale bewerking voor scrollen.
@@ -245,7 +245,7 @@ Deze triangulatie is beschikbaar voor alle 3D-stijlen voor renderen van puntenwo
 
 ![image22](images/entries/4b103066398ae065f4e3eb1e898356fceda8ef1d.webp)
 
-This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
+Deze mogelijkheid werd ontwikkeld door [Vincent Cloarec](https://github.com/vcloarec)
 ### Mogelijkheid: Ondersteuning voor Cloud Optimized Point Clouds (COPC)
 QGIS verschaft nu ondersteuning voor het lezen van Cloud Optimized Point Clouds uit lokale gegevensbronnen en die op afstand.
 
@@ -347,7 +347,7 @@ This required significant refactoring and the porting of code from `QgsMapToolDi
 
 ![image27](images/entries/c0a8faef50107305ea8a04e92f68f9d7518507ff.gif)
 
-This feature was developed by [Denis Rouzaud](https://github.com/3nids)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
 ### Mogelijkheid: Nieuwe beperkingen voor paneel Geavanceerd digitaliseren
 Het paneel Geavanceerd digitaliseren bevat nu twee aanvullende zachte beperkingen (lijnen voor snappen) om het voor gebruikers mogelijk te maken posities vast te leggen, relatief ten opzichte van bestaande objecten. Deze beperkingen worden optioneel ingeschakeld en omvatten:
 - **Lijn verlengen**: QGIS zal een beperking verschaffen die de verlening van een lijn traceert, gebaseerd op de oriëntatie van het segment, gedefinieerd door het geselecteerde punt
@@ -454,7 +454,7 @@ Een algoritme voor het weergeven van een bericht is toegevoegd aan de gereedscha
 
 ![image38](images/entries/e2433bb4fe23b076129ea4accd516e3b7939d64f.gif)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ### Mogelijkheid: Uitvoeren van batch-processing in stappen in taken
 Individuele stappen uit het dialoogvenster voor batch-processing kunnen nu, indien mogelijk, worden uitgevoerd als een afzonderlijke taak. Hoewel individuele stappen nog steeds in reeks worden uitgevoerd in plaats van parallel, houdt dit de gebruikersinterface bereikbaar, en staat tussentijds annuleren en van de voortgang toe.
 
@@ -555,7 +555,7 @@ Deze nieuwe versie van QGIS heeft de manier waarop de standaard symbolen voor pr
 
 ![image47](images/entries/5fca0da47e4af53c46a12dcd5b68a1982afff16b.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Profiel plotten
 ### Mogelijkheid: Gereedschap voor plotten van hoogteprofielen
 QGIS bevat nu een eigen gereedschap voor het plotten van hoogteprofielen
@@ -697,13 +697,13 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Een functie QgsScaleCalculator toegevoegd om de breedte van het kaartvenster te berekenen vanuit een opgegeven bereik, schaal en DPI
 A new `calculateCanvasWidth( extent, scale )` was added to the `QgsScaleCalculator` class to derive canvas width in pixel unit when providing an extent, a scale, and a DPI.
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Huidige actie voor symbool leegmaken in widget knop Symbool
 Een actie instellen op null / huidige symbool leegmaken is toegevoegd om het huidige symbool leeg te maken voor een widget knop Symbool.
 
 ![image54](images/entries/e7c6ed595485dd51c3bccb87f2a31f9691ad4aae.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Belangrijke reparaties
 ### Reparaties van problemen door Even Rouault
 | Titel probleem | URL Issues (indien gerapporteerd, GitHub) | URL Commit (Github) | 3.22 backport commit (GitHub) |

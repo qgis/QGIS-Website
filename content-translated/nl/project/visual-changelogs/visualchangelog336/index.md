@@ -40,9 +40,9 @@ We've added a brand new "Movie" mode to the temporal controller. This mode has b
 
 In movie mode, you can set the total number of frames for your movie and the animation will progress frame by frame for that number of frames, advancing the current map settings frame (and @frame\_number expression variable) at each step. You can then use animated symbols, or alter your symbology using the @frame\_number expression variable, to create dynamic, animated maps.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Gebruikersinterface
 ### Feature: Custom layer properties in map layer properties
 We've added display of custom layer properties for map layers within the layer properties information tab, making it easy for users to view any additional metadata and properties attached to their map layers.
@@ -62,7 +62,7 @@ We've introduced a new setting for the "raster fill" symbol type, which allows y
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: New "Filled line" symbol layer type
 We've added a brand new line symbol type for "filled lines". Much like the older "Filled marker" symbol type offers for marker symbols, this option will render lines using **any** QGIS fill symbol. This means you can now render lines filled with gradients, line hatches, raster fills, and much more!
 
@@ -70,7 +70,7 @@ We've added a brand new line symbol type for "filled lines". Much like the older
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Mazen
 ### Feature: Mesh labeling
 In 3.36 we've added labeling support for mesh layers. Labels can be applied to mesh vertices, or mesh faces, and can take advantage of all the advanced formatting options and appearance settings that you get for vector labels. Labelling settings are available through layer properties dialog and the layer styling panel. Toggling mesh labels on and off can also be conveniently done through the layer panel's context menu.
@@ -86,9 +86,9 @@ You can now set a data-defined, dynamic color for 3D lines rendered using the "R
 
 ![](images/entries/609eca4c0ebaa0b4dbf12d0dc4f4fae3fab5dc29.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Improved "Phong" material and lighting
 The Phong shader is used as the default material for showing vector features in QGIS 3D views. For 3.36, this shader has been improved to better handle ambient and shininess parameters. Additionally, we've taken care to ensure that the exact same shading will apply regardless of the underlying geometry type (points, lines or polygons), and regardless of whether data defined symbol colors are in use. This gives users a much more predictable and easy-to-configure material for their 3D views.
 
@@ -96,15 +96,15 @@ For easier configuration of nicer-looking materials, we also added new controls 
 
 ![](images/entries/267232fa32fc1510a5c27c0364451699c1f415a1.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: "Physically based" metal rough material
 For even more beautiful 3D maps, we've added a new material choice for a "physically based rendering" (PBR) material. This material lets you define the base color of the surface, and how "metal" and "rough" it should appear. This material is simple to configure and get great results from, and is expected to become the default material in a future QGIS release.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Define 3D scene extents on 2D maps
 We added a shortcut action to the 3D map toolbar that allows users to quickly draw an extent limit for the scene on a 2D map.
 
@@ -214,15 +214,15 @@ The `qgis_process` command line interface tool benefits from a new `--skip-loadi
 
 This feature was funded by [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Click to open output paths in processing logs
 A super-helpful new shortcut we added to 3.36 is that any output paths (such as file, folder, or HTML outputs) in the Processing log are now clickable, allowing you to directly open the containing folder and preselect the generated file!
 
 ![](images/entries/52699edf93f7fb8710fe715ccc5482ac2f299c9c.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Vector coverage algorithms
 QGIS 3.36 introduces a number of new tools for working with vector coverage layers. "Vector coverages" are polygon layers where the features are expected to neighbour each other, without overlaps or gaps, such as administrative boundary layers. These new Processing algorithms expose tools for working with coverages, including:
 - **Validate coverage**: This algorithm analyzes a coverage to find places where the assumption of exactly matching edges is not met.
@@ -237,9 +237,9 @@ These new tools rely on functionality from the GEOS geometry handling library. O
 
 </div>
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Improved Export Layers to DXF algorithm
 We've introduced a number of new parameters to the "Export Layers to DXF" algorithm , to match the functionality of its non-Processing counterpart:
 - An extent parameter to filter features to be exported
@@ -257,7 +257,7 @@ We've reworked the backend of the Processing GRASS Provider, which helps reduce 
 
 This feature was funded by [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Faster qgis\_process startup
 For 3.36, we've substantially improved the startup speed of the `qgis_process` command. This was done by applying a variety of optimisations inside QGIS, such as lazy loading of the authentication and style library frameworks so that these frameworks are only initialised when required, and by reworking the logic for migrating user settings between different QGIS versions to avoid unnecessary work.
 
@@ -265,16 +265,16 @@ Together, these improvements have reduced `qgis_process` startup times from mult
 
 This feature was funded by [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Opties voor toepassing en projecten
 ### Feature: "localhost" option for OAuth2 Redirects
 Some OAuth2 providers, like Microsoft Sharepoint, require specific redirect hosts for security reasons. They may not accept the standard "http://127.0.0.1" redirect, but instead allow only "https://127.0.0.1" or "http://localhost".
 
 To ensure compatibility with these providers without the complexity of setting up HTTPS, we added a new option to use "localhost" as the redirect host for OAuth2 authentication.
 
-This feature was funded by [North Road](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Serial port sensor baudrate selection
 For 3.36 you can now customize the connection speed (baud rate) to use for serial port sensors. Previously, this parameter was hardcoded at 9600 baud, limiting compatibility with various sensor types, such as NMEA sensors requiring 4800 baud. You can now connect to a wider array of sensors by adjusting the baud rate to meet specific requirements.
 
@@ -306,7 +306,7 @@ We've taken care to ensure that SensorThings data sources are loaded in the most
 
 This feature was funded by [BRGM](https://www.brgm.fr/en), French PEPR OneWater - Eau Bien Commun ([https://www.onewater.fr/en](https://www.onewater.fr/en), ANR-22-PEXO-0009, under the Future Program France 2030) and [Water4All Partnership](https://www.water4all-partnership.eu/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Support for WFS documents with complex feature schemas
 We enhanced the WFS Provider to add support for complex feature schemas. The implementation exposes properties of complex WFS types as JSON content, converted from their original XML representations.
 
@@ -391,7 +391,7 @@ This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.l
 ### Feature: Optimised methods to convert GeoJSON geometries to QgsGeometry
 We've added some highly optimised methods which allow direct construction of geometries (QgsGeometry) from raw JSON objects, instead of requiring translation through another library's geometry structures. These methods are exposed through the new API call `QgsJsonUtils.geometryFromGeoJson`.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Qt WebEngine classes can now be used by plugins
 In older QGIS versions, an incompatibility between the modern Qt "WebEngine" classes and QGIS' 3D framework prevented QGIS plugins from using any WebEngine widgets. This was a significant shortcoming, as the older Qt "WebKit" widgets were very limited, slow, and did not support many modern JavaScript essentials.
 
@@ -407,7 +407,7 @@ See QgsCoordinateReferenceSystemProxyModel.Filter for the available CRS filterin
 
 Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Python support in Qt6 builds
 While version 5.15 remains the recommended Qt version for compiling QGIS, we've been hard at work adding full support for Qt 6 builds of QGIS. This is necessary in order to support modern desktop requirements, such as full compatibility with Wayland based Linux environments and for optimised Apple silicon builds.
 

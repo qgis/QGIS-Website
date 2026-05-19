@@ -42,7 +42,7 @@ Examples of some interesting temporal use cases include:
 
 ![](images/entries/e9349bf2255cb4e027d1f91460eb4fea9710c4c1.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Kaartgereedschap
 ### Feature: Add Elevation Controller for filtering vertical data in 2d maps
 A new Elevation Controller provides users with the ability to filter vertical data in 2D maps, providing the equivalent experience of the temporal controller for elevation z-range slicing of data in line with [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201).
@@ -53,11 +53,11 @@ The controller shows as a range slider on the left of the map. There's a configu
 
 ![](images/entries/09e8196d117fbd9dc521e59ed5e206ced16e14ab.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add Z range support to map canvas / map settings items
 Elevation filtering is now supported in map canvases
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add option to set a fixed elevation slice width for elevation controller
 A new option is provided on the configuration menu of the elevation controller, which allows for setting a fixed elevation slice width.
 
@@ -65,14 +65,14 @@ It can be used when a specific elevation range width is desired, or when the ran
 
 ![](images/entries/89ac87d5ec596dbd04f45be17dac9532d4a120b4.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gebruikersinterface
 ### Feature: Add search option for regular expression based searching
 A new optional regex mode has been exposed for advanced search options, as implemented in the updated search functionality for the code editor.
 
 ![](images/entries/2ab6a0a0e6837a51cf7e50a7104359fc063ced7e.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Data defined override: use middle-click to open the Expression Builder dialog window
 ## Beschrijving
 The middle-click on the Data defined override icon makes the Expression Builder dialog window open, as a convenient shortcut for right-clicking and then left-clicking on the Edit menu item.
@@ -86,7 +86,7 @@ A new single-color symbology has been added for raster layers. This allows for a
 
 ![](images/entries/73049b50b1c9d2e2c0c22fbfdd00db58d4ffc5c0.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add support for Wind Barb rendering for mesh vector datasets
 Wind Barbs are a common way to display wind strength and direction on maps, and the new Wind Barb symbology type makes it easy for users to use this powerful visualization style for their mesh vector datasets.
 
@@ -109,7 +109,7 @@ When the layer is set to the "cartographic" mode, then the default behavior is a
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add 'over point' placement option for cartographic label mode
 A new option for label placement has been added for "O" = "over point" when the label placement mode is set to the "cartographic" mode.
 
@@ -119,7 +119,7 @@ When a feature's data-defined placement priorities include this new 'O' option, 
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Renderen
 ### Feature: Add data defined control over heatmap radius and maximum value
 This allows users to define the radius and maximum as a value that makes sense for the current situation, e.g. the current map scale, current print atlas feature, or current temporal range.
@@ -128,14 +128,14 @@ This additionally includes the base changes required for data-defined properties
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Afdruklay-outs
 ### Feature: Tab character support for QgsTextFormat and QgsTextRenderer
 A [regression](https://github.com/qgis/QGIS/issues/56981) resulted in QGIS stripping tab characters and limiting the ability to use tab characters in certain contexts, such as performing character alignment in legends.
 
 ![](images/entries/b8934ab8ad907adbc628a9e168fcbd9c88af83ee.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Copy composer grids
 A button to copy (duplicate) the selected grid has been added to the print composer.
 
@@ -155,7 +155,7 @@ Additionally, the range for z-filtering can be data-defined, allowing different 
 
 ![](images/entries/c7f2cc35cfaf4a101ee2be654688142fb83ac055.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add buttons to expand or collapse layout legend tree
 New buttons have been added to allow users to easily expand or collapse the legend trees within print layouts.
 
@@ -168,7 +168,7 @@ New variables for retrieving the current `@map_z_range_lower` and `@map_z_range_
 
 ![](images/entries/ab7a53d114337665cded7fd178658144222d1962.gif)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Gegevensbeheer
 ### Feature: Duplicate policy on fields when duplicating features
 When duplicating a feature (and its children) a new duplication policy will be available on QgsField objects.
@@ -190,7 +190,7 @@ The user can either manually populate a table with begin/end dates for each band
 
 ![](images/entries/7075b0b60ec0f0d4e5901e4d94452fa187b9a787.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Introduce fixed elevation range for raster layers
 A new option has been introduced for specifying how elevation is associated with raster layers. It permits a fixed elevation range to be set for the layer and can be used when the layer has a single fixed elevation or a range (slice) of elevation values.
 
@@ -200,7 +200,7 @@ When enabled, the layer will only be visible in 2D maps with elevation filtering
 
 ![](images/entries/64a2386154517472b58a41f2551b0d8d30951770.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Introduce fixed elevation range for mesh layers
 A new fixed elevation range mode is available for mesh layers, equivalent to the fixed elevation range mode for raster layers which provides a new option for specifying how mesh layers have associated elevation. It permits a fixed elevation range to be set for the layer. It can be used when the layer has a single fixed elevation or a range (slice) of elevation values.
 
@@ -210,7 +210,7 @@ When enabled, the layer will only be visible in 2D maps with elevation filtering
 
 ![](images/entries/88a53a76a505418c2ed776f70fb56cd5bd85031b.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add a "fixed range per band" elevation mode for rasters
 In this new mode, each band in the raster can have a fixed elevation range associated with it.
 
@@ -224,7 +224,7 @@ Expression-based value definitions will allow users to design expressions capabl
 
 ![](images/entries/9622032fd646ac79cc63e48ed30eca1841c9993b.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add "dynamic elevation range per band" mode for rasters
 A new dynamic mode for configuration raster elevation is provided where the elevation range for raster bands is calculated using a pair of QGIS Expressions for the lower and the upper limits of the elevation range for the layer.
 
@@ -242,11 +242,11 @@ This differs from the"Fixed Elevation Range Per Band" mode which requires users 
 
 ![](images/entries/d40450a1bcc9d3d2d3c5565681228b1d52256b69.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add fixed elevation range per dataset group mode for mesh layers
 Additional functionality to set a fixed elevation range per dataset group on mesh layers mimics the new "fixed range per band" mode raster layers but allows a per-dataset group elevation range to be set for mesh layers.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add option to export all lines with minimal width in dxf exports
 An optional setting has been added to dxf exports that will allow users to write all lines with minimal width 0 (hairline).
 
@@ -264,7 +264,7 @@ It is now possible to override the output name of individual layers exported, wi
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Create DXF blocks for point symbols with data defined properties
 Additional enhancements have been added to the capability of utilizing references within a DXF, especially for complex data-defined properties, providing much smaller DXF outputs for complex layers that include repeated point symbols.
 
@@ -284,7 +284,7 @@ By default, this setting will be set to false.
 
 This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Import/ Export 'DXF Export' dialog settings
 Users to save and restore GUI settings for the DXF Export dialog, making it possible to export any number of configurations for improved reusability or to share them with colleagues for enhanced collaboration.
 
@@ -294,7 +294,7 @@ Settings are exported to an XML file which can be loaded into the DXF Export con
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Formulieren en widgets
 ### Feature: Add CMYK support for Color Widget
 CMYK color support has been added for the color widget in line with the [CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283).
@@ -311,7 +311,7 @@ This is very useful in contexts where a captured feature or value may rely on th
 
 This feature was funded by [Hansestadt Herford](https://www.herford.de/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add "match contains" to autocompleter in value relation widget
 Previously, the autocomplete function would match from the beginning of the string only, but a new checkbox option allows users to match contained values within the entire string.
 
@@ -325,7 +325,7 @@ Grouping functionality has been added for the value relation editor widget, allo
 
 ![](images/entries/3ef4fa48ee89cc91babb736dd477a1db6b66bcbc.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Legenda van laag
 ### Feature: Show a color ramp legend for vector heatmap layers
 Instead of showing no legend for these layers, QGIS will now show the color ramp as a gradient bar.
@@ -338,13 +338,13 @@ This update also introduced changes to the internal API for vector renderers so 
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add layer tree filter for "Show Broken Layers Only"
 When checked, only layers with broken sources will be shown in the tree.
 
 This allows users to easily find broken layers in large complex projects, where they may otherwise escape notice!
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Processing
 ### Feature: Show more detail in history dialog
 A new tree display is provided for review of processing history entries, where the root item for each entry shows the full algorithm log when clicked and the respective python or qgis\_process commands are displayed as child items.
@@ -353,7 +353,7 @@ This provides more useful information for users browsing the history, while stil
 
 ![](images/entries/34df4b46463545d3d9fc20168d386ffc04d9341d.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add "Run Selected Steps" option to model designer
 A new action will allow users to run only the selected steps in a model, effectively allowing users to run a subset of a model.
 
@@ -363,7 +363,7 @@ This makes it possible for a user to fix parts of a large model, without having 
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add "View Output Layers" option for model child algorithms
 When editing a model through the designer, a new right-click context option has been added for "View Output Layers" on any child step in the model<br />that has been run. Selecting this option will add the output layers from that step as new layers in the current QGIS project.
 
@@ -377,7 +377,7 @@ An additional "View Log" action has also been provided so that users can see the
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Endpoint distance threshold for network analysis
 An optional end-point distance threshold parameter has been added to the network analysis tools.
 
@@ -393,7 +393,7 @@ The behavior of the threshold depends on the algorithm:
 
 Dit werd mogelijk gemaakt door City of Canning
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add support for pure date and time decorators
 QGIS Processing previously provided support for generating and processing datetime values as an explicit datetime type, but this release will support the definition of datetime, time, and date objects as discrete data types.
 
@@ -419,7 +419,7 @@ The API for project objects has also been extended to support this functionality
 
 ![](images/entries/83cc370834aa045a61e3021da640753f406f4a23.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add elevation range to project properties
 This setting allows users to specify the upper and lower elevation limits associated with the project in line with [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201), providing an equivalent user experience for filtering elevation range as users may already be familiar with for configuring the temporal range settings within projects.
 
@@ -427,7 +427,7 @@ This can be specified through the Elevation tab (renamed from "Terrain") in the 
 
 ![](images/entries/c9f0765306562047cdba7a675587d484d5a7ce51.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Sensoren
 ### Feature: Support feature expansion
 This change allows SensorThings entities to be expanded to contain their related child feature attributes, exposing the relational SensorThings model as a traditional "flat" GIS-friendly table structure.
@@ -442,7 +442,7 @@ An option to limit the number of child features returned when expanding is provi
 
 This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add support for SensorThings Multidatastreams
 This adds support for the Multidatastream entity type, as implemented in the SensorThings version 1.1 "MultiDatastream extension".
 
@@ -450,7 +450,7 @@ While the specification mandates that MultiDatastreams have an optional polygon 
 
 This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Serial port sensor's data frame delimiter
 A new data frame delimiter option has been added to the serial port sensor configuration.
 
@@ -458,11 +458,11 @@ In cases where multiple data frames are found in the last chunk of data pushed b
 
 ![](images/entries/6cc5c72f2a9ff329f8a507e63e28d3771b26c0d3.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add an optional feature limit setting
 Allows setting a maximum number of features to request from the service, avoiding overloading services with too many requests
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Implement subset string support for SensorThings
 This allows setting custom filters on the layer, using the SensorThings filter syntax.
 
@@ -470,7 +470,7 @@ A custom layer filter GUI is provided for SensorThings layer filters, making it 
 
 This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Profiel plotten
 ### Feature: Add tolerance for lines and polygons
 The elevation profile tool has been improved by adding tolerance support for lines and polygons (2D/ 3D), as illustrated using drillhole representations (from the [OpenLog plugin](https://plugins.qgis.org/plugins/openlog/)).
@@ -490,7 +490,7 @@ The extent can be set using the data source manager before initially adding the 
 
 This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Web proxy prefix support for ArcGIS URLs
 A new prefix field is provided in ArcGIS settings dialogs that allows users to define the URL prefix of a web proxy used to access ArcGIS Services which will be prepended to all requests.
 
@@ -532,7 +532,7 @@ In addition, the processing script editor has been ported to leverage the `QgsCo
 
 ![](images/entries/286b7da77b39735f963327f8c0c373a4530023fc.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Register custom elevation profile sources
 We've added a new `QgsProfileSourceRegistry` class to allow both core and plugin developers to register profile sources other than map layers (e.g., based on profile web services).
 
@@ -546,7 +546,7 @@ Like other QGIS registries, the profile source registry is available from the `Q
 
 This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
 
-This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Even Rouault (Spatialys)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
