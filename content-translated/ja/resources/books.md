@@ -35,8 +35,8 @@ An Introduction to Mapping for Ecological Surveys
 ### Collecting Field Data with QGIS and Mergin Maps
 Learn to master the Mergin Maps platform to collect, share and manage your field data.
 - [https://locatepress.com/book/mergin-maps](https://locatepress.com/book/mergin-maps)
-- Authors: Kurt Menke and Alexandra Bucha Rasova
-- Date: September 2024
+- 著者: Kurt Menke と Alexandra Bucha Rasova
+- 日付:  2024年9月
 
 ### Discover QGIS 3.x - Second Edition
 A workbook for Classroom or Independent Study Updated to QGIS 3.24+
@@ -210,12 +210,12 @@ QGISソフトウェアとアプリケーションのチュートリアル。
 ### Analizzare e processare i dati con QGIS
 A practical guide to spatial data processing, analysis, and automation in QGIS, covering vector and raster workflows, databases, and Python integration.
 - https://www.lafeltrinelli.it/analizzare-processare-dati-con-qgis-libro-faustino-cetraro/e/9788857917863
-- Author: Faustino Cetraro
+- 著者: Faustino Cetraro
 - Date: February 2026
 
 ### Esercizi svolti in QGIS. Guida pratica all'analisi vettoriale
 - [https://www.darioflaccovio.it/libri-universitari-ingegneria-architettura-geologia/1370-esercizi-svolti-in-qgis.html](https://www.darioflaccovio.it/libri-universitari-ingegneria-architettura-geologia/1370-esercizi-svolti-in-qgis.html)
-- Authors: Mauro Fabrizio, Ludovico Frate
+- 著者: Mauro Fabrizio, Ludovico Frate
 - 日付: 2019年9月
 
 ## 日本語

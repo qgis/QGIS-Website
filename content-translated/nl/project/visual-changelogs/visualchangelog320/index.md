@@ -230,7 +230,7 @@ Dit werd mogelijk gemaakt door SLYR
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Tekstballon stijl Gebogen lijn
-A new \"Curved Line\" callout style has been provided for creating cartographically pleasing curved line callouts between the labels and features
+Een nieuwe stijl voor tekstballonnen \"Gebogen lijn\" is toegevoegd voor het maken van cartografisch aantrekkelijke tekstballonnen met gebogen lijnen tussen de labels en objecten
 
 Opties bevatten:
 - Selecteren van een specifieke richting voor de boog (met de klok mee of tegen de klok in)
@@ -243,7 +243,7 @@ Opties bevatten:
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Begin- of eindpunten vastgezette tekstballon accentueren
-When the \"show pinned labels\" option is enabled, QGIS will now also highlight any pinned callout start or end points. This allows users to immediately see which callouts points have been manually placed in relation to those that are automatically placed.
+Wanneer de optie \"Vastgezette labels weergeven\" is ingeschakeld, zal QGIS nu ook begin- of eindpunten van vastgezette tekstballonnen accentueren. Dit maakt het voor gebruikers mogelijk onmiddellijk te zien welke punten voor tekstballonnen handmatig zijn neergezet in relatie tot die welke automatisch zijn geplaatst.
 
 ![image27](images/entries/e1de38ee6adde2a016b8d4550111ff766211f0f7.webp)
 
@@ -269,37 +269,37 @@ Lijnen voor tekstballonnen mogen nu data-bepaalde begin- en eindpunten hebben, n
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Interactief verplaatsen van tekstballonnen met het gereedschap Label verplaatsen toestaan
-This change allows the interactive \"Move labels\" tool to also move callout endpoints, whenever the callout has data-defined origin or destination fields set.
+Deze wijziging stelt het interactieve gereedschap \"Label verplaatsen\" in staat ook eindpunten van tekstballonnen te verplaatsen, wanneer de tekstballon een data-bepaald veld voor origine of doel heeft ingesteld.
 
 ![image29](images/entries/8bb0e3614666059f3fe66065173f207d335d3800.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Puntenwolken
 ### Mogelijkheid: Ondersteuning voor gegevenssets op afstand (EPT)
-Point cloud datasets that have been processed to [EPT format](https://entwine.io/entwine-point-tile.html) can be loaded from remote HTTP(S) servers, similar to how raster/vector tiles work. This way, it is possible to access large point cloud datasets without first having to download them as LAS/LAZ files. The EPT format is optimized for tiling and streaming, so QGIS only downloads small amounts of data necessary for display of the current view and resolution. This works in both 2D and 3D view.
+Gegevenssets voor puntwolken die zijn verwerkt naar [indeling EPT](https://entwine.io/entwine-point-tile.html) kunnen worden geladen vanaf http(s)-servers op afstand, soortgelijk aan de werkwijze voor raster-/vectortegels. Op deze manier is het mogelijk toegang te verkrijgen tot zeer grote gegevenssets voor puntwolken zonder ze eerst als LAS/LAZ-bestanden te moeten downloaden. De indeling EPT is geoptimaliseerd voor tegels en streamen, dus downloadt QGIS alleen kleine hoeveelheden gegevens die nodig zijn voor het weergeven van de huidige weergave en resolutie. Dit werkt in zowel weergave 2D als 3D.
 
-If you have point cloud datasets in LAS/LAZ format, these can be converted to EPT using [Entwine](https://github.com/connormanning/entwine) or [Untwine](https://github.com/hobu/untwine) (shipped also with QGIS).
+Wanneer u gegevenssets voor puntwolken in de indeling LAS/LAZ hebt, kunnen deze worden geconverteerd naar EPT met behulp van [Entwine](https://github.com/connormanning/entwine) of [Untwine](https://github.com/hobu/untwine) (ook verschaft met QGIS).
 
-How to use: in Data Source Manager \> Point Cloud tab \> select \"Protocol\" as the source type and enter URL of the dataset (normally ending with \"ept.json\").
+Hoe te gebruiken: in Databronnen beheren \> tab Puntenwolk \> selecteer \"Protocol\" als het type bron en voer de URL van de gegevensset in (normaal gesproken eindigend met \"ept.json\").
 
-You can test with [USGS LiDAR data](https://usgs.entwine.io/) - just use the link from \"EPT\" column from one of the datasets. Some example endpoints include:
+U kunt het testen met [USGS LiDAR data](https://usgs.entwine.io/) - gebruik eenvoudigweg de link uit de kolom \"EPT\" van een van de gegevenssets. Sommige eindpunten voor de voorbeelden omvatten:
 - [Chicago](https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_IL_4County_Cook_2017_LAS_2019/ept.json)
 - [Mount Baker](https://s3-us-west-2.amazonaws.com/usgs-lidar-public/USGS_LPC_WA_MtBaker_2015_LAS_2017/ept.json)
-- [Denmark](https://na-c.entwine.io/dk/ept.json)
-- [Netherlands AHN2](https://na-c.entwine.io/ahn/ept.json)
+- [Denemarken](https://na-c.entwine.io/dk/ept.json)
+- [Nederland AHN2](https://na-c.entwine.io/ahn/ept.json)
 
-By the way, every point cloud dataset that QGIS loads is first processed to EPT (look for \"ept_XXX\" sub-folder where your original data is located), so it is possible to just copy that \"ept_XXX\" folder to a HTTP(S) server and you are ready to use this feature.
+O ja, elke gegevensset voor puntwolken die QGIS laadt wordt eerst verwerkt naar EPT (zoek naar de submap \"ept_XXX\" waar uw originele gegevens zich bevinden), dus is het mogelijk om alleen die map \"ept_XXX\" te kopiëren naar een http(s)-server en u bent klaar om deze mogelijkheid te gebruiken.
 
 ![image30](images/entries/50ed450146655afb5c6ae68f0ead344cfc9eea73.webp)
 
-This feature was funded by [Hobu](https://hobu.co/)
+Dit werd mogelijk gemaakt door [Hobu](https://hobu.co/)
 
-This feature was developed by [Belgacem Nedjima (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Belgacem Nedjima (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Afdruklay-outs
-### Feature: \"Convert to Static Text\" option
-When using dynamic, or expression-based labels, users may now select the \"Convert to Static Text\" option which has been added to the dropdown menu next to \"Insert/Edit Expression...\", in the layout label properties widget.
+### Mogelijkheid: Optie \"Naar statische tekst converteren\"
+Bij het gebruiken van dynamische of op expressie-gebaseerde labels kunnen gebruikers nu de optie \"Naar statische tekst converteren\" selecteren die is toegevoegd aan het keuzemenu naast \"Expressie invoegen/bewerken…\", in de widget voor eigenschappen van de lay-out voor het label.
 
-This option will evaluate and replace any dynamic parts of a label\'s contents with their current values.
+Deze optie zal dynamische delen van de inhoud van een label evalueren en vervangen door hun huidige waarden.
 
 Dit geeft een gemakkelijke manier om dynamische labels te wijzigen naar statische, zodat gebruikers, indien nodig, de resultaten handmatig aan kunnen passen.
 
@@ -312,7 +312,7 @@ Dit werd mogelijk gemaakt door Kanton Zug - Amt für Raum und Verkehr (ARV)
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
 ## Expressies
 ### Mogelijkheid: Functie length3D
-A \"length3D\" function has been added for returning the 3D length of a LineGeometry type geometry. This calculates the cartesian 3D length of a geometry line object. If the geometry is not a 3D line object, it returns its 2D length.
+Een functie \"length3D\" is toegevoegd voor het teruggeven van de 3D-lengte van een type geometrie LineGeometry. Deze berekent de Cartesiaanse 3D-lengte van een geometrie-lijnobject. Als de geometrie geen 3D-lijnobject is, geeft het de 2D-lengte terug.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Uitgebreide arrayfuncties voor expressies
@@ -323,24 +323,24 @@ De volgende expressies voor arrays werden toegevoegd:
 
 Dit werd mogelijk gemaakt door Canton of Luzern
 
-This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
+Deze mogelijkheid werd ontwikkeld door [Damiano Lombardi](https://github.com/domi4484)
 ### Mogelijkheid: Type MIME functie voor expressie
-The new `mime_type( bytes )` expression function returns the MIME Type, or [Media type](https://en.wikipedia.org/wiki/Media_type), of an input bytes object
+De nieuwe `mime_type( bytes )` functie voor expressie geeft het Type MIME, of [Media type](https://en.wikipedia.org/wiki/Media_type), van een ingevoerd bytes-object terug
 
 ![image31](images/entries/c6aa4689915ec3337efac4284ed39a15e8cadddf.webp)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Digitaliseren
 ### Mogelijkheid: Attributen van de grootste geometrie bij samenvoegen selecteren
 Een knop om attributen van de grootste geometrie te selecteren is toegevoegd aan het dialoogvenster voor bevestiging bij het gebruiken van de bewerkingsgereedschappen voor samenvoegen van objecten voor polygoon- en lijnlagen.
 
 ![image32](images/entries/e27a6a42f878cdfec87021d53241457aa1d8845f.webp)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ### Mogelijkheid: Stromende modus Digitaliseren
-When streaming digitizing mode is active, points are automatically added following the mouse cursor movement, providing a \"freehand drawing\" type experience.
+Als de modus voor stromend digitaliseren actief is, worden punten automatisch toegevoegd, de verplaatsing van de muiscursor volgend, wat een \"vrije hand tekenen\" type ervaring geeft.
 
-Using the \"R\" key during digitizing operations will toggle streaming digitizing and normal (or circular string) digitizing.
+Gebruiken van de \"R\"-toets tijdens bewerkingen voor digitaliseren zal schakelen tussen stromend digitaliseren en normaal (of cirkelvormige reeksen) digitaliseren.
 
 Werkt met meerdere kaartgereedschappen, inclusief het maken van nieuwe lijn- of polygoonobjecten, ring toevoegen, deel toevoegen, opnieuw vormen, objecten splitsen, delen splitsen, en meer.
 
@@ -349,7 +349,7 @@ Werkt met meerdere kaartgereedschappen, inclusief het maken van nieuwe lijn- of 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720707
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: New \"Line Endpoints\" snapping option
+### Mogelijkheid: Nieuwe optie snappen aan \"Lijn eindpunten\"
 Indien ingeschakeld snapt deze modus voor snappen alleen aan het begin- of eindpunt van lijnen. Bij snappen op een polygonenlaag zal alleen aan het eerste punt in ringen worden gesnapt.
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720707
@@ -366,15 +366,15 @@ Deze functie ondersteunt de volgende bewerkingen voor gebruik:
 - Alt+klik met gereedschap Punten voor beginnen van digitaliseren van een polygoon.
 - Elke volgende klik voegt een nieuw punt toe aan de polygoon van elastiek.
 - Backspace/ delete verwijdert het laatste toegevoegde punt aan het elastiek.
-- Esc cancels the polygon selection mode, as does backspace/ deleting all of the rubberband\'s vertices.
+- Esc annuleert de modus voor selecteren van de polygoon, net als backspace/delete voor alle punten van het elastiek.
 - Klik met rechts voltooid het digitaliseren van de polygoon en selecteert alle punten binnen de polygoon van elastiek.
 
 ![image34](images/entries/d4a70011e9064862c99827f5b940805dd2d45182.gif)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ## Gegevensbeheer
 ### Mogelijkheid: Waarschuwingspictogram voor boom van lagen voor lagen met onnauwkeurigheden voor CRS
-A new \"Show CRS accuracy warnings for layers in project legend\" is provided which, when checked, will display a new warning icon identifying any layers with a CRS which is identified as having accuracy issues.
+Een nieuwe optie \"Waarschuwingen voor nauwkeurigheid CRS voor lagen weergeven in legenda van project\" is verschaft die, indien geselecteerd, een nieuw waarschuwingspictogram zal weergeven dat lagen identificeert met een CRS dat is geïdentificeerd met problemen voor nauwkeurigheid.
 
 Voorbeelden van laag-nauwkeurige lagen zouden die kunnen bevatten met een dynamisch CRS zonder beschikbare epoche voor coördinaten, of een CRS dat is gebaseerd op een datum-ensemble met een nauwkeurigheid die de door de gebruiker ingestelde grenswaarde overschrijdt.
 
@@ -382,7 +382,7 @@ Deze optie is standaard uitgeschakeld, en ontworpen voor gebruik door ingenieurs
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Basisondersteuning voor dynamische epoche voor CRS-coördinaten
-Basic support for the coordinate epoch of dynamic (not plate fixed) CRS has been added in line with relevant updates to [GDAL](https://github.com/OSGeo/gdal/pull/3810).
+Basisondersteuning voor de epoche van coördinaten voor dynamisch (niet plaatvast) CRS is toegevoegd in lijn met de relevante bijwerkingen aan [GDAL](https://github.com/OSGeo/gdal/pull/3810).
 
 QGIS heeft ondersteuning toegevoegd voor het respecteren van de bron- of doel-epoche van de coördinaten bij het transformeren naar of vanuit een dynamisch CRS.
 
@@ -392,30 +392,30 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Verbeteringen aan projectinformatie
 Verscheidene verbeteringen zijn gemaakt aan de afhandeling en weergave van projectinformatie in QGIS, inclusief:
 - De toevoeging van een API om bewerkingsdetails voor PROJ voor CRS-en op te halen
-- The ability to show extended information about a layer\'s CRS in the layer properties info tab, including accuracy warnings
-- The addition of a `@map_crs_projection` variable, for retrieving a friendly name of a map\'s projection (e.g. \"Albers Equal Area\")
+- De mogelijkheid om uitgebreide informatie weer te geven over het CRS van een laag op de tab voor informatie over de laageigenschappen, inclusief waarschuwingen voor nauwkeurigheid
+- De toevoeging van een variabele `@map_crs_projection`, voor het ophalen van een vriendelijke naam voor de projectie van een kaart (bijv. \"Albers Equal Area\")
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Waarschuwingen voor CRS datum-ensemble
-QGIS now shows a warning in the projection selection widget when a CRS based on a datum ensemble is selected, warning the user that there\'s an inherent lack of accuracy in the selected CRS.
+QGIS geeft nu een waarschuwing weer in de widget voor het selecteren van de projectie als een CRS wordt geselecteerd dat is gebaseerd op een datum-ensemble, die de gebruiker waarschuwt dat er een ingewortelde onnauwkeurigheid in het geselecteerde CRS bestaat.
 
 ![image35](images/entries/b99e932e308d3b6d2b3868a88f3528386adb3d1f.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Metadata van lagen behouden in export van vectorbestanden
-A \"persist layer metadata\" checkbox has been added to the export vector file dialog. When checked, any layer metadata present in the source layer will be copied and stored in the destination file.
+Een keuzevak \"Metadata laag vasthouden\" is toegevoegd aan het dialoogvenster voor het exporteren van vectorbestanden. Indien geselecteerd zal metadata van de laag, die aanwezig is in de bronlaag, worden gekopieerd en opgeslagen in het doelbestand.
 
 Deze functionaliteit is standaard ingeschakeld en zorgt ervoor dat de metadata op de juiste wijze wordt overgebracht naar de nieuw gemaakte items, wat in het bijzonder effectief is bij het gebruiken van de indeling GPKG.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Opmerkingen voor lagen
-QGIS now supports \"layer notes\", which can be created via the \"Add Layer Notes\" action in the layer context menu.
+QGIS ondersteunt nu \"opmerkingen voor lagen\", die kunnen worden gemaakt met de actie \"Opmerkingen laag toevoegen\" in het contextmenu van de laag.
 
 Deze opmerkingen worden per laag, per project opgeslagen. Zij kunnen worden gebruikt als een plaats om belangrijke berichten voor gebruikers van het project op te slaan, zoals Nog te doen-lijsten, verwerkings- of beheersinstructies, of elke andere normale op tekst gebaseerde metadata.
 
 Een pictogram met een kladblok in het paneel Lagen identificeert lagen die deze opmerkingen als bijlage hebben. Klikken op het pictogram kladblok opent de opmerking om die te bewerken.
 
-This feature was discussed in [QEP-206](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/206)
+Deze mogelijkheid werd besproken in [QEP-206](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/206)
 
 Deze opmerkingen kunnen worden gekopieerd en geplakt met de normale methodologie voor kopiëren/plakken voor het overbrengen van stijlen tussen lagen in QGIS.
 
@@ -431,7 +431,7 @@ QGIS zal nu automatisch ESRI-metadata laden en converteren die is opgeslagen in 
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Automatisch gegevens van laag vertalen van ESRI Filegeodatabases naar QGIS metadata voor de laag
-When loading data from a .gdb file, QGIS will automatically attempt to translate as much as possible of the original ESRI metadata across to the QGIS metadata, so that it\'s immediately available for use.
+Bij het laden van gegevens uit een bestand .gdb zal QGIS automatisch proberen zoveel mogelijk te vertalen van de originele ESRI-metadata ten opzichte van de metadata voor QGIS, zodat het voor onmiddellijk gebruik gereed is.
 
 Dit werd mogelijk gemaakt door North Road / SLYR
 
@@ -445,11 +445,11 @@ Dit werd mogelijk gemaakt door North Road
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Laden van lagen GPKG met type GEOMETRY toestaan
-GeoPackage supports layers with a generic \"geometry\" type, with the QGIS release 3.20 it is now possible to load them and specify the requested geometry type on load, just like with PostGIS.
+GeoPackage ondersteunt lagen met een algemeen type "geometry". Met de uitgave QGIS 3.20 is het nu mogelijk om ze te laden en het gevraagde type geometrie te specificeren bij het laden, net als met PostGIS.
 
 ![image37](images/entries/a37aab7ea49b4870a931206e88811ebabcff6546.webp)
 
-This feature was developed by [Marco Bernasocchi (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Marco Bernasocchi (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Ondersteuning voor offline bewerken voor veldtypen lijst tekenreeks en lijst nummer
 PostGIS-gebruikers verheugt u: offline bewerken werd enigszins slimmer en kan nu veldtypen lijst tekenreeks en lijst nummer afhandelen.
 
@@ -470,22 +470,22 @@ Nieuw weergavewidget om gegevens van JSON op een gebruiksvriendelijke manier wee
 
 ![image39](images/entries/1061561e58e1b0807158ab415f4a13b43589d824.gif)
 
-This feature was funded by [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/geoportal/)
+Dit werd mogelijk gemaakt doo [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/geoportal/)
 
-This feature was developed by [Damiano Lombardi](http://damiano@opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Damiano Lombardi](http://damiano@opengis.ch)
 ## Legenda van laag
-### Feature: Vector \"label\" legend entries
+### Mogelijkheid: Legenda-items \"label\" voor vector
 QGIS ondersteunt nu het toevoegen van legenda-items voor laaglabels, die de stijl voor het lettertype en klassen voor labelen voor vectorobjecten zullen weergeven.
 
 Dit verschaft een legenda-item dat het voor gebruikers mogelijk maakt om expliciet objecten op de stijl van het label te identificeren, zelfs als er geen symbologie voor objecten wordt gebruikt.
 
-Control of this behavior is made accessible by adding a \"show label legend\" option to the legend tab of the vector layer properties.
+Beheer van dit gedrag is toegankelijk gemaakt door een optie \"Labellegenda weergeven\" toe te voegen aan de tab Legenda van de laageigenschappen voor vector.
 
 ![image40](images/entries/89218cecca8823903e432b9cd1a38280cc5101a9.webp)
 
 Dit werd mogelijk gemaakt door Canton of Glarus
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
 ## Processing
 ### Mogelijkheid: Optie toegevoegd om metadata voor laag op te slaan in algoritme Pakketlagen
 Deze aanvullende optie verrijkt het algoritme Pakketlagen en zal de metadata voor de bronlaag kopiëren in het geopackage, zodat het als standaard metadata zal worden gebruikt voor de laag.
@@ -494,37 +494,37 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Algoritme Rasterlaag eigenschappen
 Dit algoritme haalt basiseigenschappen voor de rasterlaag op, zoals de grootte in pixels, dimensies van pixels (kaarteenheden per pixel), aantal banden, en waarden Geen gegevens.
 
-It is intended for use as a means of extracting these useful properties to use as the input values to other algorithms in a model, such as passing an existing raster\'s pixel sizes over to a GDAL raster algorithm.
+Het is bedoeld voor gebruik om deze nuttige eigenschappen uit te nemen om te gebruiken als de invoerwaarden voor andere algoritmes in een model, zoals het doorgeven van bestaande pixelgrootten van rasters naar een GDAL rasteralgoritme.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeterde bewerking rasteriseren met #D-ondersteuning
 Het GDAL-proces rasteriseren (vector naar raster) ondersteunt nu 3D-gegevens, in zoverre dat het nu de mogelijkheid bevat om de waarde Z (hoogte) van een object te gebruiken om brandwaarden uit te nemen.
 
-The use of this option indicates that a burn value should be extracted from the "Z" values of the feature. Works with points and lines (linear interpolation along each segment). For polygons, it only works properly if the features are flat (i.e. contain the same Z value for all vertices)
+Het gebruiken van deze optie geeft aan dat een brandwaarde zou moeten worden uitgenomen uit de waarden "Z" van het object. Werkt met punten en lijnen (lineaire interpolatie langs elk segment). Voor polygonen werkt het alleen correct als de objecten plat zijn (d.i. dezelfde waarde Z bevatten voor alle punten)
 
-This feature was developed by [talledodiego](https://github.com/talledodiego)
+Deze mogelijkheid werd ontwikkeld door [talledodiego](https://github.com/talledodiego)
 ### Mogelijkheid: Optie Alleen geselecteerde objecten opslaan voor algoritme Pakketlagen
 Het algoritme Pakketlagen werd aangepast met ondersteuning voor het alleen opslaan van geselecteerde objecten
 
-This feature was developed by [Stefan Conrads](https://github.com/stefancon)
+Deze mogelijkheid werd ontwikkeld door [Stefan Conrads](https://github.com/stefancon)
 ### Feature: Logniveaus voor context Processing
 Een nieuwe eigenschap log level is toegevoegd aan QgsProcessingContext
 
 Dit maakt het voor algoritmes mogelijk om hun uitvoer te verfijnen, gebaseerd op het logniveau.
 
-The qgis_process command line operation has been granted a \--verbose switch to enable verbose log output.
+De bewerking voor de opdrachtregel qgis_process heeft een schakelaar \--verbose gekregen om verbose uitvoer voor het log te kunnen maken.
 
 Dit werd mogelijk gemaakt door Natural resources Canada Contract: 3000720411
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Opnieuw bewerken van snappen aan geometrie biedt een grote snelheidswinst
-This development cycle saw a rework of the inner workings of QGIS\' geometry snapper algorithm, which has led to a significant speed boost. Datasets which could take over 10 minutes to process now take less than 10 seconds.
+Deze ontwikkelingscyclus zag een nieuwe bewerking van de interne werking van QGIS\' algoritme geometrieën snappen, wat heeft geleid tot een significante snelheidswinst. Gegevenssets die meer dan 10 minuten konden duren om te verwerken, duren nu minder dan 10 seconden.
 
-This feature was funded by [SwissTierras Colombia](https://www.swisstierrascolombia.com)
+Dit werd mogelijk gemaakt door [SwissTierras Colombia](https://www.swisstierrascolombia.com)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.opengis.ch/)
-### Feature: Add a last_value function to the aggregate algorithm
-The aggregate processing tool now includes a `last_value` aggregation function, which is especially useful when working with input data that has meaningful ordering.
+### Mogelijkheid: Functie last_value toegevoegd aan het algoritme Samenvoegen
+Het gereedschap voor Processing Samenvoegen bevat nu een functie voor samenvoegen `last_value`, die in het bijzonder nuttig is bij het werken met invoergegevens die een betekenisvolle volgorde hebben.
 
 ![image41](images/entries/77afe9dba20e9134db3a1c628c5eeebab275b87a.webp)
 
@@ -540,46 +540,46 @@ QGIS verschaft nu functies voor exporteren en importeren naar het QGIS authentic
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Browser
 ### Mogelijkheid: Aangepaste kleuren voor pictogrammen van mappen in browser
-QGIS now allows users to set a custom icon color for different folders in the browser. This effectively allows users to \"tag\" folders, which aids in the rapid navigation of complex folder structures in the browser.
+QGIS geeft gebruikers nu de mogelijkheid om een aangepaste kleur voor pictogrammen voor verschillende mappen in de browser in te stellen. Dit maakt het voor gebruikers effectief mogelijk om mappen te \"taggen\", wat helpt bij een snellere navigatie van complexe mapstructuren in de browser.
 
 ![image42](images/entries/5135bb429434786f87aca3d2deeb980ce874ae44.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Groep OWS verwijderd uit de QGIS Browser
-The non-functional and redundant \"OWS\" Group has been removed from the QGIS Browser panel.
+De niet-functionele en overbodige groep \"OWS\" is verwijderd uit het paneel van QGIS Browser.
 
-This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://github.com/lbartoletti)
 ## Gegevensproviders
 ### Mogelijkheid: Ondersteuning voor lijsten van gegevenstypen integer, real en integer64 in OGR toegevoegd
 Aanvullende lijsten voor veldtypen zijn toegevoegd aan het stuurprogramma voor OGR voor ondersteunde gegevenstypen, zoals Geojson.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Mogelijkheid voor lezen van vectorlaag uitgebreid naar ander typen lagen
-Whilst the ability for QGIS to access a layer\'s metadata information, such as reading the extent of a layer from the metadata, was previously restricted to vector layers, this functionality has now been extended to include various other layer types including raster, point cloud, and others.
+Waar de mogelijkheid voor QGIS om toegang te verkrijgen tot informatie over metadata in een laag, zoals het lezen van het bereik van een laag vanuit de metadata, eerder was beperkt tot vectorlagen, is deze functionaliteit nu uitgebreid om ook verscheidene andere typen lagen te omvatten, inclusief raster, puntenwolk, en andere.
 
 Dit werd mogelijk gemaakt door Ifremer
 
-This feature was developed by [rldhont](https://github.com/rldhont)
+Deze mogelijkheid werd ontwikkeld door [rldhont](https://github.com/rldhont)
 ## QGIS Server
 ### Mogelijkheid: Externe doorzichtbaarheid laag
 Ondersteuning voor beheren van doorzichtbaarheid voor externe / op afstand lagen die worden geserveerd door QGIS Server
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
 ### Mogelijkheid: Te configureren Service URL
 Aanvullende opties zijn toegevoegd aan QGIS Server om het antwoord GetCapabilities met betrekking tot de resultaten te verbeteren, speciaal zonder de noodzaak om verscheidene velden te voltooien in de configuratie voor het project van QGIS. Deze bijwerkingen schakelen ook veel andere opties in die kunnen worden ingesteld met een omgevingsvariabele, of door headers uit een proxy op te geven.
 
 De volgende opties zijn toegevoegd en zullen door de server in de volgende volgorde worden opgelost:
 - Waar de gedefinieerd in het project per service.
-- The `<service>_SERVICE_URL` environment variable.
-- The `SERVICE_URL` environment variable.
-- The custom `X-Qgis-<service>-Service-Url` header.
-- The custom `X-Qgis-Service-Url` header.
-- Build from the standard `Forwarded` header.
-- Build from the pseudo standard `X-Forwarded-Host` and `X-Forwarded-Proto` headers.
-- Build from the standard `Host` header and the server protocol.
+- De omgevingsvariabele `<service>_SERVICE_URL`.
+- De omgevingsvariabele `SERVICE_URL`.
+- De aangepaste header `X-Qgis-<service>-Service-Url`.
+- De aangepaste header `X-Qgis--Service-Url`.
+- Gebouwd vanuit de standaard header `Forwarded`.
+- Gebouwd uit de pseudo-standaardheaders `X-Forwarded-Host` en `X-Forwarded-Proto`.
+- Gebouwd vanuit de standaard header `Host` en het serverprotocol.
 - Gebouwd uit de servernaam en het serverprotocol.
 
-This feature was developed by [Stéphane Brunner](https://github.com/sbrunner)
+Deze mogelijkheid werd ontwikkeld door [Stéphane Brunner](https://github.com/sbrunner)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
 | Titel probleem | URL (indien gerapporteerd, GitHub) | URL Commit (Github) | 3.16 backport commit (GitHub) |
@@ -651,7 +651,7 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://www.qcooperative.net/)
+Deze mogelijkheid werd ontwikkeld door [Paul Blottiere](https://www.qcooperative.net/)
 ### Mogelijkheid: Reparaties van problemen door Denis Rouzaud
 | Titel probleem | URL (indien gerapporteerd, GitHub) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |

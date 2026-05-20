@@ -39,7 +39,7 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 - Options to set an annotation layer\'s opacity/blend mode/paint effect in the layer styling dock for interactive changes
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### 地物: 注記アイテムのノードを編集する
+### 機能: 注記アイテムのノードを編集する
 注記の編集ツールは、既存のノードをクリックして移動することで、注記アイテム内のノードを編集するために使用できます。ユーザーの操作は、以下のように標準のQGISのパターンに従います：
 - 左クリックで移動を開始します
 - ２度目の左クリックで変更を適用します
@@ -106,7 +106,7 @@ This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 ### Feature: Add a \'Show in Files\' action for all file items in browser
 ファイルエクスプローラウィンドウを開いてそのファイルを直接選択します
 
-Also fixes the existing \"File Properties\" action so that it shows regardless of the file type, and doesn\'t show incorrectly in some circumstances.
+また、既存の \"File Properties\" アクションがファイルの種別に関わらず表示されるよう修正し、特定の状況で誤って表示される問題も解消しています。
 
 ![image4](images/entries/f80090adb3c2f85fa81b5689741afd936f8d5439.webp)
 
@@ -122,7 +122,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 - インチ（Inches）
 - ポイント（Points）
 
-When millimeters, pixels, inches or points are selected, then the \@map_geometry variable will be available for use within the expression, containing the feature geometry in the specified units (relative to the map frame), whilst the \$geometry variable remains available within the expression in the layer CRS map units.
+ミリメートル、ピクセル、インチ、またはポイントが選択されている場合、式内で  \@map_geometry　 変数が使用可能になります。この変数には指定した単位（マップフレームを基準とした相対値）での地物ジオメトリが含まれます。一方、\$geometry 変数はレイヤーCRSのマップ単位で引き続き式内で使用できます。
 
 ![image5](images/entries/d1c6b0c69cf9dd8247d1dc0e370d0182b550f48a.webp)
 
@@ -153,7 +153,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 
 This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
 ## メッシュ
-### 機能: 新しいメッシュレイヤを作成
+### 機能: 新しいメッシュレイヤを作成する機能
 QGISは新しいメッシュレイヤの作成に対応するようになります。
 
 メッシュの作成は、次の作成形式に対応しています:

@@ -24,7 +24,7 @@ For a whirlwind tour of all the new functionalities introduced, you can view the
 
 QGIS is een inspanning van de gemeenschap en we willen ook nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier bij wilt dragen in het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Cesium 3D-tegels
@@ -32,7 +32,7 @@ Thanks to an ecosystem grant from the [Cesium](https://www.cesium.com/) project,
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/lvl8zVZ8glY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
-This feature was developed by [Martin Dobias](https://github.com/wonder-sk) and [Nyall Dawson](https://github.com/nyalldawson)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://github.com/wonder-sk) en [Nyall Dawson](https://github.com/nyalldawson)
 ## Kaartgereedschap
 ### Feature: Optional enforcement of \"dot\" as decimal separator for measure tool
 A new `Always use decimal point` checkbox option has been added to the Measure Tool. This option will ensure that measurements and coordinates are copied to the clipboard using a decimal point (dot) separator, even if the current locale uses a comma.
@@ -41,7 +41,7 @@ Dit schakelt de mogelijkheid in om kommagescheiden (csv)-gegevens te kopiëren, 
 
 ![image1](images/entries/ec6084247b2b698045a783e2b007b0e0dde90ddd.webp)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Accent weergeven op geïdentificeerde rasterpixels bij gebruiken van gereedschap Objecten identificeren
 QGIS geeft nu de geometrie van het resultaat van het geïdentificeerde object weer voor rasterpixels in het kaartvenster. Dit komt overeen met het bestaande gedrag van het gereedschap Objecten identificeren voor objecttypen vector, vectortegel, en puntenwolk.
 
@@ -55,7 +55,7 @@ Bij  het gebruiken van het gereedschap Objecten identificeren op rasterlagen zul
 
 ![image3](images/entries/0889d275dfefea4c7c7d13ebc5dc6fd237573076.webp)
 
-This feature was developed by [Hannes & Nyall Dawson](https://github.com/kannes)
+Deze mogelijkheid werd ontwikkeld door [Hannes & Nyall Dawson](https://github.com/kannes)
 ## Symbologie
 ### Mogelijkheid: Instelling voor overschrijven kleur en symbool van selectie voor vectorlagen
 Nieuwe instellingen voor renderen van lagen stellen gebruikers in staat de kleur en het symbool te beheren dat zal worden gebruikt in plaats van de standaarden voor systeem of project bij het accentueren van geselecteerde objecten.
@@ -85,7 +85,7 @@ Dynamic map decorations are now rendered to a transparent overlay, preventing re
 
 ![image6](images/entries/00e6bc11fa3025317740f955962ef50cc1b95336.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Profileren kaartrenderer toegevoegd
 The debugging/ development profiling tools have been extended with a new \"map render\" profile (accompanying the existing Startup and Project Load profiles).
 
@@ -114,11 +114,11 @@ Deze functionaliteit is nuttig voor gebruikers die grote 3D-scenes gebruiken die
 
 ![image9](images/entries/161c61a6ec3ca078e4483279c54f25319bed2c20.webp)
 
-This feature was developed by [Martin Dobias](https://github.com/wonder-sk)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://github.com/wonder-sk)
 ### Mogelijkheid: Ondersteuning voor boundingbox3d toegevoegd
 Additional API methods for relevant geometry classes are now available for `boundingBox3D` and `calculateBoundingBox3D`, as well as extensions to `boundingBoxIntersects` methods which will now support checking intersections between 3D bounding boxes.
 
-This feature was developed by [Jean Felder](https://github.com/ptitjano)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Afdruklay-outs
 ### Mogelijkheid: Meerdere lay-outitems selecteren
 Nieuwe functionaliteit wordt verschaft voor het afhandelen van het selecteren van meerdere items tegelijkertijd uit de lijst met items in afdruklay-outs.
@@ -127,13 +127,13 @@ Dit verbetert ook de gebruikerservaring van bestaande functionaliteit voor selec
 
 ![image10](images/entries/85d915ba102341669b4ccccab308a987b0927d68.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Nummer pagina lay-out weergegeven in Pagina-eigenschappen
 When a layout has more than one page, the current page number will be displayed in the item properties header section using the format `page_number`/`pagecount`.
 
 ![image11](images/entries/367986f087f878b47fe1296fcd8143ef677b3430.webp)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Automatisch openen van geëxporteerde lay-outs
 A new \"Open file after exporting\" checkbox option has been added to the export options for PDF, SVG, and Image output types. When selected this option will attempt to automatically open the output file once the export is completed.
 
@@ -141,7 +141,7 @@ The application used to open the file will use the configured default applicatio
 
 ![image12](images/entries/502d122401e26d6dca10146dbdb9ccd1b01e8bd3.webp)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Expressies
 ### Mogelijkheid: Expressiefunctie voor richting toegevoegd
 A new `bearing` function has been added which computes the bearing angle (in radians) between two points.
@@ -150,13 +150,13 @@ De richting wordt bepaald in het opgegeven CRS en met de klok mee gemeten in de 
 
 ![image13](images/entries/a1d3176b8434f43bb248926df46c406f4b5f2625.webp)
 
-This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
+Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ### Feature: Add \"layer_crs_ellipsoid\"
 QGIS expressions now include a `layer_crs_ellipsoid` layer variable, as well as the `crs_ellipsoid` property available from the `layer_property` function. The value returned will be the ellipsoid acronym of the layer CRS.
 
 ![image14](images/entries/25fa0e9a64d6d1ea6b22e0e9b29ced356bbc96c8.webp)
 
-This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
+Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ## Digitaliseren
 ### Feature: Improve \"avoid overlap\" type awareness
 When digitizing features with the \"avoid overlap\" option, QGIS has improved the behavior of automatically coercing the feature type and includes more meaningful messages to notify users of the automated behaviours.
@@ -167,7 +167,7 @@ This prevents the digitizing of \"sliver\" polygons and frustrations with improp
 
 ![image15](images/entries/e86392da95484a83eb7edbfd554526865d4195ff.gif)
 
-This feature was developed by [Matthias Kuhn](https://github.com/m-kuhn)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://github.com/m-kuhn)
 ## Gegevensbeheer
 ### Mogelijkheid: Verbeterde afhandeling van opslaan van vectorobjecten voor al eerder bestaande bestanden
 Bij het gebruiken van het algoritme Vectorobjecten opslaan naar bestand zal QGIS gebruikers informeren over het standaard gedrag voor de afhandeling van al bestaande bestanden (overschrijven bestanden) en de mogelijkheid verschaffen om uit een bereik van alternatieve gedragingen te selecteren (zoals het overschrijven van ene laag of toevoegen van nieuwe objecten aan bestaande laag)
@@ -191,7 +191,7 @@ QGIS zal nu beschrijvingen van banden weergeven op de tab Symbologie voor raster
 
 Dit werd mogelijk gemaakt door Summer is getting warmer and warmer.
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Processing
 ### Mogelijkheid: Instelling Antialias voor rastertegel plug-in voor Processing
 A new \"Enable antialiasing\" parameter has been added to the \"Generate XYZ Tiles\" processing tool.
@@ -200,7 +200,7 @@ Deze optie zal standaard ingeschakeld zijn (vervangt het huidige gedrag) maar st
 
 ![image18](images/entries/9c9b07222673e23caf2dcc73ff1db8a8f9257106.webp)
 
-This feature was developed by [ASAI Hitoshi](https://github.com/hito-asa)
+Deze mogelijkheid werd ontwikkeld door [ASAI Hitoshi](https://github.com/hito-asa)
 ### Feature: Create Grid row_index and col_index fields
 Fields for the `row_index` and `col_index` have been added to the output of the \"Create Grid\" processing algorithm. The fields are added to all outputs of type point, rectangle, and hexagon.
 
@@ -208,7 +208,7 @@ Veldwaarden zijn integers waarvan de telling begint met 0 en verhoogd van links 
 
 ![image19](images/entries/54157595e9bf9c58b4b906ea28b3c335a737696b.webp)
 
-This feature was developed by [Valentin Buira](https://github.com/Poulpator)
+Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/Poulpator)
 ### Feature: New \'Calculate expression\' algorithm for use in models
 The new \"Calculate expression\" algorithm will calculate the results of a QGIS expression and make the result available for use in other parts of the model.
 
@@ -239,13 +239,13 @@ De status zal worden gesynchroniseerd tussen het menu Recent geopende projecten 
 
 ![image23](images/entries/4ff4dd8614e4857810fc1b636d8700b143ec98b6.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: OAUTH2 PKCE authorisatie-code
 An implementation of Proof Key for Code Exchange (PKCE, [RFC 7636](http://tools.ietf.org/html/rfc7636)) has been added for OAUTH2 [Authorization Code](https://oauth.net/2/grant-types/authorization-code/) flows, improving resilience to CSRF and code injection attacks.
 
 Dit werd mogelijk gemaakt door Comune di Roma
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Standaarden voor Processing instellen vanuit QGIS configuratiebestand
 QGIS ondersteunt nu de mogelijkheid om de standaardwaarden voor gereedschappen van de gebruikersinterface voor het QGIS Processing framewerk te configureren met parameters die zijn gespecificeerd in het bestand voor instellingen QGIS.ini.
 
@@ -256,7 +256,7 @@ This allows for the configuration of user-specific or organization-wide default 
     
 Wanneer een gebruiker met deze configuratie de relevante Toolbox opent om een algoritme uit te voeren, zal voor hem automatisch de standaardwaarde worden gespecificeerd.
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
 ## Profiel plotten
 ### Mogelijkheid: Instelling toegevoegd voor het beheren van de achtergrondkleur voor diagrammen van hoogteprofielen
 Deze optie (beschikbaar op de nieuwe tab Extra → Opties → Hoogte) stelt gebruikers in staat een specifieke kleur te gebruiken als de achtergrondkleur voor hoogteprofielen.
@@ -276,7 +276,7 @@ QGIS ondersteunt nu het geautomatiseerd ontdekken van relaties voor de gegevensp
 
 Dit werd mogelijk gemaakt door Métropole de Lille
 
-This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
+Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://github.com/Djedouas)
 ## Plug-ins
 ### Mogelijkheid: Interactieve shell verwijderd uit plug-in GRASS C++
 Om redenen van onderhoud is de interactieve shell voor de plug-in GRASS C++ Plugin, als ook het ingebedde QTermWidget, verwijderd uit toekomstige uitgaven.
@@ -314,9 +314,9 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nir
 | Crash when playing with duplicated legends in layout | [#52268](https://github.com/qgis/QGIS/issues/52268) | [PR #54947](https://github.com/qgis/QGIS/pull/54947) |  |
 | QGIS fails to request more than one WMS-Layer | [#55042](https://github.com/qgis/QGIS/issues/55042) | [PR #55064](https://github.com/qgis/QGIS/pull/55064) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
 ### Mogelijkheid: Reparaties van problemen door Even Rouault (Spatialys)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -337,9 +337,9 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 | export bbox wrong when feature crosses anti-prime-meridion (180 deg) | [#42827](https://github.com/qgis/QGIS/issues/42827) | [GDAL PR 8485](https://github.com/OSGeo/gdal/pull/8485) | Is het niet waard |
 | QgsVectorDataProvider.changeAttributeValues() returns True even when it fails | [#54816](https://github.com/qgis/QGIS/issues/54816) | [PR #54905](https://github.com/qgis/QGIS/pull/54905) | [PR #54909](https://github.com/qgis/QGIS/pull/54909) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Feature: Bug fixes by Paul Blottiere (Hytech-imaging)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -354,9 +354,9 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | Server: Can\'t enable WFS3 API update endpoint (PUT/PATCH) on layers without geometry | [#46119](https://github.com/qgis/QGIS/issues/46119) | [PR #54789](https://github.com/qgis/QGIS/pull/54789) | N/B |
 | Add safe guard around -of in gdal command for batch processing | [#54122](https://github.com/qgis/QGIS/issues/54122) | [PR #54800](https://github.com/qgis/QGIS/pull/54800) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Paul Blottiere (Hytech-imaging)](https://hytech-imaging.fr/)
+Deze mogelijkheid werd ontwikkeld door [Paul Blottiere (Hytech-imaging)](https://hytech-imaging.fr/)
 ### Mogelijkheid: Reparaties van problemen door Sandro Santilli (strk)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -384,17 +384,17 @@ This feature was developed by [Paul Blottiere (Hytech-imaging)](https://hytech-i
 | Stop considering Rectangle(0,0,0,0) null - while Rectangle(1,1,1,1) is not null | [#45563](https://github.com/qgis/QGIS/issues/45563) | [PR #54646](https://github.com/qgis/QGIS/pull/54646) | N/B |
 | Run doxygen layout checker in prepare-commit script, when possible | niet gerapporteerd | [PR #54936](https://github.com/qgis/QGIS/pull/54936) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Sandro Santilli (strk)](http://strk.kbt.io/)
+Deze mogelijkheid werd ontwikkeld door [Sandro Santilli (strk)](http://strk.kbt.io/)
 ### Mogelijkheid: Reparaties van problemen door Jean Felder (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | qgs3daxissettings: Correctly read viewport ratio on a saved project | niet gerapporteerd | [PR #54870](https://github.com/qgis/QGIS/pull/54870) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson (North Road)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -417,7 +417,7 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 | Handle sql=\'\' or sql=\"\" as empty sql strings instead of \'\' / \"\" literals | [#53736](https://github.com/qgis/QGIS/issues/53736) | [PR #54806](https://github.com/qgis/QGIS/pull/54806) | [PR #54826](https://github.com/qgis/QGIS/pull/54826) |
 | Fix crash when certain symbol pages are open in style dock and QGIS is closed or a new project opened | niet gerapporteerd | [PR #54749](https://github.com/qgis/QGIS/pull/54749) | Te indringend |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces (Oslandia)
@@ -430,8 +430,8 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 | Label expression with more than 32767 chars becomes invalid when switching from expression dialog back to layer properties | [#54141](https://github.com/qgis/QGIS/issues/54141) | [PR #55051](https://github.com/qgis/QGIS/pull/55051) | [PR #55052](https://github.com/qgis/QGIS/pull/55052) |
 | Activating notify/listen feature crash QGIS | [#54260](https://github.com/qgis/QGIS/issues/54260) | [PR #55062](https://github.com/qgis/QGIS/pull/55062) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/)
 
 {{<content-end >}}

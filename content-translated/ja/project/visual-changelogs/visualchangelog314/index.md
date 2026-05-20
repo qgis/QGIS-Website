@@ -673,11 +673,11 @@ This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids
 
 This feature was developed by [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### 機能: ユーザー式を編集、インポート、エクスポートできる
-A new button is added that allows editing of saved expressions. It is only active when a user expression is selected in the expressions tree. When pressed, it opens a window that allows the currently selected user expression to be edited. Changing the label of the expression makes a copy of the currently existing one. [Demo](https://imgur.com/w3UEOoR)
+保存済みの式を編集できる新しいボタンが追加されました。このボタンは、式ツリーでユーザー式が選択されている場合にのみ有効になります。ボタンを押すと、現在選択されているユーザー式を編集できるウィンドウが開きます。式のラベルを変更すると、既存の式のコピーが作成されます。 [Demo](https://imgur.com/w3UEOoR)
 
 **インポートとエクスポート**
 
-A new button with a menu is added, that allows the import/export of user expressions to/from a JSON file. Clicking on either of the menu entries opens a file selector dialog for the expressions JSON file source/destination. In the case of label conflicts, an additional dialog asks how to proceed - either to overwrite or to skip the current expression. [Import/Export Demo](https://imgur.com/0eiaFfu)
+ユーザー式をJSONファイルにエクスポート/インポートできるメニュー付きの新しいボタンが追加されました。メニュー項目のいずれかをクリックすると、式JSONファイルの保存先/参照先を選択するファイルセレクターダイアログが開きます。ラベルの競合が発生した場合は、現在の式を上書きするかスキップするかを確認する追加ダイアログが表示されます [インポート/エクスポートのデモ](https://imgur.com/0eiaFfu)
 
 This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
 ## デジタイズ

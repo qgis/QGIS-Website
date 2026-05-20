@@ -55,7 +55,7 @@ Het is nu mogelijk om **Shift + dubbelklik te gebruiken om een nieuw punt toe te
 ### \"Current layer\" mode is now the default
 From the two modes of vertex tool, \"all layers\" used to be the default one. But from the user feedback that seemed like less common case and users prefer to have \"current layer\" as the default.
 
-This feature was funded by [German QGIS user group](http://qgis.de/)
+Dit werd mogelijk gemaakt door [Duitse QGIS gebruikersgroep](http://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Verkleind/Vergroot
@@ -67,7 +67,7 @@ Als beide segmenten 3D zijn, voert het gereedschap een interpolatie uit op het g
 
 In het geval van verkleinen moet u het deel selecteren dat moet worden verkort door erop te klikken.
 
-This feature was funded by [Mairie de Megève](https://www.megeve.fr/)
+Dit werd mogelijk gemaakt door [Mairie de Megève](https://www.megeve.fr/)
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ### Mogelijkheid: Rechthoek uit 3 punten (geprojecteerd)
@@ -83,7 +83,7 @@ Het gereedschap identificarenwerkt nu op de laag met mazen. Het geeft de huidige
 
 Dit werd mogelijk gemaakt door Lutra Consulting
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ## Expressies
 ### Mogelijkheid: Nieuwe functies voor expressies
 - `force_rhr`: forces polygons to follow the right hand rule, in which the area that is bounded by a polygon is to the right of the boundary. In particular, the exterior ring is oriented in a clockwise direction and the interior rings in a counter-clockwise direction.
@@ -129,7 +129,7 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com
 ### Mogelijkheid: Meerregelige selecties en bewerken in bewerkers voor code/expressies
 Indrukken van Ctrl tijdens het selecteren in de bewerkers voor expressies en Python-scripts in QGIS stelt u in staat een meerregelig blok tekst te selecteren, die in één keer kan worden bewerkt.
 
-This feature was developed by [Nyall Dawson ()](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson ()](https://north-road.com)
 ## Symbologie
 ### Mogelijkheid: Verbeterde afhandeling van stijlbibliotheken voor .XML
 Het paneel Browser geeft nu stijlbibliotheken voor XML in QGIS weer en deze bestanden kunnen ook worden versleept en worden neergezet in een venster van QGIS. Dit opent een dialoogvenster dat gebruikers in staat stelt de stijlbibliotheek te verkennen en stijlen uit de bibliotheek te importeren naar hun installatie van QGIS.
@@ -178,7 +178,7 @@ De optie is beschikbaar in het contextmenu, klik met rechts, in de lijstweergave
 
 ![image6](images/entries/159eb5270ab436adbbddba1c92799d8621a0b8e5.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Projectkleuren weergeven in kleurgebonden data-gedefinieerde knoppen
@@ -204,7 +204,7 @@ QGIS is now able to export raster styling to sld, for example to be used in Geos
 
 Dit werd mogelijk gemaakt door OSGeo UK, GeoServer PSC, Brad Hards
 
-This feature was developed by [Luigi Pirelli and GeoSolutions](https://www.geo-solutions.it/)
+Deze mogelijkheid werd ontwikkeld door [Luigi Pirelli and GeoSolutions](https://www.geo-solutions.it/)
 ## Digitaliseren
 ### Mogelijkheid: Verbeteringen aan Georeferencer
 - dX, dY en residu toegevoegd aan GCP-punten
@@ -212,21 +212,21 @@ This feature was developed by [Luigi Pirelli and GeoSolutions](https://www.geo-s
 
 ![image8](images/entries/2d6278e2e65be30ceb12ff30f26d34dae6196e42.png.400x300_q85_crop.webp)
 
-This feature was developed by [Faneva Andriamiadantsoa](https://github.com/Fanevanjanahary)
+Deze mogelijkheid werd ontwikkeld door [Faneva Andriamiadantsoa](https://github.com/Fanevanjanahary)
 ### Mogelijkheid: Nieuwe optie om minimaliseren van Georeferencer bij het toevoegen van punten te voorkomen
 Gebruikers kunnen er nu voor kiezen om het automatisch minimaliseren van het venster van georeferencer, dat voorkomt bij het toevoegen van nieuw grondcontrolepunten aan het kaartvenster, te voorkomen. Dit gedrag kan irritant zijn op setups met meerdere schermen, waar het wenselijk kan zijn om beide vensters zichtbaar te hebben bij het toevoegen van punten.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Gegevensbeheer
 ### Mogelijkheid: Optie Opmerking in DB Manager
-This feature was developed by [Corentin Falcone (SIRS)](https://www.sirs-fr.com/sirs/fr/)
+Deze mogelijkheid werd ontwikkeld door [Corentin Falcone (SIRS)](https://www.sirs-fr.com/sirs/fr/)
 ## Formulieren en widgets
 ### Mogelijkheid: Nieuw formulierwidget voor binaire (blob)-velden
 Deze widget is alleen beschikbaar voor binaire velden (en wordt als standaard widget gebruikt voor binaire velden).  Het biedt een label om aan te geven of het blob veld leeg is of niet. Als het niet leeg is, geeft het de inhoudsgrootte weer (in bytes/kb/enz.).
 
 Een knop met keuzemenu laat gebruikers toe om de huidige binaire inhoud van het veld op te slaan naar een schijf gebaseerd bestand, de inhoud van een blob veld leeg te maken, of binaire inhoud te inbedden door een bestand te selecteren van hun systeem.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Printvormgeving
@@ -270,7 +270,7 @@ Bij het exporteren van afdruklay-outs controleert QGIS nu automatisch de lay-out
 - Items voor afbeeldingen met verbroken of ontbrekende paden, of gekoppeld aan onleesbare afbeeldingsbestanden
 - Overzichtskaarten niet langer gekoppeld aan een geldig kaartitem
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Beheer over stapelpositie van bereiken van overzichtskaarten
@@ -317,14 +317,14 @@ Soortgelijk aan rasterberekeningen werkt Mazen berekenen op lagen met mazen. In 
 
 Dit werd mogelijk gemaakt door Lutra Consulting
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ## Processing
 ### Feature: New algorithm \"Remove duplicates by attribute\"
 Maakt het verwijderen van gedupliceerde objecten mogelijk, geïdentificeerd met behulp van de waarden in één (of meer) veldwaarden van de invoerobjecten. Optioneel kunnen genegeerde (duplicaat)-objecten worden opgeslagen in een afzonderlijke afvoer.
 
 ![image9](images/entries/ae0544826b7d16479b2e48ba97f1f530c80bbd42.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Explode HStore
@@ -346,13 +346,13 @@ Dit algoritme stelt gebruikers in staat de inhoud uit binaire velden te nemen en
 
 ![image12](images/entries/6715290eac02e216394b3f24045da0b982069c7d.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Lijnen splitsen op maximum lengte
 Dit algoritme neemt een invoer (meerdere) lijnen- (of boog-)laag en splitst elk object in meerdere delen, waarbij elk deel niet langer is dan de gespecificeerde maximale lengte.
 
-Ondersteunt de data-gedefinieerde eigenschap voor maximum lengte, en de bewerking voor direct bewerken.
+Ondersteunt de data-bepaalde eigenschap voor maximumlengte, en de bewerking voor direct bewerken.
 
 ![image13](images/entries/13c8c2fedfa76ff8decbc4d7e6d683d01bab1126.png.400x300_q85_crop.webp)
 
@@ -364,7 +364,7 @@ It allows creation of processing algorithm which can fully take advantage of QGI
 
 Parameters QgsProcessingParameterAuthConfig worden geëvalueerd met behulp van QgsProcessingAlgorithm.parameterAsString(), die de ID voor de geselecteerde configuratie voor de authenticatie teruggeeft.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Opties voor resamplen en indeling in het algoritme gdaladdo
@@ -408,7 +408,7 @@ De 2.x mogelijkheid voor het direct converteren van een model van Processing naa
 
 ![image16](images/entries/42b342e04b54d5e106ba1051b210d83af8712dd8.png.400x300_q85_crop.webp)
 
-This feature was funded by [Solspec](http://solspec.io)
+Dit werd mogelijk gemaakt door [Solspec](http://solspec.io)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Opties voor toepassing en projecten
@@ -440,7 +440,7 @@ QGIS 3.6 brings back the functionality from the old 2.18 standalone \"browser\" 
 
 ![image19](images/entries/5058aa9a701e417271b0cbf0869669177a7f0fe4.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: QGS/QGZ projectbestanden verkennen in de browser
@@ -471,28 +471,28 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 ### Feature: Improved \"missing layer\" handling on project load
 ![image22](images/entries/8e3fbce280478d8e88cab7e24b489b783c83fc13.png.400x300_q85_crop.webp)
 
-This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it/)
+Dit werd mogelijk gemaakt door [A.R.P.A. Piemonte](http://www.arpa.piemonte.it/)
 
-This feature was developed by [Alessandro Pasotti](http://www.itopen.it)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](http://www.itopen.it)
 ### Mogelijkheid: Optionele instelling voor het uitschakelen van controle op updates
 A new setting, \"allowVersionCheck\" has been added to the QGIS configuration ini file. If set to true (the default), users may control whether the version check is enabled or disabled through the QGIS settings dialog. When this setting is set to false, no version checking will be performed AND users will NOT have an option to enable this check in the settings dialog.
 
 Deze instelling is bedoeld voor gebruik in bedrijfsinstallaties waar QGIS versiebeheer centraal geregeld wordt.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Een aan/uit actie werd toegevoegd aan vectorlaag legende items
 ![image23](images/entries/f3b822b5591367b7d246fbdd5173763a1633b9ec.png.400x300_q85_crop.webp)
 
-This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
+Dit werd mogelijk gemaakt door [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ## Gegevensproviders
 ### Mogelijkheid: Open service info voor ArcGIS Feature Server-lagen
 ArcGIS Feature Server-lagen hebben een nieuw rechtsklik-menu optie in het browser paneel, dat gebruikers toelaat om de service informatie webpagina voor de geselecteerde laag rechtstreeks te openen.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Binaire blob ondersteuning voor OGR provider
@@ -500,13 +500,13 @@ In plaats van binaire velden om te zetten naar afgekorte strings, zijn deze nu o
 
 Aanvullend kunnen nieuwe binaire velden aangemaakt worden voor compatibele gegevensbronnen.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Ondersteuning voor markering afbeelding en vullen afbeelding voor ArcGIS Feature Server
 Bij het laden van een laag van Feature Server met markeringen voor afbeeldingen of symbologie voor het vullen van afbeeldingen zal QGIS automatiscg de ESRI markeringen voor afbeeldingen en de symbolen voor vullen converteren en ze gebruiken als de standaard stijl voor de laag.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door Nyall Dawson, Mathieu Pellerin
 ### Mogelijkheid: Ondersteuning voor labelen van ArcGIS Feature Server
@@ -528,7 +528,7 @@ gegevens die zijn opgeslagen als JSON kunnen wordne weergegeven en bewerkt in
 - Lijstwidgets
 - or the [QML widget which also supports visualizing JSON data](https://www.opengis.ch/2018/11/13/visualize-postgres-json-data-in-qml-widgets/)
 
-This feature was funded by [Kanton Zug, Amt für Geoinformation](https://geo.zg.ch/)
+Dit werd mogelijk gemaakt door [Kanton Zug, Amt für Geoinformation](https://geo.zg.ch/)
 
 Deze mogelijkheid werd ontwikkeld door David Signer (OPENGIS.ch)
 ### Mogelijkheid: provider Postgres: selectie primaire sleutel opslaan
@@ -554,7 +554,7 @@ Omdat cliënten niet zouden kunnen weten welk sjabloon een atlas heeft en welk(e
 
 ![image24](images/entries/6a4648e447531099dfd8d5e113c2a79c8420df06.png.400x300_q85_crop.webp)
 
-This feature was funded by [Kanton Zug, Amt für Geoinformation](https://geo.zg.ch/)
+Dit werd mogelijk gemaakt door [Kanton Zug, Amt für Geoinformation](https://geo.zg.ch/)
 
 Deze mogelijkheid werd ontwikkeld door Marco Hugentobler
 ### Mogelijkheid: Configuratie van tegelmatrixen voor WMTS
@@ -583,7 +583,7 @@ Thanks to this new feature, the FORMAT parameter of GetFeatureInfo for the WMS s
         }]
     }
     
-This feature was funded by [Veolia](https://www.veolia.com)
+Dit werd mogelijk gemaakt door [Veolia](https://www.veolia.com)
 
 Deze mogelijkheid werd ontwikkeld door [Paul Blottiere (Oslandia)](http://oslandia.com/)
 ## Plug-ins
@@ -677,7 +677,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-
 ### Mogelijkheid: Aangepaste controles voor geldigheid voor exports van lay-out
 See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: API voor berekenen van geodetische lijnen
@@ -719,7 +719,7 @@ Met deze mogelijkheid kunt u uw laag met mazen gebruiken in 3D-scenes,
 
 Dit werd mogelijk gemaakt door Lutra Consulting
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
@@ -753,7 +753,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 | \"default value\" is not applied when pasting features | [#21304](https://issues.qgis.org/issues/21304) | [PR #9203](https://github.com/qgis/QGIS/pull/9203) | Nee (twijfelachtig) |
 | Postgis very noticeable slowdown when opening the attributes table if the table has a large number of columns | [#21303](https://issues.qgis.org/issues/21303) | [PR #9219](https://github.com/qgis/QGIS/pull/9219) | Nee (twijfelachtig) |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it/)
 ### Mogelijkheid: Reparaties van problemen door Alexander Bruy
@@ -787,7 +787,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.i
 | SAGA openCV and processing tools | [#19540](https://issues.qgis.org/issues/19540) | Kan niet worden gereproduceerd met 3.5 |  |
 | Error copying records between tables | [#21154](https://issues.qgis.org/issues/21154) | [PR #9065](https://github.com/qgis/QGIS/pull/9065) | [PR #9185](https://github.com/qgis/QGIS/pull/9185) |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 ### Mogelijkheid: Reparaties van problemen door Jürgen Fischer
@@ -814,9 +814,9 @@ Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 | dxf export: don\'t label invisible features | [#19604](https://issues.qgis.org/issues/19604) | [Direct commit](https://github.com/qgis/QGIS/commit/c389fad1ad0396cf9914dedc8d2e9a9c303cd8f8) | [Direct commit](https://github.com/qgis/QGIS/commit/87c9e18e5677d0d6e2c43d7ecb36afab84ff31fb) |
 | support polyline width and generic line width | [#21330](https://issues.qgis.org/issues/21330) | [Direct commit](https://github.com/qgis/QGIS/commit/6bf2d9d4500977c65630add31bb2246f063e20e8) | [Direct commit](https://github.com/qgis/QGIS/commit/c10969e562eda37c0cb78d3ec6db4c1cd68b1106) |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Jürgen Fischer](https://www.norbit.de/)
+Deze mogelijkheid werd ontwikkeld door [Jürgen Fischer](https://www.norbit.de/)
 ### Mogelijkheid: Reparaties van problemen door Peter Petrik
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -829,7 +829,7 @@ This feature was developed by [Jürgen Fischer](https://www.norbit.de/)
 | 32 bit floating geotiff showing as black. worked in 2.18 and 3.0 - not working 3.4 | [#20493](https://issues.qgis.org/issues/20493) | [PR #9035](https://github.com/qgis/QGIS/pull/9035) | [PR #9056](https://github.com/qgis/QGIS/pull/9056) |
 | python error when running GRASS 7.6 tools in processing on mac OS | [#21269](https://issues.qgis.org/issues/21269) | probleem in officiële MacOS-pakket, workaround/reparatie voorgesteld in opmerking |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces
@@ -845,9 +845,9 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 | Attribute Table refresh issue when deleting features from shapefile | [#18421](https://issues.qgis.org/issues/18421) | [PR #9152](https://github.com/qgis/QGIS/pull/9152) | [PR #9214](https://github.com/qgis/QGIS/pull/9214) |
 | QgsVectorLayer from spatialite featureid problem | [#20633](https://issues.qgis.org/issues/20633) | Werkt in 3.5 en branch 3.4 (niet in 3.4.4) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -857,9 +857,9 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/)
 | Add the possibility to return a shp if ogr is not compiled with gpkg | niet gerapporteerd | [PR #9037](https://github.com/qgis/QGIS/pull/9037) |  |
 | fix qgsRound for negative numbers | [#20861](https://issues.qgis.org/issues/20861) | [PR #9030](https://github.com/qgis/QGIS/pull/9030) and [PR #9025](https://github.com/qgis/QGIS/pull/9025) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Victor Olaya
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -874,7 +874,7 @@ This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
 | \[processing\] SAGA algorithms cannot produce non-shp output | [#21089](https://issues.qgis.org/issues/21089) | [PR #9002](https://github.com/qgis/QGIS/pull/9002) |  |
 | Extent selector shows layers with no spatial component (geometryless tables) | [#21129](https://issues.qgis.org/issues/21129) | [PR #9034](https://github.com/qgis/QGIS/pull/9034) (updated by Nyall in [PR #9038](https://github.com/qgis/QGIS/pull/9038)) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door Victor Olaya
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
@@ -887,7 +887,7 @@ Deze mogelijkheid werd ontwikkeld door Victor Olaya
 | Zoom to Layer does not respond to filtered WFS | [#20742](https://issues.qgis.org/issues/20742) | [PR #9118](https://github.com/qgis/QGIS/pull/9118) | [Direct commit](https://github.com/qgis/QGIS/commit/8834ec78207c091175cb0f48b518b6d2988f337d) |
 | Processing time for GeoJSON 10 times slower in 3.4 | [#21085](https://issues.qgis.org/issues/21085) | [GDAL master commmit](https://github.com/OSGeo/gdal/commit/bd668db37eb6f176226ebbe7efe34cfac86a3cf6a) and [GDAL 2.4 commit](https://github.com/OSGeo/gdal/commit/d6c38adfa28f75da0630f3e3ac26dbb501fc361e) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Martin Dobias
@@ -902,9 +902,9 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault](http://www.spatialys.com/)
 | \[vertex tool\] two more UX fixes | N/B | [PR #9130](https://github.com/qgis/QGIS/pull/9130) | [PR #9161](https://github.com/qgis/QGIS/pull/9161) |
 | \[vertex tool\] Few more UX improvements | [#21283](https://issues.qgis.org/issues/21283) | [PR #9222](https://github.com/qgis/QGIS/pull/9222) | [PR #9227](https://github.com/qgis/QGIS/pull/9227) |
 
-This feature was funded by [QGIS user group Germany](https://www.qgis.de/)
+Dit werd mogelijk gemaakt door  [[Duitse QGIS gebruikersgroep](https://www.qgis.de/)
 
-This feature was developed by [Martin Dobias](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -929,7 +929,7 @@ This feature was developed by [Martin Dobias](https://www.lutraconsulting.co.uk/
 | Fix shortest path algorithm can \"shortcut\" when using network in geographic coordinates | [#20997](https://issues.qgis.org/issues/20997) | [Direct commit](https://github.com/qgis/QGIS/commit/e75a88825665e7bb43c6c3cd1b2c22037cd29784) | [Direct commit](https://github.com/qgis/QGIS/commit/a3428e5f92b8b98cc753de0e9366f36e7ecc018e) |
 | Fix project loading task never completes when project has embedded layers | [#21012](https://issues.qgis.org/issues/21012) | [Direct commit](https://github.com/qgis/QGIS/commit/7ad4b05112af0c35bd9a8e0526e8823a6b695335) | [Direct commit](https://github.com/qgis/QGIS/commit/6584fb295aed03c3167d056e1bac59a808a1abb5) |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door Hugo Mercier
@@ -945,8 +945,8 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 | Cascading controls in forms | [#11264](https://issues.qgis.org/issues/11264) | triage, gesloten |  |
 | \$length incorrect in expressions | [#19355](https://issues.qgis.org/issues/19355) | [PR #9063](https://github.com/qgis/QGIS/pull/9063) | [PR #9192](https://github.com/qgis/QGIS/pull/9192) |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Hugo Mercier](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Hugo Mercier](https://oslandia.com/)
 
 {{<content-end >}}

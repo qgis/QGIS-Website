@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: '2023-03-04'
+releaseDate: 04-03-2023
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.30
@@ -14,21 +14,21 @@ type: visual-changelog
 
 Datum uitgave 04-03-2023
 
-The 3.30 \'s-Hertogenbosch release of the groundbreaking QGIS project introduces a wide range of changes and optimizations from the QGIS developer community.
+De uitgave 3.30 \'s-Hertogenbosch van het vernieuwende project QGIS introduceert een breed scala aan wijzigingen en verbeteringen uit de ontwikkelgemeenschap van QGIS.
 
-The splash screen features a fragment of the "Gemeentekaart", or Municipality map, of \'s-Hertogenbosch from 1867. It is part of a series of 1200 maps of all the communities in The Netherlands from that time, which were published in an atlas for each of the 11 regions. All maps were drawn in the same size, although for large municipalities a double format was used and scaled to match the page. The series was internationally rewarded because of its accuracy and completeness. The map was drawn by Jacob Kuyper (1821-1908), the most famous geographer and cartographer of his time in The Netherlands. Text and splash map image provided by [atlasandmap.com](https://atlasandmap.com)
+Het welkomstscherm laat een fragment zien van de "Gemeentekaart" van \'s-Hertogenbosch uit 1867. Het maakt deel uit van een serie van 1200 kaarten van alle gemeenschappen Nederland rond die tijd, die werden gepubliceerd in een atlas voor elk van de 11 regio's. Alle kaarten werden op dezelfde grootte getekend, hoewel voor grotere gemeenten een dubbel formaat werd gebruikt en geschaald om overeen te komen met de pagina. De serie werd internationaal geprezen vanwege zijn nauwkeurigheid en volledigheid. De kaart werd getekend door Jacob Kuyper (1821-1908), de meest beroemde geograaf en cartograaf van zijn tijd in Nederland. Tekst en afbeelding voor welkomstscherm beschikbaar gesteld door [atlasandmap.com](https://atlasandmap.com)
 
 De eigen integratie van GeoNode is ook gemigreerd naar een externe plug-in, wat de krachtige extensies voor de QGIS API voor plug-ins, geimplementeërd in recente uitgaven, ten volle benut.
 
 Gebruikers kunnen ook nieuwe functionaliteiten en verbeteringen aan de UI verwachten, inclusief ondersteuning voor raster attributentabellen, intelligente en configureerbaar sorteren voor het laden van lagen, verbeteringen aan de mogelijkheden voor GPS, meer dynamische formulierwidgets, eigen voorbeelden van rich media voor bijlagen, betere integratie met cloud-services, extensies voor de QGIS standaarden voor metadata, en een host voor andere noemenswaardige aanvullingen.
 
-For a whirlwind tour of all the new functionalities introduced, you can view the highlight reel video on YouTube at <https://www.youtube.com/watch?v=q7O819lFKc4>
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u de video met deze mogelijkheden bekijken op YouTube op <https://www.youtube.com/watch?v=q7O819lFKc4>
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/q7O819lFKc4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
 QGIS is een inspanning van de gemeenschap en we willen ook nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier bij wilt dragen in het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
 
 {{<fund type="active" >}}
 
@@ -45,26 +45,26 @@ Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
 in eerdere uitgaven waren Kaarttips slechts alleen beschikbaar voor vectorlagen, maar nieuwe wijzigingen in de API hebben het mogelijk gemaakt om Kaarttips ook voor andere typen kaarten te implementeren.
 
 Rasterlagen ondersteunen nu Kaarttips, en nieuwe functies voor mogelijkheden van expressies zijn toegevoegd om de bestaande mogelijkheden voor Kaarttips uit te breiden:
-- `map_to_html_table`: converts a map (key-value pair data structure) to an HTML table
-- `map_to_html_dl`: converts a map (key-value pair data structure) to an HTML definition list
-- `raster_attributes`: creates a map with the fields names as keys and the raster attribute table values as values from the attribute table entry that matches the given raster value
-- a new \"Map Layer Position\" expression scope that defines a variable `@layer_cursor_point` with the layer coordinates (in the layer\'s CRS) under the mouse position
+- `map_to_html_table`: converteert een kaart (gegevensstructuur van paren sleutel/waarde) naar een HTML-tabel
+- `map_to_html_dl`: converteert een kaart (gegevensstructuur van paren sleutel/waarde) naar een definitielijst in HTML
+- `raster_attributes`: maakt een kaart met de veldnamen als sleutels en de waarden van de rasterattributentabel vanuit het item van de attributentabel dat overeenkomt met de opgegeven rasterwaarde
+- een nieuw bereik voor expressies \"Positie kaartlaag\" dat een variabele `@layer_cursor_point` definieert met de coördinaten van de laag (in het CRS van de laag) op de positie van de muis
 
 ![image3](images/entries/7cc33f0191d7461c103eef9eb792495d4b298dd6.webp)
 
 Dit werd mogelijk gemaakt door NOAA OCS Hydrography
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Identificeren met verplaatsing muis, geen muisklik
 Een nieuwe optie maakt het mogelijk het gereedschap Objecten identificeren te gebruiken met het verplaatsen van de muis, zonder in het kaartvenster te hoeven klikken.
 
-This option behaves almost identically to the default identify option, with the difference being that the user doesn\'t need to click or use a keyboard shortcut to trigger the identify action. This allows the identify tool to function similar to the MapTips utility, whilst providing users with the benefits of the identify tool such as support for multiple layer types and derived information.
+Deze optie gedraagt zich bijna identiek aan de standaardoptie voor Objecten identificeren, met als verschil dat de gebruiker niet hoeft te klikken of een sneltoets hoeft te gebruiken om de actie voor identificeren uit te voeren. Dit stelt het gereedschap Objecten identificeren in staat zich soortgelijk te gedragen als de mogelijkheid voor Kaarttips, tegelijkertijd de gebruikers de voordelen van het gereedschap Objecten identificeren te geven, zoals ondersteuning voor meerdere laagtypen en afgeleide informatie.
 
 De standaard activatie is een tijdklok van 300 milliseconden die de actie voor Objecten identificeren uitvoert, die is geïmplementeerd om problemen bij uitvoering te vermijden bij het verplaatsen van de muis.
 
 ![image4](images/entries/36bfbae2b85c46b304ea84c05ce819fd69a66d38.gif)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Gebruikersinterface
 ### Mogelijkheid: Op beperkingen gebaseerde functionaliteit voor attributentabellen
 Nieuwe, op beperkingen gebaseerde, voorwaardelijke opmaak en mislukt filteren van objecten met beperkingen worden weergegeven in de attributentabel.
@@ -85,13 +85,13 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: UX GPS Informatiepaneel en opnieuw bewerkt
 Substantieel opnieuw bewerken van het informatiepaneel voor GPS is uitgevoerd om het verwerken van GPS door gebruikers in QGIS te vereenvoudigen en een meer gestroomlijnde ervaring voor GPS te verschaffen.
 
-Previously, **all** application-level GPS functionality was exposed through a single GPS \"Information\" panel interface, which included GPS connection settings, digitizing from GPS, and the actual display of GPS information. This interface became cluttered and difficult to use
+Eerder werd **alle** functionaliteit voor GPS op het niveau van de toepassing weergegeven door een enkele interface voor het GPS \"Informatie\"paneel. Dat de instellingen voor de verbinding van GPS bevatten, het digitaliseren van GPS, en de feitelijke weergave van informatie over GPS. Deze interface raakte verstopt en was moeilijk te gebruiken.
 
 Functionaliteit voor GPS is nu gesplitst in afzonderlijke delen:
 1. Niveau van de toepassing, zelden gewijzigde instellingen voor GPS zijn aanwezig op de tab GPS van het menu Opties in de instellingen van QGIS.
-2. A new floating \"GPS Toolbar\" has been added, which contains the most commonly used GPS-related operations.
-3. The final action in the GPS Toolbar opens a \"GPS settings\" popup, that contains various settings that are expected to be modified mid-session and are expected to be more readily accessible.
-4. The GPS information widget has been redesigned to show only GPS **information**. Specifically, only the \"information\" and \"signal\" tabs remain. The GPS information widget still contains a shortcut to the connect/disconnect action, and also a settings button that exposes the same GPS settings menu as is used in the GPS toolbar.
+2. Een nieuwe zwevende \"werkbalk GPS\" is toegevoegd, die de meest gebruikte, aan GPS gerelateerde bewerkingen bevat.
+3. De laatste actie in de werkbalk GPS opent een popup \"GPS-instellingen\", die verschillende instellingen bevat waarvan wordt verwacht dat ze tijdens een sessie kunnen worden aangepast en beter bereikbaar zijn.
+4. De widget GPS-informatie is opnieuw ontworpen om alleen GPS **informatie** weer te geven. Specifiek: alleen de tabs \"Informatie\" en \"Signaal\" zijn behouden. De widget GPS-informatie bevat nog steeds een sneltoets naar de actie verbinden/verbinding verbreken, en ook een knop Instellingen die hetzelfde menu voor instellingen van GPS weergeeft als wat wordt gebruikt in de werkbalk GPS.
 
 De klasse widget GPS informatie is nu ALLEEN verantwoordelijk voor het weergeven van de GPS-informatie in het paneel, en nieuwe toegewezen klassen zijn overeenkomstig gemaakt voor het afhandelen van digitaliseren van GPS, de nieuwe werkbalk GPS, en instellingen voor GPS.
 
@@ -108,11 +108,11 @@ Deze ontwikkeling bevat ook het exporteren van complexe polygoon laagstijlen als
 
 ![image7](images/entries/cce332a4adc8cc7a24ead53acd8924431f1085f2.webp)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Renderen
 ### Mogelijkheid: Globaal schaduwen voor kaartterrein
 Gebruikers zijn nu in staat een globaal schaduweffect voor de kaart toe te passen, die is gebaseerd op de hoogte van *alle* actieve lagen die hoogte ondersteunen, inclusief :
-- Raster layers (if \"Represent elevation Surface\" is checked in the layer properties)
+- Rasterlagen (als \"Geeft oppervlakte hoogte weer\" is geselecteerd in de Laageigenschappen)
 - Lagen met mazen
 - Puntenwolklagen
 
@@ -128,15 +128,15 @@ Instellingen voor schaduw worden in de volgende besturingselementen in de gebrui
 
 ![image8](images/entries/e75c69fb42f1916ceaf4b30f589154dc47881c6f.webp)
 
-This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
+Dit werd mogelijk gemaakt door [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
 Deze mogelijkheid werd ontwikkeld door [Vincent Cloarec](https://github.com/vcloarec)
 ### Mogelijkheid: Ondersteuning toegevoegd voor super- en subscript voor de tekstrenderer
 Tekstitems in QGIS ondersteunen nu superscript en subscript.
 
 Dit maakt:
-- `<sup>superscript</sup>` / `<sub>subscript</sub>` components in text, where the text will be vertically super or subscript aligned and automatically sized to 2/3rd of the parent font size. Users can also set a fixed font size for the super/subscript by including the relevant CSS rules in their HTML, e.g. `<sup style="font-size:33pt">super</sup>`
-- `vertical-align: super` or `vertical-align: sub` CSS formatting rules in any other HTML element
+- componenten `<sup>superscript</sup>` / `<sub>subscript</sub>` in tekst mogelijk, waar de tekst verticaal super- of subscript wordt uitgelijnd en automatisch op de grootte van 2/3 van de grootte van het ouderlettertype zal worden gebracht. Gebruikers kunnen ook een vaste grootte voor het lettertype voor het super-/subscript instellen door de relevante regels voor CSS op te nemen in hun HTML, bijv. `<sup style="font-size:33pt">super</sup>`
+- `vertical-align: super` of `vertical-align: sub` opmaakregels voor CSS in elk ander element van HTML mogelijk
 
 ![image9](images/entries/24e510e32b919b373d09e5fe8536cfc0dfd0d66e.webp)
 
@@ -156,19 +156,19 @@ Op bereik gebaseerd filteren van objecten in lagen met mazen is momenteel in ont
 
 ![image10](images/entries/a8135c9cfcaa91fdc540512f36cf276a2cdb4f02.webp)
 
-This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
+Dit werd mogelijk gemaakt door [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ### Mogelijkheid: Verbeterd beheer voor camera
 Er zijn een aantal verbeteringen die de ervaring voor de gebruiker verbeteren:
-- Elevation range is taken into account when \"Zoom full\" is used (users should not end up \"behind\" their scene anymore)
+- Met het bereik van de hoogte wordt rekening gehouden als \"Volledig zoomen\" wordt gebruikt (gebruikers zouden niet meer moeten eindigen \"achter\" hun scene)
 - Camera verticaal verplaatsen met Ctrl + Shift + linkermuisknop
 - Zoomen met muis tijdens verplaatsen met muis toestaan
 - Ga door met zoomen met rechtermuisknop als de muisaanwijzer het zichtgebied verlaat
 
-This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
+Dit werd mogelijk gemaakt door [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Afdruklay-outs
 ### Mogelijkheid: Beheren sneltoetsen voor afdruklay-outs
 Het beheren van sneltoetsen, toegankelijk vanuit het menu Extra van de primaire interface van QGIS, stelt gebruikers in staat bestaande sneltoetsen voor het toetsenbord te configureren en bestaande te overschrijven en ondersteunt door de gebruiker gedefinieerde methoden voor het uitvoeren van Acties van QGIS.
@@ -177,7 +177,7 @@ Een soortgelijk dialoogvenster voor het configureren van sneltoetsen voor toetse
 
 ![image11](images/entries/ce065abd5dfe0a678e461a12e0efef92c5acaae3.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Tekstrenderer gebruiken in legenda's van lay-outs
 Deze wijziging maakt het mogelijk de volledige mogelijkheden van de tekstrenderer te gebruiken voor titels, subtitels en tekst voor items in legenda's.
 
@@ -187,22 +187,22 @@ Dit werd mogelijk gemaakt door NIBIO
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Expressies
-### Feature: Add feature_id() function
-A new `feature_id($feature)` expression function now allows for retrieving the feature ID of a feature object.
+### Mogelijkheid: Functie Toevoegen feature_id()
+Een nieuwe expressie-functie `feature_id($feature)` maakt het nu mogelijk het object-ID van een object op te halen.
 
-The function accepts one argument which must be a feature object. Accordingly, this function can be used with the results of any other function which returns feature objects, such as \"get_feature\", \"overlay\_\*\", etc.
+De functie accepteert één argument dat een object moet zijn. Soortgelijk kan deze functie worden gebruikt met de resultaten van elke andere functie die objecten teruggeeft, zoals \"get_feature\", \"overlay\_\*\", etc.
 
 ![image12](images/entries/6536913b10d68dded9a54bc58ba003b821b100f6.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: New is_feature_valid() and is_attribute_valid() functions
-New `is_feature_valid()` and `is_attribute_valid()` functions are provided in QGIS expressions. Both functions validate a feature or attribute, based on the constraints attached to fields for a given vector layer. This enables users to leverage the select-by-expression utility to locate features that have unmet constraints. In addition, users can now use the rule-based renderer to provide visual feedback through symbology indicating the constraint validity state of rendered features.
+### Mogelijkheid: Nieuwe functies is_feature_valid() en is_attribute_valid()
+Nieuwe functies `is_feature_valid()` en `is_attribute_valid()` worden verschaft in expressies van QGIS. Beide functies valideren een object of attribuut, gebaseerd op de aan de velden aangehechte beperkingen voor een bepaalde vectorlaag. Dit stelt gebruikers in staat de mogelijkheid voor selecteren-met-expressie te gebruiken om objecten te lokaliseren die niet voldoen aan beperkingen. In aanvulling daarop kunnen gebruikers nu de op regel gebaseerde renderer gebruiken om visuele terugkoppeling te verschaffen, door symbologie die de status voor de geldigheid van de beperking voor gerenderde objecten aangeeft.
 
 ![image13](images/entries/f6a73012edcc84033d40e91bc6216365fd4f5ae6.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add x_at, y_at, z_at, m_at expression functions
-The available \$functions are considered deprecated (\$x_at`and`\$y_at\`), and instead of operating on the current feature geometry the functions instead support a feature geometry as arguments.
+### Mogelijkheid: Expressiefuncties x_at, y_at, z_at, m_at toegevoegd
+De beschikbare \$functies worden als vervallen beschouwd (`\$x_at` en `\$y\_at\`), en in plaats van het werken op de huidige geometrie van het object ondersteunen de functies in plaats daarvan een geometrie van een object als argumenten.
 
 De wijzigingen voor deze expressies bevatten het maken van soortgelijke functies voor andere metingen van geometrieën. Deze nieuwe functies omvatten:
 - x_at(geometry, i)
@@ -210,27 +210,27 @@ De wijzigingen voor deze expressies bevatten het maken van soortgelijke functies
 - z_at(geometry, i)
 - m_at(geometry, i)
 
-This feature was funded by [Métropole Européenne de Lille](https://www.lillemetropole.fr/)
+Dit werd mogelijk gemaakt door [Métropole Européenne de Lille](https://www.lillemetropole.fr/)
 
-This feature was developed by [Antoine Facchini](https://github.com/Koyaani)
+Deze mogelijkheid werd ontwikkeld door `Antoine Facchini <https://github.com/Koyaani>`__
 ## Gegevensbeheer
 ### Mogelijkheid: Bewerken veld DateTime: scheiding van indeling weergave en indeling veldwaarde
 Inspanningen om het beheer van informatie voor het veld Datetime omvatten de expliciete definitie van gelokaliseerde opmaak voor het *weergeven* van velden Datetime, er voor zorgend dat het bewerken, vastleggen en opslaan van de veldwaarden zich conformeert aan internationale standaarden voor de opmaak van tijd.
 
-This feature was funded by [3liz](https://3liz.com)
+Dit werd mogelijk gemaakt door [3liz](https://3liz.com)
 
-This feature was developed by [rldhont](https://github.com/rldhont)
+Deze mogelijkheid werd ontwikkeld door [rldhont](https://github.com/rldhont)
 ### Mogelijkheid: Optie toegevoegd om direct GPS-punten en tracks te loggen naar een database van GeoPackage of SpatiaLite
-When activated in the GPS toolbar settings, the \"Log to Geopackage/Spatialite\" action will prompt the user to select an existing GPKG or SpatiaLite file, or enter a new file name. A \"gps_points\" and \"gps_tracks\" table will be created in the file with a predefined structure.
+Indien geactiveerd in de instellingen voor de werkbalk van GPS, zal de actie \"Log naar GeoPackage/SpatiaLite\" de gebruiker vragen een bestaand bestand GPKG of SpatiaLite te selecteren, of een nieuwe bestandsnaam in te voeren. Een tabel \"gps_points\" en \"gps_tracks\" zal in het bestand worden gemaakt met een vooraf gedefinieerde structuur.
 
-All incoming GPS messages will be logged to the gps_points layer, along with speed/bearing/altitude/accuracy information from the GPS.
+Alle inkomende GPS-berichten zullen worden gelogd naar de laag gps_points, naast de informatie voor snelheid/richting/hoogte/nauwkeurigheid van de GPS.
 
-When the GPS is disconnected (or QGIS is closed), the entire recorded GPS track will be added to the gps_tracks table, along with some calculated information like track length, and start and end times)
+Wanneer de verbinding met de GPS wordt verbroken (of QGIS wordt afgesloten), zal het gehele opgenomen GPS-spoor worden toegevoegd aan de tabel gps_tracks, naast enige berekende informatie, zoals lengte van het spoor en begin- en eindtijden.
 
 Dit werd mogelijk gemaakt door NIWA
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add an explicit \"Offset from UTC\" option for storing GPS feature timestamps
+### Mogelijkheid: Een expliciete optie \"Verschuiving van UTC\" toegevoegd voor het opslaan van tijdstempels van GPS-objecten
 Deze optie stelt gebruikers in staat om handmatig een gewenste verschuiving vanaf UTC in te voeren voor het opslaan van GPS tijdstempels. Dit maakt volledige flexibiliteit mogelijk voor gebruikers die rekening moeten houden met verschuivingen door zomer-/wintertijd of andere complexe problemen met tijdzones.
 
 Dit werd mogelijk gemaakt door NIWA
@@ -241,21 +241,21 @@ QGIS ondersteunt nu uitgebreid Raster-AttributenTabellen (RAT's).
 
 Deze bijwerkingen verschaffen een nieuwe interface voor RAT's in de QGIS API, en ondersteuning wordt verschaft voor RAT's die worden beheerd door raster gegevensproviders (GDAL), als ook voor algemene bestanden voor waarde attributentabellen (VAT), vooropgesteld dat zij zijn opgeslagen in een DBF sidecar hulpbestand.
 
-Much of the functionality from the [Python RAT Plugin](https://github.com/noaa-ocs-hydrography/qgis-raster-attribute-table-plugin) was ported into QGIS to provide native support for RATs, and a new set of GUI operations affords users the following advanced functionalities:
+Veel van de functionaliteit van de [Python RAT Plugin](https://github.com/noaa-ocs-hydrography/qgis-raster-attribute-table-plugin) werd geporteerd in QGIS om eigen ondersteuning te verschaffen voor RAT's, en een nieuwe set bewerkingen van de gebruikersinterface biedt gebruikers de volgende geavanceerde functionaliteiten:
 - **Automatisch opmaken raster**: Als een RAT beschikbaar is bij het toevoegen van een raster aan het project en informatie over de opmaak bevat, zal QGIS standaard de relevante stijlen toepassen op de rasterlaag. Automatisch laden werkt voor zowel ingebedde RAT's als voor sidecar VAT.DBF met dezelfde basisnaam van het raster.
 - **RAT opnieuw classificeren**: Opnieuw classificeren van een raster kan worden uitgevoerd door een andere kolom te selecteren
 - **RAT identificeren**: Waarden uit de rij van de RAT die corresponderen met de relevante pixelwaarde worden weergegeven in het kaartgereedschap Objecten identificeren
-- **RAT properties**: A new \"Attribute Table\" tab is available from the raster layers property window
+- **RAT eigenschappen**: Een nieuwe tab \"Attributentabellen\" is beschikbaar in het venster van de laageigenschappen van het raster
 - **RAT bewerken**: RAT's bieden basismogelijkheden voor bewerken
 - **RAT maken uit huidige classificatie**: RAT's kunnen worden gemaakt uit bestaande gepaletteerde of enkelband pseudokleur stijlen
 
-A gallery of these functionalities in action is [available on GitHub](https://github.com/qgis/QGIS/pull/50687)
+Een galerij van deze functionaliteiten in actie is [beschikbaar op GitHub](https://github.com/qgis/QGIS/pull/50687)
 
 ![image14](images/entries/4406611cee132d2bfae92d9ba01681464f333928.gif)
 
 Dit werd mogelijk gemaakt door NOAA OCS Hydrography
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Metadata en Metasearch
 ### Mogelijkheid: Sleuteldatums toevoegen aan metadata voor laag en project
 De volgende velden zijn toegevoegd aan de standaard voor metadata van QGIS laag/project:
@@ -271,61 +271,61 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Ondersteuning voor attributen van audiovisuele multimedia bijlagen
 Nieuwe functionaliteit introduceert ondersteuning voor multimedia voor de widget voor externe bronnen, wat het gebruikers mogelijk maakt audio en video mediabestanden af te spelen in de viewer voor bijlagen.
 
-This change includes additional configuration options for external resources, with two new items in the integrated viewer type combo box. The video type will take into consideration the height set by the user. If it\'s left to auto, the video widget will grow to fill available space.
+Deze wijziging omvat aanvullende opties voor het configureren van externe bronnen, met twee nieuwe items in het geïntegreerde combinatievak voor het type viewer. Het type video zal rekening houden met de door de gebruiker ingestelde hoogte. Als het op auto wordt gezet, zal de widget video groter worden om de beschikbare ruimte te vullen.
 
-This functionality includes the development of the `QgsMediaWidget` object into the QGIS API for extended multimedia support.
+Deze functionaliteit omvat het ontwikkelen van het object `QgsMediaWidget` in de QGIS API voor uitgebreide ondersteuning voor multimedia.
 
 ![image15](images/entries/75fcba5750d9ce4bb1b7ad41089dd39fd11ae827.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Bewerkbare status data-bepaald voor formulierwidgets
-The \"Editable\" checkbox status can now be controlled through an expression, the expression supports the \"form\" context, meaning that it can use `current_value( '<field_name>' )` to dynamically change the editable status according to changes to other fields in the form.
+De status van het keuzevak \"Aanpasbaar\" kan nu worden beheerd door een expressie. De expressie ondersteunt de context "form", wat betekent dat het `current_value( '<field_name>' )` kan gebruiken om dynamisch de status voor Aanpasbaar te wijzigen overeenkomstig de wijzigingen aan andere velden in het formulier.
 
 ![image16](images/entries/ce2bc7938c4c5f28d3f0d872e9045c856ef79ef1.gif)
 
 Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Scheidingsteken-widget voor slepen & neerzetten attributenformulieren
 Een nieuw scheidingsteken-widget is verschaft, met de optie om een horizontale lijn te tekenen, wat gebruikers een grotere mate van beheer geeft voor hoe formulieren worden gerenderd voor eindgebruikers en functionaliteit uitbreidt voor verbeterde gebruikerservaring met thematische scheidingen en verbeterde uitlijning.
 
 De widget rendert als een blanco ruimte in het formulier, wat een handmatige scheiding maakt tussen andere objecten van het formulier.
 
-When the \"Draw line\" option is set in the configuration it will fill the vacant space with a line in a manner similar to the horizontal rule, or `<hr>` tag in html.
+Als de optie \"Horizontale lijn tekenen\" is ingesteld in de configuratie, zal het de vrije ruimte vullen met een lijn op een manier die soortgelijk is aan de horizontale regel, of tag ``<hr>`` in HTML.
 
 ![image17](images/entries/72c262227fb339abd30833edc712ead25d943044.webp)
 
 Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Dynamic text widgets with current_value support
-Text widgets now support dynamic configuration based on the values of fields present in the current form context by providing a `current_value()` function which may be evaluated within a `QLabel` object.
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
+### Mogelijkheid: Dynamische tekstwidgets met ondersteuning voor current_value
+Tekstwidgets ondersteunen nu dynamische configuratie, gebaseerd op de waarden van velden die in de context van het huidige formulier aanwezig zijn, door een functie `current_value()` te verschaffen die kan worden geëvalueerd in een object `QLabel`.
 
-Using the `current_value( '<field_name>' )` expression will evaluate and update the form when the form field value changes.
+Gebruik van de expressie `current_value(  '<field_name>' )` zal het formulier evalueren en bijwerken als de waarde van het veld in het formulier wijzigt.
 
 ![image18](images/entries/6de3cc5d5a6d002fd014717e57f251ec9b0147d9.gif)
 
 Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Dynamic HTML widgets with current_value support
-HTML widgets now support dynamic configuration based on the values of fields present in the current form context by providing a `current_value` function.
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
+### Mogelijkheid: Dynamische HTML-widgets met ondersteuning voor current_value
+HTML-widgets ondersteunen nu dynamische configuratie, gebaseerd op de waarden van velden die in de context van het huidige formulier aanwezig zijn door een functie `current_value()` te verschaffen.
 
-Using the `current_value( '<field_name>' )` expression will evaluate and update the form when the form field value changes.
+Gebruik van de expressie `current_value(  '<field_name>' )` zal het formulier evalueren en bijwerken als de waarde van het veld in het formulier wijzigt.
 
 ![image19](images/entries/f04157ac77cf00862595f8b75707c8126e121ce4.gif)
 
 Dit werd mogelijk gemaakt door [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Meerdere selecties met filteren voor widget relatie met waarden
-The Value Relation widget previously ignored \"Use completer\" option when \"Allow multiple selections\" was enabled. Now these two options work together and there is a search box present at the top of the table, allowing filtering of values. When \"Use completer\" option is not enabled, the search box is not shown as before.
+De widget Waarde relatie negeerde eerder de optie \"Compleet maken gebruiken\" als \"Meerdere selecties toestaan\" werd ingeschakeld. Nu werken deze twee opties samen en is er een zoekvak aanwezig aan de bovenkant van de tabel dat het filteren van waarden mogelijk maakt. Als de optie \"Compleet maken gebruiken\" niet is ingeschakeld, wordt, zoals eerder, het zoekvak niet weergegeven.
 
 ![image20](images/entries/3ec355e558ca705d17be8f21c79c613d1022630a.gif)
 
-This feature was funded by [QGIS Norway](http://www.qgis.no/)
+Dit werd mogelijk gemaakt door [QGIS Noorwegen](http://www.qgis.no/)
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Legenda van laag
 ### Mogelijkheid: Nieuwe verbeteringen volgorde van lagen
 Nieuwe opties voor te configureren methoden voor het invoegen in de boom met lagen, en het automatisch sorteren van lagen die zijn toegevoegd met functies voor slepen en neerzetten, zijn nu beschikbaar in QGIS.
@@ -334,7 +334,7 @@ Het eerdere gedrag was dat QGIS altijd nieuwe lagen laadde boven de huidige acti
 
 Nieuwe opties zijn verschaft om meer beheer, over hoe nieuwe lagen worden toegevoegd aan projecten, mogelijk te maken:
 - Altijd bovenaan de boom van lagen
-- Optimal index/position within the currently active layer\'s group
+- Optimale index in de huidige groep van de boom van lagen
 
 De optimale index zal proberen om lagen intelligent te ordenen op type (bijv. punten bovenop gebieden etc.) en een significant verbeterde ervaring verschaffen voor nieuwe gebruikers.
 
@@ -342,7 +342,7 @@ In aanvulling daarop zullen met slepen en neerzetten toegevoegde lagen worden to
 
 ![image21](images/entries/a2f44bdf5df6e8b33dc71c975cbb9c01cfa4845c.webp)
 
-This feature was funded by [Funded by the QGIS user group Switzerland](https://www.qgis.ch/)
+Dit werd mogelijk gemaakt door [Fondsen van de Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Processing
@@ -354,15 +354,15 @@ Drie nieuwe optionele geavanceerde parameters zijn weergegeven voor het algoritm
 
 ![image22](images/entries/a96f4972c9664c8887220b0a218103c053050e71.webp)
 
-This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
-### Feature: Support data defined parameter values when using qgis_process tool
-While many processing algorithms supported data-defined parameter values, these were not possible to specify when using the qgis_process tool (or when representing algorithm settings as JSON and qgis_process commands), introducing limitations for utilizing QGIS within command line processing operations.
+Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
+### Mogelijkheid: Ondersteuning voor waarden van parameters data-bepaald bij het gebruiken van het gereedschap qgis_process
+Waar vele algoritmes voor Processing waarden voor parameters data-bepaald ondersteunden, was het niet mogelijk die te specificeren bij het gebruiken van het gereedschap qgis_process (of bij het weergeven van instellingen voor het algoritme als JSON en opdrachten voor qgis_process), wat beperkingen introduceerde voor het gebruiken van QGIS in bewerkingen van Processing op de opdrachtregel.
 
-A new syntax is now provided to allow the specification of data-defined parameter values when running qgis_process operations, and copying the algorithm settings from QGIS will now correctly handle data-defined values.
+Een nieuwe syntaxis wordt nu verschaft om het specificeren van waarden parameters data-bepaald toe te staan bij het uitvoeren van bewerkingen met qgis_process, en het kopiëren van de instellingen voor het algoritme vanuit QGIS zal nu op de juiste wijze de data-bepaalde waarden afhandelen.
 
-Command line arguments are specified with the `expression:` prefix within an encapsulated string, whilst the JSON definition is implemented using an expression object with a `data_defined` type definition. Note that special characters within the expression will need to use the appropriate escape characters relevant to the context in which they are used.
+Argumenten voor de opdrachtregel worden gespecificeerd met het voorvoegsel `expression:` binnen een omsloten tekenreeks, terwijl de definitie voor JSON wordt geïmplementeerd met een object expression met een typedefinitie `data_defined`. Onthoud dat speciale tekens in de expressie het toepasselijke teken voor escapen moeten gebruiken, relevant vergeleken met de context waarin ze worden gebruikt.
 
-Considering the expression `@variable*"field_name"*to_int('2')/100` for the following examples, the command-line syntax would be:
+Kijkend naar de expressie `@variable*"field_name"*to_int('2')/100` voor de volgende voorbeelden, zou de opdracht voor de opdrachtregel moeten zijn:
 
     --PARAMETER='expression:@variable*"field_name"*to_int('\''2'\'')/100'
     
@@ -379,23 +379,23 @@ Terwijl de weergave in JSON zou moeten zijn:
 Dit werd mogelijk gemaakt door het Research Institute for Nature and Forest, Vlaamse overheid
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: New \"load_layer\" function
-A new `load_layer` expression function has been made available (exclusively for Processing expressions for the time being), which allows the loading of a map layer using a source string and provider name.
+### Mogelijkheid: Nieuwe functie \"load_layer\"
+Een nieuwe expressiefunctie `load_layer` is beschikbaar gemaakt (voorlopig alleen exclusief voor expressies van Processing), die het laden van een kaartlaag met een brontekenreeks en naam van een provider mogelijk maakt.
 
 Het is ontworpen om het gebruik mogelijk te maken van expressie-functies die direct verwijzen naar kaartlagen (zoals de functies voor totaliseren) met een hard gecodeerd pad naar de laag.
 
-This permits the usage of these functions to be used outside of a project (such as via the qgis_process tool) and perform operations such as utilizing complex aggregate functions in the refactor fields algorithm via the qgis_process utility without creating a temporary project for data manipulation.
+Dit maakt het mogelijk deze functies te gebruiken buiten een project (zoals via het gereedschap qgis_process) en bewerkingen uit te voeren. Zoals het gebruiken van complexe functies voor totaliseren in het algoritme Bijgewerkte velden via de mogelijkheid van qgis_process zonder een tijdelijk project te moeten maken voor het bewerken van gegevens.
 
 Dit werd mogelijk gemaakt door het Research Institute for Nature and Forest, Vlaamse overheid
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Gebruikersinterface toegevoegd voor definitie van bereik in GDAL Raster Calculator
-The GDAL Raster Calculator now includes an interface for user-specified extent definition, so that users no longer have to specify the `--extent` criteria in advanced options.
+De GDAL Raster Calculator heeft nu een interface voor gebruikergespecificeerde definitie van bereik, zodat de gebruikers niet langer de criteria `--extent` hoeven te specificeren in geavanceerde opties.
 
-This feature was developed by [Nicolas Godet](https://github.com/nicogodet)
+Deze mogelijkheid werd ontwikkeld door [Nicolas Godet](https://github.com/nicogodet)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Optie toegevoegd voor opslaan geselecteerde component voor GPS in waarden M van geometrie
-This new setting, available from the GPS settings panel, allows users to opt into creating geometries with M values from the inbuilt GPS logging tools. This applies to both features digitized from GPS logs, and from the new \"Log to GeoPackage/SpatiaLite\" functionality.
+Deze nieuwe instelling, beschikbaar in het paneel voor de instellingen van GPS, stelt gebruikers in staat de optie voor het maken van geometrieën met waarden M uit de ingebouwde gereedschappen voor loggen van GPS te gebruiken. Dit is van toepassing op zowel objecten die zijn gedigitaliseerd uit logs van GPS, als van de nieuwe functionaliteit \"Loggen naar GeoPackage/SpatiaLite\".
 
 Opties omvatten het opslaan van tijdstempels (als milliseconden vanaf epoch), grondsnelheid, hoogten, richtingen en componenten voor nauwkeurigheid als waarden M.
 
@@ -419,13 +419,13 @@ Dit werd mogelijk gemaakt door NIWA
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Profiel plotten
 ### Mogelijkheid: Nieuw item Hoogteprofiel voor kaartvenster voor QGIS Quick
-A new elevation profile canvas item is available for [QGIS Quick](https://api.qgis.org/api/qgsquick.html), allowing the elevation profile tools to be used in other cross platform and mobile QGIS applications.
+Een nieuw item Hoogteprofiel voor het kaartvenster is beschikbaar voor [QGIS Quick](https://api.qgis.org/api/qgsquick.html), wat het mogelijk maakt de gereedschappen voor hoogteprofielen te gebruiken op andere platforms en in toepassingen van mobiel QGIS.
 
 ![image24](images/entries/f870a9112a3577742c6f8c6a98b142b23145d525.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Hoogteprofielen plotten in afdruklay-outs 
-It is now possible to include profile plots in print layouts! There is a new \"Add Elevation Profile\" button in the toolbar which will initially create an empty plot. A plot can be initialized by clicking \"Copy From Profile\" button in the properties of the elevation profile item - this will use the active elevation profile from the main window of QGIS.
+Het is nu mogelijk om plots van hoogteprofielen op te nemen in afdruklay-outs! Er is een nieuwe knop \"Hoogteprofiel toevoegen\" op de werkbalk, die initieel een lege plot zal maken. Een plot kan worden geïnitialiseerd door te klikken op de knop \"Kopiëren vanuit profiel\" in de eigenschappen van het item Hoogteprofiel - dit zal het hoogteprofiel gebruiken uit het hoofdvenster van QGIS.
 
 Het hoogteprofiel heeft brede opties voor configureren - u kunt specificeren:
 - welke lagen moeten worden opgenomen
@@ -436,7 +436,7 @@ Het hoogteprofiel heeft brede opties voor configureren - u kunt specificeren:
 
 ![image25](images/entries/ca6f01c1c76d7cff23ff8d27492734c74b8c3973.webp)
 
-This feature was funded by [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
+Dit werd mogelijk gemaakt door [QGIS Community Crowdfunding Efforts](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Browser
@@ -452,11 +452,11 @@ Dit werd mogelijk gemaakt door Provincie Zuid-Holland
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gegevensproviders
 ### Mogelijkheid: Verwijderen van Native GeoNode Provider
-The Native GeoNode Provider has been removed from QGIS and is now instead available as a [plugin](https://geonode.org/QGISGeoNodePlugin/).
+De Native GeoNode Provider is verwijderd uit QGIS en is in plaats daarvan nu beschikbaar als een [plug-in](https://geonode.org/QGISGeoNodePlugin/).
 
-This change is due to the extension of plugin APIs to support the necessary functionalities, such as the data source manager, and was executed in line with [QEP 262](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/262).
+Deze wijziging is vanwege de uitbreiding van de API's voor plug-ins om de noodzakelijke functionaliteiten te ondersteunen, zoals Databronnen beheren, en werd uitgevoerd in lijn met [QEP 262](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/262).
 
-This feature was developed by [Giovanni Allegri](https://github.com/giohappy)
+Deze mogelijkheid werd ontwikkeld door [Giovanni Allegri](https://github.com/giohappy)
 ### Mogelijkheid: In Databronnen beheren, gebruikers toestaan direct een laag XYZ toe te voegen zonder eerst een verbinding te moeten maken
 Gebruikers mogen nu direct een laag XYZ-tegel toevoegen in Databronnen beheren, zonder eerst een nieuwe verbinding te moeten maken.
 
@@ -470,15 +470,15 @@ Omdat GDAL nu loggen van callbacks van queries ondersteunt voor op SQLite-gebase
 
 Dit is beschikbaar voor op OGR-gebaseerde  gegevensbronnen van SQLite (SpatiaLite/ GPKG).
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Ondersteuning voor S3 Cloud Storage
 S3 compatibele opslag in de cloud, zoals AWS S3 en MinIO, worden nu ondersteund als een methode voor toegang tot en opslaan van externe bestanden, beschikbaar gemaakt door de gebruikersinterface voor externe opslag te gebruiken in de cloud voor opslag van bijlagen.
 
-A new QGIS Auth method named \"AWS S3\" has been provided to support connecting to services using the S3 protocol.
+Een nieuwe methode voor Auth in QGIS, genaamd \"AWS S3\", wordt verschaft om het verbinden met services met het protocol S3 te ondersteunen.
 
 Dit werd mogelijk gemaakt door Métropole Grand Lyon\*\*
 
-This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
+Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://github.com/Djedouas)
 ### Feature: Resolutie herkennende WMTS-lagen met automatisch opschalen
 QGIS staat WMTS-lagen nu toe om rekening te houden met de schermresolutie van het apparaat, of dots per inch (DPI), en de resolutie voor de tegel op te schalen op schermen met hoog DPI.
 
@@ -490,42 +490,42 @@ Onthoud dat inschakelen van gladde pixmap transformatie wordt aanbevolen als het
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Verwijderen niet onderhouden provider SAGA uit installaties van QGIS
-This provider has not been maintained and does not work with newer SAGA versions. Users are encouraged to use the 3rd-party \"Processing Saga NextGen\" plugin instead.
+Deze provider wordt niet meer onderhouden en werkt niet met nieuwere versies van SAGA. Gebruikers worden aangeraden de plug-in van 3e-partij \"Processing Saga NextGen\" in plaats daarvan te gebruiken.
 
-After many many years of discussion, it\'s time for the inbuilt provider to go!
+Na vele jaren van discussie is het voor de ingebouwde provider tijd om te vertrekken!
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Verbeterde ondersteuning voor lagen met onbekend type geometrie voor provider WFS
-The QGIS WFS provider has been improved to look in the response to the GetCapabilities request (if using WFS 2.0) if the `IsPoint`, `IsCurve`, `IsSurface` extended filter functions are present.
+De provider van QGIS WFS is verbeterd om in het antwoord van het verzoek GetCapabilities te zoeken (indien WFS 2.0 wordt gebruikt) of de uitgebreide filterfuncties `IsPoint`, `IsCurve`, `IsSurface` aanwezig zijn.
 
-When such a layer is added to the project, a \"Select Items to Add\" dialog box is displayed.
+Wanneer een dergelijke laag wordt toegevoegd aan het project, wordt een dialoogvenster \"Toe te voegen items selecteren\" weergegeven.
 
-This enables the user to select one or several layers among ones of `NoGeometry`, `MultiPoint`, `MultiCurve`, `MultiSurface`, `GeometryCollection` types.
+Dit stelt de gebruiker in staat om een of meerdere lagen te selecteren naast typen `NoGeometry`, `MultiPoint`, `MultiCurve`, `MultiSurface`, `GeometryCollection`.
 
 ![image32](images/entries/2068734219e240ca90b22435ca1381f3c8e4b9ef.webp)
 
-This feature was funded by [QGIS-DE user group](https://qgis.de)
+Dit werd mogelijk gemaakt door [Duitse QGIS gebruikersgroep](https://qgis.de)
 
-This feature was developed by [Even Rouault](https://github.com/rouault)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
 ## QGIS Server
-### Feature: QGIS_APPLICATION_FULL_NAME environment variable
-This change defines the `QgsApplication::applicationFullName()` method for use with PostgreSQL `application_name` and QGIS Server Logging.
+### Mogelijkheid: Omgevingsvariabele QGIS_APPLICATION_FULL_NAME
+Deze wijziging definieert de methode `QgsApplication::applicationFullName()` voor gebruik met PostgreSQL `application_name` en QGIS Server loggen.
 
-For QGIS Server, the `QGIS_SERVER_APPLICATION_NAME` can be specified instead and will take precedence over the `QGIS_APPLICATION_FULL_NAME` setting.
+Voor QGIS Server mag de `QGIS_SERVER_APPLICATION_NAME` worden gespecificeerd in plaats van en zal voorrang hebben boven de instelling `QGIS_APPLICATION_FULL_NAME`.
 
-The value may also be specified in the `/qgis/application_full_name` variable in the QGIS Server config file.
+De waarde mag ook worden gespecificeerd in de variabele `/qgis/application_full_name` in het configuratiebestand van QGIS Server.
 
-By default, this value will be defined by the value of `QgsApplication::applicationName()+' '+QgsApplication::platform()`.
+Standaard zal deze waarde worden gedefinieerd door de waarde van `QgsApplication::applicationName()+' '+QgsApplication::platform()`.
 
-This feature was funded by [3liz](https://3liz.com)
+Dit werd mogelijk gemaakt door [3liz](https://3liz.com)
 
-This feature was developed by [rldhont](https://github.com/rldhont)
+Deze mogelijkheid werd ontwikkeld door [rldhont](https://github.com/rldhont)
 ### Mogelijkheid: Ondersteuning voor GeoJSON voor WFS DescribeFeatureType
 Ondersteuning voor JSON is toegevoegd als een indeling voor de uitvoer voor verzoeken DescribeFeatureType naar de QGIS Server WFS. Hoewel er geen expliciete stipulatie bestaat in de specificaties van WFS, maakt deze functionaliteit antwoorden mogelijk die overeenkomen met andere providers van de service WFS, zoals GeoServer.
 
-This feature was funded by [Kristianstads kommun](https://www.kristianstad.se/)
+Dit werd mogelijk gemaakt door [Kristianstads kommun](https://www.kristianstad.se/)
 
-This feature was developed by [David Marteau](https://github.com/dmarteau)
+Deze mogelijkheid werd ontwikkeld door [David Marteau](https://github.com/dmarteau)
 ## Plug-ins
 ### Mogelijkheid: Regels voor Topologie controle in-/uitschakelen en filteren
 De plug-in Topology checker is verbeterd om functionaliteit te verschaffen voor het beter beheren van regels, als ook het filteren van grote sets fouten. Aanvullende verbeteringen brengen de gebruikerservaring meer in lijn met de laatste uitgaven van QGIS en maken verbetering van de productiviteit mogelijk, zoals verwijderen in bulk en uitschakelen van regels.
@@ -540,20 +540,20 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nir
 ## Programmeerbaarheid
 ### Mogelijkheid: Verbeteringen QgsExifTools
 Nieuwe functionaliteit is toegevoegd aan de klasse QgsExifTools, inclusief:
-- The `readTag()` and `readTags()` functions now support Xmp metadata tags
-- A new `tagImage()` function can be used to add individual metadata tags to a given image, which can be used in addition to the pre-existing `geoTagImage()` function
+- De functies `readTag()` en `readTags()` ondersteunen nu Xmp-metadatatags
+- Een nieuwe functie `tagImage()` kan worden gebruikt om individuele tags voor metadata toe te voegen aan een bepaalde afbeelding, die kunnen worden gebruikt in aanvulling op de al bestaande functie `geoTagImage()`
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Updates voor automatisch aanvullen slimme haakjes voor codebewerkers
-Previous releases of QGIS included an `autoCloseBracket` setting for the Python Console, which had a number of limitations in its behavior, including being limited to use within the Python Console and Script Editor interfaces.
+Eerdere uitgaven van QGIS bevatten een instelling `autoCloseBracket` voor de Python Console, die een aantal beperkingen in zijn gedrag had. En inclusief dat deze beperkt was tot het gebruiken binnen de Python Console en de interfaces van de Scriptbewerker.
 
-Updates to the autocomplete settings extend this functionality to other Code Editor interfaces, such as the Expression Editor, Project Macro Editor, and Script Editor. The `autoCloseBracket` behavior has also been adjusted to better mimic the behavior of modern IDEs, and an `autoSurround` setting has been added to surround selected text when using the following character sets:
-- braces/ curly brackets: `{}`
-- square/ box brackets: `[]`
-- parenthesis/ round brackets: `()`
-- double quotation mark: `"`
-- single quotation mark: `'`
-- backticks: ``\`
+Updates aan de instellingen voor automatisch aanvullen breiden deze functionaliteit uit naar andere interfaces voor codebewerkers, zoals de Expressiebewerker, Project Macrobewerker en de Scriptbewerker. Het gedrag van `autoCloseBracket` is ook aangepast om het gedrag van moderne IDE's na te bootsen, en een instelling `autoSurround` is toegevoegd om geselecteerde tekst te omsluiten bij het gebruiken van de volgende tekensets:
+- haakjes/ gekrulde haakjes: `{}`
+- vierkante/ vak haakjes: `[]`
+- haakjes/ ronde haakjes: `()`
+- dubbel aanhalingsteken: `"`
+- enkel aanhalingsteken: `'`
+- accent grave: ``\`
 - asterisk: `*`
 
 Met uitzondering van de tekens accent grave en asterisk, is de functionaliteit autoCloseBracket beschikbaar bij het omsluiten van nieuwe gegevens zonder een actieve selectie van tekst.
@@ -562,19 +562,19 @@ De configuratie voor automatisch aanvullen wordt standaard ingeschakeld voor nie
 
 ![image30](images/entries/2ed531d2789b12d258d1503c8fb74e396f06e63d.webp)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
-### Feature: Add \"toggle comment\" action to the integrated python console
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Actie \"Opmerking schakelen\" toegevoegd aan de geïntegreerde Python-console
 De acties Opmerking en Opmerking uitschakelen van de ingebedde Python-bewerker zijn vervangen door een actie Opmerking schakelen, die nu ook beschikbaar is in de Script-bewerker van Processing. 
 
 Dit brengt de gebruikerservaring voor de bewerker in lijn met andere IDE's, zoals VSCode, die de mogelijkheid voor het schakelen van opmerkingen toestaan.
 
-The default shortcut for this action is set to `Ctrl+:`
+De standaard sneltoets voor deze actie is ingesteld op `Ctrl+:`
 
-The toggle comment action is also available in **Project Macro** and **Expression Editors**, however this is only available using the `Ctrl+:` shortcut and does not include the action button on the UI.
+De actie Opmerking schakelen is ook beschikbaar in **Project Macro** en **Expressie-bewerkers**. Dit is echter alleen beschikbaar met de sneltoets `Ctrl+:` en bevat niet de actieknop in de gebruikersinterface.
 
 ![image31](images/entries/fb255d60095471377459f1c6907df83e6f54bea4.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
@@ -593,9 +593,9 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 | gis transforming coordinates incorrectly | [#51792](https://github.com/qgis/QGIS/issues/51792) | [proj PR 3621](https://github.com/OSGeo/PROJ/pull/3621) | N/B |
 | Some versions of QGIS can\'t parse mixed-dtype-columns in GeoJSON | [#51911](https://github.com/qgis/QGIS/issues/51911) | Geen: alleen onderzoek & voorlopige poging tot repareren |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Even Rouault](https://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -617,7 +617,7 @@ This feature was developed by [Even Rouault](https://www.spatialys.com/)
 | Can\'t use raster Unique values symbolgogy for Integer rasters with a single value of 1 | [#51822](https://github.com/qgis/QGIS/issues/51822) | [PR #51975](https://github.com/qgis/QGIS/pull/51975) | [PR #51979](https://github.com/qgis/QGIS/pull/51979) |
 | PyQGIS QgsPolygon creation crashes | [#51978](https://github.com/qgis/QGIS/issues/51978) | [PR #52004](https://github.com/qgis/QGIS/pull/52004) | NOG TE DOEN |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces
@@ -632,9 +632,9 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 | North Arrow Decoration: file selector for custom SVG does not work correctly | [#51850](https://github.com/qgis/QGIS/issues/51850) | [PR #51882](https://github.com/qgis/QGIS/pull/51882) | [PR #51949](https://github.com/qgis/QGIS/pull/51949) |
 | Filter dialog for vector layers in edit state can still be opened via the filter icon in the layers menu | [#51816](https://github.com/qgis/QGIS/issues/51816) | [PR #51884](https://github.com/qgis/QGIS/pull/51884) | [PR #51990](https://github.com/qgis/QGIS/pull/51990) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Sandro Santilli
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -644,26 +644,26 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/)
 | Allow to skip PostgreSQL backend dependent tests at runtime | [Discussion in PR #51891](https://github.com/qgis/QGIS/pull/51891#discussion_r1109132667) | [PR #51910](https://github.com/qgis/QGIS/pull/51910) | N/B |
 | Do not discard geometry attributes having no SRID | [#49380](https://github.com/qgis/QGIS/issues/49380#issuecomment-1282913470) | [PR #51885](https://github.com/qgis/QGIS/pull/51885) | [PR #51997](https://github.com/qgis/QGIS/pull/51997) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
+Deze mogelijkheid werd ontwikkeld door [Sandro Santilli (strk)](https://strk.kbt.io/)
 ### Mogelijkheid: Reparaties van problemen door Jean Felder
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | wms getcapabilities crashes on dimensional data if there are no values | niet gerapporteerd | [PR #51930](https://github.com/qgis/QGIS/pull/51930) | [PR #51933](https://github.com/qgis/QGIS/pull/51933) |
 | \[3D\] Fix Y-Z inversion in point3dsymbolwidget | niet gerapporteerd | [PR #51855](https://github.com/qgis/QGIS/pull/51855) | [PR #51938](https://github.com/qgis/QGIS/pull/51938) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Jean Felder](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Jacky Volpes
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Missing \"Save style\...\" icon in Layer Style Panel | [#51515](https://github.com/qgis/QGIS/issues/51515) | [PR #52037](https://github.com/qgis/QGIS/pull/52037) | Riskant? |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Stefanos Natsis
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -676,9 +676,9 @@ This feature was developed by [Jacky Volpes](https://oslandia.com/)
 | Copy attribute / Copy feature attributes doesn\'t return value if value is URI | [#26899](https://github.com/qgis/QGIS/issues/26899) | [PR #51803](https://github.com/qgis/QGIS/pull/51803) |  |
 | Split tool tries to split even without any digitized points | niet gerapporteerd | [PR #51831](https://github.com/qgis/QGIS/pull/51831) | [PR #51955](https://github.com/qgis/QGIS/pull/51955) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Stefanos Natsis](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -719,7 +719,7 @@ This feature was developed by [Stefanos Natsis](https://www.lutraconsulting.co.u
 | Fix drag and drop to GDB results in columns shifted by on | [#51435](https://github.com/qgis/QGIS/issues/51435) | [PR #51634](https://github.com/qgis/QGIS/pull/51634) | [PR #51969](https://github.com/qgis/QGIS/pull/51969) |
 | Expose option for irregular time steps when exporting map animations | [#51546](https://github.com/qgis/QGIS/issues/51546) | [PR #51632](https://github.com/qgis/QGIS/pull/51632) | [PR #51638](https://github.com/qgis/QGIS/pull/51638) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 ### Mogelijkheid: Reparaties van problemen door David Signer
@@ -730,8 +730,8 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 | Attribute table form view looses index when the \"yellow\" selection is changed | niet gerapporteerd | [PR #52045](https://github.com/qgis/QGIS/pull/52045) |  |
 | Features in Relation Editor are not selectable anymore | niet gerapporteerd | [PR #51914](https://github.com/qgis/QGIS/pull/51914) | Geen invloed |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [David Signer](https://opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [David Signer](https://opengis.ch/)
 
 {{<content-end >}}

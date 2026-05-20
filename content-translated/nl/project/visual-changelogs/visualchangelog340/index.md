@@ -51,7 +51,7 @@ In addition, multiple updates to the handling of related features in the identif
 
 ![](images/entries/c9580e44b7f4f2ec945843c468b661ded749b8a5.webp)
 
-This feature was developed by [Even Rouault](https://github.com/rouault)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
 ## Gebruikersinterface
 ### Feature: Optionally autosize all columns by default when opening an attribute table
 A new option in the Data Sources tab of the Options Dialog (opened via the Settings menu) will configure QGIS to always resize the columns of an attribute table to fit the contents when it is opened.
@@ -64,7 +64,7 @@ A duplicate button has been added to the actions dialogue on layer properties.
 
 ![](images/entries/6f0479c9233e8193625e98494da97029a6d0d30b.webp)
 
-This feature was developed by [Speedrace4](https://github.com/Speedrace4)
+Deze mogelijkheid werd ontwikkeld door [Speedrace4](https://github.com/Speedrace4)
 ## Symbologie
 ### Feature: Provide style categories for raster layers
 QGIS now supports categories for copying properties and styles between raster layers (instead of simply forcing the use of `AllStyleCategories` as before), and now includes raster data categories for:
@@ -81,9 +81,9 @@ In addition, these styles are supported in the import and export functionalities
 
 ![](images/entries/0a6aeadd40690988d3560966b673045e568f86a7.webp)
 
-This feature was funded by the [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door het [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Dave Signer (OPENGIS.ch)](https://opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Dave Signer (OPENGIS.ch)](https://opengis.ch)
 ### Feature: Add "Linear Referencing" symbol layer type
 This new symbol layer type allows placing text labels at regular intervals along a line (or at positions corresponding to existing vertices). Positions can be calculated using Cartesian distances, or interpolated from z/m values.
 
@@ -98,33 +98,33 @@ Functionality includes:
 - Data defined control over the placement intervals, skip multiples setting, marker visibility and average angle calculation length
 
 Notes:
-- When using the distance-based placement or labels, the distances are calculated using 2D only, Cartesian calculations based on the original layer CRS. This could potentially be extended in future to expose options for 3D Cartesian distances, or ellipsoidal distance calculations.
+- Bij het gebruiken van op afstand gebaseerde plaatsing van labels, worden de afstanden alleen berekend met 2D, cartesiaanse berekeningen gebaseerd op het originele laag-CRS. Dit zou in de toekomst uitgebreid kunnen worden om opties weer te geven voor 3D cartesiaanse afstanden, of ellipsoïde afstandsberekeningen.
 
 ![](images/entries/ac3d8027aaa1dce55a600831bbe0a51d890f9206.webp)
 
-This feature was funded by the [Swiss QGIS User Group](https://www.qgis.ch/de/)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/de/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Implement color ramp interpolation for CMYK
-This feature was funded by Bordeaux Métropôle
+Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Feature: CMYK color preview
 Color previews of CMYK colors will display the color value using a list of float values
 
 ![](images/entries/bf96aab2e61c942bc43fbdab4f00d3f90ad5818d.webp)
 
-This feature was funded by Métropôle de Bordeaux
+Dit werd mogelijk gemaakt door Métropôle de Bordeaux
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Feature: Select color component as float
 The QGIS Color Widget now supports the selection of the color component as a float value with 2 decimals
 
 ![](images/entries/ac91b68a5cbaf6376aa12091077f7b5133d2049b.webp)
 
-This feature was funded by Bordeaux Métropôle
+Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Feature: Allow end point marker symbols for balloon callout style
 Allows rendering a marker symbol below the endpoint of the balloon callout. Designed to allow balloon callouts to reproduce the same visual appearance as the older annotation framework items.
 
@@ -140,7 +140,7 @@ This change is designed to plug on of the (very few!) remaining large symbology 
 
 ![](images/entries/391b7def075a5dcdc026d0e625bb3f6483bc580a.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Dit werd mogelijk gemaakt door [North Road, met dank aan SLYR](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Support tolerances for QgsRasterTransparency pixel values
@@ -150,7 +150,7 @@ Useful for photographs or compressed rasters where a range of color values must 
 
 ![](images/entries/73a7b62e6c22c27056a35c9d827f8ac3955f7b57.webp)
 
-This feature was funded by [Middle Third Geological](https://www.linkedin.com/in/deryk-forster-44a415104/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au)
+Dit werd mogelijk gemaakt door [Middle Third Geological](https://www.linkedin.com/in/deryk-forster-44a415104/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Annotaties
@@ -163,7 +163,7 @@ We improved the workflow for those projects with older annotation items. In prev
 - Rich text editor widget to allow for interactive creation of html contant for text at point and rectangular text
 - UI clean-up
 
-This feature was funded by [QGIS Grant Programme 2024](https://github.com/qgis/PSC/issues/60)
+Dit werd mogelijk gemaakt door [QGIS Grant Programme 2024](https://github.com/qgis/PSC/issues/60)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Add support for callouts to point text, rect text and picture items
@@ -194,7 +194,7 @@ Can render SVG or raster images as items in an annotation layer. Options are pre
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)] (https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)] (https://north-road.com)
 ## Labelen
 ### Feature: Support horizontal alignment in HTML labels
 For multi-line labels, this allows use of either:
@@ -234,7 +234,7 @@ Also implemented is a registry for storing available rule classes, and serializa
 
 ![](images/entries/f65ac82ccaa14f9017904db8badb25afc6e87bc5.webp)
 
-This feature was funded by Rubicon Concierge Real Estate
+Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Support img tags in HTML label text
@@ -258,7 +258,7 @@ The implementation introduces multiple new settings for stacked diagram and sub-
 
 ![](images/entries/798c8f7ffe9acd928e7df5820212b39f22ef42fd.webp)
 
-This feature was funded by [Landesamt für Vermessung und Geoinformation (LVG) Vorarlberg in collaboration with the QGIS user group Switzerland.](https://vorarlberg.at/-/landesamt-fuer-vermessung-und-geoinformation-l-1)
+Dit werd mogelijk gemaakt door [Landesamt für Vermessung und Geoinformation (LVG) Vorarlberg in samenwerking met de Zwitserse QGIS gebruikersgroep.](https://vorarlberg.at/-/landesamt-fuer-vermessung-und-geoinformation-l-1)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Mazen
@@ -269,7 +269,7 @@ New GUI elements are provided for loading Quantized Mesh data sources and layers
 
 Dit werd mogelijk gemaakt door de Zwitserse QGIS gebruikersgroep
 
-This feature was developed by [David Koňařík](https://github.com/dvdkon)
+Deze mogelijkheid werd ontwikkeld door [David Koňařík](https://github.com/dvdkon)
 ## Renderen
 ### Feature: Support multiple sources for vector tiles
 QGIS capabilities have been extended for loading vector tiles that include multiple sources/ URLs within a single style definition.
@@ -291,7 +291,7 @@ This setting is controlled with the `enableClipping()` and `disableClipping()` m
 
 ![](images/entries/4ec6126f373e56755809edbabc74b0cd5a5ee160.webp)
 
-This feature was developed by [Jean Felder](https://github.com/ptitjano)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Afdruklay-outs
 ### Feature: Add support merging cells in manual tables
 Allows adjacent cells to be merged in layout manual table items.
@@ -300,15 +300,15 @@ From the table editor, select multiple cells in a rectangular shape and then fro
 
 ![](images/entries/12309cc445c6d00d56ef0f724be0828bb3e094d0.webp)
 
-This feature was funded by FLYGHT7
+Dit werd mogelijk gemaakt door FLYGHT7
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Generate valid PDF/X-4 files
 In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), QGIS will generate a valid PDF/X-4 file if the colorspace has been set
 
-This feature was funded by Bordeaux Métropôle
+Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Feature: Add option to set geospatial PDF group name for items
 This new setting, located in the layout item "Rendering" section, allows users to set an optional "group name" for use in geospatial PDF exports. When set, a matching layer tree group will be created in the exported geospatial PDF and the item will only be visible when this group is checked.
 
@@ -316,7 +316,7 @@ This allows content to be selectively displayed as a group by viewers of the geo
 
 ![](images/entries/a0f64c99c2a62dee9681d01dec7a39d991377a85.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add Page Properties to layout main menu
@@ -324,7 +324,7 @@ A menu option to open Page Properties has been added to the main menu in the Pri
 
 ![](images/entries/44407afcb40294680e8aad845bb2cf0060cfe034.webp)
 
-This feature was developed by [Vedran Stojnović](https://github.com/phidrho)
+Deze mogelijkheid werd ontwikkeld door [Vedran Stojnović](https://github.com/phidrho)
 ### Feature: Add scale method option for layout scale bars
 A new option for selecting a user-defined method of calculating the map scale in print layouts is provided. This exposes options for calculating scale:
 - along the bottom of the map frame
@@ -365,9 +365,9 @@ In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issue
 
 These functions differ from the existing color retrieval expression functions (e.g. color\_rgb) by returning color values with different internal data types. This improves performance and fidelity by avoiding unnecessary color conversions in specific contexts, such as writing PDFs with native CMYK colors derived from expression values.
 
-This feature was funded by Bordeaux Métropôle
+Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Feature: Allow users to save expression functions in QGIS project file
 A new `[Project Functions]` element is now available within the expression builder dialog, allowing QGIS to store custom user-defined functions embedded in the project file.
 
@@ -379,7 +379,7 @@ For security reasons, the handling of whether to load or not load these function
 
 ![](images/entries/fb459ca9362a65771713ed9b571b12a265e0b45d.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Add info about usable "expression dialect" to filter dialog
@@ -387,15 +387,15 @@ The query builder used for entering filter expressions on vector layers now show
 
 ![](images/entries/1bd0096fbd0fac4d612b2ca98bc7ef86cedac36e.webp)
 
-This feature was funded by WhereGroup GmbH.
+Dit werd mogelijk gemaakt door WhereGroup GmbH.
 
-This feature was developed by [Hannes](https://github.com/kannes)
+Deze mogelijkheid werd ontwikkeld door [Hannes](https://github.com/kannes)
 ### Feature: Add project\_color\_object and ramp\_color\_object functions
 In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), new expression functions provide support for setting project and ramp colors using CMYK color values using expressions
 
-This feature was funded by Bordeaux Metropole
+Dit werd mogelijk gemaakt door Bordeaux Metropole
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Digitaliseren
 ### Feature: Add circles intersection digitizing tool
 A new advanced digitizing tool allows users to pick/ digitize a point at the intersection of two circles
@@ -430,7 +430,7 @@ When creating a new vector layer, including scratch, shp, gpkg, and spatialite, 
 
 ![](images/entries/3623fff590c84705c9e75fa22c3e0cc9c537c9e0.webp)
 
-This feature was funded by QGIS User Group Denmark
+Dit werd mogelijk gemaakt door Deense QGIS gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add metadata setting to override widget wrapper used for a parameter
@@ -440,7 +440,7 @@ A new parameter metadata setting for "widget\_type" has been added, which provid
 
 `param.setMetadata( } )`
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ## Processing
 ### Feature: Open file or URL Algorithm
 A simple native algorithm has been added to allow for the opening of local files using the corresponding system programs, or URLs in a web browser.
@@ -449,9 +449,9 @@ Useful in combination with the Download File Algorithm to open the resulting fil
 
 ![](images/entries/2ab9a02e47e9d3dc7a0c4e1dc5f65d195244869b.webp)
 
-This feature was funded by the [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door het [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Dave Signer (OPENGIS.ch)](https://opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Dave Signer (OPENGIS.ch)](https://opengis.ch)
 ### Feature: Add processing parameter types for Area and Volume
 Adds dedicated parameter types for Area and Volume values.
 
@@ -465,13 +465,13 @@ The GDAL Processing algorithm for vector information has been modified to suppor
 
 ![](images/entries/b890a9ff0af7e1ef313c620c48150f871f1177f0.webp)
 
-This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
+Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ### Feature: Allow adding Processing tools to Favorites
 New 'Favorites' functionality has been added for Processing alogrithms, allowing users to statically pin their chosen algorithms to a dedicated section at the top of the toolbox for ease of access.
 
 ![](images/entries/2108d8a4104ef9d50f44a72171274469bde1e429.webp)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Add creation options support to some native raster Processing algorithms
 More raster creation options have been added to native Processing algorithms for more control of the output format (compression level, world file generation etc.). Affected algorithms include:
 - Celstatistieken
@@ -489,7 +489,7 @@ More raster creation options have been added to native Processing algorithms for
 - Rescale
 - Rond
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Support drag and drop for multi-layer parameters
 Allows dragging and dropping layers from either the QGIS browser or file explorer onto any multiple-layer parameter panel. Handy when you have to add many layers and it's simpler to make a selection outside of the processing dialog.
 
@@ -526,16 +526,16 @@ When loading an ICC profile, QGIS will enforce consistency between the color mod
 
 ![](images/entries/c763da512666981c58d3fe8b5dbfa5982ff53d4b.webp)
 
-This feature was funded by Bordeaux Métrôpole\*\*
+Dit werd mogelijk gemaakt door Bordeaux Métrôpole\*\*
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Profiel plotten
 ### Feature: Change elevation profile name
 A "Change Profile Name" menu item in the Options sub-menu of the Elevation Profile widget has been added that allows the user to change the name of the profile window.
 
 ![](images/entries/81d350164ce88101c33692b9665063970ce72791.webp)
 
-This feature was developed by [Simon](https://github.com/Simon-Lopez)
+Deze mogelijkheid werd ontwikkeld door [Simon](https://github.com/Simon-Lopez)
 ### Feature: Ensure vector layer elevation profiles respect layer/map vert datums
 When the map and/or layer has a vertical reference (3D CRS) configured it will be respected within profile plots
 
@@ -554,9 +554,9 @@ QGIS now includes a "Duplicate connection" action in the context menu of Browser
 
 ![](images/entries/44b28c871c4d86b6f2c52b326fea88b7e8c1c24e.webp)
 
-This feature was funded by [NaturalGIS](https://www.naturalgis.pt/)
+Dit werd mogelijk gemaakt door [NaturalGIS](https://www.naturalgis.pt/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Adjust "Create Database" context menu actions on GeoPackage
 In previous versions of QGIS, creating a new SpatiaLite database with this action would create an empty database and add a new connection to the browser, while the same action executed for GeoPackage files would generate a database with a layer.
 
@@ -564,9 +564,9 @@ New actions for "Create Database" and "Create Database and Layer" have been adde
 
 ![](images/entries/0473ab08a8dd2cae040855020d570535088c4268.webp)
 
-This feature was funded by [NaturalGIS](https://www.naturalgis.pt)
+Dit werd mogelijk gemaakt door [NaturalGIS](https://www.naturalgis.pt)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Add connections to cloud storage providers to browser
 QGIS now natively supports the storing and browsing cloud storage connections within the QGIS browser panel. GDAL supported vector and raster data sources can be loaded directly from cloud providers and all GDAL VSI cloud handlers are supported including (S3, Azure, Google Drive, etc.)
 
@@ -588,7 +588,7 @@ All Catalog, Collection, and Item properties can be examined using the STAC Obje
 
 ![](images/entries/c6899bc85d87fc36edba1bb71c4613e4b68a6cbe.gif)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ## Gegevensproviders
 ### Feature: Support for polyhedral surface and TIN
 QGIS now supports the `POLYHEDRALSURFACE` and `TIN` simple features by introducing new geometry types for `QgsPolyhedralSurface` and `QgsTriangulatedSurface`:
@@ -597,14 +597,14 @@ QGIS now supports the `POLYHEDRALSURFACE` and `TIN` simple features by introduci
 
 This functionality removes the need for previously used workarounds, such as: - TIN is now the multipart of a triangle - There is no need to convert a polyhedral surface or a TIN to a multipolygon when importing these data types from PostGIS.
 
-This feature was funded by CEA/DAM, CP4SC, Oslandia
+Dit werd mogelijk gemaakt door CEA/DAM, CP4SC, Oslandia
 
-This feature was developed by [Jean Felder](https://github.com/ptitjano)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## QGIS Server
 ### Feature: WFS title definition for layers
 Implemented to service [\#55317](https://github.com/qgis/QGIS/issues/55317), layers now have an additional WFS Title server metadata property to allow users to differentiate between different layer collections on layers served via WFS with QGIS Server.
 
-This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
+Deze mogelijkheid werd ontwikkeld door [Jürgen Fischer](https://github.com/jef-n)
 ## Programmeerbaarheid
 ### Feature: Exceptions raised on QgsDistanceArea methods
 A QgsCsException is now raised when errors occur within QgsDistanceArea methods to prevent misleading analysis results and properly handle error propagation throughout the application
@@ -613,11 +613,11 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Feature: Convert QgsRasterLayer to NumPy Array
 Developed in partial fulfillment of [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), QGIS now includes a new `as_numpy` method on `QgsRasterLayer` objects in PyQGIS which allow for the easy conversion of a raster layer to NumPy array for improved integration processes and improved analysis of raster data using NumPy (Note that the NumPy library is an optional dependency not shipped with the QGIS Application).
 
-This feature was developed by [Till Frankenbach](https://github.com/merydian)
+Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
 ### Feature: Convert QgsGeometry to Shapely and NumPy
 Developed in partial fulfillment of [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), QGIS now includes `as_numpy` and `as_shapely` methods on `QgsGeometry` objects in PyQGIS which allow for the easy conversion of a geometry to a (list of) NumPy array(s) or Shapely object(s) for improved integration processes (Note that the relevant libraries are optional dependencies not shipped with the QGIS Application).
 
-This feature was developed by [Till Frankenbach](https://github.com/merydian)
+Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
 ## Belangrijke reparaties
 ### Mogelijkheid: Reparaties van problemen door Even Rouault (Spatialys)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
@@ -638,9 +638,9 @@ This feature was developed by [Till Frankenbach](https://github.com/merydian)
 | In Qgis 3.34.4 / 3.38.3 vector layer saved as KML does not allow deleting of polygon features | [#58780](https://github.com/qgis/QGIS/issues/58780) | [GDAL PR 10991](https://github.com/OSGeo/gdal/pull/10991) | N/B |
 | [BUGFIX] [PostgreSQL] Properly take into account 'name' type | Niet gerapporteerd | [PR #59147](https://github.com/qgis/QGIS/pull/59147) | NOG TE DOEN |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (itOpen / qcooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -662,9 +662,9 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | Georeferencer is not using locale in GCP table | [#58765](https://github.com/qgis/QGIS/issues/58765) | [PR #59025](https://github.com/qgis/QGIS/pull/59025) | Wachtrij |
 | Basic editing using "Automatic Transaction Groups" generates a critical error | [#58845](https://github.com/qgis/QGIS/issues/58845) | [PR #59076](https://github.com/qgis/QGIS/pull/59076) | Wachtrij |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -674,9 +674,9 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 | Calling several times waitForFinished on task would cause a deadlock | Niet gerapporteerd | [PR #58799](https://github.com/qgis/QGIS/pull/58799) | Nee |
 | Debian sid Qt6 compile fails on sip build, python bindings | [#57760](https://github.com/qgis/QGIS/issues/57760) | Now working with updated debian |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson (North Road)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -713,7 +713,7 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 | QgsDistanceArea methods should raise QgsCsException when errors occur | Niet gerapporteerd | [PR #58795](https://github.com/qgis/QGIS/pull/58795) | N/B |
 | Don't apply reset-to-zero step size logic in spin boxes when no special value text is set | Niet gerapporteerd | [PR #58836](https://github.com/qgis/QGIS/pull/58836) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Bug fixes by Loïc Bartoletti (Oslandia)
@@ -724,9 +724,9 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 | QGIS tools splitting curved polygons | [#57021](https://github.com/qgis/QGIS/issues/57021) | Do not fix (GEOS issue with Curve support) |  |
 | Incorrect winding/orientation/order of polygon's vertices in Memory layers | [#58333](https://github.com/qgis/QGIS/issues/58333) | [PR #59156](https://github.com/qgis/QGIS/pull/59156) | Too risky? |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -737,17 +737,17 @@ This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com
 | 3D view - completely flat MultiPolygonZ geometries don't show color correctly | [#52832](https://github.com/qgis/QGIS/issues/52832) | In behandeling |  |
 | Adding more than 250 files or a folder with many files and the Build virtual point cloud (VPC) Tool Fails | [#58894](https://github.com/qgis/QGIS/issues/58894) | [PR #59200](https://github.com/qgis/QGIS/pull/59200) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Jacky Volpes (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Fix use of QgsReferencedGeometry in expressions | Niet gerapporteerd | [PR #59180](https://github.com/qgis/QGIS/pull/59180) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Mathieu Pellerin (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -769,25 +769,25 @@ This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
 | QGIS (3.38.1) crashes when trying to show layer labels. QGIS died on signal 11. | [#58570](https://github.com/qgis/QGIS/issues/58570) | [PR #58602](https://github.com/qgis/QGIS/pull/58602) | N/B |
 | Fix layout map item preview rendering of XYZ layers with known tile DPI | Niet gerapporteerd | [PR #58543](https://github.com/qgis/QGIS/pull/58543) | [PR #58566](https://github.com/qgis/QGIS/pull/58566) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Mathieu Pellerin (OPENGIS)](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin (OPENGIS)](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Jean Felder (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Remaining rubberband and plot data after clearing profile tool | [#50766](https://github.com/qgis/QGIS/issues/50766) | [PR #59181](https://github.com/qgis/QGIS/pull/59181) | N/B |
 | Fix issue with vertical lines not visible in the elevation profile tool | niet gerapporteerd | [PR #58959](https://github.com/qgis/QGIS/pull/58959) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Germán Carrillo (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Scale dependent visibility inconsistencies on scale interval edges (symbology, labeling, diagrams) | [#58150](https://github.com/qgis/QGIS/issues/58150) <br> [#42443](https://github.com/qgis/QGIS/issues/42443) | [PR #58968](https://github.com/qgis/QGIS/pull/58968) <br> [PR #59022](https://github.com/qgis/QGIS/pull/59022) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Germán Carrillo (OPENGIS)](https://opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo (OPENGIS)](https://opengis.ch/)
 
 {{<content-end >}}

@@ -35,21 +35,21 @@ QGIS is now available as a flatpak application on [flathub](https://flathub.org/
 
 [![image28](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.webp)](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.webp)
 
-This feature was funded by [Aleix Pol](https://github.com/aleixpol)
+Dit werd mogelijk gemaakt door [Aleix Pol](https://github.com/aleixpol)
 
-This feature was developed by [Aleix Pol](https://github.com/aleixpol)
+Deze mogelijkheid werd ontwikkeld door [Aleix Pol](https://github.com/aleixpol)
 ### Mogelijkheid: SVG-bestanden kunnen worden ingebed in projecten en symbolen
 Maakt het mogelijk dat SVG-afbeeldingen voor symbologie, labels, etc direct worden ingebed in een projectbestand (of QML-stijl, of QPT-afdruksjabloon!) door de SVG te coderen als een standaard base64-tekenreeks.
 
 Aanvullend kunnen ingebedde bestanden uit projecten en symbolen worden uitgenomen en terug worden opgeslagen als op schijf gebaseerde SVG-bestanden.
 
-This feature was funded by [SMEC/SJ](http://smec.com)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://smec.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Mogelijkheid: Op OpenCL gebaseerde acceleratie
 Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
 
-This feature was developed by [Alessandro Pasotti](https://qgis.org)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://qgis.org)
 ## Expressies
 ### Mogelijkheid: Nieuwe functies en variabelen voor expressies
 Vele nieuwe functies voor expressies zijn toegevoegd aan QGIS 3.4. Deze omvatten vele handige functies voor het werken met en manipuleren van array- en kaartobjecten (woordenboek).
@@ -72,7 +72,7 @@ Aanvullend zijn enkele nieuwe variabelen beschikbaar gemaakt om te gebruiken bin
 
 [![image2](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.webp)](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.webp)
 
-This feature was developed by [Etienne Trimaille, Matteo Ghetta, Matthias Kuhn, Mathieu Pellerin, Nyall Dawson](https://qgis.org)
+Deze mogelijkheid werd ontwikkeld door [Etienne Trimaille, Matteo Ghetta, Matthias Kuhn, Mathieu Pellerin, Nyall Dawson](https://qgis.org)
 ### Mogelijkheid: Aanvullen van code voor expressiebouwer
 Automatisch aanvullen van code in de expressiebewerker.
 - Variabelen, namen van functies en veldnamen worden voorgesteld en automatisch ingevoegd bij het schrijven van expressies
@@ -80,9 +80,9 @@ Automatisch aanvullen van code in de expressiebewerker.
 
 [![image3](images/entries/df385d837684dcb42633c66b5c566925803f3406.gif)](images/entries/df385d837684dcb42633c66b5c566925803f3406.gif)
 
-This feature was funded by [OPENGIS.ch](https://www.opengis.ch/)
+Dit werd mogelijk gemaakt door [OPENGIS.ch](https://www.opengis.ch/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch/)
 ## Kaartgereedschap
 ### Mogelijkheid: Objecten identificeren of selecteren, gebaseerd op bestaande polygoon
 Often it is useful to select/identify features that are covered by an existing polygon. For this, users can use \"Select Features by Polygon\" and \"Identify Features by Polygon\" tools, but it was necessary to manually trace the polygon of interest. This new feature allows user to right click on the map and pick an existing polygon feature at that location from popup menu - that polygon will be used as input for selection or identification.
@@ -91,7 +91,7 @@ Often it is useful to select/identify features that are covered by an existing p
 
 Dit werd mogelijk gemaakt door Leicestershire County Council
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Gebruikersinterface
 ### Mogelijkheid: Automatisch selecteren van geëxporteerde bestanden in bestandsbeheer
 Whenever a message bar item links to a created file (e.g. after exporting a layout or map layer), the link will now directly open the folder containing this file within the operating system file browser AND pre-select the created file. It\'s a super-handy shortcut speeding up file operations after an export from QGIS!
@@ -101,7 +101,7 @@ Whenever a message bar item links to a created file (e.g. after exporting a layo
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: New \"Open Directory\" option for disabled welcome page projects
+### Mogelijkheid: Nieuwe optie \"Map openen\" voor uitgeschakelde projecten op de pagina Welkom
 Deze nieuwe optie in het contextmenu, met rechts klikken, voor uitgeschakelde items op de pagina Welkom stelt gebruikers in staat om het dichtstbijzijnde bestaande pad te openen naar de originele projectlocatie in hun bestandsbeheerder, hopelijk om ze te helpen ontbrekende/verplaatste/hernoemde projecten terug te vinden.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
@@ -130,9 +130,9 @@ For local vector and raster datasets, the Information tab within the layer prope
 
 [![image7](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.webp)](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.webp)
 
-This feature was funded by [iMhere Asia](https://www.imhere-asia.com/)
+Dit werd mogelijk gemaakt door [iMhere Asia](https://www.imhere-asia.com/)
 
-This feature was developed by [Mathieu Pellerin](https://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.imhere-asia.com/)
 ### Mogelijkheid: Verbeteringen aan stijlbeheer
 Het QGIS-dialoogvenster Stijlbeheer (dat gebruikers in staat stelt hun eigen bibliotheken met symbolen en kleurverlopen in te stellen en te beheren) opent nu niet-modaal, dus het kan nu naast het hoofdvenster van QGIS worden gebruikt (net zoals het dialoogvenster Lay-outbeheer en de vensters van Afdruklay-out ontwerpen).
 
@@ -154,9 +154,9 @@ Een nieuw type widget voor formulieren voor vectorlagen voor het weregeven van g
 
 [![image9](images/entries/1bc81f284db61667934e9a7e0969303f59fe06d2.gif)](images/entries/1bc81f284db61667934e9a7e0969303f59fe06d2.gif)
 
-This feature was funded by [QGIS Project](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS Project](https://qgis.org/)
 
-This feature was developed by [David Signer and Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [David Signer and Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Symbologie
 ### Mogelijkheid: Stijlen van lagen met mazen
 - Gegevenssets toevoegen aan lagen met mazen vanuit het paneel Eigenschappen
@@ -168,62 +168,62 @@ This feature was developed by [David Signer and Matthias Kuhn (OPENGIS.ch)](http
 
 Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/blog/2018/10/18/mdal/)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/blog/2018/10/18/mdal/)
 ### Mogelijkheid: Symmetrie classificeren in renderer Gradueel
-This feature was funded by <https://github.com/pierreloicq>
+Dit werd mogelijk gemaakt door <https://github.com/pierreloicq>
 
-This feature was developed by <https://github.com/pierreloicq>
+Deze mogelijkheid werd ontwikkeld door <https://github.com/pierreloicq>
 ### Mogelijkheid: Gedeeltelijk exporteren en importeren van QML
 When exporting and importing styles to and from `.qml` files it is now possible to select a subset of sections. This allows to save and restore parts of a layer configuration while omitting others. For example, it\'s possible to export only the symbology of a layer and when importing this QML style file into a layer, any configuration on the forms and widgets or other properties are unaffected. It is also possible to only handle single sections of a style when using copy/paste.
 
 [![image10](images/entries/93836361649c4b182b46e143014d7f30be674187.webp)](images/entries/93836361649c4b182b46e143014d7f30be674187.webp)
 
-This feature was funded by [qwat group](http://qwat.org/)
+Dit werd mogelijk gemaakt door [qwat group](http://qwat.org/)
 
-This feature was developed by [Denis Rouzaud (OPENGIS.ch GmbH)](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud (OPENGIS.ch GmbH)](https://www.opengis.ch)
 ## Digitaliseren
 ### Mogelijkheid: Verbeteringen aan GPS-tracking
 QGIS 3.4 extends the inbuilt GPS tracking support, adding \"acquisition interval\" and \"distance threshold\" parameters. These options can be used to keep the cursor stationary when the receiver is in static conditions.
 
-This feature was funded by [Andrea Rossi](https://github.com/rossia)
+Dit werd mogelijk gemaakt door [Andrea Rossi](https://github.com/rossia)
 
-This feature was developed by [Andrea Rossi](https://github.com/rossia)
+Deze mogelijkheid werd ontwikkeld door [Andrea Rossi](https://github.com/rossia)
 ### Mogelijkheid: Meer keuzes voor hoeken in paneel Geavanceerd digitaliseren
 Opties werden toegevoegd om snappen mogelijk te maken aan 5/10/15/18/22,5 graden in modus Constructie.
 
 [![image11](images/entries/7c32c14544fb2f45646ea03f794e5124b4d4f9be.webp)](images/entries/7c32c14544fb2f45646ea03f794e5124b4d4f9be.webp)
 
-This feature was funded by [lbartoletti](https://github.com/lbartoletti)
+Dit werd mogelijk gemaakt door [lbartoletti](https://github.com/lbartoletti)
 
-This feature was developed by [lbartoletti](https://github.com/lbartoletti)
+Deze mogelijkheid werd ontwikkeld door [lbartoletti](https://github.com/lbartoletti)
 ### Mogelijkheid: Gereedschap Punten kan alleen op de huidige laag werken
 The new vertex is a lot more productive now. It can move vertices of all editable layers at once, which is great to preserve cross layers topology. However in many cases, many of us don\'t want to modify all layers at once. We added a variation of the vertex map tool just for that.
 
 [![image12](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.webp)](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.webp)
 
-This feature was funded by [Oslandia](https://oslandia.com)
+Dit werd mogelijk gemaakt door [Oslandia](https://oslandia.com)
 
-This feature was developed by [Paul Blottiere (Oslandia)](https://oslandia.com/en/home-en/)
+Deze mogelijkheid werd ontwikkeld door [Paul Blottiere (Oslandia)](https://oslandia.com/en/home-en/)
 ### Mogelijkheid: Kaartgereedschap Omgekeerde lijnen toegvoegd
 A long awaited feature ! No more external plugin or algorithm to reverse a line\'s direction!
 
 [![image13](images/entries/988902221b0384cd96f880633f9d822faaad6903.webp)](images/entries/988902221b0384cd96f880633f9d822faaad6903.webp)
 
-This feature was funded by [OSLANDIA](https://oslandia.com)
+Dit werd mogelijk gemaakt door [OSLANDIA](https://oslandia.com)
 
-This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://github.com/lbartoletti)
 ### Mogelijkheid: Precisie geometrie
 Vectorlagen hebben een optie voor configuratie van de precisie. De precisie definieert hoe nauwkeurig de locatie van punten zou moeten worden opgeslagen. Elk punt of nieuwe of bewerkte geometrieën wordt gevangen aan een raster van deze resolutie. Tijdens het digitaliseren wordt het raster weergegeven om de gebruiker te helpen.
 
 [![image14](images/entries/4dc31694598d9c507be8ed1110c0c4a494b997ec.gif)](images/entries/4dc31694598d9c507be8ed1110c0c4a494b997ec.gif)
 
-This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Automatisch verwijderen van gedupliceerde knopen
 Bij het toevoegen of bewerken van geometrieën op een vectorlaag kan QGIS automatisch gedupliceerde knopen uit geometrieën verwijderen. Deze optie is te configureren op de tab Digitaliseren van vectorlagen.
 
-This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Controleren op geldigheid van geometrie
@@ -231,7 +231,7 @@ Elke nieuwe of bewerkte geometrie kan worden gecontroleerd op geldigheid als dez
 
 [![image15](images/entries/f5eee0b5a59923d41b427c9acc432b4c4f86da01.webp)](images/entries/f5eee0b5a59923d41b427c9acc432b4c4f86da01.webp)
 
-This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Controles van topologie tijdens bewerken
@@ -246,7 +246,7 @@ This builds on top of the functionality of the geometry checker plugin which was
 
 [![image16](images/entries/a706012a7afb489573f08133f5885fe5bc1a3660.gif)](images/entries/a706012a7afb489573f08133f5885fe5bc1a3660.gif)
 
-This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Gegevensbeheer
@@ -255,9 +255,9 @@ Like QGIS and the plugins, the projects are translated with the Qt translation p
 
 More information in [this blog post](https://new.opengis.ch/2018/09/11/qgis-speaks-a-lot-of-languages/)
 
-This feature was funded by [QGIS Usergroup Switzerland and QGEP Project](https://www.qgis.ch/en)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep en QGEP Project](https://www.qgis.ch/en)
 
-This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch/)
 ### Mogelijkheid: Attributentabel kan op verzoek worden vastgezet
 A button has been added to the Attribute Table toolbar for switching between docked and window mode on demand. Previously users had to change an option in the settings dialog and open a new table in order to switch between docked/undocked mode, but that\'s painful if you decide *after* a table is already open that you\'d like to dock/undock it\...!
 
@@ -273,7 +273,7 @@ The filter can be activated by using the prefix \'af\', or by making it a defaul
 
 [![image18](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.webp)](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.webp)
 
-This feature was funded by [Opengis.ch](https://www.opengis.ch/)
+Dit werd mogelijk gemaakt door [Opengis.ch](https://www.opengis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Niet-verwijderbare (vereiste) lagen geaccentueerd in lagenboom
@@ -291,16 +291,16 @@ When saving a raster layer to GeoPackage database, it\'s now possible to append 
 
 [![image20](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.webp)](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.webp)
 
-This feature was funded by [Borys Jurgiel](https://github.com/borysiasty)
+Dit werd mogelijk gemaakt door [Borys Jurgiel](https://github.com/borysiasty)
 
-This feature was developed by [Borys Jurgiel](https://github.com/borysiasty)
+Deze mogelijkheid werd ontwikkeld door [Borys Jurgiel](https://github.com/borysiasty)
 ## Formulieren en widgets
 ### Mogelijkheid: Formulieren voor dieper zoeken (cascading) in QGIS widgets Waarderelatie
 New functions and logic in QGIS "Value Relation Widgets", allowing the implementation of complex, dynamic filters within QGIS attribute forms. The functionality can be used to implement "drill-down" forms within QGIS, where the values available in one field depend on the values of other fields:
 
 [![image21](images/entries/5990ff168d5b6b41176de4fa487964b97c32fafc.gif)](images/entries/5990ff168d5b6b41176de4fa487964b97c32fafc.gif)
 
-This feature was funded by [QGIS community through crowd-funding](https://north-road.com/drill-down-cascading-forms/)
+Dit werd mogelijk gemaakt door [QGIS community through crowd-funding](https://north-road.com/drill-down-cascading-forms/)
 
 Deze mogelijkheid werd ontwikkeld door Alessandro Pasotti (met North Road)
 ## Printvormgeving
@@ -309,12 +309,12 @@ Deze mogelijkheid stelt gebruikers in staat hun 3D-kaartweergave toe te voegen a
 
 [![image22](images/entries/413f4a9377731af02f3fe815bf3b7e70ac508d1c.webp)](images/entries/413f4a9377731af02f3fe815bf3b7e70ac508d1c.webp)
 
-This feature was funded by [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
+Dit werd mogelijk gemaakt door [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
-This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ## Processing
-### Feature: New \"Edit in place\" mode
-Thanks to a large number of [generous backers](https://north-road.com/edit-features-in-place-using-qgis-spatial-operations-campaign/), a crowdfunded \"edit in place\" mode was added to Processing for 3.4. When a vector layer is active and editable, this mode allows users to execute suitable algorithms directly on the features from the layer, modifying their attributes and geometries in-place. All edits are added to the layer's "edit buffer", so you can easily undo and redo the changes before saving them back to the data source.
+### Mogelijkheid: Nieuwe modus \"Op plaats bewerken\"
+Dankzij een groot aantal [genereuze gevers](https://north-road.com/edit-features-in-place-using-qgis-spatial-operations-campaign/), werd een door crowdfunding mogelijk gemaakte modus \"Op plaats bewerken\" toegevoegd aan Processing voor 3.4. Wanneer een vectorlaag actief is en bewerkbaar, stelt deze modus gebruikers in staat om geschikte algoritmes direct uit te voeren op de objecten van de laag, hun attributen en geometrieën op de plaats aan te passen. Alle bewerkingen worden toegevoegd aan de \“bewerkingsbuffer\” van de laag, dus u kunt de wijzigingen eenvoudig ongedaan maken en opnieuw uitvoeren voordat u ze terug opslaat in de gegevensbron.
 
 For those power users who perform frequent data edits, this functionality is also exposed via QGIS 3.0's "Locator bar" (that "type to locate" bar which sits in the bottom-left corner). Typing 'ef' ("edit features") followed by the name of the corresponding operation allows you to perform the edits directly via the keyboard. E.g.
 - Een aantal lijnobjecten selecteren
@@ -324,9 +324,9 @@ For those power users who perform frequent data edits, this functionality is als
 
 [![image23](images/entries/bdfd9b4a3d367378786fd358e13c475e7fb05816.gif)](images/entries/bdfd9b4a3d367378786fd358e13c475e7fb05816.gif)
 
-This feature was funded by [Crowdfunding campaign](https://north-road.com/edit-features-in-place-using-qgis-spatial-operations-campaign/)
+Dit werd mogelijk gemaakt door [Crowdfunding campaign](https://north-road.com/edit-features-in-place-using-qgis-spatial-operations-campaign/)
 
-This feature was developed by [North Road](https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com)
 ### Mogelijkheid: Modellen in het project opslaan
 Some Processing models are so intrinsically linked to the logic inside a particular project that they have no meaning (or are totally broken) outside of that project (e.g. models which rely on the presence of particular map layers, relations, etc). Accordingly, from QGIS 3.4, Processing models can be stored inside QGIS project files. Any models stored within a project are made available as soon as that project is opened. This also avoids cluttering up the \"global\" model provider with models which make no sense, and makes it easier to distribute a single project all relevant models included.
 
@@ -340,13 +340,13 @@ Een nieuw algoritme werd toegevoegd voor monsterneming van waarden van rasterlag
 
 [![image24](images/entries/835925fb7c793d7e56a8c21a49408cd2542c973c.webp)](images/entries/835925fb7c793d7e56a8c21a49408cd2542c973c.webp)
 
-This feature was funded by [Faunalia](https://www.faunalia.eu)
+Dit werd mogelijk gemaakt door [Faunalia](https://www.faunalia.eu)
 
-This feature was developed by [Matteo Ghetta (Faunalia)](https://www.faunalia.eu)
-### Feature: New \'Raster pixels to polygons\' algorithm
+Deze mogelijkheid werd ontwikkeld door [Matteo Ghetta (Faunalia)](https://www.faunalia.eu)
+### Mogelijkheid: Nieuw algoritme \'Raster pixels to polygons\'
 Dit algoritme converteert een rasterlaag naar een vectorlaag, met een polygoonobject dat correspondeert met elke pixel uit het raster en een enkel veld dat de bandwaarde uit het raster bevat.
 
-This feature was funded by [SMEC/SJ](http://smec.com)
+Dit werd mogelijk gemaakt door [SMEC/SJ](http://smec.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Mogelijkheid: Algoritme K Means clustering
@@ -378,13 +378,13 @@ Twee nieuwe algoritmes werden toegevoegd voor het filteren van punten lijn/polyg
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: \"Array of Translated Features\" algorithm
+### Mogelijkheid:  Algoritme \"Array of Translated Features\"
 Dit nieuwe algoritme maakt kopieën van objecten in een laag, door meerdere vertaalde (verschoven) versies van het object te maken. Elke kopie wordt verplaatst met een vooraf opgegeven hoeveelheid op de X/Y/Z/M-as.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: \"Array of offset (parallel) lines\" algorithm
+### Mogelijkheid: Algoritme \"Array of offset (parallel) lines\"
 Dit nieuwe algoritme maakt kopieën van lijnobjecten in een laag, door meerdere parallelle versies van elk object te maken. Elke kopie wordt verschoven met een vooraf opgegeven afstand.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
@@ -393,12 +393,12 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 ### Mogelijkheid: Keuze voor eenheden voor geen graden/onbekende afstanden
 Wanneer een algoritme een parameter afstand heeft in meters/feet/etc (d.i. niet-geografische afstanden), is een combinatievak toegevoegd voor het kiezen van het type eenheid.
 
-(QGIS doesn\'t (and should **never**) expose this for distances in degrees \-- it\'s up to users in this situation to choose a suitable local projection and reproject their data to match.)
+(QGIS geeft dit niet weer (en zou dat ook **nooit** moeten doen) voor afstanden in graden \-- het is in deze situatie aan de gebruiker om een geschikte lokale projectie te kiezen en hun gegevens opnieuw te projecteren om overeen te komen.)
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
-### Feature: \"Drape features to z/m\" algorithms
+### Mogelijkheid: Algoritmes \"Drape features to z/m\"
 Deze twee nieuwe algoritmes kunnen Z- of M-waarden van geometriepunten instellen naar monsterwaarden die zijn genomen uit een rasterband. Waarden kunnen optioneel worden geschaald met behulp van een (datagedefinieerde) schaalwaarde.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
@@ -423,9 +423,9 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: k-neighbour concave hull
-This feature was funded by <https://qgis.org>
+Dit werd mogelijk gemaakt door <https://qgis.org>
 
-This feature was developed by [Detlev Neumann, Rudi von Staden](https://qgis.org)
+Deze mogelijkheid werd ontwikkeld door [Detlev Neumann, Rudi von Staden](https://qgis.org)
 ### Mogelijkheid: Pythonscripts die algoritmes implementeren voeren nu het algoritme uit bij slepen en neerzetten en dubbelklikken in de browser
 Indien van toepassing zullen scripts nu een dialoogvenster voor algoritmes van Processing openen bij:
 - Slepen en neerzetten van een script voor Python in het hoofdvenster
@@ -433,21 +433,21 @@ Indien van toepassing zullen scripts nu een dialoogvenster voor algoritmes van P
 
 [![image25](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.webp)](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.webp)
 
-This feature was funded by [iMhere Asia](https://www.imhere-asia.com/)
+Dit werd mogelijk gemaakt door [iMhere Asia](https://www.imhere-asia.com/)
 
-This feature was developed by [Mathieu Pellerin](https://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.imhere-asia.com/)
 ### Feature: New GDAL\'s rearrange band algorithm
 A new GDAL provider \'Rearrange band\' algorithm was added to the processing toolbox. The algorithm allows to output rasters continuing a subset of a given input raster\'s bands, and offers the possibility to re-order the bands.
 
 [![image26](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.webp)](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.webp)
 
-This feature was funded by [iMHere Asia](https://www.imhere-asia.com/)
+Dit werd mogelijk gemaakt door [iMHere Asia](https://www.imhere-asia.com/)
 
-This feature was developed by [Mathieu Pellerin](https://www.imhere-asia.com/)
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.imhere-asia.com/)
 ### Feature: \"Precalculated\" values for model algorithm parameters
 A new option is present for all parameters of using a \"precalculated expression\". This expression is evaluated once before the child algorithm is executed and used during the execution of that algorithm.
 
-This feature was funded by [QGIS](https://qgis.org)
+Dit werd mogelijk gemaakt door [QGIS](https://qgis.org)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: \"Categorize a layer using a style XML file\" algorithm
@@ -479,9 +479,9 @@ Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https:
 - Biedt cachen van toegangstoken over opnieuw opstarten van QGIS heen
 - Configuraties Opslaan/laden 
 
-This feature was funded by [Monsanto Company](https://monsanto.com/)
+Dit werd mogelijk gemaakt door [Monsanto Company](https://monsanto.com/)
 
-This feature was developed by [Larry Shaffer, Alessandro Pasotti](https://qgis.org)
+Deze mogelijkheid werd ontwikkeld door [Larry Shaffer, Alessandro Pasotti](https://qgis.org)
 ### Mogelijkheid: Laag met mazen: Ondersteuning voor nieuwe indeling lagen met mazen
 Lagen met mazen geven gegevens weer in een raster met variabele grootte met extra componenten (bijv. tijd en vector). Met de introductie van MDAL kunnen gebruikers de volgende indelingen direct in QGIS laden en alle andere componenten verkennen:
 - GRIB
@@ -490,9 +490,9 @@ Lagen met mazen geven gegevens weer in een raster met variabele grootte met extr
 
 [![image29](images/entries/767a26455fb1a8ad8cab663a52832ef575954483.gif)](images/entries/767a26455fb1a8ad8cab663a52832ef575954483.gif)
 
-This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/blog/2018/10/18/mdal/)
+Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/blog/2018/10/18/mdal/)
 
-This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Laag met mazen: functie toegevoegd om waarde te identificeren op lagen met mazen
 Met deze API kunnen ontwikkelaars elementen van mazen inspecteren en waarden ophalen, ruimtelijk en tijdelijk. Als voorbeeld kunt u een plot van een tijdreeks maken uit uw laag met mazen.
 
@@ -500,7 +500,7 @@ Met deze API kunnen ontwikkelaars elementen van mazen inspecteren en waarden oph
 
 Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Laag met mazen: mogelijk maken om verschillende vector en scalaire gegevensset te kiezen
 Een laag met mazen bevat vaak diverse kwantiteiten. Een netcdf/grib kan bijvoorbeeld verscheidene meteorologische kwantiteiten bevatten. Elke kwantiteit kan ook meerdere componenten hebben. Windgegevens kunnen bijvoorbeeld snelheid (scalair) en waarden (raster) bevatten. Met deze optie kun u scalairen en rasters over elkaar leggen uit verschillende kwantiteiten. In de afbeelding hieronder ziet u temperatuur (raster) en wind (scalair).
 
@@ -508,7 +508,7 @@ Een laag met mazen bevat vaak diverse kwantiteiten. Een netcdf/grib kan bijvoorb
 
 Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Laag met mazen: mogelijk maken van renderen van vectoren/pijlen op het gebruigedefinieerde raster
 Scalaire gegevens worden gewoonlijk in het midden/hoek van elk element mesh gegenereerd. Bij het weergeven van scalaire gegevens zien de pijlen er misschien dun uit en is het vaak niet mogelijk de algemene trend te zien. Met deze optie kunnen pijlen worden weergegeven op een gebruikergedefinieerd raster. Extra scalaire waarden zullen direct worden geïnterpolateerd en geplaatst op het gebruikergedefinieerde raster.
 
@@ -516,13 +516,13 @@ Scalaire gegevens worden gewoonlijk in het midden/hoek van elk element mesh gege
 
 Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Ondersteuning voor type JSON/JSONB
 The reading of PostgreSQL JSON types is supported. JSON Data can be displayed in the widgets as \"Key/Value\" (maps), as \"List\" (arrays) or as text.
 
 [![image33](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.webp)](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.webp)
 
-This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
+Dit werd mogelijk gemaakt door [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
 Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Ondersteuning voor ESRI tokenauthenticatie
@@ -660,9 +660,9 @@ En de manier om die toe te voegen aan cache-beheer van QGIS Server.
 
 `servercache = PyServerCache(server_iface) server_iface.registerServerCache(servercache, 100)`
 
-This feature was funded by [Ifremer](https://wwz.ifremer.fr/)
+Dit werd mogelijk gemaakt door [Ifremer](https://wwz.ifremer.fr/)
 
-This feature was developed by [3Liz](https://3liz.com)
+Deze mogelijkheid werd ontwikkeld door [3Liz](https://3liz.com)
 ### Mogelijkheid: Ondersteuning voor WMTS 1.0.0
 QGIS Server 3.4 ondersteunt de OGC-standaard WMTS 1.0.0.
 
@@ -676,28 +676,28 @@ Een plug-in voor QGIS Server met een klasse QgsServerCacheFilter dient te worden
 
 [![image34](images/entries/d0d72b47494e231b98bf3169fcbe34ca22d0624d.webp)](images/entries/d0d72b47494e231b98bf3169fcbe34ca22d0624d.webp)
 
-This feature was funded by [Ifremer](https://wwz.ifremer.fr/)
+Dit werd mogelijk gemaakt door [Ifremer](https://wwz.ifremer.fr/)
 
-This feature was developed by [3Liz](https://3liz.com)
+Deze mogelijkheid werd ontwikkeld door [3Liz](https://3liz.com)
 ### Mogelijkheid: Mogelijkheid toegveoegd om de minimale schaal voor WMTS te definiëren
-This feature was funded by <https://github.com/rldhont>
+Dit werd mogelijk gemaakt door <https://github.com/rldhont>
 
-This feature was developed by <https://github.com/rldhont>
+Deze mogelijkheid werd ontwikkeld door <https://github.com/rldhont>
 ### Mogelijkheid: Ondersteuning voor logs naar stderr voor QGIS Server
 It\'s now possible to configure QGIS Server to make it write its logs to stderr. This is done by setting the QGIS_SERVER_LOG_FILE env var to the special value \"stderr\".
 
-This feature was funded by [OSLANDIA](https://oslandia.com)
+Dit werd mogelijk gemaakt door [OSLANDIA](https://oslandia.com)
 
-This feature was developed by [Eric Lemoine](https://github.com/elemoine)
+Deze mogelijkheid werd ontwikkeld door [Eric Lemoine](https://github.com/elemoine)
 ## Plug-ins
 ### Mogelijkheid: Ondersteuning voor versleutelde ZIP's in Plug-ins beheren
 Plug-ins beheren is nu in staat plug-ins te installeren vanuit lokale ZIP-bestanden, zelfs als die zijn versleuteld.
 
 [![image35](images/entries/1bfc11325b9afa06d3196603749e1786f7922ffd.webp)](images/entries/1bfc11325b9afa06d3196603749e1786f7922ffd.webp)
 
-This feature was funded by [Borys Jurgiel](https://github.com/borysiasty)
+Dit werd mogelijk gemaakt door [Borys Jurgiel](https://github.com/borysiasty)
 
-This feature was developed by [Borys Jurgiel](https://github.com/borysiasty)
+Deze mogelijkheid werd ontwikkeld door [Borys Jurgiel](https://github.com/borysiasty)
 ### Mogelijkheid: GeoPackage offline bewerken
 Met de functionaliteit Offline bewerken is het  mogelijk om te selecteren of de export een SpatiaLite of een bestand voor GeoPackage moet maken voor gebruik offline.
 
@@ -749,7 +749,7 @@ Camera verplaatsen met behoud van de positie met Ctrl + pijltjestoetsen / muis
 
 [![image37](images/entries/a1b22a29fc363ffc90be8f98a991913148164ef2.gif)](images/entries/a1b22a29fc363ffc90be8f98a991913148164ef2.gif)
 
-This feature was funded by [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
+Dit werd mogelijk gemaakt door [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Animatie
@@ -759,9 +759,9 @@ Stel eerst de scene van uw kaart in door roteren, zoomen of verplaatsen van de c
 
 [![image38](images/entries/006592e0cf0245a829d451988d178c5f07ce5560.gif)](images/entries/006592e0cf0245a829d451988d178c5f07ce5560.gif)
 
-This feature was funded by [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
+Dit werd mogelijk gemaakt door [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
-This feature was developed by [Martian Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Martian Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Eenvoudig renderen van 3D-lijnen
 Deze modus voor 3D renderen van lijnen zal OpenGL renderen van lijnen gebruiken in plaats van het bufferen van lijnen in polygonen en ze te renderen als mazen.
 
@@ -779,7 +779,7 @@ Een nieuw gereedschap Identificatie werd geïntroduceerd voor de 3D-kaart. Met b
 
 [![image40](images/entries/88fc4584f5ec10e1112813c133bf40f481af9e88.gif)](images/entries/88fc4584f5ec10e1112813c133bf40f481af9e88.gif)
 
-This feature was funded by [Department of Environment, Land and Infrastructure Engineering (DIATI)](https://www.faunalia.eu/en/)
+Dit werd mogelijk gemaakt door [Department of Environment, Land and Infrastructure Engineering (DIATI)](https://www.faunalia.eu/en/)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk) en [Faunalia](https://www.faunalia.eu)
 ### Mogelijkheid: Experimentele Python API

@@ -33,9 +33,9 @@ In 3.8, we added an option to the measurement tool which forces Cartesian measur
 
 ![image2](images/entries/e912304d18194a43111a2f054b7f1dba931985d4.webp)
 
-This feature was funded by [Oslandia](https://oslandia.com)
+Dit werd mogelijk gemaakt door [Oslandia](https://oslandia.com)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://oslandia.com)
 ## Gebruikersinterface
 ### Mogelijkheid: Knop Opslaan naar sjabloon
 While QGIS has offered support for Project Templates for many years, we enhanced this in 3.8 and made it much simpler for users to create new templates. Now, users can create a new template from their current project by selecting \"Save To -\> Templates\" from the \"Project\" menu.
@@ -108,7 +108,7 @@ Just like Geometry Generators for symbols, we now allow label paths and position
 
 ![image10](images/entries/abc08ecfe2a879424b3f8e96c26b0391e342090e.webp)
 
-This feature was funded by [QGIS user group switzerland](https://www.qgis.ch)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch)
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Kaartgereedschappen voor labels gebruiken nu klik-klik-gedrag
@@ -129,13 +129,13 @@ Another exciting change we\'ve introduced in QGIS 3.8 is the ability to export y
 
 ![image12](images/entries/f0d7bb5632bfaa9c9feafb12e7b258c312ba66a6.webp)
 
-This feature was funded by [Northumberland National Park Authority](https://www.northumberlandnationalpark.org.uk/)
+Dit werd mogelijk gemaakt door [Northumberland National Park Authority](https://www.northumberlandnationalpark.org.uk/)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
+Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Terrein van online bronnen
 Met deze nieuwe mogelijkheid voor versie 3.8, kunt u nu direct terreinen voor uw 3D-scenes ophalen vanaf online bronnen (bijv. tegels die worden gehost op AWS). Geen rasters meer als bronnen en het voorbereiden daarvan met DEM, eenvoudigweg deze optie inschakelen en out-of-the-box prachtige 3D-scenes bekijken!
 
-This feature was funded by [Crowdfunding: More QGIS 3D](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
+Dit werd mogelijk gemaakt door [Crowdfunding: More QGIS 3D](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: Configuratie van veld voor hoek van weergave van camera
@@ -167,7 +167,7 @@ E.g. `concatenate("Station",concatenator:=',', order_by:="Station")` will give a
 
 ![image15](images/entries/024918bb03f4620a2b5d32926322d0644c782bb8.webp)
 
-This feature was funded by [SMEC/SJ](https://www.smec.com/)
+Dit werd mogelijk gemaakt door [SMEC/SJ](https://www.smec.com/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Simplified variant of \"attribute\" function
@@ -228,7 +228,7 @@ We hebben een optie toegevoegd om de huidige waarden afstand/hoek/X/Y als een zw
 
 Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
-This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
 ### Mogelijkheid: Geschakelde punten toevoegen op eindpunt
 In QGIS 3.0, we added the ability to extend an existing line feature by clicking a \"+\" indicator at the start or end of line features when using the node tool. Version 3.8 extends this functionality by allowing addition of more than one vertex using the \"+\" button.
 
@@ -236,7 +236,7 @@ In QGIS 3.0, we added the ability to extend an existing line feature by clicking
 
 Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-3854-DE.html)
 
-This feature was developed by [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
 ### Mogelijkheid: Verbeteringen aan bewerker voor punten
 Voor deze uitgave verbeterden we de bewerker voor punten zodat het nu op de juiste wijze de *geselecteerde punten in het kaartvenster* zal koppelen aan de *punten voor handmatig bewerken van coördinaten in de tabel*.
 
@@ -244,7 +244,7 @@ Voor deze uitgave verbeterden we de bewerker voor punten zodat het nu op de juis
 
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch)
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
 ## Formulieren en widgets
 ### Mogelijkheid: Bladeren door lijst met objecten toestaan
 | arrows allow browsing the feature list in the attribute table in form view | the current edited feature can be highlighted and the map canvas automatically panned or zoomed
@@ -253,7 +253,7 @@ Dankzij de genereuze bijdrage van A.R.P.A Piemonte (een van de Italiaanse region
 
 ![image23](images/entries/3932162893e8bb8d20d284d7a99ead2de9dac601.gif)
 
-This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
+Dit werd mogelijk gemaakt door [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Aangepaste achtergrondkleur voor formulierwidgets
@@ -261,7 +261,7 @@ Dankzij de genereuze bijdrage van A.R.P.A Piemonte (een van de Italiaanse region
 
 ![image24](images/entries/8627ae1acd4ed30ae116e3b79679ecb5cad3241a.gif)
 
-This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
+Dit werd mogelijk gemaakt door [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Door objecten in de attributentabel bladeren in formulierweergave
@@ -276,9 +276,9 @@ U kunt ook verschuiven en zoomen naar de geometrie van het object of het huidige
 
 ![image25](images/entries/f034aaf2a173be885b5f8fca36e3b577795ad1de.webp)
 
-This feature was funded by [regioDATA](https://www.regiodata-gmbh.de/)
+Dit werd mogelijk gemaakt door [regioDATA](https://www.regiodata-gmbh.de/)
 
-This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
 ## Processing
 ### Feature: Add \"Save layer styles into GeoPackage\" option for Package Layers algorithm
 QGIS loves GeoPackage, so it\'s likely no surprise that every new QGIS version brings improvements to GeoPackage handling! In 3.8, we enhanced the \"Package Layers\" Processing algorithm so that it now allows embedding the current layer styles directly into the packaged layers!
@@ -322,7 +322,7 @@ We\'ve added a brand-new algorithm to generate raster \"XYZ\" tiles using the cu
 
 Deze mogelijkheid werd mogelijk gemaakt door Hansestadt Herford, SWK mbH, Datenbankgesellschaft mbH
 
-This feature was developed by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
+Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Wederopstanding van de provider OTB
 QGIS 3.8 brengt de provider OTB voor Processing terug, die werd verwijderd bij de update naar QGIS 3.0. De provider werd bijgewerkt om alle nieuwigheden te gebruiken die beschikbaar zijn in Processing in QGIS 3, en is wederom out-of-the-box beschikbaar voor al uw wensen op het gebied van analyses van afbeeldingen!
 
@@ -456,7 +456,7 @@ Did we already say that QGIS loves GeoPackage? Need any more proof of this? Well
 
 ![image39](images/entries/8750f1c2e3c3919926fd2cb97488da071f7efc85.webp)
 
-This feature was funded by [QCooperative](https://www.qcooperative.net)
+Dit werd mogelijk gemaakt door [QCooperative](https://www.qcooperative.net)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Veel verbeterde afhandeling voor transformeren van coördinaten
@@ -471,7 +471,7 @@ Dankzij het onderliggende werk van de onvermoeibare teams van PROJ en GDAL onder
 
 A lot of this is only possible thanks to improvements in the underlying PROJ and GDAL libraries, which landed as a result of the GDAL \"barn raising\" effort. On the QGIS side, it was ONLY possible thanks to funding from the Australian ICSM.
 
-This feature was funded by [ICSM](https://www.icsm.gov.au/)
+Dit werd mogelijk gemaakt door [ICSM](https://www.icsm.gov.au/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Gegevensproviders
@@ -497,7 +497,7 @@ SQL Server users rejoice: QGIS now fully supports curved geometry types (and oth
 
 In past QGIS versions, the SQL Server provider would only handle version 1 type geometries, and could only show straight feature types. In 3.8, we\'ve added full support for version 2 geometries. This change also allows full support for Z or M enabled geometry types! Additionally, we fixed several known issues with geography field types.
 
-This feature was developed by [Tamas Szekeres](https://github.com/szekerest)
+Deze mogelijkheid werd ontwikkeld door [Tamas Szekeres](https://github.com/szekerest)
 ### Mogelijkheid: WMS: Één filter definiëren voor verscheidene lagen
 Soms dient u hetzelfde filter te definiëren voor elke geselecteerde laag bij het maken van een verzoek voor WMS (bijv. voor toegang tot gebruiker-specifieke gegevens). In eerdere versies van QGIS moesten we het filter definiëren in de indeling:
 
@@ -522,7 +522,7 @@ Deze mogelijkheid werd ontwikkeld door Jürgen Fischer in samenwerking met Matth
 ### Mogelijkheid: Grootte configureren voor GetLegendGraphic mogelijk
 | For this release we improved how the legend for QGIS servers handles the size of symbols which are scaled by map units. | Whenever possible, the server will determine the legend size based on the map canvas and resolution. Even more, for cases where this information is not available in the GetLegend request, it is now possible to configure a *default scale* in the project, symbols in the legend will then be drawn in the size they will have when rendered at this scale.
 
-This feature was developed by [David Signer, OPENGIS.ch](https://www.opengis.ch)
+Deze mogelijkheid werd ontwikkeld door [David Signer, OPENGIS.ch](https://www.opengis.ch)
 ## Plug-ins
 ### Mogelijkheid: Ondersteuning voor afhankelijkheden voor plug-ins
 In QGIS 3.8, we\'ve introduced a long-sought-after feature for QGIS plugin developers: the ability to specify dependencies for your plugins.
@@ -542,9 +542,9 @@ Wanneer een plug-in wordt geïnstalleerd wordt de metadata geparset en aan de ge
 
 ![image40](images/entries/28da67ad96ccda7a8a64b261db17bf33be4b3f69.gif)
 
-This feature was funded by [GISCE TI](https://gisce.net/)
+Dit werd mogelijk gemaakt door [GISCE TI](https://gisce.net/)
 
-This feature was developed by [Alessandro Pasotti](http://www.itopen.it/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](http://www.itopen.it/)
 ## Programmeerbaarheid
 ### Mogelijkheid: Ondersteuning voor SQL-syntaxis REGEXP voor provider SpatiaLite en verbindingen voor Python
 We\'ve enabled REGEX to be used with the spatialite provider. (This comes in handy when setting filters!). We\'ve also added support for this syntax via any python connections made through Qgis.utils\'s \"spatialite_connection\" API - allowing you to use REGEXP in your SQL queries from within DB Manager.
@@ -594,7 +594,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-
 | Value relation widget settings lost on import of layer definition file | [#30115](https://github.com/qgis/QGIS/issues/30115) | [PR #30151](https://github.com/qgis/QGIS/pull/30151) | Riskant? |
 | Unable to add new features in QGIS for PostGIS table using sequence for gid. Data type serial: \'integer overflow\' | [#30041](https://github.com/qgis/QGIS/issues/30041) | [PR #30184](https://github.com/qgis/QGIS/pull/30184) | Gereed |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it/)
 ### Mogelijkheid: Reparaties van problemen door Alexander Bruy
@@ -616,9 +616,9 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.i
 | Fixed table not working under User defined filter (SAGA) | [#29999](https://github.com/qgis/QGIS/issues/29999) | [PR #30001](https://github.com/qgis/QGIS/pull/30001) | Gereed |
 | DB Manager Versioning: \_current view lacks primary key | [#25888](https://github.com/qgis/QGIS/issues/25888) | [PR #30045](https://github.com/qgis/QGIS/pull/30045) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Alexander Bruy](https://bruy.me/)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://bruy.me/)
 ### Mogelijkheid: Reparaties van problemen door Victor Olaya
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -633,7 +633,7 @@ This feature was developed by [Alexander Bruy](https://bruy.me/)
 | Bug fixes related the batch interface, not linked to any bug report. They are regressions introduced in recent changes, that i found while working on another issue | [PR #29948](https://github.com/qgis/QGIS/pull/29948) |  |  |
 |  | [PR #29950](https://github.com/qgis/QGIS/pull/29950) |  |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door Victor Olaya
 ### Mogelijkheid: Reparaties van problemen door Even Rouault
@@ -649,15 +649,15 @@ Deze mogelijkheid werd ontwikkeld door Victor Olaya
 | Multiple issues and deadlocks with WFS | [#29258](https://github.com/qgis/QGIS/issues/29258) | [PR #30026](https://github.com/qgis/QGIS/pull/30026) | Gereed |
 | WFS provider: Avoid dangling download progress dialog | [PR #30039](https://github.com/qgis/QGIS/pull/30039) | [PR #30039](https://github.com/qgis/QGIS/pull/30039) | Gereed |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](https://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Denis Rouzaud
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | issues in embedded layers | [#29678](https://github.com/qgis/QGIS/issues/29678) | [PR #9993](https://github.com/qgis/QGIS/pull/9993) and [PR #10004](https://github.com/qgis/QGIS/pull/10004) |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Peter Petrik
@@ -671,7 +671,7 @@ Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 | Closing Vertex Edititor crashes the app | [#30028](https://github.com/qgis/QGIS/issues/30028) | [PR #30030](https://github.com/qgis/QGIS/pull/30030) | NOG TE DOEN |
 | Detached 3D view crash \[macOS\] | [#29169](https://github.com/qgis/QGIS/issues/29169) | kan het niet reproduceren |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti
@@ -682,8 +682,8 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 | Improve the advanced digitizing by angle | [#30133](https://github.com/qgis/QGIS/issues/30133) | Is geen probleem |  |
 | Fix reshape for snapped point with Z | [PR #30108](https://github.com/qgis/QGIS/pull/30108) |  |  |
 
-This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://oslandia.com/en/)
+Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://oslandia.com/en/)
 
 {{<content-end >}}

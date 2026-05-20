@@ -79,7 +79,7 @@ The middle-click on the Data defined override icon makes the Expression Builder 
 
 ![](images/entries/f44815b85558f76d7a6e6791370f683def53d51d.gif)
 
-This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
+Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ## Symbologie
 ### Feature: New single color renderer for rasters
 A new single-color symbology has been added for raster layers. This allows for a super simple and friendly way to render a raster using a single color.
@@ -94,7 +94,7 @@ Wind barbs encode the wind speed in knots (nautical miles per hour) so users mus
 
 ![](images/entries/1f5b158227f114192f411835adfb8dd40d0a8900.webp)
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ## Labelen
 ### Feature: Add maximum distance setting for point labels
 A new optional setting has been added for the "Around point" and "Cartographic" placement modes to specify the maximum distance of the labels from the feature. It's used together with the existing distance setting to define a range of distances at which labels may be placed from their corresponding point features.
@@ -107,7 +107,7 @@ When the layer is set to the "cartographic" mode, then the default behavior is a
 
 ![](images/entries/cf8223309d9bf77cf5634a7166706e3b9841bda9.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add 'over point' placement option for cartographic label mode
@@ -117,7 +117,7 @@ When a feature's data-defined placement priorities include this new 'O' option, 
 
 ![](images/entries/25c00222d0e6f17efda6784e8ce9a577275618a8.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Renderen
@@ -126,7 +126,7 @@ This allows users to define the radius and maximum as a value that makes sense f
 
 This additionally includes the base changes required for data-defined properties at the feature renderer level, which may be useful for extending other vector renderer classes (e.g. point cluster/ displacement).
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Afdruklay-outs
@@ -143,9 +143,9 @@ This simplifies the process of creating new grids which only have a few differen
 
 ![](images/entries/bad634a873669247fe13d334d080b0b1cb6e1363.webp)
 
-This feature was funded by [NaturalGIS](https://naturalgis.pt/)
+Dit werd mogelijk gemaakt door [NaturalGIS](https://naturalgis.pt/)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Add z range filter option for layout maps
 A new setting for layout map items allows users to set a specific elevation/z range for the filtering of 2D layout maps, similar to the existing setting for temporal filters.
 
@@ -161,7 +161,7 @@ New buttons have been added to allow users to easily expand or collapse the lege
 
 ![](images/entries/e3ada0021b7137123133b645093168bd483530a7.webp)
 
-This feature was developed by [Harrissou Sant-anna](https://github.com/DelazJ)
+Deze mogelijkheid werd ontwikkeld door [Harrissou Sant-anna](https://github.com/DelazJ)
 ## Expressies
 ### Feature: Add @map\_z\_range variables reflecting the map's z range values
 New variables for retrieving the current `@map_z_range_lower` and `@map_z_range_upper` values have been added to QGIS Expressions that reflect the map canvas' z range value.
@@ -182,7 +182,7 @@ There are three policy options currently available:
 
 ![](images/entries/76e7f27309a07b9bb7e61a074efa81c1340bfbed.webp)
 
-This feature was developed by [signedav](https://github.com/signedav)
+Deze mogelijkheid werd ontwikkeld door [signedav](https://github.com/signedav)
 ### Feature: Add "Fixed Time Range Per Band" mode for raster temporal control
 This mode can be used when each band in the raster layer is associated with a fixed time range, eg. NetCDF files.
 
@@ -254,15 +254,15 @@ Lines within DXF files having zero width typically remain minimal in the CAD reg
 
 ![](images/entries/1c7a18b41d42049e6c6ab7538d74d69406b837bb.webp)
 
-This feature was funded by [Stadtwerke München](http://www.swm.de/)
+Dit werd mogelijk gemaakt door [Stadtwerke München](http://www.swm.de/)
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
 ### Feature: Allow users to override the layer names exported to DXF
 It is now possible to override the output name of individual layers exported, with new configuration options added to the DXF export dialogs for project exports, layer exports, and the Export layers to DXF Processing algorithm.
 
 ![](images/entries/83f65d9f8afbd45ecc0fa6b2804a7981f6192e7e.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Create DXF blocks for point symbols with data defined properties
@@ -272,9 +272,9 @@ A process of attribute hashing is utilized to optimize the performance and accou
 
 ![](images/entries/5de078fe33adb052f1177d7359432e69c84d81fa.webp)
 
-This feature was funded by [Stadtwerke München](http://www.swm.de)
+Dit werd mogelijk gemaakt door [Stadtwerke München](http://www.swm.de)
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
 ### Feature: Add option 'Use only selected features' to DXF export
 A new option has been added to DXF export dialogs that will allow users to export only the features active in the current selection.
 
@@ -282,7 +282,7 @@ By default, this setting will be set to false.
 
 ![](images/entries/28e6ac14aac9b118efadc23167f795da2bc0c19c.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ### Feature: Import/ Export 'DXF Export' dialog settings
@@ -292,7 +292,7 @@ Settings are exported to an XML file which can be loaded into the DXF Export con
 
 ![](images/entries/7f343b6a090823e6a090f4a33423cdd52fb655a8.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Formulieren en widgets
@@ -301,15 +301,15 @@ CMYK color support has been added for the color widget in line with the [CMYK QE
 
 ![](images/entries/b5572a60bcc06b580b55f42d2b87f6825daa5774.webp)
 
-This feature was funded by Métropôle de Bordeaux
+Dit werd mogelijk gemaakt door Métropôle de Bordeaux
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Feature: Add parent feature scope when adding/editing a child feature through the relation editor widget
 A current\_parent\_\* scope is now provided when adding and editing child features through the attribute form's relation editor widget.
 
 This is very useful in contexts where a captured feature or value may rely on the parent entity being captured at the same time, but as the parent feature has not yet been captured, the attributes and geometry cannot be retrieved.
 
-This feature was funded by [Hansestadt Herford](https://www.herford.de/)
+Dit werd mogelijk gemaakt door [Hansestadt Herford](https://www.herford.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add "match contains" to autocompleter in value relation widget
@@ -319,7 +319,7 @@ The old behavior is still the default for autocomplete, making this setting an o
 
 ![](images/entries/3834e0b22600cce776ac149910fd9246bda6bd9c.webp)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Implement value relation's grouping functionality
 Grouping functionality has been added for the value relation editor widget, allowing users to regroup items into buckets of values. Users are also given the option to show the group value as a group header name in the combo box and table widgets.
 
@@ -336,7 +336,7 @@ This update also introduced changes to the internal API for vector renderers so 
 
 ![](images/entries/06b024c9294de21d36cc6efb702c342106a6242d.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add layer tree filter for "Show Broken Layers Only"
@@ -399,7 +399,7 @@ QGIS Processing previously provided support for generating and processing dateti
 
 Dit werd mogelijk gemaakt door Ifremer
 
-This feature was developed by [Jean Felder](https://github.com/ptitjano)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Opties voor toepassing en projecten
 ### Feature: Add vertical crs option for projects
 In line with [QEP \#267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267), a new vertical CRS option has been added to projects.
@@ -440,7 +440,7 @@ An option to limit the number of child features returned when expanding is provi
 
 ![](images/entries/457f84d686c8c91d0fc894920ab462511226c0d2.webp)
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add support for SensorThings Multidatastreams
@@ -448,7 +448,7 @@ This adds support for the Multidatastream entity type, as implemented in the Sen
 
 While the specification mandates that MultiDatastreams have an optional polygon geometry, many servers expose different geometry types for this entity or return errors when attempting to read the geometries from MultiDatastreams. Accordingly, QGIS now exposes an option to load MultiDatastreams as geometryless layers alongside the default option to load them as polygon layers, allowing users to handle a wider range of connections.
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Serial port sensor's data frame delimiter
@@ -468,7 +468,7 @@ This allows setting custom filters on the layer, using the SensorThings filter s
 
 A custom layer filter GUI is provided for SensorThings layer filters, making it easier for users to craft valid filters using the SensorThings filter language.
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Profiel plotten
@@ -479,16 +479,16 @@ Without support for tolerances, any line or polygon feature is displayed in its 
 
 ![](images/entries/25b1f63397246b4195891a08956b38239e78df07.gif)
 
-This feature was funded by CEA/DAM François Renard
+Dit werd mogelijk gemaakt door CEA/DAM François Renard
 
-This feature was developed by [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
+Deze mogelijkheid werd ontwikkeld door [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
 ## Gegevensproviders
 ### Feature: Add extent based filtering for SensorThings layers
 Allows users to set an extent limit for the layer so that features are only ever loaded within this extent.
 
 The extent can be set using the data source manager before initially adding the layer, or modified within the source tab if the layer properties.
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Web proxy prefix support for ArcGIS URLs
@@ -496,7 +496,7 @@ A new prefix field is provided in ArcGIS settings dialogs that allows users to d
 
 ![](images/entries/671e0f4b015b4a575c6bb1255317f0af56a6c056.webp)
 
-This feature was developed by [Vytax](https://github.com/Vytax)
+Deze mogelijkheid werd ontwikkeld door [Vytax](https://github.com/Vytax)
 ### Feature: Add support for fast extent estimation on SAP HANA connections
 Stored extent metadata can be utilized with the new "use estimated metadata" connection, which allows for precomputed extent estimation and much faster connectivity on large tables.
 
@@ -504,7 +504,7 @@ Although costly aggregation functions are avoided whenever the extent is recompu
 
 ![](images/entries/cf6ffc5f71ca8d57e9f3f717bf3e960c5afb51e4.webp)
 
-This feature was developed by [Johannes Quast](https://github.com/jatsqi)
+Deze mogelijkheid werd ontwikkeld door [Johannes Quast](https://github.com/jatsqi)
 ## QGIS Server
 ### Feature: Default limit for GetFeatureInfo results
 A new setting allows users to set a default FEATURE\_COUNT value individually for each WMS connection, with a predefined default value of 10.
@@ -515,15 +515,15 @@ The default user experience has not changed when adding layers from the data sou
 
 ![](images/entries/aa3907488d32cf1e90bb04115dfacffb5cdfee21.webp)
 
-This feature was funded by [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/)
+Dit werd mogelijk gemaakt door [Duitse QGIS gebruikersgroep (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Add crs information in WMS GetFeatureInfo output when it differs from WGS84
 GeoJSON explicitly requires the use of OGC:CRS84, but when a GetFeatureInfo request that explicitly requests a CRS that is not WGS84 is sent to a QGIS Server WMS, the output will now include the CRS definition in a manner compatible with the older [GeoJSON specification format](http://wiki.geojson.org/GeoJSON_draft_version_6#Specification) that included support for multiple Coordinate Reference Systems.
 
-This feature was funded by Eurométropole de Strasbourg
+Dit werd mogelijk gemaakt door Eurométropole de Strasbourg
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Programmeerbaarheid
 ### Feature: Add replace/ replace all functionality to QgsCodeEditorWidget
 The new replace functionality allows replacing matching text. If the regex find option is enabled, then captured groups from the regular expression pattern are available for use in the replacement string using the numeric identifier of the group (e.g. via `\1`).
@@ -544,7 +544,7 @@ Like other QGIS registries, the profile source registry is available from the `Q
 
 ![Custom profile source example](images/entries/custom_profile_source.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
+Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Belangrijke reparaties
@@ -561,9 +561,9 @@ Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gac
 | [OAPIF] Server defined fields are not fetched when creating a new feature | [#57486](https://github.com/qgis/QGIS/issues/57486) | [PR #57547](https://github.com/qgis/QGIS/pull/57547) | [PR #57549](https://github.com/qgis/QGIS/pull/57549) |
 | QGIS3.28.15:Polygon Features from ArcGIS GDB Turn into TABLE after Editing in QGIS | [#57536](https://github.com/qgis/QGIS/issues/57536) | [GDAL PR 10008](https://github.com/OSGeo/gdal/pull/10008) | N/B |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (itOpen / qcooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -589,9 +589,9 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | Identify Results for raster data value does not use correct decimal separator | [#57765](https://github.com/qgis/QGIS/issues/57765) | [PR #57769](https://github.com/qgis/QGIS/pull/57769) | Wachtrij |
 | Value relation dropdown issue -Dropdown list selection reverts to default value upon selecting subtype option | [#57808](https://github.com/qgis/QGIS/issues/57808) | Cannot reproduce (awaiting feedback) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by David Signer (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -599,9 +599,9 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 | Custom properties variableNames and variableValues are cleared when more than one layer custom variable exist | [#57334](https://github.com/qgis/QGIS/issues/57334) | [PR #57490](https://github.com/qgis/QGIS/pull/57490) | Niet van toepassing |
 | Default values depending on other fields are not correctly applied when field not part of form made by Drag and Drop Designer | [#57411](https://github.com/qgis/QGIS/issues/57411) | [PR #57527](https://github.com/qgis/QGIS/pull/57527) | Niet van toepassing |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [David Signer (OPENGIS)](https://www.opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS)](https://www.opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Sandro Santilli (strk)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -617,9 +617,9 @@ This feature was developed by [David Signer (OPENGIS)](https://www.opengis.ch/)
 | Directory /tmp full of QGIS temporary files after ctest run | [#48884](https://github.com/qgis/QGIS/issues/48884) |  |  |
 | test_provider_postgresprovider TestPyQgsPostgresProvider.testExtent doesn't test extent | [#57818](https://github.com/qgis/QGIS/issues/57818) | [PR #57829](https://github.com/qgis/QGIS/pull/57829) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
+Deze mogelijkheid werd ontwikkeld door [Sandro Santilli (strk)](https://strk.kbt.io/)
 ### Mogelijkheid: Reparaties van problemen door Julien Cabieces (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -631,9 +631,9 @@ This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 | Topology Checker crashes | [#57627](https://github.com/qgis/QGIS/issues/57627) | [PR #57695](https://github.com/qgis/QGIS/pull/57695) | [PR #57712](https://github.com/qgis/QGIS/pull/57712) |
 | Debian sid Qt6 compile fails on sip build, python bindings | [#57760](https://github.com/qgis/QGIS/issues/57760) | upstream issue, wait for PyQt/sip mailing list answer |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Jacky Volpes (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -641,18 +641,18 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 | Postgres layer with multi geometry columns fails to export | [#57757](https://github.com/qgis/QGIS/issues/57757) | Is geen probleem |  |
 | Georeferencing tool: default name for export with an accent in french (_modifié) | [#55389](https://github.com/qgis/QGIS/issues/55389) | [Transifex](https://app.transifex.com/qgis/QGIS/translate/#fr/$/412589941?q=text%3A_modified) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Jean Felder (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | qgsabstractmaterialsettings: Handle selection in addParametersToEffect | niet gerapporteerd | [PR #57803](https://github.com/qgis/QGIS/pull/57803) | not backported |
 | qgs3daxis: Fix cube face picking | niet gerapporteerd | [PR #57848](https://github.com/qgis/QGIS/pull/57848) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
+Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia.com/)
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson (North Road)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -687,7 +687,7 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 | Fix colors for new diagram categories are not randomly picked | [#56862](https://github.com/qgis/QGIS/issues/56862) | [PR #57532](https://github.com/qgis/QGIS/pull/57532) | [PR #57539](https://github.com/qgis/QGIS/pull/57539) |
 | Make brush and stroke style combo box icons visible on dark themes | niet gerapporteerd | [PR #57506](https://github.com/qgis/QGIS/pull/57506) | [PR #57510](https://github.com/qgis/QGIS/pull/57510) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 

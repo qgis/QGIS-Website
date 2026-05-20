@@ -451,12 +451,12 @@ This feature was funded by [North Road](http://north-road.com)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ## 一般情報
-### Feature: QGIS projects inside geopackage files
-Did we already say that QGIS loves GeoPackage? Need any more proof of this? Well, in QGIS 3.8, we\'ve added to ability to store QGIS projects directly inside GeoPackage files! Now you can create a totally self-contained GeoPackage which embeds a QGIS Project AND all the data used by the project. (Let\'s see Shapefiles match that one!)
+### 機能: geopackageファイル内のQGIS プロジェクト
+QGISがGeoPackageを愛していることはすでにお伝えしましたか？さらなる証拠が必要ですか？QGIS 3.8では、QGISプロジェクトをGeoPackageファイルに直接保存できる機能が追加されました！QGISプロジェクトとそのプロジェクトで使用するすべてのデータを内包した完全自己完結型のGeoPackageを作成できるようになりました。（シェープファイルにこれができるか見てみましょう！）
 
 ![image39](images/entries/8750f1c2e3c3919926fd2cb97488da071f7efc85.webp)
 
-This feature was funded by [QCooperative](https://www.qcooperative.net)
+この機能開発は [QCooperative](https://www.qcooperative.net) の資金提供を受けました
 
 This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
 ### Feature: Much Improved Coordinate Transform Handling
