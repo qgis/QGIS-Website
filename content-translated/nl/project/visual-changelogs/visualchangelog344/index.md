@@ -4,15 +4,15 @@ draft: false
 releaseDate: 20-06-2025
 section: project
 sidebar: true
-title: Changelog for QGIS 3.44
+title: Log met wijzigingen voor QGIS 3.44
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# Changelog for QGIS 3.44{#changelog344 }
+# Log met wijzigingen voor QGIS 3.44{#changelog344 }
 <img src="images/projects/3807b5d1851cc87bda040f637e1f4024bc11c58a.png" class="img-responsive img-rounded center-block" />
 
-Release date: 2025-06-20
+Datum uitgave: 20-06-2025
 
 The QGIS Project proudly announces the release of QGIS 3.44, a momentous release that marks the culmination of the QGIS 3 series. This release arrives within a vibrant and ever-expanding ecosystem of free and open-source geospatial tools, libraries, and community support that empowers users worldwide. Building upon the solid foundations of previous releases, QGIS 3.44 provides a stable and refined experience for all users as the project transitions to the modern Qt6 framework with the upcoming release of [QGIS 4.0](https://blog.qgis.org/2025/04/17/qgis-is-moving-to-qt6-and-launching-qgis-4-0/) in October 2025.
 

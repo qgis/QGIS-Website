@@ -383,7 +383,7 @@ In het voorbeeld hebben we de personen:
 - En de items in de landenlaag zijn *USSR, Cuba, Vietnam, Burma, Venezuela, North Korea*
 
 Deze mogelijkheid werd ontwikkeld door [signedav](https://api.github.com/users/signedav)
-### Feature: Functies voor expressies toegevoegd voor converteren naar/van wkb
+### Mogelijkheid: Functies voor expressies toegevoegd voor converteren naar/van wkb
 - `geom_from_wkb( geom_to_wkb( make_point(4,5) ) ) → een puntgeometrie object` Geeft een geometrie terug, gemaakt uit een Well-Known Binary (WKB)-weergave.
 - `geom_to_wkb( $geometry ) → binaire blob die een geometrieobject bevat` Geeft de weergave in Well-Known Binary (WKB) van een geometrie terug als een binaire blob.
 
@@ -554,7 +554,7 @@ Het algoritme Raster onscherp maken (nabij lidmaatschap) is een eigen implementa
 ![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Clemens Raffler](https://github.com/root676)
-### Feature: Algoritme Verdichten op aantal geporteerd naar C++
+### Mogelijkheid: Algoritme Verdichten op aantal geporteerd naar C++
 We hebben het algoritme Verdichten op aantal naar C++ geporteerd om de snelheid te verbeteren vergeleken met de eerdere implementatie in Python. Het nieuwe algoritme geeft ook de parameter voor het tellen weer als een dynamische parameter, zodat die kan worden beheerd door expressies of veldwaarden.
 
 ![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.webp)
@@ -600,7 +600,7 @@ Dit maakt eenvoudige koppelingen polygoon-\>polygoon mogelijk, waarvan u verwach
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Eigen algoritme Affiene transformatie voor vectoren toegevoegd
+### Mogelijkheid: Eigen algoritme Affiene transformatie voor vectoren toegevoegd
 Biedt de volgende voordelen boven de versies van GRASS/SAGA:
 - Volledige ondersteuning voor Z-/M-waarden en afhandeling van gebogen geometrieën zonder verlies van bogen
 - Werkt met alle eigen gegevenstypes, dus geen noodzaak voor transformeren van opmaak
@@ -611,7 +611,7 @@ Biedt de volgende voordelen boven de versies van GRASS/SAGA:
 ![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Algoritme gdal_viewshed toegevoegd
+### Mogelijkheid: Algoritme gdal_viewshed toegevoegd
 Weergeven van nieuw gereedschap gdal_viewshed via Toolbox van Processing. Opmerking: dit vereist GDAL \>= 3.1.
 
 Deze mogelijkheid werd ontwikkeld door Alexander Bruy

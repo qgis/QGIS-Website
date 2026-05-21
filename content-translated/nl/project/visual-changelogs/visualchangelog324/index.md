@@ -461,7 +461,7 @@ Dit omvat ook het toevoegen van een nieuwe  expressie en een gereedschap voor Pr
 
 ![image41](images/entries/0ebc31c2437a3f5595257edd778d3f2fcbca9486.webp)
 
-Deze mogelijkheid werd ontwikkeld door `Antoine Facchini <https://github.com/Koyaani>`__
+Deze mogelijkheid werd ontwikkeld door [Antoine Facchini](https://github.com/Koyaani)
 ## Processing
 ### Mogelijkheid: Labels algoritme uitnemen
 Voor 3.24 hebben we een nieuw gereedschap toegevoegd aan de QGIS Toolbox van Processing: \"Labels uitnemen\". Zoals de naam al aangeeft, neemt dit algoritme informatie van labels uit een gerenderde kaart op een specifiek bereik en schaal.

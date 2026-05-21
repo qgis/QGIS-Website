@@ -197,7 +197,7 @@ Dit nieuwe stijl formulier voor variabelen is toegevoegd voor het verwijzen naar
 De nieuw geïntroduceerde variabelen zijn:
 - `@feature`: een vervanging voor \$currentfeature, bevat het huidige object
 - `@id`: een vervanging voor \$id, bevat het huidige object-ID
-- `@geometry``: een vervanging voor \$geometry, bevat de geometrie van het huidige object
+- `@geometry`: een vervanging voor \$geometry, bevat de geometrie van het huidige object
 
 Dit is een stap naar het eventueel laten vervallen van de functies in de oudere stijl `$`, en het verschaffen van een meer consistente benadering tot expressies, in plaats van een onvoorspelbare mix van `@`/`$`.
 
@@ -480,7 +480,7 @@ Argumenten tussen `--py-args` en `--` worden doorgegeven aan de interpreter van 
 
     qgis --code /home/user/example.py --py-args --specialScriptArguments "arg1" 'arg2' -- layer1 layer2
     
-Zal het scripte `example.py` de `--specialScriptArguments`, `arg1`, en `arg2` doorgeven als systeemargumenten aan de interpreter van Python, terwijl `layer1` en `layer2` normaal door QGIS worden afgehandeld en geladen als kaartlagen
+Zal aan het script `example.py` de `--specialScriptArguments`, `arg1`, en `arg2` doorgeven als systeemargumenten aan de interpreter van Python, terwijl `layer1` en `layer2` normaal door QGIS worden afgehandeld en geladen als kaartlagen
 
 Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation Vorarlberg
 

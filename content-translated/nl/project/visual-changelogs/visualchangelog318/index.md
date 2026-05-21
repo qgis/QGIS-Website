@@ -143,7 +143,7 @@ Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co
 
 Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ## Renderen
-### Feature: Renderer \"Samengevoegde objecten\" voor polygoon- en lijnlagen
+### Mogelijkheid: Renderer \"Samengevoegde objecten\" voor polygoon- en lijnlagen
 Een nieuwe optie voor renderen maakt het mogelijk dat gebieds- en lijnobjecten worden \"samengevoegd\" naar een enkel object, voorafgaande aan het renderen. Om ervoor te zorgen dat complexe symbolen of overlappende objecten worden weergegeven door een uniform en doorlopend cartografisch symbool.
 
 ![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.webp)

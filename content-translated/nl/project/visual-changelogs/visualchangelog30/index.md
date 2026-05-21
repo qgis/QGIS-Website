@@ -486,7 +486,7 @@ Bekijk <https://vimeo.com/236604742>
 Dit werd mogelijk gemaakt door [QGIS.org programma voor het toekennen van fondsen](https://qgis.org)
 
 Deze mogelijkheid werd ontwikkeld door [OSLANDIA - Vincent Mora](https://github.com/vmora)
-### Feature: Resultaten van labellen cachen om onnodig hertekenen te vermijden bij het vernieuwen van het kaartvenster
+### Mogelijkheid: Resultaten van labellen cachen om onnodig hertekenen te vermijden bij het vernieuwen van het kaartvenster
 Deze wijziging maakt het mogelijk de resultaten van labellen te cachen naar een afbeelding, volgend op het renderen van de kaart. Als de afbeelding met de gecachte labelresultaten opnieuw kan worden gebruikt voor de volgende keer renderen dan zal dat gebeuren, dit vermijd de noodzaak om alle lagen die deelnemen in het probleem met labellen opnieuw te tekenen en de oplossing voor het labellen oplossen. In de basis betekent dit dat **vernieuwingen van het kaartvenster als resultaat van wijzigingen in elke NIET-GELABELDE laag veel sneller is**. (Wijzigen van een laag die deel uitmaakt van de oplossing voor het labellen vereist nog steeds dat alle gelabelde lagen opnieuw moeten worden getekend)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
@@ -808,7 +808,7 @@ Filtert een invoerlaag met een expressie
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Algoritme Importeren in Spatialite toegevoegd
+### Mogelijkheid: Algoritme Importeren in Spatialite toegevoegd
 Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 ### Mogelijkheid: Algoritmes voor interpoleren 
 Interpolatie IDW en TIN uit de plug-in Interpolation weergeven in Toolbox
@@ -822,7 +822,7 @@ Dit algoritme werkt bestaande geometrieën bij (of maakt nieuwe geometrieën) vo
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Geometrieën aan algoritme van laag snappen
+### Mogelijkheid: Geometrieën aan algoritme van laag snappen
 De plug-in Geometry Snapper geporteerd naar Processing
 
 Algoritme Snap geometries maakt nu snappen aan ander typen lagen mogelijk, ondersteunt lagen punt/lijn

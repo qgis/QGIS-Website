@@ -570,7 +570,7 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin (OPENGIS)](https://open
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
-### Feature: Bug Fixes by Loïc Bartoletti (Oslandia)
+### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Add a CMAKE option to completely disable Python | security@ | [PR #60463](https://github.com/qgis/QGIS/pull/60463) | - |

@@ -77,49 +77,49 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 This feature was developed by [Ben Wirf](https://github.com/benwirf)
 ## ラベリング
-### Feature: Add settings for controlling margin around labels and preventing duplicate labels
-Two new settings have been introduced for vector layer labels, namely:
-- Margin around labels: This allows setting a margin around a layer's labels, which prevents all other labels from being placed closer than this margin distance to the layer's labels.
-- Prevent duplicate labels: Removes labels within a minimum distance across ALL layers using case sensitive matching.
+### 機能: ラベル周囲の余白制御と重複ラベル防止の設定の追加
+ベクターレイヤーのラベルに2つの新しい設定が導入されました:
+- ラベル周囲の余白:レイヤーのラベル周囲に余白を設定できます。これにより、他のすべてのラベルがこの余白距離より近くに配置されることを防ぎます。
+- 重複ラベルの防止:大文字と小文字を区別したマッチングを使用して、すべてのレイヤーにわたる最小距離内の重複するラベルを削除します。
 
-This can be used to improve the appearance of labels in the rendering of complex geographic situations such as road network data, where elements such as dual carriageways, service roads, and other entities can result in many identical label elements appearing close together.
+これは、道路ネットワークデータなどの複雑な地理的状況のレンダリングでラベルの見栄えを向上させるために使用できます。片側2車線道路、側道、その他の要素により、同一のラベル要素が近接して多数表示されることがあります。
 
 <img src="images/entries/efc5a69fe9fa346ba7b2d6b9c3ec2b6d57b731d0.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## 三次元機能
-### Feature: Cross-section tool
-A new tool has been added for creating cross sections in a 3D scene. User can pick a region of interest in the 2D map canvas (by clicking three points - start point, end point and cross-section thickness), which will make 3D view filter out everything outside of the region. The camera in the 3D view also gets moved to look at the region of interest from the side.
+### 機能: 断面図ツール
+3Dシーンで断面図を作成する新しいツールが追加されました。ユーザーは2Dマップキャンバスで3点（始点、終点、断面図の厚さ）をクリックして対象領域を選択でき、3Dビューでは領域外のすべてが非表示になります。3DビューのカメラもROI（対象領域）を横から見る位置に移動します。
 
-Compared to the configuration of the extent of the 3D view, cross section tool is both faster to use (it does not need to reload the whole scene when cross section is enabled/disabled) and allows rotated rectangular regions.
+3Dビューの範囲設定と比較して、断面図ツールは動作が速く（断面図の有効/無効切り替え時にシーン全体の再読み込みが不要）、また回転した矩形領域にも対応しています。
 
 <img src="images/entries/8034dbe7d55e297f052ef4d310beab10a56ddbb5.png" class="img-responsive img-rounded" />
 
-This feature was funded by Septima, Klimadatastyrelsen
+この機能は Septima, Klimadatastyrelsen からの資金提供で開発されました
 
 This feature was developed by [Matej Bagar](https://github.com/Withalion)
-### Feature: Globe view
-There is a new mode for 3D scenes - globe view - in addition to the traditional 3D view based on a projected CRS.
+### 機能: 地球儀ビュー
+投影座標系ベースの従来の3Dビューに加えて、3Dシーンに新しいモード　- 地球儀ビュー- が追加されました。
 
-Any map layer type can be used as a 2D texture for the globe, and 3D renderers of tiled scene layers and point cloud layers are supported.
+あらゆる種類のマップレイヤーを地球儀の2Dテクスチャとして使用でき、タイル化シーンレイヤーとポイントクラウドレイヤーの3Dレンダラーもサポートされています。
 
-Globe view uses the ellipsoid of the project to generate globe mesh. It is even possible to use other celestial bodies, such as Mars or Moon, if the project's CRS is set up accordingly.
+地球儀ビューはプロジェクトの楕円体を使用して地球儀メッシュを生成します。プロジェクトのCRSを適切に設定することで、火星や月などの他の天体も表示することができます。
 
-More info:
+詳細情報:
 - [QEP \#301 - Large scenes and globe in QGIS 3D](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301)
 - [Cesium blog post](https://cesium.com/blog/2025/06/20/3d-globe-view-now-available-in-qgis/)
 
 <img src="images/entries/b0ebe685540c3191ad07235d63e45176e9694551.png" class="img-responsive img-rounded" />
 
-This feature was funded by Cesium Ecosystem Grant
+この機能は Cesium Ecosystem Grant の資金提供で開発されました
 
-This feature was developed by Lutra Consulting & North Road
+本機能は Lutra Consulting & North Road によって開発されました
 ### Feature: Large 3D scene support
 In earlier versions of QGIS, 3D map views would not behave correctly with scenes larger than 50-100 kilometers due to numerical precision issues - the camera would move erratically (to the point of being unusable) or features would jitter when zoomed in. This has been fixed now - for both local scenes and globe scenes, as outlined in [QEP 301](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301).
 
-This feature was funded by Cesium Ecosystem Grant
+この機能は Cesium Ecosystem Grant の資金提供で開発されました
 
-This feature was developed by Lutra Consulting & North Road
+本機能は Lutra Consulting & North Road によって開発されました
 ## 点群
 ### Feature: Update pdal_wrench to v1.2
 This provides:
@@ -176,7 +176,7 @@ Users can set up filtering of edited points using QGIS expressions, so that only
 
 </div>
 
-This feature was funded by Septima, Klimadatastyrelsen
+この機能は Septima, Klimadatastyrelsen からの資金提供で開発されました
 
 This feature was developed by Lutra Consulting
 ## 印刷レイアウト

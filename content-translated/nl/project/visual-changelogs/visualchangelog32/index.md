@@ -398,7 +398,7 @@ Dit nieuwe algoritme maakt het draaien van objecten rond een ingestelde hoek mog
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Lijnverloop in \"Add Geometry Attributes\"
+### Mogelijkheid: Lijnverloop in \"Add Geometry Attributes\"
 Het algoritme \"Add Geometry Attributes\" berekent nu het lijnverloop en rechte afstanden voor lijnlagen.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
@@ -564,7 +564,7 @@ In 3.2 is het mogelijk om query's voor SQL op te slaan. De geschiedenis voor de 
 ![image33](images/entries/9c6074aaf1e989c460833535788d0b396a677e34.png.400x300_q85_crop.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Salvatore Larosa](https://github.com/slarosa)
-### Feature: DB Manager uitvoeren van SQL op achtergrond
+### Mogelijkheid: DB Manager uitvoeren van SQL op achtergrond
 Deze mogelijkheid werd ontwikkeld door Paul Blottiere
 ## 3D-objecten
 ### Mogelijkheid: 3D-polygonen: Optioneel genereren van achterkanten

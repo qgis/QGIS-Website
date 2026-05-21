@@ -507,7 +507,7 @@ Deze mogelijkheid werd ontwikkeld door [talledodiego](https://github.com/talledo
 Het algoritme Pakketlagen werd aangepast met ondersteuning voor het alleen opslaan van geselecteerde objecten
 
 Deze mogelijkheid werd ontwikkeld door [Stefan Conrads](https://github.com/stefancon)
-### Feature: Logniveaus voor context Processing
+### Mogelijkheid: Logniveaus voor context Processing
 Een nieuwe eigenschap log level is toegevoegd aan QgsProcessingContext
 
 Dit maakt het voor algoritmes mogelijk om hun uitvoer te verfijnen, gebaseerd op het logniveau.

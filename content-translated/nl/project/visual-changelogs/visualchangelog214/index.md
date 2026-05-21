@@ -89,7 +89,7 @@ Deze mogelijkheid werd ontwikkeld door Nyall Dawson, Matthias Kuhn
 QGIS 2.14 heeft een betere controle verkregen voor het plaatsen van Noordpijlen, schaalbalken en opmerkingen voor auteursrecht in het hoofdkaartvenster. U kunt nu precies de positie van deze elementen instellen met behulp van een variëteit aan eenheden (inclusief millimeters, pixels en percentage).
 
 ![image50](images/entries/e2390ce8f4bc93ebf00228e1545b192315d2cb57.png.400x300_q85_crop.webp)
-### Feature: Programma voor oplossen van problemen tegen betaling
+### Mogelijkheid: Programma voor oplossen van problemen tegen betaling
 Voorafgaande aan elke uitgave houden we een programma voor het oplossen van problemen tegen betaling waar we ontwikkelaars de fondsen verstrekken om zoveel mogelijk problemen op te lossen. We hebben besloten om een verantwoording van dit programma voor het oplossen van problemen tegen betaling op te nemen als deel van ons log van wijzigingen. Onthoud dat deze lijst **niet uitputtend** is.
 - Sandro Santilli: [Postgis Connection freeze if you press \"Set filter\" during loading of data](http://hub.qgis.org/issues/13141)
 - Sandro Santilli: [db_manager is unable to load rasters from connections with no dbname specified](http://hub.qgis.org/issues/10600)
@@ -244,7 +244,7 @@ De QGIS Browser is een paneel voor het bestandssysteem, OGC webservices en datab
 
 Deze mogelijkheid werd ontwikkeld door Nathan Woodrow
 ## Gegevensproviders
-### Feature: Cache mogelijkheden voor WMS
+### Mogelijkheid: Cache mogelijkheden voor WMS
 QGIS zal nu verzoeken voor WMS `GetCapabilities` cachen zodat bij volgend gebruik de antwoordtijden sneller zullen zijn bij het gebruiken van die service. Standaard is de periode voor het cachen 24 uur, maar u kunt dit aanpassen op de tab `Netwerk` van het dialoogvenster Instellingen voor QGIS.
 
 ![image31](images/entries/743840449ddf09f45251e9710e9666cf4da86081.png.400x300_q85_crop.webp)

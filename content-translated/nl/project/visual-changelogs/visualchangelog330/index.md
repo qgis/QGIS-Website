@@ -202,7 +202,7 @@ Nieuwe functies `is_feature_valid()` en `is_attribute_valid()` worden verschaft 
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Expressiefuncties x_at, y_at, z_at, m_at toegevoegd
-De beschikbare \$functies worden als vervallen beschouwd (`\$x_at` en `\$y\_at\`), en in plaats van het werken op de huidige geometrie van het object ondersteunen de functies in plaats daarvan een geometrie van een object als argumenten.
+De beschikbare \$functies worden als vervallen beschouwd (`$x_at` en `$y_at`), en in plaats van het werken op de huidige geometrie van het object ondersteunen de functies in plaats daarvan een geometrie van een object als argumenten.
 
 De wijzigingen voor deze expressies bevatten het maken van soortgelijke functies voor andere metingen van geometrieën. Deze nieuwe functies omvatten:
 - x_at(geometry, i)
@@ -212,7 +212,7 @@ De wijzigingen voor deze expressies bevatten het maken van soortgelijke functies
 
 Dit werd mogelijk gemaakt door [Métropole Européenne de Lille](https://www.lillemetropole.fr/)
 
-Deze mogelijkheid werd ontwikkeld door `Antoine Facchini <https://github.com/Koyaani>`__
+Deze mogelijkheid werd ontwikkeld door [Antoine Facchini](https://github.com/Koyaani)
 ## Gegevensbeheer
 ### Mogelijkheid: Bewerken veld DateTime: scheiding van indeling weergave en indeling veldwaarde
 Inspanningen om het beheer van informatie voor het veld Datetime omvatten de expliciete definitie van gelokaliseerde opmaak voor het *weergeven* van velden Datetime, er voor zorgend dat het bewerken, vastleggen en opslaan van de veldwaarden zich conformeert aan internationale standaarden voor de opmaak van tijd.
@@ -479,7 +479,7 @@ Een nieuwe methode voor Auth in QGIS, genaamd \"AWS S3\", wordt verschaft om het
 Dit werd mogelijk gemaakt door Métropole Grand Lyon\*\*
 
 Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://github.com/Djedouas)
-### Feature: Resolutie herkennende WMTS-lagen met automatisch opschalen
+### Mogelijkheid: Resolutie herkennende WMTS-lagen met automatisch opschalen
 QGIS staat WMTS-lagen nu toe om rekening te houden met de schermresolutie van het apparaat, of dots per inch (DPI), en de resolutie voor de tegel op te schalen op schermen met hoog DPI.
 
 Een nieuw combinatievak is toegevoegd in de nieuwe dialoogvensters voor WMS- en WMTS-servers voor het configureren van de WMTS-tegel pixelverhouding. Dit stelt QGIS in staat om automatisch het op- en neerschalen af te handelen van tegels die worden opgehaald van de service, gebaseerd op de gerenderde DPI.
@@ -530,7 +530,7 @@ Deze mogelijkheid werd ontwikkeld door [David Marteau](https://github.com/dmarte
 ### Mogelijkheid: Regels voor Topologie controle in-/uitschakelen en filteren
 De plug-in Topology checker is verbeterd om functionaliteit te verschaffen voor het beter beheren van regels, als ook het filteren van grote sets fouten. Aanvullende verbeteringen brengen de gebruikerservaring meer in lijn met de laatste uitgaven van QGIS en maken verbetering van de productiviteit mogelijk, zoals verwijderen in bulk en uitschakelen van regels.
 
-The topology checker rules dialog now features check boxes which are attached to individual rules, which allow for enabling/ disabling rules when running validity checks *without having to remove them*. This avoids scenarios when users don\'t want to lose rules but are only interested in validating a subset.
+Het dialoogvenster van Topology checker heeft nu keuzevakken die zijn verbonden met individuele regels, die het mogelijk maken de regels in/uit te schakelen bij het uitvoeren van controles op geldigheid *zonder ze te hoeven verwijderen*. Dit vermijdt scenario's waar gebruikers geen regels willen verliezen, maar alleen zijn geïnteresseerd in het valideren van een subset.
 
 Het Topologie controlepaneel  heeft ook een nieuw combinatievak onder zijn werkbalk om snel filteren op fouten mogelijk te maken om gebruikers te kunnen laten focussen op een specifiek type fout, hoewel het zal doorgaan met het standaard weergeven van alle typen fouten.
 
@@ -553,7 +553,7 @@ Updates aan de instellingen voor automatisch aanvullen breiden deze functionalit
 - haakjes/ ronde haakjes: `()`
 - dubbel aanhalingsteken: `"`
 - enkel aanhalingsteken: `'`
-- accent grave: ``\`
+- accent grave: `\``
 - asterisk: `*`
 
 Met uitzondering van de tekens accent grave en asterisk, is de functionaliteit autoCloseBracket beschikbaar bij het omsluiten van nieuwe gegevens zonder een actieve selectie van tekst.

@@ -519,13 +519,13 @@ Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Lagen toevoegen aan hoogteprofielen
 1. Een expliciete knop \"Lagen toevoegen\" is toegevoegd aan het dok van het hoogteprofiel. Dit verschaft een gebruikersvriendelijke manier voor het toevoegen van nieuwe lagen aan een plot - erop klikken zal een gefilterde lijst van mogelijke lagen weergeven, die kunnen worden toegevoegd aan de plot, maar die momenteel niet zijn opgenomen in de plot (d.i. het zal alle rasterlagen in het project bevatten die niet zijn gemarkeerd als gegevens voor hoogte hebbende). Selecteren van lagen zal ervoor zorgen dat ze automatisch worden gemarkeerd als gegevens voor hoogte hebbend en onmiddellijk worden toegevoegd aan de plot.
-2. Layers can now be added to elevation plots via drag and drop from the layer tree. Unfortunately, users will have to explicitly hold the \"Ctrl\" key while dragging in order to force the copy action due to upstream library limitations.
+2. Lagen kunnen nu aan hoogteplots worden toegevoegd via slepen en neerzetten vanuit de boom met lagen. Helaas moeten gebruikers expliciet de \"Ctrl\"-toets ingedrukt houden bij het slepen, om de actie voor het kopiëren te forceren wegens beperkingen in de bovenliggende bibliotheken.
 
 Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add \"Fill Above\" mode for elevation profile drawing
-The new fill above drawing mode for profile plots also includes additional options to limit the extent of \"fill above\" and \"fill below\" elevation ranges for a layer.
+### Mogelijkheid: Modus \"Boven vullen\" voor tekenen van hoogteprofiel
+De nieuwe tekenmodus Boven vullen voor profielplots bevat ook aanvullende opties om het bereik te beperken van \"Boven vullen\" en \"Onder vullen\" voor hoogtebereiken van een laag.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Optie toegevoegd om de horizontale/ verticale schaal te vergrendelen voor overeenkomende schalen
@@ -543,7 +543,7 @@ Een bronframewerk voor sensoren verschaft een register voor type sensoren, een b
 
 Een beheerder voor sensoren is aangehecht aan projectinstanties die het voor gebruikers mogelijk maakt sensoren te registreren in hun projectbestanden. Anders dan met andere invoer, zoals een apparaat die een positie aangeeft, wordt van sensoren verwacht dat zij veel meer project-specifieke gegevensinvoer leveren. Het grote voordeel van op project-gebaseerde sensoren is dat het deze veel draagbaarder maakt en gemakkelijker te delen tussen gebruikers.
 
-A new `sensor_data()` function is added to the project scope which is available using expressions, that returns the latest captured sensor data values for a specific sensor name. An optional expiration (in milliseconds) parameter allows for expressions that will reject a specific sensor value is older that the provided expiration value.
+Een nieuwe functie `sensor_data()` is toegevoegd aan het bereik van het project, die beschikbaar is om te gebruiken met expressies, die de laatste vastgelegde gegevenswaarden voor de sensor teruggeeft voor een specifieke naam van een sensor. Een optionele parameter voor verlopen (in milliseconden) maakt het voor expressies mogelijk een specifieke waarde van de sensor te weigeren als die ouder is dan de opgegeven waarde voor verlopen.
 
 ![image31](images/entries/79f13eef3f01b425e4523a9dd9b0922a97712d4f.gif)
 
@@ -551,7 +551,7 @@ Dit werd mogelijk gemaakt door [Sevenson Environmental Services](https://sevenso
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Gebruikersinterface voor register van sensoren en configuratiewidgets
-Configuration widgets are provided for the TCP, UDP, and serial port sensor types which will allow users to configure, add, and remove sensors within the project properties dialog\'s sensors panel.
+Configuratiewidgets worden geleverd voor de typen sensoren TCP, UDP en seriële poort die het voor gebruikers mogelijk maken sensoren te configureren, toe te voegen en te verwijderen in het paneel voor de sensoren in het dialoogvenster voor de eigenschappen van het project.
 
 De implementatie omvat een gebruikersinterface voor het register van sensoren om gemakkelijk aanvullende sensoren voor Python te maken en te verpakken als plug-ins.
 
@@ -570,13 +570,13 @@ Dit werd mogelijk gemaakt door [Sevenson Environmental Services](https://sevenso
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Browser
 ### Mogelijkheid: Opmerkingen voor veld instellen in Browser
-When supported by providers, a new browser context menu action for fields allows for users to set/change the field\'s comments in the datasource.
+Indien ondersteund door providers stelt een nieuwe actie voor velden in het contextmenu van Browser gebruikers in staat de opmerkingen voor de velden in de databron in te stellen/te wijzigen.
 
 Momenteel ondersteund voor indelingen OGR met mogelijkheden voor opmerkingen in velden, zoals GPKG, ESRI File Geodatabase, NetCDF, of Geoparquet, als ook databronnen van PostgreSQL.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Aliassen voor veld instellen in Browser
-When supported by providers, a new browser context menu action for fields allows for users to set/change the field\'s alias in the datasource.
+Indien ondersteund door providers stelt een nieuwe actie voor velden in het contextmenu van Browser gebruikers in staat de aliassen voor de velden in de databron in te stellen/te wijzigen.
 
 Momenteel ondersteund voor indelingen OGR met mogelijkheden voor opmerkingen in velden, zoals GPKG, ESRI File Geodatabase, NetCDF, of Geoparquet.
 
@@ -603,22 +603,22 @@ Nieuwe functionaliteiten omvatten:
 - Geef geselecteerde CRS door aan de gebruikersinterface van Querybouwer
 - Implementeer een vertaling expressie getFeature()
 
-For the CQL2text compatibility, the server `/conformance` implementation is required to declare at least the following data:
+Voor compatibiliteit met CQL2text, is de implementatie `/conformance` op de server vereist om ten minste de volgende gegevens te declareren:
 - <http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/filter>
 - <http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/features-filter>
 - <http://www.opengis.net/spec/cql2/1.0/conf/cql2-text>
 - <http://www.opengis.net/spec/cql2/1.0/conf/basic-cql2>
 
-The `/collections/{collid}/queryables` endpoint is requested to get the queryable properties.
+Het eindpunt `/collections/{collid}/queryables` is vereist om de eigenschappen te verkrijgen die kunnen worden bevraagd.
 
 Aanvullende klassen voor conformatie aan geavanceerd filteren omvatten de volgende items:
-- <http://www.opengis.net/spec/cql2/1.0/conf/advanced-comparison-operators>: for IN, BETWEEN, LIKE
-- <http://www.opengis.net/spec/cql2/1.0/conf/case-insensitive-comparison>: for ILIKE
-- <http://www.opengis.net/spec/cql2/1.0/conf/basic-spatial-operators>: for `intersects(geomcolumn, geomFromWkt('POINT(x y)'))` and `bbox_intersects(geomcolumn, geomFromWkt('WKT LITERAL'))`
+- <http://www.opengis.net/spec/cql2/1.0/conf/advanced-comparison-operators>: voor IN, BETWEEN, LIKE
+- <http://www.opengis.net/spec/cql2/1.0/conf/case-insensitive-comparison>: voor ILIKE
+- <http://www.opengis.net/spec/cql2/1.0/conf/basic-spatial-operators>: voor `intersects(geomcolumn, geomFromWkt('POINT(x y)'))` en `bbox_intersects(geomcolumn, geomFromWkt('WKT LITERAL'))`
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
 ### Mogelijkheid: Optie weergeven om bronnen voor vectortegels te laden uit bestanden in Databronnen beheren
-The Vector Tile tab now includes choices for selecting from a \"Service\" (the existing, connection based approach for adding vector tiles from online sources) or \"File\" (a new option which allows directly adding a data source using VTPK or MBTiles vector tile files).
+De tab Vectortegel bevat nu keuzes voor het selecteren vanuit een \"Service\" (de bestaande, op een verbinding gebaseerde benadering voor het toevoegen van vectortegels uit bronnen online) of \"Bestand\" (een nieuwe optie die het direct toevoegen van een databron met VTPK- of MBTiles-vectortegelbestanden mogelijk maakt).
 
 ![image35](images/entries/d882e2a88732692f8701f27c17fa60c6f376a29e.gif)
 
@@ -628,7 +628,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Aanvullende gebruiker beheerde eigenschappen voor vectortegels
 Databronnen voor vectortegels ondersteunen nu door de gebruiker gedefinieerd beheer voor transparantie van de laag en mengmodi.
 
-Additionally, it adds the standard \"Source\" and \"Rendering\" tabs to the vector tile layer properties dialog. The Rendering tab contains the layer\'s scale based visibility (just like for other layer types), and the source tab contains the layer name, crs override and provider-specific source controls.
+Aanvullend voegt het de standaardtabs \"Bron\" en \"Renderen\" toe aan het dialoogvenster voor de laageigenschappen van vectortegels. De tab Renderen bevat de op de schaal van de laag gebaseerde zichtbaarheid (net als voor andere typen lagen), en de tab Bron bevat de naam van de laag, overschrijven CRS en provider-specifiek bronbeheer.
 
 Bronwidgets zijn ook voor de providers van VTPK en MBTiles vectortegels, wat beheer mogelijk maakt voor het bron bestandspad voor vtpk/mbtiles.
 
@@ -641,15 +641,15 @@ Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation, Fel
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## QGIS Server
 ### Mogelijkheid: Opties voor opmaken van PDF voor WMS GetPrint
-The `FORMAT_OPTIONS` parameter in QGIS Server can now also be used to pass format options for PDF format to WMS GetPrint. This allows more control in GetPrint requests when generating GeoPDF outputs, such as Georeference or Geometry Simplification settings.
+De parameter `FORMAT_OPTIONS` in QGIS Server mag nu ook worden gebruikt om opties voor opmaak door te geven voor de indeling PDF aan WMS GetPrint. Dit maakt meer beheer over verzoeken GetPrint mogelijk bij het maken van uitvoer GeoPDF, zoals Georeferencer of instellingen van Geometrie vereenvoudigen.
 
 Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
 ### Mogelijkheid: Te configureren mogelijkheden grootte cache
-The QGIS Server GetCapabilities request cache size can now be configured with the `QGIS_SERVER_CAPABILITIES_CACHE_SIZE` parameter, which uses an integer input specifying the number of requests to cache. A notice of \"Removed cached WMS capabilities document\" will be logged when all slots are taken and a cached document is dropped.
+De QGIS Server  cachegrootte voor het GetCapabilities-verzoek kan nu worden geconfigureerd met de parameter `QGIS_SERVER_CAPABILITIES_CACHE_SIZE`, die een invoer integer gebruikt die het aantal te cachen verzoeken specificeert. Een notitie \"Verwijderd gecachet WMS capabilities document\" zal worden gelogd als alle slots bezet zijn en een gecachet document wordt verwijderd.
 
 Deze mogelijkheid werd ontwikkeld door [Jürgen Fischer](https://github.com/jef-n)
 ### Mogelijkheid: Weergavenaam toevoegen in antwoord GetFeatureInfo
-A new `WITH_DISPLAY_NAME` parameter will add the display name in the `GetFeatureInfo` response if needed, similar to the existing `WITH_MAPTIP` parameter.
+Een nieuwe parameter `WITH_DISPLAY_NAME` zal de weergavenaam toevoegen, indien nodig, in het antwoord van `GetFeatureInfo`, soortgelijk aan de bestaande parameter `WITH_MAPTIP`.
 
 Dit werd mogelijk gemaakt door [3liz.com](https://3liz.com)
 
@@ -667,26 +667,26 @@ Om bladeren door de objecten meer gebruikersvriendelijk te maken en om meer info
 Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
 ## Programmeerbaarheid
 ### Mogelijkheid: Verbeteringen voor Help console Python
-A special `?` command has been added to the python console which displays a useful help message, identifies some key variables, and provides helper functions for improving the developer experience within QGIS Desktop.
+Een speciale opdracht `?` is toegevoegd aan de Python-console die hulpvolle berichten voor Help weergeeft, enkele sleutelvariabelen identificeert en hulpfuncties verschaft voor het verbeteren van de ervaring voor ontwikkelaars in QGIS Desktop.
 
-The `_pyqgis` and `_api` helper functions will take a parameter (an instance or class), and will display the matching object page from the QGIS or Qt documentation.
+De hulpfuncties `_pyqgis` en `_api` zullen een parameter accepteren (een instantie of klasse), en zullen de overeenkomende objectpagina weergeven uit de documentatie voor QGIS of Qt.
 
 ![image37](images/entries/5eae659a4df942e04095e38fa5256e7c1436ae39.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Uitvoeren van shell-opdrachten vanuit de Python Console
 De QGIS Python Console bootst het IPython-gedrag na om systeemopdrachten uit te kunnen voeren.
-- Run any command that works at the command-line with the syntax `!<cmd>`. The console will start a subprocess, and forward its output to the Python Console Output.
+- Uitvoeren van elke opdracht die werkt op de opdrachtregel met de syntaxis `!<cmd>`. De console zal een subproces starten en de uitvoer doorsturen naar de uitvoer van de Python-console.
 - Terwijl het subproces wordt uitgevoerd, schakelt de invoer voor Python Console naar de modus STDIN en stuurt ingevoerde tekens door naar het kind-proces. Dit maakt het mogelijk bevestiging te sturen als het kind-proces daarom vraagt.
 - Dit verschaft eenvoudige toegang tot de opdrachten. zoals pip, voor het eenvoudig direct installeren en verwijderen van afhankelijkheden in de context van het project van QGIS. 
 - Als de Console in de modus STDIN staat, zal het drukken op Ctrl+C het sub-proces afsluiten.
-- Affect the result of a command to a variable with the syntax `var = !cmd`
+- Beïnvloed het resultaat van een opdracht naar een variabele met de syntaxis `var = !cmd`
 
 ![image38](images/entries/6f4da5dd9d63b6c8e0914c4ad4e7e79ccdfea109.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Actie Code opnieuw opmaken voor codebewerkers
-A \"format code\" action has been added to the Python Console Editor which allows for the automated linting/ pretty printing of code in line with the capabilities of modern code editors.
+Een actie \"Code opmaken\" is toegevoegd aan de bewerker voor de Python-console die het geautomatiseerd linten/pretty afdrukken van code in lijn met de mogelijkheden van moderne codebewerkers mogelijk maakt.
 
 Aanvullende instellingen voor configuratie van deze actie omvatten:
 - Opmaken bij opslaan: indien ingeschakeld wordt de opmaak toegepast net voor het opslaan van het script
@@ -694,13 +694,13 @@ Aanvullende instellingen voor configuratie van deze actie omvatten:
 - Maximale regellengte: Beheer hoe de opmaak de regels zal laten doorlopen, en beheert de liniaal van d ebewerker
 
 De opties voor Opmaak maken een selectie mogelijk tussen de gereedschappen voor autopep8 of zwart linting en verschaffen de volgende aanvullende opties:
-- Level (autopep8 only) See [Autopep8 aggressiveness level](https://pypi.org/project/autopep8/#more-advanced-usage)
+- Niveau (alleen autopep8) Bekijk [Autopep8 aggressiveness level](https://pypi.org/project/autopep8/#more-advanced-usage)
 - Aanhalingstekens normaliseren (alleen zwart): Vervang alle enkele aanhalingstekens, indien mogelijk, door dubbele aanhalingstekens
 
 Bewerkingen voor sorteren worden verschaft met isort, wat het mogelijk maakt de geïmporteerde argumenten te sorteren in drie verschillende groepen:
-- standard library imports (re, os, sys, json, \...)
-- third-party modules (PyQt5, pandas, dateutil, \...)
-- first-party modules (qgis, processing, \...)
+- standaard import uit bibliotheek  (re, os, sys, json, \…)
+- modules van derde partijen (PyQt5, Pandas, dateutil, \…)
+- modules van eerste partijen (QGIS, Processing, \…)
 
 Deze bewerkingen zullen consistente ontwikkeling faciliteren in lijn met de beste voorbeelden uit de praktijk en de kwaliteit van de code verbeteren, consistentie, leesbaarheid, en operationele efficiëntie (speciaal indien gekoppeld aan systemen voor versiebeheer).
 
@@ -712,7 +712,7 @@ Voegt dezelfde schakelknop toe als die voor 3D-kaartvensters en attributentabell
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: HTML-code opnieuw opmaken voor codebewerkers
-Editors using the `QgsCodeEditorHTML` class will be able to use the code reformatting functionality to pretty print HTML data within QGIS. Note that this functionality will require the BeautifulSoup4 or lxml libraries to be installed within the python environment to parse the XML/ HTML data.
+Bewerkers die de klasse `QgsCodeEditorHTML` gebruiken, zullen in staat zijn de functionaliteit voor het opnieuw opmaken van de code te gebruiken voor pretty print van de HTML-gegevens in QGIS. Onthoud dat voor deze functionaliteit de bibliotheken BeautifulSoup4 of lxml moeten zijn geïnstalleerd in de omgeving Python om de gegevens van XML/ HTML te kunnen parsen.
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Belangrijke reparaties

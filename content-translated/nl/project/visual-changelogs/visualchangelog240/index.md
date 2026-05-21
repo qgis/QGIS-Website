@@ -104,7 +104,7 @@ HTML-frames in de Printvormgeving zijn verbeterd. Er is een nieuwe knop **Frame 
 
 ![image13](images/entries/792d6c3cfc682d2132caec8b6be0ce30c855e39f.webp)
 ## Plug-ins
-### Feature: Plug-in MetaSearch Catalogue Client
+### Mogelijkheid: Plug-in MetaSearch Catalogue Client
 MetaSearch is een plug-in voor QGIS om interactief te werken met metadata catalogus services, die de standaard OGC Catalogue Service voor het web (CSW) ondersteund. Deze plug-in verschaft een eenvoudige en intuïtieve benadering en gebruikersvriendelijke interface om catalogi voor metadata binnen QGIS te doorzoeken en is nu standaard opgenomen in het bronproduct van QGIS.
 
 ![image14](images/entries/a80155cfd652a9e83c5f2564e371357a92ae115f.webp)
@@ -113,7 +113,7 @@ MetaSearch is een plug-in voor QGIS om interactief te werken met metadata catalo
 We hebben een fantastische nieuwe renderer in QGIS 2.4. De renderer Shapeburst zal u in staat stellen polygonen te vullen met een kleurverloop dat zich uitstrekt van de lijnrand tot in het interieur van de polygoon. U kunt [hier](http://nyalldawson.net/2014/06/shapeburst-fill-styles-in-qgis-2-4/?utm_source=rss&utm_medium=rss&utm_campaign=shapeburst-fill-styles-in-qgis-2-4) meer lezen over **shapeburst**.
 
 ![image15](images/entries/1d85daf70119e7a58d5ef18ae5a0ac2daf18ff4f.webp)
-### Feature: Optie om plaatsing van markeringslijnen te verplaatsen
+### Mogelijkheid: Optie om plaatsing van markeringslijnen te verplaatsen
 Bij het gebruiken van een markeringslijn langs een rand van een lijn of polygoon, kunt u nu een **verschuiving** specificeren zodat de markeringslijn begint op een ingestelde afstand vanaf het begin van de lijn. Als een markeringslijn wordt ingesteld op de modus \"alleen op eerste hoekpunt\" of \"alleen op laatste hoekpunt\", dan zal deze verschuiving beheren hoe ver langs de lijn vanaf het hoekpunt de markering wordt geplaatst.
 
 ![image16](images/entries/884f1735cee30abc7024f6fc21756b8609770173.webp)

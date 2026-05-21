@@ -350,11 +350,11 @@ Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Vincent Cloarec)](http
 ### Mogelijkheid: Expressie voor Affiene transformatie
 Een functie affine_transform is toegevoegd aan de QGIS expressies.
 
-Deze mogelijkheid werd ontwikkeld door `Antoine Facchini <https://github.com/Koyaani>`__
+Deze mogelijkheid werd ontwikkeld door [Antoine Facchini](https://github.com/Koyaani)
 ### Mogelijkheid: Expressie voor Straight distance2d
 Een functie straight_distance2d is nu beschikbaar in QGIS expressies voor het ophalen van de directe / Euclidische afstand tussen het eerste en laatste punt van een object booggeometrie.
 
-Deze mogelijkheid werd ontwikkeld door `Antoine Facchini <https://github.com/Koyaani>`__
+Deze mogelijkheid werd ontwikkeld door [Antoine Facchini](https://github.com/Koyaani)
 ### Mogelijkheid: Expressie sinuosity  toegevoegd
 Een functie sinuosity is toegevoegd aan de QGIS expressies.
 
@@ -805,7 +805,7 @@ Bugs fixed by [Sandro Santilli](https://strk.kbt.io/)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.16 backport commit (GitHub) | Opmerking |
 | --- | --- | --- | --- | --- |
 | More const in geometry | Niet gerapporteerd / uitvoering | [PR #45217](https://github.com/qgis/QGIS/pull/45217) |  |  |
-| QgsFeature::setId improve documentation with a warning | [#44898](https://github.com/qgis/QGIS/issues/44898) | [PR #45189](https://github.com/qgis/QGIS/pull/45189) | [PR #45229](https://github.com/qgis/QGIS/pull/45229) |  |
+| QgsFeature::setId documentatie verbetert met een waarschuwing | [#44898](https://github.com/qgis/QGIS/issues/44898) | [PR #45189](https://github.com/qgis/QGIS/pull/45189) | [PR #45229](https://github.com/qgis/QGIS/pull/45229) |  |
 | Geometry Checker: Enlarge FeatureID | [#44250](https://github.com/qgis/QGIS/issues/44250) | [PR #45191](https://github.com/qgis/QGIS/pull/45191) | [PR #45229](https://github.com/qgis/QGIS/pull/45229) |  |
 | VertexTool. Fixes move vertex on Z layer if CRS are differents (with Vincent Cloarec) | Niet gerapporteerd | [PR #45020](https://github.com/qgis/QGIS/pull/45020) | Niet naar oudere versies. Nieuwe methoden geïntroduceerd. |  |
 | Fix Z/M dimension URI via DB Manager. | [#34894](https://github.com/qgis/QGIS/issues/34894) | [PR #45223](https://github.com/qgis/QGIS/pull/45223) | [PR #45304](https://github.com/qgis/QGIS/pull/45304) |  |

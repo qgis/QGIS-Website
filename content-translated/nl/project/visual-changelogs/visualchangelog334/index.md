@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: '2023-10-29'
+releaseDate: 29-10-2023
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.34
@@ -18,7 +18,7 @@ Wij brengen u QGIS 3.34, een belangrijke uitgave van het Project QGIS die signif
 
 Deze uitgave omvat een variëteit aan verbeteringen aan bestaande API's, expressies en gereedschappen, aanpassingen aan afdruklay-out, en verbeteringen aan de opties voor renderen van zowel context in 2D als in 3D.
 
-For a whirlwind tour of all the new functionalities introduced, you can view the highlight reel video on YouTube at <https://www.youtube.com/watch?v=LHFVo0edaXE>
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u de video met deze mogelijkheden bekijken op YouTube op <https://www.youtube.com/watch?v=LHFVo0edaXE>
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/LHFVo0edaXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
@@ -28,14 +28,14 @@ QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van don
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Cesium 3D-tegels
-Thanks to an ecosystem grant from the [Cesium](https://www.cesium.com/) project, QGIS now has support for loading in 3D content in the Cesium 3D Tiles format! Tiles can be loaded from either local or remote datasources (including the Cesium ion platform and the Google Earth photorealistic tiles), and are visible in both 2D and 3D map views. In 2D views users can control the appearance of tile content by styling in either their original textures or in a wireframe view of the tile geometries, and users also have control over the desired level of detail in both 3D and 2D views.
+Dankzij een gift van het ecosysteem van het project [Cesium](https://www.cesium.com), heeft QGIS nu ondersteuning voor het laden van 3D-inhoud in de indeling Cesium 3D Tiles! Tegels kunnen worden geladen vanuit ofwel lokale databronnen of databronnen op afstand (inclusief het Cesium ion platform en de Google Earth fotorealistische tegels), en zijn zichtbaar in zowel 2D- als in 3D-kaartweergaven. In 2D-weergaven kunnen gebruikers het uiterlijk beheren van de inhoud van de tegel door ze ofwel in hun originele texturen op te maken of in een weergave draadmodel van de geometrieën van de tegel. Gebruikers hebben ook beheer over het gewenste niveau van detail in zowel 3D- als 2D-weergaven.
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/lvl8zVZ8glY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://github.com/wonder-sk) en [Nyall Dawson](https://github.com/nyalldawson)
 ## Kaartgereedschap
-### Feature: Optional enforcement of \"dot\" as decimal separator for measure tool
-A new `Always use decimal point` checkbox option has been added to the Measure Tool. This option will ensure that measurements and coordinates are copied to the clipboard using a decimal point (dot) separator, even if the current locale uses a comma.
+### Mogelijkheid: Optioneel afdwingen van \"punt\" als decimaal scheidingsteken voor gereedschap Meten
+Een nieuwe optie keuzevak `Altijd decimale punt gebruiken` is toegevoegd aan het gereedschap Meten. Deze optie zal ervoor zorgen dat metingen en coördinaten worden gekopieerd naar het klembord met een decimale punt (dot) als scheidingsteken, zelfs als de huidige locale een komma gebruikt.
 
 Dit schakelt de mogelijkheid in om kommagescheiden (csv)-gegevens te kopiëren, zelfs in gevallen waar de gebruiker een komma gebruikt als het decimale scheidingsteken.
 
@@ -45,7 +45,7 @@ Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://gith
 ### Mogelijkheid: Accent weergeven op geïdentificeerde rasterpixels bij gebruiken van gereedschap Objecten identificeren
 QGIS geeft nu de geometrie van het resultaat van het geïdentificeerde object weer voor rasterpixels in het kaartvenster. Dit komt overeen met het bestaande gedrag van het gereedschap Objecten identificeren voor objecttypen vector, vectortegel, en puntenwolk.
 
-This is useful when a identifying a raster which has sections of similar colored pixels and it\'s difficult to visually determine the exact extent of a pixel.
+Dit is nuttig bij het identificeren van een raster dat gedeelten heeft met soortgelijk gekleurde pixels en het moeilijk is om visueel het exacte bereik van een pixel te bepalen.
 
 ![image2](images/entries/dc219caa150c9bbcb15aece90744f63e54ec25a1.webp)
 
@@ -74,32 +74,32 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Labels schakelen voor lagen vectortegel
 Gebruikers kunnen nu schakelen met labels voor lagen met vectortegels met het paneel voor opmaken van de laag met vectortegel en het contextmenu van de laag in de inhoudsopgave van het paneel Lagen, wat effectief de schakelmogelijkheden voor vectorlagen vervangt.
 
-This functionality is enabled by the addition of new functions to the `QgsVectorTileLayer` API by replicating the existing functionality on `QgsVectorLayer`.
+Deze functionaliteit wordt ingeschakeld door het toevoegen van nieuwe functies in de `QgsVectorTileLayer` API door het vervangen van de bestaande functionaliteit in `QgsVectorLayer`.
 
 ![image5](images/entries/9e04c9c98886edf1d34eeb9750dc8f5c94946b51.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Renderen
-### Feature: \"Sticky\" Map Decorations
-Dynamic map decorations are now rendered to a transparent overlay, preventing re-rendering of decoration objects (such as title or scale bar) during navigation. The `QgsMapDecoration` now also includes `hasFixedMapPosition` to fix a decoration to a geographic location.
+### Mogelijkheid: \"Plakkende\" kaartdecoraties
+Dynamische kaartdecoraties worden nu gerenderd op een doorzichtig overleg, wat het opnieuw renderen van objecten voor decoraties (zoals titel of schaalbalk) voorkomt tijdens navigeren. De `QgsMapDecoration` bevat nu ook `hasFixedMapPosition` om een decoratie vast te zetten op een geografische locatie.
 
 ![image6](images/entries/00e6bc11fa3025317740f955962ef50cc1b95336.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Profileren kaartrenderer toegevoegd
-The debugging/ development profiling tools have been extended with a new \"map render\" profile (accompanying the existing Startup and Project Load profiles).
+De gereedschappen voor debuggen/ ontwikkeling voor profileren zijn uitgebreid met een nieuw profiel \"kaart renderen\" (die de bestaande profielen Opstarten en Project laden komt vergezellen).
 
 Met dit gereedschap zijn gebruikers in staat pijnpunten te identificeren in het renderen van hun kaart en exact te bepalen welke lagen de lange duur van het opnieuw tekenen van de kaart veroorzaken.
 
 ![image7](images/entries/50fd809522d42944942ca7a059807f59fdcec5d2.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add choice of two different modes for \"Refresh Layer at Interval\"
-When using \"Refresh Layer at Interval\" on vector layers, previous versions of QGIS would simply redraw the layer (for animations etc.), without refreshing data from the data source.
+### Mogelijkheid: Keuze voor twee verschillende modi toegevoegd voor \"Laag bijwerken met interval\"
+Bij het gebruiken van \"Laag bijwerken met interval\" op vectorlagen, zouden eerdere versies van QGIS eenvoudigweg de laag opnieuw tekenen (voor animaties etc.), zonder de gegevens te vernieuwen vanuit de databron.
 
 Een nieuw widget is verschaft dat gebruikers in staat stelt de opties voor het bijwerken van de laag te selecteren overeenkomstig het door hen gebruikte gebruiksgeval:
-- \"Reload Data\": The layer will be completely refreshed. Any cached data will be discarded and re-fetched from the provider. This mode may result in slower map refreshes.
-- \"Redraw Layer Only\": This mode is useful for animations or when the layer style should be updated at regular intervals. Canvas updates are deferred in order to avoid refreshing multiple times if more than one layer has an automatic update interval set.
+- \"Gegevens opnieuw laden\": De laag zal volledig worden bijgewerkt. Alle gecachete gegevens zullen worden genegeerd en opnieuw worden opgehaald bij de provider. Deze modus zou kunnen resulteren in tragere vernieuwingen van de kaart.
+- \"Alleen laag opnieuw tekenen\": Deze modus is handig voor animaties of wanneer de stijl van de laag zal worden bijgewerkt met regelmatige intervallen. Bijwerken van het kaartvenster wordt uitgesteld om veelvuldig vernieuwen te vermijden indien meer dan één laag een interval heeft ingesteld voor automatisch bijwerken.
 
 ![image8](images/entries/e0b0d4561cf7963d9a16bef9f77ea8214fe15f7b.webp)
 
@@ -116,7 +116,7 @@ Deze functionaliteit is nuttig voor gebruikers die grote 3D-scenes gebruiken die
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://github.com/wonder-sk)
 ### Mogelijkheid: Ondersteuning voor boundingbox3d toegevoegd
-Additional API methods for relevant geometry classes are now available for `boundingBox3D` and `calculateBoundingBox3D`, as well as extensions to `boundingBoxIntersects` methods which will now support checking intersections between 3D bounding boxes.
+Aanvullende methoden voor de API voor relevante klassen voor geometrie zijn nu beschikbaar voor `boundingBox3D` en `calculateBoundingBox3D`, als ook uitbreidingen voor methoden `boundingBoxIntersects` die nu ondersteuning bieden voor het controleren op kruisingen van 3D-begrenzingsvakken.
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Afdruklay-outs
@@ -129,41 +129,41 @@ Dit verbetert ook de gebruikerservaring van bestaande functionaliteit voor selec
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Nummer pagina lay-out weergegeven in Pagina-eigenschappen
-When a layout has more than one page, the current page number will be displayed in the item properties header section using the format `page_number`/`pagecount`.
+Wanneer een lay-out meer dan een pagina heeft, zal het huidige paginanummer worden weergegeven in het kopgedeelte van de item-eigenschappen in de indeling `pagina_nummer`/`aantal pagina's`.
 
 ![image11](images/entries/367986f087f878b47fe1296fcd8143ef677b3430.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Automatisch openen van geëxporteerde lay-outs
-A new \"Open file after exporting\" checkbox option has been added to the export options for PDF, SVG, and Image output types. When selected this option will attempt to automatically open the output file once the export is completed.
+Een nieuwe optie met keuzevak \"Bestand openen na exporteren\" is toegevoegd aan de opties voor exporteren naar PDF, SVG, en afbeeldingstypen uitvoer. Selecteren van deze optie zal proberen om het uitvoerbestand automatisch te openen als het exporteren is voltooid.
 
-The application used to open the file will use the configured default application on the system based on type (using `QDesktopServices::openUrl`). This feature will leverage the user settings API to remember the selection for the active user profile.
+De gebruikte toepassing voor het openen van het bestand zal de geconfigureerde standaard toepassing voor het systeem gebruiken, gebaseerd op het type (met `QDesktopServices::openUrl`). Deze mogelijkheid zal de API van de gebruikersinstellingen benutten om de selectie te onthouden voor het huidige gebruikersprofiel.
 
 ![image12](images/entries/502d122401e26d6dca10146dbdb9ccd1b01e8bd3.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Expressies
 ### Mogelijkheid: Expressiefunctie voor richting toegevoegd
-A new `bearing` function has been added which computes the bearing angle (in radians) between two points.
+Een nieuwe functie `bearing` is toegevoegd die de hoek van de richting berekent (in radialen) tussen twee punten.
 
 De richting wordt bepaald in het opgegeven CRS en met de klok mee gemeten in de opgegeven ellipsoïde.
 
 ![image13](images/entries/a1d3176b8434f43bb248926df46c406f4b5f2625.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Add \"layer_crs_ellipsoid\"
-QGIS expressions now include a `layer_crs_ellipsoid` layer variable, as well as the `crs_ellipsoid` property available from the `layer_property` function. The value returned will be the ellipsoid acronym of the layer CRS.
+### Mogelijkheid: Toegevoegd \"layer_crs_ellipsoid\"
+Expressies van QGIS bevatten nu een variabele voor de laag `layer_crs_ellipsoid`, alsook de eigenschap `crs_ellipsoid` die beschikbaar is uit de functie `layer_property`. De teruggegeven waarde zal het acroniem voor de ellipsoïde van het laag-CRS zijn.
 
 ![image14](images/entries/25fa0e9a64d6d1ea6b22e0e9b29ced356bbc96c8.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ## Digitaliseren
-### Feature: Improve \"avoid overlap\" type awareness
-When digitizing features with the \"avoid overlap\" option, QGIS has improved the behavior of automatically coercing the feature type and includes more meaningful messages to notify users of the automated behaviours.
+### Mogelijkheid: Verbeterde type herkenning \"overlappen vermijden\"
+Bij het digitaliseren van objecten met de optie \"overlappen vermijden\", heeft QGIS het gedrag verbeterd voor het automatisch afdwingen van het type object en bevat meer betekenisvolle berichten om gebruikers in kennis te stellen van de geautomatiseerde gedragingen.
 
 Een voorbeeld voor het gebruik zou kunnen zijn het digitaliseren van een meerdelige polygoon in een doellaag met eendelige polygonen, die niet kan worden opgeslagen. QGIS zal nu automatisch alleen het grootste deel van de polygoon behouden, en gebruikers vragen om optioneel de aanvullende objecten te herstellen als eendelige polygonen.
 
-This prevents the digitizing of \"sliver\" polygons and frustrations with improper feature types.
+Dit voorkomt het digitaliseren van \"splinter\"-polygonen en frustraties met onjuiste typen objecten.
 
 ![image15](images/entries/e86392da95484a83eb7edbfd554526865d4195ff.gif)
 
@@ -194,23 +194,23 @@ Dit werd mogelijk gemaakt door Summer is getting warmer and warmer.
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Processing
 ### Mogelijkheid: Instelling Antialias voor rastertegel plug-in voor Processing
-A new \"Enable antialiasing\" parameter has been added to the \"Generate XYZ Tiles\" processing tool.
+Een nieuwe parameter \"Antialiasing inschakelen\" is toegevoegd aan het gereedschap \"XYZ-tegels maken\" van Processing.
 
 Deze optie zal standaard ingeschakeld zijn (vervangt het huidige gedrag) maar stelt gebruikers in staat de antialiasing voor kaartinhoud uit te schakelen.
 
 ![image18](images/entries/9c9b07222673e23caf2dcc73ff1db8a8f9257106.webp)
 
 Deze mogelijkheid werd ontwikkeld door [ASAI Hitoshi](https://github.com/hito-asa)
-### Feature: Create Grid row_index and col_index fields
-Fields for the `row_index` and `col_index` have been added to the output of the \"Create Grid\" processing algorithm. The fields are added to all outputs of type point, rectangle, and hexagon.
+### Mogelijkheid: Velden row_index en col_index voor Grid maken
+Velden voor `row_index` en `col_index` zijn toegevoegd aan de uitvoer voor het algoritme \"Grid maken\" van Processing. De velden zijn toegevoegd aan alle uitvoer voor de typen punt, rechthoek en hexagoon.
 
 Veldwaarden zijn integers waarvan de telling begint met 0 en verhoogd van links naar rechts (kolom-index) en van boven naar beneden (rij-index).
 
 ![image19](images/entries/54157595e9bf9c58b4b906ea28b3c335a737696b.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/Poulpator)
-### Feature: New \'Calculate expression\' algorithm for use in models
-The new \"Calculate expression\" algorithm will calculate the results of a QGIS expression and make the result available for use in other parts of the model.
+### Mogelijkheid: Nieuw algoritme \'Expressie berekenen\' om te gebruiken in modellen
+Het nieuwe algoritme \"Expressie berekenen\" berekent het resultaat van een expressie van QGIS en maakt het resultaat beschikbaar om te gebruiken in andere delen van het model.
 
 Het vermijdt de noodzaak om dezelfde expressie meerdere malen te moeten gebruiken in een model als hetzelfde resultaat meer dan eens moet worden gebruikt en verschaft aanvullende gevallen voor gebruik (zoals het genereren van een statische waarde tijdstempel om in het model te kunnen gebruiken).
 
@@ -223,17 +223,17 @@ QGIS maakt nu het converteren van 3D-tegelinhoud in indelingen GLTF en GLB naar 
 ![image21](images/entries/6c95d6382b9e6abe72607df57dfefb8a4d9e8442.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Port SAGA \"DTM Filter (slope-based)\" tool to a native QGIS algorithm
-The SAGA [DTM Filter tool](https://saga-gis.sourceforge.io/saga_tool_doc/8.1.0/grid_filter_7.html) has been ported to a native QGIS algorithm.
+### Mogelijkheid: Gereedschap SAGA \"DTM Filter (slope-based)\" geporteerd naar een eigen algoritme voor QGIS
+Het gereedschap SAGA [DTM Filter tool](https://saga-gis.sourceforge.io/saga_tool_doc/8.1.0/grid_filter_7.html) is geporteerd naar een eigen algoritme voor QGIS.
 
 ![image22](images/entries/740fdd036b19e5e0d2c13493d66e785fca89b46a.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Lijst recent geopend project leegmaken
-A \"Clear Recently Opened\" action is now listed at the bottom of the `Project → Open Recent` menu, which will remove every unpinned project from the menu.
+Een actie \"Lijst leegmaken\" is nu vermeld aan de onderzijde van het menu `Project → Recent geopend`, wat elk niet-vastgezet project uit het menu zal verwijderen.
 
-An additional context menu is also available to enable the ability to remove individual projects from the recent project list, as well as \"pin\" and \"unpin\" items.
+Een aanvullend contextmenu is ook beschikbaar om de mogelijkheid te hebben om ook individuele projecten uit de lijst met recent geopende projecten te verwijderen, zowel \"vastgezette\" als \"niet-vastgezette\" items.
 
 De status zal worden gesynchroniseerd tussen het menu Recent geopende projecten en het Welkomststcherm van QGIS.
 
@@ -241,7 +241,7 @@ De status zal worden gesynchroniseerd tussen het menu Recent geopende projecten 
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: OAUTH2 PKCE authorisatie-code
-An implementation of Proof Key for Code Exchange (PKCE, [RFC 7636](http://tools.ietf.org/html/rfc7636)) has been added for OAUTH2 [Authorization Code](https://oauth.net/2/grant-types/authorization-code/) flows, improving resilience to CSRF and code injection attacks.
+Een implementatie van Proof Key for Code Exchange (PKCE, [RFC 7636](http://tools.ietf.org/html/rfc7636)) is toegevoegd voor stromen van OAUTH2 [Authorization Code](https://oauth.net/2/grant-types/authorization-code/), wat weerbaarheid tegen CSRF en aanvallen met code-injectie vergroot.
 
 Dit werd mogelijk gemaakt door Comune di Roma
 
@@ -249,7 +249,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/e
 ### Mogelijkheid: Standaarden voor Processing instellen vanuit QGIS configuratiebestand
 QGIS ondersteunt nu de mogelijkheid om de standaardwaarden voor gereedschappen van de gebruikersinterface voor het QGIS Processing framewerk te configureren met parameters die zijn gespecificeerd in het bestand voor instellingen QGIS.ini.
 
-This allows for the configuration of user-specific or organization-wide default values for certain algorithms. For example, to set the default value of the GRID_SIZE (precision) parameter on the intersection algorithm, the following configuration may be added to the `QGIS/QGIS3.ini` in the active user profile directory root:
+Dit maakt het configureren van gebruikersspecifieke of organisatiebrede standaardwaarden voor bepaalde algoritmes mogelijk. Bijvoorbeeld voor het instellen van de standaardwaarde voor de (precisie-)parameter van de GRID_SIZE in het algoritme Kruising, kan de volgende configuratie worden toegevoegd aan `QGIS/QGIS3.ini` in de thuismap van het actieve gebruikersprofiel:
 
     [Processing]
     DefaultGuiParam\native%3Aintersection\GRID_SIZE=0.01
@@ -283,12 +283,12 @@ Om redenen van onderhoud is de interactieve shell voor de plug-in GRASS C++ Plug
 
 Het ligt in de lijn der verwachting dat de plug-in GRASS Processing Plugin prioritaire ontwikkeling zal krijgen en ondersteuning voor onderhoud zal worden doorgezet, en verschaffen van een interactieve shell voor GRASS is geen kritische functionaliteit voor QGIS zelf, maar meer iets dat gebruikers zelf extern kunnen beheren.
 
-Further details on the specifics of this feature cleanup can be found on the feature [Pull Request](https://github.com/qgis/QGIS/pull/53597).
+Meer specifieke details over het opruimen van deze mogelijkheid zijn te vinden in de mogelijkheid [Pull Request](https://github.com/qgis/QGIS/pull/53597).
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Programmeerbaarheid
 ### Mogelijkheid: Functie om runtime profiler modelinhoud als tekst te exporteren
-A new function has been added to allow for the export of the current runtime profiler (`QgsRuntimeProfiler`) model content as a multi-line text string.
+Een nieuwe functie is toegevoegd om het exporteren van de huidige runtime profiler (`QgsRuntimeProfiler`) modelinhoud als een teksttekenreeks met meerdere regels mogelijk te maken.
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Belangrijke reparaties
@@ -340,7 +340,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperativ
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/)
-### Feature: Bug fixes by Paul Blottiere (Hytech-imaging)
+### Mogelijkheid: Reparaties van problemen door Paul Blottiere (Hytech-imaging)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Fix segfault in coordinate transform | niet gerapporteerd | [PR #54609](https://github.com/qgis/QGIS/pull/54609) | N/B |

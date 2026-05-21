@@ -225,7 +225,7 @@ Acties voor het snel in- en uitschakelen van deze opties zijn ook beschikbaar.
 Dit werd mogelijk gemaakt door [Crowdfunding for raster and point clouds improvements](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis)
 
 Deze mogelijkheid werd ontwikkeld door [Lutra Consulting (Nedjima Belgacem)](http://www.lutraconsulting.co.uk)
-### Feature: 3D-as in 3D-kaartviewer
+### Mogelijkheid: 3D-as in 3D-kaartviewer
 Een 3D as-annotatie is toegevoegd aan de 3D-kaartviewer die het voor gebruikers mogelijk maakt hun zicht beter te oriënteren met hun gegevens.
 
 Deze verschillende aanvullingen omvatten besturingselementen en opties voor:
@@ -332,7 +332,7 @@ Als een gebruiker het automatisch openen van het dock heeft uitgeschakeld, dan k
 Dit werd mogelijk gemaakt door SevenCs GmbH
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road Consulting)](https://north-road.com)
-### Feature: Kaartgereedschap voor vormen geïntegreerd in de mogelijkheid Digitaliseren
+### Mogelijkheid: Kaartgereedschap voor vormen geïntegreerd in de mogelijkheid Digitaliseren
 De gereedschappen voor vormen zijn uitgebreid en geïntegreerd met de mogelijkheden uit de gereedschappen voor Digitaliseren, wat het mogelijk maakt de kaartgereedschappen te gebruiken voor bewerkingen van Digitaliseren.
 
 Dit omvat ondersteuning voor digitaliseren van items zoals:
@@ -357,7 +357,7 @@ Het paneel Geavanceerd digitaliseren bevat nu twee aanvullende zachte beperkinge
 
 Dit werd mogelijk gemaakt door Métropole Européenne de Lille \@Jean-Roc
 
-Deze mogelijkheid werd ontwikkeld door `Antoine Facchini <https://github.com/Koyaani>`__
+Deze mogelijkheid werd ontwikkeld door [Antoine Facchini](https://github.com/Koyaani)
 ## Gegevensbeheer
 ### Mogelijkheid: Een zoekvak voor \"filterregels\" toegevoegd aan de renderer voor vectortegels en widgets voor labelen
 Gebruikers kunnen nu de zichtbare regels filteren op een gedeelte van tekenreeksen van hun label, laag of filter. Dit kan enorm helpen bij het zoeken naar regels in complexe stijlen voor vectortegels.
@@ -390,7 +390,7 @@ Gebaseerd op [#41386](https://github.com/qgis/QGIS/pull/41386)
 Dit werd mogelijk gemaakt door de Deense QGIS gebruikersgroep.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road Consulting)](https://north-road.com)
-### Feature: Mogelijkheid voor beheren van velddomein voor Browser
+### Mogelijkheid: Mogelijkheid voor beheren van velddomein voor Browser
 Een nieuwe API is toegevoegd voor het beheren van velddomeinen via verbindingen met databases, en QGIS geeft deze functionaliteit weer in het paneel Browser.
 
 Deze functionaliteit wordt momenteel alleen weergegeven voor GeoPackages, maar ondersteuning voor andere providers zou in de toekomst ook potentieel weergegeven kunnen worden.

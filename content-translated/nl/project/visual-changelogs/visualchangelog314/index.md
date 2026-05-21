@@ -1118,7 +1118,7 @@ Een optionele voorwaardelijke expressie kan worden gespecificeerd om te beheren 
 Gesponsord door Fisel + König
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Algoritme Cellen GeenGegevens vullen toegevoegd
+### Mogelijkheid: Algoritme Cellen GeenGegevens vullen toegevoegd
 In de nieuwe versie van QGIS introduceren we een nieuw algoritme voor Processing voor het vullen van cellen GeenGegevens in een raster gegevensset met een constante numerieke invoer.
 
 Het algoritme scant een invoer raster gegevensset op cellen GeenGegevens en vult ze met het door de gebruiker gedefinieerde waarde voor vullen. Door dit te doen respecteert het algoritme het gegevenstype van het invoerraster, zodat bijv. getallen floating point zullen worden afgehandeld zoals toepasselijk is voor een raster integer. De resulterende gegevensset zal geen cellen GeenGegevens bevatten.

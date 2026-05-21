@@ -132,7 +132,7 @@ De optie \"Elk deel van een samengesteld object labelen\" was een van de weinige
 Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: \"Alle delen labelen\" beheren via het gereedschap Labeleigenschappen
+### Mogelijkheid: \"Alle delen labelen\" beheren via het gereedschap Labeleigenschappen
 We liegen niet als we zeggen dat QGIS 3.10 een liefdesbrief is voor het labelen van een kaart! Een andere nieuwe optie die we in deze versie hebben toegevoegd, is interactief beheer over het feit of alle delen van een object zouden moeten worden gelabeld via het gereedschap Labeleigenschappen.
 
 ![image14](images/entries/737cd2f8bc569ee9ad7df9aee02eec83b4e6facd.webp)

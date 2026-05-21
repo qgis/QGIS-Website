@@ -230,7 +230,7 @@ De manier waarop objecten uit een laag worden gelezen is ook verbeterd, wat mult
            print feature['mycolumn']
     
 ![image36](images/2013-09-06_09_28_08-untitled__routing_-_Sublime_Text_UNREGISTERED.png)
-### Feature: Compatibiliteit code met uitgaven versie 1.x
+### Mogelijkheid: Compatibiliteit code met uitgaven versie 1.x
 Omdat dit een major release betreft, is de API niet volledig compatibel met de voorgaande versies 1.x. In de meeste gevallen is het porten van de code vrij eenvoudig - u kunt om te beginnen [deze handleiding](https://github.com/qgis/QGIS/wiki/Python_plugin_API_changes_from_18_to_20) gebruiken als start. Ga naar de developer mailinglijst als u meer hulp nodig hebt.
 
 ![image37](images/Selection_021.png)

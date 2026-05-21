@@ -4,67 +4,67 @@ draft: false
 releaseDate: 23-02-2024
 section: project
 sidebar: true
-title: Changelog for QGIS 3.36
+title: Log met wijzigingen voor QGIS 3.36
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# Changelog for QGIS 3.36{#changelog336 }
+# Log met wijzigingen voor QGIS 3.36{#changelog336 }
 ![](images/projects/fc93f461b927dd4960936f3391cf00321f9552cc.png)
 
-Release date: 2024-02-23
+Datum uitgave: 23-02-2024
 
-The QGIS project continues to push the boundaries of open-source geospatial technology, as highlighted by the release of QGIS 3.36. The project continues to empower users to make even better spatial decisions with new features and improvements, and introduces a new core data provider for OGC SensorThings API data sources.
+Het project QGIS gaat door met het verleggen van grenzen van open-bron georuimtelijke technologie, zoals weer blijkt uit de uitgave van QGIS 3.36. Het project gaat door met het gebruikers in staat stellen nog betere ruimtelijke beslissingen te nemen met nieuwe mogelijkheden en verbeteringen, en introduceert een nieuwe brongegevensprovider voor OGC SensorThings API databronnen.
 
-About our release name: Windsor and Maidenhead borough council was one of the first UK local authorities to move to QGIS (at version 1.8!) back in 2010/11. It was at Windsor and Maidenhead that Simon Miles and Matt Travis started the UK QGIS user group. It even hosted the first ever UK user group meeting. Windsor and Maidenhead also contributed financial to many an QGIS plugin and was also a bronze sponsor.
+Over de naam van onze uitgave: Windsor and Maidenhead borough council was een van de eerste lokale autoriteiten in het VK om over te gaan op QGIS (met versie 1.8!) in 2010/11. Het was in Windsor and Maidenhead dat Simon Miles en Matt Travis de VK QGIS-gebruikersgroep begonnen. Het was zelfs de gastheer van de eerste bijeenkomst van de VK QGIS gebruikersgroep ooit. Windsor and Maidenhead heeft ook veel financieel bijgedragen aan vele QGIS plug-ins en was ook Bronzen sponsor.
 
-Among the exciting new features added to this release is a new "Movie Mode" for the temporal controller that facilitates the production of animated maps. This release also brings new functionalities for map tips (on Desktop and Server) and improvements to the growing collection of 3D functionality, giving users the power to take advantage of advanced data types, such as Meshes, Point Clouds, and 3D Tiles.
+Naast de fantastische nieuwe mogelijkheden die aan deze uitgave zijn toegevoegd, is er een nieuwe "Movie Mode" voor Tijdbeheer die het maken van geanimeerde kaarten mogelijk maakt. Deze uitgave brengt ook nieuwe mogelijkheden voor kaarttips (op Desktop en Server) en verbeteringen aan de steeds groeiende collectie 3D-functionaliteiten, die gebruikers de mogelijkheden geven voordeel te halen uit gevorderde gegevenstypen, zoals Mazen, Puntenwolken en 3D-tegels.
 
-For a whirlwind tour of all the new functionalities introduced, you can view the [highlight reel video on YouTube](https://www.youtube.com/watch?v=WS9W1fo9Aso).
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u deze mogelijkheden bekijken [in de video met hoogtepunten op YouTube](https://www.youtube.com/watch?v=q7O819lFKc4)
 
 [![](https://img.youtube.com/vi/WS9W1fo9Aso/0.jpg)](https://www.youtube.com/watch?v=WS9W1fo9Aso)
 
 QGIS is een inspanning van de gemeenschap en we willen ook nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier bij wilt dragen in het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een heel groot bedankt voor al onze sponsoren!
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Belangrijke wijzigingen
-### Feature: OTB Processing provider removed
-**Due to a lack of ongoing maintenance, we've made the difficult decision to remove the Orfeo ToolBox (OTB) Processing provider from QGIS. Any users, plugins or scripts which require this functionality will need to be modified accordingly.**
+### Mogelijkheid: OTB-provider voor Processing verwijderd
+**Wegens gebrek aan doorlopend onderhoud hebben we de moeilijke beslissing moeten nemen om de provider Orfeo ToolBox (OTB) voor Processing uit QGIS te verwijderen. Alle gebruikers, plug-ins of scripts die deze functionaliteit gebruikten, moeten dat overeenkomstig aanpassen.**
 
-Motivated members from the QGIS community are encouraged to create a 3rd party community maintained plugin to restore OTB support.
+Gemotiveerde leden uit de gemeenschap van QGIS worden aangemoedigd een 3e partij door de gemeenschap te onderhouden plug-in te maken om ondersteuning voor OTB te herstellen.
 ## Tijdbeheer
-### Feature: "Movie Mode" for the temporal controller
-We've added a brand new "Movie" mode to the temporal controller. This mode has been designed to facilitate creating animated movies from maps. Unlike the other temporal controller modes, while movie mode is activated no time-based filtering of data is performed.
+### Mogelijkheid: "Modus Film" voor Tijdbeheer
+We hebben een nagelnieuwe modus "Film" toegevoegd aan Tijdbeheer. Deze modus is ontworpen om het maken van geanimeerde films uit kaarten mogelijk te maken. Anders dan andere modi in Tijdbeheer wordt geen op tijd gebaseerd filteren van gegevens uitgevoerd in de modus Film.
 
-In movie mode, you can set the total number of frames for your movie and the animation will progress frame by frame for that number of frames, advancing the current map settings frame (and @frame\_number expression variable) at each step. You can then use animated symbols, or alter your symbology using the @frame\_number expression variable, to create dynamic, animated maps.
+In modus Film kunt u het totale aantal frames voor uw film instellen en de animatie frame na frame doorgaan voor dat aantal frames. Het verhoogt de instelling voor het frame van de huidige kaart (en de expressievariabele @frame_number) met elke stap. U kunt dan geanimeerde symbolen gebruiken, of uw symbologie wijzigen met de expressievariabele @frame_number, om dynamische, geanimeerde kaarten te maken.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Gebruikersinterface
-### Feature: Custom layer properties in map layer properties
-We've added display of custom layer properties for map layers within the layer properties information tab, making it easy for users to view any additional metadata and properties attached to their map layers.
+### Mogelijkheid: Aangepaste laageigenschappen in de laageigenschappen van de kaart
+We hebben een weergave van aangepaste laageigenschappen voor kaartlagen toegevoegd op de tab Informatie van de Laageigenschappen. Wat het voor gebruikers gemakkelijker maakt eventuele extra metadata en eigenschappen te bekijken die zijn verbonden met hun kaartlagen.
 
 ![](images/entries/393384efc22e1add7f41288a80b6e4bbd681b68d.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jorge Alexandre Delesderrier da Silva](https://github.com/jadsilva)
-### Feature: Easier project and image saving
-In 3.36, we've made QGIS a little bit cleverer in the way it handles saving of projects and images. The project type (.qgz, .qgs) or image format (.png, .jpg, .tif, etc.) is now (by default) determined by any file extension you've typed in the save dialog. This allows for a faster user experience when changing from one format to another, as you don't need to manually set an explicit format in advance via the format combo box!
+### Mogelijkheid: Gemakkelijker opslaan project en afbeelding
+In 3.36 hebben we QGIS wat slimmer gemaakt voor de manier waarop dat het opslaan van projecten en afbeeldingen afhandelt. Het type project (.qgz, .qgs) of afbeeldingsindeling (.png, .jpg, .tif, etc.) wordt nu (standaard) bepaald bij elke bestandsextensie die u in het dialoogvenster Opslaan intypt. Dat maakt een snellere ervaring voor de gebruiker mogelijk bij het wijzigen van de ene indeling naar een andere, omdat u niet vooraf expliciet een andere indeling hoeft in te stellen via het combinatievak voor de indeling!
 
 ![](images/entries/6585d31ab7870351c8b58c9bec57e36df50f3018.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin (OPENGIS.ch)](https://www.opengis.ch/)
 ## Symbologie
-### Feature: Control image height for raster fill symbol layers
-We've introduced a new setting for the "raster fill" symbol type, which allows you to control the width and height of the fill pattern independently. (Previously these settings were locked to each other). You're now able to create stretched raster fills in the horizontal or vertical directions, giving more flexibility for your custom symbol creation.
+### Mogelijkheid: Hoogte afbeelding beheren voor rastervullingsymboollagen
+We hebben een nieuwe instelling geïntroduceerd voor het symbooltype "rastervulling", die het voor u mogelijk maakt de breedte en hoogte van het vulpatroon onafhankelijk te beheren. (Eerder waren deze instellingen met elkaar verbonden). U kunt nu uitgerekte rastervullingen maken in horizontale of verticale richting, wat meer flexibiliteit geeft voor het maken van uw aangepaste symbolen.
 
 Dit werd mogelijk gemaakt door [North Road, met dank aan SLYR](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: New "Filled line" symbol layer type
-We've added a brand new line symbol type for "filled lines". Much like the older "Filled marker" symbol type offers for marker symbols, this option will render lines using **any** QGIS fill symbol. This means you can now render lines filled with gradients, line hatches, raster fills, and much more!
+### Mogelijkheid: Nieuw type symboollaag "gevulde lijn"
+We hebben een nagelnieuw type lijnsymbool toegevoegd voor de "gevulde lijnen". Het lijkt veel op wat het oudere symbooltype "Gevulde markering" biedt voor markeringssymbolen. Deze optie zal lijnen renderen met **elk** vullingssymbool van QGIS. Dat betekent dat u nu lijnen kunt renderen die zijn gevuld met kleurverlopen, lijnarceringen, rastervullingen, en nog veel meer!
 
 ![](images/entries/5117e44fbe7ec55216b8fd1242c2721a78032dc0.gif)
 
@@ -72,8 +72,8 @@ Dit werd mogelijk gemaakt door [North Road, met dank aan SLYR](https://north-roa
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Mazen
-### Feature: Mesh labeling
-In 3.36 we've added labeling support for mesh layers. Labels can be applied to mesh vertices, or mesh faces, and can take advantage of all the advanced formatting options and appearance settings that you get for vector labels. Labelling settings are available through layer properties dialog and the layer styling panel. Toggling mesh labels on and off can also be conveniently done through the layer panel's context menu.
+### Mogelijkheid: Labelen van lagen met mazen
+In 3.36 hebben we ondersteuning voor het labelen van lagen met mazen toegevoegd. Labels kunnen worden toegepast op punten van mazen, of zijden van mazen, en u kunt voordeel halen uit alle opties voor gevorderde opmaak en instellingen voor uiterlijk die beschikbaar zijn in het dialoogvenster Laageigenschappen en het paneel Laag opmaken. In-/uitschakelen van lagen met mazen kan ook handig worden gedaan met het contextmenu van het paneel Lagen.
 
 ![](images/entries/42674b6a42180aa567bf76ec53db917e191f4595.webp)
 
@@ -81,32 +81,32 @@ Dit werd mogelijk gemaakt door GÖTEBORGS STAD
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## 3D-objecten
-### Feature: Data defined color control for simple 3d line rendering
-You can now set a data-defined, dynamic color for 3D lines rendered using the "Render as simple 3D lines" option. This is extremely useful for visualising line features in 3D, eg displaying underground pipelines in different colors based on their classifications.
+### Mogelijkheid: Data-bepaald kleurbeheer voor eenvoudig 3D-lijn renderen
+U kunt nu een data-bepaalde, dynamische kleur instellen voor 3D-lijnen die worden gerenderd met de optie "Renderen als eenvoudige 3D-lijnen". Dit is extreem nuttig voor het visualiseren van objecten lijn in 3D. Bijvoorbeeld het weergeven van ondergrondse pijpleidingen in verschillende kleuren, gebaseerd op hun classificaties.
 
 ![](images/entries/609eca4c0ebaa0b4dbf12d0dc4f4fae3fab5dc29.webp)
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Improved "Phong" material and lighting
-The Phong shader is used as the default material for showing vector features in QGIS 3D views. For 3.36, this shader has been improved to better handle ambient and shininess parameters. Additionally, we've taken care to ensure that the exact same shading will apply regardless of the underlying geometry type (points, lines or polygons), and regardless of whether data defined symbol colors are in use. This gives users a much more predictable and easy-to-configure material for their 3D views.
+### Mogelijkheid: Verbeterd materiaal "Phong" en belichting
+De Phong-schaduwmaker wordt gebruikt als standaardmateriaal voor het weergeven van vectorobjecten in 3D-weergaven van QGIS. Voor 3.36 is deze schaduwmaker verbeterd om de parameters ambient en shininess beter af te handelen. Aanvullend hebben we ervoor gezorgd dat exact dezelfde schaduw zal worden toegepast, ongeacht het onderliggende type geometrie (punten, lijnen of polygonen). Ook ongeacht welke data-bepaalde gedefinieerde aangepaste kleuren gebruikt worden. Dat geeft gebruikers veel beter te voorspellen en gemakkelijk te configureren materiaal voor hun 3D-weergaven.
 
-For easier configuration of nicer-looking materials, we also added new controls for modifying the strength of the ambient, diffuse, and specular lighting contributions.
+Voor gemakkelijker configureren van beter uitziende materialen hebben we ook nieuwe besturingselementen voor het aanpassen van de bijdragen voor omgevingslicht, diffuus licht en gespiegeld licht.
 
 ![](images/entries/267232fa32fc1510a5c27c0364451699c1f415a1.webp)
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: "Physically based" metal rough material
-For even more beautiful 3D maps, we've added a new material choice for a "physically based rendering" (PBR) material. This material lets you define the base color of the surface, and how "metal" and "rough" it should appear. This material is simple to configure and get great results from, and is expected to become the default material in a future QGIS release.
+### Mogelijkheid: "Fysiek gebaseerd" metaal ruw materiaal
+Voor nog mooiere 3D-kaarten hebben we een nieuwe materiaalkeuze toegevoegd voor "fysiek gebaseerd renderen" (PBR) materiaal. Dit materiaal laat u de basiskleur van het oppervlak definiëren, en hoe "metaal" en "ruw" het eruit zou moeten zien. Dit materiaal is eenvoudig te configureren en er zijn goede resultaten mee te behalen. Het wordt verwacht het standaardmateriaal in een toekomstige uitgave van QGIS te worden.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Define 3D scene extents on 2D maps
-We added a shortcut action to the 3D map toolbar that allows users to quickly draw an extent limit for the scene on a 2D map.
+### Mogelijkheid: Definiëren van 3D-scènebereiken in 2D-kaarten
+We hebben een actie voor een sneltoets toegevoegd aan de werkbalk voor de 3D-weergave, die het voor gebruikers mogelijk maakt om snel een begrensd bereik voor de scène op een 2D-kaart te zetten.
 
 ![](images/entries/41d95a9ad7be81ca3c8dd95a47674b356d625f1b.gif)
 
@@ -114,122 +114,122 @@ Dit werd mogelijk gemaakt door Natural Resources Canada
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Puntenwolken
-### Feature: Size overrides for point cloud classification
-In QGIS 3.36 you can now override the default point size for discrete categories in both 2D and 3D views.
+### Mogelijkheid: Overschrijven grootte voor classificaties puntenwolken
+In QGIS 3.36 kunt u nu de standaardgrootte voor punten van afzonderlijke categorieën in zowel 2D- als 3D-weergaven overschrijven.
 
-A new "Size" column was added to the categories widget, which will appear blank when a category inherits the default point size but allows you to manually specify the size with numeric input. Setting the Size value to 0 for a category will reset it to use the layer's default point size.
+Een nieuwe kolom "Grootte" werd toegevoegd aan de widget met categorieën, die blanco zal zijn als een categorie de standaard puntgrootte erft, maar u in staat stelt om handmatig de grootte te specificeren met numerieke invoer. Instellen van de waarde Grootte op 0 voor een categorie zal die terugzetten naar de standaard puntgrootte voor die laag.
 
-You can also use the right-click context menu to set the point size for multiple selected categories at once.
+U kunt ook het contextmenu rechtsklikken gebruiken om de puntgrootte in één keer in te stellen voor meerdere geselecteerde categorieën tegelijk.
 
 ![](images/entries/1be03fcdc04fd2f382222b9de4c41a8528090b0d.webp)
 
 Dit werd mogelijk gemaakt door Natural Resources Canada
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
-### Feature: Render point clouds as a surface in 2D maps
-We've added a new option for 2D styling of Point Clouds that for "Render as a Surface (Triangulate)".
+### Mogelijkheid: Puntenwolken renderen als oppervlakte in 2D-kaarten
+We hebben een nieuwe optie toegevoegd voor opmaken in 2D van puntenwolken voor "Renderen als oppervlakte (trianguleren)".
 
-When enabled, QGIS will perform an on-the-fly Delaunay triangulation of the points in the current map view and render the layer as filled triangles instead of individual points. The color of each point is maintained and interpolated within each triangle.
+Indien ingeschakeld zal QGIS een directe Delaunay-triangulatie uitvoeren voor de punten in de huidige kaartweergave en de laag renderen als gevulde driehoeken, in plaats van als individuele punten. De kleur van elk punt wordt behouden en geïnterpoleerd in elke driehoek.
 
-Global map shading is also supported with the new option so that, when enabled, the elevation of points is retained and a rasterized instance of the triangles with interpolated elevations can be provided to the elevation map.
+Globale schauw voor de kaart wordt ook ondersteund met de nieuwe optie, zodat, indien ingeschakeld, de hoogte van punten wordt behouden en een gerasteriseerde instantie van de driehoeken met geïnterpoleerde hoogten kan worden gegeven aan de hoogtekaart.
 
-When "Render as a surface" is enabled, drawing order is ignored and all input points participate in the triangulation.
+Als "Renderen als oppervlakte" is ingeschakeld, wordt de tekenvolgorde genegeerd en alle invoerpunten nemen deel aan de triangulatie.
 
-We also added an option to filter large triangles (based on the maximum length of an edge of a triangle), which allows for visualizing data gaps, but the 2D rendering only provides filtering based on the horizontal length of triangles.
+We hebben ook een optie toegevoegd om grote driehoeken te filteren (gebaseerd op de maximumlengte van een rand van een driehoek), wat het mogelijk maakt gaten in gegevens te visualiseren, maar het 2D-renderen verschaft alleen filteren dat is gebaseerd op de horizontale lengte van driehoeken.
 
-Be sure to check out the feature [Pull Request](https://github.com/qgis/QGIS/pull/55332) on GitHub for a showcase of the new functionality in different modes and contexts.
+Bekijk zeker ook het [Pull Request](https://github.com/qgis/QGIS/pull/55332) voor de mogelijkheid op GitHub voor een voorbeeld van de nieuwe functionaliteit in verschillend emodi en contexten.
 
 ![](images/entries/cc7d5061c43b895106162fc314cbd6712ee8256c.webp)
 
 Dit werd mogelijk gemaakt door National Resources Canada
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
-### Feature: Faster point cloud rendering by caching decoded data blocks
-Want even faster point cloud rendering? Well, QGIS now supports rendering point clouds faster by using a cache for storing nodes which have already been decoded.
+### Mogelijkheid: Sneller renderen van puntenwolk door cachen van gedecodeerde gegevensblokken
+Wilt u sneller renderen van puntenwolken? Wel, QGIS ondersteunt nu het sneller renderen van puntenwolken, door een cache te gebruiken voor het opslaan van knopen die al zijn gedecodeerd.
 
-This optimisation avoids decompressing the same nodes multiple times when panning or zooming, especially when using compressed data sources such as LAZ formatted files.
+Deze optimalisatie vermijdt het meerdere keren decomprimeren van dezelfde knopen bij verschuiven of zoomen, speciaal bij het gebruiken van gecomprimeerde databronnen, zoals LAZ-opgemaakte bestanden.
 
-(A fixed size cache of 200MB is used and shared across all point cloud layers and canvases (2D, 3D, and Profile Plots).)
-
-Dit werd mogelijk gemaakt door Natural Resources Canada
-
-Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
-### Feature: Metadata preservation during COPC conversion
-The Untwine tool (which is responsible for conversions of point clouds to the COPC format within QGIS) has been updated to version 1.3. This includes various fixes and small enhancements. Among the enhancements, the conversion to COPC now preserves the following metadata from LAS/LAZ files:
-- Global encoding
-- Creation time (year+day)
-- XYZ offset
+(Een vaste grootte voor de cache van 200 MB wordt gebruikt en gedeeld over alle lagen voor putenwolken en kaartvensters (2D, 3D en profielplots).)
 
 Dit werd mogelijk gemaakt door Natural Resources Canada
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
-### Feature: Better handling of classification flags
-LAS/LAZ files may include four flags for each point (synthetic, key-point, withheld, overlap). In older QGIS releases, they have all been exposed in `ClassificationFlags` as a combined single value. This has been impractical when a user needs to use one of those flags for filtering or visualization.
+### Mogelijkheid: Behouden van metadata gedurende conversie naar COPC
+Het programma Untwine (dat verantwoordelijk is voor conversies van puntenwolken naar de indeling COPC in QGIS) is bijgewerkt naar versie 1.3. Dat omvat verschillende reparaties en kleine verbeteringen. Naast de verbeteringen behoudt de conversie naar COPC nu de volgende metadata uit bestanden LAS/LAZ:
+- Globale codering
+- Tijd maken (jaar+dag)
+- XYZ-verschuiving
 
-For version 3.36, we reworked things so that these flags are available as separate attributes both for visualization (eg using the Classification renderer) and for filtering in expressions. Accordingly, we've removed the older `ClassificationFlags` attribute.
+Dit werd mogelijk gemaakt door Natural Resources Canada
+
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+### Mogelijkheid: Verbeterde afhandeling van vlaggen voor classificatie
+Bestanden LAS/LAZ zouden vier vlaggen voor elk punt kunnen bevatten (synthetic, key-point, withheld, overlap). In oudere uitgaven van QGIS werden die allemaal weergegeven in `ClassificationFlags` als een gecombineerde enkele waarde. Dat is niet praktisch als een gebruiker een van die vlaggen nodig heeft om te filteren of om te visualiseren.
+
+Voor versie 3.36 hebben we die dingen opnieuw bewerkt, zodat deze vlaggen beschikbaar zijn als afzonderlijke attributen. Zowel voor visualisatie (bijv. met de renderer Classificatie) en voor filteren in expressies. In aansluiting daarop hebben we het oudere attribuut `ClassificationFlags` verwijderd.
 
 Dit werd mogelijk gemaakt door National Resources Canada
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Expressies
-### Feature: Alias of minimum/maximum for min/max in aggregates
-We've added some new aliases for arguments to the aggregate expression functions, so that "minimum" and "maximum" can be used instead of "min" and"max" for these functions.
+### Mogelijkheid: Alias van minimum/maximum voor min/max voor Samenvoegen
+We hebben enkele nieuwe aliassen voor argumenten toegevoegd aan de expressiefuncties voor samenvoegen, zodat "minimum" en "maximum" mogen worden gebruikt, in plaats van "min" en "max" voor deze functies.
 
 ![](images/entries/7f06f7f34b8a3fb756e8a982bb734d0439eadbdd.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Harrissou Sant-anna](https://github.com/DelazJ)
-### Feature: @counter variable for array\_foreach
-We've added a new "@counter" variable to the `array_foreach` function in expressions. Among other things, this lets you combine values across multiple array fields.
+### Feature: @counter variable for array_foreach
+We hebben een nieuwe variabele "@counter" toegevoegd aan de expressiefunctie `array_foreach`. Naast andere dingen laat dit u waarden combineren over meerdere arrayvelden.
 
 Voorbeeld:
 
 `array_foreach( "field_1", @element || ' ' || "field_2"[@counter] )`
 
 Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
-### Feature: Improved expression insertion
-To make QGIS 3.36 even more user-friendly, we've tweaked the "Insert/Edit Expression" behavior. Now,
-- If some text is selected and your selection is within an expression (i.e. between "\[%" and "%\]"), the expression editor will select the whole expression
-- If no text is selected, and your cursor is inside an expression, the whole expression is selected
-- Otherwise, the expression editor will open with your existing selection.
+### Mogelijkheid: Verbeterd invoeren expressie
+Om QGIS 3.36 nog gebruiksvriendelijker te maken, hebben we het gedrag voor "Expressie invoeren/bewerken" aangepast. Nu,
+- Als enige tekst is geselecteerd en uw selectie is binnen een expressie geschreven (d.i. tussen "[%" en "%]"), zal de expressiebewerker de gehele expressie selecteren
+- Als geen tekst is geselecteerd en uw cursor staat in een expressie, wordt de hele expressie geselecteerd
+- Anders zal de expressiebewerker openen met uw bestaande selectie.
 
-Additionally, we added a new "Insert/Edit Expression" button to the vector layer properties MapTip tab.
+Aanvullend hebben we een nieuwe knop "Expressie invoeren/bewerken" toegevoegd aan de tab Tonen (Kaarttips inschakelen) van de Laageigenschappen.
 
-This new expression editing behavior also applies to Print Layout labels, Titles, and Copyright decorations, as well as Annotation items.
+Dit nieuwe gedrag voor expressies bewerken is ook van toepassing op labels van Afdruklay-out, titels en decoraties Copyright, en ook op items van Annotatie.
 
 ![](images/entries/47a92c468b14da4ef7fc15ad131e52bb3ee4e477.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Gegevensbeheer
-### Feature: Toggle Selection in the Organize columns window
-We added a Toggle Selection button to the Organize Columns dialog to improve your ability to manage datasets with a large number of fields.
+### Mogelijkheid: Selectie wisselen in het venster Kolommen beheren
+We hebben een knop Selectie wisselen in het venster Kolommen beheren toegevoegd om u in staat te stellen gegevenssets met een grote hoeveelheid velden te beheren.
 
-The new Toggle Selection button (as well as the Deselect or Select All buttons) will only appear when there are more than 5 fields in a layer.
+De nieuwe knop Selectie wisselen (alsook de knoppen Alles verbergen of Alles weergeven) zal alleen verschijnen als er meer dan 5 velden in een laag staan.
 
 ![](images/entries/d42005a9561cdc035cfa20f034b7a33fc9829522.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/Poulpator)
 ## Processing
-### Feature: --skip-loading-plugins flag for qgis\_process
-The `qgis_process` command line interface tool benefits from a new `--skip-loading-plugins` argument. If specified, this can result in faster execution times for commands such as `qgis_process plugins`, which can now list the installed plugins \*\*without\*\* loading them.
+### Feature: vlag --skip-loading-plugins voor qgis_process
+Het programma voor de opdrachtregel `qgis_process` heeft baat bij een nieuw argument `--skip-loading-plugins`. Indien gespecificeerd kan dit resulteren in snellere uitvoertijden voor opdrachten als `qgis_process plugins`, die nu de geïnstalleerde plug-ins kan vermelden \*\*zonder\*\* ze te laden.
 
 Dit werd mogelijk gemaakt door [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Click to open output paths in processing logs
-A super-helpful new shortcut we added to 3.36 is that any output paths (such as file, folder, or HTML outputs) in the Processing log are now clickable, allowing you to directly open the containing folder and preselect the generated file!
+### Mogelijkheid: Klik om uitvoerpaden te openen in logs van Processing
+Een supernuttige nieuwe sneltoets die we aan 3.36 hebben toegevoegd, is dat eventuele uitvoerpaden (zoals bestand, map, of HTML-uitvoer) in het log van Processing nu aan te klikken zijn. Wat u in staat stelt om de betreffende map direct te openen en het gemaakte bestand vooraf te selecteren!
 
 ![](images/entries/52699edf93f7fb8710fe715ccc5482ac2f299c9c.webp)
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Vector coverage algorithms
-QGIS 3.36 introduces a number of new tools for working with vector coverage layers. "Vector coverages" are polygon layers where the features are expected to neighbour each other, without overlaps or gaps, such as administrative boundary layers. These new Processing algorithms expose tools for working with coverages, including:
-- **Validate coverage**: This algorithm analyzes a coverage to find places where the assumption of exactly matching edges is not met.
-- **Simplify coverage**: This algorithm applies a Visvalingam–Whyatt simplification to the edges in a coverage, while retaining a valid coverage (ie no edges will cross or touch after the simplification)
-- **Dissolve coverage**: This algorithm provides a heavily optimised approach for unioning polygons from a coverage layer, when compared against the standard Dissolve tools.
+### Mogelijkheid: Vector bedekkingsalgoritmes
+QGIS 3.36 introduceert een aantal nieuwe gereedschappen voor het werken met vectorbedekkingslagen. "Vectorbedekkingen" zijn polygonenlagen waarin verwacht wordt dat de objecten buren van elkaar zijn, zonder overlappingen of gaten, zoals lagen met administratieve grenzen. Deze nieuwe algoritmes voor Processing geven gereedschap weer voor het werken met bedekkingen, inclusief:
+- **Bedekking valideren**: Dit algoritme analyseert een bedekking om plaatsen te zoeken waar niet wordt voldaan aan de aanname van exact overeenkomende randen.
+- **Bedekking vereenvoudigen**: Dit algoritme past een vereenvoudiging Visvalingam–Whyatt toe op de randen van een bedekking, terwijl een geldige bedekking wordt behouden (d.i. randen zullen elkaar niet kruisen of raken na het vereenvoudigen).
+- **Bedekking samenvoegen**: Dit algoritme verschaft een enorm geoptimaliseerde benadering voor het verenigen van polygonen in een bedekkingslaag, vergeleken met de standaardgereedschappen Samenvoegen.
 
-These new tools rely on functionality from the GEOS geometry handling library. Our thanks go to the GEOS maintainers for making this work possible!
+Deze nieuwe gereedschappen zijn afhankelijk van de functionaliteit van de GEOS-bibliotheek voor afhandeling van geometrie. Onze dank gaat uit naar de onderhouders van GEOS om dit werk mogelijk te maken!
 
 ![](images/entries/c9fa268bf003676d082860bdc8f8bfe53bee66d8.webp)
 
@@ -240,25 +240,25 @@ These new tools rely on functionality from the GEOS geometry handling library. O
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Improved Export Layers to DXF algorithm
-We've introduced a number of new parameters to the "Export Layers to DXF" algorithm , to match the functionality of its non-Processing counterpart:
-- An extent parameter to filter features to be exported
-- A map theme parameter to override the layers' symbology when exporting
+### Mogelijkheid: Verbeterd exporteren van lagen naar DXF-algoritme
+We hebben een aantal nieuwe parameters geïntroduceerd voor het algoritme "Lagen naar DXF exporteren", om overeen te komen met zijn tegenhanger die niet voor Processing is:
+- Een parameter Bereik om de objecten te filteren die moeten worden geëxporteerd
+- Een parameter Kaartthema om de symbologie van de laag te overschrijven bij exporteren
 
-We've also fixed several shortcomings in the algorithm, including skipping layers within which no features were exported.
+We hebben ook enkele tekortkomingen in het algoritme gerepareerd, inclusief het overslaan van lagen waarvan geen objecten werden geëxporteerd.
 
 ![](images/entries/c151ba5e35152faf79d23401181bf21da3f46bca.webp)
 
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep (QGIS-CH)](https://www.qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin (OPENGIS.ch)](https://www.opengis.ch/)
-### Feature: Faster GRASS Provider startup
-We've reworked the backend of the Processing GRASS Provider, which helps reduce the startup times for this plugin (especially on Windows installations!). This is especially beneficial for users of the `qgis_process` tool, who will experience noticeably faster execution times for this tool.
+### Mogelijkheid: Sneller opstarten provider GRASS
+We hebben de backend van de provider GRASS voor Processing opnieuw bewerkt, wat helpt de tijdsperiode voor het opstarten van deze plug-in te verkleinen (speciaal op installaties van Windows!). Dit heeft specifiek voordelen voor de gebruikers van het gereedschap `qgis_process`. Zij zullen opmerkelijk snellere uitvoeringstijden zien voor dit gereedschap.
 
 Dit werd mogelijk gemaakt door [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Faster qgis\_process startup
+### Mogelijkheid: Sneller opstarten qgis_process
 For 3.36, we've substantially improved the startup speed of the `qgis_process` command. This was done by applying a variety of optimisations inside QGIS, such as lazy loading of the authentication and style library frameworks so that these frameworks are only initialised when required, and by reworking the logic for migrating user settings between different QGIS versions to avoid unnecessary work.
 
 Together, these improvements have reduced `qgis_process` startup times from multiple seconds to less than one second!
@@ -633,12 +633,12 @@ Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 | Fix running plugins are not restarted after upgrading | [#56277](https://github.com/qgis/QGIS/issues/56277) | [PR #56443](https://github.com/qgis/QGIS/pull/56443) | [PR #56475](https://github.com/qgis/QGIS/pull/56475) |
 | Regenerate primary keys for Split Lines by Length outputs | [#56486](https://github.com/qgis/QGIS/issues/56486) | [PR #56490](https://github.com/qgis/QGIS/pull/56490) | [PR #56494](https://github.com/qgis/QGIS/pull/56494) |
 | Fix saving " and \\ to ArcGIS REST sources | [#55946](https://github.com/qgis/QGIS/issues/55946) | [PR #56492](https://github.com/qgis/QGIS/pull/56492) |  |
-| Hundreds of fixes to PyQGIS for qt6 compatibility | N/B |  |  |
+| Honderden reparaties aan PyQGIS voor compatibiliteit met Qt6 | N/B |  |  |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Bug fixes by Martin Dobias (LutraConsulting)
+### Mogelijkheid: Reparaties van problemen door Martin Dobias (LutraConsulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | 3D Tiles dataset without textures not shaded correctly | [#55752](https://github.com/qgis/QGIS/issues/55752) | [PR #56185](https://github.com/qgis/QGIS/pull/56185) | N/B |
