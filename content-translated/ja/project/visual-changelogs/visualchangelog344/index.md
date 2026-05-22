@@ -4,12 +4,12 @@ draft: false
 releaseDate: '2025-06-20'
 section: project
 sidebar: true
-title: QGIS 3.44　変更履歴
+title: QGIS 3.44の変更履歴
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# QGIS 3.44　変更履歴{#changelog344 }
+# QGIS 3.44の変更履歴{#changelog344 }
 <img src="images/projects/3807b5d1851cc87bda040f637e1f4024bc11c58a.png" class="img-responsive img-rounded center-block" />
 
 Release date: 2025-06-20
@@ -114,44 +114,44 @@ This feature was developed by [Matej Bagar](https://github.com/Withalion)
 この機能は Cesium Ecosystem Grant の資金提供で開発されました
 
 本機能は Lutra Consulting & North Road によって開発されました
-### Feature: Large 3D scene support
-In earlier versions of QGIS, 3D map views would not behave correctly with scenes larger than 50-100 kilometers due to numerical precision issues - the camera would move erratically (to the point of being unusable) or features would jitter when zoomed in. This has been fixed now - for both local scenes and globe scenes, as outlined in [QEP 301](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301).
+### 機能: 大規模3Dシーンのサポート
+ 以前のバージョンのQGISでは、数値精度の問題により、50〜100キロメートルを超えるシーンで3Dマップビューが正しく動作しませんでした。カメラが不規則に動いたり（使用不能になるほど）、ズームイン時に地物がちらついたりしていました。 [QEP 301](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301) に概説されているように、ローカルシーンと地球儀シーンの両方でこの問題が修正されました。
 
 この機能は Cesium Ecosystem Grant の資金提供で開発されました
 
 本機能は Lutra Consulting & North Road によって開発されました
 ## 点群
-### Feature: Update pdal_wrench to v1.2
-This provides:
-- Improved support of Virtual Point Clouds (VPC) in processing algorithms
-- The possibility to output directly to Cloud Optimized Point Cloud (COPC) for various formats
+### 機能: pdal_wrenchをv1.2に更新
+これにより以下が提供されます:
+- プロセッシングアルゴリズムにおける仮想ポイントクラウド（VPC）サポートの改善
+- さまざまな形式からCloud Optimized Point Cloud（COPC）への直接出力が可能に
 
-See the [pdal_wrench changelog](https://github.com/PDAL/wrench/releases/tag/v1.2) for more details on other improvements.
-
-この機能は Landesamt für Vermessung und Geoinformation Vorarlberg によって資金提供されました
-
-This feature was developed by [Jan Caha](https://github.com/JanCaha)
-### Feature: Allow COPC output for PDAL Algorithms
-By leveraging the upgraded pdal_wrench dependency, PDAL Algorithm outputs can be generated as Cloud Optimized Point Clouds
+その他の改善点の詳細については [pdal_wrench changelog](https://github.com/PDAL/wrench/releases/tag/v1.2) を参照してください。
 
 この機能は Landesamt für Vermessung und Geoinformation Vorarlberg によって資金提供されました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
-### Feature: Automatic utilization of COPC index files in processing tools
-If a COPC file has an index available, QGIS will now automatically utilize it by default when performing processing operations. This will make some operations faster (e.g. clip).
+### 機能: PDALアルゴリズムでのCOPC出力を可能に
+アップグレードされたpdal_wrench依存関係を活用することで、PDALアルゴリズムの出力をCloud Optimized Point Cloudとして生成できるようになりました。
 
 この機能は Landesamt für Vermessung und Geoinformation Vorarlberg によって資金提供されました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
-### Feature: Point cloud editing
-It is now possible to edit point cloud layers in the 3D map views. Users can pick which attribute to modify, the target value and then interactively select points that should be modified.
+### 機能: プロセッシングツールでのCOPCインデックスファイルの自動活用
+COPCファイルにインデックスが利用可能な場合、QGISはプロセッシング操作時にデフォルトで自動的にそれを活用するようになりました。これにより一部の操作（クリップなど）が高速化されます。
 
-There are several map tools to select points for editing:
+この機能は Landesamt für Vermessung und Geoinformation Vorarlberg によって資金提供されました
+
+This feature was developed by [Jan Caha](https://github.com/JanCaha)
+### 機能: ポイントクラウドの編集機能
+3Dマップビューでポイントクラウドレイヤーを編集できるようになりました。ユーザーは変更する属性とターゲット値を選択し、変更するポイントをインタラクティブに選択できます。
+
+編集するポイントを選択するためのマップツールが複数あります:
 - ポリゴンによる選択
 - ブラシによる選択
-- Select Above/Below Line
+- 上方/下方 ラインによる選択
 
-Users can set up filtering of edited points using QGIS expressions, so that only some points get their attribute value modified.
+ユーザーはQGIS式を使用して編集ポイントのフィルタリングを設定できるため、一部のポイントのみ属性値を変更することができます。
 
 <div class="col-lg-8 col-md-offset-1">
 
@@ -166,7 +166,7 @@ Users can set up filtering of edited points using QGIS expressions, so that only
 # An error has occurred.{#changelog344 }
 <div class="submessage">
 
-<a href="https://www.youtube.com/watch?v=TRxW-g0HYjU" target="_blank">Watch this video on www.youtube.com</a> or enable JavaScript if it is disabled in your browser.
+<a href="https://www.youtube.com/watch?v=TRxW-g0HYjU" target="_blank"> video on www.youtube.com を参照して下さい</a> あなたのブラウザーで利用できない場合は　JavaScriptを有効にしてください。
 
 </div>
 
@@ -178,12 +178,12 @@ Users can set up filtering of edited points using QGIS expressions, so that only
 
 この機能は Septima, Klimadatastyrelsen からの資金提供で開発されました
 
-This feature was developed by Lutra Consulting
+この機能は Lutra Consulting によって開発されました
 ## 印刷レイアウト
-### Feature: Add auto-wrap after setting for layout legends
-The auto-wrap setting allows legend text to be automatically wrapped after a fixed line length (set in millimeters).
+### 機能: レイアウト凡例への自動折り返し設定の追加
+自動折り返し設定により、凡例テキストを固定の行の長さ（ミリメートル単位で設定）で自動的に折り返すことができます。
 
-This can be used to prevent excessive widths on auto-generated legends.
+これにより、自動生成された凡例が過度に横長になることを防ぐことができます。
 
 <img src="images/entries/ec81517776eea3e38142ca38436789fbdb9e7f9a.png" class="img-responsive img-rounded" />
 
@@ -191,33 +191,33 @@ This can be used to prevent excessive widths on auto-generated legends.
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## 計算式
-### Feature: Add repeat function and reverse variant for strings
-New expressions include:
-- A new 'repeat' function, which repeats a string a specified number of times
-- A string variant for 'reverse' that allows the reversing of strings
+### 機能: 文字列用のrepeat関数とreverseバリアントの追加
+新しい式には以下が含まれます:
+- 新しい  'repeat'  関数で文字列を指定した回数繰り返すことができます
+-  'reverse' 文字列バリアントで文字列を逆順にできます
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Expression functions to create CRS from string definition and to get authid from CRS
-New expression functions have been added that support the management of coordinate reference systems, namely:
-- **crs_from_text**: Creates a coordinate reference system from a string definition. The string definition can be represented using a CRS code in `auth:id` format, a WKT definition, or a PROJ string definition of the CRS.
-- **crs_to_authid**: Returns the identifier string for a coordinate reference system in the format `authority:id`, e.g., `EPSG:4326`.
+### 機能: 文字列定義からCRSを作成し、CRSからauthidを取得するための式関数
+座標参照系の管理をサポートする新しい式関数が追加されました:
+- **crs_from_text**: 文字列定義から座標参照系を作成します。文字列定義は `auth:id` 形式のCRSコード、WKT定義、またはCRSのPROJ文字列定義で表すことができます。
+- **crs_to_authid**: 座標参照系の識別子文字列を `authority:id` 形式（例：EPSG:4326）で返します。
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 ## デジタイズ
-### Feature: Add merge policies
-Similar to the already existing Split and Duplicate "policies", QGIS now supports Merge Policies, which can be configured to determine the initial values in the Merge Features dialog.
+### 機能: マージポリシーの追加
+既存の分割および複製の "ポリシー" と同様に、QGISで地物の結合ダイアログの初期値を決定するように設定できるマージポリシーがサポートされるようになりました。
 
-Policies can be set per field in the Attributes Form of the Layer Properties dialog, under the "Policies" section of the field configuration.
+ポリシーはレイヤープロパティダイアログの属性フォームで、フィールド設定の "ポリシー" セクションにてフィールドごとに設定できます。
 
-Policy methods include:
-- Sum: (Numeric fields only) Sum of values
-- Geometry Weighted: (Numeric fields only) Uses weighted average by geometry
-- Default Value: Uses the default value set in QGIS
-- Unset Field: Clears the field and uses the default value from the data provider (if it exists). If no value is specified, the value from the first feature is used (current default)
-- Largest Geometry: Uses the value from the feature with the biggest geometry (determined by length (line types), area (polygon types), number of parts (multipoint types))
-- Minimum Value: (Numeric fields only) Lowest value
-- Maximum Value: (Numeric fields only) Highest value
-- Set to Null: Sets the value of the field for the feature to NULL
+ポリシーメソッドには以下のものがあります:
+- 合計を使う: (数値フィールドのみ) 値の合計
+- ジオメトリ加重平均を使う: (数値フィールドのみ) ジオメトリの加重平均を使う
+- デフォルト値を使う:  QGISで設定されているデフォルト値を使う
+- 値を削除: フィールドをクリアし、データプロバイダーのデフォルト値（存在する場合）を使用します。値が指定されていない場合は、最初の地物の値が使用されます（現在のデフォルト）
+- 最大地物の価を使う: 最大のジオメトリを持つ地物（ラインタイプは長さ、ポリゴンタイプは面積、マルチポイントタイプはパーツ数で判定）の値を使用します。
+- 最小値を使う: (数値フィールドのみ) 最小値
+- 最大値を使う: (数値フィールドのみ) 最大値
+- NULLに設定: 地物のフィールド値をNULLに設定します。
 
 <img src="images/entries/544229ddb1a9eb37b3deacd955241731f8aa4c59.png" class="img-responsive img-rounded" />
 
@@ -225,20 +225,20 @@ This feature was funded by the National Land Survey of Finland.
 
 This feature was developed by [Juho Ervasti](https://github.com/JuhoErvasti)
 ## データ管理
-### Feature: Use HEIGHT_AVERAGE from RPC when available
-QGIS can now more accurately position satellite images, especially those from DIMAP / Pleiades NEO products.
+### 機能: RPCが利用可能な場合のHEIGHT_AVERAGEの使用
+QGISが衛星画像（特にDIMAP / Pleiades NEO製品）をより正確に位置合わせできるようになりました。
 
-This improvement means that these types of satellite images will be displayed in their correct geographical location with greater precision, even without additional elevation data.
+この改善により、追加の標高データがない場合でも、これらの種類の衛星画像がより高い精度で正確な地理的位置に表示されるようになります。
 
 <img src="images/entries/6dac68ebcbe251181b8b878ca25e96bee1bf2b33" class="img-responsive img-rounded" />
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
-### Feature: Allow field customisation when importing db tables
-The database table import dialog has been expanded to include a new field mapping section, which gives users control over the fields in the created table.
+### 機能: DBテーブルのインポート時のフィールドカスタマイズを可能に
+データベーステーブルのインポートダイアログに新しいフィールドマッピングセクションが追加され、作成されるテーブルのフィールドをユーザーが制御できるようになりました。
 
-Users can rename, set the exact destination field types, and tweak the source expression for each output field.
+ユーザーは各出力フィールドの名前変更、正確な出力先フィールドタイプの設定、およびソース式の調整が可能です。
 
-Fields can also be excluded from the import, or new fields created that don't exist in the source table.
+フィールドをインポートから除外したり、ソーステーブルに存在しない新しいフィールドを作成したりすることもできます。
 
 <img src="images/entries/100dca954811ba2396b0fa2fa7edbbaec32dadb0" class="img-responsive img-rounded" />
 
@@ -430,9 +430,9 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Improved project management for PostgreSQL stored Projects
 QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
 - プロジェクト名を変更
-- オブジェクトを削除
-- オブジェクトを複製
-- Move Project to Schema
+- プロジェクトの削除
+- プロジェクトを複製
+- プロジェクトのスキーマへの移動
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />
 

@@ -101,7 +101,7 @@ Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https:/
 Maakt expressies mogelijkzoals:
 - array(1,2,3)\[0\] -\> 1
 - array(1,2,3)\[2\] -\> 3
-- array(1,2,3)\[-1\] -\> 3 (Python style, negative indices count from end of array)
+- array(1,2,3)\[-1\] -\> 3 (Python-stijl, negatieve indexen tellen vanaf het einde van de array)
 - array(1,2,3)\[-3\] -\> 1
 - map(\'a\',1,\'b\',2)\[\'a\'\] -\> 1
 - map(\'a\',1,\'b\',2)\[\'b\'\] -\> 2

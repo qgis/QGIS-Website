@@ -4,12 +4,12 @@ draft: false
 releaseDate: 26-10-2018
 section: project
 sidebar: true
-title: Changelog for QGIS 3.4
+title: Log met wijzigingen voor QGIS 3.4
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# Changelog for QGIS 3.4{#changelog34 }
+# Log met wijzigingen voor QGIS 3.4{#changelog34 }
 ![image0](images/entries/splash34vs.webp)
 
 Datum uitgave 26-10-2018

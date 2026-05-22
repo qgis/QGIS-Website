@@ -259,33 +259,33 @@ Dit werd mogelijk gemaakt door [Research Institute for Nature and Forest (INBO)]
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Sneller opstarten qgis_process
-For 3.36, we've substantially improved the startup speed of the `qgis_process` command. This was done by applying a variety of optimisations inside QGIS, such as lazy loading of the authentication and style library frameworks so that these frameworks are only initialised when required, and by reworking the logic for migrating user settings between different QGIS versions to avoid unnecessary work.
+Voor 3.36 hebben we de opstartsnelheid van de opdracht `qgis_process` substantieel verbeterd. Dat werd gedaan door een variëteit aan optimalisaties toe te passen binnen QGIS, zoals het lui laden van de bibliotheekframeworks voor authenticatie en stijl, zodat deze frameworks alleen worden geïnitialiseerd als dat nodig is. En door de logica voor de gebruikersinstellingen tussen de verschillende versies van QGIS opnieuw te bewerken om onnodig werk te vermijden.
 
-Together, these improvements have reduced `qgis_process` startup times from multiple seconds to less than one second!
+Samen hebben deze verbeteringen de opstarttijden voor `qgis_process` teruggebracht van enkele seconden tot minder dan een seconde!
 
 Dit werd mogelijk gemaakt door [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Opties voor toepassing en projecten
-### Feature: "localhost" option for OAuth2 Redirects
-Some OAuth2 providers, like Microsoft Sharepoint, require specific redirect hosts for security reasons. They may not accept the standard "http://127.0.0.1" redirect, but instead allow only "https://127.0.0.1" or "http://localhost".
+### Mogelijkheid: Optie "localhost" voor OAuth2 doorverwijzingen
+Sommige providers voor OAuth2, zoals Microsoft Sharepoint, vereisen specifieke hosts voor doorverwijzingen om redenen van beveiliging. Ze zouden de standaarddoorverwijzing "http://127.0.0.1" niet kunnen accepteren, maar staan in plaats daarvan alleen "https://127.0.0.1" of "http://localhost" toe.
 
-To ensure compatibility with these providers without the complexity of setting up HTTPS, we added a new option to use "localhost" as the redirect host for OAuth2 authentication.
+Om de compatibiliteit met deze providers te verzekeren zonder de complexiteit van het instellen van HTTPS, hebben we een nieuwe optie toegevoegd om "localhost" te gebruiken als de host voor doorverwijzingen voor authenticatie met  OAuth2.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Serial port sensor baudrate selection
-For 3.36 you can now customize the connection speed (baud rate) to use for serial port sensors. Previously, this parameter was hardcoded at 9600 baud, limiting compatibility with various sensor types, such as NMEA sensors requiring 4800 baud. You can now connect to a wider array of sensors by adjusting the baud rate to meet specific requirements.
+### Mogelijkheid: Selecteren baudrate voor sensor van seriële poort
+Voor 3.36 kunt u nu de verbindingssnelheid (baudrate) aanpassen om te gebruiken voor sensoren voor de seriële poort. Eerder was deze parameter hard gecodeerd op 9600 baud, wat de compatibiliteit voor verscheidene typen sensoren beperkte, zoals sensoren van NMEA die 4800 baud vereisen. U kunt nu een breder bereik aan sensoren verbinden door de baudrate aan te passen aan specifieke vereisten.
 
 ![](images/entries/5c594b33da01255f2c3b2b126ee2221ff484fc6f.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jorge Tornero](https://github.com/jtornero)
 ## Browser
-### Feature: Open layers with Datasource Manager from browser
-We've introduced a new option in the QGIS browser context menu for "Open with Datasource Manager...". This option is available for layers which use the OGR provider (including GPKG sources), GDAL provider (raster layers), and Spatialite layers. When activated, a dialog will open on the data source tab of the layer properties, with relevant field values prepopulated to open the layer directly in QGIS, which allows you to set more comprehensive file opening options directly from the browser.
+### Mogelijkheid: Lagen openen met Databronnen beheren vanuit browser
+We hebben een nieuwe optie geïntroduceerd in het contextmenu voor de browser van QGIS voor "Openen met Databronnen beheren…". Deze optie is beschikbaar voor lagen die de provider OGR gebruiken (inclusief GPKG-bronnen), de provider GDAL (rasterlagen) en lagen van SpatiaLite. Indien geactiveerd, zal een dialoogvenster openen op de tab Databronnen van de Laageigenschappen, met relevante veldwaarden vooraf ingevuld om de laag direct te openen in QGIS. Wat u in staat stelt meer uitgebreide opties voor het openen direct in te stellen vanuit de browser.
 
-This functionality brings with it the `ConfigureFromUri` method which has been developed for the Python and C++ APIs. This method will enable source selection widgets to open and configure the data source manager directly from a data source URI, allowing the development of more sophisticated data loading options such as within plugins and when using the Change Data Source utility.
+Deze functionaliteit brengt de methode `ConfigureFromUri` met zich mee die is ontwikkeld voor de API's van Python en C++. Deze methode zal widgets voor het selecteren van bronnen openen en Databronnen beheren direct configureren vanuit een URI naar een databron. Wat het ontwikkelen van meer ingewikkelde opties voor het laden van gegevens mogelijk maakt, zoals binnen plug-ins en bij het gebruiken van de mogelijkheid Databron wisselen.
 
 ![](images/entries/b4ae363066776c62fe90d2dd926089f7a764d37f.gif)
 
@@ -293,24 +293,24 @@ Dit werd mogelijk gemaakt door NOAA
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Gegevensproviders
-### Feature: SensorThings Data Provider
-For version 3.36 we've introduced a brand new core data provider for OGC SensorThings API data sources.
+### Mogelijkheid: Gegevensprovider SensorThings
+Voor versie 3.36 hebben we een nagelnieuwe brongegevensprovider geïntroduceerd voor OGC SensorThings API-databronnen.
 
-The [SensorThings API](https://docs.ogc.org/is/15-078r6/15-078r6.html) is an OGC specification for Internet of Things sensors which complements existing communication protocols within the IoT ecosystem.
+De [SensorThings API](https://docs.ogc.org/is/15-078r6/15-078r6.html) is een OGC-specificatie voor sensoren voor Internet of Things, die bestaande communicatieprotocollen binnen het ecosysteem van het IoT aanvullen.
 
-This functionality was developed in line with [QEP 257](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/257) and introduces new panels within the QGIS Browser, Data Source Manager, and Layer Properties Source tab for users to configure connections to SensorThings data sources.
+Deze functionaliteit werd ontwikkeld in lijn met [QEP 257](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/257) en introduceert voor gebruikers nieuwe panelen binnen de QGIS Browser, Databronnen beheren en de tab Bronnen van de Laageigenschappen om verbindingen te configureren naar databronnen van SensorThings.
 
-We've taken care to ensure that SensorThings data sources are loaded in the most optimised way possible, providing an streamlined, user-friendly way to load SensorThings data into your QGIS projects. This is just the beginning though, and we've more functionality and improvements planned for access to SensorThings sources in QGIS 3.38!
+We hebben ervoor gezorgd dat de databronnen van SensorThings op de meest geoptimaliseerde manier mogelijk worden geladen. Door een gestroomlijnde, gebruiksvriendelijke manier te verschaffen om gegevens van SensorThings in uw projecten van QGIS te laden. Dit is echter slechts het begin, en we hebben meer functionaliteit en verbeteringen gepland voor toegang tot bronnen van SensorThings in QGIS 3.38!
 
 ![](images/entries/3802b455a5bdad53b1c7b8e9a7877b3c5988106f.webp)
 
 Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en), French PEPR OneWater - Eau Bien Commun ([https://www.onewater.fr/en](https://www.onewater.fr/en), ANR-22-PEXO-0009, onder het Future Program France 2030) en [Water4All Partnership](https://www.water4all-partnership.eu/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Support for WFS documents with complex feature schemas
-We enhanced the WFS Provider to add support for complex feature schemas. The implementation exposes properties of complex WFS types as JSON content, converted from their original XML representations.
+### Mogelijkheid: Ondersteuning voor documenten van WFS met complexe objectschema's
+We hebben de provider WFS verbeterd om ondersteuning toe te voegen voor schema's van complexe objecten. De implementatie geeft eigenschappen van complexe typen WFS weer als inhoud voor JSON, geconverteerd vanuit hun originele weergaven in XML.
 
-For more details, see the [QGIS Enhancement Proposal](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/277).
+Voor meer details, bekijk het [QGIS voorstel voor verbeteringen](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/277).
 
 ![](images/entries/587b31f23c77cdbd1589932f716759d3c2d3c015.webp)
 
@@ -318,130 +318,130 @@ Dit werd mogelijk gemaakt door [Duitse QGIS gebruikersgroep](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
 ## QGIS Server
-### Feature: WMS GetMap in PDF Format
-QGIS Server will now support responses in PDF format for GetMap requests.
+### Mogelijkheid: WMS GetMap in indeling pdf
+QGIS Server zal nu antwoorden ondersteunen voor de indeling pdf voor verzoeken GetMap.
 
 Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
-### Feature: QGIS Server Properties Tab for Vector Tile Layers
-The Layer Properties Dialog for Vector Tile layers will now include a section for editing the QGIS Server layer settings, providing the ability to configure layer-specific settings such as shortname, abstract, and other metadata.
+### Mogelijkheid: Tab Eigenschappen QGIS Server voor vectortegellagen
+Het dialoogvenster Laageigenschappen voor vectortegellagen bevat nu een gedeelte voor het bewerken van de eigenschappen van de laag van QGIS Server, die de mogelijkheid verschaft laagspecifieke instellingen, zoals verkorte naam, abstract en andere metadata te configureren.
 
 ![](images/entries/4dd2ce2af31695f8e917b037c7dfcaaa798dd575.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Sandro Mani](https://github.com/manisandro)
-### Feature: GetLegendGraphics JSON rule
-We've added a new `SHOWRULEDETAILS` parameter for WMS services, which will append a **rule** item in the legend entry. The rule describes the filter expression used on the respective layer when performing a `GetLegendGraphic` request using the JSON format option.
+### Mogelijkheid: GetLegendGraphics-regel voor JSON
+We hebben een nieuwe parameter `SHOWRULEDETAILS` voor WMS-services toegevoegd, die een item **rule** zal toevoegen in de het item in de legenda. De regel beschrijft de gebruikte filterexpressie van de respectievelijke laag bij de uitvoering van een verzoek `GetLegendGraphic` met de optie voor de indeling JSON.
 
-For example, the request:
+Bijvoorbeeld het verzoek:
 
 `text GET /?SERVICE=WMS&VERSION=1.30&REQUEST=GetLegendGraphic&LAYERS=layer1&FORMAT=application/json&SHOWRULEDETAILS=1`
 
-Will return the JSON response which includes a `rule` field when appropriate:
+Zal het antwoord voor JSON teruggeven dat een veld `rule` bevat, indien van toepassing:
 
 `json `
 
 Dit werd mogelijk gemaakt door Kristianstadt
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Add maptip for raster layer GetFeatureInfo
-Maptip support was added for raster layer GetFeatureInfo responses, when requesting with parameter `WITH_MAPTIP=TRUE`. This matches the existing behavior which was in place for vector layers.
+### Mogelijkheid: Kaarttip toegevoegd voor rasterlaag GetFeatureInfo
+Ondersteuning voor kaarttips werd toegevoegd voor antwoorden van verzoeken GetFeatureInfo voor rasterlagen, indien verzocht met de parameter `WITH_MAPTIP=TRUE`. Dit komt overeen met het bestaande gedrag dat op zijn plaats is voor vectorlagen.
 
-In this context, the variable `layer_cursor_point` holds the GetFeatureInfo position, so that maptips which are working in QGIS desktop are working also with QGIS Server GetFeatureInfo.
-
-Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
-### Feature: WMS parameter to request only maptip for HTML feature info responses
-We added a new value `HTML_FI_ONLY_MAPTIP` for the existing WMS vendor parameter `WITH_MAPTIP`.
-
-If set, the feature info HTML response includes only the maptip, which gives full control over the HTML response using e.g. the built-in maptip editor which has a nice preview.
+In deze context bevat de variabele `layer_cursor_point` de positie GetFeatureInfo, zodat kaarttips die werken in QGIS Desktop ook werken met QGIS Server GetFeatureInfo.
 
 Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
-### Feature: Option to skip "name" attribute for groups in WMS GetCapabilities
-We've added a new project level setting to **Skip name attribute for groups**. This is disabled by default, but enabling it allows you to exclude group names from a GetCapabilities response on a WMS request. This prevents name duplication in instances where a layer and group share the same name, whilst preserving the group element and bringing the QGIS Server capabilities more in line with the OGC WMS Specification.
+### Mogelijkheid: Parameter WMS om alleen kaarttip te vragen voor info over antwoorden van HTML-objecten
+We voegden een nieuwe waarde `HTML_FI_ONLY_MAPTIP` toe voor de bestaande fabrieksparameter voor WMS `WITH_MAPTIP`.
+
+Indien ingesteld, bevat het antwoord voor de informatie over het HTML-object alleen de kaarttip, wat volledig beheer geeft over het antwoord voor HTML, met bijv. de ingebouwde bewerker voor kaarttips, die een leuk voorbeeld heeft.
+
+Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
+### Mogelijkheid: Optie om het attribuut "name" over te slaan voor groepen in WMS GetCapabilities
+We hebben een nieuwe instelling op projectniveau toegevoegd, **Attribuut naam voor groepen overslaan**. Deze is standaard uitgeschakeld, maar inschakelen stelt u in staat groepsnamen uit te sluiten in een antwoord voor GetCapabilities van een verzoek voor WMS. Dat voorkomt het dupliceren van namen in instanties waar een laag en een groep dezelfde naam delen, terwijl het groepselement wordt behouden en de QGIS Server capabilities meer in lijn brengt met de specificatie van OGC WMS.
 
 Bijvoorbeeld:
 
-`text <Layer queryable="1"> <Name>layer_name</Name> <--- this will be skipped when option is enabled <Title>Human readable name</Title>`
+`text <Layer queryable="1"> <Name>layer_name</Name> <--- dit zal worden overgeslagen als de optie is ingeschakeld <Title>Door mensen te lezen naam</Title>`
 
 Deze mogelijkheid werd ontwikkeld door [Tomas Straupis](https://github.com/tomass)
 ## Plug-ins
-### Feature: Use active layer when importing vector data with DB Manager
-When importing vector data in the DB Manager core plugin, the "Input" combo box, which is populated with all the vector data in the layer tree, is now automatically set to the active layer whenever possible. This small change makes it much more user-friendly, especially when working with large and complex projects!
+### Mogelijkheid: Actieve laag gebruiken bij importeren van vectorgegevens met Databronnen beheren
+Bij het importeren van vectorgegevens in de bronplug-in DB Manager,  wordt het combinatievak "Invoer", dat wordt gevuld met alle vectorgegevens in de boom met lagen, nu waar mogelijk automatisch ingesteld op de actieve laag. Deze kleine wijziging maakt het veel gebruiksvriendelijker, speciaal bij het werken met grote en complexe projecten!
 
 ![](images/entries/1c69e30e80b5ef71d5dec8a3c6b4854f191f22cc.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Patrice Pineault](https://github.com/TurboGraphxBeige)
 ## Programmeerbaarheid
-### Feature: Expose 3D views to PyQGIS
-You now have the ability to create, list, and close 3D views from Python, matching the functionality of their 2D counterparts.
+### Mogelijkheid: 3D-weergaven weergeven aan PyQGIS
+U heeft nu de mogelijkheid 3D-weergaven te maken, te vermelden en te sluiten vanuit Python, wat overeenkomt met de functionaliteit voor hun 2D-tegenhangers.
 
-We refactored a number of application classes to introduce support the following `iface` methods:
-- `createNewMapCanvas3D`: Creates a named 3D view instance
-- `closeMapCanvas3D`: Closes a 3D view by name
-- `mapCanvases3D`: List existing 3D views in the project context
+We hebben een aantal klassen voor de toepassing opnieuw bewerkt voor ondersteuning van de volgende methoden voor `iface`:
+- `createNewMapCanvas3D`: Maakt een benoemde instantie voor 3D-weergave
+- `closeMapCanvas3D`: Sluit een 3D-weergave op naam
+- `mapCanvases3D`: Vermeld bestaande 3D-weergave in de projectcontext
 
 Voorbeeld:
 
 \`\`\`
-> > > iface.createNewMapCanvas3D('my new 3d view') iface.mapCanvases3D() \[\] iface.closeMapCanvas3D('my new 3d view') iface.mapCanvases3D() \[\] \`\`\`
+> > > iface.createNewMapCanvas3D('mijn nieuwe 3D-weergave') iface.mapCanvases3D() \[\] iface.closeMapCanvas3D('mijn nieuwe 3D-weergave') iface.mapCanvases3D() \[\] \`\`\`
 > > 
 > 
 
 Dit werd mogelijk gemaakt door Natural Resources Canada
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
-### Feature: Optimised methods to convert GeoJSON geometries to QgsGeometry
-We've added some highly optimised methods which allow direct construction of geometries (QgsGeometry) from raw JSON objects, instead of requiring translation through another library's geometry structures. These methods are exposed through the new API call `QgsJsonUtils.geometryFromGeoJson`.
+### Mogelijkheid: Geoptimaliseerde methoden om GeoJSON-geometrieën te converteren naar QgsGeometry
+We hebben enkele enorm geoptimaliseerde methoden toegevoegd die het mogelijk maken geometrieën (QgsGeometry) direct te maken uit ruwe objecten van JSON. In plaats van vertaling nodig te hebben door de structuren van geometrieën uit een andere bibliotheek. Deze methoden worden weergegeven door de nieuwe API-aanroep `QgsJsonUtils.geometryFromGeoJson`.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Qt WebEngine classes can now be used by plugins
-In older QGIS versions, an incompatibility between the modern Qt "WebEngine" classes and QGIS' 3D framework prevented QGIS plugins from using any WebEngine widgets. This was a significant shortcoming, as the older Qt "WebKit" widgets were very limited, slow, and did not support many modern JavaScript essentials.
+### Mogelijkheid: Klassen Qt WebEngine kunnen nu worden gebruikt door plug-ins
+In oudere versies van QGIS voorkwam een incompatibiliteit tussen de moderne klassen Qt "WebEngine" en het QGIS' 3D-framework dat plug-ins van QGIS widgets van WebEngine konden gebruiken. Dat was een serieuze tekortkoming, omdat de oudere widgets Qt "WebKit" heel beperkt waren, traag, en niet veel moderne benodigdheden voor JavaScript ondersteunden.
 
-In 3.36, we've reworked how QGIS 3D is initialised to remove this incompatibility. Scripts and plugins can now safely use Qt's WebEngine classes without issue!
+In 3.36 hebben we opnieuw bewerkt hoe QGIS 3D wordt geïnitialiseerd om deze incompatibiliteit te verwijderen. Scripts en plug-ins kunnen nu veilig zonder problemen klassen van Qt's WebEngine gebruiken!
 
 Dit werd mogelijk gemaakt door <https://qgis.org>
 
 Deze mogelijkheid werd ontwikkeld door QGIS.org
-### Feature: Vertical and compound Coordinate Reference System support in CRS widgets
-As part of the ongoing QGIS grant project for vertical CRS handling (see [QEP 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267)), all of QGIS' coordinate reference system can now be set to show only vertical or compound CRS. This allows plugins and scripts to present users with choices of vertical CRS, ready for use in QgsCoordinateTransform objects for vertical CRS transformations.
+### Mogelijkheid: Ondersteuning voor verticaal en samengesteld Coördinaten Referentie Systeem in widgets CRS
+Als deel van het lopende project voor het toekennen van fondsen van QGIS voor het afhandelen van verticaal CRS (bekijk [QEP 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267)), kunnen alle door QGIS gebruikte coördinatenreferentiesystemen nu worden ingesteld om alleen verticaal of samengesteld CRS weer te geven. Dat stelt plug-ins en scripts in staat om de gebruikers keuzes aan te bieden in verticaal CRS, klaar om te gebruiken in objecten QgsCoordinateTransform voor transformaties van verticaal CRS.
 
-See QgsCoordinateReferenceSystemProxyModel.Filter for the available CRS filtering options for use in these widgets.
+Bekijk QgsCoordinateReferenceSystemProxyModel.Filter voor de beschikbare opties voor het filteren van het CRS om in die widgets te gebruiken.
 
 Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Python support in Qt6 builds
-While version 5.15 remains the recommended Qt version for compiling QGIS, we've been hard at work adding full support for Qt 6 builds of QGIS. This is necessary in order to support modern desktop requirements, such as full compatibility with Wayland based Linux environments and for optimised Apple silicon builds.
+### Mogelijkheid: Ondersteuning voor Python in bouwsels van Qt6
+Waar versie 5.15 de aanbevolen versie van Qt blijft voor het compileren van QGIS, zijn we hard aan het werk om volledige ondersteuning voor het bouwen van QGIS met Qt 6 toe te voegen. Dat is noodzakelijk om vereisten voor moderne desktops te ondersteunen, zoals volledige compatibiliteit met op Wayland gebaseerde omgevingen van Linux en voor geoptimaliseerd bouwen voor Apple Silicon.
 
-QGIS 3.36 brings support for running Python under Qt 6 builds, and enables use of the PyQGIS library within Qt 6. This is a significant milestone in our ongoing journey towards full support for Qt 6!
+QGIS 3.36 brengt ondersteuning voor uitgevoerde Python in producties van Qt 6, en schakelt het gebruiken van de bibliotheek PyQGIS binnen Qt 6 in. Dat is een significante mijlpaal in onze doorlopende reis naar volledige ondersteuning voor Qt 6!
 
 Dit werd mogelijk gemaakt door [QGIS.org](https://qgis.org)
-### Feature: Add meshMenu to QGIS Interface
-`meshMenu` has been added to the `iface` object, giving plugins and scripts an easy way to extend the Mesh menu.
+### Mogelijkheid: meshMenu toegevoegd aan interface van QGIS
+`meshMenu` is toegevoegd aan het object `iface`, wat plug-ins -n scripts een gemakkelijke manier geeft om het menu Mazen uit te breiden.
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://oslandia.com/)
-### Feature: Server: onProjectReady method for filter plugins
-The new `onProjectReady` method is called after the `QgsProject` instance is ready for a server request and before entering the main logic for core services.
+### Mogelijkheid: Server: methode onProjectReady voor filteren van plug-ins
+De nieuwe methode `onProjectReady` wordt aangeroepen nadat de instantie `QgsProject` gereed is voor een verzoek aan de server en voor de belangrijkste logica voor bronservices in te gaan.
 
-The `onRequestReady` method is called after the `QgsRequestHandler` is ready and populated with parameters, but before the `QgsProject` instance is ready.
+De methode `onRequestReady` wordt aangeroepen nadat `QgsRequestHandler` al klaar is en gevuld met parameters, maar voordat de instantie `QgsProject` gereed is.
 
-You can use `onProjectReady` to perform operations at the project level, like adding variables, checking vector layer categories, etc.
+U kunt `onProjectReady` gebruiken om bewerkingen uit te voeren op projectniveau, zoals het toevoegen van variabelen, controleren van categorieën van vectorlagen, etc.
 
 Dit werd mogelijk gemaakt door 3Liz
 
 Deze mogelijkheid werd ontwikkeld door [rldhont](https://github.com/rldhont)
-### Feature: Add fuzzy comparisons methods
-We've added new methods for `fuzzyEquals` and `fuzzyDistanceEquals` to the QGIS geometry classes. These methods compare geometric objects with a tolerance for small variations, enhancing the precision of equality and distance calculations. They will be particularly useful in scenarios where exact matches may not be feasible or necessary.
+### Mogelijkheid: Methoden voor fuzzy vergelijkingen toegevoegd
+We hebben nieuwe methoden toegevoegd voor `fuzzyEquals` en `fuzzyDistanceEquals` aan de klassen voor geometrie van QGIS. Deze methoden vergelijken geometrische objecten met een tolerantie voor kleine variaties, wat de precisie van gelijkheid en berekeningen voor afstanden verbetert. Ze zullen in het bijzonder nuttig zijn in scenario's waar exacte overeenkomsten misschien niet nodig of gewenst zijn.
 
 \`\`\`python epsilon = 0.001 geom1 = QgsLineString(QgsPoint(0.0, 0.0), QgsPoint(0.001, 0.001)) geom2 = QgsLineString(QgsPoint(0.0, 0.0), QgsPoint(0.002, 0.002))
 
-self.assertNotEqual(geom1, geom2) \# epsilon = 1e-8 here
+self.assertNotEqual(geom1, geom2) \# epsilon = 1e-8 hier
 
 self.assertTrue(geom1.fuzzyEqual(geom2, epsilon)) self.assertFalse(geom1.fuzzyDistanceEqual(geom2, epsilon)) \`\`\`
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (met GRANT)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://oslandia.com/)
-### Feature: Measured line methods
-In QGIS 3.36 we've introduced a `measuredLine` method within `Qgs(Multi)LineString`. This method builds upon the code from PostGIS behind ST\_AddMeasure.
+### Mogelijkheid: Methoden voor gemeten lijn
+In QGIS 3.36 hebben we een methode `measuredLine` geïntroduceerd binnen `Qgs(Multi)LineString`. Deze methode bouwt verder op de code van PostGIS achter ST\_AddMeasure.
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://oslandia.com/)
 ## Belangrijke reparaties
@@ -576,7 +576,7 @@ Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https://lutraconsulting.co.uk/)
-### Feature: Bug fixes by Mathieu Pellerin
+### Mogelijkheid: Reparaties van problemen door Mathieu Pellerin
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Text in new version available message bar is poorly visible in Night mapping theme | [#56091](https://github.com/qgis/QGIS/issues/56091) | [PR #56455](https://github.com/qgis/QGIS/pull/56455) | [PR #56469](https://github.com/qgis/QGIS/pull/56469) |

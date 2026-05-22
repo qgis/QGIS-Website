@@ -105,7 +105,7 @@ Any map layer type can be used as a 2D texture for the globe, and 3D renderers o
 
 Globe view uses the ellipsoid of the project to generate globe mesh. It is even possible to use other celestial bodies, such as Mars or Moon, if the project's CRS is set up accordingly.
 
-More info:
+Meer informatie:
 - [QEP \#301 - Large scenes and globe in QGIS 3D](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301)
 - [Cesium blog post](https://cesium.com/blog/2025/06/20/3d-globe-view-now-available-in-qgis/)
 
@@ -163,7 +163,7 @@ Users can set up filtering of edited points using QGIS expressions, so that only
 
 <div class="player-unavailable">
 
-# An error has occurred.{#changelog344 }
+# Er trad een fout op.{#changelog344 }
 <div class="submessage">
 
 <a href="https://www.youtube.com/watch?v=TRxW-g0HYjU" target="_blank">Watch this video on www.youtube.com</a> or enable JavaScript if it is disabled in your browser.

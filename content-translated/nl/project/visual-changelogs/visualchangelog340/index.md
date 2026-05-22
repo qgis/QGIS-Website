@@ -4,12 +4,12 @@ draft: false
 releaseDate: 25-10-2024
 section: project
 sidebar: true
-title: Changelog for QGIS 3.40
+title: Log met wijzigingen voor QGIS 3.40
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# Changelog for QGIS 3.40{#changelog340 }
+# Log met wijzigingen voor QGIS 3.40{#changelog340 }
 ![](images/projects/83f1bc659777bc49e8e237625dfaa08f054e929c.png)
 
 Release date: 2024-10-25
@@ -419,7 +419,7 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nir
 ### Feature: Allow setting VSI credentials when loading OGR/GDAL layers
 VSI credential options are now exposed for user control when adding OGR vector/GDAL raster layers from the Data Source Manager, allowing users to define credentials on a per-layer basis for layers retrieved from cloud services (rather than use a single set of credentials for an entire QGIS session using an environment variable or similar approach).
 
-Requires GDAL 3.5+
+Vereist GDAL 3.5+
 
 ![](images/entries/e824e2a5aef50de87656d6beced8ea0ae0f60e41.webp)
 

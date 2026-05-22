@@ -685,14 +685,14 @@ See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-h
 This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: API for calculating Geodesic lines
+### 機能: 測地線計算のためのAPI
 測地線計算のために成熟したgeographiclibライブラリを利用するQgsDistanceAreaに測地線（楕円上の最短距離）を計算するための新しいPyQGIS APIが追加されました。
 - QgsDistanceArea.geodesicLine：2点間の測地線を計算します
 - QgsDistanceArea.latitudeGeodesicCrossesAntimeridianは、2点を結ぶ測地線が反経線と交差する緯度を計算します。
 - QgsDistanceArea.splitGeometryAtAntimeridian：測地線を使用して反子午線上で分割が行われる正確な点を計算して、（複数の）折れ線を反子午線で分割します。
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: New class QgsQuadrilateral
+### 機能: 新しいクラス QgsQuadrilateral
 QgsRectangleは、その役割が範囲に対するものであるため、方向またはZのサポートを提案しません。 4つの頂点ポリゴンを管理するためのQgsQuadrilateralという新しいクラスが作成されます。今のところ、長方形しかありませんが、後で他の形状を追加することも可能です。
 
 This refactoring simplifies maptools and allows you to use the QgsQuadrilateral class in other tools.
@@ -702,23 +702,23 @@ This refactoring simplifies maptools and allows you to use the QgsQuadrilateral 
 この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
 ## 三次元機能
 ### 機能: 地形のシェーディング
-This adds new options for user to choose how the terrain should be rendered: - shading disabled - color of terrain is determined only from map texture - shading enabled - color of terrain is determined using Phong\'s shading model, taking into account map texture, terrain normal vector, scene light(s) and terrain material\'s ambient+specular colors and shininess
+地形のレンダリング方法を選択する新しいオプションが追加されました: -シェーディング無効 -  地形の色はマップテクスチャのみで決定されます - シェーディング有効 -  地形の色はPhongシェーディングモデルを使用して決定され、マップテクスチャ、テレインの法線ベクトル、シーンのライト、テレインマテリアルのアンビエント+スペキュラーカラーおよびシャイネスが考慮されます
 
-Optionally, terrains can be shaded using a preset map theme.
+オプションとして、地形をプリセットのマップテーマを使用してシェーディングすることもできます。
 
 この機能は、 Martin Dobias (Lutra Consulting) によって開発されました
-### Feature: Configuration of lights in 3D map scenes
+### 機能 3Dマップシーンのライト設定
 この機能は、3Dシーンでポイントライトを定義するためのセクションを追加します。最大8つの光がサポートされています（材料の実装による制限）。光ごとに、位置、強度、色、および減衰を設定できます。
 
 この機能は、 Martin Dobias (Lutra Consulting) によって開発されました
-### Feature: Rule-based 3D renderer
+### 機能: ルールベース3Dレンダラー
 ![image26](images/entries/0825fbe986d774f7f2d5a0bdfdbc2487453ef49c.png.400x300_q85_crop.webp)
 
-この機能は QGIS community によって資金提供されました
+この機能開発は QGIS community によって資金提供されました
 
 This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
-### Feature: Support for mesh layer (faces) in 3D
-With this feature, you can use mesh layer in 3D scene,
+### 機能: 3Dでのメッシュレイヤー（フェイス）のサポート
+この機能により、3Dシーンでメッシュレイヤーを使用することができます。
 
 ![image27](images/entries/82a388b33e8fb96df43fb32b9bc5ef013be0459c.jpg.400x300_q85_crop.webp)
 
@@ -742,7 +742,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 | Can\'t add a virtual field or update a existing field of a WFS layer using the field calculator | [#21086](https://issues.qgis.org/issues/21086) | [PR #8990](https://github.com/qgis/QGIS/pull/8990) | 終了 |
 | Opening shapefiles in ZIP gives Invalid Datasource | [#21097](https://issues.qgis.org/issues/21097) | Cannot reproduce with 3.5 |  |
 | spatialite, edit table in dbmanager is broken in master Fault: no such table: pg_description | [#21151](https://issues.qgis.org/issues/21151) | [PR #9086](https://github.com/qgis/QGIS/pull/9086) | N/A |
-| 相対パスモードでプロジェクトを作成した場合、区切りテキストレイヤは絶対パスが保存されます | [#21150](https://issues.qgis.org/issues/21150) | [PR #9099](https://github.com/qgis/QGIS/pull/9099) | 終了 |
+| Delimitedtext layer saves absolute path when project in relative path mode | [#21150](https://issues.qgis.org/issues/21150) | [PR #9099](https://github.com/qgis/QGIS/pull/9099) | 終了 |
 | field calculator doesn\'t load values for gpkg containing blank spaces or n dash (hypen) in field names | [#21100](https://issues.qgis.org/issues/21100) | [PR #9071](https://github.com/qgis/QGIS/pull/9071) | 終了 |
 | Can\'t open feature form when when the primary key of Spatialite layer is created in text type | [#21176](https://issues.qgis.org/issues/21176) | [PR \#](https://issues.qgis.org/projects/qgis/repository/revisions/7f61dc495491752fd26c7f3bad56adc1f8950e3f) | No (deferred) |
 | Geopackage layer rename in DB Manager does not update f_table_name values in the layer_styles table or the Triggers | [#21227](https://issues.qgis.org/issues/21227) | [PR #9164](https://github.com/qgis/QGIS/pull/9164) | Not possible because it relies on the new rename feature implemented in browser |
@@ -766,7 +766,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 | --- | --- | --- | --- |
 | gdal buildvrt missing an important param | [#20586](https://issues.qgis.org/issues/20586) | [PR #8927](https://github.com/qgis/QGIS/pull/8927) | [PR #8944](https://github.com/qgis/QGIS/pull/8944) |
 | gdal:warpreproject missing old \'extra\' param | [#20721](https://issues.qgis.org/issues/20721) | [PR #8930](https://github.com/qgis/QGIS/pull/8930) | [PR #8944](https://github.com/qgis/QGIS/pull/8944) |
-| 出力レイヤ | [#20798](https://issues.qgis.org/issues/20798) | Cannot reproduce with 3.5 |  |
+| Points inside polygons | [#20798](https://issues.qgis.org/issues/20798) | Cannot reproduce with 3.5 |  |
 | IDW interpolation on csv point layer not working | [#20490](https://issues.qgis.org/issues/20490) | [PR #8942](https://github.com/qgis/QGIS/pull/8942) | [PR #8947](https://github.com/qgis/QGIS/pull/8947) |
 | \[Processing\] Field calculator algorithm does not use the selected layer as default layer input | [#19686](https://issues.qgis.org/issues/19686) | [PR #8945](https://github.com/qgis/QGIS/pull/8945) | [PR #8949](https://github.com/qgis/QGIS/pull/8949) |
 | v.surf.rst NOT WORKING IN QGIS 3.2.0 BONN | [#19472](https://issues.qgis.org/issues/19472) | [PR #8959](https://github.com/qgis/QGIS/pull/8959) | [Direct commit](https://github.com/qgis/QGIS/commit/c2465fc4a66425c296ffedb491d220a3db8ba453) |

@@ -726,7 +726,7 @@ This feature was developed by [lbartoletti](https://api.github.com/users/lbartol
 ### 機能: デジタイズしている地物にスナップする
 スナップは、デジタイズ中の地物へのスナップにも対応するようになりました。このオプションは、スナップツールバーの新しいボタンで有効/無効にできます。
 
-This enables some really nice CAD-like editing abilities, such as closing features at a 90° angle or precisely aligning segments inside a feature. It\'s very efficient once one is accustomed to using the alt+a shortcut to lock the angle.
+これにより、地物を90°の角度で閉じたり、地物内のセグメントを正確に整列させたりするなど、CADのような優れた編集機能が使用可能になります。Alt+Aショートカットを使用した角度のロックに慣れると非常に効率的です。
 
 ![image69](images/entries/81065380-a37bc100-8edb-11ea-8aed-6fd52d843a26.gif)
 

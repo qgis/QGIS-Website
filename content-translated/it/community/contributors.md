@@ -15,7 +15,7 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Vincitori del Premio Sol Katz
-Celebrazione dei collaboratori di QGIS che hanno ricevuto il prestigioso premio Sol Katz per la loro eccezionale leadership e il loro contributo al software geospaziale open source.
+Celebrazione dei contributori di QGIS che hanno ricevuto il prestigioso premio Sol Katz per la loro eccezionale leadership e il loro contributo al software geospaziale open source.
 
 {{<button class="is-success" link="/community/contributors/sol-katz-award/" text="View recipients" >}}
 
@@ -32,10 +32,10 @@ Celebrazione dei collaboratori di QGIS che hanno ricevuto il prestigioso premio 
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Organizzazioni Sostenitrici
+## Organizzazioni sostenitrici
 Organizzazioni che contribuiscono in modo significativo al progetto QGIS attraverso lo sviluppo e la collaborazione
 
-{{<button class="is-success" link="/community/contributors/organisations/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/organisations/" text="Visualizza elenco" >}}
 
 {{<rich-content-end >}}
 
@@ -50,10 +50,10 @@ Organizzazioni che contribuiscono in modo significativo al progetto QGIS attrave
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Collaboratori individuali
-Celebriamo gli sviluppatori e i collaboratori che contribuiscono alla realizzazione di QGIS attraverso i loro contributi di codice e il loro lavoro di squadra.
+## Contributori individuali
+Celebriamo gli sviluppatori e i contributori che contribuiscono alla realizzazione di QGIS attraverso i loro contributi di codice e il loro lavoro di squadra.
 
-{{<button class="is-success" link="/community/contributors/individuals/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/individuals/" text="Visualizza elenco" >}}
 
 {{<rich-content-end >}}
 
@@ -68,10 +68,10 @@ Celebriamo gli sviluppatori e i collaboratori che contribuiscono alla realizzazi
 {{<rich-box-start layoutClass="has-right rounded" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-## Collaboratori sostenitori
+## Contributori sostenitori
 Riconoscendo i contributi preziosi al di là dei commit di codice—supporto alla comunità, divulgazione e sforzi dietro le quinte.
 
-{{<button class="is-success" link="/community/contributors/supporting/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/supporting/" text="Visualizza elenco" >}}
 
 {{<rich-content-end >}}
 

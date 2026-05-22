@@ -4,23 +4,23 @@ draft: false
 releaseDate: 21-06-2024
 section: project
 sidebar: true
-title: Changelog for QGIS 3.38
+title: Log met wijzigingen voor QGIS 3.38
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# Changelog for QGIS 3.38{#changelog338 }
+# Log met wijzigingen voor QGIS 3.38{#changelog338 }
 ![](images/projects/77e273e90ec2f1953a8c0b5b0097a235c85f2425.png)
 
-Release date: 2024-06-21
+Datum uitgave: 21-06-2024
 
-The QGIS Project is proud to announce the release of QGIS 3.38 Grenoble, a landmark update brimming with advancements designed to empower users on their journey of spatial discovery. This release includes enhanced data filtering capabilities and the tight integration of filter criteria across different project elements, providing extended control to empower users in refining their data exploration processes.
+Het project QGIS is er trots op de uitgave aan te kondigen van QGIS 3.38 Grenoble, een kenmerkende bijwerking bruisend van verbeteringen die zijn ontworpen om gebruikers goed uit te rusten op hun reis naar ruimtelijke ontdekkingen. Deze uitgave bevat verbeterde mogelijkheden voor het filteren van gegevens en nauwe integratie van filtercriteria tussen verschillende projectelementen, uitgebreid beheer biedend aan gebruikers om ze in staat te stellen hun processen voor het verkennen van hun gegevens te verfijnen.
 
-Various improvements have been provided for elevation management, including the new elevation controller as well as the ability to explicitly declare a vertical CRS for your project. Previous releases actively removed vertical CRS information for technical reasons, as outlined in [QGIS Enhancement Proposal 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267), however, this vital aspect of spatial data management is now being reintroduced to the QGIS project.
+Verscheidene verbeteringen worden verschaft voor hoogtebeheer, inclusief het nieuwe hoogtebeheer, alsook de mogelijkheid om expliciet een verticaal CRS voor uw project te declareren. Eerdere uitgaven verwijderden actief informatie over verticaal CRS om technische redenen, zoals vermeld in [QGIS voorstel voor verbeteringen 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267). Dit vitale aspect van ruimtelijk gegevensbeheer is nu echter opnieuw geïntroduceerd in het project QGIS.
 
-Beyond these core improvements, QGIS 3.38 boasts a wealth of enhancements and quality-of-life improvements, including various usability enhancements, CMYK color support, improved search functionalities, and new features for data types such as DXF, Mesh, and SensorThings.
+Naast deze bronverbeteringen biedt QGIS 3.38 een rijkdom aan verbeteringen en kwaliteitsverbeteringen, inclusief verscheidene verbeteringen voor gebruik, ondersteuning voor CMYK kleuren, verbeterde zoekfunctionaliteit en nieuwe mogelijkheden voor gegevenstypen, zoals DXF, Mazen en SensorThings.
 
-For a whirlwind tour of all the new functionalities introduced, you can view the [highlight reel video on YouTube](https://www.youtube.com/watch?v=oktjj7xBZ54).
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u deze mogelijkheden bekijken [in de video met hoogtepunten op YouTube](https://www.youtube.com/watch?v=oktjj7xBZ54).
 
 [![](https://img.youtube.com/vi/oktjj7xBZ54/0.jpg)](https://www.youtube.com/watch?v=oktjj7xBZ54)
 
@@ -30,90 +30,90 @@ QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van don
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Tijdbeheer
-### Feature: New temporal mode: pixel value as temporal datetime
-A new temporal mode for raster layers is provided that interprets each pixel as a datetime value.
+### Mogelijkheid: Nieuwe modus Tijdbeheer: pixelwaarde als datetime voor Tijdbeheer
+Een nieuwe modus voor Tijdbeheer voor rasterlagen wordt verschaft die elke pixel als een waarde datetime interpreteert.
 
-When rendering a raster layer using that temporal mode, pixels will be hidden whenever they fall outside of the temporal range attached to the render context.
+Bij het renderen van een rasterlaag, terwijl die modus wordt gebruikt, zullen pixels worden verborgen als ze buiten de tijdsperiode vallen die is verbonden met de rendercontext.
 
-Examples of some interesting temporal use cases include:
-- representation of land use change such as forest loss
-- representation of flooding over time
-- representation of movement cost (e.g. GRASS' `r.walk`)
+Voorbeelden van enkele interessante gebruiksgevallen voor Tijdbeheer omvatten:
+- weergeven van landgebruik, zoals verlies van bos
+- weergeven van overstroming in de tijd
+- weergeven van verplaatsingskosten (bijv. GRASS' `r.walk`)
 
 ![](images/entries/e9349bf2255cb4e027d1f91460eb4fea9710c4c1.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Kaartgereedschap
-### Feature: Add Elevation Controller for filtering vertical data in 2d maps
-A new Elevation Controller provides users with the ability to filter vertical data in 2D maps, providing the equivalent experience of the temporal controller for elevation z-range slicing of data in line with [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201).
+### Mogelijkheid: Hoogtebeheer toegevoegd voor filteren verticale gegevens in 2D-kaarten
+Een nieuw Hoogtebeheer verschaft gebruikers de mogelijkheid om verticale gegevens in 2D-kaarten te filteren. Wat de equivalente ervaring verschaft van tijdbeheer voor het afromen van hoogten in het bereik Z van gegevens in lijn met [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201).
 
-This feature is accessed through a new "Data Filtering" submenu in the View menu, along with new menu items for the Temporal Controller.
+Deze mogelijkheid is toegankelijk via een nieuw submenu "Gegevens filteren" in het menu Beeld, naast nieuwe menu-items voor Tijdbeheer.
 
-The controller shows as a range slider on the left of the map. There's a configure action for setting the project's elevation range, which dictates the range available from the widget.
+Het beheer geeft een schuifbalk weer voor het bereik aan de linkerkant van de kaart. Er is een actie voor het configureren van de instellingen van het hoogtebereik voor het project dat het beschikbare bereik in de widget bepaalt.
 
 ![](images/entries/09e8196d117fbd9dc521e59ed5e206ced16e14ab.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add Z range support to map canvas / map settings items
-Elevation filtering is now supported in map canvases
+### Mogelijkheid: Z-bereik ondersteunt items voor instellen van kaartvenster / kaart
+Filteren van hoogte wordt nu in kaartvensters ondersteund
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add option to set a fixed elevation slice width for elevation controller
-A new option is provided on the configuration menu of the elevation controller, which allows for setting a fixed elevation slice width.
+### Mogelijkheid: Optie toegevoegd om een vaste breedte voor hoogte voor Hoogtebeheer in te stellen
+Een nieuwe optie wordt gegeven in het configuratiemenu van Hoogtebeheer, wat het mogelijk maakt een vaste breedte in te stellen voor het hoogtedeel.
 
-It can be used when a specific elevation range width is desired, or when the range should always be zero width.
+Dat kan worden gebruikt als een specifieke breedte voor het hoogtebereik gewenst is, of als het bereik altijd breedte nul zou moeten hebben.
 
 ![](images/entries/89ac87d5ec596dbd04f45be17dac9532d4a120b4.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gebruikersinterface
-### Feature: Add search option for regular expression based searching
-A new optional regex mode has been exposed for advanced search options, as implemented in the updated search functionality for the code editor.
+### Mogelijkheid: Zoekoptie toegevoegd voor zoeken dat is gebaseerd op reguliere expressies
+Een nieuwe optionele modus voor regex wordt weergegeven voor gevorderde zoekopties, zoals geïmplementeerd in de bijgewerkte zoekfunctionaliteit voor de codebewerker.
 
 ![](images/entries/2ab6a0a0e6837a51cf7e50a7104359fc063ced7e.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Data defined override: use middle-click to open the Expression Builder dialog window
+### Mogelijkheid: Data-bepaalde 'override': middelklik gebruiken om het dialoogvenster Expressiebouwer te openen
 ## Beschrijving
-The middle-click on the Data defined override icon makes the Expression Builder dialog window open, as a convenient shortcut for right-clicking and then left-clicking on the Edit menu item.
+De middelklik op het pictogram Data-bepaalde 'override' opent het dialoogvenster Expressiebouwer, als een handige sneltoets voor met rechts klikken op het item in het menu Bewerken.
 
 ![](images/entries/f44815b85558f76d7a6e6791370f683def53d51d.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ## Symbologie
-### Feature: New single color renderer for rasters
-A new single-color symbology has been added for raster layers. This allows for a super simple and friendly way to render a raster using a single color.
+### Mogelijkheid: Nieuwe renderer Enkele kleur voor rasters
+Een nieuwe symbologie Enkele kleur is toegevoegd voor rasterlagen. Dit maakt het mogelijk om op een super eenvoudige en vriendelijke manier een raster te renderen in een enkele kleur.
 
 ![](images/entries/73049b50b1c9d2e2c0c22fbfdd00db58d4ffc5c0.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add support for Wind Barb rendering for mesh vector datasets
-Wind Barbs are a common way to display wind strength and direction on maps, and the new Wind Barb symbology type makes it easy for users to use this powerful visualization style for their mesh vector datasets.
+### Mogelijkheid: Ondersteuning toegevoegd voor renderen van windvanen voor vectorgegevenssets van mazen
+Windvanen zijn een veelvoorkomende manier om windsterkte en -richting aan te geven op kaarten en het nieuwe type symbologie Windvanen maakt het voor gebruikers gemakkelijk om deze krachtige stijl voor visualiseren te gebruiken voor hun vectorgegevenssets met mazen.
 
-Wind barbs encode the wind speed in knots (nautical miles per hour) so users must explicitly select the relevant data units for their data to display correctly, or use a custom multiplier to convert the value to knots.
+Windvanen coderen de windsnelheid in knopen (nautische mijlen per uur). Dus gebruikers moeten expliciet de relevante gegevenseenheden selecteren voor hun gegevens om juist te worden weergegeven, of een aangepaste vermenigvuldigingsfactor gebruiken om de waarden naar knopen te converteren.
 
 ![](images/entries/1f5b158227f114192f411835adfb8dd40d0a8900.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ## Labelen
-### Feature: Add maximum distance setting for point labels
-A new optional setting has been added for the "Around point" and "Cartographic" placement modes to specify the maximum distance of the labels from the feature. It's used together with the existing distance setting to define a range of distances at which labels may be placed from their corresponding point features.
+### Mogelijkheid: Instelling Maximale afstand toegevoegd voor puntlabels
+Een nieuwe optionele instelling is toegevoegd voor de modi voor plaatsing "Rondom punt" en "Cartografisch" om de maximale afstand van de labels vanaf het object te specificeren. Het wordt samen gebruikt met de bestaande instelling voor de afstand om een bereik met afstanden te definiëren waarop labels mogen worden geplaatst vanaf hun corresponderende objecten punt.
 
-This adds more flexibility to the placement of these layers, ultimately allowing for more labels to be placed on busy maps.
+Dit voegt meer flexibiliteit toe aan de plaatsing voor deze lagen, wat het ultiem mogelijk maakt meer labels te plaatsen op drukke kaarten.
 
-When the layer is set to the "around point" mode, then label candidates that are closer to the point will always be preferred over those that are further away.
+Wanneer de laag is ingesteld op de modus "Rondom punt", hebben labelkandidaten die dichter bij het punt liggen altijd voorrang op die welke verder weg liggen.
 
-When the layer is set to the "cartographic" mode, then the default behavior is also to prioritize closer labels. A new combo box allows users to control the priority, with an option for preferring position ordering. If this option is set, candidates at the corresponding positions (e.g. top left) are preferred, regardless of how far they are from the point, with the labeling falling back to alternate positions only when no labels can be placed up to the maximum label distance.
+Als de laag is ingesteld op de modus "Cartografisch", is het standaardgedrag om ook de dichterbij gelegen labels te prioriteren. Een nieuw combinatievak maakt het voor gebruikers mogelijk de prioriteit te beheren, met een optie voor een ordening op voorkeur voor positie. Als die optie is ingesteld, hebben kandidaten op de corresponderende posities (bijv. linksboven) de voorkeur, ongeacht hoe ver ze van het punt af liggen, waarbij het labelen alleen terugvalt op alternatieve posities als er geen labels kunnen worden geplaatst tot aan de maximale labelafstand.
 
 ![](images/entries/cf8223309d9bf77cf5634a7166706e3b9841bda9.webp)
 
 Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add 'over point' placement option for cartographic label mode
-A new option for label placement has been added for "O" = "over point" when the label placement mode is set to the "cartographic" mode.
+### Mogelijkheid: Optie voor plaatsing 'Boven punt' toegevoegd voor de modus voor labelen Cartografisch
+Een nieuwe optie voor het plaatsen van labels is toegevoegd voor "O" = "Boven punt" als de modus voor plaatsing is ingesteld op de modus "Cartografisch".
 
-When a feature's data-defined placement priorities include this new 'O' option, a label can be placed directly over the corresponding point.
+Wanneer de prioriteiten voor data-bepaalde plaatsing voor een object deze nieuwe optie 'O' bevatten, kan een label direct boven het corresponderende punt worden geplaatst.
 
 ![](images/entries/25c00222d0e6f17efda6784e8ce9a577275618a8.webp)
 
@@ -121,144 +121,144 @@ Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Renderen
-### Feature: Add data defined control over heatmap radius and maximum value
-This allows users to define the radius and maximum as a value that makes sense for the current situation, e.g. the current map scale, current print atlas feature, or current temporal range.
+### Mogelijkheid: Data-bepaald beheer toegevoegd voor straal van heatmap en maximale waarde
+Dit stelt gebruikers in staat de straal en het maximum in te stellen als een waarde die zin heeft voor de huidige situatie, bijv. de huidige schaal voor de kaart, huidige object van de afdrukatlas, of huidige tijdsperiode.
 
-This additionally includes the base changes required for data-defined properties at the feature renderer level, which may be useful for extending other vector renderer classes (e.g. point cluster/ displacement).
+Dit bevat aanvullend de basiswijzigingen voor data-bepaalde eigenschappen op het niveau van de renderer voor het object, wat nuttig zou kunnen zijn voor het uitbreiden van andere klassen voor renderen van vector (bijv. punt cluster/ verplaatsing).
 
 Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Afdruklay-outs
-### Feature: Tab character support for QgsTextFormat and QgsTextRenderer
-A [regression](https://github.com/qgis/QGIS/issues/56981) resulted in QGIS stripping tab characters and limiting the ability to use tab characters in certain contexts, such as performing character alignment in legends.
+### Mogelijkheid: Ondersteuning voor teken Tab voor QgsTextFormat en QgsTextRenderer
+Een [regressie](https://github.com/qgis/QGIS/issues/56981) resulteerde erin dat QGIS tekens Tab stripte en de mogelijkheid beperkte om tekens Tab te kunnen gebruiken in bepaalde contexten, zoals het uitvoeren van uitlijnen van tekens in legenda's.
 
 ![](images/entries/b8934ab8ad907adbc628a9e168fcbd9c88af83ee.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Copy composer grids
-A button to copy (duplicate) the selected grid has been added to the print composer.
+### Mogelijkheid: Rasters voor printomgeving kopiëren
+Een knop om het geselecteerde raster te kopiëren (dupliceren) is toegevoegd aan Printomgeving.
 
-This simplifies the process of creating new grids which only have a few differences from an existing grid or using an existing grid as a template.
+Dat vereenvoudigt het proces voor het maken van nieuwe rasters die slechts een paar verschillen hebben van een bestaand raster of een bestaand raster als sjabloon gebruiken.
 
 ![](images/entries/bad634a873669247fe13d334d080b0b1cb6e1363.webp)
 
 Dit werd mogelijk gemaakt door [NaturalGIS](https://naturalgis.pt/)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add z range filter option for layout maps
-A new setting for layout map items allows users to set a specific elevation/z range for the filtering of 2D layout maps, similar to the existing setting for temporal filters.
+### Mogelijkheid: Optie voor filteren bereik Z voor lay-outkaarten
+Een nieuwe instelling voor het kaartitem lay-out stelt gebruikers in staat een specifieke hoogte/Z-bereik in te stellen voor het filteren van 2D-lay-outkaarten, soortgelijk aan de bestaande instelling voor filters voor Tijdbeheer.
 
-When set, map layers supporting 2D z-range filtering will be filtered to show only content within this range.
+Indien ingesteld, zullen kaartlagen, die filteren van 2D-Z-bereik ondersteunen, worden gefilterd om alleen inhoud binnen dit bereik te laten zien.
 
-Additionally, the range for z-filtering can be data-defined, allowing different z-ranges for atlas or report features based on data-driven feature properties.
+Aanvullend kan het bereik voor filteren van Z data-bepaald worden, wat verschillende bereiken Z mogelijk maakt voor atlas of objecten rapporteren die zijn gebaseerd op data-bepaalde eigenschappen van het object.
 
 ![](images/entries/c7f2cc35cfaf4a101ee2be654688142fb83ac055.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add buttons to expand or collapse layout legend tree
-New buttons have been added to allow users to easily expand or collapse the legend trees within print layouts.
+### Mogelijkheid: Knoppen toegevoegd om de boom van de lay-outlegenda in- of uit te klappen
+Nieuwe knoppen zijn toegevoegd, zodat gebruikers gemakkelijk de bomen van legenda's binnen lay-outs van Printomgeving kunnen in- of uitklappen.
 
 ![](images/entries/e3ada0021b7137123133b645093168bd483530a7.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Harrissou Sant-anna](https://github.com/DelazJ)
 ## Expressies
-### Feature: Add @map\_z\_range variables reflecting the map's z range values
-New variables for retrieving the current `@map_z_range_lower` and `@map_z_range_upper` values have been added to QGIS Expressions that reflect the map canvas' z range value.
+### Mogelijkheid: Variabelen @map\_z\_range reflecteren de waarden van het bereik Z van de kaart
+Nieuwe variabelen voor het ophalen van de huidige waarden `@map_z_range_lower` en `@map_z_range_upper` zijn toegevoegd aan de QGIS Expressies die de waarde voor het bereik Z in het kaartvenster weergeven.
 
 ![](images/entries/ab7a53d114337665cded7fd178658144222d1962.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Gegevensbeheer
-### Feature: Duplicate policy on fields when duplicating features
-When duplicating a feature (and its children) a new duplication policy will be available on QgsField objects.
+### Mogelijkheid: Beleid voor dupliceren voor velden bij het dupliceren van objecten
+Bij het dupliceren van een object (en de kinderen ervan) zal nieuw beleid beschikbaar zijn voor objecten QgsField.
 
-This behavior can be configured using the policies interface in the layers feature form definition, however, the actively defined policy will be implemented on any features duplicated using generic map tools whenever a feature is copied (e.g. "move and copy" digitizing, or copy and pasting from the canvas or attribute table).
+Dit gedrag kan worden geconfigureerd met de interface voor beleid in de definitie van het objectformulier in de laag. Echter, het actief gedefinieerde beleid zal worden geïmplementeerd op alle objecten die worden gedupliceerd met algemene kaartgereedschappen. Iedere keer als een object wordt gekopieerd (bijv. "verplaatsen en kopiëren" in digitaliseren, of kopiëren en plakken vanuit het kaartvenster of attributentabel).
 
-There are three policy options currently available:
-- **Duplicate Value** (default mode): Creates a copy of the attribute value from the source feature.
-- **Default Value**: Not to be confused with the default mode, the default value setting resets new features to the feature form default as defined in the form designer (typically a QGIS Expression).
-- **Remove Value**: Unsets and removes the field value (NULL).
+Er zijn momenteel drie opties voor soorten beleid beschikbaar:
+- **Waarde dupliceren** (standaardmodus): Maakt een kopie van de attribuutwaarde uit het bronobject.
+- **Standaard waarde**: Niet te verwarren met de standaardmodus, de instelling Standaard waarde herstelt nieuwe objecten naar de standaard voor het objectformulier, zoals gedefinieerd in de formulierontwerper (gewoonlijk een QGIS Expressie).
+- **Waarde verwijderen**: Heft instelling op en verwijdert de veldwaarde (NULL).
 
 ![](images/entries/76e7f27309a07b9bb7e61a074efa81c1340bfbed.webp)
 
 Deze mogelijkheid werd ontwikkeld door [signedav](https://github.com/signedav)
-### Feature: Add "Fixed Time Range Per Band" mode for raster temporal control
-This mode can be used when each band in the raster layer is associated with a fixed time range, eg. NetCDF files.
+### Mogelijkheid: Modus "Vaste tijdsperiode per band" voor Tijdbeheer voor rasters
+Deze modus kan worden gebruikt als elke band in de rasterlaag is geassocieerd met een vaste tijdsperiode, bijv. bestanden NetCDF.
 
-The user can either manually populate a table with begin/end dates for each band in the raster or build the table using QGIS expressions which return datetime values
+De gebruiker kan ofwel handmatig een tabel vullen met begin-/einddatums voor elke band in het raster of de tabel opbouwen met QGIS-expressies die waarden datetime teruggeven
 
 ![](images/entries/7075b0b60ec0f0d4e5901e4d94452fa187b9a787.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Introduce fixed elevation range for raster layers
-A new option has been introduced for specifying how elevation is associated with raster layers. It permits a fixed elevation range to be set for the layer and can be used when the layer has a single fixed elevation or a range (slice) of elevation values.
+### Mogelijkheid: Introduceren van een vast hoogtebereik voor rasterlagen
+Een nieuwe optie is geïntroduceerd om te specificeren hoe hoogte moet worden geassocieerd met rasterlagen. Het maakt het mogelijk een vast hoogtebereik in te stellen voor de laag en kan worden gebruikt als de laag een enkele vaste hoogte heeft of een bereik (schijf) met hoogtewaarden.
 
-Users can set the lower and upper elevation range for the layer, and whether the lower or upper limits are inclusive or exclusive.
+Gebruikers kunnen het onderste en bovenste bereik voor de hoogte voor de laag instellen, en of de grenzen voor de onderste en bovenste hoogte inclusief of exclusief zijn.
 
-When enabled, the layer will only be visible in 2D maps with elevation filtering active if the layer's range is included in the z range of the map.
+Indien ingeschakeld zal de laag alleen zichtbaar zijn in 2D-kaarten waarin filteren van hoogte actief is als het bereik van de laag is opgenomen in het bereik Z van de kaart.
 
 ![](images/entries/64a2386154517472b58a41f2551b0d8d30951770.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Introduce fixed elevation range for mesh layers
-A new fixed elevation range mode is available for mesh layers, equivalent to the fixed elevation range mode for raster layers which provides a new option for specifying how mesh layers have associated elevation. It permits a fixed elevation range to be set for the layer. It can be used when the layer has a single fixed elevation or a range (slice) of elevation values.
+### Mogelijkheid: Introduceren van een vast hoogtebereik voor lagen met mazen
+Een nieuwe modus voor een bereik met een vaste hoogte is beschikbaar voor lagen met mazen, equivalent aan de modus voor een bereik met vaste hoogte voor rasterlagen. Het verschaft een nieuwe optie om te specificeren hoe hoogte moet worden geassocieerd voor lagen met mazen. Het maakt het mogelijk een vast hoogtebereik in te stellen voor de laag en kan worden gebruikt als de laag een enkele vaste hoogte heeft of een bereik (schijf) met hoogtewaarden.
 
-Users can set the lower and upper elevation range for the layer, and whether the lower or upper limits are inclusive or exclusive.
+Gebruikers kunnen het onderste en bovenste bereik voor de hoogte voor de laag instellen, en of de grenzen voor de onderste en bovenste hoogte inclusief of exclusief zijn.
 
-When enabled, the layer will only be visible in 2D maps with elevation filtering active if the layer's range is included in the z range of the map.
+Indien ingeschakeld zal de laag alleen zichtbaar zijn in 2D-kaarten waarin filteren van hoogte actief is als het bereik van de laag is opgenomen in het bereik Z van de kaart.
 
 ![](images/entries/88a53a76a505418c2ed776f70fb56cd5bd85031b.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add a "fixed range per band" elevation mode for rasters
-In this new mode, each band in the raster can have a fixed elevation range associated with it.
+### Mogelijkheid: Modus "Vast hoogtebereik per band" voor rasters
+In deze nieuwe modus kan elke band in het raster een vast bereik voor de hoogte aan zich hebben verbonden.
 
-This is designed for data sources that expose elevation-related data in bands, e.g. a NetCDF raster with temperate data at different ocean depths.
+Dit is ontworpen door databronnen die aan hoogte gerelateerde gegevens weergeven in banden, bijv. een raster NetCDF met temperatuurgegevens op verschillende dieptes in de oceaan.
 
-When rendering, the UPPERMOST matching band will be selected and used for the layer's data. The renderer configuration will be retained unchanged regardless of the matching band, so users must configure the rendering options for the layer using a representative range that covers the data from all bands.
+Bij het renderen zal de meest HOOGSTE overeenkomende band worden geselecteerd en gebruikt voor de gegevens van de laag. De configuratie voor de renderer zal ongewijzigd worden behouden, ongeacht de overeenkomende band. Gebruikers moeten dus de opties voor renderen voor de laag configureren met een representatief bereik dat de gegevens uit alle banden bedekt.
 
-The layer configuration is exposed as a user-editable table of raster bands with lower and upper values. Users can either populate the lower and upper values manually or use a QGIS Expression to fill all band values automatically.
+De configuratie voor de laag wordt weergegeven als een door de gebruiker te bewerken tabel met rasterbanden met onder- en bovenwaarden. Gebruikers kunnen ofwel handmatig de onder- en bovenwaarden vullen of een QGIS-expressie gebruiken om alle bandwaarden automatisch te vullen.
 
-Expression-based value definitions will allow users to design expressions capable of extracting useful information from file metadata that might otherwise be difficult to manipulate, such as the band names themselves, e.g. "Band 001: depth=-5500 (meters)".
+Definities voor waarden die zijn gebaseerd op expressies zullen gebruikers in staat stellen expressies te ontwerpen die capabel genoeg zijn om nuttige informatie uit het bestand met metadata uit te nemen. Welke anders misschien moeilijk te bewerken zou zijn, zoals de namen van de banden zelf, bijv. "Band 001: depth=-5500 (meters)".
 
 ![](images/entries/9622032fd646ac79cc63e48ed30eca1841c9993b.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add "dynamic elevation range per band" mode for rasters
-A new dynamic mode for configuration raster elevation is provided where the elevation range for raster bands is calculated using a pair of QGIS Expressions for the lower and the upper limits of the elevation range for the layer.
+### Mogelijkheid: Modus "Dynamisch hoogtebereik per band" voor rasters
+Een nieuwe dynamische modus voor het configureren van de rasterhoogte wordt verschaft, waarin het hoogtebereik voor rasterbanden wordt berekend met een paar van QGIS-expressies voor de grenzen van de onder- en bovenwaarde van het hoogtebereik voor de laag.
 
-In this mode, the user can specify a QGIS expression for the lower and upper value corresponding to raster bands, using variables like @band, @band\_name, and @band\_description alongside standard QGIS Expression values, globals, and project variables.
+In deze modus kunnen de gebruikers een QGIS-expressie specificeren voor de onder- en bovenwaarde die overeenkomt met de rasterbanden. Met variabelen zoals @band, @band\_name en @band\_description, naast de standaardwaarden, globalen en projectvariabelen voor QGIS-expressie.
 
 Bijvoorbeeld:
 
     @band * 100
     
-This can be used when each band represents a 100 m vertical slice of data.
+Dit kan worden gebruikt wanneer elke band een 100 m verticale schijf van gegevens weergeeft.
 
-The expression will be evaluated when required to determine the actual elevation range corresponding to each band.
+De expressie zal indien nodig worden geëvalueerd om het feitelijke hoogtebereik te bepalen voor elke band.
 
-This differs from the"Fixed Elevation Range Per Band" mode which requires users to manually enter an elevation for each band separately, and these values are then treated as constants. That mode works best for rasters with non-regular steps in the band elevation values, while the dynamic mode is more suitable for data that includes regular elevation steps across each band.
+Dit verschilt van de modus "Vast hoogtebereik per band", die van gebruikers eist dat ze handmatig afzonderlijk een hoogte invoeren voor elke band, en die waarden worden dan behandeld als constanten. Die modus werkt het beste voor rasters zonder regelmatige stappen in de waarden voor de  hoogten in de band. Terwijl de dynamische modus meer geschikt is voor gegevens die regelmatige stappen voor hoogten in elke band bevatten.
 
 ![](images/entries/d40450a1bcc9d3d2d3c5565681228b1d52256b69.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add fixed elevation range per dataset group mode for mesh layers
-Additional functionality to set a fixed elevation range per dataset group on mesh layers mimics the new "fixed range per band" mode raster layers but allows a per-dataset group elevation range to be set for mesh layers.
+### Mogelijkheid: Een modus voor vast hoogtebereik per groep gegevensset voor lagen met mazen toegevoegd
+Aanvullende functionaliteit om een vast hoogtebereik in te stellen per groep gegevensset voor lagen met mazen bootst de nieuwe modus "Vast hoogtebereik per band" voor rasterlagen na, maar staat toe dat een groep hoogtebereik per-gegevens wordt ingesteld.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add option to export all lines with minimal width in dxf exports
-An optional setting has been added to dxf exports that will allow users to write all lines with minimal width 0 (hairline).
+### Mogelijkheid: Optie toegevoegd om alle lijnen te exporteren met minimale breedte bij exporteren naar dxf
+Een optionele instelling is toegevoegd voor het exporteren naar dxf die toestaat dat gebruikers alle lijnen wegschrijven met een minimale breedte van 0 (haarlijn).
 
-Lines within DXF files having zero width typically remain minimal in the CAD regardless of zoom level, so this functionality can be quite useful for compatibility with exported DXFs that are edited with other software, especially in use cases where high data density is a concern.
+Lijnen binnen bestanden van DXF die een breedte nul hebben, blijven normaal gesproken minimaal in de CAD, ongeacht het zoomniveau. Deze functionaliteit kan dus behoorlijk nuttig zijn voor compatibiliteit met geëxporteerde DXF's die met andere software zijn bewerkt, speciaal in gebruiksgevallen waar de hoge dichtheid van gegevens een zorg is.
 
 ![](images/entries/1c7a18b41d42049e6c6ab7538d74d69406b837bb.webp)
 
 Dit werd mogelijk gemaakt door [Stadtwerke München](http://www.swm.de/)
 
 Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
-### Feature: Allow users to override the layer names exported to DXF
-It is now possible to override the output name of individual layers exported, with new configuration options added to the DXF export dialogs for project exports, layer exports, and the Export layers to DXF Processing algorithm.
+### Mogelijkheid: Sta gebruikers toe de laagnamen, die zijn geëxporteerd naar DXF, te overschrijven
+Het is nu mogelijk de uitvoernaam van geëxporteerde individuele lagen te overschrijven. Door nieuwe opties voor configuratie die zijn toegevoegd aan de dialoogvensters voor exporteren naar DXF voor projectexport, laagexport en het algoritme van Processing Lagen naar DXF exporteren.
 
 ![](images/entries/83f65d9f8afbd45ecc0fa6b2804a7981f6192e7e.webp)
 

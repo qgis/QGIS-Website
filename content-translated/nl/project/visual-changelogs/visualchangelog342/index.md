@@ -4,15 +4,15 @@ draft: false
 releaseDate: 21-02-2025
 section: project
 sidebar: true
-title: Changelog for QGIS 3.42
+title: Log met wijzigingen voor QGIS 3.42
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# Changelog for QGIS 3.42{#changelog342 }
+# Log met wijzigingen voor QGIS 3.42{#changelog342 }
 ![](images/projects/b5beabaeef257557086b43ccdceffed3c78d8676.png.webp)
 
-Release date: 2025-02-21
+Datum uitgave: 21-02-2025
 
 The QGIS Project proudly announces the release of QGIS 3.42, a significant step forward in the development of Free and Open Source Geospatial Information Systems. This release builds upon the solid foundations of previous releases while introducing exciting new features and enhancements that will streamline workflows and empower users in their spatial analysis endeavors.
 

@@ -8,8 +8,8 @@ type: page
 ---
 {{<content-start >}}
 # Requisiti per i contributori
-## Requisiti per i nuovi sostenitori
-Diamo il benvenuto ai nuovi collaboratori nella nostra comunità - vogliamo che tu usi QGIS come piattaforma per fare il tuo lavoro - e crediamo che QGIS sia un'ottima piattaforma per questo. Per contribuire con codice, patch o documentazione al progetto QGIS, tutti gli sviluppatori/membri del team devono:
+## Requisiti per i nuovi contributori
+Diamo il benvenuto ai nuovi contributori nella nostra comunità - vogliamo che tu usi QGIS come piattaforma per fare il tuo lavoro - e crediamo che QGIS sia un'ottima piattaforma per questo. Per contribuire con codice, patch o documentazione al progetto QGIS, tutti gli sviluppatori/membri del team devono:
 - Abide by the [Social Contract](#social-contract).
 - Be familiar with the development process and the reference material available in the [Developers Guide for QGIS](https://docs.qgis.org/testing/en/docs/developers_guide/index.html), and the [CODING document](https://github.com/qgis/QGIS/blob/master/CONTRIBUTING.md) in the root of the QGIS Sources.
 - Ensure that all code committed to the repository is unencumbered and compatible with the [QGIS license]({{< relref "license" >}}), GNU Public License (GPL) Version 2 or any later version.
