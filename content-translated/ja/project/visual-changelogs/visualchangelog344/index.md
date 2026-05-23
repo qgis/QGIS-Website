@@ -245,79 +245,79 @@ This feature was developed by [Even Rouault](https://github.com/rouault)
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add optional extent, expression based filter when importing tables to database
-When a table is imported to a database via the browser, the user now has an option to filter the copied records by extent or expression.
+### 機能: データベースへのテーブルインポート時のオプションの範囲・式ベースのフィルターの追加
+ブラウザーからデータベースにテーブルをインポートする際、コピーされるレコードを範囲または式でフィルタリングするオプションが追加されました。
 
 <img src="images/entries/ac84f4eff2203d0b08b4577eeafa37cff09a6db1" class="img-responsive img-rounded" />
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add stored query support to Execute SQL window
-The "Execute SQL" dialog now supports stored queries, replicating the functionality from the DB Manager in the new browser tools.
+### 機能: SQL実行ウィンドウへのストアドクエリサポートの追加
+ "Execute SQL" ダイアログがストアドクエリをサポートするようになりました。新しいブラウザーツールでDBマネージャーと同等の機能が利用できます。
 
-Users can insert stored queries into their current query, save new stored queries, and remove queries via a new toolbar action.
+新しいツールバーアクションから、ストアドクエリを現在のクエリに挿入したり、新しいストアドクエリを保存したり、クエリを削除したりできます。
 
-Queries can be stored in the current project or in the local user profile.
+クエリは現在のプロジェクトまたはローカルのユーザープロファイルに保存できます。
 
 <img src="images/entries/b4d094f69e11aee5f1e2de7ad1ea40d3118b32fb.png" class="img-responsive img-rounded" />
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Saving/Loading SQL queries from Execute SQL/Update SQL dialogs
-Support has been added to the Execute SQL dialog and Update SQL dialogs that allows users to save and load SQL queries to/from .sql text files. This replicates the functionality available in the DB Manager over to the core browser-based database connection facilities.
+### 機能: SQLの実行/SQL更新ダイアログからのSQLクエリの保存と読み込み
+SQLの実行ダイアログと　SQLの更新ダイアログに、SQLクエリを.sqlテキストファイルに保存したり読み込んだりする機能が追加されました。これにより、DBマネージャーで利用可能な機能がコアのブラウザーベースのデータベース接続機能でも使えるようになりました。
 
-The UX has been designed to mimic the same functionality from other standard parts of QGIS, such as the Processing Script Editor with Toolbar actions for Save/Load as well as new actions for other standard operations, including copy, paste, undo, and redo.
+UXはQGISの他の標準機能（プロセッシングスクリプトエディターなど）と同様の操作性になるよう設計されており、保存/読み込みのツールバーアクションに加え、コピー、貼り付け、元に戻す、やり直しなどの標準操作の新しいアクションも追加されています。
 
 <img src="images/entries/6f5e0b09c033f427fb7f9162d1b2be5a763d674c" class="img-responsive img-rounded" />
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Allow for extra OAuth2 token(s) to be added into headers
-OAuth2 advanced configuration options can now attach extra tokens sent by the OAuth2 token endpoint as HTTP(S) request headers. This allows for more flexible handling of OAuth configurations, such as when certain providers append OpenID tokens to their token replies.
+### 機能: ヘッダーへの OAuth2トークンの追加を可能にする
+OAuth2の詳細設定オプションで、OAuth2トークンエンドポイントから送信された追加トークンをHTTP(S)リクエストヘッダーとして付加できるようになりました。これにより、特定のプロバイダーがトークン応答にOpenIDトークンを追加する場合など、OAuth設定をより柔軟に処理できるようになります。
 
-This change is integrated into the credential management and is available for all OAuth2 services.
+この変更は認証情報管理に統合されており、すべてのOAuth2サービスで利用できます。
 
 <img src="images/entries/2a9dadb3cfbf35b2efea8c7cd9dd4fe49ffbc292" class="img-responsive img-rounded" />
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Convert field name Casing when importing vector layers
-The Import Vector dialog for migrating vector layers to data sources now supports the option to automatically transform all field names to lowercase or uppercase.
+### 機能: ベクターレイヤーのインポート時のフィールド名の大文字/小文字変換
+ベクターレイヤーをデータソースに移行するためのベクターインポートダイアログで、すべてのフィールド名を自動的に小文字または大文字に変換するオプションがサポートされるようになりました。
 
 <img src="images/entries/dc2c1e575d451c7bd98fb6c3b0a7cebe2800fe04" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+この機能開発には Ocean Winds の資金提供を受けました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
-### Feature: Import selected features only to database table
-When importing layer features into a database table, a new dialog option allows for filtering the import to only the selected features. This option is only available if there is a current selection on the imported layer.
+### 機能: 選択した地物のみをデータベーステーブルにインポートします
+レイヤーの地物をデータベーステーブルにインポートする際、選択した地物のみにインポートをフィルタリングする新しいダイアログオプションが追加されました。このオプションはインポートするレイヤーに現在の選択がある場合にのみ利用できます。
 
 <img src="images/entries/4a0b7ca2843d5acb9b2c3b3b2a237d6f7e55a308" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+この機能開発には Ocean Winds の資金提供を受けました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## フォームとウィジェット
-### Feature: Switch between field names and field aliases in forms
-In line with [QEP 401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md), the Vector Layer Properties has been switched to model-based tree views.
+### 機能: フォームでのフィールド名とフィールドエイリアスの切り替え
+[QEP 401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md) にしたがって、ベクターレイヤープロパティがモデルベースのツリービューに切り替えられました。
 
-This has enabled new functionality, including the ability to switch between field names and field aliases in both the Available Widgets and Form Layout panels.
+これにより、利用可能なウィジェットパネルとフォームレイアウトパネルの両方でフィールド名とフィールドエイリアスを切り替えられる機能など、新しい機能が有効になりました。
 
 Additional enhancements include:
-- Orphan fields are highlighted in the Form Layout, emulating the UX of broken relations.
-- Improvements in broken relations: retain relation names when the relation is still available in the relation manager,
+- リレーションが壊れた場合のUXを模倣して、フォームレイアウトで孤立したフィールドがハイライト表示されます
+- 壊れたリレーションの改善:リレーションマネージャーでリレーションがまだ利用可能な場合はリレーション名を保持します。
 
 <img src="images/entries/5501d969ec51c06d6ecf49c691c484bec4d08b33.gif" class="img-responsive img-rounded" />
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Add a search box to Atrributes Form Designer
-In line with [QEP#401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md), the Drag and Drop form designer now includes a search box to filter items by name or alias, making it much easier to work with tables and datasets that include a lot of attribute fields.
+### 機能: 属性フォームデザイナーへの検索ボックスの追加
+[QEP#401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md) に従って、ドラッグ＆ドロップフォームデザイナーに名前またはエイリアスでアイテムをフィルタリングする検索ボックスが追加されました。これにより、属性フィールドが多数あるテーブルやデータセットでの作業が格段に容易になります。
 
-This filter works across both the Available Widgets and the Form Layout panels.
+このフィルターは 利用可能なウィジェットパネルとフォームレイアウトパネルの両方で機能します。
 
 <img src="images/entries/3fefddf7d32b70bf849e390847eca7904ca85ea0.png" class="img-responsive img-rounded" />
 
@@ -325,110 +325,110 @@ This feature was funded by [the QGIS user group Switzerland](https://qgis.ch)
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ## 分析ツール
-### Feature: Add input parameters to the toolbox in the modeler
-A single "Toolbox" panel has been added to the Graphical Modeler, which merges the objects from the Input and Algorithm panels into a single panel. This simplifies the UX of the Graphical Modeler, allowing users to use the search filters rather than manage separate tabs for modeler tools.
+### 機能: モデラーのツールボックスへの入力パラメーターの追加
+グラフィカルモデラーに単一の　"ツールボックス" パネルが追加されました。これにより入力パネルとアルゴリズムパネルのオブジェクトが1つのパネルに統合されます。これによりグラフィカルモデラーのUXが簡素化され、モデラーツールの個別タブを管理するのではなく検索フィルターを使用できるようになります。
 
 <img src="images/entries/2372c98c1724436a5d872bab22bd356ab6bae5d8.png" class="img-responsive img-rounded" />
 
-This feature was funded by [Hauts-de-France](https://www.hautsdefrance.fr/)
+この機能開発には [Hauts-de-France](https://www.hautsdefrance.fr/) の資金提供を受けました
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
+この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
 ## プロセシング
-### Feature: Port SAGA "Fill Sinks Wang & Liu" to native tool
-This highly in-demand tool seemed to be fragile and error-prone when run via the SAGA Processing Plugin.
+### 機能: SAGAの "Fill Sinks Wang & Liu" のネイティブツールへの移植
+このニーズの高いツールは、SAGAプロセッシングプラグイン経由で実行すると不安定でエラーが発生しやすい状況でした。
 
-A new native tool has been provided to provide an optimized out-of-the-box tool that is stable and effective.
+安定していて効果的な、最適化されたすぐに使えるツールとして新しいネイティブツールが提供されました
 
-Note that, as this implementation is a clone of the SAGA implementation, bugs present in the source will be present in the new native tool.
+なお、この実装はSAGA実装のクローンであるため、ソースに存在するバグは新しいネイティブツールにも存在します。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add creation options UI to raster calculator
-Raster creation options are now exposed in the raster calculator UI for both the native dialog and within the Processing Algorithm dialog.
+### 機能: ラスター計算機への作成オプションUIの追加
+ラスター計算機のUIで、ネイティブダイアログとプロセッシングアルゴリズムダイアログの両方にラスター作成オプションが公開されるようになりました。
 
 <img src="images/entries/f95b1f5cf9163bbb300ce45564d4e1a7a0877271.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Batch processing temporary output
-Temporary output layers are now supported in the Batch processing utility, improving the ability to generate intermediate data sources or perform experiments more efficiently.
+### 機能: バッチ処理の一時出力
+バッチ処理ユーティリティで一時出力レイヤーがサポートされるようになりました。これにより中間データソースの生成や実験をより効率的に行う能力が向上します。
 
 <img src="images/entries/6c4eab5ac90474f0d924f460586ff36b9c8df288.png" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+この機能開発には Ocean Winds の資金提供を受けました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
-### Feature: Add basic drag and drop support in the model designer
-The QGIS Graphical Modeler now supports independent sockets connected to model nodes, which can be interactively connected via drag and drop.
+### 機能: モデルデザイナーにおける基本的なドラッグアンドドロップ機能の追加
+QGISグラフィカルモデラーがモデルノードに接続された独立したソケットをサポートするようになり、ドラッグ＆ドロップでインタラクティブに接続できるようになりました。
 
-This allows users to quickly and easily connect an output from one node to a specified input on another without configuring each node's inputs individually.
+これにより、各ノードの入力を個別に設定することなく、あるノードの出力を別のノードの特定の入力に素早く簡単に接続できるようになります。
 
 <img src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
-### Feature: Processing raster rank algorithm
-The new "Raster rank" algorithm takes a collection of rasters as input and creates an output with cell values matching the rank order of a list of cell values taken from the input collection of rasters.
+この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
+### 機能: プロセッシングラスターランクアルゴリズム
+新しい "Raster rank" アルゴリズムは、ラスターのコレクションを入力として受け取り、入力ラスターコレクションから取得したセル値リストのランク順に一致するセル値を持つ出力を作成します。
 
-For example, if the list of input values for a given cell is \[10,20,30,40\] and the rank is 2, the output value will be 20.
+例えば、あるセルの入力値リストが  \[10,20,30,40\]  でランクが2の場合、出力値は20になります。
 
-The algorithm also allows for a negative index rank. Given the same list of input values, \[10,20,30,40\], and using the rank value -2, the output value would be 30.
+このアルゴリズムでは負のインデックスランクも使用できます。同じ入力値リスト  \[10,20,30,40\] でランク値-2を使用した場合、出力値は30になります。
 
-Finally, the algorithm offers to nodata handling behavior. By default, nodata values are excluded from the list, and a given output cell will only be set to nodata if the rank is greater than the values list size. Users can also pick an alternative behavior, whereas one or more nodata values for a given cell in the input layers will result in a nodata value for that output cell.
+さらに、このアルゴリズムはnodataの処理動作を提供します。デフォルトでは、nodata値はリストから除外され、ランクが値リストのサイズより大きい場合にのみ出力セルがnodataに設定されます。ユーザーは代替動作を選択することもでき、入力レイヤーの特定のセルに1つ以上のnodata値がある場合、その出力セルはnodata値になります。
 
 <img src="images/entries/8fe5df608b4c445246e6e0f4379304e062e20b88" class="img-responsive img-rounded" />
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 ## アプリケーションとプロジェクトのオプション
-### Feature: Add project setting for scale calculation, including new "scale at equator" method
-A new project-level setting for the scale calculation method has been added, with choices for:
-- at top of map
-- at bottom of map
-- at middle of map
-- horizontal average
-- scale at equator
+### 機能: 新しい "scale at equator" メソッドを含む、スケール計算のプロジェクト設定の追加
+スケール計算方法のプロジェクトレベル設定が追加されました。選択肢は以下の通りです：
+- 地図の上部分の縮尺
+- 地図の下部分の縮尺
+- 地図の中央の縮尺
+- 上中下の縮尺の平均
+- 常に赤道上の縮尺
 
-Changing the scale method impacts numerous system behaviors, including:
-- New layout scale bars will default to the project's scale calculation method
-- The scale calculations will be adjusted, affecting project aspects including:
-  - status bar widget map renders
-  - `@map_scale` and similar scale-related API methods
-  - scale based visibility of layers and symbols
-- Processing algorithms which render maps will respect the project scale calculation method
-- Scale method affects QGIS server map rendering
+スケール方法の変更は以下を含む多数のシステム動作に影響します:
+- 新しいレイアウトスケールバーはプロジェクトのスケール計算方法をデフォルトとして使用します。
+- スケール計算が調整され、以下を含むプロジェクトの側面に影響します:
+  - ステータスバーウィジェットのマップレンダリング
+  - `@map_scale` およびその他のスケール関連APIメソッド
+  - レイヤーとシンボルのスケールベースの表示
+- マップをレンダリングするプロセッシングアルゴリズムはプロジェクトのスケール計算方法に従います。
+- スケール方法はQGISサーバーのマップレンダリングに影響します。
 
-Note that symbology sizes determined in map units are NOT affected by this setting.
+ マップ単位で決定されるシンボロジーのサイズはこの設定の影響を受けないことに注意してください。
 
-The new "scale at equator "scale calculation method always calculates the scale at the equator, regardless of the actual visible map extent. It can be used to provide a consistent, static scale for maps in geographic reference systems, regardless of the latitudes actually visible in the map. Note that this method is only applicable when calculating scales with a degree-based reference system.
+新しい "常に赤道上の縮尺" 計算方法は、実際の表示マップ範囲に関わらず、常に赤道でのスケールを計算します。これにより、地図に実際に表示されている緯度に関わらず、地理座標系のマップに一貫した静的なスケールを提供するために使用できます。なお、この方法は度数ベースの参照系でスケールを計算する場合にのみ適用可能です。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add multiple country codes filter to Nominatim Geocoder Locator
-A new optional configuration value for the Nominatim Geocoder Locator allows filtering results to one or more countries by providing a comma-separated string of the [Two-letter country codes](https://wiki.openstreetmap.org/wiki/Nominatim/Country_Codes) a user would like to restrict their results to.
+### 機能: Nominatimジオコーダーロケーターへの複数の国コードフィルターの追加
+Nominatimジオコーダーロケーターの新しいオプション設定値により、結果を制限したい  [2文字の国コード](https://wiki.openstreetmap.org/wiki/Nominatim/Country_Codes) をカンマ区切りの文字列で指定することで、1つまたは複数の国に結果をフィルタリングできるようになりました。
 
 <img src="images/entries/ad98e211c26bc952c65e8c84b0323c866cc293f0" class="img-responsive img-rounded" />
 
-This feature was funded by [level2](https://level2.si/)
+この機能は [level2](https://level2.si/) の資金提供で開発されました
 
-This feature was developed by [Uroš Preložnik](https://github.com/uprel)
+この機能は [Uroš Preložnik](https://github.com/uprel) によって開発されました
 ## Profile Plots
-### Feature: Add support for subsections indicator
-Profile plots now support the display of subsection indicators, which are rendered as vertical lines in the profile tool. This is based on outcomes from [QEP#260](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/260) and supports custom indicator symbology as well as providing subsection indicators on both the Elevation Profile view and Print Layout elements.
+### 機能: サブセクションインジケーターのサポートの追加
+プロファイルプロットがサブセクションインジケーターの表示をサポートするようになりました。インジケーターはプロファイルツールで垂直線としてレンダリングされます。これは [QEP#260](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/260) の成果に基づいており、カスタムインジケーターシンボロジーをサポートするとともに、標高プロファイルビューと印刷レイアウト要素の両方でサブセクションインジケーターを提供します。
 
 <img src="images/entries/4eb01abb7bde11412b39323f0dc89ac13958e050.png" class="img-responsive img-rounded" />
 
-This feature was funded by BRGM
+この機能は BRGM の資金提供によって開発されました
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 ## ブラウザ
-### Feature: Port SQL Query History to Browser
-The database query history panel is now displayed in the Execute SQL dialog on the browser, in line with [QEP#332](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-332-sql-query-history.md).
+### 機能: SQLクエリ履歴のブラウザーへの移植
+ [QEP#332](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-332-sql-query-history.md) に沿って、データベースクエリ履歴パネルがブラウザーのSQLの実行ダイアログに表示されるようになりました。
 
-This adds a new top-level action to open the query history window.
+クエリ履歴ウィンドウを開くための新しいトップレベルアクションが追加されます。
 
 <img src="images/entries/0790aa10b23a8a21663586201234bb438b88bb21.png" class="img-responsive img-rounded" />
 
-This feature was funded by QGIS grant program 2025
+この機能は QGIS grant program 2025 の資金提供によって開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Improved project management for PostgreSQL stored Projects
-QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
+### 機能: PostgreSQL保存プロジェクトのプロジェクト管理の改善
+QGISのブラウザーに、PostGISデータベースに保存されたQGISプロジェクトを操作するオプションが追加されました。新しい機能には以下が含まれます:
 - プロジェクト名を変更
 - プロジェクトの削除
 - プロジェクトを複製
@@ -436,91 +436,91 @@ QGIS now includes options in the browser that allow manipulating QGIS Projects s
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />
 
-This feature was funded by Ocean Winds
+この機能開発には Ocean Winds の資金提供を受けました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
-### Feature: Show dialog when importing tables via browser and give users options to control import
-A new dialog will prompt users for more comprehensive import configuration when dragging layers into data sources in the QGIS Browser, emulating functionality provided by the DB Manager Plugin for data imports.
+### 機能: ブラウザーからテーブルをインポートする際のダイアログ表示とインポート制御オプションの提供
+QGISブラウザーでレイヤーをデータソースにドラッグする際、DBマネージャープラグインのデータインポート機能を模倣した、より包括的なインポート設定を促す新しいダイアログが表示されるようになりました。
 
-Note that this only works when a single layer is selected, and using multiple selections will continue to execute an immediate import.
+なお、これは単一のレイヤーが選択されている場合にのみ機能し、複数選択の場合は引き続き即時インポートが実行されます。
 
-A new "Import Vector Table.." context menu item is also provided to allow importing directly from the current project layers into a target schema.
+現在のプロジェクトレイヤーから対象スキーマに直接インポートできる新しい "Import Vector Table.." コンテキストメニュー項目も追加されました。
 
-The dialog options include:
-- Renaming the destination table
-- Replace destination
-- Set primary key
-- Set geometry column
-- Set destination CRS
-- Set output table comment
+ダイアログのオプションには以下が含まれます:
+- インポート先テーブルの名前変更
+- インポート先の置き換え
+- 主キーの設定
+- ジオメトリ列の設定
+- インポート先CRSの設定
+- 出力テーブルのコメントの設定
 
-This work entailed refactoring a number of internal architectural elements regarding the implementation of the QGIS Browser and data providers. It partly based on efforts by [@JanCaha](https://github.com/JanCaha) to port the DB Manager Postgres import functionality to the QGIS Browser.
+この作業では、QGISブラウザーとデータプロバイダーの実装に関する多くの内部アーキテクチャ要素のリファクタリングが必要でした。これは部分的に、DBマネージャーのPostgresインポート機能をQGISブラウザーに移植するための  [@JanCaha](https://github.com/JanCaha) による取り組みに基づいています。
 
-Note that this feature does not currently support Oracle databases, due to legacy functionality leveraged by the oracle data provider.
+なお、この機能はOracleデータプロバイダーが活用しているレガシー機能の制約により、現時点ではOracleデータベースをサポートしていません。
 
 <img src="images/entries/eedf110211aebb2acf61d89108d15ada41b616c8" class="img-responsive img-rounded" />
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Move table to another schema for PostgreSQL Provider
-PostgreSQL Tables can now be moved to another schema directly in the QGIS Browser.
+### 機能: PostgreSQLプロバイダーでの別スキーマへのテーブルの移動
+QGISブラウザーから直接、PostgreSQLテーブルを別のスキーマに移動できるようになりました。
 
-This feature was funded by Ocean Winds
+この機能開発には Ocean Winds の資金提供を受けました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
-### Feature: Enable field rename for PostgreSQL
-QGIS now supports renaming fields for PostgreSQL tables directly in the QGIS Browser interface.
+### 機能: PostgreSQLのフィールド名変更を有効化
+QGISブラウザーインターフェースから直接、PostgreSQLテーブルのフィールド名を変更できるようになりました。
 
-This feature was funded by Ocean Winds
+この機能開発には Ocean Winds の資金提供を受けました
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## データプロバイダ
-### Feature: Add a WFS parameter for featureMode
-The WFS Provider URI and UI now support a "featureMode" parameter, which supports options for :
-- default (Use the server default configuration)
-- SimpleFeatures (Enable simplification on returned features)
-- ComplexFeatures (Disable simplification on returned features)
+### 機能: featureModeのWFSパラメーターの追加
+WFSプロバイダーのURIとUIが "featureMode" パラメーターをサポートするようになりました。以下のオプションをサポートします:
+- デフォルト (サーバーのデフォルト設定を使用)
+- 単純地物 (返された地物の単純化を有効にする)
+- 複雑な地物 (返された地物の単純化を無効にする)
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
-### Feature: Add connection setting for restricting PostgreSQL Schema
-This feature allows users to specify a single schema to limit a Postgres connection to, much like the equivalent Oracle provider setting.
+### 機能: PostgreSQLスキーマを制限する接続設定の追加
+この機能により、Oracle プロバイダーの同等設定と同様に、Postgres接続を特定の1つのスキーマに制限するよう指定できます。
 
-When set, only tables from the matching schema will be included in the browser panel and data source select for the connection.
+設定すると、一致するスキーマのテーブルのみが接続のブラウザーパネルとデータソース選択に含まれます。
 
-This can be used to limit the database work required to populate tables for a connection pointing to a large database store.
+これにより、大規模なデータベースストアを指す接続のテーブル取得に必要なデータベース処理を制限するために使用できます。
 
 <img src="images/entries/14da725b2b420a05075ba1b09c83786bf5c839f3" class="img-responsive img-rounded" />
 
-This feature was funded by Regiodata
+この機能開発には Regiodata からの資金提供を受けています
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add option to use POST requests for WFS connections
-By default, connecting to a WFS server will be done using GET requests; however, users will now be able to switch specific WFS connections to utilize the POST HTTP method, allowing more flexibility in web service configurations.
+### 機能: WFS接続でのPOSTリクエストの使用オプションの追加
+デフォルトでは、WFSサーバーへの接続はGETリクエストを使用しますが、特定のWFS接続をPOSTのHTTPメソッドを使用するように切り替えることができるようになり、Webサービスの設定においてより柔軟な対応が可能になります。
 
 <img src="images/entries/4a70618846a5eac6a459a0262887e3474bb1c091" class="img-responsive img-rounded" />
 
-This feature was funded by Dorset Council
+この機能を開発には Dorset Council の資金提供を受けています
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Allow SQL queries as layer sources from SQL Server
-QGIS now allows loading SQL Server queries as map layers from the browser and updating the SQL for existing query layers.
+### 機能: SQL ServerからのSQLクエリをレイヤーソースとして使用可能に
+QGISでブラウザーからSQL Serverのクエリをマップレイヤーとして読み込んだり、既存のクエリレイヤーのSQLを更新したりできるようになりました。
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## QGISサーバー
-### Feature: Allow configuring the server project cache size
-A new `QGIS_SERVER_PROJECT_CACHE_SIZE` environment variable has been added, which allows the configuration of the QCache cost, which was previously a hardcoded value.
+### 機能: サーバープロジェクトのキャッシュサイズの設定を可能に
+新しい環境変数 `QGIS_SERVER_PROJECT_CACHE_SIZE` が追加されました。これにより、以前はハードコードされていたQCacheコストを設定できるようになります。
 
 This feature was developed by [Sandro Mani](https://github.com/manisandro)
-### Feature: Add server properties on layer tree group
-Users can now edit additional server properties on a layer tree group that will be returned in the GetCapabilities request. Available properties have been extended beyond the previous options of short name, title, and abstract to include:
+### 機能: レイヤーツリーグループへのサーバープロパティの追加
+GetCapabilitiesリクエストで返されるレイヤーツリーグループの追加サーバープロパティを編集できるようになりました。利用可能なプロパティは、以前の短い名前、タイトル、概要に加えて以下まで拡張されました:
 - キーワード
-- Data URL (with format)
-- Attribution title and URL
+- データURL (フォーマット付き)
+- 帰属タイトルとURL
 - メタデータURL
-- Legend URL and format (by default, one will be generated)
+- 凡例URLと形式（デフォルトでは自動生成されます）
 
 <img src="images/entries/41632eca99d103daf60c2d90b21ce9a543dfc53f.png" class="img-responsive img-rounded" />
 
@@ -528,29 +528,29 @@ Users can now edit additional server properties on a layer tree group that will 
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 ## プログラム可能
-### Feature: Add method to convert shapely geometry to QGIS Geometry
-In line with [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
+### 機能: ShapelyジオメトリをQGISジオメトリに変換するメソッドの追加
+ [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) に沿って、ShapelyをオプションのI依存関係として維持しながらshapelyジオメトリライブラリとの統合を向上させるため、shapelyオブジェクトからQgsGeometryオブジェクトを生成する新しい QgsGeometry.from_shapely() メソッドが提供されました。
 
 This feature was developed by [Till Frankenbach](https://github.com/merydian)
-### Feature: Expose QGIS GPS Tools to Python API and Plugins
-The GPS tools class is now available in the PyQGIS API via a brand new `QgsAppGpsTools` class, accessed via `QgisInterface::gpsTools()`, so that plugins have more control on the QGIS GPS tracking session.
+### 機能: QGIS GPSツールのPython APIとプラグインへの公開
+GPSツールクラスが `QgisInterface::gpsTools()` を通じてアクセスできる新しい `QgsAppGpsTools` クラスとしてPyQGIS APIで利用可能になり、プラグインがQGIS GPSトラッキングセッションをより細かく制御できるようになりました。
 
-From QGIS 3.44 on, plugins can create a vector layer feature from the current GPS track, using the method `iface.gpsTools().createFeatureFromGpsTrack()`.
+ QGIS 3.44以降、プラグインは `iface.gpsTools().createFeatureFromGpsTrack()` メソッドを使用して現在のGPSトラックからベクターレイヤーの地物を作成できるようになりました。
 
-This also exposes additional functionalities, such as setting the GPS track line symbol by changing the corresponding setting in `QgsOptions` and updating the eventual current GPS track geometry accordingly, e.g. `iface.gpsTools().setGpsTrackLineSymbol( line_symbol )`
+また、QgsOptions の対応する設定を変更してGPSトラックラインシンボルを設定し、それに応じて最終的な現在のGPSトラックジオメトリを更新するなど、追加の機能も公開されています。例: `iface.gpsTools().setGpsTrackLineSymbol( line_symbol )`
 
-This feature was funded by [the Danish Nature Agency, Naturstyrelsen](https://naturstyrelsen.dk/)
+この機能は [the Danish Nature Agency, Naturstyrelsen](https://naturstyrelsen.dk/) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ## 注目すべき修正
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
-| CSV Import to Geopackage ( x/y data) ignores more than 5 Mio rows | [\#60966](https://github.com/qgis/QGIS/issues/60966) | Not reproducible |  |
+| CSV Import to Geopackage ( x/y data) ignores more than 5 Mio rows | [\#60966](https://github.com/qgis/QGIS/issues/60966) | 再現不可 |  |
 | OGC API: Feature Creation Request Fails When Location Header is in Lowercase | [\#61729](https://github.com/qgis/QGIS/issues/61729) | [PR \#61814](https://github.com/qgis/QGIS/pull/61814) | [PR \#61835](https://github.com/qgis/QGIS/pull/61835) |
 | \[Backport 3.40\] Pick missing commits | [mailing list](https://lists.osgeo.org/pipermail/qgis-developer/2025-May/067555.html) |  | [PR \#61843](https://github.com/qgis/QGIS/pull/61843) |
 | Processing : unable to import non spatial table into PostGreSQL with OGR command with processing | [\#61655](https://github.com/qgis/QGIS/issues/61655) | [PR \#61868](https://github.com/qgis/QGIS/pull/61868) | [PR \#62023](https://github.com/qgis/QGIS/pull/62023) |
-| Impossibility to save a Null value in a Interger64 field for geopackage files | [\#61787](https://github.com/qgis/QGIS/issues/61787) | can't reproduce |  |
+| Impossibility to save a Null value in a Interger64 field for geopackage files | [\#61787](https://github.com/qgis/QGIS/issues/61787) | 再現不可 |  |
 | Error in GML handling in response to a GetFeature request in the WFS service | [\#60879](https://github.com/qgis/QGIS/issues/60879) | [PR \#61872](https://github.com/qgis/QGIS/pull/61872) | [PR \#61895](https://github.com/qgis/QGIS/pull/61895) |
 | \[Tests\] Fix and unblock PyQgsLayerDefinition on QT6 |  | [PR \#61874](https://github.com/qgis/QGIS/pull/61874) | N/A |
 | \[Tests\] Fix test_core_ogcutils on QT6 |  | [PR \#61876](https://github.com/qgis/QGIS/pull/61876) | N/A |
@@ -572,7 +572,7 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | Inconsistent contents in ogcapi openapi spec | [\#61848](https://github.com/qgis/QGIS/issues/61848) | [PR \#61903](https://github.com/qgis/QGIS/pull/61903) | [PR \#61922](https://github.com/qgis/QGIS/pull/61922) |
 | QGIS Server does not list one layer in WMS GetCapabilities if datum transformation is used | [\#61293](https://github.com/qgis/QGIS/issues/61293) | フィードバック |  |
 | QGIS server 3.40.4 - Invalid cache strategy | [\#60947](https://github.com/qgis/QGIS/issues/60947) | [PR \#61907](https://github.com/qgis/QGIS/pull/61907) | N/A |
-| Server LTR: OAPIF/WFS3 describe collections malfunction - empty pg layer with UTM zone SRID | [\#60686](https://github.com/qgis/QGIS/issues/60686) | can't reproduce |  |
+| Server LTR: OAPIF/WFS3 describe collections malfunction - empty pg layer with UTM zone SRID | [\#60686](https://github.com/qgis/QGIS/issues/60686) | 再現不可 |  |
 | Wrong rendering for HIGHLIGHT_LABEL_ROTATION above 89° | [\#54598](https://github.com/qgis/QGIS/issues/54598) | Old issue: asked the OP and put on feedback |  |
 | CGIDIR default for UNIX is wrong (bin, should be libexec/cgi-bin or at least not bin) | [\#54424](https://github.com/qgis/QGIS/issues/54424) | Old issue: asked for feedback |  |
 | Performance issue on editing large PostGIS layers. | [\#61879](https://github.com/qgis/QGIS/issues/61879) | Not enough info: put on feedback and recommended to hire a consultant |  |
@@ -631,8 +631,8 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/en/)
 | Mesh styling, precision seems too small? | [\#50950](https://github.com/qgis/QGIS/issues/50950) | [PR \#61905](https://github.com/qgis/QGIS/pull/61905) | [PR \#61926](https://github.com/qgis/QGIS/pull/61926) |
 | Inconsistency in PostgreSQL / PostGIS connection / layer dialog windows | [\#59886](https://github.com/qgis/QGIS/issues/59886) | [PR \#61908](https://github.com/qgis/QGIS/pull/61908) | N/A |
 | Translate geometry does not create a 3D vector from 2D if deltaZ is an expression | [\#56495](https://github.com/qgis/QGIS/issues/56495) | [PR \#61906](https://github.com/qgis/QGIS/pull/61906) | [PR \#61933](https://github.com/qgis/QGIS/pull/61933) |
-| After deleting the newly added XYZ layer...still exists | [\#53933](https://github.com/qgis/QGIS/issues/53933) | can't reproduce |  |
-| TypeError: EnumType.**call**()... | [\#58312](https://github.com/qgis/QGIS/issues/58312) | can't reproduce |  |
+| After deleting the newly added XYZ layer...still exists | [\#53933](https://github.com/qgis/QGIS/issues/53933) | 再現不可 |  |
+| TypeError: EnumType.**call**()... | [\#58312](https://github.com/qgis/QGIS/issues/58312) | 再現不可 |  |
 | projects/anonymize\_\*\_projects doesn't affect projectMetadata.author | [\#42413](https://github.com/qgis/QGIS/issues/42413) | [PR \#61945](https://github.com/qgis/QGIS/pull/61945) | [PR \#61959](https://github.com/qgis/QGIS/pull/61959) |
 | Inconsistencies in providers connection dialogs | [\#43951](https://github.com/qgis/QGIS/issues/43951) | [PR \#61948](https://github.com/qgis/QGIS/pull/61948) | N/A |
 | Source manager and WMS configuration dialog too tall | [\#60477](https://github.com/qgis/QGIS/issues/60477) | [PR \#61948](https://github.com/qgis/QGIS/pull/61948) | N/A |
@@ -645,12 +645,12 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/en/)
 | Changing a new project's CRS does not change the annotation CRS | [\#48046](https://github.com/qgis/QGIS/issues/48046) | can't reproduce, already fixed |  |
 | "editable" property misleading in JSON view | [\#47755](https://github.com/qgis/QGIS/issues/47755) | [PR \#62064](https://github.com/qgis/QGIS/pull/62064) | N/A |
 | ‘Current CRS’ icon shows previous CRS | [\#53768](https://github.com/qgis/QGIS/issues/53768) | [PR \#62209](https://github.com/qgis/QGIS/pull/62209) | [PR \#62236](https://github.com/qgis/QGIS/pull/62236) |
-| Crash when clicking on relation table node | [\#56481](https://github.com/qgis/QGIS/issues/56481) | can't reproduce |  |
+| Crash when clicking on relation table node | [\#56481](https://github.com/qgis/QGIS/issues/56481) | 再現不可 |  |
 | Documentation file grass7.txt is not up-to-date | [\#29140](https://github.com/qgis/QGIS/issues/29140) | [PR \#62210](https://github.com/qgis/QGIS/pull/62210) | N/A |
 | AttributeError: 'NoneType' object has no attribute 'fields' | [\#62224](https://github.com/qgis/QGIS/issues/62224) | [PR \#62253](https://github.com/qgis/QGIS/pull/62253) | [PR \#62291](https://github.com/qgis/QGIS/pull/62291) |
 | Selected field not cleared when changing layer in processing | [\#39351](https://github.com/qgis/QGIS/issues/39351) | [PR \#62241](https://github.com/qgis/QGIS/pull/62241) | [PR \#62305](https://github.com/qgis/QGIS/pull/62305) |
 | pyqgis: QgsGraph | [\#56172](https://github.com/qgis/QGIS/issues/56172) | [PR \#62316](https://github.com/qgis/QGIS/pull/62316) | N/A |
-| qgsidentifyresultsdialog.cpp: ‘best approach’ vs. ‘old fragile approach’ | [\#61499](https://github.com/qgis/QGIS/issues/61499) | can't reproduce |  |
+| qgsidentifyresultsdialog.cpp: ‘best approach’ vs. ‘old fragile approach’ | [\#61499](https://github.com/qgis/QGIS/issues/61499) | 再現不可 |  |
 | exporting to .dxf sets units to imperial inch | [\#50579](https://github.com/qgis/QGIS/issues/50579) | works for me, fixed upstream |  |
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)

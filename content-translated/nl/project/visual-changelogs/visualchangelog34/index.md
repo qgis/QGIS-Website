@@ -14,13 +14,13 @@ type: visual-changelog
 
 Datum uitgave 26-10-2018
 
-The first long-term release (LTR) of QGIS 3. QGIS 3.4 just released. After five consolidation point releases (3.4.5) it will replace the previous LTR in the package repositories in February 2019 (see [release schedule]({{< ref "resources/roadmap#release-schedule" >}})). This is a giant leap forward for the project - our first Long Term Release based on the 3.x platform. For users moving over from the 2.18 LTR there is a huge list of new features and impactful changes in this new LTR version. Please bear in mind that 3.x plugins are incompatible with 2.x plugins so review your plugin usage carefully - and if possible help to migrate old plugins to the new platform. If you have not already done so, take a look at the changelogs from [Version 3.0](../visualchangelog30) and [Version 3.2](../visualchangelog32) to understand the full scope of changes in the 3.4 release.
+De eerste langetermijnuitgave (LTR) van QGIS 3. QGIS 3.4 zojuist uitgegeven. Na vijf consolidatiepuntuitgaven (3.4.5) zal het de eerdere LTR vervangen in de opslagplaatsen van de pakketten in februari 2019 (bekijk [uitgaveschema]({{< ref "resources/roadmap#release-schedule" >}})). Dit is een enorme stap voorwaarts voor het project - onze eerste Long Term Release gebaseerd op het 3.x-platform. Voor gebruikers die overkomen van de 2.18 LTR is er een enorme lijst van nieuwe mogelijkheden en wijzigingen met veel impact in de nieuwe versie van de LTR. Onthoud dat plug-ins voor 3.x niet compatibel zijn met plug-ins voor 2.x, dus bekijk uw gebruik van plug-ins zorgvuldig - en help indien mogelijk om oude plug-ins te migreren naar het nieuwe platform. Als u dat nog niet gedaan heeft, kijk eens in de logs met wijzigingen van [Versie 3.0](../visualchangelog30) en [Versie 3.2](../visualchangelog32) om het volledige bereik van de wijzigingen in de uitgave 3.4 te begrijpen.
 
 **Dankwoord**
 
 We willen onze dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en alle andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen). Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn bij het opwaarderen van QGIS, kijk dan ook eens op [qgis.org](https://qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate/donors.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current supporters is provided below - our very great thank you to all of our supporters!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst met donoren]({{&lt; ref &quot;/funding/donate/donors.md&quot; &gt;}}). Als u een officieel dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende lidmaatschappen]({{< ref "/funding/donate/donors.md" >}}) voor details. Ondersteuning van QGIS helpt ons om fondsen te verkrijgen voor onze halfjaarlijkse ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van supporters wordt hieronder weergegeven - een welgemeend bedankt voor al onze ondersteuners!
 
 {{<fund type="active" >}}
 
@@ -31,7 +31,7 @@ QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor he
 {{<table-of-contents >}}
 ## Algemeen
 ### Mogelijkheid: Flatpak
-QGIS is now available as a flatpak application on [flathub](https://flathub.org/apps/search/qgis) Flatpak (formerly xdg-app) is a software utility for software deployment, package management, and application virtualization for Linux desktop computers. It allows users to install different QGIS versions on linux without having to recompile or use Docker. It is a full package with all libraries included, and it uses its own user profile locations. So you\'ll need some disk space and new habits working with flatpak, but it rocks!
+QGIS is nu beschikbaar als een toepassing in Flatpak op [flathub](https://flathub.org/apps/search/qgis) Flatpak (eerder xdg-app) is een softwaregereedschap voor het uitrollen van software, beheer van pakketten en virtualisatie van toepassingen voor Linux desktop computers. Het stelt gebruikers in staat om verschillende versies van QGIS te installeren op Linux zonder dat ze opnieuw dienen te compileren of Docker te gebruiken. Het is een volledig pakket waarin alle bibliotheken zijn opgenomen, en het gebruikt zijn eigen locaties voor gebruikersprofielen. U zult dus enige schijfruimte nodig hebben en nieuwe gewoonten moeten ontwikkelen bij het werken met Flatpak, maar het is geweldig!
 
 [![image28](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.webp)](images/entries/48295bdab734a17ef03ea6bacf182708618e0980.webp)
 
@@ -53,22 +53,22 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://qgis.org)
 ## Expressies
 ### Mogelijkheid: Nieuwe functies en variabelen voor expressies
 Vele nieuwe functies voor expressies zijn toegevoegd aan QGIS 3.4. Deze omvatten vele handige functies voor het werken met en manipuleren van array- en kaartobjecten (woordenboek).
-- **json_to_map**: Converts a JSON encoded string value to a map (dictionary) type object
-- **map_to_json**: Converts a map (dictionary) type object to a JSON encoded string value
-- **hstore_to_map**: Converts a hstore value to a map (dictionary) type object
-- **map_to_hstore**: Converts a map (dictionary) type object to a hstore value
-- **array_foreach** : Loops over an array and executes an expression on each item in the array, returning a new array containing each calculated value
-- **array_filter** : Filters an array according to an expression
-- **raster_value**: Returns a value sampled from a raster layer at a specified point
-- **to_dms**: Converts a numeric value to a Degrees, Minutes, Seconds formatted string
-- **to_dm**: Converts a numeric value to a Degrees, Minutes formatted string
-- **line_substring**: Returns the portion of a line (or curve) geometry which falls between the specified start and end distances (measured from the beginning of the line). Z and M values are linearly interpolated from existing values.
-- **generate_series(start,stop,step)**: Creates an array containing a sequence of numbers.
+- **json_to_map**: Converteert een met JSON gecodeerde waarde tekenreeks naar een kaart (dictionary) type object
+- **map_to_json**: Converteert een kaart (dictionary) type object naar een JSON gecodeerde waarde tekenreeks
+- **hstore_to_map**: Converteert een waarde hstore naar een kaart (dictionary) type object
+- **map_to_hstore**: Converteert een kaart (dictionary) type object naar een waarde hstore
+- **array_foreach** : Loopt door een array en voert een expressie uit op elk item in de array en geeft een nieuwe array terug die elke berekende waarde bevat
+- **array_filter** : Filtert een array overeenkomstig een expressie
+- **raster_value**: Geeft een monsterwaarde terug uit een rasterlaag op een gespecificeerd punt
+- **to_dms**: Converteert een numerieke waarde naar een als Graden, Minuten, Seconden opgemaakte tekenreeks
+- **to_dm**: Converteert een numerieke waarde naar een als Graden, Minuten opgemaakte tekenreeks
+- **line_substring**: Geeft het gedeelte van een lijn- (of booggeometrie) terug dat valt tussen de gespecificeerde begin- en eindafstanden (gemeten vanaf het begin van de lijn). Z- en M-waarden worden lineair geïnterpoleerd vanuit bestaande waarden.
+- **generate_series(start,stop,step)**: Maakt een array die een reeks nummers bevat.
 
 Aanvullend zijn enkele nieuwe variabelen beschikbaar gemaakt om te gebruiken binnen expressies van QGIS:
-- **\@canvas_cursor_point**: Contains a point value representing the current position of the mouse cursor within the main map canvas
-- **\@map_layers**: Contains an array of all layers which are visible within the map
-- **\@map_layer_ids**: Contains an array of all layer IDs for layers visible within the map
+- **\@canvas_cursor_point**: Bevat een puntwaarde die de huidige positie van de muiscursor weergeeft in het huidige kaartvenster
+- **\@map_layers**: Bevat een array van alle lagen die zichtbaar zijn op de kaart
+- **\@map_layer_ids**: Bevat een array van alle laag-ID's voor lagen die zichtbaar zijn op de kaart
 
 [![image2](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.webp)](images/entries/ced45b9dd1f58c80aef504344f515a28e33e9e4a.webp)
 
@@ -85,7 +85,7 @@ Dit werd mogelijk gemaakt door [OPENGIS.ch](https://www.opengis.ch/)
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch/)
 ## Kaartgereedschap
 ### Mogelijkheid: Objecten identificeren of selecteren, gebaseerd op bestaande polygoon
-Often it is useful to select/identify features that are covered by an existing polygon. For this, users can use \"Select Features by Polygon\" and \"Identify Features by Polygon\" tools, but it was necessary to manually trace the polygon of interest. This new feature allows user to right click on the map and pick an existing polygon feature at that location from popup menu - that polygon will be used as input for selection or identification.
+Vaak is het nuttig om objecten te selecteren/identificeren die worden bedekt door een bestaande polygoon. Hiervoor kunnen gebruikers de gereedschappen \"Objecten op polygoon selecteren\" en \"Objecten op polygoon identificeren\" gebruiken, maar het was nodig om de betreffende polygoon handmatig op te zoeken. Deze nieuwe mogelijkheid stelt de gebruiker in staat om met rechts op de kaart te klikken en een bestaand object polygoon uit te kiezen op die locatie vanuit het pop-upmenu - die polygoon zal worden gebruikt als invoer voor selectie of identificatie.
 
 [![image4](images/entries/ee07ddaa42114f923a4fae5429bd8d2f93e66ce5.webp)](images/entries/ee07ddaa42114f923a4fae5429bd8d2f93e66ce5.webp)
 
@@ -94,7 +94,7 @@ Dit werd mogelijk gemaakt door Leicestershire County Council
 Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Gebruikersinterface
 ### Mogelijkheid: Automatisch selecteren van geëxporteerde bestanden in bestandsbeheer
-Whenever a message bar item links to a created file (e.g. after exporting a layout or map layer), the link will now directly open the folder containing this file within the operating system file browser AND pre-select the created file. It\'s a super-handy shortcut speeding up file operations after an export from QGIS!
+Wanneer een item op de berichtenbalk linkt naar een gemaakt bestand (bijv. na exporteren van een lay-out of kaartlaag), zal die link nu direct de map in de bestandsbrowser van het bestandssysteem openen waarin dit bestand is opgenomen EN het gemaakte bestand selecteren. Het is een superhandige sneltoets die bewerkingen aan bestanden na een export vanuit QGIS versnellen!
 
 [![image5](images/entries/0ccd6bdae5b0df6d65c259ef08f38032fe4ee34f.gif)](images/entries/0ccd6bdae5b0df6d65c259ef08f38032fe4ee34f.gif)
 
@@ -108,9 +108,9 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen aan UX voor tijdelijke tekenlagen
-Temporary Scratch Layers in QGIS can be very handy when a \"throw-away\" layer is needed, such as when pre-processing data in multiple steps. However, they can be a trap for uniformed users who may not realise that the contents of the layer will be permanently lost when the current QGIS project is closed. Accordingly, a new indicator icon has been added which shows up next to any temporary scratch layers in the layer tree, making it immediately clear which layers are temporary only.
+Tijdelijke tekenlagen in QGIS kunnen zeer handig zijn als een \"weggooi\"-laag nodig is, zoals wanneer gegevens in meerdere stappen vooraf worden verwerkt. Zij kunnen echter een valkuil zijn voor gewone gebruikers die zich misschien niet realiseren dat de inhoud van de laag permanent verloren zal gaan als het huidige project van QGIS wordt gesloten. Overeenkomstig is een nieuw pictogram ter indicatie toegevoegd dat naast tijdelijke tekenlagen in de lagenboom wordt weergegeven, wat direct duidelijk maakt welke lagen slechts tijdelijk zijn.
 
-It\'s also much easier to transition these temporary layers to permanent disk-based formats. You can either click the new indicator icon or select \"Make Permanent\" from the layer context menu. QGIS will then prompt for a location to save the temporary layer to, then replaces it in place (keeping the same layer ID, style, form settings, etc).
+Het is ook veel eenvoudiger om deze tijdelijke tekenlagen over te zetten naar permanente op schijf-gebaseerde indelingen. U kunt ofwel klikken op het nieuwe pictogram voor indicatie of \"Permanent maken\" uit het contextmenu van de laag. QGIS zal dan vragen naar een locatie om de tijdelijke tekenlaag op te slaan, en vervangt deze ter plaatse (met behoud van dezelfde laag-ID, stijl, instellingen voor formulieren, etc.).
 
 [![image6](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)
 
@@ -118,15 +118,15 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen aan taakbeheer
-The QGIS task manager widget (shown in the status bar whenever a background task is running) now shows an estimated time remaining and completion time for long-running background tasks. This Estimated Time of Arrival is calculated using a simple linear interpolation based on the task\'s elapsed time and current progress, and allows users to know whether they\'ve only got time to make an instance coffee in the office kitchen or walk round the block for a proper barista made coffee before that long processing task completes\...
+De widget Taakbeheer van QGIS (weergegeven in de statusbalk wanneer een taak op de achtergrond wordt uitgevoerd) geeft nu een geschatte resterende tijdspanne aan en de tijd voor voltooien voor lang durende taken op de achtergrond. Deze geschatte tijd voor voltooiing wordt berekend met een eenvoudige lineaire interpolatie, gebaseerd op de voor de taak verstreken tijd en huidige voortgang. Ze stelt de gebruikers in staat te weten of ze alleen tijd hebben om een instantkoffie te maken in de kantoorkeuken, of een rondje te lopen en een echte barista een koffie te laten maken voor die lange verwerkingstaak is voltooid\…
 
-Additionally, QGIS uses the standard operating system progress reporting mechanisms on more platforms and occasions in QGIS 3.4. Some long running tasks (which don\'t run in the background) such as atlas exports now show their progress via the operating system mechanism, and throw up handy completion notifications.
+Aanvullend gebruikt QGIS het standaardmechanisme voor voortgangsrapportage van het besturingssysteem op meer platforms en gelegenheden in QGIS 3.4. Sommige langdurende taken (die niet op de achtergrond worden uitgevoerd), zoals het exporteren van atlas geven nu hun voortgang weer via het mechanisme voor het besturingssysteem, en laten handige notificaties met betrekking tot het voltooien zien.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Hyperlinks naar lokale vector- & rastergegevenssets in het paneel Informatie
-For local vector and raster datasets, the Information tab within the layer properties dialog now features source file path hyperlinks. Upon clicking on the hyperlink, the system\'s file navigator will open and automatically highlight the dataset.
+Voor lokale vector- en rastergegevenssets geeft de tab Informatie in het dialoogvenster Laageigenschappen nu hyperlinks naar het pad van de brondbestanden voor objecten weer. Bij het klikken op de hyperlink zal de bestandsnavigatie van het systeem worden geopend en automatisch de gegevensset accentueren.
 
 [![image7](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.webp)](images/entries/6891c502c6506b88398e9bfb3e266598823c5765.webp)
 
@@ -136,7 +136,7 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.imhere-asi
 ### Mogelijkheid: Verbeteringen aan stijlbeheer
 Het QGIS-dialoogvenster Stijlbeheer (dat gebruikers in staat stelt hun eigen bibliotheken met symbolen en kleurverlopen in te stellen en te beheren) opent nu niet-modaal, dus het kan nu naast het hoofdvenster van QGIS worden gebruikt (net zoals het dialoogvenster Lay-outbeheer en de vensters van Afdruklay-out ontwerpen).
 
-We\'ve also improved the preview of symbols within the Layer Styling dock, adding a toggle to switch between a large icon view and a detailed list view of symbols. Hovering over symbols (and colors!) now shows a large preview of the symbol. Finally, we\'ve made symbol lists more hi-dpi friendly.
+We hebben nu ook het voorbeeld van symbolen in het venster Laagstijl verbeterd, een schakelaar toegevoegd om te schakelen tussen een grote weergave van het pictogram en een gedetailleerde lijstweergave van symbolen. Met de muis over symbolen (en kleuren!) gaan geeft nu een groot voorbeeld van het symbool. Tenslotte hebben we symboollijsten meer hi-dpi-vriendelijk gemaakt.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -174,7 +174,7 @@ Dit werd mogelijk gemaakt door <https://github.com/pierreloicq>
 
 Deze mogelijkheid werd ontwikkeld door <https://github.com/pierreloicq>
 ### Mogelijkheid: Gedeeltelijk exporteren en importeren van QML
-When exporting and importing styles to and from `.qml` files it is now possible to select a subset of sections. This allows to save and restore parts of a layer configuration while omitting others. For example, it\'s possible to export only the symbology of a layer and when importing this QML style file into a layer, any configuration on the forms and widgets or other properties are unaffected. It is also possible to only handle single sections of a style when using copy/paste.
+Bij het exporteren en importeren van stijlen naar en vanuit `.qml`-bestanden is het nu mogelijk een subset van secties te selecteren. Dit maakt het mogelijk delen van een laagconfiguratie op te slaan of te herstellen, terwijl andere worden weggelaten. Het is bijvoorbeeld mogelijk om alleen de symbologie van een laag te exporteren en bij het importeren van dit QML-stijlbestand in een laag worden configuraties van de formulieren en widgets, of andere eigenschappen, niet beïnvloed. Het is ook mogelijk om alleen enkele secties van een stijl af te handelen bij het gebruiken van kopiëren/plakken.
 
 [![image10](images/entries/93836361649c4b182b46e143014d7f30be674187.webp)](images/entries/93836361649c4b182b46e143014d7f30be674187.webp)
 
@@ -183,7 +183,7 @@ Dit werd mogelijk gemaakt door [qwat group](http://qwat.org/)
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud (OPENGIS.ch GmbH)](https://www.opengis.ch)
 ## Digitaliseren
 ### Mogelijkheid: Verbeteringen aan GPS-tracking
-QGIS 3.4 extends the inbuilt GPS tracking support, adding \"acquisition interval\" and \"distance threshold\" parameters. These options can be used to keep the cursor stationary when the receiver is in static conditions.
+QGIS 3.4 vergroot de ingebouwde ondersteuning voor GPS-tracking door toevoeging van de parameters \"acquisition interval\" en \"distance threshold\". Deze opties kunnen worden gebruikt om de cursor stationair te houden als de ontvanger onder statische condities opereert.
 
 Dit werd mogelijk gemaakt door [Andrea Rossi](https://github.com/rossia)
 
@@ -197,7 +197,7 @@ Dit werd mogelijk gemaakt door [lbartoletti](https://github.com/lbartoletti)
 
 Deze mogelijkheid werd ontwikkeld door [lbartoletti](https://github.com/lbartoletti)
 ### Mogelijkheid: Gereedschap Punten kan alleen op de huidige laag werken
-The new vertex is a lot more productive now. It can move vertices of all editable layers at once, which is great to preserve cross layers topology. However in many cases, many of us don\'t want to modify all layers at once. We added a variation of the vertex map tool just for that.
+Het nieuwe gereedschap Punten is nu veel productiever. Het kan punten verplaatsen op alle bewerkbare lagen in één keer, wat goed is om topologie over lagen heen te behouden. Echter, in veel gevallen willen veel van ons niet alle lagen in één keer bewerken. We hebben daarom een variatie van het kaartgereedschap Punten toegevoegd.
 
 [![image12](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.webp)](images/entries/7c03fe883ce1558385fdc922797ab3a7342136d0.webp)
 
@@ -205,7 +205,7 @@ Dit werd mogelijk gemaakt door [Oslandia](https://oslandia.com)
 
 Deze mogelijkheid werd ontwikkeld door [Paul Blottiere (Oslandia)](https://oslandia.com/en/home-en/)
 ### Mogelijkheid: Kaartgereedschap Omgekeerde lijnen toegvoegd
-A long awaited feature ! No more external plugin or algorithm to reverse a line\'s direction!
+Een lang verwachte mogelijkheid ! Geen externe plug-in of algoritme meer om de richting van een lijn om te keren!
 
 [![image13](images/entries/988902221b0384cd96f880633f9d822faaad6903.webp)](images/entries/988902221b0384cd96f880633f9d822faaad6903.webp)
 
@@ -242,7 +242,7 @@ De volgende controles zijn beschikbaar:
 - Overlappingen
 - Ontbrekende punten op nabijgelegen polygonen
 
-This builds on top of the functionality of the geometry checker plugin which was implemented by [Sourcepole](https://sourcepole.ch).
+Dit is gebouwd bovenop de functionaliteit van de plug-in Geometry checker die werd geïmplementeerd door [Sourcepole](https://sourcepole.ch).
 
 [![image16](images/entries/a706012a7afb489573f08133f5885fe5bc1a3660.gif)](images/entries/a706012a7afb489573f08133f5885fe5bc1a3660.gif)
 
@@ -251,15 +251,15 @@ Dit werd mogelijk gemaakt door [Kanton Solothurn](https://www.so.ch/verwaltung/b
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ## Gegevensbeheer
 ### Mogelijkheid: Vertalen van projecten van QGIS
-Like QGIS and the plugins, the projects are translated with the Qt translation process. Means, it makes the translation according to a Qt Compiled Translation Source File (`.qm` file). When the user opens a project, QGIS checks for a `.qm` file laying in the same folder like the `.qgs` file, having the same name like the `.qgs` file and having the language-code as postfix of the users language (the language configured in the QGIS settings). To create the translation, in the project settings, there is an option to generate the `.ts` file, that can edited by programs like Qt Linguist or Transifex.
+Net als QGIS en de plug-ins worden de projecten vertaald met het Qt vertaalproces. Dit betekent dat het de vertaling maakt overeenkomstig een Qt Compiled Translation Source File (`.qm` file). Wanneer de gebruiker een project opent, controleert QGIS of er een `.qm`-bestand aanwezig is in dezelfde map als het bestand `.qgs`, dat dezelfde naam heeft als het bestand `.qgs` en dat de taalcode als achtervoegsel heeft van de taal van de gebruiker (de taal die is geconfigureerd in de instellingen van QGIS). Om de vertaling te maken in de projectinstellingen, is er een optie het `.ts`-bestand te genereren, dat kan worden bewerkt met programma's als Qt Linguist of Transifex.
 
-More information in [this blog post](https://new.opengis.ch/2018/09/11/qgis-speaks-a-lot-of-languages/)
+Meer informatie in [deze blogpost](https://new.opengis.ch/2018/09/11/qgis-speaks-a-lot-of-languages/)
 
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep en QGEP Project](https://www.qgis.ch/en)
 
 Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch/)
 ### Mogelijkheid: Attributentabel kan op verzoek worden vastgezet
-A button has been added to the Attribute Table toolbar for switching between docked and window mode on demand. Previously users had to change an option in the settings dialog and open a new table in order to switch between docked/undocked mode, but that\'s painful if you decide *after* a table is already open that you\'d like to dock/undock it\...!
+Een knop werd toegevoegd aan de werkbalk Attributentabel om op verzoek te kunnen schakelen tussen een modus vastgezet en modus als venster. Eerder dienden gebruikers een optie in het dialoogvenster Instellingen te wijzigen en een nieuwe tabel te openen om te kunnen schakelen tussen modi vastgezet/als venster. Maar dat is pijnlijk als u besluit *nadat* een tabel al is geopend en u wilt het vastzetten/losmaken\…!
 
 [![image17](images/entries/2ed512377b90aed08dc73bb7b3ea17ae5c9f4708.gif)](images/entries/2ed512377b90aed08dc73bb7b3ea17ae5c9f4708.gif)
 
@@ -267,9 +267,9 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Nieuw filter voor locatie om over alle lagen te zoeken
-A new locator filter has been added which allows users to search across *all* layers in their project, by the layer\'s display expression.
+Een nieuw filter voor locatie is toegevoegd dat gebruikers in staat stelt te zoeken over *alle* lagen in hun project, op de expressie van de weergave van de laag.
 
-The filter can be activated by using the prefix \'af\', or by making it a default search via QGIS options -\> Locator -\> Features In All Layer. Display expressions are defined in the vector layer properties under the display tab. Individual layers can be marked as not searchable in the Project Properties dialog, under the Data Sources tab.
+Het filter kan worden geactiveerd door het voorvoegsel \'af\' te gebruiken, of door een standaard zoekactie te maken via de opties van QGIS -\> Lokaliseren -\> Objecten in alle lagen. Expressies voor weergave worden gedefinieerd in de eigenschappen van de vectorlaag op de tab Bron. Individuele lagen kunnen worden gemarkeerd als niet te doorzoeken in het dialoogvenster Projecteigenschappen, op de tab Databronnen.
 
 [![image18](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.webp)](images/entries/0e99950042f20317f1974b5f2f999cbd9233b47c.webp)
 
@@ -277,7 +277,7 @@ Dit werd mogelijk gemaakt door [Opengis.ch](https://www.opengis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://www.opengis.ch/)
 ### Mogelijkheid: Niet-verwijderbare (vereiste) lagen geaccentueerd in lagenboom
-A new indicator \"locked\" icon is shown for any layers marked as \"required\" within the current project. This icon gives users instant feedback that a particular layer cannot be removed from the project.
+Een nieuw pictogram voor indicatie \"vergendeld\" wordt weergegeven voor lagen die zijn gemarkeerd als \"vereist\" in het huidige project. Dit pictogram geeft gebruikers directe terugkoppeling dat een bepaalde laag niet kan worden verwijderd uit het project.
 
 Vereiste lagen worden geconfigureerd via het dialoogvenster Projecteigenschappen, tab Databronnen.
 
@@ -287,7 +287,7 @@ Dit werd mogelijk gemaakt door [Arpa Piemonte (Dipartimento Tematico Geologia e 
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk) en [Faunalia](https://www.faunalia.eu)
 ### Mogelijkheid: Rasterlaag aan een bestaand Geopackage toevoegen
-When saving a raster layer to GeoPackage database, it\'s now possible to append the layer to an existing file.
+Bij het opslaan van een rasterlaag naar een database van GeoPackage is het nu mogelijk de laag aan een bestaand bestand toe te voegen.
 
 [![image20](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.webp)](images/entries/7417555bb52774a5b522ec6d3034d6fd22077732.webp)
 
@@ -296,7 +296,7 @@ Dit werd mogelijk gemaakt door [Borys Jurgiel](https://github.com/borysiasty)
 Deze mogelijkheid werd ontwikkeld door [Borys Jurgiel](https://github.com/borysiasty)
 ## Formulieren en widgets
 ### Mogelijkheid: Formulieren voor dieper zoeken (cascading) in QGIS widgets Waarderelatie
-New functions and logic in QGIS "Value Relation Widgets", allowing the implementation of complex, dynamic filters within QGIS attribute forms. The functionality can be used to implement "drill-down" forms within QGIS, where the values available in one field depend on the values of other fields:
+Nieuwe functies en logica in QGIS "widgets Waarderelatie" maken het mogelijk complexe, dynamische filters te implementeren in attributenformulieren in QGIS. De functionaliteit kan worden gebruikt om formulieren voor "dieper zoeken" te implementeren in QGIS, waar de beschikbare waarden in een veld afhankelijk zijn van andere velden:
 
 [![image21](images/entries/5990ff168d5b6b41176de4fa487964b97c32fafc.gif)](images/entries/5990ff168d5b6b41176de4fa487964b97c32fafc.gif)
 
@@ -316,11 +316,11 @@ Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsu
 ### Mogelijkheid: Nieuwe modus \"Op plaats bewerken\"
 Dankzij een groot aantal [genereuze gevers](https://north-road.com/edit-features-in-place-using-qgis-spatial-operations-campaign/), werd een door crowdfunding mogelijk gemaakte modus \"Op plaats bewerken\" toegevoegd aan Processing voor 3.4. Wanneer een vectorlaag actief is en bewerkbaar, stelt deze modus gebruikers in staat om geschikte algoritmes direct uit te voeren op de objecten van de laag, hun attributen en geometrieën op de plaats aan te passen. Alle bewerkingen worden toegevoegd aan de \“bewerkingsbuffer\” van de laag, dus u kunt de wijzigingen eenvoudig ongedaan maken en opnieuw uitvoeren voordat u ze terug opslaat in de gegevensbron.
 
-For those power users who perform frequent data edits, this functionality is also exposed via QGIS 3.0's "Locator bar" (that "type to locate" bar which sits in the bottom-left corner). Typing 'ef' ("edit features") followed by the name of the corresponding operation allows you to perform the edits directly via the keyboard. E.g.
+Voor die expertgebruikers die regelmatig bewerkingen aan gegevens uitvoeren, wordt deze functionaliteit ook weergegeven via QGIS 3.0’s "Locatiebalk" (die balk "Typ om te lokaliseren" in de benedenhoek linksonder). Typen van 'ef' ("edit features" (objecten bewerken)) gevolgd door de naam van de overeenkomende bewerking stelt u in staat bewerkingen direct vanaf het toetsenbord uit te voeren. Bijv.
 - Een aantal lijnobjecten selecteren
 - Druk op Ctrl + K (activeert de locatiebalk)
-- Type "ef reverse"
-- Press enter -- the selected line features will be reversed immediately!
+- Typ "ef reverse"
+- Druk op Enter – de geselecteerde lijnobjecten zullen onmiddellijk worden omgekeerd!
 
 [![image23](images/entries/bdfd9b4a3d367378786fd358e13c475e7fb05816.gif)](images/entries/bdfd9b4a3d367378786fd358e13c475e7fb05816.gif)
 
@@ -328,9 +328,9 @@ Dit werd mogelijk gemaakt door [Crowdfunding campaign](https://north-road.com/ed
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com)
 ### Mogelijkheid: Modellen in het project opslaan
-Some Processing models are so intrinsically linked to the logic inside a particular project that they have no meaning (or are totally broken) outside of that project (e.g. models which rely on the presence of particular map layers, relations, etc). Accordingly, from QGIS 3.4, Processing models can be stored inside QGIS project files. Any models stored within a project are made available as soon as that project is opened. This also avoids cluttering up the \"global\" model provider with models which make no sense, and makes it easier to distribute a single project all relevant models included.
+Sommige modellen van Processing zijn zo intrinsiek gekoppeld aan de logica binnen een bepaald project dat ze geen betekenis hebben (of helemaal niet werken) buiten dat project (bijv. modellen die afhankelijk zijn van de aanwezigheid van bepaalde lagen, relaties, etc.). Naar aanleiding daarvan kunnen, vanaf QGIS 3.4, modellen van Processing worden opgeslagen binnen projectbestanden van QGIS. Modellen die zijn opgeslagen binnen een project worden beschikbaar gemaakt zodra dat project wordt geopend. Dit voorkomt ook het vollopen van de "globale" modelprovider met modellen die geen zin hebben, en maakt het eenvoudiger een enkel project te delen, inclusief alle relevante modellen.
 
-Models are stored inside projects by clicking the new \"Embed in Project\" button in the Modeler dialog toolbar. Models can be removed from a project from the model\'s right click menu in the toolbox.
+Modellen worden binnen projecten opgeslagen door te klikken op de nieuwe knop \"Model in project opslaan\" in de werkbalk van het dialoogvenster Grafische modellen maken. Modellen kunnen uit een project worden verwijderd via het contextmenu (rechtsklikken) in de Toolbox.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -350,7 +350,7 @@ Dit werd mogelijk gemaakt door [SMEC/SJ](http://smec.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com)
 ### Mogelijkheid: Algoritme K Means clustering
-QGIS 3.4 adds a native \"k-means clustering\" algorithm. Based on a port of PostGIS\' ST_ClusterKMeans function, this algorithm adds a new cluster ID field to a set of input features which identifies the feature\'s cluster based on a k-means clustering approach. If non-point geometries are used as input, the clustering is based off the centroid of the input geometries.
+QGIS 3.4 voegt een eigen algoritme \"k-means clustering\" toe. Gebaseerd op een port van de functie van PostGIS ST_ClusterKMeans, voegt dit algoritme een nieuw cluster ID-veld toe aan een set van invoerobjecten die de cluster van het object identificeert, gebaseerd op een benadering van K-means clustering. Indien geen puntgeometrieën worden gebruikt als invoer, is het clusteren gebaseerd op het zwaartepunt van de invoergeometrieën.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -404,8 +404,8 @@ Deze twee nieuwe algoritmes kunnen Z- of M-waarden van geometriepunten instellen
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: \"Raster pixels to points\" algorithm
-A new \"pixels to points\" algorithm was added in QGIS 3.4, which creates a point feature at the center of every pixel. nodata pixels are skipped.
+### Mogelijkheid: Algoritme \'Raster pixels to points\'
+Een nieuw algoritme \"Pixels to points\" werd toegevoegd in QGIS 3.4, wat een puntobject maakt in het midden van elke pixel. Pixels zonder gegevens worden overgeslagen.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -416,7 +416,7 @@ Dit nieuwe, veel om gevraagde, algoritme geeft het gedeelte van een lijn (of een
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: \"Interpolate point on line\" algorithm
+### Mogelijkheid: Algoritme \"Punt op lijn interpoleren\"
 Dit nieuwe algoritme maakt een puntgeometrie, geïnterpoleerd op een ingestelde afstand langs de lijn- (of grens van de polygoon) geometrieën. Gebogen invoergeometrieën worden volledig ondersteund. Z- of M-waarden worden lineair geïnterpoleerd, gebaseerd op bestaande waarden.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
@@ -429,31 +429,31 @@ Deze mogelijkheid werd ontwikkeld door [Detlev Neumann, Rudi von Staden](https:/
 ### Mogelijkheid: Pythonscripts die algoritmes implementeren voeren nu het algoritme uit bij slepen en neerzetten en dubbelklikken in de browser
 Indien van toepassing zullen scripts nu een dialoogvenster voor algoritmes van Processing openen bij:
 - Slepen en neerzetten van een script voor Python in het hoofdvenster
-- Using the browser panel\'s right-click run script action
+- Gebruik klik met rechts in het paneel Browser voor het uitvoeren van scriptactie
 
 [![image25](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.webp)](images/entries/06f359ac4e92e415c502bc5def413563b755d8e8.webp)
 
 Dit werd mogelijk gemaakt door [iMhere Asia](https://www.imhere-asia.com/)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.imhere-asia.com/)
-### Feature: New GDAL\'s rearrange band algorithm
-A new GDAL provider \'Rearrange band\' algorithm was added to the processing toolbox. The algorithm allows to output rasters continuing a subset of a given input raster\'s bands, and offers the possibility to re-order the bands.
+### Mogelijkheid: Nieuwe herschikking GDAL\'s bandalgoritme
+Een nieuw algoritme van provider GDAL \'Banden herschikken\' werd toegevoegd aan de Toolbox van processing. Het algoritme maakt het mogelijk om rasters doorlopend uit te voeren met behulp van een subset van opgegeven invoerrasterbanden, en biedt de mogelijkheid de banden opnieuw te schikken.
 
 [![image26](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.webp)](images/entries/989a55b259fe6fd44640151cf4e2b0f0bb34573b.webp)
 
 Dit werd mogelijk gemaakt door [iMHere Asia](https://www.imhere-asia.com/)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://www.imhere-asia.com/)
-### Feature: \"Precalculated\" values for model algorithm parameters
-A new option is present for all parameters of using a \"precalculated expression\". This expression is evaluated once before the child algorithm is executed and used during the execution of that algorithm.
+### Mogelijkheid: \"Vooraf berekende\" waarden voor parameters van modelalgoritmes
+Een nieuwe optie is aanwezig voor alle parameters om een  \"vooraf berekende expressie\" te gebruiken. Deze expressie wordt eenmaal geëvalueerd voordat het kind-algoritme wordt uitgevoerd en gebruikt bij de uitvoering van dat algoritme.
 
 Dit werd mogelijk gemaakt door [QGIS](https://qgis.org)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: \"Categorize a layer using a style XML file\" algorithm
-This new algorithm sets a vector layer\'s renderer to a categorized renderer using matching symbols from a style database.
+### Mogelijkheid: Algoritme \"Renderer Categorieën maken uit stijlen\"
+Dit nieuwe algoritme stelt de renderer voor een vectorlaag in op een renderer Categorieën met behulp van overeenkomende symbolen uit een stijldatabase.
 
-A specified expression (or field name) is used to create categories for the renderer, with QGIS creating a category for each unique value within the layer. Each category is individually matched to the symbols which exist within the specified QGIS XML style database. Whenever a matching symbol name is found, the category\'s symbol will be set to this matched symbol.
+Een gespecificeerde expressie (of veldnaam) wordt gebruikt om categorieën voor de renderer te maken, waarbij QGIS een categorie maakt voor elke unieke waarde in de laag. Elke categorie komt individueel overeen met de symbolen die bestaan binnen de gespecificeerde XML-stijldatabase van QGIS. Wanneer een overeenkomende symboolnaam is gevonden, wordt het symbool van de categorie ingesteld op dit overeenkomende symbool.
 
 De overeenkomst is standaard niet hoofdlettergevoelig, maar kan, indien gewenst, worden ingesteld op hoofdlettergevoelig. Optioneel kunnen niet-alfanumerieke tekens in zowel de waarde van de categorie als de naam van het symbool worden genegeerd bij het uitvoeren van de vergelijking. Dit maakt een hogere tolerantie mogelijk bij het vergelijken van categorieën met symbolen.
 
@@ -465,7 +465,7 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Nieuwe modus voor algoritme Snap geometries
-The new mode \"Snap to anchor nodes (single layer only)\" makes sure that any two vertices of the vector layer are at least at distance given by the threshold value.
+De nieuwe modus \"Aan ankers voor knopen vastzetten (alleen enkele laag)\" zorgt ervoor dat twee punten van de vectorlayer op zijn minst op een afstand, opgegeven in een drempelwaarde, van elkaar af liggen.
 
 Dit algoritme is handig bij bewerkingen waarbij vectoren over elkaar worden gelegd, zoals kruisen, verenigen of verschil om mogelijke topologische fouten, veroorzaakt door numerieke fouten als coördinaten heel dicht bij elkaar liggen, te voorkomen. Na het uitvoeren van het algoritme zouden eerdere geldige geometrieën ongeldig kunnen zijn geworden en daarom kan het nuttig zijn daarna het algoritme Fix geometries uit te voeren.
 
@@ -518,7 +518,7 @@ Dit werd mogelijk gemaakt door [Lutra Consulting](https://www.lutraconsulting.co
 
 Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 ### Mogelijkheid: Ondersteuning voor type JSON/JSONB
-The reading of PostgreSQL JSON types is supported. JSON Data can be displayed in the widgets as \"Key/Value\" (maps), as \"List\" (arrays) or as text.
+Het lezen van types PostgreSQL JSON wordt ondersteund. gegevens van JSON kunen in de widgets worden weergegeven als \"Sleutel/Waarde\" (kaarten), als \"Lijst\" (arrays) of als tekst.
 
 [![image33](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.webp)](images/entries/94f82c582268d7966bb1fa140893b63af207dca3.webp)
 
@@ -526,13 +526,13 @@ Dit werd mogelijk gemaakt door [Kanton Solothurn](https://www.so.ch/verwaltung/b
 
 Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Ondersteuning voor ESRI tokenauthenticatie
-Support has been added to QGIS\' Authentication system for ESRI\'s temporary token based authentication. This allows for connection to ArcGIS Feature and Map Servers via an allocated temporary token.
+Ondersteuning is toegevoegd aan het authenticatiesysteem van QGIS voor ESRI\'s tijdelijk token gebaseerde authenticatie. Dit maakt het mogelijk een verbinding te maken met ArcGIS Feature en Map Servers via een toegewezen tijdelijk token.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: SQL Server - Afhandeling ongeldige geometrie
-Recent versions of QGIS have switched to a safer approach to reading SQL Server layers, which automatically checks for geometry validity and repairs geometries when needed. This workaround is required to avoid issues with the design of SQL Server\'s geometry handling, where encountering any rows with invalid geometries can silently abort a request without returning all the features from a layer. Unfortunately, the workaround comes at a significant performance cost.
+Recente versies van QGIS zijn overgeschakeld naar een veiligere benadering om lagen van SQL Server te lezen, die automatisch controleren op de geldigheid voor geometrieën en geometrieën waar nodig repareren. Deze workaround is vereist om problemen te voorkomen met het ontwerp van de afhandeling van geometrieën van SQL Server, waarbij het tegenkomen van rijen met ongeldige geometrieën een verzoek stilletjes kan afbreken zonder alle objecten uit een laag. Helaas komt de workaround met een significant verlies aan uitvoering.
 
-In QGIS 3.4 a new setting was added to allow users to manually turn off QGIS\' SQL Server invalid geometry handling. Turning on the \"Skip invalid geometry handling\" setting under a SQL Server connection\'s properties causes QGIS to skip all the expensive geometry validation processing, but firmly places the responsibility for ensuring that all features on the database have valid geometries back upon the user/database administrator. **This is a \"use at your own risk\" setting. Improperly enabling this option can lead to missing features and data loss.**
+In QGIS 3.4 werd een nieuwe instelling toegevoegd die gebruikers in staat stelt om handmatig de afhandeling van QGIS voor ongeldige geometrieën van SQL Server uit te schakelen. Inschakelen van de instelling \"Afhandeling ongeldige geometrieën overslaan\" onder de eigenschappen van een verbinding naar een SQL Server zorgt ervoor dat QGIS al het tijdrovende verwerken van valideren van geometrieën overslaat. Plaatst echter ferm de verantwoordelijkheid, om ervoor te zorgen dat alle objecten in de database geldige geometrieën hebben, terug bij de gebruiker/beheerder van de database. **Dit is een instelling \"Gebruiken op eigen risico\". Onjuist inschakelen van deze optie kan leiden tot ontbrekende objecten en gegevensverlies.**
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## QGIS Server
@@ -684,7 +684,7 @@ Dit werd mogelijk gemaakt door <https://github.com/rldhont>
 
 Deze mogelijkheid werd ontwikkeld door <https://github.com/rldhont>
 ### Mogelijkheid: Ondersteuning voor logs naar stderr voor QGIS Server
-It\'s now possible to configure QGIS Server to make it write its logs to stderr. This is done by setting the QGIS_SERVER_LOG_FILE env var to the special value \"stderr\".
+Het is nu mogelijk QGIS Server te configureren om ervoor te zorgen dat het zijn logs naar stderr wegschrijft. Dit wordt gedaan door de omgevingsvariabele QGIS_SERVER_LOG_FILE in te stellen op de speciale waarde \"stderr\".
 
 Dit werd mogelijk gemaakt door [OSLANDIA](https://oslandia.com)
 
@@ -706,15 +706,15 @@ Dit werd mogelijk gemaakt door [Oester Messtechnik](https://messtechnik.ch/)
 Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://www.opengis.ch)
 ## Programmeerbaarheid
 ### Mogelijkheid: QgsSpatialIndexKDBush
-A very fast static spatial index for 2D points based on a flat KD-tree, using <https://github.com/mourner/kdbush.hpp>
+Een zeer snelle statische ruimtelijke index voor 2D-punten, gebaseerd op een platte KD-boom, met behulp van <https://github.com/mourner/kdbush.hpp>
 
-Compared to QgsSpatialIndex, this index: - supports single point features only (no multipoints) - is static (features cannot be added or removed from the index after construction) - is much faster! - supports true \"distance based\" searches, i.e. return all points within a radius from a search point
+Deze index, vergeleken met QgsSpatialIndex: - ondersteunt alleen objecten met één enkel punt (geen multipunten) - is statisch (objecten kunnen na het maken niet aan de index worden toegevoegd of eruit worden verwijderd) - is veel sneller! - ondersteunt ware zoekacties \"op afstand gebaseerd\", d.i. geeft alle punten terug binnen een straal vanaf een zoekpunt
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: QgsRasterDataProvider::sample methode voor efficiëntt nemen van monsters van rasters op een bepaald punt
-This is an alternative to the `QgsRasterDataProvider::identify` method, which is less efficient but more powerful
+Dit is een alternatief voor de methode `QgsRasterDataProvider::identify`, die minder efficiënt is, maar wel krachtiger
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -722,15 +722,15 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 ### Mogelijkheid: Nieuwe aanroep voor geometrie API om een gebogen subtekenreeks te rug te geven
 Nieuwe PyQGIS API is toegevoegd om het eenvoudiger te maken een subtekenreeks te halen uit een geometrie LineString/Curve:
 
-`QgsCurve::curveSubstring - Returns a new curve representing a substring of a curve, from a start distance and end distance.`
+`QgsCurve::curveSubstring -  Geeft een nieuwe boog terug die een subtekenreeks van een boog weergeeft, vanaf een beginafstand en eindafstand.`
 
-If z or m values are present, the output z and m will be interpolated using the existing vertices\' z or m values. The method also handles curved geometries without loss or segmentation.
+Indien Z- of M-waarden aanwezig zijn, zal de uitvoer Z en M worden geïnterpoleerd met behulp van de bestaande punten Z- en M-waarden. De methode handelt ook gebogen geometrieën af zonder verlies of segmentatie.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: sip Module API wijzigingen
-Due to upstream changes within the PyQt/sip library, the recommended way to import this module has changed in QGIS 3.4. For maximum portability, instead of directly calling: `import sip` plugins should instead use: `from qgis.PyQt import sip` Using this newer style import will ensure that the code works correct across all platforms and remains functional in future QGIS versions.
+Vanwege bovenliggende wijzigingen binnen de bibliotheek PyQt/sip library, is de aanbevolen manier om deze module te importeren gewijzigd in QGIS 3.4. Voor maximale portabiliteit, in plaats van direct aan te roepen: `import sip`, zouden plug-ins in plaats daarvan moeten gebruiken: `from qgis.PyQt import sip`. Gebruik van deze nieuwere stijl van importeren zal ervoor zorgen dat de code correct werkt in alle platforms en functioneel blijft in toekomstige versies van QGIS.
 ### Mogelijkheid: Python vectorgegevensproviders
 Ontwikkeling van de API, een provider voor monsters en testen maken het mogelijk een vectorgegevensprovider te maken in pure Python.
 
@@ -741,7 +741,7 @@ Dit werd mogelijk gemaakt door Good will
 Deze mogelijkheid werd ontwikkeld door Alessandro Pasotti
 ## 3D-objecten
 ### Mogelijkheid: Verbeterde navigatie
-This will update camera\'s view center as the camera moves around. Before the view center would be always at the zero elevation, which means that with terrain further away from zero elevation tilting and rotation of camera would feel weird due to the center point being far away.
+Dit zal het midden van de cameraweergave bijwerken als de camera beweegt. Hiervoor was het midden van de weergave altijd op hoogte nul, wat betekende dat met verder weg gelegen terrein vanaf hoogte nul optillen en roteren van de camera vreemd zou aanvoelen, omdat het middelpunt ver weg zou zijn.
 
 Op en neergaan van de camera mogelijk maken met behulp van de toetsen Page up/down
 
@@ -765,9 +765,9 @@ Deze mogelijkheid werd ontwikkeld door [Martian Dobias (Lutra Consulting)](https
 ### Mogelijkheid: Eenvoudig renderen van 3D-lijnen
 Deze modus voor 3D renderen van lijnen zal OpenGL renderen van lijnen gebruiken in plaats van het bufferen van lijnen in polygonen en ze te renderen als mazen.
 
-The advantage is that the 3D lines do not loose their Z coordinate which is the case currently with \"ordinary\" 3D rendering after buffering.
+Het voordeel is dat de 3D-lijnen niet hun Z-coördinaat verliezen, wat momenteel het geval is met \"gewoon\" 3D-renderen na bufferen.
 
-The disadvantage is that the lines cannot be wide (supported in Qt3D only since 5.10, but even then their rendering won\'t have nice joins/caps) and only ambient color is used from the material.
+Het nadeel is dat de lijnen niet breed kunnen zijn (ondersteund in Qt3D vanaf 5.10, maar zelfs dat renderen zal geen nette verbindingen/einden hebben) en alleen omgevingskleur wordt gebruikt uit het materiaal.
 
 [![image39](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.webp)](images/entries/d28d6a8023fa5fbd306f6b31f0545ff71112009f.webp)
 

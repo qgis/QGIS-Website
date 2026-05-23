@@ -12,92 +12,92 @@ type: visual-changelog
 # Log met wijzigingen voor QGIS 3.40{#changelog340 }
 ![](images/projects/83f1bc659777bc49e8e237625dfaa08f054e929c.png)
 
-Release date: 2024-10-25
+Datum uitgave: 24-10-2024
 
-The QGIS Project is thrilled to announce the release of QGIS 3.40, refining the platform's capabilities for geospatial professionals and enthusiasts alike and underscoring the commitment to empower its users with groundbreaking tools for spatial discovery.
+Het project QGIS is heel blij om de uitgave van QGIS 3.40 aan te kondigen. Het verfijnt de mogelijkheden op platformen, voor zowel georuimtelijke professionals als enthousiastelingen, en benadrukt de verbondenheid met zijn gebruikers met baanbrekende gereedschappen voor ruimtelijk ontdekken.
 
-This release incorporates major strides in color management functionality, as described in [QEP283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), with the introduction of CMYK color support and the definition of International Color Consortium (ICC) color profiles for use in widgets, expressions, and cartography-oriented workflows to ensure accurate color representation across different media types.
+Deze uitgave bevat belangrijke stappen voor kleurbeheer, zoals beschreven in [QEP283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283). Met de introductie van ondersteuning voor CMYK-kleuren en de definitie van International Color Consortium (ICC) kleurprofielen om te gebruiken in widgets, expressies en op cartografie-georiënteerde werkstromen om te zorgen voor nauwkeurige weergave van kleuren tussen verschillende typen media.
 
-Additionally, QGIS now includes native integration with [STAC](https://stacspec.org/en/) data sources for easier access to remote data sources through the QGIS browser. New functionality allows for the storing of custom PyQGIS Expressions and methods directly within project files, providing users with greater flexibility in their data-handling processes. This functionality will also provide new opportunities for improved automation capabilities and is sure to boost productivity and facilitate more seamless collaboration for teams.
+Aanvullend heeft QGIS nu eigen integratie met [STAC](https://stacspec.org/en/) databronnen voor gemakkelijker toegang tot databronnen op afstand met de QGIS-browser. Nieuwe functionaliteit maakt het mogelijk aangepaste expressies en methoden van PyQGIS direct op te slaan binnen projectbestanden. Het verschaft gebruikers meer flexibiliteit bij het afhandelen van gegevens in hun processen. Deze functionaliteit zal ook nieuwe mogelijkheden bieden voor verbeterde automatiseringsmogelijkheden en zal zeker de productiviteit een boost geven en meer naadloze samenwerking voor teams faciliteren.
 
-This release also includes a wealth of other new features that include improvements to Labeling, 3D views, Networking, Attribute tables, and many others.
+Deze uitgave bevat ook een ware rijkdom aan andere nieuwe mogelijkheden, die verbeteringen bevatten voor labelen, 3D-weergave, netwerken, attributentabellen, en nog veel meer.
 
-For a whirlwind tour of all the new functionalities introduced, you can view the [highlight reel video on YouTube](https://www.youtube.com/watch?v=2Pk-etS1HNo).
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u deze mogelijkheden bekijken [in de video met hoogtepunten op YouTube](https://www.youtube.com/watch?v=2Pk-etS1HNo).
 
 [![](https://img.youtube.com/vi/2Pk-etS1HNo/0.jpg)](https://www.youtube.com/watch?v=2Pk-etS1HNo)
 
 QGIS is een inspanning van de gemeenschap en we willen ook nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier bij wilt dragen in het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een gemeend bedankt voor al onze sponsoren!
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Kaartgereedschap
-### Feature: Respect layer/project vert datum in identify results
-When a vector layer and the project have vertical datums present, and they differ, then include the transformed Z value for the identified features in the project's datum too.
+### Mogelijkheid: Verticale datum in laag/project respecteren in Identificatieresultaten
+Wanneer een vectorlaag en het project verticale datums hebben, en ze verschillen, neem dan ook de getransformeerde waarde Z voor de geïdentificeerde objecten op in de datum van het project.
 
 ![](images/entries/2249cc72d87c0b0542213451037df8bbefbad6ba.webp)
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Present referencing relations in info tool
-In previous releases of QGIS, only referenced relations (related features the current feature is pointing to) were presented to users when exploring a feature with the info tool. Support for presenting referencing relations (related features the current feature is referenced by), and they are now supported on an arbitrary nesting level.
+### Mogelijkheid: Verwijzingsrelaties presenteren in gereedschap Info
+In eerdere uitgaven van QGIS werden alleen relaties waarnaar verwezen werd (gerelateerde objecten waarnaar het huidige object verwijst) gepresenteerd aan gebruikers bij het verkennen van een object met het gereedschap Info. Ondersteuning voor het presenteren van verwijzingsrelaties (gerelateerde objecten waarvandaan het huidige object wordt aangewezen), en ze worden nu ondersteund op een willekeurig niveau van nesten.
 
-In addition, multiple updates to the handling of related features in the identify tool have been added, including:
-- prevention of duplicate relation references
-- load relations only on the unfolding of a node (preventing an 'explosion' of loading related references)
-- control toggle to enable or disable relation references
-- a contextual menu item for "Identify Feature" to load a nested related feature into the root of the identify tool context
+In aanvulling daarop zijn meerdere bijwerkingen aan de afhandeling van gerelateerde objecten in het gereedschap Objecten identificeren toegevoegd, inclusief:
+- voorkomen van duplicate relatieverwijzingen
+- alleen relaties laden bij het uitvouwen van een knoop (wat een 'explosie' van het laden van gerelateerde verwijzingen voorkomt)
+- schakelen beheren om relatieverwijzingen in- of uit te schakelen
+- een contextmenu-item voor "Object identificeren" om een genest gerelateerd object naar de bron van de context van het gereedschap Objecten identificeren te laden
 
 ![](images/entries/c9580e44b7f4f2ec945843c468b661ded749b8a5.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
 ## Gebruikersinterface
-### Feature: Optionally autosize all columns by default when opening an attribute table
-A new option in the Data Sources tab of the Options Dialog (opened via the Settings menu) will configure QGIS to always resize the columns of an attribute table to fit the contents when it is opened.
+### Mogelijkheid: Optioneel standaard de grootte van alle kolommen aanpassen bij het openen van een attributentabel
+Een nieuwe optie op de tab Databronnen van het dialoogvenster Opties (geopend via het menu Extra) zal QGIS configureren om altijd de kolommen van een attributentabel aan te passen om de inhoud te laten passen wanneer die wordt geopend.
 
 ![](images/entries/eb2cc3cadf1ebb453de585e564fb0a56ff1c6ccf.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Ben Wirf](https://github.com/benwirf)
-### Feature: Actions Dialogue Duplicate Button
-A duplicate button has been added to the actions dialogue on layer properties.
+### Mogelijkheid: Dialoogvenster Acties, knop Dupliceren
+Een knop Dupliceren actie is toegevoegd aan het dialoogvenster Acties in Laageigenschappen.
 
 ![](images/entries/6f0479c9233e8193625e98494da97029a6d0d30b.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Speedrace4](https://github.com/Speedrace4)
 ## Symbologie
-### Feature: Provide style categories for raster layers
-QGIS now supports categories for copying properties and styles between raster layers (instead of simply forcing the use of `AllStyleCategories` as before), and now includes raster data categories for:
-- `LayerConfiguration`
-- `Temporal`
-- `Elevation`
-- `MapTips`
-- `Notes`
-- `CustomProperties`
-- `Symbology`
-- `Rendering`
+### Mogelijkheid: Stijlcategorieën verschaffen voor rasterlagen
+QGIS ondersteunt nu categorieën voor het kopiëren van eigenschappen en stijlen tussen rasterlagen (in plaats van eenvoudig het gebruik af te dwingen van `AllStyleCategories` zoals eerder), en bevat nu categorieën voor rastergegevens, voor:
+- `Configuratie van laag`
+- `Eigenschappen van Tijdbeheer`
+- `Eigenschappen hoogte`
+- `Kaarttips`
+- `Opmerkingen`
+- `Aangepaste eigenschappen`
+- `Symbologie`
+- `Renderen`
 
-In addition, these styles are supported in the import and export functionalities of the QML/SLD layer definition and style files, making raster layer management more consistent with the user experience for vector layers.
+In aanvulling hierop worden deze stijlen ondersteund in de functionaliteiten voor importeren en exporteren van de QML/SLD-laagdefinitie- en stijlbestanden wat het beheren van rasterlagen meer consistent maakt met de gebruikservaring voor vectorlagen.
 
 ![](images/entries/0a6aeadd40690988d3560966b673045e568f86a7.webp)
 
 Dit werd mogelijk gemaakt door het [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
 Deze mogelijkheid werd ontwikkeld door [Dave Signer (OPENGIS.ch)](https://opengis.ch)
-### Feature: Add "Linear Referencing" symbol layer type
-This new symbol layer type allows placing text labels at regular intervals along a line (or at positions corresponding to existing vertices). Positions can be calculated using Cartesian distances, or interpolated from z/m values.
+### Mogelijkheid: Type symboollaag "Lineaire verwijzing" toegevoegd
+Dit nieuwe type symboollaag maakt het mogelijk tekstlabels langs een lijn te plaatsen met regelmatige intervallen (of op posities die overeenkomen met bestaande punten). Posities kunnen worden berekend met cartesiaanse afstanden, of geïnterpoleerd uit waarden Z/M.
 
-Functionality includes:
-- Labels can be placed using fixed cartesian 2d distances, at regular linearly interpolated spacing calculated using the Z or M values in geometries, or at existing vertices
-- Labels can show either the running total distance, or the linearly interpolated Z/M value
-- Uses text renderer to draw labels, so the full range of functionality is available for the labels (including buffers, shadows, etc)
-- Uses the QGIS numeric format classes to format numbers as strings, so users have full range of customisation options for eg decimal places
-- An optional "skip multiples of" setting. If set, then labels which are a multiple of this value will be skipped over. This allows construction of complex referencing labels, eg where a symbol has two linear referencing symbol layers, one set to label every 100m in a small font, skipping multiples of 1000, and a second set to label every 1000m in a big bold font
-- Labels are rendered using an angle calculated by averaging the linestring, so sharp tiny jaggies don't result in unslightly label rotation
-- Optionally, markers can be placed at referenced points in the line string, using a full QGIS marker symbol (this allows eg showing a cross-hatch at the labeled point, for a "ruler" style line)
-- Data defined control over the placement intervals, skip multiples setting, marker visibility and average angle calculation length
+Functionaliteit omvat:
+- Labels kunnen worden geplaatst met vaste cartesiaanse 2D-afstanden, op regelmatige lineair geïnterpoleerde afstand die wordt berekend met de waarden Z of M in geometrieën, of op bestaande punten
+- Labels kunnen de totale lopende afstand weergeven of de lineair geïnterpoleerde waarde Z/M
+- Gebruikt tekstrenderer om labels te tekenen, dus het volledige bereik aan functionaliteit is beschikbaar voor de labels (inclusief buffers, schaduw, etc.)
+- Gebruikt de klassen voor numerieke indeling van QGIS om getallen op te maken als tekenreeksen. Gebruikers hebben dus het volledige bereik aan opties voor aanpassingen, bijv.  voor decimale plaatsen
+- Een optionele instelling "Veelvouden overslaan van". Indien ingesteld, worden labels waarvan de waarde een veelvoud van deze waarde is, overgeslagen. Dit maakt het mogelijk complexe labels voor verwijzingen te maken. Bijvoorbeeld waar een symbool twee symboollagen Lineaire verwijzing heeft, een ingesteld om elke 100 m te labelen in een klein lettertype, veelvouden van 1000 over te slaan, en een tweede ingesteld om elke 1000 m te labelen in een groot vet lettertype
+- Labels worden gerenderd met een hoek die wordt berekend door de lijn te middelen, dus scherpe, dunne rafels resulteren niet in lelijk roteren van labels
+- Optioneel kunnen markeringen worden geplaatst op verwezen punten op de lijn, met een volledig markeringssymbool van QGIS (dat maakt bijvoorbeeld het weergeven van een kruisarcering op het gelabelde punt mogelijk, voor een lijn in de stijl van een "liniaal")
+- Data-bepaald beheer over de intervallen voor plaatsen, instellingen voor overslaan van veelvouden, zichtbaarheid van markeringen en lengte van de berekening voor gemiddelde hoek
 
-Notes:
+Opmerkingen:
 - Bij het gebruiken van op afstand gebaseerde plaatsing van labels, worden de afstanden alleen berekend met 2D, cartesiaanse berekeningen gebaseerd op het originele laag-CRS. Dit zou in de toekomst uitgebreid kunnen worden om opties weer te geven voor 3D cartesiaanse afstanden, of ellipsoïde afstandsberekeningen.
 
 ![](images/entries/ac3d8027aaa1dce55a600831bbe0a51d890f9206.webp)
@@ -105,46 +105,46 @@ Notes:
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/de/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Implement color ramp interpolation for CMYK
+### Mogelijkheid: Interpoleren van kleurenbalk voor CMYK geïmplementeerd 
 Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: CMYK color preview
-Color previews of CMYK colors will display the color value using a list of float values
+### Mogelijkheid: Voorbeeld voor CMYK-kleur
+Kleurvoorbeelden van CMYK-kleuren zullen de kleurwaarde weergeven met een lijst van waarden float
 
 ![](images/entries/bf96aab2e61c942bc43fbdab4f00d3f90ad5818d.webp)
 
 Dit werd mogelijk gemaakt door Métropôle de Bordeaux
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Select color component as float
-The QGIS Color Widget now supports the selection of the color component as a float value with 2 decimals
+### Mogelijkheid: Kleurcomponent selecteren als float
+De QGIS-widget Kleur ondersteunt nu het selecteren van de kleurcomponent als een waarde float met 2 decimalen
 
 ![](images/entries/ac91b68a5cbaf6376aa12091077f7b5133d2049b.webp)
 
 Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Allow end point marker symbols for balloon callout style
-Allows rendering a marker symbol below the endpoint of the balloon callout. Designed to allow balloon callouts to reproduce the same visual appearance as the older annotation framework items.
+### Mogelijkheid: Markeringssymbolen voor eindpunt toestaan voor stijl Tekstballon
+Maakt het renderen van een markeringssymbool onder het eindpunt van de tekstballon mogelijk. Ontworpen om tekstballonnen in staat te stellen hetzelfde visuele uiterlijk te reproduceren als de oudere items van het annotatieframework.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Buffers for marker symbols
-QGIS now includes "buffers" for marker symbols. Just like label buffers, marker buffers are a halo effect around marker symbols designed to make the symbol more readable against different backgrounds.
+### Mogelijkheid: Buffers voor markeringssymbolen
+QGIS bevat nu "buffers" voor markeringssymbolen. Net als buffers voor labels hebben buffers voor markeringen een halo-effect rondom markeringssymbolen. Ontworpen om het symbool beter leesbaar te maken tegen verschillende achtergronden.
 
-Buffers are defined on a symbol level (not per symbol-layer), and are calculated and drawn using the shape of ALL the symbol layers in the marker. This makes them super-easy to configure, as getting the same result by hand would require many duplicate symbol layers and duplicate settings across these!
+Buffers worden gedefinieerd op het niveau van een symbool (niet per symboollaag), en worden berekend en getekend met de vorm van ALLE symboollagen in de markering. Dat maakt ze supergemakkelijk te configureren, omdat hetzelfde resultaat met de hand verkrijgen heel veel kopieën van symboollagen en gekopieerde instellingen daartussen zouden vereisen!
 
-This change is designed to plug on of the (very few!) remaining large symbology gaps between ArcMap and QGIS, where ArcMap has had support for solid color marker "halos" for decades.
+Deze wijziging is ontworpen om een van de (zeer weinige!) grote symbologiegaten te dichten tussen ArcMap en QGIS, waar ArcMap al sinds decennia ondersteuning had voor effen kleurmarkeringen "halos".
 
 ![](images/entries/391b7def075a5dcdc026d0e625bb3f6483bc580a.webp)
 
 Dit werd mogelijk gemaakt door [North Road, met dank aan SLYR](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Support tolerances for QgsRasterTransparency pixel values
-Allows pixels with color components just outside of the specified RGB values to also be treated as transparent pixels
+### Mogelijkheid: Ondersteuning van toleranties voor  pixelwaarden van QgsRasterTransparency
+Staat toe dat pixels met kleurcomponenten net buiten de gespecificeerde waarden RGB, ook worden behandeld als transparante pixels
 
 Useful for photographs or compressed rasters where a range of color values must be made transparent.
 
@@ -194,7 +194,7 @@ Can render SVG or raster images as items in an annotation layer. Options are pre
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
-Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)] (https://north-road.com)
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Labelen
 ### Feature: Support horizontal alignment in HTML labels
 For multi-line labels, this allows use of either:
@@ -634,7 +634,7 @@ Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/mer
 | QgsJsonExporter layer field with ValueMap | [#58861](https://github.com/qgis/QGIS/issues/58861) | [PR #58864](https://github.com/qgis/QGIS/pull/58864) | N/B |
 | Geospatial PDF Export for Rasters does NOT work | [#58891](https://github.com/qgis/QGIS/issues/58891) | [PR #58895](https://github.com/qgis/QGIS/pull/58895) | [PR #58903](https://github.com/qgis/QGIS/pull/58903) |
 | QGIS not recognizing CRS "EPSG:3301 - Estonian Coordinate System of 1997" in MapInfo mid/mif and tab formats | [#58283](https://github.com/qgis/QGIS/issues/58283) | [GDAL PR 10920](https://github.com/OSGeo/gdal/pull/10920) | N/B |
-| Don't use the The Word Which Must Not Be Used | Unreported (well, through hostile channels) | [PR #59017](https://github.com/qgis/QGIS/pull/59017) | N/B |
+| Don't use the The Word Which Must Not Be Used | Niet gerapporteerd (nou ja, via vijandige kanalen) | [PR #59017](https://github.com/qgis/QGIS/pull/59017) | N/B |
 | In Qgis 3.34.4 / 3.38.3 vector layer saved as KML does not allow deleting of polygon features | [#58780](https://github.com/qgis/QGIS/issues/58780) | [GDAL PR 10991](https://github.com/OSGeo/gdal/pull/10991) | N/B |
 | [BUGFIX] [PostgreSQL] Properly take into account 'name' type | Niet gerapporteerd | [PR #59147](https://github.com/qgis/QGIS/pull/59147) | NOG TE DOEN |
 
@@ -651,7 +651,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 | QGIS Server: fixed width of 200 px of cascaded WMS layer legends | [#57422](https://github.com/qgis/QGIS/issues/57422) | [PR #58790](https://github.com/qgis/QGIS/pull/58790) | Nee |
 | Random Points in Polygons behaves unexpectedly | [#58737](https://github.com/qgis/QGIS/issues/58737) | [PR #58815](https://github.com/qgis/QGIS/pull/58815) | Nee |
 | When using a computed or virtual field that refers to other layers's fields having the same name, the wrong value is returned | [#49469](https://github.com/qgis/QGIS/issues/49469) | [PR #58819](https://github.com/qgis/QGIS/pull/58819) | NOG TE DOEN |
-| QGIS can't search for PostGIS elsewhere than in the public schema | [#58577](https://github.com/qgis/QGIS/issues/58577) | Not a bug (closed by OP) |  |
+| QGIS can't search for PostGIS elsewhere than in the public schema | [#58577](https://github.com/qgis/QGIS/issues/58577) | Geen probleem (gesloten door OP) |  |
 | Advanced digitizing using meters instead of ft if ft are set as default unit | [#58620](https://github.com/qgis/QGIS/issues/58620) | [PR #58844](https://github.com/qgis/QGIS/pull/58844) | Wachtrij |
 | In layer Filter "lower" function not working with diacritical marks | [#58893](https://github.com/qgis/QGIS/issues/58893) | Kan niet worden gereproduceerd |  |
 | Delete expression in Default value + click on another field in the attribute form manager = Crash | [#58887](https://github.com/qgis/QGIS/issues/58887) | [PR #58911](https://github.com/qgis/QGIS/pull/58911) | N/B |
@@ -681,14 +681,14 @@ Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://osla
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Fix rendering of line direction symbols in labels, cleanup label rendering code a bit | [#59107](https://github.com/qgis/QGIS/issues/59107) | [PR #59114](https://github.com/qgis/QGIS/pull/59114) | N/B |
-| [gps] Be tolerant to talker IDs which don't start with 'G' | Reported privately | [PR #59124](https://github.com/qgis/QGIS/pull/59124) | N/B |
+| [gps] Be tolerant to talker IDs which don't start with 'G' | Privé gerapporteerd | [PR #59124](https://github.com/qgis/QGIS/pull/59124) | N/B |
 | Fix unsafe use of QgsProject::instance from vector layer classes | Niet gerapporteerd | [PR #59118](https://github.com/qgis/QGIS/pull/59118) | Te riskant |
 | When excluding tests, only exclude exact matches | Niet gerapporteerd | [PR #59116](https://github.com/qgis/QGIS/pull/59116) | N/B |
 | When layout scalebar settings are invalid, show warning message | Niet gerapporteerd | [PR #59088](https://github.com/qgis/QGIS/pull/59088) | N/B |
 | Many cppcheck fixes to get CI green again | Mark all bool operators as explicit, associated fixes | [PR #59086](https://github.com/qgis/QGIS/pull/59086) | N/B |
 | Fix random crashes | [#36125](https://github.com/qgis/QGIS/issues/36125) | [PR #59080](https://github.com/qgis/QGIS/pull/59080) | [PR #59087](https://github.com/qgis/QGIS/pull/59087) |
-| Optimise grid decoration rendering | Reported privately | [PR #59044](https://github.com/qgis/QGIS/pull/59044) | N/B |
-| Optimise text rendering for a common scenario | Reported privately | [PR #59037](https://github.com/qgis/QGIS/pull/59037) | N/B |
+| Optimise grid decoration rendering | Privé gerapporteerd | [PR #59044](https://github.com/qgis/QGIS/pull/59044) | N/B |
+| Optimise text rendering for a common scenario | Privé gerapporteerd | [PR #59037](https://github.com/qgis/QGIS/pull/59037) | N/B |
 | Don't override cursor in pin labels map tool | [#59016](https://github.com/qgis/QGIS/issues/59016) | [PR #59033](https://github.com/qgis/QGIS/pull/59033) | [PR #59035](https://github.com/qgis/QGIS/pull/59035) |
 | Fix hang when searching expressions using regular expressions | [#59002](https://github.com/qgis/QGIS/issues/59002) | [PR #59019](https://github.com/qgis/QGIS/pull/59019) | N/B |
 | Fix aggregate function returns incorrect results | [#58221](https://github.com/qgis/QGIS/issues/58221) | [PR #59000](https://github.com/qgis/QGIS/pull/59000) | [PR #59085](https://github.com/qgis/QGIS/pull/59085) |
@@ -704,8 +704,8 @@ Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://osla
 | [processing] Fix translation of elapsed strings | [#58635](https://github.com/qgis/QGIS/issues/58635) | [PR #58928](https://github.com/qgis/QGIS/pull/58928) | N/B |
 | Fix deadlock when exporting atlas with legend via PyQGIS | [#58496](https://github.com/qgis/QGIS/issues/58496) | [PR #58927](https://github.com/qgis/QGIS/pull/58927) | [PR #58969](https://github.com/qgis/QGIS/pull/58969) |
 | Fix clipped render when using geometry generator symbol in layout items | [#58909](https://github.com/qgis/QGIS/issues/58909) | [PR #58926](https://github.com/qgis/QGIS/pull/58926) | N/B |
-| Show warning in help for algorithms for known issues or security risk | Reported privately | [PR #58925](https://github.com/qgis/QGIS/pull/58925) | N/B |
-| [processing] Replace format for saving batch processing parameters | Reported privately | [PR #58923](https://github.com/qgis/QGIS/pull/58923) | N/B |
+| Show warning in help for algorithms for known issues or security risk | Privé gerapporteerd | [PR #58925](https://github.com/qgis/QGIS/pull/58925) | N/B |
+| [processing] Replace format for saving batch processing parameters | Privé gerapporteerd | [PR #58923](https://github.com/qgis/QGIS/pull/58923) | N/B |
 | Fix missing canvas variables in some expression editors | Niet gerapporteerd | [PR #58907](https://github.com/qgis/QGIS/pull/58907) | [PR #58934](https://github.com/qgis/QGIS/pull/58934) |
 | Don't restore corrupted sizes/positions when restoring layout items | [#55240](https://github.com/qgis/QGIS/issues/55240) | [PR #58906](https://github.com/qgis/QGIS/pull/58906) | [PR #59103](https://github.com/qgis/QGIS/pull/59103) |
 | Add scale method option for layout scale bars | [#55240](https://github.com/qgis/QGIS/issues/55240) | [PR #58904](https://github.com/qgis/QGIS/pull/58904) | N/B |

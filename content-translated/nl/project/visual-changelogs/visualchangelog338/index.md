@@ -265,30 +265,30 @@ Het is nu mogelijk de uitvoernaam van geëxporteerde individuele lagen te oversc
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Create DXF blocks for point symbols with data defined properties
-Additional enhancements have been added to the capability of utilizing references within a DXF, especially for complex data-defined properties, providing much smaller DXF outputs for complex layers that include repeated point symbols.
+### Mogelijkheid DXF-blokken maken voor puntsymbolen met data-bepaalde eigenschappen
+Aanvullende verbeteringen zijn toegevoegd aan de mogelijkheid van het gebruiken van verwijzingen binnen een DXF, speciaal voor complexe data-bepaalde eigenschappen, wat veel kleinere DXF-uitvoer geeft voor complexe lagen die herhaalde puntsymbolen bevatten.
 
-A process of attribute hashing is utilized to optimize the performance and account for all possible attribute combinations. In instances where many combinations are unique, each block would only be used nearly once - resulting in a large output file. To manage such cases, the "Export Project to DXF" dialog now includes new configuration options to limit the number of blocks per symbol layer (-1 means no limitation). If the limit is set to an integer value, e.g. 5, then only the 5 blocks with the highest number of references are created and the other symbols are written inline.
+Een proces van het hashen van attributen wordt gebruikt om het uitvoeren te optimaliseren en houdt rekening met alle mogelijke combinaties van attributen. In instanties waar veel combinaties uniek zijn, zou elk blok slechts bijna altijd maar één keer gebruikt worden - wat resulteert in een groot uitvoerbestand. Voor het beheren van dergelijke gevallen heeft het dialoogvenster "Project naar DXF exporteren" nu nieuwe opties voor configureren om het aantal blokken per symboollaag te beperken (-1 betekent geen beperking). Als de beperking is ingesteld op een waarde integer, bijv. 5, dan worden alleen de 5 blokken met het hoogste aantal verwijzingen gemaakt en de andere symbolen worden in de regel geschreven.
 
 ![](images/entries/5de078fe33adb052f1177d7359432e69c84d81fa.webp)
 
 Dit werd mogelijk gemaakt door [Stadtwerke München](http://www.swm.de)
 
 Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
-### Feature: Add option 'Use only selected features' to DXF export
-A new option has been added to DXF export dialogs that will allow users to export only the features active in the current selection.
+### Mogelijkheid: Optie 'Alleen geselecteerde objecten gebruiken' toegevoegd aan exporteren naar DXF
+Een nieuwe optie is toegevoegd aan de dialoogvensters voor het exporteren naar DXF die gebruikers zal toestaan om alleen de actieve objecten in de huidige selectie te exporteren.
 
-By default, this setting will be set to false.
+Standaard zal deze optie worden ingesteld op false.
 
 ![](images/entries/28e6ac14aac9b118efadc23167f795da2bc0c19c.webp)
 
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Import/ Export 'DXF Export' dialog settings
-Users to save and restore GUI settings for the DXF Export dialog, making it possible to export any number of configurations for improved reusability or to share them with colleagues for enhanced collaboration.
+### Mogelijkheid: importeren/exporteren: Instellingen dialoogvenster 'DXF exporteren' 
+Gebruikers kunnen de instellingen voor de gebruikersinterface voor het dialoogvenster "DXF exporteren" opslaan en herstellen, wat het mogelijk maakt elk aantal configuraties te exporteren voor verbeterde herbruikbaarheid of om ze te delen met collega's voor uitgebreide samenwerking.
 
-Settings are exported to an XML file which can be loaded into the DXF Export configuration interface, overwriting the existing configuration values.
+De instellingen worden geëxporteerd naar een XML-bestand dat kan worden geladen met de interface voor het configureren van DXF exporteren en overschrijft de bestaande waarden voor configuratie.
 
 ![](images/entries/7f343b6a090823e6a090f4a33423cdd52fb655a8.webp)
 
@@ -296,186 +296,186 @@ Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch/
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Formulieren en widgets
-### Feature: Add CMYK support for Color Widget
-CMYK color support has been added for the color widget in line with the [CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283).
+### Mogelijkheid: Ondersteuning voor CMYK toegevoegd voor widget Kleur
+Ondersteuning voor CMYK-kleuren is toegevoegd voor de widget Kleur in lijn met [CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283).
 
 ![](images/entries/b5572a60bcc06b580b55f42d2b87f6825daa5774.webp)
 
 Dit werd mogelijk gemaakt door Métropôle de Bordeaux
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Add parent feature scope when adding/editing a child feature through the relation editor widget
-A current\_parent\_\* scope is now provided when adding and editing child features through the attribute form's relation editor widget.
+### Mogelijkheid: Bereik ouderobject toegevoegd bij het toevoegen/bewerken van een kindobject via de widget Relatiebewerker
+Een huidig bereik current\_parent\_\* wordt nu verschaft bij het toevoegen en bewerken van kindobjecten door de widget relatiebewerker van het attributenformulier.
 
-This is very useful in contexts where a captured feature or value may rely on the parent entity being captured at the same time, but as the parent feature has not yet been captured, the attributes and geometry cannot be retrieved.
+Dat is bijzonder nuttig in contexten waar een vastgelegd object of waarde erop kan vertrouwen dat het ouderobject tegelijkertijd zal worden vastgelegd, maar als het ouderobject nog niet vastgelegd is, kunnen de attributen en geometrie niet opgehaald worden.
 
 Dit werd mogelijk gemaakt door [Hansestadt Herford](https://www.herford.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add "match contains" to autocompleter in value relation widget
-Previously, the autocomplete function would match from the beginning of the string only, but a new checkbox option allows users to match contained values within the entire string.
+### Mogelijkheid: "Overeenkomst bevat" voor automatisch aanvullen in de widget Waarderelatie
+Eerder zou de functie Automatisch aanvullen alleen overeenkomen vanaf het begin van de tekenreeks, maar een nieuw optiekeuzevak stelt gebruikers in staat om opgenomen waarden overeen te laten komen met de gehele tekenreeks.
 
-The old behavior is still the default for autocomplete, making this setting an opt-in operation.
+Het oude gedrag is nog steeds standaard voor automatisch aanvullen, wat deze optie een bewerking opt-in maakt.
 
 ![](images/entries/3834e0b22600cce776ac149910fd9246bda6bd9c.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Implement value relation's grouping functionality
-Grouping functionality has been added for the value relation editor widget, allowing users to regroup items into buckets of values. Users are also given the option to show the group value as a group header name in the combo box and table widgets.
+### Mogelijkheid: Functionaliteit voor groeperen geïmplementeerd voor waarderelaties 
+Functionaliteit voor groeperen is toegevoegd voor de widget Waarderealtie bewerken, wat het voor gebruikers mogelijk maakt items te hergroeperen in emmers of waarden. Gebruikers krijgen ook de optie om de groepswaarde weer te geven als naam voor de kop van de groep in het combinatievak en tabelwidgets.
 
 ![](images/entries/3ef4fa48ee89cc91babb736dd477a1db6b66bcbc.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Legenda van laag
-### Feature: Show a color ramp legend for vector heatmap layers
-Instead of showing no legend for these layers, QGIS will now show the color ramp as a gradient bar.
+### Mogelijkheid: legenda voor kleurenbalk weergeven voor vector heatmaplagen
+In plaats van geen legenda weer te geven voor deze lagen, zal QGIS nu de kleurenbalk weergeven als een balk met kleurverloop.
 
-Users can control the text for the min/ max labels, the direction of the bar, and the font settings.
+Gebruikers kunnen de tekst voor labels min/ max beheren, de richting van de balk en de instellingen voor lettertypen.
 
-This update also introduced changes to the internal API for vector renderers so that renderers have the flexibility to create other types of legend nodes other than `QgsSymbolLegendNodes` and provides the opportunity for future extensions to existing renderers.
+Deze update introduceerde ook wijzigingen aan de interne API voor vectorrenderers, zodat renderers de flexibiliteit hebben om andere typen legenda's te maken dan `QgsSymbolLegendNodes` en verschaft de mogelijkheid voor toekomstige uitbreidingen aan bestaande renderers.
 
 ![](images/entries/06b024c9294de21d36cc6efb702c342106a6242d.webp)
 
 Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add layer tree filter for "Show Broken Layers Only"
-When checked, only layers with broken sources will be shown in the tree.
+### Mogelijkheid: Filter voor boom van lagen toegevoegd voor "Alleen verbroken lagen"
+Indien geselecteerd, zullen alleen lagen met verbroken bronnen in de boom worden weergegeven.
 
-This allows users to easily find broken layers in large complex projects, where they may otherwise escape notice!
+Dit geeft gebruikers de kans om gemakkelijk verbroken lagen te zoeken in grote complexe projecten. Die ze anders misschien niet hadden opgemerkt!
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Processing
-### Feature: Show more detail in history dialog
-A new tree display is provided for review of processing history entries, where the root item for each entry shows the full algorithm log when clicked and the respective python or qgis\_process commands are displayed as child items.
+### Mogelijkheid: Meer detail weergeven in dialoogvenster Geschiedenis
+Een nieuwe boomweergave wordt verschaft voor het beoordelen van items in de Geschiedenis van Processing. Waarbij het bronitem voor elk item het volledige log voor het algoritme weergeeft indien aangeklikt en de respectievelijke opdrachten voor Python of qgis\_process worden als kinditems weergegeven.
 
-This provides more useful information for users browsing the history, while still making all the previous information available.
+Dit verschaft meer nuttige informatie voor gebruikers die door de geschiedenis bladeren, terwijl nog steeds alle eerdere informatie beschikbaar is.
 
 ![](images/entries/34df4b46463545d3d9fc20168d386ffc04d9341d.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add "Run Selected Steps" option to model designer
-A new action will allow users to run only the selected steps in a model, effectively allowing users to run a subset of a model.
+### Mogelijkheid: Optie "Geselecteerde stappen uitvoeren" toegevoegd in modelontwerper
+Een nieuwe actie zal gebruikers in staat stellen om alleen de geselecteerde stappen in een model uit te voeren, wat het voor de gebruikers effectief mogelijk maakt een subset van een model uit te voeren.
 
-The initial state will be taken from any previous executions of the model through the designer, so results from previous steps in the model are available for the selected steps.
+De initiële staat zal worden genomen uit eventuele eerdere uitvoeringen van het model door de ontwerper, dus resultaten uit eerdere stappen in het model zijn beschikbaar voor de geselecteerde stappen.
 
-This makes it possible for a user to fix parts of a large model, without having to constantly run the entire model to test. Especially<br />useful when earlier steps in the model are time-consuming!
+Dit maakt het voor een gebruiker mogelijk om delen van een groot model te repareren, zonder constant het gehele model te moeten uitvoeren om te testen. Speciaal<br />nuttig als eerdere stappen in het model nogal wat tijd vragen!
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add "View Output Layers" option for model child algorithms
-When editing a model through the designer, a new right-click context option has been added for "View Output Layers" on any child step in the model<br />that has been run. Selecting this option will add the output layers from that step as new layers in the current QGIS project.
+### Mogelijkheid: Optie "Uitvoerlagen bekijken" voor model kindalgoritmes
+Bij het bewerken van een model met de ontwerper is een nieuwe optie voor rechtsklikken toegevoegd voor "Uitvoerlagen bekijken" voor elke kindstap in het model<br />dat werd uitgevoerd. Selecteren van deze optie zal de uitvoerlagen voor die stap als nieuwe lagen toevoegen aan het huidige project van QGIS.
 
-This action is available for all child algorithms in the model, even if the model is not configured to use the outputs from those children as model outputs. This action is also always available after running the model, even if the model itself fails (e.g. because of a misconfigured step later in the model).
+Deze actie is beschikbaar voor alle kindalgoritmes in het model, zelfs als het model niet is geconfigureerd om de uitvoer van die kinderen te gebruiken als uitvoer voor het model. Deze actie is ook altijd beschikbaar na het uitvoeren van het model, zelfs als het model zelf faalt (bijv. wegens een foutief geconfigureerde stap later in het model).
 
-This is designed as a helpful debugging action. If a user's model fails (or gives unexpected results), they will now be able to trace through the model and view the outputs for suspected problematic steps, avoiding the need to add temporary outputs to a model and re-run for testing purposes.
+Dit is ontworpen als een nuttige actie voor debuggen. Als het model van een gebruiker faalt (of onverwachte resultaten geeft), zullen ze nu in staat zijn door het model te traceren en de uitvoer te bekijken voor verdachte problematische stappen. Wat de noodzaak vermijdt voor het toevoegen van tijdelijke uitvoer aan een model en het opnieuw uit te voeren om te testen.
 
-An additional "View Log" action has also been provided so that users can see the log for each child after the algorithm dialog has been closed down.
+Een aanvullende actie "Log weergeven" wordt ook verschaft, zodat gebruikers het log kunnen bekijken voor elk kind nadat het dialoogvenster van het algoritme is gesloten.
 
 ![](images/entries/f4357f5df60617753cb9fc215f4cce96f34139b2.webp)
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Endpoint distance threshold for network analysis
-An optional end-point distance threshold parameter has been added to the network analysis tools.
+### Mogelijkheid: Drempel voor afstand tot eindpunt voor netwerkanalyses
+Een optionele parameter voor een drempel voor de afstand tot een eindpunt is toegevoegd aan de gereedschappen voor netwerkanalyses.
 
-The previous (and current default) behavior is that endpoints will ALWAYS be snapped to the nearest point in the network layer, regardless of how far away from the network they are, resulting in errors where points are snapped to an edge an arbitrary distance away.
+Het vorige (en huidige standaard) gedrag is dat eindpunten ALTIJD zullen worden gesnapt aan het dichtstbijzijnde punt in de netwerklaag. Ongeacht hoe ver ze van het netwerk liggen, wat resulteert in fouten waar punten worden gesnapt aan een rand die op een willekeurige afstand ligt.
 
-The behavior of the threshold depends on the algorithm:
-- For the “Service area (from layer)” tool an optional new output was added for “non-routable features”. This output will contain any features that were deemed too far from the network. All other features that are within tolerance distance to the network will be stored in the standard output from the tool.
-- For the “Service area (from point)” tool an error will be raised if the point is too far from the network
-- For the “Shortest path (point to point)” tool an error will be raised if either the source or destination points are too far from the network.
-- For the “Shortest path (layer to point)” and “Shortest path (point to layer)” tools:
-- An error will be raised if the **point** is too far from the network.
-- A new optional output was added for “non-routable features”. This output will contain any features that were deemed too far from the network. All other features that are within tolerance distance to the network will be stored in the standard output from the tool.
+Het gedrag van de drempel is afhankelijk van het algoritme:
+- Voor het gereedschap “Servicegebied (vanuit laag)” is een optionele nieuwe uitvoer toegevoegd voor “niet-routeerbare objecten”. Deze uitvoer zal de objecten bevatten die te ver van het netwerk lijken te liggen. Alle andere objecten die binnen de tolerantieafstand voor het netwerk liggen, zullen worden opgeslagen in de standaarduitvoer van het gereedschap.
+- Voor het gereedschap “Servicegebied (vanuit punt)” zal een fout worden opgeworpen als het punt te ver van het netwerk ligt.
+- Voor het gereedschap “Kortste pad (punt naar punt)” zal een fout worden opgeworpen als ofwel de bron- of de doelpunten te ver van het netwerk liggen.
+- Voor de gereedschappen “Kortste pad (laag naar punt)” en “Kortste pad (punt naar laag)”:
+- Een fout zal worden opgeworpen als het **punt** te ver van het netwerk ligt.
+- Een optionele nieuwe uitvoer werd toegevoegd voor “niet-routeerbare objecten”. Deze uitvoer zal de objecten bevatten die te ver van het netwerk lijken te liggen. Alle andere objecten die binnen de tolerantieafstand voor het netwerk liggen, zullen worden opgeslagen in de standaarduitvoer van het gereedschap.
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add support for pure date and time decorators
-QGIS Processing previously provided support for generating and processing datetime values as an explicit datetime type, but this release will support the definition of datetime, time, and date objects as discrete data types.
+### Mogelijkheid: Ondersteuning toegevoegd voor pure decoraties datum en tijd
+QGIS Processing verschafte eerder ondersteuning voor het maken en verwerken van waarden datetime als een expliciet type datetime, maar deze uitgave zal de definitie van objecten datetime, time en date als afzonderlijke gegevens ondersteunen.
 
 Dit werd mogelijk gemaakt door Ifremer
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Opties voor toepassing en projecten
-### Feature: Add vertical crs option for projects
-In line with [QEP \#267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267), a new vertical CRS option has been added to projects.
+### Mogelijkheid:  Optie verticaal CRS toegevoegd voor projecten
+In lijn met [QEP \#267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267) is een nieuwe optie voor verticaal CRS toegevoegd aan projecten.
 
-If the project CRS is a compound CRS, then the vertical CRS for the project will be the vertical component of the main project CRS. Otherwise, it will be the value explicitly set by the user.
+Als het project-CRS een samengesteld CRS is, dan zal het verticale CRS voor het project de verticale component zijn van het hoofd-project-CRS. Anders zal het de waarde zijn die expliciet door de gebruiker is ingesteld.
 
-Users can specify the vertical CRS through the Elevation Tab of the Project Properties.
+Gebruikers kunnen het verticale CRS specificeren via de tab Hoogte van de Projecteigenschappen.
 
-If a compound CRS is defined as the active CRS for a project, the Vertical Reference System will infer the Vertical CRS definition. If the current project CRS is a 2D/ Horizontal CRS, then users will be able to define their own explicitly selected Vertical CRS.
+Als een samengesteld CRS is gedefinieerd als het actieve CRS voor een project, zal het VerticaleReferentieSysteem de definitie voor het verticale CRS daarvan afleiden. Als het huidige project-CRS een 2D/ horizontaal CRS is, dan zullen gebruikers in staat zijn hun eigen expliciet geselecteerde verticale CRS in te stellen.
 
-This functionality does not impact rendering or feature handling and is currently a metadata property only.
+Deze functionaliteit heeft geen invloed op afhandelen van renderen of objecten en is momenteel slechts alleen een eigenschap metadata.
 
-The API for project objects has also been extended to support this functionality, and now includes methods for:
-- crs(): The existing project method for the defined project CRS
-- verticalCrs(): A new project method for fetching the Vertical Reference System
-- [crs3D()](https://github.com/qgis/QGIS/pull/57107): An explicit getter for retrieving a compound reference system (combination of crs and verticalCrs)
+De API voor projectobjecten is ook uitgebreid om deze functionaliteit te ondersteunen en bevat nu methoden voor:
+- crs(): De bestaande projectmethode voor het gedefinieerde project-CRS
+- verticalCrs(): Een nieuwe projectmethode voor het ophalen van het VerticaalReferentieSysteem
+- [crs3D()](https://github.com/qgis/QGIS/pull/57107): Een expliciete ophaler voor het ophalen van een samengesteld referentiesysteem (combinatie van crs en verticalCrs)
 
 ![](images/entries/83cc370834aa045a61e3021da640753f406f4a23.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add elevation range to project properties
-This setting allows users to specify the upper and lower elevation limits associated with the project in line with [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201), providing an equivalent user experience for filtering elevation range as users may already be familiar with for configuring the temporal range settings within projects.
+### Mogelijkheid: Hoogtebereik toegevoegd aan projecteigenschappen
+Deze instelling geeft gebruikers de mogelijkheid om de onder- en bovengrens voor hoogten in te stellen die zijn geassocieerd met het project. In lijn met [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201) verschaft het een equivalente gebruikservaring voor het filteren van hoogtebereik als dat waar gebruikers al mee bekend zijn voor het configureren van instellingen voor Tijdbeheer binnen projecten.
 
-This can be specified through the Elevation tab (renamed from "Terrain") in the Project Properties and extends the API of the QgsProjectElevationProperties class.
+Dit kan worden gespecificeerd op de tab Hoogte (hernoemd vanuit "Terrein") in de projecteigenschappen en breidt de API van de klasse QgsProjectElevationProperties uit.
 
 ![](images/entries/c9f0765306562047cdba7a675587d484d5a7ce51.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Sensoren
-### Feature: Support feature expansion
-This change allows SensorThings entities to be expanded to contain their related child feature attributes, exposing the relational SensorThings model as a traditional "flat" GIS-friendly table structure.
+### Mogelijkheid: Ondersteuning uitbreiding object
+Deze wijziging geeft entiteiten van SensorThings de mogelijkheid om te worden uitgebreid om de attributen van hun gerelateerde kindobjecten te bevatten, wat het relationele  model SensorThings weergeeft als een traditioneel "plat" GIS-vriendelijke tabelstructuur.
 
-For example, when selecting Location entities, users can now opt to expand to "Things &gt; Datastreams &gt; Observations". This would result in multiple "stacked" point location features, one corresponding to each observation, with the attributes for each point feature containing the location, thing, datastream, and observation attributes.
+Bijvoorbeeld bij het selecteren van entiteiten Location kunnen gebruikers er nu voor kiezen om uit te breiden naar "Things &gt; Datastreams &gt; Observations". Dat zal resulteren in meerdere "gestapelde" objecten puntlocatie, een corresponderend met elke waarneming, waarbij de attributen voor elk puntobject de attributen location, thing, datastream en observation bevat.
 
-This functionality is best used when combined with some extent, feature limit, or custom filter option, as this can otherwise result in very heavy requests to the backend service!
+Deze functionaliteit is het beste te gebruiken indien gecombineerd met enig bereik, object, begrenzing of aangepaste filteroptie, omdat dit anders kan resulteren in hele zware verzoeken aan de backendservice!
 
-An option to limit the number of child features returned when expanding is provided. By default, a conservative amount of features will be returned to reduce the load on services and require users to explicitly "opt-in" to fetch large amounts of features.
+Een optie om het aantal terug te geven kindobjecten te beperken bij het uitbreiden wordt verschaft. Standaard zal een conservatieve hoeveelheid objecten worden teruggegeven om de lading voor de services te beperken en van gebruikers te vereisen dat ze expliciet "ervoor kiezen" om hele grote hoeveelheden objecten op te halen.
 
 ![](images/entries/457f84d686c8c91d0fc894920ab462511226c0d2.webp)
 
 Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add support for SensorThings Multidatastreams
-This adds support for the Multidatastream entity type, as implemented in the SensorThings version 1.1 "MultiDatastream extension".
+### Mogelijkheid: Ondersteuning toegevoegd voor SensorThings Multidatastreams
+Dit voegt ondersteuning toe voor het entiteitstype Multidatastream, zoals geïmplementeerd in de SensorThings versie 1.1 "MultiDatastream extension".
 
-While the specification mandates that MultiDatastreams have an optional polygon geometry, many servers expose different geometry types for this entity or return errors when attempting to read the geometries from MultiDatastreams. Accordingly, QGIS now exposes an option to load MultiDatastreams as geometryless layers alongside the default option to load them as polygon layers, allowing users to handle a wider range of connections.
+Terwijl de specificatie mandateert dat MultiDatastreams een optionele geometrie polygoon hebben, geven vele servers andere typen geometrie weer voor deze entiteit of geven fouten terug bij het proberen te lezen van de geometrieën uit MultiDatastreams. QGIS geeft nu overeenkomstig een optie weer om MultiDatastreams als lagen zonder geometrie te laden, naast de standaardoptie om ze als polygonenlagen te laden. Dat stelt gebruikers in staat een breder bereik aan verbindingen af te handelen.
 
 Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Serial port sensor's data frame delimiter
-A new data frame delimiter option has been added to the serial port sensor configuration.
+### Mogelijkheid: Scheidingsteken gegevensframe seriële poort
+Een nieuwe optie scheidingsteken voor gegevensframe is toegevoegd aan de configuratie van de seriële poort voor sensoren.
 
-In cases where multiple data frames are found in the last chunk of data pushed by the serial port, this implementation will return all data frames. Users can then use an expression to further split the returned last data value from the sensor into individual frames (e.g. using string\_to\_array).
+In gevallen waar meerdere gegevensframes worden gevonden in de laatste portie met gegevens die door de seriële poort zijn gepusht, zal deze implementatie alle gegevensframes teruggeven. Gebruikers kunnen dan een expressie gebruiken om de door de sensor teruggegeven laatste gegevenswaarde te splitsen naar individuele frames (bijv. met string\_to\_array).
 
 ![](images/entries/6cc5c72f2a9ff329f8a507e63e28d3771b26c0d3.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add an optional feature limit setting
-Allows setting a maximum number of features to request from the service, avoiding overloading services with too many requests
+### Mogelijkheid: Een optionele instelling voor beperken van objecten toegevoegd
+Maakt het mogelijk een maximaal aantal op te vragen objecten van de service in te stellen, wat het overladen van services met te veel verzoeken vermijdt
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Implement subset string support for SensorThings
-This allows setting custom filters on the layer, using the SensorThings filter syntax.
+### Mogelijkheid: Ondersteuning geïmplementeerd voor subset-tekenreeks voor SensorThings
+Dat maakt het mogelijk aangepaste filters voor de laag in te stellen, met de filtersyntaxis voor SensorThings.
 
-A custom layer filter GUI is provided for SensorThings layer filters, making it easier for users to craft valid filters using the SensorThings filter language.
+Een gebruikersinterface voor het aangepaste laagfilter wordt verschaft voor SensorThings-laagfilters, wat het voor gebruikers gemakkelijker maakt om geldige filters te maken met de filtertaal voor SensorThings.
 
 Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Profiel plotten
-### Feature: Add tolerance for lines and polygons
-The elevation profile tool has been improved by adding tolerance support for lines and polygons (2D/ 3D), as illustrated using drillhole representations (from the [OpenLog plugin](https://plugins.qgis.org/plugins/openlog/)).
+### Mogelijkheid: Tolerantie voor lijnen en polygonen toegevoegd
+Het gereedschap Hoogteprofiel is verbeterd door ondersteuning voor tolerantie toe te voegen voor lijnen en polygonen (2D/ 3D), zoals geïllustreerd met diepteweergaven (uit de [plug-in OpenLog](https://plugins.qgis.org/plugins/openlog/)).
 
-Without support for tolerances, any line or polygon feature is displayed in its entirety within the elevation profile plot as soon as it intersects the profile curve. By adding support for user-defined tolerances, only intersecting slices of the feature that fall within the defined region are rendered on the plot.
+Zonder ondersteuning voor toleranties wordt elk object lijn of polygoon in zijn geheel weergegeven binnen het plot van het hoogteprofiel, zodra het kruist met de profielboog. Door ondersteuning toe te voegen voor gebruikergedefinieerde toleranties, worden alleen kruisende schijven van het object die binnen het gedefinieerde gebied vallen, op de plot gerenderd.
 
 ![](images/entries/25b1f63397246b4195891a08956b38239e78df07.gif)
 
@@ -483,64 +483,64 @@ Dit werd mogelijk gemaakt door CEA/DAM François Renard
 
 Deze mogelijkheid werd ontwikkeld door [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
 ## Gegevensproviders
-### Feature: Add extent based filtering for SensorThings layers
-Allows users to set an extent limit for the layer so that features are only ever loaded within this extent.
+### Mogelijkheid: op bereik gebaseerd filteren toegevoegd voor lagen van SensorThings
+Stelt gebruikers in staat een begrenzing voor het bereik van de laag in te stellen, zodat objecten alleen geladen worden als ze binnen dit bereik vallen.
 
-The extent can be set using the data source manager before initially adding the layer, or modified within the source tab if the layer properties.
+Het bereik kan worden ingesteld met Databronnen beheren voordat de laag initieel wordt toegevoegd, of aangepast op de tab Bron van de Laageigenschappen.
 
 Dit werd mogelijk gemaakt door [BRGM](https://www.brgm.fr/en) en [Water4All Partnership](https://www.water4all-partnership.eu)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Web proxy prefix support for ArcGIS URLs
-A new prefix field is provided in ArcGIS settings dialogs that allows users to define the URL prefix of a web proxy used to access ArcGIS Services which will be prepended to all requests.
+### Mogelijkheid: Ondersteuning voor voorvoegsel webproxy voor URL's van ArcGIS
+Een nieuw veld voorvoegsel wordt verschaft in de dialoogvensters voor het instellen van ArcGIS, dat het voor gebruikers mogelijk maakt het voorvoegsel voor de URL van een webproxy die wordt gebruikt voor toegang tot ArcGIS Services in te stellen, wat zal worden toegevoegd aan de voorzijde van alle verzoeken.
 
 ![](images/entries/671e0f4b015b4a575c6bb1255317f0af56a6c056.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Vytax](https://github.com/Vytax)
-### Feature: Add support for fast extent estimation on SAP HANA connections
-Stored extent metadata can be utilized with the new "use estimated metadata" connection, which allows for precomputed extent estimation and much faster connectivity on large tables.
+### Mogelijkheid: Ondersteuning toegevoegd voor het snel schatten van het bereik in verbindingen van SAP HANA
+Metadata van opgeslagen bereik kan worden gebruikt met de nieuwe verbinding "Gebruik geschatte tabelstatistieken", die het mogelijk maakt een vooraf berekend bereik te schatten en een veel betere connectiviteit voor grote tabellen.
 
-Although costly aggregation functions are avoided whenever the extent is recomputed, the extent information for HANA tables is only available after a delta merge. By default, this option will leverage a fallback to the standard behavior of using aggregation functions to compute extents in cases where the data is unavailable(or has not yet been computed).
+Hoewel kostbare functies voor samenvoegen worden vermeden wanneer het bereik opnieuw wordt berekend, is de informatie voor het bereik van tabellen voor HANA alleen beschikbaar na het samenvoegen van een delta. Standaard zal deze optie een terugval opleveren naar het standaardgedrag van het gebruiken van functies voor samenvoegen om bereiken te berekenen in gevallen waar de gegevens niet beschikbaar zijn (of nog niet eerder zijn berekend).
 
 ![](images/entries/cf6ffc5f71ca8d57e9f3f717bf3e960c5afb51e4.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Johannes Quast](https://github.com/jatsqi)
 ## QGIS Server
-### Feature: Default limit for GetFeatureInfo results
-A new setting allows users to set a default FEATURE\_COUNT value individually for each WMS connection, with a predefined default value of 10.
+### Mogelijkheid: Standaardbeperking voor resultaten GetFeatureInfo
+Een nieuwe instelling stelt gebruikers in staat een standaardwaarde FEATURE\_COUNT in te stellen voor elke verbinding van WMS, met een vooraf gedefinieerde standaardwaarde van 10.
 
-This default also works when adding WMS layers from the browser and it can be overridden for each layer when added from the datasource manager.
+Deze standaard werkt ook bij het toevoegen van lagen WMS vanuit de Browser, en kan voor elke laag worden overschreven indien toegevoegd vanuit Databronnen beheren.
 
-The default user experience has not changed when adding layers from the data source manager, so the default of 10 still applies unless it is explicitly set from the connection settings.
+De standaard gebruikservaring is niet gewijzigd bij het toevoegen van lagen vanuit databronnen beheren, dus de standaard van 10 is nog steeds van toepassing, tenzij die expliciet is ingesteld in de instellingen van de verbinding.
 
 ![](images/entries/aa3907488d32cf1e90bb04115dfacffb5cdfee21.webp)
 
 Dit werd mogelijk gemaakt door [Duitse QGIS gebruikersgroep (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Add crs information in WMS GetFeatureInfo output when it differs from WGS84
-GeoJSON explicitly requires the use of OGC:CRS84, but when a GetFeatureInfo request that explicitly requests a CRS that is not WGS84 is sent to a QGIS Server WMS, the output will now include the CRS definition in a manner compatible with the older [GeoJSON specification format](http://wiki.geojson.org/GeoJSON_draft_version_6#Specification) that included support for multiple Coordinate Reference Systems.
+### Mogelijkheid: Informatie over CRS toegevoegd in uitvoer van WMS GetFeatureInfo, als die anders is dan WGS84
+GeoJSON vereist expliciet het gebruik van OGC:CRS84, maar als een verzoek GetFeatureInfo, dat expliciet een CRS vraagt dat geen WGS84 is, naar een QGIS Server WMS verstuurt, zal de uitvoer nu de definitie van het CRS bevatten op een manier die compatibel is met de oudere [specificatie van de indeling GeoJSON](http://wiki.geojson.org/GeoJSON_draft_version_6#Specification) die ondersteuning bevatte voor meerdere CoördinatenReferentieSystemen.
 
 Dit werd mogelijk gemaakt door Eurométropole de Strasbourg
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Programmeerbaarheid
-### Feature: Add replace/ replace all functionality to QgsCodeEditorWidget
-The new replace functionality allows replacing matching text. If the regex find option is enabled, then captured groups from the regular expression pattern are available for use in the replacement string using the numeric identifier of the group (e.g. via `\1`).
+### Mogelijkheid: Functionaliteit vervangen/ alles vervangen toegevoegd aan QgsCodeEditorWidget
+De nieuwe functionaliteit vervangen maakt het vervangen van overeenkomende tekst mogelijk. Als de optie voor zoeken van regex is ingeschakeld, dan zijn vastgelegde groepen met het patroon van de reguliere expressie beschikbaar om te gebruiken in de tekenreeks voor vervanging met de numerieke identificatie van de groep (bijv. met `\1`).
 
-In addition, the processing script editor has been ported to leverage the `QgsCodeEditorWidget` class and functionalities.
+In aanvulling daarop is de scriptbewerker voor Processing geporteerd om de klasse `QgsCodeEditorWidget` en de functionaliteiten goed te gebruiken.
 
 ![](images/entries/286b7da77b39735f963327f8c0c373a4530023fc.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Register custom elevation profile sources
-We've added a new `QgsProfileSourceRegistry` class to allow both core and plugin developers to register profile sources other than map layers (e.g., based on profile web services).
+### Mogelijkheid: Aangepaste bronnen hoogteprofiel registreren
+We hebben een nieuwe klasse `QgsProfileSourceRegistry` toegevoegd om zowel bron- als plug-inontwikkelaars in staat te stellen profielbronnen te registreren, anders dan die van kaartlagen (bijv. gebaseerd op profielwebservices).
 
-These custom profile sources can generate elevation profiles that are displayed in the main Elevation Profile dock widget and as layout items.
+Deze aangepaste profielbronnen kunnen hoogteprofielen maken die worden weergegeven in de hoofddockwidget Hoogteprofiel en als lay-outitems.
 
-To do so, plugins should subclass `QgsAbstractPluginSource` and pass it to the registry via `registerProfileSource()`. Likewise, plugins should unregister (most likely on their `unload()` method) their registered sources via `unregisterProfileSource()`.
+Plug-ins zouden, om dat te doen, `QgsAbstractPluginSource` moeten subklasseren en dat doorgeven aan het register via `registerProfileSource()`. Op dezelfde manier zouden plug-ins de registratie van hun geregistreerde bronnen moeten opheffen (zeer waarschijnlijk met hun methode `unload()`) met `unregisterProfileSource()`.
 
-Like other QGIS registries, the profile source registry is available from the `QgsApplication` object: `QgsApplication.profileSourceRegistry()`.
+Net als andere registraties van QGIS is het register voor profielbronnen beschikbaar vanuit het object `QgsApplication`: `QgsApplication.profileSourceRegistry()`.
 
 ![Custom profile source example](images/entries/custom_profile_source.webp)
 
