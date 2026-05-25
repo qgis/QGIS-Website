@@ -27,7 +27,7 @@ For a whirlwind tour of all the new functionalities introduced, you can view the
 
 QGISはコミュニティによる取り組みです。このリリースを実現するために時間と労力をボランティアで提供してくださった（または資金援助をしてくださった）開発者・ドキュメント作成者・テスター・その他多くの方々に心より感謝申し上げます。QGISコミュニティより、このリリースをお楽しみいただければ幸いです！QGISをさらに素晴らしいものにするために、時間・資金・その他の形でご貢献いただける方は、ぜひ [QGIS.ORG](https://qgis.org) をご覧いただき、お力をお貸しください！
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
+QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは  [寄付者一覧](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors) でご覧いただけます。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細について  [サステイニングメンバーページ](https://qgis.org/en/site/about/sustaining_members.html) をご覧ください。QGISへのスポンサーシップは、定期的な開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。現在のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 ## シンボロジ
@@ -297,84 +297,84 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 このアルゴリズムはラスターイテレーターを使用して大規模ラスターでも効率的に動作し、ラスター全体をメモリに読み込む必要がありません。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: New algorithm to generate elevation profile images
-A new processing algorithm has been created which allows users to generate elevation profile images. This can effectively be used within models and will allows users to efficiently output elevation profiles for multiple curves.
+### 機能: 標高プロファイル画像を生成する新しいアルゴリズム
+ユーザーが標高プロファイル画像を生成できる新しいプロセッシングアルゴリズムが作成されました。これはモデル内で効果的に使用でき、複数の曲線の標高プロファイルを効率的に出力することができます。
 
 ![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: New Mesh: Surface to Polygon Algorithm
-A new processing algorithm has been added for Mesh datasets that exports a surface of the mesh to a MultiPolygon output.
+### 機能: 新しいメッシュ:サーフェスからポリゴンへのアルゴリズム
+メッシュデータセットのサーフェスをマルチポリゴン出力にエクスポートする新しいプロセッシングアルゴリズムが追加されました。
 
 ![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35.webp)
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## Profile Plots
-### Feature: Introduce custom tolerance for vector layers
-Users can define a custom tolerance by adding a `custom tolerance` property to the layer elevation properties. When set, this will override the global tolerance parameter defined in the elevation profile widget.
+### 機能: ベクターレイヤーへのカスタムトレランスの導入
+ ユーザーはレイヤーの標高プロパティに  `カスタムトレランス`  プロパティを追加することでカスタムトレランスを定義できます。設定すると、標高プロファイルウィジェットで定義されたグローバルトレランスパラメーターよりも優先されます。
 
 ![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f.webp)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 ## データプロバイダ
-### Feature: Execute SQL from layer context menu
-Users can now execute SQL directly across supported layers from within the projects table of contents.
+### 機能: レイヤーコンテキストメニューからのSQLの実行
+プロジェクトの目次からサポートされているレイヤーに対して直接SQLを実行できるようになりました。
 
 ![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2.webp)
 
 This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
-### Feature: Postgres raster provider - save raster style db
-This PR allows saving raster styles in PostGIS database.
+### 機能: Postgresラスタープロバイダー - ラスタースタイルのDB保存
+このPRによりラスタースタイルをPostGISデータベースに保存できるようになります。
 
-This feature was funded by Ocean Winds.
+この機能開発は Ocean Winds. の資金提供を受けています
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
-### Feature: PostgreSQL/PostGIS data provider - hide raster overviews
-Ads option to PostGIS Connection to not list raster overview tables from Browser. The list of raster overviews tables is obtained from PostGIS view raster_overviews.
+### 機能: PostgreSQL/PostGISデータプロバイダー - ラスター概観の非表示
+ ブラウザーからラスター概観テーブルを一覧表示しないオプションをPostGIS接続に追加します。ラスター概観テーブルの一覧はPostGISビューの raster_overviews から取得されます。
 
 ![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd.webp)
 
-This feature was funded by Ocean Winds.
+この機能開発は Ocean Winds. の資金提供を受けています
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## プラグイン
-### Db manager table comment multiline
-Makes table comments in DB Manager multiline (turning original QLineEdit to QTextEdit)). Also fixes one minor error, where the comment was not properly updated on second open of the "Table properties" window.
+### DBマネージャーのテーブルコメントの複数行対応
+DBマネージャーのテーブルコメントを複数行対応にします（元のQLineEditをQTextEditに変換）。また、"テーブルのプロパティ" ウィンドウを2回目に開いた際にコメントが正しく更新されない軽微なエラーも修正しています。
 
 ![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae.webp)
 
 ![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a.webp)
 
-This feature was funded by Ocean Winds.
+この機能開発は Ocean Winds. の資金提供を受けています
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## プログラム可能
-### Feature: Expose QgsGeos class to PyQGIS
-GEOS-specific functionality which is not exposed through the base QgsGeometryEngine class is now directly accessible via the new QgsGeos class.
+### 機能: QgsGeosクラスのPyQGISへの公開
+基底の QgsGeometryEngine クラスでは公開されていないGEOS固有の機能に、新しい QgsGeos クラスを通じて直接アクセスできるようになりました。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Make Z and M values accessible via QgsGeometry.as\_numpy()
-In previous versions of QGIS, the `QgsGeometry.as_numpy()` method would return coordinates with XY values only.
+### 機能: QgsGeometry.as_numpy() を通じたZおよびM値へのアクセスを可能に
+以前のバージョンのQGISでは、QgsGeometry.as_numpy() メソッドはXY値のみの座標を返していました。
 
-In this release `as_numpy` has been modified so that the coordinates for geometries with z and/or m values will be returned as xyz, xym, or xyzm accordingly.
+このリリースでは  `as_numpy` が変更され、Z値および/またはM値を持つジオメトリの座標がそれぞれxyz、xym、またはxyzmとして返されるようになりました。
 
 This feature was developed by [Till Frankenbach](https://github.com/merydian)
-### Feature: Python console interactive help
-When pressing F1 within the Python Console, QGIS will automatically open the API page matching:
-- selected text if any OR
-- word at the mouse position (if enabled in settings, see below) OR
-- word at the text cursor position
+### 機能: Pythonコンソールのインタラクティブヘルプ
+Pythonコンソール内でF1キーを押すと、QGISは対応するAPIページを自動的に開きます
+- 選択テキストがある場合はそれを使用、なければ
+- マウス位置の単語（設定で有効になっている場合、下記参照）、なければ
+- テキストカーソル位置の単語
 
-The documentation will be opened within the new documentation section that has been added to the Debugging and Development tools panel so that developers can have easy access to the API documentation for current code objects directly within the application.
+ドキュメントは、デバッグおよび開発ツールパネルに新しく追加されたドキュメントセクション内に表示されます。これにより開発者はアプリケーション内から現在のコードオブジェクトのAPIドキュメントに直接アクセスできるようになります。
 
-Additional QGIS settings have also been added so that developers can more readily modify this behavior to suit their workflow.
+開発者がワークフローに合わせてこの動作をより簡単に変更できるよう、追加のQGIS設定も追加されました。
 
 ![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png.webp)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## 注目すべき修正
 ### Feature: Bug fixes by Even Rouault (Spatialys)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Allow additional fields in Cloud Storage Connection credentials (or maybe gdal credentials more broadly) | [#60174](https://github.com/qgis/QGIS/issues/60174) | [GDAL PR 11699](https://github.com/OSGeo/gdal/pull/11699) | N/A |
 | Add geometryColumnName() method for WFS and OAPIF providers | [#60055](https://github.com/qgis/QGIS/issues/60055) | [PR #60191](https://github.com/qgis/QGIS/pull/60191) | N/A |
@@ -394,7 +394,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Feature: Bug fixes by Alessandro Pasotti (QCooperative)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | A semicolon after a custom SQL query makes QGIS generate a broken layer | [#56993](https://github.com/qgis/QGIS/issues/56993) | [PR #60209](https://github.com/qgis/QGIS/pull/60209) | [PR #60230](https://github.com/qgis/QGIS/pull/60230) |
 | QGIS Server does not respect datum transformation | [#60216](https://github.com/qgis/QGIS/issues/60216) | [PR #60239](https://github.com/qgis/QGIS/pull/60239) | [PR #60302](https://github.com/qgis/QGIS/pull/60302) |
@@ -417,7 +417,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Julien Cabieces (Oslandia)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Qt6: migration script forces Qt modules which are not covered by qgis.PyQt | [#59351](https://github.com/qgis/QGIS/issues/59351) | [PR #60280](https://github.com/qgis/QGIS/pull/60280) | [PR #60298](https://github.com/qgis/QGIS/pull/60298) |
 | Unable to perform zip or export to PDF/image | [#59911](https://github.com/qgis/QGIS/issues/59911) | バグではない | N/A |
@@ -434,16 +434,16 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Feature: Bug fixes by Jacky Volpes (Oslandia)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Rule based symbology sorting with all fields in legend when only linked maps is ticked | [#60383](https://github.com/qgis/QGIS/issues/60383) | [PR #60536](https://github.com/qgis/QGIS/pull/60536) |  |
 | Fix bad overlaps results with QgsRange objects and derivatives (int range, date range...) | 未報告 | [PR #60139](https://github.com/qgis/QGIS/pull/60139) | [PR #60532](https://github.com/qgis/QGIS/pull/60532) |
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/en/)
+この機能は [Jacky Volpes (Oslandia)](https://oslandia.com/en/) によって開発されました
 ### Feature: Bug fixes by Nyall Dawson (North Road)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Fix leaks in layer definition loading code | 未報告 | [PR #60650](https://github.com/qgis/QGIS/pull/60650) | pending |
 | Fix data-defined overrides ignored in legend text format | [#60628](https://github.com/qgis/QGIS/issues/60628) | [PR #60632](https://github.com/qgis/QGIS/pull/60632) | pending |
@@ -495,7 +495,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Bug fixes by Alexander Bruy (QCooperative)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Zonal histogram unusable results if input raster has many decimal places | [#30822](https://github.com/qgis/QGIS/issues/30822) | [PR#60212](https://github.com/qgis/QGIS/pull/60212) | [PR#60234](https://github.com/qgis/QGIS/pull/60234) |
 | PyQGIS / Processing: QgsProcessingParameterMapLayer doesn't respect QgsProcessing.TypeVector | [#56344](https://github.com/qgis/QGIS/issues/56344) | [PR#60213](https://github.com/qgis/QGIS/pull/60213) | [PR#60305](https://github.com/qgis/QGIS/pull/60305) |
@@ -533,7 +533,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Mathieu Pellerin (OPENGIS)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Algorithm postprocessing regression failing to add all but one output to the project | 未報告 | [PR #60624](https://github.com/qgis/QGIS/pull/60624) | [PR #60626](https://github.com/qgis/QGIS/pull/60626) |
 | Expression's `$id` value can overflow due to wrong int casting | 未報告 | [PR #60521](https://github.com/qgis/QGIS/pull/60521) | - |
@@ -561,7 +561,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Mathieu Pellerin (OPENGIS)](https://opengis.ch/)
 ### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | PointCloud - Converting LAZ to COPC.LAZ: CRS information is lost in COPC.LAZ file | [#59662](https://github.com/qgis/QGIS/issues/59662) | [hobuinc/untwine PR #189](https://github.com/hobuinc/untwine/pull/189) | - |
 | Losing the CRS in .copc.laz created from .laz using drag and drop | [#57983](https://github.com/qgis/QGIS/issues/57983) | [hobuinc/untwine PR #189](https://github.com/hobuinc/untwine/pull/189) | - |
@@ -572,7 +572,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Bug Fixes by Loïc Bartoletti (Oslandia)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Add a CMAKE option to completely disable Python | security@ | [PR #60463](https://github.com/qgis/QGIS/pull/60463) | - |
 | Allow snapping point with different CRS | [#59792](https://github.com/qgis/QGIS/issues/59792) | [PR #60456](https://github.com/qgis/QGIS/pull/60456) | [PR #60478](https://github.com/qgis/QGIS/pull/60478) |
@@ -581,13 +581,13 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com/en/)
 ### Feature: Bug Fixes by Germán Carrillo (OPENGIS)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Drag and drop of symbology classes is buggy <br> Cannot move legend items when classifying <br> Drag and drop in Point cloud classification is confusing | [#50823](https://github.com/qgis/QGIS/issues/50823) <br> [#55267](https://github.com/qgis/QGIS/issues/55267) <br> [#60559](https://github.com/qgis/QGIS/issues/60559) | [PR #60546](https://github.com/qgis/QGIS/pull/60546) | [PR #60750](https://github.com/qgis/QGIS/pull/60750) |
 | (Still) Unable to reorder subdiagrams in stacked diagrams dialog | [#60596](https://github.com/qgis/QGIS/issues/60596) | [PR #60600](https://github.com/qgis/QGIS/pull/60600) | [PR #61126](https://github.com/qgis/QGIS/pull/61126) |
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Germán Carrillo (OPENGIS)](https://opengis.ch/)
+この機能は [Germán Carrillo (OPENGIS)](https://opengis.ch/) によって開発されました
 
 {{<content-end >}}

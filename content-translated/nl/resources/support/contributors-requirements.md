@@ -12,13 +12,13 @@ type: page
 We verwelkomen nieuwe deelnemers aan onze gemeenschap - we willen dat u QGIS gebruikt als een platform om uw werk te doen - en we geloven dat QGIS daar een fantastisch platform voor is. Alle ontwikkelaars/teamleden moeten, om code, patches, of documentatie te kunnen bijdragen aan het project QGIS:
 - Abide by the [Social Contract](#social-contract).
 - Be familiar with the development process and the reference material available in the [Developers Guide for QGIS](https://docs.qgis.org/testing/en/docs/developers_guide/index.html), and the [CODING document](https://github.com/qgis/QGIS/blob/master/CONTRIBUTING.md) in the root of the QGIS Sources.
-- Ensure that all code committed to the repository is unencumbered and compatible with the [QGIS license]({{< relref "license" >}}), GNU Public License (GPL) Version 2 or any later version.
-- Not use or include any code that will cause a trademark or patent infringement. If you are unsure, ask on the [developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) or contact a [Project Steering Committee]({{< relref "community/organisation/#project-steering-committee" >}}) member.
-- Join the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) and contribute to discussions
+- Zorg ervoor dat alle aan de opslagplaats toegevoegde code onbelast is en compatibel met de [licentie van QGIS]({{< relref "license" >}}), GNU Public License (GPL) Versie 2 of enige latere versie.
+- Geen code gebruiken of opnemen die een inbreuk veroorzaakt op handelsmerken of een patent. Als u er niet zeker van bent, vraag het dan na op de [developer mailinglijst]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) of neem contact op met een lid van het [Project Steering Committee]({{< relref "community/organisation/#project-steering-committee" >}}).
+- Neem deel aan de [qgis-developer mailinglijst]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) en draag bij aan de besprekingen
 - Deze vereisten zijn zowel van toepassing op ontwikkelaars die commits willen indienen als op hen die patches indienen.
-- Read and agree to the [Code of Conduct]({{< relref "conduct" >}}).
-- Read and agree to the [Coding Standards](https://docs.qgis.org/testing/en/docs/developers_guide/codingstandards.html).
-- Read and agree to the [Diversity statement]({{< relref "diversity" >}}).
+- Lezen en instemmen met de [Gedragscode]({{< relref "conduct" >}}).
+- Lees en stem in met de [Standaarden voor coderen](https://docs.qgis.org/testing/en/docs/developers_guide/codingstandards.html).
+- Lezen en instemmen met de [Verklaring over diversiteit]({{< relref "diversity" >}}).
 - Agree to these requirements by sending an email to the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) stating agreement.
 
 ## Social Contract

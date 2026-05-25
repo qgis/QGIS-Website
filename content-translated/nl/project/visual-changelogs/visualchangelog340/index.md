@@ -146,7 +146,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 ### Mogelijkheid: Ondersteuning van toleranties voor  pixelwaarden van QgsRasterTransparency
 Staat toe dat pixels met kleurcomponenten net buiten de gespecificeerde waarden RGB, ook worden behandeld als transparante pixels
 
-Useful for photographs or compressed rasters where a range of color values must be made transparent.
+Nuttig voor foto's of gecomprimeerde rasters waar een bereik van kleurwaarden transparant moet worden gemaakt.
 
 ![](images/entries/73a7b62e6c22c27056a35c9d827f8ac3955f7b57.webp)
 
@@ -154,41 +154,41 @@ Dit werd mogelijk gemaakt door [Middle Third Geological](https://www.linkedin.co
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Annotaties
-### Feature: Auto upgrade SVG and text annotations to annotation layer items on project load
-We improved the workflow for those projects with older annotation items. In previous QGIS versions, older annotation items (text, html, svg and form) had not been ported over to the new framework therefore impacting workflows. In 3.40, we have targeted the higher priority items, text and svg, so now the framework has been updated and the missing functionality has been added. Now, when loading old projects, any of the old SVG and text annotations will automatically be converted (silently) to the newer picture and rectangular text annotation item types.
-- Various bugs were fixed along the way and these additional functions were added:
-- Callouts for annotations including text at point, rectangular text and picture annotations.
-- Marker symbol to be drawn as part of the “balloon” callout style
-- Associated “visibility layer” for annotations
-- Rich text editor widget to allow for interactive creation of html contant for text at point and rectangular text
-- UI clean-up
+### Mogelijkheid: Automatisch upgraden SVG en tekstannotaties naar items van de annotatielaag bij laden project
+We verbeterden de werkstroom voor deze projecten met oudere items voor annotaties. In eerdere versies van QGIS werden oudere items voor annotaties (tekst, HTML, SVG en formulier) niet geporteerd naar het nieuwe framework en hadden daarom invloed op werkstromen. In 3.40 hebben we ons gericht op de items met hogere prioriteit, tekst en SVG, dus nu is het framework bijgewerkt en is de ontbrekende functionaliteit toegevoegd. Nu, bij het laden van oude projecten, zullen alle oude SVG- en tekstannotaties automatisch worden geconverteerd (stilletjes) naar de nieuwere typen annotatieitem afbeelding en rechthoekige tekst.
+- Gedurende die tijd werden verscheidene problemen opgelost en werden deze aanvullende functies toegevoegd:
+- Tekstballonnen voor annotaties, inclusief tekst op punt, rechthoekige tekst en afbeeldingsannotaties.
+- Markeringssymbool te tekenen als deel van de “ballon” tekstballonstijl
+- Geassocieerde “zichtbaarheidslaag” voor annotaties
+- Rijk widget tekstbewerken om het interactief maken van HTML-inhoud mogelijk te maken voor tekst op punt en rechthoekige tekst
+- Gebruikersinterface opgeruimd
 
 Dit werd mogelijk gemaakt door [QGIS Grant Programme 2024](https://github.com/qgis/PSC/issues/60)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Add support for callouts to point text, rect text and picture items
-Allows creating of callout lines (or bubble callouts) which link the text to a map location. To create a callout, users select the text item and then drag out the central x node to the desired callout end point.
+### Mogelijkheid: Ondersteuning toegevoegd voor tekstballonnen voor items tekst naar punt, rechthoekige tekst en afbeelding
+Maakt het mogelijk regels voor tekstballonnen te maken (of bubbeltekstballonnen) die tekst koppelen aan een locatie op de kaart. Gebruikers selecteren om een tekstballon te maken het tekstitem en slepen dan aan de centrale X-knoop naar het gewenste eindpunt van de tekstballon.
 
-Callout styles can be modified through the layer styling panel.
+Stijlen voor tekstballonnen kunnen worden aangepast via het paneel Laag opmaken.
 
 ![](images/entries/87e3c18cbb4eb5bdb2ee4a2a690ffbb1f6ae2bde.webp)
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Add linked layer option for annotation layers
-In line with [QEP\#269](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269), a new "Linked layer" setting has been added to the render page for annotation layers. This allows users to optionally set a linked visibility layer for the annotation layer. If set, then the annotations will only be drawn when the linked layer is visible on the map.
+### Mogelijkheid: Optie gekoppelde laag toegevoegd voor annotatielagen
+In lijn met [QEP\#269](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269) is een nieuwe instelling "Gekoppelde laag" toegevoegd aan de renderpagina voor annotatielagen. Dat geeft gebruikers de mogelijkheid om optioneel een gekoppelde zichtbaarheidslaag voor de annotatielaag in te stellen. Indien ingesteld, zullen de annotaties alleen worden getekend als de gekoppelde laag zichtbaar is op de kaart.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Add picture annotation item type
-Can render SVG or raster images as items in an annotation layer. Options are present for:
-- Locking the picture's aspect ratio
-- Drawing with a background symbol
-- Drawing with a border symbol
-- Linked or embedded pictures
-- Rendering with scale dependent sizes or fixed sizes
+### Mogelijkheid: Type item afbeeldingsannotatie toegevoegd
+Kan SVG- of rasterafbeeldingen renderen als items in een annotatielaag. Opties zijn beschikbaar voor:
+- Vergrendelen van de verhoudingen van de afbeelding
+- Tekenen met een achtergrondsymbool
+- Tekenen met een randsymbool
+- Gekoppelde of ingebedde afbeeldingen
+- Renderen met schaalafhankelijke grootten of vaste grootten
 
 ![](images/entries/14d168314617843058d4cfe38b8c15abb96114b4.webp)
 
@@ -196,65 +196,65 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Labelen
-### Feature: Support horizontal alignment in HTML labels
-For multi-line labels, this allows use of either:
-- HTML attributes
+### Mogelijkheid: Ondersteuning voor horizontale uitlijning in HTML-labels
+Voor labels met meerdere regels maakt dit het gebruiken mogelijk van ofwel:
+- HTML-attributen
 - CSS "text-align: xxx"
-- HTML some text tags
+- enkele HTML-tekst tags
 
-Supported alignments are left, right, center and justify
+Ondersteunt uitlijnen voor links, rechts gecentreerd en uitgevuld
 
-Horizontal alignment can be used in all contexts where HTML text is rendered, EXCEPT for curved labels (since they are restricted to single-line text)
-
-Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
-
-Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: HTML header formatting in HTML labels
-Support for header tags (h1/h2/.../h6) and associated formatting in HTML labels is now supported.
+Horizontaal uitlijnen kan worden gebruikt in elke context waar HTML-tekst wordt gerenderd, BEHALVE voor gebogen labels (omdat die zijn beperkt tot een regel tekst)
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Add support for word-spacing CSS in html labels
-Support for word-spacing CSS in html labels and other places HTML text formatting is accepted has been added to QGISm allowing the use of CSS rules such as "word-spacing: 12" to increase the word spacing in a section of HTML text. The word spacing is always treated as being in point units.
+### Mogelijkheid: Opmaak HTML-header in HTML-labels
+Ondersteuning voor tags voor headers (h1/h2/…/h6) en geassocieerde opmaak in HTML-labels wordt nu ondersteund.
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Implementation of labeling engine rules
-In line with [QEP\#299](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/299), a new API framework has been implemented for setting advanced labeling engine rules on a project, and implements 4 initial rule types:
-- QgsLabelingEngineRuleMinimumDistanceLabelToFeature: prevents labels being placed too *close* to features from a different layer
-- QgsLabelingEngineRuleMaximumDistanceLabelToFeature: prevents labels being placed too *far* from features from a different layer
-- QgsLabelingEngineRuleMinimumDistanceLabelToLabel: prevents labels being placed too close to labels from a different layer
-- QgsLabelingEngineRuleAvoidLabelOverlapWithFeature: prevents labels being placed overlapping features from a different layer
+### Mogelijkheid: Ondersteuning voor CSS voor tussenruimte tussen woorden toegevoegd in HTML-labels
+Ondersteuning voor CSS voor tussenruimte tussen woorden in HTML-labels en op andere plaatsen waar HTML-tekstopmaak wordt geaccepteerd is toegevoegd aan QGIS, wat het mogelijk maakt CSS-regels te gebruiken, zoals "word-spacing: 12" om de ruimte tussen woorden in een gedeelte HTML-tekst te vergroten. De tussenruimte voor woorden wordt altijd behandeld alsof die in eenheden punt is.
 
-Note that the first 3 rules require a build based on GEOS &gt;= 3.10, and they are not available for older GEOS builds.
+Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
-Also implemented is a registry for storing available rule classes, and serialization of rules and configuration in QGIS projects.
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
+### Mogelijkheid: Implementatie van regels voor labelen
+In lijn met [QEP\#299](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/299) is een nieuw API-framework geïmplementeerd voor het instellen van gevorderde regels voor labelen in een project, en implementeert 4 initiële typen regels:
+- QgsLabelingEngineRuleMinimumDistanceLabelToFeature: voorkomt dat labels te *dichtbij* objecten uit een andere laag worden geplaatst
+- QgsLabelingEngineRuleMaximumDistanceLabelToFeature: voorkomt dat labels te *ver* van objecten uit een andere laag worden geplaatst
+- QgsLabelingEngineRuleMinimumDistanceLabelToLabel: voorkomt dat labels te dichtbij objecten uit een andere laag worden geplaatst
+- QgsLabelingEngineRuleAvoidLabelOverlapWithFeature: voorkomt dat labels zo worden geplaatst dat ze objecten uit een andere laag overlappen 
+
+Onthoud dat de eerste 3 regels een bouw vereisen die is gebaseerd op GEOS &gt;= 3.10, en dat ze niet beschikbaar zijn voor oudere bouwsels.
+
+Ook is een register geïmplementeerd voor het opslaan van beschikbare klassen voor regels, en serialisatie van regels en configuratie in projecten van QGIS.
 
 ![](images/entries/f65ac82ccaa14f9017904db8badb25afc6e87bc5.webp)
 
 Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Support img tags in HTML label text
-Allows use of img tags in HTML label content. The following logic is applied:
-- Image path is set via the src="xxx" attribute. Local, HTTP, and base64 encoded paths are permitted
-- Any image format readable by QGIS can be used
-- Image sizes can be specified via the width="\#\#" and height="\#\#" attributes. If width or height is not specified it will automatically be calculated from the original image size
-- If width or height are specified, they are considered to be in POINTS
-- The css width/height settings are NOT respected (this is a Qt limitation)
-- Images are not supported for curved text labels
-- Images are placed inline only, floating images are not supported
+### Mogelijkheid: Ondersteuning voor tags img in HTML-labeltekst
+Maakt het gebruik mogelijk van tags img in HTML-labelinhoud. De volgende logica wordt toegepast:
+- Pad naar afbeelding wordt ingesteld via het attribuut src="xxx". Lokale, HTTP en met base64 gecodeerde paden zijn toegestaan
+- Elke door QGIS te lezen afbeeldingsindeling mag worden gebruikt
+- Afbeeldingsgroottes kunnen worden gespecificeerd met de attributen width="\#\#" en height="\#\#". Als width of height niet wordt gespecificeerd, dan zal die automatisch worden berekend uit de grootte van de originele afbeelding
+- Als width of height zijn gespecificeerd, worden ze geacht in PUNT te zijn
+- Met de instellingen voor CSS width/height wordt GEEN rekening gehouden (dit is een beperking van Qt)
+- Afbeeldingen worden niet ondersteund voor gebogen tekstlabels
+- Afbeeldingen worden alleen op de regel geplaatst; zwevende afbeeldingen worden niet ondersteund
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Diagrammen
-### Feature: Introduce stacked diagrams
-Stacked diagrams provide a method of structuring multiple adjacent (horizontally or vertically) stacked "Sub Diagrams" for a single feature, providing a method for creating complex diagram objects such as population pyramids.
+### Mogelijkheid: Introduceren van gestapelde diagrammen
+Gestapelde diagrammen geven een methode voor het structureren van meerdere aanliggende (horizontale of verticale) gestapelde "Subdiagrammen" voor een enkel object, wat een methode verschaft voor het maken van complexe diagramobjecten, zoals bevolkingspyramiden.
 
-The implementation introduces multiple new settings for stacked diagram and sub-diagram configuration, and has migrated the diagram settings modal dialog to the Styling dock widget.
+De implementatie introduceert meerdere nieuwe instellingen voor het configureren van diagram en subdiagram, en heeft het modale dialoogvenster voor instellingen van het diagram gemigreerd naar de dockwidget Laag opmaken.
 
 ![](images/entries/798c8f7ffe9acd928e7df5820212b39f22ef42fd.webp)
 
@@ -262,8 +262,8 @@ Dit werd mogelijk gemaakt door [Landesamt für Vermessung und Geoinformation (LV
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Mazen
-### Feature: Add GUI for adding Quantized Mesh layers
-New GUI elements are provided for loading Quantized Mesh data sources and layers in the QGIS Browser panel as well as the data source manager.
+### Mogelijkheid: Gebruikersinterface toegevoegd voor Gekwantiseerde lagen met mazen
+Nieuwe elementen voor de gebruikersinterface worden verschaft om databronnen en lagen voor Gekwantiseerde lagen met mazen in het paneel QGIS Browser te laden, alsook in Databronnen beheren.
 
 ![](images/entries/9873b9077c396a54266bed908c8b68a46e5ecd5c.webp)
 
@@ -271,56 +271,56 @@ Dit werd mogelijk gemaakt door de Zwitserse QGIS gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [David Koňařík](https://github.com/dvdkon)
 ## Renderen
-### Feature: Support multiple sources for vector tiles
-QGIS capabilities have been extended for loading vector tiles that include multiple sources/ URLs within a single style definition.
+### Mogelijkheid: Meerdere bronnen ondersteunen voor vectortegels
+De mogelijkheden voor QGIS zijn uitgebreid voor het laden van vectortegels die meerdere bronnen/URL's bevatten binnen een enkele stijldefinitie.
 
 ![](images/entries/c52b6dfb4751aed9c39b719d8d4c44c3eaec3a32.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
 ## 3D-objecten
-### Feature: Respect vector layer vertical CRS settings in 3D map views
-Vertical CRS configuration at the layer level will be respected in 3D map views provided that the project has a non-geographic 2D CRS set and a vertical CRS set.
+### Mogelijkheid: Instellingen voor verticaal CRS in vectorlaag respecteren in 3D-kaartweergaven
+Met het geconfigureerde verticale CRS op het laagniveau zal rekening  gehouden in 3D-kaartweergaven, vooropgesteld dat het project een niet-geografisch 2D-CRS heeft ingesteld en dat een verticaal CRS is ingesteld.
 
-Note that this will only affect newly created 3D map views and no setting is currently exposed for users to modify the CRS for existing 3D map views.
+Onthoud dat dit slechts invloed zal hebben op nieuw gemaakte 3D-kaartweergaven en momenteel wordt er geen instelling voor de gebruikers weergegeven om het CRS voor bestaande 3D-kaartweergaven aan te passen.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: 3D Scene Clip Distance
-A new option for setting `gl_clipistance` on 3D views will appropriately filter feature vertices that fall outside of the designated extent, effectively cropping the view on multiple planes.
+### Mogelijkheid: Afstand voor clippen 3D-scène
+Een nieuwe optie voor het instellen van `gl_clipistance` voor 3D-weergaven zal van toepassing zijnde objectpunten filteren die vallen buiten het opgegeven bereik, effectief de weergave bijsnijden in meerdere vlakken.
 
-This setting is controlled with the `enableClipping()` and `disableClipping()` methods on `Qgs3DMapScene` objects.
+Deze instelling wordt beheerd met de methoden `enableClipping()` en `disableClipping()` op objecten `Qgs3DMapScene`.
 
 ![](images/entries/4ec6126f373e56755809edbabc74b0cd5a5ee160.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Afdruklay-outs
-### Feature: Add support merging cells in manual tables
-Allows adjacent cells to be merged in layout manual table items.
+### Mogelijkheid: Ondersteuning toegevoegd voor samenvoegen van cellen in handmatige tabellen
+Staat toe dat aanliggende cellen worden samengevoegd in de lay-outitems van handmatige tabellen.
 
-From the table editor, select multiple cells in a rectangular shape and then from the Table menu, click "Merge Selected Cells". Merged cells can be un-merged via the "Split Selected Cells" menu action.
+Vanuit de tabelbewerker, selecteer meerdere cellen in een rechthoekige vorm en dan, vanuit het menu Tabel, klik op "Geselecteerde cellen samenvoegen". Samengevoegde cellen kunnen van elkaar worden losgemaakt met de menuactie "Geselecteerde cellen splitsen".
 
 ![](images/entries/12309cc445c6d00d56ef0f724be0828bb3e094d0.webp)
 
 Dit werd mogelijk gemaakt door FLYGHT7
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Generate valid PDF/X-4 files
-In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), QGIS will generate a valid PDF/X-4 file if the colorspace has been set
+### Mogelijkheid: Geldige PDF/X-4-bestanden maken
+In lijn met [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283) zal QGIS een geldig bestand PDF/X-4 maken als de kleurruimte is ingesteld
 
 Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Add option to set geospatial PDF group name for items
-This new setting, located in the layout item "Rendering" section, allows users to set an optional "group name" for use in geospatial PDF exports. When set, a matching layer tree group will be created in the exported geospatial PDF and the item will only be visible when this group is checked.
+### Mogelijkheid: Optie toegevoegd om groepsnaam voor items van georuimtelijke PDF in te stellen
+Deze nieuwe instelling, geplaatst in het gedeelte "Renderen" van het lay-outitem, stelt gebruikers in staat een optionele "groepsnaam" in te stellen om te gebruiken bij het exporteren naar georuimtelijke PDF. Indien ingesteld, zal een overeenkomende groep in de boom met lagen worden gemaakt in de geëxporteerde georuimtelijke PDF en het item zal alleen zichtbaar zijn als deze groep is geselecteerd.
 
-This allows content to be selectively displayed as a group by viewers of the geospatial PDF. Eg, it can allow extra layout content such as descriptive labels or legends to only be shown when layers from the group are visible, making geospatial PDF export much more flexible.
+Dit maakt het mogelijk dat inhoud selectief als een groep wordt weergegeven voor lezers van de georuimtelijke PDF. Het kan bijvoorbeeld extra lay-outinhoud mogelijk maken, zoals beschrijvende labels of legenda's, om alleen te worden weergegeven als lagen van de groep zichtbaar zijn. Wat exporteren naar een georuimtelijke PDF veel flexibeler maakt.
 
 ![](images/entries/a0f64c99c2a62dee9681d01dec7a39d991377a85.webp)
 
 Dit werd mogelijk gemaakt door Rubicon Concierge Real Estate Services
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add Page Properties to layout main menu
-A menu option to open Page Properties has been added to the main menu in the Print Layout interface.
+### Mogelijkheid: Pagina-eigenschappen toegevoegd aan het hoofdmenu van Lay-out
+Een menuoptie om de Pagina-eigenschappen te openen is toegevoegd aan het hoofdmenu in de interface voor Afdruklay-out.
 
 ![](images/entries/44407afcb40294680e8aad845bb2cf0060cfe034.webp)
 
@@ -670,7 +670,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperativ
 | --- | --- | --- | --- |
 | Repeated Crash when using Reshape Feature Tool | [#57225](https://github.com/qgis/QGIS/issues/57225) | [PR #58779](https://github.com/qgis/QGIS/pull/58779) | [PR #58792](https://github.com/qgis/QGIS/pull/58792) |
 | pyqt5_to_pyqt6.py fails on infinite recursion | [#58659](https://github.com/qgis/QGIS/issues/58659) | [PR #58785](https://github.com/qgis/QGIS/pull/58785) | Nee |
-| Legend in map atlas anchored to bottom left or bottom right will not correctly reposition in PDF | [#37566](https://github.com/qgis/QGIS/issues/37566) (Regression) | [PR #58798](https://github.com/qgis/QGIS/pull/58798) | [PR #58920](https://github.com/qgis/QGIS/pull/58920) |
+| Legend in map atlas anchored to bottom left or bottom right will not correctly reposition in PDF | [#37566](https://github.com/qgis/QGIS/issues/37566) (Regressie) | [PR #58798](https://github.com/qgis/QGIS/pull/58798) | [PR #58920](https://github.com/qgis/QGIS/pull/58920) |
 | Calling several times waitForFinished on task would cause a deadlock | Niet gerapporteerd | [PR #58799](https://github.com/qgis/QGIS/pull/58799) | Nee |
 | Debian sid Qt6 compile fails on sip build, python bindings | [#57760](https://github.com/qgis/QGIS/issues/57760) | Now working with updated debian |  |
 
@@ -685,7 +685,7 @@ Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://osla
 | Fix unsafe use of QgsProject::instance from vector layer classes | Niet gerapporteerd | [PR #59118](https://github.com/qgis/QGIS/pull/59118) | Te riskant |
 | When excluding tests, only exclude exact matches | Niet gerapporteerd | [PR #59116](https://github.com/qgis/QGIS/pull/59116) | N/B |
 | When layout scalebar settings are invalid, show warning message | Niet gerapporteerd | [PR #59088](https://github.com/qgis/QGIS/pull/59088) | N/B |
-| Many cppcheck fixes to get CI green again | Mark all bool operators as explicit, associated fixes | [PR #59086](https://github.com/qgis/QGIS/pull/59086) | N/B |
+| Many cppcheck fixes to get CI green again | Markeer alle operatoren bool als expliciet, geassocieerde reparaties | [PR #59086](https://github.com/qgis/QGIS/pull/59086) | N/B |
 | Fix random crashes | [#36125](https://github.com/qgis/QGIS/issues/36125) | [PR #59080](https://github.com/qgis/QGIS/pull/59080) | [PR #59087](https://github.com/qgis/QGIS/pull/59087) |
 | Optimise grid decoration rendering | Privé gerapporteerd | [PR #59044](https://github.com/qgis/QGIS/pull/59044) | N/B |
 | Optimise text rendering for a common scenario | Privé gerapporteerd | [PR #59037](https://github.com/qgis/QGIS/pull/59037) | N/B |

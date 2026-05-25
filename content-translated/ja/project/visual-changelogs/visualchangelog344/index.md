@@ -26,7 +26,7 @@ QGIS 3.xブランチの最後の機能リリースとして、このバージョ
 
 QGISはコミュニティによる取り組みです。このリリースを実現するために時間と労力をボランティアで提供してくださった（または資金援助をしてくださった）開発者・ドキュメント作成者・テスター・その他多くの方々に心より感謝申し上げます。QGISコミュニティより、このリリースをお楽しみいただければ幸いです！QGISをさらに素晴らしいものにするために、時間・資金・その他の形でご貢献いただける方は、ぜひ [QGIS.ORG](https://qgis.org) をご覧いただき、お力をお貸しください！
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large or small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
+QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは  [寄付者一覧](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors) でご覧いただけます。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細について  [サステイニングメンバーページ](https://qgis.org/en/site/about/sustaining_members.html) をご覧ください。QGISへのスポンサーシップは、定期的な開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。現在のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 ## 時系列
@@ -544,7 +544,7 @@ GPSツールクラスが `QgisInterface::gpsTools()` を通じてアクセスで
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ## 注目すべき修正
 ### Feature: Bug fixes by Even Rouault (Spatialys)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | CSV Import to Geopackage ( x/y data) ignores more than 5 Mio rows | [\#60966](https://github.com/qgis/QGIS/issues/60966) | 再現不可 |  |
 | OGC API: Feature Creation Request Fails When Location Header is in Lowercase | [\#61729](https://github.com/qgis/QGIS/issues/61729) | [PR \#61814](https://github.com/qgis/QGIS/pull/61814) | [PR \#61835](https://github.com/qgis/QGIS/pull/61835) |
@@ -566,7 +566,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Feature: Bug fixes by Alessandro Pasotti (QCooperative)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Qgis server - Labels background get transparent based on layer transparency | [\#61801](https://github.com/qgis/QGIS/issues/61801) | Won't fix (not a bug) |  |
 | Inconsistent contents in ogcapi openapi spec | [\#61848](https://github.com/qgis/QGIS/issues/61848) | [PR \#61903](https://github.com/qgis/QGIS/pull/61903) | [PR \#61922](https://github.com/qgis/QGIS/pull/61922) |
@@ -596,7 +596,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Jacky Volpes (Oslandia)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | QgsOptions: Locale value is saved only if it is not empty | [\#52359](https://github.com/qgis/QGIS/issues/52359) | [PR \#62137](https://github.com/qgis/QGIS/pull/62137) | [PR \#62171](https://github.com/qgis/QGIS/pull/62171) |
 | Extent not updated after digitizing features in a memory layer | [\#60830](https://github.com/qgis/QGIS/issues/60830) | [PR \#62159](https://github.com/qgis/QGIS/pull/62159) | [PR \#62189](https://github.com/qgis/QGIS/pull/62189) |
@@ -605,9 +605,9 @@ This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qc
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/en/)
+この機能は [Jacky Volpes (Oslandia)](https://oslandia.com/en/) によって開発されました
 ### Feature: Bug fixes by Jean Felder (Oslandia)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | QgsOptions: Locale value is saved only if it is not empty | [\#52359](https://github.com/qgis/QGIS/issues/52359) | [PR \#62137](https://github.com/qgis/QGIS/pull/62137) | [PR \#62171](https://github.com/qgis/QGIS/pull/62171) |
 | Extent not updated after digitizing features in a memory layer | [\#60830](https://github.com/qgis/QGIS/issues/60830) | [PR \#62159](https://github.com/qgis/QGIS/pull/62159) | [PR \#62189](https://github.com/qgis/QGIS/pull/62189) |
@@ -618,7 +618,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/en/)
 ### Feature: Bug fixes by Alexander Bruy (QCooperative)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Better support for SQL and virtual layers as inputs in Processing | [\#39138](https://github.com/qgis/QGIS/issues/39138) | [PR \#61880](https://github.com/qgis/QGIS/pull/61880) | [PR \#61902](https://github.com/qgis/QGIS/pull/61902) |
 | Using virtual layer gives error in GDAL processing algorithms | [\#59364](https://github.com/qgis/QGIS/issues/59364) | [PR \#61880](https://github.com/qgis/QGIS/pull/61880) | [PR \#61902](https://github.com/qgis/QGIS/pull/61902) |
@@ -657,7 +657,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | STAC client connection failing | [\#62232](https://github.com/qgis/QGIS/issues/62232) | [PR \#62258](https://github.com/qgis/QGIS/pull/62258) | N/A |
 | \[browser\] Inappropriate menus in Postgres connection context menu | [\#62183](https://github.com/qgis/QGIS/issues/62183) | [PR \#62270](https://github.com/qgis/QGIS/pull/62270#discussion_r2149355232) | N/A |
@@ -680,7 +680,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Bug Fixes by Germán Carrillo (OPENGIS)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Old relations in form (after exporting layer to new file and applied old style) can't be deleted | [\#44683](https://github.com/qgis/QGIS/issues/44683) | Can't reproduce |  |
 | \[Processing toolbox\] Search box (result) not updated when list of providers change | [\#26435](https://github.com/qgis/QGIS/issues/26435) | [PR \#62162](https://github.com/qgis/QGIS/pull/62162) | No |
@@ -690,9 +690,9 @@ This feature was developed by [Stefanos Natsis (LutraConsulting)](https://www.lu
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Germán Carrillo (OPENGIS)](https://opengis.ch/)
+この機能は [Germán Carrillo (OPENGIS)](https://opengis.ch/) によって開発されました
 ### Feature: Bug fixes by Mathieu Pellerin (OPENGIS)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | QGIS fails to import sprites from OpenStreetMap vector tile styles | 未報告 | [PR \#62175](https://github.com/qgis/QGIS/pull/62175) |  |
 | Menu bar not respecting set font size on qt6 build | [\#62007](https://github.com/qgis/QGIS/issues/62007) | [PR \#62086](https://github.com/qgis/QGIS/pull/62086) |  |
@@ -714,7 +714,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Mathieu Pellerin (OPENGIS)](https://opengis.ch/)
 ### Feature: Bug fixes by Julien Cabieces (Oslandia)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Colours in PDF outputs appear washed out and don't render properly | [\#61674](https://github.com/qgis/QGIS/issues/61674) | [PR \#62091](https://github.com/qgis/QGIS/pull/62091) | [PR \#62107](https://github.com/qgis/QGIS/pull/62107) |
 | \[Oracle\] Fix PyQgsProviderRegistry test | qt6 test failing | [PR \#62109](https://github.com/qgis/QGIS/pull/62109) | No |
@@ -724,7 +724,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Feature: Bug fixes by Nyall Dawson (North Road)
-| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40 backport commit (GitHub) |
+| バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
 | Fix walk mode key handling | 未報告 | [PR \#62331](https://github.com/qgis/QGIS/pull/62331) | N/A |
 | Increase QImageReader allocation limit for qt6 builds | 未報告 | [PR \#62320](https://github.com/qgis/QGIS/pull/62320) | N/A |
