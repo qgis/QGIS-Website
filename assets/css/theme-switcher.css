@@ -1,0 +1,546 @@
+/* =============================================
+   THEME SWITCHER UI
+   ============================================= */
+
+.theme-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.theme-switcher-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 0.5rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+.theme-switcher-btn:hover {
+  opacity: 1;
+}
+
+.theme-switcher-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 1000;
+  min-width: 220px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  padding: 0.5rem 0;
+  margin-top: 0.25rem;
+}
+.theme-switcher-dropdown.is-active {
+  display: block;
+}
+
+.theme-switcher-dropdown .theme-option {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #333;
+  transition: background 0.15s ease;
+}
+.theme-switcher-dropdown .theme-option:hover {
+  background: #f4f4f4;
+}
+.theme-switcher-dropdown .theme-option.is-active {
+  font-weight: 700;
+}
+.theme-switcher-dropdown .theme-option.is-active::after {
+  content: '\2713';
+  margin-left: auto;
+  color: #4DB05B;
+  font-weight: 700;
+}
+
+.theme-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+.theme-option-label {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.theme-option-label small {
+  font-size: 0.7rem;
+  color: #999;
+  font-weight: 400;
+}
+
+/* Dark theme overrides for dropdown */
+[data-theme="bold"] .theme-switcher-dropdown {
+  background: #16162A;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+[data-theme="bold"] .theme-switcher-dropdown .theme-option {
+  color: #D1D5DB;
+}
+[data-theme="bold"] .theme-switcher-dropdown .theme-option:hover {
+  background: rgba(255,255,255,0.05);
+}
+[data-theme="bold"] .theme-switcher-dropdown .theme-option.is-active::after {
+  color: #00FF88;
+}
+
+/* =============================================
+   THEME A: GENTLE REFRESH
+   ============================================= */
+[data-theme="refresh"] {
+  --osgeo-green: #3DA34D;
+  --osgeo-green-light: #5CC16C;
+  --osgeo-green-dark: #2E8A3E;
+  --osgeo-teal: #0A3D42;
+  --osgeo-teal-light: #14707A;
+  --osgeo-teal-dark: #061F22;
+
+  --accent-cyan: #1A9BA6;
+  --accent-emerald: #3DA34D;
+  --accent-amber: #F59E0B;
+  --accent-coral: #C62828;
+
+  --gradient-earth: linear-gradient(150deg, #0A3D42 0%, #14707A 45%, #3DA34D 100%);
+  --gradient-ocean: linear-gradient(150deg, #0A3D42 0%, #1A9BA6 50%, #5CC16C 100%);
+  --gradient-sunset: linear-gradient(150deg, #0A3D42 0%, #C62828 50%, #F59E0B 100%);
+  --gradient-forest: linear-gradient(150deg, #061F22 0%, #1B6B3A 50%, #8FBF9A 100%);
+  --gradient-hero: linear-gradient(150deg, rgba(10,61,66,0.95) 0%, rgba(20,112,122,0.85) 45%, rgba(61,163,77,0.75) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.92) 0%, rgba(244,248,244,0.96) 100%);
+  --gradient-dark-card: linear-gradient(145deg, rgba(10,61,66,0.95) 0%, rgba(6,31,34,0.98) 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.22);
+
+  --shadow-sm: 0 1px 3px rgba(10, 61, 66, 0.08);
+  --shadow-md: 0 4px 10px rgba(10, 61, 66, 0.10);
+  --shadow-lg: 0 8px 20px rgba(10, 61, 66, 0.14);
+  --shadow-xl: 0 12px 40px rgba(10, 61, 66, 0.18);
+  --shadow-glow: 0 0 30px rgba(61, 163, 77, 0.25);
+}
+
+/* =============================================
+   THEME B: MODERN REBRAND
+   ============================================= */
+[data-theme="modern"] {
+  --osgeo-green: #22C55E;
+  --osgeo-green-light: #4ADE80;
+  --osgeo-green-dark: #16A34A;
+  --osgeo-teal: #0F172A;
+  --osgeo-teal-light: #334155;
+  --osgeo-teal-dark: #020617;
+
+  --accent-cyan: #0EA5E9;
+  --accent-emerald: #10B981;
+  --accent-amber: #F59E0B;
+  --accent-coral: #F43F5E;
+
+  --gradient-earth: linear-gradient(135deg, #0F172A 0%, #22C55E 100%);
+  --gradient-ocean: linear-gradient(135deg, #0F172A 0%, #0EA5E9 100%);
+  --gradient-sunset: linear-gradient(135deg, #0F172A 0%, #F43F5E 50%, #F59E0B 100%);
+  --gradient-forest: linear-gradient(135deg, #020617 0%, #1E293B 50%, #334155 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(15,23,42,0.97) 0%, rgba(51,65,85,0.85) 50%, rgba(34,197,94,0.75) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(248,250,252,0.98) 100%);
+  --gradient-dark-card: linear-gradient(145deg, rgba(15,23,42,0.98) 0%, rgba(2,6,23,0.99) 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.12);
+
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 2px 6px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 4px 12px rgba(15, 23, 42, 0.10);
+  --shadow-xl: 0 8px 24px rgba(15, 23, 42, 0.14);
+  --shadow-glow: 0 0 30px rgba(34, 197, 94, 0.2);
+}
+
+/* =============================================
+   THEME C: BOLD REIMAGINATION
+   ============================================= */
+[data-theme="bold"] {
+  --osgeo-green: #00FF88;
+  --osgeo-green-light: #4ADE80;
+  --osgeo-green-dark: #059669;
+  --osgeo-teal: #0C0C1D;
+  --osgeo-teal-light: #1E1E32;
+  --osgeo-teal-dark: #060610;
+
+  --accent-cyan: #06B6D4;
+  --accent-emerald: #7C3AED;
+  --accent-amber: #FCD34D;
+  --accent-coral: #FB7185;
+
+  --gradient-earth: linear-gradient(135deg, #00FF88 0%, #06B6D4 100%);
+  --gradient-ocean: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);
+  --gradient-sunset: linear-gradient(135deg, #FCD34D 0%, #FB7185 50%, #7C3AED 100%);
+  --gradient-forest: linear-gradient(135deg, #0C0C1D 0%, #3730A3 50%, #7C3AED 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(12,12,29,0.97) 0%, rgba(55,48,163,0.8) 50%, rgba(0,255,136,0.6) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(22,22,42,0.95) 0%, rgba(30,30,50,0.98) 100%);
+  --gradient-dark-card: linear-gradient(145deg, rgba(12,12,29,0.98) 0%, rgba(6,6,16,0.99) 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px rgba(0, 255, 136, 0.2);
+}
+
+/* Bold theme: invert the entire page to dark */
+[data-theme="bold"] body {
+  background: #0C0C1D;
+  color: #D1D5DB;
+}
+[data-theme="bold"] .navbar.is-osgeo-nav {
+  background: rgba(12, 12, 29, 0.95) !important;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+[data-theme="bold"] .navbar.is-osgeo-nav .navbar-item,
+[data-theme="bold"] .navbar.is-osgeo-nav .navbar-link {
+  color: #D1D5DB;
+}
+[data-theme="bold"] .navbar.is-osgeo-nav .navbar-item:hover,
+[data-theme="bold"] .navbar.is-osgeo-nav .navbar-link:hover {
+  color: #00FF88;
+  background: rgba(255,255,255,0.04);
+}
+[data-theme="bold"] .navbar-dropdown {
+  background: #16162A;
+  border-top: 2px solid #00FF88;
+}
+[data-theme="bold"] .navbar-dropdown .navbar-item {
+  color: #D1D5DB;
+}
+[data-theme="bold"] .footer {
+  background: #060610;
+  color: #9CA3AF;
+}
+[data-theme="bold"] .footer a {
+  color: #D1D5DB;
+}
+[data-theme="bold"] .footer a:hover {
+  color: #00FF88;
+}
+[data-theme="bold"] .section,
+[data-theme="bold"] .hero {
+  background-color: #0C0C1D;
+}
+[data-theme="bold"] .box {
+  background: #16162A;
+  color: #D1D5DB;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+[data-theme="bold"] .title,
+[data-theme="bold"] .subtitle {
+  color: #F3F4F6;
+}
+[data-theme="bold"] .content h1,
+[data-theme="bold"] .content h2,
+[data-theme="bold"] .content h3,
+[data-theme="bold"] .content h4 {
+  color: #F3F4F6;
+}
+[data-theme="bold"] .content p,
+[data-theme="bold"] .content li {
+  color: #D1D5DB;
+}
+[data-theme="bold"] .card {
+  background: #16162A;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+[data-theme="bold"] .card .card-content .title,
+[data-theme="bold"] .card .card-content .subtitle {
+  color: #F3F4F6;
+}
+[data-theme="bold"] .button.is-osgeo-primary {
+  background: #00FF88;
+  color: #0C0C1D;
+  border-color: #00FF88;
+}
+[data-theme="bold"] .button.is-osgeo-primary:hover {
+  background: #4ADE80;
+}
+
+/* =============================================
+   THEME D: EARTH FROM SPACE
+   ============================================= */
+[data-theme="earth"] {
+  --osgeo-green: #2E6B8A;
+  --osgeo-green-light: #5BA3C9;
+  --osgeo-green-dark: #1B3A5C;
+  --osgeo-teal: #0B1D3A;
+  --osgeo-teal-light: #1B3A5C;
+  --osgeo-teal-dark: #050D1A;
+
+  --accent-cyan: #5BA3C9;
+  --accent-emerald: #6B8E5A;
+  --accent-amber: #C4A35A;
+  --accent-coral: #C0392B;
+
+  --gradient-earth: linear-gradient(135deg, #0B1D3A 0%, #2E6B8A 50%, #5BA3C9 100%);
+  --gradient-ocean: linear-gradient(135deg, #2E6B8A 0%, #6B8E5A 50%, #C4A35A 100%);
+  --gradient-sunset: linear-gradient(135deg, #1A1A3E 0%, #0B1D3A 30%, #C4A35A 70%, #FFE4B5 100%);
+  --gradient-forest: linear-gradient(135deg, #0B1D3A 0%, #6B8E5A 50%, #C4A35A 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(11,29,58,0.97) 0%, rgba(27,58,92,0.85) 50%, rgba(46,107,138,0.75) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.95) 0%, rgba(240,246,250,0.98) 100%);
+  --gradient-dark-card: linear-gradient(145deg, rgba(11,29,58,0.98) 0%, rgba(5,13,26,0.99) 100%);
+
+  --glass-bg: rgba(255, 255, 255, 0.12);
+  --glass-border: rgba(255, 255, 255, 0.18);
+
+  --shadow-sm: 0 1px 3px rgba(11, 29, 58, 0.08);
+  --shadow-md: 0 4px 10px rgba(11, 29, 58, 0.10);
+  --shadow-lg: 0 8px 20px rgba(11, 29, 58, 0.14);
+  --shadow-xl: 0 12px 40px rgba(11, 29, 58, 0.18);
+  --shadow-glow: 0 0 30px rgba(91, 163, 201, 0.2);
+}
+
+/* Earth theme dropdown styling */
+[data-theme="earth"] .theme-switcher-dropdown .theme-option.is-active::after {
+  color: #2E6B8A;
+}
+
+/* =============================================
+   HERO & SECTION OVERRIDES PER THEME
+   These override hardcoded colors in osgeo-vibrant.css
+   that don't use CSS custom properties.
+   ============================================= */
+
+/* --- Shared: make heroes use the variable --- */
+/* The ::before already uses var(--gradient-hero) on .hero.is-osgeo-hero */
+/* But the ::after aurora orbs and .osgeo-hero overlay are hardcoded */
+
+/* THEME A: REFRESH */
+[data-theme="refresh"] .hero.is-osgeo-hero::after {
+  background:
+    radial-gradient(circle at 20% 80%, rgba(61,163,77,0.25) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(26,155,166,0.2) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(20,112,122,0.12) 0%, transparent 70%);
+}
+[data-theme="refresh"] .osgeo-hero > .hero-bg-image::after {
+  background: linear-gradient(135deg, rgba(10,61,66,0.75) 0%, rgba(10,61,66,0.5) 40%, rgba(10,61,66,0.3) 100%);
+}
+[data-theme="refresh"] .interstitial-section.is-gradient-earth {
+  background: var(--gradient-earth);
+}
+[data-theme="refresh"] .page-hero-badge {
+  border-color: rgba(61,163,77,0.5);
+}
+
+/* THEME B: MODERN */
+[data-theme="modern"] .hero.is-osgeo-hero::after {
+  background:
+    radial-gradient(circle at 20% 80%, rgba(34,197,94,0.25) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(14,165,233,0.2) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(51,65,85,0.15) 0%, transparent 70%);
+}
+[data-theme="modern"] .osgeo-hero > .hero-bg-image::after {
+  background: linear-gradient(135deg, rgba(15,23,42,0.8) 0%, rgba(15,23,42,0.55) 40%, rgba(15,23,42,0.3) 100%);
+}
+[data-theme="modern"] .interstitial-section.is-gradient-earth {
+  background: var(--gradient-earth);
+}
+[data-theme="modern"] .page-hero-badge {
+  border-color: rgba(34,197,94,0.5);
+}
+[data-theme="modern"] .footer {
+  background: #0F172A;
+  color: #94A3B8;
+}
+[data-theme="modern"] .footer a { color: #CBD5E1; }
+[data-theme="modern"] .footer a:hover { color: #22C55E; }
+
+/* THEME C: BOLD */
+[data-theme="bold"] .hero.is-osgeo-hero::after {
+  background:
+    radial-gradient(circle at 20% 80%, rgba(0,255,136,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(124,58,237,0.15) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(6,182,212,0.1) 0%, transparent 70%);
+}
+[data-theme="bold"] .osgeo-hero > .hero-bg-image::after {
+  background: linear-gradient(135deg, rgba(12,12,29,0.85) 0%, rgba(12,12,29,0.6) 40%, rgba(12,12,29,0.35) 100%);
+}
+[data-theme="bold"] .interstitial-section.is-gradient-earth {
+  background: var(--gradient-earth);
+}
+[data-theme="bold"] .page-hero-badge {
+  border-color: rgba(0,255,136,0.4);
+}
+[data-theme="bold"] .hero.is-osgeo-hero .title,
+[data-theme="bold"] .osgeo-hero .hero-title,
+[data-theme="bold"] .osgeo-hero-home .hero-title {
+  color: #F3F4F6;
+}
+[data-theme="bold"] .hero.is-osgeo-hero .subtitle,
+[data-theme="bold"] .osgeo-hero .hero-subtitle {
+  color: #D1D5DB;
+}
+
+/* THEME D: EARTH FROM SPACE */
+[data-theme="earth"] .hero.is-osgeo-hero::after {
+  background:
+    radial-gradient(circle at 20% 80%, rgba(46,107,138,0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(91,163,201,0.2) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(27,58,92,0.15) 0%, transparent 70%);
+}
+[data-theme="earth"] .osgeo-hero > .hero-bg-image::after {
+  background: linear-gradient(135deg, rgba(11,29,58,0.8) 0%, rgba(11,29,58,0.55) 40%, rgba(11,29,58,0.3) 100%);
+}
+[data-theme="earth"] .interstitial-section.is-gradient-earth {
+  background: var(--gradient-earth);
+}
+[data-theme="earth"] .page-hero-badge {
+  border-color: rgba(91,163,201,0.5);
+}
+[data-theme="earth"] .footer {
+  background: #050D1A;
+  color: #5BA3C9;
+}
+[data-theme="earth"] .footer a { color: #B8DCF0; }
+[data-theme="earth"] .footer a:hover { color: #C4A35A; }
+
+/* =============================================
+   NAVBAR OVERRIDES PER THEME
+   ============================================= */
+[data-theme="refresh"] .navbar.is-osgeo-nav {
+  background: rgba(10,61,66,0.97) !important;
+}
+[data-theme="modern"] .navbar.is-osgeo-nav {
+  background: rgba(15,23,42,0.97) !important;
+}
+[data-theme="earth"] .navbar.is-osgeo-nav {
+  background: rgba(11,29,58,0.97) !important;
+}
+
+/* =============================================
+   BUTTON COLOR OVERRIDES (is-osgeo-primary)
+   ============================================= */
+[data-theme="refresh"] .button.is-osgeo-primary {
+  background: #3DA34D; border-color: #3DA34D; color: #fff;
+}
+[data-theme="refresh"] .button.is-osgeo-primary:hover { background: #2E8A3E; }
+
+[data-theme="modern"] .button.is-osgeo-primary {
+  background: #22C55E; border-color: #22C55E; color: #fff;
+}
+[data-theme="modern"] .button.is-osgeo-primary:hover { background: #16A34A; }
+
+[data-theme="earth"] .button.is-osgeo-primary {
+  background: #2E6B8A; border-color: #2E6B8A; color: #fff;
+}
+[data-theme="earth"] .button.is-osgeo-primary:hover { background: #1B3A5C; }
+
+/* =============================================
+   SECTION HEADER & ACCENT OVERRIDES
+   ============================================= */
+[data-theme="refresh"] .section-header-badge { background: #3DA34D; }
+[data-theme="modern"] .section-header-badge { background: #22C55E; }
+[data-theme="bold"] .section-header-badge { background: #00FF88; color: #0C0C1D; }
+[data-theme="earth"] .section-header-badge { background: #2E6B8A; }
+
+/* Interstitial sections - all themes use the variable */
+[data-theme="refresh"] .interstitial-section.is-gradient-ocean,
+[data-theme="modern"] .interstitial-section.is-gradient-ocean,
+[data-theme="bold"] .interstitial-section.is-gradient-ocean,
+[data-theme="earth"] .interstitial-section.is-gradient-ocean {
+  background: var(--gradient-ocean);
+}
+
+/* Homepage hero - override the hardcoded bg overlay */
+[data-theme="refresh"] .osgeo-hero-home .hero-bg-image::after,
+[data-theme="refresh"] .osgeo-hero-home::before {
+  background: linear-gradient(150deg, rgba(10,61,66,0.92) 0%, rgba(20,112,122,0.8) 45%, rgba(61,163,77,0.65) 100%) !important;
+}
+[data-theme="modern"] .osgeo-hero-home .hero-bg-image::after,
+[data-theme="modern"] .osgeo-hero-home::before {
+  background: linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(51,65,85,0.8) 50%, rgba(34,197,94,0.6) 100%) !important;
+}
+[data-theme="bold"] .osgeo-hero-home .hero-bg-image::after,
+[data-theme="bold"] .osgeo-hero-home::before {
+  background: linear-gradient(135deg, rgba(12,12,29,0.95) 0%, rgba(55,48,163,0.7) 50%, rgba(0,255,136,0.4) 100%) !important;
+}
+[data-theme="earth"] .osgeo-hero-home .hero-bg-image::after,
+[data-theme="earth"] .osgeo-hero-home::before {
+  background: radial-gradient(ellipse at 40% 50%, rgba(27,58,92,0.85) 0%, rgba(11,29,58,0.95) 100%) !important;
+}
+
+/* =============================================
+   EARTH THEME: FULL DARK NAV + TEXT OVERRIDES
+   ============================================= */
+[data-theme="earth"] .navbar.is-osgeo-nav .navbar-item,
+[data-theme="earth"] .navbar.is-osgeo-nav .navbar-link {
+  color: #B8DCF0;
+}
+[data-theme="earth"] .navbar.is-osgeo-nav .navbar-item:hover,
+[data-theme="earth"] .navbar.is-osgeo-nav .navbar-link:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.05);
+}
+[data-theme="earth"] .navbar-dropdown {
+  background: #0B1D3A;
+  border-top: 2px solid #2E6B8A;
+}
+[data-theme="earth"] .navbar-dropdown .navbar-item {
+  color: #B8DCF0;
+}
+[data-theme="earth"] .navbar-dropdown .navbar-item:hover {
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+}
+[data-theme="earth"] .navbar-divider {
+  background-color: rgba(255,255,255,0.08);
+}
+
+/* =============================================
+   KILL GRADIENT TEXT ON ALL THEMES
+   Gradient text on headings looks cliche.
+   Use solid colors instead.
+   ============================================= */
+[data-theme] .section-title,
+[data-theme] .hero-headline .highlight,
+[data-theme] .text-gradient,
+[data-theme] .section-header .section-title,
+[data-theme] .section-header.is-dark .section-title {
+  -webkit-background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
+  background-clip: unset !important;
+  background: none !important;
+}
+
+/* Solid heading colors per theme */
+[data-theme="current"] .section-title,
+[data-theme="current"] .hero-headline .highlight { color: var(--osgeo-teal); }
+
+[data-theme="refresh"] .section-title,
+[data-theme="refresh"] .hero-headline .highlight { color: #0A3D42; }
+
+[data-theme="modern"] .section-title,
+[data-theme="modern"] .hero-headline .highlight { color: #0F172A; }
+
+[data-theme="bold"] .section-title,
+[data-theme="bold"] .hero-headline .highlight { color: #00FF88; }
+[data-theme="bold"] .section-header.is-dark .section-title { color: #fff; }
+
+[data-theme="earth"] .section-title,
+[data-theme="earth"] .hero-headline .highlight { color: #0B1D3A; }
+[data-theme="earth"] .section-header.is-dark .section-title { color: #B8DCF0; }

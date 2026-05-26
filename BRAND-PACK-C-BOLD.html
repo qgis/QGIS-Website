@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSGeo Brand Pack C - Bold Reimagination</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Source+Serif+4:wght@400;600;700&display=swap');
+
+  :root {
+    --electric: #00FF88;
+    --midnight: #0C0C1D;
+    --indigo: #3730A3;
+    --violet: #7C3AED;
+    --cyan: #06B6D4;
+    --hot-green: #4ADE80;
+    --warm: #FCD34D;
+    --coral: #FB7185;
+    --slate: #1E1E32;
+    --muted: #9CA3AF;
+    --surface: #16162A;
+    --border: rgba(255,255,255,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Outfit', -apple-system, sans-serif;
+    color: #E5E7EB;
+    font-size: 11pt;
+    line-height: 1.6;
+    background: var(--midnight);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: white;
+  }
+
+  .cover {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--midnight);
+    color: white;
+    text-align: center;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(0,255,136,0.15) 0%, transparent 60%);
+    top: -300px; right: -300px;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    width: 700px; height: 700px;
+    background: radial-gradient(circle, rgba(124,58,237,0.12) 0%, transparent 60%);
+    bottom: -250px; left: -250px;
+  }
+  .cover img { width: 160px; margin-bottom: 2rem; position: relative; z-index: 1; filter: brightness(0) invert(1); }
+  .cover h1 { font-size: 54pt; color: var(--electric); letter-spacing: -3px; margin-bottom: 0.25rem; font-weight: 900; position: relative; z-index: 1; }
+  .cover .variant { font-size: 11pt; color: var(--violet); font-weight: 600; letter-spacing: 6px; text-transform: uppercase; margin-bottom: 0.75rem; position: relative; z-index: 1; }
+  .cover .subtitle { font-size: 15pt; color: var(--muted); font-weight: 300; margin-bottom: 3rem; position: relative; z-index: 1; }
+  .cover .date { font-size: 10pt; color: rgba(255,255,255,0.25); border-top: 1px solid rgba(255,255,255,0.06); padding-top: 1.5rem; margin-top: auto; margin-bottom: 3rem; position: relative; z-index: 1; }
+
+  .page { padding: 50px 60px; background: var(--midnight); }
+
+  .page-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 2rem; padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .page-header .badge {
+    background: var(--electric); color: var(--midnight); font-size: 9pt;
+    padding: 5px 14px; border-radius: 4px; font-weight: 800;
+    font-family: 'Outfit', sans-serif; letter-spacing: 1px;
+  }
+  .page-header h2 { font-size: 28pt; margin: 0; letter-spacing: -1.5px; font-weight: 800; }
+
+  h3 { font-size: 13pt; margin: 1.5rem 0 0.75rem; color: var(--electric); letter-spacing: -0.3px; font-weight: 700; }
+  h4 { font-size: 11pt; margin: 1rem 0 0.5rem; color: var(--cyan); font-weight: 600; }
+  p, li { margin-bottom: 0.4rem; color: #D1D5DB; }
+  ul { padding-left: 1.5rem; }
+
+  .swatch-row { display: flex; gap: 12px; margin: 1rem 0; flex-wrap: wrap; }
+  .swatch { flex: 1; min-width: 110px; border-radius: 14px; overflow: hidden; border: 1px solid var(--border); background: var(--surface); }
+  .swatch-color { height: 80px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 9.5pt; font-weight: 600; color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.5); font-family: 'Outfit', monospace; }
+  .swatch-label { padding: 10px 10px; font-size: 9pt; text-align: center; color: #D1D5DB; }
+  .swatch-label strong { display: block; font-size: 9.5pt; color: white; }
+  .swatch-label .pantone { color: var(--muted); font-size: 8pt; }
+  .swatch-small .swatch-color { height: 50px; }
+  .swatch-small .swatch-label { padding: 6px 8px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 10pt; }
+  th { background: var(--surface); color: var(--electric); text-align: left; padding: 10px 14px; font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; font-weight: 700; border-bottom: 1px solid var(--border); }
+  td { padding: 9px 14px; border-bottom: 1px solid var(--border); color: #D1D5DB; }
+  tr:nth-child(even) td { background: rgba(255,255,255,0.02); }
+
+  code { font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 9pt; background: var(--surface); padding: 2px 7px; border-radius: 4px; color: var(--electric); border: 1px solid var(--border); }
+  pre { background: var(--surface); color: #D1D5DB; padding: 18px 22px; border-radius: 14px; font-size: 9pt; line-height: 1.7; margin: 1rem 0; border: 1px solid var(--border); }
+  pre code { background: none; padding: 0; color: inherit; border: none; }
+
+  .logo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1.5rem 0; }
+  .logo-box { border-radius: 16px; padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 160px; border: 1px solid var(--border); }
+  .logo-box img { max-width: 180px; max-height: 80px; }
+  .logo-box .caption { margin-top: 1rem; font-size: 9pt; font-weight: 600; text-align: center; color: white; }
+  .logo-box .sub { font-size: 8pt; color: var(--muted); font-weight: 400; }
+  .logo-box.light { background: white; }
+  .logo-box.light .caption { color: var(--midnight); }
+  .logo-box.dark { background: var(--surface); }
+
+  .rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0; }
+  .rule-box { padding: 1.25rem; border-radius: 14px; border: 1px solid var(--border); }
+  .rule-box.do { background: rgba(0,255,136,0.05); border-color: rgba(0,255,136,0.2); }
+  .rule-box.dont { background: rgba(251,113,133,0.05); border-color: rgba(251,113,133,0.2); }
+  .rule-box h4 { margin-top: 0; }
+  .rule-box.do h4 { color: var(--electric); }
+  .rule-box.dont h4 { color: var(--coral); }
+  .rule-box ul { padding-left: 1.2rem; margin-bottom: 0; }
+  .rule-box li { font-size: 10pt; margin-bottom: 0.3rem; }
+
+  .type-specimen { background: var(--surface); border-radius: 16px; padding: 1.5rem 2rem; margin: 1rem 0; border: 1px solid var(--border); }
+  .type-specimen .heading-demo { font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 30pt; color: white; margin-bottom: 0.5rem; letter-spacing: -1.5px; }
+  .type-specimen .heading-demo-serif { font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 22pt; color: var(--muted); margin-bottom: 0.75rem; letter-spacing: -0.5px; }
+  .type-specimen .body-demo { font-family: 'Outfit', sans-serif; font-weight: 300; font-size: 12pt; color: #D1D5DB; line-height: 1.7; }
+
+  .gradient-bar { height: 52px; border-radius: 14px; margin: 0.5rem 0; display: flex; align-items: center; padding-left: 18px; color: white; font-weight: 700; font-size: 10pt; text-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+  .gradient-label { display: flex; justify-content: space-between; font-size: 8pt; color: var(--muted); margin-top: 2px; margin-bottom: 0.75rem; }
+  .gradient-pair { break-inside: avoid; page-break-inside: avoid; }
+
+  .shadow-demo { display: flex; gap: 20px; margin: 1rem 0; flex-wrap: wrap; }
+  .shadow-card { width: 100px; height: 70px; background: var(--surface); border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 8pt; font-weight: 600; color: white; border: 1px solid var(--border); }
+  .shadow-card span { font-weight: 400; font-size: 7pt; color: var(--muted); margin-top: 4px; }
+
+  .button-demo { display: flex; gap: 16px; margin: 1rem 0; align-items: center; }
+  .btn { padding: 10px 24px; border-radius: 8px; font-family: 'Outfit', sans-serif; font-size: 10pt; font-weight: 600; border: 2px solid transparent; }
+  .btn-electric { background: var(--electric); color: var(--midnight); }
+  .btn-violet { background: var(--violet); color: white; }
+  .btn-ghost { background: transparent; color: white; border-color: var(--border); }
+  .btn-glass { background: rgba(255,255,255,0.06); color: white; border-color: rgba(255,255,255,0.12); backdrop-filter: blur(8px); }
+
+  .quick-ref { background: linear-gradient(135deg, rgba(0,255,136,0.08) 0%, rgba(124,58,237,0.08) 100%); border-radius: 16px; padding: 2rem 2.5rem; color: white; margin: 1.5rem 0; border: 1px solid var(--border); }
+  .quick-ref h3 { color: var(--electric); margin-top: 0; font-size: 16pt; }
+  .quick-ref table { margin: 0.5rem 0; }
+  .quick-ref th { background: rgba(0,0,0,0.3); color: var(--electric); }
+  .quick-ref td { border-bottom-color: var(--border); color: #D1D5DB; }
+  .quick-ref tr:nth-child(even) td { background: rgba(0,0,0,0.15); }
+  .quick-ref code { background: rgba(0,0,0,0.3); color: var(--electric); border-color: var(--border); }
+
+  .radius-demo { display: flex; gap: 16px; margin: 1rem 0; flex-wrap: wrap; }
+  .radius-box { width: 80px; height: 60px; background: var(--surface); border: 1px solid rgba(0,255,136,0.2); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 8pt; font-weight: 600; color: white; }
+  .radius-box span { font-weight: 400; font-size: 7pt; color: var(--muted); }
+
+  .footer-note { text-align: center; font-size: 9pt; color: var(--muted); padding: 2rem 0; border-top: 1px solid var(--border); margin-top: 2rem; }
+
+  .change-note { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1rem 1.25rem; margin: 1rem 0; font-size: 9.5pt; }
+  .change-note strong { color: var(--electric); }
+  .logo-evolution { background: rgba(124,58,237,0.08); border-radius: 14px; padding: 1.25rem 1.5rem; margin: 1rem 0; border: 1px solid rgba(124,58,237,0.2); }
+  .logo-evolution strong { color: var(--violet); }
+
+  .logo-grid, .logo-box, .swatch-row, .swatch, .rules-grid, .rule-box, .type-specimen,
+  .gradient-bar, .shadow-demo, .radius-demo, .button-demo, .quick-ref,
+  .footer-note, .change-note, .logo-evolution, table, pre, h3, h4 {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  h3, h4 { break-after: avoid; page-break-after: avoid; }
+  .section-block { break-inside: avoid; page-break-inside: avoid; }
+
+  @media print {
+    .cover { page-break-after: always; }
+    .page { padding: 40px 50px; }
+    .page-header { break-inside: avoid; page-break-inside: avoid; break-after: avoid; page-break-after: avoid; page-break-before: always; }
+    .page:first-of-type .page-header { page-break-before: auto; }
+    body, .page { background: var(--midnight) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo Logo">
+  <div class="variant">Proposal C</div>
+  <h1>Bold Reimagination</h1>
+  <div class="subtitle">A radical new visual identity for an open future</div>
+  <div class="date">Brand Proposal &bull; 2026</div>
+</div>
+
+<!-- RATIONALE -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">00</span>
+    <h2>Design Rationale</h2>
+  </div>
+
+  <p>This proposal is a <strong>radical rethink</strong> of OSGeo's visual identity. The traditional institutional green-teal is replaced with an electric neon palette on a dark canvas. The design language draws from developer tools, creative coding, and modern data visualization -- positioning OSGeo as a cutting-edge technology foundation, not just a standards body.</p>
+
+  <div class="change-note">
+    <strong>What changes:</strong> Everything visual. Dark-first design, electric green (#00FF88) replaces muted green, violet/indigo accents, single variable-weight typeface (Outfit) with optional serif for editorial (Source Serif 4), glass morphism components, neon glow effects.<br>
+    <strong>What stays:</strong> The compass rose logo (in white-on-dark contexts), green as the primary signal color, the underlying information architecture.
+  </div>
+
+  <div class="logo-evolution">
+    <strong>Logo evolution suggestion:</strong> Commission a refined monoline version of the compass emblem optimized for small sizes. Consider an animated SVG variant where the compass needle subtly rotates on hover. The "OSGeo" wordmark should be reset in Outfit Black with tight letter-spacing for a razor-sharp modern mark. The emblem could gain a subtle circular glow ring in electric green for hero contexts.
+  </div>
+
+  <h3>Key Differences from Current</h3>
+  <table>
+    <tr><th>Element</th><th>Current</th><th>Proposal C</th></tr>
+    <tr><td>Base canvas</td><td>White (#fff)</td><td>Midnight (#0C0C1D)</td></tr>
+    <tr><td>Primary accent</td><td>#4DB05B (muted green)</td><td>#00FF88 (electric green)</td></tr>
+    <tr><td>Secondary accent</td><td>#003A40 (teal)</td><td>#7C3AED (violet)</td></tr>
+    <tr><td>Tertiary accent</td><td>None</td><td>#06B6D4 (cyan)</td></tr>
+    <tr><td>Typeface system</td><td>Miriam Libre + Sintony</td><td>Outfit (single family, 300-900)</td></tr>
+    <tr><td>Editorial font</td><td>None</td><td>Source Serif 4</td></tr>
+    <tr><td>Component style</td><td>Solid fills, subtle shadows</td><td>Glass morphism, neon borders</td></tr>
+    <tr><td>Default radius</td><td>4px</td><td>14px</td></tr>
+  </table>
+</div>
+
+<!-- LOGO -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">01</span>
+    <h2>Logo</h2>
+  </div>
+
+  <p>The compass rose remains the core symbol. In this system it lives almost exclusively in white on dark surfaces, gaining dramatic presence through contrast and surrounding negative space.</p>
+
+  <h3>Logo Contexts</h3>
+  <div class="logo-grid">
+    <div class="logo-box dark">
+      <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo Logo White">
+      <div class="caption">Primary Context<br><span class="sub">White on midnight</span></div>
+    </div>
+    <div class="logo-box" style="background: linear-gradient(135deg, rgba(0,255,136,0.08) 0%, rgba(124,58,237,0.08) 100%); border-color: rgba(0,255,136,0.15);">
+      <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo Glow">
+      <div class="caption">Glow Context<br><span class="sub">On gradient surface</span></div>
+    </div>
+    <div class="logo-box light">
+      <img src="static/img/osgeo/osgeo-logo.svg" alt="OSGeo Logo">
+      <div class="caption">Print / Light Fallback<br><span class="sub">When dark is not possible</span></div>
+    </div>
+    <div class="logo-box dark" style="background: var(--surface);">
+      <img src="static/img/osgeo/osgeo-emblem.svg" alt="OSGeo Emblem" style="max-width: 80px; filter: brightness(0) invert(1);">
+      <div class="caption">Monochrome Emblem<br><span class="sub">Icons, favicons, watermarks</span></div>
+    </div>
+  </div>
+
+  <div class="rules-grid">
+    <div class="rule-box do">
+      <h4>Do</h4>
+      <ul>
+        <li>Prefer white logo on dark backgrounds</li>
+        <li>Allow generous negative space</li>
+        <li>Use emblem alone at small sizes</li>
+        <li>Pair with Outfit Black for wordmark</li>
+      </ul>
+    </div>
+    <div class="rule-box dont">
+      <h4>Don't</h4>
+      <ul>
+        <li>Apply neon glow to the logo itself</li>
+        <li>Recolor the logo in violet or cyan</li>
+        <li>Use on light backgrounds unless necessary</li>
+        <li>Combine with other neon elements directly</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- COLORS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">02</span>
+    <h2>Color Palette</h2>
+  </div>
+
+  <h3>Signal Colors</h3>
+  <div class="swatch-row">
+    <div class="swatch"><div class="swatch-color" style="background: #00FF88; color: #0C0C1D; text-shadow:none;">#00FF88</div><div class="swatch-label"><strong>Electric Green</strong><span class="pantone">Primary signal &bull; RGB 0, 255, 136</span></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #7C3AED;">#7C3AED</div><div class="swatch-label"><strong>Violet</strong><span class="pantone">Secondary signal &bull; RGB 124, 58, 237</span></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #06B6D4;">#06B6D4</div><div class="swatch-label"><strong>Cyan</strong><span class="pantone">Tertiary signal &bull; RGB 6, 182, 212</span></div></div>
+  </div>
+
+  <h3>Dark Surfaces</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch"><div class="swatch-color" style="background: #0C0C1D;">#0C0C1D</div><div class="swatch-label"><strong>Midnight</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #16162A;">#16162A</div><div class="swatch-label"><strong>Surface</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #1E1E32;">#1E1E32</div><div class="swatch-label"><strong>Elevated</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #2A2A44;">#2A2A44</div><div class="swatch-label"><strong>Overlay</strong></div></div>
+  </div>
+
+  <h3>Extended Palette</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch"><div class="swatch-color" style="background: #4ADE80;">#4ADE80</div><div class="swatch-label"><strong>Hot Green</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #3730A3;">#3730A3</div><div class="swatch-label"><strong>Indigo</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #FCD34D; color: #0C0C1D; text-shadow:none;">#FCD34D</div><div class="swatch-label"><strong>Warm</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #FB7185;">#FB7185</div><div class="swatch-label"><strong>Coral</strong></div></div>
+  </div>
+
+  <h3>System / UI</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch"><div class="swatch-color" style="background: #FB7185;">#FB7185</div><div class="swatch-label"><strong>Danger</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #FCD34D; color: #0C0C1D; text-shadow:none;">#FCD34D</div><div class="swatch-label"><strong>Warning</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #00FF88; color: #0C0C1D; text-shadow:none;">#00FF88</div><div class="swatch-label"><strong>Success</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #06B6D4;">#06B6D4</div><div class="swatch-label"><strong>Info</strong></div></div>
+  </div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">03</span>
+    <h2>Typography</h2>
+  </div>
+
+  <h3>Typefaces</h3>
+  <div class="type-specimen">
+    <div class="heading-demo">Outfit Black</div>
+    <div style="font-family: 'Outfit'; font-weight: 300; font-size: 10pt; color: var(--muted); margin-bottom: 1rem;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+    </div>
+    <div class="heading-demo-serif">Source Serif 4</div>
+    <div style="font-family: 'Source Serif 4'; font-size: 10pt; color: var(--muted); margin-bottom: 1rem;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+    </div>
+    <div class="body-demo">Outfit Light for body text creates an airy, modern reading experience.</div>
+  </div>
+
+  <div class="change-note">
+    <strong>Why Outfit:</strong> A single variable-weight geometric sans covering everything from Light (300) body text to Black (900) display. This eliminates the need for separate heading and body typefaces, creating effortless hierarchy through weight alone. Source Serif 4 adds editorial gravitas for long-form content like reports and case studies.
+  </div>
+
+  <table>
+    <tr><th>Role</th><th>Font</th><th>Weight</th><th>Tracking</th></tr>
+    <tr><td><strong>Display / Hero</strong></td><td>Outfit</td><td>Black (900)</td><td>-3px</td></tr>
+    <tr><td><strong>Headings</strong></td><td>Outfit</td><td>Bold (700)</td><td>-1px</td></tr>
+    <tr><td><strong>Subheadings</strong></td><td>Outfit</td><td>SemiBold (600)</td><td>-0.5px</td></tr>
+    <tr><td><strong>Body</strong></td><td>Outfit</td><td>Light (300)</td><td>0</td></tr>
+    <tr><td><strong>Editorial</strong></td><td>Source Serif 4</td><td>Regular (400)</td><td>0</td></tr>
+    <tr><td><strong>Labels / UI</strong></td><td>Outfit</td><td>Medium (500)</td><td>0.5px</td></tr>
+  </table>
+</div>
+
+<!-- GRADIENTS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">04</span>
+    <h2>Gradients &amp; Effects</h2>
+  </div>
+
+  <h3>Named Gradients</h3>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #00FF88 0%, #06B6D4 100%);">Neon Reef</div><div class="gradient-label"><span>#00FF88</span><span></span><span>#06B6D4</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #7C3AED 0%, #06B6D4 100%);">Cosmic</div><div class="gradient-label"><span>#7C3AED</span><span></span><span>#06B6D4</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #00FF88 0%, #7C3AED 100%);">Spectrum</div><div class="gradient-label"><span>#00FF88</span><span></span><span>#7C3AED</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #0C0C1D 0%, #3730A3 50%, #7C3AED 100%);">Deep Space</div><div class="gradient-label"><span>#0C0C1D</span><span>#3730A3</span><span>#7C3AED</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #FCD34D 0%, #FB7185 50%, #7C3AED 100%);">Sunset Flare</div><div class="gradient-label"><span>#FCD34D</span><span>#FB7185</span><span>#7C3AED</span></div></div>
+
+  <div class="section-block">
+  <h3>Glow &amp; Glass Effects</h3>
+  <p>Neon glows and glass morphism replace traditional shadows as the primary depth language.</p>
+  <pre><code>/* Glass morphism */
+background: rgba(255, 255, 255, 0.04);
+border: 1px solid rgba(255, 255, 255, 0.08);
+backdrop-filter: blur(12px);
+
+/* Neon glow - green */
+box-shadow: 0 0 20px rgba(0, 255, 136, 0.15),
+            0 0 60px rgba(0, 255, 136, 0.05);
+
+/* Neon glow - violet */
+box-shadow: 0 0 20px rgba(124, 58, 237, 0.15),
+            0 0 60px rgba(124, 58, 237, 0.05);</code></pre>
+  </div>
+</div>
+
+<!-- COMPONENTS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">05</span>
+    <h2>Components</h2>
+  </div>
+
+  <div class="section-block">
+  <h3>Buttons</h3>
+  <div class="button-demo">
+    <span class="btn btn-electric">Primary Action</span>
+    <span class="btn btn-violet">Secondary</span>
+    <span class="btn btn-ghost">Ghost</span>
+    <span class="btn btn-glass">Glass</span>
+  </div>
+  <pre><code>/* Electric */  background: #00FF88; color: #0C0C1D; border-radius: 8px;
+/* Violet */   background: #7C3AED; color: #fff;
+/* Ghost */    border: 1px solid rgba(255,255,255,0.08); color: #fff;
+/* Glass */    background: rgba(255,255,255,0.06); backdrop-filter: blur(8px);</code></pre>
+  </div>
+
+  <div class="section-block">
+  <h3>Border Radius</h3>
+  <div class="radius-demo">
+    <div class="radius-box" style="border-radius: 4px;">4px<span>Tight</span></div>
+    <div class="radius-box" style="border-radius: 8px;">8px<span>Button</span></div>
+    <div class="radius-box" style="border-radius: 14px;">14px<span>Default</span></div>
+    <div class="radius-box" style="border-radius: 16px;">16px<span>Card</span></div>
+    <div class="radius-box" style="border-radius: 24px;">24px<span>Panel</span></div>
+    <div class="radius-box" style="border-radius: 9999px;">Pill<span>Rounded</span></div>
+  </div>
+  </div>
+
+  <div class="quick-ref">
+    <h3>Quick Reference</h3>
+    <table>
+      <tr><th>Property</th><th>Current</th><th>Proposal C</th></tr>
+      <tr><td>Canvas</td><td>White</td><td><code>#0C0C1D</code> midnight</td></tr>
+      <tr><td>Primary Accent</td><td><code>#4DB05B</code></td><td><code>#00FF88</code> electric</td></tr>
+      <tr><td>Secondary Accent</td><td><code>#003A40</code></td><td><code>#7C3AED</code> violet</td></tr>
+      <tr><td>Tertiary Accent</td><td>n/a</td><td><code>#06B6D4</code> cyan</td></tr>
+      <tr><td>Typeface</td><td>Miriam Libre + Sintony</td><td>Outfit (single family)</td></tr>
+      <tr><td>Default Radius</td><td><code>4px</code></td><td><code>14px</code></td></tr>
+      <tr><td>Depth Language</td><td>Teal-tinted shadows</td><td>Neon glows + glass</td></tr>
+    </table>
+  </div>
+
+  <div class="footer-note">
+    <p><strong>OSGeo Brand Proposal C &mdash; Bold Reimagination</strong></p>
+    <p>A radical departure that repositions OSGeo as a cutting-edge technology foundation.</p>
+  </div>
+</div>
+
+</body>
+</html>

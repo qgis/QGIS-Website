@@ -1,0 +1,74 @@
+{{/* Theme Switcher - dropdown in the navbar */}}
+<div class="navbar-item theme-switcher">
+  <button class="theme-switcher-btn" id="theme-switcher-toggle" aria-label="Switch theme" title="Switch brand theme">
+    <span class="icon"><i class="fa-solid fa-palette"></i></span>
+  </button>
+  <div class="theme-switcher-dropdown" id="theme-switcher-dropdown">
+    <button class="theme-option" data-theme="current">
+      <span class="theme-swatch" style="background: linear-gradient(135deg, #003A40, #4DB05B);"></span>
+      <span class="theme-option-label">Current<small>Miriam Libre + Sintony</small></span>
+    </button>
+    <button class="theme-option" data-theme="refresh">
+      <span class="theme-swatch" style="background: linear-gradient(150deg, #0A3D42, #3DA34D);"></span>
+      <span class="theme-option-label">A: Gentle Refresh<small>Plus Jakarta Sans + Inter</small></span>
+    </button>
+    <button class="theme-option" data-theme="modern">
+      <span class="theme-swatch" style="background: linear-gradient(135deg, #0F172A, #22C55E);"></span>
+      <span class="theme-option-label">B: Modern Rebrand<small>Space Grotesk + DM Sans</small></span>
+    </button>
+    <button class="theme-option" data-theme="bold">
+      <span class="theme-swatch" style="background: linear-gradient(135deg, #0C0C1D, #00FF88);"></span>
+      <span class="theme-option-label">C: Bold Reimagination<small>Outfit + dark canvas</small></span>
+    </button>
+    <button class="theme-option" data-theme="earth">
+      <span class="theme-swatch" style="background: linear-gradient(135deg, #0B1D3A, #2E6B8A, #C4A35A);"></span>
+      <span class="theme-option-label">D: Earth from Space<small>Geologica + ocean/land palette</small></span>
+    </button>
+  </div>
+</div>
+
+<script>
+(function() {
+  var STORAGE_KEY = 'osgeo-theme';
+  var toggle = document.getElementById('theme-switcher-toggle');
+  var dropdown = document.getElementById('theme-switcher-dropdown');
+  var options = dropdown.querySelectorAll('.theme-option');
+
+  function applyTheme(theme) {
+    if (theme === 'current') {
+      document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+    options.forEach(function(opt) {
+      opt.classList.toggle('is-active', opt.getAttribute('data-theme') === theme);
+    });
+    try { localStorage.setItem(STORAGE_KEY, theme); } catch(e) {}
+  }
+
+  // Apply saved theme immediately
+  var saved = 'current';
+  try { saved = localStorage.getItem(STORAGE_KEY) || 'current'; } catch(e) {}
+  applyTheme(saved);
+
+  // Toggle dropdown
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    dropdown.classList.toggle('is-active');
+  });
+
+  // Theme selection
+  options.forEach(function(opt) {
+    opt.addEventListener('click', function(e) {
+      e.stopPropagation();
+      applyTheme(this.getAttribute('data-theme'));
+      dropdown.classList.remove('is-active');
+    });
+  });
+
+  // Close on outside click
+  document.addEventListener('click', function() {
+    dropdown.classList.remove('is-active');
+  });
+})();
+</script>

@@ -94,6 +94,10 @@
               vscode # VSCode for development
               python3Packages.icalendar # Python packages
               python3Packages.requests # Python packages
+              python3Packages.beautifulsoup4 # HTML parsing for content harvester
+              python3Packages.lxml # Fast HTML/XML parser
+              python3Packages.html2text # HTML to markdown conversion
+              python3Packages.rich # Pretty terminal tables
               gnumake # GNU Make for build automation
             ];
             shellHook = ''

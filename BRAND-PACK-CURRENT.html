@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSGeo Brand Pack</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Miriam+Libre:wght@400;700&family=Sintony:wght@400;700&display=swap');
+
+  :root {
+    --green: #4DB05B;
+    --teal: #003A40;
+    --dark-teal: #001F22;
+    --light-green: #6FCF7A;
+    --light-teal: #006670;
+    --dark-green: #3A8A47;
+    --mid-green: #2D6E4B;
+    --bright-teal: #00858C;
+    --deep-teal: #004D52;
+    --bg-light: #f8faf8;
+    --bg-medium: #e8f5e9;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Sintony', 'Helvetica Neue', sans-serif;
+    color: #003A40;
+    font-size: 11pt;
+    line-height: 1.5;
+    background: white;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Miriam Libre', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: var(--teal);
+  }
+
+  /* Cover page */
+  .cover {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #003A40 0%, #006670 50%, #4DB05B 100%);
+    color: white;
+    text-align: center;
+    page-break-after: always;
+  }
+  .cover img { width: 200px; margin-bottom: 3rem; }
+  .cover h1 {
+    font-size: 48pt;
+    color: white;
+    letter-spacing: -1px;
+    margin-bottom: 0.5rem;
+  }
+  .cover .subtitle {
+    font-size: 16pt;
+    opacity: 0.9;
+    font-weight: 400;
+    margin-bottom: 3rem;
+  }
+  .cover .date {
+    font-size: 11pt;
+    opacity: 0.7;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    padding-top: 1.5rem;
+    margin-top: auto;
+    margin-bottom: 3rem;
+  }
+
+  /* Page layout */
+  .page {
+    padding: 50px 60px;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  .page-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--green);
+  }
+  .page-header .badge {
+    background: var(--teal);
+    color: white;
+    font-size: 9pt;
+    padding: 4px 14px;
+    border-radius: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .page-header h2 {
+    font-size: 28pt;
+    margin: 0;
+  }
+
+  /* Section titles */
+  h3 {
+    font-size: 14pt;
+    margin: 1.5rem 0 0.75rem;
+    color: var(--teal);
+  }
+  h4 {
+    font-size: 11pt;
+    margin: 1rem 0 0.5rem;
+    color: var(--light-teal);
+  }
+
+  p, li { margin-bottom: 0.4rem; }
+  ul { padding-left: 1.5rem; }
+
+  /* Color swatches */
+  .swatch-row {
+    display: flex;
+    gap: 16px;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  .swatch {
+    flex: 1;
+    min-width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,58,64,0.12);
+  }
+  .swatch-color {
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 8px;
+    font-size: 10pt;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .swatch-label {
+    padding: 8px 12px;
+    background: white;
+    font-size: 9pt;
+    text-align: center;
+  }
+  .swatch-label strong { display: block; font-size: 10pt; }
+  .swatch-label .pantone { color: #666; font-size: 8pt; }
+
+  .swatch-small .swatch-color { height: 50px; }
+  .swatch-small .swatch-label { padding: 6px 8px; }
+  .swatch-small .swatch-label strong { font-size: 9pt; }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 10pt;
+  }
+  th {
+    background: var(--teal);
+    color: white;
+    text-align: left;
+    padding: 8px 12px;
+    font-size: 9pt;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  td {
+    padding: 7px 12px;
+    border-bottom: 1px solid #e8f5e9;
+  }
+  tr:nth-child(even) td { background: #f8faf8; }
+
+  /* Code blocks */
+  code {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 9pt;
+    background: #f0f4f0;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: var(--dark-teal);
+  }
+  pre {
+    background: var(--dark-teal);
+    color: #c8e6c9;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-size: 9pt;
+    line-height: 1.6;
+    margin: 1rem 0;
+    overflow-x: auto;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  /* Logo display boxes */
+  .logo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 1.5rem 0;
+  }
+  .logo-box {
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 160px;
+    box-shadow: 0 2px 12px rgba(0,58,64,0.1);
+  }
+  .logo-box img { max-width: 180px; max-height: 80px; }
+  .logo-box .caption {
+    margin-top: 1rem;
+    font-size: 9pt;
+    font-weight: 700;
+    text-align: center;
+  }
+  .logo-box .sub { font-size: 8pt; color: #666; font-weight: 400; }
+  .logo-box.light { background: #f8faf8; border: 1px solid #e0e0e0; }
+  .logo-box.dark { background: var(--teal); }
+  .logo-box.dark .caption { color: white; }
+  .logo-box.dark .sub { color: rgba(255,255,255,0.6); }
+
+  /* Do / Don't boxes */
+  .rules-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 1rem 0;
+  }
+  .rule-box {
+    padding: 1.25rem;
+    border-radius: 10px;
+  }
+  .rule-box.do { background: #e8f5e9; border-left: 4px solid var(--green); }
+  .rule-box.dont { background: #fce4ec; border-left: 4px solid #d32f2f; }
+  .rule-box h4 { margin-top: 0; }
+  .rule-box.do h4 { color: var(--green); }
+  .rule-box.dont h4 { color: #d32f2f; }
+  .rule-box ul { padding-left: 1.2rem; margin-bottom: 0; }
+  .rule-box li { font-size: 10pt; margin-bottom: 0.3rem; }
+
+  /* Typography specimen */
+  .type-specimen {
+    background: var(--bg-light);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 1rem 0;
+  }
+  .type-specimen .heading-demo {
+    font-family: 'Miriam Libre', serif;
+    font-weight: 700;
+    font-size: 28pt;
+    color: var(--teal);
+    margin-bottom: 0.5rem;
+  }
+  .type-specimen .body-demo {
+    font-family: 'Sintony', sans-serif;
+    font-size: 12pt;
+    color: var(--teal);
+    line-height: 1.6;
+  }
+
+  /* Gradient bars */
+  .gradient-bar {
+    height: 48px;
+    border-radius: 8px;
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    color: white;
+    font-weight: 700;
+    font-size: 10pt;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  }
+  .gradient-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 8pt;
+    color: #666;
+    margin-top: 2px;
+    margin-bottom: 0.75rem;
+  }
+
+  /* Spacing scale visual */
+  .spacing-demo {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    margin: 1rem 0;
+  }
+  .spacing-bar {
+    background: linear-gradient(135deg, var(--teal), var(--green));
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 7pt;
+    font-weight: 700;
+    min-width: 36px;
+  }
+
+  /* Shadow demo */
+  .shadow-demo {
+    display: flex;
+    gap: 20px;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  .shadow-card {
+    width: 100px;
+    height: 70px;
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8pt;
+    font-weight: 700;
+    color: var(--teal);
+  }
+  .shadow-card span { font-weight: 400; font-size: 7pt; color: #666; margin-top: 4px; }
+
+  /* Button demos */
+  .button-demo {
+    display: flex;
+    gap: 16px;
+    margin: 1rem 0;
+    align-items: center;
+  }
+  .btn {
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-family: 'Sintony', sans-serif;
+    font-size: 10pt;
+    font-weight: 700;
+    border: 2px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-primary { background: var(--green); color: white; }
+  .btn-secondary { background: transparent; color: var(--teal); border-color: var(--teal); }
+  .btn-dark { background: var(--teal); color: white; }
+
+  /* Quick reference card */
+  .quick-ref {
+    background: linear-gradient(135deg, #003A40 0%, #006670 50%, #4DB05B 100%);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    color: white;
+    margin: 1.5rem 0;
+  }
+  .quick-ref h3 { color: white; margin-top: 0; font-size: 16pt; }
+  .quick-ref table { margin: 0.5rem 0; }
+  .quick-ref th { background: rgba(0,0,0,0.2); }
+  .quick-ref td { border-bottom-color: rgba(255,255,255,0.1); color: white; }
+  .quick-ref tr:nth-child(even) td { background: rgba(0,0,0,0.1); }
+  .quick-ref code { background: rgba(0,0,0,0.2); color: #c8e6c9; }
+
+  /* Radius demo */
+  .radius-demo {
+    display: flex;
+    gap: 16px;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+  }
+  .radius-box {
+    width: 80px;
+    height: 60px;
+    background: var(--bg-medium);
+    border: 2px solid var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 8pt;
+    font-weight: 700;
+    color: var(--teal);
+  }
+  .radius-box span { font-weight: 400; font-size: 7pt; color: #666; }
+
+  /* Footer */
+  .footer-note {
+    text-align: center;
+    font-size: 9pt;
+    color: #666;
+    padding: 2rem 0;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 2rem;
+  }
+
+  /* Prevent elements from being split across pages */
+  .logo-grid,
+  .logo-box,
+  .swatch-row,
+  .swatch,
+  .rules-grid,
+  .rule-box,
+  .type-specimen,
+  .gradient-bar,
+  .shadow-demo,
+  .spacing-demo,
+  .radius-demo,
+  .button-demo,
+  .quick-ref,
+  .footer-note,
+  table,
+  pre,
+  h3,
+  h4 {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep headings with the content that follows */
+  h3, h4 {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Keep gradient bar + its label together */
+  .gradient-pair {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* Keep each section (h3 + content) together */
+  .section-block {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  @media print {
+    .cover { page-break-after: always; }
+    .page { padding: 40px 50px; }
+    .page-header {
+      break-inside: avoid;
+      page-break-inside: avoid;
+      break-after: avoid;
+      page-break-after: avoid;
+      page-break-before: always;
+    }
+    /* First page-header after cover shouldn't double-break */
+    .page:first-of-type .page-header {
+      page-break-before: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+  <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo Logo">
+  <h1>Brand Pack</h1>
+  <div class="subtitle">Open Source Geospatial Foundation</div>
+  <div class="date">Official Brand Guidelines &bull; 2026</div>
+</div>
+
+<!-- PAGE 1: LOGO -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">01</span>
+    <h2>Logo</h2>
+  </div>
+
+  <p>The OSGeo logo features a compass rose symbolizing geographic orientation and navigation. Designed by <strong>Pim Tebbens</strong> (2017), licensed under <strong>CC BY-ND 4.0</strong>.</p>
+
+  <h3>Logo Variants</h3>
+  <div class="logo-grid">
+    <div class="logo-box light">
+      <img src="static/img/osgeo/osgeo-logo.svg" alt="OSGeo Logo">
+      <div class="caption">Primary Logo<br><span class="sub">For light backgrounds</span></div>
+    </div>
+    <div class="logo-box dark">
+      <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo Logo White">
+      <div class="caption">White Logo<br><span class="sub">For dark backgrounds</span></div>
+    </div>
+    <div class="logo-box light">
+      <img src="static/img/osgeo/osgeo-emblem.svg" alt="OSGeo Emblem" style="max-width: 80px;">
+      <div class="caption">Emblem<br><span class="sub">Compact contexts</span></div>
+    </div>
+    <div class="logo-box" style="background: linear-gradient(135deg, #003A40 0%, #006670 50%, #4DB05B 100%);">
+      <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo on Gradient">
+      <div class="caption" style="color:white;">On Brand Gradient<br><span class="sub" style="color:rgba(255,255,255,0.6);">Hero / banner usage</span></div>
+    </div>
+  </div>
+
+  <h3>Clear Space &amp; Minimum Size</h3>
+  <p>Minimum clear space around the logo equals the height of the <strong>"O"</strong> in "OSGeo". This ensures the logo always has room to breathe.</p>
+
+  <div class="rules-grid">
+    <div class="rule-box do">
+      <h4>Do</h4>
+      <ul>
+        <li>Use official logo files only</li>
+        <li>Maintain the original aspect ratio</li>
+        <li>Ensure adequate clear space</li>
+        <li>Use white variant on dark backgrounds</li>
+      </ul>
+    </div>
+    <div class="rule-box dont">
+      <h4>Don't</h4>
+      <ul>
+        <li>Stretch or distort the logo</li>
+        <li>Change logo colors</li>
+        <li>Add effects, shadows, or outlines</li>
+        <li>Place on busy or low-contrast backgrounds</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 2: PRIMARY COLORS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">02</span>
+    <h2>Color Palette</h2>
+  </div>
+
+  <h3>Primary Colors</h3>
+  <div class="swatch-row">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #4DB05B;">#4DB05B</div>
+      <div class="swatch-label">
+        <strong>OSGeo Green</strong>
+        <span class="pantone">Pantone 361 U &bull; RGB 77, 176, 91</span>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #003A40;">#003A40</div>
+      <div class="swatch-label">
+        <strong>OSGeo Teal</strong>
+        <span class="pantone">Pantone 330 U &bull; RGB 0, 58, 64</span>
+      </div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #FFFFFF; color: #003A40; text-shadow: none; border: 1px solid #ddd;">#FFFFFF</div>
+      <div class="swatch-label">
+        <strong>White</strong>
+        <span class="pantone">RGB 255, 255, 255</span>
+      </div>
+    </div>
+  </div>
+
+  <h3>Secondary Colors</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #6FCF7A;">#6FCF7A</div>
+      <div class="swatch-label"><strong>Light Green</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #006670;">#006670</div>
+      <div class="swatch-label"><strong>Light Teal</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #3A8A47;">#3A8A47</div>
+      <div class="swatch-label"><strong>Dark Green</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #001F22;">#001F22</div>
+      <div class="swatch-label"><strong>Dark Teal</strong></div>
+    </div>
+  </div>
+
+  <div class="swatch-row swatch-small">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #2D6E4B;">#2D6E4B</div>
+      <div class="swatch-label"><strong>Mid Green</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #00858C;">#00858C</div>
+      <div class="swatch-label"><strong>Bright Teal</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #004D52;">#004D52</div>
+      <div class="swatch-label"><strong>Deep Teal</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #5DC06B;">#5DC06B</div>
+      <div class="swatch-label"><strong>Soft Green</strong></div>
+    </div>
+  </div>
+
+  <h3>Background Colors</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #f8faf8; color: #003A40; text-shadow: none; border: 1px solid #ddd;">#f8faf8</div>
+      <div class="swatch-label"><strong>Light BG 1</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #e8f5e9; color: #003A40; text-shadow: none;">#e8f5e9</div>
+      <div class="swatch-label"><strong>Light BG 2</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #c8e6c9; color: #003A40; text-shadow: none;">#c8e6c9</div>
+      <div class="swatch-label"><strong>Light BG 3</strong></div>
+    </div>
+  </div>
+
+  <h3>System / UI Colors</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch">
+      <div class="swatch-color" style="background: #d32f2f;">#d32f2f</div>
+      <div class="swatch-label"><strong>Danger</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #ffc107; color: #003A40; text-shadow: none;">#ffc107</div>
+      <div class="swatch-label"><strong>Warning</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #4DB05B;">#4DB05B</div>
+      <div class="swatch-label"><strong>Success</strong></div>
+    </div>
+    <div class="swatch">
+      <div class="swatch-color" style="background: #003A40;">#003A40</div>
+      <div class="swatch-label"><strong>Info</strong></div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE 3: TYPOGRAPHY -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">03</span>
+    <h2>Typography</h2>
+  </div>
+
+  <h3>Typefaces</h3>
+  <div class="type-specimen">
+    <div class="heading-demo">Miriam Libre Bold</div>
+    <div style="font-family: 'Miriam Libre'; font-size: 10pt; color: #666; margin-bottom: 1rem;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+    </div>
+    <div class="body-demo">Sintony Regular</div>
+    <div style="font-family: 'Sintony'; font-size: 10pt; color: #666;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+    </div>
+  </div>
+
+  <table>
+    <tr><th>Role</th><th>Font</th><th>Fallbacks</th><th>Weight</th></tr>
+    <tr><td><strong>Headings</strong></td><td>Miriam Libre</td><td>Helvetica Neue, sans-serif</td><td>Bold (700)</td></tr>
+    <tr><td><strong>Body</strong></td><td>Sintony</td><td>Helvetica Neue, sans-serif</td><td>Regular (400)</td></tr>
+    <tr><td><strong>Display</strong></td><td>Miriam Libre</td><td>serif</td><td>Bold (700)</td></tr>
+  </table>
+
+  <h3>Type Scale</h3>
+  <table>
+    <tr><th>Token</th><th>Size</th><th>Pixels</th><th>Usage</th></tr>
+    <tr><td>Size 1</td><td><code>4rem</code></td><td>64px</td><td>Hero titles</td></tr>
+    <tr><td>Size 2</td><td><code>3.5rem</code></td><td>56px</td><td>Large headings</td></tr>
+    <tr><td>Size 3</td><td><code>2.2rem</code></td><td>35px</td><td>Section titles</td></tr>
+    <tr><td>Size 4</td><td><code>1.6rem</code></td><td>26px</td><td>Subsection titles</td></tr>
+    <tr><td>Size 5</td><td><code>1.2rem</code></td><td>19px</td><td>Lead / large body</td></tr>
+    <tr><td>Size 6</td><td><code>1rem</code></td><td>16px</td><td>Body text, nav</td></tr>
+    <tr><td>Size 7</td><td><code>0.75rem</code></td><td>12px</td><td>Captions, footnotes</td></tr>
+  </table>
+
+  <div class="section-block">
+  <h3>Responsive Hero Titles</h3>
+  <pre><code>/* Standard hero */
+font-size: clamp(2.5rem, 6vw, 4.5rem);
+font-weight: 800;
+line-height: 1.18;
+
+/* Home hero */
+font-size: clamp(3rem, 8vw, 7.5rem);
+font-weight: 800;
+line-height: 1.1;</code></pre>
+  </div>
+</div>
+
+<!-- PAGE 4: GRADIENTS & SHADOWS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">04</span>
+    <h2>Gradients &amp; Shadows</h2>
+  </div>
+
+  <h3>Named Gradients</h3>
+  <p>All gradients use a <strong>135-degree angle</strong> with a three-stop structure anchored by the brand teal.</p>
+
+  <div class="gradient-pair">
+    <div class="gradient-bar" style="background: linear-gradient(135deg, #003A40 0%, #006670 50%, #4DB05B 100%);">Earth (Primary)</div>
+    <div class="gradient-label"><span>#003A40</span><span>#006670</span><span>#4DB05B</span></div>
+  </div>
+
+  <div class="gradient-pair">
+    <div class="gradient-bar" style="background: linear-gradient(135deg, rgba(0,58,64,0.95) 0%, rgba(0,102,112,0.85) 50%, rgba(77,176,91,0.75) 100%);">Hero (Overlay)</div>
+    <div class="gradient-label"><span>rgba(0,58,64,0.95)</span><span>rgba(0,102,112,0.85)</span><span>rgba(77,176,91,0.75)</span></div>
+  </div>
+
+  <div class="gradient-pair">
+    <div class="gradient-bar" style="background: linear-gradient(135deg, #003A40 0%, #00B8D4 50%, #4DB05B 100%);">Ocean</div>
+    <div class="gradient-label"><span>#003A40</span><span>#00B8D4</span><span>#4DB05B</span></div>
+  </div>
+
+  <div class="gradient-pair">
+    <div class="gradient-bar" style="background: linear-gradient(135deg, #001F22 0%, #2D6E4B 50%, #6FCF7A 100%);">Forest</div>
+    <div class="gradient-label"><span>#001F22</span><span>#2D6E4B</span><span>#6FCF7A</span></div>
+  </div>
+
+  <div class="gradient-pair">
+    <div class="gradient-bar" style="background: linear-gradient(135deg, #003A40 0%, #FF6B6B 50%, #F59E0B 100%);">Sunset</div>
+    <div class="gradient-label"><span>#003A40</span><span>#FF6B6B</span><span>#F59E0B</span></div>
+  </div>
+
+  <div class="section-block">
+  <h3>Shadow System</h3>
+  <p>Shadows use <strong>OSGeo Teal</strong> as the base color (not pure black), keeping them on-brand.</p>
+
+  <div class="shadow-demo">
+    <div class="shadow-card" style="box-shadow: 0 2px 4px rgba(0,58,64,0.08);">Small<span>0.08</span></div>
+    <div class="shadow-card" style="box-shadow: 0 4px 12px rgba(0,58,64,0.12);">Medium<span>0.12</span></div>
+    <div class="shadow-card" style="box-shadow: 0 8px 24px rgba(0,58,64,0.16);">Large<span>0.16</span></div>
+    <div class="shadow-card" style="box-shadow: 0 16px 48px rgba(0,58,64,0.2);">XL<span>0.20</span></div>
+    <div class="shadow-card" style="box-shadow: 0 0 40px rgba(77,176,91,0.3);">Glow<span>green</span></div>
+  </div>
+
+  <table>
+    <tr><th>Level</th><th>CSS Value</th></tr>
+    <tr><td>Small</td><td><code>0 2px 4px rgba(0, 58, 64, 0.08)</code></td></tr>
+    <tr><td>Medium</td><td><code>0 4px 12px rgba(0, 58, 64, 0.12)</code></td></tr>
+    <tr><td>Large</td><td><code>0 8px 24px rgba(0, 58, 64, 0.16)</code></td></tr>
+    <tr><td>XL</td><td><code>0 16px 48px rgba(0, 58, 64, 0.2)</code></td></tr>
+    <tr><td>Glow</td><td><code>0 0 40px rgba(77, 176, 91, 0.3)</code></td></tr>
+  </table>
+  </div>
+</div>
+
+<!-- PAGE 5: SPACING, RADIUS, COMPONENTS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">05</span>
+    <h2>Spacing, Radius &amp; Components</h2>
+  </div>
+
+  <h3>Spacing Scale</h3>
+  <div class="spacing-demo">
+    <div class="spacing-bar" style="width: 36px; height: 16px; font-size: 6pt;">xs</div>
+    <div class="spacing-bar" style="width: 36px; height: 32px;">sm</div>
+    <div class="spacing-bar" style="width: 36px; height: 64px;">md</div>
+    <div class="spacing-bar" style="width: 36px; height: 96px;">lg</div>
+    <div class="spacing-bar" style="width: 36px; height: 128px;">xl</div>
+    <div class="spacing-bar" style="width: 36px; height: 192px;">2xl</div>
+    <div class="spacing-bar" style="width: 36px; height: 256px;">3xl</div>
+  </div>
+
+  <table>
+    <tr><th>Token</th><th>Value</th><th>Pixels</th></tr>
+    <tr><td><code>--space-xs</code></td><td>0.25rem</td><td>4px</td></tr>
+    <tr><td><code>--space-sm</code></td><td>0.5rem</td><td>8px</td></tr>
+    <tr><td><code>--space-md</code></td><td>1rem</td><td>16px</td></tr>
+    <tr><td><code>--space-lg</code></td><td>1.5rem</td><td>24px</td></tr>
+    <tr><td><code>--space-xl</code></td><td>2rem</td><td>32px</td></tr>
+    <tr><td><code>--space-2xl</code></td><td>3rem</td><td>48px</td></tr>
+    <tr><td><code>--space-3xl</code></td><td>4rem</td><td>64px</td></tr>
+    <tr><td><code>--space-4xl</code></td><td>6rem</td><td>96px</td></tr>
+  </table>
+
+  <div class="section-block">
+  <h3>Border Radius</h3>
+  <div class="radius-demo">
+    <div class="radius-box" style="border-radius: 2px;">2px<span>Small</span></div>
+    <div class="radius-box" style="border-radius: 4px;">4px<span>Default</span></div>
+    <div class="radius-box" style="border-radius: 6px;">6px<span>Large</span></div>
+    <div class="radius-box" style="border-radius: 8px;">8px<span>Cookie</span></div>
+    <div class="radius-box" style="border-radius: 10px;">10px<span>Button</span></div>
+    <div class="radius-box" style="border-radius: 14px;">14px<span>Badge</span></div>
+    <div class="radius-box" style="border-radius: 20px;">20px<span>Logo box</span></div>
+    <div class="radius-box" style="border-radius: 9999px;">Pill<span>Rounded</span></div>
+  </div>
+  </div>
+
+  <div class="section-block">
+  <h3>Buttons</h3>
+  <div class="button-demo">
+    <span class="btn btn-primary">Primary Action</span>
+    <span class="btn btn-secondary">Secondary</span>
+    <span class="btn btn-dark">Dark Button</span>
+  </div>
+  <pre><code>/* Primary */   background: #4DB05B; color: #fff; border-radius: 10px; padding: 0.75rem 1.25rem;
+/* Secondary */ background: transparent; border: 2px solid #003A40; color: #003A40;
+/* Dark */      background: #003A40; color: #fff;</code></pre>
+  </div>
+
+  <div class="section-block">
+  <h3>Glass Morphism (Hero Stats)</h3>
+  <pre><code>background: rgba(255, 255, 255, 0.12);
+backdrop-filter: blur(8px);
+border: 1px solid rgba(255, 255, 255, 0.25);</code></pre>
+  </div>
+</div>
+
+<!-- PAGE 6: BREAKPOINTS, ANIMATION, QUICK REF -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">06</span>
+    <h2>Breakpoints &amp; Animation</h2>
+  </div>
+
+  <h3>Responsive Breakpoints</h3>
+  <table>
+    <tr><th>Name</th><th>Width</th><th>Usage</th></tr>
+    <tr><td>Mobile</td><td>&lt; 769px</td><td>Single column layout</td></tr>
+    <tr><td>Tablet</td><td>&ge; 769px</td><td>Two column layout</td></tr>
+    <tr><td>Desktop</td><td>&ge; 1024px</td><td>Full layout</td></tr>
+    <tr><td>Widescreen</td><td>&ge; 1216px</td><td>Wide layout</td></tr>
+    <tr><td>Full HD</td><td>&ge; 1408px</td><td>Maximum width</td></tr>
+  </table>
+
+  <h3>Easing Functions</h3>
+  <table>
+    <tr><th>Name</th><th>Value</th><th>Usage</th></tr>
+    <tr><td>Smooth</td><td><code>cubic-bezier(0.4, 0, 0.2, 1)</code></td><td>General transitions</td></tr>
+    <tr><td>Bounce</td><td><code>cubic-bezier(0.68, -0.55, 0.265, 1.55)</code></td><td>Playful interactions</td></tr>
+    <tr><td>Elastic</td><td><code>cubic-bezier(0.175, 0.885, 0.32, 1.275)</code></td><td>Springy feedback</td></tr>
+  </table>
+
+  <h3>Named Animations</h3>
+  <table>
+    <tr><th>Name</th><th>Duration</th><th>Usage</th></tr>
+    <tr><td><code>fadeInUp</code></td><td>0.8s</td><td>Content entrance</td></tr>
+    <tr><td><code>floatLogo</code></td><td>6s infinite</td><td>Logo subtle motion</td></tr>
+    <tr><td><code>aurora</code></td><td>20s infinite</td><td>Background ambient</td></tr>
+    <tr><td><code>orbFloat</code></td><td>20s infinite</td><td>Decorative orb motion</td></tr>
+  </table>
+
+  <div class="section-block">
+  <h3>Standard Transition</h3>
+  <pre><code>transition: all 0.2s ease;</code></pre>
+  </div>
+
+  <div class="section-block">
+  <h3>Iconography</h3>
+  <p>OSGeo uses <strong>Font Awesome</strong> (solid and brands variants) for all iconography. No custom icon set is defined.</p>
+  </div>
+
+  <div class="quick-ref">
+    <h3>Quick Reference</h3>
+    <table>
+      <tr><th>Property</th><th>Value</th></tr>
+      <tr><td>Primary Green</td><td><code>#4DB05B</code> (Pantone 361 U)</td></tr>
+      <tr><td>Primary Teal</td><td><code>#003A40</code> (Pantone 330 U)</td></tr>
+      <tr><td>Heading Font</td><td>Miriam Libre Bold</td></tr>
+      <tr><td>Body Font</td><td>Sintony Regular</td></tr>
+      <tr><td>Button Radius</td><td><code>10px</code></td></tr>
+      <tr><td>Box Radius</td><td><code>4px</code></td></tr>
+      <tr><td>Shadow Base</td><td><code>rgba(0, 58, 64, ...)</code></td></tr>
+      <tr><td>Gradient Angle</td><td>135deg</td></tr>
+      <tr><td>Logo Clear Space</td><td>Height of "O" in OSGeo</td></tr>
+    </table>
+  </div>
+
+  <div class="footer-note">
+    <p><strong>OSGeo &mdash; Open Source Geospatial Foundation</strong></p>
+    <p>Brand questions: marketing@osgeo.org &bull; Logo pack: wiki.osgeo.org/wiki/Logo</p>
+    <p>Copyright OSGeo Foundation. Logo licensed under CC BY-ND 4.0.</p>
+  </div>
+</div>
+
+</body>
+</html>

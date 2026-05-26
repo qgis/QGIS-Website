@@ -1,0 +1,396 @@
+name: PR Checks - Security, SBOM & Content Freshness
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  # Allow manual trigger
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  security-events: write
+
+jobs:
+  # =========================================
+  # Job 1: Security Audit
+  # =========================================
+  security-audit:
+    name: Security Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check external CDN includes (no SRI)
+        id: cdn_check
+        run: |
+          echo "## External CDN Dependencies" > security-report.md
+          echo "" >> security-report.md
+
+          # Find all external script/link tags from CDNs
+          CDN_HITS=$(grep -rn 'cdn\.jsdelivr\|unpkg\.com\|cdnjs\.cloudflare' \
+            --include='*.html' \
+            layouts/ themes/ 2>/dev/null || true)
+
+          if [ -z "$CDN_HITS" ]; then
+            echo "No external CDN includes found." >> security-report.md
+          else
+            echo "| File | Line | URL | Has SRI |" >> security-report.md
+            echo "|------|------|-----|---------|" >> security-report.md
+            echo "$CDN_HITS" | while IFS= read -r line; do
+              FILE=$(echo "$line" | cut -d: -f1)
+              LINENUM=$(echo "$line" | cut -d: -f2)
+              URL=$(echo "$line" | grep -oP 'https?://[^"'"'"' >]+' | head -1)
+              # Check if same file+line has integrity attribute nearby
+              HAS_SRI=$(grep -A2 -B2 "$URL" "$FILE" 2>/dev/null | grep -c 'integrity=' || true)
+              if [ "$HAS_SRI" -gt 0 ]; then
+                SRI="Yes"
+              else
+                SRI="**No**"
+              fi
+              echo "| $FILE | $LINENUM | \`$URL\` | $SRI |" >> security-report.md
+            done
+          fi
+          echo "" >> security-report.md
+
+      - name: Check for unsafe JS patterns
+        run: |
+          echo "## Unsafe JavaScript Patterns" >> security-report.md
+          echo "" >> security-report.md
+
+          UNSAFE=$(grep -rn 'eval(\|document\.write(\|innerHTML\s*=' \
+            --include='*.html' --include='*.js' \
+            layouts/ assets/ themes/hugo-bulma-blocks-theme/layouts/ \
+            2>/dev/null | grep -v node_modules | head -20 || true)
+
+          if [ -z "$UNSAFE" ]; then
+            echo "No unsafe DOM manipulation patterns (eval, innerHTML, document.write) found." >> security-report.md
+          else
+            echo '```' >> security-report.md
+            echo "$UNSAFE" >> security-report.md
+            echo '```' >> security-report.md
+          fi
+          echo "" >> security-report.md
+
+      - name: Check for hardcoded secrets/tokens
+        run: |
+          echo "## Secret/Token Scan" >> security-report.md
+          echo "" >> security-report.md
+
+          SECRETS=$(grep -rn 'sk_live\|sk_test\|api_key\|apikey\|secret_key\|password\s*=' \
+            --include='*.html' --include='*.js' --include='*.toml' --include='*.yaml' \
+            layouts/ assets/ config.toml themes/hugo-bulma-blocks-theme/layouts/ \
+            2>/dev/null | grep -v node_modules | grep -vi 'cachix\|github' | head -10 || true)
+
+          if [ -z "$SECRETS" ]; then
+            echo "No hardcoded secrets or API keys found." >> security-report.md
+          else
+            echo "**Potential secrets found:**" >> security-report.md
+            echo '```' >> security-report.md
+            echo "$SECRETS" >> security-report.md
+            echo '```' >> security-report.md
+          fi
+          echo "" >> security-report.md
+
+      - name: npm audit (devDependencies)
+        run: |
+          echo "## npm Dependency Audit" >> security-report.md
+          echo "" >> security-report.md
+
+          if [ -f package.json ]; then
+            npm install --ignore-scripts 2>/dev/null || true
+            AUDIT_OUTPUT=$(npm audit --json 2>/dev/null || true)
+            VULN_COUNT=$(echo "$AUDIT_OUTPUT" | python3 -c "
+          import sys, json
+          try:
+              data = json.load(sys.stdin)
+              vulns = data.get('vulnerabilities', {})
+              print(len(vulns))
+          except:
+              print('0')
+          " 2>/dev/null || echo "0")
+
+            if [ "$VULN_COUNT" = "0" ]; then
+              echo "No known vulnerabilities in npm dependencies." >> security-report.md
+            else
+              echo "**$VULN_COUNT vulnerabilities found:**" >> security-report.md
+              echo "" >> security-report.md
+              echo "$AUDIT_OUTPUT" | python3 -c "
+          import sys, json
+          try:
+              data = json.load(sys.stdin)
+              for name, info in data.get('vulnerabilities', {}).items():
+                  sev = info.get('severity', 'unknown')
+                  via = ', '.join(v if isinstance(v, str) else v.get('title','') for v in info.get('via', []))
+                  print(f'- **{name}**: {sev} - {via}')
+          except:
+              pass
+          " >> security-report.md 2>/dev/null || true
+            fi
+          else
+            echo "No package.json found." >> security-report.md
+          fi
+          echo "" >> security-report.md
+
+      - name: Upload security report
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-report
+          path: security-report.md
+
+      - name: Comment security report on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('security-report.md', 'utf8');
+            const body = `# Security Audit Report\n\n${report}\n\n*Generated by PR Checks workflow at ${new Date().toISOString()}*`;
+
+            // Find existing comment to update
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body.includes('# Security Audit Report'));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body: body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body,
+              });
+            }
+
+  # =========================================
+  # Job 2: SBOM Generation
+  # =========================================
+  sbom:
+    name: Software Bill of Materials
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate SBOM with Syft
+        uses: anchore/sbom-action@v0
+        with:
+          path: .
+          format: spdx-json
+          output-file: sbom.spdx.json
+
+      - name: Scan SBOM for vulnerabilities with Grype
+        uses: anchore/scan-action@v6
+        id: grype
+        with:
+          sbom: sbom.spdx.json
+          fail-build: false
+          severity-cutoff: high
+
+      - name: Generate SBOM summary
+        run: |
+          echo "## Software Bill of Materials (SBOM)" > sbom-report.md
+          echo "" >> sbom-report.md
+
+          # Count components
+          if [ -f sbom.spdx.json ]; then
+            COMP_COUNT=$(python3 -c "
+          import json
+          with open('sbom.spdx.json') as f:
+              data = json.load(f)
+          pkgs = data.get('packages', [])
+          print(len(pkgs))
+          by_type = {}
+          for p in pkgs:
+              t = p.get('primaryPackagePurpose', p.get('downloadLocation', 'unknown'))
+              lang = 'unknown'
+              for ref in p.get('externalRefs', []):
+                  if ref.get('referenceType') == 'purl':
+                      purl = ref['referenceLocator']
+                      lang = purl.split(':')[0].replace('pkg/', '') if ':' in purl else 'unknown'
+                      break
+              by_type[lang] = by_type.get(lang, 0) + 1
+          for t, c in sorted(by_type.items()):
+              print(f'  - {t}: {c}')
+          " 2>/dev/null || echo "Could not parse SBOM")
+            echo "Total components detected: see breakdown below" >> sbom-report.md
+            echo "" >> sbom-report.md
+            echo '```' >> sbom-report.md
+            echo "$COMP_COUNT" >> sbom-report.md
+            echo '```' >> sbom-report.md
+          fi
+          echo "" >> sbom-report.md
+
+          # Include Grype results if available
+          if [ -f results.sarif ]; then
+            echo "### Vulnerability Scan (Grype)" >> sbom-report.md
+            echo "" >> sbom-report.md
+            python3 -c "
+          import json
+          with open('results.sarif') as f:
+              data = json.load(f)
+          results = data.get('runs', [{}])[0].get('results', [])
+          if not results:
+              print('No vulnerabilities found.')
+          else:
+              print(f'**{len(results)} findings:**')
+              print('')
+              print('| CVE | Severity | Package | Description |')
+              print('|-----|----------|---------|-------------|')
+              for r in results[:30]:
+                  rule_id = r.get('ruleId', '')
+                  level = r.get('level', 'unknown')
+                  msg = r.get('message', {}).get('text', '')[:80]
+                  loc = r.get('locations', [{}])[0].get('physicalLocation', {}).get('artifactLocation', {}).get('uri', '')
+                  print(f'| {rule_id} | {level} | {loc} | {msg} |')
+          " >> sbom-report.md 2>/dev/null || echo "Could not parse Grype results" >> sbom-report.md
+          fi
+
+      - name: Upload SBOM artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: |
+            sbom.spdx.json
+            sbom-report.md
+
+      - name: Comment SBOM report on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('sbom-report.md', 'utf8');
+            const body = `# SBOM & Vulnerability Report\n\n${report}\n\n*Generated by PR Checks workflow at ${new Date().toISOString()}*`;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body.includes('# SBOM & Vulnerability Report'));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body: body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body,
+              });
+            }
+
+  # =========================================
+  # Job 3: Content Freshness Check
+  # =========================================
+  content-freshness:
+    name: Content Freshness vs osgeo.org
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Nix
+        uses: cachix/install-nix-action@v31
+
+      - name: Run content harvester (dry-run)
+        id: harvest
+        run: |
+          nix develop --command python3 scripts/harvest_osgeo.py --dry-run 2>&1 | \
+            sed 's/\x1b\[[0-9;]*m//g' > harvest-report.txt
+          cat harvest-report.txt
+
+      - name: Parse harvest results
+        id: parse
+        run: |
+          # Extract summary counts
+          INSERTS=$(grep -oP 'insert.*?:\s*\K\d+' harvest-report.txt || echo "0")
+          UPDATES=$(grep -oP 'update.*?:\s*\K\d+' harvest-report.txt || echo "0")
+          TOTAL=$(grep -oP 'total:\s*\K\d+' harvest-report.txt || echo "0")
+
+          echo "inserts=$INSERTS" >> "$GITHUB_OUTPUT"
+          echo "updates=$UPDATES" >> "$GITHUB_OUTPUT"
+          echo "total=$TOTAL" >> "$GITHUB_OUTPUT"
+
+          # Build markdown report
+          echo "## Content Freshness Report" > harvest-report.md
+          echo "" >> harvest-report.md
+          echo "Compared local \`content/\` against [osgeo.org](https://www.osgeo.org) sitemap." >> harvest-report.md
+          echo "" >> harvest-report.md
+          echo "<details>" >> harvest-report.md
+          echo "<summary>Full harvest report ($TOTAL pages checked)</summary>" >> harvest-report.md
+          echo "" >> harvest-report.md
+          echo '```' >> harvest-report.md
+          cat harvest-report.txt >> harvest-report.md
+          echo '```' >> harvest-report.md
+          echo "" >> harvest-report.md
+          echo "</details>" >> harvest-report.md
+          echo "" >> harvest-report.md
+
+          if [ "$UPDATES" != "0" ] || [ "$INSERTS" != "0" ]; then
+            echo "### Action needed" >> harvest-report.md
+            echo "" >> harvest-report.md
+            echo "- **$INSERTS** new pages on osgeo.org not yet in this repo" >> harvest-report.md
+            echo "- **$UPDATES** existing pages have diverged from upstream" >> harvest-report.md
+            echo "" >> harvest-report.md
+            echo "Run \`python3 scripts/harvest_osgeo.py\` to sync." >> harvest-report.md
+          else
+            echo "All content is up to date with osgeo.org." >> harvest-report.md
+          fi
+          echo "" >> harvest-report.md
+          echo "*Checked at $(date -u +"%Y-%m-%dT%H:%M:%SZ") against \`page-sitemap.xml\`*" >> harvest-report.md
+
+      - name: Upload harvest report
+        uses: actions/upload-artifact@v4
+        with:
+          name: harvest-report
+          path: |
+            harvest-report.txt
+            harvest-report.md
+
+      - name: Comment harvest report on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = fs.readFileSync('harvest-report.md', 'utf8');
+            const body = `${report}`;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+            });
+            const existing = comments.find(c => c.body.includes('## Content Freshness Report'));
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body: body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body,
+              });
+            }

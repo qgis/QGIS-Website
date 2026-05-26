@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OSGeo Brand Pack D - Earth from Space</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700;800&family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+  :root {
+    --deep-ocean: #0B1D3A;
+    --ocean: #1B3A5C;
+    --shallow: #2E6B8A;
+    --atmosphere: #5BA3C9;
+    --ice: #B8DCF0;
+    --cloud: #E8F4FA;
+    --landmass: #6B8E5A;
+    --desert: #C4A35A;
+    --terra: #8B6B42;
+    --polar: #F0F6FA;
+    --sunlit: #FFE4B5;
+    --terminator: #1A1A3E;
+    --aurora-green: #66FFAA;
+    --aurora-violet: #9966FF;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Atkinson Hyperlegible', -apple-system, sans-serif;
+    color: #0B1D3A;
+    font-size: 11pt;
+    line-height: 1.65;
+    background: white;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+    color: var(--deep-ocean);
+  }
+
+  .cover {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(ellipse at 40% 50%, #1B3A5C 0%, #0B1D3A 50%, #050D1A 100%);
+    color: white;
+    text-align: center;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+  .cover::before {
+    content: '';
+    position: absolute;
+    width: 500px; height: 500px;
+    background: radial-gradient(circle, rgba(91,163,201,0.15) 0%, transparent 70%);
+    top: 10%; left: 60%;
+  }
+  .cover::after {
+    content: '';
+    position: absolute;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(102,255,170,0.08) 0%, transparent 70%);
+    bottom: 20%; left: 10%;
+  }
+  .cover img { width: 160px; margin-bottom: 2rem; position: relative; z-index: 1; filter: brightness(0) invert(1); }
+  .cover h1 { font-size: 48pt; color: var(--ice); letter-spacing: -2px; margin-bottom: 0.25rem; font-weight: 800; position: relative; z-index: 1; }
+  .cover .variant { font-size: 11pt; color: var(--atmosphere); font-weight: 500; letter-spacing: 5px; text-transform: uppercase; margin-bottom: 0.75rem; position: relative; z-index: 1; }
+  .cover .subtitle { font-size: 14pt; color: rgba(184,220,240,0.7); font-weight: 300; margin-bottom: 3rem; position: relative; z-index: 1; font-family: 'Geologica', sans-serif; }
+  .cover .date { font-size: 10pt; color: rgba(255,255,255,0.25); border-top: 1px solid rgba(255,255,255,0.08); padding-top: 1.5rem; margin-top: auto; margin-bottom: 3rem; position: relative; z-index: 1; }
+
+  .page { padding: 50px 60px; }
+
+  .page-header {
+    display: flex; align-items: center; gap: 14px;
+    margin-bottom: 2rem; padding-bottom: 1rem;
+    border-bottom: 2px solid var(--atmosphere);
+  }
+  .page-header .badge {
+    background: var(--deep-ocean); color: var(--ice); font-size: 9pt;
+    padding: 5px 14px; border-radius: 6px; font-weight: 700;
+    font-family: 'Geologica', sans-serif; letter-spacing: 1px;
+  }
+  .page-header h2 { font-size: 28pt; margin: 0; letter-spacing: -1px; font-weight: 800; }
+
+  h3 { font-size: 13pt; margin: 1.5rem 0 0.75rem; color: var(--ocean); font-weight: 700; }
+  h4 { font-size: 11pt; margin: 1rem 0 0.5rem; color: var(--shallow); font-weight: 600; }
+  p, li { margin-bottom: 0.4rem; }
+  ul { padding-left: 1.5rem; }
+
+  .swatch-row { display: flex; gap: 12px; margin: 1rem 0; flex-wrap: wrap; }
+  .swatch { flex: 1; min-width: 110px; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(11,29,58,0.1); }
+  .swatch-color { height: 80px; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; font-size: 9.5pt; font-weight: 600; color: white; text-shadow: 0 1px 2px rgba(0,0,0,0.4); font-family: 'Geologica', monospace; }
+  .swatch-label { padding: 10px 10px; background: white; font-size: 9pt; text-align: center; }
+  .swatch-label strong { display: block; font-size: 9.5pt; font-family: 'Geologica', sans-serif; color: var(--deep-ocean); }
+  .swatch-label .pantone { color: #888; font-size: 8pt; }
+  .swatch-small .swatch-color { height: 50px; }
+  .swatch-small .swatch-label { padding: 6px 8px; }
+
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 10pt; }
+  th { background: var(--deep-ocean); color: var(--ice); text-align: left; padding: 10px 14px; font-size: 8pt; text-transform: uppercase; letter-spacing: 1px; font-family: 'Geologica', sans-serif; }
+  td { padding: 9px 14px; border-bottom: 1px solid #E8F4FA; }
+  tr:nth-child(even) td { background: #F8FCFE; }
+
+  code { font-family: 'JetBrains Mono', 'SF Mono', monospace; font-size: 9pt; background: var(--cloud); padding: 2px 7px; border-radius: 4px; color: var(--deep-ocean); }
+  pre { background: var(--deep-ocean); color: var(--ice); padding: 18px 22px; border-radius: 10px; font-size: 9pt; line-height: 1.7; margin: 1rem 0; }
+  pre code { background: none; padding: 0; color: inherit; }
+
+  .logo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1.5rem 0; }
+  .logo-box { border-radius: 14px; padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 160px; }
+  .logo-box img { max-width: 180px; max-height: 80px; }
+  .logo-box .caption { margin-top: 1rem; font-size: 9pt; font-weight: 600; text-align: center; font-family: 'Geologica', sans-serif; }
+  .logo-box .sub { font-size: 8pt; color: #888; font-weight: 400; }
+  .logo-box.light { background: var(--polar); border: 1px solid #D0E8F2; }
+  .logo-box.dark { background: var(--deep-ocean); }
+  .logo-box.dark .caption { color: var(--ice); }
+  .logo-box.dark .sub { color: rgba(184,220,240,0.5); }
+
+  .rules-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 1rem 0; }
+  .rule-box { padding: 1.25rem; border-radius: 12px; }
+  .rule-box.do { background: #EFF8EF; border-left: 4px solid var(--landmass); }
+  .rule-box.dont { background: #FFF0F0; border-left: 4px solid #C0392B; }
+  .rule-box h4 { margin-top: 0; }
+  .rule-box.do h4 { color: var(--landmass); }
+  .rule-box.dont h4 { color: #C0392B; }
+  .rule-box ul { padding-left: 1.2rem; margin-bottom: 0; }
+  .rule-box li { font-size: 10pt; margin-bottom: 0.3rem; }
+
+  .type-specimen { background: var(--polar); border-radius: 14px; padding: 1.5rem 2rem; margin: 1rem 0; border: 1px solid #D0E8F2; }
+  .type-specimen .heading-demo { font-family: 'Geologica', sans-serif; font-weight: 800; font-size: 30pt; color: var(--deep-ocean); margin-bottom: 0.5rem; letter-spacing: -1px; }
+  .type-specimen .body-demo { font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 12pt; color: var(--ocean); line-height: 1.7; }
+
+  .gradient-bar { height: 52px; border-radius: 10px; margin: 0.5rem 0; display: flex; align-items: center; padding-left: 18px; color: white; font-weight: 700; font-size: 10pt; text-shadow: 0 1px 3px rgba(0,0,0,0.4); font-family: 'Geologica', sans-serif; }
+  .gradient-label { display: flex; justify-content: space-between; font-size: 8pt; color: #888; margin-top: 2px; margin-bottom: 0.75rem; }
+  .gradient-pair { break-inside: avoid; page-break-inside: avoid; }
+
+  .shadow-demo { display: flex; gap: 20px; margin: 1rem 0; flex-wrap: wrap; }
+  .shadow-card { width: 100px; height: 70px; background: white; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 8pt; font-weight: 600; color: var(--deep-ocean); }
+  .shadow-card span { font-weight: 400; font-size: 7pt; color: #888; margin-top: 4px; }
+
+  .button-demo { display: flex; gap: 16px; margin: 1rem 0; align-items: center; }
+  .btn { padding: 10px 24px; border-radius: 8px; font-family: 'Geologica', sans-serif; font-size: 10pt; font-weight: 600; border: 2px solid transparent; }
+  .btn-ocean { background: var(--shallow); color: white; }
+  .btn-land { background: var(--landmass); color: white; }
+  .btn-ghost { background: transparent; color: var(--deep-ocean); border-color: var(--atmosphere); }
+  .btn-dark { background: var(--deep-ocean); color: var(--ice); }
+
+  .quick-ref { background: radial-gradient(ellipse at 30% 50%, #1B3A5C 0%, #0B1D3A 100%); border-radius: 16px; padding: 2rem 2.5rem; color: white; margin: 1.5rem 0; }
+  .quick-ref h3 { color: var(--ice); margin-top: 0; font-size: 16pt; }
+  .quick-ref table { margin: 0.5rem 0; }
+  .quick-ref th { background: rgba(0,0,0,0.3); color: var(--atmosphere); }
+  .quick-ref td { border-bottom-color: rgba(255,255,255,0.08); color: var(--ice); }
+  .quick-ref tr:nth-child(even) td { background: rgba(0,0,0,0.15); }
+  .quick-ref code { background: rgba(0,0,0,0.3); color: var(--atmosphere); }
+
+  .radius-demo { display: flex; gap: 16px; margin: 1rem 0; flex-wrap: wrap; }
+  .radius-box { width: 80px; height: 60px; background: var(--cloud); border: 2px solid var(--atmosphere); display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 8pt; font-weight: 600; color: var(--deep-ocean); }
+  .radius-box span { font-weight: 400; font-size: 7pt; color: #888; }
+
+  .footer-note { text-align: center; font-size: 9pt; color: #888; padding: 2rem 0; border-top: 1px solid #D0E8F2; margin-top: 2rem; }
+
+  .change-note { background: #FFF8E8; border: 1px solid #F0DCA0; border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; font-size: 9.5pt; }
+  .change-note strong { color: var(--terra); }
+  .logo-evolution { background: #EFF8EF; border-radius: 12px; padding: 1.25rem 1.5rem; margin: 1rem 0; border: 1px solid #C8E0C8; }
+  .logo-evolution strong { color: var(--landmass); }
+
+  .palette-story { background: var(--polar); border-radius: 14px; padding: 1.5rem 2rem; margin: 1.5rem 0; border: 1px solid #D0E8F2; }
+  .palette-story h4 { color: var(--ocean); margin-top: 0; }
+
+  .logo-grid, .logo-box, .swatch-row, .swatch, .rules-grid, .rule-box, .type-specimen,
+  .gradient-bar, .shadow-demo, .radius-demo, .button-demo, .quick-ref,
+  .footer-note, .change-note, .logo-evolution, .palette-story, table, pre, h3, h4 {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  h3, h4 { break-after: avoid; page-break-after: avoid; }
+  .section-block { break-inside: avoid; page-break-inside: avoid; }
+
+  @media print {
+    .cover { page-break-after: always; }
+    .page { padding: 40px 50px; }
+    .page-header { break-inside: avoid; page-break-inside: avoid; break-after: avoid; page-break-after: avoid; page-break-before: always; }
+    .page:first-of-type .page-header { page-break-before: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo Logo">
+  <div class="variant">Proposal D</div>
+  <h1>Earth from Space</h1>
+  <div class="subtitle">A palette drawn from our planet as seen from orbit</div>
+  <div class="date">Brand Proposal &bull; 2026</div>
+</div>
+
+<!-- RATIONALE -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">00</span>
+    <h2>Design Rationale</h2>
+  </div>
+
+  <p>This proposal abandons the traditional OSGeo green entirely, drawing its palette from <strong>what the Earth actually looks like from space</strong>: the deep indigo of oceans at night, the cerulean blue of shallow seas, the dusty ochre of deserts, the muted sage of forests, the brilliant white of polar ice, and the warm glow of the terminator line at sunrise.</p>
+
+  <p>The result is a brand that feels <strong>literally geospatial</strong> -- you look at the colors and see Earth. It's a departure from the "tech green" default and positions OSGeo as the foundation that sees the whole planet.</p>
+
+  <div class="palette-story">
+    <h4>Where the colors come from</h4>
+    <p><strong>Deep Ocean (#0B1D3A)</strong> -- The Pacific at night from ISS. <strong>Shallow Sea (#2E6B8A)</strong> -- Caribbean waters over reef. <strong>Atmosphere (#5BA3C9)</strong> -- The thin blue line at the limb of Earth. <strong>Ice (#B8DCF0)</strong> -- Antarctic ice shelf reflections. <strong>Landmass (#6B8E5A)</strong> -- Central European forest canopy. <strong>Desert (#C4A35A)</strong> -- Saharan dunes at golden hour. <strong>Terra (#8B6B42)</strong> -- Australian outback soil.</p>
+  </div>
+
+  <div class="change-note">
+    <strong>What changes:</strong> Entire color palette derived from satellite imagery. No green brand accent. Typography switches to Geologica (geological/scientific feel) + Atkinson Hyperlegible (maximum accessibility). Warm/cool contrast replaces the single-hue system.<br>
+    <strong>What stays:</strong> The compass rose logo, the concept of gradients, professional tone.
+  </div>
+
+  <div class="logo-evolution">
+    <strong>Logo evolution suggestion:</strong> Retain the compass rose but consider recoloring the green quadrants to ocean blue (#2E6B8A) and the teal quadrants to deep ocean (#0B1D3A). The "OSGeo" wordmark could be set in Geologica Bold. For hero contexts, the emblem could sit inside a subtle circular glow evoking Earth's atmosphere limb.
+  </div>
+
+  <h3>Key Differences from Current</h3>
+  <table>
+    <tr><th>Element</th><th>Current</th><th>Earth from Space</th></tr>
+    <tr><td>Primary accent</td><td>#4DB05B (green)</td><td>#2E6B8A (shallow sea)</td></tr>
+    <tr><td>Dark base</td><td>#003A40 (teal)</td><td>#0B1D3A (deep ocean)</td></tr>
+    <tr><td>Warm accent</td><td>None</td><td>#C4A35A (desert)</td></tr>
+    <tr><td>Earth accent</td><td>None</td><td>#6B8E5A (landmass)</td></tr>
+    <tr><td>Heading font</td><td>Miriam Libre</td><td>Geologica</td></tr>
+    <tr><td>Body font</td><td>Sintony</td><td>Atkinson Hyperlegible</td></tr>
+    <tr><td>Color philosophy</td><td>Single hue (green-teal)</td><td>Multi-hue (ocean-land-sky)</td></tr>
+    <tr><td>Emotional tone</td><td>Tech / institutional</td><td>Planetary / scientific</td></tr>
+  </table>
+</div>
+
+<!-- LOGO -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">01</span>
+    <h2>Logo</h2>
+  </div>
+
+  <p>The compass rose remains the core symbol, gaining new meaning in this palette -- a navigator's tool against the backdrop of the planet it helps us understand.</p>
+
+  <h3>Logo Contexts</h3>
+  <div class="logo-grid">
+    <div class="logo-box light">
+      <img src="static/img/osgeo/osgeo-logo.svg" alt="OSGeo Logo">
+      <div class="caption">Standard Logo<br><span class="sub">Light / print contexts</span></div>
+    </div>
+    <div class="logo-box dark">
+      <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo Logo White">
+      <div class="caption">White on Deep Ocean<br><span class="sub">Primary digital context</span></div>
+    </div>
+    <div class="logo-box" style="background: radial-gradient(ellipse at 40% 50%, #1B3A5C 0%, #0B1D3A 100%);">
+      <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo on orbital gradient">
+      <div class="caption" style="color: var(--ice);">Orbital Context<br><span class="sub" style="color: rgba(184,220,240,0.5);">Hero / banner usage</span></div>
+    </div>
+    <div class="logo-box" style="background: linear-gradient(135deg, #C4A35A 0%, #8B6B42 100%);">
+      <img src="static/img/osgeo/osgeo-logo-white.svg" alt="OSGeo on terrain">
+      <div class="caption" style="color: white;">Terrain Context<br><span class="sub" style="color: rgba(255,255,255,0.6);">Warm / land themed</span></div>
+    </div>
+  </div>
+
+  <div class="rules-grid">
+    <div class="rule-box do">
+      <h4>Do</h4>
+      <ul>
+        <li>White logo on deep ocean backgrounds</li>
+        <li>Standard logo on ice/cloud backgrounds</li>
+        <li>Generous clear space (atmosphere around the Earth)</li>
+        <li>Pair with Geologica Bold for wordmark</li>
+      </ul>
+    </div>
+    <div class="rule-box dont">
+      <h4>Don't</h4>
+      <ul>
+        <li>Place on busy satellite imagery without overlay</li>
+        <li>Recolor the logo in desert/land tones</li>
+        <li>Use the original green version on ocean backgrounds</li>
+        <li>Combine with other planetary imagery directly</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- COLORS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">02</span>
+    <h2>Color Palette</h2>
+  </div>
+
+  <h3>Ocean (Cool Primary)</h3>
+  <div class="swatch-row">
+    <div class="swatch"><div class="swatch-color" style="background: #0B1D3A;">#0B1D3A</div><div class="swatch-label"><strong>Deep Ocean</strong><span class="pantone">Night ocean &bull; RGB 11, 29, 58</span></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #1B3A5C;">#1B3A5C</div><div class="swatch-label"><strong>Ocean</strong><span class="pantone">Open water &bull; RGB 27, 58, 92</span></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #2E6B8A;">#2E6B8A</div><div class="swatch-label"><strong>Shallow Sea</strong><span class="pantone">Primary accent &bull; RGB 46, 107, 138</span></div></div>
+  </div>
+
+  <h3>Atmosphere &amp; Ice (Light Cool)</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch"><div class="swatch-color" style="background: #5BA3C9;">#5BA3C9</div><div class="swatch-label"><strong>Atmosphere</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #B8DCF0; color: #0B1D3A; text-shadow: none;">#B8DCF0</div><div class="swatch-label"><strong>Ice</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #E8F4FA; color: #0B1D3A; text-shadow: none;">#E8F4FA</div><div class="swatch-label"><strong>Cloud</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #F0F6FA; color: #0B1D3A; text-shadow: none; border: 1px solid #D0E8F2;">#F0F6FA</div><div class="swatch-label"><strong>Polar</strong></div></div>
+  </div>
+
+  <h3>Land &amp; Terrain (Warm)</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch"><div class="swatch-color" style="background: #6B8E5A;">#6B8E5A</div><div class="swatch-label"><strong>Landmass</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #C4A35A; color: #0B1D3A; text-shadow: none;">#C4A35A</div><div class="swatch-label"><strong>Desert</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #8B6B42;">#8B6B42</div><div class="swatch-label"><strong>Terra</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #FFE4B5; color: #0B1D3A; text-shadow: none;">#FFE4B5</div><div class="swatch-label"><strong>Sunlit</strong></div></div>
+  </div>
+
+  <h3>Night &amp; Aurora (Special)</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch"><div class="swatch-color" style="background: #1A1A3E;">#1A1A3E</div><div class="swatch-label"><strong>Terminator</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #66FFAA; color: #0B1D3A; text-shadow: none;">#66FFAA</div><div class="swatch-label"><strong>Aurora Green</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #9966FF;">#9966FF</div><div class="swatch-label"><strong>Aurora Violet</strong></div></div>
+  </div>
+
+  <h3>System / UI</h3>
+  <div class="swatch-row swatch-small">
+    <div class="swatch"><div class="swatch-color" style="background: #C0392B;">#C0392B</div><div class="swatch-label"><strong>Danger</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #C4A35A; color: #0B1D3A; text-shadow: none;">#C4A35A</div><div class="swatch-label"><strong>Warning</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #6B8E5A;">#6B8E5A</div><div class="swatch-label"><strong>Success</strong></div></div>
+    <div class="swatch"><div class="swatch-color" style="background: #2E6B8A;">#2E6B8A</div><div class="swatch-label"><strong>Info</strong></div></div>
+  </div>
+</div>
+
+<!-- TYPOGRAPHY -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">03</span>
+    <h2>Typography</h2>
+  </div>
+
+  <h3>Typefaces</h3>
+  <div class="type-specimen">
+    <div class="heading-demo">Geologica</div>
+    <div style="font-family: 'Geologica'; font-weight: 300; font-size: 10pt; color: #888; margin-bottom: 1rem;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+    </div>
+    <div class="body-demo">Atkinson Hyperlegible</div>
+    <div style="font-family: 'Atkinson Hyperlegible'; font-size: 10pt; color: #888;">
+      ABCDEFGHIJKLMNOPQRSTUVWXYZ abcdefghijklmnopqrstuvwxyz 0123456789
+    </div>
+  </div>
+
+  <div class="change-note">
+    <strong>Why these fonts:</strong> Geologica evokes geological surveys and scientific cartography with its slightly condensed, serious character. Atkinson Hyperlegible was designed by the Braille Institute specifically for maximum legibility, making the site accessible to users with low vision -- fitting for a foundation that believes geospatial should be for everyone.
+  </div>
+
+  <table>
+    <tr><th>Role</th><th>Font</th><th>Weight</th><th>Tracking</th></tr>
+    <tr><td><strong>Display / Hero</strong></td><td>Geologica</td><td>ExtraBold (800)</td><td>-2px</td></tr>
+    <tr><td><strong>Headings</strong></td><td>Geologica</td><td>Bold (700)</td><td>-1px</td></tr>
+    <tr><td><strong>Body</strong></td><td>Atkinson Hyperlegible</td><td>Regular (400)</td><td>0</td></tr>
+    <tr><td><strong>Labels / UI</strong></td><td>Geologica</td><td>Medium (500)</td><td>0.5px</td></tr>
+  </table>
+</div>
+
+<!-- GRADIENTS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">04</span>
+    <h2>Gradients &amp; Shadows</h2>
+  </div>
+
+  <h3>Named Gradients</h3>
+  <p>Each gradient tells a story from orbital observation.</p>
+
+  <div class="gradient-pair"><div class="gradient-bar" style="background: radial-gradient(ellipse at 30% 50%, #1B3A5C 0%, #0B1D3A 100%);">Orbital (Primary)</div><div class="gradient-label"><span>#0B1D3A</span><span></span><span>#1B3A5C</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #0B1D3A 0%, #2E6B8A 50%, #5BA3C9 100%);">Descent</div><div class="gradient-label"><span>#0B1D3A</span><span>#2E6B8A</span><span>#5BA3C9</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #2E6B8A 0%, #6B8E5A 50%, #C4A35A 100%);">Coastline</div><div class="gradient-label"><span>#2E6B8A (sea)</span><span>#6B8E5A (land)</span><span>#C4A35A (desert)</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #1A1A3E 0%, #0B1D3A 30%, #C4A35A 70%, #FFE4B5 100%);">Sunrise Terminator</div><div class="gradient-label"><span>#1A1A3E (night)</span><span>#0B1D3A</span><span>#FFE4B5 (dawn)</span></div></div>
+  <div class="gradient-pair"><div class="gradient-bar" style="background: linear-gradient(135deg, #66FFAA 0%, #1A1A3E 50%, #9966FF 100%);">Aurora</div><div class="gradient-label"><span>#66FFAA</span><span>#1A1A3E</span><span>#9966FF</span></div></div>
+
+  <div class="section-block">
+  <h3>Shadow System</h3>
+  <p>Shadows use deep ocean blue for an integrated feel.</p>
+  <div class="shadow-demo">
+    <div class="shadow-card" style="box-shadow: 0 1px 3px rgba(11,29,58,0.08);">SM<span>0.08</span></div>
+    <div class="shadow-card" style="box-shadow: 0 4px 10px rgba(11,29,58,0.10);">MD<span>0.10</span></div>
+    <div class="shadow-card" style="box-shadow: 0 8px 20px rgba(11,29,58,0.14);">LG<span>0.14</span></div>
+    <div class="shadow-card" style="box-shadow: 0 12px 40px rgba(11,29,58,0.18);">XL<span>0.18</span></div>
+    <div class="shadow-card" style="box-shadow: 0 0 30px rgba(91,163,201,0.2);">Glow<span>atmos</span></div>
+  </div>
+  </div>
+</div>
+
+<!-- COMPONENTS -->
+<div class="page">
+  <div class="page-header">
+    <span class="badge">05</span>
+    <h2>Components</h2>
+  </div>
+
+  <div class="section-block">
+  <h3>Buttons</h3>
+  <div class="button-demo">
+    <span class="btn btn-ocean">Ocean Action</span>
+    <span class="btn btn-land">Land Action</span>
+    <span class="btn btn-ghost">Ghost</span>
+    <span class="btn btn-dark">Deep</span>
+  </div>
+  <pre><code>/* Ocean */   background: #2E6B8A; color: #fff; border-radius: 8px;
+/* Land */    background: #6B8E5A; color: #fff;
+/* Ghost */   border: 2px solid #5BA3C9; color: #0B1D3A;
+/* Deep */    background: #0B1D3A; color: #B8DCF0;</code></pre>
+  </div>
+
+  <div class="section-block">
+  <h3>Border Radius</h3>
+  <div class="radius-demo">
+    <div class="radius-box" style="border-radius: 4px;">4px<span>Tight</span></div>
+    <div class="radius-box" style="border-radius: 8px;">8px<span>Button</span></div>
+    <div class="radius-box" style="border-radius: 10px;">10px<span>Default</span></div>
+    <div class="radius-box" style="border-radius: 14px;">14px<span>Card</span></div>
+    <div class="radius-box" style="border-radius: 9999px;">Pill<span>Rounded</span></div>
+  </div>
+  </div>
+
+  <div class="quick-ref">
+    <h3>Quick Reference</h3>
+    <table>
+      <tr><th>Property</th><th>Current</th><th>Earth from Space</th></tr>
+      <tr><td>Primary Accent</td><td><code>#4DB05B</code> green</td><td><code>#2E6B8A</code> shallow sea</td></tr>
+      <tr><td>Dark Base</td><td><code>#003A40</code> teal</td><td><code>#0B1D3A</code> deep ocean</td></tr>
+      <tr><td>Warm Accent</td><td>n/a</td><td><code>#C4A35A</code> desert</td></tr>
+      <tr><td>Earth Accent</td><td>n/a</td><td><code>#6B8E5A</code> landmass</td></tr>
+      <tr><td>Heading Font</td><td>Miriam Libre</td><td>Geologica</td></tr>
+      <tr><td>Body Font</td><td>Sintony</td><td>Atkinson Hyperlegible</td></tr>
+      <tr><td>Default Radius</td><td><code>4px</code></td><td><code>10px</code></td></tr>
+      <tr><td>Shadow Base</td><td>rgba(0,58,64,...)</td><td>rgba(11,29,58,...)</td></tr>
+    </table>
+  </div>
+
+  <div class="footer-note">
+    <p><strong>OSGeo Brand Proposal D -- Earth from Space</strong></p>
+    <p>A palette drawn from satellite imagery, positioning OSGeo as the foundation that sees the whole planet.</p>
+  </div>
+</div>
+
+</body>
+</html>

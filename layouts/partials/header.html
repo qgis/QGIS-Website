@@ -2,6 +2,7 @@
 <html lang="en" class="has-navbar-fixed-top">
     <head>
         <meta charset="utf-8" />
+        <script>try{var t=localStorage.getItem('osgeo-theme');if(t&&t!=='current')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 
         <link
             rel="apple-touch-icon"
@@ -96,8 +97,9 @@
         {{ $osgeovibrantcss := resources.Get "css/osgeo-vibrant.css" }}
         {{ $siteoverridescss := resources.Get "css/site-overrides.css" }}
         {{ $experimentalribboncss := resources.Get "css/experimental-ribbon.css" }}
+        {{ $themeswitchercss := resources.Get "css/theme-switcher.css" }}
         {{/* must have the leading slash in css path or gh pages deploy will break */}}
-        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss $osgeovibrantcss $siteoverridescss $experimentalribboncss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
+        {{ $css := slice $menucss $syntaxcss $customcss $animatecss $blockcss $highlightcss $overridescss $cookiecss $osgeovibrantcss $siteoverridescss $experimentalribboncss $themeswitchercss | resources.Concat "/css/all.css" | resources.Minify | resources.Fingerprint }}
         <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 
         {{/* We can compile SASS too... */}}
