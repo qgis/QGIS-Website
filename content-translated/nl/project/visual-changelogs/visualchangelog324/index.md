@@ -898,7 +898,7 @@ Bugs fixed by [Matthias Kuhn](https://www.opengis.ch/)
 Deze oplossingen voor problemen werden mogelijk gemaakt door [QGIS.ORG (door donaties en dragende leden)](https://qgis.org/)
 
 Deze problemen werden opgelost door [Nyall Dawson](https://north-road.com/)
-### Bug fixes by Damiano Lombardi
+### Reparaties van problemen door Damiano Lombardi
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Fix #47089 wrong rotation point for rotate label tool preview | [#47089](https://github.com/qgis/QGIS/issues/47089) | [PR #47124](https://github.com/qgis/QGIS/pull/47124) |  |

@@ -32,9 +32,9 @@ SO!DATA bevat een menselijk leesbare inventaris van de gegevensmodellen en de ni
 
 ![\"SO!GIS Layer\" plugin developed at the Canton of Solothurn](./images/suisse_solothurn2.png){.align-right}
 
-To remove the need for end users to interact directly with PostGIS connections and table selection dialogs, a plugin has been developed in python. The plugin is called \"SO!GIS Layer\" (see Figure 1). The plugin connects to the SO!GIS PostGIS repository, gets the information of all published geospatial data layers from SO!DATA and offers the user a GUI to find the data layers they need. With this infrastructure in place, our users are happy \-\-- they can prepare for geoprocessing, editing and map composing in an individual way.
+Een plug-in is in Python ontwikkeld om de noodzaak voor eindgebruikers om direct te interacteren met de verbindingen met PostGIS en dialoogvensters voor tabelselectie. De plug-in is genaamd \"SO!GIS Layer\" (zie Afbeelding 1). De plug-in verbindt met de opslagplaats van SO!GIS PostGIS, haalt de informatie van alle gepubliceerde geo-ruimtelijke gegevenslagen uit SO!DATA en biedt de gebruiker een gebruikersinterface om de gegevenslagen te zoeken die nodig zijn. Met deze infrastructuur op zijn plaats zijn onze gebruikers tevreden —— ze kunnen op een individuele manier geo-verwerking voorbereiden en lay-outs voor kaarten bewerken.
 
-![\"SO!GIS Suche\" plugin developed at the Canton of Solothurn](./images/suisse_solothurn3.png){.align-right}
+![Plug-in \"SO!GIS Suche\" ontwikkeld door het Kanton Solothurn](./images/suisse_solothurn3.png){.align-right}
 
 Een andere vereiste plug-in voor QGIS die we hebben gemaakt, is genaamd \'SO!GIS Suche\'. Dit verschaft de mogelijkheid om te zoeken naar locaties zoals dorpen, adressen of kadastrale percelen (zie Afbeelding 2). Als resultaat daarvan kan de gebruiker heel eenvoudig naar een gebied van interesse navigeren.
 

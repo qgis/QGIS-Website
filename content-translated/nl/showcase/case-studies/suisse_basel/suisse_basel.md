@@ -2,7 +2,7 @@
 draft: 'true'
 
 ---
-# QGIS \-\-- an interesting instrument for forestry planning concepts at local and regional level
+# QGIS —— een interessant instrument voor concepten voor het plannen van bossen op lokaal en regionaal niveau
 Bijna 35% van de oppervlakte van Zwitserland wordt bedekt door bossen. Wijzigingen met betrekking tot de bestemming van de bossen en de armlastige financiële situatie van bosbedrijven in Zwitserland leidden ongeveer vijftien jaar geleden tot de ontwikkeling van een nieuw concept voor het plannen van de ontwikkeling van de bossen. Dit concept introduceerde een duidelijk onderscheid tussen de planning op het niveau van de autoriteiten en de planning op het niveau van de eigenaren. Als een nieuw kantoor voor het plannen van bosbouw werkt Guaraci primair in de regio Basel (Zwitserland) op beide genoemde niveaus voor planning. Dit praktijkvoorbeeld behandelt het gebruiken van QGIS op het niveau van de eigenaar van het bos. Op dit niveau is een eenvoudig, dynamisch en compatibel geografisch informatiesysteem vereist voor het vaststellen van een beheersplan voor een bos. Dit plan bedekt bijna 1000 ha bos, zal geldig zijn voor ongeveer 20 jaar en is geïmplementeerd door de lokale bosbeheerder. Het gebied is gelegen in de regio Basel (zie Google maps).
 ## Hoe QGIS werd gebruikt
 Binnen het gehele proces van het plannen werd QGIS gebruikt voor de volgende vier taken:

@@ -565,7 +565,7 @@ Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gac
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/)
-### Feature: Bug fixes by Alessandro Pasotti (QCooperative)
+### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (QCooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Qgis server - Labels background get transparent based on layer transparency | [\#61801](https://github.com/qgis/QGIS/issues/61801) | Won't fix (not a bug) |  |
@@ -617,7 +617,7 @@ Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandi
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia.com/en/)
-### Feature: Bug fixes by Alexander Bruy (QCooperative)
+### Mogelijkheid: Reparaties van problemen door Alexander Bruy (QCooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Better support for SQL and virtual layers as inputs in Processing | [\#39138](https://github.com/qgis/QGIS/issues/39138) | [PR \#61880](https://github.com/qgis/QGIS/pull/61880) | [PR \#61902](https://github.com/qgis/QGIS/pull/61902) |
@@ -656,7 +656,7 @@ Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
-### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
+### Mogelijkheid: Reparaties van problemen door Stefanos Natsis (LutraConsulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | STAC client connection failing | [\#62232](https://github.com/qgis/QGIS/issues/62232) | [PR \#62258](https://github.com/qgis/QGIS/pull/62258) | N/B |
@@ -679,7 +679,7 @@ Deze mogelijkheid werd ontwikkeld door [Alexander Bruy (QCooperative)](https://w
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https://www.lutraconsulting.co.uk/)
-### Feature: Bug Fixes by Germán Carrillo (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door Germán Carrillo (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Old relations in form (after exporting layer to new file and applied old style) can't be deleted | [\#44683](https://github.com/qgis/QGIS/issues/44683) | Can't reproduce |  |
@@ -691,7 +691,7 @@ Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo (OPENGIS)](https://opengis.ch/)
-### Feature: Bug fixes by Mathieu Pellerin (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door Mathieu Pellerin (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | QGIS fails to import sprites from OpenStreetMap vector tile styles | niet gerapporteerd | [PR \#62175](https://github.com/qgis/QGIS/pull/62175) |  |

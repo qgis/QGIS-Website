@@ -3,7 +3,7 @@ draft: 'true'
 
 ---
 # QGIS gebruiken om hotspot-gebieden voor services van biodiversiteit ecosysteem (HABEaS) in kaart te brengen
-HABEaS \-\-- Hotspot Areas for Biodiversity and Ecosystem Services is an online geographic information system (WebGIS) that was created by the [Centre for Applied Ecology](http://www.isa.utl.pt/ceabn/content/2/123/homepage) ([Instituto Superior de Agronomia](http://www.isa.utl.pt/home/), Technical University of Lisbon), Worldwide Fund for Nature (WWF) and Faunalia.
+HABEaS  —— Hotspot Areas for Biodiversity and Ecosystem Services is een online geografisch informatiesysteem (WebGIS) dat werd gemaakt door het [Centre for Applied Ecology](http://www.isa.utl.pt/ceabn/content/2/123/homepage) ([Instituto Superior de Agronomia](http://www.isa.utl.pt/home/), Technical University van Lissabon), Wereld Natuur Fonds (WNF) en Faunalia.
 
 Het belangrijkste doel van dit platform is om gratis toegang te verschaffen tot een brede variëteit aan gegevens van services voor biodiversiteit en ecosysteem voor het mediterrane bassin dat was verspreid over een aantal publieke en private entiteiten. Tegenwoordig bestrijkt HABEaS WebGIS het zuiden van Portugal, maar eind 2012/begin 2013 zal het zijn uitgebreid tot het noorden van Portugal en ook tot het Tuzla Canton in Bosnia & Herzegovina. Op de lange termijn willen we dit gereedschap uitbreiden tot het gehele mediterrane bassin.
 

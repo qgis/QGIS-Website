@@ -17,18 +17,18 @@ QGIS is een ongelooflijk krachtige set met programma's, in staat tot een groot b
 
 {{<button fullwidth="true" icon="fa-solid fa-calendar" class="is-success" link="showcase/user-group-events" text="Nieuws van gebruikersgroepen" >}}
 
-| User events around the world. |
+| Gebruikersgebeurtenissen over de gehele wereld. |
 
 {{<button fullwidth="true" icon="fa-solid fa-person" class="is-success" link="showcase/case-studies/" text="Praktijkvoorbeelden" >}}
 
-| Case studies of QGIS being applied to real world problems. |
+| Gebruiksgevallen waarin QGIS is toegepast op problemen uit de echte wereld. |
 
 {{<button fullwidth="true" icon="fa-solid fa-map" class="is-success" link="showcase/maps/" text="Map objecten" >}}
 
-| Amazing maps created using QGIS. |
+| Fantastische kaarten, gemaakt met QGIS. |
 
 {{<button fullwidth="true" icon="fa-solid fa-display" class="is-success" link="showcase/screenshots/" text="Schermafdrukken" >}}
 
-| Screenshots of QGIS in action. |
+| Schermafdrukken van QGIS in actie. |
 
 {{<content-end >}}

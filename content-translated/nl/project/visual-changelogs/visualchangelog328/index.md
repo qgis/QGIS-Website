@@ -595,7 +595,7 @@ Deze mogelijkheid werd ontwikkeld door [Sandro Santilli (strk)](https://strk.kbt
 ### Mogelijkheid: Reparaties van problemen door Nyall Dawson
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
-| Fix regression in column break calculations in legends | [#42672](https://github.com/qgis/QGIS/issues/42672) | [PR #50597](https://github.com/qgis/QGIS/pull/50597) | Not suitable \-- too risky |
+| Fix regression in column break calculations in legends | [#42672](https://github.com/qgis/QGIS/issues/42672) | [PR #50597](https://github.com/qgis/QGIS/pull/50597) | Niet geschikt \-- Te riskant |
 | Fix tracing fails when layer crs differs from map crs | [#49247](https://github.com/qgis/QGIS/issues/49247) | [PR #50612](https://github.com/qgis/QGIS/pull/50612) | Niet vereist |
 | Show only available CRS in WMS layer selection widget | [#45918](https://github.com/qgis/QGIS/issues/45918) | [PR #50572](https://github.com/qgis/QGIS/pull/50572) | Niet vereist |
 | Fix some overlay algorithms output multipoint geometries but output layer is single point, causing insertion errors | [#49456](https://github.com/qgis/QGIS/issues/49456) | [PR #50567](https://github.com/qgis/QGIS/pull/50567) | [PR #50641](https://github.com/qgis/QGIS/pull/50641) |
@@ -609,12 +609,12 @@ Deze mogelijkheid werd ontwikkeld door [Sandro Santilli (strk)](https://strk.kbt
 | Fix QgsFileWidget does not reactivate widget\'s window after selecting a file/folder via the browse button on mac | Niet gerapporteerd | [PR #50501](https://github.com/qgis/QGIS/pull/50501) | [PR #50502](https://github.com/qgis/QGIS/pull/50502) |
 | Fix code folding not shown for non-python code editor classes | Niet gerapporteerd | [PR #50492](https://github.com/qgis/QGIS/pull/50492) |  |
 | Fix leak in GEOS geometry library use | Niet gerapporteerd | [PR #50379](https://github.com/qgis/QGIS/pull/50379) |  |
-| Fix raster contour renderer ignores opacity setting | [#41663](https://github.com/qgis/QGIS/issues/41663) | [PR #50382](https://github.com/qgis/QGIS/pull/50382) | Not suitable \-- too risky |
+| Fix raster contour renderer ignores opacity setting | [#41663](https://github.com/qgis/QGIS/issues/41663) | [PR #50382](https://github.com/qgis/QGIS/pull/50382) | Niet geschikt \-- Te riskant |
 | Fix truncation of recent project list removes too many items, raises a warning | Niet gerapporteerd | [PR #50394](https://github.com/qgis/QGIS/pull/50394) | [PR #50397](https://github.com/qgis/QGIS/pull/50397) |
 | Fix dizzy easter egg | [#50345](https://github.com/qgis/QGIS/issues/50345) | [PR #50380](https://github.com/qgis/QGIS/pull/50380) | Niet vereist |
-| Fix point pattern fill sometimes ignores symbol opacity setting | [#48031](https://github.com/qgis/QGIS/issues/48031) | [PR #50384](https://github.com/qgis/QGIS/pull/50384) | Not suitable \-- too risky |
+| Fix point pattern fill sometimes ignores symbol opacity setting | [#48031](https://github.com/qgis/QGIS/issues/48031) | [PR #50384](https://github.com/qgis/QGIS/pull/50384) | Niet geschikt \-- Te riskant |
 | Fix broken path in svg raises Qt warnings while rendering | Niet gerapporteerd | [PR #50383](https://github.com/qgis/QGIS/pull/50383) |  |
-| Ensure correct expression context is used when generating symbol preview icons | [#49106](https://github.com/qgis/QGIS/issues/49106) | [PR #50393](https://github.com/qgis/QGIS/pull/50393) | Not suitable \-- too risky |
+| Ensure correct expression context is used when generating symbol preview icons | [#49106](https://github.com/qgis/QGIS/issues/49106) | [PR #50393](https://github.com/qgis/QGIS/pull/50393) | Niet geschikt \-- Te riskant |
 | \[spatialite\] Fix corrupted default attribute values when fields are loaded using gaiaVectorLayer | Privé gerapporteerd | [PR #50360](https://github.com/qgis/QGIS/pull/50360) | [PR #50361](https://github.com/qgis/QGIS/pull/50361) |
 | Fix handling of vector tiles when zoom level 0 is not available | [#47934](https://github.com/qgis/QGIS/issues/47934) | [PR #50337](https://github.com/qgis/QGIS/pull/50337) | Niet vereist |
 | Fix drag and drop of files to georeferencer window | [#49175](https://github.com/qgis/QGIS/issues/49175) | [PR #50338](https://github.com/qgis/QGIS/pull/50338) | Niet vereist |

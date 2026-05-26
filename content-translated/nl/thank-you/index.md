@@ -19,7 +19,7 @@ type: page
 ##### Monitoren van uw download
 Downloaden zouden enige tijd kunnen duren. **Monitor de voortgang** met uw **downloadbeheerder**.
 
-If your download didn't start, you can manually download QGIS from the [QGIS.org hosted downloads](https://download.qgis.org/downloads/).
+Als uw download niet begon, kunt u handmatig QGIS downloaden vanaf de door [QGIS.org gehoste downloads](https://download.qgis.org/downloads/).
 
 {{<rich-content-end >}}
 
@@ -51,7 +51,7 @@ Onze allerbeste groeten!
 
 {{<rich-content-start >}}
 
-![QGIS Developers 1st meeting](qgis_1st_conference.png "QGIS Developers 1st meeting")
+![QGIS ontwikkelaars 1ste bijeenkomst](qgis_1st_conference.png "QGIS Developers 1st meeting")
 
 {{<rich-content-end >}}
 
@@ -61,7 +61,7 @@ Onze allerbeste groeten!
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### Tips voor de eerste keer opstarten
-If you have any questions while starting QGIS, welcome to our complete guide to installing for the first time. [Installation guide]({{< ref "resources/installation-guide" >}})
+Als u vragen heeft over het beginnen met QGIS. Welkom bij onze volledige gids bij het voor de eerste keer installeren. [Installatiegids]({{< ref "resources/installation-guide" >}})
 
 {{<rich-content-end >}}
 
@@ -101,7 +101,7 @@ Neem deel aan een gemeenschap van gelijkgestemde individuen in uw regio.
 
 {{<rich-right-start >}}
 
-![Local user groups](../../project/img/groups.jpg "Local user groups")
+![Lokale gebruikersgroepen](../../project/img/groups.jpg "Lokale gebruikersgroepen")
 
 {{<rich-right-end >}}
 

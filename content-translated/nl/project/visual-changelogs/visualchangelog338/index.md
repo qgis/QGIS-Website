@@ -592,7 +592,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
-### Feature: Bug fixes by David Signer (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door David Signer (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Wrongly displayed action widget | [#33464](https://github.com/qgis/QGIS/issues/33464), [#57398](https://github.com/qgis/QGIS/issues/57398), [#56966](https://github.com/qgis/QGIS/issues/56966) | [PR #57475](https://github.com/qgis/QGIS/pull/57475) | Niet van toepassing |

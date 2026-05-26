@@ -14,13 +14,13 @@ type: visual-changelog
 
 Datum uitgave: 21-02-2025
 
-The QGIS Project proudly announces the release of QGIS 3.42, a significant step forward in the development of Free and Open Source Geospatial Information Systems. This release builds upon the solid foundations of previous releases while introducing exciting new features and enhancements that will streamline workflows and empower users in their spatial analysis endeavors.
+Het project QGIS kondigt met trots de uitgave aan van QGIS 3.42. Een significante stap voorwaarts in de ontwikkeling van vrije en open georuimtelijke informatiesystemen. Deze uitgave bouwt voort op de solide funderingen van eerdere uitgaven en introduceert daarbij spannende nieuwe mogelijkheden en verbeteringen die werkstromen zullen stroomlijnen en gebruikers in hun kracht zullen zetten bij hun inspanningen op het gebied van analyses.
 
-Notable enhancements have been introduced for features that move beyond the traditional map frame, such as various aspects of 3D Map Views, plots and profiles, as well as a new Virtual Point Cloud overview widget for improved navigation across complex datasets. Greater control is provided for cartographic functionality, such as CSS-based label properties and extensions to the Python API, while advanced data types such as Mesh and Point Clouds have also seen their fair share of improvements.
+Opmerkelijke verbeteringen zijn geïntroduceerd voor mogelijkheden buiten het traditionele kaartframe, zoals verscheidene aspecten van 3D-kaartweergaven, plots en profielen. Alsook een nieuwe widget voor overzicht van virtuele puntenwolken voor verbeterde navigatie in complexe gegevenssets. Meer beheersmogelijkheden worden verschaft voor cartografische functionaliteit, zoals op CSS gebaseerde labeleigenschappen en uitbreidingen aan de Python API. Terwijl ook geavanceerde gegevenstypen, zoals Mazen en Puntenwolken, hun rechtmatige deel aan verbeteringen hebben gekregen.
 
-A new set of Metadata Tools has been added to the Processing toolbox (along with various other new additions and enhancements), whilst a new feature will allow users to label Pixels on Raster data. Layout tools have not been forgotten, and the QGIS Python console also has a new interactive help feature with direct integration with project documentation sources for an enhanced developer experience.
+Een nieuwe set gereedschappen voor Metadata is toegevoegd aan de Toolbox van Processing (naast verscheidene andere nieuwe aanvullingen en verbeteringen), terwijl een nieuwe mogelijkheid gebruikers de mogelijkheid geeft om pixels op rastergegevens te labelen. Gereedschappen voor lay-out zijn niet vergeten en de QGIS Pythonconsole heeft ook een nieuwe interactieve mogelijkheid voor hulp met directe integratie met bronnen voor projectdocumentatie voor een verbeterde ervaring voor de ontwikkelaars.
 
-For a whirlwind tour of all the new functionalities introduced, you can view the [highlight reel video on YouTube](https://www.youtube.com/watch?v=v6Ejov4u7xk).
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u deze mogelijkheden bekijken [in de video met hoogtepunten op YouTube](https://www.youtube.com/watch?v=v6Ejov4u7xk).
 
 [![](https://img.youtube.com/vi/v6Ejov4u7xk/0.jpg)](https://www.youtube.com/watch?v=v6Ejov4u7xk)
 
@@ -30,14 +30,14 @@ QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van don
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Symbologie
-### Feature: Add configurable extent buffer to symbols
-In previous versions of QGIS, only features located within the canvas extent were considered for rendering under certain conditions.
+### Mogelijkheid: Te configureren buffer voor bereik toegevoegd voor symbolen
+In eerdere versies van QGIS kwamen alleen objecten die waren geplaatst binnen het kaartbereik in aanmerking om onder bepaalde omstandigheden te worden gerenderd.
 
-This would cause issues with certain symbologies, especially when using complex geometry generators, as users would not see features where the rendered symbol might have appeared within the canvas but the source feature does not.
+Dit zou problemen kunnen veroorzaken voor bepaalde symbologieën, speciaal bij het gebruiken van complexe geometriegeneratoren. Omdat gebruikers geen objecten zouden zien waarvan het gerenderde symbool misschien binnen het kaartvenster zou verschijnen, maar het bronobject niet.
 
-For example, if using a point feature to generate a buffer polygon such as `buffer(@geometry, 7)`, the buffer would not render if the point was not within the canvas extent.
+Als bijvoorbeeld een object punt wordt gebruikt om een bufferpolygoon te maken, zoals `buffer(@geometry, 7)`, zou de buffer niet renderen als het punt niet binnen het kaartvenster zou liggen.
 
-A new configuration option for symbols allows for a buffer of the canvas extent to envelope these additional features within the user-defined constraints and balance performance with complex data visualization requirements.
+Een nieuwe optie voor configuratie van symbolen maakt het voor een buffer op het kaartvenster mogelijk om deze aanvullende objecten op te nemen binnen door de gebruiker gedefinieerde beperkingen en balanceert tussen prestaties en eisen voor complexe gegevensvisualisatie.
 
 ![](images/entries/bf954ba6632135c099f5e5d7f8db594e19dc01a2.png.webp)
 
@@ -45,55 +45,55 @@ Dit werd mogelijk gemaakt door de National Land Survey of Finland.
 
 Deze mogelijkheid werd ontwikkeld door [Juho Ervasti](https://github.com/JuhoErvasti)
 ## Labelen
-### Feature: Raster labeling
-QGIS now allows raster pixels to be labeled with the value taken from a raster band. Labels are registered with the labeling engine, and so will participate in label conflict resolution and overlap avoidance. Options include:
-- Selection of band to take values from
-- Using QgsNumericFormat to customize the number format for the labels
-- Uses text renderer, so supports buffers, shadows, etc
+### Mogelijkheid: Raster labelen
+QGIS staat nu toe dat rasterpixels worden gelabeld met de waarde die wordt genomen uit een rasterband. Labels worden geregistreerd bij het labelmechanisme en zullen zo deelnemen bij het oplossen van conflicten van labels en het vermijden van overlappen. Optie omvatten:
+- Selecteren van band waaruit de waarden moeten worden genomen
+- Gebruiken van QgsNumericFormat om de getalindeling voor de labels aan te passen
+- Tekstrenderer gebruiken, ondersteunt dus buffers, schaduw, etc.
 - Prioriteit label
-- Scale dependant visibility
-- Optional pixel size dependent visibility, i.e. show only when pixels are &gt; 4mm in size
-- Z index control, overlap avoidance mode
-- Option for showing values resampled over neighboring pixels
+- Schaalafhankelijke zichtbaarheid
+- Optionele zichtbaarheid die afhankelijk is van de pixelgrootte, d.i. alleen weergeven als pixels &gt;4 mmin grootte zijn
+- Beheer van de Z-index, modus voor vermijden van overlappen
+- Optie voor weergeven van waarden die zijn hersampled over naburige pixels
 
 ![](images/entries/0ac302054a6a0e64bc140f4e7ebd403f0894a634.png.webp)
 
 Dit werd mogelijk gemaakt door Kanton Neuchâtel
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Custom tab distances for labels
-Allows setting a list of custom tab stop distances on labels, instead of just a single distance This allows different thresholds to be used between breaks.
+### Mogelijkheid: Aangepaste tabafstanden voor labels
+Maakt het mogelijk een lijst met aangepaste afstanden voor tabstops op te nemen voor labels. In plaats van slechts een enkele afstand. Dit maakt verschillende drempels mogelijk om tussen afbrekingen te worden gebruikt.
 
 ![](images/entries/fb24a7593018d5732f9e3b64a68912e38d431dd3.png.webp)
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Support CSS background property in labels/text renderer
-QGIS now supports CSS background-color and background-image properties when used with HTML labels.
-- Backgrounds are supported for block items (e.g. `<div>`) or inline items (e.g. `<span>`)
-- For images, the CSS should be formatted as background-image: url(xx). It supports local file paths, http links, or base64 embedded content
-- Backgrounds are not supported for curved text
-- HTML backgrounds are always rendered above any background shape for the label, and below drop shadows/buffers
+### Mogelijkheid: Ondersteuning voor eigenschap CSS-achtergrond in labels/tekstrenderer
+QGIS ondersteunt nu de eigenschappen voor CSS background-color en background-image indien gebruikt met HTML-labels.
+- Achtergronden worden ondersteund voor blokitems (bijv. `<div>`) of inline-items (bijv. `<span>`)
+- Voor afbeeldingen zou de CSS moeten worden opgemaakt als background-image: url(xx). Het ondersteunt lokale bestandspaden, http-koppelingen of ingebedde inhoud van base64
+- Achtergronden worden niet ondersteund voor gebogen tekst
+- HTML-achtergronden worden altijd gerenderd boven elke achtergrondvorm voor het label, en onder valschaduw/buffer
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Support CSS margins for block elements in HTML labels
-QGIS has added support for CSS margin properties on block elements in the text renderer. Specifically:
-- This is available for block-type elements only, e.g. DIV, P, H1-H6.
-- Margins are NOT available for spans or other non-block content (due to Qt limitations)
-- Margins can be specified in pt units only
-- Margins can be specified either via "margin-left: 5pt; margin-right: 10pt" etc, or "margin: 5pt 0pt 10pt 0pt"
-- Negative margins are supported for the bottom margin ONLY (due to Qt limitations)
+### Mogelijkheid: Ondersteuning voor CSS-marges voor blokelementen in HTML-labels
+QGIS heeft ondersteuning toegevoegd voor eigenschappen voor CSS-margin voor blockelementen in de tekstrenderer. Specifiek:
+- Dit is alleen beschikbaar voor elementen van het type block, bijv. DIV, P, H1-H6.
+- Marges zij NIET beschikbaar voor spans of andere inhoud dat geen block is (wegens beperkingen van Qt)
+- Marges mogen alleen worden gespecificeerd in eenheden pt units
+- Marges mogen worden gespecificeerd ofwel via "margin-left: 5pt; margin-right: 10pt" etc, of "margin: 5pt 0pt 10pt 0pt"
+- Negatieve marges worden ALLEEN ondersteund voor de ondermarge (wegens beperkingen van Qt)
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Support CSS line-height in HTML labels
-QGIS has added support for the line-height CSS property in HTML formatted labels.
+### Mogelijkheid: Ondersteuning voor CSS line-height in HTML-labels
+QGIS heeft ondersteuning voor de eigenschap van CSS line-height toegevoegd in als HTML opgemaakte labels.
 
-Supports line-height in either points or percent, e.g. "line-height: 40pt" or "line-height: 40%"
+Ondersteunt line-height in ofwel punten of als percentage, bijv. "line-height: 40pt" of "line-height: 40%"
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
@@ -392,7 +392,7 @@ Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://gith
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/)
-### Feature: Bug fixes by Alessandro Pasotti (QCooperative)
+### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (QCooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | A semicolon after a custom SQL query makes QGIS generate a broken layer | [#56993](https://github.com/qgis/QGIS/issues/56993) | [PR #60209](https://github.com/qgis/QGIS/pull/60209) | [PR #60230](https://github.com/qgis/QGIS/pull/60230) |
@@ -450,7 +450,7 @@ Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandi
 | Fix incorrect compilation of "field IN (...) or field NOT IN (...)" | niet gerapporteerd | [PR #60630](https://github.com/qgis/QGIS/pull/60630) | N/B |
 | Lots of memory leak fixes | niet gerapporteerd | [PR #60629](https://github.com/qgis/QGIS/pull/60629) | [PR #60651](https://github.com/qgis/QGIS/pull/60651) |
 | [stac] Port more API to use unique_ptr | niet gerapporteerd | [PR #60627](https://github.com/qgis/QGIS/pull/60627) | N/B |
-| Fix slow performance of raster image marker | [#51273](https://github.com/qgis/QGIS/issues/51273) | [PR #60604](https://github.com/qgis/QGIS/pull/60604) | too risky |
+| Fix slow performance of raster image marker | [#51273](https://github.com/qgis/QGIS/issues/51273) | [PR #60604](https://github.com/qgis/QGIS/pull/60604) | Te riskant |
 | Fix hang when project with large number of layers has joins to same layers | [#55026](https://github.com/qgis/QGIS/issues/55026) | [PR #60577](https://github.com/qgis/QGIS/pull/60577) | In behandeling |
 | Fix some app slowdown when many queries visible in network/db log panel | niet gerapporteerd | [PR #60576](https://github.com/qgis/QGIS/pull/60576) | [PR #60583](https://github.com/qgis/QGIS/pull/60583) |
 | Fix render order of symbol layers for filled marker/filled line/arrow subsymbol | niet gerapporteerd | [PR #60575](https://github.com/qgis/QGIS/pull/60575) | [PR #60613](https://github.com/qgis/QGIS/pull/60613) |
@@ -463,7 +463,7 @@ Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandi
 | Fixes for layers with a compound crs | [#55173](https://github.com/qgis/QGIS/issues/55173) | [PR #60548](https://github.com/qgis/QGIS/pull/60548) | [PR #60557](https://github.com/qgis/QGIS/pull/60557) |
 | [oracle] Fix adding features with null attributes | niet gerapporteerd | [PR #60540](https://github.com/qgis/QGIS/pull/60540) | [PR #60566](https://github.com/qgis/QGIS/pull/60566) |
 | [ams] Fix crash when layer ids are not sequential | [#60483](https://github.com/qgis/QGIS/issues/60483) | [PR #60520](https://github.com/qgis/QGIS/pull/60520) | [PR #60538](https://github.com/qgis/QGIS/pull/60538) |
-| Fix pasting unsaved changes as temporary scratch layers | [#38913](https://github.com/qgis/QGIS/issues/38913) | [PR #60474](https://github.com/qgis/QGIS/pull/60474) | too risky |
+| Fix pasting unsaved changes as temporary scratch layers | [#38913](https://github.com/qgis/QGIS/issues/38913) | [PR #60474](https://github.com/qgis/QGIS/pull/60474) | Te riskant |
 | More descriptive expression parsing errors when a function is not found | niet gerapporteerd | [PR #60472](https://github.com/qgis/QGIS/pull/60472) | [PR #60475](https://github.com/qgis/QGIS/pull/60475) |
 | Fix paint effects sometimes result in aliased rendering | niet gerapporteerd | [PR #60453](https://github.com/qgis/QGIS/pull/60453) | [PR #60468](https://github.com/qgis/QGIS/pull/60468) |
 | More fixes for use of inline data for SVG content | [#60427](https://github.com/qgis/QGIS/issues/60427) | [PR #60448](https://github.com/qgis/QGIS/pull/60448) | [PR #60452](https://github.com/qgis/QGIS/pull/60452) |
@@ -474,26 +474,26 @@ Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandi
 | [sensorthings] Fix provider does not work with oauth2 config method | [#60407](https://github.com/qgis/QGIS/issues/60407) | [PR #60419](https://github.com/qgis/QGIS/pull/60419) | [PR #60425](https://github.com/qgis/QGIS/pull/60425) |
 | [sensorthings] only allow expansion removal from end of table | [#59532](https://github.com/qgis/QGIS/issues/59532) | [PR #60403](https://github.com/qgis/QGIS/pull/60403) | [PR #60405](https://github.com/qgis/QGIS/pull/60405) |
 | [sensorthings] Remove option for basic authentication | [#59721](https://github.com/qgis/QGIS/issues/59721) | [PR #60376](https://github.com/qgis/QGIS/pull/60376) | [PR #60421](https://github.com/qgis/QGIS/pull/60421) |
-| [sensorthings] Offer geometry for Datastream entities | [#59525](https://github.com/qgis/QGIS/issues/59525) | [PR #60375](https://github.com/qgis/QGIS/pull/60375) | too risky |
+| [sensorthings] Offer geometry for Datastream entities | [#59525](https://github.com/qgis/QGIS/issues/59525) | [PR #60375](https://github.com/qgis/QGIS/pull/60375) | Te riskant |
 | [sensorthings] Hide proxy fields for interval fields in filter builder | [#59528](https://github.com/qgis/QGIS/issues/59528) | [PR #60374](https://github.com/qgis/QGIS/pull/60374) | [PR #60457](https://github.com/qgis/QGIS/pull/60457) |
-| [sensorthings] Offer choices of non-polygon geometry types for multidatastreams | [#59719](https://github.com/qgis/QGIS/issues/59719) | [PR #60373](https://github.com/qgis/QGIS/pull/60373) | too risky |
+| [sensorthings] Offer choices of non-polygon geometry types for multidatastreams | [#59719](https://github.com/qgis/QGIS/issues/59719) | [PR #60373](https://github.com/qgis/QGIS/pull/60373) | Te riskant |
 | [sensorthings] Don't allow expansion back to base entity type | [#59722](https://github.com/qgis/QGIS/issues/59722) | [PR #60372](https://github.com/qgis/QGIS/pull/60372) | [PR #60398](https://github.com/qgis/QGIS/pull/60398) |
-| When a layer changes from non-spatial to spatial, update canvas layers | [#59723](https://github.com/qgis/QGIS/issues/59723) | [PR #60371](https://github.com/qgis/QGIS/pull/60371) | too risky |
+| When a layer changes from non-spatial to spatial, update canvas layers | [#59723](https://github.com/qgis/QGIS/issues/59723) | [PR #60371](https://github.com/qgis/QGIS/pull/60371) | Te riskant |
 | Ensure that labeling solutions are deterministic | niet gerapporteerd | [PR #60369](https://github.com/qgis/QGIS/pull/60369) | [PR #60388](https://github.com/qgis/QGIS/pull/60388) |
-| Remove an extraneous setting of layer scope for vectors | [#60112](https://github.com/qgis/QGIS/issues/60112) | [PR #60367](https://github.com/qgis/QGIS/pull/60367) | too risky |
+| Remove an extraneous setting of layer scope for vectors | [#60112](https://github.com/qgis/QGIS/issues/60112) | [PR #60367](https://github.com/qgis/QGIS/pull/60367) | Te riskant |
 | Use font button in annotation widgets instead of full text format widget | niet gerapporteerd | [PR #60354](https://github.com/qgis/QGIS/pull/60354) | [PR #60368](https://github.com/qgis/QGIS/pull/60368) |
 | Fix incorrect annotation HTML shown when clicking between annotations | niet gerapporteerd | [PR #60333](https://github.com/qgis/QGIS/pull/60333) | [PR #60365](https://github.com/qgis/QGIS/pull/60365) |
 | Delegate bounding box transformation to proj | [#59821](https://github.com/qgis/QGIS/issues/59821) | [PR #60331](https://github.com/qgis/QGIS/pull/60331) | [PR #60439](https://github.com/qgis/QGIS/pull/60439) |
 | Fix logic in pdal indexing task relating to progress updates | niet gerapporteerd | [PR #60312](https://github.com/qgis/QGIS/pull/60312) | [PR #60315](https://github.com/qgis/QGIS/pull/60315) |
 | Fix handling of multiple consecutive tabs with HTML text rendering | [#60098](https://github.com/qgis/QGIS/issues/60098) | [PR #60299](https://github.com/qgis/QGIS/pull/60299) | [PR #60422](https://github.com/qgis/QGIS/pull/60422) |
-| Explicitly block initQgis, exitQgis from within application | [#60025](https://github.com/qgis/QGIS/issues/60025) | [PR #60297](https://github.com/qgis/QGIS/pull/60297) | too risky |
+| Explicitly block initQgis, exitQgis from within application | [#60025](https://github.com/qgis/QGIS/issues/60025) | [PR #60297](https://github.com/qgis/QGIS/pull/60297) | Te riskant |
 | Fix potential (unlikely) crash in concave hull algorithm | [#59778](https://github.com/qgis/QGIS/issues/59778) | [PR #60296](https://github.com/qgis/QGIS/pull/60296) |  |
 | Catch transform errors in QgsWFSProvider::getCapabilities | [#60622](https://github.com/qgis/QGIS/issues/60622) | [PR #60653](https://github.com/qgis/QGIS/pull/60653) | In behandeling |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Bug fixes by Alexander Bruy (QCooperative)
+### Mogelijkheid: Reparaties van problemen door Alexander Bruy (QCooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Zonal histogram unusable results if input raster has many decimal places | [#30822](https://github.com/qgis/QGIS/issues/30822) | [PR#60212](https://github.com/qgis/QGIS/pull/60212) | [PR#60234](https://github.com/qgis/QGIS/pull/60234) |
@@ -531,7 +531,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
-### Feature: Bug fixes by Mathieu Pellerin (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door Mathieu Pellerin (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Algorithm postprocessing regression failing to add all but one output to the project | Niet gerapporteerd | [PR #60624](https://github.com/qgis/QGIS/pull/60624) | [PR #60626](https://github.com/qgis/QGIS/pull/60626) |
@@ -559,7 +559,7 @@ Deze mogelijkheid werd ontwikkeld door [Alexander Bruy (QCooperative)](https://w
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin (OPENGIS)](https://opengis.ch/)
-### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
+### Mogelijkheid: Reparaties van problemen door Stefanos Natsis (LutraConsulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | PointCloud - Converting LAZ to COPC.LAZ: CRS information is lost in COPC.LAZ file | [#59662](https://github.com/qgis/QGIS/issues/59662) | [hobuinc/untwine PR #189](https://github.com/hobuinc/untwine/pull/189) | - |
@@ -579,7 +579,7 @@ Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://oslandia.com/en/)
-### Feature: Bug Fixes by Germán Carrillo (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door Germán Carrillo (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Drag and drop of symbology classes is buggy <br> Cannot move legend items when classifying <br> Drag and drop in Point cloud classification is confusing | [#50823](https://github.com/qgis/QGIS/issues/50823) <br> [#55267](https://github.com/qgis/QGIS/issues/55267) <br> [#60559](https://github.com/qgis/QGIS/issues/60559) | [PR #60546](https://github.com/qgis/QGIS/pull/60546) | [PR #60750](https://github.com/qgis/QGIS/pull/60750) |

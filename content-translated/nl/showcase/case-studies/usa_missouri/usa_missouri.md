@@ -11,13 +11,13 @@ Vanaf februari 2013 bevat de database van MOHAP  31.495 items die de soorten wee
 ## Statische kaarten genereren en exporteren 
 Het proces van het maken van kaarten met QGIS begint met de gegevens die zijn opgeslagen in verschillende tabellen van PostgreSQL, ruimtelijk te gebruiken door middel van PostGIS. Omdat kaarten statisch zijn en uiteindelijk bedoeld voor ofwel het web of een afgedrukte atlas, worden zij voor elke soort automatisch gegenereerd door middle van een aangepaste Python-plug-in voor QGIS  (Figures 1,2).
 
-![Custom map generation and export user interface, maps are generated and exported in a batch process.](./images/usa_missouri1.png){.align-right}
+![Gebruikersinterface voor genereren van aangepaste kaarten en exporteren, kaarten worden gegenereerd en geëxporteerd in een batch-proces.](./images/usa_missouri1.png){.align-right}
 
 De uiteindelijke kaarten voor de soorten hebben een helder en professioneel uiterlijk (Afbeelding 3). Een serie basiskaarten wordt ook gemaakt en gelabeld om de verdeling van de soorten beter te begrijpen (Afbeelding 4). Vanwege de manier waarop de kaartstijlen worden bekeerd binnen elke gegevenslaag, kunnen de lagen van de basiskaart ook met weinig inspanning worden verwerkt in een set van kaarten van soorten.
 
-![Maps are displayed as static images.](./images/usa_missouri2.png){.align-right}
+![Kaarten worden weergegeven als statische afbeeldingen.](./images/usa_missouri2.png){.align-right}
 
-![Labelled Level III Ecoregion map for Missouri and surrounding states.](./images/usa_missouri3.png){.align-right}
+![Gelabelde Level III Ecoregion-kaart voor Missouri en omliggende staten.](./images/usa_missouri3.png){.align-right}
 ## Conclusies
 In het begin van het project MOHAP werden verschillende commerciële en zakelijke gereedschappen gebruikt om gegevens op te slaan en te verwerken en kaarten voor publicatie te maken. Vanaf 2007 proberen we alle aspecten van het project te verplaatsen naar open source software. QGIS, naast PHP, PostgreSQL, PostGIS, Python, en ReportLab, vormen de open source spil naar MOHAP, wat het project en alle gegevens effectief in staat stelt om te bestaan zonder de beperkingen van commerciële software.
 

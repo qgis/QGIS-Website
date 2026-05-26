@@ -3,7 +3,7 @@ draft: 'true'
 
 ---
 # QGIS en GRASS in bio-geografisch onderzoek op het Iberisch schiereiland
-I started applying GIS to my work in biogeography about 10 years ago. Through my graduate internship, PhD work and two other research jobs, I used the proprietary software packages that were available and used at my workplaces \---- mainly CartaLinx, Idrisi, ArcView and ArcGIS. But I found it rather annoying that we were constantly dealing with license renewal issues, and that I could not use the software away from the workplace unless I acquired my own license.
+Ik begon ongeveer 10 jaar geleden met het gebruiken van GIS voor mijn werk in biogeografie. Tijdens mijn interne stage, PhD-werk en twee andere onderzoeksbanen gebruikte ik merkgebonden softwarepakketten die beschikbaar waren en op mijn werk werden gebruikt —— voornamelijk CartaLinx, Idrisi, ArcView en ArcGIS. Maar ik vond het nogal irritant dat we constant bezig waren met het vernieuwen van de licenties, en dat ik de software niet ergens anders kon gebruiken dan op mijn plaats van tewerkstelling, tenzij ik een eigen licentie kocht.
 
 ![Distribution of Spanish algyroides (Algyroides marchi) at three spatial scales and from two different data sources.](./images/portugal_evora1.png)
 

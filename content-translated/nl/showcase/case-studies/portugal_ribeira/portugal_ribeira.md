@@ -21,7 +21,7 @@ We gebruikten QGIS tezamen met de plug-in GRASS om modellen te bouwen voor de ec
 - r.slope.aspect.slope in GRASS: om de helling uit de DEM te berekenen
 - r.mapcalculator in GRASS: om enige eenvoudige algebra voor de kaart te berekenen
 - r.cost.coord in GRASS: maakt een rasterkaart die de cumulatieve kosten weergeeft van de verplaatsing tussen verschillende geografische locaties op een invoerrasterkaart waarvan de waarden van categorieën kosten vertegenwoordigen
-- r.drain in GRASS: Traces a flow through an elevation model on a raster map \---- the one used to create the corridors
+- r.drain in GRASS: Traceert een stroom over een hoogtemodel op een rasterkaart —— die welke werd gebruikt om de corridors te maken
 
 Met dit werk verkregen we een kaart met de potentiële ecologische corridors voor wolven in de gemeente Ribeira de Pena. Met deze gebieden moet door technici van de gemeente rekening worden gehouden bij het plannen van maatregelen ter bescherming van de soort. Deze corridors zijn van extreem belang omdat zij de fragiele roedels wolven in Vila Real in het zuiden verbinden met die in het noorden, welke doorlopen in de veel meer stabiele van Peneda-Gerês en Spanje. Het is van bijzonder belang voor die corridors die menselijke nederzettingen, zoals kleine dorpen, steden en wegen, doorsnijden. Deze gebieden moeten geacht worden kritiek te zijn voor het behoud van de wolf, en vereisen maatregelen om de menselijke invloed op deze soort te beperken.
 

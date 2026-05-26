@@ -909,7 +909,7 @@ Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn](https://opengis.ch/)
 | --- | --- | --- | --- |
 | QgsProcessingAlgRunnerTask started inside function crashes QGIS | [#38583](https://github.com/qgis/QGIS/issues/38583) | Zal niet gerepareerd worden |  |
 | Geometry generator symbol not rendered if the feature itself is not on the map canvas | [#38579](https://github.com/qgis/QGIS/issues/38579) | Terugkoppeling |  |
-| Relation widget in input form tabs - NULL value filled with data in form | [#38549](https://github.com/qgis/QGIS/issues/38549) | Won't backport (too risky) | (Closed) [#38549](https://github.com/qgis/QGIS/issues/38549) |
+| Relation widget in input form tabs - NULL value filled with data in form | [#38549](https://github.com/qgis/QGIS/issues/38549) | Geen backport (te riskant) | (Closed) [#38549](https://github.com/qgis/QGIS/issues/38549) |
 | Warning message: Missing layer form dependency : layer \'layerX\' requires layer \'layerY\' to be loaded | [PR #38802](https://github.com/qgis/QGIS/pull/38802) | [PR #38802](https://github.com/qgis/QGIS/pull/38802) | N/B |
 | When embedding a layer, the display expression of a relation reference is not taken over | [#38422](https://github.com/qgis/QGIS/issues/38422) | Gesloten (verzoek voor toevoeging) |  |
 | the keybord shortcut CTRL+C copy only the first cell, not the whole line | [#37503](https://github.com/qgis/QGIS/issues/37503) | [PR #38810](https://github.com/qgis/QGIS/pull/38810) |  |

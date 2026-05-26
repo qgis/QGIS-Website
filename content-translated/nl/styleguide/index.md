@@ -76,7 +76,7 @@ Trueno is een gratis Font Library serif font. Om het in te bedden, gebruik
 ```
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
-in the site header
+in the header van de site
 
 {{<table >}}
 
@@ -91,7 +91,7 @@ in the site header
 
 {{<column-start class="is-one-third" >}}
 
-![Dark green](visual/dark_green.png)
+![Donkergroen](visual/dark_green.png)
 
 {{<column-end >}}
 
@@ -111,7 +111,7 @@ De kleur donkergroen voor QGIS die dient te worden gebruikt in elk element van h
 
 {{<column-start class="is-one-third" >}}
 
-![Light green](visual/light_green.png)
+![Lichtgroen](visual/light_green.png)
 
 {{<column-end >}}
 
@@ -141,7 +141,7 @@ De twee primaire kleuren worden gebruikt als een verticaal lineair kleurverloop 
 
 {{<column-start class="is-one-third" >}}
 
-![Lemon](visual/lemon.png)
+![Limoen](visual/lemon.png)
 
 {{<column-end >}}
 
@@ -159,7 +159,7 @@ HEX: #f0e64a<br />RGB: 240, 230, 74<br />CMYK: 11, 0, 79, 0
 
 {{<column-start class="is-one-third" >}}
 
-![Orange](visual/orange.png)
+![Oranje](visual/orange.png)
 
 {{<column-end >}}
 

@@ -325,99 +325,99 @@ Een menuoptie om de Pagina-eigenschappen te openen is toegevoegd aan het hoofdme
 ![](images/entries/44407afcb40294680e8aad845bb2cf0060cfe034.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Vedran Stojnović](https://github.com/phidrho)
-### Feature: Add scale method option for layout scale bars
-A new option for selecting a user-defined method of calculating the map scale in print layouts is provided. This exposes options for calculating scale:
-- along the bottom of the map frame
-- along the middle of the map frame
-- along the top of the map frame
-- as an average of all three measurements
+### Mogelijkheid: Optie voor methode Schalen voor schaalbalken in lay-outs
+Een nieuwe optie voor het selecteren van een gebruikergedefinieerde methode voor het berekenen van de kaartschaal voor afdruklay-outs wordt verschaft. Dit geeft opties weer voor berekenen van de schaal:
+- langs de onderzijde van het kaartframe
+- langs het midden van het kaartframe
+- langs de bovenzijde van het kaartframe
+- als een gemiddelde van alle drie metingen
 
-By default, new scale bars will utilize the average method (instead of the previously used "along bottom" method), which will better handle scenarios where the scale at the top or bottom of the map cannot be calculated (e.g. when the top or bottom of the map falls outside valid areas for the map CRS).
+Standaard zullen de nieuwe schaalbalken de gemiddelde methode gebruiken (in plaats van de eerder gebruikte methode "langs onderzijde"), die beter scenario's afhandelt waarbij de schaal aan de boven- of onderzijde van de kaart niet kan worden berekend (bijv. wanneer de boven- of onderzijde van de kaart buiten geldige gebieden voor het kaart-CRS valt).
 
 ![](images/entries/ff809eacb3e8701d38d43292ae3d5694cb16076d.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Expressies
-### Feature: Add 'Custom Expression' numeric format
-This numeric format allows users to craft a custom QGIS expression to format numbers. The expression can use the @value variable to retrieve the value to be formatted, and then use any standard QGIS expression function to format this as desired.
+### Mogelijkheid: Numerieke indeling 'Gebruikerexpressie' toegevoegd
+Deze numerieke indeling stelt gebruikers in staat een aangepaste expressie voor QGIS te maken om getallen op te maken. De expressie mag de variabele @value gebruiken om de op te maken waarde op te halen, en dan elke standaardfunctie voor een expressie van QGIS gebruiken om die op te maken zoals wordt gewenst.
 
-It can be used anywhere QgsNumericFormat is accepted, such as layout scalebars, elevation plots, layout tables, and color ramp legends
+Het kan overal worden gebruikt waar QgsNumericFormat wordt geaccepteerd, zoals lay-out van schaalbalken, hoogteplots, lay-out voor tabellen en legenda's voor kleurenbalken
 
 Dit werd mogelijk gemaakt door de Zwitserse QGIS gebruikersgroep.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add line\_interpolate\_point\_by\_m and line\_locate\_m expressions
-Two new functions are provided to the expression engine to work with M values along line strings:
-- `line_interpolate_point_by_m`: returns a point geometry of a matching m value interpolated along a line containing an m dimension.
-- `line_locate_m`: returns a distance from the beginning of a line where a matching m value was found.
+### Mogelijkheid: Expressies line\_interpolate\_point\_by\_m en line\_locate\_m toegevoegd
+Twee nieuwe functies worden verschaft voor expressies om te werken met waarden M langs lijnen:
+- `line_interpolate_point_by_m`: geeft een geometrie punt terug voor een overeenkomende waarde M, geïnterpoleerd langs een lijn die een dimensie M heeft.
+- `line_locate_m`: geeft een afstand terug vanaf het begin van een lijn waar een overeenkomende waard M werd gevonden.
 
-These functions are useful when working with temporal data (such as a linestring representing a GPS track, where the M value represents the epoch value), and can be used effectively alongside the temporal controller to create beautiful animations that were previously harder to unlock.
+Deze functies zijn nuttig bij het werken met tijdgegevens (zoals een lijn die een GPS-spoor weergeeft, waar de waarde M de waarde epoch weergeeft), en kan effectief naast Tijdbeheer worden gebruikt om prachtige animaties te maken die eerder moeilijk te ontgrendelen waren.
 
 ![](images/entries/43d4feab4f7d4fb0fe167c7120b19a7cae13fc47.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Extended color value support
-In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), new expression functions allow for the retrieval of colors that include:
+### Feature: Ondersteuning voor uitgebreide kleurwaarde
+In lijn met [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283) staan nieuwe expressiefuncties het ophalen van kleuren toe die bevatten:
 - color\_rgbf
 - color\_cmykf
 - color\_hsvf
 - color\_hslf
 
-These functions differ from the existing color retrieval expression functions (e.g. color\_rgb) by returning color values with different internal data types. This improves performance and fidelity by avoiding unnecessary color conversions in specific contexts, such as writing PDFs with native CMYK colors derived from expression values.
+Deze functies verschillen van de expressiefuncties voor het ophalen van kleuren (bijv. color\_rgb) door kleurwaarden terug te geven met verschillende interne gegevenstypen. Dat verbetert de prestaties en de getrouwheid door onnodige kleurconversies te vermijden in specifieke contexten, zoals het schrijven van pdf's met eigen CMYK-kleuren die zijn afgeleid van expressiewaarden.
 
 Dit werd mogelijk gemaakt door Bordeaux Métropôle
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Allow users to save expression functions in QGIS project file
-A new `[Project Functions]` element is now available within the expression builder dialog, allowing QGIS to store custom user-defined functions embedded in the project file.
+### Mogelijkheid: Gebruikers toestaan expressiefuncties op te slaan in QGIS projectbestand
+Een nieuw element `[Project Functions]` is nu beschikbaar binnen het dialoogvenster Expressiebouwer, dat QGIS in staat stelt om aangepaste gebruikergedefinieerde functies, ingebed in het projectbestand, op te slaan.
 
-This reduces the need to manually share Python code snippets and copy them to the user profile directory or import them into the expression builder dialog.
+Dat verkleint de noodzaak om handmatig snippers van Pythoncode te moeten delen en ze te kopiëren naar de map voor het gebruikersprofiel of ze in het dialoogvenster Expressiebouwer te importeren.
 
-Project functions are unloaded when a project is closed, and user functions are reloaded to avoid any potential overwrite by activated project functions.
+Projectfuncties worden ontladen als een project wordt gesloten en gebruikerfuncties worden opnieuw geladen om eventueel potentieel overschrijven bij geactiveerde projectfuncties te vermijden.
 
-For security reasons, the handling of whether to load or not load these functions on project startup is configurable in the user settings with the same rationale used for managing project macros.
+Om beveiligingsredenen is de afhandeling voor het laden of niet laden van deze functies bij het opstarten van het project te configureren in de gebruikersinstellingen. Met dezelfde rationale als die welke wordt gebruikt voor het beheren van projectmacro's.
 
 ![](images/entries/fb459ca9362a65771713ed9b571b12a265e0b45d.webp)
 
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Add info about usable "expression dialect" to filter dialog
-The query builder used for entering filter expressions on vector layers now shows the supported expression dialect.
+### Mogelijkheid: Info toegevoegd over bruikbare "dialect voor expressie" in het dialoogvenster Filteren
+De Querybouwer die wordt gebruikt voor het invoeren van expressies om te filteren op vectorlagen geeft nu het ondersteunde dialect voor de expressie weer.
 
 ![](images/entries/1bd0096fbd0fac4d612b2ca98bc7ef86cedac36e.webp)
 
 Dit werd mogelijk gemaakt door WhereGroup GmbH.
 
 Deze mogelijkheid werd ontwikkeld door [Hannes](https://github.com/kannes)
-### Feature: Add project\_color\_object and ramp\_color\_object functions
-In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), new expression functions provide support for setting project and ramp colors using CMYK color values using expressions
+### Mogelijkheid: Functies project\_color\_object en ramp\_color\_object toegevoegd
+In lijn with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283) verschaffen nieuwe expressiefuncties ondersteuning bij het instellen van projectkleuren en kleuren voor balken met CMYK-kleurwaarden door expressies te gebruiken
 
 Dit werd mogelijk gemaakt door Bordeaux Metropole
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Digitaliseren
-### Feature: Add circles intersection digitizing tool
-A new advanced digitizing tool allows users to pick/ digitize a point at the intersection of two circles
+### Mogelijkheid: Gereedschap voor digitaliseren kruising van cirkels toegevoegd
+Een nieuw gereedschap voor Digitaliseren stelt gebruikers in staat een punt te kiezen/digitaliseren op de kruising van twee cirkels
 
-To support this functionality, the QGIS API has been extended with a new abstract class for supporting similar "COGO" development in the future, as well as providing Python bindings for developing advanced digitization utilities and plugins.
+De QGIS API is, om deze functionaliteit te kunnen ondersteunen, uitgebreid met een nieuwe klasse abstract voor het ondersteunen van soortgelijke ontwikkeling van "COGO" in de toekomst. Alsook voor het verschaffen van bindingen voor Python voor het ontwikkelen van mogelijkheden en plug-ins voor geavanceerd digitaliseren.
 
 ![](images/entries/990ee4bd78f0d0732ca02562ce953bed4c9443a8.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Visual construction guides for advanced digitizing
-Visual construction guides have been added to the advanced digitizing dock widget, which builds on the existing CAD construction mode.
+### Mogelijkheid: Visuele constructielijnen voor Geavanceerd digitaliseren
+Visuele constructielijnen zijn toegevoegd aan de dockwidget Geavanceerd digitaliseren, dat doorbouwt op de bestaande constructiemodus voor CAD.
 
-When recording construction guides, QGIS will render all construction steps taken as dashed lines which will remain visible for as long as advanced digitizing is enabled. The guides are snap-able, allowing for construction steps to begin mid-way into a previous set of steps too.
+Bij het opnemen van constructielijnen zal QGIS alle stappen voor de constructie renderen als streepjeslijnen, die zichtbaar blijven zolang Geavanceerd digitaliseren is ingeschakeld. De hulplijnen kunnen snappen, wat het mogelijk maakt constructiestappen ook te beginnen halverwege een eerdere set stappen.
 
-The construction guides are stored in a vector layer, which is exposed through the advanced digitizing dock widget, allowing for further customization of the guides via other application processes, such as Python plugins.
+De constructielijnen worden opgeslagen in een vectorlaag, die wordt weergegeven door de dockwidget Geavanceerd digitaliseren, wat verdere aanpassing van de lijnen via andere toepassingsprocessen, zoals plug-ins van Python, mogelijk maakt.
 
 ![](images/entries/d77759a3bc23a050b3e8e9cc5a5d3bb5cc91dff3.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Gegevensbeheer
-### Feature: Allow setting VSI credentials when loading OGR/GDAL layers
-VSI credential options are now exposed for user control when adding OGR vector/GDAL raster layers from the Data Source Manager, allowing users to define credentials on a per-layer basis for layers retrieved from cloud services (rather than use a single set of credentials for an entire QGIS session using an environment variable or similar approach).
+### Mogelijkheid: Sta instellen van inloggegevens VSI toe bij het laden van lagen van OGR/GDAL
+Opties voor inloggegevens voor VSI worden nu weergegeven voor gebruikersbeheer bij het toevoegen van OGR-vector-/GDAL-rasterlagen vanuit Databronnen beheren. Dat geeft gebruikers de mogelijkheid inloggegevens te definiëren op een per-laag-basis voor lagen die worden opgehaald uit cloudservices (in plaats van een enkele set inloggegevens te gebruiken voor de gehele sessie van QGIS met een omgevingsvariabele of soortgelijke benadering).
 
 Vereist GDAL 3.5+
 
@@ -425,104 +425,104 @@ Vereist GDAL 3.5+
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Formulieren en widgets
-### Feature: Allow reordering fields in new vector layer dialogs
-When creating a new vector layer, including scratch, shp, gpkg, and spatialite, users will now be able to reorder the field definitions.
+### Mogelijkheid: Opnieuw ordenen van velden toestaan in nieuwe dialoogvensters voor vectorlagen
+Bij het maken van een nieuwe vectorlaag, inclusief tijdelijke tekenlagen, shp, gpkg en SpatiaLite, zullen gebruikers nu in staat zijn de velddefinities opnieuw te ordenen.
 
 ![](images/entries/3623fff590c84705c9e75fa22c3e0cc9c537c9e0.webp)
 
 Dit werd mogelijk gemaakt door Deense QGIS gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add metadata setting to override widget wrapper used for a parameter
-While it was possible to add new widget wrappers for Processing parameters, it was not possible to override the standard widget wrappers defined for each parameter type.
+### Mogelijkheid: Metadata instelling toegevoegd om widgetwrapper, die wordt gebruikt voor een parameter, te overschrijven
+Waar het mogelijk was nieuwe widgetwrappers toe te voegen voor parameters van Processing, was het niet mogelijk om de standaardwidgetwrappers te overschrijven die waren gedefinieerd voor elk type parameter.
 
-A new parameter metadata setting for "widget\_type" has been added, which provides developers to override the standard widget wrapper for a parameter for more control of application dialogues.
+Een nieuwe instelling voor de metadata van de parameter voor "widget\_type" is toegevoegd, die ontwikkelaars in staat stelt de standaardwidgetwrapper voor een parameter te overschrijven voor meer beheer van dialoogvensters voor de toepassing.
 
 `param.setMetadata( } )`
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ## Processing
-### Feature: Open file or URL Algorithm
-A simple native algorithm has been added to allow for the opening of local files using the corresponding system programs, or URLs in a web browser.
+### Mogelijkheid: Algoritme Bestand of URL openen 
+Een eenvoudig eigen algoritme is toegevoegd dat het mogelijk maakt lokale bestanden te openen met de corresponderende systeemprogramma's, of URL's in een webbrowser.
 
-Useful in combination with the Download File Algorithm to open the resulting file, or to display results after models triggering external systems.
+Nuttig in combinatie met het algoritme Bestand downloaden via HTTP(S) om het resulterende bestand te openen, of om resultaten weer te geven nadat modellen externe systemen activeren.
 
 ![](images/entries/2ab9a02e47e9d3dc7a0c4e1dc5f65d195244869b.webp)
 
 Dit werd mogelijk gemaakt door het [Kanton Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
 Deze mogelijkheid werd ontwikkeld door [Dave Signer (OPENGIS.ch)](https://opengis.ch)
-### Feature: Add processing parameter types for Area and Volume
-Adds dedicated parameter types for Area and Volume values.
+### Mogelijkheid: Typen parameters toegevoegd in Processing voor Area en Volume
+Voegt aangewezen typen parameters voor waarden van Area en Volume toe.
 
-Modeled closely off the existing Distance parameter type.
+Nauw gemodelleerd naar het bestaande type parameter Distance.
 
 ![](images/entries/8324f615ac89f6d617619f34f6cc37ee2ae55a2a.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Updated "Vector information" algorithms
-The GDAL Processing algorithm for vector information has been modified to support additional command-line parameters, and a new **Vector information (JSON)** algorithm is provided that will use the [`-json`](https://gdal.org/programs/ogrinfo.html#cmdoption-ogrinfo-json) option of ogrinfo to create a JSON file output containing the layer or dataset information.
+### Mogelijkheid: Bijgewerkte algoritmes "Vectorinformatie"
+Het GDAL-algoritme voor Processing voor vectorinformatie is aangepast om aanvullende parameters voor de opdrachtregel te ondersteunen, en een nieuw algoritme **Vectorinformatie (JSON)** wordt verschaft. Dat zal de optie [`-json`](https://gdal.org/programs/ogrinfo.html#cmdoption-ogrinfo-json) van ogrinfo gebruiken om een JSON uitvoerbestand te maken dat de informatie over de laag of gegevensset bevat.
 
 ![](images/entries/b890a9ff0af7e1ef313c620c48150f871f1177f0.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Allow adding Processing tools to Favorites
-New 'Favorites' functionality has been added for Processing alogrithms, allowing users to statically pin their chosen algorithms to a dedicated section at the top of the toolbox for ease of access.
+### Mogelijkheid: Toevoegen van gereedschappen van Processing aan Favorieten toestaan
+Nieuwe functionaliteit voor 'Favorieten' is toegevoegd voor algoritmes van Processing. Die stelt gebruikers in staat om de door hen gekozen algoritmes statisch vast te zetten in een aangewezen gedeelte aan de bovenzijde van de Toolbox, voor gemakkelijke toegang.
 
 ![](images/entries/2108d8a4104ef9d50f44a72171274469bde1e429.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add creation options support to some native raster Processing algorithms
-More raster creation options have been added to native Processing algorithms for more control of the output format (compression level, world file generation etc.). Affected algorithms include:
+### Mogelijkheid: Ondersteuning voor opties voor maken toegevoegd aan sommige eigen algoritmes van Processing voor rasters
+Meer opties voor het maken van rasters zijn toegevoegd aan eigen algoritmes van Processing voor meer beheer over de indeling van de uitvoer (compressieniveau, maken van world file, etc.). Betrokken algoritmes omvatten:
 - Celstatistieken
-- Constant raster
-- Export mesh
+- Constante rasterlaag maken
+- Mazen exporteren
 - 'Geen gegevens' vullen
-- Fuzzify raster
+- Raster onscherp maken 
 - Dichtheid lijn
 - Willekeurig raster
 - DTM-filter (gebaseerd op helling)
 - Gelijk aan frequentie
-- Raster boolean AND/OR
-- Raster stack position
-- Reclassify
-- Rescale
+- Raster booleaanse waarde EN/OF
+- Positie in stapel van raster 
+- Opnieuw classificeren
+- Raster opnieuw op schaal brengen
 - Rond
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Support drag and drop for multi-layer parameters
-Allows dragging and dropping layers from either the QGIS browser or file explorer onto any multiple-layer parameter panel. Handy when you have to add many layers and it's simpler to make a selection outside of the processing dialog.
+### Mogelijkheid: Ondersteuning voor slepen-en-neerzetten voor parameters voor meerdere lagen
+Maakt het mogelijk lagen te slepen en neer te zetten vanuit ofwel de QGIS Browser of bestandsverkenner in elk paneel voor parameters voor meerdere lagen. Handig als u veel lagen moet toevoegen en het eenvoudiger is een selectie te maken buiten het dialoogvenster van Processing.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Opties voor toepassing en projecten
-### Feature: Smart cache size implementation
-QGIS now has improved handling of its network disk cache by leveraging smart cache size logic currently utilized by modern web browsers.
+### Mogelijkheid: Implementatie van slimme cachegrootte
+QGIS heeft nu verbeterde afhandeling van zijn netwerkschijfcache door het ophogen van de logica voor de slimme cachegrootte die momenteel wordt gebruikt door moderne webbrowsers.
 
-This allows the cache to dynamically resize based on available storage space on the cache disk, and will result in most users getting a larger cache size (and improved network performance) by default as well as limiting loads to external providers and XYZ tile services.
+Dat maakt het mogelijk dat de cache dynamisch wordt aangepast, gebaseerd op beschikbare opslagruimte op de cacheschijf, en zal erin resulteren dat de meeste gebruikers standaard een hogere cachegrootte krijgen (en verbeterde netwerkprestaties), alsook laden beperken naar externe providers en XYZ-tegelservices.
 
-Users can disable the smart cache size logic in favor of a static cache size using the updated Options dialog.
+Gebruikers kunnen de logica voor de slimme cachegrootte uitschakelen voor een statische cachegrootte met het bijgewerkte dialoogvenster Opties.
 
 ![](images/entries/80e1931b0152bfe035105520396a775b6f9bfbaf.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add vertical CRS selection widget to vector layer properties
-Vector layers can now include discrete settings for configuring the vertical reference system.
+### Mogelijkheid: Selectiewidget voor verticaal CRS toegevoegd aan eigenschappen vectorlaag
+Vectorlagen mogen nu afzonderlijke instellingen bevatten voor het configureren van een verticaal referentiesysteem.
 
-Application behavior for the definition of vertical reference on a layer will follow the same behavior as the project settings, namely:
-- If the layer has a 3D CRS set, then the widget is disabled with an explanatory note
-- If the layer has a 2D CRS set, then the user can select the appropriate vertical CRS
+Gedrag van de toepassing voor het definiëren van verticale referentie op een laag zal hetzelfde gedrag volgen als de projectinstellingen, namelijk:
+- Als de laag een 3D-CRS heeft ingesteld, dan is de widget uitgeschakeld met een opmerking die uitleg geeft
+- Als de laag een 2D-CRS heeft ingesteld, dan kan de gebruiker het toepasselijke verticale CRS selecteren
 
-An explanatory note is included which details the facets of the application where the vertical CRS settings are respected, along with a warning for users to note that plugins and other tools may not respect the layers' vertical CRS configuration.
+Een opmerking met uitleg wordt opgenomen die de facetten van de toepassing uitlegt, waarbij met de instellingen voor het verticale CRS rekening wordt gehouden. Naast een waarschuwing voor gebruikers om te onthouden dat plug-ins en andere gereedschappen geen rekening zouden kunnen houden met de configuratie van het verticale CRS.
 
 ![](images/entries/54fd7f19dfda59d13b32525efe28d75af4f72adc.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Project color mode properties widget
-Project properties configuration widgets have been added for managing color modes and color profiles at the project level.
+### Mogelijkheid: Widget projecteigenschappen kleurmodus
+Widgets voor het configureren van projecteigenschappen zijn toegevoegd voor het beheren van kleurmodi en kleurprofielen op het projectniveau.
 
-When loading an ICC profile, QGIS will enforce consistency between the color model and color space.
+Bij het laden van een ICC-profiel zal QGIS consistentie afdwingen tussen het kleurmodel en de kleurruimte.
 
-**The ICC profile widget part is not visible unless QGIS is built with Qt 6.8.0 or greater**
+**Het deel van de widget ICC-profiel is niet zichtbaar, tenzij QGIS is gebouwd met Qt 6.8.0 of hoger**
 
 ![](images/entries/c763da512666981c58d3fe8b5dbfa5982ff53d4b.webp)
 
@@ -530,92 +530,92 @@ Dit werd mogelijk gemaakt door Bordeaux Métrôpole\*\*
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Profiel plotten
-### Feature: Change elevation profile name
-A "Change Profile Name" menu item in the Options sub-menu of the Elevation Profile widget has been added that allows the user to change the name of the profile window.
+### Mogelijkheid: Naam hoogteprofiel wijzigen
+Een menu-item "Naam hoogteprofiel wijzigen" in het submenu Opties van de widget Hoogteprofiel is toegevoegd, dat de gebruiker de mogelijkheid geeft de naam van het profielvenster te wijzigen.
 
 ![](images/entries/81d350164ce88101c33692b9665063970ce72791.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Simon](https://github.com/Simon-Lopez)
-### Feature: Ensure vector layer elevation profiles respect layer/map vert datums
-When the map and/or layer has a vertical reference (3D CRS) configured it will be respected within profile plots
+### Mogelijkheid: Zorg ervoor dat hoogteprofielen voor vectorlagen rekening houden met verticale datums voor laag/kaart
+Wanneer de kaart en/of laag een verticale referentie heeft geconfigureerd (3D-CRS), zal daar binnen profielplots rekening mee worden gehouden
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Browser
-### Feature: add UX to load MVT layers from style URL only
-If a tile vector layer is created with a style URL but not source, the style is fetched and sources are extracted from it.
+### Mogelijkheid: UX toegevoegd om MVT-lagen alleen uit URL voor stijl te halen
+Als een tegelvectorlaag is gemaakt met een URL voor de stijl, maar geen bron, wordt de stijl opgehaald en daaruit de bronnen uitgenomen.
 
-Here is a demo with a layer having two sources: https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json
+Hier is een demo met een laag die twee bronnen heeft: https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json
 
 https://github.com/user-attachments/assets/948db86c-e79f-40cd-9060-6bc84a31fc2a
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
-### Feature: Add duplicate functionality to Browser connection items
-QGIS now includes a "Duplicate connection" action in the context menu of Browser connection items. This allows users to quickly make a copy of a connection to the same data source when only a few details differ (for example, a different PostGIS database on the same server).
+### Mogelijkheid: Functionaliteit voor dupliceren toegevoegd aan Browser-verbindingsitems
+QGIS bevat nu een actie "Verbinding dupliceren" in het contextmenu van Browser-verbindingsitems. Dat stelt gebruikers in staat snel een kopie van een verbinding te maken naar dezelfde databron, als slechts een paar details verschillen (bijvoorbeeld een andere database van PostGIS op dezelfde server).
 
 ![](images/entries/44b28c871c4d86b6f2c52b326fea88b7e8c1c24e.webp)
 
 Dit werd mogelijk gemaakt door [NaturalGIS](https://www.naturalgis.pt/)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Adjust "Create Database" context menu actions on GeoPackage
-In previous versions of QGIS, creating a new SpatiaLite database with this action would create an empty database and add a new connection to the browser, while the same action executed for GeoPackage files would generate a database with a layer.
+### Mogelijkheid: Aanpassen van acties contextmenu "Database maken" voor GeoPackage
+In eerdere versies van QGIS zou het maken van een nieuwe database van SpatiaLite met deze actie een lege database maken en een nieuwe verbinding maken naar de Browser. Als dezelfde actie wordt uitgevoerd voor GeoPackage-bestanden zou een database met een laag worden gemaakt.
 
-New actions for "Create Database" and "Create Database and Layer" have been added for more explicit and consistent database creation options.
+Nieuwe acties voor "Database maken" en "Database en laag maken" zijn toegevoegd voor meer expliciete en consistente opties voor het maken van databases.
 
 ![](images/entries/0473ab08a8dd2cae040855020d570535088c4268.webp)
 
 Dit werd mogelijk gemaakt door [NaturalGIS](https://www.naturalgis.pt)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add connections to cloud storage providers to browser
-QGIS now natively supports the storing and browsing cloud storage connections within the QGIS browser panel. GDAL supported vector and raster data sources can be loaded directly from cloud providers and all GDAL VSI cloud handlers are supported including (S3, Azure, Google Drive, etc.)
+### Mogelijkheid: Verbindingen naar providers voor cloudopslag toegevoegd aan Browser
+QGIS ondersteunt nu zelf het opslaan en browsen van verbindingen voor cloudopslag binnen het paneel GIS Browser. GDAL ondersteunde en vector- en rasterdatabronnen kunnen direct vanaf cloudproviders worden geladen en alle GDAL VSI cloudafhandelingen worden ondersteund (S3, Azure, Google Drive, etc.)
 
-Connections can also be created, modified, removed, and exported/imported to/from XML files.
+Verbindingen kunnen ook worden gemaakt, aangepast, verwijderd en geëxporteerd/geïmporteerd naar/vanuit XML-bestanden.
 
 ![](images/entries/e6758adb24f9db8651516fc25ae8eac0670988bd.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: STAC integration
-Part one of the [QEP300](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/300) implementation has been completed, allowing users to handle STAC catalogs and elements natively within QGIS using the browser.
+### Mogelijkheid: Integratie van STAC 
+Deel een van het implementeren van [QEP300](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/300) is voltooid, wat gebruikers in staat stelt catalogi en elementen van STAC zelf binnen QGIS af te handelen met de Browser.
 
-A new STAC entry on the browser allows users to connect to static catalogs and STAC API endpoints.
+Een nieuw item STAC in de Browser geeft gebruikers de mogelijkheid om te verbinden met statische catalogi en STAC API-eindpunten.
 
-STAC Items that contain cloud-optimized assets (e.g. COG, COPC, EPT) can be added as map layers via the drag-and-drop action.
+Items van STAC die voor de cloud geoptimaliseerde delen bevatten (bijv. COG, COPC, EPT) kunnen als kaartlagen worden toegevoegd met de actie slepen-en-neerzetten.
 
-A Download Assets dialog is provided in the STAC context menu that allows saving items to local storage.
+Een dialoogvenster Deel downloaden wordt in het contextmenu van STAC verschaft, wat opslaan van items naar lokale opslag mogelijk maakt.
 
-All Catalog, Collection, and Item properties can be examined using the STAC Object Details dialog.
+Alle eigenschappen Catalog, Collection en Item kunnen worden bekeken met het dialoogvenster STAC Objectdetails.
 
 ![](images/entries/c6899bc85d87fc36edba1bb71c4613e4b68a6cbe.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ## Gegevensproviders
-### Feature: Support for polyhedral surface and TIN
-QGIS now supports the `POLYHEDRALSURFACE` and `TIN` simple features by introducing new geometry types for `QgsPolyhedralSurface` and `QgsTriangulatedSurface`:
-- `QgsPolyhedralSurface` inherits from `QgsSurface`
-- `QgsTriangulatedSurface` inherits from `QgsPolyhedralSurface` as a special case which only contains triangles.
+### Mogelijkheid: Ondersteuning voor polyhedraal oppervlak en TIN
+QGIS ondersteunt nu de eenvoudige objecten `POLYHEDRALSURFACE` en `TIN` bij het introduceren van nieuwe typen geometrie voor `QgsPolyhedralSurface` en `QgsTriangulatedSurface`:
+- `QgsPolyhedralSurface` erft van `QgsSurface`
+- `QgsTriangulatedSurface` erft van `QgsPolyhedralSurface` als een speciaal geval dat alleen driehoeken bevat.
 
-This functionality removes the need for previously used workarounds, such as: - TIN is now the multipart of a triangle - There is no need to convert a polyhedral surface or a TIN to a multipolygon when importing these data types from PostGIS.
+Deze functionaliteit verwijdert de noodzaak voor eerder gebruikte workarounds, zoals: - TIN is nu het meerdelige deel van een driehoek - Er is geen noodzaak om een polyhedraal oppervlak of een TIN te converteren naar een multipolygoon bij het importeren van deze gegevenstypen vanuit PostGIS.
 
 Dit werd mogelijk gemaakt door CEA/DAM, CP4SC, Oslandia
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## QGIS Server
-### Feature: WFS title definition for layers
-Implemented to service [\#55317](https://github.com/qgis/QGIS/issues/55317), layers now have an additional WFS Title server metadata property to allow users to differentiate between different layer collections on layers served via WFS with QGIS Server.
+### Mogelijkheid: WFS titeldefinitie voor lagen
+Geïmplementeerd naar service [\#55317](https://github.com/qgis/QGIS/issues/55317) hebben lagen nu een aanvullende eigenschap voor metadata WFS Title server om gebruikers een verschil te kunnen laten maken tussen verschillende laagcollecties voor lagen die worden geserveerd via WFS met QGIS Server.
 
 Deze mogelijkheid werd ontwikkeld door [Jürgen Fischer](https://github.com/jef-n)
 ## Programmeerbaarheid
-### Feature: Exceptions raised on QgsDistanceArea methods
-A QgsCsException is now raised when errors occur within QgsDistanceArea methods to prevent misleading analysis results and properly handle error propagation throughout the application
+### Mogelijkheid: Uitzonderingen opgeworpen voor methoden QgsDistanceArea
+Een QgsCsException wordt nu opgeworpen als er fouten optreden binnen methoden QgsDistanceArea om misleidende analyseresultaten te voorkomen en de juiste voortgang voor afhandeling over de gehele toepassing
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Convert QgsRasterLayer to NumPy Array
-Developed in partial fulfillment of [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), QGIS now includes a new `as_numpy` method on `QgsRasterLayer` objects in PyQGIS which allow for the easy conversion of a raster layer to NumPy array for improved integration processes and improved analysis of raster data using NumPy (Note that the NumPy library is an optional dependency not shipped with the QGIS Application).
+### Mogelijkheid: QgsRasterLayer converteren naar NumPy-array
+Ontwikkeld als gedeeltelijke oplossing voor [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) bevat QGIS nu een nieuwe methode `as_numpy` voor objecten `QgsRasterLayer` in PyQGIS die een gemakkelijke conversie van een rasterlaag naar een NumPy-array mogelijk maakt. Voor verbeterde integratieprocessen en verbeterde analyses van rastergegevens met NumPy (Onthoud dat de bibliotheek NumPy een optionele afhankelijkheid is, die niet wordt meegeleverd met de toepassing QGIS).
 
 Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
-### Feature: Convert QgsGeometry to Shapely and NumPy
-Developed in partial fulfillment of [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), QGIS now includes `as_numpy` and `as_shapely` methods on `QgsGeometry` objects in PyQGIS which allow for the easy conversion of a geometry to a (list of) NumPy array(s) or Shapely object(s) for improved integration processes (Note that the relevant libraries are optional dependencies not shipped with the QGIS Application).
+### Mogelijkheid: QgsGeometry converteren naar Shapely en NumPy
+Ontwikkeld als gedeeltelijke oplossing voor [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) bevat QGIS nu nieuwe methoden `as_numpy` en `as_shapely` voor objecten `QgsGeometry` in PyQGIS, die een gemakkelijke conversie van een geometrie naar een (lijst met) NumPy-array(s) of Shapely-object(en) mogelijk maakt. Voor verbeterde integratieprocessen. (Onthoud dat de relevante bibliotheken optionele afhankelijkheden zijn, die niet worden meegeleverd met de toepassing QGIS).
 
 Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
 ## Belangrijke reparaties
@@ -672,7 +672,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperativ
 | pyqt5_to_pyqt6.py fails on infinite recursion | [#58659](https://github.com/qgis/QGIS/issues/58659) | [PR #58785](https://github.com/qgis/QGIS/pull/58785) | Nee |
 | Legend in map atlas anchored to bottom left or bottom right will not correctly reposition in PDF | [#37566](https://github.com/qgis/QGIS/issues/37566) (Regressie) | [PR #58798](https://github.com/qgis/QGIS/pull/58798) | [PR #58920](https://github.com/qgis/QGIS/pull/58920) |
 | Calling several times waitForFinished on task would cause a deadlock | Niet gerapporteerd | [PR #58799](https://github.com/qgis/QGIS/pull/58799) | Nee |
-| Debian sid Qt6 compile fails on sip build, python bindings | [#57760](https://github.com/qgis/QGIS/issues/57760) | Now working with updated debian |  |
+| Debian sid Qt6 compile fails on sip build, python bindings | [#57760](https://github.com/qgis/QGIS/issues/57760) | Werkt nu met bijgewerkte Debian |  |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
@@ -716,18 +716,18 @@ Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://osla
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
-### Feature: Bug fixes by Loïc Bartoletti (Oslandia)
+### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | 2-Circle Point Intersection coordinate precision problem | [#59039](https://github.com/qgis/QGIS/issues/59039) | [PR #59155](https://github.com/qgis/QGIS/pull/59155) | N/B |
-| Advanced Digitizing Split Tool zeroes M values in a PolyLineZ shapefile | [#49971](https://github.com/qgis/QGIS/issues/49971) | Do not fix (GEOS issue with M) |  |
-| QGIS tools splitting curved polygons | [#57021](https://github.com/qgis/QGIS/issues/57021) | Do not fix (GEOS issue with Curve support) |  |
-| Incorrect winding/orientation/order of polygon's vertices in Memory layers | [#58333](https://github.com/qgis/QGIS/issues/58333) | [PR #59156](https://github.com/qgis/QGIS/pull/59156) | Too risky? |
+| Advanced Digitizing Split Tool zeroes M values in a PolyLineZ shapefile | [#49971](https://github.com/qgis/QGIS/issues/49971) | Niet repareren (probleem GEOS met M) |  |
+| QGIS tools splitting curved polygons | [#57021](https://github.com/qgis/QGIS/issues/57021) | Niet repareren (probleem GEOS met ondersteuning Curve) |  |
+| Incorrect winding/orientation/order of polygon's vertices in Memory layers | [#58333](https://github.com/qgis/QGIS/issues/58333) | [PR #59156](https://github.com/qgis/QGIS/pull/59156) | Te riskant? |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://oslandia.com/)
-### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
+### Mogelijkheid: Reparaties van problemen door Stefanos Natsis (LutraConsulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Layer order change does not update the 3D view | [#51291](https://github.com/qgis/QGIS/issues/51291) | [PR #59026](https://github.com/qgis/QGIS/pull/59026) | [PR #59187](https://github.com/qgis/QGIS/pull/59187) |
@@ -748,7 +748,7 @@ Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandia.com/)
-### Feature: Bug fixes by Mathieu Pellerin (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door Mathieu Pellerin (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Clipping of long WKT strings for geometry parameters by using our geometry widget | Niet gerapporteerd | [PR #59209](https://github.com/qgis/QGIS/pull/59209) | N/B |
@@ -781,7 +781,7 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin (OPENGIS)](https://www.
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia.com/)
-### Feature: Bug fixes by Germán Carrillo (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door Germán Carrillo (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Scale dependent visibility inconsistencies on scale interval edges (symbology, labeling, diagrams) | [#58150](https://github.com/qgis/QGIS/issues/58150) <br> [#42443](https://github.com/qgis/QGIS/issues/42443) | [PR #58968](https://github.com/qgis/QGIS/pull/58968) <br> [PR #59022](https://github.com/qgis/QGIS/pull/59022) | N/B |

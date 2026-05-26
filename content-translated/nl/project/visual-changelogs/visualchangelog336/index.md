@@ -527,7 +527,7 @@ Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandi
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door Alexander Bruy
-### Feature: Bug fixes by Loïc Bartoletti (Oslandia)
+### Mogelijkheid: Reparaties van problemen door Loïc Bartoletti (Oslandia)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Select by Location - Point that is snapped along a linestring, is only being selected when using 'Disjoint' predicate | [#53826](https://github.com/qgis/QGIS/issues/53826) | Not a bug (tolerance and snapping problem) |  |
@@ -551,7 +551,7 @@ Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://osl
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia.com/)
-### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
+### Mogelijkheid: Reparaties van problemen door Stefanos Natsis (LutraConsulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | [Processing] "Points to path" algorithm calculates incorrect attributes values | [#55860](https://github.com/qgis/QGIS/issues/55860) | [PR #55917](https://github.com/qgis/QGIS/pull/55917) | [PR #55932](https://github.com/qgis/QGIS/pull/55932) |
@@ -603,7 +603,7 @@ Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https
 | UI-file-based (combo-box-containing) forms are not working in QGIS 3.34 any longer | [#55621](https://github.com/qgis/QGIS/issues/55621) | [PR #55964](https://github.com/qgis/QGIS/pull/55964) | [PR #55987](https://github.com/qgis/QGIS/pull/55987) |
 | Can't change spatial bookmark storage or group by drag and drop | [#55819](https://github.com/qgis/QGIS/issues/55819) | [PR #55957](https://github.com/qgis/QGIS/pull/55957) |  |
 | Print layout: cursor jumps when changing cell size of fixed table | [#50257](https://github.com/qgis/QGIS/issues/50257) | [PR #55941](https://github.com/qgis/QGIS/pull/55941) | [PR #55992](https://github.com/qgis/QGIS/pull/55992) |
-| Need to close the layer properties dialog before a newly created field appears in Attribute form | [#26350](https://github.com/qgis/QGIS/issues/26350) | [PR #55938](https://github.com/qgis/QGIS/pull/55938) | too risky |
+| Need to close the layer properties dialog before a newly created field appears in Attribute form | [#26350](https://github.com/qgis/QGIS/issues/26350) | [PR #55938](https://github.com/qgis/QGIS/pull/55938) | Te riskant |
 | Missing checkbox partially checked state styling for non-default themes | niet gerapporteerd | [PR #56290](https://github.com/qgis/QGIS/pull/56290) | [PR #56306](https://github.com/qgis/QGIS/pull/56306) |
 | Unable to read MBTiles in paths containing multibytes | [#56023](https://github.com/qgis/QGIS/issues/56023) | [PR #56462](https://github.com/qgis/QGIS/pull/56462) |  |
 | [Data Source Manager] Adding a local raster XYZ Tiles directory as layer is no longer possible | [#56371](https://github.com/qgis/QGIS/issues/56371) | [PR #56418](https://github.com/qgis/QGIS/pull/56418) |  |

@@ -10,7 +10,7 @@ De deelnemers aan de training gebruikten hun eigen laptop en kregen de installat
 
 ![QGIS Udzungwa](./images/tanzania_udzungwa1.jpg){.align-right}
 
-By the end of the two days, everyone was able to add GPS download data, create and edit new layers, save map projects, design print composers, and save graphics files for inclusion in reports and presentations \-\-- this last feature is specially useful in using GIS to help in normal workflows. Even during the course, National Park staff were using the GIS to view the GPS locations of new-reported elephant carcass locations \-\-- the result of poaching \-\-- and to start planning responses.
+Aan het einde van de twee dagen was iedereen in staat om GPS-gegevens, die gedownload waren, toe te voegen, om nieuwe lagen aan te maken en te bewerken, de kaartprojecten op te slaan, sjablonen te ontwerpen met de printvormgeving en om de kaart als een grafisch bestand op te slaan om op te nemen in rapporten en presentaties —— deze laatste functionaliteit is bijzonder nuttig GIS te gebruiken in het normale werkproces. Zelfs tijdens de training, personeel van het nationale park gebruikte het GIS om de GPS locaties te bekijken van nieuwe locaties waar nieuwe karkassen van olifanten waren gevonden —— het resultaat van stropen —— en om tegenmaatregelen in te plannen.
 
 QGIS was voor ons om verschillende redenen aantrekkelijk: Het is niet alleen geheel gratis, maar omdat het open source software betreft, kan deze worden aangepast voor verschillende doeleinden; het draait prima op oudere computers en heeft een relatief klein installatiepakket; en we vonden het gebruiksvriendelijk voor nieuwe gebruikers van GIS . 
 
