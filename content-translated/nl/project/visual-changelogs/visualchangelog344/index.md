@@ -14,13 +14,13 @@ type: visual-changelog
 
 Datum uitgave: 20-06-2025
 
-The QGIS Project proudly announces the release of QGIS 3.44, a momentous release that marks the culmination of the QGIS 3 series. This release arrives within a vibrant and ever-expanding ecosystem of free and open-source geospatial tools, libraries, and community support that empowers users worldwide. Building upon the solid foundations of previous releases, QGIS 3.44 provides a stable and refined experience for all users as the project transitions to the modern Qt6 framework with the upcoming release of [QGIS 4.0](https://blog.qgis.org/2025/04/17/qgis-is-moving-to-qt6-and-launching-qgis-4-0/) in October 2025.
+Het project QGIS kondigt met trots de uitgave van QGIS 3.44 aan, een gedenkwaardige uitgave die de beëindiging kenmerkt van de QGIS 3-serie. Deze uitgave arriveert in een levendig en zich nog steeds uitbreidend ecosysteem van vrije en open-bron-georuimtelijke programma's, bibliotheken en ondersteuning van de gemeenschap die gebruikers wereldwijd stimuleert. Voortbouwend op de solide funderingen van eerdere uitgaven verschaft QGIS 3.44 een stabiele en verfijnde ervaring voor alle gebruikers als het project overgaat op het moderne Qt6-framework met de aanstaande uitgave van [QGIS 4.0](https://blog.qgis.org/2025/04/17/qgis-is-moving-to-qt6-and-launching-qgis-4-0/) in oktober 2025.
 
-As the final feature release of the QGIS 3.x branch, this version ensures a reliable environment for existing workflows, and plugin developers can anticipate a smooth transition between releases, as QGIS 4.0 will retain deprecated APIs to minimize compatibility efforts and allow the ecosystem to evolve alongside the core application.
+Als de laatste uitgave met mogelijkheden van de tak QGIS 3.x, zorgt deze uitgave voor een betrouwbare omgeving voor bestaande werkstromen, en ontwikkelaars van plug-ins kunnen zich voorbereiden op een gladde overgang tussen uitgaven, omdat QGIS 4.0 vervallen API's zal behouden om inspanningen voor compatibiliteit te minimaliseren en het ecosysteem in staat te stellen te evolueren naast de brontoepassing.
 
-While focused on stability and refinement, the release still includes a range of notable enhancements that refine workflows and empower users in their geospatial endeavors. Such enhancements include refinements to database management and connectivity, improved data provider flexibility, and new project settings. Old favourites such as the Processing toolbox and QGIS Expressions also see their fair share of improvements, and cartographic capabilities get a boost with new labelling and layout updates.
+Hoewel gefocust op stabiliteit en verfijning, bevat de uitgave nog steeds een groot aantal opmerkelijke verbeteringen die werkstromen verfijnen en gebruikers stimuleren bij hun georuimtelijke inspanningen. Dergelijke verbeteringen bevatten verfijningen aan het beheren van databases en connectiviteit, verbeterde flexibiliteit voor gegevensproviders en nieuwe projectinstellingen. Oude favorieten, zoals de Toolbox van Processing en QGIS-expressies, krijgen ook hun rechtmatige deel aan verbeteringen en cartografische mogelijkheden krijgen een oppepper met nieuwe bijwerkingen voor labelen en lay-out.
 
-For a whirlwind tour of all the new functionalities introduced, you can view the [highlight reel video on YouTube](https://www.youtube.com/watch?v=5a02yaDKAiE).
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u deze mogelijkheden bekijken [in de video met hoogtepunten op YouTube](https://www.youtube.com/watch?v=5a02yaDKAiE).
 
 [![](https://img.youtube.com/vi/5a02yaDKAiE/0.jpg)](https://www.youtube.com/watch?v=5a02yaDKAiE)
 
@@ -30,22 +30,22 @@ QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van don
 
 QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Tijdbeheer
-### Feature: Allow WMS-T group node to expose time dimension
-A new option to allow the layer tree group node to expose the time dimension has been added on WMS-T layers.
+### Mogelijkheid:  Groepsknoop WMS-T toestaan dimensie tijd weer te geven
+Een nieuwe optie om de groepsknoop van de boom van lagen de dimensie tijd weer te laten geven, die is toegevoegd aan lagen WMS-T is toegevoegd.
 
-A checkbox on the WMS group properties allows toggling the computation of this time dimension. If enabled, it would recursively generate the time dimension based on the child layer time dimensions.
+Een keuzevak in de groepseigenschappen van WMS maakt het mogelijk te schakelen met de berekening van deze tijdsdimensie. Indien ingeschakeld, zal het recursief de tijdsdimensie maken, gebaseerd op de tijdsdimensies van de kindlaag.
 
-A group whose time dimension computation is disabled would not propagate the time dimension of its children to its parent.
+Een groep waarvan de berekening van de tijdsdimensie is uitgeschakeld, zal de tijdsdimensie van zijn kinderen niet doorgeven aan zijn ouder.
 
-Date range for the time dimension has also been added in line with the OGC WMS and ISO8601 standards.
+Datumbereik voor de tijdsdimensie is ook toegevoegd, in lijn met de standaarden OGC WMS en ISO8601.
 
 <img src="images/entries/4916ef1bc94c95cbcb5b66d83e4c4093fe411693" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ifremer
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Add fixed date/time to raster temporal mode
-Allows the user to select a fixed date/time on a raster layer's temporal properties, allowing the start and end of a temporal range to be inferred by a single input value.
+### Mogelijkheid: Vaste datum/tijd toegevoegd voor modus Tijdbeheer voor rasters
+Stelt de gebruiker in staat om een vaste datum/tijd te selecteren in de eigenschappen voor Tijdbeheer van een rasterlaag, wat het mogelijk maakt dat het begin en einde van een tijdsperiode wordt afgeleid van een enkele invoerwaarde.
 
 <img src="images/entries/d61699232fef2797a38e3fcbe18c65d889896308" class="img-responsive img-rounded" />
 
@@ -53,25 +53,25 @@ Dit werd mogelijk gemaakt door Ifremer
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Gebruikersinterface
-### Feature: Open a specific tab in the Message Log Panel
-QGIS now supports opening messages in a specific tab of the Message Log Panel.
+### Mogelijkheid: Een specifieke tab openen in het paneel Logboekmeldingen
+QGIS ondersteunt nu het openen van berichten op een specifieke tab in het paneel Logboekmeldingen
 
-This can be used, for instance, to open a specific tab directly for a given provider or plugin.
+Dit kan bijvoorbeeld worden gebruikt om een specifieke tab direct te openen voor een opgegeven provider of plug-in.
 
-This is achieved by extending the `openMessageLog` method to accept the tab name as a parameter. If the provided tab name cannot be found, the panel will be displayed using its existing state.
+Dit wordt bereikt door de methode `openMessageLog` uit te breiden om de tabnaam als een parameter te accepteren. Als de opgegeven tabnaam niet wordt gevonden, zal het paneel worden weergegeven in zijn bestaande staat.
 
-Included with this change is the extension of the iface method, `iface.openMessageLog( tab_name )`.
+Opgenomen met deze wijziging is de uitbreiding van de methode iface, `iface.openMessageLog( tab_name )`.
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Symbologie
-### Feature: Add an option to delete unused categories in the categorized symbol renderer widget
-A new option has been added to the categorized symbol widget to allow users to bulk remove unused categories.
+### Mogelijkheid: Optie toegevoegd om niet-gebruikte categorieën te verwijderen in de widget symboolrenderer Categorieën
+Een nieuwe optie is toegevoegd aan de widget symboolrenderer Categorieën om het voor de gebruikers mogelijk te maken in bulk niet-gebruikte categorieën te verwijderen.
 
-Using this option will automatically identify and remove any categories which are not matched in the attribute field or expression used to categorize the layer.
+Het gebruik van deze optie zal automatisch alle categorieën identificeren en verwijderen die niet overeenkomen in het attribuutveld of expressie die is gebruikt om de laag te categoriseren.
 
-This is especially useful when utilizing a clipped subset of data that inherited a large set of categorized styles.
+Dit is speciaal nuttig bij het gebruiken van een geclipte subset van gegevens die een grote set gecategoriseerde stijlen hebben geërfd.
 
 <img src="images/entries/85eb6c595a8e44e2fd6deb1586215bc523861dfd.png" class="img-responsive img-rounded" />
 

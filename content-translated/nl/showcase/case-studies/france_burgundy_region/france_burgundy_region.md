@@ -27,6 +27,6 @@ Ons onderzoek zal doorgaan met het verkennen van de geschiedenis over een lange 
 - Dr. Scott Madry: <http://scottmadry.web.unc.edu> of e-mail: madrys 'at' email.unc.edu
 
 ## Auteurs
-![Jones, Tickner and Madry doing field work](./images/france_burgundy4.png){.align-left height="220px"}
+![Jones, Tickner en Madry doen veldwerk](./images/france_burgundy4.png){.align-left height="220px"}
 
 Dit artikel werd bijgedragen in augustus 2013 door Dr. Scott Madry. Hij is een onderzoeksassociate professor in het Curriculum in Archaeology van de University of North Carolina aan Chapel Hill’s Research Laboratories of Archaeology. Hij is verbonden aan de faculteit van de International Space University in Straatsburg, Frankrijk, en is een chercheur associé du Laboratoire Archéologie et Territoires de l'UMR 7324 CITERES, Université François-Rabelais/CNRS. Dit onderzoeksproject is in samenwerking uitgevoerd met Dr. Elizabeth A. Jones, historisch antropoloog (UNC), Dr. Amanda B. Tickner, paleoetnobotanist (UNC) en Dr. D. Seth Murray, etnograaf en oraal historicus (NCSU).

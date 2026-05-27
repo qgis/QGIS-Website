@@ -316,7 +316,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 ![](images/entries/a0f64c99c2a62dee9681d01dec7a39d991377a85.webp)
 
-This feature was funded by Rubicon Concierge Real Estate Services
+この機能は Rubicon Concierge Real Estate Services の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### 機能: レイアウトのメインメニューへのページプロパティの追加
@@ -352,278 +352,291 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 この機能はスイスQGISユーザーグループによって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add line\_interpolate\_point\_by\_m and line\_locate\_m expressions
-Two new functions are provided to the expression engine to work with M values along line strings:
-- `line_interpolate_point_by_m`: returns a point geometry of a matching m value interpolated along a line containing an m dimension.
-- `line_locate_m`: returns a distance from the beginning of a line where a matching m value was found.
+### 機能: line\_interpolate\_point\_by\_m と line\_locate\_m 式の追加
+ラインストリングのM値を扱うための2つの新しい関数が式エンジンに追加されました:
+- `line_interpolate_point_by_m`: M次元を含むラインに沿って補間された一致するM値のポイントジオメトリを返します。
+- `line_locate_m`: 一致するM値が見つかったラインの始点からの距離を返します。
 
-These functions are useful when working with temporal data (such as a linestring representing a GPS track, where the M value represents the epoch value), and can be used effectively alongside the temporal controller to create beautiful animations that were previously harder to unlock.
+これらの関数は時間的データ（M値がエポック値を表すGPSトラックを表すラインストリングなど）を扱う際に役立ち、テンポラルコントローラーと組み合わせて効果的に使用することで、以前は実現が難しかった美しいアニメーションを作成できます。
 
 ![](images/entries/43d4feab4f7d4fb0fe167c7120b19a7cae13fc47.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Extended color value support
-In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), new expression functions allow for the retrieval of colors that include:
+### 機能: カラー値サポートの拡張
+[QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283) に沿って、新しい式関数により以下を含む色の取得が可能になります:
 - color\_rgbf
 - color\_cmykf
 - color\_hsvf
 - color\_hslf
 
-These functions differ from the existing color retrieval expression functions (e.g. color\_rgb) by returning color values with different internal data types. This improves performance and fidelity by avoiding unnecessary color conversions in specific contexts, such as writing PDFs with native CMYK colors derived from expression values.
+これらの関数は、異なる内部データタイプでカラー値を返すことで既存のカラー取得式関数（例：color\_rgb）と異なります。これにより、式の値から派生したネイティブCMYKカラーを使用したPDFの書き込みなど、特定のコンテキストで不要なカラー変換を避けることでパフォーマンスと精度が向上します。
 
 この機能は Bordeaux Métropôle の資金提供で開発されました
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
-### Feature: Allow users to save expression functions in QGIS project file
-A new `[Project Functions]` element is now available within the expression builder dialog, allowing QGIS to store custom user-defined functions embedded in the project file.
+### 機能: ユーザーがQGISプロジェクトファイルに式関数を保存できるようにしました
+式ビルダーダイアログに新しい  `[Project Functions]`  要素が追加され、QGISがカスタムユーザー定義関数をプロジェクトファイルに埋め込んで保存できるようになりました。
 
-This reduces the need to manually share Python code snippets and copy them to the user profile directory or import them into the expression builder dialog.
+これにより、Pythonコードスニペットを手動で共有したり、ユーザープロファイルディレクトリにコピーしたり、式ビルダーダイアログにインポートしたりする必要が減ります。
 
-Project functions are unloaded when a project is closed, and user functions are reloaded to avoid any potential overwrite by activated project functions.
+プロジェクト関数はプロジェクトが閉じられる際にアンロードされ、有効化されたプロジェクト関数による上書きを防ぐためにユーザー関数が再読み込みされます。
 
-For security reasons, the handling of whether to load or not load these functions on project startup is configurable in the user settings with the same rationale used for managing project macros.
+セキュリティ上の理由から、プロジェクト起動時にこれらの関数を読み込むかどうかの処理は、プロジェクトマクロの管理と同じ考え方でユーザー設定から設定できます。
 
 ![](images/entries/fb459ca9362a65771713ed9b571b12a265e0b45d.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch)
+この機能は [the QGIS user group Switzerland](https://qgis.ch) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Add info about usable "expression dialect" to filter dialog
-The query builder used for entering filter expressions on vector layers now shows the supported expression dialect.
+### 機能: フィルターダイアログへの使用可能な "expression dialect" 情報の追加
+ベクターレイヤーのフィルター式入力に使用するクエリビルダーがサポートされる式ダイアレクトを表示するようになりました。
 
 ![](images/entries/1bd0096fbd0fac4d612b2ca98bc7ef86cedac36e.webp)
 
-This feature was funded by WhereGroup GmbH.
+この機能は WhereGroup GmbH の資金提供で開発されました
 
-This feature was developed by [Hannes](https://github.com/kannes)
-### Feature: Add project\_color\_object and ramp\_color\_object functions
-In line with [QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283), new expression functions provide support for setting project and ramp colors using CMYK color values using expressions
+この機能は [Hannes](https://github.com/kannes) によって開発されました
+### 機能: project\_color\_object と ramp\_color\_object 関数の追加
+[QEP\#283](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283) に沿って、新しい式関数により式を使用してCMYKカラー値でプロジェクトとランプの色を設定するサポートが提供されます。
 
-This feature was funded by Bordeaux Metropole
+この機能は Bordeaux Metropole の資金提供で開発されました
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 ## デジタイズ
-### Feature: Add circles intersection digitizing tool
-A new advanced digitizing tool allows users to pick/ digitize a point at the intersection of two circles
+### 機能: 円の交差デジタイズツールの追加
+新しい高度デジタイズツールにより、2つの円の交点でポイントを選択/デジタイズできるようになります。
 
-To support this functionality, the QGIS API has been extended with a new abstract class for supporting similar "COGO" development in the future, as well as providing Python bindings for developing advanced digitization utilities and plugins.
+この機能をサポートするため、QGIS APIが将来的に同様の "COGO" 開発をサポートする新しい抽象クラスで拡張され、高度なデジタイズユーティリティとプラグインの開発のためのPythonバインディングも提供されます。
 
 ![](images/entries/990ee4bd78f0d0732ca02562ce953bed4c9443a8.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Visual construction guides for advanced digitizing
-Visual construction guides have been added to the advanced digitizing dock widget, which builds on the existing CAD construction mode.
+### 機能: 高度デジタイズのための視覚的な構築ガイド
+既存のCAD構築モードに基づいて、高度デジタイズドックウィジェットに視覚的な構築ガイドが追加されました。
 
-When recording construction guides, QGIS will render all construction steps taken as dashed lines which will remain visible for as long as advanced digitizing is enabled. The guides are snap-able, allowing for construction steps to begin mid-way into a previous set of steps too.
+構築ガイドを記録する際、QGISは実行されたすべての構築ステップを高度デジタイズが有効な間表示される破線としてレンダリングします。ガイドはスナップ可能で、以前のステップの途中から構築ステップを開始することもできます。
 
-The construction guides are stored in a vector layer, which is exposed through the advanced digitizing dock widget, allowing for further customization of the guides via other application processes, such as Python plugins.
+構築ガイドはベクターレイヤーに保存され、高度デジタイズドックウィジェットを通じて公開されるため、Pythonプラグインなどの他のアプリケーションプロセスからガイドをさらにカスタマイズできます。
 
 ![](images/entries/d77759a3bc23a050b3e8e9cc5a5d3bb5cc91dff3.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 ## データ管理
-### Feature: Allow setting VSI credentials when loading OGR/GDAL layers
-VSI credential options are now exposed for user control when adding OGR vector/GDAL raster layers from the Data Source Manager, allowing users to define credentials on a per-layer basis for layers retrieved from cloud services (rather than use a single set of credentials for an entire QGIS session using an environment variable or similar approach).
+### 機能: OGR/GDALレイヤーの読み込み時のVSI認証情報の設定を可能に
+データソースマネージャーからOGRベクター/GDALラスターレイヤーを追加する際に、VSI認証情報オプションがユーザー制御のために公開されるようになりました。これにより、環境変数や類似のアプローチでQGISセッション全体に単一の認証情報セットを使用するのではなく、クラウドサービスから取得したレイヤーのレイヤーごとに認証情報を定義できます。
 
-Requires GDAL 3.5+
+GDAL 3.5+ が必要
 
 ![](images/entries/e824e2a5aef50de87656d6beced8ea0ae0f60e41.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## フォームとウィジェット
-### Feature: Allow reordering fields in new vector layer dialogs
-When creating a new vector layer, including scratch, shp, gpkg, and spatialite, users will now be able to reorder the field definitions.
+### 機能: 新しいベクターレイヤーダイアログでのフィールドの並び替えを可能に
+スクラッチ,shp.gpkg,spatialite を含む新しいベクターレイヤーを作成する際、ユーザーはフィールド定義を並び替えることができるようになりました。
 
 ![](images/entries/3623fff590c84705c9e75fa22c3e0cc9c537c9e0.webp)
 
-This feature was funded by QGIS User Group Denmark
+ この機能は QGIS User Group Denmark の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add metadata setting to override widget wrapper used for a parameter
-While it was possible to add new widget wrappers for Processing parameters, it was not possible to override the standard widget wrappers defined for each parameter type.
+### 機能: パラメーターに使用するウィジェットラッパーを上書きするメタデータ設定の追加
+プロセッシングパラメーターに新しいウィジェットラッパーを追加することは可能でしたが、各パラメータータイプに定義された標準ウィジェットラッパーを上書きすることはできませんでした。
 
-A new parameter metadata setting for "widget\_type" has been added, which provides developers to override the standard widget wrapper for a parameter for more control of application dialogues.
+ "widget\_type" の新しいパラメーターメタデータ設定が追加されました。これにより開発者はパラメーターの標準ウィジェットラッパーを上書きして、アプリケーションダイアログをより細かく制御できるようになります。
 
 `param.setMetadata( } )`
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 ## プロセシング
-### Feature: Open file or URL Algorithm
-A simple native algorithm has been added to allow for the opening of local files using the corresponding system programs, or URLs in a web browser.
+### 機能: ファイル または URL アルゴリズムのオープン
+対応するシステムプログラムを使用したローカルファイルの開き方、またはWebブラウザーでのURLの開き方を可能にするシンプルなネイティブアルゴリズムが追加されました。
 
-Useful in combination with the Download File Algorithm to open the resulting file, or to display results after models triggering external systems.
+ファイルのダウンロードアルゴリズムと組み合わせて結果のファイルを開いたり、外部システムを起動するモデルの実行後に結果を表示したりするのに役立ちます。
 
 ![](images/entries/2ab9a02e47e9d3dc7a0c4e1dc5f65d195244869b.webp)
 
 この機能の開発は [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/) の資金提供で行われました
 
 この機能は [Dave Signer (OPENGIS.ch)](https://opengis.ch) によって開発されました
-### Feature: Add processing parameter types for Area and Volume
-Adds dedicated parameter types for Area and Volume values.
+### 機能: 面積と体積のプロセッシングパラメータータイプの追加
+面積と体積の値専用のパラメータータイプを追加します。
 
-Modeled closely off the existing Distance parameter type.
+既存の距離パラメータータイプを密接に参考にして設計されています。
 
 ![](images/entries/8324f615ac89f6d617619f34f6cc37ee2ae55a2a.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Updated "Vector information" algorithms
-The GDAL Processing algorithm for vector information has been modified to support additional command-line parameters, and a new **Vector information (JSON)** algorithm is provided that will use the [`-json`](https://gdal.org/programs/ogrinfo.html#cmdoption-ogrinfo-json) option of ogrinfo to create a JSON file output containing the layer or dataset information.
+### 機能: "ベクター情報" アルゴリズムの更新
+ ベクター情報のGDALプロセッシングアルゴリズムが追加のコマンドラインパラメーターをサポートするよう変更され、レイヤーまたはデータセット情報を含むJSONファイル出力を作成するためにogrinfo の  [`-json`](https://gdal.org/programs/ogrinfo.html#cmdoption-ogrinfo-json) オプションを使用する新しい **ベクター情報（JSON)** アルゴリズムが提供されました。
 
 ![](images/entries/b890a9ff0af7e1ef313c620c48150f871f1177f0.webp)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Allow adding Processing tools to Favorites
-New 'Favorites' functionality has been added for Processing alogrithms, allowing users to statically pin their chosen algorithms to a dedicated section at the top of the toolbox for ease of access.
+### 機能: プロセッシングツールをお気に入りに追加可能に
+プロセッシングアルゴリズムに新しい 'お気に入り' 機能が追加されました。ユーザーが選択したアルゴリズムをツールボックスの上部の専用セクションに固定して、簡単にアクセスできるようになります。
 
 ![](images/entries/2108d8a4104ef9d50f44a72171274469bde1e429.webp)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add creation options support to some native raster Processing algorithms
-More raster creation options have been added to native Processing algorithms for more control of the output format (compression level, world file generation etc.). Affected algorithms include:
+### 機能: 一部のネイティブラスタープロセッシングアルゴリズムへの作成オプションサポートの追加
+出力形式（圧縮レベル、ワールドファイル生成など）をより細かく制御するための追加ラスター作成オプションがネイティブプロセッシングアルゴリズムに追加されました。影響を受けるアルゴリズムには以下が含まれます:
 - セル統計量
-- Constant raster
-- Export mesh
-- nodata値を内挿値で埋める
-- Fuzzify raster
+- 定数ラスター
+- メッシュのエクスポート
+- nodataを埋める
+- ラスターのファジー化
 - 線密度
 - ランダムラスタの出力
 - DTMフィルタ（傾斜ベース）
 - ラスタスタックの値の一致頻度
-- Raster boolean AND/OR
-- Raster stack position
-- Reclassify
-- Rescale
-- Round
+- ラスターブールAND/OR
+- ラスタースタック位置
+- 再分類
+- 再スケーリング
+- 丸め
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Support drag and drop for multi-layer parameters
-Allows dragging and dropping layers from either the QGIS browser or file explorer onto any multiple-layer parameter panel. Handy when you have to add many layers and it's simpler to make a selection outside of the processing dialog.
+### 機能: マルチレイヤーパラメーターのドラッグ＆ドロップのサポート
+QGISブラウザーまたはファイルエクスプローラーから任意のマルチレイヤーパラメーターパネルにレイヤーをドラッグ＆ドロップできるようになります。多くのレイヤーを追加する必要があり、プロセッシングダイアログの外で選択する方が簡単な場合に便利です。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## アプリケーションとプロジェクトのオプション
-### Feature: Smart cache size implementation
-QGIS now has improved handling of its network disk cache by leveraging smart cache size logic currently utilized by modern web browsers.
+### 機能: スマートキャッシュサイズの実装
+QGISが現代のWebブラウザーで使用されているスマートキャッシュサイズロジックを活用することで、ネットワークディスクキャッシュの処理が改善されました。
 
-This allows the cache to dynamically resize based on available storage space on the cache disk, and will result in most users getting a larger cache size (and improved network performance) by default as well as limiting loads to external providers and XYZ tile services.
+これにより、キャッシュがキャッシュディスクの利用可能なストレージスペースに基づいて動的にサイズ変更され、ほとんどのユーザーはデフォルトでより大きなキャッシュサイズ（およびネットワークパフォーマンスの向上）を得るとともに、外部プロバイダーやXYZタイルサービスへの負荷を制限することができます。
 
-Users can disable the smart cache size logic in favor of a static cache size using the updated Options dialog.
+ユーザーは更新されたオプションダイアログを使用してスマートキャッシュサイズロジックを無効にし、静的なキャッシュサイズを使用することができます。
 
 ![](images/entries/80e1931b0152bfe035105520396a775b6f9bfbaf.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add vertical CRS selection widget to vector layer properties
-Vector layers can now include discrete settings for configuring the vertical reference system.
+### 機能: ベクターレイヤープロパティへの垂直CRS選択ウィジェットの追加
+ベクターレイヤーに垂直参照系を設定するための個別の設定が含まれるようになりました。
 
-Application behavior for the definition of vertical reference on a layer will follow the same behavior as the project settings, namely:
-- If the layer has a 3D CRS set, then the widget is disabled with an explanatory note
-- If the layer has a 2D CRS set, then the user can select the appropriate vertical CRS
+レイヤーの垂直参照の定義に対するアプリケーションの動作は、プロジェクト設定と同じ動作に従います:
+- レイヤーに3D CRSが設定されている場合、ウィジェットは説明メモと共に無効になります。
+- レイヤーに2D CRSが設定されている場合、ユーザーは適切な垂直CRSを選択できます。
 
-An explanatory note is included which details the facets of the application where the vertical CRS settings are respected, along with a warning for users to note that plugins and other tools may not respect the layers' vertical CRS configuration.
+垂直CRS設定が適用されるアプリケーションの側面を詳細に説明する注記が含まれており、プラグインやその他のツールはレイヤーの垂直CRS設定を適用しない場合があることをユーザーに警告しています。
 
 ![](images/entries/54fd7f19dfda59d13b32525efe28d75af4f72adc.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Project color mode properties widget
-Project properties configuration widgets have been added for managing color modes and color profiles at the project level.
+### 機能: プロジェクトカラーモードウィジェット
+プロジェクトレベルでカラーモードとカラープロファイルを管理するためのプロジェクトプロパティ設定ウィジェットが追加されました。
 
-When loading an ICC profile, QGIS will enforce consistency between the color model and color space.
+ICCプロファイルを読み込む際、QGISはカラーモデルとカラースペース間の一貫性を確保します。
 
-**The ICC profile widget part is not visible unless QGIS is built with Qt 6.8.0 or greater**
+**ICCプロファイルウィジェット部分はQGISがQt 6.8.0以上でビルドされていない限り表示されません**
 
 ![](images/entries/c763da512666981c58d3fe8b5dbfa5982ff53d4b.webp)
 
-This feature was funded by Bordeaux Métrôpole\*\*
+この機能は Bordeaux Métrôpole\*\* の資金提供で開発されました
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 ## Profile Plots
-### Feature: Change elevation profile name
-A "Change Profile Name" menu item in the Options sub-menu of the Elevation Profile widget has been added that allows the user to change the name of the profile window.
+### 機能: 標高プロファイル名の変更
+標高プロファイルウィジェットのオプションサブメニューに "プロファイル名の変更" メニューアイテムが追加され、ユーザーがプロファイルウィンドウの名前を変更できるようになりました。
 
 ![](images/entries/81d350164ce88101c33692b9665063970ce72791.webp)
 
-This feature was developed by [Simon](https://github.com/Simon-Lopez)
-### Feature: Ensure vector layer elevation profiles respect layer/map vert datums
-When the map and/or layer has a vertical reference (3D CRS) configured it will be respected within profile plots
+この機能は [Simon](https://github.com/Simon-Lopez) によって開発されました
+### 機能:： ベクターレイヤーの標高プロファイルがレイヤー/マップの垂直基準を適用することを確保
+マップおよび/またはレイヤーに垂直参照（3D CRS）が設定されている場合、プロファイルプロット内で適用されます。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## ブラウザ
-### Feature: add UX to load MVT layers from style URL only
-If a tile vector layer is created with a style URL but not source, the style is fetched and sources are extracted from it.
+### 機能: スタイルURLのみからMVTレイヤーを読み込むUXの追加
+タイルベクターレイヤーがソースなしでスタイルURLで作成された場合、スタイルが取得されてそこからソースが抽出されます。
 
-Here is a demo with a layer having two sources: https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json
+ 2つのソースを持つレイヤーのデモはこちらです: https://vectortiles.geo.admin.ch/styles/ch.swisstopo.lightbasemap.vt/style.json
 
 https://github.com/user-attachments/assets/948db86c-e79f-40cd-9060-6bc84a31fc2a
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
-### Feature: Add duplicate functionality to Browser connection items
-QGIS now includes a "Duplicate connection" action in the context menu of Browser connection items. This allows users to quickly make a copy of a connection to the same data source when only a few details differ (for example, a different PostGIS database on the same server).
+### 機能: ブラウザー接続アイテムへの複製機能の追加
+QGISのブラウザー接続アイテムのコンテキストメニューに "接続の複製" アクションが追加されました。これにより、細部のみが異なる（例：同じサーバー上の別のPostGISデータベース）場合に同じデータソースへの接続のコピーを素早く作成できるようになります。
 
 ![](images/entries/44b28c871c4d86b6f2c52b326fea88b7e8c1c24e.webp)
 
-This feature was funded by [NaturalGIS](https://www.naturalgis.pt/)
+この機能は [NaturalGIS](https://www.naturalgis.pt/) の資金提供で開発されました
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Adjust "Create Database" context menu actions on GeoPackage
-In previous versions of QGIS, creating a new SpatiaLite database with this action would create an empty database and add a new connection to the browser, while the same action executed for GeoPackage files would generate a database with a layer.
+### 機能: Adjust "GeoPackageのコンテキストメニューアクションとしての "Create Database" の調整
+以前のバージョンのQGISでは、このアクションで新しいSpatiaLiteデータベースを作成すると空のデータベースが作成されてブラウザーに新しい接続が追加されていましたが、GeoPackageファイルに対して実行された同じアクションでレイヤーを持つデータベースを生成できるようにしました。
 
 New actions for "Create Database" and "Create Database and Layer" have been added for more explicit and consistent database creation options.
+より明確で一貫したデータベース作成オプションのために "Create Database" と "Create Database and Layer" の新しいアクションが追加されました。
+ 
+ 
+ 
+ 
+ 
+ 
 
 ![](images/entries/0473ab08a8dd2cae040855020d570535088c4268.webp)
 
-This feature was funded by [NaturalGIS](https://www.naturalgis.pt)
+この機能は [NaturalGIS](https://www.naturalgis.pt) の資金提供で作成されました
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add connections to cloud storage providers to browser
-QGIS now natively supports the storing and browsing cloud storage connections within the QGIS browser panel. GDAL supported vector and raster data sources can be loaded directly from cloud providers and all GDAL VSI cloud handlers are supported including (S3, Azure, Google Drive, etc.)
+### 機能: ブラウザーへのクラウドストレージプロバイダーへの接続の追加
+QGISがQGISブラウザーパネル内でのクラウドストレージ接続の保存とブラウジングをネイティブでサポートするようになりました。GDALがサポートするベクターおよびラスターデータソースをクラウドプロバイダーから直接読み込むことができ、S3、Azure、Google Driveなどのすべての GDAL VSIクラウドハンドラーがサポートされています。
 
-Connections can also be created, modified, removed, and exported/imported to/from XML files.
+接続の作成、変更、削除、およびXMLファイルへの/からのエクスポート/インポートも可能です。
 
 ![](images/entries/e6758adb24f9db8651516fc25ae8eac0670988bd.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: STAC integration
-Part one of the [QEP300](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/300) implementation has been completed, allowing users to handle STAC catalogs and elements natively within QGIS using the browser.
+### 機能: STAC 統合
+ [QEP300](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/300)  実装のパート1が完了し、ユーザーがブラウザーを使用してQGIS内でSTACカタログと要素をネイティブに処理できるようになりました。
 
-A new STAC entry on the browser allows users to connect to static catalogs and STAC API endpoints.
+ブラウザーの新しいSTACエントリにより、ユーザーは静的カタログとSTAC APIエンドポイントに接続できるようになりました。
 
-STAC Items that contain cloud-optimized assets (e.g. COG, COPC, EPT) can be added as map layers via the drag-and-drop action.
+クラウド最適化アセット（COG、COPC、EPTなど）を含むSTACアイテムはドラッグ＆ドロップ操作でマップレイヤーとして追加できます。
 
-A Download Assets dialog is provided in the STAC context menu that allows saving items to local storage.
+STACコンテキストメニューにアイテムをローカルストレージに保存できるアセットのダウンロードダイアログが提供されています。
 
-All Catalog, Collection, and Item properties can be examined using the STAC Object Details dialog.
+すべてのカタログ、コレクション、アイテムのプロパティはSTACオブジェクト詳細ダイアログで確認できます。
 
 ![](images/entries/c6899bc85d87fc36edba1bb71c4613e4b68a6cbe.gif)
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 ## データプロバイダ
-### Feature: Support for polyhedral surface and TIN
-QGIS now supports the `POLYHEDRALSURFACE` and `TIN` simple features by introducing new geometry types for `QgsPolyhedralSurface` and `QgsTriangulatedSurface`:
-- `QgsPolyhedralSurface` inherits from `QgsSurface`
-- `QgsTriangulatedSurface` inherits from `QgsPolyhedralSurface` as a special case which only contains triangles.
+### 機能: 多面体サーフェスとTINのサポート
+ 
+ 
+ 
+ 
+ 
+ 
+QGISが  `QgsPolyhedralSurface` と `QgsTriangulatedSurface` の新しいジオメトリタイプを導入することで `POLYHEDRALSURFACE` と `TIN` の単純地物をサポートするようになりました:
+- `QgsSurface` を継承する `QgsPolyhedralSurface` 
+- `QgsPolyhedralSurface` を三角形を保持する特別な場合として継承する `QgsTriangulatedSurface` 。
 
-This functionality removes the need for previously used workarounds, such as: - TIN is now the multipart of a triangle - There is no need to convert a polyhedral surface or a TIN to a multipolygon when importing these data types from PostGIS.
+この機能により、以前使用されていた回避策が不要になります: - TINはトライアングルのマルチパートになりました - PostGISからこれらのデータタイプをインポートする際に多面体サーフェスやTINをマルチポリゴンに変換する必要がなくなりました。
 
-This feature was funded by CEA/DAM, CP4SC, Oslandia
+この機能は CEA/DAM, CP4SC, Oslandia の資金提供で開発されました
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 ## QGISサーバー
-### Feature: WFS title definition for layers
-Implemented to service [\#55317](https://github.com/qgis/QGIS/issues/55317), layers now have an additional WFS Title server metadata property to allow users to differentiate between different layer collections on layers served via WFS with QGIS Server.
+### 機能: レイヤ用WFS タイトル定義
+ [\#55317](https://github.com/qgis/QGIS/issues/55317) に対応するため、レイヤーにWFS Titleサーバーメタデータプロパティが追加されました。これにより、ユーザーがQGIS ServerでWFSを通じて提供されるレイヤーの異なるレイヤーコレクションを区別できるようになります。
 
 This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
 ## プログラム可能
-### Feature: Exceptions raised on QgsDistanceArea methods
-A QgsCsException is now raised when errors occur within QgsDistanceArea methods to prevent misleading analysis results and properly handle error propagation throughout the application
+### 機能: QgsDistanceAreaメソッドで例外を発生
+ 誤解を招く解析結果を防ぎアプリケーション全体でエラーの伝播を適切に処理するため、QgsDistanceArea メソッド内でエラーが発生した際に QgsCsException が発生するようになりました。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Convert QgsRasterLayer to NumPy Array
-Developed in partial fulfillment of [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), QGIS now includes a new `as_numpy` method on `QgsRasterLayer` objects in PyQGIS which allow for the easy conversion of a raster layer to NumPy array for improved integration processes and improved analysis of raster data using NumPy (Note that the NumPy library is an optional dependency not shipped with the QGIS Application).
+### 機能: QgsRasterLayerのNumPy配列への変換
+ [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) の一部として開発され、QGISがPyQGISの QgsRasterLayer オブジェクトに新しい as_numpy メソッドを追加しました。これによりラスターレイヤーをNumPy配列に簡単に変換でき、統合プロセスの改善とNumPyを使用したラスターデータの分析が向上します（NumPyライブラリはQGISアプリケーションに同梱されていないオプションの依存関係であることに注意してください）。
 
-This feature was developed by [Till Frankenbach](https://github.com/merydian)
-### Feature: Convert QgsGeometry to Shapely and NumPy
-Developed in partial fulfillment of [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), QGIS now includes `as_numpy` and `as_shapely` methods on `QgsGeometry` objects in PyQGIS which allow for the easy conversion of a geometry to a (list of) NumPy array(s) or Shapely object(s) for improved integration processes (Note that the relevant libraries are optional dependencies not shipped with the QGIS Application).
+この機能は [Till Frankenbach](https://github.com/merydian) によって開発されました
+### 機能: QgsGeometryのShapelyおよびNumPyへの変換
+ [QEP 227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) の一部として開発され、QGISがPyQGISの QgsGeometry オブジェクトに `as_numpy` および `as_shapely` メソッドを追加しました。これによりジオメトリをNumPy配列（のリスト）またはShapelyオブジェクト（のリスト）に簡単に変換でき、統合プロセスが向上します（関連ライブラリはQGISアプリケーションに同梱されていないオプションの依存関係であることに注意してください）。
 
-This feature was developed by [Till Frankenbach](https://github.com/merydian)
+この機能は [Till Frankenbach](https://github.com/merydian) によって開発されました
 ## 注目すべき修正
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.34 backport commit (GitHub) |
@@ -787,7 +800,7 @@ This feature was developed by [Mathieu Pellerin (OPENGIS)](https://www.opengis.c
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
-### Feature: Bug fixes by Germán Carrillo (OPENGIS)
+### 機能: Germán Carrillo (OPENGIS) によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Scale dependent visibility inconsistencies on scale interval edges (symbology, labeling, diagrams) | [#58150](https://github.com/qgis/QGIS/issues/58150) <br> [#42443](https://github.com/qgis/QGIS/issues/42443) | [PR #58968](https://github.com/qgis/QGIS/pull/58968) <br> [PR #59022](https://github.com/qgis/QGIS/pull/59022) | N/A |

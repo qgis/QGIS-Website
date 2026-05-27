@@ -9,7 +9,7 @@ Uitgedaagd door de taak om voor de eerste keer op GIS gebaseerd te modelleren, v
 ## Methodologie
 Alle verzamelde gegevens werden verwerkt met QGIS 2.6 en 2.8, geprojecteerd in ETRS89 / ETRS-LAEA en opgeslagen conform de richtlijn van INSPIRE om te voldoen aan de standaarden van de EU. Een overall **discrete index of weights** werd gedefinieerd en toegepast op alle ingevoerde gegevens.
 
-![Figure 1: Workflow - Lynx habitat expert model](./images/europe_lynx1.png)
+![Afbeelding 1: Werkstroom - Lynx woonomgeving expertmodel](./images/europe_lynx1.png)
 
 **Beschrijving werkstroom**
 - Gebied van interesse \[Stap I – II\]: gebaseerd op geselecteerde gebieden van nationale parken en een buffer van 10 kilometer toegevoegd, er werd een minimaal begrenzingsvak \[α\] gemaakt en afgesneden op de omtrek van de rivier Donau (afgeleid van Corine Land Cover 2006). Verdere gereedschappen voor afsnijden \[β\] werden toegepast op alle aanvullende gegevens als een initieel voorbereidende stap (Afbeelding 2)
@@ -45,7 +45,7 @@ Alle verzamelde gegevens werden verwerkt met QGIS 2.6 en 2.8, geprojecteerd in E
     
 *Opmerking: De Hunter Accessibility Model zal de afnemende waarschijnlijkheid aangeven dat jagers het gebied betreden bij toenemende afstand tot wegen en steilere hellingen*
 
-![Figure 2, 3 and 4](./images/europe_lynx2.png)
+![Afbeelding 2, 3 en 4](./images/europe_lynx2.png)
 ## Conclusie
 Kijkend naar de uiteindelijke uitvoer (Afbeelding 3),leek een eerste potentiële analyse van de habitat succesvol te zijn, maar meer belangrijk, het basis modelleren zelf bleek achteraf minder moeilijk dan initieel werd ver3wacht. Onze keuze om een sub-model voor toegankelijkheid voor jagers toe te voegen stelde ons in staat een andere dimensie te implementeren in termen van beoordeling van risico's voor de habitat, die eenvoudig kan worden genest binnen het reeds bestaande scenario en kan worden gebruikt om benodigde beschermingsmaatregelen te bepalen onder aspecten van bijv. infrastructurele ontwikkeling. Echter, enige cruciale informatie over de habitat, zoals bosstructuur (onze hoogste geschiktheid voor de habitat) kan niet worden afgeleid uit beschikbare gegevenssets en in combinatie met het complexe gedrag van de soort, moet het resultaat daarom worden begrepen als basis en niet volledig. Op dit moment nog niet geïmplementeerde aanvullende factoren zijn sterftecijfers op wegen, ruwheid van het terrein en gedetailleerd voorkomen van prooi.
 

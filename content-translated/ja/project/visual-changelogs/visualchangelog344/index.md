@@ -321,7 +321,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 <img src="images/entries/3fefddf7d32b70bf849e390847eca7904ca85ea0.png" class="img-responsive img-rounded" />
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch)
+この機能は [the QGIS user group Switzerland](https://qgis.ch) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ## 分析ツール
@@ -531,7 +531,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 ### 機能: ShapelyジオメトリをQGISジオメトリに変換するメソッドの追加
  [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) に沿って、ShapelyをオプションのI依存関係として維持しながらshapelyジオメトリライブラリとの統合を向上させるため、shapelyオブジェクトからQgsGeometryオブジェクトを生成する新しい QgsGeometry.from_shapely() メソッドが提供されました。
 
-This feature was developed by [Till Frankenbach](https://github.com/merydian)
+この機能は [Till Frankenbach](https://github.com/merydian) によって開発されました
 ### 機能: QGIS GPSツールのPython APIとプラグインへの公開
 GPSツールクラスが `QgisInterface::gpsTools()` を通じてアクセスできる新しい `QgsAppGpsTools` クラスとしてPyQGIS APIで利用可能になり、プラグインがQGIS GPSトラッキングセッションをより細かく制御できるようになりました。
 

@@ -358,7 +358,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 このリリースでは  `as_numpy` が変更され、Z値および/またはM値を持つジオメトリの座標がそれぞれxyz、xym、またはxyzmとして返されるようになりました。
 
-This feature was developed by [Till Frankenbach](https://github.com/merydian)
+この機能は [Till Frankenbach](https://github.com/merydian) によって開発されました
 ### 機能: Pythonコンソールのインタラクティブヘルプ
 Pythonコンソール内でF1キーを押すと、QGISは対応するAPIページを自動的に開きます
 - 選択テキストがある場合はそれを使用、なければ

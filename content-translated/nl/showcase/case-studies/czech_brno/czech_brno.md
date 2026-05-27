@@ -26,7 +26,7 @@ QGIS wordt gebruikt met synergie naar andere producten van open bron. Bijvoorbee
 
 QGIS is ook een fantastisch onderwijskundig gereedschap. College of Business and Hotel Management biedt studenten onderwerpen als "Geographical Information Systems I. and II." of "Selected chapters from geoinformatic literacy" waar QGIS wordt gebruikt als belangrijkste platform om studenten te leren hoe GIS te gebruiken en hoe kaarten van hoge kwaliteit te maken. Recent werd QGIS gebruikt als belangrijkste product gedurende de GIS-dag die op onze school werd gehouden in november 2010.
 
-![Using diagrams comparing population between two censuses](./images/czech_brno2.jpg){.align-right}
+![Diagrammen gebruiken voor de vergelijking van twee populaties tussen twee bevolkingsonderzoeken](./images/czech_brno2.jpg){.align-right}
 ## Conclusie
 With no cost and high efficiency the Laboratory on Experimental and Applied Geography produces high-quality analysis, maps and visualizations. Using QGIS large databases are being created and further testing of new functions are being done. Finally, one of the highest impact of using QGIS could be seen in education \-\-- QGIS is the first software, which is presented to students. During regular workshops students learn how to legally work with QGIS and how to create their own maps.
 ## Auteur

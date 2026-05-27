@@ -82,7 +82,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Ondersteuning voor CSS-marges voor blokelementen in HTML-labels
 QGIS heeft ondersteuning toegevoegd voor eigenschappen voor CSS-margin voor blockelementen in de tekstrenderer. Specifiek:
 - Dit is alleen beschikbaar voor elementen van het type block, bijv. DIV, P, H1-H6.
-- Marges zij NIET beschikbaar voor spans of andere inhoud dat geen block is (wegens beperkingen van Qt)
+- Marges zijn NIET beschikbaar voor spans of andere inhoud die geen block is (wegens beperkingen van Qt)
 - Marges mogen alleen worden gespecificeerd in eenheden pt units
 - Marges mogen worden gespecificeerd ofwel via "margin-left: 5pt; margin-right: 10pt" etc, of "margin: 5pt 0pt 10pt 0pt"
 - Negatieve marges worden ALLEEN ondersteund voor de ondermarge (wegens beperkingen van Qt)
@@ -99,58 +99,58 @@ Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Mazen
-### Feature: Mesh Render Extent Settings
-The renderer setting for Mesh now includes an option for setting the Min/Max limits of the Color Ramp renderer based on the current canvas extent. This can be locked to a specific canvas instance or changed based on the active canvas using the same rendering behaviors as Raster Layers.
+### Mogelijkheid: Instellingen renderbereik van lagen met mazen
+De instelling voor de renderer van lagen met mazen bevat nu een optie voor het instellen van de limieten Min/Max voor de renderer Kleurenbalk, gebaseerd op het huidige bereik van het kaartvenster. Dat kan worden vergrendeld naar een specifieke instantie van het kaartvenster of worden gewijzigd, gebaseerd op het actieve kaartvenster, met hetzelfde gedrag voor renderen als rasterlagen.
 
 ![](images/entries/36f92b26c173dbaddf798eb572e795a1759b2b5e.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Mesh editing delaunay refinement
-Mesh editing now includes a new Delaunay refinement option. When adding a vertex to a mesh face, this feature allows for the automatic refinement of neighboring triangular faces. The algorithm checks if the edges of these adjacent faces meet the Delaunay condition, and if not, it automatically flips the edges to improve the mesh quality.
+### Mogelijkheid: Lagen met mazen bewerken met verfijning Delaunay
+Bewerken van lagen met mazen bevat nu een nieuwe optie voor verfijnen met Delaunay. Bij het toevoegen van een punt aan een zijde van een maas stelt deze mogelijkheid u in staat de naburige driehoekige zijden automatisch te verfijnen. Het algoritme controleert of de randen van deze aanliggende zijden voldoen aan de voorwaarde voor Delaunay, en als dat niet zo is, spiegelt het de randen automatisch om de kwaliteit van de maas te verbeteren.
 
 ![](images/entries/80bfb4d962708d894f5ae8735a8cf19d5de14dad.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Dataset group controls for mesh layers
-Mesh layers now offer more flexible dataset group management. Users can add dataset groups with the same name (though not from the same URI) to a mesh layer. To avoid confusion, these duplicate names will be automatically appended with a number (e.g., "Original Name\_1").
+### Mogelijkheid: Besturingselementen groep gegevensset voor laag met mazen
+Lagen met mazen bieden nu meer flexibel beheer van groepen in de gegevensset. Gebruikers kunnen groepen voor de gegevensset toevoegen met dezelfde naam (echter niet vanuit dezelfde URI) aan een laag met mazen. Om verwarring te vermijden tussen deze duplicate namen zal automatisch een getal worden toegevoegd (bijv. "Originele naam\_1").
 
-Additionally, users can now remove dataset groups from a mesh layer, however, only added dataset groups (those not associated with the original mesh source file) can be removed, preventing accidental deletion of core data.
+Aanvullend kunnen gebruikers nu groepen van de gegevensset verwijderen uit een laag met mazen. Echter, alleen toegevoegde groepen voor de gegevensset (niet die welke zijn geassocieerd aan het originele bronbestand voor de mazen) kunnen worden verwijderd, wat het per ongeluk verwijderen van brongegevens voorkomt.
 
 ![](images/entries/dc92e7714bf34361837b67c23cd3faf1ea5bb797.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Mesh selection actions
-Two new actions have been added for selecting vertices on Mesh layers, namely:
-- select isolated vertices that are not part of any face
-- select all vertices from mesh layer
+### Mogelijkheid: Acties voor selecteren van mazen
+Twee nieuwe acties zijn toegevoegd voor het selecteren van punten in lagen met mazen, namelijk:
+- selecteer geïsoleerde punten die geen deel van een zijde zijn
+- selecteer alle punten uit de laag met mazen
 
-This allows users more control over the selection criteria of specific vertices.
+Dit geeft gebruikers meer beheer over de selectiecriteria voor specifieke punten.
 
 ![](images/entries/537402aa2d62c6db821d0f6eea457785adfbfc86.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Elevation assignment modes for added mesh vertices
-The "Digitize Mesh Element" tool has an additional menu that allows users to select which method to utilize for the assignment of Z values on newly created vertices. New options include:
-- Prefer Mesh, then Z Widget (interpolates z value from mesh if a vertex is inside face of mesh, otherwise uses Z widget value)
-- Prefer Mesh, then Terrain (interpolates z value from mesh if a vertex is inside face of mesh, otherwise uses terrain value)
-- Project Terrain (always uses project terrain Z value)
-- Z Widget (always get Z values from widget)
+### Mogelijkheid: Modi voor toewijzen hoogte voor toegevoegde punten in lagen met mazen
+Het gereedschap "Elementen voor mazen digitaliseren" heeft een aanvullend menu dat gebruikers in staat stelt te selecteren welke methode te gebruiken voor het toewijzen van waarden Z op nieuw gemaakte punten. Nieuwe opties bevatten:
+- Voorkeur mazen, dan widget Z (interpoleert waarde Z uit mazen als een punt binnen de zijde van een maas ligt, anders gebruikt het de waarde van de widget Z)
+- Voorkeur mazen, dan terrein (interpoleert waarde Z uit mazen als een punt binnen de zijde van een maas ligt, anders gebruikt het de terreinwaarde)
+- Project Terrein (gebruikt altijd projectterrein waarde Z)
+- Widget Z (gebruikt altijd waarden Z uit de widget)
 
-The "Transform Mesh Vertices" panel also has a new button added that allows users to set the Z value of selected vertices from inferred values based on the project terrain settings.
+Het paneel "Punten mazen transformeren" heeft ook een nieuwe knop gekregen die het mogelijk maakt dat gebruikers de waarde Z instellen voor geselecteerde punten uit afgeleide waarden, gebaseerd op de instellingen van het projectterrein.
 
 ![](images/entries/134e4b88cb478ff8c1d72fc1eb35cf873e416ab4.png.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## 3D-objecten
-### Feature: Debug widget for 3D views
-A new debug side panel for 3D Map Views moves all relevant debug settings into a single location.
+### Mogelijkheid: Widget Debuggen voor 3D-weergaven
+Een nieuw zijpaneel voor debuggen voor 3D-kaartweergaven verplaatst alle relevante instellingen voor debuggen naar een enkele locatie.
 
 ![](images/entries/b676f80f03eeac81a44dd5d95c21a1dd1d968d42.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Matej Bagar](https://github.com/Withalion)
 ## Puntenwolken
-### Feature: Virtual point cloud overviews in 2D
-The default behavior of VPC rendering has been changed so that an overview is rendered when present and alternatively extents are rendered when zooming out. Layer configuration via the styling panel provides advanced control over the user-preferred behavior, allowing users to seamlessly switch between rendering just the extents, just the overview, or a combination of the two.
+### Mogelijkheid: Overzichten virtuele puntenwolken in 2D
+Het standaardgedrag van het renderen van virtuele puntenwolken is gewijzigd, zodat, indien aanwezig, een overzicht wordt gerenderd en als alternatief bereiken worden gerenderd bij uitzoomen. Configureren van lagen via het paneel Laag opmaken verschaft geavanceerd beheer over het gebruikergedefinieerde gedrag, wat gebruikers de mogelijkheid geeft om naadloos te schakelen tussen tussen renderen van slechts de bereiken, slechts het overzicht, of een combinatie van die twee.
 
 ![](images/entries/76df45b4beff919f1428f39e13370c5bd48facb1.png.webp)
 
@@ -158,69 +158,69 @@ Dit werd mogelijk gemaakt door Klimadatastyrelsen
 
 Deze mogelijkheid werd ontwikkeld door [Matej Bagar](https://github.com/Withalion)
 ## Afdruklay-outs
-### Feature: Double-clicking a mouse handle for a layout label resizes to fit text
-Double-clicking a handle will auto-size the label to fit exactly within the contained text (growing or shrinking as needed). The opposite side of the label will remain fixed in place so that, for example, double-clicking the bottom-right handle causes the bottom-right corner of the label to move.
+### Mogelijkheid: Dubbelklikken op een handvat voor een lay-outlabel past dat aan om de tekst te laten passen
+Dubbelklikken op een handvat zal het label automatisch zo op grootte maken dat de opgenomen tekst exact in het label past (groeien of krimpen waar nodig). De tegenoverliggende zijde van het label zal vast op zijn plaats blijven, zodat bijvoorbeeld dubbelklikken op het handvat rechtsonder ervoor zorgt dat de rechterbenedenhoek van het label verplaatst.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Action on double click layout item
-The QGIS API has been extended to add an event to Print Layout elements that are double-clicked, allowing for more advanced functionalities to be introduced in the future (e.g. double-click to edit an item).
+### Mogelijkheid: Actie bij bubbelklikken op lay-outitem
+De QGIS API is uitgebreid om een gebeurtenis toe te voegen voor elementen van Afdruklay-out waarop dubbel wordt geklikt. Wat het mogelijk maakt dat in de toekomst meer geavanceerde functionaliteiten worden geïntroduceerd (bijv. dubbelklikken om een item te bewerken).
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
-### Feature: Layout better node item creation
-When digitizing shapes with layout tools, the behavior has been modified to align better with the existing user experience in digitizing tools, which allows users the ability to remove incorrectly captured vertices on their shapes.
+### Mogelijkheid: Lay-out beter maken van item knoop
+Bij het digitaliseren van vormen met gereedschappen van lay-out is het gedrag aangepast om beter uit te lijnen met de bestaande gebruikservaring in gereedschappen van Digitaliseren. Wat gebruikers de mogelijkheid geeft om onjuist vastgelegde punten in hun vormen te verwijderen.
 
 ![](images/entries/65a754c47bc5d678e9716fc168d3802a96b04a2e.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
-### Feature: Apply layout page size to all pages
-A new "Apply to all Pages" button has been added to the Page Properties panel for multi-page layouts so that users can more efficiently make changes to complex layout properties.
+### Mogelijkheid: Paginagrootte lay-out toepassen op alle pagina's
+Een nieuwe knop "Op alle pagina's toepassen" is toegevoegd aan het paneel Pagina-eigenschappen voor lay-outs met meerdere pagina's, zodat gebruikers efficiënter wijzigingen kunnen maken aan complexe eigenschappen voor lay-out.
 
 ![](images/entries/17edee9a6187866ed824fe92134f088e32327056.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
-### Feature: New quality parameter for layout JPG exports
-A new quality parameter has been added to the JPEG/JPG Image export options within print layouts to provide users more control of their export options.
+### Mogelijkheid: Nieuwe kwaliteitsparameter voor exporteren van lay-out naar JPG
+Een nieuwe kwaliteitsparameter is toegevoegd aan de opties voor exporteren naar JPEG/JPG-afbeelding in afdruklay-outs om gebruikers beter beheer over hun opties voor exporteren te geven.
 
 ![](images/entries/ddc1fa979771c938ec22dabcadefda2cd79aa96b.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Digitaliseren
-### Feature: Highlight Trim/Extend plane of intersection
-The styling and behavior for the Trim/Extend functionality has been modified to more closely align with the UX of the Advanced Digitizing tools so that geometry limits are more clearly represented to users visually.
+### Mogelijkheid: Accentueren afbreken/uitbreiden kruisingsvlak
+De opmaak en het gedrag voor de functionaliteit Afbreken/Uitbreiden is aangepast om beter te worden uitgelijnd met de gebruikservaring van de gereedschappen Geavanceerd digitaliseren, zodat grenzen van geometrieën visueel duidelijker worden weergegeven aan gebruikers.
 
 ![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Gegevensbeheer
-### Feature: Enable snapping in Georeferencer
-The advanced digitizing panel and snapping options have been added to the georeferencer interface to offer users more control over reference points when aligning datasets.
+### Mogelijkheid: Snappen inschakelen in de Georeferencer
+Het paneel Geavanceerd digitaliseren en opties voor Snappen zijn toegevoegd aan de interface Georeferencer om gebruikers beter beheer te geven over referentiepunten bij het uitlijnen van gegevenssets.
 
 ![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
-### Feature: Data Source Manager STAC enhancements
-Building on the STAC Client capabilities introduced in QGIS 3.40 as a part of [QEP\#300](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/300), the QGIS STAC client now supports additional functionalities including:
-- STAC Catalog search functionality within the Data Source Manager
-- Advanced filtering for returned results
-- Display or hide footprints of the search results items in the map canvas
-- Highlight the selected item's footprint
+### Mogelijkheid: Verbeteringen STAC in Databronnen beheren
+Doorbouwend op de mogelijkheden voor de STAC Cliënt, die werden geïntroduceerd in QGIS 3.40 als een deel van [QEP\#300](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/300), ondersteunt de QGIS STACcliënt nu aanvullende functionaliteiten inclusief:
+- STAC Catalog functionaliteit voor zoeken binnen Databronnen beheren
+- Geavanceerd filteren voor teruggegeven resultaten
+- Weergeven of verbergen van voetafdrukken van de items van de zoekresultaten in het kaartvenster
+- Accentueren van de voetafdruk van het geselecteerde item
 
 ![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ## Formulieren en widgets
-### Feature: Additional sorting options on value relation widget
-The value relation widget now includes a few new sorting options, including:
-- reverse order
-- order by a specific field
+### Mogelijkheid: Aanvullende opties voor sorteren voor widget Waarderelatie
+De widget Waarderelatie bevat nu een aantal nieuwe opties voor sorteren, inclusief:
+- omgekeerde volgorde
+- volgorde op een specifiek veld
 
 ![](images/entries/ea40b733da3f998b83590ce985986cf8438fe2d7.webp)
 
 Dit werd mogelijk gemaakt door Consorzio della Bonifica Renana
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Copy and paste widget configuration when designing forms
-A context menu has been added to the `Available Widgets` panel in the vector layer properties dialog, allowing users to copy & paste widget configurations between fields of the same layer, between fields from different layers in the QGIS project, or between fields from layers in different QGIS instances.
+### Mogelijkheid: Configuratie voor widget kopiëren en plakken bij ontwerpen van formulieren
+Een contextmenu is toegevoegd aan het paneel `Beschikbare widgets` in het dialoogvenster Laageigenschappen voor vectors. Dat maakt het voor gebruikers mogelijk configuraties van widgets te kopiëren en te plakken tussen velden van dezelfde laag, tussen velden van verschillende lagen in het project van QGIS, of tussen velden uit lagen in verschillende instanties van QGIS.
 
 ![Copy and paste context menu](images/entries/copy_paste_widget_configuration.webp)
 
@@ -228,108 +228,108 @@ Dit werd mogelijk gemaakt door Ville de Pully (Switzerland)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Processing
-### Feature: Processing metadata tools
-New native algorithms have been added to the processing toolbox for better handling of layer metadata.
-- Copy layer metadata to copy metadata from an input layer to a target layer
-- Apply layer metadata to set layer metadata from a QMD file
-- Export layer metadata to export layer metadata in a QMD file
-- Add history metadata to add a new history entry to existing entries defined for a layer
-- Update layer metadata to copy non-empty metadata fields from the input layer to a target layer and keep empty fields from input unchanged in the target
-- Set metadata fields to set simple metadata fields (identifier, parent identifier, title, type, encoding, language, CRS, abstract, fees)
+### Mogelijkheid: Processing gereedschappen voor metadata
+Nieuwe eigen algoritmes zijn toegevoegd aan de Toolbox van Processing voor het beter afhandelen van metadata van lagen.
+- Kopieer metadata van een laag om metadata van een invoerlaag naar een doellaag te kopiëren
+- Pas metadata van een laag toe om metadata voor een laag in te stellen uit een bestand QMD
+- Exporteer metadata van een laag om metadata voor een laag in een bestand QMD te exporteren
+- Voeg geschiedenis van metadata toe om een nieuw item voor geschiedenis toe te voegen aan bestaande items die zijn gedefinieerd voor een laag
+- Werk metadata voor een laag bij om niet-lege velden van metadata uit de invoerlaag te kopiëren naar een doellaag en behoud de lege velden uit de invoer ongewijzigd in het doel
+- Stel velden voor metadata in om eenvoudige velden voor metadata in te stellen (identificatie, ouderidentificatie, titel, type, codering, taal, CRS, abstract, kosten)
 
 ![](images/entries/a61da0150028588dafa6e2fb98c0f71d628bdd29.png.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Expression based hover content in Scatterplots
-New options for the Vector layer scatterplot processing algorithm allow users to optionally add text shown on hover using QGIS expressions.
+### Mogelijkheid: Op expressie gebaseerd over inhoud gaan in verspreidingsplots
+Nieuwe opties voor het Processing algoritme Verspreidingsplot vectorlaag maakt het voor gebruikers mogelijk om optioneel tekst toe te voegen met expressies van QGIS die wordt weergegeven als er met de muis overheen wordt gegaan.
 
 ![](images/entries/43b93ee8f5a7632654207f5d31345ea9a66ec538.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Florian Neukirchen](https://github.com/florianneukirchen)
-### Feature: Add option to include 'layer' and 'path' attributes in Merge Vector Layers tool
-A new checkbox option has been added to the Merge Vector Layers processing tool. This option allows users to choose whether to include the layer and path attributes from the individual input vector layers in the resulting merged layer. By default, this option is enabled to maintain backward compatibility.
+### Mogelijkheid: Optie toegevoegd om attributen 'laag' en 'pad' op te nemen in gereedschap Vectorlagen samenvoegen
+Een nieuw keuzevak is toegevoegd aan het gereedschap voor processing Vectorlagen samenvoegen. Deze optie geeft gebruikers de mogelijkheid om ervoor te kiezen de attributen laag en pad uit de individuele invoervectorlagen op te nemen in de resulterende samengevoegde laag. Standaard is deze optie ingeschakeld om achterwaartse compatibiliteit te behouden.
 
 Deze mogelijkheid werd ontwikkeld door [Nass](https://github.com/lanckmann)
-### Feature: Move Geometry Checker into processing tools
-In line with the objectives of [QEP\#236](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/236), which seeks to align and unify all geometry and topology verification/ validation methods, the Geometry Checker has now been integrated into the QGIS Processing Toolbox.
+### Mogelijkheid: Geometry Checker verplaatst naar gereedschappen van Processing
+In lijn met de doelen van [QEP\#236](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/236) dat ernaar streeft om alle methoden voor verificatie/validatie van topologie op elkaar af te stemmen en te uniformeren, is de Geometry Checker nu geïntegreerd in de Toolbox van QGIS Processing.
 
-These algorithms have been added to the "Check Geometry" and "Fix Geometry" categories accordingly, and each algorithm maintains a consistent experience having a single input layer and two output layers.
+Deze algoritmes zijn overeenkomstig toegevoegd aan de categorieën "Geometrie controleren" en "Geometrie repareren", en elk algoritme onderhoudt een consistente ervaring met een enkele invoerlaag en twee uitvoerlagen.
 
-For check processing algorithms, the outputs are:
-- a layer of the same type as the input layer with erroneous geometries only
-- a point layer with the error locations and information (feature id, part, and vertex number, etc.)
+Voor Processing algoritmes voor controleren is de uitvoer:
+- een laag van hetzelfde type als de invoerlaag met alleen foutieve geometrieën
+- een puntenlaag met de locaties van de fouten en informatie (object-ID, deel en nummer punt, etc.)
 
-For fix processing algorithms, the outputs are:
-- a fixed layer of the same type as the input layer with corrected features according to the the chosen method
-- a point layer with the error locations and a report about the fix (fixed or not, and a message about the processed feature)
+Voor Processing algoritmes voor repareren is de uitvoer:
+- een vaste laag van hetzelfde type als de invoerlaag, met gecorrigeerde objecten overeenkomstig de gekozen methode
+- een puntenlaag met de locaties van de fouten en rapport over de reparatie (gerepareerd of niet en een bericht over het verwerkte object)
 
 ![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png.webp)
 
 Dit werd mogelijk gemaakt door QGIS (Grant OpenSource 2023) and Oslandia
 
 Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://github.com/Djedouas)
-### Feature: Add title, axis titles, and logarithmic axes to plots
-Plotting algorithms in the "Plots" section of the Processing Tools have been extended with new functionalities.
+### Mogelijkheid: Titel, astitels en logaritmische assen aan plots toegevoegd
+Algoritmes voor plotten in het gedeelte "Plotten" van de gereedschappen van Processing zijn uitgebreid met nieuwe functionaliteiten.
 
-The Scatterplot, Barplot, and Boxplot algorithms now allow for the specification of plot titles as well as axis titles as optional parameters, If axis titles are empty, the name of the field is used as the axis title by default.
+De algoritmes Verspreidingsplot, Plot Balkenplot en Boxplot staan nu het specificeren van plottitels toe, alsook astitels als optionele parameters. Als astitels leeg zijn, wordt standaard de naam van het veld gebruikt als de astitel.
 
-If a single space is entered, the axis title is not shown (restoring the current behavior).
+Wanneer een enkele spatie wordt ingevoerd, wordt de astitel niet weergegeven (herstelt het huidige gedrag).
 
-Scatterplots now also support using logarithmic scales across either axis.
+Verspreidingsplots ondersteunen nu ook het gebruik van logaritmische schalen op hun assen.
 
 ![](images/entries/5c84aa9c7e5fc0f4dcf6ba72b6f721a10380777a.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Florian Neukirchen](https://github.com/florianneukirchen)
-### Feature: Raster zonal min/max algorithm
-A new algorithm has been added that extracts point features corresponding to the minimum and maximum pixel values contained within polygon zones.
+### Mogelijkheid: Algoritme Min/max rastergebied
+Een nieuw algoritme is toegevoegd dat objecten punt uitneemt, corresponderend met de minimale en maximale pixelwaarden die binnen gebieden van polygonen zijn opgenomen.
 
-The output will contain one point feature for the minimum and one for the maximum raster value for every individual zonal feature from a polygon layer.
-
-Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Algorithm to extract min/max pixel from raster
-A new algorithm has been added that extracts extrema (minimum and maximum) values from a given band of the input raster layer.
-
-The output is a vector layer containing point features for the selected extrema, at the center of the associated pixel.
-
-If multiple pixels in the raster share the minimum or maximum value, then only one of these pixels will be included in the output.
-
-The algorithm uses raster iterator to remain efficient on huge rasters, and does not require reading the entire raster to memory
+De uitvoer zal een object punt bevatten voor de minimale rasterwaarde en een voor de maximale rasterwaarde voor elk individueel gebiedsobject uit een polygonenlaag.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: New algorithm to generate elevation profile images
-A new processing algorithm has been created which allows users to generate elevation profile images. This can effectively be used within models and will allows users to efficiently output elevation profiles for multiple curves.
+### Mogelijkheid: Algoritme om min/max pixel uit raster te nemen
+Een nieuw algoritme is toegevoegd dat extreme waarden (minimum en maximum) uitneemt uit een opgegeven band van de invoerrasterlaag.
+
+De uitvoer is een vectorlaag die objecten punt bevat voor de geselecteerde extremen, op het middelpunt van de geassocieerde pixel.
+
+Als meerdere pixels in het raster de minimale of maximale waarde delen, dan zal slechts een van deze pixels in de uitvoer worden opgenomen.
+
+Het algoritme gebruikt een rasterdoorloop om efficiënt te blijven in grote rasters en hoeft niet het gehele raster naar het geheugen te lezen
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Nieuw algoritme om afbeeldingen van hoogteprofielen te maken
+Een nieuw algoritme voor Processing is gemaakt dat gebruikers de mogelijkheid geeft afbeeldingen van hoogteprofielen te maken. Dit kan effectief worden gebruikt binnen modellen en zal gebruikers in staat stellen om efficiënt hoogteprofielen voor meerdere bogen uit te voeren.
 
 ![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: New Mesh: Surface to Polygon Algorithm
-A new processing algorithm has been added for Mesh datasets that exports a surface of the mesh to a MultiPolygon output.
+### Mogelijkheid: Nieuw algoritme mazen: Oppervlak naar polygoon
+Een nieuw algoritme voor Processing is toegevoegd voor een gegevensset met lagen met mazen die een oppervlak van de mazen exporteert naar een uitvoer-MultiPolygoon.
 
 ![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Profiel plotten
-### Feature: Introduce custom tolerance for vector layers
-Users can define a custom tolerance by adding a `custom tolerance` property to the layer elevation properties. When set, this will override the global tolerance parameter defined in the elevation profile widget.
+### Mogelijkheid: Introduceren van een aangepaste tolerantie voor vectorlagen
+Gebruikers kunnen een aangepaste tolerantie definiëren door een eigenschap `custom tolerance` toe te voegen aan de hoogte-eigenschappen van de laag. Indien ingesteld, zal dit de globale parameter tolerantie overschrijven die is gedefinieerd in de widget Hoogteprofiel.
 
 ![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Gegevensproviders
-### Feature: Execute SQL from layer context menu
-Users can now execute SQL directly across supported layers from within the projects table of contents.
+### Mogelijkheid: SQL uitvoeren vanuit contextmenu laag
+Gebruikers kunnen nu SQL direct uitvoeren op ondersteunde lagen vanuit de inhoudsopgave van het project.
 
 ![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Jürgen Fischer](https://github.com/jef-n)
-### Feature: Postgres raster provider - save raster style db
-This PR allows saving raster styles in PostGIS database.
+### Mogelijkheid: Postgres rasterprovider - opslaan rasterstijl database
+Dit PR staat opslaan van rasterstijlen in database van PostGIS toe.
 
 Dit werd mogelijk gemaakt door Ocean Winds.
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: PostgreSQL/PostGIS data provider - hide raster overviews
-Ads option to PostGIS Connection to not list raster overview tables from Browser. The list of raster overviews tables is obtained from PostGIS view raster_overviews.
+### Mogelijkheid: PostgreSQL/PostGIS gegevensprovider - rasteroverzichten verbergen
+Voegt een optie toe aan verbinding van PostGIS om geen overzicht van tabellen uit Browser te geven. De lijst van tabellen rasteroverzicht wordt verkregen uit de view van PostGIS raster_overviews.
 
 ![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd.webp)
 
@@ -337,8 +337,8 @@ Dit werd mogelijk gemaakt door Ocean Winds.
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Plug-ins
-### Db manager table comment multiline
-Makes table comments in DB Manager multiline (turning original QLineEdit to QTextEdit)). Also fixes one minor error, where the comment was not properly updated on second open of the "Table properties" window.
+### Databronnen beheren Tabelopmerking meerregelig
+Maakt tabelopmerkingen in Databronnen beheren meerregelig (maakt van originele QLineEdit een QTextEdit). Repareert ook een klein foutje waarbij de opmerking niet goed werd bijgewerkt bij het voor de tweede keer openen van het venster "Tabeleigenschappen".
 
 ![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae.webp)
 
@@ -348,25 +348,25 @@ Dit werd mogelijk gemaakt door Ocean Winds.
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Programmeerbaarheid
-### Feature: Expose QgsGeos class to PyQGIS
-GEOS-specific functionality which is not exposed through the base QgsGeometryEngine class is now directly accessible via the new QgsGeos class.
+### Mogelijkheid: Klasse QgsGeos weergeven in PyQGIS
+GEOS-specifieke functionaliteit die niet wordt weergegeven door de basisklasse QgsGeometryEngine is nu direct toegankelijk via de nieuwe klasse QgsGeos.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Make Z and M values accessible via QgsGeometry.as\_numpy()
-In previous versions of QGIS, the `QgsGeometry.as_numpy()` method would return coordinates with XY values only.
+### Mogelijkheid: Maak waarden Z en M toegankelijk via QgsGeometry.as\_numpy()
+In eerdere versies van QGIS zou de methode `QgsGeometry.as_numpy()` alleen coördinaten teruggeven met waarden XY.
 
-In this release `as_numpy` has been modified so that the coordinates for geometries with z and/or m values will be returned as xyz, xym, or xyzm accordingly.
+In deze uitgave is `as_numpy` anagepast, zodat de coördinaten voor geometrieën met waarden X en/of M zullen worden overeenkomstig teruggegeven als XYZ, XYM of XYZM.
 
 Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
-### Feature: Python console interactive help
-When pressing F1 within the Python Console, QGIS will automatically open the API page matching:
-- selected text if any OR
-- word at the mouse position (if enabled in settings, see below) OR
-- word at the text cursor position
+### Mogelijkheid: Python-console interactieve help
+Door in de Python-console te drukken op F1 zal QGIS automatisch de pagina van de API openen die overeenkomt met:
+- geselecteerde tekst, indien aanwezig OF
+- woord op de positie van de muis (indien ingeschakeld in de instellingen, zie hieronder) OF
+- woord op de positie van de tekstcursor
 
-The documentation will be opened within the new documentation section that has been added to the Debugging and Development tools panel so that developers can have easy access to the API documentation for current code objects directly within the application.
+De documentatie zal worden geopend in het nieuwe gedeelte documentatie dat is toegevoegd aan het paneel voor de gereedschappen Debuggen en ontwikkelen. Zodat ontwikkelaars eenvoudig toegang hebben tot de documentatie van de API voor huidige codeobjecten, direct in de toepassing.
 
-Additional QGIS settings have also been added so that developers can more readily modify this behavior to suit their workflow.
+Aanvullende instellingen voor QGIS zijn ook toegevoegd, zodat ontwikkelaars gemakkelijker dit gedrag kunnen aanpassen, zodat het aansluit bij hun werkstroom.
 
 ![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png.webp)
 
@@ -380,7 +380,7 @@ Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://gith
 | OAPIF: CQL layer filter expression is not used in request | [#60092](https://github.com/qgis/QGIS/issues/60092) | Is geen probleem |  |
 | Add support to export to/convert to .gpkg.zip files | [#59959](https://github.com/qgis/QGIS/issues/59959) | [PR #60202](https://github.com/qgis/QGIS/pull/60202) | N/B |
 | WMS-T with Time Value YYYY | [#60264](https://github.com/qgis/QGIS/issues/60264) | [PR #60290](https://github.com/qgis/QGIS/pull/60290) | [PR #60307](https://github.com/qgis/QGIS/pull/60307) |
-| GDAL Clip Raster by Layer Mask fails when given GeoPackage layer with diacritics (accents) in the name | [#59573](https://github.com/qgis/QGIS/issues/59573) | Superficial investigation |  |
+| GDAL Clip Raster by Layer Mask fails when given GeoPackage layer with diacritics (accents) in the name | [#59573](https://github.com/qgis/QGIS/issues/59573) | Oppervlakkig onderzocht |  |
 | webconnections xml is invalid due to missing namespace prefix | [#60242](https://github.com/qgis/QGIS/issues/60242) | [PR #60293](https://github.com/qgis/QGIS/pull/60293) | [PR #60353](https://github.com/qgis/QGIS/pull/60353) |
 | Unsupported Data Source' adding GDAL AWS S3 raster layers with credential options | [#60288](https://github.com/qgis/QGIS/issues/60288) | [GDAL Commit 4d2e65347ee0207328b14753ee2ea5628ced7d17](https://github.com/OSGeo/gdal/commit/4d2e65347ee0207328b14753ee2ea5628ced7d17) | N/B |
 | Create shapefile layer: allow to create Bool fields | [#60324](https://github.com/qgis/QGIS/issues/60324) | [PR #60327](https://github.com/qgis/QGIS/pull/60327) | [PR #60332](https://github.com/qgis/QGIS/pull/60332) |
@@ -408,7 +408,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 | QGIS Server OGC: Display name is not provided in GetFeatureInfo json/gml response | [#59353](https://github.com/qgis/QGIS/issues/59353) | [PR #60343](https://github.com/qgis/QGIS/pull/60343) | Nee |
 | Source Multipolygon-geometry reads as Polygon-geometry in MapInfo TAB format | [#60396](https://github.com/qgis/QGIS/issues/60396) | [PR #60410](https://github.com/qgis/QGIS/pull/60410) | Nee |
 | Geometry checker accepts invalid polygon | [#60464](https://github.com/qgis/QGIS/issues/60464) | Kan niet worden gereproduceerd | Nee |
-| Labels with decimal values do not use Locale when decimal is used in a text expression | [#60440](https://github.com/qgis/QGIS/issues/60440) | Not sure this is a bug, open for discussion [PR #60479](https://github.com/qgis/QGIS/pull/60479) | Nee |
+| Labels with decimal values do not use Locale when decimal is used in a text expression | [#60440](https://github.com/qgis/QGIS/issues/60440) | Niet zeker of dit een bug is, open voor bespreking [PR #60479](https://github.com/qgis/QGIS/pull/60479) | Nee |
 | New Connections to OGC Services Hang in Profiles with PostGIS Connections | [#60335](https://github.com/qgis/QGIS/issues/60335) | [PR #60495](https://github.com/qgis/QGIS/pull/60495) | NOG TE DOEN |
 | [Regression] OGC-Features API requests do not send Authorization header in v3.40.3 | [#60473](https://github.com/qgis/QGIS/issues/60473) | [PR #60511](https://github.com/qgis/QGIS/pull/60511) | NOG TE DOEN |
 
@@ -426,7 +426,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (QCooperative)](https
 | [Clang] Remove some deprecated warnings | Niet gerapporteerd | [PR #60428](https://github.com/qgis/QGIS/pull/60428) | N/B |
 | Label mask in Geopackage | [#59245](https://github.com/qgis/QGIS/issues/59245) | Kan niet worden gereproduceerd | N/B |
 | QMS plugin crashes in master | [#60286](https://github.com/qgis/QGIS/issues/60286) | [PR #60363](https://github.com/qgis/QGIS/pull/60363) | N/B |
-| Sip deprecated annotation makes QGIS crash | Unreported SIP issue | [SIP PR #67](https://github.com/Python-SIP/sip/pull/67) | N/B |
+| Sip deprecated annotation makes QGIS crash | Niet gerapporteerd probleem van SIP | [SIP PR #67](https://github.com/Python-SIP/sip/pull/67) | N/B |
 | Masking labels doesn't work with rule-based labeling | [#46402](https://github.com/qgis/QGIS/issues/46402) | [PR #60490](https://github.com/qgis/QGIS/pull/60490) | [PR #60509](https://github.com/qgis/QGIS/pull/60509) |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
@@ -520,10 +520,10 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 | [browser] "edit" multiple connections at once? | [#31928](https://github.com/qgis/QGIS/issues/31928) | [PR#60639](https://github.com/qgis/QGIS/pull/60639) | [PR#60648](https://github.com/qgis/QGIS/pull/60648) |
 | Remove ALL references to plugin | [#56808](https://github.com/qgis/QGIS/issues/56808) | Is geen probleem |  |
 | native:savefeatures unable to specify output layer | [#56517](https://github.com/qgis/QGIS/issues/56517) | Kan niet worden gereproduceerd |  |
-| Processing Raster Calculator not working in Processing Graphical Modeler | [#37831](https://github.com/qgis/QGIS/issues/37831) | Cannot reproduce, fixed in the native algorithm |  |
-| [processing] Raster calculator in embedded model can't refer to embedded model input | [#42825](https://github.com/qgis/QGIS/issues/42825) | Cannot reproduce, fixed in the native algorithm |  |
-| Raster calculator in graphical modeler reversing layer definitions every time the program is opened | [#33338](https://github.com/qgis/QGIS/issues/33338) | Cannot reproduce, fixed in the native algorithm |  |
-| Modeler and Raster Calculator fail to calc | [#32753](https://github.com/qgis/QGIS/issues/32753) | Cannot reproduce, fixed in the native algorithm |  |
+| Processing Raster Calculator not working in Processing Graphical Modeler | [#37831](https://github.com/qgis/QGIS/issues/37831) | Kan niet worden gereproduceerd, gerepareerd in eigen algoritme |  |
+| [processing] Raster calculator in embedded model can't refer to embedded model input | [#42825](https://github.com/qgis/QGIS/issues/42825) | Kan niet worden gereproduceerd, gerepareerd in eigen algoritme |  |
+| Raster calculator in graphical modeler reversing layer definitions every time the program is opened | [#33338](https://github.com/qgis/QGIS/issues/33338) | Kan niet worden gereproduceerd, gerepareerd in eigen algoritme |  |
+| Modeler and Raster Calculator fail to calc | [#32753](https://github.com/qgis/QGIS/issues/32753) | Kan niet worden gereproduceerd, gerepareerd in eigen algoritme |  |
 | Hillshade not created when Save File As is used | [#57247](https://github.com/qgis/QGIS/issues/57247) | Is geen probleem |  |
 | Customization: Tools selected with the widget catcher are kept selected even if the dialog is cancelled | [#23199](https://github.com/qgis/QGIS/issues/23199) | [PR#60643](https://github.com/qgis/QGIS/pull/60643) | [PR#60678](https://github.com/qgis/QGIS/pull/60678) |
 | Disable default actions for non-spatial tables | [#57916](https://github.com/qgis/QGIS/issues/57916) | [PR#60657](https://github.com/qgis/QGIS/pull/60657) | [PR#60670](https://github.com/qgis/QGIS/pull/60670) |

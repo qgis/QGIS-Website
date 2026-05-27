@@ -11,7 +11,7 @@ De historische cartografische documenten beschrijven zijn evolutie en zijn verva
 
 QGIS was een fundamenteel gereedschap om deze kaarten met geoverwijzingen te lezen, te analyseren en te vergelijken met de vectorlagen of shapefiles, waarin alle elementen van de kaarten waren opgeslagen, zoals wegen, gebouwen, parken en tuinen, de stadsmuur, de oude gefortificeerde torens en de oude stadspoorten. Ik gebruikte punten, lineaire en polygoonlagen. Ik vergeleek deze lagen door middel van gereedschappen voor analyses, onderzoek, geoverwerking, geometrie en gegevensbeheer (Fig. 1).
 
-![Fig. 1 Concept Map of the QGIS project](./images/italy_cesena1.png){width="100.0%"}
+![Afb. 1 Conceptkaart van het QGIS-project](./images/italy_cesena1.png){width="100.0%"}
 
 Met behulp van die gereedschappen vergaarde in informatie over:
 - De precisie van het topografische onderzoek van Leonardo Da Vinci, gerealiseerd in 1502, zoals hoeveel punten van zijn onderzoek juist waren (Afb. 2);
@@ -20,14 +20,14 @@ Met behulp van die gereedschappen vergaarde in informatie over:
 - De morfologische wijzigingen van de stadsmuur, zoals het verval van zijn oude geforitficeerde torens en zijn oude stadspoorten;
 - De stedelijke vooruitgang van Cesena vanaf de 16e eeuw tot heden;
 
-![Fig. 2: Openlayer Google Satellite overlapped by the informations recorded in different layers: the present City Wall in black, the Leonardo Da Vinci\'s topographic survey of the City Wall in orange, the Leonardo Da Vinci\'s points of survey in yellow and the present ancient City Gates in red.](./images/italy_cesena2.png){width="100.0%"}
+![Afb. 2: Openlayer Google Satellite overlapt door de opgenomen informatie uit verschillende lagen: de huidige stadsmuur in zwart, het topografische onderzoek van Leonardo Da Vinci van de stadsmuur in oranje, de punten van het onderzoek van Leonardo Da Vinci in geel en de huidige oude stadspoorten in rood.](./images/italy_cesena2.png){width="100.0%"}
 
 Er zijn heel veel gereedschappen in QGIS en ik gebruikte sommige daarvan om te maken:
 - Koppelingen die elk deel van de lineaire laag van de huidige stadsmuur verbonden met foto's, die de feitelijke staat van conservatie weergeven;
 - Een kaart van Cesena in de 19e eeuw vanuit Printvormgeving;
 - Een 3D-model van Cesena met de plug-in qgis2threejs (Fig. 3);
 
-![Fig. 3: The 3D model of the present City Wall and Cesena\'s buildings inside and outside the Wall. The ancient fortified towers and the ancient City Gates are indicated.](./images/italy_cesena3.png){width="100.0%"}
+![Afb. 3: Het 3D-model van de huidige stadsmuur en de gebouwen van Cesena binnen en buiten de muur. De oude gefortificeerde torens en de oude stadspoorten worden aangegeven.](./images/italy_cesena3.png){width="100.0%"}
 ## Conclusie
 De historische kaarten zijn belangrijke documenten zelfs als de precisie ervan niet kan worden vergeleken met de precisie van het actuele cartografische document, en zij zijn ook zeer communicatieve weergaven voor hen die geen specialisten zijn op het gebied van geografische weergaven. QGIS was het enige middel dat mij in staat stelde de numerieke inhoud van de historische kaarten te gebruiken voor een effectieve en betekenisvolle weergave.
 ## Bibliografische index
