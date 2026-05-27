@@ -1071,6 +1071,10 @@ sectionPagesMenu = 'main'
     weight = 2
     contentDir = "content-translated/ro"
 
+
+    [languages.ja]
+    languageCode = "ja"
+    weight = 2
 [module]
   # English (base language) - only original content
   [[module.mounts]]
@@ -1096,3 +1100,12 @@ sectionPagesMenu = 'main'
     source = "content"
     target = "content"
     lang = "ro"
+
+  [[module.mounts]]
+    source = "content-translated/ja"
+    target = "content"
+    lang = "ja"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ja"
