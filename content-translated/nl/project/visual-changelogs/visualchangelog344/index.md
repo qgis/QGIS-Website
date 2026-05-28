@@ -77,33 +77,33 @@ Dit is speciaal nuttig bij het gebruiken van een geclipte subset van gegevens di
 
 Deze mogelijkheid werd ontwikkeld door [Ben Wirf](https://github.com/benwirf)
 ## Labelen
-### Feature: Add settings for controlling margin around labels and preventing duplicate labels
-Two new settings have been introduced for vector layer labels, namely:
-- Margin around labels: This allows setting a margin around a layer's labels, which prevents all other labels from being placed closer than this margin distance to the layer's labels.
-- Prevent duplicate labels: Removes labels within a minimum distance across ALL layers using case sensitive matching.
+### Mogelijkheid: Instellingen toegevoegd voor het beheren van marges rondom labels en voorkomen van duplicaatlabels
+Twee nieuwe instellingen zijn geïntroduceerd voor labels van vectorlagen, namelijk:
+- Marge rondom labels: Dit maakt het mogelijk een marge in te stellen rondom de labels van een laag, wat voorkomt dat alle andere labels worden geplaatst binnen deze margeafstand tot de labels van de laag.
+- Duplicaatlabels voorkomen: Verwijdert labels binnen een minimale afstand voor ALLE lagen, met hoofdlettergevoleige overeenkomsten.
 
-This can be used to improve the appearance of labels in the rendering of complex geographic situations such as road network data, where elements such as dual carriageways, service roads, and other entities can result in many identical label elements appearing close together.
+Dit kan worden gebruikt om het uiterlijk van de labels bij het renderen van complexe geografische situaties te verbeteren. Zoals gegevens van wegennetwerken, waar elementen zoals tweerichtingswegen, dienstwegen en andere entiteiten kunnen resulteren in veel identieke labelelementen, die dicht bij elkaar verschijnen.
 
 <img src="images/entries/efc5a69fe9fa346ba7b2d6b9c3ec2b6d57b731d0.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## 3D-objecten
-### Feature: Cross-section tool
-A new tool has been added for creating cross sections in a 3D scene. User can pick a region of interest in the 2D map canvas (by clicking three points - start point, end point and cross-section thickness), which will make 3D view filter out everything outside of the region. The camera in the 3D view also gets moved to look at the region of interest from the side.
+### Mogelijkheid: Gereedschap Kruisdeel
+Een nieuw gereedschap is toegevoegd voor het maken van kruisdelen in een 3D-scène. De gebruiker kan een gedeelte in het 2D-kaartvenster kiezen (door te klikken op drie punten - beginpunt, eindpunt en dikte kruisdeel), dat ervoor zorgt dat de 3D-weergave alles eruit filtert wat buiten dat gebied ligt. De camera in de 3D-weergave wordt ook verplaatst om te kijken naar het gebied vanaf de zijkant.
 
-Compared to the configuration of the extent of the 3D view, cross section tool is both faster to use (it does not need to reload the whole scene when cross section is enabled/disabled) and allows rotated rectangular regions.
+Vergeleken met de configuratie van het bereik van de 3D-weergave, is het gereedschap Kruisdeel zowel sneller om te gebruiken (het hoeft niet de gehele scène opnieuw te laden als Kruisdeel is ingeschakeld/uitgeschakeld) en staat gedraaide rechthoekige gebieden toe.
 
 <img src="images/entries/8034dbe7d55e297f052ef4d310beab10a56ddbb5.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Septima, Klimadatastyrelsen
 
 Deze mogelijkheid werd ontwikkeld door [Matej Bagar](https://github.com/Withalion)
-### Feature: Globe view
-There is a new mode for 3D scenes - globe view - in addition to the traditional 3D view based on a projected CRS.
+### Mogelijkheid: Weergave Globe
+Er is een nieuwe modus voor 3D-scènes - weergave Globe - in aanvulling op de traditionele 3D-weergave, gebaseerd op een geprojecteerd CRS.
 
-Any map layer type can be used as a 2D texture for the globe, and 3D renderers of tiled scene layers and point cloud layers are supported.
+Elk type kaartlaag kan als 2D-textuur worden gebruikt voor de globe en 3D-renderers van getegelde scènelagen en lagen van puntenwolken worden ondersteund.
 
-Globe view uses the ellipsoid of the project to generate globe mesh. It is even possible to use other celestial bodies, such as Mars or Moon, if the project's CRS is set up accordingly.
+Weergave Globe gebruikt de ellipsoïde van het project om mazen voor de globe te maken. Het is zelfs mogelijk om andere hemellichamen te gebruiken, zoals Mars of de maan, als het CRS voor het project overeenkomstig is ingesteld.
 
 Meer informatie:
 - [QEP \#301 - Large scenes and globe in QGIS 3D](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301)
@@ -114,44 +114,44 @@ Meer informatie:
 Dit werd mogelijk gemaakt door Cesium Ecosystem Grant
 
 Deze mogelijkheid werd ontwikkeld door Lutra Consulting & North Road
-### Feature: Large 3D scene support
-In earlier versions of QGIS, 3D map views would not behave correctly with scenes larger than 50-100 kilometers due to numerical precision issues - the camera would move erratically (to the point of being unusable) or features would jitter when zoomed in. This has been fixed now - for both local scenes and globe scenes, as outlined in [QEP 301](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301).
+### Mogelijkheid: Ondersteuning voor grote 3D-scènes
+In eerdere versies van QGIS zou 3D-kaartweergave zich niet correct gedragen met scènes die groter zouden zijn dan 50-100 kilometer, wegens problemen met de numerieke precisie - de camera zou verkeerd verplaatsen (tot het punt van onbruikbaar) of objecten zouden onrustig zijn indien erop ingezoomd. Dat is nu opgelost - voor zowel lokale scènes als scènes voor Globe, zoals vermeld in [QEP 301](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/301).
 
 Dit werd mogelijk gemaakt door Cesium Ecosystem Grant
 
 Deze mogelijkheid werd ontwikkeld door Lutra Consulting & North Road
 ## Puntenwolken
-### Feature: Update pdal_wrench to v1.2
-This provides:
-- Improved support of Virtual Point Clouds (VPC) in processing algorithms
-- The possibility to output directly to Cloud Optimized Point Cloud (COPC) for various formats
+### Mogelijkheid: Pdal_wrench bijgewerkt naar v1.2
+Dit verschaft:
+- Verbeterde ondersteuning voor virtuele puntenwolken (VPC) in algoritmes van Processing 
+- De mogelijkheid om direct uit te voeren naar Cloud Optimized Point Cloud (COPC) voor verscheidene indelingen
 
-See the [pdal_wrench changelog](https://github.com/PDAL/wrench/releases/tag/v1.2) for more details on other improvements.
-
-Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation Vorarlberg
-
-Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Allow COPC output for PDAL Algorithms
-By leveraging the upgraded pdal_wrench dependency, PDAL Algorithm outputs can be generated as Cloud Optimized Point Clouds
+Bekijk het [log met wijzigingen voor pdal_wrench](https://github.com/PDAL/wrench/releases/tag/v1.2) voor meer details over andere verbeteringen.
 
 Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation Vorarlberg
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Automatic utilization of COPC index files in processing tools
-If a COPC file has an index available, QGIS will now automatically utilize it by default when performing processing operations. This will make some operations faster (e.g. clip).
+### Mogelijkheid: Uitvoer COPC toestaan voor algoritmes van PDAL
+Door de bijgewerkte afhankelijkheid pdal_wrench te verhogen, kan uitvoer voor algoritmes van PDAL nu worden gemaakt als Cloud Optimized Point Clouds
 
 Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation Vorarlberg
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Point cloud editing
-It is now possible to edit point cloud layers in the 3D map views. Users can pick which attribute to modify, the target value and then interactively select points that should be modified.
+### Mogelijkheid: Automatisch gebruiken van COPC-indexbestanden in gereedschappen van Processing
+Als een bestand COPC een index beschikbaar heeft, zal QGIS nu automatisch die standaard gebruiken bij het uitvoeren van bewerkingen van Processing. Dat zal enkele bewerkingen sneller maken (bijv. clippen).
 
-There are several map tools to select points for editing:
+Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation Vorarlberg
+
+Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
+### Mogelijkheid: Bewerken puntenwolk
+Het is nu mogelijk lagen van puntenwolken te bewerken in de 3D-kaartweergaven. Gebruikers kunnen kiezen welk attribuut aan te passen, de doelwaarde en dan interactief punten selecteren die zouden moeten worden bewerkt.
+
+er zijn verscheidene kaartgereedschappen om punten te selecteren om te bewerken:
 - Met een polygoon selecteren 
 - Met verfkwast selecteren
-- Select Above/Below Line
+- Boven/Onder lijn selecteren
 
-Users can set up filtering of edited points using QGIS expressions, so that only some points get their attribute value modified.
+Gebruikers kunnen filteren voor te bewerken punten instellen met QGIS-expressies, zodat slechts van enkele punten hun attribuutwaarde wordt aangepast.
 
 <div class="col-lg-8 col-md-offset-1">
 
@@ -166,7 +166,7 @@ Users can set up filtering of edited points using QGIS expressions, so that only
 # Er trad een fout op.{#changelog344 }
 <div class="submessage">
 
-<a href="https://www.youtube.com/watch?v=TRxW-g0HYjU" target="_blank">Watch this video on www.youtube.com</a> or enable JavaScript if it is disabled in your browser.
+<a href="https://www.youtube.com/watch?v=TRxW-g0HYjU" target="_blank">Bekijk deze video op www.youtube.com</a> of schakel JavaScript in als dat voor uw browser is uitgeschakeld.
 
 </div>
 
@@ -180,10 +180,10 @@ Dit werd mogelijk gemaakt door Septima, Klimadatastyrelsen
 
 Deze mogelijkheid werd ontwikkeld door Lutra Consulting
 ## Afdruklay-outs
-### Feature: Add auto-wrap after setting for layout legends
-The auto-wrap setting allows legend text to be automatically wrapped after a fixed line length (set in millimeters).
+### Mogelijkheid: Automatisch doorlopen na instelling voor legenda's van lay-out toegevoegd
+De instelling Automatisch doorlopen maakt het mogelijk de tekst van de legenda automatisch te laten doorlopen na een vaste regellengte (ingesteld in millimeters).
 
-This can be used to prevent excessive widths on auto-generated legends.
+Dit kan worden gebruikt om excessieve breedtes voor automatisch gemaakte legenda's te voorkomen.
 
 <img src="images/entries/ec81517776eea3e38142ca38436789fbdb9e7f9a.png" class="img-responsive img-rounded" />
 
@@ -191,33 +191,33 @@ Dit werd mogelijk gemaakt door North Road, met dank aan SLYR
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Expressies
-### Feature: Add repeat function and reverse variant for strings
-New expressions include:
-- A new 'repeat' function, which repeats a string a specified number of times
-- A string variant for 'reverse' that allows the reversing of strings
+### Mogelijkheid: Functie herhalen toegevoegd en variant omgekeerd voor tekenreeks
+Nieuwe expressies omvatten:
+- Een nieuwe functie 'repeat', die een tekenreeks een gespecificeerd aantal keer herhaald
+- Een variant voor tekenreeks voor 'reverse' die het omdraaien van de tekenreeks mogelijk maakt
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Expression functions to create CRS from string definition and to get authid from CRS
-New expression functions have been added that support the management of coordinate reference systems, namely:
-- **crs_from_text**: Creates a coordinate reference system from a string definition. The string definition can be represented using a CRS code in `auth:id` format, a WKT definition, or a PROJ string definition of the CRS.
-- **crs_to_authid**: Returns the identifier string for a coordinate reference system in the format `authority:id`, e.g., `EPSG:4326`.
+### Mogelijkheid: Expressiefuncties om CRS te maken uit een  tekenreeksdefinitie en om authid van CRS te verkrijgen
+Nieuwe expressiefuncties zijn toegevoegd die het beheren van coördinatenreferentiesystemen ondersteunen, namelijk:
+- **crs_from_text**: Maakt een coördinatenreferentiesysteem uit een tekenreeksdefinitie. De tekenreeksdefinitie mag worden weergegeven met een CRS-code in de indeling `auth:id`, een definitie WKT of een tekenreeks voor PROJ die het CRS definieert.
+- **crs_to_authid**: Geeft de tekenreeks voor identificatie van een coördinatenreferentiesysteem terug in de indeling `authority:id`, bijv. `EPSG:4326`.
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ## Digitaliseren
-### Feature: Add merge policies
-Similar to the already existing Split and Duplicate "policies", QGIS now supports Merge Policies, which can be configured to determine the initial values in the Merge Features dialog.
+###  Mogelijkheid: Beleid voor samenvoegen toegevoegd
+Soortgelijk aan de reeds bestaande "beleidsvormen" Splitsen en Dupliceren ondersteunt QGIS nu beleid Samenvoegen, wat kan worden geconfigureerd om de initiële waarden te bepalen in het dialoogvenster Objecten samenvoegen.
 
-Policies can be set per field in the Attributes Form of the Layer Properties dialog, under the "Policies" section of the field configuration.
+Beleid kan per veld worden ingesteld in het attributenformulier van het dialoogvenster Laageigenschappen, onder het gedeelte "Beleid" van de veldconfiguratie.
 
-Policy methods include:
-- Sum: (Numeric fields only) Sum of values
-- Geometry Weighted: (Numeric fields only) Uses weighted average by geometry
-- Default Value: Uses the default value set in QGIS
-- Unset Field: Clears the field and uses the default value from the data provider (if it exists). If no value is specified, the value from the first feature is used (current default)
-- Largest Geometry: Uses the value from the feature with the biggest geometry (determined by length (line types), area (polygon types), number of parts (multipoint types))
-- Minimum Value: (Numeric fields only) Lowest value
-- Maximum Value: (Numeric fields only) Highest value
-- Set to Null: Sets the value of the field for the feature to NULL
+Methoden voor beleid omvatten:
+- Som: (Alleen numerieke velden) Som van waarden
+- Gewogen geometrie: (Alleen numerieke velden) Gebruikt het gewogen gemiddelde per geometrie
+- Standaardwaarde: Gebruikt de standaardwaarde die is ingesteld in QGIS
+- Niet ingesteld veld: Maakt het veld leeg en gebruikt de standaardwaarde van de gegevensprovider (als die bestaat). Als er geen waarde wordt gespecificeerd, wordt de waarde uit het eerste object gebruikt (huidige standaard)
+- Grootste geometrie: gebruikt de waarde van het object met de grootste geometrie (bepaald door de lengte (typen lijn), gebied (typen polygoon), aantal delen (typen multipunt))
+- Minimumwaarde: (Alleen numerieke velden) Laagste waarde
+- Maximumwaarde: (Alleen numerieke velden) Hoogste waarde
+- Ingesteld op Null: Stelt de waarde van het veld voor het object in op NULL
 
 <img src="images/entries/544229ddb1a9eb37b3deacd955241731f8aa4c59.png" class="img-responsive img-rounded" />
 
@@ -225,74 +225,74 @@ Dit werd mogelijk gemaakt door de National Land Survey of Finland.
 
 Deze mogelijkheid werd ontwikkeld door [Juho Ervasti](https://github.com/JuhoErvasti)
 ## Gegevensbeheer
-### Feature: Use HEIGHT_AVERAGE from RPC when available
-QGIS can now more accurately position satellite images, especially those from DIMAP / Pleiades NEO products.
+### Mogelijkheid: HEIGHT_AVERAGE uit RPC gebruiken indien beschikbaar
+QGIS kan nu nauwkeuriger satellietafbeeldingen positioneren, speciaal die van producten van DIMAP / Pleiades NEO.
 
-This improvement means that these types of satellite images will be displayed in their correct geographical location with greater precision, even without additional elevation data.
+Deze verbetering betekent dat deze typen staellietafbeeldingen zullen worden weergegeven in hun juiste geografische locatie met meer precisie, zelfs zonder aanvullende hoogtegegevens.
 
 <img src="images/entries/6dac68ebcbe251181b8b878ca25e96bee1bf2b33" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Feature: Allow field customisation when importing db tables
-The database table import dialog has been expanded to include a new field mapping section, which gives users control over the fields in the created table.
+### Mogelijkheid: Aanpassen van veld toestaan bij importeren van databasetabellen
+Het dialoogvenster Databasetabel importeren is uitgebreid met een nieuw gedeelte om velden te koppelen, wat de gebruiker beheer geeft over de velden in de gemaakte tabel.
 
-Users can rename, set the exact destination field types, and tweak the source expression for each output field.
+Gebruikers kunnen hernoemen, het exacte type doelveld instellen en de bronexpressie aanpassen voor elk uitvoerveld.
 
-Fields can also be excluded from the import, or new fields created that don't exist in the source table.
+Velden kunnen ook worden uitgesloten van importeren, of nieuwe velden worden gemaakt die niet bestaan in de brontabel.
 
 <img src="images/entries/100dca954811ba2396b0fa2fa7edbbaec32dadb0" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add optional extent, expression based filter when importing tables to database
-When a table is imported to a database via the browser, the user now has an option to filter the copied records by extent or expression.
+### Mogelijkheid: Optioneel bereik toevoegen, op expressie gebaseerd filter bij importeren van tabellen naar database
+Wanneer een tabel via de browser wordt geïmporteerd naar een database, heeft de gebruiker nu een optie om de gekopieerde records te filteren op bereik of expressie.
 
 <img src="images/entries/ac84f4eff2203d0b08b4577eeafa37cff09a6db1" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add stored query support to Execute SQL window
-The "Execute SQL" dialog now supports stored queries, replicating the functionality from the DB Manager in the new browser tools.
+### Mogelijkheid: Ondersteuning voor opgeslagen query voor venster SQL uitvoeren
+Het dialoogvenster "SQL uitvoeren" ondersteunt nu opgeslagen query's, wat de functionaliteit nabootst van Databronnen beheren in nieuwere gereedschappen voor de Browser.
 
-Users can insert stored queries into their current query, save new stored queries, and remove queries via a new toolbar action.
+Gebruikers kunnen opgeslagen query's invoegen in hun huidige query, nieuwe opgeslagen query's opslaan en query's verwijderen met een nieuwe actie op de werkbalk.
 
-Queries can be stored in the current project or in the local user profile.
+Query's kunnen worden opgeslagen in het huidige project of in het lokale gebruikersprofiel.
 
 <img src="images/entries/b4d094f69e11aee5f1e2de7ad1ea40d3118b32fb.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Saving/Loading SQL queries from Execute SQL/Update SQL dialogs
-Support has been added to the Execute SQL dialog and Update SQL dialogs that allows users to save and load SQL queries to/from .sql text files. This replicates the functionality available in the DB Manager over to the core browser-based database connection facilities.
+### Mogelijkheid: SQL-query's opslaan/laden vanuit dialoogvensters SQL uitvoeren/SQL bijwerken
+Ondersteuning is toegevoegd aan de dialoogvensters SQL uitvoeren en SQL bijwerken, wat gebruikers in staat stelt om SQL-query's op te slaan en te laden naar/vanuit .sql-tekstbestanden. Dit kopieert het gedrag van de beschikbare functionaliteit in Databronnen beheren naar de op de bronbrowser gebaseerde faciliteiten voor databaseverbindingen.
 
-The UX has been designed to mimic the same functionality from other standard parts of QGIS, such as the Processing Script Editor with Toolbar actions for Save/Load as well as new actions for other standard operations, including copy, paste, undo, and redo.
+De UX is ontworpen om dezelfde functionaliteit na te bootsen uit andere standaardgedeelten van QGIS, zoals de Scriptbewerker van Processing met acties op de werkbalk voor Opslaan/Laden, alsook nieuwe acties voor andere standaardbewerkingen, inclusief kopiëren, plakken, ongedaan maken en opnieuw.
 
 <img src="images/entries/6f5e0b09c033f427fb7f9162d1b2be5a763d674c" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Allow for extra OAuth2 token(s) to be added into headers
-OAuth2 advanced configuration options can now attach extra tokens sent by the OAuth2 token endpoint as HTTP(S) request headers. This allows for more flexible handling of OAuth configurations, such as when certain providers append OpenID tokens to their token replies.
+### Mogelijkheid: Toestaan dat extra token(s) van OAuth2 worden toegevoegd aan headers
+Opties voor geavanceerde configuratie van OAuth2 kan nu extra tokens toevoegen die zijn verstuurd door het OAuth2-tokeneindpunt als HTTP(S)-requestheaders. Dat maakt een meer flexibele afhandeling van configuraties van OAuth mogelijk, zoals wanneer bepaalde providers OpenID-tokens toevoegen aan hun tokenantwoorden.
 
-This change is integrated into the credential management and is available for all OAuth2 services.
+Deze wijziging is geïntegreerd in het beheer van inloggegevens en is beschikbaar voor alle services van OAuth2.
 
 <img src="images/entries/2a9dadb3cfbf35b2efea8c7cd9dd4fe49ffbc292" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Convert field name Casing when importing vector layers
-The Import Vector dialog for migrating vector layers to data sources now supports the option to automatically transform all field names to lowercase or uppercase.
+### Mogelijkheid: (hoofd)letters van veldnaam converteren bij importeren van vectorlagen
+Het dialoogvenster Vector importeren voor het migreren van vectorlagen naar databronnen ondersteunt nu de optie om automatisch alle veldnamen te transformeren naar kleine letters of hoofdletters.
 
 <img src="images/entries/dc2c1e575d451c7bd98fb6c3b0a7cebe2800fe04" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Import selected features only to database table
-When importing layer features into a database table, a new dialog option allows for filtering the import to only the selected features. This option is only available if there is a current selection on the imported layer.
+### Mogelijkheid: Alleen geselecteerde objecten importeren naar databasetabel
+Bij het importeren van laagobjecten in een databasetabel, maakt een nieuwe optie in het dialoogvenster het mogelijk de import te filteren op alleen de geselecteerde objecten. Deze optie is alleen beschikbaar als er een huidige selectie voor de geïmporteerde laag is.
 
 <img src="images/entries/4a0b7ca2843d5acb9b2c3b3b2a237d6f7e55a308" class="img-responsive img-rounded" />
 
@@ -300,24 +300,24 @@ Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Formulieren en widgets
-### Feature: Switch between field names and field aliases in forms
-In line with [QEP 401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md), the Vector Layer Properties has been switched to model-based tree views.
+### Mogelijkheid: Schakelen tussen veldnamen en veldaliassen in formulieren
+In lijn meth [QEP 401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md)zijn de vector Laageigenschappen geschakeld naar op model gebaseerde boomweergaven.
 
-This has enabled new functionality, including the ability to switch between field names and field aliases in both the Available Widgets and Form Layout panels.
+Dat heeft nieuwe functionaliteit ingeschakeld, inclusief de mogelijkheid om te schakelen tussen veldnamen en veldaliassen in zowel de panelen Beschikbare widgets als Formulierlay-out.
 
 Aanvullende verbeteringen omvatten:
-- Orphan fields are highlighted in the Form Layout, emulating the UX of broken relations.
-- Improvements in broken relations: retain relation names when the relation is still available in the relation manager,
+- Weesvelden worden geaccentueerd in de Formulierlay-out, de UX voor verbroken relaties nabootsend.
+- Verbeteringen in verbroken relaties: behoud relatienamen als de relatie nog steeds beschikbaar is in relatiebeheer,
 
 <img src="images/entries/5501d969ec51c06d6ecf49c691c484bec4d08b33.gif" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch/)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Add a search box to Atrributes Form Designer
-In line with [QEP#401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md), the Drag and Drop form designer now includes a search box to filter items by name or alias, making it much easier to work with tables and datasets that include a lot of attribute fields.
+### Mogelijkheid: Zoekvak toegevoegd aan Ontwerper atrributenformulier
+In lijn met [QEP#401](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-401-overview-widget-types.md)bevat de Ontwerper Slepen en neerzetten nu een zoekvak om items te filteren op naam of alias, wat het veel gemakkelijker maakt om met tabellen en gegevenssets te werken die heel veel attributenvelden bevatten.
 
-This filter works across both the Available Widgets and the Form Layout panels.
+Dit filter werkt voor zowel de panelen Beschikbare widgets als voor Formulierlay-out.
 
 <img src="images/entries/3fefddf7d32b70bf849e390847eca7904ca85ea0.png" class="img-responsive img-rounded" />
 
@@ -325,8 +325,8 @@ Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch)
 
 Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gacarrillor)
 ## Analyse-gereedschappen
-### Feature: Add input parameters to the toolbox in the modeler
-A single "Toolbox" panel has been added to the Graphical Modeler, which merges the objects from the Input and Algorithm panels into a single panel. This simplifies the UX of the Graphical Modeler, allowing users to use the search filters rather than manage separate tabs for modeler tools.
+### Mogelijkheid: Invoerparameters toegevoegd aan de Toolbox in de modelontwerper
+Een enkel paneel "Toolbox" is toegevoegd aan Modelontwerper, wat de objecten vanuit de panelen Invoer en Algoritme in een enkel paneel plaatst. Dat vereenvoudigt de gebruikservaring van de Modelontwerper. Geeft gebruikers de mogelijkheid om zoekfilters te gebruiken in plaats van afzonderlijke tabs voor gereedschappen van Modelontwerper te moeten beheren.
 
 <img src="images/entries/2372c98c1724436a5d872bab22bd356ab6bae5d8.png" class="img-responsive img-rounded" />
 
@@ -334,69 +334,69 @@ Dit werd mogelijk gemaakt door [Hauts-de-France](https://www.hautsdefrance.fr/)
 
 Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
 ## Processing
-### Feature: Port SAGA "Fill Sinks Wang & Liu" to native tool
-This highly in-demand tool seemed to be fragile and error-prone when run via the SAGA Processing Plugin.
+### Mogelijkheid: SAGA "Fill Sinks Wang & Liu" geporteerd naar eigen gereedschap
+Dit veelgevraagde gereedschap leek nogal fragiel en foutgevoelig indien uitgevoerd via de plug-in SAGA voor Processing.
 
-A new native tool has been provided to provide an optimized out-of-the-box tool that is stable and effective.
+Een nieuw eigen gereedschap is verschaft voor een geoptimaliseerd out-of-the-box-gereedschap dat stabiel en effectief is.
 
-Note that, as this implementation is a clone of the SAGA implementation, bugs present in the source will be present in the new native tool.
+Onthoud dat, omdat deze implementatie een kloon is van de implementatie van SAGA, problemen die in de bron aanwezig zijn, ook in het nieuwe eigen gereedschap zullen zitten.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add creation options UI to raster calculator
-Raster creation options are now exposed in the raster calculator UI for both the native dialog and within the Processing Algorithm dialog.
+### Mogelijkheid: Opties voor maken toegevoegd aan de gebruikersinterface van Rasterberekeningen
+Opties voor het maken van een raster worden nu weergegeven in de interface van Rasterberekeningen, voor zowel het eigen dialoogvenster als in het dialoogvenster van het algoritme voor Processing.
 
 <img src="images/entries/f95b1f5cf9163bbb300ce45564d4e1a7a0877271.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Batch processing temporary output
-Temporary output layers are now supported in the Batch processing utility, improving the ability to generate intermediate data sources or perform experiments more efficiently.
+### Mogelijkheid: In batch verwerken van tijdelijke uitvoer
+Lagen voor tijdelijke uitvoer worden nu ondersteund in het gereedschap Batch verwerken, wat de mogelijkheid verbetert om tussenliggende databronnen te maken of experimenten meer efficiënt uit te voeren.
 
 <img src="images/entries/6c4eab5ac90474f0d924f460586ff36b9c8df288.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Add basic drag and drop support in the model designer
-The QGIS Graphical Modeler now supports independent sockets connected to model nodes, which can be interactively connected via drag and drop.
+### Mogelijkheid: Ondersteuning voor basis slepen en neerzetten in de Modelontwerper
+De QGIS Modelontwerper ondersteunt nu onafhankelijke sockets die zijn verbonden met knopen van het model, die interactief kunnen worden verbonden met slepen en neerzetten.
 
-This allows users to quickly and easily connect an output from one node to a specified input on another without configuring each node's inputs individually.
+Dat stelt gebruikers in staat om snel en gemakkelijk een uitvoer vanuit een knoop te verbinden aan een gespecificeerde invoer van een andere, zonder de individuele invoer van elke knoop te moeten configureren.
 
 <img src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
-### Feature: Processing raster rank algorithm
-The new "Raster rank" algorithm takes a collection of rasters as input and creates an output with cell values matching the rank order of a list of cell values taken from the input collection of rasters.
+### Mogelijkheid: Algoritme Rang raster voor Processing
+Het nieuwe algoritme "Rang raster" neemt een collectie rasters als invoer en maakt een uitvoer met celwaarden die overeenkomen met de rangorde van een lijst met celwaarden die uit de invoercollectie van de rasters komen.
 
-For example, if the list of input values for a given cell is \[10,20,30,40\] and the rank is 2, the output value will be 20.
+Als bijvoorbeeld de lijst met invoerwaarden voor een bepaalde cel \[10,20,30,40\] is en de rang is 2, zal de uitvoerwaarde 20 zijn.
 
-The algorithm also allows for a negative index rank. Given the same list of input values, \[10,20,30,40\], and using the rank value -2, the output value would be 30.
+Het algoritme staat ook een negatieve indexrang toe. Gegeven dezelfde lijst met invoerwaarden, \[10,20,30,40\], en de randwaarde -2 gebruiken, zou de uitvoerwaarde 30 zijn.
 
-Finally, the algorithm offers to nodata handling behavior. By default, nodata values are excluded from the list, and a given output cell will only be set to nodata if the rank is greater than the values list size. Users can also pick an alternative behavior, whereas one or more nodata values for a given cell in the input layers will result in a nodata value for that output cell.
+Tenslotte biedt het algoritme gedrag voor het afhandelen van Geen gegevens. Standaard worden waarden Geen gegevens uitgesloten van de lijst en een opgegeven uitvoercel zal alleen worden ingesteld op Geen gegevens als de rang groter is dan de grootte van de waardenlijst. Gebruikers kunnen ook een alternatief gedrag kiezen, waar een of meer waarden Geen gegevens voor een opgegeven cel in de invoerlagen zullen resulteren in een waarde Geen gegevens voor die uitvoercel.
 
 <img src="images/entries/8fe5df608b4c445246e6e0f4379304e062e20b88" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Opties voor toepassing en projecten
-### Feature: Add project setting for scale calculation, including new "scale at equator" method
-A new project-level setting for the scale calculation method has been added, with choices for:
-- at top of map
-- at bottom of map
-- at middle of map
-- horizontal average
-- scale at equator
+### Mogelijkheid: Projectinstelling toegevoegd voor schaalberekening, inclusief nieuwe methode "schaal op evenaar"
+Een nieuwe instelling op projectniveau voor de methode voor berekening van de schaal is toegevoegd, met keuzes voor:
+- aan bovenzijde van de kaart
+- aan onderzijde van de kaart
+- in het midden van de kaart
+- horizontaal gemiddelde
+- schaal op evenaar
 
-Changing the scale method impacts numerous system behaviors, including:
-- New layout scale bars will default to the project's scale calculation method
-- The scale calculations will be adjusted, affecting project aspects including:
-  - status bar widget map renders
-  - `@map_scale` and similar scale-related API methods
-  - scale based visibility of layers and symbols
-- Processing algorithms which render maps will respect the project scale calculation method
-- Scale method affects QGIS server map rendering
+Wijzigen van de schaal beïnvloedt heel veel systeemgedrag, inclusief:
+- Nieuwe schaalbalken van lay-out zullen als standaard de berekeningsmethode van het project voor de schaal hebben
+- De schaalberekeningen zullen worden aangepast, wat effecten heeft op aspecten van het project, inclusief:
+  - widget voor statusbalk Kaart renderen
+  - `@map_scale` en soortgelijke schaal-gerelateerde API-methoden
+  - op schaal gebaseerde zichtbaarheid van lagen en symbolen
+- Algoritmes van Processing die kaarten renderen, waarbij rekening wordt gehouden met de methode voor het berekenen van de schaal van het project
+- Methode voor de schaal heeft effect op QGIS Server renderen van de kaart
 
-Note that symbology sizes determined in map units are NOT affected by this setting.
+Onthoud dat grootten van symbologie, bepaald in kaarteenheden, NIET worden beïnvloed door deze instelling.
 
-The new "scale at equator "scale calculation method always calculates the scale at the equator, regardless of the actual visible map extent. It can be used to provide a consistent, static scale for maps in geographic reference systems, regardless of the latitudes actually visible in the map. Note that this method is only applicable when calculating scales with a degree-based reference system.
+De nieuwe "schaal op evenaar"-berekeningsmethode voor de schaal berekent altijd de schaal op de evenaar, ongeacht de feitelijke zichtbare breedtegraden in het kaartbereik. Het kan worden gebruikt om een consistente, statische schaal te verschaffen voor kaarten in geografische referentiesystemen, ongeacht de breedtegraden die fysiek zichtbaar zijn in de kaart. Onthoud dat deze methode alleen van toepassing is bij het berekenen van schalen met een op graden gebaseerd referentiesysteem.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add multiple country codes filter to Nominatim Geocoder Locator

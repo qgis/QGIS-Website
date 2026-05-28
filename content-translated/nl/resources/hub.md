@@ -35,7 +35,7 @@ Documentatie voor elke lange termijn uitgave (LTR) van QGIS kunt u vinden op de 
 
 {{<tab-content-start tab="1" >}}
 
-**For users (QGIS {{< param "ltrversion" >}}):**
+**Voor gebruikers (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="Desktop gebruikershandleiding — <lang>" >}}
 

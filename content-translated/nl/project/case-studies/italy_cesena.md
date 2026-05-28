@@ -48,7 +48,7 @@ Met behulp van die gereedschappen vergaarde in informatie over:
 Er zijn heel veel gereedschappen in QGIS en ik gebruikte sommige daarvan om te maken:
 - Koppelingen die elk deel van de lineaire laag van de huidige stadsmuur verbonden met foto's, die de feitelijke staat van conservatie weergeven;
 - Een kaart van Cesena in de 19e eeuw vanuit Printvormgeving;
-- Een 3D-model van Cesena met de plug-in qgis2threejs (Fig. 3);
+- Een 3D-model van Cesena met de plug-in qgis2threejs (Afb. 3);
 
 <figure>
 <img src="../images/italy_cesena3.png" style="width:100.0%" alt="italy_cesena3.png" />
