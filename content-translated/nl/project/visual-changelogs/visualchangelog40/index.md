@@ -4,66 +4,66 @@ draft: false
 releaseDate: '2026-03-06'
 section: project
 sidebar: true
-title: Changelog for QGIS 4.0
+title: Log met wijzigingen voor QGIS 4.0
 type: visual-changelog
 
 ---
 {{<content-start >}}
-# Changelog for QGIS 4.0{#changelog40 }
+# Log met wijzigingen voor QGIS 4.0{#changelog40 }
 <img src="images/projects/388120cc4ef54e6b606481e3c2b08ba3738b5c17.png" class="img-responsive img-rounded center-block" />
 
-Release date: 2026-03-06
+Datum uitgave 06-03-2026
 
-The wait is over! QGIS 4.0 is here!
+Het wachten is voorbij! QGIS 4.0 is hier!
 
-[QGIS](https://qgis.org) (<https://qgis.org>) is the world's most popular (open source) desktop Geographical Information System (GIS). It is used by people around the world to view, edit, analyse and share spatial data. It can produce professional-grade cartography products and supports hundreds of spatial data formats. QGIS is a member project of OSGEO, the Open Source Geospatial Foundation that is democratising access to spatial platforms (<https://osgeo.org>).
+[QGIS](https://qgis.org) (<https://qgis.org>) is het populairste (open bron) desktop Geografische InformatieSysteem (GIS) ter wereld. Het wordt gebruikt door mensen over de gehele wereld om ruimtelijke gegevens te bekijken, te bewerken, te analyseren en te delen. Het kan professioneel ogende cartografieproducten produceren en ondersteunt honderden indelingen voor ruimtelijke gegevens. QGIS is een lidproject van OSGEO, de Open Source Geospatial Foundation dat toegang tot ruimtelijke platforms democratiseert (<https://osgeo.org>).
 
-Since our humble beginnings over 20 years ago, our project keeps growing stronger - both in terms of the software offering and in terms of our strong, diverse and vibrant community that supports and benefits from QGIS around the world.
+Vanaf ons bescheiden begin meer dan 20 jaar geleden, wordt ons project nog steeds sterker - zowel in termen van het aanbieden van software als in termen van onze sterke, diverse en levendige gemeenschap die ondersteunt en profiteert van QGIS over de gehele wereld.
 
-We are really pleased to announce the new major release of QGIS 4.0, which represents the successful culmination of a long-planned technical migration, transitioning the core of QGIS onto the Qt6 framework.
+We zijn heel blij om de nieuwe belangrijke uitgave van QGIS 4.0 aan te kondigen Die de succesvolle voltooiing is van een lang geplande technische migratie, die de bron van QGIS overbracht naar het framework van Qt6.
 
-On the surface, existing users should expect to engage with a GIS experience familiar to what they have come to know and love from previous QGIS releases. Under the hood, however, it introduces significant changes to maintainability and usability. These changes ensure that QGIS 4.0 can unlock additional access to modern libraries while bringing much-needed performance and security improvements to the codebase.
+Aan de oppervlakte zouden bestaande gebruikers kunnen verwachten te worden geconfronteerd met een GIS-ervaring die ze al hebben leren kennen en waarvan ze houden uit eerdere uitgaven van QGIS. Onder de motorkap introduceert het echter significante wijzigingen in onderhouds- en gebruiksmogelijkheden. Deze wijzigingen zorgen ervoor dat QGIS 4.0 aanvullende toegang kan ontgrendelen tot moderne bibliotheken, waarbij al lang nodige prestaties worden gebracht en verbeteringen aan beveiligingen aan de codebasis.
 
-To ensure a smooth transition for our vibrant ecosystem, we have retained deprecated APIs where possible, minimising the effort required for plugin developers to update their tools. While some legacy APIs (such as the Processing API from QGIS 2.x) will not be guaranteed future support and backwards compatibility throughout the lifespan of the QGIS 4.x series, developers supporting existing plugins can easily ensure their plugins are compatible with the new release using the [Qt6 compatibility guide](https://github.com/qgis/QGIS/wiki/Plugin-migration-to-be-compatible-with-Qt5-and-Qt6).
+Voor een gladde overgang voor ons levendig ecosysteem, hebben we vervallen API's, waar mogelijk, behouden. Wat de inspanningen minimaliseert die vereist zijn voor ontwikkelaars van plug-ins om hun gereedschappen bij te werken. Sommige verouderde API's (zoals de Processing API uit QGIS 2.x) kunnen geen garantie bieden voor toekomstige ondersteuning en achterwaartse compatibiliteit gedurende de levensduur van de serie QGIS 4.x. Ontwikkelaars die bestaande plug-ins ondersteunen, kunnen er gemakkelijk voor zorgen dat hun plug-ins compatibel zijn met de nieuwe uitgave met de [compatibiliteitsgids voor Qt6](https://github.com/qgis/QGIS/wiki/Plugin-migration-to-be-compatible-with-Qt5-and-Qt6).
 
-While preparation for the QGIS 4.0 migration has been underway, the developer community has added over 100 new features across the application, making QGIS more powerful, more flexible, more secure, and generally just more awesome. Adjacent to developments associated with the codebase, the budding community of QGIS users has continued to share resources, including projects, styles, scripts, and more, leading to an exciting period of growth for the revamped [QGIS Hub](https://hub.qgis.org/) and associated community sites.
+Terwijl de voorbereiding voor de migratie van QGIS 4.0 onderweg was, heeft de gemeenschap van ontwikkelaars meer dan 100 nieuwe mogelijkheden toegevoegd in de gehele toepassing. QGIS nog krachtiger makend, meer flexibel, veiliger en over het algemeen nog beter. Aansluitend aan de ontwikkelingen die waren geassocieerd met de codebasis, is de collega-gemeenschap van gebruikers van QGIS doorgegaan met het delen van bronnen, inclusief projecten, stijlen, scripts, en nog veel meer. Wat heeft geleid tot een fantastische periode van groei voor de, nieuw vormgegeven, [QGIS Hub](https://hub.qgis.org/) en geassocieerde sites voor de gemeenschap.
 
-If you want to see more about our release, check out our [community sharing the announcement](https://youtu.be/SQJZm5Y0EKs)!
+Als u meer wilt zien over onze uitgave, bekijk dan [hoe de gemeenschap de aankondiging deelt](https://youtu.be/SQJZm5Y0EKs)!
 
 [![](https://img.youtube.com/vi/SQJZm5Y0EKs/0.jpg)](https://www.youtube.com/watch?v=SQJZm5Y0EKs)
 
-For a whirlwind tour of all the new functionalities introduced in this release, you can view the [highlight reel video on YouTube](https://youtu.be/wTK1exokBA8), and for a detailed rundown of the new features and improvements, please check out the [visual changelog](https://qgis.org/project/visual-changelogs/visualchangelog40/) for this release.
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u de [video met hoogtepunten bekijken op YouTube](https://youtu.be/wTK1exokBA8). En voor een gedetailleerd overzicht van de nieuwe mogelijkheden en verbeteringen, bekijk het [log met wijzigingen](https://qgis.org/project/visual-changelogs/visualchangelog40/) voor deze uitgave.
 
 [![](https://img.youtube.com/vi/wTK1exokBA8/0.jpg)](https://www.youtube.com/watch?v=wTK1exokBA8)
 
-QGIS is a community effort, and we would like to extend a big thank-you to the developers, documenters, testers, and the many folks out there who volunteer their time and effort (or fund others to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release!
+QGIS is een inspanning van de gemeenschap en we willen ook nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten!
 
-If you wish to donate time, money, or otherwise contribute towards making QGIS more awesome, please wander along to [QGIS.ORG](https://qgis.org/) and lend a hand!
+Als u tijd of geld wilt doneren of op een andere manier wilt bijdragen aan het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://qgis.org) en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions, large or small, to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://qgis.org/en/site/about/sustaining_members.html) for more details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very big thank you to all of our sponsors!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een gemeend bedankt voor al onze sponsoren!
 
-QGIS is free software, and you are under no obligation to pay anything to use it - in fact, we want to encourage people far and wide to use it regardless of their financial or social status - we believe that empowering people with spatial decision-making tools will result in a better society for all of humanity.
+QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
 ## Tijdbeheer
-### Feature: Add new accumulate pixels setting to the represent temporal values mode
-A new accumulate pixels option has been added that is available when a raster layer temporal mode is set to represent temporal values. This mimics the vector layer counterpart, where features can accumulate over time when a feature's temporal state is represented by a single date/time field.<br />This is especially useful in animated temporal navigation when intertwining vector and raster layers.
+### Mogelijkheid: Nieuwe instelling voor accumuleren van pixels toegevoegd om de modus Tijdwaarden weer te geven
+Een nieuwe optie voor het accumuleren van pixels is toegevoegd die beschikbaar is als de modus Tijdbeheer voor een rasterlaag is ingesteld om tijdwaarden weer te geven. Dit bootst de tegenhanger in vectorlagen na, waar objecten in de tijd kunnen accumuleren als de status van Tijdbeheer van een object wordt weergegeven door een enkel veld datum/tijd.<br />Dit is speciaal nuttig in geanimeerde navigatie in Tijdbeheer bij het combineren van vector- en rasterlagen.
 
 <img src="images/entries/bcb3022b31756fa9b9bb2a161bdc74633e53c515.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Kaartgereedschap
-### Feature: Add map tool to edit blank segments
-A new map tool to edit blank segments has been added, as described in [QEP \#345](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/345)<br />It allows users to define blank segments per feature, based on a templated line symbology, and prevents Hashes or Markers from being drawn inside these segments.<br />The blank segments are stored within a data-defined property (data field or auxiliary storage field). This tool allows users to:
-- Click in the neighborhood of the line to start creating a segment, click again to finish editing
-- Select a segment, and press the Del key to remove it
-- Drag the start/end of an already existing segment and move it along the line to reduce/enlarge it
+### Mogelijkheid: Kaartgereedschap toegevoegd voor bewerken van blanco segmenten
+Een nieuw kaartgereedschap voor het bewerken van blanco segmenten is toegevoegd. Zoals beschreven in [QEP \#345](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/345).<br /> Het stelt gebruikers in staat om per object blanco segmenten te definiëren, gebaseerd op een lijnsymbologie uit een sjabloon, en voorkomt dat Hashes of Markeringen binnen deze segmenten worden getekend.<br /> De blanco segmenten worden opgeslagen in een data-bepaalde eigenschap (gegevensveld of veld voor hulpopslag). Dit gereedschap stelt gebruikers in staat om:
+- Te klikken in de nabijheid van de lijn om een segment te beginnen, opnieuw te klikken om bewerken te beëindigen
+- Een segment te selecteren en op de toets Del te drukken om het te verwijderen
+- Te slepen aan het begin/einde van een reeds bestaand segment en het te verplaatsen langs de lijn om het te verkleinen/te vergroten
 
 <img src="images/entries/05d17bd62aaa441e7756a5bf5970d4ddc90760da" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Copy features in an array along a line
-A new map tool allows users to copy features in an array along a line, and is available for polygon/linestring/point geometry types.
+### Mogelijkheid: Objecten in een array langs een lijn kopiëren
+Een nieuw kaartgereedschap stelt gebruikers in staat om objecten in een array te kopiëren langs een lijn en is beschikbaar voor typen geometrie polygoon/lijn/punt geometry types.
 
 <img src="images/entries/60adf287a322741a4f92f851fcfc369b068ed097.png" class="img-responsive img-rounded" />
 
@@ -71,63 +71,63 @@ Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www
 
 Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://github.com/Djedouas)
 ## Gebruikersinterface
-### Feature: New Design for the Welcome Page
-QGIS 4.0 features a shiny new welcome page, with an extensible design for an enhanced user experience in line with [QEP 347](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/351).
+### Mogelijkheid: Nieuw ontwerp voor pagina Welkom
+QGIS 4.0 komt met een glanzend nieuwe pagina Welkom, met een uit te breiden ontwerp voor een verbeterde gebruikservaring in lijn met [QEP 347](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/351).
 
 <img src="images/entries/26a97dc32083858218bfe1bfd34d00af243b6bef.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Unlock shipping themes through plugins
-Adding new themes shipped within QGIS core (such as Night Mapping and Blend of Gray) comes with high maintenance costs and limits the amount of creativity that authors can exercise, as they typically need to be neutral, generic, and accessible.<br />QGIS has now been extended to support themes through the plugins API, so that the community can apply themes and custom application styles without changes to the QGIS Core Application, unlocking an entirely new dimension to the QGIS UX.
+### Mogelijkheid: Meegeleverde thema's ontgrendelen door plug-ins
+Het toevoegen van nieuwe thema's die worden meegeleverd met de bron van QGIS (zoals Night Mapping en Blend of Gray) komt met hoge onderhoudskosten en beperken de creativiteit die auteurs kunnen uitoefenen, omdat ze over het algemeen neutraal, algemeen en toegankelijk moeten zijn.<br />QGIS is nu uitgebreid om deze thema's te ondersteunen vanuit de plug-ins-API, zodat de gemeenschap ook thema's en aangepaste stijlen voor de toepassing kan toepassen zonder wijzigingen aan de brontoepassing van QGIS. Wat een geheel nieuwe dimensie voor de gebruikservaring van QGIS ontgrendelt.
 
 Dit werd mogelijk gemaakt door [free time, inspired by :)](https://github.com/qgis/QGIS/pull/64495)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Create user defined ToolBar and Menu
-QGIS now allows users to create user-defined menus and toolbars to provide powerful customization options.<br />This implements [QEP \#343](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-343-customized-toolbars-and-menus.md).
+### Mogelijkheid: Gebruikergedefinieerde werkbalk en menu maken
+QGIS staat gebruikers nu toe om gebruikergedefinieerde menu's en werkbalken te maken om krachtige opties voor aanpassingen te verschaffen.<br />Dit implementeert [QEP \#343](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-343-customized-toolbars-and-menus.md).
 
 <img src="images/entries/553f1a2b5712a2f02d6a5a038197c1baefe6c012" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Attribute table double click zoom
-Users can now double-click an item in the attribute table to instantly select a feature and zoom to the selected feature.
+### Mogelijkheid: Attributentabel dubbelklik zoom
+Gebruikers kunnen nu dubbelklikken op een item in de attributentabel om direct een object te selecteren en naar het geselecteerde object te zoomen.
 
 <img src="images/entries/50fa542fa614721b36cac2efce700c9800a33c59.gif" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Nass](https://github.com/lanckmann)
 ## Symbologie
-### Feature: Allow copying/pasting all styles from a layer to another
-When a layer has multiple styles, the layer tree context menu now contains a new "Copy All Styles" action. Triggering this will copy the definition of ALL the layer's styles to the clipboard.<br />Users can open the context menu on another layer and use the new "Paste All Styles" feature in order to paste copies of ALL of the original layer's styles to the target, removing the need to manually iterate through the existing styles on the original layer and paste styles one-by-one.
+### Mogelijkheid: Kopiëren/plakken van alle stijlen uit ene laag naar een andere toestaan
+Wanneer een laag meerdere stijlen heeft, bevat het contextmenu van de boom met lagen nu een nieuwe actie "Alle stijlen kopiëren". Activeren hiervan zal de definitie van ALLE stijlen van de lagen naar het klembord kopiëren.<br />Gebruikers kunnen het contextmenu op een andere laag openen en de nieuwe mogelijkheid "Alle stijlen gebruiken" om kopieën van ALLE stijlen van de originele laag naar het doel te plakken. Dit verwijdert de noodzaak om handmatig door de bestaande stijlen in de originele laag te gaan, en de stijleen een voor een te plakken.
 
 <img src="images/entries/76ce4e014c2eb3e29ac33b4b5708834c66961430.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Introduce additional grouped style categories in copy/pasting UI
-New grouped categories shortcuts have been added to the layer tree menu's copy/paste style sub-menu. This allows users to rapidly copy/paste a set of grouped categories across layers.
+### Mogelijkheid: Introduceren van aanvullende gegroepeerde stijlcategorieën in gebruikersinterface Kopiëren/Plakken
+Nieuwe sneltoetsen voor gegroepeerde categorieën zijn toegevoegd aan het submenu voor de boom met lagen voor het kopiëren/plakken van stijlen. Dat maakt het voor gebruikers mogelijk om snel een set gegroepeerde categorieën tussen lagen te kopiëren/plakken.
 
 <img src="images/entries/86c35bb07f30070746cfeed9bd533c786bba0df4.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Annotaties
-### Feature: Brand new annotations selection tool
-As a part of the implementation for [QEP \#344](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/344), which aims to introduce functionality to copy, move, and rotate annotation layers, the new selection tool provides interactive operations for annotation items, including:
-- selection of annotation item(s), with shift modifier to toggle selection of additional item(s)
-- mouse and keyboard movement of selected item(s)
-- deletion of selected item(s)
-- resizing of selected item(s) using the mouse handlers
-- rotation of selected item(s) using the mouse handlers
+### Mogelijkheid: Nagelnieuw gereedschap Annotaties selecteren
+Als deel van de implementatie van [QEP \#344](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/344) dat zich richt op het introduceren van functionaliteiten voor het kopiëren, verplaatsen en draaien van annotatielagen, verschaft het nieuwe gereedschap voor selecteren interactieve bewerkingen voor items Annotatie, inclusief:
+- selecteren van annotationitem(s), met de aanpassingstoets Shift om te schakelen voor het selecteren van aanvullende item(s)
+- muis- en toetsenbordverplaatsing van geselecteerde item(s)
+- verwijderen van geselecteerde item(s)
+- afmetingen wijzigen van geselecteerde item(s) met de handvatten voor de muis
+- draaien van geselecteerde item(s) met de handvatten voor de muis
 
 <img src="images/entries/db55791d9e7c92428f8165d661bc264fd09ae61c.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
-### Feature: Show text annotations in 3D map views
-When an annotation layer is set to render as 3D billboards, it also renders text annotations as billboards.<br />For line/rectangle text annotations, the billboard is placed at the center of the line/rectangle. Users can control the text format used for the 3D billboard. The original 2d annotation text format is ignored, allowing users<br />to design a readable/more appropriate text format for the 3D text alone.
+### Mogelijkheid: Tekstannotaties weergeven in 3D-kaartweergaven
+Wanneer een annotatielaag is ingesteld om te renderen als 3D-plakborden, rendert het ook tekstannotaties als plakborden.<br />Voor tekstannotaties lijn/rechthoek wordt het plakbord geplaatst in het midden van de lijn/rechthoek. Gebruikers kunnen de gebruikte tekstindeling voor het 3D-plakbord. De originele indeling 2D-annotatietekst wordt genegeerd, wat gebruikers in staat stelt<br />een leesbare/meer toepasselijke tekstindeling te ontwerpen voor alleen de 3D-tekst.
 
 <img src="images/entries/ce930ee001993bd8bd7ecf0477aac6e5e9436da1.png" class="img-responsive img-rounded" />
 

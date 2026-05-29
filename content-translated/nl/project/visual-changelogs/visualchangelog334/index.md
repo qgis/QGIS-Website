@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 29-10-2023
+releaseDate: '2023-10-29'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.34

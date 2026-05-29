@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 25-10-2019
+releaseDate: '2019-10-25'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.10

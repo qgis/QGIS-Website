@@ -42,7 +42,7 @@ For environments where that isn't possible or inconvienient there are still stan
 It's also possible to add the grids later by using the included "OSGeo4W Setup" to install the `proj-data` package. Or to use the also included command line tool [projsync](https://proj.org/en/stable/apps/projsync.html) to download grids for a given area.
 
 The weekly snapshots of the nightly qgis-dev package of OSGeo4W are for users that cannot use OSGeo4W (see below) for some reason or just prefer standalone installers. In the feature freeze phase, these also act as **release candidate** installers.
-## Online (OSGeo4W) installatieporgramma
+## Online (OSGeo4W) installatieprogramma
 Meer gevorderde gebruikers van QGIS zouden de pakketten van OSGeo4W willen gebruiken. Dit installatieprogramma maakt het mogelijk om verscheidene versies van QGIS parallel te installeren en ook veel efficiëntere updates uit te voeren, omdat alleen gewijzigde componenten worden gedownload en geïnstalleerd met elke nieuwe uitgave.
 
 De opslagplaats voor OSGeo4W bevat daarnaast veel software van andere OSGeo-projecten. QGIS en alle daarvoor noodzakelijke pakketten zijn aanwezig, naast Python, GRASS, GDAL enzovoort. Het installatiepakket geeft de mogelijkheid om direct vanaf internet te installeren of eerst de benodigde pakketten te downloaden en daarna te installeren. De gedownloade bestanden worden in een lokale map geplaatst voor toekomstige installaties. En zouden ook kunnen worden gebruikt om offline te installeren.:

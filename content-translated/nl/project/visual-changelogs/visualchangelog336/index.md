@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 23-02-2024
+releaseDate: '2024-02-23'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.36
@@ -533,7 +533,7 @@ Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 | Select by Location - Point that is snapped along a linestring, is only being selected when using 'Disjoint' predicate | [#53826](https://github.com/qgis/QGIS/issues/53826) | Not a bug (tolerance and snapping problem) |  |
 | [Topology Checker] Allow check does not have dangles on a second layer | [#52881](https://github.com/qgis/QGIS/issues/52881) | Not a bug. Marked as a feature request |  |
 | DWG Import Tool default polyline layer style - thick symbol applied when "width" field is NULL | [#55512](https://github.com/qgis/QGIS/issues/55512) | [PR #56187](https://github.com/qgis/QGIS/pull/56187) | [PR #56228](https://github.com/qgis/QGIS/pull/56228) |
-| Random Points in Polygons - Crash | [#55445](https://github.com/qgis/QGIS/issues/55445) | Can't reproduce |  |
+| Random Points in Polygons - Crash | [#55445](https://github.com/qgis/QGIS/issues/55445) | Kan niet worden gereproduceerd |  |
 | Buggy validation of closed QgsLineString | [#54022](https://github.com/qgis/QGIS/issues/54022) | [PR #56130](https://github.com/qgis/QGIS/pull/56130) | [PR #56229](https://github.com/qgis/QGIS/pull/56229) |
 | TIN: Enable fromWkb/fromWkt | niet gerapporteerd | [PR #56071](https://github.com/qgis/QGIS/pull/56071) | nee |
 | [OGC] Polygon: fix rings order | niet gerapporteerd | [PR #55306](https://github.com/qgis/QGIS/pull/55306) | nee |

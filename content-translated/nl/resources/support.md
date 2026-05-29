@@ -59,7 +59,7 @@ Lokale gebruikersgroepen voor QGIS zijn een fantastische plek om andere gebruike
 
 Bekijk [Gebruikersgroepen]({{< ref "community/groups" >}}) om meer te weten te komen over lokale gebruikersgroepen.
 ## Rapporteren van kwetsbaarheden in beveiliging 
-Als u denkt dat u een probleem met d ebeveiliging hebt gevonden, zoals kwetsbaarheden in QGIS of de afhankelijkheden daarvan, bekijk dan de [pagina Beveiliging]({{< ref "resources/support/security" >}}) voor gedetailleerde informatie over hoe het verantwoordelijk te rapporteren.
+Als u denkt dat u een probleem met de beveiliging hebt gevonden, zoals kwetsbaarheden in QGIS of de afhankelijkheden daarvan, bekijk dan de [pagina Beveiliging]({{< ref "resources/support/security" >}}) voor gedetailleerde informatie over hoe het verantwoordelijk te rapporteren.
 ## Project Steering Committee (PSC)
 Als u contact moet opnemen met iemand van het QGIS Project Steering Committee (PSC) voor zaken op wettelijk, handelsmerk, fondsenwerving of administratief gebied **(niet voor verzoeken om algemene ondersteuning)**, gebruik dan de volgende mailinglijst of e-mailadres:
 

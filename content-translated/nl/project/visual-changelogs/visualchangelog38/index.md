@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 21-06-2019
+releaseDate: '2019-06-21'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.8
@@ -20,7 +20,7 @@ QGIS 3.8 brengt een uitgebreide lijst nieuwe wijzigingen en heel veel polijsten 
 
 We willen onze dank uitspreken aan alle ontwikkelaars schrijvers van documentatie, testers en alle andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen). Vanuit de QGIS gemeenschap hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere wijze betrokken wilt zijn in het opwaarderen van QGIS, kijk dan ook eens op qgis.org en help een handje!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate/donors.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sustaining members is provided below - our very great thank you to all of our supporters!
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote en kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst met donoren]({{< ref "/funding/donate/donors.md" >}}). Als u een officieel dragend lid voor het project zou willen worden, bekijk dan [onze pagina voor dragende lidmaatschappen]({{< ref "/funding/membership.md" >}}) voor details. Ondersteuning van QGIS helpt ons om fondsen te verkrijgen voor onze halfjaarlijkse ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige dragende leden wordt hieronder weergegeven - een welgemeend bedankt voor al onze ondersteuners!
 
 {{<fund type="active" >}}
 
@@ -29,7 +29,7 @@ QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor he
 {{<table-of-contents >}}
 ## Kaartgereedschap
 ### Mogelijkheid: Cartesiaanse maateenheden forceren bij meten van afstanden/gebieden
-In 3.8, we added an option to the measurement tool which forces Cartesian measurements for distance or area measurements. Previously, the measurement tools always used ellipsoidal/geodesic area and distance calculations, but there\'s occasions when this is not desirable and users require pure Cartesian calculations instead.
+In 3.8 hebben we een optie toegevoegd aan het Gereedschap Meten dat cartesiaanse maateenheden forceert voor metingen van afstanden of gebieden. Eerder gebruikten de gereedschappen voor meten altijd ellipsoïde/geodesische berekeningen voor gebied en afstand, maar er zijn gevallen waarin dat niet gewenst is en gebruikers in plaats daarvan pure cartesiaanse berekeningen eisen.
 
 ![image2](images/entries/e912304d18194a43111a2f054b7f1dba931985d4.webp)
 
@@ -38,13 +38,13 @@ Dit werd mogelijk gemaakt door [Oslandia](https://oslandia.com)
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://oslandia.com)
 ## Gebruikersinterface
 ### Mogelijkheid: Knop Opslaan naar sjabloon
-While QGIS has offered support for Project Templates for many years, we enhanced this in 3.8 and made it much simpler for users to create new templates. Now, users can create a new template from their current project by selecting \"Save To -\> Templates\" from the \"Project\" menu.
+Waar QGIS al vele jaren ondersteuning voor Sjablonen voor projecten biedt, hebben we dit in 3.8 verbeterd en het voor gebruikers veel eenvoudiger gemaakt om nieuwe sjablonen te maken. Gebruikers kunnen nu een nieuw sjabloon uit hun huidige project maken door te selecteren \"Opslaan naar -> Sjablonen\" in het menu \"Project\".
 
 ![image3](images/entries/8a99e041656f5d3d1fa504636aa36b0046efe532.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
-### Feature: Improved \"Zoom to Native Resolution\" behavior
-We\'ve improved the \"Zoom to Native\" action, so it now works correctly with tiled (e.g. WMTS/XYZ/ArcGIS MapServer) layers, by zooming to the closest native tile resolution. Additionally, we tweaked tile rendering so that pixel-perfect rendering occurs when the map is viewed at a native tile resolution. The result: super-crisp map renders when using tiled layer sources!
+### Mogelijkheid: Verbeterd gedrag \"Zoom naar eigen resolutie\"
+We hebben de actie \"Zoom naar eigen resolutie\" verbeterd zodat die nu correct werkt met getegelde (bijv. WMTS/XYZ/ArcGIS MapServer) lagen, door te zoomen naar de dichtstbijzijnde eigen tegelresolutie. In aanvulling daarop tweakten we het renderen van de tegels zodat pixel-perfect renderen optreedt als de kaart wordt bekeken met een eigen tegelresolutie. Het resultaat: super-heldere kaart renderen bij gebruiken van getegelde laagbronnen!
 
 ![image4](images/entries/61f13b52d685dcd67c7c9cc8dbb6daa269ed096a.webp)
 ### Mogelijkheid: Lagen slepen en neerzetten in widgets Kaartlagen
@@ -55,7 +55,7 @@ Aanvullend, voor algoritmes van Processing, kunnen lagen direct uit het paneel B
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Symbologie
 ### Mogelijkheid: Tekenreeksen met meerdere tekens voor markeringen lettertypen
-While QGIS has long offered support for rendering points using font-based character markers, we\'ve enhanced this functionality in 3.8 and now offer the ability to render multi-character strings! And since we\'re always aiming to make the QGIS application interface as user-friendly and pleasant to use as possible, we also took the opportunity to tweak the UI for font markers and squash a number of frustrating GUI issues which previous versions suffered from.
+Waar QGIS al lange tijd ondersteuning beidt voor het renderen van punten met op lettertypen gebaseerde markeringen, hebben we deze functionaliteit in 3.8 verbeterd en bieden nu de mogelijkheid om tekenreeksen met meerdere tekens te renderen! En omdat we er altijd naar streven om de interface voor de toepassing QGIS zo gebruikersvriendelijk en plezierig als mogelijk te maken, hebben we ook de mogelijkheid te baat genomen om de UI voor markeringen van lettertypen te tweaken en een aantal frustrerende problemen met de gebruikersinterface, waar eerdere versies last van hadden, op te lossen.
 
 ![image5](images/entries/a0f55caed98366ae6eaa0e413d425259aa613b9b.webp)
 
@@ -67,7 +67,7 @@ Een andere aanvulling op de nieuwe mogelijkheden voor symbologie in 3.8 is een n
 
 Deze mogelijkheid werd ontwikkeld door henrik
 ### Mogelijkheid: Symbooltype Hash-lijn
-QGIS loves cartography, and we know you love making pretty maps! So we\'ve added a brand-new line symbology option for \"Hashed Lines\". This line symbol type is designed to replicate the ArcGIS Hash Line symbol layer type, and allows for a repeating line segment to be drawn over the length of a feature (with a line-sub symbol used to render each individual segment).
+QGIS houdt van cartografie, en we weten dat u ervan houdt prachtige kaarten te maken! We hebben dus een nagelnieuwe optie \"Symbolen-lijn\" voor lijnsymbologie toegevoegd. Dit type lijnsymbool is ontworpen om het type symboollaag voor ArcGIS Hash Line na te bootsen, en maakt het mogelijk een herhalend lijnsegment te tekenen over de lengte van een object (met een lijn-subsymbool gebruikt om elk individueel segment te renderen).
 
 Alle beschikbare opties voor de bestaande symboollaag Markering zijn ook beschikbaar voor symbolen-lijnen, - bijv. eerste/laatste punt, middelpunten, regelmatige intervallen, data-bepaalde intervallen, etc. De lengte en hoek van de symbolen-lijn kan ook data-bepaalde 'override' hebben, die per lijnsegment worden geëvalueerd, wat het mogelijk maakt dat de symbolen-lijn van grootte en hoek wijzigt over de lengte van één enkel gerenderd object.
 
@@ -77,7 +77,7 @@ Deze mogelijkheid werd mogelijk gemaakt door anonymous
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Gemiddelde hoeken lijnen voor symbologie Markering en Symbolen-lijn
-In previous QGIS versions, when a marker line was rendered using interval or center point place placement, the symbol angles were determined by taking the exact line orientation at the position of the symbol. This often leads to undesirable rendering effects, where little \"jaggies\" or corners in lines which occur right at the position of the symbol cause the marker to be oriented at a very different angle to what the eye expects to see.
+In eerdere versies van QGIS, wanneer een markeringslijn werd gerenderd met intervallen of geplaatst op het middelpunt, werden de hoeken van de symbolen bepaald door de exacte oriëntatie van de lijn op de positie van het symbool te nemen. Dit leidt vaak tot ongewenste effecten bij het renderen, waar kleine \"kartelingen\" of hoeken in lijnen die precies op de plaats van het symbool voorkomen ervoor zorgen dat de markering wordt georiënteerd onder een hele andere hoek dan wat het oog verwacht te zien.
 
 We willen dat uw kaarten zo mooi mogelijk zijn, dus in QGIS 3.8 wordt de hoek van de markering in plaats daarvan berekend over een gespecificeerde afstand aan beide zijden van het symbool. Bijv. voor het middelen van de hoek van de lijn over 4mm betekent dat we de punten langs de lijn op 2mm van elke kant van de plaatsing van het lijnsymbool nemen, en die gebruiken in plaats van de lijnhoek voor dat symbool te berekenen. Dit heeft het effect van gladder maken (of verwijderen!) van hele kleine afwijkingen van de lijnrichting in zijn geheel, resulterend in een veel nettere visuele oriëntatie van markeringen of symbolen-lijnen.
 
@@ -91,20 +91,20 @@ Deze mogelijkheid werd mogelijk gemaakt door anonymous
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Instellingen voor verschuiving van symboollagen Puntpatroonvulling
-To round out the new symbology options we\'ve added in 3.8, the Point Pattern Fill symbol type has a new setting allowing for offsetting the markers in the pattern by a preset (or data-defined!) amount. This opens the door for many styling possibilities which were not possible in earlier versions, and further increases our compatibility with converted ArcGIS symbol and layer styles.
+Om de nieuwe opties voor symbologie, die we hebben toegevoegd in 3.8, af te ronden, heeft het symbooltype Puntpatroonvulling een nieuwe instelling die het mogelijk maakt de markeringen in het patroon te verschuiven met een vooringestelde (of data-bepaalde) hoeveelheid. Dit opent de deur voor vele mogelijkheden voor opmaken die in eerdere versies niet mogelijk waren, en vergroot verder onze compatibiliteit met geconverteerde symbool- en laagstijlen van ArcGIS.
 
 ![image9](images/entries/0cda10ddf2bac42e77b7cfc9ada813e4a26353a5.gif)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Live effect Vervagen straal is nu hi-dpi vriendelijk
-QGIS 3.8 brings a highly-desired fix to layer effects\' blurring radius (aka strength). In earlier QGIS versions, these blur settings did not take into account the DPI of the map render --- resulting in inaccurate effects rendering when exporting canvases/layouts at high resolutions. In 3.8, this was fixed and high-resolution map exports now match the results shown on the map canvas and are completely resolution-independent.
+QGIS 3.8 brengt een zeer gewenste reparatie voor het effect vervagen van straal voor de laag  (alias sterkte). In eerdere versies van QGIS hield deze instelling voor vervagen geen rekening met de DPI bij het renderen van de kaart --- wat resulteerde in onnauwkeurige effecten bij het renderen bij het exporteren van kaartvensters/lay-outs op hoge resoluties. In 3.8 werd dit gerepareerd en de export van kaarten met hoge resolutie komt nu overeen met de weergegeven resultaten in het kaartvenster en zijn volledig onafhankelijk van de resolutie.
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ## Labelen
 ### Mogelijkheid: Geometrie-generatoren voor labelen
-This is a huge one! During the developer\'s meeting in A Coruña, Matthias Kuhn took the opportunity to implement a frequently-asked-for feature in our labeling engine: Geometry Generator support.
+Dit is echt een grote! Tijdens de samenkomst van de ontwikkelaars in La Coruña nam Matthias Kuhn de gelegenheid om een veelgevraagde mogelijkheid te implementeren in ons programma voor labelen: ondersteuning voor Geometrie-generator.
 
-Just like Geometry Generators for symbols, we now allow label paths and positions to be calculated using dynamically-evaluated geometry expressions. You can take advantage of the rich support for geometry processing which QGIS\' expression engine exposes, and use this to do ALL sorts of pre-processing to your feature geometries before they are labelled. Want to place labels around the start or end point of linestring geometries? What about dynamically smoothing and simplifying the path used for labeling river features, based on the current map scale? How about buffering polygon objects inward by a percentage of their area, and then labeling around the perimeter of this shrunken area? Now, it\'s ALL possible, thanks to the power of labeling geometry generators!
+Net als Geometriegeneratoren voor symbolen staan we nu toe dat paden en posities voor labels worden berekend met dynamisch geëvalueerde geometrie-expressies. U kunt uw voordeel doen met de rijke ondersteuning voor verwerking van geometrie dat het programma van QGIS voor expressies laat zien, en dat gebruiken om ALLE soorten voorbereidende verwerking voor uw objecten uit te voeren, voordat zij worden gelabeld. Wilt u labels plaatsen rondom het begin- of eindpunt van geometrieën lijn? Wat denkt u van dynamisch gladmaken en vereenvoudigen van het pad gebruikt voor het labelen van objecten voor rivieren, gebaseerd op de huidige schaal van de kaart? Wat dacht u van het bufferen van polygoonobjecten intern met een percentage van hun gebied, en dan labelen langs de omtrek van dit gekrompen gebied? Nu is dit ALLEMAAL mogelijk, dankzij de kracht van geometriegeneratoren voor labelen!
 
 ![image10](images/entries/abc08ecfe2a879424b3f8e96c26b0391e342090e.webp)
 
@@ -112,11 +112,11 @@ Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://www.qgis
 
 Deze mogelijkheid werd ontwikkeld door [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
 ### Mogelijkheid: Kaartgereedschappen voor labels gebruiken nu klik-klik-gedrag
-Like the other QGIS digitizing and map tools, the \"Move Label\" and \"Rotate Label\" tools now use the standard left-click-to-start edit, left-click-to-end behavior. Consistency is good!
+Net als de andere gereedschappen voor digitaliseren en voor kaarten van QGIS, gebruiken de gereedschappen \"Label verplaatsen\" en \"Label draaien\" nu het standaardgedrag: met links klikken om bewerken te beginnen, met links klikken om te beëindigen. Consistentie is goed!
 ## 3D-objecten
 ### Mogelijkheid: Brede lijnen en accentueren van randen van polygonen
-Like all recent QGIS releases, in version 3.8 we\'ve significantly boosted QGIS\' 3D rendering capabilities. New 3D rendering features include:
-- Configurable line width (in screen units) for \"simple\" 3D lines (in previous versions they were always 1px wide)
+Net als in alle recente uitgaven van QGIS hebben we in versie 3.8 de mogelijkheden voor 3D renderen significant opgewaardeerd. Nieuwe mogelijkheden voor 3D-rendering omvatten:
+- Configureerbare breedte van lijnen (in schermeenheden) voor \"eenvoudige\" 3D-lijnen (in eerdere versies waren ze altijd 1 px breed)
 - Optioneel accentueren van randen van 3D-polygonen
 
 ![image11](images/entries/6e77320c7766d11f25893f9c2de2e7de57eab488.webp)
@@ -125,7 +125,7 @@ Dit werd mogelijk gemaakt door Andreas Neumann
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ### Mogelijkheid: 3D-animaties exporteren
-Another exciting change we\'ve introduced in QGIS 3.8 is the ability to export your 3D animations! These are exported as a series of png/jpg/\... images, which can be easily merged into .avi or other standard video files (using external tools).
+Een andere spannende wijziging die we hebben geïntroduceerd in QGIS 3.8 is de mogelijkheid om uw 3D-animaties te exporteren! Deze worden geëxporteerd als een serie afbeeldingen PNG/JPG/\…, die gemakkelijk kunnen worden samengevoegd tot .avi of andere standaard videobestanden (met externe programma's).
 
 ![image12](images/entries/f0d7bb5632bfaa9c9feafb12e7b258c312ba66a6.webp)
 
@@ -150,9 +150,9 @@ We hebben nieuwe gereedschappen toegevoegd voor het automatisch opnieuw position
 
 Deze mogelijkheid werd ontwikkeld door Matteo Nastasi
 ### Mogelijkheid: Noordpijlen maken
-We\'ve listened to user feedback which indicated that the previous approach for creating north arrows within print layouts was too difficult, and consequently have added a new button in the Print Layout Designer for direct north arrow creation. This button is a shortcut to adding a picture item, setting it to a north arrow picture, and linking it with a map. The end result is identical, but it\'s much easier for new users to understand if we expose it as an explicit \"North Arrow\" item!
+We hebben geluisterd naar de terugkoppeling van gebruikers die aangaven dat de eerdere benadering voor het maken van noordpijlen in de afdruklay-out te moeilijk was, en hebben als consequentie daarvan een nieuwe knop gemaakt in de ontwerper voor afdruklay-out om direct noordpijlen te maken. Deze knop is een sneltoets voor het toevoegen van een item afbeelding, het instellen als een afbeelding voor een noordpijl, en het koppelen aan een kaart. Het eindresultaat is identiek, maar het is voor nieuwe gebruikers veel gemakkelijker te begrijpen als we het zichtbaar maken als een expliciet item \"Noordpijl\"!
 
-Even experienced users will likely appreciate the improved workflow, including automatically linking the picture rotation to a sensible default map choice (if a map is selected, it\'s used. If not, the topmost map item under the newly drawn north arrow is used. If there\'s none, the layout\'s \'reference map\' (or biggest map) is used as a fallback).
+Zelfs ervaren gebruikers zullen de nieuwe werkstroom waarderen, inclusief het automatisch koppelen van de rotatie van de afbeelding aan een logische standaardkeuze voor de kaart (als een kaart is geselecteerd, wordt die gebruikt). Indien niet geselecteerd wordt, wordt het bovenste kaartitem onder de nieuw getekende noordpijl gebruikt. Als die er niet is, wordt de \'verwijzingskaart\' voor de lay-out (of de grootste kaart) gebruikt als uitwijkmogelijkheid).
 
 ![image14](images/entries/7a0dd68c9a38f6e4b4f0177ae53978710df89ad5.webp)
 
@@ -163,27 +163,27 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-
 ### Mogelijkheid: Ondersteuning voor sorteren op voor functies voor samenvoegen
 Omdat bepaalde expressies voor samenvoegen vereisen dat de resultaten in een bepaalde volgorde staan, maken we nu het beheren van de volgorde waarin objecten worden toegevoegd aan de samenvoeging bij het evalueren van de expressie, mogelijk.
 
-E.g. `concatenate("Station",concatenator:=',', order_by:="Station")` will give a comma-separated list of station names in alphabetical order, rather than layer feature order.
+Bijv. `concatenate("Station",concatenator:=',', order_by:="Station")` zal een komma-gescheiden lijst met namen van stations geven in alfabetische volgorde, in plaats van in de volgorde van objecten van de laag.
 
 ![image15](images/entries/024918bb03f4620a2b5d32926322d0644c782bb8.webp)
 
 Dit werd mogelijk gemaakt door [SMEC/SJ](https://www.smec.com/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: Simplified variant of \"attribute\" function
-This improvement brings a second variant for the existing \"attribute\" function. The \"attribute\" function in previous QGIS releases required both a target feature and attribute name to be specified. The new version is much simpler, automatically using the current feature and only requiring an attribute name.
+### Mogelijkheid: Vereenvoudigde variant van functie \"attribute\"
+Deze verbetering brengt een tweede variant voor de bestaande functie \"attribute\". De functie \"attribute\" in eerdere uitgaven van QGIS vereiste dat zowel een doelobject als een naam van een attribuut was gespecificeerd. De nieuwe versie is veel eenvoudiger, gebruikt automatisch het huidige object en vereist alleen de naam van een attribuut.
 
 Bijv.
 
 Eerder gedrag:
 
-`attribute($currentfeature, 'name' )` -\> returns value stored in \'name\' attribute for the current feature
+`attribute($currentfeature, 'name' )` -> opgeslagen waarde in attribuut \'name\' voor het huidige object
 
 Verbeterd gedrag:
 
-`attribute( 'name' )` -\> returns the value stored in \'name\' attribute for the current feature
+`attribute( 'name' )` -> geeft waarde terug die is opgeslagen in attribuut \'name\' voor het huidige object
 
-It\'s just a faster shorthand version!
+Het is slechts een snellere verkorte versie!
 
 ![image16](images/entries/13f09f754dea12a13b9d9aeb8606e86582e87e3f.webp)
 
@@ -191,31 +191,31 @@ Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Punten ophalen van einde van geometerieën
-We added negative index support to the point_n(), angle_at_vertex(), and distance_to_vertex() functions, allowing for retrieval of vertices counting backward from the end of a geometry.
+We hebben ondersteuning voor negatieve index toegevoegd aan de functies point_n(), angle_at_vertex(), en distance_to_vertex(), wat het mogelijk maakt achterwaarts punten op te halen vanaf het einde van een geometrie.
 
 ![image17](images/entries/6eac3dcc7d9053f16733306878fb0cebf993737a.webp)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ### Mogelijkheid: Nieuwe functies voor expressies
-As always, a new QGIS release brings a bunch of new functions for use within QGIS\' expression engine. These new functions add increased flexibility and power to the expression engine, and everywhere it\'s used throughout QGIS. This round, we\'ve added a set of new functions which make it super-easy to operate on file names and paths.
+Zoals gewoonlijk brengt een nieuwe uitgave van QGIS heel veel nieuwe functies om te gebruiken met het programma voor expressies in QGIS. Deze nieuwe functies voegen verhoogde flexibiliteit en kracht toe aan het programma voor expressies, en overal in QGIS waar het wordt gebruikt. Deze ronde hebben we een nieuwe set functies toegevoegd die het super gemakkelijk maken bestandsnamen en -paden te bewerken.
 
 Nieuwe functies voor expressies ontwikkeld door Nyall Dawson van North Road:
-- **base_file_name:** Returns the base name of the file without the directory or file suffix.
-- **file_exists:** Returns true if a file exists
-- **file_name:** Returns the file name from a full path
-- **file_path:** Returns the directory/path from a full file path
-- **file_size:** Returns a file size
-- **file_suffix:** Returns a files suffix/extension
-- **is_directory:** Returns true if a file path is a directory
-- **is_file:** Returns true if a file path is a file
+- **base_file_name:** Geeft de basisnaam van het bestand terug zonder de map of het achtervoegsel van het bestand.
+- **file_exists:** Geeft true terug als een bestandspad bestaat
+- **file_name:** Geeft de bestandsnaam uit een volledig pad terug
+- **file_path:** Geeft de map/pad uit een volledig bestandspad terug
+- **file_size:** Geeft de grootte van een bestand terug
+- **file_suffix:** Geeft het achtervoegsel/extensie van een bestand terug
+- **is_directory:** Geeft true terug als een bestandspad een map is
+- **is_file:** Geeft true terug als een bestandspad een bestand is
 
 Nieuwe functies voor expressies ontwikkeld door Mathieu Pellerin van iMHere Asia:
-- **array_all:** Returns true if an array contains the all values of a given array.
-- **concatenate_unique:** Returns all unique strings from a field or expression joined by a delimiter.
+- **array_all:** Geeft true terug als een array alle waarden van een opgegeven array bevat.
+- **concatenate_unique:** Geeft alle unieke tekenreeksen terug uit een veld of expressie, samengevoegd door een scheidingsteken.
 
 ![image18](images/entries/e83795c8c525c092fa9b68172ecdf9f713e5f15a.webp)
-### Feature: New aggregation method: concatenate_unique
-We added a new function `concatenate_unique()` to the expression engine (and Processing\'s \"aggregate\" algorithm) to support concatenating only unique values from a list or set of features.
+### Mogelijkheid: Nieuwe methode voor samenvoegen: concatenate_unique
+We hebben een nieuwe functie `concatenate_unique()` toegevoegd aan het programma voor expressies (en het algoritme voor Processing\'s \"aggregate\") voor ondersteuning bij het samenvoegen van alleen unieke waarden uit een lijst of set objecten.
 
 ![image19](images/entries/77c53d02f719feaf03e7e3d9cea8468645aa81e3.webp)
 
@@ -230,7 +230,7 @@ Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/
 
 Deze mogelijkheid werd ontwikkeld door [Olivier Dalang and OPENGIS.ch](https://www.opengis.ch)
 ### Mogelijkheid: Geschakelde punten toevoegen op eindpunt
-In QGIS 3.0, we added the ability to extend an existing line feature by clicking a \"+\" indicator at the start or end of line features when using the node tool. Version 3.8 extends this functionality by allowing addition of more than one vertex using the \"+\" button.
+In QGIS 3.0 hebben we de mogelijkheid toegevoegd om een bestaand lijnobject te verlengen door te klikken op de indicatie \"+\" aan het begin of einde van lijnobjecten met het gebruik van het gereedschap Knopen. Versie 3.8 breidt deze functionaliteit uit door het toevoegen van meer dan één punt met de knop \"+\" toe te staan.
 
 ![image21](images/entries/a58caabea738a7e34529b9aeb2bb1d4cd307cf50.gif)
 
@@ -247,7 +247,7 @@ Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch)
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
 ## Formulieren en widgets
 ### Mogelijkheid: Bladeren door lijst met objecten toestaan
-| arrows allow browsing the feature list in the attribute table in form view | the current edited feature can be highlighted and the map canvas automatically panned or zoomed
+| pijlen voor bladeren door de lijst met objecten in de attributentabel in Formulierweergave | het momenteel bewerkte object kan worden geaccentueerd en het kaartvenster kan automatisch worden verschoven of gezoomd
 ### Mogelijkheid: Widget HTML-formulier
 Dankzij de genereuze bijdrage van A.R.P.A Piemonte (een van de Italiaanse regionale agentschappen voor het milieu) hebben we een nieuw widget voor een formulier ontwikkeld met HTML-body en toegang tot waarden van objecten en expressies.
 
@@ -265,7 +265,7 @@ Dit werd mogelijk gemaakt door [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Door objecten in de attributentabel bladeren in formulierweergave
-We\'ve added the possibility to browse through the attributes of features in a layer. This makes workflows for *asset management* a **lot** easier! You can:
+We hebben de mogelijkheid toegevoegd om te bladeren door de attributen van objecten op een laag. Dit maakt werkstromen voor *beheren van bezit* **veel** gemakkelijker! U kunt:
 1. Een filter definiëren
 2. Door alle overeenkomende objecten bladeren
 3. Nakijken en aanpassen
@@ -280,8 +280,8 @@ Dit werd mogelijk gemaakt door [regioDATA](https://www.regiodata-gmbh.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud, OPENGIS.ch](https://www.opengis.ch)
 ## Processing
-### Feature: Add \"Save layer styles into GeoPackage\" option for Package Layers algorithm
-QGIS loves GeoPackage, so it\'s likely no surprise that every new QGIS version brings improvements to GeoPackage handling! In 3.8, we enhanced the \"Package Layers\" Processing algorithm so that it now allows embedding the current layer styles directly into the packaged layers!
+### Mogelijkheid: Optie \"Laagstijlen opslaan naar GeoPackage\" voor algoritme Pakketlagen toegevoegd
+QGIS houdt van GeoPackage, dus is het waarschijnlijk geen verrassing dat elke nieuwe versie van QGIS verbeteringen voor de afhandeling van GeoPackage met zich meebrengt! In 3.8, verbeterden we het algoritme voor Processing \"Pakketlagen\", zodat het nu het inbedden van de huidige laagstijlen, direct in de pakketlagen toestaat!
 
 ![image26](images/entries/ebabefc4ccc4b71dcffda0508834b709fddec635.webp)
 
@@ -291,7 +291,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-
 ### Mogelijkheid: Analyse Overlappen 
 Dit nieuwe algoritme voor Processing berekent het gebied en het bedekkingspercentage waarmee objecten op een invoerlaag worden overlapt door objecten uit een selectie van overleglagen. Nieuwe attributen worden toegevoegd aan de uitvoerlaag die het totale overlappende gebied aangeven en het percentage van de invoerobjecten die worden overlapt door elk van de geselecteerde overleglagen.
 
-This is quite a common GIS task request, yet is full of traps for inexperienced users, and the amount of manual data work usually done by users to calculate these figures can often lead to mistakes and inaccurate results. We want to make spatial analysis as easy and foolproof as possible, so we\'ve added Overlap Analysis as an inbuilt tool which allows this task to be done in a single step without risk of human error.
+Dit is eigenlijk een veel voorkomend verzoek voor een taak van GIS, maar toch zit het vol met vallen voor niet ervaren gebruikers, en de hoeveelheid handwerk met de gegevens die door gebruikers wordt uitgevoerd om de cijfers te berekenen kunnen vaak leiden tot fouten en onnauwkeurige resultaten. We willen ruimtelijke analyse zo gemakkelijk en foutenproef maken als mogelijk is, dus hebben we de Analyse Overlappen toegevoegd als een ingebouwd gereedschap dat het mogelijk maakt deze taak in één stap uit te voeren, zonder gevaar voor menselijke fouten.
 
 ![image27](images/entries/d265fa2b9bab9184d25244f0cd8aececb5136e66.webp)
 
@@ -299,16 +299,16 @@ Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Afronden van waarden toestaan in Uitnemen/clippen op bereik
-We\'ve added a parameter to the Processing algorithm \'Extract Layer Extent\' to round the extent bounding box coordinates to a certain interval. While rounding, the bounding box will only ever be enlarged, to ensure it will always cover the input data set. (I.e. the x and y minimum coordinates are rounded down, and x and y maximum coordinates are rounded up).
+We hebben een parameter toegevoegd aan het algoritme voor Processing \'Uitnemen/clippen op bereik\' om de coördinaten van het begrenzingsvak van het bereik af te ronden tot een bepaalde interval. Bij het afronden zal het begrenzingsvak altijd alleen maar worden vergroot, om ervoor te zorgen dat het de ingestelde invoergegevens zal bedekken. (d.i. de minimum X- en Y-coördinaten worden naar beneden afgerond, en de maximum X- en Y-coördinaten worden naar boven afgerond).
 
 ![image28](images/entries/6b783ea6f8bb83c8f45844681ed7221126be4782.webp)
 
 Deze mogelijkheid werd ontwikkeld door Raymond Nijssen
 ### Mogelijkheid: Nieuwe opties voor automatisch vullen van batch Processing
-In QGIS 3.8 we moved the existing \"double click column header\" to fill values down functionality to a new \"Auto fill\" button in the Processing Batch dialog, making this feature much more user-discoverable (we suspect many users had no idea this handy shortcut even existed!). In addition, we\'ve added TONS of new functionality to easily auto-populate the batch table. These include:
-- File or layer parameters can now be batch populated by searching for files in a directory with a matching filename pattern (including recursive searches!). Ever needed to auto convert 100s of Shapefiles from a set of folders? Now it\'s easy to do!
+In QGIS 3.8 hebben we de bestaande functionaliteit \"dubbelklik op kolomkop\" om waarden in te vullen verplaatst naar een nieuwe knop \"Autom. vullen\" in het dialoogvenster voor Processing voor Batch, wat deze mogelijkheid veel meer te ontdekken maakt voor gebruikers (we vermoeden dat veel gebruikers geen idee hadden dat deze handige sneltoets al bestond!). In aanvulling daarop hebben we TONNEN aan nieuwe functionaliteit toegevoegd om de tabel voor de batch gemakkelijker automatisch te vullen. Deze omvatten:
+- Parameters voor bestand of laag kunnen nu worden gevuld in de batch door te zoeken naar bestanden in een map met een overeenkomend patroon voor de bestandsnaam (inclusief recursieve zoekacties!). Ooit automatisch enkele honderden Shapefiles moeten converteren uit een verzameling mappen? Nu is dat gemakkelijk te doen!
 - Een optie om berekende waarden uit een expressie van QGIS toe te voegen, wat het mogelijk maakt complexe op bereik gebaseerde waarden toe te voegen aan het dialoogvenster (bijv. waarden tussen 100-1000, verhogend met 50)
-- A \"Calculate by Expression\" option allows for updating existing batch table cells using the results of a QGIS expression. These expressions can freely utilise other parameter values from the input batch rows, making it easy to craft the exact output file name you desire based on the other columns values in a batch row.
+- Een optie \"Berekenen met expressie\" die het mogelijk maakt bestaande cellen in de tabel van de batch bij te werken met de resultaten van een expressie van QGIS. Deze expressies kunnen vrijelijk andere waarden van parameters uit de rijen voor invoer gebruiken. Wat het gemakkelijker maakt de exacte naam voor de uitvoer samen te stellen die u wilt, gebaseerd op de andere waarden in kolommen van een rij in de batch.
 
 ![image29](images/entries/e20e687223b884d70737f09130f0e9792974eed6.webp)
 
@@ -316,7 +316,7 @@ Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: XYZ-rastertegels maken
-We\'ve added a brand-new algorithm to generate raster \"XYZ\" tiles using the current QGIS project. Tile images can be saved as individual images in directory structure, or as a single file in the \"MBTiles\" format.
+We hebben een nagelnieuw algoritme toegevoegd om raster \"XYZ\"-tegels te maken met het huidige project van QGIS. Tegelafbeeldingen kunnen als individuele afbeeldingen worden opgeslagen in een mappenstructuur, of als een enkel bestand in de indeling \"MBTiles\".
 
 ![image30](images/entries/b9af6c101c6c22836c4dec3b78a6ce3d6b7e1bcd.webp)
 
@@ -326,15 +326,15 @@ Deze mogelijkheid werd ontwikkeld door [Lutra Consulting](https://www.lutraconsu
 ### Mogelijkheid: Wederopstanding van de provider OTB
 QGIS 3.8 brengt de provider OTB voor Processing terug, die werd verwijderd bij de update naar QGIS 3.0. De provider werd bijgewerkt om alle nieuwigheden te gebruiken die beschikbaar zijn in Processing in QGIS 3, en is wederom out-of-the-box beschikbaar voor al uw wensen op het gebied van analyses van afbeeldingen!
 
-(*Note that OTB is a third party dependency which must be manually installed by users. Instructions on installing OTB are available \`here \<https://gitlab.orfeo-toolbox.org/orfeotoolbox/qgis-otb-plugin#open-processing-settings\>\`\_\_*)
+(*Onthoud dat OTB een derde partij-afhankelijkheid is die handmatig moet worden geïnstalleerd door gebruikers. Instructies voor het installeren van OTB zijn \`hier \<https://gitlab.orfeo-toolbox.org/orfeotoolbox/qgis-otb-plugin#open-processing-settings\>\`\_\_* beschikbaar.)
 
 ![image31](images/entries/77dfad7d869283213cfc54a96e5ced2ad69d259a.webp)
 
 Deze mogelijkheid werd ontwikkeld door Rashad Kanavath
 ### Mogelijkheid: Variabelen voor expressies voor een model
-We\'ve added a new \"Model Variables\" dock panel to the model editor, allowing you to create and set custom expression variables for use in your Processing models. These variables are available anywhere expressions are evaluated within the model, so you can use them as input parameter values for child algorithms, within data-defined dynamic parameters, etc.
+We hebben een nieuw vast te zetten paneel \"Modelvariabelen\" aan Grafische modellen bouwen toegevoegd, wat het voor u mogelijk maakt aangepaste variabelen voor expressie te maken en in te stellen om te gebruiken in de modellen voor Processing. Deze variabelen zijn overal beschikbaar waar expressies worden geëvalueerd in het model, zodat u ze kunt gebruiken als waarden voor parameters voor de invoer voor kind-algoritmes, in data-bepaalde dynamische parameters, etc.
 
-The prime use case here is for models which use a constant value throughout multiple steps within the model (e.g. \@target_resolution: a target raster resolution, \@max_simplification: a simplification value for input features coming from different sources, etc). Previously, you\'d need to hunt down and replace these values in multiple places when you wanted to tweak them. By replacing them with variables in your model you only have a single place you need to edit these values when you want to adjust them!
+Het primaire geval om te gebruiken is hier modellen die een constante waarde gebruiken in meerdere stappen binnen het model (bijv. \@target_resolution: een doelrasterresolutie, \@max_simplification: een waarde voor vereenvoudiging voor invoerobjecten die uit verschillende bronnen komen, etc.). Eerder moest u deze waarden op meerdere plaatsen opzoeken en vervangen als u ze wilde aanpassen. Door ze te vervangen door variabelen in uw model heeft u slechts één enkele plaats waar u deze waarden dient te bewerken als u ze wilt aanpassen!
 
 Modelvariabelen worden opgeslagen binnen een individueel model van Processing zelf, en worden niet weergegeven buiten het dialoogvenster van Grafische modellen bouwen.
 
@@ -344,7 +344,7 @@ Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Verbeterde Grafische modellen bouwen UI
-We\'ve added numerous usability improvements to the Processing Graphical Modeler, including
+We hebben talloze verbeteringen voor het gebruik toegevoegd aan Grafische modellen bouwen van Processing, inclusief
 - De aanvulling van nuttige Helptips bij het met de muis gaan over componenten van het model
 - Algoritmes en invoer verbonden aan de componenten van het model worden geaccentueerd als u met de muis over verschillende delen van het model gaat, wat het veel gemakkelijker maakt de stroom van het model te visualiseren en verbindingen binnen complexe modellen
 - Typen invoerparameters worden nu weergegeven in de titel van het dialoogvenster voor definitie van de parameters
@@ -360,11 +360,11 @@ Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Raster Booleaanse logische OF/EN algoritmes
-In version 3.8 we\'ve added new algorithms which calculate the boolean OR or AND for a set of input rasters. For AND, if all of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, otherwise it will be set to 0. For OR, if ANY of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, else 0.
+In versie 3.8 hebben we nieuwe algoritmes toegevoegd die de booleaanse OF of EN berekenen voor een set invoerrasters. Voor EN, als alle invoerrasters een niet-nulwaarde hebben voor een pixel, zal die pixel worden ingesteld op 1 in het uitvoerraster, anders zal het worden ingesteld op 0. Voor OF, als ENIG invoerraster een niet-nulwaarde voor een pixel heeft, zal die pixel worden ingesteld op 1 in het uitvoerraster, anders 0.
 
 Een parameter voor een verwijzingslaag stelt u in staat een bestaande rasterlaag te specificeren als verwijzing bij het maken van het uitvoerraster. Het uitvoerraster zal hetzelfde bereik, CRS, en dimensies voor de pixels hebben als deze laag.
 
-By default, a nodata pixel in ANY of the input layers will result in a nodata pixel in the output raster. If you check the \'Treat nodata values as false\' option, then nodata inputs will be treated the same as a 0 input value.
+Standaard zal een pixel in ENIGE invoerlaag resulteren in een pixel GEEN GEGEVENS in het uitvoerraster. Als u de optie \'Waarden geen gegevens als false behandelen\' selecteert, dan zal invoer van GEEN GEGEVENS hetzelfde worden behandeld als de waarde voor de invoer 0.
 
 Deze nieuwe algoritmes zorgen voor veel eenvoudiger berekeningen in rasters voor Booleaanse logica, zonder de complexiteit van het gebruiken van Raster calculator. Zij zijn ook dynamisch op schaal te brengen voor elk aantal invoerrasters (anders dan de Raster calculator), en zijn zo dus veel meer flexibel als zij worden gebruikt in uw modellen van Processing.
 
@@ -372,29 +372,29 @@ Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Nieuwe typen invoerparameters voor afdruklay-outs en items van afdruklay-out
-By adding new parameter types for Print Layouts and Print Layout items, we\'ve opened up QGIS 3.8 to a whole new world of Processing algorithms which operate on print layouts. These new parameter types allow for creation of Processing algorithms and graphical models which prompt users to select a print layout and/or an item on the layout when run.
+Door het toevoegen van nieuwe types parameter voor afdruklay-out en items voor afdruklay-out hebben we QGIS 3.8 geopend voor een hele nieuwe wereld van algoritmes voor Processing die werken op afdruklay-outs. Deze nieuwe types parameter maken het mogelijk algoritmes en grafische modellen te maken voor Processing die de gebruikers vragen een afdruklay-out te selecteren en/of een item van de lay-out bij het uitvoeren ervan.
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Nieuw type parameter voor schalen van kaarten
-We\'ve added a new parameter type specifically for map scales, QgsProcessingParameterScale. Scale values are evaluated using self.parameterAsDouble, which return the map scale denominator (matching the standard in other parts of the QGIS API).
+We hebben een nieuw type parameter toegevoegd, specifiek voor schalen van kaarten, QgsProcessingParameterScale. Waarden voor de schaal worden geëvalueerd met self.parameterAsDouble, die de noemer voor de schaal van de kaart teruggeeft (wat overeenkomt met de standaard in ander delen van de API van QGIS).
 
 Parameters voor de schaal worden aan de gebruikers weergegeven in het standaard QgsScaleWidget, wat het combinatievak met vooraf gedefinieerde schalen omvat en een knop voor een sneltoets die overeenkomt met de huidige schaal van de kaart. Het toevoegen van dit nieuwe type parameter stelt u in staat algoritmes en modellen voor Processing te maken die bij de uitvoering een keuze voor een schaal vereisen.
 
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: Improved \"point\" parameter handling
-We improved the workflow for algorithms with a \"point\" input parameter. When picking the point coordinate from a map you can now take advantage of QGIS snapping tools, allowing you to exactly match the point parameter to a feature\'s boundary.
+### Mogelijkheid: Verbeterde afhandeling van parameter \"punt\"
+We verbeterden de werkstroom voor algoritmes met een parameter voor de invoer \"punt\". Bij het kiezen van het puntcoördinaat vanaf een kaart kunt u nu uw voordeel doen met de gereedschappen voor snappen, die u in staat stellen de parameter voor het punt exact overeen te laten komen met de grens van een object.
 
 Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: New \"Print Layout Map Extent to Layer\" algorithm
+### Mogelijkheid: Nieuw algoritme \"Bereik lay-outkaart afdrukken naar laag\"
 Voordeel trekkend uit de nieuwe faciliteiten voor de toegang tot afdruklay-outs in Processing, hebben we een nieuw algoritme toegevoegd dat een polygoonlaag maakt die het bereik van een kaartitem van afdruklay-out omvat. De laag voor de uitvoer bevat ook handige attributen die de grootte van de kaart (in eenheden voor de lay-out), schaal en rotatie specificeren.
 
-If you\'ve ever wanted to create an advanced overview indicator, and the inbuilt layout tools haven\'t sufficed --- this new algorithm is for you!
+Als u ooit een geavanceerde indicatie voor een overzicht wilde en de ingebouwde gereedschappen voor de lay-out onvoldoende waren --- is dit nieuwe algoritme iets voor u!
 
 ![image33](images/entries/a10b7ebe75528742860a666be9de2d1365de3b73.webp)
 
@@ -409,7 +409,7 @@ Dit nieuwe algoritme is een handige sneltoets voor het toevoegen van velden X en
 Deze mogelijkheid werd mogelijk gemaakt door SMEC/SJ
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
-### Feature: \"Join attributes by nearest\" algorithm
+### Mogelijkheid: Algoritme \"Koppel attributen op dichtstbijzijnde\" 
 U kunt nu koppelingen K-nearest neighbour uitvoeren vanuit de Toolbox van Processing!
 
 QGIS 3.8 brengt een nieuw algoritme die een invoer vectorlaag neemt en een nieuwe vectorlaag maakt met aanvullende attributen in zijn attributentabel. De aanvullende attributen en hun waarden worden uit een tweede vectorlaag genomen waarbij objecten worden gekoppeld door de dichtstbijzijnde objecten uit elke laag te zoeken.
@@ -422,17 +422,17 @@ Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Algoritme Grass r.geomorphon 
-The upstream GRASS team has been hard at work creating a new GRASS module for terrain analysis --- \"r.geomorphon\". In 3.8 we expose their efforts via a new Processing tool, which calculates geomorphons (terrain forms) and associated geometry using a machine learning approach.
+Het voortreffelijke team van GRASS is hard bezig geweest een nieuwe module voor GRASS voor rasteranalyse te maken --- \"r.geomorphon\". In 3.8 laten we hun inspanningen zien via een nieuw gereedschap voor Processing. Die geomorfologieën (terreinvormen) en geassocieerde geometrie berekent met een benadering van machineleren.
 
 ![image36](images/entries/a0026a05eea40004dfd250cf1a2ff492fdeb1b58.webp)
 ### Mogelijkheid: GDAL algoritme Pansharpening 
-Another third party tool which we\'ve added to the Processing toolbox in QGIS 3.8 is the GDAL pansharpening tool. Now it\'s easy to take advantage of this fast, powerful tool in your Processing analysis scripts and models.
+Een ander gereedschap van een derde partij dat we in de Toolbox van Processing hebben toegevoegd in QGIS 3.8 is het gereedschap Pansharpening van GDAL. Het is nu eenvoudig voordeel te hebben van dit snelle en krachtige gereedschap in uw scripts en modellen voor analyses in Processing.
 
 ![image37](images/entries/35c02288524968f8ea021f9a64fcd64b9ec328f9.webp)
 
 Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 ### Mogelijkheid: Parameter voor voorvoegsel nieuwe velden voor algoritmes vooroverleggen
-We\'ve added overlay layer fields prefix parameter for the following algorithms:
+We hebben een parameter voor voorvoegsel nieuwe velden voor algoritmes voor overleggen toegevoegd voor de volgende algoritmes:
 - Algoritme Kruising
 - Algoritme Kruisingen van lijnen
 - Algoritme Symmetrisch verschil
@@ -452,7 +452,7 @@ Dit werd mogelijk gemaakt door [North Road](http://north-road.com)
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ## Algemeen
 ### Mogelijkheid: Projecten van QGIS binnen bestanden van GeoPackage
-Did we already say that QGIS loves GeoPackage? Need any more proof of this? Well, in QGIS 3.8, we\'ve added to ability to store QGIS projects directly inside GeoPackage files! Now you can create a totally self-contained GeoPackage which embeds a QGIS Project AND all the data used by the project. (Let\'s see Shapefiles match that one!)
+Hadden we al gezegd dat QGIS van GeoPackage houdt? Nog meer bewijs nodig? Wel, in QGIS 3.8 hebben we de mogelijkheid toegevoegd om projecten van QGIS direct op te slaan in bestanden van GeoPackage! Nu kunt u een totaal zelf-omvattend GeoPackage maken dat een project van QGIS inbed EN alle gegevens die door het project worden gebruikt. (We zullen zien of Shapefiles dat ook kan!)
 
 ![image39](images/entries/8750f1c2e3c3919926fd2cb97488da071f7efc85.webp)
 
@@ -461,15 +461,15 @@ Dit werd mogelijk gemaakt door [QCooperative](https://www.qcooperative.net)
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://www.itopen.it)
 ### Mogelijkheid: Veel verbeterde afhandeling voor transformeren van coördinaten
 Dankzij het onderliggende werk van de onvermoeibare teams van PROJ en GDAL ondersteunt QGIS nu heel veel verbeteringen in mogelijkheden voor geodetie en transformatie! Hoogtepunten omvatten:
-- The PROJ CRS database is now used to populate QGIS\' CRS selection lists, removing the custom database we used in previous releases. This means that ALL responsibility for CRS definitions and updating these sit were they belong, upstream in the PROJ library \-- and consequently you can expect to see QGIS CRS definitions being a closer match to the official definitions, and newer CRS definitions will be added much faster than in previous releases.. This change also means we\'ll be an exact match for projection handling as all other open-source geospatial tools which have completed the port to the latest PROJ version, such as GDAL 3.0.
-- We now rely entirely on PROJ\'s wonderful logic for generating the best coordinate operation to transform between CRS pairs. This means (amongst other stuff), we correctly support complex things like operations which require a \"pivot datum\", e.g. transformation to and from the GDA2020 coordinate systems.
+- De CRS-database van PROJ wordt nu gebruikt om de selectielijsten voor CRS in QGIS te vullen, waardoor de aangepaste database die we in eerdere uitgaven gebruikten kon verdwijnen. Dit betekent dat ALLE verantwoordelijkheid voor definities en bijwerken van CRS terug zijn waar zij horen, boven in de bibliotheek van PROJ --- en als consequentie daarvan mag u verwachten dat de definities voor CRS in QGIS veel dichter bij de officiële definities liggen, en dat nieuwe definities voor CRS veel sneller zullen worden toegevoegd dan in eerdere uitgaven. Deze wijziging betekent ook dat we een exacte overeenkomst hebben voor de afhandeling van projecties als alle andere open-bron-georuimtelijke programma's die zijn overgegaan naar de laatste versie van PROJ, zoals GDAL 3.0.
+- We vertrouwen nu volledig op de prachtige logica van PROJ voor het maken van de beste bewerking voor coördinaten om tussen paren van CRS te transformeren. Dit betekent, (naast andere dingen), dat we correct complexe dingen ondersteunen, zoals bewerkingen die een \"pivot datum\" vereisen, bijv. transformatie naar en vanuit de GDA2020 coördinatensystemen.
 - In plaats van de oudere benadering die QGIS gebruikte voor het transformeren van datums (onze eigen tabel blijven rondslepen of als bestanden voor verschuiven van rasters kunnen worden gebruikt), gebruiken we nu PROJ om dit te bepalen. Dit wijzigt de weergegeven gebruikersinterface aanmerkelijk als een gebruiker heeft geopteerd voor het handmatig kiezen van een uit te voeren transformatie als meerdere transformaties bestaan, en geven nu een vereenvoudigde lijst van beschikbare (en niet-beschikbare) paden weer.
-- We also use PROJ\'s database to populate lists of available ellipsoids for use in distance and area calculations. This has cleaned up the ellipsoid choices considerably, and added many additional ellipsoid definitions as a result.
+- We gebruiken ook de database van PROJ om lijsten van beschikbare ellipsoïden te vullen om te gebruiken bij het berekenen van afstanden en gebieden. Dit heeft de keuzes voor ellipsoïden behoorlijk opgeschoond, en voegde als een resultaat veel aanvullende definities voor ellipsoïden toe.
 - De UX voor het notificeren van gebruikers voor problemen in transformaties van coördinaten is enorm verbeterd, bijv. gebruikers worden nu gewaarschuwd als een meer nauwkeurig transformatie mogelijk is, maar niet te gebruiken op hun systeem (wegens ontbrekende .GSB-bestanden voor verschuiven van rasters). Waar mogelijk presenteren we gebruikers directe links voor het downloaden van deze vereiste/gewenste bestanden voor verschuiven van rasters. De intentie hier is om er voor te zorgen dat gebruikers worden geïnformeerd als transformaties kunnen worden verbeterd, in plaats van stilletjes terug te vallen op minder nauwkeurige opties.
-- Users also now have the option of placing grid shift files in a \"proj\" folder under their QGIS user profile. This change means users can install grid shift files and make them available in QGIS without requiring administrative rights.
-- We\'ve also completed a project which began back in the lead-up to 3.0, which ensures that project-specific transformation pathway settings are correctly respected EVERYWHERE a coordinate transform is performed. This also means we\'re ready for the next stage in handling 4d temporal based coordinate transforms (when these start to land in 2020 and beyond).
+- Gebruikers hebben nu ook de optie om bestanden voor het verschuiven van rasters te plaatsen in een map \"proj\" onder hun gebruikersprofiel van QGIS. Deze wijziging betekent dat gebruikers bestanden voor het verschuiven van rasters kunnen installeren en ze beschikbaar maken in QGIS zonder rechten als beheerder nodig te hebben.
+- We hebben ook een project voltooid dat begon in de aanloop naar 3.0, wat ervoor zorgt dat instellingen voor paden van projectspecifieke transformaties OVERAL juist worden gerespecteerd als een transformatie van coördinaten wordt uitgevoerd. Dit betekent ook dat we klaar zijn voor de volgende stap in het afhandelen van 4D-tijdelijk gebaseerde transformaties van coördinaten (als deze beginnen te komen in 2020 en daarna).
 
-A lot of this is only possible thanks to improvements in the underlying PROJ and GDAL libraries, which landed as a result of the GDAL \"barn raising\" effort. On the QGIS side, it was ONLY possible thanks to funding from the Australian ICSM.
+Veel hiervan is alleen mogelijk door de verbeteringen in de onderliggende bibliotheken van PROJ en GDAL, die zijn voortgekomen uit de inspanning \"barn raising\" van GDAL. Aan de zijde van QGIS was het ALLEEN mogelijk dankzij de fondsen van het Australische ICSM.
 
 Dit werd mogelijk gemaakt door [ICSM](https://www.icsm.gov.au/)
 
@@ -478,7 +478,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-
 ### Mogelijkheid: provider Postgres: ondersteuning toegevoegd voor gemaakte kolommen voor identiteit
 Deze mogelijkheid werd ontwikkeld door jef-n
 ### Mogelijkheid: Ondersteuning lijst tekenreeksen voor compatibele lagen
-QGIS 3.8 now fully supports disk-based layers with String List fields, allowing you to take advantage of QGIS\' flexible handling of list field types with these formats.
+QGIS 3.8 ondersteunt nu volledig op schijf gebaseerde lagen met velden String list, wat u de gelegenheid beidt voordeel te trekken uit de flexibele afhandeling van QGIS voor typen list-velden met deze indelingen.
 
 Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 ### Mogelijkheid: Veel verbeterde afhandeling voor afhandeling ArcGIS MapServer
@@ -486,16 +486,16 @@ We bouden de provider ArcGIS MapServer opnieuw op en voegden significante verbet
 - Getegelde lagen worden nu progressief geladen, met onmiddellijke terugkoppeling
 - We optimaliseerden de provider significant, wat resulteert in veel sneller opnieuw tekenen
 - Lagen van MapServer respecteren nu correct instellingen voor authenticatie en instellingen voor verwijzingen van HTTP.
-- \"Nested\" services are correctly shown in the QGIS browser panel
+- \"Geneste\" services worden correct weergegeven in het paneel Browser van QGIS
 - Services voor ImageServer kunnen met de provider worden toegevoegd
 
 Eindresultaat: lagen van MapServer zijn nu zo glad als zijde in QGIS!
 
 Deze mogelijkheid werd ontwikkeld door Nyall Dawson (North Road) & Mathieu Pellerin (iMHere Asia)
 ### Mogelijkheid: SQL Server: afhandelen van geometrieën v2, inclusief gebogen en geometrieën Z/M
-SQL Server users rejoice: QGIS now fully supports curved geometry types (and other \"version 2\" geometry fields)!
+Gebruikers van SQL Server, verheugt u: QGIS ondersteunt nu volledig typen gebogen geometrie (en andere geometrievelden \"versie 2\")!
 
-In past QGIS versions, the SQL Server provider would only handle version 1 type geometries, and could only show straight feature types. In 3.8, we\'ve added full support for version 2 geometries. This change also allows full support for Z or M enabled geometry types! Additionally, we fixed several known issues with geography field types.
+In de eerdere versies van QGIS wilde de provider SQL Server alleen typen geometrie versie 1 afhandelen, en kon alleen rechte typen objecten weergeven. In 3.8 hebben we volledige ondersteuning voor geometrieën versie 2 toegevoegd. Deze wijziging maakt ook volledige ondersteuning voor Z- of M-typen ingeschakelede geometrie! Aanvullend hebben we verscheidene problemen met geografische veldtypen opgelost.
 
 Deze mogelijkheid werd ontwikkeld door [Tamas Szekeres](https://github.com/szekerest)
 ### Mogelijkheid: WMS: Één filter definiëren voor verscheidene lagen
@@ -503,7 +503,7 @@ Soms dient u hetzelfde filter te definiëren voor elke geselecteerde laag bij he
 
 `&FILTER=layer1:"column1" = 'value1';layer2:"column1" = 'value1';layer3:"column1" = 'value1'`
 
-With QGIS 3.8, we\'ve simplified this, and now allow the filter format:
+Met QGIS 3.8 hebben we dit vereenvoudigd en maken nu de indeling voor het filter mogelijk als:
 
 `&FILTER=layer1,layer2,layer3:"column1" = 'value1'`
 
@@ -511,7 +511,7 @@ Deze mogelijkheid werd mogelijk gemaakt VEOLIA
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
 ### Mogelijkheid: Ondersteuning voor bogen bij exporteren naar DXF
-You can now export curved geometry layers to DXF format without segmentizing the features --- no more loss of curves!
+U kunt nu lagen met gebogen geometrieën exporteren naar de indeling DXF zonder de objecten op te delen in segmenten --- geen verlies van bogen meer!
 
 ![image41](images/entries/d0543abc36459754e4e3630e3703f0f1169ba7b3.webp)
 
@@ -520,14 +520,14 @@ Dit werd mogelijk gemaakt door [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/
 Deze mogelijkheid werd ontwikkeld door Jürgen Fischer in samenwerking met Matthias Kuhn
 ## QGIS Server
 ### Mogelijkheid: Grootte configureren voor GetLegendGraphic mogelijk
-| For this release we improved how the legend for QGIS servers handles the size of symbols which are scaled by map units. | Whenever possible, the server will determine the legend size based on the map canvas and resolution. Even more, for cases where this information is not available in the GetLegend request, it is now possible to configure a *default scale* in the project, symbols in the legend will then be drawn in the size they will have when rendered at this scale.
+| Voor deze uitgave hebben we verbeterd hoe de legenda voor QGIS server de grootte van symbolen afhandelt die zijn geschaald in kaarteenheden. | Waar mogelijk zal de server de grootte van de legenda baseren op het kaartvenster en de resolutie. Meer nog, voor gevallen waarin deze informatie niet beschikbaar is in het verzoek GetLegend, is het nu mogelijk een *standaard schaal* in het project te configureren. Symbolen in de legenda zullen dan worden getekend in de grootte die ze hebben als er gerenderd wordt op deze schaal.
 
 Deze mogelijkheid werd ontwikkeld door [David Signer, OPENGIS.ch](https://www.opengis.ch)
 ## Plug-ins
 ### Mogelijkheid: Ondersteuning voor afhankelijkheden voor plug-ins
-In QGIS 3.8, we\'ve introduced a long-sought-after feature for QGIS plugin developers: the ability to specify dependencies for your plugins.
+In QGIS 3.8 hebben we een lang verzochte mogelijkheid geïntroduceerd voor ontwikkelaars van plug-ins voor QGIS: de mogelijkheid om afhankelijkheden voor uw plug-ins te specificeren.
 
-To add a plugin dependancy, you can use the new metadata \"plugin_dependencies\". The format is a comma-separated list of PIP-like plugin names (with optional version). E.g:
+U kunt de nieuwe metadata \"plugin_dependencies\" gebruiken om afhankelijkheden voor plug-ins toe te voegen. De indeling is een komma-gescheiden lijst met PIP-achtige namen voor plug-ins (met optionele versie). Bijv:
 
 `plugin_dependencies=GeoCoding,IPyConsole==1.9`
 
@@ -547,7 +547,7 @@ Dit werd mogelijk gemaakt door [GISCE TI](https://gisce.net/)
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](http://www.itopen.it/)
 ## Programmeerbaarheid
 ### Mogelijkheid: Ondersteuning voor SQL-syntaxis REGEXP voor provider SpatiaLite en verbindingen voor Python
-We\'ve enabled REGEX to be used with the spatialite provider. (This comes in handy when setting filters!). We\'ve also added support for this syntax via any python connections made through Qgis.utils\'s \"spatialite_connection\" API - allowing you to use REGEXP in your SQL queries from within DB Manager.
+We hebben REGEX ingeschakeld om te kunnen worden gebruikt met de provider SpatiaLite. (Dit is handig bij het instellen van filters!). We hebben ook ondersteuning voor deze syntaxis toegevoegd via verbindingen van Python voor Qgis.utils\'s \"spatialite_connection\" API - wat het mogelijk maakt REGEXP te gebruiken in uw query's voor SQL binnen DB Manager.
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Mogelijkheid: Zoeken naar Nearest Neighbour in QgsSpatialIndex

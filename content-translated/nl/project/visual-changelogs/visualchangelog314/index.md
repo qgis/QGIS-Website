@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 19-06-2020
+releaseDate: '2020-06-19'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.14

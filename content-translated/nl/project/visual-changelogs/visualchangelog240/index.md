@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 27-06-2014
+releaseDate: '2014-06-27'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 2.4

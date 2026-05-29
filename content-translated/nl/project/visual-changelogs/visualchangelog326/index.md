@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 17-06-2022
+releaseDate: '2022-06-17'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.26

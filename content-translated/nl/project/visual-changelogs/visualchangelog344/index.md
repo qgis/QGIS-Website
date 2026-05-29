@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 20-06-2025
+releaseDate: '2025-06-20'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.44
@@ -399,8 +399,8 @@ Onthoud dat grootten van symbologie, bepaald in kaarteenheden, NIET worden beïn
 De nieuwe "schaal op evenaar"-berekeningsmethode voor de schaal berekent altijd de schaal op de evenaar, ongeacht de feitelijke zichtbare breedtegraden in het kaartbereik. Het kan worden gebruikt om een consistente, statische schaal te verschaffen voor kaarten in geografische referentiesystemen, ongeacht de breedtegraden die fysiek zichtbaar zijn in de kaart. Onthoud dat deze methode alleen van toepassing is bij het berekenen van schalen met een op graden gebaseerd referentiesysteem.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add multiple country codes filter to Nominatim Geocoder Locator
-A new optional configuration value for the Nominatim Geocoder Locator allows filtering results to one or more countries by providing a comma-separated string of the [Two-letter country codes](https://wiki.openstreetmap.org/wiki/Nominatim/Country_Codes) a user would like to restrict their results to.
+### Mogelijkheid: Filter voor meerdere landcodes toegevoegd aan Nominatim Geocoder Locator
+Een nieuwe optionele configuratiewaarde voor de Nominatim Geocoder Locator maakt het mogelijk de resultaten te filteren op een of meer landen door een kommagescheiden tekenreeks van de [tweeletterige landcodes](https://wiki.openstreetmap.org/wiki/Nominatim/Country_Codes) op te geven waartoe de gebruiker de resultaten zou willen beperken.
 
 <img src="images/entries/ad98e211c26bc952c65e8c84b0323c866cc293f0" class="img-responsive img-rounded" />
 
@@ -408,8 +408,8 @@ Dit werd mogelijk gemaakt door [level2](https://level2.si/)
 
 Deze mogelijkheid werd ontwikkeld door [Uroš Preložnik](https://github.com/uprel)
 ## Profiel plotten
-### Feature: Add support for subsections indicator
-Profile plots now support the display of subsection indicators, which are rendered as vertical lines in the profile tool. This is based on outcomes from [QEP#260](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/260) and supports custom indicator symbology as well as providing subsection indicators on both the Elevation Profile view and Print Layout elements.
+### Mogelijkheid: Ondersteuning toegevoegd voor indicatie subgedeelten
+Profielplots ondersteunen nu het weergeven van indicaties voor subgedeelten, die worden gerenderd als verticale lijnen in het profielgereedschap. Dit is gebaseerd op uitkomsten uit [QEP#260](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/260) en ondersteunt aangepaste symbologie voor de indicatie, alsook het verschaffen van indicaties voor subgedeelten in zowel de weergave Hoogteprofiel als in elementen van Afdruklay-out.
 
 <img src="images/entries/4eb01abb7bde11412b39323f0dc89ac13958e050.png" class="img-responsive img-rounded" />
 
@@ -417,110 +417,110 @@ Dit werd mogelijk gemaakt door BRGM
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Browser
-### Feature: Port SQL Query History to Browser
-The database query history panel is now displayed in the Execute SQL dialog on the browser, in line with [QEP#332](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-332-sql-query-history.md).
+### Mogelijkheid: SQL Querygeschiedenis geporteerd naar Browser
+Het paneel voor querygeschiedenis voor databases wordt nu weergegeven in het dialoogvenster SQL uitvoeren in de browser, in lijn met [QEP#332](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-332-sql-query-history.md).
 
-This adds a new top-level action to open the query history window.
+Dit voegt een nieuwe actie op het bovenste niveau toe om het venster Querygeschiedenis te openen.
 
 <img src="images/entries/0790aa10b23a8a21663586201234bb438b88bb21.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door QGIS grant program 2025
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Improved project management for PostgreSQL stored Projects
-QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
+### Mogelijkheid: Verbeterd projectbeheer voor in PostgreSQL opgeslagen projecten
+QGIS bevat nu opties in de Browser die het mogelijk maken projecten van QGIS, die zijn opgeslagen in een database van PostGIS, te bewerken. Nieuwe functionaliteiten bevatten mogelijkheden voor:
 - Project hernoemen
 - Project verwijderen
 - Project dupliceren
-- Move Project to Schema
+- Project naar schema verplaatsen
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Show dialog when importing tables via browser and give users options to control import
-A new dialog will prompt users for more comprehensive import configuration when dragging layers into data sources in the QGIS Browser, emulating functionality provided by the DB Manager Plugin for data imports.
+### Mogelijkheid: Dialoogvenster weergeven bij importeren van tabellen via Browser en geef gebruikers opties om het importeren te beheren
+Een nieuw dialoogvenster zal gebruikers vragen naar een meer uitgebreide configuratie voor importeren bij het slepen van lagen in databronnen in de QGIS Browser. Wat de functionaliteit nabootst die wordt verschaft door die van de plug-in DB Manager voor het importeren van gegevens.
 
-Note that this only works when a single layer is selected, and using multiple selections will continue to execute an immediate import.
+Onthoud dat dit alleen werkt als een enkele laag is geselecteerd en het gebruiken van meerdere selecties zal doorgaan met het uitvoeren van onmiddellijk importeren.
 
-A new "Import Vector Table.." context menu item is also provided to allow importing directly from the current project layers into a target schema.
+Een nieuw item voor het contextmenu, "Vectortabel importeren…", wordt ook verschaft om het mogelijk te maken direct te importeren vanuit de huidige projectlagen naar een doelschema.
 
-The dialog options include:
-- Renaming the destination table
-- Replace destination
-- Set primary key
-- Set geometry column
-- Set destination CRS
-- Set output table comment
+De opties voor het dialoogvenster omvatten:
+- De doeltabel hernoemen
+- Doel vervangen
+- Primaire sleutel instellen
+- Geometriekolom instellen
+- Doel-CRS instellen
+- Opmerking uitvoertabel instellen
 
-This work entailed refactoring a number of internal architectural elements regarding the implementation of the QGIS Browser and data providers. It partly based on efforts by [@JanCaha](https://github.com/JanCaha) to port the DB Manager Postgres import functionality to the QGIS Browser.
+Dit werk bracht het opnieuw bewerken van een aantal interne elementen voor de architectuur met zich mee met betrekking tot de implementatie van de QGIS Browser en gegevensproviders. Het is gedeeltelijk gebaseerd op inspanningen van [@JanCaha](https://github.com/JanCaha) om de functionaliteit voor het importeren van Postgres in DB Manager te porteren naar de QGIS Browser.
 
-Note that this feature does not currently support Oracle databases, due to legacy functionality leveraged by the oracle data provider.
+Onthoud dat deze mogelijkheid momenteel geen databases van Oracle ondersteunt, wegens de oude functionaliteit die is verhoogd door de gegevenprovider Oracle.
 
 <img src="images/entries/eedf110211aebb2acf61d89108d15ada41b616c8" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Move table to another schema for PostgreSQL Provider
-PostgreSQL Tables can now be moved to another schema directly in the QGIS Browser.
+### Mogelijkheid: Tabel verplaatsen naar ander schema voor provider PostgreSQL
+Tabellen van PostgreSQL kunnen nu in de QGIS Browser direct worden verplaatst naar een ander schema.
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Enable field rename for PostgreSQL
-QGIS now supports renaming fields for PostgreSQL tables directly in the QGIS Browser interface.
+### Mogelijkheid: Hernoemen veld ingeschakeld voor PostgreSQL
+QGIS ondersteunt nu het direct in de interface van QGIS Browser hernoemen van velden.
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Gegevensproviders
-### Feature: Add a WFS parameter for featureMode
-The WFS Provider URI and UI now support a "featureMode" parameter, which supports options for :
-- default (Use the server default configuration)
-- SimpleFeatures (Enable simplification on returned features)
-- ComplexFeatures (Disable simplification on returned features)
+### Mogelijkheid: Een WFS-parameter toegevoegd voor featureMode
+De WFS-provider URI en gebruikersinterface ondersteunen nu een parameter "featureMode", die opties ondersteunt voor :
+- standaard (Gebruik de standaardconfiguratie van de server)
+- SimpleFeatures (Schakel vereenvoudigen in voor teruggegeven objecten)
+- ComplexFeatures (Schakel vereenvoudigen in voor teruggegeven objecten uit)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Feature: Add connection setting for restricting PostgreSQL Schema
-This feature allows users to specify a single schema to limit a Postgres connection to, much like the equivalent Oracle provider setting.
+### Mogelijkheid: Verbindingsinstelling toegevoegd voor beperken schema van PostgreSQL
+Deze mogelijkheid stelt gebruikers in staat een enkel schema te specificeren om een verbinding voor Postgres toe te beperken. Lijkt veel op de equivalente instelling voor de provider Oracle.
 
-When set, only tables from the matching schema will be included in the browser panel and data source select for the connection.
+Indien gespecificeerd zullen alleen tabellen uit het overeenkomende schema worden opgenomen in het paneel Browser en geselecteerde databron voor de verbinding
 
-This can be used to limit the database work required to populate tables for a connection pointing to a large database store.
+Dit kan worden gebruikt om werk aan de database te beperken dat vereist is om tabellen te vullen voor een verbinding die verwijst naar een grote databaseopslag.
 
 <img src="images/entries/14da725b2b420a05075ba1b09c83786bf5c839f3" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Regiodata
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add option to use POST requests for WFS connections
-By default, connecting to a WFS server will be done using GET requests; however, users will now be able to switch specific WFS connections to utilize the POST HTTP method, allowing more flexibility in web service configurations.
+### Mogelijkheid: Optie toegevoegd om verzoeken POST te gebruiken voor verbindingen van WFS
+Standaard zal het verbinden met een server van WFS worden gedaan met verzoeken GET; maar gebruikers zijn nu in staat  te schakelen met specifieke verbindingen voor WFS om de http-methode POST te gebruiken, wat meer flexibiliteit geeft in configuraties voor webservices.
 
 <img src="images/entries/4a70618846a5eac6a459a0262887e3474bb1c091" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Dorset Council
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Allow SQL queries as layer sources from SQL Server
-QGIS now allows loading SQL Server queries as map layers from the browser and updating the SQL for existing query layers.
+### Mogelijkheid: SQL-query's toestaan als laagbronnen vanuit SQL Server
+QGIS staat nu het laden van query's van SQL Server als kaartlagen vanuit de Browser toe en werkt de SQL voor bestaande querylagen bij.
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## QGIS Server
-### Feature: Allow configuring the server project cache size
-A new `QGIS_SERVER_PROJECT_CACHE_SIZE` environment variable has been added, which allows the configuration of the QCache cost, which was previously a hardcoded value.
+### Mogelijkheid: Configureren van de grootte van de server projectcache toestaan
+Een nieuwe omgevingsvariabele `QGIS_SERVER_PROJECT_CACHE_SIZE` is toegevoegd die het mogelijk maakt de kosten voor de QCache te configureren, die eerder een hardgecodeerde waarde was.
 
 Deze mogelijkheid werd ontwikkeld door [Sandro Mani](https://github.com/manisandro)
-### Feature: Add server properties on layer tree group
-Users can now edit additional server properties on a layer tree group that will be returned in the GetCapabilities request. Available properties have been extended beyond the previous options of short name, title, and abstract to include:
+### Mogelijkheid: Servereigenschappen voor groep in de boom met lagen toegevoegd
+Gebruikers kunnen nu aanvullende servereigenschappen bewerken voor een groep in de boom met lagen die zullen worden teruggegeven in het verzoek GetCapabilities. Beschikbare eigenschappen zijn uitgebreid, naast de eerdere opties van verkorte naam, titel en abstract, om te bevatten:
 - Sleutelwoorden
-- Data URL (with format)
-- Attribution title and URL
+- URL voor gegevens (met indeling)
+- Titel attributie en URL
 - URL's metadata 
-- Legend URL and format (by default, one will be generated)
+- URL legenda en indeling (standaard zal er een worden gemaakt)
 
 <img src="images/entries/41632eca99d103daf60c2d90b21ce9a543dfc53f.png" class="img-responsive img-rounded" />
 
@@ -528,16 +528,16 @@ Dit werd mogelijk gemaakt door Ifremer
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Programmeerbaarheid
-### Feature: Add method to convert shapely geometry to QGIS Geometry
-In line with [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
+### Mogelijkheid: Methode toegevoegd om geometrie van Shapely te converteren naar geometrie voor QGIS
+In lijn met [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) wordt een nieuwe methode `QgsGeometry.from_shapely()` verschaft voor het maken van een object QgsGeometry uit een object van Shapely om integratie te verbeteren met de bibliotheek Shapely voor geometrie, terwijl het een optionele afhankelijkheid blijft.
 
 Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
-### Feature: Expose QGIS GPS Tools to Python API and Plugins
-The GPS tools class is now available in the PyQGIS API via a brand new `QgsAppGpsTools` class, accessed via `QgisInterface::gpsTools()`, so that plugins have more control on the QGIS GPS tracking session.
+### Mogelijkheid: QGIS GPS-gereedschap weergeven voor Python API en plug-ins
+De klasse GPS-gereedschap is nu beschikbaar in de PyQGIS API via een nagelnieuwe klasse `QgsAppGpsTools`, toegankelijk via `QgisInterface::gpsTools()`, zodat plug-ins meer beheer hebben over de QGIS-sessie voor het volgen van GPS.
 
-From QGIS 3.44 on, plugins can create a vector layer feature from the current GPS track, using the method `iface.gpsTools().createFeatureFromGpsTrack()`.
+Vanaf QGIS 3.44 kunnen plug-ins een object vectorlaag maken uit het huidige GPS-spoor, met de methode `iface.gpsTools().createFeatureFromGpsTrack()`.
 
-This also exposes additional functionalities, such as setting the GPS track line symbol by changing the corresponding setting in `QgsOptions` and updating the eventual current GPS track geometry accordingly, e.g. `iface.gpsTools().setGpsTrackLineSymbol( line_symbol )`
+Dit geeft ook aanvullende functionaliteiten weer, zoals het instellen van het lijnsymbool voor het GPS-spoor door de corresponderende instelling in `QgsOptions` te wijzigen en de eventuele huidige geometrie van het GPS-spoor overeenkomstig bij te werken, bijv. `iface.gpsTools().setGpsTrackLineSymbol( line_symbol )`
 
 Dit werd mogelijk gemaakt door [de Deense Nature Agency, Naturstyrelsen](https://naturstyrelsen.dk/)
 
@@ -546,11 +546,11 @@ Deze mogelijkheid werd ontwikkeld door [Germán Carrillo](https://github.com/gac
 ### Mogelijkheid: Reparaties van problemen door Even Rouault (Spatialys)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
-| CSV Import to Geopackage ( x/y data) ignores more than 5 Mio rows | [\#60966](https://github.com/qgis/QGIS/issues/60966) | Not reproducible |  |
+| CSV Import to Geopackage ( x/y data) ignores more than 5 Mio rows | [\#60966](https://github.com/qgis/QGIS/issues/60966) | Kan niet worden gereproduceerd |  |
 | OGC API: Feature Creation Request Fails When Location Header is in Lowercase | [\#61729](https://github.com/qgis/QGIS/issues/61729) | [PR \#61814](https://github.com/qgis/QGIS/pull/61814) | [PR \#61835](https://github.com/qgis/QGIS/pull/61835) |
 | \[Backport 3.40\] Pick missing commits | [mailing list](https://lists.osgeo.org/pipermail/qgis-developer/2025-May/067555.html) |  | [PR \#61843](https://github.com/qgis/QGIS/pull/61843) |
 | Processing : unable to import non spatial table into PostGreSQL with OGR command with processing | [\#61655](https://github.com/qgis/QGIS/issues/61655) | [PR \#61868](https://github.com/qgis/QGIS/pull/61868) | [PR \#62023](https://github.com/qgis/QGIS/pull/62023) |
-| Impossibility to save a Null value in a Interger64 field for geopackage files | [\#61787](https://github.com/qgis/QGIS/issues/61787) | can't reproduce |  |
+| Impossibility to save a Null value in a Interger64 field for geopackage files | [\#61787](https://github.com/qgis/QGIS/issues/61787) | kan niet worden gereproduceerd |  |
 | Error in GML handling in response to a GetFeature request in the WFS service | [\#60879](https://github.com/qgis/QGIS/issues/60879) | [PR \#61872](https://github.com/qgis/QGIS/pull/61872) | [PR \#61895](https://github.com/qgis/QGIS/pull/61895) |
 | \[Tests\] Fix and unblock PyQgsLayerDefinition on QT6 |  | [PR \#61874](https://github.com/qgis/QGIS/pull/61874) | N/B |
 | \[Tests\] Fix test_core_ogcutils on QT6 |  | [PR \#61876](https://github.com/qgis/QGIS/pull/61876) | N/B |
@@ -572,7 +572,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 | Inconsistent contents in ogcapi openapi spec | [\#61848](https://github.com/qgis/QGIS/issues/61848) | [PR \#61903](https://github.com/qgis/QGIS/pull/61903) | [PR \#61922](https://github.com/qgis/QGIS/pull/61922) |
 | QGIS Server does not list one layer in WMS GetCapabilities if datum transformation is used | [\#61293](https://github.com/qgis/QGIS/issues/61293) | Terugkoppeling |  |
 | QGIS server 3.40.4 - Invalid cache strategy | [\#60947](https://github.com/qgis/QGIS/issues/60947) | [PR \#61907](https://github.com/qgis/QGIS/pull/61907) | N/B |
-| Server LTR: OAPIF/WFS3 describe collections malfunction - empty pg layer with UTM zone SRID | [\#60686](https://github.com/qgis/QGIS/issues/60686) | can't reproduce |  |
+| Server LTR: OAPIF/WFS3 describe collections malfunction - empty pg layer with UTM zone SRID | [\#60686](https://github.com/qgis/QGIS/issues/60686) | kan niet worden gereproduceerd |  |
 | Wrong rendering for HIGHLIGHT_LABEL_ROTATION above 89° | [\#54598](https://github.com/qgis/QGIS/issues/54598) | Old issue: asked the OP and put on feedback |  |
 | CGIDIR default for UNIX is wrong (bin, should be libexec/cgi-bin or at least not bin) | [\#54424](https://github.com/qgis/QGIS/issues/54424) | Old issue: asked for feedback |  |
 | Performance issue on editing large PostGIS layers. | [\#61879](https://github.com/qgis/QGIS/issues/61879) | Not enough info: put on feedback and recommended to hire a consultant |  |
@@ -631,8 +631,8 @@ Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia
 | Mesh styling, precision seems too small? | [\#50950](https://github.com/qgis/QGIS/issues/50950) | [PR \#61905](https://github.com/qgis/QGIS/pull/61905) | [PR \#61926](https://github.com/qgis/QGIS/pull/61926) |
 | Inconsistency in PostgreSQL / PostGIS connection / layer dialog windows | [\#59886](https://github.com/qgis/QGIS/issues/59886) | [PR \#61908](https://github.com/qgis/QGIS/pull/61908) | N/B |
 | Translate geometry does not create a 3D vector from 2D if deltaZ is an expression | [\#56495](https://github.com/qgis/QGIS/issues/56495) | [PR \#61906](https://github.com/qgis/QGIS/pull/61906) | [PR \#61933](https://github.com/qgis/QGIS/pull/61933) |
-| After deleting the newly added XYZ layer...still exists | [\#53933](https://github.com/qgis/QGIS/issues/53933) | can't reproduce |  |
-| TypeError: EnumType.**call**()... | [\#58312](https://github.com/qgis/QGIS/issues/58312) | can't reproduce |  |
+| After deleting the newly added XYZ layer...still exists | [\#53933](https://github.com/qgis/QGIS/issues/53933) | kan niet worden gereproduceerd |  |
+| TypeError: EnumType.**call**()... | [\#58312](https://github.com/qgis/QGIS/issues/58312) | kan niet worden gereproduceerd |  |
 | projects/anonymize\_\*\_projects doesn't affect projectMetadata.author | [\#42413](https://github.com/qgis/QGIS/issues/42413) | [PR \#61945](https://github.com/qgis/QGIS/pull/61945) | [PR \#61959](https://github.com/qgis/QGIS/pull/61959) |
 | Inconsistencies in providers connection dialogs | [\#43951](https://github.com/qgis/QGIS/issues/43951) | [PR \#61948](https://github.com/qgis/QGIS/pull/61948) | N/B |
 | Source manager and WMS configuration dialog too tall | [\#60477](https://github.com/qgis/QGIS/issues/60477) | [PR \#61948](https://github.com/qgis/QGIS/pull/61948) | N/B |
@@ -642,15 +642,15 @@ Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia
 | Modifying project CRS...does not update coordinate CRS display | [\#61684](https://github.com/qgis/QGIS/issues/61684) | [PR \#61995](https://github.com/qgis/QGIS/pull/61995) | N/B |
 | CRS selection widget not updated when project CRS changes | [\#56454](https://github.com/qgis/QGIS/issues/56454) | [PR \#61989](https://github.com/qgis/QGIS/pull/61989) | [PR \#62022](https://github.com/qgis/QGIS/pull/62022) |
 | Choice for default/project styles missing... | [\#58653](https://github.com/qgis/QGIS/issues/58653) | [PR \#62012](https://github.com/qgis/QGIS/pull/62012) | N/B |
-| Changing a new project's CRS does not change the annotation CRS | [\#48046](https://github.com/qgis/QGIS/issues/48046) | can't reproduce, already fixed |  |
+| Changing a new project's CRS does not change the annotation CRS | [\#48046](https://github.com/qgis/QGIS/issues/48046) | kan niet worden gereproduceerd, al gerepareerd |  |
 | "editable" property misleading in JSON view | [\#47755](https://github.com/qgis/QGIS/issues/47755) | [PR \#62064](https://github.com/qgis/QGIS/pull/62064) | N/B |
 | ‘Current CRS’ icon shows previous CRS | [\#53768](https://github.com/qgis/QGIS/issues/53768) | [PR \#62209](https://github.com/qgis/QGIS/pull/62209) | [PR \#62236](https://github.com/qgis/QGIS/pull/62236) |
-| Crash when clicking on relation table node | [\#56481](https://github.com/qgis/QGIS/issues/56481) | can't reproduce |  |
+| Crash when clicking on relation table node | [\#56481](https://github.com/qgis/QGIS/issues/56481) | kan niet worden gereproduceerd |  |
 | Documentation file grass7.txt is not up-to-date | [\#29140](https://github.com/qgis/QGIS/issues/29140) | [PR \#62210](https://github.com/qgis/QGIS/pull/62210) | N/B |
 | AttributeError: 'NoneType' object has no attribute 'fields' | [\#62224](https://github.com/qgis/QGIS/issues/62224) | [PR \#62253](https://github.com/qgis/QGIS/pull/62253) | [PR \#62291](https://github.com/qgis/QGIS/pull/62291) |
 | Selected field not cleared when changing layer in processing | [\#39351](https://github.com/qgis/QGIS/issues/39351) | [PR \#62241](https://github.com/qgis/QGIS/pull/62241) | [PR \#62305](https://github.com/qgis/QGIS/pull/62305) |
 | pyqgis: QgsGraph | [\#56172](https://github.com/qgis/QGIS/issues/56172) | [PR \#62316](https://github.com/qgis/QGIS/pull/62316) | N/B |
-| qgsidentifyresultsdialog.cpp: ‘best approach’ vs. ‘old fragile approach’ | [\#61499](https://github.com/qgis/QGIS/issues/61499) | can't reproduce |  |
+| qgsidentifyresultsdialog.cpp: ‘best approach’ vs. ‘old fragile approach’ | [\#61499](https://github.com/qgis/QGIS/issues/61499) | kan niet worden gereproduceerd |  |
 | exporting to .dxf sets units to imperial inch | [\#50579](https://github.com/qgis/QGIS/issues/50579) | works for me, fixed upstream |  |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
@@ -682,7 +682,7 @@ Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (LutraConsulting)](https
 ### Mogelijkheid: Reparaties van problemen door Germán Carrillo (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
-| Old relations in form (after exporting layer to new file and applied old style) can't be deleted | [\#44683](https://github.com/qgis/QGIS/issues/44683) | Can't reproduce |  |
+| Old relations in form (after exporting layer to new file and applied old style) can't be deleted | [\#44683](https://github.com/qgis/QGIS/issues/44683) | Kan niet worden gereproduceerd |  |
 | \[Processing toolbox\] Search box (result) not updated when list of providers change | [\#26435](https://github.com/qgis/QGIS/issues/26435) | [PR \#62162](https://github.com/qgis/QGIS/pull/62162) | Nee |
 | Ambiguous JSON errors | [\#42832](https://github.com/qgis/QGIS/issues/42832) | [PR \#62247](https://github.com/qgis/QGIS/pull/62247) | [PR \#62262](https://github.com/qgis/QGIS/pull/62262) |
 | Disallow point layer as input to Oriented Minimum Bounding Box | [\#62126](https://github.com/qgis/QGIS/issues/62126) | [PR \#62300](https://github.com/qgis/QGIS/pull/62300) | [PR \#62330](https://github.com/qgis/QGIS/pull/62330) |

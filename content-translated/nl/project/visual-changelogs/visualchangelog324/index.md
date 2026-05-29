@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 18-02-2022
+releaseDate: '2022-02-18'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.24

@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 21-10-2022
+releaseDate: '2022-10-21'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.28

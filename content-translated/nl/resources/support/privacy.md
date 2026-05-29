@@ -8,34 +8,34 @@ type: page
 ---
 {{<content-start >}}
 # Ons privacybeleid
-## QGIS Feed and Analytics Dashboard
-The **QGIS Feed Analytics Dashboard** ([https://analytics.qgis.org](https://analytics.qgis.org)) collects minimal, non-identifiable usage data to help improve the QGIS project. When QGIS checks for news updates from the [QGIS Feed Website](https://feed.qgis.org), the following information is recorded:
-- **Date of request** (rounded to the nearest day)
-- **QGIS version** in use
-- **User's country** (determined from the IP address, which is immediately discarded)
-- **Operating system platform**
+## QGIS Feed en dashboard Analytics
+Het **QGIS Feed Analytics Dashboard** ([https://analytics.qgis.org](https://analytics.qgis.org)) verzamelt minimale, niet te identificeren gebruiksgegevens om het project QGIS te helpen verbeteren. Als QGIS op nieuwe updates controleert op de [QGIS Feed website](https://feed.qgis.org), wordt de volgende informatie vastgelegd:
+- **Datum van het verzoek** (afgerond naar de dichtstbijzijnde dag)
+- **QGIS versie** die gebruikt wordt
+- **Land gebruiker** (bepaald uit het IP-adres, dat onmiddellijk wordt genegeerd)
+- **Platform besturingssysteem**
 
-No persistent or personally identifiable information is stored or shared. The IP address is used only to determine the country and is not retained. Data is aggregated hourly into summary tables by date, country, QGIS version, and platform. This helps the QGIS team understand usage patterns and prioritize development efforts.
+Geen persistente of persoonlijk te identificeren informatie wordt opgeslagen of gedeeld. Het IP-adres wordt alleen gebruikt om het land te identificeren en wordt niet behouden. Gegevens worden elk uur samengevoegd in overzichtstabellen voor datum, land, versie van QGIS en platform. Dat helpt het team van QGIS om de gebruikspatronen te begrijpen en inspanningen voor ontwikkeling te prioriteren.
 
-**Participation is optional:** Users can disable the news feed feature in QGIS at any time.
+**Deelnemen is optioneel:** Gebruikers kunnen de mogelijkheid voor de news feed in QGIS op elk moment uitschakelen.
 
-For questions or concerns, please contact the QGIS Project Steering Committee at [info@qgis.org](mailto:info@qgis.org).
-## QGIS Plugins Analytics Dashboard
-The **QGIS Plugins Analytics Dashboard** ([https://plugins-analytics.qgis.org](https://plugins-analytics.qgis.org)) collects minimal, non-identifiable data whenever a plugin is downloaded from the QGIS Plugins Manager or the [QGIS Plugins Website](https://plugins.qgis.org). The following information is recorded:
-- **Date of download** (rounded to the nearest day)
-- **Plugin version** downloaded
-- **User's country** (determined from the IP address, which is immediately discarded)
+Voor vragen of zorgen, neem contact op met het QGIS Project Steering Committee op [info@qgis.org](mailto:info@qgis.org).
+## QGIS Plugins dashboard Analytics 
+Het **QGIS Plugins Analytics Dashboard** ([https://plugins-analytics.qgis.org](https://plugins-analytics.qgis.org)) verzamelt minimale, niet te identificeren gebruiksgegevens elke keer als een plug-in wordt gedownload vanuit QGIS Plug-ins beheren en installeren of de [website QGIS Plugins](https://plugins.qgis.org). De volgende informatie wordt vastgelegd:
+- **Datum downloaden** (afgerond naar de dichtstbijzijnde dag)
+- **Versie plug-in** die werd gedownload
+- **Land gebruiker** (bepaald uit het IP-adres, dat onmiddellijk wordt genegeerd)
 
-No persistent or personally identifiable information is stored or shared. The IP address is used only to determine the country and is not retained.
-- **Download activity** has been recorded since **16 July 2024**
-- **Per-country statistics** have been collected since **30 May 2024**
+Geen persistente of persoonlijk te identificeren informatie wordt opgeslagen of gedeeld. Het IP-adres wordt alleen gebruikt om het land te identificeren en wordt niet behouden.
+- **Downloadactiviteit** wordt vastgelegd vanaf **16 juli 2024**
+- **Statistieken per land** zijn verzameld vanaf **30 mei 2024**
 
-Plugin popularity is calculated using the formula:
+Populariteit van de plug-in wordt berekend met de formule:
 ```
 downloads * (1 + (rating_score / (rating_votes + 0.01) / 3))
 ```
-This data helps the QGIS team understand plugin usage and improve the plugin ecosystem.
+Deze gegevens helpen het team van QGIS het gebruik van plug-ins te begrijpen en het ecosysteem voor plug-ins te verbeteren.
 
-For any questions or concerns, please contact the QGIS Project Steering Committee at [info@qgis.org](mailto:info@qgis.org).
+Voor eventuele vragen of zorgen, neem contact op met het QGIS Project Steering Committee op [info@qgis.org](mailto:info@qgis.org).
 
 {{<content-end >}}

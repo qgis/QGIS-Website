@@ -8,14 +8,14 @@ type: page
 ---
 {{<content-start >}}
 # FAQ
-Here we collect answers to question that come up very often.
-## User questions
+Hier verzamelen we antwoorden op veelgestelde vragen.
+## Gebruikersvragen
 ### Problemen met downloaden
-If you are trying to download QGIS and nothing seems to happen, please consult the download manager of your browser. It can usually be found as an icon (based on arrow, stop-watch or pie-chart) at the top-right corner of your browser window. Click on the icon to see the download progress or cancel the download. The normal procedure with downloads in the browser is such, that it first asks you where to save the file (with a file browser dialogue) and then you have to wait until the download is finished. Because QGIS install packages can be rather large, depending on the operating system, you have to be patient. The download size can be anywhere between several hundred megabytes to sometimes more than one gigabyte (in case of MS Windows MSI packages). Depending on your download speed and the QGIS server load, downloads can take from several minutes up to several hours.
-### Do I have to donate in order to download QGIS?
+Als u probeert QGIS te downloaden en er lijkt niets te gebeuren, raadpleeg dan de downloadbeheerder van uw browser. Dit is gewoonlijk te vinden als een pictogram (gebaseerd op een pijl, stopwatch of taartstuk-diagram) in de rechterbovenhoek van het venster van uw browser. Klik op het pictogram om de voortgang van het proces van downloaden te zien of om het downloaden te annuleren. De normale procedure voor downloads in de browser is, dat het u eerst vraagt waar het bestand moet worden opgeslagen (met een dialoogvenster in de browser) en dan moet u wachten tot het downloaden is voltooid. Omdat QGIS pakketten installeert, afhankelijk van het besturingssysteem, die nogal groot kunnen zijn, moet u geduldig zijn. De grootte van de download kan ergens liggen tussen enkele honderden megabytes tot wel meer dan een gigabyte (in het geval van MS Windows MSI-pakketten). Afhankelijk van uw downloadsnelheid en de belasting op de server van QGIS, kunnen downloads variëren in duur van enkele minuten tot enkele uren.
+### Moet ik doneren om QGIS te kunnen downloaden?
 Dat is een misvatting die we af en toe horen, maar het is niet waar. Doneren aan QGIS is optioneel. Na het downloaden van QGIS verschijnt er een bericht dat u eraan herinnert dat u optioneel kunt doneren aan QGIS. U kunt echter drukken op "Sluit dit venster" en zonder problemen doorgaan met downloaden. We willen dat QGIS toegankelijk is voor iedereen, het maakt ons niet uit hoe uw financiële situatie is. Als u QGIS voor het eerst gebruikt raden wij u aan dat u QGIS eerst download, installeert en test en kijkt of de software nuttig is voor de taken die u wilt uitvoeren. Alleen als u QGIS goed genoeg vindt en het u substantieel helpt met uw zaken, taken of processen, zou u erover kunnen denken om te doneren aan QGIS of het als een ondersteunend lid te ondersteunen.
 ### Hoe stel je een vraag over QGIS?
-If you are going to ask a QGIS related question via the [mailing lists]({{< ref "community/organisation/mailinglists" >}}), please provide enough information to help others easily understand what your problem is. Without a clear and precise question, it is very hard for anybody to answer, or it just takes too much time because the answer will be a question to you etc etc. You may provide information such as:
+Als u een aan QGIS gerelateerde vraag gaat stellen via de [mailinglijsten]({{< ref "community/organisation/mailinglists" >}}), verschaf dan voldoende informatie om anderen eenvoudig te laten begrijpen wat uw probleem is. Zonder een heldere en precieze vraag is het voor iedereen moeilijk om een antwoord te geven of vergt dat te veel tijd, omdat het antwoord een vraag aan u zal zijn, etc etc. U wordt gevraagd informatie te verschaffen zoals:
 - bij voorkeur een duidelijk onderwerp van uw e-mail
 - welke versie van QGIS heeft u gebruikt op dat moment (exact)
 - wat u verwacht te krijgen
@@ -26,13 +26,13 @@ If you are going to ask a QGIS related question via the [mailing lists]({{< ref 
   - welke installatie heeft u gebruikt (osgeo4w? standalone-installer? zelf gecompileerd?)
   - wanneer ging het mis (opnieuw installeren, nieuwe installatie, bijwerken van het systeem, wijzigingen in het project)
 
-Keep in mind that the more precise your question is, the quicker and more accurate the answer can be.
+Onthoud dat hoe nauwkeuriger uw vraag is, des te sneller en nauwkeuriger het antwoord kan zijn.
 
 {{<rich-box-start icon="💁" layoutClass="tips" mode="html" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### Opmerking
-In case of a broken function, you may give a look at [QGIS issue tracker](https://github.com/qgis/QGIS/issues) before mailing to the list. More information at [bug-reporting]({{< ref "resources/support/bug-reporting" >}}).
+In het geval van een kapotte functie kunt u nog even kijken op [QGIS issue tracker](https://github.com/qgis/QGIS/issues) voordat u naar de lijst mailt. Meer informatie op [bug-reporting]({{< ref "resources/support/bug-reporting" >}}).
 
 {{<rich-content-end >}}
 
@@ -40,48 +40,48 @@ In case of a broken function, you may give a look at [QGIS issue tracker](https:
 ### Hoe worden namen voor uitgaven van QGIS geselecteerd?
 Na een succesvolle bijeenkomst van ontwikkelaars in Zurich (Zwitserland), besloten we dat de volgende uitgave daaraan gerelateerd zou zijn. Sindsdien worden alle uitgaven vernoemd naar locaties van onze ontwikkelaarsbijeenkomsten.
 ### Kan ik ook ECW (Erdas) bestanden openen met QGIS?
-ECW is a proprietary file format - please consult their [Licensing Page](https://supportsi.hexagon.com/s/article/License-for-reading-or-writing-ECW-in-third-party-software) to understand how you may use it. Also, please consult the [GDAL documentation](https://gdal.org/en/stable/drivers/raster/ecw.html#creation-options-1) for notes on how to enable licensed features if you have a paid version of ECW. ECW support is not included in all QGIS binary versions and for all platforms by default.
+ECW is een bestandsindeling met een eigenaar - bekijk hun [licentiepagina](https://supportsi.hexagon.com/s/article/License-for-reading-or-writing-ECW-in-third-party-software) om te begrijpen hoe u het mag gebruiken. Raadpleeg ook de [documentatie van GDAL](https://gdal.org/en/stable/drivers/raster/ecw.html#creation-options-1) voor opmerkingen over hoe gelicentieerde mogelijkheden in te schakelen als u een betaalde versie van ECW hebt. Ondersteuning voor ECW is niet standaard opgenomen in alle binaire versies van QGIS en voor alle platforms.
 
-**Platform specific notes:**
+**Platformspecifieke opmerkingen:**
 
-***Windows***: If you are using Windows and have downloaded the **offline installers** (provided by the download buttons labelled **Long Term Version for Windows ({{< param "ltrversion" >}} {{< param "ltrnote" >}})** and **Latest Version for Windows ({{< param "version" >}})**), ECW read support is included by default.
+***Windows***: Als u Windows gebruikt en de **offline installatieprogramma's** hebt gedownload (verschaft via de knoppen voor downloaden, gelabeld **Lange Termijn Versie voor Windows ({{< param "ltrversion" >}} {{< param "ltrnote" >}})** en **Laatste versie voor Windows ({{< param "version" >}})**), is ondersteuning voor lezen van ECW standaard opgenomen.
 
-If you are using the **OSGeo4W Network Installer**, ECW support is installed by default if you use the express install workflow. If manually selecting components, you need to explicitly enable the `gdal-ecw` package in order to ensure that ECW support is included in your installation.
+Als u het **OSGeo4W netwerk installatiepakket** gebruikt, is ondersteuning voor ECW standaard geïnstalleerd als u de werkstroom Express install gebruikt. Bij het handmatig selecteren van componenten moet u expliciet het pakket `gdal-ecw` inschakelen om ervoor te zorgen dat ondersteuning voor ECW wordt opgenomen in uw installatie.
 
-***macOS***: If you are using macOS, you can download the DMG file from [QGIS Downloads](https://qgis.org/download/). This includes ECW support by default.
+***macOS***: Als u macOS gebruikt, kunt u het DMG-bestand downloaden vanaf [QGIS downloaden](https://qgis.org/download/). Dat bevat standaard ondersteuning voor ECW.
 
-***Linux***: By default, the QGIS binaries for most Linux distributions *do not* include default ECW support. However, you can find discussions and solutions for adding this support in various resources for guidance.
+***Linux***: Standaard bevatten de QGIS binaire bestanden voor de meeste distributies voor Linux *niet* standaard ondersteuning voor ECW. U kunt echter besprekingen en oplossingen voor richtlijnen over het toevoegen van deze ondersteuning vinden in verscheidene bronnen.
 
-For Ubuntu, for example, you can check out the following resources:
+Voor Ubuntu bijvoorbeeld kunt u ook de volgende bronnen bekijken:
 - [Github - GDAL: How to open ECW Maps in QGIS 3.22](https://github.com/OSGeo/gdal/issues/8239)
 - [Reddit - QGIS: Problem loading ECW file in Ubuntu (Linux)](https://www.reddit.com/r/QGIS/comments/icw98f/problem_loading_ecw_file_in_ubuntu_linux/?rdt=54968)
 - [GIS Stack Exchange: Installing QGIS with ECW support on ubuntu 20.04](https://gis.stackexchange.com/questions/429214/installing-qgis-with-ecw-support-on-ubuntu-20-04/434980#434980).
 
-### How can I get a VPAT / HECVAT / other US compliance form or information?
-Please get in touch with the US User group. They are looking into these topics. More info and contact details: https://www.qgis-us.org
-## Developer questions
+### Hoe kan ik een VPAT / HECVAT / ander US-conform formulier of informatie krijgen?
+Neem contact op met de US gebruikersgroep. Zij weten veel over deze onderwerpen. Meer info en contactdetails: https://www.qgis-us.org
+## Vragen van ontwikkelaars
 ### Kan ik QGIS zelf compileren?
-Yes, compiling QGIS from source is possible whatever OS you use (Windows, macOS, Linux). Please read [Building QGIS from source](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
-## Citation information
+Ja, compileren van QGIS vanuit de bron is mogelijk, ongeacht welk OS u gebruikt (Windows, macOS, Linux). Lees dan  [Building QGIS from source](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
+## Informatie over citeren
 ### Hoe QGIS te noemen?
-If you need to cite QGIS in your work or for an assignment, please use the citation style that would be most helpful:
+Om te refereren aan QGIS in uw werk, of voor een opdracht, gebruik dan een type citaat dat nuttiger kan zijn:
 
-Here are some choices to cite the overall QGIS software project, a specific QGIS version being used used, or QGIS documentation to allow reproducibility:
+Hier zijn enkele keuzes om te refereren aan het algehele softwareproject QGIS, een specifieke gebruikte versie van QGIS, of documentatie van QGIS om reproduceren toe te staan:
 
-**The QGIS project as an evolving software project, independent of a specific software release, by Digital Object Identifier (concept DOI)**
+**Het project QGIS als een evoluerend softwareproject, onafhankelijk van een specifieke softwareuitgave, door Digital Object Identifier (concept-DOI)**
 
-Use the concept DOI [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224) when
-- referring to the QGIS software in general (e.g., in introductions or background sections)
-- describing workflows where the exact version is not critical
-- citing QGIS as a long-term research tool or infrastructure
+Gebruik het concept DOI [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224) bij
+- verwijzen naar de software QGIS in het algemeen (bijv. in introducties of delen op de achtergrond)
+- beschrijven van werkstromen waar de exacte versie niet zoveel uitmaakt
+- citeren van QGIS als een onderzoeksgereedschap voor de lange termijn of infrastructuur
 
-The concept DOI will always resolve to the latest version of QGIS and provide a stable reference to the software project over time.
+Het concep-DOI zal altijd terugvallen op de laatste versie van QGIS en in de tijd een stabiele referentie verschaffen naar het softwareproject.
 
-**Specific QGIS software releases by Digital Object Identifier (version DOI)**
+**Specifieke softwareuitgaven van QGIS door Digital Object Identifier (versie-DOI)**
 
-Each QGIS release since release 3.22.4 (2022) has its own version DOI identifying a precise, archived snapshot of the software (e.g., a specific software release). All version DOI are linked to the concept DOI of the QGIS project.
+Elke QGIS-uitgave vanaf 3.22.4 (2022) heeft zijn eigen versie-DOI die een nauwkeurig, gearchiveerd snapshot van de software identificeert (bijv. een specifieke softwareuitgave). Alle versie-DOI's zijn gekoppeld aan het concept-DOI van het project QGIS.
 
-Please refer to the QGIS Zenodo Landing Page ([QGIS Zenodo Landing Page](https://zenodo.org/search?q=parent.id%3A6139224&f=allversions%3Atrue&l=list&p=1&s=10&sort=version)) for all specific version DOI.
+Bekijk de landingspagina van QGIS Zenodo ([landingspagina QGIS Zenodo](https://zenodo.org/search?q=parent.id%3A6139224&f=allversions%3Atrue&l=list&p=1&s=10&sort=version)) voor alle specifieke versie-DOI's.
 - QGIS 4.0.0 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18889261.svg)](https://doi.org/10.5281/zenodo.18889261)
 - QGIS 3.44 LTR [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15705458.svg)](https://doi.org/10.5281/zenodo.15705458)
 
@@ -109,7 +109,7 @@ QGIS.org, {{< yeartag >}}. QGIS {{< param "ltrversion" >}}. Geographic Informati
 
 QGIS.org, {{< yeartag >}}. QGIS {{< param "ltrversion" >}}. Geographic Information System API Documentation. QGIS Association. Electronic document: {{< param-link "apicite" >}}
 
-**Preferred format:** [BibTeX](https://en.wikipedia.org/wiki/BibTeX)
+**Voorkeursindeling:** [BibTeX](https://en.wikipedia.org/wiki/BibTeX)
 
 Voorbeeld item BibTeX:
 ```
@@ -121,7 +121,7 @@ Voorbeeld item BibTeX:
   url = {https://www.qgis.org},
 }
 ```
-**Cite the QGIS paper in Patterns**
+**Citeer het artikel over QGIS in Patterns**
 ```
 @article{graser2025,
   title = {The QGIS project: Spatial without compromise},
@@ -137,7 +137,7 @@ Voorbeeld item BibTeX:
 }
 ```
 ### Ik maakte een kaart met QGIS, moet ik QGIS daarop vermelden?
-There is no requirement to mention QGIS for maps produced with it. It is of course really welcome if you would like to add a note saying that the map was produced with QGIS. "Made with QGIS" or "Map created using the Free and Open Source QGIS" are good examples of such a note.
+Er is geen verplichting om QGIS te vermelden op kaarten die ermee gemaakt zijn. Het wordt natuurlijk wel op prijs gesteld als u een opmerking zou willen toevoegen die vermeldt dat de kaart werd gemaakt met QGIS. "Gemaakt met QGIS" of "Kaart gemaakt met het vrije en open-bron QGIS" zijn goede voorbeelden van een dergelijke opmerking.
 
 {{<rich-box-start icon="✋" layoutClass="tips" >}}
 

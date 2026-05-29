@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 22-10-2021
+releaseDate: '2021-10-22'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.22
@@ -831,7 +831,7 @@ Deze problemen werden opgelost door [Denis Rouzaud](https://www.opengis.ch/)
 | Styles in database not working for postgres provider and non-geometric layers | [#44749](https://github.com/qgis/QGIS/issues/44749) | [PR #45075](https://github.com/qgis/QGIS/pull/45075) | [PR #45102](https://github.com/qgis/QGIS/pull/45102) |  |
 | \"Layer notes\" icon is not displayed when copy-pasting a style | [#44692](https://github.com/qgis/QGIS/issues/44692) | [PR #45302](https://github.com/qgis/QGIS/pull/45302) | niet nodig |  |
 | Ambiguous JSON errors | [#42832](https://github.com/qgis/QGIS/issues/42832) | Kan niet worden gereproduceerd |  |  |
-| Attribute table: missing features when copying/pasting from scratch layer | [#42798](https://github.com/qgis/QGIS/issues/42798) | Can't reproduce (Closed) |  |  |
+| Attribute table: missing features when copying/pasting from scratch layer | [#42798](https://github.com/qgis/QGIS/issues/42798) | Kan niet worden gereproduceerd (gesloten) |  |  |
 | Form view shows wrong image attachments when scrolling through features | [#42705](https://github.com/qgis/QGIS/issues/42705) | Al gerepareerd |  |  |
 | Build Virtual Raster tool creates an additional layer when selecting and reordering layers | [#44270](https://github.com/qgis/QGIS/issues/44270) | [PR #45092](https://github.com/qgis/QGIS/pull/45092) | [PR #45102](https://github.com/qgis/QGIS/pull/45102) |  |
 | Attachment widget options are reset when you reopen the field widget properties | [#45089](https://github.com/qgis/QGIS/issues/45089) | Duplicaat |  |  |

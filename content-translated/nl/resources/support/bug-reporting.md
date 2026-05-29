@@ -41,50 +41,50 @@ On Linux QGIS automatically tries to use `gdb` to connect to the crashing proces
 
 QGIS died on signal 11Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf ptrace: Operation not permitted. No thread selected No stack. gdb returned 0 Aborted (core dumped)
 
-In that case you should reenable that option by setting `kernel.yama.ptrace_scope` to 0 in `/etc/sysctl.d/10-ptrace.conf` (or `/etc/sysctl.conf` or some other file in `/etc/sysctl.d/`) and run `sysctl -p` as root. When you reproduce the crash after that, a backtrace will be printed instead.
+In dat geval zou u die optie opnieuw in moeten schakelen door `kernel.yama.ptrace_scope` in te stellen op 0 in `/etc/sysctl.d/10-ptrace.conf` (of `/etc/sysctl.conf` of enig ander bestand in `/etc/sysctl.d/`) en `sysctl -p` uit te voeren als root.  Wanneer u daarna de crash reproduceert, zal in plaats daarvan een backtrace worden afgedrukt.
 
-If you cannot reproduce the crash, there should still be a core dump in the current directory, that can be analysed after the process has already terminated. It’s called `core`, though the filename may include a dot followed by the process id on some systems.
+Als u de crash niet kunt reproduceren, zou er nog steeds een bron-dump in de huidige map moeten staan, die kan worden geanalyseerd nadat het proces al was beëindigd.  Het is genaamd `core`  hoewel op sommige systemen een punt en het proces_ID aan de bestandsnaam worden toegevoegd.
 
-On some distributions the creation of core dumps is also disabled. In the event that you just get `Aborted` instead of `Aborted (core dumped)` when the crash occurs. Then you need to run `ulimit -c unlimited` before starting QGIS. You can also include that in your `.profile`, so that it’s always enabled when you login.
+Op sommige distributies is het maken van brondumps ook uitgeschakeld. Dat is het geval als u slechts `Aborted` krijgt in plaats van `Aborted (core dumped)` als de crash voorkomt. Dan moet u `ulimit -c unlimited` uitvoeren voordat u QGIS start. U kunt dat ook in uw `.profile` opnemen, zodat het altijd ingeschakeld is als u inlogt.
 
-To produce a backtrace from the core file, start `gdb /path/to/the/qgis/binary core`. The binary is usually `/usr/bin/qgis` or `/usr/bin/qgis.bin` on Debian with the GRASS plugin installed. In `gdb` you run `bt` which will produce the backtrace.
+U start `gdb /pad/naar/de/qgis/binary core` om een backtrace uit het bronbestand te produceren. De binary is gewoonlijk `/usr/bin/qgis` of `/usr/bin/qgis.bin` op Debian met de plug-in GRASS geïnstalleerd. In `gdb` voert u `bt` uit wat de backtrace zal produceren.
 #### Log uitvoer op Windows
-The nightly build in [OSGeo4W](https://trac.osgeo.org/osgeo4w) (package qgis-dev) is built with debugging output, that you can view with [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview). If the problem is not easy to reproduce, the output might shed some light about where QGIS crashes.
+De nachtelijke bouw in [OSGeo4W](https://trac.osgeo.org/osgeo4w) (package qgis-dev) wordt gebouwd met uitvoer als debuggen, die u kunt bekijken met [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview). Als het probleem niet eenvoudig is te reproduceren, zou de uitvoer misschien enig licht kunnen werpen op waar QGIS crasht.
 ## Problemen rapporteren over QGIS website of documentatie
-QGIS project provides an active [web site](https://qgis.org) and a rich [documentation](https://qgis.org/en/docs/index.html). Despite our efforts, if you find an out of date information, a wrong or unclear statement or miss valuable information, please feel free to report it.
+Het project QGIS verschaft een actieve [website](https://qgis.org) en rijke [documentatie](https://qgis.org/en/docs/index.html). Ondanks onze inspanningen, als u gedateerde informatie vindt, of een verkeerd of niet juist argument, of als er waardevolle informatie ontbreekt, laat het ons dan weten.
 
 De belangrijkste bronnen van deze documenten worden gehost en beheerd in opslagplaatsen van GitHub, dus om bugs te rapporteren of patches in te dienen, heeft u een account voor GitHub nodig om in te kunnen loggen.
 
-To get started, first [Create a GitHub account](https://github.com/join).
+Maak, om te beginnen, eerst [een account voor GitHub](https://github.com/join) aan.
 
 Kies dan de van toepassing zijnde opslagplaats :
 - https://github.com/qgis/QGIS-Documentation/issues voor documentatie van QGIS
 - https://github.com/qgis/QGIS-Website/issues voor de website
 
-Check if the issue you’d like to report is not already entered.
+Controleer of het probleem dat u wilt melden al niet is geregistreerd.
 
 Klik op **New Issue**, typ een titel en een heldere beschrijving voor uw probleem.
 
-When you’re finished, click **Submit new issue**.
+Wanneer u gereed bent, klik op **Submit new issue**.
 
 Opmerking
 
-A `Fix me` link is provided at the bottom of any page of the web site to help you directly improve this page and submit pull request.
+Een link `Fix me` wordt verschaft aan de onderzijde van elke pagina van de website om u te helpen deze pagina direct te verbeteren en een pull request in te dienen.
 
 Deze optie is ook beschikbaar in de voettekst van de documentatie.
 ## Problemen met plug-ins melden
-Most of the plugins in QGIS are published in the official [QGIS Plugins repository](https://plugins.qgis.org/plugins/). Bugs or feature requests relative to them **must** be opened in their respective bug tracking system:
-- For any plugin available in QGIS repository, you’ll find in its metadata a link to its bug tracker. Otherwise, consult the plugin documentation to find the address of the relevant bug tracking system or a developer to contact.
+De meeste plug-ins in QGIS zijn gepubliceerd op de officiële [QGIS Plugins repository](https://plugins.qgis.org/plugins/). Problemen of verzoeken voor mogelijkheden in relatie daarmee **moeten** worden geopend in hun respectievelijke systeem voor het volgen van problemen.
+- Voor elke beschikbare plug-in in de opslagplaats van QGIS vindt u in de metadata ervan een link naar het volgsysteem voor problemen ervan. Raadpleeg anders de documentatie van de plug-in om naar het adres van het relevante systeem voor het volgen van problemen te zoeken of om contact op te nemen met een ontwikkelaar.
   
-  If no information is available, please report it to the [Developer mailing-list](https://lists.osgeo.org/mailman/listinfo/qgis-developer).
-- For other plugins, we have no means to ensure such information is provided.
+  Als er geen informatie beschikbaar is, rapporteer dat dan op de [Developer mailinglijst](https://lists.osgeo.org/mailman/listinfo/qgis-developer).
+- Voor andere plug-ins hebben we geen mogelijkheden om er voor te zorgen dat dergelijke informatie wordt verschaft.
 
 ## Een patch indienen voor projecten van QGIS
-In addition to issue report, you can help to fix issues. Fixing issues is done in GitHub through pull requests. You need to [fork the repository](https://help.github.com/articles/working-with-forks/) you want to contribute to and submit pull requests at:
+In aanvulling op het rapporteren van het probleem, kunt u helpen om ze op te lossen. Oplossen van problemen wordt gedaan in GitHub door middel van pull requests. U dient de [repository te forken](https://help.github.com/articles/working-with-forks/) wanneer u wilt deelnemen en pull requests wilt indienen.
 - https://github.com/qgis/QGIS voor de toepassingen QGIS Desktop of QGIS Server
 - https://github.com/qgis/QGIS-Website voor de website op https://qgis.org
 - https://github.com/qgis/QGIS-Documentation voor de beschikbare documentatie op https://docs.qgis.org
 
-You can find a few guidelines that will help you to easily get your patches and pull requests into QGIS projects at [Submitting Pull Requests](https://docs.qgis.org/testing/en/docs/developers_guide/git.html#submitting-pull-requests). And more widely, you may need to read the [Development Process](https://docs.qgis.org/testing/en/docs/developers_guide/git.html) chapter.
+U kunt een aantal richtlijnen vinden die u helpen om uw patches en pull requests gemakkelijk in projecten van QGIS te krijgen op [Submitting Pull Requests](https://docs.qgis.org/testing/en/docs/developers_guide/git.html#submitting-pull-requests). En breder, misschien moet u het hoofdstuk [Development Process](https://docs.qgis.org/testing/en/docs/developers_guide/git.html) lezen.
 
 {{<content-end >}}

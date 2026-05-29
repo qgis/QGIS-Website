@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 21-06-2024
+releaseDate: '2024-06-21'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.38
@@ -575,19 +575,19 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 | GDAL/OGR processing algorithms may silently output incorrect result if an input is a vector "memory" layer with a "fid" column | [#57343](https://github.com/qgis/QGIS/issues/57343) | [PR #57522](https://github.com/qgis/QGIS/pull/57522) | Wachtrij |
 | attribute table row sorting doesn't work | [#57338](https://github.com/qgis/QGIS/issues/57338) | [PR #57624](https://github.com/qgis/QGIS/pull/57624) | Wachtrij |
 | Unable to edit elements in the print layout after locking an element | [#57331](https://github.com/qgis/QGIS/issues/57331) | [PR #57543](https://github.com/qgis/QGIS/pull/57543) | Wachtrij |
-| QGIS 3.34 LTR not loading REST services with referers | [#57288](https://github.com/qgis/QGIS/issues/57288) | Cannot reproduce (on master) |  |
+| QGIS 3.34 LTR not loading REST services with referers | [#57288](https://github.com/qgis/QGIS/issues/57288) | Kan niet worden gereproduceerd (op master) |  |
 | New Postgis/Postgres connection NOT saving username/password when requested | [#57284](https://github.com/qgis/QGIS/issues/57284) | [PR #57544](https://github.com/qgis/QGIS/pull/57544) |  |
 | setting labeling font size to less than 0.3 freezes qgis with meters units | [#57336](https://github.com/qgis/QGIS/issues/57336) | [PR #57560](https://github.com/qgis/QGIS/pull/57560) |  |
 | Server: OAPIF/WFS3 service collection id missmatch | [#57556](https://github.com/qgis/QGIS/issues/57556) | [PR #57561](https://github.com/qgis/QGIS/pull/57561) | Wachtrij |
-| [Layout manager] The wordwrap expression function fails if the legend item is set to hidden | [#57589](https://github.com/qgis/QGIS/issues/57589) | Cannot reproduce (on master) - closed by OP |  |
+| [Layout manager] The wordwrap expression function fails if the legend item is set to hidden | [#57589](https://github.com/qgis/QGIS/issues/57589) | Kan niet worden gereproduceerd (op master) - gesloten door OP |  |
 | [ux][layouts] Fix legend item style mutex | niet gerapporteerd | [PR #57605](https://github.com/qgis/QGIS/pull/57605) | N/B |
-| Expression output won't show until you open the attribute table (PostGIS layers) | [#57578](https://github.com/qgis/QGIS/issues/57578) | Cannot reproduce (on master and 3.36) |  |
+| Expression output won't show until you open the attribute table (PostGIS layers) | [#57578](https://github.com/qgis/QGIS/issues/57578) | Kan niet worden gereproduceerd (op master en 3.36) |  |
 | QGIS Server wrongly positions the map objects in the output when there's more than one map | [#57631](https://github.com/qgis/QGIS/issues/57631) | Is geen probleem |  |
 | Current selected feature still marked as "dirty" after save in attribute table's form view | [#57644](https://github.com/qgis/QGIS/issues/57644) | [PR #57674](https://github.com/qgis/QGIS/pull/57674) |  |
 | JSON-String not read from GPKG | [#57673](https://github.com/qgis/QGIS/issues/57673) | [PR #57707](https://github.com/qgis/QGIS/pull/57707) | N/B |
 | value maps ignore field length | [#57634](https://github.com/qgis/QGIS/issues/57634) | [PR #57690](https://github.com/qgis/QGIS/pull/57690) |  |
 | Identify Results for raster data value does not use correct decimal separator | [#57765](https://github.com/qgis/QGIS/issues/57765) | [PR #57769](https://github.com/qgis/QGIS/pull/57769) | Wachtrij |
-| Value relation dropdown issue -Dropdown list selection reverts to default value upon selecting subtype option | [#57808](https://github.com/qgis/QGIS/issues/57808) | Cannot reproduce (awaiting feedback) |  |
+| Value relation dropdown issue -Dropdown list selection reverts to default value upon selecting subtype option | [#57808](https://github.com/qgis/QGIS/issues/57808) | Kan niet worden gereproduceerd (wacht op terugkoppeling) |  |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 

@@ -1,7 +1,7 @@
 ---
 HasBanner: false
 draft: false
-releaseDate: 22-02-2019
+releaseDate: '2019-02-22'
 section: project
 sidebar: true
 title: Log met wijzigingen voor QGIS 3.6
@@ -41,19 +41,19 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com
 ### Mogelijkheid: Gereedschap Punten reparaties en verbeteringen
 Opmerking: alle hieronder vermelde items zijn ook aan de LTR toegevoegd, zodat ze ook in QGIS 3.4.5 zullen verschijnen.
 ### Select (\"lock\") feature before editing
-In QGIS 2.18 you always had to select a feature first before editing it. In QGIS 3 there was no such thing - editing would be done on any feature any time. Now we are making the selection of feature (\"lock\") available again - using **right click**.
+In QGIS 2.18 moest u altijd eerst een object selecteren om het te bewerken. In QGIS 3 bestond zoiets niet, want bewerken kon op elk object op elk moment. Nu maken we het selecteren (\"vergrendelen\") van objecten weer beschikbaar, door **klikken met rechts**.
 
 In eerdere versies van QGIS3, gaf rechts klikken een klein popup menu weer dat de weergave van van de punten bewerker aanbood.  **Nu wordt bij rechts klikken onmiddellijk de punten bewerker weergegeven en het bewerken van andere objecten uitgeschakeld.**
 
-When a feature is \"locked\", it can be again unlocked by clicking on it or by clicking on an empty area - this will bring us back to the default mode when multiple features can be edited.
+Wanneer een object "\vergrendeld\" is, kan het opnieuw ontgrendeld worden door erop te klikken of door op een leeg gebied te klikken. Dit brengt ons terug naar de standaardmodus waar meerdere objecten bewerkt kunnen worden.
 
 **Wanneer er meerdere objecten op één muislocatie staan zal herhaald met rechts klikken door die objecten gaan** - met elke rechtsklik zult u een ander object zien. Tenslotte, als alle objecten zijn aangeboden, zal geen object worden vergendeld en zal een volgende klik met rechts de doorloop opnieuw starten.
 
-The locking is possible when clicking a feature\'s vertex, edge or interior (for polygons).
+Het vergendelen is mogelijk door te klikken op een punt, rand of interieur (voor polygonen) van een object.
 ### Nieuw punt toevoegen zonder het te verplaatsen
 Het is nu mogelijk om **Shift + dubbelklik te gebruiken om een nieuw punt toe te voegen zonder het op een nieuwe locatie te plaatsen**. Soms is dit handig als gebruikers een extra punten willen plaatsen op de bestaande segmenten.
-### \"Current layer\" mode is now the default
-From the two modes of vertex tool, \"all layers\" used to be the default one. But from the user feedback that seemed like less common case and users prefer to have \"current layer\" as the default.
+### Modus \"Huidige laag\" is nu de standaard
+Van de twee modi in het gereedschap Punten werd \"Alle lagen\" gebruikt als de standaard. Uit terugkoppelingen van gebruikers bleek dat het minder voorkomend gebruik is en gebruikers hebben een voorkeur voor \"Huidige laag\" als standaard.
 
 Dit werd mogelijk gemaakt door [Duitse QGIS gebruikersgroep](http://qgis.de/)
 
@@ -86,14 +86,14 @@ Dit werd mogelijk gemaakt door Lutra Consulting
 Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ## Expressies
 ### Mogelijkheid: Nieuwe functies voor expressies
-- `force_rhr`: forces polygons to follow the right hand rule, in which the area that is bounded by a polygon is to the right of the boundary. In particular, the exterior ring is oriented in a clockwise direction and the interior rings in a counter-clockwise direction.
-- `decode_uri`: takes a layer parameter and an optional uri part parameter. It will return details about the data source of the layer. The available details depend on the data provider. If called with only a layer parameter, a map will be returned with all the available information. If the part is also specified, only the value for the requested part will be extracted from the map.
-- `path` has been added as an option for the `layer_property` expression function
-- `array_sort`: sorts an array of elements
+- `force_rhr`: forceert polygonen om de Rechterhand-regel te respecteren, waarin het gebied dat is gebonden aan een polygoon aan de rechterkant van de grens ligt. In het bijzonder is de buitenste ring georiënteerd in de richting met de klok mee en de binnenste ringen in de richting tegen de klok in.
+- `decode_uri`: neemt een parameter voor een laag en een optionele parameter voor het gedeelte van de URI. Het zal details teruggeven over de gegevensbron van de laag. De beschikbare details zijn afhankelijk van de gegevensprovider. Indien aangeroepen met alleen een parameter voor de laag, zal een kaart worden teruggegeven met alle beschikbare informatie. Indien het gedeelte van de URI ook wordt gespecificeerd, zal alleen de waarde voor het verzochte gedeelte worden uitgenomen uit de kaart.
+- `path` is toegevoegd als een optie voor de expressiefunctie `layer_property`
+- `array_sort`: sorteert een array van elementen
 - `nullif`
 - sqlite_fetch_and_increment
-- `make_rectangle_3points`: Make a rectangle from 3 points. There is two options for make the rectangle by the distance or a projection. Option distance: Second distance is equal to the distance between 2nd and 3rd point. Option projected: Second distance is equal to the distance of the perpendicular projection of the 3rd point on the segment or its extension.
-- `make_square`: Creates a square from a diagonal.
+- `make_rectangle_3points`: Maak een rechthoek uit 3 punten. Er zijn twee opties voor het maken van de rechthoek: op afstand of een projectie. Optie afstand: Tweede afstand is gelijk aan de afstand tussen het 2e en 3e punt. Optie geprojecteerd: Tweede afstand is gelijk aan de afstand van de loodrechte projectie van het 3e punt op het segment of de uitbreiding daarvan.
+- `make_square`: Maakt een vierkant uit een diagonaal.
 - from_json
 - to_json
 
@@ -108,11 +108,11 @@ Maakt expressies mogelijkzoals:
 
 Deze mogelijkheid werd ontwikkeld door Nyall Dawson, Mathieu Pellerin
 ### Mogelijkheid: Nieuwe variabelen voor expressies voor kaart
-- \@map_crs_description: name of the coordinate reference system of the map.
-- \@map_crs_acronym: acronym of the coordinate reference system of the map.
-- \@map_ellipsoid_acr: acronym of the ellipsoid of the coordinate reference system of the map.
-- \@map_crs_proj4: Proj4 definition of the coordinate reference system.
-- \@map_crs_wkt: WKT definition of the coordinate reference system.
+- \@map_crs_description: naam van het coördinatenreferentiesysteem van de kaart.
+- \@map_crs_acronym: acroniem van het coördinatenreferentiesysteem van de kaart.
+- \@map_ellipsoid_acr: acroniem van de ellipsoïde van het coördinatenreferentiesysteem van de kaart.
+- \@map_crs_proj4: Proj4-definitie van het coördinatenreferentiesysteem.
+- \@map_crs_wkt: WKT-definitie van het coördinatenreferentiesysteem.
 
 Deze mogelijkheid werd ontwikkeld door  Alexis Roy-Lizotte
 ### Mogelijkheid: Nieuwe funtie try() om fouten te vangen
@@ -120,8 +120,8 @@ De nieuwe functie try() probeert een expressie en geeft de waarde ervan terug in
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ## Gebruikersinterface
-### Feature: A new grayscale theme: \"Blend of Gray\"
-A brand new UI theme has made its way into QGIS named \"Blend of Gray\". In addition, hundreds of fixes, tweaks, and refinements were applied to the preexisting \"Night Mapping\" theme.
+### Mogelijkheid: Een nieuw thema: \"Blend of Gray\" voor grijswaarden
+Een nieuw thema voor de gebruikersinterface heeft zijn weg gevonden in QGIS, genaamd \"Blend of Gray\". In aanvulling daarop werden honderden reparaties, tweaks en verfijningen toegepast op het reeds bestaande thema "Night Mapping".
 
 ![image4](images/entries/32e743ea5bf84c96b86ea31160b1677b6362eacf.png.400x300_q85_crop.webp)
 
@@ -138,7 +138,7 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Optioneel forceren van de Rechterhand-regel gedurende het renderen van symbolen voor polygonen
-This new option, available under the \"Advanced\" button for fill symbols, allows forcing rendered polygons to follow the standard \"right hand rule\" for ring orientation (where exterior ring is clockwise, and interior rings are all counter-clockwise).
+Deze nieuwe optie, beschikbaar onder de knop \"Geavanceerd\" voor het vullen van symbolen, maakt het mogelijk te forceren voor gerenderde polygonen om de standaard \"Rechterhand-regel\" te volgen voor de richting van de ringen (waarbij de buitenste ring met de klok mee gaat en de binnenste ringen allemaal tegen de klok in).
 
 De reparatie voor de richting wordt alleen toegepast tijdens het renderen, en de originele geometrie van het object wordt niet gewijzigd.
 
@@ -148,7 +148,7 @@ Deze mogelijkheid werd mogelijk gemaakt door de Duitse QGIS gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Optie voor eenvoudige lijnen en markeringslijnen om alleen de buitenste ring of binnenste ringen te renderen
-This new option is shown whenever a simple line symbol or marker line symbol is used as part of a fill symbol for rendering polygons. The default behavior is to render both interior and exterior rings, but this new setting allows users to set the symbol layer to render only for the exterior ring OR only for interior rings. This allows for symbolisation which wasn\'t directly possible before, such as a marker line with markers for interior rings angled toward the interior of the polygon.
+Deze nieuwe optie wordt weergegeven wanneer een symbool voor een eenvoudige lijn of een symbool voor een markeringslijn wordt gebruikt als deel van een vulsymbool voor het renderen van polygonen. Het standaard gedrag is om zowel de binnenste als de buitenste ringen te renderen, maar deze nieuwe instelling maakt het voor gebruikers mogelijk om de symboollaag zo in te stellen dat alleen de buitenste ring OF alleen de binnenste ringen worden gerenderd. Dit maakt symboliseren mogelijk, wat eerder niet direct mogelijk was, zoals een markeringslijn met markeringen voor binnenste ringen in een hoek naar het binnenste van de polygoon.
 
 Deze mogelijkheid werd mogelijk gemaakt door de Duitse QGIS gebruikersgroep
 
@@ -166,7 +166,7 @@ Net zoals de SVG en markering voor rasterafbeeldingen, kan de vulling voor raste
 
 Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 ### Mogelijkheid: Weergavewaarden gebruiken voor geklassificeerde renderers
-When a field is configured with a value relation, value map or other \"representable value\" and the field is used as the source for a classification renderer, the represented values will be taken to label the categories.
+Wanneer een veld is geconfigureerd met een relatie naar een waarde, waardenkaart of andere \"weer te geven waarde\" en het veld wordt gebruikt als bron voor een renderer van classificatie, zullen de weer te geven waarden worden gebruikt om de categorieën te labelen.
 
 Deze mogelijkheid werd ontwikkeld door Matthias Kuhn
 ### Mogelijkheid: Optie om categorieën samen te voegen in renderer Categorieën
@@ -182,23 +182,23 @@ Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Projectkleuren weergeven in kleurgebonden data-gedefinieerde knoppen
-This adds a new \"Project Colors\" section in data defined buttons which are linked to a color value. The color menu contains all colors defined as part of the current project\'s Project Color Scheme (which is defined through project properties).
+Dit voegt een nieuw gedeelte \"Projectkleuren\" toe aan data-bepaalde knoppen die zijn gekoppeld aan een kleurwaarde. Het menu Kleur bevat alle kleuren die zijn gedefinieerd als deel van het kleurenschema van het project voor het huidige project (dat wordt gedefinieerd in de Projecteigenschappen).
 
 Wanneer een projectkleur wordt gekozen uit de knop, wordt de eigenschap gekoppeld aan die kleur. Het zal automatisch elke toekomstige wijziging aan de kleur volgen die worden gemaakt via de Projecteigenschappen.
 
-This allows users to define common colors for a project once, and then \"bind\" symbol, label, layout, etc colors to these preset colors. The link is live, so you change it once, and the change is reflected EVERYWHERE. Sure beats updating a color 100 times when it\'s use has been scattered throughout a project\'s symbols, labels, etc\...
+Dit maakt het mogelijk dat gebruikers eenmalig veelvoorkomende kleuren kunnen definiëren voor een project en dan kleuren voor symbolen, labels, lay-outs, etc \"binden\" aan deze vooraf ingestelde kleuren. De koppeling is live, dus als u die eenmaal wijzigt, wordt de wijziging OVERAL zichtbaar. Veel beter dan het 100 keer bijwerken van een kleur als het gebruik daarvan is verspreid over de symbolen, labels, etc. van een project.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen aan dialoogvenster stijlbeheer
 Het dialoogvenster Stijl manager heeft een aantal verbeteringen ondergaan:
-- A new \"list view\" mode has been added
-- An \"all\" tab has been added, which shows all matching symbols (regardless of the symbol type)
+- Een nieuwe modus \"Lijstweergave\" is toegevoegd
+- Een tab \"Alles\" is toegevoegd die alle overeenkomende symbolen weergeeft (ongeacht het type symbool)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: SLD exporteren voor rasterstijlen
-QGIS is now able to export raster styling to sld, for example to be used in Geoserver. See: <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
+QGIS is nu in staat rasterstijlen te exporteren naar SLD, bijvoorbeeld om te worden gebruikt in Geoserver. Bekijk: <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
 
 ![image7](images/entries/7ab383dfaa0a0dbc9651168a56f44e2275b8c2df.png.400x300_q85_crop.webp)
 
@@ -231,7 +231,7 @@ Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Printvormgeving
 ### Mogelijkheid: Grid frame verbeteringen
-Users can now set a margin for the grid frames in layout map items. Additionally, new \"Zebra (Nautical)\" and \"Line border (Nautical)\" frame styles have been added, which show nautical-style blocks in the grid corners when a margin is set for the grid.
+Gebruikers kunnen nu een marge instellen voor de rasterframes in hun items voor de lay-outkaart.  Aanvullend werden nieuwe \"Zebra (Nautisch)\" en \"Lijnrand (Nautisch)\" frame-stijlen toegevoegd, die blokken in nautische stijl weergeven in de rasterhoeken als een marge is ingesteld voor het raster.
 
 Deze mogelijkheid werd ontwikkeld door konst
 ### Mogelijkheid: Verbeterde behandeling van exporteren van tekst en labels
@@ -240,7 +240,7 @@ Bij het exporteren van een afdruklay-out naar PDF- of SVG- indelingen hebben geb
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Verbeteringen voor kaartlabels
 Verscheidene verbeteringen zijn gemaakt met betrekking tot hoe labels worden gerenderd in kaartitems van lay-out.
-- A new setting allows per-map control of how close labels are permitted to be placed to the map item\'s edges. Sizes can be set using mm/inches/pixels/etc, and data defined label margins are allowed.
+- Een nieuwe instelling maakt beheer per kaart mogelijk over hoe dicht labels mogen worden geplaatst bij de randen van de kaart. Groottes kunnen worden ingesteld met behulp van mm/inches/pixels/etc., en data-gedefinieerde labelmarges zijn toegestaan.
 - Een nieuwe instelling maakt beheer per kaart mogelijk of gedeeltelijke labels zichtbaar zijn op de kaart. Dit staat standaard uit, (anders dan de instelling voor het kaartvenster die standaard aan staat voor een nieuw project) omdat lay-outs altijd standaard de instellingen zouden moeten gebruiken die de hoogste kwaliteit cartografische uitvoer produceren.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
@@ -249,17 +249,17 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 ### Mogelijkheid: Sneltoetsen voor bereik/schaal van kaartitems opnieuw bewerkt
 De knoppen voor het instellen van kaartitems voor lay-out om overene te komen met de huidige kaartweergave (en vice versa) zijn naar boven verplaatst naar een nieuwe werkbalk in het venster voor eigenschappen van kaartitems.
 
-New actions have also been added to set the map item\'s scale to match the main canvas scale, and to set the main canvas scale to match the selected layout map\'s scale. These mirror the existing settings for setting the extent from the canvas and pushing the extent TO the canvas.
+Nieuwe acties zijn ook toegevoegd om de schaal van kaartitems overeen te laten komen met de schaal van het kaartvenster, en om de schaal van het kaartvenster overeen te laten komen met de schaal van de geselecteerde lay-out. Deze spiegelen de bestaande instellingen voor het instellen van het bereik van het kaartvenster en drijven het bereik NAAR het kaartvenster.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Layout items can \"block\" map labels
-This feature allows other layout items (such as scalebars, north arrows, inset maps, etc) to be marked as \"blockers\" for the map labels in a map item. This prevents any map labels from being placed under those items - causing the labeling engine to either try alternative placement for these labels (or discarding them altogether).
+### Mogelijkheid: Items van lay-out mogen kaartlabels \"blokkeren\"
+Deze mogelijkheid geeft andere items voor de lay-out (zoals schaalbalken, noordpijlen, ingevoegde kaarten, etc) de mogelijkheid te worden gemarkeerd als \"blokkeringen\" voor de kaartlabels in een kaartitem. Dit voorkomt dat kaartlabels onder deze items worden geplaatst - wat ervoor zorgt dat het programma voor de labels probeert een alternatieve plaatsing voor die te vinden (of ze geheel negeert).
 
-This allows for more cartographically pleasing maps \-- placing labels under other items can make them hard to read, yet without this new setting it\'s non-trivial to get QGIS to avoid placing the labels in these obscured areas.
+Dit maakt cartografisch meer aantrekkelijke kaarten mogelijk -- plaatsen van labels onder andere items kan ze moeilijk te lezen maken, maar zonder deze nieuwe instelling is het niet eenvoudig om QGIS het plaatsen van labels op deze bedekte gebieden te laten vermijden.
 
-The blocking items are set through a map item\'s properties, under the label settings panel. The setting is per-map item, so you can have a scalebar block the labels for one map in your layout and not others (if you so desire!)
+De blokkerende items worden ingesteld door de eigenschappen van een kaartitem, in het paneel voor instellingen van het label. De instelling is per kaartitem, dus u kunt een schaalbalk hebben die de labels blokkeert in de ene kaart in uw lay-out, maar niet in andere (als u dat zou willen!)
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -274,7 +274,7 @@ Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Beheer over stapelpositie van bereiken van overzichtskaarten
-QGIS allows overview extents to be drawn below map labels (the new default), but in 3.6 choices have been added for drawing them below all map layers, or above/below a specific map layer. This allows users to control exactly where in the map item\'s layer stack the overview will be placed, e.g. allowing them to draw a overview extent below some feature layers such as roads whilst drawing it above other background layers.
+QGIS staat toe dat bereiken voor overzichtskaarten wordne getekend onder kaartlabels (de nieuwe standaard), maar in 3.6 zijn keuzes toegevoegd om ze te tekenen onder alle kaartlagen, of boven/onder een specifieke laag. Dit maakt het voor gebruikers mogelijk om exact te beheren waar in de stapel van lagen van het kaartitem het overzicht zal worden geplaatst, bijv. het mogelijk maken een bereik van een overzicht te tekenen onder enkele lagen met objecten zoals wegen, maar het tegelijkertijd boven andere achtergrondlagen te tekenen.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Nieuwe variabelen voor expressies voor items van de legenda
@@ -286,15 +286,15 @@ Nieuwe variabelen voor expressies zijn toegevoegd om te gebruiken in data-gedefi
 - \@legend_filter_by_map
 - \@legend_filter_out_atlas
 
-If the legend is linked to a map, then expressions used in that legend will also have access to the linked variables, including \@map_scale, \@map_extent, etc.
+Als de legenda is gekoppeld aan een kaart, dan zullen de in die legenda gebruikte expressies ook toegang hebben tot de gekoppelde variabelen, inclusief \@map_scale, \@map_extent, etc.
 
 Aanvullend gebruiken symbolen, gerenderd als deel van een legenda, de volledig beschikbare context van de expressie voor de legenda. Dit betekent dat de symbolen toegang hebben tot variabelen, zoals het huidige object Atlas.
 
 Deze mogelijkheid werd ontwikkeld door  Alexis Roy-Lizotte
 ### Mogelijkheid: Expressies binnen tekst van een item voor legenda
-This feature allows for expressions to be embedded directly inside legend item text (e.g. group, subgroup and item text). The expressions are evaluated at render time, with full knowledge of the legend\'s expression context (so can utilise variables from the layout/layout item/etc)
+Deze mogelijkheid maakt het mogelijk dat expressies direct worden ingebed in de tekst van een item voor de legenda (bijv. groep, subgroep en tekst van het item). De expressies worden geëvalueerd tijdens het renderen, met volledige kennis van de context van de expressie voor de legenda (kan dus variabelen gebruiken uit de lay-out/item voor de lay-out/etc)
 
-There\'s no UI for this yet (that will come in 3.8), but expressions are entered using the standard \[% 1 + 2 %\] format.
+Er is nog geen gebruikersinterface hiervoor (die zal komen in 3.8), maar expressies kunnen worden ingevoerd met behulp van de standaard \[% 1 + 2 %\] indeling.
 
 Bijvoorbeeld een item voor de legenda als
 
@@ -319,7 +319,7 @@ Dit werd mogelijk gemaakt door Lutra Consulting
 
 Deze mogelijkheid werd ontwikkeld door [Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk)
 ## Processing
-### Feature: New algorithm \"Remove duplicates by attribute\"
+### Mogelijkheid: Nieuw algoritme \"Duplicaten van attributen verwijderen\"
 Maakt het verwijderen van gedupliceerde objecten mogelijk, geïdentificeerd met behulp van de waarden in één (of meer) veldwaarden van de invoerobjecten. Optioneel kunnen genegeerde (duplicaat)-objecten worden opgeslagen in een afzonderlijke afvoer.
 
 ![image9](images/entries/ae0544826b7d16479b2e48ba97f1f530c80bbd42.png.400x300_q85_crop.webp)
@@ -328,7 +328,7 @@ Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Algoritme Explode HStore
-This algorithm creates a copy of an input layer and adds a new field for every unique key found in a HStore type field. For instance, a HStore field is often present in an OSM dataset (\"other_tags\").
+Dit algoritme maakt een kopie van een invoerlaag en voegt een nieuw veld in voor elke unieke sleutel in het veldtype HStore. Een veld HStore is bijvoorbeeld vaak aanwezig in een gegevensset van OSM (\"other_tags\").
 
 ![image10](images/entries/304c29f7cc6d26aa823001b67a46744deec3c2dd.png.400x300_q85_crop.webp)
 
@@ -360,7 +360,7 @@ Deze mogelijkheid werd ontwikkeld door Nyall Dawson, Nathan Woodrow
 ### Mogelijkheid: Nieuw type parameter voor configureren van authenticatie
 Een nieuw type parameter voor algoritmes van Processing, QgsProcessingParameterAuthConfig, is toegevoegd, wat het mogelijk maakt een selectie te maken uit beschikbare configuraties voor authenticatie (en het maken van nieuwe).
 
-It allows creation of processing algorithm which can fully take advantage of QGIS\' mature authentication handling, avoiding the need to use insecure string parameters for users to input sensitive logon credentials.
+Het maakt het mogelijk algoritmes voor processing te maken die volledig gebruik kunnen maken van de volwassen afhandeling van de authenticatie in QGIS, daardoor de noodzaak voor het gebruiken van onveilige tekenreeks-parameters voor gebruikers, om gevoelige inloggegevens in te voeren, te vermijden.
 
 Parameters QgsProcessingParameterAuthConfig worden geëvalueerd met behulp van QgsProcessingAlgorithm.parameterAsString(), die de ID voor de geselecteerde configuratie voor de authenticatie teruggeeft.
 
@@ -370,7 +370,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 ### Mogelijkheid: Opties voor resamplen en indeling in het algoritme gdaladdo
 Deze mogelijkheid werd ontwikkeld door Alex Bruy
 ### Mogelijkheid: Algoritme Rastergebiedsstatistieken
-This algorithm calculates statistics for a raster layer\'s values, categorized by zones defined in another raster layer.
+Dit algoritme berekent statistieken voor de waarden van een rasterlaag, gecategoriseerd op gebieden gedefinieerd in een andere rasterlaag.
 
 ![image14](images/entries/014272dcac2a228f8d8cc7a1587ac9b07865bc1f.png.400x300_q85_crop.webp)
 
@@ -391,7 +391,7 @@ Als de invoergeometrie M- of Z-waarden bevat zullen die lineair worden geïnterp
 Modus Direct bewerken wordt ook ondersteund.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Geodesic mode for \"Join by Lines (Hub lines)\" algorithm
+### Mogelijkheid: Geodesische modus voor algoritme \"Join by Lines (Hub lines)\"
 Dit maakt het mogelijk optioneel geodesische lijnen te maken, die de kortste afstand tussen de punten weergeven, gebaseerd op de ellipsoïde.
 
 Wanneer de modus Geodesisch wortd gebruikt is het mogelijk de gemaakte lijnen te splitsen op de antimeridiaan (±180 graden longitude), wat het renderen van de lijnen kan verbeteren. Aanvullend kan de afstand tussen de punten worden gespecificeerd. Een kleinere afstand resulteert in een dichtere, meer nauwkeuriger lijn.
@@ -413,7 +413,7 @@ Dit werd mogelijk gemaakt door [Solspec](http://solspec.io)
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: Verwijderen van instellingen van de tab Geavanceerd in Opties
-This change adds a new right click menu to the settings shown in the \"Advanced\" tab in the settings dialog, which allows users to remove that setting (or group of settings).
+Deze wijziging voegt een nieuw menu voor rechtsklikken toe aan de instellingen die worden weergegeven op de tab \"Geavanceerd\" in het dialoogvenster Opties, wat gebruikers de mogelijkheid geeft die instelling te verwijderen (of groep van instellingen).
 
 ![image17](images/entries/6b012542ef9ca282ba6f9087758f85d818dd5ec9.png.400x300_q85_crop.webp)
 
@@ -421,7 +421,7 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Browser
-### Feature: Add \"export to file\" options for raster and vector layers within the browser
+### Mogelijkheid: Opties \"Naar bestand exporteren\" voor raster- en vectorlagen in de browser
 Maakt het mogelijk deze bestanden direct te exporteren (bijv. naar een andere indeling, CRS, etc) zonder de noodzaak ze feitelijk eerst in het project te laden.
 
 ![image18](images/entries/d939594c84d7aa186fe5f18f46ed7ad0c89d8c67.png.400x300_q85_crop.webp)
@@ -430,13 +430,13 @@ Dit werd mogelijk gemaakt door [Nyall Dawson (North Road)](https://north-road.co
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Eigen eigenschappen bestand/map
-You can now right click on a file or folder within the browser, and select \"File Properties\" or \"Directory Properties\" to open the native file/folder properties dialog for that entry. This allows rapid access to operating system file or folder properties, such as file permissions and sharing options.
+U kunt nu met rechts klikken op een bestand of een map in de browser en \"Bestandseigenschappen\" of \"Mapeigenschappen\" selecteren om het eigen dialoogvenster voor eigenschappen van bestand/map te openen voor dat item. Dit maakt snelle toegang mogelijk tot de eigenschappen van een bestand of map van het besturingssysteem, zoals rechten voor bestanden en opties voor delen.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Voorbeeld lagen en attributen
-QGIS 3.6 brings back the functionality from the old 2.18 standalone \"browser\" application to preview layers and their attributes. This functionality has been moved to the inbuilt browser panel, and is available by right-clicking on a layer and selecting \"properties\" (or by clicking the \"enable properties widget\" button in the browser toolbar).
+QGIS 3.6 brengt de functionaliteit terug van de oude 2.18 zelfstandige toepassing \"Browser\" om vooraf de lagen en hun attributen te kunnen bekijken. Deze functionaliteit werd verplaatst naar het ingebouwde paneel Browser en is beschikbaar door rechts te klikken op een laag en \"Eigenschappen\" te selecteren (of door op de knop \"Widget eigenschappen inschakelen\" te klikken op de werkbalk Browser).
 
 ![image19](images/entries/5058aa9a701e417271b0cbf0869669177a7f0fe4.png.400x300_q85_crop.webp)
 
@@ -450,7 +450,7 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Het rechtstreeks aanmaken van Geopackage- en Shapebestanden.
-Right clicking a directory in the browser panel now shows a \"New\" menu, containing items for creating a new Geopackage, Shapefile, or subdirectory under the selected directory.
+Rechtsklikken op een map in het paneel Browser geeft nu een menu \"Nieuw\" weer dat items bevat om GeoPackage, ShapeFile of submappen onder de geselecteerde map aan te maken.
 
 ![image20](images/entries/2bc8475b95a8413285b3c88a9a070f02f43cf5b9.png.400x300_q85_crop.webp)
 
@@ -468,14 +468,14 @@ Terminal hackers verheug u!
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Algemeen
-### Feature: Improved \"missing layer\" handling on project load
+### Mogelijkheid: Verbeterde afhandeling van \"ontbrekende laag\" bij het laden van een project
 ![image22](images/entries/8e3fbce280478d8e88cab7e24b489b783c83fc13.png.400x300_q85_crop.webp)
 
 Dit werd mogelijk gemaakt door [A.R.P.A. Piemonte](http://www.arpa.piemonte.it/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](http://www.itopen.it)
 ### Mogelijkheid: Optionele instelling voor het uitschakelen van controle op updates
-A new setting, \"allowVersionCheck\" has been added to the QGIS configuration ini file. If set to true (the default), users may control whether the version check is enabled or disabled through the QGIS settings dialog. When this setting is set to false, no version checking will be performed AND users will NOT have an option to enable this check in the settings dialog.
+Een nieuwe instelling, \"allowVersionCheck\" is toegevoegd aan het QGIS configuratie ini-bestand.  Als deze op true gezet wordt (de standaard), mogen gebruikers bepalen of de controle op updates in- of uitgeschakeld is in het instellingen dialoogvenster.  Als deze instelling op false gezet wordt, wordt er geen controle op updates uitgevoerd EN gebruikers hebben NIET de mogelijkheid om dit in te schakelen in het instellingen dialoogvenster.
 
 Deze instelling is bedoeld voor gebruik in bedrijfsinstallaties waar QGIS versiebeheer centraal geregeld wordt.
 
@@ -514,7 +514,7 @@ Wanneer een laag van Feature Server labelen heeft gedefinieerd door de server, z
 
 Deze mogelijkheid werd ontwikkeld door Mathieu Pellerin
 ### Mogelijkheid: Ondersteuning voor geheugenlagen met Booleaanse en binaire velden
-Memory (\"Temporary scratch\") layers can now use binary and boolean (true/false) field types.
+Geheugenlagen (\"Tijdelijke tekenlaag\") mogen nu binaire en booleaanse (true/false) typen veld gebruiken.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -526,13 +526,13 @@ gegevens die zijn opgeslagen als JSON kunnen wordne weergegeven en bewerkt in
 - Widgets ValueRelation die meervoudige selectie toestaan geactiveerd
 - Widgets KeyValue 
 - Lijstwidgets
-- or the [QML widget which also supports visualizing JSON data](https://www.opengis.ch/2018/11/13/visualize-postgres-json-data-in-qml-widgets/)
+- of de [QML-widget die ook het visualiseren van gegevens van JSON ondersteunt](https://www.opengis.ch/2018/11/13/visualize-postgres-json-data-in-qml-widgets/)
 
 Dit werd mogelijk gemaakt door [Kanton Zug, Amt für Geoinformation](https://geo.zg.ch/)
 
 Deze mogelijkheid werd ontwikkeld door David Signer (OPENGIS.ch)
 ### Mogelijkheid: provider Postgres: selectie primaire sleutel opslaan
-When a view loaded from Data Source Managers\'s PostgreSQL tab you can select the key columns of the view (by default the first column is used, which can be wrong). This commit stores that selection in the settings, so that it doesn\'t have to be reselected on subsequent loads. This stored selection is also used when adding the loading from the browser.
+Wanneer een weergave is geladen vanuit de tab PostgreSQL van Database beheren kunt u de sleutelkolommen van de weergave selecteren (standaard wordt de eerste kolom gebruikt, wat verkeerd kan zijn). Deze indiening slaat die selectie in de instellingen op, zodat het niet opnieuw hoeft te worden geselecteerd bij opnieuw laden. Deze opgeslagen selectie wordt ook gebruikt bij het toevoegen van het laden aan de browser.
 
 Deze mogelijkheid werd ontwikkeld door Jürgen Fischer
 ### Mogelijkheid: Ondersteuning voor unieke waarden in meervoudige velden van ArcGIS Feature Server
@@ -540,7 +540,7 @@ QGIS kan nu een laag van Feature Server met een renderinstelling voor unieke waa
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](http://imhere-asia.com/)
 ## QGIS Server
-### Feature: Possibility to set ATLAS_PK in GetPrint request to print atlas sheet(s)
+### Mogelijkheid: Mogelijkheid om ATLAS_PK in te stellen in verzoek GetPrint voor blad(en) van atlas
 De nieuwe parameter GetPrint accepteert de primaire sleutel(s) waarvoor bladen van atlas zouden moeten worden afgedrukt, gescheiden door komma,
 
 Een dergelijk verzoek zou er uitzien als:
@@ -548,7 +548,7 @@ Een dergelijk verzoek zou er uitzien als:
     https://yourserver.name/path/to/qgisproject?SERVICE=WMS&REQUEST=GetPrint
     &TEMPLATE=A4&FORMAT=pdf&ATLAS_PK=1,3,7
     
-One can also provide an asterisk (\*) for ATLAS_PK to request all features of an atlas. To protect the server against requesting too many features, it is possible to restrict it to a defined maximum of features that can be requested at one time (see attached screenshot).
+Men kan ook een asterisk (\*) opgeven voor ATLAS_PK om alle objecten van een atlas op te vragen. Het is mogelijk, om de server te beschermen tegen te veel objecten, door deze te beperken tot een gedefinieerd maximum aantal objecten die in één keer kunnen worden opgevraagd (zie bijgevoegde schermafdruk).
 
 Omdat cliënten niet zouden kunnen weten welk sjabloon een atlas heeft en welk(e) attribu(u)t(en) de primaire sleutel zijn van de bedekkingslaag, voegt deze nieuwe mogelijkheid die informatie toe aan het antwoord van GetProjectSettings van de service WMS.
 
@@ -566,7 +566,7 @@ Dit werd mogelijk gemaakt door Ifremer
 
 Deze mogelijkheid werd ontwikkeld door 3liz
 ### Mogelijkheid: Indeling JSON toevoegen voor WMS verzoek GetFeatureInfo
-Thanks to this new feature, the FORMAT parameter of GetFeatureInfo for the WMS service may take \'application/json\' or \'application/geo+json\' values. In this case, the document returned by the server looks something like this:
+Dankzij deze nieuwe mogelijkheid kan de parameter FORMAT van GetFeatureInfo voor de service WMS de waarden \'application/json\' of \'application/geo+json\' hebben. In dit geval ziet het document dat door de server wordt teruggegeven er ongeveer zo uit:
 
     {"type": "FeatureCollection",
         "features":[
@@ -595,7 +595,7 @@ De nieuwe knoppen stellen de gebruiker in staat de query in een extern bestand v
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ## Programmeerbaarheid
 ### Mogelijkheid: Nieuwe klasse QgsExifTools
-Contains utilities for retrieving the geotag from images and for setting an image\'s geotag.
+Bevat mogelijkheden voor het ophalen van de geotag uit afbeeldingen en voor het instellen van een geotag voor een afbeelding.
 
 Werken met geotags (vóór deze klasse!) is super-vervelend en vergt veel werk en is afhankelijk van ofwel het parsen van programma's voor de opdrachtregel of afhankelijk van niet-standaard bibliotheken voor Python die niet overal beschikbaar zijn, en vaak zeer moeilijk voor gebruikers op bepaalde platformen om te installeren en goed werkend te krijgen.
 
@@ -603,7 +603,7 @@ Met deze klasse hebben we stabiele methoden voor ophalen/instellen van geotags, 
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ### Mogelijkheid: Doorlopen over een delen van een QgsGeometry
-This new PyQGIS API allows easy iteration over all the parts of a geometry, regardless of the geometry\'s type. E.g.
+Deze nieuwe PyQGIS API maakt het gemakkelijk doorlopen van alle delen van een geometrie mogelijk, ongeacht het type geometrie. Bijv.
 
     geometry = QgsGeometry.fromWkt( 'MultiPoint( 0 0, 1 1, 2 2)' )
     for part in geometry.parts():
@@ -619,7 +619,7 @@ Er zijn twee mogelijkheden voor doorlopen beschikbaar. QgsGeometry.parts() geeft
     for part in geometry.parts():
        part.transform(ct)
     
-For a const iteration, calling .const_parts() gives a const iterator, which cannot edit the parts but avoids a potentially expensive QgsGeometry detach and clone
+Voor een const-doorloop: aanroepen van .const_parts() geeft een const doorloop, die de delen niet kan bewerken, maar potentieel duur losmaken en klonen van QgsGeometry vermijdt
 
     geometry = QgsGeometry.fromWkt( 'MultiPoint( 0 0, 1 1, 2 2)' )
     for part in geometry.const_parts():
@@ -632,9 +632,9 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 Enkele nette aanvullingen in de API zijn gemaakt voor de QgsLineString API:
 - len(QgsCurve) geeft het aantal punten terug in een boog
 - IndexErrors aangeven bij aanroepen van pointN, xAt, yAt, zAt, mAt, setXAt, setYAt, setMAt, setZAt met ongeldige indices voor punten
-- Add \[\] getter for retrieving specific vertices, eg. ls\[0\] returns QgsPoint(\...)
-- Add \[\] setter for setting specific (existing) vertices, e.g. ls\[1\] = QgsPoint(1,2)
-- Add del support for removing vertices, e.g. del ls\[1\] removes the second vertex
+- \[\] getter toegevoegd voor ophalen van specifieke punten, bijv. ls\[0\] geeft terug QgsPoint(\…)
+- \[\] setter toegevoegd voor instellen van specifieke (bestaande) punten, bijv. ls\[1\] = QgsPoint(1,2)
+- Ondersteuning voor del toegevoegd voor verwijderen van punten, bijv. del ls\[1\] verwijdert het tweede punt
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
@@ -642,8 +642,8 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north
 ### Mogelijkheid: Verbeteringen aan PyQGIS Geometry Collection API 
 De PyQGIS API voor het werken met verzamelingen van geometrieën is verbeterd:
 - Aanroepen van removeGeometry met een ongeldige index zal nu een IndexError aangeven
-- Calling collection\[0\] will return the first geometry in the collection, collection\[1\] the second, etc. And negative indices return from the end of the collection, so collection\[-1\] returns the last geometry in the collection.
-- Geometries can be deleted by calling `del collection[1]` (deletes the second geometry from the collection). Also supports negative indices to count from the end of the collection.
+- Aanroepen van collection\[0\] zal de eerste geometrie in de verzameling teruggeven, collection\[1\] de tweede, etc. En negatieve indices geven terug vanaf het einde van de verzameling, dus collection\[-1\] geeft de laatste geometrie in de verzameling terug.
+- Geometrieën kunnen worden verwijderd door het aanroepen van `del collection[1]` (verwijdert de tweede geometrie uit de verzameling). Ondersteunt ook negatieve indices om vanaf het einde van de verzameling te tellen.
 
 Aanvullend kunt u nu ook gemakkelijk door de geometrieën in de verzameling lopen, wat dit type code mogelijk maakt:
 
@@ -655,12 +655,12 @@ Aanvullend kunt u nu ook gemakkelijk door de geometrieën in de verzameling lope
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Easier Processing algorithm creation via \@alg decorator
+### Mogelijkheid: Eenvoudiger maken van algoritme voor Processing via \@alg_decorator
 Maakt het volgende mogelijk om scripts voor Processing te definiëren zonder de noodzaak van het implementeren van een aangepaste klasse:
 
 from qgis.processing import alg
 
-| \@alg(name=\"test2\", label=\"test 2\", group=\"test\", groupid=\"test\") | \@alg.input(type=alg.STRING, name=\"IN1\", label=\"In string\") | \@alg.input(type=str, name=\"IN2\", label=\"In string 1\", optional=True) | \@alg.input(type=str, name=\"IN3\", label=\"In string 2\") | \@alg.input(type=alg.SINK, name=\"SINK\", label=\"Sink it!\") | \@alg.output(type=str, name=\"OUT\", label=\"WAT\") | \@alg.output(type=alg.MAPLAYER, name=\"OUT2\", label=\"WAT\") | \@alg.output(type=alg.VECTOR_LAYER, name=\"VECTOR_LAYER\", label=\"WAT\") | def testalg(instance, parms, context, feedback, inputs): | \"\"\" | This is a test function that does stuff | \"\"\" | feedback.pushInfo(\"We got these inputs!!\") | feedback.pushInfo(inputs\[\'IN1\'\]) | feedback.pushInfo(inputs\[\'IN2\'\]) | feedback.pushInfo(inputs\[\'IN3\'\]) | return { | \"OUT2\": \"wat\" | }
+| \@alg(name=\"test2\", label=\"test 2\", group=\"test\", groupid=\"test\") | \@alg.input(type=alg.STRING, name=\"IN1\", label=\"In string\") | \@alg.input(type=str, name=\"IN2\", label=\"In string 1\", optional=True) | \@alg.input(type=str, name=\"IN3\", label=\"In string 2\") | \@alg.input(type=alg.SINK, name=\"SINK\", label=\"Sink it!\") | \@alg.output(type=str, name=\"OUT\", label=\"WAT\") | \@alg.output(type=alg.MAPLAYER, name=\"OUT2\", label=\"WAT\") | \@alg.output(type=alg.VECTOR_LAYER, name=\"VECTOR_LAYER\", label=\"WAT\") | def testalg(instance, parms, context, feedback, inputs): | \"\"\" | This is a test function that does stuff | \"\"\" | feedback.pushInfo(\"We hebben deze invoer!!\") | feedback.pushInfo(inputs\[\'IN1\'\]) | feedback.pushInfo(inputs\[\'IN2\'\]) | feedback.pushInfo(inputs\[\'IN3\'\]) | return { | \"OUT2\": \"wat\" | }
 
 Deze mogelijkheid werd ontwikkeld door Nathan Woodrow
 ### Mogelijkheid: Blokkeren van (niet-async) netwerkverzoeken
@@ -675,7 +675,7 @@ Doorverwijzingen worden automatisch afgehandeld door de klasse.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](http://north-road.com)
 ### Mogelijkheid: Aangepaste controles voor geldigheid voor exports van lay-out
-See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
+Bekijk <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
 
 Dit werd mogelijk gemaakt door [SMEC/SJ](http://www.smec.com/en_au)
 
@@ -697,7 +697,7 @@ Aanvullend daar zal het een beter beheer van de Z voor rechthoeken door 3 punten
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://www.oslandia.com)
 ## 3D-objecten
 ### Mogelijkheid: Terreinschaduw
-This adds new options for user to choose how the terrain should be rendered: - shading disabled - color of terrain is determined only from map texture - shading enabled - color of terrain is determined using Phong\'s shading model, taking into account map texture, terrain normal vector, scene light(s) and terrain material\'s ambient+specular colors and shininess
+Dit voegt nieuwe opties voor de gebruiker toe die kan kiezen hoe het terrein zou moeten worden gerenderd: - schaduw uitgeschakeld - kleur van het terrein wordt alleen bepaald door de textuur van de kaart - schaduw ingeschakeld - kleur van het terrein wordt bepaald met het model Phong\'s shading. Waarbij rekening wordt gehouden met de textuur van de kaart, de normale vector voor het terrein, scene-licht(en) en omgevings- en gespiegeld licht van het materiaal van het terrein en glinstering
 
 Optioneel kunnen terreinen worden voorzien van schaduw uit een voorkeuze kaartthema.
 
@@ -936,7 +936,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://north-road.com/)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Qgis 3.4.1 crashes when accessing methods of feature | [#20752](https://issues.qgis.org/issues/20752) | gesloten |  |
-| Bad size request with a georeferenced raster | [#8272](https://issues.qgis.org/issues/8272) | Can\'t reproduce anymore in 3.5 |  |
+| Bad size request with a georeferenced raster | [#8272](https://issues.qgis.org/issues/8272) | Kan het niet meer reproduceren in 3.5 |  |
 | Postgresql: empty SAVEPOINTS | http://issues.qgis.org/issues/17535 | niet meer van toepassing |  |
 | Range widget does not honor default value on not null column | [#20831](https://issues.qgis.org/issues/20831) | [PR #9033](https://github.com/qgis/QGIS/pull/9033) and [PR #9033](https://github.com/qgis/QGIS/pull/9033) |  |
 | Range widget gives NULL value in Attributes Form/Table | [#21125](https://issues.qgis.org/issues/21125) | [PR #9033](https://github.com/qgis/QGIS/pull/9033) | [PR #9192](https://github.com/qgis/QGIS/pull/9192) |
