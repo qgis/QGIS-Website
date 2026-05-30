@@ -211,22 +211,22 @@ Next release: {{< param "nextreleasedate" >}}
 |  | 24.04 (LTS) | noble | はい | はい |
 |  | 22.04 (LTS) | jammy | はい | はい |
 
-{{< footnote "1" >}} available dependencies in debian/ubuntu not QGIS 4 ready (Qt6 or dependant package, python or sip to old)
+{{< footnote "1" >}} debian/ubuntuの利用可能な依存関係がQGIS 4に対応していない (Qt6または依存パッケージ、pythonまたはsipが古すぎる)
 
-{{< footnote "2" >}} builds based on ubuntugis dependencies
+{{< footnote "2" >}} ubuntugis依存関係に基づくビルド
 
-{{< footnote "3" >}} starting with 3.40.8/3.44.0
+{{< footnote "3" >}} 3.40.8/3.44.0から開始
 
-{{< footnote "4" >}} starting with 3.40.11/3.44.3
+{{< footnote "4" >}} 3.40.11/3.44.3 から開始
 
-{{< footnote "5" >}} starting with 4.0.1/3.44.9
+{{< footnote "5" >}} 4.0.1/3.44.9 から開始
 
-To use the QGIS archive you have to first add the archive’s repository public key:
+QGISアーカイブを使用するには、まずアーカイブのリポジトリ公開鍵を追加する必要があります:
 ```
 wget https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 gpg --no-default-keyring --keyring ./qgis-archive-keyring.gpg --list-keys
 ```
-Should output:
+出力結果:
 ```
 ./qgis-archive-keyring.gpg
 --------------------------
@@ -234,17 +234,17 @@ pub   rsa4096 2022-08-08 [SCEA] [expires: 2027-08-08]
       2D7E3441A707FDB3E7059441D155B8E6A419C5BE
 uid           [ unknown] QGIS Archive Automatic Signing Key (2022-2027) <qgis-developer@lists.osgeo.org>
 ```
-After you have verified the output you can install the key with:
+出力を確認したら、以下のコマンドでキーをインストールできます:
 ```
 sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer
 sudo cp qgis-archive-keyring.gpg /etc/apt/keyrings/qgis-archive-keyring.gpg
 ```
-Alternatively you can download the key directly without manual verification:
+または、手動での確認なしに直接キーをダウンロードすることもできます:
 ```
 sudo mkdir -m755 -p /etc/apt/keyrings  # not needed since apt version 2.4.0 like Debian 12 and Ubuntu 22 or newer
 sudo wget -O /etc/apt/keyrings/qgis-archive-keyring.gpg https://download.qgis.org/downloads/qgis-archive-keyring.gpg
 ```
-With the keyring in place you can add the repository. Create or open for editing the file `/etc/apt/sources.list.d/qgis.sources` (e.g. `sudo editor /etc/apt/sources.list.d/qgis.sources`) and add the following content (replace `*repository*` and `*codename*` with values from the table above):
+ キーリングが設定されたら、リポジトリを追加できます。`/etc/apt/sources.list.d/qgis.sources` ファイルを作成または編集用に開き（例：`sudo editor /etc/apt/sources.list.d/qgis.sources` ）、以下の内容を追加してください（*repository* と *codename* は上記の表の値に置き換えてください）:
 ```
 Types: deb deb-src
 URIs: *repository*
@@ -253,7 +253,7 @@ Architectures: amd64
 Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 ```
-Example for the latest long term release for Ubuntu 22.04 Jammy:
+Ubuntu 22.04 Jammy向けの最新長期サポートリリースの例:
 ```
 Types: deb deb-src
 URIs: https://qgis.org/ubuntu-ltr
@@ -262,12 +262,12 @@ Architectures: amd64
 Components: main
 Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 ```
-After that type the commands below to install QGIS:
+その後、以下のコマンドを入力してQGISをインストールします:
 ```
 sudo apt update
 sudo apt install qgis qgis-plugin-grass
 ```
-In case you would like to install QGIS Server, type:
+QGIS Serverをインストールする場合は、次のコマンドを入力します:
 ```
 sudo apt update
 sudo apt install qgis-server --no-install-recommends --no-install-suggests
@@ -288,54 +288,55 @@ apt install python3-qgis
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### Note
-Flatpak is a universal package format for all Linux distributions. Packages are isolated from the system, which can have security and stability benefits. For example, you can use the latest QGIS version on a stable distribution.
+FlatpakはすべてのLinuxディストリビューション向けの汎用パッケージ形式です。パッケージはシステムから隔離されており、セキュリティと安定性のメリットをもたらします。例えば、安定したディストリビューション上で最新バージョンのQGISを使用することができます。
 
-Flatpaks are installed for all users by default, but can also be installed for a single user only with the `--user` argument.
+Flatpakはデフォルトですべてのユーザー向けにインストールされますが、`--user` 引数を使用して単一ユーザーのみにインストールすることもできます。
 
-Only users with `sudo` permission can change systemwide Flatpak apps and repositories, but all users can update them. This can be useful on managed machines.
+`sudo`  権限を持つユーザーのみがシステム全体のFlatpakアプリとリポジトリを変更できますが、すべてのユーザーがそれらを更新できます。これは管理されたマシンで役立ちます。
 
 {{<rich-content-end >}}
 
 {{<rich-box-end >}}
 
-There is a Flatpak for QGIS Stable and LTR available, maintained by the Flathub community.
+Flathubコミュニティによってメンテナンスされている、QGIS安定版とLTR向けのFlatpakが利用可能です。
 
-For general install notes, see [the Flathub website](https://flatpak.org/setup).
+一般的なインストール手順については、　[Flathubのウェブサイト](https://flatpak.org/setup) を参照してください。
 
-[Here you can find QGIS on Flathub](https://flathub.org/apps/details/org.qgis.qgis).
+[こちらでFlathub上のQGISを見つけることができます](https://flathub.org/apps/details/org.qgis.qgis).
 
-To install:
+インストールするには:
 ```
 flatpak install flathub org.qgis.qgis
 ```
-You will be prompted for the version of QGIS you want to use.
+使用するQGISのバージョンを選択するよう求められます。
 
-The app should appear in your app launcher, alternatively use this command:
+アプリがアプリランチャーに表示されるはずです。または、以下のコマンドを使用してください:
 ```
 flatpak run org.qgis.qgis
 ```
-To update your Flatpak apps, including QGIS:
+QGISを含むFlatpakアプリを更新するには:
 ```
 flatpak update
 ```
-On certain distributions, you may also need to install the packages `xdg-desktop-portal`, together with `xdg-desktop-portal-gtk`, `xdg-desktop-portal-kde` or `xdg-desktop-portal-cosmic` in order for file dialogs to appear.
+特定のディストリビューションでは、ファイルダイアログが表示されるようにするために `xdg-desktop-portal` パッケージと `xdg-desktop-portal-gtk` 、`xdg-desktop-portal-kde` 、または `xdg-desktop-portal-cosmic` のインストールが必要な場合があります。
+ 
 
-See the [Flathub files here](https://github.com/flathub/org.qgis.qgis) and [report issues here](https://github.com/flathub/org.qgis.qgis/issues).
-### Show runtime version
-If you need the following additions, you want to know which runtime QGIS is using:
+ [Flathubのファイルはこちらで](https://github.com/flathub/org.qgis.qgis) 確認でき  [問題の報告はこちらから](https://github.com/flathub/org.qgis.qgis/issues) 行えます。
+### ランタイムバージョンの表示
+以下の追加機能が必要な場合、QGISが使用しているランタイムを確認する必要があります:
 ```
 flatpak info org.qgis.qgis --show-runtime
 ```
-### Extension support
-If you need to install additional Python modules, because they are needed by a plugin, you can install the module with (here installing the `scipy` module):
+### 拡張機能のサポート
+プラグインに必要な追加のPythonモジュールをインストールする場合、以下のコマンドでモジュールをインストールできます（ここでは  `scipy ` モジュールをインストールする例）:
 ```
 flatpak run --devel --command=pip3 org.qgis.qgis install scipy --user
 
 # NOTE: you will likely get an error like: "error: runtime/org.kde.Sdk/x86_64/VERSION not installed" then also do:
 flatpak install runtime/org.kde.Sdk/x86_64/VERSION
 ```
-### HTML rendering
-If you want to use HTML, for example in map layouts, `QtWebkit` is needed. You can install it from the flatpak command line interface
+### HTML レンダリング
+マップレイアウトなどでHTMLを使用したい場合は、`QtWebkit` が必要です。FlatpakのコマンドラインインターフェースからインストールできますL
 ```
 flatpak install app/io.qt.qtwebkit.BaseApp/x86_64/VERSION
 # ⚠️ WARNING: This is considered insecure and is therefore not provided by default.
@@ -345,38 +346,38 @@ flatpak install app/io.qt.qtwebkit.BaseApp/x86_64/VERSION
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### Note
-It’s not a common practice to install both client and server applications on the same machine.
+クライアントとサーバーアプリケーションを同じマシンにインストールすることは一般的な慣行ではありません。
 
 {{<rich-content-end >}}
 
 {{<rich-box-end >}}
 
-Get packages for Fedora variants using `dnf` by typing:
+Fedora系ディストリビューション向けのパッケージを `dnf` を使用して以下のコマンドで取得します:
 ```
 sudo dnf install qgis python3-qgis qgis-grass qgis-server
 ```
-If you are on **Fedora Atomic Desktops**, you have 3 options:
-1. Install the Flatpak
+**Fedora Atomic Desktops** を使用している場合、3つのオプションがあります:
+1. Flatpak のインストール
 
-Flatpak is the recommended way to install packages on Fedora Atomic Desktops, [skip to the instructions](#flatpak).
-2. Install QGIS to the system
+FlatpakはFedora Atomic Desktopsにパッケージをインストールするための推奨方法です, [skip to the instructions](#flatpak).
+2. システムへのQGISのインストール
 
-This is the easiest method, saves data and disk space, but will slow down system updates a bit
+これは最も簡単な方法で、データとディスクスペースを節約できますが、システムの更新が少し遅くなります。
 ```
 rpm-ostree install qgis python3-qgis qgis-grass qgis-server
 ```
-3. Install in a toolbox or distrobox
+3. toolboxまたはdistroboxへのインストール
 
-Follow the `toolbx` and `distrobox` [instructions](#distrobox--toolbx).
+`toolbx` と `distrobox` の [instructions](#distrobox--toolbx) に従ってください。
 
-Fedora switches between the current QGIS release and the LTR releases. The unstable "Rawhide" branch will ship newer but possibly buggy QGIS versions.
+FedoraはQGISの現在のリリースとLTRリリースを切り替えます。不安定な "Rawhide" ブランチでは、より新しいがバグを含む可能性があるQGISバージョンが提供されます。
 | ディストリビューション | バージョン | QGISバージョン |
 | --- | --- | --- |
 | Fedora | 40 | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote" >}} |
 |  | 41 | {{< param "ltrversion" >}}.x {{< param "ltrcodename" >}} {{< param "ltrnote">}} |
 |  | 42 | {{< param "version" >}}.x {{< param "codename" >}} {{< param "releasenote">}} |
 
-Always up-to-date version infos:
+常に更新されるバージョン情報はこちらです:
 - [QGIS](https://packages.fedoraproject.org/pkgs/qgis/qgis)
 - [QGIS-GRASS](https://packages.fedoraproject.org/pkgs/qgis/qgis-grass)
 
@@ -521,7 +522,7 @@ Spackのインストール方法に関する一般的な情報: https://github.c
 
 Spack の QGIS パッケージファイル: https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/qgis/package.py
 
-To install:
+インストールするには:
 ```
 spack install qgis
 ```

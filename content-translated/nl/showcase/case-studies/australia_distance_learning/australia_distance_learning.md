@@ -20,7 +20,7 @@ De traditionele 'kookboek'-handleiding methode van onderwijs werd vervangen door
 
 Gemiddeld gebruikte 93% van de studenten in de cursus QGIS-software en de instructiebronnen. Vrijwillige terugkoppeling werd ontvangen van 51% van de gebruikers van QGIS. De resultaten (Afbeelding 2) geven aan dat het merendeel (82%) van de studenten QGIS-software en de leerbronnen voor werken met eigen handen waardeerde als 'helpful' tot 'very helpful' bij het leren van GIS. De meeste anderen waardeerden het als 'reasonable'.
 
-![Students response graph](./images/australia_distance_learning2.png){.align-center}
+![Grafiek antwoorden studenten](./images/australia_distance_learning2.png){.align-center}
 
 Opmerkingen in de terugkoppeling op de vraag *\"wat waren de beste aspecten van deze cursus\"* bevatten:
 - *De details in de opgenomen QGIS audio-visuelen.*

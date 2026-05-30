@@ -24,20 +24,20 @@ In de fase Bevriezing, voorafgaande aan een uitgave (bekijk [Uitgaveschema]({{< 
 # Windows
 Er zijn twee opties voor het installeren op Windows:
 ## Offline (zelfstandige) installatieprogramma's
-Standalone installers include everything QGIS needs in a single download. Once you have the installer, no internet is required to complete the installation. When a new release is available, you need to download the complete installer again in order to upgrade. For beginners, the standalone installer is probably the easiest way to install QGIS:
+Zelfstandige installatieprogramma's bevatten alles wat QGIS nodig heeft in een enkele download. Als u het installatieprogramma eenmaal hebt, is er geen internet vereist om de installatie te voltooien. Wanneer een nieuwe uitgave beschikbaar is, moet u het volledige installatieprogramma opnieuw downloaden om te upgraden. Voor beginners is het zelfstandige installatieprogramma waarschijnlijk de gemakkelijkste manier om QGIS te installeren:
 | Uitgave | Versie | Pakket | Alternatief |
 | --- | --- | --- | --- |
 | Laatste uitgave | {{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}} | [Installatieprogramma]({{< param "lr_msi" >}}) [Controlesom]({{< param "lr_sha" >}}) | [Torrent]({{< param "lr_msi_torrent" >}}) [Magnet]({{< param "lr_msi_magnet" >}}) [Metalink]({{< param "lr_msi_meta4" >}}) |
-| Lange Termijn Release | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installer]({{< param "ltr_msi">}}) [Checksum]({{< param "ltr_sha">}}) | [Torrent]({{< param "ltr_msi_torrent" >}}) [Magnet]({{< param "ltr_msi_magnet" >}}) [Metalink]({{< param "ltr_msi_meta4" >}}) |
-| Ontwikkeling | {{< param "devversion" >}} master | [Weekly snapshots]({{< param "weekly_msi">}}) | – |
+| Lange Termijn Release | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installatieprogramma]({{< param "ltr_msi">}}) [Controlesom]({{< param "ltr_sha">}}) | [Torrent]({{< param "ltr_msi_torrent" >}}) [Magnet]({{< param "ltr_msi_magnet" >}}) [Metalink]({{< param "ltr_msi_meta4" >}}) |
+| Ontwikkeling | {{< param "devversion" >}} master | [Wekelijkse snapshots]({{< param "weekly_msi">}}) | – |
 
 Due to their extensive size the optional projection grids were excluded from the default installer. QGIS will identify at runtime when grids are required for reprojection and ask for manual download.
 
 For environments where that isn't possible or inconvienient there are still standalone installers that include the grids. As of 4.0.1 the regular installer is 0.5 GiB, while the installer including all the grids is 1.2 GiB.
 | Uitgave | Versie | Pakket | Alternatief |
 | --- | --- | --- | --- |
-| Laatste uitgave | {{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}} | [Installer]({{< param "lr_grids_msi" >}}) [Checksum]({{< param "lr_grids_sha" >}}) | [Torrent]({{< param "lr_grids_msi_torrent" >}}) [Magnet]({{< param "lr_grids_msi_magnet" >}}) [Metalink]({{< param "lr_grids_msi_meta4" >}}) |
-| Lange Termijn Release | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installer]({{< param "ltr_grids_msi">}}) [Checksum]({{< param "ltr_grids_sha">}}) | [Torrent]({{< param "ltr_grids_msi_torrent" >}}) [Magnet]({{< param "ltr_grids_msi_magnet" >}}) [Metalink]({{< param "ltr_grids_msi_meta4" >}}) |
+| Laatste uitgave | {{< param "release" >}} {{< param "codename" >}} {{< param "releasenote" >}} | [Installatieprogramma]({{< param "lr_grids_msi" >}}) [Controlesom]({{< param "lr_grids_sha" >}}) | [Torrent]({{< param "lr_grids_msi_torrent" >}}) [Magnet]({{< param "lr_grids_msi_magnet" >}}) [Metalink]({{< param "lr_grids_msi_meta4" >}}) |
+| Lange Termijn Release | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installatieprogramma]({{< param "ltr_grids_msi">}}) [Controlesom]({{< param "ltr_grids_sha">}}) | [Torrent]({{< param "ltr_grids_msi_torrent" >}}) [Magnet]({{< param "ltr_grids_msi_magnet" >}}) [Metalink]({{< param "ltr_grids_msi_meta4" >}}) |
 
 It's also possible to add the grids later by using the included "OSGeo4W Setup" to install the `proj-data` package. Or to use the also included command line tool [projsync](https://proj.org/en/stable/apps/projsync.html) to download grids for a given area.
 
@@ -182,17 +182,17 @@ Lijnen van pakketten:
 |  |  | Uitgave met afhankelijkheden voor ubuntugis-unstable | https://qgis.org/ubuntugis-ltr |
 |  |  | Nachtelijke bouw van de komende puntuitgave voor Debian en Ubuntu | https://qgis.org/debian-nightly-ltr <br> https://qgis.org/ubuntu-nightly-ltr |
 |  |  | Nachtelijke bouw van de komende puntuitgave met afhankelijkheden voor ubuntugis-unstable | https://qgis.org/ubuntugis-nightly-ltr |
-| Ontwikkelversie | {{< param "devversion" >}} master | Nightly build for **Debian and Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
-|  |  | Nightly build with ubuntugis-unstable dependencies [[2]](#id2) | https://qgis.org/ubuntugis-nightly |
+| Ontwikkelversie | {{< param "devversion" >}} master | Nachtelijke bouw voor **Debian en Ubuntu** [[2]](#id2) | https://qgis.org/debian-nightly <br> https://qgis.org/ubuntu-nightly |
+|  |  | Nachtelijke bouw met afhankelijkheden voor ubuntugis-unstable [[2]](#id2) | https://qgis.org/ubuntugis-nightly |
 
-{{< footnote "2" >}} Nightlies are debug builds (including debugging output)
+{{< footnote "2" >}} Nachtelijke zijn bouwsels voor debuggen (inclusief de uitvoer voor debuggen)
 
 <small>
-Next point release: {{< param "nextpointreleasedate" >}}
+Volgende puntuitgave: {{< param "nextpointreleasedate" >}}
 
-Next release: {{< param "nextreleasedate" >}}
+Volgende uitgave: {{< param "nextreleasedate" >}}
 
-(For more dates see Release Schedule on [Road Map]({{< ref "resources/roadmap" >}})) </small>
+(Voor meer datums, bekijk het Uitgaveschema op [Road Map]({{< ref "resources/roadmap" >}})) </small>
 #### Ondersteunde versies distributie:{#available-codenames }
 | Distributie | Versie | Codenaam | Alleen LTR[[1]](#id1) | ubuntugis[[2]](#id2) |
 | --- | --- | --- | --- | --- |
@@ -574,8 +574,8 @@ Official All-in-one, signed and notarized installers for macOS can be downloaded
 After downloading QGIS, open the DMG file. Drag and drop the QGIS application into the Applications folder.
 | Uitgave | Versie | Pakket | Alternatief |
 | --- | --- | --- | --- |
-| Laatste uitgave | {{< param "release" >}} {{< param "codename" >}} | [Installer]({{< param "lr_dmg" >}}) [Checksum]({{< param "lr_dmg_sha" >}}) | [Torrent]({{< param "lr_dmg_torrent" >}}) [Magnet]({{< param "lr_dmg_magnet" >}}) [Metalink]({{< param "lr_dmg_meta4" >}}) |
-| Lange Termijn Release | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installer]({{< param "ltr_dmg" >}}) [Checksum]({{< param "ltr_dmg_sha" >}}) | [Torrent]({{< param "ltr_dmg_torrent" >}}) [Magnet]({{< param "ltr_dmg_magnet" >}}) [Metalink]({{< param "ltr_dmg_meta4" >}}) |
+| Laatste uitgave | {{< param "release" >}} {{< param "codename" >}} | [Installatieprogramma]({{< param "lr_dmg" >}}) [Controlesom]({{< param "lr_dmg_sha" >}}) | [Torrent]({{< param "lr_dmg_torrent" >}}) [Magnet]({{< param "lr_dmg_magnet" >}}) [Metalink]({{< param "lr_dmg_meta4" >}}) |
+| Lange Termijn Release | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installatieprogramma]({{< param "ltr_dmg" >}}) [Controlesom]({{< param "ltr_dmg_sha" >}}) | [Torrent]({{< param "ltr_dmg_torrent" >}}) [Magnet]({{< param "ltr_dmg_magnet" >}}) [Metalink]({{< param "ltr_dmg_meta4" >}}) |
 
 ## MacPorts
 The package management system [MacPorts](https://www.macports.org) offers both the latest release version (port `qgis3`) and the long term version (port `qgis3-ltr`). This will install QGIS with native architecture, Intel x64 or Apple silicon. Main software dependencies such as GDAL, PDAL and GRASS GIS are usually the latest version available.

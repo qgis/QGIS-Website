@@ -38,7 +38,7 @@ Quantarctica is to be all about community effort. With contributions we aim to e
 - Norwegian Polar Institute: <http://www.npolar.no/en/>
 
 ## Auteurs
-![Anders Skoglund and Kenichi Matsuoka](./images/quantarctica3.jpg){.align-left height="220px"}
+![Anders Skoglund en Kenichi Matsuoka](./images/quantarctica3.jpg){.align-left height="220px"}
 
 Dit artikel is ingezonden in augustus 2013 door Anders Skoglund (links), GIS specialist, en Kenichi Matsuoka (rechts), glacioloog, beiden verbonden aan het Norwegian Polar Institute.
 

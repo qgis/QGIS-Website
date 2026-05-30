@@ -989,7 +989,7 @@ Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://www.oslandia.c
 | Copy/Paste fails from one layer to another when layer has NOT NULL constraints and transaction groups are enabled | [#29603](https://github.com/qgis/QGIS/issues/29603) | Already fixed by [PR #33688](https://github.com/qgis/QGIS/pull/33688) |  |
 | QGIS freezes when creating new shapefiles | [#32069](https://github.com/qgis/QGIS/issues/32069) | Al gerepareerd |  |
 | Oracle : tables are listed once for Polygons and once for MultiPolygons but both show all geometries | [#32521](https://github.com/qgis/QGIS/issues/32521) | [PR #34358](https://github.com/qgis/QGIS/pull/34358) |  |
-| BUG: fix invalid layer result when Oracle version is under 12 | niet gerapporteerd | [PR #34546](https://github.com/qgis/QGIS/pull/34546) |  |
+| BUG: ongeldig laagresultaat repareren als versie van Oracle lager is dan 12 | niet gerapporteerd | [PR #34546](https://github.com/qgis/QGIS/pull/34546) |  |
 
 Deze mogelijkheid werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://www.qgis.org/)
 

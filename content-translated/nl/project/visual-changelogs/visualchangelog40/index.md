@@ -132,38 +132,38 @@ Wanneer een annotatielaag is ingesteld om te renderen als 3D-plakborden, rendert
 <img src="images/entries/ce930ee001993bd8bd7ecf0477aac6e5e9436da1.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Support rendering annotation layer markers as 3D billboards
-A new option for showing annotation layers in 3D maps has been added. From the annotation layer properties, 3D tab, users can set the layer to render as 3D billboards. When activated, all MARKERS from the layer will be shown as floating billboard symbols above the 3D map (lines and polygons from the layer are ignored).<br />Users have control over the terrain clamping and offset for the billboards, and whether or not "callout" lines should be shown (vertical lines joining the billboard to the corresponding location on the terrain surface).
+### Mogelijkheid: Ondersteuning voor renderen van markeringen voor Annotatielaag als 3D-aanplakborden
+Een nieuwe optie voor het weergeven van annotatielagen in 3D-kaarten is toegevoegd. Vanuit de eigenschappen voor de annotatielaag, tab 3D, kunnen gebruikers de laag instellen om te renderen als 3D-aanplakborden. Indien geactiveerd, worden alle MARKERINGEN van de laag weergegeven als zwevende symbolen aanplakbord bovenop de 3D-kaart (lijnen en polygonen van de laag worden genegeerd).<br />⁣ Gebruikers hebben beheer over het klemmen van het terrein en verschuiving voor de aanplakborden, en of al dan niet  lijnen voor "tekstballonnen" zouden moeten worden weergegeven (verticale lijnen die verbinden met het aanplakbord op de corresponderende locatie op het terreinoppervlak).
 
 <img src="images/entries/a74b316080040084674f70ed22492ad06da3c5be.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## Labelen
-### Feature: Add option to ignore whitespace when detecting label collisions
-This new option (which is available ONLY for curved label placement modes) controls how QGIS treats whitespace (i.e., spaces or tabs) in label text when determining whether two labels collide (or when a label collides with an obstacle feature). The existing (and default) behavior is that spaces are treated the same as text characters, and a label is not permitted to overlap spaces in another label.<br />When the new "Ignore label whitespace when detecting collisions" option is checked, then whitespace in the text will be ignored when checking for overlapping labels (or labels colliding with obstacles).<br />This is useful when labeling long line features, when the word spacing is large, and it is desirable to allow text or other features to sit within the label spaces. (e.g., when labeling rivers or roads). The setting can be data-defined, enabling advanced expression-driven functionality, such as allowing it to be enabled only for features of sufficient length, etc.
+### Mogelijkheid: Optie toegevoegd voor negeren witruimte bij detecteren labelbotsingen
+Deze nieuwe optie (dia ALLEEN beschikbaar is voor modi voor het plaatsen van gebogen labels) beheert hoe QGIS witruimte behandelt (d.i. spaties of tabs) in labeltekst bij het bepalen of twee labels botsen (of wanneer een label botst met een obstakelobject). Het bestaande (en standaard) gedrag is dat spaties hetzelfde worden behandeld als tekens tekst en een label mag geen spaties overlappen op een ander label.<br /> Als de nieuwe optie "Witruimte label negeren bij detecteren botsingen" is geselecteerd, dan zal witruimte in de tekst worden genegeerd bij het controleren van overlappende labels (of labels die botsen met obstakels).<br /> Dit is nuttig bij het labelen van objecten op lange lijnen, als de woordruimte groot is en het gewenst is om tekst of andere objecten toe te staan de labelruimten op te vullen. (Bijv. bij labelen van rivieren of wegen). De instelling mag data-bepaalde zijn, functionaliteit inschakelen die wordt aangedreven door geavanceerde expressies, zoals het toestaan alleen te worden ingeschakeld voor objecten van voldoende lengte, etc.
 
 <img src="images/entries/25ba4e122bd28db3d8cbf57717e1b4576dc790a5.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Rework multipart geometry labeling
-The existing checkbox for “Label every part of multi-part features” has been re-worked to use a combobox to expose the choice of multi-part handling options.<br />The available options are:
-- **Label largest part only**: This corresponds to the current default behavior, i.e., when the user has left the "label every part" checkbox unchecked.
-- **Label every part with same text**: This corresponds to the current behavior that is activated when the user manually checks the "label every part" checkbox.
-- **Split label text lines over parts**: This is a brand new behavior, which splits the label text over the parts of a multi-geometry feature. The label text will be split at new line characters, and each line will be placed separately over the corresponding parts from the input feature geometry. Note that the splitting will occur AFTER the existing setting for "Wrap on character" is applied, so any custom new line character the user has configured for that setting will be respected when placing labels for multipart geometries. If the multipart geometry does not contain sufficient parts for the label text, then the excess lines will be ignored.
+### Mogelijkheid: Labelen meerdelige geometrie opnieuw bewerkt
+Het bestaande keuzevak voor “Label every part of multi-part features” is opnieuw bewerkt om een combinatievak te gebruiken om de keuzes voor opties voor afhandelen van meerdere delen weer te geven.<br />De beschikbare opties zijn:
+- **Alleen grootste deel labelen**: Dit correspondeert met het huidige standaardgedrag, d.i. als de gebruiker het keuzevak "Elk deel labelen" niet heeft geselecteerd.
+- **Elk deel met dezelfde tekst labelen**: Dit correspondeert met het huidige gedrag dat wordt geactiveerd als de gebruiker het keuzevak "Elk deel labelen" heeft geselecteerd.
+- **Tekstregels van labels splitsen over delen**: Dit is nagelnieuw gedrag dat de labeltekst splitst over de delen van een object met een meerdelige geometrie. De labeltekst zal worden gesplitst met tekens voor een nieuwe regel, en elke regel zal afzonderlijk over de corresponderende delen van het object voor invoer van de geometrie worden geplaatst. Onthoud dat het splitsen zal gebeuren NADAT de bestaande instelling voor "Afbrekingsteken" wordt toegepast. Met elk aangepast teken voor een nieuwe regel dat de gebruiker voor die instelling heeft geconfigureerd, zal dus rekening worden gehouden bij het plaatsen van labels voor meerdelige geometrieën. Als de meerdelige geometrie niet voldoende delen bevat voor de labeltekst, dan zullen de overschrijdende regels worden genegeerd.
 
 <img src="images/entries/69d0f632877a1a7380e957dd0b4d7321906d7005.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Placement modes for curved label placement
-Newly added placement "modes" are now available for use with curved labels, allowing for much more fine-grained control over how text is positioned when using curved labels, in line with [QEP 404](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-404-curved-placement-modes.md).<br />These additional modes are exposed as options that are visible and enabled whenever a line geometry type layer is set to curved label placement. A data-defined override is available for the new curved placement modes, allowing mixed use of different modes for features within a single layer.<br />New modes include:
-- **Default**: Existing behavior, no change. Glyphs are placed at regular character and word spacing along the curved line geometry.
-- **Place characters at vertices**: When this mode is selected, each individual character from the label text is placed such that their left-baseline position is located at a corresponding vertex from the curved line geometry, i.e., the first character will be placed at the start of the line, the second at the second vertex, the third at the third vertex, etc. If the curved line geometry does not contain sufficient vertices for the characters present in the label text, then the excess characters are ignored and will not be rendered. If the label’s “distance” setting is non-zero, then the character will be vertically offset from the vertex position by this distance. Characters are rotated to follow the line angle at the vertex.
-- **Stretch character spacing to fit line**: When selected, this mode increases (or decreases) the character spacing used for each label in order to fit the entire text over the actual length of the curved line geometry.
-- **Stretch word spacing to fit line**: When selected, this mode increases (or decreases) the word spacing used for each label in order to fit the entire text over the actual length of the curved line geometry.
+### Mogelijkheid: Modi voor plaatsing van gebogen labels
+Nieuw toegevoegde "modi" voor plaatsing zijn nu beschikbaar om te gebruiken met gebogen labels, wat veel meer fijn af te stemmen beheer mogelijk maakt over hoe uw tekst is gepositioneerd bij het gebruiken van gebogen labels. In lijn met [QEP 404](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-404-curved-placement-modes.md). <br />Deze extra modi worden weergegeven als opties die zichtbaar zijn en kunnen worden ingeschakeld als een type geometrie lijnenlaag is ingesteld voor plaatsing van gebogen labels. Een data-bepaalde 'override' is beschikbaar voor de nieuwe modi voor plaatsing van gebogen labels, wat gemixt gebruik mogelijk maakt van de verschillende modi voor objecten op een enkele laag.<br />Nieuwe modi omvatten:
+- **Standaard**: Bestaand gedrag, geen wijziging. Gliefen worden geplaatst op normale teken- en woordruimte langs de geometrie van de gebogen lijn.
+- **Tekens op punten**: Als deze modus is geselecteerd, wordt elk individueel teken uit de labeltekst zo geplaatst dat zijn linkerpositie op de basislijn is geplaatst op een corresponderend punt van de geometrie van de gebogen lijn. Dat is: het eerste teken zal worden geplaatst aan het begin van de lijn, het tweede op het tweede punt, het derde op het derde punt, etc. Als de geometrie van de gebogen lijn niet voldoende punten bevat voor de in het tekstlabel aanwezige tekens, dan worden de overschrijdende tekens genegeerd en zullen niet worden gerenderd. Als de instelling van het label “afstand” niet nul is, dan zal het teken verticaal worden verschoven vanaf de positie van het punt met deze afstand. Tekens worden gedraaid om de hoek van het punt te volgen.
+- **Tekenruimte uitrekken, passen op regel**: Indien geselecteerd, vergroot (of verkleint) deze modus de tekenruimte die wordt gebruikt voor elk label om de gehele tekst passend te maken over de feitelijke lengte van de geometrie gebogen lijn.
+- **Afstand tussen woorden uitrekken**: Indien geselecteerd, vergroot (of verkleint) deze modus de woordruimte die wordt gebruikt voor elk label om de gehele tekst passend te maken over de feitelijke lengte van de geometrie gebogen lijn.
 
 <img src="images/entries/1c0ce144f536089eabaaf9066453d60a5ae2ca01.gif" class="img-responsive img-rounded" />
 
@@ -171,8 +171,8 @@ Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## Renderen
-### Feature: Introduce selective masking presets
-Users can now use a drop-down under Mask Sources when configuring a layer's masking and select from a number of presets to efficiently apply masking without complex management. This is especially useful for large projects when many different layers need to reference the same complex set of mask sources, such when many layers are masked by the same set of distinct labeled layers.<br />The default value is "custom", which replicates the existing ad-hoc per-layer configuration, but users are able to create, rename, or remove selective masking sets as needed, and any changes to a preset's checked sources will automatically apply the changes to ALL layers linked to the preset.
+### Mogelijkheid: Introduceren van voorkeuzen selectieve maskers
+Gebruikers kunnen nu een keuzemenu gebruiken onder Bronnen masker bij het configureren van het masker voor een laag en selecteren uit een aantal voorkeuzen om maskers efficiënt toe te passen zonder complex beheer. Dit is speciaal handig voor grote projecten als veel verschillende lagen naar dezelfde set bronnen voor maskers moeten verwijzen. Zoals wanneer veel lagen zijn gemaskeerd met dezelfde set afzonderlijk gelabelde lagen.<br />De standaardwaarde is "aangepast", wat de bestaande ad-hoc per-laag-configuratie herhaalt. Gebruikers zijn echter in staat waar nodig sets voor selectieve maskers te maken, te hernoemen of te verwijderen, en alle wijzigingen aan de geselecteerde bronnen voor een voorkeuze zullen automatisch de wijzigingen toepassen op ALLE aan de voorkeuze gekoppelde lagen.
 
 <img src="images/entries/a73331ff4395c78b8152d289d1759a55aeafd04d.png" class="img-responsive img-rounded" />
 
@@ -180,69 +180,69 @@ Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## 3D-objecten
-### Feature: Add an option to disable terrain export on 3D scene exports
-A new option to enable or disable terrain export is provided on the dialog for 3D scene exports. Terrain options are always activated, even when terrain rendering is disabled. The `terrain resolution` option is only relevant for DTM or online terrain - it must be disabled for other terrain types.
+### Mogelijkheid: Optie toegevoegd om exporteren van terrein bij exporteren van 3D-scène uit te schakelen
+Een nieuwe optie om het exporteren van het terrein in- of uit te schakelen wordt verschaft in het dialoogvenster voor exporteren van 3D-scènes. Opties voor het terrein zijn altijd geactiveerd, zelfs als renderen van het terrein is uitgeschakeld. De optie `Resolutie terrein` is alleen relevant voor DTM of online terrein - het moet voor andere typen terrein worden uitgeschakeld.
 
 <img src="images/entries/45d755c8e01bb45c2b728dd1dc59dc6afabe8856.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
-### Feature: Highlight identified features in 3d views
-QGIS now supports highlighting of vector features in 3D Views. The identified polygon features are highlighted in 3D views using a semi-transparent overlay and a thick silhouette line, similar to the highlight effect in the 2D map canvas, with a matching color and transparency. The highlight effect is always rendered on top of other entities. When highlighted features overlap in the current point of view, one aggregated silhouette is rendered at the perceived perimeter.
+### Mogelijkheid: Accentueren geïdentificeerde objecten in 3D-weergaven
+QGIS ondersteunt nu het accentueren van vectorobjecten in 3D-weergaven. De geïdentificeerde objecten polygoon worden geaccentueerd in 3D-weergaven met een semi-transparante overleg en een dikke silhouetlijn, soortgelijk aan het effect voor accentueren in het 2D-kaartvenster, met een overeenkomende kleur en transparantie. Het effect voor accentueren wordt altijd gerenderd bovenop andere entiteiten. Wanneer geaccentueerde objecten in de huidige zichtweergave overlappen, wordt een samengesteld silhouet gerenderd op de waargenomen perimeter.
 
 <img src="images/entries/49c5a902146f5890162179a952c10a44757a8437.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://github.com/uclaros)
-### Feature: Cross sections: use fixed tolerance (width) and nudge left/right
-When defining a cross section, user normally picks two endpoints, and then with the third mouse click, cross section width (tolerance) is chosen. The new version allows to lock the tolerance, so that user only picks two endpoints, without having to pick the width (tolerance) every time. Moreover, it is possible to modify tolerance of the active cross section by editing the tolerance value in the GUI.<br />3D map views now also allow nudging the active cross-section left or right in the same fashion as the elevation profile widget does (either via menu buttons or using keyboard shortcuts).
+### Mogelijkheid: Kruisdelen: vaste tolerantie gebruiken (breedte) en lichtjes raken links/rechts
+Bij het definiëren van een kruisdeel kiest de gebruiker normaal gesproken twee eindpunten, en daarna wordt met de derde muisklik de breedte (tolerantie) voor het kruisdeel gekozen. De nieuwe versie maakt het mogelijk de tolerantie te vergrendelen, zodat de gebruiker slechts twee eindpunten hoeft te kiezen, zonder elke keer de breedte (tolerantie) te moeten kiezen. Meer nog, het is mogelijk om de tolerantie van het actieve kruisdeel aan te passen door de waarde voor de tolerantie te bewerken in de gebruikersinterface.<br />3D-kaartweergaven staan nu ook het lichtjes raken van het kruisdeel links of rechts toe. Op dezelfde manier als dat de widget Hoogteprofiel dat doet (ofwel met menuknoppen of met sneltoetsen voor het toetsenbord).
 
 <img src="images/entries/d6998552d0292c6f65ef77d8ad881abdd252e88f.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Deense Agency for Climate Data](https://www.klimadatastyrelsen.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric (Lutra Consulting)](https://github.com/ViperMiniQ)
-### Feature: Dynamic vector chunking
-In previous versions of QGIS, vector layers were chunked in 3D views using fixed zoom levels. This behaviour has been modified to dynamically adjust the depth of the quadtree, and each zoom level will only load a maximum number of features constrained by the user-specified "Maximum features per chunk" value. This allows rendering larger layers without needing to load all their features when zoomed out.
+### Mogelijkheid: Dynamische delen voor vector
+In eerdere versies van QGIS werden vectorlagen in 2D-weergaven opgedeeld in delen met vaste zoomniveaus. Dit gedrag is aangepast om dynamisch de diepte van de quadtree aan te passen, en elk zoomniveau zal alleen een maximaal aantal objecten laden, beperkt door de door de gebruiker gespecificeerde waarde "Maximale aantal objecten per deel". Dat maakt het mogelijk grotere lagen te renderen zonder de noodzaak om al hun objecten te moeten laden bij uitzoomen.
 
 <img src="images/entries/7d0ed17befd3fb5d351c9d3ea603ae1ea4741fdd.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://github.com/uclaros)
-### Feature: Render floors of extruded polygons
-Polygon 3D symbols can now optionally include floors when rendering features. These were previously not included, and rendering of volumetric data as boxes would miss the lower part.
+### Mogelijkheid: Vloeren renderen voor uitgerekte polygonen
+3D-symbolen voor polygonen kunnen nu optioneel vloeren opnemen bij het renderen van objecten. Deze werden eerder niet opgenomen en het renderen van volumetrische gegevens als vakken zou het onderste deel weglaten.
 
 <img src="images/entries/74053b5b39cc9e15d7175643786aa48edb459486.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric (Lutra Consulting)](https://github.com/ViperMiniQ)
-### Feature: Add support for a 2d map overlay
-A new feature for 3D map views allows users to display an overlay of the 2d map, centered around the position of the 3D camera, and optionally display the camera frustum.
+### Mogelijkheid: Ondersteuning toegevoegd voor een 2D-kaartoverleg
+Een nieuwe mogelijkheid voor 3D-kaartweergaven stelt gebruikers in staat een overleg van de 2D-kaart weer te geven, gecentreerd rondom de positie van de 3D-camera, en optioneel de afgeknotte kegel voor de camera.
 
 <img src="images/entries/0c322a45de5780379e95e0f0d7467482e1d6661a.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
-### Feature: Esri Scene Layers
-A new data provider for tiled scene layers has been added for ESRI I3S (aka "scene layers" / "scene servers"). Rendering of data is available in both 2D and 3D map views.<br />How to load I3S data:
-- from ArcGIS REST servers - via data sources manager or browser dock (previously the scene layers would not show up, now they do)
-- open a local SLPK file - via drag'n'drop from file browser, or using browser dock, or data sources manager (Scene tab)<br />Notes:
-- supporting I3S \>= 1.7
-- supporting 3DObject and IntegratedMesh layer types
-- supporting datasets both in "global" mode (i.e. EPSG:4326) and "local" mode (i.e. any projected CRS)
+### Mogelijkheid: Lagen Esri Scene
+Een nieuwe gegevensprovider voor getegelde scènelagen is toegevoegd voor ESRI I3S (alias "scènelagen" / "scène servers"). Renderen van gegevens is beschikbaar in zowel 2D- als 3D-kaartweergaven.<br />Hoe I3S-gegevens te laden:
+- vanuit ArcGIS REST-servers - via Databronnen beheren of dock Browser (eerder zouden de scènelagen niet te zien zijn, nu wel)
+- open een lokaal bestand SLPK - met slepen-en-neerzetten vanuit de bestandsverkenner of het dock Browser, of Databronnen beheren (tab Scène)<br />Opmerkingen:
+- ondersteunt I3S \>= 1.7
+- ondersteunt laagtypen 3DObject en IntegratedMesh
+- ondersteunt gegevenssets in zowel modus "globaal" (d.i. EPSG:4326) en modus "lokaal" (d.i. elk geprojecteerd CRS)
 
 <img src="images/entries/b7a22f419d8b99a1cdf1fcbeacf768021b3afe33.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias (Lutra Consulting)](https://github.com/wonder-sk)
-### Feature: Make orthographic camera work
-3D views already had an option to use orthographic camera instead of perspective camera, but that option has been broken for many releases. The support for orthographic camera is usable now, and it can be very practical when using cross sections.
+### Mogelijkheid: Orthografische camera werkbaar gemaakt
+3D-weergaven hadden al een optie om een orthografische camera te gebruiken in plaats van een camera met perspectief, maar die optie was al heel veel uitgaven defect. De ondersteuning voor de orthografische camera is nu te gebruiken, en die kan heel praktisch zijn bij het gebruiken van kruisdelen.
 
 <img src="images/entries/9caebdb681257fd8ef96886833d26f278da61ae8.png" class="img-responsive img-rounded" />
 
@@ -250,82 +250,83 @@ Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfund
 
 Deze mogelijkheid werd ontwikkeld door [David Konarik (Lutra Consulting)](https://github.com/dvdkon)
 ## Puntenwolken
-### Feature: Build virtual point cloud (VPC) algorithm enhancements
-The Build virtual point cloud (VPC) algorithm will warn users when a LAS or LAZ files are included as inputs for a VPC (such VPC cannot be fully displayed in QGIS without conversion of input files to COPC format). The algorithm also provides the option to **Convert input files to COPC format** - it will automatically convert all input files (e.g. LAS/LAZ) into COPCs, making the VPC suitable for 2D/3D rendering in QGIS.
+### Mogelijkheid: Verbeteringen aan algoritme Virtuele PuntenWolk (VPC) bouwen
+Het algoritme Virtuele PuntenWolk (VPC) bouwen zal gebruikers waarschuwen wanneer bestanden LAS of LAZ als invoer zijn opgenomen voor een VPC (een dergelijke VPC kan niet volledig worden weergegeven in QGIS, zonder de invoerbestanden te converteren naar de indeling COPC). Het algoritme verschaft ook de optie **Individuele bestanden naar indeling COPC converteren** - dat zal automatisch alle invoerbestanden (bijv. LAS/LAZ) naar COPC's converteren, wat de VPC geschikt maakt om te worden gerenderd in 2D/3D in QGIS.
 
 Dit werd mogelijk gemaakt door [Deense Agency for Climate Data](https://www.klimadatastyrelsen.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha (Lutra Consulting)](https://github.com/JanCaha)
-### Feature: New processing algorithm: Compare point clouds (M3C2)
-A new algorithm for comparison of two point cloud layers is available.<br />M3C2 algorithm (Multiscale Model to Model Cloud Comparison) computes distances between two 3D point clouds along locally estimated surface normals, rather than using a fixed projection direction. It operates at multiple scales to robustly estimate both the surface orientation and the signed distance, making it well-suited for detecting change on complex 3D surfaces like rock faces or riverbanks.<br />Note: the algorithm uses `filters.m3c2` from PDAL - and it will only work if the QGIS installation ships with PDAL version \>2.10.
+### Mogelijkheid: Nieuw algoritme voor Processing: Puntenwolken vergelijken (M3C2)
+Een nieuw algoritme voor het vergelijken van twee lagen van puntenwolken is beschikbaar.<br />Algoritme M3C2 (Multiscale Model to Model Cloud Comparison) berekent afstanden tussen twee puntenwolken langs lokaal geschatte oppervlaknormalen, in plaats van een vaste projectierichting te gebruiken. Het werkt met meerdere schalen om robuust zowel de oriëntatie van het oppervlak als de getekende afstand te kunnen inschatten. Wat het heel geschikt maakt voor het detecteren van wijzigingen in complexe 3D-oppervlakken, zoals rotshellingen of rivierbanken.<br />Opmerking: het algoritme gebruikt `filters.m3c2` uit PDAL - en het zal alleen werken als de installatie van QGIS een PDAL-versie \>2.10 meegeleverd heeft gekregen.
 
 <img src="images/entries/d9a6459aac43a28b79857ac0c6a48870abbe1681.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Deense Agency for Climate Data](https://www.klimadatastyrelsen.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha (Lutra Consulting) + implementatie van PDAL door Hobu Inc.](https://github.com/JanCaha)
-### Feature: Choose at what zoom level VPC will show actual points
-A new combo box is provided in the 2D/3D style properties for VPCs, which controls zoom level at which QGIS will switch from rendering tile extent or overview point cloud to rendering of points from the data files linked from VPC. This provides users with more granular control over the trade-offs of performance and detail for rendering point clouds, and provides options for:
+### Mogelijkheid: Kiezen op welk zoomniveau VPC feitelijke punten zal laten zien
+Een nieuw combinatievak wordt verschaft in de eigenschappen 2D-/3D-stijl voor VPC's. Dat beheert het zoomniveau waarop QGIS zal schakelen van het renderen van tegelbereik of overzicht puntenwolk naar renderen van punten vanuit de gegevensbestanden die zijn gekoppeld aan de VPC. Dat verschaft beter en fijner beheer over de nadelen voor uitvoering en detail voor renderen van puntenwolken en geeft opties voor:
 - Later
 - Normaal
-- Earlier
-- Much earlier
+- Vroeger
+- Veel vroeger
 
 <img src="images/entries/a0c145b876b64361435d38986cdf8cef786d7857.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Deense Agency for Climate Data](https://www.klimadatastyrelsen.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric (Lutra Consulting)](https://github.com/ViperMiniQ)
-### Feature: Add virtual point cloud remote dataset support
-QGIS is now able to load virtual point clouds hosted on a remote server. This lowers friction when distributing large point cloud datasets - users do not need to download the .vpc file in advance as QGIS will take care of that automatically.
+### Mogelijkheid: Ondersteuning voor gegevensset van Virtuele puntenwolk op afstand
+QGIS is nu in staat virtuele puntenwolken te laden die worden gehost op een server op afstand. Dat verlaagt de wrijving bij het distribueren van grote gegevenssets van puntenwolken - gebruikers hoeven niet vooraf het .vpc-bestand te downloaden, omdat QGIS dat automatisch voor zijn rekening zal nemen.
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric (Lutra Consulting)](https://github.com/ViperMiniQ)
-### Feature: Editing of virtual point clouds
-It is now possible to edit point cloud data within virtual point clouds (VPC). The requirement is that VPC and its linked data files are available as local COPC files (not hosted on a remote server).
+### Mogelijkheid: Bewerken van virtuele puntenwolken (VPC)
+Het is nu mogelijk om gegevens van puntenwolken te bewerken binnen virtuele puntenwolken (VPC). Het is vereist dat de VPC en zijn gekoppelde gegevensbestanden beschikbaar zijn als lokale bestanden COPC (niet gehost op een server op afstand).
 
 Dit werd mogelijk gemaakt door [Deense Agency for Climate Data](https://www.klimadatastyrelsen.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric (Lutra Consulting)](https://github.com/ViperMiniQ)
-### Feature: New processing algorithm: Height above ground
-The "Height above ground" algorithm computes each point's vertical distance from an estimated ground surface, which is essential for normalizing elevation data across varying terrain. This is useful for tasks like building height extraction or vegetation height estimation.<br />The algorithm outputs the same point cloud, with a new attribute added ("HeightAboveGround") with the calculated altitude. Optionally, user can choose to replace Z values of points by the calculated height above ground - which is sometimes useful for 3D visualization or further processing.<br />There are two variants of the algorithm - the basic one estimates ground surface from a number of nearby ground points, the other variant creates triangulation of ground points and estimates height from it.<br />The input point cloud needs to have some of the points classified as ground (classification=2).
+### Mogelijkheid: Nieuw algoritme voor Processing: Hoogte boven grond
+Het algoritme "Hoogte boven grond" berekent de verticale afstand van elk punt vanaf een geschat grondoppervlak, wat essentieel is voor het normaliseren van hoogtegegevens in variërend terrein. Dit is nuttig voor taken als het uitnemen van bouwhoogtes of schatten van hoogtes van vegetatie.<br />Het algoritme voert dezelfde puntenwolk uit, met een nieuw toegevoegd attribuut ("HeightAboveGround") met de berekende hoogte. De gebruiker kan er optioneel voor kiezen om de waarden Z van punten te vervangen door de berekende hoogte boven de grond - wat soms nuttig is voor 3D-visualisatie of verder verwerken.<br />Er zijn twee varianten van het algoritme - de basis die het grondoppervlak schat vanuit een aantal dichtbijgelegen grondpunten, de andere variant maakt een triangulatie van grondpunten en berekent daaruit de hoogte.<br />⁣ De puntenwolk voor de invoer moet enkele van de punten hebben geclassificeerd als grond (classification=2).
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha (Lutra Consulting)](https://github.com/JanCaha)
-### Feature: New processing algorithm: Classify ground points
-This algorithm classifies ground points using the Simple Morphological Filter (SMRF) algorithm.<br />SMRF is a ground filtering algorithm that uses progressive morphological operations to separate ground points from non-ground points (like vegetation and buildings) in lidar point clouds. It iteratively applies opening operations at increasing window sizes combined with an elevation threshold, making it computationally efficient and effective for generating bare-earth digital terrain models.
+### Mogelijkheid: Nieuw algoritme voor Processing: Grondpunten classificeren
+Dit algoritme classificeert grondpunten met het algoritme Simple Morphological Filter (SMRF).<br />SMRF is een algoritme voor filteren van grond dat progressieve morfologische bewerkingen gebruikt uit niet-grondpunten (zoals vegetatie en gebouwen) in puntenwolken van Lidar. Het past iteratief bewerkingen toe voor het openen van verhogende venstergroottes, gecombineerd met een drempel voor de hoogte, wat het berekeningswijze gezien efficiënt en effectief maakt voor het maken van blote-aarde digitale terreinmodellen.
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha (Lutra Consulting)](https://github.com/JanCaha)
-### Feature: New processing algorithm: Filter noise
-There are two new algorithms for noise filtering of point clouds (using statistical method or using radius).<br />Noise filtering algorithms identify and remove outlier points in a point cloud that result from sensor errors, multipath reflections, or atmospheric interference. They analyze each point's local neighborhood and flag points that deviate significantly from their surroundings.
+### Mogelijkheid: Nieuw algoritme voor Processing: Ruis filteren
+Er zijn twee nieuwe algoritmes voor het filteren van ruis uit puntenwolken (met de statistische methode of met straal).<br />Algoritmes voor het filteren van ruis identificeren en verwijderen uitschietende punten in een puntenwolk die voortkomen uit sensorfouten, reflecties van multipad of atmosferische interferentie. Ze analyseren de lokale nabijheid van elk punt en vlaggen punten die significant afwijken van hun omgevingen.
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha (Lutra Consulting)](https://github.com/JanCaha)
-### Feature: New processing algorithm: Transform point cloud
-The transformation algorithm applies translation, rotation, and scaling to align a point cloud layer, without changing its shape.<br />This is commonly used for correcting systematic offsets between surveys, using known control points or correspondences.
+### Mogelijkheid: Nieuw algoritme voor Processing: Puntenwolk transformeren
+Het algoritme voor transformeren past vertalen, draaien en schalen toe om een puntenwolk uit te lijnen, zonder zijn vorm te wijzigen.<br />Dit wordt gewoonlijk gebruikt voor het corrigeren van systematische verschuivingen tussen waarnemingen, met behulp van bekende controlepunten of correspondenties.
 
 Dit werd mogelijk gemaakt door [QGIS 3D for Open Source Digital Twins (crowdfunding campaign)](https://www.lutraconsulting.co.uk/crowdfunding/qgis-3d-for-open-source-digital-twins)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha (Lutra Consulting)](https://github.com/JanCaha)
 ## Afdruklay-outs
-### Feature: Add horizontal alignment control for layout map grid annotations
-Instead of always left-aligning grid annotations on layout maps, a new control allows users to choose the alignment. This is especially useful for multi-line annotations, which may be unappealing when left-aligned on the left side of the map.
+### Mogelijkheid: Besturingselement voor horizontale uitlijning voor rasterannotaties in kaarten van afdruklay-outs
+In plaats van altijd rasterannotaties op kaarten van afdruklay-out links uit te lijnen, geeft een nieuw besturingselement de gebruikers de mogelijkheid om de uitlijning te kiezen. Dit is speciaal nuttig voor annotaties met meerdere regels, die er misschien niet goed uitzien als ze links worden uitgelijnd aan de linkerkant van de kaart.
 
 Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Rework handling of initial layer set and synchronization on Layout Legends
-QGIS has introduced layer synchronisation modes for the legends in Print Layouts, in line with [QEP 253](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/253).<br />This removes the existing "Auto update" checkbox for layout legends, and instead introduces a user-friendly combobox showing legend population modes, including:
-- **Synchronize to All Project Layers**: This option matches the current behaviour of the "Auto sync" checkbox. If selected, then all new layers added to the project will appear immediately in the legend, and any changes made to these layers will immediately be applied to the legend.
-- **Synchronize to Visible Layers**: This option will consider which layers are currently visible in the map linked to the legend item (or main project layer tree, if no map is linked to the legend). When this mode is active, any changes to the set of layers visible in the map will cause the legend layers to be matched to this set of visible layers. Note that this mode differs from the existing "Only show items in the linked map" option because the "Synchronize to Visible Layers" mode does not consider the linked map extent at all - if a layer is checked and visible for the map, then it will be shown in the legend regardless of whether or not all features in the layer fall outside the visible map extent. Like the "Synchronize to All Project Layers" option, any changes made to the names or other legend-related settings in the main project layer tree will automatically be propagated to the layout legend.
-- **Manual Layer Selection**: All content for the legend can be controlled manually by the user, and no auto-synchronization of which layers are included will apply. This is the same behaviour as currently happens in QGIS if the "auto update" option is unchecked.
+### Mogelijkheid: Opnieuw bewerkte afhandeling van initieel ingestelde laag en synchronisatie voor legenda's van afdruklay-out
+QGIS heeft modi voor het synchroniseren van lagen geïntroduceerd voor de legenda's in afdruklay-outs, in lijn met [QEP 253](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/253).<br />⁣Dit verwijdert het bestaande keuzevak "Live bijwerken" voor legenda's van afdruklay-outs, en in plaats daarvan introduceert het een gebruiksvriendelijk combinatievak dat de modi voor het vullen van de legenda weergeeft, inclusief:
+- **Synchroniseren met alle projectlagen**: Deze optie komt overeen met het huidige gedrag van het keuzevak "Automatisch synchroniseren". Indien geselecteerd, zullen alle nieuwe lagen die worden toegevoegd aan het project onmiddellijk verschijnen in de legenda, en elke aan deze lagen gemaakte wijziging zal onmiddellijk worden toegepast op de legenda.
+- **Synchroniseren met zichtbare lagen**: Deze optie zal rekening houden met lagen die momenteel zichtbaar zijn in de kaart die is gekoppeld aan het item voor de legenda (of hoofdboom van de lagen, als geen kaart is gekoppeld aan de legenda). Wanneer deze modus actief is, zullen alle wijzigingen aan de set met lagen die zichtbaar is in de kaart ervoor zorgen dat de lagen van de legenda overeen zullen komen met deze set zichtbare lagen. Onthoud dat deze modus verschilt van de bestaande optie "Alleen items in gekoppelde laag weergeven", omdat de modus "Synchroniseren met zichtbare lagen" helemaal geen rekening houdt met de bereikingen van de gekoppelde kaart - als een laag is geselecteerd en zichtbaar is voor de kaart, dan zal die worden weergegeven in de legenda. Ongeacht of alle objecten van de laag al dan niet buiten het zichtbare laagbereik vallen. Net als met de optie "Synchroniseren met alle projectlagen" worden eventuele wijzigingen aan de namen of andere aan de legenda gerelateerde instellingen in de hoofdboom van de lagen automatisch doorgevoerd in de legenda van de afdruklay-out.
+- **Handmatig**: Alle inhoud voor de legenda kan handmatig door de gebruiker worden beheerd, en er zal geen automatisch synchroniseren worden toegepast op welke laag dan ook. Dit is hetzelfde gedrag als momenteel gebeurt in QGIS als de optie "Live bijwerken" niet is geselecteerd.
 
-The previous "Update All" operation on legends has been changed to a new "Reset" function, which will restore the legend configuration respecting the selected mode.<br />This change includes a new global setting that has been added to the Options - Layout page, allowing users to control the default mode for newly created legends. By default, QGIS will use the "Synchronize to Visible Layers" mode in order to provide a better out-of-the-box experience for users with large projects; however, users can restore the previous default behaviour by changing this setting accordingly.
+De vroegere bewerking "Alles bijwerken" voor legenda's is gewijzigd naar een nieuwe functie "Herstellen", die de configuratie van de legenda terug zal zetten naar de geselecteerde modus.<br />Deze wijziging bevat een nieuwe globale instelling die is toegevoegd aan de pagina Opties - Lay-out. Dat geeft gebruikers de kans om de standaardmodus voor nieuw gemaakte legenda's te beheren. Standaard zal
+QGIS de modus "Synchroniseren met zichtbare lagen" gebruiken om een betere ervaring out-of-the-box te geven voor gebruikers met grote projecten; gebruikers kunnen echter het eerdere standaardgedrag herstellen door deze instelling overeenkomstig te wijzigen.
 
 <img src="images/entries/3b47cf11887bdd0717b6cef55fdcb5f7b7ac0c13.gif" class="img-responsive img-rounded" />
 
@@ -334,8 +335,8 @@ Dit werd mogelijk gemaakt door Deense QGIS gebruikersgroep
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ### Feature: Add data-defined control over layout map grid annotation visibility, and additional expression variables for grids
 This allows for PER-ANNOTATION control over the map grid text visibility. i.e., it allows for individual grid annotations to be selectively hidden or shown. The `@grid_axis` and `@grid_number` expression variables are available for use in the expression. New expression variables have also been introduced, making it easy to do things like hide the first/last grid annotations selectively:
-- @grid_count: Total number of visible grid lines for the current grid axis.
-- @grid_index: The index of the grid line currently being drawn (starting at 1 for the first grid line). The index is specific to the current grid axis.
+- @grid_count: Totale aantal zichtbare rasterlijnen voor de huidige as van het raster.
+- @grid_index: De index van de momenteel getekende rasterlijn (beginnend met 1 voor de eerste rasterlijn). De index is specifiek voor de huidige as van het raster.
 
 Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
@@ -397,12 +398,12 @@ A new `equals(geometry1, geometry2)` geometry function has been added, which wil
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ### Feature: Add expression functions for working with magnetic models
 New expressions for handling magnetic model details are now available, including::
-- magnetic_declination: Returns the declination of a magnetic field at a point, in degrees east of north
-- magnetic_inclination: Returns the inclination of a magnetic field at a point, in degrees down from horizontal
-- magnetic_declination_rate_of_change: Returns the rate of change of the declination of a magnetic field at a point, in degrees per year
-- magnetic_inclination_rate_of_change: Returns the rate of change of the inclination of a magnetic field at a point, in degrees per year
+- @grid_index: Geeft de daling van een magnetisch veld op een punt aan, in graden Oost of Noord
+- magnetic_inclination: Geeft de stijging van een magnetisch veld op een punt aan, in graden naar beneden vergeleken met horizontaal
+- magnetic_declination_rate_of_change: Geeft de mate van wijzigen van de daling van een magnetisch veld op een punt aan, in graden per jaar
+- magnetic_inclination_rate_of_change: Geeft de mate van wijzigen van de stijging van een magnetisch veld op een punt aan, in graden per jaar
 
-This is highly useful for metadata in print layouts and
+Dit is heel nuttig voor metadata in afdruklay-outs en
 
 <img src="images/entries/54affd11032e735eee18b4ef94d8f654a8d7acf8.png" class="img-responsive img-rounded" />
 
@@ -434,11 +435,11 @@ The new `substr_count` expression simply allows users to count the occurrences o
 Deze mogelijkheid werd ontwikkeld door [Tudor Barascu](https://github.com/tudorbarascu)
 ### Feature: Add some timezone related expression functions
 Adds some functions for working with timezones in expressions:
-- `timezone_from_id`: Creates a timezone object from a string ID (from the IANA timezone database).
-- `timezone_id`: Returns the ID string for a timezone object, using IDs from the IANA timezone database.
-- `get_timezone`: Returns the timezone object associated with a datetime value.
-- `convert_timezone`: Converts a datetime object to a different timezone.
-- `set_timezone`: Sets the timezone object associated with a datetime value, without changing the date or time components. This function can be used to replace the timezone for a datetime.
+- `timezone_from_id`: Maakt een object tijdzone uit een tekenreeks ID (uit de database voor tijdzones van IANA).
+- `timezone_id`: Geeft de tekenreeks van de ID voor een object tijdzone terug, gebruikt ID's uit de database voor tijdzones van IANA.
+- `get_timezone`: Geeft het object tijdzone terug dat is geassocieerd met een waarde datetime.
+- `convert_timezone`: Converteert een object datetime naar een andere tijdzone.
+- `set_timezone`: Stelt het object voor de tijdzone in die is geassocieerd met een waarde datetime, zonder de componenten datum of tijd te wijzigen. Deze functie kan worden gebruikt om de tijdzone voor een datetime te wijzigen.
 
 <img src="images/entries/67fe7d4aa19caa1698e52c9d27e2dd954b809bb9.png" class="img-responsive img-rounded" />
 
@@ -446,7 +447,7 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## Digitaliseren
-### Feature: Bézier maptool
+### Mogelijkheid: Kaartgereedschap Bézier
 New GUI controls for part digitization using NURBS curves are provided by adding the "poly-bézier" / "freeform" curve mode, which uses anchors and handles to control curve shape in a manner similar to many graphic design tools.<br />Users can click and drag ot add a point with handles, and reset handles on a point using `alt+click`.
 
 <img src="images/entries/584c6a12ea7a79081fa1fce9f86d9c7d80ecf31c.png" class="img-responsive img-rounded" />
@@ -1010,7 +1011,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (QCooperative)](https
 | Crash trying to open a shapefile | [\#63826](https://github.com/qgis/QGIS/issues/63826) | [PR \#13350](https://github.com/OSGeo/gdal/pull/13350) | N/A (GDAL fix) |
 | Replace all remaining uses of connect(,SIGNAL,,SLOT) in src/ | Niet gerapporteerd | [PR \#63832](https://github.com/qgis/QGIS/pull/63832) | N/B |
 | Crash with invalid WMS/WMTS source | [\#62372](https://github.com/qgis/QGIS/issues/62372) | [PR \#63833](https://github.com/qgis/QGIS/pull/63833) | [PR \#64016](https://github.com/qgis/QGIS/pull/64016) |
-| JSON column from GeoPackage is not read correctly | [\#62377](https://github.com/qgis/QGIS/issues/62377) | No longer reproducible / likely fixed |  |
+| JSON column from GeoPackage is not read correctly | [\#62377](https://github.com/qgis/QGIS/issues/62377) | Kan niet langer worden gereproduceerd / waarschijnlijk al gerepareerd |  |
 | Fix build warnings on Fedora | Niet gerapporteerd | [PR \#63910](https://github.com/qgis/QGIS/pull/63910) | N/B |
 | Fix cppcheck missingOverride and functionConst warnings | Niet gerapporteerd | [PR \#63913](https://github.com/qgis/QGIS/pull/63913) | N/B |
 | \[CI\] Port OGC tests to ubuntu:25.10 Qt6 | Niet gerapporteerd | [PR \#64135](https://github.com/qgis/QGIS/pull/64135) | N/B |
@@ -1023,7 +1024,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 | --- | --- | --- | --- |
 | pyqt5_to_pyqt6.py: Some known incompatibilities do not lead to error exit code | [\#62559](https://github.com/qgis/QGIS/issues/62559) | [PR \#63526](https://github.com/qgis/QGIS/pull/63526) | Nee |
 | \[PyQt5_to_PyQt6\] Fix all imports coming from Qt module | Niet gerapporteerd | [PR \#63565](https://github.com/qgis/QGIS/pull/63565) |  |
-| QgsLayoutExporter.exportToPdf() does not have the same return value type if an iterator is passed or not | [\#62501](https://github.com/qgis/QGIS/issues/62501) | Won't fix? |  |
+| QgsLayoutExporter.exportToPdf() does not have the same return value type if an iterator is passed or not | [\#62501](https://github.com/qgis/QGIS/issues/62501) | Niet repareren? |  |
 | Broken themes in geospatial PDF | [\#62014](https://github.com/qgis/QGIS/issues/62014) | [PR \#63580](https://github.com/qgis/QGIS/pull/63580) | NOG TE DOEN |
 | pyqt5_to_pyqt6.py produces broken syntax for imports | [\#64185](https://github.com/qgis/QGIS/issues/64185) | [PR \#64926](https://github.com/qgis/QGIS/pull/64926) | [PR \#64941](https://github.com/qgis/QGIS/pull/64941) |
 | pyqt5_to_pyqt6.py does not catch "from PyQt5 import QtWidgets" etc | [\#63711](https://github.com/qgis/QGIS/issues/63711) | [PR \#64930](https://github.com/qgis/QGIS/pull/64930) | [PR \#64939](https://github.com/qgis/QGIS/pull/64939) |
@@ -1031,7 +1032,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 | set session role not working on creation of tables and schema | [\#63866](https://github.com/qgis/QGIS/issues/63866) | Kan niet worden gereproduceerd |  |
 | Layout export to GeoPDF: incorrect layers' order when a "PDF Group" is set | [\#63475](https://github.com/qgis/QGIS/issues/63475) | [PR \#64983](https://github.com/qgis/QGIS/pull/64983) | NOG TE DOEN |
 | pyqt5_to_pyqt6.py: Some suggestions reference wrong class | [\#64462](https://github.com/qgis/QGIS/issues/64462) | [PR \#64989](https://github.com/qgis/QGIS/pull/64989) | NOG TE DOEN |
-| \[GeoPdfExport\] Avoid map theme contaminate non-map-theme items | Reported directly without issue | [PR \#65008](https://github.com/qgis/QGIS/pull/65008) | [PR \#65108](https://github.com/qgis/QGIS/pull/65108) |
+| \[GeoPdfExport\] Avoid map theme contaminate non-map-theme items | Direct gerapporteerd zonder issue | [PR \#65008](https://github.com/qgis/QGIS/pull/65008) | [PR \#65108](https://github.com/qgis/QGIS/pull/65108) |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
@@ -1057,7 +1058,7 @@ Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud (OPENGIS)](https://opengis
 | Diagrams: histograms with only negative values don't render | [\#63980](https://github.com/qgis/QGIS/issues/63980) | [PR \#64992](https://github.com/qgis/QGIS/pull/64992) | [PR \#65211](https://github.com/qgis/QGIS/pull/65211) |
 | Attributes Form is not the same when called via GUI or when called via PyQGIS | [\#65010](https://github.com/qgis/QGIS/issues/65010) | Is geen probleem |  |
 | Layers added using a .qlr file cannot be added to an open Elevation Profile View | [\#58533](https://github.com/qgis/QGIS/issues/58533) | Al gerepareerd |  |
-| Group title not updated in .qgs | [\#65085](https://github.com/qgis/QGIS/issues/65085) | Invalid bug, issue related to a plugin |  |
+| Group title not updated in .qgs | [\#65085](https://github.com/qgis/QGIS/issues/65085) | Ongeldige bug, issue is gerelateerd aan een plug-in |  |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
@@ -1071,7 +1072,7 @@ Deze mogelijkheid werd ontwikkeld door [Germán Carrillo (OPENGIS)](https://open
 | Several issues with a temporal WMS (only one image is displayed using the Temporal Controller) I | [\#64099](https://github.com/qgis/QGIS/issues/64099) | [PR \#64925](https://github.com/qgis/QGIS/pull/64925) |  |
 | Several issues with a temporal WMS (only one image is displayed using the Temporal Controller) II | [\#64099](https://github.com/qgis/QGIS/issues/64099) | [PR \#64863](https://github.com/qgis/QGIS/pull/64863) |  |
 | \[mvt\] WMS raster sources are not working | [\#61040](https://github.com/qgis/QGIS/issues/61040) | [PR \#65087](https://github.com/qgis/QGIS/pull/65087) |  |
-| Add unit tests for unzip function in pyplugin installer | Requested in [PR \#65051](https://github.com/qgis/QGIS/pull/65051) | [PR \#65119](https://github.com/qgis/QGIS/pull/65119) |  |
+| Add unit tests for unzip function in pyplugin installer | Gevraagd in [PR \#65051](https://github.com/qgis/QGIS/pull/65051) | [PR \#65119](https://github.com/qgis/QGIS/pull/65119) |  |
 | Fix WMTS-T layers temporal capabilities resourceURL selection | [\#54043](https://github.com/qgis/QGIS/issues/54043) | [PR \#65190](https://github.com/qgis/QGIS/pull/65190) |  |
 | Set selected section to the first section on focus in QgsDateTimeEdit | [\#65022](https://github.com/qgis/QGIS/issues/65022) | [PR \#65023](https://github.com/qgis/QGIS/pull/65023) |  |
 
@@ -1110,8 +1111,8 @@ Deze mogelijkheid werd ontwikkeld door [Till Frankenbach (OPENGIS)](https://open
 | Plugin installer can leave a plugin in a broken state on failed upgrade | [\#64790](https://github.com/qgis/QGIS/issues/64790) | [PR \#64807](https://github.com/qgis/QGIS/pull/64807) | NOG TE DOEN |
 | Avoid module wide QtConcurrent imports | Niet gerapporteerd | [PR \#64775](https://github.com/qgis/QGIS/pull/64775) |  |
 | Avoid crash when edit-in-place layer is removed | Niet gerapporteerd | [PR \#65107](https://github.com/qgis/QGIS/pull/65107) | Topo |
-| 3D Map View crashes QGIS when project uses UTM projection | [\#41171](https://github.com/qgis/QGIS/issues/41171) | No longer reproducible |  |
-| Simple lines rendered incorrectly in 3D | [\#51286](https://github.com/qgis/QGIS/issues/51286) | No longer reproducible |  |
+| 3D Map View crashes QGIS when project uses UTM projection | [\#41171](https://github.com/qgis/QGIS/issues/41171) | Kan niet langer worden gereproduceerd |  |
+| Simple lines rendered incorrectly in 3D | [\#51286](https://github.com/qgis/QGIS/issues/51286) | Kan niet langer worden gereproduceerd |  |
 | Some feature are not rendered in a 3d map view when using rule based renderer | [\#47581](https://github.com/qgis/QGIS/issues/47581) | Al gerepareerd |  |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
