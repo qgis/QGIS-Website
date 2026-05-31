@@ -470,7 +470,7 @@ Alle pakketten bevatten GRASS- en Python-ondersteuning
 
 Alle opslagplaatsen voor openSUSE Geo zijn hier te vinden: https://download.opensuse.org/repositories/Application:/Geo/
 
-Install QGis with this command:
+Installeer QGIS met deze opdracht:
 ```
 sudo zypper in qgis qgis-plugin-grass 
 ```

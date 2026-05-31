@@ -333,56 +333,56 @@ QGIS de modus "Synchroniseren met zichtbare lagen" gebruiken om een betere ervar
 Dit werd mogelijk gemaakt door Deense QGIS gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add data-defined control over layout map grid annotation visibility, and additional expression variables for grids
-This allows for PER-ANNOTATION control over the map grid text visibility. i.e., it allows for individual grid annotations to be selectively hidden or shown. The `@grid_axis` and `@grid_number` expression variables are available for use in the expression. New expression variables have also been introduced, making it easy to do things like hide the first/last grid annotations selectively:
+### Mogelijkheid: Data-bepaald beheer toegevoegd voor zichtbaarheid van annotaties in het raster van de kaart in afdruklay-out, en aanvullende expressievariabelen voor rasters
+Dit maakt beheer PER-ANNOTATIE mogelijk voor de zichtbaarheid van de tekst in het kaartraster. D.i. het maakt het mogelijk individuele annotaties op het raster selectief te verbergen of weer te geven. De expressievariabelen `@grid_axis` en `@grid_number` zijn beschikbaar om in de expressie te gebruiken. Nieuwe expressievariabelen zijn ook geïntroduceerd, wat het gemakkelijk maakt om dingen te doen als het selectief verbergen van de eerste/laatste rasterannotaties:
 - @grid_count: Totale aantal zichtbare rasterlijnen voor de huidige as van het raster.
 - @grid_index: De index van de momenteel getekende rasterlijn (beginnend met 1 voor de eerste rasterlijn). De index is specifiek voor de huidige as van het raster.
 
 Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Allow for atlas geometries to reshape the frame of map items
-A new clip frame function has been added that, when enabled, reshapes layout map items frames to match the (polygon) geometry of the current atlas feature. This allows flexible clipping and masking in atlas items, especially where canvas background color is an integral part of the rendering (e.g., vector tile base maps).
+### Mogelijkheid: Toestaan dat geometrieën van atlas het frame van kaartitems opnieuw vormgeven
+Een nieuwe functie voor het clippen van een frame is toegevoegd die, indien ingeschakeld, de frames van de kaartitems in de afdruklay-out opnieuw vormgeeft om overeen te komen met de (polygoon)geometrie van het huidige object van de atlas. Dat maakt flexibel clippen en maskers in items van Atlas mogelijk, speciaal waar de kleur van de achtergrond van het kaartvenster een integraal deel is van het renderen (bijv. vectortegelbasiskaarten).
 
 <img src="images/entries/6cadd40d1ebfa64b6190c75334df0340c00a4d93.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
-### Feature: Brand new pie chart plot type
-A new pie chart has been added to the available plot types in QGIS and its layout designer.
+### Mogelijkheid: Nagelnieuw plottype taartdiagram
+Een nieuw taartdiagram is toegevoegd aan de typen voor plots in QGIS en zijn lay-outontwerper.
 
 <img src="images/entries/ae30dae66281636965dbff50915b96b6ecbabacc.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
-### Feature: Print Layout Charts Implementation
-A new layout chart item has been added, which allows users to leverage chart rendering into their print and atlas layouts. Chart configurations are defined using an extensive set of properties provided in the properties panel and a number of sub-panels.<br />The chart item builds visualizations from data series of X and Y values, which are derived from a source layer that is configured through the item properties' data source group. Each series is defined using expressions to evaluate the X and Y values, as well as the possibility to filter the source layer, with each property configured via a subpanel. Iteration through the source layer can be ordered, which will be taken into account by the bar/line charts.
+### Mogelijkheid: Implementatie diagrammen afdruklay-out
+Een nieuw item voor afdruklay-out is toegevoegd dat gebruikers in staat stelt het renderen van diagrammen te verhogen tot hun lay-outs voor afdrukken en Atlas. Configuraties voor diagrammen worden gedefinieerd met een uitgebreide set eigenschappen die worden verschaft in het paneel Eigenschappen en een aantal subpanelen.<br />De items voor diagrammen bouwen visualisaties vanuit gegevensseries van X- en Y-waarden, die worden afgeleid van een bronlaag die wordt gedefinieerd door de groep databron van de eigenschappen van het item. Elke serie wordt gedefinieerd met expressies om de waarden X en Y te evalueren, alsook de mogelijkheid om de bronlaag te filteren, op elke via een subpaneel geconfigureerde eigenschap. De volgorde voor iteratie door de bronlaag kan worden gewijzigd, waarmee rekening zal worden gehouden bij de diagrammen balk/lijn.
 
 <img src="images/entries/65b7cdfcb7c7595f007a1911e51894e3cfab80dc.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
-### Feature: Add an atlas option to limit coverage layer rendering to the current feature only
-A new atlas option was added to limit rendering of features on the coverage layer to the current feature only, allowing the dynamic exclusion of other features without requiring complex expressions using the active atlas feature.
+### Mogelijkheid: Optie voor Atlas toegevoegd om het renderen van de bedekkingslaag te beperken tot alleen het huidige object
+Een nieuwe optie voor Atlas werd toegevoegd om het renderen van objecten op de bedekkingslaag te beperken tot alleen het huidige object. Wat het mogelijk maakt dynamisch andere objecten uit te sluiten, zonder complexe expressies met het actieve object van Atlas te vereisen.
 
 <img src="images/entries/7f1b58c91bf273f63b125dc5fe30327ae18068ed.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
-### Feature: Add set extent to layer item in the map item's toolbar menu
-A new menu action has been added to the toolbar for layout maps that allows users to quickly set a given map item's extent to match the extent of a spatial layer in the project.
+### Mogelijkheid: Bereik instellen voor laagitem in het menu van de werkbalk voor het kaartitem
+Een nieuwe menuactie is toegevoegd aan de werkbalk voor kaarten van afdruklay-out. Wat gebruikers in staat stelt snel het bereik voor het item van een opgegeven kaart in te stellen om overeen te komen met het bereik van een ruimtelijke laag in het project.
 
 <img src="images/entries/e4ba1fa83ed9a5601b434666eb8952eb270b970e" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
-### Feature: Brand new layout item rotation handles
-Rotation handles have been added for selected layout item(s), allowing users to tweak item rotation and perfect their layouts.
+### Mogelijkheid: Nagelnieuwe handvatten om te draaien voor items van afdrklay-out
+Handvatten om te kunnen draaien zijn toegevoegd aan geselecteerde item(s) van afdruklay-out. Wat gebruikers de mogelijkheid geeft hun draaiing voor items aan te passen en hun lay-outs te perfectioneren.
 
 <img src="images/entries/eaed49778b763c98749a2d37a9e4654602911616.png" class="img-responsive img-rounded" />
 
@@ -390,14 +390,14 @@ Dit werd mogelijk gemaakt door Stad Frankfurt – Stadtplanungsamt
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
 ## Expressies
-### Feature: Add "equals" geometry function
-A new `equals(geometry1, geometry2)` geometry function has been added, which will test the equality of two geometries (in the same manner as `overlay_equals`).
+### Mogelijkheid: Geometriefunctie "equals" toegevoegd
+Een nieuwe geometriefunctie `equals(geometry1, geometry2)` is toegevoegd, die de gelijkheid zal testen tussen twee geometrieën (op dezelfde manier als `overlay_equals`).
 
 <img src="images/entries/8bd21615869e1defb47183b43aa131ecb2dbab17.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Add expression functions for working with magnetic models
-New expressions for handling magnetic model details are now available, including::
+### Mogelijkheid: Expressiefuncties toegevoegd voor werken met magnetische modellen
+Nieuwe expressies voor het afhandelen van details van magnetische modellen zijn nu beschikbaar. Inclusief::
 - @grid_index: Geeft de daling van een magnetisch veld op een punt aan, in graden Oost of Noord
 - magnetic_inclination: Geeft de stijging van een magnetisch veld op een punt aan, in graden naar beneden vergeleken met horizontaal
 - magnetic_declination_rate_of_change: Geeft de mate van wijzigen van de daling van een magnetisch veld op een punt aan, in graden per jaar
@@ -410,10 +410,10 @@ Dit is heel nuttig voor metadata in afdruklay-outs en
 Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add extract_degrees, extract_minutes, extract_seconds functions
-These functions are designed to make it easy to customise the display of a degree-based grid annotation, by allowing easy extraction of the individual components of the decimal degree value for individual formatting (e.g., displaying the degrees in bold)
-- extract_degrees: Extracts the integer number of degrees from a decimal degrees value. The minutes and seconds components are ignored. The extracted degrees values will be truncated towards zero (not rounded).
-- extract_minutes: Extracts the integer number of minutes from a decimal degrees value. The degrees and seconds components are ignored. The extracted minutes values will be truncated towards zero (not rounded), and will always be a positive value.
+### Mogelijkheid: Functies extract_degrees, extract_minutes, extract_seconds toegevoegd
+Deze functies zijn ontworpen om gemakkelijker de weergave te kunnen aanpassen van een op een graden gebaseerde rasterannotatie. Door het toestaan van het gemakkelijk uitnemen van de individuele componenten van de waarde van de decimale graad voor individuele opmaak (bijv. vet weergeven van de graden)
+- extract_degrees: Neemt het integer getal voor graden uit een decimale waarde voor graden uit. De componenten minuten en seconden worden genegeerd. De uitgenomen waarden voor graden zullen worden afgebroken in de richting van nul (niet afgerond).
+- extract_minutes: Neemt het integer getal voor minuten uit een decimale waarde voor graden uit. De componenten graden en seconden worden genegeerd. De uitgenomen waarden voor minuten zullen worden afgebroken in de richting van nul (niet afgerond), en zullen altijd een positieve waarde zijn.
 - Neemt het integer getal voor minuten uit een decimale waarde voor graden uit. De componenten graden en minuten worden genegeerd. De uitgenomen waarden voor seconden zullen altijd een positieve waarde zijn.
 
 <img src="images/entries/afca4fe52738eae1b242ae2720e0bbbb97f119fe.png" class="img-responsive img-rounded" />
@@ -421,20 +421,20 @@ These functions are designed to make it easy to customise the display of a degre
 Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add unaccent function based on PostgreSQL unaccent
-A new unaccent method is provided that removes accents (diacritic signs) from lexemes, e.g `unaccent( "ï" )`.
+### Mogelijkheid: Functie unaccent toegevoegd, gebaseerd op PostgreSQL unaccent
+Een nieuwe methode unaccent wordt verschaft die accenten (diacriete tekens) verwijdert uit lexemen, bijv. `unaccent( "ï" )`.
 
 <img src="images/entries/1d59428a063df21c5d83676b45e83771e56f5aca.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Tudor Barascu](https://github.com/tudorbarascu)
-### Feature: Add substr_count expression
-The new `substr_count` expression simply allows users to count the occurrences of a substring within a string.
+### Mogelijkheid: Expressie substr_count toegevoegd
+De expressie new `substr_count` geeft gebruikers eenvoudigweg de gelegenheid om het aantal keer voorkomen van een subtekenreeks in een tekenreeks.
 
 <img src="images/entries/09cbb9e54d4b4326ced2b4bdcf8c93736960af0a.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Tudor Barascu](https://github.com/tudorbarascu)
-### Feature: Add some timezone related expression functions
-Adds some functions for working with timezones in expressions:
+### Mogelijkheid: Enkele aan tijdzones gerelateerde expressiefuncties toegevoegd
+Voegt enkele functies toe voor het werken met tijdzones in expressies:
 - `timezone_from_id`: Maakt een object tijdzone uit een tekenreeks ID (uit de database voor tijdzones van IANA).
 - `timezone_id`: Geeft de tekenreeks van de ID voor een object tijdzone terug, gebruikt ID's uit de database voor tijdzones van IANA.
 - `get_timezone`: Geeft het object tijdzone terug dat is geassocieerd met een waarde datetime.
@@ -448,23 +448,23 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## Digitaliseren
 ### Mogelijkheid: Kaartgereedschap Bézier
-New GUI controls for part digitization using NURBS curves are provided by adding the "poly-bézier" / "freeform" curve mode, which uses anchors and handles to control curve shape in a manner similar to many graphic design tools.<br />Users can click and drag ot add a point with handles, and reset handles on a point using `alt+click`.
+Nieuwe besturingselementen voor de gebruikersinterface voor het digitaliseren van delen met NURBS-curves worden verschaft door het toevoegen van de modus voor bogen "poly-bézier" / "freeform". Het gebruikt ankers en handvatten om de vorm van een boog te beheren op een manier die soortgelijk is aan veel gereedschappen voor grafisch ontwerpen.<br />Gebruikers kunnen klikken en slepen of een punt met handvatten toevoegen en handvatten op een punt herstellen met `alt+klik`.
 
 <img src="images/entries/584c6a12ea7a79081fa1fce9f86d9c7d80ecf31c.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://github.com/lbartoletti)
-### Feature: Add area and total length/perimeter CAD dock floater values
-New floater values are provided on the advanced digitizing CAD Tools interface, providing the option to show area and total length/perimeter values using Cartesian or Ellipsoidal calculations based on user selection (note that CAD tools uses Cartesian coordinates for digitization, which may result in differences between the displayed ellipsoidal values).
+### Mogelijkheid: Waarden area en total length/perimeter voor zwevend dock CAD toegevoegd
+Nieuwe waarden voor het zwevende venster worden verschaft voor de interface van Geavanceerd digitaliseren voor gereedschappen van CAD. Ze verschaffen de optie om de waarden voor area en total length/perimeter weer te geven met cartesiaanse of ellipsoïde berekeningen, gebaseerd op de selectie van de gebruiker (onthoud dat de gereedschappen voor CAD cartesiaanse coördinaten gebruiken voor digitaliseren, wat zou kunnen resulteren in verschillen tussen de weergegeven ellipsoïde waarden).
 
 <img src="images/entries/03e5d6b7b5c5ad9449f6abcb73c3dc21706b5ec5.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Deense QGIS gebruikersgroep](https://qgis.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add Maptool to handle chamfer and fillet of polygons
-A new digitizing Maptool allows users to chamfer or fillet polygons.
+### Mogelijkheid: Kaartgereedschap toegevoegd om afschuiningen en randen van polygonen af te handelen
+Een nieuw kaartgereedschap voor digitaliseren stelt gebruikers in staat polygonen af te schuinen en randen te maken.
 
 <img src="images/entries/58ace0c2995032999b366d0171a78857e687d3c4.png" class="img-responsive img-rounded" />
 
@@ -472,64 +472,64 @@ Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia
 
 Deze mogelijkheid werd ontwikkeld door [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
 ## Gegevensbeheer
-### Feature: Enhanced COG support for raster exports
-The Raster Exports and Save dialogs now support explicit options to specify that the output should be exported with Cloud Optimized GeoTiff optimization, with additional COG-specific pyramid features, including improvements for:
-- progress reporting
-- error handling
-- pyramid generation operations
+### Mogelijkheid: Verbeterde ondersteuning voor COG  voor exporteren van rasters
+De dialoogvensters voor exporteren en opslaan van rasters ondersteunen nu expliciete opties om te specificeren dat de uitvoer zou moeten worden geëxporteerd met optimalisatie voor Cloud Optimized GeoTiff, met aanvullende COG-specifieke objecten pyramiden, inclusief verbeteringen voor:
+- voortgang rapporteren
+- foutafhandeling
+- bewerkingen voor maken van pyramiden
 
-Note that this requires GDAL \>= 3.13.0
+Onthoud dat dit vereist GDAL \>= 3.13.0
 
 <img src="images/entries/60cec0aa212eb189e7749c242ba1ca49423ca845.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Feature: Copy raw attribute values
-QGIS now makes the raw (original) attribute values visible and copyable in both Attribute tables and the Identify Result interface.<br />In previous versions, data values were copied only in their "represented" form, i.e., the values that are evaluated by locale settings, expressions, or display values (e.g, foreign key values).<br />The new "Copy Raw Cell Content" option, available from the context menu, will copy literal values from the source data to the clipboard.
+### Mogelijkheid: Ruwe waarden attributen kopiëren
+QGIS maakt nu de ruwe (originele) attribuutwaarden zichtbaar en te kopiëren in zowel de Attributentabellen als de interface voor Identificatieresultaten.<br />In eerdere versies werden gegevenswaarden alleen gekopieerd in hun "weergegeven" vorm, d.i. de waarden die zijn geëvalueerd door lokale instellingen, expressies of weergavewaarden (bijv. waarden voor vreemde sleutels).<br />De nieuwe optie "Ruwe waarde kopiëren", beschikbaar vanuit het contextmenu, zal de letterlijke waarden kopiëren vanuit de databron naar het klembord.
 
 <img src="images/entries/cbc449f46c49440ac88d7f89a36e490d4d1deb20.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ct. Solothurn
 
 Deze mogelijkheid werd ontwikkeld door [signedav](https://github.com/signedav)
-### Feature: Allow storing Comments in QGIS Projects stored in PostgreSQL
-QGIS projects stored in PostgreSQL can now include comments with additional information, which is displayed in the browser using a Tooltip.
+### Mogelijkheid: Het opslaan van Opmerkingen voor projecten van QGIS in PostgreSQL toestaan
+Projecten van QGIS die zijn opgeslagen in PostgreSQL mogen nu opmerkingen bevatten met aanvullende informatie, die met een Helptip zal worden weergegeven in de Browser.
 
 <img src="images/entries/fa9f5d8b4ba7be7475799d104df2c4e96cc26f71.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Allow named layers as temporary output
-This functionality allows the user to name a temporary output layer that is the result of a processing algorithm. The fact that the layer is temporary is identifiable by the temporary icon (memory chip) displayed before the user defined layer name.
+### Mogelijkheid: Benoemde lagen toestaan als tijdelijke uitvoer
+Deze functionaliteit stelt de gebruiker in staat een tijdelijke laag voor uitvoer, die het resultaat is van een algoritme van Processing, een naam te geven. Het feit dat de laag tijdelijk is, is te identificeren door het pictogram voor tijdelijk (geheugenchip), dat wordt weergegeven voor de door de gebruiker gedefinieerde laagnaam.
 
 <img src="images/entries/3fec097dc50545f03ab62e3cff5688b719d23916" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door QGIS Deense gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Possibility to change the layer name in the layer panel when saving a scratch layer
-When saving a scratch layer as a permanent layer with a new name (a different file name than the name in the layer panel), a message bar is shown. In this message bar, the user can choose to automatically change the name in the layer panel to the new layer name.<br />This message bar is only shown if the layer is saved with a new name, and currently, this only works for some filetypes (it works for geopackages but not for shapefiles).
+### Mogelijkheid: Mogelijkheid om de laagnaam te wijzigen in het paneel Lagen bij het opslaan van een tijdelijke tekenlaag
+Bij het opslaan van een tijdelijke tekenlaag als een permanente laag met een nieuwe naam (een andere bestandsnaam dan de naam in het paneel Lagen), wordt een berichtenbalk weergegeven. In deze berichtenbalk kan de gebruiker ervoor kiezen om automatisch de naam in het paneel Lagen te wijzigen naar de nieuwe laagnaam.<br />Deze berichtenbalk wordt alleen weergegeven als de laag wordt opgeslagen met een nieuwe naam, en momenteel werkt dit alleen voor bepaalde bestandstypen (het werkt voor GeoPackages, maar niet voor Shapefiles).
 
 <img src="images/entries/f4d0c0c524eed26129c8c59c406018085e071220" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door QGIS Deense gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Suggest a file name when exporting layer or group as layer definition file
-When saving a layer or a layer group as a layer definition file (.qlr), the filename field was left empty by default. QGIS now populates the name of the layer or group as a suggestion for the filename to reduce friction for style exports.
+### Mogelijkheid: Stel een bestandsnaam voor bij het exporteren van een laag of groep als laagdefinitiebestand
+Bij het opslaan van een laag of laaggroep als een laagdefinitiebestand (.qlr), werd het veld voor de bestandsnaam standaard leeggelaten. QGIS vult nu de naam van de laag of groep in als een suggestie voor de bestandsnaam om wrijving tussen geëxporteerde stijlen te verkleinen.
 
 Deze mogelijkheid werd ontwikkeld door [pgipper](https://github.com/pgipper)
 ## Formulieren en widgets
-### Feature: Add the ability to preview the attributes form within the vector layer properties dialog
-QGIS now provides the ability to preview an attributes form while configuring it within the vector layer properties dialog.
+### Mogelijkheid: De mogelijkheid toegevoegd om een voorbeeld van het attributenformulier te bekijken binnen het dialoogvenster Laageigenschappen van vector
+QGIS verschaft nu de mogelijkheid om een voorbeeld van een attributenformulier te bekijken tijdens het configureren ervan in het dialoogvenster Laageigenschappen voor vector.
 
 <img src="images/entries/c0bb362e1f57600a820c2d185f77993abbd48318.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Refine reuse of last value and introduce remembrance toggle
-QGIS Attribute Forms now include an enhanced user experience for handling the reuse of "last captured" values in forms. A pin icon on forms will give users visual feedback on whether a field's value will be remembered and reused, and provide an active toggle to control whether it should continue to be reused. Additional enhancements to the form configuration allow session-level reuse policies to be set, the default behavior for reuse policies (enabled/disabled), and the ability to disable reuse policies across all fields in a layer.
+### Mogelijkheid: Verfijnen van hergebruiken van de laatste waarde en introduceren van een schakelaar voor onthouden
+Attributenformulieren van QGIS bevatten nu een verbeterde gebruikservaring voor de afhandeling van het opnieuw gebruiken van de "laatst vastgelegde" waarden in formulieren. Een pictogram van een pin op formulieren zal gebruikers visuele terugkoppeling geven over het feit of de waarde van een veld zal worden onthouden en opnieuw gebruikt kan worden, en verschaft een actieve schakelaar om te beheren of moet worden doorgegaan om het opnieuw te gebruiken. Aanvullende verbeteringen voor het configureren van het formulier maken het mogelijk beleid voor hergebruik in te stellen op het niveau van de sessie, het standaardgedrag voor beleid voor hergebruik (ingeschakeld/uitgeschakeld), en de mogelijkheid om beleid voor hergebruik uit te schakelen voor alle velden in een laag.
 
 <img src="images/entries/b06e53bc63de8ea4643beb74c69781076b613d07.png" class="img-responsive img-rounded" />
 
@@ -537,16 +537,16 @@ Dit werd mogelijk gemaakt door DB Fahrwegdienste GmbH
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ## Legenda van laag
-### Feature: Add control over whether layers are included in automatic print layout legends
-A new setting has been added in the layer properties legend tab (for vector, raster, mesh, and point cloud layers) for "Include automatically in print layout legend items". This setting is checked by default. Users must uncheck to exclude that layer from print layout legends.<br />This has also been added to the legend page for mesh and point cloud layers, with the generic setting for controlling embedded legend widgets.
+### Mogelijkheid: Beheer toegevoegd of lagen moeten worden opgenomen in automatische legenda's van afdruklay-out
+Een nieuwe instelling is toegevoegd aan de tab Legenda van de Laageigenschappen (voor vector, raster, lagen met mazen en lagen puntenwolken) voor "Automatisch opnemen in legenda-items van afdruklay-out". Deze instelling is standaard geselecteerd. Gebruikers moeten hem deselecteren om die laag uit te sluiten van legenda's voor afdruklay-out.<br />Dit is ook toegevoegd aan de pagina Legenda voor lagen met mazen en met puntenwolken, met de algemene instelling voor het beheren van ingebedde widgets Legenda.
 
 <img src="images/entries/798344535f33fdaf2047bfbd3070def6d28bb6fb.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Deense QGIS gebruikersgroep](https://qgis.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Custom Elevation Profile Sources
-QGIS now includes more powerful interactive behaviors for Elevation Profiles, including changing the layer visibility and rendering order on related canvases and linking the project layer tree to the profile plot sources.<br />This functionality is enabled by the introduction of the `QgsLayerTreeCustomNode` class, which enables the representation of application objects (other than layers and groups) in QGIS layer trees.
+### Mogelijkheid: Aangepaste bronnen Hoogteprofiel
+QGIS bevat nu krachtiger interactief gedrag voor hoogteprofielen, inclusief het wijzigen van de zichtbaarheid van de laag en de volgorde van renderen in gerelateerde kaartvensters en het koppelen van de boom met lagen van het project aan de bronnen van de profielplot.<br />Deze functionaliteit wordt ingeschakeld door de introductie van de klasse `QgsLayerTreeCustomNode`, die de weergave inschakelt van objecten van de toepassing (andere dan lagen en groepen) in bomen van lagen in QGIS.
 
 <img src="images/entries/8218225f95e403fe8e543f34b0427561371265b6.png" class="img-responsive img-rounded" />
 
@@ -554,162 +554,162 @@ Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch/
 
 Deze mogelijkheid werd ontwikkeld door [Germap](https://github.com/gacarrillor)
 ## Processing
-### Feature: Native polygon orientation algorithms
-New algorithms for **Force polygons clockwise** (`native:forcecw`) and **Force polygons counter-clockwise** (`native:forceccw`) have been added to processing algorithms.<br />Force polygons clockwise replicates the existing "Force right-hand-rule" operation, and forces polygon geometries to respect the convention where the exterior ring is oriented in a clockwise direction and the interior rings in a counter-clockwise direction.<br />Force polygons counter-clockwise performs the inverse, and forces polygon geometries to respect the convention where the exterior ring is oriented in a counter-clockwise direction and the interior rings in a clockwise direction.
+### Mogelijkheid: Eigen algortimes voor oriëntatie polygonen
+Nieuwe algoritmes voor **Rechterhand-regel forceren met de klok mee** (`native:forcecw`) en **Rechterhand-regel forceren tegen de klok in** (`native:forceccw`) zijn toegevoegd aan de algoritmes voor Processing.<br />Rechterhand-regel forceren met de klok mee kopieert de bestaande bewerking existing "Rechterhand-regel forceren" en forceert geometrieën polygoon om rekening te houden met de conventie waarin de buitenste ring is georiënteerd met de klok mee en de binneste ringen in de richting tegen de klok in.<br />Rechterhand-regel forceren tegen de klok in voert het tegenovergestelde uit en forceert geometrieën polygoon de conventie te respecteren waarin de buitenste ring is georiënteerd in de richting tegen de klok in en de binnenste ringen in de richting met de klok mee.
 
 <img src="images/entries/a0c4136c269a5cd474bdc29e15c26831baa8706f.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Configure model components using an inline panel instead of modal dialogs
-A new configuration panel has been added, docked to the right-hand side of the Processing model designer, which allows editing of model components without the modal dialogs, and replicating the user experience from the Layer Styling Panel. This improves the UX for model editing and prevents model configuration modals from blocking user interaction with other QGIS elements while model components are being edited. Users can still access the dialogs when double-clicking an item.
+### Mogelijkheid: Configureren van modelcomponenten met een inregelig paneel in plaats van modale dialoogvensters
+Een nieuw configuratiepaneel is toegevoegd, vastgezet aan de rechterkant van de modelontwerper van Processing dat het mogelijk maakt modelcomponenten te bewerken zonder de modale dialoogvensters en de gebruikservaring te kopiëren van het paneel Laag opmaken. Dit verbetert de gebruikservaring voor het bewerken van het model en voorkomt dat modalen voor het configureren van modellen de gebruikersinteractie blokkeren met andere elementen van QGIS terwijl modelcomponenten worden bewerkt. Gebruikers hebben nog steeds toegang tot de dialoogvensters door te dubbelklikken op een item.
 
 <img src="images/entries/c6368e5609a680adf719ca6cd1a95739278db0d2.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [City of Canning](https://www.canning.wa.gov.au/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add network analysis validation algorithms
-Two new algorithms useful for validating networks have been added:
+### Mogelijkheid: Algoritmes voor valideren netwerkanalyses toegevoegd
+Twee nieuwe algoritmes die nuttig zijn voor het valideren van netwerken zijn toegevoegd:
 - Netwerk valideren
-- Extract network endpoints
+- Eindpunten van netwerk uitnemen
 
-**Validate network**<br />This algorithm analyzes a network vector layer to identify data and topology errors that may affect network analysis tools (like shortest path). Optional checks include:
-1. Validating the 'Direction' field to ensure all direction field values in the input layer match the configured forward/backward/both values. Errors will be reported if the direction field value is non-null and does not match one of the configured values.
-2. Checking node-to-node separation. This check identifies nodes from the network graph that are closer to other nodes than the specified tolerance distance. This often indicates missed snaps or short segments in the input layer. In the case that a node violates this condition with multiple other nodes, only the closest violation will be reported.
-3. Checking node-to-segment separation: This check identifies nodes that are closer to a line segment (e.g. a graph edge) than the specified tolerance distance, without being connected to it. In the case that a node violates this condition with multiple other edges, only the closest violation will be reported.
+**Netwerk valideren**<br />Dit algoritme analyseert een vectorlaag van een netwerk om gegevens te identificeren en topologiefouten die programma's voor analyses van het netwerk zouden kunnen beïnvloeden (zoals Kortste pad). Optionele controles omvatten:
+1. Valideren van het veld 'Richting' om ervoor te zorgen dat alle veldwaarden voor de richting in de invoerlaag overeenkomen met de geconfigureerde waarden voorwaarts/achterwaarts/beide waarden. Fouten zullen worden gerapporteerd als het veld Richting niet-null is en niet overeenkomt met een van de geconfigureerde waarden.
+2. Controleren van de scheiding knoop-naar-knoop. Deze controle identificeert knopen in de grafiek van het netwerk die dichter bij andere knopen liggen dan de gespecificeerde afstand voor tolerantie. Dit geeft vaak ontbrekend snappen of korte segmenten in de invoerlaag aan. In het geval dat een knoop deze voorwaarde schendt met meerdere andere knopen, zal alleen de dichtstbijzijnde schending worden gerapporteerd.
+3. Controleren van scheiding knoop-naar-segment: Deze controle identificeert knopen die dichter bij een lijnsegment liggen (bijv. de rand van een grafiek) dan de gespecificeerde afstand voor tolerantie, zonder ermee verbonden te zijn. In het geval dat een knoop deze voorwaarde schendt met meerdere andere knopen, zal alleen de dichtstbijzijnde schending worden gerapporteerd.
 
-Two layers are output by this algorithm:
-1. An output containing features from the original network layer that failed the direction validation checks.
-2. An output representing the problematic node locations with an 'error' field explaining the error. This is a line layer, where the output features join the problematic node to the node or segment that failed the tolerance checks.
+Twee lagen worden door dit algoritme uitgevoerd:
+1. Een uitvoer die objecten bevat uit de originele netwerklaag waarvoor de controles voor het valideren van de richting mislukten.
+2. Een uitvoer die de locaties voor de problematische knopen weergeeft met een veld 'error' dat de fout uitlegt. Dit is een lijnenlaag waarbij de uitvoerobjecten de problematische knoop verbinden met de knoop of het segment waarvoor de controles van de tolerantie mislukten.
 
-**Extract network endpoints**<br />This algorithm extracts the endpoints (nodes) from a network line layer. Two definitions are available for identifying endpoints:
-1. Nodes with only all incoming or all outgoing edges: Identifies 'Source' or 'Sink' nodes based on the direction of flow. These are nodes where flow can start (only outgoing) or stop (only incoming).
-2. Nodes connected to a single edge: Identifies topological 'dead-ends' or 'dangles', regardless of directionality. This checks if the node is connected to only one other distinct node.
+**Eindpunten van netwerk uitnemen**<br />Dit algoritme neemt de eindpunten (knopen) van een netwerklijnenlaag uit. Twee definities zijn beschikbaar voor het identificeren van eindpunten:
+1. Knopen met alleen allemaal inkomende of allemaal uitgaande randen: Identificeert knopen 'Bron' of 'Afvoer', gebaseerd op de richting van de stroom. Dit zijn knopen waar de stroom kan beginnen (alleen uitgaand) of stoppen (alleen inkomend).
+2. Knopen die zijn verbonden met een enkele rand: Identificeert topologische 'doodlopende einden' of 'hangers', ongeacht hun richting. Dit controleert of de knoop is verbonden met slechts een andere afzonderlijke knoop.
 
 <img src="images/entries/a26779141bcb3e43adeea67400b4666419f3a17f.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [City of Canning](https://www.canning.wa.gov.au/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add feature preserving raster smoothing algorithm
-This is a port of the Whitebox tool's equivalent algorithm, implementing the logic described in Lindsay, John et al (2019): LiDAR DEM Smoothing and the Preservation of Drainage Features.<br />It is effective at removing surface roughness from DEM) without significantly altering sharp features such as breaks-in-slope, stream banks, or terrace scarps.<br />This makes it superior to standard low-pass filters (e.g., mean, median, Gaussian) or resampling, which often blur distinct topographic features.<br />The algorithm works in three steps:
-1. Calculating surface normal 3D vectors for each grid cell.
-2. Smoothing the normal vector field using a filter that applies more weight to neighbors with similar surface normals (preserving edges).
-3. Iteratively updating the elevations in the DEM to match the smoothed normal field.
+### Mogelijkheid: Mogelijkheid toegevoegd voor het algoritme Behouden gladmaken raster
+Dit is een port van het equivalente algoritme van het programma Whitebox. Het implementeert de logica die wordt beschreven in Lindsay, John et al (2019): LiDAR DEM Smoothing and the Preservation of Drainage Features.<br />Het is effectief in het verwijderen van ruwheid van de oppervlakte in DEM) zonder significant scherpe objecten te veranderen, zoals afbrekingen in hellingen, oevers van stromen, of kliffen van terrassen.<br />Dat maakt het superieur aan standaardfilters met een langzame doorloop (bijv. gemiddelde, mediaan, Gaussiaans) of hersamplen, wat vaak afzonderlijke topografische objecten vervaagt.<br />Het algoritme werkt in drie stappen:
+1. Berekenen van oppervlak normale 3D-vectors voor elke rastercel.
+2. Gladmaken van het normale vectorveld met een filter dat meer gewicht toepast op buren met normalen met een soortgelijk oppervlak (randen behouden).
+3. Iteratief de hoogten in de DEM bijwerken om overeen te komen met het gladgemaakte veld voor de normale.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add native raster gaussian blur algorithm
-Allows applying a gaussian blur to a raster layer
+### Mogelijkheid: Eigen algoritme Gaussiaans vervagen voor raster
+Maakt het mogelijk een filter Gaussiaans vervagen toe te passen op een rasterlaag
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add native total curvature algorithm from the terrain analysis library
-Adds the Total curvature algorithm to Processing. The total curvature filter has existed in the terrain analysis library for years, but it was never exposed in the GUI. It is now exposed to the Processing framework alongside the existing terrain analysis filters.
+### Mogelijkheid: Eigen algortime toegevoegd voor Totale boog uit de bibliotheek voor terreinanalyse
+Voegt het algoritme Totale boog toe aan Processing. Het filter Totale boog bestond al jaren in de bibliotheek voor Terreinanalyse, maar het werd nooit weergegeven in de gebruikersinterface. Het wordt nu weergegeven in het framework Processing, naast de bestaande filters voor terreinanalyse.
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Expose NODATA and raster creation options for outputs in the terrain analysis tools
-Expose output NODATA and raster creation options in the native raster terrain analysis tools (slope, aspect, hillshade, ruggedness index).
+### Mogelijkheid: GEEN GEGEVENS en opties voor maken van raster weergeven voor uitvoer in de gereedschappen voor terreinanalyse
+GEEN GEGEVENS en opties voor maken raster weergeven in uitvoer voor de eigen gereedschappen voor terreinanalyses van rasters (Helling, Aspect, Schaduw voor heuvels, Ruwheidsindex).
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add Dataset Identification GDAL Processing Algorithm
-A new Data Identification algorithm allows for the automated extraction of metadata using GDAL.<br />This algorithm requires GDAL \>= 3.13.0, as it uses the new capabilities of [gdal dataset identify](https://gdal.org/en/stable/programs/gdal_dataset_identify.html).
+### Mogelijkheid: Algoritme voor Processing Dataset identification van GDAL toegevoegd
+Een nieuw algoritme Dataset identification maakt het mogelijk automatisch metadata uit te nemen met GDAL.<br />Dit algoritme vereist GDAL \>= 3.13.0, omdat het de nieuwe mogelijkheden gebruikt van [gdal dataset identify](https://gdal.org/en/stable/programs/gdal_dataset_identify.html).
 
 <img src="images/entries/76dfc1189b899bedaa208692766fc765ccb76175.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Feature: Add a way to specify the raster format in processing algorithm outputs
-This feature allows specifying the output format for rasters using GDAL configuration flags, primarily for enforcing Cloud Optimized GeoTiff outputs.<br />In previous versions, the output format was based on file format extension, which breaks for COG since both GDAL GTiff and COG drivers use the extension of `.tif/.tiff`. Users can now explicitly specify `-of COG` to enforce COG exports.
+### Mogelijkheid: Een manier toegevoegd om de rasterindeling te specificeren in uitvoer van algoritmes van Processing
+Deze mogelijkheid maakt het mogelijk de indeling voor de uitvoer te specificeren voor rasters met vlaggen voor configuratie van GDAL, primair voor het afdwingen van uitvoer voor Cloud Optimized GeoTiff.<br />In eerdere versies was de uitvoerindeling gebaseerd op de extensie van de bestandsindeling, die niet werkt voor COG omdat zowel stuurprogramma's voor GDAL GTiff als voor COG de extensie `.tif/.tiff` gebruiken. Gebruikers kunnen nu expliciet `-of COG` specificeren om exporteren voor COG af te dwingen.
 
 Dit werd mogelijk gemaakt door [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Feature: Show the feature count flowing through a model inside the model designer
-The long-requested ability to show the number of features flowing through the model has been added. The number of features is attached to the link going in and out between the algorithms, and it only applies to vector layers. The display of the feature count can be disabled using the "Show Feature Count" option in the view menu.<br />Note: To be able to display the feature count, the model needs to be run first at least once.
+### Mogelijkheid: Stroom voor telling van objecten door een model weergeven in de Modelontwerpoer
+De langverwachte mogelijkheid om het aantal objecten dat door het model stroomt weer te geven is toegevoegd. Het aantal objecten is verbonden met de koppeling die in en uit tussen de algoritmes gaat, en het is alleen van toepassing op vectorlagen. Het weergeven van het aantal objecten kan worden uitgeschakeld met de optie "Aantal objecten weergeven" in het menu Beeld.<br />Opmerking: Het model moet ten minste eenmaal zijn uitgevoerd, om in staat te zijn de telling voor objecten weer te geven.
 
 <img src="images/entries/468164c721e2407abaf86e0629d35377741dc2a6.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door de Zwitserse QGIS gebruikersgroep
 
 Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
-### Feature: support max-triangle-edge-length in PDAL Export to raster (TIN) algorithm
-Support for max-triangle-edge-length parameter has been added to the PDAL Export to raster (TIN) algorithm, so that triangles where the edge length is bigger than the specified threshold can be ignored.<br />This feature needs PDAL \>= 2.6.0 and wrench \>=1.2.2.
+### Mogelijkheid: Ondersteuning voor max-triangle-edge-length in PDAL-algoritme Export to raster (TIN)
+Ondersteuning voor de parameter max-triangle-edge-length is toegevoegd aan het algoritme van PDAL Export to raster (TIN), zodat driehoeken, waarvan de lengte van de rand groter is dan de gespecificeerde drempel kunnen worden genegeerd.<br />Deze mogelijkheid heeft PDAL \>= 2.6.0 en wrench \>=1.2.2 nodig.
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Model designer update
-The QGIS Model Designer has had a significant update applied to the way in which it handles the input and output values between nodes to provide visual feedback in much more meaningful ways.<br />Individual parameters for node configuration are now exposed, and the connections between values from tools and variables are connected to nodes at the specific parameters where they are input and output accordingly.<br />Parameter Values are color-coded by data type (including generic data types like integer and string, but also complex QGIS-specific types such as vector and raster layers), allowing for enhanced visual indexing and traceability of data operations as they flow through the model.
+### Mogelijkheid: Bijgewerkte Modelontwerper
+De QGIS Modelontwerper is significant bijgewerkt voor de manier waarop het de in- en uitvoerwaarden afhandelt tussen knopen om op veel betere manieren visuele terugkoppeling te geven.<br />Individuele parameters voor configuratie van knoop worden nu weergegeven en de verbindingen tussen waarden uit gereedschappen en variabelen zijn verbonden met de knopen door specifieke parameters waar ze overeenkomstig invoer en uitvoer zijn.<br />Waarden voor parameters zijn kleurgecodeerd op gegevenstype (inclusief algemene gegevenstypen als integer en string, maar ook complexe QGIS-specifieke typen, zoals vector- en rasterlagen. Wat verbeterd visueel indexeren mogelijk maakt en ook de traceerbaarheid van gegevensbewerkingen als die door het model stromen.
 
 <img src="images/entries/92bf8916e1ddc8d0e44b31f130d2029ac93b438f.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Géo2France](https://www.geo2france.fr/portal/public/overview)
 
 Deze mogelijkheid werd ontwikkeld door [Jonathan Lurie](https://github.com/jonathanlurie)
-### Feature: Allow Reproject Layer algorithm to transform Z coordinates
-An optional bool parameter to the *Reproject layer* algorithm has been added that allows for the transformation of Z coordinates.
+### Mogelijkheid: Algoritme Laag opniew projecteren toestaan om coördinaten Z te transformeren
+Een optionele parameter bool voor het algoritme *Laag opnieuw projecteren* is toegevoegd die het mogelijk maakt coördinaten Z te transformeren.
 
 <img src="images/entries/b93161af43e09fc6189680f8f8b323b86555d499.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add algorithm to create Cloud Optimized GeoTiffs from directory source
-A new algorithm for Create Cloud Optimized GeoTIFF has been added that allows the creation of COGs for a set of input raster files provided in a dedicated folder and uses GDAL to perform a bulk conversion of the input files.
+### Mogelijkheid: Algoritme toegevoegd om Cloud Optimized GeoTiffs te maken uit bronmap
+Een nieuw algoritme voor het maken van Create Cloud Optimized GeoTIFF is toegevoegd dat het mogelijk maakt COG's te maken voor een set invoerrasterbestanden die worden verschaft in een aangewezen map en gebruikt GDAL om in bulk de invoerbestanden te converteren.
 
 <img src="images/entries/7a822b6086fbf156b8f3528499f78a5d83eb7b29.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Add SFCGAL approximate medial axis processing algorithm
-A new processing algorithm to approximate medial axis has been added which is based on the newly integrated SFCGAL backend.<br />The Approximate Medial Axis algorithm generates a simplified skeleton of a shape by approximating its medial axis. The output is a collection of lines that follow the central structure of the shape. The result is a thin, stable set of curves that capture the main topology while ignoring noise. This algorithm ignores the Z dimensions. If the geometry is 3D, the approximate medial axis will be calculated from its 2D projection.
+### Mogelijkheid: Algoritme voor Processing SFCGAL Geschatte mediale as toegevoegd
+Een nieuw algoritme voor Processing voor de geschatte mediale as is toegevoegd, dat is gebaseerd op de nieuw geïntegreerde backend SFCGAL.<br />Het algoritme Geschatte mediale as genereert een vereenvoudigd skelet van een vorm door zijn mediale as te schatten. De uitvoer is een collectie lijnen die de centrale structuur van de vorm volgen. Het resultaat is een kleine, stabiele set van bogen die de belangrijkste topologie vastlegt, daarbij ruis negerend. Dit algoritme negeert de dimensie Z. Als de geometrie 3D is, zal de geschatte mediale as worden berekend vanuit zijn 2D-projectie.
 
 <img src="images/entries/0804299923000a846f55b0b8fb0b50e19e3893d5.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
-### Feature: Scale and Resolution settings for WMS extraction
-QGIS now enables Raster Extraction algorithms to work with WMSs requested at a given scale, so that scale-dependent rendering (symbology/labeling) is preserved in the output raster.<br />The improved algorithms are `Clip raster by extent` and `Clip raster by mask layer`.<br />A new advanced options panel is provided on WMS layers when used as a source in these algorithms, which provides options for:
-- **Reference scale**: The scale at which the WMS raster should be requested/rendered.
-- **Service resolution**: The resolution (in DPI) used by the server to render the WMS raster (by default 96 dpi).<br />These changes were enabled by the introduction of the `QgsProcessingRasterLayerDefinition` and `QgsWmsUtils` classes.
+### Mogelijkheid: Instellingen Schaal en Resolutie voor uitnemen van WMS
+QGIS schakelt nu de mogelijkheid in voor algoritmes Raster uitnemen om te werken met WMS'en die op een bepaalde schaal zijn opgevraagd, zodat schaalafhankelijk renderen (symbology/labeling) in het uitvoerraster wordt behouden.<br />De verbeterde algoritmes zijn `Raster op bereik clippen` en `Raster op maskerlaag clippen`.<br />Een nieuw geavanceerd paneel met opties wordt verschaft voor lagen van WMS, als die als een bron worden gebruikt in deze algoritmes, dat opties verschaft voor:
+- **Referentieschaal**: De schaal waarop de WMS-raster zou moeten worden verzocht/gerenderd.
+- **Service resolutie**: De resolutie (in DPI) gebruikt door de server om de WMS-raster te renderen (standaard 96 dpi).<br />Deze wijzigingen werden ingeschakeld door het introduceren van de klassen `QgsProcessingRasterLayerDefinition` en `QgsWmsUtils`.
 
 <img src="images/entries/532bbcaddf65f8d815ecdddd48ed71b067cdb855.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Germap](https://opengis.ch)
-### Feature: Add duplicate features output layer parameter to Delete duplicate geometries Algorithm
-This feature extends the "Delete duplicate geometries" processing algorithm so that the identified duplicate features that are deleted can be extracted and saved as a distinct file for further analysis.
+### Feature: Parameter voor toevoegen duplicaatobjecten aan uitvoerlaag toegevoegd in algoritme Gedupliceerde geometrieën
+Deze mogelijkheid breidt het algoritme voor Processing "Gedupliceerde geometrieën" uit, zodat de geïdentificeerde duplicaatobjecten, die zijn verwijderd, kunnen worden uitgenomen en als afzonderlijk bestand kunnen worden opgeslagen voor verdere analyses.
 
 <img src="images/entries/85ee1e8469a32c107d2bfc08ec468915399689a7.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Add algorithms to filter parts by length/area
-These new algorithms, "Remove parts by length" and "Remove parts by area", filter out parts of geometries from a vector layer by checking their area or length against a minimum size parameter.<br />If the input geometry is a multipart geometry, then the parts will be filtered by their individual sizes. If no parts match the required minimum size, then the feature will be skipped and omitted from the output layer. If the input geometry is a singlepart geometry, then the feature will be skipped if the geometry's size is below the required size and omitted from the output layer. Attributes are not modified.
+### Mogelijkheid: Algoritmes toegevoegd om delen op lengte/gebied te filteren
+Deze nieuwe algoritmes, "Delen op lengte verwijderen" en "Delen op gebied verwijderen", filteren delen van geometrieën uit een vectorlaag door hun gebied of lengte te controleren tegen een parameter voor de minimale grootte.<br />Als de geometrie voor de invoer een geometrie met meerdere delen is, dan zullen de delen worden gefilterd op hun individuele oppervlakten. Als delen niet overeenkomen met de vereiste minimale grootte, dan zal het object worden overgeslagen en worden weggelaten uit de uitvoerlaag. Als de geometrie voor de invoer uit een deel bestaat, dan zal het object worden overgeslagen als de oppervlakte van de geometrie onder de vereiste grootte ligt en worden weggelaten uit de uitvoerlaag. Attributen worden niet aangepast.
 
 <img src="images/entries/a3a539941a16aa0765fd05436e4e7228e3864553.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Add optional destination CRS for Package Layers algorithm
-Allows for layers to be transformed into a specific output CRS, if set.
+### Mogelijkheid: Optioneel doel-CRS toegevoegd voor algoritme Pakketlagen
+Maakt het mogelijk dat lagen worden getransformeerd naar een specifieke uitvoer, indien ingesteld.
 
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Package Layers algorithm - only export features intersecting a given extent
-An optional parameter for `Extent` has been added to the Package Layers algorithm, allowing users to only export features that intersect a given extent from all the selected layers. If none of the features of a specific selected layer intersect the given extent, the layer will still be created and will be empty in the output GeoPackage.
+### Mogelijkheid: Algoritme Pakketlagen - alleen objecten exporteren die kruisen met een opgegeven bereik
+Een optionele parameter voor `Bereik` is toegevoegd aan het algoritme Pakketlagen. Dat geeft gebruikers de mogelijkheid om alleen objecten te exporteren die kruisen met een opgegeven bereik uit alle geselecteerde lagen. Als geen van de objecten van een specifieke geselecteerde laag kruist met het opgegeven bereik, zal de laag toch worden gemaakt en zal leeg zijn in het GeoPackage van de uitvoer.
 
 <img src="images/entries/33644c3a135003c6e8df79e9eda8878004b6ea28" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Germap](https://github.com/gacarrillor)
-### Feature: Unlimited model canvas size in the model designer
-Previous versions of the QGIS model designer had a fixed canvas size of 4000 x 4000, and new models were started at the top left of the canvas, which could lead to frustration when elements went out of bounds. The QGIS model builder will now dynamically manage the scroll area and enable a much smoother user experience.
+### Mogelijkheid: Onbeperkte grootte kaartvenster model in de Modelontwerper
+Eerdere versies van de modelontwerper van QGIS hadden een vaste grootte voor het kaartvenster van 4000 x 4000, en nieuwe modellen werden begonnen aan de linkerbovenkant van het kaartvenster, wat tot frustratie zou kunnen leiden als elementen buiten de grenzen terechtkwamen. De modelbouwer van QGIS zal nu dynamisch het scrollgebied beheren en een veel gladdere gebruikservaring inschakelen.
 
 <img src="images/entries/6347778c8c50b9fa330e4985d19b980c2c8b676f.png" class="img-responsive img-rounded" />
 
@@ -717,18 +717,18 @@ Dit werd mogelijk gemaakt door Hauts-de-France region
 
 Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
 ## Opties voor toepassing en projecten
-### Feature: OAuth2 auto refresh
-QGIS now includes an auto-refresh mechanism for OAuth2 connections.<br />A cache cleanup to stop the auto refresh is triggered periodically, and when a layer is removed from the project. This is required to avoid unnecessary, endless refreshing of unused tokens.
+### Mogelijkheid: OAuth2 automatisch vernieuwen
+QGIS bevat nu een mechanisme voor automatisch vernieuwen van verbindingen voor OAuth2.<br />Een opruimactie van de cache om het automatisch vernieuwen te stoppen wordt periodiek geactiveerd, en wanneer een laag is verwijderd uit het project. Dit is vereist om onnodig, eindeloos vernieuwen van niet-gebruikte tokens te vermijden.
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Project trust for embedded code enhancement
-QGIS now includes a project-level "trust" mechanism that grants or denies execution of embedded Python code within projects. This is implemented in line with the [Trusted Projects and Folders QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-336-trusted-projects-and-folders.md).<br />As established in the QEP, the embedded code types covered are:
-- macros;
-- expression functions;
-- actions; and
-- attribute form init code
+### Mogelijkheid: Project vertrouwen voor verbetering ingebedde code
+QGIS bevat nu een mechanisme voor "vertrouwen" op projectniveau dat de uitvoering van ingebedde code voor Python in projecten toestaat of verbiedt. Dit is geïmplementeerd in lijn met de [Trusted Projects and Folders QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-336-trusted-projects-and-folders.md).<br />Zoals vastgesteld in de QEP, zijn de behandelde ingebedde typen voor code:
+- macro's;
+- expressiefuncties;
+- acties; en
+- init code voor attributenformulier 
 
-This gives users the ability to allow for granular code execution at the project level instead of global settings limited only by user profile configuration.<br />QGIS will provide users with a project trust dialog to offer the user generic information on what features to allow as well as preview code accordingly. Global settings are provided to allow or deny execution of features at project and path levels.
+Dit geeft gebruikers de mogelijkheid om het uitvoeren van code fijn af te stemmen op projectniveau, in plaats van globale instellingen die alleen worden beperkt door de configuratie van het gebruikersprofiel.<br />QGIS zal gebruikers een dialoogvenster voor vertrouwen voor het project verschaffen om de gebruiker algemene informatie te geven over welke mogelijkheden toe te staan. En ook om overeenkomstig een voorbeeld van de code te zien. Globale instellingen worden verschaft om het uitvoeren van de mogelijkheden op niveaus van project en pad toe te staan of te verbieden.
 
 <img src="images/entries/8325ef4b8268626c5af3c9699370dbeb6faedcd4.png" class="img-responsive img-rounded" />
 
