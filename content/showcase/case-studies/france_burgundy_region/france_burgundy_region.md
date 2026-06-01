@@ -19,9 +19,8 @@ area surrounding the commune of Uxeau, in Southern Burgundy, which is a
 rich and resilient landscape that has maintained productivity and
 stability for an extended period.
 
-![](./images/france_burgundy.jpg){.align-left .Our .research .area .in
-.Southern .Burgundy, .France. .This .research .was .done .in .and
-.around .the .commune .of .Uxeau, .shown .at .center .right.}
+![Our research area in Southern Burgundy, France. This research was done in and
+around the commune of Uxeau, shown at center right.](./images/france_burgundy.jpg){.align-left}
 
 ## Our Project and how QGIS is used
 
