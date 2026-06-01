@@ -29,7 +29,7 @@ A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, 
 ### QGIS for Ecologists
 An Introduction to Mapping for Ecological Surveys
 - [https://pelagicpublishing.com/products/qgis-for-ecologists](https://pelagicpublishing.com/products/qgis-for-ecologists)
-- Author: Stephanie Kim Miles
+- Autore: Stephanie Kim Miles
 - Date: October 2024
 
 ### Collecting Field Data with QGIS and Mergin Maps

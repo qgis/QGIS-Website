@@ -60,8 +60,8 @@ I gruppi QGIS del tuo paese, rappresentano il luogo ideale per incontrare e cond
 See [User Groups]({{< ref "community/groups" >}}) to read more about local user groups.
 ## Security Vulnerability Reporting
 If you believe you have found a security issue, such as vulnerabilities in QGIS or its dependencies, please refer to the [security page]({{< ref "resources/support/security" >}}) for detailed information on how to report it responsibly.
-## Project Steering Committee (PSC)
-If you need to contact someone in the QGIS Project Steering Committee (PSC) for legal, trademark, funding, or administrative matters **(not for general support requests)**, please use the following mailing list or email address:
+## Comitato direttivo del progetto (PSC)
+Se hai bisogno di contattare un membro del Comitato direttivo del progetto QGIS (PSC) per questioni legali, relative ai marchi, ai finanziamenti o di natura amministrativa **(non per richieste di assistenza generale)**, ti preghiamo di utilizzare la seguente mailing list o l'indirizzo e-mail:
 
 {{<rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="QGIS PSC mailing list" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 

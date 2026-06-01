@@ -1436,7 +1436,7 @@ Dit is een verbetering in de API en is niet zichtbaar voor de grootste meerderhe
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://api.github.com/users/alexbruy)
 ### Mogelijkheid: Typen parameter voor Processing voor databaseschema en tabelnaam toegevoegd
-Vervangt het eerdere ad-hoc Python wrappers voor de widget PostGIS door juiste eerste klasse C++ toegewezen parameters voor schema's en tabellen, met wrappers die zijn gebouwd vanuit de bron-API voor verbindingen.
+Vervangt de eerdere ad hoc Python wrappers voor de widget PostGIS door juiste eerste klasse C++ toegewezen parameters voor schema's en tabellen, met wrappers die zijn gebouwd vanuit de bron-API voor verbindingen.
 
 Refs NRCan Contract#3000707093
 

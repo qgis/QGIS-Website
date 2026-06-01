@@ -275,7 +275,7 @@ Een nieuwe geavanceerde parameter is beschikbaar voor enkele gereedschappen van 
 Dit werd mogelijk gemaakt door Orange Telecom FR
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://github.com/lbartoletti)
-### Mogelijkheid: Verbeterde algortimes \"Make Valid\"
+### Mogelijkheid: Verbeterde algoritmes \"Make Valid\"
 QGIS kan nu de nieuwere verfijnde methoden voor GEOS 3.10+ gebruiken voor valideren en repareren van objecten geometrie.
 
 ![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.webp)

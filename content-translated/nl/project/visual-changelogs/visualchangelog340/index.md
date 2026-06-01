@@ -252,7 +252,7 @@ Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com)
 ## Diagrammen
 ### Mogelijkheid: Introduceren van gestapelde diagrammen
-Gestapelde diagrammen geven een methode voor het structureren van meerdere aanliggende (horizontale of verticale) gestapelde "Subdiagrammen" voor een enkel object, wat een methode verschaft voor het maken van complexe diagramobjecten, zoals bevolkingspyramiden.
+Gestapelde diagrammen geven een methode voor het structureren van meerdere aanliggende (horizontale of verticale) gestapelde "Subdiagrammen" voor een enkel object, wat een methode verschaft voor het maken van complexe diagramobjecten, zoals bevolkingspiramiden.
 
 De implementatie introduceert meerdere nieuwe instellingen voor het configureren van diagram en subdiagram, en heeft het modale dialoogvenster voor instellingen van het diagram gemigreerd naar de dockwidget Laag opmaken.
 

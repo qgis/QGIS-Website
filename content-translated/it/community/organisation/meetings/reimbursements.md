@@ -24,6 +24,6 @@ If you are a contributor to the project (to either code, documentation, translat
 
 In caso di dubbi
 -
-Il comitato di verifica del progetto (PSC) deve fornire l'arbitrato per qualsiasi richiesta, reclamo o ricorso relativo alle richieste di finanziamento da parte dei singoli sviluppatori. Nel caso in cui il PSC è chiamato per arbitrare, deve essere proposta una risoluzione ed i membri PSC devono votare utilizzando il sistema di -1/0/+1 per indicare, rispettivamente, il dissenso, l'astensione o l'assenso. In caso di parità, il Presidente PSC prenderà la decisione finale. La decisione del PSC è definitiva.
+Il comitato direttivo del progetto (PSC) deve fornire l'arbitrato per qualsiasi richiesta, reclamo o ricorso relativo alle richieste di finanziamento da parte dei singoli sviluppatori. Nel caso in cui il PSC è chiamato per arbitrare, deve essere proposta una risoluzione ed i membri PSC devono votare utilizzando il sistema di -1 / 0 / +1 per indicare, rispettivamente, il dissenso, l'astensione o l'assenso. In caso di parità, il Presidente PSC prenderà la decisione finale. La decisione del PSC è definitiva.
 
 {{<content-end >}}

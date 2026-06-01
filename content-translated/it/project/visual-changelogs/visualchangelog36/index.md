@@ -835,7 +835,7 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 ### Feature: Bug fixes by Julien Cabieces
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
-| QGis 3.4 reproducible crash while in idle state | [#20581](https://issues.qgis.org/issues/20581) | [PR #8988](https://github.com/qgis/QGIS/pull/8988) and [PR #9019](https://github.com/qgis/QGIS/pull/9019) | [PR #9027](https://github.com/qgis/QGIS/pull/9027) and [direct commit](https://github.com/qgis/QGIS/commit/9ea7f1efa44c47d4070a1623b18059014e658017) |
+| QGis 3.4 reproducible crash while in idle state | [#20581](https://issues.qgis.org/issues/20581) | [PR #8988](https://github.com/qgis/QGIS/pull/8988) e [PR #9019](https://github.com/qgis/QGIS/pull/9019) | [PR #9027](https://github.com/qgis/QGIS/pull/9027) e [commit diretto](https://github.com/qgis/QGIS/commit/9ea7f1efa44c47d4070a1623b18059014e658017) |
 | crash at processing\....qgis:snapgeometries | [#18497](https://issues.qgis.org/issues/18497) | [PR #8966](https://github.com/qgis/QGIS/pull/8966) | [PR #9010](https://github.com/qgis/QGIS/pull/9010) |
 | QgsExternalResourceWidgetWrapper crashes | [#20140](https://issues.qgis.org/issues/20140) | Duplicato |  |
 | Crash on vector edit (that has the 4326 CRS) is reprojected in CRS 3857 | [#19579](https://issues.qgis.org/issues/19579) | [proposed a libspatialindex PR](https://github.com/libspatialindex/libspatialindex/pull/126) |  |
@@ -855,7 +855,7 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/)
 | Remove old settings for vertex markers | [#17366](https://issues.qgis.org/issues/17366) | Works as intended |  |
 | Snapping options in meters rounded to integers | [#20829](https://issues.qgis.org/issues/20829) | [PR #9168](https://github.com/qgis/QGIS/pull/9168) |  |
 | Add the possibility to return a shp if ogr is not compiled with gpkg | unreported | [PR #9037](https://github.com/qgis/QGIS/pull/9037) |  |
-| fix qgsRound for negative numbers | [#20861](https://issues.qgis.org/issues/20861) | [PR #9030](https://github.com/qgis/QGIS/pull/9030) and [PR #9025](https://github.com/qgis/QGIS/pull/9025) |  |
+| fix qgsRound for negative numbers | [#20861](https://issues.qgis.org/issues/20861) | [PR #9030](https://github.com/qgis/QGIS/pull/9030) e [PR #9025](https://github.com/qgis/QGIS/pull/9025) |  |
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
@@ -872,7 +872,7 @@ This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
 | QGIS3: SagaUtils.py fails when comman contains non-latin characters | [#18617](https://issues.qgis.org/issues/18617) | [PR #8968](https://github.com/qgis/QGIS/pull/8968) |  |
 | \[processing\] Wrong management of locale in output result path | [#19351](https://issues.qgis.org/issues/19351) | [PR #8968](https://github.com/qgis/QGIS/pull/8968) |  |
 | \[processing\] SAGA algorithms cannot produce non-shp output | [#21089](https://issues.qgis.org/issues/21089) | [PR #9002](https://github.com/qgis/QGIS/pull/9002) |  |
-| Extent selector shows layers with no spatial component (geometryless tables) | [#21129](https://issues.qgis.org/issues/21129) | [PR #9034](https://github.com/qgis/QGIS/pull/9034) (updated by Nyall in [PR #9038](https://github.com/qgis/QGIS/pull/9038)) |  |
+| Extent selector shows layers with no spatial component (geometryless tables) | [#21129](https://issues.qgis.org/issues/21129) | [PR #9034](https://github.com/qgis/QGIS/pull/9034) (aggiornato da Nyall in [PR #9038](https://github.com/qgis/QGIS/pull/9038)) |  |
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 

@@ -406,7 +406,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 ### Add \"main_angle\" function to return the estimated main angle of a geometry
 Returns the angle of the oriented minimum bounding box which covers the geometry value.
 
-Useful for data defined overrides in the symbology of label expressions, e.g. to rotate labels to match the overall angle of a polygon, and similar for line pattern fill. ![image33](images/entries/87367553-aae7d680-c5be-11ea-923a-e81200f2b90c.gif)
+Utile per le sostituzioni definite dai dati nella simbologia delle etichette, ad esempio per ruotare le etichette in modo che corrispondano all'angolo complessivo di un poligono, e analogamente per il riempimento con motivi lineari. ![image33](images/entries/87367553-aae7d680-c5be-11ea-923a-e81200f2b90c.gif)
 
 ![image34](images/entries/03463ac0a8303444d94806fb2ff66d6a73c56ccb.webp)
 
@@ -448,7 +448,7 @@ The user can use the keyboard shortcut **Ctrl+Shift+G** to switch between linear
 
 For splitting features, new overloading methods have been added to the API. When splitting, curves are preserved. For this, the curve is segmentized before splitting, and all the split features are \"de-segmentized\" after splitting.
 
-A toolbar button was added to enable switching between linear/circular: ![image37](images/entries/88101713-6505b200-cb6c-11ea-9feb-68a4130d6f52.gif)
+È stato aggiunto un pulsante sulla barra degli strumenti per consentire il passaggio dalla visualizzazione lineare a quella circolare: ![image37](images/entries/88101713-6505b200-cb6c-11ea-9feb-68a4130d6f52.gif)
 
 ![image38](images/entries/86938423-6a93de80-c10e-11ea-8511-489d8b4f006f.gif)
 
@@ -461,7 +461,7 @@ This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcl
 ### Rescale raster algorithm for Processing
 Adds a rescale raster algorithm to change raster value range, whilst preserving the shape of the raster\'s histogram. Useful for when rasters from different sources should be compared or processed together and their pixel values should be in the same range. By default, the algorithm preserves the NODATA value of the input raster but there is an option to override it.
 
-The following image displays a histogram of a DEM (value range is 85-243) ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.webp) And the next image displays a histogram of same DEM rescaled to the range 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.webp)
+L'immagine seguente mostra un istogramma di un DEM (intervallo di valori compreso tra 85 e 243) ![image41](images/entries/86897604-53ee8700-c110-11ea-99ae-540d38f88154.webp) E l'immagine successiva mostra un istogramma dello stesso DEM riscalato all'intervallo 100-1000 ![image42](images/entries/86897671-67015700-c110-11ea-8183-e0d6bd013dbb.webp)
 
 Addresses [Issue 26099](https://github.com/qgis/QGIS/issues/26099).
 

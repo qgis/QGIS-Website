@@ -70,7 +70,7 @@ Obtaining permission is not a formal endorsement of your QGIS related project an
 {{<rich-content-end >}}
 
 {{<rich-box-end >}}
-* **Product names**: If you plan to market a QGIS-based product or service to the public using a trademark or name that includes the word “QGIS”, such as “YourCompany QGIS” you are required to apply for and obtain a permission from the QGIS Project Steering Committee (QGIS-PSC). This is true whether or not you apply to register your trademark with a government. When developing and advertising QGIS-based products, we ask you to follow these guidelines:
+* **Nomi di prodotti**: Se si prevede di commercializzare al pubblico un prodotto o servizio basato su QGIS utilizzando un marchio o un nome che include la parola "QGIS", come "YourCompany QGIS", è necessario richiedere e ottenere un'autorizzazione dal Comitato direttivo del progetto QGIS (QGIS-PSC). Questo vale sia che tu faccia o meno richiesta di registrazione del tuo marchio presso un ente pubblico. Quando si sviluppano e pubblicizzano prodotti basati su QGIS, ti chiediamo di seguire le seguenti linee guida:
   1. **Don’t present your work as our work**: If you provide a customized QGIS version, make it clear that your offer is a derivative product, and not the official QGIS version. Do this by adding your company or brand name to the product name and accompanying text explaining that your product is a derivative as needed.
   2. **Don’t present our work as your work**: Give credit to the QGIS project where due. Don’t hide the fact that your product is based on QGIS.
   3. **Good product name examples include**:
@@ -122,7 +122,7 @@ QGIS does not permit using any of our Marks in the following manner:
 ## Examples of unacceptable uses
 1. **Fake affiliation/endorsement**: You cannot use the QGIS trademark in anyway that suggests an affiliation with or endorsement by the QGIS project or community, if the same is not true.
 2. **Nomi di società**: Non è possibile utilizzare il marchio QGIS in un nome di un'azienda o di un'organizzazione commerciale.
-3. **Marchi simili che possono dare adito a confusione**: Non è possibile utilizzare un nome che sia confusamente simile al marchio QGIS.
+3. **Marchi simili che possono dare adito a confusione**: Non è possibile utilizzare un nome che sia simile al marchio QGIS punto da creare confusione.
 
 ## If in doubt, find out!
 Molte domande trovano risposta nelle FAQ qui sotto. Se non riesci a trovare una risposta alla tua domanda, contatta il nostro consulente finanziario e di marketing (trademark@qgis.org).

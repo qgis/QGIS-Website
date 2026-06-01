@@ -85,7 +85,7 @@ You will be able to set the project temporal range either by using manual input 
 
 This implementation sets the stage for adding an animation feature for temporal layers in QGIS.
 
-Here\'s an example of setting the project temporal range. ![image5](images/entries/74980472-93f2ed00-5441-11ea-8765-f35d1f69b144.gif)
+Ecco un esempio di come impostare l'intervallo temporale del progetto. ![image5](images/entries/74980472-93f2ed00-5441-11ea-8765-f35d1f69b144.gif)
 
 Prior discussions about QGIS temporal support can be found [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/161) and [here](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/128).
 
@@ -97,7 +97,7 @@ This feature adds the ability to constrain WMS Temporal (WMS-T) layers inside QG
 
 This implementation lets the user specify the required DateTime range on the layer from the source tab on the layer properties dialog.
 
-Below is an example of the workflow. ![image6](images/entries/74638436-ee0f5c00-517c-11ea-938e-cec23c61ba29.gif)
+Di seguito è riportato un esempio del flusso di lavoro. ![image6](images/entries/74638436-ee0f5c00-517c-11ea-938e-cec23c61ba29.gif)
 
 **Note:** *For instant point in time requests, specifying a range with equal begin and end DateTime will result into using the specified DateTime instant and not a range.*
 
@@ -214,8 +214,8 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 This feature adds the ability to automatically place labels outside of polygon features.
 
 This is exposed in a number of ways:
-1. A new placement mode which always places polygon labels for the layer outside the features: ![image23](images/entries/80680381-faf7e680-8b01-11ea-8612-b0f543bfd943.webp) ![image24](images/entries/80680391-00553100-8b02-11ea-8e56-21b57964f765.webp)
-2. When using other polygon placement modes, a new checkbox \"Allow placing labels outside of polygons\" can be checked to allow labels to be placed outside when it isn\'t possible to place them inside the polygon: ![image25](images/entries/80680478-30043900-8b02-11ea-8bd5-3325fc0a5021.webp) ![image26](images/entries/80680488-37c3dd80-8b02-11ea-98bb-e0882e6ab9ab.webp)
+1. Una nuova modalità di posizionamento che posiziona sempre le etichette dei poligoni del livello all'esterno degli elementi: ![image23](images/entries/80680381-faf7e680-8b01-11ea-8612-b0f543bfd943.webp) ![image24](images/entries/80680391-00553100-8b02-11ea-8e56-21b57964f765.webp)
+2. Quando si utilizzano altre modalità di posizionamento dei poligoni, è possibile selezionare la nuova casella di controllo \"Consenti il posizionamento delle etichette all'esterno dei poligoni\" per consentire il posizionamento delle etichette all'esterno qualora non fosse possibile collocarle all'interno del poligono: ![image25](images/entries/80680478-30043900-8b02-11ea-8bd5-3325fc0a5021.webp) ![image26](images/entries/80680488-37c3dd80-8b02-11ea-98bb-e0882e6ab9ab.webp)
 
 The \"allow placing labels outside\" checkbox can be data defined, allowing users to either allow outside labels, prevent outside labels, or force outside labels on a feature-by-feature basis.
 
@@ -355,7 +355,7 @@ The time in a mesh layer is defined by :
 ```
 The class **QgsMeshDataprovidertemporalCapabilities** stores the reference time provided by the data and all the relative times of the dataset. This class has the ability to return dataset index from a dataset group index and a relative time since the reference time. The reference time (which can be different than the provider reference time) and the absolute time extent are stored in the class **QgsMeshTemporalProperties**
 
-The temporal settings in the properties widget are only the reference time and the provider time unit: ![image36](images/entries/77871643-bf23e580-7212-11ea-9b92-82c906c19c22.webp)
+Le impostazioni temporali nel pannello delle proprietà riguardano esclusivamente l'ora di riferimento e l'unità di misura del tempo del provider: ![image36](images/entries/77871643-bf23e580-7212-11ea-9b92-82c906c19c22.webp)
 
 The default reference time of the layer is set by (sorted by priority):
 - From the data provider if defined in data
@@ -368,7 +368,7 @@ The 2D and 3D renderers access the active dataset index from the layer with the 
 
 The data are brought from the provider with the dataset index.
 #### Static dataset
-There is also the option to set a static dataset, that is to choose a dataset that will be rendered independently of the QGIS time controller. To do that the user can check the check box at the bottom of the temporal page of the properties widget: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.webp) For now, as it was simpler to implement and allows the required dataset to be chosen directly, the user can independently choose scalar dataset and vector dataset from combo boxes with the time associated for each dataset (relative time for data without reference time). If required, a unique time could be implemented but that could lead to inconsistent results with non synchronous datasets. The static dataset settings are in the temporal page but can be easily put in the source page if wanted.
+È inoltre possibile impostare un set di dati statico, cioè scegliere un set di dati che verrà visualizzato indipendentemente dal controller temporale di QGIS. Per farlo, l'utente può selezionare la casella di controllo nella parte inferiore della pagina temporale del widget delle proprietà: ![image37](images/entries/77871772-20e44f80-7213-11ea-8988-a51ec78c1320.webp) Per ora, poiché era più semplice da implementare e permette di scegliere direttamente il dataset richiesto, l'utente può scegliere in modo indipendente il dataset scalare e il dataset vettoriale dalle caselle combinate con il tempo associato a ciascun dataset (tempo relativo per i dati senza tempo di riferimento). Se necessario, si potrebbe implementare un tempo unico, ma ciò potrebbe portare a risultati incoerenti con i dataset non sincroni. Le impostazioni del dataset statico si trovano nella pagina temporale, ma possono essere facilmente inserite nella pagina sorgente se lo si desidera.
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
@@ -378,7 +378,7 @@ Resampling is available for datasets defined on faces, e.g. the value on vertice
 
 This feature implements resampling from values on vertices to values on faces using the neighbor average method.
 
-The default method is set to \"none\" for resampling from vertices to faces and to \"neighbor average\" for resampling from faces to vertices. Then the default rendering is always smooth. ![image38](images/entries/77320848-acc41c00-6ce7-11ea-85af-2bff553ecbb5.gif)
+Il metodo predefinito è impostato su \"nessuno\" per il ricampionamento dai vertici alle facce e su \"media dei vicini\" per il ricampionamento dalle facce ai vertici. In questo modo, la visualizzazione predefinita risulta sempre uniforme. ![image38](images/entries/77320848-acc41c00-6ce7-11ea-85af-2bff553ecbb5.gif)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Coloring mesh vector dataset with color ramp shader
@@ -396,7 +396,7 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 ### Feature: Save style for mesh layer
 This feature adds the option for saving a mesh layer style in a qml file, as utilised for vector and raster layers.
 
-The feature also refactors the raster and vector layer properties menu style. ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.webp)
+Questa funzionalità ridefinisce inoltre lo stile del menu delle proprietà dei layer raster e vettoriali. ![image42](images/entries/76421493-1fdda200-637a-11ea-9e4b-71a596b18dd9.webp)
 
 This feature was funded by [Artelia Group](https://www.arteliagroup.com/en)
 
@@ -408,7 +408,7 @@ Initial implementation of [Support of 1D elements in Mesh Layers](https://github
 
 1D Meshes consist of vertices and edges. An edge connects two vertices and can have assigned data (scalars or vectors) on it. The 1D mesh network can, for example, be used for modelling an urban drainage system.
 
-There are new options to display 1D mesh (edges) in the mesh frame tab ![image43](images/entries/75885078-2aea7c80-5e26-11ea-8435-eef74afce7b7.webp)
+Nella scheda struttura mesh sono disponibili nuove opzioni per visualizzare la mesh 1D (spigoli)![image43](images/entries/75885078-2aea7c80-5e26-11ea-8435-eef74afce7b7.webp)
 
 Also for data on 1D mesh (edges or vertices) there are new options in the contours tab
 
@@ -434,11 +434,11 @@ A new tab in the mesh layer properties widget allows the user to change the sett
 
 ![image45](images/entries/74750757-9e936380-5242-11ea-98cf-a0e3e6694831.webp)
 
-This feature allows the speeding up of rendering as shown in these tables (result in milliseconds) : ![image46](images/entries/74750903-d69aa680-5242-11ea-9be3-0af7b2beacaf.webp)
+Questa funzione consente di velocizzare la visualizzazione, come illustrato nelle tabelle seguenti (risultati in millisecondi): ![image46](images/entries/74750903-d69aa680-5242-11ea-9be3-0af7b2beacaf.webp)
 
-Demo GIF Before: ![image47](images/entries/74751034-0cd82600-5243-11ea-8a02-de78a337f299.gif)
+Demo GIF prima: ![image47](images/entries/74751034-0cd82600-5243-11ea-8a02-de78a337f299.gif)
 
-After: ![image48](images/entries/74751042-12357080-5243-11ea-80cb-2a3217d03a78.gif)
+Dopo: ![image48](images/entries/74751042-12357080-5243-11ea-80cb-2a3217d03a78.gif)
 
 This feature was funded by [BMT](https://www.bmt.org/)
 
@@ -453,7 +453,7 @@ In the same way, the color of arrows are defined in the 2D rendering settings fo
 
 In 3D settings, the user can define the spacing of arrows and if size is fixed or scaled on magnitude.
 
-This spacing setting also defines the maximum size of arrows because arrows can\'t overlap. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
+Questa impostazione di spaziatura definisce anche la dimensione massima delle frecce, poiché queste non possono sovrapporsi. ![image49](images/entries/76225819-6a80e200-61f3-11ea-88da-43e70c358530.webp)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ## Layout di stampe
@@ -505,13 +505,13 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 ### Feature: Add subdivisions in ticks scalebar right segments
 Adds the ability to create subdivisions for segments included in the right part of the ticks scalebar.
 
-Line Ticks Up ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.webp)
+Tacche linea in alto ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.webp)
 
-Line Ticks Middle ![image52](images/entries/80860663-6c9e7480-8c69-11ea-94a3-8d0e8544867d.webp)
+Tacche linea in mezzo ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.webp)
 
-Line Ticks Down ![image53](images/entries/80860675-7b852700-8c69-11ea-984d-584eff1e3c95.webp)
+Tacche linea in basso ![image51](images/entries/80860629-47116b00-8c69-11ea-83d8-61f27cb77e68.webp)
 
-Scalebar item properties - Segments groupbox ![image54](images/entries/81009703-653bbe80-8e55-11ea-9286-4850b32edb23.webp)
+Proprietà oggetto barra di scala - Casella di gruppo segmenti ![image54](images/entries/81009703-653bbe80-8e55-11ea-9286-4850b32edb23.webp)
 
 The behaviour related to the segments on the left side of the scalebar is unchanged.
 
@@ -521,7 +521,7 @@ Allows users to override the symbol patch size for individual legend nodes, by d
 
 Width and height can be individually overridden, with the node falling back to the default width or height when the override isn\'t set.
 
-Sponsored by SLYR ![image55](images/entries/80325577-0edce780-8879-11ea-82bd-8f323a4c68ab.gif)
+Sponsorizzato da SLYR ![image55](images/entries/80325577-0edce780-8879-11ea-82bd-8f323a4c68ab.gif)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ### Feature: Allow control over the horizontal spacing before legend group/subgroup/symbols
@@ -1163,7 +1163,7 @@ Sponsored by SLYR
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
 ## Sorgenti Dati
 ### Feature: Allow adding attributes in the New Scratch Layer dialog
-Allows the user to add attributes directly in the New Scratch Layer dialog making it more consistent with other dialogs like New Shapefile/Geopackage. ![image108](images/entries/81394331-76711d80-912a-11ea-8b86-4f2789adff08.webp)
+Consente all'utente di aggiungere attributi direttamente nella finestra di dialogo "Nuovo layer temporaneo", rendendola più coerente con altre finestre di dialogo come "Nuovo Shapefile/Geopackage". ![image108](images/entries/81394331-76711d80-912a-11ea-8b86-4f2789adff08.webp)
 
 It is still possible to create a scratch layer without any attributes by not adding any fields to the list.
 
@@ -1363,7 +1363,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 ### Feature: Vector tile layer - part 1
 This is the initial work on vector tile layer support.
 
-![image118](images/entries/77539757-2d2e7c80-6ea2-11ea-9098-c6c0924f9d59.webp) (The red lines are not rendering artifacts, they are drawn intentionally to show tile borders.)
+![image118](images/entries/77539757-2d2e7c80-6ea2-11ea-9098-c6c0924f9d59.webp) (Le linee rosse non sono difetti di visualizzazione, ma sono state tracciate appositamente per evidenziare i bordi dei tasselli.)
 ### Riassunto
 So far this only includes changes to the qgis_core library.
 

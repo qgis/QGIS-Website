@@ -52,7 +52,7 @@ Gestione github
 
 **Rights depending on sub project plz contact** Marco B, Alessandro P, Tim S, Richard D
 
-Gruppo Flickr
+Gruppi Flickr
 -
 {{<rich-list listLink="http://www.flickr.com/groups/qgis/pool/" layoutClass="half" listTitle="Screenshots" listSubtitle="http://www.flickr.com/groups/qgis/pool/" >}}
 
@@ -80,7 +80,7 @@ IRC
 -
 **Responsible:** Jurgen F
 
-Planet feeds
+feeds di Planet
 -
 **Responsible:** Tim S, Marco B
 

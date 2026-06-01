@@ -800,7 +800,7 @@ Bugs fixed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 | Fix hovering features in attribute table in dark themes selects them | [#48914](https://github.com/qgis/QGIS/issues/48914) | [PR #48986](https://github.com/qgis/QGIS/pull/48986) | [PR #49001](https://github.com/qgis/QGIS/pull/49001) |
 | Fix atlas expression context is not available when rendering item overview frames | [#48963](https://github.com/qgis/QGIS/issues/48963) | [PR #48967](https://github.com/qgis/QGIS/pull/48967) | [PR #48984](https://github.com/qgis/QGIS/pull/48984) |
 | Fix regression where layout attribute table conditional styles don\'t apply | [#48965](https://github.com/qgis/QGIS/issues/48965) | [PR #48968](https://github.com/qgis/QGIS/pull/48968) | [PR #48973](https://github.com/qgis/QGIS/pull/48973) |
-| Review and finish open PR [PR #48314](https://github.com/qgis/QGIS/pull/48314) |  |  |  |
+| Rivedere e chiudere la PR aperta [PR #48314](https://github.com/qgis/QGIS/pull/48314) |  |  |  |
 | Fix geometry based expression attributes for diagrams | [#47800](https://github.com/qgis/QGIS/issues/47800) | [PR #48893](https://github.com/qgis/QGIS/pull/48893) | [PR #48911](https://github.com/qgis/QGIS/pull/48911) |
 | Fix loss of precision when an extent is manually entered in processing extent widgets | [#48887](https://github.com/qgis/QGIS/issues/48887) | [PR #48895](https://github.com/qgis/QGIS/pull/48895) | [PR #48910](https://github.com/qgis/QGIS/pull/48910) |
 | Fix some undersized icons on hidpi displays | unreported | [PR #48875](https://github.com/qgis/QGIS/pull/48875) | Not appropriate |
@@ -819,7 +819,7 @@ Bugs fixed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 | Show pinned label highlights also for pinned curved labels | [#48753](https://github.com/qgis/QGIS/issues/48753) | [PR #48764](https://github.com/qgis/QGIS/pull/48764) | N/D |
 | Don\'t hide parts of the mesh renderer widget if the layer is invalid | unreported | [PR #48757](https://github.com/qgis/QGIS/pull/48757) |  |
 | Add layer opacity widget in mesh layer renderer properties widget | unreported | [PR #48756](https://github.com/qgis/QGIS/pull/48756) |  |
-| Review and finish open PR [PR #44941](https://github.com/qgis/QGIS/pull/44941) |  |  |  |
+| Rivedere e chiudere la PR aperta [PR #44941](https://github.com/qgis/QGIS/pull/44941) |  |  |  |
 | Fix a crash when QgsProject::instance() is accessed when no QgsApplication exists | unreported | [PR #48721](https://github.com/qgis/QGIS/pull/48721) | N/D |
 | Better approach to filtering lists by tags which works across different styles | [#48659](https://github.com/qgis/QGIS/issues/48659) | [PR #48689](https://github.com/qgis/QGIS/pull/48689) | N/D |
 | Fix slow layout view when atlas is enabled with legend filter enabled | [#47033](https://github.com/qgis/QGIS/issues/47033) | [PR #48686](https://github.com/qgis/QGIS/pull/48686) | [PR #48704](https://github.com/qgis/QGIS/pull/48704) |

@@ -460,7 +460,7 @@ Deze mogelijkheid werd ontwikkeld door [Giovanni Allegri](https://github.com/gio
 ### Mogelijkheid: In Databronnen beheren, gebruikers toestaan direct een laag XYZ toe te voegen zonder eerst een verbinding te moeten maken
 Gebruikers mogen nu direct een laag XYZ-tegel toevoegen in Databronnen beheren, zonder eerst een nieuwe verbinding te moeten maken.
 
-Dit staat gebruikers toe om gemakkelijk ad-hoc XYZ-lagen toe te voegen aan hun kaart, zonder hun lijsten met opgeslagen verbindingen te vervuilen.
+Dit staat gebruikers toe om gemakkelijk ad hoc XYZ-lagen toe te voegen aan hun kaart, zonder hun lijsten met opgeslagen verbindingen te vervuilen.
 
 ![image27](images/entries/1e5a07f058db3b16265d94f6e535ac7c79664bcd.gif)
 

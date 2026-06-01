@@ -24,7 +24,7 @@ Consiglio
 
 Per contattare il Board, si prega di scrivere a [board@qgis.org](mailto:board@qgis.org).
 
-Project Steering Committee (Consiglio Direttivo del Progetto)
+Comitato direttivo del progetto
 -
 * Marco Bernasocchi (Chair) \[Chair dal 5.2020; Vice chair 4.2018 - 4.2020\]
 * Anita Graser (Vice chair) \[dal 9.2013; Vice chair dal 9.2022\]

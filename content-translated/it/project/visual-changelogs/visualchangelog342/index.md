@@ -408,7 +408,7 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | QGIS Server OGC: Display name is not provided in GetFeatureInfo json/gml response | [#59353](https://github.com/qgis/QGIS/issues/59353) | [PR #60343](https://github.com/qgis/QGIS/pull/60343) | No |
 | Source Multipolygon-geometry reads as Polygon-geometry in MapInfo TAB format | [#60396](https://github.com/qgis/QGIS/issues/60396) | [PR #60410](https://github.com/qgis/QGIS/pull/60410) | No |
 | Geometry checker accepts invalid polygon | [#60464](https://github.com/qgis/QGIS/issues/60464) | Cannot reproduce | No |
-| Labels with decimal values do not use Locale when decimal is used in a text expression | [#60440](https://github.com/qgis/QGIS/issues/60440) | Not sure this is a bug, open for discussion [PR #60479](https://github.com/qgis/QGIS/pull/60479) | No |
+| Labels with decimal values do not use Locale when decimal is used in a text expression | [#60440](https://github.com/qgis/QGIS/issues/60440) | Non è sicuro che si tratti di un bug, aprii per la discussione [PR #60479](https://github.com/qgis/QGIS/pull/60479) | No |
 | New Connections to OGC Services Hang in Profiles with PostGIS Connections | [#60335](https://github.com/qgis/QGIS/issues/60335) | [PR #60495](https://github.com/qgis/QGIS/pull/60495) | Da fare |
 | [Regression] OGC-Features API requests do not send Authorization header in v3.40.3 | [#60473](https://github.com/qgis/QGIS/issues/60473) | [PR #60511](https://github.com/qgis/QGIS/pull/60511) | Da fare |
 

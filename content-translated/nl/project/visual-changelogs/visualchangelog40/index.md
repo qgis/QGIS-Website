@@ -63,7 +63,7 @@ Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Mogelijkheid: Objecten in een array langs een lijn kopiëren
-Een nieuw kaartgereedschap stelt gebruikers in staat om objecten in een array te kopiëren langs een lijn en is beschikbaar voor typen geometrie polygoon/lijn/punt geometry types.
+Een nieuw kaartgereedschap stelt gebruikers in staat om objecten in een array te kopiëren langs een lijn en is beschikbaar voor typen geometrie polygoon/lijn/punt.
 
 <img src="images/entries/60adf287a322741a4f92f851fcfc369b068ed097.png" class="img-responsive img-rounded" />
 
@@ -98,8 +98,8 @@ Gebruikers kunnen nu dubbelklikken op een item in de attributentabel om direct e
 
 Deze mogelijkheid werd ontwikkeld door [Nass](https://github.com/lanckmann)
 ## Symbologie
-### Mogelijkheid: Kopiëren/plakken van alle stijlen uit ene laag naar een andere toestaan
-Wanneer een laag meerdere stijlen heeft, bevat het contextmenu van de boom met lagen nu een nieuwe actie "Alle stijlen kopiëren". Activeren hiervan zal de definitie van ALLE stijlen van de lagen naar het klembord kopiëren.<br />Gebruikers kunnen het contextmenu op een andere laag openen en de nieuwe mogelijkheid "Alle stijlen gebruiken" om kopieën van ALLE stijlen van de originele laag naar het doel te plakken. Dit verwijdert de noodzaak om handmatig door de bestaande stijlen in de originele laag te gaan, en de stijleen een voor een te plakken.
+### Mogelijkheid: Kopiëren/plakken van alle stijlen uit een laag naar een andere toestaan
+Wanneer een laag meerdere stijlen heeft, bevat het contextmenu van de boom met lagen nu een nieuwe actie "Alle stijlen kopiëren". Activeren hiervan zal de definitie van ALLE stijlen van de lagen naar het klembord kopiëren.<br />Gebruikers kunnen het contextmenu op een andere laag openen en de nieuwe mogelijkheid "Alle stijlen gebruiken" om kopieën van ALLE stijlen van de originele laag naar het doel te plakken. Dit verwijdert de noodzaak om handmatig door de bestaande stijlen in de originele laag te gaan, en de stijlen een voor een te plakken.
 
 <img src="images/entries/76ce4e014c2eb3e29ac33b4b5708834c66961430.png" class="img-responsive img-rounded" />
 
@@ -115,7 +115,7 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nir
 ## Annotaties
 ### Mogelijkheid: Nagelnieuw gereedschap Annotaties selecteren
 Als deel van de implementatie van [QEP \#344](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/344) dat zich richt op het introduceren van functionaliteiten voor het kopiëren, verplaatsen en draaien van annotatielagen, verschaft het nieuwe gereedschap voor selecteren interactieve bewerkingen voor items Annotatie, inclusief:
-- selecteren van annotationitem(s), met de aanpassingstoets Shift om te schakelen voor het selecteren van aanvullende item(s)
+- selecteren van item(s) voor annotatie, met de aanpassingstoets Shift om te schakelen voor het selecteren van aanvullende item(s)
 - muis- en toetsenbordverplaatsing van geselecteerde item(s)
 - verwijderen van geselecteerde item(s)
 - afmetingen wijzigen van geselecteerde item(s) met de handvatten voor de muis
@@ -127,20 +127,20 @@ Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
 ### Mogelijkheid: Tekstannotaties weergeven in 3D-kaartweergaven
-Wanneer een annotatielaag is ingesteld om te renderen als 3D-plakborden, rendert het ook tekstannotaties als plakborden.<br />Voor tekstannotaties lijn/rechthoek wordt het plakbord geplaatst in het midden van de lijn/rechthoek. Gebruikers kunnen de gebruikte tekstindeling voor het 3D-plakbord. De originele indeling 2D-annotatietekst wordt genegeerd, wat gebruikers in staat stelt<br />een leesbare/meer toepasselijke tekstindeling te ontwerpen voor alleen de 3D-tekst.
+Wanneer een annotatielaag is ingesteld om te renderen als 3D-plakborden, rendert het ook tekstannotaties als plakborden.<br />Voor tekstannotaties lijn/rechthoek wordt het plakbord geplaatst in het midden van de lijn/rechthoek. Gebruikers kunnen de gebruikte tekstindeling voor het 3D-plakbord. <br />De originele indeling 2D-annotatietekst wordt genegeerd, wat gebruikers in staat stelt een leesbare/meer toepasselijke tekstindeling te ontwerpen voor alleen de 3D-tekst.
 
 <img src="images/entries/ce930ee001993bd8bd7ecf0477aac6e5e9436da1.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ### Mogelijkheid: Ondersteuning voor renderen van markeringen voor Annotatielaag als 3D-aanplakborden
-Een nieuwe optie voor het weergeven van annotatielagen in 3D-kaarten is toegevoegd. Vanuit de eigenschappen voor de annotatielaag, tab 3D, kunnen gebruikers de laag instellen om te renderen als 3D-aanplakborden. Indien geactiveerd, worden alle MARKERINGEN van de laag weergegeven als zwevende symbolen aanplakbord bovenop de 3D-kaart (lijnen en polygonen van de laag worden genegeerd).<br />⁣ Gebruikers hebben beheer over het klemmen van het terrein en verschuiving voor de aanplakborden, en of al dan niet  lijnen voor "tekstballonnen" zouden moeten worden weergegeven (verticale lijnen die verbinden met het aanplakbord op de corresponderende locatie op het terreinoppervlak).
+Een nieuwe optie voor het weergeven van annotatielagen in 3D-kaarten is toegevoegd. Vanuit de eigenschappen voor de annotatielaag, tab 3D, kunnen gebruikers de laag instellen om te renderen als 3D-aanplakborden. Indien geactiveerd, worden alle MARKERINGEN van de laag weergegeven als zwevende symbolen aanplakbord bovenop de 3D-kaart (lijnen en polygonen van de laag worden genegeerd).<br />⁣Gebruikers hebben beheer over het klemmen van het terrein en verschuiving voor de aanplakborden, en of al dan niet lijnen voor "tekstballonnen" zouden moeten worden weergegeven (verticale lijnen die verbinden met het aanplakbord op de corresponderende locatie op het terreinoppervlak).
 
 <img src="images/entries/a74b316080040084674f70ed22492ad06da3c5be.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## Labelen
 ### Mogelijkheid: Optie toegevoegd voor negeren witruimte bij detecteren labelbotsingen
-Deze nieuwe optie (dia ALLEEN beschikbaar is voor modi voor het plaatsen van gebogen labels) beheert hoe QGIS witruimte behandelt (d.i. spaties of tabs) in labeltekst bij het bepalen of twee labels botsen (of wanneer een label botst met een obstakelobject). Het bestaande (en standaard) gedrag is dat spaties hetzelfde worden behandeld als tekens tekst en een label mag geen spaties overlappen op een ander label.<br /> Als de nieuwe optie "Witruimte label negeren bij detecteren botsingen" is geselecteerd, dan zal witruimte in de tekst worden genegeerd bij het controleren van overlappende labels (of labels die botsen met obstakels).<br /> Dit is nuttig bij het labelen van objecten op lange lijnen, als de woordruimte groot is en het gewenst is om tekst of andere objecten toe te staan de labelruimten op te vullen. (Bijv. bij labelen van rivieren of wegen). De instelling mag data-bepaalde zijn, functionaliteit inschakelen die wordt aangedreven door geavanceerde expressies, zoals het toestaan alleen te worden ingeschakeld voor objecten van voldoende lengte, etc.
+Deze nieuwe optie (die ALLEEN beschikbaar is voor modi voor het plaatsen van gebogen labels) beheert hoe QGIS witruimte behandelt (d.i. spaties of tabs) in labeltekst bij het bepalen of twee labels botsen (of wanneer een label botst met een obstakelobject). Het bestaande (en standaard) gedrag is dat spaties hetzelfde worden behandeld als tekens tekst en een label mag geen spaties overlappen op een ander label.<br /> Als de nieuwe optie "Witruimte label negeren bij detecteren botsingen" is geselecteerd, dan zal witruimte in de tekst worden genegeerd bij het controleren van overlappende labels (of labels die botsen met obstakels).<br /> Dit is nuttig bij het labelen van objecten op lange lijnen, als de woordruimte groot is en het gewenst is om tekst of andere objecten toe te staan de labelruimten op te vullen. (Bijv. bij labelen van rivieren of wegen). De instelling mag data-bepaald zijn, functionaliteit inschakelen die wordt aangedreven door geavanceerde expressies, zoals het toestaan alleen te worden ingeschakeld voor objecten van voldoende lengte, etc.
 
 <img src="images/entries/25ba4e122bd28db3d8cbf57717e1b4576dc790a5.png" class="img-responsive img-rounded" />
 
@@ -148,7 +148,7 @@ Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ### Mogelijkheid: Labelen meerdelige geometrie opnieuw bewerkt
-Het bestaande keuzevak voor “Label every part of multi-part features” is opnieuw bewerkt om een combinatievak te gebruiken om de keuzes voor opties voor afhandelen van meerdere delen weer te geven.<br />De beschikbare opties zijn:
+Het bestaande keuzevak voor “Labelen meerdelige geometrie” is opnieuw bewerkt om een combinatievak te gebruiken om de keuzes voor opties voor afhandelen van meerdere delen weer te geven.<br />De beschikbare opties zijn:
 - **Alleen grootste deel labelen**: Dit correspondeert met het huidige standaardgedrag, d.i. als de gebruiker het keuzevak "Elk deel labelen" niet heeft geselecteerd.
 - **Elk deel met dezelfde tekst labelen**: Dit correspondeert met het huidige gedrag dat wordt geactiveerd als de gebruiker het keuzevak "Elk deel labelen" heeft geselecteerd.
 - **Tekstregels van labels splitsen over delen**: Dit is nagelnieuw gedrag dat de labeltekst splitst over de delen van een object met een meerdelige geometrie. De labeltekst zal worden gesplitst met tekens voor een nieuwe regel, en elke regel zal afzonderlijk over de corresponderende delen van het object voor invoer van de geometrie worden geplaatst. Onthoud dat het splitsen zal gebeuren NADAT de bestaande instelling voor "Afbrekingsteken" wordt toegepast. Met elk aangepast teken voor een nieuwe regel dat de gebruiker voor die instelling heeft geconfigureerd, zal dus rekening worden gehouden bij het plaatsen van labels voor meerdelige geometrieën. Als de meerdelige geometrie niet voldoende delen bevat voor de labeltekst, dan zullen de overschrijdende regels worden genegeerd.
@@ -172,7 +172,7 @@ Dit werd mogelijk gemaakt door [LINZ](https://www.linz.govt.nz/)
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## Renderen
 ### Mogelijkheid: Introduceren van voorkeuzen selectieve maskers
-Gebruikers kunnen nu een keuzemenu gebruiken onder Bronnen masker bij het configureren van het masker voor een laag en selecteren uit een aantal voorkeuzen om maskers efficiënt toe te passen zonder complex beheer. Dit is speciaal handig voor grote projecten als veel verschillende lagen naar dezelfde set bronnen voor maskers moeten verwijzen. Zoals wanneer veel lagen zijn gemaskeerd met dezelfde set afzonderlijk gelabelde lagen.<br />De standaardwaarde is "aangepast", wat de bestaande ad-hoc per-laag-configuratie herhaalt. Gebruikers zijn echter in staat waar nodig sets voor selectieve maskers te maken, te hernoemen of te verwijderen, en alle wijzigingen aan de geselecteerde bronnen voor een voorkeuze zullen automatisch de wijzigingen toepassen op ALLE aan de voorkeuze gekoppelde lagen.
+Gebruikers kunnen nu een keuzemenu gebruiken onder Bronnen masker bij het configureren van het masker voor een laag en selecteren uit een aantal voorkeuzen om maskers efficiënt toe te passen zonder complex beheer. Dit is speciaal handig voor grote projecten als veel verschillende lagen naar dezelfde set bronnen voor maskers moeten verwijzen. Zoals wanneer veel lagen zijn gemaskeerd met dezelfde set afzonderlijk gelabelde lagen.<br />De standaardwaarde is "aangepast", wat de bestaande ad hoc per-laag-configuratie herhaalt. Gebruikers zijn echter in staat waar nodig sets voor selectieve maskers te maken, te hernoemen of te verwijderen, en alle wijzigingen aan de geselecteerde bronnen voor een voorkeuze zullen automatisch de wijzigingen toepassen op ALLE aan de voorkeuze gekoppelde lagen.
 
 <img src="images/entries/a73331ff4395c78b8152d289d1759a55aeafd04d.png" class="img-responsive img-rounded" />
 
@@ -322,7 +322,7 @@ Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ### Mogelijkheid: Opnieuw bewerkte afhandeling van initieel ingestelde laag en synchronisatie voor legenda's van afdruklay-out
 QGIS heeft modi voor het synchroniseren van lagen geïntroduceerd voor de legenda's in afdruklay-outs, in lijn met [QEP 253](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/253).<br />⁣Dit verwijdert het bestaande keuzevak "Live bijwerken" voor legenda's van afdruklay-outs, en in plaats daarvan introduceert het een gebruiksvriendelijk combinatievak dat de modi voor het vullen van de legenda weergeeft, inclusief:
 - **Synchroniseren met alle projectlagen**: Deze optie komt overeen met het huidige gedrag van het keuzevak "Automatisch synchroniseren". Indien geselecteerd, zullen alle nieuwe lagen die worden toegevoegd aan het project onmiddellijk verschijnen in de legenda, en elke aan deze lagen gemaakte wijziging zal onmiddellijk worden toegepast op de legenda.
-- **Synchroniseren met zichtbare lagen**: Deze optie zal rekening houden met lagen die momenteel zichtbaar zijn in de kaart die is gekoppeld aan het item voor de legenda (of hoofdboom van de lagen, als geen kaart is gekoppeld aan de legenda). Wanneer deze modus actief is, zullen alle wijzigingen aan de set met lagen die zichtbaar is in de kaart ervoor zorgen dat de lagen van de legenda overeen zullen komen met deze set zichtbare lagen. Onthoud dat deze modus verschilt van de bestaande optie "Alleen items in gekoppelde laag weergeven", omdat de modus "Synchroniseren met zichtbare lagen" helemaal geen rekening houdt met de bereikingen van de gekoppelde kaart - als een laag is geselecteerd en zichtbaar is voor de kaart, dan zal die worden weergegeven in de legenda. Ongeacht of alle objecten van de laag al dan niet buiten het zichtbare laagbereik vallen. Net als met de optie "Synchroniseren met alle projectlagen" worden eventuele wijzigingen aan de namen of andere aan de legenda gerelateerde instellingen in de hoofdboom van de lagen automatisch doorgevoerd in de legenda van de afdruklay-out.
+- **Synchroniseren met zichtbare lagen**: Deze optie zal rekening houden met lagen die momenteel zichtbaar zijn in de kaart die is gekoppeld aan het item voor de legenda (of hoofdboom van de lagen, als geen kaart is gekoppeld aan de legenda). Wanneer deze modus actief is, zullen alle wijzigingen aan de set met lagen die zichtbaar is in de kaart ervoor zorgen dat de lagen van de legenda overeen zullen komen met deze set zichtbare lagen. Onthoud dat deze modus verschilt van de bestaande optie "Alleen items in gekoppelde laag weergeven", omdat de modus "Synchroniseren met zichtbare lagen" helemaal geen rekening houdt met de bereiken van de gekoppelde kaart - als een laag is geselecteerd en zichtbaar is voor de kaart, dan zal die worden weergegeven in de legenda. Ongeacht of alle objecten van de laag al dan niet buiten het zichtbare laagbereik vallen. Net als met de optie "Synchroniseren met alle projectlagen" worden eventuele wijzigingen aan de namen of andere aan de legenda gerelateerde instellingen in de hoofdboom van de lagen automatisch doorgevoerd in de legenda van de afdruklay-out.
 - **Handmatig**: Alle inhoud voor de legenda kan handmatig door de gebruiker worden beheerd, en er zal geen automatisch synchroniseren worden toegepast op welke laag dan ook. Dit is hetzelfde gedrag als momenteel gebeurt in QGIS als de optie "Live bijwerken" niet is geselecteerd.
 
 De vroegere bewerking "Alles bijwerken" voor legenda's is gewijzigd naar een nieuwe functie "Herstellen", die de configuratie van de legenda terug zal zetten naar de geselecteerde modus.<br />Deze wijziging bevat een nieuwe globale instelling die is toegevoegd aan de pagina Opties - Lay-out. Dat geeft gebruikers de kans om de standaardmodus voor nieuw gemaakte legenda's te beheren. Standaard zal
@@ -381,7 +381,7 @@ Een nieuwe menuactie is toegevoegd aan de werkbalk voor kaarten van afdruklay-ou
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://opengis.ch)
-### Mogelijkheid: Nagelnieuwe handvatten om te draaien voor items van afdrklay-out
+### Mogelijkheid: Nagelnieuwe handvatten om te draaien voor items van afdruklay-out
 Handvatten om te kunnen draaien zijn toegevoegd aan geselecteerde item(s) van afdruklay-out. Wat gebruikers de mogelijkheid geeft hun draaiing voor items aan te passen en hun lay-outs te perfectioneren.
 
 <img src="images/entries/eaed49778b763c98749a2d37a9e4654602911616.png" class="img-responsive img-rounded" />
@@ -428,7 +428,7 @@ Een nieuwe methode unaccent wordt verschaft die accenten (diacriete tekens) verw
 
 Deze mogelijkheid werd ontwikkeld door [Tudor Barascu](https://github.com/tudorbarascu)
 ### Mogelijkheid: Expressie substr_count toegevoegd
-De expressie new `substr_count` geeft gebruikers eenvoudigweg de gelegenheid om het aantal keer voorkomen van een subtekenreeks in een tekenreeks.
+De expressie new `substr_count` geeft gebruikers eenvoudigweg de gelegenheid om het aantal keer voorkomen van een subtekenreeks in een tekenreeks te tellen.
 
 <img src="images/entries/09cbb9e54d4b4326ced2b4bdcf8c93736960af0a.png" class="img-responsive img-rounded" />
 
@@ -436,7 +436,7 @@ Deze mogelijkheid werd ontwikkeld door [Tudor Barascu](https://github.com/tudorb
 ### Mogelijkheid: Enkele aan tijdzones gerelateerde expressiefuncties toegevoegd
 Voegt enkele functies toe voor het werken met tijdzones in expressies:
 - `timezone_from_id`: Maakt een object tijdzone uit een tekenreeks ID (uit de database voor tijdzones van IANA).
-- `timezone_id`: Geeft de tekenreeks van de ID voor een object tijdzone terug, gebruikt ID's uit de database voor tijdzones van IANA.
+- `timezone_id`: Geeft de tekenreeks van de ID voor een object tijdzone terug. Gebruikt ID's uit de database voor tijdzones van IANA.
 - `get_timezone`: Geeft het object tijdzone terug dat is geassocieerd met een waarde datetime.
 - `convert_timezone`: Converteert een object datetime naar een andere tijdzone.
 - `set_timezone`: Stelt het object voor de tijdzone in die is geassocieerd met een waarde datetime, zonder de componenten datum of tijd te wijzigen. Deze functie kan worden gebruikt om de tijdzone voor een datetime te wijzigen.
@@ -473,10 +473,10 @@ Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia
 Deze mogelijkheid werd ontwikkeld door [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
 ## Gegevensbeheer
 ### Mogelijkheid: Verbeterde ondersteuning voor COG  voor exporteren van rasters
-De dialoogvensters voor exporteren en opslaan van rasters ondersteunen nu expliciete opties om te specificeren dat de uitvoer zou moeten worden geëxporteerd met optimalisatie voor Cloud Optimized GeoTiff, met aanvullende COG-specifieke objecten pyramiden, inclusief verbeteringen voor:
+De dialoogvensters voor exporteren en opslaan van rasters ondersteunen nu expliciete opties om te specificeren dat de uitvoer zou moeten worden geëxporteerd met optimalisatie voor Cloud Optimized GeoTiff, met aanvullende COG-specifieke objecten piramiden, inclusief verbeteringen voor:
 - voortgang rapporteren
 - foutafhandeling
-- bewerkingen voor maken van pyramiden
+- bewerkingen voor maken van piramiden
 
 Onthoud dat dit vereist GDAL \>= 3.13.0
 
@@ -554,8 +554,8 @@ Dit werd mogelijk gemaakt door [Zwitserse QGIS gebruikersgroep](https://qgis.ch/
 
 Deze mogelijkheid werd ontwikkeld door [Germap](https://github.com/gacarrillor)
 ## Processing
-### Mogelijkheid: Eigen algortimes voor oriëntatie polygonen
-Nieuwe algoritmes voor **Rechterhand-regel forceren met de klok mee** (`native:forcecw`) en **Rechterhand-regel forceren tegen de klok in** (`native:forceccw`) zijn toegevoegd aan de algoritmes voor Processing.<br />Rechterhand-regel forceren met de klok mee kopieert de bestaande bewerking existing "Rechterhand-regel forceren" en forceert geometrieën polygoon om rekening te houden met de conventie waarin de buitenste ring is georiënteerd met de klok mee en de binneste ringen in de richting tegen de klok in.<br />Rechterhand-regel forceren tegen de klok in voert het tegenovergestelde uit en forceert geometrieën polygoon de conventie te respecteren waarin de buitenste ring is georiënteerd in de richting tegen de klok in en de binnenste ringen in de richting met de klok mee.
+### Mogelijkheid: Eigen algoritmes voor oriëntatie polygonen
+Nieuwe algoritmes voor **Rechterhand-regel forceren met de klok mee** (`native:forcecw`) en **Rechterhand-regel forceren tegen de klok in** (`native:forceccw`) zijn toegevoegd aan de algoritmes voor Processing.<br />Rechterhand-regel forceren met de klok mee kopieert de bestaande bewerking "Rechterhand-regel forceren" en forceert geometrieën polygoon om rekening te houden met de conventie waarin de buitenste ring is georiënteerd met de klok mee en de binnenste ringen in de richting tegen de klok in.<br />Rechterhand-regel forceren tegen de klok in voert het tegenovergestelde uit en forceert geometrieën polygoon de conventie te respecteren waarin de buitenste ring is georiënteerd in de richting tegen de klok in en de binnenste ringen in de richting met de klok mee.
 
 <img src="images/entries/a0c4136c269a5cd474bdc29e15c26831baa8706f.png" class="img-responsive img-rounded" />
 
@@ -606,7 +606,7 @@ Maakt het mogelijk een filter Gaussiaans vervagen toe te passen op een rasterlaa
 Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Mogelijkheid: Eigen algortime toegevoegd voor Totale boog uit de bibliotheek voor terreinanalyse
+### Mogelijkheid: Eigen algoritme toegevoegd voor Totale boog uit de bibliotheek voor terreinanalyse
 Voegt het algoritme Totale boog toe aan Processing. Het filter Totale boog bestond al jaren in de bibliotheek voor Terreinanalyse, maar het werd nooit weergegeven in de gebruikersinterface. Het wordt nu weergegeven in het framework Processing, naast de bestaande filters voor terreinanalyse.
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
@@ -628,7 +628,7 @@ Deze mogelijkheid maakt het mogelijk de indeling voor de uitvoer te specificeren
 Dit werd mogelijk gemaakt door [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Mogelijkheid: Stroom voor telling van objecten door een model weergeven in de Modelontwerpoer
+### Mogelijkheid: Stroom voor telling van objecten door een model weergeven in de Modelontwerper
 De langverwachte mogelijkheid om het aantal objecten dat door het model stroomt weer te geven is toegevoegd. Het aantal objecten is verbonden met de koppeling die in en uit tussen de algoritmes gaat, en het is alleen van toepassing op vectorlagen. Het weergeven van het aantal objecten kan worden uitgeschakeld met de optie "Aantal objecten weergeven" in het menu Beeld.<br />Opmerking: Het model moet ten minste eenmaal zijn uitgevoerd, om in staat te zijn de telling voor objecten weer te geven.
 
 <img src="images/entries/468164c721e2407abaf86e0629d35377741dc2a6.png" class="img-responsive img-rounded" />
@@ -648,14 +648,14 @@ De QGIS Modelontwerper is significant bijgewerkt voor de manier waarop het de in
 Dit werd mogelijk gemaakt door [Géo2France](https://www.geo2france.fr/portal/public/overview)
 
 Deze mogelijkheid werd ontwikkeld door [Jonathan Lurie](https://github.com/jonathanlurie)
-### Mogelijkheid: Algoritme Laag opniew projecteren toestaan om coördinaten Z te transformeren
+### Mogelijkheid: Algoritme Laag opnieuw projecteren toestaan om coördinaten Z te transformeren
 Een optionele parameter bool voor het algoritme *Laag opnieuw projecteren* is toegevoegd die het mogelijk maakt coördinaten Z te transformeren.
 
 <img src="images/entries/b93161af43e09fc6189680f8f8b323b86555d499.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ### Mogelijkheid: Algoritme toegevoegd om Cloud Optimized GeoTiffs te maken uit bronmap
-Een nieuw algoritme voor het maken van Create Cloud Optimized GeoTIFF is toegevoegd dat het mogelijk maakt COG's te maken voor een set invoerrasterbestanden die worden verschaft in een aangewezen map en gebruikt GDAL om in bulk de invoerbestanden te converteren.
+Een nieuw algoritme voor het maken van Create Cloud Optimized GeoTIFF is toegevoegd. Dat maakt het mogelijk COG's te maken voor een set invoerrasterbestanden die worden verschaft in een aangewezen map. Het gebruikt GDAL om in bulk de invoerbestanden te converteren.
 
 <img src="images/entries/7a822b6086fbf156b8f3528499f78a5d83eb7b29.png" class="img-responsive img-rounded" />
 
@@ -671,7 +671,7 @@ Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ### Mogelijkheid: Instellingen Schaal en Resolutie voor uitnemen van WMS
-QGIS schakelt nu de mogelijkheid in voor algoritmes Raster uitnemen om te werken met WMS'en die op een bepaalde schaal zijn opgevraagd, zodat schaalafhankelijk renderen (symbology/labeling) in het uitvoerraster wordt behouden.<br />De verbeterde algoritmes zijn `Raster op bereik clippen` en `Raster op maskerlaag clippen`.<br />Een nieuw geavanceerd paneel met opties wordt verschaft voor lagen van WMS, als die als een bron worden gebruikt in deze algoritmes, dat opties verschaft voor:
+QGIS schakelt nu de mogelijkheid in voor algoritmes Raster uitnemen om te werken met WMS'en die op een bepaalde schaal zijn opgevraagd, zodat schaalafhankelijk renderen (symbologie/labelen) in het uitvoerraster wordt behouden.<br />De verbeterde algoritmes zijn `Raster op bereik clippen` en `Raster op maskerlaag clippen`.<br />Een nieuw geavanceerd paneel met opties wordt verschaft voor lagen van WMS, als die als een bron worden gebruikt in deze algoritmes, dat opties verschaft voor:
 - **Referentieschaal**: De schaal waarop de WMS-raster zou moeten worden verzocht/gerenderd.
 - **Service resolutie**: De resolutie (in DPI) gebruikt door de server om de WMS-raster te renderen (standaard 96 dpi).<br />Deze wijzigingen werden ingeschakeld door het introduceren van de klassen `QgsProcessingRasterLayerDefinition` en `QgsWmsUtils`.
 
@@ -722,7 +722,7 @@ QGIS bevat nu een mechanisme voor automatisch vernieuwen van verbindingen voor O
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ### Mogelijkheid: Project vertrouwen voor verbetering ingebedde code
-QGIS bevat nu een mechanisme voor "vertrouwen" op projectniveau dat de uitvoering van ingebedde code voor Python in projecten toestaat of verbiedt. Dit is geïmplementeerd in lijn met de [Trusted Projects and Folders QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-336-trusted-projects-and-folders.md).<br />Zoals vastgesteld in de QEP, zijn de behandelde ingebedde typen voor code:
+QGIS bevat nu een mechanisme voor "vertrouwen" op projectniveau dat de uitvoering van ingebedde code voor Python in projecten toestaat of verbiedt. Dit is geïmplementeerd in lijn met de [Trusted Projects and Folders QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-336-trusted-projects-and-folders.md).<br />Zoals vastgesteld in de QEP zijn de behandelde ingebedde typen voor code:
 - macro's;
 - expressiefuncties;
 - acties; en
@@ -733,39 +733,39 @@ Dit geeft gebruikers de mogelijkheid om het uitvoeren van code fijn af te stemme
 <img src="images/entries/8325ef4b8268626c5af3c9699370dbeb6faedcd4.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Elevation Profile Manager
-QGIS now links the app handling of elevation profiles to a new project-level elevation profile manager. Now, elevation profiles stored in the project can be reopened after opening a project, and changes made to the profile will be stored in the project.<br />There is also a fully functional elevation profile manager dialog, which is able to display/rename/remove elevation profiles from the project.
+### Mogelijkheid: Hoogteprofielen beheren
+QGIS koppelt nu de toepassing voor het afhandelen van hoogteprofielen aan een nieuw beheer voor hoogteprofielen op projectniveau. Nu kunnen hoogteprofielen, die zijn opgeslagen in het project, opnieuw worden geopend na het openen van een project, en wijzigingen aan het profiel zullen in het project worden opgeslagen.<br />Er is ook een volledig functioneel dialoogvenster Hoogteprofiel beheren, waarin hoogteprofielen van het project kunnen worden uitgeschakeld/hernoemd/verwijderd.
 
 Dit werd mogelijk gemaakt door [Erftverband](https://www.erftverband.eu/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Project/layer metadata localization support
-Translation support has been added for some key project and layer metadata values to QGIS' project translation system. This enhancement ensures that project translation can use the relevant metadata values for layout items such as labels, map canvas decorations, etc.<br />*This is funded through an ongoing effort to add support for localized/translated projects into QField*
+### Mogelijkheid: Ondersteuning voor lokaliseren metadata van project/laag
+Ondersteuning voor vertalen is toegevoegd aan het vertaalsysteem voor projecten van QGIS voor enkele sleutelwaarden van metadata voor project en laag. Deze verbetering zorgt ervoor dat projectvertaling de relevante waarden voor die metadata kan gebruiken voor items van lay-out, zoals labels, decoraties voor het kaartvenster, etc.<br />*Dit is mogelijk gemaakt door de doorlopende inspanning voor het toevoegen van ondersteuning voor gelokaliseerde/vertaalde projecten in QField*
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add project setting to enable HTML GetFeatureInfo maptip-only mode
-A new project setting for QGIS Server is provided to enable HTML GetFeatureInfo maptip-only mode.<br />[This allows QGIS Server to use the WMS vendor parameter](https://docs.qgis.org/3.40/en/docs/server_manual/services/wms.html#with-maptip) `WITH_MAPTIP=HTML_FI_ONLY_MAPTIP` and use only the maptip for the HTML GetFeatureInfo response.
+### Mogelijkheid: Projectinstelling toegevoegd om de modus HTML GetFeatureInfo maptip-only in te schakelen
+Een nieuwe projectinstelling voor QGIS Server wordt verschaft om de modus HTML GetFeatureInfo maptip-only mode in te schakelen.<br />[Dat maakt het voor QGIS Server mogelijk de WMS vendor-parameter te gebruiken](https://docs.qgis.org/3.40/en/docs/server_manual/services/wms.html#with-maptip) `WITH_MAPTIP=HTML_FI_ONLY_MAPTIP` en alleen de kaarttip voor het antwoord van HTML GetFeatureInfo te gebruiken.
 
 <img src="images/entries/5cefab81d09c5bf0e1b757238d74940a2c9d9c55" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
 ## Profiel plotten
-### Feature: Add option to sync elevation profile layers with project layers
-This new option is available from an elevation profile's settings menu as "Synchronize Layers to Project". It is unchecked by default, but when checked, the elevation profile's layers will always exactly match the project's main canvas layer structure, including groups and layer orders.<br />Groups cannot be created in the elevation profile. Any changes made to the main project's layer tree will immediately be reflected in the elevation profile's layer setup.
+### Mogelijkheid: Optie toegevoegd om lagen met hoogteprofielen te synchroniseren met projectlagen
+Deze nieuwe optie is beschikbaar in het menu Instellingen van een hoogteprofiel als "Lagen synchroniseren met project". Die is standaard niet geselecteerd, maar indien geselecteerd, zullen de lagen van het hoogteprofiel altijd exact overeenkomen met de structuur van de lagen in het hoofdkaartvenster van het project, inclusief groeps- en laagvolgordes.<br />Groepen kunnen niet in het hoogteprofiel worden gemaakt. Alle wijzigingen aan de hoofdboom met lagen van het project zullen onmiddellijk zichtbaar zijn in de instelling van de laag van het hoogteprofiel.
 
 Dit werd mogelijk gemaakt door [Lutra](https://www.lutraconsulting.co.uk/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
-### Feature: Render point cloud as a continuous elevation line
-QGIS profile plots now include the ability for the elevation profile of a point cloud layer to be displayed as a continuous elevation line instead of individual points, allowing point clouds to be rendered similarly to vector or raster layers. Users can adjust the tolerance setting to improve results when too few points are present within the view, without triangulating the entire layer
+### Mogelijkheid: Puntenwolk renderen als een doorlopende hoogtelijn
+QGIS profielplots bevatten nu voor het hoogteprofiel van een laag puntenwolk de mogelijkheid om te worden weergegeven als een doorlopende hoogtelijn, in plaats van als individuele punten. Dat maakt het mogelijk dat puntenwolken soortgelijk worden gerenderd als vector- of rasterlagen. Gebruikers kunnen de instelling voor tolerantie aanpassen om resultaten te verbeteren als er te weinig punten aanwezig zijn in de weergave, zonder de gehele laag te trianguleren.
 
 <img src="images/entries/ab52589956629cc34cb09bef22e63478a65a96bf.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [Deense Agency for Climate Data](https://www.klimadatastyrelsen.dk/)
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric (Lutra Consulting)](https://github.com/ViperMiniQ)
-### Feature: Show distance:elevation scale ratio in profile settings menu
-A new widget has been added for the displaying of the current distance:elevation scale ratio for elevation profile plots. The widget can also be used to set a specific ratio. If the "lock" option is enabled for the plot, then this scale ratio will be used instead of the default 1:1 ratio when zooming and navigating the plot.
+### Mogelijkheid: Schaalverhouding afstand:hoogte weergeven in menu voor instellingen van profiel
+Een nieuwe widget is toegevoegd voor het weergeven van de huidige schaalverhouding afstand:hoogte voor plots van hoogteprofielen. De widget kan ook worden gebruikt om een specifieke verhouding in te stellen. Als de optie "vergrendelen"  voor de plot is ingeschakeld, dan zal die schaalverhouding worden gebruikt, in plaats van de standaardverhouding 1:1 bij zoomen en navigeren in de plot.
 
 <img src="images/entries/a4300b20ef89e4ad71f70a114af7438e4eff9cfb" class="img-responsive img-rounded" />
 
@@ -773,22 +773,22 @@ Dit werd mogelijk gemaakt door [Erftverband](https://www.erftverband.eu/)
 
 Deze mogelijkheid werd ontwikkeld door [North Road](https://north-road.com/)
 ## Browser
-### Feature: Move multiple tables in Database to another Schema
-Allow multiple tables to be moved into the specified schema at once.
+### Mogelijkheid: Meerdere tabellen in database verplaatsen naar een ander schema
+Toestaan dat meerdere tabellen in één keer worden verplaatst naar het gespecificeerde schema.
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Browser DB Table Comment
-The QGIS Browser now includes the option to directly edit **Table comment** for databases that support this functionality.
+### Mogelijkheid: Opmerking voor tabel database in Browser
+De QGIS Browser bevat nu de optie om direct een **Opmerking tabel** te bewerken voor databases die deze functionaliteit ondersteunen.
 
 <img src="images/entries/84b05ee5021e434fc16c6bc60bb1695584de7ecb.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Add create or delete Spatial Index to the Manage menu in Browser
-A new context menu option has been added to **create** or **delete** Spatial Indexes on providers that support it.
+### Mogelijkheid: Toegevoegd Ruimtelijke index maken of verwijderen aan menu Beheren in Browser
+Een nieuwe optie voor het contextmenu is toegevoegd om Ruimtelijke indexen te **maken** of te **verwijderen** voor providers die dat ondersteunen.
 
 <img src="images/entries/797d36c2dd01a3e0120c3835d360861033d5b516.png" class="img-responsive img-rounded" />
 
@@ -796,71 +796,71 @@ Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Gegevensproviders
-### Feature: Add support for GML as a feature format for OAPIF
-The OGC API for Features source configuration now includes support for GML outputs. Users may select it in the combo box in the "Modify WFS Connection" dialog if the server exposes it as a feature format.<br />Several scenarios are supported:
-- Sources can be accessed with or without an XML schema available (through a rel=describedby link). As with WFS, the XML schema can be examined with the QGIS simple schema parser, or with GDAL GMLAS one, depending on the selected "Feature mode".
-- Features can be retrieved with or without a bulk download link available (provided through a rel=enclosure link)
+### Mogelijkheid: Ondersteuning toegevoegd voor GML als een objectindeling voor OAPIF
+De OGC API for Features bronconfiguratie bevat nu ondersteuning voor uitvoer van GML. Gebruikers kunnen die selecteren in het combinatievak in het dialoogvenster "WFS-verbinding bewerken" als de server dat weergeeft als een objectindeling.<br />Verscheidene scenario's worden ondersteund:
+- Toegang tot bronnen kan worden verkregen met of zonder een beschikbaar XML-schema (via een koppeling rel=describedby). Net als met WFS kan het XML-schema worden bestudeerd met de eenvoudige schemaparser van QGIS, of met GDAL GMLAS one, afhankelijk van de geselecteerde "Modus Object".
+- Objecten kunnen worden opgehaald met of zonder een koppeling voor een beschikbare bulkdownload (verschaft door een koppeling rel=enclosure)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Feature: Allow OAPIF users to select an alternate format than GeoJSON with which to download features
-Feature Services served from OGC API for Features sources that honour the `outputFormat` parameter in connection URIs should support additional output formats for retrieving features (e.g., FlatGeoBuf, GeoJSON, etc.). This allows users to select feature retrieval options other than GeoJSON from sources that support it for improved performance, compatibility, or extensibility according to their needs.<br />In the service connection dialog, users can use the new combo box to select their preferred output format. In addition, a new global setting for configuring "lastFeatureFormatEncoding" allows the previously defined value as the default for new connections.
+### Mogelijkheid: Gebruikers van OAPIF toestaan een andere indeling te kiezen dan GeoJSON waarmee objecten moeten worden gedownload
+Feature Services die worden geserveerd vanuit bronnen voor OGC API for Features die rekening houden met de parameter `outputFormat` in verbindings-URI's zouden aanvullende indelingen voor uitvoer moeten ondersteunen voor het ophalen van objecten (bijv. FlatGeoBuf, GeoJSON, etc.). Dit stelt gebruikers in staat om andere opties voor het ophalen van objecten te selecteren dan GeoJSON, uit bronnen die dat ondersteunen voor verbeterde prestaties, compatibiliteit, of uitbreidbaarheid, overeenkomstig hun noodzaken.<br />In het dialoogvenster voor de verbinding van de service kunnen gebruikers het nieuwe combinatievak gebruiken om hun geprefereerde indeling voor de uitvoer te selecteren. In aanvulling daarop maakt een nieuwe globale instelling voor het configureren van "lastFeatureFormatEncoding" het mogelijk de eerder gedefinieerde waarde als standaard voor nieuwe verbindingen te gebruiken.
 
 <img src="images/entries/3f0add13c921416314030ca3f9ff12118dd288b2.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
-### Feature: Allow update and delete for Field Domains in GPKG
-New menu items allow users to update and delete Field Domains on GPKG data sources. Requires GDAL \>= 3.12
+### Mogelijkheid: Bijwerken en verwijderen van velddomeinen in GPKG toestaan
+Nieuwe menu-items stellen gebruikers in staat om velddomeinen voor databronnen van GPKG bij te werken en te verwijderen. Vereist GDAL \>= 3.12
 
 <img src="images/entries/3e5c8b252b192ecd9022ac7a0a638307c46bc52f.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Save and import QGIS projects to PostgreSQL via Browser
-QGIS now natively supports the ability to save the current QGIS project to a PostgreSQL database, as well as import QGIS projects from a folder into a PostgreSQL database.<br />Two new menu entries for PostgreSQL connections are added:
-- One for saving the currently opened QGIS project directly to the schema.
-- The second item allows batch import of QGIS projects to the schema. Project names are checked for name collisions, and autoincrementing suffix values (e.g. `_1`, `_2`, etc.) are added if the project name already exists in the schema.
+### Mogelijkheid: QGIS-projecten opslaan en importeren in PostgreSQL via Browser
+QGIS ondersteunt nu zelf de mogelijkheid om het huidige project van QGIS op te slaan naar een database van PostgreSQL, alsook het importeren van projecten van QGIS uit een map naar een database van PostgreSQL.<br />Twee nieuwe menu-items voor verbindingen van PostgreSQL zijn toegevoegd:
+- Een voor het opslaan van het huidige geopende project van QGIS direct naar het schema.
+- Het tweede item maakt het in batch importeren mogelijk van projecten van QGIS naar het schema. Projectnamen worden gecontroleerd op botsingen met namen, en automatisch verhogende waarden voor achtervoegsels (bijv. `_1`, `_2`, etc.) worden toegevoegd als de projectnaam al bestaat in het schema.
 
 <img src="images/entries/b139e1711b8d62c9064db1df0e8bce5b242cea96.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Add Layer Properties info to PostgreSQL provider
-QGIS includes additional information in the **Layer Properties** for PostgreSQL layers, including:
-- Privileges for the user regarding the table
-- Estimation of rows
-- Information about spatial indexes
+### Mogelijkheid: Informatie Laageigenschappen toevoegen aan provider PostgreSQL
+QGIS bevat aanvullende informatie in de **Laageigenschappen** voor lagen van PostgreSQL, inclusief:
+- Rechten voor de gebruiker voor de tabel
+- Schatting van de rijen
+- Informatie over ruimtelijke indexen
 
 <img src="images/entries/37e33067b2665adbfd5202b1825df30a71b1ce37.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Add auth method for Planetary computer
-A new auth method is provided for use with the Microsoft Planetary Computer STAC catalog. The planetary computer requires using SAS sign tokens to access most assets' data, something that was implemented on the old STAC plugin but was missing from the core STAC implementation.<br />There are two modes for the new auth method:
-- One is for the Open version of Planetary Computer, performing the SAS signing for assets
-- The second is for Planetary Computer Pro GeoCatalogs, where, in addition to the SAS signing of assets, an OAuth2 authentication is also required<br />The new auth method can be used with STAC connections, or applied directly to individual gdal or point cloud layers whose data source is on the planetary computer. When a layer is added from a STAC catalog or directly using the data source manager, the `authcfg` will be appended to its URI so QGIS will use that config for the network requests. Authcfg encoding/decoding was also added to point cloud layers.
+### Mogelijkheid: Methode voor authenticatie Planetary computer toegevoegd
+Een nieuwe methode voor authenticatie wordt verschaft om te gebruiken met de Microsoft Planetary Computer STAC-catalogus. De Planetary Computer vereist het gebruiken van SAS-ondertekeningstokens voor toegang tot de meeste van de gegevens voor zijn onderdelen. Iets wat was geïmplementeerd in de oude plug-in voor STAC, maar ontbrak in de bronimplementatie voor STAC.<br />Er zijn nu twee modi voor de nieuwe methode voor authenticeren:
+- Een is voor de Open versie van Planetary Computer, die het ondertekenen met SAS uitvoert voor onderdelen
+- De tweede is voor Planetary Computer Pro GeoCatalogs, waar, in aanvulling op het ondertekenen met SAS van onderdelen, ook een authenticatie met OAuth2 vereist is<br />De nieuwe methode voor authenticatie kan worden gebruikt met verbindingen voor STAC, of direct worden toegepast op individuele GDAL- of puntenwolklagen waarvan de databron op Planetary Computer staat. Wanneer een laag wordt toegevoegd vanuit een catalogus van STAC of direct met Databronnen beheren, zal de `authcfg` worden toegevoegd aan zijn URI, dus zal QGIS die configuratie gebruiken voor de netwerkverzoeken. Authcfg coderen/decoderen werd ook toegevoegd aan puntenwolklagen.
 
 <img src="images/entries/0ed79ce1c54933c720853f364cdd505ea4292261.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Microsoft
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](https://github.com/uclaros)
-### Feature: QGIS Project Versioning in PostgreSQL
-For QGIS Projects that leverage the functionality to be stored directly in PostgreSQL, automatic version control can be enabled, which allows users to save, load, edit, and restore historic copies of their project. The process is mostly handled by a function and a trigger operation in the PostgreSQL Database, and multiple new menu items and dialogs have been provided to allow users granular control over the version management process.
+### Mogelijkheid: QGIS-projectversionering in PostgreSQL
+Voor projecten van QGIS die de functionaliteit verhogen om direct te worden opgeslagen in PostgreSQL, kan automatisch versiebeheer worden ingeschakeld. Dat stelt gebruikers in staat om historische kopieën van hun project op te slaan, te laden, te bewerken en te herstellen. Het proces wordt voor het grootste deel afgehandeld door een functie en een activatiebewerking in de database van PostgreSQL. Meerdere nieuwe menu-items en dialoogvensters worden verschaft om gebruikers fijn afgestemd beheer te geven over het proces voor versiebeheer.
 
 <img src="images/entries/e6362175a8d1662e590efecd2b1e48f62ec79c51.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Ocean Winds
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
-### Feature: Store connections available and default image format
-Stores in the settings the preferred format for a WMS connection.
+### Mogelijkheid: Beschikbare verbindingen opslaan en standaardindeling afbeeldingen
+Slaat in de instellingen de geprefereerde indeling voor een verbinding van WMS op.
 
-Allows to detect the formats actually advertized by the server and stores them in the settings for future use.
+Maakt het mogelijk de feitelijk door de server geadverteerde indelingen te detecteren en slaat die in de instellingen op voor toekomstig gebruik.
 
 <img src="images/entries/9736fdc6bcb34c3bbdf6d85cf3d9eaa567176313.png" class="img-responsive img-rounded" />
 
@@ -868,82 +868,82 @@ Dit werd mogelijk gemaakt door [QGIS-DE - Anwendergruppe Deutschland e.V.](https
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## QGIS Server
-### Feature: Try to reload invalid project layers
-In QGIS Server, there is an option to ignore bad layers; however, layers identified as bad may become available later on, such as a failed network service that recovers (web server/ database, etc.).<br />QGIS Server therefore has a new option for `QGIS_SERVER_RETRY_BAD_LAYERS`. If this option is set to true, the server checks upon each request if the bad layers are available again. If a layer is available, it is marked as valid and will be used by the server.
+### Mogelijkheid: Ongeldige projectlagen proberen te herladen
+In QGIS Server bestaat een optie om slechte lagen te negeren; maar lagen die zijn geïdentificeerd als slecht, zouden later toch beschikbaar kunnen komen, zoals een mislukte netwerkservice die zich herstelt (webserver/ database, etc.).<br />QGIS Server heeft daarom een nieuwe optie voor `QGIS_SERVER_RETRY_BAD_LAYERS`. Als deze optie is ingesteld op true, controleert de server bij elk verzoek of de slechts lagen opnieuw beschikbaar zijn. Als een laag beschikbaar is, wordt die gemarkeerd als geldig en zal deze door de server worden gebruikt.
 
 Dit werd mogelijk gemaakt door Stadtwerke München (SWM)
 
 Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
-### Feature: Implement GetFeatureInfo for mesh layers
-QGIS Server now provides responses for GetFeatureInfo requests on Mesh Layers.
+### Mogelijkheid: Implementeren GetFeatureInfo voor lagen met mazen
+QGIS Server verschaft nu antwoorden voor verzoeken GetFeatureInfo voor lagen met mazen.
 
 <img src="images/entries/fd8d94bd934381d9c5670b78bba29159ddcfcf93.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Jorge Gustavo Rocha](https://github.com/jgrocha)
-### Feature: OAPIF URL root path configuration option
-Make the OAPIF service root path configurable through a new server setting<br />QGIS_SERVER_API_WFS3_ROOT_PATH
+### Mogelijkheid: Optie voor configureren van bronpad voor URI van OAPIF
+Maak het bronpad voor de service OAPIF te configureren met een nieuwe instelling voor de server:<br />QGIS_SERVER_API_WFS3_ROOT_PATH
 
-Change the default from “/wfs3” to “/ogcapi”.
+Wijzig de standaard van “/wfs3” naar “/ogcapi”.
 
 Dit werd mogelijk gemaakt door [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Programmeerbaarheid
-### Feature: Add support for area3D to QgsGeometry
-The QgsGeometry Class is extended to include `area3D`, which is the 3-dimensional surface area of the geometry.
-- For a Point or a LineString, it is always equal to 0.
-- For a Polygon, it is equal to the 3D area of the exterior ring minus the 3d area of the interior rings.
-- For a Polyhedral and a TIN, it is equal to the sum of the 3d areas of all its patches.
-- For a GeometryCollection, it is equal to the sum of the 3d areas of all its geometries.
+### Mogelijkheid: Ondersteuning toegevoegd voor area3D aan QgsGeometry
+De klasse QgsGeometry is uitgebreid met `area3D`, wat het 3-dimensionale oppervlakgebied van de geometrie is.
+- Voor een punt of een lijn is het altijd gelijk aan 0.
+- Voor een polygoon is het gelijk aan het 3D-gebied van de buitenste ring minus het 3D-gebied van de binnenste ringen.
+- Voor een polyhedraal en een TIN is het gelijk aan de som van de 3D-gebieden van al zijn blokken.
+- Voor een GeometryCollection is het gelijk aan de som van de 3D-gebieden van al zijn geometrieën.
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
-### Feature: Add support for 3d points in pointsAreCollinear method of QgsGeometryutils
-Previous versions of the `QgsGeometryUtilsBase::pointsAreCollinear` method only worked for 2D points; it has now been extended to support 2D and 3D points and calls the corresponding `QgsGeometryUtilsBase` function. A new `QgsGeometryUtilsBase::points3DAreCollinear` has also been introduced, which works for 3D points.
+### Mogelijkheid: Ondersteuning toegevoegd voor 3D-punten in de methode pointsAreCollinear van QgsGeometryutils
+Eerdere versies van de methode `QgsGeometryUtilsBase::pointsAreCollinear` werkten alleen voor 2D-punten; het is nu uitgebreid om 2D- en 3D-punten te ondersteunen en roept de corresponderende functie `QgsGeometryUtilsBase` aan. Een nieuwe `QgsGeometryUtilsBase::points3DAreCollinear` is ook geïntroduceerd, die werkt voor 3D-punten.
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
-### Feature: Implement QgsVectorLayer.as_geopandas()
-The PyQgis API now provides a method to natively convert QgsVectorLayer objects to Geopandas dataframes, including the attributes. Note that this requires the GeoPandas library as a dependency in the QGIS Environment.
+### Mogelijkheid:  Implementatie van QgsVectorLayer.as_geopandas()
+De PyQgis API verschaft nu een methode om eigen objecten QgsVectorLayer te converteren naar gegevensframes van Geopandas, inclusief de attributen. Onthoud dat dit de bibliotheek GeoPandas vereist, als een afhankelijkheid in de omgeving van QGIS.
 
 <img src="images/entries/cf6f4588f8da7d899a519e10117847b68fcbe292.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
-### Feature: Expose 3D map tools to PyQgis API
-Users can now create custom map tools to interact with the 3D map canvas using the `Qgs3DMapTool` base class.
+### Mogelijkheid: Weergeven 3D-kaartgereedschappen in PyQgis API
+Gebruikers kunnen nu aangepaste kaartgereedschappen maken om te interacteren met het 3D-kaartvenster met de basisklasse `Qgs3DMapTool`.
 
 Dit werd mogelijk gemaakt door [SIGNON Deutschland GmbH](https://signon-group.com/en)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Expose 3D map canvas cross section mode to PyQgis API
-The 3D *Cross section tool* functionality is now exposed to the PyQgis API. One can now easily create and apply the four clipping planes to a 3D map view using Python and a 3D view's map coordinates.
+### Mogelijkheid: Weergeven 3D-kaartvenster modus Kruisdeel in PyQgis API
+De 3D-functionaliteit *Gereedschap Kruisdeel* wordt nu weergegeven in de PyQgis API. Men kan nu gemakkelijk de vier vlakken voor clippen maken en toepassen op een 3D-kaartweergave met Python en de kaartcoördinaten van een 3D-weergave.
 
 Dit werd mogelijk gemaakt door [SIGNON Deutschland GmbH](https://signon-group.com/en)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Refactor ray casting and expose to PyQgis API
-The duplicated `Ray3D` class has been removed in favor of `QgsRay3D`, which has had missing methods added accordingly. The exposure of `Qgs3DMapCanvas::castRay()` to the PyQgis API will effectively allow Python plugins to perform ray casting in 3D map canvases and manage the resulting hits.
+### Mogelijkheid: Ray casting opnieuw vorm gegeven en weergeven in PyQgis API
+De gedupliceerde klasse `Ray3D` is verwijderd ten faveure van `QgsRay3D`, waaraan de ontbrekende methoden overeenkomstig zijn toegevoegd. Het weergeven van `Qgs3DMapCanvas::castRay()` in de PyQgis API zal plug-ins van Python effectief toestaan ray casting uit te voeren in 3D-kaartvensters en de resulterende hits te beheren.
 
 Dit werd mogelijk gemaakt door [SIGNON Deutschland GmbH](https://signon-group.com/en)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
-### Feature: TemplatedLineSymbolLayer to enable blank areas implementation
-The QGIS API was extended to support the implementation of blank area operations in line with [QEP \#345](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/345).
+### Mogelijkheid: TemplatedLineSymbolLayer om inschakelen van blanco gebieden te implementeren
+De QGIS API werd uitgebreid om het implementeren van bewerkingen aan blanco gebieden te ondersteunen. In lijn met [QEP \#345](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/345).
 
 Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Port Hub distance algorithm to C++
-The Processing Hub distance algorithm has been ported from Python to C++.<br />This algorithm replaces Distance to nearest hub (points) and Distance to nearest hub (line to hub) algorithms as it produces two optional outputs as these two algorithms. The original algorithms are marked as deprecated.
+### Mogelijkheid: Algoritme Naaf afstand geporteerd naar C++
+Het algoritme voor Processing Afstand naaf is geporteerd van Python naar C++.<br />Dit algoritme vervangt de algoritmes Distance to nearest hub (points) en Distance to nearest hub (line to hub), omdat het twee optionele uitvoeringen produceert, net als die twee algoritmes. De originele algoritmes zijn gemarkeerd als vervallen.
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add support for SFCGAL library
-Native support for SFCGAL, an advanced geometric computations library, has been added to QGIS in line with [QEP \#340](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/340).<br />This feature adds two primary additional classes to the QGIS API:
-- QgsSfcgalEngine: Exposes SFCGAL C API to QGIS. Also adds memory and error management.
-- QgsSfcgalGeometry: Keeps a handle to SFCGAL geometry representation to reduce geometry conversion between QGIS and SFCGAL<br />Developed with support from:
+### Mogelijkheid: Ondersteuning toegevoegd voor bibliotheek SFCGAL
+Eigen ondersteuning voor SFCGAL, een geavanceerde geometrische bibliotheek voor berekeningen, is toegveoegd aan QGIS in lijn met [QEP \#340](https://github.com/qgis/QGIS-Enhancement-Proposals/pull/340).<br />Deze mogelijkheid voegt twee primaire aanvullende klassen toe aan de QGIS API:
+- QgsSfcgalEngine: Geeft de SFCGAL C API weer in QGIS. Voegt ook geheugen- en foutenbeheer toe.
+- QgsSfcgalGeometry: Bevat een hendel voor de weergave van geometrie van SFCGAL om converteren van geometrie te beperken tussen QGIS en SFCGAL<br />Ontwikkeld met ondersteuning van:
 - CEA/DAM
-- CP4SC/France Relance/European Union
-- Stadt Frankfurt am Main
+- CP4SC/France Relance/Europese Unie
+- Stad Frankfurt am Main
 - Oslandia
 - OPENGIS.ch
 
@@ -954,7 +954,7 @@ Deze mogelijkheid werd ontwikkeld door [Benoit D.-M. - oslandia](https://github.
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (QCooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
-| QGIS Server won't render VRT in WMS requests | [\#64733](https://github.com/qgis/QGIS/issues/64733) | Not a bug: local issue with setting the environment |  |
+| QGIS Server won't render VRT in WMS requests | [\#64733](https://github.com/qgis/QGIS/issues/64733) | Geen bug: lokaal probleem bij instellen van de omgeving |  |
 | QGIS Server ignores MAP override when QGIS_PROJECT_FILE is set | [\#64723](https://github.com/qgis/QGIS/issues/64723) | Won't fix (not a bug) |  |
 | Server: landingpage webapp only functions if built with server python plugins support | [\#64556](https://github.com/qgis/QGIS/issues/64556) | [PR \#64763](https://github.com/qgis/QGIS/pull/64763) | Nee |
 | Raster calculator fails when OpenCL acceleration is turned on | [\#64574](https://github.com/qgis/QGIS/issues/64574) | [PR \#64779](https://github.com/qgis/QGIS/pull/64779) | Nee |
@@ -975,18 +975,18 @@ Deze mogelijkheid werd ontwikkeld door [Benoit D.-M. - oslandia](https://github.
 | 'Fixed Interval' and 'Pretty Breaks' Graduated Renderers don't work when field has all the same values | [\#63277](https://github.com/qgis/QGIS/issues/63277) | [PR \#63298](https://github.com/qgis/QGIS/pull/63298) |  |
 | Identify Features tool ignores Transparency NoData value setting on PostGIS rasters | [\#63133](https://github.com/qgis/QGIS/issues/63133) | [PR \#63321](https://github.com/qgis/QGIS/pull/63321) |  |
 | Raise warning when trying to modify read-only layer with field calculator | [\#63111](https://github.com/qgis/QGIS/issues/63111) | [PR \#63337](https://github.com/qgis/QGIS/pull/63337) |  |
-| QGIS Server does not list one layer in WMS GetCapabilities if datum transformation is used | [\#61293](https://github.com/qgis/QGIS/issues/61293) | Cannot reproduce (again) |  |
+| QGIS Server does not list one layer in WMS GetCapabilities if datum transformation is used | [\#61293](https://github.com/qgis/QGIS/issues/61293) | Kan niet (meer) worden gereproduceerd |  |
 | QGIS Server Layer(s) not valid Exception with multiple projects using same WMS Layer | [\#62608](https://github.com/qgis/QGIS/issues/62608) | Kan niet worden gereproduceerd |  |
-| Adjusting min/max cumulative count cuts for rasters in layer styling panel | [\#63075](https://github.com/qgis/QGIS/issues/63075) | Cannot reproduce (feedback) |  |
+| Adjusting min/max cumulative count cuts for rasters in layer styling panel | [\#63075](https://github.com/qgis/QGIS/issues/63075) | Kan niet worden gereproduceerd (terugkoppeling) |  |
 | Refresh layer at interval has no effect after loading project | [\#63007](https://github.com/qgis/QGIS/issues/63007) | [PR \#63389](https://github.com/qgis/QGIS/pull/63389) |  |
 | Browser not showing CurvePolygons in LTR or Latest |  | [PR \#63404](https://github.com/qgis/QGIS/pull/63404) |  |
 | Copy one style category and paste it collectively to multiple layers removes the settings of the other style categories | [\#63167](https://github.com/qgis/QGIS/issues/63167) | [PR \#63408](https://github.com/qgis/QGIS/pull/63408) |  |
 | Value relation widget does excessive calls to PostGIS database | [\#63410](https://github.com/qgis/QGIS/issues/63410) | [PR \#63418](https://github.com/qgis/QGIS/pull/63418) |  |
-| Adding a network file vector layer ends with a lot of server calls for the same data | [\#63407](https://github.com/qgis/QGIS/issues/63407) | Cannot reproduce (feedback) |  |
+| Adding a network file vector layer ends with a lot of server calls for the same data | [\#63407](https://github.com/qgis/QGIS/issues/63407) | Kan niet worden gereproduceerd (terugkoppeling) |  |
 | Sld export error with expression based labels | [\#63402](https://github.com/qgis/QGIS/issues/63402) | [PR \#63419](https://github.com/qgis/QGIS/pull/63419) |  |
 | Selective pasting style does not change the ‘Automatically insert into print layout legend elements’ setting in raster layers | [\#63346](https://github.com/qgis/QGIS/issues/63346) | [PR \#63430](https://github.com/qgis/QGIS/pull/63430) |  |
 | Value Relation with current_value() not updating when changes made outside of the attribute form | [\#63448](https://github.com/qgis/QGIS/issues/63448) | [PR \#63468](https://github.com/qgis/QGIS/pull/63468) |  |
-| @current_feature VS @feature | [\#63488](https://github.com/qgis/QGIS/issues/63488) | Not a code bug (maybe documentation) |  |
+| @current_feature VS @feature | [\#63488](https://github.com/qgis/QGIS/issues/63488) | Geen bug in de code (misschien in documentatie) |  |
 | Qgis Desktop does not honor layer order in get capabilites in external wms | [\#62918](https://github.com/qgis/QGIS/issues/62918) | [PR \#63492](https://github.com/qgis/QGIS/pull/63492) |  |
 | Using "Subset filter" from the "Execute SQL" dialog is not applied | [\#62542](https://github.com/qgis/QGIS/issues/62542) | [PR \#63605](https://github.com/qgis/QGIS/pull/63605) |  |
 | SQL editor allow undo after clear | [mail thread](https://lists.osgeo.org/pipermail/qgis-developer/2025-October/067839.html) | [PR \#63621](https://github.com/qgis/QGIS/pull/63621) |  |
@@ -1006,7 +1006,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (QCooperative)](https
 | building master in pkgsrc; mostly ok! | [mail thread](https://lists.osgeo.org/pipermail/qgis-developer/2026-February/068072.html) | Is geen probleem |  |
 | Rasters with GCPs and overviews render incorrectly when zoomed out | [\#65011](https://github.com/qgis/QGIS/issues/65011) | [PR \#13968](https://github.com/OSGeo/gdal/pull/13968) | N/B |
 | Huge Performance Regression using VRTs on Versions \> 3.40.6 | [\#63293](https://github.com/qgis/QGIS/issues/63293) | [PR \#13116](https://github.com/OSGeo/gdal/pull/13116) | N/A (GDAL fix) |
-| Problème lecture shapefile | [\#63787](https://github.com/qgis/QGIS/issues/63787) | [PR \#4599](https://github.com/OSGeo/PROJ/pull/4599) | N/A (PROJ fix) |
+| Problème lecture shapefile | [\#63787](https://github.com/qgis/QGIS/issues/63787) | [PR \#4599](https://github.com/OSGeo/PROJ/pull/4599) | N/B (reparatie PROJ) |
 | USE_PRECOMPILED_HEADERS related issue | [mail thread](https://lists.osgeo.org/pipermail/qgis-developer/2025-November/067871.html) | [PR \#63794](https://github.com/qgis/QGIS/pull/63794) | [PR \#63811](https://github.com/qgis/QGIS/pull/63811) |
 | Crash trying to open a shapefile | [\#63826](https://github.com/qgis/QGIS/issues/63826) | [PR \#13350](https://github.com/OSGeo/gdal/pull/13350) | N/A (GDAL fix) |
 | Replace all remaining uses of connect(,SIGNAL,,SLOT) in src/ | Niet gerapporteerd | [PR \#63832](https://github.com/qgis/QGIS/pull/63832) | N/B |
@@ -1037,7 +1037,7 @@ Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.sp
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
-### Feature: Bug Fixes by Denis Rouzaud (OPENGIS)
+### Mogelijkheid: Reparaties van problemen door Denis Rouzaud (OPENGIS)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Attribute table forced to be dockable and non modal - Crash several times | [\#62416](https://github.com/qgis/QGIS/issues/62416) | [PR \#64954](https://github.com/qgis/QGIS/pull/64954) | [PR \#64954](https://github.com/qgis/QGIS/pull/64954) |
@@ -1067,7 +1067,7 @@ Deze mogelijkheid werd ontwikkeld door [Germán Carrillo (OPENGIS)](https://open
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.40 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Tabbing to start of custom formatted Date/Time field in attribute form not working | [\#65022](https://github.com/qgis/QGIS/issues/65022) | [PR \#65023](https://github.com/qgis/QGIS/pull/65023) |  |
-| Plugin manager shows changelog of current version, even for upgradable plugins | [\#64792](https://github.com/qgis/QGIS/issues/64792) | tbd |  |
+| Plugin manager shows changelog of current version, even for upgradable plugins | [\#64792](https://github.com/qgis/QGIS/issues/64792) | nog te doen |  |
 | QGIS does not request default style for WMS layer when in group/container | [\#63754](https://github.com/qgis/QGIS/issues/63754) | [PR \#65081](https://github.com/qgis/QGIS/pull/65081) |  |
 | Several issues with a temporal WMS (only one image is displayed using the Temporal Controller) I | [\#64099](https://github.com/qgis/QGIS/issues/64099) | [PR \#64925](https://github.com/qgis/QGIS/pull/64925) |  |
 | Several issues with a temporal WMS (only one image is displayed using the Temporal Controller) II | [\#64099](https://github.com/qgis/QGIS/issues/64099) | [PR \#64863](https://github.com/qgis/QGIS/pull/64863) |  |

@@ -760,7 +760,7 @@ Dit werd mogelijk gemaakt door [North Road](https://north-road.com/)
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 ### Mogelijkheid: Ondersteuning voor typen geometrie voor uitvoer in modellen
-Invoer voor kind-algoritmes van Model worden nu gefilterd tot die welke toepasbare typen geometrie genereren voor de invoer van een ander kind-algortime
+Invoer voor kind-algoritmes van Model worden nu gefilterd tot die welke toepasbare typen geometrie genereren voor de invoer van een ander kind-algoritme
 
 Deze mogelijkheid werd ontwikkeld door Alexander Bruy
 ### Mogelijkheid: Drempel voor hoek voor algoritme voor gladder maken

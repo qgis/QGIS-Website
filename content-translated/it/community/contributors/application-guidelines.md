@@ -19,7 +19,7 @@ If you've been actively supporting the QGIS community, we encourage you to apply
 
 <div style="text-align:center;">
   <a href="https://forms.gle/wZr4EfCjqPWGaoq37" class="button is-success">
-    🚀 Apply Now
+    🚀 Candidati ora
   </a>
 </div>
 
@@ -27,10 +27,10 @@ If you've been actively supporting the QGIS community, we encourage you to apply
 
 {{<rich-box-end >}}
 ____
-## Who Can Apply?
+## Chi può presentare domanda?
 Both **individuals** and **organizations** who contribute to QGIS in non-code capacities are eligible to apply.
-### Eligible Contribution Types
-- ✅ **QGIS Project Steering Committee** member
+### Tipi di contributi ammissibili
+- ✅ Membro del **Comitato direttivo del progetto QGIS (PSC)**
 - ✅ **Open Days** organizer or active participant
 - ✅ **Country User Group Coordinator**
 - ✅ **Changelog Contributor**
@@ -41,9 +41,9 @@ Both **individuals** and **organizations** who contribute to QGIS in non-code ca
 - ✅ **Issue Tracker Moderator**
 
 ____
-## Application Requirements
+## Requisiti per la candidatura
 ### Informazioni obbligatorie
-#### For All Applicants:
+#### Per tutti i candidati:
 1. **Email Address** *(required)*
    - Your contact email
 2. **Type** *(required)*
@@ -87,7 +87,7 @@ ____
 ## What Happens After You Apply?
 ### Review Process
 1. **Submission:** Complete the [application form](https://forms.gle/wZr4EfCjqPWGaoq37)
-2. **Review:** The QGIS Project Steering Committee (PSC) reviews all submissions
+2. **Revisione:** Il Comitato direttivo del progetto QGIS (PSC) esamina tutte le proposte presentate
 3. **Timeline:** Reviews are conducted **monthly**
 4. **Notification:** You'll be contacted about your application status
 5. **Publication:** Approved contributors appear on the [Supporting Contributors page](/community/contributors/supporting/)

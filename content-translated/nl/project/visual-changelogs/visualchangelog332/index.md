@@ -415,7 +415,7 @@ Individuele algoritmes voor Processing mogen nu een omgevingsinstelling hebben o
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Toestaan dat dialoogvenster van Processing de standaard instellingen voor de context van Processing te overschrijven
-Een nieuwe instelling \"Instellingen voor algoritme\" is toegevoegd aan de knop Geavanceerd van de interface voor algoritmes voor Processing. Selecteren ervan geeft een paneel weer dat gebruikers in staat stelt algemene instellingen van Processing, die van toepassing zijn voor een **bepaalde instantie** van de uitvoering van het algoritme, te beheren. Het is bedoeld als een plaats waar een gebruiker de globale instellingen voor Processing kan overschrijven op een ad-hocbasis, zonder hun gewone standaardinstellingen te moeten wijzigen.
+Een nieuwe instelling \"Instellingen voor algoritme\" is toegevoegd aan de knop Geavanceerd van de interface voor algoritmes voor Processing. Selecteren ervan geeft een paneel weer dat gebruikers in staat stelt algemene instellingen van Processing, die van toepassing zijn voor een **bepaalde instantie** van de uitvoering van het algoritme, te beheren. Het is bedoeld als een plaats waar een gebruiker de globale instellingen voor Processing kan overschrijven op een ad hocbasis, zonder hun gewone standaardinstellingen te moeten wijzigen.
 
 Bevat instellingen voor:
 - afhandelen van ongeldige geometrieën (Anders dan de bestaande instelling per-parameter overschrijven hiervoor, zal het instellen van de afhandelingsmethode hier van toepassing zijn op ALLE invoer voor het algoritme)

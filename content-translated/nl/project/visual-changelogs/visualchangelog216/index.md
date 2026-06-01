@@ -595,7 +595,7 @@ Deze mogelijkheid werd ontwikkeld door [Arnaud Morvan (Camptocamp)](http://www.c
 ### Mogelijkheid: Ondersteuning voor het scrhijven van tabellen zonder geometrie
 Het algoritme OutputVector ondersteunt nu het schrijven van tabellen zonder geometrie.
 
-Momenteel was dit alleen toegepast voor het algoritme Refactor Fields maar kon eenvoudig worden uitgebreid naar andere op attributen gebaseerde algortimen.
+Momenteel was dit alleen toegepast voor het algoritme Refactor Fields maar kon eenvoudig worden uitgebreid naar andere op attributen gebaseerde algoritmen.
 
 Dit werd mogelijk gemaakt door [MEDDE (Franse Ministerie voor Duurzame Ontwikkeling)](http://www.developpement-durable.gouv.fr)
 

@@ -10,7 +10,7 @@ type: page
 # Ringraziamenti ai contributori
 Singoli, istituzioni e aziende che hanno contribuito al codice di QGIS possono rendere visibile il loro contributo con:
 * adding a short note on the commit itself (something like “Funded by …); please keep wording to an absolute minimum
-* aggiungendo un commento al changelog per la prima versione dove il codice è stato incorporato, sul modello di:
+* aggiungere un commento al changelog per la prima versione dove il codice è stato incorporato, sul modello di:
 
 ```
 This feature was funded by: Olmiomland <http://olmiomland.ol>

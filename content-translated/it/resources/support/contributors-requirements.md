@@ -13,7 +13,7 @@ Diamo il benvenuto ai nuovi contributori nella nostra comunità - vogliamo che t
 - Abide by the [Social Contract](#social-contract).
 - Be familiar with the development process and the reference material available in the [Developers Guide for QGIS](https://docs.qgis.org/testing/en/docs/developers_guide/index.html), and the [CODING document](https://github.com/qgis/QGIS/blob/master/CONTRIBUTING.md) in the root of the QGIS Sources.
 - Ensure that all code committed to the repository is unencumbered and compatible with the [QGIS license]({{< relref "license" >}}), GNU Public License (GPL) Version 2 or any later version.
-- Not use or include any code that will cause a trademark or patent infringement. If you are unsure, ask on the [developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) or contact a [Project Steering Committee]({{< relref "community/organisation/#project-steering-committee" >}}) member.
+- Non utilizzare o includere alcun codice che possa costituire una violazione di marchi registrati o brevetti. In caso di dubbi, chiedi nella [mailing list degli sviluppatori]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) oppure contatta un membro del [Comitato direttivo del progetto]({{< relref "community/organisation/#project-steering-committee" >}}).
 - Join the [qgis-developer mailing list]({{< relref "community/organisation/mailinglists/#qgis-developers-list" >}}) and contribute to discussions
 - Questi requisiti si applicano sia agli sviluppatori che desiderano i privilegi di commit che a quelli che inviano le patch.
 - Read and agree to the [Code of Conduct]({{< relref "conduct" >}}).

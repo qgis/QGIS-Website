@@ -209,7 +209,7 @@ It is now possible to copy the statistics panel\'s output table into the clipboa
 
 This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### Feature: Search Settings, Options, and Project Properties pages from locator
-Short video: <https://www.youtube.com/watch?v=duB2YekUmV0>
+Breve video: <https://www.youtube.com/watch?v=duB2YekUmV0>
 
 The new filter presents itself with a prefix of \"s\" and with tr( \"Settings\" ) as displayname.
 
@@ -270,7 +270,7 @@ This feature was developed by [David Signer, OPENGIS.ch](https://opengis.ch)
 ### Feature: Allow using a URL for custom attribute forms (UI file)
 The UI file will be downloaded on every session on the first usage. This makes it possible to easily distribute updated UI files to clients.
 
-This feature was funded by [SIRS](http://www.sirs-fr.com)
+Questa funzionalità è stata finanziata da [SIRS](http://www.sirs-fr.com)
 
 This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
 ### Feature: Drill-down (cascading) forms

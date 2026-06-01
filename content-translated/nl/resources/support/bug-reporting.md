@@ -25,19 +25,19 @@ Elk deel van het project QGIS heeft een toegewezen plaats waar problemen (verzoe
 | QGIS Feed Website (https://feed.qgis.org) | https://github.com/qgis/qgis-feed/issues |
 | Externe plug-ins | De opslagplaats die door de auteur is ingesteld in de beschrijving van de plug-in |
 
-For help and questions, please contact the [Mailing lists]({{< ref "community/organisation/mailinglists" >}}).
+Voor hulp en vragen, neem contact op met de [mailinglijsten]({{< ref "community/organisation/mailinglists" >}}).
 ## Problemen rapporteren over toepassingen van QGIS
-QGIS applications (QGIS Desktop and QGIS Server) issues are available in [Github](https://github.com/qgis/QGIS/issues). In order to submit or comment a report, you need to register and login.
+Problemen voor toepassingen voor QGIS (QGIS Desktop en QGIS Server) zijn beschikbaar in  [Github](https://github.com/qgis/QGIS/issues). U dient zich te registreren en in te loggen als u een rapport wilt indienen of daarbij een opmerking wilt achterlaten.
 ### Vóór het rapporteren van een probleem
-Before filing an issue, verify that you are running the currently supported versions {{< param "ltrrelease" >}} or {{< param "release" >}} or the development version {{< param "devversion" >}} (see also [Release schedule]({{< ref "resources/roadmap#release-schedule" >}})) and review the currently open issues to make sure that you aren’t creating a duplicate. If you have additional information on an issue, you can add it to the existing ticket. Third party plugins might also cause problems. If you have installed any, you should also verify that the problem is still reproducible without them. Please don’t report multiple unrelated bugs in a single bug report.
+Controleer, voordat u een fout gaat registreren, of u de momenteel ondersteunde versies {{< param "ltrrelease" >}} of {{< param "release" >}} uitvoert of de ontwikkelversie {{< param "devversion" >}} (bekijk ook [het uitgaveschema]({{< ref "resources/roadmap#release-schedule" >}})) en bekijk de momenteel nog openstaande problemen om er zeker van te zijn dat u geen duplicaat maakt. Wanneer u aanvullende informatie heeft voor een bestaand ticket, kunt u die hieraan toevoegen. Plug-ins van derden kunnen ook leiden tot problemen. Wanneer u plug-ins hebt geïnstalleerd, controleer of de fout zich ook voordoet zonder geïnstalleerde plug-ins. Rapporteer niet meerdere fouten in één ticket als die niets met elkaar te maken hebben. 
 
-When you’re logged in, a `New Issue` button is available. Select it and follow the instructions there.
+Als u bent ingelogd, is een knop `New Issue` beschikbaar. Selecteer die en volg de instructies die daar gegeven worden.
 
-Before sending the report, please check the formatting of your report by clicking on “Preview”. Please avoid editing existing reports, if not for typos. Better add further comments in any other case.
+Controleer de opmaak van uw rapport door te klikken op “Preview” vóór u het probleem verzendt. Vermijd het bewerken van bestaande rapporten, met uitzondering van typefouten. Voeg verder opmerkingen liever in een afzonderlijke aanvulling toe.
 #### Maken van een backtrace
 Als u een crash heeft zou het handig zijn om een backtrace op te nemen omdat het probleem misschien niet te reproduceren is op een andere machine.
 
-On Linux QGIS automatically tries to use `gdb` to connect to the crashing process to produce a backtrace. But some distributions disable the possiblity to connect debuggers to a running processes. In that case `gdb` only produces a rather useless message like:
+Op Linux probeert QGIS automatisch `gdb` te gebruiken om te verbinden met het gecrashte proces om een backtrace te produceren. Maar sommige distributies schakelen de mogelijkheid om debuggers met lopende processen te verbinden uit. In dat geval produceert `gdb` alleen een nogal onbruikbaar bericht zoals:
 
 QGIS died on signal 11Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf ptrace: Operation not permitted. No thread selected No stack. gdb returned 0 Aborted (core dumped)
 

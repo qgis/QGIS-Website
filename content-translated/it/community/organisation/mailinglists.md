@@ -44,11 +44,11 @@ Questa lista si occupa delle traduzioni. Chi desidera lavorare alla traduzione d
 
 You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-tr@lists.osgeo.org](mailto:qgis-tr@lists.osgeo.org).
 
-Lista del Comitato Direttivo del Progetto (PSC) QGIS
+Lista del Comitato direttivo del progetto QGIS (PSC)
 -
-Questa lista è utilizzata per discutere le questioni del comitato direttivo relative alla gestione e alla direzione generale di QGIS.
+Questa lista è utilizzata per discutere le questioni del Comitato direttivo relative alla gestione e alla direzione generale di QGIS.
 
-{{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="Lista del Comitato Direttivo del Progetto (PSC) QGIS" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
+{{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="Lista del Comitato direttivo del progetto QGIS (PSC)" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 
 You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-psc@lists.osgeo.org](mailto:qgis-psc@lists.osgeo.org).
 

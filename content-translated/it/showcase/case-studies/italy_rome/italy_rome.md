@@ -50,7 +50,7 @@ Il modello prende come input (Fig. 2):
 
 Quando viene lanciato, il modello esegue le seguenti operazioni:
 - Lo strumento GRASS v.to.rast.attribute converte le curve di livello in raster, prendendo come input lo shapefile del contorno, il nome del campo z e la risoluzione del raster;
-- Lo strumento GRASS r.surf.contour genera il modello di elevazione prendendo come input l'output temporaneo rasterizzato del passo precedente e la risoluzione del raster;
+- Lo strumento GRASS r.surf.contour genera il modello di elevazione prendendo come ingresso il risultato temporaneo rasterizzato del passo precedente e la risoluzione del raster;
 - The GDAL tool "gdaldem" generates the slope expressed as degrees from the elevation model;
 - Lo strumento GRASS r.mapcalculator è utilizzato per generare un raster a 1 bit che identifica le aree con pendenza superiore a 15 gradi (questo valore è codificato nelle linee guida di microzonazione, e quindi è fisso), utilizzando l'espressione:
 

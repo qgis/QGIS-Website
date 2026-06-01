@@ -15,6 +15,6 @@ Sebbene gran parte del lavoro del nostro progetto sia di natura tecnica, noi val
 
 Contatti utili:
 
-QGIS PSC (Project Steering Commity: [psc@qgis.org](mailto:psc@qgis.org))
+PSC di QGIS (Comitato direttivo del progetto: [psc@qgis.org]  (mailto:psc@qgis.org))
 
 {{<content-end >}}

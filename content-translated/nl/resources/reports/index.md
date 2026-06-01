@@ -10,29 +10,29 @@ type: page
 ---
 {{<content-start >}}
 # Dagelijkse rapporten
-We generate reports on a daily basis to monitor the status of QGIS Server.
+We maken rapporten op een dagelijkse basis om de status van QGIS Server te monitoren.
 ## OGC Certificatie
-QGIS Server 3.28 is currently certified for WMS 1.3.0 (see [OGC Reference Implementation](http://www.opengeospatial.org/resource/products)).
+QGIS Server 3.28 is momenteel gecertificeerd voor WMS 1.3.0 (zie [OGC Reference Implementation](http://www.opengeospatial.org/resource/products)).
 
 ![](qgis_server_wms_ogc_badge.png)
 
-In order to detect regressions, OGC tests are run daily basis **master** branch. Reports are generated for several OGC testsuites:
+Om regressies te detecteren, worden op dagelijkse basis testen van OGC uitgevoerd op de branch **master**. Rapporten worden gegenereerd voor verscheidene testpakketten van OGC:
 - WMS 1.3.0 : http://test.qgis.org/ogc_cite/wms_130/
 - OGC API Features (alias WFS 3) : http://test.qgis.org/ogc_cite/ogcapif/
 - WFS 1.1.0 : http://test.qgis.org/ogc_cite/wfs_110/
 
-Latest reports are [WMS 1.3.0](http://test.qgis.org/ogc_cite/wms_130/latest/report.html) and [WFS 1.1.0](http://test.qgis.org/ogc_cite/wfs_110/latest/report.html).
+De laatste rapporten zijn [WMS 1.3.0](http://test.qgis.org/ogc_cite/wms_130/latest/report.html) en [WFS 1.1.0](http://test.qgis.org/ogc_cite/wfs_110/latest/report.html).
 ## Uitvoering
-At the moment, two tools are available to test and generate performance reports.
+Op dit moment zijn twee programma's beschikbaar voor testen en het maken van rapporten over prestaties.
 
-The first one is [MS-Perfs](https://github.com/camptocamp/ms_perfs) which supports comparison of QGIS Server with other map servers (like GeoServer or MapServer). Reports are generated weekly and available [here](http://test.qgis.org/perf_test/ms_perf/).
+Het eerste is [MS-Perfs](https://github.com/camptocamp/ms_perfs) wat het mogelijk maakt QGIS Server te vergelijken met andere kaartservers (zoals GeoServer of MapServer). Rapporten worden wekelijks gegenereerd en zijn [hier](http://test.qgis.org/perf_test/ms_perf/) beschikbaar.
 
-The second one is [Graffiti](https://github.com/pblottiere/graffiti), which supports comparing versions of QGIS Server and/or specific project options (parallel rendering, trust option, and so on). Reports are also generated daily, and are available [at](http://test.qgis.org/perf_test/graffiti/). Note that [QGIS-Server-PerfSuite](https://github.com/Oslandia/QGIS-Server-PerfSuite) provides the deployment infrastructure to run Graffiti in continuous integration.
+Het tweede is [Graffiti](https://github.com/pblottiere/graffiti), dat het vergelijken ondersteunt van verschillende versies van QGIS Server en/of specifieke projectopties (parallell renderen, optie vertrouwen, enzovoort). Rapporten worden ook dagelijks gegenereerd en zijn beschikbaar [op](http://test.qgis.org/perf_test/graffiti/). Onthoud dat het project [QGIS-Server-PerfSuite](https://github.com/Oslandia/QGIS-Server-PerfSuite) de uitvoeringsinfrastructuur is om Graffiti uit te voeren in doorlopende integratie.
 ## Beveiliging
-A global overview of our security can be found using the [OpenSSF Scorecard report tool](https://securityscorecards.dev/viewer/?uri=github.com/qgis/QGIS).
+Een globaal overzicht van onze beveiliging is te vinden met het [gereedschap OpenSSF Scorecard report](https://securityscorecards.dev/viewer/?uri=github.com/qgis/QGIS).
 
-This gives a quick overview of the best practices used in QGIS project. Some practices are however not applicable to a desktop GUI, like Fuzz testing, or Pinned Dependencies.
+Dat geeft een snel overzicht van de beste werkwijzen die in het project QGIS worden gebruikt. Sommige werkwijzen zijn echter niet toe te passen op een gebruikersinterface voor een desktop, zoals Fuzz testing, of Pinned Dependencies.
 
-Security is a permanent process, more details about our security approach are available on [our dedicated page](/resources/support/security/).
+Beveiliging is een permanent proces; meer details over onze benadering van beveiliging zijn beschikbaar op [onze aangewezen pagina](/resources/support/security/).
 
 {{<content-end >}}

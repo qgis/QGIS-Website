@@ -817,7 +817,7 @@ This feature was developed by [Loïc Bartoletti (Oslandia)](https://www.oslandia
 ### Feature: Bug fixes by Stephen Knox
 | Bug Title | URL issues (if reported) | URL PR or commit |----|----|----|----| | Allow editing of postgres JSON fields from Text Edit Widget | [#29361](https://github.com/qgis/QGIS/issues/29361) | [#30758](https://github.com/qgis/QGIS/pull/30758)
 
-This feature was developed by Stephen Knox
+Questa funzionalità è stata sviluppata da Stephen Knox
 ### Feature: Bug fixes by Alessandro Pasotti
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -903,7 +903,7 @@ Questa funzionalità è stata sviluppata da Alexander Bruy
 
 | Auxiliary storage not usable in non editable layer | [#30376](https://github.com/qgis/QGIS/issues/30376) | Feedback (works on master and 3.10) | - |
 
-| Labels Buffer DD options do not have fields set and do not render in map canvas | [#28544](https://github.com/qgis/QGIS/issues/28544) | [PR #34153](https://github.com/qgis/QGIS/pull/34153) | risky |
+| Le opzioni del buffer DD non hanno campi impostati e non vengono visualizzate nell'area di lavoro della mappa | [#28544](https://github.com/qgis/QGIS/issues/28544) | [PR #34153](https://github.com/qgis/QGIS/pull/34153) | risky |
 
 | QGIS does not load embedded layers when opening projects | [#34060](https://github.com/qgis/QGIS/issues/34060) | [PR #34311](https://github.com/qgis/QGIS/pull/34311) | [PR #34706](https://github.com/qgis/QGIS/pull/34706) |
 
