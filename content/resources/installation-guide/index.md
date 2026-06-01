@@ -602,7 +602,7 @@ All packages include GRASS and Python support.
 
 All openSUSE Geo repositories can be found here: https://download.opensuse.org/repositories/Application:/Geo/
 
-Install QGis with this command:
+Install QGIS with this command:
 
 ```
 sudo zypper in qgis qgis-plugin-grass 
