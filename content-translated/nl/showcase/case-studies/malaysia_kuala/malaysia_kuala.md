@@ -16,7 +16,7 @@ De studie accentueerde de voors en tegens van het aanpassen van een module en he
 
 Het departement promootte uiteindelijk het pakket QGIS-GRASS in plaats van alleen QGIS omdat dat het meest krachtige en nuttige werd bevonden voor doeleinden met betrekking tot planning van steden, zoals het opschonen van fouten in topologie en het overwinnen van de beperkingen van standaard invoer. Dat was slechts het begin.
 
-![Northern Project Office get QGIS training](./images/malaysia_kuala2.png){.align-right}
+![Northern Project Office krijgt training in QGIS](./images/malaysia_kuala2.png){.align-right}
 
 Om bevindingen te centraliseren en te delen met betrekking tot het gebruiken van QGIS voor doeleinden van stedelijke planning die ook op andere gebieden, die werken met ruimtelijke analyses, zouden kunnen worden gebruikt, werd een niet officieel blog opgestart door de auteur, genaamd "QGIS MALAYSIA" op <http://www.qgismalaysia.blogspot.com> om een QGIS-gemeenschap in Maleisië op te bouwen. Externe agentschappen leken meer interesse te hebben in QGIS dan JPBD zelf en op hun verzoek gaf JPBD QGIS-training aan het Fire and Safety Department en ook het Ministry of Education dat later was overtuigd dat QGIS hun de facto gereedschap voor GIS zal zijn.
 

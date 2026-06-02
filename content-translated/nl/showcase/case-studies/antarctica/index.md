@@ -3,16 +3,17 @@ author: Anders Skoglund en Kenichi Matsuoka
 categories:
 - Praktijkvoorbeelden
 date: '2015-04-01'
-description: Quantarctica is a collection of Antarctic geographical datasets, such
-  as base maps, satellite imagery, glaciology and geophysics data from data centres
-  around the world, prepared for viewing in QGIS.
+description: Quantarctica is een collectie van Antarctische geografische gegevenssets,
+  zoals basiskaarten, satellietafbeeldingen, glaciologische en geofysische gegevens
+  uit gegevenscentra over de gehele wereld, voorbereid om te worden weergegeven in
+  QGIS.
 draft: 'true'
 heroImage: ''
 tags:
 - gegevens
 - antarctic
-- case-study
-- showcase
+- praktijkvoorbeeld
+- gebruiksgeval
 thumbnail: quantarctica3.jpg
 title: 'Quantarctica: Een Antarctisch GIS-pakket'
 type: showcase/case-studies
@@ -20,19 +21,19 @@ type: showcase/case-studies
 ---
 {{<content-start classes="notification is-light" >}}
 
-Quantarctica is a collection of Antarctic geographical datasets, such as base maps, satellite imagery, glaciology and geophysics data from data centres around the world, prepared for viewing in QGIS. The package is developed by the Norwegian Polar Institute, as a tool for the research community, for classrooms and for operational use in Antarctica --\-- freely available for non-commercial purposes.
+Quantarctica is een collectie van Antarctische geografische gegevenssets, zoals basiskaarten, satellietafbeeldingen, glaciologische en geofysische gegevens uit gegevenscentra over de gehele wereld, voorbereid om te worden weergegeven in QGIS. Het pakket is ontwikkeld door het Noorse Polar Institute, als een programma voor de onderzoeksgemeenschap, voor scholen en voor operationeel gebruik in Antarctica –\-- gratis beschikbaar voor niet-commerciële doeleinden.
 ## Over het project
-![Screenshot from Quantarctica, showing one of the subglacial lakes datasets.](quantarctica.jpg)
+![Schermafbeelding van Quantarctica, die een van de gegevenssets van subglaciale meren toont.](quantarctica.jpg)
 
-Quantarctica (QGIS + Antarctica) was first developed for in-house use at the Norwegian Polar Institute, as a tool for our glaciologists. There was a need for a low or no cost complete GIS with essential datasets ready-to-use, easy-to-use, functionality rich and with offline capabilities. QGIS seemed to be a perfect choice of GIS for the collected datasets.
+Quantarctica (QGIS + Antarctica) werd eerst voor intern gebruik ontwikkeld aan het Noorse Polar Institute, als een programma voor onze glaciologen. Er was behoefte aan een complete GIS met essentiële gegevenssets tegen lage of geen kosten, klaar om te gebruiken, eenvoudig te gebruiken, rijk aan functionaliteit en met mogelijkheden voor gebruik offline. QGIS leek een perfecte keuze als GIS voor de verzamelde gegevenssets.
 
 Quantarctica is gebruikt om de geografische gegevens te bestuderen van continentale schaal tot detail schaal, voor het bekijken van wetenschappelijke projectgegevens bovenop de basiskaarten of samen met andere wetenschappelijke gegevenssets, en voor het maken van kaarten voor publicatie en voorstellen. Quantarctica heeft tot nu toe bewezen een geweldig hulpmiddel te zijn, en een zeer goed alternatief en aanvulling voor andere software gebruikt door de onderzoekers. Het heeft onze onderzoekers nieuwe mogelijkheden geboden in hun dagelijks werk. 
 
-![Quantarctica is also useful when navigating on the Antarctic ice shelves thanks to the GPS tracking capabilities within QGIS.](quantarctica2.jpg)
+![Quantarctica is ook nuttig bij het navigeren op de Antarctische ijsplateaus dankzij de ondersteuning van GPS tracking binnen QGIS.](quantarctica2.jpg)
 
 Sinds Quantarctica voor het eerst gebruikt werd door onze glaciologen, drie jaar geleden, zijn er veel verzoeken geweest vanuit de onderzoeksgemeenschap buiten het instituut om dit product te delen, en zijn we begonnen om een publieke verbeterde versie van de versie die binnenshuis werd gebruikt. Na deze in het veld getest te hebben, en na het toevoegen van nieuwe relevante datasets, was Quantarctica versie 1.0 eindelijk gereed en beschikbaar om te downloaden in juli 2013.
 
-Quantarctica is to be all about community effort. With contributions we aim to expand with data from other disciplines, such as oceanography, atmospheric sciences, geology and biology, and hope and believe that this tool can be useful for the Antarctic community as a complete Antarctic GIS package.
+Quantarctica komt door gemeenschappelijke inzet. Met bijdragen richten we ons op het uitbreiden van de gegevens vanuit andere disciplines, zoals oceanografie, atmosferische wetenschappen, geologie en biologie, en hopen en geloven we dat dit programma waardevol kan zijn voor de Antarctische gemeenschap, als een volledig Antarctisch GIS pakket.
 ## Links
 - Quantarctica website: <http://quantarctica.org/>
 - Norwegian Polar Institute: <http://www.npolar.no/en/>

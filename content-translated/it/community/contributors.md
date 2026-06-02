@@ -69,7 +69,7 @@ Celebriamo gli sviluppatori e i contributori che contribuiscono alla realizzazio
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Contributori sostenitori
-Riconoscendo i contributi preziosi al di là dei commit di codice—supporto alla comunità, divulgazione e sforzi dietro le quinte.
+Riconoscere i contributi preziosi che vanno oltre i commit di codice: il sostegno alla comunità, le attività di sensibilizzazione e l'impegno dietro le quinte.
 
 {{<button class="is-success" link="/community/contributors/supporting/" text="Visualizza elenco" >}}
 

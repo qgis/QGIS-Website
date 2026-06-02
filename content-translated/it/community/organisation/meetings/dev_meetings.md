@@ -104,9 +104,9 @@ Many thanks to our sponsors!
 -
 The 6th QGIS Developer Meeting from 10 - 14 November 2011 was organised by QGIS Swiss User Group and and held at [Institute of Cartography, ETH Zurich](http://www.karto.ethz.ch/about/howtofind/index_EN) The Institute sponsored the venue and internet access. We are extremely grateful to them for organising and helping us to make the whole event went very smoothly.
 
-2011 - 5th QGIS Developer Meeting in Lisbon
+2011 - 5° incontro degli sviluppatori di QGIS a Lisbona
 -
-The 5th QGIS Developer Meeting from 14 - 18 April 2011 was held in Lisbon, Portugal. This meeting was organized by Vânia Neves and Giovanni Manghi ([Faunalia.pt](http://www.faunalia.pt/)) and [MUNICIPIA](http://www.municipia.pt/). The event was be partially supported by [MUNICIPIA](http://www.municipia.pt/) and by the local OSGeo chapter.
+Il quinto incontro degli sviluppatori QGIS si è tenuto a Lisbona, in Portogallo, dal 14 al 18 aprile 2011. L'evento è stato organizzato da Vânia Neves e Giovanni Manghi ([Faunalia.pt](http://www.faunalia.pt/)) e da [MUNICIPIA](http://www.municipia.pt/). L'evento è stato parzialmente sostenuto da [MUNICIPIA](http://www.municipia.pt/) e dalla sezione locale di OSGeo.
 
 University of Lisbon, [Institute of Geography and Land Management](http://www.igot.ul.pt/portal/page?_pageid=407,1&_dad=portal&_schema=PORTAL) provided the venue.
 

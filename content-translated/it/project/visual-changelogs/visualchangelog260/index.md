@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # Elenco cambiamenti per QGIS 2.6{#changelog26 }
-Release date: 2014-10-31
+Data di rilascio: 2014-10-31
 
 Lista dei cambiamenti per QGIS 2.6.0.  Sono state aggiunte molte nuove funzioni, modifiche e miglioramenti per rendere il più popolare software GIS per il desktop ancora più ricco di funzioni ed utile.  
 

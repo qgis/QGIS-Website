@@ -3,7 +3,7 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Explore our global community of QGIS individual contributors
+subtitle: Scopri la nostra comunità globale di collaboratori individuali di QGIS
 title: Mappa dei contributori
 type: page
 

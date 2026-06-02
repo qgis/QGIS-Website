@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # Elenco cambiamenti per QGIS 2.10{#changelog210 }
-Release date: 2015-06-26
+Data di rilascio: 2015-06-26
 
 This is the change log for the next release of QGIS - version 2.10.0 \' Pisa\' - host city to our developer meet up in March 2010.
 
@@ -81,7 +81,7 @@ As well as the numerous items listed below, the following improvements have been
 ### Feature: Improved handling of potential project file overwrites
 QGIS 2.10 will now warn you when attempting to save you project if last modification date of a loaded project has changed. This is useful if more than one user or session has the same project file open and are both attempting to save edits to the project file.
 
-**This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
+**Questa funzionalità è stata sviluppata da:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
 ![image17](images/entries/c30c07afc9123db564b766339daefe53af3cd348.webp)
 ### Feature: New geometry engine
@@ -100,9 +100,9 @@ QGIS 2.10 has a new geometry engine. In general you won\'t see many differences 
     
 Then add the layer `curves` to your project.
 
-**This feature was developed by:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
+**Questa funzionalità è stata sviluppata da:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [KantonSolothurn, Switzerland](http://www.sogis.ch/)
+**Questa funzionalità è stata finanziata da:** [KantonSolothurn, Switzerland](http://www.sogis.ch/)
 
 ![image18](images/entries/4f070e4075b4703edb40d8cb91d5fb527d1d3a93.webp)
 ## Strumenti di Analisi
@@ -138,9 +138,9 @@ The DXF export was continuously improved in the last three QGIS versions. This v
 
 See also [this article on qgis.ch](http://www.qgis.ch/en/projects/dxf-export) explaining what is supported and what not.
 
-**This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
+**Questa funzionalità è stata sviluppata da:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
-**This feature was funded by:** Communities of Morges, Uster, Vevey and SIGE
+**Questa funzionalità è stata finanziata da:** Communities of Morges, Uster, Vevey and SIGE
 
 ![image6](images/entries/b5ee8bd7a3412e429782a5e56954dabee05c36ff.webp)
 ### Feature: PostGIS provider side expression filters
@@ -159,9 +159,9 @@ or
 ### Feature: Virtual fields are now updatable
 Prior to version 2.8 you had to delete and recreate virtual fields if you wanted to change the expression for calculating the virtual field. In 2.10 you can now go to the `Fields` tab and press the small `Expression` button to open the expression editor and update the expression used for the virtual field.
 
-**This feature was developed by:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+**Questa funzionalità è stata sviluppata da:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
-**This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
+**Questa funzionalità è stata finanziata da:** [City of Uster, Switzerland](http://gis.uster.ch/)
 
 ![image8](images/entries/f45d5a4447f28d96a2c5c4cc6c27b84285096a02.webp)
 ### Feature: Line edit with auto-completer for ValueRelation edit widget
@@ -187,9 +187,9 @@ A new window in DB Manager helps the creation of SQL queries by means of widgets
 ### Feature: Filter chaining for relation reference widget
 To select linked entries from other tables one can use the relation reference widgets. One can either select elements graphically by selecting them in the map, if the linked feature has a geometry attached or choose an element by the linked id. To facilitate the non-spatial selection it is now possible to narrow the available options with filters (chained or unchained). If the filters are unchained their choices are combined with \"AND\" to define the available options. If chained is checked, a drill-down mode for the filters is activated so each filter only shows the entries which correspond to the previous filter. This is useful for selecting from hierarchical data like City -\> Street -\> Number.
 
-**This feature was developed by:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+**Questa funzionalità è stata sviluppata da:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+**Questa funzionalità è stata finanziata da:** [SIGE](http://www.sige.ch/)
 
 ![image11](images/entries/fd0d2e726135033e8e5a61b8a718535074a2ac0c.webp)
 ## Diagrammi
@@ -221,9 +221,9 @@ In previous QGISversions it was hard to use graphical scalebars when the range o
 
 Don\'t forget to also set the alignment of the scalebar, esp. if you want it to be centered or right-aligned!
 
-**This feature was developed by:** [Sandro Mani (Sourcepole AG)](http://www.sourcepole.ch/)
+**Questa funzionalità è stata sviluppata da:** [Sandro Mani (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
+**Questa funzionalità è stata finanziata da:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
 
 ![image20](images/entries/d435d4f94cf3d70a97c8d373aa08c28f8685defd.webp)
 ## Programmabilità
@@ -244,9 +244,9 @@ FI_POINT_TOLERANCE=16&FI_LINE_TOLERANCE=8&FI_POLYGON_TOLERANCE=4
 
 and change the tolerance values (in pixels) to suit your needs.
 
-**This feature was developed by:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
+**Questa funzionalità è stata sviluppata da:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
+**Questa funzionalità è stata finanziata da:** [City of Uster, Switzerland](http://gis.uster.ch/)
 
 ![image22](images/entries/29470cc51906dffe3a96d3e17a7e8c83b4504a18.webp)
 ## Simbologia
@@ -257,9 +257,9 @@ Add options under categorised renderer advanced menu to set categories to symbol
 ### Feature: Vary symbol sizes using the graduated renderer
 Renderers are the subsystem of QGIS that allow you to create rich cartographical representations of your data. A graduated renderer varies the symbology based on a continuously changing value in a vector layer. In previous versions of QGIS you could only vary the colour (e.g. by using a colour along a colour ramp). In QGIS 2.10, the graduated symbol renderer now allows you to to vary size *or* the colour. For point layers you can vary the point size, for lines you can vary the line width. Polygon layers retain only the ability to vary by colour, line width is not yet supported.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Questa funzionalità è stata sviluppata da:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Questa funzionalità è stata finanziata da:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image24](images/entries/1d170efe9ca0c76e971cfe0f1d0adb7c4e14f08f.webp)
 ### Feature: New option for preventing the automatic clipping of features to the map extent
@@ -269,9 +269,9 @@ This option (located under the symbol advanced menu) disables the automatic clip
 ### Feature: Size scale and rotation have been removed from the advanced menu
 We have removed `SizeScale` and `Rotation` from `` `Layer -> Properties -> Symbology tab -> Advanced Menu ``. You should rather set rotation on a *per-symbol layer basis* using an expression or field. The expressions used in old projects are converted to symbol level **data defined size and angle** properties.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Questa funzionalità è stata sviluppata da:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Questa funzionalità è stata finanziata da:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image26](images/entries/2e02fb11f0f967b1ea17331d9af3d5a22a63fed1.webp)
 ### Feature: Data defined properties for font marker
@@ -281,9 +281,9 @@ Most properties of the font marker can now be data defined, including marker siz
 ### Feature: Visualise and modify the graduated renderer using a histogram
 A new histogram tab has been added to the graduated renderer, which shows an interactive histogram of the values from the assigned field or expression. Class breaks can be moved or added using the histogram.
 
-**This feature was funded by:** [ADUGA](http://www.aduga.org)
+**Questa funzionalità è stata finanziata da:** [ADUGA](http://www.aduga.org)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image28](images/entries/b519e61b5b50de563203adf8ef35a7c037536332.webp)
 ### Feature: Size, rotation and stroke-width expressions at the symbollist level
@@ -293,9 +293,9 @@ For symbols, a legend is generated for varying sizes. This allows multivariate a
 
 An assistant, with preview, is accessible through the data defined button to help the user define the size expression. Three methods are available: Flannery, Area and Radius.
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**Questa funzionalità è stata sviluppata da:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**Questa funzionalità è stata finanziata da:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image29](images/entries/30f4392583400a0ed2fbdae3468265b91f39e675.webp)
 ### Feature: Live layer effects for layers and symbol layers
@@ -303,9 +303,9 @@ Live layer effects add to the already extensive cartographic capabilities of QGI
 
 **Note**: This is functionality for advanced users and we should note that overuse of this feature can significantly slow down render times, so you may want to consider having different symbology profiles for your layer - one for generation of production quality maps and one for draft mode.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [a crowd-funding initiative](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
+**Questa funzionalità è stata finanziata da:** [a crowd-funding initiative](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
 
 ![image30](images/entries/2ce331bd884c14764989c1bc5e3c4d1f80ec588c.webp)
 

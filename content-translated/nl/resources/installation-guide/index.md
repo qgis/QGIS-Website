@@ -470,7 +470,7 @@ Alle pakketten bevatten GRASS- en Python-ondersteuning
 
 Alle opslagplaatsen voor openSUSE Geo zijn hier te vinden: https://download.opensuse.org/repositories/Application:/Geo/
 
-Installeer QGIS met deze opdracht:
+Install QGIS with this command:
 ```
 sudo zypper in qgis qgis-plugin-grass 
 ```
@@ -532,7 +532,7 @@ spack install
 ```
 Aan Spack gerelateerde problemen zouden moeten worden gerapporteerd op: https://github.com/spack/spack/issues
 ## Distrobox & Toolbx
-Voor het installeren van QGIS op elk systeem van Linux zou u ook `distrobox` of `toolbx` kunnen gebruiken. Deze stellen u in staat veelvoorkomende distributies, zoals Fedora, OpenSUSE of Ubuntu, in een container te installeren. Dat mag een andere versie zijn dan uw hoofdbesturingssysteem en het maakt het dus mogelijk dat u een nieuwere, te testen, of meer stabiele versie van QGIS hebt.
+To install QGIS on any Linux system, you can also use `distrobox` or `toolbx`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGIS.
 
 {{<rich-box-start icon="🙋‍♀️" layoutClass="tips" >}}
 

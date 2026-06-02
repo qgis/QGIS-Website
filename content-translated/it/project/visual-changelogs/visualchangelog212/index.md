@@ -12,7 +12,7 @@ type: visual-changelog
 # Elenco cambiamenti per QGIS 2.12{#changelog212 }
 ![image1](images/projects/3648539707d0789903fdfedac3705584f12fa6ac.png)
 
-Release date: 2015-10-23
+Data di rilascio: 2015-10-23
 
 This is the change log for the next release of QGIS - version 2.12.0 \'Lyon\' - host city to our developer meet up in April 2012.
 
@@ -68,7 +68,7 @@ QGIS è un Software Libero e non c'è alcun obbligo di pagare nulla per utilizza
 ### Feature: New welcome screen
 Instead of simply showing a blank, white canvas, QGIS will now show you a list of your most recent projects, along with thumbnails to make it quick and easy to dive back into the work you left off in your last session.
 
-**This feature was developed by:** Matthias Kuhn at [OPENGIS.ch](http://www.opengis.ch)
+**Questa funzionalità è stata sviluppata da:** Matthias Kuhn at [OPENGIS.ch](http://www.opengis.ch)
 
 ![image11](images/entries/30f2ab32f4ae0d135a26b6a6ddb6705f0f6dd74a.webp)
 ### Feature: Ongoing improvements to code quality
@@ -78,15 +78,15 @@ Through the use of the address sanitizer library, hundreds of memory leaks have 
 ### Feature: Advanced settings editor
 A new panel has been added to the settings dialog that lets you edit any of the options already defined in your your profile. This is intended for power users only as you could experience unexpected behaviour in QGIS if you change these settings without fully understanding what you are doing.
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Questa funzionalità è stata sviluppata da:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 
 ![image13](images/entries/6d59988bf11726192579915cff18f2b81e3f9c8f.webp)
 ### Feature: Mutually exclusive layer tree groups
 With this feature, you can create layer groups where only one layer in the group may be visible at any time. The feature can be toggled individually for groups in layer tree view context menu.
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**Questa funzionalità è stata sviluppata da:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
 
-**This feature was funded by:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
+**Questa funzionalità è stata finanziata da:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
 
 ![image14](images/entries/5c68a4deab4d6058d05d3129fec89c6f9abb8530.webp)
 ### Feature: Filtering for field values in expression widget
@@ -100,7 +100,7 @@ QGIS 2.12 now supports user interface theming support which you can use to custo
 
 Find out more about theming support by reading [Nathan Woodrow\'s blog article](http://nathanw.net/2015/08/29/ui-theme-support-now-core-in-qgis/).
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Questa funzionalità è stata sviluppata da:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image16](images/entries/2ec302b12a3b0db8e7a66465afccb227bc543a3e.webp)
 ### Feature: New expression functions in 2.12
@@ -134,7 +134,7 @@ Will render the label like this:
 
 You can manage global variables from the `Settings -> Options` menu, and project level variables from `Project properties` (including adding your own custom variables).
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image18](images/entries/19aca1d680543a4013c53ba80406bdd5ebff88c5.webp)
 ## Strumenti di Analisi
@@ -147,9 +147,9 @@ This new tool in qgis_analysis library is able to take several rasters as input 
 - clip to a region of interest
 - rescale values when required
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Kartoza](http://kartoza.com/)
+**Questa funzionalità è stata sviluppata da:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Kartoza](http://kartoza.com/)
 
-**This feature was funded by:** [DFAT](http://dfat.gov.au) for the [InaSAFE project](http://inasafe.org/)
+**Questa funzionalità è stata finanziata da:** [DFAT](http://dfat.gov.au) for the [InaSAFE project](http://inasafe.org/)
 
 ![image2](images/entries/c613bb210ba0e85eb3b479ab79cd895827c22602.webp)
 ### Feature: Geometry Checker and Geometry Snapper plugins
@@ -157,9 +157,9 @@ Two new plugins (which you need to manually enable in the plugin manager) are av
 
 With the **Geometry Snapper** tool you can align the edges and vertices of one vector layer to the edges and vertices of a second layer using a user defined tolerance.
 
-**This feature was developed by:** Sandro Mani at [Sourcepole AG](http://www.sourcepole.ch/)
+**Questa funzionalità è stata sviluppata da:** Sandro Mani at [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
+**Questa funzionalità è stata finanziata da:** [Canton of Solothurn](http://www.sogis.so.ch/)
 
 ![image3](images/entries/319136e65a51c7a8d76adac7aef89806db170c2e.webp)
 ## Applicazioni e Opzioni del progetto
@@ -190,16 +190,16 @@ Currently, the master password auto-set can be set via Python, or by way of a cu
 
 PKI example docs: <https://github.com/dakcarto/QGIS-Enhancement-Proposals/blob/auth-system/extras/auth-system/pkiuser.rst>
 
-**This feature was developed by:** Larry Shaffer
+**Questa funzionalità è stata sviluppata da:** Larry Shaffer
 
-**This feature was funded by:** [Boundless Spatial, Inc.](http://boundlessgeo.com/)
+**Questa funzionalità è stata finanziata da:** [Boundless Spatial, Inc.](http://boundlessgeo.com/)
 
 ![image4](images/entries/d6c9305a8dcaea3a5a6c039dec40d50e0caf23ff.webp)
 ## Browser
 ### Feature: Improvements to PostGIS connections in browser
 The QGIS browser now supports additional functionality for PostGIS connections, including the ability to **create, rename and delete schemas**, **support for renaming and truncating layers** and to **copy tables from one schema to an other**.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 **Table copying by:** Jürgen Fischer at [norBIT GmbH](http://www.norbit.de/)
 
@@ -225,7 +225,7 @@ There have been a number of improvements to the DB Manager tool:
 ### Feature: Conditional formatting for attribute table cells
 This is a major improvement to QGIS\'s attribute table rendering support. You can now style table cells according to rules. For example you can colour all cells with a population of less than 50 000 in red. The option is enabled via a new icon on the table toolbar at the top right of the attribute table window. You can read more about this feature on [Nathan Woodrow\'s blog article](http://nathanw.net/2015/08/20/mixing-a-bit-of-excel-into-qgis-conditional-formatted-table-cells/).
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Questa funzionalità è stata sviluppata da:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image8](images/entries/ae9afefda043d31ef7718528d506d98e90e7a1f7.webp)
 ### Feature: Support for relative paths in widgets
@@ -236,9 +236,9 @@ For the following edit widget types:
 
 If the path which is selected with the file browser is located in the same directory as the .qgs project file or below, paths are converted to relative paths. This increases portability of a QGIS project with multimedia information attached.
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Questa funzionalità è stata sviluppata da:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 
-**This feature was funded by:** [Alta ehf](http://www.alta.is/)
+**Questa funzionalità è stata finanziata da:** [Alta ehf](http://www.alta.is/)
 
 ![image9](images/entries/fcf703990b5cb743ffa5cc7778cb151022ff2d20.webp)
 ## Digitalizzazione
@@ -251,9 +251,9 @@ In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but
 
 Additionally, more of the geometry editing and modification tools were updated to work correctly with layers containing z or m dimensions.
 
-**This feature was developed by:** Marco Hugentobler at [Sourcepole AG](http://www.sourcepole.ch/)
+**Questa funzionalità è stata sviluppata da:** Marco Hugentobler at [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
+**Questa funzionalità è stata finanziata da:** [Canton of Solothurn](http://www.sogis.so.ch/)
 
 ![image10](images/entries/215ead2dd5e43e394d47169a7fd82aa5cc08b6b6.webp)
 ## Etichettatura
@@ -262,19 +262,19 @@ Its now possible to specify a data defined quadrant when a point label is set to
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image19](images/entries/27a58b65cf449505c92cc6c8470a93d1f09893a1.webp)
 ### Feature: Draw only labels which fit inside polygons
 An option has been added to polygon layers to only draw labels which fit completely within polygon features.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image20](images/entries/5c8461abe3aa5483c3243c0f145940b0d5fd1310.webp)
 ### Feature: Control priority of labeling obstacles
 In 2.12 it\'s now possible to specify the priority for labeling obstacles. This allows you to make labels prefer to overlap features from certain layers rather than others. The priority can also be data defined so that certain features are more likely to be covered than others. You can also use data defined expressions or fields to control whether a specific feature in layer will act as an obstacle for labels.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image21](images/entries/f07a082bd4e62f059788c18a9de353107b8bdc44.webp)
 ### Feature: New options to control how polygon layers act as obstacles
@@ -282,7 +282,7 @@ New options have been added to control how labels should be placed to avoid over
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image22](images/entries/e37943c654080e33219acb5e519970cf748c87bf.webp)
 ### Feature: Data defined control over label priority
@@ -290,7 +290,7 @@ This often-requested feature allows users to set the priority for individual lab
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image23](images/entries/bd185cde38420f50fb540d742d178768d28ac577.webp)
 ### Feature: Option for obstacle-only layers
@@ -302,7 +302,7 @@ Note, that it is also possible to both label a layer, but also act as obstacle l
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image24](images/entries/de1eae1359ce92045d51c6fa9bc3f014a3f3ae67.webp)
 ### Feature: Rule-based labeling
@@ -310,9 +310,9 @@ Labels on features can now be styled using rules to add even more control over p
 
 See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**Questa funzionalità è stata sviluppata da:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
 
-**This feature was funded by:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
+**Questa funzionalità è stata finanziata da:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
 
 ![image25](images/entries/8846f57f0395e7f6b2543a92a5c55b67e8b19923.webp)
 ## Compositore di Mappe
@@ -321,29 +321,29 @@ You can now set a field or expression as the \"page name\" for atlas composition
 
 The page name can also be used within symbology and labeling expressions to allow advanced styling of atlas features based on their page name.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image26](images/entries/bbf6147ef8be9d209fa188d6c524bce9d13d5ba8.webp)
 ### Feature: Custom format for grid annotations
 Composer map grid annotations can now be formatted in custom formats, which are evaluated using the expression engine. Now you utilise whatever esoteric grid numbering format your maps require!
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image27](images/entries/a6cd03594ca802015ef4a5bf7806cc1ce291214b.webp)
 ### Feature: Multiline text handling and automatic text wrapping in composer attribute tables
 Composer attribute tables now include full support for multi line strings. Control over the vertical alignment of text within a cell has also been added, along with options for wrapping text on certain characters or automatically calculating text wrapping to fit the size of columns. To enforce automatic text wrapping with automatic row heights, set the column width to a fixed size.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**Questa funzionalità è stata finanziata da:** [City of Uster](http://gis.uster.ch/)
 
 ![image28](images/entries/db66b56f79949779ea32126bd22f2f1c9d4b55e6.webp)
 ### Feature: Advanced customisation of cell background color
 This change allows users to set differing colors for alternating rows and columns, first/last row/column and header row within composer attribute tables.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [Ville de Morges](http://www.morges.ch/)
+**Questa funzionalità è stata finanziata da:** [Ville de Morges](http://www.morges.ch/)
 
 ![image29](images/entries/68266f6b11599dfa226952455ca150448a5d082a.webp)
 ### Feature: Add fit page to contents option and options for cropping exports to contents
@@ -357,13 +357,13 @@ A new image export options dialog has been added to facilitate this, which also 
 
 **Sponsored by:** [NIWA](https://www.niwa.co.nz/)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image30](images/entries/38572cf4aa662cc4463c2a29f3d5ca38aa382632.webp)
 ### Feature: Force vector layers to render as a raster images
 A new option has been added under the layer properties, rendering tab to force a vector layer to render as a raster. Extremely detailed layers (eg polygon layers with a huge number of nodes) can cause composer exports in PDF/SVG format to be huge as all nodes are included in the exported file. This can also make the resultant file very slow to work with or open in external programs. Now, you can force these layers to be rasterised on a layer-by-layer basis, so that the exported files won\'t have to include all the nodes contained in these layers. The end result is smaller file sizes and PDFs/SVGs which are faster to open.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image31](images/entries/0127fe10ecae31dbcd133492c93f33b0d569dcba.webp)
 ### Feature: Data defined control over map layers and style presets
@@ -371,9 +371,9 @@ A new data defined control has been added for the map layers and style presets t
 
 Using this control over map layers allows for \"layer-based\" atlases, where the map layers should change between atlas pages instead of or in combination with the map extent changing. An example could be an atlas looping over different administrative units and at the same time looping over several historic maps or aerial images.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**Questa funzionalità è stata finanziata da:** [City of Uster](http://gis.uster.ch/)
 
 ![image32](images/entries/a8dc3b35df4020897e39c81bd22a469ab5ea6225.webp)
 ### Feature: Option to hide pages from view/export
@@ -381,7 +381,7 @@ There\'s now an option to hide the display of pages while editing and exporting 
 
 **Sponsored by:** [NIWA](https://www.niwa.co.nz/)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 ## Plugin
 ### Feature: Update of the GRASS plugin
 The GRASS plugin was updated to enable support for GRASS 7. GRASS layers can be browsed and loaded from the QGIS browser or browser panel. GRASS vector data can be edited directly within QGIS. The project contains the following work packages:
@@ -394,18 +394,18 @@ For both GRASS 6 and GRASS 7 users you will find that the integration between GR
 
 See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/) and [progress report](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/progress.html)
 
-**This feature was developed by:** [Radim Blazek](http://www.gissula.eu/)
+**Questa funzionalità è stata sviluppata da:** [Radim Blazek](http://www.gissula.eu/)
 
-**This feature was funded by:** Crowd funding, see [project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
+**Questa funzionalità è stata finanziata da:** Crowd funding, see [project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
 
 ![image33](images/entries/fb9ac25e9ca6c5e4030167e289435e995f5af8f5.webp)
 ## Programmabilità
 ### Feature: Map tools moved from app-\>gui
 This change allows reuse of map tools from within PyQGIS scripts and Python plugins.
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Questa funzionalità è stata sviluppata da:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+**Questa funzionalità è stata finanziata da:** [SIGE](http://www.sige.ch/)
 ### Feature: Editing layers via \`with edit(layer):\`
 Esempio:
 
@@ -418,7 +418,7 @@ Esempio:
     
 This will automatically call commitChanges() in the end. If any exception occurs, it will rollBack() all the changes.
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**Questa funzionalità è stata sviluppata da:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
 ### Feature: New API for labeling engine (QgsLabelingEngineV2)
 The idea is to make the engine more flexible compared to QgsPalLabeling implementation:
 > - abstract dealing with text labels / diagrams from the engine itself
@@ -429,19 +429,19 @@ The idea is to make the engine more flexible compared to QgsPalLabeling implemen
 
 See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**Questa funzionalità è stata sviluppata da:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
 
-**This feature was funded by:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
+**Questa funzionalità è stata finanziata da:** Tuscany Region (Italy) - SITA (CIG: 63526840AE)
 ### Feature: Open scripts in external editor
 Pythonistas rejoice - you can now open your scripts in an external editor using the new button added to the console.
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Questa funzionalità è stata sviluppata da:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image34](images/entries/78acf0058f4306bf408a58df3762dff5986633a7.webp)
 ### Feature: New classes for PyQGIS programs
 A new class QgsStringUtils has been added which allows PyQGIS scripts to utilise the new fuzzy matching algorithms added in 2.12. These include functions for finding the Levenshtein edit distance between two strings and for calculating the soundex phonetic representation of a string. These algorithms have been highly optimized for performance, so they are ready for you to start fuzzy matching across millions of strings!
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 ## QGIS Server
 ### Feature: QGIS Server Python API
 QGIS Server is now packed as a library with an initial (but growing) API and Python bindings. With the new API we have a set of Python tests for the server main component and for the server plugins. Invoking the server from Python is now as easy as:
@@ -461,16 +461,16 @@ See also [QGIS as OGC data server](http://docs.qgis.org/2.18/en/docs/user_manual
 
 In the screenshot you see QGIS Web Client on the left with the DXF export functionality (utilizing QGIS server) and the same extent viewed in Autodesk TrueView on the right.
 
-**This feature was developed by:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
+**Questa funzionalità è stata sviluppata da:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**Questa funzionalità è stata finanziata da:** [City of Uster](http://gis.uster.ch/)
 
 ![image35](images/entries/beb2e9c00102c67ae703eac097ffba8866379609.webp)
 ## Simbologia
 ### Feature: Export thumbnails from style manager
 Style manager now allows you to export selected style thumbnails as either SVG or PNG images.
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**Questa funzionalità è stata sviluppata da:** [Nathan Woodrow](http://nathanw.net/)
 
 ![image36](images/entries/8861a040751804f6c2691ee4d93d410efd6d99ac.webp)
 ### Feature: New option for limiting size in mm when using map unit sizes
@@ -482,7 +482,7 @@ Previously only the option to limit the scale range of the map unit sizes was av
 - Allow setting transparency for colors
 - Concentric ring placement mode (allows for more compact display than only with rings)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image38](images/entries/33b5f15429279a7ec75dd1f6a2e01b1a7df789ca.webp)
 ### Feature: All color ramps can now be edited
@@ -500,7 +500,7 @@ These issues have been fixed in QGIS 2.12, but as a result you may need to updat
 ### Feature: Add pixels as option for all symbology size unit choices
 For all size input widgets there is now a third option \"pixel\", next to \"mm\" and \"map units\". This concerns symbol sizes, stroke widths, dash sizes, offsets, etc. This may help, if you design for screens and not for print output.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**Questa funzionalità è stata sviluppata da:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image41](images/entries/cbc683061bcc06764361ab79874f1020ccfe8eb7.webp)
 

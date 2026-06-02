@@ -12,7 +12,7 @@ type: visual-changelog
 # Changelog for QGIS 3.36{#changelog336 }
 ![](images/projects/fc93f461b927dd4960936f3391cf00321f9552cc.png)
 
-Release date: 2024-02-23
+Data di rilascio: 2024-02-23
 
 The QGIS project continues to push the boundaries of open-source geospatial technology, as highlighted by the release of QGIS 3.36. The project continues to empower users to make even better spatial decisions with new features and improvements, and introduces a new core data provider for OGC SensorThings API data sources.
 
@@ -40,55 +40,55 @@ We've added a brand new "Movie" mode to the temporal controller. This mode has b
 
 In movie mode, you can set the total number of frames for your movie and the animation will progress frame by frame for that number of frames, advancing the current map settings frame (and @frame\_number expression variable) at each step. You can then use animated symbols, or alter your symbology using the @frame\_number expression variable, to create dynamic, animated maps.
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ## Interfaccia Utente
 ### Feature: Custom layer properties in map layer properties
 We've added display of custom layer properties for map layers within the layer properties information tab, making it easy for users to view any additional metadata and properties attached to their map layers.
 
 ![](images/entries/393384efc22e1add7f41288a80b6e4bbd681b68d.webp)
 
-This feature was developed by [Jorge Alexandre Delesderrier da Silva](https://github.com/jadsilva)
+Questa funzionalità è stata sviluppata da [Jorge Alexandre Delesderrier da Silva](https://github.com/jadsilva)
 ### Feature: Easier project and image saving
 In 3.36, we've made QGIS a little bit cleverer in the way it handles saving of projects and images. The project type (.qgz, .qgs) or image format (.png, .jpg, .tif, etc.) is now (by default) determined by any file extension you've typed in the save dialog. This allows for a faster user experience when changing from one format to another, as you don't need to manually set an explicit format in advance via the format combo box!
 
 ![](images/entries/6585d31ab7870351c8b58c9bec57e36df50f3018.webp)
 
-This feature was developed by [Mathieu Pellerin (OPENGIS.ch)](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin (OPENGIS.ch)](https://www.opengis.ch/)
 ## Simbologia
 ### Feature: Control image height for raster fill symbol layers
 We've introduced a new setting for the "raster fill" symbol type, which allows you to control the width and height of the fill pattern independently. (Previously these settings were locked to each other). You're now able to create stretched raster fills in the horizontal or vertical directions, giving more flexibility for your custom symbol creation.
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: New "Filled line" symbol layer type
 We've added a brand new line symbol type for "filled lines". Much like the older "Filled marker" symbol type offers for marker symbols, this option will render lines using **any** QGIS fill symbol. This means you can now render lines filled with gradients, line hatches, raster fills, and much more!
 
 ![](images/entries/5117e44fbe7ec55216b8fd1242c2721a78032dc0.gif)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ## Mesh
 ### Feature: Mesh labeling
 In 3.36 we've added labeling support for mesh layers. Labels can be applied to mesh vertices, or mesh faces, and can take advantage of all the advanced formatting options and appearance settings that you get for vector labels. Labelling settings are available through layer properties dialog and the layer styling panel. Toggling mesh labels on and off can also be conveniently done through the layer panel's context menu.
 
 ![](images/entries/42674b6a42180aa567bf76ec53db917e191f4595.webp)
 
-This feature was funded by GÖTEBORGS STAD
+Questa funzionalità è stata finanziata da GÖTEBORGS STAD
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Funzionalità 3D
 ### Feature: Data defined color control for simple 3d line rendering
 You can now set a data-defined, dynamic color for 3D lines rendered using the "Render as simple 3D lines" option. This is extremely useful for visualising line features in 3D, eg displaying underground pipelines in different colors based on their classifications.
 
 ![](images/entries/609eca4c0ebaa0b4dbf12d0dc4f4fae3fab5dc29.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Improved "Phong" material and lighting
 The Phong shader is used as the default material for showing vector features in QGIS 3D views. For 3.36, this shader has been improved to better handle ambient and shininess parameters. Additionally, we've taken care to ensure that the exact same shading will apply regardless of the underlying geometry type (points, lines or polygons), and regardless of whether data defined symbol colors are in use. This gives users a much more predictable and easy-to-configure material for their 3D views.
 
@@ -96,23 +96,23 @@ For easier configuration of nicer-looking materials, we also added new controls 
 
 ![](images/entries/267232fa32fc1510a5c27c0364451699c1f415a1.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: "Physically based" metal rough material
 For even more beautiful 3D maps, we've added a new material choice for a "physically based rendering" (PBR) material. This material lets you define the base color of the surface, and how "metal" and "rough" it should appear. This material is simple to configure and get great results from, and is expected to become the default material in a future QGIS release.
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Define 3D scene extents on 2D maps
 We added a shortcut action to the 3D map toolbar that allows users to quickly draw an extent limit for the scene on a 2D map.
 
 ![](images/entries/41d95a9ad7be81ca3c8dd95a47674b356d625f1b.gif)
 
-This feature was funded by Natural Resources Canada
+Questa funzionalità è stata finanziata da Natural Resources Canada
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Point Clouds
 ### Feature: Size overrides for point cloud classification
 In QGIS 3.36 you can now override the default point size for discrete categories in both 2D and 3D views.
@@ -123,9 +123,9 @@ You can also use the right-click context menu to set the point size for multiple
 
 ![](images/entries/1be03fcdc04fd2f382222b9de4c41a8528090b0d.webp)
 
-This feature was funded by Natural Resources Canada
+Questa funzionalità è stata finanziata da Natural Resources Canada
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Render point clouds as a surface in 2D maps
 We've added a new option for 2D styling of Point Clouds that for "Render as a Surface (Triangulate)".
 
@@ -141,9 +141,9 @@ Be sure to check out the feature [Pull Request](https://github.com/qgis/QGIS/pul
 
 ![](images/entries/cc7d5061c43b895106162fc314cbd6712ee8256c.webp)
 
-This feature was funded by National Resources Canada
+Questa funzionalità è stata finanziata da National Resources Canada
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Faster point cloud rendering by caching decoded data blocks
 Want even faster point cloud rendering? Well, QGIS now supports rendering point clouds faster by using a cache for storing nodes which have already been decoded.
 
@@ -151,33 +151,33 @@ This optimisation avoids decompressing the same nodes multiple times when pannin
 
 (A fixed size cache of 200MB is used and shared across all point cloud layers and canvases (2D, 3D, and Profile Plots).)
 
-This feature was funded by Natural Resources Canada
+Questa funzionalità è stata finanziata da Natural Resources Canada
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Metadata preservation during COPC conversion
 The Untwine tool (which is responsible for conversions of point clouds to the COPC format within QGIS) has been updated to version 1.3. This includes various fixes and small enhancements. Among the enhancements, the conversion to COPC now preserves the following metadata from LAS/LAZ files:
 - Global encoding
 - Creation time (year+day)
 - XYZ offset
 
-This feature was funded by Natural Resources Canada
+Questa funzionalità è stata finanziata da Natural Resources Canada
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Better handling of classification flags
 LAS/LAZ files may include four flags for each point (synthetic, key-point, withheld, overlap). In older QGIS releases, they have all been exposed in `ClassificationFlags` as a combined single value. This has been impractical when a user needs to use one of those flags for filtering or visualization.
 
 For version 3.36, we reworked things so that these flags are available as separate attributes both for visualization (eg using the Classification renderer) and for filtering in expressions. Accordingly, we've removed the older `ClassificationFlags` attribute.
 
-This feature was funded by National Resources Canada
+Questa funzionalità è stata finanziata da National Resources Canada
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Espressioni
 ### Feature: Alias of minimum/maximum for min/max in aggregates
 We've added some new aliases for arguments to the aggregate expression functions, so that "minimum" and "maximum" can be used instead of "min" and"max" for these functions.
 
 ![](images/entries/7f06f7f34b8a3fb756e8a982bb734d0439eadbdd.webp)
 
-This feature was developed by [Harrissou Sant-anna](https://github.com/DelazJ)
+Questa funzionalità è stata sviluppata da [Harrissou Sant-anna](https://github.com/DelazJ)
 ### Feature: @counter variable for array\_foreach
 We've added a new "@counter" variable to the `array_foreach` function in expressions. Among other things, this lets you combine values across multiple array fields.
 
@@ -185,7 +185,7 @@ Esempio:
 
 `array_foreach( "field_1", @element || ' ' || "field_2"[@counter] )`
 
-This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
+Questa funzionalità è stata sviluppata da [Björn Hinkeldey](https://github.com/pathmapper)
 ### Feature: Improved expression insertion
 To make QGIS 3.36 even more user-friendly, we've tweaked the "Insert/Edit Expression" behavior. Now,
 - If some text is selected and your selection is within an expression (i.e. between "\[%" and "%\]"), the expression editor will select the whole expression
@@ -198,7 +198,7 @@ This new expression editing behavior also applies to Print Layout labels, Titles
 
 ![](images/entries/47a92c468b14da4ef7fc15ad131e52bb3ee4e477.gif)
 
-This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+Questa funzionalità è stata sviluppata da [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Gestione Dati
 ### Feature: Toggle Selection in the Organize columns window
 We added a Toggle Selection button to the Organize Columns dialog to improve your ability to manage datasets with a large number of fields.
@@ -207,22 +207,22 @@ The new Toggle Selection button (as well as the Deselect or Select All buttons) 
 
 ![](images/entries/d42005a9561cdc035cfa20f034b7a33fc9829522.gif)
 
-This feature was developed by [Valentin Buira](https://github.com/Poulpator)
+Questa funzionalità è stata sviluppata da [Valentin Buira](https://github.com/Poulpator)
 ## Processing
 ### Feature: --skip-loading-plugins flag for qgis\_process
 The `qgis_process` command line interface tool benefits from a new `--skip-loading-plugins` argument. If specified, this can result in faster execution times for commands such as `qgis_process plugins`, which can now list the installed plugins \*\*without\*\* loading them.
 
-This feature was funded by [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
+Questa funzionalità è stata finanziata da [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Click to open output paths in processing logs
 A super-helpful new shortcut we added to 3.36 is that any output paths (such as file, folder, or HTML outputs) in the Processing log are now clickable, allowing you to directly open the containing folder and preselect the generated file!
 
 ![](images/entries/52699edf93f7fb8710fe715ccc5482ac2f299c9c.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Vector coverage algorithms
 QGIS 3.36 introduces a number of new tools for working with vector coverage layers. "Vector coverages" are polygon layers where the features are expected to neighbour each other, without overlaps or gaps, such as administrative boundary layers. These new Processing algorithms expose tools for working with coverages, including:
 - **Validate coverage**: This algorithm analyzes a coverage to find places where the assumption of exactly matching edges is not met.
@@ -237,9 +237,9 @@ These new tools rely on functionality from the GEOS geometry handling library. O
 
 </div>
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Improved Export Layers to DXF algorithm
 We've introduced a number of new parameters to the "Export Layers to DXF" algorithm , to match the functionality of its non-Processing counterpart:
 - An extent parameter to filter features to be exported
@@ -249,38 +249,38 @@ We've also fixed several shortcomings in the algorithm, including skipping layer
 
 ![](images/entries/c151ba5e35152faf79d23401181bf21da3f46bca.webp)
 
-This feature was funded by [QGIS Swiss User Group (QGIS-CH)](https://www.qgis.ch/)
+Questa funzionalità è stata finanziata da [QGIS Swiss User Group (QGIS-CH)](https://www.qgis.ch/)
 
-This feature was developed by [Mathieu Pellerin (OPENGIS.ch)](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin (OPENGIS.ch)](https://www.opengis.ch/)
 ### Feature: Faster GRASS Provider startup
 We've reworked the backend of the Processing GRASS Provider, which helps reduce the startup times for this plugin (especially on Windows installations!). This is especially beneficial for users of the `qgis_process` tool, who will experience noticeably faster execution times for this tool.
 
-This feature was funded by [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
+Questa funzionalità è stata finanziata da [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Faster qgis\_process startup
 For 3.36, we've substantially improved the startup speed of the `qgis_process` command. This was done by applying a variety of optimisations inside QGIS, such as lazy loading of the authentication and style library frameworks so that these frameworks are only initialised when required, and by reworking the logic for migrating user settings between different QGIS versions to avoid unnecessary work.
 
 Together, these improvements have reduced `qgis_process` startup times from multiple seconds to less than one second!
 
-This feature was funded by [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
+Questa funzionalità è stata finanziata da [Research Institute for Nature and Forest (INBO)](http://www.inbo.be/en)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ## Applicazioni e Opzioni del progetto
 ### Feature: "localhost" option for OAuth2 Redirects
 Some OAuth2 providers, like Microsoft Sharepoint, require specific redirect hosts for security reasons. They may not accept the standard "http://127.0.0.1" redirect, but instead allow only "https://127.0.0.1" or "http://localhost".
 
 To ensure compatibility with these providers without the complexity of setting up HTTPS, we added a new option to use "localhost" as the redirect host for OAuth2 authentication.
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Serial port sensor baudrate selection
 For 3.36 you can now customize the connection speed (baud rate) to use for serial port sensors. Previously, this parameter was hardcoded at 9600 baud, limiting compatibility with various sensor types, such as NMEA sensors requiring 4800 baud. You can now connect to a wider array of sensors by adjusting the baud rate to meet specific requirements.
 
 ![](images/entries/5c594b33da01255f2c3b2b126ee2221ff484fc6f.webp)
 
-This feature was developed by [Jorge Tornero](https://github.com/jtornero)
+Questa funzionalità è stata sviluppata da [Jorge Tornero](https://github.com/jtornero)
 ## Browser
 ### Feature: Open layers with Datasource Manager from browser
 We've introduced a new option in the QGIS browser context menu for "Open with Datasource Manager...". This option is available for layers which use the OGR provider (including GPKG sources), GDAL provider (raster layers), and Spatialite layers. When activated, a dialog will open on the data source tab of the layer properties, with relevant field values prepopulated to open the layer directly in QGIS, which allows you to set more comprehensive file opening options directly from the browser.
@@ -289,9 +289,9 @@ This functionality brings with it the `ConfigureFromUri` method which has been d
 
 ![](images/entries/b4ae363066776c62fe90d2dd926089f7a764d37f.gif)
 
-This feature was funded by NOAA
+Questa funzionalità è stata finanziata da NOAA
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ## Sorgenti Dati
 ### Feature: SensorThings Data Provider
 For version 3.36 we've introduced a brand new core data provider for OGC SensorThings API data sources.
@@ -304,9 +304,9 @@ We've taken care to ensure that SensorThings data sources are loaded in the most
 
 ![](images/entries/3802b455a5bdad53b1c7b8e9a7877b3c5988106f.webp)
 
-This feature was funded by [BRGM](https://www.brgm.fr/en), French PEPR OneWater - Eau Bien Commun ([https://www.onewater.fr/en](https://www.onewater.fr/en), ANR-22-PEXO-0009, under the Future Program France 2030) and [Water4All Partnership](https://www.water4all-partnership.eu/)
+Questa funzionalità è stata finanziata da [BRGM](https://www.brgm.fr/en), French PEPR OneWater - Eau Bien Commun ([https://www.onewater.fr/en](https://www.onewater.fr/en), ANR-22-PEXO-0009, under the Future Program France 2030) and [Water4All Partnership](https://www.water4all-partnership.eu/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Support for WFS documents with complex feature schemas
 We enhanced the WFS Provider to add support for complex feature schemas. The implementation exposes properties of complex WFS types as JSON content, converted from their original XML representations.
 
@@ -314,20 +314,20 @@ For more details, see the [QGIS Enhancement Proposal](https://github.com/qgis/QG
 
 ![](images/entries/587b31f23c77cdbd1589932f716759d3c2d3c015.webp)
 
-This feature was funded by [QGIS user group Germany](https://qgis.de/)
+Questa funzionalità è stata finanziata da [QGIS user group Germany](https://qgis.de/)
 
-This feature was developed by [Even Rouault](https://github.com/rouault)
+Questa funzionalità è stata sviluppata da [Even Rouault](https://github.com/rouault)
 ## QGIS Server
 ### Feature: WMS GetMap in PDF Format
 QGIS Server will now support responses in PDF format for GetMap requests.
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Questa funzionalità è stata sviluppata da [mhugent](https://github.com/mhugent)
 ### Feature: QGIS Server Properties Tab for Vector Tile Layers
 The Layer Properties Dialog for Vector Tile layers will now include a section for editing the QGIS Server layer settings, providing the ability to configure layer-specific settings such as shortname, abstract, and other metadata.
 
 ![](images/entries/4dd2ce2af31695f8e917b037c7dfcaaa798dd575.webp)
 
-This feature was developed by [Sandro Mani](https://github.com/manisandro)
+Questa funzionalità è stata sviluppata da [Sandro Mani](https://github.com/manisandro)
 ### Feature: GetLegendGraphics JSON rule
 We've added a new `SHOWRULEDETAILS` parameter for WMS services, which will append a **rule** item in the legend entry. The rule describes the filter expression used on the respective layer when performing a `GetLegendGraphic` request using the JSON format option.
 
@@ -339,21 +339,21 @@ Will return the JSON response which includes a `rule` field when appropriate:
 
 `json `
 
-This feature was funded by Kristianstadt
+Questa funzionalità è stata finanziata da Kristianstadt
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Add maptip for raster layer GetFeatureInfo
 Maptip support was added for raster layer GetFeatureInfo responses, when requesting with parameter `WITH_MAPTIP=TRUE`. This matches the existing behavior which was in place for vector layers.
 
 In this context, the variable `layer_cursor_point` holds the GetFeatureInfo position, so that maptips which are working in QGIS desktop are working also with QGIS Server GetFeatureInfo.
 
-This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
+Questa funzionalità è stata sviluppata da [Björn Hinkeldey](https://github.com/pathmapper)
 ### Feature: WMS parameter to request only maptip for HTML feature info responses
 We added a new value `HTML_FI_ONLY_MAPTIP` for the existing WMS vendor parameter `WITH_MAPTIP`.
 
 If set, the feature info HTML response includes only the maptip, which gives full control over the HTML response using e.g. the built-in maptip editor which has a nice preview.
 
-This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
+Questa funzionalità è stata sviluppata da [Björn Hinkeldey](https://github.com/pathmapper)
 ### Feature: Option to skip "name" attribute for groups in WMS GetCapabilities
 We've added a new project level setting to **Skip name attribute for groups**. This is disabled by default, but enabling it allows you to exclude group names from a GetCapabilities response on a WMS request. This prevents name duplication in instances where a layer and group share the same name, whilst preserving the group element and bringing the QGIS Server capabilities more in line with the OGC WMS Specification.
 
@@ -361,14 +361,14 @@ Per esempio:
 
 `text <Layer queryable="1"> <Name>layer_name</Name> <--- this will be skipped when option is enabled <Title>Human readable name</Title>`
 
-This feature was developed by [Tomas Straupis](https://github.com/tomass)
+Questa funzionalità è stata sviluppata da [Tomas Straupis](https://github.com/tomass)
 ## Plugin
 ### Feature: Use active layer when importing vector data with DB Manager
 When importing vector data in the DB Manager core plugin, the "Input" combo box, which is populated with all the vector data in the layer tree, is now automatically set to the active layer whenever possible. This small change makes it much more user-friendly, especially when working with large and complex projects!
 
 ![](images/entries/1c69e30e80b5ef71d5dec8a3c6b4854f191f22cc.webp)
 
-This feature was developed by [Patrice Pineault](https://github.com/TurboGraphxBeige)
+Questa funzionalità è stata sviluppata da [Patrice Pineault](https://github.com/TurboGraphxBeige)
 ## Programmabilità
 ### Feature: Expose 3D views to PyQGIS
 You now have the ability to create, list, and close 3D views from Python, matching the functionality of their 2D counterparts.
@@ -385,39 +385,39 @@ Esempio:
 > > 
 > 
 
-This feature was funded by Natural Resources Canada
+Questa funzionalità è stata finanziata da Natural Resources Canada
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Feature: Optimised methods to convert GeoJSON geometries to QgsGeometry
 We've added some highly optimised methods which allow direct construction of geometries (QgsGeometry) from raw JSON objects, instead of requiring translation through another library's geometry structures. These methods are exposed through the new API call `QgsJsonUtils.geometryFromGeoJson`.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Qt WebEngine classes can now be used by plugins
 In older QGIS versions, an incompatibility between the modern Qt "WebEngine" classes and QGIS' 3D framework prevented QGIS plugins from using any WebEngine widgets. This was a significant shortcoming, as the older Qt "WebKit" widgets were very limited, slow, and did not support many modern JavaScript essentials.
 
 In 3.36, we've reworked how QGIS 3D is initialised to remove this incompatibility. Scripts and plugins can now safely use Qt's WebEngine classes without issue!
 
-This feature was funded by <https://qgis.org>
+Questa funzionalità è stata finanziata da <https://qgis.org>
 
-This feature was developed by QGIS.org
+Questa funzionalità è stata sviluppata da QGIS.org
 ### Feature: Vertical and compound Coordinate Reference System support in CRS widgets
 As part of the ongoing QGIS grant project for vertical CRS handling (see [QEP 267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267)), all of QGIS' coordinate reference system can now be set to show only vertical or compound CRS. This allows plugins and scripts to present users with choices of vertical CRS, ready for use in QgsCoordinateTransform objects for vertical CRS transformations.
 
 See QgsCoordinateReferenceSystemProxyModel.Filter for the available CRS filtering options for use in these widgets.
 
-This feature was funded by [QGIS.org](https://qgis.org)
+Questa funzionalità è stata finanziata da [QGIS.org](https://qgis.org)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com)
 ### Feature: Python support in Qt6 builds
 While version 5.15 remains the recommended Qt version for compiling QGIS, we've been hard at work adding full support for Qt 6 builds of QGIS. This is necessary in order to support modern desktop requirements, such as full compatibility with Wayland based Linux environments and for optimised Apple silicon builds.
 
 QGIS 3.36 brings support for running Python under Qt 6 builds, and enables use of the PyQGIS library within Qt 6. This is a significant milestone in our ongoing journey towards full support for Qt 6!
 
-This feature was funded by [QGIS.org](https://qgis.org)
+Questa funzionalità è stata finanziata da [QGIS.org](https://qgis.org)
 ### Feature: Add meshMenu to QGIS Interface
 `meshMenu` has been added to the `iface` object, giving plugins and scripts an easy way to extend the Mesh menu.
 
-This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://oslandia.com/)
 ### Feature: Server: onProjectReady method for filter plugins
 The new `onProjectReady` method is called after the `QgsProject` instance is ready for a server request and before entering the main logic for core services.
 
@@ -425,9 +425,9 @@ The `onRequestReady` method is called after the `QgsRequestHandler` is ready and
 
 You can use `onProjectReady` to perform operations at the project level, like adding variables, checking vector layer categories, etc.
 
-This feature was funded by 3Liz
+Questa funzionalità è stata finanziata da 3Liz
 
-This feature was developed by [rldhont](https://github.com/rldhont)
+Questa funzionalità è stata sviluppata da [rldhont](https://github.com/rldhont)
 ### Feature: Add fuzzy comparisons methods
 We've added new methods for `fuzzyEquals` and `fuzzyDistanceEquals` to the QGIS geometry classes. These methods compare geometric objects with a tolerance for small variations, enhancing the precision of equality and distance calculations. They will be particularly useful in scenarios where exact matches may not be feasible or necessary.
 
@@ -437,13 +437,13 @@ self.assertNotEqual(geom1, geom2) \# epsilon = 1e-8 here
 
 self.assertTrue(geom1.fuzzyEqual(geom2, epsilon)) self.assertFalse(geom1.fuzzyDistanceEqual(geom2, epsilon)) \`\`\`
 
-This feature was funded by [QGIS.ORG (through GRANT)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through GRANT)](https://qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://oslandia.com/)
 ### Feature: Measured line methods
 In QGIS 3.36 we've introduced a `measuredLine` method within `Qgs(Multi)LineString`. This method builds upon the code from PostGIS behind ST\_AddMeasure.
 
-This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://oslandia.com/)
 ## Notable Fixes
 ### Feature: Bug fixes by Alessandro Pasotti (itOpen / qcooperative)
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
@@ -470,9 +470,9 @@ This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
 | SHP: Fix unreported issue with spatialindex | unreported | [PR #56366](https://github.com/qgis/QGIS/pull/56366) | [PR #56399](https://github.com/qgis/QGIS/pull/56399) |
 | WFS sublayer is missing when FeatureType is added from QGIS browser | [#56403](https://github.com/qgis/QGIS/issues/56403) | [PR #56404](https://github.com/qgis/QGIS/pull/56404) | Da fare |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Even Rouault (Spatialys)
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -490,9 +490,9 @@ This feature was developed by [Alessandro Pasotti (itOpen / qcooperative)](https
 | QGIS crashes after making a connection to a GeoPackage | [#56203](https://github.com/qgis/QGIS/issues/56203) | [PR #56210](https://github.com/qgis/QGIS/pull/56210) | [PR #56214](https://github.com/qgis/QGIS/pull/56214) |
 | Catch potential QgsCsException at various places; improve qgscoordinatetransform.h doc | unreported | [PR #56212](https://github.com/qgis/QGIS/pull/56212) | [PR #56244](https://github.com/qgis/QGIS/pull/56244) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/)
+Questa funzionalità è stata sviluppata da [Even Rouault (Spatialys)](https://www.spatialys.com/)
 ### Feature: Bug fixes by Jacky Volpes (Oslandia)
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -501,9 +501,9 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 | Using TypeVectorAnyGeometry in multiple input parameter not filtering non-spatial layers | [#55636](https://github.com/qgis/QGIS/issues/55636) | [PR #56453](https://github.com/qgis/QGIS/pull/56453) | [PR #56459](https://github.com/qgis/QGIS/pull/56459) |
 | Remove expression evaluation in layout legend widget | [#53442](https://github.com/qgis/QGIS/issues/53442) | [PR #56372](https://github.com/qgis/QGIS/pull/56372) | No |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Jacky Volpes (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Alexander Bruy
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -524,7 +524,7 @@ This feature was developed by [Jacky Volpes (Oslandia)](https://oslandia.com/)
 | Using the Assistant for Data Defined Colors incorrectly shows 'custom ramp' instead of the correct colour ramp name | [#48889](https://github.com/qgis/QGIS/issues/48889) | [PR #56057](https://github.com/qgis/QGIS/pull/56057) |  |
 | Project predefined scales do not override global scales in labels and 2D map view widgets | [#51326](https://github.com/qgis/QGIS/issues/51326) | [PR #55998](https://github.com/qgis/QGIS/pull/55998) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 Questa funzionalità è stata sviluppata da Alexander Bruy
 ### Feature: Bug fixes by Loïc Bartoletti (Oslandia)
@@ -539,18 +539,18 @@ Questa funzionalità è stata sviluppata da Alexander Bruy
 | [OGC] Polygon: fix rings order | unreported | [PR #55306](https://github.com/qgis/QGIS/pull/55306) | no |
 | Unable to add layers with M (measure) geometries from PostGIS | [#55223](https://github.com/qgis/QGIS/issues/55223) | [PR #56199](https://github.com/qgis/QGIS/pull/56199) | [PR #56211](https://github.com/qgis/QGIS/pull/56211) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Jean Felder (Oslandia)
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | [3D] disable altitude binding if altitude clamping is absolute | unreported | [PR #56154](https://github.com/qgis/QGIS/pull/56154) | [PR #56198](https://github.com/qgis/QGIS/pull/56198) |
 | Improper cast of textual primary key during import with DB Manager | [#55856](https://github.com/qgis/QGIS/issues/55856) | [PR #56243](https://github.com/qgis/QGIS/pull/56243) | [PR #56259](https://github.com/qgis/QGIS/pull/56259) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Jean Felder (Oslandia)](https://oslandia.com/)
 ### Feature: Bug fixes by Stefanos Natsis (LutraConsulting)
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -573,9 +573,9 @@ This feature was developed by [Jean Felder (Oslandia)](https://oslandia.com/)
 | Not possible to open LAS file with very small X/Y/Z scale | [#49317](https://github.com/qgis/QGIS/issues/49317) | Fixed upstream |  |
 | No error is shown when indexing and untwine crashes | [#48307](https://github.com/qgis/QGIS/issues/48307) | [Untwine PR #159](https://github.com/hobuinc/untwine/pull/159) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Stefanos Natsis (LutraConsulting)](https://lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (LutraConsulting)](https://lutraconsulting.co.uk/)
 ### Feature: Bug fixes by Mathieu Pellerin
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -608,7 +608,7 @@ This feature was developed by [Stefanos Natsis (LutraConsulting)](https://lutrac
 | Unable to read MBTiles in paths containing multibytes | [#56023](https://github.com/qgis/QGIS/issues/56023) | [PR #56462](https://github.com/qgis/QGIS/pull/56462) |  |
 | [Data Source Manager] Adding a local raster XYZ Tiles directory as layer is no longer possible | [#56371](https://github.com/qgis/QGIS/issues/56371) | [PR #56418](https://github.com/qgis/QGIS/pull/56418) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 Questa funzionalità è stata sviluppata da Mathieu Pellerin
 ### Feature: Bug fixes by Nyall Dawson (North Road)
@@ -635,9 +635,9 @@ Questa funzionalità è stata sviluppata da Mathieu Pellerin
 | Fix saving " and \\ to ArcGIS REST sources | [#55946](https://github.com/qgis/QGIS/issues/55946) | [PR #56492](https://github.com/qgis/QGIS/pull/56492) |  |
 | Hundreds of fixes to PyQGIS for qt6 compatibility | N/D |  |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+Questa funzionalità è stata sviluppata da [Nyall Dawson (North Road)](https://north-road.com/)
 ### Feature: Bug fixes by Martin Dobias (LutraConsulting)
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -647,8 +647,8 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 | Fix a crash in point cloud renderer when cleaning up preview painter | unreported | [PR #56409](https://github.com/qgis/QGIS/pull/56409) | N/D |
 | Fix a deadlock with local COPC files in 2D rendering | unreported | [PR #56432](https://github.com/qgis/QGIS/pull/56432) | [PR #56458](https://github.com/qgis/QGIS/pull/56458) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by Martin Dobias (LutraConsulting)
+Questa funzionalità è stata sviluppata da Martin Dobias (LutraConsulting)
 
 {{<content-end >}}

@@ -3,19 +3,19 @@ author: 'Prof. Alberto Vázquez & Mauro Novara '
 categories:
 - Praktijkvoorbeelden
 date: '2011-09-01'
-description: 'In our region, Argentinean Patagonia, we have very few references about
-  the application of GIS in High School for the construction of geographical knowledge
-  as a mean to face territorial and environmental issues. '
+description: 'In onze regio, Argentijns Patagonië, hebben we heel weinig referenties
+  over het gebruiken van de toepassing GIS in het vwo voor het bouwen aan geografische
+  kennis als een middel om territoriale en milieuproblemen aan te pakken. '
 draft: 'true'
 heroImage: ''
 tags:
 - education
 - argentina
-- case-study
-- showcase
+- praktijkvoorbeeld
+- gebruiksgeval
 thumbnail: argentinia_thumbnail.png
-title: 'QGIS at high school: the urban green spaces in Rada Tilly coastal town, Chubut
-  province, Argentina'
+title: 'QGIS in het vwo: de stedelijke groene ruimten in de kustplaats Rada Tilly,
+  provincie Chubut, Argentinië'
 type: showcase/case-studies
 
 ---
@@ -41,13 +41,13 @@ We gebruikten de volgende methodologie om het project te genereren:
 - Vector digitaliseren van stedelijke kadastrale blokken en de bladerdaken van bomen, met behulp van ene afbeelding in Google Earth (GeoEye). Voor het overwegen van het aantal inwoners per kadastraal blok, wezen we een gemiddelde waarde toe van 4 inwoners per locatie.
 - Presenteren van de resultaten door middel van thematische cartografie.
 
-![Attribute table of "blocks" vector layer](argentinia_chubut1.png)
+![Attributentabel van de vectorlaag “blocks”](argentinia_chubut1.png)
 ## Conclusie
 Gebaseerd op de projectie van ene gemiddelde waarde van 4 inwoners per kadastraal gebied, schatten we dat de huidige (2010) stedelijke bevolking van Rada Tilly zou groeien naar ongeveer 9.600 inwoners. Deze mensen wonen in 209 blokken en die vertegenwoordigen 157,6 hectare. De gemiddelde bevolkingsdichtheid zou dan 61 inwoners per hectare zijn.
 
 De totale geïnventariseerde groene gebieden groeien uit tot 150.736 m^2^ (15 hectares). Reden waarom we kunnen aannemen dat het groene gebied per inwoner in het studiegebied is 15,7 m^2^ (de door de WHO voorgestelde waarde is 9 m^2^ groen gebied per inwoner). Deze waarde bewijst een zeer gewenste situatie, voor zover het voordelen voor het milieu betreft, die bomen bieden aan de inwoners van deze kustplaats.
 
-![Distribution of urban green spaces (green) and population density by blocks (white to brown) at Rada Tilly coastal town, Chubut Provinc, Argentina.](./images/argentinia_chubut2.png){.align-right}
+![Verdeling van stedelijke groene ruimten (groen) en bevolkingsdichtheid per blok (van wit naar bruin) in de kustplaats Rada Tilly, provincie Chubut, Argentinië.](./images/argentinia_chubut2.png){.align-right}
 
 Hoewel het project een academische oefening op een High School was, waarderen we enorm de resultaten van de inventarisatie die werden verkregen door middel van QGIS. Studenten werkten met academische strengheid en serieus, waarbij het eigen maken van het thema (stedelijke groene ruimten) zichtbaar werd en ook van het gereedschap (QGIS). Het was een zeer verrijkende ervaring voor ze en ook voor de betrokken onderwijskundige staf.
 

@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # Elenco cambiamenti per QGIS 2.4{#changelog24 }
-Release date: 2014-06-27
+Data di rilascio: 2014-06-27
 
 Lista dei cambiamenti per QGIS 2.4.0. C'è molta enfasi per questa versione per via dei miglioramenti - Noi abbiamo aggiunto molte funzioni e perfezionamenti rendere l'interfaccia utente più consistente e professionale, oltre che più semplice da usare. Il compositore delle stampe ha subito molto lavoro per offrire ampie possibilità di stampe cartografiche.
 

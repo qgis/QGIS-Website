@@ -438,11 +438,11 @@ This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudice
 この機能は [Tudor Barascu](https://github.com/tudorbarascu) によって開発されました
 ### 機能: いくつかのタイムゾーンに関係する式関数を追加しました。
 式でタイムゾーンを扱うためのいくつかの関数を追加します:
-- `timezone_from_id`: Creates a timezone object from a string ID (from the IANA timezone database).
-- `timezone_id`: Returns the ID string for a timezone object, using IDs from the IANA timezone database.
-- `get_timezone`: Returns the timezone object associated with a datetime value.
-- `convert_timezone`: Converts a datetime object to a different timezone.
-- `set_timezone`: Sets the timezone object associated with a datetime value, without changing the date or time components. This function can be used to replace the timezone for a datetime.
+- `timezone_from_id`: IANAタイムゾーンデータベースの文字列IDからタイムゾーンオブジェクトを作成します。
+- `timezone_id`: IANAタイムゾーンデータベースのIDを使用してタイムゾーンオブジェクトのID文字列を返します。
+- `get_timezone`: 日時値に関連付けられたタイムゾーンオブジェクトを返します。
+- `convert_timezone`: 日時オブジェクトを別のタイムゾーンに変換します。
+- `set_timezone`: 日付や時刻のコンポーネントを変更せずに、日時値に関連付けられたタイムゾーンオブジェクトを設定します。この関数は日時のタイムゾーンを置き換えるために使用できます。
 
 <img src="images/entries/67fe7d4aa19caa1698e52c9d27e2dd954b809bb9.png" class="img-responsive img-rounded" />
 
@@ -450,20 +450,20 @@ This feature was funded by [North Road](https://north-road.com/)
 
 この機能は [North Road](https://north-road.com/) によって開発されました
 ## デジタイズ
-### Feature: Bézier maptool
-New GUI controls for part digitization using NURBS curves are provided by adding the "poly-bézier" / "freeform" curve mode, which uses anchors and handles to control curve shape in a manner similar to many graphic design tools.<br />Users can click and drag ot add a point with handles, and reset handles on a point using `alt+click`.
+### 昨日: ベジェマップツール
+NURBSカーブを使用したパーツデジタイズの新しいGUIコントロールとして、"poly-bézier" / "freeform"  カーブモードが追加されました。このモードは多くのグラフィックデザインツールと同様の方法でアンカーとハンドルを使用してカーブの形状を制御します。<br />ユーザーはクリック＆ドラッグでハンドル付きのポイントを追加でき、 `alt+click` でポイントのハンドルをリセットできます。
 
 <img src="images/entries/584c6a12ea7a79081fa1fce9f86d9c7d80ecf31c.png" class="img-responsive img-rounded" />
 
 この機能は [City of Frankfurt – Stadtplanungsamt と Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) の資金提供を受けてます
 
 This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
-### Feature: Add area and total length/perimeter CAD dock floater values
-New floater values are provided on the advanced digitizing CAD Tools interface, providing the option to show area and total length/perimeter values using Cartesian or Ellipsoidal calculations based on user selection (note that CAD tools uses Cartesian coordinates for digitization, which may result in differences between the displayed ellipsoidal values).
+### 機能: CADドックの面積および合計長さ/外周の浮動値の追加
+高度デジタイズCADツールインターフェースに新しい浮動値が提供され、ユーザーの選択に基づいてデカルトまたは楕円体計算を使用して面積および合計長さ/外周値を表示するオプションが追加されました（CADツールはデジタイズにデカルト座標を使用するため、表示される楕円体値との差異が生じる場合があることに注意してください）。
 
 <img src="images/entries/03e5d6b7b5c5ad9449f6abcb73c3dc21706b5ec5.png" class="img-responsive img-rounded" />
 
-This feature was funded by [QGIS Danish User Group](https://qgis.dk/)
+この機能は [QGIS Danish User Group](https://qgis.dk/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
 ### Feature: Add Maptool to handle chamfer and fillet of polygons
@@ -545,7 +545,7 @@ A new setting has been added in the layer properties legend tab (for vector, ras
 
 <img src="images/entries/798344535f33fdaf2047bfbd3070def6d28bb6fb.png" class="img-responsive img-rounded" />
 
-This feature was funded by [QGIS Danish User Group](https://qgis.dk/)
+この機能は [QGIS Danish User Group](https://qgis.dk/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
 ### Feature: Custom Elevation Profile Sources

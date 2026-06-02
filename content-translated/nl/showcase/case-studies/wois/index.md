@@ -9,8 +9,8 @@ draft: 'true'
 heroImage: ''
 tags:
 - water
-- case-study
-- showcase
+- praktijkvoorbeeld
+- gebruiksgeval
 thumbnail: wois.png
 title: Water observatie- en informatiesysteem
 type: showcase/case-studies

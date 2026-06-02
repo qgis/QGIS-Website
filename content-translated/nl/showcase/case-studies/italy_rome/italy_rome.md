@@ -37,7 +37,7 @@ Het gereedschap Grafische modellen bouwen, geïntegreerd in de laatste versie va
 
 Het model maakt gebruik van verschillende open source software en bibliotheken (GRASS, GDAL, QGIS), wat de bruikbaarheid van QGIS als een vereenvoudigde en geünificeerde interface voor heterogene gereedschappen voor GFOSS (Geospatial Free and Open Source Software) demonstreert (Fig. 1).
 
-![(Fig. 1) Screenshot from the geoprocessing model.](./images/italy_igag1.png){.align-right}
+![(Afb. 1) Schermafdruk uit het model voor geoprocessing.](./images/italy_igag1.png){.align-right}
 
 Het model neemt als invoer (Fig. 2):
 - Een shapefile van contourlijnen die een veld met waarden voor hoogten bevat;
@@ -46,7 +46,7 @@ Het model neemt als invoer (Fig. 2):
 - Een polygoon-shapefile waaruit objecten die kruisen met gebieden met een helling groter dan 15 graden zullen worden uitgenomen;
 - De naam van de resulterende polygoonlaag.
 
-![(Fig. 2) Model input form (left) and execution log (right).](./images/italy_igag2.png){.align-right}
+![(Afb. 2) Model invoerformulier (links) en log van uitvoering (rechts).](./images/italy_igag2.png){.align-right}
 
 Na het starten voert het model de volgende bewerkingen uit:
 - Het gereedschap voor GRASS v.to.rast.attribute converteert contour hoogtelijnen naar raster, met het contour-shapefile, de naam van het Z-veld en de rasterresolutie als invoer;
@@ -62,7 +62,7 @@ waar A het tijdelijke hellingsraster is dat werd gegenereerd door gdaldem;
 
 Het resultaat is een polygoonlaag met gebieden die gevoelig zijn voor instabiliteit vanwege een hellingswaarde van meer dan 15 graden, automatisch uitgenomen uit een thematische kaart, zoals een polygoonlaag van aardverschuivingen (Fig. 3) of een lithologische kaart.
 
-![(Fig. 3) The model output (in red) shows highly unstable areas extracted from a landslides layer (orange).](./images/italy_igag3.png){.align-right}
+![(Afb. 3) De uitvoer van het model (in rood) geeft zeer instabiele gebieden weer die zijn uitgenomen uit een laag van aardverschuivingen (oranje).](./images/italy_igag3.png){.align-right}
 ## Conclusies
 Dit werk demonstreert helder dat open source GIS-gereedschappen, zoals QGIS, GRASS, GDAL/OGR, met succes kunnen worden gebruikt voor ruimtelijke analyses en het verwerken van gegevens die zijn gericht op studies voor seismische microzonering op het eerste niveau. In dit voorbeeldwerk is QGIS gebruikt als een vereenvoudigde en geünificeerde interface voor verschillende gereedschappen van hoge kwaliteit voor GFOSS. Grafische modellen bouwen maakt het mogelijk intuïtieve modellen voor geoprocessing te maken die eenvoudig kunnen worden gedeeld als draagbare gereedschappen en voor verschillende platformen, die geen dure softwarelicenties vergen. Het gereedschap koppelt de mogelijkheid voor het maken van modellen van QGIS aan een grafische keten van verschillende algoritmen, het definiëren van parameters voor invoer en uitvoer en laat het aan de software over om de tussenliggende gegevensuitvoer te beheren. Het gebruiken van algoritmen van GRASS vereist niet het definiëren en gebruiken van een database en mapset voor GRASS, wat het ontwerpen van het model enorm vereenvoudigt. Toekomstige ontwikkelingen omvatten het maken van een pakket gereedschappen en modellen, gebaseerd op open source-software, die kunnen worden gebruikt om taken van ruimtelijke analyses die nodig zijn voor seismische microzonering te vereenvoudigen en te versnellen.
 ## Verwijzingen

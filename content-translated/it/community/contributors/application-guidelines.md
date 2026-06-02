@@ -13,7 +13,7 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Informazioni sul riconoscimento dei contributori che sostengono il progetto
-The QGIS Supporting Contributors program recognizes individuals and organizations whose valuable contributions to QGIS extend beyond code commits. This includes community support, documentation, translation, event organization, outreach, and other behind-the-scenes efforts that make QGIS thrive.
+Il programma "Collaboratori che sostengono QGIS" rende omaggio alle persone e alle organizzazioni il cui prezioso contributo a QGIS va oltre il semplice contributo al codice. Ciò comprende il supporto alla comunità, la documentazione, la traduzione, l'organizzazione di eventi, le attività di divulgazione e altre iniziative dietro le quinte che contribuiscono al successo di QGIS.
 
 If you've been actively supporting the QGIS community, we encourage you to apply for recognition!
 
@@ -28,7 +28,7 @@ If you've been actively supporting the QGIS community, we encourage you to apply
 {{<rich-box-end >}}
 ____
 ## Chi può presentare domanda?
-Both **individuals** and **organizations** who contribute to QGIS in non-code capacities are eligible to apply.
+Possono presentare domanda sia **singoli** che **organizzazioni** che contribuiscono a QGIS in ambiti diversi dalla programmazione.
 ### Tipi di contributi ammissibili
 - ✅ Membro del **Comitato direttivo del progetto QGIS (PSC)**
 - ✅ **Open Days** organizer or active participant
@@ -44,12 +44,12 @@ ____
 ## Requisiti per la candidatura
 ### Informazioni obbligatorie
 #### Per tutti i candidati:
-1. **Email Address** *(required)*
-   - Your contact email
+1. **Indirizzo e-mail** *(obbligatorio)*
+   - Il tuo indirizzo e-mail
 2. **Type** *(required)*
-   - Choose: Individual or Organisation
+   - Scegli: Singolo o Organizzazione
 3. **Name** *(required)*
-   - Your full name (individuals) or organization name
+   - Il tuo nome completo (per i singoli) o il nome dell'organizzazione
 4. **Website/Profile Link**
    - Your personal website, LinkedIn, or organization website
 5. **Profile Image** *(required)*
@@ -60,7 +60,7 @@ ____
 #### Activity Details:
 6. **Start Date** *(required)*
    - When did you begin your QGIS community activities?
-7. **End Date**
+7. **Data di fine**
    - If applicable. Leave blank if still active.
    - ⚠️ **Note:** 3 years after the end date, your entry will be moved to the 'archived' section. You can request to update your profile if you become active again.
 8. **Type of Activities** *(required)*
