@@ -6,7 +6,10 @@ updates:
     schedule:
       interval: "quarterly"
 
-  # Enable version updates for Python dependencies (REQUIREMENTS.txt + Pipfile)
+  # Enable version updates for Python dependencies.
+  # The repo pins them in Pipfile / Pipfile.lock and mirrors them in
+  # REQUIREMENTS.txt (note the uppercase name); the "pip" ecosystem covers
+  # pipenv and requirements files in this directory.
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
