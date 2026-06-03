@@ -93,7 +93,6 @@ type: page
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contatto: Antidy Kawamala" >}}
 ### Registered 2026
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}
-
 ## Obiettivi di un gruppo di utenti
 * Organizzazione di incontri per gli utenti
 * Coordinamento dello sviluppo, con particolare attenzione agli standard e ai requisiti regionali/nazionali

@@ -92,11 +92,7 @@ type: page
 ### Registered 2025
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contact: Antidy Kawamala" >}}
 ### Registered 2026
-{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}
-
-
-
-## Objectius d'un grup d'usuaris
+{{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}## Objectius d'un grup d'usuaris
 * Organització de les trobades d'usuaris
 * Coordination of development, with an emphasis on regional/national standards and requirements
 * QGIS information dissemination: meetings, articles in GIS magazines, QGIS information in social media, GIS discussion boards, etc.

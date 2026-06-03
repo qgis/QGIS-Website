@@ -93,7 +93,6 @@ type: page
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contact: Antidy Kawamala" >}}
 ### Registered 2026
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}
-
 ## Metas de un grupo de usuarios
 * Organización de los encuentros de usuarios
 * Coordination of development, with an emphasis on regional/national standards and requirements
