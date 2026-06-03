@@ -94,9 +94,6 @@ type: page
 ### Registered 2026
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}
 
-{{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}
-
-
 ## Obiectivele grupurilor de utilizatori
 * Organizarea de întâlniri ale utilizatorilor
 * Coordonarea dezvoltării, ținând seama de cerințele și standardele regionale/naționale 
