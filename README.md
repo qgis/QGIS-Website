@@ -116,7 +116,7 @@ QGIS-Website/
   ├── 📖  README.md         # Project overview and instructions
   ├── 📋  REQUIREMENTS.txt  # Python dependencies (pip)
   ├── 🐚  flake.nix         # Nix flake (development environment)
-  └── 💡  vscode.sh*        # VSCode helper script for Nix shell environment
+  └── 💡  vscode.sh*        # VSCode helper script for the Nix development environment
 ```
 
 
@@ -512,7 +512,7 @@ Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://
 docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Website > broken_links.csv
 ```
 
-Crawls the site and reports all 404. Full run takes about 10 mins
+Crawls the site and reports all 404 errors. Full run takes about 10 mins
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 

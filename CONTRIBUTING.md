@@ -543,5 +543,5 @@ Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://
 docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Website > broken_links.csv
 ```
 
-Crawls the site and reports all 404. Full run takes about 10 mins
+Crawls the site and reports all 404 errors. Full run takes about 10 mins
 
