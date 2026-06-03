@@ -5,3 +5,9 @@ updates:
     directory: "/"
     schedule:
       interval: "quarterly"
+
+  # Enable version updates for Python dependencies (REQUIREMENTS.txt + Pipfile)
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
