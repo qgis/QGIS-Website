@@ -15,7 +15,7 @@ type: page
 ## Informazioni sul riconoscimento dei contributori che sostengono il progetto
 Il programma "Collaboratori che sostengono QGIS" rende omaggio alle persone e alle organizzazioni il cui prezioso contributo a QGIS va oltre il semplice contributo al codice. Ciò comprende il supporto alla comunità, la documentazione, la traduzione, l'organizzazione di eventi, le attività di divulgazione e altre iniziative dietro le quinte che contribuiscono al successo di QGIS.
 
-If you've been actively supporting the QGIS community, we encourage you to apply for recognition!
+Se hai sostenuto attivamente la comunità di QGIS, ti invitiamo a candidarti per ricevere un riconoscimento!
 
 <div style="text-align:center;">
   <a href="https://forms.gle/wZr4EfCjqPWGaoq37" class="button is-success">

@@ -92,8 +92,8 @@ Carica il tuo logo nella cartella `static/img/contributors/`:
 
 ____
 ## Fase 5: revisione e approvazione
-✨ Once you submit your Pull Request:
-1. The QGIS website team will review your submission
+✨ Una volta inviata la tua Pull Request:
+1. Il team del sito web di QGIS esaminerà il tuo contributo
 2. Potremmo richiedere alcune piccole modifiche
 3. Una volta approvata e aggiunta, la tua organizzazione apparirà nella [pagina dei contributori](/community/contributors/)!
 
