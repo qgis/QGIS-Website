@@ -34,7 +34,7 @@ type: page
 ## 贡献组织
 通过开发与协作为QGIS项目做出实质性贡献的各类组织
 
-{{<button class="is-success" link="/community/contributors/organisations/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/organisations/" text="查看列表" >}}
 
 {{<rich-content-end >}}
 
@@ -52,7 +52,7 @@ type: page
 ## 个人贡献者
 致敬通过代码贡献和协作，助力QGIS不断发展的开发者和贡献者。
 
-{{<button class="is-success" link="/community/contributors/individuals/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/individuals/" text="查看列表" >}}
 
 {{<rich-content-end >}}
 
@@ -70,7 +70,7 @@ type: page
 ## 项目支持者
 致敬代码提交之外的各类贡献—包括社区支持、对外推广以及幕后默默付出者。
 
-{{<button class="is-success" link="/community/contributors/supporting/" text="View list" >}}
+{{<button class="is-success" link="/community/contributors/supporting/" text="查看列表" >}}
 
 {{<rich-content-end >}}
 
