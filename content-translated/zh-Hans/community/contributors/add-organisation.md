@@ -46,8 +46,8 @@ Copy and customize this template with your organization's information:
 ### Field Guide:
 | 字段 | 描述 | 示例 |
 | --- | --- | --- |
-| **name** | Your organization's full name | `"Kartoza"` |
-| **subtitle** | Short tagline or motto | `"Mapping the Future"` |
+| **name** | 你的组织全称 | `"Kartoza"` |
+| **副标题** | Short tagline or motto | `"Mapping the Future"` |
 | **image** | Logo filename (add to `static/img/contributors/`) | `"img/contributors/kartoza-logo.png"` |
 | **width** | Logo display width | `"200px"` (keep as is) |
 | **url** | Your website | `"https://kartoza.com"` |

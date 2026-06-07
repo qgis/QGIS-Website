@@ -466,8 +466,8 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 この機能は [QGIS Danish User Group](https://qgis.dk/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Add Maptool to handle chamfer and fillet of polygons
-A new digitizing Maptool allows users to chamfer or fillet polygons.
+### 機能: ポリゴンの面取りとフィレットを処理するマップツールの追加
+面取りとフィレットを利用するための新しいデジタイジングマップツール。
 
 <img src="images/entries/58ace0c2995032999b366d0171a78857e687d3c4.png" class="img-responsive img-rounded" />
 
@@ -475,81 +475,81 @@ A new digitizing Maptool allows users to chamfer or fillet polygons.
 
 This feature was developed by [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
 ## データ管理
-### Feature: Enhanced COG support for raster exports
-The Raster Exports and Save dialogs now support explicit options to specify that the output should be exported with Cloud Optimized GeoTiff optimization, with additional COG-specific pyramid features, including improvements for:
-- progress reporting
-- error handling
-- pyramid generation operations
+### 機能: ラスターエキスポートにおける COG サポートの強化
+ラスターのエクスポートと保存ダイアログが、出力をCloud Optimized GeoTiff最適化でエクスポートするための明示的なオプションをサポートするようになりました。追加のCOG固有のピラミッド機能も含まれており、以下の改善が含まれます:
+- 進捗報告
+- エラーハンドリング
+- ピラミッド生成操作
 
-Note that this requires GDAL \>= 3.13.0
+これにはGDAL 3.13.0以上が必要であることに注意してください。
 
 <img src="images/entries/60cec0aa212eb189e7749c242ba1ca49423ca845.png" class="img-responsive img-rounded" />
 
-This feature was funded by [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
+この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
-### Feature: Copy raw attribute values
-QGIS now makes the raw (original) attribute values visible and copyable in both Attribute tables and the Identify Result interface.<br />In previous versions, data values were copied only in their "represented" form, i.e., the values that are evaluated by locale settings, expressions, or display values (e.g, foreign key values).<br />The new "Copy Raw Cell Content" option, available from the context menu, will copy literal values from the source data to the clipboard.
+### 機能: 生の属性値のコピー
+QGISが属性テーブルと識別結果インターフェースの両方で生（オリジナル）の属性値を表示およびコピー可能にしました。 <br />以前のバージョンでは、データ値はロケール設定、式、または表示値（例：外部キー値）によって評価された"表現形式"でのみコピーされていました。<br />コンテキストメニューから利用できる新しい"生のセルコンテンツをコピー"オプションにより、ソースデータからクリップボードにリテラル値をコピーできるようになります。
 
 <img src="images/entries/cbc449f46c49440ac88d7f89a36e490d4d1deb20.png" class="img-responsive img-rounded" />
 
-This feature was funded by Ct. Solothurn
+この機能は Ct. Solothurn の資金提供で開発されました
 
 This feature was developed by [signedav](https://github.com/signedav)
-### Feature: Allow storing Comments in QGIS Projects stored in PostgreSQL
-QGIS projects stored in PostgreSQL can now include comments with additional information, which is displayed in the browser using a Tooltip.
+### 機能: PostgreSQLに保存されたQGISプロジェクトへのコメントの保存を可能に
+PostgreSQLに保存されたQGISプロジェクトに追加情報を含むコメントを含めることができるようになりました。これはブラウザーでツールチップを使用して表示されます。
 
 <img src="images/entries/fa9f5d8b4ba7be7475799d104df2c4e96cc26f71.png" class="img-responsive img-rounded" />
 
 この機能開発には Ocean Winds の資金提供を受けました
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
-### Feature: Allow named layers as temporary output
-This functionality allows the user to name a temporary output layer that is the result of a processing algorithm. The fact that the layer is temporary is identifiable by the temporary icon (memory chip) displayed before the user defined layer name.
+### 機能: 名前付きレイヤーを一時出力として使用可能に
+この機能により、プロセッシングアルゴリズムの結果として生成される一時出力レイヤーに名前を付けることができるようになります。レイヤーが一時的であることは、ユーザー定義のレイヤー名の前に表示される一時的なアイコン（メモリチップ）で識別できます。
 
 <img src="images/entries/3fec097dc50545f03ab62e3cff5688b719d23916" class="img-responsive img-rounded" />
 
-This feature was funded by QGIS DK user group
+この機能は QGIS DK user group の資金提供で開発されました
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
-### Feature: Possibility to change the layer name in the layer panel when saving a scratch layer
-When saving a scratch layer as a permanent layer with a new name (a different file name than the name in the layer panel), a message bar is shown. In this message bar, the user can choose to automatically change the name in the layer panel to the new layer name.<br />This message bar is only shown if the layer is saved with a new name, and currently, this only works for some filetypes (it works for geopackages but not for shapefiles).
+### 機能:スクラッチレイヤーを保存する際のレイヤーパネルでのレイヤー名変更を可能にした
+スクラッチレイヤーを新しい名前（レイヤーパネルの名前とは異なるファイル名）で永続的なレイヤーとして保存する際、メッセージバーが表示されます。<br />このメッセージバーでは、レイヤーパネルの名前を新しいレイヤー名に自動的に変更するかどうかを選択できます。このメッセージバーはレイヤーが新しい名前で保存された場合にのみ表示され、現在は一部のファイルタイプのみで機能します（GeoPackageでは機能しますが、シェープファイルでは機能しません）。
 
 <img src="images/entries/f4d0c0c524eed26129c8c59c406018085e071220" class="img-responsive img-rounded" />
 
-This feature was funded by QGIS DK user group
+この機能は QGIS DK user group の資金提供で開発されました
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
-### Feature: Suggest a file name when exporting layer or group as layer definition file
-When saving a layer or a layer group as a layer definition file (.qlr), the filename field was left empty by default. QGIS now populates the name of the layer or group as a suggestion for the filename to reduce friction for style exports.
+### 機能: レイヤーまたはグループをレイヤー定義ファイルとしてエクスポートする際のファイル名の提案
+レイヤーまたはレイヤーグループをレイヤー定義ファイル（.qlr）として保存する際、ファイル名フィールドはデフォルトで空白のままでした。QGISはスタイルのエクスポートの摩擦を減らすために、ファイル名の候補としてレイヤーまたはグループの名前を自動入力するようになりました。
 
-This feature was developed by [pgipper](https://github.com/pgipper)
+この機能は [pgipper](https://github.com/pgipper) によって開発されました
 ## フォームとウィジェット
-### Feature: Add the ability to preview the attributes form within the vector layer properties dialog
-QGIS now provides the ability to preview an attributes form while configuring it within the vector layer properties dialog.
+### 機能: ベクターレイヤープロパティダイアログ内での属性フォームのプレビュー機能の追加
+QGISがベクターレイヤープロパティダイアログ内で属性 フォームを設定しながらプレビューする機能を提供するようになりました。
 
 <img src="images/entries/c0bb362e1f57600a820c2d185f77993abbd48318.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Refine reuse of last value and introduce remembrance toggle
-QGIS Attribute Forms now include an enhanced user experience for handling the reuse of "last captured" values in forms. A pin icon on forms will give users visual feedback on whether a field's value will be remembered and reused, and provide an active toggle to control whether it should continue to be reused. Additional enhancements to the form configuration allow session-level reuse policies to be set, the default behavior for reuse policies (enabled/disabled), and the ability to disable reuse policies across all fields in a layer.
+### 機能: 最後の値の再利用の改善と記憶トグルの導入
+QGIS属性フォームに、フォームでの "最後にキャプチャされた" 値の再利用を処理するための強化されたユーザーエクスペリエンスが追加されました。フォームのピンアイコンにより、フィールドの値が記憶されて再利用されるかどうかについての視覚的なフィードバックがユーザーに提供され、引き続き再利用するかどうかを制御するアクティブなトグルも提供されます。フォーム設定の追加の機能強化により、セッションレベルの再利用ポリシーの設定、再利用ポリシーのデフォルト動作（有効/無効）、およびレイヤーのすべてのフィールドにわたって再利用ポリシーを無効にする機能が可能になります。
 
 <img src="images/entries/b06e53bc63de8ea4643beb74c69781076b613d07.png" class="img-responsive img-rounded" />
 
-This feature was funded by Funded by DB Fahrwegdienste GmbH
+この機能は Funded by DB Fahrwegdienste GmbH の資金提供によって開発されました
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 ## レイヤ凡例
-### Feature: Add control over whether layers are included in automatic print layout legends
-A new setting has been added in the layer properties legend tab (for vector, raster, mesh, and point cloud layers) for "Include automatically in print layout legend items". This setting is checked by default. Users must uncheck to exclude that layer from print layout legends.<br />This has also been added to the legend page for mesh and point cloud layers, with the generic setting for controlling embedded legend widgets.
+### 機能: 自動印刷レイアウト凡例にレイヤーを含めるかどうかの制御の追加
+レイヤープロパティの凡例タブ（ベクター、ラスター、メッシュ、ポイントクラウドレイヤー用）に "印刷レイアウト凡例アイテムに自動的に含める" の新しい設定が追加されました。 <br />この設定はデフォルトでチェックされています。ユーザーはチェックを外すことでそのレイヤーを印刷レイアウト凡例から除外できます。これはメッシュおよびポイントクラウドレイヤーの凡例ページにも追加されており、埋め込み凡例ウィジェットを制御する汎用設定も含まれています。
 
 <img src="images/entries/798344535f33fdaf2047bfbd3070def6d28bb6fb.png" class="img-responsive img-rounded" />
 
 この機能は [QGIS Danish User Group](https://qgis.dk/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Custom Elevation Profile Sources
-QGIS now includes more powerful interactive behaviors for Elevation Profiles, including changing the layer visibility and rendering order on related canvases and linking the project layer tree to the profile plot sources.<br />This functionality is enabled by the introduction of the `QgsLayerTreeCustomNode` class, which enables the representation of application objects (other than layers and groups) in QGIS layer trees.
+### 機能:カスタム標高プロファイルソース
+QGISが標高プロファイルのより強力なインタラクティブな動作を提供するようになりました。関連するキャンバスでのレイヤーの表示とレンダリング順序の変更、プロジェクトレイヤーツリーとプロファイルプロットソースのリンクなどが含まれます。 <br />この機能は  `QgsLayerTreeCustomNode`  クラスの導入によって有効になり、QGISレイヤーツリーにおけるアプリケーションオブジェクト（レイヤーとグループ以外）の表現が可能になります。
 
 <img src="images/entries/8218225f95e403fe8e543f34b0427561371265b6.png" class="img-responsive img-rounded" />
 
@@ -557,8 +557,8 @@ This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
 ## プロセシング
-### Feature: Native polygon orientation algorithms
-New algorithms for **Force polygons clockwise** (`native:forcecw`) and **Force polygons counter-clockwise** (`native:forceccw`) have been added to processing algorithms.<br />Force polygons clockwise replicates the existing "Force right-hand-rule" operation, and forces polygon geometries to respect the convention where the exterior ring is oriented in a clockwise direction and the interior rings in a counter-clockwise direction.<br />Force polygons counter-clockwise performs the inverse, and forces polygon geometries to respect the convention where the exterior ring is oriented in a counter-clockwise direction and the interior rings in a clockwise direction.
+### 機能: ネイティブポリゴン方向アルゴリズム
+プロセッシングアルゴリズムに  **ポリゴンを時計回りに強制 **  (`native:forcecw`)  と  **ポリゴンを反時計回りに強制 ** (`native:forceccw`)  の新しいアルゴリズムが追加されました。 <br />ポリゴンを時計回りに強制は既存の "右手の法則を強制" 操作を再現し、ポリゴンジオメトリが外部リングが時計回りの方向に、内部リングが反時計回りの方向に向けられる慣例に従うよう強制します。<br />ポリゴンを反時計回りに強制はその逆を実行し、ポリゴンジオメトリが外部リングが反時計回りの方向に、内部リングが時計回りの方向に向けられる慣例に従うよう強制します。
 
 <img src="images/entries/a0c4136c269a5cd474bdc29e15c26831baa8706f.png" class="img-responsive img-rounded" />
 
@@ -622,13 +622,13 @@ A new Data Identification algorithm allows for the automated extraction of metad
 
 <img src="images/entries/76dfc1189b899bedaa208692766fc765ccb76175.png" class="img-responsive img-rounded" />
 
-This feature was funded by [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
+この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
 ### Feature: Add a way to specify the raster format in processing algorithm outputs
 This feature allows specifying the output format for rasters using GDAL configuration flags, primarily for enforcing Cloud Optimized GeoTiff outputs.<br />In previous versions, the output format was based on file format extension, which breaks for COG since both GDAL GTiff and COG drivers use the extension of `.tif/.tiff`. Users can now explicitly specify `-of COG` to enforce COG exports.
 
-This feature was funded by [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
+この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
 ### Feature: Show the feature count flowing through a model inside the model designer
@@ -810,7 +810,7 @@ Feature Services served from OGC API for Features sources that honour the `outpu
 
 <img src="images/entries/3f0add13c921416314030ca3f9ff12118dd288b2.png" class="img-responsive img-rounded" />
 
-This feature was funded by [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
+この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
 ### Feature: Allow update and delete for Field Domains in GPKG
@@ -867,7 +867,7 @@ Allows to detect the formats actually advertized by the server and stores them i
 
 <img src="images/entries/9736fdc6bcb34c3bbdf6d85cf3d9eaa567176313.png" class="img-responsive img-rounded" />
 
-This feature was funded by [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
+この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ## QGISサーバー
@@ -888,7 +888,7 @@ Make the OAPIF service root path configurable through a new server setting<br />
 
 Change the default from “/wfs3” to “/ogcapi”.
 
-This feature was funded by [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/)
+この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ## プログラム可能
