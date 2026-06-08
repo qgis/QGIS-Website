@@ -40,16 +40,10 @@ jobs:
     - name: '⬇️ Pull latest changes before commit'
       run: |
         cd ./qgis-website
-        # Other scheduled jobs commit to main too, and one of them may have
-        # pushed while this job was running. Refresh our checkout first so the
-        # commit below is not rejected as a non fast forward push.
-        if ! git diff --quiet || ! git diff --cached --quiet; then
-          git stash push -u -m "Auto stash before pull"
-          git pull --rebase origin main || echo "Nothing new to pull"
-          git stash pop || echo "Nothing to pop"
-        else
-          git pull --rebase origin main || echo "Nothing new to pull"
-        fi
+        # Another scheduled job may have pushed to main while this one ran.
+        # Rebase on top of it first (autostash tucks the generated files
+        # aside) so the commit below is a fast forward.
+        git pull --rebase --autostash origin main
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v7

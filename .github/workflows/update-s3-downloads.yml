@@ -56,8 +56,8 @@ jobs:
           git add data/downloads/
           git commit -m "🤖 Update S3 downloads listing [skip ci]"
           # Rebase onto anything that landed on main while we were running,
-          # then push so the update is not rejected.
-          git pull --rebase origin main || echo "Nothing new to pull"
+          # then push. A real rebase failure should fail the job.
+          git pull --rebase --autostash origin main
           git push
       
       - name: Report status
