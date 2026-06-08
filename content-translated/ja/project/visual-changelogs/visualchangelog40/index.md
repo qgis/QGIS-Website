@@ -558,153 +558,154 @@ This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
 This feature was developed by [Germap](https://github.com/gacarrillor)
 ## プロセシング
 ### 機能: ネイティブポリゴン方向アルゴリズム
-プロセッシングアルゴリズムに  **ポリゴンを時計回りに強制 **  (`native:forcecw`)  と  **ポリゴンを反時計回りに強制 ** (`native:forceccw`)  の新しいアルゴリズムが追加されました。 <br />ポリゴンを時計回りに強制は既存の "右手の法則を強制" 操作を再現し、ポリゴンジオメトリが外部リングが時計回りの方向に、内部リングが反時計回りの方向に向けられる慣例に従うよう強制します。<br />ポリゴンを反時計回りに強制はその逆を実行し、ポリゴンジオメトリが外部リングが反時計回りの方向に、内部リングが時計回りの方向に向けられる慣例に従うよう強制します。
+プロセッシングアルゴリズムに  **ポリゴンを時計回りに強制**  (`native:forcecw`)  と  **ポリゴンを反時計回りに強制** (`native:forceccw`)  の新しいアルゴリズムが追加されました。 <br />ポリゴンを時計回りに強制は既存の "右手の法則を強制" 操作を再現し、ポリゴンジオメトリが外部リングが時計回りの方向に、内部リングが反時計回りの方向に向けられる慣例に従うよう強制します。<br />ポリゴンを反時計回りに強制はその逆を実行し、ポリゴンジオメトリが外部リングが反時計回りの方向に、内部リングが時計回りの方向に向けられる慣例に従うよう強制します。
 
 <img src="images/entries/a0c4136c269a5cd474bdc29e15c26831baa8706f.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Configure model components using an inline panel instead of modal dialogs
-A new configuration panel has been added, docked to the right-hand side of the Processing model designer, which allows editing of model components without the modal dialogs, and replicating the user experience from the Layer Styling Panel. This improves the UX for model editing and prevents model configuration modals from blocking user interaction with other QGIS elements while model components are being edited. Users can still access the dialogs when double-clicking an item.
+### 機能: モーダルダイアログの代わりにインラインパネルを使用したモデルコンポーネントの設定
+プロセッシングモデルデザイナーの右側にドッキングされた新しい設定パネルが追加されました。これによりモーダルダイアログなしでモデルコンポーネントを編集でき、レイヤースタイリングパネルのユーザーエクスペリエンスを再現します。これによりモデル編集のUXが向上し、モデルコンポーネントの編集中にモデル設定モーダルが他のQGIS要素とのユーザーインタラクションをブロックすることを防ぎます。アイテムをダブルクリックすることでダイアログに引き続きアクセスできます。
 
 <img src="images/entries/c6368e5609a680adf719ca6cd1a95739278db0d2.png" class="img-responsive img-rounded" />
 
-This feature was funded by [City of Canning](https://www.canning.wa.gov.au/)
+この機能は [City of Canning](https://www.canning.wa.gov.au/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Add network analysis validation algorithms
-Two new algorithms useful for validating networks have been added:
+### 機能: ネットワーク分析検証アルゴリズムの追加
+ネットワークの検証に役立つ2つの新しいアルゴリズムが追加されました:
 - ネットワークの検証
-- Extract network endpoints
+- ネットワーク端点の抽出
 
-**Validate network**<br />This algorithm analyzes a network vector layer to identify data and topology errors that may affect network analysis tools (like shortest path). Optional checks include:
-1. Validating the 'Direction' field to ensure all direction field values in the input layer match the configured forward/backward/both values. Errors will be reported if the direction field value is non-null and does not match one of the configured values.
-2. Checking node-to-node separation. This check identifies nodes from the network graph that are closer to other nodes than the specified tolerance distance. This often indicates missed snaps or short segments in the input layer. In the case that a node violates this condition with multiple other nodes, only the closest violation will be reported.
-3. Checking node-to-segment separation: This check identifies nodes that are closer to a line segment (e.g. a graph edge) than the specified tolerance distance, without being connected to it. In the case that a node violates this condition with multiple other edges, only the closest violation will be reported.
+**ネットワークの検証**<br />このアルゴリズムはネットワークベクターレイヤーを分析して、ネットワーク分析ツール（最短経路など）に影響を与える可能性のあるデータとトポロジーエラーを特定します。オプションのチェックには以下が含まれます: 
+1. 入力レイヤーのすべての方向フィールド値が設定された前方/後方/両方の値と一致することを確認するための '方向 ' フィールドの検証。方向フィールドの値がnullでなく、設定された値のいずれとも一致しない場合にエラーが報告されます。
+2. ノード間の間隔のチェック。このチェックはネットワークグラフのノードの中で、指定したトレランス距離より他のノードに近いものを識別します。これは入力レイヤーでのスナップの失敗や短いセグメントを示すことがよくあります。ノードが複数の他のノードとこの条件に違反する場合、最も近い違反のみが報告されます。
+3. ノードとセグメントの間隔のチェック: このチェックはラインセグメント（例：グラフエッジ）に接続されていないにもかかわらず、指定したトレランス距離よりも近いノードを識別します。ノードが複数の他のエッジとこの条件に違反する場合、最も近い違反のみが報告されます。
 
-Two layers are output by this algorithm:
-1. An output containing features from the original network layer that failed the direction validation checks.
-2. An output representing the problematic node locations with an 'error' field explaining the error. This is a line layer, where the output features join the problematic node to the node or segment that failed the tolerance checks.
+このアルゴリズムは2つのレイヤーを出力します:
+1. 方向検証チェックに失敗したオリジナルのネットワークレイヤーの地物を含む出力。
+2. エラーを説明する  'error ' フィールドを持つ問題のあるノードの位置を表す出力。これはラインレイヤーで、出力地物は問題のあるノードをトレランスチェックに失敗したノードまたはセグメントに接続します。
 
-**Extract network endpoints**<br />This algorithm extracts the endpoints (nodes) from a network line layer. Two definitions are available for identifying endpoints:
-1. Nodes with only all incoming or all outgoing edges: Identifies 'Source' or 'Sink' nodes based on the direction of flow. These are nodes where flow can start (only outgoing) or stop (only incoming).
-2. Nodes connected to a single edge: Identifies topological 'dead-ends' or 'dangles', regardless of directionality. This checks if the node is connected to only one other distinct node.
+**ネットワーク端点の抽出**<br />このアルゴリズムはネットワークラインレイヤーから端点（ノード）を抽出します。端点を識別するための2つの定義が利用可能です:
+1. すべて受信エッジのみまたはすべて送信エッジのみを持つノード: フローの方向に基づいて 'ソース' または 'シンク' ノードを識別します。これらはフローが開始（送信のみ）または停止（受信のみ）できるノードです。
+2. 単一のエッジに接続されたノード: 方向性に関わらず、トポロジ的な  '行き止まり ' または  'ダングル ' を識別します。これはノードが1つの他の異なるノードのみに接続されているかどうかをチェックします。
 
 <img src="images/entries/a26779141bcb3e43adeea67400b4666419f3a17f.png" class="img-responsive img-rounded" />
 
-This feature was funded by [City of Canning](https://www.canning.wa.gov.au/)
+この機能は [City of Canning](https://www.canning.wa.gov.au/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Add feature preserving raster smoothing algorithm
-This is a port of the Whitebox tool's equivalent algorithm, implementing the logic described in Lindsay, John et al (2019): LiDAR DEM Smoothing and the Preservation of Drainage Features.<br />It is effective at removing surface roughness from DEM) without significantly altering sharp features such as breaks-in-slope, stream banks, or terrace scarps.<br />This makes it superior to standard low-pass filters (e.g., mean, median, Gaussian) or resampling, which often blur distinct topographic features.<br />The algorithm works in three steps:
-1. Calculating surface normal 3D vectors for each grid cell.
-2. Smoothing the normal vector field using a filter that applies more weight to neighbors with similar surface normals (preserving edges).
-3. Iteratively updating the elevations in the DEM to match the smoothed normal field.
+### 機能: 特徴を保持するラスタースムージングアルゴリズムの追加
+これはWhiteboxツールの同等アルゴリズムの移植版で、Lindsay, John et al (2019): LiDAR DEM Smoothing and the Preservation of Drainage Featuresに記載されているロジックを実装しています。　これは傾斜の変化点、河岸、または段丘崖などの鋭い特徴を大きく変えることなく、DEM（数値標高モデル）の表面の粗さを除去するのに効果的です。<br />これにより、しばしば明確な地形的特徴をぼかす標準的なローパスフィルター（平均、中央値、ガウスなど）や再サンプリングより優れています。<br />このアルゴリズムは3つのステップで機能します:
+1. 各グリッドセルの表面法線3Dベクトルの計算。
+2. 類似した表面法線を持つ隣接セルにより多くの重みを適用するフィルターを使用して法線ベクトルフィールドをスムージングします（エッジを保持）。
+3. スムージングされた法線フィールドに一致するようにDEM内の標高を繰り返し更新します。
 
 This feature was funded by [North Road](https://north-road.com/)
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Add native raster gaussian blur algorithm
-Allows applying a gaussian blur to a raster layer
+### 機能: ネイティブラスターガウスぼかしアルゴリズムの追加
+ラスターレイヤーにガウスぼかしを適用できます。
 
 This feature was funded by [North Road](https://north-road.com/)
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Add native total curvature algorithm from the terrain analysis library
-Adds the Total curvature algorithm to Processing. The total curvature filter has existed in the terrain analysis library for years, but it was never exposed in the GUI. It is now exposed to the Processing framework alongside the existing terrain analysis filters.
+### 機能:地形解析ライブラリのネイティブ総曲率アルゴリズムの追加
+プロセッシングに総曲率アルゴリズムを追加します。総曲率フィルターは地形解析ライブラリに長年存在していましたが、GUIには公開されていませんでした。既存の地形解析フィルターとともにプロセッシングフレームワークに公開されました。
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Expose NODATA and raster creation options for outputs in the terrain analysis tools
-Expose output NODATA and raster creation options in the native raster terrain analysis tools (slope, aspect, hillshade, ruggedness index).
+### 機能: 地形解析ツールの出力でNODATAとラスター作成オプションを公開
+ネイティブラスター地形解析ツール（傾斜、向き、陰影起伏、粗度指数）で出力NODATAとラスター作成オプションを公開します。
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Add Dataset Identification GDAL Processing Algorithm
-A new Data Identification algorithm allows for the automated extraction of metadata using GDAL.<br />This algorithm requires GDAL \>= 3.13.0, as it uses the new capabilities of [gdal dataset identify](https://gdal.org/en/stable/programs/gdal_dataset_identify.html).
+### 機能: データセット識別GDALプロセッシングアルゴリズムの追加
+新しいデータ識別アルゴリズムにより、GDALを使用したメタデータの自動抽出が可能になります。<br />このアルゴリズムは [gdal dataset identify](https://gdal.org/en/stable/programs/gdal_dataset_identify.html) の新しい機能を使用するため、GDAL 3.13.0以上が必要です。
 
 <img src="images/entries/76dfc1189b899bedaa208692766fc765ccb76175.png" class="img-responsive img-rounded" />
 
 この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
-### Feature: Add a way to specify the raster format in processing algorithm outputs
-This feature allows specifying the output format for rasters using GDAL configuration flags, primarily for enforcing Cloud Optimized GeoTiff outputs.<br />In previous versions, the output format was based on file format extension, which breaks for COG since both GDAL GTiff and COG drivers use the extension of `.tif/.tiff`. Users can now explicitly specify `-of COG` to enforce COG exports.
+### 機能: プロセッシングアルゴリズム出力でのラスター形式を指定する方法の追加
+この機能はGDAL設定フラグを使用してラスターの出力形式を指定できるようにします。主にCloud Optimized GeoTiff出力を強制するためのものです。 <br />以前のバージョンでは、出力形式はファイル形式の拡張子に基づいていましたが、GDAL GTiffとCOGドライバーの両方が `.tif/.tiff` の拡張子を使用するため、COGでは機能しませんでした。ユーザーは  `-of COG` を明示的に指定してCOGエクスポートを強制できるようになりました。
 
 この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
-### Feature: Show the feature count flowing through a model inside the model designer
-The long-requested ability to show the number of features flowing through the model has been added. The number of features is attached to the link going in and out between the algorithms, and it only applies to vector layers. The display of the feature count can be disabled using the "Show Feature Count" option in the view menu.<br />Note: To be able to display the feature count, the model needs to be run first at least once.
+### 機能: モデルデザイナー内でモデルを流れる地物数の表示
+長年要望されていた、モデルを流れる地物数を表示する機能が追加されました。地物数はアルゴリズム間のリンクに付加され、ベクターレイヤーのみに適用されます。地物数の表示はビューメニューの "地物数を表示" オプションを使用して無効にできます。<br />注意: 地物数を表示するには、モデルを少なくとも1回実行する必要があります。
 
 <img src="images/entries/468164c721e2407abaf86e0629d35377741dc2a6.png" class="img-responsive img-rounded" />
 
-This feature was funded by the QGIS Switzerland user group
+この機能は QGIS Switzerland user group の資金提供で開発されました
 
 この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
-### Feature: support max-triangle-edge-length in PDAL Export to raster (TIN) algorithm
-Support for max-triangle-edge-length parameter has been added to the PDAL Export to raster (TIN) algorithm, so that triangles where the edge length is bigger than the specified threshold can be ignored.<br />This feature needs PDAL \>= 2.6.0 and wrench \>=1.2.2.
+### 機能:PDALのラスターへのエクスポート（TIN）アルゴリズムでmax-triangle-edge-lengthをサポート
+PDALのラスターへのエクスポート（TIN）アルゴリズムにmax-triangle-edge-lengthパラメーターのサポートが追加されました。これにより、エッジの長さが指定したしきい値より大きいトライアングルを無視できるようになります。<br />この機能にはPDAL 2.6.0以上およびwrench 1.2.2以上が必要です。
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
-### Feature: Model designer update
-The QGIS Model Designer has had a significant update applied to the way in which it handles the input and output values between nodes to provide visual feedback in much more meaningful ways.<br />Individual parameters for node configuration are now exposed, and the connections between values from tools and variables are connected to nodes at the specific parameters where they are input and output accordingly.<br />Parameter Values are color-coded by data type (including generic data types like integer and string, but also complex QGIS-specific types such as vector and raster layers), allowing for enhanced visual indexing and traceability of data operations as they flow through the model.
+### 機能: モデルデザイナーのアップデート
+QGISモデルデザイナーに、ノード間の入出力値の処理方法に大幅な更新が適用され、より意味のある方法で視覚的なフィードバックを提供するようになりました。<br />ノード設定の個別パラメーターが公開され、ツールと変数からの値間の接続は、それぞれ入出力される特定のパラメーターでノードに接続されます。<br />パラメーター値はデータタイプ（整数や文字列などの汎用データタイプだけでなく、ベクターやラスターレイヤーなどのQGIS固有の複雑なタイプも含む）によってカラーコーディングされており、モデルを流れるデータ操作の視覚的なインデックスとトレーサビリティが向上します。
 
 <img src="images/entries/92bf8916e1ddc8d0e44b31f130d2029ac93b438f.png" class="img-responsive img-rounded" />
 
-This feature was funded by [Géo2France](https://www.geo2france.fr/portal/public/overview)
+この機能は [Géo2France](https://www.geo2france.fr/portal/public/overview) の資金提供で開発されました
 
-This feature was developed by [Jonathan Lurie](https://github.com/jonathanlurie)
-### Feature: Allow Reproject Layer algorithm to transform Z coordinates
-An optional bool parameter to the *Reproject layer* algorithm has been added that allows for the transformation of Z coordinates.
+この機能は [Jonathan Lurie](https://github.com/jonathanlurie) によって開発されました
+### 機能: レイヤーの再投影アルゴリズムによるZ座標の変換を可能にしました
+*レイヤーの再投影* アルゴリズムにZ座標の変換を可能にするオプションのboolパラメーターが追加されました。
 
 <img src="images/entries/b93161af43e09fc6189680f8f8b323b86555d499.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add algorithm to create Cloud Optimized GeoTiffs from directory source
-A new algorithm for Create Cloud Optimized GeoTIFF has been added that allows the creation of COGs for a set of input raster files provided in a dedicated folder and uses GDAL to perform a bulk conversion of the input files.
+### 機能: ディレクトリソースからCloud Optimized GeoTiffを作成するアルゴリズムの追加
+専用フォルダーに提供された入力ラスターファイルのセットに対してCOGを作成し、GDALを使用して入力ファイルの一括変換を実行する、Cloud Optimized GeoTIFF作成の新しいアルゴリズムが追加されました。
 
 <img src="images/entries/7a822b6086fbf156b8f3528499f78a5d83eb7b29.png" class="img-responsive img-rounded" />
 
 この機能開発には Ocean Winds の資金提供を受けました
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
-### Feature: Add SFCGAL approximate medial axis processing algorithm
-A new processing algorithm to approximate medial axis has been added which is based on the newly integrated SFCGAL backend.<br />The Approximate Medial Axis algorithm generates a simplified skeleton of a shape by approximating its medial axis. The output is a collection of lines that follow the central structure of the shape. The result is a thin, stable set of curves that capture the main topology while ignoring noise. This algorithm ignores the Z dimensions. If the geometry is 3D, the approximate medial axis will be calculated from its 2D projection.
+### 機能: SFCGAL近似中心軸プロセッシングアルゴリズムの追加
+新しく統合されたSFCGALバックエンドに基づく近似中心軸の新しいプロセッシングアルゴリズムが追加されました。<br />近似中心軸アルゴリズムは中心軸を近似することでシェイプの簡略化されたスケルトンを生成します。出力はシェイプの中央構造に沿ったラインのコレクションです。結果はノイズを無視しながら主要なトポロジーをキャプチャする細くて安定した曲線のセットです。このアルゴリズムはZ次元を無視します。ジオメトリが3Dの場合、近似中心軸はその2Dプロジェクションから計算されます。
 
 <img src="images/entries/0804299923000a846f55b0b8fb0b50e19e3893d5.png" class="img-responsive img-rounded" />
 
 この機能は [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) の資金提供で開発されました
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
-### Feature: Scale and Resolution settings for WMS extraction
-QGIS now enables Raster Extraction algorithms to work with WMSs requested at a given scale, so that scale-dependent rendering (symbology/labeling) is preserved in the output raster.<br />The improved algorithms are `Clip raster by extent` and `Clip raster by mask layer`.<br />A new advanced options panel is provided on WMS layers when used as a source in these algorithms, which provides options for:
-- **Reference scale**: The scale at which the WMS raster should be requested/rendered.
-- **Service resolution**: The resolution (in DPI) used by the server to render the WMS raster (by default 96 dpi).<br />These changes were enabled by the introduction of the `QgsProcessingRasterLayerDefinition` and `QgsWmsUtils` classes.
+### 機能: WM抽出のスケールと解像度設定
+QGISが指定されたスケールでリクエストされたWMSと連携するラスター抽出アルゴリズムを有効にし、スケール依存のレンダリング（シンボロジー/ラベリング）が出力ラスターに保持されるようになりました。 <br />改善されたアルゴリズムは  ` 範囲でラスターをクリップ`   と ` マスクレイヤーでラスターをクリップ`  です。<br />これらのアルゴリズムのソースとして使用する際にWMSレイヤーに新しい詳細オプションパネルが提供され、以下のオプションが提供されます:
+ 
+- **Reference scale**: WMSラスターをリクエスト/レンダリングするスケール。
+- **Service resolution**: サーバーがWMSラスターをレンダリングするために使用する解像度（DPI単位、デフォルトは96 dpi）。 <br />これらの変更は `QgsProcessingRasterLayerDefinition` および `QgsWmsUtils` クラスの導入によって有効になりました。
 
 <img src="images/entries/532bbcaddf65f8d815ecdddd48ed71b067cdb855.png" class="img-responsive img-rounded" />
 
 この機能は [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) の資金提供で開発されました
 
-This feature was developed by [Germap](https://opengis.ch)
-### Feature: Add duplicate features output layer parameter to Delete duplicate geometries Algorithm
-This feature extends the "Delete duplicate geometries" processing algorithm so that the identified duplicate features that are deleted can be extracted and saved as a distinct file for further analysis.
+この機能は [Germap](https://opengis.ch) によって開発されました
+### 機能: 重複ジオメトリの削除アルゴリズムへの重複地物出力レイヤーパラメーターの追
+この機能は "重複ジオメトリの削除" プロセッシングアルゴリズムを拡張し、削除された識別された重複地物を抽出して、さらなる分析のための別のファイルとして保存できるようにします。
 
 <img src="images/entries/85ee1e8469a32c107d2bfc08ec468915399689a7.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
-### Feature: Add algorithms to filter parts by length/area
-These new algorithms, "Remove parts by length" and "Remove parts by area", filter out parts of geometries from a vector layer by checking their area or length against a minimum size parameter.<br />If the input geometry is a multipart geometry, then the parts will be filtered by their individual sizes. If no parts match the required minimum size, then the feature will be skipped and omitted from the output layer. If the input geometry is a singlepart geometry, then the feature will be skipped if the geometry's size is below the required size and omitted from the output layer. Attributes are not modified.
+### 機能 長さ/面積でパーツをフィルタリングするアルゴリズムの追加
+これらの新しいアルゴリズム "長さでパーツを削除" と "面積でパーツを削除" は、ベクターレイヤーからジオメトリのパーツをその面積または長さを最小サイズパラメーターと比較することでフィルタリングします。 <br />入力ジオメトリがマルチパートジオメトリの場合、パーツは個別のサイズでフィルタリングされます。必要な最小サイズを満たすパーツがない場合、地物はスキップされて出力レイヤーから除外されます。入力ジオメトリがシングルパートジオメトリの場合、ジオメトリのサイズが必要なサイズ未満の場合に地物はスキップされて出力レイヤーから除外されます。属性は変更されません。
 
 <img src="images/entries/a3a539941a16aa0765fd05436e4e7228e3864553.png" class="img-responsive img-rounded" />
 
 This feature was funded by [North Road](https://north-road.com/)
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Add optional destination CRS for Package Layers algorithm
-Allows for layers to be transformed into a specific output CRS, if set.
+### 機能: レイヤーのパッケージ化アルゴリズムへのオプションとして出力先CRSの追加
+設定されている場合、レイヤーを特定の出力CRSに変換できます。
 
 This feature was funded by [North Road](https://north-road.com/)
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Package Layers algorithm - only export features intersecting a given extent
-An optional parameter for `Extent` has been added to the Package Layers algorithm, allowing users to only export features that intersect a given extent from all the selected layers. If none of the features of a specific selected layer intersect the given extent, the layer will still be created and will be empty in the output GeoPackage.
+### 機能: レイヤーのパッケージ化アルゴリズム - 指定した範囲と交差する地物のみをエクスポートする
+レイヤーのパッケージ化アルゴリズムに `Extent`  のオプションパラメーターが追加されました。これにより、選択したすべてのレイヤーから指定した範囲と交差する地物のみをエクスポートできるようになります。特定の選択されたレイヤーのどの地物も指定した範囲と交差しない場合、レイヤーは引き続き作成され、出力GeoPackageでは空になります。
 
 <img src="images/entries/33644c3a135003c6e8df79e9eda8878004b6ea28" class="img-responsive img-rounded" />
 
@@ -891,7 +892,7 @@ Change the default from “/wfs3” to “/ogcapi”.
 この機能は [QGIS-DE - Anwendergruppe Deutschland e.V.](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Add support for area3D to QgsGeometry
 The QgsGeometry Class is extended to include `area3D`, which is the 3-dimensional surface area of the geometry.
 - For a Point or a LineString, it is always equal to 0.

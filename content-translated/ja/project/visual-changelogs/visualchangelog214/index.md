@@ -616,7 +616,7 @@ Use the \"Help\" tab on each of the v.net Processing algorithm to read [the offi
 ![image67](images/entries/655bbfccc4997a5a3e3d1f5c709da5277eef6000.png.400x300_q85_crop.webp)
 
 この機能は [Médéric Ribreux](https://medspx.fr) によって開発されました
-## プログラム可能
+## プログラマビリティ
 ### 機能: 関数エディタの再設計
 自動保存するように
 

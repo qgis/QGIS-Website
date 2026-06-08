@@ -537,7 +537,7 @@ The topology checker panel also has a a new combo box below its toolbar to allow
 ![image29](images/entries/52e54d9f31a12f024d3c452ecbc77fb3278c18e4.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-## プログラム可能
+## プログラマビリティ
 ### Feature: QgsExifTools Improvements
 New functionality has been added to the QgsExifTools class, including:
 - The `readTag()` and `readTags()` functions now support Xmp metadata tags

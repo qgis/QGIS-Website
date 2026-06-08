@@ -661,7 +661,7 @@ It\'s quite a common practice to have arguments like `-v` and `--version` for to
 This feature was funded by [3Liz](https://www.3liz.com/)
 
 This feature was developed by [Étienne Trimaille](https://github.com/Gustry)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Expose scriptable vector tile encoder
 An additional `writeSingleTile` method in `QgsVectorTileWriter` has been exposed to enable the encoding of a single vector tile to a memory buffer. This may support workflows for PyQgis and QGIS Server which include support for vector tiles.
 

@@ -238,7 +238,7 @@ With this feature the user can update the layer datasource if it\'s based on an 
 This feature was funded by [Ifremer](http://wwz.ifremer.fr)
 
 This feature was developed by [3Liz](http://3liz.com)
-## プログラム可能
+## プログラマビリティ
 ### 機能：GEOS線形参照関数をQgsGeometryに公開する
 A new function `QgsGeometry::lineLocatePoint()` has been added for retrieving the distance along a linestring to the nearest position on the linestring to a given point.
 
