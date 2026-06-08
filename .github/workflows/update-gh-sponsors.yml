@@ -31,6 +31,19 @@ jobs:
               </div>
             </a>
     
+      - name: '⬇️ Pull latest changes before commit'
+        run: |
+          # Other scheduled jobs commit to main too, and one of them may have
+          # pushed while this job was running. Refresh our checkout first so the
+          # commit below is not rejected as a non fast forward push.
+          if ! git diff --quiet || ! git diff --cached --quiet; then
+            git stash push -u -m "Auto stash before pull"
+            git pull --rebase origin main || echo "Nothing new to pull"
+            git stash pop || echo "Nothing to pop"
+          else
+            git pull --rebase origin main || echo "Nothing new to pull"
+          fi
+
       - name: '✉️ Commit'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:

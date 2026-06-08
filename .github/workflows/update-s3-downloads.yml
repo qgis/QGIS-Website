@@ -55,6 +55,9 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/downloads/
           git commit -m "🤖 Update S3 downloads listing [skip ci]"
+          # Rebase onto anything that landed on main while we were running,
+          # then push so the update is not rejected.
+          git pull --rebase origin main || echo "Nothing new to pull"
           git push
       
       - name: Report status
