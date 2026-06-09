@@ -98,8 +98,20 @@
     <p class="has-text-grey">Try adjusting your search terms or selected filters to see more results</p>
 </div>
 
+<!-- View Toggle -->
+<div class="buttons has-addons mb-4" id="view-toggle">
+    <button class="button is-active" id="view-grid-btn" title="Grid view">
+        <span class="icon"><i class="fas fa-th"></i></span>
+        <span>Grid</span>
+    </button>
+    <button class="button" id="view-table-btn" title="Table view">
+        <span class="icon"><i class="fas fa-table"></i></span>
+        <span>Table</span>
+    </button>
+</div>
+
 <!-- Contributors Grid -->
-<div class="columns is-multiline is-flex">
+<div class="columns is-multiline" id="contributors-grid-view">
     <!-- Project founder pinned at the top -->
     {{ range $founderRanked }}
     {{ $contributor := .contributor }}
@@ -236,6 +248,110 @@
         </div>
     </div>
     {{ end }}
+</div>
+
+<!-- Contributors Table View (hidden by default) -->
+<div id="contributors-table-view" style="display:none;">
+    <div class="table-container">
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th class="sortable" data-col="rank">
+                        # <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="has-text-centered"><i class="fas fa-user has-text-grey-light"></i></th>
+                    <th class="sortable" data-col="login">
+                        Username <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="sortable" data-col="total">
+                        <i class="fab fa-git-alt mr-1"></i>Commits <span class="sort-icon"><i class="fas fa-sort-down"></i></span>
+                    </th>
+                    <th class="sortable" data-col="qgis_core">
+                        <i class="fas fa-code mr-1"></i>QGIS Core <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="sortable" data-col="documentation">
+                        <i class="fas fa-book mr-1"></i>Docs<span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="sortable" data-col="web_sites">
+                        <i class="fas fa-globe mr-1"></i>Web Sites <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="contributors-table-body">
+                <!-- Founder pinned row -->
+                {{ range $founderRanked }}
+                {{ $contributor := .contributor }}
+                {{ $isHonorary := .honorary }}
+                {{ $rank := .rank }}
+                {{ $core := index $contributor.thematics "qgis_core" | default 0 }}
+                {{ $docs := index $contributor.thematics "documentation" | default 0 }}
+                {{ $web := index $contributor.thematics "web_sites" | default 0 }}
+                {{ $thematicKeys := slice }}
+                {{ range $k, $v := $contributor.thematics }}{{ if gt $v 0 }}{{ $thematicKeys = $thematicKeys | append $k }}{{ end }}{{ end }}
+                <tr class="contributor-table-row"
+                    data-pinned="true"
+                    data-rank="{{ $rank }}"
+                    data-login="{{ $contributor.login }}"
+                    data-total="{{ $contributor.total_contributions }}"
+                    data-qgis_core="{{ $core }}"
+                    data-documentation="{{ $docs }}"
+                    data-web_sites="{{ $web }}"
+                    data-thematics="{{ delimit $thematicKeys " " }}">
+                    <td>
+                        <span class="tag is-warning is-light">{{ $isHonorary.icon }} #{{ $rank }}</span>
+                    </td>
+                    <td>
+                        <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" style="width:36px;border-radius:50%;object-fit:cover;" loading="lazy">
+                    </td>
+                    <td>
+                        <a href="https://github.com/{{ $contributor.login }}" target="_blank" rel="noopener">
+                            {{ $contributor.login }}
+                        </a>
+                        <span class="tag is-warning is-light ml-1" title="{{ $isHonorary.title }}">{{ $isHonorary.icon }}</span>
+                    </td>
+                    <td><strong>{{ $contributor.total_contributions }}</strong></td>
+                    <td>{{ $core }}</td>
+                    <td>{{ $docs }}</td>
+                    <td>{{ $web }}</td>
+                </tr>
+                {{ end }}
+                <!-- Regular contributor rows -->
+                {{ range $regularRanked }}
+                {{ $contributor := .contributor }}
+                {{ $rank := .rank }}
+                {{ $isHonorary := index $honoraryMembers $contributor.login }}
+                {{ $core := index $contributor.thematics "qgis_core" | default 0 }}
+                {{ $docs := index $contributor.thematics "documentation" | default 0 }}
+                {{ $web := index $contributor.thematics "web_sites" | default 0 }}
+                {{ $thematicKeys := slice }}
+                {{ range $k, $v := $contributor.thematics }}{{ if gt $v 0 }}{{ $thematicKeys = $thematicKeys | append $k }}{{ end }}{{ end }}
+                <tr class="contributor-table-row"
+                    data-rank="{{ $rank }}"
+                    data-login="{{ $contributor.login }}"
+                    data-total="{{ $contributor.total_contributions }}"
+                    data-qgis_core="{{ $core }}"
+                    data-documentation="{{ $docs }}"
+                    data-web_sites="{{ $web }}"
+                    data-thematics="{{ delimit $thematicKeys " " }}">
+                    <td>{{ $rank }}</td>
+                    <td>
+                        <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" style="width:36px;border-radius:50%;object-fit:cover;" loading="lazy">
+                    </td>
+                    <td>
+                        <a href="https://github.com/{{ $contributor.login }}" target="_blank" rel="noopener">
+                            {{ $contributor.login }}
+                        </a>
+                        {{ if $isHonorary }}<span class="tag is-warning is-light ml-1" title="{{ $isHonorary.title }}">{{ $isHonorary.icon }}</span>{{ end }}
+                    </td>
+                    <td>{{ $contributor.total_contributions }}</td>
+                    <td>{{ $core }}</td>
+                    <td>{{ $docs }}</td>
+                    <td>{{ $web }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <!-- Load contributors filter functionality -->
