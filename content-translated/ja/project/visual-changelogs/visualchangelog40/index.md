@@ -712,56 +712,56 @@ This feature was funded by [North Road](https://north-road.com/)
 この機能は [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) の資金提供で開発されました
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
-### Feature: Unlimited model canvas size in the model designer
-Previous versions of the QGIS model designer had a fixed canvas size of 4000 x 4000, and new models were started at the top left of the canvas, which could lead to frustration when elements went out of bounds. The QGIS model builder will now dynamically manage the scroll area and enable a much smoother user experience.
+### 機能: モデルデザイナーのモデルキャンバスサイズを無制限にしました
+以前のバージョンのQGISモデルデザイナーは固定キャンバスサイズが4000 x 4000で、新しいモデルはキャンバスの左上から開始されていたため、要素が範囲外になると不満が生じることがありました。QGISモデルビルダーはスクロールエリアを動的に管理し、はるかにスムーズなユーザーエクスペリエンスを提供するようになりました。
 
 <img src="images/entries/6347778c8c50b9fa330e4985d19b980c2c8b676f.png" class="img-responsive img-rounded" />
 
-This feature was funded by Hauts-de-France region
+この機能は Hauts-de-France region の資金提供で開発されました
 
 この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
 ## アプリケーションとプロジェクトのオプション
-### Feature: OAuth2 auto refresh
-QGIS now includes an auto-refresh mechanism for OAuth2 connections.<br />A cache cleanup to stop the auto refresh is triggered periodically, and when a layer is removed from the project. This is required to avoid unnecessary, endless refreshing of unused tokens.
+### 機能: OAuth2 自動リフレッシュ
+QGISにOAuth2接続の自動更新メカニズムが追加されました。<br />自動更新を停止するためのキャッシュクリーンアップは定期的に、およびプロジェクトからレイヤーが削除されたときにトリガーされます。これは未使用トークンの不必要で無限の更新を避けるために必要です。
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Project trust for embedded code enhancement
-QGIS now includes a project-level "trust" mechanism that grants or denies execution of embedded Python code within projects. This is implemented in line with the [Trusted Projects and Folders QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-336-trusted-projects-and-folders.md).<br />As established in the QEP, the embedded code types covered are:
-- macros;
-- expression functions;
-- actions; and
-- attribute form init code
+### 機能: 埋め込みコード強化のためのプロジェクト信頼設定
+QGISにプロジェクト内の埋め込みPythonコードの実行を許可または拒否するプロジェクトレベルの "信頼" メカニズムが追加されました。これは  [Trusted Projects and Folders QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-336-trusted-projects-and-folders.md) に沿って実装されています。QEPで定義されているように、対象となる埋め込みコードタイプは以下の通りです:
+- マクロ;
+- 式 関数;
+- アクション; と
+- 初期化コードで作成された属性値
 
-This gives users the ability to allow for granular code execution at the project level instead of global settings limited only by user profile configuration.<br />QGIS will provide users with a project trust dialog to offer the user generic information on what features to allow as well as preview code accordingly. Global settings are provided to allow or deny execution of features at project and path levels.
+これにより、ユーザープロファイル設定のみで制限されたグローバル設定の代わりに、プロジェクトレベルで詳細なコード実行を許可する機能がユーザーに提供されます。<br />QGISはユーザーにプロジェクト信頼ダイアログを提供し、許可する機能に関する一般的な情報と対応するコードのプレビューを表示します。プロジェクトとパスレベルでの機能の実行を許可または拒否するグローバル設定が提供されます。
 
 <img src="images/entries/8325ef4b8268626c5af3c9699370dbeb6faedcd4.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Elevation Profile Manager
-QGIS now links the app handling of elevation profiles to a new project-level elevation profile manager. Now, elevation profiles stored in the project can be reopened after opening a project, and changes made to the profile will be stored in the project.<br />There is also a fully functional elevation profile manager dialog, which is able to display/rename/remove elevation profiles from the project.
+### 機能: 標高プロファイルマネージャー
+QGISがアプリの標高プロファイル処理を新しいプロジェクトレベルの標高プロファイルマネージャーにリンクするようになりました。これにより、プロジェクトに保存された標高プロファイルはプロジェクトを開いた後に再度開くことができ、プロファイルに加えられた変更はプロジェクトに保存されます。<br />また、プロジェクトから標高プロファイルを表示/名前変更/削除できる完全に機能する標高プロファイルマネージャーダイアログもあります。
 
-This feature was funded by [Erftverband](https://www.erftverband.eu/)
+この機能は [Erftverband](https://www.erftverband.eu/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Project/layer metadata localization support
-Translation support has been added for some key project and layer metadata values to QGIS' project translation system. This enhancement ensures that project translation can use the relevant metadata values for layout items such as labels, map canvas decorations, etc.<br />*This is funded through an ongoing effort to add support for localized/translated projects into QField*
+### 機能: プロジェクト/レイヤー メタデータのローカライゼーションサポート
+QGISのプロジェクト翻訳システムに、主要なプロジェクトとレイヤーのメタデータ値の翻訳サポートが追加されました。この機能強化により、プロジェクト翻訳がラベル、マップキャンバスデコレーションなどのレイアウトアイテムに関連するメタデータ値を使用できるようになります。 <br />*これはQFieldにローカライズされた/翻訳されたプロジェクトのサポートを追加するための継続的な取り組みを通じて資金提供されています。*
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add project setting to enable HTML GetFeatureInfo maptip-only mode
-A new project setting for QGIS Server is provided to enable HTML GetFeatureInfo maptip-only mode.<br />[This allows QGIS Server to use the WMS vendor parameter](https://docs.qgis.org/3.40/en/docs/server_manual/services/wms.html#with-maptip) `WITH_MAPTIP=HTML_FI_ONLY_MAPTIP` and use only the maptip for the HTML GetFeatureInfo response.
+### 機能: HTMLのGetFeatureInfoのマップチップのみモードを有効にするプロジェクト設定の追加
+HTMLのGetFeatureInfoのマップチップのみモードを有効にするQGIS Serverの新しいプロジェクト設定が提供されます。<br />[これにより、QGISサーバーがWMSベンダーパラメーター ](https://docs.qgis.org/3.40/en/docs/server_manual/services/wms.html#with-maptip) `WITH_MAPTIP=HTML_FI_ONLY_MAPTIP` を使用し、HTMLのGetFeatureInfoレスポンスにマップチップのみを使用できるようになります。
 
 <img src="images/entries/5cefab81d09c5bf0e1b757238d74940a2c9d9c55" class="img-responsive img-rounded" />
 
 This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
 ## Profile Plots
-### Feature: Add option to sync elevation profile layers with project layers
-This new option is available from an elevation profile's settings menu as "Synchronize Layers to Project". It is unchecked by default, but when checked, the elevation profile's layers will always exactly match the project's main canvas layer structure, including groups and layer orders.<br />Groups cannot be created in the elevation profile. Any changes made to the main project's layer tree will immediately be reflected in the elevation profile's layer setup.
+### 機能: 標高プロファイルレイヤーとプロジェクトレイヤーを同期するオプションの追加
+この新しいオプションは標高プロファイルの設定メニューから "レイヤーをプロジェクトに同期" として利用できます。デフォルトではチェックされていませんが、チェックすると、標高プロファイルのレイヤーは常にグループとレイヤー順序を含むプロジェクトのメインキャンバスレイヤー構造と正確に一致します。 <br />グループは標高プロファイルで作成できません。メインプロジェクトのレイヤーツリーへの変更はすぐに標高プロファイルのレイヤー設定に反映されます。
 
-This feature was funded by [Lutra](https://www.lutraconsulting.co.uk/)
+ この機能は [Lutra](https://www.lutraconsulting.co.uk/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
-### Feature: Render point cloud as a continuous elevation line
-QGIS profile plots now include the ability for the elevation profile of a point cloud layer to be displayed as a continuous elevation line instead of individual points, allowing point clouds to be rendered similarly to vector or raster layers. Users can adjust the tolerance setting to improve results when too few points are present within the view, without triangulating the entire layer
+### 機能: ポイントクラウドを連続した標高ラインとしてレンダリングします
+QGISのプロファイルプロットに、ポイントクラウドレイヤーの標高プロファイルを個々のポイントの代わりに連続した標高ラインとして表示する機能が追加されました。これにより、ポイントクラウドをベクターまたはラスターレイヤーと同様にレンダリングできるようになります。ユーザーはレイヤー全体を三角測量することなく、ビュー内にポイントが少なすぎる場合の結果を改善するためにトレランス設定を調整できます。
 
 <img src="images/entries/ab52589956629cc34cb09bef22e63478a65a96bf.png" class="img-responsive img-rounded" />
 
@@ -773,7 +773,7 @@ A new widget has been added for the displaying of the current distance:elevation
 
 <img src="images/entries/a4300b20ef89e4ad71f70a114af7438e4eff9cfb" class="img-responsive img-rounded" />
 
-This feature was funded by [Erftverband](https://www.erftverband.eu/)
+この機能は [Erftverband](https://www.erftverband.eu/) の資金提供で開発されました
 
 この機能は [North Road](https://north-road.com/) によって開発されました
 ## ブラウザ
