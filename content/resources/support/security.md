@@ -1,12 +1,6 @@
 
 ---
-type: "page"
-title: "Security"
-subtitle: ""
-draft: false
-sidebar: true
-Reviewed: 5 June 2024
-Reviewer: Tim Sutton
+Security
 ---
 
 {{< content-start >}}
