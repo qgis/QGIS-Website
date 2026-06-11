@@ -77,6 +77,6 @@ The official release is planned for July 2026, coinciding with the fourth annive
 
 ## Author
 
-![Alexander Altnöder](alexander_altnoeder.webp)
+![Alexander Altnöder](../images/alexander_altnoeder.webp)
 
 Alexander Altnöder is an engineering geologist based in the Ruhr Area, Germany. He works extensively with GIS and programming, both professionally and privately.
