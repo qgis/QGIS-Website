@@ -29,7 +29,7 @@ Although the data is available both with and without spatial reference, its stru
 
 Since 2022, the website openko.de has offered over **21,000 alternative PDF tables and maps** for free download. In addition to the tabular data, each PDF includes a map showing the location of the corresponding grid cell.
 
-![Example excerpt of a KOSTRA PDF table including a map](screenshot_pdf_example_table_and_map.webp)
+![Example excerpt of a KOSTRA PDF table including a map](../images/screenshot_pdf_example_table_and_map.webp)
 
 Navigation to the appropriate KOSTRA grid cell is provided via a web map ([Interactive Map KOSTRA-DWD-2020](https://www.openko.de/kostra-dwd-2020-tabellen-kostenlos-herunterladen/)) with integrated address search (Click on "Interaktive Karte KOSTRA-DWD-2020" to reach the map).
 
