@@ -7,6 +7,9 @@ import shutil
 from urllib.parse import urlparse
 import json
 
+# (connect, read) timeouts in seconds so a hung host can't stall the job.
+REQUEST_TIMEOUT = (10, 300)
+
 class HubHarvester:
   def __init__(self, resource_type, api_url, output_dir):
     self.resource_type = resource_type  # 'map' or 'screenshot'
@@ -27,10 +30,49 @@ class HubHarvester:
       except Exception as e:
         print(f"Failed to delete {file_path}. Reason: {e}")
 
+  def harvest(self):
+    """Fetch resources into a staging directory and only swap them into the
+    output directory once the fetch has fully succeeded.
+
+    Cleaning the output directory before fetching meant a failed or interrupted
+    fetch (network error, rate limit, API outage) left it empty, dropping all
+    previously harvested images until the next successful run.
+    """
+    staging_dir = f"{self.output_dir}.staging"
+    if os.path.isdir(staging_dir):
+      shutil.rmtree(staging_dir)
+    os.makedirs(staging_dir, exist_ok=True)
+    # Preserve the hand-maintained index.md in the staged output.
+    index_md = os.path.join(self.output_dir, "index.md")
+    if os.path.isfile(index_md):
+      shutil.copy2(index_md, os.path.join(staging_dir, "index.md"))
+
+    target_dir = self.output_dir
+    self.output_dir = staging_dir
+    try:
+      self.fetch_resources()
+    except Exception:
+      # Leave the existing output directory untouched on failure.
+      self.output_dir = target_dir
+      shutil.rmtree(staging_dir, ignore_errors=True)
+      raise
+
+    # Fetch succeeded: replace the live directory contents with the staged ones.
+    self.output_dir = target_dir
+    self.clean_output_dir()
+    for filename in os.listdir(staging_dir):
+      if filename == "index.md":
+        continue
+      shutil.move(
+        os.path.join(staging_dir, filename),
+        os.path.join(target_dir, filename),
+      )
+    shutil.rmtree(staging_dir, ignore_errors=True)
+
   def fetch_resources(self):
     next_page = self.api_url
     while next_page:
-      response = requests.get(next_page)
+      response = requests.get(next_page, timeout=REQUEST_TIMEOUT)
       response.raise_for_status()
       data = response.json()
 
@@ -92,7 +134,7 @@ showcase: "{self.resource_type}"
       print(f"{self.resource_type.capitalize()} markdown file created: {md_filename}")
 
   def download_file(self, url, dest_path):
-    response = requests.get(url, stream=True)
+    response = requests.get(url, stream=True, timeout=REQUEST_TIMEOUT)
     response.raise_for_status()
     with open(dest_path, "wb") as out_file:
       shutil.copyfileobj(response.raw, out_file)
@@ -107,16 +149,14 @@ if __name__ == "__main__":
   
   print("Harvesting maps from QGIS Hub...")
   map_harvester = HubHarvester(resource_type="map", api_url=map_api_url, output_dir=map_output_dir)
-  map_harvester.clean_output_dir()
-  map_harvester.fetch_resources()
-  
+  map_harvester.harvest()
+
   # Screenshot harvesting
   screenshot_api_url = f"{api_url}?resource_type=screenshot"
   screenshot_output_dir = "content/hub-screenshots"
-  
+
   print("\nHarvesting screenshots from QGIS Hub...")
   screenshot_harvester = HubHarvester(resource_type="screenshot", api_url=screenshot_api_url, output_dir=screenshot_output_dir)
-  screenshot_harvester.clean_output_dir()
-  screenshot_harvester.fetch_resources()
+  screenshot_harvester.harvest()
   
   print("\nHarvesting completed!")

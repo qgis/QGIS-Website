@@ -17,15 +17,22 @@ except ImportError:
     from urllib.parse import urlparse
 from scripts.resize_image import resize_image
 
+# (connect, read) timeouts in seconds so a hung host can't stall the job.
+REQUEST_TIMEOUT = (10, 300)
+
 ### Funders
 def fetch_funders(url: str):
     """
-    Fetch the sustaining members from the QGIS changelog 
+    Fetch the sustaining members from the QGIS changelog
     and create markdown files
     """
-    response = requests.get(url)
+    response = requests.get(url, timeout=REQUEST_TIMEOUT)
     data = json.loads(response.text)
     items = data["rss"]["channel"]["item"]
+    # The feed serialises a single member as a dict rather than a one-element
+    # list, so normalise to a list before iterating to avoid walking dict keys.
+    if isinstance(items, dict):
+        items = [items]
     for item in items:
         member_slug = item["slug"]
         markdown_filename = f"content/funders/{member_slug}.md"
@@ -67,7 +74,7 @@ country: "{country}"
             f.write(content)
             print(f"Writing: {markdown_filename}")
 
-        response = requests.get(image_url, stream=True)
+        response = requests.get(image_url, stream=True, timeout=REQUEST_TIMEOUT)
         image_filename = f"content/funders/{image_name}"
         with open(image_filename, 'wb') as out_file:
             shutil.copyfileobj(response.raw, out_file)
@@ -88,7 +95,7 @@ def fetch_flickr_screenshots(showcase_type, rss_url):
     changed manually then, as the script won't overwrite the file if it exists
     '''
 
-    response = requests.get(rss_url)
+    response = requests.get(rss_url, timeout=REQUEST_TIMEOUT)
     feed = atoma.parse_atom_bytes(response.content)
     #print(feed.description)
     print(feed.title.value)
@@ -137,7 +144,7 @@ showcase: "{showcase_type}"
             f.write(content)
             print(f"Writing: {markdown_filename}")
 
-        response = requests.get(image_url, stream=True)
+        response = requests.get(image_url, stream=True, timeout=REQUEST_TIMEOUT)
         image_filename = f"content/flickr-images/{image_name}"
         with open(image_filename, 'wb') as out_file:
             shutil.copyfileobj(response.raw, out_file)
@@ -150,7 +157,7 @@ def fetch_first_feed_entry():
     """
     feed_url = "https://feed.qgis.org/?lang=en&json=1"
     feed_file_path = "data/feed.json"
-    response = requests.get(feed_url)
+    response = requests.get(feed_url, timeout=REQUEST_TIMEOUT)
     response.raise_for_status()
     feed_data = response.json()
     entry = {}
@@ -163,32 +170,36 @@ def fetch_first_feed_entry():
         json.dump(entry, f, ensure_ascii=False, indent=4)
 
 
-parser = argparse.ArgumentParser(description='Import items from various feeds.')
-parser.add_argument(
-    "--flickr", 
-    help="Import flickr items (defaults to no)",
-    default="no",
-    type=bool, 
-    required=False)
-parser.parse_args()
-args = parser.parse_args()
+def main():
+    parser = argparse.ArgumentParser(description='Import items from various feeds.')
+    parser.add_argument(
+        "--flickr",
+        help="Import flickr items (defaults to no)",
+        default="no",
+        type=bool,
+        required=False)
+    args = parser.parse_args()
 
-try:
-    fetch_funders("https://members.qgis.org/en/members/json/")
-except Exception as e:
-    print(f"Error fetching funders: {e}")
+    try:
+        fetch_funders("https://members.qgis.org/en/members/json/")
+    except Exception as e:
+        print(f"Error fetching funders: {e}")
 
-try:
-    if args.flickr:
-        fetch_flickr_screenshots(
-            showcase_type="screenshot",
-            rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
-        )
-except Exception as e:
-    print(f"Error fetching flickr screenshots: {e}")
+    try:
+        if args.flickr:
+            fetch_flickr_screenshots(
+                showcase_type="screenshot",
+                rss_url = "https://api.flickr.com/services/feeds/groups_pool.gne?id=2327386@N22&lang=en-us&format=atom"
+            )
+    except Exception as e:
+        print(f"Error fetching flickr screenshots: {e}")
 
-try:
-    # QGIS feed
-    fetch_first_feed_entry()
-except Exception as e:
-    print(f"Error fetching feed: {e}. Keeping the previous feed.json if it exists.")
+    try:
+        # QGIS feed
+        fetch_first_feed_entry()
+    except Exception as e:
+        print(f"Error fetching feed: {e}. Keeping the previous feed.json if it exists.")
+
+
+if __name__ == "__main__":
+    main()
