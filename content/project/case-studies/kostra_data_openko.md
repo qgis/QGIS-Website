@@ -33,7 +33,7 @@ Since 2022, the website openko.de has offered over **21,000 alternative PDF tabl
 
 Navigation to the appropriate KOSTRA grid cell is provided via a web map ([Interactive Map KOSTRA-DWD-2020](https://www.openko.de/kostra-dwd-2020-tabellen-kostenlos-herunterladen/)) with integrated address search (Click on "Interaktive Karte KOSTRA-DWD-2020" to reach the map).
 
-![Selection of grid cells via web map](screenshot_qgis2web_raster_selection.webp)
+![Selection of grid cells via web map](../images/screenshot_qgis2web_raster_selection.webp)
 
 The project has been very well received. Its users mainly include engineering consultancies, construction companies, and public authorities that require KOSTRA data for the design and verification of hydraulic infrastructure. Universities also use openko.de to provide students with easy access to KOSTRA data.
 
