@@ -10,6 +10,9 @@ import argparse
 CONFIG_PATH = "data/contributors/config.json"
 ORG_PATH = "data/contributors/organizations.json"
 CONTRIBUTORS_API = "https://hub.qgis.org/api/v1/contributors"
+# (connect, read) timeouts in seconds: fail fast if the host stops responding,
+# but allow a long read for large aggregations across many repositories.
+REQUEST_TIMEOUT = (10, 300)
 
 def load_json(path):
     with open(path, "r") as f:
@@ -22,7 +25,7 @@ def save_json(path, data):
 def fetch_all_repos():
     url = f"{CONTRIBUTORS_API}/fetch-all-repos"
     print(f"Fetching repositories from {url}")
-    response = requests.get(url)
+    response = requests.get(url, timeout=REQUEST_TIMEOUT)
     if response.status_code == 200:
         return response.json()
     return None
@@ -37,9 +40,11 @@ def get_commit_counts(repo_name, author=None, since=None, until=None):
     if until:
         params["until"] = until
     print(f"    Querying {url} with params {params}")
-    response = requests.get(url, params=params)
-    if response.status_code == 200 and response.json():
-        return response.json()
+    response = requests.get(url, params=params, timeout=REQUEST_TIMEOUT)
+    if response.status_code == 200:
+        data = response.json()
+        if data:
+            return data
     return None
 
 def update_stats(target_orgs=None,target_thematics=None):
@@ -79,6 +84,10 @@ def update_stats(target_orgs=None,target_thematics=None):
                     since = from_date if from_date else None
                     until = to_date if to_date else None
                     commit_counts = get_commit_counts(repo_name, author=author, since=since, until=until)
+                    # The API returns None on a non-200 response or empty body.
+                    # Skip this member instead of crashing the whole run.
+                    if not commit_counts:
+                        continue
                     total_commits += commit_counts.get("commits", 0)
                     member_last_date = commit_counts.get("last_commit_date")
                     if member_last_date:
