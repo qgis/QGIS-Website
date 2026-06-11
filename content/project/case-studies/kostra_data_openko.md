@@ -52,7 +52,7 @@ While this approach worked well for the smaller KOSTRA-DWD-2010 dataset, perform
 The solution was simple: the dataset was split into four parts, and tables were generated simultaneously using four parallel QGIS instances. This reduced the total processing time to about one day.
 
 Additional Python scripts were developed for:
-- Generating HTML-foramtted download pages including metadata such as municipalities, federal states, and postal codes  
+- Generating HTML-formatted download pages including metadata such as municipalities, federal states, and postal codes  
 - Uploading preview images and PDF files via the WordPress API  
 
 The web map was created using the [qgis2web plugin](https://plugins.qgis.org/plugins/qgis2web/). It contains only two layers: a topographic base map and the raster grid.
@@ -66,7 +66,7 @@ The following open data sources were used:
 - KOSTRA data from the DWD:  
   https://opendata.dwd.de/climate_environment/CDC/grids_germany/return_periods/precipitation/KOSTRA/
 
-- Topographic base map TopPlusOpen from the Federal Agency for Cartography and Geodesy ("Bundesamt für Kartographie und Geodäsie" in Germen):  
+- Topographic base map TopPlusOpen from the Federal Agency for Cartography and Geodesy ("Bundesamt für Kartographie und Geodäsie" in German):  
   https://sgx.geodatenzentrum.de/web_public/gdz/datenquellen/Datenquellen_TopPlusOpen.html
 
 ## Outlook
