@@ -179,16 +179,28 @@ def main() -> int:
             if args.dry_run:
                 print(f"DRY-RUN: replace {p} -> link to {rel_target}")
             else:
+                # Create the replacement link at a temporary path first, then
+                # atomically move it over the original. Unlinking the original
+                # before the link existed meant a failed os.symlink/os.link left
+                # the file deleted with no replacement, losing it permanently.
+                tmp = p.with_name(p.name + '.dedup-tmp')
                 try:
-                    p.unlink()
+                    if tmp.is_symlink() or tmp.exists():
+                        tmp.unlink()
                     if args.mode == 'symlink':
-                        os.symlink(rel_target, p)
+                        os.symlink(rel_target, tmp)
                     else:
-                        os.link(canonical, p)
+                        os.link(canonical, tmp)
+                    os.replace(tmp, p)
                     linked += 1
                 except Exception as e:
                     print(f"ERROR: Failed to link {p} -> {rel_target}: {e}", file=sys.stderr)
-                    # If linking fails, leave file as-is
+                    # Clean up the temporary link; the original file is intact.
+                    try:
+                        if tmp.is_symlink() or tmp.exists():
+                            tmp.unlink()
+                    except OSError:
+                        pass
             processed += 1
 
     print(f"Dedup complete. processed={processed} linked={linked} unique={len(canonical_by_hash)} base={base_root}")
