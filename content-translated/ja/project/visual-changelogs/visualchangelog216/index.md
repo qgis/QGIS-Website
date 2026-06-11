@@ -739,7 +739,7 @@ This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
 Because sometimes it\'s just nice to exaggerate about the size.
 
 This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
-## プログラム可能
+## プログラマビリティ
 ### 機能：レイヤーツリー内の組み込みウィジェット
 これにより、レイヤプロパティダイアログ（新しい凡例タブ内）で個々のレイヤのレイヤツリーに埋め込まれたウィジェットを定義することができます。このアイデアは、レイヤーでよく使用されるいくつかのアクションに素早くアクセスする方法を持つことです。
 

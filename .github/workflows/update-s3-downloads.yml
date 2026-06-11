@@ -55,6 +55,9 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/downloads/
           git commit -m "🤖 Update S3 downloads listing [skip ci]"
+          # Rebase onto anything that landed on main while we were running,
+          # then push. A real rebase failure should fail the job.
+          git pull --rebase --autostash origin main
           git push
       
       - name: Report status

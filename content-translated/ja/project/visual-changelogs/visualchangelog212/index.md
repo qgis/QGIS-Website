@@ -399,7 +399,7 @@ See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-gra
 **This feature was funded by:** Crowd funding, see [project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
 
 ![image33](images/entries/fb9ac25e9ca6c5e4030167e289435e995f5af8f5.webp)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Map tools moved from app-\>gui
 この変更により、PyQGISスクリプトやPythonプラグインからマップツールを再利用することができます。
 

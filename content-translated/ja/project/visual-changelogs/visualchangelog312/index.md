@@ -806,7 +806,7 @@ This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuh
 アイコン画像はbase64でエンコードされており、Webページで直接表示できます。
 
 この機能は Éric Lemoine によって開発されました
-## プログラム可能
+## プログラマビリティ
 ### 機能: QgisInterfaceへのシェープデジタイズメソッドの公開
 描画ツールを起動するアクションはAPIで公開されていなかったため、これらのツールのいずれかに対してアクションを実行する場合、クラスを再作成する必要がありました。`qgis.utils.iface.actionCircleCenterPoint().trigger()` のような呼び出しによりプログラマビリティが向上します。
 

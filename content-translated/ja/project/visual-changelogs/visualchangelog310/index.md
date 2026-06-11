@@ -612,7 +612,7 @@ More information is available in the [documentation](https://docs.qgis.org/testi
 ![image63](images/entries/81af9beefcd8522ecc0f953b2a6b9b4895e35675.webp)
 
 This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net)
-## プログラム可能
+## プログラマビリティ
 ### 機能: 新しいクラス QgsBookmarkManager
 QgsProjectとQgsApplicationに添付されたこの新しいクラスは、プロジェクトとグローバルなブックマークを管理するための安定した、サポートされた方法を提供します（旧バージョンの未公開で安定していない方法でプロジェクトキーまたはSQLiteデータベースを直接操作する方法とは異なります）。今では、プラグインやスクリプトで空間ブックマークを読み取り、変更、管理することができます！
 

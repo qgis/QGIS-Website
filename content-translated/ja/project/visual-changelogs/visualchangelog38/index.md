@@ -545,7 +545,7 @@ When a plugin is installed, the metadata is parsed and a user will be prompted w
 This feature was funded by [GISCE TI](https://gisce.net/)
 
 This feature was developed by [Alessandro Pasotti](http://www.itopen.it/)
-## プログラム可能
+## プログラマビリティ
 ### Feature: REGEXP SQL syntax support for spatialite provider and python connections
 We\'ve enabled REGEX to be used with the spatialite provider. (This comes in handy when setting filters!). We\'ve also added support for this syntax via any python connections made through Qgis.utils\'s \"spatialite_connection\" API - allowing you to use REGEXP in your SQL queries from within DB Manager.
 
