@@ -531,7 +531,7 @@ GeoJSON explicitly requires the use of OGC:CRS84, but when a GetFeatureInfo requ
 This feature was funded by Eurométropole de Strasbourg
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Add replace/ replace all functionality to QgsCodeEditorWidget
 The new replace functionality allows replacing matching text. If the regex find option is enabled, then captured groups from the regular expression pattern are available for use in the replacement string using the numeric identifier of the group (e.g. via `\1`).
 

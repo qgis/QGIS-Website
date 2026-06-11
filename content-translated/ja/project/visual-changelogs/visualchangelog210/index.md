@@ -226,7 +226,7 @@ Don\'t forget to also set the alignment of the scalebar, esp. if you want it to 
 **This feature was funded by:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
 
 ![image20](images/entries/d435d4f94cf3d70a97c8d373aa08c28f8685defd.webp)
-## プログラム可能
+## プログラマビリティ
 ### 特集：プログラマーのための改善
 私たちは、開発者にとって興味深いいくつかの変更と改善を行いました。
 - Qt4の最小要件をバージョン4.8に引き上げました。Qt4は、QGISを作成するために使用する主要なC ++ツールキット/ライブラリの1つです。

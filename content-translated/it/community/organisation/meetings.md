@@ -37,7 +37,7 @@ When: 5-7 October 2026 Where: Switzerland
 {{<rich-box-start >}}
 
 {{<rich-content-start themeClass="coloring-6" >}}
-### Riunioni degli sviluppatori
+### Incontri degli sviluppatori
 [Go to meetings](dev_meetings)
 
 {{<rich-content-end >}}
@@ -51,7 +51,7 @@ When: 5-7 October 2026 Where: Switzerland
 {{<rich-box-start >}}
 
 {{<rich-content-start themeClass="coloring-6" >}}
-### Users Meetings
+### Incontri degli utenti
 [Go to meetings](user_meetings)
 
 {{<rich-content-end >}}

@@ -468,7 +468,7 @@ It is intended to offer a better QGIS experience to our users, by proactively in
 Additionally, the option to control the number of days between plugin startup checks has been removed and is hardcoded at 3 days.
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Add temporal handling to maps in QGIS Quick
 A new implementation has been added to allow the Canvas and Map Settings in [QGIS Quick](https://api.qgis.org/api/qgsquick.html) to handle temporal functionality.
 

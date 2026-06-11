@@ -199,7 +199,7 @@ You can now drag and drop python scripts into QGIS window and they will be execu
 - ** フィールドのリファクタ ** 属性操作アルゴリズム
 
 ![](images/entries/b2403fae20cd24cfb1883d24e97de6fc51e40c88.webp)
-## プログラム可能
+## プログラマビリティ
 ### 機能：式にコメント機能を追加する
 Comments can now be added to expressions using an SQL style `--` prefix.
 

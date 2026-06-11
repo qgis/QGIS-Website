@@ -31,6 +31,13 @@ jobs:
               </div>
             </a>
     
+      - name: '⬇️ Pull latest changes before commit'
+        run: |
+          # Another scheduled job may have pushed to main while this one ran.
+          # Rebase on top of it first (autostash tucks the generated file
+          # aside) so the commit below is a fast forward.
+          git pull --rebase --autostash origin main
+
       - name: '✉️ Commit'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:

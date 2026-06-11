@@ -45,7 +45,7 @@ De wekelijkse snapshots van het nachtelijke qgis-dev pakket van OSGeo4W zijn voo
 ## Online (OSGeo4W) installatieprogramma
 Meer gevorderde gebruikers van QGIS zouden de pakketten van OSGeo4W willen gebruiken. Dit installatieprogramma maakt het mogelijk om verscheidene versies van QGIS parallel te installeren en ook veel efficiëntere updates uit te voeren, omdat alleen gewijzigde componenten worden gedownload en geïnstalleerd met elke nieuwe uitgave.
 
-De opslagplaats voor OSGeo4W bevat daarnaast veel software van andere OSGeo-projecten. QGIS en alle daarvoor noodzakelijke pakketten zijn aanwezig, naast Python, GRASS, GDAL enzovoort. Het installatiepakket geeft de mogelijkheid om direct vanaf internet te installeren of eerst de benodigde pakketten te downloaden en daarna te installeren. De gedownloade bestanden worden in een lokale map geplaatst voor toekomstige installaties. En zouden ook kunnen worden gebruikt om offline te installeren.:
+De opslagplaats voor OSGeo4W bevat daarnaast veel software van andere OSGeo-projecten. QGIS en alle daarvoor noodzakelijke pakketten zijn aanwezig, naast Python, GRASS, GDAL enzovoort. Het installatiepakket geeft de mogelijkheid om direct vanaf internet te installeren of eerst de benodigde pakketten te downloaden en daarna te installeren. De gedownloade bestanden worden in een lokale map geplaatst voor toekomstige installaties. En zouden ook kunnen worden gebruikt om offline te installeren.
 
 Stappen voor installeren zijn:
 - Download [OSGeo4W installatiepakket](https://download.osgeo.org/osgeo4w/v2/osgeo4w-setup.exe) en voer het uit.
@@ -470,7 +470,7 @@ Alle pakketten bevatten GRASS- en Python-ondersteuning
 
 Alle opslagplaatsen voor openSUSE Geo zijn hier te vinden: https://download.opensuse.org/repositories/Application:/Geo/
 
-Install QGIS with this command:
+Installeer QGIS met deze opdracht:
 ```
 sudo zypper in qgis qgis-plugin-grass 
 ```
@@ -532,7 +532,7 @@ spack install
 ```
 Aan Spack gerelateerde problemen zouden moeten worden gerapporteerd op: https://github.com/spack/spack/issues
 ## Distrobox & Toolbx
-To install QGIS on any Linux system, you can also use `distrobox` or `toolbx`. These allow you to install common distributions like Fedora, OpenSUSE or Ubuntu inside a container. This can be a different version than your main operating system, and thus allows you to have a newer, testing, or more stable version of QGIS.
+Voor het installeren van QGIS op elk systeem van Linux zou u ook `distrobox` of `toolbx` kunnen gebruiken. Deze stellen u in staat veelvoorkomende distributies, zoals Fedora, OpenSUSE of Ubuntu, in een container te installeren. Dat mag een andere versie zijn dan uw hoofdbesturingssysteem en het maakt het dus mogelijk dat u een nieuwere, te testen, of meer stabiele versie van QGIS hebt.
 
 {{<rich-box-start icon="🙋‍♀️" layoutClass="tips" >}}
 
@@ -740,7 +740,7 @@ Voor QGIS versies 3.34.0 tot en met 3.40.3, gebruik `glcr.b-data.ch/jupyterlab/c
 
 {{<rich-content-start themeClass="coloring-6" >}}
 ##### Waarschuwing
-QGIS-testpakketten worden voor sommige platformen in aanvulling op de stabiele versie van QGIS uitgebracht. De testversie van QGIS bevat nog niet vrijgegeven software, waaraan momenteel nog wordt gewerkt. Zij worden daarom niet ondersteund, maar alleen beschikbaar gesteld voor testdoeleinden, om te kijken of bugs zijn opgelost en er geen nieuwe bugs zijn ontstaan. Hoewel we zorgvuldig proberen beschadigingen te voorkomen, zouden deze versies slecht kunnen werken of uw gegevens kunnen beschadigen. Wees voorzichtig! U bent gewaarschuwd!
+QGIS-testpakketten worden voor sommige platformen in aanvulling op de stabiele versie van QGIS uitgebracht. De testversie van QGIS bevat nog niet vrijgegeven software, waaraan momenteel nog wordt gewerkt. Ze worden daarom niet ondersteund, maar alleen beschikbaar gesteld voor testdoeleinden, om te kijken of bugs zijn opgelost en er geen nieuwe bugs zijn ontstaan. Hoewel we zorgvuldig proberen beschadigingen te voorkomen, zouden deze versies slecht kunnen werken of uw gegevens kunnen beschadigen. Wees voorzichtig! U bent gewaarschuwd!
 
 {{<rich-content-end >}}
 

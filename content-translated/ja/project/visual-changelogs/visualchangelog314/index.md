@@ -1320,7 +1320,7 @@ This change makes no difference for users who haven\'t checked the *enable exper
 This feature was funded by [Swiss QGIS User Group](https://www.qgis.ch/)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Support for adding dock widgets as tabs: addTabifyDockWidget()
 Dock widgets are great for displaying complex interfaces that extend QGIS functionality.
 

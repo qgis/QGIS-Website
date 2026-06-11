@@ -14,7 +14,7 @@ type: page
 ### Регистриран през 2016 г. или по-рано
 {{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Бразилия (Бразилия)" listSubtitle="Контакт: Артър Нани" >}}
 
-{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Дания)" listSubtitle="Контакт: Якоб Арпе" >}}
+{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Дания)" listSubtitle="Contact: Mie Winstrup" >}}
 
 {{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (Англия)" listSubtitle="Контакт: Саймън Майлс" >}}
 

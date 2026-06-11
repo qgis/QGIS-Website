@@ -693,7 +693,7 @@ To prevent conflict with existing TIME dimension stipulations on legacy projects
 この機能は Gis3W によって資金提供されました
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Add a QgsScaleCalculator function to calculate canvas width from a given extent, scale, and dpi
 A new `calculateCanvasWidth( extent, scale )` was added to the `QgsScaleCalculator` class to derive canvas width in pixel unit when providing an extent, a scale, and a DPI.
 

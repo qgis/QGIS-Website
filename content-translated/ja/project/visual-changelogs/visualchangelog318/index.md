@@ -547,7 +547,7 @@ The QGIS Server WMS GetLegendGraphics request now supports the inclusion of min/
 ドラッグアンドドロップエディタフォームを使用すると、編集フォーム内から属性を並べ替えたり、グループまたはサブグループを追加したりできます。この機能が拡張され、WMS GetFeatureInfo応答を変更してグループとサブグループを含めることができるようになりました。また、ドラッグアンドドロップ機能のサポートで、エディタフォームを使用して応答内容を変更したり並べ替えたりできます。
 
 This feature was developed by [mhugent](https://api.github.com/users/mhugent)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Run multiple items from command history dialog
 QGIS Pythonコンソールでは、新しい **貼り付け** ボタンの追加によって、履歴ダイアログから選択された複数のコマンドを実行できるようになりました。
 

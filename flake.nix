@@ -107,6 +107,7 @@
             ];
             shellHook = ''
               export DIRENV_LOG_FORMAT=
+              git submodule update --init --recursive
               echo "-----------------------"
               echo "🌈 Your Hugo Dev Environment is ready."
               echo "It provides hugo and vscode for use with the QGIS Website Project"

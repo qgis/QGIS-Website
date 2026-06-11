@@ -129,7 +129,7 @@ The site will automatically refresh any page you have open if you edit it and sa
 
 ## Run in other IDEs
 
-Use an appropriate Hugo plugin for your IDE, or run Hugo från the command line:
+Use an appropriate Hugo plugin for your IDE, or run Hugo from the command line:
 
 ```shell
 hugo server
@@ -356,10 +356,10 @@ We welcome your contributions! All contributors are expected to sign a contribut
 
 ## 💮 Changing the templates
 
-| Page type       | Path                                     |
-| --------------- | ---------------------------------------- |
-| Landing Page    | themes/qgis/layouts/index.html           |
-| Top Level Pages | themes/qgis/layouts/_default/single.html |
+| Page type       | Path                                                   |
+| --------------- | ------------------------------------------------------ |
+| Landing Page    | themes/qgis-website-theme/layouts/index.html           |
+| Top Level Pages | themes/qgis-website-theme/layouts/_default/single.html |
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -543,5 +543,5 @@ Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://
 docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Website > broken_links.csv
 ```
 
-Crawls the site and reports all 404. Full run takes apout 10 mins
+Crawls the site and reports all 404 errors. Full run takes about 10 mins
 
