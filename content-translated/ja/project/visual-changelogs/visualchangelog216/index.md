@@ -808,7 +808,7 @@ This feature was developed by [Sandro Mani (Sourcepole)](https://www.sourcepole.
 ## 注目すべき修正
 ### 特集：QGISの有料バグ修正プログラム
 私たちは、バグ修正のもう一つのラウンドを行いました（スポンサーとドナーのおかげで！）。参加した開発者の作業概要を以下に示します。
-### ニールドーソン
+### Nyall Dawson
 Here\'s the full list (sorted by priority):
 - ジオレフェレーターで破損した射影変換を修正（＃14551  - 厳しい）
 - 半径による地物の選択が失敗する（＃14748  - 重大）
