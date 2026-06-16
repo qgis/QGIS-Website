@@ -11,6 +11,8 @@ featured: true
 archived: false
 ---
 
+{{< content-start >}}
+
 # Free KOSTRA Data on openko.de
 
 This article presents the project [openko.de](https://www.openko.de/), which provides **KOSTRA data in a structured and user-friendly way, free of charge**. The platform content was largely implemented using QGIS.
@@ -80,3 +82,5 @@ The official release is planned for July 2026, coinciding with the fourth annive
 ![Alexander Altnöder](../images/alexander_altnoeder.webp)
 
 Alexander Altnöder is an engineering geologist based in the Ruhr Area, Germany. He works extensively with GIS and programming, both professionally and privately.
+
+{{< content-end >}}
