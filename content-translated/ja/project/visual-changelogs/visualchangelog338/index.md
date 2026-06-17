@@ -208,8 +208,8 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ![](images/entries/64a2386154517472b58a41f2551b0d8d30951770.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Introduce fixed elevation range for mesh layers
-A new fixed elevation range mode is available for mesh layers, equivalent to the fixed elevation range mode for raster layers which provides a new option for specifying how mesh layers have associated elevation. It permits a fixed elevation range to be set for the layer. It can be used when the layer has a single fixed elevation or a range (slice) of elevation values.
+### 機能: メッシュレイヤーの固定標高範囲を導入
+メッシュレイヤーに新しい固定標高範囲モードが追加されました。これはラスターレイヤーの固定標高範囲モードと同等のもので、メッシュレイヤーに関連する標高の指定方法として新しいオプションを提供します。このモードでは、レイヤーに固定の標高範囲を設定することができます。レイヤーが単一の固定標高または標高値の範囲 (スライス) を持つ場合に使用できます。
 
 ユーザーはレイヤーの下限と上限の標高範囲、および下限または上限が包括的か排他的かを設定できます。
 
@@ -218,7 +218,7 @@ A new fixed elevation range mode is available for mesh layers, equivalent to the
 ![](images/entries/88a53a76a505418c2ed776f70fb56cd5bd85031b.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add a "fixed range per band" elevation mode for rasters
+### 機能:ラスター用 "バンドごとの固定範囲" を標高モードを追加
 In this new mode, each band in the raster can have a fixed elevation range associated with it.
 
 This is designed for data sources that expose elevation-related data in bands, e.g. a NetCDF raster with temperate data at different ocean depths.
