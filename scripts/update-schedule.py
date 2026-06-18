@@ -10,13 +10,16 @@ will update data/conf.json and content/schedule.ics
 '''
 
 from urllib.request import urlopen
+from urllib.error import HTTPError
 import csv
 import json
 import os
 import re
 import codecs
+import sys
 from datetime import datetime, timedelta, timezone
 from icalendar import Calendar, Event
+from packaging.version import Version
 
 _DL_BASE = "https://download.qgis.org"
 _TORRENT_BASE = "https://dl1.qgis.org"
@@ -41,13 +44,12 @@ def fetch_magnet(download_url):
     """
     path = download_url.removeprefix(_DL_BASE)
     magnet_url = f"{_TORRENT_BASE}{path}.magnet"
-    with urlopen(magnet_url, timeout=10) as resp:  # nosec:  W291
-        return resp.read().decode("utf-8").strip()
-
-
-def version_tuple(version):
-    """Parse a dotted version like "3.40" into a tuple of ints for correct numeric comparison."""
-    return tuple(int(part) for part in version.split("."))
+    try:
+        with urlopen(magnet_url, timeout=10) as resp:  # nosec: W291
+            return resp.read().decode("utf-8").strip()
+    except HTTPError:
+        sys.stderr.write(f"Could not fetch magnet link for {download_url} [{magnet_url}]\n")
+        sys.exit(1)
 
 
 def macos_version(version):
@@ -62,7 +64,7 @@ cal.add('prodid', '-//Release Schedule//qgis.org//')
 cal.add('version', '2.0')
 cal['summary'] = 'QGIS Release Schedule'
 
-resource = urlopen(url)  # nosec:  W291
+resource = urlopen(url)  # nosec: W291
 reader = csv.reader(codecs.iterdecode(resource, 'utf-8'), delimiter=',', quotechar='"')
 first = True
 f_date = None
@@ -255,8 +257,11 @@ for v, n in {ltr_version: ltr_name, lr_version: lr_name}.items():
     rn = re.search("^set\\(RELEASE_NAME \"(.*)\"\\)$", cm, re.MULTILINE).group(1)
     assert n == rn, f"Expected {n}, found {rn}"  # nosec: W291
 
-assert version_tuple(lr_version) > version_tuple(ltr_version), f"LR {lr_version} not higher than {ltr_version}"  # nosec: W291
-assert version_tuple(devversion) > version_tuple(lr_version), f"DEV {devversion} not higher than {lr_version}"  # nosec: W291
+assert Version(lr_version) > Version(ltr_version), f"LR {lr_version} not higher than {ltr_version}"  # nosec: W291
+assert Version(devversion) > Version(lr_version), f"DEV {devversion} not higher than {lr_version}"  # nosec: W291
+assert f_date is not None, "next freeze date not found"  # nosec: W291
+assert nr_date is not None, "next release date not found"  # nosec: W291
+assert pr_date is not None, "next point release date not found"  # nosec: W291
 
 shortver = "".join(lr_version.split(".")[:2])
 for f in [
@@ -285,10 +290,10 @@ with open("data/conf.json", "w") as f:
         "shortver": shortver,
         "devversion": devversion,
         "nextversion": nextversion,
-        "nextfreezedate": f_date.strftime('%Y-%m-%d %H:%M:%S UTC') if f_date is not None else None,
-        "nextreleasedate": nr_date.strftime('%Y-%m-%d %H:%M:%S UTC') if nr_date is not None else None,
-        "nextpointreleasedate": pr_date.strftime('%Y-%m-%d %H:%M:%S UTC') if pr_date is not None else None,
-        "infeaturefreeze": f_date < now if f_date is not None else None,
+        "nextfreezedate": f_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
+        "nextreleasedate": nr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
+        "nextpointreleasedate": pr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
+        "infeaturefreeze": f_date < now,
         "next_ltr_version": next_ltr_version,
         "next_lr_version": next_lr_version,
 
