@@ -59,7 +59,7 @@ Een nieuw kaartgereedschap voor het bewerken van blanco segmenten is toegevoegd.
 
 <img src="images/entries/05d17bd62aaa441e7756a5bf5970d4ddc90760da" class="img-responsive img-rounded" />
 
-Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt en Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Mogelijkheid: Objecten in een array langs een lijn kopiëren
@@ -80,7 +80,7 @@ Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nir
 ### Mogelijkheid: Meegeleverde thema's ontgrendelen door plug-ins
 Het toevoegen van nieuwe thema's die worden meegeleverd met de bron van QGIS (zoals Night Mapping en Blend of Gray) komt met hoge onderhoudskosten en beperken de creativiteit die auteurs kunnen uitoefenen, omdat ze over het algemeen neutraal, algemeen en toegankelijk moeten zijn.<br />QGIS is nu uitgebreid om deze thema's te ondersteunen vanuit de plug-ins-API, zodat de gemeenschap ook thema's en aangepaste stijlen voor de toepassing kan toepassen zonder wijzigingen aan de brontoepassing van QGIS. Wat een geheel nieuwe dimensie voor de gebruikservaring van QGIS ontgrendelt.
 
-Dit werd mogelijk gemaakt door [free time, inspired by :)](https://github.com/qgis/QGIS/pull/64495)
+Dit werd mogelijk gemaakt door [wat vrije tijd, geïnspireerd op :)](https://github.com/qgis/QGIS/pull/64495)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Gebruikergedefinieerde werkbalk en menu maken
@@ -88,7 +88,7 @@ QGIS staat gebruikers nu toe om gebruikergedefinieerde menu's en werkbalken te m
 
 <img src="images/entries/553f1a2b5712a2f02d6a5a038197c1baefe6c012" class="img-responsive img-rounded" />
 
-Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt en Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ### Mogelijkheid: Attributentabel dubbelklik zoom
@@ -452,7 +452,7 @@ Nieuwe besturingselementen voor de gebruikersinterface voor het digitaliseren va
 
 <img src="images/entries/584c6a12ea7a79081fa1fce9f86d9c7d80ecf31c.png" class="img-responsive img-rounded" />
 
-Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt en Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti](https://github.com/lbartoletti)
 ### Mogelijkheid: Waarden area en total length/perimeter voor zwevend dock CAD toegevoegd
@@ -468,7 +468,7 @@ Een nieuw kaartgereedschap voor digitaliseren stelt gebruikers in staat polygone
 
 <img src="images/entries/58ace0c2995032999b366d0171a78857e687d3c4.png" class="img-responsive img-rounded" />
 
-Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt and Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
+Dit werd mogelijk gemaakt door [Stad Frankfurt – Stadtplanungsamt en Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html)
 
 Deze mogelijkheid werd ontwikkeld door [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
 ## Gegevensbeheer
