@@ -668,7 +668,7 @@ Spack is a distro agnostic package manager for Linux, which is developed in the 
 
 General info on installing Spack: https://github.com/spack/spack
 
-QGIS package file on Spack: https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/qgis/package.py
+QGIS package info on the Spack website: https://packages.spack.io/package.html?name=qgis
 
 To install:
 
