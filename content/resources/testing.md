@@ -30,17 +30,17 @@ See the [OGC conformance testing documentation](https://docs.qgis.org/testing/en
 
 {{< button
 class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite"
-text = "OGC Cite tests" >}}
+link = "https://docs.qgis.org/testing/en/docs/developers_guide/ogcconformancetesting.html"
+text = "OGC Conformance tests" >}}
 
 {{< button
 class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite/wms_130/latest/report.html"
-text = "WMS 1.3.0 Tests" >}}
+link = "https://docs.qgis.org/testing/en/docs/developers_guide/ogcconformancetesting.html#wms-1-3-0-test-suite"
+text = "WMS 1.3.0 tests" >}}
 
 {{< button
 class = "is-primary1 is-small"
-link = "http://test.qgis.org/ogc_cite/wfs_110/latest/report.html"
-text = "WFS 1.1.0 Tests" >}}
+link = "https://docs.qgis.org/testing/en/docs/developers_guide/ogcconformancetesting.html#ogc-api-features-test-suite"
+text = "OGC API Features tests" >}}
 
 {{< content-end >}}
