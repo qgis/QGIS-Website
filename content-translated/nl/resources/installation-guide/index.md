@@ -513,7 +513,7 @@ Spack is een distro agnostische pakketbeheerder voor Linux, die is ontwikkeld in
 
 Algemene informatie voor het installeren van Spack: https://github.com/spack/spack
 
-QGIS pakketbestand op Spack: https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/qgis/package.py
+QGIS package info on the Spack website: https://packages.spack.io/package.html?name=qgis
 
 Installeren:
 ```
