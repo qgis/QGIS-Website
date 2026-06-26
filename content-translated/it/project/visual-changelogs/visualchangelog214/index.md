@@ -12,7 +12,7 @@ type: visual-changelog
 # Elenco cambiamenti per QGIS 2.14{#changelog214 }
 ![image1](images/projects/596e7e353771d2802f065352548e512b8d902d83.png)
 
-Release date: 2016-02-26
+Data di rilascio: 2016-02-26
 
 This is the changelog for the next release of QGIS - version 2.14 \'Essen\'. Essen was the host city to our developer meet ups in October 2012 and 2014.
 
@@ -49,7 +49,7 @@ Project files from earlier QGIS versions will need to be updated to reflect this
 
 ![image47](images/entries/74ddb567a30e840405ca83656e76dd6476d00226.png.400x300_q85_crop.webp)
 
-This feature was developed by Jürgen Fischer
+Questa funzionalità è stata sviluppata da Jürgen Fischer
 ### Feature: Zoom to feature with right-click in attribute table
 You can now zoom to any feature from within the attribute table (without having to select it first) by right-clicking and selecting zoom to feature.
 
@@ -82,9 +82,9 @@ Variables relating to the operating system environment have also been added:
 
 ![image49](images/entries/b2e29d9df21795416961b8b548f98078386eeecf.png.400x300_q85_crop.webp)
 
-This feature was funded by Andreas Neumann (the OS and user related variables)
+Questa funzionalità è stata finanziata da Andreas Neumann (the OS and user related variables)
 
-This feature was developed by Nyall Dawson, Matthias Kuhn
+Questa funzionalità è stata sviluppata da Nyall Dawson, Matthias Kuhn
 ### Feature: Better control over placement of map elements
 QGIS 2.14 has gained finer control over the placement of north arrows, scale bars and copyright notices on the main map canvas. You can now precisely set the position of these elements using a variety of units (including millimeters, pixels and percent).
 
@@ -178,7 +178,7 @@ The field calculator can now be used to update feature geometries using the resu
 
 ![image51](images/entries/ba37e2e778a2349c7099e09fcf648238090d8af4.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: New expression functions in 2.14
 Lots of new expression functions have been added for version 2.14:
 - `relate`: performs a DE-9IM geometry relation by either returning the DE-9IM representation of the relationship between two geometries, or by testing whether the DE-9IM relationship matches a specified pattern.
@@ -214,13 +214,13 @@ When using either the merge attribute values or merge features tool, there are a
 
 ![image27](images/entries/3820507f3bffdaab2bafe7285a8c51791f0b1fdb.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: z/m values are shown when using the identify tool
 The identify tool is now able to show any z or m value present in the identified features. If the feature is a line or polygon, the tool will show the vertex number and x/y/z/m for the nearest vertex to the identified point. The identify tool now also shows the number of parts and part number for collections.
 
 ![image28](images/entries/c9813d351340f46e28e6a0cb576a4b2ca72466a9.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Unified handling of distance and area units and coordinate formats
 In QGIS 2.14 the handling of various options regarding distance units, area units and coordinate display have been unified, simplified, and moved to Project Properties. This change brings numerous benefits, including:
 - The coordinate format specified in Project Properties is consistently used whenever a coordinate is displayed to the user, including the identify tool results and the status bar display.
@@ -231,9 +231,9 @@ In QGIS 2.14 the handling of various options regarding distance units, area unit
 
 ![image29](images/entries/b086f236720ecb5cac0aa8bb7383275799affff4.png.400x300_q85_crop.webp)
 
-This feature was funded by QGIS sponsored bug fixing program
+Questa funzionalità è stata finanziata da QGIS sponsored bug fixing program
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ## Browser
 ### Feature: Browser Improvements
 The QGIS Browser is a filesystem, OGC Web Services and Database Connection panel that lets you easily drag and drop any layer from the aforementioned sources into your map canvas (or into the DB Manager window). Two useful new improvements were added for this release:
@@ -242,20 +242,20 @@ The QGIS Browser is a filesystem, OGC Web Services and Database Connection panel
 
 ![image30](images/entries/8479ec7c4077c9602d6eacdb11d518bd55922074.png.400x300_q85_crop.webp)
 
-This feature was developed by Nathan Woodrow
+Questa funzionalità è stata sviluppata da Nathan Woodrow
 ## Sorgenti Dati
 ### Feature: Cache WMS capabililies
 QGIS will now cache WMS `GetCapabilities` requests so that on subsequent use response times will be quicker when using that service. By default the cache period is 24 hours, but you can adjust this in the `Network` tab of the QGIS Settings dialog.
 
 ![image31](images/entries/743840449ddf09f45251e9710e9666cf4da86081.png.400x300_q85_crop.webp)
 
-This feature was developed by Jürgen Fischer
+Questa funzionalità è stata sviluppata da Jürgen Fischer
 ### Feature: Curved geometry support expanded
 The delimited text provider now supports curved WKT strings, and the memory provider (eg \"temporary scratch\" layers) has gained full support for curved geometries. Additionally, if QGIS has been built using GDAL versions 2.0 and up then QGIS will fully support curved geometries in supported file types (eg GML files).
 
 ![image32](images/entries/79f4b8256ab3507b192277c4f14d3bb04423dc52.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Better handling of time and datetime fields
 QGIS 2.14 has improved handling of time and datetime field types, including:
 - PostgreSQL timestamp fields are correctly handled
@@ -266,13 +266,13 @@ QGIS 2.14 has improved handling of time and datetime field types, including:
 
 ![image33](images/entries/2511118cd31ca53892ef5764cf8e80d9491d131a.png.400x300_q85_crop.webp)
 
-This feature was developed by Jürgen Fischer, Nyall Dawson
+Questa funzionalità è stata sviluppata da Jürgen Fischer, Nyall Dawson
 ### Feature: Z/M support in delimited text provider
 The delimited text provider has gained support for WKT strings containing Z and M coordinates. For example you can express a point with z and measure elements like this : `POINT ZM (1 1 5 60)`.
 
 ![image34](images/entries/41d5c223ac43b4f8f392894109414e9d053c9136.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Transaction groups for postgres editing
 A new option has been introduced to enable transactional editing.
 
@@ -289,17 +289,17 @@ This is only implemented for postgres databases at the moment.
 
 ![image35](images/entries/bb8a03f09c9675985409cf4360308509830d38d4.png.400x300_q85_crop.webp)
 
-This feature was funded by [SIGE](http://www.sige.ch/)
+Questa funzionalità è stata finanziata da [SIGE](http://www.sige.ch/)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch, based on work by Sourcepole](https://opengis.ch)
+Questa funzionalità è stata sviluppata da [Matthias Kuhn, OPENGIS.ch, based on work by Sourcepole](https://opengis.ch)
 ### Feature: Postgres provider PKI authentication
 The ability to use the QGIS Authentication Manager introduced in 2.12 has been extended to the PostGIS provider. This allows connecting to Postgres using basic or PKI authentication, with the credentials stored in the QGIS configuration. The new Postgres provider authentication can also be used in the DB manager.
 
 ![image36](images/entries/6e8f65042bd5981e585812ce2d957d0c6055ba3f.jpg.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
+Questa funzionalità è stata finanziata da [Boundless Spatial](http://boundlessgeo.com)
 
-This feature was developed by Luigi Pirelli
+Questa funzionalità è stata sviluppata da Luigi Pirelli
 ### Feature: Virtual layers
 Dynamic SQL queries can now be used on any kind of vector layers that QGIS is able to load, even if it the layer format itself has no support for SQL queries!
 
@@ -311,9 +311,9 @@ Support for virtual layers has also been added to DB Manager as well as to the P
 
 ![image37](images/entries/58bc1a2fea31fe8d6ab70ff33c763c9ddac40ade.png.400x300_q85_crop.webp)
 
-This feature was funded by [MEDDE (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr)
+Questa funzionalità è stata finanziata da [MEDDE (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr)
 
-This feature was developed by [Hugo Mercier / Oslandia](http://oslandia.com)
+Questa funzionalità è stata sviluppata da [Hugo Mercier / Oslandia](http://oslandia.com)
 ### Feature: More file extensions for GDAL and OGR providers file selectors
 For vector and raster files, QGIS relies on the GDAL/OGR library. It means that nearly any file format that can be opened by GDAL or OGR can be directly opened in QGIS. Until now, some file extensions were not added in the GDAL or OGR file selector, resulting in users believing that QGIS could not open or handle those file formats. To minimise this problem, some new extensions have been added to GDAL and OGR file selector filters:
 
@@ -349,7 +349,7 @@ For vector and raster files, QGIS relies on the GDAL/OGR library. It means that 
 
 ![image38](images/entries/7a628a66f2f63454bd65fbedda309ff5a7d25f1e.png.400x300_q85_crop.webp)
 
-This feature was developed by [Médéric Ribreux](https://medspx.fr)
+Questa funzionalità è stata sviluppata da [Médéric Ribreux](https://medspx.fr)
 ### Feature: Use ST_RemoveRepeatedPoints for server-side simplification with PostGIS 2.2 (or newer) layers
 When using a PostGIS 2.2 instance, QGIS now uses the ST_RemoveRepeatedPoints function instead of the ST_SnapToGrid function to process server-side simplification, as described by [Paul Ramsey](http://blog.cartodb.com/smaller-faster/).
 
@@ -357,20 +357,20 @@ This method will decrease the number of vertices of the geometries that QGIS nee
 
 ![image39](images/entries/bea701efeedd257314f507dfb2689fbf95403095.png.400x300_q85_crop.webp)
 
-This feature was developed by [Michaël Douchin \@kimaidou](http://3liz.com)
+Questa funzionalità è stata sviluppata da [Michaël Douchin \@kimaidou](http://3liz.com)
 ## Gestione dati
 ### Feature: Removal of SPIT plugin
 The \"SPIT\" plugin is no longer bundled with QGIS, as the plugin was unmaintained and has been surpassed by DB Manager and the processing database import algorithms.
 
 ![image40](images/entries/b496fc25b098575ece2a38ea5a601caf75bb51dc.png.400x300_q85_crop.webp)
 
-This feature was developed by Nathan Woodrow
+Questa funzionalità è stata sviluppata da Nathan Woodrow
 ### Feature: DXF export: option to use title instead of name as DXF layer name in application and server
 ![image41](images/entries/e09652676e15a883821ca9b269c03ab0239aacb3.png.400x300_q85_crop.webp)
 
-This feature was funded by [City of Uster](http://gis.uster.ch/)
+Questa funzionalità è stata finanziata da [City of Uster](http://gis.uster.ch/)
 
-This feature was developed by Jürgen Fischer
+Questa funzionalità è stata sviluppata da Jürgen Fischer
 ### Feature: Geometry type can be overridden in the vector save as dialog
 This makes it possible to do things like save a geometryless table WITH a geometry type, so that geometries can then be manually added to rows. Previously this was only possible to do in QGIS by resorting to dummy joins or other workarounds.
 
@@ -378,7 +378,7 @@ Additionally, options have been added for forcing the output file to be multi ty
 
 ![image42](images/entries/886630cb835b72865c5442a73a79b46cc5a7b60f.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Vector joins are now saved within QLR layer-definition-files
 ### Feature: External Resource widget
 A new form widget is now available. It is named \"External resource\" and it allows a more complete handling of attributes assigned to file paths storing. Here is a complete summary of the widget features:
@@ -394,7 +394,7 @@ For more information on configuration options, you can use the tool tips of the 
 
 The main aim of this new widget is to fix and improve the two existing \'File name\' and \'Photo\' widgets, and replace them with a single unified widget. For the moment, you can still use the old widgets but they will be deprecated and removed for QGIS 3.0. We recommend to switch your projects to use the new \'External Resource\' widget now.
 
-**This feature was developed by**:
+**Questa funzionalità è stata sviluppata da**:
 - [Denis Rouzaud](https://github.com/3nids)
 - Matthias Kuhn at [OPENGIS.ch](https://opengis.ch)
 - [Médéric Ribreux](https://medspx.fr)
@@ -415,9 +415,9 @@ It is based on assumptions about the underlying database system. In particular:
 
 ![image44](images/entries/9f033883617b01432aae23c35be54070c1a9f5b3.png.400x300_q85_crop.webp)
 
-This feature was funded by République et canton de Neuchâtel, Ville de Pully, Ville de Vevey
+Questa funzionalità è stata finanziata da République et canton de Neuchâtel, Ville de Pully, Ville de Vevey
 
-This feature was developed by [Matthias Kuhn](http://opengis.ch)
+Questa funzionalità è stata sviluppata da [Matthias Kuhn](http://opengis.ch)
 ## Digitalizzazione
 ### Feature: Configurable rubber band color
 You can now set the rubber band width and color used for digitising.
@@ -435,11 +435,11 @@ The trace tool:
 
 You can read more about this feature [here](http://www.lutraconsulting.co.uk/blog/2016/02/16/qgis-trace-digitising/) and with [this tutorial](http://www.lutraconsulting.co.uk/products/autotrace/TraceDigitising).
 
-This feature was funded by: The Royal Borough of Windsor and Maidenhead, Neath Port Talbot County Borough Council, Ujaval Gandhi, Surrey Heath Borough Council, Matias Arnold, Northumberland National Park Authority, Buccleuch Estates Limited, Countryscape
+Questa funzionalità è stata finanziata da: The Royal Borough of Windsor and Maidenhead, Neath Port Talbot County Borough Council, Ujaval Gandhi, Surrey Heath Borough Council, Matias Arnold, Northumberland National Park Authority, Buccleuch Estates Limited, Countryscape
 
 ![image46](images/entries/357ff84cf7685a2686a019ebe42f0012b495f79a.png.400x300_q85_crop.webp)
 
-This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.uk)
+Questa funzionalità è stata sviluppata da [Lutra Consulting](http://www.lutraconsulting.co.uk)
 ## Etichettatura
 ### Feature: \"Cartographic\" placement mode for point labels
 In this placement mode, point label candidates are generated following ideal cartographic placement rules, eg label placements are prioritised in the order:
@@ -460,7 +460,7 @@ Placement priority can also be set for an individual feature using a data define
 
 Questa funzionalità è stata finanziata da Andreas Neumann
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Applying label distance from symbol bounds
 When this setting is active, the label distance applies from the bounds of the rendered symbol for a point instead of the point itself. It is especially useful when the symbol size is not fixed, eg if it is set by a data defined size or when using different symbols in a categorised renderer.
 
@@ -470,7 +470,7 @@ Note that this setting is only available with the new Cartographic point label p
 
 Questa funzionalità è stata finanziata da Andreas Neumann
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Control over label rendering order
 A new control for setting a label\'s \"z-index\" has been added to the labeling properties dialog. This control (which also accepts data-defined overrides for individual features) determines the order in which labels are rendered. Label layers with a higher z-index are rendered on top of labels from a layer with a lower z-index.
 
@@ -484,7 +484,7 @@ Note that this does *NOT* allow labels to be drawn below the features from other
 
 ![image55](images/entries/52f3e941b047714fbaf81adc7a226e4808a82d09.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Actual rendered symbol is now considered as an obstacle for point feature labels
 Previously, only the point feature itself was treated as an obstacle for label candidates. If a large or offset symbol was used for the point, then labels were allowed to overlap this symbol without incurring the obstacle cost.
 
@@ -492,16 +492,16 @@ Now, the actual size and offset of the rendered symbol are considered when detec
 
 ![image56](images/entries/7d4d3117427f938ec3a5a4a1ed013e8e4445db60.png.400x300_q85_crop.webp)
 
-This feature was funded by City of Uster
+Questa funzionalità è stata finanziata da City of Uster
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ## Legenda Layer
 ### Feature: Paste a style to multiple selected layers or to all layers in a legend group
 This feature adds the possibility to paste the style of one layer to a layer group or selected layers.
 
 ![image57](images/entries/63fd1bfff18a108796c400edf127367f30f93c4b.png.400x300_q85_crop.webp)
 
-This feature was developed by Salvatore Larosa
+Questa funzionalità è stata sviluppata da Salvatore Larosa
 ### Feature: Filter legend by expression
 It is now possible to filter elements of the legend by an expression. It has been designed with the filtering of rule-based or categorized symbology in mind.
 
@@ -509,9 +509,9 @@ The legend filtering is available in the legend of the main application as well 
 
 ![image59](images/entries/8c957ae820bc98f0a23a7d660abd40264af6e31d.png.400x300_q85_crop.webp)
 
-This feature was funded by [Agence de l\'Eau Adour-Garonne (Adour-Garonne Water Agency)](http://www.eau-adour-garonne.fr)
+Questa funzionalità è stata finanziata da [Agence de l\'Eau Adour-Garonne (Adour-Garonne Water Agency)](http://www.eau-adour-garonne.fr)
 
-This feature was developed by [Hugo Mercier / Oslandia](http://oslandia.com)
+Questa funzionalità è stata sviluppata da [Hugo Mercier / Oslandia](http://oslandia.com)
 ## Compositore di Mappe
 ### Feature: New options for filtering legend elements
 This introduces two new options to filter legend elements.
@@ -522,28 +522,28 @@ The second filter option allows a composer legend to be filtered to include only
 
 ![image58](images/entries/cf32cc889370df205de51af684c4e683c3ec2dc4.png.400x300_q85_crop.webp)
 
-This feature was developed by [Hugo Mercier (Oslandia)](http://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Hugo Mercier (Oslandia)](http://oslandia.com/)
 ### Feature: Additional paths for composer templates
 You can now define custom paths that should be used for QGIS to find composer templates. This means that you can for example put a bunch of templates in a network share and give your users access to that folder in addition to the local ones that exist on their own system. To manage the composer template search paths, look in `Settings -> Options -> Composer`
 
 ![image60](images/entries/bd36891d76ee01ee79e516b0167f403a89fa49de.png.400x300_q85_crop.webp)
 
-This feature was developed by Nathan Woodrow
+Questa funzionalità è stata sviluppata da Nathan Woodrow
 ### Feature: Multiple selection of compositions in manager
 The Composer Manager has gained support for managing multiple compositions at the same time. You can now open or delete multiple compositions at once by using the Ctrl key and selecting multiple compositions from the list.
 
 ![image61](images/entries/2603b37c6a6ccec10f56f37951d9494cb44c8d0a.png.400x300_q85_crop.webp)
 
-This feature was developed by [Médéric Ribreux](https://medspx.fr)
+Questa funzionalità è stata sviluppata da [Médéric Ribreux](https://medspx.fr)
 ## Plugin
 ### Feature: Authentication system support for plugin manager
 Support for the new authentication system has been added to the plugin manager. This allows users to apply authentication configurations for connections to plugin repositories, and system administrators to create authenticated access to plugin repositories and/or the download packages of plugins.
 
 ![image62](images/entries/7b66e68eb37b27b0ecabcab7d0656985e222e8c0.png.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com)
+Questa funzionalità è stata finanziata da [Boundless Spatial](http://boundlessgeo.com)
 
-This feature was developed by Larry Shaffer
+Questa funzionalità è stata sviluppata da Larry Shaffer
 ## Processing
 ### Feature: New algorithms in 2.14
 #### QGIS geoalgorithms:
@@ -563,17 +563,17 @@ It is possible - and desired - that more tests are added. You can read more abou
 
 ![image63](images/entries/4121e58bd51cfe5c8b2c0cd14d1420eaeb1f4473.png.400x300_q85_crop.webp)
 
-This feature was funded by [The QGIS Project](https://www.qgis.org)
+Questa funzionalità è stata finanziata da [The QGIS Project](https://www.qgis.org)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Questa funzionalità è stata sviluppata da [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ### Feature: Improved toolbox
 The simplified interface has been removed, and a new and more user-friendly system of managing providers has been added. The algorithm search functionality now also searches in providers that are not active, and suggests activating them.
 
 ![image64](images/entries/2a135d5384f592e77938c59c0563cc2d0f6c3ebf.jpg.400x300_q85_crop.webp)
 
-This feature was funded by [Boundless Spatial](http://boundlessgeo.com/)
+Questa funzionalità è stata finanziata da [Boundless Spatial](http://boundlessgeo.com/)
 
-This feature was developed by Víctor Olaya
+Questa funzionalità è stata sviluppata da Víctor Olaya
 ### Feature: Batch processes can be saved and later recovered from the batch processing interface
 ![image65](images/entries/f8dec7fbc9e74dc3f4078f9710984d44b26c4fa3.jpg.400x300_q85_crop.webp)
 ### Feature: More informative algorithm dialog
@@ -615,7 +615,7 @@ Use the \"Help\" tab on each of the v.net Processing algorithm to read [the offi
 
 ![image67](images/entries/655bbfccc4997a5a3e3d1f5c709da5277eef6000.png.400x300_q85_crop.webp)
 
-This feature was developed by [Médéric Ribreux](https://medspx.fr)
+Questa funzionalità è stata sviluppata da [Médéric Ribreux](https://medspx.fr)
 ## Programmabilità
 ### Feature: Redesign expression function editor
 With auto save
@@ -641,9 +641,9 @@ The configuration options, including the custom Python code entered in the dialo
 
 ![image71](images/entries/65e82ab529ee1287c631712127e1ac75f78d05c6.png.400x300_q85_crop.webp)
 
-This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
+Questa funzionalità è stata finanziata da [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
 
-This feature was developed by [Alessandro Pasotti (ItOpen)](http://www.itopen.it)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti (ItOpen)](http://www.itopen.it)
 ### Feature: New PyQGIS classes in 2.14
 ### New core classes
 - [QgsAttributeEditorElement](https://qgis.org/api/classQgsAttributeEditorElement.html)
@@ -707,7 +707,7 @@ This feature was developed by [Alessandro Pasotti (ItOpen)](http://www.itopen.it
 
 `STARTINDEX` can be used to skip some features in the result set and in combination with `MAXFEATURES` provides for the ability to use WFS GetFeature to page through results. Note that `STARTINDEX=0` means start with the first feature, skipping none.
 
-This feature was developed by [3Liz](http://3liz.com)
+Questa funzionalità è stata sviluppata da [3Liz](http://3liz.com)
 ### Feature: showFeatureCount in GetLegendGraphic
 Add non-standard parameter **showFeatureCount** to add feature count in the legend. To activate it,**showFeatureCount** can be set to *TRUE* or *1*.
 
@@ -715,7 +715,7 @@ This feature needs a fake X server.
 
 ![image72](images/entries/95f13aa3a1f4cb4ca8cbf7ce30e6bb278e6b9cd8.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+Questa funzionalità è stata sviluppata da [3Liz](http://3liz.com)
 ### Feature: Option to avoid rendering artefacts at edges of tiles
 ![image73](images/entries/1ded32aa2bb962fde1b9f00b891b2a04406be621.png.400x300_q85_crop.webp)
 ### Feature: Configuration checker in project properties
@@ -728,9 +728,9 @@ The checker tests for errors like:
 
 ![image74](images/entries/c548fc562785f400d3000e7ae1f61705c333026c.png.400x300_q85_crop.webp)
 
-This feature was funded by [Ifremer](http://wwz.ifremer.fr/institut_eng/)
+Questa funzionalità è stata finanziata da [Ifremer](http://wwz.ifremer.fr/institut_eng/)
 
-This feature was developed by [3Liz](http://3liz.com)
+Questa funzionalità è stata sviluppata da [3Liz](http://3liz.com)
 ### Feature: WMS INSPIRE Capabilities
 In the project properties the user can:
 - activate INSPIRE capabilities
@@ -741,7 +741,7 @@ The WMS 1.3.0 capabilities reflects the INSPIRE configuration.
 
 ![image75](images/entries/4ee445bcb5e9eab3fb9bf2eda8f9b1b81bbe21c0.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+Questa funzionalità è stata sviluppata da [3Liz](http://3liz.com)
 ### Feature: Add short name to layers, groups and project
 A number of elements have both a **Name** and a **Title**. The Name is a text string used for machine-to-machine communication while the Title is for the benefit of humans. For example, a dataset might have the descriptive Title *Maximum Atmospheric Temperature* and be requested using the abbreviated Name *ATMAX*.
 
@@ -758,7 +758,7 @@ If a short name has been set for layers, groups and project it is used by QGIS S
 
 ![image76](images/entries/e2345455bda9f0ed3da5e1c2750d6e2239ab8a86.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+Questa funzionalità è stata sviluppata da [3Liz](http://3liz.com)
 ## Simbologia
 ### Feature: Size assistant for varying line width
 ![image77](images/entries/1d891425b0e1b9927ced6aab3e0353aed92608de.png.400x300_q85_crop.webp)
@@ -773,13 +773,13 @@ and
 
 to enable transparency support.
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Easy duplication of symbol layers
 A new \"duplicate\" button has been added to the symbol properties dialog, which allows symbol layers to be easily duplicated.
 
 ![image78](images/entries/a6e2ad682852a2fb8b635395ec75f83ef584621d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: 2.5D Renderer
 This adds a configuration interface and renderer that makes it easy to put all the pieces together which are required to get a 2.5D effect.
 
@@ -787,10 +787,10 @@ It allows for configuring some of the styling and is meant to create an easy-to-
 
 Since every part of the system is built around QGIS\' internal rendering and symbology engine, there is much to fine tune. To get all the possibilities, just change the renderer to a graduated, categorized or single symbol renderer upon creation and you will find full access to improve the style to your needs.
 
-**This feature was developed by**:
+**Questa funzionalità è stata sviluppata da**:
 - Matthias Kuhn at [OPENGIS.ch](https://opengis.ch)
 
-**This feature was funded by**:
+**Questa funzionalità è stata finanziata da**:
 - Regional Council of Picardy
 - ADUGA
 - Ville de Nyon
@@ -812,11 +812,11 @@ This is also available for plugins:
 
     layer.getFeatures( QgsFeatureRequest().setOrderBy( 'name' ) ) -- alphabetical by name
     
-**This feature was developed by**: Matthias Kuhn at [OPENGIS.ch](https://opengis.ch) **This feature was funded by**: Regional Council of Picardy, ADUGA, Ville de Nyon, Wetu GIT cc
+**Questa funzionalità è stata sviluppata da**: Matthias Kuhn at [OPENGIS.ch](https://opengis.ch) **Questa funzionalità è stata finanziata da**: Regional Council of Picardy, ADUGA, Ville de Nyon, Wetu GIT cc
 
 ![image80](images/entries/e06cf21a35e070a28ce5b3b98c92f2fb1c1b881d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Questa funzionalità è stata sviluppata da [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ### Feature: Geometry generator symbols
 Geometry generator symbols allow using the expression engine to modify the geometry before rendering or even creating new geometries while rendering based on feature attributes.
 
@@ -836,9 +836,9 @@ Different symbol layers can contain different geometry generators, this allows d
 
 ![image81](images/entries/b06b6bc93644c051c13de162b45d9486b7af769a.png.400x300_q85_crop.webp)
 
-This feature was funded by Regional Council of Picardy, ADUGA, Ville de Nyon, Wetu GIT cc
+Questa funzionalità è stata finanziata da Regional Council of Picardy, ADUGA, Ville de Nyon, Wetu GIT cc
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+Questa funzionalità è stata sviluppata da [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 ## Interfaccia Utente
 ### Feature: Attribute table can be refreshed
 An option to reload attributes within the attribute table is now available.
@@ -849,18 +849,18 @@ Shows a color wheel widget in the menu, which allows you to edit the color for a
 
 ![image83](images/entries/3159457a414ea61f8f40659af5c9561882a44fe1.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Edit legend symbols directly from layer tree
 This adds a new \"edit symbol\" item to the right-click menu for a renderer child legend item (eg categories for the categorised renderer). Selecting it opens a symbol editor dialog which allows for directly editing the class\'s symbol. It\'s much faster than opening the layer properties and going through the style tab. You can also double-click on a child item to open the symbol editor immediately.
 
 ![image84](images/entries/e7b2447e329507f0b27e855111ffa038b1ccc353.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 ### Feature: Show/hide all legend items via the context menu
 Allows toggling on/off all the symbol items for categorized/graduated/rule-based layers via the right click menu on an item. Previously you\'d have to toggle each item manually one-by-one.
 
 ![image85](images/entries/c526cf9c28c92dde193490a2707c1fe2e0a58ea6.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](http://nyalldawson.net)
 
 {{<content-end >}}

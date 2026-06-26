@@ -3,9 +3,9 @@ draft: 'true'
 
 ---
 # QGIS gebruiken voor stedelijke planning in de gemeente Montecchio Maggiore, Vicenza, Italië
-Montecchio Maggiore is a small town in the middle west of Vicenza (about 24.000 population). And as many other italian municipality it manages the town planning; in particular the urban planning and what we call "recovery plan" aka PDR \-\-- Piani Di Recupero. This urbanistic tool is dedicated to the historical area in the center of the town and it requires a specific study: building state of conservation, intended use, particular historical notice via survey and restitution to produce planimetric and prospectus graphics. For this purpose it has used QGIS in addition to Postgresql/Postgis database, PHP code and Libreoffice suite, QCAD (LibreCAD).
+Montecchio Maggiore is een kleine stad in het midwesten van Vicenza (ongeveer 24.000 inwoners). Net zoals zo vele andere Italiaanse gemeenten beheert het de planning in de stad; in het bijzonder de ruimtelijke planning en dat wat we het "recovery plan" of PDR \-\-- Piani Di Recupero noemen. Dit stedelijke gereedschap is bedoeld voor de historische gebieden in het centrum van de stad en vereist een speciale studie: status van het gebouw met betrekking tot conservatie, bedoeld gebruik, bijzondere historische vastlegging via onderzoek en restitutie om planimetrische en afbeeldingen voor prospectussen te maken. Voor dit doel heeft het QGIS gebruikt in aanvulling op de database van PostgreSQL/PostGIS, code in PHP en het pakket LibreOffice, QCAD (LibreCAD).
 ## De taak
-![Workflow Schema](./images/italy_vicenza1.png){.align-right}
+![Schema werkstroom](./images/italy_vicenza1.png){.align-right}
 
 Een schema zal de werkstroom verhelderen:
 
@@ -24,11 +24,11 @@ Voor elk gebouw werden grafische thematische kaarten gemaakt met behulp van de g
 
 Een foto werd dus gekoppeld aan elk gebouw, wat het ontwerp en analyse in het GIS-project faciliteerde (met behulp van de mogelijkheid "action"). De gereedschappen voor SQL (pgquery, Postgis manager, dbmanager et al.) maakten het mogelijk zeer uitgebreide query's te verkrijgen die onmiddellijk zichtbaar waren in het kaartvenster, zoals de berekening van het volume gesplitst naar het beoogde gebruik, standaard berekening van het gebied in percentage van het totale gebied voor de planning en andere minder belangrijke query's. Alle nuttige items voor het ontwerp en de studie voor de planning die anders niet mogelijk waren geweest zonder bijzonder krachtige gereedschappen, zoals GIS (en QGIS in het bijzonder).
 
-![QGIS project with building data viewing](./images/italy_vicenza2.png){.align-right}
+![Project van QGIS met weergave van gegevens van gebouwen](./images/italy_vicenza2.png){.align-right}
 
 Tenslotte werd een synthese rapport voor elk gebouw geproduceerd met behulp van het pakket LibreOffice. Het rapport bestaat uit een overzichtsschema met foto, uitname van de cartografie die het gebouw in de context lokaliseert en gegevens over de huidige status.
 
-![QGIS print composer for final graphic layout](./images/italy_vicenza3.png){.align-right}
+![QGIS printvormgeving voor uiteindelijke grafische lay-out](./images/italy_vicenza3.png){.align-right}
 ## Conclusie
 De kracht van QGIS is de uiterst gebruiksvriendelijke interface, gekoppeld aan de verscheidene gereedschappen die het biedt. De verbinding met verschillende indelingen voor gegevens (shapefiles, SpatiaLite db, PostgreSQL/Postgis db,\...) faciliteert en vergroot de interoperabiliteit tussen verschillende werelden. En dus stimuleert en opent de door de gratis software (QGIS, PHP, LibreOffice, QCAD) geboden vrijheden, nieuwe horizonten.
 

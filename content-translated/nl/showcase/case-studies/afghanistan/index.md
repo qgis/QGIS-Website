@@ -3,16 +3,17 @@ author: Edward Crowther
 categories:
 - Praktijkvoorbeelden
 date: '2015-04-01'
-description: The Danish Demining Group (DDG), the specialised mine action unit of
-  the Danish Refugee Council, has been working in Afghanistan since 1999, undertaking
-  humanitarian mineclearance, unexploded ordnance (UXO) disposal and mine risk education.
+description: De Deense Demining Group (DDG), de gespecialiseerde ontmijningsactie-eenheid
+  van de Deens Refugee Council, werkt sinds 1999 in Afghanistan. Voor het humanitair
+  opruimen van mijnen, het verwijderen van niet-ontplofte explosieven (UXO) en geven
+  van voorlichting over risico's van mijnen.
 draft: 'true'
 heroImage: ''
 tags:
 - humanitarian
 - afghanistan
-- case-study
-- showcase
+- praktijkvoorbeeld
+- gebruiksgeval
 thumbnail: afghanistan3.jpg
 title: Deense Demining Group gebruikt QGIS in Afghanistan
 type: showcase/case-studies
@@ -26,11 +27,11 @@ In Afghanistan worden activiteiten voor mijnopruiming gecoördineerd door de Min
 
 ![Digitale hoogtemodellen stellen DDG in staat een idee te krijgen van de locatie van een mijnenveld.](afghanistan1.png)
 
-The use of geospatial data is most useful in the planning and survey phases. In Afghanistan, security problems and rugged terrain mean that physical re-survey of known sites is not always easy. Instead, the use of a mixture of data satellite or aerial photography underlays, digitized Soviet-era topographic maps, hazard shapefiles and digital elevation models allow DDG to get an idea of the location of a minefield in relation to the terrain and surrounding natural and physical features before sending in a survey team. QGIS plugins add useful capabilities, like the ability to visualise terrain in 3D. The attached screenshot above made using the plugin Qgis2threejs shows an area just south of the Darulaman Palace in Kabul, with active minefields (along the ridgelines on the left) shown in red over a Soviet topographic raster layer combined with SRTM data. Minefields already cleared show as light green.
+Het gebruiken van georuimtelijke gegevens is zeer handig bij het plannen en in onderzoeksfases. In Afghanistan zorgen veiligheidsproblemen en ruw terrein ervoor dat fysiek opnieuw onderzoeken van bekende plekken niet altijd makkelijk is. In plaats daarvan stelt het gebruiken van een mix aan gegevens, van satelliet- of onderlagen voor luchtfotografie, gedigitaliseerde topografische kaarten uit het Sovjet-tijdperk, shapefiles van gevaren en digitale hoogtemodellen, DDG in staat om een idee te krijgen van de locatie van een mijnenveld. Dat in relatie tot het terrein en de omliggende natuurlijke en fysieke objecten, voordat ze een onderzoeksteam sturen. Plug-ins voor QGIS voegen bruikbare mogelijkheden toe, zoals de mogelijkheid om terrein in 3D te visualiseren. De hierboven bijgevoegde schermafdruk gemaakt met behulp van de plug-in Qgis2threejs geeft een gebied weer, net ten zuiden van het Darulaman Palace in Kabul, met actieve mijnenvelden (langs de heuvelranden links) in rood weergegeven over een Sovjet-topografische rasterlaag, gecombineerd met gegevens van SRTM. Mijnenvelden die al zijn geschoond, worden lichtgroen weergegeven.
 
-![Active hazardous areas shown in red. Hazardous areas already cleared show as light green.](afghanistan2.jpg)
+![Actieve gevaarlijke gebieden worden in het rood weergegeven. Gevaarlijke gebieden die al geruimd zijn in lichtgroen.](afghanistan2.jpg)
 
-Kabul University's campus is still contaminated with suspected hazardous areas thought to comprise of air-dropped bombs or similar ordnance. While not posing any immediate threat to students or staff, these hazards will require eventual clearance to allow future construction within an educational institution vital to Afghanistan's future development. The hazards are also notable as among the last significant remaining hazardous areas in the Kabul metropolitan area. By using QGIS to combine the hazard polygons from earlier surveys with highly accurate aerial photography provided by the USGS, discrepancies can be noted e.g. where the polygons do not match the shape of the buildings, as evident in the northwest part of the campus which can direct survey teams to places to first conduct a more accurate re-survey.
+De campus van Kabul University is nog steeds vervuld met verdachte gevaarlijke gebieden, geacht te bestaan uit afgeworpen bommen of soortgelijke objecten. Hoewel ze niet direct een gevaar vormen voor studenten en staf, zullen deze gevaren een eventuele ruiming vereisen voor toekomstige bouw binnen een vitaal educatief instituut voor de toekomstige ontwikkeling van Afghanistan. De gevaren vallen ook op tussen de laatste significante resterende gevaarlijke gebieden in het stadsgebied van Kabul. Door QGIS te gebruiken om de gevaarspolygonen uit eerdere onderzoeken te combineren met uitermate nauwkeurige luchtfotografie van USGS, kunnen afwijkingen worden opgespoord, bijv. waar de polygonen niet overeenkomen met de vorm van de gebouwen. Zoals evident is in het noordwestelijke deel van de campus, waardoor direct onderzoeksteams kunnen worden uitgestuurd naar plaatsen om eerst een meer nauwkeurig heronderzoek uit te voeren.
 
 QGIS synchroniseert ook goed met gegevens die zijn verzameld tijdens veldbezoeken met behulp van draagbare Garmin GPS, wat het mogelijk maakt kaarten te maken met de locaties van mijnen die zijn gevonden en vernietigd.
 

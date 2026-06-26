@@ -598,7 +598,7 @@ This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
 ![image25](images/entries/7d8fbe3054bd3d8b311d26d9343a20041f3fb809.png.400x300_q85_crop.webp)
 
 この機能は [Loïc Bartoletti (Oslandia)](https://www.oslandia.com) によって開発されました
-## プログラム可能
+## プログラマビリティ
 ### 機能: 新クラス QgsExifTools
 Contains utilities for retrieving the geotag from images and for setting an image\'s geotag.
 

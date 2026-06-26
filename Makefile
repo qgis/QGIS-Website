@@ -41,7 +41,7 @@ deploy: ## Deploy the site for www.qgis.org and qgis.org
 	@echo "------------------------------------------------------------------"
 	@echo "Deploy site in production"
 	@echo "------------------------------------------------------------------"
-	git pull && git submodule update --init --recursive && rm -rf archive; mkdir archive; cp public_www public_prod archive; make build
+	git pull && git submodule update --init --recursive && rm -rf archive; mkdir archive; cp -r public_www public_prod archive; make build
 
 revert-deploy: ## Revert the site for www.qgis.org and qgis.org
 	@echo

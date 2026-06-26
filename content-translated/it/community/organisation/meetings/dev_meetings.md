@@ -2,12 +2,12 @@
 HasBanner: false
 draft: false
 sidebar: true
-title: Riunioni degli sviluppatori di QGIS
+title: Incontri degli sviluppatori di QGIS
 type: page
 
 ---
 {{<content-start >}}
-# Riunioni degli sviluppatori di QGIS
+# Incontri degli sviluppatori di QGIS
 {{<rich-box-start icon="💁" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
@@ -18,26 +18,26 @@ The organization of events happens on the [QGIS wiki](https://github.com/qgis/QG
 
 {{<rich-box-end >}}
 
-2016 - 16th QGIS Developer Meeting in Bonn
+2016 - 16° incontro degli sviluppatori di QGIS a Bonn
 -
 The 16th QGIS Developer Meeting from 21 - 23 August and 27 - 28 August took place in Bonn, Germany together with the FOSS4G 2016 Code Sprint before and after the conference.
 
-2016 - 15th QGIS Developer Meeting in Girona
+2016 - 15° incontro degli sviluppatori di QGIS a Girona
 -
 The 15th QGIS Developer Meeting from 27 - 29 May 2016 took place in Girona, Spain right after the 2nd International QGIS User and Developer Conference and the Jornadas SIG Libre.
 
 For a summary of the event, please see [http://blog.qgis.org/2016/06/30/report-back-15th-qgis-hackfest-in-girona-spain/](http://blog.qgis.org/2016/06/30/report-back-15th-qgis-hackfest-in-girona-spain/)
 
-2015 - 14th QGIS Developer Meeting in Las Palmas
+2015 - 14° incontro degli sviluppatori di QGIS a Las Palmas
 -
-The 14th QGIS Developer Meeting from 5 -8 November 2015 was organised by:
+Il 14° incontro degli sviluppatori di QGIS, 5-8 novembre 2015, è stato organizzato da:
 * Universidad de las Palmas de Gran Canaria.
 * Oficina de Software libre de la Universidad de las Palmas de Gran Canaria.
 * Ayuntamiento de las Palmas de Gran Canaria.
 
 Grazie per questo! E complimenti a Pablo Fernández Moniz e al suo team per i suoi sforzi per rendere questa una grande hackfest.
 
-2015 - 13th QGIS Developer Meeting in Nodebo
+2015 - 13° incontro degli sviluppatori di QGIS a Nodebo
 -
 The 13th QGIS Developer Meeting from 18 -22 May 2015 organized in conjunction with the first [QGIS User Conference 2015](https://qgis2015.wordpress.com).
 
@@ -104,9 +104,9 @@ Many thanks to our sponsors!
 -
 The 6th QGIS Developer Meeting from 10 - 14 November 2011 was organised by QGIS Swiss User Group and and held at [Institute of Cartography, ETH Zurich](http://www.karto.ethz.ch/about/howtofind/index_EN) The Institute sponsored the venue and internet access. We are extremely grateful to them for organising and helping us to make the whole event went very smoothly.
 
-2011 - 5th QGIS Developer Meeting in Lisbon
+2011 - 5° incontro degli sviluppatori di QGIS a Lisbona
 -
-The 5th QGIS Developer Meeting from 14 - 18 April 2011 was held in Lisbon, Portugal. This meeting was organized by Vânia Neves and Giovanni Manghi ([Faunalia.pt](http://www.faunalia.pt/)) and [MUNICIPIA](http://www.municipia.pt/). The event was be partially supported by [MUNICIPIA](http://www.municipia.pt/) and by the local OSGeo chapter.
+Il quinto incontro degli sviluppatori QGIS si è tenuto a Lisbona, in Portogallo, dal 14 al 18 aprile 2011. L'evento è stato organizzato da Vânia Neves e Giovanni Manghi ([Faunalia.pt](http://www.faunalia.pt/)) e da [MUNICIPIA](http://www.municipia.pt/). L'evento è stato parzialmente sostenuto da [MUNICIPIA](http://www.municipia.pt/) e dalla sezione locale di OSGeo.
 
 University of Lisbon, [Institute of Geography and Land Management](http://www.igot.ul.pt/portal/page?_pageid=407,1&_dad=portal&_schema=PORTAL) provided the venue.
 
@@ -117,7 +117,7 @@ The 4th QGIS Developer Meeting from 11 - 15 November 2010 was held in Wroclaw, P
 Many thanks to our sponsors!
 * [Department of Climatology and Atmosphere Protection](http://www.meteo.uni.wroc.pl/) of the University of Wroclaw provided the venue
 
-2010 - 3rd QGIS Developer Meeting in Pisa
+2010 - 3° incontro degli sviluppatori di QGIS a Pisa
 -
 The 3rd QGIS Developer Meeting from 18- 22 March 2010 was held in Pisa, Tuscany, Italy.
 
@@ -126,7 +126,7 @@ Many thanks to our sponsors!
 * The [Parco Naturale di San Rossore](http://www.parcosanrossore.it/) generously allowed us to use its facilities
 * The [GULP, Gruppo Utenti Linux Pisa](http://www.gulp.linux.it/), helped organizing the event
 
-2009 - 2nd QGIS Developer Meeting in Vienna
+2009 - 2° incontro degli sviluppatori di QGIS a Vienna
 -
 The 2nd QGIS Developer Meeting from 5 - 9 November 2009 was held in Vienna, Austria.
 
@@ -134,7 +134,7 @@ Many thanks to our sponsors!
 * [Institute of Surveying, Remote Sensing and Land Information](http://www.rali.boku.ac.at/ivfl.html?&L=1) provided the venue
 * [FOSSGIS e.V.](http://www.fossgis.de/) for donating 500€ to support the developers
 
-2009 - 1st QGIS Developer Meeting in Hannover
+2009 - 1° incontro degli sviluppatori di QGIS ad Hannover
 -
 The 1st QGIS Developer Meeting from 19 - 22 March 2009 was held in Hannover, Germany.
 

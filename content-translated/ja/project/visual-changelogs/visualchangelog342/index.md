@@ -348,7 +348,7 @@ DBマネージャーのテーブルコメントを複数行対応にします（
 この機能開発は Ocean Winds. の資金提供を受けています
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
-## プログラム可能
+## プログラマビリティ
 ### 機能: QgsGeosクラスのPyQGISへの公開
 基底の QgsGeometryEngine クラスでは公開されていないGEOS固有の機能に、新しい QgsGeos クラスを通じて直接アクセスできるようになりました。
 

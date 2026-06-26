@@ -56,7 +56,7 @@ To remove the need for end users to interact directly with PostGIS connections a
 
 <figure>
 <img src="../images/suisse_solothurn3.png" class="align-right" alt="suisse_solothurn3.png" />
-<figcaption>"SO!GIS Suche" plugin developed at the Canton of Solothurn</figcaption>
+<figcaption>"SO!GIS Suche" plugin sviluppato dal Cantone di Solothurn</figcaption>
 </figure>
 
 Another required QGIS plugin we created is called \'SO!GIS Suche\'. This provides the possibility to search for locations like townships, addresses or cadastral parcels (see Figure 2). As a result the user is able to navigate very easily to an area of interest.

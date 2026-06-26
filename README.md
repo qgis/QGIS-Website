@@ -115,8 +115,8 @@ QGIS-Website/
   ├── ⚙️  Makefile          # Build/Deployment automation commands
   ├── 📖  README.md         # Project overview and instructions
   ├── 📋  REQUIREMENTS.txt  # Python dependencies (pip)
-  ├── 🐚  shell.nix         # Nix shell environment definition
-  └── 💡  vscode.sh*        # VSCode helper script for Nix shell environment
+  ├── 🐚  flake.nix         # Nix flake (development environment)
+  └── 💡  vscode.sh*        # VSCode helper script for the Nix development environment
 ```
 
 
@@ -157,7 +157,7 @@ The `scripts/` folder contains utility scripts to assist with data loading, and 
 | `.github/workflows/update-donors.yml` | Updates Stripe donors list twice daily | 💰 Donors page (`data/donors.json`) |
 | `.github/workflows/update-feeds.yml` | Updates feeds and hub maps twice daily | 🏢 Funders, 📰 News feeds, 🗺️ Hub maps |
 | `.github/workflows/check-commercial-support-links.yml` | Sanitizes commercial support links weekly | 🏪 Commercial Support page |
-| `.github/workflows/update-commercial-matches.yml` | Updates commercial support contributor matches daily | 🏪 Commercial Support badges (`data/commercial_support/contributor_matches.json`) |
+| `.github/workflows/update-contributors.yml` | Runs the contributor, organization, and commercial-support-matching scripts twice daily | 👥 Contributors, 🏢 Organizations, 🏪 Commercial Support badges (`data/contributors/*.json`, `data/commercial_support/contributor_matches.json`) |
 
 > ✏️ **Note:** Run each script from the project root. Some scripts may require environment variables or configuration—see comments within each script for usage details.
 
@@ -214,7 +214,7 @@ The site will automatically refresh any page you have open if you edit it and sa
 
 ## Run in other IDEs
 
-Use an appropriate Hugo plugin for your IDE, or run Hugo från the command line:
+Use an appropriate Hugo plugin for your IDE, or run Hugo from the command line:
 
 ```shell
 hugo server
@@ -344,10 +344,10 @@ We welcome your contributions! All contributors are expected to sign a contribut
 
 ## 💮 Changing the templates
 
-| Page type       | Path                                     |
-| --------------- | ---------------------------------------- |
-| Landing Page    | themes/qgis/layouts/index.html           |
-| Top Level Pages | themes/qgis/layouts/_default/single.html |
+| Page type       | Path                                                   |
+| --------------- | ------------------------------------------------------ |
+| Landing Page    | themes/qgis-website-theme/layouts/index.html           |
+| Top Level Pages | themes/qgis-website-theme/layouts/_default/single.html |
 
 ## 🏠 Editing the landing (home) page
 
@@ -512,7 +512,7 @@ Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://
 docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Website > broken_links.csv
 ```
 
-Crawls the site and reports all 404. Full run takes apout 10 mins
+Crawls the site and reports all 404 errors. Full run takes about 10 mins
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 

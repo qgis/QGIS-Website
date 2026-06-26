@@ -14,7 +14,7 @@ type: page
 ### Enregistré en 2016 ou avant
 {{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brésil (Brésil)" listSubtitle="Contact : Arthur Nanni" >}}
 
-{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="Groupe d'utilisateurs QGIS du Danemark (Danemark) " listSubtitle="Contact : Jacob Arpe" >}}
+{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="Groupe d'utilisateurs QGIS du Danemark (Danemark) " listSubtitle="Contact: Mie Winstrup" >}}
 
 {{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS Royaume-Uni (Angleterre) " listSubtitle="Contact : Simon Miles" >}}
 

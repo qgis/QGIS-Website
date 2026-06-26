@@ -6,9 +6,9 @@ draft: 'true'
 ## Introductie
 Laboratory on Experimental and Applied Geography (LEAG) is een deel van het College of Hotel and Business Management, Ltd. In Brno, Tsjechië (Vysoká škola obchodní a hotelová, s.r.o.) wat hoger onderwijs aanbiedt voor toeristisch, zakelijk en hotelmanagement. LEAG is gefocust op het modelleren van socio-economische ruimtelijke processen, analyseren van ruimtelijke patronen, beschrijven en monitoren van de werkelijkheid van lokaliteiten en regio's.
 
-![QGIS while modeling 3D objects (interpolation), terrain analysis](./images/czech_brno1.jpg){.align-right}
+![QGIS tijdens het modelleren van 3D-objecten (interpolatie), terreinanalyse](./images/czech_brno1.jpg){.align-right}
 
-LEAG plays important role in academic research held in College of Business and Hotel Management. The need of spatial modeling requires also excellent software. The philosophy of minimum cost and maximum efficiency led to choice of open source solutions. This step resulted in using core open source SW such as LibreOffice, GIMP, Inkscape and QGIS. QGIS does not stand alone --\-- we use MapWindow, OpenJump, gvSIG, SAGA and others. But QGIS plays the major role.
+LEAG speelt een belangrijke rol in de academische onderzoeken die worden uitgevoerd in het College of Business and Hotel Management. De behoefte aan ruimtelijk modelleren vereist ook excellente software. De filosofie van minimale kosten en maximale efficiency leidde tot de keuze voor open source-oplossingen. Deze stap resulteerde in het gebruiken van core open source SW, zoals LibreOffice, GIMP, Inkscape en QGIS. QGIS staat niet op zichzelf --\-- we gebruiken ook MapWindow, OpenJump, gvSIG, SAGA en andere. Maar QGIS speelt de belangrijkste rol.
 ## Gebruik van QGIS
 QGIS is de leidende software en staat in de huidige versies (vanwege het "experimentele" karakter van LEAG gebruiken we de laatste onstabiele uitgaven, in plaats van de versies LTS) en wel om verschillende redenen:
 - Grafische gebruikersinterface (sluit aan op commerciële producten)
@@ -28,7 +28,7 @@ QGIS is ook een fantastisch onderwijskundig gereedschap. College of Business and
 
 ![Diagrammen gebruiken voor de vergelijking van twee populaties tussen twee bevolkingsonderzoeken](./images/czech_brno2.jpg){.align-right}
 ## Conclusie
-With no cost and high efficiency the Laboratory on Experimental and Applied Geography produces high-quality analysis, maps and visualizations. Using QGIS large databases are being created and further testing of new functions are being done. Finally, one of the highest impact of using QGIS could be seen in education \-\-- QGIS is the first software, which is presented to students. During regular workshops students learn how to legally work with QGIS and how to create their own maps.
+Zonder kosten en met hoge efficiëntie produceert het Laboratory on Experimental and Applied Geography hoge kwaliteit analyses, kaarten en visualisaties. Met behulp van QGIS worden grote databases gemaakt en worden nieuwe functies getest. Tenslotte zou een van de zaken met de meeste impact in het gebruiken van QGIS kunnen worden gezien in het onderwijs \-\-- QGIS is de eerste software die aan studenten wordt aangeboden. Tijdens regelmatige workshops leren studenten hoe ze legaal met QGIS werken en hoe ze hun eigen kaarten kunnen maken.
 ## Auteur
 ![Jakub Trojan](./images/czech_brnoaut.jpg){.align-left height="200px"}
 

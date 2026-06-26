@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # Elenco cambiamenti per QGIS 2.8{#changelog28 }
-Release date: 2015-02-20
+Data di rilascio: 2015-02-20
 
 This is the change log for the next release of QGIS - version 2.8 \' Wien\'. Wien is German for \'Vienna\' - host city to our developer meet up in November 2009 and again in March 2014.
 
@@ -101,9 +101,9 @@ In the QGIS Browser items are now expanded in their own threads, speeding up the
 ### Novità: Supporto per la grafica della legenda WMS contestuale
 If your WMS server supports contextual legends, you can make use of them in QGIS now too. Contextual legends are getLegendGraphic requests which return only the relevant legend for your current view extent, and thus do not include legend items for things you can\'t see in the current map.
 
-**This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
+**Questa funzionalità è stata finanziata da:** [Regione Toscana](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**Questa funzionalità è stata sviluppata da:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/e516a25492b547113c487d00475cfe07bc7b131e.webp)
 ## Gestione dati
@@ -134,26 +134,26 @@ Lo strumento di semplificazione è stato revisionato, aggiungendo:
 - supporto per geometrie multi-part
 - statistiche sulla riduzione del numero di vertici
 
-**This feature was funded by:** [Tracks for Africa](http://tracks4africa.com/)
+**Questa funzionalità è stata finanziata da:** [Tracks for Africa](http://tracks4africa.com/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**Questa funzionalità è stata sviluppata da:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in collaborazione con [Kartoza](http://kartoza.com/)
 
 ![](images/entries/20b7f96ffc7d37b8c2ae09189d7957a929a716e5.webp)
 ### Novità: Miglioramenti per lo snapping
 There is a new snapping mode : **snap to all layers** which makes it quick to enable snapping between all layers. Also the underlying snapping architecture of QGIS has been overhauled making snapping much faster on large projects and improving the precision with which snapping takes place. ​There's also less confusion with snapping tolerances being to map units or layer units, so those anticipated 1 metre tolerances don't become 1 degree tolerances without you knowing.
 
-**This feature was funded by:** [Ville de Vevey, SITNyon](http://www.vevey.ch/) and [QGIS Usergroup Switzerland](http://www.qgis.ch/)
+**Questa funzionalità è stata finanziata da:** [Ville de Vevey, SITNyon](http://www.vevey.ch/) and [QGIS Usergroup Switzerland](http://www.qgis.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**Questa funzionalità è stata sviluppata da:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/8454af2743154585eb82325ab2694e50e7d9efcd.webp)
 ## Legenda Layer
 ### Feature: Show rule-based renderer\'s legend as a tree
 Advanced users who leverage QGIS\'s rule based renderer system will be pleased to see that the rules are now presented as a tree in the legend. Better still, each node in the **tree** can be **toggled on/off** individually providing for great flexibility in which sublayers get rendered in your map.
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+**Questa funzionalità è stata finanziata da:** [SIGE](http://www.sige.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**Questa funzionalità è stata sviluppata da:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in collaborazione con [Kartoza](http://kartoza.com/)
 
 ![](images/entries/0d39448aa0893d7a71c5241aa2181750535e62c3.webp)
 ## Compositore di Mappe
@@ -183,9 +183,9 @@ You can now drag and drop python scripts into QGIS window and they will be execu
 ### Feature: New geometric predicate parameter type
 With this new parameter type, used in **Select by location, Extract by location** and **Join attributes by location** algorithms, the user can select precisely the spatial operator to use.
 
-**This feature was funded by:** [French Ministry of Ecology, Sustainable Development and Energy](http://www.developpement-durable.gouv.fr/)
+**Questa funzionalità è stata finanziata da:** [French Ministry of Ecology, Sustainable Development and Energy](http://www.developpement-durable.gouv.fr/)
 
-**This feature was developed by:** [Camptocamp](http://www.camptocamp.com)
+**Questa funzionalità è stata sviluppata da:** [Camptocamp](http://www.camptocamp.com)
 
 ![](images/entries/cd198b98cf28e611f5c2e3be93bc5ec90dd0a5b4.webp)
 ### Feature: New algorithms
@@ -234,7 +234,7 @@ In the DB Manager SQL editor, it is now possible to highlight a portion of the S
 ### Feature: Server python plugins
 Python plugins support for QGIS server brings the power of python to server side, allowing for fast and efficient development and deployment of new features.
 
-**This feature was developed by:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
+**Questa funzionalità è stata sviluppata da:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
 ### Feature: Support for layer styles
 - QGIS Server now supports predefined layer styles in GetMap requests
 - QGIS Server now supports multiple styles in GetStyles request (see symbology section below)
@@ -265,9 +265,9 @@ Options include specifying heatmap radius in pixels, mm or map units, choice of 
 ### Feature: Multiple styles per layer
 It is now possible to set multiple styles for a layer and then easily toggle between them. This functionality is available in the `legend context menu --> styles sub-menu` where it is possible to add/remove styles and quickly switch between them. Layer sets remember styles, and different styles can also be applied to individual composer map items. The multiple styles defined are also available when the project is served via QGIS Server as a WMS layer. For more information on this see also this [blog post](http://www.lutraconsulting.co.uk/blog/2015/02/19/towering-qgis-release/).
 
-**This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
+**Questa funzionalità è stata finanziata da:** [Regione Toscana](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**Questa funzionalità è stata sviluppata da:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/e6d0058bbae51c52fb9fffc79d4cc459fbaf853b.webp)
 ### Feature: More data-defined symbology settings
@@ -279,9 +279,9 @@ The exporter functionality for DXF files has been improved, with better fidelity
 ### Feature: Map rotation in canvas, improved rotation in composer
 This release includes preliminary support for rotation in the map canvas. You can rotate the canvas using the new rotation widget in the status bar. Rotation support has been extended into the map composer too so that it correctly handles labelling and symbology, etc.
 
-**This feature was funded by:** [Japan Space Imaging Corporation (JSI)](http://www.spaceimaging.co.jp/)
+**Questa funzionalità è stata finanziata da:** [Japan Space Imaging Corporation (JSI)](http://www.spaceimaging.co.jp/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**Questa funzionalità è stata sviluppata da:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/b655549a3336c2fb16eef87f6f30fe50f5abe9f9.webp)
 ## Interfaccia Utente

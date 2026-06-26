@@ -624,7 +624,7 @@ This feature was developed by [Jean Felder](https://github.com/ptitjano)
  [\#55317](https://github.com/qgis/QGIS/issues/55317) に対応するため、レイヤーにWFS Titleサーバーメタデータプロパティが追加されました。これにより、ユーザーがQGIS ServerでWFSを通じて提供されるレイヤーの異なるレイヤーコレクションを区別できるようになります。
 
 This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
-## プログラム可能
+## プログラマビリティ
 ### 機能: QgsDistanceAreaメソッドで例外を発生
  誤解を招く解析結果を防ぎアプリケーション全体でエラーの伝播を適切に処理するため、QgsDistanceArea メソッド内でエラーが発生した際に QgsCsException が発生するようになりました。
 

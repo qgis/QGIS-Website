@@ -12,7 +12,7 @@ type: visual-changelog
 # Elenco cambiamenti per QGIS 3.24{#changelog324 }
 ![image1](images/projects/dce49bc182a307d8b4d60cfa0ba8caede109cf69.png)
 
-Release date: 2022-02-18
+Data di rilascio: 2022-02-18
 
 In Memorium: This release is named \'Tisler\' after a small Norwegian island that was a favourite visiting place of Håvard Tveite who passed away in May 2021. Håvard was a very active member of the QGIS community, providing valuable input to the documentation, developing numerous plugins, and taking care of the QGIS Resources Sharing Repository to name just a few of his contributions. The map on the QGIS 3.24 splash screen is an orienteering map that Håvard has created. He liked spending some time each year map-making at Tisler.
 
@@ -35,7 +35,7 @@ Questo è un comodo risparmio di tempo! Il widget dell'estensione in QGIS ora ti
 
 ![image3](images/entries/2dc42086879501e4645c8f6b7bbaba0f90fa4164.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Funzionalità: Creazione più facile di sistemi di riferimento di coordinate personalizzati
 We\'ve added a new option when selecting a Coordinate Reference System (CRS) which allows you to just directly enter a custom CRS definition (from proj or WKT strings), instead of requiring you to specifically add these custom CRS to the projection database first.
 
@@ -43,7 +43,7 @@ It\'s much friendlier when you just want to define a custom projection for a sin
 
 ![image4](images/entries/c0053c5fd55a77bc13f8e92bbf9d27ecd57535e4.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Simbologia
 ### Feature: Marker/hash line: offsets along line by \"percent\" of line length (and negative offsets!)
 È ora possibile specificare lo *offset lungo la linea* in percentuale per entrambi i tipi di simbolo di linea marker e hash. (Questi offset sono trattati come percentuali della lunghezza totale della linea).
@@ -54,17 +54,17 @@ Infine, abbiamo anche reso possibile specificare un *offset negativo lungo la li
 
 ![image5](images/entries/78402d91402744c434c0501a4fa078b686f31251.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Controllo se i posizionamenti del primo/ultimo vertice si applicano a ogni parte delle geometrie multiparte
 Questa nuova opzione di simbologia per i tipi di simboli Marker e Hash line permette di controllare se le opzioni di posizionamento del primo e dell'ultimo vertice devono essere applicate ad ogni parte di una linea (o poligono) in più parti individualmente, o solo al primo e all'ultimo vertice nell'intera geometria in più parti.
 
 ![image6](images/entries/49ea4f5c6e67426b41fefcdcb38cb3625e03bd34.gif)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Marker/hash line \"on vertices\" placement option replaced by \"on inner vertices\"
 La nuova modalità *Su Vertici Interni* pone i simboli solo su tutti i vertici **interni** (cioè tutti i vertici tranne il primo o l'ultimo).
 
@@ -76,13 +76,13 @@ Previously, the old \"Vertex\" mode put symbols on the first and last vertex as 
 
 Questa funzionalità è stata finanziata da North Road, grazie a SLYR
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Le opzioni di posizionamento nei livelli dei simboli dei marcatori e delle linee di hash sono ora caselle di controllo invece di pulsanti che si escludono a vicenda
 Questo miglioramento rende notevolmente più facile creare linee di marcatori (o hash) con i marcatori sia sul primo **e** ultimo vertice (fra le altre combinazioni utili!)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: controllo del modello di colore usato quando si interpolano le rampe del gradiente
 Quando si esegue il rendering di una rampa di gradiente, alcune combinazioni di colori del gradiente causeranno il passaggio della rampa attraverso mezzitoni grigi se l'interpolazione viene eseguita utilizzando i canali rosso/verde/blu in modo indipendente. Un approccio alternativo è invece quello di interpolare i colori attraverso i loro canali hue/saturation/lightness o value. Questo approccio può evitare questi toni medi desaturati, risultando in gradienti visivamente più piacevoli.
 
@@ -90,25 +90,25 @@ We now allow the color specifcation to be set per stop in a multi-stop color gra
 
 This [video](https://user-images.githubusercontent.com/1829991/140872101-b6d7dd66-3595-4584-8e1a-0a384f5ec82d.mp4) shows the difference in mid-tones of a color ramp, where the RGB interpolation results in murky colors, while the HSL/HSV interpolation remains nice and vibrant.
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Miniature ridimensionabili nella finestra di dialogo del gestore di stili
 We\'ve added a new slider to control the size of thumbnails shown in the style manager dialog, because sometimes these thumbnail sizes are just too small to get a good representation of a symbol!
 
 ![image8](images/entries/48ee80e3b2307562c724664ce3d59fa8ac7cf477.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: \"Lineburst\" symbols
 We\'ve added a brand new \"Lineburst\" symbol layer type, which renders a gradient along the **width** of a line (as opposed to the Interpolated Line renderer, which renders a gradient along the **length** of a line). It\'s just like the Shapeburst fill symbol type, but for lines!
 
 ![image9](images/entries/e205aa8113a089b9911726a45b0c198e79af0b6b.webp)
 
-This feature was funded by [North Road, thanks to SLYR!](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR!](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: \"Raster Line\" symbols
 We\'re super-excited to bring you this brand new line symbol type, which allows you to render a raster image following a line feature\'s shape. This symbol type opens a whole new realm of possibilities for QGIS symbology, and is especially useful when creating maps in a hand drawn or painted style.
 
@@ -120,9 +120,9 @@ Sono disponibili opzioni per il controllo:
 
 ![image10](images/entries/fa66229ff4db5e654b673579cde7d58dff4cc85d.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Scelta del comportamento di ritaglio per i riempimenti del modello di linea
 È ora possibile controllare come le linee in un simbolo di riempimento del modello di linea sono ritagliate nelle forme poligonali. Le opzioni disponibili includono:
 - **Taglio solo durante il rendering**: le linee vengono create coprendo l'intero *riquadro di delimitazione* della feature che viene poi ritagliata durante il disegno. Le estremità della linea (inizio e fine) non saranno visibili (questo è lo stesso comportamento delle vecchie versioni di QGIS).
@@ -131,9 +131,9 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 ![image11](images/entries/d6195c4a0b58fd7a1f076e7d74dc82d85f453fcc.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Migliorato il rendering dei riempimenti con motivi di linee
 Quando si esporta in un formato vettoriale (ad esempio PDF o SVG) o quando un sottosimbolo di linea ha proprietà dinamiche (definite dai dati), ora si passa automaticamente ad un approccio basato sulla linea per linea per renderizzare il riempimento. (In precedenza, veniva sempre utilizzato un approccio basato su un pattern a piastrelle, che spesso causava artefatti indesiderati e cuciture visibili nel pattern).
 
@@ -150,17 +150,17 @@ E, cosa ancora più eccitante, apre la porta a una serie di nuovi stili di simbo
 
 ![image12](images/entries/ddab2e2d054c9535c86e7a94c2045e9ffa2b0b48.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Angolo di rotazione per i riempimenti con pattern di punti
 Ora puoi specificare un angolo di rotazione opzionale per i riempimenti del motivo a punti, che fa sì che l'intero motivo a punti sia angolato. Questo può essere estremamente utile quando si sovrappongono più riempimenti di pattern di punti!
 
 ![image13](images/entries/f43cb7d8a69d6765a0873888cbe6cc7f17bb8c51.gif)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Randomized point offsets for point pattern fills
 This (optional) setting allows each point in a point pattern fill to be randomly shifted up to the specified maximum distance in the x or y direction. You can specify the maximum offset in millimeters, points, map units, or even \"percentage\" units (where percentage is relative to the pattern width or height).
 
@@ -170,9 +170,9 @@ The main difference between this new setting and the existing *random marker fil
 
 ![image14](images/entries/1ccd4651fd333335c687c1195322df4b49f59b6f.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Impostazione della modalità di riferimento delle coordinate per i livelli di riempimento dei simboli del modello a linee e del modello a punti
 I livelli dei simboli di riempimento dei modelli di linee e dei modelli di punti hanno una nuova impostazione della modalità di riferimento delle coordinate per regolare l'ancoraggio dei modelli. In pratica, questo permette ai motivi di allinearsi bene attraverso elementi adiacenti e sovrapposti.
 
@@ -180,7 +180,7 @@ I livelli dei simboli di riempimento dei modelli di linee e dei modelli di punti
 
 ![image16](images/entries/afd8b9d9b32f494472a3787323764d9266f6f6ff.gif)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Funzionalità: Controllo del ritaglio del marcatore per i riempimenti del modello a punti
 Questa nuova opzione vi dà il controllo su come i marcatori sono ritagliati in un riempimento con motivo a punti. Le opzioni disponibili includono:
 - **Clip to shape**: markers will be clipped by the boundary of the shape, so \"cut off\" markers may be visible (same behaviour as previous QGIS versions)
@@ -190,9 +190,9 @@ Questa nuova opzione vi dà il controllo su come i marcatori sono ritagliati in 
 
 ![image17](images/entries/4fcff106088f49e8828b8dfcbaa0867c7735aa71.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Funzioni di espressione per creare onde triangolari/quadrate/curve
 We\'ve added some new expression functions which produce \"wavy lines\" along geometry boundaries. Multiple wave shapes are available, including:
 - Onda (sinusoidale)
@@ -205,18 +205,18 @@ Se utilizzate con i generatori di geometria, queste espressioni possono essere u
 
 ![image18](images/entries/fc0f7dd38a16926620e0d1d62cce022b9d2618e5.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Etichettatura
 ### Feature: \"Percentage\" units for text buffer size, shadow offset and blur radius
 Ora permettiamo che le dimensioni del buffer di testo, dell'offset dell'ombra e del raggio di sfocatura dell'ombra siano impostate come percentuale della dimensione del carattere. Questo è auspicabile in quanto permette la creazione di formati di testo in cui i componenti scalano piacevolmente quando la dimensione del testo viene modificata, invece di avere dimensioni fisse di buffer/ombra che devono essere regolate indipendentemente quando la dimensione del testo cambia.
 
 ![image19](images/entries/4e05a38133304694f05b0c70e73750436581f3ef.gif)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Posizioni delle etichette definite da geometrie di punti
 È ora possibile impostare il posizionamento definito dai dati delle etichette in modo che sia legato a un campo di una geometria punto o ad una espressione. (Le versioni precedenti di QGIS permettevano solo di impostare il posizionamento definito dai dati tramite due campi numerici x e y separati).
 
@@ -226,15 +226,15 @@ Questo cambiamento vi permette anche di usare lo strumento *Sposta Etichetta* pe
 
 Questa funzionalità è stata finanziata dal gruppo di utenti svizzeri di QGIS
 
-This feature was developed by [Damiano Lombardi](http://OPENGIS.ch)
+Questa funzionalità è stata sviluppata da [Damiano Lombardi](http://OPENGIS.ch)
 ### Funzionalità: Testo allungato per etichette e formati testo
 This improvement allows your text to be horizontally stretched or condensed by a percentage factor. It\'s often handy for tweaking the widths of fonts to fit a bit of extra text into labels (when used sparingly, that is\... you can certainly abuse font stretching with some horrendous results!)
 
 **Note:** This improvement requires Qt 6.3+ or KDE\'s 5.15 fork. (On other builds the stretch options are hidden and can\'t be set)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Visualizzazione
 ### Funzionalità: Visualizzazione dei livelli come gruppi
 Questo è un altro eccitante miglioramento cartografico che apre una nuova arena di simbologia e visualizzazione di mappe in QGIS!
@@ -249,36 +249,36 @@ Additionally, when a layer is contained in a group which has the new *Render as 
 
 Questa funzionalità è stata finanziata da Andrew Fletcher.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Support for \"Line pattern\" when converting Mapbox GL vector tile layer styles
 Facendo uso del nuovissimo strato di simbolo di linea raster, QGIS 3.24 ora visualizza correttamente lo stile del pattern di linea Mapbox GL per gli strati di piastrelle vettoriali appena aggiunti.
 
 ![image22](images/entries/8a1550b27e8d8252b4b79267b0cef1c72ff10659.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Funzionalità: Supporto degli stili di sfondo per i livelli di tile vettoriali in stile Mapbox GL
 Ora visualizziamo correttamente qualsiasi stile di sfondo predefinito presente nei livelli di tiles vettoriali con stile Mapbox GL. Questo migliora notevolmente l'aspetto dei livelli di tiles vettoriali con stili scuri!
 
 ![image23](images/entries/38d362b08812fcb3d9129f2f8881d3bf02e77703.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ## Funzionalità 3D
 ### Funzionalità: Rispetta l'ordine Z durante la visualizzazione delle nuvole di punti in 2D
 We\'ve added an option to render point clouds according to their Z-order in 2D map views. With the new *bottom-to-top* ordering option enabled, points with larger Z values will cover lower points \-- resulting in the appearance of a true orthographic photo. There\'s also an option for reverse sorting (*top-to-bottom*), where the scene appears as if viewed from below.
 
 ![image24](images/entries/7edd9bfb77f56b17d2c74c43a8ca1a8ab7456298.webp)
 
-This feature was funded by [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
+Questa funzionalità è stata finanziata da [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
 
-This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Funzionalità: Visualizzazioni 3D Agganciate/Sganciate
 We\'ve been aware that using dock widgets for 3D maps can be inconvenient, and in many situations these are frustrating to resize and move as they are prone to re-dock as you adjust their sizes! With QGIS 3.24 we added the ability to switch 3D maps from a dockable widget to a top-level window (and back to a dock widget), so that these map views can now be managed, resized and moved just like a standard application window.
 
 ![image25](images/entries/0ee88178c41fb6f57e0cc9ebe92256c58cfd9f55.gif)
 
-This feature was funded by [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
+Questa funzionalità è stata finanziata da [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
 
-This feature was developed by [Nedjima Belgacem (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Nedjima Belgacem (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Funzionalità: Gestore della vista della mappa 3D
 Previously, if you closed a 3D map view and then saved your project, the 3D map view and all its settings would be lost when you reopen that project. So in QGIS 3.24 we\'ve added a \"*3D map view manager\"* that takes care of listing, removing, renaming and duplicating 3D map views in your projects!
 
@@ -286,9 +286,9 @@ We\'ve also added a new \"*3D Map Views*\" menu, which contains all your created
 
 ![image26](images/entries/4a38d45cc87a5068e3729f2d0091067178975164.webp)
 
-This feature was funded by [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
+Questa funzionalità è stata finanziata da [Crowdfunding: Enhancing elevation data and point clouds in QGIS](https://www.lutraconsulting.co.uk/crowdfunding/elevation-pointcloud-enhancements-qgis/)
 
-This feature was developed by [Nedjima Belgacem (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Nedjima Belgacem (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ### Funzionalità: Navigazione della telecamera migliorata
 The default navigation mode in earlier versions of QGIS would sometimes behave strangely when moving around, rotating or zooming in/out. A lot of effort went into improvements of the camera control, so since QGIS 3.24 the camera navigation\'s behavior should feel more natural and similar to other 3D mapping software.
 
@@ -296,25 +296,25 @@ For more details, see [Fixing terrain and camera issues in 3D](https://github.co
 
 Questa funzione è stata finanziata dalla sovvenzione di QGIS.org (2021)
 
-This feature was developed by [Nedjima Belgacem (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Nedjima Belgacem (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
 ## Layout di stampe
 ### Funzionalità: Capacità complete di rendering del testo per le etichette di testo del layout
 Nelle vecchie versioni di QGIS si doveva ricorrere a trucchi come l'uso di HTML e CSS per aggiungere effetti come le ombre al testo nei layout delle mappe. Niente più hack! Nella 3.24 ora vi permettiamo di usare le familiari proprietà delle opzioni di etichettatura del testo anche per il testo nei layout! Questo significa che ora puoi aggiungere ombre, buffer di testo, sfondi, spaziatura di lettere e parole, ecc. agli elementi di testo nei tuoi layout.
 
 ![image27](images/entries/42e4f30b9e1adc647a7b7ef774186d8b90374a9f.gif)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Espressioni
 ### Feature: geometry_type function
 The new `geometry_type` function returns the high-level type of a geometry (i.e. \'Point\', \'Line\' or \'Polygon\').
 
 ![image28](images/entries/503ad2cbcbf9b3ac0b46a624fe4d501dbf2db89d.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: Sovrapposizione di intersezioni ordinate per dimensione dell'intersezione
 We have added further enhancements to the `overlay_intersects` function. The change adds two new optional arguments to the existing function:
 - **return_details**: only valid when used with an expression, set this to true to return a list of maps containing (key names in quotes) the feature \'id\', the expression \'result\' and the \'overlap\' value, the \'radius\' of the maximum inscribed circle is also returned when the target layer is a polygon.
@@ -322,9 +322,9 @@ We have added further enhancements to the `overlay_intersects` function. The cha
 
 ![image29](images/entries/74ef8569e9142ace7235302fd562a6729821ee7e.webp)
 
-This feature was funded by [Kanton Solothurn, Amt für Geoinformation](https://geo.so.ch/)
+Questa funzionalità è stata finanziata da [Kanton Solothurn, Amt für Geoinformation](https://geo.so.ch/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Funzionalità: Mostra tutti i nomi dei campi del livello quando si costruiscono le espressioni
 As a handy time-saver, we now make a list of all field names from all layers in your project available directly in the expression builder. If you double-click any of these field names, they\'ll be added to your expression as string values (`'field_name'`).
 
@@ -332,7 +332,7 @@ As a handy time-saver, we now make a list of all field names from all layers in 
 
 Questa funzione è stata finanziata da ARPA Piemonte
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: represent_attributes function
 Questa nuova funzione restituisce una mappa con tutti i nomi degli attributi (campi) come chiavi e i valori di rappresentazione configurati come valori. Il valore di rappresentazione per gli attributi dipende dal tipo di widget configurato per ogni attributo.
 
@@ -345,7 +345,7 @@ The function can be used with zero, one, or more arguments:
 
 Questa funzione è stata finanziata da Kanton Solothurn
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Optional minimum overlap area and circle radius for overlay_intersection
 We have added two optional arguments to the `overlay_intersection()` expression function:
 - `min_overlap`: for polygons an optional minimum area in current feature squared units for the intersection (if the intersection results in multiple polygons the intersection will be returned if at least one of the polygons has an area greater or equal to the value), for lines an optional minimum length in current feature units (if the intersection results in multiple lines the intersection will be returned if at least one of the lines has a length greater or equal to the value)
@@ -355,7 +355,7 @@ We have added two optional arguments to the `overlay_intersection()` expression 
 
 Questa funzione è stata finanziata da Kanton Solothurn
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: map_prefix_keys function
 In QGIS 3.24 we\'ve added a new `map_prefix_keys` function that takes a map and a prefix, the function returns a map with all keys prefixed by the prefix.
 
@@ -367,21 +367,21 @@ returns: `{ 'prefix-1': 'one', 'prefix-2': 'two' }`
 
 Questa funzione è stata finanziata da Kanton Solothurn
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: densify_by_count and densify_by_distance functions
 Questa funzionalità, che prima era disponibile solo attraverso la casella degli strumenti di Processing, è ora disponibile per l'uso nelle espressioni!
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Rotate parts of multi-part geometries independently with \"rotate\" expression function
 The new \"per_part\" option for the \"rotate\" expression function allows you to rotate each part of a multi-part geometry around the center of each part (instead of the center of the geometry as a whole). This enhancement is designed to help out symbology when the rotate function is used as a cartographic tool as part of a geometry generator symbol layer.
 
 ![image34](images/entries/c70899168f010b55fedad4b28e90aab687158a80.gif)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: apply_dash_pattern function
 This exciting new expression function applies a dash pattern to a geometry, returning a MultiLineString geometry which is the input geometry stroked along each line (or ring) using a dashed line pattern.
 
@@ -391,30 +391,30 @@ You can also set an optional pattern offset to specify how far along the pattern
 
 ![image35](images/entries/ba54e83091593860e9e61425565b085ad082f5ff.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Funzionalità: funzione di scala
 This new expression function allows you to scale (resize) a geometry. Just like the \'rotate\' function, the function accepts an optional point position to apply the scaling from. If no anchor point is not specified then scaling is done from the center of the geometry\'s bounding box.
 
 ![image36](images/entries/6dd5dd5783c501d294a289cfbdabf9ce58b4c481.webp)
 
-This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Filter by multiple attributes for get_feature function
 We extended the `get_feature` function to allow multi-attribute filtering, by adding an option to pass an array of filter values to the input.
 
-This feature was developed by [Alex](https://github.com/roya0045)
+Questa funzionalità è stata sviluppata da [Alex](https://github.com/roya0045)
 ## Gestione Dati
 ### Feature: Multiedit support for relation editor
 We\'ve added a new multi edit mode for the relation editor, which allows the rapid addition of child features to multiple parent features. This improves efficiency for data management operations, such as the ability to select multiple trees and adding a maintenance item to all of them in one click.
 
 ![image37](images/entries/c610c679ea1906d12ca9d4893e60796fd8a3ecab.gif)
 
-This feature was funded by [QGIS Model Baker](https://opengisch.github.io/QgisModelBaker)
+Questa funzionalità è stata finanziata da [QGIS Model Baker](https://opengisch.github.io/QgisModelBaker)
 
-This feature was developed by [Damiano Lombardi, OPENGIS.ch](https://github.com/domi4484)
+Questa funzionalità è stata sviluppata da [Damiano Lombardi, OPENGIS.ch](https://github.com/domi4484)
 ## Metadati e Metaricerca
 ### Feature: Support for OGC API - Records in MetaSearch
 We updated the MetaSearch tool to provide support for the [OGC API - Records](https://ogcapi.ogc.org/records) (OARec) standard. As part of the OGC API evolution, OGC API - Records is the successor to OGC:CSW (like OGC API - Features is to WFS, etc.).
@@ -425,7 +425,7 @@ Adding this feature to QGIS is a huge win for easier search and will help both u
 
 ![image38](images/entries/5422b5fd0f6fce0bff486b0268a425f7498b1efc.webp)
 
-This feature was developed by [Tom Kralidis](https://github.com/tomkralidis)
+Questa funzionalità è stata sviluppata da [Tom Kralidis](https://github.com/tomkralidis)
 ## Moduli e Widget
 ### Feature: Form submit actions with HTTP POST
 In QGIS 3.24 we added two new HTTP POST actions, similar to the existing `Open` action which uses an HTTP GET request.
@@ -444,7 +444,7 @@ The response from the submitted URL is opened by delegating to the operating sys
 
 Questa funzione è stata finanziata da Kanton Solothurn
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: New button to open attribute table on filtered features
 We\'ve added a new button to the attribute form (when in search mode) which enables you to open an attribute table filtered to only show the matching features.
 
@@ -452,7 +452,7 @@ We\'ve added a new button to the attribute form (when in search mode) which enab
 
 Questa funzione è stata finanziata da ARPA Piemonte
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ## Analysis Tools
 ### Feature: Add roundness method to curve polygon
 We added a \"roundness\" method to `QgsCurvePolygon`, allowing the calculation of the \"roundness\" of an area feature based on the formula `Roundness = (4 * pi * Area) / Perimeter^2`.
@@ -461,7 +461,7 @@ This includes the addition of a new expression and a processing tool for calcula
 
 ![image41](images/entries/0ebc31c2437a3f5595257edd778d3f2fcbca9486.webp)
 
-This feature was developed by [Antoine Facchini](https://github.com/Koyaani)
+Questa funzionalità è stata sviluppata da [Antoine Facchini](https://github.com/Koyaani)
 ## Processing
 ### Feature: Extract labels algorithm
 For 3.24 we added a new tool to QGIS\' processing toolbox: \"Extract labels\". As its name hints at, this algorithm extracts label information from a rendered map at a specific extent and scale.
@@ -474,21 +474,21 @@ If a map theme is specified when extracting labels, the exported labels will mat
 
 ![image42](images/entries/b2149ac307c233bac0cfcb25166a573c8d55d200.webp)
 
-This feature was funded by [TEKSI](https://www.teksi.ch/)
+Questa funzionalità è stata finanziata da [TEKSI](https://www.teksi.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Optional output extent parameter for the GDAL Raster Calculator algorithm
 When running against GDAL 3.3 or newer, QGIS processing toolbox\'s GDAL Raster Calculator algorithm now allows you to specify an optional \"output extent\" parameter. This can be quite useful when working with large datasets, often avoiding the need to create an intermediary clipped raster prior to running the calculator algorithm.
 
 ![image43](images/entries/7ebbfa145decc6a81678410d53e4d96709d6b2c7.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Optional extent parameter for the GDAL clip raster by mask algorithm
 We added an optional extent parameter to the GDAL \"clip raster by mask\" algorithm, which can come in handy when working with large raster datasets.
 
 ![image44](images/entries/08731bc9d93110cb048f5ac8c9256c9b7556694d.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Processing history rework
 QGIS 3.24 includes a partial implementation of the framework described in [QEP 130](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/130), and ports the Processing history log over to this framework.
 
@@ -502,9 +502,9 @@ We\'ll be using this framework in future to further extend the Processing histor
 
 ![image45](images/entries/d20797cd802b8ecea77a8e1e1d96bf5fcc075f86.webp)
 
-This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
+Questa funzionalità è stata finanziata da the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Advanced actions in Processing dialogs
 We have added new actions on the processing dialog including **copy as qgis_process command**, and **copy/paste as JSON**. Together these actions:
 - Allows for easy copying of the equivalent PyQGIS command to run the tool using the parameters defined in the dialog
@@ -514,15 +514,15 @@ We have added new actions on the processing dialog including **copy as qgis_proc
 
 ![image46](images/entries/d372e3463624cffbf522dd16d72d17570a7c511b.webp)
 
-This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
+Questa funzionalità è stata finanziata da the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Single file exports from Atlas to PDF algorithm
 You can now export an atlas layout to a single (collated) PDF file using the \"Export atlas layout as PDF\" processing algorithm.
 
 ![image47](images/entries/ced24ad63c3ff2bf6d47b975a965e6a0b9b28466.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Project Models are shown in the Project menu
 We added a new submenu to the \"Project\" menu, which will list any Processing models stored within the current project. This gives you a quick way to launch these project-specific models, in either a single or batch mode!
 
@@ -530,14 +530,14 @@ We added a new submenu to the \"Project\" menu, which will list any Processing m
 
 Questa funzione è stata finanziata da Kanton Solothurn
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Add point cloud destination parameter and output to Processing
 We have extended and improved point cloud support in Processing, namely by:
 - Fixing the filtering of point cloud layers in `QgsProcessingMapLayerComboBox`-based widget used for parameters
 - Adding a destination point cloud parameter type and point cloud output types with corresponding widgets. (Currently these are useful for 3rd party providers and plugins which create point cloud outputs.)
 - Exposing the newly added point cloud output and destination parameters to the `algfactory` wrapper
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Questa funzionalità è stata sviluppata da [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Array field support
 In QGIS 3.24, we\'ve made array field types first-class citizen in the Processing toolbox! The following algorithms have all been updated to support array fields:
 - Refactor algorithm;
@@ -546,16 +546,16 @@ In QGIS 3.24, we\'ve made array field types first-class citizen in the Processin
 - Field calculator algorithm; and
 - Advanced (i.e. python) field calculator algorithm
 
-This feature was funded by [SwissTierras Colombia](https://www.swisstierrascolombia.com/)
+Questa funzionalità è stata finanziata da [SwissTierras Colombia](https://www.swisstierrascolombia.com/)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ## Applicazioni e Opzioni del progetto
 ### Feature: qgis_process \--no-python argument
 This new, optional command line parameter for the qgis_process command-line tool allows you to skip launching Processing with Python support when it is not required. This can result in a significant improvement in qgis_process startup times!
 
-This feature was funded by [North Road](https://north-road.com)
+Questa funzionalità è stata finanziata da [North Road](https://north-road.com)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Suppress \"bad layers\" handler on startup
 We\'ve added support for a new command line flag for the `qgis` executable, which allows you to disable the default dialog which shows when opening a project with missing/broken layers:
 
@@ -569,7 +569,7 @@ Questa funzione è stata suggerita da Giuseppe Baiamonte durante il QGIS Open Da
 
 ![image49](images/entries/3b60790eb1b2f970940e9280d3eccee6a6f2b8f9.webp)
 
-This feature was developed by [Tim Sutton](https://github.com/timlinux)
+Questa funzionalità è stata sviluppata da [Tim Sutton](https://github.com/timlinux)
 ### Feature: Parameter values for qgis_process can be specified as a JSON object via stdin
 We now provide a mechanism to support complex input parameters for algorithms when running the qgis_process command line tool.
 
@@ -597,36 +597,36 @@ Additionally, extra settings like the distance units, area units, ellipsoid and 
 
 One big motivation behind this enhancement is to provide a way for the qgis_process R libraries to support parameter types such as aggregates!
 
-This feature was funded by the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
+Questa funzionalità è stata finanziata da the [Research Institute for Nature and Forest](https://www.inbo.be/en), Flemish Govt
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Run Python script algorithms directly via qgis_process
 The qgis_process command-line tool now supports running a Python script algorithm directly by specifying the path to the .py file, in place of an algorithm ID or model file path!
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Sorgenti Dati
 ### Feature: Friendlier errors from XYZ raster tiles, WMS and vector tiles
 Server errors which occur during XYZ, vector tile or WMS network requests are now shown directly in the QGIS window via the message bar. We\'ve made these error messages much more descriptive and helpful, by including the original response error text wherever possible!
 
 ![image50](images/entries/006a532d89422cfe5ddb6638ae635384e4f8b8f2.gif)
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+Questa funzionalità è stata finanziata da [MapTiler](https://www.maptiler.com/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
 ### Feature: Add out-of-the-box connection to Mapzen Global Terrain tiles
 QGIS now sports built-in support for the Terrarium DEM format for WMS/XYZ layers. In addition, we now have out-of-the-box ability to add Mapzen Global Terrain Tiles hosted on AWS. You can find the new MapZen option in the XYZ section of the browser panel. Users now have an immediately accessible global DEM source for their projects!! See also <https://registry.opendata.aws/terrain-tiles/>
 
 ![image51](images/entries/68cfde8b146eb42d4e75fd089adb2fbe8e7e5012.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: HMAC SHA256 auth method for MapTiler
 We\'ve added a new authentication method specific for MapTiler which allows you to use a token encrypted with HMAC-SHA256.
 
 ![image52](images/entries/3f4f8ef8eef605c25bf84e0e86420c6493e02729.webp)
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+Questa funzionalità è stata finanziata da [MapTiler](https://www.maptiler.com/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
 ### Feature: Template parameter {usage} for XYZ raster and vector tiles
 For XYZ tile-based raster layers and for vector tile layers, we now allow the possibility to insert {usage} template parameters (in addition to {x}, {y}, {z}). If present, this parameter will be replaced by the context in which the request is being made.
 
@@ -637,9 +637,9 @@ The possible context values are:
 
 This functionality is useful for MapTiler clients, where they need to recognize the context in which tiles are used in order to bill users accordingly.
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+Questa funzionalità è stata finanziata da [MapTiler](https://www.maptiler.com/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
 ### Feature: Convert WMTS/XYZ raster tiles to terrain (DEM)
 In QGIS 3.24 we\'ve introduced the possibility to convert WMTS/XYZ raster datasets to a raster layer of single band float type following a predefined encoding scheme.
 
@@ -649,21 +649,21 @@ The selected converter will translate the RGB source values to float values for 
 
 ![image53](images/entries/6010ce9b5ad8a9d4bc3130b537c74a567be6df23.webp)
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+Questa funzionalità è stata finanziata da [MapTiler](https://www.maptiler.com/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
 ### Feature: Array field types for scratch layers
 You can now add array field types directly to newly created scratch layers. (While array field types have previously been supported by scratch layers, there was no way for users to add them when creating a new scratch layer.)
 
 ![image54](images/entries/57bd4059d12ad5ef94acb42989824a746de92582.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: JSON field types for new GeoPackage layers
 We\'ve added support for creating JSON fields directly to newly created GeoPackage layers. (While JSON field types have previously been supported by GeoPackage layers, there was no way for users to add them when creating a new layer.)
 
 ![image55](images/entries/a96a3edb24bb7e7132fdb353b77ea1a1c98ed9ef.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Delimited text type overrides and other improvements
 We\'ve given some love to the delimited text data provider in 3.24, with several enhancements which include:
 
@@ -691,9 +691,9 @@ CoordX, CoordY, Point(X/Y), WKT are now recognized as specified in <https://gisw
 
 ![image56](images/entries/998275eaa241752a63c889c4c428948f6702d7ed.webp)
 
-This feature was funded by Stadt Freiburg im Breisgau
+Questa funzionalità è stata finanziata da Stadt Freiburg im Breisgau
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: New authentication method for HTTP header based authentication
 A new authentication method is available for network requests which that supports user defined HTTP header authentication. Multiple custom headers can be included in these requests.
 
@@ -701,7 +701,7 @@ This is useful in various scenarios, such as when a WMS requires an API key that
 
 ![image57](images/entries/72f6e13c97be1a5e3e4d3aafdee9eef6d77a5bfe.webp)
 
-This feature was developed by [Tom C](https://github.com/Cumminsc9)
+Questa funzionalità è stata sviluppata da [Tom C](https://github.com/Cumminsc9)
 ### Feature: Expose secondary PostGIS geometry columns as referenced geometries
 As discussed in [this issue](https://github.com/qgis/QGIS/pull/45007), we have added support for exposing additional geometry columns from the Postgres provider as QgsReferencedGeometry. This allows more efficient interaction with additional geometry columns through the API. For example, in label placement, the additional geometry column can be used instead of the feature geometry. The fields will be represented as `WKT [CRS User-Friendly Identifier]` in the attribute table.
 
@@ -729,9 +729,9 @@ This changes the behavior of existing projects.
 
 ![image58](images/entries/2f2169f6a9927916d3841b63333982a5417a3a0c.webp)
 
-This feature was funded by [OPENGIS.ch](https://www.opengis.ch)
+Questa funzionalità è stata finanziata da [OPENGIS.ch](https://www.opengis.ch)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://github.com/m-kuhn)
+Questa funzionalità è stata sviluppata da [Matthias Kuhn, OPENGIS.ch](https://github.com/m-kuhn)
 ## QGIS Server
 ### Feature: Allow better control of the response flow chain from server filters
 New filters allow control of the call chain by implementing new filter callbacks that allow returning a control value for stopping propagation. This allows for the better control of streamed data and response flow.
@@ -739,7 +739,7 @@ New filters allow control of the call chain by implementing new filter callbacks
 - Add new methods `bool QgsFilter::onRequestReady()`, `bool QgsFilter::onSendResponse()`, `bool QgsFilter::onResponseComplete()` which return boolean values for controlling data flow
 - Handle flow control in `QgsFilterResponseDecorator::flush()`
 
-This feature was developed by [David Marteau](https://github.com/dmarteau)
+Questa funzionalità è stata sviluppata da [David Marteau](https://github.com/dmarteau)
 ## Notable Fixes
 ### Bug fixes by Alessandro Pasotti
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |

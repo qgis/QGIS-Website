@@ -28,7 +28,7 @@ listLink = "https://qgis.dk/"
 icon = "🇩🇰  "
 layoutClass = "half"
 listTitle = "QGIS Brugergruppe Danmark (Denmark) "
-listSubtitle = "Contact: Jacob Arpe" >}}
+listSubtitle = "Contact: Mie Winstrup" >}}
 
 {{< rich-list
 listLink = "https://uk.osgeo.org/qgis.html"
@@ -335,6 +335,12 @@ layoutClass = "half"
 listTitle = "QGIS Armenia"
 listSubtitle = "Contact: Suren Poghosyan" >}}
 
+{{< rich-list
+listLink = "https://dz.qgis.org/"
+icon = "🇩🇿"
+layoutClass = "half"
+listTitle = "QGIS Algeria User Group"
+listSubtitle = "Contact: Walid Moulahoum" >}}
 
 ## Goals of a user group
 

@@ -12,7 +12,7 @@ type: visual-changelog
 # Changelog for QGIS 3.22{#changelog322 }
 ![image1](images/projects/badbeb89221e014ed31e7ea07919c9e734df39b2.png)
 
-Data Release: 2021-10-22
+Data di rilascio: 2021-10-22
 
 QGIS 3.22 Białowieża is aimed at celebrating the 100-year anniversary of [Białowieża National Park](https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_National_Park), Poland, which was established in 1921. [Białowieża Forest](https://en.wikipedia.org/wiki/Bia%C5%82owie%C5%BCa_Forest) is one of the world's last primary woodlands, located on the border between Poland and Belarus. It is one of the few natural old-growth forests in temperate lowland Europe and has been protected for over 600 years. The outstanding value of Białowieża Forest has been acknowledged by its recognition as a [UNESCO Natural World Heritage Site](https://whc.unesco.org/en/list/33).
 
@@ -38,7 +38,7 @@ Additional properties for annotation layers now include the following:
 - An option to view the main annotation layer\'s properties via the annotation toolbar (the main annotation layer is the hidden layer which is always present above all other map layers, so it\'s impossible to open it\'s property window via the layer tree)
 - Options to set an annotation layer\'s opacity/blend mode/paint effect in the layer styling dock for interactive changes
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Edit nodes in an annotation item
 The modify annotation tool can now be used to edit nodes in an annotation item by clicking over an existing node and moving it. The user interactions follow the standard QGIS patterns as follows:
 - Left click to start the move
@@ -49,9 +49,9 @@ The modify annotation tool can now be used to edit nodes in an annotation item b
 
 ![image2](images/entries/4510afc65b63bab4ab46e0408a6c4c4207aff40f.gif)
 
-This feature was funded by the Swiss QGIS user group.
+Questa funzionalità è stata finanziata da the Swiss QGIS user group.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Move selected annotation with cursor keys
 When an annotation item is selected it can be moved by pressing the cursor keys.
 
@@ -59,23 +59,23 @@ This functionality includes the ability to use keyboard shortcuts in a manner th
 - `shift + cursor`: Big movement
 - `alt + cursor`: 1px movement
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Create line/ polygon annotation item tools
 Functions for creating new line and polygon annotation items have been added to the annotation tools.
 
 These support the same interactions as drawing vector features, such as snapping, tracing, cad dock, backspace to remove vertices, curve and stream digitizing modes, and others.
 
-This feature was funded by QGIS Swiss User Group
+Questa funzionalità è stata finanziata da QGIS Swiss User Group
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: New point text tool
 A framework has been created for map tools to create new annotation items, including the ability to create new point text annotation items.
 
 ![image3](images/entries/4822b0a64c8a57a049ae15acb8c77a27709172d5.gif)
 
-This feature was funded by the Swiss QGIS user group
+Questa funzionalità è stata finanziata da the Swiss QGIS user group
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Annotations toolbar
 A new annotations toolbar has been added which provides actions for the following:
 - Create a new empty annotation layer in the current project.
@@ -86,23 +86,23 @@ The supported operations for the modify annotations feature include:
 - Left click on a selected annotation item to start moving it. A right click or escape cancels the move, while a second left click will confirm the move.
 - Pressing the delete key while an annotation is selected will delete that annotation
 
-This feature was funded by the Swiss QGIS User group
+Questa funzionalità è stata finanziata da the Swiss QGIS User group
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Strumenti mappa
 ### Feature: Add a \"measure bearing\" map tool
 This tool behaves similarly to the existing \"measure angle\" map tool, but requires the user only to click two points on the map and displays the bearing between these points.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Interfaccia Utente
 ### Feature: Toggle editing on multiple selected layers
 The *toggle editing* action has been modified to support activation on all selected layers, making it easy to start and stop editing sessions across multiple layers simultaneously. Although the editing session status for all selected layers may not be the same, all selected layers will be toggled to an active or inactive state as the inverse of the current state of the currently active layer. This functionality is applied to the menu item *Layer \> Toggle Editing*, the *Toggle Editing* button on the digitizing toolbar, and the *Toggle Editing* entry in the layers context menu.
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis](https://github.com/uclaros)
 ### Feature: Identify layer groups and all selected layers
 Whilst the identify features tool supported multiple selection modes, the \"current layer\" mode has been extended to support the selection of layer groups, and will identify features from all selected layers. Only features from visible layers within a layer group will be identified.
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis](https://github.com/uclaros)
 ### Feature: Add a \'Show in Files\' action for all file items in browser
 Opens a file explorer window and directly selects the file
 
@@ -110,7 +110,7 @@ Also fixes the existing \"File Properties\" action so that it shows regardless o
 
 ![image4](images/entries/f80090adb3c2f85fa81b5689741afd936f8d5439.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Simbologia
 ### Feature: Custom units for geometry generator symbol layers
 Geometry generators now expose an option for users to select which units should be used for returning geometries in, rather than only supporting the units defined in the layer CRS. This is especially useful in situations where the symbol is not associated with a layer, such as when used in layout items.
@@ -126,7 +126,7 @@ When millimeters, pixels, inches or points are selected, then the \@map_geometry
 
 ![image5](images/entries/d1c6b0c69cf9dd8247d1dc0e370d0182b550f48a.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Symbology reference scale for vector layers
 An option has been exposed that allows the configuration of reference scales for feature symbologies on vector layers.
 
@@ -136,13 +136,13 @@ For instance, where a line layer is configured to use a 2mm wide line using a re
 
 Questa funzionalità è stata finanziata da North Road, grazie a SLYR
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Invert colors filter option for raster rendering
 It is now possible to invert the colors of a raster being rendered via a new invert colors option. This can come in handy on a number of occasions. For example, a light raster base map can quickly be turned into a dark base map without the need to recreate a new raster dataset.
 
 ![image6](images/entries/0fc6bce9e9240b7e354b84d7477439798fd64a59.gif)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ## Etichettatura
 ### Feature: Specify unit for data defined label rotation
 Specify the angle unit for data defined label rotation
@@ -151,7 +151,7 @@ Specify the angle unit for data defined label rotation
 
 ![Peek 2021-08-29 14-38](images/entries/131250678-52360214-31a9-4cf9-ad84-b10a4f78c431.gif)
 
-This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
+Questa funzionalità è stata sviluppata da [Damiano Lombardi](https://github.com/domi4484)
 ## Mesh
 ### Feature: Create new mesh layer
 QGIS now supports the creation of new mesh layers.
@@ -163,9 +163,9 @@ The mesh creation supports the following creation formats:
 
 ![image9](images/entries/8ba4033bf4f8eea7e3776db420b34d6c51358859.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Mesh frame editing
 QGIS now supports mesh frame editing, which supports the ability to ensure mesh consistency and provides the ability to undo and redo edit operations.
 
@@ -173,9 +173,9 @@ This introduces the `QgsMeshEditor` class to the QGIS Python API, which allows f
 
 ![image10](images/entries/71bed70b1ced3fef5e3b8190cc613f3cb60f0fac.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Mesh frame editing lifecycle
 This feature has been introduced in the scope of [QEP 228](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/228) which outlines the introduction of Mesh Editing tools, implements changes to the User Interface, and exposes new functionality to the API.
 
@@ -183,9 +183,9 @@ Mesh frame editing now supports a complete set of functionalities for controllin
 
 ![image11](images/entries/9463f4559796ff4808fcd05d1ffbec3aa6d6bae4.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Edit mesh map tool
 This feature has been introduced in the scope of [QEP 228](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/228) which outlines the introduction of Mesh Editing tools.
 
@@ -200,9 +200,9 @@ Mesh editing map tool now supports the following operations:
 
 ![image12](images/entries/ce164b754aff6438bb6db52a4d5c2eb3e103af62.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Advanced mesh editing enhancements
 This feature has been introduced in the scope of [QEP 228](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/228) which outlines the introduction of Mesh Editing tools, implements changes to the User Interface, and exposes new functionality to the API.
 
@@ -218,9 +218,9 @@ Two advanced editing functions are implemented within this feature:
 
 ![image14](images/entries/a914bfb8a85bf2ab2232e8bfad6c3af3cdd751cb.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Select editable mesh elements by polygon
 Users can now select mesh elements within a digitized area when performing mesh editing. Each vertex of the polygon is digitized using a left click, whilst right clicking will complete and validate the polygon to select intersecting mesh elements (faces and vertices). Using the backspace key will allow the user to remove last vertex, and the Escape key will allow users to return to the normal digitizing mode.
 
@@ -230,9 +230,9 @@ This function supports two behavior modes with different selection predicates as
 
 ![image15](images/entries/6a687b260a4d3a41c432360336393ee2746997c8.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Select mesh elements by existing geometries
 Two actions have been added for selecting mesh elements from geometries present in existing vector layers.
 
@@ -240,17 +240,17 @@ After selecting vector layer geometries, the user can use these tools to select 
 
 ![image16](images/entries/4a918fc1feabd7e3c68282b1b6d052c8504d6013.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Select mesh elements by expression
 An interface has been created for selecting mesh elements by expression during mesh editing. In addition, a contextual expression function `$face_area` has been added that returns the area of a mesh face.
 
 ![image17](images/entries/141acf32014c3ce387ff61e39cabf3e04c6d3896.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Transform single vertex
 A new editing mode for the mesh transform tool allows the user to import the coordinates of a single selected vertex.
 
@@ -258,17 +258,17 @@ The tool button on the top right of the Transform Mesh Vertices window toggles t
 
 ![image18](images/entries/2148b3024a51a218bafafbbe26f74c30692222f6.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Reindex/ renumber mesh layer
 Users are now able to reindex (or renumber) the vertices and faces of a mesh layer during editing. The renumbering is an optimization of the mesh with the Cuthill-McKee algorithm.
 
 ![image19](images/entries/5da7e6705568488c08fbf7faaf311b2eca46c9da.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Force mesh by polylines
 When editing mesh features, users can now transform features by forcing them to conform to a surface defined by existing polylines, or break lines. Faces are forced to follow the break lines, that is, edges of encountered faces have to be on these lines. Users may select break line geometries and then use the dedicated button to transform intersecting mesh elements.
 
@@ -283,9 +283,9 @@ Whilst the term \"break lines\" is typically used to refer to polylines that con
 
 ![image21](images/entries/704c731583ce48d963fe9878177bc40639ae3078.webp)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Mesh transform by expression
 User can perform geometrical transformations on a mesh using an expression to change the vertices\' coordinates. All coordinates (X,Y,Z) of selected vertices can be calculated with an expression, allowing transformation of the mesh while the mesh is still valid.
 
@@ -297,16 +297,16 @@ Once applied, users have the option to undo or redo the operation.
 
 ![image22](images/entries/04937a2d9bba1e27712351f52e6b6f4d5fc0be4d.gif)
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ## Visualizzazione
 ### Feature: Allow using physical DPI for map canvas
 A new setting has been made available for correctly using the physical screen DPI instead of logical DPI, allowing symbols to be rendered equally on different attached devices (hi dpi and low dpi), and in mobile applications such as QField.
 
 This setting is disabled by default to ensure that symbols are not scaled differently than they were in previous versions of QGIS.
 
-This feature was developed by [Matthias Kuhn](https://github.com/m-kuhn)
+Questa funzionalità è stata sviluppata da [Matthias Kuhn](https://github.com/m-kuhn)
 ### Feature: Data defined raster layer opacity
 A new control has been exposed which allows the opacity of a raster to be data defined. This allows for the varied representation of a raster layer, in various contexts, such as on different pages of an atlas, being dependent on the visibility of another layer, or adjusted by temporal variables etc.
 
@@ -314,12 +314,12 @@ Additionally, a \"redraw layer only\" temporal mode for raster layers has been a
 
 ![image23](images/entries/881acd52afafba75698f1d7668794b80b594baef.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Layout di stampe
 ### Feature: Predefined scale support for point-driven atlases
 Layout map items gained support for the predefined scale mode when controlled by point-driven atlases. This ensures the correct behavior is observed when atlas features are multipoint geometries with varying envelope areas.
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Indentation of legend groups and subgroups
 Two new entries have been added to the \"Spacing\" section of the Legend properties:
 - Rientro degli elementi del gruppo
@@ -329,7 +329,7 @@ Items belonging to groups or subgroups will be shifted right by the specified am
 
 ![image24](images/entries/3792e9ae5124b81f1b4289cab220fdbb237851a8.webp)
 
-This feature was developed by [Jürnjakob Dugge](https://github.com/jdugge)
+Questa funzionalità è stata sviluppata da [Jürnjakob Dugge](https://github.com/jdugge)
 ## Espressioni
 ### Feature: Mesh expression functions for vertex_as_point and vertex_z
 Expressions have been added for interacting with mesh layers, with the following functions returning value related to the current vertex:
@@ -338,40 +338,40 @@ Expressions have been added for interacting with mesh layers, with the following
 
 These two functions are contextual and need to be added in a `QgsExpressionContext` with `QgsExpressionContextUtils::meshExpressionScope()` for the creation of a specific `QgsExpressionScope`.
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Expression function for \$z
 The z value for the current feature in an expression context can now be retrieved using `$z`
 
-This feature was funded by [Hydrotec](https://www.hydrotec.de/)
+Questa funzionalità è stata finanziata da [Hydrotec](https://www.hydrotec.de/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### Feature: Affine transform expression
 An affine_transform function has been added to QGIS Expressions.
 
-This feature was developed by [Antoine Facchini](https://github.com/Koyaani)
+Questa funzionalità è stata sviluppata da [Antoine Facchini](https://github.com/Koyaani)
 ### Feature: Straight distance2d expression
 A straight_distance2d function is now available in QGIS expressions for retrieving the direct/ Euclidean distance between the first and last vertex of a curve geometry feature.
 
-This feature was developed by [Antoine Facchini](https://github.com/Koyaani)
+Questa funzionalità è stata sviluppata da [Antoine Facchini](https://github.com/Koyaani)
 ### Feature: Add sinuosity expression
 A sinuosity function has been added to QGIS expressions.
 
-This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://github.com/lbartoletti)
 ### Feature: New exif() and exif_geotag() functions
 A new pair of functions was added to the QGIS expression engine to read exif tags from image files. The two functions are:
 - exif(path, tag) : this function returns the value of a given tag string for the provided image file path; when the second optional parameter isn\'t provided, the function will return a map object containing *all* exif tags and their values.
 - exif_geotag(path) : this function returns a point geometry from the exif geotags containing in the provided image file path.
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ## Digitalizzazione
 ### Feature: Geometry snapper algorithm optimization
 The geometry snapper is now blazingly fast after benefiting from another round of optimization work. Small snapping distance values hanging QGIS forever is now a thing of the past.
 
-This feature was funded by [SwissTierras Colombia](https://www.swisstierrascolombia.com/)
+Questa funzionalità è stata finanziata da [SwissTierras Colombia](https://www.swisstierrascolombia.com/)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Convert to curve with vertex tool
 The ability to convert vertices to or from curved vertices is now supported with the Vertex tool, allowing users to convert vertices with the \"C\" and \"O\" keys.
 
@@ -379,42 +379,42 @@ Additionally, methods for `convertVertex()` have been introduced for the `QgsGeo
 
 ![image25](images/entries/fcc006352c7b09e37d6d8511ecb7fe2ae6a8be50.gif)
 
-This feature was funded by [Swiss QGIS user group](https://qgis.ch/)
+Questa funzionalità è stata finanziata da [Swiss QGIS user group](https://qgis.ch/)
 
-This feature was developed by [Olivier Dalang](https://github.com/olivierdalang)
+Questa funzionalità è stata sviluppata da [Olivier Dalang](https://github.com/olivierdalang)
 ### Feature: Add Z/M support to Advanced Digitizing
 The QGIS Advanced Digitizing tools now support the entering of user-defined Z and M values, greatly improving the available control for newly digitized features such as components of 3D networks.
 
 ![image26](images/entries/287d041be909700393995e3018fba76f41e09a67.gif)
 
-This feature was funded by Métropole Européenne de Lille \@Jean-Roc
+Questa funzionalità è stata finanziata da Métropole Européenne de Lille \@Jean-Roc
 
-This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://github.com/lbartoletti)
 ## Gestione Dati
 ### Feature: Drag and Drop support for external storage file widget
 Users may now use Drag and Drop support on an external resource widget when an external storage has been defined and configured appropriately.
 
 ![image27](images/entries/038bb187a174a4c491f3f2db6ef03cec5b75e43d.gif)
 
-This feature was funded by [Lille Metropole](https://www.lillemetropole.fr/)
+Questa funzionalità è stata finanziata da [Lille Metropole](https://www.lillemetropole.fr/)
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Questa funzionalità è stata sviluppata da [Julien Cabieces](https://github.com/troopa81)
 ### Feature: File-based dataset size and last modified date in the layer properties dialog
 The layer properties dialog\'s information panel now shows the size and last modified date of file-based datasets, removing the need to retrieve these details from a file manager. These additional details are also visible in the browser panel\'s information section. For datasets formed of more than a single file, the size will reflect the sum of all the auxiliary/ sidecar files forming the dataset.
 
 ![image28](images/entries/10c72ab958bb1e7a59f8f81afb81d33780ed0834.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Rename files in QGIS Browser
 A rename action has been added to the manage submenu for files in the QGIS browser. If the renamed file corresponds to a spatial dataset with multiple auxiliary/ sidecar files, then these will be renamed accordingly.
 
 Additionally, users are warned if the file is a layer which exists in the current project and are asked whether they want to automatically update all the layer paths accordingly.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Move GPS tools \"add gpx layer\" functionality to Data Source Manager
 Functionality from the GPS tools plugin to add GPX layers has been moved to a new \"Add GPS Data\" page in the data source manager.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Load projects from GPKG using drag and drop
 Historically, when using drag and drop functionality with the GPKG format, only feature layers were represented to load into QGIS.
 
@@ -422,7 +422,7 @@ QGIS will now show projects embedded in a GPKG when the GPKG file is added to th
 
 ![image29](images/entries/3672e8bb8d50bf1593252343da8fd8ff78a46535.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: External Storage support
 QGIS now includes an External Storage API, in line with the proposal outlined in [QEP 196](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/196).
 
@@ -436,27 +436,27 @@ In addition, a widget has been added to allow for the configuration and visualiz
 
 ![image30](images/entries/c16663cabec529b113bb73919141bf50bf142c9e.gif)
 
-This feature was funded by [Lille Metropole](https://www.lillemetropole.fr/)
+Questa funzionalità è stata finanziata da [Lille Metropole](https://www.lillemetropole.fr/)
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Questa funzionalità è stata sviluppata da [Julien Cabieces](https://github.com/troopa81)
 ## Moduli e Widget
 ### Feature: Drag & Drop designer form actions
 Layer actions are now available in forms using the drag and drop designer
 
 ![image31](images/entries/d8af279071ac38fdc63fbd3980077155db39bd0f.gif)
 
-This feature was funded by [Kanton Solothurn, Amt für Geoinformation](https://geo.so.ch/)
+Questa funzionalità è stata finanziata da [Kanton Solothurn, Amt für Geoinformation](https://geo.so.ch/)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ## Legenda Layer
 ### Feature: Use placeholder icon in legend for raster layers
 A new feature has been added to allow the selection of a placeholder image which may be used in the legend item of a raster or vector layer. This is very useful in certain instances such as when using raster layers with QGIS server, preventing long lists of palleted values from GetLegendGraphic requests and instead returning a tailored result, among various other use cases.
 
 ![image32](images/entries/f06524b9f422ee1ced55d9d79b816cabc5ea212d.webp)
 
-This feature was funded by [Canton of Glarus](https://www.gl.ch/verwaltung/bau-und-umwelt/hochbau/raumentwicklung-und-geoinformation/geoportal-kanton-glarus.html/808)
+Questa funzionalità è stata finanziata da [Canton of Glarus](https://www.gl.ch/verwaltung/bau-und-umwelt/hochbau/raumentwicklung-und-geoinformation/geoportal-kanton-glarus.html/808)
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Questa funzionalità è stata sviluppata da [mhugent](https://github.com/mhugent)
 ## Analysis Tools
 ### Feature: Add if() function to raster calculator
 A long awaited feature has been for QGIS to support simple if() statements in the raster calculator.
@@ -467,7 +467,7 @@ The raster calculator will now support simple conditional statements with the co
 
 ![image33](images/entries/c5d6968380879133ddb31ab2d0f755d6d2048402.gif)
 
-This feature was developed by [Francesco Bursi](https://github.com/Franc-Brs)
+Questa funzionalità è stata sviluppata da [Francesco Bursi](https://github.com/Franc-Brs)
 ### Feature: Virtual raster support in raster calculator
 Virtual raster data provider support has been added to the QGIS raster calculator, which now allows users to perform raster calculator operations without specifying an output file or writing the resulting raster to disk.
 
@@ -477,12 +477,12 @@ Resulting raster layers may be used in further analysis operations and allow for
 
 ![image34](images/entries/844b2b463a26d035fe25d43d7221a24a570ac615.gif)
 
-This feature was developed by [Francesco Bursi](https://github.com/Franc-Brs)
+Questa funzionalità è stata sviluppata da [Francesco Bursi](https://github.com/Franc-Brs)
 ## Processing
 ### Feature: Annotation layer parameter type for processing
 An annotation layer parameter type has been added to the QGIS Processing Framework, which includes a new algorithm for converting main annotation layer items to secondary annotation layers. This is useful for moving items created in the main layer to a secondary layer, so that the item placement can be adjusted within the layer stack.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add a POST option to the FileDownloader processing algorithm
 Add a choice between performing GET or POST requests when downloading a file using the FileDownloader processing tool.
 
@@ -492,9 +492,9 @@ This is useful in many contexts, such as for sending longer requests to the Over
 
 ![image35](images/entries/89bee20177cb03e453300ae291ae879649e963ab.webp)
 
-This feature was funded by [3Liz](https://www.3liz.com)
+Questa funzionalità è stata finanziata da [3Liz](https://www.3liz.com)
 
-This feature was developed by [Étienne Trimaille](https://github.com/Gustry)
+Questa funzionalità è stata sviluppata da [Étienne Trimaille](https://github.com/Gustry)
 ### Feature: Add new \"Select within distance\" and \"Extract within distance\" algorithms
 New algorithms have been provided which allow users to select or extract features from one layer which are within a certain distance of features from another reference layer.
 
@@ -502,13 +502,13 @@ The distance checking is heavily optimized, using spatial indices to restrict th
 
 Additionally, the distance parameter may be a data-defined. property
 
-This feature was funded by QTIBIA Engineering
+Questa funzionalità è stata finanziata da QTIBIA Engineering
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Point cloud parameter for Processing
 A new point cloud parameter has been added to the QGIS Processing. Framework. this allows for the filtering of point cloud layers in the map layer and multiple layers parameters. This opens the door for native point cloud algorithms and improves point cloud support for 3rd party providers.
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Questa funzionalità è stata sviluppata da [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Remove the GPS importer plugin
 The last of the GPS tools functionality has been ported to three new processing algorithms, namely:
 - Converti dati GPS
@@ -517,23 +517,23 @@ The last of the GPS tools functionality has been ported to three new processing 
 
 As a result, the GPS importer plugin has been made redundant and has been completely removed from QGIS.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Convert GPX feature type processing algorithm
 The Convert GPX feature type tool has been ported from the GPS tools to a new processing algorithm, which uses the GPSBabel tool to convert GPX features from one type to another (e.g. converting all waypoint features to a route feature).
 
 It is designed as a drop-in replacement for workflows which previously used this functionality from the GPS tools plugin, but with all the benefits and improvements that come automatically from being a part of of the QGIS Processing Framework.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add incremental field with modulo option
 This algorithm allows the user to add a column with an integer that will be incremented from START to the limit, with the possibility of grouping to resume at the value of START following the group.
 
 An option called \"modulo counter\" is included which will reset the counter to the starting value if the modulo value is reached. Using a value of 0 for the modulo option will disable it.
 
-This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://github.com/lbartoletti)
 ### Feature: Duration parameter
 A brand new duration parameter was added to the processing framework to facilitate the creation of temporal-related algorithms.
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Spatiotemporal ST-DBSCAN clustering algorithm
 QGIS 3.22 ships with a brand new spatiotemporal ST-DBSCAN clustering algorithm which clusters point features based on a 2D implementation of spatiotemporal density-based clustering of applications with noise (ST-DBSCAN) algorithm.
 
@@ -544,7 +544,7 @@ For more details, please see the following papers:
 
 ![image36](images/entries/10136b7563df169c40e2c20a96fe75b6ed93e16f.webp)
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: Move non-native processing providers into independent plugins
 In line with the discussion in [QEP 226](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/226), the SAGA, GRASS, and OTB providers have been separated into independent plugins.
 
@@ -554,7 +554,7 @@ The SAGA and GRASS plugins are enabled by default, leaving the UX unchanged. The
 
 This is mostly an internal change, with the only visible change on the part of end-users being that the Plugin Manager is used to activate or deactivate the SAGA, GRASS, and OTB providers.
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Questa funzionalità è stata sviluppata da [Alexander Bruy](https://github.com/alexbruy)
 ## Applicazioni e Opzioni del progetto
 ### Feature: Export all keyboard shortcuts to XML or PDF
 Historically, when exporting keyboard shortcuts to an XML file, QGIS would only export user-defined shortcuts. In instances where no customized shortcuts were found, an empty file would be created.
@@ -563,19 +563,19 @@ A new option has been provided to export all available keyboard shortcuts to the
 
 ![image37](images/entries/1822a5ace82d1e8030ed3d563c07f6b9b6fc3901.webp)
 
-This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
+Questa funzionalità è stata sviluppata da [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Move GPS Tools GPSbabel device configuration widget to global settings
 The GPS babel configuration settings has been moved from a settings page in the deprecated GPS Tools plugin, to a new page in the main settings dialog.
 
 ![image38](images/entries/d61c12a455d85b290431d5ff461de15db0afb446.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Set default path structure for new projects
 QGIS Desktop historically supported the definition of whether a particular project used an absolute or relative structure from the project properties, however, the default setting for this functionality was always configured to use relative paths.
 
 A new setting has been exposed which allows users to set the default path structure to use either absolute or relative for new projects under the program options. In much the same way the default project format may be configured to use qgz or qgs, this is made available as a global property specific to each user profile.
 
-This feature was developed by [mhugent](https://github.com/mhugent)
+Questa funzionalità è stata sviluppata da [mhugent](https://github.com/mhugent)
 ### Feature: Allow configuration of the max cache size from QGIS settings
 In the `qgis_global_settings.ini` file, it\'s possible to set the max image cache size in bytes.
 
@@ -583,9 +583,9 @@ The cache is used for caching symbology and layout images, If high resolution im
 
 Default value is 100mb.
 
-This feature was funded by [3Liz](https://www.3liz.com/)
+Questa funzionalità è stata finanziata da [3Liz](https://www.3liz.com/)
 
-This feature was developed by [David Marteau](https://github.com/dmarteau)
+Questa funzionalità è stata sviluppata da [David Marteau](https://github.com/dmarteau)
 ## Browser
 ### Feature: Improved delete action for browser files
 The delete action used from the QGIS browser has been improved in various ways, including:
@@ -593,7 +593,7 @@ The delete action used from the QGIS browser has been improved in various ways, 
 - Multiple file deletion is now supported by selecting multiple file items in the browser which includes a confirmation prompt
 - Before deleting files, the current project is scanned to see if it is using any of the files. If so, a prompt is shown asking users if they want to cancel the deletion, or delete and remove layers, or delete and retain layers.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Connections API result widget
 As a part of the ongoing efforts to port the table management functionalities from the DB Manager to the QGIS Browser, as detailed in [QEP 205](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/205), a new SQL dialog is available from the browser panel which provides the ability to execute queries and SQL statements for the following elements:
 - DB connections
@@ -607,7 +607,7 @@ The implementation also supports the following advanced functionalities:
 
 ![image39](images/entries/a4d260146fe4267a34d9db97495df2b244f5d7ff.gif)
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ## Sorgenti Dati
 ### Feature: Transactions in MSSQL provider
 Addition of transaction support to the MSSQL data provider.
@@ -624,56 +624,56 @@ ALTER DATABASE my_db SET READ_COMMITTED_SNAPSHOT ON
 ```
 In most instances where transactions are desired, activating this option is likely recommended to prevent freezing in QGIS or other clients.
 
-This feature was funded by [ms.GIS](http://www.msgis.com)
+Questa funzionalità è stata finanziata da [ms.GIS](http://www.msgis.com)
 
-This feature was developed by [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
+Questa funzionalità è stata sviluppata da [Lutra Consulting (Martin Dobias)](https://www.lutraconsulting.co.uk/)
 ### Feature: Show system and internal tables in sublayer selection
 A check box has been added to the sublayer selection dialog to control whether system and internal tables should be shown. This will be turned off by default, but will be useful in instances where users have a particular need to load a system table into QGIS for viewing or manipulation purposes.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Automatically read and convert metadata from ESRI Personal Geodatabases
 Previously this was supported for File Geodatabases and shp.xml metadata, but it is now also supported for ESRI personal geodatabases (.mdb files)
 
 Requires GDAL 3.4+
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Create a generic data item provider for all file based datasources
 This provider uses the QgsProviderRegistry::querySublayers API to automatically create appropriate browser data items for all file based sources, regardless of the underlying provider whether it may be mdal, gdal, ogr, pdal, or ept.
 
 This allows the merging of sources which can be handled by multiple different providers into single container items in the browser, which may be expanded to display all related or nested elements. It is common for many file types, such as GeoPDF or KML/KMZ files to may contain raster and vector layers, or .nc files which may be accessed as a mesh or raster depending on the data provider.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## QGIS Server
 ### Feature: Enable multiple MetadataUrls
 QGIS Server historically only supported the provision of a single metadata URL, but will now allow multiple metadata endpoints to be specified in the service definition.
 
 ![image40](images/entries/8e644bb4823b8da291e1e2b2dd1ca472d3d57246.webp)
 
-This feature was funded by [Ifremer](https://wwz.ifremer.fr/)
+Questa funzionalità è stata finanziata da [Ifremer](https://wwz.ifremer.fr/)
 
-This feature was developed by [Étienne Trimaille](https://github.com/Gustry)
+Questa funzionalità è stata sviluppata da [Étienne Trimaille](https://github.com/Gustry)
 ### Feature: Add version to QGIS Server CLI tools
 It\'s quite a common practice to have arguments like `-v` and `--version` for tools accessed via command line interfaces (CLIs), so new `--version` and it\'s alias `-v` have been added to identify QGIS version information for the following tools:
 - qgis_process
 - qgis_mapserv.fcgi
 - qgis_mapserver
 
-This feature was funded by [3Liz](https://www.3liz.com/)
+Questa funzionalità è stata finanziata da [3Liz](https://www.3liz.com/)
 
-This feature was developed by [Étienne Trimaille](https://github.com/Gustry)
+Questa funzionalità è stata sviluppata da [Étienne Trimaille](https://github.com/Gustry)
 ## Programmabilità
 ### Feature: Expose scriptable vector tile encoder
 An additional `writeSingleTile` method in `QgsVectorTileWriter` has been exposed to enable the encoding of a single vector tile to a memory buffer. This may support workflows for PyQgis and QGIS Server which include support for vector tiles.
 
-This feature was developed by [David Marteau](https://github.com/dmarteau)
+Questa funzionalità è stata sviluppata da [David Marteau](https://github.com/dmarteau)
 ### Feature: Encode and write vector tiles in different CRS than EPSG:3857
 The QGIS API has been extended to support encoding and writing vector tiles in a different CRS than EPSG:3857.
 
 Note that according to the Mapbox Vector Tile specification, a Vector Tile represents data based on a square extent within a projection. A Vector Tile should contain information about its bounds and projection. The file format assumes that the decoder knows the bounds and projection of a Vector Tile before decoding it.
 
-This feature was funded by Ifremer
+Questa funzionalità è stata finanziata da Ifremer
 
-This feature was developed by [rldhont](https://github.com/rldhont)
+Questa funzionalità è stata sviluppata da [rldhont](https://github.com/rldhont)
 ### Feature: DistanceWithin filter for QgsFeatureRequest
 An option has been added to QgsFeatureRequest to request features within a certain distance of a reference geometry
 
@@ -687,7 +687,7 @@ Distance within filters are treated like bounding box filters, in that they are 
 
 Provider feature iterators can potentially delegate the distance within search to the backend. So, for example, the PostgreSQL data provider could use an `ST_DWithin` query for optimal index use.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: API for preset combobox values
 An API has been added to allow a string parameter to show as a combobox with preset choices in processing GUI tools.
 
@@ -704,7 +704,7 @@ param = QgsProcessingParameterString( 'PRINTER_NAME', 'Printer name')
 # for the string input.
 param.setMetadata( {'widget_wrapper': { 'value_hints': ['Inkjet printer', 'Laser printer'] } })
 ```
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: QgsExifTools class support for fetching tag values
 The QgsExifTools class can now retrieve individual exif tags from images using the readTag function.
 
@@ -712,7 +712,7 @@ E.g.: `QgsExifTools.readTag('/my/photo/0997.JPG'), 'Exif.Image.DateTime')`
 
 Known exif tags representing time values are automatically converted to Q{Date,Time,DateTime} objects. This makes working with those tags much easier and integrates well with other parts of the QGIS API.
 
-This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://www.opengis.ch/)
 ## Notable Fixes
 ### Bug fixes by Even Rouault
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.16 backport commit (GitHub) | Remark |

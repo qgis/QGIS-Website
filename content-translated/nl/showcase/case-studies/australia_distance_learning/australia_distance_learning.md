@@ -8,7 +8,7 @@ De Universiteit van Southern Queensland (USQ) is een regionale universiteit, gev
 
 Het bieden van onderwijs in zowel een modus On-campus als Off-campus heeft veel technologische uitdagingen.  Onderwijzen van een cursus in GIS vereist het overwinnen van die uitdagingen. Gemiddeld nemen elk jaar 300-350 studenten deel aan de cursus in GIS. Ongeveer 80% van hen studeren in de modus Off-campus.
 
-![USQ Main Campus Map created using QGIS](./images/australia_distance_learning1.png){.align-center}
+![USQ kaart van de hoofdcampus, gemaakt met QGIS](./images/australia_distance_learning1.png){.align-center}
 ## QGIS op de universiteit van Southern Queensland
 Onderwijs in GIS is niet compleet zonder vaardigheden in het met eigen handen werken. Echter, het verschaffen van werken met eigen handen aan Off-campus studenten is niet eenvoudig vanwege problemen met toegang tot internet, kosten van softwarelicenties en compatibiliteit met verschillend ebesturingssystemen voor computers.
 

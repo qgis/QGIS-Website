@@ -665,7 +665,7 @@ To make browsing the features more user friendly and provide more information, t
 ![image36](images/entries/2fc23a3a7f310ae6cc53ae4ff676c5a96eb8c34a.webp)
 
 This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
-## プログラム可能
+## プログラマビリティ
 ### Feature: Python console help improvements
 A special `?` command has been added to the python console which displays a useful help message, identifies some key variables, and provides helper functions for improving the developer experience within QGIS Desktop.
 

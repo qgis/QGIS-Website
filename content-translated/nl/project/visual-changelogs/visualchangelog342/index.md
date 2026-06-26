@@ -265,7 +265,7 @@ Voor Processing algoritmes voor repareren is de uitvoer:
 
 ![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png.webp)
 
-Dit werd mogelijk gemaakt door QGIS (Grant OpenSource 2023) and Oslandia
+Dit werd mogelijk gemaakt door QGIS (Grant OpenSource 2023) en Oslandia
 
 Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://github.com/Djedouas)
 ### Mogelijkheid: Titel, astitels en logaritmische assen aan plots toegevoegd

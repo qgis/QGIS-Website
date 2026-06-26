@@ -46,7 +46,7 @@ This should unify the user experience so that the usage of WMTS time-enabled lay
 
 ![image3](images/entries/8f0a6c8e4850886732633ab76d5873dffd7746c4.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Strumenti mappa
 ### Feature: Allow selecting features in vector tile layers
 Support for selecting features from vector tile layers has been added, which allows users to use the standard map-based selection tools to interactively select features from these sources.
@@ -59,9 +59,9 @@ Selections can be made using any of the interactive map-based selection tools, e
 
 Selecting features is made using the tile zoom level of the canvas, and then the features selected at this zoom level persist even if the user changes the map scale to another vector tile zoom level. This means a user can zoom in and select a small/ detailed feature, then zoom out and still see the selected feature on the map.
 
-This feature was funded by Toitū Te Whenua Land Information New Zealand
+Questa funzionalità è stata finanziata da Toitū Te Whenua Land Information New Zealand
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Interfaccia Utente
 ### Feature: Exclusive window based UX for data source manager
 The data source manager dialog is now ALWAYS non modal, and options to set it as such have been removed. The dialog now functions just like other \"manager\" type windows in QGIS, such as the style manager or layout manager.
@@ -70,30 +70,30 @@ The data source manager will instead be treated as its own window, which is rais
 
 ![image4](images/entries/9bbc312e9b1362ae660a9719c910ab209d3e8a55.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add a Show in Attribute Table action to the right click menu of legend class symbols
 A new \"Show in Attribute Table\" action has been added to the right-click context menu of legend class symbols in the table of contents. This allows users to open the attribute table with a filter applied to match only the features relevant to a particular symbol group. This provides a significant performance improvement for certain datasets, such as large vector layers loaded from a remote source.
 
 ![image5](images/entries/8b43481bcab479b040b0a5ac5400ddc89c77dd0a.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add setting to hide NULL values on identify result
 The \"Identify Features\" utility now provides the capability to hide NULL values from the returned results
 
 ![image6](images/entries/f0c7217db5f0104999a3d87c2229010dcc62cb50.gif)
 
-This feature was funded by [Camptocamp](https://www.camptocamp.com/)
+Questa funzionalità è stata finanziata da [Camptocamp](https://www.camptocamp.com/)
 
-This feature was developed by [Ismail Sunni](https://github.com/ismailsunni)
+Questa funzionalità è stata sviluppata da [Ismail Sunni](https://github.com/ismailsunni)
 ## Simbologia
 ### Feature: Allow control over GPS location marker
 A new general GPS options page has been introduced which includes new settings for controlling the marker symbol used for the current GPS location, and whether this symbol should be rotated to match the GPS direction.
 
 ![image7](images/entries/411b2d3b0f1b180857eda6d4e0c73144f1aeee57.gif)
 
-This feature was funded by Tiwi Resources, Bush Heritage, Australian Wildlife Conservancy
+Questa funzionalità è stata finanziata da Tiwi Resources, Bush Heritage, Australian Wildlife Conservancy
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Added new ellipse marker shapes
 The symbol styles for the ellipse marker type now include additional shape types for:
 - Pentagon
@@ -105,9 +105,9 @@ The symbol styles for the ellipse marker type now include additional shape types
 
 ![image8](images/entries/3e749b405f10a24f95665cd0ad3e1ea0f199811b.webp)
 
-This feature was funded by North Road
+Questa funzionalità è stata finanziata da North Road
 
-This feature was developed by [ZayneTomlins](https://github.com/ZayneTomlins)
+Questa funzionalità è stata sviluppata da [ZayneTomlins](https://github.com/ZayneTomlins)
 ## Etichettatura
 ### Feature: Add support for HTML bold/italic/font size and font family to labelling
 Support for additional HTML formatting tags have been added for use within labeling (and everywhere else the text renderer is used).
@@ -120,15 +120,15 @@ Supported tags specifically include:
 
 ![image9](images/entries/b49f780e98b4276b76cf3022b34da26dd4ed9d1f.webp)
 
-This feature was funded by the Swiss QGIS user group
+Questa funzionalità è stata finanziata da the Swiss QGIS user group
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add option to use absolute units for line height
 Previously, the line height was always set in multiples of the text line spacing, however, it is now possible to use absolute units for line height (useful in contexts where mixed text sizes are used within a single document).
 
 ![image10](images/entries/b413c593933bc197886a97919ae015880e119aa7.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Mesh
 ### Feature: Add option to reload mesh layer temporal properties
 An \"Always take reference time from data source\" option has been added for mesh layers that when checked, will ensure that the reference time is reloaded from the data source, and each time the layer is reloaded or the project reopened the time properties will be updated from the file automatically.
@@ -137,7 +137,7 @@ In previous releases, when a mesh layer file had a reference time and time exten
 
 ![image11](images/entries/8bf480abed6701e5535110f8069ba1f63ecf2de4.gif)
 
-This feature was developed by [Vincent Cloarec](https://github.com/vcloarec)
+Questa funzionalità è stata sviluppata da [Vincent Cloarec](https://github.com/vcloarec)
 ## Funzionalità 3D
 ### Feature: Ambient Occlusion 3D Effect
 A new ambient occlusion effect is available for rendering data in 3D views that is useful for improving depth perception of the data in 3D. This is a post-processing effect and it can be even combined with eye dome lighting (EDL) for quite interesting results. An oversimplification of the effect is that features that are not visible to the camera are used to texture and darken neighboring elements, with the benefit of improving contrast, feature definition, and differentiation.
@@ -149,7 +149,7 @@ There is a new item for controlling the state of Ambient Occlusion in the config
 
 ![image12](images/entries/996b020346252bc10d87279d9e0cac766802c1d4.webp)
 
-This feature was developed by [Martin Dobias & Belgacem Nedjima](https://github.com/wonder-sk)
+Questa funzionalità è stata sviluppata da [Martin Dobias & Belgacem Nedjima](https://github.com/wonder-sk)
 ## Point Clouds
 ### Feature: Point Cloud Layer Export
 Point Cloud layers now support being exported to vector or point cloud data formats, with optional filtering.
@@ -172,15 +172,15 @@ In addition, output CRS definition and re-projection are also supported.
 
 ![image13](images/entries/9b7102f1bbd9286c16285a43158904395e56c4bc.webp)
 
-This feature was funded by State of Vorarlberg and Swiss QGIS user group
+Questa funzionalità è stata finanziata da State of Vorarlberg and Swiss QGIS user group
 
-This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
+Questa funzionalità è stata sviluppata da [Stefanos Natsis](https://github.com/uclaros)
 ### Feature: Eye Dome Lighting for point clouds in 2D map canvas
 The eye dome lighting effect is now available for point clouds in 2D renderers
 
 ![image14](images/entries/99c16bf2efe3bdcf020a41ad088e29ec7437573e.webp)
 
-This feature was developed by [Nedjima Belgacem](https://github.com/NEDJIMAbelgacem)
+Questa funzionalità è stata sviluppata da [Nedjima Belgacem](https://github.com/NEDJIMAbelgacem)
 ## Layout di stampe
 ### Feature: Add FORCE_RASTER and IMAGE_COMPRESSION parameters to PDF algorithms
 The `FORCE_RASTER` and `IMAGE_COMPRESSION` parameters have been added to the various \"Export print layout as PDF\" algorithms, including support for Atlas and multifile exports.
@@ -189,7 +189,7 @@ The `FORCE_RASTER` and `IMAGE_COMPRESSION` parameters have been added to the var
 
 ![image15](images/entries/06cc045f6a69f9caaacde8f8b3ead9e89f02af22.webp)
 
-This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
+Questa funzionalità è stata sviluppata da [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ## Espressioni
 ### Feature: Add new variable form of current feature expression functions
 The newer style variable form has been added for referencing the current feature and its attributes in expressions.
@@ -205,13 +205,13 @@ Older functions and variable references will continue to work (and will likely c
 
 ![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add new shared_paths function
 A new `shared_paths` function has been added which returns a collection containing paths shared by the two input geometries. Those going in the same direction are in the first element of the collection, and those going in the opposite direction are in the second element. The paths themselves are given in the direction of the first geometry.
 
 ![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Make_valid and geom_to_array functions
 Additional functions have been added for:
 - `make_valid`: Repair broken input geometries and returns the corrected geometries
@@ -219,21 +219,21 @@ Additional functions have been added for:
 
 ![image18](images/entries/bc2bbd8d26e2ebb4fd7dc02f0ce7ec6460f3a3bc.webp)
 
-This feature was developed by [Alex](https://github.com/roya0045)
+Questa funzionalità è stata sviluppata da [Alex](https://github.com/roya0045)
 ### Feature: Concave hull function
 A new `concave_hull` function is now available in QGIS expressions (GEOS 3.11+)
 
 ![image19](images/entries/e434b7356dc93f9c43fa3142c7f8f914a4aa5615.webp)
 
-This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://github.com/lbartoletti)
 ### Feature: Ask for confirmation when discarding expression changes
 A new confirmation dialog is now safeguarding users against accidentally discarding their unapplied changes in expression editor dialogs. This safeguard is used in the Expression String Builder, the Expression Dialog (Epsilon icon, e. g. for Geometry Generators or for Pre-calculated Values in the model builder) and the Expression Based Filter (Attribute Table -\> Advanced filter expression).
 
 ![image36](images/entries/cebe844ae2c28045a8b6e2e89cb2b40cdbbd38c6.webp)
 
-This feature was funded by [WhereGroup GmbH](https://wheregroup.com/)
+Questa funzionalità è stata finanziata da [WhereGroup GmbH](https://wheregroup.com/)
 
-This feature was developed by [Johannes Kröger](https://github.com/kannes)
+Questa funzionalità è stata sviluppata da [Johannes Kröger](https://github.com/kannes)
 ## Gestione Dati
 ### Feature: Ask for confirmation when deleting features
 A new confirmation dialog appears by default when users perform an action that would delete records, such as using the DEL key or toolbar actions, to further reduce the risks of accidental feature deletion. Additionally, the feature count is now included in the dialog message itself (and is also still displayed in the title bar), making the total number of features deleted more clear to users.
@@ -242,9 +242,9 @@ In previous releases, similar confirmation prompts would only be displayed when 
 
 ![image20](images/entries/677952561ec24d417a74cf46842a6c52aec49587.webp)
 
-This feature was funded by [QGIS user group Switzerland](https://www.qgis.ch/)
+Questa funzionalità è stata finanziata da [QGIS user group Switzerland](https://www.qgis.ch/)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://github.com/nirvn)
 ## Metadati e Metaricerca
 ### Feature: Layer metadata data provider search and storage
 Implementation of elements from the [QEP #250 \"Database metadata storage\"](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/250) initiative have been completed and this functionality includes the creation of a new layer metadata API and GUI components.
@@ -260,7 +260,7 @@ In addition, a new layer metadata search tab is available from the data source m
 
 Questa funzione è stata finanziata da ARPA Piemonte
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ## Processing
 ### Feature: Fixed precision support for select processing tools
 A new advanced parameter is available for some processing tools which allows the use of the [fixed precision](https://blog.cleverelephant.ca/2020/12/waiting-postgis-31-3.html#fixed-precision-overlay) parameter provided by GEOS \>= 3.9.0. This parameter is listed under advanced parameters as \"Grid Size\" and is currently supported in the following tools:
@@ -272,21 +272,21 @@ A new advanced parameter is available for some processing tools which allows the
 
 ![image22](images/entries/b2ef315dc1013852d3316023c62af5ff06626e93.webp)
 
-This feature was funded by Orange Telecom FR
+Questa funzionalità è stata finanziata da Orange Telecom FR
 
-This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://github.com/lbartoletti)
 ### Feature: Improved \"Make Valid\" Algorithms
 QGIS can now use the newer refined GEOS 3.10+ methods for validating and repairing geometry features.
 
 ![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Default option to show feature count for vector outputs from processing
 A new `Show feature count for output vector layers` setting is available (but disabled by default for performance reasons), which will automatically enable the \"show feature count\" option on output layers loaded from QGIS processing. This is able to give users a first glimpse of what to expect as an output from a Processing algorithm.
 
 ![image24](images/entries/e804b2accbcf155f4db2ea4024bd89ed5883097f.webp)
 
-This feature was developed by [Germap](https://github.com/gacarrillor)
+Questa funzionalità è stata sviluppata da [Germap](https://github.com/gacarrillor)
 ### Feature: Add relations export option to package layers algorithm
 The \"Package Layers\" processing tool now supports optionally following project relations and exporting related tables following the hierarchy both upstream and downstream, whilst also taking selected features into account.
 
@@ -294,13 +294,13 @@ The \"Package Layers\" processing tool now supports optionally following project
 
 Questa funzione è stata finanziata da ARPA Piemonte
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Add \"Offset\" parameter to \"Drape\" algorithms
 Adds the \"Offset\" parameter to the \"Drape (set Z value from raster)\" and \"Set M value from raster\" algorithms. The \"Offset\" value is algebraically added to the band values after applying the \"Scale factor\".
 
 ![image26](images/entries/78e9cb5b82c872604fc3616c2c7b3772e7d26bef.webp)
 
-This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
+Questa funzionalità è stata sviluppata da [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 ## Applicazioni e Opzioni del progetto
 ### Feature: Modified project coordinate and bearing display settings
 The Coordinate and Bearing Display options in the project settings have been updated in line with the following:
@@ -316,7 +316,7 @@ The Custom Projection Units type is a new addition that defaults to WGS84 and al
 
 ![image27](images/entries/7af6704f72373fec3c1e9c212366fd3d8cfa0218.webp)
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Add support for \"user\" fonts, and automatic downloading of freely licensed fonts
 A new \"Fonts\" panel has been added to the settings dialog, which provides support for the following functionalities:
 - The ability for users to populate a list of automatic font replacements to apply when loading projects or styles, allowing better support for projects and styles to be used across different operating systems (e.g. replace \"Arial\" with \"Helvetica\").
@@ -326,9 +326,9 @@ A new \"Fonts\" panel has been added to the settings dialog, which provides supp
 
 ![image28](images/entries/77e17395ccb70e466ad4c5a80675ad0ff8ec070e.gif)
 
-This feature was funded by Toitū Te Whenua Land Information New Zealand
+Questa funzionalità è stata finanziata da Toitū Te Whenua Land Information New Zealand
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Browser
 ### Feature: Implement relationship discovery for OGR layers, and show relationships in browser
 The Project Properties → Relations → Discover Relations feature is now able to support OGR layers that support relationships, such GeoPackage (via the related tables extension) and ESRI FileGeodatabases.
@@ -337,7 +337,7 @@ The QGIS Browser Panel now includes the ability to show detailed relationship in
 
 ![image29](images/entries/11c3f493eff806b4eccbf9af27c96894ea3223a3.webp)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Modified UX for Geopackage and ESRI File Geodatabase creation
 A \"New ESRI File Geodatabase\" action has been added to the QGIS Browser right-click context menu on directories, and a new \"vacuum\" action is available for GDB files. (requires GDAL 3.6+)
 
@@ -347,21 +347,21 @@ Additionally, creating a new Geopackage from the same menu will now immediately 
 
 ![image30](images/entries/7a0e8f73e24aa061244e30d6bf1b8154e5eebce4.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Allow drag and drop of vector layers to non-GPKG OGR database datasets
 QGIS now allows drag and drop of vector layers between OGR database datasets that are not stored in GPKG format, for instance, the dragging of a layer onto a GDB to import that dataset into the geodatabase
 
 ![image31](images/entries/c1c17d31db79a4beaab864daf13257e6e7ed0ba0.gif)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Expose field domain management for non-gpkg OGR sources
 The QGIS browser now supports more advanced functionalities for OGR databases that are not in GPKG format, including Field domain management capabilities (creation and listing domains) and table creation. This means that users can manage field domains and create new tables in an existing ESRI FileGeodatabase database from the QGIS Browser interface.
 
 ![image32](images/entries/cc1f815593c28352dffaad020061004db91f8ded.webp)
 
-This feature was funded by Provincie Gelderland
+Questa funzionalità è stata finanziata da Provincie Gelderland
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Sorgenti Dati
 ### Feature: Define session role for PostgreSQL connections
 A `session_role` setting can now be specified for PostgreSQL connections to set the user identifier of the active SQL session. Permissions checking for SQL commands are then carried out with the associated named role.
@@ -370,9 +370,9 @@ This is highly useful in instances where it is desirable to automatically give o
 
 The specified `session_role` must be a role that the current session user is a member of, or if the session user is a superuser, any role can be selected.
 
-This feature was funded by [3liz](https://3liz.com/)
+Questa funzionalità è stata finanziata da [3liz](https://3liz.com/)
 
-This feature was developed by [rldhont](https://github.com/rldhont)
+Questa funzionalità è stata sviluppata da [rldhont](https://github.com/rldhont)
 ### Feature: Automatically add related tables when adding layers from GDAL datasets with embedded relationship information
 For GDAL data formats with embedded relationship information, whenever a table is added QGIS is now able to discover relationships and immediately add all the related tables to the current project (if they don\'t already exist). Additionally, when adding these related layers QGIS will automatically configure the corresponding QGIS relationships.
 
@@ -382,19 +382,19 @@ This works for all formats which support the GDAL relationship API, which includ
 - ESRI Personal Geodatabase
 - SQLite/ Spatialite formats.
 
-This feature was funded by University of Uppsala
+Questa funzionalità è stata finanziata da University of Uppsala
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add subset string (filter) support for arcgis REST layers
 This can **greatly** improve the performance on large layers!
 
-This feature was funded by [Naturstyrelsen and Miljøstyrelsen, Danish Ministry of Environment](https://eng.naturstyrelsen.dk/)
+Questa funzionalità è stata finanziata da [Naturstyrelsen and Miljøstyrelsen, Danish Ministry of Environment](https://eng.naturstyrelsen.dk/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Abstract database provider for renaming fields
 A `QgsAbstractDatabaseProviderConnection` interface has been added for supporting renaming fields, and implemented for OGR connections along with the ability to rename existing fields for supported database connections via the QGIS Browser interface.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: WFS performing binary spatial operations in expressions on server
 QGIS used to be able to perform the expression filters of binary spatial operations on the server when the geometry was provided as WKT or in the GML format. This change converts the geometry from being a static variable in the expression to an OGC filter. The WFS URL is then created by combining a bounding box rectangle, layer filter, and the filtering expression.
 
@@ -402,9 +402,9 @@ A feature request computes the expression in advance to find out if it can be pe
 
 When a filter request is not a pure binary spatial operation, it will not be evaluated on the server.
 
-This feature was funded by Kanton Schaffhausen
+Questa funzionalità è stata finanziata da Kanton Schaffhausen
 
-This feature was developed by [signedav](https://github.com/signedav)
+Questa funzionalità è stata sviluppata da [signedav](https://github.com/signedav)
 ### Feature: Editing ArcGIS REST Layers
 QGIS now supports the editing of ArcGIS feature server layers, such as those hosted on ArcGIS online. Assuming the user has appropriate permissions granted for editing a layer, it will unlock the ability to use the native QGIS tools to edit that layer. These changes include support for the following operations:
 - Deleting features
@@ -413,9 +413,9 @@ QGIS now supports the editing of ArcGIS feature server layers, such as those hos
 - Modifying existing features
 - Modifying attributes (creating fields, deleting fields, creating attribute indexes)
 
-This feature was funded by [Naturstyrelsen and Miljøstyrelsen, Danish Ministry of Environment](https://eng.naturstyrelsen.dk/)
+Questa funzionalità è stata finanziata da [Naturstyrelsen and Miljøstyrelsen, Danish Ministry of Environment](https://eng.naturstyrelsen.dk/)
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Load raster sublayers from vector tile styles automatically
 When loading a new vector tile source into a project, if the associated MapBox GL style includes any raster sublayers, then also load those into the project with converted styles.
 
@@ -423,38 +423,38 @@ Fixes <https://github.com/qgis/QGIS/issues/46593>
 
 ![Peek 2022-06-20 12-31](https://user-images.githubusercontent.com/1829991/174514930-77887a1d-4679-49a2-9ff0-7c360bc0fc01.gif)
 
-This feature was funded by Toitū Te Whenua Land Information New Zealand
+Questa funzionalità è stata finanziata da Toitū Te Whenua Land Information New Zealand
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Add WMS layers individually
 In previous releases, the selection of layers from WMS Servers would be loaded into QGIS as a single project layer. This new functionality provides an optional checkbox to load each of the selected WMS layers into QGIS as distinct project layers.
 
 ![image34](images/entries/2685710315d58fc03e1557e3381a41fdd8eb5a02.gif)
 
-This feature was funded by [Camptocamp](https://www.camptocamp.com/)
+Questa funzionalità è stata finanziata da [Camptocamp](https://www.camptocamp.com/)
 
-This feature was developed by [Ismail Sunni](https://github.com/ismailsunni)
+Questa funzionalità è stata sviluppata da [Ismail Sunni](https://github.com/ismailsunni)
 ### Feature: Save projects to Oracle Database Provider
 QGIS now supports saving projects to Oracle databases.
 
 ![image35](images/entries/6a575714dfc905211f3518a4f5f3803c32e8afa9.webp)
 
-This feature was developed by [Julien Cabieces](https://github.com/troopa81)
+Questa funzionalità è stata sviluppata da [Julien Cabieces](https://github.com/troopa81)
 ## QGIS Server
 ### Feature: QGIS_SERVER_ALLOWED_EXTRA_SQL_TOKENS settings variable
 This new feature allows specifying extra tokens which may be used for a WMS FILTER definition. The current list of accepted tokens is rather small and this setting will allow system administrators to easily enlarge the list of allowed tokens.
 
-This feature was funded by Zweckverband Grevesmühlen
+Questa funzionalità è stata finanziata da Zweckverband Grevesmühlen
 
-This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Open layers in a read only mode with QGIS Server
 A new `QGIS_SERVER_FORCE_READONLY_LAYERS` environment variable to force QGIS Server to open layers in read-only mode.
 
 This includes various underlying API changes to support read-only configuration for data provider construction, project structure, and layer properties.
 
-This feature was funded by [Ifremer](https://wwz.ifremer.fr/)
+Questa funzionalità è stata finanziata da [Ifremer](https://wwz.ifremer.fr/)
 
-This feature was developed by [rldhont](https://github.com/rldhont)
+Questa funzionalità è stata sviluppata da [rldhont](https://github.com/rldhont)
 ## Plugin
 ### Feature: Changes to plugin automatic updates behaviour
 This change moves the old `app/plugin_installer/checkOnStart` setting key to a new `plugins/automatically-check-for-updates` key, and switches the default value to enable automatic checks.
@@ -467,12 +467,12 @@ It is intended to offer a better QGIS experience to our users, by proactively in
 
 Additionally, the option to control the number of days between plugin startup checks has been removed and is hardcoded at 3 days.
 
-This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/nyalldawson)
 ## Programmabilità
 ### Feature: Add temporal handling to maps in QGIS Quick
 A new implementation has been added to allow the Canvas and Map Settings in [QGIS Quick](https://api.qgis.org/api/qgsquick.html) to handle temporal functionality.
 
-This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
+Questa funzionalità è stata sviluppata da [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: Addition of py-args command line parameter
 When running QGIS from the command line with the `--code` parameter, a new `--py-args` utility allows the passing of arguments to the python interpreter.
 
@@ -482,9 +482,9 @@ Arguments between `--py-args` and `--` are passed to the python interpreter and 
     
 The `example.py` script will have `--specialScriptArguments`, `arg1`, and `arg2` passed as system arguments to the python interpreter, whilst `layer1` and `layer2` will be handled by QGIS normally and loaded as map layers
 
-This feature was funded by Landesamt für Vermessung und Geoinformation Vorarlberg
+Questa funzionalità è stata finanziata da Landesamt für Vermessung und Geoinformation Vorarlberg
 
-This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
+Questa funzionalità è stata sviluppata da [Damiano Lombardi](https://github.com/domi4484)
 ## Notable Fixes
 ### Feature: Bug fixes by Alessandro Pasotti
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |
@@ -510,9 +510,9 @@ This feature was developed by [Damiano Lombardi](https://github.com/domi4484)
 | Exporting SLD doesnt include fill-opacity | [#33376](https://github.com/qgis/QGIS/issues/33376) | [PR #50349](https://github.com/qgis/QGIS/pull/50349) | [PR #50436](https://github.com/qgis/QGIS/pull/50436) |
 | SpatiaLite - Added feature vanishes, attribute dialog does not show required fields | [#50523](https://github.com/qgis/QGIS/issues/50523) | [PR #50573](https://github.com/qgis/QGIS/pull/50573) | queued |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/)
+Questa funzionalità è stata sviluppata da [Alessandro Pasotti](https://www.qcooperative.net/)
 ### Feature: Bug fixes by Even Rouault
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -540,9 +540,9 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 | world_map.gpkg: little fix to avoid warning with recent GDAL versions | Unreported | [PR #50304](https://github.com/qgis/QGIS/pull/50304) | Not needed |
 | QGIS 3.24.1 (Windows) destroys my VRT raster mosaic | [#48052](https://github.com/qgis/QGIS/issues/48052) | <https://github.com/OSGeo/gdal/pull/6426> | [PR #50328](https://github.com/qgis/QGIS/pull/50328) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Even Rouault](https://www.spatialys.com/)
+Questa funzionalità è stata sviluppata da [Even Rouault](https://www.spatialys.com/)
 ### Feature: Bug fixes by Julien Cabieces
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -564,9 +564,9 @@ This feature was developed by [Even Rouault](https://www.spatialys.com/)
 | Layout bleeding to edge outside map window | [#49638](https://github.com/qgis/QGIS/issues/49638) | Cannot fix, Qt issue |  |
 | Freeze with virtual field on \$area used as parameter in sum | [#49589](https://github.com/qgis/QGIS/issues/49589) | [PR #50533](https://github.com/qgis/QGIS/pull/50533) | [PR #50565](https://github.com/qgis/QGIS/pull/50565) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Julien Cabieces](https://oslandia.com/)
 ### Feature: Bug fixes by Paul Blottiere
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -579,9 +579,9 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/)
 | Auxiliary storage rotation or offset fields for symbols are visible by default while labels are not | [#28548](https://github.com/qgis/QGIS/issues/28548) | [PR #50498](https://github.com/qgis/QGIS/pull/50498) |  |
 | Improve selection of PostGIS raster overviews | Unreported | [PR #50554](https://github.com/qgis/QGIS/pull/50554) | [PR #50575](https://github.com/qgis/QGIS/pull/50575) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
+Questa funzionalità è stata sviluppata da [Paul Blottiere](https://hytech-imaging.fr/)
 ### Feature: Bug fixes by Sandro Santilli
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -589,9 +589,9 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 | Cleanup temporary python test config path when requested | [#48884](https://github.com/qgis/QGIS/issues/48884) | [PR #50608](https://github.com/qgis/QGIS/pull/50608) |  |
 | Include type name in message about unsupported qfield validations | Unreported | [PR #50589](https://github.com/qgis/QGIS/pull/50589) |  |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
+Questa funzionalità è stata sviluppata da [Sandro Santilli (strk)](https://strk.kbt.io/)
 ### Feature: Bug fixes by Nyall Dawson
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -623,17 +623,17 @@ This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 | Show standard Rendering tab in point cloud layer properties, add missing scale range widget to mesh layer properties | [#50268](https://github.com/qgis/QGIS/issues/50268) | [PR #50326](https://github.com/qgis/QGIS/pull/50326) | Not suitable |
 | Show standard Rendering tab in point cloud layer properties, add missing scale range widget to mesh layer properties | [#50268](https://github.com/qgis/QGIS/issues/50268) | [PR #50326](https://github.com/qgis/QGIS/pull/50326) | Not suitable |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+Questa funzionalità è stata sviluppata da [Nyall Dawson](https://north-road.com/)
 ### Feature: Bug fixes by Loïc Bartoletti
 | Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Fix \"Add Ring\" tool doesn\'t consider all the overlapping features | [#23113](https://github.com/qgis/QGIS/issues/23113) | [#50447](https://github.com/qgis/QGIS/pull/50447) | Not suitable - add new methods |
 | Fix wkbType cast from OGR 25D Type | [#50218](https://github.com/qgis/QGIS/issues/50218) | [#50233](https://github.com/qgis/QGIS/pull/50233) | [#50251](https://github.com/qgis/QGIS/pull/50251) |
 
-This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Loïc Bartoletti](https://oslandia.com/)
+Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://oslandia.com/)
 
 {{<content-end >}}

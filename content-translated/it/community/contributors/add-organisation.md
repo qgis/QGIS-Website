@@ -59,7 +59,7 @@ Copia questo modello e personalizzalo con i dati della tua organizzazione:
 - **nome utente**: nome utente GitHub (deve corrispondere esattamente)
 - **author_names**: nome completo così come appare nei commit Git. `"Jean Luc"` o `"Jean Luc,Jean Lucas"` in caso di nomi multipli.
 - **da**: data in cui questa persona ha iniziato a collaborare con la tua organizzazione (AAAA-MM-GG)
-- **a**: Lasciare `null` se ancora attivo, oppure inserire la data di scadenza (AAAA-MM-GG)
+- **a**: Lasciare `null` se ancora attivo, oppure inserire la data di fine (AAAA-MM-GG)
 
 💡 **Suggerimento:** puoi aggiungere più membri: basta duplicare l'oggetto "membro" per ogni persona.
 ____
@@ -92,8 +92,8 @@ Carica il tuo logo nella cartella `static/img/contributors/`:
 
 ____
 ## Fase 5: revisione e approvazione
-✨ Once you submit your Pull Request:
-1. The QGIS website team will review your submission
+✨ Una volta inviata la tua Pull Request:
+1. Il team del sito web di QGIS esaminerà il tuo contributo
 2. Potremmo richiedere alcune piccole modifiche
 3. Una volta approvata e aggiunta, la tua organizzazione apparirà nella [pagina dei contributori](/community/contributors/)!
 

@@ -739,7 +739,7 @@ This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
 Because sometimes it\'s just nice to exaggerate about the size.
 
 This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
-## プログラム可能
+## プログラマビリティ
 ### 機能：レイヤーツリー内の組み込みウィジェット
 これにより、レイヤプロパティダイアログ（新しい凡例タブ内）で個々のレイヤのレイヤツリーに埋め込まれたウィジェットを定義することができます。このアイデアは、レイヤーでよく使用されるいくつかのアクションに素早くアクセスする方法を持つことです。
 
@@ -808,7 +808,7 @@ This feature was developed by [Sandro Mani (Sourcepole)](https://www.sourcepole.
 ## 注目すべき修正
 ### 特集：QGISの有料バグ修正プログラム
 私たちは、バグ修正のもう一つのラウンドを行いました（スポンサーとドナーのおかげで！）。参加した開発者の作業概要を以下に示します。
-### ニールドーソン
+### Nyall Dawson
 Here\'s the full list (sorted by priority):
 - ジオレフェレーターで破損した射影変換を修正（＃14551  - 厳しい）
 - 半径による地物の選択が失敗する（＃14748  - 重大）

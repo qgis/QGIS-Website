@@ -32,33 +32,33 @@ Deze zijn extreem uitzonderlijk, maar kunnen voorkomen (net zoals dat kan in elk
 QGIS server en QGIS Desktop zijn geschreven om de mogelijkheid voor het injecteren van SQL en verscheidene bekende beveiligingsvectoren te beperken, en worden al vele jaren gebruikt door grote bedrijven en overheden.
 ## Wat te doen als u denkt dat u een beveiligingsprobleem hebt gevonden
 Als u denkt dat u een probleem met de beveiliging hebt gevonden, zoals kwetsbaarheden in QGIS of de afhankelijkheden daarvan, doe dan het volgende:
-- Check you are using the latest version of QGIS, and have a glance at the nightly version for potential ongoing changes (fixes or regressions).
-- Check if your issue concerns QGIS desktop or QGIS server.
-- Please check our [bug tracker](https://github.com/qgis/QGIS/issues) to see if we already have an existing and potential fix.
-- Assuming you still need to raise the issue, raise a private disclosure to the security teams via [our GitHub security page](https://github.com/qgis/QGIS/security). Please avoid publicly disclosing the vulnerability until it has been resolved to prevent potential exploitation.
+- Controleer of u de laatste versie van QGIS gebruikt  hebt gekeken naar de nachtelijke versie voor potentiële doorgevoerde wijzigingen (reparaties of regressies).
+- Controleer of uw probleem QGIS desktop betreft of QGIS server.
+- Controleer onze [bug tracker](https://github.com/qgis/QGIS/issues) om te zien of we al een bestaande en potentiële reparatie hebben.
+- Ervan uitgaande dat u nog steeds de issue wilt indienen, maakt u een privaat bericht aan de beveiligingsteams via [uw GitHub pagina voor beveiliging](https://github.com/qgis/QGIS/security). Vermijd publieke berichten die de kwetsbaarheid onthullen totdat die is opgelost, om mogelijk potentieel gebruik ervan te voorkomen.
 
-#### Running python QGIS
-Python bindings allow you to extend QGIS by writing plugins, geoprocessing models, actions, project macros, or even rewrite a full application.
+#### Python QGIS uitvoeren
+Bindingen voor Python stellen u in staat QGIS uit te breiden door het schrijven van plug-ins, modellen voor geoverwerking, acties, projectmacro's, of zelfs het herschrijven van een hele toepassing.
 
-In a desktop environment, any scripting language typically has full access to the user's resources and can execute arbitrary code with the permissions of the user. If you execute external code it can potentially do a lot of harm.
+In een desktopomgeving geeft elke scripttaal over het algemeen volledige toegang tot de bronnen voor de gebruiker en kan deze willekeurige code uitvoeren met de rechten van de gebruiker. Wanneer u externe code uitvoert, kan dat in potentie behoorlijk veel schade aanrichten.
 
-The [QGIS plugins repository](https://plugins.qgis.org) is open for anyone to use to publish their work. We review submissions manually. We do not undertake advanced QA assessments of plugin code. Plugins should not bundle compiled code, so you know what you get in each plugin and are free to audit the code.
+De [QGIS opslagplaats voor plug-ins](https://plugins.qgis.org) is open voor iedereen om te gebruiken om hun werk te publiceren. We beoordelen indieningen handmatig. We voeren geen geavanceerde beoordelingen voor QA uit van de code voor de plug-in. Plug-ins zouden geen gecompileerde code moeten bundelen, dus u weet van elke plug-in wat u krijgt en het staat u vrij de code te beoordelen.
 
-If your are working in a sensitive environment, we advise you to :
-- Carefully audit each plugin in a sandboxed environment before you allow your users to use it.
-- Deploy your own plugin repository so that you can control which plugins are available to your users.
-- Make use of the advanced customization capabilities of QGIS to constrain settings around connections, authentication etc.
-- Don't only focus on code breaches, but also on user behavior regarding credentials and the risk of leaks in project files if users insist on using basic authentication (which will result in credentials being stored in plain text in project files).
+Als u werkt in een gevoelige omgeving, adviseren we u om :
+- Elke plug-in zorgvuldig te beoordelen in een zandbakomgeving, voordat u uw gebruikers toestaat om die te gebruiken.
+- Rol uw eigen opslagplaats voor plug-ins uit, zodat u kunt beheren welke plug-ins voor uw gebruikers beschikbaar zijn.
+- Maak gebruik van de geavanceerde mogelijkheden voor het aanpassen van QGIS om instellingen rond verbindingen, authenticatie etc. te beperken.
+- Focus niet alleen op breuken in de code, maar ook op het gedrag van gebruikers met betrekking tot inloggegevens en het risico van lekken in projectbestanden als gebruikers staan op het gebruiken van basisauthenticatie (wat zal resulteren in het feit dat inloggegevens worden opgeslagen in platte tekst in projectbestanden).
 
-### Do we generate Common Vulnerabilities and Exposures (CVE)?
-Currently, QGIS project is **not** a CVE Numbering Authority (CNA), so we don't emit CVE identifiers.
-### Security Process and workflow
-Disclosures are discussed in a private dedicated repository.
+### Maken we Common Vulnerabilities and Exposures (CVE)?
+Momenteel is het project QGIS **geen** CVE Numbering Authority (CNA), dus geven we geen identificaties voor CVE uit.
+### Beveiligingsproces en werkstroom
+Onthullingen worden besproken in een daarvoor aangewezen private opslagplaats.
 
-Fixes are shipped as soon as possible in point releases - depending on the criticality of the issue.
+Reparaties worden zo snel als mogelijk is doorgevoerd in puntuitgaven - afhankelijk van de ernst van het probleem.
 
-If you want to secure your QGIS enterprise deployment, please ensure you are able to quickly deploy fixes to the machines you manage.
+Als u uw zakelijke uitrol van QGIS veilig wilt houden, zorg er dan voor dat u in staat bent snel reparaties uit te kunnen voeren aan de machines die u beheert.
 
-OSGeo4W provides update scripts that can run unattended. These scripts also allow you to upgrade only the necessary libraries without the need to re-download the entire package. For more information on setting up these scripts for your deployment, refer to the [OSGeo4W documentation](https://trac.osgeo.org/osgeo4w/).
+OSGeo4W verschaft updatescripts die zonder toezicht kunnen worden uitgevoerd. Deze scripts maken het voor u mogelijk alleen de noodzakelijke bibliotheken te upgraden, zonder de noodzaak om het gehele pakket opnieuw te downloaden. Voor meer informatie over het instellen van deze scripts voor uw uitrol, bekijk de [documentatie van OSGeo4W](https://trac.osgeo.org/osgeo4w/).
 
 {{<content-end >}}

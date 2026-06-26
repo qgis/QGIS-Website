@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # Elenco cambiamenti per QGIS 2.0{#changelog20 }
-Release date: 2013-09-09
+Data di rilascio: 2013-09-09
 
 {{<table-of-contents >}}
 ## Strumenti di Analisi

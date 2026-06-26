@@ -3,8 +3,9 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Riconoscendo i contributi preziosi al di là dei commit di codice—supporto
-  alla comunità, divulgazione e sforzi dietro le quinte.
+subtitle: 'Riconoscere i contributi preziosi che vanno oltre i commit di codice: il
+  sostegno alla comunità, le attività di sensibilizzazione e l''impegno dietro le
+  quinte.'
 title: Contributori sostenitori
 type: page
 
