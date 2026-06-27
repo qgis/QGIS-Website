@@ -93,6 +93,8 @@ type: page
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS坦桑尼亚" listSubtitle="联系人: Antidy Kawamala" >}}
 ### 2026年注册
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS印度用户组" listSubtitle="联系人: Ujaval Gandhi" >}}
+
+{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
 ## 用户组目的
 * 组织用户会议
 * 统筹协调发展，重点契合区域及国家相关标准与规范要求

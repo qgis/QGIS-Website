@@ -93,6 +93,8 @@ type: page
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Танзания" listSubtitle="Контакт: Антиди Кавамала" >}}
 ### <div></div>
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="Потребителска група на QGIS Индия" listSubtitle="Контакт: Уджавал Ганди" >}}
+
+{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
 ## Цели на потребителската група
 * Организиране на потребителски срещи
 * Координация на развитието, с акцент върху регионалните/националните стандарти и изисквания

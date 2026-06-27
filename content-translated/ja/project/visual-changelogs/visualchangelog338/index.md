@@ -219,15 +219,15 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### 機能:ラスター用 "バンドごとの固定範囲" を標高モードを追加
-In this new mode, each band in the raster can have a fixed elevation range associated with it.
+この新しいモードでは、ラスターの各バンドに固定の標高範囲を関連付けることができます。
 
-This is designed for data sources that expose elevation-related data in bands, e.g. a NetCDF raster with temperate data at different ocean depths.
+これは、バンドで標高関連データを公開するデータソース向けに設計されています（例：異なる海洋深度の温度データを持つNetCDFラスター）。
 
-When rendering, the UPPERMOST matching band will be selected and used for the layer's data. The renderer configuration will be retained unchanged regardless of the matching band, so users must configure the rendering options for the layer using a representative range that covers the data from all bands.
+レンダリング時には、最上位に一致するバンドが選択されてレイヤーのデータに使用されます。レンダラー設定は一致するバンドに関わらず変更されずに維持されるため、ユーザーはすべてのバンドのデータをカバーする代表的な範囲を使用してレイヤーのレンダリングオプションを設定する必要があります。
 
-The layer configuration is exposed as a user-editable table of raster bands with lower and upper values. Users can either populate the lower and upper values manually or use a QGIS Expression to fill all band values automatically.
+レイヤー設定は下限値と上限値を持つラスターバンドのユーザー編集可能なテーブルとして公開されます。ユーザーは下限値と上限値を手動で入力するか、QGIS式を使用してすべてのバンド値を自動的に入力できます。
 
-Expression-based value definitions will allow users to design expressions capable of extracting useful information from file metadata that might otherwise be difficult to manipulate, such as the band names themselves, e.g. "Band 001: depth=-5500 (meters)".
+式に基づく値の定義により、ユーザーはバンド名自体（例："Band 001: depth=-5500 (meters)"）など、他の方法では操作が困難なファイルメタデータから有用な情報を抽出できる式を設計できるようになります。
 
 ![](images/entries/9622032fd646ac79cc63e48ed30eca1841c9993b.webp)
 

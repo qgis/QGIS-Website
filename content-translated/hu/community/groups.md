@@ -93,6 +93,8 @@ type: page
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzánia" listSubtitle="Kapcsolattartó: Antidy Kawamala" >}}
 ### 2026-ban regisztrált
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Kapcsolattartó: Ujaval Gandhi" >}}
+
+{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
 ## A felhasználói csoportok céljai
 * Felhasználói találkozók szervezése
 * A fejlesztés összehangolása, különös tekintettel a regionális/nemzeti szabványokra és követelményekre
