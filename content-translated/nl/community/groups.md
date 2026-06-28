@@ -94,7 +94,7 @@ type: page
 ### Geregistreerd in 2026
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India gebruikersgroep" listSubtitle="Contact: Ujaval Gandhi" >}}
 
-{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
+{{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algerije gebruikersgroep" listSubtitle="Contact: Walid Moulahoum" >}}
 ## Doelen van een gebruikersgroep
 * Organiseren van gebruikersbijeenkomsten
 * Coördinatie van ontwikkeling, met de nadruk op regionale/nationale standaarden en vereisten 
