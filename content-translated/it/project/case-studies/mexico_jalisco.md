@@ -24,7 +24,7 @@ L'Instituto de Información territoriale del Estado de Jalisco è un'organizzazi
 
 <figure>
 <img src="../images/mexico_jalisco1.jpg" class="align-right" alt="mexico_jalisco1.jpg" />
-<figcaption>Exploring the data with its online viewer</figcaption>
+<figcaption>Esplorare i dati con il visualizzatore online</figcaption>
 </figure>
 
 Negli anni, l'istituto ha raccolto un sacco di informazioni in diversi formati come SHP, DWG, DXF, GeoTIFF e ECW, tra gli altri. Quello che volevamo era di avere tutte queste informazioni disponibili, organizzate e in un formato comune con lo scopo di essere in grado di fornirli e visualizzarli su Internet.

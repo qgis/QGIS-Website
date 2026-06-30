@@ -104,7 +104,7 @@ Estendi QGIS al cloud e ai dispositivi mobili per una maggiore accessibilità.
 
 {{<column-start class="is-flex-direction-column rounded" >}}
 
-![Create map](../img/plugs.jpg "Create map")
+![Crea mappa](../img/plugs.jpg "Create map")
 
 {{<column-end >}}
 

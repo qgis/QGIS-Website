@@ -128,7 +128,7 @@ Example: **"Coordinated monthly QGIS meetups in Berlin since 2022 with 20-40 att
 - Use a professional headshot or clear logo
 - Ensure good contrast and visibility at small sizes
 - Optimize file size (under 1 MB)
-- Use static images format only (PNG, JPG)
+- Utilizzare esclusivamente immagini in formato statico (PNG, JPG)
 - Exactly 150×150 pixels works best
 
 ### Location Privacy

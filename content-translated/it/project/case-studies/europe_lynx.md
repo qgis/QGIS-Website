@@ -60,7 +60,7 @@ Tutti i dati raccolti sono stati elaborati con QGIS 2.6 e 2.8, proiettati in ETR
 
 <figure>
 <img src="../images/europe_lynx2.png" alt="europe_lynx2.png" />
-<figcaption>Figure 2, 3 and 4</figcaption>
+<figcaption>Figura 2, 3 e 4</figcaption>
 </figure>
 
 ## Conclusione

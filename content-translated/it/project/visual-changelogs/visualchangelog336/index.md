@@ -51,7 +51,7 @@ We've added display of custom layer properties for map layers within the layer p
 
 Questa funzionalità è stata sviluppata da [Jorge Alexandre Delesderrier da Silva](https://github.com/jadsilva)
 ### Feature: Easier project and image saving
-In 3.36, we've made QGIS a little bit cleverer in the way it handles saving of projects and images. The project type (.qgz, .qgs) or image format (.png, .jpg, .tif, etc.) is now (by default) determined by any file extension you've typed in the save dialog. This allows for a faster user experience when changing from one format to another, as you don't need to manually set an explicit format in advance via the format combo box!
+Nella versione 3.36 abbiamo reso QGIS un po’ più intelligente nella gestione del salvataggio dei progetti e delle immagini. Il tipo di progetto (.qgz, .qgs) o il formato dell'immagine (.png, .jpg, .tif, ecc.) viene ora determinato (per impostazione predefinita) dall'estensione del file digitata nella finestra di dialogo di salvataggio. Ciò consente un'esperienza utente più fluida quando si passa da un formato all'altro, poiché non è necessario impostare manualmente in anticipo un formato specifico tramite la casella combinata dei formati!
 
 ![](images/entries/6585d31ab7870351c8b58c9bec57e36df50f3018.webp)
 

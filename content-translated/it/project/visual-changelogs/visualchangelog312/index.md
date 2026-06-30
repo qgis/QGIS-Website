@@ -633,7 +633,7 @@ When right clicking certain files in the browser, allowing them to be opened wit
 
 E.g. PDFs will open with the default external PDF viewer.
 
-Works with PDF, ODS, XLS(X), CSV, TXT, PNG, JPEG, TIFF, SVG (other types will likely need more work, since they aren\'t currently shown in the browser).
+Funziona con i formati PDF, ODS, XLS(X), CSV, TXT, PNG, JPEG, TIFF e SVG (per gli altri formati potrebbe essere necessario un ulteriore intervento, poiché al momento non vengono visualizzati nel browser).
 
 ![image62](images/entries/447f201d2342a64912bbef1e1d0aa3ebb8963ae4.gif)
 

@@ -34,7 +34,7 @@ Le applicazioni del software durante il corso sono generalmente concentrate su "
 
 <figure>
 <img src="../images/india_guwahati1.png" class="align-left" alt="india_guwahati1.png" />
-<figcaption>Training course at NIRD&amp;PR-NERC, Guwahati</figcaption>
+<figcaption>Corso di formazione presso NIRD&amp;PR-NERC, Guwahati</figcaption>
 </figure>
 
 ## Corsi di formazione svolti su QGIS e partecipanti

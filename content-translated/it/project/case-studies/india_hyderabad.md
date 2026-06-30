@@ -26,7 +26,7 @@ L'Istituto Nazionale di Sviluppo Rurale (NIRD) è un istituto del Ministero indi
 ## QGIS è utilizzato per tutti i corsi GIS
 <figure>
 <img src="../images/india_hyderabad2.jpg" class="align-right" alt="india_hyderabad2.jpg" />
-<figcaption>QGIS training course at NIRD Jaipur Centre</figcaption>
+<figcaption>Corso di formazione su QGIS presso NIRD Jaipur Centre</figcaption>
 </figure>
 
 Dalla nascita del centro NIRD Jaipur, viene utilizzato solo QGIS per tutti corsi di formazione GIS. Inoltre si sta consigliando di non acquistare nessun software GIS commerciale nei District (unità amministrativa in India, dopo la Nazione e lo Stato), se il vero requisito non è presente e questo risparmio possa essere utilizzato per l'acquisto di hardware come GPSs, computer ecc

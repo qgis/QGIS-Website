@@ -1511,7 +1511,7 @@ Questa funzionalità è stata sviluppata da [Loïc Bartoletti](https://www.oslan
 | Projection not recognised from Mapinfo converstion | [#34471](https://github.com/qgis/QGIS/issues/34471) | [PR #36758](https://github.com/qgis/QGIS/pull/36758) | [PR #36783](https://github.com/qgis/QGIS/pull/36783) |
 | QGIS crashes/freezes when adding a large CSV file as delimited text layer | [#36392](https://github.com/qgis/QGIS/issues/36392) | [PR #36778](https://github.com/qgis/QGIS/pull/36778) | [PR #36810](https://github.com/qgis/QGIS/pull/36810) |
 | QGIS 3.12 unknown CRS or Select Transformation | [#36837](https://github.com/qgis/QGIS/issues/36837) | [GDAL Commit 68133b8](https://github.com/OSGeo/gdal/commit/68133b8b6f724a581a5dcb19fbdcd657ddbd6c4c) | [GDAL Commit 6ae7f60](https://github.com/OSGeo/gdal/commit/6ae7f60a5914a2f16b8b1a94758f10e6621e4aca) |
-| BIGTIFF error is not obvious in processing log | [#36867](https://github.com/qgis/QGIS/issues/36867) | [GDAL Commit cfc8e61](https://github.com/OSGeo/gdal/commit/cfc8e613ad86dd4b00604dd64df239916ccda135) | [GDAL Commit fb88e3c](https://github.com/OSGeo/gdal/commit/fb88e3ca5c8905fbcaab79e96a2bfc1c36f72d08) |
+| L'errore BIGTIFF non è evidente nel log di elaborazione | [#36867](https://github.com/qgis/QGIS/issues/36867) | [GDAL Commit cfc8e61](https://github.com/OSGeo/gdal/commit/cfc8e613ad86dd4b00604dd64df239916ccda135) | [GDAL Commit fb88e3c](https://github.com/OSGeo/gdal/commit/fb88e3ca5c8905fbcaab79e96a2bfc1c36f72d08) |
 
 Questa funzionalità è stata finanziata da [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 

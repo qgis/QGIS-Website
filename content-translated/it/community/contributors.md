@@ -17,7 +17,7 @@ type: page
 ## Vincitori del Premio Sol Katz
 Celebrazione dei contributori di QGIS che hanno ricevuto il prestigioso premio Sol Katz per la loro eccezionale leadership e il loro contributo al software geospaziale open source.
 
-{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="View recipients" >}}
+{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="Visualizza i destinatari" >}}
 
 {{<rich-content-end >}}
 

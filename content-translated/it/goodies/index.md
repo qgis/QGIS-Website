@@ -30,13 +30,13 @@ Cooperiamo con Spreadshirt che produce localmente e invia i prodotti in tutti i 
 
 {{<column-start >}}
 
-![QGIS hoodie](img/hoodie.jpg)
+![felpa con cappuccio QGIS ](img/hoodie.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS tshirt](img/qgis-heart-logo.jpg)
+![tshirt QGIS](img/qgis-heart-logo.jpg)
 
 {{<column-end >}}
 
@@ -46,19 +46,19 @@ Cooperiamo con Spreadshirt che produce localmente e invia i prodotti in tutti i 
 
 {{<column-start >}}
 
-![QGIS mugs](img/qgis-q-logo.jpg)
+![tazze QGIS](img/qgis-q-logo.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS thermos](img/thermos.jpg)
+![termos QGIS](img/thermos.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS sign](img/qgis-q.jpg)
+![marchio QGIS](img/qgis-q.jpg)
 
 {{<column-end >}}
 
@@ -84,13 +84,13 @@ Alcuni design più creativi e divertenti (ma non ufficiali) sono disponibili nel
 
 {{<column-start >}}
 
-![QGIS hoodie](img/redbubble1.jpg)
+![felpa con cappuccio QGIS](img/redbubble1.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS tshirt](img/redbubble2.jpg)
+![tshirt QGIS](img/redbubble2.jpg)
 
 {{<column-end >}}
 
@@ -100,19 +100,19 @@ Alcuni design più creativi e divertenti (ma non ufficiali) sono disponibili nel
 
 {{<column-start >}}
 
-![QGIS mugs](img/redbubble3.jpg)
+![tazze QGIS](img/redbubble3.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS thermos](img/redbubble4.jpg)
+![termos QGIS](img/redbubble4.jpg)
 
 {{<column-end >}}
 
 {{<column-start >}}
 
-![QGIS sign](img/redbubble5.jpg)
+![marchio QGIS](img/redbubble5.jpg)
 
 {{<column-end >}}
 

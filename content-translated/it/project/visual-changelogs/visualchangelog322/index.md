@@ -708,7 +708,7 @@ Questa funzionalità è stata sviluppata da [Nyall Dawson](https://github.com/ny
 ### Feature: QgsExifTools class support for fetching tag values
 The QgsExifTools class can now retrieve individual exif tags from images using the readTag function.
 
-E.g.: `QgsExifTools.readTag('/my/photo/0997.JPG'), 'Exif.Image.DateTime')`
+Es.: `QgsExifTools.readTag('/my/photo/0997.JPG'), 'Exif.Image.DateTime')`
 
 Known exif tags representing time values are automatically converted to Q{Date,Time,DateTime} objects. This makes working with those tags much easier and integrates well with other parts of the QGIS API.
 

@@ -29,7 +29,7 @@ The institute, for the explained purposes, keeps in its archive about 170000, re
 
 <figure>
 <img src="../images/italy_turin1.jpg" class="align-left" alt="italy_turin1.jpg" />
-<figcaption>1929 photogram (left) and 1954 flight plan (right).</figcaption>
+<figcaption>Fotogramma del 1929 (a sinistra) e piano di volo del 1954 (a destra).</figcaption>
 </figure>
 
 ## Gestione dell'archivio
@@ -39,14 +39,14 @@ Each footprint in digitized flight plan was provided, in its attributes, with th
 
 <figure>
 <img src="../images/italy_turin2.jpg" class="align-left" alt="italy_turin2.jpg" />
-<figcaption>Photogram display (eVis Plugin)</figcaption>
+<figcaption>Visualizzazione dei fotogrammi (plugin eVis)</figcaption>
 </figure>
 
 Moreover, due to the amount of searchable data a geographical search interface was developed. Thanks to the graphical modeler (in Processing, formerly SEXTANTE, plugin) capabilities, the developed tool, by different selection masks and input boxes, allows the user to select among three layers (administrative boundaries, map sheets and rivers), find a feature by querying its table and employ it to spatially query a digitized flight plan with the purpose of selecting photograms' footprints intersecting the selected feature (Figure 3). With this procedure, is then possible to point out selected photogram and simply display them with the previously described tool or extract, by their filenames and path, photograms' files for further processing.
 
 <figure>
 <img src="../images/italy_turin3.jpg" class="align-left" alt="italy_turin3.jpg" />
-<figcaption>Graphic modeler scheme used in the selection tool (in background: purple polygons-map sheets; labeled orange polygons-photogram footprints; brown polygons-municipalities administrative borders)</figcaption>
+<figcaption>Schema del modellatore grafico utilizzato nello strumento di selezione (sullo sfondo: poligoni viola – fogli cartografici; poligoni contrassegnati in arancione – impronte del fotogramma; poligoni marroni – confini amministrativi dei comuni)</figcaption>
 </figure>
 
 La collezione dei fotogrammi è di grande interesse sia nella ricerca (ad es Godone et al, 2014) e negli ambienti professionali (Figura 4). Grazie alle procedure e strumenti descritti, la collezione è completamente accessibile e dal 2009 i fotogrammi sono stati impiegati in numerosi progetti interni ed esterni all'Istituto. Le caratteristiche di QGIS e dei plugin consentito lo sviluppo di strumenti e procedure per ottimizzare l'archivio dei fotogrammi sia nella sua gestione e nella sua esplorazione.
