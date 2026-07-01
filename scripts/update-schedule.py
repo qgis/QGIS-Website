@@ -17,6 +17,7 @@ import re
 import codecs
 from datetime import datetime, timedelta, timezone
 from icalendar import Calendar, Event
+from macos_dmg import latest_available_dmg
 
 _DL_BASE = "https://download.qgis.org"
 _TORRENT_BASE = "https://dl1.qgis.org"
@@ -268,6 +269,16 @@ for f in [
 
 ltrversion = ".".join(ltr_version.split(".")[:2])
 
+# The macOS download links must point at .dmg files that actually exist on S3.
+# The schedule can name a version whose macOS build has not been uploaded yet
+# (issue #1000), which 404s the download button, so resolve each version
+# against the generated S3 listing and fall back to the newest patch that is
+# actually available for the series.
+with open("data/downloads/s3_downloads.json") as f:
+    s3_listing = json.load(f)
+ltr_dmg_version = latest_available_dmg(ltr_version, "ltr", s3_listing)
+lr_dmg_version = latest_available_dmg(lr_version, "pr", s3_listing)
+
 with open("data/conf.json", "w") as f:
     json.dump({
         "WARNING": "produced from googlesheet via scripts/update-schedule.py - EDITS WILL BE LOST",
@@ -305,10 +316,10 @@ with open("data/conf.json", "w") as f:
         "ltr_sha": f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
         "ltr_grids_msi": f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
         "ltr_grids_sha": f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
-        "ltr_dmg": f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg",
-        "ltr_dmg_sha": f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.sha256sum",
-        "lr_dmg": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg",
-        "lr_dmg_sha": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.sha256sum",
+        "ltr_dmg": f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_dmg_version)}.dmg",
+        "ltr_dmg_sha": f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_dmg_version)}.sha256sum",
+        "lr_dmg": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_dmg_version)}.dmg",
+        "lr_dmg_sha": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_dmg_version)}.sha256sum",
         "weekly_msi": "/downloads/windows/weekly/",
 
         # torrent / magnet links (torrent hosted on dl1.qgis.org, magnet from server-generated sidecar)
@@ -324,12 +335,12 @@ with open("data/conf.json", "w") as f:
         "ltr_grids_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
         "ltr_grids_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
         "ltr_grids_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
-        "lr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg"),
-        "lr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg"),
-        "lr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg"),
-        "ltr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg"),
-        "ltr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg"),
-        "ltr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg"),
+        "lr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_dmg_version)}.dmg"),
+        "lr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_dmg_version)}.dmg"),
+        "lr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_dmg_version)}.dmg"),
+        "ltr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_dmg_version)}.dmg"),
+        "ltr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_dmg_version)}.dmg"),
+        "ltr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_dmg_version)}.dmg"),
     }, f, indent=4)
 
 o = open("content/schedule.ics", "wb")
