@@ -11,6 +11,8 @@ Reviewer: Tim Sutton
 
 {{< content-start >}}
 
+# Security
+
 ## Security information
 
 The QGIS community takes security seriously. We are aware that QGIS is deployed in sensitive environments. This page outlines how the QGIS project responds to vulnerabilities and security matters. 
