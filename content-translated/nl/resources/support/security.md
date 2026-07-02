@@ -2,6 +2,7 @@ ____
 type: "page" title: "Security" subtitle: "" draft: false sidebar: true Reviewed: 5 June 2024 Reviewer: Tim Sutton
 -
 {{<content-start >}}
+# Beveiliging
 ## Informatie over beveiliging
 De gemeenschap van QGIS neemt beveiliging serieus. We zijn ons ervan bewust dat QGIS wordt uitgerold in gevoelige omgevingen. Deze pagina geeft een overzicht van hoe het project QGIS reageert op kwetsbaarheden en zaken met betrekking tot beveiliging.
 ### Wat is een kwetsbaarheid in QGIS?
