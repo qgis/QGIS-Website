@@ -28,7 +28,7 @@ jobs:
           nix flake update nixpkgs-version
 
       - name: Create pull request
-        uses: peter-evans/create-pull-request@v8.0.0
+        uses: peter-evans/create-pull-request@v8.1.1
         with:
           add-paths: |
             flake.lock
