@@ -51,6 +51,9 @@
         rec {
           website = pkgs.callPackage ./nix/package.nix {
             theme = qgis-website-theme; # <-- pass the theme source in
+            # Commit hash from the flake's git metadata (clean tree only;
+            # falls back to the dirty short rev, then "unknown" for tarballs).
+            commitHash = self.shortRev or self.dirtyShortRev or "unknown";
            };
           default = website;
         }
