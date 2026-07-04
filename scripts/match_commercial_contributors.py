@@ -169,7 +169,10 @@ def save_matches(matches, total_orgs, unmatched_count):
     print(f"   - Active contributors: {active_count}")
     print(f"   - Inactive contributors: {inactive_count}")
     print(f"   Unmatched: {unmatched_count}")
-    print(f"   Match rate: {matched/total_orgs*100:.1f}%")
+    # total_orgs is 0 when the commercial-support data is empty or missing;
+    # report 0% rather than raising ZeroDivisionError.
+    match_rate = (matched / total_orgs * 100) if total_orgs else 0.0
+    print(f"   Match rate: {match_rate:.1f}%")
     
     # Print matched organizations
     if matched > 0:
