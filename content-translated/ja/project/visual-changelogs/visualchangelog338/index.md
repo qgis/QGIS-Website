@@ -232,16 +232,16 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ![](images/entries/9622032fd646ac79cc63e48ed30eca1841c9993b.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add "dynamic elevation range per band" mode for rasters
-A new dynamic mode for configuration raster elevation is provided where the elevation range for raster bands is calculated using a pair of QGIS Expressions for the lower and the upper limits of the elevation range for the layer.
+### 機能：ラスターへの"バンドごとの動的標高範囲"モードの追加
+ラスターバンドの標高範囲をレイヤーの標高範囲の下限と上限のためのQGIS式のペアを使用して計算するラスター標高設定の新しい動的モードが提供されます。
 
-In this mode, the user can specify a QGIS expression for the lower and upper value corresponding to raster bands, using variables like @band, @band\_name, and @band\_description alongside standard QGIS Expression values, globals, and project variables.
+このモードでは、ユーザーは @band、@band\_name、@band\_description のような変数を標準のQGIS式の値、グローバル変数、プロジェクト変数と組み合わせて使用して、ラスターバンドに対応する下限値と上限値のQGIS式を指定できます。
 
 For example:
 
     @band * 100
     
-This can be used when each band represents a 100 m vertical slice of data.
+これは各バンドがデータの100m垂直スライスを表す場合に使用できます。
 
 The expression will be evaluated when required to determine the actual elevation range corresponding to each band.
 

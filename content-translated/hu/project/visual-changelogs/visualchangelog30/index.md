@@ -776,8 +776,8 @@ A következő algoritmusokat a raszter elemzés modulból adtuk a feldolgozásho
 - Kitettség
 - Lejtőszög
 - Érdesség
-- Domborzat árnyékolás
-- Domborzat árnyalás
+- Domborzatárnyékolás
+- Domborzatszínezés
 
 Most ezek az algoritmusok használhatók szkriptekben, modellekben és kötegelt feldolgozásban.
 
