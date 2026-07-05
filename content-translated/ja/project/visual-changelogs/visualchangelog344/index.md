@@ -311,7 +311,7 @@ Additional enhancements include:
 
 <img src="images/entries/5501d969ec51c06d6ecf49c691c484bec4d08b33.gif" class="img-responsive img-rounded" />
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+この機能は [the QGIS user group Switzerland](https://qgis.ch/) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ### 機能: 属性フォームデザイナーへの検索ボックスの追加

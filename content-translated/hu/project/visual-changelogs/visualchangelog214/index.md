@@ -345,7 +345,7 @@ For vector and raster files, QGIS relies on the GDAL/OGR library. It means that 
 - CouchDB Spatial (via URL)
 
 **Raszter fájlokhoz:**
-- .ovr vrt raszter fájl formátum
+- .ovr a vrt raszteres fájlformátumhoz
 
 ![image38](images/entries/7a628a66f2f63454bd65fbedda309ff5a7d25f1e.png.400x300_q85_crop.webp)
 

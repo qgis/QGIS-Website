@@ -18,7 +18,7 @@ This is the log for the next release of QGIS - version 2.16.0 \'Nødebo\'. The D
 
 **Ez nem egy hosszútávú kiadás**
 
-Ez a kiadás nem egy hosszú távú (LTR) kiadás.A felhasználók, akik egy évig nem változó, de hibajavításokat kapó QGIS verziót szeretnének, azokat az aktuális 2.14 LTR kiadás használatára invitáljuk (mely a QGIS 2.16 kiadással vált a hivatalos LTR változattá).
+Ez a kiadás nem egy hosszútávú (LTR) kiadás. Azok a felhasználók, akik egy évig nem változó, de hibajavításokat kapó QGIS verziót szeretnének, azokat az aktuális 2.14 LTR kiadás használatára biztatjuk (mely a QGIS 2.16 kiadással vált a hivatalos LTR változattá).
 
 **New Features in QGIS 2.16 \'Nødebo\'**
 

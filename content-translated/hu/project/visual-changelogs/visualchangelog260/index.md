@@ -167,7 +167,7 @@ Sometimes it is useful to be able to show more than one overview frame for a map
 ![](images/entries/88b55cc5f5e7cfb62486fe3b4867b7133ae66953.webp)
 ### Funkció: HTML elem fejlesztések
 There are a number of useful new options for the HTML composer item:
-- Lehetőség a HTML forrás manuális bevitelére
+- Lehetőség a HTML-forrás manuális bevitelére
 - QGIS expressions within HTML source can be evaluated prior to rendering HTML content
 - Adat vezérelt URL a HTML forráshoz
 - Allow for creating a user stylesheet to override HTML styles
@@ -244,7 +244,7 @@ Most már saját testreszabott szín palettákat definiálhat a QGIS-ben.
 - You can import/export colors to a GPL palette file.
 
 ![](images/entries/a156f408d7a87fc930095c8fd68e9fba0fc0a817.webp)
-### Funkció: Új szín kiválasztó párbeszédablak
+### Funkció: Új színválasztó párbeszédablak
 There is a new custom QGIS color picker dialog. Features include:
 : - Sliders for hue, saturation, value, red, green, blue color components.
   - Alpha slider.

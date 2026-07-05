@@ -92,7 +92,7 @@ The final tool I use is Adobe After Effects as I have recently got into animatin
 
 *Example: Strikes on Syria in February 2016.*
 
-**QGIS**: Letudja írni a QGIS erősségeit és gyengeségeit tekintettel az ön által megoldandó feladatra?
+**QGIS**: Le tudná írni a QGIS erősségeit és gyengeségeit tekintettel az ön által megoldandó feladatra?
 
 **Steven**: When I first used QGIS I saw it as a specialist tool, fit for only dealing with specific tasks. I really didn't see it a production tool. In late 2014 two of my colleagues went on a QGIS course held by Alasdair Rae at Sheffield University. They both enthused about how good QGIS was, so I took it upon myself to evaluate it as a tool that could be used to produce all our maps.
 

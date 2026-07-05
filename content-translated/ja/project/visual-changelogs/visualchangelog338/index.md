@@ -243,130 +243,130 @@ For example:
     
 これは各バンドがデータの100m垂直スライスを表す場合に使用できます。
 
-The expression will be evaluated when required to determine the actual elevation range corresponding to each band.
+式は各バンドに対応する実際の標高範囲を決定するために必要に応じて評価されます。
 
-This differs from the"Fixed Elevation Range Per Band" mode which requires users to manually enter an elevation for each band separately, and these values are then treated as constants. That mode works best for rasters with non-regular steps in the band elevation values, while the dynamic mode is more suitable for data that includes regular elevation steps across each band.
+これはユーザーが各バンドの標高を個別に手動で入力する必要がある "バンドごとの固定標高範囲" モードとは異なり、これらの値は定数として扱われます。そのモードはバンド標高値に不規則なステップを持つラスターに最も適しており、動的モードは各バンドにわたって規則的な標高ステップを含むデータに適しています。
 
 ![](images/entries/d40450a1bcc9d3d2d3c5565681228b1d52256b69.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add fixed elevation range per dataset group mode for mesh layers
-Additional functionality to set a fixed elevation range per dataset group on mesh layers mimics the new "fixed range per band" mode raster layers but allows a per-dataset group elevation range to be set for mesh layers.
+### 機能：メッシュレイヤーへのデータセットグループごとの固定標高範囲モードの追加
+メッシュレイヤーのデータセットグループごとに固定標高範囲を設定する追加機能は、ラスターレイヤーの新しい "バンドごとの固定範囲" モードを模倣しますが、メッシュレイヤーのデータセットグループごとの標高範囲を設定できます。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add option to export all lines with minimal width in dxf exports
-An optional setting has been added to dxf exports that will allow users to write all lines with minimal width 0 (hairline).
+### 機能：dxfエクスポートでの最小幅ですべてのラインをエクスポートするオプションの追加
+dxfエクスポートに最小幅0（ヘアライン）ですべてのラインを書き込むことができるオプション設定が追加されました。
 
-Lines within DXF files having zero width typically remain minimal in the CAD regardless of zoom level, so this functionality can be quite useful for compatibility with exported DXFs that are edited with other software, especially in use cases where high data density is a concern.
+幅がゼロのDXFファイル内のラインは、ズームレベルに関わらずCADでは通常最小限に維持されるため、この機能は特にデータ密度が高い場合に他のソフトウェアで編集されたエクスポートされたDXFとの互換性にかなり役立ちます。
 
 ![](images/entries/1c7a18b41d42049e6c6ab7538d74d69406b837bb.webp)
 
-This feature was funded by [Stadtwerke München](http://www.swm.de/)
+この機能は [Stadtwerke München](http://www.swm.de/) の資金提供で開発されました
 
 This feature was developed by [mhugent](https://github.com/mhugent)
-### Feature: Allow users to override the layer names exported to DXF
-It is now possible to override the output name of individual layers exported, with new configuration options added to the DXF export dialogs for project exports, layer exports, and the Export layers to DXF Processing algorithm.
+### 機能：DXFにエクスポートされるレイヤー名のオーバーライドをユーザーに許可
+プロジェクトエクスポート、レイヤーエクスポート、およびレイヤーをDXFにエクスポートするプロセッシングアルゴリズムのDXFエクスポートダイアログに新しい設定オプションが追加され、エクスポートされた個々のレイヤーの出力名を上書きできるようになりました。
 
 ![](images/entries/83f65d9f8afbd45ecc0fa6b2804a7981f6192e7e.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+この機能は [the QGIS user group Switzerland](https://qgis.ch/) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Create DXF blocks for point symbols with data defined properties
-Additional enhancements have been added to the capability of utilizing references within a DXF, especially for complex data-defined properties, providing much smaller DXF outputs for complex layers that include repeated point symbols.
+### 機能：データ定義プロパティを持つポイントシンボルのDXFブロックの作成
+特に複雑なデータ定義プロパティに対して、DXF内での参照の利用能力に追加機能が加えられ、繰り返されるポイントシンボルを含む複雑なレイヤーのDXF出力がはるかに小さくなります。
 
-A process of attribute hashing is utilized to optimize the performance and account for all possible attribute combinations. In instances where many combinations are unique, each block would only be used nearly once - resulting in a large output file. To manage such cases, the "Export Project to DXF" dialog now includes new configuration options to limit the number of blocks per symbol layer (-1 means no limitation). If the limit is set to an integer value, e.g. 5, then only the 5 blocks with the highest number of references are created and the other symbols are written inline.
+属性ハッシングのプロセスを使用してパフォーマンスを最適化し、すべての可能な属性の組み合わせを考慮します。多くの組み合わせが一意である場合、各ブロックはほぼ1回しか使用されず、大きな出力ファイルになります。このような場合を管理するため、"プロジェクトをDXFにエクスポート" ダイアログに、シンボルレイヤーごとのブロック数を制限するための新しい設定オプションが追加されました（-1は制限なしを意味します）。制限が整数値（例：5）に設定されている場合、参照数が最も多い5つのブロックのみが作成され、他のシンボルはインラインで書き込まれます。
 
 ![](images/entries/5de078fe33adb052f1177d7359432e69c84d81fa.webp)
 
-This feature was funded by [Stadtwerke München](http://www.swm.de)
+この機能は [Stadtwerke München](http://www.swm.de) の資金提供で開発されました
 
 This feature was developed by [mhugent](https://github.com/mhugent)
-### Feature: Add option 'Use only selected features' to DXF export
-A new option has been added to DXF export dialogs that will allow users to export only the features active in the current selection.
+### 機能：DXFエクスポートに 'Use only selected features'  オプションの追加
+DXFエクスポートダイアログに、現在の選択でアクティブな地物のみをエクスポートできる新しいオプションが追加されました。
 
-By default, this setting will be set to false.
+デフォルトでは、この設定はfalseに設定されます。
 
 ![](images/entries/28e6ac14aac9b118efadc23167f795da2bc0c19c.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
+この機能は [the QGIS user group Switzerland](https://www.qgis.ch/) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
-### Feature: Import/ Export 'DXF Export' dialog settings
-Users to save and restore GUI settings for the DXF Export dialog, making it possible to export any number of configurations for improved reusability or to share them with colleagues for enhanced collaboration.
+### 機能：’DXFエクスポート" ダイアログ設定のインポート/エクスポートの追加
+ユーザーがDXFエクスポートダイアログのGUI設定を保存および復元でき、再利用性を向上させるまたはコラボレーションを強化するために同僚と共有するための任意の数の設定をエクスポートできるようになります。
 
-Settings are exported to an XML file which can be loaded into the DXF Export configuration interface, overwriting the existing configuration values.
+設定はXMLファイルにエクスポートされ、既存の設定値を上書きしてDXFエクスポート設定インターフェースに読み込むことができます。
 
 ![](images/entries/7f343b6a090823e6a090f4a33423cdd52fb655a8.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://qgis.ch/)
+この機能は [the QGIS user group Switzerland](https://qgis.ch/) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ## フォームとウィジェット
-### Feature: Add CMYK support for Color Widget
-CMYK color support has been added for the color widget in line with the [CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283).
+### 機能：カラーウィジェットへのCMYKサポートの追加
+[CMYK QEP](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/283) に沿って、カラーウィジェットにCMYKカラーサポートが追加されました。
 
 ![](images/entries/b5572a60bcc06b580b55f42d2b87f6825daa5774.webp)
 
-This feature was funded by Métropôle de Bordeaux
+この機能は Métropôle de Bordeaux によった開発されました
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
-### Feature: Add parent feature scope when adding/editing a child feature through the relation editor widget
-A current\_parent\_\* scope is now provided when adding and editing child features through the attribute form's relation editor widget.
+### 機能:リレーションエディターウィジェットを通じて子地物を追加/編集する際の親地物スコープの追加
+属性フォームのリレーションエディターウィジェットを通じて子地物を追加および編集する際に、 current\_parent\_\* スコープが提供されるようになりました。
 
-This is very useful in contexts where a captured feature or value may rely on the parent entity being captured at the same time, but as the parent feature has not yet been captured, the attributes and geometry cannot be retrieved.
+これはキャプチャされた地物または値が同時にキャプチャされている親エンティティに依存している可能性がある状況で非常に役立ちますが、親地物がまだキャプチャされていない場合、属性とジオメトリを取得できません。
 
-This feature was funded by [Hansestadt Herford](https://www.herford.de/)
+この機能は [Hansestadt Herford](https://www.herford.de/) の資金提供で開発されました
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add "match contains" to autocompleter in value relation widget
-Previously, the autocomplete function would match from the beginning of the string only, but a new checkbox option allows users to match contained values within the entire string.
+### 機能:値リレーションウィジェットのオートコンプリーターへの "一致を含む" の追加
+以前は、オートコンプリート機能は文字列の先頭からのみ一致していましたが、新しいチェックボックスオプションにより、ユーザーが文字列全体内の含まれる値と一致させることができるようになりました。
 
-The old behavior is still the default for autocomplete, making this setting an opt-in operation.
+古い動作は引き続きオートコンプリートのデフォルトであるため、この設定はオプトイン操作になります。
 
 ![](images/entries/3834e0b22600cce776ac149910fd9246bda6bd9c.webp)
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Implement value relation's grouping functionality
-Grouping functionality has been added for the value relation editor widget, allowing users to regroup items into buckets of values. Users are also given the option to show the group value as a group header name in the combo box and table widgets.
+### 機能:値リレーションのグループ化機能の実装
+値リレーションエディターウィジェットにグループ化機能が追加され、ユーザーがアイテムを値のバケツに再グループ化できるようになりました。ユーザーはコンボボックスとテーブルウィジェットでグループ値をグループヘッダー名として表示するオプションも与えられています。
 
 ![](images/entries/3ef4fa48ee89cc91babb736dd477a1db6b66bcbc.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 ## レイヤ凡例
-### Feature: Show a color ramp legend for vector heatmap layers
-Instead of showing no legend for these layers, QGIS will now show the color ramp as a gradient bar.
+### 機能: ベクターヒートマップレイヤーのカラーランプ凡例の表示
+これらのレイヤーの凡例を表示しない代わりに、QGISはカラーランプをグラジェントバーとして表示するようになりました。
 
-Users can control the text for the min/ max labels, the direction of the bar, and the font settings.
+ユーザーは最小値/最大値ラベルのテキスト、バーの方向、フォント設定を制御できます
 
-This update also introduced changes to the internal API for vector renderers so that renderers have the flexibility to create other types of legend nodes other than `QgsSymbolLegendNodes` and provides the opportunity for future extensions to existing renderers.
+この更新はベクターレンダラーの内部APIへの変更も導入し、レンダラーが `QgsSymbolLegendNodes` 以外の他の種類の凡例ノードを作成する柔軟性を持ち、既存のレンダラーへの将来の拡張の機会を提供するようになりました。
 
 ![](images/entries/06b024c9294de21d36cc6efb702c342106a6242d.webp)
 
 この機能は Rubicon Concierge Real Estate Services の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add layer tree filter for "Show Broken Layers Only"
-When checked, only layers with broken sources will be shown in the tree.
+### 機能: "壊れたレイヤーのみ表示"のレイヤーツリーフィルターの追加
+チェックすると、ソースが壊れているレイヤーのみがツリーに表示されます。
 
-This allows users to easily find broken layers in large complex projects, where they may otherwise escape notice!
+これにより、ユーザーは大規模で複雑なプロジェクトで気づかれないかもしれない壊れたレイヤーを簡単に見つけることができるようになります！
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## プロセシング
-### Feature: Show more detail in history dialog
-A new tree display is provided for review of processing history entries, where the root item for each entry shows the full algorithm log when clicked and the respective python or qgis\_process commands are displayed as child items.
+### 機能: 履歴ダイアログでの詳細表示
+プロセッシング履歴エントリを確認するための新しいツリー表示が提供されます。各エントリのルートアイテムはクリックするとアルゴリズムの完全なログを表示し、それぞれのPythonまたは qgis\_process コマンドが子アイテムとして表示されます。
 
-This provides more useful information for users browsing the history, while still making all the previous information available.
+これにより、すべての以前の情報を引き続き利用可能にしながら、履歴を閲覧するユーザーにより有用な情報が提供されます。
 
 ![](images/entries/34df4b46463545d3d9fc20168d386ffc04d9341d.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add "Run Selected Steps" option to model designer
-A new action will allow users to run only the selected steps in a model, effectively allowing users to run a subset of a model.
+### 機能: モデルデザイナーへの "選択したステップを実行" オプションの追加
+新しいアクションにより、ユーザーはモデル内の選択したステップのみを実行でき、効果的にモデルのサブセットを実行できるようになります。
 
-The initial state will be taken from any previous executions of the model through the designer, so results from previous steps in the model are available for the selected steps.
+初期状態はデザイナーを通じたモデルの以前の実行から取得されるため、モデルの以前のステップの結果が選択されたステップで利用可能になります。
 
-This makes it possible for a user to fix parts of a large model, without having to constantly run the entire model to test. Especially<br />useful when earlier steps in the model are time-consuming!
+これにより、ユーザーはテストのために常にモデル全体を実行することなく、大きなモデルの一部を修正することが可能になります。 特に<br />モデルの初期ステップが時間のかかる場合に役立ちます！
 
 この機能は City of Canning によって資金提供されました
 
@@ -551,7 +551,7 @@ Like other QGIS registries, the profile source registry is available from the `Q
 
 ![Custom profile source example](images/entries/custom_profile_source.webp)
 
-This feature was funded by [the QGIS user group Switzerland](https://www.qgis.ch/)
+この機能は [the QGIS user group Switzerland](https://www.qgis.ch/) の資金提供で開発されました
 
 This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ## 注目すべき修正

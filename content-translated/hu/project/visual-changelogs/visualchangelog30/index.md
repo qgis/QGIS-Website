@@ -132,7 +132,7 @@ This feature was funded by [Kartoza](http://www.kartoza.com)
 This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 ## 3D funkciók
 ### Funkció: 3D térkép megjelenítés és terep generálás
-Egy teljesen új natív 3D térképnézetünk van a QGIS-ben! A 3D-s térképnézet 2D-s térképet jelenít meg (a projekt rétegeiból) a terepen. Alapértelmezés szerint a terep egy sík sík, de egy  digitális domborzatmodellt tartalmazó raszter réteget használhatunk a magassági adatok forrásaként.
+Egy teljesen új natív 3D térképnézetünk van a QGIS-ben! A 3D-s térképnézet 2D-s térképet jelenít meg (a projekt rétegeiből) a terep fölött. Alapértelmezés szerint a terep egy sík, de egy  digitális domborzatmodellt tartalmazó raszterréteget használhatunk a magassági adatok forrásaként.
 
 Use menu View \> New 3D Map View to add a 3D view of the project. This will create a new dock widget with 3D map canvas. The 3D view uses the same controls like 2D map views to browse the map using mouse (drag map to move it around, mouse wheel to zoom) or keyboard arrow keys. In addition there are camera controls specific to 3D views: it is possible to rotate and tilt camera by one of the following ways:
 - középső gomb nyomvatartásával húzza az egeret

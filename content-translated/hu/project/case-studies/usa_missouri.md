@@ -25,7 +25,7 @@ The Missouri Herpetological Atlas Project (MOHAP) was initiated in 1997 as a res
 MOHAP hosts a web site at <http://atlas.moherp.org/> that describes the project in detail and displays a variety of static maps, all produced by QGIS. An atlas, published as a downloadable PDF, is released periodically as a gratis publication in the spirit of open access to scientific research (Daniel, R.E. and B.S. Edmond. 2012. Atlas of Missouri Amphibians and Reptiles for 2011. \<<http://atlas.moherp.org/pubs/atlas11.pdf>\>). Published maps are used by field biologists, land managers, and others to better understand species\' distributions in Missouri.
 
 As of February 2013, the MOHAP database contained 31,495 entries representing the specimens housed in 34 museum collections and cited in 32 historical literature sources; 5,118 documented county records; 6,884 unique localities; and 12,866 unique species / locality combinations. The state\'s herpetofauna consists of 113 species.
-## Statikus térkép készítés és exportálás
+## Statikus térkép készítése és exportálása
 A QGIS-szel történő térképgeneráláshoz szükséges adatok egy PostgreSQL adatbázisban vannak tárolva, PostGIS térbeli kiterjesztéssel. Mivel a térképek statikus jellegűek és végső soron csak a webes megjelenítést, vagy a nyomtatott atlaszt szolgálják, ezért automatikusan generálhatóak minden egyes fajra egy egyedi QGIS Python bővítménnyel (1. és 2. ábra).
 
 <figure>

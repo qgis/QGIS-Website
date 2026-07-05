@@ -86,7 +86,7 @@ Rendszeresen végzünk "Coverity Scan" vizsgálatot a QGIS kódbázison. Ennek e
 
 ![](images/entries/4ec86080ff150743f1bdc88d3ac7881a6cd405de.webp)
 ## Elemző eszközök
-### Funkció: mérés párbeszédablak fejlesztések
+### Funkció: mérés párbeszédablak fejlesztései
 A mérőeszközt továbbfejlesztettük, így már kiválasztható a mértékegység a párbeszédablakban. A párbeszédablaknak van egy információs része is, ami mutatja a mérés közben érvényes beállításokat.
 
 ![](images/entries/67a001d3d800feec8805de698ed364e91d00daab.webp)
@@ -232,7 +232,7 @@ In the DB Manager SQL editor, it is now possible to highlight a portion of the S
 ![](images/entries/0d1343e84aa0946becab1e37880a58ceeffbd491.webp)
 ## QGIS Szerver
 ### Funkció: Szerver python modulok
-A Python modulok támogatása a QGIS szerveren a Python erejét hozza a szerver oldalra, az új funkciók gyors, hatékony fejlesztését és továbbítását lehetővé téve.
+A QGIS Szerver Python-bővítmények támogatása a Python teljesítményét a szerveroldalra is kiterjeszti, lehetővé téve az új funkciók gyors és hatékony fejlesztését és bevezetését.
 
 **This feature was developed by:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
 ### Funkció: réteg stílusok támogatása

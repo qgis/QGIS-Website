@@ -47,7 +47,7 @@ Besides Ctrl-Tab you can now do Ctrl-Shift-Tab, which will show you the Map and 
 
 Ezt a funkciót Richard Duivenvoorde fejlesztette
 ## Térképeszközök
-### Funkció: az egyszerűsítés térkép eszköz képes az elemeket simítani is
+### Funkció: az egyszerűsítés térképeszköz képes az elemeket simítani is
 The Simplify Features map tool has been renamed to \"Simplify/Smooth Features\", and now supports interactive smoothing of features.
 
 ![image2](images/entries/eca7851f8710661b929a99722afd28707f5926b3.png.400x300_q85_crop.webp)
@@ -118,7 +118,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 Ezt a funkciót fejlesztette Mathieu Pellerin, Nyall Dawson
 ### Funkció:Segítőkészebb kifejezés szerkesztő
-A kifejezés szerkesztő most könnyebbé teszi a kifejezések összeállítását a QGIS-ben!
+A kifejezésszerkesztő mostantól könnyebbé teszi a kifejezések összeállítását a QGIS-ben!
 - The builder now shows the description for data defined values, including the range of expected values from the expression
 - Ctrl+kattintás egy függvény nevén az aktuális kifejezésben automatikusan megnyitja a függvény súgóját.
 - Most jeleket helyez el a kifejezés hibás részénél
@@ -152,7 +152,7 @@ Prefixes of locator filters can now be customized under the application settings
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
 This feature was developed by [Denis Rouzaud, OPENGIS.ch](https://opengis.ch)
-### Funkció: HTTP(S), FTP vagy felhő szolgáltatásban tárolt vektor vagy raszter réteg megnyitása
+### Funkció: HTTP(S)-en, FTP-n vagy felhőszolgáltatásban tárolt vektoros vagy raszteres réteg megnyitása
 In 3.2, the data source manager\'s vector and raster panels have been updated to simplify opening of vector and raster datasets stored on HTTP(S), FTP, or cloud services. Basic HTTP(S) authentication support included.
 
 ![image11](images/entries/06e06201fb4db385ae14d6932353ce0b0b035e83.jpg.400x300_q85_crop.webp)
@@ -199,7 +199,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 ### Funkció: Konfigurálható térkép tipp késleltetés
 Ezt a funkciót fejlesztette jdugge
 ### Funkció: Réteg vagy csoport mozgatása a réteg panel tetejére
-A kiválasztott rétegeket vagy csoportokat a réteg panel tetejére mozgatja.
+A kiválasztott rétegeket vagy csoportokat a rétegpanel tetejére mozgatja.
 
 Ezt a funkciót fejlesztette Mie Winstrup
 ### Funkció: Statisztikai panel tartalmát a vágólapra másoló gomb
@@ -250,7 +250,7 @@ Offline editing now also supports layers with Z and M coordinates.
 This feature was funded by [Oester Messtechnik](https://messtechnik.ch/)
 
 This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
-### Funkció: Mata adatok a QGIS projektekhez
+### Funkció: Mataadatok a QGIS-projektekhez
 Continuing the metadata work begun in QGIS 3.0, 3.2 now supports metadata for QGIS projects. This allows for detailed metadata to be set in project properties, including abstracts, keywords, contact details, links, etc.
 
 ![image16](images/entries/eb1394b46bf05e8a9b6be480cac4382c2f22a865.png.400x300_q85_crop.webp)

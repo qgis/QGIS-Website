@@ -39,7 +39,7 @@ With QGIS 2.0 you can specify what QGIS should do when it starts: `New Project` 
 Current system environment variables can now be viewed and many configured within the application Options dialog. Useful for platforms, such as Mac, where a GUI application does not necessarily inherit the user\'s shell environment. Also useful for setting/viewing environment variables for the external tool sets controlled by the processing toolbox, e.g. SAGA, GRASS; and, for turning on debugging output for specific sections of the source code.
 
 ![image6](images/changelog-2.0_sys-env-options.png)
-### Funkció: Felhasználó definiált nagyítási méretarnyok
+### Funkció: Felhasználó által definiált nagyítási méretarányok
 A listing of zoom scales can now be configured for the application and optionally overridden per project. The list will show up in the `Scale` popup combo box in the main window status bar, allowing for quick access to known scales for efficiently viewing and working with the current data sources. Defined scales can be exported to an XML file that can be imported into other projects or another QGIS application.
 
 ![image7](images/changelog-2.0_predefined-scales.png)
@@ -168,7 +168,7 @@ Having nicely align map items is critical to making nice printed maps. Auto snap
 Sometimes you need to align objects a curtain distance on the composer. With the new manual snapping lines you are able to add manual snap lines which allow for better align objects using a common alignment. Simply drag from the top or side ruler to add new guide line.
 
 ![image25](images/2013-09-05_10_09_41-Composer_1.png)
-### Funkció: Térképsorozat generálás
+### Funkció: Térképsorozat generálása
 Ever needed to generate a map series? Of course you have. The composer now includes built in map series generation using the atlas feature. Coverage layers can be points, lines, polygons, and the current feature attribute data is available in labels for on the fly value replacement.
 
 ![image26](images/Picture1.png)

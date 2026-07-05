@@ -91,7 +91,7 @@ Hálás köszönet a szponzorainknak!
 
 2012 - 7. QGIS fejlesztő találkozó Lyonban
 -
-A 7. QGIS fejlesztő találkozót 2012. április 12-16 között Lyonban tartották, Franciaországban.
+A 7. QGIS fejlesztői találkozót 2012. április 12-16 között Lyonban tartották, Franciaországban.
 
 Hálás köszönet a szponzorainknak!
 * [3Liz](http://www.3liz.com)

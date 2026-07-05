@@ -865,7 +865,7 @@ With this feature we added a large collection of random number raster generation
 2. Véletlen raszter réteg létrehozása (exponenciális eloszlás)
 3. Véletlen raszter réteg létrehozása (gamma eloszlás)
 4. Véletlen raszter réteg létrehozása (negatív binomiális eloszlás)
-5. Véletlen raszter réteg létrehozása (normális eloszlás)
+5. Véletlenszerű raszterréteg létrehozása (normális eloszlás)
 6. Véletlen raszter réteg létrehozása (poisson eloszlás)
 7. Véletlen raszter réteg létrehozása (egyenletes eloszlás)
 

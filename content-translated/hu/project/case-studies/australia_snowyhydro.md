@@ -86,7 +86,7 @@ The output from the model is a vector polygon showing the snow covered area with
 <figcaption>Image 1.1 - Normalised Difference Snow Index (NDSI) QGIS processing toolbox model</figcaption>
 </figure>
 
-## Eredmények/következtetés
+## Eredmények és következtetés
 The QGIS processing toolbox is a powerful way to automate a workflow such as this snow classification. The model shown above successfully automates the snow classification process, and delivers a GIS dataset that can be used for visualisation and input into further statistical applications. It successfully removes subjective user error associated with previous methods used by SHL, while providing a repeatable and consistent classification tool. Some seasonal results can be viewed here.
 ### Szerző
 Andrew Jeffrey is a GIS Analyst with Snowy Hydro Limited based in Cooma NSW, Australia. He graduated from Charles Sturt University in Wagga Wagga with a Bachelor of Science (Bsc) majoring in Spatial Information Systems in 2004. While at Snowy Hydro Limited he has been able to provide spatial support to exciting projects such as the Cloud Seeding experiment, and day to day operations within the organisation.

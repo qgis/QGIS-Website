@@ -74,7 +74,7 @@ Valamint az alábbiakban felsorolt számos tétel, a következő fejlesztések t
 - Improved icon bars and icons in dockable widgets to occupy less screen real estate and for improved OSX appearance
 - GRASS modul / szolgáltató fejlesztések
 - A nem latin karakterek támogatása a görbe menti címkékhez
-- Jelentősen javított és robusztus raszter kalkulátor és geoferáló eszköz
+- Jelentősen javított és robusztusabb raszterkalkulátor és georeferáló eszköz
 - Improved UI and workflow for the data defined label properties window
 
 ![image16](images/entries/db0cb94196fd524d93236131418f6e5f3bbf6f25.webp)
@@ -110,13 +110,13 @@ Then add the layer `curves` to your project.
 Can display summary statistics (e.g. mean, standard deviation, \...) for a field or expression from a vector layer or selection. This is provided by means of a new dock panel that you can activate from the `View -> Panels -> Statistics` menu. Please note that you will only be able to generate statistics on **vector layers** that have a **numeric column**.
 
 ![image1](images/entries/7d52fdffac5546ea3f39ee4dac5dbe19f961703a.webp)
-### Funkció: logaritmus függvények használata a raszter kalkulátorban
+### Funkció: logaritmikus függvények használata a raszterkalkulátorban
 The raster calculator (`Raster -> Raster Calculator` in the QGIS menu) is a tool that allows you to perform matrix operations on one or more raster layers. With QGIS 2.10 you can now use `LN` and `LOG10` functions in the raster calculator.
 
 ![image2](images/entries/13c65100ab57ed8f97fa23b08704ca726a7c33da.webp)
 ### Funkció: Új zonális statisztika lehetőségek
 Zonal statistics provide a way to extract aggregate values for the pixels underlying a polygon. The following new features have been added to our zonal statistics tool:
-- most kiválaszthatja melyik statisztikát számítsa
+- most kiválaszthatja, hogy melyik statisztikát szeretné kiszámítani
 - statisztikai számítások hozzáadása (medián, szórás, min, max, tartomány, kisebbség, többség és variancia) 
 - lehetőség a raszter sáv kiválasztására a statisztikához
 
