@@ -3,32 +3,32 @@
   "prefix": "",
   "distribution": "ubuntugis_ltr",
   "source_folder": "ubuntugis-ltr",
-  "generated_at": "2026-05-30T18:58:09.087805+00:00",
+  "generated_at": "2026-07-06T09:12:25.700282+00:00",
   "statistics": {
-    "total_files": 2315,
-    "total_size": 81121007854,
-    "total_size_formatted": "75.55 GB",
+    "total_files": 2348,
+    "total_size": 82597170461,
+    "total_size_formatted": "76.92 GB",
     "by_category": {
       "other": {
-        "count": 127,
-        "size": 6587332191,
-        "size_formatted": "6.13 GB"
+        "count": 128,
+        "size": 6587518457,
+        "size_formatted": "6.14 GB"
       },
       "archive": {
-        "count": 88,
-        "size": 12113364405,
-        "size_formatted": "11.28 GB"
+        "count": 89,
+        "size": 12340407982,
+        "size_formatted": "11.49 GB"
       },
       "installer": {
-        "count": 2100,
-        "size": 62420311258,
-        "size_formatted": "58.13 GB"
+        "count": 2131,
+        "size": 63669244022,
+        "size_formatted": "59.30 GB"
       }
     },
     "by_extension": {
-      ".deb": 2100,
-      ".gz": 77,
-      ".dsc": 59,
+      ".deb": 2131,
+      ".gz": 78,
+      ".dsc": 60,
       "no extension": 45,
       ".bz2": 11,
       ".db": 7,
@@ -37,7 +37,7 @@
       ".sh": 1,
       ".d71472c4": 1
     },
-    "last_updated": "2026-05-30T18:58:09.086931+00:00"
+    "last_updated": "2026-07-06T09:12:25.699481+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -150,8 +150,8 @@
             "key": "ubuntugis-ltr/db/packages.db",
             "name": "packages.db",
             "path": "db",
-            "size": 8511488,
-            "size_formatted": "8.12 MB",
+            "size": 8650752,
+            "size_formatted": "8.25 MB",
             "last_modified": "2026-04-08T20:52:12+00:00",
             "last_modified_timestamp": 1775681532,
             "extension": ".db",
@@ -544,8 +544,8 @@
                         "key": "ubuntugis-ltr/dists/jammy/main/binary-amd64/Packages",
                         "name": "Packages",
                         "path": "dists/jammy/main/binary-amd64",
-                        "size": 1449838,
-                        "size_formatted": "1.38 MB",
+                        "size": 1491718,
+                        "size_formatted": "1.42 MB",
                         "last_modified": "2026-04-08T20:50:57+00:00",
                         "last_modified_timestamp": 1775681457,
                         "extension": "",
@@ -555,8 +555,8 @@
                         "key": "ubuntugis-ltr/dists/jammy/main/binary-amd64/Packages.bz2",
                         "name": "Packages.bz2",
                         "path": "dists/jammy/main/binary-amd64",
-                        "size": 217360,
-                        "size_formatted": "212.27 KB",
+                        "size": 224194,
+                        "size_formatted": "218.94 KB",
                         "last_modified": "2026-04-08T20:50:57+00:00",
                         "last_modified_timestamp": 1775681457,
                         "extension": ".bz2",
@@ -566,8 +566,8 @@
                         "key": "ubuntugis-ltr/dists/jammy/main/binary-amd64/Packages.gz",
                         "name": "Packages.gz",
                         "path": "dists/jammy/main/binary-amd64",
-                        "size": 269653,
-                        "size_formatted": "263.33 KB",
+                        "size": 277833,
+                        "size_formatted": "271.32 KB",
                         "last_modified": "2026-04-08T20:50:57+00:00",
                         "last_modified_timestamp": 1775681457,
                         "extension": ".gz",
@@ -607,8 +607,8 @@
                         "key": "ubuntugis-ltr/dists/jammy/main/source/Sources.gz",
                         "name": "Sources.gz",
                         "path": "dists/jammy/main/source",
-                        "size": 11116,
-                        "size_formatted": "10.86 KB",
+                        "size": 11416,
+                        "size_formatted": "11.15 KB",
                         "last_modified": "2026-04-08T20:50:57+00:00",
                         "last_modified_timestamp": 1775681457,
                         "extension": ".gz",
@@ -2201,6 +2201,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-3d3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-3d3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4567832,
+                        "size_formatted": "4.36 MB",
+                        "last_modified": "2026-07-06T09:05:57.753000+00:00",
+                        "last_modified_timestamp": 1783328757,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-3d3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-3d3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -3143,6 +3154,17 @@
                         "size_formatted": "5.61 MB",
                         "last_modified": "2026-05-30T18:52:28.984000+00:00",
                         "last_modified_timestamp": 1780167148,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-analysis3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-analysis3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6207594,
+                        "size_formatted": "5.92 MB",
+                        "last_modified": "2026-07-06T09:06:07.764000+00:00",
+                        "last_modified_timestamp": 1783328767,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -4093,6 +4115,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-app3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-app3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8098340,
+                        "size_formatted": "7.72 MB",
+                        "last_modified": "2026-07-06T09:05:58.367000+00:00",
+                        "last_modified_timestamp": 1783328758,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-app3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-app3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -5039,6 +5072,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-core3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-core3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 17258884,
+                        "size_formatted": "16.46 MB",
+                        "last_modified": "2026-07-06T09:05:58.819000+00:00",
+                        "last_modified_timestamp": 1783328758,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-core3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-core3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -5732,6 +5776,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-customwidgets_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3966588,
+                        "size_formatted": "3.78 MB",
+                        "last_modified": "2026-07-06T09:05:57.697000+00:00",
+                        "last_modified_timestamp": 1783328757,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-customwidgets_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-customwidgets_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -6421,6 +6476,17 @@
                         "size_formatted": "6.57 MB",
                         "last_modified": "2026-05-30T18:52:29.055000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-dev_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-dev_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7291986,
+                        "size_formatted": "6.95 MB",
+                        "last_modified": "2026-07-06T09:05:58.221000+00:00",
+                        "last_modified_timestamp": 1783328758,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -7371,6 +7437,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-gui3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-gui3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 10939760,
+                        "size_formatted": "10.43 MB",
+                        "last_modified": "2026-07-06T09:05:58.674000+00:00",
+                        "last_modified_timestamp": 1783328758,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-gui3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-gui3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -8269,6 +8346,17 @@
                         "size_formatted": "3.37 MB",
                         "last_modified": "2026-05-30T18:52:28.733000+00:00",
                         "last_modified_timestamp": 1780167148,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-native3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-native3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3927940,
+                        "size_formatted": "3.75 MB",
+                        "last_modified": "2026-07-06T09:05:57.705000+00:00",
+                        "last_modified_timestamp": 1783328757,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -9263,6 +9351,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-server3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgis-server3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4244146,
+                        "size_formatted": "4.05 MB",
+                        "last_modified": "2026-07-06T09:05:57.715000+00:00",
+                        "last_modified_timestamp": 1783328757,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/libqgis-server3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgis-server3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -10205,6 +10304,17 @@
                         "size_formatted": "3.55 MB",
                         "last_modified": "2026-05-30T18:52:34.456000+00:00",
                         "last_modified_timestamp": 1780167154,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgisgrass8-3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgisgrass8-3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4127750,
+                        "size_formatted": "3.94 MB",
+                        "last_modified": "2026-07-06T09:05:58.520000+00:00",
+                        "last_modified_timestamp": 1783328758,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -11155,6 +11265,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/libqgispython3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "libqgispython3.44.12_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3935994,
+                        "size_formatted": "3.75 MB",
+                        "last_modified": "2026-07-06T09:05:58.590000+00:00",
+                        "last_modified_timestamp": 1783328758,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/libqgispython3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "libqgispython3.44.8_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -11800,6 +11921,17 @@
                         "size_formatted": "3.35 MB",
                         "last_modified": "2026-05-30T18:52:29.394000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/python-qgis-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "name": "python-qgis-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3910340,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-07-06T09:05:58.608000+00:00",
+                        "last_modified_timestamp": 1783328758,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -12475,6 +12607,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/python-qgis_3.44.12+36jammy-ubuntugis_all.deb",
+                        "name": "python-qgis_3.44.12+36jammy-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3910334,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-07-06T09:05:58.662000+00:00",
+                        "last_modified_timestamp": 1783328758,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/python-qgis_3.44.8+36jammy-ubuntugis_all.deb",
                         "name": "python-qgis_3.44.8+36jammy-ubuntugis_all.deb",
                         "path": "pool/main/q/qgis",
@@ -13098,6 +13241,17 @@
                         "size_formatted": "6.46 MB",
                         "last_modified": "2026-05-30T18:52:29.096000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/python3-qgis-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "name": "python3-qgis-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7168366,
+                        "size_formatted": "6.84 MB",
+                        "last_modified": "2026-07-06T09:05:58.771000+00:00",
+                        "last_modified_timestamp": 1783328758,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -13747,6 +13901,17 @@
                         "size_formatted": "18.78 MB",
                         "last_modified": "2026-05-30T18:52:29.367000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/python3-qgis_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "python3-qgis_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 18690198,
+                        "size_formatted": "17.82 MB",
+                        "last_modified": "2026-07-06T09:05:59.029000+00:00",
+                        "last_modified_timestamp": 1783328759,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -14444,6 +14609,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "name": "qgis-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 27715568,
+                        "size_formatted": "26.43 MB",
+                        "last_modified": "2026-07-06T09:05:59.021000+00:00",
+                        "last_modified_timestamp": 1783328759,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-common_3.44.8+36jammy-ubuntugis_all.deb",
                         "name": "qgis-common_3.44.8+36jammy-ubuntugis_all.deb",
                         "path": "pool/main/q/qgis",
@@ -15001,6 +15177,17 @@
                         "size_formatted": "1009.81 MB",
                         "last_modified": "2026-05-30T18:52:50.728000+00:00",
                         "last_modified_timestamp": 1780167170,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-dbg_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-dbg_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 1046025104,
+                        "size_formatted": "997.57 MB",
+                        "last_modified": "2026-07-06T09:06:30.578000+00:00",
+                        "last_modified_timestamp": 1783328790,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -15683,6 +15870,17 @@
                         "size_formatted": "3.77 MB",
                         "last_modified": "2026-05-30T18:52:29.602000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-plugin-grass-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "name": "qgis-plugin-grass-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4349428,
+                        "size_formatted": "4.15 MB",
+                        "last_modified": "2026-07-06T09:05:58.526000+00:00",
+                        "last_modified_timestamp": 1783328758,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -16380,6 +16578,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-plugin-grass_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-plugin-grass_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4355936,
+                        "size_formatted": "4.15 MB",
+                        "last_modified": "2026-07-06T09:05:58.568000+00:00",
+                        "last_modified_timestamp": 1783328758,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-plugin-grass_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-plugin-grass_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -17073,6 +17282,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-provider-grass_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3984064,
+                        "size_formatted": "3.80 MB",
+                        "last_modified": "2026-07-06T09:05:58.545000+00:00",
+                        "last_modified_timestamp": 1783328758,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-provider-grass_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-provider-grass_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -17718,6 +17938,17 @@
                         "size_formatted": "4.98 MB",
                         "last_modified": "2026-05-30T18:52:29.782000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-providers-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "name": "qgis-providers-common_3.44.12+36jammy-ubuntugis_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5634514,
+                        "size_formatted": "5.37 MB",
+                        "last_modified": "2026-07-06T09:06:08.674000+00:00",
+                        "last_modified_timestamp": 1783328768,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -18415,6 +18646,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-providers_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-providers_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7809480,
+                        "size_formatted": "7.45 MB",
+                        "last_modified": "2026-07-06T09:06:07.335000+00:00",
+                        "last_modified_timestamp": 1783328767,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-providers_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-providers_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -19038,6 +19280,17 @@
                         "size_formatted": "3.67 MB",
                         "last_modified": "2026-05-30T18:52:29.854000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-common_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server-common_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4247786,
+                        "size_formatted": "4.05 MB",
+                        "last_modified": "2026-07-06T09:06:07.287000+00:00",
+                        "last_modified_timestamp": 1783328767,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -19944,6 +20197,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server-landingpage_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3985670,
+                        "size_formatted": "3.80 MB",
+                        "last_modified": "2026-07-06T09:06:07.623000+00:00",
+                        "last_modified_timestamp": 1783328767,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-landingpage_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-server-landingpage_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -20567,6 +20831,17 @@
                         "size_formatted": "3.38 MB",
                         "last_modified": "2026-05-30T18:52:29.926000+00:00",
                         "last_modified_timestamp": 1780167149,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-wcs_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wcs_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3942616,
+                        "size_formatted": "3.76 MB",
+                        "last_modified": "2026-07-06T09:06:07.662000+00:00",
+                        "last_modified_timestamp": 1783328767,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -21198,6 +21473,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wfs3_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4067618,
+                        "size_formatted": "3.88 MB",
+                        "last_modified": "2026-07-06T09:06:07.803000+00:00",
+                        "last_modified_timestamp": 1783328767,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-wfs3_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-server-wfs3_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -21821,6 +22107,17 @@
                         "size_formatted": "3.51 MB",
                         "last_modified": "2026-05-30T18:52:30.274000+00:00",
                         "last_modified_timestamp": 1780167150,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-wfs_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wfs_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4075228,
+                        "size_formatted": "3.89 MB",
+                        "last_modified": "2026-07-06T09:06:07.990000+00:00",
+                        "last_modified_timestamp": 1783328767,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -22452,6 +22749,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-wms_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wms_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4211674,
+                        "size_formatted": "4.02 MB",
+                        "last_modified": "2026-07-06T09:06:07.987000+00:00",
+                        "last_modified_timestamp": 1783328767,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-wms_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "name": "qgis-server-wms_3.44.8+36jammy-ubuntugis_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -23075,6 +23383,17 @@
                         "size_formatted": "3.41 MB",
                         "last_modified": "2026-05-30T18:52:30.095000+00:00",
                         "last_modified_timestamp": 1780167150,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server-wmts_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server-wmts_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3973634,
+                        "size_formatted": "3.79 MB",
+                        "last_modified": "2026-07-06T09:06:08.074000+00:00",
+                        "last_modified_timestamp": 1783328768,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -23768,6 +24087,17 @@
                         "size_formatted": "3.35 MB",
                         "last_modified": "2026-05-30T18:52:30.164000+00:00",
                         "last_modified_timestamp": 1780167150,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis-server_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis-server_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 3910478,
+                        "size_formatted": "3.73 MB",
+                        "last_modified": "2026-07-06T09:06:08.126000+00:00",
+                        "last_modified_timestamp": 1783328768,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -25671,6 +26001,39 @@
                         "size_formatted": "7.61 MB",
                         "last_modified": "2026-05-30T18:52:30.506000+00:00",
                         "last_modified_timestamp": 1780167150,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis_3.44.12+36jammy-ubuntugis.dsc",
+                        "name": "qgis_3.44.12+36jammy-ubuntugis.dsc",
+                        "path": "pool/main/q/qgis",
+                        "size": 5122,
+                        "size_formatted": "5.00 KB",
+                        "last_modified": "2026-07-06T09:06:08.041000+00:00",
+                        "last_modified_timestamp": 1783328768,
+                        "extension": ".dsc",
+                        "category": "other"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis_3.44.12+36jammy-ubuntugis.tar.gz",
+                        "name": "qgis_3.44.12+36jammy-ubuntugis.tar.gz",
+                        "path": "pool/main/q/qgis",
+                        "size": 227028263,
+                        "size_formatted": "216.51 MB",
+                        "last_modified": "2026-07-06T09:06:14.544000+00:00",
+                        "last_modified_timestamp": 1783328774,
+                        "extension": ".gz",
+                        "category": "archive"
+                      },
+                      {
+                        "key": "ubuntugis-ltr/pool/main/q/qgis/qgis_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "name": "qgis_3.44.12+36jammy-ubuntugis_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8397914,
+                        "size_formatted": "8.01 MB",
+                        "last_modified": "2026-07-06T09:06:08.395000+00:00",
+                        "last_modified_timestamp": 1783328768,
                         "extension": ".deb",
                         "category": "installer"
                       },
