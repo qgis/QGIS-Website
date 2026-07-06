@@ -18,7 +18,7 @@ This is the change log for the next release of QGIS - version 2.8 \' Wien\'. Wie
 
 This is a special release since it is designated an \'LTR\' (Long Term Release). LTR releases will be supported with backported bug fixes for one year, and will be in permanent feature freeze (i.e. no new features will be added, only bug fixes and trivial updates).
 
-Az LTR kiadások célja, hogy egy stabil, kevésbé gyakran változó platformot biztosítson azoknak a vállalatoknak és szervezeteknek, melyek évente egynél többször nem akarnak foglalkozni a felhasználói ismeretek, az oktató anyagok, stb. frissítésével. Az LTR sikere nagyban öntől függ, a kedves felhasználóinktól - szükségünk van a támogatására a hibajavítások finanszírozásában és bizonyosodjon meg róla, hogy a támogatás nyújtó szerződésében vállalja a hibajavítások átvezetését az LTR ágon és a fejlesztési ágon is.
+Az LTR kiadások célja, hogy egy stabil, kevésbé gyakran változó platformot biztosítson azoknak a vállalatoknak és szervezeteknek, melyek évente egynél többször nem akarnak foglalkozni a felhasználói ismeretek, az oktató anyagok, stb. frissítésével. Az LTR sikere nagyban Önöktől, a kedves felhasználóinktól függ. Szükségünk van a támogatására a hibajavítások finanszírozásához, valamint ahhoz, hogy a támogatási szolgáltatókkal kötött szerződéseitekben kifejezetten rögzítsétek: az Önök nevében elvégzett hibajavításokat mind az LTR-ágra, mind a szokásos fejlesztési águnkra alkalmazzák.
 
 Ha egy LTR fontos önnek, kérjük fontolja meg a QGIS projekt közvetlen támogatását, ösztönözze a kereskedelmi szolgáltatóját, hogy az LTR-t használja a vállalati megoldás alapjául, így mindenkinek előnyös lehet a stabil platform, melyet folyamatosan javítanak és finomítanak. Ne feledje, hogy a négy hónaponkénti kiadások töretlenül folytatódnak azoknak a felhasználóknak és szervezeteknek, akik élen akarnak járni.
 
@@ -213,7 +213,7 @@ A QGIS összeszerkeszthető a Qt5 könyvtárak használatával. Vegye figyelembe
 
 ![](images/entries/c702d89260cbab35323c052a15ab5c5728fc7115.webp)
 ### Funkció: Térbeli index tömeges betöltése
-Az API-ban a térbeli indexek tömeges betöltéséhez adtunk támogatást. A térbeli indexek inicializálására ez egy sokkal gyorsabb módszer. Pythonból ilyen egyszerű:
+Az API-ba beépítettük a térbeli indexek tömeges betöltésének támogatását. Ez a térbeli indexek inicializálásának sokkal gyorsabb módja. Pythonból ez ilyen egyszerűen megvalósítható:
 
 `index = QgsSpatialIndex( layer.getFeatures() )`
 
@@ -236,7 +236,7 @@ A QGIS Szerver Python-bővítmények támogatása a Python teljesítményét a s
 
 **This feature was developed by:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
 ### Funkció: réteg stílusok támogatása
-- A QGIS szerver támogatja az előre definiált réteg stílusokat a GetMap kérésekben
+- A QGIS-szerver támogatja az előre definiált rétegstílusokat a GetMap kérésekben
 - A QGIS szerver most már támogatja a többszörös stílusokat GetStyles kérésekben (lásd. a lenti jelrendszer szakaszban)
 
 ### Funkció: DescribeLayer metódus hozzáadása a WMS-hez
@@ -256,7 +256,7 @@ Ez az új szimbólum réteg típus lehetővé teszi egy felület kitöltését (
 Options include (data defined) file name, opacity, image size (in pixels, mm or map units), coordinate mode (feature or view), and rotation.
 
 ![](images/entries/3c372b247f1f5583768532c2be96f169dcff1e8f.webp)
-### Funkció: élő hőtérkép rajzolás
+### Funkció: élő hőtérkép-megjelenítő
 Az új hőtérkép vektor réteg rajzoló lehetővé teszi a pont rétegekre az élő, dinamikus hótérképeket.
 
 Options include specifying heatmap radius in pixels, mm or map units, choice of color ramp,weighting points by field, and a slider for selecting a tradeoff between render speed and quality.

@@ -787,7 +787,7 @@ Ezt a funkciót fejlesztette Alexander Bruy
 ### Funkció: Új algoritmus megadott töréspontok kinyerésére
 Ez az algoritmus lehetővé teszi megadott töréspontok kinyerését a geometriákból. Pl. kivehetjük az első és utolsó pontot a geometriából.
 
-Ez az algoritmus a kiveendő töréspont indexek vesszővel elválasztott listáját várja, pl. 0 = első töréspont, 1 = második töréspont, stb. Negatív indexeket használhatunk a geometria végpontjától megadott töréspontok kivételéhez. Pl. -1 = utolsó töréspont, -2 utolsó előtti töréspont.
+Ez az algoritmus a kiveendő töréspontok indexeinek vesszővel elválasztott listáját várja, pl. 0 = első töréspont, 1 = második töréspont, stb. Negatív indexeket használhatunk a geometria végpontjától megadott töréspontok kivételéhez. Pl. -1 = utolsó töréspont, -2 utolsó előtti töréspont.
 
 This feature was funded by [North Road](https://north-road.com/)
 

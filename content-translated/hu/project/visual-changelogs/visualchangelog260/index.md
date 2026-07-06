@@ -237,7 +237,7 @@ For python script editors, expression builder, filter window, composer HTML and 
 
 ![](images/entries/54b470a064d65d6d65aa66a8feece43ba8cbf6c4.webp)
 ### Funkció: Szín paletták
-Most már saját testreszabott szín palettákat definiálhat a QGIS-ben.
+Most már saját testreszabott színpalettákat definiálhat a QGIS-ben.
 - Custom user global color palette (in options dialog).
 - Per project color palette (in project properties dialog).
 - Colors are shown in color button menus and new color picker dialog.

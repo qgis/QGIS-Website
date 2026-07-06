@@ -50,7 +50,7 @@ A korábbi QGIS verziókból származó projekt fájlokat aktualizálni kell, ho
 ![image47](images/entries/74ddb567a30e840405ca83656e76dd6476d00226.png.400x300_q85_crop.webp)
 
 Ezt a funkciót Jürgen Fischer fejlesztette
-### Funkció: Nagyítás az elemre jobb gomb kattintással az attribútum táblában
+### Funkció: Nagyítás az elemre jobb gombos kattintással az attribútumtáblában
 Bármelyik elemre nagyíthat a az attribútum táblából (anélkül, hogy előbb szelektálná), jobb gomb kattintás után válassza a nagyítás az elemre menüpontot.
 
 ![image48](images/entries/7a400f577a7d554f309297f8a1af05a61e448a27.png.400x300_q85_crop.webp)
@@ -278,7 +278,7 @@ This feature was developed by [Nyall Dawson](http://nyalldawson.net)
 
 Amikor ez az opció be van kapcsolva
 - Ugyanabból az adatbázisból származó rétegeket egy tranzakció csoportba tesszük
-- Amikor a csoport első rétegét szerkeszthetővé tesszük, az összes többi automatikusan szerkeszthetővé válik
+- Amikor egy csoport első rétegét szerkesztési módba állítjuk, az összes többi réteg is automatikusan szerkesztési módba kerül
 - Amikor egy réteget szerkeszt a változásokat azonnal elküldjük az adatbázisba, ezzel lehetővé téve, hogy a triggereket és kényszereket azonnal alkalmazzuk
 - When one layer in a transaction group is committed, all layers are committed (database transaction)
 - When one layer in a transaction group is rolled back, all layers are rolled back (database transaction)
@@ -718,7 +718,7 @@ This feature needs a fake X server.
 This feature was developed by [3Liz](http://3liz.com)
 ### Feature: Option to avoid rendering artefacts at edges of tiles
 ![image73](images/entries/1ded32aa2bb962fde1b9f00b891b2a04406be621.png.400x300_q85_crop.webp)
-### Funkció: Konfiguráció ellenőrző a projekt tulajdonságokban
+### Funkció: Konfiguráció-ellenőrző a projekttulajdonságokban
 To assist with configuring a project for QGIS Server, a new configuration checker has been added to project properties.
 
 The checker tests for errors like:

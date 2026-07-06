@@ -105,7 +105,7 @@ type: page
 * Alkalmazásmodulok elindítása és koordinálása, pl. felmérés, várostervezés, szerver/webes kliens stb.
 * [QGIS szavazati joggal]({{< ref "/community/organisation#voting-members" >}}) rendelkező képviselő megválasztása
 
-## Általános feltételezések/javaslatok
+## Általános feltételezések és ajánlások
 * a helyi felhasználói csoportoknak semlegesnek kell maradniuk a beszállítót/céget illetően
 * demokratikus struktúrákat kell kialakítani a helyi irányító bizottság számára, szavazni és fontos döntéseket hozni
 * átláthatónak kell maradni, különösen a tagsági díjakkal és azok elköltésével kapcsolatban

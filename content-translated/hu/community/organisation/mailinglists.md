@@ -14,7 +14,7 @@ Please don’t use these mailing lists to advertise your services or training co
 
 QGIS felhasználói lista
 -
-A fő levelező lista a felhasználói kérdésekhez: eszmecserék a QGIS-ről általában valamint konkrét kérdések a telepítésről és a használatról.
+A fő levelezőlista a felhasználói kérdésekhez: eszmecserék a QGIS-ről általában valamint konkrét kérdések a telepítésről és a használatról.
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-user" layoutClass="half" listTitle="QGIS felhasználói lista" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-user" >}}
 

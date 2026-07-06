@@ -86,7 +86,7 @@ The \'Quantum\' in \'Quantum GIS\' never had any particular significance and the
 
 ![image14](images/qgis.png)
 ## Címkézés
-### Funkció: Új címkézési rendszer
+### Funkció: Új címkéző rendszer
 The labelling system has been totally overhauled - it now includes many new features such as drop shadows, \'highway shields\', many more data bound options, and various performance enhancements. We are slowly doing away with the \'old labels\' system, although you will still find that functionality available for this release, you should expect that it will disappear in a follow up release.
 
 ![image15](images/Layer_labeling_settings_003_1.png)

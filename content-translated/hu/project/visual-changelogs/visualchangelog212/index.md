@@ -206,7 +206,7 @@ A QGIS böngésző most további funkcionalitást támogat a PostGIS kapcsolatok
 ![image5](images/entries/00820dbcf67c97b61154e7e1f41af0397009b548.webp)
 ## Adatszolgáltatók
 ### Funkció: PostGIS szolgáltató fejlesztések
-A következő fejlesztések történtek a PostGIS szolgáltatóban:
+A PostGIS-szolgáltatón a következő fejlesztések történtek:
 - performance improvements for rule based renderer for PostGIS layers
 - added support for compound keys on views
 
@@ -242,7 +242,7 @@ If the path which is selected with the file browser is located in the same direc
 
 ![image9](images/entries/fcf703990b5cb743ffa5cc7778cb151022ff2d20.webp)
 ## Digitalizálás
-### Funkció: Digitalizálás fejlesztések
+### Funkció: Digitalizálási fejlesztések
 In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but that not all features were supported in the digitising tools. With QGIS 2.12 we now have editing support for the **creation of curves / \'circular strings\`**. Note again that you need to be using a data provider (e.g. PostGIS, GML or WFS) that supports curves. These improvements to the digitising tools were also added in QGIS 2.12:
 - tool to add circular strings with two points and radius
 - tool to add circular strings with start point, curve point and end point
@@ -479,13 +479,13 @@ Previously only the option to limit the scale range of the map unit sizes was av
 ![image37](images/entries/b822235ddb09b4184b926bf2e0acc5c892147d0b.webp)
 ### Feature: Improvements to displacement renderer
 - Allow tolerance in mm/pixels for displacement renderer
-- Átlátszóság beállítás a színekre
+- A színek átlátszóságának beállítása
 - Concentric ring placement mode (allows for more compact display than only with rings)
 
 **This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image38](images/entries/33b5f15429279a7ec75dd1f6a2e01b1a7df789ca.webp)
-### Funkció: Minden szín skála szerkeszthető
+### Funkció: Már minden színskála szerkeszthető
 In QGIS 2.12 \"edit\" buttons have been added next to every color ramp choice. This allows you to easily edit an existing color ramp without having to create a new ramp and overwrite the existing one.
 
 ![image39](images/entries/6ca1426e6e9bfd5500b08fb2185ae50a77258892.webp)

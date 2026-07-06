@@ -84,7 +84,7 @@ QGIS 2.10 will now warn you when attempting to save you project if last modifica
 **This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
 ![image17](images/entries/c30c07afc9123db564b766339daefe53af3cd348.webp)
-### Funkció: Új geometria motor
+### Funkció: Új geometriamotor
 QGIS 2.10 has a new geometry engine. In general you won\'t see many differences on the user interface yet, but this lays the foundation for a much richer set of geospatial capabilities that we will be able to support in the future. The new implementation supports curved geometry types (so for example you can represent a traffic roundabout as a circle rather than a segmented polygon made to look like a circle) and has backend support for z/m values in geometries. To use curves in QGIS you will need to use PostGIS or a similar datastore that is able to express curvilinear geometries. If you want to have a play you can try a simple exercise like this in your PostGIS database:
 
     -- Table: curves DROP TABLE curves;
@@ -118,7 +118,7 @@ The raster calculator (`Raster -> Raster Calculator` in the QGIS menu) is a tool
 Zonal statistics provide a way to extract aggregate values for the pixels underlying a polygon. The following new features have been added to our zonal statistics tool:
 - most kiválaszthatja, hogy melyik statisztikát szeretné kiszámítani
 - statisztikai számítások hozzáadása (medián, szórás, min, max, tartomány, kisebbség, többség és variancia) 
-- lehetőség a raszter sáv kiválasztására a statisztikához
+- a statisztikai adatok kinyeréséhez használandó rasztersáv kiválasztásának lehetősége
 
 Note that zonal stats is a \'core plugin\' (a plugin that ships with your QGIS installer), but is disabled by default. You need to enable it in the plugin manager and then a menu entry for zonal statistics will appear in the `Raster` menu.
 
@@ -171,7 +171,7 @@ The value relation edit widget for vector layers (`Layer -> Properties -> Fields
 ### Funkció: DB kezelő fejlesztések
 Két új funkció került a DB kezelőbe:
 
-**Rétegként lekérdezéshez nem szükséges többé az egyedi egész oszlop**
+**Rétegként történő lekérdezéshez már nincs szükség egyedi egész szám oszlopra**
 
 Többé már nem szükséges az SQL lekérdezés QGIS rétegként betöltéséhez egy oszlop egyedi egész értékekkel. Egy automatikusan növelt értéket használunk helyette.
 

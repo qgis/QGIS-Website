@@ -62,7 +62,7 @@ Ezt a funkciót támogatta Leicestershire County Council és East Hampshire Dist
 
 This feature was developed by [Martin Dobias and Viktor Sklencar](https://www.lutraconsulting.co.uk)
 ### Funkció: Csomópontok szétnyitott/összezárt állapotának tárolása a térkép témákban
-Minden térkép téma rögzíti mely rétegeket, csoportokat és jelkulcs elemet nyitották szét, így amikor a térkép témát kiválasztják a szétnyitott/összezárt állapotot is tükrözi a réteg fa.
+Minden térképtéma rögzíti mely rétegeket, csoportokat és jelkulcsi elemet nyitották szét, így amikor a térképtémát kiválasztják a szétnyitott/összezárt állapotot is tükrözi a rétegfa.
 
 ![image3](images/entries/0cfc7d80448436d67a4b1e92773e66eda5900a57.PNG.400x300_q85_crop.webp)
 
@@ -130,7 +130,7 @@ This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
 This feature was developed by [Nathan Woodrow](https://nathanw.net/)
 ## Felhasználói felület
-### Funkció: Réteg panel: megjelölés a szűrt térképi rétegekhez
+### Funkció: Rétegek panel: a szűrt térképi rétegek megjelölése
 The main window\'s layer tree view (ToC) gets support for indicators that are shown when a vector layer has a filter applied. This makes it easier for users to understand that they are looking at a subset of all data. Clicking the indicator\'s icon brings up query builder.
 
 This adds a mini-framework for display of extra icons in layer tree views next to layer and group names. Tool tip text can be associated with indicators to give extra context for indicators. In addition, a signal gets emitted when user clicks indicators and custom actions can be defined. The idea is that indicators can be used in the future for a subtle reporting of various bits of information, for example:
@@ -365,7 +365,7 @@ A 3.2-ben a következő algoritmusok támogatják a dinamikus paramétereket:
 - Lyukak törlése
 - Duplikált töréspontok eltávolítása
 - Egyszerűsít
-- Simít
+- Simítás
 - Rácshoz illesztés
 - Felosztás
 - Metszés
