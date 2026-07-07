@@ -1,6 +1,13 @@
-____
-type: "page" title: "Security" subtitle: "" draft: false sidebar: true Reviewed: 5 June 2024 Reviewer: Tim Sutton
--
+---
+Reviewed: 5 June 2024
+Reviewer: Tim Sutton
+draft: false
+sidebar: true
+subtitle: ''
+title: Beveiliging
+type: page
+
+---
 {{<content-start >}}
 # Beveiliging
 ## Informatie over beveiliging

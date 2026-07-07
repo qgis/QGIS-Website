@@ -371,27 +371,27 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add "View Output Layers" option for model child algorithms
-When editing a model through the designer, a new right-click context option has been added for "View Output Layers" on any child step in the model<br />that has been run. Selecting this option will add the output layers from that step as new layers in the current QGIS project.
+### 機能: モデルの子アルゴリズムへの "出力レイヤーを表示" オプションの追加
+デザイナーを通じてモデルを編集する際<br />実行された任意の子ステップに "出力レイヤーを表示" のための新しい右クリックコンテキストオプションが追加されました。このオプションを選択すると、そのステップからの出力レイヤーが現在のQGISプロジェクトに新しいレイヤーとして追加されます。
 
-This action is available for all child algorithms in the model, even if the model is not configured to use the outputs from those children as model outputs. This action is also always available after running the model, even if the model itself fails (e.g. because of a misconfigured step later in the model).
+このアクションはモデル内のすべての子アルゴリズムで利用可能であり、モデルがそれらの子からの出力をモデル出力として使用するように設定されていない場合でも利用できます。このアクションはモデル実行後に常に利用可能であり、モデル自体が失敗した場合でも（例：モデルの後半の誤って設定されたステップのために）利用できます
 
-This is designed as a helpful debugging action. If a user's model fails (or gives unexpected results), they will now be able to trace through the model and view the outputs for suspected problematic steps, avoiding the need to add temporary outputs to a model and re-run for testing purposes.
+これは役立つデバッグアクションとして設計されています。ユーザーのモデルが失敗した場合（または予期しない結果が出た場合）、テスト目的でモデルに一時的な出力を追加して再実行する必要なく、モデルをトレースして問題が疑われるステップの出力を表示できるようになります。
 
-An additional "View Log" action has also been provided so that users can see the log for each child after the algorithm dialog has been closed down.
+アルゴリズムダイアログが閉じられた後でもそれぞれの子のログを確認できるよう、追加の "ログを表示" アクションも提供されています。
 
 ![](images/entries/f4357f5df60617753cb9fc215f4cce96f34139b2.webp)
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Endpoint distance threshold for network analysis
-An optional end-point distance threshold parameter has been added to the network analysis tools.
+### 機能:ネットワーク分析のエンドポイント距離しきい値
+ネットワーク分析ツールにオプションのエンドポイント距離しきい値パラメーターが追加されました。
 
-The previous (and current default) behavior is that endpoints will ALWAYS be snapped to the nearest point in the network layer, regardless of how far away from the network they are, resulting in errors where points are snapped to an edge an arbitrary distance away.
+以前（および現在のデフォルト）の動作では、エンドポイントはネットワークからどれだけ離れていても常にネットワークレイヤーの最近傍点にスナップされ、ポイントが任意の距離の離れたエッジにスナップされるエラーが発生していました。
 
-The behavior of the threshold depends on the algorithm:
-- For the “Service area (from layer)” tool an optional new output was added for “non-routable features”. This output will contain any features that were deemed too far from the network. All other features that are within tolerance distance to the network will be stored in the standard output from the tool.
+しきい値の動作はアルゴリズムによって異なります:
+- "サービスエリア（レイヤーから）" ツールに "ルーティング不可能な地物" のためのオプションの新しい出力が追加されました。この出力にはネットワークから遠すぎると判断された地物が含まれます。ネットワークまでのトレランス距離内にある他のすべての地物はツールの標準出力に保存されます。
 - For the “Service area (from point)” tool an error will be raised if the point is too far from the network
 - For the “Shortest path (point to point)” tool an error will be raised if either the source or destination points are too far from the network.
 - For the “Shortest path (layer to point)” and “Shortest path (point to layer)” tools:
