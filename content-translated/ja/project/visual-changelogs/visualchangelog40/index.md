@@ -473,7 +473,7 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
 この機能は [City of Frankfurt – Stadtplanungsamt と Oslandia](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) の資金提供を受けてます
 
-This feature was developed by [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
+この機能は [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia) によって開発されました
 ## データ管理
 ### 機能: ラスターエキスポートにおける COG サポートの強化
 ラスターのエクスポートと保存ダイアログが、出力をCloud Optimized GeoTiff最適化でエクスポートするための明示的なオプションをサポートするようになりました。追加のCOG固有のピラミッド機能も含まれており、以下の改善が含まれます:
@@ -954,7 +954,7 @@ This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
 この機能は [City of Frankfurt – Stadtplanungsamt](https://www.stadtplanungsamt-frankfurt.de/about_us_5645.html) の資金提供で開発されました
 
-This feature was developed by [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
+この機能は [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia) によって開発されました
 ## 注目すべき修正
 ### Feature: Bug fixes by Alessandro Pasotti (QCooperative)
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |

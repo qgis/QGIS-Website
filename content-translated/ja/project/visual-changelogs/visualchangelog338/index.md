@@ -392,162 +392,168 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 しきい値の動作はアルゴリズムによって異なります:
 - "サービスエリア（レイヤーから）" ツールに "ルーティング不可能な地物" のためのオプションの新しい出力が追加されました。この出力にはネットワークから遠すぎると判断された地物が含まれます。ネットワークまでのトレランス距離内にある他のすべての地物はツールの標準出力に保存されます。
-- For the “Service area (from point)” tool an error will be raised if the point is too far from the network
-- For the “Shortest path (point to point)” tool an error will be raised if either the source or destination points are too far from the network.
-- For the “Shortest path (layer to point)” and “Shortest path (point to layer)” tools:
-- An error will be raised if the **point** is too far from the network.
-- A new optional output was added for “non-routable features”. This output will contain any features that were deemed too far from the network. All other features that are within tolerance distance to the network will be stored in the standard output from the tool.
+- "サービスエリア（ポイントから）" ツールでは、ポイントがネットワークから遠すぎる場合にエラーが発生します
+- "最短経路（ポイントからポイント）" ツールでは、始点または終点のいずれかがネットワークから遠すぎる場合にエラーが発生します。
+- "最短経路（レイヤーからポイント）" および "最短経路（ポイントからレイヤー）" ツールでは:
+- **ポイント** がネットワークから遠すぎる場合にエラーが発生します。
+- "ルーティング不可能な地物" のためのオプションの新しい出力が追加されました。この出力にはネットワークから遠すぎると判断された地物が含まれます。ネットワークまでのトレランス距離内にある他のすべての地物はツールの標準出力に保存されます。
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add support for pure date and time decorators
-QGIS Processing previously provided support for generating and processing datetime values as an explicit datetime type, but this release will support the definition of datetime, time, and date objects as discrete data types.
+### 機能:純粋な日付と時刻のデコレーターのサポートの追加
+QGISプロセッシングは以前、明示的なdatetimeタイプとしてdatetime値の生成と処理をサポートしていましたが、このリリースではdatetime、time、およびdateオブジェクトを個別のデータタイプとして定義することをサポートします。
 
 この機能は Ifremer によって資金提供されました
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 ## アプリケーションとプロジェクトのオプション
-### Feature: Add vertical crs option for projects
-In line with [QEP \#267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267), a new vertical CRS option has been added to projects.
+### 機能:プロジェクトへの垂直CRSオプションの追加
+ 
+ 
+ 
+[QEP \#267](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267)に沿って、プロジェクトに新しい垂直CRSオプションが追加されました。
 
-If the project CRS is a compound CRS, then the vertical CRS for the project will be the vertical component of the main project CRS. Otherwise, it will be the value explicitly set by the user.
+プロジェクトCRSが複合CRSの場合、プロジェクトの垂直CRSはメインプロジェクトCRSの垂直コンポーネントになります。それ以外の場合は、ユーザーが明示的に設定した値になります。
 
-Users can specify the vertical CRS through the Elevation Tab of the Project Properties.
+ユーザーはプロジェクトプロパティの標高タブから垂直CRSを指定できます。
 
-If a compound CRS is defined as the active CRS for a project, the Vertical Reference System will infer the Vertical CRS definition. If the current project CRS is a 2D/ Horizontal CRS, then users will be able to define their own explicitly selected Vertical CRS.
+プロジェクトのアクティブCRSとして複合CRSが定義されている場合、垂直参照系は垂直CRS定義を推測します。現在のプロジェクトCRSが2D/水平CRSの場合、ユーザーは独自に明示的に選択した垂直CRSを定義できます。
 
-This functionality does not impact rendering or feature handling and is currently a metadata property only.
+この機能はレンダリングや地物の処理には影響せず、現在はメタデータプロパティのみです。
 
-The API for project objects has also been extended to support this functionality, and now includes methods for:
-- crs(): The existing project method for the defined project CRS
-- verticalCrs(): A new project method for fetching the Vertical Reference System
-- [crs3D()](https://github.com/qgis/QGIS/pull/57107): An explicit getter for retrieving a compound reference system (combination of crs and verticalCrs)
+プロジェクトオブジェクトのAPIもこの機能をサポートするよう拡張され、以下のメソッドが追加されました:
+- crs(): 定義されたプロジェクトCRSのための既存のプロジェクトメソッド
+- verticalCrs(): 垂直参照系を取得するための新しいプロジェクトメソッド
+- [crs3D()](https://github.com/qgis/QGIS/pull/57107): 複合参照系（crsとverticalCrsの組み合わせ）を取得するための明示的なゲッター
 
 ![](images/entries/83cc370834aa045a61e3021da640753f406f4a23.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add elevation range to project properties
-This setting allows users to specify the upper and lower elevation limits associated with the project in line with [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201), providing an equivalent user experience for filtering elevation range as users may already be familiar with for configuring the temporal range settings within projects.
+### 機能:プロジェクトプロパティへの標高範囲の追加
+この設定により、ユーザーは [QEP 201](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/201) に沿ってプロジェクトに関連する上限と下限の標高範囲を指定でき、プロジェクト内のテンポラル範囲設定の設定で既に慣れているかもしれないものと同等のユーザーエクスペリエンスで標高範囲をフィルタリングできます。
 
-This can be specified through the Elevation tab (renamed from "Terrain") in the Project Properties and extends the API of the QgsProjectElevationProperties class.
+これはプロジェクトプロパティの標高タブ（"テレイン"から名称変更）から指定でき、QgsProjectElevationProperties クラスのAPIを拡張します。
+ 
+ 
+ 
 
 ![](images/entries/c9f0765306562047cdba7a675587d484d5a7ce51.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## センサ
-### Feature: Support feature expansion
-This change allows SensorThings entities to be expanded to contain their related child feature attributes, exposing the relational SensorThings model as a traditional "flat" GIS-friendly table structure.
+### 機能:地物の展開のサポート
+この変更により、SensorThingsエンティティを関連する子地物の属性を含むよう展開でき、リレーショナルSensorThingsモデルを従来の "フラット" なGISフレンドリーなテーブル構造として公開できます。
 
-For example, when selecting Location entities, users can now opt to expand to "Things &gt; Datastreams &gt; Observations". This would result in multiple "stacked" point location features, one corresponding to each observation, with the attributes for each point feature containing the location, thing, datastream, and observation attributes.
+例えば、Locationエンティティを選択する際、ユーザーは "Things > Datastreams > Observations" への展開を選択できるようになりました。これにより複数の "スタックされた" ポイント位置地物が生成され、各観測に対応する1つの地物に、位置、thing、datastream、observation属性を含む属性が含まれます。
 
-This functionality is best used when combined with some extent, feature limit, or custom filter option, as this can otherwise result in very heavy requests to the backend service!
+この機能は範囲、地物数制限、またはカスタムフィルターオプションと組み合わせて使用するのが最適です。そうしないと、バックエンドサービスへの非常に重いリクエストが発生する可能性があります！
 
-An option to limit the number of child features returned when expanding is provided. By default, a conservative amount of features will be returned to reduce the load on services and require users to explicitly "opt-in" to fetch large amounts of features.
+展開時に返される子地物の数を制限するオプションが提供されています。デフォルトでは、サービスへの負荷を軽減し、ユーザーが大量の地物を取得するために明示的に "オプトイン" することを必要とするよう、控えめな量の地物が返されます。
 
 ![](images/entries/457f84d686c8c91d0fc894920ab462511226c0d2.webp)
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+この機能は [BRGM](https://www.brgm.fr/en) と [Water4All Partnership](https://www.water4all-partnership.eu) の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add support for SensorThings Multidatastreams
-This adds support for the Multidatastream entity type, as implemented in the SensorThings version 1.1 "MultiDatastream extension".
+### 機能:SensorThings MultiDatastreamsのサポートの追加
+SensorThingsバージョン1.1の "MultiDatastream拡張" に実装されているMultidatastreamエンティティタイプのサポートを追加します。
 
-While the specification mandates that MultiDatastreams have an optional polygon geometry, many servers expose different geometry types for this entity or return errors when attempting to read the geometries from MultiDatastreams. Accordingly, QGIS now exposes an option to load MultiDatastreams as geometryless layers alongside the default option to load them as polygon layers, allowing users to handle a wider range of connections.
+仕様ではMultiDatastreamsにオプションのポリゴンジオメトリが必要とされていますが、多くのサーバーはこのエンティティに異なるジオメトリタイプを公開するか、MultiDatastreamsからジオメトリを読み取ろうとするとエラーを返します。そのため、QGISはMultiDatastreamsをポリゴンレイヤーとして読み込むデフォルトオプションと並んで、ジオメトリなしレイヤーとして読み込むオプションを公開し、ユーザーがより広い範囲の接続を処理できるようにしました。
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+この機能は [BRGM](https://www.brgm.fr/en) と [Water4All Partnership](https://www.water4all-partnership.eu) の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Serial port sensor's data frame delimiter
-A new data frame delimiter option has been added to the serial port sensor configuration.
+### 機能:シリアルポートセンサーのデータフレーム区切り文字
+シリアルポートセンサーの設定にデータフレーム区切り文字の新しいオプションが追加されました。
 
-In cases where multiple data frames are found in the last chunk of data pushed by the serial port, this implementation will return all data frames. Users can then use an expression to further split the returned last data value from the sensor into individual frames (e.g. using string\_to\_array).
+シリアルポートによってプッシュされた最後のデータチャンクで複数のデータフレームが見つかった場合、この実装はすべてのデータフレームを返します。ユーザーはその後、式を使用してセンサーから返された最後のデータ値をさらに個々のフレームに分割できます（例：string\_to\_array を使用）。
 
 ![](images/entries/6cc5c72f2a9ff329f8a507e63e28d3771b26c0d3.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add an optional feature limit setting
-Allows setting a maximum number of features to request from the service, avoiding overloading services with too many requests
+### 機能:オプションの地物数制限設定の追加
+サービスからリクエストする最大地物数を設定でき、過剰なリクエストでサービスに過負荷をかけることを避けます。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Implement subset string support for SensorThings
-This allows setting custom filters on the layer, using the SensorThings filter syntax.
+### 機能:SensorThingsのサブセット文字列サポートの実装
+これによりSensorThingsフィルター構文を使用してレイヤーにカスタムフィルターを設定できます。
 
-A custom layer filter GUI is provided for SensorThings layer filters, making it easier for users to craft valid filters using the SensorThings filter language.
+SensorThingsレイヤーフィルター用のカスタムレイヤーフィルターGUIが提供されており、ユーザーがSensorThingsフィルター言語を使用して有効なフィルターを作成しやすくなっています。
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+この機能は [BRGM](https://www.brgm.fr/en) と [Water4All Partnership](https://www.water4all-partnership.eu) の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## Profile Plots
-### Feature: Add tolerance for lines and polygons
-The elevation profile tool has been improved by adding tolerance support for lines and polygons (2D/ 3D), as illustrated using drillhole representations (from the [OpenLog plugin](https://plugins.qgis.org/plugins/openlog/)).
+### 機能:ラインとポリゴンへのトレランスの追加
+標高プロファイルツールが、ラインとポリゴン（2D/3D）のトレランスサポートを追加することで改善されました（[OpenLog plugin](https://plugins.qgis.org/plugins/openlog/) プラグインからのボーリング孔表示を使用して説明）。
 
-Without support for tolerances, any line or polygon feature is displayed in its entirety within the elevation profile plot as soon as it intersects the profile curve. By adding support for user-defined tolerances, only intersecting slices of the feature that fall within the defined region are rendered on the plot.
+トレランスのサポートがない場合、ラインまたはポリゴン地物はプロファイル曲線と交差するとすぐに標高プロファイルプロットに全体が表示されます。ユーザー定義のトレランスのサポートを追加することで、定義された領域内に収まる地物の交差するスライスのみがプロットにレンダリングされます。
 
 ![](images/entries/25b1f63397246b4195891a08956b38239e78df07.gif)
 
-This feature was funded by CEA/DAM François Renard
+この機能は CEA/DAM François Renard の資金提供で開発されました
 
-This feature was developed by [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia)
+この機能は [Benoit D.-M. - oslandia](https://github.com/benoitdm-oslandia) によって開発されました
 ## データプロバイダ
-### Feature: Add extent based filtering for SensorThings layers
-Allows users to set an extent limit for the layer so that features are only ever loaded within this extent.
+### 機能:SensorThingsレイヤーへの範囲ベースのフィルタリングの追加
+ユーザーがレイヤーに範囲制限を設定でき、地物がこの範囲内でのみ読み込まれるようにします。
 
-The extent can be set using the data source manager before initially adding the layer, or modified within the source tab if the layer properties.
+範囲はレイヤーを最初に追加する前にデータソースマネージャーを使用して設定するか、レイヤープロパティのソースタブ内で変更できます。
 
-This feature was funded by [BRGM](https://www.brgm.fr/en) and [Water4All Partnership](https://www.water4all-partnership.eu)
+この機能は [BRGM](https://www.brgm.fr/en) と [Water4All Partnership](https://www.water4all-partnership.eu) の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Web proxy prefix support for ArcGIS URLs
-A new prefix field is provided in ArcGIS settings dialogs that allows users to define the URL prefix of a web proxy used to access ArcGIS Services which will be prepended to all requests.
+### 機能:ArcGIS URLのWebプロキシプレフィックスサポート
+ArcGIS設定ダイアログに新しいプレフィックスフィールドが提供され、ユーザーはすべてのリクエストに前置されるArcGISサービスへのアクセスに使用するWebプロキシのURLプレフィックスを定義できます。
 
 ![](images/entries/671e0f4b015b4a575c6bb1255317f0af56a6c056.webp)
 
-This feature was developed by [Vytax](https://github.com/Vytax)
-### Feature: Add support for fast extent estimation on SAP HANA connections
-Stored extent metadata can be utilized with the new "use estimated metadata" connection, which allows for precomputed extent estimation and much faster connectivity on large tables.
+この機能は [Vytax](https://github.com/Vytax) によって開発されました
+### 機能:SAP HANA接続への高速範囲推定のサポートの追加
+保存された範囲メタデータを新しい "推定メタデータを使用する" 接続で利用でき、事前計算された範囲推定と大規模なテーブルでのより高速な接続が可能になります。
 
-Although costly aggregation functions are avoided whenever the extent is recomputed, the extent information for HANA tables is only available after a delta merge. By default, this option will leverage a fallback to the standard behavior of using aggregation functions to compute extents in cases where the data is unavailable(or has not yet been computed).
+範囲が再計算されるたびにコストのかかる集計関数は回避されますが、HANAテーブルの範囲情報はデルタマージ後にのみ利用可能です。デフォルトでは、このオプションはデータが利用できない（またはまだ計算されていない）場合に集計関数を使用して範囲を計算する標準的な動作へのフォールバックを活用します。
 
 ![](images/entries/cf6ffc5f71ca8d57e9f3f717bf3e960c5afb51e4.webp)
 
-This feature was developed by [Johannes Quast](https://github.com/jatsqi)
+この機能は [Johannes Quast](https://github.com/jatsqi) によって開発されました
 ## QGISサーバー
-### Feature: Default limit for GetFeatureInfo results
-A new setting allows users to set a default FEATURE\_COUNT value individually for each WMS connection, with a predefined default value of 10.
+### 機能:GetFeatureInfo結果のデフォルト制限
+新しい設定により、ユーザーは各WMS接続に対して個別にデフォルトの FEATURE\_COUNT 値を設定できます。定義済みのデフォルト値は10です。
 
-This default also works when adding WMS layers from the browser and it can be overridden for each layer when added from the datasource manager.
+このデフォルトはブラウザーからWMSレイヤーを追加する際にも機能し、データソースマネージャーから追加する際に各レイヤーでオーバーライドできます。
 
-The default user experience has not changed when adding layers from the data source manager, so the default of 10 still applies unless it is explicitly set from the connection settings.
+データソースマネージャーからレイヤーを追加する際のデフォルトのユーザーエクスペリエンスは変更されていないため、接続設定から明示的に設定されない限り、10のデフォルトが引き続き適用されます。
 
 ![](images/entries/aa3907488d32cf1e90bb04115dfacffb5cdfee21.webp)
 
-This feature was funded by [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/)
+この機能は [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
-### Feature: Add crs information in WMS GetFeatureInfo output when it differs from WGS84
-GeoJSON explicitly requires the use of OGC:CRS84, but when a GetFeatureInfo request that explicitly requests a CRS that is not WGS84 is sent to a QGIS Server WMS, the output will now include the CRS definition in a manner compatible with the older [GeoJSON specification format](http://wiki.geojson.org/GeoJSON_draft_version_6#Specification) that included support for multiple Coordinate Reference Systems.
+### 機能:WGS84と異なる場合にWMSのGetFeatureInfo出力にCRS情報を追加します
+GeoJSONはOGC:CRS84の使用を明示的に必要としますが、WGS84以外のCRSを明示的にリクエストするGetFeatureInfoリクエストがQGIS Server WMSに送信された場合、出力には複数の座標参照系のサポートを含む古い [GeoJSON specification format](http://wiki.geojson.org/GeoJSON_draft_version_6#Specification) と互換性のある方法でCRS定義が含まれるようになります。
 
-This feature was funded by Eurométropole de Strasbourg
+この機能は Eurométropole de Strasbourg の資金提供で開発されました
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 ## プログラマビリティ
-### Feature: Add replace/ replace all functionality to QgsCodeEditorWidget
-The new replace functionality allows replacing matching text. If the regex find option is enabled, then captured groups from the regular expression pattern are available for use in the replacement string using the numeric identifier of the group (e.g. via `\1`).
+### 機能：QgsCodeEditorWidgetへの置換/すべて置換機能の追加
+新しい置換機能により、一致するテキストを置換できます。正規表現検索オプションが有効になっている場合、正規表現パターンからのキャプチャグループは、グループの数値識別子（例：\1）を使用して置換文字列で利用できます。
 
-In addition, the processing script editor has been ported to leverage the `QgsCodeEditorWidget` class and functionalities.
+さらに、プロセッシングスクリプトエディターが `QgsCodeEditorWidget`  クラスと機能を活用するよう移植されました。
 
 ![](images/entries/286b7da77b39735f963327f8c0c373a4530023fc.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Register custom elevation profile sources
-We've added a new `QgsProfileSourceRegistry` class to allow both core and plugin developers to register profile sources other than map layers (e.g., based on profile web services).
+### 機能:カスタム標高プロファイルソースの登録
+コアおよびプラグイン開発者がマップレイヤー以外のプロファイルソース（例：プロファイルWebサービスベース）を登録できるようにするための新しい `QgsProfileSourceRegistry`  クラスを追加しました。
 
-These custom profile sources can generate elevation profiles that are displayed in the main Elevation Profile dock widget and as layout items.
+これらのカスタムプロファイルソースは、メインの標高プロファイルドックウィジェットおよびレイアウトアイテムとして表示される標高プロファイルを生成できます。
 
-To do so, plugins should subclass `QgsAbstractPluginSource` and pass it to the registry via `registerProfileSource()`. Likewise, plugins should unregister (most likely on their `unload()` method) their registered sources via `unregisterProfileSource()`.
+そのためには、プラグインは `QgsAbstractPluginSource` をサブクラス化し、`registerProfileSource()` を使用してレジストリに渡す必要があります。同様に、プラグインは `unregisterProfileSource()` を使用して（多くの場合 `unload()` メソッドで）登録されたソースを登録解除する必要があります。
 
-Like other QGIS registries, the profile source registry is available from the `QgsApplication` object: `QgsApplication.profileSourceRegistry()`.
+他のQGISレジストリと同様に、プロファイルソースレジストリは `QgsApplication` オブジェクト: `QgsApplication.profileSourceRegistry()`  `から利用できます`。
 
 ![Custom profile source example](images/entries/custom_profile_source.webp)
 
