@@ -14,13 +14,16 @@ type: visual-changelog
 
 リリース日: 2018-10-26
 
-The first long-term release (LTR) of QGIS 3. QGIS 3.4 just released. After five consolidation point releases (3.4.5) it will replace the previous LTR in the package repositories in February 2019 (see [release schedule]({{< ref "resources/roadmap#release-schedule" >}})). This is a giant leap forward for the project - our first Long Term Release based on the 3.x platform. For users moving over from the 2.18 LTR there is a huge list of new features and impactful changes in this new LTR version. Please bear in mind that 3.x plugins are incompatible with 2.x plugins so review your plugin usage carefully - and if possible help to migrate old plugins to the new platform. If you have not already done so, take a look at the changelogs from [Version 3.0](../visualchangelog30) and [Version 3.2](../visualchangelog32) to understand the full scope of changes in the 3.4 release.
+QGIS 3の最初の長期サポートリリース（LTR）です。QGIS 3.4がリリースされました。5回の安定化ポイントリリース（3.4.5）の後、2019年2月にパッケージリポジトリで以前のLTRと置き換えられます（ [リリーススケジュール]({{< ref "resources/roadmap#release-schedule" >}}) 参照）。これはプロジェクトにとって大きな飛躍です。3.xプラットフォームに基づく初めての長期リリースです。2.18 LTRから移行するユーザーにとっては、この新しいLTRバージョンには膨大な新機能と大きな変更があります。3.xプラグインは2.xプラグインと互換性がないため、プラグインの使用状況を慎重に確認し、可能であれば古いプラグインを新しいプラットフォームに移行する支援をしてください。まだ確認していない場合は、 [バージョン3.0 ](../visualchangelog30) と [バージョン3.2](../visualchangelog32) の変更履歴を参照して、3.4リリースの変更の全範囲を理解してください。
 
 **謝辞**
 
 We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate/donors.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current supporters is provided below - our very great thank you to all of our supporters!
+QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは [寄付者一覧]({{< ref "/funding/donate/donors.md" >}}) でご覧いただけます。公式のサステイニングメンバーになることをご希望の方は、詳細について [サステイニングメンバーページ]({{< ref "/funding/membership.md" >}}) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。現在のサポーターの完全なリストを以下に掲載します。すべてのサポーターの皆様に心より感謝申し上げます！
+ 
+ 
+ 
 
 {{<fund type="active" >}}
 
