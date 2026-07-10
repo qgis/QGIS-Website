@@ -4,6 +4,7 @@
 import os
 import requests
 import shutil
+import tempfile
 from urllib.parse import urlparse
 import json
 
@@ -17,57 +18,34 @@ class HubHarvester:
     self.output_dir = output_dir
     os.makedirs(self.output_dir, exist_ok=True)
   
-  def clean_output_dir(self):
-    for filename in os.listdir(self.output_dir):
-      if filename == "index.md":
-        continue
-      file_path = os.path.join(self.output_dir, filename)
-      try:
-        if os.path.isfile(file_path) or os.path.islink(file_path):
-          os.unlink(file_path)
-        elif os.path.isdir(file_path):
-          shutil.rmtree(file_path)
-      except Exception as e:
-        print(f"Failed to delete {file_path}. Reason: {e}")
-
   def harvest(self):
-    """Fetch resources into a staging directory and only swap them into the
-    output directory once the fetch has fully succeeded.
+    """Fetch resources into a temporary directory and swap it into the output
+    directory only once the fetch has fully succeeded.
 
     Cleaning the output directory before fetching meant a failed or interrupted
     fetch (network error, rate limit, API outage) left it empty, dropping all
     previously harvested images until the next successful run.
     """
-    staging_dir = f"{self.output_dir}.staging"
-    if os.path.isdir(staging_dir):
-      shutil.rmtree(staging_dir)
-    os.makedirs(staging_dir, exist_ok=True)
-    # Preserve the hand-maintained index.md in the staged output.
-    index_md = os.path.join(self.output_dir, "index.md")
-    if os.path.isfile(index_md):
-      shutil.copy2(index_md, os.path.join(staging_dir, "index.md"))
-
     target_dir = self.output_dir
-    self.output_dir = staging_dir
+    staging_dir = tempfile.mkdtemp(prefix=f"hub_{self.resource_type}_")
     try:
+      # Preserve the hand-maintained index.md in the staged output.
+      index_md = os.path.join(target_dir, "index.md")
+      if os.path.isfile(index_md):
+        shutil.copy2(index_md, os.path.join(staging_dir, "index.md"))
+
+      # Fetch into the staging dir; the live directory stays untouched until
+      # the fetch has succeeded.
+      self.output_dir = staging_dir
       self.fetch_resources()
-    except Exception:
-      # Leave the existing output directory untouched on failure.
+
+      # Success: replace the live directory with the freshly staged folder.
+      self.output_dir = target_dir
+      shutil.rmtree(target_dir, ignore_errors=True)
+      shutil.copytree(staging_dir, target_dir)
+    finally:
       self.output_dir = target_dir
       shutil.rmtree(staging_dir, ignore_errors=True)
-      raise
-
-    # Fetch succeeded: replace the live directory contents with the staged ones.
-    self.output_dir = target_dir
-    self.clean_output_dir()
-    for filename in os.listdir(staging_dir):
-      if filename == "index.md":
-        continue
-      shutil.move(
-        os.path.join(staging_dir, filename),
-        os.path.join(target_dir, filename),
-      )
-    shutil.rmtree(staging_dir, ignore_errors=True)
 
   def fetch_resources(self):
     next_page = self.api_url

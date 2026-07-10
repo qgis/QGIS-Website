@@ -36,7 +36,6 @@ def test_failed_fetch_keeps_existing_images(tmp_path, monkeypatch):
     assert existing.is_file()
     assert existing.read_bytes() == b"already harvested"
     assert (out / "index.md").read_text(encoding="utf-8") == "hand maintained"
-    assert not os.path.isdir(f"{out}.staging")
 
 
 def test_successful_harvest_swaps_in_fresh_content(tmp_path, monkeypatch):
@@ -55,7 +54,6 @@ def test_successful_harvest_swaps_in_fresh_content(tmp_path, monkeypatch):
     assert (out / "fresh.png").read_bytes() == b"fresh"
     assert not (out / "stale.png").exists()          # stale entry dropped
     assert (out / "index.md").read_text(encoding="utf-8") == "hand maintained"
-    assert not os.path.isdir(f"{out}.staging")
 
 
 def test_fetch_resources_passes_a_timeout(tmp_path, monkeypatch):
