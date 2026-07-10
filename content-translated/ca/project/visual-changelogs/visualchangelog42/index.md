@@ -464,7 +464,7 @@ This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qc
 | --- | --- | --- | --- |
 | Custom Toolbar Position Loss | [\#65862](https://github.com/qgis/QGIS/issues/65862) | [PR \#66483](https://github.com/qgis/QGIS/pull/66483) | N/A |
 | Export to PDF from layout changes colors | [\#42935](https://github.com/qgis/QGIS/issues/42935) | Not a bug (Was an Adobe issue IMHO) |  |
-| Layout bleeding to edge outside map window | [\#49638](https://github.com/qgis/QGIS/issues/49638) | Fixed |  |
+| Layout bleeding to edge outside map window | [\#49638](https://github.com/qgis/QGIS/issues/49638) | Corregit |  |
 | Fix flaky test_gui_fileuploader | Unreported | [PR \#66543](https://github.com/qgis/QGIS/pull/66543) |  |
 | Hidden actions from user defined toolbar are still visible. | Unreported | [PR \#66620](https://github.com/qgis/QGIS/pull/66620) |  |
 | QGIS should never poll a PostGIS/WMS/WFS/etc connections unless specifically asked to | [\#58303](https://github.com/qgis/QGIS/issues/58303) | [PR \#66621](https://github.com/qgis/QGIS/pull/66621) | TODO |
@@ -499,7 +499,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](https://opengis.ch/)
 | --- | --- | --- | --- |
 | Windows QGIS 4 installs plugin with ACL that do not include SYSTEM or Administrators | [\#66515](https://github.com/qgis/QGIS/issues/66515) | [PR \#66576](https://github.com/qgis/QGIS/pull/66576) | N/A |
 | Crash when clicking on an unavailable layer in Layers panel | [\#65913](https://github.com/qgis/QGIS/issues/65913) | [PR \#66578](https://github.com/qgis/QGIS/pull/66578) | TODO |
-| QGIS server OGC API: Limits and offset parameters ignored when plugin changing parameters | [\#65858](https://github.com/qgis/QGIS/issues/65858) | Fixed | [PR \#66480](https://github.com/qgis/QGIS/pull/66480) |
+| QGIS server OGC API: Limits and offset parameters ignored when plugin changing parameters | [\#65858](https://github.com/qgis/QGIS/issues/65858) | Corregit | [PR \#66480](https://github.com/qgis/QGIS/pull/66480) |
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
