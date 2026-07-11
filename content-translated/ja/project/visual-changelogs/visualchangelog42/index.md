@@ -127,74 +127,74 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 <img src="images/entries/71e571c0902c1d2a576fe09198e69dc0cb7d479f.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
-### Feature: Allow control over 3d map color grading effects
-New settings are exposed for tone mapping, exposure adjustment, and gamma for 3D scenes.<br />A new "Color Grading" section the in 3d map "Effects" tab allows users to control these options. This allows users to modify a scene to render in a manner that makes colors more dramatic and provides higher contrast, or use bloom effects that can make very bright emitted light display as overexposed light in a nighttime scene.
+### 機能:3Dマップカラーグレーディング効果の制御を可能にしました
+3Dシーンのトーンマッピング、露出調整、ガンマの新しい設定が公開されました。.<br />3Dマップの ”エフェクト" タブに新しい "カラーグレーディング" セクションが追加され、ユーザーがこれらのオプションを制御できます。これにより、ユーザーはシーンをよりドラマチックな色彩と高いコントラストでレンダリングするよう変更したり、夜間シーンで非常に明るい放射光を露出オーバーの光として表示するブルーム効果を使用したりすることができます。
 
 <img src="images/entries/460ceb890c6261ddc51ce3659dde777121d649e5.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Optional light bloom effects
-A new physically-based light bloom effect has been added, which gives bright portions of the 3d map a realistic bloom. This helps those areas to actually look like they emit light, as opposed to just having bright colors, and can help make 3d scenes look much more dramatic.
+### 機能:オプションのライトブルーム効果
+新しい物理ベースのライトブルーム効果が追加されました。これにより3Dマップの明るい部分にリアリスティックなブルームが与えられます。これにより、これらの領域が明るい色を持つだけでなく、実際に光を放っているように見えるようになり、3Dシーンをよりドラマチックに見せることができます。
 
 <img src="images/entries/0c981146a38a83d08ffff1f8c49193662e5cf725.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add multisample anti aliasing (MSAA)
-A new global 3D setting is provided that toggles the use of multisample anti-aliasing in 3D maps.
+### 機能:マルチサンプルアンチエイリアシング（MSAA）の追加
+3Dマップでのマルチサンプルアンチエイリアシングの使用をトグルする新しいグローバル3D設定が提供されます。
 
 <img src="images/entries/ca69a2e049f207e2a0a57f5c5d57b3420207605c.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
-### Feature: Add gradient background to 3D scene
-QGIS now supports configurable gradients as background effects in 3D map views, providing users an effective custom skybox effect without textures.
+### 機能:3Dシーンへのグラジェント背景の追加
+QGISが3Dマップビューの背景効果として設定可能なグラジェントをサポートするようになり、テクスチャーなしでユーザーに効果的なカスタムスカイボックス効果を提供します。
 
 <img src="images/entries/139a726cacbde4fdffaee78e66c974efbef509c3.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
-### Feature: 3D Tiles: add instancing support
-Support has been added for instanced meshes in 3D Tiles, allowing users to efficiently display repeated 3D objects like trees or streetlights at varying positions, rotations, and scales. This implementation abstracts away the complex structural differences between 3D Tiles 1.0 and 1.1 to provide seamless rendering.
-- Supported in both 2D and 3D map views.
-- 3D views utilize highly efficient GPU instanced rendering.
-- Supports 3D Tiles 1.0 using the i3dm format.
-- Supports 3D Tiles 1.1 via glTF GPU instancing.
-- Automatically corrects tile rotations for projected coordinate systems.
-- Quantized positions and oct-encoded rotations remain unsupported.
-- Feature IDs are not read in this implementation.
+### 機能:3D Tiles:インスタンシングサポートの追加
+3D Tilesのインスタンス化されたメッシュのサポートが追加され、ユーザーは樹木や街灯などの繰り返される3Dオブジェクトをさまざまな位置、回転、スケールで効率的に表示できるようになりました。この実装は3D Tiles 1.0と1.1の複雑な構造的差異を抽象化して、シームレスなレンダリングを提供します。
+- 2Dおよび3Dマップビューの両方でサポートされています。
+- 3DビューではGPUによる高効率のインスタンスレンダリングが活用されます。
+- i3dmフォーマットを使用した3D Tiles 1.0をサポートします。
+- glTF GPUインスタンシングを介した3D Tiles 1.1をサポートします。
+- 投影座標系のタイル回転を自動的に修正します。
+- 量子化された位置とoct符号化された回転は引き続きサポートされていません。
+- 地物IDはこの実装では読み取られません。
 
 <img src="images/entries/adb08002b421eee278c571fd52325e7e93251b69.png" class="img-responsive img-rounded" />
 
 This feature was funded by Natural Resources Canada
 
 This feature was developed by [Martin Dobias](https://github.com/wonder-sk)
-### Feature: Add implicit tiling for 3D Tiles
-Support has been added for implicit tiles as specified in the 3D Tiles 1.1 standard. This feature improves the loading and parsing efficiency of massive 3D datasets by utilizing structured subdivision schemes.<br />Logic runs via a new `QgsCesiumImplicitTiling` core class, and the quadtree subdivision scheme is currently supported (with octree support possible in a future update).
+### 機能:3D Tilesへの暗黙的タイリングの追加
+3D Tiles 1.1標準で指定された暗黙的タイルのサポートが追加されました。この機能は構造化された細分化スキームを活用して、大規模な3Dデータセットの読み込みと解析の効率を向上させます。ロジックは新しい QgsCesiumImplicitTiling コアクラスを介して実行され、クワッドツリー細分化スキームが現在サポートされています（オクツリーサポートは将来の更新で可能になります）。<br />ロジックは新しい `QgsCesiumImplicitTiling` コアクラスを介して実行され、クワッドツリー細分化スキームが現在サポートされています（オクツリーサポートは将来の更新で可能になります）。
 
 <img src="images/entries/3031b5c8facbd4e11ddd450b7314d92f9684c083.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Martin Dobias](https://github.com/wonder-sk)
-### Feature: Add camera controls dialog to control the 3D camera in map coordinates
-A new dialog is provided to control the camera looking at XYZ in 3D map CRS coordinates, as well as setting pitch and heading angles and distance from the center point.<br />The dialog gets a `Live update` button that mimics the behavior of the Layer Styling panel. When set, user-changed settings are automatically reflected in the 3D map.<br />This does not affect the values updating from the 3D map. When a user moves the camera, the values are updated in real time, regardless of the `Live update` checkbox.
+### 機能:マップ座標で3Dカメラを制御するカメラコントロールダイアログの追加
+3DマップCRS座標でXYZを見るカメラを制御し、ピッチ角、ヘディング角、中心点からの距離を設定するための新しいダイアログが提供されます。<br />ダイアログにはレイヤースタイリングパネルの動作を模倣した リアルタイム更新 ボタンが追加されます。有効にすると、ユーザーが変更した設定が自動的に3Dマップに反映されます。<br />これは3Dマップからの値の更新には影響しません。ユーザーがカメラを移動すると、リアルタイム更新 チェックボックスに関わらず、値がリアルタイムで更新されます。
 
 <img src="images/entries/1f896ef8c6f67e8a925e31712a4c543525d8987c.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
-### Feature: Add support for 3D composite tiles ("cmpt")
-QGIS now includes support for 3D Tiles 1.0 spec [Composite Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/specification/TileFormats/Composite/README.adoc#tileformats-composite-composite), which combine multiple tiles (e.g., b3dm or i3dm) into a single file. This support is included for both 2D and 3D rendering.
+### 機能:3D複合タイル（"cmpt"）のサポートの追加
+QGISが複数のタイル（b3dmやi3dmなど）を1つのファイルに結合する3D Tiles 1.0仕様の [複合タイル](https://github.com/CesiumGS/3d-tiles/blob/main/specification/TileFormats/Composite/README.adoc#tileformats-composite-composite) のサポートを含むようになりました。このサポートは2Dおよび3Dレンダリングの両方に含まれています。
 
 <img src="images/entries/7196a54d0d5835b1cefa9efd8b4143c67130d5ab.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Martin Dobias](https://github.com/wonder-sk)
-### Feature: Improve 3D map view "Invert vertical axis" setting.
-The Y inversion setting for 3D views has been refactored into a QFlag-based configuration, assigning an independent bit for each navigation scenario (walk mode dragging, walk mode mouse captured, and terrain mode).
-- Settings are globally editable via a checkbox-based combobox.
-- The C++ interface for inverted Y preferences is updated.
-- The Python interface remains compatible via duck-typing.
+### 機能：3Dマップビューの "垂直軸を反転" 設定の改善
+3DビューのY軸反転設定がQFlagベースの設定にリファクタリングされ、各ナビゲーションシナリオ（ウォークモードのドラッグ、ウォークモードのマウスキャプチャ、テレインモード）に独立したビットが割り当てられました。
+- 設定はチェックボックスベースのコンボボックスからグローバルに編集できます。
+- 反転Y設定のC++インターフェースが更新されました。
+- Pythonインターフェースはダックタイピングにより引き続き互換性が維持されます。
 
 <img src="images/entries/9ae04d9318d5c9662a84821de7c113ed1f48eb66.png" class="img-responsive img-rounded" />
 
 この機能は [David Koňařík](https://github.com/dvdkon) によって開発されました
-### Feature: 3d export stl
-QGIS now supports exporting a 3D scene in the [STL](https://en.wikipedia.org/wiki/STL_(file_format)) format, in addition to the existing `OBJ` export functionality. The `STL` format is much simpler than the `OBJ` and does not handle textures.
+### 機能:3d stlエクスポート
+QGISが既存の `OBJ`  エクスポート機能に加えて、3Dシーンを [STL](https://en.wikipedia.org/wiki/STL_(file_format))  形式でエクスポートするサポートを持つようになりました。`STL` 形式は `OBJ`  よりもはるかにシンプルで、テクスチャーを処理しません。
 
 <img src="images/entries/e0e80d41fe495959ba786ad4261a947b766ac321.png" class="img-responsive img-rounded" />
 
@@ -202,8 +202,8 @@ QGIS now supports exporting a 3D scene in the [STL](https://en.wikipedia.org/wik
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 ## 点群
-### Feature: Add overview-length optional parameter to build vpc algorithm
-A new `--overview-length` optional parameter has been added to the build VPC algorithm
+### 機能:VPC構築アルゴリズムへのオーバービュー長さオプションパラメーターの追加
+VPC構築アルゴリズムに新しい `--overview-length` オプションパラメーターが追加されました。
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 ### Feature: Add reading support for multi-overview VPC files
