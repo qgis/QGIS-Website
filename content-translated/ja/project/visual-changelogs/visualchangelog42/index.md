@@ -206,203 +206,218 @@ This feature was developed by [Jean Felder](https://github.com/ptitjano)
 VPC構築アルゴリズムに新しい `--overview-length` オプションパラメーターが追加されました。
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add reading support for multi-overview VPC files
-Instead of parsing overview assets by their "overview" id, they are now parsed based on their "overview" role.<br />VPC files may contain multiple overviews per asset with arbitrary ids. All assets with the "overview" role are now considered as overviews, loaded and rendered when zoomed out.<br />`QgsPointCloudLayer` and `QgsVirtualPointCloudProvider` now have an `overviews()` method returning a list of all overviews, instead of a single one.
+### 機能:マルチオーバービューVPCファイルの読み取りサポートの追加
+オーバービューアセットを "overview" IDで解析する代わりに、"overview" ロールに基づいて解析されるようになりました。<br />VPCファイルには任意のIDを持つアセットごとに複数のオーバービューが含まれる場合があります。"overview" ロールを持つすべてのアセットがオーバービューとして扱われ、ズームアウト時に読み込まれてレンダリングされます。<br />`QgsPointCloudLayer` と`QgsVirtualPointCloudProvider` に、単一ではなくすべてのオーバービューのリストを返す overviews() メソッドが追加されました。
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add support for a vpc-in-zip (.vpz) virtual point cloud format
-Virtual Point Cloud (VPC) files can become quite large, and the ASCII-based JSON format does not really help in keeping the size down.<br />Leveraging the new support for QGIS to read remote `.vpc` files, the need for a smaller file size is more apparent, and support for the `.vpz` format constructed from a zipped `.vpc` has been added (similar to the `.qgz` QGIS project files providing a zipped `.qgs`).
+### 機能:vpc-in-zip（.vpz）仮想ポイントクラウドフォーマットのサポートの追加
+仮想ポイントクラウド（VPC）ファイルはかなり大きくなる可能性があり、ASCIIベースのJSON形式はサイズを小さく保つのにあまり役立ちません。<br />QGISがリモートの `.vpc` ファイルを読み取るための新しいサポートを活用すると、より小さいファイルサイズの必要性がより明らかになり、圧縮された `.vpc`  から構築された `.vpz` 形式のサポートが追加されました（圧縮された `.qgs` を提供する `.qgz`  QGISプロジェクトファイルに類似）。
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add per layer elevation shading
-QGIS now supports per-layer elevation shading specifically for point cloud layers. This feature provides finer visual control, avoiding the blending and rendering artifacts that can occur when global elevation shading is applied across the entire map scene.
-- Controlled via extended GUI in 2D symbology.
-- Bypasses global elevation shading artifacts entirely.
-- Prevents unwanted blending of distinct map elements.
+### 機能:レイヤーごとの標高シェーディングの追加
+QGISがポイントクラウドレイヤーに特化したレイヤーごとの標高シェーディングをサポートするようになりました。この機能はより細かい視覚的制御を提供し、グローバルな標高シェーディングがマップシーン全体に適用された場合に発生する可能性のあるブレンドとレンダリングのアーティファクトを回避します。
+- 2Dシンボロジーの拡張GUIから制御されます。
+- グローバルな標高シェーディングアーティファクトを完全にバイパスします。
+- 異なるマップ要素の意図しないブレンドを防止します。
 
 <img src="images/entries/41a69a819d5d1446c2bcf2ddfcc4319bdb3b9f39.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
-### Feature: Support arithmetic operators on color objects in expressions
-QGIS now supports modifying color objects on Point Cloud data directly within expressions, using basic arithmetic operations. This simplifies dynamic color manipulation by automatically splitting the color into its base components and applying the mathematical operation to each channel, eliminating the need for complex component extraction formulas.
-- Arithmetic operations apply directly to underlying RGBA channels.
-- Multiplication works with the color on either side.
-- Other operations require the color on the left.
-- This feature avoids complex color component extraction formulas.
-- Dynamic shading based on attributes is greatly simplified.
+### 機能:式でのカラーオブジェクトへの算術演算子のサポート
+QGISがポイントクラウドデータのカラーオブジェクトを式内で基本的な算術演算を使用して直接変更することをサポートするようになりました。これにより、カラーを基本コンポーネントに自動的に分割して各チャネルに数学的操作を適用することでダイナミックなカラー操作が簡素化され、複雑なコンポーネント抽出式の必要性がなくなります。 
+- 算術演算は基礎となるRGBAチャネルに直接適用されます。
+- 乗算はどちら側にカラーがあっても機能します。
+ 
+ 
+ 
+- その他の演算はカラーを左側に必要とします。
+- この機能は複雑なカラーコンポーネント抽出式を避けます。
+- 属性に基づくダイナミックシェーディングが大幅に簡素化されます。
 
-For Example:
+例:
 
 `@point_color * scale_linear( @NumberOfReturns, 0, 8, 0.5, 1 )`
 
 <img src="images/entries/d215e96ce1bf086ec558dbf3587894a22cc75af1.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
-### Feature: Modify renderer color by expression
-An additional modifier has been added to the point cloud renderer that makes it possible to use expressions to for adjusting colors.<br />All point cloud attributes can be used in the expression, as well as the base color of the renderer. Users can combine the base color value with another attribute of the point, such as intensity, to produce a better result for point classification and styling.<br />For example:<br />`@point_color * (@intensity / 65535)`
+### 機能:式によるレンダラーカラーの変更
+ポイントクラウドレンダラーに色を調整するための式を使用できるようにする追加のモディファイアーが追加されました。<br />ポイントクラウドのすべての属性とレンダラーのベースカラーを式で使用できます。ユーザーはベースカラー値を強度などのポイントの別の属性と組み合わせて、ポイント分類とスタイリングのより良い結果を生成できます。<br />例えば:<br />`@point_color * (@intensity / 65535)`
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
 ## 印刷レイアウト
-### Feature: Add new layout chart item functionality to derive plot data and styling from the source vector layer renderer
-New settings have been added to the layout chart items:
-- a 'generate categories from the layer symbology' toggle to have the plot series' X axis match categories from the source vector layer's renderer
-- an 'apply layer symbology colors' toggle to have the rendered charts take on the colors of the symbol attached to the vector layer's renderer
+### 機能:ソースベクターレイヤーレンダラーからプロットデータとスタイリングを導出する新しいレイアウトチャートアイテム機能の追加
+レイアウトチャートアイテムに新しい設定が追加されました:
+- プロットシリーズのX軸をソースベクターレイヤーのレンダラーのカテゴリに一致させる 'レイヤーシンボロジーからカテゴリを生成する' トグル
+- レンダリングされたチャートがベクターレイヤーのレンダラーに添付されたシンボルの色を引き継ぐ 'レイヤーシンボロジーの色を適用する' トグル
 
-The user can either rely on a blank series to *count* the number of matching features, or can rely on a custom Y expression (a simple field or a full-fledged expression) to come up with a customized sum (say length of lines, or an attribute referring to a value that can be summed, etc.)
+ユーザーは空白のシリーズを使用して一致する地物の数を *カウント* するか、カスタムY式（シンプルなフィールドまたは完全な式）を使用してカスタマイズされた合計（ラインの長さや合計できる値を参照する属性など）を算出することができます。
 
 <img src="images/entries/ba82a958973bddc5c128c2b24c7cd249a81d737c.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add new option to clip a picture item by a shape-based item
-QGIS now provides the ability to clip a layout picture item by a shape-typed item.<br />This provides a fantastic way to frame cool shapes and mask elements with images (whether dynamically driven by an atlas feature attribute or a static image source).<br />The clipping is enabled and configured inside a new section of the picture item properties panel.
+### 機能:シェイプベースのアイテムで画像アイテムをクリップする新しいオプションの追加
+QGISがレイアウト画像アイテムをシェイプタイプのアイテムでクリップする機能を提供するようになりました。<br />これにより、クールなシェイプをフレームし、画像（アトラス地物属性によって動的に駆動されるか静的な画像ソースかを問わず）でマップ要素をマスクする素晴らしい方法が提供されます。<br />クリッピングは画像アイテムのプロパティパネルの新しいセクションで有効にして設定できます。
 
 <img src="images/entries/08cbd88117433df3beb02050b1e690886b7ee27b.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Geospatial PDF layer management enhancement
-New options have been added to allow Geospatial PDF Exports to follow the QGIS layer tree configuration (groups, order, names, visibility, group layers). This allows users to preserve the layer structure, including nested groups, when exporting to a Geospatial PDF. This functionality is supported in print layouts, but not in standard map rendering tasks.
-- The feature requires a map without locked layers.
-- Both visible and invisible project layers are exported.
-- PDFs render custom orders while keeping standard tree structures.
-- Feature attributes are exported for all layers or none.
-- Group layers are supported as single map layers.
-- Matching PDF groups handle layout item visibility directly.
-- Unmatched PDF groups appear at the tree bottom.
-- Mutually exclusive groups are currently not supported.
+### 機能:ジオスペシャルPDFレイヤー管理の強化
+ジオスペシャルPDFエクスポートがQGISレイヤーツリー設定（グループ、順序、名前、表示設定、グループレイヤー）に従えるようにする新しいオプションが追加されました。これにより、ユーザーはジオスペシャルPDFにエクスポートする際にネストされたグループを含むレイヤー構造を保持できます。この機能は印刷レイアウトでサポートされていますが、標準のマップレンダリングタスクではサポートされていません。
+- この機能はロックされたレイヤーのないマップを必要とします。
+- 表示されているレイヤーと非表示のレイヤーの両方がエクスポートされます。
+- PDFはカスタム順序をレンダリングしながら標準ツリー構造を維持します。
+- 地物属性はすべてのレイヤーでエクスポートされるか、まったくエクスポートされません。
+- グループレイヤーは単一のマップレイヤーとしてサポートされています。
+- 一致するPDFグループはレイアウトアイテムの表示設定を直接処理します。
+- 一致しないPDFグループはツリーの下部に表示されます。
+- 相互排他グループは現在サポートされていません。
 
 <img src="images/entries/c4c92f09dc1381fac13768b1b52a192c9ed64eb8.png" class="img-responsive img-rounded" />
 
-This feature was funded by the city of Bern
+この機能は city of Bern の資金提供で開発されました
 
 This feature was developed by [Germap](https://github.com/gacarrillor)
 ## 計算式
-### Feature: Add scale_cubic_bezier expression function, handle bezier-cubic interpolation when converting MapBox styles
-Complements the existing scale_linear, scale_exponential functions and adds a new bezier-cubic based interpolation method. This is then used when converting MapBox styles using the "cubic-bezier" interpolation type.
+### 機能:scale_cubic_bezier式関数の追加とMapBoxスタイル変換時のベジェ三次補間の処理
+既存の scale_linear、scale_exponential 関数を補完し、新しいベジェ三次ベースの補間メソッドを追加します。これはその後、"cubic-bezier" 補間タイプを使用してMapBoxスタイルを変換する際に使用されます。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add concat_ws expression function
-Concatenate all but the first arguments with separators. The first parameter is used as a separator.<br />NULL arguments are ignored.
+### 機能:concat_ws式関数の追加
+最初の引数を除くすべての引数を区切り文字で連結します。最初のパラメーターは区切り文字として使用されます。<br />NULL引数は無視されます。
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## データ管理
-### Feature: Adding "Field Calculator" menu item to the attribute table header
-A new "Field Calculator" menu item is provided in the context menu of column headers in a vector layer's attribute table.<br />The Field Calculator window will open with "Update existing field" checkbox automatically checked and the corresponding field already selected in the combo box.<br />The action is only enabled on editable fields.
+### 機能:属性テーブルヘッダーへの「フィールド計算機」メニューアイテムの追加
+ベクターレイヤーの属性テーブルの列ヘッダーのコンテキストメニューに新しい "フィールド計算機" メニューアイテムが提供されます。<br />フィールド計算機ウィンドウは "既存のフィールドを更新" チェックボックスが自動的にチェックされ、対応するフィールドがコンボボックスにすでに選択された状態で開きます。<br />このアクションは編集可能なフィールドでのみ有効になります。
 
 <img src="images/entries/8ade61ae18cd9ec8014958f35d175ed4e5d0ed4f.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Patrice Pineault](https://github.com/TurboGraphxBeige)
 ## プロセシング
-### Feature: Dynamically show child step feature counts as model progresses
-As the model is run through the designer dialog, QGIS will now show an updated count of features flowing through the model links. To achieve this, a new flexible "badge" item that is attached to arrows was introduced.<br />Note:
-- We now also show non-feature count outputs in the badges for arrows, so, e.g., the value of numeric outputs attached to another algorithm will be shown. (To avoid cluttered UI, strings are truncated.)
-- Badges now inherit the midpoint color of their associated arrow lines.
-- For performance reasons, the feature count updates are limited to only every 100 features.
-- Since not all algorithms report dynamic feature count progress (e.g., third-party plugin-based ones won't, at least until the plugin author utilises the upgraded API for this), QGIS will always update the feature counts with their exact final counts when the whole model finishes executing. For those models, the user will see the arrow's count updated in one go at the end of the model, not as that child executes.
+### 機能:モデルの進行に応じて子ステップの地物数を動的に表示します
+デザイナーダイアログからモデルが実行されると、QGISはモデルのリンクを流れる地物の更新されたカウントを表示するようになりました。これを実現するために、矢印に添付される新しい柔軟な　"バッジ" アイテムが導入されました。<br />注意:
+- 矢印のバッジに地物数以外の出力も表示されるようになりました。例えば、別のアルゴリズムに添付された数値出力の値が表示されます（UIの乱雑さを避けるため、文字列は切りつめられます）。
+- バッジが関連する矢印ラインの中間点の色を引き継ぐようになりました。
+- パフォーマンス上の理由から、地物数の更新は100地物ごとに制限されています。
+- すべてのアルゴリズムがダイナミックな地物数の進捗を報告するわけではないため（例：サードパーティプラグインベースのものは、プラグイン作者がこのためのアップグレードされたAPIを利用するまで報告しません）、QGISはモデル全体の実行が終了したときに常に正確な最終カウントで地物数を更新します。これらのモデルでは、ユーザーは子が実行される際ではなく、モデルの終了時に一度に矢印のカウントが更新されるのを見ることになります。
 
 <img src="images/entries/e78e514a83f210185705a81bc6e1a8311bc025c0.png" class="img-responsive img-rounded" />
 
 この機能は City of Canning によって資金提供されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add an area threshold parameter
-The check holes processing tool now includes a threshold size which allows users to filter the returned results. If the hole area is higher than the provided threshold, then the hole is not considered an error.
+### 機能:面積しきい値パラメーターの追加
+穴チェックプロセッシングツールに、ユーザーが返された結果をフィルタリングできるしきい値サイズが追加されました。穴の面積が指定したしきい値より大きい場合、その穴はエラーとして見なされません。
 
 This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
-### Feature: Add support for the SFCGAL extend to edges parameter in medial axis algorithm
-With SFCGAL 2.3, the approximate media axis algorithm has a new `extendToEdges` parameter. If this parameter is activated, the medial axis endpoints are extended to the input polygon boundary. The attached media illustrates the difference between running the medial axis algorithm with this option set to false (red) and true (green), respectively.
+### 機能:中心軸アルゴリズムでのSFCGALエッジへの拡張パラメーターのサポートの追加
+SFCGAL 2.3では、近似中心軸アルゴリズムに新しい `extendToEdges`  パラメーターが追加されました。このパラメーターを有効にすると、中心軸の端点が入力ポリゴンの境界まで延長されます。添付のメディアは、このオプションをfalse（赤）とtrue（緑）に設定してそれぞれ中心軸アルゴリズムを実行した場合の違いを示しています。
 
 <img src="images/entries/d1cf8c4c5dd1ef1d172745817db02a6e2628191e.png" class="img-responsive img-rounded" />
 
 この機能は Stadt Frankfurt am Main の資金提供で開発されました
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
-### Feature: Add processing in user defined menu or toolbar
-Users can now add a processing algorithm action to a user-defined menu or toolbar. When triggered, those actions will open a dialog to parametrize and execute the associated processing algorithm.
+### 機能:ユーザー定義メニューまたはツールバーへのプロセッシングの追加
+ユーザーがプロセッシングアルゴリズムのアクションをユーザー定義のメニューまたはツールバーに追加できるようになりました。トリガーされると、これらのアクションは関連するプロセッシングアルゴリズムをパラメータ化して実行するためのダイアログを開きます。
 
 <img src="images/entries/5ae9ce29dd7d2e8a7b094e3f7c129171af8a6d8f" class="img-responsive img-rounded" />
 
 この機能は Stadt Frankfurt am Main と Oslandia の資金提供で開発されました
 
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
-### Feature: Random subset algorithms ported to C++
-The Processing algorithms Random extract within subsets and Random selection within subsets have been ported from Python to C++, providing enhanced performance.
+### 機能:ランダムサブセットアルゴリズムのC++への移植
+プロセッシングアルゴリズムのサブセット内でのランダム抽出とサブセット内でのランダム選択がPythonからC++に移植され、パフォーマンスが向上しました。
+ 
+ 
+ 
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 ## アプリケーションとプロジェクトのオプション
-### Feature: Topocentric projection
-Topocentric CRS support has been added to QGIS, with a new widget provided for setting the point of origin of the projection, which is enabled when users explicitly select a Topocentric CRS option from the CRS selection menu.
+### 機能:トポセントリック投影
+QGISにトポセントリックCRSサポートが追加されました。ユーザーがCRS選択メニューからトポセントリックCRSオプションを明示的に選択すると有効になる投影の原点を設定するための新しいウィジェットが提供されます。
 
 <img src="images/entries/405bc086bd84189e5113544155ac4ef7d85ed836.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
 ## センサ
-### Feature: Add support for SensorThings 2.0, including Sensing, Sampling and Relations extensions
-QGIS now includes support for layers utilising SensorThings 2.0 specifications, including the new Sensing, Sampling and Relations extensions.<br />This also exposes these choices for SensorThings 2.0-enabled services. The service version and extensions are determined dynamically when connecting to a service via the browser or data source manager.
+### 機能:Sensing、Sampling、Relations拡張を含むSensorThings 2.0のサポートの追加
+ 
+ 
+ 
+QGISが新しいSensing、Sampling、Relations拡張を含むSensorThings 2.0仕様を利用するレイヤーのサポートを含むようになりました。<br />これはまたSensorThings 2.0対応サービスのこれらの選択も公開します。サービスのバージョンと拡張はブラウザーまたはデータソースマネージャーを介してサービスに接続する際に動的に決定されます。 
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## Profile Plots
-### Feature: Display elevation profile curve in 3D
-QGIS now provides a "Show Profile in 3D Views" option in the profile plot settings menu, which enables the display of the elevation profile curve in 3D.<br />The curve is retrieved from the elevation profile, and Z values are set from the calculated min and max Z values of the data that fit within the curve.<br />Polygon and line rubberbands follow the cursor to display over what position in the elevation profile the user is currently hovering over.
+### 機能:3Dでの標高プロファイル曲線の表示
+QGISがプロファイルプロット設定メニューに "3Dビューでプロファイルを表示" オプションを提供するようになり、3Dでの標高プロファイル曲線の表示が有効になります。<br />曲線は標高プロファイルから取得され、Z値は曲線内に収まるデータの計算された最小値と最大値のZ値から設定されます。<br />ポリゴンとラインのラバーバンドはカーソルに従い、ユーザーが現在標高プロファイルのどの位置にホバーしているかを表示します。
 
 <img src="images/entries/51b9332232c56ecf122b5d6205744c01a2371e42.png" class="img-responsive img-rounded" />
 
 この機能は [Dominik Cindric](https://github.com/ViperMiniQ)によって開発されました
 ## ブラウザ
-### Feature: Rework how ESRI REST services are exposed in the browser
-Changes have been made to help de-clutter ESRI REST service content in the browser:
-- The duplicate items for the same service exposed as both mapserver (raster) and featureserver (vector) are now hidden. Instead, only show the feature server item, and move the ability to load as a raster to the right-click context menu on the item. This mimics how ArcPro exposes these services, with the exception that it ONLY allows loading them as vectors. There's no capability to load as a raster when the service exposes the query capability.
-- We no longer show the "All layers" pseudo layer for mapserver items. Instead, this functionality was moved to the right-click context menu for the map service item. This avoids cluttering up the service contents in the browser with rarely used items that don't correspond to the actual contents of the service.
+### 機能:ブラウザーでのESRI RESTサービスの公開方法の改善
+ 
+ 
+ 
+ブラウザーでのESRI RESTサービスコンテンツの整理を助けるための変更が加えられました:
+- mapserver（ラスター）とfeatureserver（ベクター）の両方として公開された同じサービスの重複アイテムが非表示になりました。代わりにfeatureserverアイテムのみを表示し、ラスターとして読み込む機能をアイテムの右クリックコンテキストメニューに移動しました。これはArcProがこれらのサービスを公開する方法を模倣していますが、唯一の違いはArcProがベクターとしての読み込みのみを許可することです。サービスがクエリ機能を公開している場合、ラスターとして読み込む機能はありません。
+- mapserverアイテムの "全レイヤー" 擬似レイヤーを表示しなくなりました。代わりに、この機能はマップサービスアイテムの右クリックコンテキストメニューに移動されました。これにより、サービスの実際のコンテンツに対応しないまれにしか使用されないアイテムでブラウザーのサービスコンテンツが乱雑にならないようにします。
 
-This feature was funded by République et canton de Genève
+この機能は République et canton de Genève の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## データプロバイダ
-### Feature: Greatly speed up the FeatureServer provider for map viewing
-QGIS has a significantly more performant refactored approach to fetching data using the FeatureServer Provider, which trims down the number of requests required to fetch a subset of the features within a given map extent.<br />Note that the actual TOTAL number of requests to get EVERY feature from the service doesn't change, so, for example, opening the attribute table would result in the same total number of requests.
+### 機能:マップ表示用FeatureServerプロバイダーの大幅な高速化
+QGISがFeatureServerプロバイダーを使用してデータを取得するための大幅に高性能なリファクタリングアプローチを持つようになり、指定されたマップ範囲内の地物のサブセットを取得するために必要なリクエスト数が削減されました。<br />実際にサービスからすべての地物を取得するための合計リクエスト数は変わらないことに注意してください。例えば、属性テーブルを開くと同じ合計リクエスト数になります。
 
 <img src="images/entries/e3ea1f5568a403cb6c293d963c0b04351df8ea21.png" class="img-responsive img-rounded" />
 
-This feature was funded by République et canton de Genève
+この機能は République et canton de Genève の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Enable parallel provider load for AFS, AMS providers, and some related fixes
-QGIS has enabled parallel provider loading for the ArcGIS FeatureServer/MapServer providers, giving much faster project load times when a project contains multiple FeatureServer/MapServer layers.
+### 機能:AFSおよびAMSプロバイダーの並列プロバイダー読み込みの有効化と関連する修正
+QGISがArcGIS FeatureServer/MapServerプロバイダーの並列プロバイダー読み込みを有効にし、プロジェクトに複数のFeatureServer/MapServerレイヤーが含まれる場合のプロジェクト読み込み時間が大幅に短縮されました。
 
-This feature was funded by République et canton de Genève
+この機能は République et canton de Genève の資金提供で開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Support STAC assets from other cloud optimized data types and blob stores
-QGIS has added support for STAC assets from other cloud object-store providers, including Azure and Google.<br />This additionally extends support to other cloud-optimized data types beyond GeoTiff, such as. JPEG2000, TileDB, Point Clouds, and others provided they are published with an appropriate `cloud-optimized` labelled mimetype or a supported asset type declaration.
+### 機能:他のクラウド最適化データタイプとblobストアからのSTACアセットのサポート
+ 
+ 
+ 
+QGISがAzureやGoogleなどの他のクラウドオブジェクトストアプロバイダーからのSTACアセットのサポートを追加しました。<br />Tこれにより、適切な cloud-optimized ラベルのmimetypeまたはサポートされたアセットタイプ宣言で公開されている場合に限り、GeoTiff以外のJPEG2000、TileDB、ポイントクラウドなどの他のクラウド最適化データタイプへのサポートも拡張されます。
 
-This feature was developed by [Norman Barker](https://github.com/normanb)
+この機能は [Norman Barker](https://github.com/normanb) によって開発されました
 ## QGISサーバー
-### Feature: Add support for HIGHLIGHT_LABELFRAME options WMS params
-New parameters for WMS services allow for the configuration of frame style properties on labels, including:
+### 機能:WMSパラメーターのHIGHLIGHT_LABELFRAMEオプションのサポー
+WMSサービスの新しいパラメーターにより、ラベルのフレームスタイルプロパティの設定が可能になりました。以下が含まれます:
 - `HIGHLIGHT_LABELFRAMEBACKGROUNDCOLOR`
 - `HIGHLIGHT_LABELFRAMEOUTLINECOLOR`
 - `HIGHLIGHT_LABELFRAMEOUTLINEWIDTH`
 - `HIGHLIGHT_LABELFRAMESIZE`
 
-For Example:
+例:
 
 `&MAP0:HIGHLIGHT_LABELFRAMEBACKGROUNDCOLOR=%23FF0000`<br />`&MAP0:HIGHLIGHT_LABELFRAMEOUTLINECOLOR=%230000FF`<br />`&MAP0:HIGHLIGHT_LABELFRAMESIZE=5`<br />`&MAP0:HIGHLIGHT_LABELFRAMEOUTLINEWIDTH=2`
 
 <img src="images/entries/e2ce00c7b18b3fbb012ee8e08e0def43db4959c5.png" class="img-responsive img-rounded" />
 
 This feature was developed by [Sandro Mani](https://github.com/manisandro)
-### Feature: FlatGeobuf OAPIF export plus various fixes
-The FlatGeobuf export format has been added to the QGIS Server OAPIF service, implemented in line with [QEP 414](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-414-server-oapif-jsonfg-flatgeobuf.md)
+### 機能:FlatGeobuf OAPIFエクスポートと各種修正
+ FlatGeobufエクスポートフォーマットが [QEP 414](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-414-server-oapif-jsonfg-flatgeobuf.md) に沿って実装され、QGIS Server OAPIFサービスに追加されました。
 
-This feature was funded by [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://www.qgis.de/)
+この機能は [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://www.qgis.de/) の資金提供で開発されました
 
 This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ## プログラマビリティ
-### Feature: Expose concave hull of polygons functionality
-QGIS now supports the Concave Hull of Polygons algorithm from GEOS, which has been exposed in PyQGIS.
-1. Allows polygon (and line) feature input for the Concave Hull by Feature algorithm. Previously, a user would have to first extract vertices from the polygon to calculate the concave hull from the points, but that approach ignores the interior of the polygon.
-2. Adds a dedicated "Fill gaps between polygons" algorithm:
+### 機能：ポリゴンの凹包機能の公開
+QGISがGEOSのポリゴンの凹包アルゴリズムをサポートするようになり、PyQGISに公開されました。
+1. 地物によるConcave Hullアルゴリズムにポリゴン（およびライン）地物の入力を許可します。以前は、ユーザーはポイントから凹包を計算するためにまずポリゴンから頂点を抽出する必要がありましたが、そのアプローチはポリゴンの内部を無視していました。
+2. 専用の "ポリゴン間のギャップを埋める" アルゴリズムを追加します:
 
-Unlike the standard Concave Hull algorithm, a Concave Hull of Polygons is a (possibly) non-convex polygon containing all the input polygons. The computed hull fills the gaps between the polygons without intersecting their interiors. It strictly follows the outer boundaries of the input polygons, allowing you to fill gaps between them without distorting their original shapes. It is particularly useful for cases such as generalizing groups of building outlines, creating 'district' polygons around blocks, or removing gaps and joining disjoint sets of polygons.<br />See https://lin-ear-th-inking.blogspot.com/2022/05/concave-hulls-of-polygons.html?m=1 for more details
+標準のConcave Hullアルゴリズムとは異なり、ポリゴンのConcave Hullは（場合によっては）すべての入力ポリゴンを含む非凸ポリゴンです。計算されたhullはポリゴンの内部と交差することなく、ポリゴン間のギャップを埋めます。入力ポリゴンの外側の境界に厳密に従い、元の形状を歪めることなくポリゴン間のギャップを埋めることができます。建物の輪郭グループの汎化、ブロック周辺の '地区' ポリゴンの作成、ギャップの削除や分離したポリゴンセットの結合などのケースに特に役立ちます。<br />詳細については https://lin-ear-th-inking.blogspot.com/2022/05/concave-hulls-of-polygons.html?m=1 を参照してください 
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ## 注目すべき修正
