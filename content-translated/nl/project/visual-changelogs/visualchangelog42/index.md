@@ -114,40 +114,40 @@ Nieuwe effecten voor omgevingslicht zijn toegevoegd aan de op fysiek gebaseerde 
 <img src="images/entries/80ed241c2adbea51749cc1d0d5d892ef17f7f6d6.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Support 3D model instancing
-Instancing support has been added for 3d symbols.<br />This introduces a new library, tinyobjloader: https://github.com/tinyobjloader/tinyobjloader<br />qgsobj3dutils (similar to qgsgltf3dutils) is created, which loads OBJ data into geometry, reading and creating textured material, if it exists.<br />Other changes:
-- PhongTexturedMaterial now supports instancing by implementing setInstancingEnabled() like phong and gooch.
-- HighlightMaterial has been refactored to remove technique from the constructor call, and it also implements setInstacingEnabled() with flags. This also fixes a bug where previously 3d models wouldn't be highlighted in 3d view when selected in 2d.
+### Mogelijkheid: Ondersteuning instancing 3D-model
+Ondersteuning voor instancing is toegevoegd voor 3D- symbolen.<br />Dit introduceert een nieuwe bibliotheek, tinyobjloader: https://github.com/tinyobjloader/tinyobjloader<br />qgsobj3dutils (soortgelijk aan qgsgltf3dutils) is gemaakt, die gegevens van OBJ laadt in geometrie, leest en maakt materiaal met textuur, als dat bestaat.<br />Andere wijzigingen:
+- PhongTexturedMaterial ondersteunt nu instancing door het implementeren van setInstancingEnabled() zoals voor Phong en Gooch.
+- HighlightMaterial is opnieuw bewerkt om techniek uit de aanroep voor het maken te verwijderen, en het implementeert setInstacingEnabled() met vlaggen. Dit repareert ook een probleem waar eerder 3D-modellen niet werden geaccentueerd in weergave 3D indien geselecteerd in 2D.
 
-"And if you gaze long into an abyss, the abyss also gazes into you".
+"En als je maar lang genoeg in een afgrond staart, staart de afgrond ook in jou".
 
 <img src="images/entries/71e571c0902c1d2a576fe09198e69dc0cb7d479f.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
-### Feature: Allow control over 3d map color grading effects
-New settings are exposed for tone mapping, exposure adjustment, and gamma for 3D scenes.<br />A new "Color Grading" section the in 3d map "Effects" tab allows users to control these options. This allows users to modify a scene to render in a manner that makes colors more dramatic and provides higher contrast, or use bloom effects that can make very bright emitted light display as overexposed light in a nighttime scene.
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
+### Mogelijkheid: Toestaan van beheer over effecten voor graderen van 3D-kaartkleuren
+Nieuwe instellingen worden weergegeven voor toonmappen, aanpassen van weergave en gamma voor 3D-scènes.<br />Een nieuw gedeelte "Kleurgradering" op de 3D-kaarttab "Effecten" stelt gebruikers in staat deze opties te beheren. Dit stelt gebruikers in staat om een scène aan te passen om te renderen op een manier die kleuren dramatischer maakt en verschaft hoger contrast, of gloeieffecten te gebruiken die heel helder uitgestraald licht weergeven als overbelicht licht in een nachtscène.
 
 <img src="images/entries/460ceb890c6261ddc51ce3659dde777121d649e5.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Optional light bloom effects
-A new physically-based light bloom effect has been added, which gives bright portions of the 3d map a realistic bloom. This helps those areas to actually look like they emit light, as opposed to just having bright colors, and can help make 3d scenes look much more dramatic.
+### Mogelijkheid: Optionele gloeieffecten voor licht
+Een nieuw op fysiek gebaseerd gloeieffect voor licht is toegevoegd, wat heldere delen van de 3D-kaart een realistische gloed geven. Dat helpt om die gebieden er feitelijk uit te laten zien alsof ze licht uitstralen, tegengesteld aan het feit dat ze slechts heldere kleuren hebben, en kunnen helpen om 3D-scènes er veel dramatischer uit te laten zien.
 
 <img src="images/entries/0c981146a38a83d08ffff1f8c49193662e5cf725.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add multisample anti aliasing (MSAA)
-A new global 3D setting is provided that toggles the use of multisample anti-aliasing in 3D maps.
+### Mogelijkheid: Multisample anti-aliasing (MSAA) toegevoegd
+Een nieuwe globale 3D-instelling wordt verschaft die schakelt met het gebruiken van multisample anti-aliasing in 3D-kaarten.
 
 <img src="images/entries/ca69a2e049f207e2a0a57f5c5d57b3420207605c.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
-### Feature: Add gradient background to 3D scene
-QGIS now supports configurable gradients as background effects in 3D map views, providing users an effective custom skybox effect without textures.
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
+### Mogelijkheid: Kleurverloop achtergrond toegevoegd aan 3D-scène
+QGIS ondersteunt nu te configureren kleurverlopen als achtergrondeffecten in 3D-kaartweergaven, wat gebruikers een effectief aangepast skyboxeffect zonder texturen verschaft.
 
 <img src="images/entries/139a726cacbde4fdffaee78e66c974efbef509c3.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ### Feature: 3D Tiles: add instancing support
 Support has been added for instanced meshes in 3D Tiles, allowing users to efficiently display repeated 3D objects like trees or streetlights at varying positions, rotations, and scales. This implementation abstracts away the complex structural differences between 3D Tiles 1.0 and 1.1 to provide seamless rendering.
 - Supported in both 2D and 3D map views.
@@ -174,7 +174,7 @@ A new dialog is provided to control the camera looking at XYZ in 3D map CRS coor
 
 <img src="images/entries/1f896ef8c6f67e8a925e31712a4c543525d8987c.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ### Feature: Add support for 3D composite tiles ("cmpt")
 QGIS now includes support for 3D Tiles 1.0 spec [Composite Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/specification/TileFormats/Composite/README.adoc#tileformats-composite-composite), which combine multiple tiles (e.g., b3dm or i3dm) into a single file. This support is included for both 2D and 3D rendering.
 
@@ -219,7 +219,7 @@ QGIS now supports per-layer elevation shading specifically for point cloud layer
 
 <img src="images/entries/41a69a819d5d1446c2bcf2ddfcc4319bdb3b9f39.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ### Feature: Support arithmetic operators on color objects in expressions
 QGIS now supports modifying color objects on Point Cloud data directly within expressions, using basic arithmetic operations. This simplifies dynamic color manipulation by automatically splitting the color into its base components and applying the mathematical operation to each channel, eliminating the need for complex component extraction formulas.
 - Arithmetic operations apply directly to underlying RGBA channels.
@@ -234,11 +234,11 @@ For Example:
 
 <img src="images/entries/d215e96ce1bf086ec558dbf3587894a22cc75af1.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ### Feature: Modify renderer color by expression
 An additional modifier has been added to the point cloud renderer that makes it possible to use expressions to for adjusting colors.<br />All point cloud attributes can be used in the expression, as well as the base color of the renderer. Users can combine the base color value with another attribute of the point, such as intensity, to produce a better result for point classification and styling.<br />For example:<br />`@point_color * (@intensity / 65535)`
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ## Afdruklay-outs
 ### Feature: Add new layout chart item functionality to derive plot data and styling from the source vector layer renderer
 New settings have been added to the layout chart items:
@@ -331,7 +331,7 @@ Topocentric CRS support has been added to QGIS, with a new widget provided for s
 
 <img src="images/entries/405bc086bd84189e5113544155ac4ef7d85ed836.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ## Sensoren
 ### Feature: Add support for SensorThings 2.0, including Sensing, Sampling and Relations extensions
 QGIS now includes support for layers utilising SensorThings 2.0 specifications, including the new Sensing, Sampling and Relations extensions.<br />This also exposes these choices for SensorThings 2.0-enabled services. The service version and extensions are determined dynamically when connecting to a service via the browser or data source manager.
@@ -343,7 +343,7 @@ QGIS now provides a "Show Profile in 3D Views" option in the profile plot settin
 
 <img src="images/entries/51b9332232c56ecf122b5d6205744c01a2371e42.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Dominik Cindric](https://github.com/ViperMiniQ)
+Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ## Browser
 ### Feature: Rework how ESRI REST services are exposed in the browser
 Changes have been made to help de-clutter ESRI REST service content in the browser:
