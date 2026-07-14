@@ -514,5 +514,70 @@ This feature was developed by [Stefanos Natsis (Lutra Consulting)](https://www.l
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com/en/)
+### Feature: Bug fixes by Alexander Bruy (QCooperative)
+| Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.44 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Deleted last series still visible in chart | [\#63466](https://github.com/qgis/QGIS/issues/63466) | Cannot reproduce |  |
+| Grey out "Use only features intersecting atlas features" for layout chart item if no atlas is activated | [\#65612](https://github.com/qgis/QGIS/issues/65612) | [PR \#66283](https://github.com/qgis/QGIS/pull/66283) | Sen Datos |
+| Xestor de BD | [\#59470](https://github.com/qgis/QGIS/issues/59470) | Cannot reproduce |  |
+| "Generate elevation profile image" algorithm doesn't propose image formats for output file | [\#64915](https://github.com/qgis/QGIS/issues/64915) | [PR \#66286](https://github.com/qgis/QGIS/pull/66286) | [PR \#66445](https://github.com/qgis/QGIS/pull/66445) |
+| Ubuntu 23.04 | /usr/lib/qgis/plugins/libplugin_grass8.so | lib not loadable | [\#55159](https://github.com/qgis/QGIS/issues/55159) | Not a bug/feedback |  |
+| Returned result of layer_property (layer, 'type') is dependent of UI language | [\#65009](https://github.com/qgis/QGIS/issues/65009) | [PR \#66300](https://github.com/qgis/QGIS/pull/66300) | [PR \#66446](https://github.com/qgis/QGIS/pull/66446) |
+| Advanced digitizing floater should not allow editing every fields | [\#65173](https://github.com/qgis/QGIS/issues/65173) | [PR \#66303](https://github.com/qgis/QGIS/pull/66303) | [PR \#66447](https://github.com/qgis/QGIS/pull/66447) |
+| Join attributes by location (summary) count returns Null | [\#40108](https://github.com/qgis/QGIS/issues/40108) | [PR \#66322](https://github.com/qgis/QGIS/pull/66322) | [PR \#66448](https://github.com/qgis/QGIS/pull/66448) |
+| Qt6 porting: use size_t for qHash() return | [\#44351](https://github.com/qgis/QGIS/issues/44351) | [PR \#66477](https://github.com/qgis/QGIS/pull/66477) | Sen Datos |
+| Image source file chooser does not start in the program symbol library folder (Windows) | [\#37308](https://github.com/qgis/QGIS/issues/37308) | [PR \#66342](https://github.com/qgis/QGIS/pull/66342) | [PR \#66449](https://github.com/qgis/QGIS/pull/66449) |
+| TestQgsProcessingAlgsPt2::exportMeshOnGrid() | [\#48605](https://github.com/qgis/QGIS/issues/48605) | Cannot reproduce |  |
+| TestQgsProcessingAlgs::convertGpsData() fails | [\#45588](https://github.com/qgis/QGIS/issues/45588) | Cannot reproduce/Not a bug |  |
+| gdal:merge parameter OPTIONS not shown with execAlgorithmDialog | [\#66396](https://github.com/qgis/QGIS/issues/66396) | Not a bug |  |
+| projects/anonymize_saved_projects doesn't seem to be available in the new settings tree | [\#65844](https://github.com/qgis/QGIS/issues/65844) | Not a bug |  |
+| bug for .Shp namefile | [\#62655](https://github.com/qgis/QGIS/issues/62655) | Not a bug |  |
+| Build virtual point cloud (VPC): dialog adds .las extension for output | [\#61934](https://github.com/qgis/QGIS/issues/61934) | Cannot reproduce |  |
+| QGIS claims to be able to open all .jpg file (on Lubuntu) | [\#60911](https://github.com/qgis/QGIS/issues/60911) | [PR \#66472](https://github.com/qgis/QGIS/pull/66472) |  |
+| QGIS wants to open all .json files, including ones unrelated to any geodata | [\#61215](https://github.com/qgis/QGIS/issues/61215) | Cannot reproduce |  |
+| Matrix distance does not output right fields when using N x T matrix type | [\#29165](https://github.com/qgis/QGIS/issues/29165) | [PR \#66101](https://github.com/qgis/QGIS/pull/66101) |  |
+| Distance Matrix returns wrong record/result when using Linear Distance Matrix with k=1 | [\#45493](https://github.com/qgis/QGIS/issues/45493) | [PR \#66101](https://github.com/qgis/QGIS/pull/66101) |  |
+| QLR files not associated with QGIS | [\#56844](https://github.com/qgis/QGIS/issues/56844) | Cannot reproduce |  |
+| TestQgsDatumTransformDialog fails | [\#48883](https://github.com/qgis/QGIS/issues/48883) | Cannot reproduce |  |
+| TestProcessingGui::testDatabaseSchemaWrapper() Caught unhandled exception | [\#48885](https://github.com/qgis/QGIS/issues/48885) | Cannot reproduce |  |
+| Layout arrow item has start marker in wrong direction | [\#59078](https://github.com/qgis/QGIS/issues/59078) | [PR \#66558](https://github.com/qgis/QGIS/pull/66558) |  |
+| User Defined CRS gets lost | [\#57806](https://github.com/qgis/QGIS/issues/57806) | [PR \#66572](https://github.com/qgis/QGIS/pull/66572) |  |
+| Raster Tools - Generate XYZ Tiles (Directory) always creates 0 tiles | [\#60069](https://github.com/qgis/QGIS/issues/60069) | Not a bug |  |
+| Error in counting tiles in each levels in Generate XYZ tiles (Directory) | [\#62157](https://github.com/qgis/QGIS/issues/62157) | [PR \#66606](https://github.com/qgis/QGIS/pull/66606) | Sen Datos |
+
+This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+
+This feature was developed by [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
+### Feature: Bug fixes by Nyall Dawson (North Road)
+| Bug Title | URL issues.qgis.org (if reported) | URL Commit (Github) | 3.44 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Fix deadlock when rendering annotation layers | Unreported | [PR \#66712](https://github.com/qgis/QGIS/pull/66712) | [PR \#66742](https://github.com/qgis/QGIS/pull/66742) |
+| Fix crashes in QgsFeatureListComboBox if layer is unloaded | Unreported | [PR \#66697](https://github.com/qgis/QGIS/pull/66697) | [PR \#66708](https://github.com/qgis/QGIS/pull/66708) |
+| Every entry in relation reference widget is shown in italic | Unreported | [PR \#66649](https://github.com/qgis/QGIS/pull/66649) | Not appropriate |
+| Fix buggy processing relief colors widget | Unreported | [PR \#66602](https://github.com/qgis/QGIS/pull/66602) | Not appropriate |
+| Fix QgsImageCache lossy conversion of images | Unreported | [PR \#66585](https://github.com/qgis/QGIS/pull/66585) | Not appropriate |
+| Fix crash when setting 3d skybox to non-square textures | [\#66560](https://github.com/qgis/QGIS/issues/66560) | [PR \#66580](https://github.com/qgis/QGIS/pull/66580) | Sen Datos |
+| Fix intermittent failure of GRASS raster tests | Unreported | [PR \#66546](https://github.com/qgis/QGIS/pull/66546) | Sen Datos |
+| Fix symbology sizing issues on hidpi displays | [\#55349](https://github.com/qgis/QGIS/issues/55349) | [PR \#66531](https://github.com/qgis/QGIS/pull/66531) | Not appropriate |
+| Fix symbology sizing issues on hidpi displays | [\#55349](https://github.com/qgis/QGIS/issues/55349) | [PR \#66530](https://github.com/qgis/QGIS/pull/66530) | Not appropriate |
+| Fix broken color wheel widget on devices with pixel ratios | [\#55349](https://github.com/qgis/QGIS/issues/55349) | [PR \#66529](https://github.com/qgis/QGIS/pull/66529) | Not appropriate |
+| Use correct lossless method to store metal rough colors | Unreported | [PR \#66521](https://github.com/qgis/QGIS/pull/66521) | Sen Datos |
+| Ensure color picker opens inline for 3d settings in style dock | Unreported | [PR \#66520](https://github.com/qgis/QGIS/pull/66520) | Not appropriate |
+| Fix misalignment of spin boxes in color dialog | Unreported | [PR \#66498](https://github.com/qgis/QGIS/pull/66498) | Not appropriate |
+| Use unlit material instead of phong material when more appropriate | Unreported | [PR \#66490](https://github.com/qgis/QGIS/pull/66490) | Not appropriate |
+| Loosen the maximum number of grid ticks to draw | [\#45113](https://github.com/qgis/QGIS/issues/45113) | [PR \#66403](https://github.com/qgis/QGIS/pull/66403) | Not appropriate |
+| Fixes malformed HTML metadata for postgres layers | Reported on mailing list | [PR \#66402](https://github.com/qgis/QGIS/pull/66402) | N/A - qt 6 only |
+| Fix slow count of features for filtered SQL server layers | [\#64894](https://github.com/qgis/QGIS/issues/64894) | [PR \#66401](https://github.com/qgis/QGIS/pull/66401) | Not appropriate |
+| Partially fix slow expression builder widget construction times | Unreported | [PR \#66385](https://github.com/qgis/QGIS/pull/66385) | Not appropriate |
+| Use correct default font for legend text on symbol | Related to [\#63431](https://github.com/qgis/QGIS/issues/63431) | [PR \#66384](https://github.com/qgis/QGIS/pull/66384) | Not appropriate |
+| Don't show missing font warnings for MS Shell Dlg font | [\#63431](https://github.com/qgis/QGIS/issues/63431) | [PR \#66383](https://github.com/qgis/QGIS/pull/66383) | Not appropriate |
+| Add explicit bool operator for QgsLayerTreeNode | [\#65755](https://github.com/qgis/QGIS/issues/65755) | [PR \#66381](https://github.com/qgis/QGIS/pull/66381) | QGIS 4 only |
+| WMS Ensure we store deduced CRS in provider/layer sources | Unreported | [PR \#66379](https://github.com/qgis/QGIS/pull/66379) | Not appropriate |
+| Fix maximum word wrap for legend title/group/subgroup text | [\#66281](https://github.com/qgis/QGIS/issues/66281) | [PR \#66338](https://github.com/qgis/QGIS/pull/66338) |  |
+| Fix model is zoomed right out when opening model designer | Unreported | [PR \#66335](https://github.com/qgis/QGIS/pull/66335) | QGIS 4 only |
+
+This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
+
+This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
 
 {{<content-end >}}

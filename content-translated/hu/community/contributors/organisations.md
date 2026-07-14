@@ -15,11 +15,11 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Közreműködő szervezetek
-These organizations actively contribute to QGIS, as reflected by their GitHub commit activity.
+Ezek a szervezetek aktívan hozzájárulnak a QGIS fejlesztéséhez, amit GitHub-on végzett commit-tevékenységük is tükröz.
 
 <div style="text-align:center;">
 	<a href="/community/contributors/add-organisation/" class="button is-success">
-		🚀 Add your Organisation!
+		🚀 Adja hozzá szervezetét!
 	</a>
 </div>
 

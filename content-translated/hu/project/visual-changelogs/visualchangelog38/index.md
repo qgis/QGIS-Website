@@ -173,7 +173,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Simplified variant of \"attribute\" function
 This improvement brings a second variant for the existing \"attribute\" function. The \"attribute\" function in previous QGIS releases required both a target feature and attribute name to be specified. The new version is much simpler, automatically using the current feature and only requiring an attribute name.
 
-E.g.
+Pl.
 
 Previous behavior:
 

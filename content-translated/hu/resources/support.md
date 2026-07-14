@@ -60,8 +60,8 @@ A helyi QGIS-felhasználói csoportok kiváló alkalmat nyújtanak más felhaszn
 A helyi felhasználói csoportokról bővebben a [Felhasználói csoportok]({{< ref "community/groups" >}}) oldalon olvashat.
 ## Biztonsági sebezhetőségek bejelentése
 Ha úgy gondolja, hogy biztonsági problémát talált, például a QGIS-ben vagy annak függőségeiben lévő sebezhetőségeket, kérjük, látogasson el a [biztonsági oldalra]({{< ref "resources/support/security" >}}), ahol részletes információkat talál arról, hogyan jelentse be felelősségteljesen a problémát.
-## Projektirányító Bizottság (PSC)
-Ha jogi, védjeggyel kapcsolatos, finanszírozási vagy adminisztratív ügyekben szeretne kapcsolatba lépni a QGIS Projektirányító Bizottság (PSC) valamely tagjával **(nem általános támogatási kérések esetén)**, kérjük, használja az alábbi levelezőlistát vagy e-mail címet:
+## Projektvezető Bizottság (PSC)
+Ha jogi, védjeggyel kapcsolatos, finanszírozási vagy adminisztratív ügyekben szeretne kapcsolatba lépni a QGIS Projektvezető Bizottság (PSC) valamely tagjával **(nem általános támogatási kérések esetén)**, kérjük, használja az alábbi levelezőlistát vagy e-mail címet:
 
 {{<rich-list listLink="https://lists.osgeo.org/mailman/listinfo/qgis-psc" layoutClass="half" listTitle="QGIS PSC levelezőlista" listSubtitle="https://lists.osgeo.org/mailman/listinfo/qgis-psc" >}}
 

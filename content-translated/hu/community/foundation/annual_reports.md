@@ -1,7 +1,7 @@
 ---
 HasBanner: false
-description: We are publishing an annual report for the preceding year highlighting
-  key activities within the QGIS project.
+description: Az előző évre vonatkozó éves jelentést teszünk közzé, amelyben kiemeljük
+  a QGIS-projekt legfontosabb tevékenységeit.
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
@@ -11,26 +11,26 @@ type: page
 ---
 {{<content-start >}}
 # Éves jelentések
-Starting in 2016, coincident with the establishment of a formal legal entity (Swiss “Verein”), we are publishing an annual report for the preceding year highlighting key activities within the QGIS project.
+2016-tól, egy hivatalos jogi személy (svájci „Verein”) megalakulásával egy időben, éves jelentést teszünk közzé az előző évről, kiemelve a QGIS projekten belüli legfontosabb tevékenységeket.
 
 Vegye figyelembe, hogy a jelentés pénzügyi információt, tartalmaz amely külön jelentésként is elérhető a weboldal pénzügyek részében.
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2024" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2024.pdf" linkAttr="download" layoutClass="half" listTitle="2024-es éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2023" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2023.pdf" linkAttr="download" layoutClass="half" listTitle="2023-as éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2022.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2022" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2022.pdf" linkAttr="download" layoutClass="half" listTitle="2022-es éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2021.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2021" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2021.pdf" linkAttr="download" layoutClass="half" listTitle="2021-es éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2020.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2020" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2020.pdf" linkAttr="download" layoutClass="half" listTitle="2020-as éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2019.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2019" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2019.pdf" linkAttr="download" layoutClass="half" listTitle="2019-es éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2018.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2018" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2018.pdf" linkAttr="download" layoutClass="half" listTitle="2018-as éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2017.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2017" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2017.pdf" linkAttr="download" layoutClass="half" listTitle="2017-es éves jelentés" listSubtitle="PDF letöltése" >}}
 
-{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2016.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS Annual Report 2016" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../annual-project-reports/QGISAnnualReport2016.pdf" linkAttr="download" layoutClass="half" listTitle="2016-os éves jelentés" listSubtitle="PDF letöltése" >}}
 
 {{<content-end >}}

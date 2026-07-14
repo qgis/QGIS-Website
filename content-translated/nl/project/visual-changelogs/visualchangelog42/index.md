@@ -131,7 +131,7 @@ Nieuwe instellingen worden weergegeven voor toonmappen, aanpassen van weergave e
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ### Mogelijkheid: Optionele gloeieffecten voor licht
-Een nieuw op fysiek gebaseerd gloeieffect voor licht is toegevoegd, wat heldere delen van de 3D-kaart een realistische gloed geven. Dat helpt om die gebieden er feitelijk uit te laten zien alsof ze licht uitstralen, tegengesteld aan het feit dat ze slechts heldere kleuren hebben, en kunnen helpen om 3D-scènes er veel dramatischer uit te laten zien.
+Een nieuw op fysiek gebaseerd gloeieffect voor licht is toegevoegd, wat heldere delen van de 3D-kaart een realistische gloed geeft. Dat helpt om die gebieden er feitelijk uit te laten zien alsof ze licht uitstralen, tegengesteld aan het feit dat ze slechts heldere kleuren hebben, en kunnen helpen om 3D-scènes er veel dramatischer uit te laten zien.
 
 <img src="images/entries/0c981146a38a83d08ffff1f8c49193662e5cf725.png" class="img-responsive img-rounded" />
 
@@ -148,50 +148,50 @@ QGIS ondersteunt nu te configureren kleurverlopen als achtergrondeffecten in 3D-
 <img src="images/entries/139a726cacbde4fdffaee78e66c974efbef509c3.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
-### Feature: 3D Tiles: add instancing support
-Support has been added for instanced meshes in 3D Tiles, allowing users to efficiently display repeated 3D objects like trees or streetlights at varying positions, rotations, and scales. This implementation abstracts away the complex structural differences between 3D Tiles 1.0 and 1.1 to provide seamless rendering.
-- Supported in both 2D and 3D map views.
-- 3D views utilize highly efficient GPU instanced rendering.
-- Supports 3D Tiles 1.0 using the i3dm format.
-- Supports 3D Tiles 1.1 via glTF GPU instancing.
-- Automatically corrects tile rotations for projected coordinate systems.
-- Quantized positions and oct-encoded rotations remain unsupported.
-- Feature IDs are not read in this implementation.
+### Mogelijkheid: 3D-tegels: ondersteuning voor instancing toegevoegd
+Ondersteuning is toegevoegd voor instancing van mazen in 3D-tegels, wat gebruikers in staat stelt om efficiënt herhalende 3D-objecten weer te geven, zoals bomen of straatlantaarns, op variërende posities, rotaties en schalen. Deze implementatie poetst de complexe structurele verschillen weg tussen 3D Tiles 1.0 en 1.1 om naadloos renderen te verschaffen.
+- Ondersteund in zowel kaartweergave 2D als 3D.
+- 3D-weergaven gebruiken hoog efficiënt GPU-geïnstancieerd renderen.
+- Ondersteunt 3D Tiles 1.0 die de indeling i3dm gebruikt.
+- Ondersteunt 3D Tiles 1.1 via glTF GPU-instancing.
+- Corrigeert automatisch tegelrotaties voor geprojecteerde coördinatensystemen.
+- Gekwantiseerde posities en oct-gecodeerde rotaties blijven niet ondersteund.
+- Object-ID's worden in deze implementatie niet gelezen.
 
 <img src="images/entries/adb08002b421eee278c571fd52325e7e93251b69.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Natural Resources Canada
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://github.com/wonder-sk)
-### Feature: Add implicit tiling for 3D Tiles
-Support has been added for implicit tiles as specified in the 3D Tiles 1.1 standard. This feature improves the loading and parsing efficiency of massive 3D datasets by utilizing structured subdivision schemes.<br />Logic runs via a new `QgsCesiumImplicitTiling` core class, and the quadtree subdivision scheme is currently supported (with octree support possible in a future update).
+### Mogelijkheid: Impliciete tegels toegevoegd voor 3D-tegels 
+Ondersteuning is toegevoegd voor impliciete tegels zoals gespecificeerd in de 3D Tiles 1.1-standaard. Deze mogelijkheid verbetert het laden en efficiënt parsen van massieve 3D-gegevenssets door gestructureerde subschema's voor onderverdeling te gebruiken.<br />Logica wordt uitgevoerd via een nieuwe bronklasse `QgsCesiumImplicitTiling`, en het quadtree schema voor onderverdeling wordt momenteel ondersteund (met mogelijke ondersteuning voor octree in een toekomstige uitgave).
 
 <img src="images/entries/3031b5c8facbd4e11ddd450b7314d92f9684c083.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://github.com/wonder-sk)
-### Feature: Add camera controls dialog to control the 3D camera in map coordinates
-A new dialog is provided to control the camera looking at XYZ in 3D map CRS coordinates, as well as setting pitch and heading angles and distance from the center point.<br />The dialog gets a `Live update` button that mimics the behavior of the Layer Styling panel. When set, user-changed settings are automatically reflected in the 3D map.<br />This does not affect the values updating from the 3D map. When a user moves the camera, the values are updated in real time, regardless of the `Live update` checkbox.
+### Mogelijkheid: Dialoogvenster camerabesturingselementen toegevoegd om de 3D-camera in kaartcoördinaten te kunnen beheren
+Een nieuw dialoogvenster wordt verschaft om de camera te beheren die zoekt naar XYZ in 3D-kaart CRS-coördinaten, alsook het instellen van tekenreedte en hoeken voor koppen en afstand vanaf het middelpunt.<br />Het dialoogvenster krijgt een knop `Live bijwerken` die het gedrag nabootst van het paneel Laag opmaken. Indien ingesteld worden door de gebruiker gewijzigde instellingen automatisch weergegeven in de 3D-kaart.<br />Dat beïnvloedt niet het bijwerken van de waarden vanuit de 3D-kaart. Wanneer een gebruiker de camera verplaatst, worden de waarden direct bijgewerkt, ongeacht het keuzevak `Live bijwerken`.
 
 <img src="images/entries/1f896ef8c6f67e8a925e31712a4c543525d8987c.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
-### Feature: Add support for 3D composite tiles ("cmpt")
-QGIS now includes support for 3D Tiles 1.0 spec [Composite Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/specification/TileFormats/Composite/README.adoc#tileformats-composite-composite), which combine multiple tiles (e.g., b3dm or i3dm) into a single file. This support is included for both 2D and 3D rendering.
+### Mogelijkheid: Ondersteuning toegevoegd voor 3D-composiettegels ("cmpt")
+QGIS bevat nu ondersteuning voor de 3D Tiles 1.0 specificatie [Composite Tiles](https://github.com/CesiumGS/3d-tiles/blob/main/specification/TileFormats/Composite/README.adoc#tileformats-composite-composite), die meerdere tegels (bijv. b3dm of i3dm) combineert tot een enkel bestand. Deze ondersteuning is opgenomen voor zowel renderen in 2D als in 3D.
 
 <img src="images/entries/7196a54d0d5835b1cefa9efd8b4143c67130d5ab.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Martin Dobias](https://github.com/wonder-sk)
-### Feature: Improve 3D map view "Invert vertical axis" setting.
-The Y inversion setting for 3D views has been refactored into a QFlag-based configuration, assigning an independent bit for each navigation scenario (walk mode dragging, walk mode mouse captured, and terrain mode).
-- Settings are globally editable via a checkbox-based combobox.
-- The C++ interface for inverted Y preferences is updated.
-- The Python interface remains compatible via duck-typing.
+### Mogelijkheid: Verbeterde instelling 3D-kaartweergave "Verticale as inverteren".
+De instelling voor inverteren van Y voor 3D-weergaven is opnieuw bewerkt naar een configuratie op basis van een QFlag, dat een onafhankelijk bit toewijst voor elk scenario voor navigeren (bij draaien (tijdens slepen), bij draaien (muis vastgelegd) en bij draaien over terrein).
+- Instellingen zijn globaal te bewerken via een op een keuzevak gebaseerd combinatievak.
+- De C++-interface voor geïnverteerde voorkeuren voor Y is bijgewerkt.
+- De Python-interface blijft compatibel via duck-typing.
 
 <img src="images/entries/9ae04d9318d5c9662a84821de7c113ed1f48eb66.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [David Koňařík](https://github.com/dvdkon)
-### Feature: 3d export stl
-QGIS now supports exporting a 3D scene in the [STL](https://en.wikipedia.org/wiki/STL_(file_format)) format, in addition to the existing `OBJ` export functionality. The `STL` format is much simpler than the `OBJ` and does not handle textures.
+### Mogelijkheid: 3D exporteren STL
+QGIS ondersteunt nu het exporteren van een 3D-scène in de indeling [STL](https://en.wikipedia.org/wiki/STL_(file_format)), in aanvulling op de bestaande exportfunctionaliteit `OBJ`. De indeling `STL` is veel eenvoudiger dan die van `OBJ` en hoeft geen texturen af te handelen.
 
 <img src="images/entries/e0e80d41fe495959ba786ad4261a947b766ac321.png" class="img-responsive img-rounded" />
 
@@ -199,23 +199,23 @@ Dit werd mogelijk gemaakt door StadtFrankfurt am Main
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Puntenwolken
-### Feature: Add overview-length optional parameter to build vpc algorithm
-A new `--overview-length` optional parameter has been added to the build VPC algorithm
+### Mogelijkheid: Optionele parameter overview-length toegevoegd aan algoritme VPC bouwen
+Een nieuwe optionele parameter `--overview-length` is toegevoegd aan het algoritme Virtuele puntenwolk (VPC) bouwen
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add reading support for multi-overview VPC files
-Instead of parsing overview assets by their "overview" id, they are now parsed based on their "overview" role.<br />VPC files may contain multiple overviews per asset with arbitrary ids. All assets with the "overview" role are now considered as overviews, loaded and rendered when zoomed out.<br />`QgsPointCloudLayer` and `QgsVirtualPointCloudProvider` now have an `overviews()` method returning a list of all overviews, instead of a single one.
+### Mogelijkheid: Ondersteuning toegevoegd voor lezen van multi-overview VPC-bestanden
+In plaats van het parsen van delen van overzichten op hun ID "overview", worden ze nu geparset, gebaseerd op hun rol "overview".<br />VPC -bestanden kunnen meerdere overzichten per deel bevatten met willekeurige ID's. Alle delen met de rol "overview" worden nu beschouwd als overzichten, geladen en gerenderd indien uitgezoomd.<br />`QgsPointCloudLayer` en `QgsVirtualPointCloudProvider` hebben nu een methode `overviews()` die een lijst met alle overzichten teruggeeft, in plaats van een enkele.
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add support for a vpc-in-zip (.vpz) virtual point cloud format
-Virtual Point Cloud (VPC) files can become quite large, and the ASCII-based JSON format does not really help in keeping the size down.<br />Leveraging the new support for QGIS to read remote `.vpc` files, the need for a smaller file size is more apparent, and support for the `.vpz` format constructed from a zipped `.vpc` has been added (similar to the `.qgz` QGIS project files providing a zipped `.qgs`).
+### Mogelijkheid: Ondersteuning toegevoegd voor een virtuele puntenwolkindeling VPC-in-ZIP (.vpz)
+Virtuele Puntenwolk (VPC)-bestanden kunnen behoorlijk groot worden, en de op  ASCII-gebaseerde indeling JSON helpt niet echt om de grootte beperkt te houden.<br />Opwaarderen van de nieuwe ondersteuning voor QGIS om `.vpc`-bestanden op afstand te lezen, de noodzaak voor een kleinere bestandsgrootte is duidelijker, en ondersteuning voor de indeling `.vpz`, geconstrueerd uit een gezipte `.vpc` is toegevoegd (soortgelijk aan de QGIS projectbestanden `.qgz` die een gezipte `.qgs` verschaffen).
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
-### Feature: Add per layer elevation shading
-QGIS now supports per-layer elevation shading specifically for point cloud layers. This feature provides finer visual control, avoiding the blending and rendering artifacts that can occur when global elevation shading is applied across the entire map scene.
-- Controlled via extended GUI in 2D symbology.
-- Bypasses global elevation shading artifacts entirely.
-- Prevents unwanted blending of distinct map elements.
+### Mogelijkheid: Per laag schaduw voor hoogte toegevoegd
+QGIS ondersteunt nu per-laag schaduw voor hoogte, specifiek voor puntenwolklagen. Deze mogelijkheid verschaft fijner visueel beheer, en vermijdt het mengen en renderen van artefacten die kunnen verschijnen als globale schaduw voor hoogte wordt toegepast over de gehele kaartscène.
+- Beheerd via uitgebreide gebruikersinterface in 2D-symbologie.
+- Omzeilt artefacten van globale schaduw voor hoogte helemaal.
+- Voorkomt ongewenst mengen van afzonderlijke kaartelementen.
 
 <img src="images/entries/41a69a819d5d1446c2bcf2ddfcc4319bdb3b9f39.png" class="img-responsive img-rounded" />
 
@@ -408,7 +408,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 | --- | --- | --- | --- |
 | .ASC missing from Raster Extraction | [\#66319](https://github.com/qgis/QGIS/issues/66319) | [PR \#66368](https://github.com/qgis/QGIS/pull/66368) | N/B |
 | \[OAPIF\] Zooming triggers download of already loaded data | [\#66358](https://github.com/qgis/QGIS/issues/66358) | Is geen probleem |  |
-| Gdb format in QGIS will show also .gdbtable .gdbtablex not only as .gdb | [\#66279](https://github.com/qgis/QGIS/issues/66279) | Not a bug / not desirable |  |
+| Gdb format in QGIS will show also .gdbtable .gdbtablex not only as .gdb | [\#66279](https://github.com/qgis/QGIS/issues/66279) | Geen bug / niet gewenst |  |
 | Expose AZURE_STORAGE_SAS_TOKEN configuration option in Browser Cloud Storage Connection | [\#66274](https://github.com/qgis/QGIS/issues/66274) | [PR \#14731](https://github.com/OSGeo/gdal/pull/14731) | N/B |
 | Filtering WFS causes total failure to display layer | [PR \#66373](https://github.com/qgis/QGIS/pull/66373) | [PR \#66373](https://github.com/qgis/QGIS/pull/66373) | [PR \#66373](https://github.com/qgis/QGIS/pull/66373) |
 | \[OAPIF\]\[server\] Paging not working with format FlatGeobuf from QGIS Server | [\#66365](https://github.com/qgis/QGIS/issues/66365) | [PR \#66399](https://github.com/qgis/QGIS/pull/66399) | N/B |
@@ -418,8 +418,8 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/en/home/)
-### Feature: Bug fixes by Denis Rouzaud (OPENGIS.ch)
+Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/en/home/)
+### Mogelijkheid: Reparaties van problemen door Denis Rouzaud (OPENGIS.ch)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | QgsSettings + QGIS4.ini + XYZ Tile provider = crash | [\#66424](https://github.com/qgis/QGIS/issues/66424) | [PR \#66450](https://github.com/qgis/QGIS/pull/66450) | N/B |
@@ -428,7 +428,7 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Denis Rouzaud (OPENGIS.ch)](http://opengis.ch/)
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud (OPENGIS.ch)](http://opengis.ch/)
 ### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (QCooperative)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -464,7 +464,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (QCooperative)](https
 | --- | --- | --- | --- |
 | Custom Toolbar Position Loss | [\#65862](https://github.com/qgis/QGIS/issues/65862) | [PR \#66483](https://github.com/qgis/QGIS/pull/66483) | N/B |
 | Export to PDF from layout changes colors | [\#42935](https://github.com/qgis/QGIS/issues/42935) | Not a bug (Was an Adobe issue IMHO) |  |
-| Layout bleeding to edge outside map window | [\#49638](https://github.com/qgis/QGIS/issues/49638) | Vast |  |
+| Layout bleeding to edge outside map window | [\#49638](https://github.com/qgis/QGIS/issues/49638) | Gerepareerd |  |
 | Fix flaky test_gui_fileuploader | Niet gerapporteerd | [PR \#66543](https://github.com/qgis/QGIS/pull/66543) |  |
 | Hidden actions from user defined toolbar are still visible. | Niet gerapporteerd | [PR \#66620](https://github.com/qgis/QGIS/pull/66620) |  |
 | QGIS should never poll a PostGIS/WMS/WFS/etc connections unless specifically asked to | [\#58303](https://github.com/qgis/QGIS/issues/58303) | [PR \#66621](https://github.com/qgis/QGIS/pull/66621) | NOG TE DOEN |
@@ -473,7 +473,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (QCooperative)](https
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
-### Feature: Bug fixes by Germán Carrillo (OPENGIS.ch)
+### Mogelijkheid: Reparaties van problemen door Germán Carrillo (OPENGIS.ch)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Allow QGIS to access curves from OGC API provider | Niet gerapporteerd | [PR \#66452](https://github.com/qgis/QGIS/pull/66452) | N/B |
@@ -484,8 +484,8 @@ Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://osla
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [Germán Carrillo (OPENGIS.ch)](https://opengis.ch/)
-### Feature: Bug fixes by David Signer (OPENGIS.ch)
+Deze mogelijkheid werd ontwikkeld door [Germán Carrillo (OPENGIS.ch)](https://opengis.ch/)
+### Mogelijkheid: Reparaties van problemen door David Signer (OPENGIS.ch)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Fix field displayString on primitive JSON values | Niet gerapporteerd | [PR \#66575](https://github.com/qgis/QGIS/pull/66575) | N/B |
@@ -493,13 +493,13 @@ This feature was developed by [Germán Carrillo (OPENGIS.ch)](https://opengis.ch
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
-This feature was developed by [David Signer (OPENGIS.ch)](https://opengis.ch/)
-### Feature: Bug fixes by Stefanos Natsis (Lutra Consulting)
+Deze mogelijkheid werd ontwikkeld door [David Signer (OPENGIS.ch)](https://opengis.ch)
+### Mogelijkheid: Reparaties van problemen door Stefanos Natsis (Lutra Consulting)
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Windows QGIS 4 installs plugin with ACL that do not include SYSTEM or Administrators | [\#66515](https://github.com/qgis/QGIS/issues/66515) | [PR \#66576](https://github.com/qgis/QGIS/pull/66576) | N/B |
 | Crash when clicking on an unavailable layer in Layers panel | [\#65913](https://github.com/qgis/QGIS/issues/65913) | [PR \#66578](https://github.com/qgis/QGIS/pull/66578) | NOG TE DOEN |
-| QGIS server OGC API: Limits and offset parameters ignored when plugin changing parameters | [\#65858](https://github.com/qgis/QGIS/issues/65858) | Vast | [PR \#66480](https://github.com/qgis/QGIS/pull/66480) |
+| QGIS server OGC API: Limits and offset parameters ignored when plugin changing parameters | [\#65858](https://github.com/qgis/QGIS/issues/65858) | Gerepareerd | [PR \#66480](https://github.com/qgis/QGIS/pull/66480) |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
@@ -509,10 +509,75 @@ Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](http
 | --- | --- | --- | --- |
 | Unbreak QGIS with GDAL \>= 3.13 | [commit ffdb8e3](https://github.com/qgis/QGIS/commit/ffdb8e3b27035478c533f37087505e749cc15b9b) | [PR \#66615](https://github.com/qgis/QGIS/pull/66615) | N/B |
 | concat() returns NULL when all arguments are NULL: it should return an empty string | [\#65808](https://github.com/qgis/QGIS/issues/65808) | [PR \#66618](https://github.com/qgis/QGIS/pull/66618) | NOG TE DOEN |
-| Remove all the parts in a geometry creates an empty geometry instead of NULL | [\#65453](https://github.com/qgis/QGIS/issues/65453) | WIP | TODO / Not recommended ? |
+| Remove all the parts in a geometry creates an empty geometry instead of NULL | [\#65453](https://github.com/qgis/QGIS/issues/65453) | Werk nog gaande | NOF TE DOEN / Niet aanbevolen? |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
 Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://oslandia.com/en/)
+### Mogelijkheid: Reparaties van problemen door Alexander Bruy (QCooperative)
+| Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Deleted last series still visible in chart | [\#63466](https://github.com/qgis/QGIS/issues/63466) | Kan niet worden gereproduceerd |  |
+| Grey out "Use only features intersecting atlas features" for layout chart item if no atlas is activated | [\#65612](https://github.com/qgis/QGIS/issues/65612) | [PR \#66283](https://github.com/qgis/QGIS/pull/66283) | N/B |
+| DB Manager | [\#59470](https://github.com/qgis/QGIS/issues/59470) | Kan niet worden gereproduceerd |  |
+| "Generate elevation profile image" algorithm doesn't propose image formats for output file | [\#64915](https://github.com/qgis/QGIS/issues/64915) | [PR \#66286](https://github.com/qgis/QGIS/pull/66286) | [PR \#66445](https://github.com/qgis/QGIS/pull/66445) |
+| Ubuntu 23.04 | /usr/lib/qgis/plugins/libplugin_grass8.so | lib not loadable | [\#55159](https://github.com/qgis/QGIS/issues/55159) | Not a bug/feedback |  |
+| Returned result of layer_property (layer, 'type') is dependent of UI language | [\#65009](https://github.com/qgis/QGIS/issues/65009) | [PR \#66300](https://github.com/qgis/QGIS/pull/66300) | [PR \#66446](https://github.com/qgis/QGIS/pull/66446) |
+| Advanced digitizing floater should not allow editing every fields | [\#65173](https://github.com/qgis/QGIS/issues/65173) | [PR \#66303](https://github.com/qgis/QGIS/pull/66303) | [PR \#66447](https://github.com/qgis/QGIS/pull/66447) |
+| Join attributes by location (summary) count returns Null | [\#40108](https://github.com/qgis/QGIS/issues/40108) | [PR \#66322](https://github.com/qgis/QGIS/pull/66322) | [PR \#66448](https://github.com/qgis/QGIS/pull/66448) |
+| Qt6 porting: use size_t for qHash() return | [\#44351](https://github.com/qgis/QGIS/issues/44351) | [PR \#66477](https://github.com/qgis/QGIS/pull/66477) | N/B |
+| Image source file chooser does not start in the program symbol library folder (Windows) | [\#37308](https://github.com/qgis/QGIS/issues/37308) | [PR \#66342](https://github.com/qgis/QGIS/pull/66342) | [PR \#66449](https://github.com/qgis/QGIS/pull/66449) |
+| TestQgsProcessingAlgsPt2::exportMeshOnGrid() | [\#48605](https://github.com/qgis/QGIS/issues/48605) | Kan niet worden gereproduceerd |  |
+| TestQgsProcessingAlgs::convertGpsData() fails | [\#45588](https://github.com/qgis/QGIS/issues/45588) | Cannot reproduce/Not a bug |  |
+| gdal:merge parameter OPTIONS not shown with execAlgorithmDialog | [\#66396](https://github.com/qgis/QGIS/issues/66396) | Is geen probleem |  |
+| projects/anonymize_saved_projects doesn't seem to be available in the new settings tree | [\#65844](https://github.com/qgis/QGIS/issues/65844) | Is geen probleem |  |
+| bug for .Shp namefile | [\#62655](https://github.com/qgis/QGIS/issues/62655) | Is geen probleem |  |
+| Build virtual point cloud (VPC): dialog adds .las extension for output | [\#61934](https://github.com/qgis/QGIS/issues/61934) | Kan niet worden gereproduceerd |  |
+| QGIS claims to be able to open all .jpg file (on Lubuntu) | [\#60911](https://github.com/qgis/QGIS/issues/60911) | [PR \#66472](https://github.com/qgis/QGIS/pull/66472) |  |
+| QGIS wants to open all .json files, including ones unrelated to any geodata | [\#61215](https://github.com/qgis/QGIS/issues/61215) | Kan niet worden gereproduceerd |  |
+| Matrix distance does not output right fields when using N x T matrix type | [\#29165](https://github.com/qgis/QGIS/issues/29165) | [PR \#66101](https://github.com/qgis/QGIS/pull/66101) |  |
+| Distance Matrix returns wrong record/result when using Linear Distance Matrix with k=1 | [\#45493](https://github.com/qgis/QGIS/issues/45493) | [PR \#66101](https://github.com/qgis/QGIS/pull/66101) |  |
+| QLR files not associated with QGIS | [\#56844](https://github.com/qgis/QGIS/issues/56844) | Kan niet worden gereproduceerd |  |
+| TestQgsDatumTransformDialog fails | [\#48883](https://github.com/qgis/QGIS/issues/48883) | Kan niet worden gereproduceerd |  |
+| TestProcessingGui::testDatabaseSchemaWrapper() Caught unhandled exception | [\#48885](https://github.com/qgis/QGIS/issues/48885) | Kan niet worden gereproduceerd |  |
+| Layout arrow item has start marker in wrong direction | [\#59078](https://github.com/qgis/QGIS/issues/59078) | [PR \#66558](https://github.com/qgis/QGIS/pull/66558) |  |
+| User Defined CRS gets lost | [\#57806](https://github.com/qgis/QGIS/issues/57806) | [PR \#66572](https://github.com/qgis/QGIS/pull/66572) |  |
+| Raster Tools - Generate XYZ Tiles (Directory) always creates 0 tiles | [\#60069](https://github.com/qgis/QGIS/issues/60069) | Is geen probleem |  |
+| Error in counting tiles in each levels in Generate XYZ tiles (Directory) | [\#62157](https://github.com/qgis/QGIS/issues/62157) | [PR \#66606](https://github.com/qgis/QGIS/pull/66606) | N/B |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy (QCooperative)](https://www.qcooperative.net/)
+### Mogelijkheid: Reparaties van problemen door Nyall Dawson (North Road)
+| Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Fix deadlock when rendering annotation layers | Niet gerapporteerd | [PR \#66712](https://github.com/qgis/QGIS/pull/66712) | [PR \#66742](https://github.com/qgis/QGIS/pull/66742) |
+| Fix crashes in QgsFeatureListComboBox if layer is unloaded | Niet gerapporteerd | [PR \#66697](https://github.com/qgis/QGIS/pull/66697) | [PR \#66708](https://github.com/qgis/QGIS/pull/66708) |
+| Every entry in relation reference widget is shown in italic | Niet gerapporteerd | [PR \#66649](https://github.com/qgis/QGIS/pull/66649) | Niet van toepassing |
+| Fix buggy processing relief colors widget | Niet gerapporteerd | [PR \#66602](https://github.com/qgis/QGIS/pull/66602) | Niet van toepassing |
+| Fix QgsImageCache lossy conversion of images | Niet gerapporteerd | [PR \#66585](https://github.com/qgis/QGIS/pull/66585) | Niet van toepassing |
+| Fix crash when setting 3d skybox to non-square textures | [\#66560](https://github.com/qgis/QGIS/issues/66560) | [PR \#66580](https://github.com/qgis/QGIS/pull/66580) | N/B |
+| Fix intermittent failure of GRASS raster tests | Niet gerapporteerd | [PR \#66546](https://github.com/qgis/QGIS/pull/66546) | N/B |
+| Fix symbology sizing issues on hidpi displays | [\#55349](https://github.com/qgis/QGIS/issues/55349) | [PR \#66531](https://github.com/qgis/QGIS/pull/66531) | Niet van toepassing |
+| Fix symbology sizing issues on hidpi displays | [\#55349](https://github.com/qgis/QGIS/issues/55349) | [PR \#66530](https://github.com/qgis/QGIS/pull/66530) | Niet van toepassing |
+| Fix broken color wheel widget on devices with pixel ratios | [\#55349](https://github.com/qgis/QGIS/issues/55349) | [PR \#66529](https://github.com/qgis/QGIS/pull/66529) | Niet van toepassing |
+| Use correct lossless method to store metal rough colors | Niet gerapporteerd | [PR \#66521](https://github.com/qgis/QGIS/pull/66521) | N/B |
+| Ensure color picker opens inline for 3d settings in style dock | Niet gerapporteerd | [PR \#66520](https://github.com/qgis/QGIS/pull/66520) | Niet van toepassing |
+| Fix misalignment of spin boxes in color dialog | Niet gerapporteerd | [PR \#66498](https://github.com/qgis/QGIS/pull/66498) | Niet van toepassing |
+| Use unlit material instead of phong material when more appropriate | Niet gerapporteerd | [PR \#66490](https://github.com/qgis/QGIS/pull/66490) | Niet van toepassing |
+| Loosen the maximum number of grid ticks to draw | [\#45113](https://github.com/qgis/QGIS/issues/45113) | [PR \#66403](https://github.com/qgis/QGIS/pull/66403) | Niet van toepassing |
+| Fixes malformed HTML metadata for postgres layers | Reported on mailing list | [PR \#66402](https://github.com/qgis/QGIS/pull/66402) | N/A - qt 6 only |
+| Fix slow count of features for filtered SQL server layers | [\#64894](https://github.com/qgis/QGIS/issues/64894) | [PR \#66401](https://github.com/qgis/QGIS/pull/66401) | Niet van toepassing |
+| Partially fix slow expression builder widget construction times | Niet gerapporteerd | [PR \#66385](https://github.com/qgis/QGIS/pull/66385) | Niet van toepassing |
+| Use correct default font for legend text on symbol | Related to [\#63431](https://github.com/qgis/QGIS/issues/63431) | [PR \#66384](https://github.com/qgis/QGIS/pull/66384) | Niet van toepassing |
+| Don't show missing font warnings for MS Shell Dlg font | [\#63431](https://github.com/qgis/QGIS/issues/63431) | [PR \#66383](https://github.com/qgis/QGIS/pull/66383) | Niet van toepassing |
+| Add explicit bool operator for QgsLayerTreeNode | [\#65755](https://github.com/qgis/QGIS/issues/65755) | [PR \#66381](https://github.com/qgis/QGIS/pull/66381) | QGIS 4 only |
+| WMS Ensure we store deduced CRS in provider/layer sources | Niet gerapporteerd | [PR \#66379](https://github.com/qgis/QGIS/pull/66379) | Niet van toepassing |
+| Fix maximum word wrap for legend title/group/subgroup text | [\#66281](https://github.com/qgis/QGIS/issues/66281) | [PR \#66338](https://github.com/qgis/QGIS/pull/66338) |  |
+| Fix model is zoomed right out when opening model designer | Niet gerapporteerd | [PR \#66335](https://github.com/qgis/QGIS/pull/66335) | QGIS 4 only |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
 
 {{<content-end >}}

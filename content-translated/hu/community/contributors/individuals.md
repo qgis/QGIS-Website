@@ -15,9 +15,9 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Egyéni közreműködők
-This list features individuals who contribute to QGIS, based on their activity (commits) on GitHub.
+Ez a lista azokat a magánszemélyeket sorolja fel, akik hozzájárulnak a QGIS fejlesztéséhez, a GitHubon végzett tevékenységük (commitjeik) alapján.
 
-**Special Recognition:** Look for the 👑 and ⭐ icons highlighting our **QGIS Project Founder** and **Honorary PSC Members** who have made extraordinary contributions to the project beyond commit numbers.
+**Külön elismerés:** Keresd meg a 👑 és ⭐ ikonokat, amelyekkel kiemeljük a **QGIS-projekt alapítóját** és a **PSC tiszteletbeli tagjait**, akik a commit-számokon túlmutató, rendkívüli hozzájárulást nyújtottak a projekthez.
 
 {{<rich-content-end >}}
 

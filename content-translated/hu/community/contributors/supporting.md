@@ -15,14 +15,14 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Támogató közreműködők
-This list highlights individuals and organizations whose valuable contributions to QGIS may not be reflected in commit histories—such as community support, outreach, or other behind-the-scenes efforts. If you believe your work should be recognized here, please review our [application guidelines](/community/contributors/application-guidelines/) and fill out the [QGIS Supporting Contributors Application form](https://forms.gle/wZr4EfCjqPWGaoq37). The QGIS Project Steering Committee (PSC) reviews submissions on a monthly basis.
+Ez a lista azokat a személyeket és szervezeteket emeli ki, akiknek a QGIS-hez nyújtott értékes hozzájárulása esetleg nem tükröződik a commit-előzményekben – például a közösségi támogatás, a népszerűsítés vagy egyéb háttérmunkák formájában. Ha úgy gondolja, hogy munkáját itt is el kellene ismerni, kérjük, olvassa el a [pályázati útmutatónkat](/community/contributors/application-guidelines/) és töltse ki a [QGIS támogató közreműködők jelentkezési űrlapját](https://forms.gle/wZr4EfCjqPWGaoq37). A QGIS Projektvezető Bizottság (PSC) havonta bírálja el a beérkezett pályázatokat.
 
 <div style="text-align:center;">
   <a href="/community/contributors/application-guidelines/" class="button is-success is-outlined" style="margin-right: 1rem;">
-    📋 Application Guidelines
+    📋 Pályázati útmutató
   </a>
   <a href="https://forms.gle/wZr4EfCjqPWGaoq37" class="button is-success">
-    🚀 Submit Your Contribution
+    🚀 Küldje be a hozzájárulását
   </a>
 </div>
 

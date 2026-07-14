@@ -85,19 +85,19 @@ ____
 ____
 ## 4. lépés: Logó hozzáadása
 Töltse fel a logóját a `static/img/contributors/` mappába:
-- **Format:** PNG or SVG
-- **Size:** Optimize for web (aim for under 100KB)
-- **Dimensions:** Width around 400-600px works well
-- **Naming:** Use lowercase and hyphens (e.g., `acme-geospatial.png`)
+- **Formátum:** PNG vagy SVG
+- **Méret:** Webre optimalizálva (cél: 100 KB alatt)
+- **Méretek:** Körülbelül 400–600 képpont szélesség jól működik
+- **Névadás:** Kisbetűket és kötőjeleket használjon (pl. `acme-geospatial.png`)
 
 ____
-## Step 5: Review & Approval
-✨ Once you submit your Pull Request:
-1. The QGIS website team will review your submission
-2. We may ask for minor adjustments
-3. Once approved and merged, your organization will appear on the [contributors page](/community/contributors/)!
+## 5. lépés: Felülvizsgálat és jóváhagyás
+✨ Miután elküldte a pull requestet:
+1. A QGIS weboldal csapata át fogja tekinteni a beküldött anyagot
+2. Előfordulhat, hogy kisebb módosításokat kérünk
+3. A jóváhagyás és az összevonás után a szervezete megjelenik a [hozzájárulók oldalán](/community/contributors/)!
 
 ____
-Thank you for contributing to QGIS! 🎉
+Köszönjük, hogy hozzájárult a QGIS fejlesztéséhez! 🎉
 
 {{<content-end >}}

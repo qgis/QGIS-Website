@@ -3,7 +3,7 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Explore our global community of QGIS individual contributors
+subtitle: Fedezze fel a QGIS egyéni közreműködőiből álló globális közösségünket
 title: Közreműködők térképe
 type: page
 
@@ -11,19 +11,19 @@ type: page
 {{<content-start >}}
 
 {{<contributors-map >}}
-## About This Map
-This interactive map displays the geographic distribution of QGIS contributors around the world. Each marker represents a contributor, with the size indicating their level of contribution to the project.
+## A térképről
+Ez az interaktív térkép a QGIS-közreműködők földrajzi eloszlását mutatja be világszerte. Minden jelölő egy-egy közreműködőt jelöl, mérete pedig a projekthez való hozzájárulás mértékét jelzi.
 ### Funkciók
-- **3D Globe View**: An animated, rotating globe that gradually reveals contributors
-- **Interactive Markers**: Click on any contributor to see detailed contribution statistics
-- **Contribution Categories**: View contributions broken down by thematic areas (Core, Documentation, Websites)
+- **3D-s földgömb nézet**: Egy animált, forgó földgömb, amely fokozatosan feltárja a közreműködőket
+- **Interaktív jelölők**: Kattintson bármelyik közreműködőre a részletes közreműködési statisztikák megtekintéséhez
+- **Hozzájárulási kategóriák**: A hozzájárulások tematikus területek szerinti bontása (Alap, Dokumentáció, Weboldalak)
 
 ### Adatforrás
-Contributor data is automatically generated from GitHub repositories and includes contributions to:
-- QGIS Core
+A közreműködői adatok automatikusan generálódnak a GitHub-tárolójából, és a következő projektekhez való hozzájárulásokat tartalmazzák:
+- QGIS alkalmazás
 - QGIS dokumentáció
-- QGIS Websites and related projects
+- QGIS-weboldalak és kapcsolódó projektek
 
-*Note: Only contributors with publicly available location data are shown on the map.*
+*Megjegyzés: Csak azok a közreműködők jelennek meg a térképen, akiknek helyadatai nyilvánosak.*
 
 {{<content-end >}}
