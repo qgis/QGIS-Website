@@ -31,8 +31,6 @@ text = "Learn more" >}}
 
 {{< rich-right-start >}}
 
-![](uc-2026/mountains.jpg)
-
 {{< rich-right-end >}}
 
 {{< rich-box-end >}}
