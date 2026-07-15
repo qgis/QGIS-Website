@@ -162,7 +162,7 @@ TEAM
 -
 Un progetto di successo richiede molta gente che ricoprono ruoli diversi. Alcuni scrivono codice o documentazione, mentre altri fanno un prezioso lavoro come testing, inoltro di  patch e suggerimenti.
 
-The number of Contributors to the project is unbounded. Get involved today. All contributions (adding code or documentation, fixing typo error, reporting issues…) to the project are greatly appreciated.
+Il numero di Contributori al progetto è illimitato. Partecipa anche tu oggi stesso. Tutti i contributi al progetto (aggiunta di codice o documentazione, correzione di errori di battitura, segnalazione di problemi…) sono molto apprezzati.
 
 These [individuals](https://github.com/qgis/QGIS/graphs/contributors) are recognised as Contributors to the main code [github repository](https://github.com/qgis/QGIS).
 

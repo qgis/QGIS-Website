@@ -96,9 +96,9 @@ The user got many useful benefits:
 - Possibility to evaluate basic economic indicators like ROI, NPV.
 
 ## Useful links and bibliography
-- <http://europa.eu/rapid/press-release_MEMO-10-200_en.htm> - information on European Digital Agenda
-- <http://www.ftthcouncil.eu/> - FTTH Council Europe website
-- <https://www.scipy.org/> - SciPy project website
+- <http://europa.eu/rapid/press-release_MEMO-10-200_en.htm> - informazioni sull'Agenda digitale europea
+- <http://www.ftthcouncil.eu/> - Sito web dell'FTTH Council Europe
+- <https://www.scipy.org/> - Sito web del progetto SciPy
 - <https://ksavinetworkinventory.com/en/download-geospatial-network-inventory-free/>
   - tool download webpage.
 

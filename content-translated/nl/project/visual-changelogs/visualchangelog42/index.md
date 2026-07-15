@@ -220,186 +220,186 @@ QGIS ondersteunt nu per-laag schaduw voor hoogte, specifiek voor puntenwolklagen
 <img src="images/entries/41a69a819d5d1446c2bcf2ddfcc4319bdb3b9f39.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
-### Feature: Support arithmetic operators on color objects in expressions
-QGIS now supports modifying color objects on Point Cloud data directly within expressions, using basic arithmetic operations. This simplifies dynamic color manipulation by automatically splitting the color into its base components and applying the mathematical operation to each channel, eliminating the need for complex component extraction formulas.
-- Arithmetic operations apply directly to underlying RGBA channels.
-- Multiplication works with the color on either side.
-- Other operations require the color on the left.
-- This feature avoids complex color component extraction formulas.
-- Dynamic shading based on attributes is greatly simplified.
+### Mogelijkheid: Ondersteuning voor rekenkundige operatoren voor kleurobjecten in expressies
+QGIS ondersteunt nu direct het aanpassen van kleurobjecten in gegevens van puntenwolken binnen expressies, met rekenkundige basisbewerkingen. Dat vereenvoudigt het dynamisch manipuleren van kleuren door automatisch die kleur op te splitsen in zijn basiscomponenten en de wiskundige bewerking toe te passen op elk kanaal, wat de noodzaak elimineert voor complexe formules voor het uitnemen van componenten.
+- Rekenkundige bewerkingen direct toepassen op onderliggende kanalen RGBA.
+- Vermenivuldigen werkt met de kleur aan beide zijden.
+- Andere bewerkingen vereisen de kleur aan de linkerkant.
+- Deze mogelijkheid vermijdt complexe formules voor het uitnemen van kleurcomponenten.
+- Dynamische schaduw, gebaseerd op attributen, is enorm vereenvoudigd.
 
-For Example:
+Bijvoorbeeld:
 
 `@point_color * scale_linear( @NumberOfReturns, 0, 8, 0.5, 1 )`
 
 <img src="images/entries/d215e96ce1bf086ec558dbf3587894a22cc75af1.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
-### Feature: Modify renderer color by expression
-An additional modifier has been added to the point cloud renderer that makes it possible to use expressions to for adjusting colors.<br />All point cloud attributes can be used in the expression, as well as the base color of the renderer. Users can combine the base color value with another attribute of the point, such as intensity, to produce a better result for point classification and styling.<br />For example:<br />`@point_color * (@intensity / 65535)`
+### Mogelijkheid: Kleur voor renderen aanpassen met expressie
+Een aanvullende aanpassing is toegevoegd aan de renderer voor puntewolken die het mogelijk maakt expressies te gebruiken voor het aanpassen van kleuren.<br />Alle attributen van puntenwolken mogen in de expressie worden gebruikt, alsook de basiskleur van de renderer. Gebruikers kunnen de waarde van de basiskleur combineren met een ander attribuut van het punt, zoals intensity, om een beter resultaat te produceren voor classificeren van punten en opmaak.<br />Bijvoorbeeld:<br />`@point_color * (@intensity / 65535)`
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ## Afdruklay-outs
-### Feature: Add new layout chart item functionality to derive plot data and styling from the source vector layer renderer
-New settings have been added to the layout chart items:
-- a 'generate categories from the layer symbology' toggle to have the plot series' X axis match categories from the source vector layer's renderer
-- an 'apply layer symbology colors' toggle to have the rendered charts take on the colors of the symbol attached to the vector layer's renderer
+### Mogelijkheid: Nieuwe functionaliteit voor lay-outitem Diagram toegevoegd om gegevens voor plot en opmaak af te leiden uit de renderer voor de bronvectorlaag
+Nieuwe instellingen zijn toegevoegd aan het lay-outitem Diagram
+- een keuzevak 'Categorieën maken uit laagsymbologie' om de serie voor X in het plot overeen te laten komen met de categorieën van de renderer voor de bronvectorlaag
+- een keuzevak 'Kleuren laagsymbologie toepassen' om de gerenderde diagrammen de kleuren te laten overnemen van het symbool dat is verbonden met de renderer van de vectorlaag
 
-The user can either rely on a blank series to *count* the number of matching features, or can rely on a custom Y expression (a simple field or a full-fledged expression) to come up with a customized sum (say length of lines, or an attribute referring to a value that can be summed, etc.)
+De gebruiker kan ofwel kiezen voor een blanco serie om het aantal overeenkomende objecten te *tellen*, of kan ervoor kiezen om een aangepaste expressie voor Y te maken (een eenvoudige expressie voor een veld of een heel complexe expressie) om te komen tot een aangepaste som (zeg de lengte van lijnen of een attribuut dat verwijst naar een waarde die kan worden opgeteld, etc.)
 
 <img src="images/entries/ba82a958973bddc5c128c2b24c7cd249a81d737c.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Add new option to clip a picture item by a shape-based item
-QGIS now provides the ability to clip a layout picture item by a shape-typed item.<br />This provides a fantastic way to frame cool shapes and mask elements with images (whether dynamically driven by an atlas feature attribute or a static image source).<br />The clipping is enabled and configured inside a new section of the picture item properties panel.
+### Mogelijkheid: Nieuwe optie toegevoegd om een item Afbeelding bij te snijden naar een op een vorm gebaseerd item
+QGIS verschaft nu de mogelijkheid om een item Afbeelding in een lay-out te clippen naar een op een vorm gebaseerd item.<br />Dat geeft een fantastische manier om mooie vormen en maskerelementen te framen met afbeeldingen (of dynamisch gedreven door een attribuut van een object van atlas of een statische afbeeldingsbron).<br />Het clippen wordt ingeschakeld en geconfigureerd binnen een nieuw gedeelte van het paneel Eigenschappen voor items Afbeelding.
 
 <img src="images/entries/08cbd88117433df3beb02050b1e690886b7ee27b.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
-### Feature: Geospatial PDF layer management enhancement
-New options have been added to allow Geospatial PDF Exports to follow the QGIS layer tree configuration (groups, order, names, visibility, group layers). This allows users to preserve the layer structure, including nested groups, when exporting to a Geospatial PDF. This functionality is supported in print layouts, but not in standard map rendering tasks.
-- The feature requires a map without locked layers.
-- Both visible and invisible project layers are exported.
-- PDFs render custom orders while keeping standard tree structures.
-- Feature attributes are exported for all layers or none.
-- Group layers are supported as single map layers.
-- Matching PDF groups handle layout item visibility directly.
-- Unmatched PDF groups appear at the tree bottom.
-- Mutually exclusive groups are currently not supported.
+### Mogelijkheid: Verbetering voor georuimtelijk beheer PDF-laag
+Nieuwe opties zijn toegevoegd om ervoor te zorgen dat exporteren naar georuimtelijk PDF de configuratie voor de boomstructuur van de lagen van QGIS volgt (groepen, volgorde, namen, zichtbaarheid, groepslagen). Dat maakt het voor gebruikers mogelijk de laagstructuur te behouden, inclusief geneste groepen, bij het exporteren naar een georuimtelijke PDF. Deze functionaliteit wordt ondersteund in afdruklay-outs, maar niet in standaardtaken voor het renderen van kaarten.
+- De mogelijkheid vereist een kaart zonder vergrendelde lagen.
+- Zowel zichtbare als onzichtbare projectlagen worden geëxporteerd.
+- PDF's renderen aangepaste volgorden, waarbij de standaard boomstructuur wordt behouden.
+- Attributen van objecten worden geëxporteerd voor alle lagen of niet.
+- Groepslagen worden ondersteund als enkele kaartlagen.
+- Overeenkomende groepen PDF handelen de zichtbaarheid van lay-outitems direct af.
+- Niet-overeenkomende PDF-groepen verschijnen aan de onderzijde van de boom.
+- Elkaar uitsluitende groepen worden momenteel niet ondersteund.
 
 <img src="images/entries/c4c92f09dc1381fac13768b1b52a192c9ed64eb8.png" class="img-responsive img-rounded" />
 
-This feature was funded by the city of Bern
+Dit werd mogelijk gemaakt door de stad Bern
 
 Deze mogelijkheid werd ontwikkeld door [Germap](https://github.com/gacarrillor)
 ## Expressies
-### Feature: Add scale_cubic_bezier expression function, handle bezier-cubic interpolation when converting MapBox styles
-Complements the existing scale_linear, scale_exponential functions and adds a new bezier-cubic based interpolation method. This is then used when converting MapBox styles using the "cubic-bezier" interpolation type.
+### Mogelijkheid: Toegevoegde expressiefunctie scale_cubic_bezier, afhandelen interpolatie bezier-cubic bij het converteren van stijlen van MapBox
+Complementeert de bestaande functies scale_linear, scale_exponential en voegt een nieuwe methode voor op bezier-cubic gebaseerde interpolatie toe. Dat wordt dan gebruikt bij het converteren van stijlen van MapBox met het interpolatietype "cubic-bezier".
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add concat_ws expression function
-Concatenate all but the first arguments with separators. The first parameter is used as a separator.<br />NULL arguments are ignored.
+### Mogelijkheid: Expressiefunctie concat_ws toegevoegd
+Voegt alle, behalve het eerste, argumenten met scheidingstekens samen. De eerste parameter wordt als een scheidingsteken gebruikt.<br />Argumenten NULL worden genegeerd.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gegevensbeheer
-### Feature: Adding "Field Calculator" menu item to the attribute table header
-A new "Field Calculator" menu item is provided in the context menu of column headers in a vector layer's attribute table.<br />The Field Calculator window will open with "Update existing field" checkbox automatically checked and the corresponding field already selected in the combo box.<br />The action is only enabled on editable fields.
+### Mogelijkheid: Menu-item "Veldberekening openen" toegevoegd aan de kop van de attributentabel
+Een nieuw menu-item "Veldberekening openen" wordt verschaft in het contextmenu van kolomkoppen in de attributentabel van een vectorlaag.<br />Het venster Veldberekening zal openen met het keuzevak "Bestaande velden vernieuwen" automatisch geselecteerd en het corresponderende veld al geselecteerd in het combinatievak.<br />De actie wordt alleen ingeschakeld voor bewerkbare velden.
 
 <img src="images/entries/8ade61ae18cd9ec8014958f35d175ed4e5d0ed4f.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Patrice Pineault](https://github.com/TurboGraphxBeige)
 ## Processing
-### Feature: Dynamically show child step feature counts as model progresses
-As the model is run through the designer dialog, QGIS will now show an updated count of features flowing through the model links. To achieve this, a new flexible "badge" item that is attached to arrows was introduced.<br />Note:
-- We now also show non-feature count outputs in the badges for arrows, so, e.g., the value of numeric outputs attached to another algorithm will be shown. (To avoid cluttered UI, strings are truncated.)
-- Badges now inherit the midpoint color of their associated arrow lines.
-- For performance reasons, the feature count updates are limited to only every 100 features.
-- Since not all algorithms report dynamic feature count progress (e.g., third-party plugin-based ones won't, at least until the plugin author utilises the upgraded API for this), QGIS will always update the feature counts with their exact final counts when the whole model finishes executing. For those models, the user will see the arrow's count updated in one go at the end of the model, not as that child executes.
+### Mogelijkheid: Dynamische objecttellingen van kindstap weergeven als het model voortgaat
+Als het model wordt uitgevoerd met het dialoogvenster Modelontwerper, zal QGIS nu een bijgewerkte telling weergeven van objecten die door de links van het model stromen. Een nieuw flexibel item "badge" dat is verbonden aan pijlen werd geïntroduceerd om dit te bereiken.<br />Opmerking:
+- We geven nu ook uitvoer voor tellingen van niet-objecten weer in de badges voor pijlen, dus, bijv. de waarde van numerieke uitvoer, die is verbonden met een ander algoritme, wordt weergegeven. (Tekenreeksen worden afgebroken om een rommelige gebruikersinterface te voormijden.)
+- Badges erven nu de middelste kleur van hun geassocieerde pijllijnen.
+- Om redenen van uitvoering zijn de bijwerkingen voor de telling van objecten beperkt tot slechts elke 100 objecten.
+- Omdat niet alle algoritmes de voortgang van dynamisch tellen van objecten rapporteren (bijv. die welke zijn gebaseerd op plug-ins van derde partijen doen dat niet, ten minste niet totdat de auteur van de plug-in hiervoor de opgewaardeerde API gebruikt), zal QGIS altijd de tellingen van objecten bijwerken met hun exacte uiteindelijke telling als het model de uitvoering voltooid. Voor die modellen zal de gebruiker de telling van de pijlen in één keer zien bijgewerkt aan het einde van het model, niet als dat kind wordt uitgevoerd.
 
 <img src="images/entries/e78e514a83f210185705a81bc6e1a8311bc025c0.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door City of Canning
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add an area threshold parameter
-The check holes processing tool now includes a threshold size which allows users to filter the returned results. If the hole area is higher than the provided threshold, then the hole is not considered an error.
+### Mogelijkheid: Een parameter voor een drempel voor een gebied toegevoegd
+Het gereedschap voor Processing voor het controleren van gaten bevat nu een drempelgrootte die het voor gebruikers mogelijk maakt de teruggegeven resultaten te filteren. Als het gehele gebied groter is dan de opgegeven drempelwaarde, dan wordt het gat niet als een fout beschouwd.
 
 Deze mogelijkheid werd ontwikkeld door [Jacky Volpes](https://github.com/Djedouas)
-### Feature: Add support for the SFCGAL extend to edges parameter in medial axis algorithm
-With SFCGAL 2.3, the approximate media axis algorithm has a new `extendToEdges` parameter. If this parameter is activated, the medial axis endpoints are extended to the input polygon boundary. The attached media illustrates the difference between running the medial axis algorithm with this option set to false (red) and true (green), respectively.
+### Mogelijkheid: Ondersteuning toegevoegd voor SFCGAL  parameter extendToEdges in het algoritme voor schatten van de mediale as
+Met SFCGAL 2.3 heeft het algoritme voor het schatten van de mediale as een nieuwe parameter `extendToEdges`. Als deze parameter is geactiveerd, worden de eindpunten van de mediale as uitgebreid tot de grens van de invoerpolygoon. De bijgevoegde afbeelding illustreert het verschil voor het uitvoeren van het algoritme voor het schatten van de mediale as met deze optie respectievelijk ingesteld op false (rood) en true (groen).
 
 <img src="images/entries/d1cf8c4c5dd1ef1d172745817db02a6e2628191e.png" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door StadtFrankfurt am Main
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
-### Feature: Add processing in user defined menu or toolbar
-Users can now add a processing algorithm action to a user-defined menu or toolbar. When triggered, those actions will open a dialog to parametrize and execute the associated processing algorithm.
+### Mogelijkheid: Processing in een door de gebruiker gedefinieerd menu of werkbalk toevoegen
+Gebruikers kunnen nu een actie voor een algoritme van processing toevoegen aan een door de gebruiker aangepast menu of werkbalk. Indien geactiveerd, zullen deze acties een dialoogvenster openen voor het invullen van de parameters en het geassocieerde algoritme voor Processing uitvoeren.
 
 <img src="images/entries/5ae9ce29dd7d2e8a7b094e3f7c129171af8a6d8f" class="img-responsive img-rounded" />
 
 Dit werd mogelijk gemaakt door Stadt Frankfurt am Main en Oslandia
 
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
-### Feature: Random subset algorithms ported to C++
-The Processing algorithms Random extract within subsets and Random selection within subsets have been ported from Python to C++, providing enhanced performance.
+### Mogelijkheid: Subset van algoritmes Willekeurig geporteerd naar C++
+De Processing algoritmes Willekeurig uitnemen binnen subsets en Willekeurige selectie binnen subsets zijn geporteerd van Python naar C++, wat een betere uitvoering geeft.
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ## Opties voor toepassing en projecten
-### Feature: Topocentric projection
-Topocentric CRS support has been added to QGIS, with a new widget provided for setting the point of origin of the projection, which is enabled when users explicitly select a Topocentric CRS option from the CRS selection menu.
+### Mogelijkheid: Topocentrische projectie
+Topocentrische ondersteuning voor CRS is toegevoegd aan QGIS, met een nieuwe widget die wordt verschaft voor het instellen van een punt van oorsprong van de projectie, die wordt ingeschakeld als gebruikers expliciet een optie voor een Topocentrisch CRS selecteren in het selectiemenu van het CRS.
 
 <img src="images/entries/405bc086bd84189e5113544155ac4ef7d85ed836.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ## Sensoren
-### Feature: Add support for SensorThings 2.0, including Sensing, Sampling and Relations extensions
-QGIS now includes support for layers utilising SensorThings 2.0 specifications, including the new Sensing, Sampling and Relations extensions.<br />This also exposes these choices for SensorThings 2.0-enabled services. The service version and extensions are determined dynamically when connecting to a service via the browser or data source manager.
+### Mogelijkheid: Ondersteuning toegevoegd voor SensorThings 2.0, inclusief de uitbreidingen Sensing, Sampling en Relations
+QGIS bevat nu ondersteuning voor lagen die specificaties voor SensorThings 2.0 gebruiken, inclusief de nieuwe uitbreidingen Sensing, Sampling en Relations.<br />Dit geeft deze keuzes ook weer voor services die zijn ingeschakeld voor SensorThings 2.0. De versie van de service en de uitbreidingen worden dynamisch bepaald tijdens het verbinden met een service via de Browser of Databronnen beheren.
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Profiel plotten
-### Feature: Display elevation profile curve in 3D
-QGIS now provides a "Show Profile in 3D Views" option in the profile plot settings menu, which enables the display of the elevation profile curve in 3D.<br />The curve is retrieved from the elevation profile, and Z values are set from the calculated min and max Z values of the data that fit within the curve.<br />Polygon and line rubberbands follow the cursor to display over what position in the elevation profile the user is currently hovering over.
+### Mogelijkheid: Profielboog hoogte weergeven in 3D
+QGIS verschaft nu een optie "Profiel in 3D-weergaven weergeven" in het menu voor de instellingen van het profielplot, wat het inschakelen van het weergeven van de profielboog voor de hoogte in 3D mogelijk maakt.<br />De boog wordt opgehaald uit het hoogteprofiel en waarden Z worden ingesteld vanuit de berekende minimale en maximale waarden van de gegevens die passen binnen de boog.<br />Polygoon- en lijn-elastieken volgen de cursor om weer te geven over welke positie in het hoogteprofiel de gebruiker momenteel beweegt.
 
 <img src="images/entries/51b9332232c56ecf122b5d6205744c01a2371e42.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Dominik Cindric](https://github.com/ViperMiniQ)
 ## Browser
-### Feature: Rework how ESRI REST services are exposed in the browser
-Changes have been made to help de-clutter ESRI REST service content in the browser:
-- The duplicate items for the same service exposed as both mapserver (raster) and featureserver (vector) are now hidden. Instead, only show the feature server item, and move the ability to load as a raster to the right-click context menu on the item. This mimics how ArcPro exposes these services, with the exception that it ONLY allows loading them as vectors. There's no capability to load as a raster when the service exposes the query capability.
-- We no longer show the "All layers" pseudo layer for mapserver items. Instead, this functionality was moved to the right-click context menu for the map service item. This avoids cluttering up the service contents in the browser with rarely used items that don't correspond to the actual contents of the service.
+### Mogelijkheid: Opnieuw bewerkt hoe services van ESRI REST worden weergegeven in de Browser
+Wijzigingen zijn gemaakt om de inhoud van de service ESRI REST minder rommelig te maken in de Browser:
+- De duplicate items voor dezelfde service die worden weergegeven als zowel kaartserver (raster) als objectenserver (vector) worden nu verborgen. In plaats daarvan wordt alleen het item van de objectenserver weergegeven en is de mogelijkheid voor het laden als een raster verplaatst naar het rechtermuisklikcontextmenu in het item. Dit bootst na hoe ArcPro deze services weergeeft, met de uitzondering dat het ALLEEN toestaat dat ze als vectors worden geladen. Er is geen mogelijkheid om te laden als een raster als de service de mogelijkheid query weergeeft.
+- We geven niet langer een pseudolaag "Alle lagen" weer voor items van de kaartserver. In plaats daarvan werd deze functionaliteit verplaatst naar het rechtermuisklikcontextmenu voor het item van de kaartservice. Dat vermijdt het dichtslibben van de inhoud voor de service in de Browser met zelden gebruikte items die niet corresponderen met de feitelijke inhoud van de service.
 
-This feature was funded by République et canton de Genève
+Dit werd mogelijk gemaakt door Republiek en Kanton Genève
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Gegevensproviders
-### Feature: Greatly speed up the FeatureServer provider for map viewing
-QGIS has a significantly more performant refactored approach to fetching data using the FeatureServer Provider, which trims down the number of requests required to fetch a subset of the features within a given map extent.<br />Note that the actual TOTAL number of requests to get EVERY feature from the service doesn't change, so, for example, opening the attribute table would result in the same total number of requests.
+### Mogelijkheid: Enorme versnelling voor de provider FeatureServer voor het bekijken van kaarten
+QGIS heeft een significant krachtiger opnieuw uitgewerkte benadering gebruikt voor het ophalen van gegevens voor de provider FeatureServer, wat het aantal vereiste verzoeken terugdringt om een subset op te halen van de objecten in een bepaald kaartbereik.<br />Onthoud dat het feitelijke TOTALE aantal verzoeken om ELK object uit de service op te halen niet wijzigt, dus, bijvoorbeeld, openen van de attributentabel zou resulteren in hetzelfde totale aantal verzoeken.
 
 <img src="images/entries/e3ea1f5568a403cb6c293d963c0b04351df8ea21.png" class="img-responsive img-rounded" />
 
-This feature was funded by République et canton de Genève
+Dit werd mogelijk gemaakt door Republiek en Kanton Genève
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Enable parallel provider load for AFS, AMS providers, and some related fixes
-QGIS has enabled parallel provider loading for the ArcGIS FeatureServer/MapServer providers, giving much faster project load times when a project contains multiple FeatureServer/MapServer layers.
+### Mogelijkheid: Parallel laden vanaf provider inschakelen voor providers AFS, AMS en enkele gerelateerde reparaties
+QGIS heeft parallel laden vanaf provider ingeschakeld voor de providers ArcGIS FeatureServer/MapServer, wat veel snellere opstarttijden geeft om een project te laden als een project meerdere lagen van FeatureServer/MapServer bevat.
 
-This feature was funded by République et canton de Genève
+Dit werd mogelijk gemaakt door Republiek en Kanton Genève
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Support STAC assets from other cloud optimized data types and blob stores
-QGIS has added support for STAC assets from other cloud object-store providers, including Azure and Google.<br />This additionally extends support to other cloud-optimized data types beyond GeoTiff, such as. JPEG2000, TileDB, Point Clouds, and others provided they are published with an appropriate `cloud-optimized` labelled mimetype or a supported asset type declaration.
+### Mogelijkheid: Ondersteuning voor onderdelen van STAC uit andere voor de cloud geoptimaliseerde gegevenstypen en opslag voor blobs
+QGIS heeft ondersteuning toegevoegd voor onderdelen van STAC uit andere voor opslagproviders voor de cloud, inclusief Azure en Google.<br />Dit breidt de ondersteuning, naast GeoTiff, aanvullend uit naar andere voor de cloud geoptimaliseerde gegevenstypen. Zoals JPEG2000, TileDB, Point Clouds, en andere, vooropgesteld dat ze zijn gepubliceerd met een toepasselijk gelabeld mimetype `cloud-optimized` of een ondersteunde declaratie voor het type onderdeel.
 
-This feature was developed by [Norman Barker](https://github.com/normanb)
+Deze mogelijkheid werd ontwikkeld door [Norman Barker](https://github.com/normanb)
 ## QGIS Server
-### Feature: Add support for HIGHLIGHT_LABELFRAME options WMS params
-New parameters for WMS services allow for the configuration of frame style properties on labels, including:
+### Mogelijkheid: Ondersteuning toegevoegd voor opties van WMS parameters HIGHLIGHT_LABELFRAME
+Nieuwe parameters voor services van WMS maken het mogelijk eigenschappen voor framestijlen voor labels te configureren, inclusief:
 - `HIGHLIGHT_LABELFRAMEBACKGROUNDCOLOR`
 - `HIGHLIGHT_LABELFRAMEOUTLINECOLOR`
 - `HIGHLIGHT_LABELFRAMEOUTLINEWIDTH`
 - `HIGHLIGHT_LABELFRAMESIZE`
 
-For Example:
+Bijvoorbeeld:
 
 `&MAP0:HIGHLIGHT_LABELFRAMEBACKGROUNDCOLOR=%23FF0000`<br />`&MAP0:HIGHLIGHT_LABELFRAMEOUTLINECOLOR=%230000FF`<br />`&MAP0:HIGHLIGHT_LABELFRAMESIZE=5`<br />`&MAP0:HIGHLIGHT_LABELFRAMEOUTLINEWIDTH=2`
 
 <img src="images/entries/e2ce00c7b18b3fbb012ee8e08e0def43db4959c5.png" class="img-responsive img-rounded" />
 
 Deze mogelijkheid werd ontwikkeld door [Sandro Mani](https://github.com/manisandro)
-### Feature: FlatGeobuf OAPIF export plus various fixes
-The FlatGeobuf export format has been added to the QGIS Server OAPIF service, implemented in line with [QEP 414](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-414-server-oapif-jsonfg-flatgeobuf.md)
+### Mogelijkheid: FlatGeobuf OAPIF exporteren plus verscheidene reparaties
+De indeling voor exporteren FlatGeobuf is toegevoegd aan de QGIS Server OAPIF-service, geïmplementeerd in lijn met [QEP 414](https://github.com/qgis/QGIS-Enhancement-Proposals/blob/master/qep-414-server-oapif-jsonfg-flatgeobuf.md)
 
-This feature was funded by [QGIS user group Germany (QGIS Anwendergruppe Deutschland e.V.)](https://www.qgis.de/)
+Dit werd mogelijk gemaakt door [QGIS gebruikersgroep Duitsland (QGIS Anwendergruppe Deutschland e.V.)](https://www.qgis.de/)
 
 Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
 ## Programmeerbaarheid
-### Feature: Expose concave hull of polygons functionality
-QGIS now supports the Concave Hull of Polygons algorithm from GEOS, which has been exposed in PyQGIS.
-1. Allows polygon (and line) feature input for the Concave Hull by Feature algorithm. Previously, a user would have to first extract vertices from the polygon to calculate the concave hull from the points, but that approach ignores the interior of the polygon.
-2. Adds a dedicated "Fill gaps between polygons" algorithm:
+### Mogelijkheid: Functionaliteit voor het weergeven van de holle schil van polygonen
+QGIS ondersteunt nu het algoritme Concave Hull of Polygons van GEOS dat werd weergegeven in PyQGIS.
+1. Maakt invoer van polygoon- (en lijn-) objecten mogelijk voor het algoritme Concave Hull by Feature. Eerder zou een gebruiker eerst de punten moeten uitnemen uit de polygoon om de holle schil vanuit de punten te berekenen, maar die benadering negeert het interieur van de polygoon.
+2. Voegt een toegewezen algoritme "Gaten tussen polygonen vullen" toe:
 
-Unlike the standard Concave Hull algorithm, a Concave Hull of Polygons is a (possibly) non-convex polygon containing all the input polygons. The computed hull fills the gaps between the polygons without intersecting their interiors. It strictly follows the outer boundaries of the input polygons, allowing you to fill gaps between them without distorting their original shapes. It is particularly useful for cases such as generalizing groups of building outlines, creating 'district' polygons around blocks, or removing gaps and joining disjoint sets of polygons.<br />See https://lin-ear-th-inking.blogspot.com/2022/05/concave-hulls-of-polygons.html?m=1 for more details
+Anders dan het standaardalgoritme Holle schil is Gaten tussen polygonen vullen een (mogelijk) niet holle polygoon die alle invoerpolygonen bevat. De berekende schil vult de gaten tussen de polygonen zonder hun interieuren te kruisen. Het volgt strikt de buitengrenzen van de invoerpolygonen, en stelt u in staat de gaten tussen hen te vullen zonder hun originele vormen te vervormen. Het is in het bijzonder nuttig voor gevallen zoals het generaliseren van groepen omtrekken van gebouwen, maken van 'district'-polygonen rondom blokken, of het verwijderen van gaten en het verbinden van losse sets polygonen. Bekijk https://lin-ear-th-inking.blogspot.com/2022/05/concave-hulls-of-polygons.html?m=1 voor meer details
 
 Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
 ## Belangrijke reparaties
@@ -463,7 +463,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (QCooperative)](https
 | Titel probleem | URL issues.qgis.org (indien gerapporteerd) | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Custom Toolbar Position Loss | [\#65862](https://github.com/qgis/QGIS/issues/65862) | [PR \#66483](https://github.com/qgis/QGIS/pull/66483) | N/B |
-| Export to PDF from layout changes colors | [\#42935](https://github.com/qgis/QGIS/issues/42935) | Not a bug (Was an Adobe issue IMHO) |  |
+| Export to PDF from layout changes colors | [\#42935](https://github.com/qgis/QGIS/issues/42935) | Geen probleem (Was naar mijn mening een probleem van Adobe) |  |
 | Layout bleeding to edge outside map window | [\#49638](https://github.com/qgis/QGIS/issues/49638) | Gerepareerd |  |
 | Fix flaky test_gui_fileuploader | Niet gerapporteerd | [PR \#66543](https://github.com/qgis/QGIS/pull/66543) |  |
 | Hidden actions from user defined toolbar are still visible. | Niet gerapporteerd | [PR \#66620](https://github.com/qgis/QGIS/pull/66620) |  |
@@ -509,7 +509,7 @@ Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis (Lutra Consulting)](http
 | --- | --- | --- | --- |
 | Unbreak QGIS with GDAL \>= 3.13 | [commit ffdb8e3](https://github.com/qgis/QGIS/commit/ffdb8e3b27035478c533f37087505e749cc15b9b) | [PR \#66615](https://github.com/qgis/QGIS/pull/66615) | N/B |
 | concat() returns NULL when all arguments are NULL: it should return an empty string | [\#65808](https://github.com/qgis/QGIS/issues/65808) | [PR \#66618](https://github.com/qgis/QGIS/pull/66618) | NOG TE DOEN |
-| Remove all the parts in a geometry creates an empty geometry instead of NULL | [\#65453](https://github.com/qgis/QGIS/issues/65453) | Werk nog gaande | NOF TE DOEN / Niet aanbevolen? |
+| Remove all the parts in a geometry creates an empty geometry instead of NULL | [\#65453](https://github.com/qgis/QGIS/issues/65453) | Werk nog gaande | NOG TE DOEN / Niet aanbevolen? |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 
@@ -521,14 +521,14 @@ Deze mogelijkheid werd ontwikkeld door [Loïc Bartoletti (Oslandia)](https://osl
 | Grey out "Use only features intersecting atlas features" for layout chart item if no atlas is activated | [\#65612](https://github.com/qgis/QGIS/issues/65612) | [PR \#66283](https://github.com/qgis/QGIS/pull/66283) | N/B |
 | DB Manager | [\#59470](https://github.com/qgis/QGIS/issues/59470) | Kan niet worden gereproduceerd |  |
 | "Generate elevation profile image" algorithm doesn't propose image formats for output file | [\#64915](https://github.com/qgis/QGIS/issues/64915) | [PR \#66286](https://github.com/qgis/QGIS/pull/66286) | [PR \#66445](https://github.com/qgis/QGIS/pull/66445) |
-| Ubuntu 23.04 | /usr/lib/qgis/plugins/libplugin_grass8.so | lib not loadable | [\#55159](https://github.com/qgis/QGIS/issues/55159) | Not a bug/feedback |  |
+| Ubuntu 23.04 \| /usr/lib/qgis/plugins/libplugin_grass8.so \| lib not loadable | [\#55159](https://github.com/qgis/QGIS/issues/55159) | Geen probleem/terugkoppeling |  |
 | Returned result of layer_property (layer, 'type') is dependent of UI language | [\#65009](https://github.com/qgis/QGIS/issues/65009) | [PR \#66300](https://github.com/qgis/QGIS/pull/66300) | [PR \#66446](https://github.com/qgis/QGIS/pull/66446) |
 | Advanced digitizing floater should not allow editing every fields | [\#65173](https://github.com/qgis/QGIS/issues/65173) | [PR \#66303](https://github.com/qgis/QGIS/pull/66303) | [PR \#66447](https://github.com/qgis/QGIS/pull/66447) |
 | Join attributes by location (summary) count returns Null | [\#40108](https://github.com/qgis/QGIS/issues/40108) | [PR \#66322](https://github.com/qgis/QGIS/pull/66322) | [PR \#66448](https://github.com/qgis/QGIS/pull/66448) |
 | Qt6 porting: use size_t for qHash() return | [\#44351](https://github.com/qgis/QGIS/issues/44351) | [PR \#66477](https://github.com/qgis/QGIS/pull/66477) | N/B |
 | Image source file chooser does not start in the program symbol library folder (Windows) | [\#37308](https://github.com/qgis/QGIS/issues/37308) | [PR \#66342](https://github.com/qgis/QGIS/pull/66342) | [PR \#66449](https://github.com/qgis/QGIS/pull/66449) |
 | TestQgsProcessingAlgsPt2::exportMeshOnGrid() | [\#48605](https://github.com/qgis/QGIS/issues/48605) | Kan niet worden gereproduceerd |  |
-| TestQgsProcessingAlgs::convertGpsData() fails | [\#45588](https://github.com/qgis/QGIS/issues/45588) | Cannot reproduce/Not a bug |  |
+| TestQgsProcessingAlgs::convertGpsData() fails | [\#45588](https://github.com/qgis/QGIS/issues/45588) | Kan niet worden gereproduceerd/Is geen probleem |  |
 | gdal:merge parameter OPTIONS not shown with execAlgorithmDialog | [\#66396](https://github.com/qgis/QGIS/issues/66396) | Is geen probleem |  |
 | projects/anonymize_saved_projects doesn't seem to be available in the new settings tree | [\#65844](https://github.com/qgis/QGIS/issues/65844) | Is geen probleem |  |
 | bug for .Shp namefile | [\#62655](https://github.com/qgis/QGIS/issues/62655) | Is geen probleem |  |
@@ -566,15 +566,15 @@ Deze mogelijkheid werd ontwikkeld door [Alexander Bruy (QCooperative)](https://w
 | Fix misalignment of spin boxes in color dialog | Niet gerapporteerd | [PR \#66498](https://github.com/qgis/QGIS/pull/66498) | Niet van toepassing |
 | Use unlit material instead of phong material when more appropriate | Niet gerapporteerd | [PR \#66490](https://github.com/qgis/QGIS/pull/66490) | Niet van toepassing |
 | Loosen the maximum number of grid ticks to draw | [\#45113](https://github.com/qgis/QGIS/issues/45113) | [PR \#66403](https://github.com/qgis/QGIS/pull/66403) | Niet van toepassing |
-| Fixes malformed HTML metadata for postgres layers | Reported on mailing list | [PR \#66402](https://github.com/qgis/QGIS/pull/66402) | N/A - qt 6 only |
+| Fixes malformed HTML metadata for postgres layers | Gerapporteerd op mailinglijst | [PR \#66402](https://github.com/qgis/QGIS/pull/66402) | N/B - alleen QT 6 |
 | Fix slow count of features for filtered SQL server layers | [\#64894](https://github.com/qgis/QGIS/issues/64894) | [PR \#66401](https://github.com/qgis/QGIS/pull/66401) | Niet van toepassing |
 | Partially fix slow expression builder widget construction times | Niet gerapporteerd | [PR \#66385](https://github.com/qgis/QGIS/pull/66385) | Niet van toepassing |
 | Use correct default font for legend text on symbol | Related to [\#63431](https://github.com/qgis/QGIS/issues/63431) | [PR \#66384](https://github.com/qgis/QGIS/pull/66384) | Niet van toepassing |
 | Don't show missing font warnings for MS Shell Dlg font | [\#63431](https://github.com/qgis/QGIS/issues/63431) | [PR \#66383](https://github.com/qgis/QGIS/pull/66383) | Niet van toepassing |
-| Add explicit bool operator for QgsLayerTreeNode | [\#65755](https://github.com/qgis/QGIS/issues/65755) | [PR \#66381](https://github.com/qgis/QGIS/pull/66381) | QGIS 4 only |
+| Add explicit bool operator for QgsLayerTreeNode | [\#65755](https://github.com/qgis/QGIS/issues/65755) | [PR \#66381](https://github.com/qgis/QGIS/pull/66381) | alleen QGIS 4 |
 | WMS Ensure we store deduced CRS in provider/layer sources | Niet gerapporteerd | [PR \#66379](https://github.com/qgis/QGIS/pull/66379) | Niet van toepassing |
 | Fix maximum word wrap for legend title/group/subgroup text | [\#66281](https://github.com/qgis/QGIS/issues/66281) | [PR \#66338](https://github.com/qgis/QGIS/pull/66338) |  |
-| Fix model is zoomed right out when opening model designer | Niet gerapporteerd | [PR \#66335](https://github.com/qgis/QGIS/pull/66335) | QGIS 4 only |
+| Fix model is zoomed right out when opening model designer | Niet gerapporteerd | [PR \#66335](https://github.com/qgis/QGIS/pull/66335) | alleen QGIS 4 |
 
 Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
 

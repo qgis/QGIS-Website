@@ -164,7 +164,7 @@ With the **Geometry Snapper** tool you can align the edges and vertices of one v
 ![image3](images/entries/319136e65a51c7a8d76adac7aef89806db170c2e.webp)
 ## Applicazioni e Opzioni del progetto
 ### Feature: Encrypted password management
-QGIS 2.12 introduces a new authentication system (see [PR 2330, QEP 14](https://github.com/dakcarto/QGIS-Enhancement-Proposals/blob/auth-system/qep-14-authentication-system.rst)). Here\'s what is included:
+QGIS 2.12 introduce un nuovo sistema di autenticazione (vedi [PR 2330, QEP 14](https://github.com/dakcarto/QGIS-Enhancement-Proposals/blob/auth-system/qep-14-authentication-system.rst)). Ecco cosa è incluso:
 - Master-password-encrypted authentication configurations stored in an SQLite database
 - Authentication method plugin architecture (like data providers)
 - Basic auth method plugin
@@ -392,7 +392,7 @@ The GRASS plugin was updated to enable support for GRASS 7. GRASS layers can be 
 
 For both GRASS 6 and GRASS 7 users you will find that the integration between GRASS and QGIS is much more seamless. You can create GRASS layers directly in the QGIS Browser panel, style GRASS vector layers using standard QGIS styling tools and use familiar QGIS digitising tools to create new vector geometries in a GRASS mapset.
 
-See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/) and [progress report](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/progress.html)
+Vedi anche la [pagina del progetto di aggiornamento del plugin GRASS per QGIS](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/) e [relazione sullo stato di avanzamento dei lavori](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/progress.html)
 
 **Questa funzionalità è stata sviluppata da:** [Radim Blazek](http://www.gissula.eu/)
 

@@ -134,7 +134,7 @@ Buona fortuna con l'organizzazione del vostro gruppo locale degli utenti. Si pre
 Se si preferisce utilizzare il marchio ufficiale QGIS.org e ospitare il sito web del proprio gruppo utenti su un sottodominio QGIS.org (ad es., sweden.qgis.org), è possibile utilizzare il repository di template fornito su https://github.com/qgis/QGIS-User-Group-Website. Questa opzione garantisce la coerenza con il design del sito web principale di QGIS. Si prega di leggere attentamente e seguire le istruzioni di configurazione fornite nel repository.
 ### Accesso all'invio di notizie al QGIS News Feed 
 I gruppi utenti locali possono richiedere l'accesso al sistema QGIS News Feed, che consente di inviare notizie (come eventi, campagne di crowdfunding, meetup o annunci) che appariranno nella sezione notizie di QGIS una volta approvate dai moderatori. Questo è un ottimo modo per condividere le attività del proprio gruppo con la comunità QGIS globale.
-### Template per il dominio nazionale locale qgis.xx 
+### Modello per il dominio nazionale locale qgis.xx 
 Per il dominio nazionale locale, se non si desidera ospitare e progettare il proprio sito web da zero, è possibile utilizzare il template fornito su https://github.com/qgis/qgis-template.github.io.
 
 {{<content-end >}}
