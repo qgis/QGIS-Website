@@ -521,7 +521,7 @@ This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com
 | Grey out "Use only features intersecting atlas features" for layout chart item if no atlas is activated | [\#65612](https://github.com/qgis/QGIS/issues/65612) | [PR \#66283](https://github.com/qgis/QGIS/pull/66283) | N/A |
 | DB tvarkyklė | [\#59470](https://github.com/qgis/QGIS/issues/59470) | Cannot reproduce |  |
 | "Generate elevation profile image" algorithm doesn't propose image formats for output file | [\#64915](https://github.com/qgis/QGIS/issues/64915) | [PR \#66286](https://github.com/qgis/QGIS/pull/66286) | [PR \#66445](https://github.com/qgis/QGIS/pull/66445) |
-| Ubuntu 23.04 | /usr/lib/qgis/plugins/libplugin_grass8.so | lib not loadable | [\#55159](https://github.com/qgis/QGIS/issues/55159) | Not a bug/feedback |  |
+| Ubuntu 23.04: /usr/lib/qgis/plugins/libplugin_grass8.so lib not loadable | [\#55159](https://github.com/qgis/QGIS/issues/55159) | Not a bug/feedback |  |
 | Returned result of layer_property (layer, 'type') is dependent of UI language | [\#65009](https://github.com/qgis/QGIS/issues/65009) | [PR \#66300](https://github.com/qgis/QGIS/pull/66300) | [PR \#66446](https://github.com/qgis/QGIS/pull/66446) |
 | Advanced digitizing floater should not allow editing every fields | [\#65173](https://github.com/qgis/QGIS/issues/65173) | [PR \#66303](https://github.com/qgis/QGIS/pull/66303) | [PR \#66447](https://github.com/qgis/QGIS/pull/66447) |
 | Join attributes by location (summary) count returns Null | [\#40108](https://github.com/qgis/QGIS/issues/40108) | [PR \#66322](https://github.com/qgis/QGIS/pull/66322) | [PR \#66448](https://github.com/qgis/QGIS/pull/66448) |
