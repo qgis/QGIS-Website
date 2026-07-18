@@ -2,7 +2,7 @@
 HasBanner: false
 draft: false
 sidebar: true
-subtitle: Giving the power of spatial visualization and decision making tools to everyone
+subtitle: Dajemo svima moć alata za prostornu vizuelizaciju i donošenje odluka
 title: QGIS Foundation
 type: page
 

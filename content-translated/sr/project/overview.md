@@ -2,7 +2,7 @@
 ButtonLink: download/
 ButtonText: Preuzmi
 HasBanner: true
-LabelText: Free and open source
+LabelText: Slobodan softver otvorenog koda
 Reviewed: 1 June 2024
 Reviewer: Tim Sutton
 SupportedOS: Dostupno na Windows, Mac, Linux
@@ -10,30 +10,30 @@ draft: false
 heroImage: img/project.jpg
 og_image: img/project.jpg
 sidebar: true
-subtitle: Giving the power of spatial visualization and decision making tools to everyone
-title: QGIS overview
+subtitle: Dajemo svima moć alata za prostornu vizuelizaciju i donošenje odluka
+title: Pregled QGIS-a
 type: page
 
 ---
 {{<content-start >}}
-## Key features
+## Ključne mogućnosti
 {{<tabs tab1="Napravite mape" tab2="Uredi slojeve" tab3="Obradi i analiziraj" tab4="Delite mape" >}}
 
 {{<columns-start id="content-tab-1" >}}
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![Create map](../img/create.gif "Create maps")
+![Izrada karte](../img/create.gif "Izrada karata")
 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Vodeća kartografija u klasi
-Experience QGIS' extensive set of design options to bring your cartographic ideas to life.
+Iskoristite bogat skup QGIS-ovih opcija za oblikovanje i oživite svoje kartografske ideje.
 ###### Profesionalna izrada mapa
-Use the intuitive layout design tool to produce high-quality, large-format print maps.
+Koristite intuitivan alat za izradu prikaza i napravite kvalitetne karte velikog formata za štampu.
 ###### Moćni alati za izveštavanje
-Create atlases and reports with maps, media and tabular content.
+Pravite atlase i izveštaje sa kartama, multimedijom i tabelarnim sadržajem.
 
 {{<column-end >}}
 
@@ -43,13 +43,13 @@ Create atlases and reports with maps, media and tabular content.
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![Edit map](../img/edit.gif "Edit map")
+![Uređivanje karte](../img/edit.gif "Uređivanje karte")
 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Izuzetna veština digitalizacije
-Create and edit points, lines, polygons, and meshes with precision.
+Precizno kreirajte i uređujte tačke, linije, poligone i mreže.
 ###### Napredni gradjevinski alati
 Kreirajte geometrije pomoću krivih, alata sličnih CAD-u i širokog spektra geometrijskih transformacija.
 ###### Visoko prilagodljivi obrasci
@@ -63,17 +63,17 @@ Kreirajte korisnički prijatne obrasce koristeći naš dizajner obrazaca.
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![visualize map](../img/visualize.gif "visualize map")
+![vizuelizacija karte](../img/visualize.gif "vizuelizacija karte")
 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Sveobuhvatni set alata za analizu
-Uncover insights from your data with our comprehensive array of hundreds of analysis tools.
+Otkrijte uvide u svoje podatke uz stotine naših alata za analizu.
 ###### Automatizovani tokovi rada za analizu
-Visually combine analysis tools to create reproducible workflows easily.
+Vizuelno kombinujte alate za analizu i lako pravite ponovljive radne tokove.
 ###### Proširivo okruženje za analizu
-Explore our diverse plugin ecosystem of third-party analysis tools for expanded capabilities.
+Istražite raznovrstan ekosistem dodataka trećih strana i proširite mogućnosti analize.
 
 {{<column-end >}}
 
@@ -83,13 +83,13 @@ Explore our diverse plugin ecosystem of third-party analysis tools for expanded 
 
 {{<column-start class="is-flex-direction-column is-two-thirds rounded mb-4" >}}
 
-![share map](../img/share.gif "share map")
+![deljenje karte](../img/share.gif "deljenje karte")
 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center is-one-third" >}}
 ###### Vodeća podrška za formate u industriji
-Conquer data integration challenges with support for a multitude of data sources and formats.
+Savladajte izazove integracije podataka uz podršku za mnoštvo izvora i formata podataka.
 ###### Standardi i interoperabilnost
 Pojačajte svoj uticaj istraživanjem, korišćenjem i kreiranjem veb servisa zasnovanih na industrijskim standardima.
 ###### Objavite svoj rad
@@ -98,20 +98,20 @@ Proširite QGIS na oblak i mobilne uređaje za širu dostupnost.
 {{<column-end >}}
 
 {{<columns-end >}}
-## Level up with community resources
+## Napredujte uz resurse zajednice
 {{<columns-start >}}
 
 {{<column-start class="is-flex-direction-column rounded" >}}
 
-![Create map](../img/plugs.jpg "Create map")
+![Izrada karte](../img/plugs.jpg "Izrada karte")
 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center " >}}
-### 2000+ plugins developed by community
-Enhance the functionality of QGIS application with thousands of free additional features.
+### 2000+ dodataka koje je razvila zajednica
+Proširite mogućnosti QGIS-a hiljadama besplatnih dodatnih funkcija.
 
-[Go to plugins](https://plugins.qgis.org/)
+[Idi na dodatke](https://plugins.qgis.org/)
 
 {{<column-end >}}
 
@@ -121,15 +121,15 @@ Enhance the functionality of QGIS application with thousands of free additional 
 
 {{<column-start class="is-flex-direction-column rounded" >}}
 
-![International conference](../img/meetings.jpg "International conference")
+![Međunarodna konferencija](../img/meetings.jpg "Međunarodna konferencija")
 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center " >}}
-### Annual international conference
-Connect with professionals, enthusiasts, and QGIS users for networking and knowledge sharing at our annual international user conference.
+### Godišnja međunarodna konferencija
+Povežite se sa stručnjacima, entuzijastima i korisnicima QGIS-a radi umrežavanja i razmene znanja na našoj godišnjoj međunarodnoj korisničkoj konferenciji.
 
-[Community meetings]({{< ref "community/organisation/meetings/user_meetings.md" >}})
+[Sastanci zajednice]({{< ref "community/organisation/meetings/user_meetings.md" >}})
 
 {{<column-end >}}
 
@@ -139,22 +139,22 @@ Connect with professionals, enthusiasts, and QGIS users for networking and knowl
 
 {{<column-start class="is-flex-direction-column rounded mb-4" >}}
 
-![Local user groups](../img/groups.jpg "Local user groups")
+![Lokalne korisničke grupe](../img/groups.jpg "Lokalne korisničke grupe")
 
 {{<column-end >}}
 
 {{<column-start class="is-flex-direction-column is-justify-content-center " >}}
-### Local user groups and support providers
-Join a community of like-minded individuals in your region.
+### Lokalne korisničke grupe i pružaoci podrške
+Pridružite se zajednici istomišljenika u svom regionu.
 
-[Local groups list]({{< ref "community/groups.md" >}})
+[Spisak lokalnih grupa]({{< ref "community/groups.md" >}})
 
 {{<column-end >}}
 
 {{<columns-end >}}
 
-[Join the community]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
-## Cross platform
+[Pridružite se zajednici]({{< ref "community/involve.md" >}} "is-size-5 mb-4")
+## Višeplatformski
 {{<columns-start >}}
 
 {{<column-start >}}
@@ -163,7 +163,7 @@ Join a community of like-minded individuals in your region.
 
 {{<rich-content-start themeClass="coloring-6" >}}
 ### QGIS Server
-Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS services. Control which layers, attributes, layouts and coordinate systems are exported. QGIS server is considered as a reference implementation for WMS 1.3.
+Objavljujte svoje QGIS projekte i slojeve kao OGC kompatibilne WMS, WMTS, WFS i WCS servise. Kontrolišite koji se slojevi, atributi, prikazi i koordinatni sistemi izvoze. QGIS Server se smatra referentnom implementacijom za WMS 1.3.
 
 {{<rich-content-end >}}
 
@@ -177,9 +177,9 @@ Publish your QGIS projects and layers as OGC compatible WMS, WMTS, WFS and WCS s
 
 {{<rich-content-start themeClass="coloring-6" >}}
 ### QGIS Desktop
-Create, edit, visualise, analyse and publish geospatial information.
+Kreirajte, uređujte, vizuelizujte, analizirajte i objavljujte geoprostorne informacije.
 
-[Download]({{< ref "download.md" >}}) for Windows, Mac, Linux, BSD and Android.
+[Preuzmite]({{< ref "download.md" >}}) za Windows, Mac, Linux, BSD i Android.
 
 {{<rich-content-end >}}
 
@@ -197,9 +197,9 @@ Create, edit, visualise, analyse and publish geospatial information.
 
 {{<rich-content-start themeClass="coloring-6" >}}
 ### QGIS Web Client
-Publish your QGIS projects on the web with ease.
+Lako objavljujte svoje QGIS projekte na vebu.
 
-Benefit from the powerful symbology, labeling and blending features to impress the world with your maps.
+Iskoristite moćnu simbologiju, natpise i stapanje slojeva da zadivite svet svojim kartama.
 
 [QGIS Web Client 2](https://github.com/qgis/qwc2)
 
@@ -214,10 +214,10 @@ Benefit from the powerful symbology, labeling and blending features to impress t
 {{<rich-box-start >}}
 
 {{<rich-content-start themeClass="coloring-6" >}}
-### QGIS on mobiles and tablets
-The QGIS experience does not stop on the desktop. Various third-party touch optimized apps allow you to take QGIS out of the office.
+### QGIS na mobilnim telefonima i tabletima
+QGIS ne staje na desktopu. Različite aplikacije trećih strana optimizovane za dodir omogućavaju vam da QGIS iznesete iz kancelarije.
 * [QField]({{< ref "download.md" >}})
-* [Mergin Maps mobile app]({{< ref "download.md" >}})
+* [Mergin Maps mobilna aplikacija]({{< ref "download.md" >}})
 * [IntraMaps Roam]({{< ref "download.md" >}})
 
 {{<rich-content-end >}}
@@ -232,9 +232,9 @@ The QGIS experience does not stop on the desktop. Various third-party touch opti
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ### Case Studies
-We gather inspiring stories from our users that showcase the versatility and power of the QGIS project.
+Sakupljamo inspirativne priče naših korisnika koje pokazuju svestranost i snagu QGIS projekta.
 
-[Find out more]({{< ref "project/case-studies.md" >}})
+[Saznajte više]({{< ref "project/case-studies.md" >}})
 
 {{<rich-content-end >}}
 
@@ -249,10 +249,10 @@ We gather inspiring stories from our users that showcase the versatility and pow
 {{<columns-start >}}
 
 {{<column-start class="is-flex-direction-column is-one-third mb-6" >}}
-## Maps showcase
-Demonstrations of our user's creativity, showcasing the powerful map creation capabilities of QGIS.
+## Galerija karata
+Prikaz kreativnosti naših korisnika i moćnih mogućnosti QGIS-a za izradu karata.
 
-[Go to maps showcase]({{< ref "project/overview/maps.md" >}})
+[Idi na galeriju karata]({{< ref "project/overview/maps.md" >}})
 
 {{<column-end >}}
 
@@ -267,10 +267,10 @@ Demonstrations of our user's creativity, showcasing the powerful map creation ca
 {{<columns-start >}}
 
 {{<column-start class="is-flex-direction-column is-one-third" >}}
-## Application screenshots
-Below are some screenshots from QGIS itself and a selection of maps which were created with QGIS.
+## Snimci ekrana aplikacije
+Ispod se nalaze snimci ekrana samog QGIS-a i izbor karata napravljenih u QGIS-u.
 
-[Go to screenshots]({{< ref "project/overview/screenshots.md" >}})
+[Idi na snimke ekrana]({{< ref "project/overview/screenshots.md" >}})
 
 {{<column-end >}}
 

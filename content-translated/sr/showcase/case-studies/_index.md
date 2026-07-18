@@ -1,7 +1,7 @@
 ---
 author: ''
 categories:
-- Case studies
+- Studije slučaja
 date: '2015-04-01'
 description: Stories from our users around the world.
 draft: 'true'

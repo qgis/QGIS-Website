@@ -14,18 +14,18 @@ type: page
 {{<rich-box-start mode="html" layoutClass="has-right" id="donate-prompt" >}}
 
 {{<rich-content-start themeClass="coloring-2" >}}
-## Before download starts
-Our software is, and always will be, available free of charge if downloaded from QGIS.org.
+## Pre nego što preuzimanje počne
+Naš softver jeste i uvek će biti besplatan ako se preuzme sa QGIS.org.
 
-The project is a result of a huge effort and social contribution from many community members who volunteer their time and expertise. In addition, many businesses, government agencies and commercial entities have contributed to the development of QGIS. They do this either to ensure that QGIS meets their specific needs or to contribute to and accelerate the huge social impact that is realised by making a tool such as QGIS freely available. Our goal is the betterment of society through informed spatial decision making. If you are able, we gently request that you support our work.
+Projekat je rezultat ogromnog truda i društvenog doprinosa mnogih članova zajednice koji dobrovoljno ulažu svoje vreme i znanje. Pored toga, mnoga preduzeća, državne agencije i komercijalni subjekti doprineli su razvoju QGIS-a. To čine kako bi obezbedili da QGIS zadovolji njihove specifične potrebe ili kako bi doprineli ogromnom društvenom uticaju koji nastaje time što je alat poput QGIS-a slobodno dostupan, i ubrzali ga. Naš cilj je bolje društvo kroz informisano prostorno odlučivanje. Ako ste u mogućnosti, ljubazno vas molimo da podržite naš rad.
 
-Whether you choose to donate or not, we hope that you enjoy using our labour of love and encourage you to share and spread your downloaded copy far and wide so that others may enjoy it too.
+Bez obzira na to da li ćete donirati ili ne, nadamo se da ćete uživati koristeći ovaj naš rad iz ljubavi, i podstičemo vas da preuzetu kopiju delite i širite nadaleko, kako bi i drugi u njoj uživali.
 
-Our very best regards!
+Srdačan pozdrav!
 
 {{<paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
 
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
+Donacije QGIS-u mogu biti poreski priznate u nekim zemljama. Za detalje se obratite svojoj poreskoj upravi. Ako želite poreski odbitak kao nemačka kompanija ili organizacija, donirajte preko [nemačke QGIS korisničke grupe](https://qgis.de/doku.php/verein/spenden). Oni mogu izdati potvrdu o uplati kao nemačko udruženje oslobođeno poreza.
 
 {{<paragraph-end >}}
 
@@ -51,9 +51,9 @@ Donations to QGIS might be tax-deductible in some countries. Please refer to you
 ## macOS
 {{<download-macos >}}
 
-Official All-in-one, signed and notarized installers for macOS. [Learn more]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
+Zvanični sve-u-jednom, potpisani i notarizovani instaleri za macOS. [Saznajte više]({{< ref "resources/installation-guide#binary-packages-installers" >}}).
 
-Alternatively, it is also possible to install QGIS via MacPorts, see the [MacPorts Installing Instructions]({{< ref "resources/installation-guide/#macports" >}})
+Alternativno, QGIS je moguće instalirati i preko MacPorts-a — pogledajte [uputstvo za instalaciju preko MacPorts-a]({{< ref "resources/installation-guide/#macports" >}})
 
 {{<platform-content-end >}}
 
@@ -61,7 +61,7 @@ Alternatively, it is also possible to install QGIS via MacPorts, see the [MacPor
 
 {{<platform-content-start platform="linux" >}}
 ## Linux
-GNU/Linux is a Free operating system built on the same principles that QGIS is built on. We provide installers for many flavors of GNU/Linux binary packages (including rpm and deb packages). Please select your choice of distro below:
+GNU/Linux je slobodan operativni sistem izgrađen na istim principima na kojima je izgrađen i QGIS. Nudimo instalere za mnoge varijante GNU/Linux binarnih paketa (uključujući rpm i deb pakete). Izaberite svoju distribuciju ispod:
 - [Debian/Ubuntu]({{< ref "resources/installation-guide#debian--ubuntu" >}})
 - [Fedora]({{< ref "resources/installation-guide#fedora" >}})
 - [NixOS]({{< ref "resources/installation-guide#nixos" >}})
@@ -72,42 +72,42 @@ GNU/Linux is a Free operating system built on the same principles that QGIS is b
 - [Flatpak]({{< ref "resources/installation-guide#flatpak" >}})
 - [Spack]({{< ref "resources/installation-guide#spack" >}})
 
-[Linux Installation Instructions]({{< ref "resources/installation-guide#linux" >}})
+[Uputstvo za instalaciju na Linuxu]({{< ref "resources/installation-guide#linux" >}})
 
 {{<platform-content-end >}}
 
 {{<platform-content-start platform="bsd" >}}
 ## BSD
-[BSD Installation Instructions]({{< ref "resources/installation-guide#freebsd" >}})
+[Uputstvo za instalaciju na BSD-u]({{< ref "resources/installation-guide#freebsd" >}})
 
 {{<platform-content-end >}}
 
 {{<platform-content-start platform="container" >}}
-## Container Images
-[Container Images Installation Instructions]({{< ref "resources/installation-guide#container-images" >}})
+## Kontejnerske slike
+[Uputstvo za instalaciju kontejnerskih slika]({{< ref "resources/installation-guide#container-images" >}})
 
 {{<platform-content-end >}}
 
 {{<platform-content-start platform="mobile" >}}
-## Mobile and tablet
+## Mobilni telefoni i tableti
 {{<mobile-downloads >}}
 
 {{<platform-content-end >}}
 
 {{<platform-content-start platform="source" >}}
-## Source Code
-QGIS is open source software available under the terms of the **GNU General Public License** meaning that its source code can be downloaded through 'tarballs' or the git repository.
+## Izvorni kod
+QGIS je softver otvorenog koda dostupan pod uslovima **GNU General Public License**, što znači da se njegov izvorni kod može preuzeti kao „tarball“ arhiva ili iz git repozitorijuma.
 
-QGIS Source Code is available [here (latest release)](/downloads/qgis-latest.tar.bz2) and [here (long term release)](/downloads/qgis-latest-ltr.tar.bz2)
+Izvorni kod QGIS-a dostupan je [ovde (najnovije izdanje)](/downloads/qgis-latest.tar.bz2) i [ovde (dugoročno izdanje)](/downloads/qgis-latest-ltr.tar.bz2)
 
-Refer to the installation guide on how to compile QGIS from source for the different platforms: [here](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
+Za uputstvo kako kompajlirati QGIS iz izvornog koda na različitim platformama pogledajte vodič za instalaciju: [ovde](https://github.com/qgis/QGIS/blob/master/INSTALL.md)
 
-You can also obtain the source code by cloning or forking our [GitHub repository](https://github.com/qgis/QGIS).
+Izvorni kod možete dobiti i kloniranjem ili forkovanjem našeg [GitHub repozitorijuma](https://github.com/qgis/QGIS).
 
 {{<platform-content-end >}}
 
 {{<platform-content-start platform="example" >}}
-## Example Datasets
+## Primeri skupova podataka
 Za potrebe testiranja i učenja, [dostupan je primer skupa podataka](https://docs.qgis.org/latest/en/docs/user_manual/introduction/getting_started.html#downloading-sample-data), koji sadrži kolekcije podataka iz različitih izvora i u različitim formatima.
 
 {{<platform-content-end >}}
