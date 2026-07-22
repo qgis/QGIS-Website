@@ -111,7 +111,7 @@
 
               # This executes some shell code to initialize a venv in $venvDir before
               # dropping into the shell
-              pythonPackages.venvShellHook
+              # pythonPackages.venvShellHook
               pythonPackages.icalendar # Python packages
               pythonPackages.requests # Python packages
               pythonPackages.pillow # Python packages
