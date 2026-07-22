@@ -8,7 +8,7 @@
 
   inputs = {
     nixpkgs-version.url = "github:QGIS/qgis-nixpkgs-version";
-    nixpkgs.follows = "nixpkgs-version/nixpkgs-25-11";
+    nixpkgs.follows = "nixpkgs-version/nixpkgs-26-05";
 
     # Fetch the Hugo theme submodule directly as a flake input
     qgis-website-theme = {
@@ -96,6 +96,8 @@
         system:
         let
           pkgs = nixpkgsFor.${system};
+          venvDir = "./.venv";
+          pythonPackages = pkgs.python3Packages;
         in
         {
           # Development environment
@@ -103,14 +105,45 @@
             packages = with pkgs; [
               hugo # Hugo for building the website
               vscode # VSCode for development
-              python3Packages.icalendar # Python packages
-              python3Packages.requests # Python packages
-              python3Packages.pillow # Python packages
+              # A Python interpreter including the 'venv' module is required to bootstrap
+              # the environment.
+              pythonPackages.python
+
+              # This executes some shell code to initialize a venv in $venvDir before
+              # dropping into the shell
+              # pythonPackages.venvShellHook
+              pythonPackages.icalendar # Python packages
+              pythonPackages.requests # Python packages
+              pythonPackages.pillow # Python packages
+              pythonPackages.lxml # Python packages
               gnumake # GNU Make for build automation
+              transifex-cli
+              libxml2 # Required by lxml
+              libxslt
             ];
+
             shellHook = ''
               export DIRENV_LOG_FORMAT=
               git submodule update --init --recursive
+              SOURCE_DATE_EPOCH=$(date +%s)
+
+              if [ -d "${venvDir}" ]; then
+                echo "Skipping venv creation, '${venvDir}' already exists"
+              else
+                echo "Creating new venv environment in path: '${venvDir}'"
+                # Note that the module venv was only introduced in python 3, so for 2.7
+                # this needs to be replaced with a call to virtualenv
+                ${pythonPackages.python.interpreter} -m venv "${venvDir}"
+              fi
+
+              # Under some circumstances it might be necessary to add your virtual
+              # environment to PYTHONPATH, which you can do here too;
+              # PYTHONPATH=$PWD/${venvDir}/${pythonPackages.python.sitePackages}/:$PYTHONPATH
+
+              source "${venvDir}/bin/activate"
+
+              pip install -r REQUIREMENTS.txt
+    
               echo "-----------------------"
               echo "🌈 Your Hugo Dev Environment is ready."
               echo "It provides hugo and vscode for use with the QGIS Website Project"
