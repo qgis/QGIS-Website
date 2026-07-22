@@ -1,28 +1,28 @@
 {
   "nodes": {
-    "nixpkgs-25-11": {
+    "nixpkgs-26-05": {
       "locked": {
-        "lastModified": 1772822230,
-        "narHash": "sha256-yf3iYLGbGVlIthlQIk5/4/EQDZNNEmuqKZkQssMljuw=",
+        "lastModified": 1780453794,
+        "narHash": "sha256-bXMRa9VTsHSPXL4Cw8R6JJLQeY3Y/IP4+YJCYVmQ7FY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "71caefce12ba78d84fe618cf61644dce01cf3a96",
+        "rev": "6b316287bae2ee04c9b93c8c858d930fd07d7338",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-25.11",
+        "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1771848320,
-        "narHash": "sha256-0MAd+0mun3K/Ns8JATeHT1sX28faLII5hVLq0L3BdZU=",
+        "lastModified": 1784356753,
+        "narHash": "sha256-12KrbMiWLcf8m7pCvAtZh1ZrgF85ZXDXvfR/fWTKy84=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2fc6539b481e1d2569f25f8799236694180c0993",
+        "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
         "type": "github"
       },
       "original": {
@@ -34,15 +34,15 @@
     },
     "nixpkgs-version": {
       "inputs": {
-        "nixpkgs-25-11": "nixpkgs-25-11",
+        "nixpkgs-26-05": "nixpkgs-26-05",
         "nixpkgs-unstable": "nixpkgs-unstable"
       },
       "locked": {
-        "lastModified": 1773385044,
-        "narHash": "sha256-oq0Fej7GiaKPltK1odEob+4YzC8hbVFgqNUMxfOh6wc=",
+        "lastModified": 1784425016,
+        "narHash": "sha256-hoKYYMUGyvhC0FjNK6rw6cvkJUAaV7b1XQNYH503GdI=",
         "owner": "QGIS",
         "repo": "qgis-nixpkgs-version",
-        "rev": "47033d4016a89c0c9786e33125076209a276689b",
+        "rev": "507ef34d181c978604f59a2d2b25abf6d94a20dc",
         "type": "github"
       },
       "original": {
@@ -71,7 +71,7 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs-version",
-          "nixpkgs-25-11"
+          "nixpkgs-26-05"
         ],
         "nixpkgs-version": "nixpkgs-version",
         "qgis-website-theme": "qgis-website-theme"
