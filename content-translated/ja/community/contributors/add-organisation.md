@@ -10,16 +10,16 @@ type: page
 # あなたの組織をQGIS貢献者に追加しましょう
 ようこそ! あなたの組織がQGISに貢献している場合、私たちの [貢献者ページ](/community/contributors/) で紹介することができます。以下の簡単な手順に従ってくださいs:
 ____
-## Step 1: Prepare Your Organization Details
-### What You'll Need:
-- ✅ Your organization's name, tagline, and website URL
-- ✅ A brief description of your QGIS involvement
-- ✅ GitHub usernames of team members who contribute to QGIS
-- ✅ Your organization's logo (PNG or SVG, optimized for web)
+## ステップ 1: 自分の組織の詳細を用意する
+### 必要なもの
+- 組織の名称、スローガン、ウェブサイトURL
+- QGISとのかかわり合いの簡潔な説明
+- QGISに貢献するチームメンバー達のGitHubユーザー名
+- 組織のロゴ（web用に最適化されたPNG又はSVG）
 
 ____
-## Step 2: Fill Out the Template
-Copy and customize this template with your organization's information:
+## ステップ 2: テンプレートに入力する
+このテンプレートをコピーし、自分の組織の情報でカスタマイズしてください:
 ```
 {
   "name": "Your Organization Name",
@@ -43,61 +43,61 @@ Copy and customize this template with your organization's information:
   }
 }
 ```
-### Field Guide:
+### フィールドの説明:
 | フィールド | 説明 | 例 |
 | --- | --- | --- |
-| **name** | Your organization's full name | `"Kartoza"` |
-| **subtitle** | Short tagline or motto | `"Mapping the Future"` |
-| **image** | Logo filename (add to `static/img/contributors/`) | `"img/contributors/kartoza-logo.png"` |
-| **width** | Logo display width | `"200px"` (keep as is) |
-| **url** | あなたのウェッブサイト | `"https://kartoza.com"` |
-| **description** | Brief description (2-3 sentences) | `"Kartoza provides open-source GIS solutions..."` |
-| **members** | GitHub usernames of your team members | See below |
-| **contributions** | Leave as is—auto-updated by scripts | Keep zeros and null values |
+| **name** | 組織の正式名称 | `"Kartoza"` |
+| **subtitle** | 短めのスローガンか標語 | `"Mapping the Future"` |
+| **image** | ロゴのファイル名（`static/img/contributors/` に加えてください） | `"img/contributors/kartoza-logo.png"` |
+| **width** | ロゴの表示幅 | `"200px"` （そのままにしてください） |
+| **url** | 自分のウェブサイト | `"https://kartoza.com"` |
+| **description** | 簡潔な説明（２～３文） | `"Kartoza provides open-source GIS solutions..."` |
+| **members** | チームメンバー達のGitHubユーザー名 | 下記参照 |
+| **contributions** | そのまま残してください － スクリプトによって自動的に更新されます | ゼロやnull値のままにしてください |
 
-### Members Array Explained:
-- **username**: GitHub username (must match exactly)
-- **author_names**: Full name as it appears in Git commits. `"Jean Luc"` or `"Jean Luc,Jean Lucas"` for multiple names.
-- **from**: Date when this person started contributing for your org (YYYY-MM-DD)
-- **to**: Leave as `null` if still active, or add end date (YYYY-MM-DD)
+### メンバー配列の説明:
+- **username**: GitHubのユーザー名（完全に一致すること）
+- **author_names**: Git コメントに現れる氏名。 "Jean Luc"` 又は複数の氏名は `"Jean Luc,Jean Lucas"` 。
+- **from**: この人が自分の組織のための貢献を始めた日付 (YYYY-MM-DD)
+- **to**: 活動中のときは `null` のまま残し、そうでなければ終了日を入れます (YYYY-MM-DD)
 
-💡 **Tip:** You can add multiple members—just duplicate the member object for each person.
+💡 **Tip:** 複数のメンバーを追加できます—各人用にメンバーオブジェクトを複製するだけです。
 ____
-## Step 3: Submit via GitHub Pull Request
-### Option A: Use GitHub's Web Editor (Easiest)
-1. **Click here to edit the file directly:** [Edit organizations.json](https://github.com/qgis/QGIS-Website/edit/main/data/contributors/organizations.json)
-   - GitHub will automatically fork the repository for you
-2. **Scroll to the bottom** of the file
-3. **Add a comma** after the last `}` of the previous entry
-4. **Paste your organization entry** (from Step 2)
-5. **Click "Commit changes"** and provide a description like: *"Add [Your Org Name] to contributors"*
-6. **Create a Pull Request** by clicking the green button
+## ステップ 3: GitHub のプルリクエスト経由で提出します
+### 選択肢 A: GitHub のウェブエディタを使う（最も簡単）
+1. **ここをクリックしてファイルを直接編集してください:** [Edit organizations.json](https://github.com/qgis/QGIS-Website/edit/main/data/contributors/organizations.json)
+   - GitHubがリポジトリを自動的にフォークしてくれます
+2. ファイルの **末尾までスクロールしてください**
+3. 直前のエントリの最後の `}` の後に **コンマを追加してください**
+4. （ステップ 2から） **自分の組織のエントリを貼り付けてください**
+5. **「変更をコミットする」をクリックし** 、次のような説明を与えてください: *"Add [自分の組織名称] to contributors"*
+6. 緑のボタンをクリックして **プルリクエストを生成してください**
 
-### Option B: Fork and Clone (For Advanced Users)
-1. Fork the [QGIS-Website repository](https://github.com/qgis/QGIS-Website/)
-2. Clone your fork locally
-3. Add your entry to `data/contributors/organizations.json`
-4. Add your logo to `static/img/contributors/` (optimize file size!)
-5. Commit and push your changes
-6. [Open a Pull Request](https://github.com/qgis/QGIS-Website/pulls)
+### 選択肢 B: フォークしてクローンする（上級ユーザー向け）
+1. [QGIS-Website リポジトリ] (https://github.com/qgis/QGIS-Website/) をフォークしてください
+2. 自分のフォークをローカルでクローンしてください
+3. 自分のエントリを `data/contributors/organizations.json` に追加してください
+4. 自分のロゴを `static/img/contributors/` に追加してください（ファイルサイズを最適化すること！）
+5. コミットして変更をプッシュしてください
+6. [プルリクエストを開く](https://github.com/qgis/QGIS-Website/pulls)
 
-⚠️ **Important:** Make sure your JSON is valid! Use a [JSON validator](https://jsonlint.com/) if needed.
+⚠️ **重要:** 自分の JSON が有効であることを確認してください！必要なら [JSON バリデーター](https://jsonlint.com/) を使ってください。
 ____
-## Step 4: Add Your Logo
-Upload your logo to the `static/img/contributors/` folder:
-- **Format:** PNG or SVG
-- **Size:** Optimize for web (aim for under 100KB)
-- **Dimensions:** Width around 400-600px works well
-- **Naming:** Use lowercase and hyphens (e.g., `acme-geospatial.png`)
-
-____
-## Step 5: Review & Approval
-✨ Once you submit your Pull Request:
-1. The QGIS website team will review your submission
-2. We may ask for minor adjustments
-3. Once approved and merged, your organization will appear on the [contributors page](/community/contributors/)!
+## ステップ 4: ロゴを追加する
+自分のロゴを `static/img/contributors/` フォルダにアップロードしてください:
+- **形式:** PNGまたはSVG
+- **サイズ:** webに最適化してください（目標は100KB以下）
+- **大きさ:** 幅は約 400-600px がよいです
+- **命名法:** 小文字とハイフンを使ってください（例 `acme-geospatial.png` ）
 
 ____
-Thank you for contributing to QGIS! 🎉
+## ステップ 5: 調査と承認
+✨ プルリクエストを提出すると:
+1. QGIS ウェブサイトチームはあなたの提出物を調査します
+2. 私たちは小さな修正をお願いすることがあります
+3. 承認されマージされると、あなたの組織が [貢献者のページ](/community/contributors/) に現れます！
+
+____
+あなたのQGISへの貢献に感謝します！ 🎉
 
 {{<content-end >}}

@@ -16,7 +16,7 @@ type: page
 ## Sol Katz賞 受賞者
 地理空間オープンソースソフトウェアへの優れたリーダーシップと多大な貢献が認められ、権威あるSol Katz賞を受賞したQGISコントリビューターの皆さんを称えます。
 
-{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="View recipients" >}}
+{{<button class="is-success" link="/community/contributors/sol-katz-award/" text="受賞者の閲覧" >}}
 
 {{<rich-content-end >}}
 
