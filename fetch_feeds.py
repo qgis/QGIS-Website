@@ -19,6 +19,18 @@ from scripts.resize_image import resize_image
 # (connect, read) timeouts in seconds so a hung host can't stall the job.
 REQUEST_TIMEOUT = (10, 300)
 
+
+def ensure_scheme(url):
+    """Prefix scheme-less URLs like "www.example.com" with https://.
+
+    The members feed carries some member URLs without a scheme; written as-is
+    into the generated funders pages they render as relative links and 404.
+    """
+    if url and not url.startswith(("http://", "https://")):
+        return f"https://{url}"
+    return url
+
+
 ### Funders
 def fetch_funders(url: str):
     """
@@ -35,7 +47,7 @@ def fetch_funders(url: str):
     for item in items:
         member_slug = item["slug"]
         markdown_filename = f"content/funders/{member_slug}.md"
-        link = item["member_url"]
+        link = ensure_scheme(item["member_url"])
         image_url = item["image_url"]
         title = item["title"]
         level = item["member_level"]
