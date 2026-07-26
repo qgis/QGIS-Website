@@ -366,7 +366,7 @@ Only users with `sudo` permission can change systemwide Flatpak apps and reposit
 
 {{< rich-box-end >}}
 
-There is a Flatpak for QGIS Stable and LTR available, maintained by the Flathub community.
+There is a Flatpak maintained by the Flathub community only for QGIS Stable.
 
 For general install notes, see [the Flathub website](https://flatpak.org/setup).
 
