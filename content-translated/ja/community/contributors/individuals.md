@@ -14,7 +14,7 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## 個人貢献者
-This list features individuals who contribute to QGIS, based on their activity (commits) on GitHub.
+このリストは、GitHub での活動状況（コミット数）に基づき、QGIS に貢献している個人を掲載したものです。
 
 **Special Recognition:** Look for the 👑 and ⭐ icons highlighting our **QGIS Project Founder** and **Honorary PSC Members** who have made extraordinary contributions to the project beyond commit numbers.
 
