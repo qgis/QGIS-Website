@@ -73,3 +73,22 @@ def test_multiple_members_list_still_works(tmp_path, monkeypatch):
     funders = tmp_path / "content" / "funders"
     assert (funders / "acme.md").is_file()
     assert (funders / "globex.md").is_file()
+
+
+def test_scheme_less_member_url_is_normalised(tmp_path, monkeypatch):
+    # A member URL without a scheme used to be written as-is into the funders
+    # page, where it rendered as a relative link and returned 404.
+    member = _member("bgeo")
+    member["member_url"] = "www.bgeo.es"
+    _install_fakes(tmp_path, monkeypatch, member)
+
+    fetch_feeds.fetch_funders("https://members.example/json/")
+
+    md = (tmp_path / "content" / "funders" / "bgeo.md").read_text(encoding="utf-8")
+    assert 'link: "https://www.bgeo.es"' in md
+
+
+def test_ensure_scheme_leaves_proper_urls_alone():
+    assert fetch_feeds.ensure_scheme("https://example.com/") == "https://example.com/"
+    assert fetch_feeds.ensure_scheme("http://example.com") == "http://example.com"
+    assert fetch_feeds.ensure_scheme("") == ""
