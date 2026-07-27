@@ -10,6 +10,6 @@ title: "BGEO Open GIS, SL"
 logo: "bgeo-open-gis-sl.png"
 startDate: "2026-03-01"
 endDate: "2027-02-28"
-link: "www.bgeo.es"
+link: "https://www.bgeo.es"
 country: "Spain"
 ---
