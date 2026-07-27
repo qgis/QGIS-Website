@@ -17,10 +17,8 @@ OsgeoBadge: "img/badges/osgeo-logo-white.svg"
 OsgeoBadgeLink: "https://www.osgeo.org/projects/qgis/"
 
 HasAnnouncement: true
-AnnouncementLabel: "QGIS 4.0"
-AnnouncementTitle: "QGIS 4.0 is here — our most powerful release yet!"
+AnnouncementTitle: "is here!"
 AnnouncementText: "Discover the new features, improvements, and everything that makes this release a landmark moment."
-AnnouncementLink: "project/visual-changelogs/visualchangelog40/"
 AnnouncementLinkText: "Explore the changelog"
 ---
 
