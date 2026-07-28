@@ -54,8 +54,6 @@ jobs:
           #   the harvester, after which this exclusion can be dropped
           # - /project/images/: case-study thumbnails on the project page,
           #   rendered by the theme shortcode with a known wrong relative path
-          # - /www.: scheme-less URL in the generated funders content, to be
-          #   fixed in fetch_feeds.py
           args: >-
             --offline
             --no-progress
@@ -64,5 +62,4 @@ jobs:
             --exclude '/downloads(/|$)'
             --exclude 'visual-changelogs/[^/]+/images/entries/'
             --exclude '/project/images/'
-            --exclude '/www\.'
             'public/**/*.html'
