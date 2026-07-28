@@ -116,7 +116,7 @@ Join a community of like-minded individuals in your region.
 
 {{< rich-right-start >}}  
 
-![Local user groups](../../project/img/groups.jpg "Local user groups")
+![Local user groups](../project/img/groups.jpg "Local user groups")
 
 {{< rich-right-end >}}
 

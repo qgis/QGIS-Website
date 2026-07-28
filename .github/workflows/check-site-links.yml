@@ -1,0 +1,68 @@
+# Builds the website and checks every internal link in the generated HTML, so
+# a pull request that breaks a link is caught before it reaches qgis.org.
+# Complements check-commercial-support-links.yml, which validates the external
+# URLs stored in the commercial support data on a weekly schedule; this check
+# covers the links the site itself renders.
+name: 🔗 Check site links
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main, develop ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛒 Checkout
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
+
+      - name: 🛠️ Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          # Same pin as the other Hugo workflows.
+          # See https://github.com/peaceiris/actions-hugo/issues/652#issuecomment-2543985304
+          hugo-version: '0.139.4'
+          extended: true
+
+      - name: 🧱 Hugo build (English only)
+        run: hugo --gc --config ./config.toml,./config/config.linkcheck.toml -d public
+
+      - name: 🔗 Check internal links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          fail: true
+          # Offline mode checks links against the generated files only, so the
+          # job is fast and never flaky because of external hosts. Each
+          # exclusion below is a known case that a standard CI build cannot
+          # resolve:
+          # - bare language roots (/it, /ja, ...): the language switcher points
+          #   at the translated trees, which only exist in the production
+          #   per-language build
+          # - /downloads: server-side 302 redirects (to /downloads-list or to
+          #   the download object storage), so no files exist in the Hugo
+          #   output for these paths
+          # - visual-changelogs gallery images: the changelog harvester
+          #   referenced entry images it did not commit (for example 24 of the
+          #   30 referenced in visualchangelog342 are missing); to be fixed in
+          #   the harvester, after which this exclusion can be dropped
+          # - /project/images/: case-study thumbnails on the project page,
+          #   rendered by the theme shortcode with a known wrong relative path
+          # - /www.: scheme-less URL in the generated funders content, to be
+          #   fixed in fetch_feeds.py
+          args: >-
+            --offline
+            --no-progress
+            --root-dir ${{ github.workspace }}/public
+            --exclude '/public/[a-z]{2}([-_][a-zA-Z]+)?/?$'
+            --exclude '/downloads(/|$)'
+            --exclude 'visual-changelogs/[^/]+/images/entries/'
+            --exclude '/project/images/'
+            --exclude '/www\.'
+            'public/**/*.html'

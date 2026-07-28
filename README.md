@@ -71,6 +71,7 @@
 |-------|-------------|
 | [![E2E Tests](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/playwright-e2e.yml) | End-to-end tests status (Playwright) |
 | [![Deploy Hugo site to Pages](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/github-pages.yml) | Deployment status to GitHub Pages |
+| [![Check site links](https://github.com/qgis/QGIS-Website/actions/workflows/check-site-links.yml/badge.svg)](https://github.com/qgis/QGIS-Website/actions/workflows/check-site-links.yml) | Internal link check on the built site |
 | ![Website Status](https://img.shields.io/website-up-down-green-red/https/qgis.org.svg) | Website availability status |
 | ![License](https://img.shields.io/github/license/qgis/QGIS-Website.svg) | Repository license |
 | ![](https://img.shields.io/github/issues/qgis/QGIS-Website.svg) | Open issues count |

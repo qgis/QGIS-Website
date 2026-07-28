@@ -13,14 +13,14 @@ sidebar: true
 
 
 {{< rich-list
-listLink = "../case-studies"
+listLink = "../project/case-studies"
 layoutClass = "half"
 image = "/img/map2.png"
 listTitle = "Rich-list with image"
 listSubtitle = "layoutClass=half" >}}
 
 {{< rich-list
-listLink = "../case-studies"
+listLink = "../project/case-studies"
 layoutClass = "half "
 image = "/img/map2.png"
 listTitle = "Rich-list with image"
@@ -203,7 +203,7 @@ If you encounter any issues while working with QGIS, let the QGIS developers kno
 {{< rich-right-start >}}  
 
 {{< rich-list
-listLink = "../case-studies"
+listLink = "../project/case-studies"
 image = "/img/map2.png"
 listTitle = "Ukrainian open initiative of creating tools for spatial planning in the QGIS environment"
 listSubtitle = "2023/01" >}}
