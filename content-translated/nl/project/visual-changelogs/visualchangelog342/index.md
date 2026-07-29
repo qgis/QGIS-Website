@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # Log met wijzigingen voor QGIS 3.42{#changelog342 }
-![](images/projects/b5beabaeef257557086b43ccdceffed3c78d8676.png.webp)
+![](images/projects/b5beabaeef257557086b43ccdceffed3c78d8676.png)
 
 Datum uitgave: 21-02-2025
 
@@ -39,7 +39,7 @@ Als bijvoorbeeld een object punt wordt gebruikt om een bufferpolygoon te maken, 
 
 Een nieuwe optie voor configuratie van symbolen maakt het voor een buffer op het kaartvenster mogelijk om deze aanvullende objecten op te nemen binnen door de gebruiker gedefinieerde beperkingen en balanceert tussen prestaties en eisen voor complexe gegevensvisualisatie.
 
-![](images/entries/bf954ba6632135c099f5e5d7f8db594e19dc01a2.png.webp)
+![](images/entries/bf954ba6632135c099f5e5d7f8db594e19dc01a2.png)
 
 Dit werd mogelijk gemaakt door de National Land Survey of Finland.
 
@@ -56,7 +56,7 @@ QGIS staat nu toe dat rasterpixels worden gelabeld met de waarde die wordt genom
 - Beheer van de Z-index, modus voor vermijden van overlappen
 - Optie voor weergeven van waarden die zijn hersampled over naburige pixels
 
-![](images/entries/0ac302054a6a0e64bc140f4e7ebd403f0894a634.png.webp)
+![](images/entries/0ac302054a6a0e64bc140f4e7ebd403f0894a634.png)
 
 Dit werd mogelijk gemaakt door Kanton Neuchâtel
 
@@ -64,7 +64,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Aangepaste tabafstanden voor labels
 Maakt het mogelijk een lijst met aangepaste afstanden voor tabstops op te nemen voor labels. In plaats van slechts een enkele afstand. Dit maakt verschillende drempels mogelijk om tussen afbrekingen te worden gebruikt.
 
-![](images/entries/fb24a7593018d5732f9e3b64a68912e38d431dd3.png.webp)
+![](images/entries/fb24a7593018d5732f9e3b64a68912e38d431dd3.png)
 
 Dit werd mogelijk gemaakt door Stadt Freiburg im Breisgau
 
@@ -102,7 +102,7 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Instellingen renderbereik van lagen met mazen
 De instelling voor de renderer van lagen met mazen bevat nu een optie voor het instellen van de limieten Min/Max voor de renderer Kleurenbalk, gebaseerd op het huidige bereik van het kaartvenster. Dat kan worden vergrendeld naar een specifieke instantie van het kaartvenster of worden gewijzigd, gebaseerd op het actieve kaartvenster, met hetzelfde gedrag voor renderen als rasterlagen.
 
-![](images/entries/36f92b26c173dbaddf798eb572e795a1759b2b5e.webp)
+![](images/entries/36f92b26c173dbaddf798eb572e795a1759b2b5e)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ### Mogelijkheid: Lagen met mazen bewerken met verfijning Delaunay
@@ -116,7 +116,7 @@ Lagen met mazen bieden nu meer flexibel beheer van groepen in de gegevensset. Ge
 
 Aanvullend kunnen gebruikers nu groepen van de gegevensset verwijderen uit een laag met mazen. Echter, alleen toegevoegde groepen voor de gegevensset (niet die welke zijn geassocieerd aan het originele bronbestand voor de mazen) kunnen worden verwijderd, wat het per ongeluk verwijderen van brongegevens voorkomt.
 
-![](images/entries/dc92e7714bf34361837b67c23cd3faf1ea5bb797.webp)
+![](images/entries/dc92e7714bf34361837b67c23cd3faf1ea5bb797)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ### Mogelijkheid: Acties voor selecteren van mazen
@@ -126,7 +126,7 @@ Twee nieuwe acties zijn toegevoegd voor het selecteren van punten in lagen met m
 
 Dit geeft gebruikers meer beheer over de selectiecriteria voor specifieke punten.
 
-![](images/entries/537402aa2d62c6db821d0f6eea457785adfbfc86.webp)
+![](images/entries/537402aa2d62c6db821d0f6eea457785adfbfc86)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ### Mogelijkheid: Modi voor toewijzen hoogte voor toegevoegde punten in lagen met mazen
@@ -138,21 +138,21 @@ Het gereedschap "Elementen voor mazen digitaliseren" heeft een aanvullend menu d
 
 Het paneel "Punten mazen transformeren" heeft ook een nieuwe knop gekregen die het mogelijk maakt dat gebruikers de waarde Z instellen voor geselecteerde punten uit afgeleide waarden, gebaseerd op de instellingen van het projectterrein.
 
-![](images/entries/134e4b88cb478ff8c1d72fc1eb35cf873e416ab4.png.webp)
+![](images/entries/134e4b88cb478ff8c1d72fc1eb35cf873e416ab4.png)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## 3D-objecten
 ### Mogelijkheid: Widget Debuggen voor 3D-weergaven
 Een nieuw zijpaneel voor debuggen voor 3D-kaartweergaven verplaatst alle relevante instellingen voor debuggen naar een enkele locatie.
 
-![](images/entries/b676f80f03eeac81a44dd5d95c21a1dd1d968d42.webp)
+![](images/entries/b676f80f03eeac81a44dd5d95c21a1dd1d968d42)
 
 Deze mogelijkheid werd ontwikkeld door [Matej Bagar](https://github.com/Withalion)
 ## Puntenwolken
 ### Mogelijkheid: Overzichten virtuele puntenwolken in 2D
 Het standaardgedrag van het renderen van virtuele puntenwolken is gewijzigd, zodat, indien aanwezig, een overzicht wordt gerenderd en als alternatief bereiken worden gerenderd bij uitzoomen. Configureren van lagen via het paneel Laag opmaken verschaft geavanceerd beheer over het gebruikergedefinieerde gedrag, wat gebruikers de mogelijkheid geeft om naadloos te schakelen tussen tussen renderen van slechts de bereiken, slechts het overzicht, of een combinatie van die twee.
 
-![](images/entries/76df45b4beff919f1428f39e13370c5bd48facb1.png.webp)
+![](images/entries/76df45b4beff919f1428f39e13370c5bd48facb1.png)
 
 Dit werd mogelijk gemaakt door Klimadatastyrelsen
 
@@ -175,27 +175,27 @@ Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://gith
 ### Mogelijkheid: Paginagrootte lay-out toepassen op alle pagina's
 Een nieuwe knop "Op alle pagina's toepassen" is toegevoegd aan het paneel Pagina-eigenschappen voor lay-outs met meerdere pagina's, zodat gebruikers efficiënter wijzigingen kunnen maken aan complexe eigenschappen voor lay-out.
 
-![](images/entries/17edee9a6187866ed824fe92134f088e32327056.webp)
+![](images/entries/17edee9a6187866ed824fe92134f088e32327056)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Mogelijkheid: Nieuwe kwaliteitsparameter voor exporteren van lay-out naar JPG
 Een nieuwe kwaliteitsparameter is toegevoegd aan de opties voor exporteren naar JPEG/JPG-afbeelding in afdruklay-outs om gebruikers beter beheer over hun opties voor exporteren te geven.
 
-![](images/entries/ddc1fa979771c938ec22dabcadefda2cd79aa96b.webp)
+![](images/entries/ddc1fa979771c938ec22dabcadefda2cd79aa96b)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Digitaliseren
 ### Mogelijkheid: Accentueren afbreken/uitbreiden kruisingsvlak
 De opmaak en het gedrag voor de functionaliteit Afbreken/Uitbreiden is aangepast om beter te worden uitgelijnd met de gebruikservaring van de gereedschappen Geavanceerd digitaliseren, zodat grenzen van geometrieën visueel duidelijker worden weergegeven aan gebruikers.
 
-![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390.webp)
+![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Gegevensbeheer
 ### Mogelijkheid: Snappen inschakelen in de Georeferencer
 Het paneel Geavanceerd digitaliseren en opties voor Snappen zijn toegevoegd aan de interface Georeferencer om gebruikers beter beheer te geven over referentiepunten bij het uitlijnen van gegevenssets.
 
-![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png.webp)
+![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png)
 
 Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
 ### Mogelijkheid: Verbeteringen STAC in Databronnen beheren
@@ -205,7 +205,7 @@ Doorbouwend op de mogelijkheden voor de STAC Cliënt, die werden geïntroduceerd
 - Weergeven of verbergen van voetafdrukken van de items van de zoekresultaten in het kaartvenster
 - Accentueren van de voetafdruk van het geselecteerde item
 
-![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db.webp)
+![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db)
 
 Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
 ## Formulieren en widgets
@@ -214,7 +214,7 @@ De widget Waarderelatie bevat nu een aantal nieuwe opties voor sorteren, inclusi
 - omgekeerde volgorde
 - volgorde op een specifiek veld
 
-![](images/entries/ea40b733da3f998b83590ce985986cf8438fe2d7.webp)
+![](images/entries/ea40b733da3f998b83590ce985986cf8438fe2d7)
 
 Dit werd mogelijk gemaakt door Consorzio della Bonifica Renana
 
@@ -222,7 +222,7 @@ Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/e
 ### Mogelijkheid: Configuratie voor widget kopiëren en plakken bij ontwerpen van formulieren
 Een contextmenu is toegevoegd aan het paneel `Beschikbare widgets` in het dialoogvenster Laageigenschappen voor vectors. Dat maakt het voor gebruikers mogelijk configuraties van widgets te kopiëren en te plakken tussen velden van dezelfde laag, tussen velden van verschillende lagen in het project van QGIS, of tussen velden uit lagen in verschillende instanties van QGIS.
 
-![Copy and paste context menu](images/entries/copy_paste_widget_configuration.webp)
+![Copy and paste context menu](images/entries/copy_paste_widget_configuration)
 
 Dit werd mogelijk gemaakt door Ville de Pully (Switzerland)
 
@@ -237,13 +237,13 @@ Nieuwe eigen algoritmes zijn toegevoegd aan de Toolbox van Processing voor het b
 - Werk metadata voor een laag bij om niet-lege velden van metadata uit de invoerlaag te kopiëren naar een doellaag en behoud de lege velden uit de invoer ongewijzigd in het doel
 - Stel velden voor metadata in om eenvoudige velden voor metadata in te stellen (identificatie, ouderidentificatie, titel, type, codering, taal, CRS, abstract, kosten)
 
-![](images/entries/a61da0150028588dafa6e2fb98c0f71d628bdd29.png.webp)
+![](images/entries/a61da0150028588dafa6e2fb98c0f71d628bdd29.png)
 
 Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
 ### Mogelijkheid: Op expressie gebaseerd over inhoud gaan in verspreidingsplots
 Nieuwe opties voor het Processing algoritme Verspreidingsplot vectorlaag maakt het voor gebruikers mogelijk om optioneel tekst toe te voegen met expressies van QGIS die wordt weergegeven als er met de muis overheen wordt gegaan.
 
-![](images/entries/43b93ee8f5a7632654207f5d31345ea9a66ec538.webp)
+![](images/entries/43b93ee8f5a7632654207f5d31345ea9a66ec538)
 
 Deze mogelijkheid werd ontwikkeld door [Florian Neukirchen](https://github.com/florianneukirchen)
 ### Mogelijkheid: Optie toegevoegd om attributen 'laag' en 'pad' op te nemen in gereedschap Vectorlagen samenvoegen
@@ -263,7 +263,7 @@ Voor Processing algoritmes voor repareren is de uitvoer:
 - een vaste laag van hetzelfde type als de invoerlaag, met gecorrigeerde objecten overeenkomstig de gekozen methode
 - een puntenlaag met de locaties van de fouten en rapport over de reparatie (gerepareerd of niet en een bericht over het verwerkte object)
 
-![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png.webp)
+![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png)
 
 Dit werd mogelijk gemaakt door QGIS (Grant OpenSource 2023) en Oslandia
 
@@ -277,7 +277,7 @@ Wanneer een enkele spatie wordt ingevoerd, wordt de astitel niet weergegeven (he
 
 Verspreidingsplots ondersteunen nu ook het gebruik van logaritmische schalen op hun assen.
 
-![](images/entries/5c84aa9c7e5fc0f4dcf6ba72b6f721a10380777a.webp)
+![](images/entries/5c84aa9c7e5fc0f4dcf6ba72b6f721a10380777a)
 
 Deze mogelijkheid werd ontwikkeld door [Florian Neukirchen](https://github.com/florianneukirchen)
 ### Mogelijkheid: Algoritme Min/max rastergebied
@@ -299,27 +299,27 @@ Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyallda
 ### Mogelijkheid: Nieuw algoritme om afbeeldingen van hoogteprofielen te maken
 Een nieuw algoritme voor Processing is gemaakt dat gebruikers de mogelijkheid geeft afbeeldingen van hoogteprofielen te maken. Dit kan effectief worden gebruikt binnen modellen en zal gebruikers in staat stellen om efficiënt hoogteprofielen voor meerdere bogen uit te voeren.
 
-![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9.webp)
+![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9)
 
 Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
 ### Mogelijkheid: Nieuw algoritme mazen: Oppervlak naar polygoon
 Een nieuw algoritme voor Processing is toegevoegd voor een gegevensset met lagen met mazen die een oppervlak van de mazen exporteert naar een uitvoer-MultiPolygoon.
 
-![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35.webp)
+![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35)
 
 Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ## Profiel plotten
 ### Mogelijkheid: Introduceren van een aangepaste tolerantie voor vectorlagen
 Gebruikers kunnen een aangepaste tolerantie definiëren door een eigenschap `custom tolerance` toe te voegen aan de hoogte-eigenschappen van de laag. Indien ingesteld, zal dit de globale parameter tolerantie overschrijven die is gedefinieerd in de widget Hoogteprofiel.
 
-![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f.webp)
+![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f)
 
 Deze mogelijkheid werd ontwikkeld door [Jean Felder](https://github.com/ptitjano)
 ## Gegevensproviders
 ### Mogelijkheid: SQL uitvoeren vanuit contextmenu laag
 Gebruikers kunnen nu SQL direct uitvoeren op ondersteunde lagen vanuit de inhoudsopgave van het project.
 
-![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2.webp)
+![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2)
 
 Deze mogelijkheid werd ontwikkeld door [Jürgen Fischer](https://github.com/jef-n)
 ### Mogelijkheid: Postgres rasterprovider - opslaan rasterstijl database
@@ -331,7 +331,7 @@ Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ### Mogelijkheid: PostgreSQL/PostGIS gegevensprovider - rasteroverzichten verbergen
 Voegt een optie toe aan verbinding van PostGIS om geen overzicht van tabellen uit Browser te geven. De lijst van tabellen rasteroverzicht wordt verkregen uit de view van PostGIS raster_overviews.
 
-![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd.webp)
+![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd)
 
 Dit werd mogelijk gemaakt door Ocean Winds.
 
@@ -340,9 +340,9 @@ Deze mogelijkheid werd ontwikkeld door [Jan Caha](https://github.com/JanCaha)
 ### Databronnen beheren Tabelopmerking meerregelig
 Maakt tabelopmerkingen in Databronnen beheren meerregelig (maakt van originele QLineEdit een QTextEdit). Repareert ook een klein foutje waarbij de opmerking niet goed werd bijgewerkt bij het voor de tweede keer openen van het venster "Tabeleigenschappen".
 
-![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae.webp)
+![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae)
 
-![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a.webp)
+![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a)
 
 Dit werd mogelijk gemaakt door Ocean Winds.
 
@@ -368,7 +368,7 @@ De documentatie zal worden geopend in het nieuwe gedeelte documentatie dat is to
 
 Aanvullende instellingen voor QGIS zijn ook toegevoegd, zodat ontwikkelaars gemakkelijker dit gedrag kunnen aanpassen, zodat het aansluit bij hun werkstroom.
 
-![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png.webp)
+![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png)
 
 Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Belangrijke reparaties

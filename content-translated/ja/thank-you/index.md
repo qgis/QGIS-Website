@@ -101,7 +101,7 @@ QGISソリューションの多才さと強力さを紹介する、実際のユ�
 
 {{<rich-right-start >}}
 
-![ローカルユーザーグループ](../../project/img/groups.jpg "Local user groups")
+![Local user groups](../project/img/groups.jpg "Local user groups")
 
 {{<rich-right-end >}}
 

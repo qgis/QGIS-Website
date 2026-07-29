@@ -14,7 +14,7 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## 支援コントリビューター
-This list highlights individuals and organizations whose valuable contributions to QGIS may not be reflected in commit histories—such as community support, outreach, or other behind-the-scenes efforts. If you believe your work should be recognized here, please review our [application guidelines](/community/contributors/application-guidelines/) and fill out the [QGIS Supporting Contributors Application form](https://forms.gle/wZr4EfCjqPWGaoq37). The QGIS Project Steering Committee (PSC) reviews submissions on a monthly basis.
+このリストでは、コミュニティサポート、普及活動、その他の舞台裏での取組など、コミット履歴には反映されないかもしれないものの、QGIS に多大な貢献をした個人や団体を紹介しています。ご自身の活動がここに掲載されるべきだとお考えの場合は、[応募ガイドライン](/community/contributors/application-guidelines/) をご確認の上、[QGIS 支援コントリビューター応募フォーム](https://forms.gle/wZr4EfCjqPWGaoq37) にご記入ください。QGIS プロジェクト運営委員会（PSC）が毎月、応募内容を審査します。
 
 <div style="text-align:center;">
   <a href="/community/contributors/application-guidelines/" class="button is-success is-outlined" style="margin-right: 1rem;">

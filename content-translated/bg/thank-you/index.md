@@ -101,7 +101,7 @@ If you have any questions while starting QGIS, welcome to our complete guide to 
 
 {{<rich-right-start >}}
 
-![Local user groups](../../project/img/groups.jpg "Local user groups")
+![Local user groups](../project/img/groups.jpg "Local user groups")
 
 {{<rich-right-end >}}
 

@@ -529,7 +529,7 @@ GetCapabilitiesリクエストで返されるレイヤーツリーグループ�
 This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 ## プログラマビリティ
 ### 機能: ShapelyジオメトリをQGISジオメトリに変換するメソッドの追加
- [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227) に沿って、ShapelyをオプションのI依存関係として維持しながらshapelyジオメトリライブラリとの統合を向上させるため、shapelyオブジェクトからQgsGeometryオブジェクトを生成する新しい QgsGeometry.from_shapely() メソッドが提供されました。
+In line with [QEP#227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
 
 この機能は [Till Frankenbach](https://github.com/merydian) によって開発されました
 ### 機能: QGIS GPSツールのPython APIとプラグインへの公開

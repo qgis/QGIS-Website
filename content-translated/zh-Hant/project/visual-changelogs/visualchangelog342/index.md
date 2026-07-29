@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # Changelog for QGIS 3.42{#changelog342 }
-![](images/projects/b5beabaeef257557086b43ccdceffed3c78d8676.png.webp)
+![](images/projects/b5beabaeef257557086b43ccdceffed3c78d8676.png)
 
 Release date: 2025-02-21
 
@@ -39,7 +39,7 @@ For example, if using a point feature to generate a buffer polygon such as `buff
 
 A new configuration option for symbols allows for a buffer of the canvas extent to envelope these additional features within the user-defined constraints and balance performance with complex data visualization requirements.
 
-![](images/entries/bf954ba6632135c099f5e5d7f8db594e19dc01a2.png.webp)
+![](images/entries/bf954ba6632135c099f5e5d7f8db594e19dc01a2.png)
 
 This feature was funded by the National Land Survey of Finland.
 
@@ -56,7 +56,7 @@ QGIS now allows raster pixels to be labeled with the value taken from a raster b
 - Z index control, overlap avoidance mode
 - Option for showing values resampled over neighboring pixels
 
-![](images/entries/0ac302054a6a0e64bc140f4e7ebd403f0894a634.png.webp)
+![](images/entries/0ac302054a6a0e64bc140f4e7ebd403f0894a634.png)
 
 This feature was funded by Canton de Neuchâtel
 
@@ -64,7 +64,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Custom tab distances for labels
 Allows setting a list of custom tab stop distances on labels, instead of just a single distance This allows different thresholds to be used between breaks.
 
-![](images/entries/fb24a7593018d5732f9e3b64a68912e38d431dd3.png.webp)
+![](images/entries/fb24a7593018d5732f9e3b64a68912e38d431dd3.png)
 
 This feature was funded by City of Freiburg im Breisgau
 
@@ -102,7 +102,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Mesh Render Extent Settings
 The renderer setting for Mesh now includes an option for setting the Min/Max limits of the Color Ramp renderer based on the current canvas extent. This can be locked to a specific canvas instance or changed based on the active canvas using the same rendering behaviors as Raster Layers.
 
-![](images/entries/36f92b26c173dbaddf798eb572e795a1759b2b5e.webp)
+![](images/entries/36f92b26c173dbaddf798eb572e795a1759b2b5e)
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ### Feature: Mesh editing delaunay refinement
@@ -116,7 +116,7 @@ Mesh layers now offer more flexible dataset group management. Users can add data
 
 Additionally, users can now remove dataset groups from a mesh layer, however, only added dataset groups (those not associated with the original mesh source file) can be removed, preventing accidental deletion of core data.
 
-![](images/entries/dc92e7714bf34361837b67c23cd3faf1ea5bb797.webp)
+![](images/entries/dc92e7714bf34361837b67c23cd3faf1ea5bb797)
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ### Feature: Mesh selection actions
@@ -126,7 +126,7 @@ Two new actions have been added for selecting vertices on Mesh layers, namely:
 
 This allows users more control over the selection criteria of specific vertices.
 
-![](images/entries/537402aa2d62c6db821d0f6eea457785adfbfc86.webp)
+![](images/entries/537402aa2d62c6db821d0f6eea457785adfbfc86)
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ### Feature: Elevation assignment modes for added mesh vertices
@@ -138,21 +138,21 @@ The "Digitize Mesh Element" tool has an additional menu that allows users to sel
 
 The "Transform Mesh Vertices" panel also has a new button added that allows users to set the Z value of selected vertices from inferred values based on the project terrain settings.
 
-![](images/entries/134e4b88cb478ff8c1d72fc1eb35cf873e416ab4.png.webp)
+![](images/entries/134e4b88cb478ff8c1d72fc1eb35cf873e416ab4.png)
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## 3D Features
 ### Feature: Debug widget for 3D views
 A new debug side panel for 3D Map Views moves all relevant debug settings into a single location.
 
-![](images/entries/b676f80f03eeac81a44dd5d95c21a1dd1d968d42.webp)
+![](images/entries/b676f80f03eeac81a44dd5d95c21a1dd1d968d42)
 
 This feature was developed by [Matej Bagar](https://github.com/Withalion)
 ## 點雲
 ### Feature: Virtual point cloud overviews in 2D
 The default behavior of VPC rendering has been changed so that an overview is rendered when present and alternatively extents are rendered when zooming out. Layer configuration via the styling panel provides advanced control over the user-preferred behavior, allowing users to seamlessly switch between rendering just the extents, just the overview, or a combination of the two.
 
-![](images/entries/76df45b4beff919f1428f39e13370c5bd48facb1.png.webp)
+![](images/entries/76df45b4beff919f1428f39e13370c5bd48facb1.png)
 
 This feature was funded by Klimadatastyrelsen
 
@@ -175,27 +175,27 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 ### Feature: Apply layout page size to all pages
 A new "Apply to all Pages" button has been added to the Page Properties panel for multi-page layouts so that users can more efficiently make changes to complex layout properties.
 
-![](images/entries/17edee9a6187866ed824fe92134f088e32327056.webp)
+![](images/entries/17edee9a6187866ed824fe92134f088e32327056)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### Feature: New quality parameter for layout JPG exports
 A new quality parameter has been added to the JPEG/JPG Image export options within print layouts to provide users more control of their export options.
 
-![](images/entries/ddc1fa979771c938ec22dabcadefda2cd79aa96b.webp)
+![](images/entries/ddc1fa979771c938ec22dabcadefda2cd79aa96b)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Digitising
 ### Feature: Highlight Trim/Extend plane of intersection
 The styling and behavior for the Trim/Extend functionality has been modified to more closely align with the UX of the Advanced Digitizing tools so that geometry limits are more clearly represented to users visually.
 
-![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390.webp)
+![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## 資料管理
 ### Feature: Enable snapping in Georeferencer
 The advanced digitizing panel and snapping options have been added to the georeferencer interface to offer users more control over reference points when aligning datasets.
 
-![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png.webp)
+![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 ### Feature: Data Source Manager STAC enhancements
@@ -205,7 +205,7 @@ Building on the STAC Client capabilities introduced in QGIS 3.40 as a part of [Q
 - Display or hide footprints of the search results items in the map canvas
 - Highlight the selected item's footprint
 
-![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db.webp)
+![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db)
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 ## Forms and Widgets
@@ -214,7 +214,7 @@ The value relation widget now includes a few new sorting options, including:
 - reverse order
 - order by a specific field
 
-![](images/entries/ea40b733da3f998b83590ce985986cf8438fe2d7.webp)
+![](images/entries/ea40b733da3f998b83590ce985986cf8438fe2d7)
 
 This feature was funded by Consorzio della Bonifica Renana
 
@@ -222,7 +222,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ### Feature: Copy and paste widget configuration when designing forms
 A context menu has been added to the `Available Widgets` panel in the vector layer properties dialog, allowing users to copy & paste widget configurations between fields of the same layer, between fields from different layers in the QGIS project, or between fields from layers in different QGIS instances.
 
-![Copy and paste context menu](images/entries/copy_paste_widget_configuration.webp)
+![Copy and paste context menu](images/entries/copy_paste_widget_configuration)
 
 This feature was funded by Ville de Pully (Switzerland)
 
@@ -237,13 +237,13 @@ New native algorithms have been added to the processing toolbox for better handl
 - Update layer metadata to copy non-empty metadata fields from the input layer to a target layer and keep empty fields from input unchanged in the target
 - Set metadata fields to set simple metadata fields (identifier, parent identifier, title, type, encoding, language, CRS, abstract, fees)
 
-![](images/entries/a61da0150028588dafa6e2fb98c0f71d628bdd29.png.webp)
+![](images/entries/a61da0150028588dafa6e2fb98c0f71d628bdd29.png)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 ### Feature: Expression based hover content in Scatterplots
 New options for the Vector layer scatterplot processing algorithm allow users to optionally add text shown on hover using QGIS expressions.
 
-![](images/entries/43b93ee8f5a7632654207f5d31345ea9a66ec538.webp)
+![](images/entries/43b93ee8f5a7632654207f5d31345ea9a66ec538)
 
 This feature was developed by [Florian Neukirchen](https://github.com/florianneukirchen)
 ### Feature: Add option to include 'layer' and 'path' attributes in Merge Vector Layers tool
@@ -263,7 +263,7 @@ For fix processing algorithms, the outputs are:
 - a fixed layer of the same type as the input layer with corrected features according to the the chosen method
 - a point layer with the error locations and a report about the fix (fixed or not, and a message about the processed feature)
 
-![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png.webp)
+![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png)
 
 This feature was funded by QGIS (Grant OpenSource 2023) and Oslandia
 
@@ -277,7 +277,7 @@ If a single space is entered, the axis title is not shown (restoring the current
 
 Scatterplots now also support using logarithmic scales across either axis.
 
-![](images/entries/5c84aa9c7e5fc0f4dcf6ba72b6f721a10380777a.webp)
+![](images/entries/5c84aa9c7e5fc0f4dcf6ba72b6f721a10380777a)
 
 This feature was developed by [Florian Neukirchen](https://github.com/florianneukirchen)
 ### Feature: Raster zonal min/max algorithm
@@ -299,27 +299,27 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: New algorithm to generate elevation profile images
 A new processing algorithm has been created which allows users to generate elevation profile images. This can effectively be used within models and will allows users to efficiently output elevation profiles for multiple curves.
 
-![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9.webp)
+![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 ### Feature: New Mesh: Surface to Polygon Algorithm
 A new processing algorithm has been added for Mesh datasets that exports a surface of the mesh to a MultiPolygon output.
 
-![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35.webp)
+![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35)
 
 This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ## Profile Plots
 ### Feature: Introduce custom tolerance for vector layers
 Users can define a custom tolerance by adding a `custom tolerance` property to the layer elevation properties. When set, this will override the global tolerance parameter defined in the elevation profile widget.
 
-![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f.webp)
+![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 ## 數據提供者
 ### Feature: Execute SQL from layer context menu
 Users can now execute SQL directly across supported layers from within the projects table of contents.
 
-![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2.webp)
+![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2)
 
 This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
 ### Feature: Postgres raster provider - save raster style db
@@ -331,7 +331,7 @@ This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ### Feature: PostgreSQL/PostGIS data provider - hide raster overviews
 Ads option to PostGIS Connection to not list raster overview tables from Browser. The list of raster overviews tables is obtained from PostGIS view raster_overviews.
 
-![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd.webp)
+![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd)
 
 This feature was funded by Ocean Winds.
 
@@ -340,9 +340,9 @@ This feature was developed by [Jan Caha](https://github.com/JanCaha)
 ### Db manager table comment multiline
 Makes table comments in DB Manager multiline (turning original QLineEdit to QTextEdit)). Also fixes one minor error, where the comment was not properly updated on second open of the "Table properties" window.
 
-![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae.webp)
+![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae)
 
-![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a.webp)
+![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a)
 
 This feature was funded by Ocean Winds.
 
@@ -368,7 +368,7 @@ The documentation will be opened within the new documentation section that has b
 
 Additional QGIS settings have also been added so that developers can more readily modify this behavior to suit their workflow.
 
-![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png.webp)
+![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## Notable Fixes

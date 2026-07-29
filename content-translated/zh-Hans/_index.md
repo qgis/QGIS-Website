@@ -1,9 +1,7 @@
 ---
-AnnouncementLabel: QGIS 4.0
-AnnouncementLink: project/visual-changelogs/visualchangelog40/
 AnnouncementLinkText: 探索更新日志
 AnnouncementText: 探索新功能、改进，以及让此版本成为里程碑的重要亮点。
-AnnouncementTitle: QGIS 4.0 正式发布 — 这是迄今为止功能最强大的版本！
+AnnouncementTitle: is here!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/

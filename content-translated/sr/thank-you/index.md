@@ -101,7 +101,7 @@ Pridružite se zajednici istomišljenika u svom regionu.
 
 {{<rich-right-start >}}
 
-![Local user groups](../../project/img/groups.jpg "Local user groups")
+![Local user groups](../project/img/groups.jpg "Local user groups")
 
 {{<rich-right-end >}}
 

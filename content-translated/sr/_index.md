@@ -1,10 +1,8 @@
 ---
-AnnouncementLabel: QGIS 4.0
-AnnouncementLink: project/visual-changelogs/visualchangelog40/
 AnnouncementLinkText: Pogledajte spisak izmena
 AnnouncementText: Otkrijte nove mogućnosti, poboljšanja i sve ono što ovo izdanje
   čini prekretnicom.
-AnnouncementTitle: QGIS 4.0 je stigao — naše najmoćnije izdanje do sada!
+AnnouncementTitle: is here!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/

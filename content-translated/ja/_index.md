@@ -1,9 +1,7 @@
 ---
-AnnouncementLabel: QGIS 4.0
-AnnouncementLink: project/visual-changelogs/visualchangelog40/
 AnnouncementLinkText: 更新履歴を見る
 AnnouncementText: 新機能・改善点をはじめ、今回のリリースのハイライトをご覧ください。
-AnnouncementTitle: QGIS 4.0 登場 — 史上最強のリリース！
+AnnouncementTitle: is here!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/

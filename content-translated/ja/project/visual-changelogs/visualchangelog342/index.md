@@ -10,7 +10,7 @@ type: visual-changelog
 ---
 {{<content-start >}}
 # QGIS 3.42 の変更履歴{#changelog342 }
-![](images/projects/b5beabaeef257557086b43ccdceffed3c78d8676.png.webp)
+![](images/projects/b5beabaeef257557086b43ccdceffed3c78d8676.png)
 
 リリース日: 2025-02-21
 
@@ -40,7 +40,7 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 シンボルの新しい設定オプションにより、キャンバス範囲のバッファーを設定して、ユーザー定義の制約内でこれらの追加地物を包含し、複雑なデータ可視化の要件とパフォーマンスのバランスを取ることができるようになります。
 
-![](images/entries/bf954ba6632135c099f5e5d7f8db594e19dc01a2.png.webp)
+![](images/entries/bf954ba6632135c099f5e5d7f8db594e19dc01a2.png)
 
 この機能はthe National Land Survey of Finland. の資金提供で開発されました
 
@@ -57,7 +57,7 @@ QGISがラスターバンドから取得した値でラスターピクセルに�
 - Zインデックス制御、重なり回避モード
 - 隣接ピクセルにリサンプリングされた値を表示するオプション
 
-![](images/entries/0ac302054a6a0e64bc140f4e7ebd403f0894a634.png.webp)
+![](images/entries/0ac302054a6a0e64bc140f4e7ebd403f0894a634.png)
 
 この機能は Canton de Neuchâtel の資金提供で開発されました
 
@@ -65,7 +65,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### 機能: ラベルのカスタムタブ間隔
 ラベルに単一の距離ではなく、カスタムタブストップ距離のリストを設定できます。これにより改行間で異なるしきい値を使用することが可能になります。
 
-![](images/entries/fb24a7593018d5732f9e3b64a68912e38d431dd3.png.webp)
+![](images/entries/fb24a7593018d5732f9e3b64a68912e38d431dd3.png)
 
 この機能は City of Freiburg im Breisgau によって資金提供されました
 
@@ -103,7 +103,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### 地物: メッシュレンダリング範囲設定
 メッシュのレンダラー設定に、現在のキャンバス範囲に基づいてカラーランプレンダラーの最小値/最大値の限界を設定するオプションが追加されました。これはラスターレイヤーと同様のレンダリング動作を使用して、特定のキャンバスインスタンスにロックしたり、アクティブなキャンバスに基づいて変更したりすることができます。
 
-![](images/entries/36f92b26c173dbaddf798eb572e795a1759b2b5e.webp)
+![](images/entries/36f92b26c173dbaddf798eb572e795a1759b2b5e)
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ### 機能: メッシュ編集のドロネー細分化
@@ -117,7 +117,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 また、メッシュレイヤーからデータセットグループを削除できるようになりましたが、削除できるのは追加されたデータセットグループ（元のメッシュソースファイルに関連付けられていないもの）のみです。これによりコアデータの誤削除を防止します。
 
-![](images/entries/dc92e7714bf34361837b67c23cd3faf1ea5bb797.webp)
+![](images/entries/dc92e7714bf34361837b67c23cd3faf1ea5bb797)
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ### 機能: メッシュ選択アクション
@@ -127,7 +127,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 これによりユーザーは特定の頂点の選択条件をより細かく制御できるようになります。
 
-![](images/entries/537402aa2d62c6db821d0f6eea457785adfbfc86.webp)
+![](images/entries/537402aa2d62c6db821d0f6eea457785adfbfc86)
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ### 機能: 追加されたメッシュ頂点の標高割り当てモード
@@ -139,21 +139,21 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 "メッシュ頂点の変換" パネルにも、プロジェクト地形設定に基づいた推定値から選択した頂点のZ値を設定できる新しいボタンが追加されました。
 
-![](images/entries/134e4b88cb478ff8c1d72fc1eb35cf873e416ab4.png.webp)
+![](images/entries/134e4b88cb478ff8c1d72fc1eb35cf873e416ab4.png)
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## 三次元機能
 ### 機能: 3D ビューのデバッグウィジェット
 3Dマップビューの新しいデバッグサイドパネルにより、関連するすべてのデバッグ設定が1か所に集約されました。
 
-![](images/entries/b676f80f03eeac81a44dd5d95c21a1dd1d968d42.webp)
+![](images/entries/b676f80f03eeac81a44dd5d95c21a1dd1d968d42)
 
 この機能は [Matej Bagar](https://github.com/Withalion) によって開発されました
 ## 点群
 ### 機能: 2Dでの仮想ポイントクラウドの概観表示
 VPCレンダリングのデフォルト動作が変更されました。概観が存在する場合はそれがレンダリングされ、ズームアウト時には代わりに範囲がレンダリングされます。スタイリングパネルからのレイヤー設定により、ユーザーが好む動作を詳細に制御でき、範囲のみのレンダリング、概観のみのレンダリング、または両者の組み合わせをシームレスに切り替えることができます。
 
-![](images/entries/76df45b4beff919f1428f39e13370c5bd48facb1.png.webp)
+![](images/entries/76df45b4beff919f1428f39e13370c5bd48facb1.png)
 
 この機能は Klimadatastyrelsen の資金提供で開発されました
 
@@ -176,27 +176,27 @@ This feature was developed by [Yoann Quenach de Quivillic](https://github.com/Yo
 ### 機能: レイアウトのページサイズをすべてのページに適用します
 複数ページのレイアウトのページプロパティパネルに新しい "すべてのページに適用" ボタンが追加され、ユーザーが複雑なレイアウトプロパティの変更をより効率的に行えるようになりました。
 
-![](images/entries/17edee9a6187866ed824fe92134f088e32327056.webp)
+![](images/entries/17edee9a6187866ed824fe92134f088e32327056)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ### 機能: レイアウトJPGエクスポートの新しい品質パラメーター
 印刷レイアウトのJPEG/JPG画像エクスポートオプションに新しい品質パラメーターが追加され、ユーザーがエクスポートオプションをより細かく制御できるようになりました。
 
-![](images/entries/ddc1fa979771c938ec22dabcadefda2cd79aa96b.webp)
+![](images/entries/ddc1fa979771c938ec22dabcadefda2cd79aa96b)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## デジタイズ
 ### 機能: トリム/延長の交差平面のハイライト表示
 トリム/延長機能のスタイリングと動作が高度デジタイズツールのUXとより密接に整合するよう変更されました。これによりジオメトリの境界がユーザーにより明確に視覚的に表現されるようになります。
 
-![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390.webp)
+![](images/entries/afff864bb555fcfba93b700cf4f63c7e2eb65390)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## データ管理
 ### 機能: ジオリファレンサーでのスナッピングの有効化
 データセットを位置合わせする際の基準点をより細かく制御できるよう、ジオリファレンサーインターフェースに高度デジタイズパネルとスナッピングオプションが追加されました。
 
-![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png.webp)
+![](images/entries/5d2403406b6bf2644f6ba0d60a77364dc80b4c7b.png)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 ### 機能: データソースマネージャーのSTAC機能強化
@@ -206,7 +206,7 @@ This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 - マップキャンバスへの検索結果アイテムのフットプリントの表示/非表示
 - 選択したアイテムのフットプリントのハイライト表示
 
-![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db.webp)
+![](images/entries/86d59b6e6bbcafcd505cc6301d26f55b295566db)
 
 This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 ## フォームとウィジェット
@@ -215,7 +215,7 @@ This feature was developed by [Stefanos Natsis](https://github.com/uclaros)
 - 逆順
 - 特定のフィールド値による並び替え
 
-![](images/entries/ea40b733da3f998b83590ce985986cf8438fe2d7.webp)
+![](images/entries/ea40b733da3f998b83590ce985986cf8438fe2d7)
 
 本機能は Consorzio della Bonifica Renana の資金提供で開発されました
 
@@ -223,7 +223,7 @@ This feature was developed by [Alessandro Pasotti](https://github.com/elpaso)
 ### 機能: フォームのデザイン時のウィジェット設定のコピー＆ペースト
 ベクターレイヤープロパティダイアログの  `利用可能なウィジェット`  パネルにコンテキストメニューが追加されました。これにより、同じレイヤーのフィールド間、QGISプロジェクト内の異なるレイヤーのフィールド間、または異なるQGISインスタンスのレイヤーのフィールド間でウィジェット設定をコピー＆ペーストできるようになります
 
-![Copy and paste context menu](images/entries/copy_paste_widget_configuration.webp)
+![Copy and paste context menu](images/entries/copy_paste_widget_configuration)
 
 この機能は Ville de Pully (Switzerland) の資金提供で開発されました
 
@@ -238,13 +238,13 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 - 入力レイヤーの空でないメタデータフィールドを対象レイヤーにコピーし、入力の空フィールドは対象レイヤーで変更せずに維持するレイヤーメタデータの更新
 - シンプルなメタデータフィールド（識別子、親識別子、タイトル、タイプ、エンコーディング、言語、CRS、概要、料金）を設定する　メタデータフィールドの設定
 
-![](images/entries/a61da0150028588dafa6e2fb98c0f71d628bdd29.png.webp)
+![](images/entries/a61da0150028588dafa6e2fb98c0f71d628bdd29.png)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 ### 機能: 散布図でのホバーコンテンツの式ベース設定
 ベクターレイヤー散布図プロセッシングアルゴリズムの新しいオプションにより、QGIS式を使用してホバー時に表示されるテキストをオプションで追加できるようになりました
 
-![](images/entries/43b93ee8f5a7632654207f5d31345ea9a66ec538.webp)
+![](images/entries/43b93ee8f5a7632654207f5d31345ea9a66ec538)
 
 この機能は [Florian Neukirchen](https://github.com/florianneukirchen) によって開発されました
 ### 機能: ベクターレイヤーのマージツールへの  'layer'  属性と 'path' 属性を含めるオプションの追加
@@ -264,7 +264,7 @@ This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 - 選択した方法に従って修正された地物を含む、入力レイヤーと同じタイプの修正済みレイヤー
 - エラーの位置と修正に関するレポート（修正されたかどうか、および処理された地物についてのメッセージ）を含むポイントレイヤー
 
-![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png.webp)
+![](images/entries/f1b235d2feb5b4fe396603fc0f0bbc039f9321fd.png)
 
 この機能は QGIS (Grant OpenSource 2023) と Oslandia の資金提供で開発されました
 
@@ -278,7 +278,7 @@ This feature was developed by [Jacky Volpes](https://github.com/Djedouas)
 
 散布図でいずれかの軸に対数スケールを使用できるようになりました。
 
-![](images/entries/5c84aa9c7e5fc0f4dcf6ba72b6f721a10380777a.webp)
+![](images/entries/5c84aa9c7e5fc0f4dcf6ba72b6f721a10380777a)
 
 この機能は [Florian Neukirchen](https://github.com/florianneukirchen) によって開発されました
 ### 機能: ラスターゾーン最小値/最大値アルゴリズム
@@ -300,27 +300,27 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### 機能: 標高プロファイル画像を生成する新しいアルゴリズム
 ユーザーが標高プロファイル画像を生成できる新しいプロセッシングアルゴリズムが作成されました。これはモデル内で効果的に使用でき、複数の曲線の標高プロファイルを効率的に出力することができます。
 
-![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9.webp)
+![](images/entries/e1ed046394798d715f1f08a00bc0233668b860b9)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 ### 機能: 新しいメッシュ:サーフェスからポリゴンへのアルゴリズム
 メッシュデータセットのサーフェスをマルチポリゴン出力にエクスポートする新しいプロセッシングアルゴリズムが追加されました。
 
-![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35.webp)
+![](images/entries/9c057e645861d7ac5f6e83128845095e60c9cf35)
 
 この機能は [Jan Caha](https://github.com/JanCaha) によって開発されました
 ## Profile Plots
 ### 機能: ベクターレイヤーへのカスタムトレランスの導入
  ユーザーはレイヤーの標高プロパティに  `カスタムトレランス`  プロパティを追加することでカスタムトレランスを定義できます。設定すると、標高プロファイルウィジェットで定義されたグローバルトレランスパラメーターよりも優先されます。
 
-![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f.webp)
+![](images/entries/235450d3d9a4e73de42c567c3fc7120b31b5185f)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 ## データプロバイダ
 ### 機能: レイヤーコンテキストメニューからのSQLの実行
 プロジェクトの目次からサポートされているレイヤーに対して直接SQLを実行できるようになりました。
 
-![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2.webp)
+![](images/entries/17dd1deefc986be713c4c6b007ed345dbde449d2)
 
 This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
 ### 機能: Postgresラスタープロバイダー - ラスタースタイルのDB保存
@@ -332,7 +332,7 @@ This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
 ### 機能: PostgreSQL/PostGISデータプロバイダー - ラスター概観の非表示
  ブラウザーからラスター概観テーブルを一覧表示しないオプションをPostGIS接続に追加します。ラスター概観テーブルの一覧はPostGISビューの raster_overviews から取得されます。
 
-![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd.webp)
+![](images/entries/401532722-4fab3810-07d9-453e-beb0-9efe1e397bfd)
 
 この機能開発は Ocean Winds. の資金提供を受けています
 
@@ -341,9 +341,9 @@ This feature was developed by [Jürgen Fischer](https://github.com/jef-n)
 ### DBマネージャーのテーブルコメントの複数行対応
 DBマネージャーのテーブルコメントを複数行対応にします（元のQLineEditをQTextEditに変換）。また、"テーブルのプロパティ" ウィンドウを2回目に開いた際にコメントが正しく更新されない軽微なエラーも修正しています。
 
-![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae.webp)
+![](images/entries/395182951-bffa7117-bc19-41a6-952a-adc0ed6187ae)
 
-![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a.webp)
+![](images/entries/395182959-9b082901-56a7-4465-ba46-d1c6c10b896a)
 
 この機能開発は Ocean Winds. の資金提供を受けています
 
@@ -369,7 +369,7 @@ Pythonコンソール内でF1キーを押すと、QGISは対応するAPIペー�
 
 開発者がワークフローに合わせてこの動作をより簡単に変更できるよう、追加のQGIS設定も追加されました。
 
-![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png.webp)
+![](images/entries/e5590d57719aa11a7cdefd0014fa56ea830c535c.png)
 
 This feature was developed by [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
 ## 注目すべき修正

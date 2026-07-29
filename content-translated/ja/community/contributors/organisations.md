@@ -14,11 +14,11 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## 貢献組織
-These organizations actively contribute to QGIS, as reflected by their GitHub commit activity.
+これらの組織は、GitHub のコミット活動から明らかなように、QGIS に積極的に貢献しています。
 
 <div style="text-align:center;">
 	<a href="/community/contributors/add-organisation/" class="button is-success">
-		🚀 Add your Organisation!
+		🚀 自分の団体を加える！
 	</a>
 </div>
 

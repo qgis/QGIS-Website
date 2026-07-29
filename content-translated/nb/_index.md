@@ -1,10 +1,8 @@
 ---
-AnnouncementLabel: QGIS 4.0
-AnnouncementLink: project/visual-changelogs/visualchangelog40/
 AnnouncementLinkText: Explore the changelog
 AnnouncementText: Discover the new features, improvements, and everything that makes
   this release a landmark moment.
-AnnouncementTitle: QGIS 4.0 is here — our most powerful release yet!
+AnnouncementTitle: is here!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/

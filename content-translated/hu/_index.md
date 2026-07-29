@@ -1,10 +1,8 @@
 ---
-AnnouncementLabel: QGIS 4.0
-AnnouncementLink: project/visual-changelogs/visualchangelog40/
 AnnouncementLinkText: Tekintse meg a változásnaplót
 AnnouncementText: Fedezze fel az új funkciókat, a fejlesztéseket és mindazt, ami ezt
   a kiadást mérföldkővé teszi.
-AnnouncementTitle: Megérkezett a QGIS 4.0 – eddigi legerőteljesebb verziónk!
+AnnouncementTitle: is here!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/

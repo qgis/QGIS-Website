@@ -3,7 +3,7 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Explore our global community of QGIS individual contributors
+subtitle: QGIS 個人貢献者からなる世界的なコミュニティをご覧ください
 title: 貢献者地図
 type: page
 
@@ -11,19 +11,19 @@ type: page
 {{<content-start >}}
 
 {{<contributors-map >}}
-## About This Map
-This interactive map displays the geographic distribution of QGIS contributors around the world. Each marker represents a contributor, with the size indicating their level of contribution to the project.
+## この地図について
+このインタラクティブマップは、世界中にいる QGIS 貢献者たちの地理的分布を示しています。各マーカーはひとりの貢献者を表しており、その大きさはプロジェクトへの貢献度を示しています。
 ### 地物
-- **3D Globe View**: An animated, rotating globe that gradually reveals contributors
-- **Interactive Markers**: Click on any contributor to see detailed contribution statistics
-- **Contribution Categories**: View contributions broken down by thematic areas (Core, Documentation, Websites)
+- **3D地球儀ビュー** ：アニメーションで回転する地球儀で、貢献者を段階的に示します
+- **インタラクティブ・マーカー** ：貢献者をクリックすると、詳細な貢献の統計データが表示されます
+- **貢献のカテゴリー** ：テーマにしている領域（本体、ドキュメント、ウェブサイト）に分類された貢献内容を見ます
 
 ### データソース
-Contributor data is automatically generated from GitHub repositories and includes contributions to:
+貢献者データは GitHub リポジトリから自動的に生成されており、次の貢献を含んでいます：
 - QGIS本体
 - QGIS ドキュメント
-- QGIS Websites and related projects
+- QGIS ウェブサイト及び関係するプロジェクト
 
-*Note: Only contributors with publicly available location data are shown on the map.*
+*注：地図には位置データが公開されている貢献者のみが表示されます。*
 
 {{<content-end >}}

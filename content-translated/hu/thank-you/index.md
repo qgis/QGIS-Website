@@ -101,7 +101,7 @@ Csatlakozzon a régiójában élő hasonlóan gondolkodók közösségéhez.
 
 {{<rich-right-start >}}
 
-![Local user groups](../../project/img/groups.jpg "Local user groups")
+![Local user groups](../project/img/groups.jpg "Local user groups")
 
 {{<rich-right-end >}}
 

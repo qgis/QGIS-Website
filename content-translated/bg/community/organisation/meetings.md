@@ -24,8 +24,6 @@ When: 5-7 October 2026 Where: Switzerland
 
 {{<rich-right-start >}}
 
-![](uc-2026/mountains.jpg)
-
 {{<rich-right-end >}}
 
 {{<rich-box-end >}}

@@ -529,7 +529,7 @@ Questa funzionalità è stata finanziata da Ifremer
 Questa funzionalità è stata sviluppata da [Julien Cabieces](https://github.com/troopa81)
 ## Programmabilità
 ### Feature: Add method to convert shapely geometry to QGIS Geometry
-In line with [QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
+In line with [QEP#227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
 
 Questa funzionalità è stata sviluppata da [Till Frankenbach](https://github.com/merydian)
 ### Feature: Expose QGIS GPS Tools to Python API and Plugins

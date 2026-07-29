@@ -101,7 +101,7 @@ Gå med i en gemenskap av likasinnade i din region.
 
 {{<rich-right-start >}}
 
-![Local user groups](../../project/img/groups.jpg "Local user groups")
+![Local user groups](../project/img/groups.jpg "Local user groups")
 
 {{<rich-right-end >}}
 
