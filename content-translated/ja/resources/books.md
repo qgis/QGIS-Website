@@ -17,8 +17,8 @@ type: page
 ### Learn QGIS - Fifth Edition (Early Access)
 Learn QGIS (5th Edition)” は、学生や専門家を対象に、QGISとPythonを用いた現代的なGIS分析の実践的な入門書を提供します。地球観測、モバイルデータ収集、GISにおけるAIと機械学習の統合といった内容を網羅し、同時にデータのセキュリティや倫理的な側面についても触れています。
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
-- Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
-- Date: March 2026
+- 著者: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
+- 日付: 2026年3月
 
 ### Spatial Analysis of Gender Based Work Force in India Using QGIS
 A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
@@ -27,13 +27,13 @@ A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, 
 - Date: December 2024
 
 ### QGIS for Ecologists
-An Introduction to Mapping for Ecological Surveys
+生態調査のためのマッピング入門
 - [https://pelagicpublishing.com/products/qgis-for-ecologists](https://pelagicpublishing.com/products/qgis-for-ecologists)
-- Author: Stephanie Kim Miles
-- Date: October 2024
+- 著者: Stephanie Kim Miles
+- 日付: 2024年10月
 
 ### Collecting Field Data with QGIS and Mergin Maps
-Learn to master the Mergin Maps platform to collect, share and manage your field data.
+Mergin Maps プラットフォームを駆使して、フィールドデータの収集、共有、管理を行う方法を学びましょう。
 - [https://locatepress.com/book/mergin-maps](https://locatepress.com/book/mergin-maps)
 - 著者: Kurt Menke と Alexandra Bucha Rasova
 - 日付:  2024年9月

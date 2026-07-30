@@ -40,7 +40,7 @@ Some sources: [http://app.wisemapping.com/c/maps/81444/edit](http://app.wisemapp
 
 文書とウェブサイト
 -
-{{<rich-list listLink="http://docs.qgis.org" layoutClass="half" listTitle="文書化" listSubtitle="http://docs.qgis.org" >}}
+{{<rich-list listLink="http://docs.qgis.org" layoutClass="half" listTitle="ドキュメント" listSubtitle="http://docs.qgis.org" >}}
 
 {{<rich-list listLink="http://new.qgis.org" layoutClass="half" listTitle="ウェブサイト" listSubtitle="http://new.qgis.org" >}}
 

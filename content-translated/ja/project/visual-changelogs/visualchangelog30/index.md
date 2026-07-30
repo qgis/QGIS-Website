@@ -309,7 +309,7 @@ This adds a new item_variables expression function when expressions are used ins
 This feature was funded by [North Road](https://north-road.com/)
 
 This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
-## 文書化
+## ドキュメント
 ### 機能：プロセッシングアルゴリズムの拡張
 プロセッシングアルゴリズムがレビューされ、文書化されました。[ヘルプ]ボタンをクリックすると、QGISのWebサイトが開き、アルゴリズムの説明に拡張されたドキュメントと画像が表示されます。
 

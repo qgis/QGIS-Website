@@ -529,7 +529,7 @@ Dit werd mogelijk gemaakt door Ifremer
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Programmeerbaarheid
 ### Mogelijkheid: Methode toegevoegd om geometrie van Shapely te converteren naar geometrie voor QGIS
-In line with [QEP#227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
+In lijn met [QEP#227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), wordt een nieuwe methode `QgsGeometry.from_shapely()` verschaft voor het maken van een object QgsGeometry vanuit een shapely object om integratie met de geometriebibliotheek shapely te verbeteren, terwijl het wordt behouden als een optionele afhankelijkheid.
 
 Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
 ### Mogelijkheid: QGIS GPS-gereedschap weergeven voor Python API en plug-ins
