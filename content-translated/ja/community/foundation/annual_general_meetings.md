@@ -17,22 +17,22 @@ Starting in 2016 coinciding with the establishment of a formal legal entity (Swi
 
 {{<rich-list listLink="../agm-minutes/QGIS-AGM2025-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2025" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2024-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2024" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2024-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2024 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2023-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2023" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2023-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2023 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2022-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2022" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2022-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2022 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2021-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2021" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2021-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2021 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2020-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2020" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2020-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2020 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2019-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2019" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2019-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2019 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2018-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2018" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2018-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2018 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2017-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2017" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2017-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2017 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
-{{<rich-list listLink="../agm-minutes/QGIS-AGM2016-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="QGIS AGM Minutes 2016" listSubtitle="Download PDF" >}}
+{{<rich-list listLink="../agm-minutes/QGIS-AGM2016-Minutes.pdf" linkAttr="download" layoutClass="half" listTitle="2016 年 QGIS AGM 議事録" listSubtitle="Download PDF" >}}
 
 {{<content-end >}}
