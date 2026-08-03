@@ -18,7 +18,7 @@ sidebar: true
 
 The dates below are **source code** release dates. Binary installers are built by the platform maintainers and normally follow soon after, usually within a few days.
 
-Currently available binaries: **LTR {{< param "ltrrelease" >}}** and **Latest {{< param "release" >}}**. Please see the [download page]({{< ref "download" >}}) do get them.
+Currently available binaries: **LTR {{< param "ltrrelease" >}}** and **Latest {{< param "release" >}}**. Please see the [download page]({{< ref "download" >}}).
 
 {{< rich-content-end >}}
 
