@@ -82,6 +82,7 @@ export class InstallationGuidePage {
         "Mac OS X / macOS",
         // "QGIS nightly release",
         "MacPorts",
+        "the latest release of QGIS 3.x",
         "Old releases",
         "FreeBSD",
         "QGIS stable",
