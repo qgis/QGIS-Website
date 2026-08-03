@@ -91,4 +91,76 @@ test.describe("Search", () => {
         await expect(page.locator(".search-results-empty")).toBeVisible();
         await expect(page.locator("#search-results a.search-item")).toHaveCount(0);
     });
+
+    test("the results page echoes the search term and the count", async ({ page }) => {
+        const results = await search(page, "How to cite QGIS");
+        await expect(page.locator("#search-header-query")).toHaveText('“How to cite QGIS”');
+
+        const count = await results.count();
+        await expect(page.locator("#search-header-count")).toContainText(String(count));
+
+        // Each result sits in its own card container.
+        await expect(results.first()).toHaveClass(/box/);
+    });
+});
+
+test.describe("Search prompt", () => {
+    test.beforeEach(async ({ page }) => {
+        await page.goto("/resources/support/faq/");
+    });
+
+    test("clicking the search box opens a blurred prompt", async ({ page }) => {
+        const modal = page.locator("#search-modal");
+        await expect(modal).not.toHaveClass(/is-active/);
+
+        await page.locator("#search-query").click();
+        await expect(modal).toHaveClass(/is-active/);
+        await expect(page.locator("#search-modal-query")).toBeFocused();
+
+        // The backdrop is what produces the blur behind the prompt.
+        const backdrop = modal.locator(".modal-background");
+        await expect(backdrop).toHaveCSS("backdrop-filter", "blur(8px)");
+    });
+
+    test("the caret lands in the prompt, not the trigger", async ({ page }) => {
+        await page.locator("#search-query").click();
+
+        // Typing has to reach the prompt: if the browser's default focus of the
+        // trigger wins the race, the prompt looks open but is dead to the caret.
+        await page.keyboard.type("cite");
+        await expect(page.locator("#search-modal-query")).toHaveValue("cite");
+        await expect(page.locator("#search-query")).toHaveValue("");
+    });
+
+    test("the prompt sits above the mobile keyboard", async ({ page }) => {
+        await page.setViewportSize({ width: 390, height: 844 });
+        await page.locator("#search-query").click();
+
+        // Centred, the prompt would be under the on-screen keyboard, so it is
+        // pinned near the top of the viewport on small screens.
+        const box = await page.locator(".search-modal-dialog").boundingBox();
+        expect(box).not.toBeNull();
+        expect(box!.y).toBeLessThan(150);
+    });
+
+    test("Escape closes the prompt", async ({ page }) => {
+        await page.locator("#search-query").click();
+        await expect(page.locator("#search-modal")).toHaveClass(/is-active/);
+
+        await page.keyboard.press("Escape");
+        await expect(page.locator("#search-modal")).not.toHaveClass(/is-active/);
+    });
+
+    test("submitting the prompt runs the search", async ({ page }) => {
+        await page.locator("#search-query").click();
+        await page.locator("#search-modal-query").fill("How to cite QGIS");
+        await page.keyboard.press("Enter");
+
+        await expect(page).toHaveURL(/\/search\/\?q=How\+to\+cite\+QGIS/);
+        await expect(page.locator(".search-loading")).toBeHidden();
+        await expect(page.locator("#search-results a.search-item").first()).toHaveAttribute(
+            "href",
+            new RegExp(`${CITE_ANCHOR}$`),
+        );
+    });
 });
