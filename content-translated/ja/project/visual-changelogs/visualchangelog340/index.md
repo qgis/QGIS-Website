@@ -37,9 +37,9 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 ![](images/entries/2249cc72d87c0b0542213451037df8bbefbad6ba.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 情報ツールでの参照リレーションの表示
 以前のQGISリリースでは、情報ツールで地物を探索する際に、参照先リレーション（現在の地物が指している関連地物）のみがユーザーに表示されていました。参照元リレーション（現在の地物が参照されている関連地物）の表示もサポートされ、任意のネスティングレベルでサポートされるようになりました。
 
@@ -104,7 +104,7 @@ QGISが（以前のように単純に  `AllStyleCategories` の使用を強制�
 
 この機能は [Swiss QGIS User Group](https://www.qgis.ch/de/) の資金提供で開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: CMYKのカラーランプ補間の実装
 この機能は Bordeaux Métropôle の資金提供で開発されました
 
@@ -128,9 +128,9 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 ### 機能: バルーンコールアウトスタイルの終点マーカーシンボルの許可
 バルーンコールアウトの終点の下にマーカーシンボルをレンダリングできます。バルーンコールアウトが古いアノテーションフレームワークアイテムと同じ視覚的外観を再現できるよう設計されています。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: マーカーシンボルのバッファー
 QGISにマーカーシンボルの "バッファー" が追加されました。ラベルバッファーと同様に、マーカーバッファーはマーカーシンボルの周囲のハロー効果で、さまざまな背景に対してシンボルをより読みやすくするために設計されています。
 
@@ -142,7 +142,7 @@ QGISにマーカーシンボルの "バッファー" が追加されました。
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: QgsRasterTransparencyピクセル値のトレランスのサポート
 指定されたRGB値からわずかに外れた色成分を持つピクセルも透明ピクセルとして扱えるようになります。
 
@@ -152,7 +152,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能は  [Middle Third Geological](https://www.linkedin.com/in/deryk-forster-44a415104/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au) の資金提供で開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## 注記
 ### 機能: プロジェクト読み込み時のSVGおよびテキストアノテーションのアノテーションレイヤーアイテムへの自動アップグレード
 古いアノテーションアイテムを持つプロジェクトのワークフローを改善しました。以前のQGISバージョンでは、古いアノテーションアイテム（テキスト、HTML、SVG、フォーム）が新しいフレームワークに移植されておらず、ワークフローに影響を与えていました。3.40では優先度の高いテキストとSVGのアイテムを対象とし、フレームワークが更新されて不足していた機能が追加されました。古いプロジェクトを読み込む際、古いSVGおよびテキストアノテーションは自動的に（通知なく）新しい画像および矩形テキストアノテーションアイテムタイプに変換されます。
@@ -165,7 +165,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能は [QGIS Grant Programme 2024](https://github.com/qgis/PSC/issues/60) の資金提供で開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ポイントテキスト、矩形テキスト、画像アイテムへのコールアウトサポートの追加
 テキストをマップの位置にリンクするコールアウトライン（またはバブルコールアウト）を作成できます。コールアウトを作成するには、ユーザーはテキストアイテムを選択し、中央のxノードをドラッグして目的のコールアウト終点まで引き出します。
 
@@ -173,15 +173,15 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ![](images/entries/87e3c18cbb4eb5bdb2ee4a2a690ffbb1f6ae2bde.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: アノテーションレイヤーのリンクレイヤーオプションの追加
  [QEP\#269](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/269) に沿って、アノテーションレイヤーのレンダリングページに新しい "リンクレイヤー" 設定が追加されました。これにより、ユーザーはアノテーションレイヤーにリンクする表示レイヤーをオプションで設定できます。設定すると、リンクされたレイヤーがマップで表示されている場合にのみアノテーションが描画されます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ピクチャーアノテーションアイテムタイプの追加
 SVGまたはラスター画像をアノテーションレイヤーのアイテムとしてレンダリングできます。以下のオプションがあります:
 - ピクチャーのアスペクト比のロック
@@ -192,7 +192,7 @@ SVGまたはラスター画像をアノテーションレイヤーのアイテ�
 
 ![](images/entries/14d168314617843058d4cfe38b8c15abb96114b4.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## ラベリング
@@ -208,19 +208,19 @@ This feature was funded by [North Road](https://north-road.com)
 
 この機能は City of Freiburg im Breisgau によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: HTMLラベルでのHTMLヘッダーフォーマット
 HTMLラベルでヘッダータグ（h1/h2/.../h6）および関連するフォーマットがサポートされるようになりました。
 
 この機能は City of Freiburg im Breisgau によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能:  HTMLラベルでの word-spacing CSSのサポートの追加
 HTMLラベルおよびHTMLテキストフォーマットが受け入れられるその他の場所で word-spacing CSSのサポートがQGISに追加され、"word-spacing: 12" のようなCSSルールを使用してHTMLテキストの一部の単語間隔を増やすことができるようになりました。単語間隔は常にポイント単位として扱われます。
 
 この機能は City of Freiburg im Breisgau によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ラベリングエンジンルールの実装
 [QEP\#299](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/299) に沿って、プロジェクトに高度なラベリングエンジンルールを設定するための新しいAPIフレームワークが実装され、4つの初期ルールタイプが実装されました:
 - QgsLabelingEngineRuleMinimumDistanceLabelToFeature: 別レイヤーの地物にラベルが近づきすぎることを防ぎます。
@@ -236,7 +236,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能は Rubicon Concierge Real Estate の資金提供で開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: HTMLラベルテキストでのimgタグのサポート
 HTMLラベルコンテンツでimgタグの使用が可能になります。以下のロジックが適用されます:
 - 画像パスは src="xxx" 属性で設定します。ローカル、HTTP、base64エンコードされたパスが許可されています。
@@ -249,7 +249,7 @@ HTMLラベルコンテンツでimgタグの使用が可能になります。以�
 
 この機能は City of Freiburg im Breisgau によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## ダイアグラム
 ### 機能:スタックダイアグラムの導入
 スタックダイアグラムは、単一の地物に対して複数の隣接した（水平または垂直に）スタックされた "サブダイアグラム" を構造化する方法を提供し、人口ピラミッドなどの複雑なダイアグラムオブジェクトを作成するための方法を提供します。

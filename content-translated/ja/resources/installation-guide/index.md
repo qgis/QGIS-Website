@@ -586,7 +586,7 @@ QGISをダウンロードしたら、DMGファイルを開きます。QGISアプ
 | 長期サポートリリース | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installer]({{< param "ltr_dmg" >}}) [Checksum]({{< param "ltr_dmg_sha" >}}) | [Torrent]({{< param "ltr_dmg_torrent" >}}) [Magnet]({{< param "ltr_dmg_magnet" >}}) [Metalink]({{< param "ltr_dmg_meta4" >}}) |
 
 ## MacPorts
-パッケージ管理システム [MacPorts](https://www.macports.org) では、最新リリース版 (port `qgis3`) と長期サポート版 (port `qgis3-ltr`) の両方を提供しています。これにより、Intel x64またはApple Silicon のネイティブアーキテクチャでQGISがインストールされます。GDAL、PDAL、GRASS GISなどの主要な依存ソフトウェアは通常、利用可能な最新バージョンが使用されます。
+The package management system [MacPorts](https://www.macports.org) offers both the latest release of QGIS 3.x (port `qgis3`) and the long term version (port `qgis3-ltr`). This will install QGIS with native architecture, Intel x64 or Apple silicon. Main software dependencies such as GDAL, PDAL and GRASS GIS are usually the latest version available.
 
 [MacPorts のインストールと更新](https://guide.macports.org) 、および ports の操作は ターミナル から行います。QGISはアプリバンドルとして  `/Applications/MacPorts/QGIS3.app`  にインストールされます。
 

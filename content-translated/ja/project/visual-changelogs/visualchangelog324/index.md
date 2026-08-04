@@ -553,7 +553,7 @@ This feature was developed by [Mathieu Pellerin](https://www.opengis.ch/)
 ### Feature: qgis_process \--no-python argument
 This new, optional command line parameter for the qgis_process command-line tool allows you to skip launching Processing with Python support when it is not required. This can result in a significant improvement in qgis_process startup times!
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Suppress \"bad layers\" handler on startup

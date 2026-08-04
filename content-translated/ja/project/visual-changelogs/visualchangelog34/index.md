@@ -101,15 +101,15 @@ Whenever a message bar item links to a created file (e.g. after exporting a layo
 
 [![image5](images/entries/0ccd6bdae5b0df6d65c259ef08f38032fe4ee34f.gif)](images/entries/0ccd6bdae5b0df6d65c259ef08f38032fe4ee34f.gif)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: New \"Open Directory\" option for disabled welcome page projects
 この新機能ではディレクトリの変更，喪失，名前を変更によってウェルカムページから開くことができなくなってしまったファイルに対し，もとのディレクトリに最も近いパスを右クリックから開くことが可能になりました。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: スクラッチレイヤUXの向上
 Temporary Scratch Layers in QGIS can be very handy when a \"throw-away\" layer is needed, such as when pre-processing data in multiple steps. However, they can be a trap for uniformed users who may not realise that the contents of the layer will be permanently lost when the current QGIS project is closed. Accordingly, a new indicator icon has been added which shows up next to any temporary scratch layers in the layer tree, making it immediately clear which layers are temporary only.
 
@@ -117,17 +117,17 @@ It\'s also much easier to transition these temporary layers to permanent disk-ba
 
 [![image6](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)](images/entries/135600d5ba3c15dd0b4b6386cdd5cbf5a59ce3c2.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: タスクマネージャーの向上
 The QGIS task manager widget (shown in the status bar whenever a background task is running) now shows an estimated time remaining and completion time for long-running background tasks. This Estimated Time of Arrival is calculated using a simple linear interpolation based on the task\'s elapsed time and current progress, and allows users to know whether they\'ve only got time to make an instance coffee in the office kitchen or walk round the block for a proper barista made coffee before that long processing task completes\...
 
 Additionally, QGIS uses the standard operating system progress reporting mechanisms on more platforms and occasions in QGIS 3.4. Some long running tasks (which don\'t run in the background) such as atlas exports now show their progress via the operating system mechanism, and throw up handy completion notifications.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ローカルのベクタとラスタデータセットのハイパーリンクを情報パネルに表示しました
 For local vector and raster datasets, the Information tab within the layer properties dialog now features source file path hyperlinks. Upon clicking on the hyperlink, the system\'s file navigator will open and automatically highlight the dataset.
 
@@ -141,9 +141,9 @@ QGISスタイルマネージャダイアログ(ユーザが独自のシンボル
 
 We\'ve also improved the preview of symbols within the Layer Styling dock, adding a toggle to switch between a large icon view and a detailed list view of symbols. Hovering over symbols (and colors!) now shows a large preview of the symbol. Finally, we\'ve made symbol lists more hi-dpi friendly.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能:ブラウザパネルのインターフェースと操作性を洗練させました
 このリリースではブラウザパネルユーザーインターフェースと操作性の改良に多くの作業が行われました。そこには高解像度の修正,圧縮されたベクタ/ラスタデータセットの改良とアイコンセットのリフレッシュが含まれます。
 
@@ -266,9 +266,9 @@ A button has been added to the Attribute Table toolbar for switching between doc
 
 [![image17](images/entries/2ed512377b90aed08dc73bb7b3ea17ae5c9f4708.gif)](images/entries/2ed512377b90aed08dc73bb7b3ea17ae5c9f4708.gif)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能:全てのレイヤを縦断して検索するための新しいロケータフィルタ
 A new locator filter has been added which allows users to search across *all* layers in their project, by the layer\'s display expression.
 
@@ -335,9 +335,9 @@ Some Processing models are so intrinsically linked to the logic inside a particu
 
 Models are stored inside projects by clicking the new \"Embed in Project\" button in the Modeler dialog toolbar. Models can be removed from a project from the model\'s right click menu in the toolbox.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ラスタ値のサンプル
 ラスタレイヤのある1点の値をサンプリングする新しいアルゴリズムを追加しました。
 
@@ -355,15 +355,15 @@ This feature was developed by [Nyall Dawson](https://north-road.com)
 ### 機能: K平均クラスタリングアルゴリズム
 QGIS 3.4 adds a native \"k-means clustering\" algorithm. Based on a port of PostGIS\' ST_ClusterKMeans function, this algorithm adds a new cluster ID field to a set of input features which identifies the feature\'s cluster based on a k-means clustering approach. If non-point geometries are used as input, the clustering is based off the centroid of the input geometries.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: DBSCANクラスタリングアルゴリズム
 このネイティブアルゴリズムは2Dのポイント地物に対するクラスターアプローチを基盤としてDBSCAN密度の最適化を実装したものです。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能:アルゴリズムの改良
 既存のプロセッシングアルゴリズムに対する以下のような改良があります:
 - *逆方向ラインの検出* アルゴリズムではマルチラインジオメトリを入力に利用できるようになりました
@@ -372,59 +372,59 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 - *フィールド値による結合* と *場所による結合* アルゴリズムではオプションでマッチしないレコードの出力が可能になりました
 - *フィールド値による結合* ではマッチ/アンマッチした地物の数をレポートします
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: Mを利用した頂点フィルタとZを利用した頂点フィルタアルゴリズム
 MまたはZの値を使ってライン/ポリゴンの頂点をフィルタする２つの新しいアルゴリズムができました。M/Zの値の最小と最大を入力できます、もし頂点の値がその範囲の外の場合は出力ジオメトリからその頂点は除去されます。フィルタの最小値と最大値はデータで定義することも可能です。ですからフィルタは地物毎に変えることができます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: \"Array of Translated Features\" algorithm
 この新しいアルゴリズムはあるレイヤ中の地物のコピーを作成します。コピーは地物の複数の座標変換(オフセット）単位に作成されます。それぞれのコピーはx/y/z/m軸のプリセットの合計だけ移動します。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: \"Array of offset (parallel) lines\" algorithm
 このアルゴリズムは、入力レイヤの線からバッファ距離だけ離れたオフセット線を複数作成します。各線は、指定されたステップ距離で順次離れたものです。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能:度/不明な距離への単位選択機能
 アルゴリズムが距離パラメータをメートル/フィート/etc(例.ジオグラフィックでない距離)で持っている場合コンボボックスが追加され単位の選択ができます。
 
 (QGIS doesn\'t (and should **never**) expose this for distances in degrees \-- it\'s up to users in this situation to choose a suitable local projection and reproject their data to match.)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
 This feature was developed by [Nyall Dawson](https://north-road.com)
 ### Feature: \"Drape features to z/m\" algorithms
 ジオメトリの頂点に z または m の値を設定する新しい２つのアルゴリズムです。その値はラスタバンドから取得されます。オプションで値は（データ定義可能な)スケール値を使ってスケールできます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: \"Raster pixels to points\" algorithm
 A new \"pixels to points\" algorithm was added in QGIS 3.4, which creates a point feature at the center of every pixel. nodata pixels are skipped.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 部分ライン切り出しアルゴリズム
 この新しくて非常に要望が多かったアルゴリズムはライン（またはカーブ）の始点と距離(ラインの先頭から計測された）指定でラインの一部分を返します。ZとMの値は既存の値から線形補間されます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: \"Interpolate point on line\" algorithm
 この新しいアルゴリズムは線（またはポリゴンの外周線)ジオメトリにそって指定距離ごとにポイントジオメトリを作成します。曲線ジオメトリの入力もサポートされています。ZまたはMの値は既存の値を基にして線形補間されます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能:k-neighbour 凹包
 This feature was funded by <https://qgis.org>
 
@@ -452,7 +452,7 @@ A new option is present for all parameters of using a \"precalculated expression
 
 This feature was funded by [QGIS](https://qgis.org)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: \"Categorize a layer using a style XML file\" algorithm
 This new algorithm sets a vector layer\'s renderer to a categorized renderer using matching symbols from a style database.
 
@@ -464,9 +464,9 @@ A specified expression (or field name) is used to create categories for the rend
 
 [![image27](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.webp)](images/entries/dbf5d7f496eadfefae1bc300f763e991206fb694.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能:スナップジオメトリアルゴリズムの新モード
 The new mode \"Snap to anchor nodes (single layer only)\" makes sure that any two vertices of the vector layer are at least at distance given by the threshold value.
 
@@ -531,13 +531,13 @@ This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch
 ### 機能: ESRIトークン認証対応
 Support has been added to QGIS\' Authentication system for ESRI\'s temporary token based authentication. This allows for connection to ArcGIS Feature and Map Servers via an allocated temporary token.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: SQLサーバ - 不正なジオメトリの処理
 Recent versions of QGIS have switched to a safer approach to reading SQL Server layers, which automatically checks for geometry validity and repairs geometries when needed. This workaround is required to avoid issues with the design of SQL Server\'s geometry handling, where encountering any rows with invalid geometries can silently abort a request without returning all the features from a layer. Unfortunately, the workaround comes at a significant performance cost.
 
 In QGIS 3.4 a new setting was added to allow users to manually turn off QGIS\' SQL Server invalid geometry handling. Turning on the \"Skip invalid geometry handling\" setting under a SQL Server connection\'s properties causes QGIS to skip all the expensive geometry validation processing, but firmly places the responsibility for ensuring that all features on the database have valid geometries back upon the user/database administrator. **This is a \"use at your own risk\" setting. Improperly enabling this option can lead to missing features and data loss.**
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## QGISサーバー
 ### 機能: サーバキャッシュがプラグインで管理できるようになりました
 デフォルトでは、QGISサーバはWMS GetCapabilities文書をメモリにキャッシュするだけでした。WMTS実装では、タイルをキャッシュする方法を持つことが重要です。しかし、キャッシュマネージャはタイルのキャッシュ以外のためにも開発しています。
@@ -713,15 +713,15 @@ A very fast static spatial index for 2D points based on a flat KD-tree, using <h
 
 Compared to QgsSpatialIndex, this index: - supports single point features only (no multipoints) - is static (features cannot be added or removed from the index after construction) - is much faster! - supports true \"distance based\" searches, i.e. return all points within a radius from a search point
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ラスタの与えられたポイントでの効率的なサンプリングに使われるQgsRasterDataProvider::sampleメソッド
 This is an alternative to the `QgsRasterDataProvider::identify` method, which is less efficient but more powerful
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 曲線サブストリングを返す新しいジオメトリAPI
 ラインストリング/曲線ジオメトリから部分線を検索するのが容易となる新しいPyGIS APIが追加されました。
 
@@ -729,9 +729,9 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 If z or m values are present, the output z and m will be interpolated using the existing vertices\' z or m values. The method also handles curved geometries without loss or segmentation.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: sipモジュールAPIの変更
 Due to upstream changes within the PyQt/sip library, the recommended way to import this module has changed in QGIS 3.4. For maximum portability, instead of directly calling: `import sip` plugins should instead use: `from qgis.PyQt import sip` Using this newer style import will ensure that the code works correct across all platforms and remains functional in future QGIS versions.
 ### 機能: ベクタデータプロバイダ

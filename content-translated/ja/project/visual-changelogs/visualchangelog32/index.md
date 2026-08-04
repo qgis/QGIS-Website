@@ -39,7 +39,7 @@ This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pbl
 
 ![image30](images/entries/731d930d07ca6d35f6bff727ef94a6322fcf21d0.gif.400x300_q85_crop.webp)
 
-This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
+この機能は [Salvatore Larosa](<https://github.com/slarosa>) によって開発されました
 ### 機能：Ctrl-Shift-Tabによるフルスクリーンマップ
 Ctrl-Tabの他に、Ctrl-Shift-Tabを使用して、マップを表示し、マップのみを表示するようになりました。ツールバーやボタンは表示されません（ウィンドウタイトルがなくても、F11と組み合わせて）。 Beamerまたは大画面でのフルスクリーンマップ投影に最適です。ズームとパンもまだできます！ （Mathieu Pellerinの作品に基づく）
 
@@ -52,9 +52,9 @@ The Simplify Features map tool has been renamed to \"Simplify/Smooth Features\",
 
 ![image2](images/entries/eca7851f8710661b929a99722afd28707f5926b3.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：追加オプション付き識別ツール
 新しい改善で、ユーザーは、複数の地物を確認するために、[選択]に類似したツールを使用できるようになりました。
 
@@ -82,9 +82,9 @@ This allows different techniques to be used for simplification in the interactiv
 
 ![image5](images/entries/085ad891fdc2b416a89603a6962544d165f2cef1.PNG.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：フォーム内の関連する地物へのズームを追加
 関連するテーブルで1つ以上のレコードが選択されると、新しいボタンが地物属性のサブフォームに表示されます。ジオメトリがある場合、ボタンは地図をこれらの地物にズームします。
 
@@ -96,9 +96,9 @@ QGIS 3.2では、楕円体およびデカルトの両方で面積、長さ、お
 
 ![image7](images/entries/28e185f928be7d08fd2971828a1daed53c224394.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## 計算式
 ### 機能：新しい式の関数
 - color_grayscale_average()
@@ -165,9 +165,9 @@ E.g. entering \"= 10/3\" shows a locator entry \"Copy \'3.3333333\' to clipboard
 
 ![image12](images/entries/873ea8846c5f2f2cea56e8d4602bb41ac0567d7d.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：パネルを切り替えるためのショートカット
 Ctrl + {いいえ}ショートカット
 
@@ -193,9 +193,9 @@ Two new actions have been added to the \"Project\" menu
 ### 機能：タイトルバーの未保存の変更インジケータ
 QGIS 3.2 now follows the standard UI approach of indicating that the current project has unsaved changes by adding a \"\*\" prefix to the project name in the application title bar. This makes it easy to see if you have unsaved changes at a single glance!
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：設定可能な地図のヒントの遅延
 この機能はjduggeによって開発されました
 ### 機能：レイヤーまたはグループをレイヤーパネルの最上部に移動する
@@ -217,16 +217,16 @@ The new filter presents itself with a prefix of \"s\" and with tr( \"Settings\" 
 ### 機能：埋め込みレイヤーとグループのインジケーター
 Embedded project layers and groups are now flagged by a handy \"embedded\" indicator, making it immediately clear to users which layers and groups have been embedded inside a project.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## シンボロジ
 ### 機能：新しいレイヤーのためのより良い色
 The \"random\" colors assigned to new map layers are no longer \"random\" but instead randomly selected from a preset palette of \"visually pleasing\" colors. Say goodbye to ugly baby puke green layers!
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## レンダリング
 ### 機能：地図の著作権表示の改良
 - 著作権テキストの表現のサポート。
@@ -293,7 +293,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 ### 機能：QGISプロジェクトから別のグループ/レイヤーにコピー＆ペーストします。
 プロジェクトやプロファイル間でグループやレイヤーをコピー＆ペーストできます。
 
-This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
+この機能は [Salvatore Larosa](<https://github.com/slarosa>) によって開発されました
 ## マップコンポーザー
 ### 機能：属性テーブル項目のデータ定義テーブルソース
 When an attribute table is set to a \"Layer features\" source, this new feature allows the underlying vector layer from which to source features to be data defined.
@@ -302,21 +302,21 @@ When an attribute table is set to a \"Layer features\" source, this new feature 
 
 This feature was funded by [Kartoza/InaSAFE](http://kartoza.com/en/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：レイアウトエクスポートに埋め込まれたプロジェクトメタデータ
 SVG、PDF、または画像に印刷レイアウトを保存すると、作成されたファイルにプロジェクトメタデータが埋め込まれます。異なるメタデータ要素のサポートは、個々のエクスポート形式によって異なります。
 
 この機能は、ERIKUSプロジェクト内のArpa Piemonte（地質災害学科）によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：スケールバーテキストの書式の改善
 QGIS 3.2では、バッファ、シャドウ、背景のようなスケールバーのテキスト内で、あらゆる種類のテキスト書式設定オプションを使用できます。
 
 読めないスケールバーのテキストは過去のものです！
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## プロセシング
 ### Feature: Improved \'Join by attribute table\' algorithm
 The \'Join by attribute table\' algorithm has been upgraded to support one-to-many joins (i.e. create separate features for each matching feature) as well as an option to discard records which could not be joined. Additionally, an optional prefix for joined fields can now be specified.
@@ -357,7 +357,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 This feature was funded by [Nyall Dawson (North Road)](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：より多くのアルゴリズムに対する動的パラメータ値
 QGIS 3.2 extends the work begun in 3.0 to allow \"dynamic\" parameters for selected Processing algorithms. Dynamic parameters allow users to use expressions or field values to specify the value of a parameter while the algorithm executes, so e.g. the buffer size can be dynamically calculated for each individual feature buffered.
 
@@ -371,9 +371,9 @@ QGIS 3.2 extends the work begun in 3.0 to allow \"dynamic\" parameters for selec
 - トランセクト
 - 翻訳
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：マルチリングバッファ（一定距離）アルゴリズム
 This new algorithm computes multi-ring (\'donuts\') buffer for all the features in an input layer, using a fixed or dynamic distance and rings number.
 
@@ -385,9 +385,9 @@ QGIS 3.2では、カーブしたジオメトリをセグメント化するため
 
 \"Segmentize by maximum angle\": The segmentization is performed by specifying the maximum allowed radius angle between vertices on the straightened geometry (e.g the angle of the arc created from the original arc center to consective output vertices on the linearized geometry).
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：すべてのポリゴンパーツにポイントを作成するオプション
 The \"Centroid\" and \"Point on surface\" algorithms have a new option to create points for every individual part of input geometries.
 
@@ -395,15 +395,15 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### 機能：地物回転アルゴリズム
 This new algorithm allows rotation of features by a set angle. The rotation can occur around a preset point or each individual feature\'s centroid.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Line sinuosity in \"Add Geometry Attributes\"
 The \"Add Geometry Attributes\" algorithm now calculates line sinuosity and straight distance for line layers.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：ジオタグ付きの写真をインポートする
 In QGIS 3.2 a new \"Import geotagged photos\" algorithm has been added to Processing. It allows selection of a folder which it will scan for jpg files which have been geotagged and creates a PointZ layer with the result, with attributes for photo path, altitude, direction and timestamp.
 
@@ -413,35 +413,35 @@ In QGIS 3.2 a new \"Import geotagged photos\" algorithm has been added to Proces
 
 ![image24](images/entries/399ace1f3d437044b9fb478afb820372195b79d8.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：x / y座標値入れ替えアルゴリズム
 このアルゴリズムは、入力ジオメトリのX座標値とY座標値を入れ替えます。誤って緯度と経度の値を逆にしたジオメトリを修復するために使用できます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Sort order option for \"Add Incremental Field\"
 この変更により、オプションで、増加フィールドの追加アルゴリズムで値を割り当てるときに使用するソート順を設定できます。以前は、元の地物順序を使用して常に値が追加されていました。この変更により、ユーザーは地物に値が割り当てられる順序を制御できます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：距離パラメータユニットのインジケータ
 When an algorithm uses a \"distance\" type parameter, the units will now be shown next to the parameter. This avoids the confusion when running algorithms which use distances where the unit depends on a layer or CRS parameter - e.g. the distance parameter in the buffer algorithm gives the distance in layer units\... so now in QGIS 3.2 we show those units directly within the dialog. Hopefully this leads to less user confusion and accidental \"1000 degree buffers\"!
 
 さらに、単位が度の場合、パラメータの隣に小さな警告アイコンが表示されます。このアイコンのヒントは、ユーザーがデータを適切な投影ローカル座標系に再投影するように指示します。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：アルゴリズムのログを保存/クリア/コピーすることができます
 アルゴリズム実行ダイアログでは、現在のログを（テキストまたはHTMLファイルに）保存し、ログの内容をクリップボードにコピーし、ログをクリアするための新しいボタンが追加されました。
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：ウェッジバッファアルゴリズム
 この新しいアルゴリズムは、入力点からくさび形のバッファを作成します。
 
@@ -451,15 +451,15 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 このアルゴリズムのネイティブ出力はCurvePolygonジオメトリですが、これらは出力フォーマットに応じて自動的にポリゴンにセグメント化できます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：可変幅バッファ
 新しい処理アルゴリズムが追加され、テーパーバッファ（指定された開始および終了直径を持つ）およびラインストリングm値からの可変幅バッファを含む可変幅バッファが作成されました。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：ラスターアルゴリズムを再分類する
 2つの新しいQGISラスター再分類アルゴリズムがプロセッシングに追加されました。これらは使いやすく、しかも高速かつ安定していて、QGISでサポートされている任意のラスターレイヤータイプに対応しています！
 - レイヤーごとに再分類する：ベクターテーブルから最小/最大/値フィールドで指定された範囲を使用してラスターを再分類する
@@ -467,7 +467,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：単一レイヤーのユニオンアルゴリズム
 The union algorithm can be now run with just a single input layer in order to resolve any overlaps among the layer\'s features. For example, if an area is covered by three features, that area will be cut out from those features and three new features will be added, copying attributes of the original features.
 
@@ -501,7 +501,7 @@ This feature was developed by [Martin Dobias, Peter Petrik (Lutra Consulting)](h
 
 ![image27](images/entries/678a1f4686de353f4a04fc83877e27c18d2fca7d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
+この機能は [Salvatore Larosa](<https://github.com/slarosa>) によって開発されました
 ### 機能：プロジェクトのホームパスを手動で設定できます
 This new feature in QGIS 3.2 allows the project home path (which is used by the browser to create the \'Project Home\' item) to be set by users for a project, instead of always matching the location where the project is saved.
 
@@ -515,7 +515,7 @@ The path can be set through the Project Properties dialog, or by right-clicking 
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## データプロバイダ
 ### 機能：メッシュレイヤーのサポート
 ラスターおよびベクターレイヤーに加えて、構造化または非構造化メッシュ（グリッド）上のデータの表示をサポートするメッシュレイヤーを導入するための初期の作業が行われました。これはまだ進行中の作業であり、QGIS 3.4で完全に準備が整う予定です。これまでの作業では、さまざまな形式のメッシュベースのデータを処理するための新しいライブラリMDALが作成され、新しいAPIが導入されましたが、ユーザーインターフェイスはまだ実装されていません。
@@ -536,13 +536,13 @@ Feature ServerのレイヤーがQGIS 3.2にロードされると、レイヤー�
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：Oracleのクエリの高速化
 地物の大文字と小文字を区別しない値の一致など、Oracleのレイヤーでは、特定の操作が大幅に高速化されます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：プリセットされたスキーマへのOracleデータベース接続のテーブル・リストを制限する
 この変更により、Oracleデータベース接続の接続プロパティにスキーマを設定できます。設定されている場合、そのスキーマ内のテーブルのみがスキャンされ、接続用にリストされます。
 
@@ -550,20 +550,20 @@ Previously the option existed to restrict the scan to tables which belong to the
 
 This feature was funded by [Open Spatial](http://www.openspatial.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能：カーブしたOracleジオメトリの読み取り専用サポート
 以前は、これらのジオメトリは黙って破棄されました。
 
 This feature was funded by [Open Spatial](http://www.openspatial.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## プラグイン
 ### 機能：DBマネージャにクエリ履歴を追加する
 3.2では、SQLクエリを格納することができます。クエリ履歴は、DBマネージャプラグインの[SQLウィンドウ]タブで使用できます。
 
 ![image33](images/entries/9c6074aaf1e989c460833535788d0b396a677e34.png.400x300_q85_crop.webp)
 
-This feature was developed by [Salvatore Larosa](https://github.com/slarosa)
+この機能は [Salvatore Larosa](<https://github.com/slarosa>) によって開発されました
 ### 機能：バックグラウンドでのDBマネージャSQL実行
 この機能はPaul Blottiereによって開発されました
 ## 三次元機能
