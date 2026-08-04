@@ -1,0 +1,166 @@
+import { test, expect, Page } from "@playwright/test";
+
+/**
+ * Search regression tests.
+ *
+ * The search index is built per page section (see the theme's
+ * layouts/_default/index.json) so that results deep-link to the heading that
+ * matched. These tests pin the behaviour that used to be broken:
+ *   - a multi-word query finding an answer buried far down a long page
+ *   - results linking to the section anchor rather than the page top
+ *   - the index not containing duplicate entries
+ */
+
+const CITE_ANCHOR = "/resources/support/faq/#how-to-cite-qgis";
+
+type IndexEntry = {
+    title: string;
+    page: string;
+    contents: string;
+    permalink: string;
+};
+
+async function fetchIndex(page: Page): Promise<IndexEntry[]> {
+    const response = await page.request.get("/index.json");
+    expect(response.ok()).toBeTruthy();
+    return (await response.json()) as IndexEntry[];
+}
+
+async function search(page: Page, query: string) {
+    await page.goto(`/search/?q=${encodeURIComponent(query)}`);
+    await expect(page.locator(".search-loading")).toBeHidden();
+    return page.locator("#search-results a.search-item");
+}
+
+test.describe("Search", () => {
+    test("index is built per section, without duplicates", async ({ page }) => {
+        const entries = await fetchIndex(page);
+        expect(entries.length).toBeGreaterThan(0);
+
+        // A page's .Scratch survives `hugo server` rebuilds, so an accumulating
+        // index would silently emit each entry several times.
+        const permalinks = entries.map((entry) => entry.permalink);
+        expect(new Set(permalinks).size).toBe(permalinks.length);
+
+        // Every entry carries the page it came from, used as result context.
+        expect(entries.filter((entry) => !entry.page)).toHaveLength(0);
+
+        // Sections are addressable by anchor.
+        const anchored = entries.filter((entry) => entry.permalink.includes("#"));
+        expect(anchored.length).toBeGreaterThan(0);
+
+        const cite = entries.find((entry) => entry.permalink.endsWith(CITE_ANCHOR));
+        expect(cite).toBeDefined();
+        expect(cite!.title).toContain("cite QGIS");
+        expect(cite!.page).toBe("FAQ");
+        // The section holds only its own text, not the whole FAQ page.
+        expect(cite!.contents).toContain("cite QGIS in your work");
+        expect(cite!.contents).not.toContain("How to ask a QGIS question");
+    });
+
+    test('"How to cite QGIS" links straight to the FAQ section', async ({ page }) => {
+        const results = await search(page, "How to cite QGIS");
+        await expect(results.first()).toHaveAttribute("href", new RegExp(`${CITE_ANCHOR}$`));
+    });
+
+    test("a re-worded query still finds the section", async ({ page }) => {
+        // Fuse matches the query as one contiguous phrase, so this phrasing only
+        // works via the every-token fallback in search.js.
+        const results = await search(page, "how do I cite qgis");
+        await expect(results.first()).toHaveAttribute("href", new RegExp(`${CITE_ANCHOR}$`));
+    });
+
+    test("headings shared by many pages are distinguishable", async ({ page }) => {
+        // "Programmability" is a heading on every visual changelog, so results
+        // must name the page each section belongs to.
+        const results = await search(page, "programmability");
+        const count = await results.count();
+        expect(count).toBeGreaterThan(1);
+
+        const contexts = await results.locator(".list-item-context").allInnerTexts();
+        expect(new Set(contexts).size).toBeGreaterThan(1);
+    });
+
+    test("matched terms are highlighted", async ({ page }) => {
+        const results = await search(page, "How to cite QGIS");
+        await expect(results.first().locator("mark").first()).toBeVisible();
+    });
+
+    test("a query with no match reports no results", async ({ page }) => {
+        await page.goto("/search/?q=xyzzynotathing");
+        await expect(page.locator(".search-results-empty")).toBeVisible();
+        await expect(page.locator("#search-results a.search-item")).toHaveCount(0);
+    });
+
+    test("the results page echoes the search term and the count", async ({ page }) => {
+        const results = await search(page, "How to cite QGIS");
+        await expect(page.locator("#search-header-query")).toHaveText('“How to cite QGIS”');
+
+        const count = await results.count();
+        await expect(page.locator("#search-header-count")).toContainText(String(count));
+
+        // Each result sits in its own card container.
+        await expect(results.first()).toHaveClass(/box/);
+    });
+});
+
+test.describe("Search prompt", () => {
+    test.beforeEach(async ({ page }) => {
+        await page.goto("/resources/support/faq/");
+    });
+
+    test("clicking the search box opens a blurred prompt", async ({ page }) => {
+        const modal = page.locator("#search-modal");
+        await expect(modal).not.toHaveClass(/is-active/);
+
+        await page.locator("#search-query").click();
+        await expect(modal).toHaveClass(/is-active/);
+        await expect(page.locator("#search-modal-query")).toBeFocused();
+
+        // The backdrop is what produces the blur behind the prompt.
+        const backdrop = modal.locator(".modal-background");
+        await expect(backdrop).toHaveCSS("backdrop-filter", "blur(8px)");
+    });
+
+    test("the caret lands in the prompt, not the trigger", async ({ page }) => {
+        await page.locator("#search-query").click();
+
+        // Typing has to reach the prompt: if the browser's default focus of the
+        // trigger wins the race, the prompt looks open but is dead to the caret.
+        await page.keyboard.type("cite");
+        await expect(page.locator("#search-modal-query")).toHaveValue("cite");
+        await expect(page.locator("#search-query")).toHaveValue("");
+    });
+
+    test("the prompt sits above the mobile keyboard", async ({ page }) => {
+        await page.setViewportSize({ width: 390, height: 844 });
+        await page.locator("#search-query").click();
+
+        // Centred, the prompt would be under the on-screen keyboard, so it is
+        // pinned near the top of the viewport on small screens.
+        const box = await page.locator(".search-modal-dialog").boundingBox();
+        expect(box).not.toBeNull();
+        expect(box!.y).toBeLessThan(150);
+    });
+
+    test("Escape closes the prompt", async ({ page }) => {
+        await page.locator("#search-query").click();
+        await expect(page.locator("#search-modal")).toHaveClass(/is-active/);
+
+        await page.keyboard.press("Escape");
+        await expect(page.locator("#search-modal")).not.toHaveClass(/is-active/);
+    });
+
+    test("submitting the prompt runs the search", async ({ page }) => {
+        await page.locator("#search-query").click();
+        await page.locator("#search-modal-query").fill("How to cite QGIS");
+        await page.keyboard.press("Enter");
+
+        await expect(page).toHaveURL(/\/search\/\?q=How\+to\+cite\+QGIS/);
+        await expect(page.locator(".search-loading")).toBeHidden();
+        await expect(page.locator("#search-results a.search-item").first()).toHaveAttribute(
+            "href",
+            new RegExp(`${CITE_ANCHOR}$`),
+        );
+    });
+});
