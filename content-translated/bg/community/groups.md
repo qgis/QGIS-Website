@@ -94,6 +94,8 @@ type: page
 ### <div></div>
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="Потребителска група на QGIS Индия" listSubtitle="Контакт: Уджавал Ганди" >}}
 
+{{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}
+
 {{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
 ## Цели на потребителската група
 * Организиране на потребителски срещи

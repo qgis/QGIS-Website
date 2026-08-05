@@ -578,7 +578,7 @@ Na het downloaden van QGIS, open het bestand DMG. Sleep de toepassing QGIS naar 
 | Lange Termijn Release | {{< param "ltrrelease" >}} {{< param "ltrcodename" >}} {{< param "ltrnote" >}} | [Installatieprogramma]({{< param "ltr_dmg" >}}) [Controlesom]({{< param "ltr_dmg_sha" >}}) | [Torrent]({{< param "ltr_dmg_torrent" >}}) [Magnet]({{< param "ltr_dmg_magnet" >}}) [Metalink]({{< param "ltr_dmg_meta4" >}}) |
 
 ## MacPorts
-The package management system [MacPorts](https://www.macports.org) offers both the latest release of QGIS 3.x (port `qgis3`) and the long term version (port `qgis3-ltr`). This will install QGIS with native architecture, Intel x64 or Apple silicon. Main software dependencies such as GDAL, PDAL and GRASS GIS are usually the latest version available.
+Het beheerssysteem voor pakketten van [MacPorts](https://www.macports.org) biedt zowel de laatste versie van de uitgave QGIS 3.x  (port `qgis3` als de lange termijn-versie (port `qgis3-ltr`). Dit zal QGIS installeren met zijn eigen architectuur, Intel x64 of Apple Silicon. Van belangrijke afhankelijkheden voor de software, zoals GDAL, PDAL en GRASS GIS zijn gewoonlijk de laatste versies beschikbaar.
 
 [Installeren van MacPorts en het bijwerken ervan](https://guide.macports.org) en de _ports_ worden gemaakt met de _Terminal_. QGIS wordt echter geïnstalleerd als een app-bundel in `/Applications/MacPorts/QGIS3.app`.
 
