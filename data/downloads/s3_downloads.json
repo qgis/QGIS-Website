@@ -1,20 +1,20 @@
 {
   "bucket_name": "qgis-download",
   "prefix": "",
-  "generated_at": "2026-08-05T03:01:20.625010+00:00",
+  "generated_at": "2026-08-05T05:56:40.778795+00:00",
   "statistics": {
-    "total_files": 165530,
-    "total_size": 5162365786657,
+    "total_files": 165569,
+    "total_size": 5168476383686,
     "total_size_formatted": "4.70 TB",
     "by_category": {
       "installer": {
-        "count": 153515,
-        "size": 4407830282186,
+        "count": 153551,
+        "size": 4413639689431,
         "size_formatted": "4.01 TB"
       },
       "other": {
-        "count": 7346,
-        "size": 30799001540,
+        "count": 7348,
+        "size": 30799006929,
         "size_formatted": "28.68 GB"
       },
       "image": {
@@ -28,24 +28,24 @@
         "size_formatted": "99.34 KB"
       },
       "archive": {
-        "count": 4545,
-        "size": 723710717446,
-        "size_formatted": "674.01 GB"
+        "count": 4546,
+        "size": 724011901841,
+        "size_formatted": "674.29 GB"
       }
     },
     "by_extension": {
-      ".deb": 152751,
-      ".gz": 3694,
-      ".dsc": 2746,
+      ".deb": 152786,
+      ".gz": 3695,
+      ".dsc": 2747,
       "no extension": 2264,
       ".bz2": 848,
-      ".sha256sum": 489,
+      ".sha256sum": 490,
       ".exe": 391,
       ".ddeb": 378,
       ".md5sum": 361,
       ".gpg": 352
     },
-    "last_updated": "2026-08-05T03:01:20.534564+00:00"
+    "last_updated": "2026-08-05T05:56:40.704856+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -4635,6 +4635,28 @@
                 "last_modified_timestamp": 1785821456,
                 "extension": ".sha256sum",
                 "category": "other"
+              },
+              {
+                "key": "macos/master/qgis_master_2026-08-05.dmg",
+                "name": "qgis_master_2026-08-05.dmg",
+                "path": "macos/master",
+                "size": 1609298439,
+                "size_formatted": "1.50 GB",
+                "last_modified": "2026-08-05T05:26:23.006000+00:00",
+                "last_modified_timestamp": 1785907583,
+                "extension": ".dmg",
+                "category": "installer"
+              },
+              {
+                "key": "macos/master/qgis_master_2026-08-05.sha256sum",
+                "name": "qgis_master_2026-08-05.sha256sum",
+                "path": "macos/master",
+                "size": 90,
+                "size_formatted": "90.00 B",
+                "last_modified": "2026-08-05T05:27:55.305000+00:00",
+                "last_modified_timestamp": 1785907675,
+                "extension": ".sha256sum",
+                "category": "other"
               }
             ]
           },
@@ -6893,10 +6915,10 @@
             "key": "macos/qgis-macos-master.dmg",
             "name": "qgis-macos-master.dmg",
             "path": "macos",
-            "size": 1609403049,
+            "size": 1609298439,
             "size_formatted": "1.50 GB",
-            "last_modified": "2026-08-04T05:30:54.741000+00:00",
-            "last_modified_timestamp": 1785821454,
+            "last_modified": "2026-08-05T05:27:54.433000+00:00",
+            "last_modified_timestamp": 1785907674,
             "extension": ".dmg",
             "category": "installer"
           },
@@ -6906,8 +6928,8 @@
             "path": "macos",
             "size": 90,
             "size_formatted": "90.00 B",
-            "last_modified": "2026-08-04T05:30:57.173000+00:00",
-            "last_modified_timestamp": 1785821457,
+            "last_modified": "2026-08-05T05:27:56.136000+00:00",
+            "last_modified_timestamp": 1785907676,
             "extension": ".sha256sum",
             "category": "other"
           },
@@ -26571,8 +26593,8 @@
         "key": "qgis-api-doc.7z",
         "name": "qgis-api-doc.7z",
         "path": "",
-        "size": 3597822730,
-        "size_formatted": "3.35 GB",
+        "size": 3603082145,
+        "size_formatted": "3.36 GB",
         "last_modified": "2026-04-26T02:52:59+00:00",
         "last_modified_timestamp": 1777171979,
         "extension": ".7z",
