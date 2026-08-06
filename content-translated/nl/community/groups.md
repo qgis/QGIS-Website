@@ -94,7 +94,7 @@ type: page
 ### Geregistreerd in 2026
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India gebruikersgroep" listSubtitle="Contact: Ujaval Gandhi" >}}
 
-{{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}
+{{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenië" listSubtitle="Contact: Suren Poghosyan" >}}
 
 {{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algerije gebruikersgroep" listSubtitle="Contact: Walid Moulahoum" >}}
 ## Doelen van een gebruikersgroep
