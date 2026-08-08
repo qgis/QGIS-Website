@@ -12,11 +12,11 @@ type: page
 # Gruppi Utenti
 ## Elenco attuale dei gruppi di utenti QGIS
 ### Registrati nel 2016 o prima
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contatto: Arthur Nanni" >}}
+{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Narcélio de Sá" >}}
 
 {{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Mie Winstrup" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contatto: Simon Miles" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contact: Ant Scott" >}}
 
 {{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Germany) " listSubtitle="Contatto: Thomas Schüttenberg" >}}
 
@@ -28,7 +28,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contatto: Michał Żugajewicz" >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contatto: João Gaspar" >}}
+{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: Giovanni Manghi" >}}
 
 {{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Scotland) " listSubtitle="Contatto: Ross McDonald" >}}
 
@@ -126,17 +126,17 @@ Moduli di domanda di adesione:
 
 È possibile utilizzare questi statuti e i moduli di domanda di adesione come riferimento, adattandoli alla vostra situazione locale.
 ## Dominio del paese locale qgis.xx
-Si raccomanda di registrare i domini nazionali locali, ad esempio qgis.ch o qgis.uk. Se il dominio è già stato preso da un'altra organizzazione, società o persona, si prega di negoziare se è possibile trasferire il proprietario al gruppo di utenti QGIS locale. Il progetto internazionale QGIS ha registrato QGIS come marchio  [QGIS as a trademark](../organisation/guidelines) e questo dovrebbe aiutare durante la negoziazione.
+User groups can register their local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by another organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
 ## Sito internet
 Il sito web del gruppo locale dovrebbe essere utilizzato per pubblicare qualsiasi materiale relativo alle informazioni e alla gestione del gruppo utenti. Per esempio, le riunioni degli utenti, i casi di studio, materiale condiviso, forum di discussione, ecc. Il materiale pubblico dovrebbe essere reso disponibile senza requisiti di accesso (ad esempio, non richiedere alle persone interessate di essere un membro di un social network come Facebook o Google+). L'utilizzo dei social network è consigliato ma non dovrebbe essere l'unico canale di informazione. I feed RSS dovrebbero essere resi disponibili sul sito Web del gruppo di utenti QGIS.
 
 Buona fortuna con l'organizzazione del vostro gruppo locale degli utenti. Si prega di informare il team di QGIS internazionale registrando l'elenco comunità QGIS e fornendo un rapporto sui vostri progressi. Non esitate a chiedere domande riguardanti la creazione e la manutenzione del gruppo locale degli utenti.
 ## Pacchetto iniziale
 ### Hosting di sottodominio QGIS.org
-Se si preferisce utilizzare il marchio ufficiale QGIS.org e ospitare il sito web del proprio gruppo utenti su un sottodominio QGIS.org (ad es., sweden.qgis.org), è possibile utilizzare il repository di template fornito su https://github.com/qgis/QGIS-User-Group-Website. Questa opzione garantisce la coerenza con il design del sito web principale di QGIS. Si prega di leggere attentamente e seguire le istruzioni di configurazione fornite nel repository.
+User groups are encouraged to use the official QGIS.org branding and host the user group's website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
 ### Accesso all'invio di notizie al QGIS News Feed 
 I gruppi utenti locali possono richiedere l'accesso al sistema QGIS News Feed, che consente di inviare notizie (come eventi, campagne di crowdfunding, meetup o annunci) che appariranno nella sezione notizie di QGIS una volta approvate dai moderatori. Questo è un ottimo modo per condividere le attività del proprio gruppo con la comunità QGIS globale.
 ### Modello per il dominio nazionale locale qgis.xx 
-Per il dominio nazionale locale, se non si desidera ospitare e progettare il proprio sito web da zero, è possibile utilizzare il template fornito su https://github.com/qgis/qgis-template.github.io.
+If you do not wish to use the QGIS.org subdomain hosting you can design your website using the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) or create your own from scratch.
 
 {{<content-end >}}

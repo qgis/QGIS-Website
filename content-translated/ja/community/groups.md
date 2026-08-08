@@ -12,11 +12,11 @@ type: page
 # ユーザーグループ
 ## 現行のQGISユーザグループ一覧
 ### 2016年またはそれ以前に登録 
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Arthur Nanni" >}}
+{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Narcélio de Sá" >}}
 
 {{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Mie Winstrup" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contact: Simon Miles" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contact: Ant Scott" >}}
 
 {{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Germany) " listSubtitle="Contact: Thomas Schüttenberg" >}}
 
@@ -28,7 +28,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contact: Michał Żugajewicz" >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: João Gaspar" >}}
+{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: Giovanni Manghi" >}}
 
 {{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Scotland) " listSubtitle="Contact: Ross McDonald" >}}
 
@@ -126,17 +126,17 @@ type: page
 
 これらの定款と入会申込書をご参考いただき、地域の実情に合わせて適宜変更してご活用ください。
 ## ローカルカントリードメインqgis.xx
-地域の国別ドメイン（例：qgis.chやqgis.uk）の登録が推奨されます。すでに他の組織・企業・個人がドメインを取得している場合は、地域のQGISユーザーグループへの所有権移転について交渉してください。QGIS国際プロジェクトは [QGISを商標登録](../organisation/guidelines) しており、交渉の際の後ろ盾として活用できます
+User groups can register their local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by another organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
 ## ウェブサイト
 地域ユーザーグループのウェブサイトは、グループの情報や運営に関する資料の公開に活用してください。ユーザーミーティング、ケーススタディ、共有資料、フォーラムなどがその例として挙げられます。公開資料はログインなしでアクセスできるようにし、FacebookやGoogle+などのソーシャルメディアへの加入を条件としないでください。ソーシャルメディアの活用は推奨されますが、情報発信の唯一のチャンネルとしては使用しないでください。QGISユーザーグループのウェブサイトではRSSフィードの提供が推奨されます。
 
 地域ユーザーグループの運営がうまくいくことを願っています！QGISコミュニティリストにご登録いただき、進捗状況をご報告いただくことで、国際QGISチームへのご連絡をお願いします。地域ユーザーグループの設立・維持に関するご質問は、どうぞお気軽にお尋ねください。
 ## 導入セット
 ### QGIS.org サブドメインホスティング
-公式のQGIS.orgブランドを使用し、ユーザーグループのウェブサイトをQGIS.orgのサブドメイン（例：[sweden.qgis.org](http://sweden.qgis.org)）上でホストしたい場合は、https://github.com/qgis/QGIS-User-Group-Websiteのテンプレートリポジトリをご活用ください。このオプションにより、メインのQGISウェブサイトとデザインの一貫性が保たれます。リポジトリに記載されたセットアップ手順をよくお読みの上、設定を行ってください。
+User groups are encouraged to use the official QGIS.org branding and host the user group's website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
 ### QGISニュースフィードの投稿アクセス権
 地域のユーザーグループは、 [QGISニュースフィードシステム](https://feed.qgis.org) へのアクセスを申請できます。このシステムでは、イベント・クラウドファンディングキャンペーン・ミートアップ・お知らせなどのニュースを投稿でき、モデレーターの承認を経てQGISニュースセクションに掲載されます。グループの活動をグローバルなQGISコミュニティと共有する絶好の手段です。
 ### ローカルコミュニティのドメイン qgis.xx 用のテンプレート
-地域の国別ドメインをご利用の場合、ウェブサイトをゼロから構築・デザインしたくない場合は、　 [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) で提供されているテンプレートをご利用いただけます。
+If you do not wish to use the QGIS.org subdomain hosting you can design your website using the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) or create your own from scratch.
 
 {{<content-end >}}
