@@ -126,17 +126,17 @@ Formulieren aanvragen lidmaatschap:
 
 U kunt deze statuten en de formulieren voor het aanvragen van lidmaatschap gebruiken als een verwijzing en ze, waar nodig, wijzigen naar uw lokale situatie.
 ## Lokaal landdomein qgis.xx
-User groups can register their local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by another organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
+Gebruikersgroepen kunnen hun lokale landdomeinen registreren, bijv. qgis.ch of qgis.uk. Als het domein al door een andere organisatie, bedrijf of persoon is verkregen, onderhandel dan of u de eigenaar kunt overhalen te transfereren naar de lokale gebruikersgroep van QGIS. Het internationale project QGIS heeft [QGIS als een handelsmerk](../organisation/guidelines) geregistreerd, wat zou kunnen helpen bij uw onderhandelingen.
 ## Website
 De website van uw lokale gebruikersgroep zou moeten worden gebruikt om materiaal te publiceren in relatie tot informatie en beheer van de gebruikersgroep. Voorbeelden omvatten de bijeenkomsten van gebruikers, bespreken van gevallen, gedeeld materiaal, discussiefora, etc. Publiek materiaal zou beschikbaar moeten zijn zonder vereisten voor inloggen (bijv. eis niet dat geïnteresseerde mensen lid zijn van een of ander netwerk voor sociale media zoals Facebook of Google+). Gebruik van sociale media wordt aanbevolen, maar zou niet het enige kanaal van informatie moeten zijn. RSS-feeds zouden beschikbaar moeten worden gemaakt op de website van de gebruikersgroep van QGIS.
 
 Veel succes met het organiseren van uw lokale gebruikersgroep. Informeer het internationale team van QGIS door te registreren op de gemeenschapslijst van QGIS en rapporteer over uw voortgang. Aarzel niet om vragen te stellen met betrekking tot het instellen en onderhouden van uw lokale gebruikersgroep.
 ## Startpakket
 ### QGIS.org subdomein hosten
-User groups are encouraged to use the official QGIS.org branding and host the user group's website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
+Gebruikersgroepen wordt aangeraden de officiële branding van QGIS.org te gebruiken en de eigen website voor de gebruikersgroep te hosten op een QGIS.org subdomein (bijv. `zweden.qgis.org`), u kunt de verschafte opslagruimte met sjablonen op [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website) gebruiken. Die optie zorgt voor consistentie voor het ontwerp van de hoofdwebsite van QGIS.  Lees de installatievoorschriften, die worden verschaft in de opslagruimte, zorgvuldig door en volg ze op.
 ### Toegang voor het indienen bij QGIS News Feed
 Lokale gebruikersgroepen kunnen toegang vragen voor het  [systeem van QGIS News Feed](https://feed.qgis.org), dat u in staat stelt nieuwsitems in te dienen (zoals gebeurtenissen, campagnes voor crowdfunden, ontmoetingen of aankondigingen) die zullen verschijnen het nieuwsgedeelte van QGIS als ze eenmaal zijn goedgekeurd door de moderatoren. Dit is een voortreffelijke manier om de activiteiten van uw groep te delen met de globale gemeenschap van QGIS.
 ### Sjabloon voor lokaal landdomein qgis.xx
-If you do not wish to use the QGIS.org subdomain hosting you can design your website using the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) or create your own from scratch.
+Als u het hosten van de website voor de groep niet wilt gebruiken op het subdomein QGIS.org, kunt u het sjabloon gebruiken dat wordt verschaft op [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) of uw eigen vanaf nul maken.
 
 {{<content-end >}}
