@@ -21,7 +21,7 @@ listLink = "https://qgisbrasil.org/"
 icon = "🇧🇷  "
 layoutClass = "half"
 listTitle = "QGIS Brasil (Brazil) "
-listSubtitle = "Contact: Arthur Nanni" >}}
+listSubtitle = "Contact: Narcélio de Sá" >}}
 
 {{< rich-list
 listLink = "https://qgis.dk/"
@@ -35,7 +35,7 @@ listLink = "https://uk.osgeo.org/qgis.html"
 icon = "🏴󠁧󠁢󠁥󠁮󠁧󠁿  "
 layoutClass = "half"
 listTitle = "QGIS UK (England) "
-listSubtitle = "Contact: Simon Miles" >}}
+listSubtitle = "Contact: Ant Scott" >}}
 
 {{< rich-list
 listLink = "https://qgis.de/"
@@ -77,7 +77,7 @@ listLink = "https://qgis.pt/"
 icon = "🇵🇹  "
 layoutClass = "half"
 listTitle = "QGIS Portugal "
-listSubtitle = "Contact: João Gaspar" >}}
+listSubtitle = "Contact: Giovanni Manghi" >}}
 
 {{< rich-list
 listLink = "https://uk.osgeo.org/qgis.html"
@@ -397,7 +397,7 @@ You can use these statutes and membership application forms as a reference and c
 ## Local Country domain qgis.xx
 
 
-It is recommended to register your local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by other organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
+User groups can register their local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by another organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
 
 ## Website
 
@@ -409,7 +409,7 @@ Good luck with organizing your local user group! Please inform the international
 ## Starter pack
 ### QGIS.org subdomain hosting
 
-If you prefer to use the official QGIS.org branding and host your user group website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
+User groups are encouraged to use the official QGIS.org branding and host the user group's website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
 
 ### QGIS News Feed submission access
 
@@ -417,6 +417,6 @@ Local user groups can request access to the [QGIS News Feed system](https://feed
 
 ### Template for local country domain qgis.xx
 
-For local country domain, if you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
+If you do not wish to use the QGIS.org subdomain hosting you can design your website using the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) or create your own from scratch.
 
 {{< content-end >}}

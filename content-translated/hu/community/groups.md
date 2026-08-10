@@ -12,11 +12,11 @@ type: page
 # Felhasználói csoportok
 ## QGIS felhasználói csoportok aktuális listája
 ### 2016-ban vagy korábban regisztrált
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazília)" listSubtitle="Kapcsolat: Arthur Nanni" >}}
+{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazília)" listSubtitle="Contact: Narcélio de Sá" >}}
 
 {{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Dánia)" listSubtitle="Contact: Mie Winstrup" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (Anglia) " listSubtitle="Kapcsolattartó: Simon Miles" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (Anglia) " listSubtitle="Contact: Ant Scott" >}}
 
 {{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Németország) " listSubtitle="Kapcsolattartó: Thomas Schüttenberg" >}}
 
@@ -28,7 +28,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Lengyelország) " listSubtitle="Kapcsolattartó: Michał Żugajewicz" >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugália " listSubtitle="Kapcsolattartó: João Gaspar" >}}
+{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugália " listSubtitle="Contact: Giovanni Manghi" >}}
 
 {{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Skócia) " listSubtitle="Kapcsolattartó: Ross McDonald" >}}
 
@@ -126,17 +126,17 @@ Tagsági jelentkezési űrlapok:
 
 Ezeket az alapszabályokat és a tagsági jelentkezési űrlapokat irányadóként használhatja, és a helyi viszonyokhoz igazodva szükség szerint módosíthatja őket.
 ## Helyi országos domain qgis.xx
-Javasoljuk, hogy regisztrálja a helyi országkódnak megfelelő domainnevet, pl. qgis.ch vagy qgis.uk. Ha a domainnevet már más szervezet, vállalat vagy személy foglalta le, kérjük, tárgyaljanak arról, hogy átruházhatják-e a tulajdonjogot a helyi QGIS-felhasználói csoportra. A QGIS nemzetközi projekt [a QGIS-t védjegyként](../organisation/guidelines) jegyeztette be, ami segítséget nyújthat a tárgyalások során.
+User groups can register their local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by another organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
 ## Honlap
 A helyi felhasználói csoport weboldalát a felhasználói csoporttal kapcsolatos információk és az irányításhoz kapcsolódó anyagok közzétételére kell használni. Példák: felhasználói találkozók, esettanulmányok, megosztott anyagok, fórumok stb. A nyilvános anyagokhoz nem szabad bejelentkezést követelni (pl. ne legyen feltétel, hogy az érdeklődőknek tagjainak kell lenniük egy közösségi hálózaton, mint a Facebook vagy a Google+). A közösségi hálózatok használatát javasoljuk, de ne ez legyen az egyetlen információs csatorna. A QGIS felhasználói csoport honlapján RSS hírcsatornát célszerű létrehozni.
 
 Sok sikert az ön helyi felhasználói csoportjának szervezéséhez. Kérjük, értesítse a nemzetközi csoportot, regisztráljon a QGIS közösségi listán és számoljon be a haladásról. Ne habozzon kérdéseket feltenni a helyi felhasználói csoport létrehozásával és fenntartásával kapcsolatban.
 ## Kezdőcsomag
 ### QGIS.org aldomain-tárhely
-Ha inkább a hivatalos QGIS.org arculatot szeretné használni, és a felhasználói csoport weboldalát egy QGIS.org aldomainen (pl. `sweden.qgis.org`) szeretné tartani, akkor igénybe veheti a [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website) címen elérhető sablontárolót. Ez a lehetőség biztosítja az összhangot a fő QGIS weboldal kialakításával. Kérjük, figyelmesen olvassa el és kövesse a tárolóban található beállítási utasításokat.
+User groups are encouraged to use the official QGIS.org branding and host the user group's website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
 ### Hozzáférés a QGIS hírcsatornához
 A helyi felhasználói csoportok hozzáférést kérhetnek a [QGIS hírcsatorna-rendszerhez](https://feed.qgis.org), amelyen keresztül híreket (például rendezvényeket, közösségi finanszírozási kampányokat, találkozókat vagy közleményeket) tehetnek közzé, amelyek a moderátorok jóváhagyását követően megjelennek a QGIS hírek részében. Ez kiváló lehetőség arra, hogy csoportjuk tevékenységét megosszák a globális QGIS-közösséggel.
 ### Sablon a helyi országkódú qgis.xx domainhez
-Ha helyi országkódos domainnévvel rendelkezik, és nem szeretné a weboldalát a semmiből felépíteni és megtervezni, akkor használhatja a [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) oldalon található sablont.
+If you do not wish to use the QGIS.org subdomain hosting you can design your website using the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) or create your own from scratch.
 
 {{<content-end >}}

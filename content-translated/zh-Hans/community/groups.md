@@ -12,11 +12,11 @@ type: page
 # 用户组
 ## 当前QGIS用户组列表
 ### 2016年或更早注册
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (巴西)" listSubtitle="联系人: Arthur Nanni" >}}
+{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (巴西)" listSubtitle="Contact: Narcélio de Sá" >}}
 
 {{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (丹麦) " listSubtitle="Contact: Mie Winstrup" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (英国) " listSubtitle="联系人: Simon Miles" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (英国) " listSubtitle="Contact: Ant Scott" >}}
 
 {{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (德国) " listSubtitle="联系人: Thomas Schüttenberg" >}}
 
@@ -28,7 +28,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (波兰) " listSubtitle="联系人: Michał Żugajewicz" >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS 葡萄牙 " listSubtitle="联系人: João Gaspar" >}}
+{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS 葡萄牙 " listSubtitle="Contact: Giovanni Manghi" >}}
 
 {{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (苏格兰) " listSubtitle="联系人: Ross McDonald" >}}
 
@@ -126,17 +126,17 @@ type: page
 
 您可以参考这些章程及会员申请表，并根据当地实际情况按需修改。
 ## 本地国家域名 qgis.xx
-建议您注册所在国家的域名，例如qgis.ch或qgis.uk。如果该域名已被其他组织、公司或个人注册，请协商是否可以将域名所有权转让给本地QGIS用户组。QGIS国际项目已将 [QGIS注册为商标](../organisation/guidelines), 可在协商过程中为您提供帮助。
+User groups can register their local country domains, e.g. qgis.ch or qgis.uk. If the domain is already taken by another organization, company or person, please negotiate if you can transfer the owner to the local QGIS user group. The QGIS international project has registered [QGIS as a trademark](../organisation/guidelines), which should help you during your negotiations.
 ## 网站
 您所在的本地用户组网站用于发布与用户组信息和管理相关的各类资料，例如用户会议、案例研究、共享资料、讨论板块等。公开资料应无需登录即可访问 (例如，不得要求感兴趣人士必须加入Facebook或Google+等社交媒体平台)。建议使用社交媒体作为宣传渠道，但不应将其视为唯一的信息渠道。QGIS用户组的网站应提供RSS订阅源。
 
 祝您顺利组建本地用户组！请在QGIS社区列表完成注册，并向国际QGIS团队汇报组建进展情况。如在组建和维护本地用户组方面有任何疑问，欢迎随时咨询。
 ## 入门必备
 ### QGIS.org子域名托管
-如果您更倾向于使用官方的QGIS.org品牌标识，并将用户组网站托管在QGIS.org的子域名之下 (例如 `sweden.qgis.org`), 可以使用官方提供的模板仓库: [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website) 。此选项可确保与QGIS主网站设计保持一致。请仔细阅读并遵循仓库中提供的设置说明。
+User groups are encouraged to use the official QGIS.org branding and host the user group's website on a QGIS.org subdomain (e.g., `sweden.qgis.org`), you can utilize the provided template repository at [https://github.com/qgis/QGIS-User-Group-Website](https://github.com/qgis/QGIS-User-Group-Website). This option ensures consistency with the main QGIS website design. Please carefully read and follow the setup instructions provided in the repository.
 ### QGIS新闻供稿提交权限
 Local user groups can request access to the [QGIS News Feed system](https://feed.qgis.org), which allows you to submit news entries (such as events, crowdfunding campaigns, meetups, or announcements) that will appear in the QGIS news section once approved by moderators. This is an excellent way to share your group's activities with the global QGIS community.
 ### 本国域名模板 qgis.xx
-For local country domain, if you do not wish to host and design your website from scratch, you can use the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io).
+If you do not wish to use the QGIS.org subdomain hosting you can design your website using the template provided at [https://github.com/qgis/qgis-template.github.io](https://github.com/qgis/qgis-template.github.io) or create your own from scratch.
 
 {{<content-end >}}
