@@ -14,21 +14,21 @@
 {{ range $idx, $contributor := $contributors }}
     {{ $isHonorary := index $honoraryMembers $contributor.login }}
     {{ if and $isHonorary (in $isHonorary.title "Founder") }}
-        {{ $founderRanked = $founderRanked | append (dict "contributor" $contributor "rank" (add $idx 1) "honorary" $isHonorary) }}
+        {{ $founderRanked = $founderRanked | append (dict "contributor" $contributor "rank" (add $idx 1) "honorary" $isHonorary "pinned" true) }}
     {{ else }}
-        {{ $regularRanked = $regularRanked | append (dict "contributor" $contributor "rank" (add $idx 1)) }}
+        {{ $regularRanked = $regularRanked | append (dict "contributor" $contributor "rank" (add $idx 1) "honorary" $isHonorary "pinned" false) }}
     {{ end }}
 {{ end }}
 
 <!-- Filter and Search Section -->
-<div class="contributors-filter-section notification is-light p-5 mb-5">
+<div class="contributors-filter-section notification is-light p-5 mb-5 mt-5">
     <!-- Search Bar -->
     <div class="field mb-5">
         <div class="control has-icons-left is-large">
-            <input 
-                class="input is-medium" 
-                type="text" 
-                id="contributor-search" 
+            <input
+                class="input is-rounded"
+                type="text"
+                id="contributor-search"
                 placeholder="Search contributors by GitHub username..."
                 aria-label="Search contributors"
             >
@@ -38,15 +38,15 @@
         </div>
     </div>
 
-    <!-- Filters -->
+    <!-- Filters (heading row doubles as the toolbar for the view switcher) -->
     <div class="mb-4">
-        <div class="has-text-weight-semibold has-text-grey-dark mb-3 is-uppercase">
+        <div class="has-text-weight-semibold has-text-grey-dark is-uppercase">
             <span class="icon-text">
                 <span class="icon"><i class="fas fa-filter"></i></span>
                 <span>Filter by Contribution Area</span>
             </span>
         </div>
-        <div class="buttons">
+        <div class="buttons are-small">
             <button class="button filter-button" data-thematic="qgis_core">
                 <span class="icon"><i class="fas fa-code"></i></span>
                 <span>QGIS Core</span>
@@ -59,34 +59,36 @@
                 <span class="icon"><i class="fas fa-globe"></i></span>
                 <span>Web Sites</span>
             </button>
+            <button class="button is-outlined is-primary3 mr-2" id="reset-filters">
+                <span class="icon"><i class="fas fa-redo"></i></span>
+                <span>Reset Filters</span>
+            </button>
         </div>
     </div>
 
-    <!-- Stats and Reset -->
-    <div class="level is-mobile">
-        <div class="level-left">
-            <div class="level-item">
-                <div>
-                    <span class="has-text-grey-dark">Showing:</span>
-                    <span id="stats-showing" class="has-text-weight-semibold">{{ len $contributors }}</span>
-                </div>
-            </div>
-            <div class="level-item">
-                <div>
-                    <span class="has-text-grey-dark">Total:</span>
-                    <span id="stats-total" class="has-text-weight-semibold">{{ len $contributors }}</span>
-                </div>
-            </div>
-        </div>
-        <div class="level-right">
-            <div class="level-item">
-                <button class="button is-outlined is-primary3" id="reset-filters">
-                    <span class="icon"><i class="fas fa-redo"></i></span>
-                    <span>Reset Filters</span>
-                </button>
-            </div>
-        </div>
+    <!-- Stats -->
+    <div class="tags has-addons mb-0">
+        <span class="tag is-medium is-white has-text-grey-dark mb-0">Showing</span>
+        <span class="tag is-medium is-primary3 has-text-weight-semibold mb-0" id="stats-showing">{{ len $contributors }}</span>
+        <span class="tag is-medium is-white has-text-grey-dark mb-0">of</span>
+        <span class="tag is-medium is-white has-text-weight-semibold mb-0" id="stats-total">{{ len $contributors }}</span>
     </div>
+</div>
+
+
+<div class="field has-addons mb-0" id="view-toggle" role="group" aria-label="Display mode">
+    <p class="control">
+        <button class="button is-active is-primary3" id="view-grid-btn" title="Grid view" aria-pressed="true">
+            <span class="icon"><i class="fas fa-th"></i></span>
+            <span>Grid view</span>
+        </button>
+    </p>
+    <p class="control">
+        <button class="button" id="view-table-btn" title="Table view" aria-pressed="false">
+            <span class="icon"><i class="fas fa-table"></i></span>
+            <span>Table view</span>
+        </button>
+    </p>
 </div>
 
 <!-- No Results Message (hidden by default) -->
@@ -98,85 +100,15 @@
     <p class="has-text-grey">Try adjusting your search terms or selected filters to see more results</p>
 </div>
 
-<!-- View Toggle -->
-<div class="buttons has-addons mb-4" id="view-toggle">
-    <button class="button is-active" id="view-grid-btn" title="Grid view">
-        <span class="icon"><i class="fas fa-th"></i></span>
-        <span>Grid</span>
-    </button>
-    <button class="button" id="view-table-btn" title="Table view">
-        <span class="icon"><i class="fas fa-table"></i></span>
-        <span>Table</span>
-    </button>
-</div>
-
 <!-- Contributors Grid -->
 <div class="columns is-multiline" id="contributors-grid-view">
     <!-- Project founder pinned at the top -->
     {{ range $founderRanked }}
-    {{ $contributor := .contributor }}
-    {{ $isHonorary := .honorary }}
-    {{ $rank := .rank }}
-    <div class="column is-one-third-fullhd is-half-tablet is-full-mobile">
-        <div class="card contributor-card individual honorary-member" id="{{ $contributor.login | urlize }}">
-            <div class="card-content has-text-centered">
-                <div class="avatar-container">
-                    <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" class="avatar" loading="lazy">
-                    <span class="level-indicator level-5 p-1"># {{ $rank }}</span>
-                    <span class="honorary-badge">{{ $isHonorary.icon }}</span>
-                </div>
-                <div class="honorary-info">
-                    <p class="is-size-6 has-text-grey">{{ $isHonorary.title }}</p>
-                </div>
-                <h3 class="title is-4">
-                    <a class="heading-anchor" href="#{{ $contributor.login | urlize }}" style="margin-left: -22.3px;">
-                        ¶
-                    </a>
-                    <a href="https://github.com/{{ $contributor.login }}" class="external-link" target="_blank" rel="noopener">
-                        {{ $contributor.login }}
-                    </a>
-                </h3>
-
-                <div class="total-contributions mb-4 is-flex is-justify-content-center is-align-items-center">
-                    <span class="tag is-light is-medium has-text-weight-semibold mr-1 is-rounded">
-                        <i class="fab fa-git-alt mr-1 has-text-info"></i>
-                        {{ $contributor.total_contributions }}
-                    </span>
-                    <span class="has-text-grey">commits</span>
-                </div>
-                <div class="contribution-badges">
-                        {{ $thematicList := slice }}
-                        {{ range $k, $v := $contributor.thematics }}
-                            {{ $thematicList = $thematicList | append (dict "name" $k "count" $v) }}
-                        {{ end }}
-                        {{ $sorted := sort $thematicList "count" "desc" }}
-                        {{ range $item := $sorted }}
-                            {{ $thematic := $item.name }}
-                            {{ $count := $item.count }}
-                            {{ if gt $count 0 }}
-                                <span class="contributor-badge contributor-badge-{{ $thematic }}">
-                                    <span>
-                                        {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Documentation{{ end }}
-                                        {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> QGIS Core{{ end }}
-                                        {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
-                                        {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
-                                        {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
-                                    </span>
-                                    <span class="contribution-count">
-                                        <i class="fab fa-git-alt"></i>
-                                        {{ $count }}
-                                    </span>
-                                </span>
-                            {{ end }}
-                        {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
+        {{ partial "contributor-card.html" . }}
     {{ end }}
     <!-- Divider between founder and regular contributors -->
     {{ if and (gt (len $founderRanked) 0) (gt (len $regularRanked) 0) }}
-    <div class="column is-full">
+    <div class="column is-full" id="contributors-grid-divider">
         <div class="has-text-centered my-4">
             <hr/>
         </div>
@@ -184,69 +116,7 @@
     {{ end }}
     <!-- Regular contributors sorted by commit count -->
     {{ range $regularRanked }}
-    {{ $contributor := .contributor }}
-    {{ $rank := .rank }}
-    {{ $isHonorary := index $honoraryMembers $contributor.login }}
-    <div class="column is-one-third-fullhd is-half-tablet is-full-mobile">
-        <div class="card contributor-card individual{{ if $isHonorary }} honorary-member{{ end }}" id="{{ $contributor.login | urlize }}">
-            <div class="card-content has-text-centered">
-                <div class="avatar-container">
-                    <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" class="avatar" loading="lazy">
-                    <span class="level-indicator level-5 p-1"># {{ $rank }}</span>
-                    {{ if $isHonorary }}
-                    <span class="honorary-badge">{{ $isHonorary.icon }}</span>
-                    {{ end }}
-                </div>
-                {{ if $isHonorary }}
-                <div class="honorary-info">
-                    <p class="is-size-6 has-text-grey">{{ $isHonorary.title }}</p>
-                </div>
-                {{ end }}
-                <h3 class="title is-4">
-                    <a class="heading-anchor" href="#{{ $contributor.login | urlize }}" style="margin-left: -22.3px;">
-                        ¶
-                    </a>
-                    <a href="https://github.com/{{ $contributor.login }}" class="external-link" target="_blank" rel="noopener">
-                        {{ $contributor.login }}
-                    </a>
-                </h3>
-
-                <div class="total-contributions mb-4 is-flex is-justify-content-center is-align-items-center">
-                    <span class="tag is-light is-medium has-text-weight-semibold mr-1 is-rounded">
-                        <i class="fab fa-git-alt mr-1 has-text-info"></i>
-                        {{ $contributor.total_contributions }}
-                    </span>
-                    <span class="has-text-grey">commits</span>
-                </div>
-                <div class="contribution-badges">
-                        {{ $thematicList := slice }}
-                        {{ range $k, $v := $contributor.thematics }}
-                            {{ $thematicList = $thematicList | append (dict "name" $k "count" $v) }}
-                        {{ end }}
-                        {{ $sorted := sort $thematicList "count" "desc" }}
-                        {{ range $item := $sorted }}
-                            {{ $thematic := $item.name }}
-                            {{ $count := $item.count }}
-                            {{ if gt $count 0 }}
-                                <span class="contributor-badge contributor-badge-{{ $thematic }}">
-                                    <span>
-                                        {{ if eq $thematic "documentation" }}<i class="fas fa-book mr-1"></i> QGIS Documentation{{ end }}
-                                        {{ if eq $thematic "qgis_core" }}<i class="fas fa-code mr-1"></i> QGIS Core{{ end }}
-                                        {{ if eq $thematic "web_sites" }}<i class="fas fa-globe mr-1"></i> QGIS Web Sites{{ end }}
-                                        {{ if eq $thematic "community_activities" }}<i class="fas fa-users mr-1"></i> Community{{ end }}
-                                        {{ if eq $thematic "qgis_infrastructure" }}<i class="fas fa-server mr-1"></i> Infrastructure{{ end }}
-                                    </span>
-                                    <span class="contribution-count">
-                                        <i class="fab fa-git-alt"></i>
-                                        {{ $count }}
-                                    </span>
-                                </span>
-                            {{ end }}
-                        {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
+        {{ partial "contributor-card.html" . }}
     {{ end }}
 </div>
 
@@ -280,74 +150,11 @@
             <tbody id="contributors-table-body">
                 <!-- Founder pinned row -->
                 {{ range $founderRanked }}
-                {{ $contributor := .contributor }}
-                {{ $isHonorary := .honorary }}
-                {{ $rank := .rank }}
-                {{ $core := index $contributor.thematics "qgis_core" | default 0 }}
-                {{ $docs := index $contributor.thematics "documentation" | default 0 }}
-                {{ $web := index $contributor.thematics "web_sites" | default 0 }}
-                {{ $thematicKeys := slice }}
-                {{ range $k, $v := $contributor.thematics }}{{ if gt $v 0 }}{{ $thematicKeys = $thematicKeys | append $k }}{{ end }}{{ end }}
-                <tr class="contributor-table-row"
-                    data-pinned="true"
-                    data-rank="{{ $rank }}"
-                    data-login="{{ $contributor.login }}"
-                    data-total="{{ $contributor.total_contributions }}"
-                    data-qgis_core="{{ $core }}"
-                    data-documentation="{{ $docs }}"
-                    data-web_sites="{{ $web }}"
-                    data-thematics="{{ delimit $thematicKeys " " }}">
-                    <td>
-                        <span class="tag is-warning is-light">{{ $isHonorary.icon }} #{{ $rank }}</span>
-                    </td>
-                    <td>
-                        <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" style="width:36px;border-radius:50%;object-fit:cover;" loading="lazy">
-                    </td>
-                    <td>
-                        <a href="https://github.com/{{ $contributor.login }}" target="_blank" rel="noopener">
-                            {{ $contributor.login }}
-                        </a>
-                        <span class="tag is-warning is-light ml-1" title="{{ $isHonorary.title }}">{{ $isHonorary.icon }}</span>
-                    </td>
-                    <td><strong>{{ $contributor.total_contributions }}</strong></td>
-                    <td>{{ $core }}</td>
-                    <td>{{ $docs }}</td>
-                    <td>{{ $web }}</td>
-                </tr>
+                    {{ partial "contributor-table-row.html" . }}
                 {{ end }}
                 <!-- Regular contributor rows -->
                 {{ range $regularRanked }}
-                {{ $contributor := .contributor }}
-                {{ $rank := .rank }}
-                {{ $isHonorary := index $honoraryMembers $contributor.login }}
-                {{ $core := index $contributor.thematics "qgis_core" | default 0 }}
-                {{ $docs := index $contributor.thematics "documentation" | default 0 }}
-                {{ $web := index $contributor.thematics "web_sites" | default 0 }}
-                {{ $thematicKeys := slice }}
-                {{ range $k, $v := $contributor.thematics }}{{ if gt $v 0 }}{{ $thematicKeys = $thematicKeys | append $k }}{{ end }}{{ end }}
-                <tr class="contributor-table-row"
-                    data-rank="{{ $rank }}"
-                    data-login="{{ $contributor.login }}"
-                    data-total="{{ $contributor.total_contributions }}"
-                    data-qgis_core="{{ $core }}"
-                    data-documentation="{{ $docs }}"
-                    data-web_sites="{{ $web }}"
-                    data-thematics="{{ delimit $thematicKeys " " }}">
-                    <td>{{ $rank }}</td>
-                    <td>
-                        <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" style="width:36px;border-radius:50%;object-fit:cover;" loading="lazy">
-                    </td>
-                    <td>
-                        <a href="https://github.com/{{ $contributor.login }}" target="_blank" rel="noopener">
-                            {{ $contributor.login }}
-                        </a>
-                        {{ if $isHonorary }}<span class="tag is-warning is-light ml-1" title="{{ $isHonorary.title }}">{{ $isHonorary.icon }}</span>{{ end }}
-                    </td>
-                    <td>{{ $contributor.total_contributions }}</td>
-                    <td>{{ $core }}</td>
-                    <td>{{ $docs }}</td>
-                    <td>{{ $web }}</td>
-                </tr>
+                    {{ partial "contributor-table-row.html" . }}
                 {{ end }}
             </tbody>
         </table>
@@ -355,5 +162,5 @@
 </div>
 
 <!-- Load contributors filter functionality -->
-{{ $js := resources.Get "js/contributors-filter.js" }}
-<script src="{{ $js.RelPermalink }}"></script>
+{{ $js := resources.Get "js/contributors-filter.js" | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>
