@@ -1,20 +1,20 @@
 {
   "bucket_name": "qgis-download",
   "prefix": "",
-  "generated_at": "2026-08-16T05:08:16.912589+00:00",
+  "generated_at": "2026-08-16T06:07:01.864988+00:00",
   "statistics": {
-    "total_files": 169243,
-    "total_size": 5307280535135,
+    "total_files": 169245,
+    "total_size": 5307946426059,
     "total_size_formatted": "4.83 TB",
     "by_category": {
       "installer": {
-        "count": 157030,
-        "size": 4526591989852,
+        "count": 157031,
+        "size": 4527257880668,
         "size_formatted": "4.12 TB"
       },
       "other": {
-        "count": 7451,
-        "size": 30802473610,
+        "count": 7452,
+        "size": 30802473718,
         "size_formatted": "28.69 GB"
       },
       "image": {
@@ -39,13 +39,13 @@
       ".dsc": 2838,
       "no extension": 2264,
       ".bz2": 848,
-      ".sha256sum": 502,
+      ".sha256sum": 503,
       ".exe": 391,
       ".ddeb": 378,
       ".md5sum": 361,
       ".gpg": 352
     },
-    "last_updated": "2026-08-16T05:08:16.869368+00:00"
+    "last_updated": "2026-08-16T06:07:01.781189+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -7691,6 +7691,28 @@
                 "size_formatted": "108.00 B",
                 "last_modified": "2026-08-05T10:12:55.656000+00:00",
                 "last_modified_timestamp": 1785924775,
+                "extension": ".sha256sum",
+                "category": "other"
+              },
+              {
+                "key": "windows/weekly/QGIS-OSGeo4W-4.3.0-1204-40e84817713-1.msi",
+                "name": "QGIS-OSGeo4W-4.3.0-1204-40e84817713-1.msi",
+                "path": "windows/weekly",
+                "size": 665890816,
+                "size_formatted": "635.04 MB",
+                "last_modified": "2026-08-16T05:16:39.417000+00:00",
+                "last_modified_timestamp": 1786857399,
+                "extension": ".msi",
+                "category": "installer"
+              },
+              {
+                "key": "windows/weekly/QGIS-OSGeo4W-4.3.0-1204-40e84817713-1.sha256sum",
+                "name": "QGIS-OSGeo4W-4.3.0-1204-40e84817713-1.sha256sum",
+                "path": "windows/weekly",
+                "size": 108,
+                "size_formatted": "108.00 B",
+                "last_modified": "2026-08-16T05:14:33.279000+00:00",
+                "last_modified_timestamp": 1786857273,
                 "extension": ".sha256sum",
                 "category": "other"
               }
