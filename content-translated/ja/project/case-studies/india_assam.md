@@ -7,54 +7,55 @@ featured: false
 section: project
 sidebar: true
 thumbnail: images/india_assam1.png
-title: (NAMERIトラ保護区、アッサム、インドSonitpur地区におけるカメラトラップを使用して）トラを監視するためのQGIS
+title: トラのモニタリングに活用されるQGIS（インド・アッサム州ソニトプール地区のナメリ・トラ保護区におけるカメラトラップの使用）
 type: case-study
 
 ---
 {{<content-start >}}
-# (NAMERIトラ保護区、アッサム、インドSonitpur地区におけるカメラトラップを使用して）トラを監視するためのQGIS
+# トラのモニタリングに活用されるQGIS（インド・アッサム州ソニトプール地区のナメリ・トラ保護区におけるカメラトラップの使用）
 <p class="is-size-6 is-italic has-text-weight-medium">
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>March 01, 2013</span>
+  <span>2013年3月1日</span>
 </p>
 
-Nameri Tiger Reserve (NTR) is one of the 3 tiger reserves of Assam and it is situated in the northern part of Sonitpur District of Assam along the foothills of Eastern Himalayas. Spread over an area of 344 sq km, NTR boasts rich diversity of flora and fauna. The core area of the reserve which constitutes the "Nameri National Park" is bound by River Jia-Bhoreli on the west and River Bor-Dikorai in the east. To the north of the Nameri lies the Pakke Tiger Reserve of Arunachal Pradesh.
+ナメリ・トラ保護区（NTR）は、アッサムの3つのトラ保護区の一つであり、それは東ヒマラヤ山脈の麓に沿ったアッサム州ソニトプール地区の北部に位置しています。344平方キロの面積に広がる、NTRは動植物の豊かな多様性を誇っています。「ナメリ国立公園」を構成する保存中核地域は、西をジア・ボレリ川、東をボル・ディコライ川に囲まれています。ナメリの北側には、アルナーチャル・プラデーシュ州のパッケ・トラ保護区があります。
 
 ![](../images/india_assam1.png)
 
-この風景の中で、環境保全の重要性の主要な種はロイヤルベンガルトラ、アジアゾウ、インドのバイソン、共通のヒョウ、ウンピョウ、ワイルドドッグ、サンバー鹿、吠え鹿、豚、鹿、イノシシや他のいくつかの種です。NTRの鳥の多様性にも非常に印象的で、370以上の鳥種はこれまでに同定されています。準備金は、アッサムのアッサム森林局、政府によって管理されています。
+この地域の中で、保護する上で重要な主な種はロイヤルベンガルトラ、アジアゾウ、インドバイソン、ヒョウ、ウンピョウ、山犬、サンバー、ホエジカ、ホッグジカ、イノシシや他のいくつかの種です。NTRの鳥の多様性も非常に印象的で、これまでに370以上の鳥種が同定されています。この指定保護地区はアッサム州政府アッサム森林局によって管理されています。
 ## カメラトラップ調査を設計するためのQGISの応用
-2011年から開始し、インドのナショナル・トラ保護庁（NTCA）は、必須の国のすべてのトラ保護区がカメラトラップを使用してトラを監視するために作られました。この新しいプロトコルの下では、カメラの25ペアは、トラ保護区の100平方キロのためにインストールされ、サンプリング周期は40〜60日です。この新しいトラの監視プロトコルは、GISに大きく依存しています。
+2011年から、インド国立トラ保護局（NTCA）は、国の全てのトラ指定保護地区がカメラトラップを使ってトラを監視することを義務化しました。この新しいプロトコルの下で、25組のカメラがトラ指定保護地区100平方キロメートルに設置されます。サンプリング周期は40〜60日です。新しいトラ・モニタリング・プロトコルはGISに大きく依存しています。
 
 <figure>
 <img src="../images/india_assam2.png" class="align-right" alt="india_assam2.png" />
-<figcaption>Picture of a male tiger that was captured in one of the camera traps</figcaption>
+<figcaption>カメラトラップのひとつで撮られた雄のトラの写真</figcaption>
 </figure>
 
-2012～13年の間に、当社はQGISを使ってNTRでこの新しいトラの監視プロトコルを実装しました。まず、私たちはQGISでNTR境界をデジタル化し、ポリゴンとしてそれを保存しました。この境界ポリゴンは現地調査の際に、ナビゲーションの目的のためにGPSに書き出しされました。私たちは、トラの存在などpugmarks、スクラッチマークや糞の証拠のためのNTRで豊富な看板調査を実施しました。トラの兆候並びにカメラトラップに適した場所のGPS座標を記録しました。調査の完了後、データは、さらなる処理のために、カメラトラップの位置を確定するためのGPSツールを使用してQGISに移しました。トラの兆候と考えられるカメラトラップの位置を含むシェープファイルを作成しました。
+2012～13年の間に、私たちはQGISを使い、NTRでこの新しいトラモニタリングプロトコルを実装しました。私たちはまずQGISでNTR境界をデジタイズし、それをポリゴンとして保存しました。この境界ポリゴンは、現地調査でナビゲーション用にGPSにエクスポートされました。
+私たちはNTRで、足跡、引っかき傷、糞といったトラの存在の証拠を求めて広範囲に渡る兆候の調査を実施しました。トラの兆候のあった場所だけでなく、カメラトラップに適した場所のGPS座標が記録されました。調査の完了後、さらなる処理とカメラトラップの位置を確定するため、GPSツールを使用してデータをQGISに移しました。トラの兆候のあった場所と考えられるカメラトラップの位置を格納したシェープファイルを作成しました。
 
 <figure>
 <img src="../images/india_assam3.png" alt="india_assam3.png" />
-<figcaption>Block wise distribution of camera trap locations and assigning camera traps to different forest camps by using voronoi polygons &amp; hub distance.</figcaption>
+<figcaption>ボロノイ多角形とハブ距離を使った、カメラトラップの設置場所のブロックごとの分類と、カメラトラップの各森林キャンプへの割り当て。</figcaption>
 </figure>
 
-Next we prepared 4 sq km grid layer using mmqgis plugin. The shape file containing results of sign survey was overlaid on the 4 sq grid to visualise the distribution of camera traps in NTR. Distance matrix option under vector analysis tools was quite handy for determining the inter camera distance. Camera locations having less than 1.8 km inter distance were removed to comply with the monitoring protocol. Due to lack of sufficient cameras to monitor the entire reserve area in one go, we decided to divide the reserve area into 2 blocks of 100 sq km each. Boundaries of these blocks were digitised and saved as separate shape files for both the blocks. Using RGB composition plugin, a false color composite of the reserve was created and the sign survey shape file overlaid to assess the habitat types used by the tiger. During the study period, the camera traps have to be monitored intensively by the field staff. To ensure smooth functioning of monitoring process, we used Voronoi polygon feature of Geometry tools and hub distance of mmqgis plugin for planning logistic requirements. The geographic coordinates of camera traps are required for estimating the tiger density and occupancy modelling of other species. These coordinate details were easily generated from camera trap shape files by using the "Export/ add geometry columns" feature of vector Geometry tools.
+次に、mmqgisプラグインを使用して4平方キロメートルのグリッドレイヤーを作成しました。痕跡調査の成果を格納したシェープファイルをこの4平方キロメートルのグリッド上に重ね合わせ、NTRにおけるカメラトラップの分布を可視化しました。ベクタ解析ツールの「距離行列」オプションは、カメラ間の距離を算出するのに非常に役立ちました。モニタリングプロトコルに準拠するため、カメラ間の距離が1.8 km未満の設置場所は除外しました。保護区全域を一度にモニタリングするのに十分なカメラ数が確保できなかったため、保護区をそれぞれ100平方キロメートルの2つのブロックに分割することにしました。ブロックの境界をデジタイズし、ブロックごとに別のシェープファイルとして保存しました。RGB合成プラグインを使用して保護区の偽色合成画像を作成し、そこに痕跡調査のシェープファイルを重ね合わせることで、トラが利用する生息地タイプを評価しました。調査期間中、カメラトラップは野外スタッフによる集中的なモニタが必要です。モニタリングプロセスを円滑に進めるため、ロジスティクス要件の計画には、Geometryツールのボロノイポリゴン地物とmmqgisプラグインのハブ距離を使用しました。トラの密度推定や他の種の生息域モデリングには、カメラトラップの地理座標が必要となる。これらの座標の詳細は、ベクトルジオメトリツールの「ジオメトリ列のエクスポート／追加」機能を使用することで、カメラトラップのシェープファイルから容易に生成されました。
 
 <figure>
 <img src="../images/india_assam4.png" class="align-right" alt="india_assam4.png" />
-<figcaption>Survey grids with tiger presence</figcaption>
+<figcaption>トラの有無を持った調査グリッド </figcaption>
 </figure>
 
 ## 結論
-For the first time in the history of this small tiger reserve of North East India, it was possible to monitor tigers by using camera traps mainly because of QGIS. Results of this monitoring exercise indicate the presence of 8-15 tigers in this landscape. In addition to the tigers, several elusive species have also been photographically documented. Apart from tiger monitoring, we are also using QGIS for activities such as planning habitat management works, revising patrolling schedules, and designing maps for visitors. The user-friendly interface, rich features, in-depth documentation, on-line support and the free/open source philosophy are the few qualities of QGIS that made us to select it over other proprietary software. We believe that QGIS has great potential for empowering individuals/institutions/ involved in conserving endangered wildlife in the developing world by offering GIS technology at little or no cost.
+主にQGISを活用したことで、インド北東部にあるこの小さなトラ保護区の歴史上初めて、カメラトラップを用いたトラのモニタリングが可能となりました。このモニタリングの結果、この地域には8～15頭のトラが生息していることが明らかになりました。トラに加え、数種の目撃が困難な種も写真によって記録されました。私たちはトラのモニタリング以外にも、生息地管理事業の計画立案、パトロールスケジュールの見直し、来訪者向け地図の作成といった活動にもQGISを活用しています。使いやすいインターフェース、豊富な機能、詳細なドキュメント、オンラインサポート、そしてフリー／オープンソースという理念は、他のプロプライエタリなソフトウェアではなくQGISを選んだ理由の一部です。QGISは、GIS技術を低コストあるいは無償で提供することで、発展途上国において絶滅危惧種の野生生物の保全に携わる個人や機関の能力を強化する大きな可能性を秘めていると私たちは考えています。
 ## 著者
 <figure>
 <img src="../images/india_assamaut.png" class="align-left" height="200" alt="india_assamaut.png" />
 <figcaption>Rajendra Garawad</figcaption>
 </figure>
 
-この記事は2013年3月にラジェンドラ・G. Garawadによって寄稿されました。氏はNAMERIトラ保護区、アッサム、インドのフィールドディレクターです。森林科学と保全＆土地管理のマスターの学位を保持しています。
+この記事は2013年3月にラジェンドラ・G. Garawadによって寄稿されました。氏はインド・アッサム州ナメリ・トラ保護区のフィールドディレクターです。氏は森林科学と保全＆土地管理の修士号を保持しています。
 
 {{<content-end >}}
