@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2012</span>
+  <span>2012年7月1日</span>
 </p>
 
 ![](../images/india_hyderabad1.png)

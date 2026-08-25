@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2012</span>
+  <span>2012年7月1日</span>
 </p>
 
 The Iberian wolf is a sub-species of the gray wolf that exists only in north of Portugal and Spain, with small isolated groups in the south of Douro river. During the last century, it suffered a high regression, being a "vulnerable" species in Spain and "endangered" in Portugal. Nowadays, there are only around 300 wolves in Portugal, due to the high persecution, destruction and fragmentation of the habitat.
