@@ -17,7 +17,7 @@ SupportedOS: 'Disponível para Windows, Mac, Linux '
 draft: false
 heroLogo: img/logosign.svg
 heroSize: is-medium
-subtitle: Spatial visualization and decision-making tools for everyone
+subtitle: 'Visualização espacial e ferramentas de tomada de decisão para todos '
 title: Espacial sem compromisso
 type: page
 
