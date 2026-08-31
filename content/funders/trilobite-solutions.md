@@ -8,8 +8,8 @@
 level: "Medium"
 title: "Trilobite Solutions"
 logo: "trilobite-solutions.png"
-startDate: "2025-03-01"
-endDate: "2026-08-30"
+startDate: "2026-09-01"
+endDate: "2027-02-28"
 link: "https://trilobite.solutions/"
 country: "Australia"
 ---
