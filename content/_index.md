@@ -16,7 +16,7 @@ BadgeLink: "https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-g
 OsgeoBadge: "img/badges/osgeo-logo-white.svg"
 OsgeoBadgeLink: "https://www.osgeo.org/projects/qgis/"
 
-HasAnnouncement: true
+HasAnnouncement: false
 AnnouncementTitle: "is here!"
 AnnouncementText: "Discover the new features, improvements, and everything that makes this release a landmark moment."
 AnnouncementLinkText: "Explore the changelog"
