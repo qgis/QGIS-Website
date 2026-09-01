@@ -147,4 +147,10 @@ As python execution in a desktop environment is inheriting all the privileges of
 
 No we don't. If you need them, please contact us and consider funding QGIS.org to absorb the work load those compliance requirements put on our shoulders. QGIS.org is not a service provider, and QGIS is avalaible following the term of the GPL 2 licence.
 
+### Can QGIS.org fill my own compliance form ?
+
+QGIS.org is a foundation run by donations and membership fees. We have limited resources among our volunteer and paid staff. We are currently seeing a tendency for each organisation to create its own form. We can't fill them out for you, but we will put as much information as possible here on the website to help you fill in those forms. As soon as those forms follow a national or international standard, we would be more than happy to publish them online.
+
+For instance, you can find the US HECVAT and VPAT forms managed by the US user group, published at <https://www.qgis-us.org/hecvat/> and <https://www.qgis-us.org/vpat/>.
+
 {{< content-end >}}
