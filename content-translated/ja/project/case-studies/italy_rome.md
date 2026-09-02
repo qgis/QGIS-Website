@@ -17,10 +17,10 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>March 01, 2015</span>
+  <span>2015年3月1日</span>
 </p>
 
-The Institute of Environmental Geology and Geoengineering (IGAG) of the National Research Council (CNR) is located in Rome, in the Area of Research \"Roma 1\". It was founded in 2002 by regrouping five former research Institutes and Centers that had been active for more than 40 years in their field of expertise. IGAG covers a wide range of scientific topics in the field of Earth sciences, mainly focusing towards the study of:
+米国学術研究会議（CNR）の環境地質とジオエンジニアリング研究所（IGAG）は、ローマ市の「ローマ1」研究エリアに位置しています。それは、それぞれの専門分野で40年以上にわたり活動していた5つの元研究機関やセンターの再編によって2002年に設立されました。IGAGは地球科学の分野で科学的なトピックの広い範囲をカバーしており、主に次の研究に焦点を当てています：
 - 汚染された土壌及び水の地球化学環境および修復;
 - 廃水の処理を含む鉱床および鉱物処理、;
 - 岩の発掘調査のジオエンジニアリングおよび安全性。

@@ -1,25 +1,8 @@
 ---
-HasBanner: false
-archived: true
-date: 2015-10-30
-draft: false
-featured: false
-section: project
-sidebar: true
-thumbnail: images/italy_cesena1.png
-title: チェゼーナの壁を描くQGIS
-type: case-study
+draft: 'true'
 
 ---
-{{<content-start >}}
 # チェゼーナの壁を描くQGIS
-<p class="is-size-6 is-italic has-text-weight-medium">
-  <span class="icon">
-    <i class="fas fa-calendar-alt"></i>
-  </span>
-  <span>2015年10月30日</span>
-</p>
-
 「eキャンパス大学」はオンライン大学として創設され、MIUR（イタリア文部科学省）の2006年1月30日の省令により認可されました。それは労働市場に貢献するため、若者、専門家、起業家、経営幹部並びにビジネス及び文化関係者に対してeラーニングプラットフォームを通じた大学へのアクセスを提供する目的で作られました。ミラノ国際キャンパスとしても知られる本部、ノヴェドラーテキャンパスは、元ノヴェドラーテ（コモ、イタリア）IBM訓練センターの中の、静かな緑のブリアンツァにあるキャンパスに位置しています。
 
 大学には、エンジニアリング、経済学、心理学、芸術、法律の5つの仮想学部があります。古地図とQGISプロジェクト　城壁はチェゼーナの街を特徴づけています。そのサソリ型の形状が新しいゾーンから歴史的な中心部を分けています。
@@ -28,10 +11,7 @@ type: case-study
 
 QGISは、これらのジオリファレンスした地図を推敲し、分析し、比較するためになくてはならないツールであり、道路、建物、公園や庭園、城壁、古代の要塞塔、古代の城門などの地図のすべての要素をベクターレイヤーまたはシェープファイルを使って記録しました。ポイント、ライン、ポリゴンレイヤーが使われ、分析、調査、ジオプロセシング、ジオメトリ、データ管理ツールを使用してこれらのレイヤーを比較しました（図1）。
 
-<figure>
-<img src="../images/italy_cesena1.png" style="width:100.0%" alt="italy_cesena1.png" />
-<figcaption>図1 このQGIS プロジェクトの概念マップ</figcaption>
-</figure>
+![Fig. 1 Concept Map of the QGIS project](./images/italy_cesena1.png){width="100.0%"}
 
 このツールを使用して、私は以下の情報を得ました：
 - 1502年に実施したレオナルド・ダ・ヴィンチの地形調査の精度（いくつの調査地点が正しいかなど）（図2）
@@ -40,21 +20,14 @@ QGISは、これらのジオリファレンスした地図を推敲し、分析�
 - 城壁の形態変化、例えば古代の要塞塔とその古代の城門の解体。
 - 16世紀から現在までのチェゼーナの都市化
 
-<figure>
-<img src="../images/italy_cesena2.png" style="width:100.0%" alt="italy_cesena2.png" />
-<figcaption> 図2：オープンレイヤグーグルサテライトに異なるレイヤに記録された情報を重ね合わせたもの: 黒は現在の城壁、オレンジはレオナルド・ダ・ヴィンチによる城壁の地形調査、黄色はレオナルド・ダ・ヴィンチによる調査地点、赤は現在の古代城門 </figcaption>
-</figure>
+![Fig. 2: Openlayer Google Satellite overlapped by the informations recorded in different layers: the present City Wall in black, the Leonardo Da Vinci\'s topographic survey of the City Wall in orange, the Leonardo Da Vinci\'s points of survey in yellow and the present ancient City Gates in red.](./images/italy_cesena2.png){width="100.0%"}
 
 たくさんのQGISツールのうちのいくつかを使って次のものを作成しました:
 - 現在の城壁のラインレイヤの各セクションを実際の保存状態を表す写真につなぐリンク；
 - プリントコンポーザを使った19世紀のチェゼーナの地図
 - qgis2threejsプラグインを使用したチェゼーナの3Dモデル（図3）
 
-<figure>
-<img src="../images/italy_cesena3.png" style="width:100.0%" alt="italy_cesena3.png" />
-<figcaption> 図3：現在の城壁と壁の内外のチェゼーナの建物の3Dモデル。古代の要塞塔と古代の城門が示されています。 </figcaption>
-</figure>
-
+![Fig. 3: The 3D model of the present City Wall and Cesena\'s buildings inside and outside the Wall. The ancient fortified towers and the ancient City Gates are indicated.](./images/italy_cesena3.png){width="100.0%"}
 ## 結論
 古地図は、その精度が実際の地図製作の文書の精度と比較できないとしても、重要な書類であり、地理的な表現の専門家ではない人にとっても非常に伝達力のある表現です。QGISは、古地図の数値的な内容を、効果的で意味のある表現に従って利用できる唯一の手段でした。
 ## 書誌索引
@@ -71,5 +44,3 @@ QGISは、これらのジオリファレンスした地図を推敲し、分析�
 
 ## 著者
 カミラ・ファブリは土木環境工学の学士号の保持者です。彼女は監修者のアレッサンドラ・ボルギ（eCampus 大学土木環境工学学部の地形と理論力学の大学教師）と共に QGIS プログラムを使用してチェゼーナの壁の歴史地図作成についての彼女の論文を作成しました。
-
-{{<content-end >}}

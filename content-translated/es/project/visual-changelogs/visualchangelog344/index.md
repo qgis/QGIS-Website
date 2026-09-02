@@ -431,7 +431,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
 - Rename Project
 - Delete Project
-- Duplicate Project
+- Duplicar Proyecto
 - Move Project to Schema
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />
