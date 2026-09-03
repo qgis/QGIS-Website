@@ -16,7 +16,7 @@ type: visual-changelog
 
 In Memorium: This release is named \'Tisler\' after a small Norwegian island that was a favourite visiting place of Håvard Tveite who passed away in May 2021. Håvard was a very active member of the QGIS community, providing valuable input to the documentation, developing numerous plugins, and taking care of the QGIS Resources Sharing Repository to name just a few of his contributions. The map on the QGIS 3.24 splash screen is an orienteering map that Håvard has created. He liked spending some time each year map-making at Tisler.
 
-We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+さらに、開発者、ドキュメント作成者、テスター、 そして、これらのリリースを可能にするために時間と労力をボランティアとして提供してくださる（あるいはそのための資金を提供してくださる）多くの皆様に、心より感謝申し上げます。QGISコミュニティを代表して、このリリースをぜひお楽しみください！時間や資金の寄付、あるいはその他の形で QGIS をより素晴らしいものにするために参加をご希望の方は、ぜひ [QGIS.ORG](https://www.qgis.org/) にアクセスして、ご協力をお願いいたします！
 
 For a whirlwind tour of all the new functionalities introduced, you can view the highlight reel video on youtube at <https://youtu.be/gVgR4Oxqtkk>
 

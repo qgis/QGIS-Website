@@ -14,15 +14,15 @@ type: visual-changelog
 
 リリース日: 2021-02-19
 
-Following on from the feature-filled releases of [QGIS 3.14](https://qgis.org/en/site/forusers/visualchangelog314/) and [QGIS 3.16](https://qgis.org/en/site/forusers/visualchangelog316/), QGIS 3.18 introduces a host of enhancements and new features, along with a long-awaited feature - Native Point Cloud support in QGIS! Thanks to the efforts of [Lutra](https://www.lutraconsulting.co.uk/), [North Road](https://north-road.com/), and [Hobu](https://hobu.co/), QGIS is now able to import and render point cloud data in various formats by leveraging the Open Source PDAL library. This functionality has been introduced due to the success of a [crowd-funding campaign](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) and would not have been possible without the support of the QGIS community and contributors. Thank you to all those involved in realizing this incredible milestone!
+機能が充実した [QGIS 3.14](https://qgis.org/en/site/forusers/visualchangelog314/) および [QGIS 3.16](https://qgis.org/en/site/forusers/visualchangelog316/) のリリースに続き、QGIS 3.18では、数多くの機能強化や新機能に加え、待望の機能である QGIS のネイティブな点群対応が導入されました！ [Lutra](https://www.lutraconsulting.co.uk/)、 [North Road](https://north-road.com/) そして [Hobu](https://hobu.co/) の皆さんの尽力により、QGIS はオープンソースの PDAL ライブラリを活用して、様々な形式の点群データをインポートしてレンダリングできるようになりました。この機能は [クラウドファンディングキャンペーン](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) の成功により実現したものであり、QGISコミュニティや貢献者の方々の支援がなければ実現できなかったでしょう。この素晴らしく画期的な出来事の実現に関わった全ての方々に感謝いたします！
 
-As QGIS Desktop 3.18 bids farewell to the DB2 database provider, it introduces support for users of the SAP HANA database system.
+QGIS Desktop 3. 18 では、DB2 データベースプロバイダーへの対応が終了する一方で、SAP HANA データベースシステムの利用者をサポートする機能が導入されました。
 
-The QGIS ecosystem has also seen some exciting changes in the form of the [QGIS HUB](https://plugins.qgis.org/) which is an extension of the plugin site which now supports the distribution of community developed [styles](https://plugins.qgis.org/styles/), [projects](https://plugins.qgis.org/geopackages/), and even [processing models](https://plugins.qgis.org/models/).
+また、QGIS のエコシステムにおいても、[QGIS HUB](https://plugins.qgis.org/) という形でエキサイティングな変化が見られます。これはプラグインサイトの拡張版であり、コミュニティが開発した [スタイル](https://plugins.qgis.org/styles/) 、[プロジェクト](https://plugins.qgis.org/geopackages/)、さらには [プロセシングモデル](https://plugins.qgis.org/models/) の配布にも対応するようになりました。
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/Yeo6sXVpXvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
-We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+さらに、開発者、ドキュメント作成者、テスター、 そして、これらのリリースを可能にするために時間と労力をボランティアとして提供してくださる（あるいはそのための資金を提供してくださる）多くの皆様に、心より感謝申し上げます。QGISコミュニティを代表して、このリリースをぜひお楽しみください！時間や資金の寄付、あるいはその他の形で QGIS をより素晴らしいものにするために参加をご希望の方は、ぜひ [QGIS.ORG](https://www.qgis.org/) にアクセスして、ご協力をお願いいたします！
 
 QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
 
@@ -32,21 +32,21 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 {{<table-of-contents >}}
 ## ユーザーインタフェース
-### Feature: Hide derived attributes from the Identify results
-Previously, the QGIS Desktop *Identify* utility would expose a large number of derived attributes, such as geometry information. Although incredibly valuable, for many use cases this information is verbose. Users will now have the option to toggle the display of derived attributes to create a more concise view of the Identify results.
+### 機能: 地物情報で、派生した属性を非表示にする
+以前は、QGIS Desktop の *情報表示* ユーティリティでは、ジオメトリ情報など、派生した属性が多数表示されていました。これらは非常に有用ですが、多くのユースケースにおいて、この情報は冗長です。ユーザは、派生した属性の表示を切り替えるオプションを利用できるようになり、地物情報の表示をより簡潔にすることができます。
 
 ![image2](images/entries/96178054-1aa78d80-0f2f-11eb-8d75-299bfd6aa73e.webp)
 
 ![image3](images/entries/c9eea14d2c01670795967bd1e42fcb8777330718.webp)
 
-This feature was developed by [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde)
-### Feature: Close all tabs at once from message logs interface
-The QgsMessageLogViewer now includes an **\"Empty tab and close others\"** to the log viewer panel context menu, supporting a quicker action to a clean interface when debugging.
+この機能は [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde) によって開発されました
+### 機能: メッセージログインターフェースから全てのタブを一度に閉じる
+QgsMessageLogViewer では、ログビューアパネルのコンテキストメニューに **「全てのタブを閉じると他のタブを閉じる」** が追加され、デバッグ時にインターフェースを素早く整理できるようになりました。
 
 ![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.webp)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
-### Feature: API for layer source widgets
+### 機能：レイヤーソースウィジェット用 API 
 An API has been added in the provider GUI to allow a provider to create a custom widget, which exposes options to customize and change the layer\'s source. For example, a file-based layer provider could expose a widget for selecting a new file path, or an online provider could expose widgets for changing the host or authentication information.
 
 Two implementations have been added for this:
@@ -58,25 +58,25 @@ Two implementations have been added for this:
 ![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.webp)
 
 This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: GUI for dynamic SVGs
+### 機能: 動的SVG用のGUI
 QGIS now supports dynamic standard vector graphic elements, as outlined in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). This allows QGIS to dynamically replace attributes or node values in the XML of the SVG and apply data-driven values to SVG elements. QGIS Desktop has additionally added a GUI editor to ensure that users are able to properly leverage this new functionality.
 
 ![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.webp)
 
 This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
-### Feature: Zoom to multiple layers
+### 機能: 複数レイヤへの拡大
 The \"Zoom to Layer\" function available from the context menu, the View menu and the Map Navigation toolbar can now zoom to the extent of all the selected layers in the layer tree.
 
 ![image8](images/entries/101234295-f1cc8a80-368b-11eb-9b52-8f42a4f994a2.gif)
 
 This feature was developed by [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
-### Feature: Zoom and pan to selection for multiple layers
+### 機能：複数レイヤの選択範囲へのズームとパン
 The \"Zoom to Selection\" and \"Pan Map to Selection\" functions available from the context menu, the View menu or the Map Navigation toolbox now offer the ability to navigate to the extent of the selection from the selected layers in the layer tree.
 
 ![image9](images/entries/a76fca5cfc367779584da0655cd18474e4518329-1.gif)
 
 This feature was developed by [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
-### Feature: Zoom in/out by scrolling mouse wheel over map overview panel
+### 機能：地図の全体図パネル上でマウスホイールをスクロールしてズームイン/ズームアウト
 Users can now zoom in and out from the Map Overview panel using the mouse scroll.
 
 ![image10](images/entries/77b55b4c85c9c4f5076b1a735f7971819cc2a2ee.gif)
@@ -87,7 +87,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 This modifies the previous support for grayscale and LMS-based simulation for protanopia and deuteranopia, bringing it in line with the methodology currently used in Chromium and Firefox. QGIS now uses updated grayscale luminance calculations (renamed to achromatopsia), a precomputed protanopia matrix (renamed from protanope), a precomputed deuteranopia matrix (renamed from deuteranope), and an additional mode for tritanopia using a similarly precomputed matrix.
 
 This feature was developed by [Will Cohen](https://api.github.com/users/willcohen)
-### Feature: Rotation widget for the Georeferencer
+### 機能: ジオリファレンサー用の回転ウィジェット
 The georeferencer canvas can now be rotated in order to facilitate the placement of reference points. This is especially useful for scanned images which may not have uniform orientations.
 
 ![image11](images/entries/aba35ba4bb5ff0f2a8c1afcb55673e496efea18a.gif)
