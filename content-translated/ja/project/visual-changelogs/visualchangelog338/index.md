@@ -237,7 +237,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 このモードでは、ユーザーは @band、@band\_name、@band\_description のような変数を標準のQGIS式の値、グローバル変数、プロジェクト変数と組み合わせて使用して、ラスターバンドに対応する下限値と上限値のQGIS式を指定できます。
 
-For example:
+例:
 
     @band * 100
     

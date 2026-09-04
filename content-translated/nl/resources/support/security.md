@@ -59,14 +59,50 @@ Als u werkt in een gevoelige omgeving, adviseren we u om :
 - Focus niet alleen op breuken in de code, maar ook op het gedrag van gebruikers met betrekking tot inloggegevens en het risico van lekken in projectbestanden als gebruikers staan op het gebruiken van basisauthenticatie (wat zal resulteren in het feit dat inloggegevens worden opgeslagen in platte tekst in projectbestanden).
 
 ### Maken we Common Vulnerabilities and Exposures (CVE)?
-Momenteel is het project QGIS **geen** CVE Numbering Authority (CNA), dus geven we geen identificaties voor CVE uit.
-### Beveiligingsproces en werkstroom
-Onthullingen worden besproken in een daarvoor aangewezen private opslagplaats.
+We can provide CVE identifiers, if you disclose your vulnerability via [Github advisories](https://github.com/qgis/QGIS/security) We won't affect CVE if the vulnerability concerns an upstream dependency.
+### Security vulnerability management and vulnerability disclosure processes
+Disclosures are discussed in private [Github advisories](https://github.com/qgis/QGIS/security)
 
 Reparaties worden zo snel als mogelijk is doorgevoerd in puntuitgaven - afhankelijk van de ernst van het probleem.
 
 Als u uw zakelijke uitrol van QGIS veilig wilt houden, zorg er dan voor dat u in staat bent snel reparaties uit te kunnen voeren aan de machines die u beheert.
 
 OSGeo4W verschaft updatescripts die zonder toezicht kunnen worden uitgevoerd. Deze scripts maken het voor u mogelijk alleen de noodzakelijke bibliotheken te upgraden, zonder de noodzaak om het gehele pakket opnieuw te downloaden. Voor meer informatie over het instellen van deze scripts voor uw uitrol, bekijk de [documentatie van OSGeo4W](https://trac.osgeo.org/osgeo4w/).
+### Are there independent security audit available ?
+The latest public audit available has been conducted by the Swiss National Cyber Security Centre (NCSC) during a [pilot project for testing security vulnerabilities in open source software](https://www.bacs.admin.ch/en/25-ntc-oss-en).
+
+{{<rich-list listLink="../media/ntc-test-report-qgis-v1-2025-10-13.pdf" linkAttr="download" layoutClass="third" listTitle="Security Audit QGIS Server and QWC2 - Test Report 2025.10.13 NCSC" listSubtitle=" PDF downloaden" >}}
+
+QGIS has been assessed privately by many organisations, sometimes in very sensitive context from security management to network utilities.<br />QGIS server, as it is a web server interacting with databases, is the most critical part. It has been hardened against SQL injections.
+### Have penetration tests been conducted ?
+QGIS Desktop is a desktop tool, not a SaaS software. It does not need a remote infrastructure.
+
+QGIS server has been tested against vulnerabilities and follows a classical discoslure / fix procedure.
+### Secure software development and code-review practices
+Een globaal overzicht van onze beveiliging is te vinden met het [gereedschap OpenSSF Scorecard report](https://securityscorecards.dev/viewer/?uri=github.com/qgis/QGIS).
+
+Multi Factor authentication is mandatory on our Github repositories.
+### Software release integrity and verification mechanisms
+Every [available package](https://www.qgis.org/resources/installation-guide/) is available with a checksum. MacOS packages are notarized. We are aware of the risks of XZ style supply chain attack. The contributors can gain privileges only after a long and committed period, and after real world meeting during our contributor meetings.
+### What is the supported versions and security patch/EOL policy
+See <https://www.qgis.org/resources/roadmap/>.
+### How is done the security management of third-party dependencies ?
+QGIS.org endorses only Ubuntu/Debian and Windows packaging.
+
+Dependency for Ubuntu/Debian relies on the user's distribution and is not of QGIS.org responsability.
+
+Windows installer packages library, via the [OSGEO4W project](https://trac.osgeo.org/osgeo4w). Our maintainers are committed to react as fast as possible, depending on the vulnerability's criticity.
+### Security controls or review processes applicable to third-party QGIS plugins
+QGIS Desktop is packaged with a python plugin's installer, that allows users to install third party extensions, just like web browsers do.
+
+See <https://plugins.qgis.org/docs/security-scanning>
+
+As python execution in a desktop environment is inheriting all the privileges of a user, deployment in sensitive environments should deactivate direct access to this repository and replace it with an internal repository, allowing only audited plugins.
+### Do you provide ISO 27001 certification, SOC 2, CRA attestation ?
+No we don't. If you need them, please contact us and consider funding QGIS.org to absorb the work load those compliance requirements put on our shoulders. QGIS.org is not a service provider, and QGIS is avalaible following the term of the GPL 2 licence.
+### Can QGIS.org fill my own compliance form ?
+QGIS.org is a foundation run by donations and membership fees. We have limited resources among our volunteer and paid staff. We are currently seeing a tendency for each organisation to create its own form. We can't fill them out for you, but we will put as much information as possible here on the website to help you fill in those forms. As soon as those forms follow a national or international standard, we would be more than happy to publish them online.
+
+For instance, you can find the US HECVAT and VPAT forms managed by the US user group, published at <https://www.qgis-us.org/hecvat/> and <https://www.qgis-us.org/vpat/>.
 
 {{<content-end >}}

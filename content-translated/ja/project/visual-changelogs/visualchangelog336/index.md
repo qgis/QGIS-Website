@@ -358,7 +358,7 @@ This feature was developed by [Björn Hinkeldey](https://github.com/pathmapper)
 ### Feature: Option to skip "name" attribute for groups in WMS GetCapabilities
 We've added a new project level setting to **Skip name attribute for groups**. This is disabled by default, but enabling it allows you to exclude group names from a GetCapabilities response on a WMS request. This prevents name duplication in instances where a layer and group share the same name, whilst preserving the group element and bringing the QGIS Server capabilities more in line with the OGC WMS Specification.
 
-For example:
+例:
 
 `text <Layer queryable="1"> <Name>layer_name</Name> <--- this will be skipped when option is enabled <Title>Human readable name</Title>`
 

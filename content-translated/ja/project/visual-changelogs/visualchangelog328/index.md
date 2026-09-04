@@ -206,13 +206,13 @@ This is a step towards eventually deprecating the older `$` style functions, and
 ![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add new shared_paths function
+### 機能: shared_paths 関数を新規追加
 A new `shared_paths` function has been added which returns a collection containing paths shared by the two input geometries. Those going in the same direction are in the first element of the collection, and those going in the opposite direction are in the second element. The paths themselves are given in the direction of the first geometry.
 
 ![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Make_valid and geom_to_array functions
+### 機能: Make_valid 及び geom_to_array 関数
 Additional functions have been added for:
 - `make_valid`: Repair broken input geometries and returns the corrected geometries
 - `geometries_to_array`: This converts a geometry collection into an array for easier handling and iteration
@@ -275,7 +275,7 @@ A new advanced parameter is available for some processing tools which allows the
 この機能は Orange Telecom FR によって資金提供されました
 
 This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
-### Feature: Improved \"Make Valid\" Algorithms
+### 機能: 「有効にする」アルゴリズムの改善
 QGIS can now use the newer refined GEOS 3.10+ methods for validating and repairing geometry features.
 
 ![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.webp)
