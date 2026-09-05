@@ -3,32 +3,32 @@
   "prefix": "",
   "distribution": "debian_ubuntu_nightly_release",
   "source_folder": "debian-nightly-release",
-  "generated_at": "2026-09-03T14:06:46.598812+00:00",
+  "generated_at": "2026-09-05T02:07:45.955461+00:00",
   "statistics": {
-    "total_files": 29944,
-    "total_size": 737790738704,
-    "total_size_formatted": "687.12 GB",
+    "total_files": 29980,
+    "total_size": 738704417938,
+    "total_size_formatted": "687.97 GB",
     "by_category": {
       "other": {
-        "count": 769,
-        "size": 95899389,
-        "size_formatted": "91.46 MB"
+        "count": 770,
+        "size": 95953978,
+        "size_formatted": "91.51 MB"
       },
       "archive": {
-        "count": 655,
-        "size": 137388125933,
-        "size_formatted": "127.95 GB"
+        "count": 656,
+        "size": 137672674934,
+        "size_formatted": "128.22 GB"
       },
       "installer": {
-        "count": 28520,
-        "size": 600306713382,
-        "size_formatted": "559.08 GB"
+        "count": 28554,
+        "size": 600935789026,
+        "size_formatted": "559.67 GB"
       }
     },
     "by_extension": {
-      ".deb": 28520,
-      ".gz": 604,
-      ".dsc": 518,
+      ".deb": 28554,
+      ".gz": 605,
+      ".dsc": 519,
       "no extension": 207,
       ".bz2": 51,
       ".gpg": 32,
@@ -37,7 +37,7 @@
       ".d71472c4": 1,
       ".dd45f6c3": 1
     },
-    "last_updated": "2026-09-03T14:06:46.586768+00:00"
+    "last_updated": "2026-09-05T02:07:45.944176+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -150,8 +150,8 @@
             "key": "debian-nightly-release/db/packages.db",
             "name": "packages.db",
             "path": "db",
-            "size": 51392512,
-            "size_formatted": "49.01 MB",
+            "size": 51429376,
+            "size_formatted": "49.05 MB",
             "last_modified": "2026-04-27T05:58:42+00:00",
             "last_modified_timestamp": 1777269522,
             "extension": ".db",
@@ -3561,8 +3561,8 @@
                         "key": "debian-nightly-release/dists/plucky/main/binary-amd64/Packages",
                         "name": "Packages",
                         "path": "dists/plucky/main/binary-amd64",
-                        "size": 968193,
-                        "size_formatted": "945.50 KB",
+                        "size": 980702,
+                        "size_formatted": "957.72 KB",
                         "last_modified": "2026-04-27T01:20:27+00:00",
                         "last_modified_timestamp": 1777252827,
                         "extension": "",
@@ -3572,8 +3572,8 @@
                         "key": "debian-nightly-release/dists/plucky/main/binary-amd64/Packages.bz2",
                         "name": "Packages.bz2",
                         "path": "dists/plucky/main/binary-amd64",
-                        "size": 122757,
-                        "size_formatted": "119.88 KB",
+                        "size": 124562,
+                        "size_formatted": "121.64 KB",
                         "last_modified": "2026-04-27T01:20:27+00:00",
                         "last_modified_timestamp": 1777252827,
                         "extension": ".bz2",
@@ -3583,8 +3583,8 @@
                         "key": "debian-nightly-release/dists/plucky/main/binary-amd64/Packages.gz",
                         "name": "Packages.gz",
                         "path": "dists/plucky/main/binary-amd64",
-                        "size": 150937,
-                        "size_formatted": "147.40 KB",
+                        "size": 152740,
+                        "size_formatted": "149.16 KB",
                         "last_modified": "2026-04-27T01:20:27+00:00",
                         "last_modified_timestamp": 1777252827,
                         "extension": ".gz",
@@ -22125,6 +22125,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-3d4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-3d4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 17512926,
+                        "size_formatted": "16.70 MB",
+                        "last_modified": "2026-09-05T02:04:24.574000+00:00",
+                        "last_modified_timestamp": 1788573864,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgis-analysis2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "name": "libqgis-analysis2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -38731,6 +38742,17 @@
                         "size_formatted": "28.37 MB",
                         "last_modified": "2026-09-03T14:03:31.296000+00:00",
                         "last_modified_timestamp": 1788444211,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-analysis4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-analysis4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 33728070,
+                        "size_formatted": "32.17 MB",
+                        "last_modified": "2026-09-05T02:04:30.643000+00:00",
+                        "last_modified_timestamp": 1788573870,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -55345,6 +55367,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-app4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-app4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 43919924,
+                        "size_formatted": "41.89 MB",
+                        "last_modified": "2026-09-05T02:04:34.470000+00:00",
+                        "last_modified_timestamp": 1788573874,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgis-core2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "name": "libqgis-core2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -71955,6 +71988,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-core4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-core4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 116219846,
+                        "size_formatted": "110.84 MB",
+                        "last_modified": "2026-09-05T02:05:02.352000+00:00",
+                        "last_modified_timestamp": 1788573902,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgis-customwidgets_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "name": "libqgis-customwidgets_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -79589,6 +79633,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-customwidgets_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-customwidgets_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5394944,
+                        "size_formatted": "5.15 MB",
+                        "last_modified": "2026-09-05T02:04:20.201000+00:00",
+                        "last_modified_timestamp": 1788573860,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgis-dev_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "name": "libqgis-dev_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -87219,6 +87274,17 @@
                         "size_formatted": "6.31 MB",
                         "last_modified": "2026-09-03T14:03:22.610000+00:00",
                         "last_modified_timestamp": 1788444202,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-dev_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-dev_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6603288,
+                        "size_formatted": "6.30 MB",
+                        "last_modified": "2026-09-05T02:04:20.890000+00:00",
+                        "last_modified_timestamp": 1788573860,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -103833,6 +103899,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-gui4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-gui4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 81734550,
+                        "size_formatted": "77.95 MB",
+                        "last_modified": "2026-09-05T02:04:48.864000+00:00",
+                        "last_modified_timestamp": 1788573888,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgis-native3.10.2_3.10.2+git20200220+15d9249f71+30disco_amd64.deb",
                         "name": "libqgis-native3.10.2_3.10.2+git20200220+15d9249f71+30disco_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -120399,6 +120476,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-native4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-native4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4536348,
+                        "size_formatted": "4.33 MB",
+                        "last_modified": "2026-09-05T02:04:19.818000+00:00",
+                        "last_modified_timestamp": 1788573859,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgis-networkanalysis2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "name": "libqgis-networkanalysis2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -123959,6 +124047,17 @@
                         "size_formatted": "6.30 MB",
                         "last_modified": "2026-09-03T14:03:22.753000+00:00",
                         "last_modified_timestamp": 1788444202,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-quick_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-quick_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 7196702,
+                        "size_formatted": "6.86 MB",
+                        "last_modified": "2026-09-05T02:04:20.828000+00:00",
+                        "last_modified_timestamp": 1788573860,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -140573,6 +140672,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-server4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgis-server4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8270302,
+                        "size_formatted": "7.89 MB",
+                        "last_modified": "2026-09-05T02:04:21.300000+00:00",
+                        "last_modified_timestamp": 1788573861,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgisgrass6-2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "name": "libqgisgrass6-2.18.16_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -157179,6 +157289,17 @@
                         "size_formatted": "7.17 MB",
                         "last_modified": "2026-09-03T14:03:23.004000+00:00",
                         "last_modified_timestamp": 1788444203,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgisgrass8-4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgisgrass8-4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8239564,
+                        "size_formatted": "7.86 MB",
+                        "last_modified": "2026-09-05T02:04:22.778000+00:00",
+                        "last_modified_timestamp": 1788573862,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -173793,6 +173914,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgispython4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "libqgispython4.2.2_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4559788,
+                        "size_formatted": "4.35 MB",
+                        "last_modified": "2026-09-05T02:04:20.779000+00:00",
+                        "last_modified_timestamp": 1788573860,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/python-qgis-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "name": "python-qgis-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "path": "pool/main/q/qgis",
@@ -179465,6 +179597,17 @@
                         "size_formatted": "3.96 MB",
                         "last_modified": "2026-09-03T14:03:22.291000+00:00",
                         "last_modified_timestamp": 1788444202,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/python-qgis-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "python-qgis-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4150044,
+                        "size_formatted": "3.96 MB",
+                        "last_modified": "2026-09-05T02:04:21.808000+00:00",
+                        "last_modified_timestamp": 1788573861,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -185178,6 +185321,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/python-qgis_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "python-qgis_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4150024,
+                        "size_formatted": "3.96 MB",
+                        "last_modified": "2026-09-05T02:04:22.055000+00:00",
+                        "last_modified_timestamp": 1788573862,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/python3-qgis-common_3.10.2+git20200220+15d9249f71+30disco_all.deb",
                         "name": "python3-qgis-common_3.10.2+git20200220+15d9249f71+30disco_all.deb",
                         "path": "pool/main/q/qgis",
@@ -190817,6 +190971,17 @@
                         "size_formatted": "6.26 MB",
                         "last_modified": "2026-09-03T14:03:23.334000+00:00",
                         "last_modified_timestamp": 1788444203,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/python3-qgis-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "python3-qgis-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6585138,
+                        "size_formatted": "6.28 MB",
+                        "last_modified": "2026-09-05T02:04:23.495000+00:00",
+                        "last_modified_timestamp": 1788573863,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -198389,6 +198554,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/python3-qgis_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "python3-qgis_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 82852824,
+                        "size_formatted": "79.01 MB",
+                        "last_modified": "2026-09-05T02:04:51.898000+00:00",
+                        "last_modified_timestamp": 1788573891,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "name": "qgis-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "path": "pool/main/q/qgis",
@@ -204061,6 +204237,17 @@
                         "size_formatted": "28.47 MB",
                         "last_modified": "2026-09-03T14:03:33.810000+00:00",
                         "last_modified_timestamp": 1788444213,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "qgis-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 28716046,
+                        "size_formatted": "27.39 MB",
+                        "last_modified": "2026-09-05T02:04:35.762000+00:00",
+                        "last_modified_timestamp": 1788573875,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -211468,6 +211655,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-dbg_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-dbg_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4150166,
+                        "size_formatted": "3.96 MB",
+                        "last_modified": "2026-09-05T02:04:25.941000+00:00",
+                        "last_modified_timestamp": 1788573865,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-plugin-grass-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "name": "qgis-plugin-grass-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "path": "pool/main/q/qgis",
@@ -217151,6 +217349,17 @@
                         "size_formatted": "4.37 MB",
                         "last_modified": "2026-09-03T14:03:28.604000+00:00",
                         "last_modified_timestamp": 1788444208,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-plugin-grass-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "qgis-plugin-grass-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4588858,
+                        "size_formatted": "4.38 MB",
+                        "last_modified": "2026-09-05T02:04:31.744000+00:00",
+                        "last_modified_timestamp": 1788573871,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -224800,6 +225009,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-plugin-grass_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-plugin-grass_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 9822628,
+                        "size_formatted": "9.37 MB",
+                        "last_modified": "2026-09-05T02:04:33.889000+00:00",
+                        "last_modified_timestamp": 1788573873,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-provider-grass_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "name": "qgis-provider-grass_2.18.16+git20180222+9c2a0f8+13jessie_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -232445,6 +232665,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-provider-grass_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-provider-grass_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5988996,
+                        "size_formatted": "5.71 MB",
+                        "last_modified": "2026-09-05T02:04:32.917000+00:00",
+                        "last_modified_timestamp": 1788573872,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-providers-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "name": "qgis-providers-common_2.18.16+git20180222+9c2a0f8+13jessie_all.deb",
                         "path": "pool/main/q/qgis",
@@ -238128,6 +238359,17 @@
                         "size_formatted": "5.45 MB",
                         "last_modified": "2026-09-03T14:03:29.666000+00:00",
                         "last_modified_timestamp": 1788444209,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-providers-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "qgis-providers-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5858480,
+                        "size_formatted": "5.59 MB",
+                        "last_modified": "2026-09-05T02:04:33.235000+00:00",
+                        "last_modified_timestamp": 1788573873,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -245777,6 +246019,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-providers_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-providers_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 59496426,
+                        "size_formatted": "56.74 MB",
+                        "last_modified": "2026-09-05T02:04:53.235000+00:00",
+                        "last_modified_timestamp": 1788573893,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-quick-common_4.0.0+git20260309+c441e96f295+18trixie_all.deb",
                         "name": "qgis-quick-common_4.0.0+git20260309+c441e96f295+18trixie_all.deb",
                         "path": "pool/main/q/qgis",
@@ -248534,6 +248787,17 @@
                         "size_formatted": "3.96 MB",
                         "last_modified": "2026-09-03T14:03:29.159000+00:00",
                         "last_modified_timestamp": 1788444209,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-quick-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "qgis-quick-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4152832,
+                        "size_formatted": "3.96 MB",
+                        "last_modified": "2026-09-05T02:04:32.916000+00:00",
+                        "last_modified_timestamp": 1788573872,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -252058,6 +252322,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-quick_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-quick_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4150134,
+                        "size_formatted": "3.96 MB",
+                        "last_modified": "2026-09-05T02:04:33.014000+00:00",
+                        "last_modified_timestamp": 1788573873,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-bin_4.0.0+git20260309+c441e96f295+18trixie_all.deb",
                         "name": "qgis-server-bin_4.0.0+git20260309+c441e96f295+18trixie_all.deb",
                         "path": "pool/main/q/qgis",
@@ -254815,6 +255090,17 @@
                         "size_formatted": "4.76 MB",
                         "last_modified": "2026-09-03T14:03:30.366000+00:00",
                         "last_modified_timestamp": 1788444210,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-bin_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "qgis-server-bin_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5184880,
+                        "size_formatted": "4.94 MB",
+                        "last_modified": "2026-09-05T02:04:33.421000+00:00",
+                        "last_modified_timestamp": 1788573873,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -261569,6 +261855,17 @@
                         "size_formatted": "3.97 MB",
                         "last_modified": "2026-09-03T14:03:30.433000+00:00",
                         "last_modified_timestamp": 1788444210,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "name": "qgis-server-common_4.2.2+git20260905+8c613b2f8c6+42plucky_all.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4162878,
+                        "size_formatted": "3.97 MB",
+                        "last_modified": "2026-09-05T02:04:34.451000+00:00",
+                        "last_modified_timestamp": 1788573874,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -273959,6 +274256,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wcs_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-server-wcs_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5929248,
+                        "size_formatted": "5.65 MB",
+                        "last_modified": "2026-09-05T02:04:35.517000+00:00",
+                        "last_modified_timestamp": 1788573875,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wfs3_3.16.3+git20210218+edb7b5256f+28bionic_amd64.deb",
                         "name": "qgis-server-wfs3_3.16.3+git20210218+edb7b5256f+28bionic_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -281468,6 +281776,17 @@
                         "size_formatted": "5.47 MB",
                         "last_modified": "2026-09-03T14:03:36.292000+00:00",
                         "last_modified_timestamp": 1788444216,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wfs3_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-server-wfs3_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5935456,
+                        "size_formatted": "5.66 MB",
+                        "last_modified": "2026-09-05T02:04:35.610000+00:00",
+                        "last_modified_timestamp": 1788573875,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -288985,6 +289304,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wfs_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-server-wfs_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 8034980,
+                        "size_formatted": "7.66 MB",
+                        "last_modified": "2026-09-05T02:04:36.585000+00:00",
+                        "last_modified_timestamp": 1788573876,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wms_3.16.3+git20210218+edb7b5256f+28bionic_amd64.deb",
                         "name": "qgis-server-wms_3.16.3+git20210218+edb7b5256f+28bionic_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -296498,6 +296828,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wms_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-server-wms_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 12762244,
+                        "size_formatted": "12.17 MB",
+                        "last_modified": "2026-09-05T02:04:41.452000+00:00",
+                        "last_modified_timestamp": 1788573881,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wmts_3.16.3+git20210218+edb7b5256f+28bionic_amd64.deb",
                         "name": "qgis-server-wmts_3.16.3+git20210218+edb7b5256f+28bionic_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -304007,6 +304348,17 @@
                         "size_formatted": "5.18 MB",
                         "last_modified": "2026-09-03T14:03:41.598000+00:00",
                         "last_modified_timestamp": 1788444221,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server-wmts_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-server-wmts_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5711220,
+                        "size_formatted": "5.45 MB",
+                        "last_modified": "2026-09-05T02:04:38.282000+00:00",
+                        "last_modified_timestamp": 1788573878,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -311652,6 +312004,17 @@
                         "size_formatted": "3.96 MB",
                         "last_modified": "2026-09-03T14:03:37.006000+00:00",
                         "last_modified_timestamp": 1788444217,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis-server_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis-server_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 4150172,
+                        "size_formatted": "3.96 MB",
+                        "last_modified": "2026-09-05T02:04:39.254000+00:00",
+                        "last_modified_timestamp": 1788573879,
                         "extension": ".deb",
                         "category": "installer"
                       },
@@ -330693,6 +331056,39 @@
                         "size_formatted": "11.86 MB",
                         "last_modified": "2026-09-03T14:03:44.798000+00:00",
                         "last_modified_timestamp": 1788444224,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis_4.2.2+git20260905+8c613b2f8c6+42plucky.dsc",
+                        "name": "qgis_4.2.2+git20260905+8c613b2f8c6+42plucky.dsc",
+                        "path": "pool/main/q/qgis",
+                        "size": 5216,
+                        "size_formatted": "5.09 KB",
+                        "last_modified": "2026-09-05T02:04:43.444000+00:00",
+                        "last_modified_timestamp": 1788573883,
+                        "extension": ".dsc",
+                        "category": "other"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis_4.2.2+git20260905+8c613b2f8c6+42plucky.tar.gz",
+                        "name": "qgis_4.2.2+git20260905+8c613b2f8c6+42plucky.tar.gz",
+                        "path": "pool/main/q/qgis",
+                        "size": 284545393,
+                        "size_formatted": "271.36 MB",
+                        "last_modified": "2026-09-05T02:05:21.688000+00:00",
+                        "last_modified_timestamp": 1788573921,
+                        "extension": ".gz",
+                        "category": "archive"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/qgis_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "name": "qgis_4.2.2+git20260905+8c613b2f8c6+42plucky_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 14625718,
+                        "size_formatted": "13.95 MB",
+                        "last_modified": "2026-09-05T02:04:48.914000+00:00",
+                        "last_modified_timestamp": 1788573888,
                         "extension": ".deb",
                         "category": "installer"
                       }
