@@ -12,42 +12,42 @@ type: visual-changelog
 # QGIS 2.10の変更履歴{#changelog210 }
 リリース日: 2015-06-26
 
-This is the change log for the next release of QGIS - version 2.10.0 \' Pisa\' - host city to our developer meet up in March 2010.
+QGIS の次のリリース 2.10.0 \' Pisa\' の変更履歴。Pisa は2010年3月のディベロッパーミートアップの開催都市です。
 
 **最新リリース**
 
-This is the next release in our 4-monthly release series. It gives you early access to the new features we have been working on and represents the \'cutting edge\' of QGIS development. If you are working in a production environment where you wish to be more conservative about rolling out new features to your users, we also provide a Long Term Release (LTR) version of QGIS. The current LTR is version 2.8.2 and is available at [download.qgis.org](http://download.qgis.org). LTR releases will be supported with backported bug fixes for one year, and will be in permanent feature freeze (i.e. no new features will be added, only bug fixes and trivial updates). The features provided in QGIS 2.10 \'Pisa\' will be included in the next LTR release (slated for release in 2016), so using this release provides you with an excellent opportunity to test new features that will make their way into the next LTR.
+これは4カ月ごとのリリースシリーズの次のリリースです。 これは、私たちが取り組んでいる新機能への早期アクセスを提供し、QGIS開発の「最先端」を表しています。 新しい機能をユーザーに展開することについてもっと慎重にしたい運用環境で作業している場合は、QGISのLTR（Long Term Release）バージョンも提供しています。 現在のLTRはバージョン2.8.2であり、 [download.qgis.org](http://download.qgis.org) から入手できます。 LTRリリースは、バックポートによるバグ修正を1年間サポートし、恒久的な機能凍結（新しい機能は追加されず、バグフィックスと簡単なアップデートのみ）になります。 QGIS 2.10 \'Pisa\' で提供される機能は、次のLTRリリース（2016年にリリース予定）に含まれる予定です。このリリースを使用すると、次のLTRに入り込む新しい機能をテストする絶好の機会が得られます。
 
-**New Features in QGIS 2.10 \'Pisa\'**
+**QGIS 2.10 \'Pisa\' の新機能**
 
-QGIS 2.10.0 includes many great new features, tweaks and enhancements to make the most popular Free desktop GIS even more feature filled and useful. Whenever new features are added to software they introduce the possibility of new bugs - if you encounter any problems with this release, please file a ticket [on the QGIS Bug Tracker](http://hub.qgis.org).
+QGIS 2.10.0には、最も人気のあるフリーデスクトップGISをさらに充実した機能にしてくれるように、多くの素晴らしい新機能、調整、改良が含まれています。 新しい機能がソフトウェアに追加されるたびに、新しいバグが発生する可能性があります。このリリースで問題が発生した場合は、 [QGISバグトラッカー](http://hub.qgis.org) にチケットを提出してください。
 
 **謝辞**
 
 私たちは、開発者、ドキュメント作成者、テスター、そして時間と労力をボランティアしている（あるいは人々に資金を提供する）多くの人々に感謝したいと思います。
 
-From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
+QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
-- **GOLD Sponsor:** [Asia Air Survey, Japan,](http://www.asiaairsurvey.com/)
-- SILVER Sponsor: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
-- SILVER Sponsor: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
-- SILVER Sponsor: [Office of Public Works, Ireland, Ireland](http://www.opw.ie/)
-- SILVER Sponsor: [AGH University of Science and Technology, Krakow, Poland](http://www.agh.edu.pl/en)
-- BRONZE Sponsor: [www.molitec.it, Italy](http://www.molitec.it/)
-- BRONZE Sponsor: [www.argusoft.de, Germany](http://www.argusoft.de)
-- BRONZE Sponsor: [www.openrunner.com, France](http://www.openrunner.com)
-- BRONZE Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
-- BRONZE Sponsor: [Customer Analytics, USA](http://www.customeranalytics.com/)
-- BRONZE Sponsor: [Urbsol, Australia](http://www.urbsol.com.au/)
-- BRONZE Sponsor: [MappingGIS, Spain](http://www.mappinggis.com/)
-- BRONZE Sponsor: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
-- BRONZE Sponsor: [ADLARES GmbH, Germany](http://www.adlares.com/)
-- BRONZE Sponsor: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
-- BRONZE Sponsor: [GeoSynergy, Australia](http://www.geosynergy.com.au/)
-- BRONZE Sponsor: [Gaia3D, South Korea](http://www.gaia3d.com/)
-- BRONZE Sponsor: [Royal Borough of Windsor and Maidenhead, UK](http://www.rbwm.gov.uk/)
-- BRONZE Sponsor: [Chartwell Consultants Ltd, Canada](http://www.chartwell-consultants.com/)
+- **ゴールドスポンサー:** [Asia Air Survey, Japan,](http://www.asiaairsurvey.com/)
+- シルバースポンサー: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
+- シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
+- シルバースポンサー: [アイルランドの公共事業局、アイルランド](http://www.opw.ie/)
+- シルバースポンサー: [AGH University of Science and Technology, Krakow, Poland](http://www.agh.edu.pl/en)
+- ブロンズスポンサー: [www.molitec.it, Italy](http://www.molitec.it/)
+- ブロンズスポンサー: [www.argusoft.de, Germany](http://www.argusoft.de)
+- ブロンズスポンサー: [www.openrunner.com, France](http://www.openrunner.com)
+- ブロンズスポンサー: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
+- ブロンズスポンサー: [Customer Analytics, USA](http://www.customeranalytics.com/)
+- ブロンズスポンサー: [Urbsol, Australia](http://www.urbsol.com.au/)
+- ブロンズスポンサー: [MappingGIS、スペイン](http://www.mappinggis.com/)
+- ブロンズスポンサー: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
+- ブロンズスポンサー: [ADLARES GmbH, Germany](http://www.adlares.com/)
+- ブロンズスポンサー: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
+- ブロンズスポンサー: [GeoSynergy, Australia](http://www.geosynergy.com.au/)
+- ブロンズスポンサー: [Gaia3D, South Korea](http://www.gaia3d.com/)
+- ブロンズスポンサー: [Royal Borough of Windsor and Maidenhead, UK](http://www.rbwm.gov.uk/)
+- ブロンズスポンサー: [Chartwell Consultants Ltd, Canada](http://www.chartwell-consultants.com/)
 - BRONZE Sponsor: [Trage Wegen vzw, Belgium](http://www.tragewegen.be/)
 - BRONZE Sponsor: [GIS-Support, Poland](http://www.gis-support.com/)
 - BRONZE Sponsor: [GIS3W, italy](http://www.gis3w.it/)

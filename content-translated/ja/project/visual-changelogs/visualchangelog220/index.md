@@ -18,14 +18,14 @@ Whenever new features are added to software they introduce the possibility of ne
 
 私たちは、開発者、ドキュメント作成者、テスター、そして時間と労力をボランティアしている（あるいは人々に資金を提供する）多くの人々に感謝したいと思います。
 
-From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
+QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
 - GOLD Sponsor: [Asia Air Survey, Japan](http://www.asiaairsurvey.com/)
 - SILVER Sponsor: [G.A.I.A. mbH, Germany](http://www.gaia-mbh.de/)
-- SILVER Sponsor: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
-- BRONZE Sponsor: [www.molitec.it, Italy](http://www.molitec.it/)
-- BRONZE Sponsor: [www.argusoft.de, Germany](http://www.argusoft.de)
+- シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
+- ブロンズスポンサー: [www.molitec.it, Italy](http://www.molitec.it/)
+- ブロンズスポンサー: [www.argusoft.de, Germany](http://www.argusoft.de)
 
 A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors).
 

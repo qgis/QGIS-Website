@@ -32,24 +32,24 @@ Whenever new features are added to software they introduce the possibility of ne
 
 私たちは、開発者、ドキュメント作成者、テスター、そして時間と労力をボランティアしている（あるいは人々に資金を提供する）多くの人々に感謝したいと思います。
 
-From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
+QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
 - **GOLD Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
-- SILVER Sponsor: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
-- SILVER Sponsor: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
-- SILVER Sponsor: [Office of Public Works, Ireland, Ireland](http://www.opw.ie/)
+- シルバースポンサー: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
+- シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
+- シルバースポンサー: [アイルランドの公共事業局、アイルランド](http://www.opw.ie/)
 - BRONZE Sponsor: [GIS3W, Italy](http://www.gis3w.it/)
-- BRONZE Sponsor: [www.molitec.it, Italy](http://www.molitec.it/)
-- BRONZE Sponsor: [www.argusoft.de, Germany](http://www.argusoft.de)
-- BRONZE Sponsor: [www.openrunner.com, France](http://www.openrunner.com)
-- BRONZE Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
-- BRONZE Sponsor: [Customer Analytics, USA](http://www.customeranalytics.com/)
-- BRONZE Sponsor: [Urbsol, Australia](http://www.urbsol.com.au/)
-- BRONZE Sponsor: [MappingGIS, Spain](http://www.mappinggis.com/)
-- BRONZE Sponsor: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
-- BRONZE Sponsor: [ADLARES GmbH, Germany](http://www.adlares.com/)
-- BRONZE Sponsor: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
+- ブロンズスポンサー: [www.molitec.it, Italy](http://www.molitec.it/)
+- ブロンズスポンサー: [www.argusoft.de, Germany](http://www.argusoft.de)
+- ブロンズスポンサー: [www.openrunner.com, France](http://www.openrunner.com)
+- ブロンズスポンサー: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
+- ブロンズスポンサー: [Customer Analytics, USA](http://www.customeranalytics.com/)
+- ブロンズスポンサー: [Urbsol, Australia](http://www.urbsol.com.au/)
+- ブロンズスポンサー: [MappingGIS、スペイン](http://www.mappinggis.com/)
+- ブロンズスポンサー: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
+- ブロンズスポンサー: [ADLARES GmbH, Germany](http://www.adlares.com/)
+- ブロンズスポンサー: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
 - BRONZE Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, ​University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
 
 A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become an official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
