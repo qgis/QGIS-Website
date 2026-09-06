@@ -31,14 +31,14 @@ ____
 Possono presentare domanda sia **singoli** che **organizzazioni** che contribuiscono a QGIS in ambiti diversi dalla programmazione.
 ### Tipi di contributi ammissibili
 - ✅ Membro del **Comitato direttivo del progetto QGIS (PSC)**
-- ✅ **Open Days** organizer or active participant
-- ✅ **Country User Group Coordinator**
-- ✅ **Changelog Contributor**
-- ✅ **User Conference Organiser**
-- ✅ **Translator** (documentation, interface, website)
-- ✅ **Plugins Reviewer**
-- ✅ **Documentation Writer**
-- ✅ **Issue Tracker Moderator**
+- Organizzatore o partecipante attivo agli **Open Days**
+- **Coordinatore del gruppo utenti nazionale**
+- **Contributore del changelog**
+- **Organizzatore della User Conference**
+- **Traduttore** (documentazione, interfaccia, sito web)
+- **Revisore dei plugin**
+- **Redattore della documentazione**
+- **Moderatore dell'Issue Tracker**
 
 ____
 ## Requisiti per la candidatura
@@ -46,27 +46,27 @@ ____
 #### Per tutti i candidati:
 1. **Indirizzo e-mail** *(obbligatorio)*
    - Il tuo indirizzo e-mail
-2. **Type** *(required)*
+2. **Tipo** *(richiesto)*
    - Scegli: Singolo o Organizzazione
-3. **Name** *(required)*
+3. **Nome** *(richiesto)*
    - Il tuo nome completo (per i singoli) o il nome dell'organizzazione
-4. **Website/Profile Link**
-   - Your personal website, LinkedIn, or organization website
-5. **Profile Image** *(required)*
-   - **Format:** PNG only
+4. **Sito web/Link al profilo**
+   - Il tuo sito web personale, LinkedIn o il sito web dell'organizzazione
+5. **Immagine del profilo** *(richiesto)*
+   - **Formato:** solo PNG
    - **Size:** Maximum 150×150 pixels, max 1 MB
-   - **Quality:** Clear, professional photo or logo
+   - **Qualità:** foto o logo nitido e professionale
 
-#### Activity Details:
-6. **Start Date** *(required)*
-   - When did you begin your QGIS community activities?
+#### Dettagli dell'attività:
+6. **Data di inizio** *(richiesto)*
+   - Quando hai iniziato le tue attività nella comunità QGIS?
 7. **Data di fine**
-   - If applicable. Leave blank if still active.
+   - Se applicabile. Lascia vuoto se ancora attivo.
    - ⚠️ **Note:** 3 years after the end date, your entry will be moved to the 'archived' section. You can request to update your profile if you become active again.
 8. **Type of Activities** *(required)*
    - Select all that apply (see eligible types above)
 9. **Description of Contribution** *(required)*
-   - **Maximum:** 500 characters (keep it concise!)
+   - **Massimo:** 500 caratteri (sii conciso!)
    - Describe your activities and impact on the QGIS community
    - Include specific examples where possible
 

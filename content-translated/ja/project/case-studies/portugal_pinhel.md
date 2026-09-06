@@ -22,37 +22,37 @@ type: case-study
 
 ポルトガルは、巨額の損失、環境的なだけでなく経済的、社会的な損失、を発生させる大規模な山火事の影響を受けています。このリスクに向き合うため、ポルトガル政府は、国有林局（AFN）を介して、地方政府に割り当てられる技術的な事務所を作成することを、数年前に、決定しました。これは、他のスキルの中でも、森林防火と動作応答のための市の計画を準備する必要があります。
 
-In order to support the elaboration of these documents, the AFN provided technical guides with a methodology for calculating and mapping the Forest Fire Hazard and Risk. Moreover, tutorials have been offered to follow this methodology, using Proprietary Software. However, the acquisition and licensing costs of that software are unaffordable for most of the smaller local administrations and so, it was decided to create and make available a guide with a methodology for developing Hazard and Risk cartography using only Free and Open Source Software \[<http://goo.gl/TSv2E>\].
+これらの文書の作成を支援するため、AFNは森林火災の危険度及びリスクを算出・マッピングするための方法論を盛り込んだ技術ガイドを提供しました。さらに、この方法論に従うためのチュートリアルが専用ソフトウェアを使って提供されてきました。しかし、そのソフトウェアの購入費やライセンス料は、小規模な地方自治体の多くにとって負担が大きすぎるため、フリー・オープンソース・ソフトウェアのみを用いて危険度及びリスクの地図製作を行う方法論をまとめたガイドを作成し、公開することが決定されました \[<http://goo.gl/TSv2E>\] 。
 
 QGIS、GRASS GIS、gvSIGとGDAL / OGRライブラリ：これは、ソフトウェアの次のセットを使用することが提案されました。このガイドは、AFNの方法に従って、森林防火と動作応答のための計画の精緻化のために必要なすべてのジオプロセシングタスクについて説明します。作業の大部分はQGISで開発され、ラスタモデルの空間分析はGRASSで開発されました。gvSIGが、そのネットワーク解析拡張とともに、ネットワーク解析のために使用されました。そしてGDAL / OGRライブラリーが、基準座標系間の変換のために使用されました。
 
-広範な方法論へのテストスイートの後、およびピニェルの自治体の運用計画の作成における実際の応用から3年後の今、提案されている代替には多くの利点があり、通常このタスクを実行するために使用される商用ソフトウェアを置き換えることを可能にする、と言うことができます。結果の検証が示したことは、この概念モデルが比較的単純であるにもかかわらずその予測能力はかなり良いこと、そしてオープンソースソフトウェアでモデルの実装は結果にマイナスに干渉しない、むしろ全く逆であることです。
+その方法論への広範な一連の検証とピニェル自治体の運用計画の作成における3年に渡る実際の適用を経た結果、提案された代替案には多くの利点があり、この作業の実行に通常使用される商用ソフトウェアを置き換えることが可能である、と言うことができます。結果の検証が示したのは、この概念モデルが比較的単純であるにもかかわらずその予測能力は極めて良好であり、そしてオープンソースソフトウェアによるモデルの実装が結果にマイナスに干渉しない、むしろ全く逆であることです。
 > ![](../images/portugal_pinhel1.jpg)
 
 <figure>
 <img src="../images/portugal_pinhel2.jpg" class="align-right" alt="portugal_pinhel2.jpg" />
-<figcaption>Forest Fire Hazard and Risk Maps of Pinhel, implemented with Open Source Software.</figcaption>
+<figcaption>ピニェルの森林火災危険度及びリスクの地図。オープンソースソフトウェアで実現された。</figcaption>
 </figure>
 
-第二段階では、ほとんどの人間の介入なしに、タスクの広いセットを実行するワークフローを確立するためのモデルを使用して、この手順を高速化することを試みました。この第二段階は本質的に、第一段階から得られた実用的なガイドで説明全体手順を自動化することで成っていました。このような自動化は、年次森林防衛計画を作成する予定技術者の一部に強烈な仕事の数時間の短縮、人間の介入がわずか数分の入力データの選択および出力データを保持するつもりな場所の指示に帰着する、を意味するかもしれません。
+第二段階では、モデルを使用して、ほとんどの人間の介入なしに幅広いタスクを実行するワークフローを確立し、この手順を高速化することを試みました。この第二段階は、第一段階から得られた実用的なガイドに記載された手順全体を自動化することを本質的な目的としていました。この自動により、毎年森林防衛計画を作成する技術者が行う数時間の集中的な作業が、わずか数分に短縮される可能性があります。その際、人間の介入は、入力データの選択と出力データの保存先の指定に限られることになります。
 
 <figure>
 <img src="../images/portugal_pinhel3.png" class="align-right" alt="portugal_pinhel3.png" />
-<figcaption>Interface of the Sextante Model to calculate the Probability of the Forest Fire Hazard.</figcaption>
+<figcaption>森林火災危険度の確率を計算するSextante モデルのインターフェイス。</figcaption>
 </figure>
 
-In furtherance of this second phase, we used the Python version of Sextante software, that works integrated into QGIS and adds a broad set of independent applications (GRASS GIS, SAGA GIS, OTB, R, GDAL/OGR, Pymorph, LASTools, Python scrips, etc..) in a single interface, providing a huge geoprocessing toolbox to QGIS users. Besides the integration of these applications in QGIS, Sextante has a tool for creating models, taking advantage of the modules offered by any of those softwares which aggregates. So, we\'ve created a model to automate the process of producing Forest Fire Hazard and Risk maps, using GRASS, SAGA, fTools and MMQGIS tools.
+この第二段階の助成で、私たちは Sextante ソフトウェアの Python 版を使用しました。それはQGISに統合されて動作し、幅広い独立したアプリケーション（GRASS GIS、SAGA GIS、OTB、R、GDAL / OGR、Pymorph、LASTools、Python スクリプト、等）のセットを単一のインターフェイスで追加し、QGISユーザーに巨大なジオプロセシングツールボックスを提供します。Sextanteは、QGISでこれらアプリケーションの統合に加え、集約されたソフトウェアが提供するモジュールを活用してモデルを作成するツールを持っています。そこで、私たちは GRASS、SAGA、fToolsとMMQGISツールを使用して、森林火災危険度及びリスクの地図を生成するプロセスを自動化するためにモデルを作成しました。
 
 <figure>
 <img src="../images/portugal_pinhel4.png" class="align-right" alt="portugal_pinhel4.png" />
-<figcaption>Part of the model developed for automation of the production of cartography for Forest Fire Hazard and Risk.</figcaption>
+<figcaption>森林火災及びリスクの地図製作を自動化するために開発されたモデルの一部。</figcaption>
 </figure>
 
-The results obtained so far are very promising, as already can be automatically achieved the creation of the Hazard and Risk Maps \[2\]. Taking into account that the Python version of Sextante is still very recent and is in heavy construction, there are some problems that must be corrected so that the models may be completed, which certainly will happen very soon, given the momentum that Sextante project presents. As future work, we intend to apply, also automatically, the symbology to the results as well as provide the final layouts in QGIS Composer, ready for export and/or print. Upon completion of the second phase and the realization of a sufficient set of tests that can validate the results obtained, it is our intention to provide the model free and openly.
+これまでに得られた結果は非常に有望であり、既に危険度及びリスクの地図 \[2\] の作成の自動化が達成できます。Sextante の Python 版はまだとても新しいものであり、大きな構造物であることを考慮すると、モデルを完成するには修正しなければならない問題がいくつかあり、Sextante プロジェクトが提する勢いを考えると、それは間違いなくすぐに起こります。将来の作業として、シンボロジを結果に自動的に適用することと、QGISのコンポーザーにエクスポートおよび/または印刷の準備ができた最終的なレイアウトを提供するつもりです。第二段階が完了し、得られた結果を検証できる十分な一連のテストが実現した後、そのモデルをフリーでオープンに提供することが、私たちの意図するものです。
 ## 結論
 検討された代替案はずば抜けた品質のものであることが判明しました。国有林局の技術的なガイドで推奨されたすべての操作が、多くの点で、商用ソフトウェアでするより効率的に、できます。使いやすさの点では、それはソフトウェアのこのタイプは、しかしながら、より高い自由度を可能にする、実現モデルおよびアルゴリズムの唯一のより技術的な知識を必要とする任意の方法で、商用ソフトウェアよりも、より複雑ではないことが観察されました、それぞれの特定の状況にモデルを模索して微調整することが可能となります。独占的に、オープンソースソフトウェアを使用して森林火災の危険やリスク地図を作成する方法の工程は、Pinhelの自治体でのテストとアプリケーションの数年後、完全に統合されます。
 
-オープンソースソフトウェアは、標準規格に基づいており、オープンなデータフォーマットのほとんどをサポートしているという事実は、ユーザが各瞬間に最も適したを選ぶすることができ、ソフトウェア間の完全な相互運用性を可能にします。ソフトウェアの特定のセットに私たちの提案のポイントにもかかわらず、何も無料と地理空間のためのオープンソースソフトウェアのための提案の広い範囲で、既存の選択肢のいずれかで交換する妨げません。しかし、QGISはますます、ほとんど、完全な安定した、使いやすいFOSS4Gソリューションとしての地位を提示し、その事業活動の中で最も多様な分野に特定の機能を追加し、バグのと新しいプラグインのほぼ毎日実施して急速な補正で、よりダイナミックであります。
+オープンソースソフトウェアは、標準規格に基づいており、オープンなデータフォーマットのほとんどをサポートしているという事実は、ソフトウェア間の完全な相互運用性を可能にし、ユーザはそれぞれの場合に最も適したものを選ぶことができます。私たちの提案では特定のソフトウェア群を挙げていますが、幅広い選択肢のある地理空間向けのフリー・オープンソース・ソフトウェアの中のいずれかで代替することを妨げるものは何もありません。しかしQGISは、FOSS4G ソリューションの中でもっとも完成度が高く、安定しており、使いやすいものとしてその地位をますます高めています。またそのプロジェクトは極めて活発で、バグの修正が迅速に行われ、最も多様な活動分野に特定の機能を追加する新しいプラグインのほぼ毎日実装されています。
 ## 著者
 <figure>
 <img src="../images/portugal_pinhelaut.png" class="align-left" height="200" alt="portugal_pinhelaut.png" />
