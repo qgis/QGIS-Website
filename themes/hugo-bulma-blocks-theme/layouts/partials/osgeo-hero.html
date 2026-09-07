@@ -1,17 +1,17 @@
 {{/* OSGeo Homepage Hero - With OSGeo triangular brand elements */}}
 {{/* Calculate dynamic stats from data files */}}
 {{ $projectCount := 0 }}
-{{ with site.Data.projects }}
+{{ with hugo.Data.projects }}
     {{ $projectCount = add (len .incubated) (len .community) }}
 {{ end }}
 {{ $chapterCount := 0 }}
-{{ with site.Data.chapters }}
+{{ with hugo.Data.chapters }}
     {{ $chapterCount = len .chapters }}
 {{ end }}
 {{ $charterMembers := 300 }}
 {{ $geoforallLabs := 100 }}
 {{ $yearsActive := 19 }}
-{{ with site.Data.stats }}
+{{ with hugo.Data.stats }}
     {{ $charterMembers = .charter_members }}
     {{ $geoforallLabs = .geoforall_labs }}
     {{ $yearsActive = sub now.Year .years_founded }}

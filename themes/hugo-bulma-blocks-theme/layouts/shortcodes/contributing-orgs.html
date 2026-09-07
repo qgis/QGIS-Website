@@ -1,5 +1,5 @@
 {{ $orgsList := slice }}
-{{ range $org := $.Site.Data.contributors.organizations }}
+{{ range $org := hugo.Data.contributors.organizations }}
   {{ $totalCommits := 0 }}
   {{ range $k, $v := $org.contributions }}
     {{ $totalCommits = add $totalCommits $v.commits }}

@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -22,7 +22,7 @@ jobs:
           # Using the latest value doesn't work for now.
           # See https://github.com/peaceiris/actions-hugo/issues/652#issuecomment-2543985304
           # and https://github.com/peaceiris/actions-hugo/issues/662
-          hugo-version: '0.139.4'
+          hugo-version: '0.165.0'
           extended: true
 
       - name: Hugo build
@@ -37,15 +37,15 @@ jobs:
           curl -sf http://127.0.0.1:1313 > /dev/null
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
-          node-version: 20
+          node-version: 24
           cache: 'npm'
           cache-dependency-path: playwright/ci-test/package-lock.json
 
       - name: Cache Playwright browsers
         id: playwright-cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.cache/ms-playwright
           key: playwright-${{ runner.os }}-${{ hashFiles('playwright/ci-test/package-lock.json') }}
@@ -68,7 +68,7 @@ jobs:
         working-directory: playwright/ci-test
         run: npx playwright test
 
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: playwright-report

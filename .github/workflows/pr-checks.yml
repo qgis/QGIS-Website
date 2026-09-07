@@ -21,7 +21,7 @@ jobs:
     name: Security Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Check external CDN includes (no SRI)
         id: cdn_check
@@ -135,14 +135,14 @@ jobs:
           echo "" >> security-report.md
 
       - name: Upload security report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: security-report
           path: security-report.md
 
       - name: Comment security report on PR
         if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
@@ -180,7 +180,7 @@ jobs:
     name: Software Bill of Materials
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Generate SBOM with Syft
         uses: anchore/sbom-action@v0
@@ -190,7 +190,7 @@ jobs:
           output-file: sbom.spdx.json
 
       - name: Scan SBOM for vulnerabilities with Grype
-        uses: anchore/scan-action@v6
+        uses: anchore/scan-action@v7
         id: grype
         with:
           sbom: sbom.spdx.json
@@ -257,7 +257,7 @@ jobs:
           fi
 
       - name: Upload SBOM artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: sbom
           path: |
@@ -266,7 +266,7 @@ jobs:
 
       - name: Comment SBOM report on PR
         if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
@@ -303,7 +303,7 @@ jobs:
     name: Content Freshness vs osgeo.org
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Install Nix
         uses: cachix/install-nix-action@v31
@@ -356,7 +356,7 @@ jobs:
           echo "*Checked at $(date -u +"%Y-%m-%dT%H:%M:%SZ") against \`page-sitemap.xml\`*" >> harvest-report.md
 
       - name: Upload harvest report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: harvest-report
           path: |
@@ -365,7 +365,7 @@ jobs:
 
       - name: Comment harvest report on PR
         if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');

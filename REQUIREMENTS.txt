@@ -1,27 +1,30 @@
+# Direct runtime dependencies for the Python helper scripts in scripts/ and
+# fetch_feeds.py. Transitive dependencies are resolved by pipenv and captured
+# in Pipfile.lock -- do not pin them here.
+#
+# Kept in step with the Python provided by the flake dev shell (3.13).
+#
+# atoma            -- RSS/Atom parsing            (fetch_feeds.py)
+# beautifulsoup4   -- HTML parsing                (harvesters, link checkers)
+# boto3            -- S3 download listings        (update_s3_downloads.py)
+# html2text        -- HTML -> markdown            (harvest_osgeo.py)
+# icalendar        -- release schedule .ics       (update-schedule.py)
+# lxml             -- fast parser backend for bs4 (harvest_osgeo, verify_content)
+# pillow           -- logo/image resizing         (resize_image.py)
+# python-dateutil  -- feed date parsing           (fetch_feeds.py)
+# requests         -- HTTP client                 (most scripts)
+# rich             -- terminal tables             (harvest_osgeo, verify_content)
+# stripe           -- donation sync               (update_donors.py)
+# pytest           -- test runner
 atoma==0.0.17
-attrs==22.2.0
-beautifulsoup4==4.11.1
-bs4==0.0.1
-certifi==2022.12.7
-charset-normalizer==2.1.1
-defusedxml==0.7.1
-exceptiongroup==1.1.0
-idna==3.4
-iniconfig==1.1.1
-lxml==4.9.2
-packaging==22.0
-pluggy==1.0.0
-pydantic==1.10.4
-pytest==7.2.0
-python-dateutil==2.8.2
-requests==2.28.1
-rss-parser==0.2.4
-six==1.16.0
-soupsieve==2.3.2.post1
-tomli==2.0.1
-typing_extensions==4.12.2
-urllib3==1.26.13
-icalendar==5.0.12
-pillow==10.4.0 
-stripe==11.4.1
-boto3>=1.28.0
+beautifulsoup4==4.15.0
+boto3==1.43.84
+html2text==2025.4.15
+icalendar==7.3.0
+lxml==6.1.2
+pillow==12.3.0
+python-dateutil==2.9.0.post0
+requests==2.34.2
+rich==15.0.0
+stripe==15.6.0
+pytest==9.1.1

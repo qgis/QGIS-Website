@@ -10,7 +10,7 @@
     </p>
     <hr />
     <form id="donate-stripe">
-        {{ range sort $.Site.Data.stripe_products }}
+        {{ range sort hugo.Data.stripe_products }}
             <input
                 value="{{ .payment_link }}"
                 id="{{ .id }}"

@@ -7,7 +7,7 @@
         {{ if or (eq $type "all") (eq $type "orgs") }}
         <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
             <div class="has-text-weight-semibold is-size-2">
-                {{ $orgs := $.Site.Data.contributors.organizations }}
+                {{ $orgs := hugo.Data.contributors.organizations }}
                 {{ len $orgs }}
             </div>
             <div class="stat-label">Organizations</div>
@@ -17,7 +17,7 @@
         {{ if or (eq $type "all") (eq $type "individuals") }}
         <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
             <div class="has-text-weight-semibold is-size-2">
-                {{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
+                {{ $allContributors := hugo.Data.contributors.contributors.contributors }}
                 {{ $githubContributors := 0 }}
                 {{ range $allContributors }}
                     {{ if .has_github_account }}
@@ -33,7 +33,7 @@
         {{ if or (eq $type "all") (eq $type "commits") }}
         <div class="stat-card">
             <div class="has-text-weight-semibold is-size-2">
-                {{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
+                {{ $allContributors := hugo.Data.contributors.contributors.contributors }}
                 {{ $totalCommits := 0 }}
                 {{ range $allContributors }}
                     {{ if .has_github_account }}
@@ -51,7 +51,7 @@
         {{ if or (eq $type "all") (eq $type "supporting") }}
         <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
             <div class="has-text-weight-semibold is-size-2">
-                {{ $supportingContributors := $.Site.Data.contributors.supporting }}
+                {{ $supportingContributors := hugo.Data.contributors.supporting }}
                 {{ len $supportingContributors }}
             </div>
             <div class="stat-label">Supporting Contributors</div>
@@ -61,7 +61,7 @@
         {{ if or (eq $type "all") (eq $type "sol-katz") }}
         <a href="{{ if $link }}{{ $link }}{{ end }}" class="stat-card">
             <div class="has-text-weight-semibold is-size-2">
-                {{ $solKatzRecipients := $.Site.Data.contributors.sol_katz_award }}
+                {{ $solKatzRecipients := hugo.Data.contributors.sol_katz_award }}
                 {{ len $solKatzRecipients }}
             </div>
             <div class="stat-label">Sol Katz Award Recipients</div>

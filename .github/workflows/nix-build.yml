@@ -1,5 +1,9 @@
-# Workflow to build Nix package and push it to the Cachix binary cache
-name: 🛫 Build and push to Cachix
+# Workflow to build the Nix package.
+#
+# The Cachix push step was removed when this site was forked from QGIS-Hugo:
+# it pushed to the QGIS-owned `qgiswebsite` cache. Re-add a cachix-action step
+# here once an OSGeo-owned cache and CACHIX_AUTH_TOKEN secret exist.
+name: 🛫 Build with Nix
 
 on:
   # Runs on pushes targeting the default branch
@@ -13,16 +17,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
 
     - name: Install Nix
       uses: cachix/install-nix-action@v31
   
-    - uses: cachix/cachix-action@v16
-      with:
-        name: qgiswebsite
-        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-
     - name: Run flake checks
       run: nix flake check
 

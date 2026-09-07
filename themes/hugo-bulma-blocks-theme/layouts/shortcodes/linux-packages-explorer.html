@@ -1,6 +1,6 @@
 {{ $distribution := .Get "distribution" }}
 {{ $distributionKey := replace $distribution "-" "_" }}
-{{ $linuxPackagesData := $.Site.Data.downloads.linux_packages }}
+{{ $linuxPackagesData := hugo.Data.downloads.linux_packages }}
 {{ $data := index $linuxPackagesData $distributionKey }}
 
 {{ $coreJs := resources.Get "js/s3-file-explorer-core.js" }}

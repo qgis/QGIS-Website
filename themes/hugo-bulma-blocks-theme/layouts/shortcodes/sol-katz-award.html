@@ -1,4 +1,4 @@
-{{ $recipients := $.Site.Data.contributors.sol_katz_award }}
+{{ $recipients := hugo.Data.contributors.sol_katz_award }}
 
 <!-- Sort by year (most recent first) -->
 {{ $sortedRecipients := sort $recipients "year" "desc" }}

@@ -1,4 +1,4 @@
-{{ $data := $.Site.Data.downloads.s3_downloads }}
+{{ $data := hugo.Data.downloads.s3_downloads }}
 
 {{ $coreJs := resources.Get "js/s3-file-explorer-core.js" }}
 {{ if $coreJs }}

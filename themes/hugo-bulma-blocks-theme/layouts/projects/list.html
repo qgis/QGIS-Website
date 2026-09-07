@@ -12,7 +12,7 @@
                 {{/* Category Pills */}}
                 <div class="category-pills" id="categoryFilters">
                     <button class="pill is-active" data-filter="all">All</button>
-                    {{ with site.Data.projects.categories }}
+                    {{ with hugo.Data.projects.categories }}
                         {{ range $key, $cat := . }}
                         <button class="pill" data-filter="{{ $key }}" style="--pill-color: {{ $cat.color }}">
                             {{ $cat.name }}
@@ -31,8 +31,8 @@
 
         {{/* Project Grid - Clean Cards */}}
         <div class="project-grid-clean" id="projectGrid">
-            {{ $categories := site.Data.projects.categories }}
-            {{ with site.Data.projects }}
+            {{ $categories := hugo.Data.projects.categories }}
+            {{ with hugo.Data.projects }}
                 {{/* Incubated Projects */}}
                 {{ range .incubated }}
                 {{ $category := index $categories .category }}

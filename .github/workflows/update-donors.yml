@@ -1,3 +1,5 @@
+# ⚠️ QGIS VESTIGE: the donor sync targets the QGIS Stripe/Payrexx
+# accounts. Confirm the OSGeo payment sources before enabling.
 # This workflow scrapes the latest show episodes and commits the new episode and data
 # files to the repo.
 
@@ -10,24 +12,24 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'qgis'
+    if: github.repository_owner == 'OSGeo'
     steps:
-    - name: '🛒 Checkout QGIS Website'
-      uses: actions/checkout@v6
+    - name: '🛒 Checkout OSGeo Website'
+      uses: actions/checkout@v7
       with:
         ref: main
-        path: ./qgis-website
+        path: ./osgeo-website
 
     - name: '🐍 Setup Python'
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v7
       with:
-        python-version: '3.10'
+        python-version: '3.13'
         architecture: 'x64'
         cache: "pipenv"
 
     - name: '🚸Install Python deps'
       run: |
-        cd ./qgis-website
+        cd ./osgeo-website
         pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
         pipenv run pip freeze
     
@@ -38,7 +40,7 @@ jobs:
         PAYREXX_API_SECRET: ${{ secrets.PAYREXX_API_SECRET }}
         LIST_AS_DONOR_LABEL: ${{ secrets.LIST_AS_DONOR_LABEL }}
       run: |
-        cd ./qgis-website
+        cd ./osgeo-website
         pipenv run ./scripts/update_donors.py
         pipenv run ./scripts/update_payrexx_donors.py
 
@@ -46,5 +48,5 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: 'Donors updated and committed via a GitHub Action.'
-        repository: ./qgis-website
+        repository: ./osgeo-website
         # push_options: --force

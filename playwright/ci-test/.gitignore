@@ -1,7 +1,8 @@
+# package-lock.json is intentionally tracked: the e2e workflow runs
+# `npm ci` and keys its browser cache on hashFiles() of this lockfile.
 node_modules/
 /test-results/
 /playwright-report/
 /playwright/.cache/
 states
-package-lock.json
 playwright-results

@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-source base-url.sh
+BASE_URL="${BASE_URL:-http://127.0.0.1:1313}"
 
-source playwright-path.sh
+source ./playwright-path.sh
 
 if [ -z "$1" ]
 then

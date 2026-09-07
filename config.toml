@@ -2,7 +2,7 @@
 # Based on QGIS-Hugo structure with OSGeo branding
 # Note: For GitHub Pages deployment, this is overridden by the --baseURL flag
 baseURL = 'https://timlinux.github.io/OSGEO-Hugo/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'OSGeo - Open Source Geospatial Foundation'
 theme = 'hugo-bulma-blocks-theme'
 
@@ -28,7 +28,7 @@ enableRobotsTXT = false
 
 [params]
 # Min hugo version
-minHugoVersion = "0.139.0"
+minHugoVersion = "0.158.0"
 
 # OSGeo Brand Colours (from OSGeo Branding Style Guide)
 # Primary: Light Green #4DB05B (Pantone 361 U)

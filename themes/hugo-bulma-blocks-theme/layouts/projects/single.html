@@ -7,7 +7,7 @@
 {{ $project := false }}
 {{ $category := false }}
 
-{{ with site.Data.projects }}
+{{ with hugo.Data.projects }}
     {{ range .incubated }}
         {{ if eq .id $projectId }}
             {{ $project = . }}

@@ -1,3 +1,5 @@
-baseURL = 'https://www.qgis.org/'
+baseURL = 'https://www.osgeo.org/'
 publishDir = "public_www"
-minify = true
+
+[minify]
+  minifyOutput = true

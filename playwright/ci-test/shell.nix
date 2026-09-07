@@ -1,11 +1,18 @@
+#
+# Development shell for the Playwright end-to-end tests.
+#
+# The nixpkgs revision below is deliberately kept in step with the
+# `nixpkgs-unstable` input locked in the repository root `flake.lock`, so the
+# browsers used locally match the toolchain the rest of the project is built
+# with. When you bump `flake.lock`, bump this revision to match.
+#
+# This revision provides playwright-test/playwright-driver 1.61.1, which is why
+# package.json pins @playwright/test and playwright to exactly 1.61.1 (no
+# caret): the client and the browser bundle must be the same revision, both
+# here and in CI. Bump both together.
+#
 let
-  # 
-  # Note that I am using a snapshot from NixOS unstable here
-  # so that we can use a more bleeding edge version which includes the test --ui . 
-  # If you want use a different version, go to nix packages search, and find the 
-  # github hash of the version you want to be using, then replace in the URL below.
-  #
-  nixpkgs = builtins.fetchTarball "https://github.com/NixOS/nixpkgs/archive/4059c4f71b3a7339261c0183e365fd8016f24bdb.tar.gz";
+  nixpkgs = builtins.fetchTarball "https://github.com/NixOS/nixpkgs/archive/83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c.tar.gz";
   pkgs = import nixpkgs { config = { }; overlays = [ ]; };
 in
 with pkgs;
@@ -13,15 +20,15 @@ mkShell {
   buildInputs = [
     nodejs
     playwright-test
-    python311Packages.playwright
-    python311Packages.pytest
+    python3Packages.playwright
+    python3Packages.pytest
   ];
 
-  PLAYWRIGHT_BROWSERS_PATH="${pkgs.playwright-driver.browsers}";
+  PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
 
   shellHook = ''
     # Remove playwright from node_modules, so it will be taken from playwright-test
-    rm node_modules/@playwright/ -R
+    rm -rf node_modules/@playwright
     export PLAYWRIGHT_BROWSERS_PATH=${pkgs.playwright-driver.browsers}
     export PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=true
   '';

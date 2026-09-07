@@ -36,19 +36,17 @@ export default defineConfig({
         trace: "on-first-retry",
         baseURL:
             process.env.STAGING === "1"
-                ? "https://qgis.github.io/QGIS-Website/"
+                ? "https://timlinux.github.io/OSGEO-Hugo/"
                 : "http://127.0.0.1:1313",
     },
 
     /* Configure projects for major browsers */
     projects: [
-        { name: "setup", testMatch: /.*\.setup\.ts/ },
         {
             name: "chromium",
             use: {
                 ...devices["Desktop Chrome"],
             },
-            dependencies: ["setup"],
         },
         //
         // {

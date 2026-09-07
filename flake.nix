@@ -8,11 +8,20 @@
 
   inputs = {
     nixpkgs-version.url = "github:QGIS/qgis-nixpkgs-version";
-    nixpkgs.follows = "nixpkgs-version/nixpkgs-25-05";
+    # Stable channel supplies the bulk of the toolchain (python, make).
+    nixpkgs.follows = "nixpkgs-version/nixpkgs-26-05";
+    # Hugo moves fast and stable lags a few releases behind, so the site
+    # generator itself is taken from unstable to track the current release.
+    nixpkgs-unstable.follows = "nixpkgs-version/nixpkgs-unstable";
   };
 
   outputs =
-    { self, nixpkgs, ... }:
+    {
+      self,
+      nixpkgs,
+      nixpkgs-unstable,
+      ...
+    }:
 
     let
       # Flake system
@@ -30,6 +39,15 @@
           config.allowUnfree = true;
         }
       );
+      # Only used to pull the latest Hugo; everything else comes from stable.
+      unstableFor = forAllSystems (
+        system:
+        import nixpkgs-unstable {
+          inherit system;
+          config.allowUnfree = true;
+        }
+      );
+      hugoFor = forAllSystems (system: unstableFor.${system}.hugo);
 
     in
     {
@@ -43,7 +61,7 @@
           pkgs = nixpkgsFor.${system};
         in
         rec {
-          website = pkgs.callPackage ./nix/package.nix { };
+          website = pkgs.callPackage ./nix/package.nix { hugo = hugoFor.${system}; };
           default = website;
         }
       );
@@ -121,28 +139,43 @@
         {
           # Development environment
           default = pkgs.mkShell {
-            packages = with pkgs; [
-              hugo # Hugo for building the website
-              vscode # VSCode for development
-              python3Packages.icalendar # Python packages
-              python3Packages.requests # Python packages
-              python3Packages.beautifulsoup4 # HTML parsing for content harvester
-              python3Packages.lxml # Fast HTML/XML parser
-              python3Packages.html2text # HTML to markdown conversion
-              python3Packages.rich # Pretty terminal tables
+            packages = [
+              hugoFor.${system} # Hugo (latest release, from nixpkgs-unstable)
+              # One interpreter carrying every library the scripts in
+              # scripts/ import, so `python3 scripts/<name>.py` works
+              # directly in the dev shell. Keep in step with
+              # REQUIREMENTS.txt.
+              #
+              # NOTE: atoma (used by fetch_feeds.py) is not packaged in
+              # nixpkgs, so that one script still needs the pipenv
+              # environment until we add a derivation for it.
+              (pkgs.python3.withPackages (ps: [
+                ps.beautifulsoup4 # HTML parsing for harvesters
+                ps.boto3 # S3 download listings
+                ps.html2text # HTML to markdown conversion
+                ps.icalendar # Release schedule .ics generation
+                ps.lxml # Fast HTML/XML parser backend
+                ps.pillow # Logo/image resizing
+                ps.python-dateutil # Feed date parsing
+                ps.requests # HTTP client
+                ps.rich # Pretty terminal tables
+                ps.stripe # Donation sync
+                ps.pytest # Test runner
+              ]))
+            ]
+            ++ (with pkgs; [
               gnumake # GNU Make for build automation
-            ];
+            ]);
             shellHook = ''
               export DIRENV_LOG_FORMAT=
               echo "-----------------------"
               echo "🌈 Your Hugo Dev Environment is ready."
-              echo "It provides hugo and vscode for use with the OSGeo Website Project"
+              echo "It provides hugo and python for the OSGeo Website Project."
               echo ""
-              echo "🪛 VSCode:"
+              echo "🪛 Editor:"
               echo "--------------------------------"
-              echo "Start vscode like this:"
-              echo ""
-              echo "./vscode.sh"
+              echo "This project is set up for Neovim; see .nvim.lua for"
+              echo "project-local configuration."
               echo ""
               echo "🪛 Hugo:"
               echo "--------------------------------"

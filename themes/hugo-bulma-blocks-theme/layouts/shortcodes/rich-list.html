@@ -6,7 +6,7 @@
 
 {{ $url := .Get "listLink" }}
 
-{{ with index .Site.Data.conf }}
+{{ with index hugo.Data.conf }}
 	{{ $ltrversion := .ltrversion }}
 	{{ $version := .version }}
 

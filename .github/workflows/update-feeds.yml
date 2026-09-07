@@ -1,3 +1,7 @@
+# ⚠️ QGIS VESTIGE: fetch_feeds.py still pulls from members.qgis.org,
+# feed.qgis.org and the QGIS Flickr group pool. Repoint those at OSGeo
+# sources before this repo moves to the OSGeo org, or this job will
+# auto-commit QGIS data into the OSGeo site.
 # This workflow updates the feeds, members list, and contributors stats.
 
 name: ⚒️ Scrape and commit
@@ -9,51 +13,51 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'qgis'
+    if: github.repository_owner == 'OSGeo'
     steps:
-    - name: '🛒 Checkout QGIS Website'
-      uses: actions/checkout@v6
+    - name: '🛒 Checkout OSGeo Website'
+      uses: actions/checkout@v7
       with:
         ref: main
-        path: ./qgis-website
+        path: ./osgeo-website
 
     - name: '🐍 Setup Python'
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v7
       with:
-        python-version: '3.10'
+        python-version: '3.13'
         architecture: 'x64'
         cache: "pipenv"
 
     - name: '🚸Install Python deps'
       run: |
-        cd ./qgis-website
+        cd ./osgeo-website
         pip install pipenv && pipenv install -r REQUIREMENTS.txt && pipenv sync --bare
         pipenv run pip freeze
 
     - name: '🗞️ Fetch Feed Content'
       run: |
-        cd ./qgis-website
+        cd ./osgeo-website
         pipenv run pip freeze
         pipenv run ./fetch_feeds.py
 
     - name: '⚙️ Update Hub Maps'
       run: |
-        cd ./qgis-website
+        cd ./osgeo-website
         pipenv run ./scripts/hub_images_harvest.py
 
     - name: '🏢 Update Contributing Organizations'
       run: |
-        cd ./qgis-website
+        cd ./osgeo-website
         pipenv run ./scripts/update_contributing_orgs.py
 
     - name: '🧑‍💻 Update GitHub Contributors'
       run: |
-        cd ./qgis-website
+        cd ./osgeo-website
         pipenv run ./scripts/update_individual_contributors.py
 
     - name: '✉️ Commit'
       uses: stefanzweifel/git-auto-commit-action@v7
       with:
         commit_message: 'Funders scraped and committed via a GitHub Action.'
-        repository: ./qgis-website
+        repository: ./osgeo-website
         # push_options: --force

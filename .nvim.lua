@@ -9,6 +9,7 @@
 --   4. Format files: <leader>pf
 --   5. Build for production: <leader>pb
 --   6. Verify content vs osgeo.org: <leader>pv (or :VerifyContent)
+--   7. Run Playwright e2e tests: <leader>pt (or :E2eTest)
 --      :VerifyContentReport saves a markdown table
 --      :VerifyContentNginx writes osgeo-redirects.conf
 
@@ -120,6 +121,15 @@ end, { desc = 'Run make hugo-run-dev' })
 -- Content verification (cross-check local Hugo content against upstream osgeo.org
 -- and optionally emit an nginx redirect map). Runs via the flake app so all
 -- Python deps are provisioned from nixpkgs.
+vim.api.nvim_create_user_command('E2eTest', function(opts)
+  -- Builds the site, serves it on :1313 and runs the Playwright suite.
+  -- Mirrors what .github/workflows/playwright-e2e.yml does in CI.
+  local args = opts.args ~= '' and (' ' .. opts.args) or ''
+  vim.cmd('terminal ./playwright/ci-test/run-tests.sh' .. args)
+end, { nargs = '*', desc = 'Run the Playwright end-to-end suite' })
+vim.api.nvim_create_user_command('E2eTestUI', function()
+  vim.cmd('terminal ./playwright/ci-test/run-tests.sh --ui')
+end, { desc = 'Run the Playwright suite in UI mode' })
 vim.api.nvim_create_user_command('VerifyContent', function(opts)
   local args = opts.args ~= '' and (' ' .. opts.args) or ''
   vim.cmd('terminal nix run .#verify-content --' .. args)
@@ -205,6 +215,10 @@ if wk_ok then
     { '<leader>pl', '<cmd>MarkdownLint<cr>', desc = 'Lint Markdown' },
     { '<leader>pL', '<cmd>HtmlHint<cr>', desc = 'Lint HTML output' },
     { '<leader>pc', '<cmd>PrettierCheck<cr>', desc = 'Check formatting' },
+
+    -- Testing
+    { '<leader>pt', '<cmd>E2eTest<cr>', desc = 'Run Playwright e2e tests' },
+    { '<leader>pT', '<cmd>E2eTestUI<cr>', desc = 'Playwright e2e tests (UI mode)' },
 
     -- Pre-commit / Git
     { '<leader>pp', '<cmd>PreCommit<cr>', desc = 'Run pre-commit' },

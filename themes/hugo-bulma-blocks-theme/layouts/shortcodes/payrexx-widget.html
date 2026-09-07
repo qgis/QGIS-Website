@@ -7,7 +7,7 @@
     </p>
     <hr />
     <form id="donate-payrexx">
-        {{ range sort $.Site.Data.payrexx_products }}
+        {{ range sort hugo.Data.payrexx_products }}
             <input
                 value="{{ .payment_link }}"
                 id="{{ .id }}"

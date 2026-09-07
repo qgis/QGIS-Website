@@ -1,5 +1,5 @@
-{{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
-{{ $honoraryMembers := $.Site.Data.contributors.honorary_members }}
+{{ $allContributors := hugo.Data.contributors.contributors.contributors }}
+{{ $honoraryMembers := hugo.Data.contributors.honorary_members }}
 {{ $contributors := slice }}
 {{ range $allContributors }}
     {{ if .has_github_account }}

@@ -1,1 +1,1 @@
-{{ with index .Site.Data.conf (.Get 0) }}{{ . | markdownify }}{{ end }}
+{{ with index hugo.Data.conf (.Get 0) }}{{ . | markdownify }}{{ end }}

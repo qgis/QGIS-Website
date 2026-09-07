@@ -1,5 +1,5 @@
 {{ $dataFile := (.Get "dataFile") }}
-{{ $data := index $.Site.Data.commercial_support $dataFile | default dict }}
+{{ $data := index hugo.Data.commercial_support $dataFile | default dict }}
 <div class="container mt-6 mb-6">
     {{ with sort $data }}
         {{ range . }}

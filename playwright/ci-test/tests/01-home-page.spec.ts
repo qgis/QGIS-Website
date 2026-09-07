@@ -1,150 +1,62 @@
 import { test as base, expect } from "@playwright/test";
 import { Header } from "./fixtures/header";
-import { HomePage } from "./fixtures/home-page";
 import { Footer } from "./fixtures/footer";
+import { HomePage } from "./fixtures/home-page";
 
 type HomePageFixtures = {
     header: Header;
-    homePage: HomePage;
     footer: Footer;
+    homePage: HomePage;
 };
 
 const test = base.extend<HomePageFixtures>({
-    header: async ({ page }, use) => {
-        const header = new Header(page);
-        await use(header);
-    },
-    homePage: async ({ page }, use) => {
-        const homePage = new HomePage(page);
-        await use(homePage);
-    },
-    footer: async ({ page }, use) => {
-        const footer = new Footer(page);
-        await use(footer);
-    },
+    header: async ({ page }, use) => await use(new Header(page)),
+    footer: async ({ page }, use) => await use(new Footer(page)),
+    homePage: async ({ page }, use) => await use(new HomePage(page)),
 });
 
 test.describe("Home page", () => {
-    test.beforeEach(async ({ header, homePage }) => {
-        // Go to the home url before each test.
+    test.beforeEach(async ({ homePage }) => {
         await homePage.goto();
     });
 
-    test("Header", async ({ header }) => {
-        await expect(header.logoLink).toBeVisible();
-
-        // About
-        await expect(header.aboutLink).toBeVisible();
-        await header.aboutLink.hover();
-        await expect(header.featuresLink).toBeVisible();
-        await expect(header.mapsLink).toBeVisible();
-        await expect(header.caseStudiesLink).toBeVisible();
-        await expect(header.newsAndBlog).toBeVisible();
-        await expect(header.visualChangelogLink).toBeVisible();
-        await expect(header.roadmapLink).toBeVisible();
-        await expect(header.membersLink).toBeVisible();
-        await expect(header.supportLink).toBeVisible();
-
-        // Resources
-
-        await expect(header.resourcesLink).toBeVisible();
-        await header.resourcesLink.hover();
-        await expect(header.documentationLink).toBeVisible();
-        await expect(header.resourcesHubLink).toBeVisible();
-        await expect(header.pluginsLink).toBeVisible();
-        await expect(header.booksLink).toBeVisible();
-        await expect(header.certifiedMemberLink).toBeVisible();
-        await expect(header.reportsLink).toBeVisible();
-
-        // Community
-        await expect(header.communityLink).toBeVisible();
-        await header.communityLink.hover();
-        await expect(header.getInvolvedLink).toBeVisible();
-        await expect(header.meetingsLink).toBeVisible();
-        await expect(header.qgisFoundationLink).toBeVisible();
-        await expect(header.projectOrganisationLink).toBeVisible();
-        await expect(header.membersBlogLink).toBeVisible();
-        await expect(header.userGroupLink).toBeVisible();
-        await expect(header.metricsLink).toBeVisible();
-
-        // Buttons
-        await expect(header.downloadLink).toBeVisible();
-        await expect(header.donateLink).toBeVisible();
-        await expect(header.searchInput).toBeVisible();
-        await expect(header.searchInput).toBeEmpty();
+    test("has the OSGeo title", async ({ page }) => {
+        await expect(page).toHaveTitle(/OSGeo - Open Source Geospatial Foundation/);
     });
 
-    test("Content", async ({ homePage }) => {
-        await expect(homePage.freeOpenSourceSpatialDiv).toBeVisible();
-        await expect(homePage.spatialWithoutCompromiseHeading).toBeVisible();
-        await expect(homePage.createMapsHeading).toBeVisible();
-        await expect(homePage.editLayersHeading).toBeVisible();
-        await expect(homePage.processAndAnalyzeHeading).toBeVisible();
-        await expect(homePage.shareMapsHeading).toBeVisible();
-        await expect(homePage.exploreQGISLink).toBeVisible();
-        await expect(homePage.powerOfOpenSourceHeading).toBeVisible();
-        await expect(homePage.getInvolvedLink).toBeVisible();
-        await expect(homePage.freeAndOpenSourceHeading).toBeVisible();
-        await expect(homePage.freeDownloadLink).toBeVisible();
-        await expect(homePage.youTubeVideoThumbnailOverlayImage).toBeVisible();
-        await expect(homePage.startUsingQGISHeading).toBeVisible();
-        await expect(homePage.goToMaterialsLink).toBeVisible();
-        await expect(homePage.qgisSupportersHeading).toBeVisible();
-        await expect(homePage.addYourLogoHereText).toBeVisible();
-        await expect(homePage.silverPartnerText).toBeVisible();
-        await expect(homePage.supportersGridDiv).toBeVisible();
-        await expect(homePage.createMapsImg).toBeVisible();
-        await expect(homePage.editLayersImg).toBeVisible();
-        await expect(homePage.processImg).toBeVisible();
-        await expect(homePage.shareMapsImg).toBeVisible();
-        await expect(homePage.communityImg).toBeVisible();
-        await expect(homePage.changeLogVideo).toBeVisible();
-        await expect(homePage.otherSupporters).toBeVisible();
+    test("shows the hero headline", async ({ homePage }) => {
+        await expect(homePage.hero).toBeVisible();
+        await expect(homePage.headline).toBeVisible();
+        await expect(homePage.headlineWords).toHaveCount(2);
+        await expect(homePage.headline).toContainText("Powering the");
+        await expect(homePage.headline).toContainText("World's Maps");
+    });
 
-        for (const text of homePage.textList) {
-            await expect(homePage.pageBody).toContainText(text);
+    test("renders the four data-driven hero stats", async ({ homePage }) => {
+        await expect(homePage.statCards).toHaveCount(4);
+        await expect(homePage.statLabels).toHaveText(HomePage.statLabels);
+
+        // The project count comes from data/projects.yaml, so assert its shape
+        // rather than a value that changes whenever a project is added.
+        await expect(homePage.statNumbers.first()).toHaveText(/^\d+\+$/);
+    });
+
+    test("shows each main content section", async ({ page }) => {
+        for (const heading of HomePage.sectionHeadings) {
+            await expect(
+                page.getByRole("heading", { name: heading, level: 2 }),
+            ).toBeVisible();
         }
     });
 
-    test("Footer", async ({ footer }) => {
-        await expect(footer.banner).toBeVisible();
-        await expect(footer.projectList).toBeVisible();
-        await expect(footer.communityList).toBeVisible();
-        await expect(footer.resourcesList.first()).toBeVisible();
-        await expect(footer.fundingList).toBeVisible();
-        await expect(footer.downloadLink).toBeVisible();
-        await expect(footer.featuresLink).toBeVisible();
-        await expect(footer.caseStudiesLink).toBeVisible();
-        await expect(footer.pluginsLink).toBeVisible();
-        await expect(footer.visualChangelogsLink).toBeVisible();
-        await expect(footer.getInvolvedLink).toBeVisible();
-        await expect(footer.becomeCertifiedMemberLink).toBeVisible();
-        await expect(footer.qgisFoundationLink).toBeVisible();
-        await expect(footer.projectOrganisationLink).toBeVisible();
-        await expect(footer.localUserGroupsLink).toBeVisible();
-        await expect(footer.membersBlogsList).toBeVisible();
-        await expect(footer.documentationLink).toBeVisible();
-        await expect(footer.installationGuideLink).toBeVisible();
-        await expect(footer.archiveLink).toBeVisible();
-        await expect(footer.roadmapLink).toBeVisible();
-        await expect(footer.reportsLink).toBeVisible();
-        await expect(footer.booksLink).toBeVisible();
-        await expect(footer.supportLink).toBeVisible();
-        await expect(footer.qgisDashboardLink).toBeVisible();
-        await expect(footer.blogLink).toBeVisible();
-        await expect(footer.donateLink).toBeVisible();
-        await expect(footer.membershipList).toBeVisible();
-        await expect(footer.diversityStatementLink).toBeVisible();
-        await expect(footer.codeOfConductLink).toBeVisible();
-        await expect(footer.environmentalPolicyLink).toBeVisible();
-        await expect(footer.licenseLink).toBeVisible();
-        await expect(footer.visualStyleGuideLink).toBeVisible();
-        await expect(footer.goodiesLink).toBeVisible();
-        await expect(footer.logoImage).toBeVisible();
-        await expect(footer.facebookLink).toBeVisible();
-        await expect(footer.youtubeLink).toBeVisible();
-        await expect(footer.mapstodonLink).toBeVisible();
-        await expect(footer.ghLink).toBeVisible();
-        await expect(footer.mailLink).toBeVisible();
+    test("shows the OSGeo logo in the navbar", async ({ header }) => {
+        await expect(header.navbar).toBeVisible();
+        await expect(header.brandLogo).toBeVisible();
+        await expect(header.brandLogo).toHaveAttribute("alt", "OSGeo");
+        await expect(header.brandLogo).toHaveAttribute("src", /osgeo-logo\.svg$/);
+    });
+
+    test("has a footer", async ({ footer }) => {
+        await expect(footer.root).toBeVisible();
     });
 });

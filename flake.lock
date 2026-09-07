@@ -1,28 +1,28 @@
 {
   "nodes": {
-    "nixpkgs-25-05": {
+    "nixpkgs-26-05": {
       "locked": {
-        "lastModified": 1763049705,
-        "narHash": "sha256-A5LS0AJZ1yDPTa2fHxufZN++n8MCmtgrJDtxFxrH4S8=",
+        "lastModified": 1780453794,
+        "narHash": "sha256-bXMRa9VTsHSPXL4Cw8R6JJLQeY3Y/IP4+YJCYVmQ7FY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "3acb677ea67d4c6218f33de0db0955f116b7588c",
+        "rev": "6b316287bae2ee04c9b93c8c858d930fd07d7338",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-25.05",
+        "ref": "nixos-26.05",
         "repo": "nixpkgs",
         "type": "github"
       }
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1741173522,
-        "narHash": "sha256-k7VSqvv0r1r53nUI/IfPHCppkUAddeXn843YlAC5DR0=",
+        "lastModified": 1787900134,
+        "narHash": "sha256-VYXO0XZlgj06dxJZRhrD3WoSsvq/c7+/Akyoa22pefw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d69ab0d71b22fa1ce3dbeff666e6deb4917db049",
+        "rev": "83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
         "type": "github"
       },
       "original": {
@@ -34,15 +34,15 @@
     },
     "nixpkgs-version": {
       "inputs": {
-        "nixpkgs-25-05": "nixpkgs-25-05",
+        "nixpkgs-26-05": "nixpkgs-26-05",
         "nixpkgs-unstable": "nixpkgs-unstable"
       },
       "locked": {
-        "lastModified": 1763533702,
-        "narHash": "sha256-gxN0S9D2zjh9mU7AQ9/ZxaUMlk83yHfbPN2SFTRoLuA=",
+        "lastModified": 1788053008,
+        "narHash": "sha256-ZeShLPgL/XNosLvHOo1NAlUbeRKWzwHrGuNmwI30gzc=",
         "owner": "QGIS",
         "repo": "qgis-nixpkgs-version",
-        "rev": "5186a0ccaeef80c6c3a66eac083ccb1fd1718507",
+        "rev": "236b987dce6af93f5ad5f274070ca2a4e55a8114",
         "type": "github"
       },
       "original": {
@@ -55,7 +55,11 @@
       "inputs": {
         "nixpkgs": [
           "nixpkgs-version",
-          "nixpkgs-25-05"
+          "nixpkgs-26-05"
+        ],
+        "nixpkgs-unstable": [
+          "nixpkgs-version",
+          "nixpkgs-unstable"
         ],
         "nixpkgs-version": "nixpkgs-version"
       }
