@@ -67,24 +67,24 @@ ____
    - Select all that apply (see eligible types above)
 9. **Description of Contribution** *(required)*
    - **Massimo:** 500 caratteri (sii conciso!)
-   - Describe your activities and impact on the QGIS community
-   - Include specific examples where possible
+   - Descrivi le tue attività e il loro impatto sulla comunità QGIS
+   - Includi esempi specifici dove possibile
 
-#### Optional Location Information:
-10. **Latitude & Longitude**
+#### Informazione opzionale sulla posizione:
+10. **Latitudine e longitudine**
     - Provide coordinates for a generalized location (not your home/office!)
-    - Use decimal degrees format (e.g., 51.5074, -0.1278)
+    - Usa il formato in gradi decimali (ad es. 51.5074, -0.1278)
 
 ____
-## For Organizations
-If you're applying as an organization, also include:
-- **Organization Name**
-- **Logo** (PNG format, 150×150px maximum)
-- Brief description of your organization's QGIS involvement
-- Types of support you provide to the community
+## Per le organizzazioni
+Se ti candidi come organizzazione, includi anche:
+- **Nome dell'organizzazione**
+- **Logo** (formato PNG, massimo 150×150px)
+- Breve descrizione del coinvolgimento della tua organizzazione in QGIS
+- Tipi di supporto che offri alla comunità
 
 ____
-## What Happens After You Apply?
+## Cosa succede dopo aver fatto domanda?
 ### Review Process
 1. **Submission:** Complete the [application form](https://forms.gle/wZr4EfCjqPWGaoq37)
 2. **Revisione:** Il Comitato direttivo del progetto QGIS (PSC) esamina tutte le proposte presentate

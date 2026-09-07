@@ -211,29 +211,29 @@ The geometry rotation tool is an advanced digitising tool that allows you to arb
 
 ![image13](images/entries/7ff32dd8c7ead358f9ffab4576dff33503154eb2.webp)
 ## ラベリング
-### Feature: \"Follow point\" alignment for multiline labels
+### 機能: マルチラインラベル用の \"ポイントの周り\" 配置オプション
 このモードに設定すると、ラベルのテキストの配置は、ポイントに対するラベルの最終的な配置に依存します。たとえば、ラベルがポイントの左に配置されている場合はラベルは右揃えになり、ポイントの右に配置されている場合はラベルが左揃えになります。これにより、ポイントレイヤの複数ラベルの外観が大幅に改善されます。
 
 ![image19](images/entries/851e7234a9509e2452dee69939d9de933a8bb90a.webp)
 ## マップコンポーザー
 ### 特長：スケールバーのサイズを希望のスケールバーの幅に合わせる
-In previous QGISversions it was hard to use graphical scalebars when the range of potential scales was big. The scalebar would either be quickly too wide or too narrow and one had to manually adapt the segment sizes (units per segment) after each scale change. It also meant that graphical scalebars couldn\'t be really used in Atlas serial printing or with QGISserver when the final map scale was unknown. With QGIS2.10 one can now set min/max sizes for one segment length in mm and QGISwould automatically adapt the units per segment while still keeping round values.
+以前のQGISversionsでは、潜在的なスケールの範囲が大きかった場合、グラフィカルなスケールバーを使用することは困難でした。スケールバーは、すばやすぎるか狭すぎるかのいずれかであり、スケール変更後にセグメントサイズ（セグメントあたりの単位）を手動で適応させなければならなかった。また、グラフィカルなスケールバーは、Atlasのシリアル印刷や最終的な地図のスケールが不明なときにQGISserverで実際に使用することはできませんでした。QGIS2.10を使用すると、mm単位で1セグメント長の最小/最大サイズを設定できるようになり、QGISは丸め値を維持しながらセグメントごとに自動的に単位を適合させることになります。
 
-Don\'t forget to also set the alignment of the scalebar, esp. if you want it to be centered or right-aligned!
+スケールバーのアラインメントも設定することを忘れないでください。あなたはそれが中央寄せか右寄せであることを望むならば！
 
-**This feature was developed by:** [Sandro Mani (Sourcepole AG)](http://www.sourcepole.ch/)
+**この機能は、以下によって開発されました：** [Sandro Mani（Sourcepole AG）](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Kanton Glarus, Switzerland](http://geo.gl.ch/)
+**この機能は以下によって資金提供されました：** [Kanton Glarus、Switzerland](http://geo.gl.ch/)
 
 ![image20](images/entries/d435d4f94cf3d70a97c8d373aa08c28f8685defd.webp)
 ## プログラマビリティ
 ### 特集：プログラマーのための改善
 私たちは、開発者にとって興味深いいくつかの変更と改善を行いました。
 - Qt4の最小要件をバージョン4.8に引き上げました。Qt4は、QGISを作成するために使用する主要なC ++ツールキット/ライブラリの1つです。
-- New `QgsStatisticalSummary` class for calculating statistics from a list of numbers.
+- 数値のリストから統計を計算する新しい `QgsStatisticalSummary` クラスです。
 - ベクタレイヤのデータソース変更が許可されます.
-- Implicit sharing of classes : `QgsField`, `QgsFields`, `QgsDataDefined`, `QgsFeature`, `QgsGeometry`.
-- Plugins can now create their own entries in the browser widget with two new classes : `QgsDataItemProvider` and `QgsDataItemProviderRegistry`.
+- 暗黙的なクラスの共用 : `QgsField`, `QgsFields`, `QgsDataDefined`, `QgsFeature`, `QgsGeometry` 。
+- プラグインは、 `QgsDataItemProvider` と `QgsDataItemProviderRegistry` という2つの新しいクラスを持つブラウザウィジェットに独自のエントリを作成できるようになりました。
 
 ![image21](images/entries/c702d89260cbab35323c052a15ab5c5728fc7115.webp)
 ## QGISサーバー
@@ -257,21 +257,21 @@ FI_POINT_TOLERANCE=16&FI_LINE_TOLERANCE=8&FI_POLYGON_TOLERANCE=4
 ### 機能：段階的レンダラーを使用してシンボルサイズを変更する
 レンダラーはQGISのサブシステムであり、データの豊富な地図表現を作成することができます。段階的レンダラーは、ベクターレイヤーの連続的に変化する値に基づいてシンボルを変化させる。QGISの以前のバージョンでは、色を変えることしかできませんでした（たとえば、カラーランプに沿って色を使用するなど）。QGIS 2.10では、目盛り付きのシンボルレンダラーでサイズ *または* 色を変更できるようになりました。ポイントレイヤーではポイントサイズを変えることができます。ラインではライン幅を変えることができます。ポリゴンレイヤーは色によって変化する能力しか保持しませんが、線幅はまだサポートされていません。
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**この機能は、以下によって開発されました：** [Vincent Mora（Oslandia）](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**この機能は以下によって資金提供されました：** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image24](images/entries/1d170efe9ca0c76e971cfe0f1d0adb7c4e14f08f.webp)
 ### 機能：地物を地図範囲に自動的にクリッピングさせないための新しいオプション
-This option (located under the symbol advanced menu) disables the automatic clipping of lines/polygons to the canvas extent. In some cases this clipping results in unfavourable symbology (eg centroid fills where the centroid must always be the actual feature\'s centroid).
+このオプション（シンボルの詳細メニューの下にあります）は、線/ポリゴンのキャンバス範囲への自動クリッピングを無効にします。場合によっては、このクリッピングは好ましくないシンボロジ（例えば、重心が常に実際の地物の重心でなければならない重心を満たす）をもたらす。
 
 ![image25](images/entries/ecd30b6893fd93d65c95df8f069cc3c3e0fff7be.webp)
 ### 機能：詳細メニューからサイズのスケールと回転が削除されました
-We have removed `SizeScale` and `Rotation` from `` `Layer -> Properties -> Symbology tab -> Advanced Menu ``. You should rather set rotation on a *per-symbol layer basis* using an expression or field. The expressions used in old projects are converted to symbol level **data defined size and angle** properties.
+「Layer -> Properties -> Symbology tab -> Advanced Menu」 から `SizeScale` と `Rotation` を削除しました。式またはフィールドを使用して、*シンボルレイヤー単位* で回転を設定する必要があります。古いプロジェクトで使用された式は、シンボルレベルの **データ定義のサイズと角度** のプロパティに変換されます。
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**この機能は、以下によって開発されました：** [Vincent Mora（Oslandia）](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**この機能は以下によって資金提供されました：** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image26](images/entries/2e02fb11f0f967b1ea17331d9af3d5a22a63fed1.webp)
 ### 機能：フォントマーカーのデータ定義プロパティ
@@ -281,21 +281,21 @@ We have removed `SizeScale` and `Rotation` from `` `Layer -> Properties -> Symbo
 ### 機能：ヒストグラムを使用して目盛レンダラーを視覚化して変更する
 段階的レンダラーに新しいヒストグラムタブが追加され、割り当てられたフィールドまたは式からの値のインタラクティブなヒストグラムが表示されます。クラス区切りは、ヒストグラムを使用して移動または追加することができます。
 
-**This feature was funded by:** [ADUGA](http://www.aduga.org)
+**この機能は次の方の資金提供で作成されました:** [ADUGA](http://www.aduga.org)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image28](images/entries/b519e61b5b50de563203adf8ef35a7c037536332.webp)
-### 機能：記号音量レベルでのサイズ、回転、ストローク幅の表現
+### 機能：シンボルレベルでのサイズ、回転、ストローク幅の表現
 サイズと回転は、マーカーを構成するすべてのシンボルレベルの式で定義できます。幅は、行を構成するすべてのシンボルの式で定義できます。
 
-シンボルの場合、さまざまなサイズの凡例が生成されます。これにより、分類/卒業した色の場合の多変量解析の凡例が可能になります。
+シンボルの場合、さまざまなサイズの凡例が生成されます。これにより、分類/段階分けした色の場合の多変量解析の凡例が可能になります。
 
 アシスタント（プレビュー付）は、データ定義ボタンからアクセスして、ユーザーがサイズ表記を定義できるようにします。Flannery、Area、およびRadiusの3つの方法があります。
 
-**This feature was developed by:** [Vincent Mora (Oslandia)](http://www.oslandia.com/)
+**この機能は、以下によって開発されました：** [Vincent Mora（Oslandia）](http://www.oslandia.com/)
 
-**This feature was funded by:** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
+**この機能は以下によって資金提供されました：** [Agence de l\'eau Adour-Garonne](http://www.eau-adour-garonne.fr/)
 
 ![image29](images/entries/30f4392583400a0ed2fbdae3468265b91f39e675.webp)
 ### Feature：レイヤーとシンボルレイヤーのライブレイヤーエフェクト
@@ -303,9 +303,9 @@ We have removed `SizeScale` and `Rotation` from `` `Layer -> Properties -> Symbo
 
 **注**これは上級者向けの機能です。この機能を過剰に使用するとレンダリング時間が大幅に遅くなることがあるので、レイヤーごとに異なるシンボルプロファイルを使用することを検討してください。 1つはドラフトモードです。
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [a crowd-funding initiative](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
+**この機能は、次の方の資金提供で作成されました:** [クラウドファンディング イニシアティブ](https://www.kickstarter.com/projects/41633306/a-christmas-gift-for-qgis-live-layer-effects-for-q)
 
 ![image30](images/entries/2ce331bd884c14764989c1bc5e3c4d1f80ec588c.webp)
 

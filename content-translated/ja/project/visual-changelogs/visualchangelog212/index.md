@@ -14,15 +14,15 @@ type: visual-changelog
 
 リリース日: 2015-10-23
 
-This is the change log for the next release of QGIS - version 2.12.0 \'Lyon\' - host city to our developer meet up in April 2012.
+これはQGISの次のリリースの変更ログです。バージョン2.12.0「Lyon」 - デベロッパーミートアップ2012年4月のホスト都市
 
-**New Features in QGIS 2.12 \'Lyon\'**
+**QGIS 2.12 \'Lyon\' の新機能**
 
-This is the next release in our 4-monthly release series. It gives you access to the new features we have been working on and represents the \'cutting edge\' of QGIS development.
+これは4カ月ごとのリリースシリーズの次のリリースです。 これは、私たちが取り組んできた新機能へのアクセスを提供し、QGIS開発の「最先端」を表しています。
 
-QGIS \'Lyon\' is jam-packed with awesome new features. Special highlights are support for rule based labelling, rule based styling of attribute tables, and advanced geometry checker, support for digitising curve based geometries, better authentication management and much, much more! QGIS 2.12 also has many bug fixes and memory leaks addressed. The features provided in QGIS 2.12 will be included in the next LTR release (slated for release in 2016), so using this release provides you with an excellent opportunity to test new features that will make their way into the next LTR.
+QGISの「Lyon」には、素晴らしい新機能が満載されています。 特別なハイライトは、ルールベースのラベル付け、属性テーブルのルールベースのスタイリング、高度なジオメトリチェッカーのサポート、カーブベースのジオメトリのデジタイジング、認証管理の向上などです。 QGIS 2.12には、多くのバグ修正と処理されたメモリリークがあります。 QGIS 2.12で提供される機能は、次のLTRリリース（2016年にリリース予定）に含まれているため、このリリースを使用すると、次のLTRに移行する新しい機能をテストする素晴らしい機会が提供されます。
 
-Whenever new features are added to software they introduce the possibility of new bugs - if you encounter any problems with this release, please file a ticket [on the QGIS Bug Tracker](http://hub.qgis.org). If you are working in a production environment where you wish to be more conservative about rolling out new features to your users, we also provide a Long Term Release (LTR) version of QGIS. The current LTR is version 2.8.3 and is available at [download.qgis.org](http://download.qgis.org).
+新しい機能がソフトウェアに追加されるたびに、新しいバグが発生する可能性があります。このリリースで問題が発生した場合は、 [QGISバグトラッカー](http://hub.qgis.org) にチケットを提出してください。 新しい機能をユーザーに展開することについてもっと慎重にしたい運用環境で作業している場合は、QGISのLTR（Long Term Release）バージョンも提供しています。 現在のLTRはバージョン2.8.3であり、 [download.qgis.org](http://download.qgis.org) から入手できます。
 
 **謝辞**
 
@@ -31,16 +31,16 @@ Whenever new features are added to software they introduce the possibility of ne
 QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
-- **GOLD Sponsor:** [Asia Air Survey, Japan](http://www.asiaairsurvey.com/)
+- **ゴールドスポンサー:** [Asia Air Survey, Japan,](http://www.asiaairsurvey.com/)
 - シルバースポンサー: [AGH University of Science and Technology, Krakow, Poland](http://www.agh.edu.pl/en)
 - シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
 - シルバースポンサー: [アイルランドの公共事業局、アイルランド](http://www.opw.ie/)
 - シルバースポンサー: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
 - ブロンズスポンサー: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
-- BRONZE Sponsor: [WhereGroup GmbH & Co. KG, Germany](http://wheregroup.com/)
-- BRONZE Sponsor: [Nicholas Pearson Associates, UK](http://www.npaconsult.co.uk/)
-- BRONZE Sponsor: [QGIS Poland, Poland](http://qgis-polska.org/)
-- BRONZE Sponsor: [www.terrelogiche.com, Italy](http://www.terrelogiche.com/)
+- ブロンズスポンサー: [WhereGroup GmbH & Co. KG, Germany](http://wheregroup.com/)
+- ブロンズスポンサー: [Nicholas Pearson Associates, UK](http://www.npaconsult.co.uk/)
+- ブロンズスポンサー: [QGIS Poland, Poland](http://qgis-polska.org/)
+- ブロンズスポンサー: [www.terrelogiche.com, Italy](http://www.terrelogiche.com/)
 - ブロンズスポンサー: [GeoSynergy, Australia](http://www.geosynergy.com.au/)
 - ブロンズスポンサー: [Gaia3D, South Korea](http://www.gaia3d.com/)
 - ブロンズスポンサー: [Royal Borough of Windsor and Maidenhead, UK](http://www.rbwm.gov.uk/)
@@ -68,7 +68,7 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 ### 機能: 新しいようこそ画面
 空のプロジェクトやキャンバスの代わりに、QGISでの最近のプロジェクトをリストで表示すると共にサムネイル画像出すことで、最後に実施していたプロジェクトに素早く簡単に戻れるようになります。
 
-**This feature was developed by:** Matthias Kuhn at [OPENGIS.ch](http://www.opengis.ch)
+**この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch) の Matthias Kuhn
 
 ![image11](images/entries/30f2ab32f4ae0d135a26b6a6ddb6705f0f6dd74a.webp)
 ### 機能：コード品質の継続的改善
@@ -78,15 +78,15 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 ### 機能: 高度な設定エディタ
 設定ダイアログに新しいパネルが追加されました。このパネルでは、あなたのプロフィールですでに定義されているオプションを編集できます。これは、あなたが何をしているのかを完全に理解することなくこれらの設定を変更すると、QGISで予期しない動作が発生する可能性があるため、パワーユーザーのみを対象としています。
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch/) の Matthias Kuhn
 
 ![image13](images/entries/6d59988bf11726192579915cff18f2b81e3f9c8f.webp)
 ### 機能：相互に排他的なレイヤーツリーグループ
 この機能を使用すると、グループ内の1つのレイヤだけがいつでも表示できるレイヤーグループを作成できます。この機能は、レイヤーツリービューのコンテキストメニューでグループごとに個別に切り替えることができます。
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**この機能は以下によって開発されました：** [Gut3W](http://www.gis3w.it/) への下請けの [Lutra Consulting](http://www.lutraconsulting.co.uk/) の Martin Dobias
 
-**この機能は以下によって資金提供されました：**トスカーナ地方（イタリア） -  SITA（CIG：63526840AE）
+**この機能は以下によって資金提供されました：** トスカーナ地方（イタリア） -  SITA（CIG：63526840AE）
 
 ![image14](images/entries/5c68a4deab4d6058d05d3129fec89c6f9abb8530.webp)
 ### 機能：式ウィジェット内のフィールド値のフィルタリング
@@ -96,22 +96,22 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 ![image15](images/entries/5d41174bdf2a059d41824590520857002a70a056.webp)
 ### 機能: ユーザインターフェースのテーマ変更をサポート
-QGIS 2.12 now supports user interface theming support which you can use to customise the appearance of window backgrounds, buttons etc. By default we ship with two themes: **Default** and **Night mapping**. The latter is a dark theme which some people may prefer if they find that light themes cause eye strain. If you know a little CSS you can create your own custom themes fairly easily too\...
+QGIS 2.12は、ウィンドウの背景、ボタンなどの外観をカスタマイズするために使用できるユーザーインターフェイステーマサポートをサポートしています。デフォルトでは、**Default** および **Night mapping** の2つのテーマが出荷されます。後者は、明るいテーマが目の緊張を引き起こすことが分かっている人が好むかもしれない暗いテーマです。ちょっとしたCSSを知っているなら、あなた自身のカスタムテーマをかなり簡単に作成することもできます\...
 
-Find out more about theming support by reading [Nathan Woodrow\'s blog article](http://nathanw.net/2015/08/29/ui-theme-support-now-core-in-qgis/).
+テーマサポートの詳細については、 [Nathan Woodrowのブログ記事](http://nathanw.net/2015/08/29/ui-theme-support-now-core-in-qgis/) を参照してください。
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
 
 ![image16](images/entries/2ec302b12a3b0db8e7a66465afccb227bc543a3e.webp)
 ### 機能: 新しい関数の追加（v2.12）
-A set of functions for \"fuzzy matching\" have been added. These include functions for finding the similarity of two strings and also for performing phonetic matching between strings, and allow you to perform filters for records which \"nearly match\" a specified string.
+「ファジーマッチング」のための一連の関数が追加されました。これらの関数には、2つの文字列の類似性を検索する機能と文字列間の発音的な一致を行う機能があり、指定された文字列に「ほぼ一致する」レコードのフィルタを実行できます。
 
 さらに多くのジオメトリベース機能が追加されました.以下のものがあります:
-- `num_points(geom)` for calculating the number of nodes in a geometry
-- `area(geom)`, `length(geom)` and `perimeter(geom)`, for calculating the area, length and perimeter of any geometry object. Previously only calculation of the area, length and perimeter of the current feature\'s geometry was possible.
-- `start_point(geom)`, `end_point(geom)`, `point_n(geom, n)`, for retrieving the first, last and numbered points from a geometry
-- `make_point(x,y)`, for manual creation of a point geometry
-- `x(geom)`, `y(geom)` functions which return the x and y coordinate for point geometries or the centroid x/y for non-point geometries
+- `num_points(geom)` ジオメトリ内のノード数を計算する
+- `area(geom)`、 `length(geom)` および `perimeter(geom)` は、あらゆるジオメトリオブジェクトの面積、長さ、および周長を計算します。以前は、現在の地物のジオメトリの面積、長さ、および周囲の計算のみが可能でした。
+- `start_point(geom)`、 `end_point(geom)`、 `point_n(geom, n)` は、ジオメトリの先頭、末尾、そして番号付けしたポイントを取得します
+- `make_point(x,y)` は、手動でポイントジオメトリを作成します
+- `x(geom)`、 `y(geom)` 関数は、ポイントジオメトリの x と y 座標、または、非ポイントジオメトリの重心 x/y を返す 
 
 A new `project_color` function has been added, which allows you to retrieve a color from the project\'s color scheme by name. This lets you create \'linked colors\', where the color of symbol or labeling components can be bound to a color in the project\'s color scheme. Update the color in the scheme, and all the linked colors will be automatically refreshed to match!
 
@@ -134,7 +134,7 @@ Will render the label like this:
 
 You can manage global variables from the `Settings -> Options` menu, and project level variables from `Project properties` (including adding your own custom variables).
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image18](images/entries/19aca1d680543a4013c53ba80406bdd5ebff88c5.webp)
 ## 解析ツール
@@ -147,9 +147,9 @@ This new tool in qgis_analysis library is able to take several rasters as input 
 - 関心のある領域をクリップします
 - 必要に応じて値を再スケールする
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Kartoza](http://kartoza.com/)
+**この機能は、以下によって開発されました：** [Kutoza](http://kartoza.com/) に下請けした [Lutra Consulting](http://www.lutraconsulting.co.uk/) `のMartin Dobias
 
-**This feature was funded by:** [DFAT](http://dfat.gov.au) for the [InaSAFE project](http://inasafe.org/)
+** この機能は以下の方の資金提供で開発されました:** [DFAT](http://dfat.gov.au) の [InaSAFE プロジェクト](http://inasafe.org/)
 
 ![image2](images/entries/c613bb210ba0e85eb3b479ab79cd895827c22602.webp)
 ### 機能: Geometry CheckerプラグインとGeometry Snapperプラグイン
@@ -157,9 +157,9 @@ This new tool in qgis_analysis library is able to take several rasters as input 
 
 **ジオメトリスナッパー**ツールを使用すると、1つのベクターレイヤーのエッジと頂点を、ユーザー定義の許容差を使用して2番目のレイヤーのエッジと頂点に揃えることができます。
 
-**This feature was developed by:** Sandro Mani at [Sourcepole AG](http://www.sourcepole.ch/)
+**この機能は以下によって開発されました：** [Sourcepole AG](http://www.sourcepole.ch/) の Sandro Mani
 
-**This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
+**この機能は以下によって資金提供されました：** [SolothurnのCanton](http://www.sogis.so.ch/)
 
 ![image3](images/entries/319136e65a51c7a8d76adac7aef89806db170c2e.webp)
 ## アプリケーションとプロジェクトのオプション
@@ -180,7 +180,7 @@ PKI認証関連：
 
 ネットワークドライブのセットアップを含む共有プロジェクトのシナリオでは、認証構成（authcfg）IDをユーザー間で共有されるものに編集できます。
 
-Since the authcfg ID is embedded in the project file, each user just needs to make an auth config that has their specific credentials for that resource, then edit the ID (upon creation of config or after) to the same ID in the project file. Then, when the resource loads, the same configuration will be queried on everyone\'s QGIS, just with their respective credentials for the authentication method used.
+authcfg IDはプロジェクトファイルに埋め込まれているので、各ユーザーはそのリソースのために、彼らの特定の資格情報を持つauth configを作る必要があるだけです。次に（configの作成時または後に）そのIDをそのプロジェクトファイルにあるのと同じIDになるように編集します。すると、使用される認証方法でそれぞれの資格情報が使われるだけで、リソースがロードされるときに誰のQGISでも同じ設定がクエリされます。
 
 「バッド・レイヤーの処理」ダイアログでは、ダイアログ内でauth configsを追加/編集/削除し、一致するようにデータ・ソースURIを更新できます。したがって、共有プロジェクトのシナリオでは、ユーザーは、プロジェクトのロード時に、適切な新しいauth configをすぐに追加することができます（正確には、authcfg IDを使用する必要があります）。
 
@@ -192,16 +192,16 @@ PKI example docs: <https://github.com/dakcarto/QGIS-Enhancement-Proposals/blob/a
 
 **この機能は次の方によって開発されました:** Larry Shaffer
 
-**This feature was funded by:** [Boundless Spatial, Inc.](http://boundlessgeo.com/)
+**この機能は次の方の資金提供で開発されました:** [Boundless Spatial, Inc.](http://boundlessgeo.com/)
 
 ![image4](images/entries/d6c9305a8dcaea3a5a6c039dec40d50e0caf23ff.webp)
 ## ブラウザ
 ### 機能：ブラウザでのPostGIS接続の改善
 QGISブラウザでは、**スキーマの作成、名前変更、削除**、レイヤの名前の変更と切り捨て**、およびあるスキーマから別のスキーマへのテーブルのコピー**など、PostGIS接続の追加機能がサポートされています。 。
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
-**Table copying by:** Jürgen Fischer at [norBIT GmbH](http://www.norbit.de/)
+** 次の方がテーブルをコピーしました:** Jürgen Fischer [norBIT GmbH](http://www.norbit.de/)
 
 ![image5](images/entries/00820dbcf67c97b61154e7e1f41af0397009b548.webp)
 ## データプロバイダ
@@ -210,12 +210,12 @@ PostGISプロバイダに次のような改善が加えられました。
 - PostGISレイヤのルールベース描画機能のパフォーマンス改善
 - ビューにおける複合キーのサポートが追加されました
 
-**Compound keys developed by:** Jürgen Fischer at [norBIT GmbH](http://www.norbit.de/)
+**複合キーは次の方が開発しました:** Jürgen Fischer [norBIT GmbH](http://www.norbit.de/)
 
 ![image6](images/entries/bc56564581d97034137956cd27e945b3d3ceb3df.webp)
 ## データマネジメント
 ### 機能:DBManagerの改良
-DBマネージャーツールにはいくつかの改善点があります。
+DBマネージャーツールにはたくさんの改善点があります。
 - DBマネージャーでは、以前のバージョンで使用可能だったShapefileのみではなく、OGRでサポートされているデータ形式にデータをエクスポートできるようになりました。
 - Oracle SpatialはDBManagerでサポートされるようになりました
 - テーブルにデータをインポートする際には、新しいものをインポートする機能**を選択するだけで、インポートする項目を制限することができます。
@@ -225,7 +225,7 @@ DBマネージャーツールにはいくつかの改善点があります。
 ### 機能：属性テーブルセルの条件付き書式設定
 This is a major improvement to QGIS\'s attribute table rendering support. You can now style table cells according to rules. For example you can colour all cells with a population of less than 50 000 in red. The option is enabled via a new icon on the table toolbar at the top right of the attribute table window. You can read more about this feature on [Nathan Woodrow\'s blog article](http://nathanw.net/2015/08/20/mixing-a-bit-of-excel-into-qgis-conditional-formatted-table-cells/).
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
 
 ![image8](images/entries/ae9afefda043d31ef7718528d506d98e90e7a1f7.webp)
 ### 機能:ウィジェット内での相対パスのサポート
@@ -236,7 +236,7 @@ This is a major improvement to QGIS\'s attribute table rendering support. You ca
 
 ファイルブラウザで選択されたパスが.qgsプロジェクトファイルと同じディレクトリにある場合、パスは相対パスに変換されます。これにより、マルチメディア情報が添付されたQGISプロジェクトの移植性が向上します。
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch/) の Matthias Kuhn
 
 **This feature was funded by:** [Alta ehf](http://www.alta.is/)
 
@@ -253,7 +253,7 @@ In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but
 
 **This feature was developed by:** Marco Hugentobler at [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [Canton of Solothurn](http://www.sogis.so.ch/)
+**この機能は以下によって資金提供されました：** [SolothurnのCanton](http://www.sogis.so.ch/)
 
 ![image10](images/entries/215ead2dd5e43e394d47169a7fd82aa5cc08b6b6.webp)
 ## ラベリング
@@ -262,19 +262,19 @@ In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image19](images/entries/27a58b65cf449505c92cc6c8470a93d1f09893a1.webp)
 ### 機能：ポリゴンの内側に収まるラベルのみを描く
 ポリゴンのレイヤーにオプションが追加され、ポリゴンの地物内に完全に収まるラベルのみが描画されます。
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image20](images/entries/5c8461abe3aa5483c3243c0f145940b0d5fd1310.webp)
 ### 機能：ラベルの障害の優先順位を制御する
 In 2.12 it\'s now possible to specify the priority for labeling obstacles. This allows you to make labels prefer to overlap features from certain layers rather than others. The priority can also be data defined so that certain features are more likely to be covered than others. You can also use data defined expressions or fields to control whether a specific feature in layer will act as an obstacle for labels.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image21](images/entries/f07a082bd4e62f059788c18a9de353107b8bdc44.webp)
 ### Feature：ポリゴンレイヤーが障害物となる様子を制御する新しいオプション
@@ -282,7 +282,7 @@ New options have been added to control how labels should be placed to avoid over
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image22](images/entries/e37943c654080e33219acb5e519970cf748c87bf.webp)
 ### 機能：ラベル優先度に対するデータ定義制御
@@ -290,7 +290,7 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image23](images/entries/bd185cde38420f50fb540d742d178768d28ac577.webp)
 ### 機能:障害物のみのレイヤ用オプション
@@ -302,7 +302,7 @@ Note, that it is also possible to both label a layer, but also act as obstacle l
 
 See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image24](images/entries/de1eae1359ce92045d51c6fa9bc3f014a3f3ae67.webp)
 ### 機能：ルールベースのラベリング
@@ -310,9 +310,9 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 
 See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**この機能は以下によって開発されました：** [Gut3W](http://www.gis3w.it/) への下請けの [Lutra Consulting](http://www.lutraconsulting.co.uk/) の Martin Dobias
 
-**この機能は以下によって資金提供されました：**トスカーナ地方（イタリア） -  SITA（CIG：63526840AE）
+**この機能は以下によって資金提供されました：** トスカーナ地方（イタリア） -  SITA（CIG：63526840AE）
 
 ![image25](images/entries/8846f57f0395e7f6b2543a92a5c55b67e8b19923.webp)
 ## マップコンポーザー
@@ -321,19 +321,19 @@ You can now set a field or expression as the \"page name\" for atlas composition
 
 ページ名は、シンボル名やラベル式内でも使用でき、ページ名に基づいてアトラス機能の高度なスタイリングを可能にします。
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image26](images/entries/bbf6147ef8be9d209fa188d6c524bce9d13d5ba8.webp)
 ### 機能：グリッドアノテーションのカスタムフォーマット
 Composerのマップグリッドアノテーションは、エクスプレッションエンジンを使用して評価されるカスタムフォーマットでフォーマットできるようになりました。今あなたはマップが必要とするどんな難解なグリッドの番号付けフォーマットを利用しますか？
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image27](images/entries/a6cd03594ca802015ef4a5bf7806cc1ce291214b.webp)
 ### 機能：コンポーザー属性テーブルの複数行テキスト処理と自動テキスト折り返し
 Composer属性テーブルには、複数行の文字列を完全にサポートするようになりました。特定の文字にテキストを折り返すオプションや、列のサイズに合わせてテキストの折り返しを自動的に計算するオプションとともに、セル内のテキストの垂直方向の配置の制御も追加されました。自動行の高さで自動テキスト折り返しを適用するには、列幅を固定サイズに設定します。
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 **This feature was funded by:** [City of Uster](http://gis.uster.ch/)
 
@@ -341,7 +341,7 @@ Composer属性テーブルには、複数行の文字列を完全にサポート
 ### 機能：セルの背景色の高度なカスタマイズ
 この変更により、ユーザーは、コンポーザー属性テーブル内の行と列、最初/最後の行/列、ヘッダー行を交互に変える色を設定できます。
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 **This feature was funded by:** [Ville de Morges](http://www.morges.ch/)
 
@@ -357,13 +357,13 @@ If the composition includes a single page, then the output will be sized to incl
 
 **Sponsored by:** [NIWA](https://www.niwa.co.nz/)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image30](images/entries/38572cf4aa662cc4463c2a29f3d5ca38aa382632.webp)
 ### 機能：ベクターレイヤーをラスター画像としてレンダリングする
 A new option has been added under the layer properties, rendering tab to force a vector layer to render as a raster. Extremely detailed layers (eg polygon layers with a huge number of nodes) can cause composer exports in PDF/SVG format to be huge as all nodes are included in the exported file. This can also make the resultant file very slow to work with or open in external programs. Now, you can force these layers to be rasterised on a layer-by-layer basis, so that the exported files won\'t have to include all the nodes contained in these layers. The end result is smaller file sizes and PDFs/SVGs which are faster to open.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image31](images/entries/0127fe10ecae31dbcd133492c93f33b0d569dcba.webp)
 ### 機能：地図レイヤーとスタイルプリセットのデータ定義コントロール
@@ -371,7 +371,7 @@ A new option has been added under the layer properties, rendering tab to force a
 
 Using this control over map layers allows for \"layer-based\" atlases, where the map layers should change between atlas pages instead of or in combination with the map extent changing. An example could be an atlas looping over different administrative units and at the same time looping over several historic maps or aerial images.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 **This feature was funded by:** [City of Uster](http://gis.uster.ch/)
 
@@ -381,7 +381,7 @@ There\'s now an option to hide the display of pages while editing and exporting 
 
 **Sponsored by:** [NIWA](https://www.niwa.co.nz/)
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 ## プラグイン
 ### 機能:GRASS プラグインのアップデート
 GRASSプラグインは、GRASS 7のサポートを有効にするように更新されました。GRASSレイヤーは、QGISブラウザまたはブラウザパネルからブラウズしてロードできます。GRASSベクターデータはQGIS内で直接編集できます。このプロジェクトには、次の作業パッケージが含まれています。
@@ -403,7 +403,7 @@ See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-gra
 ### Feature: Map tools moved from app-\>gui
 この変更により、PyQGISスクリプトやPythonプラグインからマップツールを再利用することができます。
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch/) の Matthias Kuhn
 
 **This feature was funded by:** [SIGE](http://www.sige.ch/)
 ### 機能: \`with edit(layer):\`  を利用した編集
@@ -418,7 +418,7 @@ See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-gra
     
 これにより、最後に自動的にcommitChanges（）が呼び出されます。例外が発生すると、すべての変更がロールバック（）されます。
 
-**This feature was developed by:** Matthias Kuhn at [OpenGIS](http://www.opengis.ch/)
+**この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch/) の Matthias Kuhn
 ### 機能: ラベリングエンジン用新API(QgsLabelingEngineV2)
 考え方は、エンジンをQgsPalLabelingの実装と比較してより柔軟にすることです。
 > - エンジン自体からのテキストラベル/図の抽象的な扱い
@@ -429,19 +429,19 @@ See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-gra
 
 See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
 
-**This feature was developed by:** Martin Dobias at [Lutra Consulting](http://www.lutraconsulting.co.uk/) on subcontract to [Gis3W](http://www.gis3w.it/)
+**この機能は以下によって開発されました：** [Gut3W](http://www.gis3w.it/) への下請けの [Lutra Consulting](http://www.lutraconsulting.co.uk/) の Martin Dobias
 
-**この機能は以下によって資金提供されました：**トスカーナ地方（イタリア） -  SITA（CIG：63526840AE）
+**この機能は以下によって資金提供されました：** トスカーナ地方（イタリア） -  SITA（CIG：63526840AE）
 ### 機能: 外部エディタによるスクリプトのオープン
 Pythonistasは喜んでいます。コンソールに追加された新しいボタンを使用して、外部エディタでスクリプトを開くことができます。
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
 
 ![image34](images/entries/78acf0058f4306bf408a58df3762dff5986633a7.webp)
 ### 機能:PyQGISプログラム用の新しいクラス
 PygGISスクリプトが2.12で追加された新しいファジーマッチングアルゴリズムを利用できるようにする新しいクラスQgsStringUtilsが追加されました。これらの関数には、2つの文字列間のLevenshtein編集距離を検索し、文字列のsoundex音声表現を計算する関数が含まれています。これらのアルゴリズムはパフォーマンスのために高度に最適化されているため、数百万の文字列にわたってファジーマッチングを開始する準備ができています。
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 ## QGISサーバー
 ### 機能:QGISサーバPython API
 QGIS Serverは、初期（しかし成長している）APIとPythonバインディングを持つライブラリとしてパックされています。新しいAPIを使用して、サーバーのメインコンポーネントとサーバープラグインの一連のPythonテストを行います。Pythonからサーバを呼び出すのは簡単です：
@@ -470,7 +470,7 @@ See also [QGIS as OGC data server](http://docs.qgis.org/2.18/en/docs/user_manual
 ### 機能：スタイルマネージャからサムネイルをエクスポートする
 スタイルマネージャーでは、選択したスタイルサムネイルをSVGまたはPNG画像として書き出すことができます。
 
-**This feature was developed by:** [Nathan Woodrow](http://nathanw.net/)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
 
 ![image36](images/entries/8861a040751804f6c2691ee4d93d410efd6d99ac.webp)
 ### 機能：地図単位のサイズを使用する際のサイズをmm単位で制限する新しいオプション
@@ -482,7 +482,7 @@ See also [QGIS as OGC data server](http://docs.qgis.org/2.18/en/docs/user_manual
 - 色の透明度の設定を許可する
 - 同心円配置モード（リングのみよりもコンパクトな表示が可能）
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image38](images/entries/33b5f15429279a7ec75dd1f6a2e01b1a7df789ca.webp)
 ### 機能：すべてのカラーランプを編集できるようになりました
@@ -500,7 +500,7 @@ These issues have been fixed in QGIS 2.12, but as a result you may need to updat
 ### 機能：すべてのシンボルサイズユニットの選択肢のオプションとしてピクセルを追加する
 For all size input widgets there is now a third option \"pixel\", next to \"mm\" and \"map units\". This concerns symbol sizes, stroke widths, dash sizes, offsets, etc. This may help, if you design for screens and not for print output.
 
-**This feature was developed by:** [Nyall Dawson](http://nyalldawson.net/)
+**この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image41](images/entries/cbc683061bcc06764361ab79874f1020ccfe8eb7.webp)
 
