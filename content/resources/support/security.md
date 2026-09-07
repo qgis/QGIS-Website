@@ -145,7 +145,7 @@ As python execution in a desktop environment is inheriting all the privileges of
 
 ### Do you provide ISO 27001 certification, SOC 2, CRA attestation ?
 
-No we don't. If you need them, please contact us and consider funding QGIS.org to absorb the work load those compliance requirements put on our shoulders. QGIS.org is not a service provider, and QGIS is avalaible following the term of the GPL 2 licence.
+No we don't. If you need them, please contact us and consider funding QGIS.org to absorb the work load those compliance requirements put on our shoulders. QGIS.org is not a service provider, and QGIS is available following the term of the GPL 2 licence.
 
 ### Can QGIS.org fill my own compliance form ?
 
