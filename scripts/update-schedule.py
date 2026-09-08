@@ -119,7 +119,7 @@ for row in reader:
         first = False
         continue
 
-    event, _, _, _, _, _, _, _, _, date, weekno, weeks, lr, ltr, dev, ff, _ = row
+    event, date, weekno, weeks, lr, ltr, dev, ff = [row[i] for i in [0, 9, 10, 11, 12, 13, 14, 15]]
 
     dt = datetime.strptime(date, '%Y-%m-%d').replace(tzinfo=timezone.utc) + timedelta(hours=12)
 
