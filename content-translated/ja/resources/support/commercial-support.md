@@ -15,7 +15,7 @@ Organizations marked with an <span class="tag is-success"><span class="icon"><i 
 {{<rich-box-start icon="🦸" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
  提供情報の正確性・信頼性・完全性については、 **コアコントリビューター** のみを対象として責任を負います。
 
 {{<rich-content-end >}}

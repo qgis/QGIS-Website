@@ -10,7 +10,7 @@ type: page
 # メーリングリスト
 私たちはトピックとターゲットグループで分けられたメーリングリストでコミュニケーションをとります。これらのリストに自由に登録してください。質問に回答して経験を共有することで、リストに貢献することを忘れないでください。
 
-Please don’t use these mailing lists to advertise your services or training courses. Use your local user group mailing lists to inform your local community about training offers.
+自分のサービスやトレーニングコースを宣伝するためにこれらのメーリングリストを使わないでください。トレーニングの申し出を地域のコミュニティに知らせるには、地域のユーザグループのメーリングリストを使ってください。
 
 QGISユーザーのリスト
 -
@@ -18,7 +18,7 @@ QGISユーザーのリスト
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-user" layoutClass="half" listTitle="QGISユーザーのリスト" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-user" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-user@lists.osgeo.org](mailto:qgis-user@lists.osgeo.org).
+上記のリンクからメーリングリストを購読できます。購読開始後は、以下のメールアドレスを使用して質問や議論の種を投稿できるようになります: [qgis-user@lists.osgeo.org](mailto:qgis-user@lists.osgeo.org).
 
 QGIS開発者のリスト
 -
@@ -26,7 +26,7 @@ QGISコアまたはプラグインの開発に関する質問のメインリス�
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-developer" layoutClass="half" listTitle="QGIS開発者のリスト" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-developer" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-developer@lists.osgeo.org](mailto:qgis-developer@lists.osgeo.org).
+上記のリンクからメーリングリストを購読できます。購読開始後は、以下のメールアドレスを使用して質問や議論の種を投稿できるようになります: [qgis-developer@lists.osgeo.org](mailto:qgis-developer@lists.osgeo.org).
 
 QGISコミュニティチーム
 -
@@ -34,7 +34,7 @@ QGISコミュニティチーム
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-community-team" layoutClass="half" listTitle="QGISコミュニティチーム" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-community-team" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-community-team@lists.osgeo.org](mailto:qgis-community-team@lists.osgeo.org).
+上記のリンクからメーリングリストを購読できます。購読開始後は、以下のメールアドレスを使用して質問や議論の種を投稿できるようになります: [qgis-community-team@lists.osgeo.org](mailto:qgis-community-team@lists.osgeo.org).
 
 QGIS翻訳
 -
@@ -42,7 +42,7 @@ QGIS翻訳
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-tr" layoutClass="half" listTitle="QGIS翻訳" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-tr" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-tr@lists.osgeo.org](mailto:qgis-tr@lists.osgeo.org).
+上記のリンクからメーリングリストを購読できます。購読開始後は、以下のメールアドレスを使用して質問や議論の種を投稿できるようになります: [qgis-tr@lists.osgeo.org](mailto:qgis-tr@lists.osgeo.org).
 
 QGISプロジェクト運営委員会 (PSC)リスト
 -
@@ -54,10 +54,10 @@ QGISプロジェクト運営委員会 (PSC)リスト
 
 QGIS Webクライアント2
 -
-This list is used to get help for setting up [QGIS Web Client 2 (QWC2)](https://github.com/qgis/qwc2-demo-app) and discuss future development of QWC2.
+このリストは、 [QGIS Web Client 2 (QWC2)](https://github.com/qgis/qwc2-demo-app) の設定の助けを借りて、QWC2の今後の発展について議論するために使用されます。
 
 {{<rich-list listLink="http://lists.osgeo.org/mailman/listinfo/qgis-qwc2" layoutClass="half" listTitle="QGIS Webクライアント2" listSubtitle="http://lists.osgeo.org/mailman/listinfo/qgis-qwc2" >}}
 
-You can subscribe to the list by using the link above. Once you are subscribed, you can use the following email address to post your questions or discussion inputs: [qgis-qwc2@lists.osgeo.org](mailto:qgis-qwc2@lists.osgeo.org).
+上記のリンクからメーリングリストを購読できます。購読後は、以下のメールアドレスを使用して質問や議論の種を投稿できるようになります  : [qgis-qwc2@lists.osgeo.org](mailto:qgis-qwc2@lists.osgeo.org).
 
 {{<content-end >}}

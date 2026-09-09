@@ -80,7 +80,7 @@ Alternatively, instead of doing the _Express_ install, you can use the _Advanced
 {{<rich-box-start icon="💁" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 この次のセクションでは、さまざまなバージョンのDebian/Ubuntuに、さまざまなバージョンのQGISをインストールするためのすべての選択肢を紹介します。問題が発生した場合は、お使いのディストリビューションが現在もサポートされているか確認してください。リポジトリには、すでにサポート対象外となった古いディストリビューション向けに、当時サポートされていた最終バージョンのQGISも含まれています。これらは現在、動作しなくなっている可能性があることに注意してください。
 
 {{<rich-content-end >}}
@@ -92,7 +92,7 @@ Alternatively, instead of doing the _Express_ install, you can use the _Advanced
 {{<rich-box-start icon="🌀" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 一部の箇所に  ‘Debian’ と表示されていますが、サーバー上では一方がもう一方へのシンボリックリンクになっているため、 ‘Ubuntu’ でも同様に機能します。
 
 {{<rich-content-end >}}
@@ -120,7 +120,7 @@ Signed-By: /etc/apt/keyrings/qgis-archive-keyring.gpg
 {{<rich-box-start icon="💬" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
  上記の `Suites`  はディストリビューションによって異なります。　`lsb_release -cs`  でディストリビューション名を確認できます。
 
 （Linux Mintなどの）一部のディストリビューションでは、 `. /etc/os-release; echo "$UBUNTU_CODENAME"` を実行することで正しいディストリビューション名を確認できます。
@@ -142,7 +142,7 @@ sudo apt install qgis qgis-plugin-grass
 {{<rich-box-start icon="✍️" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
  QGIS Serverもインストールする場合は、上記のコマンドに `qgis-server`  を追加してください。
 
 {{<rich-content-end >}}
@@ -160,7 +160,7 @@ DebianおよびUbuntuのデフォルトのソフトウェアリポジトリに�
 {{<rich-box-start icon="💁" layoutClass="tips" mode="html" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 リリースパッケージは、新バージョンのリリース直後に一度だけ作成されます。不安定版や未リリースのDebianバージョン（testing）およびubuntugis-unstableではライブラリが変更される場合があり、Debian・Ubuntu・ubuntugis-unstableの開発が進んでQGISの依存パッケージが変わると、これらのターゲット向けパッケージが動作しなくなることがあります。その場合は、以下のいずれかの対応が可能です:
 - 安定したバージョンの debian に移行し、リリース済みのパッケージを使用する
 - 毎月リリースされる次のポイントリリース (予定日 {{< param "nextpointreleasedate" >}}) を待つ。これには更新された依存関係が含まれます。
@@ -277,7 +277,7 @@ apt install python3-qgis
 {{<rich-box-start icon="💁" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 更新を行う前に他のリポジトリからインストールした全てのQGISとGRASSのパッケージを削除して下さい。
 
 {{<rich-content-end >}}
@@ -287,7 +287,7 @@ apt install python3-qgis
 {{<rich-box-start icon="💡" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 FlatpakはすべてのLinuxディストリビューション向けの汎用パッケージ形式です。パッケージはシステムから隔離されており、セキュリティと安定性のメリットをもたらします。例えば、安定したディストリビューション上で最新バージョンのQGISを使用することができます。
 
 Flatpakはデフォルトですべてのユーザー向けにインストールされますが、`--user` 引数を使用して単一ユーザーのみにインストールすることもできます。
@@ -345,7 +345,7 @@ flatpak install app/io.qt.qtwebkit.BaseApp/x86_64/VERSION
 {{<rich-box-start icon="🙋‍♂️" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 クライアントとサーバーアプリケーションを同じマシンにインストールすることは一般的な慣行ではありません。
 
 {{<rich-content-end >}}
@@ -544,7 +544,7 @@ Spackに関係した問題は次に報告してください: https://github.com/
 {{<rich-box-start icon="🙋‍♀️" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 OpenSUSEとuBlueのFedoraベースのシステムは  `distrobox` をプリインストールしており、Fedoraは "Atomic Desktops" に `toolbx` をプリインストールしています。`distrobox`  は簡単なグラフィカル統合が可能ですが、`toolbx` の場合は自分でデスクトップエントリを追加する必要があります。`distrobox` の方がより多くの利用可能なオプションを表示しますが、`distrobox` と `toolbx` の両方ですべての利用可能なシステムイメージを使用できます。
 
 {{<rich-content-end >}}
@@ -606,7 +606,7 @@ sudo port upgrade outdated
 {{<rich-box-start icon="👩‍💻" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 HomebrewとMacPortsの同時インストールは互換性がなく、ほぼ確実に競合を引き起こします。どちらかのパッケージシステムをインストールする場合は、もう片方をアンインストールする必要があります。
 
 {{<rich-content-end >}}
@@ -662,7 +662,7 @@ pkg_add qgis
 {{<rich-box-start icon="🧑‍💻" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 The `linux/arm64/v8` JupyterLab QGIS container images are known to crash randomly on Apple M series.
 
 GPU acceleration requires an NVIDIA GPU, the NVIDIA Linux driver and the NVIDIA Container Toolkit.
@@ -715,7 +715,7 @@ docker run -it --rm \
 {{<rich-box-start icon="🐳" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 Container images on Quay are available for QGIS versions ≥ 3.40.4.
 
 For QGIS versions 3.28.4 to 3.40.3 use `glcr.b-data.ch/jupyterlab/qgis/base:MAJOR[.MINOR[.PATCH]]`.
@@ -735,7 +735,7 @@ docker run -it --rm \
 {{<rich-box-start icon="🔥" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 GPU accelerated container images on Quay are available for QGIS versions ≥ 3.40.4.
 
 For QGIS versions 3.34.0 to 3.40.3 use `glcr.b-data.ch/jupyterlab/cuda/qgis/base:MAJOR[.MINOR[.PATCH]]`.

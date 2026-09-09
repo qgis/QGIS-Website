@@ -99,7 +99,7 @@ See <https://plugins.qgis.org/docs/security-scanning>
 
 As python execution in a desktop environment is inheriting all the privileges of a user, deployment in sensitive environments should deactivate direct access to this repository and replace it with an internal repository, allowing only audited plugins.
 ### Do you provide ISO 27001 certification, SOC 2, CRA attestation ?
-No we don't. If you need them, please contact us and consider funding QGIS.org to absorb the work load those compliance requirements put on our shoulders. QGIS.org is not a service provider, and QGIS is avalaible following the term of the GPL 2 licence.
+No we don't. If you need them, please contact us and consider funding QGIS.org to absorb the work load those compliance requirements put on our shoulders. QGIS.org is not a service provider, and QGIS is available following the term of the GPL 2 licence.
 ### Can QGIS.org fill my own compliance form ?
 QGIS.org is a foundation run by donations and membership fees. We have limited resources among our volunteer and paid staff. We are currently seeing a tendency for each organisation to create its own form. We can't fill them out for you, but we will put as much information as possible here on the website to help you fill in those forms. As soon as those forms follow a national or international standard, we would be more than happy to publish them online.
 

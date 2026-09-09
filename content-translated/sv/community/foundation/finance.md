@@ -15,6 +15,10 @@ Läs våra rapporter och se hur ditt bidrag och sponsorskap är viktigt för utv
 ## 2026
 {{<rich-list listLink="../annual-budgets/QGISBudget2026.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2026" listSubtitle="Download PDF" >}}
 ## 2025
+{{<rich-list listLink="../annual-financial-reports/PublicQGISfinancialreport2025.pdf" linkAttr="download" layoutClass="third" listTitle="Financial report 2025" listSubtitle="Download PDF" >}}
+
+{{<rich-list listLink="../annual-financial-reports/Financial-Auditing-Report_QGIS-ORG_2025.pdf" linkAttr="download" layoutClass="third" listTitle="Financial auditing report 2024" listSubtitle="Download PDF" >}}
+
 {{<rich-list listLink="../annual-budgets/QGISBudget2025.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2025" listSubtitle="Download PDF" >}}
 ## 2024
 {{<rich-list listLink="../annual-financial-reports/PublicQGISfinancialreport2024.pdf" linkAttr="download" layoutClass="third" listTitle="Financial report 2024" listSubtitle="Download PDF" >}}

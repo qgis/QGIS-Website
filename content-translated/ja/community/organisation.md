@@ -81,7 +81,7 @@ QGIS.ORG Via Geinas 2, CH-7031 Laax
 * Mathieu Pellerin, インドネシア
 * Luigi Pirelli, スペイン
 * Alexandre Neto, ポルトガル
-* Tom Chadwin, United Kingdom
+* Tom Chadwin, イギリス
 * Marco Hugentobler, スイス
 
 2018年追加
@@ -91,7 +91,7 @@ QGIS.ORG Via Geinas 2, CH-7031 Laax
 * なし （新しいユーザーグループは作られませんでした）
 
 2020年追加
-* David Signer, Switzerland
+* David Signer, スイス
 * Enrico Ferreguti, イタリア
 * Etienne Trimaille, フランス
 * Pedro Venâncio, ポルトガル
@@ -99,22 +99,22 @@ QGIS.ORG Via Geinas 2, CH-7031 Laax
 * Richard Duivenvoorde, オランダ
 
 2021年追加
-* Andrea Giudiceandrea, Italy
+* Andrea Giudiceandrea, イタリア
 
 2022年追加
-* Adelcides Varela, Cabo Verde
-* Germán Carrillo, Colombia
+* Adelcides Varela, カーボベルデ
+* Germán Carrillo, コロンビア
 
 2024年追加
-* Stefanos Natsis, Greece
-* Isabel Kiefer, Switzerland
-* Damiano Lombardi, Switzerland
+* Stefanos Natsis, ギリシャ
+* Isabel Kiefer, スイス
+* Damiano Lombardi, スイス
 
 2026年追加
-* Lova Andriarimalala, Madagascar
+* Lova Andriarimalala, マダガスカル
 
 ### OSGEO 投票メンバー
-* Michael Smith [since 2015/16]
+* Michael Smith [2015/16 年から]
 
 ## リリース管理
 現在のリリース管理者: Jürgen E. Fischer
@@ -136,7 +136,7 @@ QGISは様々な種類のオペレーティングシステム向けにパッケ�
 * macOS: Denis Rouzaud, Matthias Kuhn, Isabel Kiefer
 
 ### セキュリティチーム
-For security questions, please write to [security@qgis.org](mailto:security@qgis.org).
+セキュリティの質問は、[security@qgis.org](mailto:security@qgis.org) までメールでお願いします。
 
 コミュニティリソース
 -

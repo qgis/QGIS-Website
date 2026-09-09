@@ -15,6 +15,10 @@ Bekijk de volgende rapporten en zie hoe uw donaties en sponsoring belangrijk zij
 ## 2026
 {{<rich-list listLink="../annual-budgets/QGISBudget2026.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2026" listSubtitle=" PDF downloaden" >}}
 ## 2025
+{{<rich-list listLink="../annual-financial-reports/PublicQGISfinancialreport2025.pdf" linkAttr="download" layoutClass="third" listTitle="Financial report 2025" listSubtitle=" PDF downloaden" >}}
+
+{{<rich-list listLink="../annual-financial-reports/Financial-Auditing-Report_QGIS-ORG_2025.pdf" linkAttr="download" layoutClass="third" listTitle="Financieel audit rapport 2024" listSubtitle=" PDF downloaden" >}}
+
 {{<rich-list listLink="../annual-budgets/QGISBudget2025.pdf" linkAttr="download" layoutClass="third" listTitle="Budget 2025" listSubtitle=" PDF downloaden" >}}
 ## 2024
 {{<rich-list listLink="../annual-financial-reports/PublicQGISfinancialreport2024.pdf" linkAttr="download" layoutClass="third" listTitle="Financieel rapport 2024" listSubtitle=" PDF downloaden" >}}

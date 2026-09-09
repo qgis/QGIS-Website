@@ -25,7 +25,7 @@ QGIS.orgからダウンロードするQGISは、現在も将来にわたって�
 
 {{<paragraph-start textClasses="is-size-7 has-text-weight-medium" >}}
 
-Donations to QGIS might be tax-deductible in some countries. Please refer to your local tax office for details. If you want to tax-deduct as a German company or organization, please donate through the [German QGIS user group](https://qgis.de/doku.php/verein/spenden). They can issue a payment confirmation as a tax-exempt German association.
+QGISへの寄付は、一部の国において税控除の対象となる場合があります。詳細については、地域の税務署にお問い合わせください。ドイツの企業や組織として税控除を受けたい場合は、 [German QGIS user group](https://qgis.de/doku.php/verein/spenden) を通じて寄付してください。彼らは税免除のドイツ団体として支払い確認書を発行することができます。
 
 {{<paragraph-end >}}
 

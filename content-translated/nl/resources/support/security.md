@@ -99,7 +99,7 @@ Bekijk <https://plugins.qgis.org/docs/security-scanning>
 
 Omdat het uitvoeren van Python in een desktopomgeving alle privileges van een gebruiker erft, zou het uitrollen in gevoelige omgevingen direct toegang tot deze opslagplaats moeten deactiveren en die vervangen door een interne opslagplaats die alleen geaudite plug-ins toestaat.
 ### Geeft u ISO 27001-certificatie, SOC 2, CRA-attestatie uit ?
-Nee, dat doen we niet. Als u ze nodig hebt, neem dan contact met ons op en overweeg het ondersteunen van QGIS.org om de werkdruk, die de vereisten voor compliance van ons vragen, te verlichten. QGIS.org is geen serviceprovider, en QGIS is beschikbaar volgens de bepalingen van de licentie GPL 2.
+No we don't. If you need them, please contact us and consider funding QGIS.org to absorb the work load those compliance requirements put on our shoulders. QGIS.org is not a service provider, and QGIS is available following the term of the GPL 2 licence.
 ### Kan QGIS.org mijn eigen formulier voor compliance vullen ?
 QGIS.org is een stichting die wordt bekostigd uit donaties en kosten voor lidmaatschap. We hebben beperkte bronnen naast onze vrijwillige en betaalde staf. We zien tegenwoordig een tendens dat elke organisatie zijn eigen formulier maakt. We kunnen ze niet voor u invullen, maar we zullen zoveel mogelijk informatie hier op de website plaatsen om u te helpen bij het invullen van die formulieren. Zodra die formulieren een nationale of internationale standaard volgen, zal het voor ons een plezier zijn om die online te publiceren.
 

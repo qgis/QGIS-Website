@@ -16,6 +16,6 @@ QGISにコードを提供した個人、機関、企業は、人々に彼らの�
 This feature was funded by: Olmiomland <http://olmiomland.ol>
 This feature was developed by: Chuck Norris <http://chucknorris.kr>
 ```
-If you have questions, feel free to contact us: [psc@qgis.org](mailto:psc@qgis.org)
+ご質問がある場合は、お気軽にご連絡ください: [psc@qgis.org](mailto:psc@qgis.org)
 
 {{<content-end >}}

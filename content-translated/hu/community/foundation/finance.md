@@ -15,6 +15,10 @@ Kérjük nézze meg a következő jelentéseket, és figyelje meg mennyire fonto
 ## 2026
 {{<rich-list listLink="../annual-budgets/QGISBudget2026.pdf" linkAttr="download" layoutClass="third" listTitle="2026-os költségvetés" listSubtitle="PDF letöltése" >}}
 ## 2025
+{{<rich-list listLink="../annual-financial-reports/PublicQGISfinancialreport2025.pdf" linkAttr="download" layoutClass="third" listTitle="Financial report 2025" listSubtitle="PDF letöltése" >}}
+
+{{<rich-list listLink="../annual-financial-reports/Financial-Auditing-Report_QGIS-ORG_2025.pdf" linkAttr="download" layoutClass="third" listTitle="2024-es pénzügyi könyvvizsgálói jelentés" listSubtitle="PDF letöltése" >}}
+
 {{<rich-list listLink="../annual-budgets/QGISBudget2025.pdf" linkAttr="download" layoutClass="third" listTitle="2025-ös költségvetés" listSubtitle="PDF letöltése" >}}
 ## 2024
 {{<rich-list listLink="../annual-financial-reports/PublicQGISfinancialreport2024.pdf" linkAttr="download" layoutClass="third" listTitle="2024-es pénzügyi jelentés" listSubtitle="PDF letöltése" >}}
