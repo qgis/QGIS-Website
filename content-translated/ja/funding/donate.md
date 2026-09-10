@@ -32,7 +32,7 @@ QGISへの寄付は、一部の国において税控除の対象となる場合�
 
 {{<rich-content-start themeClass="coloring-2" >}}
 ## Stripeによる寄付
-We use the [stripe.com](https://stripe.com) service to receive credit card donations. Note that the payment fees at Stripe are substantially lower than at Paypal - so we would appreciate it, if you could use Stripe instead of PayPal. No signup needed.
+私たちは、[stripe.com](https://stripe.com) サービスを利用してクレジットカードによる寄付を受け取ります。Stripe の支払い手数料は Paypal よりも大幅に低いので、PayPal の代わりに Stripe を使用していただけると助かります。登録は必要ありません。
 
 {{<rich-content-end >}}
 
@@ -48,7 +48,7 @@ We use the [stripe.com](https://stripe.com) service to receive credit card donat
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Payrexx による寄付
-We also use the [payrexx.com](https://payrexx.com) service to receive credit card donations. Note that the payment fees at Payrexx are substantially lower than at Paypal - so we would appreciate it, if you could use [Stripe](#stripe-donation) or Payrexx instead of PayPal. No signup needed.
+クレジットカードによる寄付を受け取るために [payrexx.com](https://payrexx.com) のサービスも利用しています。 Payrexxの決済手数料はPayPalよりも大幅に低いため、PayPalの代わりに  [Stripe](#stripe-donation) やPayrexxをご利用いただければ幸いです。サインアップは不要です 。
 
 {{<rich-content-end >}}
 
@@ -116,7 +116,7 @@ PayPalを使用して、ご自身のクレジットカードで寄付を行う�
 #### コアインフラの維持管理
 * 公式QGIS.orgウェブサイトは、QGISに関するすべての情報が集まる中心的なハブです。
 * 私たちの課題追跡システムではバグ報告や機能リクエストを効率的に管理することができます。
-* The continuous integration system, ensuring code quality and stability through automated tests.
+* 自動テストによってコードの品質と安定性を確保している、継続的インテグレーションシステム。
 
 {{<rich-content-end >}}
 
@@ -128,7 +128,7 @@ PayPalを使用して、ご自身のクレジットカードで寄付を行う�
 #### ソフトウェア開発・QA
 * QGISを継続的に改善し、様々なオペレーティングシステム向けにパッケージ化することで、世界中のより多くのユーザーがアクセスできるようにしています。
 * バグやその他の問題に迅速に対応することで、ユーザーエクスペリエンスの向上を図ります。
-* Manage pull requests and conduct thorough code reviews, ensuring the highest standards of software development.
+* プルリクエストの管理と徹底したコードレビューの実施により、最高水準のソフトウェア開発品質を維持します。
 
 {{<rich-content-end >}}
 
@@ -152,7 +152,7 @@ PayPalを使用して、ご自身のクレジットカードで寄付を行う�
 #### ボランティアの力を引き出す
 * 新規コントリビューターへのメンタリングを通じて、誰もが参加しやすく生産性の高いコミュニティを育てています。
 * QGISの多言語翻訳による、真のグローバル化への貢献
-* Running the QGIS grant system, enabling focused work on significant improvements and innovations that are often challenging for volunteers to undertake on their own.
+* QGIS 助成金システムを運営し、ボランティアが単独で取り組むことが難しい重要な改善やイノベーションに集中して取り組めるようにすること。
 
 {{<rich-content-end >}}
 
@@ -162,7 +162,7 @@ PayPalを使用して、ご自身のクレジットカードで寄付を行う�
 
 {{<rich-content-start themeClass="coloring-1" >}}
 #### 協力体制と知識共有の促進
-* Organizing and supporting contributor meetings and QGIS conferences, essential for knowledge exchange, collaboration, and the collective advancement of the QGIS project.
+* コントリビューターミーティングやQGISカンファレンスの開催・支援を通じて、知識の共有、協力、そしてQGISプロジェクトの共同発展を促進しています。
 
 {{<rich-content-end >}}
 

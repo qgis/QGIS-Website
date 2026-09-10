@@ -13,21 +13,21 @@ type: case-study
 ---
 {{<content-start >}}
 # QGreenland: あるグリーンランドの GIS パッケージ
-QGreenland is a free geospatial data package to support interdisciplinary Greenland-focused research, teaching, decision making, and collaboration. QGreenland combines key datasets into a unified, all-in-one GIS analysis and visualization environment for offline and online use with QGIS. QGreenland is designed with the interdisciplinary geoscience research community in mind, though datasets cover many topics (e.g., glaciology, roads and buildings, satellite imagery, oceanography, environmental management, and more).
+QGreenland は、グリーンランドに焦点を当てた学際的な研究、教育、意思決定、共同作業を支援するための無料の地理空間データパッケージです。QGreenland は、主要なデータセットを統合し、QGISを用いたオフラインおよびオンラインでの利用が可能な、統一されたオールインワンのGIS分析・可視化環境を提供します。QGreenland は、学際的な地球科学研究コミュニティを念頭に置いて設計されていますが、データセットは多くの分野（例えば、氷河学、道路・建築物、衛星画像、海洋学、環境管理など）を網羅しています。
 ## プロジェクトについて
-QGreenland development began in 2019 and is led by the National Snow and Ice Data Center, within the University of Colorado Boulder Cooperative Institute for Research in Environmental Sciences. QGreenland was inspired by the Antarctic-focused package, Quantarctica, but applying a different approach to development. The FAIR data principles (findable, accessible, interoperable, reproducible) are foundational to the QGreenland effort. QGreenland is built using free and open software, with development tools and workflows fully documented on GitHub. The QGreenland data package includes complete metadata and clear information about the original data sources. To the best of our ability, we aim to include data that are already free and publicly archived.
+QGreenland の開発は2019年に開始され、コロラド大学ボルダー校環境科学研究協同研究所にある国立雪氷データセンターが主導しています。QGreenland は、南極に特化したパッケージ「Quantarctica」に着想を得ていますが、開発には異なるアプローチを採用しています。FAIR データ原則（検索可能、アクセス可能、相互運用可能、複製可能）は、QGreenland の取り組みの基盤となっています。QGreenland はフリーでオープンなソフトウェアを用いて構築されており、開発ツールやワークフローは GitHub 上に完全に公開されています。QGreenland データパッケージには、完全なメタデータと、元のデータソースに関する明確な情報が含まれています。私たちは、可能な限り、すでに無料で公開アーカイブにあるデータを取り入れるよう努めています。
 
-![QGreenland v3.0 interface showing Arctic sea routes, bathymetry, and various thematic data layers](../images/V3Screenshot.webp)
+![北極海航路、水深、およびさまざまなテーマ別データレイヤーを表示した QGreenland v3.0のインターフェイス](../images/V3Screenshot.webp)
 
-*Figure 1: QGreenland v3.0 interface showing Arctic sea routes, bathymetry, and various thematic data layers*
+*図 1: 北極海航路、水深、およびさまざまなテーマ別データレイヤーを表示した QGreenland v3.0のインターフェイス*
 
-QGreenland is a research and education tool. QGreenland has a wide range of research and decision-making applications, including planning field work, synthesizing and analyzing data, and creating data and map visuals and figures. QGreenland is also used in high school to graduate classrooms and within classes that focuses on a wide range of topics, including GIS skills, polar climate, data skills, hydrology and physical sciences, and more. The QGreenland project includes tutorials for beginner GIS users and other QGreenland uses, curriculum activities, and inspiring resources to explore Greenland-focused geospatial data.
+QGreenland は、研究および教育用のツールです。QGreenland には、野外作業の計画立案、データの統合・分析、データや地図ビジュアル・図表の作成など、幅広い研究および意思決定アプリケーションがあります。QGreenland は、高校から大学院まで、GISスキル、極地の気候、データ活用スキル、水文学、物理科学など、多岐にわたるトピックを扱う授業でも活用されています。QGreenland プロジェクトには、GIS 初心者を対象としたチュートリアルや QGreenland のその他の活用法、カリキュラム活動、そしてグリーンランドに焦点を当てた地理空間データを探索するための刺激的なリソースが含まれています。
 
 During 2019-2025, the QGreenland team has released three main versions, with total downloads of more than 20,000. QGreenland is funded by the National Science Foundation and benefits from the generous efforts of a wide range of collaborators.
 
-![QGreenland supports teaching GIS, easy data access, visualizations, and serves as a research tool](../images/QGreenland.webp)
+![QGreenland は、GIS 教育、データへの容易なアクセス、可視化を支援し、研究ツールとしても機能します](../images/QGreenland.webp)
 
-*Figure 2: QGreenland supports teaching GIS, easy data access, visualizations, and serves as a research tool*
+*図 2: QGreenland は、GIS 教育、データへの容易なアクセス、可視化を支援し、研究ツールとしても機能します*
 ## リンク
 - QGreenland ウェブサイト: https://qgreenland.org/
 - QGreenland GitHub: https://github.com/nsidc/qgreenland
@@ -36,6 +36,6 @@ During 2019-2025, the QGreenland team has released three main versions, with tot
 - 南極に関する同様なリソース: https://qgis.org/project/case-studies/antarctica/
 
 ## 著者
-This case study was contributed by the QGreenland Team, including Twila Moon, deputy lead scientist, Trey Stafford, software developer, and Robyn Marowitz, software developer, all at the National Snow and Ice Data Center, Cooperative Institute for Research in Environmental Sciences, University of Colorado Boulder.
+このケーススタディは、QGreenlandチームによって提供されました。チームメンバーには、副主任研究員の Twila Moon、ソフトウェア開発者の Trey Stafford、およびソフトウェア開発者の Robyn Marowitz が含まれており、全員がコロラド大学ボルダー校環境科学研究協力研究所にある国立雪氷データセンターに所属しています。
 
 {{<content-end >}}

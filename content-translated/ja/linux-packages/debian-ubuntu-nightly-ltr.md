@@ -4,7 +4,7 @@ aliases:
 - /ja/linux-packages/debian-nightly-ltr
 draft: false
 sidebar: true
-subtitle: ' Debian と Ubuntu用　QGIS ナイトリー LTR パッケージ '
+subtitle: 'Debian と Ubuntu 用 QGIS ナイトリー LTR パッケージ '
 title: Debian / Ubuntu ナイトリーLTRパッケージ
 type: page
 

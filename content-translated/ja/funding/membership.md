@@ -124,7 +124,7 @@ QGISプロジェクトを維持会員として支援することにより、以�
 
 {{<rich-content-start themeClass="coloring-4 rich-content-text" >}}
 #### ソフトウェア品質の向上
-Contributions from sustaining memberships aid in resolving bugs and issues promptly, resulting in a better user experience.
+サステイニングメンバーシップからの支援は、バグや問題の迅速な解決に役立ち、より良いユーザーエクスペリエンスの実現につながります。
 
 {{<rich-content-end >}}
 
@@ -160,7 +160,7 @@ Contributions from sustaining memberships aid in resolving bugs and issues promp
 
 {{<rich-content-start themeClass="coloring-4" >}}
 #### ソフトウェアアップデートへの掲載
-Sustaining members are highlighted in the visual changelogs of QGIS software releases, showcasing their ongoing commitment to supporting the project.
+サステイニングメンバーは、QGISソフトウェアリリースのビジュアル変更履歴にて紹介され、プロジェクトへの継続的な支援への取り組みが称えられます。
 
 {{<rich-content-end >}}
 
@@ -296,7 +296,7 @@ Sustaining members are highlighted in the visual changelogs of QGIS software rel
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### 一回払い
-Donations can be of any amount, via direct transfers to our bank account (SEPA payment), credit card payment (through stripe.com) or Paypal (information available at [Donations]({{< ref "/funding/donate.md" >}}) page). Even a small donation can make a difference and help us to reach important project goals!
+寄付は金額を問わず、銀行口座への直接振込（SEPA送金）、クレジットカード決済（stripe.com経由）、またはPayPalでお受けしています（詳細は[寄付]({{< ref "/funding/donate.md" >}}) ページをご確認ください）。少額の寄付でもプロジェクトの重要な目標達成に大きく貢献できます！
 
 {{<rich-content-end >}}
 
@@ -306,7 +306,7 @@ Donations can be of any amount, via direct transfers to our bank account (SEPA p
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ##### 「使途指定」資金提供について
-We regret that we do not accept ‘earmarked’ funding as it creates many administrative issues. If you are interested in funding specific aspects of QGIS development, we encourage you to allocate additional human resources to the project, e.g. hiring a developer, or participating in our bug fixing initiative.
+「使途指定」による資金提供は管理上の問題が多く生じるため、大変申し訳ございませんがお受けしておりません。QGISの開発における特定の分野への資金提供をご希望の場合は、開発者の雇用やバグ修正イニシアティブへの参加など、プロジェクトへの人的リソースの提供という形でのご支援をお勧めします。
 
 {{<rich-content-end >}}
 
