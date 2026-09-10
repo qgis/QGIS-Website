@@ -267,7 +267,7 @@ Field values are integers for which the count begins at 0 and increments from le
 
 ![image19](images/entries/54157595e9bf9c58b4b906ea28b3c335a737696b.webp)
 
-This feature was developed by [Valentin Buira](https://github.com/Poulpator)
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 
 ### Feature: New \'Calculate expression\' algorithm for use in models
 

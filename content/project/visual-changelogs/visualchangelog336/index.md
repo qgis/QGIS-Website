@@ -261,7 +261,7 @@ The new Toggle Selection button (as well as the Deselect or Select All buttons) 
 
 ![](images/entries/d42005a9561cdc035cfa20f034b7a33fc9829522.gif)
 
-This feature was developed by [Valentin Buira](https://github.com/Poulpator)
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 
 ## Processing 
 

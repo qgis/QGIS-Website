@@ -207,7 +207,7 @@ The new Toggle Selection button (as well as the Deselect or Select All buttons) 
 
 ![](images/entries/d42005a9561cdc035cfa20f034b7a33fc9829522.gif)
 
-Questa funzionalità è stata sviluppata da [Valentin Buira](https://github.com/Poulpator)
+Questa funzionalità è stata sviluppata da [Celia Buira](https://github.com/CeliaBuira)
 ## Processing
 ### Feature: --skip-loading-plugins flag for qgis\_process
 The `qgis_process` command line interface tool benefits from a new `--skip-loading-plugins` argument. If specified, this can result in faster execution times for commands such as `qgis_process plugins`, which can now list the installed plugins \*\*without\*\* loading them.

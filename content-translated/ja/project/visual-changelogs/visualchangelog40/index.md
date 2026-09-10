@@ -638,7 +638,7 @@ This feature was developed by [Even Rouault](https://github.com/rouault)
 
 この機能は QGIS Switzerland user group の資金提供で開発されました
 
-この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
+この機能は  [Celia Buira](https://github.com/CeliaBuira) によって開発されました
 ### 機能:PDALのラスターへのエクスポート（TIN）アルゴリズムでmax-triangle-edge-lengthをサポート
 PDALのラスターへのエクスポート（TIN）アルゴリズムにmax-triangle-edge-lengthパラメーターのサポートが追加されました。これにより、エッジの長さが指定したしきい値より大きいトライアングルを無視できるようになります。<br />この機能にはPDAL 2.6.0以上およびwrench 1.2.2以上が必要です。
 
@@ -719,7 +719,7 @@ This feature was developed by [Germap](https://github.com/gacarrillor)
 
 この機能は Hauts-de-France region の資金提供で開発されました
 
-この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
+この機能は  [Celia Buira](https://github.com/CeliaBuira) によって開発されました
 ## アプリケーションとプロジェクトのオプション
 ### 機能: OAuth2 自動リフレッシュ
 QGISにOAuth2接続の自動更新メカニズムが追加されました。<br />自動更新を停止するためのキャッシュクリーンアップは定期的に、およびプロジェクトからレイヤーが削除されたときにトリガーされます。これは未使用トークンの不必要で無限の更新を避けるために必要です。

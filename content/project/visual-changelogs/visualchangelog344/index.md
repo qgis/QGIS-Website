@@ -624,8 +624,8 @@ class="img-responsive img-rounded" />
 This feature was funded by
 [Hauts-de-France](https://www.hautsdefrance.fr/)
 
-This feature was developed by [Valentin
-Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia
+Buira](https://github.com/CeliaBuira)
 
 ## Processing
 
@@ -682,8 +682,8 @@ individually.
 src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png"
 class="img-responsive img-rounded" />
 
-This feature was developed by [Valentin
-Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia
+Buira](https://github.com/CeliaBuira)
 
 ### Feature: Processing raster rank algorithm
 
