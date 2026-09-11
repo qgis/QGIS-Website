@@ -257,10 +257,10 @@ In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but
 
 ![image10](images/entries/215ead2dd5e43e394d47169a7fd82aa5cc08b6b6.webp)
 ## ラベリング
-### Feature: Data defined quadrant when in \"around point\" mode
-ポイントラベルがAround Point配置モードに設定されているときにデータ定義象限を指定できるようになりました。これにより、特定のラベルの象限配置を手動で変更し、残りのラベルを自動配置に戻すことができます。
+### 機能: \"ポイントの周り\" モード時のデータ定義による象限
+ポイントラベルがポイントの周り配置モードに設定されているときにデータ定義による象限を指定できるようになりました。これにより、特定のラベルの象限配置を手動で変更し、残りのラベルは自動配置になるようにできます。
 
-See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
+詳細は [こちらの記事](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) を参照して下さい。
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
@@ -272,15 +272,15 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 
 ![image20](images/entries/5c8461abe3aa5483c3243c0f145940b0d5fd1310.webp)
 ### 機能：ラベルの障害の優先順位を制御する
-In 2.12 it\'s now possible to specify the priority for labeling obstacles. This allows you to make labels prefer to overlap features from certain layers rather than others. The priority can also be data defined so that certain features are more likely to be covered than others. You can also use data defined expressions or fields to control whether a specific feature in layer will act as an obstacle for labels.
+2.12では、ラベルの障害物の優先順位を指定できるようになりました。これにより、ラベルを他のレイヤーではなく特定のレイヤーから地物をオーバーラップさせることができます。優先度もデータ定義によることができ、特定の地物が他のものよりカバーされやすくなるようにすることができます。データ定義式またはフィールドを使用して、レイヤー内の特定の地物がラベルの障害物として機能するかどうかを制御することもできます。
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image21](images/entries/f07a082bd4e62f059788c18a9de353107b8bdc44.webp)
 ### Feature：ポリゴンレイヤーが障害物となる様子を制御する新しいオプション
-New options have been added to control how labels should be placed to avoid overlapping the features in polygon layers. The options are to either avoid placing labels over polygon interiors or avoid placing them over polygon boundaries. Avoiding placing labels over boundaries is useful for regional boundary layers, where the features cover an entire area. In this case it\'s impossible to avoid placing labels within these features and it looks much better to avoid placing them over the boundaries between features instead. The result is better cartographic placement of labels in this situation.
+ポリゴンレイヤーの地物に重ならないようにラベルを配置する方法を制御する新しいオプションが追加されました。オプションは、ポリゴンの内側にラベルを配置したり、ポリゴンの境界上に配置したりしないようにすることです。境界線上にラベルを配置することを避けることは、地物が領域全体をカバーする地域境界レイヤーに役立ちます。この場合、これらの地物内にラベルを配置することは避けられず、代わりに地物の境界上にラベルを配置することを避ける方がよほど良いです。その結果、この状況におけるラベルの地図作成上の配置が向上します。
 
-See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
+詳細は [こちらの記事](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) を参照して下さい。
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
@@ -288,19 +288,19 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 ### 機能：ラベル優先度に対するデータ定義制御
 頻繁に要求されるこの機能により、ユーザーは個々のラベルの優先順位を設定できます。過去のリリースでは、QGISではレイヤー全体のラベル優先度を設定できましたが、レイヤー内の地物の優先度を制御するオプションはありませんでした。これで、データ定義の式またはフィールドを使用して、ある地物をレイヤー内の他の地物に優先付けすることに優先順位を付けることができます。
 
-See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details
+詳細は [こちらの記事](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) を参照して下さい。
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image23](images/entries/bd185cde38420f50fb540d742d178768d28ac577.webp)
 ### 機能:障害物のみのレイヤ用オプション
-This allows users to set a layer as just an obstacle for other layer\'s labels without rendering any labels of its own. It means that a non-labelled layer can act as an obstacle for the labels in other layers, so they will be discouraged from drawing labels over the features in the obstacle layer, and allows for improved automatic label placement by preventing overlap of labels and features from other layers.
+これによりユーザーは、自身のラベルをレンダリングしないで、他のレイヤーのラベルの障害物になるだけのレイヤーを設定することができます。これは、ラベル付けされていないレイヤーが他のレイヤーのラベルの障害物として機能できることを意味し、障害物レイヤーの地物にラベルを描くのをやめ、他のレイヤのラベルと地物の重なりを防止してラベルの自動配置を改善します。
 
-In the screenshot you can see that the Streets have the option \"Discourage other labels from covering features in this layer\" enabled. The red labels derived from polygon geometries are thus placed to avoid intersection with the street axis. You have to enable \"Horizontal\" or \"Free\" on the polygon layer in order to achieve proper results.
+スクリーンショットでは、Streetsに「他のラベルがこのレイヤの地物に被らないようにする」オプションが有効になっていることが分かります。 このように、ポリゴンジオメトリから得られた赤のラベルは、通りの軸と交差しないように配置されます。 適切な結果を得るには、ポリゴンレイヤーで「水平」または「フリー」を有効にする必要があります。
 
-Note, that it is also possible to both label a layer, but also act as obstacle layer, by enabling the checkbox \"Discourage labels from covering features\" in the \"rendering\" tab of the label settings.
+ラベル設定の「レンダリング」タブで、「ラベルが地物に被らないようにする」チェックボックスを有効にすることによって、レイヤーにラベルを付けることも、障害物のレイヤーとして機能させることも可能であることに注意してください。
 
-See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) for more details.
+詳細は [こちらの記事](http://nyalldawson.net/2015/07/recent-labelling-improvements-in-qgis-master/) を参照して下さい。
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
@@ -308,7 +308,7 @@ See [this article](http://nyalldawson.net/2015/07/recent-labelling-improvements-
 ### 機能：ルールベースのラベリング
 ラベルの配置やスタイリングをさらに細かく制御できるように、規則を使用して地物上のラベルのスタイルを設定できるようになりました。 規則に基づく地図作成と同様に、ラベル付け規則をネストすることで、非常に柔軟なスタイル設定オプションを使用できます。 たとえば、レンダリングされる地物のサイズに基づいてラベルをレンダリングできます（スクリーンショットに示すように）。
 
-See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
+詳細は [`blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) を参照してください。
 
 **この機能は以下によって開発されました：** [Gut3W](http://www.gis3w.it/) への下請けの [Lutra Consulting](http://www.lutraconsulting.co.uk/) の Martin Dobias
 
@@ -317,7 +317,7 @@ See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-label
 ![image25](images/entries/8846f57f0395e7f6b2543a92a5c55b67e8b19923.webp)
 ## マップコンポーザー
 ### 機能：アトラスナビゲーションの改善
-You can now set a field or expression as the \"page name\" for atlas compositions. A page number combobox has been added to the atlas toolbar, which shows both a list of available page numbers and names. This allows you to jump directly to a specific page within your atlas.
+フィールドまたは式を地図帳の「ページ名」として設定できるようになりました。地図帳ツールバーにページ番号のコンボボックスが追加されました。そこには利用可能なページ番号と名前のリストが表示されます。これにより、地図帳内の特定のページに直接ジャンプすることができます。
 
 ページ名は、シンボル名やラベル式内でも使用でき、ページ名に基づいてアトラス機能の高度なスタイリングを可能にします。
 
@@ -335,7 +335,7 @@ Composer属性テーブルには、複数行の文字列を完全にサポート
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**この機能は以下によって資金提供されました：** [ウスター市](http://gis.uster.ch/)
 
 ![image28](images/entries/db66b56f79949779ea32126bd22f2f1c9d4b55e6.webp)
 ### 機能：セルの背景色の高度なカスタマイズ
@@ -343,25 +343,25 @@ Composer属性テーブルには、複数行の文字列を完全にサポート
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [Ville de Morges](http://www.morges.ch/)
+**この機能は以下によって資金提供されました:** [Ville de Morges](http://www.morges.ch/)
 
 ![image29](images/entries/68266f6b11599dfa226952455ca150448a5d082a.webp)
 ### 機能：コンテンツにフィットするページを追加するオプションとコンテンツへのエクスポートをトリミングするオプション
 コンポジションパネルに新しいオプションが追加され、コンポジションの内容に合わせてサイズを変更し、必要に応じて追加の余白を追加しました。
 
-Composer exports can also be cropped to their contents. If selected, this option will make the images output by composer include only the area of the composition with content. There\'s also an option for margins to add around the item bounds if required.
+コンポーザの書き出しは、その内容に切り取ることもできます。このオプションを選択すると、コンポーザが出力する画像に、コンテンツ付きのコンポジションの領域のみが含まれます。必要に応じて、項目境界の周りに余白を追加するオプションもあります。
 
-If the composition includes a single page, then the output will be sized to include EVERYTHING on the composition. If it\'s a multi-page composition, then each page will be cropped to only include the area of that page with items.
+コンポジションに1つのページが含まれている場合は、コンポジションにすべての内容を含めるように出力がサイズ調整されます。複数ページのコンポジションの場合、各ページはクロップされ、そのページの項目だけが含まれます。
 
 これを容易にするための新しい画像書き出しオプションダイアログが追加されました。これには、印刷解像度や書き出した画像のサイズをオーバーライドするための便利なショートカットも含まれています。
 
-**Sponsored by:** [NIWA](https://www.niwa.co.nz/)
+**スポンサー:** [NIWA](https://www.niwa.co.nz/)
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
 ![image30](images/entries/38572cf4aa662cc4463c2a29f3d5ca38aa382632.webp)
 ### 機能：ベクターレイヤーをラスター画像としてレンダリングする
-A new option has been added under the layer properties, rendering tab to force a vector layer to render as a raster. Extremely detailed layers (eg polygon layers with a huge number of nodes) can cause composer exports in PDF/SVG format to be huge as all nodes are included in the exported file. This can also make the resultant file very slow to work with or open in external programs. Now, you can force these layers to be rasterised on a layer-by-layer basis, so that the exported files won\'t have to include all the nodes contained in these layers. The end result is smaller file sizes and PDFs/SVGs which are faster to open.
+ベクタレイヤを強制的にラスタとしてレンダリングする新しいオプションがレイヤープロパティのレンダリングタブの下に追加されました。コンポーザーはすべてのノードをエクスポートされるファイルに含めるため、極端に細かいレイヤー（ノード数が多いポリゴンレイヤーなど）は、PDF/SVG形式で巨大なエクスポートをする原因になることがあります。これにより、生成されたファイルの処理や、外部プログラムで開く速度が非常に遅くなることもあります。これで、これらのレイヤーをレイヤー単位で強制的にラスタライズすることができ、エクスポートされたファイルにこれらのレイヤーに含まれるすべてのノードを含める必要がなくなります。最終的には、ファイルサイズが小さくなり、PDF / SVGが開きやすくなります。
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
@@ -373,13 +373,13 @@ Using this control over map layers allows for \"layer-based\" atlases, where the
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**この機能は以下によって資金提供されました：** [ウスター市](http://gis.uster.ch/)
 
 ![image32](images/entries/a8dc3b35df4020897e39c81bd22a469ab5ea6225.webp)
 ### 機能：ビューを非表示にするオプション/エクスポート
 There\'s now an option to hide the display of pages while editing and exporting compositions. This option is useful for compositions which aren\'t intended for print and are not bound by any preset page sizes. You can hide the pages, then add and resize items in any way you desire without the visual distraction of page boundaries!
 
-**Sponsored by:** [NIWA](https://www.niwa.co.nz/)
+**スポンサー:** [NIWA](https://www.niwa.co.nz/)
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 ## プラグイン
@@ -392,15 +392,15 @@ GRASSプラグインは、GRASS 7のサポートを有効にするように更�
 
 GRASS 6とGRASS 7の両方のユーザーにとって、GRASSとQGISの統合はずっとシームレスです。QGISブラウザパネルで直接GRASSレイヤーを作成し、標準のQGISスタイリングツールを使用してGRASSベクターレイヤーをスタイル設定し、使い慣れたQGISデジタイジングツールを使用して、新しいベクタージオメトリをGRASS地図セットに作成できます。
 
-See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/) and [progress report](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/progress.html)
+[QGIS GRASS Plugin Upgradeプロジェクトページ](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/) と [progress report](http://www.gissula.eu/qgis-grass- plugin-crowdfunding/progress.html) も参照してください
 
-**This feature was developed by:** [Radim Blazek](http://www.gissula.eu/)
+**この機能は次の方によって開発されました:** [Radim Blazek](http://www.gissula.eu/)
 
 **This feature was funded by:** Crowd funding, see [project page](http://www.gissula.eu/qgis-grass-plugin-crowdfunding/)
 
 ![image33](images/entries/fb9ac25e9ca6c5e4030167e289435e995f5af8f5.webp)
 ## プログラマビリティ
-### Feature: Map tools moved from app-\>gui
+### 機能: マップツールが app-\>gui に移動しました
 この変更により、PyQGISスクリプトやPythonプラグインからマップツールを再利用することができます。
 
 **この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch/) の Matthias Kuhn
@@ -427,7 +427,7 @@ See also [QGIS GRASS Plugin Upgrade project page](http://www.gissula.eu/qgis-gra
 > - ラベリングエンジンをマップレンダリングエンジンから独立させる
 > - ラベリングエンジンとそのコンポーネントの自動テストを容易にする
 
-See [blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) for more details
+詳細は [`blogpost](http://www.lutraconsulting.co.uk/blog/2015/10/25/rule-based-labeling/) を参照してください。
 
 **この機能は以下によって開発されました：** [Gut3W](http://www.gis3w.it/) への下請けの [Lutra Consulting](http://www.lutraconsulting.co.uk/) の Martin Dobias
 
@@ -463,7 +463,7 @@ See also [QGIS as OGC data server](http://docs.qgis.org/2.18/en/docs/user_manual
 
 **This feature was developed by:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [City of Uster](http://gis.uster.ch/)
+**この機能は以下によって資金提供されました：** [ウスター市](http://gis.uster.ch/)
 
 ![image35](images/entries/beb2e9c00102c67ae703eac097ffba8866379609.webp)
 ## シンボロジ
