@@ -195,7 +195,7 @@ listLink = "https://github.com/qgisco"
 icon = "🇨🇴"
 layoutClass = "half"
 listTitle = "Grupo de Usuarios QGIS Colombia"
-listSubtitle = "Contact: Germán Carrillo" >}}
+listSubtitle = "Contact: Germán Carrillo" –> REMOVED in 2025 >}}
 
 
 ### Removed 2018
