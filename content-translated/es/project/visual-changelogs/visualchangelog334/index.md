@@ -208,7 +208,7 @@ Los valores de campo son números enteros cuya cuenta comienza en 0 y se increme
 
 ![image19](images/entries/54157595e9bf9c58b4b906ea28b3c335a737696b.webp)
 
-This feature was developed by [Valentin Buira](https://github.com/Poulpator)
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ### Feature: New \'Calculate expression\' algorithm for use in models
 The new \"Calculate expression\" algorithm will calculate the results of a QGIS expression and make the result available for use in other parts of the model.
 

@@ -634,7 +634,7 @@ The long-requested ability to show the number of features flowing through the mo
 
 Această funcționalitate a fost finanțată de the QGIS Elveția user group
 
-Această funcționalitate a fost dezvoltată de [Valentin Buira](https://github.com/ValentinBuira)
+Această funcționalitate a fost dezvoltată de [Celia Buira](https://github.com/CeliaBuira)
 ### Feature: support max-triangle-edge-length in PDAL Export to raster (TIN) algorithm
 Support for max-triangle-edge-length parameter has been added to the PDAL Export to raster (TIN) algorithm, so that triangles where the edge length is bigger than the specified threshold can be ignored.<br />This feature needs PDAL \>= 2.6.0 and wrench \>=1.2.2.
 
@@ -714,7 +714,7 @@ Previous versions of the QGIS model designer had a fixed canvas size of 4000 x 4
 
 Această funcționalitate a fost finanțată de Hauts-de-France region
 
-Această funcționalitate a fost dezvoltată de [Valentin Buira](https://github.com/ValentinBuira)
+Această funcționalitate a fost dezvoltată de [Celia Buira](https://github.com/CeliaBuira)
 ## Opțiunile Aplicației și ale Proiectului
 ### Feature: OAuth2 auto refresh
 QGIS now includes an auto-refresh mechanism for OAuth2 connections.<br />A cache cleanup to stop the auto refresh is triggered periodically, and when a layer is removed from the project. This is required to avoid unnecessary, endless refreshing of unused tokens.

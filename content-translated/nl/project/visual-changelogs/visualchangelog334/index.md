@@ -208,7 +208,7 @@ Veldwaarden zijn integers waarvan de telling begint met 0 en verhoogd van links 
 
 ![image19](images/entries/54157595e9bf9c58b4b906ea28b3c335a737696b.webp)
 
-Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/Poulpator)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ### Mogelijkheid: Nieuw algoritme \'Expressie berekenen\' om te gebruiken in modellen
 Het nieuwe algoritme \"Expressie berekenen\" berekent het resultaat van een expressie van QGIS en maakt het resultaat beschikbaar om te gebruiken in andere delen van het model.
 
