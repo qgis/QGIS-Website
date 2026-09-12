@@ -48,13 +48,13 @@ QGISコミュニティはあなたがこのリリースを楽しんでいただ�
 - ブロンズスポンサー: [Gaia3D, South Korea](http://www.gaia3d.com/)
 - ブロンズスポンサー: [Royal Borough of Windsor and Maidenhead, UK](http://www.rbwm.gov.uk/)
 - ブロンズスポンサー: [Chartwell Consultants Ltd, Canada](http://www.chartwell-consultants.com/)
-- BRONZE Sponsor: [Trage Wegen vzw, Belgium](http://www.tragewegen.be/)
-- BRONZE Sponsor: [GIS-Support, Poland](http://www.gis-support.com/)
-- BRONZE Sponsor: [GIS3W, italy](http://www.gis3w.it/)
-- BRONZE Sponsor: [GFI - Gesellschaft fr Informations technologie mbH, Germany](http://www.gfi-gis.de/)
-- BRONZE Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
+- ブロンズスポンサー [Trage Wegen vzw, Belgium](http://www.tragewegen.be/)
+- ブロンズスポンサー: [GIS-Support, Poland](http://www.gis-support.com/)
+- ブロンズスポンサー: [GIS3W, Italy](http://www.gis3w.it/)
+- ブロンズスポンサー: [GFI - Gesellschaft fr Informations technologie mbH, Germany](http://www.gfi-gis.de/)
+- ブロンズスポンサー: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
 
-A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become and official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
+プロジェクトに財政上の貢献を大小行った寄付者の現在のリストは、 [寄付者リスト](https://qgis.org/en/site/about/sponsorship.html#list-of-donors) にあります。公式プロジェクトスポンサーになって頂けるのでしたら、[スポンサーシップのページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) で詳細をご覧ください。QGISへの出資は、私たちが6ヶ月の開発者会議、プロジェクト基盤の維持、バグ修正作業に資金を供給するのに役立ちます。
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 
@@ -64,8 +64,8 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 結合が作成された後で、結合パラメータ（結合接頭辞または結合する列など）を編集できるようになりました。この変更に先立って、結合全体を削除して再作成する必要がありました。
 
 ![image14](images/entries/bb09241b7b997dfa07942ee5172ad466ebb777f7.webp)
-### 機能：結合されたレイヤーをフィルタリングできるようになりました
-Prior to version 2.10 a layer couldn\'t be filtered if it had at least one join. Now it is still filterable, but only using columns of the original master table.
+### 機能：結合のあるレイヤーをフィルタリングできるようになりました
+バージョン2.10以前では、少なくともひとつの結合をもつレイヤーをフィルタリングできませんでした。フィルタリングは可能になりましたが、元のマスター表の列のみを使用します。
 
 ![image15](images/entries/a2a93d4e621c1a2cfd976f3b0ec9673739aafda3.webp)
 ### 機能:全般の改善
@@ -81,11 +81,11 @@ Prior to version 2.10 a layer couldn\'t be filtered if it had at least one join.
 ### 機能：潜在的なプロジェクトファイルの上書き処理の改善
 QGIS 2.10は、ロードされたプロジェクトの最終変更日が変更された場合、プロジェクトを保存しようとすると警告を表示します。これは、複数のユーザーまたはセッションが同じプロジェクトファイルを開いていて、両方がプロジェクトファイルに編集内容を保存しようとしている場合に便利です。
 
-**This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
+**この機能は次の人が開発しました:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
 ![image17](images/entries/c30c07afc9123db564b766339daefe53af3cd348.webp)
 ### 機能:新しいジオメトリエンジン
-QGIS 2.10 has a new geometry engine. In general you won\'t see many differences on the user interface yet, but this lays the foundation for a much richer set of geospatial capabilities that we will be able to support in the future. The new implementation supports curved geometry types (so for example you can represent a traffic roundabout as a circle rather than a segmented polygon made to look like a circle) and has backend support for z/m values in geometries. To use curves in QGIS you will need to use PostGIS or a similar datastore that is able to express curvilinear geometries. If you want to have a play you can try a simple exercise like this in your PostGIS database:
+QGIS 2.10には新しいジオメトリエンジンが搭載されています。一般的に、ユーザーインターフェイスにはまだ多くの違いはありませんが、将来的にサポートできるようになる、より豊かな地理空間機能の基盤となります。新しい実装では、カーブしたジオメトリタイプをサポートしています（たとえば、交通の円形交差点を円に見えるように分割されたポリゴンではなく、円として表すことができます）し、ジオメトリの z/m 値のバックエンドサポートがあります。QGISで曲線を使用するには、PostGISまたは曲線のジオメトリを表現できる同様のデータストアを使用する必要があります。遊びをしたい場合は、PostGISデータベースで次のような簡単な演習を試すことができます:
 
     -- Table: curves DROP TABLE curves;
     CREATE TABLE curves (
@@ -98,20 +98,20 @@ QGIS 2.10 has a new geometry engine. In general you won\'t see many differences 
     INSERT INTO curves VALUES ( 1, st_geomfromtext(
        'CURVEPOLYGON(CIRCULARSTRING(1 1,1 2, 2 2, 2 1, 1 1))', 4326), 'test');
     
-Then add the layer `curves` to your project.
+こうするとレイヤ `curves` をあなたのプロジェクトに追加できます.
 
-**This feature was developed by:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
+**この機能は、以下によって開発されました：** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [KantonSolothurn, Switzerland](http://www.sogis.ch/)
+**この機能は以下によって資金提供されました:** [KantonSolothurn, スイス](http://www.sogis.ch/)
 
 ![image18](images/entries/4f070e4075b4703edb40d8cb91d5fb527d1d3a93.webp)
 ## 解析ツール
 ### 機能：新しい統計要約ドックウィジェット
-Can display summary statistics (e.g. mean, standard deviation, \...) for a field or expression from a vector layer or selection. This is provided by means of a new dock panel that you can activate from the `View -> Panels -> Statistics` menu. Please note that you will only be able to generate statistics on **vector layers** that have a **numeric column**.
+ベクターレイヤーまたは選択から、フィールドまたは式の要約統計量（平均値、標準偏差など）を表示できます。これは `ビュー -> パネル -> 統計` メニューから起動できる新しいドックパネルによって提供されます。作成できるのは **数値の列** を持つ **ベクターレイヤー** の統計だけであることに注意してください。
 
 ![image1](images/entries/7d52fdffac5546ea3f39ee4dac5dbe19f961703a.webp)
 ### 機能：ラスター計算機で対数関数を使用する
-The raster calculator (`Raster -> Raster Calculator` in the QGIS menu) is a tool that allows you to perform matrix operations on one or more raster layers. With QGIS 2.10 you can now use `LN` and `LOG10` functions in the raster calculator.
+ラスター計算機（QGISメニューの `ラスター -> ラスター計算機` ）は、1つまたは複数のラスターレイヤーで行列演算を実行できるツールです。QGIS 2.10では、ラスター計算機で `LN` と `LOG10` を使うことができます。
 
 ![image2](images/entries/13c65100ab57ed8f97fa23b08704ca726a7c33da.webp)
 ### 機能：新しいゾーン統計機能
@@ -120,12 +120,12 @@ The raster calculator (`Raster -> Raster Calculator` in the QGIS menu) is a tool
 - 余計な統計情報が追加されています（中央値、標準値、最小値、最大値、範囲値、少数値、
 - 統計抽出に使用するラスタバンドを選択する機能
 
-Note that zonal stats is a \'core plugin\' (a plugin that ships with your QGIS installer), but is disabled by default. You need to enable it in the plugin manager and then a menu entry for zonal statistics will appear in the `Raster` menu.
+ゾーン統計は「コアプラグイン」（QGISインストーラに同梱されているプラ​​グイン）ですが、デフォルトでは無効になっています。プラグインマネージャでそれを有効にする必要があり、そうすると 「ラスタ」メニューにゾーン統計のメニュー項目が現れます。
 
 ![image3](images/entries/d86b8eb8a72d26a0fcb0bf043c9189e14a4ae125.webp)
 ## ブラウザ
 ### 機能:新しいブラウザプロパティウィジェット
-When using the QGIS Browser dock panels (`View -> Panels -> Browser`), you and now enable a properties widget at the bottom of the file system tree. Any data source that you click on will have its properties shown in this panel. This makes it quick and convenient to see basic information about the dataset you have selected. To toggle the properties view, you should use the `i` icon at the top of the browser panel.
+QGISブラウザドックパネル（ `ビュー -> パネル -> ブラウザ` ）を使うと、ファイルシステムツリーの一番下にプロパティウィジェットを有効にすることができます。クリックするデータソースのプロパティは、このパネルに表示されます。これにより、選択したデータセットに関する基本情報をすばやく簡単に表示できます。プロパティビューを切り替えるには、ブラウザパネルの上部にある `i` アイコンを使うべきです。
 
 ![image4](images/entries/2f3fed9a32d761418704da2a7da378ba172164da.webp)
 ### Feature: New browser icon
@@ -136,9 +136,9 @@ QGISブラウザは、ファイルシステム、データベース接続、Web�
 ### 機能：DXFエクスポートの改善
 最後の3つのQGISバージョンでは、DXFエクスポートが継続的に改善されました。 このバージョンでは、改良されたSVGやDXFブロック変換の簡単なマーカーが導入され、不完全な（判読不能な）DXFファイルとなるいくつかのバグや問題が修正されています。 スクリーンショットでは、左側のQGISの元のビューと、右側のAutodesk TrueViewでエクスポートされたDXFファイルのレンダリングを見ることができます。
 
-See also [this article on qgis.ch](http://www.qgis.ch/en/projects/dxf-export) explaining what is supported and what not.
+[qgis.ch にあるこの記事](http://www.qgis.ch/en/projects/dxf-export) は、サポートされるものとされないものについて説明しています。
 
-**This feature was developed by:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
+**この機能は次の人が開発しました:** [Jürgen Fischer (norBIT)](http://www.norbit.de/)
 
 **この機能は、以下によって資金提供されました：** Morges、Uster、VeveyおよびSIGEのコミュニティ
 
@@ -159,9 +159,9 @@ To make use of this feature you need to enable it in `Settings -> Options -> dat
 ### 機能:バーチャルフィールドが現在は更新可能です
 Prior to version 2.8 you had to delete and recreate virtual fields if you wanted to change the expression for calculating the virtual field. In 2.10 you can now go to the `Fields` tab and press the small `Expression` button to open the expression editor and update the expression used for the virtual field.
 
-**This feature was developed by:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+**この機能は、以下によって開発されました:** [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) 
 
-**This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
+**この機能は以下によって資金提供されました：** [Uster市、スイス](http://gis.uster.ch/)
 
 ![image8](images/entries/f45d5a4447f28d96a2c5c4cc6c27b84285096a02.webp)
 ### 機能：ValueRelation編集ウィジェットの自動補完機能付きライン編集
@@ -187,7 +187,7 @@ DB Managerの新しいウィンドウは、テーブル名、カラム名、関�
 ### 機能：リレーション参照ウィジェットのフィルタ連鎖
 To select linked entries from other tables one can use the relation reference widgets. One can either select elements graphically by selecting them in the map, if the linked feature has a geometry attached or choose an element by the linked id. To facilitate the non-spatial selection it is now possible to narrow the available options with filters (chained or unchained). If the filters are unchained their choices are combined with \"AND\" to define the available options. If chained is checked, a drill-down mode for the filters is activated so each filter only shows the entries which correspond to the previous filter. This is useful for selecting from hierarchical data like City -\> Street -\> Number.
 
-**This feature was developed by:** [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+**この機能は、以下によって開発されました:** [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) 
 
 **This feature was funded by:** [SIGE](http://www.sige.ch/)
 
@@ -244,9 +244,9 @@ FI_POINT_TOLERANCE=16&FI_LINE_TOLERANCE=8&FI_POLYGON_TOLERANCE=4
 
 必要に応じて許容値（ピクセル単位）を変更します。
 
-**This feature was developed by:** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
+**この機能は、以下によって開発されました：** [Marco Hugentobler (Sourcepole AG)](http://www.sourcepole.ch/)
 
-**This feature was funded by:** [City of Uster, Switzerland](http://gis.uster.ch/)
+**この機能は以下によって資金提供されました：** [Uster市、スイス](http://gis.uster.ch/)
 
 ![image22](images/entries/29470cc51906dffe3a96d3e17a7e8c83b4504a18.webp)
 ## シンボロジ

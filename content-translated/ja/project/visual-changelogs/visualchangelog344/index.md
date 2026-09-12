@@ -332,7 +332,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 この機能開発には [Hauts-de-France](https://www.hautsdefrance.fr/) の資金提供を受けました
 
-この機能は  [Celia Buira](https://github.com/CeliaBuira) によって開発されました
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ## プロセシング
 ### 機能: SAGAの "Fill Sinks Wang & Liu" のネイティブツールへの移植
 このニーズの高いツールは、SAGAプロセッシングプラグイン経由で実行すると不安定でエラーが発生しやすい状況でした。
@@ -363,7 +363,7 @@ QGISグラフィカルモデラーがモデルノードに接続された独立�
 
 <img src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png" class="img-responsive img-rounded" />
 
-この機能は  [Celia Buira](https://github.com/CeliaBuira) によって開発されました
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ### 機能: プロセッシングラスターランクアルゴリズム
 新しい "Raster rank" アルゴリズムは、ラスターのコレクションを入力として受け取り、入力ラスターコレクションから取得したセル値リストのランク順に一致するセル値を持つ出力を作成します。
 

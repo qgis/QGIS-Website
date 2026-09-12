@@ -45,21 +45,21 @@ QGISコミュニティはあなたがこのリリースを楽しんでいただ�
 - ブロンズスポンサー: [Gaia3D, South Korea](http://www.gaia3d.com/)
 - ブロンズスポンサー: [Royal Borough of Windsor and Maidenhead, UK](http://www.rbwm.gov.uk/)
 - ブロンズスポンサー: [Chartwell Consultants Ltd, Canada](http://www.chartwell-consultants.com/)
-- BRONZE Sponsor: [Trage Wegen vzw, Belgium](http://www.tragewegen.be/)
-- BRONZE Sponsor: [GFI - Gesellschaft fr Informations technologie mbH, Germany](http://www.gfi-gis.de/)
+- ブロンズスポンサー [Trage Wegen vzw, Belgium](http://www.tragewegen.be/)
+- ブロンズスポンサー: [GFI - Gesellschaft fr Informations technologie mbH, Germany](http://www.gfi-gis.de/)
 - ブロンズスポンサー: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
-- BRONZE Sponsor: [GIS-Support, Poland](http://www.gis-support.com/)
+- ブロンズスポンサー: [GIS-Support, Poland](http://www.gis-support.com/)
 - ブロンズスポンサー: [ADLARES GmbH, Germany](http://www.adlares.com/)
 - ブロンズスポンサー: [www.molitec.it, Italy](http://www.molitec.it/)
 - ブロンズスポンサー: [www.argusoft.de, Germany](http://www.argusoft.de)
 - ブロンズスポンサー: [Customer Analytics, USA](http://www.customeranalytics.com/)
 - ブロンズスポンサー: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
-- BRONZE Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
+- ブロンズスポンサー: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
 - ブロンズスポンサー: [Urbsol, Australia](http://www.urbsol.com.au/)
 - ブロンズスポンサー: [MappingGIS、スペイン](http://www.mappinggis.com/)
-- BRONZE Sponsor: [GIS3W, italy](http://www.gis3w.it/)
+- ブロンズスポンサー: [GIS3W, Italy](http://www.gis3w.it/)
 
-A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become and official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
+プロジェクトに財政上の貢献を大小行った寄付者の現在のリストは、 [寄付者リスト](https://qgis.org/en/site/about/sponsorship.html#list-of-donors) にあります。公式プロジェクトスポンサーになって頂けるのでしたら、[スポンサーシップのページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) で詳細をご覧ください。QGISへの出資は、私たちが6ヶ月の開発者会議、プロジェクト基盤の維持、バグ修正作業に資金を供給するのに役立ちます。
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 
