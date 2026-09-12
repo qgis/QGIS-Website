@@ -3,11 +3,11 @@
   "prefix": "",
   "distribution": "debian_ubuntu_nightly_release",
   "source_folder": "debian-nightly-release",
-  "generated_at": "2026-09-12T05:05:05.154535+00:00",
+  "generated_at": "2026-09-12T07:05:42.785075+00:00",
   "statistics": {
-    "total_files": 31487,
-    "total_size": 775067068530,
-    "total_size_formatted": "721.84 GB",
+    "total_files": 31489,
+    "total_size": 775078931111,
+    "total_size_formatted": "721.85 GB",
     "by_category": {
       "other": {
         "count": 807,
@@ -16,17 +16,17 @@
       },
       "archive": {
         "count": 693,
-        "size": 148202004785,
+        "size": 148202004858,
         "size_formatted": "138.02 GB"
       },
       "installer": {
-        "count": 29987,
-        "size": 626767860200,
-        "size_formatted": "583.72 GB"
+        "count": 29989,
+        "size": 626779722708,
+        "size_formatted": "583.73 GB"
       }
     },
     "by_extension": {
-      ".deb": 29987,
+      ".deb": 29989,
       ".gz": 642,
       ".dsc": 556,
       "no extension": 207,
@@ -37,7 +37,7 @@
       ".d71472c4": 1,
       ".dd45f6c3": 1
     },
-    "last_updated": "2026-09-12T05:05:05.143254+00:00"
+    "last_updated": "2026-09-12T07:05:42.771885+00:00"
   },
   "tree": {
     "name": "qgis-download",
@@ -4851,8 +4851,8 @@
                         "key": "debian-nightly-release/dists/trixie/main/binary-amd64/Packages.bz2",
                         "name": "Packages.bz2",
                         "path": "dists/trixie/main/binary-amd64",
-                        "size": 125845,
-                        "size_formatted": "122.90 KB",
+                        "size": 125877,
+                        "size_formatted": "122.93 KB",
                         "last_modified": "2026-04-27T05:58:43+00:00",
                         "last_modified_timestamp": 1777269523,
                         "extension": ".bz2",
@@ -4862,8 +4862,8 @@
                         "key": "debian-nightly-release/dists/trixie/main/binary-amd64/Packages.gz",
                         "name": "Packages.gz",
                         "path": "dists/trixie/main/binary-amd64",
-                        "size": 154596,
-                        "size_formatted": "150.97 KB",
+                        "size": 154557,
+                        "size_formatted": "150.93 KB",
                         "last_modified": "2026-04-27T05:58:43+00:00",
                         "last_modified_timestamp": 1777269523,
                         "extension": ".gz",
@@ -4903,8 +4903,8 @@
                         "key": "debian-nightly-release/dists/trixie/main/binary-i386/Packages.bz2",
                         "name": "Packages.bz2",
                         "path": "dists/trixie/main/binary-i386",
-                        "size": 127341,
-                        "size_formatted": "124.36 KB",
+                        "size": 127410,
+                        "size_formatted": "124.42 KB",
                         "last_modified": "2026-04-27T05:58:43+00:00",
                         "last_modified_timestamp": 1777269523,
                         "extension": ".bz2",
@@ -4914,8 +4914,8 @@
                         "key": "debian-nightly-release/dists/trixie/main/binary-i386/Packages.gz",
                         "name": "Packages.gz",
                         "path": "dists/trixie/main/binary-i386",
-                        "size": 156430,
-                        "size_formatted": "152.76 KB",
+                        "size": 156446,
+                        "size_formatted": "152.78 KB",
                         "last_modified": "2026-04-27T05:58:43+00:00",
                         "last_modified_timestamp": 1777269523,
                         "extension": ".gz",
@@ -4955,7 +4955,7 @@
                         "key": "debian-nightly-release/dists/trixie/main/source/Sources.gz",
                         "name": "Sources.gz",
                         "path": "dists/trixie/main/source",
-                        "size": 2553,
+                        "size": 2548,
                         "size_formatted": "2.49 KB",
                         "last_modified": "2026-04-27T05:58:43+00:00",
                         "last_modified_timestamp": 1777269523,
@@ -82031,6 +82031,17 @@
                         "category": "installer"
                       },
                       {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-customwidgets_4.2.2+git20260912+414330aa434+18trixie_i386.deb",
+                        "name": "libqgis-customwidgets_4.2.2+git20260912+414330aa434+18trixie_i386.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 5249460,
+                        "size_formatted": "5.01 MB",
+                        "last_modified": "2026-09-12T07:04:29.321000+00:00",
+                        "last_modified_timestamp": 1789196669,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
                         "key": "debian-nightly-release/pool/main/q/qgis/libqgis-customwidgets_4.2.2+git20260912+414330aa434+42plucky_amd64.deb",
                         "name": "libqgis-customwidgets_4.2.2+git20260912+414330aa434+42plucky_amd64.deb",
                         "path": "pool/main/q/qgis",
@@ -90156,6 +90167,17 @@
                         "size_formatted": "6.31 MB",
                         "last_modified": "2026-09-11T08:04:51.071000+00:00",
                         "last_modified_timestamp": 1789113891,
+                        "extension": ".deb",
+                        "category": "installer"
+                      },
+                      {
+                        "key": "debian-nightly-release/pool/main/q/qgis/libqgis-dev_4.2.2+git20260912+414330aa434+18trixie_amd64.deb",
+                        "name": "libqgis-dev_4.2.2+git20260912+414330aa434+18trixie_amd64.deb",
+                        "path": "pool/main/q/qgis",
+                        "size": 6613048,
+                        "size_formatted": "6.31 MB",
+                        "last_modified": "2026-09-12T07:04:29.940000+00:00",
+                        "last_modified_timestamp": 1789196669,
                         "extension": ".deb",
                         "category": "installer"
                       },
