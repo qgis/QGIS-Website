@@ -92,12 +92,15 @@ Trueno is a free Font Library serif font. In order to embed it, please use 
 <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/trueno" type="text/css"/>
 ```
 in the site header
+
 {{< table  >}}
+
 | Name | Font-family
 |:-------:|:----------------------:|------------|
 | Trueno Ultra light     |  'TruenoUltraLight'   |
 | Trueno Regular     | 'TruenoRegular'  |
 | Trueno Bold    | 'TruenoBold'   | 
+
 {{< /table >}}
 
 ##  Color
@@ -105,29 +108,45 @@ in the site header
 ### Primary colors
 
 **Dark Green**
+
 {{< columns-start >}}
+
 {{< column-start class="is-one-third">}}
+
 ![Dark green](visual/dark_green.png)
+
 {{< column-end >}}
+
 {{< column-start class="is-two-thirds">}}
+
 HEX: #589632  
 RGB: 88, 150, 50  
 CMYK: 70.53, 18.84, 100, 3.7  
+
 {{< column-end >}}
+
 {{< columns-end >}}
 
 The QGIS Dark Green color to be used for every logo element in the monochrome version. It can also be used as background, primary headline or text color.
 
 **Light Green**
+
 {{< columns-start >}}
+
 {{< column-start class="is-one-third">}}
+
 ![Light green](visual/light_green.png)
+
 {{< column-end >}}
+
 {{< column-start class="is-two-thirds">}}
+
 HEX: #93b023  
 RGB: 147, 176, 35  
 CMYK: 50.62, 12.6, 100, 0.86  
+
 {{< column-end >}}
+
 {{< columns-end >}}
 
 The QGIS Light Green color to be used for content of lesser importance. It can be used as secondary background, text or links color.
@@ -147,27 +166,41 @@ The two primary colors are used as a vertical linear gradient in the logo, and t
 **Lemon**
 
 {{< columns-start >}}
+
 {{< column-start class="is-one-third">}}
+
 ![Lemon](visual/lemon.png)
+
 {{< column-end >}}
+
 {{< column-start class="is-two-thirds">}}
+
 HEX: #f0e64a  
 RGB: 240, 230, 74  
 CMYK: 11, 0, 79, 0  
+
 {{< column-end >}}
+
 {{< columns-end >}}
 
 **Orange**
 
 {{< columns-start >}}
+
 {{< column-start class="is-one-third">}}
+
 ![Orange](visual/orange.png)
+
 {{< column-end >}}
+
 {{< column-start class="is-two-thirds">}}
+
 HEX: #ee7913  
 RGB: 238, 121, 19  
 CMYK: 0, 62, 96, 0  
+
 {{< column-end >}}
+
 {{< columns-end >}}
 
 

@@ -60,10 +60,14 @@ Keep in mind that the more precise your question is, the quicker and more
 accurate the answer can be.
 
 {{< rich-box-start icon="💁" layoutClass="tips" mode="html">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 In case of a broken function, you may give a look at [QGIS issue tracker](https://github.com/qgis/QGIS/issues) before mailing to the list. More information at [bug-reporting]({{< ref "resources/support/bug-reporting" >}}).
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 ### How are QGIS release names selected?
@@ -113,12 +117,26 @@ Linux). Please read [Building QGIS from source](https://github.com/qgis/QGIS/blo
 
 If you need to cite QGIS in your work or for an assignment, please use the citation style that would be most helpful:
 
-**QGIS Digital Object Identifier (DOI)**
+Here are some choices to cite the overall QGIS software project, a specific QGIS version being used used, or QGIS documentation to allow reproducibility:
 
+**The QGIS project as an evolving software project, independent of a specific software release, by Digital Object Identifier (concept DOI)**
 
-DOI: [10.5281/zenodo.6139224](https://doi.org/10.5281/zenodo.6139224)
+Use the concept DOI [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224)  when 
+- referring to the QGIS software in general (e.g., in introductions or background sections)
+- describing workflows where the exact version is not critical
+- citing QGIS as a long-term research tool or infrastructure
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.6139224.svg)](https://doi.org/10.5281/zenodo.6139224)
+The concept DOI will always resolve to the latest version of QGIS and provide a stable reference to the software project over time.
+
+**Specific QGIS software releases by Digital Object Identifier (version DOI)**
+
+Each QGIS release since release 3.22.4 (2022) has its own version DOI identifying a precise, archived snapshot of the software (e.g., a specific software release). All version DOI are linked to the concept DOI of the QGIS project.
+
+Please refer to the QGIS Zenodo Landing Page ([QGIS Zenodo Landing Page](https://zenodo.org/search?q=parent.id%3A6139224&f=allversions%3Atrue&l=list&p=1&s=10&sort=version)) for all specific version DOI.
+
+- QGIS 4.0.0      [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18889261.svg)](https://doi.org/10.5281/zenodo.18889261)
+  
+- QGIS 3.44 LTR   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15705458.svg)](https://doi.org/10.5281/zenodo.15705458)
 
 
 **Cite the QGIS project in general**
@@ -189,6 +207,8 @@ Example BibTeX entry:
 }
 ```
 
+
+
 ### I created a map with QGIS, do I have to mention QGIS?
 
 There is no requirement to mention QGIS for maps produced with it.
@@ -196,11 +216,15 @@ It is of course really welcome if you would like to add a note saying that the m
 "Made with QGIS" or "Map created using the Free and Open Source QGIS" are good examples of such a note.
 
 {{< rich-box-start icon="✋" layoutClass="tips" >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 
 Do not say ©QGIS as QGIS does not hold copyrights on your work.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 

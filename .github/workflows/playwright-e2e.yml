@@ -14,7 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 🛒 Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
+        with:
+          submodules: recursive
       
       - name: 🛠️ Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -22,11 +24,11 @@ jobs:
           # Using the latest value doesn't work for now. 
           # See https://github.com/peaceiris/actions-hugo/issues/652#issuecomment-2543985304
           # and https://github.com/peaceiris/actions-hugo/issues/662
-          hugo-version: '0.139.4'
+          hugo-version: '0.162.1'
           extended: true
 
-      - name: 🧱 Hugo build
-        run: hugo --gc --config ./config.toml -b http://127.0.0.1:1313
+      - name: 🧱 Hugo build (dev overlay, reduced languages)
+        run: hugo --gc --config ./config.toml,./config/config.dev.toml -b http://127.0.0.1:1313 -d public
 
       - name: 🕸️ Run server
         run: |
@@ -47,7 +49,7 @@ jobs:
       - name: ⚡️ Run Playwright tests
         working-directory: playwright/ci-test
         run: npx playwright test
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: playwright-report

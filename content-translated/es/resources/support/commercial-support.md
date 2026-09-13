@@ -1,0 +1,31 @@
+---
+draft: false
+sidebar: true
+subtitle: ''
+title: Soporte Comercial
+type: page
+
+---
+{{<content-start >}}
+# Soporte Comercial
+Do you plan to use QGIS in your company or organization, but worry about whether there is commercial support available? Are you looking for a developer to add features you need or fix bugs you encounter? Here is an alphabetical list of support contractors.
+
+Organizations marked with an <span class="tag is-success"><span class="icon"><i class="fas fa-check-circle"></i></span><span>Active Contributor</span></span> badge have contributed to QGIS within the last 12 months and are also listed in our [Contributing Organizations](/community/contributors/organisations/) page. Organizations with an <span class="tag is-warning"><span class="icon"><i class="fas fa-clock"></i></span><span>Inactive Contributor</span></span> badge have contributed to QGIS in the past but not recently.
+
+{{<rich-box-start icon="🦸" layoutClass="tips" >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
+##### Note
+We take responsibility for the accuracy, reliability or completeness of the provided information for **Core contributors** only.
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+## Commercial Support Providers
+{{<commercial-support dataFile="core_contributors" >}}
+
+{{<commercial-support dataFile="contributors" >}}
+
+{{<commercial-support dataFile="others" >}}
+
+{{<content-end >}}

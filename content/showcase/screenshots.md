@@ -9,4 +9,4 @@ submenus: showcase
 ---
 
 
-{{< flickr-images showcase="screenshot" >}}
+{{< hub-images showcase="screenshot" >}}

@@ -1,8 +1,0 @@
-{{ $isLocal := (or (eq .Site.BaseURL "/") (strings.Contains .Site.BaseURL "localhost")) }}
-{{ $locationPrefix := cond $isLocal "" .Site.Params.uniNavHeaderLocationPrefix }}
-
-<qg-top-nav
-    breakpoint="1024"
-    class="is-highest navbar is-fixed-top"
-    location-prefix="{{ $locationPrefix }}"
-></qg-top-nav>

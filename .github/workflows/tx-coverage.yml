@@ -1,0 +1,69 @@
+name: Transifex coverage
+
+on:
+  schedule:
+    - cron: '0 3 * * *' # daily at 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  fetch-coverage:
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'qgis'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r REQUIREMENTS.txt
+
+      - name: Fetch coverage from Transifex
+        env:
+          TX_TOKEN: ${{ secrets.TX_TOKEN }}
+        run: |
+          python scripts/i18n/tx_fetch_coverage.py \
+            --project qgis-website \
+            --resources qgis-hugo-docs-md \
+            --output data/tx_coverage.json
+
+      - name: Apply language coverage filter
+        id: filter
+        run: |
+          python scripts/i18n/filter_languages_by_coverage.py \
+            --threshold 35 \
+            --config config.toml \
+            --coverage data/tx_coverage.json \
+            --languages data/languages.json
+          if [[ -n "$(git status --porcelain config.toml)" ]]; then
+            echo "config_changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "config_changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit changes
+        run: |
+          changed_files=$(git status --porcelain data/tx_coverage.json config.toml)
+          if [[ -n "$changed_files" ]]; then
+            git config --global user.name 'GitHub Actions'
+            git config --global user.email 'github-actions@github.com'
+            git add data/tx_coverage.json config.toml
+            if [[ "${{ steps.filter.outputs.config_changed }}" == "true" ]]; then
+              git commit -m "chore: update translation coverage and language filter"
+            else
+              git commit -m "Update translation coverage [skip ci]"
+            fi
+            # Rebase onto anything that landed on main while we were running,
+            # then push. A real rebase failure should fail the job.
+            git pull --rebase --autostash origin main
+            git push
+          else
+            echo "No coverage changes"
+          fi
+
+

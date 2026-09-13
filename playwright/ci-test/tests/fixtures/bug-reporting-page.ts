@@ -33,10 +33,10 @@ export class BugReportingPage {
         this.bugReportingLink = this.page.getByRole("link", {
             name: "Bug Reporting",
         });
-        this.bugPlaceFoundCell = this.page.getByRole("cell", {
+        this.bugPlaceFoundCell = this.page.getByRole("columnheader", {
             name: "Place you found the bug or",
         });
-        this.bugReportIssueCell = this.page.getByRole("cell", {
+        this.bugReportIssueCell = this.page.getByRole("columnheader", {
             name: "Place to report the issue",
         });
         this.qgisDesktopCell = this.page.getByRole("cell", {

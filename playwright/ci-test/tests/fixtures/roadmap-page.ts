@@ -9,6 +9,9 @@ export class RoadmapPage {
     public readonly date: Locator;
     public readonly weekNumber: Locator;
     public readonly weeks: Locator;
+    public readonly abbreviation: Locator;
+    public readonly description: Locator;
+    public readonly ltr: Locator;
     public readonly longTermReleaseBegin: Locator;
     public readonly regularReleaseBegin: Locator;
     public readonly featureFreezeEnd: Locator;
@@ -22,7 +25,6 @@ export class RoadmapPage {
     public readonly osgeo4w: Locator;
     public readonly linux: Locator;
     public readonly debianUbuntu: Locator;
-    public readonly macOS: Locator;
     public readonly textList: string[] = [
         "Road Map",
         "Long Term Release (LTR)",
@@ -39,21 +41,28 @@ export class RoadmapPage {
 
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
-        this.event = this.page.getByRole("cell", { name: "Event" });
-        this.latest = this.page.getByRole("cell", {
+        this.event = this.page.getByRole("columnheader", { name: "Event" });
+        this.latest = this.page.getByRole("columnheader", {
             name: "Latest",
             exact: true,
         });
-        this.longTermRepo = this.page.getByRole("cell", {
+        this.longTermRepo = this.page.getByRole("columnheader", {
             name: "Long-Term Repo",
         });
-        this.freeze = this.page.getByRole("cell", {
+        this.freeze = this.page.getByRole("columnheader", {
             name: "Freeze",
             exact: true,
         });
-        this.date = this.page.getByRole("cell", { name: "Date" });
-        this.weekNumber = this.page.getByRole("cell", { name: "Week #" });
-        this.weeks = this.page.getByRole("cell", { name: "Weeks" });
+        this.date = this.page.getByRole("columnheader", { name: "Date" });
+        this.weekNumber = this.page.getByRole("columnheader", { name: "Week #" });
+        this.weeks = this.page.getByRole("columnheader", { name: "Weeks" });
+        this.abbreviation = this.page.getByRole("columnheader", {
+            name: "Abbreviation",
+        });
+        this.description = this.page.getByRole("columnheader", {
+            name: "Description",
+        });
+        this.ltr = this.page.getByRole("cell", { name: "LTR", exact: true });
         this.longTermReleaseBegin = this.page.getByRole("cell", {
             name: "Long term release, begin of",
         });
@@ -75,14 +84,13 @@ export class RoadmapPage {
         this.nextReleases = this.page.getByRole("cell", {
             name: "next releases",
         });
-        this.platform = this.page.getByRole("cell", { name: "Platform" });
-        this.location = this.page.getByRole("cell", { name: "Location" });
+        this.platform = this.page.getByRole("columnheader", { name: "Platform" });
+        this.location = this.page.getByRole("columnheader", { name: "Location" });
         this.windows = this.page.getByRole("cell", { name: "Windows" });
         this.osgeo4w = this.page.getByRole("cell", { name: "OSGeo4W" });
         this.linux = this.page.getByRole("cell", { name: "Linux" });
         this.debianUbuntu = this.page.getByRole("cell", {
             name: "Debian/Ubuntu",
         });
-        this.macOS = this.page.getByRole("cell", { name: "MacOS" });
     }
 }

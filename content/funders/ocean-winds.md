@@ -8,8 +8,8 @@
 level: "Large"
 title: "Ocean Winds"
 logo: "ocean-winds.png"
-startDate: "2025-07-01"
-endDate: "2026-02-28"
+startDate: "2026-03-01"
+endDate: "2027-02-28"
 link: "https://oceanwinds.com/"
 country: "Spain"
 ---

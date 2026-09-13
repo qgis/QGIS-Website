@@ -1,5 +1,0 @@
-{{ $case_studies := where .Site.Pages "Section" "project" }}
-{{ $filtered := where $case_studies "Params.type" "case-study" }}
-{{ with index $filtered 0 }}
-    {{ partial "usecase.html" . }}
-{{ end }}

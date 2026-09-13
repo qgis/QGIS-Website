@@ -1,0 +1,166 @@
+{{ $allContributors := $.Site.Data.contributors.contributors.contributors }}
+{{ $honoraryMembers := $.Site.Data.contributors.honorary_members }}
+{{ $contributors := slice }}
+{{ range $allContributors }}
+    {{ if .has_github_account }}
+        {{ $contributors = $contributors | append . }}
+    {{ end }}
+{{ end }}
+{{ $contributors = sort $contributors "total_contributions" "desc" }}
+
+<!-- Split into founder (pinned) and regular, preserving commit-rank for display -->
+{{ $founderRanked := slice }}
+{{ $regularRanked := slice }}
+{{ range $idx, $contributor := $contributors }}
+    {{ $isHonorary := index $honoraryMembers $contributor.login }}
+    {{ if and $isHonorary (in $isHonorary.title "Founder") }}
+        {{ $founderRanked = $founderRanked | append (dict "contributor" $contributor "rank" (add $idx 1) "honorary" $isHonorary "pinned" true) }}
+    {{ else }}
+        {{ $regularRanked = $regularRanked | append (dict "contributor" $contributor "rank" (add $idx 1) "honorary" $isHonorary "pinned" false) }}
+    {{ end }}
+{{ end }}
+
+<!-- Filter and Search Section -->
+<div class="contributors-filter-section notification is-light p-5 mb-5 mt-5">
+    <!-- Search Bar -->
+    <div class="field mb-5">
+        <div class="control has-icons-left is-large">
+            <input
+                class="input is-rounded"
+                type="text"
+                id="contributor-search"
+                placeholder="Search contributors by GitHub username..."
+                aria-label="Search contributors"
+            >
+            <span class="icon is-left is-large">
+                <i class="fas fa-search"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- Filters (heading row doubles as the toolbar for the view switcher) -->
+    <div class="mb-4">
+        <div class="has-text-weight-semibold has-text-grey-dark is-uppercase">
+            <span class="icon-text">
+                <span class="icon"><i class="fas fa-filter"></i></span>
+                <span>Filter by Contribution Area</span>
+            </span>
+        </div>
+        <div class="buttons are-small">
+            <button class="button filter-button" data-thematic="qgis_core">
+                <span class="icon"><i class="fas fa-code"></i></span>
+                <span>QGIS Core</span>
+            </button>
+            <button class="button filter-button" data-thematic="documentation">
+                <span class="icon"><i class="fas fa-book"></i></span>
+                <span>Documentation</span>
+            </button>
+            <button class="button filter-button" data-thematic="web_sites">
+                <span class="icon"><i class="fas fa-globe"></i></span>
+                <span>Web Sites</span>
+            </button>
+            <button class="button is-outlined is-primary3 mr-2" id="reset-filters">
+                <span class="icon"><i class="fas fa-redo"></i></span>
+                <span>Reset Filters</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="tags has-addons mb-0">
+        <span class="tag is-medium is-white has-text-grey-dark mb-0">Showing</span>
+        <span class="tag is-medium is-primary3 has-text-weight-semibold mb-0" id="stats-showing">{{ len $contributors }}</span>
+        <span class="tag is-medium is-white has-text-grey-dark mb-0">of</span>
+        <span class="tag is-medium is-white has-text-weight-semibold mb-0" id="stats-total">{{ len $contributors }}</span>
+    </div>
+</div>
+
+
+<div class="field has-addons mb-0" id="view-toggle" role="group" aria-label="Display mode">
+    <p class="control">
+        <button class="button is-active is-primary3" id="view-grid-btn" title="Grid view" aria-pressed="true">
+            <span class="icon"><i class="fas fa-th"></i></span>
+            <span>Grid view</span>
+        </button>
+    </p>
+    <p class="control">
+        <button class="button" id="view-table-btn" title="Table view" aria-pressed="false">
+            <span class="icon"><i class="fas fa-table"></i></span>
+            <span>Table view</span>
+        </button>
+    </p>
+</div>
+
+<!-- No Results Message (hidden by default) -->
+<div class="contributors-no-results notification has-text-centered py-6" style="display: none;">
+    <span class="icon is-large has-text-grey-lighter mb-4">
+        <i class="fas fa-search-minus fa-3x"></i>
+    </span>
+    <h3 class="title is-4 has-text-grey">No contributors found matching your criteria</h3>
+    <p class="has-text-grey">Try adjusting your search terms or selected filters to see more results</p>
+</div>
+
+<!-- Contributors Grid -->
+<div class="columns is-multiline" id="contributors-grid-view">
+    <!-- Project founder pinned at the top -->
+    {{ range $founderRanked }}
+        {{ partial "contributor-card.html" . }}
+    {{ end }}
+    <!-- Divider between founder and regular contributors -->
+    {{ if and (gt (len $founderRanked) 0) (gt (len $regularRanked) 0) }}
+    <div class="column is-full" id="contributors-grid-divider">
+        <div class="has-text-centered my-4">
+            <hr/>
+        </div>
+    </div>
+    {{ end }}
+    <!-- Regular contributors sorted by commit count -->
+    {{ range $regularRanked }}
+        {{ partial "contributor-card.html" . }}
+    {{ end }}
+</div>
+
+<!-- Contributors Table View (hidden by default) -->
+<div id="contributors-table-view" style="display:none;">
+    <div class="table-container">
+        <table class="table is-fullwidth is-hoverable is-striped">
+            <thead>
+                <tr>
+                    <th class="sortable" data-col="rank">
+                        # <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="has-text-centered"><i class="fas fa-user has-text-grey-light"></i></th>
+                    <th class="sortable" data-col="login">
+                        Username <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="sortable" data-col="total">
+                        <i class="fab fa-git-alt mr-1"></i>Commits <span class="sort-icon"><i class="fas fa-sort-down"></i></span>
+                    </th>
+                    <th class="sortable" data-col="qgis_core">
+                        <i class="fas fa-code mr-1"></i>QGIS Core <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="sortable" data-col="documentation">
+                        <i class="fas fa-book mr-1"></i>Docs<span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                    <th class="sortable" data-col="web_sites">
+                        <i class="fas fa-globe mr-1"></i>Web Sites <span class="sort-icon"><i class="fas fa-sort"></i></span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="contributors-table-body">
+                <!-- Founder pinned row -->
+                {{ range $founderRanked }}
+                    {{ partial "contributor-table-row.html" . }}
+                {{ end }}
+                <!-- Regular contributor rows -->
+                {{ range $regularRanked }}
+                    {{ partial "contributor-table-row.html" . }}
+                {{ end }}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Load contributors filter functionality -->
+{{ $js := resources.Get "js/contributors-filter.js" | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous"></script>

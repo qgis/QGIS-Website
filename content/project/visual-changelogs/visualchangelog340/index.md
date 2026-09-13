@@ -41,7 +41,7 @@ QGIS is free software and you are under no obligation to pay anything to use it 
 
 When a vector layer and the project have vertical datums present, and they differ, then include the transformed Z value for the identified features in the project's datum too.
 
-![](images/entries/2249cc72d87c0b0542213451037df8bbefbad6ba)
+![](images/entries/2249cc72d87c0b0542213451037df8bbefbad6ba.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -58,7 +58,7 @@ In addition, multiple updates to the handling of related features in the identif
 -   control toggle to enable or disable relation references
 -   a contextual menu item for "Identify Feature" to load a nested related feature into the root of the identify tool context
 
-![](images/entries/c9580e44b7f4f2ec945843c468b661ded749b8a5)
+![](images/entries/c9580e44b7f4f2ec945843c468b661ded749b8a5.webp)
 
 This feature was developed by [Even Rouault](https://github.com/rouault)
 
@@ -76,7 +76,7 @@ This feature was developed by [Ben Wirf](https://github.com/benwirf)
 
 A duplicate button has been added to the actions dialogue on layer properties.
 
-![](images/entries/6f0479c9233e8193625e98494da97029a6d0d30b.png)
+![](images/entries/6f0479c9233e8193625e98494da97029a6d0d30b.webp)
 
 This feature was developed by [Speedrace4](https://github.com/Speedrace4)
 
@@ -97,7 +97,7 @@ QGIS now supports categories for copying properties and styles between raster la
 
 In addition, these styles are supported in the import and export functionalities of the QML/SLD layer definition and style files, making raster layer management more consistent with the user experience for vector layers.
 
-![](images/entries/0a6aeadd40690988d3560966b673045e568f86a7)
+![](images/entries/0a6aeadd40690988d3560966b673045e568f86a7.webp)
 
 This feature was funded by the [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
@@ -122,7 +122,7 @@ Notes:
 
 -   When using the distance-based placement or labels, the distances are calculated using 2D only, Cartesian calculations based on the original layer CRS. This could potentially be extended in future to expose options for 3D Cartesian distances, or ellipsoidal distance calculations.
 
-![](images/entries/ac3d8027aaa1dce55a600831bbe0a51d890f9206)
+![](images/entries/ac3d8027aaa1dce55a600831bbe0a51d890f9206.webp)
 
 This feature was funded by the [Swiss QGIS User Group](https://www.qgis.ch/de/)
 
@@ -138,7 +138,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 Color previews of CMYK colors will display the color value using a list of float values
 
-![](images/entries/bf96aab2e61c942bc43fbdab4f00d3f90ad5818d)
+![](images/entries/bf96aab2e61c942bc43fbdab4f00d3f90ad5818d.webp)
 
 This feature was funded by Métropôle de Bordeaux
 
@@ -148,7 +148,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 The QGIS Color Widget now supports the selection of the color component as a float value with 2 decimals
 
-![](images/entries/ac91b68a5cbaf6376aa12091077f7b5133d2049b)
+![](images/entries/ac91b68a5cbaf6376aa12091077f7b5133d2049b.webp)
 
 This feature was funded by Bordeaux Métropôle
 
@@ -170,7 +170,7 @@ Buffers are defined on a symbol level (not per symbol-layer), and are calculated
 
 This change is designed to plug on of the (very few!) remaining large symbology gaps between ArcMap and QGIS, where ArcMap has had support for solid color marker "halos" for decades.
 
-![](images/entries/391b7def075a5dcdc026d0e625bb3f6483bc580a.png)
+![](images/entries/391b7def075a5dcdc026d0e625bb3f6483bc580a.webp)
 
 This feature was funded by [North Road, thanks to SLYR](https://north-road.com)
 
@@ -182,7 +182,7 @@ Allows pixels with color components just outside of the specified RGB values to 
 
 Useful for photographs or compressed rasters where a range of color values must be made transparent.
 
-![](images/entries/73a7b62e6c22c27056a35c9d827f8ac3955f7b57.png)
+![](images/entries/73a7b62e6c22c27056a35c9d827f8ac3955f7b57.webp)
 
 This feature was funded by [Middle Third Geological](https://www.linkedin.com/in/deryk-forster-44a415104/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=au)
 
@@ -211,7 +211,7 @@ Allows creating of callout lines (or bubble callouts) which link the text to a m
 
 Callout styles can be modified through the layer styling panel.
 
-![](images/entries/87e3c18cbb4eb5bdb2ee4a2a690ffbb1f6ae2bde.png)
+![](images/entries/87e3c18cbb4eb5bdb2ee4a2a690ffbb1f6ae2bde.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -235,7 +235,7 @@ Can render SVG or raster images as items in an annotation layer. Options are pre
 -   Linked or embedded pictures
 -   Rendering with scale dependent sizes or fixed sizes
 
-![](images/entries/14d168314617843058d4cfe38b8c15abb96114b4)
+![](images/entries/14d168314617843058d4cfe38b8c15abb96114b4.webp)
 
 This feature was funded by [North Road](https://north-road.com)
 
@@ -291,7 +291,7 @@ Note that the first 3 rules require a build based on GEOS &gt;= 3.10, and they a
 
 Also implemented is a registry for storing available rule classes, and serialization of rules and configuration in QGIS projects.
 
-![](images/entries/f65ac82ccaa14f9017904db8badb25afc6e87bc5.png)
+![](images/entries/f65ac82ccaa14f9017904db8badb25afc6e87bc5.webp)
 
 This feature was funded by Rubicon Concierge Real Estate
 
@@ -321,7 +321,7 @@ Stacked diagrams provide a method of structuring multiple adjacent (horizontally
 
 The implementation introduces multiple new settings for stacked diagram and sub-diagram configuration, and has migrated the diagram settings modal dialog to the Styling dock widget.
 
-![](images/entries/798c8f7ffe9acd928e7df5820212b39f22ef42fd.png)
+![](images/entries/798c8f7ffe9acd928e7df5820212b39f22ef42fd.webp)
 
 This feature was funded by [Landesamt für Vermessung und Geoinformation (LVG) Vorarlberg in collaboration with the QGIS user group Switzerland.](https://vorarlberg.at/-/landesamt-fuer-vermessung-und-geoinformation-l-1)
 
@@ -333,7 +333,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 New GUI elements are provided for loading Quantized Mesh data sources and layers in the QGIS Browser panel as well as the data source manager.
 
-![](images/entries/9873b9077c396a54266bed908c8b68a46e5ecd5c.png)
+![](images/entries/9873b9077c396a54266bed908c8b68a46e5ecd5c.webp)
 
 This feature was funded by Swiss QGIS user group
 
@@ -345,7 +345,7 @@ This feature was developed by [David Koňařík](https://github.com/dvdkon)
 
 QGIS capabilities have been extended for loading vector tiles that include multiple sources/ URLs within a single style definition.
 
-![](images/entries/c52b6dfb4751aed9c39b719d8d4c44c3eaec3a32)
+![](images/entries/c52b6dfb4751aed9c39b719d8d4c44c3eaec3a32.webp)
 
 This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 
@@ -365,7 +365,7 @@ A new option for setting `gl_clipistance` on 3D views will appropriately filter 
 
 This setting is controlled with the `enableClipping()` and `disableClipping()` methods on `Qgs3DMapScene` objects.
 
-![](images/entries/4ec6126f373e56755809edbabc74b0cd5a5ee160.png)
+![](images/entries/4ec6126f373e56755809edbabc74b0cd5a5ee160.webp)
 
 This feature was developed by [Jean Felder](https://github.com/ptitjano)
 
@@ -377,7 +377,7 @@ Allows adjacent cells to be merged in layout manual table items.
 
 From the table editor, select multiple cells in a rectangular shape and then from the Table menu, click "Merge Selected Cells". Merged cells can be un-merged via the "Split Selected Cells" menu action.
 
-![](images/entries/12309cc445c6d00d56ef0f724be0828bb3e094d0.png)
+![](images/entries/12309cc445c6d00d56ef0f724be0828bb3e094d0.webp)
 
 This feature was funded by FLYGHT7
 
@@ -397,7 +397,7 @@ This new setting, located in the layout item "Rendering" section, allows users t
 
 This allows content to be selectively displayed as a group by viewers of the geospatial PDF. Eg, it can allow extra layout content such as descriptive labels or legends to only be shown when layers from the group are visible, making geospatial PDF export much more flexible.
 
-![](images/entries/a0f64c99c2a62dee9681d01dec7a39d991377a85)
+![](images/entries/a0f64c99c2a62dee9681d01dec7a39d991377a85.webp)
 
 This feature was funded by Rubicon Concierge Real Estate Services
 
@@ -407,7 +407,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 A menu option to open Page Properties has been added to the main menu in the Print Layout interface.
 
-![](images/entries/44407afcb40294680e8aad845bb2cf0060cfe034)
+![](images/entries/44407afcb40294680e8aad845bb2cf0060cfe034.webp)
 
 This feature was developed by [Vedran Stojnović](https://github.com/phidrho)
 
@@ -422,7 +422,7 @@ A new option for selecting a user-defined method of calculating the map scale in
 
 By default, new scale bars will utilize the average method (instead of the previously used "along bottom" method), which will better handle scenarios where the scale at the top or bottom of the map cannot be calculated (e.g. when the top or bottom of the map falls outside valid areas for the map CRS).
 
-![](images/entries/ff809eacb3e8701d38d43292ae3d5694cb16076d.png)
+![](images/entries/ff809eacb3e8701d38d43292ae3d5694cb16076d.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -447,7 +447,7 @@ Two new functions are provided to the expression engine to work with M values al
 
 These functions are useful when working with temporal data (such as a linestring representing a GPS track, where the M value represents the epoch value), and can be used effectively alongside the temporal controller to create beautiful animations that were previously harder to unlock.
 
-![](images/entries/43d4feab4f7d4fb0fe167c7120b19a7cae13fc47.png)
+![](images/entries/43d4feab4f7d4fb0fe167c7120b19a7cae13fc47.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -476,7 +476,7 @@ Project functions are unloaded when a project is closed, and user functions are 
 
 For security reasons, the handling of whether to load or not load these functions on project startup is configurable in the user settings with the same rationale used for managing project macros.
 
-![](images/entries/fb459ca9362a65771713ed9b571b12a265e0b45d)
+![](images/entries/fb459ca9362a65771713ed9b571b12a265e0b45d.webp)
 
 This feature was funded by [the QGIS user group Switzerland](https://qgis.ch)
 
@@ -486,7 +486,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 
 The query builder used for entering filter expressions on vector layers now shows the supported expression dialect.
 
-![](images/entries/1bd0096fbd0fac4d612b2ca98bc7ef86cedac36e)
+![](images/entries/1bd0096fbd0fac4d612b2ca98bc7ef86cedac36e.webp)
 
 This feature was funded by WhereGroup GmbH.
 
@@ -508,7 +508,7 @@ A new advanced digitizing tool allows users to pick/ digitize a point at the int
 
 To support this functionality, the QGIS API has been extended with a new abstract class for supporting similar "COGO" development in the future, as well as providing Python bindings for developing advanced digitization utilities and plugins.
 
-![](images/entries/990ee4bd78f0d0732ca02562ce953bed4c9443a8.png)
+![](images/entries/990ee4bd78f0d0732ca02562ce953bed4c9443a8.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -520,7 +520,7 @@ When recording construction guides, QGIS will render all construction steps take
 
 The construction guides are stored in a vector layer, which is exposed through the advanced digitizing dock widget, allowing for further customization of the guides via other application processes, such as Python plugins.
 
-![](images/entries/d77759a3bc23a050b3e8e9cc5a5d3bb5cc91dff3)
+![](images/entries/d77759a3bc23a050b3e8e9cc5a5d3bb5cc91dff3.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -532,7 +532,7 @@ VSI credential options are now exposed for user control when adding OGR vector/G
 
 Requires GDAL 3.5+
 
-![](images/entries/e824e2a5aef50de87656d6beced8ea0ae0f60e41)
+![](images/entries/e824e2a5aef50de87656d6beced8ea0ae0f60e41.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -542,7 +542,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 When creating a new vector layer, including scratch, shp, gpkg, and spatialite, users will now be able to reorder the field definitions.
 
-![](images/entries/3623fff590c84705c9e75fa22c3e0cc9c537c9e0)
+![](images/entries/3623fff590c84705c9e75fa22c3e0cc9c537c9e0.webp)
 
 This feature was funded by QGIS User Group Denmark
 
@@ -566,7 +566,7 @@ A simple native algorithm has been added to allow for the opening of local files
 
 Useful in combination with the Download File Algorithm to open the resulting file, or to display results after models triggering external systems.
 
-![](images/entries/2ab9a02e47e9d3dc7a0c4e1dc5f65d195244869b)
+![](images/entries/2ab9a02e47e9d3dc7a0c4e1dc5f65d195244869b.webp)
 
 This feature was funded by the [Canton of Solothurn](https://so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
@@ -578,7 +578,7 @@ Adds dedicated parameter types for Area and Volume values.
 
 Modeled closely off the existing Distance parameter type.
 
-![](images/entries/8324f615ac89f6d617619f34f6cc37ee2ae55a2a.png)
+![](images/entries/8324f615ac89f6d617619f34f6cc37ee2ae55a2a.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -586,7 +586,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
 The GDAL Processing algorithm for vector information has been modified to support additional command-line parameters, and a new **Vector information (JSON)** algorithm is provided that will use the [`-json`](https://gdal.org/programs/ogrinfo.html#cmdoption-ogrinfo-json) option of ogrinfo to create a JSON file output containing the layer or dataset information.
 
-![](images/entries/b890a9ff0af7e1ef313c620c48150f871f1177f0.png)
+![](images/entries/b890a9ff0af7e1ef313c620c48150f871f1177f0.webp)
 
 This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudiceandrea)
 
@@ -594,7 +594,7 @@ This feature was developed by [Andrea Giudiceandrea](https://github.com/agiudice
 
 New 'Favorites' functionality has been added for Processing alogrithms, allowing users to statically pin their chosen algorithms to a dedicated section at the top of the toolbox for ease of access.
 
-![](images/entries/2108d8a4104ef9d50f44a72171274469bde1e429.png)
+![](images/entries/2108d8a4104ef9d50f44a72171274469bde1e429.webp)
 
 This feature was developed by [Alexander Bruy](https://github.com/alexbruy)
 
@@ -635,7 +635,7 @@ This allows the cache to dynamically resize based on available storage space on 
 
 Users can disable the smart cache size logic in favor of a static cache size using the updated Options dialog.
 
-![](images/entries/80e1931b0152bfe035105520396a775b6f9bfbaf)
+![](images/entries/80e1931b0152bfe035105520396a775b6f9bfbaf.webp)
 
 This feature was developed by [Mathieu Pellerin](https://github.com/nirvn)
 
@@ -650,7 +650,7 @@ Application behavior for the definition of vertical reference on a layer will fo
 
 An explanatory note is included which details the facets of the application where the vertical CRS settings are respected, along with a warning for users to note that plugins and other tools may not respect the layers' vertical CRS configuration.
 
-![](images/entries/54fd7f19dfda59d13b32525efe28d75af4f72adc.png)
+![](images/entries/54fd7f19dfda59d13b32525efe28d75af4f72adc.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 
@@ -662,7 +662,7 @@ When loading an ICC profile, QGIS will enforce consistency between the color mod
 
 **The ICC profile widget part is not visible unless QGIS is built with Qt 6.8.0 or greater**
 
-![](images/entries/c763da512666981c58d3fe8b5dbfa5982ff53d4b)
+![](images/entries/c763da512666981c58d3fe8b5dbfa5982ff53d4b.webp)
 
 This feature was funded by Bordeaux Métrôpole\*\*
 
@@ -674,7 +674,7 @@ This feature was developed by [Julien Cabieces](https://github.com/troopa81)
 
 A "Change Profile Name" menu item in the Options sub-menu of the Elevation Profile widget has been added that allows the user to change the name of the profile window.
 
-![](images/entries/81d350164ce88101c33692b9665063970ce72791)
+![](images/entries/81d350164ce88101c33692b9665063970ce72791.webp)
 
 This feature was developed by [Simon](https://github.com/Simon-Lopez)
 
@@ -700,7 +700,7 @@ This feature was developed by [Denis Rouzaud](https://github.com/3nids)
 
 QGIS now includes a "Duplicate connection" action in the context menu of Browser connection items. This allows users to quickly make a copy of a connection to the same data source when only a few details differ (for example, a different PostGIS database on the same server).
 
-![](images/entries/44b28c871c4d86b6f2c52b326fea88b7e8c1c24e)
+![](images/entries/44b28c871c4d86b6f2c52b326fea88b7e8c1c24e.webp)
 
 This feature was funded by [NaturalGIS](https://www.naturalgis.pt/)
 
@@ -712,7 +712,7 @@ In previous versions of QGIS, creating a new SpatiaLite database with this actio
 
 New actions for "Create Database" and "Create Database and Layer" have been added for more explicit and consistent database creation options.
 
-![](images/entries/0473ab08a8dd2cae040855020d570535088c4268)
+![](images/entries/0473ab08a8dd2cae040855020d570535088c4268.webp)
 
 This feature was funded by [NaturalGIS](https://www.naturalgis.pt)
 
@@ -724,7 +724,7 @@ QGIS now natively supports the storing and browsing cloud storage connections wi
 
 Connections can also be created, modified, removed, and exported/imported to/from XML files.
 
-![](images/entries/e6758adb24f9db8651516fc25ae8eac0670988bd.png)
+![](images/entries/e6758adb24f9db8651516fc25ae8eac0670988bd.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 

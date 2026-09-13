@@ -25,7 +25,6 @@ export class Sidebar {
     public readonly booksLink: Locator;
     public readonly supportLink: Locator;
     public readonly membersLink: Locator;
-    public readonly pastMembersLink: Locator;
     public readonly windowsLink: Locator;
     public readonly linuxLink: Locator;
     public readonly macOSLink: Locator;
@@ -97,10 +96,11 @@ export class Sidebar {
             name: "Windows",
         });
 
-        this.linuxLink = this.sidebar.getByRole("link", {
-            name: "Linux",
-            exact: true,
-        });
+        // The sidebar contains two links with text "Debian / Ubuntu":
+        // - the visible parent section link pointing to #linux
+        // - a hidden submenu item inside a collapsed <ul> pointing to #debian--ubuntu
+        // To avoid matching the hidden one, target the parent section by its href anchor.
+        this.linuxLink = this.sidebar.locator('a[href$="#linux"]').first();
 
         this.macOSLink = this.sidebar.getByRole("link", {
             name: "Mac OS X / macOS",
@@ -153,11 +153,6 @@ export class Sidebar {
 
         this.membersLink = this.sidebar.getByRole("link", {
             name: "Members",
-            exact: true,
-        });
-
-        this.pastMembersLink = this.sidebar.getByRole("link", {
-            name: "Past Members",
             exact: true,
         });
     }

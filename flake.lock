@@ -1,12 +1,28 @@
 {
   "nodes": {
-    "nixpkgs": {
+    "nixpkgs-26-05": {
       "locked": {
-        "lastModified": 1741173522,
-        "narHash": "sha256-k7VSqvv0r1r53nUI/IfPHCppkUAddeXn843YlAC5DR0=",
+        "lastModified": 1780453794,
+        "narHash": "sha256-bXMRa9VTsHSPXL4Cw8R6JJLQeY3Y/IP4+YJCYVmQ7FY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d69ab0d71b22fa1ce3dbeff666e6deb4917db049",
+        "rev": "6b316287bae2ee04c9b93c8c858d930fd07d7338",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-26.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1784356753,
+        "narHash": "sha256-12KrbMiWLcf8m7pCvAtZh1ZrgF85ZXDXvfR/fWTKy84=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
         "type": "github"
       },
       "original": {
@@ -16,9 +32,50 @@
         "type": "github"
       }
     },
+    "nixpkgs-version": {
+      "inputs": {
+        "nixpkgs-26-05": "nixpkgs-26-05",
+        "nixpkgs-unstable": "nixpkgs-unstable"
+      },
+      "locked": {
+        "lastModified": 1784425016,
+        "narHash": "sha256-hoKYYMUGyvhC0FjNK6rw6cvkJUAaV7b1XQNYH503GdI=",
+        "owner": "QGIS",
+        "repo": "qgis-nixpkgs-version",
+        "rev": "507ef34d181c978604f59a2d2b25abf6d94a20dc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "QGIS",
+        "repo": "qgis-nixpkgs-version",
+        "type": "github"
+      }
+    },
+    "qgis-website-theme": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786349354,
+        "narHash": "sha256-9TkSUm9T5FwhEstWT2gKy8jdABZyJDhjjmeZNDpqIA4=",
+        "owner": "qgis",
+        "repo": "QGIS-Hugo-Website-Theme",
+        "rev": "41c7cc933533c5c7d8084fb9b17da56f1279a2c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "qgis",
+        "repo": "QGIS-Hugo-Website-Theme",
+        "rev": "41c7cc933533c5c7d8084fb9b17da56f1279a2c3",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": [
+          "nixpkgs-version",
+          "nixpkgs-26-05"
+        ],
+        "nixpkgs-version": "nixpkgs-version",
+        "qgis-website-theme": "qgis-website-theme"
       }
     }
   },

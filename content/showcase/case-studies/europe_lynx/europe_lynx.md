@@ -62,7 +62,7 @@ sets*
     suitability model (Figure 3) by using the #Raster calculator
 
 ```
-<!-- -->
+
 ```
     Cover Suitability Model * Population Density Index * Elevation Suitability Index
 
@@ -78,7 +78,7 @@ conceptually related to habitat of deer as the main prey*
     values
 
 ```
-<!-- -->
+
 ```
     .
                           Slopelayer
@@ -89,7 +89,7 @@ conceptually related to habitat of deer as the main prey*
     calculator function: (Figure 4)
 
 ```
-<!-- -->
+
 ```
     (Habitat Suitability Model * Hunter Accessibility Model)
     --------------------------------------------------------

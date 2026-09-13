@@ -166,7 +166,6 @@ export class CommunityPage {
                 "Former PSC Members",
                 "Voting members",
                 "Honorable Voting Members",
-                "Country Voting Members",
                 "Community Voting Members",
                 "Release Management",
                 "Packaging Team",
@@ -199,7 +198,7 @@ export class CommunityPage {
             page: "Brand Guidelines",
             texts: [
                 "QGIS Trademark and brand guidelines",
-                "Country User Groups",
+                "User Groups",
                 "Examples of use that do not require permission",
                 "Examples of use requiring permission",
                 "Prohibited Trademark uses",
@@ -257,11 +256,11 @@ export class CommunityPage {
         this.sustainDonateLink = this.page.getByRole("link", {
             name: "Sustain & Donate",
         });
-        this.submitButton = this.page.locator("#payrexx-submit-button");
+        this.submitButton = this.page.locator("#stripe-submit-button");
         this.otherMethodsInfoLink = this.page.getByRole("link", {
             name: "Other methods, more info",
         });
-        this.currencyInput = this.page.locator("#payrexx-currency");
+        this.currencyInput = this.page.locator("#stripe-currency");
         this.workflowCertificationImg = this.page.getByRole("img", {
             name: "Workflow Certification",
         });

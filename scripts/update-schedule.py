@@ -10,13 +10,52 @@ will update data/conf.json and content/schedule.ics
 '''
 
 from urllib.request import urlopen
+from urllib.error import HTTPError
 import csv
 import json
 import os
 import re
 import codecs
+import sys
 from datetime import datetime, timedelta, timezone
 from icalendar import Calendar, Event
+from packaging.version import Version
+
+_DL_BASE = "https://download.qgis.org"
+_TORRENT_BASE = "https://dl1.qgis.org"
+
+
+def torrent_url(download_url):
+    """Return the .torrent URL for a given download URL."""
+    path = download_url.removeprefix(_DL_BASE)
+    return f"{_TORRENT_BASE}{path}.torrent"
+
+
+def meta4_url(download_url):
+    """Return the .meta4 (Metalink 4) URL for a given download URL."""
+    path = download_url.removeprefix(_DL_BASE)
+    return f"{_TORRENT_BASE}{path}.meta4"
+
+
+def fetch_magnet(download_url):
+    """Fetch the magnet URI from the server-generated .magnet sidecar file.
+
+    Returns the magnet URI string, or None if the file does not exist yet.
+    """
+    path = download_url.removeprefix(_DL_BASE)
+    magnet_url = f"{_TORRENT_BASE}{path}.magnet"
+    try:
+        with urlopen(magnet_url, timeout=10) as resp:  # nosec: W291
+            return resp.read().decode("utf-8").strip()
+    except HTTPError:
+        sys.stderr.write(f"Could not fetch magnet link for {download_url} [{magnet_url}]\n")
+        sys.exit(1)
+
+
+def macos_version(version):
+    """Convert a dotted version like "3.44.9" to the macOS dmg form "3_44_9"."""
+    return version.replace(".", "_")
+
 
 url = "https://docs.google.com/spreadsheets/u/1/d/1MOIjwon5eDI04DG6rX_HwucZkW1fxFJ0b_yB0xYETOE/export?format=csv&id=1MOIjwon5eDI04DG6rX_HwucZkW1fxFJ0b_yB0xYETOE&gid=1982100417#"
 
@@ -25,7 +64,7 @@ cal.add('prodid', '-//Release Schedule//qgis.org//')
 cal.add('version', '2.0')
 cal['summary'] = 'QGIS Release Schedule'
 
-resource = urlopen(url)
+resource = urlopen(url)  # nosec: W291
 reader = csv.reader(codecs.iterdecode(resource, 'utf-8'), delimiter=',', quotechar='"')
 first = True
 f_date = None
@@ -80,7 +119,7 @@ for row in reader:
         first = False
         continue
 
-    event, _, _, _, _, _, _, _, _, date, weekno, weeks, lr, ltr, dev, ff, _ = row
+    event, date, weekno, weeks, lr, ltr, dev, ff = [row[i] for i in [0, 9, 10, 11, 12, 13, 14, 15]]
 
     dt = datetime.strptime(date, '%Y-%m-%d').replace(tzinfo=timezone.utc) + timedelta(hours=12)
 
@@ -188,7 +227,7 @@ o.close()
 
 url = "https://docs.google.com/spreadsheets/u/1/d/1MOIjwon5eDI04DG6rX_HwucZkW1fxFJ0b_yB0xYETOE/export?format=csv&id=1MOIjwon5eDI04DG6rX_HwucZkW1fxFJ0b_yB0xYETOE&gid=1060997136"
 
-resource = urlopen(url)
+resource = urlopen(url)  # nosec: W291
 reader = csv.reader(codecs.iterdecode(resource, 'utf-8'), delimiter=',', quotechar='"')
 
 ltr_name = None
@@ -214,12 +253,15 @@ for row in reader:
 for v, n in {ltr_version: ltr_name, lr_version: lr_name}.items():
     print(f"{v}:{n}")
     url = "https://raw.githubusercontent.com/qgis/QGIS/release-{0}/CMakeLists.txt".format("_".join(v.split('.')[:2]))
-    cm = urlopen(url).read().decode('utf-8')
+    cm = urlopen(url).read().decode('utf-8')  # nosec: B310
     rn = re.search("^set\\(RELEASE_NAME \"(.*)\"\\)$", cm, re.MULTILINE).group(1)
-    assert n==rn, f"Expected {n}, found {rn}"
+    assert n == rn, f"Expected {n}, found {rn}"  # nosec: W291
 
-assert lr_version.split(".") > ltr_version.split("."), f"LR {lr_version} not higher than {ltr_version}"
-assert devversion.split(".") > lr_version.split("."), f"DEV {devversion} not higher than {lr_version}"
+assert Version(lr_version) > Version(ltr_version), f"LR {lr_version} not higher than {ltr_version}"  # nosec: W291
+assert Version(devversion) > Version(lr_version), f"DEV {devversion} not higher than {lr_version}"  # nosec: W291
+assert f_date is not None, "next freeze date not found"  # nosec: W291
+assert nr_date is not None, "next release date not found"  # nosec: W291
+assert pr_date is not None, "next point release date not found"  # nosec: W291
 
 shortver = "".join(lr_version.split(".")[:2])
 for f in [
@@ -227,7 +269,7 @@ for f in [
     # f"themes/qgis-theme/static/images/qgisorg_banner{shortver}.png",
     # f"content/project/visual-changelogs/visualchangelog{shortver}/index.md"
 ]:
-    assert os.path.exists(f), f"{f} not found"
+    assert os.path.exists(f), f"{f} not found"  # nosec: W291
 
 ltrversion = ".".join(ltr_version.split(".")[:2])
 
@@ -248,8 +290,8 @@ with open("data/conf.json", "w") as f:
         "shortver": shortver,
         "devversion": devversion,
         "nextversion": nextversion,
-        "nextfreezedate": f_date.strftime('%Y-%m-%d %H:%M:%S UTC') if f_date is not None else None,
-        "nextreleasedate": nr_date.strftime('%Y-%m-%d %H:%M:%S UTC') if nr_date is not None else None,
+        "nextfreezedate": f_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
+        "nextreleasedate": nr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
         "nextpointreleasedate": pr_date.strftime('%Y-%m-%d %H:%M:%S UTC'),
         "infeaturefreeze": f_date < now,
         "next_ltr_version": next_ltr_version,
@@ -260,15 +302,39 @@ with open("data/conf.json", "w") as f:
         "userguidecite": f"https://docs.qgis.org/{ltrversion}/en/docs/user_manual/index.html",
         "servercite": f"https://docs.qgis.org/{ltrversion}/en/docs/server_manual/index.html",
         "apicite": f"/pyqgis/{ltrversion}/index.html",
-        "lr_msi": f"/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi",
-        "lr_sha": f"/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
-        "ltr_msi": f"/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
-        "ltr_sha": f"/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
-        "lr_qt6_msi": f"/downloads/QGISQT6-OSGeo4W-{lr_version}-{lr_binary}.msi",
-        "lr_qt6_sha": f"/downloads/QGISQT6-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
-        "ltr_qt6_msi": f"/downloads/QGISQT6-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
-        "ltr_qt6_sha": f"/downloads/QGISQT6-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
-        "weekly_msi": "https://download.osgeo.org/qgis/windows/weekly/?C=M&O=D",
+        "lr_msi": f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi",
+        "lr_sha": f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
+        "lr_grids_msi": f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.msi",
+        "lr_grids_sha": f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.sha256sum",
+        "ltr_msi": f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
+        "ltr_sha": f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
+        "ltr_grids_msi": f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi",
+        "ltr_grids_sha": f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.sha256sum",
+        "ltr_dmg": f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg",
+        "ltr_dmg_sha": f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.sha256sum",
+        "lr_dmg": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg",
+        "lr_dmg_sha": f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.sha256sum",
+        "weekly_msi": "/downloads/windows/weekly/",
+
+        # torrent / magnet links (torrent hosted on dl1.qgis.org, magnet from server-generated sidecar)
+        "lr_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "ltr_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "lr_grids_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_grids_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "lr_grids_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{lr_version}-{lr_binary}.msi"),
+        "ltr_grids_msi_torrent": torrent_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_grids_msi_magnet": fetch_magnet(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "ltr_grids_msi_meta4": meta4_url(f"https://download.qgis.org/downloads/QGIS-Grids-OSGeo4W-{ltr_version}-{ltr_binary}.msi"),
+        "lr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg"),
+        "lr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg"),
+        "lr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/pr/qgis_pr_final-{macos_version(lr_version)}.dmg"),
+        "ltr_dmg_torrent": torrent_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg"),
+        "ltr_dmg_magnet": fetch_magnet(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg"),
+        "ltr_dmg_meta4": meta4_url(f"https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-{macos_version(ltr_version)}.dmg"),
     }, f, indent=4)
 
 o = open("content/schedule.ics", "wb")

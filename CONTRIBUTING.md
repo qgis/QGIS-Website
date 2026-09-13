@@ -12,7 +12,18 @@ ensure a smooth contribution process.
 
 This web site is a static site built using [Hugo](https://gohugo.io/).
 
-![Hugo Logo](./img/hugo-logo.png) and using the [hugo bulma blocks theme](https://github.com/kartoza/hugo-bulma-blocks-theme).
+![Hugo Logo](./img/hugo-logo.png) and using the [hugo bulma blocks theme](https://github.com/qgis/QGIS-Hugo-Website-Theme).
+
+## 🌐 i18n Shortcode and Markdown Rules (Read Before Editing Content)
+
+When editing files in `content/`, please follow these formatting standards to keep translation extraction stable:
+
+- Use shortcode params with spaces around `=` (for example: `title = "..."`, not `title="..."`).
+- Keep shortcode closing `>}}` on the same line as the last shortcode argument.
+- Keep shortcode lines isolated in markdown (avoid combining multiple shortcodes in one paragraph).
+- Do not use inline HTML in markdown content files. Avoid tags like `<span>`, `<br/>`, `<div>`, etc.
+
+See [I18N.md](./I18N.md) for the full i18n syntax and translation workflow.
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -20,8 +31,10 @@ This web site is a static site built using [Hugo](https://gohugo.io/).
 ## 🛒 Getting the Code
 
 ```
-git clone https://github.com/qgis/QGIS-Website.git
+git clone --recurse-submodules https://github.com/qgis/QGIS-Website.git
 cd QGIS-Website
+# To update the submodule
+git submodule update --init --recursive
 ```
 
 
@@ -59,8 +72,8 @@ Example, assuming that you use a dedicated directory for your local binaries :
 
 ```sh
 mkdir -p ~/apps/hugo_139/
-wget https://github.com/gohugoio/hugo/releases/download/v0.139.0/hugo_extended_0.139.3_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.139.3_linux-amd64.deb 
-dpkg -x hugo_extended_0.139.3_linux-amd64.deb
+wget https://github.com/gohugoio/hugo/releases/download/v0.139.4/hugo_extended_0.139.4_linux-amd64.deb --output-document ~/apps/hugo_128/hugo_extended_0.139.3_linux-amd64.deb 
+dpkg -x hugo_extended_0.139.3_linux-amd64.deb ~/apps/hugo_139/
 ~/apps/hugo_128/usr/local/bin/hugo server  
 ```
 
@@ -116,7 +129,7 @@ The site will automatically refresh any page you have open if you edit it and sa
 
 ## Run in other IDEs
 
-Use an appropriate Hugo plugin for your IDE, or run Hugo från the command line:
+Use an appropriate Hugo plugin for your IDE, or run Hugo from the command line:
 
 ```shell
 hugo server
@@ -211,7 +224,7 @@ See ```.github/workflows/playwright-e2e.yml```
 | `config/commit.toml` | `get_commit_hash.sh` | Automatically updated on deployment |
 | `content/funders/` | `fetch_feeds.py` | Update the data from https://members.qgis.org |
 | `content/flickr-images/` | `fetch_feeds.py` | Content imported from Flickr feeds |
-| `content/hub-maps/` | `hub_maps_harvest.py` | Update the data from https://maps.qgis.org |
+| `content/hub-maps/` and `content/hub-screenshots/` | `hub_images_harvest.py` | Update the data from https://hub.qgis.org |
 | `content/funding/donate/github-sponsors.md` | GitHub Actions (`update-gh-sponsors.yml`) | ⚠️ **PARTIAL**: Only content outside `<!-- sponsors -->` comments can be edited |
 
 ### ✅ How to Properly Update Automated Content
@@ -232,9 +245,9 @@ See ```.github/workflows/playwright-e2e.yml```
 - **Sources:** External feeds and APIs
 - **Schedule:** Runs nightly via GitHub Actions
 
-#### 🗺️ Maps Showcase
-- **Source:** maps.qgis.org
-- **Script:** `scripts/hub_maps_harvest.py`
+#### 🗺️ Maps/Screenshot Showcase
+- **Source:** hub.qgis.org
+- **Script:** `scripts/hub_images_harvest.py`
 - **Schedule:** Runs twice daily via GitHub Actions
 
 #### 💖 GitHub Sponsors
@@ -313,11 +326,11 @@ The site needs to work in production, where the links of the site are all below 
 
 ## Styles (SASS/CSS)
 
-SASS for most components is stored in themes/hugo-bulma-blocks-theme/assets/sass/bulma/components/
+SASS for most components is stored in themes/qgis-website-theme/assets/sass/bulma/components/
 
-Some common styles are places in themes/hugo-bulma-blocks-theme/assets/sass/style.sass - this file is compiled as hugo template, hence has access to config.toml variables and hugo macroses
+Some common styles are places in themes/qgis-website-theme/assets/sass/style.sass - this file is compiled as hugo template, hence has access to config.toml variables and hugo macroses
 
-Also some bulma theme overrides are placed in themes/hugo-bulma-blocks-theme/assets/css/custom.css
+Also some bulma theme overrides are placed in themes/qgis-website-theme/assets/css/custom.css
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
@@ -343,17 +356,17 @@ We welcome your contributions! All contributors are expected to sign a contribut
 
 ## 💮 Changing the templates
 
-| Page type       | Path                                     |
-| --------------- | ---------------------------------------- |
-| Landing Page    | themes/qgis/layouts/index.html           |
-| Top Level Pages | themes/qgis/layouts/_default/single.html |
+| Page type       | Path                                                   |
+| --------------- | ------------------------------------------------------ |
+| Landing Page    | themes/qgis-website-theme/layouts/index.html           |
+| Top Level Pages | themes/qgis-website-theme/layouts/_default/single.html |
 
 
 ![-----------------------------------------------------](./img/green-gradient.png)
 
 ## 🏠 Editing the landing (home) page
 
-The layout of the landing page is themes/hugo-bulma-blocks-theme/layouts/index.html: the main page has many diverse blocks, that are not used anywhere else, hence its content is mostly in the partials.
+The layout of the landing page is themes/qgis-website-theme/layouts/index.html: the main page has many diverse blocks, that are not used anywhere else, hence its content is mostly in the partials.
 
 The ``content/_index.md`` contains the front matter of the page and the contents for the `feature` shortcodes. Just edit whatever you like there. The blocks shortcodes are described [here](https://github.com/qgis/QGIS-Website/blob/main/docs/shortcodes.md)
 
@@ -381,7 +394,7 @@ markdown as ```/img/foo.png```.
 
 ## 📦 Blocks Shortcodes
 
-The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/hugo-bulma-blocks-theme/layouts/shortcodes/``` folder.
+The site uses a number of shortcodes to create reusable blocks of content. These are defined in the ```themes/qgis-website-theme/layouts/shortcodes/``` folder.
 
 The shortcodes with screenshots are described [here](https://github.com/qgis/QGIS-Website/blob/main/docs/shortcodes.md)
 
@@ -392,7 +405,7 @@ TODO
 
 ### Sidebar
 
-Sidebar is implemented in themes/hugo-bulma-blocks-theme/layouts/partials/sidebar.html
+Sidebar is implemented in themes/qgis-website-theme/layouts/partials/sidebar.html
 
 Items are retrieved from config.toml under `[menu]` section. `weight` parameter defines the order of the item.
 
@@ -530,5 +543,5 @@ Is not ported yet. Donors are stored in data/donors.json. [adddonor.pl](https://
 docker run --rm dcycle/broken-link-checker:3 https://qgis.github.io/QGIS-Website > broken_links.csv
 ```
 
-Crawls the site and reports all 404. Full run takes apout 10 mins
+Crawls the site and reports all 404 errors. Full run takes about 10 mins
 

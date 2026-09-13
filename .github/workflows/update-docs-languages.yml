@@ -1,0 +1,58 @@
+# Workflow to sync the documentation language list with QGIS-Documentation
+name: 🌍 Update Documentation Languages
+
+on:
+  # Run weekly on Monday at 02:00 UTC - upstream changes a few times a year
+  schedule:
+    - cron: '0 2 * * 1'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  update-docs-languages:
+    name: Update Documentation Languages
+    runs-on: ubuntu-latest
+    if: github.repository_owner == 'qgis'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: 'REQUIREMENTS.txt'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Read LANGUAGES from the QGIS-Documentation Makefile
+        run: python scripts/update_docs_languages.py
+
+      - name: Check for changes
+        id: git-check
+        run: |
+          git diff --exit-code data/docs_languages.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.git-check.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/docs_languages.json
+          git commit -m "🤖 Update documentation languages [skip ci]"
+          # Rebase onto anything that landed on main while we were running,
+          # then push. A real rebase failure should fail the job.
+          git pull --rebase --autostash origin main
+          git push
+
+      - name: Report status
+        if: steps.git-check.outputs.changed != 'true'
+        run: |
+          echo "ℹ️ No changes detected in the documentation language list"

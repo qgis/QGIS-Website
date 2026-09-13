@@ -1,7 +1,0 @@
-{{ range first 1 ((where site.RegularPages "Section" "news")) }}
-<div class="box mb-0 news-container">
-    <p class="has-text-right is-1 news-text">
-        Latest News: {{ .Title }}
-    </p>
-</div>
-{{ end }}

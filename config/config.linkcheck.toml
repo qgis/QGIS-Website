@@ -1,0 +1,12 @@
+# Overlay for the link-check CI workflow: build the English site only, so the
+# check runs fast and does not duplicate every finding once per language.
+# Non-English trees are generated from the same sources, so their internal
+# links break exactly when the English ones do.
+baseURL = 'http://localhost:8000/'
+publishDir = "public"
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = false
+disableLanguages = [
+  "fr","nl",
+  "sk","ur","zh-hans","zh-hant","sw","kab","ug","pl","sq","he","ms","da","mr","gu","mn","mi","pt_br","ja","el","lv","it","ca","cs","te","pt_pt","ru","tl","nqo","km_kh","uk","sr","pa","si","ku","mk","ba","my","ar","gl","hr","hu","bg","bn","ne","fil","af","nb","hi","ka","de","az","ko","fi","id","ro","es","et","fa","lt","eu","jv","ta","tr"
+]

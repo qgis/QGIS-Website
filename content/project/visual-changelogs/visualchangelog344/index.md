@@ -624,8 +624,8 @@ class="img-responsive img-rounded" />
 This feature was funded by
 [Hauts-de-France](https://www.hautsdefrance.fr/)
 
-This feature was developed by [Valentin
-Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia
+Buira](https://github.com/CeliaBuira)
 
 ## Processing
 
@@ -682,8 +682,8 @@ individually.
 src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png"
 class="img-responsive img-rounded" />
 
-This feature was developed by [Valentin
-Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia
+Buira](https://github.com/CeliaBuira)
 
 ### Feature: Processing raster rank algorithm
 
@@ -980,7 +980,7 @@ Cabieces](https://github.com/troopa81)
 ### Feature: Add method to convert shapely geometry to QGIS Geometry
 
 In line with
-[QEP#227](This%20is%20part%20of%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227),
+[QEP#227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227),
 a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry
 object from a shapely object has been provided to improve integration
 with the shapely geometry library, while keeping it an optional

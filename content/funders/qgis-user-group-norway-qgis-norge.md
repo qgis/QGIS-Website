@@ -5,11 +5,11 @@
 # To update: Run 'fetch_feeds.py' (automated nightly via GitHub Actions)
 # See CONTRIBUTING.md section: Automated Content and Manual Edit Guidelines
 
-level: "Small"
+level: "Medium"
 title: "QGIS user group Norway (QGIS Norge)"
 logo: "qgis-user-group-norway-qgis-norge.jpg"
-startDate: "2025-03-01"
-endDate: "2026-02-28"
+startDate: "2026-03-01"
+endDate: "2027-02-28"
 link: "https://qgis.no/"
 country: "Norway"
 ---

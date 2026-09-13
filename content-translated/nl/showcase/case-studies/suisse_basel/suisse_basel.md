@@ -1,0 +1,22 @@
+---
+draft: 'true'
+
+---
+# QGIS —— een interessant instrument voor concepten voor het plannen van bossen op lokaal en regionaal niveau
+Bijna 35% van de oppervlakte van Zwitserland wordt bedekt door bossen. Wijzigingen met betrekking tot de bestemming van de bossen en de armlastige financiële situatie van bosbedrijven in Zwitserland leidden ongeveer vijftien jaar geleden tot de ontwikkeling van een nieuw concept voor het plannen van de ontwikkeling van de bossen. Dit concept introduceerde een duidelijk onderscheid tussen de planning op het niveau van de autoriteiten en de planning op het niveau van de eigenaren. Als een nieuw kantoor voor het plannen van bosbouw werkt Guaraci primair in de regio Basel (Zwitserland) op beide genoemde niveaus voor planning. Dit praktijkvoorbeeld behandelt het gebruiken van QGIS op het niveau van de eigenaar van het bos. Op dit niveau is een eenvoudig, dynamisch en compatibel geografisch informatiesysteem vereist voor het vaststellen van een beheersplan voor een bos. Dit plan bedekt bijna 1000 ha bos, zal geldig zijn voor ongeveer 20 jaar en is geïmplementeerd door de lokale bosbeheerder. Het gebied is gelegen in de regio Basel (zie Google maps).
+## Hoe QGIS werd gebruikt
+Binnen het gehele proces van het plannen werd QGIS gebruikt voor de volgende vier taken:
+- Importeren van bestaande gegevens. De gegevens bevatten kaarten met geo-verwezen achtergrondafbeeldingen (\*.tif) naast polygoon, lijn en punt shapefiles. Voor de bosbeheerder is de visualisatie van bestaande thematische gegevens (bijvoorbeeld grond- en drinkwaterbronnen, zones van natuurbescherming) belangrijk voor zijn dagelijkse werk.
+- Digitaliseren. De metingen van het bos, gepland door de bosbeheerder, zijn gedigitaliseerd. De gereedschappen voor digitaliseren in QGIS met de geavanceerde opties voor snappen zijn erg nuttig en gebruiksvriendelijk. De plug-in „delimited text“ maakte het mogelijk aanvullende gegevenstabellen te importeren.
+- Analyses. De gebieden van de verschillende categorieën van metingen zijn berekend. Beginnend vanuit bepaalde lijnobjecten, zoals treinsporen of wegen, werden overeenkomende bossen bepaald met behulp van een buffer.
+- Afdrukken en exporteren. De Printvormgeving ondersteunde het maken van de lay-out voor de kaarten. De kaart werd geëxporteerd als PDF en afbeeldingsbestanden.
+
+![Extract of the forestry measurements map](./images/suisse_basel1.jpg){.align-right}
+## Conclusie
+QGIS is een interessant gereedschap voor kleine planningskantoren, zoals Guaraci, alsook voor de bosbeheerders en eigenaren. Het kan worden gebruikt in a professionele context en het gepresenteerde resultaat van de uitvoer werd door alle betrokken partijen op prijs gesteld. Voor de genoemde taken biedt de huidige versie QGIS 1.4 "Enceladus" alle benodigde gereedschappen voor GIS. De belangrijkste kwaliteiten van QGIS zijn de intuïtieve gebruikersinterface en de compatibiliteit met verschillende bestandsindelingen. Het is een ideaal gereedschap voor projecten die aan de ene kant zijn gebaseerd op bestaande geografische gegevens en aan de andere kant vereisen dat nieuwe gegevens worden verkregen. De gebruikershandleiding is nuttig en eenvoudig te begrijpen. Zowel vanuit technisch als financieel perspectief is QGIS een interessant alternatief voor andere software voor GIS.
+## Perspectief
+De brontaak van een concept voor het plannen van bossen kan worden uitgewerkt met de genoemde basis gereedschappen voor GIS. Guaraci zal QGIS blijven gebruiken voor het plannen van bossen op het niveau van de boseigenaar. Gebaseerd op de ervaringen van het gepresenteerde project, kan QGIS ook worden aanbevolen voor concepten voor bosbouw op het niveau van lokale autoriteiten. Grotere en meer complexe projecten met vereisten voor gedetailleerde analyses zouden kunnen worden afgehandeld door de combinatie van QGIS met de ruimtelijke database server van Postgis. Nieuwe zones voor kappen als ook bosreservaten en beschermingszones kunnen eenvoudig worden gedigitaliseerd. Hopelijk zullen boseigenaren en beheerders in toenemende mate het potentieel van QGIS gebruiken, ook voor hun jaarlijkse planning als ook voor het documenteren van hun activiteiten met betrekking tot het bos.
+## Auteur
+![Raphael Häner](./images/suisse_baselaut.jpg){.align-left height="200px"}
+
+Dit artikel werd bijgedragen in juni 2010 door Raphael Häner. Hij is Dipl. Forst Ing. aan de ETH Zürich, Zwitserland en begon zijn eenmansbedrijf Guaraci in 2009.

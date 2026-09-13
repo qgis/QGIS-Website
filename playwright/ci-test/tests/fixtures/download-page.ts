@@ -12,11 +12,11 @@ export class DownloadPage {
 
     constructor(public readonly page: Page) {
         this.beforeDownloadText = this.page.getByText("Before download starts");
-        this.submitButton = this.page.locator("#payrexx-submit-button");
+        this.submitButton = this.page.locator("#stripe-submit-button");
         this.otherMethodsLink = this.page.getByRole("link", {
             name: "Other methods, more info",
         });
-        this.currencyInput = this.page.locator("#payrexx-currency");
+        this.currencyInput = this.page.locator("#stripe-currency");
         this.skipDownloadButton = this.page.getByRole("button", {
             name: "Skip it and go to download",
         });

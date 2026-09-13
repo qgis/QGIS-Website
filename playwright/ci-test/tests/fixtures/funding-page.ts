@@ -17,7 +17,7 @@ export class FundingPage {
             page: "Donate",
             texts: [
                 "Sustaining Membership",
-                "Payrexx Donation",
+                "Stripe Donation",
                 "Bank transfer",
                 "Paypal Donation",
                 "Your support is vital to keep QGIS improving",
@@ -58,8 +58,8 @@ export class FundingPage {
     ];
     constructor(public readonly page: Page) {
         this.pageBody = this.page.locator("body");
-        this.submitButton = this.page.locator("#payrexx-submit-button");
-        this.currencyInput = this.page.locator("#payrexx-currency");
+        this.submitButton = this.page.locator("#stripe-submit-button");
+        this.currencyInput = this.page.locator("#stripe-currency");
         this.donateButton = this.page.getByRole("button", { name: "Donate" });
         this.becomeSustainingMemberLink = this.page.getByRole("link", {
             name: "Become a Sustaining Member",

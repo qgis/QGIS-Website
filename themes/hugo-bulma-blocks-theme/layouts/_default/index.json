@@ -1,6 +1,0 @@
-{{- $.Scratch.Add "index" slice -}}
-{{- range .Site.RegularPages -}}
-    {{- $plainContent := .Content | replaceRE "(?s)<nav id=\"sidebar\" class=\"sidebar\">.*?</nav>" "" | plainify -}}
-    {{- $.Scratch.Add "index" (dict "title" .Title "tags" .Params.tags "categories" .Params.categories "contents" $plainContent "permalink" .Permalink) -}}
-{{- end -}}
-{{- $.Scratch.Get "index" | jsonify -}}

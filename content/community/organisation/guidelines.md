@@ -28,11 +28,11 @@ QGIS trademarks, service marks, logos and designs, as well as other works of aut
 
 These Guidelines should be followed along with all QGIS’s rules and policies, posted on QGIS.ORG website or otherwise.
 
-## Country User Groups
+## User Groups
 
-QGIS.ORG permits official [QGIS country user groups]({{< ref "/community/groups" >}}), to modify the QGIS logo and use the modified QGIS logo for non-commercial communications and projects. This permission is subject to continued compliance with these Guidelines, QGIS Trademark Guidelines and all other rules and policies. QGIS reserves the right to cancel or change this permission at any time at its sole discretion. If you would like to use a modified version of the QGIS logo, please submit your artwork for approval at trademark@qgis.org. Upon approval, you will receive a license agreement to sign before you may begin using the artwork.
+QGIS.ORG permits official [QGIS user groups]({{< ref "/community/groups" >}}), to modify the QGIS logo and use the modified QGIS logo for non-commercial communications and projects. This permission is subject to continued compliance with these Guidelines, QGIS Trademark Guidelines and all other rules and policies. QGIS reserves the right to cancel or change this permission at any time at its sole discretion. If you would like to use a modified version of the QGIS logo, please submit your artwork for approval at trademark@qgis.org. Upon approval, you will receive a license agreement to sign before you may begin using the artwork.
 
-QGIS.ORG also permits official country user groups, to register a QGIS Top Level Domain (e.g. qgis.ch, qgis.dk etc.) according to the rules further down in this document.
+QGIS.ORG also permits official user groups, to register a QGIS Top Level Domain (e.g. qgis.ch, qgis.dk etc.) according to the rules further down in this document.
 
 ## Examples of use that do not require permission
 
@@ -41,20 +41,28 @@ In cases of fair use, you may use or refer to QGIS trademark without explicit pe
 * **Books, articles, tutorials**: If you write articles, books, blog articles, tutorials, study materials for university, and similar, you do not need a permission to cite QGIS name and use the logo in the content you produce.
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 We require you to **give attribution** to the QGIS project and reference the project website somewhere in your book, article, etc. This could be a short paragraph in the Introduction or Preface. Avoid anything that may give the impression that your work is an official QGIS product.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 
 * **Courses, training**: If you present a course on QGIS, in either an academic, free, or commercial context, you can use the logo and the name ‘QGIS’ in course material.
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 Please routinely explain in your course materials that QGIS is free and open source software, and actively encourage anyone to contribute, directly or indirectly, to the project.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 * **Services**: If you provide services (support, development) for QGIS, you can use QGIS trademark to describe or advertise your services or products relating to QGIS, provided this is done in a way that is not misleading (such as presenting the QGIS project as your own work). See the requirements for product names below.
@@ -69,10 +77,14 @@ Please routinely explain in your course materials that QGIS is free and open sou
 Some uses of our trademark require the user to obtain permission. If you need permission, please fill out [our form](https://goo.gl/forms/b57Rg6IyFy0FC47p2).
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Note
 Obtaining permission is not a formal endorsement of your QGIS related project and doesn’t constitute a statement on the quality of your service.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 * **Product names**: If you plan to market a QGIS-based product or service to the public using a trademark or name that includes the word “QGIS”, such as “YourCompany QGIS” you are required to apply for and obtain a permission from the QGIS Project Steering Committee (QGIS-PSC). This is true whether or not you apply to register your trademark with a government. When developing and advertising QGIS-based products, we ask you to follow these guidelines:
@@ -93,10 +105,14 @@ Obtaining permission is not a formal endorsement of your QGIS related project an
         *   QGIS special edition
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Referring to QGIS
 When referring to QGIS please do not undermine the validity of the main QGIS project. We prefer that you refer to our software packages as “Official Packages” and not “Community Releases” or similar. If you create your own packages, please make it clear that these are derivative packages and not created or endorsed by the QGIS project.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
             
 
@@ -108,15 +124,19 @@ When referring to QGIS please do not undermine the validity of the main QGIS pro
         
     3.  **Exceptions**:
         
-        *   QGIS.ORG Country voting members should use their country TLD (QGIS.ch, QGIS.dk, …)
+        *   QGIS.ORG voting members should use their country TLD (QGIS.ch, QGIS.dk, …)
             
         *   Non-commercial projects can use qgis.xxxxx (qgis.tutorials would fall into this category if the tutorials are free) but should ask for permission before registering the domain. QGIS.ORG may register the domain and point it to the name servers provided by the requestor or instruct the requestor to do so.
 
 {{< rich-box-start icon="💭" layoutClass="tips">}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 ##### Referring to QGIS
 Permission is not a formal endorsement from the QGIS project and doesn’t imply anything about quality of the service.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}        
             
 
@@ -157,46 +177,63 @@ If you know of people, organizations or companies using the QGIS name or logo as
 
 
 {{< rich-box-start >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 **Q:** _When do I have to show proper attribution?_
 
 **A:** Whenever and however you use the term QGIS in print, on the internet, or in audio broadcasts, you should always give proper attribution to QGIS project. For more information see “Trademark Attribution.”
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 {{< rich-box-start >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 **Q:** _I am registering or have registered a trademark with my country’s trademark authority. Do I still need a permission?_
 
 **A:** Yes, assuming your trademark includes the element QGIS and it is being used in connection with software-related goods and services. Please note, the permission applies to the QGIS trademark whether or not they are registered with a trademark authority. If you are using the term QGIS as a trademark (whether or not registered), you need to apply for a permission.
+
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 {{< rich-box-start >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 **Q:** _I am a commercial entity (for example, a company, partnership or sole proprietor, profit or non-profit) selling software-related goods or services and using the word “QGIS” in the entity’s name. Do I need to apply for a permission?_
 
 **A:** Using QGIS in the entity’s name is not permitted because you are using QGIS as part of a trademark in connection with software-related goods or services. Software-related goods are computer programs and systems, or packages bundling software with tools, utilities, hardware, etc. Software-related services are services that deploy, document, facilitate the use of, or enhance computer programs and systems. Even if you don’t use QGIS as part of the entity’s name, if the entity has a product or service (whether sold or given away for free) that uses “QGIS” in its name, you still need a permission for the use of the word QGIS in the name of the products or services.
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 {{< rich-box-start >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 **Q:** _If I get a permission for my trademark, will QGIS refuse to grant similar permissions to marks that are the same as, or confusingly similar to, my mark?_
 
 **A:** No, QGIS will not attempt to ensure exclusivity or protect marks from infringement. QGIS considers the protection of trademarks against infringement to be the responsibility of the trademark owner. QGIS is not a dispute resolution authority, and does not become involved in disputes between trademark owners.
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 {{< rich-box-start >}}
+
 {{< rich-content-start themeClass="coloring-1" >}}
+
 **Q:** _Trademark Registration Consent: My organization has applied to register a trademark for software-related goods or services that includes QGIS as an element. The application was rejected for confusing similarity to QGIS trademark. If I have trademark usage permission, will QGIS consent to my registration?_
 
 **A:** No. The QGIS trademark usage permission is not a consent for the registration of other trademarks. To protect the QGIS mark from dilution, we do not consent to the registration of trademarks found to be confusingly similar to the QGIS mark.
 
 {{< rich-content-end >}}
+
 {{< rich-box-end >}}
 
 {{< content-end >}}

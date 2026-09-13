@@ -1,0 +1,834 @@
+---
+HasBanner: false
+draft: false
+releaseDate: '2023-06-26'
+section: project
+sidebar: true
+title: Log met wijzigingen voor QGIS 3.32
+type: visual-changelog
+
+---
+{{<content-start >}}
+# Log met wijzigingen voor QGIS 3.32{#changelog332 }
+![image1](images/projects/0316fbcb7ba30bcf1caee80daf0662a1a15d99b0.png)
+
+Datum uitgave 26-06-2023
+
+QGIS 3.32 is een belangrijke uitgave van het Project QGIS dat een significante stap voorwaarts brengt in georuimtelijke technologie naar de wereld van Open Source. De gemeenschap van ontwikkelaars heeft verschillende nieuwe mogelijkheden geïntroduceerd en verbeteringen doorgevoerd om het potentieel aan georuimtelijke gegevens te kunnen benutten.
+
+Naast heel veel verbeteringen voor de kwaliteit van leven naast een breed spectrum aan bestaande mogelijkheden, brengt de uitgave 3.32 de lang verwachte functionaliteit voor eigen verwerking van puntenwolken in QGIS, wat QGIS Desktop een krachtig gereedschap voor het verwerken van gegevens van LiDAR maakt.
+
+Deze bereikte mijlpaal is voor een groot deel te danken aan de bijdragen van gemeenschap in de effectieve [crowdfunding campagne](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/) die deze ontwikkeling mogelijk maakte, de gemeenschap van QGIS en de [Enhancement-Proposals](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/263) gebruikt voor het effectieve beheer van deze bijdragen, de gemeenschappelijke inspanningen van de betrokken ontwikkelbedrijven, en natuurlijk de buitengewone bijdragen van individuele ontwikkelaars die deze gereedschappen bouwen voor het algemeen nut.
+
+Deze uitgave bevat ook een brede variëteit aan verbeteringen voor de ervaringen van ontwikkelaars, uitbreidingen van nieuwe functionaliteiten zoals de plots voor profielen en framewerk voor Processing, en een nieuw framewerk voor sensorgegevens om naadloos te integreren in QGIS met apparaten voor het verzamelen van gegevens en het maken van intelligente oplossingen van de volgende generatie te faciliteren.
+
+Voor een snelle toer door alle nieuw geïntroduceerde functionaliteiten kunt u de video met deze mogelijkheden bekijken op YouTube op <https://www.youtube.com/watch?v=ZtE1Az-zpf0>
+
+<div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/ZtE1Az-zpf0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
+
+QGIS is een inspanning van de gemeenschap en we willen ook nogmaals onze grote dank uitspreken aan alle ontwikkelaars, schrijvers van documentatie, testers en andere mensen die vrijwillig hun tijd en inspanningen ter beschikking stellen (of mensen sponsoren om dat te kunnen doen) om deze uitgave mogelijk te maken. Vanuit de gemeenschap van QGIS hopen we dat u van deze uitgave zult genieten! Als u tijd of geld wilt doneren of op een andere manier bij wilt dragen in het opwaarderen van QGIS, kijk dan ook eens op [QGIS.ORG](https://qgis.org) en help een handje!
+
+QGIS wordt ondersteund door donoren en dragende leden. Een huidige lijst van donoren die grote of kleine bijdragen hebben gegeven aan het project kan worden bekeken op onze [lijst van donoren](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). Als u een dragend lid voor het project zou willen worden, bekijk dan onze [pagina voor dragende leden](https://qgis.org/en/site/about/sustaining_members.html) voor de details. Sponsoren van QGIS helpen ons om fondsen te verkrijgen voor onze regelmatige ontmoetingen van ontwikkelaars, de infrastructuur van het project te onderhouden en inspanningen voor het oplossen van problemen te financieren. Een volledige lijst van huidige sponsoren wordt hieronder weergegeven - een welgemeend bedankt voor al onze sponsoren!
+
+{{<fund type="active" >}}
+
+QGIS is gratis software en u bent niet verplicht om maar iets te betalen voor het gebruiken ervan - in feite willen we mensen, wijd en zijd verspreid, aanmoedigen om het te gebruiken, ongeacht hun financiële of sociale status - wij geloven dat het uitrusten van mensen met gereedschappen voor het maken van ruimtelijke beslissingen zal resulteren in een betere wereld voor de gehele mensheid.
+
+{{<table-of-contents >}}
+## Kaartgereedschap
+### Mogelijkheid: Voorbeeld voor kaarttips
+Een venster voor een voorbeeld van kaarttips is toegevoegd aan het dialoogvenster voor eigenschappen van raster- en vectorlagen om de ervaring van het ontwerpen van kaarttips te verrijken.
+
+![image3](images/entries/9e24454517900953b1b667e670c553ac29f10d58.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Gereedschap Meten coördinaten kopiëren
+Het dialoogvenster Meten is uitgebreid met de volgende functies:
+- kolommen X en Y met coördinaten X en Y
+- De eerste rij in de tabel bevat alleen de coördinaten (geen afstand)
+- Een bericht wordt weergegeven als het kopiëren is geslaagd
+- Een actie `Alles kopiëren` wordt verschaft in een contextmenu in de tabel
+- Voorkomt fouten bij het wijzigen van de instellingen tijdens het meten
+
+Aanvullende instellingen voor het beheren van het gedrag van de knop \"Alles kopiëren\" worden verschaft om aspecten, zoals scheidingsteken, te configureren of informatie uit de kop op te nemen.
+
+![image4](images/entries/4eb0ded16e3b6be3c0696230eb63a7a88fab4197.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Kaarttips uitschakelen voor een specifieke laag
+Een nieuwe mogelijkheid in de laageigenschappen maakt het mogelijk kaarttips uit te schakelen voor een specifieke laag.
+
+In de API van QGIS werd een Q_PROPERTY `mapTipsEnabled` toegevoegd aan de klasse `QgsMapLayer` om deze functionaliteit in te schakelen.
+
+![image5](images/entries/73c9d66fac45f948e63ead3f94be4ccddb3172b4.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+## Gebruikersinterface
+### Mogelijkheid: Geef beschrijving waarde relatie weer tijdens hangen boven het combinatievak
+Een helptip met de beschrijving is nu beschikbaar als de cursor boven het combinatievak van de waarde, in de widget Waarde relatie bewerken, is geplaatst.
+
+De helptip met de beschrijving komt overeen met die van de beschrijving van het huidige geselecteerde item, zoals die is gedefinieerd in de \'kolom Beschrijving\' in het configuratiepaneel van de Waarde relatie.
+
+![image6](images/entries/369ecca5320fe09a8f2657463df647c5526a496c.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
+### Mogelijkheid: Acties voor vastzetten 2D-kaartvenster
+De actie om weergaven van het 2D-kaartvenster vast te zetten en los te maken zijn toegevoegd om overeen te komen met het gedrag voor weergaven van 3D-kaartvensters.
+
+![image7](images/entries/d6aaec94112b3787b59d1d820b0335b9ab9b2385.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Knop Recent gebruikte CRS leegmaken toegevoegd
+De mogelijkheid om informatie over \"recent gebruikte\" CRS te verwijderen is geïmplementeerd op verschillende manieren, inclusief:
+- Drukken op de toets Del, terwijl de lijst met recent gebruikte CRS-en de focus heeft, verwijdert het geselecteerde CRS
+- Een kolom in de tabel Recent CRS met een knop om individuele CRS-en leeg te maken
+- Een actie contextmenu Geselecteerde leegmaken
+- Een actie contextmenu Alle recente CRS-en verwijderen die de gebruiker om bevestiging zal vragen
+
+![image8](images/entries/564478bebbaeda3394d77001b46cb051a795c73f.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Zoomen met muiswiel omdraaien
+Een instelling is nu beschikbaar om de richting van het zoomen met het muiswiel om te draaien (voorwaarts scrollen zoomt uit)
+
+Deze instelling zal het gedrag van zoomen met het muiswiel beïnvloeden in meerdere contexten, inclusief:
+- in het kaartvenster (`QgsMapCanvas`)
+- in de overzichtskaart (`QgsMapOverviewCanvas`)
+- in de weergave van de lay-out (`QgsLayoutView`)
+- in de kaartitems voor de lay-out als het gereedschap \"Inhoud item verplaatsen\" actief is (`QgsLayoutViewToolMoveItemContent`)
+- in het kaartvenster voor het hoogteprofiel (`QgsElevationProfileCanvas`)
+- in de grafische weergave van de modelbewerker (`QgsModelGraphicsView`)
+
+![image9](images/entries/b242e0115f29586846d88d6d0cfb1d5f6f9760f0.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Favoriete plaatsen roteren
+Roteren van de kaart kan nu worden opgeslagen en worden toegepast op Favoriete plaatsen, inclusief een nieuw contextmenu in het paneel Favoriete plaatsen beheren.
+
+![image10](images/entries/ea7e07b0c6a753ab205dd31d20454a4006c17bba.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+## Annotaties
+### Mogelijkheid: Verbeteringen voor gereedschap Annotaties
+Een aantal verbeteringen zijn in het gedrag voor gereedschappen voor annotaties gemaakt, inclusief:
+- Voorkomen van het wijzigen van de grootte van een annotatie als de cursor niet feitelijk boven het frame is
+- Een contextmenu toegevoegd (wanneer een gereedschap voor annotaties wordt geactiveerd) voor items van Annotaties
+- De niet gedocumenteerde `toggleTextItemVisibilities` verwijderd (schakelde de zichtbaarheid van Tekst-annotaties met Ctrl+T)
+- Gedrag voor selecteren en wijzigen grootte verbeterd, inclusief verbeteringen voor afhandelen van overlappende annotaties
+
+![image11](images/entries/fe30ec582f3b10338c05db078429751c06c890af.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Live voorbeeld voor annotaties
+Een keuzevak \"Live bijwerken\" in de bewerkers voor annotaties maakt het direct zien van gerenderde inhoud van de annotatie mogelijk.
+
+![image12](images/entries/a969c1ce6990854c84031bc4b7085b799c03f32f.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+## 3D-objecten
+### Mogelijkheid: Verbeterd gereedschap 3D-meten
+De volgende verbeteringen zijn geïmplementeerd in het gereedschap Meten in 3D-scenes:
+- Staat meten op puntenwolk-punten toe
+- Billboard-cirkelmarkeringen worden weergegeven op de punten van het 3D-elastiek
+- Verplaatsen van de muis verplaatst het laatste punt van het elastiek (hoewel de gemeten resultaten niet worden bijgewerkt, totdat de gebruiker klikt)
+- Verplaatsen van de camera verwijdert niet de huidige metingen
+- Maakt gebruiken van de toetsen Backspace en Del mogelijk om ongedaan te maken (verwijder laatste meting)
+- Maakt gebruiken van Esc mogelijk om metingen leeg te maken, wat overeenkomt met het gedrag van zijn 2D tegenhanger
+- Rendert 3D-elastieken bovenop andere entiteiten van 3D, zodat zij niet worden bedekt
+
+De logica voor het selecteren van objecten is ook opnieuw bewerkt voor meer controle, en het gereedschap 3D identificeren werd ook verbeterd om inmenging van navigatie met de camera te voorkomen, als ook een reparatie van een probleem waarbij in specifieke gevallen verkeerde FID's werden teruggegeven.
+
+![image13](images/entries/65d6c0b4ab0c187c6a4b1e9f2f6c6483708cfce4.webp)
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
+## Puntenwolken
+### Mogelijkheid: Provider voor eigen verwerking van puntenwolken
+Een nieuwe eigen provider voor verwerking is verschaft voor algoritmes voor puntenwolken, in lijn met [QEP 263](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/263).
+
+De provider gebruikt onder de motorkap het gereedschap voor de opdrachtregel [pdal_wrench](https://github.com/PDAL/wrench) en ondersteunt momenteel de volgende algoritmes:
+- Informatie: voer een basis metadata uit van de puntenwolk (aantal punten, bereik, CRS, etc)
+- Converteert indeling: converteer puntenwolk naar een andere indeling, bijv. las naar laz
+- Projecteert opnieuw: projecteer puntenwolk opnieuw naar een ander CRS
+- Projectie repareren: repareer (toewijzen) CRS van een bestand voor een puntenwolk
+- Clippen: clip puntenwolk door polyg(o)on(en) te clippen
+- Samenvoegen: voeg meerdere bestanden met puntenwolken samen tot één enkel.
+- Tegel: maakt tegels uit invoergegevens.
+- Uitdunnen: maak een verdunde versie van de puntenwolk
+- Grens: exporteer vectorlaag die grenzen voor puntenwolk bevat
+- Dichtheid: exporteer een rasterbestand waar elke cel een aantal punten bevat die in het gebied van die cel liggen.
+- Exporteren naar raster: exporteer gegevens van puntenwolk naar een 2D-raster grid
+- Exporteren naar vector: exporteer gegevens van puntenwolk naar een vectorlaag met 3D-punten
+- Exporteren naar raster (met triangulatie): exporteer gegevens van puntenwolk naar een 2D-raster grid door triangulatie van punten
+- Filer: neem een subset uit de puntenwolk met expressies van PDAL
+
+Omdat pdal_wrench PDAL \>= 2.5.0 vereist, zal de nieuwe provider voor de verwerking alleen beschikbaar zijn als wordt voldaan aan het vereiste van de versie van PDAL.
+
+![image14](images/entries/e6c8922d1f55cc29aeceb514da8253f9b5b36edf.webp)
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Expressiebouwer Puntenwolk voor framewerk Processing
+Een nieuw widget voor puntenwolken Expressie-bouwer is beschikbaar in de gebruikersinterface om filters te maken voor puntenwolken op een gebruikersvriendelijke manier, consistent met de bestaande interfaces voor Expressie-bouwer in QGIS.
+
+Binnen de API van QGIS API is de parameter `QgsProcessingParameterExpression` uitgebreid met de typen `Qgis` en `PointCloud`. Als de parameter het type `PointCloud` heeft, zal het de widget Expressie-bouwer voor puntenwolken gebruiken. Voor het behouden van achterwaartse compatibiliteit zal een parameter voor de expressie standaard het expressietype `Qgis` gebruiken.
+
+De klasse `QgsPointCloudExpression` werd ook uitgebreid met een nieuwe methode om expressies voor puntenwolken in QGIS te converteren naar [PDAL expressions](https://pdal.io/en/latest/stages/expression.html).
+
+Bestaande algoritmes voor PDAL die expressiefilters gebruiken zijn bijgewerkt om parameters voor expressies te gebruiken in plaats van tekenreeksen.
+
+![image15](images/entries/f69a04fbddde3eee72333fab2c1af0c58582aaae.webp)
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Filteren op rechthoek en expressie toegevoegd aan algoritmes van PDAL
+Toegevoegd de optie om invoer puntenwolken te filteren op rechthoek (bereik) en expressie in de volgende algoritmes voor PDAL:
+- grens
+- clip
+- dichtheid
+- exporteren naar raster (normaal en varianten voor TIN)
+- exporteren naar vector
+- samenvoegen
+- uitdunnen
+
+Dit maakt het mogelijk slechts een subset punten uit de/het invoerbestand(en) te verwerken, zonder de noodzaak om een tussenstap voor filteren uit te voeren of tijdelijke bestanden te maken.
+
+Voor hen die alleen filteren nodig hebben is er ook een afzonderlijk algoritme Filteren, dat in staat is te filteren op ofwel bereik, met een expressie of een combinatie daarvan.
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Nieuw type parameter voor attribuut puntenwolk
+Nuttig voor algoritmes voor puntenwolken die attributen hebben, zoals het exporteren van specifieke attribuutwaarden als raster of filteren van puntenwolken.
+
+Dit laat ook de aanroep naar de API `parameterAsFields` vervallen, en `parameterAsStrings` zou in plaats daarvan moeten worden gebruikt voor zowel velden als attributen van puntenwolken.
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Virtuele PuntenWolken (VPC) weergeven in 3D-weergave
+Virtuele puntenwolken kunnen nu worden gerenderd in 3D-weergaven. Voor het beheren van de uitvoering wordt een drempel voor de sub-index gespecificeerd, zodat de weergave de opgedeelde entiteit van de puntenwolk alleen zal renderen indien van toepassing en zal in plaats daarvan de begrenzingsregio van een bepaalde sub-index renderen als niet wordt voldaan aan de criteria voor de drempel.
+
+![image16](images/entries/ec9947c41a6b8caedcf2a72bf7b61ff4f2b8b04e.gif)
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
+### Mogelijkheid: Virtuele puntenwolken (VPC)
+Een nieuwe gegevensprovider is beschikbaar voor bestanden voor *Virtuele Puntenwolken* (VPC), gemaakt door het gereedschap [pdal_wrench](https://github.com/PDAL/wrench) en het gereedschap *Virtuele puntenwolk (VPC) bouwen* in de nieuw geïntroduceerde [Eigen puntenwolk provider voor Processing](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/263).
+
+Het VPC-bestand wordt afgehandeld als een enkele laag in QGIS en mag een groot aantal puntenwolkbestanden bevatten waarvan de indexen langzaam worden geladen als voldoende wordt ingezoomd op het kaartvenster. Een renderer voor bereik wordt gebruikt voor de individuele indexen, waar hun bereik past in de breedte van het kaartvenster, en de gebruikergedefinieerde renderer wordt alleen gebruikt als verder wordt ingezoomd.
+
+Een Virtuele PuntenWolk is een JSON containerbestand met de extensie `.vpc`, dat verwijst naar andere bestanden/URL's die de feitelijke gegevens voor de puntenwolk bevatten. Dit is een concept soortgelijk aan virtuele rasters (VRT's) in GDAL. De inhoud van JSON is feitelijk een STAC API ItemCollection. Bekijk [VPC specification](https://github.com/PDAL/wrench/blob/main/vpc-spec.md) voor meer details.
+
+![image17](images/entries/ec51218d00c661a9fd68dbda499f13ab56974c6a.gif)
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Stefanos Natsis](https://github.com/uclaros)
+## Afdruklay-outs
+### Mogelijkheid: Ondersteuning voor hyperlink voor met HTML ingeschakelde export van labels
+Labels van QGIS die inhoud HTML bevatten zullen nu ondersteuning bieden voor het inbedden van functionele hyperlinks in relevant exporteren van lay-outs, zoals PDF's.
+
+Dit werd mogelijk gemaakt door Kanton Schaffhausen
+
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
+### Mogelijkheid: Ondersteuning voor filteren van legenda's van lay-outs op meerdere gekoppelde kaartitems
+In plats van het beperken van het filteren van een legenda van lay-outs tot één enkele gekoppelde kaart, maakt deze wijziging het mogelijk dat legenda's worden gefilterd, in plaats van meerdere gekoppelde kaarten. Het is ontworpen het gebruiksgeval mogelijk te maken waarbij een lay-out meerdere kaarten heeft, potentieel op verschillende schalen en die verschillende bereiken weergeven, en één enkele legenda is vereist die die alle symbolen bevat die zichtbaar zijn op alle kaarten.
+
+De ervaring voor de gebruiker is ontworpen om het wijzigen van de huidige werkstroom van de gebruiker te voorkomen, met dien verstande dat legenda's nog steeds zullen zijn gekoppeld aan één enkel kaartitem. Deze kaart wordt gebruikt bij het bepalen van de schaal (en andere kaartafhankelijke eigenschappen) waarop de symbolen van de legenda moeten worden gerenderd. Selecteren van de optie \"Alleen items tonen die binnen de gekoppelde kaart liggen\" zal nog steeds automatisch de legenda filteren op de inhoud van de gekoppelde hoofdkaarten. Er is echter een nieuwe optieknop \"…\" naast het keuzevak \"Alleen items tonen die binnen de gekoppelde kaart liggen\" die het voor gebruikers mogelijk maakt ook andere kaarten uit hun lay-out te kiezen om rekening mee te houden bij het bepalen van zichtbare items:
+
+![image18](images/entries/3246252a68bf9e6ecbd8d54d20b477305ec8f79a.webp)
+
+Dit werd mogelijk gemaakt door City of Canning
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+## Expressies
+### Mogelijkheid: Functies ltrim/rtrim toegevoegd
+Maakt het mogelijk spaties of andere tekens te verwijderen vanaf het begin of het einde van tekenreeksen
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+## Digitaliseren
+### Mogelijkheid: Lijst veldwaarde in dialoogvenster Objecten samenvoegen
+Bij het samenvoegen van objecten kunnen gebruikers nu uit een lijst met beschikbare waarden uit de geselecteerde objecten selecteren, in plaats van handmatig een waarde op te gevenvoor een veld.
+
+![image19](images/entries/01bce8523b3c79ad48ae040c8a5d446c4aa338ae.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
+### Mogelijkheid: Uitbreidingen optie Veel voorkomende hoek  voor Geavanceerd digitaliseren
+De opties voor Geavanceerd digitaliseren voor veel voorkomende hoeken zijn uitgebreid met de volgende functionaliteiten:
+- Nieuwe veel voorkomende hoeken voor 0.1°, 0.5° en 1.0°
+- Een nieuwe optie is toegevoegd om de huidige veel voorkomende hoek weer te geven in de zwevende contextwidget
+- Nieuwe sneltoetsen \'N\' \'SHIFT+N\' zijn beschikbaar om door de opties voor veelvoorkomende hoeken te gaan
+
+![image20](images/entries/7e402e89c5fb13d41c7e1e99d9fa13b51499c571.webp)
+
+Dit werd mogelijk gemaakt door ChartWorld International
+
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
+### Mogelijkheid: Instelling voor zwevend venster en informatie over richting voor Geavanceerd digitaliseren
+Een nieuwe instelling voor configuratie voor het gereedschap Geavanceerd digitaliseren maakt het voor gebruikers mogelijk de weergave te schakelen van het \"zwevende\" contextmenu dat de cursor volgt tijdens het digitaliseren. Aanvullende opties zijn opgenomen voor het toevoegen van informatie aan het zwevende paneel, zoals de weergave van richting en informatie over het azimut.
+
+![image21](images/entries/1378170e362cd2b7f8ac14cbd5556b87ee593918.gif)
+
+Dit werd mogelijk gemaakt door ChartWorld International
+
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
+## Attributentabel
+### Mogelijkheid: Verbeterde laadtijd van attributentabellen met verborgen velden
+Verbeterde laadtijd van attributentabel als er verborgen virtuele velden zijn en (op een meer beperkte manier) als er verborgen niet-virtuele velden zijn.
+
+Dit werd mogelijk gemaakt door QTIBIA Engineering and QCooperative.
+
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti](https://github.com/elpaso)
+## Gegevensbeheer
+### Mogelijkheid: Sta toe dat een bereik aan cellen wordt gekopieerd uit het venster met resultaten voor SQL
+Maakt selecteren van een bereik aan cellen mogelijk om naar het klembord te kopiëren. Resultaten worden gekopieerd als zowel platte tekst als HTML, dus kan gemakkelijk als tabellen worden geplakt in werkbladen van apps/etc.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Aangepast gedrag dialoogvenster Nieuw veld en ondersteuning alias
+Bij het maken van nieuwe velden wordt de optie \'Opmerking\' nu alleen weergegeven voor databronnen die bewerken van opmerkingen ondersteunen (wat voorkomt dat QGIS stilletjes de informatie negeert).
+
+Dit voegt ook ondersteuning toe voor het instellen van aliassen voor velden in het dialoogvenster Nieuw veld, en breidt opmerkingen en aliassen uit voor ondersteunde indelingen voor OGR.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Waarde DistanceUnit voor inches toegevoegd
+Inches zijn nu opgenomen als geldige kaarteenheden binnen QGIS.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Selectie voor beleid van splitsen van records in dialoogvenster Formulier
+Een nieuw keuze-item \"Beleid splitsen objecten\" wordt weergegeven in het dialoogvenster Laageigenschappen. Dat stelt gebruikers in staat gemakkelijk het beleid voor het splitsen van een veld te bepalen en als vereist te wijzigen.
+
+De volgende beleidsregels worden verschaft:
+- Duplicaat waarde
+- Waarde verwijderen
+- Standaardwaarde gebruiken
+- Verhouding geometrieën gebruiken
+
+![image22](images/entries/f53e5c49ba0c25415b7a5bd163cb94a1ab72ebcd.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+## Formulieren en widgets
+### Mogelijkheid: Beheer toegevoegd voor horizontaal / verticaal uitrekken voor widgets van attribuutformulieren
+Deze functionaliteit geeft twee nieuwe opties voor \"grootte\" weer voor widgets Tekst bewerken, die beheer mogelijk maken voor de factor voor het horizontaal en verticaal uitrekken van de widget. Door het instellen van horizontaal of verticaal uitrekken kunnen gebruikers beheren hoe widgets Tekst bewerken relatief opnieuw op grootte zullen worden gebracht bij het wijzigen van de grootte van een attributenformulier.
+
+Een gebruiker kan bijvoorbeeld een hogere waarde voor horizontaal uitrekken instellen voor widgets die meer van de beschikbare horizontale ruimte zouden moeten \"grijpen\", zoals voor die widgets waarvan verwacht wordt dat ze langere waarden hebben. Soortgelijk kan de instelling voor verticaal uitrekken (beschikbaar voor widgets van het type Selectie) beheren hoe widgets verticaal groeien bij het wijzigen van de grootte van het formulier, relatief vergeleken met het dialoogvenster van het formulier.
+
+Samen geven deze opties meer beheer aan gebruikers over de exacte lay-out en grootte van hun attributenformulieren.
+
+Standaard zijn de waarden voor uitrekken ingesteld als \"Standaard\" wat hetzelfde is als het gedrag dat wordt vertoond in eerdere versies van QGIS.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Nieuw type container voor attributenformulier \"Rij\" toegevoegd
+Deze container legt kind-widgets altijd op een horizontale rij, waarbij het aantal kolommen automatisch wordt bepaald door het aantal kind-widgets.
+
+Het is nuttig bij het maken van compacte formulieren, waar geen ruimte zal worden verspild door overbodige horizontale breedte toe te wijzen aan widgets waarvan de verwachte waarden altijd kort zullen zijn.
+
+Bijv.: maken van 3 rijen met 3, 2, 1 kind-widgets respectievelijke resultaten in de lay-out:
+
+    Attr 1: [...] Attr 2: [...] Attr 3: [...]
+    Attr 4: [..........] Attr 5: [..........]
+    Attr 6: [...............................]
+    
+Zonder de optie van rij-containers zouden alle horizontale rijen hetzelfde aantal kolommen hebben, bijv.:
+
+    Attr 1: [...] Attr 2: [...] Attr 3: [...]
+    Attr 4: [...] Attr 5: [...] Attr 6: [...]
+    
+(wat onvoldoende horizontale ruimte laat voor de attributen 4-6), of
+
+    Attr 1: [..........] Attr 2: [..........]
+    Attr 2: [..........] Attr 3: [..........]
+    Attr 4: [..........] Attr 5: [..........]
+    Attr 6: [..........]
+    
+(resulterend in verspilde horizontale ruimte naast attribuut 6, en een extra rij die verticale ruimte inneemt)
+
+Dit werd mogelijk gemaakt door NIWA
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+## Processing
+### Mogelijkheid: Algoritme Vectortegels downloaden
+Een nieuw algoritme voor Processing is toegevoegd dat het downloaden van vectortegels van een server op afstand mogelijk maakt. Deze functionaliteit bevat ondersteuning voor vectortegels voor de parameter kaartlaag, als ook een nieuwe parameter voor de bestemming van de vectortegel voor algoritmes van Processing. De uitvoer in de indeling MBTiles-bestanden kan na de verwerking ook automatisch worden toegevoegd aan het kaartvenster.
+
+Dit werd mogelijk gemaakt door [Mergin Maps](https://merginmaps.com/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Toestaan van configureren van de volgorde van uitvoer die werd gemaakt door een model
+Een nieuwe actie \"Uitvoer opnieuw sorteren\" is aan het menu van Modelontwerper toegevoegd, die ontwerpers van modellen toestaat een specifieke volgorde in te stellen die de uitvoer van hun model moet gebruiken bij het laden van de resultaten in een project. Dit geeft de maker van het model een mogelijkheid om ervoor te zorgen dat lagen logisch in het kaartvenster worden geordend bij het uitvoeren van een model. Zoals het plaatsen van de uitvoer van een vectorlaag boven de uitvoer van een rasterlaag, of een puntenlaag boven een polygonenlaag.
+
+De maker van het model kan ook een optionele \"Groepsnaam\" instellen voor de uitvoer om automatisch uitvoer te groeperen in de boom met lagen door een nieuwe groepsnaam te gebruiken of door ze toe te voegen aan een bestaande groep.
+
+![image23](images/entries/a898507ce882d4e757064429471307a3cdd0e0e9.webp)
+
+Dit werd mogelijk gemaakt door [Duitse QGIS gebruikersgroep](https://qgis.de/)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Algoritme voor het maken van bestanden COPC voor invoer van puntenwolken
+Een nieuw algoritme voegt de optie \"COPC maken\" toe aan de provider PDAL voor het maken van Cloud Optimized Point Clouds (COPC's). Het algoritme maakt een COPC-bestand voor elk bestand voor invoer van een puntenwolk en kan nuttig zijn voor het indexeren van bestanden voordat ze in QGIS worden gebruikt, of bij het bouwen van een VPC.
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Gereedschap voor Selectie omkeren voor algoritme Bijgewerkte velden van Processing
+Een nieuwe knop is toegevoegd aan de interface voor het beheren van velden van het algoritme Bijgewerkte velden in Processing. Die stelt gebruikers in staat de selectie om te draaien. Dit maakt meer efficiënt beheer van velden mogelijk, zoals het inschakelen van het in bulk verwijderen van velden.
+
+Deze mogelijkheid werd toegevoegd tijdens de [QGIS Contributor Meeting 2023, 's-Hertogenbosch](https://github.com/qgis/QGIS/wiki/25th-Contributor-Meeting-in-'s-Hertogenbosch)
+
+![image24](images/entries/ab43192e1204465860a221e323f478d9a1e8d2f6.gif)
+
+Dit werd mogelijk gemaakt door [camptocamp](https://camptocamp.com)
+
+Deze mogelijkheid werd ontwikkeld door [Ismail Sunni](https://github.com/ismailsunni)
+### Mogelijkheid: Ondersteuning voor opmerkingen voor velden en aliassen in algoritmes van Processing 
+Dit voegt ondersteuning toe voor het afhandelen van opmerkingen voor velden en aliassen in de algoritmes \"Veld aan attributentabel toevoegen\" en \"Bijgewerkte velden\" van Processing. Aanvullend zorgt het ervoor dat opmerkingen en aliassen gekopieerd worden, indien aanwezig, van bronlagen naar doellagen.
+
+Als de uitvoerlagen geen opmerkingen/ aliassen ondersteunen dan worden gebruikersvriendelijke waarschuwingen weergegeven in het log van Processing die gebruikers in kennis stellen van de beperking.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Algoritme Virtuele PuntenWolk (VPC) bouwen
+Het nieuwe algoritme stelt de gebruiker in staat bestanden voor [virtuele puntenwolk (VPC)](https://github.com/PDAL/wrench/blob/main/vpc-spec.md) te bouwen die verwijzen naar meerdere bestaande gegevenssets voor puntenwolken. Dit maakt dan visualisatie en verwerking van vele bestanden voor puntenwolken als een enkele laag in QGIS mogelijk.
+
+Aanvullende opties zijn beschikbaar voor het algoritme \"VPC bouwen\" van Processing, die de volgende mogelijkheden verschaffen voor het bouwen van Virtuele PuntenWolken:
+- statistieken berekenen vanuit invoergegevens
+- exacte grenzen berekenen vanuit invoergegevens
+- een overzichts-puntenwolk bouwen
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Beheren van threads in instellingen voor algoritmes
+Een handige nieuwe instelling voor de omgevingsconfiguratie is gemaakt voor het configureren van het aantal threads dat een algoritme zou meten gebruiken als een algoritme in staat is meerdere cores te gebruiken, zoals TauDEM of PDAL.
+
+Deze functionaliteit is toegepast voor de algoritmes van PDAL en TileXYZ.
+
+![image25](images/entries/d5a70cd3ed4a01b2e51381907b92b05256e13cc2.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Alexander Bruy](https://github.com/alexbruy)
+### Mogelijkheid: Toestaan dat tijdelijke map tijdelijk wordt gewijzigd via het paneel voor de instellingen van het algoritme
+Individuele algoritmes voor Processing mogen nu een omgevingsinstelling hebben om een aangepaste tijdelijke map te specificeren die het huidige geconfigureerde bestandspad overschrijft. Dit is nuttig in situaties waarbij een bepaald gereedschap heel veel tijdelijk schijfruimte gebruikt en een aangewezen locatie of geheugen schijf is vereist, of wanneer een bepaalde bewerking verbeteringen voor de uitvoering vereist die worden geboden door een bepaalde schijf of pad.
+
+![image26](images/entries/e36dd209990541e93fdf7a3170596fe0f81ec920.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Toestaan dat dialoogvenster van Processing de standaard instellingen voor de context van Processing te overschrijven
+Een nieuwe instelling \"Instellingen voor algoritme\" is toegevoegd aan de knop Geavanceerd van de interface voor algoritmes voor Processing. Selecteren ervan geeft een paneel weer dat gebruikers in staat stelt algemene instellingen van Processing, die van toepassing zijn voor een **bepaalde instantie** van de uitvoering van het algoritme, te beheren. Het is bedoeld als een plaats waar een gebruiker de globale instellingen voor Processing kan overschrijven op een ad hocbasis, zonder hun gewone standaardinstellingen te moeten wijzigen.
+
+Bevat instellingen voor:
+- afhandelen van ongeldige geometrieën (Anders dan de bestaande instelling per-parameter overschrijven hiervoor, zal het instellen van de afhandelingsmethode hier van toepassing zijn op ALLE invoer voor het algoritme)
+- eenheden voor afstanden en gebieden te gebruiken voor metingen van afstand/gebied
+
+![image27](images/entries/2039528616fa5e39d98dd01dc43899db654d3a45.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Aanvullende parameters voor algoritme gdal2xyz
+Het algoritme gdal2xyz voor Processing van de provider voor processing GDAL bevat nu parameters voor `skipnodata` en `src`, en `dstnodata`.
+
+Deze mogelijkheid werd ontwikkeld door [Luke Pinner](https://github.com/lpinner)
+### Mogelijkheid: Toegevoegde optie \"Niet-aaneengrenzende objecten afzonderlijk houden\" aan algoritme Buffer
+Indien geselecteerd dan worden niet aaneengrenzende delen in de resultaten van Buffer uitgevoerd als zelfstandige eendelige objecten. Deze instelling is ontworpen om een soortgelijke functionaliteit weer te geven als beschikbaar is voor het algoritme \'Samenvoegen\'.
+
+Dit werd mogelijk gemaakt door City of Canning
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Toestaan dat filterexpressies worden ingesteld voor vectorbronnen
+Deze wijziging voegt een nieuwe optie \"Objectenfilter\" toe, naast de bestaande opties voor beperken aantal objecten en afhandelen van ongeldige geometrieën, beschikbaar voor alle vectorinvoer voor lagen in Processing.
+
+Het stelt gebruikers in staat een expressie in te voeren om dynamisch een subset van de laag te maken bij het uitvoeren van het gereedschap, wat afzonderlijke stappen vermijdt voor het instellen van filters voor lagen of het maken van subsets van lagen.
+
+![image28](images/entries/032c4a9555a7debad18a2fd8fb4b84a09e94eb3b.webp)
+
+Dit werd mogelijk gemaakt door City of Canning
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Ondersteuning voor indeling voor afbeeldingen \*.HEIC in Processing voor algoritme \"Foto's met geoverwijzingen importeren\"
+Het algoritme Foto's met geoverwijzingen importeren staat nu het importeren van afbeeldingen `*.heic` met GDAL's ondersteuning voor afbeeldingen HEIF toe.
+
+Deze mogelijkheid werd ontwikkeld door [Chris Shucksmith](https://github.com/shuckc)
+## Opties voor toepassing en projecten
+### Mogelijkheid: Updates voor bewerker instellingen
+De interface voor bewerkers van instellingen hebben een belangrijke opknapbeurt gekregen en de interface voor geavanceerde instellingen heeft de volgende, voor de gebruiker zichtbare, wijzigingen:
+- Een keuze tussen de oude of de nieuwe widget voor instellingen, die wordt onthouden
+- Een instelling \"verborgen\" die het mogelijk maakt de waarschuwing over te slaan voordat de boom met instellingen wordt weergegeven
+- Instellingen hebben toegewezen bewerkers (draaivak, keuzevak, kleurenknop, etc.)
+- Het aanpassen van instellingen wordt nu alleen uitgevoerd als op de knop Toepassen wordt gedrukt
+- Huidige instellingen zijn weergegeven in cursief, waar instellingen, waarop wijzigingen zullen worden toegepast, worden weergegeven in rood
+
+In aanvulling heeft de API voor instellingen significante wijzigingen ondergaan, inclusief:
+- Verwijderen van de klasse QgsSettingsEntryByValue, gebruik allee met verwijzing
+- De oude QgsSettingsTreeWidget is hernoemd naar QgsSettingsTreeWidgetOld (in app)
+
+Nieuwe klassen voor API geïntroduceerd omvatten:
+- QgsSettingsTreeWidget en QgsSettingsTreeModel: boom widget + model om de instellingen weer te geven en te bewerken
+- QgsSettingsEditorWidgetWrapper (puur virtueel): een basis wrapper-klasse om een widget Instellingen bewerken te maken en af te handelen
+- QgsSettingsEditorWidgetWrapperTemplate (puur virtueel): de basisklasse voor de wrapper van instellingen die zijn gedeclareerd in C++ API (met typed methods)
+- Klassen voor bewerkers van instellingen: QgsSettingsStringEditorWidgetWrapper, etc.
+- QgsSettingsEditorWidgetRegistry: een register van de wrappers voor bewerkers van instellingen
+
+![image29](images/entries/36a2db1e6a9448a1bdd4699bbeaa79057e912535.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Denis Rouzaud](https://github.com/3nids)
+### Mogelijkheid: Gebruikersprofiel selecteren
+In eerdere versies van QGIS, als QGIS Desktop werd gesloten, werd het huidige profiel opgeslagen in het configuratiebestand profiles.ini, dus werd het standaard profiel gebruikt in de laatste instantie van QGIS die werd gesloten.
+
+Nieuw beleid voor het selecteren van de gebruiker stelt gebruikers in staat te selecteren hoe standaard profielen worden gedefinieerd, overeenkomend met de volgende drie opties:
+- Laatste profiel: De oude modus die het gedrag van eerder versies volgt. Dit gebruikt het laatst gesloten profiel bij het openen van een nieuwe instantie van QGIS.
+- Standaard profiel: Definieer handmatig een standaard profiel, naast het bestaande profiel, dat standaard altijd zal worden gebruikt (zonder een vlag voor de opdrachtregel te gebruiken of een profiel te kiezen in de gebruikersinterface van QGIS)
+- Laat gebruiker kiezen bij opstarten
+
+Indien \"Laat gebruiker kiezen bij opstarten\" is geselecteerd, als er 2 of meer profielen zijn, zal een dialoogvenster voor selecteren worden weergegeven voor het Welkomstscherm. Het stelt de gebruiker in staat te kiezen welk profiel moet worden gebruikt of om een nieuw profiel te maken dat automatisch zal worden geladen.
+
+Ongeacht het geselecteerde beleid, als slechts een profiel bestaat, zal dat worden gebruikt, en als er geen profiel bestaat, zal het standaard profiel worden gemaakt en gebruikt.
+
+Pictogrammen voor gebruikersprofielen worden ook verschaft om gebruikers in staat te stellen visueel onderscheid te maken tussen hun actieve profielen.
+
+![image30](images/entries/ac274c8186837f23d80df6142030a416efcdcb1e.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+## Profiel plotten
+### Mogelijkheid: Selecteren van eenheden voor afstand voor hoogteprofielen
+Gebruikers kunnen nu kiezen uit een selectie van afstandseenheden om de standaard (kaarteenheden van het CRS van het kaartvenster) te overschrijven voor hoogteprofielen in zowel de interactieve hoogteprofielen (via de knop Instellingen van de werkbalk) en voor lay-out hoogteprofielen.
+
+In lay-outprofielen is er een aanvullende optie die beheert of het achtervoegsel voor afstandseenheden zou moeten worden geplaatst. De volgende opties zijn beschikbaar om de weergave van de achtervoegsels voor eenheden te beheren:
+- achtervoegsels verbergen
+- weergeven voor alle waarden
+- weergeven voor de eerste waarde
+- weergeven voor de laatste waarde
+- weergeven voor zowel de eerste als de laatste waarde
+
+Onthoud dat het momenteel niet mogelijk is het selecteren van eenheden weer te geven voor de verticale as, omdat die momenteel zonder dimensie is en ontwikkeling vereist van de afhandeling van het verticale CRS in QGIS, zoals vermeld in [QEP 267](See%20https://github.com/qgis/QGIS-Enhancement-Proposals/issues/267).
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Exporteren hoogteprofielen
+Een nieuw item is toegevoegd aan de werkbalk voor hoogteprofielen, dat verschillende opties bevat voor het exporteren van hoogteprofielen.
+
+Plots van profielen kunnen nu worden geëxporteerd als:
+- 3D-objecten: exporteert de profiellijn als 3D-kruisdelen, met waarden Z uit de delen van de hoogte
+- 2D-profiel: exporteert het profiel als een diagram afstand vs hoogte (d.i. zoals weergegeven in de widget Hoogteprofiel)
+- Tabel Afstand/Hoogte: exporteert monsterwaarden afstand vs hoogte als een tabel
+
+De resultaten kunnen worden opgeslagen als DXF-bestanden, CSV-bestanden, of elk van de standaard weg te schrijven vectorruimtelijke indelingen, Shapefile GeoPackages.
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Lagen toevoegen aan hoogteprofielen
+1. Een expliciete knop \"Lagen toevoegen\" is toegevoegd aan het dok van het hoogteprofiel. Dit verschaft een gebruikersvriendelijke manier voor het toevoegen van nieuwe lagen aan een plot - erop klikken zal een gefilterde lijst van mogelijke lagen weergeven, die kunnen worden toegevoegd aan de plot, maar die momenteel niet zijn opgenomen in de plot (d.i. het zal alle rasterlagen in het project bevatten die niet zijn gemarkeerd als gegevens voor hoogte hebbende). Selecteren van lagen zal ervoor zorgen dat ze automatisch worden gemarkeerd als gegevens voor hoogte hebbend en onmiddellijk worden toegevoegd aan de plot.
+2. Lagen kunnen nu aan hoogteplots worden toegevoegd via slepen en neerzetten vanuit de boom met lagen. Helaas moeten gebruikers expliciet de \"Ctrl\"-toets ingedrukt houden bij het slepen, om de actie voor het kopiëren te forceren wegens beperkingen in de bovenliggende bibliotheken.
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Modus \"Boven vullen\" voor tekenen van hoogteprofiel
+De nieuwe tekenmodus Boven vullen voor profielplots bevat ook aanvullende opties om het bereik te beperken van \"Boven vullen\" en \"Onder vullen\" voor hoogtebereiken van een laag.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Optie toegevoegd om de horizontale/ verticale schaal te vergrendelen voor overeenkomende schalen
+Indien geactiveerd zorgt deze optie ervoor dat de horizontale en verticale schalen altijd gelijk blijven. Bijvoorbeeld: een helling van 45 graden zal altijd in het profiel verschijnen als een helling van 45 graden.
+
+Dit werd mogelijk gemaakt door [Point cloud processing and 3D data enhancements crowdfunding](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-processing-qgis/)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+## Sensoren
+### Mogelijkheid: Bronframewerk sensoren 
+Een bronframewerk voor sensoren verschaft een register voor type sensoren, een beheerder voor sensoren en drie eenvoudige op QIODevice-gebaseerde type sensoren als volgt:
+- TCP socket
+- UDP socket
+- Seriële poort
+
+Een beheerder voor sensoren is aangehecht aan projectinstanties die het voor gebruikers mogelijk maakt sensoren te registreren in hun projectbestanden. Anders dan met andere invoer, zoals een apparaat die een positie aangeeft, wordt van sensoren verwacht dat zij veel meer project-specifieke gegevensinvoer leveren. Het grote voordeel van op project-gebaseerde sensoren is dat het deze veel draagbaarder maakt en gemakkelijker te delen tussen gebruikers.
+
+Een nieuwe functie `sensor_data()` is toegevoegd aan het bereik van het project, die beschikbaar is om te gebruiken met expressies, die de laatste vastgelegde gegevenswaarden voor de sensor teruggeeft voor een specifieke naam van een sensor. Een optionele parameter voor verlopen (in milliseconden) maakt het voor expressies mogelijk een specifieke waarde van de sensor te weigeren als die ouder is dan de opgegeven waarde voor verlopen.
+
+![image31](images/entries/79f13eef3f01b425e4523a9dd9b0922a97712d4f.gif)
+
+Dit werd mogelijk gemaakt door [Sevenson Environmental Services](https://sevenson.com/)
+
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
+### Mogelijkheid: Gebruikersinterface voor register van sensoren en configuratiewidgets
+Configuratiewidgets worden geleverd voor de typen sensoren TCP, UDP en seriële poort die het voor gebruikers mogelijk maken sensoren te configureren, toe te voegen en te verwijderen in het paneel voor de sensoren in het dialoogvenster voor de eigenschappen van het project.
+
+De implementatie omvat een gebruikersinterface voor het register van sensoren om gemakkelijk aanvullende sensoren voor Python te maken en te verpakken als plug-ins.
+
+![image32](images/entries/59e82c99ec67a2bd1778543c7fa649a02e5fcf70.webp)
+
+Dit werd mogelijk gemaakt door [Sevenson Environmental Services](https://sevenson.com/)
+
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
+### Mogelijkheid: Paneel met opties voor sensoren in het dialoogvenster voor de eigenschappen van het project
+Een widget sensortabel wordt verschaft dat geregistreerde sensoren in een project weergeeft, naast acties om met sensoren te verbinden en verbindingen te verbreken. De tabel is toegankelijk via een nieuw paneel voor sensoren in het dialoogvenster voor de eigenschappen van het project.
+
+![image33](images/entries/e797ad206e4fbb63387d98411d8e08c6a6fe0f47.webp)
+
+Dit werd mogelijk gemaakt door [Sevenson Environmental Services](https://sevenson.com/)
+
+Deze mogelijkheid werd ontwikkeld door [Mathieu Pellerin](https://github.com/nirvn)
+## Browser
+### Mogelijkheid: Opmerkingen voor veld instellen in Browser
+Indien ondersteund door providers stelt een nieuwe actie voor velden in het contextmenu van Browser gebruikers in staat de opmerkingen voor de velden in de databron in te stellen/te wijzigen.
+
+Momenteel ondersteund voor indelingen OGR met mogelijkheden voor opmerkingen in velden, zoals GPKG, ESRI File Geodatabase, NetCDF, of Geoparquet, als ook databronnen van PostgreSQL.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Aliassen voor veld instellen in Browser
+Indien ondersteund door providers stelt een nieuwe actie voor velden in het contextmenu van Browser gebruikers in staat de aliassen voor de velden in de databron in te stellen/te wijzigen.
+
+Momenteel ondersteund voor indelingen OGR met mogelijkheden voor opmerkingen in velden, zoals GPKG, ESRI File Geodatabase, NetCDF, of Geoparquet.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+## Gegevensproviders
+### Mogelijkheid: Lagen laden in parallelle threads bij openen van project
+QGIS zal nu parallel ondersteunde lagen laden bij het laden van een project, wat de laadtijden van een project significant verbeterd in bepaalde omstandigheden, zoals wanneer een project enorm veel lagen op afstand bevat.
+
+De provider van de laaggegevens moet, om een laag te laden in een parallelle thread, parallel laden ondersteunen (momenteel providers GDAL en PostgreSQL).
+
+Een nieuwe geavanceerde instelling is beschikbaar om, indien nodig, dit gedrag uit te schakelen.
+
+![image34](images/entries/809438ef5d3fd9f3574891be96131f9d113562d9.webp)
+
+Dit werd mogelijk gemaakt door [KoBold Metals](https://www.koboldmetals.com/)
+
+Deze mogelijkheid werd ontwikkeld door [Vincent Cloarec](https://github.com/vcloarec)
+### Mogelijkheid: Implementeren van server-side filteren met Part 1 of Part 3
+De gegevensprovider WFS/ OGC API for Features (OAPIF) is uitgebreid om verbeterde criteria voor filteren in lijn te brengen met open standaarden.
+
+Nieuwe functionaliteiten omvatten:
+- Ondersteuning voor filteren op eigenschappen van objecten (OGC API Features Part 1 - /rec/core/fc-filters). Dit gebruikt het eindpunt /api om een lijst van te bevragen items te verkrijgen.
+- Ondersteuning voor filteren, gebaseerd op OGC API Features Part 3 - CQL2-text
+- Geef geselecteerde CRS door aan de gebruikersinterface van Querybouwer
+- Implementeer een vertaling expressie getFeature()
+
+Voor compatibiliteit met CQL2text, is de implementatie `/conformance` op de server vereist om ten minste de volgende gegevens te declareren:
+- <http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/filter>
+- <http://www.opengis.net/spec/ogcapi-features-3/1.0/conf/features-filter>
+- <http://www.opengis.net/spec/cql2/1.0/conf/cql2-text>
+- <http://www.opengis.net/spec/cql2/1.0/conf/basic-cql2>
+
+Het eindpunt `/collections/{collid}/queryables` is vereist om de eigenschappen te verkrijgen die kunnen worden bevraagd.
+
+Aanvullende klassen voor conformatie aan geavanceerd filteren omvatten de volgende items:
+- <http://www.opengis.net/spec/cql2/1.0/conf/advanced-comparison-operators>: voor IN, BETWEEN, LIKE
+- <http://www.opengis.net/spec/cql2/1.0/conf/case-insensitive-comparison>: voor ILIKE
+- <http://www.opengis.net/spec/cql2/1.0/conf/basic-spatial-operators>: voor `intersects(geomcolumn, geomFromWkt('POINT(x y)'))` en `bbox_intersects(geomcolumn, geomFromWkt('WKT LITERAL'))`
+
+Deze mogelijkheid werd ontwikkeld door [Even Rouault](https://github.com/rouault)
+### Mogelijkheid: Optie weergeven om bronnen voor vectortegels te laden uit bestanden in Databronnen beheren
+De tab Vectortegel bevat nu keuzes voor het selecteren vanuit een \"Service\" (de bestaande, op een verbinding gebaseerde benadering voor het toevoegen van vectortegels uit bronnen online) of \"Bestand\" (een nieuwe optie die het direct toevoegen van een databron met VTPK- of MBTiles-vectortegelbestanden mogelijk maakt).
+
+![image35](images/entries/d882e2a88732692f8701f27c17fa60c6f376a29e.gif)
+
+Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation, Feldkirch, Austria
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Aanvullende gebruiker beheerde eigenschappen voor vectortegels
+Databronnen voor vectortegels ondersteunen nu door de gebruiker gedefinieerd beheer voor transparantie van de laag en mengmodi.
+
+Aanvullend voegt het de standaardtabs \"Bron\" en \"Renderen\" toe aan het dialoogvenster voor de laageigenschappen van vectortegels. De tab Renderen bevat de op de schaal van de laag gebaseerde zichtbaarheid (net als voor andere typen lagen), en de tab Bron bevat de naam van de laag, overschrijven CRS en provider-specifiek bronbeheer.
+
+Bronwidgets zijn ook voor de providers van VTPK en MBTiles vectortegels, wat beheer mogelijk maakt voor het bron bestandspad voor vtpk/mbtiles.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: Reparatie van defecte ondersteuning voor lagen vectortegels VTPK/MBTiles, VTPK-bestanden weergeven in Browser
+Vectortegellagen geven nu alle vereiste API-items weer voor ondersteuning van de defecte afhandeling en opsporen van lagen, wat hun gedrag consistent maakt met andere laagtypen. Aanvullend, door implementeren van de moderne provider metadata API's voor de provider VTPK zorgen we ervoor dat bestanden VTPK worden weergegeven in het paneel Browser  om ze gemakkelijk op te sporen.
+
+Dit werd mogelijk gemaakt door Landesamt für Vermessung und Geoinformation, Feldkirch, Austria
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+## QGIS Server
+### Mogelijkheid: Opties voor opmaken van PDF voor WMS GetPrint
+De parameter `FORMAT_OPTIONS` in QGIS Server mag nu ook worden gebruikt om opties voor opmaak door te geven voor de indeling PDF aan WMS GetPrint. Dit maakt meer beheer over verzoeken GetPrint mogelijk bij het maken van uitvoer GeoPDF, zoals Georeferencer of instellingen van Geometrie vereenvoudigen.
+
+Deze mogelijkheid werd ontwikkeld door [mhugent](https://github.com/mhugent)
+### Mogelijkheid: Te configureren mogelijkheden grootte cache
+De QGIS Server  cachegrootte voor het GetCapabilities-verzoek kan nu worden geconfigureerd met de parameter `QGIS_SERVER_CAPABILITIES_CACHE_SIZE`, die een invoer integer gebruikt die het aantal te cachen verzoeken specificeert. Een notitie \"Verwijderd gecachet WMS capabilities document\" zal worden gelogd als alle slots bezet zijn en een gecachet document wordt verwijderd.
+
+Deze mogelijkheid werd ontwikkeld door [Jürgen Fischer](https://github.com/jef-n)
+### Mogelijkheid: Weergavenaam toevoegen in antwoord GetFeatureInfo
+Een nieuwe parameter `WITH_DISPLAY_NAME` zal de weergavenaam toevoegen, indien nodig, in het antwoord van `GetFeatureInfo`, soortgelijk aan de bestaande parameter `WITH_MAPTIP`.
+
+Dit werd mogelijk gemaakt door [3liz.com](https://3liz.com)
+
+Deze mogelijkheid werd ontwikkeld door [Étienne Trimaille](https://github.com/Gustry)
+### Mogelijkheid: OGC API - Features: Volledige paginering toegevoegd voor items collectie HTML-pagina
+Om bladeren door de objecten meer gebruikersvriendelijk te maken en om meer informatie te verschaffen, werd het volgende geïmplementeerd en toegevoegd aan de sjabloon voor HTML:
+- volledige paginering die altijd het aantal pagina's weergeeft
+- te configureren grootte pagina via keuzelijst
+- aantal overeenkomende items
+- aantal teruggegeven items
+- besturingselementen voor grootte pagina/paginering ook aan de onderzijde van de pagina
+
+![image36](images/entries/2fc23a3a7f310ae6cc53ae4ff676c5a96eb8c34a.webp)
+
+Deze mogelijkheid werd ontwikkeld door [Björn Hinkeldey](https://github.com/pathmapper)
+## Programmeerbaarheid
+### Mogelijkheid: Verbeteringen voor Help console Python
+Een speciale opdracht `?` is toegevoegd aan de Python-console die hulpvolle berichten voor Help weergeeft, enkele sleutelvariabelen identificeert en hulpfuncties verschaft voor het verbeteren van de ervaring voor ontwikkelaars in QGIS Desktop.
+
+De hulpfuncties `_pyqgis` en `_api` zullen een parameter accepteren (een instantie of klasse), en zullen de overeenkomende objectpagina weergeven uit de documentatie voor QGIS of Qt.
+
+![image37](images/entries/5eae659a4df942e04095e38fa5256e7c1436ae39.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Uitvoeren van shell-opdrachten vanuit de Python Console
+De QGIS Python Console bootst het IPython-gedrag na om systeemopdrachten uit te kunnen voeren.
+- Uitvoeren van elke opdracht die werkt op de opdrachtregel met de syntaxis `!<cmd>`. De console zal een subproces starten en de uitvoer doorsturen naar de uitvoer van de Python-console.
+- Terwijl het subproces wordt uitgevoerd, schakelt de invoer voor Python Console naar de modus STDIN en stuurt ingevoerde tekens door naar het kind-proces. Dit maakt het mogelijk bevestiging te sturen als het kind-proces daarom vraagt.
+- Dit verschaft eenvoudige toegang tot de opdrachten. zoals pip, voor het eenvoudig direct installeren en verwijderen van afhankelijkheden in de context van het project van QGIS. 
+- Als de Console in de modus STDIN staat, zal het drukken op Ctrl+C het sub-proces afsluiten.
+- Beïnvloed het resultaat van een opdracht naar een variabele met de syntaxis `var = !cmd`
+
+![image38](images/entries/6f4da5dd9d63b6c8e0914c4ad4e7e79ccdfea109.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Actie Code opnieuw opmaken voor codebewerkers
+Een actie \"Code opmaken\" is toegevoegd aan de bewerker voor de Python-console die het geautomatiseerd linten/pretty afdrukken van code in lijn met de mogelijkheden van moderne codebewerkers mogelijk maakt.
+
+Aanvullende instellingen voor configuratie van deze actie omvatten:
+- Opmaken bij opslaan: indien ingeschakeld wordt de opmaak toegepast net voor het opslaan van het script
+- Import sorteren: Sorteer geïmporteerde argumenten met isort
+- Maximale regellengte: Beheer hoe de opmaak de regels zal laten doorlopen, en beheert de liniaal van d ebewerker
+
+De opties voor Opmaak maken een selectie mogelijk tussen de gereedschappen voor autopep8 of zwart linting en verschaffen de volgende aanvullende opties:
+- Niveau (alleen autopep8) Bekijk [Autopep8 aggressiveness level](https://pypi.org/project/autopep8/#more-advanced-usage)
+- Aanhalingstekens normaliseren (alleen zwart): Vervang alle enkele aanhalingstekens, indien mogelijk, door dubbele aanhalingstekens
+
+Bewerkingen voor sorteren worden verschaft met isort, wat het mogelijk maakt de geïmporteerde argumenten te sorteren in drie verschillende groepen:
+- standaard import uit bibliotheek  (re, os, sys, json, \…)
+- modules van derde partijen (PyQt5, Pandas, dateutil, \…)
+- modules van eerste partijen (QGIS, Processing, \…)
+
+Deze bewerkingen zullen consistente ontwikkeling faciliteren in lijn met de beste voorbeelden uit de praktijk en de kwaliteit van de code verbeteren, consistentie, leesbaarheid, en operationele efficiëntie (speciaal indien gekoppeld aan systemen voor versiebeheer).
+
+![image39](images/entries/4d955fb378b92e625bbfbd84e720d680fecbd063.gif)
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+### Mogelijkheid: Python console schakelen naar volledig hoofdvenster
+Voegt dezelfde schakelknop toe als die voor 3D-kaartvensters en attributentabellen om het super-gemakkelijk te maken, de Python console om te schakelen naar een volledig hoofdvenster of terug naar een vastgezet widget.
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson](https://github.com/nyalldawson)
+### Mogelijkheid: HTML-code opnieuw opmaken voor codebewerkers
+Bewerkers die de klasse `QgsCodeEditorHTML` gebruiken, zullen in staat zijn de functionaliteit voor het opnieuw opmaken van de code te gebruiken voor pretty print van de HTML-gegevens in QGIS. Onthoud dat voor deze functionaliteit de bibliotheken BeautifulSoup4 of lxml moeten zijn geïnstalleerd in de omgeving Python om de gegevens van XML/ HTML te kunnen parsen.
+
+Deze mogelijkheid werd ontwikkeld door [Yoann Quenach de Quivillic](https://github.com/YoannQDQ)
+## Belangrijke reparaties
+### Mogelijkheid: Reparaties van problemen door Even Rouault (Spatialys)
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| GeoJSON IDs are barely supported (only reading string IDs is supported) | [#53214](https://github.com/qgis/QGIS/issues/53214) | Alleen analyse - reparatie ligt buiten bereik | unreported - \[cleanup\] QgsOgrFeatureIterator(): remove (hopefully!) useless code in subset string case |
+| \"Order by\" memory leak | [#53198](https://github.com/qgis/QGIS/issues/53198) | [PR #53266](https://github.com/qgis/QGIS/pull/53266) | N/B |
+| Browser very slow when opening directory containing several GDB | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53267](https://github.com/qgis/QGIS/pull/53267) | Doesn\'t build with armv7 on openSUSE Tumbleweed |
+| Add .pgwx as potential world file types for georeferenced png | [#53125](https://github.com/qgis/QGIS/issues/53125) | [GDAL PR 7864](https://github.com/OSGeo/gdal/pull/7864) | N/B - reparatie in GDAL |
+| Assertion failed when filtering a GeoParquet layer | [#53301](https://github.com/qgis/QGIS/issues/53301) | [GDAL PR 7882](https://github.com/OSGeo/gdal/pull/7882) | N/B - reparatie in GDAL |
+| Given URL parameters do not persist for WFS OGC API - Features connection | [#49154](https://github.com/qgis/QGIS/issues/49154) | probeerde te reproduceren - te gecompliceerd | Field domain created incorrectly |
+| Field domain created incorrectly | [#52318](https://github.com/qgis/QGIS/issues/52318) | [PR #53314](https://github.com/qgis/QGIS/pull/53314) | [PR #53349](https://github.com/qgis/QGIS/pull/53349) |
+| Longer opening time of GPKG file in newer versions | [#53525](https://github.com/qgis/QGIS/issues/53525) | [PR #53566](https://github.com/qgis/QGIS/pull/53566) | NOG TE DOEN |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Even Rouault (Spatialys)](https://www.spatialys.com/)
+### Mogelijkheid: Reparaties van problemen door Sandro Santilli (strk)
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| QGIS offset line shows perpendicular tags issue | [#53165](https://github.com/qgis/QGIS/issues/53165) | [PR #53234](https://github.com/qgis/QGIS/pull/53234) | [PR #53308](https://github.com/qgis/QGIS/pull/53308) |
+| strange behaviour of single sided buffer algorithm | [#52795](https://github.com/qgis/QGIS/issues/52795) | [geos PR 912](https://github.com/libgeos/geos/pull/912) | N/B - reparatie in GEOS |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Sandro Santilli (strk)](http://strk.kbt.io/)
+### Mogelijkheid: Reparaties van problemen door Alessandro Pasotti (itOpen / qcooperative)
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Legend filter expression has an incomplete context | [#53229](https://github.com/qgis/QGIS/issues/53229) | [PR #53296](https://github.com/qgis/QGIS/pull/53296) | Wachtrij |
+| LineString showing offset in CRS 3857 when using Vertex Tool and \"Clip Features to Canvas Extent\" is enabled | [#45200](https://github.com/qgis/QGIS/issues/45200) | [PR #53384](https://github.com/qgis/QGIS/pull/53384) | Wachtrij |
+| Qgis Server WMTS returns wrong WGS84BoundingBox for the layer | [#53213](https://github.com/qgis/QGIS/issues/53213) | Kan niet worden gereproduceerd | Form not showing (randomly) values except when triggering \"Editing Mode\" |
+| OGC API Features ignores \"X-Qgis-Service-Url\" header | [#53367](https://github.com/qgis/QGIS/issues/53367) | won\'t fix | Vaste grootte legenda wordt niet gerespecteerd bij exporteren van een lay-out |
+| Snap to random vertices after splitting features | [#53040](https://github.com/qgis/QGIS/issues/53040) | Kan niet worden gereproduceerd | Cartographic label placement with \"Distance Offset: From Symbol Bounds\" shows offset for MultiPoint features |
+| Layers rendered as a group seem to bypass the \"Lock Layers\" option in my print composer. | [#53379](https://github.com/qgis/QGIS/issues/53379) | [PR #53428](https://github.com/qgis/QGIS/pull/53428) | in wachtrij maar PR is nog steeds niet beoordeeld |
+| Map Layout composer - Legend item expression not displaying correctly | [#53244](https://github.com/qgis/QGIS/issues/53244) | [PR #53434](https://github.com/qgis/QGIS/pull/53434) | is het niet waard, niet kritisch |
+| opacities parameter doesn\'t apply to labels in GetMap requests | [#48020](https://github.com/qgis/QGIS/issues/48020) | [PR #53438](https://github.com/qgis/QGIS/pull/53438) | in wachtrij maar PR is nog steeds niet beoordeeld |
+| The list in \"Link to existing child features\" does not help in selecting the right child features | [#53410](https://github.com/qgis/QGIS/issues/53410) | won\'t fix | Object Snappen aan lijnen werkt niet voor elementen boog |
+| Attribute form widgets are not disabled when \"Editable\" state is data-defined and layer is not in edit mode | [#53031](https://github.com/qgis/QGIS/issues/53031) | [PR #53506](https://github.com/qgis/QGIS/pull/53506) | N/B |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Alessandro Pasotti (itOpen / qcooperative)](https://www.qcooperative.net/)
+### Mogelijkheid: Reparaties van problemen door Alex Bruy (LutraConsulting)
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| \[Expressions\]: missing \"//\" operator help | [#52094](https://github.com/qgis/QGIS/issues/52094) | [PR #53355](https://github.com/qgis/QGIS/pull/53355) | [PR #53396](https://github.com/qgis/QGIS/pull/53396) |
+| Resample or rescale of a raster image cannot be found in a menu item or in the processing toolbox | [#49208](https://github.com/qgis/QGIS/issues/49208) | [PR #53356](https://github.com/qgis/QGIS/pull/53356) | Fout geproduceerd door sluiten dialoogvenster algoritmes: RuntimeError: wrapped C/C++ object of type QgsMapToolCapture has been deleted |
+| Model designer export as/run as python didn\'t catch newline in algorithm comments | [#50715](https://github.com/qgis/QGIS/issues/50715) | [PR #53358](https://github.com/qgis/QGIS/pull/53358) | [PR #53397](https://github.com/qgis/QGIS/pull/53397) |
+| Add\' button for adding XYZ layer through Data Source Manager remains disabled | [#52622](https://github.com/qgis/QGIS/issues/52622) | [PR #53359](https://github.com/qgis/QGIS/pull/53359) | [PR #53404](https://github.com/qgis/QGIS/pull/53404) |
+| Output of Algorithm jumps top left when moving | [#51757](https://github.com/qgis/QGIS/issues/51757) | [PR #53363](https://github.com/qgis/QGIS/pull/53363) | [PR #53402](https://github.com/qgis/QGIS/pull/53402) |
+| Name column always shows alias instead of field name in refactor fields algorithm | [#53028](https://github.com/qgis/QGIS/issues/53028) | [PR #53365](https://github.com/qgis/QGIS/pull/53365) | [PR #53407](https://github.com/qgis/QGIS/pull/53407) |
+| Sentinel 1 data set not working properly | [#52694](https://github.com/qgis/QGIS/issues/52694) | Geen probleem, verkeerde selectie van gegevensindeling voor grote en complexe geometrieën | Genereren XYZ tiles (MBTiles) - fout bij uitvoeren |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Alex Bruy (LutraConsulting)](https://www.lutraconsulting.co.uk/)
+### Mogelijkheid: Reparaties van problemen door Julien Cabieces
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| QgsRasterIterator.readNextRasterPart() has a memory leak | [#53412](https://github.com/qgis/QGIS/issues/53412) | [PR #53444](https://github.com/qgis/QGIS/pull/53444) | [PR #53445](https://github.com/qgis/QGIS/pull/53445) |
+| Options for some values in Processing are not saved after close window | [#53204](https://github.com/qgis/QGIS/issues/53204) | [PR #53458](https://github.com/qgis/QGIS/pull/53458) | nee |
+| Unable to import layer from Postgis view or materialized view , if it has no no primary key | [#52943](https://github.com/qgis/QGIS/issues/52943) | Is geen probleem |  |
+| Unwanted vertices when tracing | [#52935](https://github.com/qgis/QGIS/issues/52935) |  |  |
+| Topology checker does not highlight all overlap errors in the canvas | [#52903](https://github.com/qgis/QGIS/issues/52903) | [PR #53470](https://github.com/qgis/QGIS/pull/53470) |  |
+| Unable to enter interval size for fixed Interval in Graduated Renderer | [#52356](https://github.com/qgis/QGIS/issues/52356) | [PR #53479](https://github.com/qgis/QGIS/pull/53479) | [PR #53508](https://github.com/qgis/QGIS/pull/53508) |
+| Vector Tile Layers do not clip to layout map frame when mask enabled | [#52347](https://github.com/qgis/QGIS/issues/52347) | Probleem van Qt upstream |  |
+| Splitfeatures function | [#52145](https://github.com/qgis/QGIS/issues/52145) | [PR #53526](https://github.com/qgis/QGIS/pull/53526) |  |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Julien Cabieces (Oslandia)](https://oslandia.com/)
+### Mogelijkheid: Reparaties van problemen door Jean Felder (Oslandia)
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Erased profile plot is redrawn after a layer toggles on/off | [#48117](https://github.com/qgis/QGIS/issues/48117) | [PR #53468](https://github.com/qgis/QGIS/pull/53468) |  |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Jean Felder (Oslandia)](https://oslandia.com/)
+### Mogelijkheid: Reparaties van problemen door Jacky Volpes (Oslandia)
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Legend not updating dynamically when using an atlas | [#53442](https://github.com/qgis/QGIS/issues/53442) | Nog steeds Werk In Uitvoering |  |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Jacky Volpes (Oslandia)](https://oslandia.com/)
+### Mogelijkheid: Reparaties van problemen door Nyall Dawson (North Road)
+| Titel probleem | URL van probleem (Github, indien gerapporteerd) | URL Commit (Github) | 3.28 backport commit (GitHub) |
+| --- | --- | --- | --- |
+| Many fixes for regressions on hidpi displays following improved approach implemented for 3.32 | Meerdere | [PR #53556](https://github.com/qgis/QGIS/pull/53556) , [PR #53533](https://github.com/qgis/QGIS/pull/53533) , [PR #53531](https://github.com/qgis/QGIS/pull/53531) | [PR #53517](https://github.com/qgis/QGIS/pull/53517) |
+| Implement proper support for new vsi archive formats added in GDAL 3.7 | [PR #53515](https://github.com/qgis/QGIS/pull/53515) | NB |  |
+| Store updated postgres credentials in layer source | [#37632](https://github.com/qgis/QGIS/issues/37632) | [PR #53465](https://github.com/qgis/QGIS/pull/53465) | NB |
+| Cleanup iface signal connections when unloading processing plugin | [#53455](https://github.com/qgis/QGIS/issues/53455) | [PR #53461](https://github.com/qgis/QGIS/pull/53461) | Te riskant / te weinig profijt |
+| Avoid UI lock when closing Execute SQL window | Niet gerapporteerd | [PR #53448](https://github.com/qgis/QGIS/pull/53448) | Te riskant |
+| Gracefully cleanup empty python faulthandler log files | [#50609](https://github.com/qgis/QGIS/issues/50609) | [PR #53417](https://github.com/qgis/QGIS/pull/53417) | Te riskant |
+| Fix a crash on QGIS close | Niet gerapporteerd | [PR #53414](https://github.com/qgis/QGIS/pull/53414) | [PR #53418](https://github.com/qgis/QGIS/pull/53418) |
+| Correctly cleanup project archive files before attempting to clear/replace archive | [#53034](https://github.com/qgis/QGIS/issues/53034) | [PR #53400](https://github.com/qgis/QGIS/pull/53400) | Te riskant |
+| Don\'t open datasets when populating browser directories to determine layer drop support | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53398](https://github.com/qgis/QGIS/pull/53398) | Afgewezen |
+| Fix crash when writing processing history entry | Niet gerapporteerd | [PR #53394](https://github.com/qgis/QGIS/pull/53394) | NB |
+| Fix issue causing CRS selection to be ignored | [#53309](https://github.com/qgis/QGIS/issues/53309) | [PR #53393](https://github.com/qgis/QGIS/pull/53393) | Fix blurry style icons in project properties dialog on hidpi displays |
+| Fix grass provider points to out of date help documents | [#53105](https://github.com/qgis/QGIS/issues/53105) | [PR #53372](https://github.com/qgis/QGIS/pull/53372) | [PR #53375](https://github.com/qgis/QGIS/pull/53375) |
+| Fix point text annotation rotation, alignment issues | Niet gerapporteerd | [PR #53337](https://github.com/qgis/QGIS/pull/53337) | NB |
+| Expand range of z index spin for annotations | Niet gerapporteerd | [PR #53319](https://github.com/qgis/QGIS/pull/53319) | [PR #53326](https://github.com/qgis/QGIS/pull/53326) |
+| Fix incorrect scaling of text background markers in annotations | Niet gerapporteerd | [PR #53318](https://github.com/qgis/QGIS/pull/53318) | Fix crash on invalid grass layer paths |
+| Flag OneDrive remote folders as remote, slow to open paths on Windows | [#51710](https://github.com/qgis/QGIS/issues/51710) | [PR #53315](https://github.com/qgis/QGIS/pull/53315) | Te riskant |
+| Fix crash when creating new grass mapsets when \"set\" is pressed and no region is selected | Niet gerapporteerd | [PR #53293](https://github.com/qgis/QGIS/pull/53293) | [PR #53311](https://github.com/qgis/QGIS/pull/53311) |
+| Fix custom coordinate transform test results | [#52184](https://github.com/qgis/QGIS/issues/52184) | [PR #53292](https://github.com/qgis/QGIS/pull/53292) | [PR #53353](https://github.com/qgis/QGIS/pull/53353) |
+| Don\'t create alpha bands for non-rotated, south up rasters | [#50879](https://github.com/qgis/QGIS/issues/50879) | [PR #53290](https://github.com/qgis/QGIS/pull/53290) | [PR #53310](https://github.com/qgis/QGIS/pull/53310) |
+| Greatly speed up browser when a large number of files are visible | [#53265](https://github.com/qgis/QGIS/issues/53265) | [PR #53268](https://github.com/qgis/QGIS/pull/53268) | [PR #53299](https://github.com/qgis/QGIS/pull/53299) |
+| Pass renderer usage from download vector tile algorithm | [#53183](https://github.com/qgis/QGIS/issues/53183) | [PR #53258](https://github.com/qgis/QGIS/pull/53258) | NB |
+
+Dit werd mogelijk gemaakt door [QGIS.ORG (door donoren en dragende leden)](https://qgis.org/)
+
+Deze mogelijkheid werd ontwikkeld door [Nyall Dawson (North Road)](https://north-road.com/)
+
+{{<content-end >}}

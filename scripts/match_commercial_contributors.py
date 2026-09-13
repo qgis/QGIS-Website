@@ -1,0 +1,201 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Match commercial support organizations with contributing organizations
+based on domain name and generate a mapping file.
+
+Usage:
+    python scripts/match_commercial_contributors.py
+"""
+
+import json
+import yaml
+from urllib.parse import urlparse
+import os
+import re
+from datetime import datetime, timedelta
+
+def normalize_domain(url):
+    """Extract and normalize domain from URL"""
+    if not url:
+        return None
+    
+    try:
+        parsed = urlparse(url)
+        domain = parsed.netloc or parsed.path
+        # Remove www. prefix
+        domain = re.sub(r'^www\.', '', domain, flags=re.IGNORECASE)
+        # Remove trailing slashes and paths
+        domain = domain.split('/')[0]
+        # Convert to lowercase
+        return domain.lower()
+    except:
+        return None
+
+def normalize_name(name):
+    """Normalize organization name for matching"""
+    if not name:
+        return None
+    
+    # Remove common suffixes and standardize
+    normalized = name.lower()
+    # Remove legal entities
+    normalized = re.sub(r'\s*(pty\.?|ltd\.?|limited|inc\.?|llc|gmbh|s\.?r\.?l\.?)\s*', '', normalized, flags=re.IGNORECASE)
+    # Remove extra whitespace
+    normalized = re.sub(r'\s+', ' ', normalized).strip()
+    return normalized
+
+def is_contributor_active(contributor_org, months_threshold=12):
+    """
+    Determine if a contributor is active based on their last contribution.
+    Active = contributed within the last N months (default: 12 months)
+    """
+    if not contributor_org.get('contributions'):
+        return False
+    
+    cutoff_date = datetime.now() - timedelta(days=months_threshold * 30)
+    
+    # Check all contribution areas
+    for area, details in contributor_org['contributions'].items():
+        if 'last_contribution' in details:
+            try:
+                last_contrib = datetime.strptime(details['last_contribution'], '%Y-%m-%d')
+                if last_contrib >= cutoff_date:
+                    return True
+            except (ValueError, TypeError):
+                continue
+    
+    return False
+
+def load_commercial_support():
+    """Load all commercial support organizations"""
+    base_path = 'data/commercial_support'
+    orgs = []
+    
+    for filename in ['core_contributors.yml', 'contributors.yml', 'others.yml']:
+        filepath = os.path.join(base_path, filename)
+        if os.path.exists(filepath):
+            with open(filepath, 'r', encoding='utf-8') as f:
+                data = yaml.safe_load(f)
+                if data:
+                    for org in data:
+                        org['category'] = filename.replace('.yml', '')
+                        orgs.append(org)
+    
+    return orgs
+
+def load_contributing_orgs():
+    """Load contributing organizations"""
+    filepath = 'data/contributors/organizations.json'
+    with open(filepath, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def match_organizations(commercial_orgs, contributing_orgs):
+    """Match organizations between commercial support and contributors"""
+    matches = {}
+    unmatched_count = 0
+    
+    # Create lookup dictionaries for contributing orgs
+    contrib_by_domain = {}
+    contrib_by_name = {}
+    
+    for contrib_org in contributing_orgs:
+        domain = normalize_domain(contrib_org.get('url'))
+        if domain:
+            contrib_by_domain[domain] = contrib_org
+        
+        name = normalize_name(contrib_org.get('name'))
+        if name:
+            contrib_by_name[name] = contrib_org
+    
+    # Match commercial orgs
+    for comm_org in commercial_orgs:
+        # Try matching by domain first (most reliable)
+        comm_domain = normalize_domain(comm_org.get('url'))
+        contributor = None
+        match_method = None
+        
+        if comm_domain and comm_domain in contrib_by_domain:
+            contributor = contrib_by_domain[comm_domain]
+            match_method = 'domain'
+        # Try matching by name if domain match fails
+        elif normalize_name(comm_org['name']) in contrib_by_name:
+            contributor = contrib_by_name[normalize_name(comm_org['name'])]
+            match_method = 'name'
+        
+        # Only add to matches if there's a match
+        if contributor:
+            is_active = is_contributor_active(contributor)
+            match_info = {
+                'is_contributor': True,
+                'contributor_name': contributor['name'],
+                'is_active': is_active
+            }
+            matches[comm_org['name']] = match_info
+        else:
+            unmatched_count += 1
+    
+    return matches, unmatched_count
+
+def save_matches(matches, total_orgs, unmatched_count):
+    """Save matches to JSON file"""
+    output_path = 'data/commercial_support/contributor_matches.json'
+    
+    # Add metadata
+    output = {
+        '_automated_warning': {
+            'generated_by': 'scripts/match_commercial_contributors.py',
+            'warning': 'This file is automatically generated. Do NOT edit manually!',
+            'how_to_update': 'Run python scripts/match_commercial_contributors.py',
+            'note': 'Only matched organizations are included to keep file size minimal'
+        },
+        'matches': matches
+    }
+    
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    
+    print(f"✅ Matches saved to {output_path}")
+    
+    # Print statistics
+    matched = len(matches)
+    active_count = sum(1 for m in matches.values() if m.get('is_active', False))
+    inactive_count = matched - active_count
+    
+    print(f"\n📊 Statistics:")
+    print(f"   Total commercial support orgs: {total_orgs}")
+    print(f"   Matched with contributors: {matched}")
+    print(f"   - Active contributors: {active_count}")
+    print(f"   - Inactive contributors: {inactive_count}")
+    print(f"   Unmatched: {unmatched_count}")
+    # total_orgs is 0 when the commercial-support data is empty or missing;
+    # report 0% rather than raising ZeroDivisionError.
+    match_rate = (matched / total_orgs * 100) if total_orgs else 0.0
+    print(f"   Match rate: {match_rate:.1f}%")
+    
+    # Print matched organizations
+    if matched > 0:
+        print(f"\n✅ Matched organizations:")
+        for name, info in sorted(matches.items()):
+            status = "🟢 Active" if info.get('is_active', False) else "🟡 Inactive"
+            print(f"   {status} • {name} → {info['contributor_name']}")
+
+def main():
+    print("🔍 Matching commercial support with contributing organizations...\n")
+    
+    # Load data
+    commercial_orgs = load_commercial_support()
+    contributing_orgs = load_contributing_orgs()
+    
+    total_orgs = len(commercial_orgs)
+    print(f"Loaded {total_orgs} commercial support organizations")
+    print(f"Loaded {len(contributing_orgs)} contributing organizations\n")
+    
+    # Match organizations
+    matches, unmatched_count = match_organizations(commercial_orgs, contributing_orgs)
+    
+    # Save results
+    save_matches(matches, total_orgs, unmatched_count)
+if __name__ == '__main__':
+    main()

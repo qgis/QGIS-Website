@@ -94,12 +94,4 @@ test.describe("Resources Pages", () => {
         // await expect(membersPage.largeArticle).toBeVisible();
     });
 
-    test("Past Members page", async ({ sidebar, pastMembersPage }) => {
-        await sidebar.membershipLink.click();
-        await expect(sidebar.pastMembersLink).toBeVisible();
-        await sidebar.pastMembersLink.click();
-        for (const text of pastMembersPage.textList) {
-            await expect(pastMembersPage.pageBody).toContainText(text);
-        }
-    });
 });

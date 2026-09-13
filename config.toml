@@ -2,7 +2,7 @@
 baseURL = 'https://qgis.org/'
 languageCode = 'en-us'
 title = 'QGIS Web Site'
-theme = 'hugo-bulma-blocks-theme'
+theme = 'qgis-website-theme'
 # Default pagination.
 # Can override this when needed e.g. {{ range (.Paginator 5).Pages }}
 [pagination]
@@ -82,14 +82,14 @@ fancy-font = "'Sevillana', cursive"
 menuFontClass = "is-size-6"
 ## Gh repo edit link
 ## This repo is used for the "Edit this page" link
-githubRepo = "https://github.com/qgis/QGIS-Website/"
+githubRepo = "https://github.com/qgis/QGIS-Website"
 githubSubdir = "content"
 githubBranch = "main"
 
 ## GH Repo for filing a new issue
-githubIssueUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/issues/new/choose"
+githubIssueUrl = "https://github.com/qgis/QGIS-Hugo-Website-Theme/issues/new/choose"
 ### Edit content repo (set to automatically enter "edit" mode; this is good for "improve this page" links)
-githubEditUrl = "https://github.com/kartoza/hugo-bulma-blocks-theme/edit/main"
+githubEditUrl = "https://github.com/qgis/QGIS-Hugo-Website-Theme/edit/main"
 ### Radius for boxes
 corner-radius = "0px"
 
@@ -98,12 +98,19 @@ uniNavHeaderUrl = 'https://qgis.github.io/qgis-uni-navigation/index.js'
 uniNavHeaderLocationPrefix = ""
 
 ## Url to news feed. After URL change you have to check 
-## themes/hugo-bulma-blocks-theme/layouts/partials/contextmenu.html 
+## themes/qgis-website-theme/layouts/partials/contextmenu.html 
 ## file to ensure that it adresses the correct keys 
 newsfeed ='https://feed.qgis.org/?lang=en&json=1'
 
 ## This will turn on Coockie popup. True to show popup
 cookiesstate = false
+
+## Language redirect: only redirect users to their language when Transifex
+## coverage for that language meets this minimum percentage (0-100).
+## Languages below this threshold stay on the English root path.
+## Also used by scripts/i18n/filter_languages_by_coverage.py to decide which
+## languages to include in the build at all.
+langRedirectThreshold = 35
 
 # Matomo
 matomoURL = "//matomo.qgis.org/"
@@ -145,107 +152,155 @@ sectionPagesMenu = 'main'
   url = "/project/overview"
   weight = 10
   #pre = "<i class='fa-solid fa-clipboard-question mr-1'></i>"
+  [menu.main.params]
+    i18n_key = "menuProject"
 
 [[menu.main]]
   parent = "Project"
   name = "Overview"
   url = "/project/overview/"
   weight = 10
+  [menu.main.params]
+    i18n_key = "menuOverview"
 
 [[menu.main]]
   parent = "Project"
   name = "Case studies"
   url = "/project/case-studies/"
   weight = 20
+  [menu.main.params]
+    i18n_key = "menuCaseStudies"
 
 [[menu.main]]
   parent = "Overview"
   name = "Maps"
   url = "/project/overview/maps/"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuMaps"
 
 [[menu.main]]
   parent = "Overview"
   name = "Screenshots"
   url = "/project/overview/screenshots/"
   weight = 30  
+  [menu.main.params]
+    i18n_key = "menuScreenshots"
+
 
 [[menu.main]]
   parent = "Project"
   name = "Plugins"
   url = "https://plugins.qgis.org"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuPlugins"
+
 
 [[menu.main]]
   parent = "Project"
   name = "All News"
   url = "https://feed.qgis.org"
   weight = 40
+  [menu.main.params]
+    i18n_key = "menuAllNews"
+
 
 [[menu.main]]
   parent = "Project"
   name = "Visual Changelogs"
   url = "/project/visual-changelogs"
   weight = 50
+  [menu.main.params]
+    i18n_key = "menuVisualChangelogs"
+
 
 [[menu.main]]
   parent = "Project"
   name = "QGIS Metrics"
   url = "https://analytics.qgis.org"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuQGISMetrics"
+
 
 [[menu.main]]
   name = "Community"
   url = "/community/involve"
   weight = 20
+  [menu.main.params]
+    i18n_key = "menuCommunity"
 
 [[menu.main]]
   parent = "Community"
   name = "Get involved"
   url = "/community/involve"
   weight = 10
+  [menu.main.params]
+    i18n_key = "menuGetInvolved"
 
 [[menu.main]]
   parent = "Community"
   name = "Certification Programme"
   url = "/community/certification"
   weight = 20
+  [menu.main.params]
+    i18n_key = "menuCertificationProgramme"
+
 
 [[menu.main]]
   parent = "Community"
   name = "QGIS Foundation"
   url = "/community/foundation"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuQGISFoundation"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Charter"
   url = "/community/foundation/charter"
   weight = 40
+  [menu.main.params]
+    i18n_key = "menuCharter"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Annual General Meetings"
   url = "/community/foundation/annual_general_meetings"
   weight = 50
+  [menu.main.params]
+    i18n_key = "menuAnnualGeneralMeetings"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Annual Reports"
   url = "/community/foundation/annual_reports"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuAnnualReports"
+
 
 [[menu.main]]
   parent = "QGIS Foundation"
   name = "Finance"
   url = "/community/foundation/finance"
   weight = 70
+  [menu.main.params]
+    i18n_key = "menuFinance"
+
 
 [[menu.main]]
   parent = "Community"
   name = "Project Organisation"
   url = "/community/organisation"
   weight = 80
+  [menu.main.params]
+    i18n_key = "menuProjectOrganisation"
+
 
 
 [[menu.main]]
@@ -253,12 +308,24 @@ sectionPagesMenu = 'main'
   name = "Infrastructure"
   url = "/community/organisation/infrastructure"
   weight = 100
+  [menu.main.params]
+    i18n_key = "menuInfrastructure"
+
+
+[[menu.main]]
+  parent = "Project Organisation"
+  name = "Grant Program"
+  url = "/community/organisation/grants"
+  weight = 120
 
 [[menu.main]]
   parent = "Community"
   name = "Local User Groups"
   url = "/community/groups"
   weight = 110
+  [menu.main.params]
+    i18n_key = "menuLocalUserGroups"
+
 
 
 
@@ -267,30 +334,45 @@ sectionPagesMenu = 'main'
   name = "Brand Guidelines"
   url = "/community/organisation/guidelines"
   weight = 130
+  [menu.main.params]
+    i18n_key = "menuBrandGuidelines"
+
 
 [[menu.main]]
   parent = "Project Organisation"
   name = "Contributor Credits"
   url = "/community/organisation/credits"
   weight = 140
+  [menu.main.params]
+    i18n_key = "menuContributorCredits"
+
 
 [[menu.main]]
   parent = "Project Organisation"
   name = "Meetings"
   url = "/community/organisation/meetings"
   weight = 180
+  [menu.main.params]
+    i18n_key = "menuMeetings"
+
 
 [[menu.main]]
   parent = "Meetings"
-  name = "QGIS UC 2025"
-  url = "https://uc2025.qgis.org/"
+  name = "QGIS User Conference"
+  url = "https://conference.qgis.org/"
   weight = 185
+  [menu.main.params]
+    i18n_key = "menuQGISUC"
+
 
 [[menu.main]]
   parent = "Meetings"
   name = "QGIS User Meetings"
   url = "/community/organisation/meetings/user_meetings"
   weight = 190
+  [menu.main.params]
+    i18n_key = "menuQGISUserMeetings"
+
 
 
 [[menu.main]]
@@ -298,30 +380,85 @@ sectionPagesMenu = 'main'
   name = "QGIS Developer Meetings"
   url = "/community/organisation/meetings/dev_meetings"
   weight = 200
+  [menu.main.params]
+    i18n_key = "menuQGISDeveloperMeetings"
+
 
 [[menu.main]]
   parent = "Meetings"
   name = "Reimbursements for Developer Meetings"
   url = "/community/organisation/meetings/reimbursements"
   weight = 210
+  [menu.main.params]
+    i18n_key = "menuReimbursementsForDeveloperMeetings"
+
 
 [[menu.main]]
   parent = "Project Organisation"
   name = "Mailing Lists"
   url = "/community/organisation/mailinglists"
   weight = 220
-  
+  [menu.main.params]
+    i18n_key = "menuMailingLists"
+
+
+[[menu.main]]
+  parent = "Community"
+  name = "Contributors"
+  url = "/community/contributors"
+  weight = 240
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Sol Katz Award"
+  url = "/community/contributors/sol-katz-award"
+  weight = 241
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Organizations"
+  url = "/community/contributors/organisations"
+  weight = 242
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Individuals"
+  url = "/community/contributors/individuals"
+  weight = 243
+
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Supporting"
+  url = "/community/contributors/supporting"
+  weight = 244
+
+[[menu.main]]
+  parent = "Contributors"
+  name = "Map"
+  url = "/community/contributors/map"
+  weight = 245
+
 [[menu.main]]
   parent = "Community"
   name = "Members Blogs"
   url = "https://planet.qgis.org"
   weight = 280
+  [menu.main.params]
+    i18n_key = "menuMembersBlogs"
+
+
+
 
 [[menu.main]]
   name = "Resources"
   url = "/resources/hub"
   weight = 40 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"
+  [menu.main.params]
+    i18n_key = "menuResources"
 
 [[menu.main]]
   parent = "Resources"
@@ -329,6 +466,9 @@ sectionPagesMenu = 'main'
   url = "/resources/hub"
   weight = 5 # Sets the menu order 
   #pre = "<i class='fa-solid fa-handshake-angle mr-1'></i>"  
+  [menu.main.params]
+    i18n_key = "menuDocumentation"
+
 
 
 [[menu.main]]
@@ -336,24 +476,32 @@ sectionPagesMenu = 'main'
   name = "Goodies"
   url = "/goodies"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuGoodies"
 
 [[menu.main]]
   name = "Download"
   url = "/download/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 80 # Sets the menu order 
+  weight = 80 # Sets the menu order
+  [menu.main.params]
+    i18n_key = "menuDownload" 
 
 [[menu.main]]
   name = "Archive"
   url = "/archive/"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 90 # Sets the menu order 
+  weight = 90 # Sets the menu order
+  [menu.main.params]
+    i18n_key = "menuArchive" 
 
 [[menu.main]]
   name = "Funding"
   url = "/funding/donate"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
-  weight = 50 # Sets the menu order 
+  weight = 50 # Sets the menu order
+  [menu.main.params]
+    i18n_key = "menuFunding" 
 
 [[menu.main]]
   parent = "Funding"
@@ -361,37 +509,45 @@ sectionPagesMenu = 'main'
   url = "/funding/donate"
   #pre = "<i class='fa-solid fa-circle-down mr-1'></i>"
   weight = 30 # Sets the menu order 
+  [menu.main.params]
+    i18n_key = "menuDonate"
+
 
 [[menu.main]]
   parent = "Funding"
   name = "Membership"
   url = "/funding/membership"
   weight = 230
+  [menu.main.params]
+    i18n_key = "menuMembership"
+
 
 [[menu.main]]
   parent = "Membership"
   name = "Members"
   url = "/funding/membership/members"
   weight = 240
+  [menu.main.params]
+    i18n_key = "menuMembers"
 
-
-[[menu.main]]
-  parent = "Membership"
-  name = "Past Members"
-  url = "/funding/membership/past_members"
-  weight = 260
 
 [[menu.main]]
   parent = "Donate"
   name = "Donors"
   url = "/funding/donate/donors"
   weight = 270
+  [menu.main.params]
+    i18n_key = "menuDonors"
+
 
 [[menu.main]]
   parent = "Donate"
   name = "GitHub Sponsors"
   url = "/funding/donate/github-sponsors"
   weight = 280
+  [menu.main.params]
+    i18n_key = "menuGitHubSponsors"
+
 
 # Submenus are done this way: parent -> identifier
 [[menu.main]]
@@ -399,239 +555,352 @@ sectionPagesMenu = 'main'
   name = "Installation guide"
   url = "/resources/installation-guide/"
   weight = 10
+  [menu.main.params]
+    i18n_key = "menuInstallationGuide"
+
   [[menu.main]]
     parent = "Installation guide"
     name = "Windows"
     url = "/resources/installation-guide/#windows"
     weight = 20
+    [menu.main.params]
+      i18n_key = "menuWindows"
 
   [[menu.main]]
     parent = "Windows"
     name = "Offline (Standalone) installers"
     url = "/resources/installation-guide/#offline-standalone-installers"
     weight = 30
+    [menu.main.params]
+      i18n_key = "menuOfflineStandaloneInstallers"
 
   [[menu.main]]
     parent = "Windows"
     name = "Online (OSGeo4W) installer"
     url = "/resources/installation-guide/#online-osgeo4w-installer"
     weight = 40
+    [menu.main.params]
+      i18n_key = "menuOnlineOSGeo4WInstaller"
+
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Linux"
     url = "/resources/installation-guide/#linux"
     weight = 50
+    [menu.main.params]
+      i18n_key = "menuLinux"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Debian / Ubuntu"
     url = "/resources/installation-guide/#debian--ubuntu"
     weight = 60
+    [menu.main.params]
+      i18n_key = "menuDebianUbuntu"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Flatpak"
     url = "/resources/installation-guide/#flatpak"
     weight = 70
+    [menu.main.params]
+      i18n_key = "menuFlatpak"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Fedora"
     url = "/resources/installation-guide/#fedora"
     weight = 90
+    [menu.main.params]
+      i18n_key = "menuFedora"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "NixOS"
     url = "/resources/installation-guide/#nixos"
     weight = 100
+    [menu.main.params]
+      i18n_key = "menuNixOS"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "SUSE / openSUSE"
     url = "/resources/installation-guide/#suse--opensuse"
     weight = 110
+    [menu.main.params]
+      i18n_key = "menuSUSEOpenSUSE"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Mandriva"
     url = "/resources/installation-guide/#mandriva"
     weight = 120
+    [menu.main.params]
+      i18n_key = "menuMandriva"
+
 
   [[menu.main]]
     parent = "Linux"
     name = "Slackware"
     url = "/resources/installation-guide/#slackware"
     weight = 130
+    [menu.main.params]
+      i18n_key = "menuSlackware"
 
   [[menu.main]]
     parent = "Linux"
     name = "Arch Linux"
     url = "/resources/installation-guide/#arch-linux"
     weight = 140
+    [menu.main.params]
+      i18n_key = "menuArchLinux"
 
   [[menu.main]]
     parent = "Linux"
     name = "Spack"
     url = "/resources/installation-guide/#spack"
     weight = 160
+    [menu.main.params]
+      i18n_key = "menuSpack"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Mac OS X / macOS"
     url = "/resources/installation-guide/#mac-os-x--macos"
     weight = 170
+    [menu.main.params]
+      i18n_key = "menuMacOSXMacOS"
 
   [[menu.main]]
     parent = "Mac OS X / macOS"
     name = "Binary packages (installers)"
     url = "/resources/installation-guide/#binary-packages-installers"
     weight = 180
+    [menu.main.params]
+      i18n_key = "menuBinaryPackagesInstallers"
 
   [[menu.main]]
     parent = "Mac OS X / macOS"
     name = "MacPorts"
     url = "/resources/installation-guide/#macports"
     weight = 190
+    [menu.main.params]
+      i18n_key = "menuMacPorts"
 
   [[menu.main]]
     parent = "Mac OS X / macOS"
     name = "Old releases"
     url = "/resources/installation-guide/#old-releases"
     weight = 200
+    [menu.main.params]
+      i18n_key = "menuOldReleases"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "FreeBSD"
     url = "/resources/installation-guide/#freebsd"
     weight = 210
+    [menu.main.params]
+      i18n_key = "menuFreeBSD"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "OpenBSD"
     url = "/resources/installation-guide/#openbsd"
     weight = 220
+    [menu.main.params]
+      i18n_key = "menuOpenBSD"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Container images"
     url = "/resources/installation-guide/#container-images"
     weight = 230
+    [menu.main.params]
+      i18n_key = "menuContainerImages"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "QGIS Testing warning"
     url = "/resources/installation-guide/#qgis-testing-warning"
     weight = 240
+    [menu.main.params]
+      i18n_key = "menuQGISTestingWarning"
 
   [[menu.main]]
     parent = "Installation guide"
     name = "Installing from Source"
     url = "/resources/installation-guide/#installing-from-source"
     weight = 250
+    [menu.main.params]
+      i18n_key = "menuInstallingFromSource"
 
 [[menu.main]]
   parent = "Resources"
   name = "Testing"
   url = "/resources/testing/"
   weight = 30
+  [menu.main.params]
+    i18n_key = "menuTesting"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Roadmap"
   url = "/resources/roadmap/"
   weight = 40
+  [menu.main.params]
+    i18n_key = "menuRoadmap"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Reports"
   url = "/resources/reports/"
   weight = 50
+  [menu.main.params]
+    i18n_key = "menuReports"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Resources Hub"
   url = "https://hub.qgis.org"
   weight = 55
+  [menu.main.params]
+    i18n_key = "menuResourcesHub"
+
 
 [[menu.main]]
   parent = "Reports"
   name = "OGC Certification"
   url = "/resources/reports/#ogc-certification"
   weight = 60
+  [menu.main.params]
+    i18n_key = "menuOGCCertification"
+
 
 [[menu.main]]
   parent = "Reports"
   name = "Performance"
   url = "/resources/reports/#performance"
   weight = 70
+  [menu.main.params]
+    i18n_key = "menuPerformance"
+
 
 [[menu.main]]
   parent = "Reports"
   name = "Security"
   url = "/resources/reports/#security"
   weight = 80
+  [menu.main.params]
+    i18n_key = "menuSecurity"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Books"
   url = "/resources/books/"
   weight = 90
+  [menu.main.params]
+    i18n_key = "menuBooks"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Contact and Support"
   url = "/resources/support/"
   weight = 100
+  [menu.main.params]
+    i18n_key = "menuContactAndSupport"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "FAQ"
   url = "/resources/support/faq"
   weight = 110
+  [menu.main.params]
+    i18n_key = "menuFAQ"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Bug Reporting"
   url = "/resources/support/bug-reporting"
   weight = 120
+  [menu.main.params]
+    i18n_key = "menuBugReporting"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Contributor Requirements"
   url = "/resources/support/contributors-requirements"
   weight = 130
+  [menu.main.params]
+    i18n_key = "menuContributorRequirements"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Communication channels"
   url = "/resources/support/#communication-channels"
   weight = 140
+  [menu.main.params]
+    i18n_key = "menuCommunicationChannels"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Commercial support"
   url = "/resources/support/commercial-support"
   weight = 150
+  [menu.main.params]
+    i18n_key = "menuCommercialSupport"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "StackExchange"
   url = "/resources/support/#stackexchange"
   weight = 160
+  [menu.main.params]
+    i18n_key = "menuStackExchange"
+
 
 [[menu.main]]
   parent = "Resources"
   name = "Blog"
   url = "https://blog.qgis.org/"
   weight = 180
+  [menu.main.params]
+    i18n_key = "menuBlog"
+
 
 [[menu.main]]
   parent = "Contact and Support"
   name = "Security"
   url = "/resources/support/security"
   weight = 190
+  [menu.main.params]
+    i18n_key = "menuSecurity"
+
+
+
+[[menu.main]]
+  parent = "Contact and Support"
+  name = "Privacy Policy"
+  url = "/resources/support/privacy/"
+  weight = 200
 
 
 [[menu.main]]
@@ -717,9 +986,14 @@ sectionPagesMenu = 'main'
   weight = 15
 
 [[menu.lang]]
+  name = "🇸🇪 Svenska"
+  url = "sv"
+  weight = 16
+
+[[menu.lang]]
   name = "🇨🇳 简体中文"
   url = "zh-Hans"
-  weight = 16
+  weight = 17
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "version", "version-ltr", "version-json"]
@@ -740,3 +1014,130 @@ sectionPagesMenu = 'main'
   isPlainText = true
   mediaType = "application/json"
 
+[i18n]
+  package = "messages"
+  genToOtherDir = true
+  srcDir = "content"
+  genDir = "content-translated"
+  excludedKeys = "heroSize heroImage HeroImage heroLogo Badge BadgeLink ButtonLink sidebar submenus draft showcase source Reviewer reviewer Reviewed reviewed startDate endDate"
+  [i18n.shortcodes]
+    [i18n.shortcodes.params]
+      feature = ["title", "text", "col-title-1", "col-text-1", "col-title-2", "col-text-2", "col-title-3", "col-text-3"]
+      block = ["title", "subtitle"]
+      button = ["text"]
+      box-start = ["ribbon"]
+      rich-list = ["listTitle", "listSubtitle"]
+      spoiler-start = ["title"]
+      rich-box = ["icon"]
+      hero-banner = ["title", "subtitle"]
+      info-card = ["title", "description"]
+      info-bar = ["text"]
+      info-icons = ["text"]
+      steps-bar = ["text"]
+      table = ["title"]
+      tabs = ["tab1", "tab2", "tab3", "tab4", "tab5"]
+      content-start = ["header"]
+
+  [i18n.content]
+    [i18n.content.default]
+      files = ["content/_index.md"]
+      globs = [
+        "content/**/*.md",
+        "content/**/**/*.md", 
+        "content/**/**/**/*.md",
+        "content/**/**/**/**/*.md"
+      ]
+      excludedGlobs = [
+        "content/community-blogs/**",
+        "content/funders/**",
+        "content/flickr-images/**",
+        "content/project/visual-changelogs/**/funders/**"
+        ]
+  [languages]
+    [languages.en]
+    languageCode = "en"
+    title = "QGIS"
+    weight = 2
+    contentDir = "content-translated/en"
+
+    [languages.nl]
+    languageCode = "nl"
+    weight = 2
+    contentDir = "content-translated/nl"
+
+
+    [languages.ro]
+    languageCode = "ro"
+    weight = 2
+    contentDir = "content-translated/ro"
+
+
+    [languages.ja]
+    languageCode = "ja"
+    weight = 2
+    contentDir = "content-translated/ja"
+
+
+    [languages.it]
+    languageCode = "it"
+    weight = 2
+    contentDir = "content-translated/it"
+
+
+    [languages.hu]
+    languageCode = "hu"
+    weight = 2
+    contentDir = "content-translated/hu"
+
+[module]
+  # English (base language) - only original content
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "en"
+
+  # All other languages - translated content first, fallback to original
+  [[module.mounts]]
+    source = "content-translated/nl"
+    target = "content"
+    lang = "nl"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "nl"
+
+  [[module.mounts]]
+    source = "content-translated/ro"
+    target = "content"
+    lang = "ro"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ro"
+
+  [[module.mounts]]
+    source = "content-translated/ja"
+    target = "content"
+    lang = "ja"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "ja"
+
+  [[module.mounts]]
+    source = "content-translated/it"
+    target = "content"
+    lang = "it"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "it"
+
+  [[module.mounts]]
+    source = "content-translated/hu"
+    target = "content"
+    lang = "hu"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+    lang = "hu"
