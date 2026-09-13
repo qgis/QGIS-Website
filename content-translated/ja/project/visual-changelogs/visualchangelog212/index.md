@@ -113,12 +113,12 @@ QGIS 2.12は、ウィンドウの背景、ボタンなどの外観をカスタ�
 - `make_point(x,y)` は、手動でポイントジオメトリを作成します
 - `x(geom)`、 `y(geom)` 関数は、ポイントジオメトリの x と y 座標、または、非ポイントジオメトリの重心 x/y を返す 
 
-A new `project_color` function has been added, which allows you to retrieve a color from the project\'s color scheme by name. This lets you create \'linked colors\', where the color of symbol or labeling components can be bound to a color in the project\'s color scheme. Update the color in the scheme, and all the linked colors will be automatically refreshed to match!
+新しい `project_color` 関数が追加されました。プロジェクトのカラースキームから名前で色を取得することができます。これにより、シンボルやラベルのコンポーネントの色をプロジェクトのカラースキームの色にバインドできる「リンクされた色」を作成できます。スキームの色を更新すると、リンクされたすべての色が一致するよう自動的に更新されます！
 
 さらにいくつかのとても便利な式が expressions+プラグインから移植されました。以下のものです:
-- `color_part`: allows retreival of a specific color component (eg red, hue, alpha) from a color
-- `set_color_part`: allows a specific color component to be overridden, eg alter the alpha value (opacity) of a color
-- `day_of_week`: returns the day of week as a number from a date
+- `color_part`: 色から特定の色成分 (例 赤, 色相, アルファ) を検索できるようにしました
+- `set_color_part`: 色のアルファ値（不透明度）を変更するなど、特定の色成分をオーバーライドできます
+- `day_of_week`: 日付から曜日を数値として返します
 
 さらに、表現機能の文脈ヘルプは、読みやすくするために改善されています。
 
@@ -126,13 +126,13 @@ A new `project_color` function has been added, which allows you to retrieve a co
 ### 機能: 式の中で使用する変数
 式で使用するカスタム変数を定義できるようになりました。変数は、アプリケーションのグローバルレベル、プロジェクトレベル、レイヤレベル、およびコンポジションレベルで定義できます。CSSのカスケード規則と同様に、変数は上書きすることができます。たとえば、プロジェクトレベルの変数は、アプリケーションレベルの変数を上書きします。これらの変数を使用して、テキスト文字列やその他のカスタム式を構築できます。たとえば、このコンテンツを含むラベルを作成するコンポーザーでは、次のようになります。
 
-`This map was made using QGIS [% @qgis_version %].` `The project file for this map is: [% @project_path %]`
+`この地図はQGIS [％ @qgis_version ％] を使用して作成されました。` `この地図のプロジェクトファイルは次のとおりです：[％ @project_path％]`
 
 Will render the label like this:
 
-`This map was made using QGIS 2.12.` `The project file for this map is: /gis/qgis-user-conference-2015.qgs`
+`この地図はQGIS 2.12を使って作ったものです。` `この地図のプロジェクトファイル: /gis/qgis-user-conference-2015.qgs`
 
-You can manage global variables from the `Settings -> Options` menu, and project level variables from `Project properties` (including adding your own custom variables).
+`設定 -> オプション` メニューからグローバル変数を管理したり、独自のカスタム変数を追加することを含め、プロジェクトレベル変数を `Project properties` から管理できます。
 
 **この機能は次の方によって開発されました:** [Nyall Dawson](http://nyalldawson.net/)
 
@@ -405,7 +405,7 @@ GRASS 6とGRASS 7の両方のユーザーにとって、GRASSとQGISの統合は
 
 **この機能の開発者:** [OPENGIS.ch](http://www.opengis.ch/) の Matthias Kuhn
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+** この機能は次の方の資金提供で開発されました:** [SIGE](http://www.sige.ch/)
 ### 機能: \`with edit(layer):\`  を利用した編集
 例:
 

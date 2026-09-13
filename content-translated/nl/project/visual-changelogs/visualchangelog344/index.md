@@ -332,7 +332,7 @@ Een enkel paneel "Toolbox" is toegevoegd aan Modelontwerper, wat de objecten van
 
 Dit werd mogelijk gemaakt door [Hauts-de-France](https://www.hautsdefrance.fr/)
 
-This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ## Processing
 ### Mogelijkheid: SAGA "Fill Sinks Wang & Liu" geporteerd naar eigen gereedschap
 Dit veelgevraagde gereedschap leek nogal fragiel en foutgevoelig indien uitgevoerd via de plug-in SAGA voor Processing.
@@ -363,7 +363,7 @@ Dat stelt gebruikers in staat om snel en gemakkelijk een uitvoer vanuit een knoo
 
 <img src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ### Mogelijkheid: Algoritme Rang raster voor Processing
 Het nieuwe algoritme "Rang raster" neemt een collectie rasters als invoer en maakt een uitvoer met celwaarden die overeenkomen met de rangorde van een lijst met celwaarden die uit de invoercollectie van de rasters komen.
 

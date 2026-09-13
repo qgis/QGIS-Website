@@ -151,7 +151,7 @@ There is a new snapping mode : **snap to all layers** which makes it quick to en
 ### Feature: Show rule-based renderer\'s legend as a tree
 Advanced users who leverage QGIS\'s rule based renderer system will be pleased to see that the rules are now presented as a tree in the legend. Better still, each node in the **tree** can be **toggled on/off** individually providing for great flexibility in which sublayers get rendered in your map.
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+** この機能は次の方の資金提供で開発されました:** [SIGE](http://www.sige.ch/)
 
 **This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 

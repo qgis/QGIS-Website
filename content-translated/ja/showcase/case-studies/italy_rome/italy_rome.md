@@ -21,7 +21,7 @@ draft: 'true'
 
 地震マイクロゾーニングは均質な地震挙動で特徴付けられる領土の領域の同定を通じて、局地的な地震動を評価します。
 
-The Guidelines and Criteria for Seismic microzoning 2008 (<http://www.protezionecivile.gov.it/jcms/it/view_pub.wp?contentId=PUB1137>) provide standards for seismic microzoning studies on Italian territory; they distinguish three levels of increasing depth (from 1 to 3).
+地震マイクロゾーニングのためのガイドラインおよび基準2008（<http://www.protezionecivile.gov.it/jcms/it/view_pub.wp?contentId=PUB1137>）では、イタリアの領土の地震マイクロゾーニング研究のための基準を提供します。それらは深さを3レベル（1〜3）で区別します。
 
 第１レベルの地震マイクロゾーニングは3つの主題図の作成で構成されています。
 1. 地震マイクロゾーニング研究のための調査を含む調査マップ。
@@ -41,7 +41,7 @@ QGISの最新バージョン（執筆時点では2.8.1）に統合グラフィ�
 
 モデルが入力として取るものは（図2）：
 - 標高値を持つフィールドを含む等高線のシェープ
-- The name of the field containing elevation values;
+- 標高値を含むフィールドの名前
 - DEMと傾斜に対するメートル単位での望ましいラスタ解像度（デフォルトは10）
 - 15度超の勾配を持つ領域に交差する地物を抽出するポリゴンシェープファイル
 - 結果のポリゴンレイヤーの名前

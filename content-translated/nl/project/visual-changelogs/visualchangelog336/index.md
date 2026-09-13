@@ -207,7 +207,7 @@ De nieuwe knop Selectie wisselen (alsook de knoppen Alles verbergen of Alles wee
 
 ![](images/entries/d42005a9561cdc035cfa20f034b7a33fc9829522.gif)
 
-This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ## Processing
 ### Feature: vlag --skip-loading-plugins voor qgis_process
 Het programma voor de opdrachtregel `qgis_process` heeft baat bij een nieuw argument `--skip-loading-plugins`. Indien gespecificeerd kan dit resulteren in snellere uitvoertijden voor opdrachten als `qgis_process plugins`, die nu de geïnstalleerde plug-ins kan vermelden \*\*zonder\*\* ze te laden.

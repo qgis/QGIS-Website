@@ -146,7 +146,7 @@ QGISブラウザは、ファイルシステム、データベース接続、Web�
 ### Feature: PostGIS provider side expression filters
 QGIS 2.10では、データベースサーバー側の機能をフィルタリングできるようになりました。サポートされている式のみがデータベースに送信されます。サポートされていない演算子や関数を使用した式は、ローカル評価に正常にフォールバックします。
 
-To make use of this feature you need to enable it in `Settings -> Options -> data sources`. If your filter expression is PostgreSQL compliant it will automatically be run on the server side. You can also make use of this feature when using the python API for example when using these calls.
+この機能を利用するには、 `設定 -> オプション -> データソース` で有効にする必要があります。フィルタ式がPostgreSQL準拠の場合、自動的にサーバ側で実行されます。これらの呼び出しを使用する場合など、Python APIを使用する場合にもこの機能を使用することができます。
 
 `QgsFeatureRequest().setFilterExpression( expression )`
 
@@ -157,7 +157,7 @@ To make use of this feature you need to enable it in `Settings -> Options -> dat
 ![image7](images/entries/4d4076579ecc0b5aace30fa2743f616a9b691a02.webp)
 ## データマネジメント
 ### 機能:バーチャルフィールドが現在は更新可能です
-Prior to version 2.8 you had to delete and recreate virtual fields if you wanted to change the expression for calculating the virtual field. In 2.10 you can now go to the `Fields` tab and press the small `Expression` button to open the expression editor and update the expression used for the virtual field.
+バージョン2.8より前のバージョンでは、仮想フィールドの計算式を変更したい場合は、仮想フィールドを削除して再作成する必要がありました。2.10では、 `Fields` タブに行き、小さな `Expression` ボタンを押して式エディタを開き、仮想フィールドに使用されている式を更新することができます。
 
 **この機能は、以下によって開発されました:** [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) 
 
@@ -165,7 +165,7 @@ Prior to version 2.8 you had to delete and recreate virtual fields if you wanted
 
 ![image8](images/entries/f45d5a4447f28d96a2c5c4cc6c27b84285096a02.webp)
 ### 機能：ValueRelation編集ウィジェットの自動補完機能付きライン編集
-The value relation edit widget for vector layers (`Layer -> Properties -> Fields -> Edit Widget -> Value Relation`) can now be set to autocomplete as you start typing in the input box it creates on the feature form.
+ベクターレイヤーの値関係編集ウィジェット（ `レイヤー -> プロパティ -> フィールド -> ウィジェットの編集 -> 値関係` ）をオートコンプリートに設定できるようになり、入力ボックスで入力を開始すると、地物フォーム上に作成します。
 
 ![image9](images/entries/4610dc0ab64a85ae020aeb22b4cbfcc8d45d0df3.webp)
 ### 機能:DBマネージャの改良
@@ -185,11 +185,11 @@ DB Managerの新しいウィンドウは、テーブル名、カラム名、関�
 
 ![image10](images/entries/f5ad9f81ac37ff4dcfa754f83d23c2700ad4c9f8.webp)
 ### 機能：リレーション参照ウィジェットのフィルタ連鎖
-To select linked entries from other tables one can use the relation reference widgets. One can either select elements graphically by selecting them in the map, if the linked feature has a geometry attached or choose an element by the linked id. To facilitate the non-spatial selection it is now possible to narrow the available options with filters (chained or unchained). If the filters are unchained their choices are combined with \"AND\" to define the available options. If chained is checked, a drill-down mode for the filters is activated so each filter only shows the entries which correspond to the previous filter. This is useful for selecting from hierarchical data like City -\> Street -\> Number.
+他の表からリンクされた項目を選択するには、関係参照ウィジェットを使用できます。リンクされた地物にジオメトリが添付されているか、リンクされたIDでエレメントを選択している場合は、地図で地物を選択することによって、エレメントをグラフィカルに選択できます。非空間選択を容易にするために、フィルタ（連鎖または非連鎖）で利用可能なオプションを絞り込むことが可能になりました。フィルタが非連鎖の場合、選択肢は「AND」と組み合わせて使用​​可能なオプションを定義します。連鎖がチェックされている場合、フィルタのドリルダウンモードがアクティブになり、各フィルタは前のフィルタに対応するエントリのみを表示します。これは City -\> Street  -\> Number のような階層的なデータから選択するのに便利です。
 
 **この機能は、以下によって開発されました:** [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) 
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+** この機能は次の方の資金提供で開発されました:** [SIGE](http://www.sige.ch/)
 
 ![image11](images/entries/fd0d2e726135033e8e5a61b8a718535074a2ac0c.webp)
 ## ダイアグラム
@@ -198,16 +198,16 @@ QGISのダイアグラム機能により、小さな円グラフやヒストグ�
 - ダイアグラムは設定を失うことなく無効にすることができます
 - チェックボックスを追加すると、常にレイヤーの図が表示されます
 - ダイアグラムのユーザーインターフェイスが更新され、ダイアログが簡素化され、ユーザーフレンドリーになりました
-- Diagram classes are now shown in the layer\'s legend
+- 図のクラスがレイヤの凡例に表示されるようになりました
 
 ![image12](images/entries/cc5753de0538c89e3231f18c7ce62c7bc0afa5e8.webp)
 ## デジタイズ
 ### 機能：ジオメトリ回転ツールの改良
-The geometry rotation tool is an advanced digitising tool that allows you to arbitrarily rotate a feature\'s geometry. The following improvements have been made to the rotation tool:
+ジオメトリ回転ツールは、地物のジオメトリを任意に回転させる高度なデジタイジングツールです。回転ツールの改良点は次のとおりです:
 - 回転マップツールで数値入力を使用できるようになりました
 - 角度の設定にコンボボックスを利用できます
-- added support for snapping to angles (directly enabled when `using`shift + click\`\`)
-- rotation anchor is defined on `CTRL+click` and not on mouse move
+- 角度に対するスナッピングがサポートされました （ shift + click\`\` を `使う` と直接有効化されます）
+- 回転のアンカーは `CTRL+click` で指定され、マウスの動きでは指定できません
 
 ![image13](images/entries/7ff32dd8c7ead358f9ffab4576dff33503154eb2.webp)
 ## ラベリング
