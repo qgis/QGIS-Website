@@ -109,19 +109,38 @@ class ChangelogOptimizer:
             elif img.mode != 'RGB':
                 img = img.convert('RGB')
             
-            # Save as webp
+            # Save as webp. For a file whose name already ends in .webp
+            # (including the harvester's name.png.webp convention) the target
+            # name equals the source name, so the image is optimized in place
+            # and there is nothing to delete. Deleting unconditionally used to
+            # destroy exactly those files: the optimized copy was written over
+            # the original and then unlinked, while index.md kept referencing
+            # it.
             new_filename = image_path.stem + '.webp'
             new_path = image_path.parent / new_filename
-            img.save(new_path, 'WEBP', quality=self.quality, method=6)
-            
-            # Delete original
+
+            # Write atomically so a failed save cannot leave a truncated or
+            # missing image behind.
+            tmp_path = new_path.with_name(new_path.name + '.tmp')
+            img.save(tmp_path, 'WEBP', quality=self.quality, method=6)
+            os.replace(tmp_path, new_path)
+
+            if new_path == image_path:
+                print(f"  Optimized in place: {image_path.name} ({size_info})")
+                return None
+
+            # Delete the original only now that the replacement exists.
             image_path.unlink()
-            
+
             print(f"  Optimized: {image_path.name} → {new_filename} ({size_info})")
             return new_filename
-            
+
         except Exception as e:
             print(f"  Error processing {image_path.name}: {e}")
+            # Remove a partially written temporary file if the save failed.
+            tmp_path = image_path.parent / (image_path.stem + '.webp.tmp')
+            if tmp_path.exists():
+                tmp_path.unlink()
             return None
     
     def optimize_images(self):
@@ -172,21 +191,46 @@ class ChangelogOptimizer:
         
         print(f"✓ Updated index.md")
     
+    def verify_references(self):
+        """Check that every image referenced by index.md exists on disk.
+
+        Returns the sorted list of missing filenames. A silent mismatch here
+        is how gallery images can disappear while index.md keeps pointing at
+        them, so callers should treat a non-empty result as a failure.
+        """
+        missing = sorted(
+            name for name in self.get_referenced_images()
+            if not (self.entries_dir / name).exists()
+        )
+        for name in missing:
+            print(f"  Missing referenced image: images/entries/{name}")
+        return missing
+
     def process(self):
-        """Run all optimization tasks"""
+        """Run all optimization tasks; return the number of broken references"""
         print(f"\n{'='*60}")
         print(f"Processing: {self.changelog_dir.name}")
         print(f"{'='*60}\n")
-        
+
         # Step 1: Optimize images
         print("Step 1: Optimizing images")
         conversions = self.optimize_images()
-        
+
         # Step 2: Update index.md
         print("\nStep 2: Updating index.md")
         self.update_index_md(conversions)
-        
+
+        # Step 3: Fail loud when a referenced image is missing, instead of
+        # leaving broken references behind silently.
+        print("\nStep 3: Verifying image references")
+        missing = self.verify_references()
+        if missing:
+            print(f"✗ {self.changelog_dir.name}: {len(missing)} referenced image(s) missing")
+        else:
+            print("✓ All referenced images exist")
+
         print(f"\n✓ Completed processing: {self.changelog_dir.name}\n")
+        return len(missing)
 
 
 def main():
@@ -207,18 +251,25 @@ def main():
             return
         
         optimizer = ChangelogOptimizer(changelog_dir)
-        optimizer.process()
+        missing = optimizer.process()
+        if missing:
+            sys.exit(f"{changelog_name}: {missing} referenced image(s) missing")
     else:
         # Process all changelogs
         changelog_dirs = sorted([d for d in changelogs_base.iterdir() if d.is_dir()])
-        
+
         print(f"\nFound {len(changelog_dirs)} changelogs to process\n")
-        
+
+        total_missing = 0
         for changelog_dir in changelog_dirs:
             optimizer = ChangelogOptimizer(changelog_dir)
-            optimizer.process()
-        
+            total_missing += optimizer.process()
+
         print(f"\n{'='*60}")
+        if total_missing:
+            print(f"✗ Done, but {total_missing} referenced image(s) are missing (see above)")
+            print(f"{'='*60}\n")
+            sys.exit(1)
         print("✓ All changelogs processed successfully!")
         print(f"{'='*60}\n")
 
