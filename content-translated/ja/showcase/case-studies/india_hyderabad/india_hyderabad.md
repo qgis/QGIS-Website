@@ -7,7 +7,7 @@ draft: 'true'
 
 農村開発研究所（NIRD）は、インド政府農村開発省のアペックス機関です。本社はインドのハイデラバード市に位置しており、それはグワハティ、ジャイプールとパトナ市の三つのサブセンターを持っています。ジャイプールの街は、ラジャスタン州（国の北西側）の首都です。NIRDジャイプールセンターは、北インドのアメリカの中間レベルの政府関係者のための住宅GIS研修短期（1日のハンドヘルドGPSの調査と現地訪問など、ほとんどが5日）に積極的に関与しています。評判NGOや学者にも興味を持っている場合に訓練されています。トレーニングはNIRDが完全に後援しており、参加者は交通費を負担するだけです。著者は助教としてNIRDジャイプールの中心部での作業と中央のGISと流域関連のトレーニングを調整しています。当初はハイデラバードでNIRDの本部で彼の投稿の時に、彼はのArcGISとERDASなどの商用ソフトウェアとGISトレーニングに関与していました。2009年にIITマドラスでQuantumGISに2日間の研修の機会を取得した後、それがオープンソースGISは、インドの農村開発部門のニーズを満たすことができると感じました。研修で学んだバージョンはQGIS 1.0.2でした。トレーニングフィードバックは、高齢者に提供し、これをさらに研修でQGISを導入することをお勧めしましたが、不安はトレーニングの主流でソフトウェアを受け入れることでした。ソフトウェアは、その後一年間の個人的な使用のために追求されたとその新しいバージョンが強化機能を調べました。著者は、トレーニング中にコースのコーディネーターだったときには、この期間中、彼は導入とフィードバックのための研修でQGISを使用しました。
 ## QGISはすべてのGISトレーニングコースに使用されます
-![QGIS training course at NIRD Jaipur Centre](./images/india_hyderabad2.jpg){.align-right}
+![NIRDジャイプールセンターでのQGISトレーニング](./images/india_hyderabad2.jpg){.align-right}
 
 NIRDジャイプールセンターの創設以来、QuantumGISだけが、このセンターですべてのGISのトレーニングのために使用されています。さらに、地区（国と州の次のインドの行政単位）およびそれ以下において、本当の要件が感じられない場合、またこの節約がGPSS、コンピューターなどのハードウェアの購入に使用できる場合には、商業的GISソフトウェアは購入すべきでないことが、すべてのトレーニングにメッセージとして送られ助言されています。
 
@@ -25,4 +25,4 @@ Number of QGIS-based trainings conducted by author with participants' details is
 ## 著者
 ![H K Solanki](./images/india_hyderabadaut.png){.align-left}
 
-This article was contributed in July 2012 by H K Solanki, Assistant professor, NIRD Jaipur centre, Website: <http://www.nird.org.in>
+この記事は2012年7月にNIRDジャイプールセンターの助教授、H K Solanki によって寄稿されました：<http://www.nird.org.in>

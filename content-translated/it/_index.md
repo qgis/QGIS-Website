@@ -2,7 +2,7 @@
 AnnouncementLinkText: Scopri la lista dei cambiamenti
 AnnouncementText: Scopri le nuove funzionalità, i miglioramenti e tutto ciò che rende
   questa versione un momento storico.
-AnnouncementTitle: is here!
+AnnouncementTitle: È qui!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/

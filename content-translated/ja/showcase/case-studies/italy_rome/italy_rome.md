@@ -51,14 +51,14 @@ QGISの最新バージョン（執筆時点では2.8.1）に統合グラフィ�
 起動すると、モデルは、次の操作を実行します。
 - GRASSツールv.to.rast.attributeは、等高線シェープファイル、Zフィールドの名前およびラスター解像度を入力として取り、等高線をラスターに変換します；
 - GRASSツールr.surf.contourは、前のステップからのラスター化された一時出力およびラスター解像度を入力として取り、標高モデルを作成します。
-- The GDAL tool "gdaldem" generates the slope expressed as degrees from the elevation model;
+- GDALツール「gdaldem」は標高モデルから度で表される勾配を作成します。
 - GRASSツールr.mapcalculator式を使用して、（この値はマイクロゾーニングガイドラインで符号化され、そしてそれは固定されている）を15度よりも大きい勾配を有する領域を識別する1ビットラスターを生成するために使用されます。
 
 if(A\>15,1,null())
 
 ここでAはgdaldemによって生成された一時的な勾配ラスタです。
-- The GDAL tool "gdal_polygonize" converts the 1 bit raster to polygons;
-- The QGIS tool "Intersection" is used to overlay the areas with slope greater than 15 degrees with the chosen intersection layer.
+- GDALツール「gdal_polygonize」は1ビットラスターをポリゴンに変換します;
+- 15度以上の傾きを持つ領域と、選択された交差レイヤーをオーバーレイするため、QGISツール「交差」が使用されます。
 
 結果は、地滑りポリゴンレイヤー（図3）または岩相地図といった主題図から自動的に抽出された、勾配値が15度よりも大きい不安定になりやすい領域を有するポリゴンレイヤーです。
 

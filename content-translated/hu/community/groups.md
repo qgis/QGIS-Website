@@ -60,7 +60,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="Spanyolországi QGIS-felhasználók egyesülete" listSubtitle="Kapcsolattartó: Carlos López Quintanilla" >}}
 
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Kapcsolattartó: Germán Carrillo" >}}
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Contact: Germán Carrillo –> REMOVED in 2025" >}}
 ### 2018-ban eltávolított
 {{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (Új-Zéland)" listSubtitle="Kapcsolattartó: Brent Wood" >}}
 

@@ -60,7 +60,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="Асоциация на потребителите на QGIS в Испания" listSubtitle="За контакт: Карлос Лопес Кинтанила" >}}
 
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Колумбия" listSubtitle="Контакт: Херман Карийо" >}}
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Колумбия" listSubtitle="Contact: Germán Carrillo –> REMOVED in 2025" >}}
 ### Премахнато през 2018 г.
 {{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="Потребителска група на NIWA QGIS (Нова Зеландия)" listSubtitle="Контакт: Брент Ууд" >}}
 

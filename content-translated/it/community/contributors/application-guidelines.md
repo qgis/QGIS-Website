@@ -54,7 +54,7 @@ ____
    - Il tuo sito web personale, LinkedIn o il sito web dell'organizzazione
 5. **Immagine del profilo** *(richiesto)*
    - **Formato:** solo PNG
-   - **Size:** Maximum 150×150 pixels, max 1 MB
+   - **Dimensione:** massimo 150×150 pixel, max 1 MB
    - **Qualità:** foto o logo nitido e professionale
 
 #### Dettagli dell'attività:
@@ -62,7 +62,7 @@ ____
    - Quando hai iniziato le tue attività nella comunità QGIS?
 7. **Data di fine**
    - Se applicabile. Lascia vuoto se ancora attivo.
-   - ⚠️ **Note:** 3 years after the end date, your entry will be moved to the 'archived' section. You can request to update your profile if you become active again.
+   - **Nota:** 3 anni dopo la data di fine, la tua voce verrà spostata nella sezione 'archiviati'. Puoi richiedere di aggiornare il tuo profilo se torni attivo.
 8. **Type of Activities** *(required)*
    - Select all that apply (see eligible types above)
 9. **Description of Contribution** *(required)*
@@ -90,15 +90,15 @@ ____
 2. **Revisione:** Il Comitato direttivo del progetto QGIS (PSC) esamina tutte le proposte presentate
 3. **Timeline:** Reviews are conducted **monthly**
 4. **Notification:** You'll be contacted about your application status
-5. **Publication:** Approved contributors appear on the [Supporting Contributors page](/community/contributors/supporting/)
+5. **Pubblicazione:** i contributori approvati compaiono nella [pagina Supporting Contributors](/community/contributors/supporting/)
 
-### Approval Criteria
-Your application will be evaluated based on:
-- ✅ **Relevance:** Activities directly support QGIS or its community
-- ✅ **Impact:** Contributions have meaningful benefit to users or the project
-- ✅ **Duration:** Sustained engagement (not one-off efforts)
-- ✅ **Verifiability:** Activities can be confirmed (links, references, etc.)
-- ✅ **Community Spirit:** Aligns with QGIS values and code of conduct
+### Criteri di approvazione
+La tua domanda verrà valutata in base a:
+- **Rilevanza:** le attività supportano direttamente QGIS o la sua comunità
+- **Impatto:** i contributi apportano un beneficio significativo agli utenti o al progetto
+- **Durata:** impegno costante (non attività occasionali)
+- **Verificabilità:** le attività possono essere confermate (link, riferimenti, ecc.)
+- **Spirito di comunità:** allineato con i valori di QGIS e il codice di condotta
 
 ____
 ## Tips for a Successful Application
@@ -113,28 +113,28 @@ ____
 - Highlight ongoing or sustained efforts
 - Include relevant links or references
 
-Example: **"Coordinated monthly QGIS meetups in Berlin since 2022 with 20-40 attendees. Organized the 2024 QGIS User Conference Germany with 150+ participants. Maintain German QGIS documentation translations."**
+Esempio: ***Coordinati incontri mensili di QGIS a Berlino dal 2022 con 20-40 partecipanti. Organizzata la QGIS User Conference Germany 2024 con oltre 150 partecipanti. Mantengo le traduzioni della documentazione QGIS in tedesco.***
 
 **DA NON FARE:**
-- Be vague or generic
-- Exaggerate your contributions
-- Include work that's already recognized via code commits
-- Exceed the 500 character limit
+- Essere vago o generico
+- Esagerare i tuoi contributi
+- Includere lavoro già riconosciuto tramite i commit del codice
+- Superare il limite di 500 caratteri
 
 {{<rich-content-end >}}
 
 {{<rich-box-end >}}
-### Image Requirements
-- Use a professional headshot or clear logo
-- Ensure good contrast and visibility at small sizes
-- Optimize file size (under 1 MB)
+### Requisiti dell'immagine
+- Usa un ritratto professionale o un logo nitido
+- Esattamente 150×150 pixel è la scelta migliore
+- Ottimizza la dimensione del file (meno di 1 MB)
 - Utilizzare esclusivamente immagini in formato statico (PNG, JPG)
-- Exactly 150×150 pixels works best
+- Esattamente 150×150 pixel è la scelta migliore
 
-### Location Privacy
-⚠️ **Important:** If sharing your location, use a **generalized point** (city center, region) rather than your exact home or workplace address.
-## After Approval
-Once approved, you'll appear on the [Supporting Contributors page](/community/contributors/supporting/)
+### Privacy della posizione
+**Importante:** se condividi la tua posizione, usa un **punto generico** (centro città, regione) invece dell'indirizzo esatto di casa o del luogo di lavoro.
+## Dopo l'approvazione
+Una volta approvato, comparirai nella [pagina Supporting Contributors](/community/contributors/supporting/)
 ____
 <div style="text-align:center; margin-top: 3rem;">
   <h2>Ready to Apply?</h2>

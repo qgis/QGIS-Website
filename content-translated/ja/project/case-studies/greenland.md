@@ -23,7 +23,7 @@ QGreenland の開発は2019年に開始され、コロラド大学ボルダー�
 
 QGreenland は、研究および教育用のツールです。QGreenland には、野外作業の計画立案、データの統合・分析、データや地図ビジュアル・図表の作成など、幅広い研究および意思決定アプリケーションがあります。QGreenland は、高校から大学院まで、GISスキル、極地の気候、データ活用スキル、水文学、物理科学など、多岐にわたるトピックを扱う授業でも活用されています。QGreenland プロジェクトには、GIS 初心者を対象としたチュートリアルや QGreenland のその他の活用法、カリキュラム活動、そしてグリーンランドに焦点を当てた地理空間データを探索するための刺激的なリソースが含まれています。
 
-During 2019-2025, the QGreenland team has released three main versions, with total downloads of more than 20,000. QGreenland is funded by the National Science Foundation and benefits from the generous efforts of a wide range of collaborators.
+2019年から2025年にかけて、QGreenlandチームは3つの主要バージョンをリリースし、総ダウンロード数は20,000件を超えました。QGreenlandは米国国立科学財団の助成を受けており、幅広い協力者の方々の多大なご尽力に支えられています。
 
 ![QGreenland は、GIS 教育、データへの容易なアクセス、可視化を支援し、研究ツールとしても機能します](../images/QGreenland.webp)
 

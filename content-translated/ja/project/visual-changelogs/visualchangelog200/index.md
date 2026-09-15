@@ -15,15 +15,15 @@ type: visual-changelog
 {{<table-of-contents >}}
 ## 解析ツール
 ### 機能：プロセシングコマンダー
-ジオプロセシング機能に素早くアクセスするために、単にプロセシングコマンダー（はCtrl + Alt + M）を起動し、あなたが探しているツールの名前を入力し始めます。コマンダーはあなたに利用可能なオプションを表示し、あなたのためにそれらを起動します。これ以上のツールを見つけるために、メニューを検索しません。彼らはあなたの指先に今あります。
+ジオプロセシング機能に素早くアクセスするには、プロセシングコマンダー（はCtrl + Alt + M）を起動し、あなたが探しているツールの名前を入力し始めるだけです。コマンダーはあなたに利用可能なオプションを表示し、あなたのためにそれらを起動します。ツールを見つけるためにメニューを検索する必要はもうありません。それらはもうあなたの指先にあります。
 
 ![image1](images/processing_commander_2.png)
 ### 機能：ヒートマッププラグインの改善
 ヒートマッププラグインは、ヒートマップのはるかに高速に作成して、その結果、多くの改良と最適化を見てきました。また、今、カーネル関数は、ヒートマップを作成するために使用されているのかを選択できます。
 
 ![image2](images/Selection_027.png)
-### 機能：プロセッシングサポート
-The SEXTANTE project has been ported to and incorporated into QGIS as core functionality. SEXTANTE has been renamed to \'Processing\' and introduces a new menu in QGIS from where you can access a rich toolbox of spatial analysis tools. The processing toolbox has incredibly rich functionality - with a python programming API allowing you to easily add new tools, and hooks to provide access to analysis capabilities of many popular open source tools such as GRASS, OTB, SAGA etc.
+### 機能：プロセシングサポート
+SEXTANTEプロジェクトは、コア機能としてQGISに移植され、組み込まれました。 SEXTANTEは「プロセシング」に改名され、QGISの新しいメニューが導入され、豊富な空間解析ツールのツールボックスにアクセスできます。プロセシングツールボックスには、GRASS、OTB、SAGAなどの多くの一般的なオープンソースツールの解析機能へのアクセスを提供するために、新しいツールやフックを簡単に追加できるようにするPythonプログラミングAPIが用意されています。
 
 ![image3](images/Selection_028.png)
 ### 機能: プロセシングモデラー
@@ -32,34 +32,34 @@ The SEXTANTE project has been ported to and incorporated into QGIS as core funct
 ![image4](images/Processing_modeler_029.png)
 ## アプリケーションとプロジェクトのオプション
 ### 機能: デフォルトの起動プロジェクト指定とプロジェクトテンプレート
-With QGIS 2.0 you can specify what QGIS should do when it starts: `New Project` (legacy behaviour, starts with a blank project), `Most recent` (when you start QGIS it will load the last project you worked on), `Specific` (always load a specific project when QGIS starts). You can use the project template directory to specify where your template projects should be stored. Any project that you store in that directory will be available for use as a template when invoking the `Project --> New from template` menu.
+QGIS 2.0では、QGISを起動したときに何をするか指定することができます。「新規プロジェクト」（空のプロジェクトで起動する従来の動作）、「最近」（最後に実行したプロジェクトが読み込まれます）、「指定」（QGIS起動時に常に特定のプロジェクトを読み込みます）。プロジェクトテンプレートディレクトリを使用して、テンプレートプロジェクトを保存する場所を指定することができます。そのディレクトリに格納されているプロジェクトは `プロジェクト -> テンプレートから新規作成` メニューを呼び出すときにテンプレートとして利用できます。
 
 ![image5](images/Screen_Shot_2013-09-12_at_11.23.02_PM.png)
 ### 機能：システム環境変数
-Current system environment variables can now be viewed and many configured within the application Options dialog. Useful for platforms, such as Mac, where a GUI application does not necessarily inherit the user\'s shell environment. Also useful for setting/viewing environment variables for the external tool sets controlled by the processing toolbox, e.g. SAGA, GRASS; and, for turning on debugging output for specific sections of the source code.
+現在のシステム環境変数は、アプリケーションの「オプション」ダイアログで表示および設定することができるようになりました。GUIアプリケーションが必ずしもユーザーのシェル環境を継承しないMacなどのプラットフォームに役立ちます。また、SAGA、GRASSなどのプロセシングツールボックスで制御される外部ツールセットの環境変数の設定や表示にも便利です。ソースコードの特定のセクションのデバッグ出力をオンにするために使用します。
 
 ![image6](images/changelog-2.0_sys-env-options.png)
 ### 機能：ユーザー定義のズーム縮尺
-A listing of zoom scales can now be configured for the application and optionally overridden per project. The list will show up in the `Scale` popup combo box in the main window status bar, allowing for quick access to known scales for efficiently viewing and working with the current data sources. Defined scales can be exported to an XML file that can be imported into other projects or another QGIS application.
+これで、アプリケーション用にズームスケールのリストを構成できるようになりました。オプションで、プロジェクトごとにオーバーライドできます。このリストはメインウィンドウのステータスバーの `縮尺` ポップアップコンボボックスに表示され、現在のデータソースを効率よく表示したり操作したりするための既知のスケールにすばやくアクセスできます。定義されたスケールは、他のプロジェクトまたは別のQGISアプリケーションにインポートできるXMLファイルにエクスポートできます。
 
 ![image7](images/changelog-2.0_predefined-scales.png)
 ## ブラウザ
 ### 機能:アプリ内ブラウザパネルの改善
 - ワイルドカードまたは正規表現でディレクトリをフィルタできます
-- New `Project home` (parent directory of current project)
-- View `Properties` of the selected directory in a dialog
-- Choose which directories to `Fast scan`
-- Choose to `Add a directory` directly to `Favourites` via filesystem browse dialog
-- New `/Volumes` on Mac (hidden directory for access to external drives)
-- New `OWS` group (collation of available map server connections)
-- Open a second browser (`View -> Panels -> Browser (2)`) for drag-n-drop interactions between browser panels
+- 新しい `プロジェクトホーム` （現在のプロジェクトの親ディレクトリ）
+- ダイアログで選択したディレクトリの `プロパティ` を表示します
+- どのディレクトリを `Fast scan` するか選択して下さい
+- ファイルシステムのブラウザダイアログで `Favourites` に直接 `ディレクトリを追加する` を選択する
+- Macにおける新しい `/Volumes`  (外部ドライブアクセス用の隠しディレクトリ)
+- 新しい `OWS` グループ（使用可能なマップサーバ接続の照合）
+- ブラウザパネル間のドラッグアンドドロップ操作のための2番目のブラウザを開きます（ `View -> Panels -> Browser(2)` ）
 - アイコンがアイテムグループタイプ（ファイルシステム、データベース、マップサーバ）でソートされました
-- Layer `Properties` now have better visual layout
+- レイヤー `Properties` のビジュアルレイアウトが改善されました
 
 ![image8](images/changelog-2.0_browser.png)
 ## データプロバイダ
 ### 機能：ラスターデータプロバイダーオーバーホール
-The raster data provider system has been completely overhauled. One of the best new features stemming from this work is the ability to \'Layer -\> Save As\...\' to save any raster layer as a new layer. In the process you can clip, resample, and reproject the layer to a new Coordinate Reference System. You can also save a raster layer as a rendered image so if you for example have single band raster that you have applied a colour palette to, you can save the rendered layer out to a georeferenced RGB layer.
+ラスターデータプロバイダーシステムは完全にオーバーホールされました。この作業から生まれた最も優れた新機能の1つは、新しいレイヤーとしてラスターレイヤーを保存する、`レイヤー -> 名前を付けて保存` 機能です。このプロセスでは、レイヤーをクリップ、再サンプリング、および新しい座標参照系に再投影できます。ラスタレイヤーをレンダリング画像として保存することもできます。たとえば、カラーパレットを適用した単一バンドラスターを使用する場合、レンダリングレイヤーをジオリファレンスされたRGBレイヤーに保存できます。
 
 ![image9](images/Selection_017.png)
 ### 機能：Oracle Spatialのサポート

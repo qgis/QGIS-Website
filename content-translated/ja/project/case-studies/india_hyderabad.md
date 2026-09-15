@@ -26,7 +26,7 @@ type: case-study
 ## QGISはすべてのGISトレーニングコースに使用されます
 <figure>
 <img src="../images/india_hyderabad2.jpg" class="align-right" alt="india_hyderabad2.jpg" />
-<figcaption>QGIS training course at NIRD Jaipur Centre</figcaption>
+<figcaption>NIRDジャイプールセンターでのQGISトレーニング</figcaption>
 </figure>
 
 NIRDジャイプールセンターの創設以来、QuantumGISだけが、このセンターですべてのGISのトレーニングのために使用されています。さらに、地区（国と州の次のインドの行政単位）およびそれ以下において、本当の要件が感じられない場合、またこの節約がGPSS、コンピューターなどのハードウェアの購入に使用できる場合には、商業的GISソフトウェアは購入すべきでないことが、すべてのトレーニングにメッセージとして送られ助言されています。
@@ -51,6 +51,6 @@ Number of QGIS-based trainings conducted by author with participants' details is
 <figcaption>H K Solanki</figcaption>
 </figure>
 
-This article was contributed in July 2012 by H K Solanki, Assistant professor, NIRD Jaipur centre, Website: <http://www.nird.org.in>
+この記事は2012年7月にNIRDジャイプールセンターの助教授、H K Solanki によって寄稿されました：<http://www.nird.org.in>
 
 {{<content-end >}}

@@ -11,7 +11,7 @@ type: page
 {{<content-start >}}
 
 {{<contributors-map >}}
-## About This Map
+## Informazioni su questa mappa
 Questa mappa interattiva mostra la distribuzione geografica dei contributori di QGIS in tutto il mondo. Ogni indicatore rappresenta un contributore e la sua dimensione indica il livello di contributo al progetto.
 ### Funzionalità
 - **Vista del mappamondo in 3D**: un mappamondo animato e rotante che mostra gradualmente i contributori

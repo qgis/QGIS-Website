@@ -60,7 +60,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="QGIS uživatelská skupina ve Španělsku" listSubtitle="Contact: Carlos López Quintanilla" >}}
 
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="QGIS uživatelská skupina v Kolumbii" listSubtitle="Contact: Germán Carrillo" >}}
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="QGIS uživatelská skupina v Kolumbii" listSubtitle="Contact: Germán Carrillo –> REMOVED in 2025" >}}
 ### Removed 2018
 {{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (New Zealand)" listSubtitle="Contact: Brent Wood" >}}
 
