@@ -319,6 +319,15 @@ layoutClass = "half"
 listTitle = "QGIS Tanzania"
 listSubtitle = "Contact: Antidy Kawamala" >}}
 
+### Removed 2025
+
+{{< rich-list
+listLink = "https://github.com/qgisco"
+icon = "🇨🇴"
+layoutClass = "half"
+listTitle = "Grupo de Usuarios QGIS Colombia"
+listSubtitle = "Contact: Germán Carrillo" >}}
+
 ### Registered 2026
 
 {{< rich-list
