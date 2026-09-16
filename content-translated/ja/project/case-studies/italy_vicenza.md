@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>May 01, 2012</span>
+  <span>2012年5月01日</span>
 </p>
 
 Montecchio Maggiore is a small town in the middle west of Vicenza (about 24.000 population). And as many other italian municipality it manages the town planning; in particular the urban planning and what we call "recovery plan" aka PDR —— Piani Di Recupero. This urbanistic tool is dedicated to the historical area in the center of the town and it requires a specific study: building state of conservation, intended use, particular historical notice via survey and restitution to produce planimetric and prospectus graphics. For this purpose it has used QGIS in addition to Postgresql/Postgis database, PHP code and Libreoffice suite, QCAD (LibreCAD).
