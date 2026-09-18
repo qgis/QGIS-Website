@@ -54,7 +54,7 @@ QGISコミュニティはあなたがこのリリースを楽しんでいただ�
 - ブロンズスポンサー: [GFI - Gesellschaft fr Informations technologie mbH, Germany](http://www.gfi-gis.de/)
 - ブロンズスポンサー: [Faculty of Geology, Geophysics and Environmental Protection, AGH, University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
 
-プロジェクトに財政上の貢献を大小行った寄付者の現在のリストは、 [寄付者リスト](https://qgis.org/en/site/about/sponsorship.html#list-of-donors) にあります。公式プロジェクトスポンサーになって頂けるのでしたら、[スポンサーシップのページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) で詳細をご覧ください。QGISへの出資は、私たちが6ヶ月の開発者会議、プロジェクト基盤の維持、バグ修正作業に資金を供給するのに役立ちます。
+プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新のリストは、 [寄付者リスト](https://qgis.org/en/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式プロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップのページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへの財政支援は、半年ごとの開発者会議の開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 

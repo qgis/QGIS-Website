@@ -22,7 +22,7 @@ For a whirlwind tour of all the new functionalities introduced, you can view the
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/gVgR4Oxqtkk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは寄付者と維持会員によって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新のリストは、 [寄付者リスト](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors) をご覧ください。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細について `サステイニングメンバーのページ](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustain_members.html#qgis-sustaining-memberships) をご覧ください。QGISへの財政支援は、定期的な開発者会議の開催、プロジェクトインフラの維持、バグ修正活動への資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 

@@ -24,7 +24,7 @@ The QGIS Community has also been active in various crowd-funding campaigns, [Ope
 
 We would also like to extend a big thank you to the developers, documenters, testers, and the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://qgis.org) and lend a hand!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our sustaining member page for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは、寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新のリストは、[寄付者リスト](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors) でご覧いただけます。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細についてサステイニングメンバーのページをご覧ください。QGISへの財政支援は、定期的な開発者ミーティングの開催、プロジェクトインフラの維持、バグ修正活動の資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。全てのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 

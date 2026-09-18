@@ -91,6 +91,8 @@ type: page
 {{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Република Косово" listSubtitle="Контакт: Милот Лубищани" >}}
 ### Регистриран 2025 г.
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Танзания" listSubtitle="Контакт: Антиди Кавамала" >}}
+### Removed 2025
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Колумбия" listSubtitle="Контакт: Херман Карийо" >}}
 ### <div></div>
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="Потребителска група на QGIS Индия" listSubtitle="Контакт: Уджавал Ганди" >}}
 

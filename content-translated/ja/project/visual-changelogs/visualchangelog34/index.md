@@ -20,10 +20,7 @@ QGIS 3の最初の長期サポートリリース（LTR）です。QGIS 3.4がリ
 
 We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
 
-QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは [寄付者一覧]({{< ref "/funding/donate/donors.md" >}}) でご覧いただけます。公式のサステイニングメンバーになることをご希望の方は、詳細について [サステイニングメンバーページ]({{< ref "/funding/membership.md" >}}) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。現在のサポーターの完全なリストを以下に掲載します。すべてのサポーターの皆様に心より感謝申し上げます！
- 
- 
- 
+QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは [寄付者一覧]({{< ref "/funding/donate/donors.md" >}}) でご覧いただけます。公式のサステイニングメンバーになることをご希望の方は、詳細について [サステイニングメンバーページ]({{< ref "/funding/membership.md" >}}) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。最新のサポーターの完全なリストを以下に掲載します。すべてのサポーターの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
