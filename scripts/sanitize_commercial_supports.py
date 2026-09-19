@@ -6,6 +6,13 @@ from urllib.parse import urlparse
 from requests.exceptions import RequestException
 import os
 
+# Responses that mean "could not verify right now", not "the site is gone":
+# auth walls and bot protection (401/403), HEAD not supported (405), request
+# timeout (408) and rate limiting (429). Together with 5xx server errors they
+# must not empty a URL: emptying is committed to the data files by the weekly
+# workflow and the script never restores a URL on its own.
+TRANSIENT_STATUS_CODES = {401, 403, 405, 408, 429}
+
 def load_yaml(file_path):
     """Load YAML file while preserving formatting"""
     with open(file_path, 'r') as file:
@@ -55,10 +62,13 @@ def check_url_redirects(url):
             verify=True
         )
         
+        if response.status_code in TRANSIENT_STATUS_CODES or response.status_code >= 500:
+            print(f"Keeping URL {url}: temporary or access-restricted response ({response.status_code})")
+            return False
         if response.status_code != 200:
             return True
         redirect_url = response.url
-        
+
         # Handle relative redirects
         if redirect_url.startswith('/'):
             redirect_url = f"{urlparse(url).scheme}://{urlparse(url).netloc}{redirect_url}"
@@ -68,8 +78,11 @@ def check_url_redirects(url):
     except requests.exceptions.SSLError:
         return False
     except RequestException as e:
-        print(f"Error checking URL {url}: {str(e)}")
-        return True
+        # A timeout, DNS hiccup or connection reset says nothing about whether
+        # the link is dead. Keep the URL, like the SSLError case above, instead
+        # of emptying it in the committed data.
+        print(f"Keeping URL {url}: could not verify ({str(e)})")
+        return False
     except Exception as e:
         return False
 
