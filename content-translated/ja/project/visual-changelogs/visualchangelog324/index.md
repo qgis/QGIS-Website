@@ -610,24 +610,24 @@ Server errors which occur during XYZ, vector tile or WMS network requests are no
 
 ![image50](images/entries/006a532d89422cfe5ddb6638ae635384e4f8b8f2.gif)
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+この機能は [MapTiler](https://www.maptiler.com/) によって資金提供されました
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
-### Feature: Add out-of-the-box connection to Mapzen Global Terrain tiles
-QGIS now sports built-in support for the Terrarium DEM format for WMS/XYZ layers. In addition, we now have out-of-the-box ability to add Mapzen Global Terrain Tiles hosted on AWS. You can find the new MapZen option in the XYZ section of the browser panel. Users now have an immediately accessible global DEM source for their projects!! See also <https://registry.opendata.aws/terrain-tiles/>
+この機能は [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk) によって開発されました
+### 機能: Mapzen Global Terrain tiles への簡単接続を追加
+QGISはWMS/XYZレイヤー用のTerrariumDEMフォーマットの組み込みサポートを備えるようになりました。さらに、AWSでホストされているMapzen Global Terrain Tilesをすぐに追加できるようになりました。新しいMapZenオプションは、ブラウザパネルのXYZセクションにあります。ユーザーは、プロジェクト用にすぐにアクセスできるグローバルDEMソースを利用できるようになりました。 <https://registry.opendata.aws/terrain-tiles/> も参照してください
 
 ![image51](images/entries/68cfde8b146eb42d4e75fd089adb2fbe8e7e5012.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: HMAC SHA256 auth method for MapTiler
-We\'ve added a new authentication method specific for MapTiler which allows you to use a token encrypted with HMAC-SHA256.
+### 機能: MapTiler 用の HMAC SHA256 認証方法
+MapTiler 用に新しい認証方法を追加し、HMAC SHA256 を使ったトークン暗号化が使えるようになりました。
 
 ![image52](images/entries/3f4f8ef8eef605c25bf84e0e86420c6493e02729.webp)
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+この機能は [MapTiler](https://www.maptiler.com/) によって資金提供されました
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
-### Feature: Template parameter {usage} for XYZ raster and vector tiles
+この機能は [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk) によって開発されました
+### 機能: XYZ ラスタとベクタタイル用のテンプレートパラメータ｛使い方｝
 For XYZ tile-based raster layers and for vector tile layers, we now allow the possibility to insert {usage} template parameters (in addition to {x}, {y}, {z}). If present, this parameter will be replaced by the context in which the request is being made.
 
 The possible context values are:
@@ -637,10 +637,10 @@ The possible context values are:
 
 This functionality is useful for MapTiler clients, where they need to recognize the context in which tiles are used in order to bill users accordingly.
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+この機能は [MapTiler](https://www.maptiler.com/) によって資金提供されました
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
-### Feature: Convert WMTS/XYZ raster tiles to terrain (DEM)
+この機能は [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk) によって開発されました
+### 機能: WMTS/XYZ ラスタタイルから地形 (DEM) への変換
 In QGIS 3.24 we\'ve introduced the possibility to convert WMTS/XYZ raster datasets to a raster layer of single band float type following a predefined encoding scheme.
 
 You can activate this option and choose an encoding scheme (for now, \"MapTiler Terrain RGB\" or \"Terrarium Terrain RGB\" are available) in the source settings of the XYZ connection or in the Data Source Manager when adding a WMST layer.
@@ -649,9 +649,9 @@ You can activate this option and choose an encoding scheme (for now, \"MapTiler 
 
 ![image53](images/entries/6010ce9b5ad8a9d4bc3130b537c74a567be6df23.webp)
 
-This feature was funded by [MapTiler](https://www.maptiler.com/)
+この機能は [MapTiler](https://www.maptiler.com/) によって資金提供されました
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk) によって開発されました
 ### Feature: Array field types for scratch layers
 You can now add array field types directly to newly created scratch layers. (While array field types have previously been supported by scratch layers, there was no way for users to add them when creating a new scratch layer.)
 

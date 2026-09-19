@@ -186,7 +186,7 @@ Following the ability of QGIS 3.24 to convert WMS raster tiles to elevation data
 
 This feature was funded by [Maptiler](https://www.maptiler.com/)
 
-This feature was developed by [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting (Vincent Cloarec)](http://www.lutraconsulting.co.uk) によって開発されました
 ### Feature: Selective masking vectorization
 QGIS introduced a selective masking feature in [version 3.12](https://changelog.qgis.org/en/qgis/version/3.12/#selective-masking), however the implementation relied on the rasterization of the map products and made it unsuitable for some cartographic work.
 
