@@ -20,7 +20,7 @@ QGIS 3.8では、新しい変更と既存機能の多数の磨き上げの広範
 
 私たちは開発者、文書作成者、テスターなどの時間や労力を提供してくれる数多くのボランティアの皆さん（また資金を提供してくれる方々）に感謝します。 QGIS コミュニティとして、このリリースを楽しんでいただきたいと思います。もし時間やお金を寄付したいと考えている場合や、 QGIS をもっと素晴らしいものにすることに参加したい場合は、 qgis.org を見て回って手を貸して下さい。
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate/donors.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sustaining members is provided below - our very great thank you to all of our supporters!
+QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは [寄付者一覧]({{< ref "/funding/donate/donors.md" >}}) でご覧いただけます。公式のサステイニングメンバーになることをご希望の方は、詳細について [サステイニングメンバーページ]({{< ref "/funding/membership.md" >}}) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。最新のサステイニングメンバーの完全なリストを以下に掲載します。すべてのサポーターの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -29,13 +29,13 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 {{<table-of-contents >}}
 ## ツール
 ### 機能: 距離/面積計測時の強制的なデカルト計測
-In 3.8, we added an option to the measurement tool which forces Cartesian measurements for distance or area measurements. Previously, the measurement tools always used ellipsoidal/geodesic area and distance calculations, but there\'s occasions when this is not desirable and users require pure Cartesian calculations instead.
+3.8ではデカルト計測を強制するオプションを測定ツールに追加しました。以前は、計測ツールは常に回転楕円体/測地線による面積や距離の計測を使っていましたが、これが望ましくなく、純粋なデカルト計算が必要とされる場合があります。
 
 ![image2](images/entries/e912304d18194a43111a2f054b7f1dba931985d4.webp)
 
 This feature was funded by [Oslandia](https://oslandia.com)
 
-This feature was developed by [Loïc Bartoletti (Oslandia)](https://oslandia.com)
+この機能は [Loïc Bartoletti (Oslandia)](https://oslandia.com) によって開発されました
 ## ユーザーインタフェース
 ### 機能: テンプレートに保存するためのボタン
 While QGIS has offered support for Project Templates for many years, we enhanced this in 3.8 and made it much simpler for users to create new templates. Now, users can create a new template from their current project by selecting \"Save To -\> Templates\" from the \"Project\" menu.
@@ -43,14 +43,14 @@ While QGIS has offered support for Project Templates for many years, we enhanced
 ![image3](images/entries/8a99e041656f5d3d1fa504636aa36b0046efe532.webp)
 
 This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
-### Feature: Improved \"Zoom to Native Resolution\" behavior
-We\'ve improved the \"Zoom to Native\" action, so it now works correctly with tiled (e.g. WMTS/XYZ/ArcGIS MapServer) layers, by zooming to the closest native tile resolution. Additionally, we tweaked tile rendering so that pixel-perfect rendering occurs when the map is viewed at a native tile resolution. The result: super-crisp map renders when using tiled layer sources!
+### 機能: 「ネイティブ解像度にズーム」の動作の改善
+「ネイティブ解像度にズーム」の動作を改善しました。現在ではタイルのネイティブな解像度に最も近くズームすることで、タイルレイヤ (WMTS/XYZ/ArcGIS MapServer等)で正しく動作します。さらに、タイルレンダリングを微調整し、マップがタイルのネイティブな解像度で表示されている時には、ピクセルレベルで完全なレンダリングとなるようにしました。
 
 ![image4](images/entries/61f13b52d685dcd67c7c9cc8dbb6daa269ed096a.webp)
-### 機能: レイヤをマップレイヤウィジェットにドラッグ&ドロップ
-To improve the usability of large QGIS projects, we now support direct drag and drop of layers from the project table of contents to any widget which asks for a map layer selection (e.g. Processing algorithms). For complex projects, locating a layer in the table of contents and dragging it is much easier then picking it from the flat map layer widget combo box!
+### 機能: レイヤを地図レイヤウィジェットにドラッグ&ドロップ
+大規模なQGISプロジェクトの使いやすさを向上させるため、プロジェクトの目次から、地図レイヤーの選択を求めるウィジェット（例 プロセシングアルゴリズム）へ、レイヤーを直接ドラッグ＆ドロップできるようになりました。複雑なプロジェクトの場合、目次からレイヤーを探してドラッグする方が、フラットな地図レイヤーウィジェットのコンボボックスから選択するよりもはるかに簡単です！
 
-Additionally, for Processing algorithms, layers can be dragged direct from the Browser panel to input layer choices.
+また、プロセシングアルゴリズムについては、レイヤーを「ブラウザ」パネルから入力レイヤーの選択肢へ直接ドラッグすることができます。
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ## シンボロジ

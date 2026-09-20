@@ -91,6 +91,8 @@ type: page
 {{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Republic of Kosova" listSubtitle="連絡先: Milot Lubishtani" >}}
 ### 2025年登録
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="連絡先: Antidy Kawamala" >}}
+### Removed 2025
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="連絡先: Germán Carrillo" >}}
 ### 2026年登録
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="連絡先: Ujaval Gandhi" >}}
 

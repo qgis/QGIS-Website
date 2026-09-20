@@ -20,7 +20,7 @@ QGIS 3.10 では、莫大なリストに及ぶ新しい変更とたくさんの�
 
 私たちは開発者、文書作成者、テスターなどの時間や労力を提供してくれる数多くのボランティアの皆さん（また資金を提供してくれる方々）に感謝します。 QGIS コミュニティとして、このリリースを楽しんでいただきたいと思います。もし時間やお金を寄付したいと考えている場合や、 QGIS をもっと素晴らしいものにすることに参加したい場合は、 qgis.org を見て回って手を貸して下さい。
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate.md" >}}). If you would like to become an official sustaining member, please visit [our sustaining members page]({{< ref "/funding/membership.md" >}}) for details. Supporting QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sustaining members is provided below - our very great thank you to all of our supporters!
+QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは [寄付者一覧]({{< ref "/funding/donate.md" >}}) でご覧いただけます。公式のサステイニングメンバーになることをご希望の方は、詳細について [サステイニングメンバーページ]({{< ref "/funding/membership.md" >}}) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金として活用されます。最新のサステイニングメンバーの完全なリストを以下に掲載します。すべてのサポーターの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 

@@ -24,7 +24,7 @@ This feature-packed release includes a vast number of user experience enhancemen
 
 さらに、開発者、ドキュメント作成者、テスター、 そして、これらのリリースを可能にするために時間と労力をボランティアとして提供してくださる（あるいはそのための資金を提供してくださる）多くの皆様に、心より感謝申し上げます。QGISコミュニティを代表して、このリリースをぜひお楽しみください！時間や資金の寄付、あるいはその他の形で QGIS をより素晴らしいものにするために参加をご希望の方は、ぜひ [QGIS.ORG](https://www.qgis.org/) にアクセスして、ご協力をお願いいたします！
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list]({{< ref "/funding/donate/donors.md" >}}). If you would like to become an official project sustaining member, please visit our [sustaining member page]({{< ref "/funding/membership.md" >}}) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは [寄付者一覧]({{< ref "/funding/donate/donors.md" >}}) でご覧いただけます。公式のサステイニングメンバーになることをご希望の方は、詳細について [サステイニングメンバーのページ]({{< ref "/funding/membership.md" >}}) をご覧ください。QGISへの財政支援は、定期的な開発者ミーティングの開催、プロジェクトインフラの維持、およびバグ修正活動の資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 

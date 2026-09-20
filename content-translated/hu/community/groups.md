@@ -91,6 +91,8 @@ type: page
 {{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Koszovói Köztársaság" listSubtitle="Kapcsolattartó: Milot Lubishtani" >}}
 ### 2025-ben regisztrált
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzánia" listSubtitle="Kapcsolattartó: Antidy Kawamala" >}}
+### Removed 2025
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Kapcsolattartó: Germán Carrillo" >}}
 ### 2026-ban regisztrált
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Kapcsolattartó: Ujaval Gandhi" >}}
 

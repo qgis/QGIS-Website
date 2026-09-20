@@ -20,7 +20,7 @@ type: visual-changelog
 
 私たちは開発者、文書作成者、テスターなどの時間や労力を提供してくれる数多くのボランティアの皆さん（また資金を提供してくれる方々）に感謝します。 QGIS コミュニティとして、このリリースを楽しんでいただきたいと思います。もし時間やお金を寄付したいと考えている場合や、 QGIS をもっと素晴らしいものにすることに参加したい場合は、 qgis.org を見て回って手を貸して下さい。
 
-QGISは寄付者やスポンサーの支援を受けています。プロジェクトに多額の資金拠出を行った寄付者の現在のリストは寄付者リストをご覧ください。公式プロジェクトスポンサーになりたい場合、詳細はスポンサーシップのページをご覧ください。QGISへの出資は、半年毎の開発者会議に資金提供したり、プロジェクトインフラストラクチャを維持したり、バグ修正の取り組みに資金提供するのに役立ちます。現在のスポンサーの完全なリストは以下に掲載します。すべてのスポンサーの皆様に大変感謝しております！
+QGISは寄付者およびスポンサーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは寄付者リストをご覧ください。公式プロジェクトスポンサーになることをご希望の方は、詳細についてスポンサーシップのページをご覧ください。QGISへの財政支援は、半年毎の開発者会議の開催、プロジェクトインフラの維持、バグ修正活動への資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -147,8 +147,8 @@ This new option, available under the \"Advanced\" button for fill symbols, allow
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### 機能: 外周の内側または外側のみシンプルラインまたはマーカーラインの塗りつぶオプション
-This new option is shown whenever a simple line symbol or marker line symbol is used as part of a fill symbol for rendering polygons. The default behavior is to render both interior and exterior rings, but this new setting allows users to set the symbol layer to render only for the exterior ring OR only for interior rings. This allows for symbolisation which wasn\'t directly possible before, such as a marker line with markers for interior rings angled toward the interior of the polygon.
+### 機能: 外部リングまたは内部リングのみをレンダリングするシンプルラインまたはマーカーラインのオプション
+この新しいオプションは、ポリゴンをレンダリングするための塗りつぶしシンボルの一部として直線シンボルまたはマーカーラインシンボルが使用されているときはいつでも表示されます。デフォルトの動作では内部リングと外部リングの両方がレンダリングされますが、この新しい設定では、シンボルレイヤに外部リングのみまたは内部リングのみをレンダリングするように設定できます。これにより、以前は直接不可能だったシンボル化が可能になります。たとえばマーカーラインで、内部リングのマーカーがポリゴンの内側に向かって傾斜したものです。
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
@@ -156,17 +156,17 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ### 機能: ラスターイメージマーカー
 新しいラスターイメージマーカーシンボルタイプがQGISに追加され、ユーザーはラスター、つまりビットマップイメージファイルを使用してマーカーとして表示できます。ラスターイメージマーカーシンボルにより、幅、高さ、イメージ比、回転、および不透明度をカスタマイズできます。
 
-データ定義の画像ソースを使用することで、この新しいシンボルは、地理参照画像を地図キャンバスに表示するための優れた方法になります。
+データ定義の画像ソースを使用することで、この新しいシンボルは、ジオリファレンスされている画像を地図キャンバスに表示するための優れた方法になります。
 
 ![image5](images/entries/511ac83d3b841be6ae81db5f5d0f319e07e9656e.png.400x300_q85_crop.webp)
 
 This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
-### 機能：ラスター塗りつぶしでリモートURLまたは埋め込み画像に画像を設定できます
+### 機能：ラスター塗りつぶしでリモートURLがセットされた画像または埋め込み画像を設定できます
 SVGやラスタ画像マーカーと同様に、ラスタ塗りつぶしはHTTPのURLを使用するように設定したり、ファイルをシンボル自体の内部に直接埋め込むことができます。
 
 この機能はMathieu Pellerinによって開発されました
 ### 分類されたレンダリングでの代表値の使用
-When a field is configured with a value relation, value map or other \"representable value\" and the field is used as the source for a classification renderer, the represented values will be taken to label the categories.
+フィールドに値関係、値マップ又はその他の「表現可能な値」が設定されており、そのフィールドが分類レンダラーのソースとして使用される場合、表現された値がカテゴリのラベルとして使用されます。
 
 この機能はMatthias Kuhnによって開発されました
 ### 機能: 分類レンダラでカテゴリをマージするオプション
@@ -178,33 +178,33 @@ When a field is configured with a value relation, value map or other \"represent
 
 ![image6](images/entries/159eb5270ab436adbbddba1c92799d8621a0b8e5.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 
-This adds a new \"Project Colors\" section in data defined buttons which are linked to a color value. The color menu contains all colors defined as part of the current project\'s Project Color Scheme (which is defined through project properties).
+これにより、色の値にリンクされているデータ定義ボタンに新しい「プロジェクトカラー」セクションが追加されます。カラーメニューには、現在のプロジェクトのプロジェクトカラースキーム（プロジェクトプロパティで定義されています）の一部として定義されているすべての色が含まれています。
 
 ボタンからプロジェクトの色を選択すると、プロパティはその色にリンクされます。プロジェクトのプロパティを介して行われると、それは自動的に将来の色の変更に従います。
 
-This allows users to define common colors for a project once, and then \"bind\" symbol, label, layout, etc colors to these preset colors. The link is live, so you change it once, and the change is reflected EVERYWHERE. Sure beats updating a color 100 times when it\'s use has been scattered throughout a project\'s symbols, labels, etc\...
+これにより、ユーザーはプロジェクトの共通色を一度定義してから、シンボル、ラベル、レイアウトなどの色をこれらのプリセット色に「バインド」することができます。リンクは有効なので、一回変更すると、その変更はどこにでも反映されます。プロジェクト内のシンボルやラベルなど、あちこちに散らばっている色を100回も更新するよりは、断然マシですね…
 
 この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: スタイルマネージャーダイアログの改善
 スタイルマネージャーダイアログでは多くの改善が施されました。
-- A new \"list view\" mode has been added
-- An \"all\" tab has been added, which shows all matching symbols (regardless of the symbol type)
+- 新しい「リストビュー」モードの追加
+- 「全選択」のタブが追加され、（シンボルタイプを問わず）合致するシンボル全てを表示することができるようになりました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ラスタースタイルのSLDエクスポート
-QGIS is now able to export raster styling to sld, for example to be used in Geoserver. See: <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
+QGISはラスターのスタイルをSLDにエクスポートすることが可能になりました。Geoseverでこの機能が使われている例はこちらです。 <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
 
 ![image7](images/entries/7ab383dfaa0a0dbc9651168a56f44e2275b8c2df.png.400x300_q85_crop.webp)
 
 この機能はOSGeo UK, GeoServer PSC, Brad Hardsの資金提供を受けています。
 
-This feature was developed by [Luigi Pirelli and GeoSolutions](https://www.geo-solutions.it/)
+この機能は [Luigi Pirelli and GeoSolutions](https://www.geo-solutions.it/) によって開発されました
 ## デジタイズ
 ### 機能: ジオリファレンサの機能強化
 - GCPポイントにdX, dYと残差を追加
@@ -212,26 +212,26 @@ This feature was developed by [Luigi Pirelli and GeoSolutions](https://www.geo-s
 
 ![image8](images/entries/2d6278e2e65be30ceb12ff30f26d34dae6196e42.png.400x300_q85_crop.webp)
 
-This feature was developed by [Faneva Andriamiadantsoa](https://github.com/Fanevanjanahary)
+この機能は [Faneva Andriamiadantsoa](https://github.com/Fanevanjanahary) によって開発されました
 ### 機能: ポイント追加の時にジオリファレンサが最小化するのを避ける新しいオプション
 ユーザは、マップキャンバスから新しいコントロールポイントを追加するときに発生する自動ジオリファレンスウィンドウの最小化を避けることができます。この動作は、ポイントを追加しながら両方のウィンドウを表示させることが望ましい場合があるマルチモニタ設定では厄介です。
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## データ管理
 ### 機能: データベースマネージャのコメントオプション
-This feature was developed by [Corentin Falcone (SIRS)](https://www.sirs-fr.com/sirs/fr/)
+この機能は [Corentin Falcone (SIRS)](https://www.sirs-fr.com/sirs/fr/) によって開発されました
 ## フォームとウィジェット
 ### 機能: バイナリ (BLOB) フィールドの新しいフォームウィジェット
 このウィジェットはバイナリフィールドでのみ利用可能です（そしてこれはバイナリフィールドに使用されるデフォルトウィジェットです）。BLOBフィールドが空かどうかを示すラベルを表示し、空でない場合はコンテンツサイズ（バイト/ kb / etc単位）を示します。
 
 ドロップダウンメニューボタンを使用すると、ユーザーはフィールドの現在のバイナリコンテンツをディスクベースのファイルに保存したり、BLOBフィールドのコンテンツを消去したり、システムからファイルを選択してバイナリコンテンツを埋め込むことができます。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## マップコンポーザー
 ### 機能: グリッドフレームの改善
-Users can now set a margin for the grid frames in layout map items. Additionally, new \"Zebra (Nautical)\" and \"Line border (Nautical)\" frame styles have been added, which show nautical-style blocks in the grid corners when a margin is set for the grid.
+ユーザがレイアウト地図アイテムのグリッド枠に余白を設定できるようになりました。さらに、新しい \"Zebra (Nautical)\" および \"Line border (Nautical)\" フレームスタイルが追加されました。これらは、グリッドに余白が設定されている場合に、グリッドコーナーに航海スタイルのブロックを表示します。
 
 この機能はkonstによって開発されました
 ### 機能: 文字とラベルのエクスポート処理の改善
@@ -240,7 +240,7 @@ Users can now set a margin for the grid frames in layout map items. Additionally
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: マップのラベル機能の改善
 レイアウト地図項目内のラベルのレンダリング方法に関して、いくつかの改善が行われました。
-- A new setting allows per-map control of how close labels are permitted to be placed to the map item\'s edges. Sizes can be set using mm/inches/pixels/etc, and data defined label margins are allowed.
+- 新しい設定により、地図ごとに、ラベルを地図アイテムの端に配置することを許可する方法を制御できます。サイズはmm/インチ/ピクセルなどを使用して設定でき、データ定義型のラベル余白が可能です。
 - 新しい設定により、部分ラベルをマップに表示するかどうかをマップごとに制御できます。レイアウトは常に最高品質のカートグラフィック出力を生成する設定にする必要があるため、これはデフォルトではオフになります（新しいプロジェクトではデフォルトでtrueになるキャンバス設定とは異なります）。
 
 この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
@@ -249,12 +249,12 @@ Users can now set a margin for the grid frames in layout map items. Additionally
 ### 機能: 地図アイテムの範囲/縮尺のショートカットの改訂
 現在の地図ビューと一致するようにレイアウト地図アイテムを設定するためのボタン（およびその逆）が、地図アイテムプロパティウィンドウの新しいツールバーに移動されました。
 
-New actions have also been added to set the map item\'s scale to match the main canvas scale, and to set the main canvas scale to match the selected layout map\'s scale. These mirror the existing settings for setting the extent from the canvas and pushing the extent TO the canvas.
+地図アイテムの縮尺をメインのキャンバスの縮尺に合わせたり、選択したレイアウト地図の縮尺に合わせてメインのキャンバスの縮尺を設定したりするための新しいアクションも追加されました。これらは、キャンバスから範囲を設定し、その範囲をキャンバスにプッシュするための既存の設定を反映しています。
 
 この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
-### Feature: Layout items can \"block\" map labels
+### 機能: 地図ラベルの描画をブロックするレイアウトアイテムの指定
 This feature allows other layout items (such as scalebars, north arrows, inset maps, etc) to be marked as \"blockers\" for the map labels in a map item. This prevents any map labels from being placed under those items - causing the labeling engine to either try alternative placement for these labels (or discarding them altogether).
 
 This allows for more cartographically pleasing maps \-- placing labels under other items can make them hard to read, yet without this new setting it\'s non-trivial to get QGIS to avoid placing the labels in these obscured areas.
@@ -270,7 +270,7 @@ The blocking items are set through a map item\'s properties, under the label set
 - パスが壊れているか見つからない、または判読できない画像ファイルにリンクされている画像アイテム
 - 地図の概要が有効な地図アイテムにリンクされなくなりました
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 地図オーバビュー範囲の上下位置の制御
@@ -324,7 +324,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 
 ![image9](images/entries/ae0544826b7d16479b2e48ba97f1f530c80bbd42.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: HStore分割アルゴリズム
@@ -346,7 +346,7 @@ This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
 ![image12](images/entries/6715290eac02e216394b3f24045da0b982069c7d.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 最大長による線分割アルゴリズム
@@ -364,7 +364,7 @@ It allows creation of processing algorithm which can fully take advantage of QGI
 
 QgsProcessingParameterAuthConfigパラメータは、選択された認証設定IDを返すQgsProcessingAlgorithm.parameterAsString()を使用して評価されます。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: gdaladdoアルゴリズムにおけるリサンプリングとフォーマットのオプション
@@ -445,7 +445,7 @@ QGIS 3.6 brings back the functionality from the old 2.18 standalone \"browser\" 
 
 ![image19](images/entries/5058aa9a701e417271b0cbf0869669177a7f0fe4.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ブラウザでQGS/QGZプロジェクトを探索
@@ -484,7 +484,7 @@ A new setting, \"allowVersionCheck\" has been added to the QGIS configuration in
 
 この設定は、QGISバージョン管理が一元管理されているエンタープライズインストールでの使用を目的としています。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ベクタレイヤの凡例アイテムにトグル動作を追加
@@ -497,7 +497,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
 ### 機能: ArcGISフィーチャサーバーレイヤのサービス情報を開く
 ArcGIS Feature Serverレイヤのブラウザパネルに新しい右クリックメニューオプションがあり、ユーザは選択したレイヤのサービス情報Webページを直接開くことができます。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Binary blob support for OGR providers
@@ -505,13 +505,13 @@ This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
 
 Additionally, new binary fields can be created for compatible data sources.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: ArcGIS Feature Server picture marker and picture fill support
 画像マーカーまたは画像塗りつぶしシンボルを使用してFeature Serverレイヤーをロードすると、QGISは自動的にESRI画像マーカーと塗りつぶしシンボルを変換し、それらをレイヤーのデフォルトスタイルとして使用します。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 本機能はNyall Dawson, Mathieu Pellerinが開発しました。
 ### Feature: ArcGIS Feature Server labeling support
@@ -682,7 +682,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ### Feature: Custom validity checks on layout exports
 See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ### 機能: 測地線計算のためのAPI
