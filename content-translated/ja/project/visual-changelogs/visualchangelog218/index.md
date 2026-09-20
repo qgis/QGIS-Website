@@ -199,7 +199,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 This feature was funded by [North Road](http://north-road.com)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### 機能：幾何境界アルゴリズム
+### 機能：ジオメトリ境界アルゴリズム
 この新しいアルゴリズムは、入力ジオメトリ（すなわちジオメトリのトポロジカル境界）のコンビナトリアル境界のクロージャを返します。たとえば、ポリゴンジオメトリにはポリゴンの各リングの線ストリングで構成される境界があり、線のジオメトリには線の開始点と終了点からなる境界があります。このアルゴリズムはポリゴンまたはラインレイヤーにのみ有効です。
 
 ![image57](images/entries/907b7b5c36af36547f10f33f65e9655a5cbe5a67.png.400x300_q85_crop.webp)
@@ -211,59 +211,59 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ### 機能：XYZタイルレイヤーのネイティブサポート
 XYZ形式のラスタータイルがWMSデータプロバイダ内でネイティブにサポートされ、QuickMapServicesやOpenLayersなどのサードパーティのプラグインを使用しなくても、他のソースからのベースマップを表示できます。
 
-To add connections to XYZ layers, just open browser dock widget, look for item called \"Tile Server (XYZ)\" and right click it to get a popup menu with \"New connection\" action. You will be asked for URL, in which `{x}`, `{y}`, `{z}` will be replaced by the actual tile numbers according to the current map view. For example, to add OpenStreetMap base map, one may use this URL: `http://c.tile.openstreetmap.org/{z}/{x}/{y}.png`
+XYZレイヤーへ接続を追加するには、ブラウザドックウィジェットを開き、「タイルサーバー（XYZ）」という項目を探して右クリックすると、「新規接続」アクションのポップアップメニューが表示されます。URLを求められ、その中の `{x}` 、 `{y}` 、 `{z}` は現在の地図ビューに従って実際のタイル番号に置き換えられます。たとえば、OpenStreetMapベースマップを追加するには、次のURLを使用します： ``http://c.tile.openstreetmap.org/{z}/{x}/{y}.png``
 
-The data provider also supports encoding of XYZ tile numbers into \"quadkeys\" used by Bing. Simply use `{q}` instead of `{x}`, `{y}` and `{z}` in the URL.
+データプロバイダは、XYZタイル番号をBingが使用する「クワッドキー」へエンコードすることにも対応しています。URLの `{x}` 、 `{y}` 、 `{z}` の代わりに `{q}` を使うだけです。
 
 ![image61](images/entries/f69a3601e9201e38f9a561d40807512035da2298.gif)
 
-This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting](http://www.lutraconsulting.co.uk/) によって資金提供されました
 
 This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
 ## QGISサーバー
 ### 機能：サーバ内の地物情報ジオメトリをセグメント化する可能性
-Necessary for geometries that contain curves (CircularArc, CompoundCurve, CurvePolygon), but the web client (e.g. QGIS Web Client) can\'t handle the display of these geometry types.
+曲線を含むジオメトリ（CircularArc、CompoundCurve、CurvePolygon）では必要ですが、Webクライアント（QGIS Webクライアントなど）ではこれらのジオメトリタイプの表示を処理できません。
 
-This feature can be enabled in the \"OWS server\" tab in the \"Project Properties\" dialogue.
+この機能は、「プロジェクトプロパティ」ダイアログの「OWSサーバー」タブで有効にすることができます。
 
-![image62](images/entries/f4b9cf3ba10669b933eb3f3a5c401f675ad76533.png.400x300_q85_crop.webp)
+![image62](images/entries/f4b9cf3ba10669b933eb3f3a5c401f675ad76533.png.400x300_q85_crop.webp)///////
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Marco Hugentobler (Sourcepole)](http://www.sourcepole.ch/)
+この機能は [Marco Hugentobler（Sourcepole）](http://www.sourcepole.ch/) によって開発されました
 ## プラグイン
 ### 機能：DBマネージャー：SQLレイヤーを更新する機能を追加する
-With this feature the user can update the layer datasource if it\'s based on an SQL request.
+この機能を使用すると、それがSQLリクエストに基づいている場合、レイヤー・データソースを更新できます。
 
-This feature was funded by [Ifremer](http://wwz.ifremer.fr)
+この機能は [Ifremer](http://wwz.ifremer.fr) によって資金提供されました
 
 This feature was developed by [3Liz](http://3liz.com)
 ## プログラマビリティ
 ### 機能：GEOS線形参照関数をQgsGeometryに公開する
-A new function `QgsGeometry::lineLocatePoint()` has been added for retrieving the distance along a linestring to the nearest position on the linestring to a given point.
+新しい関数 `QgsGeometry::lineLocatePoint()` が追加され、ラインストリングに沿ったラインストリング上の最も近い位置から所定の点までの距離を取得します。
 
 This feature was funded by [North Road](http://north-road.com)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ## 機能：2.18の新しいPyQGISクラス
 ### 新しいコアクラス
-- [QgsAnnotation](https://qgis.org/api/classQgsAnnotation.html) - an interface for annotation items which are drawn over a map
-- [QgsFeedback](https://qgis.org/api/classQgsFeedback.html) - a base class for feedback objects to be used for cancellation of something running in a worker thread
-- [QgsOptionalExpression](https://qgis.org/api/classQgsOptionalExpression.html) - an expression with an additional enabled flag
+- [QgsAnnotation](https://qgis.org/api/classQgsAnnotation.html) - 地図上に描画される注釈アイテムのインタフェース
+- [QgsFeedback](https://qgis.org/api/classQgsFeedback.html) - ワーカースレッドで実行されている何かのキャンセルに使われるフィードバックオブジェクトの基底クラス
+- [QgsOptionalExpression]https://qgis.org/api/classQgsOptionalExpression.html) - 有効フラグを追加した式
 
 ### 新しいGUIクラス、再利用可能なウィジェット
-- [QgsExpressionLineEdit](https://qgis.org/api/classQgsExpressionLineEdit.html) - includes a line edit for entering expressions together with a button to open the expression creation dialog. This widget is designed for use in contexts where no layer fields are available for use in an expression and space is constrained.
-- [QgsTabWidget](https://qgis.org/api/classQgsTabWidget.html) - similar to QTabWidget but with additional methods to temporarily hide/show tabs
+- [QgsExpressionLineEdit](https://qgis.org/api/classQgsExpressionLineEdit.html) - 式作成ダイアログを開くためのボタンとともに、式を入力するための行エディタを含みます。このウィジェットは、式で使用できるレイヤフィールドがなく、スペースが限られている状況で使用するために設計されています。
+- [QgsTabWidget](https://qgis.org/api/classQgsTabWidget.html) - QTabWidgetに似ていますが、一時的にタブを隠す/表示するメソッドが追加されています
 
 ## 機能：新しい式の関数
 QGIS 2.18には、角度/距離補間の関数を含むいくつかの新しい式関数が追加されています。
-- `line_merge`: merges a MultiLineString geometry into connected LineStrings
-- `boundary`: returns a geometry\'s topological boundary, ie for polygons this is a MultiLineString representing the polygon\'s rings
-- `angle_at_vertex`: returns the average (bisector) angle to a geometry at a specified vertex index
-- `distance_to_vertex`: returns distance along geometry to a specified vertex index
-- `line_interpolate_angle`: calculates the angle parallel to a geometry at the specified distance along the geometry
-- `line_interpolate_point`: returns a point on line at distance
-- `line_locate_point`: returns distance along line to nearest line location closest to specified point
+- `line_merge` ：MultiLineStringジオメトリを接続されたLineStringsにマージします
+- `boundary` ：ジオメトリのトポロジカルな境界を返します。つまり、ポリゴンの場合、これはポリゴンのリングを表すMultiLineStringです
+- `angle_at_vertex` ：指定された頂点インデックスのジオメトリに対する平均（二等分線）の角度を返します
+- `distance_to_vertex` ：指定された頂点インデックスまでのジオメトリに沿った距離を返します
+- `line_interpolate_angle` ：ジオメトリに沿って指定された距離でジオメトリに平行な角度を計算します
+- `line_interpolate_point` ：距離のあるライン上のポイントを返します
+- `line_locate_point` ：指定されたポイントに最も近いライン位置へのラインに沿った距離を返します
 
 この機能はAndreas Neumannによって資金提供されました
 

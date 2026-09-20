@@ -21,22 +21,22 @@ QGIS 2.4.0の次のリリースのログを変更します。このリリース�
 QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
-- GOLD Sponsor: [Asia Air Survey, Japan](http://www.asiaairsurvey.com/)
-- SILVER Sponsor: [G.A.I.A. mbH, Germany](http://www.gaia-mbh.de/)
+- ゴールドスポンサー: [Asia Air Survey, Japan](http://www.asiaairsurvey.com/)
+- シルバースポンサー: [G.A.I.A. mbH, Germany](http://www.gaia-mbh.de/)
 - シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
 - ブロンズスポンサー: [www.molitec.it, Italy](http://www.molitec.it/)
 - ブロンズスポンサー: [www.argusoft.de, Germany](http://www.argusoft.de)
 - ブロンズスポンサー: [www.openrunner.com, France](http://www.openrunner.com)
-- BRONZE Sponsor: [www.eschenlaub.de, Germany](http://www.eschenlaub.de)
+- ブロンズスポンサー： [www.eschenlaub.de、ドイツ](http://www.eschenlaub.de)
 
 プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新リストは、 [寄付者リスト](http://qgis.org/ja/site/about/sponsorship.html#list-of-donors) でご覧いただけます。
 
-If you would like to make a donation or sponsor our project, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. QGIS is Free software and you are under no obligation to do so. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
+寄付をすることや、プロジェクトを支援することを希望される方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISはフリーソフトウェアであり、あなたにそうする義務はありません。QGISへのご支援は、半年ごとの開発者会議の開催、プロジェクトインフラの維持、バグ修正活動の資金として滑油尾されます。
 
 {{<table-of-contents >}}
 ## 一般情報
-### Feature: Generate band name with NetCDF EXTRA_DIM
-NetCDFは余分な寸法情報を提供した。この情報は、各バンドのメタデータを提供します。これらのメタデータは、各バンドの名前を説明するために使用できます。たとえば、NetCDFファイルの帯域は、指定された深さの温度を表します。ユーザにとっては、バンド番号だけではなく、奥行き情報を持つバンドを選択する方が簡単です。
+### 機能: NetCDF EXTRA_DIM を使ったバンド名の生成
+NetCDFは余分な寸法情報を提供した。この情報は、各バンドのメタデータを提供します。これらのメタデータは、各バンドの名前を説明するために使用できます。たとえば、あるNetCDFファイルのバンドは、指定された深さの温度を表します。ユーザにとっては、バンド番号だけではなく、深さ情報を使ってバンドを選択する方が簡単です。
 
 ![image1](images/entries/becafd815f152b53503b33048beb8bc95cdfdaf6.webp)
 ### 機能：ラスターデータにスケールとオフセットを適用する
@@ -48,30 +48,30 @@ NetCDFは余分な寸法情報を提供した。この情報は、各バンド�
 
 ![image3](images/entries/386f372e4b7be45426a62005813c8d58a9a2cb43.webp)
 ### 機能:コンポーザと地図キャンバスにおけるカラープレビューモード
-A really innovative feature that has been added to 2.4 is support for grayscale and colour blindness previews. This allows you to visualise how people with colour blindness will perceive your cartography and map layout, or how your map will look if it\'s printed in grayscale. You can read more about this new feature [here](http://nyalldawson.net/2014/05/colour-blindness-and-grayscale-previews-in-qgis-2-4/).
+2.4に追加された、本当に革新的な機能は、グレースケールと色盲のプレビューのサポートです。これにより、色覚障害者の地図作成や地図のレイアウト、またはグレースケールで印刷された場合の地図の表示方法を視覚化することができます。この新機能の詳細は [ここ](http://nyalldawson.net/2014/05/colour-blindness-and-grayscale-previews-in-qgis-2-4/) で読むことができます。
 
 ![image4](images/entries/d3d6193f1a37c8201c9be786ef798c5419eb4c79.webp)
 ### 機能：QLR QGISレイヤーファイル
-Added support for QGIS Layer Definition files or simply QLR (see <http://nathanw.net/2014/03/12/qgis-qlr/>). QLR file is a file that points to the data, contains all the styling, and other information. You can then just add this file and it will do all the other magic for you. QLR makes it easy to add same layer to multiple map documents, inheriting all of the properties which have been set and works with any layer supported in QGIS, expect special plugin layers.
+QGISレイヤー定義ファイルまたは単にQLRのサポートが追加されました（<http://nathanw.net/2014/03/12/qgis-qlr/> を参照）。QLRファイルは、データを指し示すファイルであり、すべてのスタイリングおよびその他の情報を含む。このファイルを追加するだけで、他のすべての魔法を実行できます。QLRを使用すると、同じレイヤーを複数のマップドキュメントに簡単に追加できます。また、設定されているすべてのプロパティを継承し、QGISでサポートされているレイヤーで動作し、特別なプラグインレイヤーが必要です。
 ### 機能：新しい式の関数
 式ビルダーに新しい機能を追加しました.
 - バウンディングボックス(境界)
-- bounding box width & height (bounds_width/bounds_height)
+- バウンディングボックスの幅と高さ（bounds_width/bounds_height）
 - 最小/最大x / y座標（xmin / xmax / ymin / ymax）
 - 最大/最小文字数にラップされた文字列を返す新しいwordwrap関数
 
 ![image5](images/entries/b8f4b0adf2c8f7ba8303f5aa6df8d2294a0b4c7b.webp)
 ### 機能：色をコピー、ペースト、ドラッグアンドドロップ
-You can now copy, paste, drag and drop colours between any colour input widget in QGIS. See this [article](http://nyalldawson.net/2014/05/colour-shortcuts-in-qgis-2-4/) for more information on how this new feature works. Hex color codes and rgb strings can also be pasted on to colour buttons to allow importing colours from outside of QGIS.
+QGISの任意のカラー入力ウィジェット間で色をコピー、ペースト、ドラッグ＆ドロップできます。この新しい機能がどのように働くかについての詳細は、 この [記事](http://nyalldawson.net/2014/05/colour-shortcuts-in-qgis-2-4/) を参照してください。16進数のカラーコードとrgb文字列をカラーボタンに貼り付けて、QGISの外部からカラーをインポートすることもできます。
 
 ![image6](images/entries/d2e1cdce5ed643c88f1630fa36b667e53ec8e4de.webp)
 ### 機能：マルチスレッドレンダリング
-This is one feature we simply cannot do justice to with a screenshot -QGIS now supports multi-threaded rendering! What this means is that when drawing the map, QGIS will split the drawing work between all of the cores in your CPU, making the process more efficient and responsive. By **responsive** we mean that you no longer need to wait for the map view to update before you can pan or zoom again. Also the map display updates incrementally allowing you to see if the map is positioned correctly early on in the drawing process. Take a look at [this article](http://www.lutraconsulting.co.uk/casestudies/qgis-multi-threaded-rendering) for a more detailed overview of the multi-threaded rendering system. You will find some options in the QGIS settings dialog that allow you to manage the behaviour of multi-threaded rendering.
+これは、単にスクリーンショットで十分な評価ができない機能です - QGISはマルチスレッドレンダリングをサポートするようになりました！ つまり、地図を描くとき、QGISはCPU内のすべてのコア間で描画作業を分割し、プロセスの効率と応答性を高めます。 **応答性** とは、地図の表示が更新されるのを待つ必要がなく、再度パンまたはズームできることを意味します。 また、地図表示が段階的に更新され、図面が早期に配置されているかどうかを確認できます。 マルチスレッドレンダリングシステムのより詳細な概要は [この記事](http://www.lutraconsulting.co.uk/casestudies/qgis-multi-threaded-rendering) を見てください。 QGISの設定ダイアログには、マルチスレッドレンダリングの動作を管理できるオプションがいくつかあります。
 
 ![image7](images/entries/ebcacf7c2623f7ea3e87c929d77bfe4113c75549.webp)
 ## ラベリング
 ### 機能：複数のラベル機能
-Long lines (such as contour lines or roads) can now be repeatedly labeled at regular intervals. One can choose between mm and map units for specifying the repetition interval. At the time of the release there is still an issue with \"merge connected lines to avoid duplicate\" setting.
+長い線（等高線や道路など）は、定期的に繰り返しラベルを付けることができるようになりました。繰り返し間隔を指定するにはmm単位と地図単位を選択できます。リリース時点では、「重複を避けるために接続された行をマージする」という設定にはまだ問題があります。
 
 ![image8](images/entries/4b996cdf33f0d18a5266e6b6053ab88d4dca9372.webp)
 ## マップコンポーザー
