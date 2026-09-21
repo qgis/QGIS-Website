@@ -31,7 +31,7 @@ QGISコミュニティはあなたがこのリリースを楽しんでいただ�
 
 プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新リストは、 [寄付者リスト](http://qgis.org/ja/site/about/sponsorship.html#list-of-donors) でご覧いただけます。
 
-寄付をすることや、プロジェクトを支援することを希望される方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISはフリーソフトウェアであり、あなたにそうする義務はありません。QGISへのご支援は、半年ごとの開発者会議の開催、プロジェクトインフラの維持、バグ修正活動の資金として滑油尾されます。
+寄付をすることや、プロジェクトを支援することを希望される方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISはフリーソフトウェアであり、あなたにそうする義務はありません。QGISへのご支援は、半年ごとの開発者会議の開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。
 
 {{<table-of-contents >}}
 ## 一般情報
@@ -76,18 +76,18 @@ QGISの任意のカラー入力ウィジェット間で色をコピー、ペー�
 ![image8](images/entries/4b996cdf33f0d18a5266e6b6053ab88d4dca9372.webp)
 ## マップコンポーザー
 ### 機能：コンポーザの写真アイテムの改良
-The image item in composer is now \'atlas friendly\' - you can use an **expression to define which image** should be shown for each atlas page. You can also now set the **resize mode** (zoom, clip, stretch etc.) for the image in relation to its frame size and dimensions. You can also specify the placement of the image relative to its frame using the new **placement** item property.
+コンポーザーの画像アイテムは「地図帳対応」となりました。各地図帳ページに **どの画像を表示するかを式を使用して** 決定できるようになりました。また、フレームのサイズや寸法に応じる、画像の **リサイズモード** （ズーム、クリップ、ストレッチなど）を設定できるようになりました。さらに、新しい **配置** アイテムプロパティを使用することで、画像の配置位置をフレームに相対的に指定することもできるようになりました。
 
 ![image9](images/entries/59c029be33ba4cbdf7fb48879350e699cf5f9897.webp)
 ### 機能:地図帳における事前定義スケールモード
-When working with atlas map items, you can now specify a predefined scale mode for the map. It will use the best fitting option from the list of predefined scales in you your project properties settings (see Project -\> Project Properties -\> General -\> Project Scales to configure these predefined scales).
+地図帳の地図アイテムを使って作業するときに、地図のためにあらかじめ定義されたスケールモードを指定できるようになりました。プロジェクトプロパティ設定であらかじめ定義されたスケールのリストから最適なフィッティングオプションを使用します（これらの定義済み尺度を設定するには プロジェクト -> プロジェクトプロパティ -> 一般 -> プロジェクト尺度を参照してください）。
 
 ![image10](images/entries/45aa708b7c1ba7dd42bd71e3ee293349262853f7.webp)
 ### 機能:コンポーザにおける属性テーブルの改善
 私たちは、コンポーザのレイアウトに表を表示する機能をいくつか改良しました。
 - テーブル内の列を並べ替えるためのサポートが追加されました
 - 式ベースの列のサポートが追加されました
-- You can now set the alignment of individual table columns, and also specify the alignment for the table\'s header cells
+- 個々のテーブル列の配置を設定し、テーブルの見出しセルの配置を指定できるようになりました
 - 表の内容は式でフィルタリングできます
 
 ![image11](images/entries/e39937a4b6533c14856b12d4a1064425eac52a31.webp)
@@ -114,7 +114,7 @@ We have a great new render in QGIS 2.4. The shapeburst renderer will allow you t
 
 ![image15](images/entries/1d85daf70119e7a58d5ef18ae5a0ac2daf18ff4f.webp)
 ### 機能：マーカー線の配置を移動するオプション
-When using a marker line along a line or polygon edge, you can now specify an **offset** so that the marker line starts a set distance from the beginning of the line. If a marker line is set to \"first vertex\" or \"last vertex\" mode, than this offset will control how far along the line from the vertex the marker is placed.
+ラインまたはポリゴンの辺に沿ってマーカーラインを使用する場合、マーカーラインがラインの始まりから設定された距離を開始するように **オフセット** を指定できるようになりました。マーカーラインが「最初の頂点」モードまたは「最後の頂点」モードに設定されている場合、このオフセットよりも、マーカーが配置されている頂点から線までの距離を制御します。
 
 ![image16](images/entries/884f1735cee30abc7024f6fc21756b8609770173.webp)
 ### 機能:新しい反転ポリゴンレンダラ
@@ -124,7 +124,7 @@ When using a marker line along a line or polygon edge, you can now specify an **
 
 ![image17](images/entries/b58dd06d363524d112de7a40748f599730c4276e.webp)
 ### 機能：Spatialiteレイヤーによるスタイルの保存と復元
-In the previous version was possible to save style with postgres layers, now will be possible for Spatialite layers too. This functions allow to embed different styles inside a spatialite container simplifying sharing data and their presentation. A video tutorial of this funcionality can be found here <http://pvanb.wordpress.com/2014/05/15/saving-layer-styles-to-your-spatialite-database/>
+以前のバージョンではpostgresレイヤーでスタイルを保存することができましたが、Spatialiteレイヤーでも可能になりました。この機能により、spaceiteコンテナ内にさまざまなスタイルを埋め込むことができ、データとそのプレゼンテーションの共有が簡単になります。この機能のビデオチュートリアルはこちら <http://pvanb.wordpress.com/2014/05/15/saving-layer-styles-to-your-spatialite-database/> にあります
 
 ![image18](images/entries/b52c9d3fab8a6281c0e8869702328521a2445994.webp)
 

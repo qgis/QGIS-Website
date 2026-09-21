@@ -12,7 +12,7 @@ type: visual-changelog
 # QGIS 2.8の変更履歴{#changelog28 }
 リリース日: 2015-02-20
 
-This is the change log for the next release of QGIS - version 2.8 \' Wien\'. Wien is German for \'Vienna\' - host city to our developer meet up in November 2009 and again in March 2014.
+これは、QGISの次のリリースであるバージョン2.8「Wien」の変更ログです。「Wien」はウィーンのドイツ語で、2009年11月と再び2014年3月の開発者会議のホスト都市です。
 
 **長期サポート**
 
@@ -35,7 +35,7 @@ QGIS 2.8は、最も人気のあるフリーデスクトップGISをよりいっ
 QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
-- **GOLD Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
+- **ゴールドスポンサー: Asia Air Survey, 日本** <http://www.asiaairsurvey.com/>
 - シルバースポンサー: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
 - シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
 - シルバースポンサー: [アイルランドの公共事業局、アイルランド](http://www.opw.ie/)
@@ -54,7 +54,7 @@ QGISコミュニティはあなたがこのリリースを楽しんでいただ�
 
 プロジェクトに大小問わず財政上の貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/en/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式プロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップのページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへのご支援は、半年ごとの開発者会議の開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。
 
-If you enjoy using QGIS, please consider making a donation to support the project - either [financial](https://qgis.org/en/site/getinvolved/donations.html) or of [your time and skills](https://qgis.org/en/site/getinvolved/index.html)! Lastly we would like to also take a moment to encourage you to fund a [special campaign](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) by one of our QGIS developers to get a working test suite for QGIS so that we can improve out quality assurance process and deliver you the best possible releases.
+もしQGISを楽しんで使っているのであれば、プロジェクトを支援するために寄付することを検討してください - [金銭的なもの](https://qgis.org/en/site/getinvolved/donations.html) でも、[あなたの時間とスキル](https://qgis.org/en/site/getinvolved/index.html) でも構いません！最後に、品質保証プロセスを改善し、可能な限り最高のリリースを提供するために、QGISの開発者の一人による [特別キャンペーン](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) に資金を提供することをお勧めさせてください。
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 
@@ -134,7 +134,7 @@ QGISでラインを正確に平行または直角にデジタル化したり、�
 - マルチパート機能のサポート
 - 頂点数減少についての統計
 
-**This feature was funded by:** [Tracks for Africa](http://tracks4africa.com/)
+**この機能は、以下によって資金提供されました：** [Tracks for Africa](http://tracks4africa.com/)
 
 **This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 

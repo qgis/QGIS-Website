@@ -57,7 +57,7 @@ ____
 
 ### メンバー配列の説明:
 - **username**: GitHubのユーザー名（完全に一致すること）
-- **author_names**: Git コメントに現れる氏名。 "Jean Luc"` 又は複数の氏名は `"Jean Luc,Jean Lucas"` 。
+- **author_names**: Git コメントに現れる氏名。 `"Jean Luc"` 又は複数の氏名は `"Jean Luc,Jean Lucas"` 。
 - **from**: この人が自分の団体のための貢献を始めた日付 (YYYY-MM-DD)
 - **to**: 活動中のときは `null` のまま残し、そうでなければ終了日を入れます (YYYY-MM-DD)
 

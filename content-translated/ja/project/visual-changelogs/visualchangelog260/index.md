@@ -21,18 +21,18 @@ QGIS 2.6.0の次のリリースのログを変更します。私たちは、最�
 QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
-- **GOLD Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
+- **ゴールドスポンサー: Asia Air Survey, 日本** <http://www.asiaairsurvey.com/>
 - シルバースポンサー: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
 - シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
 - ブロンズスポンサー: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
 - ブロンズスポンサー: [www.molitec.it, Italy](http://www.molitec.it/)
 - ブロンズスポンサー: [www.argusoft.de, Germany](http://www.argusoft.de)
 - ブロンズスポンサー: [www.openrunner.com, France](http://www.openrunner.com)
-- BRONZE Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.eschenlaub.de/)
+- ブロンズスポンサー: [GKG Kassel,(Dr.-Ing. Claas Leiner), ドイツ](http://www.eschenlaub.de/)
 
 プロジェクトに大小問わず財政上の貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/en/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式プロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップのページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへのご支援は、半年ごとの開発者会議の開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。
 
-If you enjoy using QGIS, please consider making a donation to support the project - either [financial](https://qgis.org/en/site/getinvolved/donations.html) or of [your time and skills](https://qgis.org/en/site/getinvolved/index.html)! Lastly we would like to also take a moment to encourage you to fund a [special campaign](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) by one of our QGIS developers to get a working test suite for QGIS so that we can improve out quality assurance process and deliver you the best possible releases.
+もしQGISを楽しんで使っているのであれば、プロジェクトを支援するために寄付することを検討してください - [金銭的なもの](https://qgis.org/en/site/getinvolved/donations.html) でも、[あなたの時間とスキル](https://qgis.org/en/site/getinvolved/index.html) でも構いません！最後に、品質保証プロセスを改善し、可能な限り最高のリリースを提供するために、QGISの開発者の一人による [特別キャンペーン](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) に資金を提供することをお勧めさせてください。
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 
@@ -63,7 +63,7 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 ![](images/entries/14023cf2ee768960d9c4a43da6e2a1624d10b3c3.webp)
 ### 機能:式フィールド(仮想フィールド)
-Sometimes you want to have an attribute that is calculated and that is always \'fresh\' - reflecting the current state of the feature properties. Now you can add virtual fields to your table which are based on an expression.
+場合によっては、計算される常に「新鮮な」属性を持ちたいことがあります。これは、地物のプロパティの現在の状態を反映します。これで、式に基づいてテーブルに仮想フィールドを追加できます。
 
 ![](images/entries/5fe53ad54b8d0cf8b7a22b90e733a421bb929506.webp)
 ### 機能:アクションは関連アイコンを持つことができるようになりました
@@ -71,15 +71,15 @@ Sometimes you want to have an attribute that is calculated and that is always \'
 
 ![](images/entries/e7bd5b306e3a72cc111a81f86a053b42679aa2f8.webp)
 ### 機能：追加の式の種類とオプション
-- Allow using `+` for string concatenation.
-- New keyword: `attribute( feature, attribute_name )` - gets the specified attribute from a feature.
-- New keyword: `$currentfeature` - returns the current feature.
-- New keyword: `$atlasfeature` - returns the atlas feature.
-- New keyword: `getFeature` - gets a matching feature from a layer.
+- 文字列の連結に `+` を使うことができます。
+- 新しいキーワード： `attribute( feature, attribute_name )`  - 指定された属性を地物から取得します。
+- 新しいキーワード: `$currentfeature` - カレント地物を返します。
+- 新しいキーワード： `$atlasfeature`  - 地図帳地物を返します。
+- 新しいキーワード: `getFeature` - 合致する地物をレイヤから取得します。
 
 ![](images/entries/e2e079bec87be65ccc97055251fc2544be91aaab.webp)
-### 機能：段階的レンダラーと分類されたレンダラー内のクラスを切り替えることができます
-これで、段階的レンダラーと分類済みレンダラーの特定のクラスを実際に削除せずに無効にすることができます。
+### 機能：連続値とカテゴリ値レンダラー内のクラスを切り替えることができます
+連続値レンダラーとカテゴリ値レンダラーの特定のクラスを実際に削除せずに無効にできるようになりました。
 
 ![](images/entries/84d11c6d978775d92f6a1902092795735d1f32b3.webp)
 ### 特集：凡例の改善
@@ -96,7 +96,7 @@ Sometimes you want to have an attribute that is calculated and that is always \'
 - ダイアログのレイヤアサイメントのツリービューと属性選択
 - ポリゴンの塗りつぶしで/HATCH をサポートしました
 - TEXTの代わりにMTEXTとしてのテキストを表現する（フォント、斜体、および太さを含む）
-- support for RGB colors when there\'s no exact color match
+- 正確なカラーマッチがない場合のRGBカラーのサポート
 - R12の代わりにAutoCAD 2000 DXF（R15）を使用する
 - R18テストメソッドを削除する
 
@@ -154,7 +154,7 @@ Sometimes you want to have an attribute that is calculated and that is always \'
 - 他の新しいアイテムを描画中にシフトを保持すると、それらを四角に制限し、altの原因アイテムを中心から引き出します
 - 右クリックはもはやアイテムをロック/ロック解除しません。これは新しいアイテムパネルによって処理されます。ロックされたアイテムはコンポーザのキャンバスから選択できなくなり、その下のアイテムとのやりとりが可能になります。
 - カーソルキーを押しながらaltキーを押すとアイテムの動きが1ピクセルになります
-- Removed the destructive \'Load from template\' menu item, replace with a new non-destructive \'Add items from template\' action
+- 破壊的な \'Load from template\' メニュー項目を削除し、非破壊的な新しい「テンプレートから項目を追加」アクションに置き換えました
 
 ![](images/entries/a7267ed637121bc9be70c5fa0afd2a63f9790bc7.webp)
 ### 機能:アイテムスナッピングの改善
@@ -162,7 +162,7 @@ Sometimes you want to have an attribute that is calculated and that is always \'
 
 ![](images/entries/8e43479380c28942345f3d9500dd956bd13f43e8.webp)
 ### 機能：地図アイテムの複数の概要
-Sometimes it is useful to be able to show more than one overview frame for a map frame. For example if you want to show where your map is in local, regional and global context, using multiple overview maps can help you to achieve this. As of QGIS 2.6 you can now achieve this by assigning as many maps as you like to the \'overview\' role in your composition.
+マップフレームに複数のオーバービューフレームを表示できるようにすると便利なことがあります。たとえば、マップがローカル、地域、およびグローバルのコンテキストにある場所を表示する場合は、複数のオーバービューマップを使用すると、これを達成するのに役立ちます。QGIS 2.6以降では、作成したコンポジションの「概要」の役割に好きなだけ多くのマップを割り当てることで、これを実現できます。
 
 ![](images/entries/88b55cc5f5e7cfb62486fe3b4867b7133ae66953.webp)
 ### 機能：HTML項目の改善
@@ -195,7 +195,7 @@ HTMLコンポーザー項目には、いくつかの便利な新しいオプシ�
 ![](images/entries/72bb8beaf97133424d1e68da67ae6fe79ea6faf6.webp)
 ## プログラマビリティ
 ### 機能: QGIS ウィジェットAPIの変更
-In order to normalise the naming of QGIS widgets, some minor API changes have been made. Almost all edit widgets were renamed by adding \"Wrapper\" at the end of their names. In particular this concerns:
+QGISウィジェットの命名を正規化するために、いくつかの軽微なAPIの変更が行われました。ほとんどすべての編集ウィジェットは、名前の最後に「Wrapper」を追加することによって名前が変更されました。特にこのことは：
 - QgsCheckboxWidget -\> QgsCheckboxWidgetWrapper
 - QgsClassificationWidget -\> QgsClassificationWidgetWrapper
 - QgsColorWidget -\> QgsColorWidgetWrapper
@@ -263,7 +263,7 @@ QGISで使用する独自のカスタムカラーパレットを定義できる�
 
 ![](images/entries/f8a68fcdfcaa59e6162185acb5c92edb9145c881.webp)
 ### 機能：地図キャンバスの動作にレイヤーを追加する
-In many of QGIS\' dialogs that generate a new layer, the \'Add layer to map canvas\' checkbox is now checked by default so that the new layer automatically gets added to the map.
+新しいレイヤーを生成する多くのQGISダイアログでは、デフォルトで「レイヤーをキャンバスにマップする」チェックボックスがオンになっているので、新しいレイヤーがマップに自動的に追加されます。
 
 ![](images/entries/f36f5912d2422a439d67b1a743fe81588e709dfb.webp)
 ### 機能：アイコンサイズ48と64を追加
@@ -271,7 +271,7 @@ In many of QGIS\' dialogs that generate a new layer, the \'Add layer to map canv
 
 ![](images/entries/3be3f51da2f54a8395f054f757f9fae1948a6103.webp)
 ### 機能：新しいカラーボタン
-This is probably one of the most useful new features in QGIS 2.6 -especially if you are involved a lot in cartography work. The colour button used everywhere in QGIS has been enhanced, with drop down menus, colour swatches, default colours, etc. Click on the drop down item to the right of the colour button to see the quick options. Click on the button to the left of the colour widget to see a standard colour chooser dialog.
+これはおそらく、QGIS 2.6の最も有用な新機能の1つです。特に、地図製作作業に多くの関与がある場合は特にそうです。ドロップダウンメニュー、カラースウォッチ、デフォルトカラーなどで、QGISのどこでも使用されるカラーボタンが強化されました。カラーボタンの右側にあるドロップダウン項目をクリックすると、クイックオプションが表示されます。カラーウィジェットの左側にあるボタンをクリックすると、標準のカラーチューザーダイアログが表示されます。
 
 ![](images/entries/54c211513bc86d00a5bce01a17476481937e0fbe.webp)
 ### 機能：識別ツールのコンテキストメニュー
