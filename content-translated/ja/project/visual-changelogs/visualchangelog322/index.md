@@ -18,7 +18,7 @@ QGIS 3.22 Białowieża is aimed at celebrating the 100-year anniversary of [Bia�
 
 Białowieża Forest is named after the village Białowieża, which is located right in the middle of this woodland. It is one of the oldest settlements in the area, nowadays hosting numerous research and tourism activities. Today, there are three research institutions in the village: [Białowieża Geobotanical Station, University of Warsaw](https://bsg.bialowieza.pl/en/), [The Mammal Research Institute, Polish Academy of Sciences](https://ibs.bialowieza.pl/en/), and the [Forest Research Institute, Department of Natural Forests](https://www.ibles.pl/en/web/guest/home). Additionally, a large number of scientists from Poland and abroad travel to Białowieża in order to carry out their studies, and as such, there are also other users of QGIS in the area, as well as additional projects which contribute to the Open Data and Open Source Software ecosystems, such as the [Open Forest Data](https://openforestdata.pl/) project.
 
-You can learn more about the project and this release of QGIS at the dedicated project website, <https://qgisbialowieza.pl>.
+プロジェクトとこのQGISのリリースについては、専用のプロジェクトウェブサイト <https://qgisbialowieza.pl> で詳細をご覧いただけます。
 
 This feature-packed release includes a vast number of user experience enhancements and controls added to various advanced functionalities. In addition to a host of additional mesh functionality and operational improvements, QGIS Desktop now includes annotation tools and support for annotation layers, amongst much, much more. For a whirlwind tour of all the new functionalities introduced, you can view the highlight reel video at <https://youtu.be/U-RHBt6WZi8>
 
