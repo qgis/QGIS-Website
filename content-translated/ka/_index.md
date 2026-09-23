@@ -11,8 +11,6 @@ HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: უფასო და ღია კოდით
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: ხელმისაწვდომია Windows, Mac, Linux პლატფორმებზე
 draft: false
 heroLogo: img/logosign.svg

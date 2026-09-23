@@ -11,8 +11,6 @@ HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: Darmowy i o otwartym źródle
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: Dostępny na Windows, macOS i Linux'a
 draft: false
 heroLogo: img/logosign.svg

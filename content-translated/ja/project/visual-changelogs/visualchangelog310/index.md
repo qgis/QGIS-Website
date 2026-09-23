@@ -591,23 +591,23 @@ Earlier QGIS server versions had rendering issues when remote SVG files were use
 
 ![image61](images/entries/71d731c71f864fcb542f2f7ec52c68e4c03068d3.webp)
 
-This feature was funded by [Ifremer](https://sextant.ifremer.fr/)
+この機能は [Ifremer](https://sextant.ifremer.fr/) によって資金提供されました
 
-This feature was developed by [René-Luc D\'Hont (3Liz)](https://www.3liz.com/)
+この機能は [René-Luc D'Hont (3Liz)](https://www.3liz.com/) によって開発されました
 ### 機能: WMS dimension
 QGIS 3.10では、WMSサーバは時間、標高、その他の種類の次元など、複数のタイプの次元のサポートを提供することができます。次元はレイヤレベルで定義する必要があり、WMSクライアントが要求された情報をフィルタリングするために使用することができます。WMS TimeはWMS Dimensionの一部です。
 
 ![image62](images/entries/45744c5a4a4c94e1c71a91bcfa7b672333002e75.webp)
 
-This feature was funded by [Ifremer](https://sextant.ifremer.fr/)
+この機能は [Ifremer](https://sextant.ifremer.fr/) によって資金提供されました
 
-This feature was developed by [René-Luc D\'Hont (3Liz)](https://www.3liz.com/)
+この機能は [René-Luc D'Hont (3Liz)](https://www.3liz.com/) によって開発されました
 ### 機能: サーバーOAPIF（別名WFS3）のサポート
-QGIS 3.10 Server is one of the very first geospatial servers which supports the new [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) standard (also known as WFS3)!
+QGIS 3.10 Serverは、新しい [OGC API - Features - Part 1: Core](http://docs.opengeospatial.org/is/17-069r3/17-069r3.html) 標準（または WFS3 とも呼ばれる）をサポートする最初の地理空間サーバの一つです！
 
 これは完全に新しい実装であり、ウェブマッピングの開発にHTMLとJSONベースのサービスを提供します。これには、創造的に利用可能なシンプルなWebGISインタフェースが含まれており、HTMLテンプレートシステムを介して簡単にカスタマイズすることができます。
 
-More information is available in the [documentation](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/services.html#wfs3-ogc-api-features)
+[ドキュメント](https://docs.qgis.org/testing/en/docs/user_manual/working_with_ogc/server/services.html#wfs3-ogc-api-features) で詳細な情報を入手できます。
 
 ![image63](images/entries/81af9beefcd8522ecc0f953b2a6b9b4895e35675.webp)
 
@@ -620,7 +620,7 @@ This feature was funded by [North Road](http://north-road.com)
 
 This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 ### 機能: プロバイダデータベース接続のための新しいAPI
-Thanks to funding from the QGIS grant program, you can now use a [new API](https://github.com/qgis/QGIS/pull/31190) aimed to manage DB connections in a unified way. The new connection API also provides a set of useful methods that can be used by plugin authors to access information about tables, schemas etc. and to run SQL arbitrary queries and get the results back into a handy Python array.
+QGISの助成金プログラムからの資金提供のおかげで、[new API](https://github.com/qgis/QGIS/pull/31190) を使用して、DB接続を統一的な方法で管理することができます。新しい接続APIは、プラグイン作成者がテーブルやスキーマなどの情報にアクセスし、SQLの任意のクエリを実行して結果を便利なPython配列に取得するために使用できる便利なメソッドのセットも提供します。
 
 この機能はQGISによって資金提供されました
 

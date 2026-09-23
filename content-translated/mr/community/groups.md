@@ -99,6 +99,8 @@ type: page
 {{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}
 
 {{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
+
+{{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="QGIS Canada User Group" listSubtitle="Contact: Jeff McKenna" >}}
 ## वापरकर्ता गटाची उद्दिष्टे
 * वापरकर्ता संमेलनांचे आयोजन
 * Coordination of development, with an emphasis on regional/national standards and requirements

@@ -99,6 +99,8 @@ type: page
 {{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="連絡先: Suren Poghosyan" >}}
 
 {{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="連絡先: Walid Moulahoum" >}}
+
+{{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="QGIS Canada User Group" listSubtitle="Contact: Jeff McKenna" >}}
 ## ユーザグループの目的
 * ユーザー会議の企画
 * 地域・国レベルの標準規格や要件を重視した開発の調整・取りまとめ

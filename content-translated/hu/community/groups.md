@@ -99,6 +99,8 @@ type: page
 {{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}
 
 {{<rich-list listLink="https://dz.qgis.org/" icon="🇩🇿" layoutClass="half" listTitle="QGIS Algeria User Group" listSubtitle="Contact: Walid Moulahoum" >}}
+
+{{<rich-list listLink="https://qgis.ca/" icon="🇨🇦" layoutClass="half" listTitle="QGIS Canada User Group" listSubtitle="Contact: Jeff McKenna" >}}
 ## A felhasználói csoportok céljai
 * Felhasználói találkozók szervezése
 * A fejlesztés összehangolása, különös tekintettel a regionális/nemzeti szabványokra és követelményekre

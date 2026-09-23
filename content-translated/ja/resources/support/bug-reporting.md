@@ -47,9 +47,9 @@ QGIS died on signal 11Could not attach to process. If your uid matches the uid o
 
  一部のディストリビューションではコアダンプの生成も無効化されています。クラッシュ時に `Aborted (core dumped)`  ではなく `Aborted`   のみ表示される場合は、QGIS起動前に `ulimit -c unlimited` を実行する必要があります。ログイン時に常に有効になるよう、`.profile` に追記しておくこともできます。
 
-To produce a backtrace from the core file, start `gdb /path/to/the/qgis/binary core`. The binary is usually `/usr/bin/qgis` or `/usr/bin/qgis.bin` on Debian with the GRASS plugin installed. In `gdb` you run `bt` which will produce the backtrace.
+コアファイルからバックトレースを生成するには `gdb /path/to/the/qgis/binary core` を開始します。バイナリは、通常GRASSプラグインのインストールされたDebianの `/usr/bin/qgis` または `/usr/bin/qgis.bin` にあります。 `gdb` では `bt` を実行しバックトレースを生成します。
 #### Windows上でのログ出力
-The nightly build in [OSGeo4W](https://trac.osgeo.org/osgeo4w) (package qgis-dev) is built with debugging output, that you can view with [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview). If the problem is not easy to reproduce, the output might shed some light about where QGIS crashes.
+[OSGeo4W](https://trac.osgeo.org/osgeo4w) （パッケージQGIS-dev）にあるナイトリービルドはデバッグ出力付きでビルドされており、 [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview) で見ることができます。問題を再現することが容易でない場合、この出力がQGISがクラッシュした場所についての何らかの手掛かりになることがあります。
 ## QGISウェブサイトやマニュアルの問題点を報告
 QGISプロジェクトでは、 [活発なWebサイト](https://qgis.org) と [充実したドキュメント](https://qgis.org/en/docs/index.html) を提供しています。私たちの努力にもかかわらず、古い情報、誤った記述や不明瞭な記述、または不足している情報を見つけた場合は、遠慮なくご報告ください。
 
