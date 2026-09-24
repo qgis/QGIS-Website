@@ -1,5 +1,5 @@
 ---
-AnnouncementLinkText: 更新履歴を見る
+AnnouncementLinkText: 変更履歴を見る
 AnnouncementText: 新機能・改善点をはじめ、今回のリリースのハイライトをご覧ください。
 AnnouncementTitle: is here!
 Badge: img/badges/dpg-badge.png

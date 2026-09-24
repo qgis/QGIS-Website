@@ -437,7 +437,7 @@ This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.com/en/home/)
-### Feature: Bug fixes by Denis Rouzaud (OPENGIS.ch)
+### 機能: Denis Rouzaud (OPENGIS.ch)によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | QgsSettings + QGIS4.ini + XYZ Tile provider = crash | [\#66424](https://github.com/qgis/QGIS/issues/66424) | [PR \#66450](https://github.com/qgis/QGIS/pull/66450) | N/A |
@@ -491,7 +491,7 @@ This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qc
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
-### Feature: Bug fixes by Germán Carrillo (OPENGIS.ch)
+### 機能: Germán Carrillo (OPENGIS) によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Allow QGIS to access curves from OGC API provider | 未報告 | [PR \#66452](https://github.com/qgis/QGIS/pull/66452) | N/A |
@@ -503,7 +503,7 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 This feature was developed by [Germán Carrillo (OPENGIS.ch)](https://opengis.ch/)
-### Feature: Bug fixes by David Signer (OPENGIS.ch)
+### 機能: David Signer (OPENGIS.ch) によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Fix field displayString on primitive JSON values | 未報告 | [PR \#66575](https://github.com/qgis/QGIS/pull/66575) | N/A |
@@ -512,7 +512,7 @@ This feature was developed by [Germán Carrillo (OPENGIS.ch)](https://opengis.ch
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
 This feature was developed by [David Signer (OPENGIS.ch)](https://opengis.ch/)
-### Feature: Bug fixes by Stefanos Natsis (Lutra Consulting)
+### 機能: Stefanos Natsis (Lutra Consulting) によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
 | Windows QGIS 4 installs plugin with ACL that do not include SYSTEM or Administrators | [\#66515](https://github.com/qgis/QGIS/issues/66515) | [PR \#66576](https://github.com/qgis/QGIS/pull/66576) | N/A |

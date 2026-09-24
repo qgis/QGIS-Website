@@ -35,7 +35,7 @@ QGISには充実したドキュメントが揃っています。ユーザーマ�
 
 {{<tab-content-start tab="1" >}}
 
-**For users (QGIS {{< param "ltrversion" >}}):**
+**ユーザー向け (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="デスクトップユーザーガイド — <lang>" >}}
 

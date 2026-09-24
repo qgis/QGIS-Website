@@ -2,7 +2,7 @@
 HasBanner: false
 draft: false
 sidebar: true
-title:  プロジェクトの組織体制
+title: プロジェクトの組織体制
 type: page
 
 ---

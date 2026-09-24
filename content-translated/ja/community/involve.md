@@ -138,7 +138,7 @@ QGISコアは、堅牢なAPIを通じてカスタムアプリケーションを�
 ### 支援・寄付
 私たちは2種類の資金提供を歓迎しています。
 
-{{<button class="is-primary1" link="funding/membership" text="Become a Sustaining Member" >}}
+{{<button class="is-primary1" link="funding/membership" text="サステイニングメンバーになる" >}}
 
 {{<button class="is-primary6" link="funding/donate" text="One-Time Donation" >}}
 
