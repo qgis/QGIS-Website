@@ -13,7 +13,7 @@ type: page
 ## セキュリティ情報
 QGISコミュニティはセキュリティを重視しています。QGISが重要な環境にも導入されていることを認識しています。このページでは、QGISプロジェクトが脆弱性およびセキュリティ問題にどのように対応するかについて説明します。
 ### What is a vulnerability in QGIS?
-QGIS is a project that can be used in many contexts and has a rich set of features. To provide this functionality, it relies on many components, relying on a large base of external dependencies (e.g. GDAL, PROJ, Python libraries, Qt, etc.). Security issues in QGIS can arise in various scenarios, including, but not limited to, vulnerabilities in its dependencies, issues within QGIS code itself, or through the misuse of its Python bindings. Here are the main categories:
+QGISは、さまざまな場面で利用でき、豊富な機能を備えたプロジェクトです。これらの機能を実現するために、QGISは多くのコンポーネントに依存しており、GDAL、PROJ、Pythonライブラリ、Qtなど、多数の外部依存関係に支えられています。QGISにおけるセキュリティ上の問題は、依存ライブラリの脆弱性、QGISのコード自体に起因する問題、あるいはPythonバインディングの誤用など、さまざまなシナリオで発生する可能性があります。主な分類は以下の通りです:
 #### Vulnerabilies of underlying libraries
 If you run a code scanner, most of the vulnerabilities listed are not related to QGIS, but to its dependencies. The specific version of the dependencies shipped with QGIS depends on the OS and packaging system being used.
 
