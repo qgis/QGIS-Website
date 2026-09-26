@@ -251,7 +251,7 @@ In QGIS 2.10 we mentioned that there is a new geometry architecture for QGIS but
 
 さらに、zまたはm次元を含むレイヤーで正しく機能するように、より多くのジオメトリの編集および修正ツールが更新されました。
 
-**This feature was developed by:** Marco Hugentobler at [Sourcepole AG](http://www.sourcepole.ch/)
+**この機能は次の方によって開発されました:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
 
 **この機能は以下によって資金提供されました：** [SolothurnのCanton](http://www.sogis.so.ch/)
 
@@ -461,7 +461,7 @@ See also [QGIS as OGC data server](http://docs.qgis.org/2.18/en/docs/user_manual
 
 スクリーンショットでは、左側にQGIS Web Clientが表示され、DXFエクスポート機能（QGISサーバーを利用）と同じエクステントが右側のAutodesk TrueViewで表示されます。
 
-**This feature was developed by:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
+**この機能は次の方によって開発されました:** Marco Hugentobler [Sourcepole AG](http://www.sourcepole.ch/)
 
 **この機能は以下によって資金提供されました：** [ウスター市](http://gis.uster.ch/)
 

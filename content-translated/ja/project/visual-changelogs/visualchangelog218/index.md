@@ -43,7 +43,7 @@ QGIS 2.18では、カラーピッカーダイアログ内のいずれかのス�
 
 This feature was funded by [Nyall Dawson (North Road)](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：カスタムカラースキームをカラーボタンドロップダウンメニューに追加する
 QGIS 2.18 adds the ability for users to set whether a user created color scheme should show up in the color button drop-down menus. This setting is controlled through the color picker dialog, on the lists tab. Just add a new color scheme, then from the scheme menu tick the new \"show in buttons\" option. It\'s a handy shortcut if you have sets of common palettes and want them to be instantly available through the color menu.
 
@@ -51,7 +51,7 @@ QGIS 2.18 adds the ability for users to set whether a user created color scheme 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## シンボロジ
 ### 機能：レイヤースタイルのパネルにカラーピッカーが埋め込まれました
 QGIS 2.18では、レイヤースタイルパネル内のカラーボタンをクリックすると、別のダイアログとしてではなく、スタイルパネル自体でカラーピッカーダイアログが開きます。これにより、色をインタラクティブに変更して結果を即座にプレビューできます。
@@ -60,7 +60,7 @@ QGIS 2.18では、レイヤースタイルパネル内のカラーボタンを�
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## ラベリング
 ### 機能：ラベル付けの代替リストサポート
 ラベルテキストに適用するテキスト置換のリストを指定する機能を追加します。例：通りの種類を省略します。
@@ -71,7 +71,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：改良されたラインラベル配置アルゴリズム
 ラインレイヤーのパラレルラベリングモードは大幅に改善されました。新しいアルゴリズムにより、地物ジオメトリのジグザグ部分にラベルを配置することはありません。
 
@@ -79,7 +79,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：周囲に沿って曲線ラベルを使用してポリゴンにラベルを付ける
 これにより、ポリゴンの外周に曲線ラベルを使用してラベルを付ける新しいモードが追加されます。
 
@@ -87,7 +87,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## レンダリング
 ### 機能：ラスタータイルのプレビュー（WMTSおよびXYZレイヤー）
 QGISの以前のバージョンでは、結果の地図を表示するために、レイヤーのすべてのタイルのダウンロードが完了するまで待つ必要がありました。これは今修正され、地図のキャンバスにタイルがダウンロードされるとすぐに表示され、何かが表示されるまでの時間を大幅に短縮することでユーザーエクスペリエンスが向上します。さらに、より低い解像度またはより高い解像度からの以前にダウンロードされたタイルは、正しい解像度を有するタイルがまだダウンロードされていない領域のプレビュー機能に使用されてもよい。
@@ -140,7 +140,7 @@ Allows an expression to be set for a vector layer field which is used to evaluat
 
 この機能は、DB Fahrwegdienste GmbH によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## マップコンポーザー
 ### 機能：真北矢印
 QGIS 2.18 adds support for orienting north arrows in the composer to True North. Previously all arrows were aligned to grid north, which is unsuitable for polar regions or non-north up projections (such as some South African projection systems). Now, you can choose to orient arrows to either grid north or true north. There\'s also an optional offset angle, which can be used to specify a grid convergence to make your arrows orient to magnetic north!
@@ -149,7 +149,7 @@ QGIS 2.18 adds support for orienting north arrows in the composer to True North.
 
 This feature was funded by [Norwegian Polar Institute\'s Quantarctica project](http://quantarctica.npolar.no)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## プロセシング
 ### 機能：表面上のポイントアルゴリズム
 This new algorithm is similar to the centroids algorithm, but where a centroid may fall outside its corresponding feature the \'Point on surface\' algorithm is guaranteed to create a point which is inside the corresponding polygon feature (or touching the corresponding line feature for line layers).
@@ -158,7 +158,7 @@ This new algorithm is similar to the centroids algorithm, but where a centroid m
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：処理ディゾルブアルゴリズムは複数のフィールドを受け入れます
 ディゾルブアルゴリズムでは、複数のフィールド値に基づいてディゾルブできるようになりました。以前のQGISのバージョンでは、ディゾルブは地物を単一のフィールド値でグループ化することしかできませんでした。
 
@@ -166,7 +166,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：最適化処理クリップアルゴリズム
 処理クリップアルゴリズムは、一般的な使用シナリオに対して最適化されており、結果としてクリッピング操作のスピードアップが大幅に向上しました。例えば：
 
@@ -182,7 +182,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：バウンディングボックスアルゴリズム
 この新しいアルゴリズムは、入力レイヤーの各地物のバウンディングボックス（エンベロープ）を計算します。
 
@@ -190,7 +190,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：連結線アルゴリズムをマージする
 このアルゴリズムは、MultiLineStringジオメトリのすべての接続部分を単一のLineStringジオメトリに結合します。入力されたMultiLineStringジオメトリのいずれかの部分が接続されていない場合、合成ジオメトリは、マージ可能な線や接続されていない線部分を含むMultiLineStringになります。
 
@@ -198,7 +198,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能：ジオメトリ境界アルゴリズム
 この新しいアルゴリズムは、入力ジオメトリ（すなわちジオメトリのトポロジカル境界）のコンビナトリアル境界のクロージャを返します。たとえば、ポリゴンジオメトリにはポリゴンの各リングの線ストリングで構成される境界があり、線のジオメトリには線の開始点と終了点からなる境界があります。このアルゴリズムはポリゴンまたはラインレイヤーにのみ有効です。
 
@@ -206,7 +206,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## データプロバイダ
 ### 機能：XYZタイルレイヤーのネイティブサポート
 XYZ形式のラスタータイルがWMSデータプロバイダ内でネイティブにサポートされ、QuickMapServicesやOpenLayersなどのサードパーティのプラグインを使用しなくても、他のソースからのベースマップを表示できます。
@@ -237,14 +237,14 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutr
 
 この機能は [Ifremer](http://wwz.ifremer.fr) によって資金提供されました
 
-This feature was developed by [3Liz](http://3liz.com)
+この機能は [3Liz](http://3liz.com) によって開発されました
 ## プログラマビリティ
 ### 機能：GEOS線形参照関数をQgsGeometryに公開する
 新しい関数 `QgsGeometry::lineLocatePoint()` が追加され、ラインストリングに沿ったラインストリング上の最も近い位置から所定の点までの距離を取得します。
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## 機能：2.18の新しいPyQGISクラス
 ### 新しいコアクラス
 - [QgsAnnotation](https://qgis.org/api/classQgsAnnotation.html) - 地図上に描画される注釈アイテムのインタフェース
@@ -267,6 +267,6 @@ QGIS 2.18には、角度/距離補間の関数を含むいくつかの新しい�
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 
 {{<content-end >}}

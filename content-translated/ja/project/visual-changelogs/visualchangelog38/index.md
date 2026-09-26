@@ -52,7 +52,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch
 
 また、プロセシングアルゴリズムについては、レイヤーを「ブラウザ」パネルから入力レイヤーの選択肢へ直接ドラッグすることができます。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## シンボロジ
 ### 機能: フォントマーカーに複数の文字
 While QGIS has long offered support for rendering points using font-based character markers, we\'ve enhanced this functionality in 3.8 and now offer the ability to render multi-character strings! And since we\'re always aiming to make the QGIS application interface as user-friendly and pleasant to use as possible, we also took the opportunity to tweak the UI for font markers and squash a number of frustrating GUI issues which previous versions suffered from.
@@ -75,7 +75,7 @@ All options available for the existing Marker Line symbol layer are also availab
 
 この機能は匿名の人によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: マーカーとハッシュ線シンボロジで平均の線の角度
 In previous QGIS versions, when a marker line was rendered using interval or center point place placement, the symbol angles were determined by taking the exact line orientation at the position of the symbol. This often leads to undesirable rendering effects, where little \"jaggies\" or corners in lines which occur right at the position of the symbol cause the marker to be oriented at a very different angle to what the eye expects to see.
 
@@ -89,7 +89,7 @@ This option is available for both the marker line symbol and the new hash line s
 
 この機能は匿名の人によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: ポイントパターン塗りつぶしシンボルレイヤのオフセット設定
 To round out the new symbology options we\'ve added in 3.8, the Point Pattern Fill symbol type has a new setting allowing for offsetting the markers in the pattern by a preset (or data-defined!) amount. This opens the door for many styling possibilities which were not possible in earlier versions, and further increases our compatibility with converted ArcGIS symbol and layer styles.
 
@@ -158,7 +158,7 @@ Even experienced users will likely appreciate the improved workflow, including a
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## 計算式
 ### 機能: 計算式の集約関数と結合関数での順序サポート
 Since certain aggregate and concatenation expressions require results in a certain order, we now allow control over the order features are added to the aggregate during expression evaluation.
@@ -169,7 +169,7 @@ E.g. `concatenate("Station",concatenator:=',', order_by:="Station")` will give a
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Simplified variant of \"attribute\" function
 This improvement brings a second variant for the existing \"attribute\" function. The \"attribute\" function in previous QGIS releases required both a target feature and attribute name to be specified. The new version is much simpler, automatically using the current feature and only requiring an attribute name.
 
@@ -189,7 +189,7 @@ It\'s just a faster shorthand version!
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: ジオメトリの終わりから頂点を取得する
 We added negative index support to the point_n(), angle_at_vertex(), and distance_to_vertex() functions, allowing for retrieval of vertices counting backward from the end of a geometry.
 
@@ -287,7 +287,7 @@ QGIS loves GeoPackage, so it\'s likely no surprise that every new QGIS version b
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Overlap Analysis
 This new Processing algorithm calculates the area and percentage cover by which features from an input layer are overlapped by features from a selection of overlay layers. New attributes are added to the output layer reporting the total area of overlap and percentage of the input feature overlapped by each of the selected overlay layers.
 
@@ -297,7 +297,7 @@ This is quite a common GIS task request, yet is full of traps for inexperienced 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Allow rounding values in Extract Layer Extent
 We\'ve added a parameter to the Processing algorithm \'Extract Layer Extent\' to round the extent bounding box coordinates to a certain interval. While rounding, the bounding box will only ever be enlarged, to ensure it will always cover the input data set. (I.e. the x and y minimum coordinates are rounded down, and x and y maximum coordinates are rounded up).
 
@@ -314,7 +314,7 @@ In QGIS 3.8 we moved the existing \"double click column header\" to fill values 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Generate raster XYZ tiles
 We\'ve added a brand-new algorithm to generate raster \"XYZ\" tiles using the current QGIS project. Tile images can be saved as individual images in directory structure, or as a single file in the \"MBTiles\" format.
 
@@ -342,7 +342,7 @@ Model variables are stored within an individual Processing model itself, and are
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Improved modeler UI
 We\'ve added numerous usability improvements to the Processing Graphical Modeler, including
 - The addition of helpful tooltips when hovering over model components
@@ -352,13 +352,13 @@ We\'ve added numerous usability improvements to the Processing Graphical Modeler
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Flagging algorithms with known issues
 By default, we now hide 3rd party algorithms with known issues from the Processing toolbox, helping you avoid frustration (or misleading results) when running these algorithms. A new setting in the Processing options screen allows these algorithms to be shown, but they will be highlighted in the toolbox with a warning icon. Use at your own risk!
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Raster Boolean logical OR/AND algorithms
 In version 3.8 we\'ve added new algorithms which calculate the boolean OR or AND for a set of input rasters. For AND, if all of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, otherwise it will be set to 0. For OR, if ANY of the input rasters have a non-zero value for a pixel, that pixel will be set to 1 in the output raster, else 0.
 
@@ -370,13 +370,13 @@ These new algorithms make for much simpler raster boolean logic calculation, wit
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: New input parameter types for Print Layouts and Print Layout Items
 By adding new parameter types for Print Layouts and Print Layout items, we\'ve opened up QGIS 3.8 to a whole new world of Processing algorithms which operate on print layouts. These new parameter types allow for creation of Processing algorithms and graphical models which prompt users to select a print layout and/or an item on the layout when run.
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: New parameter type for Map Scales
 We\'ve added a new parameter type specifically for map scales, QgsProcessingParameterScale. Scale values are evaluated using self.parameterAsDouble, which return the map scale denominator (matching the standard in other parts of the QGIS API).
 
@@ -384,13 +384,13 @@ Scale parameters are displayed to users using the standard QgsScaleWidget, which
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Improved \"point\" parameter handling
 We improved the workflow for algorithms with a \"point\" input parameter. When picking the point coordinate from a map you can now take advantage of QGIS snapping tools, allowing you to exactly match the point parameter to a feature\'s boundary.
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: New \"Print Layout Map Extent to Layer\" algorithm
 Taking advantage of the new facilities for accessing Print Layouts in Processing, we added a new algorithm which creates a polygon layer containing the extent of a print layout map item. The output layer also includes handy attributes specifying the map size (in layout units), scale and rotation.
 
@@ -400,7 +400,7 @@ If you\'ve ever wanted to create an advanced overview indicator, and the inbuilt
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Add X/Y fields to layer
 This new algorithm is a handy shortcut for adding X and Y (or latitude/longitude) fields to a point layer. You can even calculate the X/Y values using a different coordinate reference system from the layer (e.g. creating latitude/longitude fields for a layer in a projected CRS).
 
@@ -408,7 +408,7 @@ This new algorithm is a handy shortcut for adding X and Y (or latitude/longitude
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: \"Join attributes by nearest\" algorithm
 You can now perform K-nearest neighbour joins from the Processing toolbox!
 
@@ -420,7 +420,7 @@ By default only the single nearest feature is joined, but optionally the join ca
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Grass r.geomorphon algorithm
 The upstream GRASS team has been hard at work creating a new GRASS module for terrain analysis --- \"r.geomorphon\". In 3.8 we expose their efforts via a new Processing tool, which calculates geomorphons (terrain forms) and associated geometry using a machine learning approach.
 
@@ -449,7 +449,7 @@ QGIS 3.8 brings even more power to the browser panel, and now displays all sheet
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## 一般情報
 ### 機能: geopackageファイル内のQGIS プロジェクト
 QGISがGeoPackageを愛していることはすでにお伝えしましたか？さらなる証拠が必要ですか？QGIS 3.8では、QGISプロジェクトをGeoPackageファイルに直接保存できる機能が追加されました！QGISプロジェクトとそのプロジェクトで使用するすべてのデータを内包した完全自己完結型のGeoPackageを作成できるようになりました。（シェープファイルにこれができるか見てみましょう！）
@@ -473,7 +473,7 @@ A lot of this is only possible thanks to improvements in the underlying PROJ and
 
 This feature was funded by [ICSM](https://www.icsm.gov.au/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## データプロバイダ
 ### Feature: postgres provider: add support for generated identity columns
 この機能は jef-n によって開発されました
@@ -555,7 +555,7 @@ We added API to allow accurate nearest neighbor search based on QgsGeometry to Q
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## 注目すべき修正
 ### 機能: Alessandro Pasotti によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |

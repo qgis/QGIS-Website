@@ -249,7 +249,7 @@ This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
 This feature was funded by [Oester Messtechnik](https://messtechnik.ch/)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+この機能は [Matthias Kuhn、OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能：QGISプロジェクトのメタデータ
 QGIS 3.0で開始されたメタデータの作業を続けると、3.2ではQGISプロジェクトのメタデータがサポートされるようになりました。これにより、抄録、キーワード、連絡先の詳細、リンクなど、プロジェクトのプロパティに詳細なメタデータを設定できます。
 
@@ -339,7 +339,7 @@ Read this [blog post for more information](http://www.opengis.ch/2018/05/28/how-
 
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+この機能は [Matthias Kuhn、OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能：ゾーンヒストグラム
 この新しいアルゴリズムは、ポリゴンとして定義されたゾーン内に含まれるラスターレイヤーからの各固有値のカウントを表すフィールドを追加します。
 

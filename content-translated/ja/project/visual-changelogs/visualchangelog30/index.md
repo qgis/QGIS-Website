@@ -439,7 +439,7 @@ In QGIS 3.0, the existing raster Paletted Renderer for rasters was adapted to al
 
 This feature was funded by Stéphane Henriod, Satelligence (<http://satelligence.com/>), Bird\'s Eye View (<https://www.birdseyeviewgis.com/>), other anonymous backers
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## ラベリング
 ### 機能：ラベルのフォントサイズをmm / pixels単位で許可する
 This feature was funded by [North Road](https://north-road.com/)
@@ -736,7 +736,7 @@ More info at <https://north-road.com/qgis-layout-and-reporting-engine-campaign/>
 
 この機能は、スイスのQGISユーザーグループが資金提供しました。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## 分析ツール
 ### 機能：プロセッシングのためのラスター独自の値のカウント
 <http://imhere-asia.com/blog/post/qgis-raster-layer-unique-values-count>

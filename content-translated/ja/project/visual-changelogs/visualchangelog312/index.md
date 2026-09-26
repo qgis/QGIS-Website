@@ -221,7 +221,7 @@ It is possible to switch the timeframes of mesh layer\'s datasets by play/stop b
 
 This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: 面で定義されたデータの頂点へのオンザフライ・リサンプリング（メッシュレイヤ）
 面で定義されたデータセットの場合、隣接平均法を使用してデータを頂点に補間することができます。データ補間方法が選択されていない場合、単一の面上の各ピクセルは単一の値/色を持ちます。頂点上の値から各ピクセルのレンダリングが補間されるため、より滑らかな図形が作成されます。
 

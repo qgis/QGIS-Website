@@ -35,7 +35,7 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## シンボロジ
 ### 機能: 新規に追加されたラスタレイヤの既定の再サンプル設定
 In QGIS 3.10 we\'ve added a new setting for the default resampling mode to use when for newly-added raster datasets. (This setting can be found in the rendering panel of the options dialog).
@@ -50,7 +50,7 @@ We\'re passionate about making QGIS a user-friendly cartographic tool which is a
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: \"Center of segment\" placement mode for marker and hash line symbol layers
 We\'ve added a brand new \"Center of segment\" mode for placement of marker line or hashed lines symbols. This allows you to place markers or hash lines over the center point of individual line segments, exposing cartographic effects which were not possible before (and improving the quality of layers converted from ArcMap using the [SLYR](https://north-road.com/slyr/) tool).
 
@@ -58,7 +58,7 @@ We\'ve added a brand new \"Center of segment\" mode for placement of marker line
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: より柔軟なデータ定義オフセット式
 In previous QGIS releases, only string values of the format \'x,y\' would be permitted for data-defined symbol and label offsets. We\'ve listened to user feedback that this was confusing, and in QGIS 3.10 we now allow arrays of numbers as a valid expression result for offsets. E.g. \"array(3,5)\".
 
@@ -66,7 +66,7 @@ In previous QGIS releases, only string values of the format \'x,y\' would be per
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## ラベリング
 ### 機能: QGISスタイルにおける文字列書式とラベル設定の生成と管理
 In QGIS 3.10 we\'ve finally implemented a long-awaited feature, allowing users to manage their own libraries of custom text formats and label settings alongside their existing symbol libraries!
@@ -99,7 +99,7 @@ In 3.10, we expose options for either a \"simple\" (direct line) or \"Manhattan\
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 個々のラベルにおける複数行の整列を変更する
 We\'ve added an additional option to allow you to control multi-line alignment on a label-by-label basis. Just active the Label Properties tool and click on your map labels, and a new setting for the text alignment is now available.
 
@@ -115,7 +115,7 @@ This new setting (which is accessed through the Labeling toolbar) will render th
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: ラインラベルのはみ出し距離
 We understand that making a cartographic masterpiece is a demanding task, so in QGIS 3.10 we\'ve extended the capabilities of curved labels by adding a new \"overrun distance\" setting. This setting allows you to control exactly how far a curved label is allowed to extend past to ends of a line feature. Bumping up the distance will result in giving the labeling engine more flexibility in placing your labels, resulting in more labels being placed in better locations on your map! Win! The setting works for both curved and parallel label modes, and supports distances in mm/map units/pixels/etc, and data-defined distances.
 
@@ -123,7 +123,7 @@ We understand that making a cartographic masterpiece is a demanding task, so in 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Data defined control for \"label every part of multipart features\" setting
 The \"label every part\" option was one of the very few settings which couldn\'t be previously data-definable for labels. We\'ve remedied this omission in QGIS 3.10, and you can now control whether you want all parts labelled on a feature-by-feature basis!
 
@@ -131,7 +131,7 @@ The \"label every part\" option was one of the very few settings which couldn\'t
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Control \"label all parts\" via the label properties tool
 We aren\'t lying when we say that QGIS 3.10 is a love-letter to map labelling! Another new option we\'ve added in this version is interactive control over whether all parts of a feature should be labeled via the Label Properties tool.
 
@@ -139,7 +139,7 @@ We aren\'t lying when we say that QGIS 3.10 is a love-letter to map labelling! A
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: テキストの縦書き
 3.10 で、 QGIS は縦書きのラベルの描画を完全に装備しました。中国語、日本語、韓国語の利用者の皆さん、言葉を広めましょう。 :)
 
@@ -155,7 +155,7 @@ Another option we\'ve added for improving the conversion of ArcMap symbology to 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## レンダリング
 ### 機能: 報告された範囲の外でラスタレイヤをレンダリングする
 Depending on the server technology used, sometimes the map extent reported by raster layers may be smaller than the actual area which can be rendered (especially notably for WMS servers with symbology which takes more space than the data extent). Previous version of QGIS would crop raster layers to the reported extents, resulting in truncated symbols on the borders of these layers. Now, there\'s a new option to allow you to override this behaviour and ignore the reported extent for affected servers.
@@ -212,7 +212,7 @@ Thanks to funding from our right-to-left locale users, we\'ve added a new choice
 
 This feature was funded by [Kaplan Open Source](https://kaplanopensource.co.il/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 凡例グループとサブグループヘディングのマージンを制御する
 If you\'re after pixel-perfect control over your legend appearance \-- this one\'s for you! QGIS 3.10 now allows you to tweak the spacing applied under group or subgroup headings.
 
@@ -220,7 +220,7 @@ If you\'re after pixel-perfect control over your legend appearance \-- this one\
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: テキストフォーマットのデータで定義された設定
 Since so much of QGIS\' cartographic power comes from the flexibility of data-defined symbol settings, we\'ve now allowed them to be used for text formats too! This means you can now use data defined properties wherever text formats are used, e.g. within layout scalebar text.
 
@@ -228,7 +228,7 @@ Since so much of QGIS\' cartographic power comes from the flexibility of data-de
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: \@scale_value variable
 To complement the new support for data-defined settings within text formats, we added a new \@scale_value expression variable. This can be used when evaluating data defined text format properties while rendering scale bar text, and ultimately allows you to have per-label customisation of the text format inside scale bars (e.g. showing certain distance labels in bold).
 
@@ -236,7 +236,7 @@ To complement the new support for data-defined settings within text formats, we 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: スケールバーラベルの配置オプション
 We\'ve extended layout scale bars with additional styling options, adding a pair of settings to refine the placement of scalebar labels. Now you can define whether labels are shown above or below the scalebar itself, as well as setting whether labels are centered in the middle of a segment or placed at its end.
 
@@ -254,7 +254,7 @@ No more ridiculously complex and large export file size for your QGIS print layo
 
 この機能は GeoPDF エクスポートグループ: Land Vorarlberg; Cantons of Zug, Thurgovia and Neuchâtel; Cities of Vienna and Dornbirn; Biodiversity Information Service for Powys & Brecon Beacons National Park によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: SVGレイヤエクスポートの改善
 User feedback told us that the way we created layered SVG files in past releases was frustrating to work with. So, in QGIS 3.10, we\'ve revamped this feature and now SVG layer names will match the layer names from QGIS, making it much easier for designers to understand the contents of the document! Read more about this are related features [here](https://north-road.com/2019/09/03/qgis-3-10-loves-geopdf/).
 
@@ -262,7 +262,7 @@ User feedback told us that the way we created layered SVG files in past releases
 
 この機能は GeoPDF export group によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: レイアウトマップの再描画インジケータ
 In earlier QGIS releases, there was no way to tell whether a map refresh had finished inside a QGIS print layout designer window. So, we\'ve added a new indicator in the status bar which shows whenever there\'s a redraw is humming away in the background. No more user confusion!
 
@@ -270,7 +270,7 @@ In earlier QGIS releases, there was no way to tell whether a map refresh had fin
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: GeoPDFのエクスポート
 If you export PDF\'s from QGIS now, there is an option to export it as GeoPDF. If you open this PDF with a compatible PDF viewer, you will then be able to toggle layers on and off, pan and zoom around the PDF and interactively interrogate features! Futhermore, you can re-import these GeoPDF documents back into QGIS as vector layers, and see all the features in their original locations and with their original attribute values.
 
@@ -284,7 +284,7 @@ Read more at [QGIS 3.10 Loves GeoPdf](https://north-road.com/2019/09/03/qgis-3-1
 
 この機能は GeoPDF エクスポートグループ: Land Vorarlberg; Cantons of Zug, Thurgovia and Neuchâtel; Cities of Vienna and Dornbirn; Biodiversity Information Service for Powys & Brecon Beacons National Park によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: データで定義された制御グリッドプロパティ
 We\'ve added data defined control over layout map grids, to give you extra flexibility in the appearance and behaviour of these grids, and to allow you to create layout templates and atlases with grids which dynamically respond to map scale changes.
 
@@ -301,7 +301,7 @@ Now, you\'re able to set data-defined control for:
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 動的なグリッドセグメントのサイズ
 Just like the existing scalebar setting of the same name, this new setting allows you to set a page-size-based range for map grid intervals. The grid interval will be dynamically calculated based on the map extent and scale to pick the largest possible \"pretty\" interval which results in grid sizes inside the desired range.
 
@@ -311,7 +311,7 @@ Just like the existing scalebar setting of the same name, this new setting allow
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: レイアウトマップ用の空間ブックマーク
 Another long-requested feature we\'ve implemented for QGIS 3.10 is a new button in the layout map item properties toolbar, which allows you to directly set a map item to the extent of a spatial bookmark!
 
@@ -319,7 +319,7 @@ Another long-requested feature we\'ve implemented for QGIS 3.10 is a new button 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## 計算式
 ### 機能：新しい式の関数
 - **attributes()**: returns a map containing all attributes from a feature, with field names as map keys. We\'ve got flexible, robust support for working with map values in expressions now, so this allows rapid conversion of all feature attributes to a map to use with these handy functions!
@@ -417,7 +417,7 @@ QGIS 3.10では、プロセシングモデルやスクリプトで使う新し�
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: New algorithm \"Create style database from project\"
 このアルゴリズムは、QGISプロジェクトからすべてのスタイルオブジェクト（シンボル、カラーランプ、テキスト形式、ラベル設定）を抽出し、新しいスタイルXMLデータベースに保存します。このデータベースは、スタイルマネージャダイアログを介して管理およびインポートすることができます。
 
@@ -425,7 +425,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: モデルでファイルとフォルダを入力するためのファイルフィルタとデフォルト値
 For file or folder inputs in Processing models we\'ve added a new file filter setting (with some standard file formats available as an optional preset), and now allow you to set a default value for these inputs.
 
@@ -433,7 +433,7 @@ For file or folder inputs in Processing models we\'ve added a new file filter se
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: New algorithm \"Combine style databases\"
 The new \"Combine style databases\" algorithm combines multiple QGIS style databases into a single output style database. If any symbols exist with duplicate names between the different source databases these will be renamed to have unique names in the output combined database. It\'s designed to give users an easy way to condense multiple separate style databases into a single unified database.
 
@@ -443,7 +443,7 @@ It works brilliantly with results generated by running the \"Create style databa
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 複数スレッドを使ったXYZタイルの生成
 既存のXYZタイルを生成アルゴリズムは最適化され、複数のプロセシングスレッドを使用してタイルを生成することができるようになりました。
 
@@ -457,7 +457,7 @@ To complement the spatial bookmark overhaul in QGIS 3.10, we\'ve added new Proce
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: New algorithm \"Split features by character\"
 この新しいアルゴリズムは、指定された文字でフィールド値を分割することで、地物を複数の出力地物に分割します。
 
@@ -471,7 +471,7 @@ This algorithm was designed for use in models which need to process input files 
 
 This feature was funded by [SMEC/SJ](https://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 新しいアルゴリズム 線に沿った上昇下降量
 Previously available as a plugin, the \"Climb Along Line\" algorithm has been added to the out-of-the-box QGIS toolset. This algorithm calculates the accumulated height differences for lines in an input line layer, calculated using the Z values of the line vertices. A copy of the input line layer is returned with additional attributes for accumulated climb and descent, as well as the minimum and maximum Z values for each line.
 
@@ -494,7 +494,7 @@ QGIS\' Browser panel just keeps getting more and more powerful! In 3.10, we\'ve 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ## 一般情報
 ### 機能: ニュース項目を起動ページに表示する
 QGISのニュースフィードがウェルカムページに表示されるようになりました。これにより、すべてのユーザーにプロジェクトのニュースを直接伝えることができるようになりました！興味深いQGISのニュース、ヒント、イベントがたくさん届くことを期待してください！
@@ -503,7 +503,7 @@ QGISのニュースフィードがウェルカムページに表示されるよ�
 
 この機能はQGIS.orgによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: ミリラジアン（SI定義）とミル（NATO）単位
 QGIS 3.10 では、二つの新たな単位、ミリラジアン（SI定義）とミル（NATO）で角度を測定することができます。
 
@@ -511,7 +511,7 @@ QGIS 3.10 では、二つの新たな単位、ミリラジアン（SI定義）�
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: インタフェースのカスタマイズ・ダイアログ・フィルタリング
 We\'ve added a new \"search\" box to the Interface Customization dialog, which allows you to filter through the widgets and easily find the widget you are trying to customize\...
 
@@ -525,7 +525,7 @@ We\'ve added a new \"search\" box to the Interface Customization dialog, which a
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 空間ブックマークのスーパーチャージ！
 We\'ve totally revamped how spatial bookmarks are exposed and managed in QGIS 3.10. Spatial Bookmarks are now shown in the browser panel, and can be regrouped into custom, categorized folders. This offers a much easier way to navigate and manage your bookmarks.
 
@@ -543,7 +543,7 @@ Ever spend 10 minutes painstakingly creating an interactive selection of feature
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: スナップインデックス構築の並列化
 アイデアは、各レイヤごとにスナップキャッシュの計算を並列化し（現在は順次）、ブロッキングしないようにすることでした。その結果、スナップキャッシュが構築中でも、QGISを使うことができます。たとえば、ユーザーはスナップキャッシュの構築が進行中でもノードの編集を開始することができます。
 
@@ -572,7 +572,7 @@ PostGISラスタレイヤがブラウザパネルとデータソースマネー�
 ### 機能: Oracle データベーストランザクションのサポート
 For version 3.10, we\'ve enhanced the Oracle database provider and added support for editing layers via transactions.
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 区切りテキストレイヤのZ/M次元
 We\'ve added optional support for Z and M fields to QGIS\' delimited text provider, allowing you to create Z or M enabled layers directly from CSV files.
 
@@ -618,7 +618,7 @@ QgsProjectとQgsApplicationに添付されたこの新しいクラスは、プ�
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: プロバイダデータベース接続のための新しいAPI
 QGISの助成金プログラムからの資金提供のおかげで、[new API](https://github.com/qgis/QGIS/pull/31190) を使用して、DB接続を統一的な方法で管理することができます。新しい接続APIは、プラグイン作成者がテーブルやスキーマなどの情報にアクセスし、SQLの任意のクエリを実行して結果を便利なPython配列に取得するために使用できる便利なメソッドのセットも提供します。
 

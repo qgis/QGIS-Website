@@ -146,13 +146,13 @@ This new option, available under the \"Advanced\" button for fill symbols, allow
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 外部リングまたは内部リングのみをレンダリングするシンプルラインまたはマーカーラインのオプション
 この新しいオプションは、ポリゴンをレンダリングするための塗りつぶしシンボルの一部として直線シンボルまたはマーカーラインシンボルが使用されているときはいつでも表示されます。デフォルトの動作では内部リングと外部リングの両方がレンダリングされますが、この新しい設定では、シンボルレイヤに外部リングのみまたは内部リングのみをレンダリングするように設定できます。これにより、以前は直接不可能だったシンボル化が可能になります。たとえばマーカーラインで、内部リングのマーカーがポリゴンの内側に向かって傾斜したものです。
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: ラスターイメージマーカー
 新しいラスターイメージマーカーシンボルタイプがQGISに追加され、ユーザーはラスター、つまりビットマップイメージファイルを使用してマーカーとして表示できます。ラスターイメージマーカーシンボルにより、幅、高さ、イメージ比、回転、および不透明度をカスタマイズできます。
 
@@ -590,7 +590,7 @@ Thanks to this new feature, the FORMAT parameter of GetFeatureInfo for the WMS s
     
 This feature was funded by [Veolia](https://www.veolia.com)
 
-This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
+この機能は [Paul Blottiere（Oslandia）](http://oslandia.com/) によって開発されました
 ## プラグイン
 ### 機能:DBマネージャ:外部SQLファイルの読み込みと保存ボタンの追加
 このボタンでは外部SQLファイルのクエリーの読み込みと保存ができます。
@@ -678,20 +678,20 @@ SAFEブロックリクエストを実行するための新しいPyQGIS APIが追
 
 リダイレクトはクラスによって自動的に処理されます。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### Feature: Custom validity checks on layout exports
 See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
 
 この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 測地線計算のためのAPI
 測地線計算のために成熟したgeographiclibライブラリを利用するQgsDistanceAreaに測地線（楕円上の最短距離）を計算するための新しいPyQGIS APIが追加されました。
 - QgsDistanceArea.geodesicLine：2点間の測地線を計算します
 - QgsDistanceArea.latitudeGeodesicCrossesAntimeridianは、2点を結ぶ測地線が反経線と交差する緯度を計算します。
 - QgsDistanceArea.splitGeometryAtAntimeridian：測地線を使用して反子午線上で分割が行われる正確な点を計算して、（複数の）折れ線を反子午線で分割します。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
 ### 機能: 新しいクラス QgsQuadrilateral
 QgsRectangleは、その役割が範囲に対するものであるため、方向またはZのサポートを提案しません。 4つの頂点ポリゴンを管理するためのQgsQuadrilateralという新しいクラスが作成されます。今のところ、長方形しかありませんが、後で他の形状を追加することも可能です。
 
