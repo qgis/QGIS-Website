@@ -179,27 +179,29 @@ class S3FileExplorer:
         return files
 
     def deduplicate_files(self, files: List[Dict]) -> List[Dict]:
-        """Remove files from windows folder if they exist at root level (by filename)."""
-        # Collect all filenames at root level (O(n) with O(1) lookups)
-        root_filenames = {
-            file["name"] for file in files 
-            if not file["path"] or file["path"] == "."
+        """Prefer Windows-folder files over same-named root-level copies."""
+        windows_filenames = {
+            file["name"]
+            for file in files
+            if file["path"]
+            and file["path"].replace("\\", "/").split("/", 1)[0].lower() == "windows"
         }
-        
-        # Filter out windows folder files that duplicate root files (O(n))
+
+        # S3 can expose the same installer at the bucket root and under
+        # windows/. Keep the Windows path so the download remains discoverable
+        # in its expected folder, while avoiding a duplicate entry at the root.
         deduplicated = [
             file for file in files
             if not (
-                file["path"] and 
-                file["path"].split("/")[0].lower() == "windows" and 
-                file["name"] in root_filenames
+                (not file["path"] or file["path"] == ".")
+                and file["name"] in windows_filenames
             )
         ]
-        
+
         removed_count = len(files) - len(deduplicated)
         if removed_count > 0:
-            print(f"   ℹ️  Removed {removed_count} duplicate files from windows folder")
-        
+            print(f"   Removed {removed_count} duplicate files from root folder")
+
         return deduplicated
 
     def build_file_tree(self, files: List[Dict], excluded_prefixes: tuple = ()) -> Dict:
