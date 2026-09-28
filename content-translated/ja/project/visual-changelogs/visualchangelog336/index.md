@@ -144,7 +144,7 @@ Be sure to check out the feature [Pull Request](https://github.com/qgis/QGIS/pul
 
 This feature was funded by National Resources Canada
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### Feature: Faster point cloud rendering by caching decoded data blocks
 Want even faster point cloud rendering? Well, QGIS now supports rendering point clouds faster by using a cache for storing nodes which have already been decoded.
 
@@ -638,7 +638,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### Feature: Bug fixes by Martin Dobias (LutraConsulting)
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.34 backport commit (GitHub) |
 | --- | --- | --- | --- |

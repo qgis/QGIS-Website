@@ -100,7 +100,7 @@ QGIS 2.12は、ウィンドウの背景、ボタンなどの外観をカスタ�
 
 テーマサポートの詳細については、 [Nathan Woodrowのブログ記事](http://nathanw.net/2015/08/29/ui-theme-support-now-core-in-qgis/) を参照してください。
 
-**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/)
 
 ![image16](images/entries/2ec302b12a3b0db8e7a66465afccb227bc543a3e.webp)
 ### 機能: 新しい関数の追加（v2.12）
@@ -225,7 +225,7 @@ DBマネージャーツールにはたくさんの改善点があります。
 ### 機能：属性テーブルセルの条件付き書式設定
 This is a major improvement to QGIS\'s attribute table rendering support. You can now style table cells according to rules. For example you can colour all cells with a population of less than 50 000 in red. The option is enabled via a new icon on the table toolbar at the top right of the attribute table window. You can read more about this feature on [Nathan Woodrow\'s blog article](http://nathanw.net/2015/08/20/mixing-a-bit-of-excel-into-qgis-conditional-formatted-table-cells/).
 
-**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/)
 
 ![image8](images/entries/ae9afefda043d31ef7718528d506d98e90e7a1f7.webp)
 ### 機能:ウィジェット内での相対パスのサポート
@@ -435,7 +435,7 @@ GRASS 6とGRASS 7の両方のユーザーにとって、GRASSとQGISの統合は
 ### 機能: 外部エディタによるスクリプトのオープン
 Pythonistasは喜んでいます。コンソールに追加された新しいボタンを使用して、外部エディタでスクリプトを開くことができます。
 
-**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/)
 
 ![image34](images/entries/78acf0058f4306bf408a58df3762dff5986633a7.webp)
 ### 機能:PyQGISプログラム用の新しいクラス
@@ -470,7 +470,7 @@ See also [QGIS as OGC data server](http://docs.qgis.org/2.18/en/docs/user_manual
 ### 機能：スタイルマネージャからサムネイルをエクスポートする
 スタイルマネージャーでは、選択したスタイルサムネイルをSVGまたはPNG画像として書き出すことができます。
 
-**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/>)
+**この機能は、以下によって開発されました：** [Nathan Woodrow](http://nathanw.net/)
 
 ![image36](images/entries/8861a040751804f6c2691ee4d93d410efd6d99ac.webp)
 ### 機能：地図単位のサイズを使用する際のサイズをmm単位で制限する新しいオプション

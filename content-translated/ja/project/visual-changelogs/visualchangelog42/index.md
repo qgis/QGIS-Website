@@ -490,7 +490,7 @@ This feature was developed by [Alessandro Pasotti (QCooperative)](https://www.qc
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+この機能は [Julien Cabieces (Oslandia)](https://oslandia.com/en/) によって開発されました
 ### 機能: Germán Carrillo (OPENGIS) によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.44 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -596,6 +596,6 @@ This feature was developed by [Alexander Bruy (QCooperative)](https://www.qcoope
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 
 {{<content-end >}}

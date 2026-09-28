@@ -45,7 +45,7 @@ This feature was developed by [Aleix Pol](https://github.com/aleixpol)
 
 This feature was funded by [SMEC/SJ](http://smec.com)
 
-This feature was developed by [Nyall Dawson](https://north-road.com)
+この機能は [Nyall Dawson](https://north-road.com) によって開発されました
 ### 機能: OpenCL を使ったアクセラレーション
 This feature was funded by [QGIS.org](https://qgis.org)
 
@@ -219,13 +219,13 @@ This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ### 機能:重複するノードの自動削除
 ベクタレイヤでジオメトリの追加または編集を行っている時にQGISでは自動的に重複するノードをジオメトリから削除することができるようになりました。このオプションはベクタレイヤのデジタイジングタブで設定することができます。
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ### 機能:ジオメトリの妥当性チェック
 このオプションが有効な場合新規または編集されるそれぞれのジオメトリの妥当性がチェックできます。この機能によって利用している編集セッションでエラーがあるジオメトリが生成された場合ユーザと明瞭に対話できます。
 
@@ -233,7 +233,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ### 機能: 編集中のトポロジーチェック
 トポロジーチェックは1レイヤーに対して実行できます。新規に追加されたまたは編集されたジオメトリに対し処理を実行します。この処理は対象レイヤ保存されたときとジオメトリバリデーションパネルのトポロジーチェックのボタンがクリックされた時に実行されます。
 
@@ -248,7 +248,7 @@ This builds on top of the functionality of the geometry checker plugin which was
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ## データ管理
 ### 機能:QGISプロジェクトの翻訳
 Like QGIS and the plugins, the projects are translated with the Qt translation process. Means, it makes the translation according to a Qt Compiled Translation Source File (`.qm` file). When the user opens a project, QGIS checks for a `.qm` file laying in the same folder like the `.qgs` file, having the same name like the `.qgs` file and having the language-code as postfix of the users language (the language configured in the QGIS settings). To create the translation, in the project settings, there is an option to generate the `.ts` file, that can edited by programs like Qt Linguist or Transifex.
@@ -348,7 +348,7 @@ This feature was developed by [Matteo Ghetta (Faunalia)](https://www.faunalia.eu
 
 This feature was funded by [SMEC/SJ](http://smec.com)
 
-This feature was developed by [Nyall Dawson](https://north-road.com)
+この機能は [Nyall Dawson](https://north-road.com) によって開発されました
 ### 機能: K平均クラスタリングアルゴリズム
 QGIS 3.4 adds a native \"k-means clustering\" algorithm. Based on a port of PostGIS\' ST_ClusterKMeans function, this algorithm adds a new cluster ID field to a set of input features which identifies the feature\'s cluster based on a k-means clustering approach. If non-point geometries are used as input, the clustering is based off the centroid of the input geometries.
 
@@ -397,7 +397,7 @@ MまたはZの値を使ってライン/ポリゴンの頂点をフィルタす�
 
 この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson](https://north-road.com)
+この機能は [Nyall Dawson](https://north-road.com) によって開発されました
 ### Feature: \"Drape features to z/m\" algorithms
 ジオメトリの頂点に z または m の値を設定する新しい２つのアルゴリズムです。その値はラスタバンドから取得されます。オプションで値は（データ定義可能な)スケール値を使ってスケールできます。
 
@@ -471,7 +471,7 @@ The new mode \"Snap to anchor nodes (single layer only)\" makes sure that any tw
 
 This feature was funded by [InaSAFE DFAT](https://www.dfat.gov.au/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## データプロバイダ
 ### 機能: OAuth2認証メソッドプラグイン
 - 認可コードフロー、インプリシットフローとリソースオーナーグラントフローに対応
@@ -524,7 +524,7 @@ The reading of PostgreSQL JSON types is supported. JSON Data can be displayed in
 
 This feature was funded by [Kanton Solothurn](https://www.so.ch/verwaltung/bau-und-justizdepartement/amt-fuer-geoinformation/)
 
-This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Dave Signer (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ### 機能: ESRIトークン認証対応
 Support has been added to QGIS\' Authentication system for ESRI\'s temporary token based authentication. This allows for connection to ArcGIS Feature and Map Servers via an allocated temporary token.
 
@@ -703,7 +703,7 @@ This feature was developed by [Borys Jurgiel](https://github.com/borysiasty)
 
 This feature was funded by [Oester Messtechnik](https://messtechnik.ch/)
 
-This feature was developed by [David Signer (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Dave Signer (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ## プログラマビリティ
 ### 機能: QgsSpatialIndexKDBush
 A very fast static spatial index for 2D points based on a flat KD-tree, using <https://github.com/mourner/kdbush.hpp>
@@ -751,7 +751,7 @@ Ctrl+方向キー/マウスで姿勢を保持したカメラの移動
 
 This feature was funded by [QGIS community through crowd-funding](https://www.lutraconsulting.co.uk/crowdfunding/more-qgis-3d/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: アニメーション
 キーフレーム (特定時刻のカメラ姿勢)の集合に基づいたアニメーションを作成できるようになりました。キーフレーム間のカメラの位置/回転は補完されます。
 
@@ -773,7 +773,7 @@ The disadvantage is that the lines cannot be wide (supported in Qt3D only since 
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: 3次元ビュー用マップ識別ツール
 3次元地図に新しい識別ツールを導入しました。このツールを使うと、3次元シーンから地物を調査することができます。
 
@@ -787,6 +787,6 @@ QGIS 3次元のクラスの一部は、Python開発者が利用できるよう�
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 
 {{<content-end >}}

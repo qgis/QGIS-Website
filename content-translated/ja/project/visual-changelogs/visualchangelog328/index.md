@@ -625,7 +625,7 @@ This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 ### 機能: Loïc Bartoletti によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |

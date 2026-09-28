@@ -57,13 +57,13 @@ Two implementations have been added for this:
 
 ![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: 動的SVG用のGUI
 QGIS now supports dynamic standard vector graphic elements, as outlined in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). This allows QGIS to dynamically replace attributes or node values in the XML of the SVG and apply data-driven values to SVG elements. QGIS Desktop has additionally added a GUI editor to ensure that users are able to properly leverage this new functionality.
 
 ![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.webp)
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+この機能は [Denis Rouzaud](https://api.github.com/users/3nids) によって開発されました
 ### 機能: 複数レイヤへの拡大
 The \"Zoom to Layer\" function available from the context menu, the View menu and the Map Navigation toolbar can now zoom to the extent of all the selected layers in the layer tree.
 
@@ -97,13 +97,13 @@ This feature was developed by [uclaros](https://api.github.com/users/uclaros)
 ### 機能: データ定義による全体的なシンボルの不透明度
 While it was previously possible to set the opacity for individual symbol layer colors via data defined expressions, it is now possible to set a data defined expression to control the overall symbol opacity.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### Feature: Open the style gallery from the style manager
 The Style Manager interface now includes a button to open the [styles gallery](https://plugins.qgis.org/styles/) from the QGIS HUB.
 
 ![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## メッシュ
 ### 機能: 新しいメッシュエクスポートアルゴリズム
 New export options have been added for mesh layers. These allow the following options when exporting a mesh to a vector layer:
@@ -148,7 +148,7 @@ A new rendering option allows area and line features to be \"dissolved\" into a 
 
 ![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: 賢くなったマップの再描画
 Previously, map redraws would attempt to redraw all elements in the frame. The map rendering has been significantly improved and now the existing map frame elements are used during the redraw process. This work was completed as a part of [QEP #181](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/181) and was funded by the QGIS Grant program for 2020.
 
@@ -241,7 +241,7 @@ And naturally, the items will work nicely with multi-column legends:
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: カラーランプ凡例の改善
 Color ramp legend items now support the following configurable options:
 - A prefix and suffix for the ramp text
@@ -258,7 +258,7 @@ Users can also choose to refine these settings for a particular layout legend it
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: 動的テキストのプリセット
 The new *Add Item -\> Dynamic Text* menu contains preset dynamic text expressions that users can use to insert a label automatically containing the corresponding expression.
 
@@ -266,7 +266,7 @@ For example, using the dynamic text element **Layout Name** will insert a label 
 
 ![image31](images/entries/c41a7d2a5ec018bfba237429aa5d125d11ad9310.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## 計算式
 ### 機能: UUID 結果の整形オプション
 There is now a string format parameter available for the `uuid()` function in QGIS expressions. Users now have various options that they can use to stipulate the format of the returned UUID value, including the following options:
@@ -276,7 +276,7 @@ There is now a string format parameter available for the `uuid()` function in QG
 
 ![image32](images/entries/3f0471353b72cffc4b69defb87cea2d7a1c44017.webp)
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+この機能は [signedav](https://api.github.com/users/signedav) によって開発されました
 ### Feature: Layer CRS variable for expressions
 QGIS expressions now support a *layer_crs* variable which will return the AuthID for a particular layer\'s coordinate reference system. This allows expressions to identify the layer CRS dynamically and perform transformations without needing to manually specify the CRS.
 
@@ -314,7 +314,7 @@ This would return a comma-separated list of layer names and their credits for la
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## デジタイズ
 ### 機能: 地物を選択コンテキストメニュー
 It is now possible to select features using a context menu on the map canvas. Right-clicking on the map will intelligently identify the features below the mouse cursor and allow the available features to be added or removed from the current selection. Where multiple features are available, a short delay may persist whilst the system attempts to search for available features that will become available in a nested menu item for selection, or users may simply use the *select all* function to select all available features at the given position.
@@ -335,12 +335,12 @@ A new digitizing tool allows for selected features to be scaled when in editing 
 
 ![image35](images/entries/16ac8bca1e78da740dc8ea8b6b46a916f8f0b83d.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## データ管理
 ### 機能: スプレッドシートへエクスポートの新アルゴリズム
 Users may export a selection of vector layers as sheets in a new spreadsheet or append them as additional sheets to an existing spreadsheet
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: ジオリファレンサ―で座標を再投影
 The georeferencer now reprojects data points in a desired output projection, rather than using the map canvas CRS for determining data point positions. This allows users more flexibility and control when capturing control points.
 
@@ -387,7 +387,7 @@ Allows users to select a list of fields to keep, and all other fields will be dr
 
 ![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: 複数レイヤで共通のフィールドパラメータを参照する
 Processing tools field parameters may support processing a common field for multiple vector layers, in an implementation inspired by the behavior of some processing algorithms in Orfeo ToolBox.
 
@@ -447,7 +447,7 @@ A new \"View Settings\" tab has been added to the project properties, with the o
 
 ![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: QgsNetworkAccessManagerでネットワークキャッシュを切り替える
 A checkbox in the network logger panel now allows users to temporarily disable the network cache, which is useful when debugging QGIS network activity, or when using QGIS to test server-side changes.
 
@@ -455,12 +455,12 @@ This is a transient setting by design and is forgotten as soon as QGIS is closed
 
 ![image42](images/entries/0115a38666f35166fa9e6fd53791a7bc8f73b6dc.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## ブラウザ
 ### 機能：ブラウザでArcGisフィーチャサービスとArcGISマップサービスの接続を統一する
 The separate \"ArcGis Feature Service\" and \"ArcGIS Map Service\" browser connections have been replaced with a single, unified, **\"ArcGIS Rest Servers\"** connection and browser node, which shows a definitive view of the server and exposes both service types.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: ArcGIS RESTをコンテンツグループで閲覧できるようにする
 ArcGIS Feature Service connections which have their corresponding Portal endpoint URLS set can be explored by content groups in the browser panel.
 
@@ -468,7 +468,7 @@ If a connection has the Portal endpoints set, then expanding out the connection 
 
 This feature was funded by [SRK Consulting](https://www.srk.com)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## データプロバイダ
 ### 機能: ネイティブのDXFエクスポートアルゴリズム
 Allows exporting individual or multiple layers into a single DXF file. For each input layer, users can select which attribute to use for splitting a single layer into multiple output layers.
@@ -525,7 +525,7 @@ This feature was developed by [Maxim Rylov](https://api.github.com/users/mrylov)
 
 QGIS has adopted a gentle approach to removing unmaintained core providers, and users of deprecated providers may enable support for them by setting the hidden \"providers/showDeprecated\" settings key to *true*.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: Oracle接続API
 The QGIS API now includes *QgsAbstractDatabaseProviderConnection* for the Oracle provider.
 
@@ -561,7 +561,7 @@ The qgis_process command line tool has had new commands added which allow users 
 
 This improves the automation capabilities of QGIS and allows the use of plugins on headless environments with the qgis_process tool.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## 注目すべき修正
 ### 機能: Alessandro Pasotti によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.16 backport commit (GitHub) |
@@ -613,7 +613,7 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+この機能は [Peter Petrik](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: Even Rouault によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -631,7 +631,7 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+この機能は [Even Rouault](http://www.spatialys.com/) によって開発されました
 ### 機能: Julien Cabiecesによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -685,6 +685,6 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/en/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 
 {{<content-end >}}

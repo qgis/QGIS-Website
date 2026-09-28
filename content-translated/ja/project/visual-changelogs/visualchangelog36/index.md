@@ -33,11 +33,11 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 ![image2](images/entries/400e617d8059eddcd1228f3ce6861d6087f65794.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能: 装飾アイテムの上部/下部での中央揃え
 マップキャンバスの著作権表示と今回新規に追加されたタイトルラベルについて、マップの上部または下部の中央に配置することができます。
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能: ノードツールの修正と改善
 注：下記の項目はすべてLTRにバックポートされているため、QGIS 3.4.5にも反映されます。
 ### Select (\"lock\") feature before editing
@@ -57,7 +57,7 @@ From the two modes of vertex tool, \"all layers\" used to be the default one. Bu
 
 This feature was funded by [German QGIS user group](http://qgis.de/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: トリム/エクステンド
 多くのソフトウェアとは異なり、このツールを使用すると、（マルチ）ラインと（マルチ）ポリゴンを変更できます。さらに、必ずしも関係するラインの端である必要はなく、ジオメトリの任意のセグメントを修正できます。反面、これは無効なジオメトリにつながる可能性があり、それはユーザーの責任です。
 
@@ -118,14 +118,14 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 ### 機能: エラーを検出する新しい try() 関数
 新しいtry()関数は式を試し、エラーがなければその値を返します。式がエラーを返す場合は、指定されているときは代替値が返されます。それ以外の場合にはこの関数はnullを返します。
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ## ユーザーインタフェース
 ### Feature: A new grayscale theme: \"Blend of Gray\"
 A brand new UI theme has made its way into QGIS named \"Blend of Gray\". In addition, hundreds of fixes, tweaks, and refinements were applied to the preexisting \"Night Mapping\" theme.
 
 ![image4](images/entries/32e743ea5bf84c96b86ea31160b1677b6362eacf.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能: コードエディター/フィールド計算機における複数行の選択と編集
 QGISのフィールド計算機とPythonスクリプトエディターで、ctlキーを押したままテキストの複数行ブロックを選択し、同時に編集することができます。
 
@@ -146,13 +146,13 @@ This new option, available under the \"Advanced\" button for fill symbols, allow
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
-この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: 外部リングまたは内部リングのみをレンダリングするシンプルラインまたはマーカーラインのオプション
 この新しいオプションは、ポリゴンをレンダリングするための塗りつぶしシンボルの一部として直線シンボルまたはマーカーラインシンボルが使用されているときはいつでも表示されます。デフォルトの動作では内部リングと外部リングの両方がレンダリングされますが、この新しい設定では、シンボルレイヤに外部リングのみまたは内部リングのみをレンダリングするように設定できます。これにより、以前は直接不可能だったシンボル化が可能になります。たとえばマーカーラインで、内部リングのマーカーがポリゴンの内側に向かって傾斜したものです。
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
-この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: ラスターイメージマーカー
 新しいラスターイメージマーカーシンボルタイプがQGISに追加され、ユーザーはラスター、つまりビットマップイメージファイルを使用してマーカーとして表示できます。ラスターイメージマーカーシンボルにより、幅、高さ、イメージ比、回転、および不透明度をカスタマイズできます。
 
@@ -160,7 +160,7 @@ This new option, available under the \"Advanced\" button for fill symbols, allow
 
 ![image5](images/entries/511ac83d3b841be6ae81db5f5d0f319e07e9656e.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能：ラスター塗りつぶしでリモートURLがセットされた画像または埋め込み画像を設定できます
 SVGやラスタ画像マーカーと同様に、ラスタ塗りつぶしはHTTPのURLを使用するように設定したり、ファイルをシンボル自体の内部に直接埋め込むことができます。
 
@@ -311,7 +311,7 @@ OpenCLアクセラレーションは、ラスタ計算機の操作でデフォ�
 
 この機能は Alessandro Pasotti - ItOpen によって資金提供されました
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+この機能は [Alessandro Pasotti](https://www.itopen.it) によって開発されました
 ### 機能: メッシュ計算機
 ラスタ計算機と同様に、メッシュ計算機はメッシュレイヤで動作します。一般的な機能に加えて、メッシュ計算機は時間集約機能も提供します。たとえば、1か月にわたる毎日の気温のnetcdfがある場合、各セルのその月の平均気温を計算できます。出力は、タイムスパンまたは空間的範囲によってフィルタリングできます。
 
@@ -332,7 +332,7 @@ This algorithm creates a copy of an input layer and adds a new field for every u
 
 ![image10](images/entries/304c29f7cc6d26aa823001b67a46744deec3c2dd.png.400x300_q85_crop.webp)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+この機能は [Etienne Trimaille](https://github.com/Gustry) によって開発されました
 ### 機能: 右手ルールの強制
 この新しいアルゴリズムは、ポリゴンのジオメトリに右手ルールを強制します。右手ルールとは、ポリゴンの境界線の右手側が必ず内側になることで、外側の輪郭線は時計回りに描かれ、ポリゴンの穴の輪郭線は反時計回りに描かれます。（シェープファイルなどは右手ルールです）
 
@@ -492,7 +492,7 @@ A new setting, \"allowVersionCheck\" has been added to the QGIS configuration in
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+この機能は [Alessandro Pasotti](https://www.itopen.it) によって開発されました
 ## データプロバイダ
 ### 機能: ArcGISフィーチャサーバーレイヤのサービス情報を開く
 ArcGIS Feature Serverレイヤのブラウザパネルに新しい右クリックメニューオプションがあり、ユーザは選択したレイヤのサービス情報Webページを直接開くことができます。
@@ -543,7 +543,7 @@ When a view loaded from Data Source Managers\'s PostgreSQL tab you can select th
 ### Feature: ArcGIS Feature Server multi-field unique value support
 QGIS can now display a Feature Server layer with a multi-fiend unique value renderer setup.
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ## QGISサーバー
 ### Feature: Possibility to set ATLAS_PK in GetPrint request to print atlas sheet(s)
 The new GetPrint parameter accepts the primary key(s) for which atlas sheets should be printed, separated by comma,
@@ -678,20 +678,20 @@ SAFEブロックリクエストを実行するための新しいPyQGIS APIが追
 
 リダイレクトはクラスによって自動的に処理されます。
 
-この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Custom validity checks on layout exports
 See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
 
 この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: 測地線計算のためのAPI
 測地線計算のために成熟したgeographiclibライブラリを利用するQgsDistanceAreaに測地線（楕円上の最短距離）を計算するための新しいPyQGIS APIが追加されました。
 - QgsDistanceArea.geodesicLine：2点間の測地線を計算します
 - QgsDistanceArea.latitudeGeodesicCrossesAntimeridianは、2点を結ぶ測地線が反経線と交差する緯度を計算します。
 - QgsDistanceArea.splitGeometryAtAntimeridian：測地線を使用して反子午線上で分割が行われる正確な点を計算して、（複数の）折れ線を反子午線で分割します。
 
-この機能は [Nyall Dawson (North Road)] (http://north-road.com) によって開発されました
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: 新しいクラス QgsQuadrilateral
 QgsRectangleは、その役割が範囲に対するものであるため、方向またはZのサポートを提案しません。 4つの頂点ポリゴンを管理するためのQgsQuadrilateralという新しいクラスが作成されます。今のところ、長方形しかありませんが、後で他の形状を追加することも可能です。
 
@@ -760,7 +760,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+この機能は [Alessandro Pasotti](https://www.itopen.it/) によって開発されました
 ### 機能: Alexander Bruyによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -836,7 +836,7 @@ This feature was developed by [Jürgen Fischer](https://www.norbit.de/)
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+この機能は [Peter Petrik](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: Julien Cabiecesによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -894,7 +894,7 @@ This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+この機能は [Even Rouault](http://www.spatialys.com/) によって開発されました
 ### Feature: Bug fixes by Martin Dobias
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -936,7 +936,7 @@ This feature was developed by [Martin Dobias](https://www.lutraconsulting.co.uk/
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 ### Feature: Bug fixes by Hugo Mercier
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |

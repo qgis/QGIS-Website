@@ -721,7 +721,7 @@ This feature was developed by [Stefanos Natsis](https://www.lutraconsulting.co.u
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 ### Feature: Bug fixes by David Signer
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.28 backport commit (GitHub) |
 | --- | --- | --- | --- |

@@ -103,7 +103,7 @@ If your WMS server supports contextual legends, you can make use of them in QGIS
 
 **This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**この機能は次の方によって開発されました:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/e516a25492b547113c487d00475cfe07bc7b131e.webp)
 ## データマネジメント
@@ -136,7 +136,7 @@ QGISでラインを正確に平行または直角にデジタル化したり、�
 
 **この機能は、以下によって資金提供されました：** [Tracks for Africa](http://tracks4africa.com/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**この機能は次の方によって開発されました:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 
 ![](images/entries/20b7f96ffc7d37b8c2ae09189d7957a929a716e5.webp)
 ### Feature: Snapping improvements
@@ -144,7 +144,7 @@ There is a new snapping mode : **snap to all layers** which makes it quick to en
 
 **This feature was funded by:** [Ville de Vevey, SITNyon](http://www.vevey.ch/) and [QGIS Usergroup Switzerland](http://www.qgis.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**この機能は次の方によって開発されました:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/8454af2743154585eb82325ab2694e50e7d9efcd.webp)
 ## レイヤ凡例
@@ -153,7 +153,7 @@ Advanced users who leverage QGIS\'s rule based renderer system will be pleased t
 
 ** この機能は次の方の資金提供で開発されました:** [SIGE](http://www.sige.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**この機能は次の方によって開発されました:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 
 ![](images/entries/0d39448aa0893d7a71c5241aa2181750535e62c3.webp)
 ## マップコンポーザー
@@ -185,7 +185,7 @@ You can now drag and drop python scripts into QGIS window and they will be execu
 
 **This feature was funded by:** [French Ministry of Ecology, Sustainable Development and Energy](http://www.developpement-durable.gouv.fr/)
 
-**This feature was developed by:** [Camptocamp](http://www.camptocamp.com)
+**この機能は次の方によって開発されました:** [Camptocamp](http://www.camptocamp.com)
 
 ![](images/entries/cd198b98cf28e611f5c2e3be93bc5ec90dd0a5b4.webp)
 ### 機能：新しいアルゴリズム
@@ -234,7 +234,7 @@ In the DB Manager SQL editor, it is now possible to highlight a portion of the S
 ### 機能:サーバpythonプラグイン
 PythonプラグインによるQGISサーバーのサポートにより、Pythonのパワーがサーバー側にもたらされ、新しい機能の迅速かつ効率的な開発と展開が可能になります。
 
-**This feature was developed by:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
+**この機能は次の方によって開発されました:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
 ### 機能: レイヤスタイルのサポート
 - QGIS Serverは、GetMapリクエストで定義済みのレイヤースタイルをサポートするようになりました。
 - QGIS ServerはGetStylesリクエストで複数のスタイルをサポートするようになりました（下記のシンボルセクションを参照）
@@ -267,7 +267,7 @@ It is now possible to set multiple styles for a layer and then easily toggle bet
 
 **This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**この機能は次の方によって開発されました:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/e6d0058bbae51c52fb9fffc79d4cc459fbaf853b.webp)
 ### 機能：より多くのデータ定義シンボル設定
@@ -281,7 +281,7 @@ DXFファイルのエクスポータ機能が改善され、元のQGISシンボ�
 
 **This feature was funded by:** [Japan Space Imaging Corporation (JSI)](http://www.spaceimaging.co.jp/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**この機能は次の方によって開発されました:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/b655549a3336c2fb16eef87f6f30fe50f5abe9f9.webp)
 ## ユーザーインタフェース

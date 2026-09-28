@@ -709,7 +709,7 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+この機能は [Peter Petrik](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: Nyall Dawsonによるバグ修正
 | バグの表題 | URL (if reported, Github) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -762,6 +762,6 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 
 {{<content-end >}}

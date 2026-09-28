@@ -565,7 +565,7 @@ It is possible - and desired - that more tests are added. You can read more abou
 
 This feature was funded by [The QGIS Project](https://www.qgis.org)
 
-この機能は [Matthias Kuhn、OPENGIS.ch](https://opengis.ch) によって開発されました
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能: ツールボックスの改善
 簡素化されたインターフェイスが削除され、新しい使いやすい管理システムのシステムが追加されました。アルゴリズム検索機能は、現在アクティブではないプロバイダを検索し、アクティブにすることを提案します。
 
@@ -816,7 +816,7 @@ This is used by the 2.5D renderer to render features based on their distance fro
 
 ![image80](images/entries/e06cf21a35e070a28ce5b3b98c92f2fb1c1b881d.png.400x300_q85_crop.webp)
 
-この機能は [Matthias Kuhn、OPENGIS.ch](https://opengis.ch) によって開発されました
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能: ジオメトリジェネレータシンボル
 ジオメトリジェネレータシンボルを使用すると、式エンジンを使用してレンダリングする前にジオメトリを変更したり、地物属性に基づいてレンダリングしながら新しいジオメトリを作成することさ
 
@@ -838,7 +838,7 @@ This is used by the 2.5D renderer to render features based on their distance fro
 
 この機能は、ピカルディ地域評議会、ADUGA、Ville de Nyon、Wetu GIT cc
 
-この機能は [Matthias Kuhn、OPENGIS.ch](https://opengis.ch) によって開発されました
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ## ユーザーインタフェース
 ### 機能: 属性テーブルが更新可能に
 属性テーブル内の属性をリロードするオプションが利用可能になりました。

@@ -33,7 +33,7 @@ QGZは3.0でオプションのフォーマットとして追加されました�
 
 ![image29](images/entries/15e0d291ccc9722a61ed5d2611d3ac4c0eef3685.png.400x300_q85_crop.webp)
 
-This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pblottiere)
+この機能は [OSLANDIA - Paul Blottiere](https://github.com/pblottiere) によって開発されました
 ### 機能：クエリビルダのフィールド値のフィルタリング
 クエリビルダで新しい式フィルタを作成するときに、フィールド値のプレビューパネルをフィルタ処理できるようになりました。
 
@@ -76,7 +76,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
-This feature was developed by [Nathan Woodrow](https://nathanw.net/)
+この機能は [Nathan Woodrow](https://nathanw.net/) によって開発されました
 ### 機能：地図作成ツールの簡略化のための簡略化方法の選択
 This allows different techniques to be used for simplification in the interactive simplify map tool, including the more cartographically pleasing \"Visvalingam\" simplification algorithm.
 
@@ -128,7 +128,7 @@ QGIS 3.2では、楕円体およびデカルトの両方で面積、長さ、お
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
-This feature was developed by [Nathan Woodrow](https://nathanw.net/)
+この機能は [Nathan Woodrow](https://nathanw.net/) によって開発されました
 ## ユーザーインタフェース
 ### 機能：レイヤーパネル：フィルターされた地図レイヤーのインジケーター
 The main window\'s layer tree view (ToC) gets support for indicators that are shown when a vector layer has a filter applied. This makes it easier for users to understand that they are looking at a subset of all data. Clicking the indicator\'s icon brings up query builder.
@@ -157,7 +157,7 @@ In 3.2, the data source manager\'s vector and raster panels have been updated to
 
 ![image11](images/entries/06e06201fb4db385ae14d6932353ce0b0b035e83.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：ロケータ検索バーの高速計算機
 QGIS 3.2 allows evaluation of simple expressions (well, actually ANY QGIS expression\... so you could use aggregates and the like if you really wanted!) by entering \"= \" followed by an expression into the locator bar. If a valid expression is entered, users are given an option to copy the result to the clipboard.
 
@@ -173,7 +173,7 @@ Ctrl + {いいえ}ショートカット
 
 This feature was funded by [Technology One](https://www.technologyonecorp.com/)
 
-This feature was developed by [Nathan Woodrow](https://nathanw.net/)
+この機能は [Nathan Woodrow](https://nathanw.net/) によって開発されました
 ### 機能：ロケータでのブックマーク検索
 空間的なブックマークを検索できます。検索結果をダブルクリックすると、ブックマークが拡大表示されます。
 
@@ -207,7 +207,7 @@ It is now possible to copy the statistics panel\'s output table into the clipboa
 
 ![image14](images/entries/0d1f4be90052251c05a1fc351dd099aaa92c65f7.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：ロケータからの検索設定、オプション、およびプロジェクトのプロパティページ
 Short video: <https://www.youtube.com/watch?v=duB2YekUmV0>
 
@@ -232,24 +232,24 @@ The \"random\" colors assigned to new map layers are no longer \"random\" but in
 - 著作権テキストの表現のサポート。
 - 影、輪郭、背景などのテキスト書式のオプションが改善されました。
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：メインウィンドウのスケールバーのフォントサイズとファミリをカスタマイズできます
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：北矢印の装飾のカスタムSVGパスとサイズ
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ## データ管理
 ### 機能：マテリアライズド・ビューを更新する
 ブラウザから、マテリアライズド・ビューを右クリックすると、それを更新できるようになりました。
 
 ![image15](images/entries/125ee6837700d992fb8b6452ab1b346ba96c5cce.png.400x300_q85_crop.webp)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+この機能は [Etienne Trimaille](https://github.com/Gustry) によって開発されました
 ### 機能：オフライン編集のZおよびMサポート
 オフライン編集では、Z座標とM座標のレイヤーもサポートされるようになりました。
 
 This feature was funded by [Oester Messtechnik](https://messtechnik.ch/)
 
-この機能は [Matthias Kuhn、OPENGIS.ch](https://opengis.ch) によって開発されました
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能：QGISプロジェクトのメタデータ
 QGIS 3.0で開始されたメタデータの作業を続けると、3.2ではQGISプロジェクトのメタデータがサポートされるようになりました。これにより、抄録、キーワード、連絡先の詳細、リンクなど、プロジェクトのプロパティに詳細なメタデータを設定できます。
 
@@ -339,13 +339,13 @@ Read this [blog post for more information](http://www.opengis.ch/2018/05/28/how-
 
 This feature was funded by [QGIS User Group Switzerland](https://qgis.ch)
 
-この機能は [Matthias Kuhn、OPENGIS.ch](https://opengis.ch) によって開発されました
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能：ゾーンヒストグラム
 この新しいアルゴリズムは、ポリゴンとして定義されたゾーン内に含まれるラスターレイヤーからの各固有値のカウントを表すフィールドを追加します。
 
 ![image23](images/entries/577c3ed7ed7875d51e968a135bfd532f97d692c8.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：結び、差分および交わりのアルゴリズムをC ++へと移植
 QGISネイティブのジオプロセシングアルゴリズムは、PythonからC ++に移植されました。このアップデートで、パフォーマンスの向上に加えて、いくつかのバグが修正されました。
 
@@ -391,7 +391,7 @@ QGIS 3.2では、カーブしたジオメトリをセグメント化するため
 ### 機能：すべてのポリゴンパーツにポイントを作成するオプション
 The \"Centroid\" and \"Point on surface\" algorithms have a new option to create points for every individual part of input geometries.
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：地物回転アルゴリズム
 This new algorithm allows rotation of features by a set angle. The rotation can occur around a preset point or each individual feature\'s centroid.
 
@@ -475,7 +475,7 @@ The union algorithm can be now run with just a single input layer in order to re
 
 This feature was funded by [InaSAFE DFAT](https://www.dfat.gov.au/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## アプリケーションとプロジェクトのオプション
 ### 機能：プロジェクトの必須レイヤー
 必須レイヤーはプロジェクトから削除することはできません。これにより、不要と考えるレイヤーを削除することからプロジェクトユーザーを保護するための安全性がさらに高まります（たとえば、結合、関係、式で使用されます）。
@@ -576,6 +576,6 @@ The only downside when using this option is that more graphical memory is used (
 
 ![image34](images/entries/875e423e7a857a509812da6f46d468486fb7fd99.png.400x300_q85_crop.webp)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 
 {{<content-end >}}
