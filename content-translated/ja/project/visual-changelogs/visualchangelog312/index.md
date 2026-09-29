@@ -109,7 +109,7 @@ Mesh vector renderer now can visualize streamlines and particles on top of exist
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: 選択的マスキング
 A new advanced rendering feature has been added: selective masking. It allows the definition of \'masks\' areas around labels or point markers. These masks will \"un-draw\" only some symbol layers of other layers underneath, chosen by the user.
 
@@ -117,7 +117,7 @@ A new advanced rendering feature has been added: selective masking. It allows th
 
 This feature was funded by [QGIS.CH and others through a cofunding campaign](https://oslandia.com/en/offre-qgis/selective-masking/)
 
-This feature was developed by [Hugo Mercier (Oslandia)](https://www.oslandia.com)
+この機能は [Hugo Mercier (Oslandia)](https://www.oslandia.com) によって開発されました
 ### 機能：小数点の度の回転が評価できない場合、静的な値にフォールバックする
 凡例は、データ定義された回転ともうまく機能します。QGISはすでにシンボルと個々のシンボルレイヤにデータ定義された回転を適用することができましたが、これにより凡例が壊れてしまいました。凡例上のシンボル（およびシンボルレイヤで定義されたシンボルパーツ）の回転は、データ定義されたプロパティの隣にあるデフォルト値を変更することで制御できるようになりました。
 
@@ -145,7 +145,7 @@ This feature was developed by [Hugo Mercier (Oslandia)](https://www.oslandia.com
 
 ![Peek 2019-12-08 09-16](https://user-images.githubusercontent.com/588407/70386651-acec1600-199b-11ea-8ce2-27798aec38a7.gif)
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### 機能: ランダム塗りつぶしの密度ベースのポイントカウントを追加する
 この機能は、新しいランダム塗りつぶしに密度ベースのポイントカウント方法を追加します。
 
@@ -179,7 +179,7 @@ This feature was funded by [SLYR](https://north-road.com/slyr/)
 
 ![image18](images/entries/e8064c56705b7a74befa85e8a34e7b7311626f0a.gif)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch)
+この機能は [Denis Rouzaud](https://www.opengis.ch) によって開発されました
 ## ダイアグラム
 ### 機能: ダイアグラムレンダラーのペイント効果をサポート
 this new feature allows for diagrams to use paint effects, including drop shadows, outer glows, etc\...
@@ -231,7 +231,7 @@ This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk)
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能：メッシュ参照時間のサポート
 さまざまなデータセットの種類について、例えばGRIBやNetCDFなど、QGISの時間設定ダイアログの参照時間は、生データから自動的に設定されるため、手動で設定する必要はありません。また、時間の解析に関連するさまざまなバグも修正されているため、QGIS 3.12ではプロット/アニメーションで時間を適切な方法でフォーマットして表示することが可能になります:
 - データセットグループに有効な時間参照が提供されている場合、この時間参照は時間の表示に使用されます（絶対時間を使用）。
@@ -246,7 +246,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ## 三次元機能
 ### 機能：3Dメッシュレイヤ地形レンダラ
 3Dビューでメッシュレイヤを地形としてレンダリングすることが可能です。
@@ -273,7 +273,7 @@ This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lu
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: バックグラウンドで3Dベクタレイヤデータを読み込む + タイリング
 このベクタレイヤから3Dマップビューへのデータのバックグラウンド読み込みを対応させます。これまでは、読み込み（およびテッセレーション）はGUIを完全にフリーズさせていました - 入力データの複雑さに応じて数秒かかることがあります。
 
@@ -498,7 +498,7 @@ WMSの凡例グラフィックと同様に、WMTSの凡例グラフィックを�
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: QGISメッシュ計算機でのフェイス定義データセットのサポート
 フェイスおよび頂点に定義されたすべてのデータセット種別に対してメッシュ計算機を使用できます。また、メッシュ計算機の結果を異なる名前や形式で保存することもできます。これにより、例えばFLO-2DやHEC-RASのデータをQGISメッシュ計算機で扱うことが可能になります。
 
@@ -506,7 +506,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ## プロセシング
 ### 機能: 既存のGeoPackageへの新しいレイヤーの追加
 既存のGeoPackageに新しいレイヤーを追加できるよう、既存の レイヤーのパッケージ化 プロセッシングアルゴリズムを改善しました。この機能を利用するには、OVERWRITEパラメーターを無効にして既存のGeoPackageを指定するだけです。
@@ -621,7 +621,7 @@ GRASSおよびSAGAバージョンと比較して、以下の利点がありま�
 
 この機能開発は  [Limerick City and County Council](https://www.limerick.ie/council) の資金提供を受けました
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: ブラウザパネルにhtmlファイルを表示
 この機能により、.htm(l)ファイルをブラウザーパネルから表示・開けるようになりました。これらのファイルはデータファイルや地図プロジェクトのドキュメントとしてよく使用されます。
 
@@ -682,7 +682,7 @@ MDALとQGISが3Dスタックメッシュに対応しました。特にTUFLOW-FV�
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: シェープファイルの符号化のとても多くの数の問題を修正
 これにより、QGISで長年にわたる問題となっていたシェープファイルのエンコーディング処理（設計上の欠陥？）が修正されます。
 
@@ -793,7 +793,7 @@ variables QGIS\_SERVER\_ADDRESS and QGIS\_SERVER\_PORT
 ### 機能: DXFサーバーエクスポートパラメーター NO_MTEXT および FORCE_2D の追加
 QGISサーバーに、生成されるDXFファイルのテストおよびラインシンボロジーを制御するための新しいパラメーター `NO_MTEXT` および `FORCE_2D`  が追加されました。GetDxfリクエストに不足していたパラメーターを追加します。
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### 機能: WMS GetLegendGraphicへのJSONサポートの追加
 この機能は、JSON形式でエンコードされたGetLegendGraphicレスポンスのサポートを追加します。まさにこの目的のために QgsLegendRenderer::exportLegendToJson を追加した  \@pblottiere の以前の作業を基に構築されています。
 

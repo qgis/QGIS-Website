@@ -623,7 +623,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ### 新しい出力を作成する、ゾーン統計量アルゴリズムを追加
 Previously, when calculating zonal statistics, the algorithm always updated the original data source, adding additional fields. A new zonal statistics algorithm has been added which creates a new output instead. This functionality is an implementation of the [29504 feature request](https://github.com/qgis/QGIS/issues/29504).
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### ジオメトリのプロセシングパラメータを追加
 Added a new `QgisProcessingParameterGeometry` for passing geometries as a parameter to processing alogrithms.
 

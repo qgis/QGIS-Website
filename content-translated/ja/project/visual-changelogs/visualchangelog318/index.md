@@ -377,7 +377,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 ### 機能: PointsToPath アルゴリズムで順序フィールドに式を可能にする
 `$id` may be used as an expression for a csv with ordered values, and the `ORDER_EXPRESSION` parameter has been added to the PointsToPath algorithm.
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### 機能: 範囲を指定してラスタを切り抜くの出力でCRSを上書きする
 In some instances, the **Clip raster by extent** algorithm may output features without a CRS specified, which can now be modified by explicitly enforcing the output to inherit it\'s CRS from the input layer.
 

@@ -769,7 +769,7 @@ This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.it/)
 
 ![image74](images/entries/76538031-f195ba80-647e-11ea-9a41-271576e315bc.gif)
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### 機能: 新しいデータベーステーブル名ウィジェット
 既存のDB接続から新しいテーブルを選択する新しいウィジェットがQGISに追加されました:
 
@@ -1272,7 +1272,7 @@ QGIS server now supports the new parameters `NO_MTEXT` and `FORCE_2D` to control
 
 Adds missing parameters to GetDxf request.
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### 機能: WMSプロジェクト検証機
 The QGIS Server validator has been reviewed. This tool is useful when you want to publish a QGIS project using the WMS protocol.
 
