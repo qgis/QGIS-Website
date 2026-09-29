@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(timeout 300 nix develop --command hugo version)",
+      "Bash(curl -s localhost:1313/resources/support/faq/)",
+      "Bash(curl -s localhost:1313/index.json -o /tmp/claude-1003/-home-lova-dev-hugo-QGIS-Website/fe215a59-46ff-4277-bc58-93dc0f2f6619/scratchpad/idx.json)",
+      "Bash(curl -s localhost:1313/index.json -o idx.json)",
+      "Bash(node -e ' *)",
+      "Bash(curl -s localhost:1313/index.json -o idx5.json)",
+      "Bash(curl -s localhost:1313/index.json)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(grep -n 'qgis-green\\\\|$primary\\\\|$link\\\\b' assets/sass/style.sass)",
+      "Bash(curl -s \"localhost:1313/css/all.min.e0ce1d471fd1baaf0182a92a7c8ffedf390434c16821b2df474a9cf0c26ffe39.css\" -o all.css)",
+      "Bash(curl -s \"localhost:1313/search/\")",
+      "Bash(curl -s localhost:1313/js/all.min.6debcc537cfc27ffb14c21e94a2c7d177a7a9802c9ad2c5934c1e215043a27e3.js -o all.js)",
+      "Bash(node --check all.js)",
+      "Bash(curl -s localhost:1313/css/all.min.e0ce1d471fd1baaf0182a92a7c8ffedf390434c16821b2df474a9cf0c26ffe39.css)",
+      "Bash(curl -s localhost:1313/bulma.min.08defa4f601087bbee02ccd4c0155fcdb6cb891299f7e6c5e4903f1716c8fbbe.css)",
+      "Bash(xargs -I{} curl -s localhost:1313/{})",
+      "Bash(git checkout *)",
+      "Bash(git -C themes/qgis-website-theme checkout -- assets/sass/bulma/components/roadmap.sass layouts/shortcodes/roadmap.html)",
+      "Bash(git -C themes/qgis-website-theme status --short)",
+      "Bash(curl -s http://localhost:1313/sass/style.css -o /tmp/claude-1003/-home-lova-dev-hugo-QGIS-Website/27a304ad-3a96-4e6b-bd81-1d726a7e6463/scratchpad/style.css -w \"%{http_code} %{size_download}\\\\n\")",
+      "Bash(curl -s http://localhost:1313/bulma.min.e0b54a63dc29453ff32f52b46fea87e61f6efea8fe88f4c0afed1771b10764c2.css -o b.css)",
+      "Bash(grep -o 'tag[^{,]*is-primary3' b.css)",
+      "Bash(curl -s http://localhost:1313/js/contributors-filter.26c78d6dfd8e274934a1ea81a2a93c17cf9233bef3ace76bb9ca3b8fbfc3d2fa.js)",
+      "WebFetch(domain:github.com)",
+      "Bash(timeout 90 git fetch https://github.com/qgis/QGIS-Website.git main)",
+      "Bash(echo \"SITE_FETCH=$?\")",
+      "Bash(timeout 90 git -C themes/qgis-website-theme fetch https://github.com/qgis/QGIS-Hugo-Website-Theme.git main)",
+      "Bash(echo \"THEME_FETCH=$?\")",
+      "Bash(sed -i '/^OsgeoBadge:/d;/^OsgeoBadgeLink:/d' content/_index.md)",
+      "Bash(sed -i 's|^- id: powerOfOpenSourceCommunity$|- id: anOsgeoProject\\\\n  translation: \"An OSGeo Project\"\\\\n- id: powerOfOpenSourceCommunity|' i18n/en.yml)"
+    ]
+  }
+}
