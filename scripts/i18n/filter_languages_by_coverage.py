@@ -63,7 +63,7 @@ def get_coverage(lang: str, coverage: dict[str, float]) -> float:
 def _lang_block(lang: str) -> str:
     return (
         f"\n    [languages.{lang}]\n"
-        f"    languageCode = \"{lang}\"\n"
+        f"    locale = \"{lang}\"\n"
         f"    weight = 2\n"
     )
 
@@ -73,11 +73,13 @@ def _mount_block(lang: str) -> str:
         f"\n  [[module.mounts]]\n"
         f"    source = \"content-translated/{lang}\"\n"
         f"    target = \"content\"\n"
-        f"    lang = \"{lang}\"\n"
+        f"    [module.mounts.sites.matrix]\n"
+        f"      languages = [\"{lang}\"]\n"
         f"  [[module.mounts]]\n"
         f"    source = \"content\"\n"
         f"    target = \"content\"\n"
-        f"    lang = \"{lang}\"\n"
+        f"    [module.mounts.sites.matrix]\n"
+        f"      languages = [\"{lang}\"]\n"
     )
 
 
@@ -100,6 +102,9 @@ def sync_config(
     mount_header_re = re.compile(r"^\s*\[\[module\.mounts\]\]")
     module_section_re = re.compile(r"^\[module\]")
     section_start_re = re.compile(r"^\s*\[")
+    # A mount block owns its [module.mounts.sites.matrix] sub-table, so that
+    # header does not end the block; the next [[...]] or unrelated [...] does.
+    mount_block_end_re = re.compile(r"^\s*(?:\[\[|\[(?!module\.mounts\.))")
 
     # Languages currently present in config.toml.
     present: set[str] = {
@@ -138,14 +143,18 @@ def sync_config(
         if mount_header_re.match(line):
             block: list[str] = [line]
             j = i + 1
-            while j < len(lines) and not section_start_re.match(lines[j]):
+            while j < len(lines) and not mount_block_end_re.match(lines[j]):
                 block.append(lines[j])
                 j += 1
             lang_in_block: str | None = None
             for bl in block:
-                kv = re.match(r'^\s*lang\s*=\s*"([^"]+)"', bl)
+                kv = re.match(
+                    r'^\s*(?:lang\s*=\s*"([^"]+)"'
+                    r'|languages\s*=\s*\[\s*"([^"]+)")',
+                    bl,
+                )
                 if kv:
-                    lang_in_block = kv.group(1)
+                    lang_in_block = kv.group(1) or kv.group(2)
                     break
             if lang_in_block and lang_in_block in to_remove:
                 i = j
