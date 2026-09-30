@@ -12,11 +12,11 @@ type: page
 # Gruppi Utenti
 ## Elenco attuale dei gruppi di utenti QGIS
 ### Registrati nel 2016 o prima
-{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contact: Narcélio de Sá" >}}
+{{<rich-list listLink="https://qgisbrasil.org/" icon="🇧🇷 " layoutClass="half" listTitle="QGIS Brasil (Brazil) " listSubtitle="Contatto: Narcélio de Sá" >}}
 
-{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contact: Mie Winstrup" >}}
+{{<rich-list listLink="https://qgis.dk/" icon="🇩🇰 " layoutClass="half" listTitle="QGIS Brugergruppe Danmark (Denmark) " listSubtitle="Contatto: Mie Winstrup" >}}
 
-{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contact: Ant Scott" >}}
+{{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁥󠁮󠁧󠁿 " layoutClass="half" listTitle="QGIS UK (England) " listSubtitle="Contatto: Ant Scott" >}}
 
 {{<rich-list listLink="https://qgis.de/" icon="🇩🇪 " layoutClass="half" listTitle="QGIS Anwendergruppe Deutschland (Germany) " listSubtitle="Contatto: Thomas Schüttenberg" >}}
 
@@ -28,7 +28,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.pl/" icon="🇵🇱 " layoutClass="half" listTitle="Polska Grupa Użytkowników QGIS (Poland) " listSubtitle="Contatto: Michał Żugajewicz" >}}
 
-{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contact: Giovanni Manghi" >}}
+{{<rich-list listLink="https://qgis.pt/" icon="🇵🇹 " layoutClass="half" listTitle="QGIS Portugal " listSubtitle="Contatto: Giovanni Manghi" >}}
 
 {{<rich-list listLink="https://uk.osgeo.org/qgis.html" icon="🏴󠁧󠁢󠁳󠁣󠁴󠁿 " layoutClass="half" listTitle="QGIS UK (Scotland) " listSubtitle="Contatto: Ross McDonald" >}}
 
@@ -60,7 +60,7 @@ type: page
 
 {{<rich-list listLink="https://qgis.es/" icon="🇪🇸" layoutClass="half" listTitle="Association of QGIS users in Spain" listSubtitle="Contatto: Carlos López Quintanilla" >}}
 
-{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Contact: Germán Carrillo –> REMOVED in 2025" >}}
+{{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Contatto: Germán Carrillo –> RIMOSSO nel 2025" >}}
 ### Rimossi nel 2018
 {{<rich-list listLink="https://teamwork.niwa.co.nz/display/NQUG/NIWA+QGIS+Users+Group" icon="🇳🇿 " layoutClass="half" listTitle="NIWA QGIS user group (New Zealand)" listSubtitle="Contatto: Brent Wood" >}}
 
@@ -91,9 +91,9 @@ type: page
 {{<rich-list listLink="https://www.facebook.com/profile.php?id=100094072457586" icon="🇽🇰" layoutClass="half" listTitle="QGIS Repubblica del Kosovo" listSubtitle="Contatto: Milot Lubishtani" >}}
 ### Registrati nel 2025
 {{<rich-list listLink="https://heed725.github.io/qgistz/" icon="🇹🇿" layoutClass="half" listTitle="QGIS Tanzania" listSubtitle="Contatto: Antidy Kawamala" >}}
-### Removed 2025
+### Rimossi nel 2025
 {{<rich-list listLink="https://github.com/qgisco" icon="🇨🇴" layoutClass="half" listTitle="Grupo de Usuarios QGIS Colombia" listSubtitle="Contatto: Germán Carrillo" >}}
-### Registered 2026
+### Registrati nel 2026
 {{<rich-list listLink="https://in.qgis.org/" icon="🇮🇳" layoutClass="half" listTitle="QGIS India User Group" listSubtitle="Contact: Ujaval Gandhi" >}}
 
 {{<rich-list listLink="https://qgis.am/" icon="🇦🇲" layoutClass="half" listTitle="QGIS Armenia" listSubtitle="Contact: Suren Poghosyan" >}}

@@ -18,7 +18,7 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ### Partecipa ai Canali di supporto
-{{<button class="is-primary1 is-small is-rounded" link="community/groups" text="User groups 🇩🇪 🇫🇷 🇪🇸" >}}
+{{<button class="is-primary1 is-small is-rounded" link="community/groups" text="Gruppo utenti 🇩🇪 🇫🇷 🇪🇸" >}}
 
 {{<button class="is-primary1 is-small is-rounded" link="community/organisation/mailinglists" text="mailing list di QGIS" >}}
 
@@ -140,9 +140,9 @@ QGIS Core comprende librerie per la creazione di applicazioni personalizzate tra
 ### Sostieni & Dona
 Accogliamo con favore due tipi di contributi finanziari:
 
-{{<button class="is-primary1" link="funding/membership" text="Become a Sustaining Member" >}}
+{{<button class="is-primary1" link="funding/membership" text="Diventa un Membro Sostenitore" >}}
 
-{{<button class="is-primary6" link="funding/donate" text="One-Time Donation" >}}
+{{<button class="is-primary6" link="funding/donate" text="Donazione singola" >}}
 
 {{<rich-content-end >}}
 

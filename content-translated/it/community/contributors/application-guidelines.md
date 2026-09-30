@@ -63,16 +63,16 @@ ____
 7. **Data di fine**
    - Se applicabile. Lascia vuoto se ancora attivo.
    - **Nota:** 3 anni dopo la data di fine, la tua voce verrà spostata nella sezione 'archiviati'. Puoi richiedere di aggiornare il tuo profilo se torni attivo.
-8. **Type of Activities** *(required)*
-   - Select all that apply (see eligible types above)
-9. **Description of Contribution** *(required)*
+8. **Tipo di attività** *(richiesto)*
+   - Seleziona tutti i casi appropriati (vedi sopra)
+9. **Descrizione del contributo** *(richiesto)*
    - **Massimo:** 500 caratteri (sii conciso!)
    - Descrivi le tue attività e il loro impatto sulla comunità QGIS
    - Includi esempi specifici dove possibile
 
 #### Informazione opzionale sulla posizione:
 10. **Latitudine e longitudine**
-    - Provide coordinates for a generalized location (not your home/office!)
+    - Fornisci le coordinate per una località generica (non della tua casa/ufficio!)
     - Usa il formato in gradi decimali (ad es. 51.5074, -0.1278)
 
 ____
@@ -85,11 +85,11 @@ Se ti candidi come organizzazione, includi anche:
 
 ____
 ## Cosa succede dopo aver fatto domanda?
-### Review Process
-1. **Submission:** Complete the [application form](https://forms.gle/wZr4EfCjqPWGaoq37)
+### Processo di revisione
+1. **Richiesta:** Completa il [modulo di richiesta] (https://forms.gle/wZr4EfCjqPWGaoq37)
 2. **Revisione:** Il Comitato direttivo del progetto QGIS (PSC) esamina tutte le proposte presentate
-3. **Timeline:** Reviews are conducted **monthly**
-4. **Notification:** You'll be contacted about your application status
+3. **Cronologia:** Le revisioni vengono effettuate **mensilmente**
+4. **Notifica:** Sarai contattato riguardo allo stato della tua candidatura
 5. **Pubblicazione:** i contributori approvati compaiono nella [pagina Supporting Contributors](/community/contributors/supporting/)
 
 ### Criteri di approvazione
@@ -101,17 +101,17 @@ La tua domanda verrà valutata in base a:
 - **Spirito di comunità:** allineato con i valori di QGIS e il codice di condotta
 
 ____
-## Tips for a Successful Application
-### Writing Your Description
+## Consigli per una candidatura di successo
+### Scrivi la tua descrizione
 {{<rich-box-start icon="💡" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-2" >}}
 
 **DA FARE:**
-- Be specific about your contributions
-- Mention concrete outcomes or metrics when possible
-- Highlight ongoing or sustained efforts
-- Include relevant links or references
+- Sii specifico a proposito dei tuoi contributi
+- Menziona risultati o parametri concreti, quando possibile
+- Evidenzia sforzi passati o in corso
+- Includi link o riferimenti rilevanti
 
 Esempio: ***Coordinati incontri mensili di QGIS a Berlino dal 2022 con 20-40 partecipanti. Organizzata la QGIS User Conference Germany 2024 con oltre 150 partecipanti. Mantengo le traduzioni della documentazione QGIS in tedesco.***
 
@@ -137,10 +137,10 @@ Esempio: ***Coordinati incontri mensili di QGIS a Berlino dal 2022 con 20-40 par
 Una volta approvato, comparirai nella [pagina Supporting Contributors](/community/contributors/supporting/)
 ____
 <div style="text-align:center; margin-top: 3rem;">
-  <h2>Ready to Apply?</h2>
-  <p>Share your story and get the recognition you deserve!</p>
+  <h2>Pronto a candidarti?</h2>
+  <p>Condividi la tua storia e ottieni il riconoscimento che meriti!</p>
   <a href="https://forms.gle/wZr4EfCjqPWGaoq37" class="button is-success">
-    📝 Submit Application
+    📝 Invia la tua candidatura
   </a>
 </div>
 
