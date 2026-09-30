@@ -10,7 +10,7 @@ type: list
 ---
 {{<content-start >}}
 # 会議
-Since 2009 the QGIS community has been organizing developer and user meetings around the world.
+2009年以来、QGISコミュニティは世界中の開発者とユーザーの会議を組織しています。
 
 {{<rich-box-start layoutClass="has-right rounded" >}}
 

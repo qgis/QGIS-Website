@@ -2,9 +2,9 @@
 draft: 'true'
 
 ---
-# フィナンシャルタイムズ・グラフィックチームでQGISの使用
+# フィナンシャルタイムズ・グラフィックチームにおけるQGISの利用
 ## スティーブン・バーナード（インタラクティブデザインエディタ）インタビュー
-Steven is an Interactive Design Editor at Financial Times. You can find him on [Twitter](https://twitter.com/sdbernard). He also publishes useful [HOWTO Videos on Youtube](https://t.co/6aTE6G8h0T) for certain cartographic tasks in QGIS.
+スティーブンはフィナンシャル・タイムズのインタラクティブデザイン編集者のひとりです。彼を [Twitter](https://twitter.com/sdbernard) で見つけることができます。また、一定の地図製作作業を QGIS で行うのに役立つ [HOWTO ビデオを Youtube で](https://t.co/6aTE6G8h0T) 公開しています。
 
 **QGIS** ：スティーブン、あなたがFTで働いているチームの名前は何ですか？FTであなたのチームが何をしているかについて背景を少し提供してもらえますか？
 
@@ -22,31 +22,31 @@ Steven is an Interactive Design Editor at Financial Times. You can find him on [
 
 **スティーブン**：デザイナー、開発者、プロデューサーと統計学者をすべて含めて24人のチームです
 
-**QGIS**: What\'s your specific role within the team?
+**QGIS** ：チームでのあなたの特定の役割は何ですか？
 
-**Steven**: We are a multi-disciplinary department so I don't have a specific role as such. My role includes producing responsive designs for interactive graphics as well as doing the front-end development on the less complicated interactives (e.g. [Inside Isis Inc: The journey of a barrel of oil](http://ig.ft.com/sites/2015/isis-oil/)). I also produce the standard news related charts and maps on a daily basis. Over the past two years I have been concentrating on developing our cartographic offerings at the FT. QGIS has been instrumental in changing how we produce maps, and in conjunction with other tools such Blender have helped me to be more creative with how we approach maps.
+**スティーブン** ：私たちは複数の分野にまたがる部門なので、私にはこれといった特定の役割がありません。私の役割には、対話的なグラフィック用の応答のあるデザインや、それほど複雑でない対話的なフロントエンドの制作があります（例 [Isis株式会社の内幕：石油バレルの旅](http://ig.ft.com/sites/2015/isis-oil/)）。また、私は毎日のように、標準のニュース関連のグラフや地図を作成します。過去2年間、私はFTで提供する地図製作製品の開発に注力してきました。QGISは、私たちの地図制作方法を変えるのに役立っていますし、Blenderなど他のツールと組み合わせることで、地図への取り組み方をよりクリエイティブにするのに役立っています。
 
 ![](./images/ft_nigeria-migration_animation.gif){.align-left width="100.0%"}
 
-*Example: Animation of Dora\'s journey from Nigeria to Sicily - one of thousands by trafficked women each year.*
+*例：ナイジェリアからシチリアへの Dora の旅 - 人身売買される年数千人の女性の一人のアニメーション*
 
-**QGIS**: Can you tell us a bit about yourself? What\'s your educational background? What did you do before joining the data visualization team at FT?
+**QGIS** ：ご自身について少し教えてください。あなたの学歴は何ですか？FTのデータビジュアライゼーションチームに加わる前は何をされていましたか？
 
 ![](./images/ft_gotthard-tunnel.png){.align-left width="60.0%"}
 
 *例：スイスアルプスのゴッタルド鉄道と道路トンネル*
 
-**Steven**: I am traditionally trained as scientific illustrator. What's that I hear you ask? It involves producing illustrations for medical journals, natural history publications anything where you are trying to convey information visually where a photograph can't. Think of diagrams showing the human circulatory system, or showing a procedure to fix a broken bone. Sadly there wasn't much call for that kind of work when I left university and I basically fell into the job at the FT. I have always been good at maths, which I think is important when working with data visualisations, it has certainly helped me with my coding as well.
+**スティーブン**：私は科学イラストレーターとして伝統的な訓練を受けてきました。何だとお思いになるでしょうね。これは、医学雑誌や博物誌など、写真では伝えきれない情報を視覚的に伝えるためのイラストを制作することです。人間の循環系を示す図や、骨折した骨を直す手順を示す図を考えてみてください。私が大学を出たときは悲しいことにこうした種類の仕事には多くの求人がなく、FTの仕事に落ち着きました。数学はずっと得意で、それはデータビジュアライゼーションの仕事をする上で重要だと思いますし、コーディングでも役立っています。
 
 **QGIS** ：どのようにQGISを発見しましたか？
 
-**Steven**: I came across QGIS in 2013 when we were working on a [project mapping the ethnicity of the Middle East](http://ig.ft.com/features/2013-07-19_middleeast_religion_map/dist/index.html)
+**スティーブン** ：私がQGISに出会ったのは2013年のことで、[中東の民族をマッピングするプロジェクト](http://ig.ft.com/features/2013-07-19_middleeast_religion_map/dist/index.html) に取り組んでいたときでした
 
-We used it to georeference maps that were created by a professor at Columbia University. At first I found it really tricky using the add feature drawing tool, probably because it was unlike anything I'd used in Adobe Illustrator for 17 years prior! I also found it frustrating that you had to save things twice, once when done editing the shapefile, then again to save the project. However, this was just down to inexperience with the program and in the end it did exactly what we needed, which was to produce shapefiles that we could add to a Mapbox base map.
+私たちはそれをコロンビア大学の教授が作成した地図をジオリファレンスするのに使いました。最初は、地物を追加する描画ツールの使い方が本当に難しいと感じました。おそらくそれまで17年間 Adobe Illustrator で使ってきたものとは違っていたからでしょう！また、なんでも2度保存しなければならないこと、つまりシェープファイルの編集が終わった後とプロジェクトの保存、にもイライラしました。しかし、これは単にプログラムの使い方が未熟だっただけで、最終的には、Mapboxのベースマップに追加できるシェープファイルを作成するという、まさに私たちが必要としていたことを実現してくれました。
 
-**QGIS**: What\'s the role of QGIS within your usual workflows?
+**QGIS** ：普段のワークフロー内でのQGISの役割は何ですか？
 
-**Steven**: QGIS is now an integral part of our mapping workflow. I don't use any other GIS tool to create our maps. Although a few members of our team also use Map Publisher as they feel more comfortable staying within Adobe Illustrator. I would say 80% of our maps are now produced in QGIS.
+**スティーブン**：QGISは現在、私たちの図化ワークフローの不可欠な部分です。私は地図を作成するのに他の GIS ツールは使用しません。チームの二、三人のメンバーは、Adobe Illustrator に留まるのがより快適に感じるので、Map Publisher も使っていますが。現在、私たちの地図の80％が QGIS で作られていると言えるでしょう。 
 
 ![](./images/ft_blm-federal-land-map.png){.align-left width="100.0%"}
 
@@ -56,16 +56,16 @@ We used it to georeference maps that were created by a professor at Columbia Uni
 
 **スティーブン**：簡単な位置図であれば、仕事の95％はQGISで行い、最終的な推敲はAdobe Illustratorで行います。
 
-起伏地図をやっている場合、プロセスはたくさんより複雑です。私にはNASAの地球エクスプローラからDEMファイルを取得し、サイズにトリミングするQGISにそれらをもたらすでしょう。私はその後、レンダリング、3Dを作成するためにブレンダーにトリミングされたDEMがかかります。私はhillshading上の衛星オーバーレイを使用していた場合、私にはNASAからBlueMarble画像をダウンロードし、同様にブレンダーにこれを取ります。エクスポートされたブレンダーからレンダリング背景レイヤーとして使用するQGISに戻されます。必要であれば、私は事前にPhotoshopでそれを微調整することがあります。
+起伏地図をやっている場合、プロセスはかなり複雑です。私は NASA の地球エクスプローラから DEM ファイルを取得し、それをQGIS に持ってきてトリミングします。それからトリミングした DEM を Blender に入れて 3D レンダを作成します。陰影起伏図に衛星オーバーレイを使用していた場合は NASA から BlueMarble 画像をダウンロードし、同様に Blender に入れます。Blender からエクスポートされたレンダは次にQGISに戻されて背景レイヤーとして使用されます。必要であれば、事前に Photoshop でそれを微調整するかもしれません。
 
-For responsive maps like those in the [Isis oil story](http://ig.ft.com/sites/2015/isis-oil/), I used all of the above tools but the final step is to use an open source Adobe Illustrator script developed by the New York Times' Archie Tse. This allows me to create responsive versions of my maps that work on all devices.
+[Isis の石油物語](http://ig.ft.com/sites/2015/isis-oil/) にあるようなレスポンシブ地図には、上記のツールをすべて使いましたが、最後のステップは、ニューヨーク・タイムズのアーチー・ツェが開発したオープンソースの Adobe Illustrator スクリプトを使うことでした。これによって地図のあらゆるデバイスで動作するレスポンシブ版を作ることができます。
 
 もうひとつの便利なツールはGoogleマイマップで、世界中の記者が地図上に位置をマークし、それをkmzファイルとしてダウンロードし、そのままQGISにインポートすることができます。
 
 最後のツールはAdobe After Effectsで、最近、ユーザーを旅に誘うために地図をアニメーション化することにハマっています。最近ランドラッシュシリーズで使ったようにね：
-- [Land Rush Ethiopia](https://ig.ft.com/sites/land-rush-investment/ethiopia/)
-- [Land Rush Myanmar](https://ig.ft.com/sites/land-rush-investment/myanmar/)
-- [Land Rush Indonesia](https://ig.ft.com/sites/land-rush-investment/indonesia/)
+- [ランドラッシュ エチオピア](https://ig.ft.com/sites/land-rush-investment/ethiopia/)
+- [ランドラッシュ ミャンマー](https://ig.ft.com/sites/land-rush-investment/myanmar/)
+- [ランドラッシュ インドネシア](https://ig.ft.com/sites/land-rush-investment/indonesia/)
 
 **QGIS** ：QGIS以外の空間ツールやGISを使用していますか、そうであれば、どれですか？
 
@@ -77,17 +77,17 @@ For responsive maps like those in the [Isis oil story](http://ig.ft.com/sites/20
 
 **QGIS** ：あなたがしなければならないタスクについて、QGISの長所と短所を説明することはできますか？
 
-**Steven**: When I first used QGIS I saw it as a specialist tool, fit for only dealing with specific tasks. I really didn't see it a production tool. In late 2014 two of my colleagues went on a QGIS course held by Alasdair Rae at Sheffield University. They both enthused about how good QGIS was, so I took it upon myself to evaluate it as a tool that could be used to produce all our maps.
+**スティーブン**: 初めてQGISを使ったとき、私はQGISを特定の作業にしか合わない専門家のツールとして見ていました。生産用のツールだとは全く思っていませんでした。2014年後半に同僚の2人がシェフィールド大学の Alasdair Rae が開催した QGIS コースに参加しました。2人ともが QGIS の素晴らしさを熱弁したので、私はQGISをすべての地図の作成に使えるツールか自身で評価することにしました。
 
-約2週間以内に私はそれが実行可能になると確信していました。主なセールスポイントは、ストリートレベルのマップのズームレベルのスタイリングなど、すべてのためのスタイルガイドを設定する機能でした。
+約2週間以内に私はそれが実行可能だろうと確信しました。主なセールスポイントは、ストリートレベルのマップのズームレベルのスタイリングなど、あらゆるものにスタイルガイドを設定する機能でした。
 
 私は、名前、緯度、経度、マーカーアイコン、フォントウェイト、フォントサイズ、マーカーを表示するかしないかのカラムを持ったGoogleシートのセットを持った、システムセットアップを持っています。
 
-マーカーアイコンは、そのマーカーについてのすべての詳細を記入VLOOKUPテーブルに接続されたドロップダウンです。
+マーカーアイコンはVLOOKUPテーブルに接続されたドロップダウンで、そのマーカーについてのすべての詳細を記入します。
 
 だから私がする必要があることすべては、CSVファイルをダウンロードQGISにインポートし、スタイルを適用することだけで、それで95％の準備ができている地図になっています。
 
-To be perfectly honest I can't think of any weaknesses, there are a couple of things that I would like to see or be able to do but, I don't see that as a weakness, just a missing feature.
+本当に正直に言って弱点は何も思いつきませんが、見たり実行できるようになればと思う、弱点ではなく単なる機能不足は数件あります。
 
 ![](./images/ft_chinaMigration.png){.align-left width="100.0%"}
 
@@ -103,23 +103,23 @@ To be perfectly honest I can't think of any weaknesses, there are a couple of th
 
 **QGIS** ：QGISでどのような機能や機能性を最も不足を感じますか？実装されていれば、あなたに大いに役立つでしょう不足している機能のリストをお持ちですか？
 
-**Steven**: A couple of things I would like to see in future versions are\...
+**スティーブン**：将来のバージョンで見たい、いくつかの事ですが...
 
-Bezier curve support, this would be particularly useful in conjunction with Georeferencer. I know there is a spline plugin but it doesn't give you the full control a bezier curve would.
+ベジェ曲線のサポート、これはジオリファレンサと併せて、特に有用でしょう。スプラインのプラグインがあることは知っていますが、それはベジェ曲線で可能な完全な制御を与えるものではありません。
 
 大きなファイルサイズの画像として保存できること。現在、これはBlenderに取りこむDEMファイルの地理参照された切り抜きを作ることができる唯一の方法です。しかしそれは画面のサイズに制限されます。例えばQGISにロードされた8,000ピクセルDEMファイルを持っていた場合は、HDビデオで使用するために画面よりも大きなサイズで切り抜きを書き出せるようにしたいと思います。
 
 **QGIS** ：あなたを助けるQGISで特定の機能がない場合、あなたは自分自身でQGISを改良（QGISコアやPythonプラグインでのコーディングで）することを考えますか？または不足している機能を実装するためにQGIS開発者を雇うことを検討しますか？それとも、代わりにそのギャップを埋めるために他のツールを探すのでしょうか？
 
-**Steven**: I certainly don't have the necessary skills to do the coding myself, I'm fairly proficient in Javascript but would struggle with Python. I would love to hire a developer to get features implemented but unfortunately I'm not in control of any budgets, so I use other tools to get around this.
+**スティーブン**：間違いなく私はコードを書くのに必要なスキルを持っていません。私は JavaScript はかなり堪能ですが Python には苦労するでしょう。機能を実装するために開発者を雇えれば素敵ですが、残念ながら私には予算の裁量は何もないので、これを迂回するために他のツールを使用します。 
 
 ![](./images/ft_us_broadband_internet_subscription.png){.align-left width="100.0%"}
 
 *例：米国におけるブロードバンドインターネット加入世帯の割合*。
 
-**QGIS**: Let\'s talk about user experience - the QGIS team is aware that there are various places in the UI (dialogs, panels, etc) that could be improved a lot. Can you tell us a little bit where in the UI you see the biggest potential for a UI overhaul?
+**QGIS** ：ユーザー体験についてお話しましょう - QGISチームはUIのさまざまな場所（ダイアログ、パネル、など）に大きく改善できるものがあることを認識しています。UI オーバーホールの最大の可能性は UI のどこにあると思うか少し語っていただくことはできますか？
 
-**Steven**: I think the main tools are fine as they are, once you are familiar with them they're pretty obvious. However, one thing I do find a little frustrating is trying to hunt down a plugin once it's been installed. They either create their own menu (MMQGIS), live under one of the menus (Georeferencer) or create their own icon (threejs). It would be handy to have a plugin window that has all installed plugins in it. Again this isn't a deal breaker but would make it easier than hunting in several different locations.
+**スティーブン** ：主なツールはそのままで良いと思っていますし、一度慣れたらそれはかなり明白です。しかし、私が少々イライラを感じる一つは、プラグインをインストールした後でそれらを捜し回ることです。それらは自身のメニューを作成する（MMQGIS）か、メニューのひとつの下に住むか（Georeferencer）、自分のアイコンを作成するか（threejs）のいずれかです。インストールしているプラグインがすべて入っているプラ​​グインウィンドウがある便利でしょう。繰り返しますが、これは約束破りではありませんが、いくつかの場所を捜し回るよりも簡単になるでしょう。
 
 **QGIS** ：お時間をいただき、またQGISでワークフローを促進し文書化するためにされた仕事について感謝します！
 
@@ -127,6 +127,6 @@ Bezier curve support, this would be particularly useful in conjunction with Geor
 
 *スティーブ・バーナードの肖像。 ファイナンシャル・タイムスのインタラクティブデザインエディタ*
 
-**Steven**: A pleasure, I'm almost evangelical about QGIS! Hence the [31 video tutorials](https://t.co/6aTE6G8h0T) and always happy to spread the word.
+**スティーブン**：こちらこそ光栄です。私は QGIS の熱烈な信者と言っても過言ではありません！だからこそ [31本のビデオチュートリアル](https://t.co/6aTE6G8h0T) がありますし、いつでも喜んでその福音を広めたいと思っています。
 
 A.ノイマンとT.サットンによるインタビューの質問。2016年4月。

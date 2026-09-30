@@ -332,7 +332,7 @@ A single "Toolbox" panel has been added to the Graphical Modeler, which merges t
 
 This feature was funded by [Hauts-de-France](https://www.hautsdefrance.fr/)
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ## Procesado
 ### Feature: Port SAGA "Fill Sinks Wang & Liu" to native tool
 This highly in-demand tool seemed to be fragile and error-prone when run via the SAGA Processing Plugin.
@@ -363,7 +363,7 @@ This allows users to quickly and easily connect an output from one node to a spe
 
 <img src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png" class="img-responsive img-rounded" />
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ### Feature: Processing raster rank algorithm
 The new "Raster rank" algorithm takes a collection of rasters as input and creates an output with cell values matching the rank order of a list of cell values taken from the input collection of rasters.
 
@@ -429,9 +429,9 @@ This feature was funded by QGIS grant program 2025
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
 ### Feature: Improved project management for PostgreSQL stored Projects
 QGIS now includes options in the browser that allow manipulating QGIS Projects stored in a PostGIS database. New functionalities include the ability to:
-- Rename Project
-- Delete Project
-- Duplicate Project
+- Renombrar Proyecto
+- Borrar Proyecto
+- Duplicar Proyecto
 - Move Project to Schema
 
 <img src="images/entries/2ab1e23aae557053f6271e23db145fc791f425ee" class="img-responsive img-rounded" />

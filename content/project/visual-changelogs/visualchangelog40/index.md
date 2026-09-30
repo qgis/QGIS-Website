@@ -1485,8 +1485,8 @@ class="img-responsive img-rounded" />
 
 This feature was funded by the QGIS Switzerland user group
 
-This feature was developed by [Valentin
-Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia
+Buira](https://github.com/CeliaBuira)
 
 ### Feature: support max-triangle-edge-length in PDAL Export to raster (TIN) algorithm
 
@@ -1666,8 +1666,8 @@ class="img-responsive img-rounded" />
 
 This feature was funded by Hauts-de-France region
 
-This feature was developed by [Valentin
-Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia
+Buira](https://github.com/CeliaBuira)
 
 ## Application and Project Options
 

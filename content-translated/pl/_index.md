@@ -7,12 +7,10 @@ Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
 ButtonText: Pobierz
-HasAnnouncement: true
+HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: Darmowy i o otwartym źródle
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: Dostępny na Windows, macOS i Linux'a
 draft: false
 heroLogo: img/logosign.svg

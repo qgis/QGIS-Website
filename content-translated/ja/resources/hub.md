@@ -22,7 +22,7 @@ type: page
 {{<rich-content-end >}}
 
 {{<rich-box-end >}}
-## 文書化
+## ドキュメント
 QGISには充実したドキュメントが揃っています。ユーザーマニュアル・開発者ハンドブックなどのコアドキュメントはすべて英語で提供されています。ユーザーガイドなど一部のドキュメントは他の言語でもご利用いただけます。
 
 各QGISの長期サポートリリース（LTR）のドキュメントは、それぞれのドキュメントウェブサイトでご覧いただけます。
@@ -35,7 +35,7 @@ QGISには充実したドキュメントが揃っています。ユーザーマ�
 
 {{<tab-content-start tab="1" >}}
 
-**For users (QGIS {{< param "ltrversion" >}}):**
+**ユーザー向け (QGIS {{< param "ltrversion" >}}):**
 
 {{<rich-list listLink="https://docs.qgis.org/|ltrversion|/<lang>/docs/user_manual" layoutClass="inline-block link-with-language" listTitle="デスクトップユーザーガイド — <lang>" >}}
 

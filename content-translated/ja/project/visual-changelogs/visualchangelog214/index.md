@@ -28,13 +28,13 @@ LTRが重要な場合は、QGISプロジェクトを直接サポートするこ�
 
 If you are upgrading from QGIS 2.8 (our previous LTR version) you will find a great many new features in this release. We encourage you to peruse the changelogs for the intermediate non LTR [2.10](../visualchangelog210/) and [2.12](../visualchangelog212/) releases as this QGIS 2.14 includes all features published in those releases too. Note that 2.14 first enters the regular package repositories and will not immediately replace 2.8 in the LTR package repositories. That will happen when 2.16 is released.
 
-Whenever new features are added to software they introduce the possibility of new bugs - if you encounter any problems with this release, please file a ticket [on the QGIS Bug Tracker](http://hub.qgis.org).
+新しい機能がソフトウェアに追加されるたびに、新しいバグが発生する可能性があります。このリリースで何か問題が発生した場合は、 [QGISバグトラッカー](http://hub.qgis.org) にチケットを提出してください。
 
 **謝辞**
 
 We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
 
-QGIS is supported by donors and sponsors. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become an official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six-monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは、寄付者やスポンサーによって支えられています。プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/ja/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式のプロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへの財政支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 QGIS is Free software and you are under no obligation to pay anything to use it - in fact we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision making tools will result in a better society for all of humanity. If you are able to support QGIS, you can [![donate here](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://qgis.org/en/site/getinvolved/donations.html)
 
@@ -84,7 +84,7 @@ The strpos function behaviour has been altered, so that no match now results in 
 
 この機能は、Andreas Neumann（OSとユーザー関連の変数）によって資金提供されました。
 
-この機能は、Nyall Dawson、Matthias Kuhn
+この機能は、Nyall Dawson、Matthias Kuhn によって開発されました
 ### 機能: マップエレメントの配置機能の改善
 QGIS 2.14は、メインの地図キャンバスにノースアロー、スケールバー、著作権表示を配置するより細かいコントロールを得ています。さまざまな単位（ミリメートル、ピクセル、パーセントを含む）を使用して、これらの要素の位置を正確に設定できるようになりました。
 
@@ -173,27 +173,27 @@ QGIS 2.14は、メインの地図キャンバスにノースアロー、スケ�
 - JürgenFischer：Oracleのデッドロック
 - ユルゲンフィッシャー：SAGAパス設定を修正
 
-### Feature: Field calculator can be used to update feature\'s geometry
-フィールド計算機を使用して、幾何学的表現の結果を使用して地物ジオメトリを更新することができます。これは、選択された地物のグループにバッファを適用するなどの操作を行うための便利なショートカットです。また、2.14の新しく追加されたジオメトリ関数とともに、ジオメトリを操作する非常に便利な方法になります。
+### 機能: フィールド計算機にて地物ジオメトリの更新が可能に
+フィールド計算機を使用して、幾何学式の結果を使用して地物ジオメトリを更新することができます。これは、選択された地物のグループにバッファを適用するなどの操作を行うための便利なショートカットです。また、2.14の新しく追加されたジオメトリ関数とともに、ジオメトリを操作する非常に便利な方法になります。
 
 ![image51](images/entries/ba37e2e778a2349c7099e09fcf648238090d8af4.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: 新しい関数の追加（v2.14）
 バージョン2.14には多くの新しい式関数が追加されています：
-- `relate`: performs a DE-9IM geometry relation by either returning the DE-9IM representation of the relationship between two geometries, or by testing whether the DE-9IM relationship matches a specified pattern.
-- the `make_point` function now accepts optional z and m values, and a new `make_point_m` function has been added for creation of PointM geometries.
-- `m` and `z` functions for retrieving the m and z values from a point geometry
-- new `make_line` and `make_polygon` functions, for creation of line and polygon geometries from a set of points
-- `reverse`, for reversing linestrings
-- `eval` function, which can evaluate a string as though it is an expression of its own
-- `translate` function, for translating geometries by an x/y offset
-- `darker` and `lighter` functions, which take a color argument and make it darker or lighter by a specified amount
-- `radians` and `degrees`: for converting angles between radians and degrees
-- `point_on_surface`: returns a point on the surface of a geometry
-- `exterior_ring`: returns the exterior ring for a polygon geometry
-- `is_closed`: returns true if a linestring is closed
-- new geometry accessor functions: `geometry_n` (returns a specific geometry from within a collection), `interior_ring_n` (returns an interior ring from within a polygon)
+- `relate`: 2つのジオメトリ間の関係のDE-9IM表現を返すか、DE-9IM関係が指定されたパターンと一致するかどうかをテストすることによって、DE-9IMジオメトリ関係を実行します。
+- `make_point` 関数はオプションのzとmの値を受け付け、新しい `make_point_m` 関数が PointM ジオメトリの作成のために追加されました。
+- `m` 及び `z` 関数は、ポイントジオメトリから m 及び z 値を取り出します
+- 新しい `make_line` 及び `make_polygon` 関数は、一連のポイントからラインとポリゴンジオメトリを作成します
+- `reverse` は、ラインストリングを逆転させます
+- `eval` 関数は、文字列をそれ自身の式であるかのように評価します
+- `translate` 関数は、ジオメトリを x/y オフセット移動します
+- `darker` および `lighter` 関数は、色の引数をとり、指定された量だけより暗くまたはより明るくします
+- `radians` と `degrees`: 角度をラジアンと度の間で変換します
+- `point_on_surface`: ジオメトリの表面上の点を返します
+- `exterior_ring`: ポリゴンジオメトリの外部リングを返します
+- `is_closed`: ラインストリングが閉じている場合はtrueを返します
+- 新しいジオメトリアクセッサ関数： `geometry_n` （コレクション内から特定のジオメトリを返します）、 `interior_ring_n`（ポリゴン内から内部リングを返します）
 - `num_geometries`: returns number of geometries inside a collection
 - `num_rings`: returns number of rings in a polygon geometry object
 - `num_interior_rings`: returns number of interior rings in a polygon
@@ -214,13 +214,13 @@ This feature was developed by [Nyall Dawson](http://nyalldawson.net)
 
 ![image27](images/entries/3820507f3bffdaab2bafe7285a8c51791f0b1fdb.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: 地物情報ツールにて Z/M 値が表示されるように
 識別ツールでは、識別された地物に存在するzまたはm値を表示できるようになりました。地物がラインまたはポリゴンの場合、ツールは頂点番号と識別された点に最も近い頂点のx / y / z / mを表示します。識別ツールには、コレクションの部品数と部品番号も表示されるようになりました。
 
 ![image28](images/entries/c9813d351340f46e28e6a0cb576a4b2ca72466a9.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: 距離と面積の単位および座標形式の操作方法の統一
 QGIS 2.14では、距離単位、エリア単位、座標表示に関するさまざまなオプションの処理が統一され、簡素化され、プロジェクトプロパティに移動されました。この変更により、次のような多くの利点がもたらされます。
 - 識別ツールの結果やステータスバーの表示など、座標がユーザーに表示されるたびに、プロジェクトプロパティで指定された座標形式が一貫して使用されます。
@@ -233,7 +233,7 @@ QGIS 2.14では、距離単位、エリア単位、座標表示に関するさ�
 
 この機能は、QGISが支援するバグ修正プログラムによって資金提供されました
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ## ブラウザ
 ### 機能: ブラウザの改善
 QGISブラウザはファイルシステムのOGC Webサービスとデータベース接続パネルで、前述のソースからマップキャンバス（またはDBマネージャウィンドウ）に任意のレイヤーを簡単にドラッグ＆ドロップできます。このリリースでは、2つの便利な新機能が追加されました。
@@ -255,7 +255,7 @@ The delimited text provider now supports curved WKT strings, and the memory prov
 
 ![image32](images/entries/79f4b8256ab3507b192277c4f14d3bb04423dc52.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: time と datetime フィールドの操作改善
 QGIS 2.14では、次のような時間フィールドタイプと日時フィールドタイプの処理が改善されました。
 - PostgreSQLのタイムスタンプフィールドが正しく処理される
@@ -266,13 +266,13 @@ QGIS 2.14では、次のような時間フィールドタイプと日時フィ�
 
 ![image33](images/entries/2511118cd31ca53892ef5764cf8e80d9491d131a.png.400x300_q85_crop.webp)
 
-この機能はJürgenFischer、Nyall Dawson
+この機能はJürgen Fischer、Nyall Dawsonによって開発されました
 ### 機能: デリミティッドテキストプロバイダーにおける Z/M 値のサポート
 The delimited text provider has gained support for WKT strings containing Z and M coordinates. For example you can express a point with z and measure elements like this : `POINT ZM (1 1 5 60)`.
 
 ![image34](images/entries/41d5c223ac43b4f8f392894109414e9d053c9136.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: postgres 編集におけるトランザクショングループ
 トランザクション編集を可能にするための新しいオプションが導入されました。
 
@@ -291,7 +291,7 @@ This feature is currently **Experimental**. If you find any problems, please [re
 
 This feature was funded by [SIGE](http://www.sige.ch/)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch, based on work by Sourcepole](https://opengis.ch)
+この機能は [Sourcepole による作業に基づいて Matthias Kuhn OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能: Postgres プロバイダでのPKI認証
 2.12で導入されたQGIS認証マネージャを使用する機能は、PostGISプロバイダに拡張されました。これにより、基本認証またはPKI認証を使用してPostgresに接続し、QGIS設定に認証情報を保存することができます。新しいPostgresプロバイダ認証は、DBマネージャでも使用できます。
 
@@ -313,7 +313,7 @@ Support for virtual layers has also been added to DB Manager as well as to the P
 
 This feature was funded by [MEDDE (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr)
 
-This feature was developed by [Hugo Mercier / Oslandia](http://oslandia.com)
+この機能は [Hugo Mercier / Oslandia](http://oslandia.com) によって開発されました
 ### GDALおよびOGRプロバイダのファイル選択で利用可能なファイル拡張子の追加
 ベクタおよびラスタファイルの場合、QGISはGDAL / OGRライブラリに依存します。つまり、GDALまたはOGRで開くことができるほぼすべてのファイル形式をQGISで直接開くことができます。今までは、GDALまたはOGRファイルセレクタにいくつかのファイル拡張子が追加されていなかったため、ユーザーはQGISがこれらのファイル形式を開いたり、処理したりできなかったと考えていました。この問題を最小限に抑えるために、GDALおよびOGRファイルセレクタフィルタにいくつかの新しい拡張機能が追加されました。
 
@@ -357,7 +357,7 @@ When using a PostGIS 2.2 instance, QGIS now uses the ST_RemoveRepeatedPoints fun
 
 ![image39](images/entries/bea701efeedd257314f507dfb2689fbf95403095.png.400x300_q85_crop.webp)
 
-This feature was developed by [Michaël Douchin \@kimaidou](http://3liz.com)
+この機能は [Michaël Douchin \@kimaidou](http://3liz.com) によって開発されました
 ## データマネジメント
 ### 機能: SPIT プラグインの削除
 The \"SPIT\" plugin is no longer bundled with QGIS, as the plugin was unmaintained and has been surpassed by DB Manager and the processing database import algorithms.
@@ -378,7 +378,7 @@ This feature was funded by [City of Uster](http://gis.uster.ch/)
 
 ![image42](images/entries/886630cb835b72865c5442a73a79b46cc5a7b60f.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: QLOレイヤ定義ファイル内にベクタ結合が保存可能に
 ### 機能: 外部リソースウィジェット
 A new form widget is now available. It is named \"External resource\" and it allows a more complete handling of attributes assigned to file paths storing. Here is a complete summary of the widget features:
@@ -394,7 +394,7 @@ A new form widget is now available. It is named \"External resource\" and it all
 
 The main aim of this new widget is to fix and improve the two existing \'File name\' and \'Photo\' widgets, and replace them with a single unified widget. For the moment, you can still use the old widgets but they will be deprecated and removed for QGIS 3.0. We recommend to switch your projects to use the new \'External Resource\' widget now.
 
-**この機能は**によって開発されました：
+**この機能は次の方によって開発されました**:
 - [Denis Rouzaud](https://github.com/3nids)
 - Matthias Kuhn at [OPENGIS.ch](https://opengis.ch)
 - [Médéric Ribreux](https://medspx.fr)
@@ -415,22 +415,22 @@ QGISはデータベース管理システムではありません。
 
 ![image44](images/entries/9f033883617b01432aae23c35be54070c1a9f5b3.png.400x300_q85_crop.webp)
 
-この機能は、ヴヴェイ市のパリー市、ヌーシャテルの共和国と広州によって資金提供されました
+この機能は、République et canton de Neuchâtel, Ville de Pully, Ville de Veveyによって資金提供されました
 
-This feature was developed by [Matthias Kuhn](http://opengis.ch)
+この機能は [Matthias Kuhn](http://opengis.ch) によって開発されました
 ## デジタイズ
 ### 機能: 設定可能なラバーバンドカラー
 これで、デジタル化に使用するゴムバンドの幅と色を設定できるようになりました。
 
 ![image45](images/entries/40ef6c2f93c7697133ebede324fe9dafe40f42f0.png.400x300_q85_crop.webp)
 ### 機能: トレースデジタイジングツール
-新しいトレースデジタイジングツールは、高度なデジタイジングツールです。このツールを使用すると、別のレイヤーの地物をトレースして、あるレイヤーの地物をデジタイズすることができます。
+新しいトレースデジタイズツールは、高度なデジタイズツールのひとつです。このツールを使用すると、あるレイヤーの地物を別のレイヤーの地物をトレースすることでデジタイズすることができます。
 
 トレースツール：
-- uses Dijkstra's shortest path algorithm to find traceable routes
+- トレース可能な経路を見つけるためにダイクストラの最短経路アルゴリズムを使います
 - 複数の異なる機能にわたってルートをトレースできます
-- 高度なデジタイザツール（例えば、再構成）で使用できます。
-- キーボードの** T **を押してデジタル化している間に有効または無効にすることができます
+- 高度なデジタイズツール（例えば、再構成）で使用できます。
+- キーボードの** T **を押してデジタイズしている間に有効および無効にすることができます
 - 高速で使いやすい
 
 You can read more about this feature [here](http://www.lutraconsulting.co.uk/blog/2016/02/16/qgis-trace-digitising/) and with [this tutorial](http://www.lutraconsulting.co.uk/products/autotrace/TraceDigitising).
@@ -439,7 +439,7 @@ You can read more about this feature [here](http://www.lutraconsulting.co.uk/blo
 
 ![image46](images/entries/357ff84cf7685a2686a019ebe42f0012b495f79a.png.400x300_q85_crop.webp)
 
-This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](http://www.lutraconsulting.co.uk) によって開発されました
 ## ラベリング
 ### Feature: \"Cartographic\" placement mode for point labels
 この配置モードでは、理想的な地図配置ルールに従ってポイントラベル候補が生成されます。たとえば、ラベル配置は次の順序で優先順位付けされます。
@@ -460,7 +460,7 @@ This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.u
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: シンボル境界からのラベルまでの距離の使用
 この設定が有効な場合、ラベルの距離は、ポイント自体ではなくポイントのレンダリングされたシンボルの境界から適用されます。これは、シンボルサイズが固定されていない場合、たとえばデータ定義サイズで設定されている場合や、分類されたレンダラで異なるシンボルを使用している場合に特に便利です。
 
@@ -470,7 +470,7 @@ This feature was developed by [Nyall Dawson](http://nyalldawson.net)
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: ラベル描画順序の制御
 A new control for setting a label\'s \"z-index\" has been added to the labeling properties dialog. This control (which also accepts data-defined overrides for individual features) determines the order in which labels are rendered. Label layers with a higher z-index are rendered on top of labels from a layer with a lower z-index.
 
@@ -484,7 +484,7 @@ A new control for setting a label\'s \"z-index\" has been added to the labeling 
 
 ![image55](images/entries/52f3e941b047714fbaf81adc7a226e4808a82d09.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能：描画されたシンボルを地物ラベルにて認識が可能に
 以前は、ポイント地物自体がラベル候補の障害として扱われていました。ポイントに大きなシンボルまたはオフセットシンボルが使用された場合、障害物コストを発生させることなくラベルにこのシンボルが重なることが許可されました。
 
@@ -494,7 +494,7 @@ This feature was developed by [Nyall Dawson](http://nyalldawson.net)
 
 この機能は、Uster City
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ## レイヤ凡例
 ### 機能: 複数の選択レイヤやレイヤグループへのスタイル貼り付けが可能に
 この機能により、1つのレイヤーのスタイルをレイヤーグループまたは選択したレイヤーに貼り付けることができます。
@@ -511,7 +511,7 @@ This feature was developed by [Nyall Dawson](http://nyalldawson.net)
 
 This feature was funded by [Agence de l\'Eau Adour-Garonne (Adour-Garonne Water Agency)](http://www.eau-adour-garonne.fr)
 
-This feature was developed by [Hugo Mercier / Oslandia](http://oslandia.com)
+この機能は [Hugo Mercier / Oslandia](http://oslandia.com) によって開発されました
 ## マップコンポーザー
 ### 機能: 凡例項目の新しいフィルタリングオプション
 これにより、凡例要素をフィルタする2つの新しいオプションが導入されます。
@@ -522,7 +522,7 @@ This feature was developed by [Hugo Mercier / Oslandia](http://oslandia.com)
 
 ![image58](images/entries/cf32cc889370df205de51af684c4e683c3ec2dc4.png.400x300_q85_crop.webp)
 
-This feature was developed by [Hugo Mercier (Oslandia)](http://oslandia.com/)
+この機能は [Hugo Mercier (Oslandia)](http://oslandia.com/) によって開発されました
 ### 機能: コンポーザテンプレートへのパスの追加
 You can now define custom paths that should be used for QGIS to find composer templates. This means that you can for example put a bunch of templates in a network share and give your users access to that folder in addition to the local ones that exist on their own system. To manage the composer template search paths, look in `Settings -> Options -> Composer`
 
@@ -565,7 +565,7 @@ It is possible - and desired - that more tests are added. You can read more abou
 
 This feature was funded by [The QGIS Project](https://www.qgis.org)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能: ツールボックスの改善
 簡素化されたインターフェイスが削除され、新しい使いやすい管理システムのシステムが追加されました。アルゴリズム検索機能は、現在アクティブではないプロバイダを検索し、アクティブにすることを提案します。
 
@@ -643,7 +643,7 @@ Additionally, QgsFeatureRequest now supports setting ordering for returned featu
 
 This feature was funded by [ARPA Piemonte](http://www.arpa.piemonte.gov.it/)
 
-This feature was developed by [Alessandro Pasotti (ItOpen)](http://www.itopen.it)
+この機能は [Alessandro Pasotti（ItOpen）](http://www.itopen.it)
 ### 機能: 新しい PyQGIS クラスの追加（v2.14）
 ### 新しいコアクラス
 - [QgsAttributeEditorElement](https://qgis.org/api/classQgsAttributeEditorElement.html)
@@ -707,7 +707,7 @@ This feature was developed by [Alessandro Pasotti (ItOpen)](http://www.itopen.it
 
 `STARTINDEX` can be used to skip some features in the result set and in combination with `MAXFEATURES` provides for the ability to use WFS GetFeature to page through results. Note that `STARTINDEX=0` means start with the first feature, skipping none.
 
-This feature was developed by [3Liz](http://3liz.com)
+この機能は [3Liz](http://3liz.com) によって開発されました
 ### Feature: GetLegendGraphic の showFeatureCount
 Add non-standard parameter **showFeatureCount** to add feature count in the legend. To activate it,**showFeatureCount** can be set to *TRUE* or *1*.
 
@@ -715,7 +715,7 @@ Add non-standard parameter **showFeatureCount** to add feature count in the lege
 
 ![image72](images/entries/95f13aa3a1f4cb4ca8cbf7ce30e6bb278e6b9cd8.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+この機能は [3Liz](http://3liz.com) によって開発されました
 ### 機能: タイルエッジの不自然さの除去
 ![image73](images/entries/1ded32aa2bb962fde1b9f00b891b2a04406be621.png.400x300_q85_crop.webp)
 ### 機能: プロジェクトプロパティでの設定チェッカー
@@ -730,7 +730,7 @@ QGISサーバー用のプロジェクトの設定を支援するために、プ�
 
 This feature was funded by [Ifremer](http://wwz.ifremer.fr/institut_eng/)
 
-This feature was developed by [3Liz](http://3liz.com)
+この機能は [3Liz](http://3liz.com) によって開発されました
 ### 機能: WMS INSPIRE ケーパビリティ
 プロジェクトのプロパティでは、以下のことが可能です。
 - INSPIRE機能を有効にする
@@ -741,7 +741,7 @@ WMS 1.3.0の機能は、INSPIRE構成を反映しています。
 
 ![image75](images/entries/4ee445bcb5e9eab3fb9bf2eda8f9b1b81bbe21c0.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+この機能は [3Liz](http://3liz.com) によって開発されました
 ### 機能: レイヤ、グループ、プロジェクトへの略称の追加
 多くの要素に** Name **と** Title **の両方があります。Nameは、マシンツーマシン通信に使用されるテキスト文字列であり、Titleは人間の利益のためのものです。たとえば、データセットにTitle * Maximum Atmospheric Temperature *という記述があり、省略名* ATMAX *を使用して要求することができます。
 
@@ -758,7 +758,7 @@ This feature was developed by [3Liz](http://3liz.com)
 
 ![image76](images/entries/e2345455bda9f0ed3da5e1c2750d6e2239ab8a86.png.400x300_q85_crop.webp)
 
-This feature was developed by [3Liz](http://3liz.com)
+この機能は [3Liz](http://3liz.com) によって開発されました
 ## シンボロジ
 ### 機能: ライン幅変更におけるサイズアシスタント
 ![image77](images/entries/1d891425b0e1b9927ced6aab3e0353aed92608de.png.400x300_q85_crop.webp)
@@ -773,13 +773,13 @@ and
 
 透明性のサポートを可能にする。
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: シンボルレイヤのコピーの簡略化
 A new \"duplicate\" button has been added to the symbol properties dialog, which allows symbol layers to be easily duplicated.
 
 ![image78](images/entries/a6e2ad682852a2fb8b635395ec75f83ef584621d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: 2.5D 表示
 これにより、2.5Dの効果を得るために必要なすべての要素をまとめやすくするための構成インターフェースとレンダラーが追加されます。
 
@@ -787,7 +787,7 @@ This feature was developed by [Nyall Dawson](http://nyalldawson.net)
 
 Since every part of the system is built around QGIS\' internal rendering and symbology engine, there is much to fine tune. To get all the possibilities, just change the renderer to a graduated, categorized or single symbol renderer upon creation and you will find full access to improve the style to your needs.
 
-**この機能は**によって開発されました：
+**この機能は次の方によって開発されました**:
 - Matthias Kuhn at [OPENGIS.ch](https://opengis.ch)
 
 **この機能は**によって資金提供されました：
@@ -812,11 +812,11 @@ This is used by the 2.5D renderer to render features based on their distance fro
 
     layer.getFeatures( QgsFeatureRequest().setOrderBy( 'name' ) ) -- alphabetical by name
     
-**This feature was developed by**: Matthias Kuhn at [OPENGIS.ch](https://opengis.ch) **This feature was funded by**: Regional Council of Picardy, ADUGA, Ville de Nyon, Wetu GIT cc
+**この機能は次の方によって開発されました**: Matthias Kuhn [OPENGIS.ch](https://opengis.ch) **この機能は次の方によって資金提供されました**: Regional Council of Picardy, ADUGA, Ville de Nyon, Wetu GIT cc
 
 ![image80](images/entries/e06cf21a35e070a28ce5b3b98c92f2fb1c1b881d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ### 機能: ジオメトリジェネレータシンボル
 ジオメトリジェネレータシンボルを使用すると、式エンジンを使用してレンダリングする前にジオメトリを変更したり、地物属性に基づいてレンダリングしながら新しいジオメトリを作成することさ
 
@@ -838,7 +838,7 @@ This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 
 この機能は、ピカルディ地域評議会、ADUGA、Ville de Nyon、Wetu GIT cc
 
-This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
+この機能は [Matthias Kuhn, OPENGIS.ch](https://opengis.ch) によって開発されました
 ## ユーザーインタフェース
 ### 機能: 属性テーブルが更新可能に
 属性テーブル内の属性をリロードするオプションが利用可能になりました。
@@ -849,18 +849,18 @@ This feature was developed by [Matthias Kuhn, OPENGIS.ch](https://opengis.ch)
 
 ![image83](images/entries/3159457a414ea61f8f40659af5c9561882a44fe1.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能: レイヤツリーから直接凡例シンボルの編集が可能に
 This adds a new \"edit symbol\" item to the right-click menu for a renderer child legend item (eg categories for the categorised renderer). Selecting it opens a symbol editor dialog which allows for directly editing the class\'s symbol. It\'s much faster than opening the layer properties and going through the style tab. You can also double-click on a child item to open the symbol editor immediately.
 
 ![image84](images/entries/e7b2447e329507f0b27e855111ffa038b1ccc353.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 ### 機能：コンテキストメニューからすべての凡例を表示/非表示
 Allows toggling on/off all the symbol items for categorized/graduated/rule-based layers via the right click menu on an item. Previously you\'d have to toggle each item manually one-by-one.
 
 ![image85](images/entries/c526cf9c28c92dde193490a2707c1fe2e0a58ea6.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson](http://nyalldawson.net)
+この機能は [Nyall Dawson](http://nyalldawson.net) によって開発されました
 
 {{<content-end >}}

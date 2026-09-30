@@ -1,17 +1,15 @@
 ---
-AnnouncementLinkText: 更新履歴を見る
+AnnouncementLinkText: 変更履歴を見る
 AnnouncementText: 新機能・改善点をはじめ、今回のリリースのハイライトをご覧ください。
 AnnouncementTitle: is here!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
 ButtonText: ダウンロード
-HasAnnouncement: true
+HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: Free and Open Source
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: Windows、macOS、Linuxで利用できます。
 draft: false
 heroLogo: img/logosign.svg

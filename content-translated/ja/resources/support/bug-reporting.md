@@ -27,9 +27,9 @@ QGISプロジェクトの各部分について、問題（機能要求やバグ�
 
 ヘルプと質問については [メーリングリスト]({{< ref "community/organisation/mailinglists" >}}) に連絡して下さい。
 ## QGISのアプリケーション上の問題を報告
- QGISアプリケーション（QGIS DesktopおよびQGIS Server）の問題は  [Github](https://github.com/qgis/QGIS/issues) で管理されています。レポートを送信またはコメントするには、アカウント登録とログインが必要です。
+ QGISアプリケーション（QGIS DesktopおよびQGIS Server）のイシューは  [Github](https://github.com/qgis/QGIS/issues) で管理されています。レポートを送信またはコメントするには、アカウント登録とログインが必要です。
 ### 問題を報告する前に
-問題を報告する前に、現在サポートされているバージョン {{< param "ltrrelease" >}}  または  {{< param "release" >}} 、あるいは開発版 {{< param "devversion" >}} を使用していることを確認してください ([リリーススケジュール](({< ref "resources/roadmap#release-schedule" >})) も参照) 。また、重複した報告を避けるため、現在オープンになっている問題も確認してください。既存の問題に追加情報がある場合は、既存のチケットに追記できます。サードパーティプラグインが問題を引き起こす場合もあります。プラグインをインストールしている場合は、それらを無効にした状態でも問題が再現するか確認してください。無関係な複数のバグを1つのバグレポートにまとめて報告しないでください。
+問題を報告する前に、現在サポートされているバージョン {{< param "ltrrelease" >}}  または  {{< param "release" >}} 、あるいは開発版 {{< param "devversion" >}} を使用していることを確認してください ([リリーススケジュール]({{< ref "resources/roadmap#release-schedule" >}}) も参照) 。また、重複した報告を避けるため、現在オープンになっている問題も確認してください。既存の問題に追加情報がある場合は、既存のチケットに追記できます。サードパーティプラグインが問題を引き起こす場合もあります。プラグインをインストールしている場合は、それらを無効にした状態でも問題が再現するか確認してください。無関係な複数のバグを1つのバグレポートにまとめて報告しないでください。
 
 ログイン後、 `New Issue`  ボタンが表示されます。それをクリックし、画面の指示に従ってください。
 
@@ -37,7 +37,7 @@ QGISプロジェクトの各部分について、問題（機能要求やバグ�
 #### バックトレースを作成する
 クラッシュする場合は、そのバグを別のマシン上で再現できないかもしれないので、バックトレースを含めることが有益であるかもしれません。
 
- LinuxではQGISがクラッシュした際、自動的に `gdb` を使用してクラッシュしたプロセスに接続し、バックトレースを生成しようとします。しかし、一部のディストリビューションでは実行中のプロセスへのデバッガー接続が無効化されています。その場合、 `gdb` は次のような役に立たないメッセージのみを出力します:
+LinuxではQGISがクラッシュした際、自動的に `gdb` を使用してクラッシュしたプロセスに接続し、バックトレースを生成しようとします。しかし、一部のディストリビューションでは実行中のプロセスへのデバッガー接続が無効化されています。その場合、 `gdb` は次のような役に立たないメッセージのみを出力します:
 
 QGIS died on signal 11Could not attach to process. If your uid matches the uid of the target process, check the setting of /proc/sys/kernel/yama/ptrace_scope, or try again as the root user. For more details, see /etc/sysctl.d/10-ptrace.conf ptrace: Operation not permitted. No thread selected No stack. gdb returned 0 Aborted (core dumped)
 
@@ -47,9 +47,9 @@ QGIS died on signal 11Could not attach to process. If your uid matches the uid o
 
  一部のディストリビューションではコアダンプの生成も無効化されています。クラッシュ時に `Aborted (core dumped)`  ではなく `Aborted`   のみ表示される場合は、QGIS起動前に `ulimit -c unlimited` を実行する必要があります。ログイン時に常に有効になるよう、`.profile` に追記しておくこともできます。
 
-To produce a backtrace from the core file, start `gdb /path/to/the/qgis/binary core`. The binary is usually `/usr/bin/qgis` or `/usr/bin/qgis.bin` on Debian with the GRASS plugin installed. In `gdb` you run `bt` which will produce the backtrace.
+コアファイルからバックトレースを生成するには `gdb /path/to/the/qgis/binary core` を開始します。バイナリは、通常GRASSプラグインのインストールされたDebianの `/usr/bin/qgis` または `/usr/bin/qgis.bin` にあります。 `gdb` では `bt` を実行しバックトレースを生成します。
 #### Windows上でのログ出力
-The nightly build in [OSGeo4W](https://trac.osgeo.org/osgeo4w) (package qgis-dev) is built with debugging output, that you can view with [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview). If the problem is not easy to reproduce, the output might shed some light about where QGIS crashes.
+[OSGeo4W](https://trac.osgeo.org/osgeo4w) （パッケージQGIS-dev）にあるナイトリービルドはデバッグ出力付きでビルドされており、 [DebugView](https://docs.microsoft.com/en-us/sysinternals/downloads/debugview) で見ることができます。問題を再現することが容易でない場合、この出力がQGISがクラッシュした場所についての何らかの手掛かりになることがあります。
 ## QGISウェブサイトやマニュアルの問題点を報告
 QGISプロジェクトでは、 [活発なWebサイト](https://qgis.org) と [充実したドキュメント](https://qgis.org/en/docs/index.html) を提供しています。私たちの努力にもかかわらず、古い情報、誤った記述や不明瞭な記述、または不足している情報を見つけた場合は、遠慮なくご報告ください。
 
@@ -67,13 +67,13 @@ QGISプロジェクトでは、 [活発なWebサイト](https://qgis.org) と [�
 
 終了するときに **Submit new issue** をクリックして下さい。
 
-Note
+注意
 
 Webサイトの各ページ下部に `Fix me` リンクが設置されており、そのページを直接修正してプルリクエストを送信することができます。
 
 このオプションは、ドキュメントのフッターにも使用可能です。
 ## プラグインの問題を報告する
- QGISのプラグインのほとんどは、公式の [QGISプラグインリポジトリ](https://plugins.qgis.org/plugins/) で公開されています。それらに関するバグ報告や機能リクエストは、**必ず** それぞれのバグトラッキングシステムで行ってください：
+QGISのプラグインのほとんどは、公式の [QGISプラグインリポジトリ](https://plugins.qgis.org/plugins/) で公開されています。それらに関するバグ報告や機能リクエストは、**必ず** それぞれのバグトラッキングシステムで行ってください：
 - QGISリポジトリで公開されているプラグインには、メタデータにバグトラッカーへのリンクが含まれています。見つからない場合は、プラグインのドキュメントで該当するバグトラッキングシステムのアドレスまたは連絡先となる開発者を確認してください。
   
   情報が見つからない場合は、 [開発者メーリングリスト](https://lists.osgeo.org/mailman/listinfo/qgis-developer) にご報告ください。
@@ -83,7 +83,7 @@ Webサイトの各ページ下部に `Fix me` リンクが設置されており�
 問題の報告に加えて、問題の修正にも貢献することができます。問題の修正はGitHubのプルリクエストを通じて行います。貢献したい  [リポジトリをフォーク](https://help.github.com/articles/working-with-forks/) し、以下の場所にプルリクエストを送信してください:
 - QGIS デスクトップまたはQGIS サーバーアプリケーションについて https://github.com/qgis/QGIS
 - https://qgis.org でのウェブサイトについて https://github.com/qgis/QGIS-Website 
-- https://github.com/qgis/QGIS-Documentation で入手可能なドキュメントの https://docs.qgis.org
+- https://docs.qgis.org で入手可能なドキュメントについて https://github.com/qgis/QGIS-Documentation
 
 パッチやプルリクエストをQGISプロジェクトにスムーズに取り込んでもらうためのガイドラインが [プルリクエストの送信方法](https://docs.qgis.org/testing/en/docs/developers_guide/git.html#submitting-pull-requests) に記載されています。 より詳しくは  [開発プロセス](https://docs.qgis.org/testing/en/docs/developers_guide/git.html)  の章もご参照ください。
 

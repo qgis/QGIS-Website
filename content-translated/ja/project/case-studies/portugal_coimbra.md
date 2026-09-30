@@ -17,7 +17,7 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>July 01, 2014</span>
+  <span>2014年7月1日</span>
 </p>
 
 This case study results from the final draft of the Graduate Geographic Information Systems taught by GeoPoint. We proposed to study a landscape using Landscape Ecology plugin (LecoS) in QGIS 2.01 Dufour. The study was conduted in a region of central Portugal, Municipality of Coimbra, with an total area of 31940ha and it has geographic coordinates 40°12\'11.84\" North, 8°24\'37.15\" West. Because the new administrative reorganization this municipality are divided into 18 parishes, which are mostly urban areas (Figure 1).

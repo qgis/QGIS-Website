@@ -17,23 +17,23 @@ type: page
 ### Learn QGIS - Fifth Edition (Early Access)
 Learn QGIS (5th Edition)” は、学生や専門家を対象に、QGISとPythonを用いた現代的なGIS分析の実践的な入門書を提供します。地球観測、モバイルデータ収集、GISにおけるAIと機械学習の統合といった内容を網羅し、同時にデータのセキュリティや倫理的な側面についても触れています。
 - [https://www.packtpub.com/en-de/product/learn-qgis-9781836203308](https://www.packtpub.com/en-de/product/learn-qgis-9781836203308)
-- Authors: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
-- Date: March 2026
+- 著者: Eugenia Sarafova, Ivan Ivanov, Andrew Cutts, Anita Graser
+- 日付: 2026年3月
 
 ### Spatial Analysis of Gender Based Work Force in India Using QGIS
 A Comparative Study Of Village Level Census Data For Three Districts Of Cachar, Karimganj, Hailakandi In Assam State, North East India, For The Years 1991, 2001, And 2011
 - [https://www.gyanbooks.com/](https://www.gyanbooks.com/index.php?p=sr&format=fullpage&Field=bookcode&String=1111036579312&Book=SPATIAL%20ANALYSIS%20OF%20GENDER%20BASED%20WORK%20FORCE%20IN%20INDIA%20USING%20QGIS%20A%20comparative%20study%20of%20vil..)
-- Author: Dr. Pulak Das & Dr. Pinki Purkayastha
-- Date: December 2024
+- 著者: Dr. Pulak Das & Dr. Pinki Purkayastha
+- 日付: 2024年12月
 
 ### QGIS for Ecologists
-An Introduction to Mapping for Ecological Surveys
+生態調査のためのマッピング入門
 - [https://pelagicpublishing.com/products/qgis-for-ecologists](https://pelagicpublishing.com/products/qgis-for-ecologists)
-- Author: Stephanie Kim Miles
-- Date: October 2024
+- 著者: Stephanie Kim Miles
+- 日付: 2024年10月
 
 ### Collecting Field Data with QGIS and Mergin Maps
-Learn to master the Mergin Maps platform to collect, share and manage your field data.
+Mergin Maps プラットフォームを駆使して、フィールドデータの収集、共有、管理を行う方法を学びましょう。
 - [https://locatepress.com/book/mergin-maps](https://locatepress.com/book/mergin-maps)
 - 著者: Kurt Menke と Alexandra Bucha Rasova
 - 日付:  2024年9月
@@ -246,16 +246,16 @@ The book is prepared like the series “for Dummies”.
 ### Descubriendo QGIS 3.x
 Esta segunda edición es una actualización importante del título original Discover QGIS 3.x (English). Todos los ejercicios han sido actualizados para ser compatibles con QGIS 3.26. Los temas abarcan la interfaz de QGIS, conceptos básicos de SIG, análisis espacial, modelado, creación y edición de datos, diseño cartográfico y visualización de datos.Con mejoras en el procesamiento, flujos de trabajo más eficientes, compatibilidad con datos de nubes de puntos, desarrollo del Controlador Temporal y opciones de simbología mejoradas, ¡es un momento emocionante para aprender QGIS!
 - [https://locatepress.com/book/dq32-es](https://locatepress.com/book/dq32-es)
-- Author(s): Kurt Menke, Carlos Lopez, Sofia Logan
+- 著者: Kurt Menke, Carlos Lopez, Sofia Logan
 - Organization: Locate Press
-- Date: June 2025
+- 日付: 2025年6月
 
 ### QGIS Exercise Guide: beginner, intermediate, and advanced Levels
 Three practical exercise guides in QGIS (beginner, intermediate, and advanced) designed for the management and analysis of geospatial data from the Servicio Geológico Colombiano using free and open-source software solutions.
 - [https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx](https://www2.sgc.gov.co/Publicaciones/Cientificas/Paginas/Guias-QGIS.aspx)
-- Author(s): Samuel Mesa, Jaime Garzón, Luis Salas
+- 著者: Samuel Mesa, Jaime Garzón, Luis Salas
 - Organization: Servicio Geológico Colombiano
-- Date: December 2024
+- 日付: 2024年12月
 
 ## トルコ語
 ### Geological Applications with Open Source Coded Geographic Information Systems

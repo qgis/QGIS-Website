@@ -12,47 +12,47 @@ type: case-study
 
 ---
 {{<content-start >}}
-# QGIS to describe the Cesena\'s Wall
+# チェゼーナの壁を描くQGIS
 <p class="is-size-6 is-italic has-text-weight-medium">
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>October 30, 2015</span>
+  <span>2015年10月30日</span>
 </p>
 
-「eキャンパス大学」はオンライン大学として作成され、2006年1月30日の省令により、MIUR（イタリア文部科学省）によって認可されました。それは労働市場に貢献するため、若い人、専門家、起業家、経営幹部およびビジネスおよび文化関係者.に対してeラーニングプラットフォームを通じた大学へのアクセスを提供する目的で形成されました。本部は、ミラノ国際キャンパスとしても、またはノヴェドラーテキャンパスとして知られていますが、ノヴェドラーテ（コモ、イタリア）の元IBMのトレーニングセンターの中、静かな緑のブリアンツァ中のあるキャンパスに位置しています。
+「eキャンパス大学」はオンライン大学として創設され、MIUR（イタリア文部科学省）の2006年1月30日の省令により認可されました。それは労働市場に貢献するため、若者、専門家、起業家、経営幹部並びにビジネス及び文化関係者に対してeラーニングプラットフォームを通じた大学へのアクセスを提供する目的で作られました。ミラノ国際キャンパスとしても知られる本部、ノヴェドラーテキャンパスは、元ノヴェドラーテ（コモ、イタリア）IBM訓練センターの中の、静かな緑のブリアンツァにあるキャンパスに位置しています。
 
-大学は5つの仮想学部を持っています：エンジニアリング、経済学、心理学、芸術、法律。古地図とQGISプロジェクト　城壁はチェゼーナの街を特徴づけます。そのサソリ形状が新しくゾーンからの歴史的な中心部を分割します。
+大学には、エンジニアリング、経済学、心理学、芸術、法律の5つの仮想学部があります。古地図とQGISプロジェクト　城壁はチェゼーナの街を特徴づけています。そのサソリ型の形状が新しいゾーンから歴史的な中心部を分けています。
 
-歴史的地図製作の文書は、その進化とその破壊を記述する。QGISプログラムは、それが地理参照プラグインで、同じ基準システム内のすべての地図を転送することを可能にするので、私は、別の古地図を比較できます。参考としてオープンレイヤのグーグルサテライトとオープンレイヤのオープンストリートマップは、すべての歴史的な参照系EPSG:3857（ウェブメルカトルまたは疑似メルカトル）に地図を参照するために使用されています。
+歴史的地図製作の文書は、その進化とその破壊を記述しています。QGISプログラムは、ジオリファレンスプラグインを使って全ての地図を同じ参照系に映しかえることができるので、別々の古地図を比較することができます。参考ですが、全ての古地図を参照系 EPSG:3857（ウェブメルカトルまたは疑似メルカトル）に参照させるため、オープンレイヤのグーグルサテライトとオープンレイヤのオープンストリートマップが使用しました。
 
-QGISは、基本的なツールは、分析し、手の込んだ、私は、道路、建物、公園や庭園、城壁、古代の要塞塔、古代都市の門などの地図のoftheすべての要素を、記憶しているベクターレイヤーまたはシェープファイルを介して、これらの地理参照地図を比較することでした。私はpuntual、線形および多角形のレイヤーを使用しました。私は分析、研究、ジオプロセシング、ジオメトリデータ管理ツールを使用してこれらのレイヤーを比較しました（図1）。
+QGISは、これらのジオリファレンスした地図を推敲し、分析し、比較するためになくてはならないツールであり、道路、建物、公園や庭園、城壁、古代の要塞塔、古代の城門などの地図のすべての要素をベクターレイヤーまたはシェープファイルを使って記録しました。ポイント、ライン、ポリゴンレイヤーが使われ、分析、調査、ジオプロセシング、ジオメトリ、データ管理ツールを使用してこれらのレイヤーを比較しました（図1）。
 
 <figure>
 <img src="../images/italy_cesena1.png" style="width:100.0%" alt="italy_cesena1.png" />
-<figcaption>Fig. 1 Concept Map of the QGIS project</figcaption>
+<figcaption>図1 このQGIS プロジェクトの概念マップ</figcaption>
 </figure>
 
 このツールを使用して、私は以下の情報を得ました：
-- The precision of the Leonardo Da Vinci\'s topographic survey, realized in 1502, such as how many points of this survey are correct (Fig. 2);
-- The Cesena Wall\'s Development from the Roman Age to the 15th Century;
-- The Cesena Wall\'s Demolitions from the 19th Century to the Early 20th Century;
+- 1502年に実施したレオナルド・ダ・ヴィンチの地形調査の精度（いくつの調査地点が正しいかなど）（図2）
+- ローマ時代から15世紀までのチェゼーナの壁の造成
+- 19世紀から20世紀初頭までのチェゼーナの壁の破壊
 - 城壁の形態変化、例えば古代の要塞塔とその古代の城門の解体。
-- The Cesena\'s Urban Progress from the 16th Century to the Present;
+- 16世紀から現在までのチェゼーナの都市化
 
 <figure>
 <img src="../images/italy_cesena2.png" style="width:100.0%" alt="italy_cesena2.png" />
-<figcaption>Fig. 2: Openlayer Google Satellite overlapped by the informations recorded in different layers: the present City Wall in black, the Leonardo Da Vinci's topographic survey of the City Wall in orange, the Leonardo Da Vinci's points of survey in yellow and the present ancient City Gates in red.</figcaption>
+<figcaption> 図2：オープンレイヤグーグルサテライトに異なるレイヤに記録された情報を重ね合わせたもの: 黒は現在の城壁、オレンジはレオナルド・ダ・ヴィンチによる城壁の地形調査、黄色はレオナルド・ダ・ヴィンチによる調査地点、赤は現在の古代城門 </figcaption>
 </figure>
 
-たくさんのQGISツールがあり、私はこれらを使って次のように作成しました。
-- 現在の城壁の線状レイヤの各セクションを写真につなぐリンク。実際の保存状態を表します。
-- 19世紀のチェゼーナの写本を印刷作家に渡したもの。
+たくさんのQGISツールのうちのいくつかを使って次のものを作成しました:
+- 現在の城壁のラインレイヤの各セクションを実際の保存状態を表す写真につなぐリンク；
+- プリントコンポーザを使った19世紀のチェゼーナの地図
 - qgis2threejsプラグインを使用したチェゼーナの3Dモデル（図3）
 
 <figure>
 <img src="../images/italy_cesena3.png" style="width:100.0%" alt="italy_cesena3.png" />
-<figcaption>Fig. 3: The 3D model of the present City Wall and Cesena's buildings inside and outside the Wall. The ancient fortified towers and the ancient City Gates are indicated.</figcaption>
+<figcaption> 図3：現在の城壁と壁の内外のチェゼーナの建物の3Dモデル。古代の要塞塔と古代の城門が示されています。 </figcaption>
 </figure>
 
 ## 結論
@@ -70,6 +70,6 @@ QGISは、基本的なツールは、分析し、手の込んだ、私は、道�
 - \"La cartografia dall\'antichità fino al XVIII secolo\", Carlo Monti, Maggioli Editore, 2011
 
 ## 著者
-Camilla Fabbri has a bachelor\'s degree in Civil and Environmental Engineering. She has developed her dissertation on historical cartography of the Cesena Wall using the QGIS program with the Supervisor Alessandra Borghi, who is the University Teacher of Topography and Theoretical Mechanics of the bachelor\'s degree in Civil and Environmental Engineering in the eCampus University.
+カミラ・ファブリは土木環境工学の学士号の保持者です。彼女は監修者のアレッサンドラ・ボルギ（eCampus 大学土木環境工学学部の地形と理論力学の大学教師）と共に QGIS プログラムを使用してチェゼーナの壁の歴史地図作成についての彼女の論文を作成しました。
 
 {{<content-end >}}

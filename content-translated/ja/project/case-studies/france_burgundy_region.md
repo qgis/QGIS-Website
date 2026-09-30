@@ -34,29 +34,29 @@ An interdisciplinary group of researchers based at the University of North Carol
 
 <figure>
 <img src="../images/france_burgundy2.jpg" class="align-left" alt="france_burgundy2.jpg" />
-<figcaption>A view of our project QGIS database. At right is the eVis GPS ground photo and data of a recently drained pond dating back at least to 1834. In the GIS image at center top you can see the location of the pond as a yellow dot. Red dots show other eVis ground photos of mills and other historical or archaeological sites.</figcaption>
+<figcaption>私たちのプロジェクトのQGISデータベースのビュー。右側にはEVIS GPS地上の写真と、少なくとも1834年にさかのぼって最近排水池のデータ。GISの画像で中央上には黄色の点として、池の場所を見ることができます、赤点は、工場や他の歴史や遺跡の他のEVIS地上の写真を示しています。</figcaption>
 </figure>
 
 ## 結論
-Our project started using GRASS in 1986, and has continued to use this, as well as commercial ArcGIS and a variety of other tools such as Photoshop, Garmin's BaseCamp, eVis and others. With many collaborators at various institutions in the US and Europe, and graduate students coming and going, using free and open source tools makes a lot of sense. We have found that the combination of QGIS and GRASS provides capable data analysis and visualization, ease of use, interoperability, and portability for our project. Archaeologists have had a strong presence in the GRASS and open source GIS communities for many years, and have contributed much to this important effort, developing and sharing many capabilities. I have taught several 4-day QGIS/GRASS/R short courses in France over the years, sharing these tools with many archaeologists from throughout France.
+私たちのプロジェクトはGRASSを使って1986年に開始し、これだけでなく、商用のArcGISや、フォトショップ、ガーミンBaseCamp、EVISなどのような他のさまざまなツールを使用し続けています。多くの米国やヨーロッパの様々な機関で協力者、および大学院生が出入りしているので、フリーでオープンソースツールを使用することはたいへん理にかなっています。私たちは、QGISとGRASSの組み合わせは、私たちのプロジェクトのために可能なデータ解析と可視化、使いやすさ、相互運用性、および可搬性を提供することを見出しました。考古学者はGRASSとオープンソースGISコミュニティで長年にわたって強い存在感を持っていて、多くの機能を開発し共有することでこの重要な取り組みに大きく貢献しました。私は長年にわたってフランス国内でいくつかのQGIS / GRASS / Rの4日間短期講習を教えていて、フランス全土から多くの考古学者とこれらのツールを共有してきました。
 
-Our research will continue to explore the long-term history of the inhabitants' relationship with this landscape and we will expand our work beyond our current focus on mills and ponds to include changing patterns of forests, pastures and meadows, croplands and former vineyards in the area.
+私たちの研究では、この景観と住民の関係の長期的な歴史を探求していくつもりで、現在の水車小屋や池に焦点を当てた研究の範囲を広げ、この地域の森林、牧草地や草地、耕作地、かつてのブドウ畑の変遷についても対象に含めていきます。
 
 <figure>
 <img src="../images/france_burgundy3.jpg" class="align-left" alt="france_burgundy3.jpg" />
-<figcaption>From top left going clockwise: Some of the local Charolais cattle, doing ethnographic interviews with local farmers, a GIS map showing forest change from 1759 to 1983, and a book of Uxeau 1791 cadastral tax records. In the center is a color 1759 Cassini map of the area.</figcaption>
+<figcaption>左上から時計回りに：ローカルシャロレー種のいくつか、地元農家と民族誌のインタビュー中、1759年から1983年への森林の変化を示すGIS地図、および1791年のUxeauの地籍納税記録の本。中心はこの地域の1759年の色付カッシーニの地図です。</figcaption>
 </figure>
 
 ## 連絡先
-- Project website: <http://burgundylandscapes.com> with more information and online publications.
-- Dr. Scott Madry: <http://scottmadry.web.unc.edu> or email: madrys 'at' email.unc.edu
+- プロジェクトのウェブサイト： <http://burgundylandscapes.com> 詳細とオンライン出版物あり。
+- Scott Madry博士： <http://scottmadry.web.unc.edu> または email: madrys 'at' email.unc.edu
 
 ## 著者
 <figure>
 <img src="../images/france_burgundy4.png" class="align-left" height="220" alt="france_burgundy4.png" />
-<figcaption>Jones, Tickner and Madry doing field work</figcaption>
+<figcaption>野外作業をする Jones, Tickner and Madry</figcaption>
 </figure>
 
-This article was contributed in August 2013 by Dr. Scott Madry. He is a research associate professor in the Curriculum in Archaeology at the University of North Carolina at Chapel Hill's Research Laboratories of Archaeology. He is on the faculty of the International Space University in Strasbourg, France, and is a chercheur associé du Laboratoire Archéologie et Territoires de l\'UMR 7324 CITERES, Université François-Rabelais/CNRS. This research project is conducted collaboratively with Dr. Elizabeth A. Jones, historical anthropologist (UNC), Dr. Amanda B. Tickner, paleoethnobotanist (UNC) and Dr. D. Seth Murray, ethnographer and oral historian (NCSU).
+この記事は、スコット・マドリー博士によって2013年8月に寄稿されました。博士は考古学のチャペルヒルの研究所ノースカロライナ大学で考古学におけるカリキュラムの研究准教授です。またストラスブール、フランスの国際宇宙大学の教員であり、そしてchercheurアソシエ・デュ・ラボラトリー考古学らTerritoiresドゥUMR 7324 CITERES、大学フランソワ・ラブレー/ CNRSです。この研究プロジェクトは博士エリザベスA.ジョーンズ、歴史人類学者（UNC）、博士アマンダ・B・ティックナー、paleoethnobotanist（UNC）博士D.セス・マレー、民族誌学者および経口歴史（NCSU）と共同で実施されます。
 
 {{<content-end >}}

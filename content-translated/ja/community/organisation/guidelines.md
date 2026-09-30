@@ -25,19 +25,19 @@ This page aims to provide you with all the information and resources you need to
 
 QGIS trademarks, service marks, logos and designs, as well as other works of authorship that are eligible for copyright protection (collectively termed “Marks”) are valuable assets that QGIS.ORG needs to protect. QGIS.ORG does not permit all uses of QGIS Marks. QGIS.ORG provides these Trademark Usage Guidelines (“Guidelines”) to assist you in properly using our Marks in the specific cases that we do permit. The strength of our Marks depends, in part, upon consistent and appropriate use. We ask that you properly use and credit our Marks in accordance with these Guidelines. We reserve the right to change these Guidelines at any time solely at our discretion.
 
-These Guidelines should be followed along with all QGIS’s rules and policies, posted on QGIS.ORG website or otherwise.
+これらのガイドラインは、QGIS.ORG の Web サイトまたはその他のサイトに掲載されているすべての QGIS の規則および方針に従う必要があります。
 ## ユーザーグループ
-QGIS.ORG permits official [QGIS user groups]({{< ref "/community/groups" >}}), to modify the QGIS logo and use the modified QGIS logo for non-commercial communications and projects. This permission is subject to continued compliance with these Guidelines, QGIS Trademark Guidelines and all other rules and policies. QGIS reserves the right to cancel or change this permission at any time at its sole discretion. If you would like to use a modified version of the QGIS logo, please submit your artwork for approval at trademark@qgis.org. Upon approval, you will receive a license agreement to sign before you may begin using the artwork.
+QGIS.ORGは、公式 [QGISユーザーグループ]({{< ref "/community/groups" >}}) に、QGIS ロゴを修正し、変更した QGIS ロゴを非営利のコミュニケーションやプロジェクトに使用することを許可します。この許可は、これらのガイドライン、QGIS 商標ガイドライン、およびその他すべての規則および方針への継続的な準拠の対象となります。QGIS は、独自の判断でいつでもこの許可を取り消しまたは変更する権利を留保します。QGIS ロゴの変更版を使用したい方は、承認のために trademark@qgis.org へご自分の作品を提出してください。承認されると使用許諾契約書が届き、署名するとその作品の使用を始めることができます。
 
-QGIS.ORG also permits official user groups, to register a QGIS Top Level Domain (e.g. qgis.ch, qgis.dk etc.) according to the rules further down in this document.
+QGIS.ORG はまた、この文書の下にある規則に従って、公式のユーザーグループが QGIS トップレベルドメイン（qgis.ch、qgis.dk など）を登録することを許可します。
 ## 許可を必要としない使用例
 公正使用の場合、QGIS.ORGからの明確な許可なしにQGISの商標を使用または参照できます。以下はそのような許可された使用法の例です：
-* **Books, articles, tutorials**: If you write articles, books, blog articles, tutorials, study materials for university, and similar, you do not need a permission to cite QGIS name and use the logo in the content you produce.
+* **書籍、記事、チュートリアル** ：記事、書籍、ブログの記事、チュートリアル、大学の学習教材などを書く場合、あなたが作成するコンテンツの中に QGIS の名前を引用したり、そのロゴを使用する許可は必要ありません.。
 
 {{<rich-box-start icon="💭" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 We require you to **give attribution** to the QGIS project and reference the project website somewhere in your book, article, etc. This could be a short paragraph in the Introduction or Preface. Avoid anything that may give the impression that your work is an official QGIS product.
 
 {{<rich-content-end >}}
@@ -48,7 +48,7 @@ We require you to **give attribution** to the QGIS project and reference the pro
 {{<rich-box-start icon="💭" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 QGISはフリーでオープンソースのソフトウェアであることを教材中で定期的に説明してください。そして直接または間接的に誰かがプロジェクトに貢献することを積極的に奨励してください。
 
 {{<rich-content-end >}}
@@ -64,7 +64,7 @@ Some uses of our trademark require the user to obtain permission. If you need pe
 {{<rich-box-start icon="💭" layoutClass="tips" >}}
 
 {{<rich-content-start themeClass="coloring-1" >}}
-##### Note
+##### 注意
 Obtaining permission is not a formal endorsement of your QGIS related project and doesn’t constitute a statement on the quality of your service.
 
 {{<rich-content-end >}}
@@ -133,21 +133,9 @@ QGIS does not permit using any of our Marks in the following manner:
 
 {{<rich-content-start themeClass="coloring-1" >}}
 
-**Q:** _When do I have to show proper attribution?_
+**Q：** _どのようなときに適切な帰属表示をする必要がありますか？_
 
-**A：** 印刷物、インターネット、またはオーディオ放送で用語QGISを使用するときは、常にQGISプロジェクトに適切な帰属を与えてください。詳細については、「商標の帰属」を参照してください。
-
-{{<rich-content-end >}}
-
-{{<rich-box-end >}}
-
-{{<rich-box-start >}}
-
-{{<rich-content-start themeClass="coloring-1" >}}
-
-**Q:** _I am registering or have registered a trademark with my country’s trademark authority. Do I still need a permission?_
-
-**A:** Yes, assuming your trademark includes the element QGIS and it is being used in connection with software-related goods and services. Please note, the permission applies to the QGIS trademark whether or not they are registered with a trademark authority. If you are using the term QGIS as a trademark (whether or not registered), you need to apply for a permission.
+**A：** 印刷物、インターネット、またはオーディオ放送で用語 QGIS を使用するときは、いついかなるときでも常にQGISプロジェクトへの適切な帰属表示をしてください。詳細については、「商標の帰属」を参照してください。
 
 {{<rich-content-end >}}
 
@@ -157,7 +145,19 @@ QGIS does not permit using any of our Marks in the following manner:
 
 {{<rich-content-start themeClass="coloring-1" >}}
 
-**Q:** _I am a commercial entity (for example, a company, partnership or sole proprietor, profit or non-profit) selling software-related goods or services and using the word “QGIS” in the entity’s name. Do I need to apply for a permission?_
+**Q：** _私は商標を自分の国の商標機関に登録中または登録しています。なおも許可が必要ですか？_
+
+**A：** はい。ただしあなたの商標に QGIS という要素が含まれており、かつソフトウェア関連の商品やサービスに関連して使用されている場合に限ります。この許可は、QGISの商標が商標機関に登録されているか否かを問わず適用されます。商標としてQGISという用語を使用している場合（登録されているかどうかにかかわらず）、許可を申請する必要があります。
+
+{{<rich-content-end >}}
+
+{{<rich-box-end >}}
+
+{{<rich-box-start >}}
+
+{{<rich-content-start themeClass="coloring-1" >}}
+
+**Q：** _私は商業団体（例えば、会社、パートナーシップ、または個人事業主、営利もしくは非営利団体）で、ソフトウェア関連の商品やサービスを販売し、その企業の名前の中に「QGIS」という語を使用しています。許可を申請する必要がありますか？_
 
 **A:** Using QGIS in the entity’s name is not permitted because you are using QGIS as part of a trademark in connection with software-related goods or services. Software-related goods are computer programs and systems, or packages bundling software with tools, utilities, hardware, etc. Software-related services are services that deploy, document, facilitate the use of, or enhance computer programs and systems. Even if you don’t use QGIS as part of the entity’s name, if the entity has a product or service (whether sold or given away for free) that uses “QGIS” in its name, you still need a permission for the use of the word QGIS in the name of the products or services.
 

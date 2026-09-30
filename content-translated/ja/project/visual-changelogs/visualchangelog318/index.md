@@ -14,17 +14,17 @@ type: visual-changelog
 
 リリース日: 2021-02-19
 
-Following on from the feature-filled releases of [QGIS 3.14](https://qgis.org/en/site/forusers/visualchangelog314/) and [QGIS 3.16](https://qgis.org/en/site/forusers/visualchangelog316/), QGIS 3.18 introduces a host of enhancements and new features, along with a long-awaited feature - Native Point Cloud support in QGIS! Thanks to the efforts of [Lutra](https://www.lutraconsulting.co.uk/), [North Road](https://north-road.com/), and [Hobu](https://hobu.co/), QGIS is now able to import and render point cloud data in various formats by leveraging the Open Source PDAL library. This functionality has been introduced due to the success of a [crowd-funding campaign](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) and would not have been possible without the support of the QGIS community and contributors. Thank you to all those involved in realizing this incredible milestone!
+機能が充実した [QGIS 3.14](https://qgis.org/en/site/forusers/visualchangelog314/) および [QGIS 3.16](https://qgis.org/en/site/forusers/visualchangelog316/) のリリースに続き、QGIS 3.18では、数多くの機能強化や新機能に加え、待望の機能である QGIS のネイティブな点群対応が導入されました！ [Lutra](https://www.lutraconsulting.co.uk/)、 [North Road](https://north-road.com/) そして [Hobu](https://hobu.co/) の皆さんの尽力により、QGIS はオープンソースの PDAL ライブラリを活用して、様々な形式の点群データをインポートしてレンダリングできるようになりました。この機能は [クラウドファンディングキャンペーン](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) の成功により実現したものであり、QGISコミュニティや貢献者の方々の支援がなければ実現できなかったでしょう。この素晴らしく画期的な出来事の実現に関わった全ての方々に感謝いたします！
 
-As QGIS Desktop 3.18 bids farewell to the DB2 database provider, it introduces support for users of the SAP HANA database system.
+QGIS Desktop 3. 18 では、DB2 データベースプロバイダーへの対応が終了する一方で、SAP HANA データベースシステムの利用者をサポートする機能が導入されました。
 
-The QGIS ecosystem has also seen some exciting changes in the form of the [QGIS HUB](https://plugins.qgis.org/) which is an extension of the plugin site which now supports the distribution of community developed [styles](https://plugins.qgis.org/styles/), [projects](https://plugins.qgis.org/geopackages/), and even [processing models](https://plugins.qgis.org/models/).
+また、QGIS のエコシステムにおいても、[QGIS HUB](https://plugins.qgis.org/) という形でエキサイティングな変化が見られます。これはプラグインサイトの拡張版であり、コミュニティが開発した [スタイル](https://plugins.qgis.org/styles/) 、[プロジェクト](https://plugins.qgis.org/geopackages/)、さらには [プロセシングモデル](https://plugins.qgis.org/models/) の配布にも対応するようになりました。
 
 <div style="position:relative;width:100%;height:0;padding-bottom:56.25%"><iframe style="position:absolute;top:0;left:0;width:100%;height:100%" src="https://www.youtube.com/embed/Yeo6sXVpXvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" allowfullscreen></iframe></div>
 
-We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+さらに、開発者、ドキュメント作成者、テスター、 そして、これらのリリースを可能にするために時間と労力をボランティアとして提供してくださる（あるいはそのための資金を提供してくださる）多くの皆様に、心より感謝申し上げます。QGISコミュニティを代表して、このリリースをぜひお楽しみください！時間や資金の寄付、あるいはその他の形で QGIS をより素晴らしいものにするために参加をご希望の方は、ぜひ [QGIS.ORG](https://www.qgis.org/) にアクセスして、ご協力をお願いいたします！
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは寄付者と維持会員によって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新のリストは、 [寄付者リスト](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors) をご覧ください。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細について `サステイニングメンバーのページ](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustain_members.html#qgis-sustaining-memberships) をご覧ください。QGISへの財政支援は、定期的な開発者会議の開催、プロジェクトインフラの維持、バグ修正活動への資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -32,21 +32,21 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 {{<table-of-contents >}}
 ## ユーザーインタフェース
-### Feature: Hide derived attributes from the Identify results
-Previously, the QGIS Desktop *Identify* utility would expose a large number of derived attributes, such as geometry information. Although incredibly valuable, for many use cases this information is verbose. Users will now have the option to toggle the display of derived attributes to create a more concise view of the Identify results.
+### 機能: 地物情報で、派生した属性を非表示にする
+以前は、QGIS Desktop の *情報表示* ユーティリティでは、ジオメトリ情報など、派生した属性が多数表示されていました。これらは非常に有用ですが、多くのユースケースにおいて、この情報は冗長です。ユーザは、派生した属性の表示を切り替えるオプションを利用できるようになり、地物情報の表示をより簡潔にすることができます。
 
 ![image2](images/entries/96178054-1aa78d80-0f2f-11eb-8d75-299bfd6aa73e.webp)
 
 ![image3](images/entries/c9eea14d2c01670795967bd1e42fcb8777330718.webp)
 
-This feature was developed by [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde)
-### Feature: Close all tabs at once from message logs interface
-The QgsMessageLogViewer now includes an **\"Empty tab and close others\"** to the log viewer panel context menu, supporting a quicker action to a clean interface when debugging.
+この機能は [Richard Duivenvoorde](https://api.github.com/users/rduivenvoorde) によって開発されました
+### 機能: メッセージログインターフェースから全てのタブを一度に閉じる
+QgsMessageLogViewer では、ログビューアパネルのコンテキストメニューに **「全てのタブを閉じると他のタブを閉じる」** が追加され、デバッグ時にインターフェースを素早く整理できるようになりました。
 
 ![image4](images/entries/5adbd9ce0bfeb73ec308ed003603aacceab728d4.webp)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
-### Feature: API for layer source widgets
+### 機能：レイヤーソースウィジェット用 API 
 An API has been added in the provider GUI to allow a provider to create a custom widget, which exposes options to customize and change the layer\'s source. For example, a file-based layer provider could expose a widget for selecting a new file path, or an online provider could expose widgets for changing the host or authentication information.
 
 Two implementations have been added for this:
@@ -57,55 +57,55 @@ Two implementations have been added for this:
 
 ![image6](images/entries/14df1b85a3e3ada3024a39499a245bbdd7e2ca64-1.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: GUI for dynamic SVGs
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
+### 機能: 動的SVG用のGUI
 QGIS now supports dynamic standard vector graphic elements, as outlined in [QEP #199](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/199). This allows QGIS to dynamically replace attributes or node values in the XML of the SVG and apply data-driven values to SVG elements. QGIS Desktop has additionally added a GUI editor to ensure that users are able to properly leverage this new functionality.
 
 ![image7](images/entries/c6d55ffc6be5f0e4962d9b971cac6e54ab316717.webp)
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
-### Feature: Zoom to multiple layers
+この機能は [Denis Rouzaud](https://api.github.com/users/3nids) によって開発されました
+### 機能: 複数レイヤへの拡大
 The \"Zoom to Layer\" function available from the context menu, the View menu and the Map Navigation toolbar can now zoom to the extent of all the selected layers in the layer tree.
 
 ![image8](images/entries/101234295-f1cc8a80-368b-11eb-9b52-8f42a4f994a2.gif)
 
 This feature was developed by [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
-### Feature: Zoom and pan to selection for multiple layers
+### 機能：複数レイヤの選択範囲へのズームとパン
 The \"Zoom to Selection\" and \"Pan Map to Selection\" functions available from the context menu, the View menu or the Map Navigation toolbox now offer the ability to navigate to the extent of the selection from the selected layers in the layer tree.
 
 ![image9](images/entries/a76fca5cfc367779584da0655cd18474e4518329-1.gif)
 
 This feature was developed by [Patrice Pineault](https://api.github.com/users/TurboGraphxBeige)
-### Feature: Zoom in/out by scrolling mouse wheel over map overview panel
+### 機能：地図の全体図パネル上でマウスホイールをスクロールしてズームイン/ズームアウト
 Users can now zoom in and out from the Map Overview panel using the mouse scroll.
 
 ![image10](images/entries/77b55b4c85c9c4f5076b1a735f7971819cc2a2ee.gif)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## ユーザー補助
-### Feature: Improved color vision deficiency simulation
+### 機能: 色覚異常シミュレーションの改善
 This modifies the previous support for grayscale and LMS-based simulation for protanopia and deuteranopia, bringing it in line with the methodology currently used in Chromium and Firefox. QGIS now uses updated grayscale luminance calculations (renamed to achromatopsia), a precomputed protanopia matrix (renamed from protanope), a precomputed deuteranopia matrix (renamed from deuteranope), and an additional mode for tritanopia using a similarly precomputed matrix.
 
 This feature was developed by [Will Cohen](https://api.github.com/users/willcohen)
-### Feature: Rotation widget for the Georeferencer
+### 機能: ジオリファレンサー用の回転ウィジェット
 The georeferencer canvas can now be rotated in order to facilitate the placement of reference points. This is especially useful for scanned images which may not have uniform orientations.
 
 ![image11](images/entries/aba35ba4bb5ff0f2a8c1afcb55673e496efea18a.gif)
 
 This feature was developed by [uclaros](https://api.github.com/users/uclaros)
 ## シンボロジ
-### Feature: Data defined overall symbol opacity
+### 機能: データ定義による全体的なシンボルの不透明度
 While it was previously possible to set the opacity for individual symbol layer colors via data defined expressions, it is now possible to set a data defined expression to control the overall symbol opacity.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### Feature: Open the style gallery from the style manager
 The Style Manager interface now includes a button to open the [styles gallery](https://plugins.qgis.org/styles/) from the QGIS HUB.
 
 ![image12](images/entries/0d6dd72f8089ee52196001751451d42c7107fbe8.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## メッシュ
-### Feature: New mesh export algorithms
+### 機能: 新しいメッシュエクスポートアルゴリズム
 New export options have been added for mesh layers. These allow the following options when exporting a mesh to a vector layer:
 - Export faces
 - Export edges (1D mesh)
@@ -116,7 +116,7 @@ New export options have been added for mesh layers. These allow the following op
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
-### Feature: Native export for mesh layers
+### 機能: メッシュレイヤのネイティブなエクスポート
 Previous versions of QGIS required the utilization of the crayfish plugin, however, this functionality has now been incorporated into QGIS core and allows users to export mesh layers to vectors and add the dataset value as an attribute.
 
 ![image14](images/entries/41bdfc3d3c6afabc0e3e23986e42dbc22eb794df.gif)
@@ -124,13 +124,13 @@ Previous versions of QGIS required the utilization of the crayfish plugin, howev
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
-### Feature: Mesh simplification for 3D
+### 機能: 3D向けのメッシュの簡素化
 Mesh data can now be simplified by defining a level of detail for 3D rendering. This helps performance for complex datasets and ensures a smoother experience when 3D navigation is required.
 
 ![image15](images/entries/6461d329ef7d4936ddbc932b0bf96edcb071b398.gif)
 
 This feature was developed by [Vincent Cloarec](https://api.github.com/users/vcloarec)
-### Feature: Multiple native mesh processing algorithms
+### 機能: 複数のネイティブなメッシュプロセシングアルゴリズム
 A number of new processing algorithms have been ported from the crayfish plugin, including:
 - Rasterize mesh layer
 - Export contour to vector layers
@@ -143,24 +143,24 @@ This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/projects/mdal/)
 ## レンダリング
-### Feature: \"Merged feature\" renderer for polygon and line layers
+### 機能: ポリゴンとラインレイヤーの「マージした地物」レンダラー
 A new rendering option allows area and line features to be \"dissolved\" into a single object prior to rendering to ensure that complex symbols or overlapping features are represented by a uniform and contiguous cartographic symbol.
 
 ![image17](images/entries/4f1a29b4c0552c362d0bd87f3034af0ef07b642c.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Smarter Map Redraws
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
+### 機能: 賢くなったマップの再描画
 Previously, map redraws would attempt to redraw all elements in the frame. The map rendering has been significantly improved and now the existing map frame elements are used during the redraw process. This work was completed as a part of [QEP #181](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/181) and was funded by the QGIS Grant program for 2020.
 
 The following display outlines the redraw behavior before enhancement:
 
 ![image18](images/entries/7d0a503ab9ae05427e42e2987335ef569c761a3e-1.gif)
 
-This feature was funded by [QGIS grant 2020](https://qgis.org/)
+この機能は [QGIS grant 2020](https://qgis.org/) によって資金提供されました
 
-This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## 三次元機能
-### Feature: Eye dome lighting
+### 機能: アイドーム照明
 Eyedome lighting (EDL) is a post-processing effect which compares the depth of each pixel (distance from the camera) with the neighboring pixel depths and highlights edges according to the calculated differences.
 
 An EDL configuration element has been added to the advanced settings tab of the 3D view configuration dialog. EDL strength has the effect of increasing the contrast, allowing for better depth perception (which may need to be adjusted when zooming in). EDL distance is the distance of the used pixels from the center pixel and it has the effect of making edges thicker.
@@ -171,8 +171,8 @@ The eye dome lighting is, by principle, an image-based rendering solution simila
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting (Nedjima Belgacem)](https://www.lutraconsulting.co.uk)
-### Feature: Data defined 3D material colors
+この機能は [Lutra Consulting (Nedjima Belgacem)](https://www.lutraconsulting.co.uk) によって開発されました
+### 機能: データ定義による 3D マテリアルカラー
 3D material colors may now be data defined, allowing feature colors to be determined using the value of an attribute or expression.
 
 Rendering of polygons may be currently done with multiple material types, each having distinct appearance and configuration of colors:
@@ -185,17 +185,17 @@ Textured materials are unsupported at this time.
 
 ![image21](images/entries/504010202dcff6a9b78450fedfa493b6e726b5c0.webp)
 
-This feature was funded by [Kristianstad](https://www.kristianstad.se)
+この機能は [Kristianstad](https://www.kristianstad.se) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk)
-### Feature: 3D Orthographic projection support
+### 機能: 3D 正投影のサポート
 QGIS now offers orthographic projection support for 3D scenes, a feature often desired in the context of architecture, archeology, and more.
 
 ![image22](images/entries/7e43323cea578f6f50e83de6307c22bdef948f8d.gif)
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## 点群
-### Feature: Point Cloud Support
+### 機能: 点群のサポート
 Following the successful [crowdfunding campaign](https://www.lutraconsulting.co.uk/crowdfunding/pointcloud-qgis/) for point cloud support in QGIS, the engineers at Lutra, North Road, and Hobu have been able to introduce the ability for QGIS to import and render point cloud data.
 
 This includes the ability to add point cloud layers to QGIS projects, with support for the EPT format, and render them in 2D and 3D contexts.
@@ -205,22 +205,22 @@ This includes the ability to add point cloud layers to QGIS projects, with suppo
 This feature was funded by [Point Cloud data support in QGIS](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
 This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk)
-### Feature: Add point clouds to browser
+### 機能: 点群をブラウザへ追加
 The QGIS Browser and data source management interface now support the basic structure of PDAL supported point cloud layers.
 
 ![image24](images/entries/96aca5c2d2f428f0aa7fee0d11b5c8600c5c523c.webp)
 
 This feature was funded by [Point Cloud data support in QGIS crowd funding campaign](https://www.lutraconsulting.co.uk/blog/2021/02/18/qgis-3-18-point-cloud/)
 
-This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/)
-### Feature: Untwine PDAL Provider Integration
+この機能は [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk/) によって開発されました
+### 機能: Untwine PDAL プロバイダの統合
 Ability to generate EPT index for (smaller) laz files directly in QGIS via the [untwine](https://github.com/hobu/untwine) library
 
 This feature was funded by [Point Cloud data support in QGIS crowd funding campaign](https://www.lutraconsulting.co.uk)
 
 This feature was developed by [Lutra Consulting (Peter Petrik)](https://www.lutraconsulting.co.uk)
 ## 印刷レイアウト
-### Feature: Gradient ramp based legends
+### 機能: グラデーションランプ型の凡例
 A new QgsColorRampLegendNode class was added which allows for the creation of color ramp-based legend nodes. It\'s now used for raster layers when using a pseudocolor renderer with the linear interpolation type or for the single-band gray renderer, as well as for point clouds using a ramp based renderer.
 
 In a layout legend, the ramp item inherits the default legend symbol width and height, but it is possible to optionally override this behavior.
@@ -241,8 +241,8 @@ And naturally, the items will work nicely with multi-column legends:
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Color ramp legend improvements
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
+### 機能: カラーランプ凡例の改善
 Color ramp legend items now support the following configurable options:
 - A prefix and suffix for the ramp text
 - Numerical formatting
@@ -258,17 +258,17 @@ Users can also choose to refine these settings for a particular layout legend it
 
 This feature was funded by [Hans van der Kwast](https://www.youtube.com/c/HansvanderKwast)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Dynamic text presets
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
+### 機能: 動的テキストのプリセット
 The new *Add Item -\> Dynamic Text* menu contains preset dynamic text expressions that users can use to insert a label automatically containing the corresponding expression.
 
 For example, using the dynamic text element **Layout Name** will insert a label containing the expression \[% \@layout_name %\]. This improves the feature awareness, discoverability, and provides an easy method for users to access dynamic attributes.
 
 ![image31](images/entries/c41a7d2a5ec018bfba237429aa5d125d11ad9310.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## 計算式
-### Feature: Optional formatting of UUID results
+### 機能: UUID 結果の整形オプション
 There is now a string format parameter available for the `uuid()` function in QGIS expressions. Users now have various options that they can use to stipulate the format of the returned UUID value, including the following options:
 - `uuid()`: **{0bd2f60f-f157-4a6d-96af-d4ba4cb366a1}**
 - `uuid('WithoutBraces')`: **0bd2f60f-f157-4a6d-96af-d4ba4cb366a1**
@@ -276,12 +276,12 @@ There is now a string format parameter available for the `uuid()` function in QG
 
 ![image32](images/entries/3f0471353b72cffc4b69defb87cea2d7a1c44017.webp)
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+この機能は [signedav](https://api.github.com/users/signedav) によって開発されました
 ### Feature: Layer CRS variable for expressions
 QGIS expressions now support a *layer_crs* variable which will return the AuthID for a particular layer\'s coordinate reference system. This allows expressions to identify the layer CRS dynamically and perform transformations without needing to manually specify the CRS.
 
 This feature was developed by [Alex](https://api.github.com/users/roya0045)
-### Feature: Support for min, max, majority, sum, mean, and median functions on numerical arrays
+### 機能: 数値配列に min、max、majority、sum、mean、median 関数をサポート
 QGIS expressions now include aggregate functions for arrays, which allow the easy retrieval of specific values from an array that may be used in QGIS elements such as symbologies. The following functions have been introduced:
 - array_min
 - array_max
@@ -291,14 +291,14 @@ QGIS expressions now include aggregate functions for arrays, which allow the eas
 - array_median
 
 This feature was developed by [uclaros](https://api.github.com/users/uclaros)
-### Feature: Negative index for array_get function
-The function array_get now supports the use of negative index positions.
+### 機能: array_get 関数における負のインデックス
+array_get 関数は、負のインデックス位置の使用に対応できるようになりました。
 
 This feature was developed by [Alex](https://api.github.com/users/roya0045)
-### Feature: Add map_credits function
+### 関数: map_credits 関数の追加
 A *map_credits* function was added that collates a list of all the layer metadata attribution strings for the layers shown inside a specified map item.
 
-For example:
+例:
 
     array_to_string( map_credits( 'Main Map' ) )
     
@@ -314,34 +314,34 @@ This would return a comma-separated list of layer names and their credits for la
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## デジタイズ
-### Feature: Select features context menu
+### 機能: 地物を選択コンテキストメニュー
 It is now possible to select features using a context menu on the map canvas. Right-clicking on the map will intelligently identify the features below the mouse cursor and allow the available features to be added or removed from the current selection. Where multiple features are available, a short delay may persist whilst the system attempts to search for available features that will become available in a nested menu item for selection, or users may simply use the *select all* function to select all available features at the given position.
 
 ![image33](images/entries/edec99086412445b929c0926f69600279e56d4fb.gif)
 
-This feature was funded by [Kristianstad](https://www.kristianstad.se)
+この機能は [Kristianstad](https://www.kristianstad.se) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk)
-### Feature: Curve tracing settings added to UI
+### 機能: UI に曲線のトレース設定を追加
 Existing curve tracing settings [were introduced previously](https://github.com/qgis/QGIS/pull/37826) and have now been exposed in the user interface to enable users to incrementally modify settings to optimize their results when capturing curve data.
 
 ![image34](images/entries/29b75d5574181d5b7570090b9801ede92bec2fcd.webp)
 
 This feature was developed by [Olivier Dalang](https://api.github.com/users/olivierdalang)
-### Feature: Feature scaling tool
+### 機能: 地物を拡大ツール
 A new digitizing tool allows for selected features to be scaled when in editing mode. This implementation was based on the work of [\@roya0045](https://github.com/roya0045) with [#40650](https://github.com/qgis/QGIS/pull/40650).
 
 ![image35](images/entries/16ac8bca1e78da740dc8ea8b6b46a916f8f0b83d.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## データ管理
-### Feature: New export to spreadsheet algorithm
+### 機能: スプレッドシートへエクスポートの新アルゴリズム
 Users may export a selection of vector layers as sheets in a new spreadsheet or append them as additional sheets to an existing spreadsheet
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Reproject coordinates in the Georeferencer
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
+### 機能: ジオリファレンサ―で座標を再投影
 The georeferencer now reprojects data points in a desired output projection, rather than using the map canvas CRS for determining data point positions. This allows users more flexibility and control when capturing control points.
 
 ![image36](images/entries/50d4d1d6353ebfa251c53ea29c28821bf4c5ac18.gif)
@@ -362,7 +362,7 @@ Polymorphic relations are stored within a project and currently cannot be export
 
 This feature was developed by [Ivan Ivanov](https://api.github.com/users/suricactus)
 ## フォームとウィジェット
-### Feature: Soft and hard constraints in forms
+### 機能: フォームのソフトとハードの制約
 Historically, required fields would prevent a form from being saved entirely. Using soft constraints allow forms to notify users that expected information has been omitted, without preventing the form submission. Hard constraints, by contrast, function identically to the previous \"required fields\" functionality and will prevent form submissions unless data is correctly captured for the field.
 
 This feature was funded by [Lutra Consulting](https://www.lutraconsulting.co.uk)
@@ -374,32 +374,32 @@ Although not exposed through the locator or as an algorithm, QGIS now includes a
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
 ## プロセシング
-### Feature: Allow expression for order fields in PointsToPath algorithm
+### 機能: PointsToPath アルゴリズムで順序フィールドに式を可能にする
 `$id` may be used as an expression for a csv with ordered values, and the `ORDER_EXPRESSION` parameter has been added to the PointsToPath algorithm.
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
-### Feature: Override CRS for Clip Raster by extent output
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
+### 機能: 範囲を指定してラスタを切り抜くの出力でCRSを上書きする
 In some instances, the **Clip raster by extent** algorithm may output features without a CRS specified, which can now be modified by explicitly enforcing the output to inherit it\'s CRS from the input layer.
 
 This feature was developed by [rldhont](https://api.github.com/users/rldhont)
-### Feature: Add \"retain fields\" algorithm
+### 機能: 「フィールドを選択保持」アルゴリズムの追加
 Allows users to select a list of fields to keep, and all other fields will be dropped from the layer. Helps with making flexible models where input datasets may have a range of different fields and only a certain subset of them need to be retained. This work was inspired by [#39114](https://github.com/qgis/QGIS/pull/39114)
 
 ![image38](images/entries/c02ae93517a537925c870d3a9d477cc26af5f9e7.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
-### Feature: Reference common field parameter for multiple layers
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
+### 機能: 複数レイヤで共通のフィールドパラメータを参照する
 Processing tools field parameters may support processing a common field for multiple vector layers, in an implementation inspired by the behavior of some processing algorithms in Orfeo ToolBox.
 
 This feature was developed by [Julien Cabieces](https://api.github.com/users/troopa81)
-### Feature: Extend import geotagged photos to include exif_orientation
+### 機能: ジオタグ付きの写真を読み込むで exif_orientation を含めるよう拡張する
 The \"Import geotagged photos\" tool has been updated so that the exif_orientation parameter value is extracted to the output table. This ensures that maptips and other HTML widgets can be configured to correctly transform the photos to be correctly displayed based on the orientation value.
 
-This feature was developed by [Pelle Rosenbeck Gøeg](https://api.github.com/users/pellegoeg)
-### Feature: Export layer information algorithm
-レイヤー情報のエクスポートという処理ツールボックスの新しいアルゴリズムが追加されました。これにより各ポリゴンフィーチャに属性として付与される追加のレイヤー詳細を使用して、ユーザー定義レイヤーの範囲に対応するポリゴンレイヤーの作成を支援します。現在収集される情報では以下の要素をサポートしています：
+この機能は [Pelle Rosenbeck Gøeg](https://api.github.com/users/pellegoeg) によって開発されました
+### 機能: レイヤ情報をエクスポートアルゴリズム
+レイヤー情報のエクスポートというプロセシングツールボックスの新しいアルゴリズムが追加されました。ユーザー定義レイヤーの範囲に対応したポリゴンレイヤーを作成し、各ポリゴン地物に追加のレイヤー詳細を属性として付加します。現在収集される情報は以下の要素に対応しています：
 - 座標参照系（CRS）
-- Provider name
+- プロバイダ名
 - ファイルパス
 - レイヤ名
 - サブセットフィルタ
@@ -407,7 +407,7 @@ This feature was developed by [Pelle Rosenbeck Gøeg](https://api.github.com/use
 - 帰属
 
 This feature was developed by [Mathieu Pellerin](https://api.github.com/users/nirvn)
-### Feature: Cell stack percentile and percentrank algorithms
+### 機能: セルスタックパーセンタイルとパーセントランクアルゴリズム
 **セル統計** プロセシングツールの特性が複製および変更され、3つの新しい処理アルゴリズムが可能になりました。これにより、QGISはスプレッドシートプログラムで使用される一般的なパーセンテージ関数と同様の方法でセル統計を計算できます。新しい処理アルゴリズムは次のとおりです：
 - **セルスタック:パーセンタイル**
 - **セルスタック:指定値のパーセントランク**
@@ -424,8 +424,8 @@ All algorithms provide different methods for calculating percentiles and percent
 ![image39](images/entries/febde74bab33bb165971509e90fb112c4b643001.webp)
 
 This feature was developed by [Clemens Raffler](https://api.github.com/users/root676)
-### Feature: Points to lines processing algorithm
-A native processing algorithm has been added in c++ that creates line layers from point layers, similar to the existing python *Points to path* but with extended functionality:
+### 機能: ポイントをラインへプロセシングアルゴリズム
+ポイントレイヤからラインレイヤを作るネイティブなプロセシングアルゴリズムが c++ 加わりました。既存の python *点を線に変換* に似ていますが、機能性が拡張されています:
 - Added support for *natural sorting* ( \'10\' \> \'9\' )
 - Avoid creating invalid lines with a single vertex
 - Avoid creating closed lines with two vertices
@@ -447,7 +447,7 @@ A new \"View Settings\" tab has been added to the project properties, with the o
 
 ![image41](images/entries/d0109e9db23e15765f201c3b292f23fa4230b608.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: QgsNetworkAccessManagerでネットワークキャッシュを切り替える
 A checkbox in the network logger panel now allows users to temporarily disable the network cache, which is useful when debugging QGIS network activity, or when using QGIS to test server-side changes.
 
@@ -455,12 +455,12 @@ This is a transient setting by design and is forgotten as soon as QGIS is closed
 
 ![image42](images/entries/0115a38666f35166fa9e6fd53791a7bc8f73b6dc.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## ブラウザ
 ### 機能：ブラウザでArcGisフィーチャサービスとArcGISマップサービスの接続を統一する
 The separate \"ArcGis Feature Service\" and \"ArcGIS Map Service\" browser connections have been replaced with a single, unified, **\"ArcGIS Rest Servers\"** connection and browser node, which shows a definitive view of the server and exposes both service types.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: ArcGIS RESTをコンテンツグループで閲覧できるようにする
 ArcGIS Feature Service connections which have their corresponding Portal endpoint URLS set can be explored by content groups in the browser panel.
 
@@ -468,7 +468,7 @@ If a connection has the Portal endpoints set, then expanding out the connection 
 
 This feature was funded by [SRK Consulting](https://www.srk.com)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## データプロバイダ
 ### 機能: ネイティブのDXFエクスポートアルゴリズム
 Allows exporting individual or multiple layers into a single DXF file. For each input layer, users can select which attribute to use for splitting a single layer into multiple output layers.
@@ -483,8 +483,8 @@ Some available geometry types from the GDAL ogr2ogr operation used for exporting
 
 ![image44](images/entries/48415fefe669fa93d5c7e13959c4a35e6dab60e2.gif)
 
-This feature was developed by [mazano](https://api.github.com/users/NyakudyaA)
-### Feature: Improved network requests with GDAL
+この機能は [mazano](https://api.github.com/users/NyakudyaA) によって開発されました
+### 機能: GDALを使ったネットワーク要求の改善
 A QgsCPLHTTPFetchOverrider utility class was added and used in the OGR provider which redirects GDAL\'s CPL HTTP calls through QgsBlockingNetworkRequest. This ensures that GDAL can use the QGIS network provider rather than redirecting requests through cURL. Additional head(), put() and deleteResource() methods were added to QgsBlockingNetworkRequest.
 
 This feature was developed by [Even Rouault](https://api.github.com/users/rouault)
@@ -505,7 +505,7 @@ In the database connection configuration widget, there are now two extra checkbo
 
 ![image45](images/entries/3d77459436d542190afa88f6d927be7f8245dbf0.gif)
 
-This feature was funded by [ms.GIS](http://msgis.com/)
+この機能は [ms.GIS](<http://msgis.com/>) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### 機能: MS SQLのフィルタスキーマ
@@ -513,19 +513,19 @@ This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.l
 
 ![image46](images/entries/1e2fe1a94747c9aa2fbbaab3053bfc6631cfbb22.gif)
 
-This feature was funded by [ms.GIS](http://msgis.com/)
+この機能は [ms.GIS](<http://msgis.com/>) によって資金提供されました
 
 This feature was developed by [Lutra Consulting (Vincent Cloarec)](https://www.lutraconsulting.co.uk/)
 ### 機能: SAP HANAデータベースのサポート
 QGIS now supports SAP HANA databases. SAP HANA is an in-memory database with an OGC-compliant spatial engine with a free express edition available from www.sap.com
 
 This feature was developed by [Maxim Rylov](https://api.github.com/users/mrylov)
-### Feature: Deprecate support for DB2
+### 機能: DB2 のサポートを廃止
 **The DB2 data provider has been marked as deprecated**, and is hidden from the QGIS UI by default.
 
 QGIS has adopted a gentle approach to removing unmaintained core providers, and users of deprecated providers may enable support for them by setting the hidden \"providers/showDeprecated\" settings key to *true*.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: Oracle接続API
 The QGIS API now includes *QgsAbstractDatabaseProviderConnection* for the Oracle provider.
 
@@ -539,7 +539,7 @@ GDALデータプロバイダを使用してレイヤをインポートすると�
 
 この機能はMathieu Pellerinによって開発されました
 ## QGISサーバー
-### Feature: GetLegendGraphics Symbol Scale
+### 機能: GetLegendGraphics シンボルスケール
 The QGIS Server WMS GetLegendGraphics request now supports the inclusion of min/max scale denominators to json symbol exports
 
 この機能は [Alessandro Pasotti](https://api.github.com/users/elpaso) によって開発されました
@@ -548,20 +548,20 @@ The QGIS Server WMS GetLegendGraphics request now supports the inclusion of min/
 
 This feature was developed by [mhugent](https://api.github.com/users/mhugent)
 ## プログラマビリティ
-### Feature: Run multiple items from command history dialog
+### 機能: コマンドヒストリダイアログから複数の項目を実行
 QGIS Pythonコンソールでは、新しい **貼り付け** ボタンの追加によって、履歴ダイアログから選択された複数のコマンドを実行できるようになりました。
 
 ![image48](images/entries/1de42c7dc35c2b73dce1605a3c36b97166d81850.webp)
 
 This feature was developed by [Salvatore Larosa](https://api.github.com/users/slarosa)
-### Feature: Enable or disable plugins from the command line
+### 機能: コマンドラインからプラグインを有効または無効にする
 The qgis_process command line tool has had new commands added which allow users to enable or disable plugins using the commands as outlined below:
 - `qgis_process plugins enable plugin_name`: enables the named plugin
 - `qgis_process plugins disable plugin_name`: disables the named plugin
 
 This improves the automation capabilities of QGIS and allows the use of plugins on headless environments with the qgis_process tool.
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## 注目すべき修正
 ### 機能: Alessandro Pasotti によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.16 backport commit (GitHub) |
@@ -613,7 +613,7 @@ This feature was developed by [Alessandro Pasotti](https://www.qcooperative.net/
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+この機能は [Peter Petrik](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: Even Rouault によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -631,7 +631,7 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+この機能は [Even Rouault](http://www.spatialys.com/) によって開発されました
 ### 機能: Julien Cabiecesによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -685,6 +685,6 @@ This feature was developed by [Julien Cabieces](https://oslandia.com/en/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 
 {{<content-end >}}

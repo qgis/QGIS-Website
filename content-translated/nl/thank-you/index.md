@@ -101,7 +101,7 @@ Neem deel aan een gemeenschap van gelijkgestemde individuen in uw regio.
 
 {{<rich-right-start >}}
 
-![Local user groups](../project/img/groups.jpg "Local user groups")
+![Local user groups](../project/img/groups.jpg "Lokale gebruikersgroepen")
 
 {{<rich-right-end >}}
 

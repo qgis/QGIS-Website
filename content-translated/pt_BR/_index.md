@@ -7,17 +7,15 @@ Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
 ButtonText: Baixar
-HasAnnouncement: true
+HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: Código aberto e gratuito
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: 'Disponível para Windows, Mac, Linux '
 draft: false
 heroLogo: img/logosign.svg
 heroSize: is-medium
-subtitle: Spatial visualization and decision-making tools for everyone
+subtitle: 'Visualização espacial e ferramentas de tomada de decisão para todos '
 title: Espacial sem compromisso
 type: page
 

@@ -20,7 +20,7 @@ type: visual-changelog
 
 私たちは開発者、文書作成者、テスターなどの時間や労力を提供してくれる数多くのボランティアの皆さん（また資金を提供してくれる方々）に感謝します。 QGIS コミュニティとして、このリリースを楽しんでいただきたいと思います。もし時間やお金を寄付したいと考えている場合や、 QGIS をもっと素晴らしいものにすることに参加したい場合は、 qgis.org を見て回って手を貸して下さい。
 
-QGISは寄付者やスポンサーの支援を受けています。プロジェクトに多額の資金拠出を行った寄付者の現在のリストは寄付者リストをご覧ください。公式プロジェクトスポンサーになりたい場合、詳細はスポンサーシップのページをご覧ください。QGISへの出資は、半年毎の開発者会議に資金提供したり、プロジェクトインフラストラクチャを維持したり、バグ修正の取り組みに資金提供するのに役立ちます。現在のスポンサーの完全なリストは以下に掲載します。すべてのスポンサーの皆様に大変感謝しております！
+QGISは寄付者およびスポンサーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは寄付者リストをご覧ください。公式プロジェクトスポンサーになることをご希望の方は、詳細についてスポンサーシップのページをご覧ください。QGISへの財政支援は、半年毎の開発者会議の開催、プロジェクトインフラの維持、バグ修正活動への資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -33,7 +33,7 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 ![imageQ1](https://user-images.githubusercontent.com/127259/74035907-7f334580-49bb-11ea-8d2d-b99eaa10aa89.png)
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+この機能は [Denis Rouzaud](https://api.github.com/users/3nids) によって開発されました
 ### 機能: GPSロック位置から現在のカーソルまでの距離を表示
 GPSデバイスが接続されている場合、ユーザーがキャンバス上のカーソルを移動するたびに、ライブステータスバーメッセージにカーソルからGPS固定位置までの距離と方位が表示されます。
 
@@ -41,7 +41,7 @@ GPSデバイスが接続されている場合、ユーザーがキャンバス�
 
 ![Peek 2020-01-14 16-06](https://user-images.githubusercontent.com/1829991/72318360-cd6c6600-36e7-11ea-9f2d-9a47d8772623.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: プロジェクトに角度方位を表示するための形式設定を追加
 設定 - オプション - マップツールタブには、新しく作成されたプロジェクトの角度方位を表示するためのデフォルトの形式を制御できる、新しい設定が含まれています。新しいプロジェクトが作成されるたびに、このデフォルトの設定が継承されます。
 
@@ -53,20 +53,20 @@ The intention is that whenever angular bearings are shown in QGIS, they will be 
 
 ![Peek 2020-01-09 11-08](https://user-images.githubusercontent.com/1829991/72029046-5fcbce80-32d0-11ea-8571-0ae8fa8e3bb0.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## ユーザーインタフェース
 ### 機能: PostgreSQLデータを追加する際、追加ボタンをクリックした後にテーブルの選択を解除します。
 PostgreSQLデータをデータソースマネージャに追加する際、追加ボタンを押した後、QGISは以前に選択されたテーブルの選択を解除する必要があります。
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+この機能は [Samweli Mwakisambwe](http://samweli.github.io/) によって開発されました
 ### 機能: ステータスバーに総パン距離と方位を表示する
 We added the total pan distance and bearing in the status bar during canvas pan operations. Allows users to know exactly how far (and in what direction) they\'ve dragged the map.
 
 ![image5](images/entries/48c75d20d3805af3dad8c7faae3c3786a8f6fed0.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: デフォルトのプロジェクトファイル形式(qgs/qgz)を設定する新しいオプション
 新しいグローバルオプションを追加して、優先されるプロジェクトファイルの形式を定義します。
 
@@ -74,7 +74,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能は GEM foundation によって資金提供されました
 
-This feature was developed by [Denis Rouzaud](https://api.github.com/users/3nids)
+この機能は [Denis Rouzaud](https://api.github.com/users/3nids) によって開発されました
 ### 機能: 別のレイヤにコピーする際に無効な属性ダイアログを修正する
 It\'s possible to copy features from one layer to another. If there are the same fields in the destination layer, then the attributes for them are taken from the original feature. If not, the default value is taken. Otherwise, the new attribute is null.
 
@@ -88,13 +88,13 @@ That\'s why now the attributes are checked against the constraints. And for all 
 
 ![copypastesingle](https://user-images.githubusercontent.com/28384354/72243125-5ce01f00-35eb-11ea-897e-0bccdcf083d7.png)
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+この機能は [signedav](https://api.github.com/users/signedav) によって開発されました
 ### 機能：レイヤツリーから地図レイヤをプロジェクション選択ウィジェットにドロップできるようにする
 \...to set the projection to match that layer. Just a little timesaving shortcut!
 
 ![Peek 2019-12-20 11-27](https://user-images.githubusercontent.com/1829991/71222288-b7070080-231b-11ea-89f4-af856dece4c3.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: プロセシングラスタcalc: 無いボタンを追加し、検証
 ABS/MIN/MAXのボタンを追加し、式を検証します。
 
@@ -109,7 +109,7 @@ Mesh vector renderer now can visualize streamlines and particles on top of exist
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: 選択的マスキング
 A new advanced rendering feature has been added: selective masking. It allows the definition of \'masks\' areas around labels or point markers. These masks will \"un-draw\" only some symbol layers of other layers underneath, chosen by the user.
 
@@ -117,7 +117,7 @@ A new advanced rendering feature has been added: selective masking. It allows th
 
 This feature was funded by [QGIS.CH and others through a cofunding campaign](https://oslandia.com/en/offre-qgis/selective-masking/)
 
-This feature was developed by [Hugo Mercier (Oslandia)](https://www.oslandia.com)
+この機能は [Hugo Mercier (Oslandia)](https://www.oslandia.com) によって開発されました
 ### 機能：小数点の度の回転が評価できない場合、静的な値にフォールバックする
 凡例は、データ定義された回転ともうまく機能します。QGISはすでにシンボルと個々のシンボルレイヤにデータ定義された回転を適用することができましたが、これにより凡例が壊れてしまいました。凡例上のシンボル（およびシンボルレイヤで定義されたシンボルパーツ）の回転は、データ定義されたプロパティの隣にあるデフォルト値を変更することで制御できるようになりました。
 
@@ -145,7 +145,7 @@ This feature was developed by [Hugo Mercier (Oslandia)](https://www.oslandia.com
 
 ![Peek 2019-12-08 09-16](https://user-images.githubusercontent.com/588407/70386651-acec1600-199b-11ea-8ce2-27798aec38a7.gif)
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### 機能: ランダム塗りつぶしの密度ベースのポイントカウントを追加する
 この機能は、新しいランダム塗りつぶしに密度ベースのポイントカウント方法を追加します。
 
@@ -164,7 +164,7 @@ This feature adds a new fill symbol layer type \"Random marker fill\". It allows
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: ラスタレイヤでnodataピクセルをレンダリングするときの色を設定するオプションを追加
 Allows raster nodata pixels to be colored in a specific (non-transparent) color. Designed to match the \"Display background value\" option from ArcMap.
 
@@ -172,14 +172,14 @@ Allows raster nodata pixels to be colored in a specific (non-transparent) color.
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ## ラベリング
 ### 機能: カスタムラベルの位置を削除できる
 ラベルを移動する際にDELキーを押すことで、カスタムラベルの位置を削除することができる、新しいオプションを追加しました。
 
 ![image18](images/entries/e8064c56705b7a74befa85e8a34e7b7311626f0a.gif)
 
-This feature was developed by [Denis Rouzaud](https://www.opengis.ch)
+この機能は [Denis Rouzaud](https://www.opengis.ch) によって開発されました
 ## ダイアグラム
 ### 機能: ダイアグラムレンダラーのペイント効果をサポート
 this new feature allows for diagrams to use paint effects, including drop shadows, outer glows, etc\...
@@ -188,7 +188,7 @@ this new feature allows for diagrams to use paint effects, including drop shadow
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### Feature: New diagram type \"stacked bars\"
 With this new feature users will have possibility to create stacks bars of varying colors for each attribute on top of each other vertically or horizontally. Designed to match the \"Stacked\" chart renderer option available in ArcGIS.
 
@@ -196,7 +196,7 @@ With this new feature users will have possibility to create stacks bars of varyi
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：ベクタレイヤのバーチャートダイアグラムの間隔オプション
 ユーザーがチャート内の各バーの間隔を制御できるようにします。
 
@@ -204,7 +204,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: パイダイアグラムの角度方向を制御する新しいオプション
 この機能により、セクションが時計回りまたは反時計回りの方向でレンダリングされるかどうかを制御できます。
 
@@ -212,7 +212,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ## レンダリング
 ### 機能：メッシュレイヤ再生の再生/停止ボタン
 It is possible to switch the timeframes of mesh layer\'s datasets by play/stop button. The playback setting could be adjusted in the time setting dialog.
@@ -221,7 +221,7 @@ It is possible to switch the timeframes of mesh layer\'s datasets by play/stop b
 
 This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk)
 
-This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.uk)
+この機能は [Lutra Consulting](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: 面で定義されたデータの頂点へのオンザフライ・リサンプリング（メッシュレイヤ）
 面で定義されたデータセットの場合、隣接平均法を使用してデータを頂点に補間することができます。データ補間方法が選択されていない場合、単一の面上の各ピクセルは単一の値/色を持ちます。頂点上の値から各ピクセルのレンダリングが補間されるため、より滑らかな図形が作成されます。
 
@@ -231,7 +231,7 @@ This feature was developed by [Lutra Consulting](http://www.lutraconsulting.co.u
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能：メッシュ参照時間のサポート
 さまざまなデータセットの種類について、例えばGRIBやNetCDFなど、QGISの時間設定ダイアログの参照時間は、生データから自動的に設定されるため、手動で設定する必要はありません。また、時間の解析に関連するさまざまなバグも修正されているため、QGIS 3.12ではプロット/アニメーションで時間を適切な方法でフォーマットして表示することが可能になります:
 - データセットグループに有効な時間参照が提供されている場合、この時間参照は時間の表示に使用されます（絶対時間を使用）。
@@ -246,7 +246,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ## 三次元機能
 ### 機能：3Dメッシュレイヤ地形レンダラ
 3Dビューでメッシュレイヤを地形としてレンダリングすることが可能です。
@@ -273,7 +273,7 @@ This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lu
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Vincent Cloarec (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: バックグラウンドで3Dベクタレイヤデータを読み込む + タイリング
 このベクタレイヤから3Dマップビューへのデータのバックグラウンド読み込みを対応させます。これまでは、読み込み（およびテッセレーション）はGUIを完全にフリーズさせていました - 入力データの複雑さに応じて数秒かかることがあります。
 
@@ -296,7 +296,7 @@ This feature was developed by [Vincent Cloarec (Lutra Consulting)](http://www.lu
 
 ![image28](images/entries/21b9f2fba7bf1576f794410fd238ef7553154d53.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: 新しいレイアウトアイテムタイプ：手動で作成された固定テーブル
 この新しいアイテムタイプにより、ユーザーが手動でコンテンツを入力したテーブル（スプレッドシート形式）を作成できるようになり、完全にカスタマイズされたテーブルを作成することができます。セルのコンテンツ、前景色および背景色のカスタマイズに対応しています（行の高さと列の幅のプリセットも近日対応予定）。これらのテーブルをカスタマイズするための新しいテーブルデザイナーダイアログも追加されました。
 
@@ -304,7 +304,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能は City of Canning によって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: スケールバーの数値形式についてユーザー制御を追加
 これでレイアウトスケールバーで使用される数値の形式を制御するオプションができました。
 
@@ -312,7 +312,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 ![image30](images/entries/99c97baaee3e5930bca0cb63db1391b6fd49b34f.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能：一致する条件付きスタイルの前景色と背景色を使用して、レイアウト属性テーブルにスタイルを適用できるようにする
 レイアウトの属性テーブル設定で新しい \"レイヤーの条件付きスタイル色を適用\" オプションを有効にすると、レイヤーに設定されている条件付きスタイルのルールがレイアウトの属性テーブルにも適用されます（現時点では前景色と背景色のみ対応）。
 
@@ -320,7 +320,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 この機能は City of Canning によって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: レイアウトマネージャに検索ボックスを追加
 プロジェクト内のレイアウト一覧を名前でフィルタリングできます。レイアウト数が多いプロジェクトで非常に便利です！
 
@@ -335,7 +335,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 この機能は [SwissTierras-Colombia](https://www.proadmintierra.info) の資金提供を受けました
 
-This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
+この機能は [Dave Signer (OPENGIS.ch)](http://www.opengis.ch) によって開発されました
 ### 機能: リスト参照先レイヤの値
 フィールドがRelationReference、ValueRelation、およびValueMapの場合、現在のレイヤの値だけでなく、参照先のレイヤ/設定された可能性の値も表示する可能性があります。
 
@@ -343,7 +343,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 この機能は [SwissTierras-Colombia](https://www.proadmintierra.info) の資金提供を受けました
 
-This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
+この機能は [Dave Signer (OPENGIS.ch)](http://www.opengis.ch) によって開発されました
 ### 機能: 新しい式
 - `is_empty(geom)` 、ジオメトリが空かどうかを確認します（座標を含まないジオメトリ）
 - `is_empty_or_null(geom)` ,ジオメトリが空またはNULLかどうかを確認します（ジオメトリを持たない場合）
@@ -359,7 +359,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 ![image35](images/entries/c01edc8ee51dff2b4df8f825e0dcaf27940e4aba.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: 式の保存
 - ユーザ指定式の保存
 - Clear editor icon/action
@@ -382,7 +382,7 @@ In the example we have the persons:
 - *George (in Cuba, in his twenties, human) Paul (in Vietnam, in his thirties, human) Ringo (in Venezuela, in his forties, cat) John (in Vietnam as well, in his forties, table)*
 - And the entries in the country layer are *USSR, Cuba, Vietnam, Burma, Venezuela, North Korea*
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+この機能は [signedav](https://api.github.com/users/signedav) によって開発されました
 ### 機能: WKBへ/から変換する式関数を追加
 - `geom_from_wkb( geom_to_wkb( make_point(4,5) ) ) → a point geometry object` Well-Known Binary（WKB）表現からジオメトリを生成して返します。
 - `geom_to_wkb( $geometry ) → binary blob containing a geometry object` ジオメトリをWell-Known Binary（WKB）で表現したバイナリBLOBを返します。
@@ -393,7 +393,7 @@ QGIS 3.6以降、式やフィールド値でのバイナリBLOB値のサポー�
 
 This feature was funded by [SLYR](https://north-road.com/slyr/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能:is_valid expression
 `is_valid(geom_from_wkt('LINESTRING(0 0, 1 1, 2 2, 0 0)')) → true` ジオメトリが有効な場合にtrueを返します。OGCルールに従って2Dで正しく形成されているかどうかを判定します。
 
@@ -431,7 +431,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能の開発には [Amt für Wald und Wild Zug](https://www.zg.ch/behoerden/direktion-des-innern/wald-und-wild) からの資金提供がありました
 
-This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
+この機能は [Dave Signer (OPENGIS.ch)](http://www.opengis.ch) によって開発されました
 ### 機能: スナップキャッシュの並列化
 以前のバージョンのQGISでは、スナッピングインデックスキャッシュは順番に構築されており、編集を開始する前にすべてのレイヤーのインデックスが完成するまで待つ必要がありました。QGIS.orgの助成プログラムのおかげで、QGISは各レイヤーのスナッピングインデックスキャッシュを並行して構築するようになり、処理全体が高速化されました。また、スナッピングの制限も緩和され、キャッシュの構築完了を待たずに編集を開始できるようになりました。スナッピング情報は準備ができ次第、順次表示されます。
 
@@ -439,7 +439,7 @@ This feature was developed by [David Signer (OPENGIS.ch)](http://www.opengis.ch)
 
 This feature was funded by [QGIS.org](https://qgis.org)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+この機能は [Julien Cabieces (Oslandia)](https://oslandia.com/en/) によって開発されました
 ## データ管理
 ### 機能：DXFエクスポートの改善
 DXFエクスポートの処理を全面的に刷新しました。これによりエクスポート処理が安定し、新機能も追加されました。
@@ -451,7 +451,7 @@ DXFエクスポート処理全体がスレッドで実行できるように対�
 
 この機能の開発には [Kanton Schaffhausen](https://sh.ch/CMS/Webseite/Kanton-Schaffhausen/Beh-rde/Verwaltung/Volkswirtschaftsdepartement/Amt-f-r-Geoinformation-1262910-DE.html) から資金提供を受けています
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ## フォームとウィジェット
 ### 機能: リレーションエディタからジオメトリの地物を作成する
 リレーションエディターウィジェット内から直接、新しい地物を追加してそのジオメトリをデジタイズする機能を追加しました。現在表示されている親地物に関連するジオメトリ地物をより簡単に追加できるようになりました。
@@ -460,7 +460,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.c
 
 この機能開発には [QWAT user group](http://qwat.org/about/) の資金提供を受けています
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+この機能は [Julien Cabieces (Oslandia)](https://oslandia.com/en/) によって開発されました
 ### 機能: 地物選択ダイアログの改善
 リレーションエディターウィジェットから、現在表示されている地物を既存の地物にリンクすることができます。地物選択ダイアログでこれらの地物を選択できます。QWATユーザーグループのおかげで、地物の選択がキャンバスの選択と共有されるようになり、リンクしたい地物を簡単に見つけて選択できるようになりました。また、属性フォームの既存ウィジェットを再利用して、表示される地物をフィルタリングする機能（選択中の地物、地図上で表示されている地物、式に一致する地物など）も追加されました。
 
@@ -468,7 +468,7 @@ This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/
 
 この機能開発には [QWAT user group](http://qwat.org/about/) の資金提供を受けています
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+この機能は [Julien Cabieces (Oslandia)](https://oslandia.com/en/) によって開発されました
 ### 機能: ドラッグ＆ドロップフォームデザイナーのUX改善
 ドラッグ＆ドロップフォームデザイナーにいくつかのUX改善が加えられました。
 - 2つのリスト（利用可能なフィールドとレイアウトツリー）が同期されるようになりました。一方のリストでエントリを選択すると、もう一方のリストで対応するアイテムが自動的に選択されます。
@@ -498,7 +498,7 @@ WMSの凡例グラフィックと同様に、WMTSの凡例グラフィックを�
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: QGISメッシュ計算機でのフェイス定義データセットのサポート
 フェイスおよび頂点に定義されたすべてのデータセット種別に対してメッシュ計算機を使用できます。また、メッシュ計算機の結果を異なる名前や形式で保存することもできます。これにより、例えばFLO-2DやHEC-RASのデータをQGISメッシュ計算機で扱うことが可能になります。
 
@@ -506,7 +506,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 This feature was funded by [Austrian Ministry of Agriculture, Forestry, Environment and Water Management](https://www.bmlfuw.gv.at)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ## プロセシング
 ### 機能: 既存のGeoPackageへの新しいレイヤーの追加
 既存のGeoPackageに新しいレイヤーを追加できるよう、既存の レイヤーのパッケージ化 プロセッシングアルゴリズムを改善しました。この機能を利用するには、OVERWRITEパラメーターを無効にして既存のGeoPackageを指定するだけです。
@@ -515,67 +515,67 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutra
 
 この機能の開発には [BikePlan](https://www.bikeplan.ch/) の資金提供を受けています
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch)
+この機能は [Matthias Kuhn (OPENGIS.ch)](https://www.opengis.ch) によって開発されました
 ### 機能: ファジー理論 - ラスタのファジー化 (linear membership)
 ラスターのファジー化（線形メンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、線形ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは線形メンバーシップ関数に従います。
 
 ![image47](images/entries/bfb37d710293c252dae11b67b25bdc1431f13815.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: ファジー理論 - ラスタのファジー化 (power membership)
 ラスターのファジー化（べき乗メンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、べき乗ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いはべき乗メンバーシップ関数に従います。
 
 ![image48](images/entries/7a81ecd4414ee39b37e575863687615c88e9a856.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: Fuzzy Logic - Fuzzfiy ラスタ (small membership)
 ラスターのファジー化（smallメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'small \' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは  \'small \' メンバーシップ関数に従います。 \'small \' 関数は、半メンバーシップの点（中間点、結果は0.5）を設定するユーザー定義の2つの入力ラスター値と、関数の立ち上がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image49](images/entries/2bef948a7b02bd26208ca98e9ddb243d46d104a6.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: ファジー理論 - ラスタのファジー化 (large membership)
 ラスターのファジー化（largeメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'large \' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは \'large \' メンバーシップ関数に従います。 \'large \' 関数は、半メンバーシップの点（中間点、結果は0.5）を設定するユーザー定義の2つの入力ラスター値と、関数の立ち上がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image50](images/entries/10963d11812664a76d4fc3fac72777c34a08c767.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: ファジー理論 - ラスタのファジー化 (gaussian membership)
 ラスターのファジー化（gaussianメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'gaussian \' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは  \'gaussian \' メンバーシップ関数に従います。gaussian関数は、gaussian関数の中間点（中間点、結果は1）を設定するユーザー定義の2つの入力値と、関数の広がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image51](images/entries/58068dc6518a0df20a39df69ea4175f7b196b049.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: ファジー理論 - ラスタのファジー化 (near membership)
 ラスターのファジー化（nearメンバーシップ）アルゴリズムは、ファジー論理アルゴリズムのネイティブ実装です。入力ラスターをファジー化されたラスターに変換し、 \'near\' ファジーメンバーシップ関数に従って0から1の間の値を割り当てます。値0は定義されたファジー集合への非所属を意味し、値1は完全な所属を表します。その中間では、ラスター値のメンバーシップの度合いは \'near\' メンバーシップ関数に従います。near関数は、near関数の中間点（中間点、結果は1）を設定するユーザー定義の2つの入力値と、関数の広がりを制御する定義済みの関数スプレッドを使用して構成されます。
 
 ![image52](images/entries/a4873da4c5e782a14caaa02f279ef92ba5bf5a38.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: 頂点を高密度化アルゴリズムをC++に移植
 以前のPython実装と比較して処理速度を向上させるため、「カウントによる頂点の追加」アルゴリズムをC++に移植しました。新しいアルゴリズムではcountパラメーターが動的パラメーターとして公開され、式やフィールド値で制御できるようになりました。
 
 ![image53](images/entries/680eb97f65d08de5541f4b1f5ac4425f45988cc2.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: 指定範囲にランダム点群アルゴリズムをC++に移植
 「範囲内のランダムポイント」アルゴリズムをC++に移植しました。これにより、以前のPython実装と比較して処理速度が向上しました。新しいアルゴリズムでは、すべてのポイント間で一定の距離を保つランダムなポイントを探索する際の最大再試行回数を指定する詳細パラメーターも公開されています。
 
 ![image54](images/entries/c452431d9a2cd9f9f76869cf98e09e18bf2a81a4.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: 線密度アルゴリズム
 このバージョンでは、ラスターベースのライン密度を計算するネイティブアルゴリズムを追加しました。このアルゴリズムは、検索半径と検索半径内のラインの重みに基づいてライン密度を計算します。このアルゴリズムは、ArcGIS Spatial Analyst拡張機能の機能をQGISに移植したものです。
 
 ![image55](images/entries/b28bbe3d5129ccc5dd61585dc1a9e31383a59c6f.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 機能: 新アルゴリズム \"Shapefileの修復\"
 GDALを使用して、破損または欠落した.SHXファイルを持つシェープファイルを修復する新しいアルゴリズムを追加しました。
 
 ![image56](images/entries/c3a6a174187284126ea0af289614505ab8c0c593.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: 新アルゴリズムび追加 \"データセット変更の検出\"
 このアルゴリズムは2つのベクターレイヤーを比較し、両者の間で変更されていない地物、追加された地物、削除された地物を判定します。同じデータセットの2つの異なるバージョンを比較するために設計されています。
 
@@ -589,7 +589,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ![image57](images/entries/e38dcea12e1198341eb9f0bd45a33ebf7eda390b.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能:  \"Join Attributes by Location\" に、最大重複面積を持つ一致地物の属性のみを取得する新しいモードを追加
 これにより、一致する地物が1つだけであることが想定され、単に接触しているだけの地物や微小なスリバーポリゴンの重なりのみを持つ地物を含めたくない場合の、ポリゴン→ポリゴンの結合が簡単に行えるようになります。
 
@@ -597,7 +597,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: ベクタのネイティブアフィン変換アルゴリズムを追加
 GRASSおよびSAGAバージョンと比較して、以下の利点があります:
 - Z値/M値の完全サポートと、曲線を損なわない曲線ジオメトリの処理
@@ -608,7 +608,7 @@ GRASSおよびSAGAバージョンと比較して、以下の利点がありま�
 
 ![image59](images/entries/1bfee3c2e208ecca6c235d96f83966ec808a0b1c.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: gdal_viewshed アルゴリズムの追加
 プロセッシングツールボックスから新しい gdal_viewshed ツールを利用できるようになりました。注意：GDAL 3.1以上が必要です。
 
@@ -621,13 +621,13 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 この機能開発は  [Limerick City and County Council](https://www.limerick.ie/council) の資金提供を受けました
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: ブラウザパネルにhtmlファイルを表示
 この機能により、.htm(l)ファイルをブラウザーパネルから表示・開けるようになりました。これらのファイルはデータファイルや地図プロジェクトのドキュメントとしてよく使用されます。
 
 ![image61](images/entries/0db8930d20ca6f2fbf5b29593afdcf59e1af8d1e.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: ブラウザに \"Open Document\...\" アクションを追加しました
 ブラウザーで特定のファイルを右クリックすることで、そのファイル種別に対応したデフォルトの外部アプリケーションで開けるようになりました。
 
@@ -637,7 +637,7 @@ PDF、ODS、XLS(X)、CSV、TXT、PNG、JPEG、TIFF、SVGに対応しています
 
 ![image62](images/entries/447f201d2342a64912bbef1e1d0aa3ebb8963ae4.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: ブラウザーに表示されるアイテムのカスタマイズが可能
 ブラウザーに表示されるアイテムをカスタマイズできるようになりました。ユーザーはインターフェースカスタマイズダイアログで、ブラウザーパネルのルートアイテムの一部を非表示にするかどうかを設定できます（例：お気に入り、POSTGISプロバイダーなど）。
 
@@ -658,23 +658,23 @@ WMTSレイヤーコレクションアイテムに使用されるアイコンを�
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+この機能は [Samweli Mwakisambwe](http://samweli.github.io/) によって開発されました
 ### 機能: WMS / WMTSおよびWCSサービスのレイヤーメタデータタブにメタデータURLプロパティを追加
 This feature was funded by [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+この機能は [Samweli Mwakisambwe](http://samweli.github.io/) によって開発されました
 ### 機能: WMSレイヤーのメタデータのディメンションメタデータを取得して表示
 ![image65](images/entries/d058ac6b89a8d06169b06580843967ad26e1ef54.webp)
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+この機能は [Samweli Mwakisambwe](http://samweli.github.io/) によって開発されました
 ### 機能: OGCサービスエントリへの更新アクションを追加
 ![image66](images/entries/7ce331ee78be7f8b0693c653ecc58916d70a1a92.gif)
 
 This feature was funded by [Kartoza](http://kartoza.com/)
 
-This feature was developed by [Samweli Mwakisambwe](http://samweli.github.io/)
+この機能は [Samweli Mwakisambwe](http://samweli.github.io/) によって開発されました
 ### 機能: 3Dスタックメッシュ
 MDALとQGISが3Dスタックメッシュに対応しました。特にTUFLOW-FV形式をサポートしています。このリリースでは、QGISインターフェースで適切な平均化手法を選択することで、他の2Dデータセットと同様にデータを参照することができます。
 
@@ -682,7 +682,7 @@ MDALとQGISが3Dスタックメッシュに対応しました。特にTUFLOW-FV�
 
 This feature was funded by [TUFLOW](http://www.tuflow.com)
 
-This feature was developed by [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は [Peter Petrik (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能: シェープファイルの符号化のとても多くの数の問題を修正
 これにより、QGISで長年にわたる問題となっていたシェープファイルのエンコーディング処理（設計上の欠陥？）が修正されます。
 
@@ -703,7 +703,7 @@ GDALサイドの属性デコードとQGISサイドのデコードを処理する
 
 これにより、両方の利点が得られます。シェープファイルが正しいエンコーディングで読み込まれる優れたデフォルト動作を実現しつつ、必要に応じてレイヤーごとにユーザーが上書きできる柔軟性も維持されています。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 機能: Oracleカーブ形式編集のサポート
 以前のバージョンのQGISでは、Oracleデータベースから取得した一部のジオメトリタイプを編集することができませんでした。そのため、以下のジオメトリタイプへの編集サポートを追加しました:
 - CircularString(Z)
@@ -714,7 +714,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 この機能は Lille Metropole によって資金提供されました
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+この機能は [Julien Cabieces (Oslandia)](https://oslandia.com/en/) によって開発されました
 ### 機能: WMS プロバイダでMBTiles ラスタの対応
 この機能は、WMSプロバイダーにMBTilesタイルラスターマップのサポートを追加し、WMTSやXYZタイルと同じコードパスを使用するようにします。WMSプロバイダーを通じたこのアプローチの利点は以下の通りです:
 - 高DPIディスプレイでのタイルの正しいスケーリング
@@ -793,7 +793,7 @@ variables QGIS\_SERVER\_ADDRESS and QGIS\_SERVER\_PORT
 ### 機能: DXFサーバーエクスポートパラメーター NO_MTEXT および FORCE_2D の追加
 QGISサーバーに、生成されるDXFファイルのテストおよびラインシンボロジーを制御するための新しいパラメーター `NO_MTEXT` および `FORCE_2D`  が追加されました。GetDxfリクエストに不足していたパラメーターを追加します。
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### 機能: WMS GetLegendGraphicへのJSONサポートの追加
 この機能は、JSON形式でエンコードされたGetLegendGraphicレスポンスのサポートを追加します。まさにこの目的のために QgsLegendRenderer::exportLegendToJson を追加した  \@pblottiere の以前の作業を基に構築されています。
 
@@ -854,7 +854,7 @@ This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuh
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+この機能は [Alessandro Pasotti](https://www.itopen.it/) によって開発されました
 ### 機能: Sandro Santilliによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -882,7 +882,7 @@ This feature was funded by [QGIS.ORG (through donations and sustaining membershi
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+この機能は [Even Rouault](http://www.spatialys.com/) によって開発されました
 ### 機能: Alexander Bruyによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1020,6 +1020,6 @@ This feature was developed by [Sebastien Peillet](https://www.oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 
 {{<content-end >}}

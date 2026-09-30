@@ -638,7 +638,7 @@ This feature was developed by [Even Rouault](https://github.com/rouault)
 
 この機能は QGIS Switzerland user group の資金提供で開発されました
 
-この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ### 機能:PDALのラスターへのエクスポート（TIN）アルゴリズムでmax-triangle-edge-lengthをサポート
 PDALのラスターへのエクスポート（TIN）アルゴリズムにmax-triangle-edge-lengthパラメーターのサポートが追加されました。これにより、エッジの長さが指定したしきい値より大きいトライアングルを無視できるようになります。<br />この機能にはPDAL 2.6.0以上およびwrench 1.2.2以上が必要です。
 
@@ -719,7 +719,7 @@ This feature was developed by [Germap](https://github.com/gacarrillor)
 
 この機能は Hauts-de-France region の資金提供で開発されました
 
-この機能は  [Valentin Buira](https://github.com/ValentinBuira) によって開発されました
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ## アプリケーションとプロジェクトのオプション
 ### 機能: OAuth2 自動リフレッシュ
 QGISにOAuth2接続の自動更新メカニズムが追加されました。<br />自動更新を停止するためのキャッシュクリーンアップは定期的に、およびプロジェクトからレイヤーが削除されたときにトリガーされます。これは未使用トークンの不必要で無限の更新を避けるために必要です。
@@ -1041,7 +1041,7 @@ This feature was developed by [Even Rouault (Spatialys)](https://www.spatialys.c
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Julien Cabieces (Oslandia)](https://oslandia.com/en/)
+この機能は [Julien Cabieces (Oslandia)](https://oslandia.com/en/) によって開発されました
 ### Feature: Bug Fixes by Denis Rouzaud (OPENGIS)
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.40バックポートコミット（GitHub） |
 | --- | --- | --- | --- |
@@ -1194,6 +1194,6 @@ This feature was developed by [Alexander Bruy (QCooperative)](https://www.qcoope
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 
 {{<content-end >}}

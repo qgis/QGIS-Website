@@ -68,4 +68,4 @@ jobs:
       with:
         commit_message: '🤖 Contributors and organizations data updated via GitHub Action'
         repository: ./qgis-website
-        file_pattern: 'data/contributors/*.json data/commercial_support/contributor_matches.json'
+        file_pattern: 'data/contributors/*.json static/data/contributors/*.json data/commercial_support/contributor_matches.json'

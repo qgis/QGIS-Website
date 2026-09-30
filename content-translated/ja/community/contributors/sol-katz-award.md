@@ -3,8 +3,7 @@ HasBanner: true
 draft: false
 heroImage: img/involve.jpg
 sidebar: true
-subtitle: Celebrating QGIS contributors who received the prestigious Sol Katz Award
-  for Geospatial Free and Open Source Software.
+subtitle: 地理空間フリー・オープンソースソフトウェア分野で権威ある Sol Katz 賞を受賞した QGIS コントリビューターの皆さんを称えます。
 title: Sol Katz賞 受賞者
 type: page
 
@@ -15,9 +14,9 @@ type: page
 
 {{<rich-content-start themeClass="coloring-1" >}}
 ## Sol Katz 賞を受賞した QGIS 貢献者
-The **Sol Katz Award for Geospatial Free and Open Source Software (GFOSS)** is awarded annually by [OSGeo](https://www.osgeo.org/) to individuals who have demonstrated leadership in the GFOSS community. Recipients of the award have contributed significantly through their activities to advance open source ideals in the geospatial realm.
+**Sol Katz 地理空間フリー・オープンソースソフトウェア（GFOSS）賞** は、[OSGeo](https://www.osgeo.org/) により、GFOSS コミュニティにおいてリーダーシップを発揮した個人に毎年授与されるものです。この賞の受賞者は、その活動を通じて、地理空間分野におけるオープンソースの理念を推進するために多大な貢献をしてきました。
 
-QGIS has a strong history of contributions from individuals who have been recognized by OSGeo at an international level. Several QGIS community members have been honored with this prestigious award, highlighting the excellence and recognition of the QGIS community and strengthening our connection with OSGeo projects and values.
+QGISには、OSGeoから国際的なレベルで評価されてきた個人による長年にわたる貢献の歴史があります。QGISコミュニティのメンバー数名がこの名誉ある賞を受賞しており、これはQGISコミュニティの卓越性と評価を浮き彫りにするとともに、私たちとOSGeo のプロジェクトとの結びつきと価値を強めるものとなっています。
 
 <div style="text-align:center;">
   <a href="https://www.osgeo.org/community/awards/" class="button is-success is-outlined" style="margin-right: 1rem;" target="_blank" rel="noopener">

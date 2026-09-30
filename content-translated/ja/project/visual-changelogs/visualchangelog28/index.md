@@ -12,7 +12,7 @@ type: visual-changelog
 # QGIS 2.8の変更履歴{#changelog28 }
 リリース日: 2015-02-20
 
-This is the change log for the next release of QGIS - version 2.8 \' Wien\'. Wien is German for \'Vienna\' - host city to our developer meet up in November 2009 and again in March 2014.
+これは、QGISの次のリリースであるバージョン2.8「Wien」の変更ログです。「Wien」はウィーンのドイツ語で、2009年11月と再び2014年3月の開発者会議のホスト都市です。
 
 **長期サポート**
 
@@ -26,35 +26,35 @@ LTRが重要な場合は、QGISプロジェクトを直接サポートするこ�
 
 QGIS 2.8は、最も人気のあるフリーデスクトップGISをよりいっそう多くの機能が充実して役立つようにするために、非常に多くの新機能、改良、改良が含まれているため、特別リリースです。
 
-Whenever new features are added to software they introduce the possibility of new bugs - if you encounter any problems with this release, please file a ticket [on the QGIS Bug Tracker](http://hub.qgis.org).
+新しい機能がソフトウェアに追加されるたびに、新しいバグが発生する可能性があります。このリリースで何か問題が発生した場合は、 [QGISバグトラッカー](http://hub.qgis.org) にチケットを提出してください。
 
 **謝辞**
 
 私たちは、開発者、ドキュメント作成者、テスター、そして時間と労力をボランティアしている（あるいは人々に資金を提供する）多くの人々に感謝したいと思います。
 
-From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
+QGISコミュニティはあなたがこのリリースを楽しんでいただけることを希望します！あなたが時間やお金を寄付したり、QGISをより素晴らしいものにすることに関与したいなら、[qgis.org](https://qgis.org) のサイトを見て手を貸してください！
 
 最後に、このプロジェクトに提供した貴重な財政支援について、公式スポンサーに感謝したい。
-- **GOLD Sponsor: Asia Air Survey, Japan** <http://www.asiaairsurvey.com/>
-- SILVER Sponsor: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
-- SILVER Sponsor: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
-- SILVER Sponsor: [Office of Public Works, Ireland, Ireland](http://www.opw.ie/)
+- **ゴールドスポンサー: Asia Air Survey, 日本** <http://www.asiaairsurvey.com/>
+- シルバースポンサー: [Sourcepole AG, Switzerland](http://www.sourcepole.com/)
+- シルバースポンサー: [State of Vorarlberg, Austria](http://www.vorarlberg.at/)
+- シルバースポンサー: [アイルランドの公共事業局、アイルランド](http://www.opw.ie/)
 - BRONZE Sponsor: [GIS3W, Italy](http://www.gis3w.it/)
-- BRONZE Sponsor: [www.molitec.it, Italy](http://www.molitec.it/)
-- BRONZE Sponsor: [www.argusoft.de, Germany](http://www.argusoft.de)
-- BRONZE Sponsor: [www.openrunner.com, France](http://www.openrunner.com)
-- BRONZE Sponsor: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
-- BRONZE Sponsor: [Customer Analytics, USA](http://www.customeranalytics.com/)
-- BRONZE Sponsor: [Urbsol, Australia](http://www.urbsol.com.au/)
-- BRONZE Sponsor: [MappingGIS, Spain](http://www.mappinggis.com/)
-- BRONZE Sponsor: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
-- BRONZE Sponsor: [ADLARES GmbH, Germany](http://www.adlares.com/)
-- BRONZE Sponsor: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
+- ブロンズスポンサー: [www.molitec.it, Italy](http://www.molitec.it/)
+- ブロンズスポンサー: [www.argusoft.de, Germany](http://www.argusoft.de)
+- ブロンズスポンサー: [www.openrunner.com, France](http://www.openrunner.com)
+- ブロンズスポンサー: [GKG Kassel,(Dr.-Ing. Claas Leiner), Germany](http://www.gkg-kassel.de/)
+- ブロンズスポンサー: [Customer Analytics, USA](http://www.customeranalytics.com/)
+- ブロンズスポンサー: [Urbsol, Australia](http://www.urbsol.com.au/)
+- ブロンズスポンサー: [MappingGIS、スペイン](http://www.mappinggis.com/)
+- ブロンズスポンサー: [Lutra Consulting, UK](http://www.lutraconsulting.co.uk/)
+- ブロンズスポンサー: [ADLARES GmbH, Germany](http://www.adlares.com/)
+- ブロンズスポンサー: [Avioportolano Italia, Italy](http://www.avioportolano.it/)
 - BRONZE Sponsor: [Faculty of Geology, Geophysics and Environmental Protection, AGH, ​University of Science and Technology, Poland](http://www.wggios.agh.edu.pl/en)
 
-A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become an official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts.
+プロジェクトに大小問わず財政上の貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/en/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式プロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップのページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへのご支援は、半年ごとの開発者会議の開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。
 
-If you enjoy using QGIS, please consider making a donation to support the project - either [financial](https://qgis.org/en/site/getinvolved/donations.html) or of [your time and skills](https://qgis.org/en/site/getinvolved/index.html)! Lastly we would like to also take a moment to encourage you to fund a [special campaign](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) by one of our QGIS developers to get a working test suite for QGIS so that we can improve out quality assurance process and deliver you the best possible releases.
+もしQGISを楽しんで使っているのであれば、プロジェクトを支援するために寄付することを検討してください - [金銭的なもの](https://qgis.org/en/site/getinvolved/donations.html) でも、[あなたの時間とスキル](https://qgis.org/en/site/getinvolved/index.html) でも構いません！最後に、品質保証プロセスを改善し、可能な限り最高のリリースを提供するために、QGISの開発者の一人による [特別キャンペーン](http://blog.vitu.ch/10102014-1046/crowdfunding-initiative-automated-testing) に資金を提供することをお勧めさせてください。
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 
@@ -103,7 +103,7 @@ If your WMS server supports contextual legends, you can make use of them in QGIS
 
 **This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**この機能は次の方によって開発されました:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/e516a25492b547113c487d00475cfe07bc7b131e.webp)
 ## データマネジメント
@@ -134,9 +134,9 @@ QGISでラインを正確に平行または直角にデジタル化したり、�
 - マルチパート機能のサポート
 - 頂点数減少についての統計
 
-**This feature was funded by:** [Tracks for Africa](http://tracks4africa.com/)
+**この機能は、以下によって資金提供されました：** [Tracks for Africa](http://tracks4africa.com/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**この機能は次の方によって開発されました:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 
 ![](images/entries/20b7f96ffc7d37b8c2ae09189d7957a929a716e5.webp)
 ### Feature: Snapping improvements
@@ -144,16 +144,16 @@ There is a new snapping mode : **snap to all layers** which makes it quick to en
 
 **This feature was funded by:** [Ville de Vevey, SITNyon](http://www.vevey.ch/) and [QGIS Usergroup Switzerland](http://www.qgis.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**この機能は次の方によって開発されました:** [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/8454af2743154585eb82325ab2694e50e7d9efcd.webp)
 ## レイヤ凡例
 ### Feature: Show rule-based renderer\'s legend as a tree
 Advanced users who leverage QGIS\'s rule based renderer system will be pleased to see that the rules are now presented as a tree in the legend. Better still, each node in the **tree** can be **toggled on/off** individually providing for great flexibility in which sublayers get rendered in your map.
 
-**This feature was funded by:** [SIGE](http://www.sige.ch/)
+** この機能は次の方の資金提供で開発されました:** [SIGE](http://www.sige.ch/)
 
-**This feature was developed by:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
+**この機能は次の方によって開発されました:** [Lutra Consulting](http://www.lutraconsulting.co.uk/) in cooperation with [Kartoza](http://kartoza.com/)
 
 ![](images/entries/0d39448aa0893d7a71c5241aa2181750535e62c3.webp)
 ## マップコンポーザー
@@ -185,7 +185,7 @@ You can now drag and drop python scripts into QGIS window and they will be execu
 
 **This feature was funded by:** [French Ministry of Ecology, Sustainable Development and Energy](http://www.developpement-durable.gouv.fr/)
 
-**This feature was developed by:** [Camptocamp](http://www.camptocamp.com)
+**この機能は次の方によって開発されました:** [Camptocamp](http://www.camptocamp.com)
 
 ![](images/entries/cd198b98cf28e611f5c2e3be93bc5ec90dd0a5b4.webp)
 ### 機能：新しいアルゴリズム
@@ -234,7 +234,7 @@ In the DB Manager SQL editor, it is now possible to highlight a portion of the S
 ### 機能:サーバpythonプラグイン
 PythonプラグインによるQGISサーバーのサポートにより、Pythonのパワーがサーバー側にもたらされ、新しい機能の迅速かつ効率的な開発と展開が可能になります。
 
-**This feature was developed by:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
+**この機能は次の方によって開発されました:** [Alessandro Pasotti (ItOpen)](http://www.itopen.it/)
 ### 機能: レイヤスタイルのサポート
 - QGIS Serverは、GetMapリクエストで定義済みのレイヤースタイルをサポートするようになりました。
 - QGIS ServerはGetStylesリクエストで複数のスタイルをサポートするようになりました（下記のシンボルセクションを参照）
@@ -267,7 +267,7 @@ It is now possible to set multiple styles for a layer and then easily toggle bet
 
 **This feature was funded by:** [Regione Toscana](http://www.regione.toscana.it/)
 
-**This feature was developed by:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+**この機能は次の方によって開発されました:** [Gis3W](http://www.gis3w.it/), [Lutra Consulting](http://www.lutraconsulting.co.uk/)
 
 ![](images/entries/e6d0058bbae51c52fb9fffc79d4cc459fbaf853b.webp)
 ### 機能：より多くのデータ定義シンボル設定
@@ -281,7 +281,7 @@ DXFファイルのエクスポータ機能が改善され、元のQGISシンボ�
 
 **This feature was funded by:** [Japan Space Imaging Corporation (JSI)](http://www.spaceimaging.co.jp/)
 
-**This feature was developed by:** [Faunalia](http://www.faunalia.eu/)
+**この機能は次の方によって開発されました:** [Faunalia](http://www.faunalia.eu/)
 
 ![](images/entries/b655549a3336c2fb16eef87f6f30fe50f5abe9f9.webp)
 ## ユーザーインタフェース

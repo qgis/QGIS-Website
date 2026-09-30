@@ -17,10 +17,10 @@ type: case-study
   <span class="icon">
     <i class="fas fa-calendar-alt"></i>
   </span>
-  <span>March 01, 2015</span>
+  <span>2015年3月1日</span>
 </p>
 
-The Institute of Environmental Geology and Geoengineering (IGAG) of the National Research Council (CNR) is located in Rome, in the Area of Research \"Roma 1\". It was founded in 2002 by regrouping five former research Institutes and Centers that had been active for more than 40 years in their field of expertise. IGAG covers a wide range of scientific topics in the field of Earth sciences, mainly focusing towards the study of:
+米国学術研究会議（CNR）の環境地質とジオエンジニアリング研究所（IGAG）は、ローマ市の「ローマ1」研究エリアに位置しています。それは、それぞれの専門分野で40年以上にわたり活動していた5つの元研究機関やセンターの再編によって2002年に設立されました。IGAGは地球科学の分野で科学的なトピックの広い範囲をカバーしており、主に次の研究に焦点を当てています：
 - 汚染された土壌及び水の地球化学環境および修復;
 - 廃水の処理を含む鉱床および鉱物処理、;
 - 岩の発掘調査のジオエンジニアリングおよび安全性。
@@ -38,7 +38,7 @@ The Institute of Environmental Geology and Geoengineering (IGAG) of the National
 
 地震マイクロゾーニングは均質な地震挙動で特徴付けられる領土の領域の同定を通じて、局地的な地震動を評価します。
 
-The Guidelines and Criteria for Seismic microzoning 2008 (<http://www.protezionecivile.gov.it/jcms/it/view_pub.wp?contentId=PUB1137>) provide standards for seismic microzoning studies on Italian territory; they distinguish three levels of increasing depth (from 1 to 3).
+地震マイクロゾーニングのためのガイドラインおよび基準2008（<http://www.protezionecivile.gov.it/jcms/it/view_pub.wp?contentId=PUB1137>）では、イタリアの領土の地震マイクロゾーニング研究のための基準を提供します。それらは深さを3レベル（1〜3）で区別します。
 
 第１レベルの地震マイクロゾーニングは3つの主題図の作成で構成されています。
 1. 地震マイクロゾーニング研究のための調査を含む調査マップ。
@@ -61,27 +61,27 @@ QGISの最新バージョン（執筆時点では2.8.1）に統合グラフィ�
 
 モデルが入力として取るものは（図2）：
 - 標高値を持つフィールドを含む等高線のシェープ
-- The name of the field containing elevation values;
+- 標高値を含むフィールドの名前
 - DEMと傾斜に対するメートル単位での望ましいラスタ解像度（デフォルトは10）
 - 15度超の勾配を持つ領域に交差する地物を抽出するポリゴンシェープファイル
 - 結果のポリゴンレイヤーの名前
 
 <figure>
 <img src="../images/italy_igag2.png" class="align-right" alt="italy_igag2.png" />
-<figcaption>(Fig. 2) Model input form (left) and execution log (right).</figcaption>
+<figcaption>(図2) モデル入力フォーム（左）と実行ログ（右）。</figcaption>
 </figure>
 
 起動すると、モデルは、次の操作を実行します。
 - GRASSツールv.to.rast.attributeは、等高線シェープファイル、Zフィールドの名前およびラスター解像度を入力として取り、等高線をラスターに変換します；
 - GRASSツールr.surf.contourは、前のステップからのラスター化された一時出力およびラスター解像度を入力として取り、標高モデルを作成します。
-- The GDAL tool "gdaldem" generates the slope expressed as degrees from the elevation model;
+- GDALツール「gdaldem」は標高モデルから度で表される勾配を作成します。
 - GRASSツールr.mapcalculator式を使用して、（この値はマイクロゾーニングガイドラインで符号化され、そしてそれは固定されている）を15度よりも大きい勾配を有する領域を識別する1ビットラスターを生成するために使用されます。
 
 if(A\>15,1,null())
 
 ここでAはgdaldemによって生成された一時的な勾配ラスタです。
-- The GDAL tool "gdal_polygonize" converts the 1 bit raster to polygons;
-- The QGIS tool "Intersection" is used to overlay the areas with slope greater than 15 degrees with the chosen intersection layer.
+- GDALツール「gdal_polygonize」は1ビットラスターをポリゴンに変換します;
+- 15度以上の傾きを持つ領域と、選択された交差レイヤーをオーバーレイするため、QGISツール「交差」が使用されます。
 
 結果は、地滑りポリゴンレイヤー（図3）または岩相地図といった主題図から自動的に抽出された、勾配値が15度よりも大きい不安定になりやすい領域を有するポリゴンレイヤーです。
 
@@ -91,7 +91,7 @@ if(A\>15,1,null())
 </figure>
 
 ## 結論
-This work clearly demonstrates that open source GIS tools like QGIS, GRASS, GDAL/OGR, can successfully be used for spatial analysis and data processing aimed at first level seismic microzonation studies. In this example work, QGIS has been used as a simplified and unified interface for different high quality GFOSS tools; the Graphical Modeler allows to intuitively construct geoprocessing models that can be easily shared as portable and cross-platform tools that doesn\'t require expensive software licenses. The tool leverages the QGIS modeling capabilities to graphically chain different algorithms, defining input and output parameters and leaving to the software the task of managing intermediate data output. The use of GRASS algorithms does not require defining and using a GRASS database and mapset, greatly simplifying the design of the model. Future developments include the creation of a package of tools and models, based on open source software, that can be used to simplify and speed up spatial analysis tasks necessary for seismic microzonation studies.
+この作品は、QGIS、GRASS、GDAL/OGR、のようなオープンソースGISツールが、初級レベルの地震マイクロゾーニングの研究を目的とした空間分析とデータ処理に正常に使用できることを明らかに実証しています。この例の作業では、QGISは異なる高品質GFOSSツールの簡易な統一インタフェースとして使用されてきました。グラフィカルモデラ－でジオプロセシングモデルを直感的に構築し、それを高価なソフトウェアのライセンスを必要としないポータブルでクロスプラットフォームなツールとして簡単に共有できます。そのツールは、QGISのモデリング機能を活用して異なるアルゴリズムを視覚的に連鎖させ、入力および出力パラメータを定義し、中間データ出力を管理するタスクはソフトウェアに残しています。GRASSアルゴリズムを使用するためにGRASSデータベースと地図セットを定義したり使用する必要はなく、モデルの設計を大幅に簡素化できます。今後の開発には、オープンソースのソフトウェアに基づいたツールとモデルのパッケージの作成が含まれ、それは地震マイクロゾーニングの研究のために必要な空間解析作業を簡素化し高速化するために使用できます。
 ## リファレンス
 - G. Baldassarre; Gallicchio, S.; Giannandrea, P. & Tropeano, M.: \"Relazione Finale Geolitologica per la microzonazione sismica di livello 1dei Comuni della Provincia di Foggia Dipartimento di Geologia e Geofisica dell\'Università di Bari, 2011\"
 - Cavinato,G.P.; Cavuoto, G.; Coltella, M.; Cosentino, G.; Paolucci, E.; Peronace, E. & Simionato, M.: \"Studio di fattibilità per il monitoraggio e la messa in sicurezza delle aree urbane a rischio di stabilità statica e vulnerabilità strutturale del Comune e della Provincia di Foggia -CIPE 20/2004 Consiglio Nazionale delle Ricerche - Istituto di Geologia Ambientale e Geoingegneria, 2013, 526\"

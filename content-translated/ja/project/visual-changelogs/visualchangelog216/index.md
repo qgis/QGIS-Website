@@ -24,7 +24,7 @@ This is the log for the next release of QGIS - version 2.16.0 \'Nødebo\'. The D
 
 If you are upgrading from QGIS 2.14 you will find a great many new features in this release. We encourage you to peruse the changelogs for [previous releases](https://www.qgis.org/en/site/forusers/visualchangelogs.html) as this QGIS 2.16 release includes all features published in those releases too.
 
-Whenever new features are added to software they introduce the possibility of new bugs - if you encounter any problems with this release, please file a ticket [on the QGIS Bug Tracker](http://hub.qgis.org).
+新しい機能がソフトウェアに追加されるたびに、新しいバグが発生する可能性があります。このリリースで何か問題が発生した場合は、 [QGISバグトラッカー](http://hub.qgis.org) にチケットを提出してください。
 
 [![Introducing Nødebo](images/pronouncingnodebo.png)](http://www.youtube.com/watch?v=GKg2SHmBExs)
 
@@ -34,7 +34,7 @@ Pronouncing Nødebo\...
 
 We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
 
-QGIS is supported by donors and sponsors. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become an official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは、寄付者やスポンサーによって支えられています。プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/ja/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式のプロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 QGIS is Free software and you are under no obligation to pay anything to use it -in fact we want to encourage people far and wide to use it regardless of what your financial or social status is - we believe empowering people with spatial decision making tools will result in a better society for all of humanity. If you are able to support QGIS, you can [![donate here](https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif)](https://qgis.org/en/site/getinvolved/donations.html).
 
@@ -49,13 +49,13 @@ The previous setting for include WKT when copying features has been replaced wit
 
 ![image95](images/entries/826068a22b7e7d472720f2404e293fc81de32850.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：空間ファイルのブックマークをプロジェクトファイルに保存する
 空間的なブックマークを作成する場合は、アクティブなプロジェクトファイルにブックマークを保存することができます。ブックマークパネルをスクロールして、この機能を有効にするチェックボックスを見つけます。
 
 ![image96](images/entries/fe01b36ab39b8cc21e6ec875c4baadc890cf6519.png.400x300_q85_crop.webp)
 
-This feature was developed by [Stéphane Brunner](http://www.camptocamp.com/)
+この機能は [Stéphane Brunner](http://www.camptocamp.com/) によって開発されました
 ### 機能：GNSS GNRMCメッセージのサポート
 QGIS can now handle GLONASS satellite data (\$GN\* lines) to get a more precise Position from external GPS/GNSS Receivers.
 
@@ -67,7 +67,7 @@ QGISクリップボードハンドラは、GeoJSON地物コレクションのネ
 
 ![image98](images/entries/b649df59dc031b26896e9bba2e20c8380081b741.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：マップのヒントの改善
 - Maptipの可視性がセッション間で保存されるようになりました
 - Maptipsは画像、動画、URLリンクなどのHTMLコンテンツを表示できるようになりました
@@ -76,7 +76,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [OPENGIS.ch GmbH](http://www.opengis.ch)
 
-This feature was developed by [Marco Bernasocchi (OpenGIS.ch)](http://www.opengis.ch)
+この機能は [Marco Bernasocchi (OpenGIS.ch)](http://www.opengis.ch) によって開発されました
 ### 機能：QGISファイルタイプのデスクトップMIMEアイコン
 It\'s now easier to recognise and differentiate QGIS\'s file types on your operating system files manager. There are now desktop MIME Icons for the following file types:
 - \*.qgs - QGISプロジェクトファイル
@@ -86,7 +86,7 @@ It\'s now easier to recognise and differentiate QGIS\'s file types on your opera
 
 ![image100](images/entries/9161a4c36a0149b32cd18119954ac32ce42788a6.PNG.400x300_q85_crop.webp)
 
-This feature was developed by [Alexandre Neto](https://gisunchained.wordpress.com/)
+この機能は [Alexandre Neto](https://gisunchained.wordpress.com/) によって開発されました
 ## ユーザーインタフェース
 ### 機能：地図キャンバスの拡大鏡
 拡大鏡ツールがQGISに追加されました。これにより、指定された縮尺で地図を拡大することができます。これにより、地図の縮尺を変えずにマップを拡大することができ、ラベルやシンボルの位置を簡単に微調整することができます。さらに、デフォルトの倍率値を設定で定義することができます。これは、高解像度のスクリーンに非常に便利です！
@@ -95,7 +95,7 @@ This feature was developed by [Alexandre Neto](https://gisunchained.wordpress.co
 
 This feature was funded by [the QWAT project](https://github.com/qwat)
 
-This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
+この機能は [Paul Blottiere（Oslandia）](http://oslandia.com/) によって開発されました
 ### 機能：地図のズーム機能の改善
 QGIS 2.16では、マップキャンバスをズームイン/ズームアウトする方法が改善されました。
 - Holding down `Ctrl` while using the mouse wheel to zoom in or out now results in a finer zoom. This behavior brings canvas into line with composer.
@@ -104,7 +104,7 @@ QGIS 2.16では、マップキャンバスをズームイン/ズームアウト�
 
 ![image42](images/entries/5817785cf3d18db78669c2eb2c2be0cf606c3783.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 特長：インタラクティブなグラデーションエディタを再設計
 グラデーションランプエディタは、グラデーションを簡単に操作できるインタラクティブコントロールで再加工されました。ダイアログには、カラーHSVまたはRGB値を使用してグラデーションストップを変更するためのインタラクティブなプロットも含まれています。新しいエディタの特徴：
 - ドラッグしてカラーストップを移動する
@@ -115,37 +115,37 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 ![image43](images/entries/dca557436392cf51e05a0c77fa915b5e94013d2c.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature：属性ダイアログのデフォルトビューの選択
 以前のQGISのバージョンでは、属性ダイアログは常にテーブルビューで開かれていました。これで、ダイアログを常にテーブルビュー、フォームビューのいずれかにデフォルト設定するか、または最後に使用したビューを覚えておくことができます。
 
 ![image44](images/entries/53f72a9cf1bf32d73eb5174c37e54c60002b9707.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：カレンダーポップアップの改善
 Today\'s date is now highlighted in calendar popup widgets, making it easier to select a date relative to the current day.
 
 ![image45](images/entries/83b0414698c309c7afacb9da1b01370cff94497d.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：改良されたカラーピッカー
 カラーボタンのドロップダウンメニューにカラーホイールが表示され、色を非常に迅速に調整できます。
 
 ![image46](images/entries/1f485fa58f218aa481acf0c118907a1cd60fd682.gif)
 
-This feature was developed by [Nathan Woodrow](http://nathanw.net)
+この機能は [Nathan Woodrow](http://nathanw.net) によって開発されました
 ### 機能：セルの内容を属性テーブルからコピーする
 A new context menu item called `Copy cell content` is now available in the menu opened by a right click on a cell within the attribute table. When this button is clicked, the content of the cell is copied in the clipboard, whatever the kind of widget.
 
 ![image47](images/entries/968170742ce1d075c6ab1c462e682ea4fd8c5225.png.400x300_q85_crop.webp)
 
-This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
+この機能は [Paul Blottiere（Oslandia）](http://oslandia.com/) によって開発されました
 ### 特長：HiDPIサポートの強化
 HiDPI画面のユーザーは、SVG画像に依存するようにアイコンをアップグレードする作業が増えているため、ユーザーインターフェイスが向上しています。QGIS 2.16以降、すべてのツールバーはHiDPIと互換性があります。
 
 ![image48](images/entries/e60e55de87e8d2558134f9c9552ef41295642217.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 特長：マップ選択ツールの動作を改善
 マップベースの選択ツールの動作は洗練され、以下の変更が加えられました。
 
@@ -162,7 +162,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 ![image49](images/entries/4688ab87c97f9c773a62e3c1d5ceaa615cab8b0e.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## マニュアルの更新
 ### 機能：QGIS 2.14ドキュメント
 QGISの新機能ごとにドキュメンテーションリポジトリにチケットを自動的に作成する方法があるので、私たちはすべての新機能がドキュメントに含まれていることを確信しています。
@@ -200,19 +200,19 @@ The \"arrow\" symbol layer is a symbol layer allowing to draw straight or curved
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/) and Andreas Neumann
 
-This feature was developed by [Hugo Mercier](http://oslandia.com/)
+この機能は [Hugo Mercier](http://oslandia.com/) によって開発されました
 ### Feature: New \"Filled marker\" symbol layer type
 A \"filled marker\" is similar to the simple marker symbol layer, except that it uses a fill sub symbol to render the marker. This allows use of all the existing QGIS fill (and outline) styles for rendering markers, eg gradient or shapeburst fills.
 
 ![image53](images/entries/6107e2a6192e6d459fce2f0a1d9da99680dc53b0.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：新しいアクセシビリティと低視力シンボル
 Additional accessibility and low visions symbols are now available in QGIS\' SVG symbols collection.
 
 ![image54](images/entries/7f6fc338b6f85fb59cd6e5e79b27899724e1c33e.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能：新しい単純なマーカー記号
 - 半円、三分の一、四分円
 - ハーフトライアングルマーカー
@@ -221,7 +221,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 ![image55](images/entries/e5f7ea942c155a0a8dff05c60aca0f299907ee02.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### Feature: \"No symbol\" renderer
 Using the new \"No symbol\" renderer in QGIS 2.16 no symbol will be drawn for features, but labeling, diagrams and other non-symbol parts will still be shown.
 
@@ -231,37 +231,37 @@ This is intended as a handy shortcut for layers which you only want to show labe
 
 ![image56](images/entries/4e02691b64446f5a36f4faf3cc4906726cf57aad.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：セントロイドの塗りつぶしポイントレンダリングをより詳細に制御
 マーカーがマルチ地物のすべてのパーツまたは単一のパーツに描画されるかどうかを制御するオプションが追加されました。
 
 ![image57](images/entries/1a5e1daeefff5beb028c3230fffd86624974acea.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能：フォントマーカーシンボルのアウトライン設定
 フォントマーカー記号にアウトラインを付けることができます。アウトラインバッファーの色を追加することで、このような記号の可視性を高めることができます。絵文字が有効なフォント文字は、太い輪郭で使用すると素晴らしいマーカーとして機能します。
 
 ![image58](images/entries/be266e3dace9cc7011bfea6bab34ee8e4ade414e.jpeg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能：シンプル、楕円、フォントマーカーのアウトライン結合スタイルを制御
 シンプル、楕円、フォントマーカーのアウトラインの結合スタイルを変更して、シンボルを微調整することができます。
 
 ![image59](images/entries/c6b3a2f051a8c4e3f82c5cb6a995ae150acccb4b.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### Feature：ポイントシンボルオフセットをインタラクティブに設定する新しいマップツール
 Allows for setting a point\'s offset if it is bound to a field using data defined overrides. The offset field should be a text field. The map tool to interactively set the offset is in the `Advanced digitizing` toolbar in the icon group with the `Rotate Point Symbols` tool. See the attached animation for an example. Note that when making subsequent adjustments to the offset, you should drag from the original point vertex marker, not the current position of the symbol as rendered on the map.
 
 ![image60](images/entries/56a9953a6923d6b9b481b099a5a9dfec0146ba90.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：スタイルドック
 The style dock is a new, far more efficient, way to manage layer styles in QGIS. It supports a live preview of style changes as they are made, full undo / redo support and a less distracted workflow as you prepare your map cartography. For a comprehensive overview of the style dock\'s features, please see [style dock part 1](https://nathanw.net/2016/06/25/improving-you-styling-with-the-qgis-style-dock-part-1/) and [style dock part 2](https://nathanw.net/2016/06/29/qgis-style-dock-part-2-plugin-panels/).
 
 ![image61](images/entries/92389e4750d63c3842286fa43fe5ef2214f7c6dd.gif)
 
-This feature was developed by [Nathan Woodrow](https://nathanw.net/)
+この機能は [Nathan Woodrow](https://nathanw.net/) によって開発されました
 ## ラベリング
 ### Feature：マップツールのラベリングは、ルールベースのラベリング
 以前のバージョンのQGISでは、ルールベースのラベリングが行われていたときに、ラベリングマップツールを使用してインタラクティブにラベル位置を配置して回転することはできませんでした。これは現在サポートされています。
@@ -277,13 +277,13 @@ A new \"legend\" tab has been added to diagram properties, allowing both the exi
 
 This feature was funded by [ADUGA](http://www.aduga.org/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：アウトライン幅の単位選択
 アウトライン幅単位の選択が可能になりました。これにより、地図の単位の大きさの図が、マップの縮尺に基づいて拡大縮小され、固定されたミリメートルの輪郭幅を維持することが可能になる。
 
 ![image64](images/entries/932c792c43a94b8236ea803ae334c1a3d9f447ef.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能：ダイアグラムはラベルのように動作し、ツールバーから管理できます
 もともと、ラベルのためのツールバーがありました：
 - 現在のレイヤのラベルにラベル設定オプションを設定する
@@ -297,7 +297,7 @@ This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
-This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
+この機能は [Paul Blottiere（Oslandia）](http://oslandia.com/) によって開発されました
 ## レンダリング
 ### 機能：オンザフライでの簡略化のための新しいオプション
 ジオメトリを高速に描画するためにローカル側の簡略化を実行するときに、使用するアルゴリズムを選択できます。現在、QGISは3つのアルゴリズムを提供しています。
@@ -309,7 +309,7 @@ This change also moves the local \"on-the-fly\" simplification from the provider
 
 ![image66](images/entries/9460e7d5f10a8c89697cef1f80674ca30d1c3aef.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Alvaro Huarte](https://es.linkedin.com/in/alvarohuarte)
+この機能は [Alvaro Huarte](https://es.linkedin.com/in/alvarohuarte) によって開発されました
 ### 機能：ラスターレイヤのQuantileベースの分類
 This option can be found for single band pseudocolor rasters in the classification `mode` dialog.
 
@@ -328,7 +328,7 @@ When enabled, repeating locks are not automatically cleared when a new point is 
 
 ![image69](images/entries/f7dced55540bf500c4d9ca5a0efa9bef617c86e5.gif)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：変形ツールで線ストリングの形状を拡張する
 The reshape tool now allows you to extend linestrings, by starting a reshape at either a line\'s start or end point.
 
@@ -352,7 +352,7 @@ Support was added to set the segmentation tolerance (maximum angle or maximum di
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/) and [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
-This feature was developed by [Stéphane Brunner (Camptocamp)](http://www.camptocamp.com/) and [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+この機能は、[Stéphane Brunner (Camptocamp)](http://www.camptocamp.com/) と [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) によって開発されました
 ### 機能：属性フォームの複数の列
 ドラッグアンドドロップデザイナーを使用する場合、ユーザーは、フィールドの分配する列の数を指定できます。
 
@@ -367,7 +367,7 @@ To enable multiple columns in the \"Fields\" tab of the layer properties:
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch/)
+この機能は [Matthias Kuhn](http://www.opengis.ch/) によって開発されました
 ### 機能：ベクターレイヤーを保存するときにエクスポートする属性を制御する
 Checkboxes have been added so that you can select which attributes you want included in the export, and you also now have the option to write \"displayed\" values rather than raw values. This option is useful for layers with relations, where you\'d like a literal value included rather than a numeric identifier.
 
@@ -385,7 +385,7 @@ QGIS属性テーブルのフォームモードには、特定の機能に直接�
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
-This feature was developed by [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+この機能は [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/) によって開発されました
 ### 機能：リレーション参照ウィジェット：新しい値を追加するためのショートカット
 The relation reference widget was enhanced to allow quicker extensions of related value lists. If the checkbox \"Allow adding new features\" is enabled in the widget properties (access through \"Fields\" tab in layer properties), a green plus button will appear to the right of the widget. After pressing the \"Plus\" button, the dialog of the related table will open in \"new record\" mode where one can add an additional entry.
 
@@ -393,7 +393,7 @@ The relation reference widget was enhanced to allow quicker extensions of relate
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
-This feature was developed by [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
+この機能は [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/) によって開発されました
 ### 機能：DXFエクスポートの改善
 ルールベースのラベリングや回転シンボルのサポート、3Dジオメトリの出力がサポートされています。
 
@@ -405,7 +405,7 @@ This feature was developed by [Matthias Kuhn (OpenGIS)](http://www.opengis.ch/)
 
 ![image78](images/entries/720df275d40a2d527f2492bde7db4dcdc94fc3da.png.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
+この機能は [Matthias Kuhn](http://www.opengis.ch) によって開発されました
 ### 機能：フォームベースの選択とフィルター
 In QGIS 2.16 a new mode was added to the attribute table dialog for searching and filtering features. When activated (using a button on the toolbar or by pressing `CTRL+F`), the dialog will switch to form view and all widgets are replaced with their search widget wrapper variant.
 
@@ -419,7 +419,7 @@ You can also access this mode with the new \"Select by Value\" option, or by pre
 
 この機能は、SIGE、Uster市、Morges
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature：GeoPackageレイヤーを作成する
 The [GeoPackage](http://www.geopackage.org) format is an open standard for geospatial data that should be on your radar as a replacement for the ESRI Shapefile format. It addresses many shortcomings with the shape file format including limitations in the number and width of fields. In QGIS 2.16 it is now easy to create a new GeoPackage as it has been integrated into the `Layer` toolbar and `Layer -> Create Layer` menu.
 
@@ -435,7 +435,7 @@ Constraints are evaluated on the fly while a user is modifying a feature. A tool
 
 This feature was funded by [the QWAT project](https://github.com/qwat) and the [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch) and [Paul Blottiere (Oslandia)](http://oslandia.com/)
+この機能は [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch) と [Paul Blottiere (Oslandia)](http://oslandia.com/) によって開発されました
 ### 機能：複数の地物の属性を同時に編集する
 This change allows the attributes of multiple features to be edited simultaneously. It is enabled when the attribute table dialog is in \"form mode\", via a new \"multi edit\" button on the toolbar. There\'s also a shortcut to edit multiple selected features by using `Edit -> Modify Attributes of Selected Features`.
 
@@ -449,7 +449,7 @@ Multiedit mode is only available for auto generated and drag and drop forms -it 
 
 This feature was funded by [Kanton Basel Stadt](http://www.geo.bs.ch/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## レイヤ凡例
 ### Feature: New option to zoom to a layer\'s visible scale range
 可視スケール範囲が設定されているレイヤーの場合、このオプションを選択すると、自動的にレイヤーが表示される最も近いスケールにスケールが設定されます。さらに、スケール範囲外で隠れているレイヤーがレイヤーツリーでグレー表示されるように、インターフェイスが調整されています。
@@ -458,7 +458,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
-This feature was developed by [Patrick Valsecchi (Camptocamp)](http://www.camptocamp.com/)
+この機能は [Patrick Valsecchi (Camptocamp)](http://www.camptocamp.com/) によって開発されました
 ## マップコンポーザー
 ### 機能：ポリゴンとポリラインを描画するための新しいツール
 ノードに基づいた2つの新しいタイプのコンポーザシェイプアイテムが、マップコンポーザーで使用できるようになりました。これらを使用すると、数回のクリックでコンポジション内のポリゴンまたはポリラインを描画できます。
@@ -469,7 +469,7 @@ This feature was developed by [Patrick Valsecchi (Camptocamp)](http://www.campto
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
-This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
+この機能は [Paul Blottiere（Oslandia）](http://oslandia.com/) によって開発されました
 ### 機能：コンポーザラベルの相対リンク
 Now labels and HTML boxes can contain relative URLs. If we don\'t have a base URL, the project file will be used as a base URL.
 
@@ -477,7 +477,7 @@ Now labels and HTML boxes can contain relative URLs. If we don\'t have a base UR
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
-This feature was developed by [Patrick Valsecchi (Camptocamp)](http://www.camptocamp.com/)
+この機能は [Patrick Valsecchi (Camptocamp)](http://www.camptocamp.com/) によって開発されました
 ### 機能：GeoJSONをソースとしてコンポーザのHTMLソースに地図帳の機能を埋め込む
 This change makes the current atlas feature (and additionally all attributes of related child features) available to the source of a composer HTML item, allowing the item to dynamically adjust its rendered HTML in response to the feature\'s properties. An example use case is dynamically populating a HTML table with all the attributes of related child features for the atlas feature.
 
@@ -487,19 +487,19 @@ To use this, the HTML source must implement a \"setFeature(feature)\" JavaScript
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com/)
+この機能は [Nyall Dawson (North Road)](http://north-road.com/) によって開発されました
 ### 機能：コンポーザーSVG画像のパラメーター化されたSVGサポート
 This change makes it possible to change an SVG files fill and outline colors, and outline width when using parameterised SVG files such as those included with QGIS. For more details on parameterised SVG files see [this article](http://blog.sourcepole.ch/2011/06/30/svg-symbols-in-qgis-with-modifiable-colors/).
 
 ![image87](images/entries/f9766e2ad952c9a3d4a7fe2ddbdfa20d63b2aff4.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：ラベルにHTMLを簡単に使用する
 In QGIS 2.16, the base stylesheet of composer labels will automatically set the label font and margins to match the label\'s settings. This allows interactive choice of font, margins and colors and avoids the need to manually set these with CSS within the label HTML code.
 
 ![image88](images/entries/d078efbe63f71e8bdf28d476f9da0396f4b7dc0a.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：コンポーザからのジオリファレンス出力（PDFなど）
 QGIS 2.16では、マップコンポーザーが出力を自動的にジオリファレンスします（出力フォーマットでこれを可能にする場合、TIFやPDFなど）。
 
@@ -507,7 +507,7 @@ QGIS 2.16では、マップコンポーザーが出力を自動的にジオリ�
 
 ![image89](images/entries/e05ee773025d69f028f01ffa15521578be7d3dc3.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：コンポーザ地図はプリセットで自動更新されるようになりました
 コンポーザーマップがスタイルプリセットに従うように設定されている場合は、スタイルが変更されるたびに自動的に更新されます。
 
@@ -524,13 +524,13 @@ In QGIS 2.16 the expression engine now supports use of named parameters. This me
 
 名前付きパラメータを使用すると、式関数の引数が参照するものを明確にすることができます。これは、後で式を解釈しようとするときに役立ちます。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：遠距離ユニット
 距離単位の選択肢が広がり、キロメートル、ヤード、マイルなどの新しいオプションが追加されました。これらのユニットを使用すると、手動で距離を変換する必要がなくなります（例：フィートをマイルに変換）。
 
 ![image91](images/entries/a550363f123d3bf08bd53fef79dc92559ae8965d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Changes to expressions
 - Support `date + time` = datetime calculations
 - Support for `date - date`, `time - time` and `datetime - datetime` type calculations which return an interval.
@@ -541,7 +541,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 ![image92](images/entries/819559c98282bcf044fae47ddcc00908be3adf69.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：インフォメーションツールでカーブポイントの半径を表示
 インフォツールを使用して曲線をクリックすると、QGISはインフォツールに半径を表示します。
 
@@ -558,7 +558,7 @@ QGIS 2.16では、いくつかのタイプの集約のサポートがエクス�
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：fToolsプラグインが処理アルゴリズムに置き換えられました
 fTools is a core plugin that for many years has provided the tools found in the `Vector` menu in QGIS. With the advent of the QGIS processing framework, the fTools began to represent a duplication of effort, and many of the tools have been improved in their Processing equivalents. To address, the fTools plugin has been removed from QGIS and equivalent menu entries have been added to the vector menu, pointing to the Processing framework tools that achieve the same thing.
 
@@ -591,7 +591,7 @@ PostGIS関連のアルゴリズムでは、QGIS認証マネージャを使用し
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
-This feature was developed by [Arnaud Morvan (Camptocamp)](http://www.camptocamp.com/)
+この機能は [Arnaud Morvan (Camptocamp)](http://www.camptocamp.com/) によって開発されました
 ### 機能：ジオメトリを持たない表の作成をサポート
 OutputVectorアルゴリズムでは、ジオメトリレステーブルの作成がサポートされるようになりました。
 
@@ -599,7 +599,7 @@ OutputVectorアルゴリズムでは、ジオメトリレステーブルの作�
 
 This feature was funded by [MEEM (French Ministry of Sustainable Development)](http://www.developpement-durable.gouv.fr/)
 
-This feature was developed by [Arnaud Morvan (Camptocamp)](http://www.camptocamp.com/)
+この機能は [Arnaud Morvan (Camptocamp)](http://www.camptocamp.com/) によって開発されました
 ### 機能：処理中の追加のGRASSアルゴリズム
 For this release, QGIS Processing now includes every [vector](https://grass.osgeo.org/grass70/manuals/vector.html), [raster](https://grass.osgeo.org/grass70/manuals/raster.html) and [imagery](https://grass.osgeo.org/grass70/manuals/imagery.html) algorithms from GRASS7. Now, there are more than 300 algorithms for you to use directly from the QGIS interface. You have all the power of GRASS7 directly incorporated into QGIS and you can mix GRASS7 algorithms with all other Processing algorithms without having to use a GRASS7 database.
 
@@ -618,13 +618,13 @@ This feature was funded by [MEEM (French Ministry of Sustainable Development)](h
 ### PostgresのDOMAIN型フィールドの扱いが改善されました。
 QGIS now shows the correct domain type as field type name, and is able to correctly determine the length and precision of domain types. See the PostgreSQL [documentation](https://www.postgresql.org/docs/9.1/static/sql-createdomain.html) to find more information about DOMAIN types.
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：プロジェクトで設定可能なベクターレイヤのreadOnlyモードを作成する
 Using this option, you can prevent users from inadvertently editing layers. Go to `Project properties -> Identify layers` to configure which layers should be presented as read only.
 
 ![image101](images/entries/9fce381bdf92bd039a26282a93579d5d5ef22e92.png.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch/)
+この機能は [Matthias Kuhn](http://www.opengis.ch/) によって開発されました
 ### 機能：DB2データベースのサポート
 この機能はDavid Adlerによって開発されました
 ### 機能：PostgresのDBマネージャでのマテリアライズドビューのリフレッシュ
@@ -641,13 +641,13 @@ ArcGIS Featureサービス（ESRIではWFSに相当）とArcGIS Mapサービス�
 
 This feature was funded by [Sourcepole QGIS Enterprise](http://qgisenterprise.com/)
 
-This feature was developed by [Sandro Mani, Sourcepole](https://www.sourcepole.com/)
+この機能は [Sandro Mani, Sourcepole](https://www.sourcepole.com/) によって開発されました
 ### 機能：MS SQLおよびOracleデータベースのスタイルを保存する
-この機能は、JürgenFischerとChristian Frugardによって開発されました
+この機能は、Jürgen FischerとChristian Frugardによって開発されました
 ### 機能：レイヤー内のフィールドの名前を変更する
 QGIS 2.16では、レイヤプロパティウィンドウのフィールド名をダブルクリックすることで、Postgres、Oracle、OGR、およびメモリレイヤのフィールドの名前を変更できるようになりました。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：Oracle Workspace Managerの基本サポート
 Oracle Providerを使用する場合、Oracle Workspace Managerのサポートが追加されました。
 
@@ -655,7 +655,7 @@ See <https://github.com/qgis/QGIS/commit/d161612bd216d36dc23ab2307636cf1bc0a3619
 
 This feature was funded by [ENEL](https://www.enel.com)
 
-This feature was developed by [Jürgen Fischer for Faunalia](http://faunalia.it)
+この機能は [Jürgen Fischer for Faunalia](http://faunalia.it) によって開発されました
 ### WFSプロバイダの大幅な改善
 QGIS 2.16は、WFSプロバイダのオーバーホールをもたらします。
 - バージョンの自動検出
@@ -675,7 +675,7 @@ QGIS 2.16は、WFSプロバイダのオーバーホールをもたらします�
 
 This feature was funded by [Land Information New Zealand and Canton of Zug, Switzerland](http://www.linz.govt.nz/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+この機能は [Even Rouault](http://www.spatialys.com/) によって開発されました
 ### Feature: Generation of default values on Postgres layers \"just in time\"
 postgresデータベースのフィールドのデフォルト値を生成するために使用される式は、現在、地物フォームに出力されています。
 
@@ -691,16 +691,16 @@ A new option in the \"project properties\" (tab \"Data Sources\") allows evaluat
 
 This feature was funded by [Canton of Zug, Switzerland](http://geo.zg.ch/)
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch/)
+この機能は [Matthias Kuhn](http://www.opengis.ch/) によって開発されました
 ## QGISサーバー
 ### 機能：GetMapとGetPrintでのレッドラインサポート
 この機能はゾーロトゥルンの資金提供を受けています
 
-This feature was developed by [Marco Hugentobler, Sourcepole](https://www.sourcepole.com/)
+この機能は [Marco Hugentobler, Sourcepole](https://www.sourcepole.com/) によって開発されました
 ### 機能：サーバのデフォルトのデータ変換
 Will have to dig through <https://github.com/qgis/QGIS/commit/70863ecaf0ccfcb538e3892af4b528304b21a0a2> to find details
 
-This feature was developed by [Marco Hugentobler (Sourcepole)](https://www.sourcepole.com/)
+この機能は [Marco Hugentobler (Sourcepole)](https://www.sourcepole.com/) によって開発されました
 ## プラグイン
 ### Feature：Refreshed globe plugin
 - OsgEarth 2.8へのアップデート
@@ -716,29 +716,29 @@ This feature was developed by [Marco Hugentobler (Sourcepole)](https://www.sourc
 
 This feature was funded by [Sourcepole QGIS Enterprise](http://qgisenterprise.com/)
 
-This feature was developed by [Sandro Mani, Sourcepole](https://www.sourcepole.com/)
+この機能は [Sandro Mani, Sourcepole](https://www.sourcepole.com/) によって開発されました
 ### 機能：グローブ：押し出しオブジェクト
 オブジェクトを3次元に押し出すことができます。
 
 固定値または属性または式のいずれか。
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
+この機能は [Matthias Kuhn](http://www.opengis.ch) によって開発されました
 ### Feature：API：ベクターレイヤのプロパティにページを追加する
 ベクターレイヤのプロパティダイアログにページを追加できるようにします。
 
 これにより、より適切なユーザーエクスペリエンスのために、プラグインが提供するレイヤー関連オプションの設定を直接どこに所属させるかを設定できます。
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
+この機能は [Matthias Kuhn](http://www.opengis.ch) によって開発されました
 ### 機能：グローブ：ベクターサポート
 グローブ上にレイヤーを表示するときは、ベクターデータを保持します。
 
 この機能はMaster Thesis UZHによって資金提供されました
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
+この機能は [Matthias Kuhn](http://www.opengis.ch) によって開発されました
 ### 機能：地球儀：DTMのための垂直方向の強調
 Because sometimes it\'s just nice to exaggerate about the size.
 
-This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
+この機能は [Matthias Kuhn](http://www.opengis.ch) によって開発されました
 ## プログラマビリティ
 ### 機能：レイヤーツリー内の組み込みウィジェット
 これにより、レイヤプロパティダイアログ（新しい凡例タブ内）で個々のレイヤのレイヤツリーに埋め込まれたウィジェットを定義することができます。このアイデアは、レイヤーでよく使用されるいくつかのアクションに素早くアクセスする方法を持つことです。
@@ -749,7 +749,7 @@ This feature was developed by [Matthias Kuhn](http://www.opengis.ch)
 
 この機能は、Martian Dobiasによって開発されました
 ### 機能：プラグインは、ページをベクターレイヤのプロパティに追加できます
-This feature was developed by [Sandro Mani (Sourcepole)](https://www.sourcepole.com/)
+この機能は [Sandro Mani (Sourcepole)](https://www.sourcepole.com/) によって開発されました
 ### Feature: New PyQGIS classes in 2.16
 ### 新しいコアクラス
 - [QgsComposerNodesItem](https://qgis.org/api/classQgsComposerNodesItem.html) -an abstract base class for composer items which provides generic methods for nodes based shapes such as polygons or polylines

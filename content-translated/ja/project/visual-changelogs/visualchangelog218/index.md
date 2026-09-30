@@ -20,7 +20,7 @@ type: visual-changelog
 
 We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
 
-QGIS is supported by donors and sponsors. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become and official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは、寄付者やスポンサーによって支えられています。プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/ja/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式のプロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 
@@ -35,7 +35,7 @@ Any `http` or `mailto` links within attribute values will now automatically be c
 
 ![image58](images/entries/eab95eb0acb92a68edeee71a13ea23d77b88d307.png.400x300_q85_crop.webp)
 
-This feature was developed by [Sandro Mani (Sourcepole)](https://sourcepole.ch/)
+この機能は [Sandro Mani (Sourcepole)](https://sourcepole.ch/) によって開発されました
 ### 機能：マウスホイールをカラーダイアログのスライダーに重ねる
 QGIS 2.18では、カラーピッカーダイアログ内のいずれかのスライダ上でマウスホイールをスクロールして、値を少しずつ増やすことができます。これは、色のコンポーネントを微調整するための便利なショートカットです。
 
@@ -43,7 +43,7 @@ QGIS 2.18では、カラーピッカーダイアログ内のいずれかのス�
 
 This feature was funded by [Nyall Dawson (North Road)](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：カスタムカラースキームをカラーボタンドロップダウンメニューに追加する
 QGIS 2.18 adds the ability for users to set whether a user created color scheme should show up in the color button drop-down menus. This setting is controlled through the color picker dialog, on the lists tab. Just add a new color scheme, then from the scheme menu tick the new \"show in buttons\" option. It\'s a handy shortcut if you have sets of common palettes and want them to be instantly available through the color menu.
 
@@ -51,7 +51,7 @@ QGIS 2.18 adds the ability for users to set whether a user created color scheme 
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## シンボロジ
 ### 機能：レイヤースタイルのパネルにカラーピッカーが埋め込まれました
 QGIS 2.18では、レイヤースタイルパネル内のカラーボタンをクリックすると、別のダイアログとしてではなく、スタイルパネル自体でカラーピッカーダイアログが開きます。これにより、色をインタラクティブに変更して結果を即座にプレビューできます。
@@ -60,7 +60,7 @@ QGIS 2.18では、レイヤースタイルパネル内のカラーボタンを�
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## ラベリング
 ### 機能：ラベル付けの代替リストサポート
 ラベルテキストに適用するテキスト置換のリストを指定する機能を追加します。例：通りの種類を省略します。
@@ -71,7 +71,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：改良されたラインラベル配置アルゴリズム
 ラインレイヤーのパラレルラベリングモードは大幅に改善されました。新しいアルゴリズムにより、地物ジオメトリのジグザグ部分にラベルを配置することはありません。
 
@@ -79,7 +79,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：周囲に沿って曲線ラベルを使用してポリゴンにラベルを付ける
 これにより、ポリゴンの外周に曲線ラベルを使用してラベルを付ける新しいモードが追加されます。
 
@@ -87,7 +87,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## レンダリング
 ### 機能：ラスタータイルのプレビュー（WMTSおよびXYZレイヤー）
 QGISの以前のバージョンでは、結果の地図を表示するために、レイヤーのすべてのタイルのダウンロードが完了するまで待つ必要がありました。これは今修正され、地図のキャンバスにタイルがダウンロードされるとすぐに表示され、何かが表示されるまでの時間を大幅に短縮することでユーザーエクスペリエンスが向上します。さらに、より低い解像度またはより高い解像度からの以前にダウンロードされたタイルは、正しい解像度を有するタイルがまだダウンロードされていない領域のプレビュー機能に使用されてもよい。
@@ -96,13 +96,13 @@ QGISの以前のバージョンでは、結果の地図を表示するために�
 
 This feature was funded by [Land Information New Zealand](http://www.linz.govt.nz/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能：ラスター（WMS、WMTS、WCS、XYZレイヤー）のキャンセル可能なレンダリング
 この機能強化により、リモートサーバーからのラスターレイヤーを操作する際のユーザーエクスペリエンスが向上します。以前は、ユーザーインターフェースがその間に凍っていたので、地図を再びズームまたはパンできるように、ダウンロードが完全に完了するまで待つ必要がありました。これは、ラスターレイヤーのレンダリングがいつでもキャンセルできるという事実によって修正されています。
 
 This feature was funded by [Land Information New Zealand](http://www.linz.govt.nz/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/) によって開発されました
 ## データ管理
 ### 機能：選択した機能のみをコピーするフラグを追加する
 オフライン編集プラグインは、QGISに同梱されているデフォルトのプラグインで、リモートデータセット（データベースなど）をオフライン化してフィールドで編集し、オフィスに戻ったときに再同期化することができます。これにより、オフライン編集の可能性が拡張され、大きなレイヤーのサブセットでしか動作しません。
@@ -111,7 +111,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutr
 
 この機能は、DB Fahrwegdienste GmbH によって資金提供されました
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+この機能は [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) によって開発されました
 ## フォームとウィジェット
 ### 機能：個々の編集ウィジェットのラベルを制御できるようにする
 フォーム内の個々の編集ウィジェットのラベルを制御できるようにする。ドラッグアンドドロップデザイナーでは、項目をダブルクリックすると、各項目ごとにラベルを個別に表示するかどうかを制御できます。
@@ -122,7 +122,7 @@ In addition it is possible to configure if the link/unlink buttons are shown in 
 
 This feature was funded by [Kanton Zug, GIS-Fachstelle](http://geo.zg.ch/)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+この機能は [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) によって開発されました
 ### 機能：タブとグループボックスの条件付き可視性
 これにより、タブとグループボックスをドラッグアンドドロップデザイナーフォームで条件付きで表示または非表示にするための新しい設定オプションが追加されました。
 
@@ -132,7 +132,7 @@ This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch
 
 ![image49](images/entries/8adda1d639ba9b46b15f8a70b38c6cfd407d2515.png.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/)
+この機能は [Matthias Kuhn (OPENGIS.ch)](http://www.opengis.ch/) によって開発されました
 ### 機能：クライアント側のデフォルトのフィールド値
 Allows an expression to be set for a vector layer field which is used to evaluate a default value for this field. Default value expressions can utilise properties of the feature which exist at the time of calling, such as digitized geometries. Expression variables can also be used in default value expressions, making it easy to eg insert a user\'s name, the current datetime, project path, etc.
 
@@ -140,7 +140,7 @@ Allows an expression to be set for a vector layer field which is used to evaluat
 
 この機能は、DB Fahrwegdienste GmbH によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## マップコンポーザー
 ### 機能：真北矢印
 QGIS 2.18 adds support for orienting north arrows in the composer to True North. Previously all arrows were aligned to grid north, which is unsuitable for polar regions or non-north up projections (such as some South African projection systems). Now, you can choose to orient arrows to either grid north or true north. There\'s also an optional offset angle, which can be used to specify a grid convergence to make your arrows orient to magnetic north!
@@ -149,7 +149,7 @@ QGIS 2.18 adds support for orienting north arrows in the composer to True North.
 
 This feature was funded by [Norwegian Polar Institute\'s Quantarctica project](http://quantarctica.npolar.no)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## プロセシング
 ### 機能：表面上のポイントアルゴリズム
 This new algorithm is similar to the centroids algorithm, but where a centroid may fall outside its corresponding feature the \'Point on surface\' algorithm is guaranteed to create a point which is inside the corresponding polygon feature (or touching the corresponding line feature for line layers).
@@ -158,7 +158,7 @@ This new algorithm is similar to the centroids algorithm, but where a centroid m
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：処理ディゾルブアルゴリズムは複数のフィールドを受け入れます
 ディゾルブアルゴリズムでは、複数のフィールド値に基づいてディゾルブできるようになりました。以前のQGISのバージョンでは、ディゾルブは地物を単一のフィールド値でグループ化することしかできませんでした。
 
@@ -166,7 +166,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：最適化処理クリップアルゴリズム
 処理クリップアルゴリズムは、一般的な使用シナリオに対して最適化されており、結果としてクリッピング操作のスピードアップが大幅に向上しました。例えば：
 
@@ -182,7 +182,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：バウンディングボックスアルゴリズム
 この新しいアルゴリズムは、入力レイヤーの各地物のバウンディングボックス（エンベロープ）を計算します。
 
@@ -190,7 +190,7 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能：連結線アルゴリズムをマージする
 このアルゴリズムは、MultiLineStringジオメトリのすべての接続部分を単一のLineStringジオメトリに結合します。入力されたMultiLineStringジオメトリのいずれかの部分が接続されていない場合、合成ジオメトリは、マージ可能な線や接続されていない線部分を含むMultiLineStringになります。
 
@@ -198,75 +198,75 @@ This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### 機能：幾何境界アルゴリズム
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
+### 機能：ジオメトリ境界アルゴリズム
 この新しいアルゴリズムは、入力ジオメトリ（すなわちジオメトリのトポロジカル境界）のコンビナトリアル境界のクロージャを返します。たとえば、ポリゴンジオメトリにはポリゴンの各リングの線ストリングで構成される境界があり、線のジオメトリには線の開始点と終了点からなる境界があります。このアルゴリズムはポリゴンまたはラインレイヤーにのみ有効です。
 
 ![image57](images/entries/907b7b5c36af36547f10f33f65e9655a5cbe5a67.png.400x300_q85_crop.webp)
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## データプロバイダ
 ### 機能：XYZタイルレイヤーのネイティブサポート
 XYZ形式のラスタータイルがWMSデータプロバイダ内でネイティブにサポートされ、QuickMapServicesやOpenLayersなどのサードパーティのプラグインを使用しなくても、他のソースからのベースマップを表示できます。
 
-To add connections to XYZ layers, just open browser dock widget, look for item called \"Tile Server (XYZ)\" and right click it to get a popup menu with \"New connection\" action. You will be asked for URL, in which `{x}`, `{y}`, `{z}` will be replaced by the actual tile numbers according to the current map view. For example, to add OpenStreetMap base map, one may use this URL: `http://c.tile.openstreetmap.org/{z}/{x}/{y}.png`
+XYZレイヤーへ接続を追加するには、ブラウザドックウィジェットを開き、「タイルサーバー（XYZ）」という項目を探して右クリックすると、「新規接続」アクションのポップアップメニューが表示されます。URLを求められ、その中の `{x}` 、 `{y}` 、 `{z}` は現在の地図ビューに従って実際のタイル番号に置き換えられます。たとえば、OpenStreetMapベースマップを追加するには、次のURLを使用します： ``http://c.tile.openstreetmap.org/{z}/{x}/{y}.png``
 
-The data provider also supports encoding of XYZ tile numbers into \"quadkeys\" used by Bing. Simply use `{q}` instead of `{x}`, `{y}` and `{z}` in the URL.
+データプロバイダは、XYZタイル番号をBingが使用する「クワッドキー」へエンコードすることにも対応しています。URLの `{x}` 、 `{y}` 、 `{z}` の代わりに `{q}` を使うだけです。
 
 ![image61](images/entries/f69a3601e9201e38f9a561d40807512035da2298.gif)
 
-This feature was funded by [Lutra Consulting](http://www.lutraconsulting.co.uk/)
+この機能は [Lutra Consulting](http://www.lutraconsulting.co.uk/) によって資金提供されました
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk/) によって開発されました
 ## QGISサーバー
 ### 機能：サーバ内の地物情報ジオメトリをセグメント化する可能性
-Necessary for geometries that contain curves (CircularArc, CompoundCurve, CurvePolygon), but the web client (e.g. QGIS Web Client) can\'t handle the display of these geometry types.
+曲線を含むジオメトリ（CircularArc、CompoundCurve、CurvePolygon）では必要ですが、Webクライアント（QGIS Webクライアントなど）ではこれらのジオメトリタイプの表示を処理できません。
 
-This feature can be enabled in the \"OWS server\" tab in the \"Project Properties\" dialogue.
+この機能は、「プロジェクトプロパティ」ダイアログの「OWSサーバー」タブで有効にすることができます。
 
-![image62](images/entries/f4b9cf3ba10669b933eb3f3a5c401f675ad76533.png.400x300_q85_crop.webp)
+![image62](images/entries/f4b9cf3ba10669b933eb3f3a5c401f675ad76533.png.400x300_q85_crop.webp)///////
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Marco Hugentobler (Sourcepole)](http://www.sourcepole.ch/)
+この機能は [Marco Hugentobler（Sourcepole）](http://www.sourcepole.ch/) によって開発されました
 ## プラグイン
 ### 機能：DBマネージャー：SQLレイヤーを更新する機能を追加する
-With this feature the user can update the layer datasource if it\'s based on an SQL request.
+この機能を使用すると、それがSQLリクエストに基づいている場合、レイヤー・データソースを更新できます。
 
-This feature was funded by [Ifremer](http://wwz.ifremer.fr)
+この機能は [Ifremer](http://wwz.ifremer.fr) によって資金提供されました
 
-This feature was developed by [3Liz](http://3liz.com)
+この機能は [3Liz](http://3liz.com) によって開発されました
 ## プログラマビリティ
 ### 機能：GEOS線形参照関数をQgsGeometryに公開する
-A new function `QgsGeometry::lineLocatePoint()` has been added for retrieving the distance along a linestring to the nearest position on the linestring to a given point.
+新しい関数 `QgsGeometry::lineLocatePoint()` が追加され、ラインストリングに沿ったラインストリング上の最も近い位置から所定の点までの距離を取得します。
 
 This feature was funded by [North Road](http://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 機能：2.18の新しいPyQGISクラス
 ### 新しいコアクラス
-- [QgsAnnotation](https://qgis.org/api/classQgsAnnotation.html) - an interface for annotation items which are drawn over a map
-- [QgsFeedback](https://qgis.org/api/classQgsFeedback.html) - a base class for feedback objects to be used for cancellation of something running in a worker thread
-- [QgsOptionalExpression](https://qgis.org/api/classQgsOptionalExpression.html) - an expression with an additional enabled flag
+- [QgsAnnotation](https://qgis.org/api/classQgsAnnotation.html) - 地図上に描画される注釈アイテムのインタフェース
+- [QgsFeedback](https://qgis.org/api/classQgsFeedback.html) - ワーカースレッドで実行されている何かのキャンセルに使われるフィードバックオブジェクトの基底クラス
+- [QgsOptionalExpression]https://qgis.org/api/classQgsOptionalExpression.html) - 有効フラグを追加した式
 
 ### 新しいGUIクラス、再利用可能なウィジェット
-- [QgsExpressionLineEdit](https://qgis.org/api/classQgsExpressionLineEdit.html) - includes a line edit for entering expressions together with a button to open the expression creation dialog. This widget is designed for use in contexts where no layer fields are available for use in an expression and space is constrained.
-- [QgsTabWidget](https://qgis.org/api/classQgsTabWidget.html) - similar to QTabWidget but with additional methods to temporarily hide/show tabs
+- [QgsExpressionLineEdit](https://qgis.org/api/classQgsExpressionLineEdit.html) - 式作成ダイアログを開くためのボタンとともに、式を入力するための行エディタを含みます。このウィジェットは、式で使用できるレイヤフィールドがなく、スペースが限られている状況で使用するために設計されています。
+- [QgsTabWidget](https://qgis.org/api/classQgsTabWidget.html) - QTabWidgetに似ていますが、一時的にタブを隠す/表示するメソッドが追加されています
 
 ## 機能：新しい式の関数
 QGIS 2.18には、角度/距離補間の関数を含むいくつかの新しい式関数が追加されています。
-- `line_merge`: merges a MultiLineString geometry into connected LineStrings
-- `boundary`: returns a geometry\'s topological boundary, ie for polygons this is a MultiLineString representing the polygon\'s rings
-- `angle_at_vertex`: returns the average (bisector) angle to a geometry at a specified vertex index
-- `distance_to_vertex`: returns distance along geometry to a specified vertex index
-- `line_interpolate_angle`: calculates the angle parallel to a geometry at the specified distance along the geometry
-- `line_interpolate_point`: returns a point on line at distance
-- `line_locate_point`: returns distance along line to nearest line location closest to specified point
+- `line_merge` ：MultiLineStringジオメトリを接続されたLineStringsにマージします
+- `boundary` ：ジオメトリのトポロジカルな境界を返します。つまり、ポリゴンの場合、これはポリゴンのリングを表すMultiLineStringです
+- `angle_at_vertex` ：指定された頂点インデックスのジオメトリに対する平均（二等分線）の角度を返します
+- `distance_to_vertex` ：指定された頂点インデックスまでのジオメトリに沿った距離を返します
+- `line_interpolate_angle` ：ジオメトリに沿って指定された距離でジオメトリに平行な角度を計算します
+- `line_interpolate_point` ：距離のあるライン上のポイントを返します
+- `line_locate_point` ：指定されたポイントに最も近いライン位置へのラインに沿った距離を返します
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 
 {{<content-end >}}

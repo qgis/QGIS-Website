@@ -7,12 +7,10 @@ Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
 ButtonText: გადმოწერა
-HasAnnouncement: true
+HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: უფასო და ღია კოდით
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: ხელმისაწვდომია Windows, Mac, Linux პლატფორმებზე
 draft: false
 heroLogo: img/logosign.svg

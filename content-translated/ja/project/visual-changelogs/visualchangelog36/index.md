@@ -20,7 +20,7 @@ type: visual-changelog
 
 私たちは開発者、文書作成者、テスターなどの時間や労力を提供してくれる数多くのボランティアの皆さん（また資金を提供してくれる方々）に感謝します。 QGIS コミュニティとして、このリリースを楽しんでいただきたいと思います。もし時間やお金を寄付したいと考えている場合や、 QGIS をもっと素晴らしいものにすることに参加したい場合は、 qgis.org を見て回って手を貸して下さい。
 
-QGISは寄付者やスポンサーの支援を受けています。プロジェクトに多額の資金拠出を行った寄付者の現在のリストは寄付者リストをご覧ください。公式プロジェクトスポンサーになりたい場合、詳細はスポンサーシップのページをご覧ください。QGISへの出資は、半年毎の開発者会議に資金提供したり、プロジェクトインフラストラクチャを維持したり、バグ修正の取り組みに資金提供するのに役立ちます。現在のスポンサーの完全なリストは以下に掲載します。すべてのスポンサーの皆様に大変感謝しております！
+QGISは寄付者およびスポンサーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新リストは寄付者リストをご覧ください。公式プロジェクトスポンサーになることをご希望の方は、詳細についてスポンサーシップのページをご覧ください。QGISへの財政支援は、半年毎の開発者会議の開催、プロジェクトインフラの維持、バグ修正活動への資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -33,11 +33,11 @@ QGIS はフリーのソフトウェアです。利用する上で金銭を支払
 
 ![image2](images/entries/400e617d8059eddcd1228f3ce6861d6087f65794.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能: 装飾アイテムの上部/下部での中央揃え
 マップキャンバスの著作権表示と今回新規に追加されたタイトルラベルについて、マップの上部または下部の中央に配置することができます。
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能: ノードツールの修正と改善
 注：下記の項目はすべてLTRにバックポートされているため、QGIS 3.4.5にも反映されます。
 ### Select (\"lock\") feature before editing
@@ -57,7 +57,7 @@ From the two modes of vertex tool, \"all layers\" used to be the default one. Bu
 
 This feature was funded by [German QGIS user group](http://qgis.de/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: トリム/エクステンド
 多くのソフトウェアとは異なり、このツールを使用すると、（マルチ）ラインと（マルチ）ポリゴンを変更できます。さらに、必ずしも関係するラインの端である必要はなく、ジオメトリの任意のセグメントを修正できます。反面、これは無効なジオメトリにつながる可能性があり、それはユーザーの責任です。
 
@@ -118,14 +118,14 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 ### 機能: エラーを検出する新しい try() 関数
 新しいtry()関数は式を試し、エラーがなければその値を返します。式がエラーを返す場合は、指定されているときは代替値が返されます。それ以外の場合にはこの関数はnullを返します。
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ## ユーザーインタフェース
 ### Feature: A new grayscale theme: \"Blend of Gray\"
 A brand new UI theme has made its way into QGIS named \"Blend of Gray\". In addition, hundreds of fixes, tweaks, and refinements were applied to the preexisting \"Night Mapping\" theme.
 
 ![image4](images/entries/32e743ea5bf84c96b86ea31160b1677b6362eacf.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ### 機能: コードエディター/フィールド計算機における複数行の選択と編集
 QGISのフィールド計算機とPythonスクリプトエディターで、ctlキーを押したままテキストの複数行ブロックを選択し、同時に編集することができます。
 
@@ -134,9 +134,9 @@ This feature was developed by [Nyall Dawson ()](https://north-road.com)
 ### 機能: .XMLスタイルライブラリの取り扱い方法の改善
 ブラウザパネルにQGISスタイルのxmlライブラリが表示され、これらのファイルをQGISウィンドウにドラッグアンドドロップすることもできます。これにより、ユーザーがスタイルライブラリを閲覧したり、ライブラリからQGISインストールにスタイルをインポートしたりできるダイアログが開きます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ポリゴンシンボルへの右手の法則の適用
 This new option, available under the \"Advanced\" button for fill symbols, allows forcing rendered polygons to follow the standard \"right hand rule\" for ring orientation (where exterior ring is clockwise, and interior rings are all counter-clockwise).
 
@@ -146,27 +146,27 @@ This new option, available under the \"Advanced\" button for fill symbols, allow
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
-### 機能: 外周の内側または外側のみシンプルラインまたはマーカーラインの塗りつぶオプション
-This new option is shown whenever a simple line symbol or marker line symbol is used as part of a fill symbol for rendering polygons. The default behavior is to render both interior and exterior rings, but this new setting allows users to set the symbol layer to render only for the exterior ring OR only for interior rings. This allows for symbolisation which wasn\'t directly possible before, such as a marker line with markers for interior rings angled toward the interior of the polygon.
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
+### 機能: 外部リングまたは内部リングのみをレンダリングするシンプルラインまたはマーカーラインのオプション
+この新しいオプションは、ポリゴンをレンダリングするための塗りつぶしシンボルの一部として直線シンボルまたはマーカーラインシンボルが使用されているときはいつでも表示されます。デフォルトの動作では内部リングと外部リングの両方がレンダリングされますが、この新しい設定では、シンボルレイヤに外部リングのみまたは内部リングのみをレンダリングするように設定できます。これにより、以前は直接不可能だったシンボル化が可能になります。たとえばマーカーラインで、内部リングのマーカーがポリゴンの内側に向かって傾斜したものです。
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: ラスターイメージマーカー
 新しいラスターイメージマーカーシンボルタイプがQGISに追加され、ユーザーはラスター、つまりビットマップイメージファイルを使用してマーカーとして表示できます。ラスターイメージマーカーシンボルにより、幅、高さ、イメージ比、回転、および不透明度をカスタマイズできます。
 
-データ定義の画像ソースを使用することで、この新しいシンボルは、地理参照画像を地図キャンバスに表示するための優れた方法になります。
+データ定義の画像ソースを使用することで、この新しいシンボルは、ジオリファレンスされている画像を地図キャンバスに表示するための優れた方法になります。
 
 ![image5](images/entries/511ac83d3b841be6ae81db5f5d0f319e07e9656e.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
-### 機能：ラスター塗りつぶしでリモートURLまたは埋め込み画像に画像を設定できます
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
+### 機能：ラスター塗りつぶしでリモートURLがセットされた画像または埋め込み画像を設定できます
 SVGやラスタ画像マーカーと同様に、ラスタ塗りつぶしはHTTPのURLを使用するように設定したり、ファイルをシンボル自体の内部に直接埋め込むことができます。
 
 この機能はMathieu Pellerinによって開発されました
 ### 分類されたレンダリングでの代表値の使用
-When a field is configured with a value relation, value map or other \"representable value\" and the field is used as the source for a classification renderer, the represented values will be taken to label the categories.
+フィールドに値関係、値マップ又はその他の「表現可能な値」が設定されており、そのフィールドが分類レンダラーのソースとして使用される場合、表現された値がカテゴリのラベルとして使用されます。
 
 この機能はMatthias Kuhnによって開発されました
 ### 機能: 分類レンダラでカテゴリをマージするオプション
@@ -178,33 +178,33 @@ When a field is configured with a value relation, value map or other \"represent
 
 ![image6](images/entries/159eb5270ab436adbbddba1c92799d8621a0b8e5.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 
-This adds a new \"Project Colors\" section in data defined buttons which are linked to a color value. The color menu contains all colors defined as part of the current project\'s Project Color Scheme (which is defined through project properties).
+これにより、色の値にリンクされているデータ定義ボタンに新しい「プロジェクトカラー」セクションが追加されます。カラーメニューには、現在のプロジェクトのプロジェクトカラースキーム（プロジェクトプロパティで定義されています）の一部として定義されているすべての色が含まれています。
 
 ボタンからプロジェクトの色を選択すると、プロパティはその色にリンクされます。プロジェクトのプロパティを介して行われると、それは自動的に将来の色の変更に従います。
 
-This allows users to define common colors for a project once, and then \"bind\" symbol, label, layout, etc colors to these preset colors. The link is live, so you change it once, and the change is reflected EVERYWHERE. Sure beats updating a color 100 times when it\'s use has been scattered throughout a project\'s symbols, labels, etc\...
+これにより、ユーザーはプロジェクトの共通色を一度定義してから、シンボル、ラベル、レイアウトなどの色をこれらのプリセット色に「バインド」することができます。リンクは有効なので、一回変更すると、その変更はどこにでも反映されます。プロジェクト内のシンボルやラベルなど、あちこちに散らばっている色を100回も更新するよりは、断然マシですね…
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: スタイルマネージャーダイアログの改善
 スタイルマネージャーダイアログでは多くの改善が施されました。
-- A new \"list view\" mode has been added
-- An \"all\" tab has been added, which shows all matching symbols (regardless of the symbol type)
+- 新しい「リストビュー」モードの追加
+- 「全選択」のタブが追加され、（シンボルタイプを問わず）合致するシンボル全てを表示することができるようになりました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ラスタースタイルのSLDエクスポート
-QGIS is now able to export raster styling to sld, for example to be used in Geoserver. See: <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
+QGISはラスターのスタイルをSLDにエクスポートすることが可能になりました。Geoseverでこの機能が使われている例はこちらです。 <https://docs.geoserver.org/latest/en/user/styling/qgis/index.html#exporting-raster-symbology>
 
 ![image7](images/entries/7ab383dfaa0a0dbc9651168a56f44e2275b8c2df.png.400x300_q85_crop.webp)
 
 この機能はOSGeo UK, GeoServer PSC, Brad Hardsの資金提供を受けています。
 
-This feature was developed by [Luigi Pirelli and GeoSolutions](https://www.geo-solutions.it/)
+この機能は [Luigi Pirelli and GeoSolutions](https://www.geo-solutions.it/) によって開発されました
 ## デジタイズ
 ### 機能: ジオリファレンサの機能強化
 - GCPポイントにdX, dYと残差を追加
@@ -212,71 +212,71 @@ This feature was developed by [Luigi Pirelli and GeoSolutions](https://www.geo-s
 
 ![image8](images/entries/2d6278e2e65be30ceb12ff30f26d34dae6196e42.png.400x300_q85_crop.webp)
 
-This feature was developed by [Faneva Andriamiadantsoa](https://github.com/Fanevanjanahary)
+この機能は [Faneva Andriamiadantsoa](https://github.com/Fanevanjanahary) によって開発されました
 ### 機能: ポイント追加の時にジオリファレンサが最小化するのを避ける新しいオプション
 ユーザは、マップキャンバスから新しいコントロールポイントを追加するときに発生する自動ジオリファレンスウィンドウの最小化を避けることができます。この動作は、ポイントを追加しながら両方のウィンドウを表示させることが望ましい場合があるマルチモニタ設定では厄介です。
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## データ管理
 ### 機能: データベースマネージャのコメントオプション
-This feature was developed by [Corentin Falcone (SIRS)](https://www.sirs-fr.com/sirs/fr/)
+この機能は [Corentin Falcone (SIRS)](https://www.sirs-fr.com/sirs/fr/) によって開発されました
 ## フォームとウィジェット
 ### 機能: バイナリ (BLOB) フィールドの新しいフォームウィジェット
 このウィジェットはバイナリフィールドでのみ利用可能です（そしてこれはバイナリフィールドに使用されるデフォルトウィジェットです）。BLOBフィールドが空かどうかを示すラベルを表示し、空でない場合はコンテンツサイズ（バイト/ kb / etc単位）を示します。
 
 ドロップダウンメニューボタンを使用すると、ユーザーはフィールドの現在のバイナリコンテンツをディスクベースのファイルに保存したり、BLOBフィールドのコンテンツを消去したり、システムからファイルを選択してバイナリコンテンツを埋め込むことができます。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## マップコンポーザー
 ### 機能: グリッドフレームの改善
-Users can now set a margin for the grid frames in layout map items. Additionally, new \"Zebra (Nautical)\" and \"Line border (Nautical)\" frame styles have been added, which show nautical-style blocks in the grid corners when a margin is set for the grid.
+ユーザがレイアウト地図アイテムのグリッド枠に余白を設定できるようになりました。さらに、新しい \"Zebra (Nautical)\" および \"Line border (Nautical)\" フレームスタイルが追加されました。これらは、グリッドに余白が設定されている場合に、グリッドコーナーに航海スタイルのブロックを表示します。
 
 この機能はkonstによって開発されました
 ### 機能: 文字とラベルのエクスポート処理の改善
 印刷レイアウトをPDFまたはSVG形式にエクスポートするときに、そのレイアウト内のテキストとラベルをどのようにエクスポートするかをユーザーが選択できるようになりました。使用可能なオプションは、すべてのテキストをアウトライン/曲線に変換するか（以前のデフォルト）、テキストとラベルをテキストオブジェクトのままにすることです。
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: マップのラベル機能の改善
 レイアウト地図項目内のラベルのレンダリング方法に関して、いくつかの改善が行われました。
-- A new setting allows per-map control of how close labels are permitted to be placed to the map item\'s edges. Sizes can be set using mm/inches/pixels/etc, and data defined label margins are allowed.
+- 新しい設定により、地図ごとに、ラベルを地図アイテムの端に配置することを許可する方法を制御できます。サイズはmm/インチ/ピクセルなどを使用して設定でき、データ定義型のラベル余白が可能です。
 - 新しい設定により、部分ラベルをマップに表示するかどうかをマップごとに制御できます。レイアウトは常に最高品質のカートグラフィック出力を生成する設定にする必要があるため、これはデフォルトではオフになります（新しいプロジェクトではデフォルトでtrueになるキャンバス設定とは異なります）。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 地図アイテムの範囲/縮尺のショートカットの改訂
 現在の地図ビューと一致するようにレイアウト地図アイテムを設定するためのボタン（およびその逆）が、地図アイテムプロパティウィンドウの新しいツールバーに移動されました。
 
-New actions have also been added to set the map item\'s scale to match the main canvas scale, and to set the main canvas scale to match the selected layout map\'s scale. These mirror the existing settings for setting the extent from the canvas and pushing the extent TO the canvas.
+地図アイテムの縮尺をメインのキャンバスの縮尺に合わせたり、選択したレイアウト地図の縮尺に合わせてメインのキャンバスの縮尺を設定したりするための新しいアクションも追加されました。これらは、キャンバスから範囲を設定し、その範囲をキャンバスにプッシュするための既存の設定を反映しています。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
-### Feature: Layout items can \"block\" map labels
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
+### 機能: 地図ラベルの描画をブロックするレイアウトアイテムの指定
 This feature allows other layout items (such as scalebars, north arrows, inset maps, etc) to be marked as \"blockers\" for the map labels in a map item. This prevents any map labels from being placed under those items - causing the labeling engine to either try alternative placement for these labels (or discarding them altogether).
 
 This allows for more cartographically pleasing maps \-- placing labels under other items can make them hard to read, yet without this new setting it\'s non-trivial to get QGIS to avoid placing the labels in these obscured areas.
 
 The blocking items are set through a map item\'s properties, under the label settings panel. The setting is per-map item, so you can have a scalebar block the labels for one map in your layout and not others (if you so desire!)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: エクスポートでの警告
 印刷レイアウトをエクスポートするとき、QGISは自動的に一般的な間違いがないかどうかレイアウトをチェックし、見つかったときにユーザーに警告します。
 - 地図アイテムにリンクされていないスケールバー
 - パスが壊れているか見つからない、または判読できない画像ファイルにリンクされている画像アイテム
 - 地図の概要が有効な地図アイテムにリンクされなくなりました
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 地図オーバビュー範囲の上下位置の制御
 QGIS allows overview extents to be drawn below map labels (the new default), but in 3.6 choices have been added for drawing them below all map layers, or above/below a specific map layer. This allows users to control exactly where in the map item\'s layer stack the overview will be placed, e.g. allowing them to draw a overview extent below some feature layers such as roads whilst drawing it above other background layers.
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 凡例アイテム用の新しい数式変数
 次のような、レイアウトの凡例項目のデータ定義式で使用するための新しい式変数が追加されました。
 - \@legend_title
@@ -304,14 +304,14 @@ There\'s no UI for this yet (that will come in 3.8), but expressions are entered
 
     My layer (rendered at 1:1000)
     
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## 分析ツール
 ### 機能: ラスタ計算機のハードウェアアクセサレーション
 OpenCLアクセラレーションは、ラスタ計算機の操作でデフォルトで利用可能になりました。
 
 この機能は Alessandro Pasotti - ItOpen によって資金提供されました
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+この機能は [Alessandro Pasotti](https://www.itopen.it) によって開発されました
 ### 機能: メッシュ計算機
 ラスタ計算機と同様に、メッシュ計算機はメッシュレイヤで動作します。一般的な機能に加えて、メッシュ計算機は時間集約機能も提供します。たとえば、1か月にわたる毎日の気温のnetcdfがある場合、各セルのその月の平均気温を計算できます。出力は、タイムスパンまたは空間的範囲によってフィルタリングできます。
 
@@ -324,15 +324,15 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 
 ![image9](images/entries/ae0544826b7d16479b2e48ba97f1f530c80bbd42.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: HStore分割アルゴリズム
 This algorithm creates a copy of an input layer and adds a new field for every unique key found in a HStore type field. For instance, a HStore field is often present in an OSM dataset (\"other_tags\").
 
 ![image10](images/entries/304c29f7cc6d26aa823001b67a46744deec3c2dd.png.400x300_q85_crop.webp)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+この機能は [Etienne Trimaille](https://github.com/Gustry) によって開発されました
 ### 機能: 右手ルールの強制
 この新しいアルゴリズムは、ポリゴンのジオメトリに右手ルールを強制します。右手ルールとは、ポリゴンの境界線の右手側が必ず内側になることで、外側の輪郭線は時計回りに描かれ、ポリゴンの穴の輪郭線は反時計回りに描かれます。（シェープファイルなどは右手ルールです）
 
@@ -340,15 +340,15 @@ This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
 この機能は、QGIS User Group Germanyの資金提供によって開発されました。
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: バイナリフィールド抽出アルゴリズム
 この機能で、バイナリフィールドをファイルに抽出でます。
 
 ![image12](images/entries/6715290eac02e216394b3f24045da0b982069c7d.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 最大長による線分割アルゴリズム
 このアルゴリズムは入力（複数）ライン（または曲線）レイヤを取り、指定された最大長よりも長い部分がないように各地物を複数の部分に分割します。
 
@@ -364,9 +364,9 @@ It allows creation of processing algorithm which can fully take advantage of QGI
 
 QgsProcessingParameterAuthConfigパラメータは、選択された認証設定IDを返すQgsProcessingAlgorithm.parameterAsString()を使用して評価されます。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: gdaladdoアルゴリズムにおけるリサンプリングとフォーマットのオプション
 この機能は Alex Bruy によって開発されました
 ### 機能: ラスタのゾーン統計アルゴリズム
@@ -374,13 +374,13 @@ This algorithm calculates statistics for a raster layer\'s values, categorized b
 
 ![image14](images/entries/014272dcac2a228f8d8cc7a1587ac9b07865bc1f.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: Z値とM値の抽出アルゴリズム
 これらのアルゴリズムを使用すると、地物のジオメトリに存在するz値またはm値をレイヤ内の属性に変換できます。
 
 デフォルトでは地物の最初の頂点からのz / m値が抽出されますが、オプションとして、ジオメトリからのすべてのz / m値について統計を計算できます（例：z値の平均/最小/最大/合計など）。
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: 180度子午線での測地線分割
 このアルゴリズムは、線分が子午線を横切るとき（経度±180度）に、線を複数の測地線分に分割します。反子午線で分割すると、投影図の線を視覚的に表示するのに役立ちます。返されるジオメトリは常にマルチパートジオメトリになります。
 
@@ -395,19 +395,19 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 "その場で編集" モードにも対応しています。
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Geodesic mode for \"Join by Lines (Hub lines)\" algorithm
 これにより、希望するなら測地線の生成が可能になります。測地線は、回転楕円体上におけるポイント間の最短距離を表現する線です。
 
 測地線モードを使用すると、作成した線分を逆子午線（経度±180度）で分割できます。これにより、線分のレンダリングが向上します。さらに、頂点間の距離も指定できます。距離が短いほど、線が密で正確になります。
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Raster Surface Volume algorithm
 SAGAラスタサーフェスボリュームは、ネイティブのQGISアルゴリズムに移植されました。このアルゴリズムのSAGAバージョンは、計算された量がSAGA端末出力にのみ埋め込まれるため、QGISでの使用には制限があります。これにより、ファイルがファイルに保存されたり、モデル内で後のモデルステップへの入力として再利用されたりするのを妨げます。したがって、このアルゴリズムはネイティブのQGIS c ++アルゴリズムに移植されています。このアルゴリズムはSAGAアルゴリズム1：1を複製しますが、体積（および面積）をHTMLレポートまたはベクタテーブルのいずれかに出力します。さらに、出力はアルゴリズムから数値出力としてエクスポートされるため、モデル内で再利用できます。
 
 ![image15](images/entries/e0a8089ec0653cf5628636354ec80ef317e68565.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Resurrected model to Python script functionality
 Processingモデルを同等のPythonスクリプトに直接変換する2.xの機能が復活し、3.x Processing API用に更新されました。
 
@@ -415,16 +415,16 @@ Processingモデルを同等のPythonスクリプトに直接変換する2.xの�
 
 This feature was funded by [Solspec](http://solspec.io)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## アプリケーションとプロジェクトのオプション
 ### 機能: オプションの詳細タブから設定を削除
 This change adds a new right click menu to the settings shown in the \"Advanced\" tab in the settings dialog, which allows users to remove that setting (or group of settings).
 
 ![image17](images/entries/6b012542ef9ca282ba6f9087758f85d818dd5ec9.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## ブラウザ
 ### Feature: Add \"export to file\" options for raster and vector layers within the browser
 実際にそれらを最初にプロジェクトにロードする必要なしに、これらのファイルを（例えば、異なるフォーマット、crsなどに）直接エクスポートすることを可能にします。
@@ -433,35 +433,35 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [Nyall Dawson (North Road)](https://north-road.com)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ネイティブのファイル／フォルダプロパティ
 You can now right click on a file or folder within the browser, and select \"File Properties\" or \"Directory Properties\" to open the native file/folder properties dialog for that entry. This allows rapid access to operating system file or folder properties, such as file permissions and sharing options.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: レイヤと属性をプレビュー
 QGIS 3.6 brings back the functionality from the old 2.18 standalone \"browser\" application to preview layers and their attributes. This functionality has been moved to the inbuilt browser panel, and is available by right-clicking on a layer and selecting \"properties\" (or by clicking the \"enable properties widget\" button in the browser toolbar).
 
 ![image19](images/entries/5058aa9a701e417271b0cbf0869669177a7f0fe4.png.400x300_q85_crop.webp)
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ブラウザでQGS/QGZプロジェクトを探索
 以前のバージョンのQGISでは、QGS / QGZプロジェクトファイルがブラウザに表示され、新しいアクティブプロジェクトとして開くことができました。QGIS 3.6では、この機能が拡張され、プロジェクトファイルをブラウザ内で直接探索できるようになりました。プロジェクトは拡張可能な項目になり、それらを拡張するとグループとレイヤの完全なプロジェクト構造が表示されます。その後、任意のレイヤを現在のプロジェクトにドラッグアンドドロップできます。
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: Geopackageとシェープファイルを直接生成
 Right clicking a directory in the browser panel now shows a \"New\" menu, containing items for creating a new Geopackage, Shapefile, or subdirectory under the selected directory.
 
 ![image20](images/entries/2bc8475b95a8413285b3c88a9a070f02f43cf5b9.png.400x300_q85_crop.webp)
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: パスでターミナルを開く
 そのディレクトリで新しい端末ウィンドウを開くために、ブラウザパネルのディレクトリ項目に新しいコンテキストメニューエントリが追加されました。
 
@@ -471,7 +471,7 @@ Windowsでは、この新しい端末はQGIS環境を継承しているので、
 
 ![image21](images/entries/623ef55ae3918f72faa7ec796bbac01bf5063464.png.400x300_q85_crop.webp)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ## 一般情報
 ### Feature: Improved \"missing layer\" handling on project load
 ![image22](images/entries/8e3fbce280478d8e88cab7e24b489b783c83fc13.png.400x300_q85_crop.webp)
@@ -484,34 +484,34 @@ A new setting, \"allowVersionCheck\" has been added to the QGIS configuration in
 
 この設定は、QGISバージョン管理が一元管理されているエンタープライズインストールでの使用を目的としています。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: ベクタレイヤの凡例アイテムにトグル動作を追加
 ![image23](images/entries/f3b822b5591367b7d246fbdd5173763a1633b9ec.png.400x300_q85_crop.webp)
 
 This feature was funded by [A.R.P.A. Piemonte](http://www.arpa.piemonte.it)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+この機能は [Alessandro Pasotti](https://www.itopen.it) によって開発されました
 ## データプロバイダ
 ### 機能: ArcGISフィーチャサーバーレイヤのサービス情報を開く
 ArcGIS Feature Serverレイヤのブラウザパネルに新しい右クリックメニューオプションがあり、ユーザは選択したレイヤのサービス情報Webページを直接開くことができます。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Binary blob support for OGR providers
 バイナリフィールドを切り捨てられた文字列に変換する代わりに、これらの値は元のバイナリコンテンツとして取得できるようになりました。これにより、プラグインやスクリプトは、その内容の抽出など、バイナリフィールドを利用することができます。
 
 Additionally, new binary fields can be created for compatible data sources.
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: ArcGIS Feature Server picture marker and picture fill support
 画像マーカーまたは画像塗りつぶしシンボルを使用してFeature Serverレイヤーをロードすると、QGISは自動的にESRI画像マーカーと塗りつぶしシンボルを変換し、それらをレイヤーのデフォルトスタイルとして使用します。
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
 本機能はNyall Dawson, Mathieu Pellerinが開発しました。
 ### Feature: ArcGIS Feature Server labeling support
@@ -521,9 +521,9 @@ Feature Serverレイヤーにサーバーによって定義されたラベル付
 ### Feature: Boolean and binary field support for memory layers
 Memory (\"Temporary scratch\") layers can now use binary and boolean (true/false) field types.
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: JSON Support for GeoPackage
 Support for JSON allows to store structured data inside a single field in GeoPackage files.
 
@@ -543,7 +543,7 @@ When a view loaded from Data Source Managers\'s PostgreSQL tab you can select th
 ### Feature: ArcGIS Feature Server multi-field unique value support
 QGIS can now display a Feature Server layer with a multi-fiend unique value renderer setup.
 
-This feature was developed by [Mathieu Pellerin](http://imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://imhere-asia.com/) によって開発されました
 ## QGISサーバー
 ### Feature: Possibility to set ATLAS_PK in GetPrint request to print atlas sheet(s)
 The new GetPrint parameter accepts the primary key(s) for which atlas sheets should be printed, separated by comma,
@@ -590,7 +590,7 @@ Thanks to this new feature, the FORMAT parameter of GetFeatureInfo for the WMS s
     
 This feature was funded by [Veolia](https://www.veolia.com)
 
-This feature was developed by [Paul Blottiere (Oslandia)](http://oslandia.com/)
+この機能は [Paul Blottiere（Oslandia）](http://oslandia.com/) によって開発されました
 ## プラグイン
 ### 機能:DBマネージャ:外部SQLファイルの読み込みと保存ボタンの追加
 このボタンでは外部SQLファイルのクエリーの読み込みと保存ができます。
@@ -606,7 +606,7 @@ Contains utilities for retrieving the geotag from images and for setting an imag
 
 このクラスを使えば、普遍的なジオタグ取得/設定のための安定したメソッドがあり、プラグインやスクリプトで安全に使用することができます。
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: QgsGeometryの単一パートに対する反復
 This new PyQGIS API allows easy iteration over all the parts of a geometry, regardless of the geometry\'s type. E.g.
 
@@ -630,9 +630,9 @@ For a const iteration, calling .const_parts() gives a const iterator, which cann
     for part in geometry.const_parts():
        print(part.x())
     
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### 機能: QgsLineString PyQGIS APIの機能向上
 QgsLineString API に機能が追加されました。
 - len(QgsCurve) は曲線における点の数を返します。
@@ -641,9 +641,9 @@ QgsLineString API に機能が追加されました。
 - Add \[\] setter for setting specific (existing) vertices, e.g. ls\[1\] = QgsPoint(1,2)
 - Add del support for removing vertices, e.g. del ls\[1\] removes the second vertex
 
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: PyQGIS Geometry Collection API improvements
 ジオメトリコレクションを扱うためのPyQGIS APIが改良されました：
 - Calling removeGeometry with an invalid index will now raise an IndexError
@@ -657,9 +657,9 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
     for part in gc:
       print(part.asWkt())
     
-This feature was funded by [North Road](https://north-road.com)
+この機能は [North Road](<https://north-road.com>) の資金提供によって開発されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com) によって開発されました
 ### Feature: Easier Processing algorithm creation via \@alg decorator
 カスタムクラスを実装しなくても、次のものが処理スクリプトを定義できるようにします：
 
@@ -678,20 +678,20 @@ SAFEブロックリクエストを実行するための新しいPyQGIS APIが追
 
 リダイレクトはクラスによって自動的に処理されます。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### Feature: Custom validity checks on layout exports
 See <https://north-road.com/2019/01/14/on-custom-layout-checks-in-qgis-3-6-and-how-they-can-do-your-work-for-you/>
 
-This feature was funded by [SMEC/SJ](http://www.smec.com/en_au)
+この機能は [SMEC/SJ](http://www.smec.com/en_au) によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: 測地線計算のためのAPI
 測地線計算のために成熟したgeographiclibライブラリを利用するQgsDistanceAreaに測地線（楕円上の最短距離）を計算するための新しいPyQGIS APIが追加されました。
 - QgsDistanceArea.geodesicLine：2点間の測地線を計算します
 - QgsDistanceArea.latitudeGeodesicCrossesAntimeridianは、2点を結ぶ測地線が反経線と交差する緯度を計算します。
 - QgsDistanceArea.splitGeometryAtAntimeridian：測地線を使用して反子午線上で分割が行われる正確な点を計算して、（複数の）折れ線を反子午線で分割します。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ### 機能: 新しいクラス QgsQuadrilateral
 QgsRectangleは、その役割が範囲に対するものであるため、方向またはZのサポートを提案しません。 4つの頂点ポリゴンを管理するためのQgsQuadrilateralという新しいクラスが作成されます。今のところ、長方形しかありませんが、後で他の形状を追加することも可能です。
 
@@ -760,7 +760,7 @@ This feature was developed by [Peter Petrik (Lutra Consulting)](https://www.lutr
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+この機能は [Alessandro Pasotti](https://www.itopen.it/) によって開発されました
 ### 機能: Alexander Bruyによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -836,7 +836,7 @@ This feature was developed by [Jürgen Fischer](https://www.norbit.de/)
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+この機能は [Peter Petrik](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: Julien Cabiecesによるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -894,7 +894,7 @@ This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+この機能は [Even Rouault](http://www.spatialys.com/) によって開発されました
 ### Feature: Bug fixes by Martin Dobias
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -936,7 +936,7 @@ This feature was developed by [Martin Dobias](https://www.lutraconsulting.co.uk/
 
 This feature was funded by [QGIS.ORG donors and sponsors](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 ### Feature: Bug fixes by Hugo Mercier
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.4 backport commit (GitHub) |
 | --- | --- | --- | --- |

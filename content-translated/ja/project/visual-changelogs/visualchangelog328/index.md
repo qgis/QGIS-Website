@@ -24,7 +24,7 @@ For a whirlwind tour of all the new functionalities introduced, you can view the
 
 We would also like to extend a big thank you to the developers, documenters, testers, and the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://qgis.org) and lend a hand!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [list of donors](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our sustaining member page for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug-fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは、寄付者およびサステイニングメンバーによって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新のリストは、[寄付者リスト](https://qgis.org/en/site/about/sustaining_members.html#list-of-donors) でご覧いただけます。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細についてサステイニングメンバーのページをご覧ください。QGISへの財政支援は、定期的な開発者ミーティングの開催、プロジェクトインフラの維持、バグ修正活動の資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。全てのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -206,13 +206,13 @@ This is a step towards eventually deprecating the older `$` style functions, and
 ![image16](images/entries/b9666dee9322ba767162310e6958503e639d1148.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Add new shared_paths function
+### 機能: shared_paths 関数を新規追加
 A new `shared_paths` function has been added which returns a collection containing paths shared by the two input geometries. Those going in the same direction are in the first element of the collection, and those going in the opposite direction are in the second element. The paths themselves are given in the direction of the first geometry.
 
 ![image17](images/entries/f02946a8f1e45527366c30e6d0ea5a4947c7f86a.webp)
 
 This feature was developed by [Nyall Dawson](https://github.com/nyalldawson)
-### Feature: Make_valid and geom_to_array functions
+### 機能: Make_valid 及び geom_to_array 関数
 Additional functions have been added for:
 - `make_valid`: Repair broken input geometries and returns the corrected geometries
 - `geometries_to_array`: This converts a geometry collection into an array for easier handling and iteration
@@ -275,7 +275,7 @@ A new advanced parameter is available for some processing tools which allows the
 この機能は Orange Telecom FR によって資金提供されました
 
 This feature was developed by [Loïc Bartoletti](https://github.com/lbartoletti)
-### Feature: Improved \"Make Valid\" Algorithms
+### 機能: 「有効にする」アルゴリズムの改善
 QGIS can now use the newer refined GEOS 3.10+ methods for validating and repairing geometry features.
 
 ![image23](images/entries/4b320e5bad078f1a0eb23fe958d86e330b08c10e.webp)
@@ -625,7 +625,7 @@ This feature was developed by [Sandro Santilli (strk)](https://strk.kbt.io/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 ### 機能: Loïc Bartoletti によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.22 backport commit (GitHub) |
 | --- | --- | --- | --- |

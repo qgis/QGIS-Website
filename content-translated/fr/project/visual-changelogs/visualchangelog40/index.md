@@ -413,7 +413,7 @@ This feature was developed by [North Road](https://north-road.com/)
 These functions are designed to make it easy to customise the display of a degree-based grid annotation, by allowing easy extraction of the individual components of the decimal degree value for individual formatting (e.g., displaying the degrees in bold)
 - extract_degrees: Extracts the integer number of degrees from a decimal degrees value. The minutes and seconds components are ignored. The extracted degrees values will be truncated towards zero (not rounded).
 - extract_minutes: Extracts the integer number of minutes from a decimal degrees value. The degrees and seconds components are ignored. The extracted minutes values will be truncated towards zero (not rounded), and will always be a positive value.
-- Extracts the decimal number of seconds from a decimal degrees value. The degrees and minutes components are ignored. The extracted seconds value will always be a positive value.
+- Extrait le nombre décimal de secondes à partir d'une valeur exprimée en degrés décimaux. Les composantes degrés et minutes sont ignorées. La valeur des secondes extraite sera toujours positive.
 
 <img src="images/entries/afca4fe52738eae1b242ae2720e0bbbb97f119fe.png" class="img-responsive img-rounded" />
 
@@ -634,7 +634,7 @@ The long-requested ability to show the number of features flowing through the mo
 
 This feature was funded by the QGIS Switzerland user group
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ### Feature: support max-triangle-edge-length in PDAL Export to raster (TIN) algorithm
 Support for max-triangle-edge-length parameter has been added to the PDAL Export to raster (TIN) algorithm, so that triangles where the edge length is bigger than the specified threshold can be ignored.<br />This feature needs PDAL \>= 2.6.0 and wrench \>=1.2.2.
 
@@ -714,7 +714,7 @@ Previous versions of the QGIS model designer had a fixed canvas size of 4000 x 4
 
 This feature was funded by Hauts-de-France region
 
-This feature was developed by [Valentin Buira](https://github.com/ValentinBuira)
+This feature was developed by [Celia Buira](https://github.com/CeliaBuira)
 ## Options de l'application et du projet
 ### Feature: OAuth2 auto refresh
 QGIS now includes an auto-refresh mechanism for OAuth2 connections.<br />A cache cleanup to stop the auto refresh is triggered periodically, and when a layer is removed from the project. This is required to avoid unnecessary, endless refreshing of unused tokens.

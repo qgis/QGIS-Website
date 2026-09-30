@@ -20,7 +20,7 @@ QGISプロジェクトのもう1つの素晴らしい日です！新しい長期
 
 We would like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは寄付者と維持会員によって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新のリストは、 [寄付者リスト](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors) をご覧ください。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細について `サステイニングメンバーのページ](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustain_members.html#qgis-sustaining-memberships) をご覧ください。QGISへの財政支援は、定期的な開発者会議の開催、プロジェクトインフラの維持、バグ修正活動への資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -38,7 +38,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ### 時間アニメーションフレームをエクスポートする機能
 後で外部アプリケーションでつなぎ合わせるために、一時的なアニメーションフレームを連続する画像にエクスポートできます。ユーザーは、画像サイズと地図範囲を正確に制御できます。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## ツール
 ### Go-Toロケータ
 新しいgotoロケータフィルタを追加しました。
@@ -73,7 +73,7 @@ This feature was developed by [jakimowb](https://api.github.com/users/jakimowb)
 - スタイルのリストをフィルタして現在表示されているものだけを表示できます
 - シンボルを編集する際に、式のプレビューがうまく機能するように、正しいキャンバスのズームレベルを設定する
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### ユーザーがベクタタイル接続のデフォルトスタイルのURLをオプションで指定できる
 When setting up a vector tile source connection, there\'s a new option to enter a URL to a MapBox GL JSON style configuration. If one has been entered, then that style will be applied whenever the layers from the connection are added to QGIS.
 
@@ -81,15 +81,15 @@ When setting up a vector tile source connection, there\'s a new option to enter 
 
 ![image5](images/entries/f93d5dca726eb94be82cc47479424b8fe42f5920.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 塗りつぶしシンボルレイヤにデータ定義オフセットが使える
 任意の塗りつぶしシンボルレイヤは、シンプル塗りつぶし、ラスタ画像塗りつぶし、シェイプバーストおよびグラデーション塗りつぶしを含む、ポリゴンのオフセットをサポートしていますが、データ定義オフセットが可能になりました。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### ベクタタイルレイヤにMapBox GL JSONスタイルをインポートします
 ベクタタイルレイヤのスタイルファイルをインポートする際に、MapBox GL JSONスタイル設定ファイルを読み込むことができます
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 事前に設定する量で直線の破線パターンをオフセットするオプションを見えるようにする
 Allows for tweaking the positioning of dashes/spaces in the line, so that the dashes/spaces can be placed at nicer positions to account for corners in the line (also can be used potentially to \"align\" adjacent dash pattern borders).
 
@@ -97,7 +97,7 @@ Allows for tweaking the positioning of dashes/spaces in the line, so that the da
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 直線シンボルレイヤの破線パターンを動的に調整できるオプションを追加します
 オプションが追加され、破線パターンの微調整が可能になりました。これにより、ラインシンボルのレンダリング品質を向上させるより多くの制御が可能になります。これらのオプションには以下が含まれます:
 - 破線パターンを線の長さに揃える：チェックを入れると、破線パターンの長さが微調整され、線がレンダリングされるとき、ギャップ要素や部分的なダッシュ要素ではなく、完全なダッシュ要素で終わるようになります。
@@ -117,7 +117,7 @@ The following images illustrate the \"Align dash pattern to line length\" change
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### スタイルマネージャによって3Dシンボルを管理する
 QGISスタイルマネージャを介して3Dシンボルを管理するサポートが追加されました。これには、3Dシンボルのインポートとエクスポートライブラリの対応も含まれており、3Dシンボルとそのウィジェットハンドラを完全に抽象化する最近の作業を完了しました。
 
@@ -127,14 +127,14 @@ This feature addresses the issue raised in [31479](https://github.com/qgis/QGIS/
 
 ![image9](images/entries/7e4ee802abba7dfd7ec61cdd8b3db333b7a30fae.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## ラベリング
 ### ユーザーがライン地物に沿ってラベルの配置を制御できるオプションを追加
 A new \"Label Anchoring\" section in the line placement settings for labels allows users to specify whether labels should be placed at the center, start or end of lines. In addition, it allows offsets of these positions (based on the percentage of the feature length), which may be defined statically or by using a data-defined definition.
 
 ![image10](images/entries/f5cc643fc4eafe75053c134b245e91d2e72e33d0.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### ラインのラベルのアンカーポイントを制御する
 ライン地物のラベル付けのアンカーポイントがヒントか厳密な要件かを制御できる新しいオプションが公開さました。結果として、以下の動作変更が含まれます:
 - 厳格: ラベルはラベルアンカーのみに正確に配置され、他のフォールバック配置は許されません。
@@ -142,7 +142,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 ![image11](images/entries/a6c67225ee3b55a021a395ffbf58bd05352ef6fb.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## ダイアグラム
 ### 積み上げ棒グラフに軸をレンダリングする
 これは、軸が設定された場合に、積み上げ棒グラフ図に軸をレンダリングするサポートを追加します。実装はヒストグラム図の軸のレンダリングを基にしています。
@@ -232,7 +232,7 @@ This feature was developed by [Alexander Bruy](https://api.github.com/users/alex
 ### スタイル/プロジェクトに3D素材のテクスチャファイルを埋め込むことができる
 いくつかのAPIとコードの小さなクリーンアップが行われ、また、プロジェクト内に埋め込むために3DテクスチャファイルにQgsImageCacheの使用が導入されました。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### シャドーレンダリング
 3Dビューで影をレンダリングできるようになりました。
 
@@ -279,7 +279,7 @@ This feature was developed by [Mathieu Pellerin](https://api.github.com/users/ni
 
 Addresses [Issue #37726](https://github.com/qgis/QGIS/issues/37726).
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### マテリアルの取扱いの改善
 マテリアルの取扱いに関する更なる改善が行われ、Goochシェーディングモデルが追加されました。これにより、QgsAbstractMaterialSettings API が改善されます:
 - 登録されたマテリアル型にアイコンのサポートを追加します（マテリアル選択コンボボックスで使うため）。
@@ -289,20 +289,20 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 ![image25](images/entries/b6df518d57147bfdfd207d4499363c9d4653721b.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## 印刷レイアウト
 ### 手動のテキストテーブルで、個々のセルのテキスト形式と配置の制御を見えるようにします
 個々のセルの内容に対して、テキストの形式（例：太字/斜体/バッファ/シャドウなど）とテキストの配置（水平および垂直）を設定するための制御を、手動のテキストテーブルに追加します。
 
 この機能は City of Canning によって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 属性テーブルのテキストをレンダリングするためにQgsTextRendererを使います
 属性テーブルのレイアウトで、バッファ、シャドウ、単語の間隔など、全てのテキストのフォーマットオプションを可能にします。
 
 この機能は City of Canning によって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### レイアウト内の地図グリッドテキストを描画するのにQgsTextRendererを使います
 グリッドの注記に、バッファ、シャドウ、背景形状などが使えます
 
@@ -310,13 +310,13 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 ![image27](images/entries/349efbc988ccbf3499e18ec4453b637abf893c38.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### レイアウトをPDFへエクスポートする時のPDF画像圧縮方法を制御するオプションを公開
 オプションは、使用されるデフォルトのJPEG圧縮である非可逆圧縮と可逆圧縮（ほとんどの場合、より大きなファイルを作成しますが、プロの印刷出力やIllustratorなどの他の製品でのポストプロダクションにはるかに適しています）用です。
 
 悪いニュースは、このオプションは、Qt 5.13以降のビルドでなければ利用できないということです。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 地図帳に自動切り抜き設定を追加
 この機能により、現在の地図帳領域地物の境界で地図が切り抜かれるようにレイアウト地図アイテムの地図の切り抜きを有効にすることができます。
 
@@ -335,7 +335,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 この機能は City of Canning によって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 地図をレンダリングする際に適用するクリッピング領域を指定するAPIをQgsMapSettingsに追加します
 現在、これはAPIのみの機能ですが、マップのレンダリングに使用できるクリッピング領域を指定するためのバックエンドの機能が追加されています。
 
@@ -350,7 +350,7 @@ Although primarily introduced in order to provide functionality which allows the
 
 この機能は City of Canning によって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### レイアウト凡例の最大マーカーサイズ
 レイアウトの凡例ウィジェットに、最大マーカーサイズ（mm単位）を入力する機能を追加します。
 
@@ -362,7 +362,7 @@ This feature was developed by [mhugent](https://api.github.com/users/mhugent)
 
 この機能は City of Canning によって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### レイアウトマップをシェープに切り抜きます
 新機能が導入され、レイアウト内のシェープまたはポリゴンアイテムにマップアイテムを切り抜くことができるようになり、レイアウト内で非矩形の地図が可能になります。
 
@@ -370,7 +370,7 @@ This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalld
 
 ![image31](images/entries/7179282b09e8d196251f543a9c5f059f89c701e2.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 回転した目盛り/注記の対応
 Tick marks and annotations on a map frame in the print composer can now be rotated, allowing them to align with a rotated map frame as described in [issue 36904](https://github.com/qgis/QGIS/issues/36904). It works for both rotated maps and reprojected grids.
 
@@ -412,7 +412,7 @@ Useful for data defined overrides in the symbology of label expressions, e.g. to
 
 This feature was funded by [Kanton Solothurn](https://geo.so.ch/)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### refFunctionsをコアへ移植します
 様々なオーバーレイ操作が式エンジンに追加されました。これには、refFunctionsプラグインの機能が含まれています。
 
@@ -440,7 +440,7 @@ This feature was developed by [Olivier Dalang, OPENGIS.ch](https://www.opengis.c
 ### 移動方向に基づいて方位を計算するオプションを追加します
 誤った方位測定値を報告するデバイスについて、このオプションを使うと、代わりに前の2つの記録された位置に基づいたGPS方位を計算することができます。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 曲線の地物のデジタイズと分割
 ベクタレイヤ地物をデジタイズまたは分割する際に、直線または円形ストリングを切り替えることができる新機能が導入されました。
 
@@ -476,7 +476,7 @@ This feature changes the behavior of relation widgets created in the drag and dr
 
 ![image44](images/entries/d3a51f9b7ea6ffa3c8c8c457e3d6278d57bcf125.gif)
 
-This feature was developed by [signedav](https://api.github.com/users/signedav)
+この機能は [signedav](https://api.github.com/users/signedav) によって開発されました
 ### 地物情報結果ツリーに関連した地物を表示
 識別ツールを使用する際に、結果ウィンドウで関連する（子）地物を表示することができるようになります。識別された各親地物の下には、新しいグループが関連する子地物の属性、アクションを表示し、その子地物の地物フォームを直接開くことができます。
 
@@ -484,7 +484,7 @@ This feature addresses issue [18634](https://github.com/qgis/QGIS/issues/18634).
 
 ![image45](images/entries/863b80851b995421b6f2ea455faf6b1c41211cd5.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### リレーション参照ウィジェットのフィルタ式
 静的フィルタ式をリレーション参照ウィジェットで使うためのオプションが追加されました。
 
@@ -505,7 +505,7 @@ TODO: In the majority of cases, performance problems will be caused by one or mo
 
 ![image48](images/entries/943a79db68aee3458cb88cacd7a69b66fda3caea.webp)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## プロセシング
 ### パラメータのヘルプ文字列を追加します
 パラメータレベルでヘルプ文字列を指定できるようになりました。
@@ -524,23 +524,23 @@ Optionally, the output layer\'s symbology can be set to automatically use the ca
 
 この場合の使用例は、このアルゴリズムによって生成されたデータ定義の回転値を使用して、建物のポイントシンボルを最も近い道路の方向に合わせることです。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### ディレクトリを作成するモデラーアルゴリズムを追加
 このアルゴリズムにより、モデルで新しいファイルディレクトリを作ることができます。結果を特定の動的に作成されたパス（例　現在の日付を格納するフォルダ）に出力する必要があるモデルに便利です。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### プロジェクトの式変数にセットするモデラーアルゴリズムを追加
 Allows a model to set Project-level expression variables during execution. Especially useful with the new [Export Print Layout algorithms](https://github.com/qgis/QGIS/pull/36916) to allow models which dynamically set variables used in a layout prior to export.
 
 This functionality was ported from <https://gis.stackexchange.com/questions/359386>
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 印刷レイアウトをPDF/imageとしてエクスポートするプロセシングアルゴリズムを追加
 モデルはプロジェクトから印刷レイアウトをエクスポートすることができます。これの使用例の1つは、特定のレイアウトのセットをプロジェクトから特定のフォルダーにエクスポートするときに、複数のレイアウトを手動で開いて1つずつエクスポートする代わりに、ひとつの操作で簡単に再エクスポートするプロジェクト内モデルが作れるようにすることです。
 
 さらに、モデル内に式型の出力ファイルを持つ新しい機能を使えば、現在日付のタグを持つフォルダにレイアウトを自動的にエクスポートし、エクスポートされたファイル名にこれを含めることができます！
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### ファイルのアルゴリズムに保存機能を追加
 モデル内のファイルデータセットにベクタ地物を保存するためのネイティブなプロセシングアルゴリズムができました。GDALにデータセットとレイヤのオプションを渡すための一対の高度な機能が付属しています。
 
@@ -558,7 +558,7 @@ It\'s designed as a quick way to de-normalize a relation from a project, e.g. to
 
 この機能は、SMEC/SJによって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### 地図帳レイアウトを画像としてエクスポートするアルゴリズム
 新しいネイティブのプロセシングアルゴリズムが追加され、地図帳レイアウトを画像としてエクスポートできるようになりました。
 
@@ -597,25 +597,25 @@ This feature was developed by [Clemens Raffler](https://api.github.com/users/roo
 
 ![image51](images/entries/97228db861367c2875dab0533ab616bb2ac2432c.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 新しい、ラスタスタックの値の過小頻度アルゴリズム
 ラスタスタック内でセルごとに動作するいくつかの新しいラスタアルゴリズムを追加しました。ラスタスタックの値の過小頻度アルゴリズムは、入力ラスタスタックの値が、値ラスタの値よりも小さい頻度（回数）をセルごとに評価します。
 
 ![image52](images/entries/114853cd3d7c245b56edea0024704c853997275c.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 新しい、ラスタスタックの最小値の位置アルゴリズム
 この新しいQGISバージョンには、いくつかのラスタ値位置分析ツールを追加しました：*ラスタスタックの最小値の位置* アルゴリズムは、ラスタスタック内の最低値の位置をセルごとに評価します。位置の数は1から入力ラスタの総数までの範囲です。アルゴリズムでは、入力ラスタの順序が重要です。
 
 ![image53](images/entries/f3383f5583c9096b1b8d1873679e1a495fac0485.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### 新しい、ラスタスタックの最大値の位置アルゴリズム
 この新しいQGISバージョンには、いくつかのラスタ値位置分析ツールを追加しました：*ラスタスタックの最大値の位置* アルゴリズムは、ラスタスタック内の最高値の位置をセルごとに評価します。位置の数は1から入力ラスタの総数までの範囲です。アルゴリズムでは、入力ラスタの順序が重要です。
 
 ![image54](images/entries/a730b8c1566c99bdebff09c783ae320b0c138d76.webp)
 
-This feature was developed by [Clemens Raffler](https://github.com/root676)
+この機能は [Clemens Raffler](https://github.com/root676) によって開発されました
 ### プロセシングの結果をレイヤーグループに読み込む
 Users can now optionally set a group name which ensures that the resulting output layers added to the project when using the *Open output file after running algorithm* option are grouped together. This allows all outputs from several processing algorithms to be grouped so that they may be easily located in the layer tree and be removed, exported, or have their visibility toggled easily. ![image58](images/entries/414c68839518d5b658d6e6f1565f6c27e1f4336f.gif)
 
@@ -623,7 +623,7 @@ This feature was developed by [Germán Carrillo](https://github.com/gacarrillor)
 ### 新しい出力を作成する、ゾーン統計量アルゴリズムを追加
 Previously, when calculating zonal statistics, the algorithm always updated the original data source, adding additional fields. A new zonal statistics algorithm has been added which creates a new output instead. This functionality is an implementation of the [29504 feature request](https://github.com/qgis/QGIS/issues/29504).
 
-This feature was developed by [Matthias Kuhn](https://api.github.com/users/m-kuhn)
+この機能は [Matthias Kuhn](https://api.github.com/users/m-kuhn) によって開発されました
 ### ジオメトリのプロセシングパラメータを追加
 Added a new `QgisProcessingParameterGeometry` for passing geometries as a parameter to processing alogrithms.
 
@@ -642,7 +642,7 @@ This feature was developed by [David Marteau](https://api.github.com/users/dmart
 ### アプリケーションが安全に終了できるかどうかを判断するインタフェースを追加
 プラグインやスクリプトがカスタムロジックを登録して、QGISアプリケーションが終了しないようにするためのインタフェースが追加されました。これにより、プラグインはアプリケーションが安全に終了できるかどうかを判断することができます。これにより、プラグインはQGISが終了する前に保存または破棄する必要のある未保存の変更があるかどうかを判断することができるようになりました。これは、コンソールスクリプトエディタで既に実装されている機能であり、未保存の変更がある場合に静かにアプリケーションをシャットダウンするのではなく、ユーザーにプロンプトを表示してデータの損失を防ぎます。
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ## アプリケーションとプロジェクトのオプション
 ### 利用可能なGDALベクタドライバを列記
 A *Vector Drivers* tab is now available within the QGIS GDAL Settings window, which lists all the available GDAL vector drivers and allows users to toggle their active state. Where several drivers may be used to open data of a specific type, users may now modify these settings to ensure that the intended driver is used when importing specific vector data types. For example, the FileGDB and OpenFileGDB drivers are both capable of being used to import .gdb files, but if the data file has a version of 9.x, the FileGDB won\'t be able to open it. In this instance, a user may disable the FileGDB driver and ensure that the data is loaded using the OpenFileGDB driver instead.
@@ -689,7 +689,7 @@ After a user adds a layer from a VectorTileService, the server\'s default stylin
 
 ![image63](images/entries/e31c882fa9552ed6bd247f0092305ae8c153948a.gif)
 
-This feature was developed by [Nyall Dawson](https://api.github.com/users/nyalldawson)
+この機能は [Nyall Dawson](https://api.github.com/users/nyalldawson) によって開発されました
 ### Trust layer metadata propagation
 プロジェクトレベルの信頼フラグは、ベクタレイヤの範囲をプロバイダではなく、xmlから読み取るためにのみ使われます。
 
@@ -768,7 +768,7 @@ This feature was developed by [3Liz](https://www.3liz.com)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Even Rouault](http://www.spatialys.com/)
+この機能は [Even Rouault](http://www.spatialys.com/) によって開発されました
 ### Alessandro Pasotti によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -819,7 +819,7 @@ This feature was developed by [Even Rouault](http://www.spatialys.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
+この機能は [Alessandro Pasotti](https://www.itopen.it/) によって開発されました
 ### Peter Petrik によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -874,7 +874,7 @@ This feature was developed by [Alessandro Pasotti](https://www.itopen.it/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+この機能は [Peter Petrik](https://www.lutraconsulting.co.uk/) によって開発されました
 ### Bug fixes by Paul Blottiere
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -903,7 +903,7 @@ This feature was developed by [Paul Blottiere](https://hytech-imaging.fr/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Matthias Kuhn](https://www.opengis.ch/)
+この機能は [Matthias Kuhn](https://www.opengis.ch/) によって開発されました
 ### Julien Cabieces によるバグ修正
 | バグの表題 | URL issues.qgis.org （報告された場合） | URL Commit (Github) | 3.10 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -1046,6 +1046,6 @@ This feature was developed by [Olivier Dalang](https://www.opengis.ch/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 
 {{<content-end >}}

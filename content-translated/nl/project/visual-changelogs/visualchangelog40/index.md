@@ -635,7 +635,7 @@ De langverwachte mogelijkheid om het aantal objecten dat door het model stroomt 
 
 Dit werd mogelijk gemaakt door de Zwitserse QGIS gebruikersgroep
 
-Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ### Mogelijkheid: Ondersteuning voor max-triangle-edge-length in PDAL-algoritme Export to raster (TIN)
 Ondersteuning voor de parameter max-triangle-edge-length is toegevoegd aan het algoritme van PDAL Export to raster (TIN), zodat driehoeken, waarvan de lengte van de rand groter is dan de gespecificeerde drempel kunnen worden genegeerd.<br />Deze mogelijkheid heeft PDAL \>= 2.6.0 en wrench \>=1.2.2 nodig.
 
@@ -715,7 +715,7 @@ Eerdere versies van de modelontwerper van QGIS hadden een vaste grootte voor het
 
 Dit werd mogelijk gemaakt door Hauts-de-France region
 
-Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ## Opties voor toepassing en projecten
 ### Mogelijkheid: OAuth2 automatisch vernieuwen
 QGIS bevat nu een mechanisme voor automatisch vernieuwen van verbindingen voor OAuth2.<br />Een opruimactie van de cache om het automatisch vernieuwen te stoppen wordt periodiek geactiveerd, en wanneer een laag is verwijderd uit het project. Dit is vereist om onnodig, eindeloos vernieuwen van niet-gebruikte tokens te vermijden.

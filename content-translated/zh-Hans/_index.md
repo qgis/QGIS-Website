@@ -6,12 +6,10 @@ Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
 ButtonText: 下载
-HasAnnouncement: true
+HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: 免费开源
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: 适用于 Windows、Mac、Linux 系统
 draft: false
 heroLogo: img/logosign.svg

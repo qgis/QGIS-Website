@@ -332,7 +332,7 @@ Een enkel paneel "Toolbox" is toegevoegd aan Modelontwerper, wat de objecten van
 
 Dit werd mogelijk gemaakt door [Hauts-de-France](https://www.hautsdefrance.fr/)
 
-Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ## Processing
 ### Mogelijkheid: SAGA "Fill Sinks Wang & Liu" geporteerd naar eigen gereedschap
 Dit veelgevraagde gereedschap leek nogal fragiel en foutgevoelig indien uitgevoerd via de plug-in SAGA voor Processing.
@@ -363,7 +363,7 @@ Dat stelt gebruikers in staat om snel en gemakkelijk een uitvoer vanuit een knoo
 
 <img src="images/entries/00050aa06ae1565769944d24e26b9d938da2df6c.png" class="img-responsive img-rounded" />
 
-Deze mogelijkheid werd ontwikkeld door [Valentin Buira](https://github.com/ValentinBuira)
+Deze mogelijkheid werd ontwikkeld door [Celia Buira](https://github.com/CeliaBuira)
 ### Mogelijkheid: Algoritme Rang raster voor Processing
 Het nieuwe algoritme "Rang raster" neemt een collectie rasters als invoer en maakt een uitvoer met celwaarden die overeenkomen met de rangorde van een lijst met celwaarden die uit de invoercollectie van de rasters komen.
 
@@ -529,7 +529,7 @@ Dit werd mogelijk gemaakt door Ifremer
 Deze mogelijkheid werd ontwikkeld door [Julien Cabieces](https://github.com/troopa81)
 ## Programmeerbaarheid
 ### Mogelijkheid: Methode toegevoegd om geometrie van Shapely te converteren naar geometrie voor QGIS
-In line with [QEP#227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), a new `QgsGeometry.from_shapely()` method for generating a QgsGeometry object from a shapely object has been provided to improve integration with the shapely geometry library, while keeping it an optional dependency.
+In lijn met [QEP#227](https://github.com/qgis/QGIS-Enhancement-Proposals/issues/227), wordt een nieuwe methode `QgsGeometry.from_shapely()` verschaft voor het maken van een object QgsGeometry vanuit een shapely object om integratie met de geometriebibliotheek shapely te verbeteren, terwijl het wordt behouden als een optionele afhankelijkheid.
 
 Deze mogelijkheid werd ontwikkeld door [Till Frankenbach](https://github.com/merydian)
 ### Mogelijkheid: QGIS GPS-gereedschap weergeven voor Python API en plug-ins

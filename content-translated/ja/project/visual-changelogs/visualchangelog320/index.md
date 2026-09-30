@@ -24,9 +24,9 @@ Additionally, users can expect improved metadata management and handling for cer
 
 The QGIS Community has also seen an uptick in activity in the [QGIS HUB](https://plugins.qgis.org/), as well as the Virtual QGIS Open Days, with the [Cutting Edge Open Day](https://github.com/qgis/qgis/wiki/QHF-May-2021) showcasing a number of demonstrations which leverage rich QGIS functionality that was introduced in more recent releases.
 
-We would also like to extend a big thank you to the developers, documenters, testers, and all the many folks out there who volunteer their time and effort (or fund people to do so) to make these releases possible. From the QGIS community, we hope you enjoy this release! If you wish to donate time, money, or otherwise get involved in making QGIS more awesome, please wander along to [QGIS.ORG](https://www.qgis.org/) and lend a hand!
+さらに、開発者、ドキュメント作成者、テスター、 そして、これらのリリースを可能にするために時間と労力をボランティアとして提供してくださる（あるいはそのための資金を提供してくださる）多くの皆様に、心より感謝申し上げます。QGISコミュニティを代表して、このリリースをぜひお楽しみください！時間や資金の寄付、あるいはその他の形で QGIS をより素晴らしいものにするために参加をご希望の方は、ぜひ [QGIS.ORG](https://www.qgis.org/) にアクセスして、ご協力をお願いいたします！
 
-QGIS is supported by donors and sustaining members. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors). If you would like to become an official project sustaining member, please visit our [sustaining member page](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustaining_members.html#qgis-sustaining-memberships) for details. Sponsoring QGIS helps us to fund our regular developer meetings, maintain project infrastructure, and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは寄付者と維持会員によって支えられています。プロジェクトに大小を問わず財政的な貢献をしてくださった寄付者の最新のリストは、 [寄付者リスト](https://www.qgis.org/en/site/about/sustaining_members.html#list-of-donors) をご覧ください。公式のプロジェクトサステイニングメンバーになることをご希望の方は、詳細について `サステイニングメンバーのページ](https://www.qgis.org/en/site/getinvolved/governance/sustaining_members/sustain_members.html#qgis-sustaining-memberships) をご覧ください。QGISへの財政支援は、定期的な開発者会議の開催、プロジェクトインフラの維持、バグ修正活動への資金に活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 {{<fund type="active" >}}
 
@@ -709,7 +709,7 @@ This feature was developed by [Julien Cabieces](https://www.oslandia.com/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
+この機能は [Peter Petrik](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能: Nyall Dawsonによるバグ修正
 | バグの表題 | URL (if reported, Github) | URL Commit (Github) | 3.16 backport commit (GitHub) |
 | --- | --- | --- | --- |
@@ -762,6 +762,6 @@ This feature was developed by [Peter Petrik](https://www.lutraconsulting.co.uk/)
 
 This feature was funded by [QGIS.ORG (through donations and sustaining memberships)](https://www.qgis.org/)
 
-This feature was developed by [Nyall Dawson](https://north-road.com/)
+この機能は [Nyall Dawson](https://north-road.com/) によって開発されました
 
 {{<content-end >}}

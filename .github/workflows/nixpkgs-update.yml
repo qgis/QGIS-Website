@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           ref: ${{ github.head_ref }}
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.FLAKE_UPDATE_PAT }}
           submodules: recursive
 
       - name: Install Nix
@@ -40,4 +40,4 @@ jobs:
           commit-message: "flake: flake update nixpkgs-version"
           committer: GitHub <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.FLAKE_UPDATE_PAT }}

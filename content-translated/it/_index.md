@@ -2,17 +2,15 @@
 AnnouncementLinkText: Scopri la lista dei cambiamenti
 AnnouncementText: Scopri le nuove funzionalità, i miglioramenti e tutto ciò che rende
   questa versione un momento storico.
-AnnouncementTitle: is here!
+AnnouncementTitle: È qui!
 Badge: img/badges/dpg-badge.png
 BadgeLink: https://blog.qgis.org/2025/02/08/qgis-recognized-as-digital-public-good/
 ButtonLink: download/
 ButtonText: Scarica
-HasAnnouncement: true
+HasAnnouncement: false
 HasBanner: true
 HeroImage: img/hegobg1.webp
 LabelText: Free and Open Source
-OsgeoBadge: img/badges/osgeo-logo-white.svg
-OsgeoBadgeLink: https://www.osgeo.org/projects/qgis/
 SupportedOS: Disponibile per Windows, Mac, Linux
 draft: false
 heroLogo: img/logosign.svg

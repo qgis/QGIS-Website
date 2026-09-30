@@ -59,14 +59,50 @@ Als u werkt in een gevoelige omgeving, adviseren we u om :
 - Focus niet alleen op breuken in de code, maar ook op het gedrag van gebruikers met betrekking tot inloggegevens en het risico van lekken in projectbestanden als gebruikers staan op het gebruiken van basisauthenticatie (wat zal resulteren in het feit dat inloggegevens worden opgeslagen in platte tekst in projectbestanden).
 
 ### Maken we Common Vulnerabilities and Exposures (CVE)?
-Momenteel is het project QGIS **geen** CVE Numbering Authority (CNA), dus geven we geen identificaties voor CVE uit.
-### Beveiligingsproces en werkstroom
-Onthullingen worden besproken in een daarvoor aangewezen private opslagplaats.
+We kunnen CVE-identificaties verschaffen, wanneer u uw kwetsbaarheid doorgeeft via [Github advisories](https://github.com/qgis/QGIS/security). We zullen de CVE niet beïnvloeden als de kwetsbaarheid een upstream afhankelijkheid betreft.
+### Beheren van beveiligingskwetsbaarheden en processen voor het doorgeven van kwetsbaarheden
+Gevonden kwetsbaarheden worden privé besproken [Github advisories](https://github.com/qgis/QGIS/security)
 
 Reparaties worden zo snel als mogelijk is doorgevoerd in puntuitgaven - afhankelijk van de ernst van het probleem.
 
 Als u uw zakelijke uitrol van QGIS veilig wilt houden, zorg er dan voor dat u in staat bent snel reparaties uit te kunnen voeren aan de machines die u beheert.
 
 OSGeo4W verschaft updatescripts die zonder toezicht kunnen worden uitgevoerd. Deze scripts maken het voor u mogelijk alleen de noodzakelijke bibliotheken te upgraden, zonder de noodzaak om het gehele pakket opnieuw te downloaden. Voor meer informatie over het instellen van deze scripts voor uw uitrol, bekijk de [documentatie van OSGeo4W](https://trac.osgeo.org/osgeo4w/).
+### Zijn er onafhankelijke beveiligingsaudits beschiikbaar ?
+De laatste beschikbare publieke audit werd uitgevoerd door het Zwitserse National Cyber Security Centre (NCSC) gedurende een [pilotproject voor het testen van beveiligingskwetsbaarheden in open source-software](https://www.bacs.admin.ch/en/25-ntc-oss-en).
+
+{{<rich-list listLink="../media/ntc-test-report-qgis-v1-2025-10-13.pdf" linkAttr="download" layoutClass="third" listTitle="Security Audit QGIS Server and QWC2 - Test Report 2025.10.13 NCSC" listSubtitle=" PDF downloaden" >}}
+
+QGIS is door vele organisaties privaat beoordeeld, soms in heel gevoelige context van beveiligingsbeheer tot netwerkprogramma's.<br />QGIS-server, omdat het een webserver is die interacteert met databases, is het kritiekste deel. Het is verhard tegen SQL-injecties.
+### Zijn testen voor binnendringen uitgevoerd ?
+QGIS Desktop is een programma voor de desktop, geen SaaS-software. Het heeft geen infrastructuur op afstand nodig.
+
+QGIS-server is getest tegen kwetsbaarheden en volgt een klassieke procedure voor doorgeven / repareren.
+### Veilige softwareontwikkeling en werkwijzen voor beoordelen van code
+Een globaal overzicht van onze beveiliging is te vinden met het [gereedschap OpenSSF Scorecard report](https://securityscorecards.dev/viewer/?uri=github.com/qgis/QGIS).
+
+MultiFactor-authenticatie is verplicht voor onze opslagplaatsen van Github.
+### Mechanismen voor integriteit en verificatie van softwareuitgaven
+Elk [beschikbaar pakket](https://www.qgis.org/resources/installation-guide/) is beschikbaar met een controlesom. Pakketten van macOS zijn genotariseerd. We zijn ons bewust van de risico's van XZ-stijl aanvallen op de aanvoerlijn. De deelnemers kunnen alleen privileges verdienen na een lange en betrokken periode, en na ontmoetingen in de echte wereld, gedurende onze bijeenkomsten voor deelnemers.
+### Wat is het beleid voor ondersteunde versies en beveiligingsreparaties/EOL
+Bekijk <https://www.qgis.org/resources/roadmap/>.
+### Hoe wordt het beveiligingsbeheer voor afhankelijkheden van derde partijen uitgevoerd ?
+QGIS.org ondersteunt alleen het verpakken van Ubuntu/Debian en Windows.
+
+Afhankelijkheden voor Ubuntu/Debian zijn afhankelijk van de distributie van de gebruikers en is geen verantwoordelijkheid van QGIS.org.
+
+De Windows-bibliotheek voor installatieprogramma's, via het [project OSGEO4W](https://trac.osgeo.org/osgeo4w). Onze beheerders zijn attent om zo snel mogelijk te reageren, afhankelijk van de kritieke ernst van de kwetsbaarheid.
+### Beveiligingsbeheer of processen voor beoordelen van toepassing op plug-ins van derde partijen voor QGIS
+QGIS Desktop wordt verpakt met een installatieprogramma voor plug-ins van Python, dat gebruikers in staat stelt uitbreidingen van derde partijen te installeren, net zoals webbrowsers doen.
+
+Bekijk <https://plugins.qgis.org/docs/security-scanning>
+
+Omdat het uitvoeren van Python in een desktopomgeving alle privileges van een gebruiker erft, zou het uitrollen in gevoelige omgevingen direct toegang tot deze opslagplaats moeten deactiveren en die vervangen door een interne opslagplaats die alleen geaudite plug-ins toestaat.
+### Geeft u ISO 27001-certificatie, SOC 2, CRA-attestatie uit ?
+Nee, dat doen we niet. Als u ze nodig hebt, neem dan contact met ons op en overweeg het ondersteunen van QGIS.org om de werkdruk, die de vereisten voor compliance van ons vragen, te verlichten. QGIS.org is geen serviceprovider, en QGIS is beschikbaar volgens de bepalingen van de licentie GPL 2.
+### Kan QGIS.org mijn eigen formulier voor compliance vullen ?
+QGIS.org is een stichting die wordt bekostigd uit donaties en kosten voor lidmaatschap. We hebben beperkte bronnen naast onze vrijwillige en betaalde staf. We zien tegenwoordig een tendens dat elke organisatie zijn eigen formulier maakt. We kunnen ze niet voor u invullen, maar we zullen zoveel mogelijk informatie hier op de website plaatsen om u te helpen bij het invullen van die formulieren. Zodra die formulieren een nationale of internationale standaard volgen, zal het voor ons een plezier zijn om die online te publiceren.
+
+U kunt bijvoorbeeld de formulieren US HECVAT en VPAT, beheerd door de US-gebruikersgroep, gepubliceerd vinden op <https://www.qgis-us.org/hecvat/> and <https://www.qgis-us.org/vpat/>.
 
 {{<content-end >}}

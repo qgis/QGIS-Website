@@ -1,0 +1,42 @@
+{{/*
+    Individual contributor table row.
+    Context: dict "contributor" <contributor> "rank" <int> "honorary" <honorary member or nil> "pinned" <bool>
+*/}}
+{{ $contributor := .contributor }}
+{{ $rank := .rank }}
+{{ $isHonorary := .honorary }}
+{{ $core := index $contributor.thematics "qgis_core" | default 0 }}
+{{ $docs := index $contributor.thematics "documentation" | default 0 }}
+{{ $web := index $contributor.thematics "web_sites" | default 0 }}
+{{ $thematicKeys := slice }}
+{{ range $k, $v := $contributor.thematics }}{{ if gt $v 0 }}{{ $thematicKeys = $thematicKeys | append $k }}{{ end }}{{ end }}
+<tr class="contributor-table-row"
+    {{ if .pinned }}data-pinned="true"{{ end }}
+    data-rank="{{ $rank }}"
+    data-login="{{ $contributor.login }}"
+    data-total="{{ $contributor.total_contributions }}"
+    data-qgis_core="{{ $core }}"
+    data-documentation="{{ $docs }}"
+    data-web_sites="{{ $web }}"
+    data-thematics="{{ delimit $thematicKeys " " }}">
+    <td>
+        {{ if .pinned }}
+        <span class="tag is-warning is-light">{{ $isHonorary.icon }} #{{ $rank }}</span>
+        {{ else }}
+        {{ $rank }}
+        {{ end }}
+    </td>
+    <td>
+        <img src="{{ $contributor.avatar_url }}" alt="{{ $contributor.login }}" style="width:36px;border-radius:50%;object-fit:cover;" loading="lazy">
+    </td>
+    <td>
+        <a href="https://github.com/{{ $contributor.login }}" target="_blank" rel="noopener">
+            {{ $contributor.login }}
+        </a>
+        {{ with $isHonorary }}<span class="tag is-warning is-light ml-1" title="{{ .title }}">{{ .icon }}</span>{{ end }}
+    </td>
+    <td>{{ if .pinned }}<strong>{{ $contributor.total_contributions }}</strong>{{ else }}{{ $contributor.total_contributions }}{{ end }}</td>
+    <td>{{ $core }}</td>
+    <td>{{ $docs }}</td>
+    <td>{{ $web }}</td>
+</tr>

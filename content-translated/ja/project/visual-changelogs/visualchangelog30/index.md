@@ -20,7 +20,7 @@ The greatest QGIS release ever! QGIS 3.0 is a huge overhaul and cleanup of our b
 
 We would like to thank the developers, documenters, testers and all the many folks out there who volunteer their time and effort (or fund people to do so). From the QGIS community we hope you enjoy this release! If you wish to donate time, money or otherwise get involved in making QGIS more awesome, please wander along to [qgis.org](https://qgis.org) and lend a hand!
 
-QGIS is supported by donors and sponsors. A current list of donors who have made financial contributions large and small to the project can be seen on our [donors list](https://qgis.org/en/site/about/sponsorship.html#list-of-donors). If you would like to become and official project sponsor, please visit [our sponsorship page](https://qgis.org/en/site/about/sponsorship.html#sponsorship) for details. Sponsoring QGIS helps us to fund our six monthly developer meetings, maintain project infrastructure and fund bug fixing efforts. A complete list of current sponsors is provided below - our very great thank you to all of our sponsors!
+QGISは、寄付者やスポンサーによって支えられています。プロジェクトに大小問わず財政的な貢献をしてくださった寄付者の最新リストは、 [寄付者一覧](https://qgis.org/ja/site/about/sponsorship.html#list-of-donors) でご覧いただけます。公式のプロジェクトスポンサーになることをご希望の方は、詳細について [スポンサーシップページ](https://qgis.org/en/site/about/sponsorship.html#sponsorship) をご覧ください。QGISへのご支援は、半年ごとの開発者ミーティングの開催、プロジェクトインフラの維持、バグ修正活動の資金として活用されます。最新のスポンサーの完全なリストを以下に掲載します。すべてのスポンサーの皆様に心より感謝申し上げます！
 
 QGIS はフリーのソフトウェアです。利用する上で金銭を支払う義務はありません。実際、私たちは利用者の財政状況や社会的地位にかかわらず、より多くの人に QGIS を利用して欲しいと思っています。私たちは地理空間的な意思決定ツールによって人々が力を持つことが、全人類の社会をより良くすると信じています。
 
@@ -85,13 +85,13 @@ It\'s accessed through the color picker dialog, on the lists tab. Just add a new
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：地図キャンバスの北の矢印の装飾のための色の設定
 すべての地図キャンバスの北矢印の装飾の色設定が追加されました。
 
 ![image69](images/entries/6a3fa6fb065a02defaa42440f301847e8fbbeb75.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### Feature: Improved map canvas\' save as image
 The map canvas\' save as image function has been expanded and now offers users the possibility to tweak the scale, resolution, and extent on-the-fly. Extents can be restricted to a height-width ratio. A save as PDF function was also added to quickly export the map canvas into a resolution-independent PDF.
 
@@ -99,13 +99,13 @@ The map canvas\' save as image function has been expanded and now offers users t
 
 この機能は Andreas Neumann によって資金提供されました(partial funding)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：メインウィンドウで開いたパネルの表示を切り替えます
 Accessible via: - View menu \> Toggle Panels Visibility - **Ctrl+Tab** keyboard shortcut
 
 ![image71](images/entries/68249b50c2813f4b204cb0305587b2850e7cd61e.gif)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：ユーザーインターフェイスの一貫性の向上
 This work sponsored by the QGIS grant program on \"adding consistency to UI controls\" is now complete and merged into master. The following tasks were done as part of this work:
 - **transparent / opacity / alpha** に関するすべてのAPIは、 **setOpacity()** および **opacity()** に標準化されました。このメソッドは、0（透明）と1（不透明）の間で2倍の値を取り、Qt APIとの一貫性を保ちます。
@@ -121,7 +121,7 @@ QGIS PSCとこのプロジェクトをスポンサーにして、それを進め
 
 この機能は、QGIS出資者とドナーによって資金提供されました
 
-This feature was developed by [Nyall Dawson](https://north-road.com)
+この機能は [Nyall Dawson](https://north-road.com) によって開発されました
 ### 機能：単一のグループ内のレイヤーを開く
 多くのサブレイヤーを開くと、凡例の同じグループ内でそれらをすべて開くことができます。
 
@@ -129,7 +129,7 @@ This feature was developed by [Nyall Dawson](https://north-road.com)
 
 This feature was funded by [Kartoza](http://www.kartoza.com)
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+この機能は [Etienne Trimaille](https://github.com/Gustry) によって開発されました
 ## 三次元機能
 ### 機能：3Dマップビューと地形生成
 私たちは、QGISで真新しいネイティブ3D地図ビューを持っています！3D地図ビューでは、上の地形に2D地図（プロジェクトレイヤーからレンダリング）が表示されます。デフォルトでは地形は平面ですが、高さデータのソースとしてデジタル標高モデルを使用したラスターレイヤーを使用することは可能です。
@@ -143,7 +143,7 @@ Use menu View \> New 3D Map View to add a 3D view of the project. This will crea
 
 This feature was funded by [QGIS.ORG](https://qgis.org/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能：地図レイヤーの3Dレンダラー
 デフォルト設定では、地図レイヤーは地形の上に2D地図画像にレンダリングされます。しかし、いくつかの地図レイヤーに3Dレンダラを設定することで、3Dワールドをより有効に活用できます。3Dレンダラでは、データを3Dビューで真の3Dオブジェクトとして表示できます。これは現在、ベクターレイヤー（すべてのジオメトリタイプ - ポイント、ラインまたはポリゴン）でサポートされています。これにより、次のような視覚化が可能になります。
 - 建物のフットプリントを持つポリゴンを押し出して（おそらくデータ定義の高さで）3Dビューを実現できます
@@ -155,7 +155,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 This feature was funded by [QGIS.ORG](https://qgis.org/)
 
-This feature was developed by [Martin Dobias, Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias, Peter Petrik (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## 計算式
 ### 機能：新しい式変数
 Adds `@project_crs` and `@project_crs_definition` variables for retrieving the current project CRS
@@ -171,7 +171,7 @@ QGISで使用される現在のロケールを返します。デフォルトで�
     
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：新しい式の関数
 **アトラス式**
 - **atlas_layerid** and **atlas_layername**: Returns layer ID and layer name of the current layer in the atlas.
@@ -292,7 +292,7 @@ This makes it possible to access attributes and geometry from the parent feature
 
 ![image64](images/entries/7666e6f1fd7a95ec3e099c27c6bf9ef6b145c956.jpeg.400x300_q85_crop.webp)
 
-This feature was developed by [Matthias Kuhn (OPENGIS.ch)](https://opengis.ch)
+この機能は [Matthias Kuhn (OPENGIS.ch)](https://opengis.ch) によって開発されました
 ### Feature: Item_variables expression function inside compositions
 This adds a new item_variables expression function when expressions are used inside a composition context.
 
@@ -308,8 +308,8 @@ This adds a new item_variables expression function when expressions are used ins
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
-## 文書化
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
+## ドキュメント
 ### 機能：プロセッシングアルゴリズムの拡張
 プロセッシングアルゴリズムがレビューされ、文書化されました。[ヘルプ]ボタンをクリックすると、QGISのWebサイトが開き、アルゴリズムの説明に拡張されたドキュメントと画像が表示されます。
 
@@ -317,26 +317,26 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 この機能は、QGISグラント提案 によって資金提供されました
 
-This feature was developed by [Matteo Ghetta (Faunalia), Alexander Bruy](http://www.faunalia.eu/)
+この機能は、 [Matteo Ghetta (Faunalia), Alexander Bruy](http://www.faunalia.eu/) によって開発されました
 ## シンボロジ
 ### 機能：データ定義のシンボルレイヤーの可視性
 Adds a data defined override to control a symbol layer\'s visibility. Allows users to disable drawing certain symbol layers for matching features.
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：シングルバンド疑似カラーレンダリングに使用されるカラーランプの保存と復元
 この機能はAlexander Bruyによって開発されました
 ### 機能：使用可能なシンボルユニットにポイントとインチを追加する
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：新しいカラーランプボタンウィジェット
 In QGIS 3.0, handling of color ramps has gotten much better via a newly introduced color ramp button widget. Improvements include: - custom color ramp settings are remembered when projects are re-opened - color ramp inversion is implemented within the widget, enabling this action across QGIS - quick access to \"favorite\" color ramps within the widget pop-up menu - interfacing with catalogs (cpt-city and ColorBrewer) is now much more pleasant
 
 ![image73](images/entries/547ffa26f79435ff28198820bb0d95dc495b4f13.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：スタイル管理の再作業とアップグレード
 スタイル管理は大幅にアップグレードされました。改善点は次のとおりです。
 - 新しいお気に入りのグループ化システムが追加されました。シンボルリストウィジェットはデフォルトで
@@ -348,13 +348,13 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 ![image74](images/entries/bb43cc8a048018b0f54463674ebf2d11bb0abc21.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：ラスターレンダラーの複数項目の色と透明度の設定をサポート
 It is now possible to change the color and transparency for multiple values at the same time for the singleband pseudocolor and the paletted renderers. Simply select values within the values\' list and right click to have a pop-up menu appear.
 
 ![image75](images/entries/dc60a3f5fdc3a6568e8f3b9bf635066fcde9926d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：カラーボタンのドロップダウンメニューにアルファスライダを表示する
 色のアルファに素早く調整できます
 
@@ -362,7 +362,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：疑似色レンダラに対するラスター範囲ツールバー・アクションのサポート
 この機能はMathieu Pellerinによって開発されました
 ### 機能：paletted レンダラへの 透明度のサポート 
@@ -370,7 +370,7 @@ QGIS 3.0では、パレットレンダラの一意の値の透明度値を変更
 
 ![image77](images/entries/603b73fbf8ad7db9cdb43689641eb70326c11bbf.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：キャンバス更新時のラスター自動stretching
 see <https://lists.osgeo.org/pipermail/qgis-developer/2016-September/044393.html> follow up to raster pseudocolor updated extent auto classification.
 
@@ -380,7 +380,7 @@ see <https://lists.osgeo.org/pipermail/qgis-developer/2016-September/044393.html
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：注記は塗りシンボルスタイルを使用してスタイル設定できます
 This changes the rendering of annotation frames to use QGIS\' symbology engine, which means that all the existing fill styles can now be used to style annotation frames.
 
@@ -388,7 +388,7 @@ This changes the rendering of annotation frames to use QGIS\' symbology engine, 
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：ポイントクラスターレンダラー
 近くのポイントを1つのレンダリングされたマーカーシンボルにグループ化する新しいシンボルレンダラー。必要に応じて、ラベルに1つのシンボルに集約された地物の数が表示されます。
 
@@ -405,7 +405,7 @@ See the crowd [funding programme](https://north-road.com/qgis-cluster-renderer-c
 
 この機能は、Andreas Neumann、Qtibia Engineering（Tudor Barascu）、Karl-MagnusJönsson、Geonesia（Nicolas Ponzo）、そして多数の匿名の後援者によって資金提供されました。
 
-This feature was developed by [Nyall Dawson](https://north-road.com/qgis-cluster-renderer-crowdfunding/)
+この機能は、 [Nyall Dawson](https://north-road.com/qgis-cluster-renderer-crowdfunding/) によって開発されました
 ### 機能：QGIS 3.0の新しい地図彩色アルゴリズム
 see <http://nyalldawson.net/2017/02/new-map-coloring-algorithms-in-qgis-3-0/>
 
@@ -419,7 +419,7 @@ Allows use of a color ramp consisting of a list of selected colors. Currently th
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：シンボルレイヤーを一時的に無効にする　
 Adds a new checkbox at the bottom of each symbol layer\'s properties which allows you to control whether the layer is enabled or not. Disabled layers are not drawn, but are saved and can be enabled at a later stage. This makes it easier to tweak symbol appearance without having to totally delete a symbol layer.
 
@@ -427,7 +427,7 @@ Adds a new checkbox at the bottom of each symbol layer\'s properties which allow
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：離散ラスターの簡単なスタイル設定
 In QGIS 3.0, the existing raster Paletted Renderer for rasters was adapted to allow for easy styling of discrete raster layers, such as landcover or boolean rasters. Now, users can select the renamed \"Paletted/Unique Values\" renderer and click the \"Add Unique Values\" button to load all unique raster values from the layer. These are automatically assigned a color using the selected color ramp.
 
@@ -439,12 +439,12 @@ In QGIS 3.0, the existing raster Paletted Renderer for rasters was adapted to al
 
 This feature was funded by Stéphane Henriod, Satelligence (<http://satelligence.com/>), Bird\'s Eye View (<https://www.birdseyeviewgis.com/>), other anonymous backers
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## ラベリング
 ### 機能：ラベルのフォントサイズをmm / pixels単位で許可する
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：カスタムラベルツールバーが常に有効になりました
 Thanks to the awesome **auxiliary data storage** and the editable joined table, the manual label customization is now always enabled. You do not need anymore to add dedicated fields in your datasource to change labels position, rotation, or any of the possible settings for labels to activate the toolbar. **No more copy of readonly datasources and so much faster labeling !** **Be warned**, labels are **only saved along with your project file** in a .qgd sqlite database, or inside the .qgz zipped project file if you chose that format. Don\'t forget to share that .qgd file if you want to share your project file.
 
@@ -454,7 +454,7 @@ And for power users, the old way of having data defined fields in your datasourc
 
 This feature was funded by [French ministry of Ecology and Sustainable Developpement](https://www.ecologique-solidaire.gouv.fr/)
 
-This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pblottiere)
+この機能は [OSLANDIA - Paul Blottiere](https://github.com/pblottiere) によって開発されました
 ## ダイアグラム
 ### 機能：データで定義されたプロパティ
 より多くのデータ定義可能なプロパティのサポートをダイアグラムに追加する：
@@ -468,7 +468,7 @@ This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pbl
 
 この機能は、QGISグラントプログラム によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ## レンダリング
 ### 機能：ライブレイヤーのサポート
 QGIS 3.0はライブレイヤーをサポートするようになりました。これらのレイヤーは、決まった時間間隔で自動的に再レン​​ダリングされ、きれいでちらつきのない方法で再描画されます。ライブレイヤーは、車の艦隊、テレメトリデータを持っている鳥の群など、連続的に変化するデータを追跡するのに最適です。　
@@ -485,17 +485,17 @@ See <https://vimeo.com/236604742>
 
 This feature was funded by [QGIS.org Grant application](https://qgis.org)
 
-This feature was developed by [OSLANDIA - Vincent Mora](https://github.com/vmora)
+この機能は [OSLANDIA  -  Vincent Mora](https://github.com/vmora) によって開発されました
 ### 機能：キャンバスを更新するときに不要な再描画を避けるためラベル付け結果をキャッシュ
 この変更により、地図レンダリング後の画像にラベル付け結果をキャッシュすることができます。キャッシュされたラベルの結果画像を次のレンダリングで再利用できる場合は、ラベル付けの問題に関与するすべてのレイヤーを再描画し、ラベル付けソリューションを解決する必要はありません。基本的には、これは、 **非ラベルレイヤーへの変更の結果としてのキャンバス更新がずっと速くなる** ことを意味します。（ラベル付けソリューションの一部であるレイヤーを変更するには、すべてのラベル付きレイヤーを完全に再描画する必要があります）
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：点の移動のためのグリッドレンダラー
 ポイント移動のグリッドレンダラー
 
 ![image85](images/entries/0247dfa555b6a80139f399b69071a2cc9bd278b3.png.400x300_q85_crop.webp)
 
-This feature was developed by [Muhammad Yarjuna Rohmat (Kartoza)](http://www.kartoza.com)
+この機能は、 [Muhammad Yarjuna Rohmat (Kartoza)](http://www.kartoza.com) によって開発されました
 ## デジタイズ
 ### 機能：ノードツールの範囲頂点選択
 この機能により、ある地物から **範囲の頂点** を選択できます。
@@ -510,7 +510,7 @@ For closed curves (polygons), it is possible to switch to the \"longer\" way aro
 
 This feature was funded by [French ministry in charge of ecology](https://www.ecologique-solidaire.gouv.fr/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk)
+この機能は、 [Martin Dobias (Lutra Consulting)](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能：デフォルトのZ値オプションを追加する
 ジオパッケージ/シェイプファイルを作成する：Z値を持つオプションが追加されました
 
@@ -534,7 +534,7 @@ Just move a feature using the new \"click - click ergonomy\" and use the advance
 
 This feature was funded by [d.b.g. Datenbankgesellschaft mbH](http://www.datenbankgesellschaft.de/)
 
-This feature was developed by [Martin Dobias](http://www.lutraconsulting.co.uk)
+この機能は [Martin Dobias](http://www.lutraconsulting.co.uk) によって開発されました
 ### 機能：頂点ツールのオーバーホール
 ノードツール（現在は頂点ツールに名前を変更）は、柔軟性を高めるために完全なリワークを経ています。より重要な変更のいくつかは次のとおりです。
 1. ユーザーが最初に地物を選択してから2番目のステップで頂点を編集するように要求するのではなく、複数の地物を同時に処理できるようになりました。したがって、複数の地物から頂点を選択して一度に移動または削除することは簡単です。特定の地物だけに頂点の選択を制限する必要がある場合、選択ツールで地物を最初に選択できます。頂点ツールは、そのような場合に選択された地物の頂点でのみ機能します。
@@ -552,7 +552,7 @@ See <https://github.com/qgis/QGIS-Enhancement-Proposals/issues/69> for more info
 
 This feature was funded by [QWAT](http://qwat.org/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能：頂点ツール：頂点を追加するための中間点マーカー
 改良された頂点ツールは、地物の線分の中間点に余分なマーカーを表示するようになりました。このようなマーカーをクリックすると、新しい頂点が追加されます。セグメントをダブルクリックして頂点を追加する既存の方法は維持されています。
 
@@ -560,7 +560,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 This feature was funded by [QWAT](http://qwat.org/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能：頂点ツール：ラインを続ける
 頂点ツールを使用して線ストリングのジオメトリを編集する場合、マウスを最初または最後の頂点の方に移動すると、端点のすぐ隣に余分なマーカーが表示されます。マーカーをクリックすると、ジオメトリの最後に頂点が追加されます。
 
@@ -568,7 +568,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 This feature was funded by [QWAT](http://qwat.org/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ### 機能：頂点ツール：高度なデジタイジングパネルのサポート
 高度なデジタイジングパネルは、頂点ツールでも機能するようになりました。他の［デジタイジング］地図ツールと同様に、新しい頂点または既存の頂点の座標をパネルに入力することができます。
 
@@ -576,7 +576,7 @@ This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lut
 
 This feature was funded by [QWAT](http://qwat.org/)
 
-This feature was developed by [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/)
+この機能は、 [Martin Dobias (Lutra Consulting)](https://www.lutraconsulting.co.uk/) によって開発されました
 ## データ管理
 ### 機能：属性テーブルの現在の地物にパンする
 ![image94](images/entries/2f488f086cb64fb0394d1848b4a41f28f80a2adf.gif)
@@ -595,7 +595,7 @@ See the original [pull request](https://github.com/qgis/QGIS/pull/5086) and this
 
 ![image96](images/entries/f0fded6f5276d4b7e51b11834bad3d615e2b4f2d.png.400x300_q85_crop.webp)
 
-This feature was developed by [Paul Blottiere / Oslandia](http://oslandia.com/)
+この機能は [Paul Blottiere / Oslandia](http://oslandia.com/) によって開発されました
 ### 機能：メタデータのオーバーホール
 QGISのメタデータシステムは、オーバーホールされました。QGIS 3.0では、QGISプロジェクトファイル形式とは別に独自の内部的なフォーマル化メタデータスキーマを導入しています。レイヤーのメタデータを読み書きするための新しいAPI機能を紹介します。メタデータの表示を編集から切り離し、新しいメタデータ編集ツールを追加しました。メタデータは現在プロジェクトファイルに保存されています。ファイルベースのレイヤーの横にXMLファイルとして保存することも、リモートレイヤーのためにローカルのsqliteデータベースに保存することもできます（PostGISなど）。
 
@@ -611,7 +611,7 @@ The primary funder for this work was [The WorldBank/GFDRR](https://www.gfdrr.org
 
 This feature was funded by [WorldBank/GFDRR](http://gfdrr.org)
 
-This feature was developed by [Kartoza and collaborators](http://kartoza.com)
+この機能は [Kartozaと共同編集者](http://kartoza.com) によって開発されました
 ### 機能：統合データソースマネージャダイアログ
 データソースの管理とレイヤーの読み込みを処理する単一の統一されたダイアログ。
 
@@ -619,7 +619,7 @@ This feature was developed by [Kartoza and collaborators](http://kartoza.com)
 
 この機能は、Boundlessによって資金提供されました
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+この機能は [Alessandro Pasotti](https://www.itopen.it) によって開発されました
 ### 機能：OSM Downloaderツールが削除されました
 QGIS 2.Xリリースで提供されていたOSMダウンローダツールは削除されています。QGIS 3.0に移植されたQuickOSMプラグインの利用をお勧めします。
 ## フォームとウィジェット
@@ -648,7 +648,7 @@ QGIS 2.Xリリースで提供されていたOSMダウンローダツールは削
 
 この機能はOpenGIS.chによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：レイヤースコープのアクションを追加する
 属性テーブル内には、個々の機能に基づいてではなく、レイヤー全体でアクションをトリガーする新しいボタンがあります。通常、すべての機能や選択に基づいてアクションを実行します。
 
@@ -660,17 +660,17 @@ It\'s now used as a search widget for text fields, so can be seen in the browser
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：機能にズームを追加し、フォームの選択ダイアログでショートカットをフラッシュする
 フォーム内の基準に一致する機能の非常に迅速なナビゲーションと識別を可能にする
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：フォームの選択範囲内の数値フィールドの間に/間に追加
 ![image100](images/entries/4bfb34794edbff35e6336c165993278e9a515644.jpeg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ## レイヤ凡例
 ### 機能：選択解除されたレイヤーを非表示にする
 すべての選択解除されたレイヤーを素早く非表示にすることができます。これは非常に便利です。大規模なプロジェクトがあり、いくつかのレイヤーを除いてすべてをすばやく隠したい場合に便利です
@@ -679,7 +679,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 
 This feature was funded by [SMEC (Surbana Jurong)](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：グループ内のレイヤーの可視性の人間工学的変化
 - Checking/unchecking a group doesn\'t change the check state of its children. A node is visible if and only if it is checked and all its parents too.
 - あるグループには半チェック状態がありません
@@ -697,29 +697,29 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ![image102](images/entries/ac1b2079c9e6c19747322d246d666df7e3c4ac0d.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：qptをQGISにドラッグしてテンプレートから新しいコンポーザを作成する
 This feature was funded by [SMEC (Surbana Jurong)](http://www.smec.com/en_au)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：コンポーザーの凡例項目ラベルの行間隔のカスタマイズを可能にする
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：地図アイテムにCRSを選択できるようにする
 これにより、地図項目のCRSがキャンバス/プロジェクトCRSと異なることができます。また、異なる地図アイテムが異なるCRSを持つこともできます。たとえば、概要地図を主地図とは異なるCRSに設定できます。
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：描画中にシフトを保持ポリライン/ポリゴンが線の角度を制限する
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：より多くのデータ定義可能なコントロール
 アイテム **フレーム** および **背景色**  データ定義 **コンポーザのピクチャアイテムのsvgの色とアウトラインの幅** （特に画像に北の矢印が表示されている場合に便利です）データ定義 **凡例のタイトルと列数** データ定義 **スケールバーの色と線幅**
 
 この機能は、QGISグラントプログラム によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：Map Composerオーバーホール
 これは、QGISのコードでコンポジションがどのように管理されるかを大きく変更したものです。
 
@@ -736,21 +736,21 @@ More info at <https://north-road.com/qgis-layout-and-reporting-engine-campaign/>
 
 この機能は、スイスのQGISユーザーグループが資金提供しました。
 
-This feature was developed by [Nyall Dawson (North Road)](http://north-road.com)
+この機能は [Nyall Dawson (North Road)](http://north-road.com) によって開発されました
 ## 分析ツール
 ### 機能：プロセッシングのためのラスター独自の値のカウント
 <http://imhere-asia.com/blog/post/qgis-raster-layer-unique-values-count>
 
-This feature was developed by <http://imhere-asia.com/>
+この機能は <http://imhere-asia.com/> によって開発されました
 ## プロセシング
 ### 機能：ラインをオフセットする新しいアルゴリズム
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：片面バッファ用の新しいアルゴリズム
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：簡単化のための簡略化方法の選択肢を追加
 この変更により、既存の距離ベース（Douglas Peucker）アルゴリズム、領域ベース（Visvalingam）アルゴリズム、およびグリッドにスナップするアルゴリズムの選択肢を使用して、単純化ジオメトリアルゴリズムの実行時に使用する方法を選択できます。
 
@@ -758,7 +758,7 @@ Visvigigamは、通常、標準的な距離に基づく方法よりも、より�
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：モデルでの出力ジオメトリタイプのサポート
 モデルの子アルゴリズムの入力は、他の子アルゴリズムへの入力に対して適用可能なジオメトリタイプを生成するモデルにのみフィルタリングされるようになりました
 
@@ -768,7 +768,7 @@ QgsGeometry :: smoothにオプションを追加して、特定のしきい値�
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：Z / M寸法と曲線形状のより良いサポート
 より多くのアルゴリズムがZ / M値を尊重し、この情報を破棄せず、多くのアルゴリズムがこれらのジオメトリを強制的にセグメント化せずにカーブしたジオメトリを正しく維持するようになりました。
 ### 機能：プロセシングに追加されたラスター解析アルゴリズム
@@ -791,7 +791,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: ツールボックスのゾーン統計プラグインからのゾーン統計の公開
 この機能はAlexander Bruyによって開発されました
 ### 機能: SpatiLiteのSQL実行アルゴリズムの追加
@@ -801,13 +801,13 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：表現アルゴリズムによる新しい抽出
 入力レイヤーを式でフィルタリングする
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: SpatiLiteのSQL実行アルゴリズムの追加
 この機能はMathieu Pellerinによって開発されました
 ### 機能：補間アルゴリズム
@@ -821,7 +821,7 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：レイヤーアルゴリズムにスナップジオメトリ
 ジオメトリスナッパープラグインをプロセッシングに移植する
 
@@ -831,7 +831,7 @@ Snap to layer algorithm accepts a mode parameter. With a new option to prefer to
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：式の新しい入力タイプ
 これは、式入力のための新しい入力タイプを追加します。式の入力は、ビルダーが正しいフィールドとレイヤー変数を表示できるように、親レイヤーにリンクできます。
 
@@ -839,23 +839,23 @@ It\'s designed to be used when an algorithm specifically requires an expression,
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：SplitWithLines
 アルゴリズムの名前を変更するSplitLinesWithLinesをSplitWithLinesにするポリゴンも入力として受け入れる選択する線のみを使用する（プロセッシングが選択のみを使用するように設定されている場合）マルチジオメトリを分割しようとするとログメッセージが表示されるヘルプの更新
 
-この機能はBernhardStröblによって開発されました
+この機能はBernhard Ströblによって開発されました
 ### 機能: 到達不能極アルゴリズム
 Implements a processing algorithm to calculate the pole of inaccessibility for a surface, which is the most distant internal point from the boundary of the surface. This function uses the \'polylabel\' algorithm (Vladimir Agafonkin, 2016), which is an iterative approach guaranteed to find the true pole of inaccessibility within a specified tolerance. More precise tolerances require more iterations and will take longer to calculate.
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：属性別に抽出するとnull / notnull値を抽出できます
 属性値がnullまたはnullでない場合のフィルタリングのサポートを追加します。
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：属性インデックスアルゴリズムを作成する
 より速い属性ベースのフィルタリングのために、レイヤー内の属性にインデックスを作成できるようにする
 
@@ -863,13 +863,13 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### Feature: New \'drop geometries\' algorithm
 入力レイヤーから任意のジオメトリを削除し、属性のみの地物を返します
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### Feature: New universal \'basic stats for field\' algorithm
 Replaces the existing \'Basic Stats for Numeric Fields\' and \'Basic Stats for String Fields\' algorithms and adds support for date/time/datetime fields.
 
@@ -877,17 +877,17 @@ Replaces the existing \'Basic Stats for Numeric Fields\' and \'Basic Stats for S
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：ポートヒートマッププラグインから処理アルゴリズム
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：ジオメトリを直交化するための新しいアルゴリズム
 Adds a new algorithm which tries to make angles in geometries either right angles or straight lines
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：ネットワーク解析アルゴリズム
 最短経路とサービスエリアアルゴリズムを処理に追加する
 
@@ -901,13 +901,13 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 ![image105](images/entries/0ad81df99f01b91d2421263ad35fdc4430c483e0.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：テーブルを切り詰める新しいアルゴリズム
 Irretrievably deletes all features from a table\... use with caution!
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### Feature: Added 'invalid feature handling' option
 この機能はVictor Olayaによって開発されました
 ### 機能: ネイティブのmakeValid()実装を使用した不正なジオメトリを訂正するアルゴリズム
@@ -919,31 +919,31 @@ This feature was developed by [Nyall Dawson (North Road)](https://north-road.com
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能: ノード抽出アルゴリズムの改善
 ノード抽出アルゴリズムは、ノードのインデックス、ノードに沿った線と角度に沿った距離を保存するようになりました
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：ポイントを移動（移動）するための新しいアルゴリズム
 ジオメトリをax / y変位だけずらすことができます
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：改良された処理モデラーウィンドウ
 The processing modeler window has received a lot of attention for this release. Improvements include: - zoom controls in the window\'s toolbar - customization of inputs and algorithms panels\' location - panels can now float above the processing window
 
 ![image106](images/entries/d7d74d9113516f51289380755f1862324c83feb5.png.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能：新しいラスター独自の値レポートアルゴリズム
 指定されたラスターレイヤー内の各固有値の数と面積を返す処理に新しいアルゴリズムが追加されました。
 
 ![image107](images/entries/096af77b050265c85d7ee203c2ab4d974b8be126.jpg.400x300_q85_crop.webp)
 
-This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
+この機能は [Mathieu Pellerin](http://www.imhere-asia.com/) によって開発されました
 ### 機能: コア処理からのTauDEMプロバイダの削除
 処理からTauDEMプロバイダを削除しました。
 
@@ -951,7 +951,7 @@ This feature was developed by [Mathieu Pellerin](http://www.imhere-asia.com/)
 ### 機能：処理からファイルをダウンロードする
 処理からファイルをダウンロードします。geojsonを取得するリモートAPIを照会する
 
-This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
+この機能は [Etienne Trimaille](https://github.com/Gustry) によって開発されました
 ### 機能：ジオメトリアルゴリズムに沿って最適化されたポイント
 ポリゴンジオメトリをサポートし、ヌルジオメトリを処理し、元の線の角度と各点の距離を記録します。
 
@@ -959,11 +959,11 @@ This feature was developed by [Etienne Trimaille](https://github.com/Gustry)
 
 この機能はAndreas Neumannによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：式アルゴリズムによる並べ替え
 This feature was funded by [DFAT/DMI](http://dfat.gov.au/pages/default.aspx)
 
-This feature was developed by [Etienne Trimaille (Kartoza)](http://www.kartoza.com)
+この機能は [Etienne Trimaille (Kartoza)](http://www.kartoza.com) によって開発されました
 ## アプリケーションとプロジェクトのオプション
 ### 機能：新しいzip形式のプロジェクトファイル形式.qgz
 A long time ago on the developper\'s mailing list, we discussed of a container storing the xml file and other ressources. This is now possible, though it remains optional. The auxiliary storage feature takes advantage of that by storing the associated .qgd sqlite database. We hope that in next versions land support for embedding other resources like SVG, color ramps, datasources, images, etc\...
@@ -972,7 +972,7 @@ A long time ago on the developper\'s mailing list, we discussed of a container s
 
 This feature was funded by [French ministry of Ecology and Sustainable Developpement](https://www.ecologique-solidaire.gouv.fr/)
 
-This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pblottiere)
+この機能は [OSLANDIA - Paul Blottiere](https://github.com/pblottiere) によって開発されました
 ### 機能：ユーザープロファイルのサポートを追加する
 すべてのユーザー設定/プラグインなどは、各プラットフォームのアプリケーションデータの場所からロードされ、.qgis3 / 2ではなくなりました。各プロファイルの設定とプラグインは、互いに分離されています。
 
@@ -982,7 +982,7 @@ This feature was developed by [OSLANDIA - Paul Blottiere](https://github.com/pbl
 
 ![image111](images/entries/82d90b2a02b84584279b5e2b75774631a0cd4a44.jpeg.400x300_q85_crop.webp)
 
-This feature was developed by [Nathan Woodrow](https://github.com/NathanW2)
+この機能は [Nathan Woodrow](https://github.com/NathanW2) によって開発されました
 ## ブラウザ
 ### Feature: Drag\'n\'drop layers from layer tree view to browser dock
 簡単に、例えば一時的なレイヤーをPostGISに保存できます。
@@ -996,7 +996,7 @@ QGIS 2.xに同梱されているスタンドアロンのQGISブラウザアプ�
 
 ![image114](images/entries/d81a5fba0df198b53ef60293ade556125499e5e8.png.400x300_q85_crop.webp)
 
-This feature was developed by [Alessandro Pasotti](https://www.itopen.it)
+この機能は [Alessandro Pasotti](https://www.itopen.it) によって開発されました
 ### 機能：ジオパッケージ
 - 処理はデフォルトでpkgを使用します
 - save asはデフォルトでpkgを使用します
@@ -1023,7 +1023,7 @@ postgres、spatialite、ogrプロバイダに実装されたプロバイダ側�
 
 この機能はOpenGIS.chによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：GeoNodeインテグレーション
 [GeoNode](http://geonode.org) is an open source geospatial content management system that makes it easy to publish geospatial data on the web. QGIS 3.0 includes new functionality that will allow you to very easily add a GeoNode instance to the browser tree and add any layers from that site to your project as WMS, WFS or XYZ. There is no need to dig around trying to figure out WMS/WFS end points, QGIS will do everything for you. When using WMS and XYZ Tiled layers, the style of the published GeoNode layer will be used.
 
@@ -1035,17 +1035,17 @@ There are also python bindings so that you can add GeoServer layers to QGIS from
 
 This feature was funded by [WorldBank/GFDRR](https://www.gfdrr.org)
 
-This feature was developed by [Kartoza](http://kartoza.com)
+この機能は [Kartoza](http://kartoza.com) によって開発されました
 ### 機能：spatialiteプロバイダーのリテラルのデフォルト値を検出する
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：spatialiteプロバイダのアトリビュートインデックスサポートを作成する
 spatialiteレイヤーの属性インデックスの作成を可能にする
 
 This feature was funded by [North Road](https://north-road.com/)
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### 機能：配列のサポートを追加する
 Supported by postgres, spatialite
 
@@ -1070,7 +1070,7 @@ This allows to declare data dependencies between layers. A data dependency occur
 
 この機能は、ZugのCantonとQGEPプロジェクトによって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ## QGISサーバー
 ### 機能：QGISサーバーのオーバーホール
 As you may know, QGIS is jumping to a new major version (yes!). Doing so was made necessary because of the need to switch to python 3, QT5, but also because we needed to break the QGIS API in several places. (<http://blog.qgis.org/2016/02/10/qgis-3-0-plans/>)
@@ -1111,7 +1111,7 @@ Many web clients can\'t display circular arcs in geometries. To allow such clien
 
 This feature was funded by [Kanton of Zug](https://geo.zg.ch/)
 
-This feature was developed by [Marco Hugentobler](https://www.sourcepole.ch/)
+この機能は [Marco Hugentobler](https://www.sourcepole.ch/) によって開発されました
 ## プラグイン
 ### 機能：Plugin Managerから信頼できるステータスを削除する
 <https://github.com/qgis/QGIS/pull/5272>
@@ -1142,7 +1142,7 @@ GDALToolsプラグインを介して以前に利用可能だったすべての�
 
 This feature was funded by [DFAT/DMI](http://dfat.gov.au)
 
-This feature was developed by [Etienne Trimaille (Kartoza)](http://www.kartoza.com)
+この機能は [Etienne Trimaille (Kartoza)](http://www.kartoza.com) によって開発されました
 ## プログラマビリティ
 ### 機能：ジオメトリクラスの更新
 QGISのジオメトリクラスの大幅な見直しが行われました。古いクラスの名前が変更されました（下の表参照）。新しいジオメトリクラスは、ZおよびM属性があればそれを適切に保存します。
@@ -1194,7 +1194,7 @@ QgsTasksはサブタスクを持つことができます
 
 この機能は、QGISグラントプログラム によって資金提供されました
 
-This feature was developed by [Nyall Dawson (North Road)](https://north-road.com/)
+この機能は [Nyall Dawson (North Road)] (https://north-road.com/) によって開発されました
 ### Feature: API to allow drag\'n\'drop of custom browser items
 QgsDataItemの実装は、カスタム項目のドロップを処理するためにhasDragEnabled()、mimeUri()およびQgsCustomDropHandlerの実装を提供します。
 

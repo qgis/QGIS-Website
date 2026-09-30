@@ -25,13 +25,13 @@ type: case-study
 
 ポーランドは、アジェンダが実施されている国の一つです。欧州連合（EU）の資金のおかげで、多くの地方通信事業者は、高速ブロードバンドサービスに関して大手電気通信事業者と競争することができます。残念なことに、資金を申請するには、計画されたFTTH（Fiber To The Home）ネットワークの概念図の開発など、適切な文書を作成するために必要な多くの作業が必要です。
 
-さらに、現時点では、潜在的な受益者を支援するためのGISベースのITツールは存在しません。問題の複雑さは、そのようなソフトウェアが特定のプログラムガイドライン（教育機関を結ぶ義務など）に従った文書の作成を可能にするという事実によってさらに複雑になります。
+さらに、現時点では、潜在的な受益者が書類を作成するのを支援するGISベースのITツールは存在しません。この問題は、そのようなソフトウェアが特定のプログラムガイドライン（教育機関を結ぶ義務など）に従った文書の作成を可能にする必要があるという点で、さらに複雑になっています。
 
-私たちは電気通信業界で豊富な経験を有しており、EUの資金を申請している企業はFTTHネットワークコンセプトマップの開発をサポートするソフトウェアの作成を依頼しました。開発されたソフトウェアによって生成された製品は、アプリケーション準備プロセスを大幅に高速化することでした。
+私たちは電気通信業界で豊富な経験を有しているため、EUの資金を申請している複数の企業からFTTHネットワークコンセプトマップの開発を支援するソフトウェアの作成を依頼されました。開発されたソフトウェアによって生成された成果物は、申請書類の準備プロセスを大幅に迅速化することになりました。
 ## ソリューションの説明
-高い人気、幅広いアベイラビリティ、ソフトウェアのオープン性、および非常に機能的な能力のために、私たちのソリューションの基礎となるプラットフォームとしてQGISを選択するのは自然なことでした。
+高い人気、幅広い利用可能性、ソフトウェアのオープン性、および非常に機能的な能力のために、私たちのソリューションの基礎となるプラットフォームとしてQGISを選択するのは自然なことでした。
 
-FTTH Council Europeのガイドラインによれば、実際のアドレスポイントデータに基づいて、技術的側面（ケーブル、スプライス閉鎖、スプリッタの配置）と経済的側面（需要）の両方を考慮した計画を最初に準備することが重要です。建物の構造と建物の密度は、GPON（Gigabit Passive Optical Network）ネットワーク設計の技術を決定します。ネットワークトポロジを効率的に計画する能力を持たせるためには、特に以下が必要です。
+FTTH Council Europeのガイドラインによれば、実際の住所ポイントデータに基づいて、技術的側面（ケーブル、光キャビネット、スプリッタの配置）と経済的側面（需要）の両方を考慮した計画を最初に準備することが重要です。建物の構造と建物の密度は、GPON（Gigabit Passive Optical Network）ネットワーク設計の技術を決定します。ネットワークトポロジを効率的に計画する能力を持たせるためには、特に以下が必要です。
 - GISデータへのアクセス、
 - GISデータ処理の自動化、
 - ネットワーク最適化アルゴリズムの適用、
@@ -42,10 +42,10 @@ FTTH Council Europeのガイドラインによれば、実際のアドレスポ�
 私たちの目標を達成するためには、標準的なGISプラットフォーム以外の機能コンポーネントはほとんど必要ありませんでした。
 - GRASS  - ベクターアルゴリズムとネットワークアルゴリズムのコレクション、
 - QGISプラグイン -  OpenLayer、QuickOSM、Scipy Point Clustering、WorkContextTracer（私たちのプラグイン）、
-- QGIS modeler -- tool for graphical flow modelling,
+- QGISモデラー - グラフィカルなフローモデリングのためのツール、
 - SpatiaLite - 入出力データを格納するためのローカルデータベース。
 
-The entire solution was based on the concept of so called wizards which realize the process of preparing the FTTx network technical concept step by step. Using \'geoprocessing\' modeller, we created models requiring only the necessary input data from operator. Algorithmic complexity was encapsulated within models in the form of designed flow, which use existing QGIS algorithms and calls dedicated scripts.
+ソリューション全体は、いわゆるウィザードのコンセプトに基づいており、FTTxネットワーク技術コンセプトを段階的に準備するプロセスを現実化するものです。私たちは 'ジオプロセシング' モデラーを使用して、必要なデータをオペレーターが入力するだけで動作するモデルを作成しました。アルゴリズムの複雑さは、設計されたフローの形式でモデル内にカプセル化されました。これは既存のQGISアルゴリズムを使用し、専用のスクリプトを呼び出します。
 
 ![](../images/poland_ffth/toolbox.png)
 
@@ -55,23 +55,23 @@ The entire solution was based on the concept of so called wizards which realize 
 
 GRASSで利用可能なグラフ関数に基づくネットワークアルゴリズムは、電気通信スクリプトを追加することで充実しました。デマンドポイントを集約するためにK平均と階層的方法の両方を使用できるデマンドクラスタリングの概念を導入しました。
 
-Geoprocessing scripts with usage of cable routing layer and Djikstra algorithm develops a cable route proposal with optical fiber nodes\' locations.
+ケーブル配線レイヤーとダイクストラアルゴリズムを使用したジオプロセシングスクリプトは、光ファイバーノードの位置を考慮したケーブルルートの提案を作成します。
 
-事業者は、作成されたネットワーク・ノードとアドレス・ポイントとの関連付けによって、各ネットワーク・ブランチの個別コストを見積もる必要もありました。この作業を完了するために、この操作を実行するスクリプトを作成して、ローカルのSpatiaLiteデータベースに結果を格納しました。データはスプレッドシートにエクスポート可能である必要があったため、この要件を満たすためにフリーソフトウェアライブラリを使用しました。
+事業者は、作成されたネットワーク・ノードと住所ポイントを関連付け、各ネットワーク・ブランチの個々の費用を見積もる必要もありました。この作業を完了するために、この操作を実行してローカルのSpatiaLiteデータベースに結果を格納するスクリプトを作成しました。データはスプレッドシートにエクスポートできるようにする必要があったため、この要件を満たしたフリーソフトウェアライブラリを使用しました。
 ## ユーザーがツールを使用してFTTH / GPONネットワークプランを作成する方法
-ユーザーは、新しい作業コンテキストを開き、解析されるアドレスポイントの入力レイヤーを指定することによって作業を開始しました。標準的なQGISインタフェースを使用して、ユーザーはアドレスポイント上に一連の要求を確立し、アルゴリズムのさらなるステップに必要なパラメータを最終的に提供することができます。
+ユーザーは作業を始めるとまず新しい作業コンテキストを開き、解析のため住所ポイントの入力レイヤーを指定しました。ユーザーは標準的なQGISインタフェースを使用して住所ポイント上に一連の要求を設定し、最終的にアルゴリズムの次のステップに必要なパラメータを提供することができました。
 
 ![](../images/poland_ffth/step1_inputlayer.png)
 
-既存の市民インフラに関する情報がなくても、適切にフィルタリングされたOpenStreet道路ネットワークがルーティングレイヤーとして使用されました。入力パラメータを与えられたScipyアルゴリズムは、アドレスポイントを特定のクラスタへの割り当てを示す別の色でマークする需要集約に集約しました。
+既存の土木インフラに関する情報がなかったため、適切にフィルタリングされたOpenStreet道路ネットワークをルート計算レイヤーとして使用しました。Scipyアルゴリズムに入力パラメータを指定することで住所ポイントを需要の集約単位ごとにクラスタリングし、どのクラスタへ割り当てられたかは色でマークすることで区別しました。
 
 ![](../images/poland_ffth/step1.png)
 
-すべてのアドレスポイントがクラスタ化されているので、ユーザーは前の手順で準備したレイヤーとGPONネットワークの開始ポイントを持つレイヤーを提供する高水準ネットワーク計画のステップを開始しました。
+すべての住所ポイントをクラスタ化すると、ユーザーは前のステップで準備されたレイヤーとGPONネットワークの開始ポイントを持つレイヤーを使用して、ハイレベルのネットワーク計画のステップを開始しました。
 
 ![](../images/poland_ffth/step1-2_result.png)
 
-Upon the completion of the algorithm, in QGIS there are geometry objects representing planned cables and splice closure locations. Basing on demand data and network topology, an additional information is stored in database such as the length of the cable, its profile, node's serving areas.
+アルゴリズムが完了すると、計画されたケーブルと光キャビネットの位置を表すジオメトリオブジェクトがQGISにできます。需要データとネットワークトポロジに基づいて、ケーブルの長さ、その断面、ノードのサービス地域などの追加情報がデータベースに格納されます。
 
 ![](../images/poland_ffth/step4_results.png)
 
@@ -81,7 +81,7 @@ Upon the completion of the algorithm, in QGIS there are geometry objects represe
 
 ![](../images/poland_ffth/report_generated_and_tranformed.png)
 ## 結論
-QGISプラットフォームとその拡張機能のおかげで私たちは、電気通信事業者が欧州デジタルアジェンダを実装しているEUプログラムで共同融資申請書を提出するのに必要な書類を準備できる、フリーでオープンソースのソリューションを開発できました。
+私たちは、QGISプラットフォームとその拡張機能のおかげで、電気通信事業者が欧州デジタルアジェンダを実施するEUプログラムへの共同資金援助申請に必要な書類を準備できる、フリーでオープンソースのソリューションを開発することができました。
 
 柔軟なベクターアルゴリズムと電気通信工学のスクリプトを組み合わせることにより、電気通信網計画に関する実際の問題を解決するための数学的アルゴリズムの実用化が可能になりました。ユーザーは、理解可能なデータ範囲（自治体、建物、道路）について操作しますが、この情報の数学モデルへの変換はユーザーからは隠れています。
 
@@ -95,15 +95,15 @@ QGISプラットフォームとその拡張機能のおかげで私たちは、�
 - ROI、NPVなどの基本的な経済指標を評価する可能性。
 
 ## 役に立つリンクと文献
-- <http://europa.eu/rapid/press-release_MEMO-10-200_en.htm> - information on European Digital Agenda
-- <http://www.ftthcouncil.eu/> - FTTH Council Europe website
-- <https://www.scipy.org/> - SciPy project website
+- <http://europa.eu/rapid/press-release_MEMO-10-200_en.htm> - 欧州デジタルアジェンダに関する情報
+- <http://www.ftthcouncil.eu/> - FTTH Council Europe ウェブサイト
+- <https://www.scipy.org/> - SciPy プロジェクトウェブサイト
 - <https://ksavinetworkinventory.com/en/download-geospatial-network-inventory-free/>
-  - tool download webpage.
+  - ツールのダウンロードウェブサイト
 
 ## 著者
 このソリューションは完全に無料のオープンソースツールです。QGISとFreeCADプラットフォームをベースとした大規模プロジェクトの一部で、電気通信業界で使用される予定です。
 
-The author of this QGIS based solution is Softelnet (<https://www.softelnet.com>), a company manufacturing and integrating software for the telecommunications industry for over 15 years.
+このQGISベースのソリューションの作者は Softelnet（<https://www.softelnet.com>）です。Softelnetは、15年以上の間、通信業界向けのソフトウェアの製造と統合を行っています。
 
 {{<content-end >}}

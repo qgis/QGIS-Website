@@ -1384,7 +1384,7 @@ Some new classes that may be shared by vector and raster tiles:
 - QgsTileMatrix - description of a tile matrix (map extent, zoom level, scale, number of rows/columns)
 
 (also QgsTileMatrixSet to be added later when we support other tile matrix sets than just GoogleCRS84Quad)
-### Testing
+### Experimental
 You can load a vector tile layer from Python console, e.g.:
 
     ds = QgsDataSourceUri() ds.setParam("type","xyz")

@@ -11,7 +11,7 @@ type: page
 ---
 {{<content-start >}}
 # 年次報告書
-Starting in 2016, coincident with the establishment of a formal legal entity (Swiss “Verein”), we are publishing an annual report for the preceding year highlighting key activities within the QGIS project.
+2016年からは、正式な法人（スイスの「Verein」）の設立と同時に、QGISプロジェクトにおける主要な活動に焦点を当てた前年度の年次報告書を発行しています。
 
 レポートには、このWebサイトの財務セクションで別途レポートとして入手できる財務情報が含まれることに注意してください。
 
