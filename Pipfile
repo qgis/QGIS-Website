@@ -4,6 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+lxml = "==4.9.2"
 atoma = "==0.0.17"
 attrs = "==22.2.0"
 beautifulsoup4 = "==4.11.1"
@@ -14,7 +15,6 @@ defusedxml = "==0.7.1"
 exceptiongroup = "==1.1.0"
 idna = "==3.4"
 iniconfig = "==1.1.1"
-lxml = "==4.9.2"
 packaging = "==22.0"
 pluggy = "==1.0.0"
 pydantic = "==1.10.4"
