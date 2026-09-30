@@ -12,13 +12,18 @@
 
     # Fetch the Hugo theme submodule directly as a flake input
     qgis-website-theme = {
-      url = "github:qgis/QGIS-Hugo-Website-Theme/91c8de5942c1ccd17c7984049fb1fd3d304c0f70";
+      url = "github:qgis/QGIS-Hugo-Website-Theme/8937f7674daea7ac6dd2e46fadac28dd66eaf5c7";
       flake = false; # it's not a flake, just a source tree
     };
   };
 
   outputs =
-    { self, nixpkgs, qgis-website-theme,... }:
+    {
+      self,
+      nixpkgs,
+      qgis-website-theme,
+      ...
+    }:
 
     let
       # Flake system
@@ -54,7 +59,7 @@
             # Commit hash from the flake's git metadata (clean tree only;
             # falls back to the dirty short rev, then "unknown" for tarballs).
             commitHash = self.shortRev or self.dirtyShortRev or "unknown";
-           };
+          };
           default = website;
         }
       );
@@ -143,7 +148,7 @@
               source "${venvDir}/bin/activate"
 
               pip install -r REQUIREMENTS.txt
-    
+
               echo "-----------------------"
               echo "🌈 Your Hugo Dev Environment is ready."
               echo "It provides hugo and vscode for use with the QGIS Website Project"
